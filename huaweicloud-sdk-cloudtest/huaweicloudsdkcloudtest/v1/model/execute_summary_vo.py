@@ -33,7 +33,7 @@ class ExecuteSummaryVo:
     }
 
     def __init__(self, execute_case_num=None, defect_num=None, completed_defect_num=None, case_success_rate=None, case_execution_rate=None):
-        """ExecuteSummaryVo
+        r"""ExecuteSummaryVo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ExecuteSummaryVo:
 
     @property
     def execute_case_num(self):
-        """Gets the execute_case_num of this ExecuteSummaryVo.
+        r"""Gets the execute_case_num of this ExecuteSummaryVo.
 
         已执行用例数
 
@@ -82,7 +82,7 @@ class ExecuteSummaryVo:
 
     @execute_case_num.setter
     def execute_case_num(self, execute_case_num):
-        """Sets the execute_case_num of this ExecuteSummaryVo.
+        r"""Sets the execute_case_num of this ExecuteSummaryVo.
 
         已执行用例数
 
@@ -93,7 +93,7 @@ class ExecuteSummaryVo:
 
     @property
     def defect_num(self):
-        """Gets the defect_num of this ExecuteSummaryVo.
+        r"""Gets the defect_num of this ExecuteSummaryVo.
 
         缺陷总数
 
@@ -104,7 +104,7 @@ class ExecuteSummaryVo:
 
     @defect_num.setter
     def defect_num(self, defect_num):
-        """Sets the defect_num of this ExecuteSummaryVo.
+        r"""Sets the defect_num of this ExecuteSummaryVo.
 
         缺陷总数
 
@@ -115,7 +115,7 @@ class ExecuteSummaryVo:
 
     @property
     def completed_defect_num(self):
-        """Gets the completed_defect_num of this ExecuteSummaryVo.
+        r"""Gets the completed_defect_num of this ExecuteSummaryVo.
 
         已完成缺陷数
 
@@ -126,7 +126,7 @@ class ExecuteSummaryVo:
 
     @completed_defect_num.setter
     def completed_defect_num(self, completed_defect_num):
-        """Sets the completed_defect_num of this ExecuteSummaryVo.
+        r"""Sets the completed_defect_num of this ExecuteSummaryVo.
 
         已完成缺陷数
 
@@ -137,7 +137,7 @@ class ExecuteSummaryVo:
 
     @property
     def case_success_rate(self):
-        """Gets the case_success_rate of this ExecuteSummaryVo.
+        r"""Gets the case_success_rate of this ExecuteSummaryVo.
 
         测试用例通过率
 
@@ -148,7 +148,7 @@ class ExecuteSummaryVo:
 
     @case_success_rate.setter
     def case_success_rate(self, case_success_rate):
-        """Sets the case_success_rate of this ExecuteSummaryVo.
+        r"""Sets the case_success_rate of this ExecuteSummaryVo.
 
         测试用例通过率
 
@@ -159,7 +159,7 @@ class ExecuteSummaryVo:
 
     @property
     def case_execution_rate(self):
-        """Gets the case_execution_rate of this ExecuteSummaryVo.
+        r"""Gets the case_execution_rate of this ExecuteSummaryVo.
 
         用例执行率
 
@@ -170,7 +170,7 @@ class ExecuteSummaryVo:
 
     @case_execution_rate.setter
     def case_execution_rate(self, case_execution_rate):
-        """Sets the case_execution_rate of this ExecuteSummaryVo.
+        r"""Sets the case_execution_rate of this ExecuteSummaryVo.
 
         用例执行率
 

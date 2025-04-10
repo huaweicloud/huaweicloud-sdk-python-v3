@@ -29,7 +29,7 @@ class AutoLaunchStatisticsResponseInfo:
     }
 
     def __init__(self, name=None, type=None, num=None):
-        """AutoLaunchStatisticsResponseInfo
+        r"""AutoLaunchStatisticsResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AutoLaunchStatisticsResponseInfo:
 
     @property
     def name(self):
-        """Gets the name of this AutoLaunchStatisticsResponseInfo.
+        r"""Gets the name of this AutoLaunchStatisticsResponseInfo.
 
         自启动项名称
 
@@ -68,7 +68,7 @@ class AutoLaunchStatisticsResponseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AutoLaunchStatisticsResponseInfo.
+        r"""Sets the name of this AutoLaunchStatisticsResponseInfo.
 
         自启动项名称
 
@@ -79,7 +79,7 @@ class AutoLaunchStatisticsResponseInfo:
 
     @property
     def type(self):
-        """Gets the type of this AutoLaunchStatisticsResponseInfo.
+        r"""Gets the type of this AutoLaunchStatisticsResponseInfo.
 
         自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
@@ -90,7 +90,7 @@ class AutoLaunchStatisticsResponseInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AutoLaunchStatisticsResponseInfo.
+        r"""Sets the type of this AutoLaunchStatisticsResponseInfo.
 
         自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
@@ -101,7 +101,7 @@ class AutoLaunchStatisticsResponseInfo:
 
     @property
     def num(self):
-        """Gets the num of this AutoLaunchStatisticsResponseInfo.
+        r"""Gets the num of this AutoLaunchStatisticsResponseInfo.
 
         当前自启动项的主机数量
 
@@ -112,7 +112,7 @@ class AutoLaunchStatisticsResponseInfo:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this AutoLaunchStatisticsResponseInfo.
+        r"""Sets the num of this AutoLaunchStatisticsResponseInfo.
 
         当前自启动项的主机数量
 

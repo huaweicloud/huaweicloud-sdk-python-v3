@@ -29,7 +29,7 @@ class AuthenticatingProxy:
     }
 
     def __init__(self, ca=None, cert=None, private_key=None):
-        """AuthenticatingProxy
+        r"""AuthenticatingProxy
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AuthenticatingProxy:
 
     @property
     def ca(self):
-        """Gets the ca of this AuthenticatingProxy.
+        r"""Gets the ca of this AuthenticatingProxy.
 
         authenticating_proxy模式配置的x509格式CA证书(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。   最大长度：1M 
 
@@ -68,7 +68,7 @@ class AuthenticatingProxy:
 
     @ca.setter
     def ca(self, ca):
-        """Sets the ca of this AuthenticatingProxy.
+        r"""Sets the ca of this AuthenticatingProxy.
 
         authenticating_proxy模式配置的x509格式CA证书(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。   最大长度：1M 
 
@@ -79,7 +79,7 @@ class AuthenticatingProxy:
 
     @property
     def cert(self):
-        """Gets the cert of this AuthenticatingProxy.
+        r"""Gets the cert of this AuthenticatingProxy.
 
         authenticating_proxy模式配置的x509格式CA证书签发的客户端证书，用于kube-apiserver到扩展apiserver的认证。(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。 
 
@@ -90,7 +90,7 @@ class AuthenticatingProxy:
 
     @cert.setter
     def cert(self, cert):
-        """Sets the cert of this AuthenticatingProxy.
+        r"""Sets the cert of this AuthenticatingProxy.
 
         authenticating_proxy模式配置的x509格式CA证书签发的客户端证书，用于kube-apiserver到扩展apiserver的认证。(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。 
 
@@ -101,7 +101,7 @@ class AuthenticatingProxy:
 
     @property
     def private_key(self):
-        """Gets the private_key of this AuthenticatingProxy.
+        r"""Gets the private_key of this AuthenticatingProxy.
 
         authenticating_proxy模式配置的x509格式CA证书签发的客户端证书时对应的私钥，用于kube-apiserver到扩展apiserver的认证。Kubernetes集群使用的私钥尚不支持密码加密，请使用未加密的私钥。(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。 
 
@@ -112,7 +112,7 @@ class AuthenticatingProxy:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this AuthenticatingProxy.
+        r"""Sets the private_key of this AuthenticatingProxy.
 
         authenticating_proxy模式配置的x509格式CA证书签发的客户端证书时对应的私钥，用于kube-apiserver到扩展apiserver的认证。Kubernetes集群使用的私钥尚不支持密码加密，请使用未加密的私钥。(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。 
 

@@ -24,7 +24,7 @@ class ExportDataServiceExcelTemplateResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """ExportDataServiceExcelTemplateResponse
+        r"""ExportDataServiceExcelTemplateResponse
 
         The model defined in huaweicloud sdk
 

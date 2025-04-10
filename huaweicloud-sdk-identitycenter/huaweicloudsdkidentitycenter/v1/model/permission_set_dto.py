@@ -37,7 +37,7 @@ class PermissionSetDto:
     }
 
     def __init__(self, created_date=None, description=None, name=None, permission_set_id=None, relay_state=None, session_duration=None, permission_urn=None):
-        """PermissionSetDto
+        r"""PermissionSetDto
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PermissionSetDto:
 
     @property
     def created_date(self):
-        """Gets the created_date of this PermissionSetDto.
+        r"""Gets the created_date of this PermissionSetDto.
 
         权限集的创建时间
 
@@ -96,7 +96,7 @@ class PermissionSetDto:
 
     @created_date.setter
     def created_date(self, created_date):
-        """Sets the created_date of this PermissionSetDto.
+        r"""Sets the created_date of this PermissionSetDto.
 
         权限集的创建时间
 
@@ -107,7 +107,7 @@ class PermissionSetDto:
 
     @property
     def description(self):
-        """Gets the description of this PermissionSetDto.
+        r"""Gets the description of this PermissionSetDto.
 
         权限集的描述
 
@@ -118,7 +118,7 @@ class PermissionSetDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PermissionSetDto.
+        r"""Sets the description of this PermissionSetDto.
 
         权限集的描述
 
@@ -129,7 +129,7 @@ class PermissionSetDto:
 
     @property
     def name(self):
-        """Gets the name of this PermissionSetDto.
+        r"""Gets the name of this PermissionSetDto.
 
         权限集的名称
 
@@ -140,7 +140,7 @@ class PermissionSetDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PermissionSetDto.
+        r"""Sets the name of this PermissionSetDto.
 
         权限集的名称
 
@@ -151,7 +151,7 @@ class PermissionSetDto:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this PermissionSetDto.
+        r"""Gets the permission_set_id of this PermissionSetDto.
 
         权限集的唯一标识
 
@@ -162,7 +162,7 @@ class PermissionSetDto:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this PermissionSetDto.
+        r"""Sets the permission_set_id of this PermissionSetDto.
 
         权限集的唯一标识
 
@@ -173,7 +173,7 @@ class PermissionSetDto:
 
     @property
     def relay_state(self):
-        """Gets the relay_state of this PermissionSetDto.
+        r"""Gets the relay_state of this PermissionSetDto.
 
         用于在联合身份验证过程中重定向应用程序中的用户
 
@@ -184,7 +184,7 @@ class PermissionSetDto:
 
     @relay_state.setter
     def relay_state(self, relay_state):
-        """Sets the relay_state of this PermissionSetDto.
+        r"""Sets the relay_state of this PermissionSetDto.
 
         用于在联合身份验证过程中重定向应用程序中的用户
 
@@ -195,7 +195,7 @@ class PermissionSetDto:
 
     @property
     def session_duration(self):
-        """Gets the session_duration of this PermissionSetDto.
+        r"""Gets the session_duration of this PermissionSetDto.
 
         应用程序用户会话在ISO-8601标准中有效的时间长度
 
@@ -206,7 +206,7 @@ class PermissionSetDto:
 
     @session_duration.setter
     def session_duration(self, session_duration):
-        """Sets the session_duration of this PermissionSetDto.
+        r"""Sets the session_duration of this PermissionSetDto.
 
         应用程序用户会话在ISO-8601标准中有效的时间长度
 
@@ -217,7 +217,7 @@ class PermissionSetDto:
 
     @property
     def permission_urn(self):
-        """Gets the permission_urn of this PermissionSetDto.
+        r"""Gets the permission_urn of this PermissionSetDto.
 
         权限集的统一资源名称（URN）
 
@@ -228,7 +228,7 @@ class PermissionSetDto:
 
     @permission_urn.setter
     def permission_urn(self, permission_urn):
-        """Sets the permission_urn of this PermissionSetDto.
+        r"""Sets the permission_urn of this PermissionSetDto.
 
         权限集的统一资源名称（URN）
 

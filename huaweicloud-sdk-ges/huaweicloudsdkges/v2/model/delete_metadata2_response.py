@@ -26,7 +26,7 @@ class DeleteMetadata2Response(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteMetadata2Response
+        r"""DeleteMetadata2Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteMetadata2Response(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteMetadata2Response.
+        r"""Gets the body of this DeleteMetadata2Response.
 
         :return: The body of this DeleteMetadata2Response.
         :rtype: dict(str, str)
@@ -53,7 +53,7 @@ class DeleteMetadata2Response(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteMetadata2Response.
+        r"""Sets the body of this DeleteMetadata2Response.
 
         :param body: The body of this DeleteMetadata2Response.
         :type body: dict(str, str)

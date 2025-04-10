@@ -26,7 +26,7 @@ class ChangeSubjectsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ChangeSubjectsResponse
+        r"""ChangeSubjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeSubjectsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ChangeSubjectsResponse.
+        r"""Gets the data of this ChangeSubjectsResponse.
 
         :return: The data of this ChangeSubjectsResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ChangeSubjectsResultData`
@@ -53,7 +53,7 @@ class ChangeSubjectsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ChangeSubjectsResponse.
+        r"""Sets the data of this ChangeSubjectsResponse.
 
         :param data: The data of this ChangeSubjectsResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ChangeSubjectsResultData`

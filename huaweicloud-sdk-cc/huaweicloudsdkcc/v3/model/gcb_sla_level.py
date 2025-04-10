@@ -25,7 +25,7 @@ class GcbSlaLevel:
     }
 
     def __init__(self, sla_level=None):
-        """GcbSlaLevel
+        r"""GcbSlaLevel
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GcbSlaLevel:
 
     @property
     def sla_level(self):
-        """Gets the sla_level of this GcbSlaLevel.
+        r"""Gets the sla_level of this GcbSlaLevel.
 
         功能说明：描述网络等级，从高到低分为铂金、金、银。默认金，其余租户白名单控制。 - Pt: 铂金 - Au: 金 - Ag: 银
 
@@ -54,7 +54,7 @@ class GcbSlaLevel:
 
     @sla_level.setter
     def sla_level(self, sla_level):
-        """Sets the sla_level of this GcbSlaLevel.
+        r"""Sets the sla_level of this GcbSlaLevel.
 
         功能说明：描述网络等级，从高到低分为铂金、金、银。默认金，其余租户白名单控制。 - Pt: 铂金 - Au: 金 - Ag: 银
 

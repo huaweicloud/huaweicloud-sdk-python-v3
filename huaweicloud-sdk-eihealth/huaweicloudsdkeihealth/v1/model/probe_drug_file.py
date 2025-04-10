@@ -31,7 +31,7 @@ class ProbeDrugFile:
     }
 
     def __init__(self, source=None, url=None, format=None, data=None):
-        """ProbeDrugFile
+        r"""ProbeDrugFile
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ProbeDrugFile:
 
     @property
     def source(self):
-        """Gets the source of this ProbeDrugFile.
+        r"""Gets the source of this ProbeDrugFile.
 
         :return: The source of this ProbeDrugFile.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
@@ -72,7 +72,7 @@ class ProbeDrugFile:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ProbeDrugFile.
+        r"""Sets the source of this ProbeDrugFile.
 
         :param source: The source of this ProbeDrugFile.
         :type source: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
@@ -81,7 +81,7 @@ class ProbeDrugFile:
 
     @property
     def url(self):
-        """Gets the url of this ProbeDrugFile.
+        r"""Gets the url of this ProbeDrugFile.
 
         文件URL，当数据源为外部网络数据时为https地址；用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -92,7 +92,7 @@ class ProbeDrugFile:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ProbeDrugFile.
+        r"""Sets the url of this ProbeDrugFile.
 
         文件URL，当数据源为外部网络数据时为https地址；用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -103,7 +103,7 @@ class ProbeDrugFile:
 
     @property
     def format(self):
-        """Gets the format of this ProbeDrugFile.
+        r"""Gets the format of this ProbeDrugFile.
 
         文件格式，支持PDB、SDF、MOL2，仅数据源为RAW时提供
 
@@ -114,7 +114,7 @@ class ProbeDrugFile:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this ProbeDrugFile.
+        r"""Sets the format of this ProbeDrugFile.
 
         文件格式，支持PDB、SDF、MOL2，仅数据源为RAW时提供
 
@@ -125,7 +125,7 @@ class ProbeDrugFile:
 
     @property
     def data(self):
-        """Gets the data of this ProbeDrugFile.
+        r"""Gets the data of this ProbeDrugFile.
 
         文件原始数据，仅数据源为RAW时提供
 
@@ -136,7 +136,7 @@ class ProbeDrugFile:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ProbeDrugFile.
+        r"""Sets the data of this ProbeDrugFile.
 
         文件原始数据，仅数据源为RAW时提供
 

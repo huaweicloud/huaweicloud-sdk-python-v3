@@ -30,7 +30,7 @@ class ListEventSchemaVersionsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListEventSchemaVersionsResponse
+        r"""ListEventSchemaVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEventSchemaVersionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListEventSchemaVersionsResponse.
+        r"""Gets the total of this ListEventSchemaVersionsResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListEventSchemaVersionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListEventSchemaVersionsResponse.
+        r"""Sets the total of this ListEventSchemaVersionsResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListEventSchemaVersionsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListEventSchemaVersionsResponse.
+        r"""Gets the size of this ListEventSchemaVersionsResponse.
 
         本页数量
 
@@ -91,7 +91,7 @@ class ListEventSchemaVersionsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListEventSchemaVersionsResponse.
+        r"""Sets the size of this ListEventSchemaVersionsResponse.
 
         本页数量
 
@@ -102,7 +102,7 @@ class ListEventSchemaVersionsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListEventSchemaVersionsResponse.
+        r"""Gets the items of this ListEventSchemaVersionsResponse.
 
         对象列表
 
@@ -113,7 +113,7 @@ class ListEventSchemaVersionsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListEventSchemaVersionsResponse.
+        r"""Sets the items of this ListEventSchemaVersionsResponse.
 
         对象列表
 

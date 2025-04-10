@@ -27,7 +27,7 @@ class SearchRequest:
     }
 
     def __init__(self, search_type=None, search_value=None):
-        """SearchRequest
+        r"""SearchRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SearchRequest:
 
     @property
     def search_type(self):
-        """Gets the search_type of this SearchRequest.
+        r"""Gets the search_type of this SearchRequest.
 
         过滤类型
 
@@ -61,7 +61,7 @@ class SearchRequest:
 
     @search_type.setter
     def search_type(self, search_type):
-        """Sets the search_type of this SearchRequest.
+        r"""Sets the search_type of this SearchRequest.
 
         过滤类型
 
@@ -72,7 +72,7 @@ class SearchRequest:
 
     @property
     def search_value(self):
-        """Gets the search_value of this SearchRequest.
+        r"""Gets the search_value of this SearchRequest.
 
         过滤条件
 
@@ -83,7 +83,7 @@ class SearchRequest:
 
     @search_value.setter
     def search_value(self, search_value):
-        """Sets the search_value of this SearchRequest.
+        r"""Sets the search_value of this SearchRequest.
 
         过滤条件
 

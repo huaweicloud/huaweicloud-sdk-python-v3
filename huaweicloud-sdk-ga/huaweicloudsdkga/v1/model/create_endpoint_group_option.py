@@ -33,7 +33,7 @@ class CreateEndpointGroupOption:
     }
 
     def __init__(self, name=None, description=None, traffic_dial_percentage=None, region_id=None, listeners=None):
-        """CreateEndpointGroupOption
+        r"""CreateEndpointGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CreateEndpointGroupOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateEndpointGroupOption.
+        r"""Gets the name of this CreateEndpointGroupOption.
 
         终端节点组名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -79,7 +79,7 @@ class CreateEndpointGroupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateEndpointGroupOption.
+        r"""Sets the name of this CreateEndpointGroupOption.
 
         终端节点组名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -90,7 +90,7 @@ class CreateEndpointGroupOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateEndpointGroupOption.
+        r"""Gets the description of this CreateEndpointGroupOption.
 
         终端节点组描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -101,7 +101,7 @@ class CreateEndpointGroupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateEndpointGroupOption.
+        r"""Sets the description of this CreateEndpointGroupOption.
 
         终端节点组描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -112,7 +112,7 @@ class CreateEndpointGroupOption:
 
     @property
     def traffic_dial_percentage(self):
-        """Gets the traffic_dial_percentage of this CreateEndpointGroupOption.
+        r"""Gets the traffic_dial_percentage of this CreateEndpointGroupOption.
 
         流量拨分到此组的百分比。
 
@@ -123,7 +123,7 @@ class CreateEndpointGroupOption:
 
     @traffic_dial_percentage.setter
     def traffic_dial_percentage(self, traffic_dial_percentage):
-        """Sets the traffic_dial_percentage of this CreateEndpointGroupOption.
+        r"""Sets the traffic_dial_percentage of this CreateEndpointGroupOption.
 
         流量拨分到此组的百分比。
 
@@ -134,7 +134,7 @@ class CreateEndpointGroupOption:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateEndpointGroupOption.
+        r"""Gets the region_id of this CreateEndpointGroupOption.
 
         终端节点组所属区域ID。
 
@@ -145,7 +145,7 @@ class CreateEndpointGroupOption:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateEndpointGroupOption.
+        r"""Sets the region_id of this CreateEndpointGroupOption.
 
         终端节点组所属区域ID。
 
@@ -156,7 +156,7 @@ class CreateEndpointGroupOption:
 
     @property
     def listeners(self):
-        """Gets the listeners of this CreateEndpointGroupOption.
+        r"""Gets the listeners of this CreateEndpointGroupOption.
 
         关联监听器列表。一个终端节点组下仅支持关联一个监听器。
 
@@ -167,7 +167,7 @@ class CreateEndpointGroupOption:
 
     @listeners.setter
     def listeners(self, listeners):
-        """Sets the listeners of this CreateEndpointGroupOption.
+        r"""Sets the listeners of this CreateEndpointGroupOption.
 
         关联监听器列表。一个终端节点组下仅支持关联一个监听器。
 

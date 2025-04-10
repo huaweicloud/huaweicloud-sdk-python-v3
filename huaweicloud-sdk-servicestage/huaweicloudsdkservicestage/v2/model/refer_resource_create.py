@@ -31,7 +31,7 @@ class ReferResourceCreate:
     }
 
     def __init__(self, id=None, type=None, refer_alias=None, parameters=None):
-        """ReferResourceCreate
+        r"""ReferResourceCreate
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ReferResourceCreate:
 
     @property
     def id(self):
-        """Gets the id of this ReferResourceCreate.
+        r"""Gets the id of this ReferResourceCreate.
 
         资源ID。
 
@@ -73,7 +73,7 @@ class ReferResourceCreate:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ReferResourceCreate.
+        r"""Sets the id of this ReferResourceCreate.
 
         资源ID。
 
@@ -84,7 +84,7 @@ class ReferResourceCreate:
 
     @property
     def type(self):
-        """Gets the type of this ReferResourceCreate.
+        r"""Gets the type of this ReferResourceCreate.
 
         :return: The type of this ReferResourceCreate.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ResourceType`
@@ -93,7 +93,7 @@ class ReferResourceCreate:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ReferResourceCreate.
+        r"""Sets the type of this ReferResourceCreate.
 
         :param type: The type of this ReferResourceCreate.
         :type type: :class:`huaweicloudsdkservicestage.v2.ResourceType`
@@ -102,7 +102,7 @@ class ReferResourceCreate:
 
     @property
     def refer_alias(self):
-        """Gets the refer_alias of this ReferResourceCreate.
+        r"""Gets the refer_alias of this ReferResourceCreate.
 
         应用别名，dcs时才提供，支持“distributed_session”、“distributed_cache”、“distributed_session, distributed_cache”，  默认值是“distributed_session, distributed_cache”。 
 
@@ -113,7 +113,7 @@ class ReferResourceCreate:
 
     @refer_alias.setter
     def refer_alias(self, refer_alias):
-        """Sets the refer_alias of this ReferResourceCreate.
+        r"""Sets the refer_alias of this ReferResourceCreate.
 
         应用别名，dcs时才提供，支持“distributed_session”、“distributed_cache”、“distributed_session, distributed_cache”，  默认值是“distributed_session, distributed_cache”。 
 
@@ -124,7 +124,7 @@ class ReferResourceCreate:
 
     @property
     def parameters(self):
-        """Gets the parameters of this ReferResourceCreate.
+        r"""Gets the parameters of this ReferResourceCreate.
 
         引用资源参数。
 
@@ -135,7 +135,7 @@ class ReferResourceCreate:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ReferResourceCreate.
+        r"""Sets the parameters of this ReferResourceCreate.
 
         引用资源参数。
 

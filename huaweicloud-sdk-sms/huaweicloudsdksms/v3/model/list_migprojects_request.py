@@ -27,7 +27,7 @@ class ListMigprojectsRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListMigprojectsRequest
+        r"""ListMigprojectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListMigprojectsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMigprojectsRequest.
+        r"""Gets the limit of this ListMigprojectsRequest.
 
         每一页记录的迁移项目
 
@@ -61,7 +61,7 @@ class ListMigprojectsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMigprojectsRequest.
+        r"""Sets the limit of this ListMigprojectsRequest.
 
         每一页记录的迁移项目
 
@@ -72,7 +72,7 @@ class ListMigprojectsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMigprojectsRequest.
+        r"""Gets the offset of this ListMigprojectsRequest.
 
         偏移量
 
@@ -83,7 +83,7 @@ class ListMigprojectsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMigprojectsRequest.
+        r"""Sets the offset of this ListMigprojectsRequest.
 
         偏移量
 

@@ -27,7 +27,7 @@ class ShowStorageRequest:
     }
 
     def __init__(self, format_list=None, in_project=None):
-        """ShowStorageRequest
+        r"""ShowStorageRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowStorageRequest:
 
     @property
     def format_list(self):
-        """Gets the format_list of this ShowStorageRequest.
+        r"""Gets the format_list of this ShowStorageRequest.
 
         类型列表
 
@@ -61,7 +61,7 @@ class ShowStorageRequest:
 
     @format_list.setter
     def format_list(self, format_list):
-        """Sets the format_list of this ShowStorageRequest.
+        r"""Sets the format_list of this ShowStorageRequest.
 
         类型列表
 
@@ -72,7 +72,7 @@ class ShowStorageRequest:
 
     @property
     def in_project(self):
-        """Gets the in_project of this ShowStorageRequest.
+        r"""Gets the in_project of this ShowStorageRequest.
 
         是否在项目中
 
@@ -83,7 +83,7 @@ class ShowStorageRequest:
 
     @in_project.setter
     def in_project(self, in_project):
-        """Sets the in_project of this ShowStorageRequest.
+        r"""Sets the in_project of this ShowStorageRequest.
 
         是否在项目中
 

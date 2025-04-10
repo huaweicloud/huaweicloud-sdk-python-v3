@@ -31,7 +31,7 @@ class UpdateScriptReq:
     }
 
     def __init__(self, name=None, description=None, content=None, version=None):
-        """UpdateScriptReq
+        r"""UpdateScriptReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateScriptReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateScriptReq.
+        r"""Gets the name of this UpdateScriptReq.
 
         脚本名称。
 
@@ -75,7 +75,7 @@ class UpdateScriptReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateScriptReq.
+        r"""Sets the name of this UpdateScriptReq.
 
         脚本名称。
 
@@ -86,7 +86,7 @@ class UpdateScriptReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateScriptReq.
+        r"""Gets the description of this UpdateScriptReq.
 
         描述。
 
@@ -97,7 +97,7 @@ class UpdateScriptReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateScriptReq.
+        r"""Sets the description of this UpdateScriptReq.
 
         描述。
 
@@ -108,7 +108,7 @@ class UpdateScriptReq:
 
     @property
     def content(self):
-        """Gets the content of this UpdateScriptReq.
+        r"""Gets the content of this UpdateScriptReq.
 
         脚本内容。
 
@@ -119,7 +119,7 @@ class UpdateScriptReq:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this UpdateScriptReq.
+        r"""Sets the content of this UpdateScriptReq.
 
         脚本内容。
 
@@ -130,7 +130,7 @@ class UpdateScriptReq:
 
     @property
     def version(self):
-        """Gets the version of this UpdateScriptReq.
+        r"""Gets the version of this UpdateScriptReq.
 
         脚本版本。
 
@@ -141,7 +141,7 @@ class UpdateScriptReq:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateScriptReq.
+        r"""Sets the version of this UpdateScriptReq.
 
         脚本版本。
 

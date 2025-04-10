@@ -26,7 +26,7 @@ class ReclaimEnterpriseMultiAccountCouponResponse(SdkResponse):
     }
 
     def __init__(self, real_retrieve_amout=None):
-        """ReclaimEnterpriseMultiAccountCouponResponse
+        r"""ReclaimEnterpriseMultiAccountCouponResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ReclaimEnterpriseMultiAccountCouponResponse(SdkResponse):
 
     @property
     def real_retrieve_amout(self):
-        """Gets the real_retrieve_amout of this ReclaimEnterpriseMultiAccountCouponResponse.
+        r"""Gets the real_retrieve_amout of this ReclaimEnterpriseMultiAccountCouponResponse.
 
         |参数名称：实际回收金额。| |参数的约束及描述：成功时返回|
 
@@ -55,7 +55,7 @@ class ReclaimEnterpriseMultiAccountCouponResponse(SdkResponse):
 
     @real_retrieve_amout.setter
     def real_retrieve_amout(self, real_retrieve_amout):
-        """Sets the real_retrieve_amout of this ReclaimEnterpriseMultiAccountCouponResponse.
+        r"""Sets the real_retrieve_amout of this ReclaimEnterpriseMultiAccountCouponResponse.
 
         |参数名称：实际回收金额。| |参数的约束及描述：成功时返回|
 

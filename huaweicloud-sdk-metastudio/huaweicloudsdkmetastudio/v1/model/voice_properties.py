@@ -29,7 +29,7 @@ class VoiceProperties:
     }
 
     def __init__(self, job_tag=None, sex=None, language=None):
-        """VoiceProperties
+        r"""VoiceProperties
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class VoiceProperties:
 
     @property
     def job_tag(self):
-        """Gets the job_tag of this VoiceProperties.
+        r"""Gets the job_tag of this VoiceProperties.
 
         任务标签，为Flexus版声音的配置。   * ECOMMERCE: 电商   * NEWS: 新闻   * MARKETING: 营销
 
@@ -65,7 +65,7 @@ class VoiceProperties:
 
     @job_tag.setter
     def job_tag(self, job_tag):
-        """Sets the job_tag of this VoiceProperties.
+        r"""Sets the job_tag of this VoiceProperties.
 
         任务标签，为Flexus版声音的配置。   * ECOMMERCE: 电商   * NEWS: 新闻   * MARKETING: 营销
 
@@ -76,7 +76,7 @@ class VoiceProperties:
 
     @property
     def sex(self):
-        """Gets the sex of this VoiceProperties.
+        r"""Gets the sex of this VoiceProperties.
 
         语音性别，是男性声音还是女性声音，为Flexus版声音的配置。 * FEMALE: 女性 * MALE: 男性
 
@@ -87,7 +87,7 @@ class VoiceProperties:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this VoiceProperties.
+        r"""Sets the sex of this VoiceProperties.
 
         语音性别，是男性声音还是女性声音，为Flexus版声音的配置。 * FEMALE: 女性 * MALE: 男性
 
@@ -98,7 +98,7 @@ class VoiceProperties:
 
     @property
     def language(self):
-        """Gets the language of this VoiceProperties.
+        r"""Gets the language of this VoiceProperties.
 
         训练语言，当前仅支持中文，为Flexus版声音的配置。 * CN: 中文 * EN: 英文
 
@@ -109,7 +109,7 @@ class VoiceProperties:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this VoiceProperties.
+        r"""Sets the language of this VoiceProperties.
 
         训练语言，当前仅支持中文，为Flexus版声音的配置。 * CN: 中文 * EN: 英文
 

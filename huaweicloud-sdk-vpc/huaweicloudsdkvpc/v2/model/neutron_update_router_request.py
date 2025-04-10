@@ -27,7 +27,7 @@ class NeutronUpdateRouterRequest:
     }
 
     def __init__(self, router_id=None, body=None):
-        """NeutronUpdateRouterRequest
+        r"""NeutronUpdateRouterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NeutronUpdateRouterRequest:
 
     @property
     def router_id(self):
-        """Gets the router_id of this NeutronUpdateRouterRequest.
+        r"""Gets the router_id of this NeutronUpdateRouterRequest.
 
         路由器ID
 
@@ -60,7 +60,7 @@ class NeutronUpdateRouterRequest:
 
     @router_id.setter
     def router_id(self, router_id):
-        """Sets the router_id of this NeutronUpdateRouterRequest.
+        r"""Sets the router_id of this NeutronUpdateRouterRequest.
 
         路由器ID
 
@@ -71,7 +71,7 @@ class NeutronUpdateRouterRequest:
 
     @property
     def body(self):
-        """Gets the body of this NeutronUpdateRouterRequest.
+        r"""Gets the body of this NeutronUpdateRouterRequest.
 
         :return: The body of this NeutronUpdateRouterRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateRouterRequestBody`
@@ -80,7 +80,7 @@ class NeutronUpdateRouterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this NeutronUpdateRouterRequest.
+        r"""Sets the body of this NeutronUpdateRouterRequest.
 
         :param body: The body of this NeutronUpdateRouterRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.NeutronUpdateRouterRequestBody`

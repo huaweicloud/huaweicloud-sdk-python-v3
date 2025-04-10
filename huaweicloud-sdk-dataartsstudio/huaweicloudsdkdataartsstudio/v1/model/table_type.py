@@ -23,7 +23,7 @@ class TableType:
     }
 
     def __init__(self):
-        """TableType
+        r"""TableType
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class DeleteFacesBatchReq:
     }
 
     def __init__(self, filter=None):
-        """DeleteFacesBatchReq
+        r"""DeleteFacesBatchReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteFacesBatchReq:
 
     @property
     def filter(self):
-        """Gets the filter of this DeleteFacesBatchReq.
+        r"""Gets the filter of this DeleteFacesBatchReq.
 
         [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc) [过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
 
@@ -53,7 +53,7 @@ class DeleteFacesBatchReq:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this DeleteFacesBatchReq.
+        r"""Sets the filter of this DeleteFacesBatchReq.
 
         [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc) [过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
 

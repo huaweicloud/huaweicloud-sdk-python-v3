@@ -25,7 +25,7 @@ class UploadSecretBlobRequest:
     }
 
     def __init__(self, body=None):
-        """UploadSecretBlobRequest
+        r"""UploadSecretBlobRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UploadSecretBlobRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadSecretBlobRequest.
+        r"""Gets the body of this UploadSecretBlobRequest.
 
         :return: The body of this UploadSecretBlobRequest.
         :rtype: :class:`huaweicloudsdkcsms.v1.UploadSecretBlobRequestBody`
@@ -52,7 +52,7 @@ class UploadSecretBlobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadSecretBlobRequest.
+        r"""Sets the body of this UploadSecretBlobRequest.
 
         :param body: The body of this UploadSecretBlobRequest.
         :type body: :class:`huaweicloudsdkcsms.v1.UploadSecretBlobRequestBody`

@@ -26,7 +26,7 @@ class DeleteV2XEdgeByV2xEdgeIdResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteV2XEdgeByV2xEdgeIdResponse
+        r"""DeleteV2XEdgeByV2xEdgeIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteV2XEdgeByV2xEdgeIdResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteV2XEdgeByV2xEdgeIdResponse.
+        r"""Gets the body of this DeleteV2XEdgeByV2xEdgeIdResponse.
 
         :return: The body of this DeleteV2XEdgeByV2xEdgeIdResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteV2XEdgeByV2xEdgeIdResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteV2XEdgeByV2xEdgeIdResponse.
+        r"""Sets the body of this DeleteV2XEdgeByV2xEdgeIdResponse.
 
         :param body: The body of this DeleteV2XEdgeByV2xEdgeIdResponse.
         :type body: str

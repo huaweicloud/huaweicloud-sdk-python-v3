@@ -27,7 +27,7 @@ class ShowClusterDetailRequest:
     }
 
     def __init__(self, x_language=None, cluster_id=None):
-        """ShowClusterDetailRequest
+        r"""ShowClusterDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowClusterDetailRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowClusterDetailRequest.
+        r"""Gets the x_language of this ShowClusterDetailRequest.
 
         语言类型
 
@@ -59,7 +59,7 @@ class ShowClusterDetailRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowClusterDetailRequest.
+        r"""Sets the x_language of this ShowClusterDetailRequest.
 
         语言类型
 
@@ -70,7 +70,7 @@ class ShowClusterDetailRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowClusterDetailRequest.
+        r"""Gets the cluster_id of this ShowClusterDetailRequest.
 
         集群ID。  获取方法：在ClooudTable控制台，单击要查询的集群名称进入集群详情页，获取“集群ID\"。
 
@@ -81,7 +81,7 @@ class ShowClusterDetailRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowClusterDetailRequest.
+        r"""Sets the cluster_id of this ShowClusterDetailRequest.
 
         集群ID。  获取方法：在ClooudTable控制台，单击要查询的集群名称进入集群详情页，获取“集群ID\"。
 

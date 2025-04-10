@@ -31,7 +31,7 @@ class ListInstancesSessionRequest:
     }
 
     def __init__(self, node_id=None, offset=None, limit=None, addr_prefix=None):
-        """ListInstancesSessionRequest
+        r"""ListInstancesSessionRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListInstancesSessionRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListInstancesSessionRequest.
+        r"""Gets the node_id of this ListInstancesSessionRequest.
 
         节点ID。
 
@@ -74,7 +74,7 @@ class ListInstancesSessionRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListInstancesSessionRequest.
+        r"""Sets the node_id of this ListInstancesSessionRequest.
 
         节点ID。
 
@@ -85,7 +85,7 @@ class ListInstancesSessionRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstancesSessionRequest.
+        r"""Gets the offset of this ListInstancesSessionRequest.
 
         索引位置，偏移量。取值大于或等于0。不传该参数时，查询偏移量默认为0，表示从最新创建的实例节点连接开始查询。
 
@@ -96,7 +96,7 @@ class ListInstancesSessionRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstancesSessionRequest.
+        r"""Sets the offset of this ListInstancesSessionRequest.
 
         索引位置，偏移量。取值大于或等于0。不传该参数时，查询偏移量默认为0，表示从最新创建的实例节点连接开始查询。
 
@@ -107,7 +107,7 @@ class ListInstancesSessionRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstancesSessionRequest.
+        r"""Gets the limit of this ListInstancesSessionRequest.
 
         分页查询页数。不传该参数时，默认每页50条实例节点连接信息，最大100条。
 
@@ -118,7 +118,7 @@ class ListInstancesSessionRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstancesSessionRequest.
+        r"""Sets the limit of this ListInstancesSessionRequest.
 
         分页查询页数。不传该参数时，默认每页50条实例节点连接信息，最大100条。
 
@@ -129,7 +129,7 @@ class ListInstancesSessionRequest:
 
     @property
     def addr_prefix(self):
-        """Gets the addr_prefix of this ListInstancesSessionRequest.
+        r"""Gets the addr_prefix of this ListInstancesSessionRequest.
 
         用户端地址前缀匹配字符串。完整的地址由ip和端口号组成。不传默认查询所有。
 
@@ -140,7 +140,7 @@ class ListInstancesSessionRequest:
 
     @addr_prefix.setter
     def addr_prefix(self, addr_prefix):
-        """Sets the addr_prefix of this ListInstancesSessionRequest.
+        r"""Sets the addr_prefix of this ListInstancesSessionRequest.
 
         用户端地址前缀匹配字符串。完整的地址由ip和端口号组成。不传默认查询所有。
 

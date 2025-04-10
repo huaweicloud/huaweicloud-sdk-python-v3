@@ -30,7 +30,7 @@ class CreateTempResponse(SdkResponse):
     }
 
     def __init__(self, code=None, temp_id=None, message=None):
-        """CreateTempResponse
+        r"""CreateTempResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateTempResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateTempResponse.
+        r"""Gets the code of this CreateTempResponse.
 
         响应码
 
@@ -69,7 +69,7 @@ class CreateTempResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateTempResponse.
+        r"""Sets the code of this CreateTempResponse.
 
         响应码
 
@@ -80,7 +80,7 @@ class CreateTempResponse(SdkResponse):
 
     @property
     def temp_id(self):
-        """Gets the temp_id of this CreateTempResponse.
+        r"""Gets the temp_id of this CreateTempResponse.
 
         事务id
 
@@ -91,7 +91,7 @@ class CreateTempResponse(SdkResponse):
 
     @temp_id.setter
     def temp_id(self, temp_id):
-        """Sets the temp_id of this CreateTempResponse.
+        r"""Sets the temp_id of this CreateTempResponse.
 
         事务id
 
@@ -102,7 +102,7 @@ class CreateTempResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateTempResponse.
+        r"""Gets the message of this CreateTempResponse.
 
         响应消息
 
@@ -113,7 +113,7 @@ class CreateTempResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateTempResponse.
+        r"""Sets the message of this CreateTempResponse.
 
         响应消息
 

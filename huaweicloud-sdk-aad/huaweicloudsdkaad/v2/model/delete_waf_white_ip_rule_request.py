@@ -25,7 +25,7 @@ class DeleteWafWhiteIpRuleRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteWafWhiteIpRuleRequest
+        r"""DeleteWafWhiteIpRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteWafWhiteIpRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteWafWhiteIpRuleRequest.
+        r"""Gets the body of this DeleteWafWhiteIpRuleRequest.
 
         :return: The body of this DeleteWafWhiteIpRuleRequest.
         :rtype: :class:`huaweicloudsdkaad.v2.DeleteWafWhiteIpRuleV2RequestBody`
@@ -52,7 +52,7 @@ class DeleteWafWhiteIpRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteWafWhiteIpRuleRequest.
+        r"""Sets the body of this DeleteWafWhiteIpRuleRequest.
 
         :param body: The body of this DeleteWafWhiteIpRuleRequest.
         :type body: :class:`huaweicloudsdkaad.v2.DeleteWafWhiteIpRuleV2RequestBody`

@@ -40,7 +40,7 @@ class ListMyActionTemplateResponse(SdkResponse):
     }
 
     def __init__(self, count=None, action_templates=None, offset=None, is_truncated=None, x_request_id=None, connection=None, content_length=None, date=None):
-        """ListMyActionTemplateResponse
+        r"""ListMyActionTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListMyActionTemplateResponse.
+        r"""Gets the count of this ListMyActionTemplateResponse.
 
         列表条目数
 
@@ -104,7 +104,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListMyActionTemplateResponse.
+        r"""Sets the count of this ListMyActionTemplateResponse.
 
         列表条目数
 
@@ -115,7 +115,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @property
     def action_templates(self):
-        """Gets the action_templates of this ListMyActionTemplateResponse.
+        r"""Gets the action_templates of this ListMyActionTemplateResponse.
 
         模板列表信息
 
@@ -126,7 +126,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @action_templates.setter
     def action_templates(self, action_templates):
-        """Sets the action_templates of this ListMyActionTemplateResponse.
+        r"""Sets the action_templates of this ListMyActionTemplateResponse.
 
         模板列表信息
 
@@ -137,7 +137,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListMyActionTemplateResponse.
+        r"""Gets the offset of this ListMyActionTemplateResponse.
 
         下一次查询的起始位置。
 
@@ -148,7 +148,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMyActionTemplateResponse.
+        r"""Sets the offset of this ListMyActionTemplateResponse.
 
         下一次查询的起始位置。
 
@@ -159,7 +159,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @property
     def is_truncated(self):
-        """Gets the is_truncated of this ListMyActionTemplateResponse.
+        r"""Gets the is_truncated of this ListMyActionTemplateResponse.
 
         表明是否本次返回的结果列表被截断。true：表示本次没有返回全部结果。false：表示本次已经返回了全部结果。
 
@@ -170,7 +170,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @is_truncated.setter
     def is_truncated(self, is_truncated):
-        """Sets the is_truncated of this ListMyActionTemplateResponse.
+        r"""Sets the is_truncated of this ListMyActionTemplateResponse.
 
         表明是否本次返回的结果列表被截断。true：表示本次没有返回全部结果。false：表示本次已经返回了全部结果。
 
@@ -181,7 +181,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListMyActionTemplateResponse.
+        r"""Gets the x_request_id of this ListMyActionTemplateResponse.
 
         :return: The x_request_id of this ListMyActionTemplateResponse.
         :rtype: str
@@ -190,7 +190,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListMyActionTemplateResponse.
+        r"""Sets the x_request_id of this ListMyActionTemplateResponse.
 
         :param x_request_id: The x_request_id of this ListMyActionTemplateResponse.
         :type x_request_id: str
@@ -199,7 +199,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this ListMyActionTemplateResponse.
+        r"""Gets the connection of this ListMyActionTemplateResponse.
 
         :return: The connection of this ListMyActionTemplateResponse.
         :rtype: str
@@ -208,7 +208,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this ListMyActionTemplateResponse.
+        r"""Sets the connection of this ListMyActionTemplateResponse.
 
         :param connection: The connection of this ListMyActionTemplateResponse.
         :type connection: str
@@ -217,7 +217,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this ListMyActionTemplateResponse.
+        r"""Gets the content_length of this ListMyActionTemplateResponse.
 
         :return: The content_length of this ListMyActionTemplateResponse.
         :rtype: str
@@ -226,7 +226,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this ListMyActionTemplateResponse.
+        r"""Sets the content_length of this ListMyActionTemplateResponse.
 
         :param content_length: The content_length of this ListMyActionTemplateResponse.
         :type content_length: str
@@ -235,7 +235,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this ListMyActionTemplateResponse.
+        r"""Gets the date of this ListMyActionTemplateResponse.
 
         :return: The date of this ListMyActionTemplateResponse.
         :rtype: str
@@ -244,7 +244,7 @@ class ListMyActionTemplateResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ListMyActionTemplateResponse.
+        r"""Sets the date of this ListMyActionTemplateResponse.
 
         :param date: The date of this ListMyActionTemplateResponse.
         :type date: str

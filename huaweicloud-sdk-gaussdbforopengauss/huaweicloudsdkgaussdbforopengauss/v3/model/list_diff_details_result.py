@@ -29,7 +29,7 @@ class ListDiffDetailsResult:
     }
 
     def __init__(self, name=None, source_value=None, target_value=None):
-        """ListDiffDetailsResult
+        r"""ListDiffDetailsResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListDiffDetailsResult:
 
     @property
     def name(self):
-        """Gets the name of this ListDiffDetailsResult.
+        r"""Gets the name of this ListDiffDetailsResult.
 
         参数名称。
 
@@ -68,7 +68,7 @@ class ListDiffDetailsResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDiffDetailsResult.
+        r"""Sets the name of this ListDiffDetailsResult.
 
         参数名称。
 
@@ -79,7 +79,7 @@ class ListDiffDetailsResult:
 
     @property
     def source_value(self):
-        """Gets the source_value of this ListDiffDetailsResult.
+        r"""Gets the source_value of this ListDiffDetailsResult.
 
         比较参数组的参数值。
 
@@ -90,7 +90,7 @@ class ListDiffDetailsResult:
 
     @source_value.setter
     def source_value(self, source_value):
-        """Sets the source_value of this ListDiffDetailsResult.
+        r"""Sets the source_value of this ListDiffDetailsResult.
 
         比较参数组的参数值。
 
@@ -101,7 +101,7 @@ class ListDiffDetailsResult:
 
     @property
     def target_value(self):
-        """Gets the target_value of this ListDiffDetailsResult.
+        r"""Gets the target_value of this ListDiffDetailsResult.
 
         目标参数组的参数值。
 
@@ -112,7 +112,7 @@ class ListDiffDetailsResult:
 
     @target_value.setter
     def target_value(self, target_value):
-        """Sets the target_value of this ListDiffDetailsResult.
+        r"""Sets the target_value of this ListDiffDetailsResult.
 
         目标参数组的参数值。
 

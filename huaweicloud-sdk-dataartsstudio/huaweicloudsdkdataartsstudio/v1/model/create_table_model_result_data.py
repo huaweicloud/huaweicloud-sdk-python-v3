@@ -25,7 +25,7 @@ class CreateTableModelResultData:
     }
 
     def __init__(self, value=None):
-        """CreateTableModelResultData
+        r"""CreateTableModelResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTableModelResultData:
 
     @property
     def value(self):
-        """Gets the value of this CreateTableModelResultData.
+        r"""Gets the value of this CreateTableModelResultData.
 
         :return: The value of this CreateTableModelResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.TableModelVO`
@@ -52,7 +52,7 @@ class CreateTableModelResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateTableModelResultData.
+        r"""Sets the value of this CreateTableModelResultData.
 
         :param value: The value of this CreateTableModelResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.TableModelVO`

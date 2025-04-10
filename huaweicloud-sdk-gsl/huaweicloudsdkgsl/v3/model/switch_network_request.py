@@ -27,7 +27,7 @@ class SwitchNetworkRequest:
     }
 
     def __init__(self, sim_card_id=None, body=None):
-        """SwitchNetworkRequest
+        r"""SwitchNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SwitchNetworkRequest:
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this SwitchNetworkRequest.
+        r"""Gets the sim_card_id of this SwitchNetworkRequest.
 
         sim卡id
 
@@ -60,7 +60,7 @@ class SwitchNetworkRequest:
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this SwitchNetworkRequest.
+        r"""Sets the sim_card_id of this SwitchNetworkRequest.
 
         sim卡id
 
@@ -71,7 +71,7 @@ class SwitchNetworkRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchNetworkRequest.
+        r"""Gets the body of this SwitchNetworkRequest.
 
         :return: The body of this SwitchNetworkRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.NetworkSwitchReq`
@@ -80,7 +80,7 @@ class SwitchNetworkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchNetworkRequest.
+        r"""Sets the body of this SwitchNetworkRequest.
 
         :param body: The body of this SwitchNetworkRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.NetworkSwitchReq`

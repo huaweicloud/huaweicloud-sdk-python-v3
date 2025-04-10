@@ -26,7 +26,7 @@ class ShowAgencyResponse(SdkResponse):
     }
 
     def __init__(self, agency=None):
-        """ShowAgencyResponse
+        r"""ShowAgencyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAgencyResponse(SdkResponse):
 
     @property
     def agency(self):
-        """Gets the agency of this ShowAgencyResponse.
+        r"""Gets the agency of this ShowAgencyResponse.
 
         :return: The agency of this ShowAgencyResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyShowResult`
@@ -53,7 +53,7 @@ class ShowAgencyResponse(SdkResponse):
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this ShowAgencyResponse.
+        r"""Sets the agency of this ShowAgencyResponse.
 
         :param agency: The agency of this ShowAgencyResponse.
         :type agency: :class:`huaweicloudsdkiam.v3.AgencyShowResult`

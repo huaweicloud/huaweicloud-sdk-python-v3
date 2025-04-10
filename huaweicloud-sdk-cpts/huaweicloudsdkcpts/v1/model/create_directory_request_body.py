@@ -25,7 +25,7 @@ class CreateDirectoryRequestBody:
     }
 
     def __init__(self, name=None):
-        """CreateDirectoryRequestBody
+        r"""CreateDirectoryRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateDirectoryRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateDirectoryRequestBody.
+        r"""Gets the name of this CreateDirectoryRequestBody.
 
         目录名称
 
@@ -53,7 +53,7 @@ class CreateDirectoryRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDirectoryRequestBody.
+        r"""Sets the name of this CreateDirectoryRequestBody.
 
         目录名称
 

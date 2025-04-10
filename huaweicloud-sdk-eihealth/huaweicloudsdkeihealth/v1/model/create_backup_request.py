@@ -27,7 +27,7 @@ class CreateBackupRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateBackupRequest
+        r"""CreateBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateBackupRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateBackupRequest.
+        r"""Gets the eihealth_project_id of this CreateBackupRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class CreateBackupRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateBackupRequest.
+        r"""Sets the eihealth_project_id of this CreateBackupRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class CreateBackupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateBackupRequest.
+        r"""Gets the body of this CreateBackupRequest.
 
         :return: The body of this CreateBackupRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateBackupReq`
@@ -80,7 +80,7 @@ class CreateBackupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateBackupRequest.
+        r"""Sets the body of this CreateBackupRequest.
 
         :param body: The body of this CreateBackupRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateBackupReq`

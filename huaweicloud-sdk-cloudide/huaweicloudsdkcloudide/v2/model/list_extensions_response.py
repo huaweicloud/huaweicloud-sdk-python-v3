@@ -26,7 +26,7 @@ class ListExtensionsResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """ListExtensionsResponse
+        r"""ListExtensionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListExtensionsResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ListExtensionsResponse.
+        r"""Gets the results of this ListExtensionsResponse.
 
         插件列表查询结果集合
 
@@ -55,7 +55,7 @@ class ListExtensionsResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ListExtensionsResponse.
+        r"""Sets the results of this ListExtensionsResponse.
 
         插件列表查询结果集合
 

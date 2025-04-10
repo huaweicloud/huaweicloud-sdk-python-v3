@@ -31,7 +31,7 @@ class AvailabilityZone:
     }
 
     def __init__(self, code=None, name=None, status=None, public_border_group=None):
-        """AvailabilityZone
+        r"""AvailabilityZone
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class AvailabilityZone:
 
     @property
     def code(self):
-        """Gets the code of this AvailabilityZone.
+        r"""Gets the code of this AvailabilityZone.
 
         可用区唯一编码。
 
@@ -71,7 +71,7 @@ class AvailabilityZone:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this AvailabilityZone.
+        r"""Sets the code of this AvailabilityZone.
 
         可用区唯一编码。
 
@@ -82,7 +82,7 @@ class AvailabilityZone:
 
     @property
     def name(self):
-        """Gets the name of this AvailabilityZone.
+        r"""Gets the name of this AvailabilityZone.
 
         可用区名称。
 
@@ -93,7 +93,7 @@ class AvailabilityZone:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AvailabilityZone.
+        r"""Sets the name of this AvailabilityZone.
 
         可用区名称。
 
@@ -104,7 +104,7 @@ class AvailabilityZone:
 
     @property
     def status(self):
-        """Gets the status of this AvailabilityZone.
+        r"""Gets the status of this AvailabilityZone.
 
         可用区状态。 - available：可用。 - unavailable：不可用。
 
@@ -115,7 +115,7 @@ class AvailabilityZone:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AvailabilityZone.
+        r"""Sets the status of this AvailabilityZone.
 
         可用区状态。 - available：可用。 - unavailable：不可用。
 
@@ -126,7 +126,7 @@ class AvailabilityZone:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this AvailabilityZone.
+        r"""Gets the public_border_group of this AvailabilityZone.
 
         可用区组，如：center。
 
@@ -137,7 +137,7 @@ class AvailabilityZone:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this AvailabilityZone.
+        r"""Sets the public_border_group of this AvailabilityZone.
 
         可用区组，如：center。
 

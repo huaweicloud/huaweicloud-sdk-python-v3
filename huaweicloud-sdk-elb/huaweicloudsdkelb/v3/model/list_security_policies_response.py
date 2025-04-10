@@ -30,7 +30,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, security_policies=None, request_id=None, page_info=None):
-        """ListSecurityPoliciesResponse
+        r"""ListSecurityPoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
 
     @property
     def security_policies(self):
-        """Gets the security_policies of this ListSecurityPoliciesResponse.
+        r"""Gets the security_policies of this ListSecurityPoliciesResponse.
 
         自定义安全策略列表返回对象。
 
@@ -69,7 +69,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
 
     @security_policies.setter
     def security_policies(self, security_policies):
-        """Sets the security_policies of this ListSecurityPoliciesResponse.
+        r"""Sets the security_policies of this ListSecurityPoliciesResponse.
 
         自定义安全策略列表返回对象。
 
@@ -80,7 +80,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListSecurityPoliciesResponse.
+        r"""Gets the request_id of this ListSecurityPoliciesResponse.
 
         请求ID。  注：自动生成 。
 
@@ -91,7 +91,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListSecurityPoliciesResponse.
+        r"""Sets the request_id of this ListSecurityPoliciesResponse.
 
         请求ID。  注：自动生成 。
 
@@ -102,7 +102,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListSecurityPoliciesResponse.
+        r"""Gets the page_info of this ListSecurityPoliciesResponse.
 
         :return: The page_info of this ListSecurityPoliciesResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -111,7 +111,7 @@ class ListSecurityPoliciesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListSecurityPoliciesResponse.
+        r"""Sets the page_info of this ListSecurityPoliciesResponse.
 
         :param page_info: The page_info of this ListSecurityPoliciesResponse.
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`

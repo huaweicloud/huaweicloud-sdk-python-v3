@@ -27,7 +27,7 @@ class OrchestrationMapParamRange:
     }
 
     def __init__(self, range_start=None, range_end=None):
-        """OrchestrationMapParamRange
+        r"""OrchestrationMapParamRange
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OrchestrationMapParamRange:
 
     @property
     def range_start(self):
-        """Gets the range_start of this OrchestrationMapParamRange.
+        r"""Gets the range_start of this OrchestrationMapParamRange.
 
         区间起始值。  为可以转换成integer的string，转换后的range_start的范围为0-9223372036854775807， range_start不大于range_end。
 
@@ -61,7 +61,7 @@ class OrchestrationMapParamRange:
 
     @range_start.setter
     def range_start(self, range_start):
-        """Sets the range_start of this OrchestrationMapParamRange.
+        r"""Sets the range_start of this OrchestrationMapParamRange.
 
         区间起始值。  为可以转换成integer的string，转换后的range_start的范围为0-9223372036854775807， range_start不大于range_end。
 
@@ -72,7 +72,7 @@ class OrchestrationMapParamRange:
 
     @property
     def range_end(self):
-        """Gets the range_end of this OrchestrationMapParamRange.
+        r"""Gets the range_end of this OrchestrationMapParamRange.
 
         区间终止值。  为可以转换成integer的string，转换后的range_end的范围为0-9223372036854775807， range_start不大于range_end。
 
@@ -83,7 +83,7 @@ class OrchestrationMapParamRange:
 
     @range_end.setter
     def range_end(self, range_end):
-        """Sets the range_end of this OrchestrationMapParamRange.
+        r"""Sets the range_end of this OrchestrationMapParamRange.
 
         区间终止值。  为可以转换成integer的string，转换后的range_end的范围为0-9223372036854775807， range_start不大于range_end。
 

@@ -33,7 +33,7 @@ class FileInfo:
     }
 
     def __init__(self, name=None, size=None, updated_time=None, download_link=None, link_expired_time=None):
-        """FileInfo
+        r"""FileInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class FileInfo:
 
     @property
     def name(self):
-        """Gets the name of this FileInfo.
+        r"""Gets the name of this FileInfo.
 
         文件名。
 
@@ -77,7 +77,7 @@ class FileInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FileInfo.
+        r"""Sets the name of this FileInfo.
 
         文件名。
 
@@ -88,7 +88,7 @@ class FileInfo:
 
     @property
     def size(self):
-        """Gets the size of this FileInfo.
+        r"""Gets the size of this FileInfo.
 
         文件大小，单位：KB。
 
@@ -99,7 +99,7 @@ class FileInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this FileInfo.
+        r"""Sets the size of this FileInfo.
 
         文件大小，单位：KB。
 
@@ -110,7 +110,7 @@ class FileInfo:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this FileInfo.
+        r"""Gets the updated_time of this FileInfo.
 
         SQL文件最后一次修改时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始，Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -121,7 +121,7 @@ class FileInfo:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this FileInfo.
+        r"""Sets the updated_time of this FileInfo.
 
         SQL文件最后一次修改时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始，Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -132,7 +132,7 @@ class FileInfo:
 
     @property
     def download_link(self):
-        """Gets the download_link of this FileInfo.
+        r"""Gets the download_link of this FileInfo.
 
         文件下载链接。
 
@@ -143,7 +143,7 @@ class FileInfo:
 
     @download_link.setter
     def download_link(self, download_link):
-        """Sets the download_link of this FileInfo.
+        r"""Sets the download_link of this FileInfo.
 
         文件下载链接。
 
@@ -154,7 +154,7 @@ class FileInfo:
 
     @property
     def link_expired_time(self):
-        """Gets the link_expired_time of this FileInfo.
+        r"""Gets the link_expired_time of this FileInfo.
 
         下载链接过期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始，Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -165,7 +165,7 @@ class FileInfo:
 
     @link_expired_time.setter
     def link_expired_time(self, link_expired_time):
-        """Sets the link_expired_time of this FileInfo.
+        r"""Sets the link_expired_time of this FileInfo.
 
         下载链接过期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始，Z指时区偏移量，例如偏移1个小时显示为+0100。
 

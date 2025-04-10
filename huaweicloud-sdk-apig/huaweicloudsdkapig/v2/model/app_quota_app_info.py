@@ -43,7 +43,7 @@ class AppQuotaAppInfo:
     }
 
     def __init__(self, app_id=None, name=None, status=None, app_key=None, remark=None, register_time=None, update_time=None, app_quota_id=None, app_quota_name=None, bound_time=None):
-        """AppQuotaAppInfo
+        r"""AppQuotaAppInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AppQuotaAppInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AppQuotaAppInfo.
+        r"""Gets the app_id of this AppQuotaAppInfo.
 
         凭据编号
 
@@ -117,7 +117,7 @@ class AppQuotaAppInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AppQuotaAppInfo.
+        r"""Sets the app_id of this AppQuotaAppInfo.
 
         凭据编号
 
@@ -128,7 +128,7 @@ class AppQuotaAppInfo:
 
     @property
     def name(self):
-        """Gets the name of this AppQuotaAppInfo.
+        r"""Gets the name of this AppQuotaAppInfo.
 
         凭据名称
 
@@ -139,7 +139,7 @@ class AppQuotaAppInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppQuotaAppInfo.
+        r"""Sets the name of this AppQuotaAppInfo.
 
         凭据名称
 
@@ -150,7 +150,7 @@ class AppQuotaAppInfo:
 
     @property
     def status(self):
-        """Gets the status of this AppQuotaAppInfo.
+        r"""Gets the status of this AppQuotaAppInfo.
 
         凭据状态： - 1：启用 - 2：禁用
 
@@ -161,7 +161,7 @@ class AppQuotaAppInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AppQuotaAppInfo.
+        r"""Sets the status of this AppQuotaAppInfo.
 
         凭据状态： - 1：启用 - 2：禁用
 
@@ -172,7 +172,7 @@ class AppQuotaAppInfo:
 
     @property
     def app_key(self):
-        """Gets the app_key of this AppQuotaAppInfo.
+        r"""Gets the app_key of this AppQuotaAppInfo.
 
         凭据的Key
 
@@ -183,7 +183,7 @@ class AppQuotaAppInfo:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this AppQuotaAppInfo.
+        r"""Sets the app_key of this AppQuotaAppInfo.
 
         凭据的Key
 
@@ -194,7 +194,7 @@ class AppQuotaAppInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this AppQuotaAppInfo.
+        r"""Gets the remark of this AppQuotaAppInfo.
 
         凭据描述
 
@@ -205,7 +205,7 @@ class AppQuotaAppInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this AppQuotaAppInfo.
+        r"""Sets the remark of this AppQuotaAppInfo.
 
         凭据描述
 
@@ -216,7 +216,7 @@ class AppQuotaAppInfo:
 
     @property
     def register_time(self):
-        """Gets the register_time of this AppQuotaAppInfo.
+        r"""Gets the register_time of this AppQuotaAppInfo.
 
         创建时间
 
@@ -227,7 +227,7 @@ class AppQuotaAppInfo:
 
     @register_time.setter
     def register_time(self, register_time):
-        """Sets the register_time of this AppQuotaAppInfo.
+        r"""Sets the register_time of this AppQuotaAppInfo.
 
         创建时间
 
@@ -238,7 +238,7 @@ class AppQuotaAppInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppQuotaAppInfo.
+        r"""Gets the update_time of this AppQuotaAppInfo.
 
         更新时间
 
@@ -249,7 +249,7 @@ class AppQuotaAppInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppQuotaAppInfo.
+        r"""Sets the update_time of this AppQuotaAppInfo.
 
         更新时间
 
@@ -260,7 +260,7 @@ class AppQuotaAppInfo:
 
     @property
     def app_quota_id(self):
-        """Gets the app_quota_id of this AppQuotaAppInfo.
+        r"""Gets the app_quota_id of this AppQuotaAppInfo.
 
         凭据配额编号
 
@@ -271,7 +271,7 @@ class AppQuotaAppInfo:
 
     @app_quota_id.setter
     def app_quota_id(self, app_quota_id):
-        """Sets the app_quota_id of this AppQuotaAppInfo.
+        r"""Sets the app_quota_id of this AppQuotaAppInfo.
 
         凭据配额编号
 
@@ -282,7 +282,7 @@ class AppQuotaAppInfo:
 
     @property
     def app_quota_name(self):
-        """Gets the app_quota_name of this AppQuotaAppInfo.
+        r"""Gets the app_quota_name of this AppQuotaAppInfo.
 
         配额名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符
 
@@ -293,7 +293,7 @@ class AppQuotaAppInfo:
 
     @app_quota_name.setter
     def app_quota_name(self, app_quota_name):
-        """Sets the app_quota_name of this AppQuotaAppInfo.
+        r"""Sets the app_quota_name of this AppQuotaAppInfo.
 
         配额名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符
 
@@ -304,7 +304,7 @@ class AppQuotaAppInfo:
 
     @property
     def bound_time(self):
-        """Gets the bound_time of this AppQuotaAppInfo.
+        r"""Gets the bound_time of this AppQuotaAppInfo.
 
         绑定时间
 
@@ -315,7 +315,7 @@ class AppQuotaAppInfo:
 
     @bound_time.setter
     def bound_time(self, bound_time):
-        """Sets the bound_time of this AppQuotaAppInfo.
+        r"""Sets the bound_time of this AppQuotaAppInfo.
 
         绑定时间
 

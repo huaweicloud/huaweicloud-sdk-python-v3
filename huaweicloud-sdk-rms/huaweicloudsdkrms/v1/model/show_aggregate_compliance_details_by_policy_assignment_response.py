@@ -28,7 +28,7 @@ class ShowAggregateComplianceDetailsByPolicyAssignmentResponse(SdkResponse):
     }
 
     def __init__(self, policy_states=None, page_info=None):
-        """ShowAggregateComplianceDetailsByPolicyAssignmentResponse
+        r"""ShowAggregateComplianceDetailsByPolicyAssignmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAggregateComplianceDetailsByPolicyAssignmentResponse(SdkResponse):
 
     @property
     def policy_states(self):
-        """Gets the policy_states of this ShowAggregateComplianceDetailsByPolicyAssignmentResponse.
+        r"""Gets the policy_states of this ShowAggregateComplianceDetailsByPolicyAssignmentResponse.
 
         合规结果查询返回值
 
@@ -62,7 +62,7 @@ class ShowAggregateComplianceDetailsByPolicyAssignmentResponse(SdkResponse):
 
     @policy_states.setter
     def policy_states(self, policy_states):
-        """Sets the policy_states of this ShowAggregateComplianceDetailsByPolicyAssignmentResponse.
+        r"""Sets the policy_states of this ShowAggregateComplianceDetailsByPolicyAssignmentResponse.
 
         合规结果查询返回值
 
@@ -73,7 +73,7 @@ class ShowAggregateComplianceDetailsByPolicyAssignmentResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ShowAggregateComplianceDetailsByPolicyAssignmentResponse.
+        r"""Gets the page_info of this ShowAggregateComplianceDetailsByPolicyAssignmentResponse.
 
         :return: The page_info of this ShowAggregateComplianceDetailsByPolicyAssignmentResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.PageInfo`
@@ -82,7 +82,7 @@ class ShowAggregateComplianceDetailsByPolicyAssignmentResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ShowAggregateComplianceDetailsByPolicyAssignmentResponse.
+        r"""Sets the page_info of this ShowAggregateComplianceDetailsByPolicyAssignmentResponse.
 
         :param page_info: The page_info of this ShowAggregateComplianceDetailsByPolicyAssignmentResponse.
         :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`

@@ -28,7 +28,7 @@ class SearchSharedResourcesResponse(SdkResponse):
     }
 
     def __init__(self, shared_resources=None, page_info=None):
-        """SearchSharedResourcesResponse
+        r"""SearchSharedResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SearchSharedResourcesResponse(SdkResponse):
 
     @property
     def shared_resources(self):
-        """Gets the shared_resources of this SearchSharedResourcesResponse.
+        r"""Gets the shared_resources of this SearchSharedResourcesResponse.
 
         共享资源的信息列表。
 
@@ -62,7 +62,7 @@ class SearchSharedResourcesResponse(SdkResponse):
 
     @shared_resources.setter
     def shared_resources(self, shared_resources):
-        """Sets the shared_resources of this SearchSharedResourcesResponse.
+        r"""Sets the shared_resources of this SearchSharedResourcesResponse.
 
         共享资源的信息列表。
 
@@ -73,7 +73,7 @@ class SearchSharedResourcesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this SearchSharedResourcesResponse.
+        r"""Gets the page_info of this SearchSharedResourcesResponse.
 
         :return: The page_info of this SearchSharedResourcesResponse.
         :rtype: :class:`huaweicloudsdkram.v1.PageInfo`
@@ -82,7 +82,7 @@ class SearchSharedResourcesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this SearchSharedResourcesResponse.
+        r"""Sets the page_info of this SearchSharedResourcesResponse.
 
         :param page_info: The page_info of this SearchSharedResourcesResponse.
         :type page_info: :class:`huaweicloudsdkram.v1.PageInfo`

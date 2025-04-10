@@ -45,7 +45,7 @@ class SearchResourceRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, corp_id=None, start_expire_date=None, end_expire_date=None, type=None, type_id=None, status=None):
-        """SearchResourceRequest
+        r"""SearchResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class SearchResourceRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SearchResourceRequest.
+        r"""Gets the x_request_id of this SearchResourceRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -123,7 +123,7 @@ class SearchResourceRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SearchResourceRequest.
+        r"""Sets the x_request_id of this SearchResourceRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -134,7 +134,7 @@ class SearchResourceRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this SearchResourceRequest.
+        r"""Gets the accept_language of this SearchResourceRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -145,7 +145,7 @@ class SearchResourceRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this SearchResourceRequest.
+        r"""Sets the accept_language of this SearchResourceRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -156,7 +156,7 @@ class SearchResourceRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchResourceRequest.
+        r"""Gets the offset of this SearchResourceRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -167,7 +167,7 @@ class SearchResourceRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchResourceRequest.
+        r"""Sets the offset of this SearchResourceRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -178,7 +178,7 @@ class SearchResourceRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchResourceRequest.
+        r"""Gets the limit of this SearchResourceRequest.
 
         查询数量。 默认值：10。 
 
@@ -189,7 +189,7 @@ class SearchResourceRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchResourceRequest.
+        r"""Sets the limit of this SearchResourceRequest.
 
         查询数量。 默认值：10。 
 
@@ -200,7 +200,7 @@ class SearchResourceRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchResourceRequest.
+        r"""Gets the search_key of this SearchResourceRequest.
 
         搜索条件。
 
@@ -211,7 +211,7 @@ class SearchResourceRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchResourceRequest.
+        r"""Sets the search_key of this SearchResourceRequest.
 
         搜索条件。
 
@@ -222,7 +222,7 @@ class SearchResourceRequest:
 
     @property
     def corp_id(self):
-        """Gets the corp_id of this SearchResourceRequest.
+        r"""Gets the corp_id of this SearchResourceRequest.
 
         企业id。
 
@@ -233,7 +233,7 @@ class SearchResourceRequest:
 
     @corp_id.setter
     def corp_id(self, corp_id):
-        """Sets the corp_id of this SearchResourceRequest.
+        r"""Sets the corp_id of this SearchResourceRequest.
 
         企业id。
 
@@ -244,7 +244,7 @@ class SearchResourceRequest:
 
     @property
     def start_expire_date(self):
-        """Gets the start_expire_date of this SearchResourceRequest.
+        r"""Gets the start_expire_date of this SearchResourceRequest.
 
         查询过期时间在该时间戳之后的资源项。
 
@@ -255,7 +255,7 @@ class SearchResourceRequest:
 
     @start_expire_date.setter
     def start_expire_date(self, start_expire_date):
-        """Sets the start_expire_date of this SearchResourceRequest.
+        r"""Sets the start_expire_date of this SearchResourceRequest.
 
         查询过期时间在该时间戳之后的资源项。
 
@@ -266,7 +266,7 @@ class SearchResourceRequest:
 
     @property
     def end_expire_date(self):
-        """Gets the end_expire_date of this SearchResourceRequest.
+        r"""Gets the end_expire_date of this SearchResourceRequest.
 
         查询过期时间在该时间戳之前的资源项。
 
@@ -277,7 +277,7 @@ class SearchResourceRequest:
 
     @end_expire_date.setter
     def end_expire_date(self, end_expire_date):
-        """Sets the end_expire_date of this SearchResourceRequest.
+        r"""Sets the end_expire_date of this SearchResourceRequest.
 
         查询过期时间在该时间戳之前的资源项。
 
@@ -288,7 +288,7 @@ class SearchResourceRequest:
 
     @property
     def type(self):
-        """Gets the type of this SearchResourceRequest.
+        r"""Gets the type of this SearchResourceRequest.
 
         资源类型。
 
@@ -299,7 +299,7 @@ class SearchResourceRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SearchResourceRequest.
+        r"""Sets the type of this SearchResourceRequest.
 
         资源类型。
 
@@ -310,7 +310,7 @@ class SearchResourceRequest:
 
     @property
     def type_id(self):
-        """Gets the type_id of this SearchResourceRequest.
+        r"""Gets the type_id of this SearchResourceRequest.
 
         资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id。
 
@@ -321,7 +321,7 @@ class SearchResourceRequest:
 
     @type_id.setter
     def type_id(self, type_id):
-        """Sets the type_id of this SearchResourceRequest.
+        r"""Sets the type_id of this SearchResourceRequest.
 
         资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id。
 
@@ -332,7 +332,7 @@ class SearchResourceRequest:
 
     @property
     def status(self):
-        """Gets the status of this SearchResourceRequest.
+        r"""Gets the status of this SearchResourceRequest.
 
         订单状态: - 0：正常 - 1：到期，仅查询时返回 - 2：停用
 
@@ -343,7 +343,7 @@ class SearchResourceRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SearchResourceRequest.
+        r"""Sets the status of this SearchResourceRequest.
 
         订单状态: - 0：正常 - 1：到期，仅查询时返回 - 2：停用
 

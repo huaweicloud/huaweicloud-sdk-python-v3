@@ -35,7 +35,7 @@ class ListEndpointConnectionsRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, id=None, marker_id=None, status=None):
-        """ListEndpointConnectionsRequest
+        r"""ListEndpointConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListEndpointConnectionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListEndpointConnectionsRequest.
+        r"""Gets the instance_id of this ListEndpointConnectionsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -88,7 +88,7 @@ class ListEndpointConnectionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListEndpointConnectionsRequest.
+        r"""Sets the instance_id of this ListEndpointConnectionsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -99,7 +99,7 @@ class ListEndpointConnectionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEndpointConnectionsRequest.
+        r"""Gets the offset of this ListEndpointConnectionsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -110,7 +110,7 @@ class ListEndpointConnectionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEndpointConnectionsRequest.
+        r"""Sets the offset of this ListEndpointConnectionsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -121,7 +121,7 @@ class ListEndpointConnectionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEndpointConnectionsRequest.
+        r"""Gets the limit of this ListEndpointConnectionsRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -132,7 +132,7 @@ class ListEndpointConnectionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEndpointConnectionsRequest.
+        r"""Sets the limit of this ListEndpointConnectionsRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -143,7 +143,7 @@ class ListEndpointConnectionsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListEndpointConnectionsRequest.
+        r"""Gets the id of this ListEndpointConnectionsRequest.
 
         终端节点的ID，唯一标识
 
@@ -154,7 +154,7 @@ class ListEndpointConnectionsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListEndpointConnectionsRequest.
+        r"""Sets the id of this ListEndpointConnectionsRequest.
 
         终端节点的ID，唯一标识
 
@@ -165,7 +165,7 @@ class ListEndpointConnectionsRequest:
 
     @property
     def marker_id(self):
-        """Gets the marker_id of this ListEndpointConnectionsRequest.
+        r"""Gets the marker_id of this ListEndpointConnectionsRequest.
 
         终端节点的报文标识
 
@@ -176,7 +176,7 @@ class ListEndpointConnectionsRequest:
 
     @marker_id.setter
     def marker_id(self, marker_id):
-        """Sets the marker_id of this ListEndpointConnectionsRequest.
+        r"""Sets the marker_id of this ListEndpointConnectionsRequest.
 
         终端节点的报文标识
 
@@ -187,7 +187,7 @@ class ListEndpointConnectionsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListEndpointConnectionsRequest.
+        r"""Gets the status of this ListEndpointConnectionsRequest.
 
         终端节点的连接状态 - pendingAcceptance 待接受 - accepted 已接受 - rejected 已拒绝 - failed 失败
 
@@ -198,7 +198,7 @@ class ListEndpointConnectionsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListEndpointConnectionsRequest.
+        r"""Sets the status of this ListEndpointConnectionsRequest.
 
         终端节点的连接状态 - pendingAcceptance 待接受 - accepted 已接受 - rejected 已拒绝 - failed 失败
 

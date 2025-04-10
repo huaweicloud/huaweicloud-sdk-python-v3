@@ -24,7 +24,7 @@ class EnableAsyncStatusLogResponse(SdkResponse):
     }
 
     def __init__(self):
-        """EnableAsyncStatusLogResponse
+        r"""EnableAsyncStatusLogResponse
 
         The model defined in huaweicloud sdk
 

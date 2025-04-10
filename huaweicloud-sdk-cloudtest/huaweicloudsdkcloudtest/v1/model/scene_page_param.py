@@ -33,7 +33,7 @@ class ScenePageParam:
     }
 
     def __init__(self, deleted=None, limit=None, mindmap_id=None, node_id=None, offset=None):
-        """ScenePageParam
+        r"""ScenePageParam
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ScenePageParam:
 
     @property
     def deleted(self):
-        """Gets the deleted of this ScenePageParam.
+        r"""Gets the deleted of this ScenePageParam.
 
         :return: The deleted of this ScenePageParam.
         :rtype: str
@@ -80,7 +80,7 @@ class ScenePageParam:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this ScenePageParam.
+        r"""Sets the deleted of this ScenePageParam.
 
         :param deleted: The deleted of this ScenePageParam.
         :type deleted: str
@@ -89,7 +89,7 @@ class ScenePageParam:
 
     @property
     def limit(self):
-        """Gets the limit of this ScenePageParam.
+        r"""Gets the limit of this ScenePageParam.
 
         :return: The limit of this ScenePageParam.
         :rtype: int
@@ -98,7 +98,7 @@ class ScenePageParam:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ScenePageParam.
+        r"""Sets the limit of this ScenePageParam.
 
         :param limit: The limit of this ScenePageParam.
         :type limit: int
@@ -107,7 +107,7 @@ class ScenePageParam:
 
     @property
     def mindmap_id(self):
-        """Gets the mindmap_id of this ScenePageParam.
+        r"""Gets the mindmap_id of this ScenePageParam.
 
         :return: The mindmap_id of this ScenePageParam.
         :rtype: str
@@ -116,7 +116,7 @@ class ScenePageParam:
 
     @mindmap_id.setter
     def mindmap_id(self, mindmap_id):
-        """Sets the mindmap_id of this ScenePageParam.
+        r"""Sets the mindmap_id of this ScenePageParam.
 
         :param mindmap_id: The mindmap_id of this ScenePageParam.
         :type mindmap_id: str
@@ -125,7 +125,7 @@ class ScenePageParam:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ScenePageParam.
+        r"""Gets the node_id of this ScenePageParam.
 
         :return: The node_id of this ScenePageParam.
         :rtype: str
@@ -134,7 +134,7 @@ class ScenePageParam:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ScenePageParam.
+        r"""Sets the node_id of this ScenePageParam.
 
         :param node_id: The node_id of this ScenePageParam.
         :type node_id: str
@@ -143,7 +143,7 @@ class ScenePageParam:
 
     @property
     def offset(self):
-        """Gets the offset of this ScenePageParam.
+        r"""Gets the offset of this ScenePageParam.
 
         :return: The offset of this ScenePageParam.
         :rtype: int
@@ -152,7 +152,7 @@ class ScenePageParam:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ScenePageParam.
+        r"""Sets the offset of this ScenePageParam.
 
         :param offset: The offset of this ScenePageParam.
         :type offset: int

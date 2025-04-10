@@ -47,7 +47,7 @@ class CustomVariable:
     }
 
     def __init__(self, pipeline_id=None, name=None, sequence=None, type=None, value=None, is_secret=None, description=None, is_runtime=None, limits=None, is_reset=None, latest_value=None, runtime_value=None):
-        """CustomVariable
+        r"""CustomVariable
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class CustomVariable:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this CustomVariable.
+        r"""Gets the pipeline_id of this CustomVariable.
 
         流水线ID
 
@@ -131,7 +131,7 @@ class CustomVariable:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this CustomVariable.
+        r"""Sets the pipeline_id of this CustomVariable.
 
         流水线ID
 
@@ -142,7 +142,7 @@ class CustomVariable:
 
     @property
     def name(self):
-        """Gets the name of this CustomVariable.
+        r"""Gets the name of this CustomVariable.
 
         自定义参数名称
 
@@ -153,7 +153,7 @@ class CustomVariable:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CustomVariable.
+        r"""Sets the name of this CustomVariable.
 
         自定义参数名称
 
@@ -164,7 +164,7 @@ class CustomVariable:
 
     @property
     def sequence(self):
-        """Gets the sequence of this CustomVariable.
+        r"""Gets the sequence of this CustomVariable.
 
         自定义参数顺序
 
@@ -175,7 +175,7 @@ class CustomVariable:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this CustomVariable.
+        r"""Sets the sequence of this CustomVariable.
 
         自定义参数顺序
 
@@ -186,7 +186,7 @@ class CustomVariable:
 
     @property
     def type(self):
-        """Gets the type of this CustomVariable.
+        r"""Gets the type of this CustomVariable.
 
         自定义参数类型
 
@@ -197,7 +197,7 @@ class CustomVariable:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CustomVariable.
+        r"""Sets the type of this CustomVariable.
 
         自定义参数类型
 
@@ -208,7 +208,7 @@ class CustomVariable:
 
     @property
     def value(self):
-        """Gets the value of this CustomVariable.
+        r"""Gets the value of this CustomVariable.
 
         自定义参数默认值
 
@@ -219,7 +219,7 @@ class CustomVariable:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CustomVariable.
+        r"""Sets the value of this CustomVariable.
 
         自定义参数默认值
 
@@ -230,7 +230,7 @@ class CustomVariable:
 
     @property
     def is_secret(self):
-        """Gets the is_secret of this CustomVariable.
+        r"""Gets the is_secret of this CustomVariable.
 
         是否私密参数
 
@@ -241,7 +241,7 @@ class CustomVariable:
 
     @is_secret.setter
     def is_secret(self, is_secret):
-        """Sets the is_secret of this CustomVariable.
+        r"""Sets the is_secret of this CustomVariable.
 
         是否私密参数
 
@@ -252,7 +252,7 @@ class CustomVariable:
 
     @property
     def description(self):
-        """Gets the description of this CustomVariable.
+        r"""Gets the description of this CustomVariable.
 
         自定义参数描述
 
@@ -263,7 +263,7 @@ class CustomVariable:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CustomVariable.
+        r"""Sets the description of this CustomVariable.
 
         自定义参数描述
 
@@ -274,7 +274,7 @@ class CustomVariable:
 
     @property
     def is_runtime(self):
-        """Gets the is_runtime of this CustomVariable.
+        r"""Gets the is_runtime of this CustomVariable.
 
         是否运行时设置
 
@@ -285,7 +285,7 @@ class CustomVariable:
 
     @is_runtime.setter
     def is_runtime(self, is_runtime):
-        """Sets the is_runtime of this CustomVariable.
+        r"""Sets the is_runtime of this CustomVariable.
 
         是否运行时设置
 
@@ -296,7 +296,7 @@ class CustomVariable:
 
     @property
     def limits(self):
-        """Gets the limits of this CustomVariable.
+        r"""Gets the limits of this CustomVariable.
 
         参数限制
 
@@ -307,7 +307,7 @@ class CustomVariable:
 
     @limits.setter
     def limits(self, limits):
-        """Sets the limits of this CustomVariable.
+        r"""Sets the limits of this CustomVariable.
 
         参数限制
 
@@ -318,7 +318,7 @@ class CustomVariable:
 
     @property
     def is_reset(self):
-        """Gets the is_reset of this CustomVariable.
+        r"""Gets the is_reset of this CustomVariable.
 
         是否重置
 
@@ -329,7 +329,7 @@ class CustomVariable:
 
     @is_reset.setter
     def is_reset(self, is_reset):
-        """Sets the is_reset of this CustomVariable.
+        r"""Sets the is_reset of this CustomVariable.
 
         是否重置
 
@@ -340,7 +340,7 @@ class CustomVariable:
 
     @property
     def latest_value(self):
-        """Gets the latest_value of this CustomVariable.
+        r"""Gets the latest_value of this CustomVariable.
 
         最近一次参数值
 
@@ -351,7 +351,7 @@ class CustomVariable:
 
     @latest_value.setter
     def latest_value(self, latest_value):
-        """Sets the latest_value of this CustomVariable.
+        r"""Sets the latest_value of this CustomVariable.
 
         最近一次参数值
 
@@ -362,7 +362,7 @@ class CustomVariable:
 
     @property
     def runtime_value(self):
-        """Gets the runtime_value of this CustomVariable.
+        r"""Gets the runtime_value of this CustomVariable.
 
         运行时传入值
 
@@ -373,7 +373,7 @@ class CustomVariable:
 
     @runtime_value.setter
     def runtime_value(self, runtime_value):
-        """Sets the runtime_value of this CustomVariable.
+        r"""Sets the runtime_value of this CustomVariable.
 
         运行时传入值
 

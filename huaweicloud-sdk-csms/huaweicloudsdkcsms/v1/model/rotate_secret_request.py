@@ -25,7 +25,7 @@ class RotateSecretRequest:
     }
 
     def __init__(self, secret_name=None):
-        """RotateSecretRequest
+        r"""RotateSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RotateSecretRequest:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this RotateSecretRequest.
+        r"""Gets the secret_name of this RotateSecretRequest.
 
         凭据名称。
 
@@ -53,7 +53,7 @@ class RotateSecretRequest:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this RotateSecretRequest.
+        r"""Sets the secret_name of this RotateSecretRequest.
 
         凭据名称。
 

@@ -29,7 +29,7 @@ class Detail:
     }
 
     def __init__(self, type=None, value=None, unit=None):
-        """Detail
+        r"""Detail
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Detail:
 
     @property
     def type(self):
-        """Gets the type of this Detail.
+        r"""Gets the type of this Detail.
 
         属性类型。
 
@@ -66,7 +66,7 @@ class Detail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Detail.
+        r"""Sets the type of this Detail.
 
         属性类型。
 
@@ -77,7 +77,7 @@ class Detail:
 
     @property
     def value(self):
-        """Gets the value of this Detail.
+        r"""Gets the value of this Detail.
 
         属性值。
 
@@ -88,7 +88,7 @@ class Detail:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Detail.
+        r"""Sets the value of this Detail.
 
         属性值。
 
@@ -99,7 +99,7 @@ class Detail:
 
     @property
     def unit(self):
-        """Gets the unit of this Detail.
+        r"""Gets the unit of this Detail.
 
         属性单位。
 
@@ -110,7 +110,7 @@ class Detail:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this Detail.
+        r"""Sets the unit of this Detail.
 
         属性单位。
 

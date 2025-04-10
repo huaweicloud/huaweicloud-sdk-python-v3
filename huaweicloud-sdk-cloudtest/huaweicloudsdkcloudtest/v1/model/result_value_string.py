@@ -25,7 +25,7 @@ class ResultValueString:
     }
 
     def __init__(self, value=None):
-        """ResultValueString
+        r"""ResultValueString
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResultValueString:
 
     @property
     def value(self):
-        """Gets the value of this ResultValueString.
+        r"""Gets the value of this ResultValueString.
 
         :return: The value of this ResultValueString.
         :rtype: str
@@ -52,7 +52,7 @@ class ResultValueString:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResultValueString.
+        r"""Sets the value of this ResultValueString.
 
         :param value: The value of this ResultValueString.
         :type value: str

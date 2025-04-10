@@ -45,7 +45,7 @@ class ShowInstanceMessagesRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, asc=None, start_time=None, end_time=None, limit=None, offset=None, download=None, message_offset=None, partition=None, keyword=None):
-        """ShowInstanceMessagesRequest
+        r"""ShowInstanceMessagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class ShowInstanceMessagesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceMessagesRequest.
+        r"""Gets the instance_id of this ShowInstanceMessagesRequest.
 
         实例ID。
 
@@ -122,7 +122,7 @@ class ShowInstanceMessagesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceMessagesRequest.
+        r"""Sets the instance_id of this ShowInstanceMessagesRequest.
 
         实例ID。
 
@@ -133,7 +133,7 @@ class ShowInstanceMessagesRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this ShowInstanceMessagesRequest.
+        r"""Gets the topic of this ShowInstanceMessagesRequest.
 
         Topic名称。  Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
@@ -144,7 +144,7 @@ class ShowInstanceMessagesRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowInstanceMessagesRequest.
+        r"""Sets the topic of this ShowInstanceMessagesRequest.
 
         Topic名称。  Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
@@ -155,7 +155,7 @@ class ShowInstanceMessagesRequest:
 
     @property
     def asc(self):
-        """Gets the asc of this ShowInstanceMessagesRequest.
+        r"""Gets the asc of this ShowInstanceMessagesRequest.
 
         是否按照时间排序。
 
@@ -166,7 +166,7 @@ class ShowInstanceMessagesRequest:
 
     @asc.setter
     def asc(self, asc):
-        """Sets the asc of this ShowInstanceMessagesRequest.
+        r"""Sets the asc of this ShowInstanceMessagesRequest.
 
         是否按照时间排序。
 
@@ -177,7 +177,7 @@ class ShowInstanceMessagesRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowInstanceMessagesRequest.
+        r"""Gets the start_time of this ShowInstanceMessagesRequest.
 
         开始时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
 
@@ -188,7 +188,7 @@ class ShowInstanceMessagesRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowInstanceMessagesRequest.
+        r"""Sets the start_time of this ShowInstanceMessagesRequest.
 
         开始时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
 
@@ -199,7 +199,7 @@ class ShowInstanceMessagesRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowInstanceMessagesRequest.
+        r"""Gets the end_time of this ShowInstanceMessagesRequest.
 
         结束时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
 
@@ -210,7 +210,7 @@ class ShowInstanceMessagesRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowInstanceMessagesRequest.
+        r"""Sets the end_time of this ShowInstanceMessagesRequest.
 
         结束时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
 
@@ -221,7 +221,7 @@ class ShowInstanceMessagesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowInstanceMessagesRequest.
+        r"""Gets the limit of this ShowInstanceMessagesRequest.
 
         每一页显示的message数量。
 
@@ -232,7 +232,7 @@ class ShowInstanceMessagesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowInstanceMessagesRequest.
+        r"""Sets the limit of this ShowInstanceMessagesRequest.
 
         每一页显示的message数量。
 
@@ -243,7 +243,7 @@ class ShowInstanceMessagesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowInstanceMessagesRequest.
+        r"""Gets the offset of this ShowInstanceMessagesRequest.
 
         页数。
 
@@ -254,7 +254,7 @@ class ShowInstanceMessagesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowInstanceMessagesRequest.
+        r"""Sets the offset of this ShowInstanceMessagesRequest.
 
         页数。
 
@@ -265,7 +265,7 @@ class ShowInstanceMessagesRequest:
 
     @property
     def download(self):
-        """Gets the download of this ShowInstanceMessagesRequest.
+        r"""Gets the download of this ShowInstanceMessagesRequest.
 
         是否下载。
 
@@ -276,7 +276,7 @@ class ShowInstanceMessagesRequest:
 
     @download.setter
     def download(self, download):
-        """Sets the download of this ShowInstanceMessagesRequest.
+        r"""Sets the download of this ShowInstanceMessagesRequest.
 
         是否下载。
 
@@ -287,7 +287,7 @@ class ShowInstanceMessagesRequest:
 
     @property
     def message_offset(self):
-        """Gets the message_offset of this ShowInstanceMessagesRequest.
+        r"""Gets the message_offset of this ShowInstanceMessagesRequest.
 
         消息偏移量。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
 
@@ -298,7 +298,7 @@ class ShowInstanceMessagesRequest:
 
     @message_offset.setter
     def message_offset(self, message_offset):
-        """Sets the message_offset of this ShowInstanceMessagesRequest.
+        r"""Sets the message_offset of this ShowInstanceMessagesRequest.
 
         消息偏移量。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
 
@@ -309,7 +309,7 @@ class ShowInstanceMessagesRequest:
 
     @property
     def partition(self):
-        """Gets the partition of this ShowInstanceMessagesRequest.
+        r"""Gets the partition of this ShowInstanceMessagesRequest.
 
         分区。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
 
@@ -320,7 +320,7 @@ class ShowInstanceMessagesRequest:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ShowInstanceMessagesRequest.
+        r"""Sets the partition of this ShowInstanceMessagesRequest.
 
         分区。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
 
@@ -331,7 +331,7 @@ class ShowInstanceMessagesRequest:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ShowInstanceMessagesRequest.
+        r"""Gets the keyword of this ShowInstanceMessagesRequest.
 
         关键词。 取值范围为0~50。
 
@@ -342,7 +342,7 @@ class ShowInstanceMessagesRequest:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ShowInstanceMessagesRequest.
+        r"""Sets the keyword of this ShowInstanceMessagesRequest.
 
         关键词。 取值范围为0~50。
 

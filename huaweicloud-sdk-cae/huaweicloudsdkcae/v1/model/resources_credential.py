@@ -27,7 +27,7 @@ class ResourcesCredential:
     }
 
     def __init__(self, access=None, secret=None):
-        """ResourcesCredential
+        r"""ResourcesCredential
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourcesCredential:
 
     @property
     def access(self):
-        """Gets the access of this ResourcesCredential.
+        r"""Gets the access of this ResourcesCredential.
 
         用户access key，当前access key应该包含访问授权云存储的权限。
 
@@ -61,7 +61,7 @@ class ResourcesCredential:
 
     @access.setter
     def access(self, access):
-        """Sets the access of this ResourcesCredential.
+        r"""Sets the access of this ResourcesCredential.
 
         用户access key，当前access key应该包含访问授权云存储的权限。
 
@@ -72,7 +72,7 @@ class ResourcesCredential:
 
     @property
     def secret(self):
-        """Gets the secret of this ResourcesCredential.
+        r"""Gets the secret of this ResourcesCredential.
 
         用户secret key，当前secret key应该包含访问授权云存储的权限。
 
@@ -83,7 +83,7 @@ class ResourcesCredential:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this ResourcesCredential.
+        r"""Sets the secret of this ResourcesCredential.
 
         用户secret key，当前secret key应该包含访问授权云存储的权限。
 

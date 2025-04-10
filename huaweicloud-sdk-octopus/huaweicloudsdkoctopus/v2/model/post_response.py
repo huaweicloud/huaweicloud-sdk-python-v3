@@ -27,7 +27,7 @@ class PostResponse:
     }
 
     def __init__(self, url=None, fields=None):
-        """PostResponse
+        r"""PostResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PostResponse:
 
     @property
     def url(self):
-        """Gets the url of this PostResponse.
+        r"""Gets the url of this PostResponse.
 
         POST地址
 
@@ -61,7 +61,7 @@ class PostResponse:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this PostResponse.
+        r"""Sets the url of this PostResponse.
 
         POST地址
 
@@ -72,7 +72,7 @@ class PostResponse:
 
     @property
     def fields(self):
-        """Gets the fields of this PostResponse.
+        r"""Gets the fields of this PostResponse.
 
         :return: The fields of this PostResponse.
         :rtype: :class:`huaweicloudsdkoctopus.v2.PostResponseField`
@@ -81,7 +81,7 @@ class PostResponse:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this PostResponse.
+        r"""Sets the fields of this PostResponse.
 
         :param fields: The fields of this PostResponse.
         :type fields: :class:`huaweicloudsdkoctopus.v2.PostResponseField`

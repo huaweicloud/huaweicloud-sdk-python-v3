@@ -42,7 +42,7 @@ class ShowGroupResponse(SdkResponse):
     }
 
     def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, group_desc=None, retry_max_time=None, app_id=None, app_name=None, permissions=None):
-        """ShowGroupResponse
+        r"""ShowGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def enabled(self):
-        """Gets the enabled of this ShowGroupResponse.
+        r"""Gets the enabled of this ShowGroupResponse.
 
         是否可以消费。
 
@@ -111,7 +111,7 @@ class ShowGroupResponse(SdkResponse):
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ShowGroupResponse.
+        r"""Sets the enabled of this ShowGroupResponse.
 
         是否可以消费。
 
@@ -122,7 +122,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def broadcast(self):
-        """Gets the broadcast of this ShowGroupResponse.
+        r"""Gets the broadcast of this ShowGroupResponse.
 
         是否广播。
 
@@ -133,7 +133,7 @@ class ShowGroupResponse(SdkResponse):
 
     @broadcast.setter
     def broadcast(self, broadcast):
-        """Sets the broadcast of this ShowGroupResponse.
+        r"""Sets the broadcast of this ShowGroupResponse.
 
         是否广播。
 
@@ -144,7 +144,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def brokers(self):
-        """Gets the brokers of this ShowGroupResponse.
+        r"""Gets the brokers of this ShowGroupResponse.
 
         关联的代理列表。
 
@@ -155,7 +155,7 @@ class ShowGroupResponse(SdkResponse):
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this ShowGroupResponse.
+        r"""Sets the brokers of this ShowGroupResponse.
 
         关联的代理列表。
 
@@ -166,7 +166,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowGroupResponse.
+        r"""Gets the name of this ShowGroupResponse.
 
         消费组名称。
 
@@ -177,7 +177,7 @@ class ShowGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowGroupResponse.
+        r"""Sets the name of this ShowGroupResponse.
 
         消费组名称。
 
@@ -188,7 +188,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def group_desc(self):
-        """Gets the group_desc of this ShowGroupResponse.
+        r"""Gets the group_desc of this ShowGroupResponse.
 
         消费组描述。
 
@@ -199,7 +199,7 @@ class ShowGroupResponse(SdkResponse):
 
     @group_desc.setter
     def group_desc(self, group_desc):
-        """Sets the group_desc of this ShowGroupResponse.
+        r"""Sets the group_desc of this ShowGroupResponse.
 
         消费组描述。
 
@@ -210,7 +210,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def retry_max_time(self):
-        """Gets the retry_max_time of this ShowGroupResponse.
+        r"""Gets the retry_max_time of this ShowGroupResponse.
 
         最大重试次数。
 
@@ -221,7 +221,7 @@ class ShowGroupResponse(SdkResponse):
 
     @retry_max_time.setter
     def retry_max_time(self, retry_max_time):
-        """Sets the retry_max_time of this ShowGroupResponse.
+        r"""Sets the retry_max_time of this ShowGroupResponse.
 
         最大重试次数。
 
@@ -232,7 +232,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowGroupResponse.
+        r"""Gets the app_id of this ShowGroupResponse.
 
         应用ID。
 
@@ -243,7 +243,7 @@ class ShowGroupResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowGroupResponse.
+        r"""Sets the app_id of this ShowGroupResponse.
 
         应用ID。
 
@@ -254,7 +254,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this ShowGroupResponse.
+        r"""Gets the app_name of this ShowGroupResponse.
 
         应用名称。
 
@@ -265,7 +265,7 @@ class ShowGroupResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ShowGroupResponse.
+        r"""Sets the app_name of this ShowGroupResponse.
 
         应用名称。
 
@@ -276,7 +276,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def permissions(self):
-        """Gets the permissions of this ShowGroupResponse.
+        r"""Gets the permissions of this ShowGroupResponse.
 
         权限。
 
@@ -287,7 +287,7 @@ class ShowGroupResponse(SdkResponse):
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this ShowGroupResponse.
+        r"""Sets the permissions of this ShowGroupResponse.
 
         权限。
 

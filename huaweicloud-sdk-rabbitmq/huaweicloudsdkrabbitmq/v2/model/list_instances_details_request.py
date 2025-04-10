@@ -41,7 +41,7 @@ class ListInstancesDetailsRequest:
     }
 
     def __init__(self, engine=None, name=None, instance_id=None, status=None, include_failure=None, exact_match_name=None, enterprise_project_id=None, offset=None, limit=None):
-        """ListInstancesDetailsRequest
+        r"""ListInstancesDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListInstancesDetailsRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ListInstancesDetailsRequest.
+        r"""Gets the engine of this ListInstancesDetailsRequest.
 
         引擎类型：rabbitmq。
 
@@ -109,7 +109,7 @@ class ListInstancesDetailsRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ListInstancesDetailsRequest.
+        r"""Sets the engine of this ListInstancesDetailsRequest.
 
         引擎类型：rabbitmq。
 
@@ -120,7 +120,7 @@ class ListInstancesDetailsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListInstancesDetailsRequest.
+        r"""Gets the name of this ListInstancesDetailsRequest.
 
         实例名称。
 
@@ -131,7 +131,7 @@ class ListInstancesDetailsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListInstancesDetailsRequest.
+        r"""Sets the name of this ListInstancesDetailsRequest.
 
         实例名称。
 
@@ -142,7 +142,7 @@ class ListInstancesDetailsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstancesDetailsRequest.
+        r"""Gets the instance_id of this ListInstancesDetailsRequest.
 
         实例ID。
 
@@ -153,7 +153,7 @@ class ListInstancesDetailsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstancesDetailsRequest.
+        r"""Sets the instance_id of this ListInstancesDetailsRequest.
 
         实例ID。
 
@@ -164,7 +164,7 @@ class ListInstancesDetailsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListInstancesDetailsRequest.
+        r"""Gets the status of this ListInstancesDetailsRequest.
 
         实例状态，[详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)](tag:hws,hws_eu,hws_hk,cmcc,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)](tag:hcs)。
 
@@ -175,7 +175,7 @@ class ListInstancesDetailsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListInstancesDetailsRequest.
+        r"""Sets the status of this ListInstancesDetailsRequest.
 
         实例状态，[详细状态说明请参考[实例状态说明](rabbitmq-api-180514012.xml)](tag:hws,hws_eu,hws_hk,cmcc,ctc,sbc,hk_sbc,g42,hk_g42,tm,hk_tm)[详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)](tag:hcs)。
 
@@ -186,7 +186,7 @@ class ListInstancesDetailsRequest:
 
     @property
     def include_failure(self):
-        """Gets the include_failure of this ListInstancesDetailsRequest.
+        r"""Gets the include_failure of this ListInstancesDetailsRequest.
 
         是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
 
@@ -197,7 +197,7 @@ class ListInstancesDetailsRequest:
 
     @include_failure.setter
     def include_failure(self, include_failure):
-        """Sets the include_failure of this ListInstancesDetailsRequest.
+        r"""Sets the include_failure of this ListInstancesDetailsRequest.
 
         是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
 
@@ -208,7 +208,7 @@ class ListInstancesDetailsRequest:
 
     @property
     def exact_match_name(self):
-        """Gets the exact_match_name of this ListInstancesDetailsRequest.
+        r"""Gets the exact_match_name of this ListInstancesDetailsRequest.
 
         是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。
 
@@ -219,7 +219,7 @@ class ListInstancesDetailsRequest:
 
     @exact_match_name.setter
     def exact_match_name(self, exact_match_name):
-        """Sets the exact_match_name of this ListInstancesDetailsRequest.
+        r"""Sets the exact_match_name of this ListInstancesDetailsRequest.
 
         是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。
 
@@ -230,7 +230,7 @@ class ListInstancesDetailsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListInstancesDetailsRequest.
+        r"""Gets the enterprise_project_id of this ListInstancesDetailsRequest.
 
         企业项目ID。
 
@@ -241,7 +241,7 @@ class ListInstancesDetailsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListInstancesDetailsRequest.
+        r"""Sets the enterprise_project_id of this ListInstancesDetailsRequest.
 
         企业项目ID。
 
@@ -252,7 +252,7 @@ class ListInstancesDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstancesDetailsRequest.
+        r"""Gets the offset of this ListInstancesDetailsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -263,7 +263,7 @@ class ListInstancesDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstancesDetailsRequest.
+        r"""Sets the offset of this ListInstancesDetailsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -274,7 +274,7 @@ class ListInstancesDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstancesDetailsRequest.
+        r"""Gets the limit of this ListInstancesDetailsRequest.
 
         当次查询返回的最大实例个数，默认值为10，取值范围为1~50。
 
@@ -285,7 +285,7 @@ class ListInstancesDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstancesDetailsRequest.
+        r"""Sets the limit of this ListInstancesDetailsRequest.
 
         当次查询返回的最大实例个数，默认值为10，取值范围为1~50。
 

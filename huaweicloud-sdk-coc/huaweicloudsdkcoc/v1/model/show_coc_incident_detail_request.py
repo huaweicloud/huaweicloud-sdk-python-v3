@@ -25,7 +25,7 @@ class ShowCocIncidentDetailRequest:
     }
 
     def __init__(self, incident_num=None):
-        """ShowCocIncidentDetailRequest
+        r"""ShowCocIncidentDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCocIncidentDetailRequest:
 
     @property
     def incident_num(self):
-        """Gets the incident_num of this ShowCocIncidentDetailRequest.
+        r"""Gets the incident_num of this ShowCocIncidentDetailRequest.
 
         事件单号
 
@@ -53,7 +53,7 @@ class ShowCocIncidentDetailRequest:
 
     @incident_num.setter
     def incident_num(self, incident_num):
-        """Sets the incident_num of this ShowCocIncidentDetailRequest.
+        r"""Sets the incident_num of this ShowCocIncidentDetailRequest.
 
         事件单号
 

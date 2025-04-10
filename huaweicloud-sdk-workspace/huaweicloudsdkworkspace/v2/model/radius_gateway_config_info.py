@@ -39,7 +39,7 @@ class RadiusGatewayConfigInfo:
     }
 
     def __init__(self, enable=None, app_id=None, cert_domain_name=None, token_url=None, verification_cipher_url=None, auth_type=None, assist_auth_type=None, expiration=None):
-        """RadiusGatewayConfigInfo
+        r"""RadiusGatewayConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class RadiusGatewayConfigInfo:
 
     @property
     def enable(self):
-        """Gets the enable of this RadiusGatewayConfigInfo.
+        r"""Gets the enable of this RadiusGatewayConfigInfo.
 
         是否启用
 
@@ -103,7 +103,7 @@ class RadiusGatewayConfigInfo:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this RadiusGatewayConfigInfo.
+        r"""Sets the enable of this RadiusGatewayConfigInfo.
 
         是否启用
 
@@ -114,7 +114,7 @@ class RadiusGatewayConfigInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this RadiusGatewayConfigInfo.
+        r"""Gets the app_id of this RadiusGatewayConfigInfo.
 
         用户名
 
@@ -125,7 +125,7 @@ class RadiusGatewayConfigInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this RadiusGatewayConfigInfo.
+        r"""Sets the app_id of this RadiusGatewayConfigInfo.
 
         用户名
 
@@ -136,7 +136,7 @@ class RadiusGatewayConfigInfo:
 
     @property
     def cert_domain_name(self):
-        """Gets the cert_domain_name of this RadiusGatewayConfigInfo.
+        r"""Gets the cert_domain_name of this RadiusGatewayConfigInfo.
 
         证书域名
 
@@ -147,7 +147,7 @@ class RadiusGatewayConfigInfo:
 
     @cert_domain_name.setter
     def cert_domain_name(self, cert_domain_name):
-        """Sets the cert_domain_name of this RadiusGatewayConfigInfo.
+        r"""Sets the cert_domain_name of this RadiusGatewayConfigInfo.
 
         证书域名
 
@@ -158,7 +158,7 @@ class RadiusGatewayConfigInfo:
 
     @property
     def token_url(self):
-        """Gets the token_url of this RadiusGatewayConfigInfo.
+        r"""Gets the token_url of this RadiusGatewayConfigInfo.
 
         获取token地址
 
@@ -169,7 +169,7 @@ class RadiusGatewayConfigInfo:
 
     @token_url.setter
     def token_url(self, token_url):
-        """Sets the token_url of this RadiusGatewayConfigInfo.
+        r"""Sets the token_url of this RadiusGatewayConfigInfo.
 
         获取token地址
 
@@ -180,7 +180,7 @@ class RadiusGatewayConfigInfo:
 
     @property
     def verification_cipher_url(self):
-        """Gets the verification_cipher_url of this RadiusGatewayConfigInfo.
+        r"""Gets the verification_cipher_url of this RadiusGatewayConfigInfo.
 
         获取验证码地址
 
@@ -191,7 +191,7 @@ class RadiusGatewayConfigInfo:
 
     @verification_cipher_url.setter
     def verification_cipher_url(self, verification_cipher_url):
-        """Sets the verification_cipher_url of this RadiusGatewayConfigInfo.
+        r"""Sets the verification_cipher_url of this RadiusGatewayConfigInfo.
 
         获取验证码地址
 
@@ -202,7 +202,7 @@ class RadiusGatewayConfigInfo:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this RadiusGatewayConfigInfo.
+        r"""Gets the auth_type of this RadiusGatewayConfigInfo.
 
         认证类型
 
@@ -213,7 +213,7 @@ class RadiusGatewayConfigInfo:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this RadiusGatewayConfigInfo.
+        r"""Sets the auth_type of this RadiusGatewayConfigInfo.
 
         认证类型
 
@@ -224,7 +224,7 @@ class RadiusGatewayConfigInfo:
 
     @property
     def assist_auth_type(self):
-        """Gets the assist_auth_type of this RadiusGatewayConfigInfo.
+        r"""Gets the assist_auth_type of this RadiusGatewayConfigInfo.
 
         辅助认证类型
 
@@ -235,7 +235,7 @@ class RadiusGatewayConfigInfo:
 
     @assist_auth_type.setter
     def assist_auth_type(self, assist_auth_type):
-        """Sets the assist_auth_type of this RadiusGatewayConfigInfo.
+        r"""Sets the assist_auth_type of this RadiusGatewayConfigInfo.
 
         辅助认证类型
 
@@ -246,7 +246,7 @@ class RadiusGatewayConfigInfo:
 
     @property
     def expiration(self):
-        """Gets the expiration of this RadiusGatewayConfigInfo.
+        r"""Gets the expiration of this RadiusGatewayConfigInfo.
 
         过期时间
 
@@ -257,7 +257,7 @@ class RadiusGatewayConfigInfo:
 
     @expiration.setter
     def expiration(self, expiration):
-        """Sets the expiration of this RadiusGatewayConfigInfo.
+        r"""Sets the expiration of this RadiusGatewayConfigInfo.
 
         过期时间
 

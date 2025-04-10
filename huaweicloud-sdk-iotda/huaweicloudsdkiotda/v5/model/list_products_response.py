@@ -28,7 +28,7 @@ class ListProductsResponse(SdkResponse):
     }
 
     def __init__(self, products=None, page=None):
-        """ListProductsResponse
+        r"""ListProductsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProductsResponse(SdkResponse):
 
     @property
     def products(self):
-        """Gets the products of this ListProductsResponse.
+        r"""Gets the products of this ListProductsResponse.
 
         产品信息列表。
 
@@ -62,7 +62,7 @@ class ListProductsResponse(SdkResponse):
 
     @products.setter
     def products(self, products):
-        """Sets the products of this ListProductsResponse.
+        r"""Sets the products of this ListProductsResponse.
 
         产品信息列表。
 
@@ -73,7 +73,7 @@ class ListProductsResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ListProductsResponse.
+        r"""Gets the page of this ListProductsResponse.
 
         :return: The page of this ListProductsResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Page`
@@ -82,7 +82,7 @@ class ListProductsResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListProductsResponse.
+        r"""Sets the page of this ListProductsResponse.
 
         :param page: The page of this ListProductsResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.Page`

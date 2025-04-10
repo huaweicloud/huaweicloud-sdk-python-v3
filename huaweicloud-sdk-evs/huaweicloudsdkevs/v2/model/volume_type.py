@@ -35,7 +35,7 @@ class VolumeType:
     }
 
     def __init__(self, id=None, name=None, extra_specs=None, description=None, qos_specs_id=None, is_public=None):
-        """VolumeType
+        r"""VolumeType
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class VolumeType:
 
     @property
     def id(self):
-        """Gets the id of this VolumeType.
+        r"""Gets the id of this VolumeType.
 
         云硬盘类型的ID。
 
@@ -87,7 +87,7 @@ class VolumeType:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VolumeType.
+        r"""Sets the id of this VolumeType.
 
         云硬盘类型的ID。
 
@@ -98,7 +98,7 @@ class VolumeType:
 
     @property
     def name(self):
-        """Gets the name of this VolumeType.
+        r"""Gets the name of this VolumeType.
 
         云硬盘类型名称。
 
@@ -109,7 +109,7 @@ class VolumeType:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VolumeType.
+        r"""Sets the name of this VolumeType.
 
         云硬盘类型名称。
 
@@ -120,7 +120,7 @@ class VolumeType:
 
     @property
     def extra_specs(self):
-        """Gets the extra_specs of this VolumeType.
+        r"""Gets the extra_specs of this VolumeType.
 
         :return: The extra_specs of this VolumeType.
         :rtype: :class:`huaweicloudsdkevs.v2.VolumeTypeExtraSpecs`
@@ -129,7 +129,7 @@ class VolumeType:
 
     @extra_specs.setter
     def extra_specs(self, extra_specs):
-        """Sets the extra_specs of this VolumeType.
+        r"""Sets the extra_specs of this VolumeType.
 
         :param extra_specs: The extra_specs of this VolumeType.
         :type extra_specs: :class:`huaweicloudsdkevs.v2.VolumeTypeExtraSpecs`
@@ -138,7 +138,7 @@ class VolumeType:
 
     @property
     def description(self):
-        """Gets the description of this VolumeType.
+        r"""Gets the description of this VolumeType.
 
         云硬盘类型的描述信息。
 
@@ -149,7 +149,7 @@ class VolumeType:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VolumeType.
+        r"""Sets the description of this VolumeType.
 
         云硬盘类型的描述信息。
 
@@ -160,7 +160,7 @@ class VolumeType:
 
     @property
     def qos_specs_id(self):
-        """Gets the qos_specs_id of this VolumeType.
+        r"""Gets the qos_specs_id of this VolumeType.
 
         预留属性。
 
@@ -171,7 +171,7 @@ class VolumeType:
 
     @qos_specs_id.setter
     def qos_specs_id(self, qos_specs_id):
-        """Sets the qos_specs_id of this VolumeType.
+        r"""Sets the qos_specs_id of this VolumeType.
 
         预留属性。
 
@@ -182,7 +182,7 @@ class VolumeType:
 
     @property
     def is_public(self):
-        """Gets the is_public of this VolumeType.
+        r"""Gets the is_public of this VolumeType.
 
         预留属性。
 
@@ -193,7 +193,7 @@ class VolumeType:
 
     @is_public.setter
     def is_public(self, is_public):
-        """Sets the is_public of this VolumeType.
+        r"""Sets the is_public of this VolumeType.
 
         预留属性。
 

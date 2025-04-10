@@ -29,7 +29,7 @@ class TaskInfos:
     }
 
     def __init__(self, task_name=None, url=None, task_type=None):
-        """TaskInfos
+        r"""TaskInfos
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TaskInfos:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TaskInfos.
+        r"""Gets the task_name of this TaskInfos.
 
         任务名称
 
@@ -66,7 +66,7 @@ class TaskInfos:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TaskInfos.
+        r"""Sets the task_name of this TaskInfos.
 
         任务名称
 
@@ -77,7 +77,7 @@ class TaskInfos:
 
     @property
     def url(self):
-        """Gets the url of this TaskInfos.
+        r"""Gets the url of this TaskInfos.
 
         待扫描的目标网址
 
@@ -88,7 +88,7 @@ class TaskInfos:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this TaskInfos.
+        r"""Sets the url of this TaskInfos.
 
         待扫描的目标网址
 
@@ -99,7 +99,7 @@ class TaskInfos:
 
     @property
     def task_type(self):
-        """Gets the task_type of this TaskInfos.
+        r"""Gets the task_type of this TaskInfos.
 
         扫描任务类型:   * normal - 普通任务   * monitor - 监测任务 
 
@@ -110,7 +110,7 @@ class TaskInfos:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this TaskInfos.
+        r"""Sets the task_type of this TaskInfos.
 
         扫描任务类型:   * normal - 普通任务   * monitor - 监测任务 
 

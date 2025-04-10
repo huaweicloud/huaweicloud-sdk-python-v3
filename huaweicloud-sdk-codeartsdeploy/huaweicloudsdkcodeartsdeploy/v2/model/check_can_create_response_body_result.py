@@ -25,7 +25,7 @@ class CheckCanCreateResponseBodyResult:
     }
 
     def __init__(self, creatable=None):
-        """CheckCanCreateResponseBodyResult
+        r"""CheckCanCreateResponseBodyResult
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckCanCreateResponseBodyResult:
 
     @property
     def creatable(self):
-        """Gets the creatable of this CheckCanCreateResponseBodyResult.
+        r"""Gets the creatable of this CheckCanCreateResponseBodyResult.
 
         是否具有创建应用的权限
 
@@ -54,7 +54,7 @@ class CheckCanCreateResponseBodyResult:
 
     @creatable.setter
     def creatable(self, creatable):
-        """Sets the creatable of this CheckCanCreateResponseBodyResult.
+        r"""Sets the creatable of this CheckCanCreateResponseBodyResult.
 
         是否具有创建应用的权限
 

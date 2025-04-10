@@ -28,7 +28,7 @@ class ListFreeResourcesUsageRecordsResponse(SdkResponse):
     }
 
     def __init__(self, free_resource_records=None, total_count=None):
-        """ListFreeResourcesUsageRecordsResponse
+        r"""ListFreeResourcesUsageRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFreeResourcesUsageRecordsResponse(SdkResponse):
 
     @property
     def free_resource_records(self):
-        """Gets the free_resource_records of this ListFreeResourcesUsageRecordsResponse.
+        r"""Gets the free_resource_records of this ListFreeResourcesUsageRecordsResponse.
 
         资源包使用明细记录，具体参见表1。
 
@@ -62,7 +62,7 @@ class ListFreeResourcesUsageRecordsResponse(SdkResponse):
 
     @free_resource_records.setter
     def free_resource_records(self, free_resource_records):
-        """Sets the free_resource_records of this ListFreeResourcesUsageRecordsResponse.
+        r"""Sets the free_resource_records of this ListFreeResourcesUsageRecordsResponse.
 
         资源包使用明细记录，具体参见表1。
 
@@ -73,7 +73,7 @@ class ListFreeResourcesUsageRecordsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListFreeResourcesUsageRecordsResponse.
+        r"""Gets the total_count of this ListFreeResourcesUsageRecordsResponse.
 
         满足条件的总个数。
 
@@ -84,7 +84,7 @@ class ListFreeResourcesUsageRecordsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListFreeResourcesUsageRecordsResponse.
+        r"""Sets the total_count of this ListFreeResourcesUsageRecordsResponse.
 
         满足条件的总个数。
 

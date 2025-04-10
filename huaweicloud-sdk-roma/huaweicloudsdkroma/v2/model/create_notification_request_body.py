@@ -31,7 +31,7 @@ class CreateNotificationRequestBody:
     }
 
     def __init__(self, app_id=None, type=None, topic=None, status=None):
-        """CreateNotificationRequestBody
+        r"""CreateNotificationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateNotificationRequestBody:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateNotificationRequestBody.
+        r"""Gets the app_id of this CreateNotificationRequestBody.
 
         通知归属的应用ID
 
@@ -71,7 +71,7 @@ class CreateNotificationRequestBody:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateNotificationRequestBody.
+        r"""Sets the app_id of this CreateNotificationRequestBody.
 
         通知归属的应用ID
 
@@ -82,7 +82,7 @@ class CreateNotificationRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateNotificationRequestBody.
+        r"""Gets the type of this CreateNotificationRequestBody.
 
         通知类型 0-设备上线通知 1-设备下线通知 2-设备添加通知 3-设备删除通知 4-设备变更通知
 
@@ -93,7 +93,7 @@ class CreateNotificationRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateNotificationRequestBody.
+        r"""Sets the type of this CreateNotificationRequestBody.
 
         通知类型 0-设备上线通知 1-设备下线通知 2-设备添加通知 3-设备删除通知 4-设备变更通知
 
@@ -104,7 +104,7 @@ class CreateNotificationRequestBody:
 
     @property
     def topic(self):
-        """Gets the topic of this CreateNotificationRequestBody.
+        r"""Gets the topic of this CreateNotificationRequestBody.
 
         通知发送的主题名，该主题需要在MQS存在
 
@@ -115,7 +115,7 @@ class CreateNotificationRequestBody:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this CreateNotificationRequestBody.
+        r"""Sets the topic of this CreateNotificationRequestBody.
 
         通知发送的主题名，该主题需要在MQS存在
 
@@ -126,7 +126,7 @@ class CreateNotificationRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this CreateNotificationRequestBody.
+        r"""Gets the status of this CreateNotificationRequestBody.
 
         启停状态 0-启用 1-停用
 
@@ -137,7 +137,7 @@ class CreateNotificationRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateNotificationRequestBody.
+        r"""Sets the status of this CreateNotificationRequestBody.
 
         启停状态 0-启用 1-停用
 

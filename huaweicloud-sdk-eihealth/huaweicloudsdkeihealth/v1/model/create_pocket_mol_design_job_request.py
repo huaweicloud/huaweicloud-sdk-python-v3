@@ -27,7 +27,7 @@ class CreatePocketMolDesignJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreatePocketMolDesignJobRequest
+        r"""CreatePocketMolDesignJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePocketMolDesignJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreatePocketMolDesignJobRequest.
+        r"""Gets the eihealth_project_id of this CreatePocketMolDesignJobRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class CreatePocketMolDesignJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreatePocketMolDesignJobRequest.
+        r"""Sets the eihealth_project_id of this CreatePocketMolDesignJobRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class CreatePocketMolDesignJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePocketMolDesignJobRequest.
+        r"""Gets the body of this CreatePocketMolDesignJobRequest.
 
         :return: The body of this CreatePocketMolDesignJobRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreatePocketMolDesignJobReq`
@@ -80,7 +80,7 @@ class CreatePocketMolDesignJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePocketMolDesignJobRequest.
+        r"""Sets the body of this CreatePocketMolDesignJobRequest.
 
         :param body: The body of this CreatePocketMolDesignJobRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreatePocketMolDesignJobReq`

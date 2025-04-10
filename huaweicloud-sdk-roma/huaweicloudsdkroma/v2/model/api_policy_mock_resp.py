@@ -41,7 +41,7 @@ class ApiPolicyMockResp:
     }
 
     def __init__(self, id=None, name=None, conditions=None, backend_params=None, effect_mode=None, authorizer_id=None, result_content=None, status_code=None, header=None):
-        """ApiPolicyMockResp
+        r"""ApiPolicyMockResp
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class ApiPolicyMockResp:
 
     @property
     def id(self):
-        """Gets the id of this ApiPolicyMockResp.
+        r"""Gets the id of this ApiPolicyMockResp.
 
         编号
 
@@ -107,7 +107,7 @@ class ApiPolicyMockResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiPolicyMockResp.
+        r"""Sets the id of this ApiPolicyMockResp.
 
         编号
 
@@ -118,7 +118,7 @@ class ApiPolicyMockResp:
 
     @property
     def name(self):
-        """Gets the name of this ApiPolicyMockResp.
+        r"""Gets the name of this ApiPolicyMockResp.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -129,7 +129,7 @@ class ApiPolicyMockResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiPolicyMockResp.
+        r"""Sets the name of this ApiPolicyMockResp.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -140,7 +140,7 @@ class ApiPolicyMockResp:
 
     @property
     def conditions(self):
-        """Gets the conditions of this ApiPolicyMockResp.
+        r"""Gets the conditions of this ApiPolicyMockResp.
 
         策略条件列表
 
@@ -151,7 +151,7 @@ class ApiPolicyMockResp:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ApiPolicyMockResp.
+        r"""Sets the conditions of this ApiPolicyMockResp.
 
         策略条件列表
 
@@ -162,7 +162,7 @@ class ApiPolicyMockResp:
 
     @property
     def backend_params(self):
-        """Gets the backend_params of this ApiPolicyMockResp.
+        r"""Gets the backend_params of this ApiPolicyMockResp.
 
         后端参数列表
 
@@ -173,7 +173,7 @@ class ApiPolicyMockResp:
 
     @backend_params.setter
     def backend_params(self, backend_params):
-        """Sets the backend_params of this ApiPolicyMockResp.
+        r"""Sets the backend_params of this ApiPolicyMockResp.
 
         后端参数列表
 
@@ -184,7 +184,7 @@ class ApiPolicyMockResp:
 
     @property
     def effect_mode(self):
-        """Gets the effect_mode of this ApiPolicyMockResp.
+        r"""Gets the effect_mode of this ApiPolicyMockResp.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -195,7 +195,7 @@ class ApiPolicyMockResp:
 
     @effect_mode.setter
     def effect_mode(self, effect_mode):
-        """Sets the effect_mode of this ApiPolicyMockResp.
+        r"""Sets the effect_mode of this ApiPolicyMockResp.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -206,7 +206,7 @@ class ApiPolicyMockResp:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ApiPolicyMockResp.
+        r"""Gets the authorizer_id of this ApiPolicyMockResp.
 
         后端自定义认证对象的ID
 
@@ -217,7 +217,7 @@ class ApiPolicyMockResp:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ApiPolicyMockResp.
+        r"""Sets the authorizer_id of this ApiPolicyMockResp.
 
         后端自定义认证对象的ID
 
@@ -228,7 +228,7 @@ class ApiPolicyMockResp:
 
     @property
     def result_content(self):
-        """Gets the result_content of this ApiPolicyMockResp.
+        r"""Gets the result_content of this ApiPolicyMockResp.
 
         返回结果
 
@@ -239,7 +239,7 @@ class ApiPolicyMockResp:
 
     @result_content.setter
     def result_content(self, result_content):
-        """Sets the result_content of this ApiPolicyMockResp.
+        r"""Sets the result_content of this ApiPolicyMockResp.
 
         返回结果
 
@@ -250,7 +250,7 @@ class ApiPolicyMockResp:
 
     @property
     def status_code(self):
-        """Gets the status_code of this ApiPolicyMockResp.
+        r"""Gets the status_code of this ApiPolicyMockResp.
 
         mock后端自定义状态码： \"200\": \"OK\", \"201\": \"Created\", \"202\": \"Accepted\", \"203\": \"NonAuthoritativeInformation\", \"204\": \"NoContent\", \"205\": \"ResetContent\", \"206\": \"PartialContent\", \"300\": \"MultipleChoices\", \"301\": \"MovedPermanently\", \"302\": \"Found\", \"303\": \"SeeOther\", \"304\": \"NotModified\", \"305\": \"UseProxy\", \"306\": \"Unused\", \"307\": \"TemporaryRedirect\", \"400\": \"BadRequest\", \"401\": \"Unauthorized\", \"402\": \"PaymentRequired\", \"403\": \"Forbidden\", \"404\": \"NotFound\", \"405\": \"MethodNotAllowed\", \"406\": \"NotAcceptable\", \"407\": \"ProxyAuthenticationRequired\", \"408\": \"RequestTimeout\", \"409\": \"Conflict\", \"410\": \"Gone\", \"411\": \"LengthRequired\", \"412\": \"PreconditionFailed\", \"413\": \"RequestEntityTooLarge\", \"414\": \"RequestURITooLong\", \"415\": \"UnsupportedMediaType\", \"416\": \"RequestedRangeNotSatisfiable\", \"417\": \"ExpectationFailed\", \"450\": \"ParameterRequried\", \"451\": \"MethodConnectException\", \"500\": \"InternalServerError\", \"501\": \"NotImplemented\", \"502\": \"BadGateway\", \"503\": \"ServiceUnavailable\", \"504\": \"GatewayTimeout\", \"505\": \"HTTPVersionNotSupported\",
 
@@ -261,7 +261,7 @@ class ApiPolicyMockResp:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this ApiPolicyMockResp.
+        r"""Sets the status_code of this ApiPolicyMockResp.
 
         mock后端自定义状态码： \"200\": \"OK\", \"201\": \"Created\", \"202\": \"Accepted\", \"203\": \"NonAuthoritativeInformation\", \"204\": \"NoContent\", \"205\": \"ResetContent\", \"206\": \"PartialContent\", \"300\": \"MultipleChoices\", \"301\": \"MovedPermanently\", \"302\": \"Found\", \"303\": \"SeeOther\", \"304\": \"NotModified\", \"305\": \"UseProxy\", \"306\": \"Unused\", \"307\": \"TemporaryRedirect\", \"400\": \"BadRequest\", \"401\": \"Unauthorized\", \"402\": \"PaymentRequired\", \"403\": \"Forbidden\", \"404\": \"NotFound\", \"405\": \"MethodNotAllowed\", \"406\": \"NotAcceptable\", \"407\": \"ProxyAuthenticationRequired\", \"408\": \"RequestTimeout\", \"409\": \"Conflict\", \"410\": \"Gone\", \"411\": \"LengthRequired\", \"412\": \"PreconditionFailed\", \"413\": \"RequestEntityTooLarge\", \"414\": \"RequestURITooLong\", \"415\": \"UnsupportedMediaType\", \"416\": \"RequestedRangeNotSatisfiable\", \"417\": \"ExpectationFailed\", \"450\": \"ParameterRequried\", \"451\": \"MethodConnectException\", \"500\": \"InternalServerError\", \"501\": \"NotImplemented\", \"502\": \"BadGateway\", \"503\": \"ServiceUnavailable\", \"504\": \"GatewayTimeout\", \"505\": \"HTTPVersionNotSupported\",
 
@@ -272,7 +272,7 @@ class ApiPolicyMockResp:
 
     @property
     def header(self):
-        """Gets the header of this ApiPolicyMockResp.
+        r"""Gets the header of this ApiPolicyMockResp.
 
         mock后端自定义响应头header  格式：[{\"key\":\"\",\"value\": \"\", \"remark:\"\"}, {\"key2\":\"\",\"value2\": \"\",\"remark2:\"\"}]  参数说明：  key：mock后端自定义响应头header key, 支持英文，数字，中划线，且只能以英文字母或数字开头，1 ~ 64字符  value： mock后端自定义响应头header value，中文字符必须为UTF-8或者unicode编码, 不能为空，最大长度为10240  remark：mock后端自定义响应头header remark，中文字符必须为UTF-8 或者unicode编码，可以为空，最大长度为2048
 
@@ -283,7 +283,7 @@ class ApiPolicyMockResp:
 
     @header.setter
     def header(self, header):
-        """Sets the header of this ApiPolicyMockResp.
+        r"""Sets the header of this ApiPolicyMockResp.
 
         mock后端自定义响应头header  格式：[{\"key\":\"\",\"value\": \"\", \"remark:\"\"}, {\"key2\":\"\",\"value2\": \"\",\"remark2:\"\"}]  参数说明：  key：mock后端自定义响应头header key, 支持英文，数字，中划线，且只能以英文字母或数字开头，1 ~ 64字符  value： mock后端自定义响应头header value，中文字符必须为UTF-8或者unicode编码, 不能为空，最大长度为10240  remark：mock后端自定义响应头header remark，中文字符必须为UTF-8 或者unicode编码，可以为空，最大长度为2048
 

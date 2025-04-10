@@ -41,7 +41,7 @@ class StreamingErrorBrokens:
     }
 
     def __init__(self, create_stream_failed=None, hand_shake_failed=None, parse_file_failed=None, parse_flv_file_failed=None, play_failed=None, publish_failed=None, retry_failed=None, rtmp_connect_failed=None, tcp_connect_failed=None):
-        """StreamingErrorBrokens
+        r"""StreamingErrorBrokens
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class StreamingErrorBrokens:
 
     @property
     def create_stream_failed(self):
-        """Gets the create_stream_failed of this StreamingErrorBrokens.
+        r"""Gets the create_stream_failed of this StreamingErrorBrokens.
 
         创建流媒体失败数
 
@@ -110,7 +110,7 @@ class StreamingErrorBrokens:
 
     @create_stream_failed.setter
     def create_stream_failed(self, create_stream_failed):
-        """Sets the create_stream_failed of this StreamingErrorBrokens.
+        r"""Sets the create_stream_failed of this StreamingErrorBrokens.
 
         创建流媒体失败数
 
@@ -121,7 +121,7 @@ class StreamingErrorBrokens:
 
     @property
     def hand_shake_failed(self):
-        """Gets the hand_shake_failed of this StreamingErrorBrokens.
+        r"""Gets the hand_shake_failed of this StreamingErrorBrokens.
 
         建立握手失败数
 
@@ -132,7 +132,7 @@ class StreamingErrorBrokens:
 
     @hand_shake_failed.setter
     def hand_shake_failed(self, hand_shake_failed):
-        """Sets the hand_shake_failed of this StreamingErrorBrokens.
+        r"""Sets the hand_shake_failed of this StreamingErrorBrokens.
 
         建立握手失败数
 
@@ -143,7 +143,7 @@ class StreamingErrorBrokens:
 
     @property
     def parse_file_failed(self):
-        """Gets the parse_file_failed of this StreamingErrorBrokens.
+        r"""Gets the parse_file_failed of this StreamingErrorBrokens.
 
         文件解析失败数
 
@@ -154,7 +154,7 @@ class StreamingErrorBrokens:
 
     @parse_file_failed.setter
     def parse_file_failed(self, parse_file_failed):
-        """Sets the parse_file_failed of this StreamingErrorBrokens.
+        r"""Sets the parse_file_failed of this StreamingErrorBrokens.
 
         文件解析失败数
 
@@ -165,7 +165,7 @@ class StreamingErrorBrokens:
 
     @property
     def parse_flv_file_failed(self):
-        """Gets the parse_flv_file_failed of this StreamingErrorBrokens.
+        r"""Gets the parse_flv_file_failed of this StreamingErrorBrokens.
 
         FLV文件解析失败数
 
@@ -176,7 +176,7 @@ class StreamingErrorBrokens:
 
     @parse_flv_file_failed.setter
     def parse_flv_file_failed(self, parse_flv_file_failed):
-        """Sets the parse_flv_file_failed of this StreamingErrorBrokens.
+        r"""Sets the parse_flv_file_failed of this StreamingErrorBrokens.
 
         FLV文件解析失败数
 
@@ -187,7 +187,7 @@ class StreamingErrorBrokens:
 
     @property
     def play_failed(self):
-        """Gets the play_failed of this StreamingErrorBrokens.
+        r"""Gets the play_failed of this StreamingErrorBrokens.
 
         播放失败数
 
@@ -198,7 +198,7 @@ class StreamingErrorBrokens:
 
     @play_failed.setter
     def play_failed(self, play_failed):
-        """Sets the play_failed of this StreamingErrorBrokens.
+        r"""Sets the play_failed of this StreamingErrorBrokens.
 
         播放失败数
 
@@ -209,7 +209,7 @@ class StreamingErrorBrokens:
 
     @property
     def publish_failed(self):
-        """Gets the publish_failed of this StreamingErrorBrokens.
+        r"""Gets the publish_failed of this StreamingErrorBrokens.
 
         发布失败数
 
@@ -220,7 +220,7 @@ class StreamingErrorBrokens:
 
     @publish_failed.setter
     def publish_failed(self, publish_failed):
-        """Sets the publish_failed of this StreamingErrorBrokens.
+        r"""Sets the publish_failed of this StreamingErrorBrokens.
 
         发布失败数
 
@@ -231,7 +231,7 @@ class StreamingErrorBrokens:
 
     @property
     def retry_failed(self):
-        """Gets the retry_failed of this StreamingErrorBrokens.
+        r"""Gets the retry_failed of this StreamingErrorBrokens.
 
         重试失败数
 
@@ -242,7 +242,7 @@ class StreamingErrorBrokens:
 
     @retry_failed.setter
     def retry_failed(self, retry_failed):
-        """Sets the retry_failed of this StreamingErrorBrokens.
+        r"""Sets the retry_failed of this StreamingErrorBrokens.
 
         重试失败数
 
@@ -253,7 +253,7 @@ class StreamingErrorBrokens:
 
     @property
     def rtmp_connect_failed(self):
-        """Gets the rtmp_connect_failed of this StreamingErrorBrokens.
+        r"""Gets the rtmp_connect_failed of this StreamingErrorBrokens.
 
         RTMP连接失败数
 
@@ -264,7 +264,7 @@ class StreamingErrorBrokens:
 
     @rtmp_connect_failed.setter
     def rtmp_connect_failed(self, rtmp_connect_failed):
-        """Sets the rtmp_connect_failed of this StreamingErrorBrokens.
+        r"""Sets the rtmp_connect_failed of this StreamingErrorBrokens.
 
         RTMP连接失败数
 
@@ -275,7 +275,7 @@ class StreamingErrorBrokens:
 
     @property
     def tcp_connect_failed(self):
-        """Gets the tcp_connect_failed of this StreamingErrorBrokens.
+        r"""Gets the tcp_connect_failed of this StreamingErrorBrokens.
 
         TCP连接失败数
 
@@ -286,7 +286,7 @@ class StreamingErrorBrokens:
 
     @tcp_connect_failed.setter
     def tcp_connect_failed(self, tcp_connect_failed):
-        """Sets the tcp_connect_failed of this StreamingErrorBrokens.
+        r"""Sets the tcp_connect_failed of this StreamingErrorBrokens.
 
         TCP连接失败数
 

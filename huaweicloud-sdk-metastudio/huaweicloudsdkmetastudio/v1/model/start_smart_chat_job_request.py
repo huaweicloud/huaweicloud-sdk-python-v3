@@ -31,7 +31,7 @@ class StartSmartChatJobRequest:
     }
 
     def __init__(self, x_app_user_id=None, room_id=None, robot_id=None, body=None):
-        """StartSmartChatJobRequest
+        r"""StartSmartChatJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class StartSmartChatJobRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this StartSmartChatJobRequest.
+        r"""Gets the x_app_user_id of this StartSmartChatJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -73,7 +73,7 @@ class StartSmartChatJobRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this StartSmartChatJobRequest.
+        r"""Sets the x_app_user_id of this StartSmartChatJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -84,7 +84,7 @@ class StartSmartChatJobRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this StartSmartChatJobRequest.
+        r"""Gets the room_id of this StartSmartChatJobRequest.
 
         智能交互对话ID，获取方法请参考[创建智能交互对话直播间](CreateSmartChatRoom.xml)。
 
@@ -95,7 +95,7 @@ class StartSmartChatJobRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this StartSmartChatJobRequest.
+        r"""Sets the room_id of this StartSmartChatJobRequest.
 
         智能交互对话ID，获取方法请参考[创建智能交互对话直播间](CreateSmartChatRoom.xml)。
 
@@ -106,7 +106,7 @@ class StartSmartChatJobRequest:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this StartSmartChatJobRequest.
+        r"""Gets the robot_id of this StartSmartChatJobRequest.
 
         应用ID，获取方法请参考[创建应用](CreateRobot.xml)。
 
@@ -117,7 +117,7 @@ class StartSmartChatJobRequest:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this StartSmartChatJobRequest.
+        r"""Sets the robot_id of this StartSmartChatJobRequest.
 
         应用ID，获取方法请参考[创建应用](CreateRobot.xml)。
 
@@ -128,7 +128,7 @@ class StartSmartChatJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartSmartChatJobRequest.
+        r"""Gets the body of this StartSmartChatJobRequest.
 
         :return: The body of this StartSmartChatJobRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SmartChatJobsReq`
@@ -137,7 +137,7 @@ class StartSmartChatJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartSmartChatJobRequest.
+        r"""Sets the body of this StartSmartChatJobRequest.
 
         :param body: The body of this StartSmartChatJobRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.SmartChatJobsReq`

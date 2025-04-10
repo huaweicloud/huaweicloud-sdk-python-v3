@@ -27,7 +27,7 @@ class PageInfoDto:
     }
 
     def __init__(self, next_marker=None, current_count=None):
-        """PageInfoDto
+        r"""PageInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PageInfoDto:
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this PageInfoDto.
+        r"""Gets the next_marker of this PageInfoDto.
 
         如果存在，则表示可用的输出比当前响应中包含的输出多。在对操作的后续调用中，在标签请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null。
 
@@ -60,7 +60,7 @@ class PageInfoDto:
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this PageInfoDto.
+        r"""Sets the next_marker of this PageInfoDto.
 
         如果存在，则表示可用的输出比当前响应中包含的输出多。在对操作的后续调用中，在标签请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null。
 
@@ -71,7 +71,7 @@ class PageInfoDto:
 
     @property
     def current_count(self):
-        """Gets the current_count of this PageInfoDto.
+        r"""Gets the current_count of this PageInfoDto.
 
         本页返回条目数量
 
@@ -82,7 +82,7 @@ class PageInfoDto:
 
     @current_count.setter
     def current_count(self, current_count):
-        """Sets the current_count of this PageInfoDto.
+        r"""Sets the current_count of this PageInfoDto.
 
         本页返回条目数量
 

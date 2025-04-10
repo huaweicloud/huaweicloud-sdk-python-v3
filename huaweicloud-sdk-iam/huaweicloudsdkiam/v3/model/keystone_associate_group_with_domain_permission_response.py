@@ -24,7 +24,7 @@ class KeystoneAssociateGroupWithDomainPermissionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """KeystoneAssociateGroupWithDomainPermissionResponse
+        r"""KeystoneAssociateGroupWithDomainPermissionResponse
 
         The model defined in huaweicloud sdk
 

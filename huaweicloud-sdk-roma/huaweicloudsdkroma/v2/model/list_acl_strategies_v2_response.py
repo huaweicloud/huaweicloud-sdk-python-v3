@@ -30,7 +30,7 @@ class ListAclStrategiesV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, acls=None):
-        """ListAclStrategiesV2Response
+        r"""ListAclStrategiesV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAclStrategiesV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListAclStrategiesV2Response.
+        r"""Gets the size of this ListAclStrategiesV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListAclStrategiesV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListAclStrategiesV2Response.
+        r"""Sets the size of this ListAclStrategiesV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListAclStrategiesV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAclStrategiesV2Response.
+        r"""Gets the total of this ListAclStrategiesV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListAclStrategiesV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAclStrategiesV2Response.
+        r"""Sets the total of this ListAclStrategiesV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListAclStrategiesV2Response(SdkResponse):
 
     @property
     def acls(self):
-        """Gets the acls of this ListAclStrategiesV2Response.
+        r"""Gets the acls of this ListAclStrategiesV2Response.
 
         本次查询返回的ACL策略列表
 
@@ -111,7 +111,7 @@ class ListAclStrategiesV2Response(SdkResponse):
 
     @acls.setter
     def acls(self, acls):
-        """Sets the acls of this ListAclStrategiesV2Response.
+        r"""Sets the acls of this ListAclStrategiesV2Response.
 
         本次查询返回的ACL策略列表
 

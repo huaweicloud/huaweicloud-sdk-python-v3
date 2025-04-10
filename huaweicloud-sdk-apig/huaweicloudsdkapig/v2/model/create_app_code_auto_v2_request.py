@@ -27,7 +27,7 @@ class CreateAppCodeAutoV2Request:
     }
 
     def __init__(self, instance_id=None, app_id=None):
-        """CreateAppCodeAutoV2Request
+        r"""CreateAppCodeAutoV2Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateAppCodeAutoV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateAppCodeAutoV2Request.
+        r"""Gets the instance_id of this CreateAppCodeAutoV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -59,7 +59,7 @@ class CreateAppCodeAutoV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateAppCodeAutoV2Request.
+        r"""Sets the instance_id of this CreateAppCodeAutoV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -70,7 +70,7 @@ class CreateAppCodeAutoV2Request:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateAppCodeAutoV2Request.
+        r"""Gets the app_id of this CreateAppCodeAutoV2Request.
 
         应用编号
 
@@ -81,7 +81,7 @@ class CreateAppCodeAutoV2Request:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateAppCodeAutoV2Request.
+        r"""Sets the app_id of this CreateAppCodeAutoV2Request.
 
         应用编号
 

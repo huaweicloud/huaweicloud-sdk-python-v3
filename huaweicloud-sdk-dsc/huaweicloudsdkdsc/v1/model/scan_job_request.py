@@ -41,7 +41,7 @@ class ScanJobRequest:
     }
 
     def __init__(self, asset_ids=None, cycle=None, name=None, open=None, rule_group_ids=None, start_time=None, time_zone=None, topic_urn=None, use_nlp=None):
-        """ScanJobRequest
+        r"""ScanJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class ScanJobRequest:
 
     @property
     def asset_ids(self):
-        """Gets the asset_ids of this ScanJobRequest.
+        r"""Gets the asset_ids of this ScanJobRequest.
 
         资产ID列表
 
@@ -106,7 +106,7 @@ class ScanJobRequest:
 
     @asset_ids.setter
     def asset_ids(self, asset_ids):
-        """Sets the asset_ids of this ScanJobRequest.
+        r"""Sets the asset_ids of this ScanJobRequest.
 
         资产ID列表
 
@@ -117,7 +117,7 @@ class ScanJobRequest:
 
     @property
     def cycle(self):
-        """Gets the cycle of this ScanJobRequest.
+        r"""Gets the cycle of this ScanJobRequest.
 
         扫描周期，日(DAY)，周(WEEK)，月(MONTH)，单次扫描(ONCE)
 
@@ -128,7 +128,7 @@ class ScanJobRequest:
 
     @cycle.setter
     def cycle(self, cycle):
-        """Sets the cycle of this ScanJobRequest.
+        r"""Sets the cycle of this ScanJobRequest.
 
         扫描周期，日(DAY)，周(WEEK)，月(MONTH)，单次扫描(ONCE)
 
@@ -139,7 +139,7 @@ class ScanJobRequest:
 
     @property
     def name(self):
-        """Gets the name of this ScanJobRequest.
+        r"""Gets the name of this ScanJobRequest.
 
         扫描任务名
 
@@ -150,7 +150,7 @@ class ScanJobRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScanJobRequest.
+        r"""Sets the name of this ScanJobRequest.
 
         扫描任务名
 
@@ -161,7 +161,7 @@ class ScanJobRequest:
 
     @property
     def open(self):
-        """Gets the open of this ScanJobRequest.
+        r"""Gets the open of this ScanJobRequest.
 
         是否开启任务
 
@@ -172,7 +172,7 @@ class ScanJobRequest:
 
     @open.setter
     def open(self, open):
-        """Sets the open of this ScanJobRequest.
+        r"""Sets the open of this ScanJobRequest.
 
         是否开启任务
 
@@ -183,7 +183,7 @@ class ScanJobRequest:
 
     @property
     def rule_group_ids(self):
-        """Gets the rule_group_ids of this ScanJobRequest.
+        r"""Gets the rule_group_ids of this ScanJobRequest.
 
         规则组ID列表
 
@@ -194,7 +194,7 @@ class ScanJobRequest:
 
     @rule_group_ids.setter
     def rule_group_ids(self, rule_group_ids):
-        """Sets the rule_group_ids of this ScanJobRequest.
+        r"""Sets the rule_group_ids of this ScanJobRequest.
 
         规则组ID列表
 
@@ -205,7 +205,7 @@ class ScanJobRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScanJobRequest.
+        r"""Gets the start_time of this ScanJobRequest.
 
         扫描任务开始时间
 
@@ -216,7 +216,7 @@ class ScanJobRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScanJobRequest.
+        r"""Sets the start_time of this ScanJobRequest.
 
         扫描任务开始时间
 
@@ -227,7 +227,7 @@ class ScanJobRequest:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ScanJobRequest.
+        r"""Gets the time_zone of this ScanJobRequest.
 
         时区
 
@@ -238,7 +238,7 @@ class ScanJobRequest:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ScanJobRequest.
+        r"""Sets the time_zone of this ScanJobRequest.
 
         时区
 
@@ -249,7 +249,7 @@ class ScanJobRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this ScanJobRequest.
+        r"""Gets the topic_urn of this ScanJobRequest.
 
         主题的唯一资源标识符
 
@@ -260,7 +260,7 @@ class ScanJobRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this ScanJobRequest.
+        r"""Sets the topic_urn of this ScanJobRequest.
 
         主题的唯一资源标识符
 
@@ -271,7 +271,7 @@ class ScanJobRequest:
 
     @property
     def use_nlp(self):
-        """Gets the use_nlp of this ScanJobRequest.
+        r"""Gets the use_nlp of this ScanJobRequest.
 
         是否用nlp
 
@@ -282,7 +282,7 @@ class ScanJobRequest:
 
     @use_nlp.setter
     def use_nlp(self, use_nlp):
-        """Sets the use_nlp of this ScanJobRequest.
+        r"""Sets the use_nlp of this ScanJobRequest.
 
         是否用nlp
 

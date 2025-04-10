@@ -25,7 +25,7 @@ class ListDedicatedHostTypesRequest:
     }
 
     def __init__(self, availability_zone=None):
-        """ListDedicatedHostTypesRequest
+        r"""ListDedicatedHostTypesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListDedicatedHostTypesRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListDedicatedHostTypesRequest.
+        r"""Gets the availability_zone of this ListDedicatedHostTypesRequest.
 
         AZ。
 
@@ -53,7 +53,7 @@ class ListDedicatedHostTypesRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListDedicatedHostTypesRequest.
+        r"""Sets the availability_zone of this ListDedicatedHostTypesRequest.
 
         AZ。
 

@@ -28,7 +28,7 @@ class ListServicePrincipalsV5Response(SdkResponse):
     }
 
     def __init__(self, service_principals=None, page_info=None):
-        """ListServicePrincipalsV5Response
+        r"""ListServicePrincipalsV5Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListServicePrincipalsV5Response(SdkResponse):
 
     @property
     def service_principals(self):
-        """Gets the service_principals of this ListServicePrincipalsV5Response.
+        r"""Gets the service_principals of this ListServicePrincipalsV5Response.
 
         服务主体列表。
 
@@ -62,7 +62,7 @@ class ListServicePrincipalsV5Response(SdkResponse):
 
     @service_principals.setter
     def service_principals(self, service_principals):
-        """Sets the service_principals of this ListServicePrincipalsV5Response.
+        r"""Sets the service_principals of this ListServicePrincipalsV5Response.
 
         服务主体列表。
 
@@ -73,7 +73,7 @@ class ListServicePrincipalsV5Response(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListServicePrincipalsV5Response.
+        r"""Gets the page_info of this ListServicePrincipalsV5Response.
 
         :return: The page_info of this ListServicePrincipalsV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.PageInfo`
@@ -82,7 +82,7 @@ class ListServicePrincipalsV5Response(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListServicePrincipalsV5Response.
+        r"""Sets the page_info of this ListServicePrincipalsV5Response.
 
         :param page_info: The page_info of this ListServicePrincipalsV5Response.
         :type page_info: :class:`huaweicloudsdkiam.v5.PageInfo`

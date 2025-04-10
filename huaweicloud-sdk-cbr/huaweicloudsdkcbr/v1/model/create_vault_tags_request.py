@@ -27,7 +27,7 @@ class CreateVaultTagsRequest:
     }
 
     def __init__(self, vault_id=None, body=None):
-        """CreateVaultTagsRequest
+        r"""CreateVaultTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateVaultTagsRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this CreateVaultTagsRequest.
+        r"""Gets the vault_id of this CreateVaultTagsRequest.
 
         资源id
 
@@ -60,7 +60,7 @@ class CreateVaultTagsRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this CreateVaultTagsRequest.
+        r"""Sets the vault_id of this CreateVaultTagsRequest.
 
         资源id
 
@@ -71,7 +71,7 @@ class CreateVaultTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVaultTagsRequest.
+        r"""Gets the body of this CreateVaultTagsRequest.
 
         :return: The body of this CreateVaultTagsRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultTagsCreateReq`
@@ -80,7 +80,7 @@ class CreateVaultTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVaultTagsRequest.
+        r"""Sets the body of this CreateVaultTagsRequest.
 
         :param body: The body of this CreateVaultTagsRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.VaultTagsCreateReq`

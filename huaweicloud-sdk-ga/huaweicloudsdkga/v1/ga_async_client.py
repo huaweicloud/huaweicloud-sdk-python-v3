@@ -34,7 +34,7 @@ class GaAsyncClient(Client):
         return client_builder
 
     def create_accelerator_async(self, request):
-        """创建全球加速器
+        r"""创建全球加速器
 
         创建全球加速器。
         
@@ -99,7 +99,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def delete_accelerator_async(self, request):
-        """删除全球加速器
+        r"""删除全球加速器
 
         删除全球加速器。
         
@@ -164,7 +164,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def list_accelerators_async(self, request):
-        """查询全球加速器列表
+        r"""查询全球加速器列表
 
         查询全球加速器列表。
         
@@ -241,7 +241,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def show_accelerator_async(self, request):
-        """查询全球加速器详情
+        r"""查询全球加速器详情
 
         查询全球加速器详情。
         
@@ -306,7 +306,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def update_accelerator_async(self, request):
-        """更新全球加速器
+        r"""更新全球加速器
 
         更新全球加速器。
         
@@ -373,7 +373,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def create_endpoint_async(self, request):
-        """创建终端节点
+        r"""创建终端节点
 
         创建终端节点。
         
@@ -440,7 +440,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def delete_endpoint_async(self, request):
-        """删除终端节点
+        r"""删除终端节点
 
         删除终端节点。
         
@@ -507,7 +507,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def list_endpoints_async(self, request):
-        """查询终端节点组下终端节点列表
+        r"""查询终端节点组下终端节点列表
 
         查询终端节点组下终端节点列表。
         
@@ -582,7 +582,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def show_endpoint_async(self, request):
-        """查询终端节点详情
+        r"""查询终端节点详情
 
         查询终端节点详情。
         
@@ -649,7 +649,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def update_endpoint_async(self, request):
-        """更新终端节点
+        r"""更新终端节点
 
         更新终端节点。
         
@@ -718,7 +718,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def create_endpoint_group_async(self, request):
-        """创建终端节点组
+        r"""创建终端节点组
 
         创建终端节点组。
         
@@ -783,7 +783,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def delete_endpoint_group_async(self, request):
-        """删除终端节点组
+        r"""删除终端节点组
 
         删除终端节点组。
         
@@ -848,7 +848,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def list_endpoint_groups_async(self, request):
-        """查询终端节点组列表
+        r"""查询终端节点组列表
 
         查询终端节点组列表。
         
@@ -925,7 +925,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def show_endpoint_group_async(self, request):
-        """查询终端节点组详情
+        r"""查询终端节点组详情
 
         查询终端节点组详情。
         
@@ -990,7 +990,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def update_endpoint_group_async(self, request):
-        """更新终端节点组
+        r"""更新终端节点组
 
         更新终端节点组。
         
@@ -1057,7 +1057,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def create_health_check_async(self, request):
-        """创建健康检查
+        r"""创建健康检查
 
         创建健康检查。
         
@@ -1122,7 +1122,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def delete_health_check_async(self, request):
-        """删除健康检查
+        r"""删除健康检查
 
         删除健康检查。
         
@@ -1187,7 +1187,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def list_health_checks_async(self, request):
-        """查询健康检查列表
+        r"""查询健康检查列表
 
         查询健康检查列表。
         
@@ -1262,7 +1262,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def show_health_check_async(self, request):
-        """查询健康检查详情
+        r"""查询健康检查详情
 
         查询健康检查详情。
         
@@ -1327,7 +1327,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def update_health_check_async(self, request):
-        """更新健康检查
+        r"""更新健康检查
 
         更新健康检查。
         
@@ -1394,7 +1394,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def add_ip_group_ip_async(self, request):
-        """添加IP地址组中的IP网段
+        r"""添加IP地址组中的IP网段
 
         添加IP地址组中的IP网段。
         该接口属于异步接口，接口返回后，后台的添加任务仍在执行；可以使用查询IP地址组详情接口查询状态，当IP地址组状态为ACTIVE时，表示条目添加完成。
@@ -1462,7 +1462,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def associate_listener_async(self, request):
-        """绑定IP地址组与监听器
+        r"""绑定IP地址组与监听器
 
         绑定IP地址组与监听器。
         该接口属于异步接口，接口返回后，后台的绑定任务仍在执行；可以使用查询IP地址组详情接口查询状态，当IP地址组状态为ACTIVE时，表示绑定完成。
@@ -1530,7 +1530,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def create_ip_group_async(self, request):
-        """创建IP地址组
+        r"""创建IP地址组
 
         创建IP地址组。
         该接口属于异步接口，会先返回一个IP地址组ID，但后台的创建任务仍在执行；可以使用查询IP地址组详情接口查询状态，当IP地址组状态为ACTIVE时，表示IP地址组创建完成。
@@ -1596,7 +1596,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def delete_ip_group_async(self, request):
-        """删除IP地址组
+        r"""删除IP地址组
 
         删除IP地址组。
         该接口属于异步接口，接口返回后，后台的删除任务仍在执行；可以使用查询IP地址组详情接口查询状态，当查询不到该IP地址组时，表示删除完成；删除IP地址组时，若IP地址组已经绑定了监听器，则需要先解绑IP地址组与监听器，再进行删除。
@@ -1662,7 +1662,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def disassociate_listener_async(self, request):
-        """解绑IP地址组与监听器
+        r"""解绑IP地址组与监听器
 
         解绑IP地址组与监听器。
         该接口属于异步接口，接口返回后，后台的解绑任务仍在执行；可以使用查询IP地址组详情接口查询状态，当IP地址组状态为ACTIVE时，表示解绑完成。
@@ -1730,7 +1730,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def list_ip_groups_async(self, request):
-        """查询IP地址组列表
+        r"""查询IP地址组列表
 
         查询IP地址组列表。
         
@@ -1799,7 +1799,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def remove_ip_group_ip_async(self, request):
-        """删除IP地址组中的IP网段
+        r"""删除IP地址组中的IP网段
 
         删除IP地址组中的IP网段。
         该接口属于异步接口，接口返回后，后台的删除任务仍在执行；可以使用查询IP地址组详情接口查询状态，当IP地址组状态为ACTIVE时，表示条目删除完成。
@@ -1867,7 +1867,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def show_ip_group_async(self, request):
-        """查询IP地址组详情
+        r"""查询IP地址组详情
 
         查询IP地址组详情。
         
@@ -1932,7 +1932,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def update_ip_group_async(self, request):
-        """更新IP地址组
+        r"""更新IP地址组
 
         更新IP地址组。
         
@@ -1999,7 +1999,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def create_listener_async(self, request):
-        """创建监听器
+        r"""创建监听器
 
         创建监听器。
         
@@ -2064,7 +2064,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def delete_listener_async(self, request):
-        """删除监听器
+        r"""删除监听器
 
         删除监听器。
         
@@ -2129,7 +2129,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def list_listeners_async(self, request):
-        """查询监听器列表
+        r"""查询监听器列表
 
         查询监听器列表。
         
@@ -2206,7 +2206,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def show_listener_async(self, request):
-        """查询监听器详情
+        r"""查询监听器详情
 
         查询监听器详情。
         
@@ -2271,7 +2271,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def update_listener_async(self, request):
-        """更新监听器
+        r"""更新监听器
 
         更新监听器。
         
@@ -2338,7 +2338,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def create_logtank_async(self, request):
-        """创建云日志
+        r"""创建云日志
 
         创建云日志。
         
@@ -2403,7 +2403,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def delete_logtank_async(self, request):
-        """删除云日志
+        r"""删除云日志
 
         删除云日志。
         
@@ -2468,7 +2468,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def list_logtanks_async(self, request):
-        """查询云日志列表
+        r"""查询云日志列表
 
         查询云日志列表。
         
@@ -2544,7 +2544,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def show_logtank_async(self, request):
-        """查询云日志详情
+        r"""查询云日志详情
 
         查询云日志详情。
         
@@ -2609,7 +2609,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def update_logtank_async(self, request):
-        """更新云日志
+        r"""更新云日志
 
         更新云日志。
         
@@ -2676,7 +2676,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def list_regions_async(self, request):
-        """查询区域列表
+        r"""查询区域列表
 
         查询区域列表。
         
@@ -2739,7 +2739,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def count_resources_by_tag_async(self, request):
-        """通过标签查询资源实例数量
+        r"""通过标签查询资源实例数量
 
         通过标签查询资源实例数量。
         
@@ -2806,7 +2806,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def create_tags_async(self, request):
-        """创建资源标签
+        r"""创建资源标签
 
         创建资源标签。
         
@@ -2875,7 +2875,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def delete_tags_async(self, request):
-        """删除资源标签
+        r"""删除资源标签
 
         删除资源标签。
         
@@ -2944,7 +2944,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def list_resources_by_tag_async(self, request):
-        """通过标签查询资源实例列表
+        r"""通过标签查询资源实例列表
 
         通过标签查询资源实例列表。
         
@@ -3015,7 +3015,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def list_tags_async(self, request):
-        """查询标签列表
+        r"""查询标签列表
 
         查询标签列表。
         
@@ -3084,7 +3084,7 @@ class GaAsyncClient(Client):
         return http_info
 
     def show_resource_tags_async(self, request):
-        """查询特定资源标签
+        r"""查询特定资源标签
 
         查询特定资源标签。
         

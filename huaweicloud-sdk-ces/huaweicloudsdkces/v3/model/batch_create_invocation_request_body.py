@@ -37,7 +37,7 @@ class BatchCreateInvocationRequestBody:
     }
 
     def __init__(self, instance_ids=None, invocation_type=None, invocation_target=None, invocation_ids=None, version_type=None, origin=None, version=None):
-        """BatchCreateInvocationRequestBody
+        r"""BatchCreateInvocationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class BatchCreateInvocationRequestBody:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this BatchCreateInvocationRequestBody.
+        r"""Gets the instance_ids of this BatchCreateInvocationRequestBody.
 
         主机id列表（INSTALL和UPDATE时必须）
 
@@ -95,7 +95,7 @@ class BatchCreateInvocationRequestBody:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this BatchCreateInvocationRequestBody.
+        r"""Sets the instance_ids of this BatchCreateInvocationRequestBody.
 
         主机id列表（INSTALL和UPDATE时必须）
 
@@ -106,7 +106,7 @@ class BatchCreateInvocationRequestBody:
 
     @property
     def invocation_type(self):
-        """Gets the invocation_type of this BatchCreateInvocationRequestBody.
+        r"""Gets the invocation_type of this BatchCreateInvocationRequestBody.
 
         任务类型，INSTALL 安装，UPDATE升级，ROLLBACK回退，RETRY重试
 
@@ -117,7 +117,7 @@ class BatchCreateInvocationRequestBody:
 
     @invocation_type.setter
     def invocation_type(self, invocation_type):
-        """Sets the invocation_type of this BatchCreateInvocationRequestBody.
+        r"""Sets the invocation_type of this BatchCreateInvocationRequestBody.
 
         任务类型，INSTALL 安装，UPDATE升级，ROLLBACK回退，RETRY重试
 
@@ -128,7 +128,7 @@ class BatchCreateInvocationRequestBody:
 
     @property
     def invocation_target(self):
-        """Gets the invocation_target of this BatchCreateInvocationRequestBody.
+        r"""Gets the invocation_target of this BatchCreateInvocationRequestBody.
 
         任务对象，目前仅支持telescope
 
@@ -139,7 +139,7 @@ class BatchCreateInvocationRequestBody:
 
     @invocation_target.setter
     def invocation_target(self, invocation_target):
-        """Sets the invocation_target of this BatchCreateInvocationRequestBody.
+        r"""Sets the invocation_target of this BatchCreateInvocationRequestBody.
 
         任务对象，目前仅支持telescope
 
@@ -150,7 +150,7 @@ class BatchCreateInvocationRequestBody:
 
     @property
     def invocation_ids(self):
-        """Gets the invocation_ids of this BatchCreateInvocationRequestBody.
+        r"""Gets the invocation_ids of this BatchCreateInvocationRequestBody.
 
         任务ID列表（ROLLBACK和RETRY时必须）
 
@@ -161,7 +161,7 @@ class BatchCreateInvocationRequestBody:
 
     @invocation_ids.setter
     def invocation_ids(self, invocation_ids):
-        """Sets the invocation_ids of this BatchCreateInvocationRequestBody.
+        r"""Sets the invocation_ids of this BatchCreateInvocationRequestBody.
 
         任务ID列表（ROLLBACK和RETRY时必须）
 
@@ -172,7 +172,7 @@ class BatchCreateInvocationRequestBody:
 
     @property
     def version_type(self):
-        """Gets the version_type of this BatchCreateInvocationRequestBody.
+        r"""Gets the version_type of this BatchCreateInvocationRequestBody.
 
         插件升级时需要选择升级“基础版本”还是“增强版本”，传值“BASIC_VERSION”表示升级成基础版本，传值“ADVANCE_VERSION”表示升级成增强版本
 
@@ -183,7 +183,7 @@ class BatchCreateInvocationRequestBody:
 
     @version_type.setter
     def version_type(self, version_type):
-        """Sets the version_type of this BatchCreateInvocationRequestBody.
+        r"""Sets the version_type of this BatchCreateInvocationRequestBody.
 
         插件升级时需要选择升级“基础版本”还是“增强版本”，传值“BASIC_VERSION”表示升级成基础版本，传值“ADVANCE_VERSION”表示升级成增强版本
 
@@ -194,7 +194,7 @@ class BatchCreateInvocationRequestBody:
 
     @property
     def origin(self):
-        """Gets the origin of this BatchCreateInvocationRequestBody.
+        r"""Gets the origin of this BatchCreateInvocationRequestBody.
 
         Agent任务接口调用源，CES表示由Console调用，APICOM_BMS表示由裸金属服务器调用，ADMIN_SERVER表示由运维平台调用
 
@@ -205,7 +205,7 @@ class BatchCreateInvocationRequestBody:
 
     @origin.setter
     def origin(self, origin):
-        """Sets the origin of this BatchCreateInvocationRequestBody.
+        r"""Sets the origin of this BatchCreateInvocationRequestBody.
 
         Agent任务接口调用源，CES表示由Console调用，APICOM_BMS表示由裸金属服务器调用，ADMIN_SERVER表示由运维平台调用
 
@@ -216,7 +216,7 @@ class BatchCreateInvocationRequestBody:
 
     @property
     def version(self):
-        """Gets the version of this BatchCreateInvocationRequestBody.
+        r"""Gets the version of this BatchCreateInvocationRequestBody.
 
         版本号
 
@@ -227,7 +227,7 @@ class BatchCreateInvocationRequestBody:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this BatchCreateInvocationRequestBody.
+        r"""Sets the version of this BatchCreateInvocationRequestBody.
 
         版本号
 

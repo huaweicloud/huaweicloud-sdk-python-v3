@@ -30,7 +30,7 @@ class ListLogicalClustersResponse(SdkResponse):
     }
 
     def __init__(self, logical_clusters=None, count=None, add_enable=None):
-        """ListLogicalClustersResponse
+        r"""ListLogicalClustersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListLogicalClustersResponse(SdkResponse):
 
     @property
     def logical_clusters(self):
-        """Gets the logical_clusters of this ListLogicalClustersResponse.
+        r"""Gets the logical_clusters of this ListLogicalClustersResponse.
 
         逻辑集群列表信息
 
@@ -69,7 +69,7 @@ class ListLogicalClustersResponse(SdkResponse):
 
     @logical_clusters.setter
     def logical_clusters(self, logical_clusters):
-        """Sets the logical_clusters of this ListLogicalClustersResponse.
+        r"""Sets the logical_clusters of this ListLogicalClustersResponse.
 
         逻辑集群列表信息
 
@@ -80,7 +80,7 @@ class ListLogicalClustersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListLogicalClustersResponse.
+        r"""Gets the count of this ListLogicalClustersResponse.
 
         逻辑集群总数量
 
@@ -91,7 +91,7 @@ class ListLogicalClustersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListLogicalClustersResponse.
+        r"""Sets the count of this ListLogicalClustersResponse.
 
         逻辑集群总数量
 
@@ -102,7 +102,7 @@ class ListLogicalClustersResponse(SdkResponse):
 
     @property
     def add_enable(self):
-        """Gets the add_enable of this ListLogicalClustersResponse.
+        r"""Gets the add_enable of this ListLogicalClustersResponse.
 
         作为互斥结果，如果集群内有其他运维操作，该值为false，此时不能添加逻辑集群
 
@@ -113,7 +113,7 @@ class ListLogicalClustersResponse(SdkResponse):
 
     @add_enable.setter
     def add_enable(self, add_enable):
-        """Sets the add_enable of this ListLogicalClustersResponse.
+        r"""Sets the add_enable of this ListLogicalClustersResponse.
 
         作为互斥结果，如果集群内有其他运维操作，该值为false，此时不能添加逻辑集群
 

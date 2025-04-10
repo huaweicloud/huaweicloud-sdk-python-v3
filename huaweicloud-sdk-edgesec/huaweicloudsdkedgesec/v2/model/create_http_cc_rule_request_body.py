@@ -63,7 +63,7 @@ class CreateHttpCcRuleRequestBody:
     }
 
     def __init__(self, name=None, priority=None, description=None, mode=None, total_num=None, limit_num=None, limit_period=None, lock_time=None, tag_type=None, tag_index=None, tag_condition=None, unlock_num=None, domain_aggregation=None, conditions=None, action=None, time_mode=None, start=None, terminal=None, period_type=None, time_range=None):
-        """CreateHttpCcRuleRequestBody
+        r"""CreateHttpCcRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -168,7 +168,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateHttpCcRuleRequestBody.
+        r"""Gets the name of this CreateHttpCcRuleRequestBody.
 
         规则名称
 
@@ -179,7 +179,7 @@ class CreateHttpCcRuleRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateHttpCcRuleRequestBody.
+        r"""Sets the name of this CreateHttpCcRuleRequestBody.
 
         规则名称
 
@@ -190,7 +190,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def priority(self):
-        """Gets the priority of this CreateHttpCcRuleRequestBody.
+        r"""Gets the priority of this CreateHttpCcRuleRequestBody.
 
         cc规则优先级，越大优先级越高，默认1，创建必填
 
@@ -201,7 +201,7 @@ class CreateHttpCcRuleRequestBody:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this CreateHttpCcRuleRequestBody.
+        r"""Sets the priority of this CreateHttpCcRuleRequestBody.
 
         cc规则优先级，越大优先级越高，默认1，创建必填
 
@@ -212,7 +212,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateHttpCcRuleRequestBody.
+        r"""Gets the description of this CreateHttpCcRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -223,7 +223,7 @@ class CreateHttpCcRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateHttpCcRuleRequestBody.
+        r"""Sets the description of this CreateHttpCcRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -234,7 +234,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def mode(self):
-        """Gets the mode of this CreateHttpCcRuleRequestBody.
+        r"""Gets the mode of this CreateHttpCcRuleRequestBody.
 
         cc规则防护模式，现在只支持创建高级cc规则防护模式。   - 0：标准，只支持对域名的防护路径做限制。  - 1：高级，支持对路径、IP、Cookie、Header、Params字段做限制。
 
@@ -245,7 +245,7 @@ class CreateHttpCcRuleRequestBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CreateHttpCcRuleRequestBody.
+        r"""Sets the mode of this CreateHttpCcRuleRequestBody.
 
         cc规则防护模式，现在只支持创建高级cc规则防护模式。   - 0：标准，只支持对域名的防护路径做限制。  - 1：高级，支持对路径、IP、Cookie、Header、Params字段做限制。
 
@@ -256,7 +256,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def total_num(self):
-        """Gets the total_num of this CreateHttpCcRuleRequestBody.
+        r"""Gets the total_num of this CreateHttpCcRuleRequestBody.
 
         所有用户的周期内请求次数
 
@@ -267,7 +267,7 @@ class CreateHttpCcRuleRequestBody:
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this CreateHttpCcRuleRequestBody.
+        r"""Sets the total_num of this CreateHttpCcRuleRequestBody.
 
         所有用户的周期内请求次数
 
@@ -278,7 +278,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def limit_num(self):
-        """Gets the limit_num of this CreateHttpCcRuleRequestBody.
+        r"""Gets the limit_num of this CreateHttpCcRuleRequestBody.
 
         单个用户的周期内请求次数
 
@@ -289,7 +289,7 @@ class CreateHttpCcRuleRequestBody:
 
     @limit_num.setter
     def limit_num(self, limit_num):
-        """Sets the limit_num of this CreateHttpCcRuleRequestBody.
+        r"""Sets the limit_num of this CreateHttpCcRuleRequestBody.
 
         单个用户的周期内请求次数
 
@@ -300,7 +300,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def limit_period(self):
-        """Gets the limit_period of this CreateHttpCcRuleRequestBody.
+        r"""Gets the limit_period of this CreateHttpCcRuleRequestBody.
 
         限速周期
 
@@ -311,7 +311,7 @@ class CreateHttpCcRuleRequestBody:
 
     @limit_period.setter
     def limit_period(self, limit_period):
-        """Sets the limit_period of this CreateHttpCcRuleRequestBody.
+        r"""Sets the limit_period of this CreateHttpCcRuleRequestBody.
 
         限速周期
 
@@ -322,7 +322,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this CreateHttpCcRuleRequestBody.
+        r"""Gets the lock_time of this CreateHttpCcRuleRequestBody.
 
         阻断时长
 
@@ -333,7 +333,7 @@ class CreateHttpCcRuleRequestBody:
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this CreateHttpCcRuleRequestBody.
+        r"""Sets the lock_time of this CreateHttpCcRuleRequestBody.
 
         阻断时长
 
@@ -344,7 +344,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def tag_type(self):
-        """Gets the tag_type of this CreateHttpCcRuleRequestBody.
+        r"""Gets the tag_type of this CreateHttpCcRuleRequestBody.
 
         防护模式
 
@@ -355,7 +355,7 @@ class CreateHttpCcRuleRequestBody:
 
     @tag_type.setter
     def tag_type(self, tag_type):
-        """Sets the tag_type of this CreateHttpCcRuleRequestBody.
+        r"""Sets the tag_type of this CreateHttpCcRuleRequestBody.
 
         防护模式
 
@@ -366,7 +366,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def tag_index(self):
-        """Gets the tag_index of this CreateHttpCcRuleRequestBody.
+        r"""Gets the tag_index of this CreateHttpCcRuleRequestBody.
 
         防护模式标签
 
@@ -377,7 +377,7 @@ class CreateHttpCcRuleRequestBody:
 
     @tag_index.setter
     def tag_index(self, tag_index):
-        """Sets the tag_index of this CreateHttpCcRuleRequestBody.
+        r"""Sets the tag_index of this CreateHttpCcRuleRequestBody.
 
         防护模式标签
 
@@ -388,7 +388,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def tag_condition(self):
-        """Gets the tag_condition of this CreateHttpCcRuleRequestBody.
+        r"""Gets the tag_condition of this CreateHttpCcRuleRequestBody.
 
         :return: The tag_condition of this CreateHttpCcRuleRequestBody.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpCcRuleCondition`
@@ -397,7 +397,7 @@ class CreateHttpCcRuleRequestBody:
 
     @tag_condition.setter
     def tag_condition(self, tag_condition):
-        """Sets the tag_condition of this CreateHttpCcRuleRequestBody.
+        r"""Sets the tag_condition of this CreateHttpCcRuleRequestBody.
 
         :param tag_condition: The tag_condition of this CreateHttpCcRuleRequestBody.
         :type tag_condition: :class:`huaweicloudsdkedgesec.v2.HttpCcRuleCondition`
@@ -406,7 +406,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def unlock_num(self):
-        """Gets the unlock_num of this CreateHttpCcRuleRequestBody.
+        r"""Gets the unlock_num of this CreateHttpCcRuleRequestBody.
 
         放行次数
 
@@ -417,7 +417,7 @@ class CreateHttpCcRuleRequestBody:
 
     @unlock_num.setter
     def unlock_num(self, unlock_num):
-        """Sets the unlock_num of this CreateHttpCcRuleRequestBody.
+        r"""Sets the unlock_num of this CreateHttpCcRuleRequestBody.
 
         放行次数
 
@@ -428,7 +428,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def domain_aggregation(self):
-        """Gets the domain_aggregation of this CreateHttpCcRuleRequestBody.
+        r"""Gets the domain_aggregation of this CreateHttpCcRuleRequestBody.
 
         是否聚合域名
 
@@ -439,7 +439,7 @@ class CreateHttpCcRuleRequestBody:
 
     @domain_aggregation.setter
     def domain_aggregation(self, domain_aggregation):
-        """Sets the domain_aggregation of this CreateHttpCcRuleRequestBody.
+        r"""Sets the domain_aggregation of this CreateHttpCcRuleRequestBody.
 
         是否聚合域名
 
@@ -450,7 +450,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def conditions(self):
-        """Gets the conditions of this CreateHttpCcRuleRequestBody.
+        r"""Gets the conditions of this CreateHttpCcRuleRequestBody.
 
         cc规则防护规则限速条件，当cc防护规则为高级模式（mode参数值为1）时，该参数必填。
 
@@ -461,7 +461,7 @@ class CreateHttpCcRuleRequestBody:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this CreateHttpCcRuleRequestBody.
+        r"""Sets the conditions of this CreateHttpCcRuleRequestBody.
 
         cc规则防护规则限速条件，当cc防护规则为高级模式（mode参数值为1）时，该参数必填。
 
@@ -472,7 +472,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this CreateHttpCcRuleRequestBody.
+        r"""Gets the action of this CreateHttpCcRuleRequestBody.
 
         :return: The action of this CreateHttpCcRuleRequestBody.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpRuleAction`
@@ -481,7 +481,7 @@ class CreateHttpCcRuleRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CreateHttpCcRuleRequestBody.
+        r"""Sets the action of this CreateHttpCcRuleRequestBody.
 
         :param action: The action of this CreateHttpCcRuleRequestBody.
         :type action: :class:`huaweicloudsdkedgesec.v2.HttpRuleAction`
@@ -490,7 +490,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def time_mode(self):
-        """Gets the time_mode of this CreateHttpCcRuleRequestBody.
+        r"""Gets the time_mode of this CreateHttpCcRuleRequestBody.
 
         生效模式
 
@@ -501,7 +501,7 @@ class CreateHttpCcRuleRequestBody:
 
     @time_mode.setter
     def time_mode(self, time_mode):
-        """Sets the time_mode of this CreateHttpCcRuleRequestBody.
+        r"""Sets the time_mode of this CreateHttpCcRuleRequestBody.
 
         生效模式
 
@@ -512,7 +512,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def start(self):
-        """Gets the start of this CreateHttpCcRuleRequestBody.
+        r"""Gets the start of this CreateHttpCcRuleRequestBody.
 
         customize生效时间区间开始
 
@@ -523,7 +523,7 @@ class CreateHttpCcRuleRequestBody:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this CreateHttpCcRuleRequestBody.
+        r"""Sets the start of this CreateHttpCcRuleRequestBody.
 
         customize生效时间区间开始
 
@@ -534,7 +534,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def terminal(self):
-        """Gets the terminal of this CreateHttpCcRuleRequestBody.
+        r"""Gets the terminal of this CreateHttpCcRuleRequestBody.
 
         customize生效时间区间结束
 
@@ -545,7 +545,7 @@ class CreateHttpCcRuleRequestBody:
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this CreateHttpCcRuleRequestBody.
+        r"""Sets the terminal of this CreateHttpCcRuleRequestBody.
 
         customize生效时间区间结束
 
@@ -556,7 +556,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def period_type(self):
-        """Gets the period_type of this CreateHttpCcRuleRequestBody.
+        r"""Gets the period_type of this CreateHttpCcRuleRequestBody.
 
         period每日生效时间类型，目前只有day
 
@@ -567,7 +567,7 @@ class CreateHttpCcRuleRequestBody:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this CreateHttpCcRuleRequestBody.
+        r"""Sets the period_type of this CreateHttpCcRuleRequestBody.
 
         period每日生效时间类型，目前只有day
 
@@ -578,7 +578,7 @@ class CreateHttpCcRuleRequestBody:
 
     @property
     def time_range(self):
-        """Gets the time_range of this CreateHttpCcRuleRequestBody.
+        r"""Gets the time_range of this CreateHttpCcRuleRequestBody.
 
         period每日生效时间区间
 
@@ -589,7 +589,7 @@ class CreateHttpCcRuleRequestBody:
 
     @time_range.setter
     def time_range(self, time_range):
-        """Sets the time_range of this CreateHttpCcRuleRequestBody.
+        r"""Sets the time_range of this CreateHttpCcRuleRequestBody.
 
         period每日生效时间区间
 

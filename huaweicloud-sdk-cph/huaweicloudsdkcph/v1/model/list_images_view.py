@@ -45,7 +45,7 @@ class ListImagesView:
     }
 
     def __init__(self, domain_id=None, image_name=None, update_time=None, create_time=None, image_size=None, project_id=None, image_id=None, image_version=None, image_type=None, status=None, src_project_id=None):
-        """ListImagesView
+        r"""ListImagesView
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListImagesView:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListImagesView.
+        r"""Gets the domain_id of this ListImagesView.
 
         镜像所属租户
 
@@ -124,7 +124,7 @@ class ListImagesView:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListImagesView.
+        r"""Sets the domain_id of this ListImagesView.
 
         镜像所属租户
 
@@ -135,7 +135,7 @@ class ListImagesView:
 
     @property
     def image_name(self):
-        """Gets the image_name of this ListImagesView.
+        r"""Gets the image_name of this ListImagesView.
 
         镜像名称
 
@@ -146,7 +146,7 @@ class ListImagesView:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this ListImagesView.
+        r"""Sets the image_name of this ListImagesView.
 
         镜像名称
 
@@ -157,7 +157,7 @@ class ListImagesView:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ListImagesView.
+        r"""Gets the update_time of this ListImagesView.
 
         镜像更新时间
 
@@ -168,7 +168,7 @@ class ListImagesView:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ListImagesView.
+        r"""Sets the update_time of this ListImagesView.
 
         镜像更新时间
 
@@ -179,7 +179,7 @@ class ListImagesView:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListImagesView.
+        r"""Gets the create_time of this ListImagesView.
 
         镜像创建时间
 
@@ -190,7 +190,7 @@ class ListImagesView:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListImagesView.
+        r"""Sets the create_time of this ListImagesView.
 
         镜像创建时间
 
@@ -201,7 +201,7 @@ class ListImagesView:
 
     @property
     def image_size(self):
-        """Gets the image_size of this ListImagesView.
+        r"""Gets the image_size of this ListImagesView.
 
         镜像大小，单位byte
 
@@ -212,7 +212,7 @@ class ListImagesView:
 
     @image_size.setter
     def image_size(self, image_size):
-        """Sets the image_size of this ListImagesView.
+        r"""Sets the image_size of this ListImagesView.
 
         镜像大小，单位byte
 
@@ -223,7 +223,7 @@ class ListImagesView:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListImagesView.
+        r"""Gets the project_id of this ListImagesView.
 
         project_id（当image_type为private时，才会返回此字段)
 
@@ -234,7 +234,7 @@ class ListImagesView:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListImagesView.
+        r"""Sets the project_id of this ListImagesView.
 
         project_id（当image_type为private时，才会返回此字段)
 
@@ -245,7 +245,7 @@ class ListImagesView:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ListImagesView.
+        r"""Gets the image_id of this ListImagesView.
 
         镜像ID
 
@@ -256,7 +256,7 @@ class ListImagesView:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ListImagesView.
+        r"""Sets the image_id of this ListImagesView.
 
         镜像ID
 
@@ -267,7 +267,7 @@ class ListImagesView:
 
     @property
     def image_version(self):
-        """Gets the image_version of this ListImagesView.
+        r"""Gets the image_version of this ListImagesView.
 
         镜像AOSP版本
 
@@ -278,7 +278,7 @@ class ListImagesView:
 
     @image_version.setter
     def image_version(self, image_version):
-        """Sets the image_version of this ListImagesView.
+        r"""Sets the image_version of this ListImagesView.
 
         镜像AOSP版本
 
@@ -289,7 +289,7 @@ class ListImagesView:
 
     @property
     def image_type(self):
-        """Gets the image_type of this ListImagesView.
+        r"""Gets the image_type of this ListImagesView.
 
         镜像类型 私有镜像：private 共享镜像：share
 
@@ -300,7 +300,7 @@ class ListImagesView:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this ListImagesView.
+        r"""Sets the image_type of this ListImagesView.
 
         镜像类型 私有镜像：private 共享镜像：share
 
@@ -311,7 +311,7 @@ class ListImagesView:
 
     @property
     def status(self):
-        """Gets the status of this ListImagesView.
+        r"""Gets the status of this ListImagesView.
 
         镜像状态。 - 0：CREATING 创建中 - 1：PRODUCTION 生产态，可使用 - 2：CREATE_FAILED 创建失败
 
@@ -322,7 +322,7 @@ class ListImagesView:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListImagesView.
+        r"""Sets the status of this ListImagesView.
 
         镜像状态。 - 0：CREATING 创建中 - 1：PRODUCTION 生产态，可使用 - 2：CREATE_FAILED 创建失败
 
@@ -333,7 +333,7 @@ class ListImagesView:
 
     @property
     def src_project_id(self):
-        """Gets the src_project_id of this ListImagesView.
+        r"""Gets the src_project_id of this ListImagesView.
 
         共享镜像账号的projectId（当image_type为share时，才会返回此字段)
 
@@ -344,7 +344,7 @@ class ListImagesView:
 
     @src_project_id.setter
     def src_project_id(self, src_project_id):
-        """Sets the src_project_id of this ListImagesView.
+        r"""Sets the src_project_id of this ListImagesView.
 
         共享镜像账号的projectId（当image_type为share时，才会返回此字段)
 

@@ -27,7 +27,7 @@ class BatchDeleteOtpDevicesRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """BatchDeleteOtpDevicesRequest
+        r"""BatchDeleteOtpDevicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteOtpDevicesRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this BatchDeleteOtpDevicesRequest.
+        r"""Gets the user_id of this BatchDeleteOtpDevicesRequest.
 
         用户ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteOtpDevicesRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this BatchDeleteOtpDevicesRequest.
+        r"""Sets the user_id of this BatchDeleteOtpDevicesRequest.
 
         用户ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteOtpDevicesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteOtpDevicesRequest.
+        r"""Gets the body of this BatchDeleteOtpDevicesRequest.
 
         :return: The body of this BatchDeleteOtpDevicesRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DelOtpDevicesReq`
@@ -80,7 +80,7 @@ class BatchDeleteOtpDevicesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteOtpDevicesRequest.
+        r"""Sets the body of this BatchDeleteOtpDevicesRequest.
 
         :param body: The body of this BatchDeleteOtpDevicesRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.DelOtpDevicesReq`

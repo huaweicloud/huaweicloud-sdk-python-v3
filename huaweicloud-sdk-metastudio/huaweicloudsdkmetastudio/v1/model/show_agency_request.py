@@ -25,7 +25,7 @@ class ShowAgencyRequest:
     }
 
     def __init__(self, role_type=None):
-        """ShowAgencyRequest
+        r"""ShowAgencyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowAgencyRequest:
 
     @property
     def role_type(self):
-        """Gets the role_type of this ShowAgencyRequest.
+        r"""Gets the role_type of this ShowAgencyRequest.
 
         委托授权类型 * CBS:对话机器人服务(CBS)访客 * SIS:语音交互服务(SIS)调用
 
@@ -54,7 +54,7 @@ class ShowAgencyRequest:
 
     @role_type.setter
     def role_type(self, role_type):
-        """Sets the role_type of this ShowAgencyRequest.
+        r"""Sets the role_type of this ShowAgencyRequest.
 
         委托授权类型 * CBS:对话机器人服务(CBS)访客 * SIS:语音交互服务(SIS)调用
 

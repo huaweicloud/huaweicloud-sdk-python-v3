@@ -29,7 +29,7 @@ class DeleteClickHouseDatabaseUserRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, user_name=None):
-        """DeleteClickHouseDatabaseUserRequest
+        r"""DeleteClickHouseDatabaseUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteClickHouseDatabaseUserRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteClickHouseDatabaseUserRequest.
+        r"""Gets the x_language of this DeleteClickHouseDatabaseUserRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -66,7 +66,7 @@ class DeleteClickHouseDatabaseUserRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteClickHouseDatabaseUserRequest.
+        r"""Sets the x_language of this DeleteClickHouseDatabaseUserRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -77,7 +77,7 @@ class DeleteClickHouseDatabaseUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteClickHouseDatabaseUserRequest.
+        r"""Gets the instance_id of this DeleteClickHouseDatabaseUserRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -88,7 +88,7 @@ class DeleteClickHouseDatabaseUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteClickHouseDatabaseUserRequest.
+        r"""Sets the instance_id of this DeleteClickHouseDatabaseUserRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -99,7 +99,7 @@ class DeleteClickHouseDatabaseUserRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this DeleteClickHouseDatabaseUserRequest.
+        r"""Gets the user_name of this DeleteClickHouseDatabaseUserRequest.
 
         数据库名称。
 
@@ -110,7 +110,7 @@ class DeleteClickHouseDatabaseUserRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this DeleteClickHouseDatabaseUserRequest.
+        r"""Sets the user_name of this DeleteClickHouseDatabaseUserRequest.
 
         数据库名称。
 

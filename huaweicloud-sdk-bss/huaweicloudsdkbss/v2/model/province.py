@@ -27,7 +27,7 @@ class Province:
     }
 
     def __init__(self, code=None, name=None):
-        """Province
+        r"""Province
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Province:
 
     @property
     def code(self):
-        """Gets the code of this Province.
+        r"""Gets the code of this Province.
 
         省份的编码。
 
@@ -59,7 +59,7 @@ class Province:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this Province.
+        r"""Sets the code of this Province.
 
         省份的编码。
 
@@ -70,7 +70,7 @@ class Province:
 
     @property
     def name(self):
-        """Gets the name of this Province.
+        r"""Gets the name of this Province.
 
         省份的名称，根据请求的语言会传递回对应的语言的名称，目前仅支持中文。
 
@@ -81,7 +81,7 @@ class Province:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Province.
+        r"""Sets the name of this Province.
 
         省份的名称，根据请求的语言会传递回对应的语言的名称，目前仅支持中文。
 

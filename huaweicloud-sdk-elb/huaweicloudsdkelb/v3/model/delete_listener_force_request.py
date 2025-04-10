@@ -25,7 +25,7 @@ class DeleteListenerForceRequest:
     }
 
     def __init__(self, listener_id=None):
-        """DeleteListenerForceRequest
+        r"""DeleteListenerForceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteListenerForceRequest:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this DeleteListenerForceRequest.
+        r"""Gets the listener_id of this DeleteListenerForceRequest.
 
         监听器ID。
 
@@ -53,7 +53,7 @@ class DeleteListenerForceRequest:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this DeleteListenerForceRequest.
+        r"""Sets the listener_id of this DeleteListenerForceRequest.
 
         监听器ID。
 

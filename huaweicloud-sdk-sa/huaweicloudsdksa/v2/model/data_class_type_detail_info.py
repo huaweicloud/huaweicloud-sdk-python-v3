@@ -51,7 +51,7 @@ class DataClassTypeDetailInfo:
     }
 
     def __init__(self, id=None, parent_name=None, parent_business_code=None, name=None, business_code=None, description=None, workspace_id=None, project_id=None, enabled=None, is_built_in=None, layout_id=None, layout_name=None, dataclass_id=None, sla=None):
-        """DataClassTypeDetailInfo
+        r"""DataClassTypeDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class DataClassTypeDetailInfo:
 
     @property
     def id(self):
-        """Gets the id of this DataClassTypeDetailInfo.
+        r"""Gets the id of this DataClassTypeDetailInfo.
 
         Id value
 
@@ -145,7 +145,7 @@ class DataClassTypeDetailInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DataClassTypeDetailInfo.
+        r"""Sets the id of this DataClassTypeDetailInfo.
 
         Id value
 
@@ -156,7 +156,7 @@ class DataClassTypeDetailInfo:
 
     @property
     def parent_name(self):
-        """Gets the parent_name of this DataClassTypeDetailInfo.
+        r"""Gets the parent_name of this DataClassTypeDetailInfo.
 
         The name, display only
 
@@ -167,7 +167,7 @@ class DataClassTypeDetailInfo:
 
     @parent_name.setter
     def parent_name(self, parent_name):
-        """Sets the parent_name of this DataClassTypeDetailInfo.
+        r"""Sets the parent_name of this DataClassTypeDetailInfo.
 
         The name, display only
 
@@ -178,7 +178,7 @@ class DataClassTypeDetailInfo:
 
     @property
     def parent_business_code(self):
-        """Gets the parent_business_code of this DataClassTypeDetailInfo.
+        r"""Gets the parent_business_code of this DataClassTypeDetailInfo.
 
         类型标识码
 
@@ -189,7 +189,7 @@ class DataClassTypeDetailInfo:
 
     @parent_business_code.setter
     def parent_business_code(self, parent_business_code):
-        """Sets the parent_business_code of this DataClassTypeDetailInfo.
+        r"""Sets the parent_business_code of this DataClassTypeDetailInfo.
 
         类型标识码
 
@@ -200,7 +200,7 @@ class DataClassTypeDetailInfo:
 
     @property
     def name(self):
-        """Gets the name of this DataClassTypeDetailInfo.
+        r"""Gets the name of this DataClassTypeDetailInfo.
 
         The name, display only
 
@@ -211,7 +211,7 @@ class DataClassTypeDetailInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataClassTypeDetailInfo.
+        r"""Sets the name of this DataClassTypeDetailInfo.
 
         The name, display only
 
@@ -222,7 +222,7 @@ class DataClassTypeDetailInfo:
 
     @property
     def business_code(self):
-        """Gets the business_code of this DataClassTypeDetailInfo.
+        r"""Gets the business_code of this DataClassTypeDetailInfo.
 
         类型标识码
 
@@ -233,7 +233,7 @@ class DataClassTypeDetailInfo:
 
     @business_code.setter
     def business_code(self, business_code):
-        """Sets the business_code of this DataClassTypeDetailInfo.
+        r"""Sets the business_code of this DataClassTypeDetailInfo.
 
         类型标识码
 
@@ -244,7 +244,7 @@ class DataClassTypeDetailInfo:
 
     @property
     def description(self):
-        """Gets the description of this DataClassTypeDetailInfo.
+        r"""Gets the description of this DataClassTypeDetailInfo.
 
         The description, display only
 
@@ -255,7 +255,7 @@ class DataClassTypeDetailInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DataClassTypeDetailInfo.
+        r"""Sets the description of this DataClassTypeDetailInfo.
 
         The description, display only
 
@@ -266,7 +266,7 @@ class DataClassTypeDetailInfo:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DataClassTypeDetailInfo.
+        r"""Gets the workspace_id of this DataClassTypeDetailInfo.
 
         workspace id
 
@@ -277,7 +277,7 @@ class DataClassTypeDetailInfo:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DataClassTypeDetailInfo.
+        r"""Sets the workspace_id of this DataClassTypeDetailInfo.
 
         workspace id
 
@@ -288,7 +288,7 @@ class DataClassTypeDetailInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DataClassTypeDetailInfo.
+        r"""Gets the project_id of this DataClassTypeDetailInfo.
 
         Project id value
 
@@ -299,7 +299,7 @@ class DataClassTypeDetailInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DataClassTypeDetailInfo.
+        r"""Sets the project_id of this DataClassTypeDetailInfo.
 
         Project id value
 
@@ -310,7 +310,7 @@ class DataClassTypeDetailInfo:
 
     @property
     def enabled(self):
-        """Gets the enabled of this DataClassTypeDetailInfo.
+        r"""Gets the enabled of this DataClassTypeDetailInfo.
 
         If is enabled, false for disenabled, true for enabled
 
@@ -321,7 +321,7 @@ class DataClassTypeDetailInfo:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this DataClassTypeDetailInfo.
+        r"""Sets the enabled of this DataClassTypeDetailInfo.
 
         If is enabled, false for disenabled, true for enabled
 
@@ -332,7 +332,7 @@ class DataClassTypeDetailInfo:
 
     @property
     def is_built_in(self):
-        """Gets the is_built_in of this DataClassTypeDetailInfo.
+        r"""Gets the is_built_in of this DataClassTypeDetailInfo.
 
         是否内置
 
@@ -343,7 +343,7 @@ class DataClassTypeDetailInfo:
 
     @is_built_in.setter
     def is_built_in(self, is_built_in):
-        """Sets the is_built_in of this DataClassTypeDetailInfo.
+        r"""Sets the is_built_in of this DataClassTypeDetailInfo.
 
         是否内置
 
@@ -354,7 +354,7 @@ class DataClassTypeDetailInfo:
 
     @property
     def layout_id(self):
-        """Gets the layout_id of this DataClassTypeDetailInfo.
+        r"""Gets the layout_id of this DataClassTypeDetailInfo.
 
         布局ID
 
@@ -365,7 +365,7 @@ class DataClassTypeDetailInfo:
 
     @layout_id.setter
     def layout_id(self, layout_id):
-        """Sets the layout_id of this DataClassTypeDetailInfo.
+        r"""Sets the layout_id of this DataClassTypeDetailInfo.
 
         布局ID
 
@@ -376,7 +376,7 @@ class DataClassTypeDetailInfo:
 
     @property
     def layout_name(self):
-        """Gets the layout_name of this DataClassTypeDetailInfo.
+        r"""Gets the layout_name of this DataClassTypeDetailInfo.
 
         The name, display only
 
@@ -387,7 +387,7 @@ class DataClassTypeDetailInfo:
 
     @layout_name.setter
     def layout_name(self, layout_name):
-        """Sets the layout_name of this DataClassTypeDetailInfo.
+        r"""Sets the layout_name of this DataClassTypeDetailInfo.
 
         The name, display only
 
@@ -398,7 +398,7 @@ class DataClassTypeDetailInfo:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this DataClassTypeDetailInfo.
+        r"""Gets the dataclass_id of this DataClassTypeDetailInfo.
 
         dataclass id.
 
@@ -409,7 +409,7 @@ class DataClassTypeDetailInfo:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this DataClassTypeDetailInfo.
+        r"""Sets the dataclass_id of this DataClassTypeDetailInfo.
 
         dataclass id.
 
@@ -420,7 +420,7 @@ class DataClassTypeDetailInfo:
 
     @property
     def sla(self):
-        """Gets the sla of this DataClassTypeDetailInfo.
+        r"""Gets the sla of this DataClassTypeDetailInfo.
 
         sla
 
@@ -431,7 +431,7 @@ class DataClassTypeDetailInfo:
 
     @sla.setter
     def sla(self, sla):
-        """Sets the sla of this DataClassTypeDetailInfo.
+        r"""Sets the sla of this DataClassTypeDetailInfo.
 
         sla
 

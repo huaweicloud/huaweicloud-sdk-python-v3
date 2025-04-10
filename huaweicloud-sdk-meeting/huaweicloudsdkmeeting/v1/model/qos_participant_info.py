@@ -85,7 +85,7 @@ class QosParticipantInfo:
     }
 
     def __init__(self, conf_uuid=None, conference_id=None, participant_id=None, user_uuid=None, display_name=None, dept_name=None, terminal_type=None, role=None, ip_address=None, country=None, province=None, city=None, app_version=None, join_time=None, left_time=None, system_info=None, network_type=None, alarm=None, audio_alarm_send=None, video_alarm_send=None, screen_alarm_send=None, audio_alarm_rec=None, video_alarm_rec=None, screen_alarm_rec=None, cpu_alarm=None, microphone_info=None, speaker_info=None, camera_info=None, data_center=None, left_reason=None, exist_qos=None):
-        """QosParticipantInfo
+        r"""QosParticipantInfo
 
         The model defined in huaweicloud sdk
 
@@ -253,7 +253,7 @@ class QosParticipantInfo:
 
     @property
     def conf_uuid(self):
-        """Gets the conf_uuid of this QosParticipantInfo.
+        r"""Gets the conf_uuid of this QosParticipantInfo.
 
         会议的UUID。
 
@@ -264,7 +264,7 @@ class QosParticipantInfo:
 
     @conf_uuid.setter
     def conf_uuid(self, conf_uuid):
-        """Sets the conf_uuid of this QosParticipantInfo.
+        r"""Sets the conf_uuid of this QosParticipantInfo.
 
         会议的UUID。
 
@@ -275,7 +275,7 @@ class QosParticipantInfo:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this QosParticipantInfo.
+        r"""Gets the conference_id of this QosParticipantInfo.
 
         会议ID。
 
@@ -286,7 +286,7 @@ class QosParticipantInfo:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this QosParticipantInfo.
+        r"""Sets the conference_id of this QosParticipantInfo.
 
         会议ID。
 
@@ -297,7 +297,7 @@ class QosParticipantInfo:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this QosParticipantInfo.
+        r"""Gets the participant_id of this QosParticipantInfo.
 
         与会者标识。
 
@@ -308,7 +308,7 @@ class QosParticipantInfo:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this QosParticipantInfo.
+        r"""Sets the participant_id of this QosParticipantInfo.
 
         与会者标识。
 
@@ -319,7 +319,7 @@ class QosParticipantInfo:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this QosParticipantInfo.
+        r"""Gets the user_uuid of this QosParticipantInfo.
 
         用户UUID。
 
@@ -330,7 +330,7 @@ class QosParticipantInfo:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this QosParticipantInfo.
+        r"""Sets the user_uuid of this QosParticipantInfo.
 
         用户UUID。
 
@@ -341,7 +341,7 @@ class QosParticipantInfo:
 
     @property
     def display_name(self):
-        """Gets the display_name of this QosParticipantInfo.
+        r"""Gets the display_name of this QosParticipantInfo.
 
         与会者的名称。
 
@@ -352,7 +352,7 @@ class QosParticipantInfo:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this QosParticipantInfo.
+        r"""Sets the display_name of this QosParticipantInfo.
 
         与会者的名称。
 
@@ -363,7 +363,7 @@ class QosParticipantInfo:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this QosParticipantInfo.
+        r"""Gets the dept_name of this QosParticipantInfo.
 
         部门名称。
 
@@ -374,7 +374,7 @@ class QosParticipantInfo:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this QosParticipantInfo.
+        r"""Sets the dept_name of this QosParticipantInfo.
 
         部门名称。
 
@@ -385,7 +385,7 @@ class QosParticipantInfo:
 
     @property
     def terminal_type(self):
-        """Gets the terminal_type of this QosParticipantInfo.
+        r"""Gets the terminal_type of this QosParticipantInfo.
 
         入会终端类型。 - PC: PC机 - MOBILE: 手机 - PAD：PAD设备 - MAC：MAC设备 - WEB：WEB方式入会，如通过WebRTC入会 - ROOM: 会议室 - 硬件终端：显示具体的硬件设备类型，如TE50, HUAWEI IDEAHUB, CISCO等 - OTHER: 其他设备
 
@@ -396,7 +396,7 @@ class QosParticipantInfo:
 
     @terminal_type.setter
     def terminal_type(self, terminal_type):
-        """Sets the terminal_type of this QosParticipantInfo.
+        r"""Sets the terminal_type of this QosParticipantInfo.
 
         入会终端类型。 - PC: PC机 - MOBILE: 手机 - PAD：PAD设备 - MAC：MAC设备 - WEB：WEB方式入会，如通过WebRTC入会 - ROOM: 会议室 - 硬件终端：显示具体的硬件设备类型，如TE50, HUAWEI IDEAHUB, CISCO等 - OTHER: 其他设备
 
@@ -407,7 +407,7 @@ class QosParticipantInfo:
 
     @property
     def role(self):
-        """Gets the role of this QosParticipantInfo.
+        r"""Gets the role of this QosParticipantInfo.
 
         与会者角色。 - host：主持人 - guest：来宾 - audience：观众
 
@@ -418,7 +418,7 @@ class QosParticipantInfo:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this QosParticipantInfo.
+        r"""Sets the role of this QosParticipantInfo.
 
         与会者角色。 - host：主持人 - guest：来宾 - audience：观众
 
@@ -429,7 +429,7 @@ class QosParticipantInfo:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this QosParticipantInfo.
+        r"""Gets the ip_address of this QosParticipantInfo.
 
         与会者的IP地址。
 
@@ -440,7 +440,7 @@ class QosParticipantInfo:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this QosParticipantInfo.
+        r"""Sets the ip_address of this QosParticipantInfo.
 
         与会者的IP地址。
 
@@ -451,7 +451,7 @@ class QosParticipantInfo:
 
     @property
     def country(self):
-        """Gets the country of this QosParticipantInfo.
+        r"""Gets the country of this QosParticipantInfo.
 
         国家。
 
@@ -462,7 +462,7 @@ class QosParticipantInfo:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this QosParticipantInfo.
+        r"""Sets the country of this QosParticipantInfo.
 
         国家。
 
@@ -473,7 +473,7 @@ class QosParticipantInfo:
 
     @property
     def province(self):
-        """Gets the province of this QosParticipantInfo.
+        r"""Gets the province of this QosParticipantInfo.
 
         省市（仅限中国）。
 
@@ -484,7 +484,7 @@ class QosParticipantInfo:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this QosParticipantInfo.
+        r"""Sets the province of this QosParticipantInfo.
 
         省市（仅限中国）。
 
@@ -495,7 +495,7 @@ class QosParticipantInfo:
 
     @property
     def city(self):
-        """Gets the city of this QosParticipantInfo.
+        r"""Gets the city of this QosParticipantInfo.
 
         城市（仅限中国）。
 
@@ -506,7 +506,7 @@ class QosParticipantInfo:
 
     @city.setter
     def city(self, city):
-        """Sets the city of this QosParticipantInfo.
+        r"""Sets the city of this QosParticipantInfo.
 
         城市（仅限中国）。
 
@@ -517,7 +517,7 @@ class QosParticipantInfo:
 
     @property
     def app_version(self):
-        """Gets the app_version of this QosParticipantInfo.
+        r"""Gets the app_version of this QosParticipantInfo.
 
         华为云会议APP版本。
 
@@ -528,7 +528,7 @@ class QosParticipantInfo:
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this QosParticipantInfo.
+        r"""Sets the app_version of this QosParticipantInfo.
 
         华为云会议APP版本。
 
@@ -539,7 +539,7 @@ class QosParticipantInfo:
 
     @property
     def join_time(self):
-        """Gets the join_time of this QosParticipantInfo.
+        r"""Gets the join_time of this QosParticipantInfo.
 
         入会时间(UTC时间), Unix时间戳（单位毫秒）。
 
@@ -550,7 +550,7 @@ class QosParticipantInfo:
 
     @join_time.setter
     def join_time(self, join_time):
-        """Sets the join_time of this QosParticipantInfo.
+        r"""Sets the join_time of this QosParticipantInfo.
 
         入会时间(UTC时间), Unix时间戳（单位毫秒）。
 
@@ -561,7 +561,7 @@ class QosParticipantInfo:
 
     @property
     def left_time(self):
-        """Gets the left_time of this QosParticipantInfo.
+        r"""Gets the left_time of this QosParticipantInfo.
 
         离会时间(UTC时间), Unix时间戳（单位毫秒）。 > * 与会者未离会：leftTime = 0 > * 与会者已离会：leftTime = 实际离会时间
 
@@ -572,7 +572,7 @@ class QosParticipantInfo:
 
     @left_time.setter
     def left_time(self, left_time):
-        """Sets the left_time of this QosParticipantInfo.
+        r"""Sets the left_time of this QosParticipantInfo.
 
         离会时间(UTC时间), Unix时间戳（单位毫秒）。 > * 与会者未离会：leftTime = 0 > * 与会者已离会：leftTime = 实际离会时间
 
@@ -583,7 +583,7 @@ class QosParticipantInfo:
 
     @property
     def system_info(self):
-        """Gets the system_info of this QosParticipantInfo.
+        r"""Gets the system_info of this QosParticipantInfo.
 
         终端操作系统信息。
 
@@ -594,7 +594,7 @@ class QosParticipantInfo:
 
     @system_info.setter
     def system_info(self, system_info):
-        """Sets the system_info of this QosParticipantInfo.
+        r"""Sets the system_info of this QosParticipantInfo.
 
         终端操作系统信息。
 
@@ -605,7 +605,7 @@ class QosParticipantInfo:
 
     @property
     def network_type(self):
-        """Gets the network_type of this QosParticipantInfo.
+        r"""Gets the network_type of this QosParticipantInfo.
 
         网络类型。
 
@@ -616,7 +616,7 @@ class QosParticipantInfo:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this QosParticipantInfo.
+        r"""Sets the network_type of this QosParticipantInfo.
 
         网络类型。
 
@@ -627,7 +627,7 @@ class QosParticipantInfo:
 
     @property
     def alarm(self):
-        """Gets the alarm of this QosParticipantInfo.
+        r"""Gets the alarm of this QosParticipantInfo.
 
         总体告警。 * YES：音频（发送/接收），视频（发送/接收），屏幕共享（发送/接收），CPU任一项产生告警，总体告警状态即为 YES * NO：无告警
 
@@ -638,7 +638,7 @@ class QosParticipantInfo:
 
     @alarm.setter
     def alarm(self, alarm):
-        """Sets the alarm of this QosParticipantInfo.
+        r"""Sets the alarm of this QosParticipantInfo.
 
         总体告警。 * YES：音频（发送/接收），视频（发送/接收），屏幕共享（发送/接收），CPU任一项产生告警，总体告警状态即为 YES * NO：无告警
 
@@ -649,7 +649,7 @@ class QosParticipantInfo:
 
     @property
     def audio_alarm_send(self):
-        """Gets the audio_alarm_send of this QosParticipantInfo.
+        r"""Gets the audio_alarm_send of this QosParticipantInfo.
 
         音频发送告警。 * YES ：发送音频的抖动，时延，丢包率任一项产生阈值告警，则音频发送告警状态为YES * NO：发送音频无告警
 
@@ -660,7 +660,7 @@ class QosParticipantInfo:
 
     @audio_alarm_send.setter
     def audio_alarm_send(self, audio_alarm_send):
-        """Sets the audio_alarm_send of this QosParticipantInfo.
+        r"""Sets the audio_alarm_send of this QosParticipantInfo.
 
         音频发送告警。 * YES ：发送音频的抖动，时延，丢包率任一项产生阈值告警，则音频发送告警状态为YES * NO：发送音频无告警
 
@@ -671,7 +671,7 @@ class QosParticipantInfo:
 
     @property
     def video_alarm_send(self):
-        """Gets the video_alarm_send of this QosParticipantInfo.
+        r"""Gets the video_alarm_send of this QosParticipantInfo.
 
         视频发送告警。 * YES ：发送视频的抖动，时延，丢包率任一项产生阈值告警，则视频发送告警状态为YES * NO：发送视频无告警
 
@@ -682,7 +682,7 @@ class QosParticipantInfo:
 
     @video_alarm_send.setter
     def video_alarm_send(self, video_alarm_send):
-        """Sets the video_alarm_send of this QosParticipantInfo.
+        r"""Sets the video_alarm_send of this QosParticipantInfo.
 
         视频发送告警。 * YES ：发送视频的抖动，时延，丢包率任一项产生阈值告警，则视频发送告警状态为YES * NO：发送视频无告警
 
@@ -693,7 +693,7 @@ class QosParticipantInfo:
 
     @property
     def screen_alarm_send(self):
-        """Gets the screen_alarm_send of this QosParticipantInfo.
+        r"""Gets the screen_alarm_send of this QosParticipantInfo.
 
         屏幕共享发送告警。 * YES：发送屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享发送告警状态为YES * NO：发送屏幕共享无告警
 
@@ -704,7 +704,7 @@ class QosParticipantInfo:
 
     @screen_alarm_send.setter
     def screen_alarm_send(self, screen_alarm_send):
-        """Sets the screen_alarm_send of this QosParticipantInfo.
+        r"""Sets the screen_alarm_send of this QosParticipantInfo.
 
         屏幕共享发送告警。 * YES：发送屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享发送告警状态为YES * NO：发送屏幕共享无告警
 
@@ -715,7 +715,7 @@ class QosParticipantInfo:
 
     @property
     def audio_alarm_rec(self):
-        """Gets the audio_alarm_rec of this QosParticipantInfo.
+        r"""Gets the audio_alarm_rec of this QosParticipantInfo.
 
         音频接收告警。 * YES：接收音频的抖动，时延，丢包率任一项产生阈值告警，则音频接收告警状态为YES * NO：接收音频无告警
 
@@ -726,7 +726,7 @@ class QosParticipantInfo:
 
     @audio_alarm_rec.setter
     def audio_alarm_rec(self, audio_alarm_rec):
-        """Sets the audio_alarm_rec of this QosParticipantInfo.
+        r"""Sets the audio_alarm_rec of this QosParticipantInfo.
 
         音频接收告警。 * YES：接收音频的抖动，时延，丢包率任一项产生阈值告警，则音频接收告警状态为YES * NO：接收音频无告警
 
@@ -737,7 +737,7 @@ class QosParticipantInfo:
 
     @property
     def video_alarm_rec(self):
-        """Gets the video_alarm_rec of this QosParticipantInfo.
+        r"""Gets the video_alarm_rec of this QosParticipantInfo.
 
         视频接收告警。 * YES：接收视频的抖动，时延，丢包率任一项产生阈值告警，则视频接收告警状态为YES * NO：接收视频无告警
 
@@ -748,7 +748,7 @@ class QosParticipantInfo:
 
     @video_alarm_rec.setter
     def video_alarm_rec(self, video_alarm_rec):
-        """Sets the video_alarm_rec of this QosParticipantInfo.
+        r"""Sets the video_alarm_rec of this QosParticipantInfo.
 
         视频接收告警。 * YES：接收视频的抖动，时延，丢包率任一项产生阈值告警，则视频接收告警状态为YES * NO：接收视频无告警
 
@@ -759,7 +759,7 @@ class QosParticipantInfo:
 
     @property
     def screen_alarm_rec(self):
-        """Gets the screen_alarm_rec of this QosParticipantInfo.
+        r"""Gets the screen_alarm_rec of this QosParticipantInfo.
 
         屏幕共享接收告警。 * YES：接收屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享接收告警状态为YES * NO：接收屏幕共享无告警
 
@@ -770,7 +770,7 @@ class QosParticipantInfo:
 
     @screen_alarm_rec.setter
     def screen_alarm_rec(self, screen_alarm_rec):
-        """Sets the screen_alarm_rec of this QosParticipantInfo.
+        r"""Sets the screen_alarm_rec of this QosParticipantInfo.
 
         屏幕共享接收告警。 * YES：接收屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享接收告警状态为YES * NO：接收屏幕共享无告警
 
@@ -781,7 +781,7 @@ class QosParticipantInfo:
 
     @property
     def cpu_alarm(self):
-        """Gets the cpu_alarm of this QosParticipantInfo.
+        r"""Gets the cpu_alarm of this QosParticipantInfo.
 
         CPU告警。 * YES：端侧的APP最大CPU使用率或系统最大CPU使用率任一项产生阈值告警，则CPU告警状态为YES * NO：CPU无告警
 
@@ -792,7 +792,7 @@ class QosParticipantInfo:
 
     @cpu_alarm.setter
     def cpu_alarm(self, cpu_alarm):
-        """Sets the cpu_alarm of this QosParticipantInfo.
+        r"""Sets the cpu_alarm of this QosParticipantInfo.
 
         CPU告警。 * YES：端侧的APP最大CPU使用率或系统最大CPU使用率任一项产生阈值告警，则CPU告警状态为YES * NO：CPU无告警
 
@@ -803,7 +803,7 @@ class QosParticipantInfo:
 
     @property
     def microphone_info(self):
-        """Gets the microphone_info of this QosParticipantInfo.
+        r"""Gets the microphone_info of this QosParticipantInfo.
 
         麦克风。
 
@@ -814,7 +814,7 @@ class QosParticipantInfo:
 
     @microphone_info.setter
     def microphone_info(self, microphone_info):
-        """Sets the microphone_info of this QosParticipantInfo.
+        r"""Sets the microphone_info of this QosParticipantInfo.
 
         麦克风。
 
@@ -825,7 +825,7 @@ class QosParticipantInfo:
 
     @property
     def speaker_info(self):
-        """Gets the speaker_info of this QosParticipantInfo.
+        r"""Gets the speaker_info of this QosParticipantInfo.
 
         扬声器。
 
@@ -836,7 +836,7 @@ class QosParticipantInfo:
 
     @speaker_info.setter
     def speaker_info(self, speaker_info):
-        """Sets the speaker_info of this QosParticipantInfo.
+        r"""Sets the speaker_info of this QosParticipantInfo.
 
         扬声器。
 
@@ -847,7 +847,7 @@ class QosParticipantInfo:
 
     @property
     def camera_info(self):
-        """Gets the camera_info of this QosParticipantInfo.
+        r"""Gets the camera_info of this QosParticipantInfo.
 
         摄像头。
 
@@ -858,7 +858,7 @@ class QosParticipantInfo:
 
     @camera_info.setter
     def camera_info(self, camera_info):
-        """Sets the camera_info of this QosParticipantInfo.
+        r"""Sets the camera_info of this QosParticipantInfo.
 
         摄像头。
 
@@ -869,7 +869,7 @@ class QosParticipantInfo:
 
     @property
     def data_center(self):
-        """Gets the data_center of this QosParticipantInfo.
+        r"""Gets the data_center of this QosParticipantInfo.
 
         数据中心。
 
@@ -880,7 +880,7 @@ class QosParticipantInfo:
 
     @data_center.setter
     def data_center(self, data_center):
-        """Sets the data_center of this QosParticipantInfo.
+        r"""Sets the data_center of this QosParticipantInfo.
 
         数据中心。
 
@@ -891,7 +891,7 @@ class QosParticipantInfo:
 
     @property
     def left_reason(self):
-        """Gets the left_reason of this QosParticipantInfo.
+        r"""Gets the left_reason of this QosParticipantInfo.
 
         离会原因。此字段仅标识离会原因，不做为是否已离会的判断依据。正在与会人员的离会原因初始值 = 0。 * 0：正常离会 * 1：网络异常离会
 
@@ -902,7 +902,7 @@ class QosParticipantInfo:
 
     @left_reason.setter
     def left_reason(self, left_reason):
-        """Sets the left_reason of this QosParticipantInfo.
+        r"""Sets the left_reason of this QosParticipantInfo.
 
         离会原因。此字段仅标识离会原因，不做为是否已离会的判断依据。正在与会人员的离会原因初始值 = 0。 * 0：正常离会 * 1：网络异常离会
 
@@ -913,7 +913,7 @@ class QosParticipantInfo:
 
     @property
     def exist_qos(self):
-        """Gets the exist_qos of this QosParticipantInfo.
+        r"""Gets the exist_qos of this QosParticipantInfo.
 
         与会者是否存在QoS数据。 * true：存在QoS数据 * false：不存在QoS数据
 
@@ -924,7 +924,7 @@ class QosParticipantInfo:
 
     @exist_qos.setter
     def exist_qos(self, exist_qos):
-        """Sets the exist_qos of this QosParticipantInfo.
+        r"""Sets the exist_qos of this QosParticipantInfo.
 
         与会者是否存在QoS数据。 * true：存在QoS数据 * false：不存在QoS数据
 

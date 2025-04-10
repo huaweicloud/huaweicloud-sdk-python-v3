@@ -73,7 +73,7 @@ class EndpointResponseBody:
     }
 
     def __init__(self, id=None, service_type=None, status=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None, description=None, policy_statement=None, policy_document=None, endpoint_pool_id=None, public_border_group=None):
-        """EndpointResponseBody
+        r"""EndpointResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class EndpointResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this EndpointResponseBody.
+        r"""Gets the id of this EndpointResponseBody.
 
         终端节点的ID，唯一标识。
 
@@ -222,7 +222,7 @@ class EndpointResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EndpointResponseBody.
+        r"""Sets the id of this EndpointResponseBody.
 
         终端节点的ID，唯一标识。
 
@@ -233,7 +233,7 @@ class EndpointResponseBody:
 
     @property
     def service_type(self):
-        """Gets the service_type of this EndpointResponseBody.
+        r"""Gets the service_type of this EndpointResponseBody.
 
         终端节点连接的终端节点服务类型。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
 
@@ -244,7 +244,7 @@ class EndpointResponseBody:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this EndpointResponseBody.
+        r"""Sets the service_type of this EndpointResponseBody.
 
         终端节点连接的终端节点服务类型。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
 
@@ -255,7 +255,7 @@ class EndpointResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this EndpointResponseBody.
+        r"""Gets the status of this EndpointResponseBody.
 
         终端节点的连接状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
 
@@ -266,7 +266,7 @@ class EndpointResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EndpointResponseBody.
+        r"""Sets the status of this EndpointResponseBody.
 
         终端节点的连接状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
 
@@ -277,7 +277,7 @@ class EndpointResponseBody:
 
     @property
     def active_status(self):
-        """Gets the active_status of this EndpointResponseBody.
+        r"""Gets the active_status of this EndpointResponseBody.
 
         账号状态。  - frozen：冻结  - active：解冻
 
@@ -288,7 +288,7 @@ class EndpointResponseBody:
 
     @active_status.setter
     def active_status(self, active_status):
-        """Sets the active_status of this EndpointResponseBody.
+        r"""Sets the active_status of this EndpointResponseBody.
 
         账号状态。  - frozen：冻结  - active：解冻
 
@@ -299,7 +299,7 @@ class EndpointResponseBody:
 
     @property
     def endpoint_service_name(self):
-        """Gets the endpoint_service_name of this EndpointResponseBody.
+        r"""Gets the endpoint_service_name of this EndpointResponseBody.
 
         终端节点服务的名称。
 
@@ -310,7 +310,7 @@ class EndpointResponseBody:
 
     @endpoint_service_name.setter
     def endpoint_service_name(self, endpoint_service_name):
-        """Sets the endpoint_service_name of this EndpointResponseBody.
+        r"""Sets the endpoint_service_name of this EndpointResponseBody.
 
         终端节点服务的名称。
 
@@ -321,7 +321,7 @@ class EndpointResponseBody:
 
     @property
     def marker_id(self):
-        """Gets the marker_id of this EndpointResponseBody.
+        r"""Gets the marker_id of this EndpointResponseBody.
 
         终端节点的报文标识。
 
@@ -332,7 +332,7 @@ class EndpointResponseBody:
 
     @marker_id.setter
     def marker_id(self, marker_id):
-        """Sets the marker_id of this EndpointResponseBody.
+        r"""Sets the marker_id of this EndpointResponseBody.
 
         终端节点的报文标识。
 
@@ -343,7 +343,7 @@ class EndpointResponseBody:
 
     @property
     def endpoint_service_id(self):
-        """Gets the endpoint_service_id of this EndpointResponseBody.
+        r"""Gets the endpoint_service_id of this EndpointResponseBody.
 
         终端节点服务的ID。
 
@@ -354,7 +354,7 @@ class EndpointResponseBody:
 
     @endpoint_service_id.setter
     def endpoint_service_id(self, endpoint_service_id):
-        """Sets the endpoint_service_id of this EndpointResponseBody.
+        r"""Sets the endpoint_service_id of this EndpointResponseBody.
 
         终端节点服务的ID。
 
@@ -365,7 +365,7 @@ class EndpointResponseBody:
 
     @property
     def enable_dns(self):
-        """Gets the enable_dns of this EndpointResponseBody.
+        r"""Gets the enable_dns of this EndpointResponseBody.
 
         是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
@@ -376,7 +376,7 @@ class EndpointResponseBody:
 
     @enable_dns.setter
     def enable_dns(self, enable_dns):
-        """Sets the enable_dns of this EndpointResponseBody.
+        r"""Sets the enable_dns of this EndpointResponseBody.
 
         是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
@@ -387,7 +387,7 @@ class EndpointResponseBody:
 
     @property
     def dns_names(self):
-        """Gets the dns_names of this EndpointResponseBody.
+        r"""Gets the dns_names of this EndpointResponseBody.
 
         访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
 
@@ -398,7 +398,7 @@ class EndpointResponseBody:
 
     @dns_names.setter
     def dns_names(self, dns_names):
-        """Sets the dns_names of this EndpointResponseBody.
+        r"""Sets the dns_names of this EndpointResponseBody.
 
         访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
 
@@ -409,7 +409,7 @@ class EndpointResponseBody:
 
     @property
     def ip(self):
-        """Gets the ip of this EndpointResponseBody.
+        r"""Gets the ip of this EndpointResponseBody.
 
         访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： 当查询连接interface类型终端节点服务的终端节点时。 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
 
@@ -420,7 +420,7 @@ class EndpointResponseBody:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this EndpointResponseBody.
+        r"""Sets the ip of this EndpointResponseBody.
 
         访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： 当查询连接interface类型终端节点服务的终端节点时。 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
 
@@ -431,7 +431,7 @@ class EndpointResponseBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this EndpointResponseBody.
+        r"""Gets the vpc_id of this EndpointResponseBody.
 
         终端节点所在的VPC的ID。
 
@@ -442,7 +442,7 @@ class EndpointResponseBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this EndpointResponseBody.
+        r"""Sets the vpc_id of this EndpointResponseBody.
 
         终端节点所在的VPC的ID。
 
@@ -453,7 +453,7 @@ class EndpointResponseBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this EndpointResponseBody.
+        r"""Gets the subnet_id of this EndpointResponseBody.
 
         vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。
 
@@ -464,7 +464,7 @@ class EndpointResponseBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this EndpointResponseBody.
+        r"""Sets the subnet_id of this EndpointResponseBody.
 
         vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。
 
@@ -475,7 +475,7 @@ class EndpointResponseBody:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EndpointResponseBody.
+        r"""Gets the created_at of this EndpointResponseBody.
 
         终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -486,7 +486,7 @@ class EndpointResponseBody:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EndpointResponseBody.
+        r"""Sets the created_at of this EndpointResponseBody.
 
         终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -497,7 +497,7 @@ class EndpointResponseBody:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EndpointResponseBody.
+        r"""Gets the updated_at of this EndpointResponseBody.
 
         终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -508,7 +508,7 @@ class EndpointResponseBody:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EndpointResponseBody.
+        r"""Sets the updated_at of this EndpointResponseBody.
 
         终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -519,7 +519,7 @@ class EndpointResponseBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EndpointResponseBody.
+        r"""Gets the project_id of this EndpointResponseBody.
 
         项目ID，获取方法请参见获取项目ID。
 
@@ -530,7 +530,7 @@ class EndpointResponseBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EndpointResponseBody.
+        r"""Sets the project_id of this EndpointResponseBody.
 
         项目ID，获取方法请参见获取项目ID。
 
@@ -541,7 +541,7 @@ class EndpointResponseBody:
 
     @property
     def tags(self):
-        """Gets the tags of this EndpointResponseBody.
+        r"""Gets the tags of this EndpointResponseBody.
 
         标签列表，没有标签默认为空数组。
 
@@ -552,7 +552,7 @@ class EndpointResponseBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this EndpointResponseBody.
+        r"""Sets the tags of this EndpointResponseBody.
 
         标签列表，没有标签默认为空数组。
 
@@ -563,7 +563,7 @@ class EndpointResponseBody:
 
     @property
     def error(self):
-        """Gets the error of this EndpointResponseBody.
+        r"""Gets the error of this EndpointResponseBody.
 
         错误信息。 当终端节点状态异常，即“status”的值为“failed”时，会返回该字段。
 
@@ -574,7 +574,7 @@ class EndpointResponseBody:
 
     @error.setter
     def error(self, error):
-        """Sets the error of this EndpointResponseBody.
+        r"""Sets the error of this EndpointResponseBody.
 
         错误信息。 当终端节点状态异常，即“status”的值为“failed”时，会返回该字段。
 
@@ -585,7 +585,7 @@ class EndpointResponseBody:
 
     @property
     def whitelist(self):
-        """Gets the whitelist of this EndpointResponseBody.
+        r"""Gets the whitelist of this EndpointResponseBody.
 
         控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
@@ -596,7 +596,7 @@ class EndpointResponseBody:
 
     @whitelist.setter
     def whitelist(self, whitelist):
-        """Sets the whitelist of this EndpointResponseBody.
+        r"""Sets the whitelist of this EndpointResponseBody.
 
         控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
@@ -607,7 +607,7 @@ class EndpointResponseBody:
 
     @property
     def enable_whitelist(self):
-        """Gets the enable_whitelist of this EndpointResponseBody.
+        r"""Gets the enable_whitelist of this EndpointResponseBody.
 
         是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
@@ -618,7 +618,7 @@ class EndpointResponseBody:
 
     @enable_whitelist.setter
     def enable_whitelist(self, enable_whitelist):
-        """Sets the enable_whitelist of this EndpointResponseBody.
+        r"""Sets the enable_whitelist of this EndpointResponseBody.
 
         是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
@@ -629,7 +629,7 @@ class EndpointResponseBody:
 
     @property
     def routetables(self):
-        """Gets the routetables of this EndpointResponseBody.
+        r"""Gets the routetables of this EndpointResponseBody.
 
         路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建gateway类型终端节点服务的终端节点时，显示此参数。
 
@@ -640,7 +640,7 @@ class EndpointResponseBody:
 
     @routetables.setter
     def routetables(self, routetables):
-        """Sets the routetables of this EndpointResponseBody.
+        r"""Sets the routetables of this EndpointResponseBody.
 
         路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建gateway类型终端节点服务的终端节点时，显示此参数。
 
@@ -651,7 +651,7 @@ class EndpointResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this EndpointResponseBody.
+        r"""Gets the description of this EndpointResponseBody.
 
         描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
 
@@ -662,7 +662,7 @@ class EndpointResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EndpointResponseBody.
+        r"""Sets the description of this EndpointResponseBody.
 
         描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
 
@@ -673,7 +673,7 @@ class EndpointResponseBody:
 
     @property
     def policy_statement(self):
-        """Gets the policy_statement of this EndpointResponseBody.
+        r"""Gets the policy_statement of this EndpointResponseBody.
 
         Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
 
@@ -684,7 +684,7 @@ class EndpointResponseBody:
 
     @policy_statement.setter
     def policy_statement(self, policy_statement):
-        """Sets the policy_statement of this EndpointResponseBody.
+        r"""Sets the policy_statement of this EndpointResponseBody.
 
         Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
 
@@ -695,7 +695,7 @@ class EndpointResponseBody:
 
     @property
     def policy_document(self):
-        """Gets the policy_document of this EndpointResponseBody.
+        r"""Gets the policy_document of this EndpointResponseBody.
 
         终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
@@ -706,7 +706,7 @@ class EndpointResponseBody:
 
     @policy_document.setter
     def policy_document(self, policy_document):
-        """Sets the policy_document of this EndpointResponseBody.
+        r"""Sets the policy_document of this EndpointResponseBody.
 
         终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
@@ -717,7 +717,7 @@ class EndpointResponseBody:
 
     @property
     def endpoint_pool_id(self):
-        """Gets the endpoint_pool_id of this EndpointResponseBody.
+        r"""Gets the endpoint_pool_id of this EndpointResponseBody.
 
         待废弃，实例相关联的集群ID
 
@@ -728,7 +728,7 @@ class EndpointResponseBody:
 
     @endpoint_pool_id.setter
     def endpoint_pool_id(self, endpoint_pool_id):
-        """Sets the endpoint_pool_id of this EndpointResponseBody.
+        r"""Sets the endpoint_pool_id of this EndpointResponseBody.
 
         待废弃，实例相关联的集群ID
 
@@ -739,7 +739,7 @@ class EndpointResponseBody:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this EndpointResponseBody.
+        r"""Gets the public_border_group of this EndpointResponseBody.
 
         终端节点关联的Public Border Group信息，只有当终端节点和边缘Pool相关联时才会返回该字段
 
@@ -750,7 +750,7 @@ class EndpointResponseBody:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this EndpointResponseBody.
+        r"""Sets the public_border_group of this EndpointResponseBody.
 
         终端节点关联的Public Border Group信息，只有当终端节点和边缘Pool相关联时才会返回该字段
 

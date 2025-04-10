@@ -30,7 +30,7 @@ class DescribePermissionSetRequest:
     }
 
     def __init__(self, x_security_token=None, instance_id=None, permission_set_id=None):
-        """DescribePermissionSetRequest
+        r"""DescribePermissionSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DescribePermissionSetRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this DescribePermissionSetRequest.
+        r"""Gets the x_security_token of this DescribePermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -67,7 +67,7 @@ class DescribePermissionSetRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this DescribePermissionSetRequest.
+        r"""Sets the x_security_token of this DescribePermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -78,7 +78,7 @@ class DescribePermissionSetRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DescribePermissionSetRequest.
+        r"""Gets the instance_id of this DescribePermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -89,7 +89,7 @@ class DescribePermissionSetRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DescribePermissionSetRequest.
+        r"""Sets the instance_id of this DescribePermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -100,7 +100,7 @@ class DescribePermissionSetRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this DescribePermissionSetRequest.
+        r"""Gets the permission_set_id of this DescribePermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -111,7 +111,7 @@ class DescribePermissionSetRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this DescribePermissionSetRequest.
+        r"""Sets the permission_set_id of this DescribePermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 

@@ -25,7 +25,7 @@ class CreateCbhRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCbhRequest
+        r"""CreateCbhRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCbhRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCbhRequest.
+        r"""Gets the body of this CreateCbhRequest.
 
         :return: The body of this CreateCbhRequest.
         :rtype: :class:`huaweicloudsdkcbh.v1.CreateInstanceBody`
@@ -52,7 +52,7 @@ class CreateCbhRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCbhRequest.
+        r"""Sets the body of this CreateCbhRequest.
 
         :param body: The body of this CreateCbhRequest.
         :type body: :class:`huaweicloudsdkcbh.v1.CreateInstanceBody`

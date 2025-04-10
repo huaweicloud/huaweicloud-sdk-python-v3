@@ -57,7 +57,7 @@ class ShowHttpIgnoreRuleResponseBody:
     }
 
     def __init__(self, id=None, name=None, policy_id=None, policy_name=None, timestamp=None, description=None, status=None, url=None, rule=None, mode=None, domains=None, url_logic=None, advanced=None, conditions=None, hit_num=None, update_time=None, clear_time=None):
-        """ShowHttpIgnoreRuleResponseBody
+        r"""ShowHttpIgnoreRuleResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the id of this ShowHttpIgnoreRuleResponseBody.
 
         规则id
 
@@ -166,7 +166,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the id of this ShowHttpIgnoreRuleResponseBody.
 
         规则id
 
@@ -177,7 +177,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the name of this ShowHttpIgnoreRuleResponseBody.
 
         规则名称
 
@@ -188,7 +188,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the name of this ShowHttpIgnoreRuleResponseBody.
 
         规则名称
 
@@ -199,7 +199,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the policy_id of this ShowHttpIgnoreRuleResponseBody.
 
         规则所在策略id
 
@@ -210,7 +210,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the policy_id of this ShowHttpIgnoreRuleResponseBody.
 
         规则所在策略id
 
@@ -221,7 +221,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the policy_name of this ShowHttpIgnoreRuleResponseBody.
 
         规则所在策略名称
 
@@ -232,7 +232,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the policy_name of this ShowHttpIgnoreRuleResponseBody.
 
         规则所在策略名称
 
@@ -243,7 +243,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the timestamp of this ShowHttpIgnoreRuleResponseBody.
 
         创建规则时间戳
 
@@ -254,7 +254,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the timestamp of this ShowHttpIgnoreRuleResponseBody.
 
         创建规则时间戳
 
@@ -265,7 +265,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the description of this ShowHttpIgnoreRuleResponseBody.
 
         规则描述
 
@@ -276,7 +276,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the description of this ShowHttpIgnoreRuleResponseBody.
 
         规则描述
 
@@ -287,7 +287,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the status of this ShowHttpIgnoreRuleResponseBody.
 
         规则开关状态
 
@@ -298,7 +298,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the status of this ShowHttpIgnoreRuleResponseBody.
 
         规则开关状态
 
@@ -309,7 +309,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def url(self):
-        """Gets the url of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the url of this ShowHttpIgnoreRuleResponseBody.
 
         误报路径
 
@@ -320,7 +320,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the url of this ShowHttpIgnoreRuleResponseBody.
 
         误报路径
 
@@ -331,7 +331,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def rule(self):
-        """Gets the rule of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the rule of this ShowHttpIgnoreRuleResponseBody.
 
         规则编号
 
@@ -342,7 +342,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the rule of this ShowHttpIgnoreRuleResponseBody.
 
         规则编号
 
@@ -353,7 +353,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def mode(self):
-        """Gets the mode of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the mode of this ShowHttpIgnoreRuleResponseBody.
 
         误报屏蔽模式，默认为0即旧模式
 
@@ -364,7 +364,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the mode of this ShowHttpIgnoreRuleResponseBody.
 
         误报屏蔽模式，默认为0即旧模式
 
@@ -375,7 +375,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def domains(self):
-        """Gets the domains of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the domains of this ShowHttpIgnoreRuleResponseBody.
 
         域名列表
 
@@ -386,7 +386,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the domains of this ShowHttpIgnoreRuleResponseBody.
 
         域名列表
 
@@ -397,7 +397,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def url_logic(self):
-        """Gets the url_logic of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the url_logic of this ShowHttpIgnoreRuleResponseBody.
 
         屏蔽规则url类型（前缀：prefix，等于：equal）
 
@@ -408,7 +408,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @url_logic.setter
     def url_logic(self, url_logic):
-        """Sets the url_logic of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the url_logic of this ShowHttpIgnoreRuleResponseBody.
 
         屏蔽规则url类型（前缀：prefix，等于：equal）
 
@@ -419,7 +419,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def advanced(self):
-        """Gets the advanced of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the advanced of this ShowHttpIgnoreRuleResponseBody.
 
         :return: The advanced of this ShowHttpIgnoreRuleResponseBody.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpIgnoreRuleCondition`
@@ -428,7 +428,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @advanced.setter
     def advanced(self, advanced):
-        """Sets the advanced of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the advanced of this ShowHttpIgnoreRuleResponseBody.
 
         :param advanced: The advanced of this ShowHttpIgnoreRuleResponseBody.
         :type advanced: :class:`huaweicloudsdkedgesec.v2.HttpIgnoreRuleCondition`
@@ -437,7 +437,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def conditions(self):
-        """Gets the conditions of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the conditions of this ShowHttpIgnoreRuleResponseBody.
 
         命中条件
 
@@ -448,7 +448,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the conditions of this ShowHttpIgnoreRuleResponseBody.
 
         命中条件
 
@@ -459,7 +459,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def hit_num(self):
-        """Gets the hit_num of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the hit_num of this ShowHttpIgnoreRuleResponseBody.
 
         命中次数
 
@@ -470,7 +470,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @hit_num.setter
     def hit_num(self, hit_num):
-        """Sets the hit_num of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the hit_num of this ShowHttpIgnoreRuleResponseBody.
 
         命中次数
 
@@ -481,7 +481,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the update_time of this ShowHttpIgnoreRuleResponseBody.
 
         最后更新时间戳
 
@@ -492,7 +492,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the update_time of this ShowHttpIgnoreRuleResponseBody.
 
         最后更新时间戳
 
@@ -503,7 +503,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @property
     def clear_time(self):
-        """Gets the clear_time of this ShowHttpIgnoreRuleResponseBody.
+        r"""Gets the clear_time of this ShowHttpIgnoreRuleResponseBody.
 
         上一次命中次数清零时间戳
 
@@ -514,7 +514,7 @@ class ShowHttpIgnoreRuleResponseBody:
 
     @clear_time.setter
     def clear_time(self, clear_time):
-        """Sets the clear_time of this ShowHttpIgnoreRuleResponseBody.
+        r"""Sets the clear_time of this ShowHttpIgnoreRuleResponseBody.
 
         上一次命中次数清零时间戳
 

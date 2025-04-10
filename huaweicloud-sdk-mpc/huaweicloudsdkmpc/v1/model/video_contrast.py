@@ -31,7 +31,7 @@ class VideoContrast:
     }
 
     def __init__(self, name=None, execution_order=None, contrast=None, brightness=None):
-        """VideoContrast
+        r"""VideoContrast
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class VideoContrast:
 
     @property
     def name(self):
-        """Gets the name of this VideoContrast.
+        r"""Gets the name of this VideoContrast.
 
         对比度算法名称\"hw-contrast\"。 
 
@@ -75,7 +75,7 @@ class VideoContrast:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VideoContrast.
+        r"""Sets the name of this VideoContrast.
 
         对比度算法名称\"hw-contrast\"。 
 
@@ -86,7 +86,7 @@ class VideoContrast:
 
     @property
     def execution_order(self):
-        """Gets the execution_order of this VideoContrast.
+        r"""Gets the execution_order of this VideoContrast.
 
         1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
 
@@ -97,7 +97,7 @@ class VideoContrast:
 
     @execution_order.setter
     def execution_order(self, execution_order):
-        """Sets the execution_order of this VideoContrast.
+        r"""Sets the execution_order of this VideoContrast.
 
         1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
 
@@ -108,7 +108,7 @@ class VideoContrast:
 
     @property
     def contrast(self):
-        """Gets the contrast of this VideoContrast.
+        r"""Gets the contrast of this VideoContrast.
 
         对比度调节的程度， 值越大， 对比度越高。 
 
@@ -119,7 +119,7 @@ class VideoContrast:
 
     @contrast.setter
     def contrast(self, contrast):
-        """Sets the contrast of this VideoContrast.
+        r"""Sets the contrast of this VideoContrast.
 
         对比度调节的程度， 值越大， 对比度越高。 
 
@@ -130,7 +130,7 @@ class VideoContrast:
 
     @property
     def brightness(self):
-        """Gets the brightness of this VideoContrast.
+        r"""Gets the brightness of this VideoContrast.
 
         1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
 
@@ -141,7 +141,7 @@ class VideoContrast:
 
     @brightness.setter
     def brightness(self, brightness):
-        """Sets the brightness of this VideoContrast.
+        r"""Sets the brightness of this VideoContrast.
 
         1 表示视频处理时第一个执行，2表示第二个执行，以此类推；除不执行，各视频处理算法的执行次序不可相同。 
 

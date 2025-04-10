@@ -28,7 +28,7 @@ class ListUnusedDesktopsResponse(SdkResponse):
     }
 
     def __init__(self, unused_desktops=None, total_count=None):
-        """ListUnusedDesktopsResponse
+        r"""ListUnusedDesktopsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListUnusedDesktopsResponse(SdkResponse):
 
     @property
     def unused_desktops(self):
-        """Gets the unused_desktops of this ListUnusedDesktopsResponse.
+        r"""Gets the unused_desktops of this ListUnusedDesktopsResponse.
 
         指定时间段内未使用桌面列表。
 
@@ -62,7 +62,7 @@ class ListUnusedDesktopsResponse(SdkResponse):
 
     @unused_desktops.setter
     def unused_desktops(self, unused_desktops):
-        """Sets the unused_desktops of this ListUnusedDesktopsResponse.
+        r"""Sets the unused_desktops of this ListUnusedDesktopsResponse.
 
         指定时间段内未使用桌面列表。
 
@@ -73,7 +73,7 @@ class ListUnusedDesktopsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListUnusedDesktopsResponse.
+        r"""Gets the total_count of this ListUnusedDesktopsResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ListUnusedDesktopsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListUnusedDesktopsResponse.
+        r"""Sets the total_count of this ListUnusedDesktopsResponse.
 
         总数。
 

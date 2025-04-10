@@ -27,7 +27,7 @@ class CreateBackRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateBackRequest
+        r"""CreateBackRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateBackRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateBackRequest.
+        r"""Gets the instance_id of this CreateBackRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class CreateBackRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateBackRequest.
+        r"""Sets the instance_id of this CreateBackRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class CreateBackRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateBackRequest.
+        r"""Gets the body of this CreateBackRequest.
 
         :return: The body of this CreateBackRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlCreateBackupRequestBody`
@@ -80,7 +80,7 @@ class CreateBackRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateBackRequest.
+        r"""Sets the body of this CreateBackRequest.
 
         :param body: The body of this CreateBackRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlCreateBackupRequestBody`

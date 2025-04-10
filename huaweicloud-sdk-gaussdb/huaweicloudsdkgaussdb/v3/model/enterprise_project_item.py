@@ -35,7 +35,7 @@ class EnterpriseProjectItem:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, created=None, updated=None):
-        """EnterpriseProjectItem
+        r"""EnterpriseProjectItem
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class EnterpriseProjectItem:
 
     @property
     def id(self):
-        """Gets the id of this EnterpriseProjectItem.
+        r"""Gets the id of this EnterpriseProjectItem.
 
         企业项目ID。
 
@@ -89,7 +89,7 @@ class EnterpriseProjectItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EnterpriseProjectItem.
+        r"""Sets the id of this EnterpriseProjectItem.
 
         企业项目ID。
 
@@ -100,7 +100,7 @@ class EnterpriseProjectItem:
 
     @property
     def name(self):
-        """Gets the name of this EnterpriseProjectItem.
+        r"""Gets the name of this EnterpriseProjectItem.
 
         企业项目名称。
 
@@ -111,7 +111,7 @@ class EnterpriseProjectItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnterpriseProjectItem.
+        r"""Sets the name of this EnterpriseProjectItem.
 
         企业项目名称。
 
@@ -122,7 +122,7 @@ class EnterpriseProjectItem:
 
     @property
     def description(self):
-        """Gets the description of this EnterpriseProjectItem.
+        r"""Gets the description of this EnterpriseProjectItem.
 
         描述。
 
@@ -133,7 +133,7 @@ class EnterpriseProjectItem:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EnterpriseProjectItem.
+        r"""Sets the description of this EnterpriseProjectItem.
 
         描述。
 
@@ -144,7 +144,7 @@ class EnterpriseProjectItem:
 
     @property
     def status(self):
-        """Gets the status of this EnterpriseProjectItem.
+        r"""Gets the status of this EnterpriseProjectItem.
 
         状态。 - 1：正常。 - 0：异常。
 
@@ -155,7 +155,7 @@ class EnterpriseProjectItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EnterpriseProjectItem.
+        r"""Sets the status of this EnterpriseProjectItem.
 
         状态。 - 1：正常。 - 0：异常。
 
@@ -166,7 +166,7 @@ class EnterpriseProjectItem:
 
     @property
     def created(self):
-        """Gets the created of this EnterpriseProjectItem.
+        r"""Gets the created of this EnterpriseProjectItem.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -177,7 +177,7 @@ class EnterpriseProjectItem:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this EnterpriseProjectItem.
+        r"""Sets the created of this EnterpriseProjectItem.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -188,7 +188,7 @@ class EnterpriseProjectItem:
 
     @property
     def updated(self):
-        """Gets the updated of this EnterpriseProjectItem.
+        r"""Gets the updated of this EnterpriseProjectItem.
 
         更新时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 
@@ -199,7 +199,7 @@ class EnterpriseProjectItem:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this EnterpriseProjectItem.
+        r"""Sets the updated of this EnterpriseProjectItem.
 
         更新时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。
 

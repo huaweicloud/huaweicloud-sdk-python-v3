@@ -25,7 +25,7 @@ class UsbBandwidthControlOptions:
     }
 
     def __init__(self, usb_bandwidth_control_value=None):
-        """UsbBandwidthControlOptions
+        r"""UsbBandwidthControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UsbBandwidthControlOptions:
 
     @property
     def usb_bandwidth_control_value(self):
-        """Gets the usb_bandwidth_control_value of this UsbBandwidthControlOptions.
+        r"""Gets the usb_bandwidth_control_value of this UsbBandwidthControlOptions.
 
         USB带宽控制量（Kbps）。取值范围为[1000-30000]。默认：30000。
 
@@ -54,7 +54,7 @@ class UsbBandwidthControlOptions:
 
     @usb_bandwidth_control_value.setter
     def usb_bandwidth_control_value(self, usb_bandwidth_control_value):
-        """Sets the usb_bandwidth_control_value of this UsbBandwidthControlOptions.
+        r"""Sets the usb_bandwidth_control_value of this UsbBandwidthControlOptions.
 
         USB带宽控制量（Kbps）。取值范围为[1000-30000]。默认：30000。
 

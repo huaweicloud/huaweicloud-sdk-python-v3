@@ -29,7 +29,7 @@ class Subtitle:
     }
 
     def __init__(self, input=None, inputs=None, subtitle_type=None):
-        """Subtitle
+        r"""Subtitle
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Subtitle:
 
     @property
     def input(self):
-        """Gets the input of this Subtitle.
+        r"""Gets the input of this Subtitle.
 
         :return: The input of this Subtitle.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -66,7 +66,7 @@ class Subtitle:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this Subtitle.
+        r"""Sets the input of this Subtitle.
 
         :param input: The input of this Subtitle.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -75,7 +75,7 @@ class Subtitle:
 
     @property
     def inputs(self):
-        """Gets the inputs of this Subtitle.
+        r"""Gets the inputs of this Subtitle.
 
         多字幕文件地址。 
 
@@ -86,7 +86,7 @@ class Subtitle:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this Subtitle.
+        r"""Sets the inputs of this Subtitle.
 
         多字幕文件地址。 
 
@@ -97,7 +97,7 @@ class Subtitle:
 
     @property
     def subtitle_type(self):
-        """Gets the subtitle_type of this Subtitle.
+        r"""Gets the subtitle_type of this Subtitle.
 
         字幕类型。取值如下：  - 0，表示不输出字幕 - 1，表示外部字幕文件嵌入视频流 - 2，表示输出WebVTT格式字幕 
 
@@ -108,7 +108,7 @@ class Subtitle:
 
     @subtitle_type.setter
     def subtitle_type(self, subtitle_type):
-        """Sets the subtitle_type of this Subtitle.
+        r"""Sets the subtitle_type of this Subtitle.
 
         字幕类型。取值如下：  - 0，表示不输出字幕 - 1，表示外部字幕文件嵌入视频流 - 2，表示输出WebVTT格式字幕 
 

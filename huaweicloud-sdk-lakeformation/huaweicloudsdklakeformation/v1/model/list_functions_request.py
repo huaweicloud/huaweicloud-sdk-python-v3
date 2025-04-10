@@ -37,7 +37,7 @@ class ListFunctionsRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, function_name_pattern=None, limit=None, marker=None, reverse_page=None):
-        """ListFunctionsRequest
+        r"""ListFunctionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ListFunctionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListFunctionsRequest.
+        r"""Gets the instance_id of this ListFunctionsRequest.
 
         实例Id
 
@@ -93,7 +93,7 @@ class ListFunctionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListFunctionsRequest.
+        r"""Sets the instance_id of this ListFunctionsRequest.
 
         实例Id
 
@@ -104,7 +104,7 @@ class ListFunctionsRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ListFunctionsRequest.
+        r"""Gets the catalog_name of this ListFunctionsRequest.
 
         catalog名字
 
@@ -115,7 +115,7 @@ class ListFunctionsRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ListFunctionsRequest.
+        r"""Sets the catalog_name of this ListFunctionsRequest.
 
         catalog名字
 
@@ -126,7 +126,7 @@ class ListFunctionsRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListFunctionsRequest.
+        r"""Gets the database_name of this ListFunctionsRequest.
 
         数据库名字
 
@@ -137,7 +137,7 @@ class ListFunctionsRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListFunctionsRequest.
+        r"""Sets the database_name of this ListFunctionsRequest.
 
         数据库名字
 
@@ -148,7 +148,7 @@ class ListFunctionsRequest:
 
     @property
     def function_name_pattern(self):
-        """Gets the function_name_pattern of this ListFunctionsRequest.
+        r"""Gets the function_name_pattern of this ListFunctionsRequest.
 
         函数名通配符
 
@@ -159,7 +159,7 @@ class ListFunctionsRequest:
 
     @function_name_pattern.setter
     def function_name_pattern(self, function_name_pattern):
-        """Sets the function_name_pattern of this ListFunctionsRequest.
+        r"""Sets the function_name_pattern of this ListFunctionsRequest.
 
         函数名通配符
 
@@ -170,7 +170,7 @@ class ListFunctionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFunctionsRequest.
+        r"""Gets the limit of this ListFunctionsRequest.
 
         查询返回满足条件的function数量
 
@@ -181,7 +181,7 @@ class ListFunctionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFunctionsRequest.
+        r"""Sets the limit of this ListFunctionsRequest.
 
         查询返回满足条件的function数量
 
@@ -192,7 +192,7 @@ class ListFunctionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListFunctionsRequest.
+        r"""Gets the marker of this ListFunctionsRequest.
 
         当前查询的起始位置
 
@@ -203,7 +203,7 @@ class ListFunctionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListFunctionsRequest.
+        r"""Sets the marker of this ListFunctionsRequest.
 
         当前查询的起始位置
 
@@ -214,7 +214,7 @@ class ListFunctionsRequest:
 
     @property
     def reverse_page(self):
-        """Gets the reverse_page of this ListFunctionsRequest.
+        r"""Gets the reverse_page of this ListFunctionsRequest.
 
         是否查询上一页
 
@@ -225,7 +225,7 @@ class ListFunctionsRequest:
 
     @reverse_page.setter
     def reverse_page(self, reverse_page):
-        """Sets the reverse_page of this ListFunctionsRequest.
+        r"""Sets the reverse_page of this ListFunctionsRequest.
 
         是否查询上一页
 

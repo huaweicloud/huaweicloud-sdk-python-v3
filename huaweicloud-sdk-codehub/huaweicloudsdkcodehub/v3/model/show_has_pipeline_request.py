@@ -25,7 +25,7 @@ class ShowHasPipelineRequest:
     }
 
     def __init__(self, repository_uuid=None):
-        """ShowHasPipelineRequest
+        r"""ShowHasPipelineRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowHasPipelineRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this ShowHasPipelineRequest.
+        r"""Gets the repository_uuid of this ShowHasPipelineRequest.
 
         仓库id
 
@@ -53,7 +53,7 @@ class ShowHasPipelineRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this ShowHasPipelineRequest.
+        r"""Sets the repository_uuid of this ShowHasPipelineRequest.
 
         仓库id
 

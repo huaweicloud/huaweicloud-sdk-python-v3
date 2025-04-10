@@ -27,7 +27,7 @@ class ModifyProxyRouteWeightReadonlyNode:
     }
 
     def __init__(self, id=None, weight=None):
-        """ModifyProxyRouteWeightReadonlyNode
+        r"""ModifyProxyRouteWeightReadonlyNode
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ModifyProxyRouteWeightReadonlyNode:
 
     @property
     def id(self):
-        """Gets the id of this ModifyProxyRouteWeightReadonlyNode.
+        r"""Gets the id of this ModifyProxyRouteWeightReadonlyNode.
 
         只读节点ID。
 
@@ -59,7 +59,7 @@ class ModifyProxyRouteWeightReadonlyNode:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyProxyRouteWeightReadonlyNode.
+        r"""Sets the id of this ModifyProxyRouteWeightReadonlyNode.
 
         只读节点ID。
 
@@ -70,7 +70,7 @@ class ModifyProxyRouteWeightReadonlyNode:
 
     @property
     def weight(self):
-        """Gets the weight of this ModifyProxyRouteWeightReadonlyNode.
+        r"""Gets the weight of this ModifyProxyRouteWeightReadonlyNode.
 
         只读节点权重： - 如果路由模式为0，取值为0~1000； - 如果路由模式为1或2，取值为0或1。
 
@@ -81,7 +81,7 @@ class ModifyProxyRouteWeightReadonlyNode:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this ModifyProxyRouteWeightReadonlyNode.
+        r"""Sets the weight of this ModifyProxyRouteWeightReadonlyNode.
 
         只读节点权重： - 如果路由模式为0，取值为0~1000； - 如果路由模式为1或2，取值为0或1。
 

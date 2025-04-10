@@ -25,7 +25,7 @@ class CreateIefMessageChannelRequestBody:
     }
 
     def __init__(self, node_id=None):
-        """CreateIefMessageChannelRequestBody
+        r"""CreateIefMessageChannelRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateIefMessageChannelRequestBody:
 
     @property
     def node_id(self):
-        """Gets the node_id of this CreateIefMessageChannelRequestBody.
+        r"""Gets the node_id of this CreateIefMessageChannelRequestBody.
 
         创建IEF消息通道指定的边缘节点ID，uuid格式
 
@@ -53,7 +53,7 @@ class CreateIefMessageChannelRequestBody:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this CreateIefMessageChannelRequestBody.
+        r"""Sets the node_id of this CreateIefMessageChannelRequestBody.
 
         创建IEF消息通道指定的边缘节点ID，uuid格式
 

@@ -31,7 +31,7 @@ class DeleteResultError:
     }
 
     def __init__(self, key=None, code=None, message=None):
-        """DeleteResultError
+        r"""DeleteResultError
 
         The model defined in huaweicloud sdk
 
@@ -59,7 +59,7 @@ class DeleteResultError:
 
     @property
     def key(self):
-        """Gets the key of this DeleteResultError.
+        r"""Gets the key of this DeleteResultError.
 
         Object names in a deletion result
 
@@ -70,7 +70,7 @@ class DeleteResultError:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteResultError.
+        r"""Sets the key of this DeleteResultError.
 
         Object names in a deletion result
 
@@ -81,7 +81,7 @@ class DeleteResultError:
 
     @property
     def code(self):
-        """Gets the code of this DeleteResultError.
+        r"""Gets the code of this DeleteResultError.
 
         Error code of the failed deletion
 
@@ -92,7 +92,7 @@ class DeleteResultError:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeleteResultError.
+        r"""Sets the code of this DeleteResultError.
 
         Error code of the failed deletion
 
@@ -103,7 +103,7 @@ class DeleteResultError:
 
     @property
     def message(self):
-        """Gets the message of this DeleteResultError.
+        r"""Gets the message of this DeleteResultError.
 
         Error message of the failed deletion
 
@@ -114,7 +114,7 @@ class DeleteResultError:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteResultError.
+        r"""Sets the message of this DeleteResultError.
 
         Error message of the failed deletion
 

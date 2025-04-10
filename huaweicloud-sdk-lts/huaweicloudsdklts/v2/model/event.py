@@ -27,7 +27,7 @@ class Event:
     }
 
     def __init__(self, metadata=None, starts_at=None):
-        """Event
+        r"""Event
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Event:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Event.
+        r"""Gets the metadata of this Event.
 
         :return: The metadata of this Event.
         :rtype: :class:`huaweicloudsdklts.v2.Metadata`
@@ -57,7 +57,7 @@ class Event:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Event.
+        r"""Sets the metadata of this Event.
 
         :param metadata: The metadata of this Event.
         :type metadata: :class:`huaweicloudsdklts.v2.Metadata`
@@ -66,7 +66,7 @@ class Event:
 
     @property
     def starts_at(self):
-        """Gets the starts_at of this Event.
+        r"""Gets the starts_at of this Event.
 
         告警产生时间(时间戳)
 
@@ -77,7 +77,7 @@ class Event:
 
     @starts_at.setter
     def starts_at(self, starts_at):
-        """Sets the starts_at of this Event.
+        r"""Sets the starts_at of this Event.
 
         告警产生时间(时间戳)
 

@@ -29,7 +29,7 @@ class ShowMessageDetailRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, message_id=None):
-        """ShowMessageDetailRequest
+        r"""ShowMessageDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowMessageDetailRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowMessageDetailRequest.
+        r"""Gets the workspace of this ShowMessageDetailRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -66,7 +66,7 @@ class ShowMessageDetailRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowMessageDetailRequest.
+        r"""Sets the workspace of this ShowMessageDetailRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -77,7 +77,7 @@ class ShowMessageDetailRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ShowMessageDetailRequest.
+        r"""Gets the dlm_type of this ShowMessageDetailRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -88,7 +88,7 @@ class ShowMessageDetailRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ShowMessageDetailRequest.
+        r"""Sets the dlm_type of this ShowMessageDetailRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -99,7 +99,7 @@ class ShowMessageDetailRequest:
 
     @property
     def message_id(self):
-        """Gets the message_id of this ShowMessageDetailRequest.
+        r"""Gets the message_id of this ShowMessageDetailRequest.
 
         消息信息id。
 
@@ -110,7 +110,7 @@ class ShowMessageDetailRequest:
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this ShowMessageDetailRequest.
+        r"""Sets the message_id of this ShowMessageDetailRequest.
 
         消息信息id。
 

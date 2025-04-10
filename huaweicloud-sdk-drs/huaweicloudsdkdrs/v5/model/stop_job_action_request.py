@@ -29,7 +29,7 @@ class StopJobActionRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """StopJobActionRequest
+        r"""StopJobActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class StopJobActionRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this StopJobActionRequest.
+        r"""Gets the job_id of this StopJobActionRequest.
 
         任务ID
 
@@ -67,7 +67,7 @@ class StopJobActionRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StopJobActionRequest.
+        r"""Sets the job_id of this StopJobActionRequest.
 
         任务ID
 
@@ -78,7 +78,7 @@ class StopJobActionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this StopJobActionRequest.
+        r"""Gets the x_language of this StopJobActionRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class StopJobActionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this StopJobActionRequest.
+        r"""Sets the x_language of this StopJobActionRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class StopJobActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this StopJobActionRequest.
+        r"""Gets the body of this StopJobActionRequest.
 
         :return: The body of this StopJobActionRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.StopJobActionReq`
@@ -109,7 +109,7 @@ class StopJobActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StopJobActionRequest.
+        r"""Sets the body of this StopJobActionRequest.
 
         :param body: The body of this StopJobActionRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.StopJobActionReq`

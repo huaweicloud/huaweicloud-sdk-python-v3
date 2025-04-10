@@ -25,7 +25,7 @@ class CreateClouddcnSubnetRequestBody:
     }
 
     def __init__(self, clouddcn_subnet=None):
-        """CreateClouddcnSubnetRequestBody
+        r"""CreateClouddcnSubnetRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateClouddcnSubnetRequestBody:
 
     @property
     def clouddcn_subnet(self):
-        """Gets the clouddcn_subnet of this CreateClouddcnSubnetRequestBody.
+        r"""Gets the clouddcn_subnet of this CreateClouddcnSubnetRequestBody.
 
         :return: The clouddcn_subnet of this CreateClouddcnSubnetRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateClouddcnSubnetOption`
@@ -51,7 +51,7 @@ class CreateClouddcnSubnetRequestBody:
 
     @clouddcn_subnet.setter
     def clouddcn_subnet(self, clouddcn_subnet):
-        """Sets the clouddcn_subnet of this CreateClouddcnSubnetRequestBody.
+        r"""Sets the clouddcn_subnet of this CreateClouddcnSubnetRequestBody.
 
         :param clouddcn_subnet: The clouddcn_subnet of this CreateClouddcnSubnetRequestBody.
         :type clouddcn_subnet: :class:`huaweicloudsdkvpc.v3.CreateClouddcnSubnetOption`

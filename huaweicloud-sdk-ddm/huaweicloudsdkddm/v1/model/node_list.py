@@ -31,7 +31,7 @@ class NodeList:
     }
 
     def __init__(self, port=None, status=None, node_id=None, ip=None):
-        """NodeList
+        r"""NodeList
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class NodeList:
 
     @property
     def port(self):
-        """Gets the port of this NodeList.
+        r"""Gets the port of this NodeList.
 
         端口。
 
@@ -75,7 +75,7 @@ class NodeList:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this NodeList.
+        r"""Sets the port of this NodeList.
 
         端口。
 
@@ -86,7 +86,7 @@ class NodeList:
 
     @property
     def status(self):
-        """Gets the status of this NodeList.
+        r"""Gets the status of this NodeList.
 
         节点状态。
 
@@ -97,7 +97,7 @@ class NodeList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NodeList.
+        r"""Sets the status of this NodeList.
 
         节点状态。
 
@@ -108,7 +108,7 @@ class NodeList:
 
     @property
     def node_id(self):
-        """Gets the node_id of this NodeList.
+        r"""Gets the node_id of this NodeList.
 
         节点id。
 
@@ -119,7 +119,7 @@ class NodeList:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this NodeList.
+        r"""Sets the node_id of this NodeList.
 
         节点id。
 
@@ -130,7 +130,7 @@ class NodeList:
 
     @property
     def ip(self):
-        """Gets the ip of this NodeList.
+        r"""Gets the ip of this NodeList.
 
         ip
 
@@ -141,7 +141,7 @@ class NodeList:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this NodeList.
+        r"""Sets the ip of this NodeList.
 
         ip
 

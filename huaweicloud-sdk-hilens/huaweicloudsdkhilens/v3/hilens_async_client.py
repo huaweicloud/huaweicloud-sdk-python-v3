@@ -34,7 +34,7 @@ class HiLensAsyncClient(Client):
         return client_builder
 
     def add_deployment_nodes_async(self, request):
-        """批量部署
+        r"""批量部署
 
         通过指定设备id列表或者设备标签将应用部署下发到多个设备上。
         
@@ -103,7 +103,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def batch_create_node_tags_async(self, request):
-        """批量添加节点标签
+        r"""批量添加节点标签
 
         专业版HiLens控制台标签管理，用户选择多个设备，批量添加多个标签。
         
@@ -168,7 +168,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def create_config_map_async(self, request):
-        """创建配置项
+        r"""创建配置项
 
         创建配置项
         
@@ -235,7 +235,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def create_deployment_async(self, request):
-        """创建应用部署
+        r"""创建应用部署
 
         创建应用部署。
         
@@ -304,7 +304,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def create_node_async(self, request):
-        """注册设备
+        r"""注册设备
 
         填写设备信息，将设备注册到HiLens专业版控制台上。
         
@@ -371,7 +371,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def create_order_form_async(self, request):
-        """创建免费技能订单
+        r"""创建免费技能订单
 
         创建免费技能订单
         
@@ -436,7 +436,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def create_resource_tags_async(self, request):
-        """添加资源标签
+        r"""添加资源标签
 
         专业版HiLens控制台标签管理，添加对应资源的标签列表
         
@@ -505,7 +505,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def create_secret_async(self, request):
-        """创建密钥
+        r"""创建密钥
 
         创建密钥
         
@@ -572,7 +572,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def create_task_async(self, request):
-        """创建作业
+        r"""创建作业
 
         创建作业。
         
@@ -639,7 +639,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def create_work_space_async(self, request):
-        """创建工作空间
+        r"""创建工作空间
 
         创建一个工作空间，其中工作空间名不能与已有的重复
         
@@ -704,7 +704,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def delete_config_map_async(self, request):
-        """删除配置项
+        r"""删除配置项
 
         根据配置项id删除某个配置项
         
@@ -769,7 +769,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def delete_deployment_async(self, request):
-        """删除应用部署
+        r"""删除应用部署
 
         删除指定应用部署。
         
@@ -840,7 +840,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def delete_node_async(self, request):
-        """删除设备
+        r"""删除设备
 
         删除专业版HiLens控制台上的设备，并与端侧的设备进行解绑。
         
@@ -907,7 +907,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def delete_pod_async(self, request):
-        """删除应用实例
+        r"""删除应用实例
 
         删除指定实例。
         
@@ -976,7 +976,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def delete_resource_tag_async(self, request):
-        """删除资源标签
+        r"""删除资源标签
 
         专业版HiLens控制台标签管理，删除对应资源的标签
         
@@ -1045,7 +1045,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def delete_secret_async(self, request):
-        """删除密钥
+        r"""删除密钥
 
         删除密钥
         
@@ -1110,7 +1110,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def delete_task_async(self, request):
-        """删除作业
+        r"""删除作业
 
         删除作业。
         
@@ -1177,7 +1177,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def delete_work_space_async(self, request):
-        """删除工作空间
+        r"""删除工作空间
 
         删除指定ID的工作空间，如果该工作空间下仍有资源，则删除会失败
         
@@ -1242,7 +1242,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def freeze_node_async(self, request):
-        """将激活订单与设备解绑
+        r"""将激活订单与设备解绑
 
         将激活订单与设备解绑。
         
@@ -1307,7 +1307,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def list_config_maps_async(self, request):
-        """查询配置项列表
+        r"""查询配置项列表
 
         获取配置项详情，以列表形式返回。
         
@@ -1384,7 +1384,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def list_firmwares_async(self, request):
-        """查询固件列表
+        r"""查询固件列表
 
         查看指定固件历史版本信息
         
@@ -1459,7 +1459,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def list_platform_manager_async(self, request):
-        """获取运行服务费订单列表
+        r"""获取运行服务费订单列表
 
         获取平台管理费列表
         
@@ -1532,7 +1532,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def list_resource_tags_async(self, request):
-        """查询某资源类型的标签
+        r"""查询某资源类型的标签
 
         专业版HiLens控制台标签管理，查询某种资源类型的所有标签，返回标签列表。
         
@@ -1597,7 +1597,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def list_secrets_async(self, request):
-        """查询密钥列表
+        r"""查询密钥列表
 
         专业版HiLens控制台密钥管理，根据用户请求条件筛选，查询用户创建的 密钥信息，以列表形式返回。
         
@@ -1674,7 +1674,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def list_tasks_async(self, request):
-        """查询作业列表
+        r"""查询作业列表
 
         查询当前部署下所有作业，返回详情列表。
         
@@ -1743,7 +1743,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def list_work_spaces_async(self, request):
-        """获取工作空间列表
+        r"""获取工作空间列表
 
         查询用户名下的所有工作空间信息，并返回列表和总条目数
         
@@ -1812,7 +1812,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def set_default_order_form_async(self, request):
-        """设置默认订单
+        r"""设置默认订单
 
         设置默认订单
         
@@ -1877,7 +1877,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_config_map_async(self, request):
-        """查询配置项详情
+        r"""查询配置项详情
 
         根据配置项id查询某个配置项详情
         
@@ -1942,7 +1942,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_deployment_async(self, request):
-        """查询应用部署详情
+        r"""查询应用部署详情
 
         获取部署的详情信息。
         
@@ -2009,7 +2009,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_deployment_pods_async(self, request):
-        """查询应用实例列表
+        r"""查询应用实例列表
 
         获取用户实例列表。
         
@@ -2086,7 +2086,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_deployments_async(self, request):
-        """查询应用部署列表
+        r"""查询应用部署列表
 
         获取部署列表。
         
@@ -2163,7 +2163,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_node_async(self, request):
-        """查询设备详情
+        r"""查询设备详情
 
         支持查询HiLens专业版控制台上的设备详情。
         
@@ -2228,7 +2228,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_node_activation_records_async(self, request):
-        """获取激活记录列表
+        r"""获取激活记录列表
 
         获取激活记录列表。
         
@@ -2297,7 +2297,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_nodes_async(self, request):
-        """查询设备列表
+        r"""查询设备列表
 
         专业版HiLens控制台设备管理，根据用户请求条件筛选，查询用户注册的设备信息，以列表形式返回。
         
@@ -2380,7 +2380,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_resource_tags_async(self, request):
-        """查询资源标签
+        r"""查询资源标签
 
         专业版HiLens控制台标签管理，查询具体资源的标签，返回标签列表。
         
@@ -2447,7 +2447,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_secret_async(self, request):
-        """查询密钥详情
+        r"""查询密钥详情
 
         查询密钥详情
         
@@ -2512,7 +2512,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_skill_info_async(self, request):
-        """获取技能详情
+        r"""获取技能详情
 
         获取技能详情
         
@@ -2581,7 +2581,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_skill_list_async(self, request):
-        """查询技能列表
+        r"""查询技能列表
 
         获取技能列表。
         
@@ -2672,7 +2672,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_skill_order_info_async(self, request):
-        """查询订单详情
+        r"""查询订单详情
 
         获取订单详情。
         
@@ -2737,7 +2737,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_skill_order_list_async(self, request):
-        """查询订单列表
+        r"""查询订单列表
 
         获取订单列表。
         
@@ -2808,7 +2808,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_task_async(self, request):
-        """查询作业详情
+        r"""查询作业详情
 
         通过作业ID查询作业详情。
         
@@ -2875,7 +2875,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_upgrade_progress_async(self, request):
-        """获取设备固件升级进度
+        r"""获取设备固件升级进度
 
         获取设备固件升级进度。
         
@@ -2944,7 +2944,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def show_work_space_async(self, request):
-        """获取工作空间详情
+        r"""获取工作空间详情
 
         获取指定workspace_id的工作空间详情，包括创建时间，描述，创建者等信息
         
@@ -3009,7 +3009,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def start_and_stop_deployment_async(self, request):
-        """暂停、继续部署负载
+        r"""暂停、继续部署负载
 
         启动/暂停应用部署。
         
@@ -3076,7 +3076,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def start_and_stop_deployment_pod_async(self, request):
-        """启动/停止部署下的指定实例
+        r"""启动/停止部署下的指定实例
 
         启动/停止部署下的指定实例。
         
@@ -3145,7 +3145,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def switch_node_connection_async(self, request):
-        """启停设备
+        r"""启停设备
 
         该API用于启用停用设备。被停用的设备将无法连接到云端服务，重新启用设备恢复连接。
         
@@ -3214,7 +3214,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def unfreeze_node_async(self, request):
-        """使用运行服务费激活设备
+        r"""使用运行服务费激活设备
 
         使用运行服务费激活设备。
         
@@ -3281,7 +3281,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def update_config_map_async(self, request):
-        """更新配置项
+        r"""更新配置项
 
         根据配置项id更新配置项信息
         
@@ -3348,7 +3348,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def update_deployment_async(self, request):
-        """更新应用部署
+        r"""更新应用部署
 
         更新应用部署相关信息。
         
@@ -3419,7 +3419,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def update_deployment_using_patch_async(self, request):
-        """部分更新应用部署
+        r"""部分更新应用部署
 
         更新应用部署部分信息。
         
@@ -3486,7 +3486,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def update_node_async(self, request):
-        """更新设备信息
+        r"""更新设备信息
 
         更新设备日志配置，标签以及描述。
         
@@ -3553,7 +3553,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def update_node_cert_async(self, request):
-        """更新设备证书
+        r"""更新设备证书
 
         设备出现离线或者证书过期时，可通过该接口更新证书，重新让设备连接到云端
         
@@ -3618,7 +3618,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def update_node_firmware_async(self, request):
-        """升级设备固件
+        r"""升级设备固件
 
         升级设备固件。
         
@@ -3687,7 +3687,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def update_secret_async(self, request):
-        """更新密钥
+        r"""更新密钥
 
         更新密钥
         
@@ -3754,7 +3754,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def update_task_async(self, request):
-        """编辑作业
+        r"""编辑作业
 
         编辑作业。
         
@@ -3823,7 +3823,7 @@ class HiLensAsyncClient(Client):
         return http_info
 
     def update_work_space_async(self, request):
-        """修改工作空间
+        r"""修改工作空间
 
         更改工作空间信息，暂时只能更改描述
         

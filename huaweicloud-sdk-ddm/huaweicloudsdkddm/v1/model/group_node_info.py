@@ -29,7 +29,7 @@ class GroupNodeInfo:
     }
 
     def __init__(self, id=None, name=None, az=None):
-        """GroupNodeInfo
+        r"""GroupNodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class GroupNodeInfo:
 
     @property
     def id(self):
-        """Gets the id of this GroupNodeInfo.
+        r"""Gets the id of this GroupNodeInfo.
 
         节点ID。
 
@@ -65,7 +65,7 @@ class GroupNodeInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GroupNodeInfo.
+        r"""Sets the id of this GroupNodeInfo.
 
         节点ID。
 
@@ -76,7 +76,7 @@ class GroupNodeInfo:
 
     @property
     def name(self):
-        """Gets the name of this GroupNodeInfo.
+        r"""Gets the name of this GroupNodeInfo.
 
         节点名称。
 
@@ -87,7 +87,7 @@ class GroupNodeInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GroupNodeInfo.
+        r"""Sets the name of this GroupNodeInfo.
 
         节点名称。
 
@@ -98,7 +98,7 @@ class GroupNodeInfo:
 
     @property
     def az(self):
-        """Gets the az of this GroupNodeInfo.
+        r"""Gets the az of this GroupNodeInfo.
 
         节点所在AZ。
 
@@ -109,7 +109,7 @@ class GroupNodeInfo:
 
     @az.setter
     def az(self, az):
-        """Sets the az of this GroupNodeInfo.
+        r"""Sets the az of this GroupNodeInfo.
 
         节点所在AZ。
 

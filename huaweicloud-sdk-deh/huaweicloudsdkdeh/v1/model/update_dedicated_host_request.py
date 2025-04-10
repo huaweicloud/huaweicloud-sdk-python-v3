@@ -27,7 +27,7 @@ class UpdateDedicatedHostRequest:
     }
 
     def __init__(self, dedicated_host_id=None, body=None):
-        """UpdateDedicatedHostRequest
+        r"""UpdateDedicatedHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDedicatedHostRequest:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this UpdateDedicatedHostRequest.
+        r"""Gets the dedicated_host_id of this UpdateDedicatedHostRequest.
 
         专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
 
@@ -60,7 +60,7 @@ class UpdateDedicatedHostRequest:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this UpdateDedicatedHostRequest.
+        r"""Sets the dedicated_host_id of this UpdateDedicatedHostRequest.
 
         专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
 
@@ -71,7 +71,7 @@ class UpdateDedicatedHostRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDedicatedHostRequest.
+        r"""Gets the body of this UpdateDedicatedHostRequest.
 
         :return: The body of this UpdateDedicatedHostRequest.
         :rtype: :class:`huaweicloudsdkdeh.v1.ReqUpdateDeh`
@@ -80,7 +80,7 @@ class UpdateDedicatedHostRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDedicatedHostRequest.
+        r"""Sets the body of this UpdateDedicatedHostRequest.
 
         :param body: The body of this UpdateDedicatedHostRequest.
         :type body: :class:`huaweicloudsdkdeh.v1.ReqUpdateDeh`

@@ -25,7 +25,7 @@ class ShowSystemTemplateDetailRequest:
     }
 
     def __init__(self, template_name=None):
-        """ShowSystemTemplateDetailRequest
+        r"""ShowSystemTemplateDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSystemTemplateDetailRequest:
 
     @property
     def template_name(self):
-        """Gets the template_name of this ShowSystemTemplateDetailRequest.
+        r"""Gets the template_name of this ShowSystemTemplateDetailRequest.
 
         系统算子模板名称.。名称必须以字母或数字开头，只能由字母、数字、下划线和中划线组成，长度小于等于64个字符，且不能重名。
 
@@ -53,7 +53,7 @@ class ShowSystemTemplateDetailRequest:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ShowSystemTemplateDetailRequest.
+        r"""Sets the template_name of this ShowSystemTemplateDetailRequest.
 
         系统算子模板名称.。名称必须以字母或数字开头，只能由字母、数字、下划线和中划线组成，长度小于等于64个字符，且不能重名。
 

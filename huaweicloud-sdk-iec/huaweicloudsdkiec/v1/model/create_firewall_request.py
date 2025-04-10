@@ -25,7 +25,7 @@ class CreateFirewallRequest:
     }
 
     def __init__(self, body=None):
-        """CreateFirewallRequest
+        r"""CreateFirewallRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateFirewallRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFirewallRequest.
+        r"""Gets the body of this CreateFirewallRequest.
 
         :return: The body of this CreateFirewallRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.CreateFirewallRequestBody`
@@ -52,7 +52,7 @@ class CreateFirewallRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFirewallRequest.
+        r"""Sets the body of this CreateFirewallRequest.
 
         :param body: The body of this CreateFirewallRequest.
         :type body: :class:`huaweicloudsdkiec.v1.CreateFirewallRequestBody`

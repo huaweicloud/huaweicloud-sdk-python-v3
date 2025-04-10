@@ -27,7 +27,7 @@ class OperateErrorInfo:
     }
 
     def __init__(self, workflow_urn=None, error_detail=None):
-        """OperateErrorInfo
+        r"""OperateErrorInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OperateErrorInfo:
 
     @property
     def workflow_urn(self):
-        """Gets the workflow_urn of this OperateErrorInfo.
+        r"""Gets the workflow_urn of this OperateErrorInfo.
 
         唯一标识ID，流程URN
 
@@ -61,7 +61,7 @@ class OperateErrorInfo:
 
     @workflow_urn.setter
     def workflow_urn(self, workflow_urn):
-        """Sets the workflow_urn of this OperateErrorInfo.
+        r"""Sets the workflow_urn of this OperateErrorInfo.
 
         唯一标识ID，流程URN
 
@@ -72,7 +72,7 @@ class OperateErrorInfo:
 
     @property
     def error_detail(self):
-        """Gets the error_detail of this OperateErrorInfo.
+        r"""Gets the error_detail of this OperateErrorInfo.
 
         错误详情
 
@@ -83,7 +83,7 @@ class OperateErrorInfo:
 
     @error_detail.setter
     def error_detail(self, error_detail):
-        """Sets the error_detail of this OperateErrorInfo.
+        r"""Sets the error_detail of this OperateErrorInfo.
 
         错误详情
 

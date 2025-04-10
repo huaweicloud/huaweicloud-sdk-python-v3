@@ -27,7 +27,7 @@ class UpdateAimMsgSignatureRequest:
     }
 
     def __init__(self, signature_id=None, body=None):
-        """UpdateAimMsgSignatureRequest
+        r"""UpdateAimMsgSignatureRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAimMsgSignatureRequest:
 
     @property
     def signature_id(self):
-        """Gets the signature_id of this UpdateAimMsgSignatureRequest.
+        r"""Gets the signature_id of this UpdateAimMsgSignatureRequest.
 
         签名ID。
 
@@ -60,7 +60,7 @@ class UpdateAimMsgSignatureRequest:
 
     @signature_id.setter
     def signature_id(self, signature_id):
-        """Sets the signature_id of this UpdateAimMsgSignatureRequest.
+        r"""Sets the signature_id of this UpdateAimMsgSignatureRequest.
 
         签名ID。
 
@@ -71,7 +71,7 @@ class UpdateAimMsgSignatureRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAimMsgSignatureRequest.
+        r"""Gets the body of this UpdateAimMsgSignatureRequest.
 
         :return: The body of this UpdateAimMsgSignatureRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.SignatureRequest`
@@ -80,7 +80,7 @@ class UpdateAimMsgSignatureRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAimMsgSignatureRequest.
+        r"""Sets the body of this UpdateAimMsgSignatureRequest.
 
         :param body: The body of this UpdateAimMsgSignatureRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.SignatureRequest`

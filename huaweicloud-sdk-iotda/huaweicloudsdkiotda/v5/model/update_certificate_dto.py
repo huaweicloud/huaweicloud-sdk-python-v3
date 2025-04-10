@@ -27,7 +27,7 @@ class UpdateCertificateDTO:
     }
 
     def __init__(self, provision_enable=None, template_id=None):
-        """UpdateCertificateDTO
+        r"""UpdateCertificateDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateCertificateDTO:
 
     @property
     def provision_enable(self):
-        """Gets the provision_enable of this UpdateCertificateDTO.
+        r"""Gets the provision_enable of this UpdateCertificateDTO.
 
         是否开启自注册能力，当为true时该功能必须配合预调配功能使用，true：是，false：否。
 
@@ -61,7 +61,7 @@ class UpdateCertificateDTO:
 
     @provision_enable.setter
     def provision_enable(self, provision_enable):
-        """Sets the provision_enable of this UpdateCertificateDTO.
+        r"""Sets the provision_enable of this UpdateCertificateDTO.
 
         是否开启自注册能力，当为true时该功能必须配合预调配功能使用，true：是，false：否。
 
@@ -72,7 +72,7 @@ class UpdateCertificateDTO:
 
     @property
     def template_id(self):
-        """Gets the template_id of this UpdateCertificateDTO.
+        r"""Gets the template_id of this UpdateCertificateDTO.
 
         预调配模板ID，该CA证书绑定的预调配模板id，当该字段传null时表示解除绑定关系。
 
@@ -83,7 +83,7 @@ class UpdateCertificateDTO:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this UpdateCertificateDTO.
+        r"""Sets the template_id of this UpdateCertificateDTO.
 
         预调配模板ID，该CA证书绑定的预调配模板id，当该字段传null时表示解除绑定关系。
 

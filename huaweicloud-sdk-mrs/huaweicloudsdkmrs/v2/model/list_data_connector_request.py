@@ -35,7 +35,7 @@ class ListDataConnectorRequest:
     }
 
     def __init__(self, connector_id=None, source_type=None, connector_name=None, limit=None, offset=None, available=None):
-        """ListDataConnectorRequest
+        r"""ListDataConnectorRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListDataConnectorRequest:
 
     @property
     def connector_id(self):
-        """Gets the connector_id of this ListDataConnectorRequest.
+        r"""Gets the connector_id of this ListDataConnectorRequest.
 
         连接id
 
@@ -89,7 +89,7 @@ class ListDataConnectorRequest:
 
     @connector_id.setter
     def connector_id(self, connector_id):
-        """Sets the connector_id of this ListDataConnectorRequest.
+        r"""Sets the connector_id of this ListDataConnectorRequest.
 
         连接id
 
@@ -100,7 +100,7 @@ class ListDataConnectorRequest:
 
     @property
     def source_type(self):
-        """Gets the source_type of this ListDataConnectorRequest.
+        r"""Gets the source_type of this ListDataConnectorRequest.
 
         数据源类别
 
@@ -111,7 +111,7 @@ class ListDataConnectorRequest:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this ListDataConnectorRequest.
+        r"""Sets the source_type of this ListDataConnectorRequest.
 
         数据源类别
 
@@ -122,7 +122,7 @@ class ListDataConnectorRequest:
 
     @property
     def connector_name(self):
-        """Gets the connector_name of this ListDataConnectorRequest.
+        r"""Gets the connector_name of this ListDataConnectorRequest.
 
         数据连接名称
 
@@ -133,7 +133,7 @@ class ListDataConnectorRequest:
 
     @connector_name.setter
     def connector_name(self, connector_name):
-        """Sets the connector_name of this ListDataConnectorRequest.
+        r"""Sets the connector_name of this ListDataConnectorRequest.
 
         数据连接名称
 
@@ -144,7 +144,7 @@ class ListDataConnectorRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDataConnectorRequest.
+        r"""Gets the limit of this ListDataConnectorRequest.
 
         每页返回的资源个数
 
@@ -155,7 +155,7 @@ class ListDataConnectorRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDataConnectorRequest.
+        r"""Sets the limit of this ListDataConnectorRequest.
 
         每页返回的资源个数
 
@@ -166,7 +166,7 @@ class ListDataConnectorRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDataConnectorRequest.
+        r"""Gets the offset of this ListDataConnectorRequest.
 
         分页查询起始偏移量
 
@@ -177,7 +177,7 @@ class ListDataConnectorRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDataConnectorRequest.
+        r"""Sets the offset of this ListDataConnectorRequest.
 
         分页查询起始偏移量
 
@@ -188,7 +188,7 @@ class ListDataConnectorRequest:
 
     @property
     def available(self):
-        """Gets the available of this ListDataConnectorRequest.
+        r"""Gets the available of this ListDataConnectorRequest.
 
         数据连接是否有效
 
@@ -199,7 +199,7 @@ class ListDataConnectorRequest:
 
     @available.setter
     def available(self, available):
-        """Sets the available of this ListDataConnectorRequest.
+        r"""Sets the available of this ListDataConnectorRequest.
 
         数据连接是否有效
 

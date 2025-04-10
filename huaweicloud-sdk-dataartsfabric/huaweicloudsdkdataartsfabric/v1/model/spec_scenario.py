@@ -27,7 +27,7 @@ class SpecScenario:
     }
 
     def __init__(self):
-        """SpecScenario
+        r"""SpecScenario
 
         The model defined in huaweicloud sdk
 

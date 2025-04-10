@@ -26,7 +26,7 @@ class ListProjectSecretsTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ListProjectSecretsTagsResponse
+        r"""ListProjectSecretsTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListProjectSecretsTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListProjectSecretsTagsResponse.
+        r"""Gets the tags of this ListProjectSecretsTagsResponse.
 
         标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含20个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为128个字符。  - value：表示标签值。每个值最大长度255个字符，value之间为“与”的关系。
 
@@ -55,7 +55,7 @@ class ListProjectSecretsTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListProjectSecretsTagsResponse.
+        r"""Sets the tags of this ListProjectSecretsTagsResponse.
 
         标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含20个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为128个字符。  - value：表示标签值。每个值最大长度255个字符，value之间为“与”的关系。
 

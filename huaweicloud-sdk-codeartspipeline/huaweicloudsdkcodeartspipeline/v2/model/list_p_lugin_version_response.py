@@ -32,7 +32,7 @@ class ListPLuginVersionResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, total=None, data=None):
-        """ListPLuginVersionResponse
+        r"""ListPLuginVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListPLuginVersionResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListPLuginVersionResponse.
+        r"""Gets the offset of this ListPLuginVersionResponse.
 
         偏移
 
@@ -76,7 +76,7 @@ class ListPLuginVersionResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPLuginVersionResponse.
+        r"""Sets the offset of this ListPLuginVersionResponse.
 
         偏移
 
@@ -87,7 +87,7 @@ class ListPLuginVersionResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListPLuginVersionResponse.
+        r"""Gets the limit of this ListPLuginVersionResponse.
 
         大小
 
@@ -98,7 +98,7 @@ class ListPLuginVersionResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPLuginVersionResponse.
+        r"""Sets the limit of this ListPLuginVersionResponse.
 
         大小
 
@@ -109,7 +109,7 @@ class ListPLuginVersionResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPLuginVersionResponse.
+        r"""Gets the total of this ListPLuginVersionResponse.
 
         总数
 
@@ -120,7 +120,7 @@ class ListPLuginVersionResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPLuginVersionResponse.
+        r"""Sets the total of this ListPLuginVersionResponse.
 
         总数
 
@@ -131,7 +131,7 @@ class ListPLuginVersionResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListPLuginVersionResponse.
+        r"""Gets the data of this ListPLuginVersionResponse.
 
         结果集
 
@@ -142,7 +142,7 @@ class ListPLuginVersionResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListPLuginVersionResponse.
+        r"""Sets the data of this ListPLuginVersionResponse.
 
         结果集
 

@@ -27,7 +27,7 @@ class CancelScheduleTaskRequest:
     }
 
     def __init__(self, x_language=None, task_id=None):
-        """CancelScheduleTaskRequest
+        r"""CancelScheduleTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CancelScheduleTaskRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CancelScheduleTaskRequest.
+        r"""Gets the x_language of this CancelScheduleTaskRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class CancelScheduleTaskRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CancelScheduleTaskRequest.
+        r"""Sets the x_language of this CancelScheduleTaskRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class CancelScheduleTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CancelScheduleTaskRequest.
+        r"""Gets the task_id of this CancelScheduleTaskRequest.
 
         任务id。
 
@@ -82,7 +82,7 @@ class CancelScheduleTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CancelScheduleTaskRequest.
+        r"""Sets the task_id of this CancelScheduleTaskRequest.
 
         任务id。
 

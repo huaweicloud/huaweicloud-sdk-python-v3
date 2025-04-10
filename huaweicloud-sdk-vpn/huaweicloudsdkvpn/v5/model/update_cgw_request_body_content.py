@@ -27,7 +27,7 @@ class UpdateCgwRequestBodyContent:
     }
 
     def __init__(self, name=None, ca_certificate=None):
-        """UpdateCgwRequestBodyContent
+        r"""UpdateCgwRequestBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateCgwRequestBodyContent:
 
     @property
     def name(self):
-        """Gets the name of this UpdateCgwRequestBodyContent.
+        r"""Gets the name of this UpdateCgwRequestBodyContent.
 
         网关名称
 
@@ -61,7 +61,7 @@ class UpdateCgwRequestBodyContent:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCgwRequestBodyContent.
+        r"""Sets the name of this UpdateCgwRequestBodyContent.
 
         网关名称
 
@@ -72,7 +72,7 @@ class UpdateCgwRequestBodyContent:
 
     @property
     def ca_certificate(self):
-        """Gets the ca_certificate of this UpdateCgwRequestBodyContent.
+        r"""Gets the ca_certificate of this UpdateCgwRequestBodyContent.
 
         :return: The ca_certificate of this UpdateCgwRequestBodyContent.
         :rtype: :class:`huaweicloudsdkvpn.v5.CaCertificateRequest`
@@ -81,7 +81,7 @@ class UpdateCgwRequestBodyContent:
 
     @ca_certificate.setter
     def ca_certificate(self, ca_certificate):
-        """Sets the ca_certificate of this UpdateCgwRequestBodyContent.
+        r"""Sets the ca_certificate of this UpdateCgwRequestBodyContent.
 
         :param ca_certificate: The ca_certificate of this UpdateCgwRequestBodyContent.
         :type ca_certificate: :class:`huaweicloudsdkvpn.v5.CaCertificateRequest`

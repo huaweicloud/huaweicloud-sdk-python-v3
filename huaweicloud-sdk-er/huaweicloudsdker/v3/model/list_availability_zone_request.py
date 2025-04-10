@@ -25,7 +25,7 @@ class ListAvailabilityZoneRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ListAvailabilityZoneRequest
+        r"""ListAvailabilityZoneRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListAvailabilityZoneRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAvailabilityZoneRequest.
+        r"""Gets the instance_id of this ListAvailabilityZoneRequest.
 
         企业路由器ID
 
@@ -54,7 +54,7 @@ class ListAvailabilityZoneRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAvailabilityZoneRequest.
+        r"""Sets the instance_id of this ListAvailabilityZoneRequest.
 
         企业路由器ID
 

@@ -27,7 +27,7 @@ class ShowDomainResourceReportsRequest:
     }
 
     def __init__(self, resource_type=None, frequency=None):
-        """ShowDomainResourceReportsRequest
+        r"""ShowDomainResourceReportsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDomainResourceReportsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ShowDomainResourceReportsRequest.
+        r"""Gets the resource_type of this ShowDomainResourceReportsRequest.
 
         资源类型
 
@@ -59,7 +59,7 @@ class ShowDomainResourceReportsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ShowDomainResourceReportsRequest.
+        r"""Sets the resource_type of this ShowDomainResourceReportsRequest.
 
         资源类型
 
@@ -70,7 +70,7 @@ class ShowDomainResourceReportsRequest:
 
     @property
     def frequency(self):
-        """Gets the frequency of this ShowDomainResourceReportsRequest.
+        r"""Gets the frequency of this ShowDomainResourceReportsRequest.
 
         频率类型
 
@@ -81,7 +81,7 @@ class ShowDomainResourceReportsRequest:
 
     @frequency.setter
     def frequency(self, frequency):
-        """Sets the frequency of this ShowDomainResourceReportsRequest.
+        r"""Sets the frequency of this ShowDomainResourceReportsRequest.
 
         频率类型
 

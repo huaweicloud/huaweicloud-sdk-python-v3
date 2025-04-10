@@ -33,7 +33,7 @@ class BatchShowVehiclesRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, vehicle_id=None, status=None):
-        """BatchShowVehiclesRequest
+        r"""BatchShowVehiclesRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BatchShowVehiclesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchShowVehiclesRequest.
+        r"""Gets the instance_id of this BatchShowVehiclesRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -82,7 +82,7 @@ class BatchShowVehiclesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchShowVehiclesRequest.
+        r"""Sets the instance_id of this BatchShowVehiclesRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -93,7 +93,7 @@ class BatchShowVehiclesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchShowVehiclesRequest.
+        r"""Gets the offset of this BatchShowVehiclesRequest.
 
         **参数说明**：分页查询时的页码， offset大于等于0，默认取值为0。
 
@@ -104,7 +104,7 @@ class BatchShowVehiclesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchShowVehiclesRequest.
+        r"""Sets the offset of this BatchShowVehiclesRequest.
 
         **参数说明**：分页查询时的页码， offset大于等于0，默认取值为0。
 
@@ -115,7 +115,7 @@ class BatchShowVehiclesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchShowVehiclesRequest.
+        r"""Gets the limit of this BatchShowVehiclesRequest.
 
         **参数说明**：分页查询时每页显示的记录数，默认值为10，取值范围为0-20的整数。
 
@@ -126,7 +126,7 @@ class BatchShowVehiclesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchShowVehiclesRequest.
+        r"""Sets the limit of this BatchShowVehiclesRequest.
 
         **参数说明**：分页查询时每页显示的记录数，默认值为10，取值范围为0-20的整数。
 
@@ -137,7 +137,7 @@ class BatchShowVehiclesRequest:
 
     @property
     def vehicle_id(self):
-        """Gets the vehicle_id of this BatchShowVehiclesRequest.
+        r"""Gets the vehicle_id of this BatchShowVehiclesRequest.
 
         **参数说明**：车辆唯一标识符。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -148,7 +148,7 @@ class BatchShowVehiclesRequest:
 
     @vehicle_id.setter
     def vehicle_id(self, vehicle_id):
-        """Sets the vehicle_id of this BatchShowVehiclesRequest.
+        r"""Sets the vehicle_id of this BatchShowVehiclesRequest.
 
         **参数说明**：车辆唯一标识符。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -159,7 +159,7 @@ class BatchShowVehiclesRequest:
 
     @property
     def status(self):
-        """Gets the status of this BatchShowVehiclesRequest.
+        r"""Gets the status of this BatchShowVehiclesRequest.
 
         **参数说明**：设备状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - INITIAL：初始化 
 
@@ -170,7 +170,7 @@ class BatchShowVehiclesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchShowVehiclesRequest.
+        r"""Sets the status of this BatchShowVehiclesRequest.
 
         **参数说明**：设备状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - INITIAL：初始化 
 

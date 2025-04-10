@@ -29,7 +29,7 @@ class NoDataCondition:
     }
 
     def __init__(self, no_data_timeframe=None, no_data_alert_state=None, notify_no_data=None):
-        """NoDataCondition
+        r"""NoDataCondition
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NoDataCondition:
 
     @property
     def no_data_timeframe(self):
-        """Gets the no_data_timeframe of this NoDataCondition.
+        r"""Gets the no_data_timeframe of this NoDataCondition.
 
         无数据周期的个数。
 
@@ -68,7 +68,7 @@ class NoDataCondition:
 
     @no_data_timeframe.setter
     def no_data_timeframe(self, no_data_timeframe):
-        """Sets the no_data_timeframe of this NoDataCondition.
+        r"""Sets the no_data_timeframe of this NoDataCondition.
 
         无数据周期的个数。
 
@@ -79,7 +79,7 @@ class NoDataCondition:
 
     @property
     def no_data_alert_state(self):
-        """Gets the no_data_alert_state of this NoDataCondition.
+        r"""Gets the no_data_alert_state of this NoDataCondition.
 
         数据不足时，阈值规则的状态。 - “no_data”：数据不足并发送通知 - “alerting”：告警 - “ok”：正常 - “pre_state”：保持上一个状态
 
@@ -90,7 +90,7 @@ class NoDataCondition:
 
     @no_data_alert_state.setter
     def no_data_alert_state(self, no_data_alert_state):
-        """Sets the no_data_alert_state of this NoDataCondition.
+        r"""Sets the no_data_alert_state of this NoDataCondition.
 
         数据不足时，阈值规则的状态。 - “no_data”：数据不足并发送通知 - “alerting”：告警 - “ok”：正常 - “pre_state”：保持上一个状态
 
@@ -101,7 +101,7 @@ class NoDataCondition:
 
     @property
     def notify_no_data(self):
-        """Gets the notify_no_data of this NoDataCondition.
+        r"""Gets the notify_no_data of this NoDataCondition.
 
         数据不足是否通知。
 
@@ -112,7 +112,7 @@ class NoDataCondition:
 
     @notify_no_data.setter
     def notify_no_data(self, notify_no_data):
-        """Sets the notify_no_data of this NoDataCondition.
+        r"""Sets the notify_no_data of this NoDataCondition.
 
         数据不足是否通知。
 

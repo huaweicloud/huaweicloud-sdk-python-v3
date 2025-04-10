@@ -25,7 +25,7 @@ class SendRecordsRequest:
     }
 
     def __init__(self, body=None):
-        """SendRecordsRequest
+        r"""SendRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SendRecordsRequest:
 
     @property
     def body(self):
-        """Gets the body of this SendRecordsRequest.
+        r"""Gets the body of this SendRecordsRequest.
 
         :return: The body of this SendRecordsRequest.
         :rtype: :class:`huaweicloudsdkdis.v2.PutRecordsRequest`
@@ -52,7 +52,7 @@ class SendRecordsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SendRecordsRequest.
+        r"""Sets the body of this SendRecordsRequest.
 
         :param body: The body of this SendRecordsRequest.
         :type body: :class:`huaweicloudsdkdis.v2.PutRecordsRequest`

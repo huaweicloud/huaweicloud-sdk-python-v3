@@ -29,7 +29,7 @@ class ExpandGaussMySqlInstanceVolumeRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ExpandGaussMySqlInstanceVolumeRequest
+        r"""ExpandGaussMySqlInstanceVolumeRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ExpandGaussMySqlInstanceVolumeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ExpandGaussMySqlInstanceVolumeRequest.
+        r"""Gets the x_language of this ExpandGaussMySqlInstanceVolumeRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class ExpandGaussMySqlInstanceVolumeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ExpandGaussMySqlInstanceVolumeRequest.
+        r"""Sets the x_language of this ExpandGaussMySqlInstanceVolumeRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class ExpandGaussMySqlInstanceVolumeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExpandGaussMySqlInstanceVolumeRequest.
+        r"""Gets the instance_id of this ExpandGaussMySqlInstanceVolumeRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -89,7 +89,7 @@ class ExpandGaussMySqlInstanceVolumeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExpandGaussMySqlInstanceVolumeRequest.
+        r"""Sets the instance_id of this ExpandGaussMySqlInstanceVolumeRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -100,7 +100,7 @@ class ExpandGaussMySqlInstanceVolumeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExpandGaussMySqlInstanceVolumeRequest.
+        r"""Gets the body of this ExpandGaussMySqlInstanceVolumeRequest.
 
         :return: The body of this ExpandGaussMySqlInstanceVolumeRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlExtendInstanceVolumeRequest`
@@ -109,7 +109,7 @@ class ExpandGaussMySqlInstanceVolumeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExpandGaussMySqlInstanceVolumeRequest.
+        r"""Sets the body of this ExpandGaussMySqlInstanceVolumeRequest.
 
         :param body: The body of this ExpandGaussMySqlInstanceVolumeRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlExtendInstanceVolumeRequest`

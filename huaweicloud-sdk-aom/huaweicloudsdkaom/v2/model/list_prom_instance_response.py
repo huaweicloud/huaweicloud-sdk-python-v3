@@ -26,7 +26,7 @@ class ListPromInstanceResponse(SdkResponse):
     }
 
     def __init__(self, prometheus=None):
-        """ListPromInstanceResponse
+        r"""ListPromInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPromInstanceResponse(SdkResponse):
 
     @property
     def prometheus(self):
-        """Gets the prometheus of this ListPromInstanceResponse.
+        r"""Gets the prometheus of this ListPromInstanceResponse.
 
         Prometheus实例名称列表。
 
@@ -55,7 +55,7 @@ class ListPromInstanceResponse(SdkResponse):
 
     @prometheus.setter
     def prometheus(self, prometheus):
-        """Sets the prometheus of this ListPromInstanceResponse.
+        r"""Sets the prometheus of this ListPromInstanceResponse.
 
         Prometheus实例名称列表。
 

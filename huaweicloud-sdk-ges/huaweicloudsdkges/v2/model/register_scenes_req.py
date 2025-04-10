@@ -25,7 +25,7 @@ class RegisterScenesReq:
     }
 
     def __init__(self, scenes=None):
-        """RegisterScenesReq
+        r"""RegisterScenesReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RegisterScenesReq:
 
     @property
     def scenes(self):
-        """Gets the scenes of this RegisterScenesReq.
+        r"""Gets the scenes of this RegisterScenesReq.
 
         要订阅的具体场景。
 
@@ -54,7 +54,7 @@ class RegisterScenesReq:
 
     @scenes.setter
     def scenes(self, scenes):
-        """Sets the scenes of this RegisterScenesReq.
+        r"""Sets the scenes of this RegisterScenesReq.
 
         要订阅的具体场景。
 

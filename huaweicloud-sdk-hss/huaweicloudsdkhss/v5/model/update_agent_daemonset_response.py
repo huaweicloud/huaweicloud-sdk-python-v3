@@ -24,7 +24,7 @@ class UpdateAgentDaemonsetResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateAgentDaemonsetResponse
+        r"""UpdateAgentDaemonsetResponse
 
         The model defined in huaweicloud sdk
 

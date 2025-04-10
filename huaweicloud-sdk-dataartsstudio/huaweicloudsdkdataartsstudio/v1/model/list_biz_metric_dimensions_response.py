@@ -26,7 +26,7 @@ class ListBizMetricDimensionsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListBizMetricDimensionsResponse
+        r"""ListBizMetricDimensionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBizMetricDimensionsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListBizMetricDimensionsResponse.
+        r"""Gets the data of this ListBizMetricDimensionsResponse.
 
         :return: The data of this ListBizMetricDimensionsResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListBizMetricDimensionsResultData`
@@ -53,7 +53,7 @@ class ListBizMetricDimensionsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListBizMetricDimensionsResponse.
+        r"""Sets the data of this ListBizMetricDimensionsResponse.
 
         :param data: The data of this ListBizMetricDimensionsResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListBizMetricDimensionsResultData`

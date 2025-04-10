@@ -27,7 +27,7 @@ class CreateFactorySupplementDataInstanceRequestBodySupplementDataInstanceTime:
     }
 
     def __init__(self, days=None, time_of_day=None):
-        """CreateFactorySupplementDataInstanceRequestBodySupplementDataInstanceTime
+        r"""CreateFactorySupplementDataInstanceRequestBodySupplementDataInstanceTime
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateFactorySupplementDataInstanceRequestBodySupplementDataInstanceTime:
 
     @property
     def days(self):
-        """Gets the days of this CreateFactorySupplementDataInstanceRequestBodySupplementDataInstanceTime.
+        r"""Gets the days of this CreateFactorySupplementDataInstanceRequestBodySupplementDataInstanceTime.
 
         离散的天
 
@@ -61,7 +61,7 @@ class CreateFactorySupplementDataInstanceRequestBodySupplementDataInstanceTime:
 
     @days.setter
     def days(self, days):
-        """Sets the days of this CreateFactorySupplementDataInstanceRequestBodySupplementDataInstanceTime.
+        r"""Sets the days of this CreateFactorySupplementDataInstanceRequestBodySupplementDataInstanceTime.
 
         离散的天
 
@@ -72,7 +72,7 @@ class CreateFactorySupplementDataInstanceRequestBodySupplementDataInstanceTime:
 
     @property
     def time_of_day(self):
-        """Gets the time_of_day of this CreateFactorySupplementDataInstanceRequestBodySupplementDataInstanceTime.
+        r"""Gets the time_of_day of this CreateFactorySupplementDataInstanceRequestBodySupplementDataInstanceTime.
 
         指定天中的时间段
 
@@ -83,7 +83,7 @@ class CreateFactorySupplementDataInstanceRequestBodySupplementDataInstanceTime:
 
     @time_of_day.setter
     def time_of_day(self, time_of_day):
-        """Sets the time_of_day of this CreateFactorySupplementDataInstanceRequestBodySupplementDataInstanceTime.
+        r"""Sets the time_of_day of this CreateFactorySupplementDataInstanceRequestBodySupplementDataInstanceTime.
 
         指定天中的时间段
 

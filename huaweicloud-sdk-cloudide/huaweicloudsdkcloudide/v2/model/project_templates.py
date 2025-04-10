@@ -45,7 +45,7 @@ class ProjectTemplates:
     }
 
     def __init__(self, description=None, display_name=None, logo=None, name=None, path=None, project_type=None, region=None, source=None, tags=None, template_id=None, arch=None):
-        """ProjectTemplates
+        r"""ProjectTemplates
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ProjectTemplates:
 
     @property
     def description(self):
-        """Gets the description of this ProjectTemplates.
+        r"""Gets the description of this ProjectTemplates.
 
         描述
 
@@ -124,7 +124,7 @@ class ProjectTemplates:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProjectTemplates.
+        r"""Sets the description of this ProjectTemplates.
 
         描述
 
@@ -135,7 +135,7 @@ class ProjectTemplates:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ProjectTemplates.
+        r"""Gets the display_name of this ProjectTemplates.
 
         显示名
 
@@ -146,7 +146,7 @@ class ProjectTemplates:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ProjectTemplates.
+        r"""Sets the display_name of this ProjectTemplates.
 
         显示名
 
@@ -157,7 +157,7 @@ class ProjectTemplates:
 
     @property
     def logo(self):
-        """Gets the logo of this ProjectTemplates.
+        r"""Gets the logo of this ProjectTemplates.
 
         图标
 
@@ -168,7 +168,7 @@ class ProjectTemplates:
 
     @logo.setter
     def logo(self, logo):
-        """Sets the logo of this ProjectTemplates.
+        r"""Sets the logo of this ProjectTemplates.
 
         图标
 
@@ -179,7 +179,7 @@ class ProjectTemplates:
 
     @property
     def name(self):
-        """Gets the name of this ProjectTemplates.
+        r"""Gets the name of this ProjectTemplates.
 
         模板名
 
@@ -190,7 +190,7 @@ class ProjectTemplates:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProjectTemplates.
+        r"""Sets the name of this ProjectTemplates.
 
         模板名
 
@@ -201,7 +201,7 @@ class ProjectTemplates:
 
     @property
     def path(self):
-        """Gets the path of this ProjectTemplates.
+        r"""Gets the path of this ProjectTemplates.
 
         路径
 
@@ -212,7 +212,7 @@ class ProjectTemplates:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ProjectTemplates.
+        r"""Sets the path of this ProjectTemplates.
 
         路径
 
@@ -223,7 +223,7 @@ class ProjectTemplates:
 
     @property
     def project_type(self):
-        """Gets the project_type of this ProjectTemplates.
+        r"""Gets the project_type of this ProjectTemplates.
 
         项目类型
 
@@ -234,7 +234,7 @@ class ProjectTemplates:
 
     @project_type.setter
     def project_type(self, project_type):
-        """Sets the project_type of this ProjectTemplates.
+        r"""Sets the project_type of this ProjectTemplates.
 
         项目类型
 
@@ -245,7 +245,7 @@ class ProjectTemplates:
 
     @property
     def region(self):
-        """Gets the region of this ProjectTemplates.
+        r"""Gets the region of this ProjectTemplates.
 
         区域
 
@@ -256,7 +256,7 @@ class ProjectTemplates:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ProjectTemplates.
+        r"""Sets the region of this ProjectTemplates.
 
         区域
 
@@ -267,7 +267,7 @@ class ProjectTemplates:
 
     @property
     def source(self):
-        """Gets the source of this ProjectTemplates.
+        r"""Gets the source of this ProjectTemplates.
 
         :return: The source of this ProjectTemplates.
         :rtype: :class:`huaweicloudsdkcloudide.v2.SourceStorage`
@@ -276,7 +276,7 @@ class ProjectTemplates:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ProjectTemplates.
+        r"""Sets the source of this ProjectTemplates.
 
         :param source: The source of this ProjectTemplates.
         :type source: :class:`huaweicloudsdkcloudide.v2.SourceStorage`
@@ -285,7 +285,7 @@ class ProjectTemplates:
 
     @property
     def tags(self):
-        """Gets the tags of this ProjectTemplates.
+        r"""Gets the tags of this ProjectTemplates.
 
         tags
 
@@ -296,7 +296,7 @@ class ProjectTemplates:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ProjectTemplates.
+        r"""Sets the tags of this ProjectTemplates.
 
         tags
 
@@ -307,7 +307,7 @@ class ProjectTemplates:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ProjectTemplates.
+        r"""Gets the template_id of this ProjectTemplates.
 
         模板id
 
@@ -318,7 +318,7 @@ class ProjectTemplates:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ProjectTemplates.
+        r"""Sets the template_id of this ProjectTemplates.
 
         模板id
 
@@ -329,7 +329,7 @@ class ProjectTemplates:
 
     @property
     def arch(self):
-        """Gets the arch of this ProjectTemplates.
+        r"""Gets the arch of this ProjectTemplates.
 
         cpu架构
 
@@ -340,7 +340,7 @@ class ProjectTemplates:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this ProjectTemplates.
+        r"""Sets the arch of this ProjectTemplates.
 
         cpu架构
 

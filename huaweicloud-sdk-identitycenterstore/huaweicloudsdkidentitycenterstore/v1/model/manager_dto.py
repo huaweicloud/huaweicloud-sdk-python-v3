@@ -25,7 +25,7 @@ class ManagerDto:
     }
 
     def __init__(self, value=None):
-        """ManagerDto
+        r"""ManagerDto
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ManagerDto:
 
     @property
     def value(self):
-        """Gets the value of this ManagerDto.
+        r"""Gets the value of this ManagerDto.
 
         经理
 
@@ -54,7 +54,7 @@ class ManagerDto:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ManagerDto.
+        r"""Sets the value of this ManagerDto.
 
         经理
 

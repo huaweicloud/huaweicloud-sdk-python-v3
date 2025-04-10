@@ -28,7 +28,7 @@ class CreateDisasterRecoveryResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, disaster_recovery_id=None):
-        """CreateDisasterRecoveryResponse
+        r"""CreateDisasterRecoveryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateDisasterRecoveryResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateDisasterRecoveryResponse.
+        r"""Gets the job_id of this CreateDisasterRecoveryResponse.
 
         搭建容灾关系的工作ID。
 
@@ -62,7 +62,7 @@ class CreateDisasterRecoveryResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateDisasterRecoveryResponse.
+        r"""Sets the job_id of this CreateDisasterRecoveryResponse.
 
         搭建容灾关系的工作ID。
 
@@ -73,7 +73,7 @@ class CreateDisasterRecoveryResponse(SdkResponse):
 
     @property
     def disaster_recovery_id(self):
-        """Gets the disaster_recovery_id of this CreateDisasterRecoveryResponse.
+        r"""Gets the disaster_recovery_id of this CreateDisasterRecoveryResponse.
 
         容灾ID。
 
@@ -84,7 +84,7 @@ class CreateDisasterRecoveryResponse(SdkResponse):
 
     @disaster_recovery_id.setter
     def disaster_recovery_id(self, disaster_recovery_id):
-        """Sets the disaster_recovery_id of this CreateDisasterRecoveryResponse.
+        r"""Sets the disaster_recovery_id of this CreateDisasterRecoveryResponse.
 
         容灾ID。
 

@@ -43,7 +43,7 @@ class ListSupportMasksRequest:
     }
 
     def __init__(self, limit=None, offset=None, marker=None, page_reverse=None, fields=None, sort_key=None, sort_dir=None, id=None, ip_version=None, mask=None):
-        """ListSupportMasksRequest
+        r"""ListSupportMasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListSupportMasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSupportMasksRequest.
+        r"""Gets the limit of this ListSupportMasksRequest.
 
         每页条数
 
@@ -117,7 +117,7 @@ class ListSupportMasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSupportMasksRequest.
+        r"""Sets the limit of this ListSupportMasksRequest.
 
         每页条数
 
@@ -128,7 +128,7 @@ class ListSupportMasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSupportMasksRequest.
+        r"""Gets the offset of this ListSupportMasksRequest.
 
         分页起始点
 
@@ -139,7 +139,7 @@ class ListSupportMasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSupportMasksRequest.
+        r"""Sets the offset of this ListSupportMasksRequest.
 
         分页起始点
 
@@ -150,7 +150,7 @@ class ListSupportMasksRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSupportMasksRequest.
+        r"""Gets the marker of this ListSupportMasksRequest.
 
         分页起始点
 
@@ -161,7 +161,7 @@ class ListSupportMasksRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSupportMasksRequest.
+        r"""Sets the marker of this ListSupportMasksRequest.
 
         分页起始点
 
@@ -172,7 +172,7 @@ class ListSupportMasksRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListSupportMasksRequest.
+        r"""Gets the page_reverse of this ListSupportMasksRequest.
 
         翻页方向
 
@@ -183,7 +183,7 @@ class ListSupportMasksRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListSupportMasksRequest.
+        r"""Sets the page_reverse of this ListSupportMasksRequest.
 
         翻页方向
 
@@ -194,7 +194,7 @@ class ListSupportMasksRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListSupportMasksRequest.
+        r"""Gets the fields of this ListSupportMasksRequest.
 
         :return: The fields of this ListSupportMasksRequest.
         :rtype: list[str]
@@ -203,7 +203,7 @@ class ListSupportMasksRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListSupportMasksRequest.
+        r"""Sets the fields of this ListSupportMasksRequest.
 
         :param fields: The fields of this ListSupportMasksRequest.
         :type fields: list[str]
@@ -212,7 +212,7 @@ class ListSupportMasksRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListSupportMasksRequest.
+        r"""Gets the sort_key of this ListSupportMasksRequest.
 
         按照sort_key指定的字段排序
 
@@ -223,7 +223,7 @@ class ListSupportMasksRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListSupportMasksRequest.
+        r"""Sets the sort_key of this ListSupportMasksRequest.
 
         按照sort_key指定的字段排序
 
@@ -234,7 +234,7 @@ class ListSupportMasksRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListSupportMasksRequest.
+        r"""Gets the sort_dir of this ListSupportMasksRequest.
 
         排序的方向，倒序或者正序
 
@@ -245,7 +245,7 @@ class ListSupportMasksRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListSupportMasksRequest.
+        r"""Sets the sort_dir of this ListSupportMasksRequest.
 
         排序的方向，倒序或者正序
 
@@ -256,7 +256,7 @@ class ListSupportMasksRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListSupportMasksRequest.
+        r"""Gets the id of this ListSupportMasksRequest.
 
         :return: The id of this ListSupportMasksRequest.
         :rtype: list[str]
@@ -265,7 +265,7 @@ class ListSupportMasksRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSupportMasksRequest.
+        r"""Sets the id of this ListSupportMasksRequest.
 
         :param id: The id of this ListSupportMasksRequest.
         :type id: list[str]
@@ -274,7 +274,7 @@ class ListSupportMasksRequest:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this ListSupportMasksRequest.
+        r"""Gets the ip_version of this ListSupportMasksRequest.
 
         :return: The ip_version of this ListSupportMasksRequest.
         :rtype: list[int]
@@ -283,7 +283,7 @@ class ListSupportMasksRequest:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this ListSupportMasksRequest.
+        r"""Sets the ip_version of this ListSupportMasksRequest.
 
         :param ip_version: The ip_version of this ListSupportMasksRequest.
         :type ip_version: list[int]
@@ -292,7 +292,7 @@ class ListSupportMasksRequest:
 
     @property
     def mask(self):
-        """Gets the mask of this ListSupportMasksRequest.
+        r"""Gets the mask of this ListSupportMasksRequest.
 
         :return: The mask of this ListSupportMasksRequest.
         :rtype: list[int]
@@ -301,7 +301,7 @@ class ListSupportMasksRequest:
 
     @mask.setter
     def mask(self, mask):
-        """Sets the mask of this ListSupportMasksRequest.
+        r"""Sets the mask of this ListSupportMasksRequest.
 
         :param mask: The mask of this ListSupportMasksRequest.
         :type mask: list[int]

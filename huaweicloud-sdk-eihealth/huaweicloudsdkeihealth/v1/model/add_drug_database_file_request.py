@@ -27,7 +27,7 @@ class AddDrugDatabaseFileRequest:
     }
 
     def __init__(self, database_id=None, body=None):
-        """AddDrugDatabaseFileRequest
+        r"""AddDrugDatabaseFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddDrugDatabaseFileRequest:
 
     @property
     def database_id(self):
-        """Gets the database_id of this AddDrugDatabaseFileRequest.
+        r"""Gets the database_id of this AddDrugDatabaseFileRequest.
 
         数据库id
 
@@ -60,7 +60,7 @@ class AddDrugDatabaseFileRequest:
 
     @database_id.setter
     def database_id(self, database_id):
-        """Sets the database_id of this AddDrugDatabaseFileRequest.
+        r"""Sets the database_id of this AddDrugDatabaseFileRequest.
 
         数据库id
 
@@ -71,7 +71,7 @@ class AddDrugDatabaseFileRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddDrugDatabaseFileRequest.
+        r"""Gets the body of this AddDrugDatabaseFileRequest.
 
         :return: The body of this AddDrugDatabaseFileRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.AddDrugDatabaseFileReq`
@@ -80,7 +80,7 @@ class AddDrugDatabaseFileRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddDrugDatabaseFileRequest.
+        r"""Sets the body of this AddDrugDatabaseFileRequest.
 
         :param body: The body of this AddDrugDatabaseFileRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.AddDrugDatabaseFileReq`

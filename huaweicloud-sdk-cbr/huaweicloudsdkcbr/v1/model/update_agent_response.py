@@ -26,7 +26,7 @@ class UpdateAgentResponse(SdkResponse):
     }
 
     def __init__(self, agent=None):
-        """UpdateAgentResponse
+        r"""UpdateAgentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAgentResponse(SdkResponse):
 
     @property
     def agent(self):
-        """Gets the agent of this UpdateAgentResponse.
+        r"""Gets the agent of this UpdateAgentResponse.
 
         :return: The agent of this UpdateAgentResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.Agent`
@@ -53,7 +53,7 @@ class UpdateAgentResponse(SdkResponse):
 
     @agent.setter
     def agent(self, agent):
-        """Sets the agent of this UpdateAgentResponse.
+        r"""Sets the agent of this UpdateAgentResponse.
 
         :param agent: The agent of this UpdateAgentResponse.
         :type agent: :class:`huaweicloudsdkcbr.v1.Agent`

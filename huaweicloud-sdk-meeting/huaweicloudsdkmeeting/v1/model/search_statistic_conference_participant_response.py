@@ -32,7 +32,7 @@ class SearchStatisticConferenceParticipantResponse(SdkResponse):
     }
 
     def __init__(self, count=None, limit=None, offset=None, data=None):
-        """SearchStatisticConferenceParticipantResponse
+        r"""SearchStatisticConferenceParticipantResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchStatisticConferenceParticipantResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchStatisticConferenceParticipantResponse.
+        r"""Gets the count of this SearchStatisticConferenceParticipantResponse.
 
         总记录数。
 
@@ -76,7 +76,7 @@ class SearchStatisticConferenceParticipantResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchStatisticConferenceParticipantResponse.
+        r"""Sets the count of this SearchStatisticConferenceParticipantResponse.
 
         总记录数。
 
@@ -87,7 +87,7 @@ class SearchStatisticConferenceParticipantResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchStatisticConferenceParticipantResponse.
+        r"""Gets the limit of this SearchStatisticConferenceParticipantResponse.
 
         查询条目数量。
 
@@ -98,7 +98,7 @@ class SearchStatisticConferenceParticipantResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchStatisticConferenceParticipantResponse.
+        r"""Sets the limit of this SearchStatisticConferenceParticipantResponse.
 
         查询条目数量。
 
@@ -109,7 +109,7 @@ class SearchStatisticConferenceParticipantResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchStatisticConferenceParticipantResponse.
+        r"""Gets the offset of this SearchStatisticConferenceParticipantResponse.
 
         查询偏移量。
 
@@ -120,7 +120,7 @@ class SearchStatisticConferenceParticipantResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchStatisticConferenceParticipantResponse.
+        r"""Sets the offset of this SearchStatisticConferenceParticipantResponse.
 
         查询偏移量。
 
@@ -131,7 +131,7 @@ class SearchStatisticConferenceParticipantResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchStatisticConferenceParticipantResponse.
+        r"""Gets the data of this SearchStatisticConferenceParticipantResponse.
 
         会议与会数据按时间点统计的查询结果数组。
 
@@ -142,7 +142,7 @@ class SearchStatisticConferenceParticipantResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchStatisticConferenceParticipantResponse.
+        r"""Sets the data of this SearchStatisticConferenceParticipantResponse.
 
         会议与会数据按时间点统计的查询结果数组。
 

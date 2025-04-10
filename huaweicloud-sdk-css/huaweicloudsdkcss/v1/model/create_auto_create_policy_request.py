@@ -27,7 +27,7 @@ class CreateAutoCreatePolicyRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateAutoCreatePolicyRequest
+        r"""CreateAutoCreatePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAutoCreatePolicyRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateAutoCreatePolicyRequest.
+        r"""Gets the cluster_id of this CreateAutoCreatePolicyRequest.
 
         指定要自动创建快照的集群ID。
 
@@ -60,7 +60,7 @@ class CreateAutoCreatePolicyRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateAutoCreatePolicyRequest.
+        r"""Sets the cluster_id of this CreateAutoCreatePolicyRequest.
 
         指定要自动创建快照的集群ID。
 
@@ -71,7 +71,7 @@ class CreateAutoCreatePolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAutoCreatePolicyRequest.
+        r"""Gets the body of this CreateAutoCreatePolicyRequest.
 
         :return: The body of this CreateAutoCreatePolicyRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.SetRDSBackupCnfReq`
@@ -80,7 +80,7 @@ class CreateAutoCreatePolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAutoCreatePolicyRequest.
+        r"""Sets the body of this CreateAutoCreatePolicyRequest.
 
         :param body: The body of this CreateAutoCreatePolicyRequest.
         :type body: :class:`huaweicloudsdkcss.v1.SetRDSBackupCnfReq`

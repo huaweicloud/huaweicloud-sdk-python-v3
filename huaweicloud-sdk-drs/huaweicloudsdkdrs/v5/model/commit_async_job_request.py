@@ -27,7 +27,7 @@ class CommitAsyncJobRequest:
     }
 
     def __init__(self, async_job_id=None, x_language=None):
-        """CommitAsyncJobRequest
+        r"""CommitAsyncJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CommitAsyncJobRequest:
 
     @property
     def async_job_id(self):
-        """Gets the async_job_id of this CommitAsyncJobRequest.
+        r"""Gets the async_job_id of this CommitAsyncJobRequest.
 
         批量异步创建的任务ID，由创建批量异步任务接口返回。
 
@@ -60,7 +60,7 @@ class CommitAsyncJobRequest:
 
     @async_job_id.setter
     def async_job_id(self, async_job_id):
-        """Sets the async_job_id of this CommitAsyncJobRequest.
+        r"""Sets the async_job_id of this CommitAsyncJobRequest.
 
         批量异步创建的任务ID，由创建批量异步任务接口返回。
 
@@ -71,7 +71,7 @@ class CommitAsyncJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CommitAsyncJobRequest.
+        r"""Gets the x_language of this CommitAsyncJobRequest.
 
         请求语言类型。
 
@@ -82,7 +82,7 @@ class CommitAsyncJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CommitAsyncJobRequest.
+        r"""Sets the x_language of this CommitAsyncJobRequest.
 
         请求语言类型。
 

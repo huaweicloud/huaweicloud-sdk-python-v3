@@ -51,7 +51,7 @@ class DrugJobDto:
     }
 
     def __init__(self, id=None, name=None, labels=None, status=None, type=None, create_time=None, finish_time=None, start_time=None, failed_message=None, user_name=None, output_dir=None, expect_charge_num=None, real_charge_num=None, progress=None):
-        """DrugJobDto
+        r"""DrugJobDto
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class DrugJobDto:
 
     @property
     def id(self):
-        """Gets the id of this DrugJobDto.
+        r"""Gets the id of this DrugJobDto.
 
         作业id
 
@@ -145,7 +145,7 @@ class DrugJobDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DrugJobDto.
+        r"""Sets the id of this DrugJobDto.
 
         作业id
 
@@ -156,7 +156,7 @@ class DrugJobDto:
 
     @property
     def name(self):
-        """Gets the name of this DrugJobDto.
+        r"""Gets the name of this DrugJobDto.
 
         作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -167,7 +167,7 @@ class DrugJobDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DrugJobDto.
+        r"""Sets the name of this DrugJobDto.
 
         作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -178,7 +178,7 @@ class DrugJobDto:
 
     @property
     def labels(self):
-        """Gets the labels of this DrugJobDto.
+        r"""Gets the labels of this DrugJobDto.
 
         作业标签
 
@@ -189,7 +189,7 @@ class DrugJobDto:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this DrugJobDto.
+        r"""Sets the labels of this DrugJobDto.
 
         作业标签
 
@@ -200,7 +200,7 @@ class DrugJobDto:
 
     @property
     def status(self):
-        """Gets the status of this DrugJobDto.
+        r"""Gets the status of this DrugJobDto.
 
         作业状态
 
@@ -211,7 +211,7 @@ class DrugJobDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DrugJobDto.
+        r"""Sets the status of this DrugJobDto.
 
         作业状态
 
@@ -222,7 +222,7 @@ class DrugJobDto:
 
     @property
     def type(self):
-        """Gets the type of this DrugJobDto.
+        r"""Gets the type of this DrugJobDto.
 
         作业类型
 
@@ -233,7 +233,7 @@ class DrugJobDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DrugJobDto.
+        r"""Sets the type of this DrugJobDto.
 
         作业类型
 
@@ -244,7 +244,7 @@ class DrugJobDto:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DrugJobDto.
+        r"""Gets the create_time of this DrugJobDto.
 
         作业创建时间
 
@@ -255,7 +255,7 @@ class DrugJobDto:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DrugJobDto.
+        r"""Sets the create_time of this DrugJobDto.
 
         作业创建时间
 
@@ -266,7 +266,7 @@ class DrugJobDto:
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this DrugJobDto.
+        r"""Gets the finish_time of this DrugJobDto.
 
         作业结束时间
 
@@ -277,7 +277,7 @@ class DrugJobDto:
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this DrugJobDto.
+        r"""Sets the finish_time of this DrugJobDto.
 
         作业结束时间
 
@@ -288,7 +288,7 @@ class DrugJobDto:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DrugJobDto.
+        r"""Gets the start_time of this DrugJobDto.
 
         作业开始时间
 
@@ -299,7 +299,7 @@ class DrugJobDto:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DrugJobDto.
+        r"""Sets the start_time of this DrugJobDto.
 
         作业开始时间
 
@@ -310,7 +310,7 @@ class DrugJobDto:
 
     @property
     def failed_message(self):
-        """Gets the failed_message of this DrugJobDto.
+        r"""Gets the failed_message of this DrugJobDto.
 
         失败提示，当作业执行失败时会返回
 
@@ -321,7 +321,7 @@ class DrugJobDto:
 
     @failed_message.setter
     def failed_message(self, failed_message):
-        """Sets the failed_message of this DrugJobDto.
+        r"""Sets the failed_message of this DrugJobDto.
 
         失败提示，当作业执行失败时会返回
 
@@ -332,7 +332,7 @@ class DrugJobDto:
 
     @property
     def user_name(self):
-        """Gets the user_name of this DrugJobDto.
+        r"""Gets the user_name of this DrugJobDto.
 
         创建任务的用户名称
 
@@ -343,7 +343,7 @@ class DrugJobDto:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this DrugJobDto.
+        r"""Sets the user_name of this DrugJobDto.
 
         创建任务的用户名称
 
@@ -354,7 +354,7 @@ class DrugJobDto:
 
     @property
     def output_dir(self):
-        """Gets the output_dir of this DrugJobDto.
+        r"""Gets the output_dir of this DrugJobDto.
 
         作业结果输出目录
 
@@ -365,7 +365,7 @@ class DrugJobDto:
 
     @output_dir.setter
     def output_dir(self, output_dir):
-        """Sets the output_dir of this DrugJobDto.
+        r"""Sets the output_dir of this DrugJobDto.
 
         作业结果输出目录
 
@@ -376,7 +376,7 @@ class DrugJobDto:
 
     @property
     def expect_charge_num(self):
-        """Gets the expect_charge_num of this DrugJobDto.
+        r"""Gets the expect_charge_num of this DrugJobDto.
 
         预估功能调用消耗次数
 
@@ -387,7 +387,7 @@ class DrugJobDto:
 
     @expect_charge_num.setter
     def expect_charge_num(self, expect_charge_num):
-        """Sets the expect_charge_num of this DrugJobDto.
+        r"""Sets the expect_charge_num of this DrugJobDto.
 
         预估功能调用消耗次数
 
@@ -398,7 +398,7 @@ class DrugJobDto:
 
     @property
     def real_charge_num(self):
-        """Gets the real_charge_num of this DrugJobDto.
+        r"""Gets the real_charge_num of this DrugJobDto.
 
         实际功能调用消耗次数
 
@@ -409,7 +409,7 @@ class DrugJobDto:
 
     @real_charge_num.setter
     def real_charge_num(self, real_charge_num):
-        """Sets the real_charge_num of this DrugJobDto.
+        r"""Sets the real_charge_num of this DrugJobDto.
 
         实际功能调用消耗次数
 
@@ -420,7 +420,7 @@ class DrugJobDto:
 
     @property
     def progress(self):
-        """Gets the progress of this DrugJobDto.
+        r"""Gets the progress of this DrugJobDto.
 
         :return: The progress of this DrugJobDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.Progress`
@@ -429,7 +429,7 @@ class DrugJobDto:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this DrugJobDto.
+        r"""Sets the progress of this DrugJobDto.
 
         :param progress: The progress of this DrugJobDto.
         :type progress: :class:`huaweicloudsdkeihealth.v1.Progress`

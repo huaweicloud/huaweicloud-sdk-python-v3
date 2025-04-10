@@ -29,7 +29,7 @@ class PlatformPara:
     }
 
     def __init__(self, address=None, username=None, passwd=None):
-        """PlatformPara
+        r"""PlatformPara
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PlatformPara:
 
     @property
     def address(self):
-        """Gets the address of this PlatformPara.
+        r"""Gets the address of this PlatformPara.
 
         **参数说明**：第三方业务平台的ip地址和端口。
 
@@ -68,7 +68,7 @@ class PlatformPara:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this PlatformPara.
+        r"""Sets the address of this PlatformPara.
 
         **参数说明**：第三方业务平台的ip地址和端口。
 
@@ -79,7 +79,7 @@ class PlatformPara:
 
     @property
     def username(self):
-        """Gets the username of this PlatformPara.
+        r"""Gets the username of this PlatformPara.
 
         **参数说明**：鉴权用户名。
 
@@ -90,7 +90,7 @@ class PlatformPara:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this PlatformPara.
+        r"""Sets the username of this PlatformPara.
 
         **参数说明**：鉴权用户名。
 
@@ -101,7 +101,7 @@ class PlatformPara:
 
     @property
     def passwd(self):
-        """Gets the passwd of this PlatformPara.
+        r"""Gets the passwd of this PlatformPara.
 
         **参数说明**：鉴权密码，ITS800或者ATLAS500的密码
 
@@ -112,7 +112,7 @@ class PlatformPara:
 
     @passwd.setter
     def passwd(self, passwd):
-        """Sets the passwd of this PlatformPara.
+        r"""Sets the passwd of this PlatformPara.
 
         **参数说明**：鉴权密码，ITS800或者ATLAS500的密码
 

@@ -28,7 +28,7 @@ class ListBatchTasksResponse(SdkResponse):
     }
 
     def __init__(self, batchtasks=None, page=None):
-        """ListBatchTasksResponse
+        r"""ListBatchTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBatchTasksResponse(SdkResponse):
 
     @property
     def batchtasks(self):
-        """Gets the batchtasks of this ListBatchTasksResponse.
+        r"""Gets the batchtasks of this ListBatchTasksResponse.
 
         批量任务列表。
 
@@ -62,7 +62,7 @@ class ListBatchTasksResponse(SdkResponse):
 
     @batchtasks.setter
     def batchtasks(self, batchtasks):
-        """Sets the batchtasks of this ListBatchTasksResponse.
+        r"""Sets the batchtasks of this ListBatchTasksResponse.
 
         批量任务列表。
 
@@ -73,7 +73,7 @@ class ListBatchTasksResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ListBatchTasksResponse.
+        r"""Gets the page of this ListBatchTasksResponse.
 
         :return: The page of this ListBatchTasksResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Page`
@@ -82,7 +82,7 @@ class ListBatchTasksResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListBatchTasksResponse.
+        r"""Sets the page of this ListBatchTasksResponse.
 
         :param page: The page of this ListBatchTasksResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.Page`

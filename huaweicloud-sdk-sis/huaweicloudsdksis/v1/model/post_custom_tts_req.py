@@ -27,7 +27,7 @@ class PostCustomTTSReq:
     }
 
     def __init__(self, text=None, config=None):
-        """PostCustomTTSReq
+        r"""PostCustomTTSReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PostCustomTTSReq:
 
     @property
     def text(self):
-        """Gets the text of this PostCustomTTSReq.
+        r"""Gets the text of this PostCustomTTSReq.
 
         待合成的文本，文本长度限制小于500字符。
 
@@ -60,7 +60,7 @@ class PostCustomTTSReq:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this PostCustomTTSReq.
+        r"""Sets the text of this PostCustomTTSReq.
 
         待合成的文本，文本长度限制小于500字符。
 
@@ -71,7 +71,7 @@ class PostCustomTTSReq:
 
     @property
     def config(self):
-        """Gets the config of this PostCustomTTSReq.
+        r"""Gets the config of this PostCustomTTSReq.
 
         :return: The config of this PostCustomTTSReq.
         :rtype: :class:`huaweicloudsdksis.v1.TtsConfig`
@@ -80,7 +80,7 @@ class PostCustomTTSReq:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this PostCustomTTSReq.
+        r"""Sets the config of this PostCustomTTSReq.
 
         :param config: The config of this PostCustomTTSReq.
         :type config: :class:`huaweicloudsdksis.v1.TtsConfig`

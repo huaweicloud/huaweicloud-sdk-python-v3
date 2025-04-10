@@ -39,7 +39,7 @@ class CreateClouddcnSubnetOption:
     }
 
     def __init__(self, name=None, description=None, cidr=None, vpc_id=None, gateway_ip=None, dns_nameservers=None, availability_zone=None, tags=None):
-        """CreateClouddcnSubnetOption
+        r"""CreateClouddcnSubnetOption
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class CreateClouddcnSubnetOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateClouddcnSubnetOption.
+        r"""Gets the name of this CreateClouddcnSubnetOption.
 
         功能说明：clouddcn子网名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -99,7 +99,7 @@ class CreateClouddcnSubnetOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateClouddcnSubnetOption.
+        r"""Sets the name of this CreateClouddcnSubnetOption.
 
         功能说明：clouddcn子网名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -110,7 +110,7 @@ class CreateClouddcnSubnetOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateClouddcnSubnetOption.
+        r"""Gets the description of this CreateClouddcnSubnetOption.
 
         功能说明：clouddcn子网描述 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -121,7 +121,7 @@ class CreateClouddcnSubnetOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateClouddcnSubnetOption.
+        r"""Sets the description of this CreateClouddcnSubnetOption.
 
         功能说明：clouddcn子网描述 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -132,7 +132,7 @@ class CreateClouddcnSubnetOption:
 
     @property
     def cidr(self):
-        """Gets the cidr of this CreateClouddcnSubnetOption.
+        r"""Gets the cidr of this CreateClouddcnSubnetOption.
 
         功能说明：clouddcn子网的网段 取值范围：必须在vpc对应cidr范围内，不能和同vpc下其他普通子网的网段冲突 约束：必须是cidr格式。掩码长度不能大于28
 
@@ -143,7 +143,7 @@ class CreateClouddcnSubnetOption:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this CreateClouddcnSubnetOption.
+        r"""Sets the cidr of this CreateClouddcnSubnetOption.
 
         功能说明：clouddcn子网的网段 取值范围：必须在vpc对应cidr范围内，不能和同vpc下其他普通子网的网段冲突 约束：必须是cidr格式。掩码长度不能大于28
 
@@ -154,7 +154,7 @@ class CreateClouddcnSubnetOption:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateClouddcnSubnetOption.
+        r"""Gets the vpc_id of this CreateClouddcnSubnetOption.
 
         clouddcn子网所在VPC标识
 
@@ -165,7 +165,7 @@ class CreateClouddcnSubnetOption:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateClouddcnSubnetOption.
+        r"""Sets the vpc_id of this CreateClouddcnSubnetOption.
 
         clouddcn子网所在VPC标识
 
@@ -176,7 +176,7 @@ class CreateClouddcnSubnetOption:
 
     @property
     def gateway_ip(self):
-        """Gets the gateway_ip of this CreateClouddcnSubnetOption.
+        r"""Gets the gateway_ip of this CreateClouddcnSubnetOption.
 
         功能说明：clouddcn子网的网关 取值范围：clouddcn子网网段中的IP地址 约束：必须是ip格式
 
@@ -187,7 +187,7 @@ class CreateClouddcnSubnetOption:
 
     @gateway_ip.setter
     def gateway_ip(self, gateway_ip):
-        """Sets the gateway_ip of this CreateClouddcnSubnetOption.
+        r"""Sets the gateway_ip of this CreateClouddcnSubnetOption.
 
         功能说明：clouddcn子网的网关 取值范围：clouddcn子网网段中的IP地址 约束：必须是ip格式
 
@@ -198,7 +198,7 @@ class CreateClouddcnSubnetOption:
 
     @property
     def dns_nameservers(self):
-        """Gets the dns_nameservers of this CreateClouddcnSubnetOption.
+        r"""Gets the dns_nameservers of this CreateClouddcnSubnetOption.
 
         功能说明：clouddcn子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段 约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集，不支持IPv6地址。 默认值：不填时为空，无法使用云内网DNS功能 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
@@ -209,7 +209,7 @@ class CreateClouddcnSubnetOption:
 
     @dns_nameservers.setter
     def dns_nameservers(self, dns_nameservers):
-        """Sets the dns_nameservers of this CreateClouddcnSubnetOption.
+        r"""Sets the dns_nameservers of this CreateClouddcnSubnetOption.
 
         功能说明：clouddcn子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段 约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集，不支持IPv6地址。 默认值：不填时为空，无法使用云内网DNS功能 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
@@ -220,7 +220,7 @@ class CreateClouddcnSubnetOption:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateClouddcnSubnetOption.
+        r"""Gets the availability_zone of this CreateClouddcnSubnetOption.
 
         功能说明：可用区
 
@@ -231,7 +231,7 @@ class CreateClouddcnSubnetOption:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateClouddcnSubnetOption.
+        r"""Sets the availability_zone of this CreateClouddcnSubnetOption.
 
         功能说明：可用区
 
@@ -242,7 +242,7 @@ class CreateClouddcnSubnetOption:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateClouddcnSubnetOption.
+        r"""Gets the tags of this CreateClouddcnSubnetOption.
 
         功能说明：对接TMS
 
@@ -253,7 +253,7 @@ class CreateClouddcnSubnetOption:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateClouddcnSubnetOption.
+        r"""Sets the tags of this CreateClouddcnSubnetOption.
 
         功能说明：对接TMS
 

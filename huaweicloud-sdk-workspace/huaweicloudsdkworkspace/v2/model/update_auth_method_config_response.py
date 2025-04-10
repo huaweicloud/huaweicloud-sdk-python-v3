@@ -26,7 +26,7 @@ class UpdateAuthMethodConfigResponse(SdkResponse):
     }
 
     def __init__(self, project_id=None):
-        """UpdateAuthMethodConfigResponse
+        r"""UpdateAuthMethodConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAuthMethodConfigResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateAuthMethodConfigResponse.
+        r"""Gets the project_id of this UpdateAuthMethodConfigResponse.
 
         项目ID
 
@@ -55,7 +55,7 @@ class UpdateAuthMethodConfigResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateAuthMethodConfigResponse.
+        r"""Sets the project_id of this UpdateAuthMethodConfigResponse.
 
         项目ID
 

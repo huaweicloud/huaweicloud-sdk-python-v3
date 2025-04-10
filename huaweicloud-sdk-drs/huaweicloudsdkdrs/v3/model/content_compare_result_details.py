@@ -33,7 +33,7 @@ class ContentCompareResultDetails:
     }
 
     def __init__(self, source_db_name=None, content_compare_detail=None, content_compare_detail_count=None, content_uncompare_detail=None, content_uncompare_detail_count=None):
-        """ContentCompareResultDetails
+        r"""ContentCompareResultDetails
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ContentCompareResultDetails:
 
     @property
     def source_db_name(self):
-        """Gets the source_db_name of this ContentCompareResultDetails.
+        r"""Gets the source_db_name of this ContentCompareResultDetails.
 
         源库名称。
 
@@ -78,7 +78,7 @@ class ContentCompareResultDetails:
 
     @source_db_name.setter
     def source_db_name(self, source_db_name):
-        """Sets the source_db_name of this ContentCompareResultDetails.
+        r"""Sets the source_db_name of this ContentCompareResultDetails.
 
         源库名称。
 
@@ -89,7 +89,7 @@ class ContentCompareResultDetails:
 
     @property
     def content_compare_detail(self):
-        """Gets the content_compare_detail of this ContentCompareResultDetails.
+        r"""Gets the content_compare_detail of this ContentCompareResultDetails.
 
         该库的表的内容对比详情。
 
@@ -100,7 +100,7 @@ class ContentCompareResultDetails:
 
     @content_compare_detail.setter
     def content_compare_detail(self, content_compare_detail):
-        """Sets the content_compare_detail of this ContentCompareResultDetails.
+        r"""Sets the content_compare_detail of this ContentCompareResultDetails.
 
         该库的表的内容对比详情。
 
@@ -111,7 +111,7 @@ class ContentCompareResultDetails:
 
     @property
     def content_compare_detail_count(self):
-        """Gets the content_compare_detail_count of this ContentCompareResultDetails.
+        r"""Gets the content_compare_detail_count of this ContentCompareResultDetails.
 
         内容对比结果详情总数。
 
@@ -122,7 +122,7 @@ class ContentCompareResultDetails:
 
     @content_compare_detail_count.setter
     def content_compare_detail_count(self, content_compare_detail_count):
-        """Sets the content_compare_detail_count of this ContentCompareResultDetails.
+        r"""Sets the content_compare_detail_count of this ContentCompareResultDetails.
 
         内容对比结果详情总数。
 
@@ -133,7 +133,7 @@ class ContentCompareResultDetails:
 
     @property
     def content_uncompare_detail(self):
-        """Gets the content_uncompare_detail of this ContentCompareResultDetails.
+        r"""Gets the content_uncompare_detail of this ContentCompareResultDetails.
 
         该库的表的内容对比详情(无法对比的表)。
 
@@ -144,7 +144,7 @@ class ContentCompareResultDetails:
 
     @content_uncompare_detail.setter
     def content_uncompare_detail(self, content_uncompare_detail):
-        """Sets the content_uncompare_detail of this ContentCompareResultDetails.
+        r"""Sets the content_uncompare_detail of this ContentCompareResultDetails.
 
         该库的表的内容对比详情(无法对比的表)。
 
@@ -155,7 +155,7 @@ class ContentCompareResultDetails:
 
     @property
     def content_uncompare_detail_count(self):
-        """Gets the content_uncompare_detail_count of this ContentCompareResultDetails.
+        r"""Gets the content_uncompare_detail_count of this ContentCompareResultDetails.
 
         内容对比结果详情总数(无法对比的表)。
 
@@ -166,7 +166,7 @@ class ContentCompareResultDetails:
 
     @content_uncompare_detail_count.setter
     def content_uncompare_detail_count(self, content_uncompare_detail_count):
-        """Sets the content_uncompare_detail_count of this ContentCompareResultDetails.
+        r"""Sets the content_uncompare_detail_count of this ContentCompareResultDetails.
 
         内容对比结果详情总数(无法对比的表)。
 

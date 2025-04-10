@@ -57,7 +57,7 @@ class DerivativeIndexDimensionVO:
     }
 
     def __init__(self, group_id=None, role=None, dimension_id=None, hierarchies_id=None, ordinal=None, group_name=None, group_code=None, biz_type=None, hierarchies=None, l1=None, l2=None, l3=None, l1_id=None, l2_id=None, l3_id=None, dw_type=None, id=None):
-        """DerivativeIndexDimensionVO
+        r"""DerivativeIndexDimensionVO
 
         The model defined in huaweicloud sdk
 
@@ -153,7 +153,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DerivativeIndexDimensionVO.
+        r"""Gets the group_id of this DerivativeIndexDimensionVO.
 
         维度分组ID。
 
@@ -164,7 +164,7 @@ class DerivativeIndexDimensionVO:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DerivativeIndexDimensionVO.
+        r"""Sets the group_id of this DerivativeIndexDimensionVO.
 
         维度分组ID。
 
@@ -175,7 +175,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def role(self):
-        """Gets the role of this DerivativeIndexDimensionVO.
+        r"""Gets the role of this DerivativeIndexDimensionVO.
 
         维度角色。
 
@@ -186,7 +186,7 @@ class DerivativeIndexDimensionVO:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this DerivativeIndexDimensionVO.
+        r"""Sets the role of this DerivativeIndexDimensionVO.
 
         维度角色。
 
@@ -197,7 +197,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def dimension_id(self):
-        """Gets the dimension_id of this DerivativeIndexDimensionVO.
+        r"""Gets the dimension_id of this DerivativeIndexDimensionVO.
 
         维度ID，ID字符串。
 
@@ -208,7 +208,7 @@ class DerivativeIndexDimensionVO:
 
     @dimension_id.setter
     def dimension_id(self, dimension_id):
-        """Sets the dimension_id of this DerivativeIndexDimensionVO.
+        r"""Sets the dimension_id of this DerivativeIndexDimensionVO.
 
         维度ID，ID字符串。
 
@@ -219,7 +219,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def hierarchies_id(self):
-        """Gets the hierarchies_id of this DerivativeIndexDimensionVO.
+        r"""Gets the hierarchies_id of this DerivativeIndexDimensionVO.
 
         维度层级ID，ID字符串。
 
@@ -230,7 +230,7 @@ class DerivativeIndexDimensionVO:
 
     @hierarchies_id.setter
     def hierarchies_id(self, hierarchies_id):
-        """Sets the hierarchies_id of this DerivativeIndexDimensionVO.
+        r"""Sets the hierarchies_id of this DerivativeIndexDimensionVO.
 
         维度层级ID，ID字符串。
 
@@ -241,7 +241,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this DerivativeIndexDimensionVO.
+        r"""Gets the ordinal of this DerivativeIndexDimensionVO.
 
         序号，只读。
 
@@ -252,7 +252,7 @@ class DerivativeIndexDimensionVO:
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this DerivativeIndexDimensionVO.
+        r"""Sets the ordinal of this DerivativeIndexDimensionVO.
 
         序号，只读。
 
@@ -263,7 +263,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def group_name(self):
-        """Gets the group_name of this DerivativeIndexDimensionVO.
+        r"""Gets the group_name of this DerivativeIndexDimensionVO.
 
         维度分组名称。
 
@@ -274,7 +274,7 @@ class DerivativeIndexDimensionVO:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this DerivativeIndexDimensionVO.
+        r"""Sets the group_name of this DerivativeIndexDimensionVO.
 
         维度分组名称。
 
@@ -285,7 +285,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def group_code(self):
-        """Gets the group_code of this DerivativeIndexDimensionVO.
+        r"""Gets the group_code of this DerivativeIndexDimensionVO.
 
         维度分组编码。
 
@@ -296,7 +296,7 @@ class DerivativeIndexDimensionVO:
 
     @group_code.setter
     def group_code(self, group_code):
-        """Sets the group_code of this DerivativeIndexDimensionVO.
+        r"""Sets the group_code of this DerivativeIndexDimensionVO.
 
         维度分组编码。
 
@@ -307,7 +307,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this DerivativeIndexDimensionVO.
+        r"""Gets the biz_type of this DerivativeIndexDimensionVO.
 
         :return: The biz_type of this DerivativeIndexDimensionVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -316,7 +316,7 @@ class DerivativeIndexDimensionVO:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this DerivativeIndexDimensionVO.
+        r"""Sets the biz_type of this DerivativeIndexDimensionVO.
 
         :param biz_type: The biz_type of this DerivativeIndexDimensionVO.
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -325,7 +325,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def hierarchies(self):
-        """Gets the hierarchies of this DerivativeIndexDimensionVO.
+        r"""Gets the hierarchies of this DerivativeIndexDimensionVO.
 
         层级属性，只读。
 
@@ -336,7 +336,7 @@ class DerivativeIndexDimensionVO:
 
     @hierarchies.setter
     def hierarchies(self, hierarchies):
-        """Sets the hierarchies of this DerivativeIndexDimensionVO.
+        r"""Sets the hierarchies of this DerivativeIndexDimensionVO.
 
         层级属性，只读。
 
@@ -347,7 +347,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def l1(self):
-        """Gets the l1 of this DerivativeIndexDimensionVO.
+        r"""Gets the l1 of this DerivativeIndexDimensionVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -358,7 +358,7 @@ class DerivativeIndexDimensionVO:
 
     @l1.setter
     def l1(self, l1):
-        """Sets the l1 of this DerivativeIndexDimensionVO.
+        r"""Sets the l1 of this DerivativeIndexDimensionVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -369,7 +369,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def l2(self):
-        """Gets the l2 of this DerivativeIndexDimensionVO.
+        r"""Gets the l2 of this DerivativeIndexDimensionVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -380,7 +380,7 @@ class DerivativeIndexDimensionVO:
 
     @l2.setter
     def l2(self, l2):
-        """Sets the l2 of this DerivativeIndexDimensionVO.
+        r"""Sets the l2 of this DerivativeIndexDimensionVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -391,7 +391,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def l3(self):
-        """Gets the l3 of this DerivativeIndexDimensionVO.
+        r"""Gets the l3 of this DerivativeIndexDimensionVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -402,7 +402,7 @@ class DerivativeIndexDimensionVO:
 
     @l3.setter
     def l3(self, l3):
-        """Sets the l3 of this DerivativeIndexDimensionVO.
+        r"""Sets the l3 of this DerivativeIndexDimensionVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -413,7 +413,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def l1_id(self):
-        """Gets the l1_id of this DerivativeIndexDimensionVO.
+        r"""Gets the l1_id of this DerivativeIndexDimensionVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -424,7 +424,7 @@ class DerivativeIndexDimensionVO:
 
     @l1_id.setter
     def l1_id(self, l1_id):
-        """Sets the l1_id of this DerivativeIndexDimensionVO.
+        r"""Sets the l1_id of this DerivativeIndexDimensionVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -435,7 +435,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def l2_id(self):
-        """Gets the l2_id of this DerivativeIndexDimensionVO.
+        r"""Gets the l2_id of this DerivativeIndexDimensionVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -446,7 +446,7 @@ class DerivativeIndexDimensionVO:
 
     @l2_id.setter
     def l2_id(self, l2_id):
-        """Sets the l2_id of this DerivativeIndexDimensionVO.
+        r"""Sets the l2_id of this DerivativeIndexDimensionVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -457,7 +457,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def l3_id(self):
-        """Gets the l3_id of this DerivativeIndexDimensionVO.
+        r"""Gets the l3_id of this DerivativeIndexDimensionVO.
 
         业务对象ID，只读，ID字符串。
 
@@ -468,7 +468,7 @@ class DerivativeIndexDimensionVO:
 
     @l3_id.setter
     def l3_id(self, l3_id):
-        """Sets the l3_id of this DerivativeIndexDimensionVO.
+        r"""Sets the l3_id of this DerivativeIndexDimensionVO.
 
         业务对象ID，只读，ID字符串。
 
@@ -479,7 +479,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this DerivativeIndexDimensionVO.
+        r"""Gets the dw_type of this DerivativeIndexDimensionVO.
 
         数据连接类型。
 
@@ -490,7 +490,7 @@ class DerivativeIndexDimensionVO:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this DerivativeIndexDimensionVO.
+        r"""Sets the dw_type of this DerivativeIndexDimensionVO.
 
         数据连接类型。
 
@@ -501,7 +501,7 @@ class DerivativeIndexDimensionVO:
 
     @property
     def id(self):
-        """Gets the id of this DerivativeIndexDimensionVO.
+        r"""Gets the id of this DerivativeIndexDimensionVO.
 
         层级的ID，只读，ID字符串。
 
@@ -512,7 +512,7 @@ class DerivativeIndexDimensionVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DerivativeIndexDimensionVO.
+        r"""Sets the id of this DerivativeIndexDimensionVO.
 
         层级的ID，只读，ID字符串。
 

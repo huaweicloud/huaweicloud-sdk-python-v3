@@ -26,7 +26,7 @@ class QuoteInstanceResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """QuoteInstanceResponse
+        r"""QuoteInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class QuoteInstanceResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this QuoteInstanceResponse.
+        r"""Gets the body of this QuoteInstanceResponse.
 
         :return: The body of this QuoteInstanceResponse.
         :rtype: list[:class:`huaweicloudsdkeihealth.v1.QuoteDatabaseResultRsp`]
@@ -53,7 +53,7 @@ class QuoteInstanceResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this QuoteInstanceResponse.
+        r"""Sets the body of this QuoteInstanceResponse.
 
         :param body: The body of this QuoteInstanceResponse.
         :type body: list[:class:`huaweicloudsdkeihealth.v1.QuoteDatabaseResultRsp`]

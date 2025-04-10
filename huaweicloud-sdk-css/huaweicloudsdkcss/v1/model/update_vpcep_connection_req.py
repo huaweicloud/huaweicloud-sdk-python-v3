@@ -27,7 +27,7 @@ class UpdateVpcepConnectionReq:
     }
 
     def __init__(self, action=None, endpoint_id_list=None):
-        """UpdateVpcepConnectionReq
+        r"""UpdateVpcepConnectionReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateVpcepConnectionReq:
 
     @property
     def action(self):
-        """Gets the action of this UpdateVpcepConnectionReq.
+        r"""Gets the action of this UpdateVpcepConnectionReq.
 
         期望的操作行为。 - receive: 允许连接 - reject: 拒绝连接
 
@@ -59,7 +59,7 @@ class UpdateVpcepConnectionReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateVpcepConnectionReq.
+        r"""Sets the action of this UpdateVpcepConnectionReq.
 
         期望的操作行为。 - receive: 允许连接 - reject: 拒绝连接
 
@@ -70,7 +70,7 @@ class UpdateVpcepConnectionReq:
 
     @property
     def endpoint_id_list(self):
-        """Gets the endpoint_id_list of this UpdateVpcepConnectionReq.
+        r"""Gets the endpoint_id_list of this UpdateVpcepConnectionReq.
 
         终端节点ID列表。
 
@@ -81,7 +81,7 @@ class UpdateVpcepConnectionReq:
 
     @endpoint_id_list.setter
     def endpoint_id_list(self, endpoint_id_list):
-        """Sets the endpoint_id_list of this UpdateVpcepConnectionReq.
+        r"""Sets the endpoint_id_list of this UpdateVpcepConnectionReq.
 
         终端节点ID列表。
 

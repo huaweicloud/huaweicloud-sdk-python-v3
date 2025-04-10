@@ -26,7 +26,7 @@ class SetRecyclePolicyResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """SetRecyclePolicyResponse
+        r"""SetRecyclePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetRecyclePolicyResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this SetRecyclePolicyResponse.
+        r"""Gets the result of this SetRecyclePolicyResponse.
 
         修改结果，“success”表示修改成功
 
@@ -55,7 +55,7 @@ class SetRecyclePolicyResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this SetRecyclePolicyResponse.
+        r"""Sets the result of this SetRecyclePolicyResponse.
 
         修改结果，“success”表示修改成功
 

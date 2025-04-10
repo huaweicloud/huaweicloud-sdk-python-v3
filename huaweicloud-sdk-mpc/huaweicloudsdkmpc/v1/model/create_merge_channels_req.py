@@ -25,7 +25,7 @@ class CreateMergeChannelsReq:
     }
 
     def __init__(self, multi_audio=None):
-        """CreateMergeChannelsReq
+        r"""CreateMergeChannelsReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateMergeChannelsReq:
 
     @property
     def multi_audio(self):
-        """Gets the multi_audio of this CreateMergeChannelsReq.
+        r"""Gets the multi_audio of this CreateMergeChannelsReq.
 
         :return: The multi_audio of this CreateMergeChannelsReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.MpcMultiAudio`
@@ -52,7 +52,7 @@ class CreateMergeChannelsReq:
 
     @multi_audio.setter
     def multi_audio(self, multi_audio):
-        """Sets the multi_audio of this CreateMergeChannelsReq.
+        r"""Sets the multi_audio of this CreateMergeChannelsReq.
 
         :param multi_audio: The multi_audio of this CreateMergeChannelsReq.
         :type multi_audio: :class:`huaweicloudsdkmpc.v1.MpcMultiAudio`

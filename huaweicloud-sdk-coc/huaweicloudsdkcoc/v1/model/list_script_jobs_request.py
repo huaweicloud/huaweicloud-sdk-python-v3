@@ -41,7 +41,7 @@ class ListScriptJobsRequest:
     }
 
     def __init__(self, limit=None, marker=None, start_time=None, end_time=None, creator=None, status=None, x_language=None, x_project_id=None, x_user_profile=None):
-        """ListScriptJobsRequest
+        r"""ListScriptJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListScriptJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScriptJobsRequest.
+        r"""Gets the limit of this ListScriptJobsRequest.
 
         分页参数
 
@@ -110,7 +110,7 @@ class ListScriptJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScriptJobsRequest.
+        r"""Sets the limit of this ListScriptJobsRequest.
 
         分页参数
 
@@ -121,7 +121,7 @@ class ListScriptJobsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListScriptJobsRequest.
+        r"""Gets the marker of this ListScriptJobsRequest.
 
         分页参数
 
@@ -132,7 +132,7 @@ class ListScriptJobsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListScriptJobsRequest.
+        r"""Sets the marker of this ListScriptJobsRequest.
 
         分页参数
 
@@ -143,7 +143,7 @@ class ListScriptJobsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListScriptJobsRequest.
+        r"""Gets the start_time of this ListScriptJobsRequest.
 
         创建时间开始
 
@@ -154,7 +154,7 @@ class ListScriptJobsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListScriptJobsRequest.
+        r"""Sets the start_time of this ListScriptJobsRequest.
 
         创建时间开始
 
@@ -165,7 +165,7 @@ class ListScriptJobsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListScriptJobsRequest.
+        r"""Gets the end_time of this ListScriptJobsRequest.
 
         创建时间结束
 
@@ -176,7 +176,7 @@ class ListScriptJobsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListScriptJobsRequest.
+        r"""Sets the end_time of this ListScriptJobsRequest.
 
         创建时间结束
 
@@ -187,7 +187,7 @@ class ListScriptJobsRequest:
 
     @property
     def creator(self):
-        """Gets the creator of this ListScriptJobsRequest.
+        r"""Gets the creator of this ListScriptJobsRequest.
 
         创建人
 
@@ -198,7 +198,7 @@ class ListScriptJobsRequest:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ListScriptJobsRequest.
+        r"""Sets the creator of this ListScriptJobsRequest.
 
         创建人
 
@@ -209,7 +209,7 @@ class ListScriptJobsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListScriptJobsRequest.
+        r"""Gets the status of this ListScriptJobsRequest.
 
         工单状态 PROCESSING：执行中 ABNORMAL：异常 PAUSED：暂停 CANCELED：已取消 FINISHED：成功
 
@@ -220,7 +220,7 @@ class ListScriptJobsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListScriptJobsRequest.
+        r"""Sets the status of this ListScriptJobsRequest.
 
         工单状态 PROCESSING：执行中 ABNORMAL：异常 PAUSED：暂停 CANCELED：已取消 FINISHED：成功
 
@@ -231,7 +231,7 @@ class ListScriptJobsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListScriptJobsRequest.
+        r"""Gets the x_language of this ListScriptJobsRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -242,7 +242,7 @@ class ListScriptJobsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListScriptJobsRequest.
+        r"""Sets the x_language of this ListScriptJobsRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -253,7 +253,7 @@ class ListScriptJobsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListScriptJobsRequest.
+        r"""Gets the x_project_id of this ListScriptJobsRequest.
 
         项目ID，一个项目对应一个region
 
@@ -264,7 +264,7 @@ class ListScriptJobsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListScriptJobsRequest.
+        r"""Sets the x_project_id of this ListScriptJobsRequest.
 
         项目ID，一个项目对应一个region
 
@@ -275,7 +275,7 @@ class ListScriptJobsRequest:
 
     @property
     def x_user_profile(self):
-        """Gets the x_user_profile of this ListScriptJobsRequest.
+        r"""Gets the x_user_profile of this ListScriptJobsRequest.
 
         IAM5.0用户信息
 
@@ -286,7 +286,7 @@ class ListScriptJobsRequest:
 
     @x_user_profile.setter
     def x_user_profile(self, x_user_profile):
-        """Sets the x_user_profile of this ListScriptJobsRequest.
+        r"""Sets the x_user_profile of this ListScriptJobsRequest.
 
         IAM5.0用户信息
 

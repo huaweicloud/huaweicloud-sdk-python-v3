@@ -29,7 +29,7 @@ class CreateDataLevelTableCompareJobRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, body=None):
-        """CreateDataLevelTableCompareJobRequest
+        r"""CreateDataLevelTableCompareJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateDataLevelTableCompareJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateDataLevelTableCompareJobRequest.
+        r"""Gets the x_language of this CreateDataLevelTableCompareJobRequest.
 
         请求语言类型。
 
@@ -67,7 +67,7 @@ class CreateDataLevelTableCompareJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateDataLevelTableCompareJobRequest.
+        r"""Sets the x_language of this CreateDataLevelTableCompareJobRequest.
 
         请求语言类型。
 
@@ -78,7 +78,7 @@ class CreateDataLevelTableCompareJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateDataLevelTableCompareJobRequest.
+        r"""Gets the job_id of this CreateDataLevelTableCompareJobRequest.
 
         任务ID。
 
@@ -89,7 +89,7 @@ class CreateDataLevelTableCompareJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateDataLevelTableCompareJobRequest.
+        r"""Sets the job_id of this CreateDataLevelTableCompareJobRequest.
 
         任务ID。
 
@@ -100,7 +100,7 @@ class CreateDataLevelTableCompareJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDataLevelTableCompareJobRequest.
+        r"""Gets the body of this CreateDataLevelTableCompareJobRequest.
 
         :return: The body of this CreateDataLevelTableCompareJobRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateDataLevelTableCompareJobReq`
@@ -109,7 +109,7 @@ class CreateDataLevelTableCompareJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDataLevelTableCompareJobRequest.
+        r"""Sets the body of this CreateDataLevelTableCompareJobRequest.
 
         :param body: The body of this CreateDataLevelTableCompareJobRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.CreateDataLevelTableCompareJobReq`

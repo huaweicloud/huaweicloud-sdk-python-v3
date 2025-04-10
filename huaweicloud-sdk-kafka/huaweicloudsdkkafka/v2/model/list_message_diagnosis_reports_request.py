@@ -29,7 +29,7 @@ class ListMessageDiagnosisReportsRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ListMessageDiagnosisReportsRequest
+        r"""ListMessageDiagnosisReportsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListMessageDiagnosisReportsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListMessageDiagnosisReportsRequest.
+        r"""Gets the instance_id of this ListMessageDiagnosisReportsRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class ListMessageDiagnosisReportsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListMessageDiagnosisReportsRequest.
+        r"""Sets the instance_id of this ListMessageDiagnosisReportsRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class ListMessageDiagnosisReportsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMessageDiagnosisReportsRequest.
+        r"""Gets the offset of this ListMessageDiagnosisReportsRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -89,7 +89,7 @@ class ListMessageDiagnosisReportsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMessageDiagnosisReportsRequest.
+        r"""Sets the offset of this ListMessageDiagnosisReportsRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -100,7 +100,7 @@ class ListMessageDiagnosisReportsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMessageDiagnosisReportsRequest.
+        r"""Gets the limit of this ListMessageDiagnosisReportsRequest.
 
         查询返回记录的数量限制
 
@@ -111,7 +111,7 @@ class ListMessageDiagnosisReportsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMessageDiagnosisReportsRequest.
+        r"""Sets the limit of this ListMessageDiagnosisReportsRequest.
 
         查询返回记录的数量限制
 

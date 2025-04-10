@@ -24,7 +24,7 @@ class DeleteSecurityAssignedQueueResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteSecurityAssignedQueueResponse
+        r"""DeleteSecurityAssignedQueueResponse
 
         The model defined in huaweicloud sdk
 

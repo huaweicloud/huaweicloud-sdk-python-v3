@@ -33,7 +33,7 @@ class MembersInStatusResp:
     }
 
     def __init__(self, id=None, address=None, protocol_port=None, operating_status=None, provisioning_status=None):
-        """MembersInStatusResp
+        r"""MembersInStatusResp
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class MembersInStatusResp:
 
     @property
     def id(self):
-        """Gets the id of this MembersInStatusResp.
+        r"""Gets the id of this MembersInStatusResp.
 
         后端云服务器ID
 
@@ -77,7 +77,7 @@ class MembersInStatusResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MembersInStatusResp.
+        r"""Sets the id of this MembersInStatusResp.
 
         后端云服务器ID
 
@@ -88,7 +88,7 @@ class MembersInStatusResp:
 
     @property
     def address(self):
-        """Gets the address of this MembersInStatusResp.
+        r"""Gets the address of this MembersInStatusResp.
 
         后端云服务器的IP地址
 
@@ -99,7 +99,7 @@ class MembersInStatusResp:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this MembersInStatusResp.
+        r"""Sets the address of this MembersInStatusResp.
 
         后端云服务器的IP地址
 
@@ -110,7 +110,7 @@ class MembersInStatusResp:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this MembersInStatusResp.
+        r"""Gets the protocol_port of this MembersInStatusResp.
 
         后端云服务器的端口号
 
@@ -121,7 +121,7 @@ class MembersInStatusResp:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this MembersInStatusResp.
+        r"""Sets the protocol_port of this MembersInStatusResp.
 
         后端云服务器的端口号
 
@@ -132,7 +132,7 @@ class MembersInStatusResp:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this MembersInStatusResp.
+        r"""Gets the operating_status of this MembersInStatusResp.
 
         后端云服务器的健康检状态；可以为：ONLINE：健康检查在线；OFFLINE：健康检查离线；DISABLED：后端云服务器无对应的弹性云服务器；NO_MONITOR：健康检查未开启
 
@@ -143,7 +143,7 @@ class MembersInStatusResp:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this MembersInStatusResp.
+        r"""Sets the operating_status of this MembersInStatusResp.
 
         后端云服务器的健康检状态；可以为：ONLINE：健康检查在线；OFFLINE：健康检查离线；DISABLED：后端云服务器无对应的弹性云服务器；NO_MONITOR：健康检查未开启
 
@@ -154,7 +154,7 @@ class MembersInStatusResp:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this MembersInStatusResp.
+        r"""Gets the provisioning_status of this MembersInStatusResp.
 
         监听器的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
@@ -165,7 +165,7 @@ class MembersInStatusResp:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this MembersInStatusResp.
+        r"""Sets the provisioning_status of this MembersInStatusResp.
 
         监听器的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 

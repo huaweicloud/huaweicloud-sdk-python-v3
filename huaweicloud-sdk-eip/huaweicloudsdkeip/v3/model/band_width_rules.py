@@ -35,7 +35,7 @@ class BandWidthRules:
     }
 
     def __init__(self, id=None, name=None, admin_state_up=None, egress_size=None, egress_guarented_size=None, publicip_info=None):
-        """BandWidthRules
+        r"""BandWidthRules
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BandWidthRules:
 
     @property
     def id(self):
-        """Gets the id of this BandWidthRules.
+        r"""Gets the id of this BandWidthRules.
 
         - 功能说明：带宽规则ID
 
@@ -89,7 +89,7 @@ class BandWidthRules:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BandWidthRules.
+        r"""Sets the id of this BandWidthRules.
 
         - 功能说明：带宽规则ID
 
@@ -100,7 +100,7 @@ class BandWidthRules:
 
     @property
     def name(self):
-        """Gets the name of this BandWidthRules.
+        r"""Gets the name of this BandWidthRules.
 
         - 功能说明：带宽规则名称
 
@@ -111,7 +111,7 @@ class BandWidthRules:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BandWidthRules.
+        r"""Sets the name of this BandWidthRules.
 
         - 功能说明：带宽规则名称
 
@@ -122,7 +122,7 @@ class BandWidthRules:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this BandWidthRules.
+        r"""Gets the admin_state_up of this BandWidthRules.
 
         - 功能说明：配置状态，为False时配置不生效。
 
@@ -133,7 +133,7 @@ class BandWidthRules:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this BandWidthRules.
+        r"""Sets the admin_state_up of this BandWidthRules.
 
         - 功能说明：配置状态，为False时配置不生效。
 
@@ -144,7 +144,7 @@ class BandWidthRules:
 
     @property
     def egress_size(self):
-        """Gets the egress_size of this BandWidthRules.
+        r"""Gets the egress_size of this BandWidthRules.
 
         - 功能说明：出网带宽最大值，单位Mbps - 取值范围[0,n]，其中n为所属带宽的带宽大小（size字段）。0表示设置为最大带宽
 
@@ -155,7 +155,7 @@ class BandWidthRules:
 
     @egress_size.setter
     def egress_size(self, egress_size):
-        """Sets the egress_size of this BandWidthRules.
+        r"""Sets the egress_size of this BandWidthRules.
 
         - 功能说明：出网带宽最大值，单位Mbps - 取值范围[0,n]，其中n为所属带宽的带宽大小（size字段）。0表示设置为最大带宽
 
@@ -166,7 +166,7 @@ class BandWidthRules:
 
     @property
     def egress_guarented_size(self):
-        """Gets the egress_guarented_size of this BandWidthRules.
+        r"""Gets the egress_guarented_size of this BandWidthRules.
 
         - 功能说明：出网保障带宽大小，单位Mbps - 取值范围[0,x]，其中x为所属带宽剩余的保障额
 
@@ -177,7 +177,7 @@ class BandWidthRules:
 
     @egress_guarented_size.setter
     def egress_guarented_size(self, egress_guarented_size):
-        """Sets the egress_guarented_size of this BandWidthRules.
+        r"""Sets the egress_guarented_size of this BandWidthRules.
 
         - 功能说明：出网保障带宽大小，单位Mbps - 取值范围[0,x]，其中x为所属带宽剩余的保障额
 
@@ -188,7 +188,7 @@ class BandWidthRules:
 
     @property
     def publicip_info(self):
-        """Gets the publicip_info of this BandWidthRules.
+        r"""Gets the publicip_info of this BandWidthRules.
 
         - 功能说明：带宽对应的弹性公网IP信息 - 约束：WHOLE类型的带宽支持多个弹性公网IP，PER类型的带宽只能对应一个弹性公网IP
 
@@ -199,7 +199,7 @@ class BandWidthRules:
 
     @publicip_info.setter
     def publicip_info(self, publicip_info):
-        """Sets the publicip_info of this BandWidthRules.
+        r"""Sets the publicip_info of this BandWidthRules.
 
         - 功能说明：带宽对应的弹性公网IP信息 - 约束：WHOLE类型的带宽支持多个弹性公网IP，PER类型的带宽只能对应一个弹性公网IP
 

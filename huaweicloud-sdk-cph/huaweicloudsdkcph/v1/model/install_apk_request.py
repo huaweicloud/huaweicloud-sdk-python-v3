@@ -25,7 +25,7 @@ class InstallApkRequest:
     }
 
     def __init__(self, body=None):
-        """InstallApkRequest
+        r"""InstallApkRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class InstallApkRequest:
 
     @property
     def body(self):
-        """Gets the body of this InstallApkRequest.
+        r"""Gets the body of this InstallApkRequest.
 
         :return: The body of this InstallApkRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.InstallApkRequestBody`
@@ -52,7 +52,7 @@ class InstallApkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this InstallApkRequest.
+        r"""Sets the body of this InstallApkRequest.
 
         :param body: The body of this InstallApkRequest.
         :type body: :class:`huaweicloudsdkcph.v1.InstallApkRequestBody`

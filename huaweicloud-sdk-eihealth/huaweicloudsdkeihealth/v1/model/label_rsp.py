@@ -35,7 +35,7 @@ class LabelRsp:
     }
 
     def __init__(self, id=None, name=None, description=None, creator=None, create_time=None, update_time=None):
-        """LabelRsp
+        r"""LabelRsp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class LabelRsp:
 
     @property
     def id(self):
-        """Gets the id of this LabelRsp.
+        r"""Gets the id of this LabelRsp.
 
         标签id
 
@@ -89,7 +89,7 @@ class LabelRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LabelRsp.
+        r"""Sets the id of this LabelRsp.
 
         标签id
 
@@ -100,7 +100,7 @@ class LabelRsp:
 
     @property
     def name(self):
-        """Gets the name of this LabelRsp.
+        r"""Gets the name of this LabelRsp.
 
         标签名称
 
@@ -111,7 +111,7 @@ class LabelRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LabelRsp.
+        r"""Sets the name of this LabelRsp.
 
         标签名称
 
@@ -122,7 +122,7 @@ class LabelRsp:
 
     @property
     def description(self):
-        """Gets the description of this LabelRsp.
+        r"""Gets the description of this LabelRsp.
 
         标签描述
 
@@ -133,7 +133,7 @@ class LabelRsp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this LabelRsp.
+        r"""Sets the description of this LabelRsp.
 
         标签描述
 
@@ -144,7 +144,7 @@ class LabelRsp:
 
     @property
     def creator(self):
-        """Gets the creator of this LabelRsp.
+        r"""Gets the creator of this LabelRsp.
 
         标签创建者
 
@@ -155,7 +155,7 @@ class LabelRsp:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this LabelRsp.
+        r"""Sets the creator of this LabelRsp.
 
         标签创建者
 
@@ -166,7 +166,7 @@ class LabelRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this LabelRsp.
+        r"""Gets the create_time of this LabelRsp.
 
         标签创建时间
 
@@ -177,7 +177,7 @@ class LabelRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this LabelRsp.
+        r"""Sets the create_time of this LabelRsp.
 
         标签创建时间
 
@@ -188,7 +188,7 @@ class LabelRsp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this LabelRsp.
+        r"""Gets the update_time of this LabelRsp.
 
         标签更新时间
 
@@ -199,7 +199,7 @@ class LabelRsp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this LabelRsp.
+        r"""Sets the update_time of this LabelRsp.
 
         标签更新时间
 

@@ -27,7 +27,7 @@ class ConfigurationItem:
     }
 
     def __init__(self, name=None, value=None):
-        """ConfigurationItem
+        r"""ConfigurationItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ConfigurationItem:
 
     @property
     def name(self):
-        """Gets the name of this ConfigurationItem.
+        r"""Gets the name of this ConfigurationItem.
 
         组件配置项名称
 
@@ -61,7 +61,7 @@ class ConfigurationItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigurationItem.
+        r"""Sets the name of this ConfigurationItem.
 
         组件配置项名称
 
@@ -72,7 +72,7 @@ class ConfigurationItem:
 
     @property
     def value(self):
-        """Gets the value of this ConfigurationItem.
+        r"""Gets the value of this ConfigurationItem.
 
         组件配置项值
 
@@ -83,7 +83,7 @@ class ConfigurationItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ConfigurationItem.
+        r"""Sets the value of this ConfigurationItem.
 
         组件配置项值
 

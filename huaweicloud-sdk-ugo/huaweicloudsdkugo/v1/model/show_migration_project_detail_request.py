@@ -25,7 +25,7 @@ class ShowMigrationProjectDetailRequest:
     }
 
     def __init__(self, migration_project_id=None):
-        """ShowMigrationProjectDetailRequest
+        r"""ShowMigrationProjectDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowMigrationProjectDetailRequest:
 
     @property
     def migration_project_id(self):
-        """Gets the migration_project_id of this ShowMigrationProjectDetailRequest.
+        r"""Gets the migration_project_id of this ShowMigrationProjectDetailRequest.
 
         迁移项目ID。
 
@@ -53,7 +53,7 @@ class ShowMigrationProjectDetailRequest:
 
     @migration_project_id.setter
     def migration_project_id(self, migration_project_id):
-        """Sets the migration_project_id of this ShowMigrationProjectDetailRequest.
+        r"""Sets the migration_project_id of this ShowMigrationProjectDetailRequest.
 
         迁移项目ID。
 

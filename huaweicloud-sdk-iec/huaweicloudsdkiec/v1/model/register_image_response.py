@@ -28,7 +28,7 @@ class RegisterImageResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, image_id=None):
-        """RegisterImageResponse
+        r"""RegisterImageResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RegisterImageResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RegisterImageResponse.
+        r"""Gets the job_id of this RegisterImageResponse.
 
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 
@@ -61,7 +61,7 @@ class RegisterImageResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RegisterImageResponse.
+        r"""Sets the job_id of this RegisterImageResponse.
 
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 
@@ -72,7 +72,7 @@ class RegisterImageResponse(SdkResponse):
 
     @property
     def image_id(self):
-        """Gets the image_id of this RegisterImageResponse.
+        r"""Gets the image_id of this RegisterImageResponse.
 
         创建镜像的ID。
 
@@ -83,7 +83,7 @@ class RegisterImageResponse(SdkResponse):
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this RegisterImageResponse.
+        r"""Sets the image_id of this RegisterImageResponse.
 
         创建镜像的ID。
 

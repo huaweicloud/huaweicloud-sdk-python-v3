@@ -25,7 +25,7 @@ class ListConfigurationsRequest:
     }
 
     def __init__(self, x_language=None):
-        """ListConfigurationsRequest
+        r"""ListConfigurationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListConfigurationsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListConfigurationsRequest.
+        r"""Gets the x_language of this ListConfigurationsRequest.
 
         语言
 
@@ -54,7 +54,7 @@ class ListConfigurationsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListConfigurationsRequest.
+        r"""Sets the x_language of this ListConfigurationsRequest.
 
         语言
 

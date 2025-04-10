@@ -27,7 +27,7 @@ class KeystoneUpdateIdentityProviderRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """KeystoneUpdateIdentityProviderRequest
+        r"""KeystoneUpdateIdentityProviderRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class KeystoneUpdateIdentityProviderRequest:
 
     @property
     def id(self):
-        """Gets the id of this KeystoneUpdateIdentityProviderRequest.
+        r"""Gets the id of this KeystoneUpdateIdentityProviderRequest.
 
         待更新的身份提供商ID。
 
@@ -60,7 +60,7 @@ class KeystoneUpdateIdentityProviderRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this KeystoneUpdateIdentityProviderRequest.
+        r"""Sets the id of this KeystoneUpdateIdentityProviderRequest.
 
         待更新的身份提供商ID。
 
@@ -71,7 +71,7 @@ class KeystoneUpdateIdentityProviderRequest:
 
     @property
     def body(self):
-        """Gets the body of this KeystoneUpdateIdentityProviderRequest.
+        r"""Gets the body of this KeystoneUpdateIdentityProviderRequest.
 
         :return: The body of this KeystoneUpdateIdentityProviderRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateIdentityProviderRequestBody`
@@ -80,7 +80,7 @@ class KeystoneUpdateIdentityProviderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this KeystoneUpdateIdentityProviderRequest.
+        r"""Sets the body of this KeystoneUpdateIdentityProviderRequest.
 
         :param body: The body of this KeystoneUpdateIdentityProviderRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateIdentityProviderRequestBody`

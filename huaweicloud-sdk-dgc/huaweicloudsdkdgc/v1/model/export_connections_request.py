@@ -25,7 +25,7 @@ class ExportConnectionsRequest:
     }
 
     def __init__(self, workspace=None):
-        """ExportConnectionsRequest
+        r"""ExportConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExportConnectionsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ExportConnectionsRequest.
+        r"""Gets the workspace of this ExportConnectionsRequest.
 
         工作空间id
 
@@ -54,7 +54,7 @@ class ExportConnectionsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ExportConnectionsRequest.
+        r"""Sets the workspace of this ExportConnectionsRequest.
 
         工作空间id
 

@@ -25,7 +25,7 @@ class UpdateInstanceCrossVpcIpReq:
     }
 
     def __init__(self, advertised_ip_contents=None):
-        """UpdateInstanceCrossVpcIpReq
+        r"""UpdateInstanceCrossVpcIpReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateInstanceCrossVpcIpReq:
 
     @property
     def advertised_ip_contents(self):
-        """Gets the advertised_ip_contents of this UpdateInstanceCrossVpcIpReq.
+        r"""Gets the advertised_ip_contents of this UpdateInstanceCrossVpcIpReq.
 
         用户自定义的advertised_ip_contents键值对。  键是listeners IP。  值是advertised.listeners IP，或者域名。  > IP修改未修改项也需填上。
 
@@ -53,7 +53,7 @@ class UpdateInstanceCrossVpcIpReq:
 
     @advertised_ip_contents.setter
     def advertised_ip_contents(self, advertised_ip_contents):
-        """Sets the advertised_ip_contents of this UpdateInstanceCrossVpcIpReq.
+        r"""Sets the advertised_ip_contents of this UpdateInstanceCrossVpcIpReq.
 
         用户自定义的advertised_ip_contents键值对。  键是listeners IP。  值是advertised.listeners IP，或者域名。  > IP修改未修改项也需填上。
 

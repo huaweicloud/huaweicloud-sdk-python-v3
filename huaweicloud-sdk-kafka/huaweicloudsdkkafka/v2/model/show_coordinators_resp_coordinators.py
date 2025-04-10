@@ -31,7 +31,7 @@ class ShowCoordinatorsRespCoordinators:
     }
 
     def __init__(self, group_id=None, id=None, host=None, port=None):
-        """ShowCoordinatorsRespCoordinators
+        r"""ShowCoordinatorsRespCoordinators
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowCoordinatorsRespCoordinators:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowCoordinatorsRespCoordinators.
+        r"""Gets the group_id of this ShowCoordinatorsRespCoordinators.
 
         消费组ID。
 
@@ -75,7 +75,7 @@ class ShowCoordinatorsRespCoordinators:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowCoordinatorsRespCoordinators.
+        r"""Sets the group_id of this ShowCoordinatorsRespCoordinators.
 
         消费组ID。
 
@@ -86,7 +86,7 @@ class ShowCoordinatorsRespCoordinators:
 
     @property
     def id(self):
-        """Gets the id of this ShowCoordinatorsRespCoordinators.
+        r"""Gets the id of this ShowCoordinatorsRespCoordinators.
 
         对应协调器的broker id。
 
@@ -97,7 +97,7 @@ class ShowCoordinatorsRespCoordinators:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowCoordinatorsRespCoordinators.
+        r"""Sets the id of this ShowCoordinatorsRespCoordinators.
 
         对应协调器的broker id。
 
@@ -108,7 +108,7 @@ class ShowCoordinatorsRespCoordinators:
 
     @property
     def host(self):
-        """Gets the host of this ShowCoordinatorsRespCoordinators.
+        r"""Gets the host of this ShowCoordinatorsRespCoordinators.
 
         对应协调器的地址。
 
@@ -119,7 +119,7 @@ class ShowCoordinatorsRespCoordinators:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ShowCoordinatorsRespCoordinators.
+        r"""Sets the host of this ShowCoordinatorsRespCoordinators.
 
         对应协调器的地址。
 
@@ -130,7 +130,7 @@ class ShowCoordinatorsRespCoordinators:
 
     @property
     def port(self):
-        """Gets the port of this ShowCoordinatorsRespCoordinators.
+        r"""Gets the port of this ShowCoordinatorsRespCoordinators.
 
         端口号。
 
@@ -141,7 +141,7 @@ class ShowCoordinatorsRespCoordinators:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ShowCoordinatorsRespCoordinators.
+        r"""Sets the port of this ShowCoordinatorsRespCoordinators.
 
         端口号。
 

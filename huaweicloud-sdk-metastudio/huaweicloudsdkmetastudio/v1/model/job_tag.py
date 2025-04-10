@@ -28,7 +28,7 @@ class JobTag:
     }
 
     def __init__(self):
-        """JobTag
+        r"""JobTag
 
         The model defined in huaweicloud sdk
 

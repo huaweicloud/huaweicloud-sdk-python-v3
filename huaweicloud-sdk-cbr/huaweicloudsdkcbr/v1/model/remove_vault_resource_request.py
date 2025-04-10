@@ -27,7 +27,7 @@ class RemoveVaultResourceRequest:
     }
 
     def __init__(self, vault_id=None, body=None):
-        """RemoveVaultResourceRequest
+        r"""RemoveVaultResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RemoveVaultResourceRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this RemoveVaultResourceRequest.
+        r"""Gets the vault_id of this RemoveVaultResourceRequest.
 
         存储库ID
 
@@ -60,7 +60,7 @@ class RemoveVaultResourceRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this RemoveVaultResourceRequest.
+        r"""Sets the vault_id of this RemoveVaultResourceRequest.
 
         存储库ID
 
@@ -71,7 +71,7 @@ class RemoveVaultResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this RemoveVaultResourceRequest.
+        r"""Gets the body of this RemoveVaultResourceRequest.
 
         :return: The body of this RemoveVaultResourceRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultRemoveResourceReq`
@@ -80,7 +80,7 @@ class RemoveVaultResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RemoveVaultResourceRequest.
+        r"""Sets the body of this RemoveVaultResourceRequest.
 
         :param body: The body of this RemoveVaultResourceRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.VaultRemoveResourceReq`

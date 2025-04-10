@@ -29,7 +29,7 @@ class ListAuthInfoRequest:
     }
 
     def __init__(self, auth_info_name=None, offset=None, limit=None):
-        """ListAuthInfoRequest
+        r"""ListAuthInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAuthInfoRequest:
 
     @property
     def auth_info_name(self):
-        """Gets the auth_info_name of this ListAuthInfoRequest.
+        r"""Gets the auth_info_name of this ListAuthInfoRequest.
 
         认证信息名称
 
@@ -68,7 +68,7 @@ class ListAuthInfoRequest:
 
     @auth_info_name.setter
     def auth_info_name(self, auth_info_name):
-        """Sets the auth_info_name of this ListAuthInfoRequest.
+        r"""Sets the auth_info_name of this ListAuthInfoRequest.
 
         认证信息名称
 
@@ -79,7 +79,7 @@ class ListAuthInfoRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAuthInfoRequest.
+        r"""Gets the offset of this ListAuthInfoRequest.
 
         默认为0
 
@@ -90,7 +90,7 @@ class ListAuthInfoRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAuthInfoRequest.
+        r"""Sets the offset of this ListAuthInfoRequest.
 
         默认为0
 
@@ -101,7 +101,7 @@ class ListAuthInfoRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAuthInfoRequest.
+        r"""Gets the limit of this ListAuthInfoRequest.
 
         默认为100
 
@@ -112,7 +112,7 @@ class ListAuthInfoRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAuthInfoRequest.
+        r"""Sets the limit of this ListAuthInfoRequest.
 
         默认为100
 

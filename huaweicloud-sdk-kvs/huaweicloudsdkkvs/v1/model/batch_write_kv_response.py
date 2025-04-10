@@ -26,7 +26,7 @@ class BatchWriteKvResponse(SdkResponse):
     }
 
     def __init__(self, unprocessed_opers=None):
-        """BatchWriteKvResponse
+        r"""BatchWriteKvResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchWriteKvResponse(SdkResponse):
 
     @property
     def unprocessed_opers(self):
-        """Gets the unprocessed_opers of this BatchWriteKvResponse.
+        r"""Gets the unprocessed_opers of this BatchWriteKvResponse.
 
         未处理的操作列表。
 
@@ -55,7 +55,7 @@ class BatchWriteKvResponse(SdkResponse):
 
     @unprocessed_opers.setter
     def unprocessed_opers(self, unprocessed_opers):
-        """Sets the unprocessed_opers of this BatchWriteKvResponse.
+        r"""Sets the unprocessed_opers of this BatchWriteKvResponse.
 
         未处理的操作列表。
 

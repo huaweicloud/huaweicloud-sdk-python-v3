@@ -41,7 +41,7 @@ class ListAsyncJobsRequest:
     }
 
     def __init__(self, x_language=None, async_job_id=None, status=None, domain_name=None, user_name=None, offset=None, limit=None, sort_key=None, sort_dir=None):
-        """ListAsyncJobsRequest
+        r"""ListAsyncJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListAsyncJobsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListAsyncJobsRequest.
+        r"""Gets the x_language of this ListAsyncJobsRequest.
 
         请求语言类型。
 
@@ -110,7 +110,7 @@ class ListAsyncJobsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListAsyncJobsRequest.
+        r"""Sets the x_language of this ListAsyncJobsRequest.
 
         请求语言类型。
 
@@ -121,7 +121,7 @@ class ListAsyncJobsRequest:
 
     @property
     def async_job_id(self):
-        """Gets the async_job_id of this ListAsyncJobsRequest.
+        r"""Gets the async_job_id of this ListAsyncJobsRequest.
 
         批量异步创建的任务ID。
 
@@ -132,7 +132,7 @@ class ListAsyncJobsRequest:
 
     @async_job_id.setter
     def async_job_id(self, async_job_id):
-        """Sets the async_job_id of this ListAsyncJobsRequest.
+        r"""Sets the async_job_id of this ListAsyncJobsRequest.
 
         批量异步创建的任务ID。
 
@@ -143,7 +143,7 @@ class ListAsyncJobsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAsyncJobsRequest.
+        r"""Gets the status of this ListAsyncJobsRequest.
 
         批量异步创建的任务状态。
 
@@ -154,7 +154,7 @@ class ListAsyncJobsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAsyncJobsRequest.
+        r"""Sets the status of this ListAsyncJobsRequest.
 
         批量异步创建的任务状态。
 
@@ -165,7 +165,7 @@ class ListAsyncJobsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ListAsyncJobsRequest.
+        r"""Gets the domain_name of this ListAsyncJobsRequest.
 
         批量异步创建的任务的租户名。
 
@@ -176,7 +176,7 @@ class ListAsyncJobsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ListAsyncJobsRequest.
+        r"""Sets the domain_name of this ListAsyncJobsRequest.
 
         批量异步创建的任务的租户名。
 
@@ -187,7 +187,7 @@ class ListAsyncJobsRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListAsyncJobsRequest.
+        r"""Gets the user_name of this ListAsyncJobsRequest.
 
         批量异步创建的任务的用户名。
 
@@ -198,7 +198,7 @@ class ListAsyncJobsRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListAsyncJobsRequest.
+        r"""Sets the user_name of this ListAsyncJobsRequest.
 
         批量异步创建的任务的用户名。
 
@@ -209,7 +209,7 @@ class ListAsyncJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAsyncJobsRequest.
+        r"""Gets the offset of this ListAsyncJobsRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -220,7 +220,7 @@ class ListAsyncJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAsyncJobsRequest.
+        r"""Sets the offset of this ListAsyncJobsRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -231,7 +231,7 @@ class ListAsyncJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAsyncJobsRequest.
+        r"""Gets the limit of this ListAsyncJobsRequest.
 
         查询返回记录的数量限制。
 
@@ -242,7 +242,7 @@ class ListAsyncJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAsyncJobsRequest.
+        r"""Sets the limit of this ListAsyncJobsRequest.
 
         查询返回记录的数量限制。
 
@@ -253,7 +253,7 @@ class ListAsyncJobsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListAsyncJobsRequest.
+        r"""Gets the sort_key of this ListAsyncJobsRequest.
 
         返回结果按该关键字排序，默认为“create_time”。
 
@@ -264,7 +264,7 @@ class ListAsyncJobsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListAsyncJobsRequest.
+        r"""Sets the sort_key of this ListAsyncJobsRequest.
 
         返回结果按该关键字排序，默认为“create_time”。
 
@@ -275,7 +275,7 @@ class ListAsyncJobsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListAsyncJobsRequest.
+        r"""Gets the sort_dir of this ListAsyncJobsRequest.
 
         降序或升序（分别对应desc和asc，默认为“desc”）。
 
@@ -286,7 +286,7 @@ class ListAsyncJobsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListAsyncJobsRequest.
+        r"""Sets the sort_dir of this ListAsyncJobsRequest.
 
         降序或升序（分别对应desc和asc，默认为“desc”）。
 

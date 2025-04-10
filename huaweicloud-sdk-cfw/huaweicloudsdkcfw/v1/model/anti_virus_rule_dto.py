@@ -27,7 +27,7 @@ class AntiVirusRuleDto:
     }
 
     def __init__(self, object_id=None, scan_protocol_configs=None):
-        """AntiVirusRuleDto
+        r"""AntiVirusRuleDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AntiVirusRuleDto:
 
     @property
     def object_id(self):
-        """Gets the object_id of this AntiVirusRuleDto.
+        r"""Gets the object_id of this AntiVirusRuleDto.
 
         防护对象ID
 
@@ -61,7 +61,7 @@ class AntiVirusRuleDto:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this AntiVirusRuleDto.
+        r"""Sets the object_id of this AntiVirusRuleDto.
 
         防护对象ID
 
@@ -72,7 +72,7 @@ class AntiVirusRuleDto:
 
     @property
     def scan_protocol_configs(self):
-        """Gets the scan_protocol_configs of this AntiVirusRuleDto.
+        r"""Gets the scan_protocol_configs of this AntiVirusRuleDto.
 
         扫描协议配置
 
@@ -83,7 +83,7 @@ class AntiVirusRuleDto:
 
     @scan_protocol_configs.setter
     def scan_protocol_configs(self, scan_protocol_configs):
-        """Sets the scan_protocol_configs of this AntiVirusRuleDto.
+        r"""Sets the scan_protocol_configs of this AntiVirusRuleDto.
 
         扫描协议配置
 

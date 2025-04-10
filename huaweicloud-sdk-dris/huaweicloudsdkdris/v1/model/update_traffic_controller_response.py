@@ -54,7 +54,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
     }
 
     def __init__(self, traffic_controller_id=None, esn=None, name=None, description=None, lat=None, lon=None, ele=None, pos_description=None, installation_mode=None, road_name=None, link_id=None, status=None, last_modified_time=None, created_time=None, last_online_time=None):
-        """UpdateTrafficControllerResponse
+        r"""UpdateTrafficControllerResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @property
     def traffic_controller_id(self):
-        """Gets the traffic_controller_id of this UpdateTrafficControllerResponse.
+        r"""Gets the traffic_controller_id of this UpdateTrafficControllerResponse.
 
         **参数说明**：信号机设备ID，全局唯一。
 
@@ -153,7 +153,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @traffic_controller_id.setter
     def traffic_controller_id(self, traffic_controller_id):
-        """Sets the traffic_controller_id of this UpdateTrafficControllerResponse.
+        r"""Sets the traffic_controller_id of this UpdateTrafficControllerResponse.
 
         **参数说明**：信号机设备ID，全局唯一。
 
@@ -164,7 +164,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @property
     def esn(self):
-        """Gets the esn of this UpdateTrafficControllerResponse.
+        r"""Gets the esn of this UpdateTrafficControllerResponse.
 
         \"**参数说明**：序列号。  **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。 
 
@@ -175,7 +175,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this UpdateTrafficControllerResponse.
+        r"""Sets the esn of this UpdateTrafficControllerResponse.
 
         \"**参数说明**：序列号。  **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。 
 
@@ -186,7 +186,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateTrafficControllerResponse.
+        r"""Gets the name of this UpdateTrafficControllerResponse.
 
         **参数说明**：名称。
 
@@ -197,7 +197,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTrafficControllerResponse.
+        r"""Sets the name of this UpdateTrafficControllerResponse.
 
         **参数说明**：名称。
 
@@ -208,7 +208,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateTrafficControllerResponse.
+        r"""Gets the description of this UpdateTrafficControllerResponse.
 
         **参数说明**：描述。  **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。 
 
@@ -219,7 +219,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateTrafficControllerResponse.
+        r"""Sets the description of this UpdateTrafficControllerResponse.
 
         **参数说明**：描述。  **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。 
 
@@ -230,7 +230,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @property
     def lat(self):
-        """Gets the lat of this UpdateTrafficControllerResponse.
+        r"""Gets the lat of this UpdateTrafficControllerResponse.
 
         **参数说明**：定义纬度数值，北纬为正，南纬为负，单位°，精度小数点后7位。
 
@@ -241,7 +241,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @lat.setter
     def lat(self, lat):
-        """Sets the lat of this UpdateTrafficControllerResponse.
+        r"""Sets the lat of this UpdateTrafficControllerResponse.
 
         **参数说明**：定义纬度数值，北纬为正，南纬为负，单位°，精度小数点后7位。
 
@@ -252,7 +252,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @property
     def lon(self):
-        """Gets the lon of this UpdateTrafficControllerResponse.
+        r"""Gets the lon of this UpdateTrafficControllerResponse.
 
         **参数说明**：定义经度数值。东经为正，西经为负，单位°，精度小数点后7位。
 
@@ -263,7 +263,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @lon.setter
     def lon(self, lon):
-        """Sets the lon of this UpdateTrafficControllerResponse.
+        r"""Sets the lon of this UpdateTrafficControllerResponse.
 
         **参数说明**：定义经度数值。东经为正，西经为负，单位°，精度小数点后7位。
 
@@ -274,7 +274,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @property
     def ele(self):
-        """Gets the ele of this UpdateTrafficControllerResponse.
+        r"""Gets the ele of this UpdateTrafficControllerResponse.
 
         **参数说明**：定义海拔高程，可选，单位为分米。
 
@@ -285,7 +285,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @ele.setter
     def ele(self, ele):
-        """Sets the ele of this UpdateTrafficControllerResponse.
+        r"""Sets the ele of this UpdateTrafficControllerResponse.
 
         **参数说明**：定义海拔高程，可选，单位为分米。
 
@@ -296,7 +296,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @property
     def pos_description(self):
-        """Gets the pos_description of this UpdateTrafficControllerResponse.
+        r"""Gets the pos_description of this UpdateTrafficControllerResponse.
 
         **参数说明**：位置说明。  **取值范围**：长度不超过128，只允许字母、数字、以及_等字符的组合。 
 
@@ -307,7 +307,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @pos_description.setter
     def pos_description(self, pos_description):
-        """Sets the pos_description of this UpdateTrafficControllerResponse.
+        r"""Sets the pos_description of this UpdateTrafficControllerResponse.
 
         **参数说明**：位置说明。  **取值范围**：长度不超过128，只允许字母、数字、以及_等字符的组合。 
 
@@ -318,7 +318,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @property
     def installation_mode(self):
-        """Gets the installation_mode of this UpdateTrafficControllerResponse.
+        r"""Gets the installation_mode of this UpdateTrafficControllerResponse.
 
         **参数说明**：架设方式。  **取值范围**： - columnar：柱式 - road-side-attach：路侧附着式 - cantilever：悬臂式 - gantry：门架式 - lane-above-attach：车行道上方附着式 
 
@@ -329,7 +329,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @installation_mode.setter
     def installation_mode(self, installation_mode):
-        """Sets the installation_mode of this UpdateTrafficControllerResponse.
+        r"""Sets the installation_mode of this UpdateTrafficControllerResponse.
 
         **参数说明**：架设方式。  **取值范围**： - columnar：柱式 - road-side-attach：路侧附着式 - cantilever：悬臂式 - gantry：门架式 - lane-above-attach：车行道上方附着式 
 
@@ -340,7 +340,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @property
     def road_name(self):
-        """Gets the road_name of this UpdateTrafficControllerResponse.
+        r"""Gets the road_name of this UpdateTrafficControllerResponse.
 
         **参数说明**：所属道路名称，比如高速名称。  **取值范围**：长度不超过64，只允许汉字、字母、数字、以及_-等字符的组合。 
 
@@ -351,7 +351,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @road_name.setter
     def road_name(self, road_name):
-        """Sets the road_name of this UpdateTrafficControllerResponse.
+        r"""Sets the road_name of this UpdateTrafficControllerResponse.
 
         **参数说明**：所属道路名称，比如高速名称。  **取值范围**：长度不超过64，只允许汉字、字母、数字、以及_-等字符的组合。 
 
@@ -362,7 +362,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @property
     def link_id(self):
-        """Gets the link_id of this UpdateTrafficControllerResponse.
+        r"""Gets the link_id of this UpdateTrafficControllerResponse.
 
         **参数说明**：信号机设备所属路段ID。  **取值范围**：长度等于30，只允许大写字母、数字。 
 
@@ -373,7 +373,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @link_id.setter
     def link_id(self, link_id):
-        """Sets the link_id of this UpdateTrafficControllerResponse.
+        r"""Sets the link_id of this UpdateTrafficControllerResponse.
 
         **参数说明**：信号机设备所属路段ID。  **取值范围**：长度等于30，只允许大写字母、数字。 
 
@@ -384,7 +384,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateTrafficControllerResponse.
+        r"""Gets the status of this UpdateTrafficControllerResponse.
 
         **参数说明**：设备状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - INITIAL：初始化 
 
@@ -395,7 +395,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateTrafficControllerResponse.
+        r"""Sets the status of this UpdateTrafficControllerResponse.
 
         **参数说明**：设备状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - INITIAL：初始化 
 
@@ -406,7 +406,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this UpdateTrafficControllerResponse.
+        r"""Gets the last_modified_time of this UpdateTrafficControllerResponse.
 
         **参数说明**：最后修改的时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z
 
@@ -417,7 +417,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this UpdateTrafficControllerResponse.
+        r"""Sets the last_modified_time of this UpdateTrafficControllerResponse.
 
         **参数说明**：最后修改的时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z
 
@@ -428,7 +428,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this UpdateTrafficControllerResponse.
+        r"""Gets the created_time of this UpdateTrafficControllerResponse.
 
         **参数说明**：创建的时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z
 
@@ -439,7 +439,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this UpdateTrafficControllerResponse.
+        r"""Sets the created_time of this UpdateTrafficControllerResponse.
 
         **参数说明**：创建的时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z
 
@@ -450,7 +450,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @property
     def last_online_time(self):
-        """Gets the last_online_time of this UpdateTrafficControllerResponse.
+        r"""Gets the last_online_time of this UpdateTrafficControllerResponse.
 
         **参数说明**：最后的在线时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z
 
@@ -461,7 +461,7 @@ class UpdateTrafficControllerResponse(SdkResponse):
 
     @last_online_time.setter
     def last_online_time(self, last_online_time):
-        """Sets the last_online_time of this UpdateTrafficControllerResponse.
+        r"""Sets the last_online_time of this UpdateTrafficControllerResponse.
 
         **参数说明**：最后的在线时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z
 

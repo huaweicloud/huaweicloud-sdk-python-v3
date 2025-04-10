@@ -29,7 +29,7 @@ class AddDesktopSubResourcesReq:
     }
 
     def __init__(self, sub_resource_sku=None, order_id=None, desktop_ids=None):
-        """AddDesktopSubResourcesReq
+        r"""AddDesktopSubResourcesReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AddDesktopSubResourcesReq:
 
     @property
     def sub_resource_sku(self):
-        """Gets the sub_resource_sku of this AddDesktopSubResourcesReq.
+        r"""Gets the sub_resource_sku of this AddDesktopSubResourcesReq.
 
         桌面协同资源SKU码
 
@@ -66,7 +66,7 @@ class AddDesktopSubResourcesReq:
 
     @sub_resource_sku.setter
     def sub_resource_sku(self, sub_resource_sku):
-        """Sets the sub_resource_sku of this AddDesktopSubResourcesReq.
+        r"""Sets the sub_resource_sku of this AddDesktopSubResourcesReq.
 
         桌面协同资源SKU码
 
@@ -77,7 +77,7 @@ class AddDesktopSubResourcesReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this AddDesktopSubResourcesReq.
+        r"""Gets the order_id of this AddDesktopSubResourcesReq.
 
         订单ID
 
@@ -88,7 +88,7 @@ class AddDesktopSubResourcesReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this AddDesktopSubResourcesReq.
+        r"""Sets the order_id of this AddDesktopSubResourcesReq.
 
         订单ID
 
@@ -99,7 +99,7 @@ class AddDesktopSubResourcesReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this AddDesktopSubResourcesReq.
+        r"""Gets the desktop_ids of this AddDesktopSubResourcesReq.
 
         桌面ID列表
 
@@ -110,7 +110,7 @@ class AddDesktopSubResourcesReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this AddDesktopSubResourcesReq.
+        r"""Sets the desktop_ids of this AddDesktopSubResourcesReq.
 
         桌面ID列表
 

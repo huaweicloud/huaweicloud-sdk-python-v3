@@ -28,7 +28,7 @@ class ListDesktopOperationsResponse(SdkResponse):
     }
 
     def __init__(self, operations=None, total_count=None):
-        """ListDesktopOperationsResponse
+        r"""ListDesktopOperationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDesktopOperationsResponse(SdkResponse):
 
     @property
     def operations(self):
-        """Gets the operations of this ListDesktopOperationsResponse.
+        r"""Gets the operations of this ListDesktopOperationsResponse.
 
         操作记录。
 
@@ -62,7 +62,7 @@ class ListDesktopOperationsResponse(SdkResponse):
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this ListDesktopOperationsResponse.
+        r"""Sets the operations of this ListDesktopOperationsResponse.
 
         操作记录。
 
@@ -73,7 +73,7 @@ class ListDesktopOperationsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDesktopOperationsResponse.
+        r"""Gets the total_count of this ListDesktopOperationsResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ListDesktopOperationsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDesktopOperationsResponse.
+        r"""Sets the total_count of this ListDesktopOperationsResponse.
 
         总数。
 

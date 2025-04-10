@@ -33,7 +33,7 @@ class DataClassificationSingleRuleDTO:
     }
 
     def __init__(self, rule_code=None, algorithm_type=None, match_type=None, expression=None, builtin_rule_id=None):
-        """DataClassificationSingleRuleDTO
+        r"""DataClassificationSingleRuleDTO
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class DataClassificationSingleRuleDTO:
 
     @property
     def rule_code(self):
-        """Gets the rule_code of this DataClassificationSingleRuleDTO.
+        r"""Gets the rule_code of this DataClassificationSingleRuleDTO.
 
         规则序号,大写字母
 
@@ -78,7 +78,7 @@ class DataClassificationSingleRuleDTO:
 
     @rule_code.setter
     def rule_code(self, rule_code):
-        """Sets the rule_code of this DataClassificationSingleRuleDTO.
+        r"""Sets the rule_code of this DataClassificationSingleRuleDTO.
 
         规则序号,大写字母
 
@@ -89,7 +89,7 @@ class DataClassificationSingleRuleDTO:
 
     @property
     def algorithm_type(self):
-        """Gets the algorithm_type of this DataClassificationSingleRuleDTO.
+        r"""Gets the algorithm_type of this DataClassificationSingleRuleDTO.
 
         算法类型, REGEX,REGEX_INSENSITIVE,GROOVY,LENGTH_EQ,LENGTH_GT,LENGTH_LT,BUILTIN
 
@@ -100,7 +100,7 @@ class DataClassificationSingleRuleDTO:
 
     @algorithm_type.setter
     def algorithm_type(self, algorithm_type):
-        """Sets the algorithm_type of this DataClassificationSingleRuleDTO.
+        r"""Sets the algorithm_type of this DataClassificationSingleRuleDTO.
 
         算法类型, REGEX,REGEX_INSENSITIVE,GROOVY,LENGTH_EQ,LENGTH_GT,LENGTH_LT,BUILTIN
 
@@ -111,7 +111,7 @@ class DataClassificationSingleRuleDTO:
 
     @property
     def match_type(self):
-        """Gets the match_type of this DataClassificationSingleRuleDTO.
+        r"""Gets the match_type of this DataClassificationSingleRuleDTO.
 
         匹配类型, CONTENT,COLUMN,COMMIT,TABLE_NAME,TABLE_COMMENT,DATABASE_NAME
 
@@ -122,7 +122,7 @@ class DataClassificationSingleRuleDTO:
 
     @match_type.setter
     def match_type(self, match_type):
-        """Sets the match_type of this DataClassificationSingleRuleDTO.
+        r"""Sets the match_type of this DataClassificationSingleRuleDTO.
 
         匹配类型, CONTENT,COLUMN,COMMIT,TABLE_NAME,TABLE_COMMENT,DATABASE_NAME
 
@@ -133,7 +133,7 @@ class DataClassificationSingleRuleDTO:
 
     @property
     def expression(self):
-        """Gets the expression of this DataClassificationSingleRuleDTO.
+        r"""Gets the expression of this DataClassificationSingleRuleDTO.
 
         expression
 
@@ -144,7 +144,7 @@ class DataClassificationSingleRuleDTO:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this DataClassificationSingleRuleDTO.
+        r"""Sets the expression of this DataClassificationSingleRuleDTO.
 
         expression
 
@@ -155,7 +155,7 @@ class DataClassificationSingleRuleDTO:
 
     @property
     def builtin_rule_id(self):
-        """Gets the builtin_rule_id of this DataClassificationSingleRuleDTO.
+        r"""Gets the builtin_rule_id of this DataClassificationSingleRuleDTO.
 
         内置规则ID
 
@@ -166,7 +166,7 @@ class DataClassificationSingleRuleDTO:
 
     @builtin_rule_id.setter
     def builtin_rule_id(self, builtin_rule_id):
-        """Sets the builtin_rule_id of this DataClassificationSingleRuleDTO.
+        r"""Sets the builtin_rule_id of this DataClassificationSingleRuleDTO.
 
         内置规则ID
 

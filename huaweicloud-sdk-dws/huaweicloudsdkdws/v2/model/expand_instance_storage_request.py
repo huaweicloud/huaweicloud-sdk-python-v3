@@ -27,7 +27,7 @@ class ExpandInstanceStorageRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """ExpandInstanceStorageRequest
+        r"""ExpandInstanceStorageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExpandInstanceStorageRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ExpandInstanceStorageRequest.
+        r"""Gets the cluster_id of this ExpandInstanceStorageRequest.
 
         集群的ID。
 
@@ -60,7 +60,7 @@ class ExpandInstanceStorageRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ExpandInstanceStorageRequest.
+        r"""Sets the cluster_id of this ExpandInstanceStorageRequest.
 
         集群的ID。
 
@@ -71,7 +71,7 @@ class ExpandInstanceStorageRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExpandInstanceStorageRequest.
+        r"""Gets the body of this ExpandInstanceStorageRequest.
 
         :return: The body of this ExpandInstanceStorageRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.ExpandInstanceStorage`
@@ -80,7 +80,7 @@ class ExpandInstanceStorageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExpandInstanceStorageRequest.
+        r"""Sets the body of this ExpandInstanceStorageRequest.
 
         :param body: The body of this ExpandInstanceStorageRequest.
         :type body: :class:`huaweicloudsdkdws.v2.ExpandInstanceStorage`

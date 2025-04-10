@@ -33,7 +33,7 @@ class MemberInvitor:
     }
 
     def __init__(self, invitor_bcs_id=None, invitor_bcs_name=None, invitor_project_id=None, invitor_user_id=None, invitor_username=None):
-        """MemberInvitor
+        r"""MemberInvitor
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MemberInvitor:
 
     @property
     def invitor_bcs_id(self):
-        """Gets the invitor_bcs_id of this MemberInvitor.
+        r"""Gets the invitor_bcs_id of this MemberInvitor.
 
         邀请方BCS服务实例ID
 
@@ -82,7 +82,7 @@ class MemberInvitor:
 
     @invitor_bcs_id.setter
     def invitor_bcs_id(self, invitor_bcs_id):
-        """Sets the invitor_bcs_id of this MemberInvitor.
+        r"""Sets the invitor_bcs_id of this MemberInvitor.
 
         邀请方BCS服务实例ID
 
@@ -93,7 +93,7 @@ class MemberInvitor:
 
     @property
     def invitor_bcs_name(self):
-        """Gets the invitor_bcs_name of this MemberInvitor.
+        r"""Gets the invitor_bcs_name of this MemberInvitor.
 
         邀请方BCS服务实例名称
 
@@ -104,7 +104,7 @@ class MemberInvitor:
 
     @invitor_bcs_name.setter
     def invitor_bcs_name(self, invitor_bcs_name):
-        """Sets the invitor_bcs_name of this MemberInvitor.
+        r"""Sets the invitor_bcs_name of this MemberInvitor.
 
         邀请方BCS服务实例名称
 
@@ -115,7 +115,7 @@ class MemberInvitor:
 
     @property
     def invitor_project_id(self):
-        """Gets the invitor_project_id of this MemberInvitor.
+        r"""Gets the invitor_project_id of this MemberInvitor.
 
         邀请方project id
 
@@ -126,7 +126,7 @@ class MemberInvitor:
 
     @invitor_project_id.setter
     def invitor_project_id(self, invitor_project_id):
-        """Sets the invitor_project_id of this MemberInvitor.
+        r"""Sets the invitor_project_id of this MemberInvitor.
 
         邀请方project id
 
@@ -137,7 +137,7 @@ class MemberInvitor:
 
     @property
     def invitor_user_id(self):
-        """Gets the invitor_user_id of this MemberInvitor.
+        r"""Gets the invitor_user_id of this MemberInvitor.
 
         邀请方租户id
 
@@ -148,7 +148,7 @@ class MemberInvitor:
 
     @invitor_user_id.setter
     def invitor_user_id(self, invitor_user_id):
-        """Sets the invitor_user_id of this MemberInvitor.
+        r"""Sets the invitor_user_id of this MemberInvitor.
 
         邀请方租户id
 
@@ -159,7 +159,7 @@ class MemberInvitor:
 
     @property
     def invitor_username(self):
-        """Gets the invitor_username of this MemberInvitor.
+        r"""Gets the invitor_username of this MemberInvitor.
 
         邀请方租户名
 
@@ -170,7 +170,7 @@ class MemberInvitor:
 
     @invitor_username.setter
     def invitor_username(self, invitor_username):
-        """Sets the invitor_username of this MemberInvitor.
+        r"""Sets the invitor_username of this MemberInvitor.
 
         邀请方租户名
 

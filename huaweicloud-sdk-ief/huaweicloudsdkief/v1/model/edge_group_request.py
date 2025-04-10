@@ -33,7 +33,7 @@ class EdgeGroupRequest:
     }
 
     def __init__(self, name=None, description=None, node_ids=None, tags=None, device_ids=None):
-        """EdgeGroupRequest
+        r"""EdgeGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class EdgeGroupRequest:
 
     @property
     def name(self):
-        """Gets the name of this EdgeGroupRequest.
+        r"""Gets the name of this EdgeGroupRequest.
 
         节点组名称。只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -81,7 +81,7 @@ class EdgeGroupRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EdgeGroupRequest.
+        r"""Sets the name of this EdgeGroupRequest.
 
         节点组名称。只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -92,7 +92,7 @@ class EdgeGroupRequest:
 
     @property
     def description(self):
-        """Gets the description of this EdgeGroupRequest.
+        r"""Gets the description of this EdgeGroupRequest.
 
         节点组描述。最大长度255个字符
 
@@ -103,7 +103,7 @@ class EdgeGroupRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EdgeGroupRequest.
+        r"""Sets the description of this EdgeGroupRequest.
 
         节点组描述。最大长度255个字符
 
@@ -114,7 +114,7 @@ class EdgeGroupRequest:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this EdgeGroupRequest.
+        r"""Gets the node_ids of this EdgeGroupRequest.
 
         节点组绑定的节点ID列表
 
@@ -125,7 +125,7 @@ class EdgeGroupRequest:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this EdgeGroupRequest.
+        r"""Sets the node_ids of this EdgeGroupRequest.
 
         节点组绑定的节点ID列表
 
@@ -136,7 +136,7 @@ class EdgeGroupRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this EdgeGroupRequest.
+        r"""Gets the tags of this EdgeGroupRequest.
 
         节点组标签
 
@@ -147,7 +147,7 @@ class EdgeGroupRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this EdgeGroupRequest.
+        r"""Sets the tags of this EdgeGroupRequest.
 
         节点组标签
 
@@ -158,7 +158,7 @@ class EdgeGroupRequest:
 
     @property
     def device_ids(self):
-        """Gets the device_ids of this EdgeGroupRequest.
+        r"""Gets the device_ids of this EdgeGroupRequest.
 
         节点组绑定的终端设备ID列表
 
@@ -169,7 +169,7 @@ class EdgeGroupRequest:
 
     @device_ids.setter
     def device_ids(self, device_ids):
-        """Sets the device_ids of this EdgeGroupRequest.
+        r"""Sets the device_ids of this EdgeGroupRequest.
 
         节点组绑定的终端设备ID列表
 

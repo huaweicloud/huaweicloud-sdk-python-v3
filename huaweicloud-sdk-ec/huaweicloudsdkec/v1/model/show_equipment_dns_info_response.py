@@ -28,7 +28,7 @@ class ShowEquipmentDnsInfoResponse(SdkResponse):
     }
 
     def __init__(self, master_dns=None, slave_dns=None):
-        """ShowEquipmentDnsInfoResponse
+        r"""ShowEquipmentDnsInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowEquipmentDnsInfoResponse(SdkResponse):
 
     @property
     def master_dns(self):
-        """Gets the master_dns of this ShowEquipmentDnsInfoResponse.
+        r"""Gets the master_dns of this ShowEquipmentDnsInfoResponse.
 
         主DNS
 
@@ -62,7 +62,7 @@ class ShowEquipmentDnsInfoResponse(SdkResponse):
 
     @master_dns.setter
     def master_dns(self, master_dns):
-        """Sets the master_dns of this ShowEquipmentDnsInfoResponse.
+        r"""Sets the master_dns of this ShowEquipmentDnsInfoResponse.
 
         主DNS
 
@@ -73,7 +73,7 @@ class ShowEquipmentDnsInfoResponse(SdkResponse):
 
     @property
     def slave_dns(self):
-        """Gets the slave_dns of this ShowEquipmentDnsInfoResponse.
+        r"""Gets the slave_dns of this ShowEquipmentDnsInfoResponse.
 
         备DNS
 
@@ -84,7 +84,7 @@ class ShowEquipmentDnsInfoResponse(SdkResponse):
 
     @slave_dns.setter
     def slave_dns(self, slave_dns):
-        """Sets the slave_dns of this ShowEquipmentDnsInfoResponse.
+        r"""Sets the slave_dns of this ShowEquipmentDnsInfoResponse.
 
         备DNS
 

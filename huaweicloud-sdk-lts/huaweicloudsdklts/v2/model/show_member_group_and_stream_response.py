@@ -26,7 +26,7 @@ class ShowMemberGroupAndStreamResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """ShowMemberGroupAndStreamResponse
+        r"""ShowMemberGroupAndStreamResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowMemberGroupAndStreamResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ShowMemberGroupAndStreamResponse.
+        r"""Gets the results of this ShowMemberGroupAndStreamResponse.
 
         :return: The results of this ShowMemberGroupAndStreamResponse.
         :rtype: list[:class:`huaweicloudsdklts.v2.MemberGroupandStreamResults`]
@@ -53,7 +53,7 @@ class ShowMemberGroupAndStreamResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ShowMemberGroupAndStreamResponse.
+        r"""Sets the results of this ShowMemberGroupAndStreamResponse.
 
         :param results: The results of this ShowMemberGroupAndStreamResponse.
         :type results: list[:class:`huaweicloudsdklts.v2.MemberGroupandStreamResults`]

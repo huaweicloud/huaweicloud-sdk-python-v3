@@ -41,7 +41,7 @@ class Snapshots:
     }
 
     def __init__(self, id=None, name=None, description=None, started=None, finished=None, size=None, status=None, type=None, cluster_id=None):
-        """Snapshots
+        r"""Snapshots
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class Snapshots:
 
     @property
     def id(self):
-        """Gets the id of this Snapshots.
+        r"""Gets the id of this Snapshots.
 
         快照ID。
 
@@ -101,7 +101,7 @@ class Snapshots:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Snapshots.
+        r"""Sets the id of this Snapshots.
 
         快照ID。
 
@@ -112,7 +112,7 @@ class Snapshots:
 
     @property
     def name(self):
-        """Gets the name of this Snapshots.
+        r"""Gets the name of this Snapshots.
 
         快照名称。
 
@@ -123,7 +123,7 @@ class Snapshots:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Snapshots.
+        r"""Sets the name of this Snapshots.
 
         快照名称。
 
@@ -134,7 +134,7 @@ class Snapshots:
 
     @property
     def description(self):
-        """Gets the description of this Snapshots.
+        r"""Gets the description of this Snapshots.
 
         快照描述。
 
@@ -145,7 +145,7 @@ class Snapshots:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Snapshots.
+        r"""Sets the description of this Snapshots.
 
         快照描述。
 
@@ -156,7 +156,7 @@ class Snapshots:
 
     @property
     def started(self):
-        """Gets the started of this Snapshots.
+        r"""Gets the started of this Snapshots.
 
         快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
 
@@ -167,7 +167,7 @@ class Snapshots:
 
     @started.setter
     def started(self, started):
-        """Sets the started of this Snapshots.
+        r"""Sets the started of this Snapshots.
 
         快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
 
@@ -178,7 +178,7 @@ class Snapshots:
 
     @property
     def finished(self):
-        """Gets the finished of this Snapshots.
+        r"""Gets the finished of this Snapshots.
 
         快照完成的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
 
@@ -189,7 +189,7 @@ class Snapshots:
 
     @finished.setter
     def finished(self, finished):
-        """Sets the finished of this Snapshots.
+        r"""Sets the finished of this Snapshots.
 
         快照完成的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。
 
@@ -200,7 +200,7 @@ class Snapshots:
 
     @property
     def size(self):
-        """Gets the size of this Snapshots.
+        r"""Gets the size of this Snapshots.
 
         快照大小，单位 GB。
 
@@ -211,7 +211,7 @@ class Snapshots:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Snapshots.
+        r"""Sets the size of this Snapshots.
 
         快照大小，单位 GB。
 
@@ -222,7 +222,7 @@ class Snapshots:
 
     @property
     def status(self):
-        """Gets the status of this Snapshots.
+        r"""Gets the status of this Snapshots.
 
         快照状态：  - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
 
@@ -233,7 +233,7 @@ class Snapshots:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Snapshots.
+        r"""Sets the status of this Snapshots.
 
         快照状态：  - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
 
@@ -244,7 +244,7 @@ class Snapshots:
 
     @property
     def type(self):
-        """Gets the type of this Snapshots.
+        r"""Gets the type of this Snapshots.
 
         快照创建类型
 
@@ -255,7 +255,7 @@ class Snapshots:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Snapshots.
+        r"""Sets the type of this Snapshots.
 
         快照创建类型
 
@@ -266,7 +266,7 @@ class Snapshots:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this Snapshots.
+        r"""Gets the cluster_id of this Snapshots.
 
         快照对应的集群ID
 
@@ -277,7 +277,7 @@ class Snapshots:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this Snapshots.
+        r"""Sets the cluster_id of this Snapshots.
 
         快照对应的集群ID
 

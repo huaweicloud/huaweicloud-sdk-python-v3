@@ -29,7 +29,7 @@ class MetricDemision:
     }
 
     def __init__(self, namespace=None, metric_name=None, dimensions=None):
-        """MetricDemision
+        r"""MetricDemision
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MetricDemision:
 
     @property
     def namespace(self):
-        """Gets the namespace of this MetricDemision.
+        r"""Gets the namespace of this MetricDemision.
 
         命名空间
 
@@ -68,7 +68,7 @@ class MetricDemision:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this MetricDemision.
+        r"""Sets the namespace of this MetricDemision.
 
         命名空间
 
@@ -79,7 +79,7 @@ class MetricDemision:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this MetricDemision.
+        r"""Gets the metric_name of this MetricDemision.
 
         指标名称
 
@@ -90,7 +90,7 @@ class MetricDemision:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this MetricDemision.
+        r"""Sets the metric_name of this MetricDemision.
 
         指标名称
 
@@ -101,7 +101,7 @@ class MetricDemision:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this MetricDemision.
+        r"""Gets the dimensions of this MetricDemision.
 
         维度列表
 
@@ -112,7 +112,7 @@ class MetricDemision:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this MetricDemision.
+        r"""Sets the dimensions of this MetricDemision.
 
         维度列表
 

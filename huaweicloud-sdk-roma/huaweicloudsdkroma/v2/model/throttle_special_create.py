@@ -29,7 +29,7 @@ class ThrottleSpecialCreate:
     }
 
     def __init__(self, call_limits=None, object_id=None, object_type=None):
-        """ThrottleSpecialCreate
+        r"""ThrottleSpecialCreate
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ThrottleSpecialCreate:
 
     @property
     def call_limits(self):
-        """Gets the call_limits of this ThrottleSpecialCreate.
+        r"""Gets the call_limits of this ThrottleSpecialCreate.
 
         流控时间内特殊对象能够访问API的最大次数限制
 
@@ -65,7 +65,7 @@ class ThrottleSpecialCreate:
 
     @call_limits.setter
     def call_limits(self, call_limits):
-        """Sets the call_limits of this ThrottleSpecialCreate.
+        r"""Sets the call_limits of this ThrottleSpecialCreate.
 
         流控时间内特殊对象能够访问API的最大次数限制
 
@@ -76,7 +76,7 @@ class ThrottleSpecialCreate:
 
     @property
     def object_id(self):
-        """Gets the object_id of this ThrottleSpecialCreate.
+        r"""Gets the object_id of this ThrottleSpecialCreate.
 
         特殊APP的编号[或特殊租户的帐号ID](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)
 
@@ -87,7 +87,7 @@ class ThrottleSpecialCreate:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this ThrottleSpecialCreate.
+        r"""Sets the object_id of this ThrottleSpecialCreate.
 
         特殊APP的编号[或特殊租户的帐号ID](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)
 
@@ -98,7 +98,7 @@ class ThrottleSpecialCreate:
 
     @property
     def object_type(self):
-        """Gets the object_type of this ThrottleSpecialCreate.
+        r"""Gets the object_type of this ThrottleSpecialCreate.
 
         特殊对象类型
 
@@ -109,7 +109,7 @@ class ThrottleSpecialCreate:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this ThrottleSpecialCreate.
+        r"""Sets the object_type of this ThrottleSpecialCreate.
 
         特殊对象类型
 

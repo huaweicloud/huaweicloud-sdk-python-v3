@@ -26,7 +26,7 @@ class ListApicGroupsResponse(SdkResponse):
     }
 
     def __init__(self, gateway_groups=None):
-        """ListApicGroupsResponse
+        r"""ListApicGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListApicGroupsResponse(SdkResponse):
 
     @property
     def gateway_groups(self):
-        """Gets the gateway_groups of this ListApicGroupsResponse.
+        r"""Gets the gateway_groups of this ListApicGroupsResponse.
 
         网关分组列表
 
@@ -55,7 +55,7 @@ class ListApicGroupsResponse(SdkResponse):
 
     @gateway_groups.setter
     def gateway_groups(self, gateway_groups):
-        """Sets the gateway_groups of this ListApicGroupsResponse.
+        r"""Sets the gateway_groups of this ListApicGroupsResponse.
 
         网关分组列表
 

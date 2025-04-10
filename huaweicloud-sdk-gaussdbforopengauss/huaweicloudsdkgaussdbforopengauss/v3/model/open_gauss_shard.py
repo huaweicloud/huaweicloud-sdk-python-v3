@@ -25,7 +25,7 @@ class OpenGaussShard:
     }
 
     def __init__(self, count=None):
-        """OpenGaussShard
+        r"""OpenGaussShard
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OpenGaussShard:
 
     @property
     def count(self):
-        """Gets the count of this OpenGaussShard.
+        r"""Gets the count of this OpenGaussShard.
 
         新增的DN分片扩容数大小
 
@@ -53,7 +53,7 @@ class OpenGaussShard:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this OpenGaussShard.
+        r"""Sets the count of this OpenGaussShard.
 
         新增的DN分片扩容数大小
 

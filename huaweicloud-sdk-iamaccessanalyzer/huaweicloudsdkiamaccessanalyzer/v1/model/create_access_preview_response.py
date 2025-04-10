@@ -26,7 +26,7 @@ class CreateAccessPreviewResponse(SdkResponse):
     }
 
     def __init__(self, access_preview_id=None):
-        """CreateAccessPreviewResponse
+        r"""CreateAccessPreviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateAccessPreviewResponse(SdkResponse):
 
     @property
     def access_preview_id(self):
-        """Gets the access_preview_id of this CreateAccessPreviewResponse.
+        r"""Gets the access_preview_id of this CreateAccessPreviewResponse.
 
         访问预览的唯一标识符。
 
@@ -55,7 +55,7 @@ class CreateAccessPreviewResponse(SdkResponse):
 
     @access_preview_id.setter
     def access_preview_id(self, access_preview_id):
-        """Sets the access_preview_id of this CreateAccessPreviewResponse.
+        r"""Sets the access_preview_id of this CreateAccessPreviewResponse.
 
         访问预览的唯一标识符。
 

@@ -27,7 +27,7 @@ class StartupInstanceRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """StartupInstanceRequest
+        r"""StartupInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartupInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this StartupInstanceRequest.
+        r"""Gets the x_language of this StartupInstanceRequest.
 
         语言
 
@@ -60,7 +60,7 @@ class StartupInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this StartupInstanceRequest.
+        r"""Sets the x_language of this StartupInstanceRequest.
 
         语言
 
@@ -71,7 +71,7 @@ class StartupInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StartupInstanceRequest.
+        r"""Gets the instance_id of this StartupInstanceRequest.
 
         实例ID。
 
@@ -82,7 +82,7 @@ class StartupInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StartupInstanceRequest.
+        r"""Sets the instance_id of this StartupInstanceRequest.
 
         实例ID。
 

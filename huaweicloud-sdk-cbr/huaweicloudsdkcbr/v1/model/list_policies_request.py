@@ -27,7 +27,7 @@ class ListPoliciesRequest:
     }
 
     def __init__(self, operation_type=None, vault_id=None):
-        """ListPoliciesRequest
+        r"""ListPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListPoliciesRequest:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this ListPoliciesRequest.
+        r"""Gets the operation_type of this ListPoliciesRequest.
 
         策略类型：备份（backup）、复制(replication)
 
@@ -61,7 +61,7 @@ class ListPoliciesRequest:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this ListPoliciesRequest.
+        r"""Sets the operation_type of this ListPoliciesRequest.
 
         策略类型：备份（backup）、复制(replication)
 
@@ -72,7 +72,7 @@ class ListPoliciesRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this ListPoliciesRequest.
+        r"""Gets the vault_id of this ListPoliciesRequest.
 
         存储库ID
 
@@ -83,7 +83,7 @@ class ListPoliciesRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this ListPoliciesRequest.
+        r"""Sets the vault_id of this ListPoliciesRequest.
 
         存储库ID
 

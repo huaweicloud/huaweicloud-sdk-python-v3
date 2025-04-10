@@ -27,7 +27,7 @@ class GaussDBforOpenGaussCreateSchemaReq:
     }
 
     def __init__(self, name=None, owner=None):
-        """GaussDBforOpenGaussCreateSchemaReq
+        r"""GaussDBforOpenGaussCreateSchemaReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GaussDBforOpenGaussCreateSchemaReq:
 
     @property
     def name(self):
-        """Gets the name of this GaussDBforOpenGaussCreateSchemaReq.
+        r"""Gets the name of this GaussDBforOpenGaussCreateSchemaReq.
 
         schema名称。  schema名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB 模板库和已存在的schema重名。 GaussDB 模板库包括postgres， template0 ，template1。  已存在的schema包括public，information_schema。
 
@@ -59,7 +59,7 @@ class GaussDBforOpenGaussCreateSchemaReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GaussDBforOpenGaussCreateSchemaReq.
+        r"""Sets the name of this GaussDBforOpenGaussCreateSchemaReq.
 
         schema名称。  schema名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，且不能和GaussDB 模板库和已存在的schema重名。 GaussDB 模板库包括postgres， template0 ，template1。  已存在的schema包括public，information_schema。
 
@@ -70,7 +70,7 @@ class GaussDBforOpenGaussCreateSchemaReq:
 
     @property
     def owner(self):
-        """Gets the owner of this GaussDBforOpenGaussCreateSchemaReq.
+        r"""Gets the owner of this GaussDBforOpenGaussCreateSchemaReq.
 
         数据库属主用户。  数据库属主名称在1到63个字符之间，不能以“pg”和数字开头，不能和系统用户名称相同。  系统用户包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”。
 
@@ -81,7 +81,7 @@ class GaussDBforOpenGaussCreateSchemaReq:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this GaussDBforOpenGaussCreateSchemaReq.
+        r"""Sets the owner of this GaussDBforOpenGaussCreateSchemaReq.
 
         数据库属主用户。  数据库属主名称在1到63个字符之间，不能以“pg”和数字开头，不能和系统用户名称相同。  系统用户包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”。
 

@@ -39,7 +39,7 @@ class ResetAppKeyResponse(SdkResponse):
     }
 
     def __init__(self, app_name=None, app_id=None, app_key=None, description=None, create_time=None, last_update_time=None, status=None):
-        """ResetAppKeyResponse
+        r"""ResetAppKeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class ResetAppKeyResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this ResetAppKeyResponse.
+        r"""Gets the app_name of this ResetAppKeyResponse.
 
         企业应用名称
 
@@ -98,7 +98,7 @@ class ResetAppKeyResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ResetAppKeyResponse.
+        r"""Sets the app_name of this ResetAppKeyResponse.
 
         企业应用名称
 
@@ -109,7 +109,7 @@ class ResetAppKeyResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ResetAppKeyResponse.
+        r"""Gets the app_id of this ResetAppKeyResponse.
 
         企业应用ID
 
@@ -120,7 +120,7 @@ class ResetAppKeyResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ResetAppKeyResponse.
+        r"""Sets the app_id of this ResetAppKeyResponse.
 
         企业应用ID
 
@@ -131,7 +131,7 @@ class ResetAppKeyResponse(SdkResponse):
 
     @property
     def app_key(self):
-        """Gets the app_key of this ResetAppKeyResponse.
+        r"""Gets the app_key of this ResetAppKeyResponse.
 
         企业应用appkey
 
@@ -142,7 +142,7 @@ class ResetAppKeyResponse(SdkResponse):
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this ResetAppKeyResponse.
+        r"""Sets the app_key of this ResetAppKeyResponse.
 
         企业应用appkey
 
@@ -153,7 +153,7 @@ class ResetAppKeyResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ResetAppKeyResponse.
+        r"""Gets the description of this ResetAppKeyResponse.
 
         企业应用描述
 
@@ -164,7 +164,7 @@ class ResetAppKeyResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ResetAppKeyResponse.
+        r"""Sets the description of this ResetAppKeyResponse.
 
         企业应用描述
 
@@ -175,7 +175,7 @@ class ResetAppKeyResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ResetAppKeyResponse.
+        r"""Gets the create_time of this ResetAppKeyResponse.
 
         企业应用创建时间
 
@@ -186,7 +186,7 @@ class ResetAppKeyResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ResetAppKeyResponse.
+        r"""Sets the create_time of this ResetAppKeyResponse.
 
         企业应用创建时间
 
@@ -197,7 +197,7 @@ class ResetAppKeyResponse(SdkResponse):
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this ResetAppKeyResponse.
+        r"""Gets the last_update_time of this ResetAppKeyResponse.
 
         最近修改时间
 
@@ -208,7 +208,7 @@ class ResetAppKeyResponse(SdkResponse):
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this ResetAppKeyResponse.
+        r"""Sets the last_update_time of this ResetAppKeyResponse.
 
         最近修改时间
 
@@ -219,7 +219,7 @@ class ResetAppKeyResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ResetAppKeyResponse.
+        r"""Gets the status of this ResetAppKeyResponse.
 
         企业应用状态  * 0：正常  * 1：停用 
 
@@ -230,7 +230,7 @@ class ResetAppKeyResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ResetAppKeyResponse.
+        r"""Sets the status of this ResetAppKeyResponse.
 
         企业应用状态  * 0：正常  * 1：停用 
 

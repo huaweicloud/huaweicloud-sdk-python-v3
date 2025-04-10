@@ -25,7 +25,7 @@ class UpdateStorageModeTypeRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateStorageModeTypeRequest
+        r"""UpdateStorageModeTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateStorageModeTypeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateStorageModeTypeRequest.
+        r"""Gets the body of this UpdateStorageModeTypeRequest.
 
         :return: The body of this UpdateStorageModeTypeRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateStorageModeTypeReq`
@@ -52,7 +52,7 @@ class UpdateStorageModeTypeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateStorageModeTypeRequest.
+        r"""Sets the body of this UpdateStorageModeTypeRequest.
 
         :param body: The body of this UpdateStorageModeTypeRequest.
         :type body: :class:`huaweicloudsdkvod.v1.UpdateStorageModeTypeReq`

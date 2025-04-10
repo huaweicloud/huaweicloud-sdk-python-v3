@@ -48,7 +48,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
     }
 
     def __init__(self, id=None, ieg_id=None, esn=None, name=None, type=None, ha_type=None, version=None, active_at=None, go_live_at=None, start_up_at=None, cloud_access_status=None, status=None):
-        """ShowEquipmentInfoResponse
+        r"""ShowEquipmentInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowEquipmentInfoResponse.
+        r"""Gets the id of this ShowEquipmentInfoResponse.
 
         智能企业网关设备ID
 
@@ -132,7 +132,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowEquipmentInfoResponse.
+        r"""Sets the id of this ShowEquipmentInfoResponse.
 
         智能企业网关设备ID
 
@@ -143,7 +143,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this ShowEquipmentInfoResponse.
+        r"""Gets the ieg_id of this ShowEquipmentInfoResponse.
 
         智能企业网关ID
 
@@ -154,7 +154,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this ShowEquipmentInfoResponse.
+        r"""Sets the ieg_id of this ShowEquipmentInfoResponse.
 
         智能企业网关ID
 
@@ -165,7 +165,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @property
     def esn(self):
-        """Gets the esn of this ShowEquipmentInfoResponse.
+        r"""Gets the esn of this ShowEquipmentInfoResponse.
 
         esn
 
@@ -176,7 +176,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this ShowEquipmentInfoResponse.
+        r"""Sets the esn of this ShowEquipmentInfoResponse.
 
         esn
 
@@ -187,7 +187,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowEquipmentInfoResponse.
+        r"""Gets the name of this ShowEquipmentInfoResponse.
 
         设备名字
 
@@ -198,7 +198,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowEquipmentInfoResponse.
+        r"""Sets the name of this ShowEquipmentInfoResponse.
 
         设备名字
 
@@ -209,7 +209,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowEquipmentInfoResponse.
+        r"""Gets the type of this ShowEquipmentInfoResponse.
 
         设备类型
 
@@ -220,7 +220,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowEquipmentInfoResponse.
+        r"""Sets the type of this ShowEquipmentInfoResponse.
 
         设备类型
 
@@ -231,7 +231,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @property
     def ha_type(self):
-        """Gets the ha_type of this ShowEquipmentInfoResponse.
+        r"""Gets the ha_type of this ShowEquipmentInfoResponse.
 
         高可用类型
 
@@ -242,7 +242,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @ha_type.setter
     def ha_type(self, ha_type):
-        """Sets the ha_type of this ShowEquipmentInfoResponse.
+        r"""Sets the ha_type of this ShowEquipmentInfoResponse.
 
         高可用类型
 
@@ -253,7 +253,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowEquipmentInfoResponse.
+        r"""Gets the version of this ShowEquipmentInfoResponse.
 
         设备软件版本
 
@@ -264,7 +264,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowEquipmentInfoResponse.
+        r"""Sets the version of this ShowEquipmentInfoResponse.
 
         设备软件版本
 
@@ -275,7 +275,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @property
     def active_at(self):
-        """Gets the active_at of this ShowEquipmentInfoResponse.
+        r"""Gets the active_at of this ShowEquipmentInfoResponse.
 
         激活时间
 
@@ -286,7 +286,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @active_at.setter
     def active_at(self, active_at):
-        """Sets the active_at of this ShowEquipmentInfoResponse.
+        r"""Sets the active_at of this ShowEquipmentInfoResponse.
 
         激活时间
 
@@ -297,7 +297,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @property
     def go_live_at(self):
-        """Gets the go_live_at of this ShowEquipmentInfoResponse.
+        r"""Gets the go_live_at of this ShowEquipmentInfoResponse.
 
         上线时间
 
@@ -308,7 +308,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @go_live_at.setter
     def go_live_at(self, go_live_at):
-        """Sets the go_live_at of this ShowEquipmentInfoResponse.
+        r"""Sets the go_live_at of this ShowEquipmentInfoResponse.
 
         上线时间
 
@@ -319,7 +319,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @property
     def start_up_at(self):
-        """Gets the start_up_at of this ShowEquipmentInfoResponse.
+        r"""Gets the start_up_at of this ShowEquipmentInfoResponse.
 
         设备启动时间
 
@@ -330,7 +330,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @start_up_at.setter
     def start_up_at(self, start_up_at):
-        """Sets the start_up_at of this ShowEquipmentInfoResponse.
+        r"""Sets the start_up_at of this ShowEquipmentInfoResponse.
 
         设备启动时间
 
@@ -341,7 +341,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @property
     def cloud_access_status(self):
-        """Gets the cloud_access_status of this ShowEquipmentInfoResponse.
+        r"""Gets the cloud_access_status of this ShowEquipmentInfoResponse.
 
         VPN状态
 
@@ -352,7 +352,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @cloud_access_status.setter
     def cloud_access_status(self, cloud_access_status):
-        """Sets the cloud_access_status of this ShowEquipmentInfoResponse.
+        r"""Sets the cloud_access_status of this ShowEquipmentInfoResponse.
 
         VPN状态
 
@@ -363,7 +363,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowEquipmentInfoResponse.
+        r"""Gets the status of this ShowEquipmentInfoResponse.
 
         状态
 
@@ -374,7 +374,7 @@ class ShowEquipmentInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowEquipmentInfoResponse.
+        r"""Sets the status of this ShowEquipmentInfoResponse.
 
         状态
 

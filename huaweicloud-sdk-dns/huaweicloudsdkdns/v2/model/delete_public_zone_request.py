@@ -25,7 +25,7 @@ class DeletePublicZoneRequest:
     }
 
     def __init__(self, zone_id=None):
-        """DeletePublicZoneRequest
+        r"""DeletePublicZoneRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeletePublicZoneRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this DeletePublicZoneRequest.
+        r"""Gets the zone_id of this DeletePublicZoneRequest.
 
         待删除zone的ID
 
@@ -53,7 +53,7 @@ class DeletePublicZoneRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this DeletePublicZoneRequest.
+        r"""Sets the zone_id of this DeletePublicZoneRequest.
 
         待删除zone的ID
 

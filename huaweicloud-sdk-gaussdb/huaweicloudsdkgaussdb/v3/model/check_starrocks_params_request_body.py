@@ -25,7 +25,7 @@ class CheckStarrocksParamsRequestBody:
     }
 
     def __init__(self, source_configuration_id=None):
-        """CheckStarrocksParamsRequestBody
+        r"""CheckStarrocksParamsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CheckStarrocksParamsRequestBody:
 
     @property
     def source_configuration_id(self):
-        """Gets the source_configuration_id of this CheckStarrocksParamsRequestBody.
+        r"""Gets the source_configuration_id of this CheckStarrocksParamsRequestBody.
 
         需要进行比较的源参数模板ID。通过ListStarrocksInstanceInfo接口获得。
 
@@ -53,7 +53,7 @@ class CheckStarrocksParamsRequestBody:
 
     @source_configuration_id.setter
     def source_configuration_id(self, source_configuration_id):
-        """Sets the source_configuration_id of this CheckStarrocksParamsRequestBody.
+        r"""Sets the source_configuration_id of this CheckStarrocksParamsRequestBody.
 
         需要进行比较的源参数模板ID。通过ListStarrocksInstanceInfo接口获得。
 

@@ -25,7 +25,7 @@ class WorkloadStatusReq:
     }
 
     def __init__(self, workload_status=None):
-        """WorkloadStatusReq
+        r"""WorkloadStatusReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class WorkloadStatusReq:
 
     @property
     def workload_status(self):
-        """Gets the workload_status of this WorkloadStatusReq.
+        r"""Gets the workload_status of this WorkloadStatusReq.
 
         :return: The workload_status of this WorkloadStatusReq.
         :rtype: :class:`huaweicloudsdkdws.v2.WorkloadStatus`
@@ -52,7 +52,7 @@ class WorkloadStatusReq:
 
     @workload_status.setter
     def workload_status(self, workload_status):
-        """Sets the workload_status of this WorkloadStatusReq.
+        r"""Sets the workload_status of this WorkloadStatusReq.
 
         :param workload_status: The workload_status of this WorkloadStatusReq.
         :type workload_status: :class:`huaweicloudsdkdws.v2.WorkloadStatus`

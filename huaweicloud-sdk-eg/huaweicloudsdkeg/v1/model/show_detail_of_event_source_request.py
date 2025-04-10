@@ -25,7 +25,7 @@ class ShowDetailOfEventSourceRequest:
     }
 
     def __init__(self, source_id=None):
-        """ShowDetailOfEventSourceRequest
+        r"""ShowDetailOfEventSourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDetailOfEventSourceRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this ShowDetailOfEventSourceRequest.
+        r"""Gets the source_id of this ShowDetailOfEventSourceRequest.
 
         指定查询的事件源ID
 
@@ -53,7 +53,7 @@ class ShowDetailOfEventSourceRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this ShowDetailOfEventSourceRequest.
+        r"""Sets the source_id of this ShowDetailOfEventSourceRequest.
 
         指定查询的事件源ID
 

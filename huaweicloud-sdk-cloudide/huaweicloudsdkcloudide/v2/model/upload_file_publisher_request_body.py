@@ -45,7 +45,7 @@ class UploadFilePublisherRequestBody:
     }
 
     def __init__(self, file=None, publisher_id=None, chunk_index=None, merge=None, total_chunk_num=None, parent_file_size=None, parent_file_name=None, override=None, chunk_md5=None, parent_file_sha256=None, task_id=None):
-        """UploadFilePublisherRequestBody
+        r"""UploadFilePublisherRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class UploadFilePublisherRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this UploadFilePublisherRequestBody.
+        r"""Gets the file of this UploadFilePublisherRequestBody.
 
         文件
 
@@ -116,7 +116,7 @@ class UploadFilePublisherRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this UploadFilePublisherRequestBody.
+        r"""Sets the file of this UploadFilePublisherRequestBody.
 
         文件
 
@@ -127,7 +127,7 @@ class UploadFilePublisherRequestBody:
 
     @property
     def publisher_id(self):
-        """Gets the publisher_id of this UploadFilePublisherRequestBody.
+        r"""Gets the publisher_id of this UploadFilePublisherRequestBody.
 
         传用户token时，此字段为必传项
 
@@ -138,7 +138,7 @@ class UploadFilePublisherRequestBody:
 
     @publisher_id.setter
     def publisher_id(self, publisher_id):
-        """Sets the publisher_id of this UploadFilePublisherRequestBody.
+        r"""Sets the publisher_id of this UploadFilePublisherRequestBody.
 
         传用户token时，此字段为必传项
 
@@ -149,7 +149,7 @@ class UploadFilePublisherRequestBody:
 
     @property
     def chunk_index(self):
-        """Gets the chunk_index of this UploadFilePublisherRequestBody.
+        r"""Gets the chunk_index of this UploadFilePublisherRequestBody.
 
         分片索引，第几个分片 取值范围：1-100
 
@@ -160,7 +160,7 @@ class UploadFilePublisherRequestBody:
 
     @chunk_index.setter
     def chunk_index(self, chunk_index):
-        """Sets the chunk_index of this UploadFilePublisherRequestBody.
+        r"""Sets the chunk_index of this UploadFilePublisherRequestBody.
 
         分片索引，第几个分片 取值范围：1-100
 
@@ -171,7 +171,7 @@ class UploadFilePublisherRequestBody:
 
     @property
     def merge(self):
-        """Gets the merge of this UploadFilePublisherRequestBody.
+        r"""Gets the merge of this UploadFilePublisherRequestBody.
 
         是否合并已上传的分片（包含本次分片内容）,true
 
@@ -182,7 +182,7 @@ class UploadFilePublisherRequestBody:
 
     @merge.setter
     def merge(self, merge):
-        """Sets the merge of this UploadFilePublisherRequestBody.
+        r"""Sets the merge of this UploadFilePublisherRequestBody.
 
         是否合并已上传的分片（包含本次分片内容）,true
 
@@ -193,7 +193,7 @@ class UploadFilePublisherRequestBody:
 
     @property
     def total_chunk_num(self):
-        """Gets the total_chunk_num of this UploadFilePublisherRequestBody.
+        r"""Gets the total_chunk_num of this UploadFilePublisherRequestBody.
 
         总分片数 0-100
 
@@ -204,7 +204,7 @@ class UploadFilePublisherRequestBody:
 
     @total_chunk_num.setter
     def total_chunk_num(self, total_chunk_num):
-        """Sets the total_chunk_num of this UploadFilePublisherRequestBody.
+        r"""Sets the total_chunk_num of this UploadFilePublisherRequestBody.
 
         总分片数 0-100
 
@@ -215,7 +215,7 @@ class UploadFilePublisherRequestBody:
 
     @property
     def parent_file_size(self):
-        """Gets the parent_file_size of this UploadFilePublisherRequestBody.
+        r"""Gets the parent_file_size of this UploadFilePublisherRequestBody.
 
         父文件大小
 
@@ -226,7 +226,7 @@ class UploadFilePublisherRequestBody:
 
     @parent_file_size.setter
     def parent_file_size(self, parent_file_size):
-        """Sets the parent_file_size of this UploadFilePublisherRequestBody.
+        r"""Sets the parent_file_size of this UploadFilePublisherRequestBody.
 
         父文件大小
 
@@ -237,7 +237,7 @@ class UploadFilePublisherRequestBody:
 
     @property
     def parent_file_name(self):
-        """Gets the parent_file_name of this UploadFilePublisherRequestBody.
+        r"""Gets the parent_file_name of this UploadFilePublisherRequestBody.
 
         父文件名称
 
@@ -248,7 +248,7 @@ class UploadFilePublisherRequestBody:
 
     @parent_file_name.setter
     def parent_file_name(self, parent_file_name):
-        """Sets the parent_file_name of this UploadFilePublisherRequestBody.
+        r"""Sets the parent_file_name of this UploadFilePublisherRequestBody.
 
         父文件名称
 
@@ -259,7 +259,7 @@ class UploadFilePublisherRequestBody:
 
     @property
     def override(self):
-        """Gets the override of this UploadFilePublisherRequestBody.
+        r"""Gets the override of this UploadFilePublisherRequestBody.
 
         是否覆盖原有文件
 
@@ -270,7 +270,7 @@ class UploadFilePublisherRequestBody:
 
     @override.setter
     def override(self, override):
-        """Sets the override of this UploadFilePublisherRequestBody.
+        r"""Sets the override of this UploadFilePublisherRequestBody.
 
         是否覆盖原有文件
 
@@ -281,7 +281,7 @@ class UploadFilePublisherRequestBody:
 
     @property
     def chunk_md5(self):
-        """Gets the chunk_md5 of this UploadFilePublisherRequestBody.
+        r"""Gets the chunk_md5 of this UploadFilePublisherRequestBody.
 
         文件分片的md5,用于校验文件分片是否完整
 
@@ -292,7 +292,7 @@ class UploadFilePublisherRequestBody:
 
     @chunk_md5.setter
     def chunk_md5(self, chunk_md5):
-        """Sets the chunk_md5 of this UploadFilePublisherRequestBody.
+        r"""Sets the chunk_md5 of this UploadFilePublisherRequestBody.
 
         文件分片的md5,用于校验文件分片是否完整
 
@@ -303,7 +303,7 @@ class UploadFilePublisherRequestBody:
 
     @property
     def parent_file_sha256(self):
-        """Gets the parent_file_sha256 of this UploadFilePublisherRequestBody.
+        r"""Gets the parent_file_sha256 of this UploadFilePublisherRequestBody.
 
         父文件hash，用于校验合并后的文件
 
@@ -314,7 +314,7 @@ class UploadFilePublisherRequestBody:
 
     @parent_file_sha256.setter
     def parent_file_sha256(self, parent_file_sha256):
-        """Sets the parent_file_sha256 of this UploadFilePublisherRequestBody.
+        r"""Sets the parent_file_sha256 of this UploadFilePublisherRequestBody.
 
         父文件hash，用于校验合并后的文件
 
@@ -325,7 +325,7 @@ class UploadFilePublisherRequestBody:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UploadFilePublisherRequestBody.
+        r"""Gets the task_id of this UploadFilePublisherRequestBody.
 
         上传任务的唯一标识，第一次上传分片时可不传
 
@@ -336,7 +336,7 @@ class UploadFilePublisherRequestBody:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UploadFilePublisherRequestBody.
+        r"""Sets the task_id of this UploadFilePublisherRequestBody.
 
         上传任务的唯一标识，第一次上传分片时可不传
 

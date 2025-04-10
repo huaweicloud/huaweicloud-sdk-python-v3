@@ -45,7 +45,7 @@ class ListPipelineSimpleInfoRequestBody:
     }
 
     def __init__(self, pipeline_name=None, project_ids=None, creator_ids=None, executor_ids=None, status=None, outcome=None, sort_key=None, sort_dir=None, git_url=None, offset=None, limit=None):
-        """ListPipelineSimpleInfoRequestBody
+        r"""ListPipelineSimpleInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @property
     def pipeline_name(self):
-        """Gets the pipeline_name of this ListPipelineSimpleInfoRequestBody.
+        r"""Gets the pipeline_name of this ListPipelineSimpleInfoRequestBody.
 
         流水线名字。参数存在，则进行模糊匹配
 
@@ -124,7 +124,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @pipeline_name.setter
     def pipeline_name(self, pipeline_name):
-        """Sets the pipeline_name of this ListPipelineSimpleInfoRequestBody.
+        r"""Sets the pipeline_name of this ListPipelineSimpleInfoRequestBody.
 
         流水线名字。参数存在，则进行模糊匹配
 
@@ -135,7 +135,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @property
     def project_ids(self):
-        """Gets the project_ids of this ListPipelineSimpleInfoRequestBody.
+        r"""Gets the project_ids of this ListPipelineSimpleInfoRequestBody.
 
         CodeArts项目ids。该参数存在，则获取对应项目下的流水线列表，逗号分隔，id个数取值[0,10]；如果不存在，则获取调用方所属租户的流水线列表
 
@@ -146,7 +146,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @project_ids.setter
     def project_ids(self, project_ids):
-        """Sets the project_ids of this ListPipelineSimpleInfoRequestBody.
+        r"""Sets the project_ids of this ListPipelineSimpleInfoRequestBody.
 
         CodeArts项目ids。该参数存在，则获取对应项目下的流水线列表，逗号分隔，id个数取值[0,10]；如果不存在，则获取调用方所属租户的流水线列表
 
@@ -157,7 +157,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @property
     def creator_ids(self):
-        """Gets the creator_ids of this ListPipelineSimpleInfoRequestBody.
+        r"""Gets the creator_ids of this ListPipelineSimpleInfoRequestBody.
 
         创建人id。该参数存在，逗号分隔，id个数取值[0,10]
 
@@ -168,7 +168,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @creator_ids.setter
     def creator_ids(self, creator_ids):
-        """Sets the creator_ids of this ListPipelineSimpleInfoRequestBody.
+        r"""Sets the creator_ids of this ListPipelineSimpleInfoRequestBody.
 
         创建人id。该参数存在，逗号分隔，id个数取值[0,10]
 
@@ -179,7 +179,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @property
     def executor_ids(self):
-        """Gets the executor_ids of this ListPipelineSimpleInfoRequestBody.
+        r"""Gets the executor_ids of this ListPipelineSimpleInfoRequestBody.
 
         执行人id。该参数存在，逗号分隔，id个数取值[0,10]；
 
@@ -190,7 +190,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @executor_ids.setter
     def executor_ids(self, executor_ids):
-        """Sets the executor_ids of this ListPipelineSimpleInfoRequestBody.
+        r"""Sets the executor_ids of this ListPipelineSimpleInfoRequestBody.
 
         执行人id。该参数存在，逗号分隔，id个数取值[0,10]；
 
@@ -201,7 +201,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this ListPipelineSimpleInfoRequestBody.
+        r"""Gets the status of this ListPipelineSimpleInfoRequestBody.
 
         流水线运行状态。取值范围：waiting,running,verifying,handling,suspending,completed
 
@@ -212,7 +212,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPipelineSimpleInfoRequestBody.
+        r"""Sets the status of this ListPipelineSimpleInfoRequestBody.
 
         流水线运行状态。取值范围：waiting,running,verifying,handling,suspending,completed
 
@@ -223,7 +223,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @property
     def outcome(self):
-        """Gets the outcome of this ListPipelineSimpleInfoRequestBody.
+        r"""Gets the outcome of this ListPipelineSimpleInfoRequestBody.
 
         流水线结果，标记流水线。error、success、aborted
 
@@ -234,7 +234,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @outcome.setter
     def outcome(self, outcome):
-        """Sets the outcome of this ListPipelineSimpleInfoRequestBody.
+        r"""Sets the outcome of this ListPipelineSimpleInfoRequestBody.
 
         流水线结果，标记流水线。error、success、aborted
 
@@ -245,7 +245,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListPipelineSimpleInfoRequestBody.
+        r"""Gets the sort_key of this ListPipelineSimpleInfoRequestBody.
 
         用于排序的字段。取值为：pipeline_name,create_time,start_time
 
@@ -256,7 +256,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListPipelineSimpleInfoRequestBody.
+        r"""Sets the sort_key of this ListPipelineSimpleInfoRequestBody.
 
         用于排序的字段。取值为：pipeline_name,create_time,start_time
 
@@ -267,7 +267,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListPipelineSimpleInfoRequestBody.
+        r"""Gets the sort_dir of this ListPipelineSimpleInfoRequestBody.
 
         排序类型。asc按排序字段升序，desc按排序字段降序
 
@@ -278,7 +278,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListPipelineSimpleInfoRequestBody.
+        r"""Sets the sort_dir of this ListPipelineSimpleInfoRequestBody.
 
         排序类型。asc按排序字段升序，desc按排序字段降序
 
@@ -289,7 +289,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @property
     def git_url(self):
-        """Gets the git_url of this ListPipelineSimpleInfoRequestBody.
+        r"""Gets the git_url of this ListPipelineSimpleInfoRequestBody.
 
         codehub搜索链接：git@codehub.XXX.git；gitee搜索链接：git@gitee.com.XXX.git；github搜索链接：git@github.com.XXX.git等
 
@@ -300,7 +300,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @git_url.setter
     def git_url(self, git_url):
-        """Sets the git_url of this ListPipelineSimpleInfoRequestBody.
+        r"""Sets the git_url of this ListPipelineSimpleInfoRequestBody.
 
         codehub搜索链接：git@codehub.XXX.git；gitee搜索链接：git@gitee.com.XXX.git；github搜索链接：git@github.com.XXX.git等
 
@@ -311,7 +311,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPipelineSimpleInfoRequestBody.
+        r"""Gets the offset of this ListPipelineSimpleInfoRequestBody.
 
         偏移量。表示从此偏移量开始查询，offset大于等于0，默认取值为0
 
@@ -322,7 +322,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPipelineSimpleInfoRequestBody.
+        r"""Sets the offset of this ListPipelineSimpleInfoRequestBody.
 
         偏移量。表示从此偏移量开始查询，offset大于等于0，默认取值为0
 
@@ -333,7 +333,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPipelineSimpleInfoRequestBody.
+        r"""Gets the limit of this ListPipelineSimpleInfoRequestBody.
 
         每次查询的条目数量。取值[10-50]，默认取值为10
 
@@ -344,7 +344,7 @@ class ListPipelineSimpleInfoRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPipelineSimpleInfoRequestBody.
+        r"""Sets the limit of this ListPipelineSimpleInfoRequestBody.
 
         每次查询的条目数量。取值[10-50]，默认取值为10
 

@@ -51,7 +51,7 @@ class ComponentView:
     }
 
     def __init__(self, id=None, application_id=None, name=None, project_id=None, runtime=None, category=None, sub_category=None, description=None, status=None, source=None, build=None, creator=None, create_time=None, update_time=None):
-        """ComponentView
+        r"""ComponentView
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ComponentView:
 
     @property
     def id(self):
-        """Gets the id of this ComponentView.
+        r"""Gets the id of this ComponentView.
 
         组件ID。
 
@@ -145,7 +145,7 @@ class ComponentView:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ComponentView.
+        r"""Sets the id of this ComponentView.
 
         组件ID。
 
@@ -156,7 +156,7 @@ class ComponentView:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ComponentView.
+        r"""Gets the application_id of this ComponentView.
 
         应用ID。
 
@@ -167,7 +167,7 @@ class ComponentView:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ComponentView.
+        r"""Sets the application_id of this ComponentView.
 
         应用ID。
 
@@ -178,7 +178,7 @@ class ComponentView:
 
     @property
     def name(self):
-        """Gets the name of this ComponentView.
+        r"""Gets the name of this ComponentView.
 
         应用组件名称。
 
@@ -189,7 +189,7 @@ class ComponentView:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentView.
+        r"""Sets the name of this ComponentView.
 
         应用组件名称。
 
@@ -200,7 +200,7 @@ class ComponentView:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ComponentView.
+        r"""Gets the project_id of this ComponentView.
 
         项目ID。
 
@@ -211,7 +211,7 @@ class ComponentView:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ComponentView.
+        r"""Sets the project_id of this ComponentView.
 
         项目ID。
 
@@ -222,7 +222,7 @@ class ComponentView:
 
     @property
     def runtime(self):
-        """Gets the runtime of this ComponentView.
+        r"""Gets the runtime of this ComponentView.
 
         :return: The runtime of this ComponentView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
@@ -231,7 +231,7 @@ class ComponentView:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this ComponentView.
+        r"""Sets the runtime of this ComponentView.
 
         :param runtime: The runtime of this ComponentView.
         :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
@@ -240,7 +240,7 @@ class ComponentView:
 
     @property
     def category(self):
-        """Gets the category of this ComponentView.
+        r"""Gets the category of this ComponentView.
 
         :return: The category of this ComponentView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
@@ -249,7 +249,7 @@ class ComponentView:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ComponentView.
+        r"""Sets the category of this ComponentView.
 
         :param category: The category of this ComponentView.
         :type category: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
@@ -258,7 +258,7 @@ class ComponentView:
 
     @property
     def sub_category(self):
-        """Gets the sub_category of this ComponentView.
+        r"""Gets the sub_category of this ComponentView.
 
         :return: The sub_category of this ComponentView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
@@ -267,7 +267,7 @@ class ComponentView:
 
     @sub_category.setter
     def sub_category(self, sub_category):
-        """Sets the sub_category of this ComponentView.
+        r"""Sets the sub_category of this ComponentView.
 
         :param sub_category: The sub_category of this ComponentView.
         :type sub_category: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
@@ -276,7 +276,7 @@ class ComponentView:
 
     @property
     def description(self):
-        """Gets the description of this ComponentView.
+        r"""Gets the description of this ComponentView.
 
         组件描述。
 
@@ -287,7 +287,7 @@ class ComponentView:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ComponentView.
+        r"""Sets the description of this ComponentView.
 
         组件描述。
 
@@ -298,7 +298,7 @@ class ComponentView:
 
     @property
     def status(self):
-        """Gets the status of this ComponentView.
+        r"""Gets the status of this ComponentView.
 
         取值0或1。  0：表示正常状态。  1：表示正在删除。 
 
@@ -309,7 +309,7 @@ class ComponentView:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ComponentView.
+        r"""Sets the status of this ComponentView.
 
         取值0或1。  0：表示正常状态。  1：表示正在删除。 
 
@@ -320,7 +320,7 @@ class ComponentView:
 
     @property
     def source(self):
-        """Gets the source of this ComponentView.
+        r"""Gets the source of this ComponentView.
 
         :return: The source of this ComponentView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.SourceObject`
@@ -329,7 +329,7 @@ class ComponentView:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ComponentView.
+        r"""Sets the source of this ComponentView.
 
         :param source: The source of this ComponentView.
         :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
@@ -338,7 +338,7 @@ class ComponentView:
 
     @property
     def build(self):
-        """Gets the build of this ComponentView.
+        r"""Gets the build of this ComponentView.
 
         :return: The build of this ComponentView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.BuildInfo`
@@ -347,7 +347,7 @@ class ComponentView:
 
     @build.setter
     def build(self, build):
-        """Sets the build of this ComponentView.
+        r"""Sets the build of this ComponentView.
 
         :param build: The build of this ComponentView.
         :type build: :class:`huaweicloudsdkservicestage.v2.BuildInfo`
@@ -356,7 +356,7 @@ class ComponentView:
 
     @property
     def creator(self):
-        """Gets the creator of this ComponentView.
+        r"""Gets the creator of this ComponentView.
 
         创建人。
 
@@ -367,7 +367,7 @@ class ComponentView:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ComponentView.
+        r"""Sets the creator of this ComponentView.
 
         创建人。
 
@@ -378,7 +378,7 @@ class ComponentView:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ComponentView.
+        r"""Gets the create_time of this ComponentView.
 
         创建时间。
 
@@ -389,7 +389,7 @@ class ComponentView:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ComponentView.
+        r"""Sets the create_time of this ComponentView.
 
         创建时间。
 
@@ -400,7 +400,7 @@ class ComponentView:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ComponentView.
+        r"""Gets the update_time of this ComponentView.
 
         修改时间。
 
@@ -411,7 +411,7 @@ class ComponentView:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ComponentView.
+        r"""Sets the update_time of this ComponentView.
 
         修改时间。
 

@@ -32,7 +32,7 @@ class ShowSyncPolicyResponse(SdkResponse):
     }
 
     def __init__(self, policy_version=None, policy_update_time=None, policies=None, policy_deltas=None):
-        """ShowSyncPolicyResponse
+        r"""ShowSyncPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowSyncPolicyResponse(SdkResponse):
 
     @property
     def policy_version(self):
-        """Gets the policy_version of this ShowSyncPolicyResponse.
+        r"""Gets the policy_version of this ShowSyncPolicyResponse.
 
         策略版本
 
@@ -76,7 +76,7 @@ class ShowSyncPolicyResponse(SdkResponse):
 
     @policy_version.setter
     def policy_version(self, policy_version):
-        """Sets the policy_version of this ShowSyncPolicyResponse.
+        r"""Sets the policy_version of this ShowSyncPolicyResponse.
 
         策略版本
 
@@ -87,7 +87,7 @@ class ShowSyncPolicyResponse(SdkResponse):
 
     @property
     def policy_update_time(self):
-        """Gets the policy_update_time of this ShowSyncPolicyResponse.
+        r"""Gets the policy_update_time of this ShowSyncPolicyResponse.
 
         策略更新时间
 
@@ -98,7 +98,7 @@ class ShowSyncPolicyResponse(SdkResponse):
 
     @policy_update_time.setter
     def policy_update_time(self, policy_update_time):
-        """Sets the policy_update_time of this ShowSyncPolicyResponse.
+        r"""Sets the policy_update_time of this ShowSyncPolicyResponse.
 
         策略更新时间
 
@@ -109,7 +109,7 @@ class ShowSyncPolicyResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ShowSyncPolicyResponse.
+        r"""Gets the policies of this ShowSyncPolicyResponse.
 
         权限策略信息
 
@@ -120,7 +120,7 @@ class ShowSyncPolicyResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ShowSyncPolicyResponse.
+        r"""Sets the policies of this ShowSyncPolicyResponse.
 
         权限策略信息
 
@@ -131,7 +131,7 @@ class ShowSyncPolicyResponse(SdkResponse):
 
     @property
     def policy_deltas(self):
-        """Gets the policy_deltas of this ShowSyncPolicyResponse.
+        r"""Gets the policy_deltas of this ShowSyncPolicyResponse.
 
         增量权限策略信息
 
@@ -142,7 +142,7 @@ class ShowSyncPolicyResponse(SdkResponse):
 
     @policy_deltas.setter
     def policy_deltas(self, policy_deltas):
-        """Sets the policy_deltas of this ShowSyncPolicyResponse.
+        r"""Sets the policy_deltas of this ShowSyncPolicyResponse.
 
         增量权限策略信息
 

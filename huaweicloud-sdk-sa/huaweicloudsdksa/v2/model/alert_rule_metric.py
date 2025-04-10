@@ -27,7 +27,7 @@ class AlertRuleMetric:
     }
 
     def __init__(self, category=None, metric=None):
-        """AlertRuleMetric
+        r"""AlertRuleMetric
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AlertRuleMetric:
 
     @property
     def category(self):
-        """Gets the category of this AlertRuleMetric.
+        r"""Gets the category of this AlertRuleMetric.
 
         category. GROUP_COUNT
 
@@ -59,7 +59,7 @@ class AlertRuleMetric:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this AlertRuleMetric.
+        r"""Sets the category of this AlertRuleMetric.
 
         category. GROUP_COUNT
 
@@ -70,7 +70,7 @@ class AlertRuleMetric:
 
     @property
     def metric(self):
-        """Gets the metric of this AlertRuleMetric.
+        r"""Gets the metric of this AlertRuleMetric.
 
         metric
 
@@ -81,7 +81,7 @@ class AlertRuleMetric:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this AlertRuleMetric.
+        r"""Sets the metric of this AlertRuleMetric.
 
         metric
 

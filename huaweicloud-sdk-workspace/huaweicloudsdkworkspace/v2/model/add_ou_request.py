@@ -25,7 +25,7 @@ class AddOuRequest:
     }
 
     def __init__(self, body=None):
-        """AddOuRequest
+        r"""AddOuRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddOuRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddOuRequest.
+        r"""Gets the body of this AddOuRequest.
 
         :return: The body of this AddOuRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AddOuNameInfoV2Req`
@@ -52,7 +52,7 @@ class AddOuRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddOuRequest.
+        r"""Sets the body of this AddOuRequest.
 
         :param body: The body of this AddOuRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.AddOuNameInfoV2Req`

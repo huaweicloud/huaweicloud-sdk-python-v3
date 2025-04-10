@@ -26,7 +26,7 @@ class UpgradeInstanceSpecResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None):
-        """UpgradeInstanceSpecResponse
+        r"""UpgradeInstanceSpecResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpgradeInstanceSpecResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this UpgradeInstanceSpecResponse.
+        r"""Gets the order_id of this UpgradeInstanceSpecResponse.
 
         订单id
 
@@ -55,7 +55,7 @@ class UpgradeInstanceSpecResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this UpgradeInstanceSpecResponse.
+        r"""Sets the order_id of this UpgradeInstanceSpecResponse.
 
         订单id
 

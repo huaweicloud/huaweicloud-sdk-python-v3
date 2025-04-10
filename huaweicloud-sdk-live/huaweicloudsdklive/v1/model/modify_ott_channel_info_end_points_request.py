@@ -29,7 +29,7 @@ class ModifyOttChannelInfoEndPointsRequest:
     }
 
     def __init__(self, access_control_allow_internal=None, access_control_allow_external=None, body=None):
-        """ModifyOttChannelInfoEndPointsRequest
+        r"""ModifyOttChannelInfoEndPointsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ModifyOttChannelInfoEndPointsRequest:
 
     @property
     def access_control_allow_internal(self):
-        """Gets the access_control_allow_internal of this ModifyOttChannelInfoEndPointsRequest.
+        r"""Gets the access_control_allow_internal of this ModifyOttChannelInfoEndPointsRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -68,7 +68,7 @@ class ModifyOttChannelInfoEndPointsRequest:
 
     @access_control_allow_internal.setter
     def access_control_allow_internal(self, access_control_allow_internal):
-        """Sets the access_control_allow_internal of this ModifyOttChannelInfoEndPointsRequest.
+        r"""Sets the access_control_allow_internal of this ModifyOttChannelInfoEndPointsRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -79,7 +79,7 @@ class ModifyOttChannelInfoEndPointsRequest:
 
     @property
     def access_control_allow_external(self):
-        """Gets the access_control_allow_external of this ModifyOttChannelInfoEndPointsRequest.
+        r"""Gets the access_control_allow_external of this ModifyOttChannelInfoEndPointsRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -90,7 +90,7 @@ class ModifyOttChannelInfoEndPointsRequest:
 
     @access_control_allow_external.setter
     def access_control_allow_external(self, access_control_allow_external):
-        """Sets the access_control_allow_external of this ModifyOttChannelInfoEndPointsRequest.
+        r"""Sets the access_control_allow_external of this ModifyOttChannelInfoEndPointsRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -101,7 +101,7 @@ class ModifyOttChannelInfoEndPointsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyOttChannelInfoEndPointsRequest.
+        r"""Gets the body of this ModifyOttChannelInfoEndPointsRequest.
 
         :return: The body of this ModifyOttChannelInfoEndPointsRequest.
         :rtype: :class:`huaweicloudsdklive.v1.ModifyOttChannelEndPointsReq`
@@ -110,7 +110,7 @@ class ModifyOttChannelInfoEndPointsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyOttChannelInfoEndPointsRequest.
+        r"""Sets the body of this ModifyOttChannelInfoEndPointsRequest.
 
         :param body: The body of this ModifyOttChannelInfoEndPointsRequest.
         :type body: :class:`huaweicloudsdklive.v1.ModifyOttChannelEndPointsReq`

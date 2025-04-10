@@ -26,7 +26,7 @@ class DeleteDesignDerivativeIndexResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """DeleteDesignDerivativeIndexResponse
+        r"""DeleteDesignDerivativeIndexResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDesignDerivativeIndexResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteDesignDerivativeIndexResponse.
+        r"""Gets the data of this DeleteDesignDerivativeIndexResponse.
 
         :return: The data of this DeleteDesignDerivativeIndexResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`
@@ -53,7 +53,7 @@ class DeleteDesignDerivativeIndexResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteDesignDerivativeIndexResponse.
+        r"""Sets the data of this DeleteDesignDerivativeIndexResponse.
 
         :param data: The data of this DeleteDesignDerivativeIndexResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`

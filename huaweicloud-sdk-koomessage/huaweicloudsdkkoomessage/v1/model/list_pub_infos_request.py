@@ -39,7 +39,7 @@ class ListPubInfosRequest:
     }
 
     def __init__(self, pub_name=None, state=None, start_time=None, offset=None, limit=None, end_time=None, industry=None, approve_state=None):
-        """ListPubInfosRequest
+        r"""ListPubInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListPubInfosRequest:
 
     @property
     def pub_name(self):
-        """Gets the pub_name of this ListPubInfosRequest.
+        r"""Gets the pub_name of this ListPubInfosRequest.
 
         服务号名称。
 
@@ -103,7 +103,7 @@ class ListPubInfosRequest:
 
     @pub_name.setter
     def pub_name(self, pub_name):
-        """Sets the pub_name of this ListPubInfosRequest.
+        r"""Sets the pub_name of this ListPubInfosRequest.
 
         服务号名称。
 
@@ -114,7 +114,7 @@ class ListPubInfosRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListPubInfosRequest.
+        r"""Gets the state of this ListPubInfosRequest.
 
         服务号状态。  - 1：未生效  - 2：已生效  - 3：已失效  - 4：已冻结 
 
@@ -125,7 +125,7 @@ class ListPubInfosRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListPubInfosRequest.
+        r"""Sets the state of this ListPubInfosRequest.
 
         服务号状态。  - 1：未生效  - 2：已生效  - 3：已失效  - 4：已冻结 
 
@@ -136,7 +136,7 @@ class ListPubInfosRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListPubInfosRequest.
+        r"""Gets the start_time of this ListPubInfosRequest.
 
         开始上线时间，格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -147,7 +147,7 @@ class ListPubInfosRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListPubInfosRequest.
+        r"""Sets the start_time of this ListPubInfosRequest.
 
         开始上线时间，格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -158,7 +158,7 @@ class ListPubInfosRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPubInfosRequest.
+        r"""Gets the offset of this ListPubInfosRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -169,7 +169,7 @@ class ListPubInfosRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPubInfosRequest.
+        r"""Sets the offset of this ListPubInfosRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -180,7 +180,7 @@ class ListPubInfosRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPubInfosRequest.
+        r"""Gets the limit of this ListPubInfosRequest.
 
         每页显示的条目数量。
 
@@ -191,7 +191,7 @@ class ListPubInfosRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPubInfosRequest.
+        r"""Sets the limit of this ListPubInfosRequest.
 
         每页显示的条目数量。
 
@@ -202,7 +202,7 @@ class ListPubInfosRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListPubInfosRequest.
+        r"""Gets the end_time of this ListPubInfosRequest.
 
         结束上线时间，格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -213,7 +213,7 @@ class ListPubInfosRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListPubInfosRequest.
+        r"""Sets the end_time of this ListPubInfosRequest.
 
         结束上线时间，格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -224,7 +224,7 @@ class ListPubInfosRequest:
 
     @property
     def industry(self):
-        """Gets the industry of this ListPubInfosRequest.
+        r"""Gets the industry of this ListPubInfosRequest.
 
         服务号所属行业。 - 1：金融理财 - 2：社交通讯 - 3：影音娱乐 - 4：旅游出行 - 5：购物 - 6：本地生活 - 7：运动健康 - 8：教育培训 - 9：新闻阅读 - 10：运营商  - 11：其他 
 
@@ -235,7 +235,7 @@ class ListPubInfosRequest:
 
     @industry.setter
     def industry(self, industry):
-        """Sets the industry of this ListPubInfosRequest.
+        r"""Sets the industry of this ListPubInfosRequest.
 
         服务号所属行业。 - 1：金融理财 - 2：社交通讯 - 3：影音娱乐 - 4：旅游出行 - 5：购物 - 6：本地生活 - 7：运动健康 - 8：教育培训 - 9：新闻阅读 - 10：运营商  - 11：其他 
 
@@ -246,7 +246,7 @@ class ListPubInfosRequest:
 
     @property
     def approve_state(self):
-        """Gets the approve_state of this ListPubInfosRequest.
+        r"""Gets the approve_state of this ListPubInfosRequest.
 
         审核状态。  - 1：审核中 - 2：审核通过 - 3：驳回 
 
@@ -257,7 +257,7 @@ class ListPubInfosRequest:
 
     @approve_state.setter
     def approve_state(self, approve_state):
-        """Sets the approve_state of this ListPubInfosRequest.
+        r"""Sets the approve_state of this ListPubInfosRequest.
 
         审核状态。  - 1：审核中 - 2：审核通过 - 3：驳回 
 

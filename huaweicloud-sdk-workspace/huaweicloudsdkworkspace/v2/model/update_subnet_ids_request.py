@@ -27,7 +27,7 @@ class UpdateSubnetIdsRequest:
     }
 
     def __init__(self, site_id=None, body=None):
-        """UpdateSubnetIdsRequest
+        r"""UpdateSubnetIdsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSubnetIdsRequest:
 
     @property
     def site_id(self):
-        """Gets the site_id of this UpdateSubnetIdsRequest.
+        r"""Gets the site_id of this UpdateSubnetIdsRequest.
 
         站点ID。
 
@@ -60,7 +60,7 @@ class UpdateSubnetIdsRequest:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this UpdateSubnetIdsRequest.
+        r"""Sets the site_id of this UpdateSubnetIdsRequest.
 
         站点ID。
 
@@ -71,7 +71,7 @@ class UpdateSubnetIdsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSubnetIdsRequest.
+        r"""Gets the body of this UpdateSubnetIdsRequest.
 
         :return: The body of this UpdateSubnetIdsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateSubnetIdsRequestBody`
@@ -80,7 +80,7 @@ class UpdateSubnetIdsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSubnetIdsRequest.
+        r"""Sets the body of this UpdateSubnetIdsRequest.
 
         :param body: The body of this UpdateSubnetIdsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateSubnetIdsRequestBody`

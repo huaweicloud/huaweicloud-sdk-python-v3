@@ -27,7 +27,7 @@ class PreferredSchedulingTerm:
     }
 
     def __init__(self, preference=None, weight=None):
-        """PreferredSchedulingTerm
+        r"""PreferredSchedulingTerm
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PreferredSchedulingTerm:
 
     @property
     def preference(self):
-        """Gets the preference of this PreferredSchedulingTerm.
+        r"""Gets the preference of this PreferredSchedulingTerm.
 
         :return: The preference of this PreferredSchedulingTerm.
         :rtype: :class:`huaweicloudsdkief.v1.PreferredSchedulingTermPreference`
@@ -59,7 +59,7 @@ class PreferredSchedulingTerm:
 
     @preference.setter
     def preference(self, preference):
-        """Sets the preference of this PreferredSchedulingTerm.
+        r"""Sets the preference of this PreferredSchedulingTerm.
 
         :param preference: The preference of this PreferredSchedulingTerm.
         :type preference: :class:`huaweicloudsdkief.v1.PreferredSchedulingTermPreference`
@@ -68,7 +68,7 @@ class PreferredSchedulingTerm:
 
     @property
     def weight(self):
-        """Gets the weight of this PreferredSchedulingTerm.
+        r"""Gets the weight of this PreferredSchedulingTerm.
 
         权重，范围为1-100
 
@@ -79,7 +79,7 @@ class PreferredSchedulingTerm:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this PreferredSchedulingTerm.
+        r"""Sets the weight of this PreferredSchedulingTerm.
 
         权重，范围为1-100
 

@@ -43,7 +43,7 @@ class Connections:
     }
 
     def __init__(self, id=None, status=None, max_session=None, specification_name=None, created_at=None, update_at=None, domain_id=None, vpcep_ip=None, vpcep_ipv6_address=None, vpcep_dns_name=None):
-        """Connections
+        r"""Connections
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class Connections:
 
     @property
     def id(self):
-        """Gets the id of this Connections.
+        r"""Gets the id of this Connections.
 
         终端节点ID。
 
@@ -117,7 +117,7 @@ class Connections:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Connections.
+        r"""Sets the id of this Connections.
 
         终端节点ID。
 
@@ -128,7 +128,7 @@ class Connections:
 
     @property
     def status(self):
-        """Gets the status of this Connections.
+        r"""Gets the status of this Connections.
 
         终端节点状态。 - accepted：允许该终端节点连接。 - rejected：拒绝该终端节点连接。
 
@@ -139,7 +139,7 @@ class Connections:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Connections.
+        r"""Sets the status of this Connections.
 
         终端节点状态。 - accepted：允许该终端节点连接。 - rejected：拒绝该终端节点连接。
 
@@ -150,7 +150,7 @@ class Connections:
 
     @property
     def max_session(self):
-        """Gets the max_session of this Connections.
+        r"""Gets the max_session of this Connections.
 
         最大连接数。
 
@@ -161,7 +161,7 @@ class Connections:
 
     @max_session.setter
     def max_session(self, max_session):
-        """Sets the max_session of this Connections.
+        r"""Sets the max_session of this Connections.
 
         最大连接数。
 
@@ -172,7 +172,7 @@ class Connections:
 
     @property
     def specification_name(self):
-        """Gets the specification_name of this Connections.
+        r"""Gets the specification_name of this Connections.
 
         终端节点名称。
 
@@ -183,7 +183,7 @@ class Connections:
 
     @specification_name.setter
     def specification_name(self, specification_name):
-        """Sets the specification_name of this Connections.
+        r"""Sets the specification_name of this Connections.
 
         终端节点名称。
 
@@ -194,7 +194,7 @@ class Connections:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Connections.
+        r"""Gets the created_at of this Connections.
 
         创建时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
 
@@ -205,7 +205,7 @@ class Connections:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Connections.
+        r"""Sets the created_at of this Connections.
 
         创建时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
 
@@ -216,7 +216,7 @@ class Connections:
 
     @property
     def update_at(self):
-        """Gets the update_at of this Connections.
+        r"""Gets the update_at of this Connections.
 
         更新时间。默认为null。
 
@@ -227,7 +227,7 @@ class Connections:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this Connections.
+        r"""Sets the update_at of this Connections.
 
         更新时间。默认为null。
 
@@ -238,7 +238,7 @@ class Connections:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this Connections.
+        r"""Gets the domain_id of this Connections.
 
         拥有者。
 
@@ -249,7 +249,7 @@ class Connections:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this Connections.
+        r"""Sets the domain_id of this Connections.
 
         拥有者。
 
@@ -260,7 +260,7 @@ class Connections:
 
     @property
     def vpcep_ip(self):
-        """Gets the vpcep_ip of this Connections.
+        r"""Gets the vpcep_ip of this Connections.
 
         终端节点IPv4。
 
@@ -271,7 +271,7 @@ class Connections:
 
     @vpcep_ip.setter
     def vpcep_ip(self, vpcep_ip):
-        """Sets the vpcep_ip of this Connections.
+        r"""Sets the vpcep_ip of this Connections.
 
         终端节点IPv4。
 
@@ -282,7 +282,7 @@ class Connections:
 
     @property
     def vpcep_ipv6_address(self):
-        """Gets the vpcep_ipv6_address of this Connections.
+        r"""Gets the vpcep_ipv6_address of this Connections.
 
         终端节点IPv6。
 
@@ -293,7 +293,7 @@ class Connections:
 
     @vpcep_ipv6_address.setter
     def vpcep_ipv6_address(self, vpcep_ipv6_address):
-        """Sets the vpcep_ipv6_address of this Connections.
+        r"""Sets the vpcep_ipv6_address of this Connections.
 
         终端节点IPv6。
 
@@ -304,7 +304,7 @@ class Connections:
 
     @property
     def vpcep_dns_name(self):
-        """Gets the vpcep_dns_name of this Connections.
+        r"""Gets the vpcep_dns_name of this Connections.
 
         终端节点内网域名。
 
@@ -315,7 +315,7 @@ class Connections:
 
     @vpcep_dns_name.setter
     def vpcep_dns_name(self, vpcep_dns_name):
-        """Sets the vpcep_dns_name of this Connections.
+        r"""Sets the vpcep_dns_name of this Connections.
 
         终端节点内网域名。
 

@@ -29,7 +29,7 @@ class RunTimeInfo:
     }
 
     def __init__(self, table_info=None, local_secondary_index_infos=None, global_secondary_index_infos=None):
-        """RunTimeInfo
+        r"""RunTimeInfo
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RunTimeInfo:
 
     @property
     def table_info(self):
-        """Gets the table_info of this RunTimeInfo.
+        r"""Gets the table_info of this RunTimeInfo.
 
         :return: The table_info of this RunTimeInfo.
         :rtype: :class:`huaweicloudsdkkvs.v1.TableInfo`
@@ -65,7 +65,7 @@ class RunTimeInfo:
 
     @table_info.setter
     def table_info(self, table_info):
-        """Sets the table_info of this RunTimeInfo.
+        r"""Sets the table_info of this RunTimeInfo.
 
         :param table_info: The table_info of this RunTimeInfo.
         :type table_info: :class:`huaweicloudsdkkvs.v1.TableInfo`
@@ -74,7 +74,7 @@ class RunTimeInfo:
 
     @property
     def local_secondary_index_infos(self):
-        """Gets the local_secondary_index_infos of this RunTimeInfo.
+        r"""Gets the local_secondary_index_infos of this RunTimeInfo.
 
         索引状态。
 
@@ -85,7 +85,7 @@ class RunTimeInfo:
 
     @local_secondary_index_infos.setter
     def local_secondary_index_infos(self, local_secondary_index_infos):
-        """Sets the local_secondary_index_infos of this RunTimeInfo.
+        r"""Sets the local_secondary_index_infos of this RunTimeInfo.
 
         索引状态。
 
@@ -96,7 +96,7 @@ class RunTimeInfo:
 
     @property
     def global_secondary_index_infos(self):
-        """Gets the global_secondary_index_infos of this RunTimeInfo.
+        r"""Gets the global_secondary_index_infos of this RunTimeInfo.
 
         全局二级索引运行态。
 
@@ -107,7 +107,7 @@ class RunTimeInfo:
 
     @global_secondary_index_infos.setter
     def global_secondary_index_infos(self, global_secondary_index_infos):
-        """Sets the global_secondary_index_infos of this RunTimeInfo.
+        r"""Sets the global_secondary_index_infos of this RunTimeInfo.
 
         全局二级索引运行态。
 

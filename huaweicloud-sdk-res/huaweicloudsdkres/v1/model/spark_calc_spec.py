@@ -33,7 +33,7 @@ class SparkCalcSpec:
     }
 
     def __init__(self, driver_memory=None, driver_cores=None, executor_memory=None, executor_cores=None, num_executors=None):
-        """SparkCalcSpec
+        r"""SparkCalcSpec
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class SparkCalcSpec:
 
     @property
     def driver_memory(self):
-        """Gets the driver_memory of this SparkCalcSpec.
+        r"""Gets the driver_memory of this SparkCalcSpec.
 
         driver内存
 
@@ -77,7 +77,7 @@ class SparkCalcSpec:
 
     @driver_memory.setter
     def driver_memory(self, driver_memory):
-        """Sets the driver_memory of this SparkCalcSpec.
+        r"""Sets the driver_memory of this SparkCalcSpec.
 
         driver内存
 
@@ -88,7 +88,7 @@ class SparkCalcSpec:
 
     @property
     def driver_cores(self):
-        """Gets the driver_cores of this SparkCalcSpec.
+        r"""Gets the driver_cores of this SparkCalcSpec.
 
         driver核数
 
@@ -99,7 +99,7 @@ class SparkCalcSpec:
 
     @driver_cores.setter
     def driver_cores(self, driver_cores):
-        """Sets the driver_cores of this SparkCalcSpec.
+        r"""Sets the driver_cores of this SparkCalcSpec.
 
         driver核数
 
@@ -110,7 +110,7 @@ class SparkCalcSpec:
 
     @property
     def executor_memory(self):
-        """Gets the executor_memory of this SparkCalcSpec.
+        r"""Gets the executor_memory of this SparkCalcSpec.
 
         executor内存
 
@@ -121,7 +121,7 @@ class SparkCalcSpec:
 
     @executor_memory.setter
     def executor_memory(self, executor_memory):
-        """Sets the executor_memory of this SparkCalcSpec.
+        r"""Sets the executor_memory of this SparkCalcSpec.
 
         executor内存
 
@@ -132,7 +132,7 @@ class SparkCalcSpec:
 
     @property
     def executor_cores(self):
-        """Gets the executor_cores of this SparkCalcSpec.
+        r"""Gets the executor_cores of this SparkCalcSpec.
 
         executor核数
 
@@ -143,7 +143,7 @@ class SparkCalcSpec:
 
     @executor_cores.setter
     def executor_cores(self, executor_cores):
-        """Sets the executor_cores of this SparkCalcSpec.
+        r"""Sets the executor_cores of this SparkCalcSpec.
 
         executor核数
 
@@ -154,7 +154,7 @@ class SparkCalcSpec:
 
     @property
     def num_executors(self):
-        """Gets the num_executors of this SparkCalcSpec.
+        r"""Gets the num_executors of this SparkCalcSpec.
 
         executor个数
 
@@ -165,7 +165,7 @@ class SparkCalcSpec:
 
     @num_executors.setter
     def num_executors(self, num_executors):
-        """Sets the num_executors of this SparkCalcSpec.
+        r"""Sets the num_executors of this SparkCalcSpec.
 
         executor个数
 

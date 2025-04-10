@@ -29,7 +29,7 @@ class EnterprisePersonNew:
     }
 
     def __init__(self, legel_name=None, legel_id_number=None, certifier_role=None):
-        """EnterprisePersonNew
+        r"""EnterprisePersonNew
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class EnterprisePersonNew:
 
     @property
     def legel_name(self):
-        """Gets the legel_name of this EnterprisePersonNew.
+        r"""Gets the legel_name of this EnterprisePersonNew.
 
         法人姓名。
 
@@ -66,7 +66,7 @@ class EnterprisePersonNew:
 
     @legel_name.setter
     def legel_name(self, legel_name):
-        """Sets the legel_name of this EnterprisePersonNew.
+        r"""Sets the legel_name of this EnterprisePersonNew.
 
         法人姓名。
 
@@ -77,7 +77,7 @@ class EnterprisePersonNew:
 
     @property
     def legel_id_number(self):
-        """Gets the legel_id_number of this EnterprisePersonNew.
+        r"""Gets the legel_id_number of this EnterprisePersonNew.
 
         法人身份证号。
 
@@ -88,7 +88,7 @@ class EnterprisePersonNew:
 
     @legel_id_number.setter
     def legel_id_number(self, legel_id_number):
-        """Sets the legel_id_number of this EnterprisePersonNew.
+        r"""Sets the legel_id_number of this EnterprisePersonNew.
 
         法人身份证号。
 
@@ -99,7 +99,7 @@ class EnterprisePersonNew:
 
     @property
     def certifier_role(self):
-        """Gets the certifier_role of this EnterprisePersonNew.
+        r"""Gets the certifier_role of this EnterprisePersonNew.
 
         认证人角色。 legalPerson ：法人代表。
 
@@ -110,7 +110,7 @@ class EnterprisePersonNew:
 
     @certifier_role.setter
     def certifier_role(self, certifier_role):
-        """Sets the certifier_role of this EnterprisePersonNew.
+        r"""Sets the certifier_role of this EnterprisePersonNew.
 
         认证人角色。 legalPerson ：法人代表。
 

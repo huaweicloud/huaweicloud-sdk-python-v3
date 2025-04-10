@@ -26,7 +26,7 @@ class UpdateCopyStateResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateCopyStateResponse
+        r"""UpdateCopyStateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateCopyStateResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateCopyStateResponse.
+        r"""Gets the body of this UpdateCopyStateResponse.
 
         更新任务对应源端复制状态成功
 
@@ -55,7 +55,7 @@ class UpdateCopyStateResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCopyStateResponse.
+        r"""Sets the body of this UpdateCopyStateResponse.
 
         更新任务对应源端复制状态成功
 

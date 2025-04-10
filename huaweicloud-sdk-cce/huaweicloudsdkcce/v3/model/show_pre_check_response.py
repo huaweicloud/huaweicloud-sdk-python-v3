@@ -34,7 +34,7 @@ class ShowPreCheckResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
-        """ShowPreCheckResponse
+        r"""ShowPreCheckResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowPreCheckResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ShowPreCheckResponse.
+        r"""Gets the api_version of this ShowPreCheckResponse.
 
         api版本，默认为v3
 
@@ -83,7 +83,7 @@ class ShowPreCheckResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ShowPreCheckResponse.
+        r"""Sets the api_version of this ShowPreCheckResponse.
 
         api版本，默认为v3
 
@@ -94,7 +94,7 @@ class ShowPreCheckResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ShowPreCheckResponse.
+        r"""Gets the kind of this ShowPreCheckResponse.
 
         资源类型，默认为PreCheckTask
 
@@ -105,7 +105,7 @@ class ShowPreCheckResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ShowPreCheckResponse.
+        r"""Sets the kind of this ShowPreCheckResponse.
 
         资源类型，默认为PreCheckTask
 
@@ -116,7 +116,7 @@ class ShowPreCheckResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowPreCheckResponse.
+        r"""Gets the metadata of this ShowPreCheckResponse.
 
         :return: The metadata of this ShowPreCheckResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.PrecheckTaskMetadata`
@@ -125,7 +125,7 @@ class ShowPreCheckResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowPreCheckResponse.
+        r"""Sets the metadata of this ShowPreCheckResponse.
 
         :param metadata: The metadata of this ShowPreCheckResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.PrecheckTaskMetadata`
@@ -134,7 +134,7 @@ class ShowPreCheckResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ShowPreCheckResponse.
+        r"""Gets the spec of this ShowPreCheckResponse.
 
         :return: The spec of this ShowPreCheckResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.PrecheckSpec`
@@ -143,7 +143,7 @@ class ShowPreCheckResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ShowPreCheckResponse.
+        r"""Sets the spec of this ShowPreCheckResponse.
 
         :param spec: The spec of this ShowPreCheckResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.PrecheckSpec`
@@ -152,7 +152,7 @@ class ShowPreCheckResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowPreCheckResponse.
+        r"""Gets the status of this ShowPreCheckResponse.
 
         :return: The status of this ShowPreCheckResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.PrecheckStatus`
@@ -161,7 +161,7 @@ class ShowPreCheckResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowPreCheckResponse.
+        r"""Sets the status of this ShowPreCheckResponse.
 
         :param status: The status of this ShowPreCheckResponse.
         :type status: :class:`huaweicloudsdkcce.v3.PrecheckStatus`

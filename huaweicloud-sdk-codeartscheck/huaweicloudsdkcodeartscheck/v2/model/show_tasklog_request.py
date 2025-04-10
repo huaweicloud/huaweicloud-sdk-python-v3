@@ -29,7 +29,7 @@ class ShowTasklogRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, execute_id=None):
-        """ShowTasklogRequest
+        r"""ShowTasklogRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowTasklogRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowTasklogRequest.
+        r"""Gets the project_id of this ShowTasklogRequest.
 
         项目ID
 
@@ -66,7 +66,7 @@ class ShowTasklogRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowTasklogRequest.
+        r"""Sets the project_id of this ShowTasklogRequest.
 
         项目ID
 
@@ -77,7 +77,7 @@ class ShowTasklogRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTasklogRequest.
+        r"""Gets the task_id of this ShowTasklogRequest.
 
         任务ID
 
@@ -88,7 +88,7 @@ class ShowTasklogRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTasklogRequest.
+        r"""Sets the task_id of this ShowTasklogRequest.
 
         任务ID
 
@@ -99,7 +99,7 @@ class ShowTasklogRequest:
 
     @property
     def execute_id(self):
-        """Gets the execute_id of this ShowTasklogRequest.
+        r"""Gets the execute_id of this ShowTasklogRequest.
 
         任务单次的执行ID
 
@@ -110,7 +110,7 @@ class ShowTasklogRequest:
 
     @execute_id.setter
     def execute_id(self, execute_id):
-        """Sets the execute_id of this ShowTasklogRequest.
+        r"""Sets the execute_id of this ShowTasklogRequest.
 
         任务单次的执行ID
 

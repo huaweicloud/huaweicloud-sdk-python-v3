@@ -43,7 +43,7 @@ class StartSmartLiveReq:
     }
 
     def __init__(self, video_config=None, play_policy=None, output_urls=None, stream_keys=None, interaction_callback_url=None, live_event_callback_config=None, rtc_callback_config=None, view_mode=None, co_streamer_config=None, job_run_config=None):
-        """StartSmartLiveReq
+        r"""StartSmartLiveReq
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class StartSmartLiveReq:
 
     @property
     def video_config(self):
-        """Gets the video_config of this StartSmartLiveReq.
+        r"""Gets the video_config of this StartSmartLiveReq.
 
         :return: The video_config of this StartSmartLiveReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -115,7 +115,7 @@ class StartSmartLiveReq:
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this StartSmartLiveReq.
+        r"""Sets the video_config of this StartSmartLiveReq.
 
         :param video_config: The video_config of this StartSmartLiveReq.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -124,7 +124,7 @@ class StartSmartLiveReq:
 
     @property
     def play_policy(self):
-        """Gets the play_policy of this StartSmartLiveReq.
+        r"""Gets the play_policy of this StartSmartLiveReq.
 
         :return: The play_policy of this StartSmartLiveReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.PlayPolicy`
@@ -133,7 +133,7 @@ class StartSmartLiveReq:
 
     @play_policy.setter
     def play_policy(self, play_policy):
-        """Sets the play_policy of this StartSmartLiveReq.
+        r"""Sets the play_policy of this StartSmartLiveReq.
 
         :param play_policy: The play_policy of this StartSmartLiveReq.
         :type play_policy: :class:`huaweicloudsdkmetastudio.v1.PlayPolicy`
@@ -142,7 +142,7 @@ class StartSmartLiveReq:
 
     @property
     def output_urls(self):
-        """Gets the output_urls of this StartSmartLiveReq.
+        r"""Gets the output_urls of this StartSmartLiveReq.
 
         **参数解释**： RTMP视频推流第三方直播平台地址。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -153,7 +153,7 @@ class StartSmartLiveReq:
 
     @output_urls.setter
     def output_urls(self, output_urls):
-        """Sets the output_urls of this StartSmartLiveReq.
+        r"""Sets the output_urls of this StartSmartLiveReq.
 
         **参数解释**： RTMP视频推流第三方直播平台地址。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -164,7 +164,7 @@ class StartSmartLiveReq:
 
     @property
     def stream_keys(self):
-        """Gets the stream_keys of this StartSmartLiveReq.
+        r"""Gets the stream_keys of this StartSmartLiveReq.
 
         **参数解释**： RTMP视频推流第三方直播平台流密钥，与推流地址对应。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -175,7 +175,7 @@ class StartSmartLiveReq:
 
     @stream_keys.setter
     def stream_keys(self, stream_keys):
-        """Sets the stream_keys of this StartSmartLiveReq.
+        r"""Sets the stream_keys of this StartSmartLiveReq.
 
         **参数解释**： RTMP视频推流第三方直播平台流密钥，与推流地址对应。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -186,7 +186,7 @@ class StartSmartLiveReq:
 
     @property
     def interaction_callback_url(self):
-        """Gets the interaction_callback_url of this StartSmartLiveReq.
+        r"""Gets the interaction_callback_url of this StartSmartLiveReq.
 
         **参数解释**： 互动回调URL，含鉴权信息。 互动规则trigger.reply_mode配置为CALLBACK时填写 **约束限制**： 不涉及 **取值范围**： 字符长度0-2048位 **默认取值**： 不涉及。
 
@@ -197,7 +197,7 @@ class StartSmartLiveReq:
 
     @interaction_callback_url.setter
     def interaction_callback_url(self, interaction_callback_url):
-        """Sets the interaction_callback_url of this StartSmartLiveReq.
+        r"""Sets the interaction_callback_url of this StartSmartLiveReq.
 
         **参数解释**： 互动回调URL，含鉴权信息。 互动规则trigger.reply_mode配置为CALLBACK时填写 **约束限制**： 不涉及 **取值范围**： 字符长度0-2048位 **默认取值**： 不涉及。
 
@@ -208,7 +208,7 @@ class StartSmartLiveReq:
 
     @property
     def live_event_callback_config(self):
-        """Gets the live_event_callback_config of this StartSmartLiveReq.
+        r"""Gets the live_event_callback_config of this StartSmartLiveReq.
 
         :return: The live_event_callback_config of this StartSmartLiveReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
@@ -217,7 +217,7 @@ class StartSmartLiveReq:
 
     @live_event_callback_config.setter
     def live_event_callback_config(self, live_event_callback_config):
-        """Sets the live_event_callback_config of this StartSmartLiveReq.
+        r"""Sets the live_event_callback_config of this StartSmartLiveReq.
 
         :param live_event_callback_config: The live_event_callback_config of this StartSmartLiveReq.
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
@@ -226,7 +226,7 @@ class StartSmartLiveReq:
 
     @property
     def rtc_callback_config(self):
-        """Gets the rtc_callback_config of this StartSmartLiveReq.
+        r"""Gets the rtc_callback_config of this StartSmartLiveReq.
 
         :return: The rtc_callback_config of this StartSmartLiveReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
@@ -235,7 +235,7 @@ class StartSmartLiveReq:
 
     @rtc_callback_config.setter
     def rtc_callback_config(self, rtc_callback_config):
-        """Sets the rtc_callback_config of this StartSmartLiveReq.
+        r"""Sets the rtc_callback_config of this StartSmartLiveReq.
 
         :param rtc_callback_config: The rtc_callback_config of this StartSmartLiveReq.
         :type rtc_callback_config: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
@@ -244,7 +244,7 @@ class StartSmartLiveReq:
 
     @property
     def view_mode(self):
-        """Gets the view_mode of this StartSmartLiveReq.
+        r"""Gets the view_mode of this StartSmartLiveReq.
 
         **参数解释**： 横竖屏类型。 **约束限制**： 用户无需填写，通过video_config中分辨率判断 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
 
@@ -255,7 +255,7 @@ class StartSmartLiveReq:
 
     @view_mode.setter
     def view_mode(self, view_mode):
-        """Sets the view_mode of this StartSmartLiveReq.
+        r"""Sets the view_mode of this StartSmartLiveReq.
 
         **参数解释**： 横竖屏类型。 **约束限制**： 用户无需填写，通过video_config中分辨率判断 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
 
@@ -266,7 +266,7 @@ class StartSmartLiveReq:
 
     @property
     def co_streamer_config(self):
-        """Gets the co_streamer_config of this StartSmartLiveReq.
+        r"""Gets the co_streamer_config of this StartSmartLiveReq.
 
         :return: The co_streamer_config of this StartSmartLiveReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
@@ -275,7 +275,7 @@ class StartSmartLiveReq:
 
     @co_streamer_config.setter
     def co_streamer_config(self, co_streamer_config):
-        """Sets the co_streamer_config of this StartSmartLiveReq.
+        r"""Sets the co_streamer_config of this StartSmartLiveReq.
 
         :param co_streamer_config: The co_streamer_config of this StartSmartLiveReq.
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
@@ -284,7 +284,7 @@ class StartSmartLiveReq:
 
     @property
     def job_run_config(self):
-        """Gets the job_run_config of this StartSmartLiveReq.
+        r"""Gets the job_run_config of this StartSmartLiveReq.
 
         :return: The job_run_config of this StartSmartLiveReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveJobRunConfig`
@@ -293,7 +293,7 @@ class StartSmartLiveReq:
 
     @job_run_config.setter
     def job_run_config(self, job_run_config):
-        """Sets the job_run_config of this StartSmartLiveReq.
+        r"""Sets the job_run_config of this StartSmartLiveReq.
 
         :param job_run_config: The job_run_config of this StartSmartLiveReq.
         :type job_run_config: :class:`huaweicloudsdkmetastudio.v1.LiveJobRunConfig`

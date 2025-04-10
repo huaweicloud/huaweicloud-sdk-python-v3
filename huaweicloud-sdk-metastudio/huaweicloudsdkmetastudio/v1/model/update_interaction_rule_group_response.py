@@ -36,7 +36,7 @@ class UpdateInteractionRuleGroupResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None, group_name=None, interaction_rules=None, create_time=None, update_time=None, x_request_id=None):
-        """UpdateInteractionRuleGroupResponse
+        r"""UpdateInteractionRuleGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class UpdateInteractionRuleGroupResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateInteractionRuleGroupResponse.
+        r"""Gets the group_id of this UpdateInteractionRuleGroupResponse.
 
         互动规则库ID
 
@@ -90,7 +90,7 @@ class UpdateInteractionRuleGroupResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateInteractionRuleGroupResponse.
+        r"""Sets the group_id of this UpdateInteractionRuleGroupResponse.
 
         互动规则库ID
 
@@ -101,7 +101,7 @@ class UpdateInteractionRuleGroupResponse(SdkResponse):
 
     @property
     def group_name(self):
-        """Gets the group_name of this UpdateInteractionRuleGroupResponse.
+        r"""Gets the group_name of this UpdateInteractionRuleGroupResponse.
 
         互动规则库名称
 
@@ -112,7 +112,7 @@ class UpdateInteractionRuleGroupResponse(SdkResponse):
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this UpdateInteractionRuleGroupResponse.
+        r"""Sets the group_name of this UpdateInteractionRuleGroupResponse.
 
         互动规则库名称
 
@@ -123,7 +123,7 @@ class UpdateInteractionRuleGroupResponse(SdkResponse):
 
     @property
     def interaction_rules(self):
-        """Gets the interaction_rules of this UpdateInteractionRuleGroupResponse.
+        r"""Gets the interaction_rules of this UpdateInteractionRuleGroupResponse.
 
         互动规则列表
 
@@ -134,7 +134,7 @@ class UpdateInteractionRuleGroupResponse(SdkResponse):
 
     @interaction_rules.setter
     def interaction_rules(self, interaction_rules):
-        """Sets the interaction_rules of this UpdateInteractionRuleGroupResponse.
+        r"""Sets the interaction_rules of this UpdateInteractionRuleGroupResponse.
 
         互动规则列表
 
@@ -145,7 +145,7 @@ class UpdateInteractionRuleGroupResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateInteractionRuleGroupResponse.
+        r"""Gets the create_time of this UpdateInteractionRuleGroupResponse.
 
         创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -156,7 +156,7 @@ class UpdateInteractionRuleGroupResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateInteractionRuleGroupResponse.
+        r"""Sets the create_time of this UpdateInteractionRuleGroupResponse.
 
         创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -167,7 +167,7 @@ class UpdateInteractionRuleGroupResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateInteractionRuleGroupResponse.
+        r"""Gets the update_time of this UpdateInteractionRuleGroupResponse.
 
         更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -178,7 +178,7 @@ class UpdateInteractionRuleGroupResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateInteractionRuleGroupResponse.
+        r"""Sets the update_time of this UpdateInteractionRuleGroupResponse.
 
         更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -189,7 +189,7 @@ class UpdateInteractionRuleGroupResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateInteractionRuleGroupResponse.
+        r"""Gets the x_request_id of this UpdateInteractionRuleGroupResponse.
 
         :return: The x_request_id of this UpdateInteractionRuleGroupResponse.
         :rtype: str
@@ -198,7 +198,7 @@ class UpdateInteractionRuleGroupResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateInteractionRuleGroupResponse.
+        r"""Sets the x_request_id of this UpdateInteractionRuleGroupResponse.
 
         :param x_request_id: The x_request_id of this UpdateInteractionRuleGroupResponse.
         :type x_request_id: str

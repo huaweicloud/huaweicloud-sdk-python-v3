@@ -25,7 +25,7 @@ class AttachedEnterpriseRouterRegionId:
     }
 
     def __init__(self, attached_er_table_region_id=None):
-        """AttachedEnterpriseRouterRegionId
+        r"""AttachedEnterpriseRouterRegionId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AttachedEnterpriseRouterRegionId:
 
     @property
     def attached_er_table_region_id(self):
-        """Gets the attached_er_table_region_id of this AttachedEnterpriseRouterRegionId.
+        r"""Gets the attached_er_table_region_id of this AttachedEnterpriseRouterRegionId.
 
         ER路由器的regionID。
 
@@ -53,7 +53,7 @@ class AttachedEnterpriseRouterRegionId:
 
     @attached_er_table_region_id.setter
     def attached_er_table_region_id(self, attached_er_table_region_id):
-        """Sets the attached_er_table_region_id of this AttachedEnterpriseRouterRegionId.
+        r"""Sets the attached_er_table_region_id of this AttachedEnterpriseRouterRegionId.
 
         ER路由器的regionID。
 

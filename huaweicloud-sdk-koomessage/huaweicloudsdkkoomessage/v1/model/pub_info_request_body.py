@@ -41,7 +41,7 @@ class PubInfoRequestBody:
     }
 
     def __init__(self, logo_img=None, pub_name=None, pub_abstract=None, pub_remark=None, auto_get_port=None, signs_for_auto_get_port=None, areas_for_auto_get_port=None, industry=None, authorization_files=None):
-        """PubInfoRequestBody
+        r"""PubInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class PubInfoRequestBody:
 
     @property
     def logo_img(self):
-        """Gets the logo_img of this PubInfoRequestBody.
+        r"""Gets the logo_img of this PubInfoRequestBody.
 
         服务号LOGO图片ID。  > 通过上传智能信息服务号图片资源接口上传LOGO图片后获得的图片resource_id。图片要求大于等于240*240且比例相同。 
 
@@ -106,7 +106,7 @@ class PubInfoRequestBody:
 
     @logo_img.setter
     def logo_img(self, logo_img):
-        """Sets the logo_img of this PubInfoRequestBody.
+        r"""Sets the logo_img of this PubInfoRequestBody.
 
         服务号LOGO图片ID。  > 通过上传智能信息服务号图片资源接口上传LOGO图片后获得的图片resource_id。图片要求大于等于240*240且比例相同。 
 
@@ -117,7 +117,7 @@ class PubInfoRequestBody:
 
     @property
     def pub_name(self):
-        """Gets the pub_name of this PubInfoRequestBody.
+        r"""Gets the pub_name of this PubInfoRequestBody.
 
         服务号名称。  > 同一个企业下可以相同，不同企业下不能重复。 
 
@@ -128,7 +128,7 @@ class PubInfoRequestBody:
 
     @pub_name.setter
     def pub_name(self, pub_name):
-        """Sets the pub_name of this PubInfoRequestBody.
+        r"""Sets the pub_name of this PubInfoRequestBody.
 
         服务号名称。  > 同一个企业下可以相同，不同企业下不能重复。 
 
@@ -139,7 +139,7 @@ class PubInfoRequestBody:
 
     @property
     def pub_abstract(self):
-        """Gets the pub_abstract of this PubInfoRequestBody.
+        r"""Gets the pub_abstract of this PubInfoRequestBody.
 
         服务号简介。
 
@@ -150,7 +150,7 @@ class PubInfoRequestBody:
 
     @pub_abstract.setter
     def pub_abstract(self, pub_abstract):
-        """Sets the pub_abstract of this PubInfoRequestBody.
+        r"""Sets the pub_abstract of this PubInfoRequestBody.
 
         服务号简介。
 
@@ -161,7 +161,7 @@ class PubInfoRequestBody:
 
     @property
     def pub_remark(self):
-        """Gets the pub_remark of this PubInfoRequestBody.
+        r"""Gets the pub_remark of this PubInfoRequestBody.
 
         服务号备注。  > 同一个企业下，服务号名称相同时该项必须不同。 
 
@@ -172,7 +172,7 @@ class PubInfoRequestBody:
 
     @pub_remark.setter
     def pub_remark(self, pub_remark):
-        """Sets the pub_remark of this PubInfoRequestBody.
+        r"""Sets the pub_remark of this PubInfoRequestBody.
 
         服务号备注。  > 同一个企业下，服务号名称相同时该项必须不同。 
 
@@ -183,7 +183,7 @@ class PubInfoRequestBody:
 
     @property
     def auto_get_port(self):
-        """Gets the auto_get_port of this PubInfoRequestBody.
+        r"""Gets the auto_get_port of this PubInfoRequestBody.
 
         是否授权系统自动收集端口。   - 0：否 - 1：是 
 
@@ -194,7 +194,7 @@ class PubInfoRequestBody:
 
     @auto_get_port.setter
     def auto_get_port(self, auto_get_port):
-        """Sets the auto_get_port of this PubInfoRequestBody.
+        r"""Sets the auto_get_port of this PubInfoRequestBody.
 
         是否授权系统自动收集端口。   - 0：否 - 1：是 
 
@@ -205,7 +205,7 @@ class PubInfoRequestBody:
 
     @property
     def signs_for_auto_get_port(self):
-        """Gets the signs_for_auto_get_port of this PubInfoRequestBody.
+        r"""Gets the signs_for_auto_get_port of this PubInfoRequestBody.
 
         自动收集端口使用的签名列表。  > auto_get_port为1时，该字段为必填，每个签名长度为2-18个字符，每个服务号签名不可以重复。 
 
@@ -216,7 +216,7 @@ class PubInfoRequestBody:
 
     @signs_for_auto_get_port.setter
     def signs_for_auto_get_port(self, signs_for_auto_get_port):
-        """Sets the signs_for_auto_get_port of this PubInfoRequestBody.
+        r"""Sets the signs_for_auto_get_port of this PubInfoRequestBody.
 
         自动收集端口使用的签名列表。  > auto_get_port为1时，该字段为必填，每个签名长度为2-18个字符，每个服务号签名不可以重复。 
 
@@ -227,7 +227,7 @@ class PubInfoRequestBody:
 
     @property
     def areas_for_auto_get_port(self):
-        """Gets the areas_for_auto_get_port of this PubInfoRequestBody.
+        r"""Gets the areas_for_auto_get_port of this PubInfoRequestBody.
 
         自动收集端口生效的地区列表。地区取值见《地区名称列表》。  > auto_get_port为1时，该字段有效。不填则默认全国，不允许传入重叠地区。 
 
@@ -238,7 +238,7 @@ class PubInfoRequestBody:
 
     @areas_for_auto_get_port.setter
     def areas_for_auto_get_port(self, areas_for_auto_get_port):
-        """Sets the areas_for_auto_get_port of this PubInfoRequestBody.
+        r"""Sets the areas_for_auto_get_port of this PubInfoRequestBody.
 
         自动收集端口生效的地区列表。地区取值见《地区名称列表》。  > auto_get_port为1时，该字段有效。不填则默认全国，不允许传入重叠地区。 
 
@@ -249,7 +249,7 @@ class PubInfoRequestBody:
 
     @property
     def industry(self):
-        """Gets the industry of this PubInfoRequestBody.
+        r"""Gets the industry of this PubInfoRequestBody.
 
         从事行业，默认取服务号所属商家的行业分类。  - 1：金融理财  - 2：社交通讯  - 3：影音娱乐  - 4：旅游出行  - 5：购物  - 6：本地生活  - 7：运动健康  - 8：教育培训  - 9：新闻阅读  - 10：运营商  - 11：其他 
 
@@ -260,7 +260,7 @@ class PubInfoRequestBody:
 
     @industry.setter
     def industry(self, industry):
-        """Sets the industry of this PubInfoRequestBody.
+        r"""Sets the industry of this PubInfoRequestBody.
 
         从事行业，默认取服务号所属商家的行业分类。  - 1：金融理财  - 2：社交通讯  - 3：影音娱乐  - 4：旅游出行  - 5：购物  - 6：本地生活  - 7：运动健康  - 8：教育培训  - 9：新闻阅读  - 10：运营商  - 11：其他 
 
@@ -271,7 +271,7 @@ class PubInfoRequestBody:
 
     @property
     def authorization_files(self):
-        """Gets the authorization_files of this PubInfoRequestBody.
+        r"""Gets the authorization_files of this PubInfoRequestBody.
 
         授权证明图片ID，支持jpg、bmp、png和jpeg格式，全部图片总大小不超过4M，最多支持6张。  > 参数值为上传智能信息服务号图片资源API返回的resource_id。 
 
@@ -282,7 +282,7 @@ class PubInfoRequestBody:
 
     @authorization_files.setter
     def authorization_files(self, authorization_files):
-        """Sets the authorization_files of this PubInfoRequestBody.
+        r"""Sets the authorization_files of this PubInfoRequestBody.
 
         授权证明图片ID，支持jpg、bmp、png和jpeg格式，全部图片总大小不超过4M，最多支持6张。  > 参数值为上传智能信息服务号图片资源API返回的resource_id。 
 

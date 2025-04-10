@@ -32,7 +32,7 @@ class ListSqlJobsResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, job_count=None, jobs=None):
-        """ListSqlJobsResponse
+        r"""ListSqlJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListSqlJobsResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListSqlJobsResponse.
+        r"""Gets the is_success of this ListSqlJobsResponse.
 
         请求发送是否成功。“true”表示请求发送成功。
 
@@ -76,7 +76,7 @@ class ListSqlJobsResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListSqlJobsResponse.
+        r"""Sets the is_success of this ListSqlJobsResponse.
 
         请求发送是否成功。“true”表示请求发送成功。
 
@@ -87,7 +87,7 @@ class ListSqlJobsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListSqlJobsResponse.
+        r"""Gets the message of this ListSqlJobsResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -98,7 +98,7 @@ class ListSqlJobsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListSqlJobsResponse.
+        r"""Sets the message of this ListSqlJobsResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -109,7 +109,7 @@ class ListSqlJobsResponse(SdkResponse):
 
     @property
     def job_count(self):
-        """Gets the job_count of this ListSqlJobsResponse.
+        r"""Gets the job_count of this ListSqlJobsResponse.
 
         作业总个数。
 
@@ -120,7 +120,7 @@ class ListSqlJobsResponse(SdkResponse):
 
     @job_count.setter
     def job_count(self, job_count):
-        """Sets the job_count of this ListSqlJobsResponse.
+        r"""Sets the job_count of this ListSqlJobsResponse.
 
         作业总个数。
 
@@ -131,7 +131,7 @@ class ListSqlJobsResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ListSqlJobsResponse.
+        r"""Gets the jobs of this ListSqlJobsResponse.
 
         作业信息。
 
@@ -142,7 +142,7 @@ class ListSqlJobsResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ListSqlJobsResponse.
+        r"""Sets the jobs of this ListSqlJobsResponse.
 
         作业信息。
 

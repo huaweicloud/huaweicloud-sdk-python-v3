@@ -27,7 +27,7 @@ class ShowGaussMySqlEngineVersionRequest:
     }
 
     def __init__(self, x_language=None, database_name=None):
-        """ShowGaussMySqlEngineVersionRequest
+        r"""ShowGaussMySqlEngineVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowGaussMySqlEngineVersionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowGaussMySqlEngineVersionRequest.
+        r"""Gets the x_language of this ShowGaussMySqlEngineVersionRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class ShowGaussMySqlEngineVersionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowGaussMySqlEngineVersionRequest.
+        r"""Sets the x_language of this ShowGaussMySqlEngineVersionRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class ShowGaussMySqlEngineVersionRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ShowGaussMySqlEngineVersionRequest.
+        r"""Gets the database_name of this ShowGaussMySqlEngineVersionRequest.
 
         数据库引擎。支持的引擎如下，不区分大小写：gaussdb-mysql。
 
@@ -82,7 +82,7 @@ class ShowGaussMySqlEngineVersionRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ShowGaussMySqlEngineVersionRequest.
+        r"""Sets the database_name of this ShowGaussMySqlEngineVersionRequest.
 
         数据库引擎。支持的引擎如下，不区分大小写：gaussdb-mysql。
 

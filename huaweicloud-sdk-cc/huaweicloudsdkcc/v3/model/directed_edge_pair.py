@@ -25,7 +25,7 @@ class DirectedEdgePair:
     }
 
     def __init__(self, edge_pair=None):
-        """DirectedEdgePair
+        r"""DirectedEdgePair
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DirectedEdgePair:
 
     @property
     def edge_pair(self):
-        """Gets the edge_pair of this DirectedEdgePair.
+        r"""Gets the edge_pair of this DirectedEdgePair.
 
         分支网络连接的两个端点定义，可能为两个点，也可能为两个单向边，长度固定为2的数组。
 
@@ -53,7 +53,7 @@ class DirectedEdgePair:
 
     @edge_pair.setter
     def edge_pair(self, edge_pair):
-        """Sets the edge_pair of this DirectedEdgePair.
+        r"""Sets the edge_pair of this DirectedEdgePair.
 
         分支网络连接的两个端点定义，可能为两个点，也可能为两个单向边，长度固定为2的数组。
 

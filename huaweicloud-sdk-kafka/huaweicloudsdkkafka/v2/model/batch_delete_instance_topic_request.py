@@ -27,7 +27,7 @@ class BatchDeleteInstanceTopicRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchDeleteInstanceTopicRequest
+        r"""BatchDeleteInstanceTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteInstanceTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchDeleteInstanceTopicRequest.
+        r"""Gets the instance_id of this BatchDeleteInstanceTopicRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteInstanceTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchDeleteInstanceTopicRequest.
+        r"""Sets the instance_id of this BatchDeleteInstanceTopicRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteInstanceTopicRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteInstanceTopicRequest.
+        r"""Gets the body of this BatchDeleteInstanceTopicRequest.
 
         :return: The body of this BatchDeleteInstanceTopicRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceTopicReq`
@@ -80,7 +80,7 @@ class BatchDeleteInstanceTopicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteInstanceTopicRequest.
+        r"""Sets the body of this BatchDeleteInstanceTopicRequest.
 
         :param body: The body of this BatchDeleteInstanceTopicRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.BatchDeleteInstanceTopicReq`

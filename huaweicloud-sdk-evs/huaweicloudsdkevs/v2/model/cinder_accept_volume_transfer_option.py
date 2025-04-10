@@ -25,7 +25,7 @@ class CinderAcceptVolumeTransferOption:
     }
 
     def __init__(self, auth_key=None):
-        """CinderAcceptVolumeTransferOption
+        r"""CinderAcceptVolumeTransferOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CinderAcceptVolumeTransferOption:
 
     @property
     def auth_key(self):
-        """Gets the auth_key of this CinderAcceptVolumeTransferOption.
+        r"""Gets the auth_key of this CinderAcceptVolumeTransferOption.
 
         云硬盘过户的身份认证密钥。  创建云硬盘过户时会返回该身份认证密钥。
 
@@ -53,7 +53,7 @@ class CinderAcceptVolumeTransferOption:
 
     @auth_key.setter
     def auth_key(self, auth_key):
-        """Sets the auth_key of this CinderAcceptVolumeTransferOption.
+        r"""Sets the auth_key of this CinderAcceptVolumeTransferOption.
 
         云硬盘过户的身份认证密钥。  创建云硬盘过户时会返回该身份认证密钥。
 

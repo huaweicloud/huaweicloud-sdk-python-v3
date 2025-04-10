@@ -45,7 +45,7 @@ class ListEventModel:
     }
 
     def __init__(self, starts_at=None, ends_at=None, timeout=None, metadata=None, annotations=None, attach_rule=None, id=None, event_sn=None, arrives_at=None, enterprise_project_id=None, policy=None):
-        """ListEventModel
+        r"""ListEventModel
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListEventModel:
 
     @property
     def starts_at(self):
-        """Gets the starts_at of this ListEventModel.
+        r"""Gets the starts_at of this ListEventModel.
 
         事件或者告警产生的时间，CST毫秒级时间戳。
 
@@ -124,7 +124,7 @@ class ListEventModel:
 
     @starts_at.setter
     def starts_at(self, starts_at):
-        """Sets the starts_at of this ListEventModel.
+        r"""Sets the starts_at of this ListEventModel.
 
         事件或者告警产生的时间，CST毫秒级时间戳。
 
@@ -135,7 +135,7 @@ class ListEventModel:
 
     @property
     def ends_at(self):
-        """Gets the ends_at of this ListEventModel.
+        r"""Gets the ends_at of this ListEventModel.
 
         事件或者告警清除的时间，CST毫秒级时间戳，为0时表示未删除。
 
@@ -146,7 +146,7 @@ class ListEventModel:
 
     @ends_at.setter
     def ends_at(self, ends_at):
-        """Sets the ends_at of this ListEventModel.
+        r"""Sets the ends_at of this ListEventModel.
 
         事件或者告警清除的时间，CST毫秒级时间戳，为0时表示未删除。
 
@@ -157,7 +157,7 @@ class ListEventModel:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ListEventModel.
+        r"""Gets the timeout of this ListEventModel.
 
         告警自动清除时间。毫秒数，例如一分钟则填写为60000。默认清除时间为3天,对应数字为 4320 * 1000（即：3天 * 24小时 * 60分钟 * 1000毫秒）。
 
@@ -168,7 +168,7 @@ class ListEventModel:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ListEventModel.
+        r"""Sets the timeout of this ListEventModel.
 
         告警自动清除时间。毫秒数，例如一分钟则填写为60000。默认清除时间为3天,对应数字为 4320 * 1000（即：3天 * 24小时 * 60分钟 * 1000毫秒）。
 
@@ -179,7 +179,7 @@ class ListEventModel:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListEventModel.
+        r"""Gets the metadata of this ListEventModel.
 
         事件或者告警的详细信息，为键值对形式。必须字段为：  - event_name：事件或者告警名称,类型为String；  - event_severity：事件级别枚举值。类型为String，四种类型 \"Critical\", \"Major\", \"Minor\", \"Info\"；  - event_type：事件类别枚举值。类型为String，event为告警事件，alarm为普通告警；  - resource_provider：事件对应云服务名称。类型为String；  - resource_type：事件对应资源类型。类型为String；  - resource_id：事件对应资源信息。类型为String。
 
@@ -190,7 +190,7 @@ class ListEventModel:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListEventModel.
+        r"""Sets the metadata of this ListEventModel.
 
         事件或者告警的详细信息，为键值对形式。必须字段为：  - event_name：事件或者告警名称,类型为String；  - event_severity：事件级别枚举值。类型为String，四种类型 \"Critical\", \"Major\", \"Minor\", \"Info\"；  - event_type：事件类别枚举值。类型为String，event为告警事件，alarm为普通告警；  - resource_provider：事件对应云服务名称。类型为String；  - resource_type：事件对应资源类型。类型为String；  - resource_id：事件对应资源信息。类型为String。
 
@@ -201,7 +201,7 @@ class ListEventModel:
 
     @property
     def annotations(self):
-        """Gets the annotations of this ListEventModel.
+        r"""Gets the annotations of this ListEventModel.
 
         事件或者告警附加字段，可以为空。
 
@@ -212,7 +212,7 @@ class ListEventModel:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this ListEventModel.
+        r"""Sets the annotations of this ListEventModel.
 
         事件或者告警附加字段，可以为空。
 
@@ -223,7 +223,7 @@ class ListEventModel:
 
     @property
     def attach_rule(self):
-        """Gets the attach_rule of this ListEventModel.
+        r"""Gets the attach_rule of this ListEventModel.
 
         事件或者告警预留字段，为空。
 
@@ -234,7 +234,7 @@ class ListEventModel:
 
     @attach_rule.setter
     def attach_rule(self, attach_rule):
-        """Sets the attach_rule of this ListEventModel.
+        r"""Sets the attach_rule of this ListEventModel.
 
         事件或者告警预留字段，为空。
 
@@ -245,7 +245,7 @@ class ListEventModel:
 
     @property
     def id(self):
-        """Gets the id of this ListEventModel.
+        r"""Gets the id of this ListEventModel.
 
         事件或者告警id，系统会自动生成，上报无须填写该字段。
 
@@ -256,7 +256,7 @@ class ListEventModel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListEventModel.
+        r"""Sets the id of this ListEventModel.
 
         事件或者告警id，系统会自动生成，上报无须填写该字段。
 
@@ -267,7 +267,7 @@ class ListEventModel:
 
     @property
     def event_sn(self):
-        """Gets the event_sn of this ListEventModel.
+        r"""Gets the event_sn of this ListEventModel.
 
         告警流水号。
 
@@ -278,7 +278,7 @@ class ListEventModel:
 
     @event_sn.setter
     def event_sn(self, event_sn):
-        """Sets the event_sn of this ListEventModel.
+        r"""Sets the event_sn of this ListEventModel.
 
         告警流水号。
 
@@ -289,7 +289,7 @@ class ListEventModel:
 
     @property
     def arrives_at(self):
-        """Gets the arrives_at of this ListEventModel.
+        r"""Gets the arrives_at of this ListEventModel.
 
         事件到达系统时间，CST毫秒级时间戳。
 
@@ -300,7 +300,7 @@ class ListEventModel:
 
     @arrives_at.setter
     def arrives_at(self, arrives_at):
-        """Sets the arrives_at of this ListEventModel.
+        r"""Sets the arrives_at of this ListEventModel.
 
         事件到达系统时间，CST毫秒级时间戳。
 
@@ -311,7 +311,7 @@ class ListEventModel:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListEventModel.
+        r"""Gets the enterprise_project_id of this ListEventModel.
 
         事件或告警所属企业项目id。
 
@@ -322,7 +322,7 @@ class ListEventModel:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListEventModel.
+        r"""Sets the enterprise_project_id of this ListEventModel.
 
         事件或告警所属企业项目id。
 
@@ -333,7 +333,7 @@ class ListEventModel:
 
     @property
     def policy(self):
-        """Gets the policy of this ListEventModel.
+        r"""Gets the policy of this ListEventModel.
 
         开放告警策略
 
@@ -344,7 +344,7 @@ class ListEventModel:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this ListEventModel.
+        r"""Sets the policy of this ListEventModel.
 
         开放告警策略
 

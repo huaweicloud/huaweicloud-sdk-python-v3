@@ -29,7 +29,7 @@ class ListJobOperationLogRequest:
     }
 
     def __init__(self, offset=None, limit=None, job_id=None):
-        """ListJobOperationLogRequest
+        r"""ListJobOperationLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListJobOperationLogRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJobOperationLogRequest.
+        r"""Gets the offset of this ListJobOperationLogRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -67,7 +67,7 @@ class ListJobOperationLogRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJobOperationLogRequest.
+        r"""Sets the offset of this ListJobOperationLogRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -78,7 +78,7 @@ class ListJobOperationLogRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJobOperationLogRequest.
+        r"""Gets the limit of this ListJobOperationLogRequest.
 
         每页显示的条目数量。
 
@@ -89,7 +89,7 @@ class ListJobOperationLogRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJobOperationLogRequest.
+        r"""Sets the limit of this ListJobOperationLogRequest.
 
         每页显示的条目数量。
 
@@ -100,7 +100,7 @@ class ListJobOperationLogRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListJobOperationLogRequest.
+        r"""Gets the job_id of this ListJobOperationLogRequest.
 
         任务id
 
@@ -111,7 +111,7 @@ class ListJobOperationLogRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListJobOperationLogRequest.
+        r"""Sets the job_id of this ListJobOperationLogRequest.
 
         任务id
 

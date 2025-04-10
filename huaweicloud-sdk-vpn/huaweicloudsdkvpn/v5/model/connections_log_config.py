@@ -27,7 +27,7 @@ class ConnectionsLogConfig:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None):
-        """ConnectionsLogConfig
+        r"""ConnectionsLogConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ConnectionsLogConfig:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this ConnectionsLogConfig.
+        r"""Gets the log_group_id of this ConnectionsLogConfig.
 
         日志组ID
 
@@ -61,7 +61,7 @@ class ConnectionsLogConfig:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ConnectionsLogConfig.
+        r"""Sets the log_group_id of this ConnectionsLogConfig.
 
         日志组ID
 
@@ -72,7 +72,7 @@ class ConnectionsLogConfig:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this ConnectionsLogConfig.
+        r"""Gets the log_stream_id of this ConnectionsLogConfig.
 
         日志流ID
 
@@ -83,7 +83,7 @@ class ConnectionsLogConfig:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this ConnectionsLogConfig.
+        r"""Sets the log_stream_id of this ConnectionsLogConfig.
 
         日志流ID
 

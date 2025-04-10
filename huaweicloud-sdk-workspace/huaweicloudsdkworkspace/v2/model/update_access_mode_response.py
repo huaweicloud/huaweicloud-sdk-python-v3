@@ -26,7 +26,7 @@ class UpdateAccessModeResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateAccessModeResponse
+        r"""UpdateAccessModeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAccessModeResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateAccessModeResponse.
+        r"""Gets the job_id of this UpdateAccessModeResponse.
 
         任务id
 
@@ -55,7 +55,7 @@ class UpdateAccessModeResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateAccessModeResponse.
+        r"""Sets the job_id of this UpdateAccessModeResponse.
 
         任务id
 

@@ -43,7 +43,7 @@ class ListQuotaResult:
     }
 
     def __init__(self, enterprise_project_id=None, enterprise_project_name=None, instance_eps_quota=None, vcpus_eps_quota=None, ram_eps_quota=None, volume_eps_quota=None, instance_used=None, vcpus_used=None, ram_used=None, volume_used=None):
-        """ListQuotaResult
+        r"""ListQuotaResult
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListQuotaResult:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListQuotaResult.
+        r"""Gets the enterprise_project_id of this ListQuotaResult.
 
         企业项目ID。
 
@@ -117,7 +117,7 @@ class ListQuotaResult:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListQuotaResult.
+        r"""Sets the enterprise_project_id of this ListQuotaResult.
 
         企业项目ID。
 
@@ -128,7 +128,7 @@ class ListQuotaResult:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this ListQuotaResult.
+        r"""Gets the enterprise_project_name of this ListQuotaResult.
 
         企业项目名称。
 
@@ -139,7 +139,7 @@ class ListQuotaResult:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this ListQuotaResult.
+        r"""Sets the enterprise_project_name of this ListQuotaResult.
 
         企业项目名称。
 
@@ -150,7 +150,7 @@ class ListQuotaResult:
 
     @property
     def instance_eps_quota(self):
-        """Gets the instance_eps_quota of this ListQuotaResult.
+        r"""Gets the instance_eps_quota of this ListQuotaResult.
 
         EPS实例资源配额数量，值为-1时表示配额无限制。
 
@@ -161,7 +161,7 @@ class ListQuotaResult:
 
     @instance_eps_quota.setter
     def instance_eps_quota(self, instance_eps_quota):
-        """Sets the instance_eps_quota of this ListQuotaResult.
+        r"""Sets the instance_eps_quota of this ListQuotaResult.
 
         EPS实例资源配额数量，值为-1时表示配额无限制。
 
@@ -172,7 +172,7 @@ class ListQuotaResult:
 
     @property
     def vcpus_eps_quota(self):
-        """Gets the vcpus_eps_quota of this ListQuotaResult.
+        r"""Gets the vcpus_eps_quota of this ListQuotaResult.
 
         EPS计算资源配额数量，值为-1时表示配额无限制。
 
@@ -183,7 +183,7 @@ class ListQuotaResult:
 
     @vcpus_eps_quota.setter
     def vcpus_eps_quota(self, vcpus_eps_quota):
-        """Sets the vcpus_eps_quota of this ListQuotaResult.
+        r"""Sets the vcpus_eps_quota of this ListQuotaResult.
 
         EPS计算资源配额数量，值为-1时表示配额无限制。
 
@@ -194,7 +194,7 @@ class ListQuotaResult:
 
     @property
     def ram_eps_quota(self):
-        """Gets the ram_eps_quota of this ListQuotaResult.
+        r"""Gets the ram_eps_quota of this ListQuotaResult.
 
         EPS内存资源配额量，单位为GB，值为-1时表示配额无限制。
 
@@ -205,7 +205,7 @@ class ListQuotaResult:
 
     @ram_eps_quota.setter
     def ram_eps_quota(self, ram_eps_quota):
-        """Sets the ram_eps_quota of this ListQuotaResult.
+        r"""Sets the ram_eps_quota of this ListQuotaResult.
 
         EPS内存资源配额量，单位为GB，值为-1时表示配额无限制。
 
@@ -216,7 +216,7 @@ class ListQuotaResult:
 
     @property
     def volume_eps_quota(self):
-        """Gets the volume_eps_quota of this ListQuotaResult.
+        r"""Gets the volume_eps_quota of this ListQuotaResult.
 
         EPS磁盘资源配额量，单位为GB，值为-1时表示配额无限制。
 
@@ -227,7 +227,7 @@ class ListQuotaResult:
 
     @volume_eps_quota.setter
     def volume_eps_quota(self, volume_eps_quota):
-        """Sets the volume_eps_quota of this ListQuotaResult.
+        r"""Sets the volume_eps_quota of this ListQuotaResult.
 
         EPS磁盘资源配额量，单位为GB，值为-1时表示配额无限制。
 
@@ -238,7 +238,7 @@ class ListQuotaResult:
 
     @property
     def instance_used(self):
-        """Gets the instance_used of this ListQuotaResult.
+        r"""Gets the instance_used of this ListQuotaResult.
 
         EPS实例使用数量。
 
@@ -249,7 +249,7 @@ class ListQuotaResult:
 
     @instance_used.setter
     def instance_used(self, instance_used):
-        """Sets the instance_used of this ListQuotaResult.
+        r"""Sets the instance_used of this ListQuotaResult.
 
         EPS实例使用数量。
 
@@ -260,7 +260,7 @@ class ListQuotaResult:
 
     @property
     def vcpus_used(self):
-        """Gets the vcpus_used of this ListQuotaResult.
+        r"""Gets the vcpus_used of this ListQuotaResult.
 
         EPS计算资源使用数量。
 
@@ -271,7 +271,7 @@ class ListQuotaResult:
 
     @vcpus_used.setter
     def vcpus_used(self, vcpus_used):
-        """Sets the vcpus_used of this ListQuotaResult.
+        r"""Sets the vcpus_used of this ListQuotaResult.
 
         EPS计算资源使用数量。
 
@@ -282,7 +282,7 @@ class ListQuotaResult:
 
     @property
     def ram_used(self):
-        """Gets the ram_used of this ListQuotaResult.
+        r"""Gets the ram_used of this ListQuotaResult.
 
         EPS内存使用配额量，单位为GB。
 
@@ -293,7 +293,7 @@ class ListQuotaResult:
 
     @ram_used.setter
     def ram_used(self, ram_used):
-        """Sets the ram_used of this ListQuotaResult.
+        r"""Sets the ram_used of this ListQuotaResult.
 
         EPS内存使用配额量，单位为GB。
 
@@ -304,7 +304,7 @@ class ListQuotaResult:
 
     @property
     def volume_used(self):
-        """Gets the volume_used of this ListQuotaResult.
+        r"""Gets the volume_used of this ListQuotaResult.
 
         EPS磁盘使用配额量，单位为GB。
 
@@ -315,7 +315,7 @@ class ListQuotaResult:
 
     @volume_used.setter
     def volume_used(self, volume_used):
-        """Sets the volume_used of this ListQuotaResult.
+        r"""Sets the volume_used of this ListQuotaResult.
 
         EPS磁盘使用配额量，单位为GB。
 

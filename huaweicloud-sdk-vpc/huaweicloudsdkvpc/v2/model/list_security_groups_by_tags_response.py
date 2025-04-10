@@ -28,7 +28,7 @@ class ListSecurityGroupsByTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListSecurityGroupsByTagsResponse
+        r"""ListSecurityGroupsByTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecurityGroupsByTagsResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListSecurityGroupsByTagsResponse.
+        r"""Gets the resources of this ListSecurityGroupsByTagsResponse.
 
         资源列表
 
@@ -62,7 +62,7 @@ class ListSecurityGroupsByTagsResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListSecurityGroupsByTagsResponse.
+        r"""Sets the resources of this ListSecurityGroupsByTagsResponse.
 
         资源列表
 
@@ -73,7 +73,7 @@ class ListSecurityGroupsByTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListSecurityGroupsByTagsResponse.
+        r"""Gets the total_count of this ListSecurityGroupsByTagsResponse.
 
         资源数量
 
@@ -84,7 +84,7 @@ class ListSecurityGroupsByTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListSecurityGroupsByTagsResponse.
+        r"""Sets the total_count of this ListSecurityGroupsByTagsResponse.
 
         资源数量
 

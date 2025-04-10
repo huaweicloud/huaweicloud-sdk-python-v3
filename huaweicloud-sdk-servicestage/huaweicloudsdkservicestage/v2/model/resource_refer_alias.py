@@ -23,7 +23,7 @@ class ResourceReferAlias:
     }
 
     def __init__(self):
-        """ResourceReferAlias
+        r"""ResourceReferAlias
 
         The model defined in huaweicloud sdk
 

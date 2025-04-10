@@ -25,7 +25,7 @@ class ShowIntelligentDiagnosisAbnormalCountOfInstancesRequest:
     }
 
     def __init__(self, x_language=None):
-        """ShowIntelligentDiagnosisAbnormalCountOfInstancesRequest
+        r"""ShowIntelligentDiagnosisAbnormalCountOfInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowIntelligentDiagnosisAbnormalCountOfInstancesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowIntelligentDiagnosisAbnormalCountOfInstancesRequest.
+        r"""Gets the x_language of this ShowIntelligentDiagnosisAbnormalCountOfInstancesRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -54,7 +54,7 @@ class ShowIntelligentDiagnosisAbnormalCountOfInstancesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowIntelligentDiagnosisAbnormalCountOfInstancesRequest.
+        r"""Sets the x_language of this ShowIntelligentDiagnosisAbnormalCountOfInstancesRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

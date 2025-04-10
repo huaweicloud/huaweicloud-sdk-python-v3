@@ -25,7 +25,7 @@ class GrantDatabasePermissionRequestBody:
     }
 
     def __init__(self, users=None):
-        """GrantDatabasePermissionRequestBody
+        r"""GrantDatabasePermissionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GrantDatabasePermissionRequestBody:
 
     @property
     def users(self):
-        """Gets the users of this GrantDatabasePermissionRequestBody.
+        r"""Gets the users of this GrantDatabasePermissionRequestBody.
 
         数据库用户列表，列表最大长度为50。
 
@@ -53,7 +53,7 @@ class GrantDatabasePermissionRequestBody:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this GrantDatabasePermissionRequestBody.
+        r"""Sets the users of this GrantDatabasePermissionRequestBody.
 
         数据库用户列表，列表最大长度为50。
 

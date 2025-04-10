@@ -27,7 +27,7 @@ class CreatePremiumHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """CreatePremiumHostRequest
+        r"""CreatePremiumHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreatePremiumHostRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreatePremiumHostRequest.
+        r"""Gets the enterprise_project_id of this CreatePremiumHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -61,7 +61,7 @@ class CreatePremiumHostRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreatePremiumHostRequest.
+        r"""Sets the enterprise_project_id of this CreatePremiumHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -72,7 +72,7 @@ class CreatePremiumHostRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePremiumHostRequest.
+        r"""Gets the body of this CreatePremiumHostRequest.
 
         :return: The body of this CreatePremiumHostRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePremiumHostRequestBody`
@@ -81,7 +81,7 @@ class CreatePremiumHostRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePremiumHostRequest.
+        r"""Sets the body of this CreatePremiumHostRequest.
 
         :param body: The body of this CreatePremiumHostRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreatePremiumHostRequestBody`

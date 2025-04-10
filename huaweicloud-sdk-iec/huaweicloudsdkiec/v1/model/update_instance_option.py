@@ -27,7 +27,7 @@ class UpdateInstanceOption:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateInstanceOption
+        r"""UpdateInstanceOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateInstanceOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateInstanceOption.
+        r"""Gets the name of this UpdateInstanceOption.
 
         修改后的边缘实例名称， 只能由中文字符、英文字母、数字及“_”、“-”、“.”组成。
 
@@ -61,7 +61,7 @@ class UpdateInstanceOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateInstanceOption.
+        r"""Sets the name of this UpdateInstanceOption.
 
         修改后的边缘实例名称， 只能由中文字符、英文字母、数字及“_”、“-”、“.”组成。
 
@@ -72,7 +72,7 @@ class UpdateInstanceOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateInstanceOption.
+        r"""Gets the description of this UpdateInstanceOption.
 
         描述， 不能包含“<”，“>”。
 
@@ -83,7 +83,7 @@ class UpdateInstanceOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateInstanceOption.
+        r"""Sets the description of this UpdateInstanceOption.
 
         描述， 不能包含“<”，“>”。
 

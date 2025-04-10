@@ -27,7 +27,7 @@ class ConnectionType:
     }
 
     def __init__(self):
-        """ConnectionType
+        r"""ConnectionType
 
         The model defined in huaweicloud sdk
 

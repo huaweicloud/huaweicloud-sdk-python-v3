@@ -31,7 +31,7 @@ class JobTaskDto:
     }
 
     def __init__(self, task_name=None, inputs=None, resources=None, io_acc_type=None):
-        """JobTaskDto
+        r"""JobTaskDto
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class JobTaskDto:
 
     @property
     def task_name(self):
-        """Gets the task_name of this JobTaskDto.
+        r"""Gets the task_name of this JobTaskDto.
 
         子任务实际名称，取值范围[1,32]，只能以大小写字母开头，由大小写字母、数字、中划线（-）、下划线（_）组成，以大小写字符或数字结尾。需要和已有子任务的名称一致。
 
@@ -74,7 +74,7 @@ class JobTaskDto:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this JobTaskDto.
+        r"""Sets the task_name of this JobTaskDto.
 
         子任务实际名称，取值范围[1,32]，只能以大小写字母开头，由大小写字母、数字、中划线（-）、下划线（_）组成，以大小写字符或数字结尾。需要和已有子任务的名称一致。
 
@@ -85,7 +85,7 @@ class JobTaskDto:
 
     @property
     def inputs(self):
-        """Gets the inputs of this JobTaskDto.
+        r"""Gets the inputs of this JobTaskDto.
 
         任务的输入参数信息
 
@@ -96,7 +96,7 @@ class JobTaskDto:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this JobTaskDto.
+        r"""Sets the inputs of this JobTaskDto.
 
         任务的输入参数信息
 
@@ -107,7 +107,7 @@ class JobTaskDto:
 
     @property
     def resources(self):
-        """Gets the resources of this JobTaskDto.
+        r"""Gets the resources of this JobTaskDto.
 
         :return: The resources of this JobTaskDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
@@ -116,7 +116,7 @@ class JobTaskDto:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this JobTaskDto.
+        r"""Sets the resources of this JobTaskDto.
 
         :param resources: The resources of this JobTaskDto.
         :type resources: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
@@ -125,7 +125,7 @@ class JobTaskDto:
 
     @property
     def io_acc_type(self):
-        """Gets the io_acc_type of this JobTaskDto.
+        r"""Gets the io_acc_type of this JobTaskDto.
 
         子任务使用的IO加速实例类型，不填表示不使用；
 
@@ -136,7 +136,7 @@ class JobTaskDto:
 
     @io_acc_type.setter
     def io_acc_type(self, io_acc_type):
-        """Sets the io_acc_type of this JobTaskDto.
+        r"""Sets the io_acc_type of this JobTaskDto.
 
         子任务使用的IO加速实例类型，不填表示不使用；
 

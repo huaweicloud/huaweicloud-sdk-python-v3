@@ -57,7 +57,7 @@ class ThrottleForApi:
     }
 
     def __init__(self, app_call_limits=None, name=None, time_unit=None, remark=None, api_call_limits=None, type=None, enable_adaptive_control=None, user_call_limits=None, time_interval=None, ip_call_limits=None, id=None, bind_num=None, is_inclu_special_throttle=None, create_time=None, env_name=None, bind_id=None, bind_time=None):
-        """ThrottleForApi
+        r"""ThrottleForApi
 
         The model defined in huaweicloud sdk
 
@@ -151,7 +151,7 @@ class ThrottleForApi:
 
     @property
     def app_call_limits(self):
-        """Gets the app_call_limits of this ThrottleForApi.
+        r"""Gets the app_call_limits of this ThrottleForApi.
 
         APP流量限制是指一个API在时长之内被每个APP访问的次数上限，该数值不超过用户流量限制值。输入的值不超过2147483647。正整数。 
 
@@ -162,7 +162,7 @@ class ThrottleForApi:
 
     @app_call_limits.setter
     def app_call_limits(self, app_call_limits):
-        """Sets the app_call_limits of this ThrottleForApi.
+        r"""Sets the app_call_limits of this ThrottleForApi.
 
         APP流量限制是指一个API在时长之内被每个APP访问的次数上限，该数值不超过用户流量限制值。输入的值不超过2147483647。正整数。 
 
@@ -173,7 +173,7 @@ class ThrottleForApi:
 
     @property
     def name(self):
-        """Gets the name of this ThrottleForApi.
+        r"""Gets the name of this ThrottleForApi.
 
         流控策略名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -184,7 +184,7 @@ class ThrottleForApi:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ThrottleForApi.
+        r"""Sets the name of this ThrottleForApi.
 
         流控策略名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3 ~ 64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -195,7 +195,7 @@ class ThrottleForApi:
 
     @property
     def time_unit(self):
-        """Gets the time_unit of this ThrottleForApi.
+        r"""Gets the time_unit of this ThrottleForApi.
 
         流控的时间单位
 
@@ -206,7 +206,7 @@ class ThrottleForApi:
 
     @time_unit.setter
     def time_unit(self, time_unit):
-        """Sets the time_unit of this ThrottleForApi.
+        r"""Sets the time_unit of this ThrottleForApi.
 
         流控的时间单位
 
@@ -217,7 +217,7 @@ class ThrottleForApi:
 
     @property
     def remark(self):
-        """Gets the remark of this ThrottleForApi.
+        r"""Gets the remark of this ThrottleForApi.
 
         流控策略描述字符长度不超过255。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -228,7 +228,7 @@ class ThrottleForApi:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ThrottleForApi.
+        r"""Sets the remark of this ThrottleForApi.
 
         流控策略描述字符长度不超过255。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -239,7 +239,7 @@ class ThrottleForApi:
 
     @property
     def api_call_limits(self):
-        """Gets the api_call_limits of this ThrottleForApi.
+        r"""Gets the api_call_limits of this ThrottleForApi.
 
         API流量限制是指时长内一个API能够被访问的次数上限。该值不超过系统默认配额限制，系统默认配额为200tps，用户可根据实际情况修改该系统默认配额。输入的值不超过2147483647。正整数。
 
@@ -250,7 +250,7 @@ class ThrottleForApi:
 
     @api_call_limits.setter
     def api_call_limits(self, api_call_limits):
-        """Sets the api_call_limits of this ThrottleForApi.
+        r"""Sets the api_call_limits of this ThrottleForApi.
 
         API流量限制是指时长内一个API能够被访问的次数上限。该值不超过系统默认配额限制，系统默认配额为200tps，用户可根据实际情况修改该系统默认配额。输入的值不超过2147483647。正整数。
 
@@ -261,7 +261,7 @@ class ThrottleForApi:
 
     @property
     def type(self):
-        """Gets the type of this ThrottleForApi.
+        r"""Gets the type of this ThrottleForApi.
 
         流控策略的类型 - 1：基础，表示绑定到流控策略的单个API流控时间内能够被调用多少次。 - 2：共享，表示绑定到流控策略的所有API流控时间内能够被调用多少次。
 
@@ -272,7 +272,7 @@ class ThrottleForApi:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ThrottleForApi.
+        r"""Sets the type of this ThrottleForApi.
 
         流控策略的类型 - 1：基础，表示绑定到流控策略的单个API流控时间内能够被调用多少次。 - 2：共享，表示绑定到流控策略的所有API流控时间内能够被调用多少次。
 
@@ -283,7 +283,7 @@ class ThrottleForApi:
 
     @property
     def enable_adaptive_control(self):
-        """Gets the enable_adaptive_control of this ThrottleForApi.
+        r"""Gets the enable_adaptive_control of this ThrottleForApi.
 
         是否开启动态流控： - TRUE - FALSE  暂不支持
 
@@ -294,7 +294,7 @@ class ThrottleForApi:
 
     @enable_adaptive_control.setter
     def enable_adaptive_control(self, enable_adaptive_control):
-        """Sets the enable_adaptive_control of this ThrottleForApi.
+        r"""Sets the enable_adaptive_control of this ThrottleForApi.
 
         是否开启动态流控： - TRUE - FALSE  暂不支持
 
@@ -305,7 +305,7 @@ class ThrottleForApi:
 
     @property
     def user_call_limits(self):
-        """Gets the user_call_limits of this ThrottleForApi.
+        r"""Gets the user_call_limits of this ThrottleForApi.
 
         用户流量限制是指一个API在时长之内每一个用户能访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。
 
@@ -316,7 +316,7 @@ class ThrottleForApi:
 
     @user_call_limits.setter
     def user_call_limits(self, user_call_limits):
-        """Sets the user_call_limits of this ThrottleForApi.
+        r"""Sets the user_call_limits of this ThrottleForApi.
 
         用户流量限制是指一个API在时长之内每一个用户能访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。
 
@@ -327,7 +327,7 @@ class ThrottleForApi:
 
     @property
     def time_interval(self):
-        """Gets the time_interval of this ThrottleForApi.
+        r"""Gets the time_interval of this ThrottleForApi.
 
         流量控制的时长单位。与“流量限制次数”配合使用，表示单位时间内的API请求次数上限。输入的值不超过2147483647。正整数。
 
@@ -338,7 +338,7 @@ class ThrottleForApi:
 
     @time_interval.setter
     def time_interval(self, time_interval):
-        """Sets the time_interval of this ThrottleForApi.
+        r"""Sets the time_interval of this ThrottleForApi.
 
         流量控制的时长单位。与“流量限制次数”配合使用，表示单位时间内的API请求次数上限。输入的值不超过2147483647。正整数。
 
@@ -349,7 +349,7 @@ class ThrottleForApi:
 
     @property
     def ip_call_limits(self):
-        """Gets the ip_call_limits of this ThrottleForApi.
+        r"""Gets the ip_call_limits of this ThrottleForApi.
 
         源IP流量限制是指一个API在时长之内被每个IP访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。
 
@@ -360,7 +360,7 @@ class ThrottleForApi:
 
     @ip_call_limits.setter
     def ip_call_limits(self, ip_call_limits):
-        """Sets the ip_call_limits of this ThrottleForApi.
+        r"""Sets the ip_call_limits of this ThrottleForApi.
 
         源IP流量限制是指一个API在时长之内被每个IP访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。
 
@@ -371,7 +371,7 @@ class ThrottleForApi:
 
     @property
     def id(self):
-        """Gets the id of this ThrottleForApi.
+        r"""Gets the id of this ThrottleForApi.
 
         流控策略的ID
 
@@ -382,7 +382,7 @@ class ThrottleForApi:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ThrottleForApi.
+        r"""Sets the id of this ThrottleForApi.
 
         流控策略的ID
 
@@ -393,7 +393,7 @@ class ThrottleForApi:
 
     @property
     def bind_num(self):
-        """Gets the bind_num of this ThrottleForApi.
+        r"""Gets the bind_num of this ThrottleForApi.
 
         流控绑定的API数量
 
@@ -404,7 +404,7 @@ class ThrottleForApi:
 
     @bind_num.setter
     def bind_num(self, bind_num):
-        """Sets the bind_num of this ThrottleForApi.
+        r"""Sets the bind_num of this ThrottleForApi.
 
         流控绑定的API数量
 
@@ -415,7 +415,7 @@ class ThrottleForApi:
 
     @property
     def is_inclu_special_throttle(self):
-        """Gets the is_inclu_special_throttle of this ThrottleForApi.
+        r"""Gets the is_inclu_special_throttle of this ThrottleForApi.
 
         是否包含特殊流控配置 - 1：包含 - 2：不包含
 
@@ -426,7 +426,7 @@ class ThrottleForApi:
 
     @is_inclu_special_throttle.setter
     def is_inclu_special_throttle(self, is_inclu_special_throttle):
-        """Sets the is_inclu_special_throttle of this ThrottleForApi.
+        r"""Sets the is_inclu_special_throttle of this ThrottleForApi.
 
         是否包含特殊流控配置 - 1：包含 - 2：不包含
 
@@ -437,7 +437,7 @@ class ThrottleForApi:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ThrottleForApi.
+        r"""Gets the create_time of this ThrottleForApi.
 
         创建时间
 
@@ -448,7 +448,7 @@ class ThrottleForApi:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ThrottleForApi.
+        r"""Sets the create_time of this ThrottleForApi.
 
         创建时间
 
@@ -459,7 +459,7 @@ class ThrottleForApi:
 
     @property
     def env_name(self):
-        """Gets the env_name of this ThrottleForApi.
+        r"""Gets the env_name of this ThrottleForApi.
 
         流控策略生效的环境（即在哪个环境上有效）
 
@@ -470,7 +470,7 @@ class ThrottleForApi:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this ThrottleForApi.
+        r"""Sets the env_name of this ThrottleForApi.
 
         流控策略生效的环境（即在哪个环境上有效）
 
@@ -481,7 +481,7 @@ class ThrottleForApi:
 
     @property
     def bind_id(self):
-        """Gets the bind_id of this ThrottleForApi.
+        r"""Gets the bind_id of this ThrottleForApi.
 
         流控策略与API绑定关系编号
 
@@ -492,7 +492,7 @@ class ThrottleForApi:
 
     @bind_id.setter
     def bind_id(self, bind_id):
-        """Sets the bind_id of this ThrottleForApi.
+        r"""Sets the bind_id of this ThrottleForApi.
 
         流控策略与API绑定关系编号
 
@@ -503,7 +503,7 @@ class ThrottleForApi:
 
     @property
     def bind_time(self):
-        """Gets the bind_time of this ThrottleForApi.
+        r"""Gets the bind_time of this ThrottleForApi.
 
         流控策略与API绑定时间
 
@@ -514,7 +514,7 @@ class ThrottleForApi:
 
     @bind_time.setter
     def bind_time(self, bind_time):
-        """Sets the bind_time of this ThrottleForApi.
+        r"""Sets the bind_time of this ThrottleForApi.
 
         流控策略与API绑定时间
 

@@ -39,7 +39,7 @@ class MultiTaskRequestBody:
     }
 
     def __init__(self, task_name=None, task_id=None, task_type=None, description=None, task_tag=None, operation_types=None, source_app_id=None, target_app_id=None):
-        """MultiTaskRequestBody
+        r"""MultiTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class MultiTaskRequestBody:
 
     @property
     def task_name(self):
-        """Gets the task_name of this MultiTaskRequestBody.
+        r"""Gets the task_name of this MultiTaskRequestBody.
 
         任务名称，只能以字母、数字为开头，包含字母、数字和 . _ -  3~100个字符
 
@@ -101,7 +101,7 @@ class MultiTaskRequestBody:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this MultiTaskRequestBody.
+        r"""Sets the task_name of this MultiTaskRequestBody.
 
         任务名称，只能以字母、数字为开头，包含字母、数字和 . _ -  3~100个字符
 
@@ -112,7 +112,7 @@ class MultiTaskRequestBody:
 
     @property
     def task_id(self):
-        """Gets the task_id of this MultiTaskRequestBody.
+        r"""Gets the task_id of this MultiTaskRequestBody.
 
         任务ID，可以为空
 
@@ -123,7 +123,7 @@ class MultiTaskRequestBody:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this MultiTaskRequestBody.
+        r"""Sets the task_id of this MultiTaskRequestBody.
 
         任务ID，可以为空
 
@@ -134,7 +134,7 @@ class MultiTaskRequestBody:
 
     @property
     def task_type(self):
-        """Gets the task_type of this MultiTaskRequestBody.
+        r"""Gets the task_type of this MultiTaskRequestBody.
 
         任务类型，目前组合任务仅支持实时任务 - REALTIME (实时) - TIMING (定时)
 
@@ -145,7 +145,7 @@ class MultiTaskRequestBody:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this MultiTaskRequestBody.
+        r"""Sets the task_type of this MultiTaskRequestBody.
 
         任务类型，目前组合任务仅支持实时任务 - REALTIME (实时) - TIMING (定时)
 
@@ -156,7 +156,7 @@ class MultiTaskRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this MultiTaskRequestBody.
+        r"""Gets the description of this MultiTaskRequestBody.
 
         描述信息
 
@@ -167,7 +167,7 @@ class MultiTaskRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MultiTaskRequestBody.
+        r"""Sets the description of this MultiTaskRequestBody.
 
         描述信息
 
@@ -178,7 +178,7 @@ class MultiTaskRequestBody:
 
     @property
     def task_tag(self):
-        """Gets the task_tag of this MultiTaskRequestBody.
+        r"""Gets the task_tag of this MultiTaskRequestBody.
 
         任务标签,只能包含字母、数字、中划线、下划线
 
@@ -189,7 +189,7 @@ class MultiTaskRequestBody:
 
     @task_tag.setter
     def task_tag(self, task_tag):
-        """Sets the task_tag of this MultiTaskRequestBody.
+        r"""Sets the task_tag of this MultiTaskRequestBody.
 
         任务标签,只能包含字母、数字、中划线、下划线
 
@@ -200,7 +200,7 @@ class MultiTaskRequestBody:
 
     @property
     def operation_types(self):
-        """Gets the operation_types of this MultiTaskRequestBody.
+        r"""Gets the operation_types of this MultiTaskRequestBody.
 
         需要支持的操作类型，支持多选，至少需要选择以下一种： - INSERT - UPDATE - DELETE
 
@@ -211,7 +211,7 @@ class MultiTaskRequestBody:
 
     @operation_types.setter
     def operation_types(self, operation_types):
-        """Sets the operation_types of this MultiTaskRequestBody.
+        r"""Sets the operation_types of this MultiTaskRequestBody.
 
         需要支持的操作类型，支持多选，至少需要选择以下一种： - INSERT - UPDATE - DELETE
 
@@ -222,7 +222,7 @@ class MultiTaskRequestBody:
 
     @property
     def source_app_id(self):
-        """Gets the source_app_id of this MultiTaskRequestBody.
+        r"""Gets the source_app_id of this MultiTaskRequestBody.
 
         源端数据源所属集成应用ID
 
@@ -233,7 +233,7 @@ class MultiTaskRequestBody:
 
     @source_app_id.setter
     def source_app_id(self, source_app_id):
-        """Sets the source_app_id of this MultiTaskRequestBody.
+        r"""Sets the source_app_id of this MultiTaskRequestBody.
 
         源端数据源所属集成应用ID
 
@@ -244,7 +244,7 @@ class MultiTaskRequestBody:
 
     @property
     def target_app_id(self):
-        """Gets the target_app_id of this MultiTaskRequestBody.
+        r"""Gets the target_app_id of this MultiTaskRequestBody.
 
         目标端数据源所属集成应用ID
 
@@ -255,7 +255,7 @@ class MultiTaskRequestBody:
 
     @target_app_id.setter
     def target_app_id(self, target_app_id):
-        """Sets the target_app_id of this MultiTaskRequestBody.
+        r"""Sets the target_app_id of this MultiTaskRequestBody.
 
         目标端数据源所属集成应用ID
 

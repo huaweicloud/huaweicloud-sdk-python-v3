@@ -25,7 +25,7 @@ class HeadNodeResourceDemand:
     }
 
     def __init__(self, spec_code=None):
-        """HeadNodeResourceDemand
+        r"""HeadNodeResourceDemand
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class HeadNodeResourceDemand:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this HeadNodeResourceDemand.
+        r"""Gets the spec_code of this HeadNodeResourceDemand.
 
         资源规格，从规格列表查询获取。
 
@@ -53,7 +53,7 @@ class HeadNodeResourceDemand:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this HeadNodeResourceDemand.
+        r"""Sets the spec_code of this HeadNodeResourceDemand.
 
         资源规格，从规格列表查询获取。
 

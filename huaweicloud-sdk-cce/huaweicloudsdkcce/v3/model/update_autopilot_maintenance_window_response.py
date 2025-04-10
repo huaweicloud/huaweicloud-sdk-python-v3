@@ -32,7 +32,7 @@ class UpdateAutopilotMaintenanceWindowResponse(SdkResponse):
     }
 
     def __init__(self, weekly_period=None, start_time=None, duration_hours=None, upgrade_scope=None):
-        """UpdateAutopilotMaintenanceWindowResponse
+        r"""UpdateAutopilotMaintenanceWindowResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateAutopilotMaintenanceWindowResponse(SdkResponse):
 
     @property
     def weekly_period(self):
-        """Gets the weekly_period of this UpdateAutopilotMaintenanceWindowResponse.
+        r"""Gets the weekly_period of this UpdateAutopilotMaintenanceWindowResponse.
 
         升级周期，从\"Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday\"中进行选择，以英文逗号分隔 如：\"Friday,Saturday\" 
 
@@ -76,7 +76,7 @@ class UpdateAutopilotMaintenanceWindowResponse(SdkResponse):
 
     @weekly_period.setter
     def weekly_period(self, weekly_period):
-        """Sets the weekly_period of this UpdateAutopilotMaintenanceWindowResponse.
+        r"""Sets the weekly_period of this UpdateAutopilotMaintenanceWindowResponse.
 
         升级周期，从\"Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday\"中进行选择，以英文逗号分隔 如：\"Friday,Saturday\" 
 
@@ -87,7 +87,7 @@ class UpdateAutopilotMaintenanceWindowResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this UpdateAutopilotMaintenanceWindowResponse.
+        r"""Gets the start_time of this UpdateAutopilotMaintenanceWindowResponse.
 
         升级起始时间（UTC时间）
 
@@ -98,7 +98,7 @@ class UpdateAutopilotMaintenanceWindowResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this UpdateAutopilotMaintenanceWindowResponse.
+        r"""Sets the start_time of this UpdateAutopilotMaintenanceWindowResponse.
 
         升级起始时间（UTC时间）
 
@@ -109,7 +109,7 @@ class UpdateAutopilotMaintenanceWindowResponse(SdkResponse):
 
     @property
     def duration_hours(self):
-        """Gets the duration_hours of this UpdateAutopilotMaintenanceWindowResponse.
+        r"""Gets the duration_hours of this UpdateAutopilotMaintenanceWindowResponse.
 
         升级时长
 
@@ -120,7 +120,7 @@ class UpdateAutopilotMaintenanceWindowResponse(SdkResponse):
 
     @duration_hours.setter
     def duration_hours(self, duration_hours):
-        """Sets the duration_hours of this UpdateAutopilotMaintenanceWindowResponse.
+        r"""Sets the duration_hours of this UpdateAutopilotMaintenanceWindowResponse.
 
         升级时长
 
@@ -131,7 +131,7 @@ class UpdateAutopilotMaintenanceWindowResponse(SdkResponse):
 
     @property
     def upgrade_scope(self):
-        """Gets the upgrade_scope of this UpdateAutopilotMaintenanceWindowResponse.
+        r"""Gets the upgrade_scope of this UpdateAutopilotMaintenanceWindowResponse.
 
         升级版本范围，当前只支持小版本自动升级
 
@@ -142,7 +142,7 @@ class UpdateAutopilotMaintenanceWindowResponse(SdkResponse):
 
     @upgrade_scope.setter
     def upgrade_scope(self, upgrade_scope):
-        """Sets the upgrade_scope of this UpdateAutopilotMaintenanceWindowResponse.
+        r"""Sets the upgrade_scope of this UpdateAutopilotMaintenanceWindowResponse.
 
         升级版本范围，当前只支持小版本自动升级
 

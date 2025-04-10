@@ -29,7 +29,7 @@ class BlockedIpRequestInfo:
     }
 
     def __init__(self, host_id=None, src_ip=None, login_type=None):
-        """BlockedIpRequestInfo
+        r"""BlockedIpRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class BlockedIpRequestInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this BlockedIpRequestInfo.
+        r"""Gets the host_id of this BlockedIpRequestInfo.
 
         主机ID
 
@@ -65,7 +65,7 @@ class BlockedIpRequestInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this BlockedIpRequestInfo.
+        r"""Sets the host_id of this BlockedIpRequestInfo.
 
         主机ID
 
@@ -76,7 +76,7 @@ class BlockedIpRequestInfo:
 
     @property
     def src_ip(self):
-        """Gets the src_ip of this BlockedIpRequestInfo.
+        r"""Gets the src_ip of this BlockedIpRequestInfo.
 
         攻击源IP
 
@@ -87,7 +87,7 @@ class BlockedIpRequestInfo:
 
     @src_ip.setter
     def src_ip(self, src_ip):
-        """Sets the src_ip of this BlockedIpRequestInfo.
+        r"""Sets the src_ip of this BlockedIpRequestInfo.
 
         攻击源IP
 
@@ -98,7 +98,7 @@ class BlockedIpRequestInfo:
 
     @property
     def login_type(self):
-        """Gets the login_type of this BlockedIpRequestInfo.
+        r"""Gets the login_type of this BlockedIpRequestInfo.
 
         登录类型，包含如下: - \"mysql\" # mysql服务 - \"rdp\" # rdp服务服务 - \"ssh\" # ssh服务 - \"vsftp\" # vsftp服务
 
@@ -109,7 +109,7 @@ class BlockedIpRequestInfo:
 
     @login_type.setter
     def login_type(self, login_type):
-        """Sets the login_type of this BlockedIpRequestInfo.
+        r"""Sets the login_type of this BlockedIpRequestInfo.
 
         登录类型，包含如下: - \"mysql\" # mysql服务 - \"rdp\" # rdp服务服务 - \"ssh\" # ssh服务 - \"vsftp\" # vsftp服务
 

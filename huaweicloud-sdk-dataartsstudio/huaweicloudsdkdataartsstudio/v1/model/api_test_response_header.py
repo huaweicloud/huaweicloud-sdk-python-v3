@@ -37,7 +37,7 @@ class ApiTestResponseHeader:
     }
 
     def __init__(self, result_status=None, content_length=None, connection=None, cache_control=None, content_type=None, date=None, x_request_id=None):
-        """ApiTestResponseHeader
+        r"""ApiTestResponseHeader
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ApiTestResponseHeader:
 
     @property
     def result_status(self):
-        """Gets the result_status of this ApiTestResponseHeader.
+        r"""Gets the result_status of this ApiTestResponseHeader.
 
         是否成功
 
@@ -96,7 +96,7 @@ class ApiTestResponseHeader:
 
     @result_status.setter
     def result_status(self, result_status):
-        """Sets the result_status of this ApiTestResponseHeader.
+        r"""Sets the result_status of this ApiTestResponseHeader.
 
         是否成功
 
@@ -107,7 +107,7 @@ class ApiTestResponseHeader:
 
     @property
     def content_length(self):
-        """Gets the content_length of this ApiTestResponseHeader.
+        r"""Gets the content_length of this ApiTestResponseHeader.
 
         内容大小
 
@@ -118,7 +118,7 @@ class ApiTestResponseHeader:
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this ApiTestResponseHeader.
+        r"""Sets the content_length of this ApiTestResponseHeader.
 
         内容大小
 
@@ -129,7 +129,7 @@ class ApiTestResponseHeader:
 
     @property
     def connection(self):
-        """Gets the connection of this ApiTestResponseHeader.
+        r"""Gets the connection of this ApiTestResponseHeader.
 
         连接状态
 
@@ -140,7 +140,7 @@ class ApiTestResponseHeader:
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this ApiTestResponseHeader.
+        r"""Sets the connection of this ApiTestResponseHeader.
 
         连接状态
 
@@ -151,7 +151,7 @@ class ApiTestResponseHeader:
 
     @property
     def cache_control(self):
-        """Gets the cache_control of this ApiTestResponseHeader.
+        r"""Gets the cache_control of this ApiTestResponseHeader.
 
         缓存控制（固定值）
 
@@ -162,7 +162,7 @@ class ApiTestResponseHeader:
 
     @cache_control.setter
     def cache_control(self, cache_control):
-        """Sets the cache_control of this ApiTestResponseHeader.
+        r"""Sets the cache_control of this ApiTestResponseHeader.
 
         缓存控制（固定值）
 
@@ -173,7 +173,7 @@ class ApiTestResponseHeader:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ApiTestResponseHeader.
+        r"""Gets the content_type of this ApiTestResponseHeader.
 
         内容类型 （固定值）
 
@@ -184,7 +184,7 @@ class ApiTestResponseHeader:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ApiTestResponseHeader.
+        r"""Sets the content_type of this ApiTestResponseHeader.
 
         内容类型 （固定值）
 
@@ -195,7 +195,7 @@ class ApiTestResponseHeader:
 
     @property
     def date(self):
-        """Gets the date of this ApiTestResponseHeader.
+        r"""Gets the date of this ApiTestResponseHeader.
 
         日期
 
@@ -206,7 +206,7 @@ class ApiTestResponseHeader:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ApiTestResponseHeader.
+        r"""Sets the date of this ApiTestResponseHeader.
 
         日期
 
@@ -217,7 +217,7 @@ class ApiTestResponseHeader:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ApiTestResponseHeader.
+        r"""Gets the x_request_id of this ApiTestResponseHeader.
 
         请求ID
 
@@ -228,7 +228,7 @@ class ApiTestResponseHeader:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ApiTestResponseHeader.
+        r"""Sets the x_request_id of this ApiTestResponseHeader.
 
         请求ID
 

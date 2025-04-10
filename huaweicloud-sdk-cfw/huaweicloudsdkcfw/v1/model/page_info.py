@@ -59,7 +59,7 @@ class PageInfo:
     }
 
     def __init__(self, end_row=None, has_next_page=None, has_previous_page=None, is_first_page=None, is_last_page=None, list=None, navigate_first_page=None, navigate_last_page=None, navigate_pages=None, navigatepage_nums=None, next_page=None, page_num=None, page_size=None, pages=None, pre_page=None, size=None, start_row=None, total=None):
-        """PageInfo
+        r"""PageInfo
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class PageInfo:
 
     @property
     def end_row(self):
-        """Gets the end_row of this PageInfo.
+        r"""Gets the end_row of this PageInfo.
 
         :return: The end_row of this PageInfo.
         :rtype: int
@@ -171,7 +171,7 @@ class PageInfo:
 
     @end_row.setter
     def end_row(self, end_row):
-        """Sets the end_row of this PageInfo.
+        r"""Sets the end_row of this PageInfo.
 
         :param end_row: The end_row of this PageInfo.
         :type end_row: int
@@ -180,7 +180,7 @@ class PageInfo:
 
     @property
     def has_next_page(self):
-        """Gets the has_next_page of this PageInfo.
+        r"""Gets the has_next_page of this PageInfo.
 
         :return: The has_next_page of this PageInfo.
         :rtype: bool
@@ -189,7 +189,7 @@ class PageInfo:
 
     @has_next_page.setter
     def has_next_page(self, has_next_page):
-        """Sets the has_next_page of this PageInfo.
+        r"""Sets the has_next_page of this PageInfo.
 
         :param has_next_page: The has_next_page of this PageInfo.
         :type has_next_page: bool
@@ -198,7 +198,7 @@ class PageInfo:
 
     @property
     def has_previous_page(self):
-        """Gets the has_previous_page of this PageInfo.
+        r"""Gets the has_previous_page of this PageInfo.
 
         :return: The has_previous_page of this PageInfo.
         :rtype: bool
@@ -207,7 +207,7 @@ class PageInfo:
 
     @has_previous_page.setter
     def has_previous_page(self, has_previous_page):
-        """Sets the has_previous_page of this PageInfo.
+        r"""Sets the has_previous_page of this PageInfo.
 
         :param has_previous_page: The has_previous_page of this PageInfo.
         :type has_previous_page: bool
@@ -216,7 +216,7 @@ class PageInfo:
 
     @property
     def is_first_page(self):
-        """Gets the is_first_page of this PageInfo.
+        r"""Gets the is_first_page of this PageInfo.
 
         :return: The is_first_page of this PageInfo.
         :rtype: bool
@@ -225,7 +225,7 @@ class PageInfo:
 
     @is_first_page.setter
     def is_first_page(self, is_first_page):
-        """Sets the is_first_page of this PageInfo.
+        r"""Sets the is_first_page of this PageInfo.
 
         :param is_first_page: The is_first_page of this PageInfo.
         :type is_first_page: bool
@@ -234,7 +234,7 @@ class PageInfo:
 
     @property
     def is_last_page(self):
-        """Gets the is_last_page of this PageInfo.
+        r"""Gets the is_last_page of this PageInfo.
 
         :return: The is_last_page of this PageInfo.
         :rtype: bool
@@ -243,7 +243,7 @@ class PageInfo:
 
     @is_last_page.setter
     def is_last_page(self, is_last_page):
-        """Sets the is_last_page of this PageInfo.
+        r"""Sets the is_last_page of this PageInfo.
 
         :param is_last_page: The is_last_page of this PageInfo.
         :type is_last_page: bool
@@ -252,7 +252,7 @@ class PageInfo:
 
     @property
     def list(self):
-        """Gets the list of this PageInfo.
+        r"""Gets the list of this PageInfo.
 
         :return: The list of this PageInfo.
         :rtype: list[object]
@@ -261,7 +261,7 @@ class PageInfo:
 
     @list.setter
     def list(self, list):
-        """Sets the list of this PageInfo.
+        r"""Sets the list of this PageInfo.
 
         :param list: The list of this PageInfo.
         :type list: list[object]
@@ -270,7 +270,7 @@ class PageInfo:
 
     @property
     def navigate_first_page(self):
-        """Gets the navigate_first_page of this PageInfo.
+        r"""Gets the navigate_first_page of this PageInfo.
 
         :return: The navigate_first_page of this PageInfo.
         :rtype: int
@@ -279,7 +279,7 @@ class PageInfo:
 
     @navigate_first_page.setter
     def navigate_first_page(self, navigate_first_page):
-        """Sets the navigate_first_page of this PageInfo.
+        r"""Sets the navigate_first_page of this PageInfo.
 
         :param navigate_first_page: The navigate_first_page of this PageInfo.
         :type navigate_first_page: int
@@ -288,7 +288,7 @@ class PageInfo:
 
     @property
     def navigate_last_page(self):
-        """Gets the navigate_last_page of this PageInfo.
+        r"""Gets the navigate_last_page of this PageInfo.
 
         :return: The navigate_last_page of this PageInfo.
         :rtype: int
@@ -297,7 +297,7 @@ class PageInfo:
 
     @navigate_last_page.setter
     def navigate_last_page(self, navigate_last_page):
-        """Sets the navigate_last_page of this PageInfo.
+        r"""Sets the navigate_last_page of this PageInfo.
 
         :param navigate_last_page: The navigate_last_page of this PageInfo.
         :type navigate_last_page: int
@@ -306,7 +306,7 @@ class PageInfo:
 
     @property
     def navigate_pages(self):
-        """Gets the navigate_pages of this PageInfo.
+        r"""Gets the navigate_pages of this PageInfo.
 
         :return: The navigate_pages of this PageInfo.
         :rtype: int
@@ -315,7 +315,7 @@ class PageInfo:
 
     @navigate_pages.setter
     def navigate_pages(self, navigate_pages):
-        """Sets the navigate_pages of this PageInfo.
+        r"""Sets the navigate_pages of this PageInfo.
 
         :param navigate_pages: The navigate_pages of this PageInfo.
         :type navigate_pages: int
@@ -324,7 +324,7 @@ class PageInfo:
 
     @property
     def navigatepage_nums(self):
-        """Gets the navigatepage_nums of this PageInfo.
+        r"""Gets the navigatepage_nums of this PageInfo.
 
         :return: The navigatepage_nums of this PageInfo.
         :rtype: list[int]
@@ -333,7 +333,7 @@ class PageInfo:
 
     @navigatepage_nums.setter
     def navigatepage_nums(self, navigatepage_nums):
-        """Sets the navigatepage_nums of this PageInfo.
+        r"""Sets the navigatepage_nums of this PageInfo.
 
         :param navigatepage_nums: The navigatepage_nums of this PageInfo.
         :type navigatepage_nums: list[int]
@@ -342,7 +342,7 @@ class PageInfo:
 
     @property
     def next_page(self):
-        """Gets the next_page of this PageInfo.
+        r"""Gets the next_page of this PageInfo.
 
         :return: The next_page of this PageInfo.
         :rtype: int
@@ -351,7 +351,7 @@ class PageInfo:
 
     @next_page.setter
     def next_page(self, next_page):
-        """Sets the next_page of this PageInfo.
+        r"""Sets the next_page of this PageInfo.
 
         :param next_page: The next_page of this PageInfo.
         :type next_page: int
@@ -360,7 +360,7 @@ class PageInfo:
 
     @property
     def page_num(self):
-        """Gets the page_num of this PageInfo.
+        r"""Gets the page_num of this PageInfo.
 
         :return: The page_num of this PageInfo.
         :rtype: int
@@ -369,7 +369,7 @@ class PageInfo:
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this PageInfo.
+        r"""Sets the page_num of this PageInfo.
 
         :param page_num: The page_num of this PageInfo.
         :type page_num: int
@@ -378,7 +378,7 @@ class PageInfo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this PageInfo.
+        r"""Gets the page_size of this PageInfo.
 
         :return: The page_size of this PageInfo.
         :rtype: int
@@ -387,7 +387,7 @@ class PageInfo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this PageInfo.
+        r"""Sets the page_size of this PageInfo.
 
         :param page_size: The page_size of this PageInfo.
         :type page_size: int
@@ -396,7 +396,7 @@ class PageInfo:
 
     @property
     def pages(self):
-        """Gets the pages of this PageInfo.
+        r"""Gets the pages of this PageInfo.
 
         :return: The pages of this PageInfo.
         :rtype: int
@@ -405,7 +405,7 @@ class PageInfo:
 
     @pages.setter
     def pages(self, pages):
-        """Sets the pages of this PageInfo.
+        r"""Sets the pages of this PageInfo.
 
         :param pages: The pages of this PageInfo.
         :type pages: int
@@ -414,7 +414,7 @@ class PageInfo:
 
     @property
     def pre_page(self):
-        """Gets the pre_page of this PageInfo.
+        r"""Gets the pre_page of this PageInfo.
 
         :return: The pre_page of this PageInfo.
         :rtype: int
@@ -423,7 +423,7 @@ class PageInfo:
 
     @pre_page.setter
     def pre_page(self, pre_page):
-        """Sets the pre_page of this PageInfo.
+        r"""Sets the pre_page of this PageInfo.
 
         :param pre_page: The pre_page of this PageInfo.
         :type pre_page: int
@@ -432,7 +432,7 @@ class PageInfo:
 
     @property
     def size(self):
-        """Gets the size of this PageInfo.
+        r"""Gets the size of this PageInfo.
 
         :return: The size of this PageInfo.
         :rtype: int
@@ -441,7 +441,7 @@ class PageInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this PageInfo.
+        r"""Sets the size of this PageInfo.
 
         :param size: The size of this PageInfo.
         :type size: int
@@ -450,7 +450,7 @@ class PageInfo:
 
     @property
     def start_row(self):
-        """Gets the start_row of this PageInfo.
+        r"""Gets the start_row of this PageInfo.
 
         :return: The start_row of this PageInfo.
         :rtype: int
@@ -459,7 +459,7 @@ class PageInfo:
 
     @start_row.setter
     def start_row(self, start_row):
-        """Sets the start_row of this PageInfo.
+        r"""Sets the start_row of this PageInfo.
 
         :param start_row: The start_row of this PageInfo.
         :type start_row: int
@@ -468,7 +468,7 @@ class PageInfo:
 
     @property
     def total(self):
-        """Gets the total of this PageInfo.
+        r"""Gets the total of this PageInfo.
 
         :return: The total of this PageInfo.
         :rtype: int
@@ -477,7 +477,7 @@ class PageInfo:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this PageInfo.
+        r"""Sets the total of this PageInfo.
 
         :param total: The total of this PageInfo.
         :type total: int

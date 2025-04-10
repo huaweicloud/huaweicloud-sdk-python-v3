@@ -27,7 +27,7 @@ class RayResourceInfo:
     }
 
     def __init__(self, head_group_spec=None, worker_group_spec=None):
-        """RayResourceInfo
+        r"""RayResourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RayResourceInfo:
 
     @property
     def head_group_spec(self):
-        """Gets the head_group_spec of this RayResourceInfo.
+        r"""Gets the head_group_spec of this RayResourceInfo.
 
         :return: The head_group_spec of this RayResourceInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.HeadGroupSpec`
@@ -59,7 +59,7 @@ class RayResourceInfo:
 
     @head_group_spec.setter
     def head_group_spec(self, head_group_spec):
-        """Sets the head_group_spec of this RayResourceInfo.
+        r"""Sets the head_group_spec of this RayResourceInfo.
 
         :param head_group_spec: The head_group_spec of this RayResourceInfo.
         :type head_group_spec: :class:`huaweicloudsdkdataartsfabric.v1.HeadGroupSpec`
@@ -68,7 +68,7 @@ class RayResourceInfo:
 
     @property
     def worker_group_spec(self):
-        """Gets the worker_group_spec of this RayResourceInfo.
+        r"""Gets the worker_group_spec of this RayResourceInfo.
 
         Ray worker group配置
 
@@ -79,7 +79,7 @@ class RayResourceInfo:
 
     @worker_group_spec.setter
     def worker_group_spec(self, worker_group_spec):
-        """Sets the worker_group_spec of this RayResourceInfo.
+        r"""Sets the worker_group_spec of this RayResourceInfo.
 
         Ray worker group配置
 

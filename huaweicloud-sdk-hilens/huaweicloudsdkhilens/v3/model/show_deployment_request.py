@@ -27,7 +27,7 @@ class ShowDeploymentRequest:
     }
 
     def __init__(self, deployment_id=None, provider=None):
-        """ShowDeploymentRequest
+        r"""ShowDeploymentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowDeploymentRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this ShowDeploymentRequest.
+        r"""Gets the deployment_id of this ShowDeploymentRequest.
 
         应用部署ID
 
@@ -60,7 +60,7 @@ class ShowDeploymentRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this ShowDeploymentRequest.
+        r"""Sets the deployment_id of this ShowDeploymentRequest.
 
         应用部署ID
 
@@ -71,7 +71,7 @@ class ShowDeploymentRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this ShowDeploymentRequest.
+        r"""Gets the provider of this ShowDeploymentRequest.
 
         平台提供者，分别为hilens及ief。当为hilens时，请求部署在hilens平台的相关数据。
 
@@ -82,7 +82,7 @@ class ShowDeploymentRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ShowDeploymentRequest.
+        r"""Sets the provider of this ShowDeploymentRequest.
 
         平台提供者，分别为hilens及ief。当为hilens时，请求部署在hilens平台的相关数据。
 

@@ -24,7 +24,7 @@ class BatchDeleteManualBackupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeleteManualBackupResponse
+        r"""BatchDeleteManualBackupResponse
 
         The model defined in huaweicloud sdk
 

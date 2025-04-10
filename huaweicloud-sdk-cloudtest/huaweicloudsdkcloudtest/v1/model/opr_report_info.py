@@ -35,7 +35,7 @@ class OprReportInfo:
     }
 
     def __init__(self, name=None, type=None, workpiece_type=None, analysis_dim_row=None, compare_dim_column=None, filter=None):
-        """OprReportInfo
+        r"""OprReportInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class OprReportInfo:
 
     @property
     def name(self):
-        """Gets the name of this OprReportInfo.
+        r"""Gets the name of this OprReportInfo.
 
         报表名称
 
@@ -89,7 +89,7 @@ class OprReportInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OprReportInfo.
+        r"""Sets the name of this OprReportInfo.
 
         报表名称
 
@@ -100,7 +100,7 @@ class OprReportInfo:
 
     @property
     def type(self):
-        """Gets the type of this OprReportInfo.
+        r"""Gets the type of this OprReportInfo.
 
         报表类型 1：首页用例库， 2：质量报告
 
@@ -111,7 +111,7 @@ class OprReportInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this OprReportInfo.
+        r"""Sets the type of this OprReportInfo.
 
         报表类型 1：首页用例库， 2：质量报告
 
@@ -122,7 +122,7 @@ class OprReportInfo:
 
     @property
     def workpiece_type(self):
-        """Gets the workpiece_type of this OprReportInfo.
+        r"""Gets the workpiece_type of this OprReportInfo.
 
         工件类型(用例：case,测试套：suite)
 
@@ -133,7 +133,7 @@ class OprReportInfo:
 
     @workpiece_type.setter
     def workpiece_type(self, workpiece_type):
-        """Sets the workpiece_type of this OprReportInfo.
+        r"""Sets the workpiece_type of this OprReportInfo.
 
         工件类型(用例：case,测试套：suite)
 
@@ -144,7 +144,7 @@ class OprReportInfo:
 
     @property
     def analysis_dim_row(self):
-        """Gets the analysis_dim_row of this OprReportInfo.
+        r"""Gets the analysis_dim_row of this OprReportInfo.
 
         分析维度
 
@@ -155,7 +155,7 @@ class OprReportInfo:
 
     @analysis_dim_row.setter
     def analysis_dim_row(self, analysis_dim_row):
-        """Sets the analysis_dim_row of this OprReportInfo.
+        r"""Sets the analysis_dim_row of this OprReportInfo.
 
         分析维度
 
@@ -166,7 +166,7 @@ class OprReportInfo:
 
     @property
     def compare_dim_column(self):
-        """Gets the compare_dim_column of this OprReportInfo.
+        r"""Gets the compare_dim_column of this OprReportInfo.
 
         对比维度
 
@@ -177,7 +177,7 @@ class OprReportInfo:
 
     @compare_dim_column.setter
     def compare_dim_column(self, compare_dim_column):
-        """Sets the compare_dim_column of this OprReportInfo.
+        r"""Sets the compare_dim_column of this OprReportInfo.
 
         对比维度
 
@@ -188,7 +188,7 @@ class OprReportInfo:
 
     @property
     def filter(self):
-        """Gets the filter of this OprReportInfo.
+        r"""Gets the filter of this OprReportInfo.
 
         :return: The filter of this OprReportInfo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ReportFilter`
@@ -197,7 +197,7 @@ class OprReportInfo:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this OprReportInfo.
+        r"""Sets the filter of this OprReportInfo.
 
         :param filter: The filter of this OprReportInfo.
         :type filter: :class:`huaweicloudsdkcloudtest.v1.ReportFilter`

@@ -28,7 +28,7 @@ class RunQueryResponse(SdkResponse):
     }
 
     def __init__(self, query_info=None, results=None):
-        """RunQueryResponse
+        r"""RunQueryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RunQueryResponse(SdkResponse):
 
     @property
     def query_info(self):
-        """Gets the query_info of this RunQueryResponse.
+        r"""Gets the query_info of this RunQueryResponse.
 
         :return: The query_info of this RunQueryResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.QueryInfo`
@@ -60,7 +60,7 @@ class RunQueryResponse(SdkResponse):
 
     @query_info.setter
     def query_info(self, query_info):
-        """Sets the query_info of this RunQueryResponse.
+        r"""Sets the query_info of this RunQueryResponse.
 
         :param query_info: The query_info of this RunQueryResponse.
         :type query_info: :class:`huaweicloudsdkrms.v1.QueryInfo`
@@ -69,7 +69,7 @@ class RunQueryResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this RunQueryResponse.
+        r"""Gets the results of this RunQueryResponse.
 
         ResourceQL 查询结果.
 
@@ -80,7 +80,7 @@ class RunQueryResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this RunQueryResponse.
+        r"""Sets the results of this RunQueryResponse.
 
         ResourceQL 查询结果.
 

@@ -29,7 +29,7 @@ class ListAttachedAgencyPoliciesV5Request:
     }
 
     def __init__(self, agency_id=None, limit=None, marker=None):
-        """ListAttachedAgencyPoliciesV5Request
+        r"""ListAttachedAgencyPoliciesV5Request
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAttachedAgencyPoliciesV5Request:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this ListAttachedAgencyPoliciesV5Request.
+        r"""Gets the agency_id of this ListAttachedAgencyPoliciesV5Request.
 
         委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -67,7 +67,7 @@ class ListAttachedAgencyPoliciesV5Request:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this ListAttachedAgencyPoliciesV5Request.
+        r"""Sets the agency_id of this ListAttachedAgencyPoliciesV5Request.
 
         委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -78,7 +78,7 @@ class ListAttachedAgencyPoliciesV5Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAttachedAgencyPoliciesV5Request.
+        r"""Gets the limit of this ListAttachedAgencyPoliciesV5Request.
 
         每页显示的条目数量。
 
@@ -89,7 +89,7 @@ class ListAttachedAgencyPoliciesV5Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAttachedAgencyPoliciesV5Request.
+        r"""Sets the limit of this ListAttachedAgencyPoliciesV5Request.
 
         每页显示的条目数量。
 
@@ -100,7 +100,7 @@ class ListAttachedAgencyPoliciesV5Request:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAttachedAgencyPoliciesV5Request.
+        r"""Gets the marker of this ListAttachedAgencyPoliciesV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 
@@ -111,7 +111,7 @@ class ListAttachedAgencyPoliciesV5Request:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAttachedAgencyPoliciesV5Request.
+        r"""Sets the marker of this ListAttachedAgencyPoliciesV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 

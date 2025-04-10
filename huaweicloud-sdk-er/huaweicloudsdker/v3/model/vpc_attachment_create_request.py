@@ -35,7 +35,7 @@ class VpcAttachmentCreateRequest:
     }
 
     def __init__(self, vpc_id=None, name=None, virsubnet_id=None, description=None, auto_create_vpc_routes=None, tags=None):
-        """VpcAttachmentCreateRequest
+        r"""VpcAttachmentCreateRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class VpcAttachmentCreateRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this VpcAttachmentCreateRequest.
+        r"""Gets the vpc_id of this VpcAttachmentCreateRequest.
 
         VPC的id，取值范围：最大长度36字节，带“-”连字符的UUID格式
 
@@ -86,7 +86,7 @@ class VpcAttachmentCreateRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this VpcAttachmentCreateRequest.
+        r"""Sets the vpc_id of this VpcAttachmentCreateRequest.
 
         VPC的id，取值范围：最大长度36字节，带“-”连字符的UUID格式
 
@@ -97,7 +97,7 @@ class VpcAttachmentCreateRequest:
 
     @property
     def name(self):
-        """Gets the name of this VpcAttachmentCreateRequest.
+        r"""Gets the name of this VpcAttachmentCreateRequest.
 
         VPC连接名字，取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -108,7 +108,7 @@ class VpcAttachmentCreateRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VpcAttachmentCreateRequest.
+        r"""Sets the name of this VpcAttachmentCreateRequest.
 
         VPC连接名字，取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -119,7 +119,7 @@ class VpcAttachmentCreateRequest:
 
     @property
     def virsubnet_id(self):
-        """Gets the virsubnet_id of this VpcAttachmentCreateRequest.
+        r"""Gets the virsubnet_id of this VpcAttachmentCreateRequest.
 
         VPC子网id，取值范围：最大长度36字节，带“-”连字符的UUID格式
 
@@ -130,7 +130,7 @@ class VpcAttachmentCreateRequest:
 
     @virsubnet_id.setter
     def virsubnet_id(self, virsubnet_id):
-        """Sets the virsubnet_id of this VpcAttachmentCreateRequest.
+        r"""Sets the virsubnet_id of this VpcAttachmentCreateRequest.
 
         VPC子网id，取值范围：最大长度36字节，带“-”连字符的UUID格式
 
@@ -141,7 +141,7 @@ class VpcAttachmentCreateRequest:
 
     @property
     def description(self):
-        """Gets the description of this VpcAttachmentCreateRequest.
+        r"""Gets the description of this VpcAttachmentCreateRequest.
 
         描述信息，取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -152,7 +152,7 @@ class VpcAttachmentCreateRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VpcAttachmentCreateRequest.
+        r"""Sets the description of this VpcAttachmentCreateRequest.
 
         描述信息，取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -163,7 +163,7 @@ class VpcAttachmentCreateRequest:
 
     @property
     def auto_create_vpc_routes(self):
-        """Gets the auto_create_vpc_routes of this VpcAttachmentCreateRequest.
+        r"""Gets the auto_create_vpc_routes of this VpcAttachmentCreateRequest.
 
         默认为false，为true表示自动为vpc配置指向企业路由器的路由
 
@@ -174,7 +174,7 @@ class VpcAttachmentCreateRequest:
 
     @auto_create_vpc_routes.setter
     def auto_create_vpc_routes(self, auto_create_vpc_routes):
-        """Sets the auto_create_vpc_routes of this VpcAttachmentCreateRequest.
+        r"""Sets the auto_create_vpc_routes of this VpcAttachmentCreateRequest.
 
         默认为false，为true表示自动为vpc配置指向企业路由器的路由
 
@@ -185,7 +185,7 @@ class VpcAttachmentCreateRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this VpcAttachmentCreateRequest.
+        r"""Gets the tags of this VpcAttachmentCreateRequest.
 
         标签信息
 
@@ -196,7 +196,7 @@ class VpcAttachmentCreateRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this VpcAttachmentCreateRequest.
+        r"""Sets the tags of this VpcAttachmentCreateRequest.
 
         标签信息
 

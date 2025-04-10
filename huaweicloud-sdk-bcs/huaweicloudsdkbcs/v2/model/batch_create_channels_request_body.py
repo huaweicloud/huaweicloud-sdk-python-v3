@@ -25,7 +25,7 @@ class BatchCreateChannelsRequestBody:
     }
 
     def __init__(self, channels=None):
-        """BatchCreateChannelsRequestBody
+        r"""BatchCreateChannelsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchCreateChannelsRequestBody:
 
     @property
     def channels(self):
-        """Gets the channels of this BatchCreateChannelsRequestBody.
+        r"""Gets the channels of this BatchCreateChannelsRequestBody.
 
         通道列表
 
@@ -53,7 +53,7 @@ class BatchCreateChannelsRequestBody:
 
     @channels.setter
     def channels(self, channels):
-        """Sets the channels of this BatchCreateChannelsRequestBody.
+        r"""Sets the channels of this BatchCreateChannelsRequestBody.
 
         通道列表
 

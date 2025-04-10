@@ -25,7 +25,7 @@ class AuthInfo:
     }
 
     def __init__(self, auth=None):
-        """AuthInfo
+        r"""AuthInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AuthInfo:
 
     @property
     def auth(self):
-        """Gets the auth of this AuthInfo.
+        r"""Gets the auth of this AuthInfo.
 
         Base64加密的认证信息
 
@@ -53,7 +53,7 @@ class AuthInfo:
 
     @auth.setter
     def auth(self, auth):
-        """Sets the auth of this AuthInfo.
+        r"""Sets the auth of this AuthInfo.
 
         Base64加密的认证信息
 

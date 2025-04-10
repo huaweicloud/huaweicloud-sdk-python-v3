@@ -51,7 +51,7 @@ class PermissionSetPermissionCreateDTO:
     }
 
     def __init__(self, dw_id=None, permission_type=None, permission_actions=None, cluster_id=None, cluster_name=None, datasource_type=None, database_name=None, schema_name=None, namespace=None, table_name=None, column_name=None, row_level_security=None, url=None, auto_sync=None):
-        """PermissionSetPermissionCreateDTO
+        r"""PermissionSetPermissionCreateDTO
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class PermissionSetPermissionCreateDTO:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this PermissionSetPermissionCreateDTO.
+        r"""Gets the dw_id of this PermissionSetPermissionCreateDTO.
 
         数据连接id
 
@@ -145,7 +145,7 @@ class PermissionSetPermissionCreateDTO:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this PermissionSetPermissionCreateDTO.
+        r"""Sets the dw_id of this PermissionSetPermissionCreateDTO.
 
         数据连接id
 
@@ -156,7 +156,7 @@ class PermissionSetPermissionCreateDTO:
 
     @property
     def permission_type(self):
-        """Gets the permission_type of this PermissionSetPermissionCreateDTO.
+        r"""Gets the permission_type of this PermissionSetPermissionCreateDTO.
 
         权限类型, DENY, ALLOW
 
@@ -167,7 +167,7 @@ class PermissionSetPermissionCreateDTO:
 
     @permission_type.setter
     def permission_type(self, permission_type):
-        """Sets the permission_type of this PermissionSetPermissionCreateDTO.
+        r"""Sets the permission_type of this PermissionSetPermissionCreateDTO.
 
         权限类型, DENY, ALLOW
 
@@ -178,7 +178,7 @@ class PermissionSetPermissionCreateDTO:
 
     @property
     def permission_actions(self):
-        """Gets the permission_actions of this PermissionSetPermissionCreateDTO.
+        r"""Gets the permission_actions of this PermissionSetPermissionCreateDTO.
 
         权限操作列表
 
@@ -189,7 +189,7 @@ class PermissionSetPermissionCreateDTO:
 
     @permission_actions.setter
     def permission_actions(self, permission_actions):
-        """Sets the permission_actions of this PermissionSetPermissionCreateDTO.
+        r"""Sets the permission_actions of this PermissionSetPermissionCreateDTO.
 
         权限操作列表
 
@@ -200,7 +200,7 @@ class PermissionSetPermissionCreateDTO:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this PermissionSetPermissionCreateDTO.
+        r"""Gets the cluster_id of this PermissionSetPermissionCreateDTO.
 
         集群id
 
@@ -211,7 +211,7 @@ class PermissionSetPermissionCreateDTO:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this PermissionSetPermissionCreateDTO.
+        r"""Sets the cluster_id of this PermissionSetPermissionCreateDTO.
 
         集群id
 
@@ -222,7 +222,7 @@ class PermissionSetPermissionCreateDTO:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this PermissionSetPermissionCreateDTO.
+        r"""Gets the cluster_name of this PermissionSetPermissionCreateDTO.
 
         集群名称
 
@@ -233,7 +233,7 @@ class PermissionSetPermissionCreateDTO:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this PermissionSetPermissionCreateDTO.
+        r"""Sets the cluster_name of this PermissionSetPermissionCreateDTO.
 
         集群名称
 
@@ -244,7 +244,7 @@ class PermissionSetPermissionCreateDTO:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this PermissionSetPermissionCreateDTO.
+        r"""Gets the datasource_type of this PermissionSetPermissionCreateDTO.
 
         数据源类型, HIVE
 
@@ -255,7 +255,7 @@ class PermissionSetPermissionCreateDTO:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this PermissionSetPermissionCreateDTO.
+        r"""Sets the datasource_type of this PermissionSetPermissionCreateDTO.
 
         数据源类型, HIVE
 
@@ -266,7 +266,7 @@ class PermissionSetPermissionCreateDTO:
 
     @property
     def database_name(self):
-        """Gets the database_name of this PermissionSetPermissionCreateDTO.
+        r"""Gets the database_name of this PermissionSetPermissionCreateDTO.
 
         数据库名称
 
@@ -277,7 +277,7 @@ class PermissionSetPermissionCreateDTO:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this PermissionSetPermissionCreateDTO.
+        r"""Sets the database_name of this PermissionSetPermissionCreateDTO.
 
         数据库名称
 
@@ -288,7 +288,7 @@ class PermissionSetPermissionCreateDTO:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this PermissionSetPermissionCreateDTO.
+        r"""Gets the schema_name of this PermissionSetPermissionCreateDTO.
 
         模式名称
 
@@ -299,7 +299,7 @@ class PermissionSetPermissionCreateDTO:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this PermissionSetPermissionCreateDTO.
+        r"""Sets the schema_name of this PermissionSetPermissionCreateDTO.
 
         模式名称
 
@@ -310,7 +310,7 @@ class PermissionSetPermissionCreateDTO:
 
     @property
     def namespace(self):
-        """Gets the namespace of this PermissionSetPermissionCreateDTO.
+        r"""Gets the namespace of this PermissionSetPermissionCreateDTO.
 
         命名空间。无效参数，待下线。
 
@@ -321,7 +321,7 @@ class PermissionSetPermissionCreateDTO:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this PermissionSetPermissionCreateDTO.
+        r"""Sets the namespace of this PermissionSetPermissionCreateDTO.
 
         命名空间。无效参数，待下线。
 
@@ -332,7 +332,7 @@ class PermissionSetPermissionCreateDTO:
 
     @property
     def table_name(self):
-        """Gets the table_name of this PermissionSetPermissionCreateDTO.
+        r"""Gets the table_name of this PermissionSetPermissionCreateDTO.
 
         表名称
 
@@ -343,7 +343,7 @@ class PermissionSetPermissionCreateDTO:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this PermissionSetPermissionCreateDTO.
+        r"""Sets the table_name of this PermissionSetPermissionCreateDTO.
 
         表名称
 
@@ -354,7 +354,7 @@ class PermissionSetPermissionCreateDTO:
 
     @property
     def column_name(self):
-        """Gets the column_name of this PermissionSetPermissionCreateDTO.
+        r"""Gets the column_name of this PermissionSetPermissionCreateDTO.
 
         列名称
 
@@ -365,7 +365,7 @@ class PermissionSetPermissionCreateDTO:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this PermissionSetPermissionCreateDTO.
+        r"""Sets the column_name of this PermissionSetPermissionCreateDTO.
 
         列名称
 
@@ -376,7 +376,7 @@ class PermissionSetPermissionCreateDTO:
 
     @property
     def row_level_security(self):
-        """Gets the row_level_security of this PermissionSetPermissionCreateDTO.
+        r"""Gets the row_level_security of this PermissionSetPermissionCreateDTO.
 
         行级策略。无效参数，待下线。
 
@@ -387,7 +387,7 @@ class PermissionSetPermissionCreateDTO:
 
     @row_level_security.setter
     def row_level_security(self, row_level_security):
-        """Sets the row_level_security of this PermissionSetPermissionCreateDTO.
+        r"""Sets the row_level_security of this PermissionSetPermissionCreateDTO.
 
         行级策略。无效参数，待下线。
 
@@ -398,7 +398,7 @@ class PermissionSetPermissionCreateDTO:
 
     @property
     def url(self):
-        """Gets the url of this PermissionSetPermissionCreateDTO.
+        r"""Gets the url of this PermissionSetPermissionCreateDTO.
 
         url路径名称, MRS存算分离或者HIVE指定location场景下使用。
 
@@ -409,7 +409,7 @@ class PermissionSetPermissionCreateDTO:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this PermissionSetPermissionCreateDTO.
+        r"""Sets the url of this PermissionSetPermissionCreateDTO.
 
         url路径名称, MRS存算分离或者HIVE指定location场景下使用。
 
@@ -420,7 +420,7 @@ class PermissionSetPermissionCreateDTO:
 
     @property
     def auto_sync(self):
-        """Gets the auto_sync of this PermissionSetPermissionCreateDTO.
+        r"""Gets the auto_sync of this PermissionSetPermissionCreateDTO.
 
         是否自动触发同步, 默认false
 
@@ -431,7 +431,7 @@ class PermissionSetPermissionCreateDTO:
 
     @auto_sync.setter
     def auto_sync(self, auto_sync):
-        """Sets the auto_sync of this PermissionSetPermissionCreateDTO.
+        r"""Sets the auto_sync of this PermissionSetPermissionCreateDTO.
 
         是否自动触发同步, 默认false
 

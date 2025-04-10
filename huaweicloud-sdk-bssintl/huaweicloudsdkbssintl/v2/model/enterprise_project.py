@@ -27,7 +27,7 @@ class EnterpriseProject:
     }
 
     def __init__(self, id=None, name=None):
-        """EnterpriseProject
+        r"""EnterpriseProject
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EnterpriseProject:
 
     @property
     def id(self):
-        """Gets the id of this EnterpriseProject.
+        r"""Gets the id of this EnterpriseProject.
 
         |参数名称：企业项目id| |参数约束及描述：最大长度256|
 
@@ -61,7 +61,7 @@ class EnterpriseProject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EnterpriseProject.
+        r"""Sets the id of this EnterpriseProject.
 
         |参数名称：企业项目id| |参数约束及描述：最大长度256|
 
@@ -72,7 +72,7 @@ class EnterpriseProject:
 
     @property
     def name(self):
-        """Gets the name of this EnterpriseProject.
+        r"""Gets the name of this EnterpriseProject.
 
         |参数名称：企业项目名称| |参数约束及描述：最大长度256|
 
@@ -83,7 +83,7 @@ class EnterpriseProject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnterpriseProject.
+        r"""Sets the name of this EnterpriseProject.
 
         |参数名称：企业项目名称| |参数约束及描述：最大长度256|
 

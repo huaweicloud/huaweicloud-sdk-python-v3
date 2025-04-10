@@ -31,7 +31,7 @@ class Premium:
     }
 
     def __init__(self, purchased=None, total=None, elb=None, dedicated=None):
-        """Premium
+        r"""Premium
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Premium:
 
     @property
     def purchased(self):
-        """Gets the purchased of this Premium.
+        r"""Gets the purchased of this Premium.
 
         是否开通独享模式
 
@@ -75,7 +75,7 @@ class Premium:
 
     @purchased.setter
     def purchased(self, purchased):
-        """Sets the purchased of this Premium.
+        r"""Sets the purchased of this Premium.
 
         是否开通独享模式
 
@@ -86,7 +86,7 @@ class Premium:
 
     @property
     def total(self):
-        """Gets the total of this Premium.
+        r"""Gets the total of this Premium.
 
         独享实例数量，包括elb
 
@@ -97,7 +97,7 @@ class Premium:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this Premium.
+        r"""Sets the total of this Premium.
 
         独享实例数量，包括elb
 
@@ -108,7 +108,7 @@ class Premium:
 
     @property
     def elb(self):
-        """Gets the elb of this Premium.
+        r"""Gets the elb of this Premium.
 
         elb实例数量
 
@@ -119,7 +119,7 @@ class Premium:
 
     @elb.setter
     def elb(self, elb):
-        """Sets the elb of this Premium.
+        r"""Sets the elb of this Premium.
 
         elb实例数量
 
@@ -130,7 +130,7 @@ class Premium:
 
     @property
     def dedicated(self):
-        """Gets the dedicated of this Premium.
+        r"""Gets the dedicated of this Premium.
 
         独享WAF实例数量
 
@@ -141,7 +141,7 @@ class Premium:
 
     @dedicated.setter
     def dedicated(self, dedicated):
-        """Sets the dedicated of this Premium.
+        r"""Sets the dedicated of this Premium.
 
         独享WAF实例数量
 

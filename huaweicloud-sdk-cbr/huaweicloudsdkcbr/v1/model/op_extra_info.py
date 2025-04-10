@@ -41,7 +41,7 @@ class OpExtraInfo:
     }
 
     def __init__(self, backup=None, common=None, delete=None, sync=None, remove_resources=None, replication=None, resource=None, restore=None, vault_delete=None):
-        """OpExtraInfo
+        r"""OpExtraInfo
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class OpExtraInfo:
 
     @property
     def backup(self):
-        """Gets the backup of this OpExtraInfo.
+        r"""Gets the backup of this OpExtraInfo.
 
         :return: The backup of this OpExtraInfo.
         :rtype: :class:`huaweicloudsdkcbr.v1.OpExtendInfoBckup`
@@ -106,7 +106,7 @@ class OpExtraInfo:
 
     @backup.setter
     def backup(self, backup):
-        """Sets the backup of this OpExtraInfo.
+        r"""Sets the backup of this OpExtraInfo.
 
         :param backup: The backup of this OpExtraInfo.
         :type backup: :class:`huaweicloudsdkcbr.v1.OpExtendInfoBckup`
@@ -115,7 +115,7 @@ class OpExtraInfo:
 
     @property
     def common(self):
-        """Gets the common of this OpExtraInfo.
+        r"""Gets the common of this OpExtraInfo.
 
         :return: The common of this OpExtraInfo.
         :rtype: :class:`huaweicloudsdkcbr.v1.OpExtendInfoCommon`
@@ -124,7 +124,7 @@ class OpExtraInfo:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this OpExtraInfo.
+        r"""Sets the common of this OpExtraInfo.
 
         :param common: The common of this OpExtraInfo.
         :type common: :class:`huaweicloudsdkcbr.v1.OpExtendInfoCommon`
@@ -133,7 +133,7 @@ class OpExtraInfo:
 
     @property
     def delete(self):
-        """Gets the delete of this OpExtraInfo.
+        r"""Gets the delete of this OpExtraInfo.
 
         :return: The delete of this OpExtraInfo.
         :rtype: :class:`huaweicloudsdkcbr.v1.OpExtendInfoDelete`
@@ -142,7 +142,7 @@ class OpExtraInfo:
 
     @delete.setter
     def delete(self, delete):
-        """Sets the delete of this OpExtraInfo.
+        r"""Sets the delete of this OpExtraInfo.
 
         :param delete: The delete of this OpExtraInfo.
         :type delete: :class:`huaweicloudsdkcbr.v1.OpExtendInfoDelete`
@@ -151,7 +151,7 @@ class OpExtraInfo:
 
     @property
     def sync(self):
-        """Gets the sync of this OpExtraInfo.
+        r"""Gets the sync of this OpExtraInfo.
 
         :return: The sync of this OpExtraInfo.
         :rtype: :class:`huaweicloudsdkcbr.v1.OpExtendInfoSync`
@@ -160,7 +160,7 @@ class OpExtraInfo:
 
     @sync.setter
     def sync(self, sync):
-        """Sets the sync of this OpExtraInfo.
+        r"""Sets the sync of this OpExtraInfo.
 
         :param sync: The sync of this OpExtraInfo.
         :type sync: :class:`huaweicloudsdkcbr.v1.OpExtendInfoSync`
@@ -169,7 +169,7 @@ class OpExtraInfo:
 
     @property
     def remove_resources(self):
-        """Gets the remove_resources of this OpExtraInfo.
+        r"""Gets the remove_resources of this OpExtraInfo.
 
         :return: The remove_resources of this OpExtraInfo.
         :rtype: :class:`huaweicloudsdkcbr.v1.OpExtendInfoRemoveResources`
@@ -178,7 +178,7 @@ class OpExtraInfo:
 
     @remove_resources.setter
     def remove_resources(self, remove_resources):
-        """Sets the remove_resources of this OpExtraInfo.
+        r"""Sets the remove_resources of this OpExtraInfo.
 
         :param remove_resources: The remove_resources of this OpExtraInfo.
         :type remove_resources: :class:`huaweicloudsdkcbr.v1.OpExtendInfoRemoveResources`
@@ -187,7 +187,7 @@ class OpExtraInfo:
 
     @property
     def replication(self):
-        """Gets the replication of this OpExtraInfo.
+        r"""Gets the replication of this OpExtraInfo.
 
         :return: The replication of this OpExtraInfo.
         :rtype: :class:`huaweicloudsdkcbr.v1.OpExtendInfoReplication`
@@ -196,7 +196,7 @@ class OpExtraInfo:
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this OpExtraInfo.
+        r"""Sets the replication of this OpExtraInfo.
 
         :param replication: The replication of this OpExtraInfo.
         :type replication: :class:`huaweicloudsdkcbr.v1.OpExtendInfoReplication`
@@ -205,7 +205,7 @@ class OpExtraInfo:
 
     @property
     def resource(self):
-        """Gets the resource of this OpExtraInfo.
+        r"""Gets the resource of this OpExtraInfo.
 
         :return: The resource of this OpExtraInfo.
         :rtype: :class:`huaweicloudsdkcbr.v1.Resource`
@@ -214,7 +214,7 @@ class OpExtraInfo:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this OpExtraInfo.
+        r"""Sets the resource of this OpExtraInfo.
 
         :param resource: The resource of this OpExtraInfo.
         :type resource: :class:`huaweicloudsdkcbr.v1.Resource`
@@ -223,7 +223,7 @@ class OpExtraInfo:
 
     @property
     def restore(self):
-        """Gets the restore of this OpExtraInfo.
+        r"""Gets the restore of this OpExtraInfo.
 
         :return: The restore of this OpExtraInfo.
         :rtype: :class:`huaweicloudsdkcbr.v1.OpExtendInfoRestore`
@@ -232,7 +232,7 @@ class OpExtraInfo:
 
     @restore.setter
     def restore(self, restore):
-        """Sets the restore of this OpExtraInfo.
+        r"""Sets the restore of this OpExtraInfo.
 
         :param restore: The restore of this OpExtraInfo.
         :type restore: :class:`huaweicloudsdkcbr.v1.OpExtendInfoRestore`
@@ -241,7 +241,7 @@ class OpExtraInfo:
 
     @property
     def vault_delete(self):
-        """Gets the vault_delete of this OpExtraInfo.
+        r"""Gets the vault_delete of this OpExtraInfo.
 
         :return: The vault_delete of this OpExtraInfo.
         :rtype: :class:`huaweicloudsdkcbr.v1.OpExtendInfoVaultDelete`
@@ -250,7 +250,7 @@ class OpExtraInfo:
 
     @vault_delete.setter
     def vault_delete(self, vault_delete):
-        """Sets the vault_delete of this OpExtraInfo.
+        r"""Sets the vault_delete of this OpExtraInfo.
 
         :param vault_delete: The vault_delete of this OpExtraInfo.
         :type vault_delete: :class:`huaweicloudsdkcbr.v1.OpExtendInfoVaultDelete`

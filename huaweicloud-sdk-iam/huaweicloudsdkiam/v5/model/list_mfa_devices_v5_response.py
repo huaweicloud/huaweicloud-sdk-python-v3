@@ -28,7 +28,7 @@ class ListMfaDevicesV5Response(SdkResponse):
     }
 
     def __init__(self, mfa_devices=None, page_info=None):
-        """ListMfaDevicesV5Response
+        r"""ListMfaDevicesV5Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMfaDevicesV5Response(SdkResponse):
 
     @property
     def mfa_devices(self):
-        """Gets the mfa_devices of this ListMfaDevicesV5Response.
+        r"""Gets the mfa_devices of this ListMfaDevicesV5Response.
 
         虚拟MFA设备列表。
 
@@ -62,7 +62,7 @@ class ListMfaDevicesV5Response(SdkResponse):
 
     @mfa_devices.setter
     def mfa_devices(self, mfa_devices):
-        """Sets the mfa_devices of this ListMfaDevicesV5Response.
+        r"""Sets the mfa_devices of this ListMfaDevicesV5Response.
 
         虚拟MFA设备列表。
 
@@ -73,7 +73,7 @@ class ListMfaDevicesV5Response(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListMfaDevicesV5Response.
+        r"""Gets the page_info of this ListMfaDevicesV5Response.
 
         :return: The page_info of this ListMfaDevicesV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.PageInfo`
@@ -82,7 +82,7 @@ class ListMfaDevicesV5Response(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListMfaDevicesV5Response.
+        r"""Sets the page_info of this ListMfaDevicesV5Response.
 
         :param page_info: The page_info of this ListMfaDevicesV5Response.
         :type page_info: :class:`huaweicloudsdkiam.v5.PageInfo`

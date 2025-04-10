@@ -38,7 +38,7 @@ class UpdateAntileakageRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, url=None, category=None, contents=None, status=None, description=None):
-        """UpdateAntileakageRuleResponse
+        r"""UpdateAntileakageRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class UpdateAntileakageRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateAntileakageRuleResponse.
+        r"""Gets the id of this UpdateAntileakageRuleResponse.
 
         规则id
 
@@ -97,7 +97,7 @@ class UpdateAntileakageRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateAntileakageRuleResponse.
+        r"""Sets the id of this UpdateAntileakageRuleResponse.
 
         规则id
 
@@ -108,7 +108,7 @@ class UpdateAntileakageRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this UpdateAntileakageRuleResponse.
+        r"""Gets the policyid of this UpdateAntileakageRuleResponse.
 
         策略id
 
@@ -119,7 +119,7 @@ class UpdateAntileakageRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this UpdateAntileakageRuleResponse.
+        r"""Sets the policyid of this UpdateAntileakageRuleResponse.
 
         策略id
 
@@ -130,7 +130,7 @@ class UpdateAntileakageRuleResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this UpdateAntileakageRuleResponse.
+        r"""Gets the url of this UpdateAntileakageRuleResponse.
 
         规则应用的url
 
@@ -141,7 +141,7 @@ class UpdateAntileakageRuleResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UpdateAntileakageRuleResponse.
+        r"""Sets the url of this UpdateAntileakageRuleResponse.
 
         规则应用的url
 
@@ -152,7 +152,7 @@ class UpdateAntileakageRuleResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this UpdateAntileakageRuleResponse.
+        r"""Gets the category of this UpdateAntileakageRuleResponse.
 
         类别（响应码：code，敏感信息：sensitive）
 
@@ -163,7 +163,7 @@ class UpdateAntileakageRuleResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this UpdateAntileakageRuleResponse.
+        r"""Sets the category of this UpdateAntileakageRuleResponse.
 
         类别（响应码：code，敏感信息：sensitive）
 
@@ -174,7 +174,7 @@ class UpdateAntileakageRuleResponse(SdkResponse):
 
     @property
     def contents(self):
-        """Gets the contents of this UpdateAntileakageRuleResponse.
+        r"""Gets the contents of this UpdateAntileakageRuleResponse.
 
         规则内容
 
@@ -185,7 +185,7 @@ class UpdateAntileakageRuleResponse(SdkResponse):
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this UpdateAntileakageRuleResponse.
+        r"""Sets the contents of this UpdateAntileakageRuleResponse.
 
         规则内容
 
@@ -196,7 +196,7 @@ class UpdateAntileakageRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateAntileakageRuleResponse.
+        r"""Gets the status of this UpdateAntileakageRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -207,7 +207,7 @@ class UpdateAntileakageRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateAntileakageRuleResponse.
+        r"""Sets the status of this UpdateAntileakageRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -218,7 +218,7 @@ class UpdateAntileakageRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateAntileakageRuleResponse.
+        r"""Gets the description of this UpdateAntileakageRuleResponse.
 
         规则描述
 
@@ -229,7 +229,7 @@ class UpdateAntileakageRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAntileakageRuleResponse.
+        r"""Sets the description of this UpdateAntileakageRuleResponse.
 
         规则描述
 

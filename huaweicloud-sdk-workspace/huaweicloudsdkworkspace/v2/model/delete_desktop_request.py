@@ -31,7 +31,7 @@ class DeleteDesktopRequest:
     }
 
     def __init__(self, desktop_id=None, delete_users=None, email_notification=None, is_force_delete=None):
-        """DeleteDesktopRequest
+        r"""DeleteDesktopRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class DeleteDesktopRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this DeleteDesktopRequest.
+        r"""Gets the desktop_id of this DeleteDesktopRequest.
 
         桌面ID。
 
@@ -74,7 +74,7 @@ class DeleteDesktopRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this DeleteDesktopRequest.
+        r"""Sets the desktop_id of this DeleteDesktopRequest.
 
         桌面ID。
 
@@ -85,7 +85,7 @@ class DeleteDesktopRequest:
 
     @property
     def delete_users(self):
-        """Gets the delete_users of this DeleteDesktopRequest.
+        r"""Gets the delete_users of this DeleteDesktopRequest.
 
         删除桌面后，如果当前用户没有其它桌面，可以删除桌面用户。true：删除用户，false：不删除用户，默认为false。
 
@@ -96,7 +96,7 @@ class DeleteDesktopRequest:
 
     @delete_users.setter
     def delete_users(self, delete_users):
-        """Sets the delete_users of this DeleteDesktopRequest.
+        r"""Sets the delete_users of this DeleteDesktopRequest.
 
         删除桌面后，如果当前用户没有其它桌面，可以删除桌面用户。true：删除用户，false：不删除用户，默认为false。
 
@@ -107,7 +107,7 @@ class DeleteDesktopRequest:
 
     @property
     def email_notification(self):
-        """Gets the email_notification of this DeleteDesktopRequest.
+        r"""Gets the email_notification of this DeleteDesktopRequest.
 
         删除桌面后，是否给桌面用户发送系统通知邮件。true：发送，false：不发送。默认为true。
 
@@ -118,7 +118,7 @@ class DeleteDesktopRequest:
 
     @email_notification.setter
     def email_notification(self, email_notification):
-        """Sets the email_notification of this DeleteDesktopRequest.
+        r"""Sets the email_notification of this DeleteDesktopRequest.
 
         删除桌面后，是否给桌面用户发送系统通知邮件。true：发送，false：不发送。默认为true。
 
@@ -129,7 +129,7 @@ class DeleteDesktopRequest:
 
     @property
     def is_force_delete(self):
-        """Gets the is_force_delete of this DeleteDesktopRequest.
+        r"""Gets the is_force_delete of this DeleteDesktopRequest.
 
         是否强制删除
 
@@ -140,7 +140,7 @@ class DeleteDesktopRequest:
 
     @is_force_delete.setter
     def is_force_delete(self, is_force_delete):
-        """Sets the is_force_delete of this DeleteDesktopRequest.
+        r"""Sets the is_force_delete of this DeleteDesktopRequest.
 
         是否强制删除
 

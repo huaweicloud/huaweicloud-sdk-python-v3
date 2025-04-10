@@ -29,7 +29,7 @@ class DeleteDcPointsRequest:
     }
 
     def __init__(self, edge_node_id=None, ds_id=None, body=None):
-        """DeleteDcPointsRequest
+        r"""DeleteDcPointsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteDcPointsRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this DeleteDcPointsRequest.
+        r"""Gets the edge_node_id of this DeleteDcPointsRequest.
 
         边缘节点ID
 
@@ -66,7 +66,7 @@ class DeleteDcPointsRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this DeleteDcPointsRequest.
+        r"""Sets the edge_node_id of this DeleteDcPointsRequest.
 
         边缘节点ID
 
@@ -77,7 +77,7 @@ class DeleteDcPointsRequest:
 
     @property
     def ds_id(self):
-        """Gets the ds_id of this DeleteDcPointsRequest.
+        r"""Gets the ds_id of this DeleteDcPointsRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -88,7 +88,7 @@ class DeleteDcPointsRequest:
 
     @ds_id.setter
     def ds_id(self, ds_id):
-        """Sets the ds_id of this DeleteDcPointsRequest.
+        r"""Sets the ds_id of this DeleteDcPointsRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -99,7 +99,7 @@ class DeleteDcPointsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteDcPointsRequest.
+        r"""Gets the body of this DeleteDcPointsRequest.
 
         :return: The body of this DeleteDcPointsRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteDcPointsReqDTO`
@@ -108,7 +108,7 @@ class DeleteDcPointsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDcPointsRequest.
+        r"""Sets the body of this DeleteDcPointsRequest.
 
         :param body: The body of this DeleteDcPointsRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.DeleteDcPointsReqDTO`

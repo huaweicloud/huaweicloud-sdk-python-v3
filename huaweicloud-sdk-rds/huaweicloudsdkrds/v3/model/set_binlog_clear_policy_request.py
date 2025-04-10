@@ -29,7 +29,7 @@ class SetBinlogClearPolicyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """SetBinlogClearPolicyRequest
+        r"""SetBinlogClearPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetBinlogClearPolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetBinlogClearPolicyRequest.
+        r"""Gets the x_language of this SetBinlogClearPolicyRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class SetBinlogClearPolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetBinlogClearPolicyRequest.
+        r"""Sets the x_language of this SetBinlogClearPolicyRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class SetBinlogClearPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetBinlogClearPolicyRequest.
+        r"""Gets the instance_id of this SetBinlogClearPolicyRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class SetBinlogClearPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetBinlogClearPolicyRequest.
+        r"""Sets the instance_id of this SetBinlogClearPolicyRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class SetBinlogClearPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetBinlogClearPolicyRequest.
+        r"""Gets the body of this SetBinlogClearPolicyRequest.
 
         :return: The body of this SetBinlogClearPolicyRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.BinlogClearPolicyRequestBody`
@@ -109,7 +109,7 @@ class SetBinlogClearPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetBinlogClearPolicyRequest.
+        r"""Sets the body of this SetBinlogClearPolicyRequest.
 
         :param body: The body of this SetBinlogClearPolicyRequest.
         :type body: :class:`huaweicloudsdkrds.v3.BinlogClearPolicyRequestBody`

@@ -26,7 +26,7 @@ class BatchStartServersResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """BatchStartServersResponse
+        r"""BatchStartServersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchStartServersResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchStartServersResponse.
+        r"""Gets the job_id of this BatchStartServersResponse.
 
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 
@@ -55,7 +55,7 @@ class BatchStartServersResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchStartServersResponse.
+        r"""Sets the job_id of this BatchStartServersResponse.
 
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 

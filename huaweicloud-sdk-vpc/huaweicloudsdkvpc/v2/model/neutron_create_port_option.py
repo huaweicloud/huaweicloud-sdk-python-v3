@@ -45,7 +45,7 @@ class NeutronCreatePortOption:
     }
 
     def __init__(self, name=None, network_id=None, admin_state_up=None, fixed_ips=None, security_groups=None, device_owner=None, allowed_address_pairs=None, extra_dhcp_opts=None, bindingprofile=None, port_security_enabled=None, bindingvnic_type=None):
-        """NeutronCreatePortOption
+        r"""NeutronCreatePortOption
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class NeutronCreatePortOption:
 
     @property
     def name(self):
-        """Gets the name of this NeutronCreatePortOption.
+        r"""Gets the name of this NeutronCreatePortOption.
 
         功能说明：端口的名称 取值范围：0-255个字符
 
@@ -123,7 +123,7 @@ class NeutronCreatePortOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronCreatePortOption.
+        r"""Sets the name of this NeutronCreatePortOption.
 
         功能说明：端口的名称 取值范围：0-255个字符
 
@@ -134,7 +134,7 @@ class NeutronCreatePortOption:
 
     @property
     def network_id(self):
-        """Gets the network_id of this NeutronCreatePortOption.
+        r"""Gets the network_id of this NeutronCreatePortOption.
 
         端口所属网络ID
 
@@ -145,7 +145,7 @@ class NeutronCreatePortOption:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this NeutronCreatePortOption.
+        r"""Sets the network_id of this NeutronCreatePortOption.
 
         端口所属网络ID
 
@@ -156,7 +156,7 @@ class NeutronCreatePortOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this NeutronCreatePortOption.
+        r"""Gets the admin_state_up of this NeutronCreatePortOption.
 
         功能说明：管理状态 约束：只支持true
 
@@ -167,7 +167,7 @@ class NeutronCreatePortOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this NeutronCreatePortOption.
+        r"""Sets the admin_state_up of this NeutronCreatePortOption.
 
         功能说明：管理状态 约束：只支持true
 
@@ -178,7 +178,7 @@ class NeutronCreatePortOption:
 
     @property
     def fixed_ips(self):
-        """Gets the fixed_ips of this NeutronCreatePortOption.
+        r"""Gets the fixed_ips of this NeutronCreatePortOption.
 
         功能说明：端口的IP地址，参见“FixedIp对象”表 约束：device_owner为neutron: VIP_PORT时最多指定一个fixed_ip，给云服务器创建IPv6端口时，必须具备一个IPv4 subnet_id和一个IPv6 subnet_id 。
 
@@ -189,7 +189,7 @@ class NeutronCreatePortOption:
 
     @fixed_ips.setter
     def fixed_ips(self, fixed_ips):
-        """Sets the fixed_ips of this NeutronCreatePortOption.
+        r"""Sets the fixed_ips of this NeutronCreatePortOption.
 
         功能说明：端口的IP地址，参见“FixedIp对象”表 约束：device_owner为neutron: VIP_PORT时最多指定一个fixed_ip，给云服务器创建IPv6端口时，必须具备一个IPv4 subnet_id和一个IPv6 subnet_id 。
 
@@ -200,7 +200,7 @@ class NeutronCreatePortOption:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this NeutronCreatePortOption.
+        r"""Gets the security_groups of this NeutronCreatePortOption.
 
         功能说明：作用在该端口上的安全组的ID列表 约束：不支持更新为空
 
@@ -211,7 +211,7 @@ class NeutronCreatePortOption:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this NeutronCreatePortOption.
+        r"""Sets the security_groups of this NeutronCreatePortOption.
 
         功能说明：作用在该端口上的安全组的ID列表 约束：不支持更新为空
 
@@ -222,7 +222,7 @@ class NeutronCreatePortOption:
 
     @property
     def device_owner(self):
-        """Gets the device_owner of this NeutronCreatePortOption.
+        r"""Gets the device_owner of this NeutronCreatePortOption.
 
         功能说明：端口设备所属 取值范围：目前只支持指定\"\"和\"neutron:VIP_PORT\"；neutron:VIP_PORT表示创建的是VIP
 
@@ -233,7 +233,7 @@ class NeutronCreatePortOption:
 
     @device_owner.setter
     def device_owner(self, device_owner):
-        """Sets the device_owner of this NeutronCreatePortOption.
+        r"""Sets the device_owner of this NeutronCreatePortOption.
 
         功能说明：端口设备所属 取值范围：目前只支持指定\"\"和\"neutron:VIP_PORT\"；neutron:VIP_PORT表示创建的是VIP
 
@@ -244,7 +244,7 @@ class NeutronCreatePortOption:
 
     @property
     def allowed_address_pairs(self):
-        """Gets the allowed_address_pairs of this NeutronCreatePortOption.
+        r"""Gets the allowed_address_pairs of this NeutronCreatePortOption.
 
         功能说明：扩展属性：IP/Mac对列表，详情参见“allow_address_pair对象”表 约束：IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR格式。
 
@@ -255,7 +255,7 @@ class NeutronCreatePortOption:
 
     @allowed_address_pairs.setter
     def allowed_address_pairs(self, allowed_address_pairs):
-        """Sets the allowed_address_pairs of this NeutronCreatePortOption.
+        r"""Sets the allowed_address_pairs of this NeutronCreatePortOption.
 
         功能说明：扩展属性：IP/Mac对列表，详情参见“allow_address_pair对象”表 约束：IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR格式。
 
@@ -266,7 +266,7 @@ class NeutronCreatePortOption:
 
     @property
     def extra_dhcp_opts(self):
-        """Gets the extra_dhcp_opts of this NeutronCreatePortOption.
+        r"""Gets the extra_dhcp_opts of this NeutronCreatePortOption.
 
         功能说明：扩展属性：DHCP的扩展Option，详情参见“ExtraDhcpOpt对象”表
 
@@ -277,7 +277,7 @@ class NeutronCreatePortOption:
 
     @extra_dhcp_opts.setter
     def extra_dhcp_opts(self, extra_dhcp_opts):
-        """Sets the extra_dhcp_opts of this NeutronCreatePortOption.
+        r"""Sets the extra_dhcp_opts of this NeutronCreatePortOption.
 
         功能说明：扩展属性：DHCP的扩展Option，详情参见“ExtraDhcpOpt对象”表
 
@@ -288,7 +288,7 @@ class NeutronCreatePortOption:
 
     @property
     def bindingprofile(self):
-        """Gets the bindingprofile of this NeutronCreatePortOption.
+        r"""Gets the bindingprofile of this NeutronCreatePortOption.
 
         扩展属性：提供用户设置自定义信息 【使用说明】  internal_elb字段，布尔类型，普通租户可见。只有在创建内网ELB的虚拟IP的网卡时设置为true。普通租户没有权限更改该字段，由系统维护。 举例：{\"internal_elb\": true}  disable_security_groups字段，布尔类型，普通租户可见。默认为false高性能通信场景下，允许指定为true普通租户可见。仅支持创建port和读取时指定。当前仅支持指定为true，不支持指定为false 举例：{\"disable_security_groups\"：true }， 当前仅支持指定为true，不支持指定为false，指定为true时，FWaaS功能不生效。  仅对于“华北-北京二”：udp_srvports和tcp_srvports，字段，字符串类型，默认不设置udp_srvports和tcp_srvports字段。允许指定udp_srvports和tcp_srvports字段为端口号，表示这些端口的tcp报文和udp报文可支持高并发连接，但是此类报文不受ACL和安全组规则的限制。udp_srvports和tcp_srvports字段同时支持更新操作。 − 格式： {\"tcp_srvports\": \"port1 port2 port3\", \"udp_srvports\": \"port1 port2 port3\"} 端口号之间以空格间隔，最多允许指定的端口号总共为15个，端口号范围是1到65535。 − 示例：{\"tcp_srvports\": \"80 443\", \"udp_srvports\": \"53\"} 示例表示入方向目的端口为80或者443的tcp报文可支持高并发连接。入方向目的端口为53的udp报文可支持高并发连接。但是此类报文不受ACL和安全组规则的限制。 
 
@@ -299,7 +299,7 @@ class NeutronCreatePortOption:
 
     @bindingprofile.setter
     def bindingprofile(self, bindingprofile):
-        """Sets the bindingprofile of this NeutronCreatePortOption.
+        r"""Sets the bindingprofile of this NeutronCreatePortOption.
 
         扩展属性：提供用户设置自定义信息 【使用说明】  internal_elb字段，布尔类型，普通租户可见。只有在创建内网ELB的虚拟IP的网卡时设置为true。普通租户没有权限更改该字段，由系统维护。 举例：{\"internal_elb\": true}  disable_security_groups字段，布尔类型，普通租户可见。默认为false高性能通信场景下，允许指定为true普通租户可见。仅支持创建port和读取时指定。当前仅支持指定为true，不支持指定为false 举例：{\"disable_security_groups\"：true }， 当前仅支持指定为true，不支持指定为false，指定为true时，FWaaS功能不生效。  仅对于“华北-北京二”：udp_srvports和tcp_srvports，字段，字符串类型，默认不设置udp_srvports和tcp_srvports字段。允许指定udp_srvports和tcp_srvports字段为端口号，表示这些端口的tcp报文和udp报文可支持高并发连接，但是此类报文不受ACL和安全组规则的限制。udp_srvports和tcp_srvports字段同时支持更新操作。 − 格式： {\"tcp_srvports\": \"port1 port2 port3\", \"udp_srvports\": \"port1 port2 port3\"} 端口号之间以空格间隔，最多允许指定的端口号总共为15个，端口号范围是1到65535。 − 示例：{\"tcp_srvports\": \"80 443\", \"udp_srvports\": \"53\"} 示例表示入方向目的端口为80或者443的tcp报文可支持高并发连接。入方向目的端口为53的udp报文可支持高并发连接。但是此类报文不受ACL和安全组规则的限制。 
 
@@ -310,7 +310,7 @@ class NeutronCreatePortOption:
 
     @property
     def port_security_enabled(self):
-        """Gets the port_security_enabled of this NeutronCreatePortOption.
+        r"""Gets the port_security_enabled of this NeutronCreatePortOption.
 
         功能说明：端口安全使能标记，如果不使能则安全组和dhcp防欺骗不生效 取值范围：启用（true）或禁用（false）
 
@@ -321,7 +321,7 @@ class NeutronCreatePortOption:
 
     @port_security_enabled.setter
     def port_security_enabled(self, port_security_enabled):
-        """Sets the port_security_enabled of this NeutronCreatePortOption.
+        r"""Sets the port_security_enabled of this NeutronCreatePortOption.
 
         功能说明：端口安全使能标记，如果不使能则安全组和dhcp防欺骗不生效 取值范围：启用（true）或禁用（false）
 
@@ -332,7 +332,7 @@ class NeutronCreatePortOption:
 
     @property
     def bindingvnic_type(self):
-        """Gets the bindingvnic_type of this NeutronCreatePortOption.
+        r"""Gets the bindingvnic_type of this NeutronCreatePortOption.
 
         绑定的vNIC类型  - normal: 软交换
 
@@ -343,7 +343,7 @@ class NeutronCreatePortOption:
 
     @bindingvnic_type.setter
     def bindingvnic_type(self, bindingvnic_type):
-        """Sets the bindingvnic_type of this NeutronCreatePortOption.
+        r"""Sets the bindingvnic_type of this NeutronCreatePortOption.
 
         绑定的vNIC类型  - normal: 软交换
 

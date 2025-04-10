@@ -26,7 +26,7 @@ class UpdateServerMetadataResponse(SdkResponse):
     }
 
     def __init__(self, metadata=None):
-        """UpdateServerMetadataResponse
+        r"""UpdateServerMetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateServerMetadataResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpdateServerMetadataResponse.
+        r"""Gets the metadata of this UpdateServerMetadataResponse.
 
         用户自定义metadata键值对。
 
@@ -55,7 +55,7 @@ class UpdateServerMetadataResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpdateServerMetadataResponse.
+        r"""Sets the metadata of this UpdateServerMetadataResponse.
 
         用户自定义metadata键值对。
 

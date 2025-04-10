@@ -33,7 +33,7 @@ class Flag:
     }
 
     def __init__(self, pci_3ds=None, pci_dss=None, cname=None, is_dual_az=None, ipv6=None):
-        """Flag
+        r"""Flag
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Flag:
 
     @property
     def pci_3ds(self):
-        """Gets the pci_3ds of this Flag.
+        r"""Gets the pci_3ds of this Flag.
 
         是否开启pci_3ds合规认证   - true：开启   - false：不开启
 
@@ -82,7 +82,7 @@ class Flag:
 
     @pci_3ds.setter
     def pci_3ds(self, pci_3ds):
-        """Sets the pci_3ds of this Flag.
+        r"""Sets the pci_3ds of this Flag.
 
         是否开启pci_3ds合规认证   - true：开启   - false：不开启
 
@@ -93,7 +93,7 @@ class Flag:
 
     @property
     def pci_dss(self):
-        """Gets the pci_dss of this Flag.
+        r"""Gets the pci_dss of this Flag.
 
         是否开启pci_dss合规认证   - true：开启   - false：不开启
 
@@ -104,7 +104,7 @@ class Flag:
 
     @pci_dss.setter
     def pci_dss(self, pci_dss):
-        """Sets the pci_dss of this Flag.
+        r"""Sets the pci_dss of this Flag.
 
         是否开启pci_dss合规认证   - true：开启   - false：不开启
 
@@ -115,7 +115,7 @@ class Flag:
 
     @property
     def cname(self):
-        """Gets the cname of this Flag.
+        r"""Gets the cname of this Flag.
 
         old：代表域名使用的老的cname，new：代表域名使用新的cname
 
@@ -126,7 +126,7 @@ class Flag:
 
     @cname.setter
     def cname(self, cname):
-        """Sets the cname of this Flag.
+        r"""Sets the cname of this Flag.
 
         old：代表域名使用的老的cname，new：代表域名使用新的cname
 
@@ -137,7 +137,7 @@ class Flag:
 
     @property
     def is_dual_az(self):
-        """Gets the is_dual_az of this Flag.
+        r"""Gets the is_dual_az of this Flag.
 
         域名是否开启ipv6   - true：支持   - false：不支持
 
@@ -148,7 +148,7 @@ class Flag:
 
     @is_dual_az.setter
     def is_dual_az(self, is_dual_az):
-        """Sets the is_dual_az of this Flag.
+        r"""Sets the is_dual_az of this Flag.
 
         域名是否开启ipv6   - true：支持   - false：不支持
 
@@ -159,7 +159,7 @@ class Flag:
 
     @property
     def ipv6(self):
-        """Gets the ipv6 of this Flag.
+        r"""Gets the ipv6 of this Flag.
 
         域名是否开启ipv6   - true：支持   - false：不支持
 
@@ -170,7 +170,7 @@ class Flag:
 
     @ipv6.setter
     def ipv6(self, ipv6):
-        """Sets the ipv6 of this Flag.
+        r"""Sets the ipv6 of this Flag.
 
         域名是否开启ipv6   - true：支持   - false：不支持
 

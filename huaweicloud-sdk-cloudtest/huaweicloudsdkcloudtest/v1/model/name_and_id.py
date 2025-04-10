@@ -27,7 +27,7 @@ class NameAndId:
     }
 
     def __init__(self, id=None, name=None):
-        """NameAndId
+        r"""NameAndId
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NameAndId:
 
     @property
     def id(self):
-        """Gets the id of this NameAndId.
+        r"""Gets the id of this NameAndId.
 
         对象编号
 
@@ -61,7 +61,7 @@ class NameAndId:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NameAndId.
+        r"""Sets the id of this NameAndId.
 
         对象编号
 
@@ -72,7 +72,7 @@ class NameAndId:
 
     @property
     def name(self):
-        """Gets the name of this NameAndId.
+        r"""Gets the name of this NameAndId.
 
         对象名称
 
@@ -83,7 +83,7 @@ class NameAndId:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NameAndId.
+        r"""Sets the name of this NameAndId.
 
         对象名称
 

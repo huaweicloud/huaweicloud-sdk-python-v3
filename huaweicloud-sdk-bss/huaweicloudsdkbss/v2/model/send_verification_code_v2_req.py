@@ -35,7 +35,7 @@ class SendVerificationCodeV2Req:
     }
 
     def __init__(self, receiver_type=None, timeout=None, mobile_phone=None, lang=None, scene=None, customer_id=None):
-        """SendVerificationCodeV2Req
+        r"""SendVerificationCodeV2Req
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class SendVerificationCodeV2Req:
 
     @property
     def receiver_type(self):
-        """Gets the receiver_type of this SendVerificationCodeV2Req.
+        r"""Gets the receiver_type of this SendVerificationCodeV2Req.
 
         发送验证码的类型： 1：发送短信验证码
 
@@ -87,7 +87,7 @@ class SendVerificationCodeV2Req:
 
     @receiver_type.setter
     def receiver_type(self, receiver_type):
-        """Sets the receiver_type of this SendVerificationCodeV2Req.
+        r"""Sets the receiver_type of this SendVerificationCodeV2Req.
 
         发送验证码的类型： 1：发送短信验证码
 
@@ -98,7 +98,7 @@ class SendVerificationCodeV2Req:
 
     @property
     def timeout(self):
-        """Gets the timeout of this SendVerificationCodeV2Req.
+        r"""Gets the timeout of this SendVerificationCodeV2Req.
 
         发送验证码的超时时间。 此参数不携带或携带值为null时，采用系统默认超时时间10分钟。 此参数值超过60时，取默认值5分钟。 单位：分钟。
 
@@ -109,7 +109,7 @@ class SendVerificationCodeV2Req:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this SendVerificationCodeV2Req.
+        r"""Sets the timeout of this SendVerificationCodeV2Req.
 
         发送验证码的超时时间。 此参数不携带或携带值为null时，采用系统默认超时时间10分钟。 此参数值超过60时，取默认值5分钟。 单位：分钟。
 
@@ -120,7 +120,7 @@ class SendVerificationCodeV2Req:
 
     @property
     def mobile_phone(self):
-        """Gets the mobile_phone of this SendVerificationCodeV2Req.
+        r"""Gets the mobile_phone of this SendVerificationCodeV2Req.
 
         指定发送验证码的手机号。 目前系统只支持中国手机号。 示例：13XXXXXXXXX
 
@@ -131,7 +131,7 @@ class SendVerificationCodeV2Req:
 
     @mobile_phone.setter
     def mobile_phone(self, mobile_phone):
-        """Sets the mobile_phone of this SendVerificationCodeV2Req.
+        r"""Sets the mobile_phone of this SendVerificationCodeV2Req.
 
         指定发送验证码的手机号。 目前系统只支持中国手机号。 示例：13XXXXXXXXX
 
@@ -142,7 +142,7 @@ class SendVerificationCodeV2Req:
 
     @property
     def lang(self):
-        """Gets the lang of this SendVerificationCodeV2Req.
+        r"""Gets the lang of this SendVerificationCodeV2Req.
 
         根据该参数的取值选择发送短信验证码的语言。此参数默认值为“zh-cn：中文”。 zh-cn：中文en-us：英文
 
@@ -153,7 +153,7 @@ class SendVerificationCodeV2Req:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this SendVerificationCodeV2Req.
+        r"""Sets the lang of this SendVerificationCodeV2Req.
 
         根据该参数的取值选择发送短信验证码的语言。此参数默认值为“zh-cn：中文”。 zh-cn：中文en-us：英文
 
@@ -164,7 +164,7 @@ class SendVerificationCodeV2Req:
 
     @property
     def scene(self):
-        """Gets the scene of this SendVerificationCodeV2Req.
+        r"""Gets the scene of this SendVerificationCodeV2Req.
 
         验证码使用的场景，目前支持如下场景： 29：注册场景18：个人银行卡实名认证场景 此参数不携带或携带值为null时，默认值为“29：注册场景”。
 
@@ -175,7 +175,7 @@ class SendVerificationCodeV2Req:
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this SendVerificationCodeV2Req.
+        r"""Sets the scene of this SendVerificationCodeV2Req.
 
         验证码使用的场景，目前支持如下场景： 29：注册场景18：个人银行卡实名认证场景 此参数不携带或携带值为null时，默认值为“29：注册场景”。
 
@@ -186,7 +186,7 @@ class SendVerificationCodeV2Req:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this SendVerificationCodeV2Req.
+        r"""Gets the customer_id of this SendVerificationCodeV2Req.
 
         客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。 当scene=18时此参数必填；除此之外此参数非必填，不携带或携带值为null时均不做处理。
 
@@ -197,7 +197,7 @@ class SendVerificationCodeV2Req:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this SendVerificationCodeV2Req.
+        r"""Sets the customer_id of this SendVerificationCodeV2Req.
 
         客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。 当scene=18时此参数必填；除此之外此参数非必填，不携带或携带值为null时均不做处理。
 

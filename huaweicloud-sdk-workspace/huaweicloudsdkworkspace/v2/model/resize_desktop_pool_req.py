@@ -31,7 +31,7 @@ class ResizeDesktopPoolReq:
     }
 
     def __init__(self, product_id=None, order_id=None, mode=None, extend_param=None):
-        """ResizeDesktopPoolReq
+        r"""ResizeDesktopPoolReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ResizeDesktopPoolReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ResizeDesktopPoolReq.
+        r"""Gets the product_id of this ResizeDesktopPoolReq.
 
         目标规格产品ID。
 
@@ -74,7 +74,7 @@ class ResizeDesktopPoolReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ResizeDesktopPoolReq.
+        r"""Sets the product_id of this ResizeDesktopPoolReq.
 
         目标规格产品ID。
 
@@ -85,7 +85,7 @@ class ResizeDesktopPoolReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ResizeDesktopPoolReq.
+        r"""Gets the order_id of this ResizeDesktopPoolReq.
 
         订单ID，包周期变更规格时使用。
 
@@ -96,7 +96,7 @@ class ResizeDesktopPoolReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ResizeDesktopPoolReq.
+        r"""Sets the order_id of this ResizeDesktopPoolReq.
 
         订单ID，包周期变更规格时使用。
 
@@ -107,7 +107,7 @@ class ResizeDesktopPoolReq:
 
     @property
     def mode(self):
-        """Gets the mode of this ResizeDesktopPoolReq.
+        r"""Gets the mode of this ResizeDesktopPoolReq.
 
         是否支持开机状态下执行变更规格操作。固定传值STOP_DESKTOP，如果桌面处于开机状态，会先关机再变更规格。
 
@@ -118,7 +118,7 @@ class ResizeDesktopPoolReq:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ResizeDesktopPoolReq.
+        r"""Sets the mode of this ResizeDesktopPoolReq.
 
         是否支持开机状态下执行变更规格操作。固定传值STOP_DESKTOP，如果桌面处于开机状态，会先关机再变更规格。
 
@@ -129,7 +129,7 @@ class ResizeDesktopPoolReq:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this ResizeDesktopPoolReq.
+        r"""Gets the extend_param of this ResizeDesktopPoolReq.
 
         :return: The extend_param of this ResizeDesktopPoolReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopExtendParam`
@@ -138,7 +138,7 @@ class ResizeDesktopPoolReq:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this ResizeDesktopPoolReq.
+        r"""Sets the extend_param of this ResizeDesktopPoolReq.
 
         :param extend_param: The extend_param of this ResizeDesktopPoolReq.
         :type extend_param: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopExtendParam`

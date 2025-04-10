@@ -31,7 +31,7 @@ class IndicatorDataObjectDetailDataSource:
     }
 
     def __init__(self, source_type=None, domain_id=None, project_id=None, region_id=None):
-        """IndicatorDataObjectDetailDataSource
+        r"""IndicatorDataObjectDetailDataSource
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class IndicatorDataObjectDetailDataSource:
 
     @property
     def source_type(self):
-        """Gets the source_type of this IndicatorDataObjectDetailDataSource.
+        r"""Gets the source_type of this IndicatorDataObjectDetailDataSource.
 
         数据源类型，取值范围如下：1 - 华为产品 2 - 第三方产品 3 - 租户私有产品
 
@@ -75,7 +75,7 @@ class IndicatorDataObjectDetailDataSource:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this IndicatorDataObjectDetailDataSource.
+        r"""Sets the source_type of this IndicatorDataObjectDetailDataSource.
 
         数据源类型，取值范围如下：1 - 华为产品 2 - 第三方产品 3 - 租户私有产品
 
@@ -86,7 +86,7 @@ class IndicatorDataObjectDetailDataSource:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this IndicatorDataObjectDetailDataSource.
+        r"""Gets the domain_id of this IndicatorDataObjectDetailDataSource.
 
         租户ID
 
@@ -97,7 +97,7 @@ class IndicatorDataObjectDetailDataSource:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this IndicatorDataObjectDetailDataSource.
+        r"""Sets the domain_id of this IndicatorDataObjectDetailDataSource.
 
         租户ID
 
@@ -108,7 +108,7 @@ class IndicatorDataObjectDetailDataSource:
 
     @property
     def project_id(self):
-        """Gets the project_id of this IndicatorDataObjectDetailDataSource.
+        r"""Gets the project_id of this IndicatorDataObjectDetailDataSource.
 
         项目ID
 
@@ -119,7 +119,7 @@ class IndicatorDataObjectDetailDataSource:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this IndicatorDataObjectDetailDataSource.
+        r"""Sets the project_id of this IndicatorDataObjectDetailDataSource.
 
         项目ID
 
@@ -130,7 +130,7 @@ class IndicatorDataObjectDetailDataSource:
 
     @property
     def region_id(self):
-        """Gets the region_id of this IndicatorDataObjectDetailDataSource.
+        r"""Gets the region_id of this IndicatorDataObjectDetailDataSource.
 
         区域ID
 
@@ -141,7 +141,7 @@ class IndicatorDataObjectDetailDataSource:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this IndicatorDataObjectDetailDataSource.
+        r"""Sets the region_id of this IndicatorDataObjectDetailDataSource.
 
         区域ID
 

@@ -31,7 +31,7 @@ class BusinessEnvRequest:
     }
 
     def __init__(self, business_id=None, region=None, start_time=None, end_time=None):
-        """BusinessEnvRequest
+        r"""BusinessEnvRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class BusinessEnvRequest:
 
     @property
     def business_id(self):
-        """Gets the business_id of this BusinessEnvRequest.
+        r"""Gets the business_id of this BusinessEnvRequest.
 
         应用id。
 
@@ -74,7 +74,7 @@ class BusinessEnvRequest:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this BusinessEnvRequest.
+        r"""Sets the business_id of this BusinessEnvRequest.
 
         应用id。
 
@@ -85,7 +85,7 @@ class BusinessEnvRequest:
 
     @property
     def region(self):
-        """Gets the region of this BusinessEnvRequest.
+        r"""Gets the region of this BusinessEnvRequest.
 
         region英文名称。
 
@@ -96,7 +96,7 @@ class BusinessEnvRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this BusinessEnvRequest.
+        r"""Sets the region of this BusinessEnvRequest.
 
         region英文名称。
 
@@ -107,7 +107,7 @@ class BusinessEnvRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this BusinessEnvRequest.
+        r"""Gets the start_time of this BusinessEnvRequest.
 
         开始时间。
 
@@ -118,7 +118,7 @@ class BusinessEnvRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this BusinessEnvRequest.
+        r"""Sets the start_time of this BusinessEnvRequest.
 
         开始时间。
 
@@ -129,7 +129,7 @@ class BusinessEnvRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this BusinessEnvRequest.
+        r"""Gets the end_time of this BusinessEnvRequest.
 
         结束时间。
 
@@ -140,7 +140,7 @@ class BusinessEnvRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this BusinessEnvRequest.
+        r"""Sets the end_time of this BusinessEnvRequest.
 
         结束时间。
 

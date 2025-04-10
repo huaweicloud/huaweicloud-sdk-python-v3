@@ -37,7 +37,7 @@ class SessionAskQuestionReq:
     }
 
     def __init__(self, question=None, domain=None, top=None, themes=None, source_qa_pair_id=None, chat_enable=None, product_type_id=None):
-        """SessionAskQuestionReq
+        r"""SessionAskQuestionReq
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class SessionAskQuestionReq:
 
     @property
     def question(self):
-        """Gets the question of this SessionAskQuestionReq.
+        r"""Gets the question of this SessionAskQuestionReq.
 
         用户输入问题
 
@@ -95,7 +95,7 @@ class SessionAskQuestionReq:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this SessionAskQuestionReq.
+        r"""Sets the question of this SessionAskQuestionReq.
 
         用户输入问题
 
@@ -106,7 +106,7 @@ class SessionAskQuestionReq:
 
     @property
     def domain(self):
-        """Gets the domain of this SessionAskQuestionReq.
+        r"""Gets the domain of this SessionAskQuestionReq.
 
         问答领域
 
@@ -117,7 +117,7 @@ class SessionAskQuestionReq:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this SessionAskQuestionReq.
+        r"""Sets the domain of this SessionAskQuestionReq.
 
         问答领域
 
@@ -128,7 +128,7 @@ class SessionAskQuestionReq:
 
     @property
     def top(self):
-        """Gets the top of this SessionAskQuestionReq.
+        r"""Gets the top of this SessionAskQuestionReq.
 
         最大返回数据条数
 
@@ -139,7 +139,7 @@ class SessionAskQuestionReq:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this SessionAskQuestionReq.
+        r"""Sets the top of this SessionAskQuestionReq.
 
         最大返回数据条数
 
@@ -150,7 +150,7 @@ class SessionAskQuestionReq:
 
     @property
     def themes(self):
-        """Gets the themes of this SessionAskQuestionReq.
+        r"""Gets the themes of this SessionAskQuestionReq.
 
         主题列表
 
@@ -161,7 +161,7 @@ class SessionAskQuestionReq:
 
     @themes.setter
     def themes(self, themes):
-        """Sets the themes of this SessionAskQuestionReq.
+        r"""Sets the themes of this SessionAskQuestionReq.
 
         主题列表
 
@@ -172,7 +172,7 @@ class SessionAskQuestionReq:
 
     @property
     def source_qa_pair_id(self):
-        """Gets the source_qa_pair_id of this SessionAskQuestionReq.
+        r"""Gets the source_qa_pair_id of this SessionAskQuestionReq.
 
         语料ID
 
@@ -183,7 +183,7 @@ class SessionAskQuestionReq:
 
     @source_qa_pair_id.setter
     def source_qa_pair_id(self, source_qa_pair_id):
-        """Sets the source_qa_pair_id of this SessionAskQuestionReq.
+        r"""Sets the source_qa_pair_id of this SessionAskQuestionReq.
 
         语料ID
 
@@ -194,7 +194,7 @@ class SessionAskQuestionReq:
 
     @property
     def chat_enable(self):
-        """Gets the chat_enable of this SessionAskQuestionReq.
+        r"""Gets the chat_enable of this SessionAskQuestionReq.
 
         是否需要兜底
 
@@ -205,7 +205,7 @@ class SessionAskQuestionReq:
 
     @chat_enable.setter
     def chat_enable(self, chat_enable):
-        """Sets the chat_enable of this SessionAskQuestionReq.
+        r"""Sets the chat_enable of this SessionAskQuestionReq.
 
         是否需要兜底
 
@@ -216,7 +216,7 @@ class SessionAskQuestionReq:
 
     @property
     def product_type_id(self):
-        """Gets the product_type_id of this SessionAskQuestionReq.
+        r"""Gets the product_type_id of this SessionAskQuestionReq.
 
         产品类型Id
 
@@ -227,7 +227,7 @@ class SessionAskQuestionReq:
 
     @product_type_id.setter
     def product_type_id(self, product_type_id):
-        """Sets the product_type_id of this SessionAskQuestionReq.
+        r"""Sets the product_type_id of this SessionAskQuestionReq.
 
         产品类型Id
 

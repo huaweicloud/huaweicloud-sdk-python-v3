@@ -33,7 +33,7 @@ class ResizeEngineRequest:
     }
 
     def __init__(self, x_enterprise_project_id=None, content_type=None, accept=None, engine_id=None, body=None):
-        """ResizeEngineRequest
+        r"""ResizeEngineRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ResizeEngineRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this ResizeEngineRequest.
+        r"""Gets the x_enterprise_project_id of this ResizeEngineRequest.
 
         如果不带则默认企业项目为\"default\"，ID为\"0\"
 
@@ -79,7 +79,7 @@ class ResizeEngineRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this ResizeEngineRequest.
+        r"""Sets the x_enterprise_project_id of this ResizeEngineRequest.
 
         如果不带则默认企业项目为\"default\"，ID为\"0\"
 
@@ -90,7 +90,7 @@ class ResizeEngineRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ResizeEngineRequest.
+        r"""Gets the content_type of this ResizeEngineRequest.
 
         该字段内容填为 \"application/json;charset=UTF-8\"
 
@@ -101,7 +101,7 @@ class ResizeEngineRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ResizeEngineRequest.
+        r"""Sets the content_type of this ResizeEngineRequest.
 
         该字段内容填为 \"application/json;charset=UTF-8\"
 
@@ -112,7 +112,7 @@ class ResizeEngineRequest:
 
     @property
     def accept(self):
-        """Gets the accept of this ResizeEngineRequest.
+        r"""Gets the accept of this ResizeEngineRequest.
 
         该字段内容填为 \"application/json\"
 
@@ -123,7 +123,7 @@ class ResizeEngineRequest:
 
     @accept.setter
     def accept(self, accept):
-        """Sets the accept of this ResizeEngineRequest.
+        r"""Sets the accept of this ResizeEngineRequest.
 
         该字段内容填为 \"application/json\"
 
@@ -134,7 +134,7 @@ class ResizeEngineRequest:
 
     @property
     def engine_id(self):
-        """Gets the engine_id of this ResizeEngineRequest.
+        r"""Gets the engine_id of this ResizeEngineRequest.
 
         引擎id
 
@@ -145,7 +145,7 @@ class ResizeEngineRequest:
 
     @engine_id.setter
     def engine_id(self, engine_id):
-        """Sets the engine_id of this ResizeEngineRequest.
+        r"""Sets the engine_id of this ResizeEngineRequest.
 
         引擎id
 
@@ -156,7 +156,7 @@ class ResizeEngineRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResizeEngineRequest.
+        r"""Gets the body of this ResizeEngineRequest.
 
         :return: The body of this ResizeEngineRequest.
         :rtype: :class:`huaweicloudsdkcse.v1.EngineModifyReq`
@@ -165,7 +165,7 @@ class ResizeEngineRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResizeEngineRequest.
+        r"""Sets the body of this ResizeEngineRequest.
 
         :param body: The body of this ResizeEngineRequest.
         :type body: :class:`huaweicloudsdkcse.v1.EngineModifyReq`

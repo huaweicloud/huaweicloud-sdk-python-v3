@@ -31,7 +31,7 @@ class BackupFilesBody:
     }
 
     def __init__(self, file_source=None, bucket_name=None, files=None, backup_id=None):
-        """BackupFilesBody
+        r"""BackupFilesBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class BackupFilesBody:
 
     @property
     def file_source(self):
-        """Gets the file_source of this BackupFilesBody.
+        r"""Gets the file_source of this BackupFilesBody.
 
         数据来源，当前仅支持OBS桶方式，取值为：self_build_obs。
 
@@ -74,7 +74,7 @@ class BackupFilesBody:
 
     @file_source.setter
     def file_source(self, file_source):
-        """Sets the file_source of this BackupFilesBody.
+        r"""Sets the file_source of this BackupFilesBody.
 
         数据来源，当前仅支持OBS桶方式，取值为：self_build_obs。
 
@@ -85,7 +85,7 @@ class BackupFilesBody:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this BackupFilesBody.
+        r"""Gets the bucket_name of this BackupFilesBody.
 
         OBS桶名。
 
@@ -96,7 +96,7 @@ class BackupFilesBody:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this BackupFilesBody.
+        r"""Sets the bucket_name of this BackupFilesBody.
 
         OBS桶名。
 
@@ -107,7 +107,7 @@ class BackupFilesBody:
 
     @property
     def files(self):
-        """Gets the files of this BackupFilesBody.
+        r"""Gets the files of this BackupFilesBody.
 
         导入的备份文件文件列表。
 
@@ -118,7 +118,7 @@ class BackupFilesBody:
 
     @files.setter
     def files(self, files):
-        """Sets the files of this BackupFilesBody.
+        r"""Sets the files of this BackupFilesBody.
 
         导入的备份文件文件列表。
 
@@ -129,7 +129,7 @@ class BackupFilesBody:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this BackupFilesBody.
+        r"""Gets the backup_id of this BackupFilesBody.
 
         备份记录ID，数据来源为备份记录时必须填写
 
@@ -140,7 +140,7 @@ class BackupFilesBody:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this BackupFilesBody.
+        r"""Sets the backup_id of this BackupFilesBody.
 
         备份记录ID，数据来源为备份记录时必须填写
 

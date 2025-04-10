@@ -24,7 +24,7 @@ class DeleteInstanceByIdResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteInstanceByIdResponse
+        r"""DeleteInstanceByIdResponse
 
         The model defined in huaweicloud sdk
 

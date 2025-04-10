@@ -29,7 +29,7 @@ class SinkFGParameters:
     }
 
     def __init__(self, invoke_type=None, urn=None, agency=None):
-        """SinkFGParameters
+        r"""SinkFGParameters
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SinkFGParameters:
 
     @property
     def invoke_type(self):
-        """Gets the invoke_type of this SinkFGParameters.
+        r"""Gets the invoke_type of this SinkFGParameters.
 
         函数执行方式,同步/异步
 
@@ -68,7 +68,7 @@ class SinkFGParameters:
 
     @invoke_type.setter
     def invoke_type(self, invoke_type):
-        """Sets the invoke_type of this SinkFGParameters.
+        r"""Sets the invoke_type of this SinkFGParameters.
 
         函数执行方式,同步/异步
 
@@ -79,7 +79,7 @@ class SinkFGParameters:
 
     @property
     def urn(self):
-        """Gets the urn of this SinkFGParameters.
+        r"""Gets the urn of this SinkFGParameters.
 
         函数链接
 
@@ -90,7 +90,7 @@ class SinkFGParameters:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this SinkFGParameters.
+        r"""Sets the urn of this SinkFGParameters.
 
         函数链接
 
@@ -101,7 +101,7 @@ class SinkFGParameters:
 
     @property
     def agency(self):
-        """Gets the agency of this SinkFGParameters.
+        r"""Gets the agency of this SinkFGParameters.
 
         租户委托
 
@@ -112,7 +112,7 @@ class SinkFGParameters:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this SinkFGParameters.
+        r"""Sets the agency of this SinkFGParameters.
 
         租户委托
 

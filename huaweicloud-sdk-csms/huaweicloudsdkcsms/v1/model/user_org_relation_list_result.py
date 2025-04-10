@@ -27,7 +27,7 @@ class UserOrgRelationListResult:
     }
 
     def __init__(self, org_id=None, relation_type=None):
-        """UserOrgRelationListResult
+        r"""UserOrgRelationListResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UserOrgRelationListResult:
 
     @property
     def org_id(self):
-        """Gets the org_id of this UserOrgRelationListResult.
+        r"""Gets the org_id of this UserOrgRelationListResult.
 
         组织id
 
@@ -59,7 +59,7 @@ class UserOrgRelationListResult:
 
     @org_id.setter
     def org_id(self, org_id):
-        """Sets the org_id of this UserOrgRelationListResult.
+        r"""Sets the org_id of this UserOrgRelationListResult.
 
         组织id
 
@@ -70,7 +70,7 @@ class UserOrgRelationListResult:
 
     @property
     def relation_type(self):
-        """Gets the relation_type of this UserOrgRelationListResult.
+        r"""Gets the relation_type of this UserOrgRelationListResult.
 
         关系类型。
 
@@ -81,7 +81,7 @@ class UserOrgRelationListResult:
 
     @relation_type.setter
     def relation_type(self, relation_type):
-        """Sets the relation_type of this UserOrgRelationListResult.
+        r"""Sets the relation_type of this UserOrgRelationListResult.
 
         关系类型。
 

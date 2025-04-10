@@ -29,7 +29,7 @@ class SynthesisResultResultMolecules:
     }
 
     def __init__(self, id=None, smiles=None, source=None):
-        """SynthesisResultResultMolecules
+        r"""SynthesisResultResultMolecules
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SynthesisResultResultMolecules:
 
     @property
     def id(self):
-        """Gets the id of this SynthesisResultResultMolecules.
+        r"""Gets the id of this SynthesisResultResultMolecules.
 
         molecule的序号
 
@@ -65,7 +65,7 @@ class SynthesisResultResultMolecules:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SynthesisResultResultMolecules.
+        r"""Sets the id of this SynthesisResultResultMolecules.
 
         molecule的序号
 
@@ -76,7 +76,7 @@ class SynthesisResultResultMolecules:
 
     @property
     def smiles(self):
-        """Gets the smiles of this SynthesisResultResultMolecules.
+        r"""Gets the smiles of this SynthesisResultResultMolecules.
 
         分子SMILES表达式
 
@@ -87,7 +87,7 @@ class SynthesisResultResultMolecules:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this SynthesisResultResultMolecules.
+        r"""Sets the smiles of this SynthesisResultResultMolecules.
 
         分子SMILES表达式
 
@@ -98,7 +98,7 @@ class SynthesisResultResultMolecules:
 
     @property
     def source(self):
-        """Gets the source of this SynthesisResultResultMolecules.
+        r"""Gets the source of this SynthesisResultResultMolecules.
 
         molecule的smiles来源
 
@@ -109,7 +109,7 @@ class SynthesisResultResultMolecules:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this SynthesisResultResultMolecules.
+        r"""Sets the source of this SynthesisResultResultMolecules.
 
         molecule的smiles来源
 

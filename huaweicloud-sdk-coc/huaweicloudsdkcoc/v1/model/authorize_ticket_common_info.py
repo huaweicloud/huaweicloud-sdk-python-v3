@@ -43,7 +43,7 @@ class AuthorizeTicketCommonInfo:
     }
 
     def __init__(self, ticket_id=None, target_id=None, scope_id=None, title=None, ticket_type=None, owner=None, level=None, status=None, begin_time=None, end_time=None):
-        """AuthorizeTicketCommonInfo
+        r"""AuthorizeTicketCommonInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AuthorizeTicketCommonInfo:
 
     @property
     def ticket_id(self):
-        """Gets the ticket_id of this AuthorizeTicketCommonInfo.
+        r"""Gets the ticket_id of this AuthorizeTicketCommonInfo.
 
         关联单号
 
@@ -117,7 +117,7 @@ class AuthorizeTicketCommonInfo:
 
     @ticket_id.setter
     def ticket_id(self, ticket_id):
-        """Sets the ticket_id of this AuthorizeTicketCommonInfo.
+        r"""Sets the ticket_id of this AuthorizeTicketCommonInfo.
 
         关联单号
 
@@ -128,7 +128,7 @@ class AuthorizeTicketCommonInfo:
 
     @property
     def target_id(self):
-        """Gets the target_id of this AuthorizeTicketCommonInfo.
+        r"""Gets the target_id of this AuthorizeTicketCommonInfo.
 
         目标 ID，一般为应用id
 
@@ -139,7 +139,7 @@ class AuthorizeTicketCommonInfo:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this AuthorizeTicketCommonInfo.
+        r"""Sets the target_id of this AuthorizeTicketCommonInfo.
 
         目标 ID，一般为应用id
 
@@ -150,7 +150,7 @@ class AuthorizeTicketCommonInfo:
 
     @property
     def scope_id(self):
-        """Gets the scope_id of this AuthorizeTicketCommonInfo.
+        r"""Gets the scope_id of this AuthorizeTicketCommonInfo.
 
         scope ID，一般为region id
 
@@ -161,7 +161,7 @@ class AuthorizeTicketCommonInfo:
 
     @scope_id.setter
     def scope_id(self, scope_id):
-        """Sets the scope_id of this AuthorizeTicketCommonInfo.
+        r"""Sets the scope_id of this AuthorizeTicketCommonInfo.
 
         scope ID，一般为region id
 
@@ -172,7 +172,7 @@ class AuthorizeTicketCommonInfo:
 
     @property
     def title(self):
-        """Gets the title of this AuthorizeTicketCommonInfo.
+        r"""Gets the title of this AuthorizeTicketCommonInfo.
 
         工单名称
 
@@ -183,7 +183,7 @@ class AuthorizeTicketCommonInfo:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this AuthorizeTicketCommonInfo.
+        r"""Sets the title of this AuthorizeTicketCommonInfo.
 
         工单名称
 
@@ -194,7 +194,7 @@ class AuthorizeTicketCommonInfo:
 
     @property
     def ticket_type(self):
-        """Gets the ticket_type of this AuthorizeTicketCommonInfo.
+        r"""Gets the ticket_type of this AuthorizeTicketCommonInfo.
 
         授权单类型，取值：CHANGE/INCIDENT/WAR_ROOM/ALARM
 
@@ -205,7 +205,7 @@ class AuthorizeTicketCommonInfo:
 
     @ticket_type.setter
     def ticket_type(self, ticket_type):
-        """Sets the ticket_type of this AuthorizeTicketCommonInfo.
+        r"""Sets the ticket_type of this AuthorizeTicketCommonInfo.
 
         授权单类型，取值：CHANGE/INCIDENT/WAR_ROOM/ALARM
 
@@ -216,7 +216,7 @@ class AuthorizeTicketCommonInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this AuthorizeTicketCommonInfo.
+        r"""Gets the owner of this AuthorizeTicketCommonInfo.
 
         当前责任人
 
@@ -227,7 +227,7 @@ class AuthorizeTicketCommonInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this AuthorizeTicketCommonInfo.
+        r"""Sets the owner of this AuthorizeTicketCommonInfo.
 
         当前责任人
 
@@ -238,7 +238,7 @@ class AuthorizeTicketCommonInfo:
 
     @property
     def level(self):
-        """Gets the level of this AuthorizeTicketCommonInfo.
+        r"""Gets the level of this AuthorizeTicketCommonInfo.
 
         级别
 
@@ -249,7 +249,7 @@ class AuthorizeTicketCommonInfo:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this AuthorizeTicketCommonInfo.
+        r"""Sets the level of this AuthorizeTicketCommonInfo.
 
         级别
 
@@ -260,7 +260,7 @@ class AuthorizeTicketCommonInfo:
 
     @property
     def status(self):
-        """Gets the status of this AuthorizeTicketCommonInfo.
+        r"""Gets the status of this AuthorizeTicketCommonInfo.
 
         状态，取值：open/close
 
@@ -271,7 +271,7 @@ class AuthorizeTicketCommonInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AuthorizeTicketCommonInfo.
+        r"""Sets the status of this AuthorizeTicketCommonInfo.
 
         状态，取值：open/close
 
@@ -282,7 +282,7 @@ class AuthorizeTicketCommonInfo:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this AuthorizeTicketCommonInfo.
+        r"""Gets the begin_time of this AuthorizeTicketCommonInfo.
 
         起始时间
 
@@ -293,7 +293,7 @@ class AuthorizeTicketCommonInfo:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this AuthorizeTicketCommonInfo.
+        r"""Sets the begin_time of this AuthorizeTicketCommonInfo.
 
         起始时间
 
@@ -304,7 +304,7 @@ class AuthorizeTicketCommonInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this AuthorizeTicketCommonInfo.
+        r"""Gets the end_time of this AuthorizeTicketCommonInfo.
 
         结束时间
 
@@ -315,7 +315,7 @@ class AuthorizeTicketCommonInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this AuthorizeTicketCommonInfo.
+        r"""Sets the end_time of this AuthorizeTicketCommonInfo.
 
         结束时间
 

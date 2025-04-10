@@ -25,7 +25,7 @@ class CreateGlobalConnectionBandwidthRequest:
     }
 
     def __init__(self, body=None):
-        """CreateGlobalConnectionBandwidthRequest
+        r"""CreateGlobalConnectionBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateGlobalConnectionBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGlobalConnectionBandwidthRequest.
+        r"""Gets the body of this CreateGlobalConnectionBandwidthRequest.
 
         :return: The body of this CreateGlobalConnectionBandwidthRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.CreateGlobalConnectionBandwidthRequestBody`
@@ -52,7 +52,7 @@ class CreateGlobalConnectionBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGlobalConnectionBandwidthRequest.
+        r"""Sets the body of this CreateGlobalConnectionBandwidthRequest.
 
         :param body: The body of this CreateGlobalConnectionBandwidthRequest.
         :type body: :class:`huaweicloudsdkcc.v3.CreateGlobalConnectionBandwidthRequestBody`

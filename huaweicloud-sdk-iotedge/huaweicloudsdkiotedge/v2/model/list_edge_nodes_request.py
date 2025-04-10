@@ -39,7 +39,7 @@ class ListEdgeNodesRequest:
     }
 
     def __init__(self, name=None, state=None, type=None, instance_id=None, space_id=None, node_ids=None, offset=None, limit=None):
-        """ListEdgeNodesRequest
+        r"""ListEdgeNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListEdgeNodesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListEdgeNodesRequest.
+        r"""Gets the name of this ListEdgeNodesRequest.
 
         节点名称
 
@@ -103,7 +103,7 @@ class ListEdgeNodesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListEdgeNodesRequest.
+        r"""Sets the name of this ListEdgeNodesRequest.
 
         节点名称
 
@@ -114,7 +114,7 @@ class ListEdgeNodesRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListEdgeNodesRequest.
+        r"""Gets the state of this ListEdgeNodesRequest.
 
         节点状态,OFFLINE|ONLINE|UNINSTALLED|INSTALLED|DELETING|UPGRADING
 
@@ -125,7 +125,7 @@ class ListEdgeNodesRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListEdgeNodesRequest.
+        r"""Sets the state of this ListEdgeNodesRequest.
 
         节点状态,OFFLINE|ONLINE|UNINSTALLED|INSTALLED|DELETING|UPGRADING
 
@@ -136,7 +136,7 @@ class ListEdgeNodesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListEdgeNodesRequest.
+        r"""Gets the type of this ListEdgeNodesRequest.
 
         节点所属资源类型，advanced|standard
 
@@ -147,7 +147,7 @@ class ListEdgeNodesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListEdgeNodesRequest.
+        r"""Sets the type of this ListEdgeNodesRequest.
 
         节点所属资源类型，advanced|standard
 
@@ -158,7 +158,7 @@ class ListEdgeNodesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListEdgeNodesRequest.
+        r"""Gets the instance_id of this ListEdgeNodesRequest.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -169,7 +169,7 @@ class ListEdgeNodesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListEdgeNodesRequest.
+        r"""Sets the instance_id of this ListEdgeNodesRequest.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -180,7 +180,7 @@ class ListEdgeNodesRequest:
 
     @property
     def space_id(self):
-        """Gets the space_id of this ListEdgeNodesRequest.
+        r"""Gets the space_id of this ListEdgeNodesRequest.
 
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，可以携带该参数查询指定资源空间下的设备列表，不携带该参数则会查询该用户下所有设备列表。
 
@@ -191,7 +191,7 @@ class ListEdgeNodesRequest:
 
     @space_id.setter
     def space_id(self, space_id):
-        """Sets the space_id of this ListEdgeNodesRequest.
+        r"""Sets the space_id of this ListEdgeNodesRequest.
 
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，可以携带该参数查询指定资源空间下的设备列表，不携带该参数则会查询该用户下所有设备列表。
 
@@ -202,7 +202,7 @@ class ListEdgeNodesRequest:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this ListEdgeNodesRequest.
+        r"""Gets the node_ids of this ListEdgeNodesRequest.
 
         节点id列表,查询ID在给的节点ID列表内的节点信息
 
@@ -213,7 +213,7 @@ class ListEdgeNodesRequest:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this ListEdgeNodesRequest.
+        r"""Sets the node_ids of this ListEdgeNodesRequest.
 
         节点id列表,查询ID在给的节点ID列表内的节点信息
 
@@ -224,7 +224,7 @@ class ListEdgeNodesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEdgeNodesRequest.
+        r"""Gets the offset of this ListEdgeNodesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -235,7 +235,7 @@ class ListEdgeNodesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEdgeNodesRequest.
+        r"""Sets the offset of this ListEdgeNodesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -246,7 +246,7 @@ class ListEdgeNodesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEdgeNodesRequest.
+        r"""Gets the limit of this ListEdgeNodesRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 
@@ -257,7 +257,7 @@ class ListEdgeNodesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEdgeNodesRequest.
+        r"""Sets the limit of this ListEdgeNodesRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 

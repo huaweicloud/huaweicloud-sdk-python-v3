@@ -29,7 +29,7 @@ class HttpCode:
     }
 
     def __init__(self, code=None, count=None, proportion=None):
-        """HttpCode
+        r"""HttpCode
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class HttpCode:
 
     @property
     def code(self):
-        """Gets the code of this HttpCode.
+        r"""Gets the code of this HttpCode.
 
         状态码
 
@@ -68,7 +68,7 @@ class HttpCode:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this HttpCode.
+        r"""Sets the code of this HttpCode.
 
         状态码
 
@@ -79,7 +79,7 @@ class HttpCode:
 
     @property
     def count(self):
-        """Gets the count of this HttpCode.
+        r"""Gets the count of this HttpCode.
 
         状态码出现次数
 
@@ -90,7 +90,7 @@ class HttpCode:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this HttpCode.
+        r"""Sets the count of this HttpCode.
 
         状态码出现次数
 
@@ -101,7 +101,7 @@ class HttpCode:
 
     @property
     def proportion(self):
-        """Gets the proportion of this HttpCode.
+        r"""Gets the proportion of this HttpCode.
 
         状态码在对应时间点中的占比，保留4位小数。 
 
@@ -112,7 +112,7 @@ class HttpCode:
 
     @proportion.setter
     def proportion(self, proportion):
-        """Sets the proportion of this HttpCode.
+        r"""Sets the proportion of this HttpCode.
 
         状态码在对应时间点中的占比，保留4位小数。 
 

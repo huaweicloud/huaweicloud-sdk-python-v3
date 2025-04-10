@@ -28,7 +28,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     }
 
     def __init__(self, groups=None, total=None):
-        """ListInstanceConsumerGroupsResponse
+        r"""ListInstanceConsumerGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @property
     def groups(self):
-        """Gets the groups of this ListInstanceConsumerGroupsResponse.
+        r"""Gets the groups of this ListInstanceConsumerGroupsResponse.
 
         所有的消费组。
 
@@ -62,7 +62,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this ListInstanceConsumerGroupsResponse.
+        r"""Sets the groups of this ListInstanceConsumerGroupsResponse.
 
         所有的消费组。
 
@@ -73,7 +73,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListInstanceConsumerGroupsResponse.
+        r"""Gets the total of this ListInstanceConsumerGroupsResponse.
 
         所有的消费组总数。
 
@@ -84,7 +84,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListInstanceConsumerGroupsResponse.
+        r"""Sets the total of this ListInstanceConsumerGroupsResponse.
 
         所有的消费组总数。
 

@@ -33,7 +33,7 @@ class KafkaContentReq:
     }
 
     def __init__(self, connection_type=None, instance_id=None, vpcep_infos=None, broker_infos=None, auth_info=None):
-        """KafkaContentReq
+        r"""KafkaContentReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class KafkaContentReq:
 
     @property
     def connection_type(self):
-        """Gets the connection_type of this KafkaContentReq.
+        r"""Gets the connection_type of this KafkaContentReq.
 
         KAFKA连接方式
 
@@ -81,7 +81,7 @@ class KafkaContentReq:
 
     @connection_type.setter
     def connection_type(self, connection_type):
-        """Sets the connection_type of this KafkaContentReq.
+        r"""Sets the connection_type of this KafkaContentReq.
 
         KAFKA连接方式
 
@@ -92,7 +92,7 @@ class KafkaContentReq:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this KafkaContentReq.
+        r"""Gets the instance_id of this KafkaContentReq.
 
         Kafka实例ID
 
@@ -103,7 +103,7 @@ class KafkaContentReq:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this KafkaContentReq.
+        r"""Sets the instance_id of this KafkaContentReq.
 
         Kafka实例ID
 
@@ -114,7 +114,7 @@ class KafkaContentReq:
 
     @property
     def vpcep_infos(self):
-        """Gets the vpcep_infos of this KafkaContentReq.
+        r"""Gets the vpcep_infos of this KafkaContentReq.
 
         Kafka的VPCEP信息包括service_id,service_name,client_port
 
@@ -125,7 +125,7 @@ class KafkaContentReq:
 
     @vpcep_infos.setter
     def vpcep_infos(self, vpcep_infos):
-        """Sets the vpcep_infos of this KafkaContentReq.
+        r"""Sets the vpcep_infos of this KafkaContentReq.
 
         Kafka的VPCEP信息包括service_id,service_name,client_port
 
@@ -136,7 +136,7 @@ class KafkaContentReq:
 
     @property
     def broker_infos(self):
-        """Gets the broker_infos of this KafkaContentReq.
+        r"""Gets the broker_infos of this KafkaContentReq.
 
         Kafka的broker信息包括broker_ip, broker_port
 
@@ -147,7 +147,7 @@ class KafkaContentReq:
 
     @broker_infos.setter
     def broker_infos(self, broker_infos):
-        """Sets the broker_infos of this KafkaContentReq.
+        r"""Sets the broker_infos of this KafkaContentReq.
 
         Kafka的broker信息包括broker_ip, broker_port
 
@@ -158,7 +158,7 @@ class KafkaContentReq:
 
     @property
     def auth_info(self):
-        """Gets the auth_info of this KafkaContentReq.
+        r"""Gets the auth_info of this KafkaContentReq.
 
         :return: The auth_info of this KafkaContentReq.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.KafkaAuthInfo`
@@ -167,7 +167,7 @@ class KafkaContentReq:
 
     @auth_info.setter
     def auth_info(self, auth_info):
-        """Sets the auth_info of this KafkaContentReq.
+        r"""Sets the auth_info of this KafkaContentReq.
 
         :param auth_info: The auth_info of this KafkaContentReq.
         :type auth_info: :class:`huaweicloudsdkiotanalytics.v1.KafkaAuthInfo`

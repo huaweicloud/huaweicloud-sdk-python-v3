@@ -25,7 +25,7 @@ class HostedCloud:
     }
 
     def __init__(self, hosted_cloud=None):
-        """HostedCloud
+        r"""HostedCloud
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class HostedCloud:
 
     @property
     def hosted_cloud(self):
-        """Gets the hosted_cloud of this HostedCloud.
+        r"""Gets the hosted_cloud of this HostedCloud.
 
         - HWCloud (华为云) - Ireland (爱尔兰)
 
@@ -53,7 +53,7 @@ class HostedCloud:
 
     @hosted_cloud.setter
     def hosted_cloud(self, hosted_cloud):
-        """Sets the hosted_cloud of this HostedCloud.
+        r"""Sets the hosted_cloud of this HostedCloud.
 
         - HWCloud (华为云) - Ireland (爱尔兰)
 

@@ -26,7 +26,7 @@ class BatchUpdateAgentResponse(SdkResponse):
     }
 
     def __init__(self, state=None):
-        """BatchUpdateAgentResponse
+        r"""BatchUpdateAgentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchUpdateAgentResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this BatchUpdateAgentResponse.
+        r"""Gets the state of this BatchUpdateAgentResponse.
 
         执行状态： - true：成功下发任务。 - false：失败下发任务。
 
@@ -55,7 +55,7 @@ class BatchUpdateAgentResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this BatchUpdateAgentResponse.
+        r"""Sets the state of this BatchUpdateAgentResponse.
 
         执行状态： - true：成功下发任务。 - false：失败下发任务。
 

@@ -24,7 +24,7 @@ class CommitSyntaxConversionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CommitSyntaxConversionResponse
+        r"""CommitSyntaxConversionResponse
 
         The model defined in huaweicloud sdk
 

@@ -30,7 +30,7 @@ class CreateRoleResponse(SdkResponse):
     }
 
     def __init__(self, role_name=None, description=None, principal_source=None):
-        """CreateRoleResponse
+        r"""CreateRoleResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateRoleResponse(SdkResponse):
 
     @property
     def role_name(self):
-        """Gets the role_name of this CreateRoleResponse.
+        r"""Gets the role_name of this CreateRoleResponse.
 
         角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
@@ -69,7 +69,7 @@ class CreateRoleResponse(SdkResponse):
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this CreateRoleResponse.
+        r"""Sets the role_name of this CreateRoleResponse.
 
         角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
@@ -80,7 +80,7 @@ class CreateRoleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateRoleResponse.
+        r"""Gets the description of this CreateRoleResponse.
 
         描述信息。最大长度为4000个字符。当无描述信息时，则description值为null，当值为null时，响应Body无该参数。
 
@@ -91,7 +91,7 @@ class CreateRoleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRoleResponse.
+        r"""Sets the description of this CreateRoleResponse.
 
         描述信息。最大长度为4000个字符。当无描述信息时，则description值为null，当值为null时，响应Body无该参数。
 
@@ -102,7 +102,7 @@ class CreateRoleResponse(SdkResponse):
 
     @property
     def principal_source(self):
-        """Gets the principal_source of this CreateRoleResponse.
+        r"""Gets the principal_source of this CreateRoleResponse.
 
         主体来源 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户 AGENTTENANT 委托 OTHER 其它
 
@@ -113,7 +113,7 @@ class CreateRoleResponse(SdkResponse):
 
     @principal_source.setter
     def principal_source(self, principal_source):
-        """Sets the principal_source of this CreateRoleResponse.
+        r"""Sets the principal_source of this CreateRoleResponse.
 
         主体来源 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户 AGENTTENANT 委托 OTHER 其它
 

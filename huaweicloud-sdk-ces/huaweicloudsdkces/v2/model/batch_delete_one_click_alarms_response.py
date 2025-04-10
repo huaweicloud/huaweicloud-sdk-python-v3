@@ -26,7 +26,7 @@ class BatchDeleteOneClickAlarmsResponse(SdkResponse):
     }
 
     def __init__(self, one_click_alarm_ids=None):
-        """BatchDeleteOneClickAlarmsResponse
+        r"""BatchDeleteOneClickAlarmsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteOneClickAlarmsResponse(SdkResponse):
 
     @property
     def one_click_alarm_ids(self):
-        """Gets the one_click_alarm_ids of this BatchDeleteOneClickAlarmsResponse.
+        r"""Gets the one_click_alarm_ids of this BatchDeleteOneClickAlarmsResponse.
 
         成功删除的一键告警ID列表
 
@@ -55,7 +55,7 @@ class BatchDeleteOneClickAlarmsResponse(SdkResponse):
 
     @one_click_alarm_ids.setter
     def one_click_alarm_ids(self, one_click_alarm_ids):
-        """Sets the one_click_alarm_ids of this BatchDeleteOneClickAlarmsResponse.
+        r"""Sets the one_click_alarm_ids of this BatchDeleteOneClickAlarmsResponse.
 
         成功删除的一键告警ID列表
 

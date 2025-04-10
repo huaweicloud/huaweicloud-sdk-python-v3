@@ -35,7 +35,7 @@ class ExtendDDoSSet:
     }
 
     def __init__(self, set_id=None, new_connection_limited=None, total_connection_limited=None, http_packet_per_second=None, traffic_per_second=None, packet_per_second=None):
-        """ExtendDDoSSet
+        r"""ExtendDDoSSet
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ExtendDDoSSet:
 
     @property
     def set_id(self):
-        """Gets the set_id of this ExtendDDoSSet.
+        r"""Gets the set_id of this ExtendDDoSSet.
 
         配置分段ID
 
@@ -83,7 +83,7 @@ class ExtendDDoSSet:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this ExtendDDoSSet.
+        r"""Sets the set_id of this ExtendDDoSSet.
 
         配置分段ID
 
@@ -94,7 +94,7 @@ class ExtendDDoSSet:
 
     @property
     def new_connection_limited(self):
-        """Gets the new_connection_limited of this ExtendDDoSSet.
+        r"""Gets the new_connection_limited of this ExtendDDoSSet.
 
         单一源IP新建连接个数
 
@@ -105,7 +105,7 @@ class ExtendDDoSSet:
 
     @new_connection_limited.setter
     def new_connection_limited(self, new_connection_limited):
-        """Sets the new_connection_limited of this ExtendDDoSSet.
+        r"""Sets the new_connection_limited of this ExtendDDoSSet.
 
         单一源IP新建连接个数
 
@@ -116,7 +116,7 @@ class ExtendDDoSSet:
 
     @property
     def total_connection_limited(self):
-        """Gets the total_connection_limited of this ExtendDDoSSet.
+        r"""Gets the total_connection_limited of this ExtendDDoSSet.
 
         单一源IP连接数总个数
 
@@ -127,7 +127,7 @@ class ExtendDDoSSet:
 
     @total_connection_limited.setter
     def total_connection_limited(self, total_connection_limited):
-        """Sets the total_connection_limited of this ExtendDDoSSet.
+        r"""Sets the total_connection_limited of this ExtendDDoSSet.
 
         单一源IP连接数总个数
 
@@ -138,7 +138,7 @@ class ExtendDDoSSet:
 
     @property
     def http_packet_per_second(self):
-        """Gets the http_packet_per_second of this ExtendDDoSSet.
+        r"""Gets the http_packet_per_second of this ExtendDDoSSet.
 
         每秒HTTP请求数（个/s）阈值
 
@@ -149,7 +149,7 @@ class ExtendDDoSSet:
 
     @http_packet_per_second.setter
     def http_packet_per_second(self, http_packet_per_second):
-        """Sets the http_packet_per_second of this ExtendDDoSSet.
+        r"""Sets the http_packet_per_second of this ExtendDDoSSet.
 
         每秒HTTP请求数（个/s）阈值
 
@@ -160,7 +160,7 @@ class ExtendDDoSSet:
 
     @property
     def traffic_per_second(self):
-        """Gets the traffic_per_second of this ExtendDDoSSet.
+        r"""Gets the traffic_per_second of this ExtendDDoSSet.
 
         每秒流量（Mbit/s）阈值
 
@@ -171,7 +171,7 @@ class ExtendDDoSSet:
 
     @traffic_per_second.setter
     def traffic_per_second(self, traffic_per_second):
-        """Sets the traffic_per_second of this ExtendDDoSSet.
+        r"""Sets the traffic_per_second of this ExtendDDoSSet.
 
         每秒流量（Mbit/s）阈值
 
@@ -182,7 +182,7 @@ class ExtendDDoSSet:
 
     @property
     def packet_per_second(self):
-        """Gets the packet_per_second of this ExtendDDoSSet.
+        r"""Gets the packet_per_second of this ExtendDDoSSet.
 
         每秒报文数（个/s）阈值
 
@@ -193,7 +193,7 @@ class ExtendDDoSSet:
 
     @packet_per_second.setter
     def packet_per_second(self, packet_per_second):
-        """Sets the packet_per_second of this ExtendDDoSSet.
+        r"""Sets the packet_per_second of this ExtendDDoSSet.
 
         每秒报文数（个/s）阈值
 

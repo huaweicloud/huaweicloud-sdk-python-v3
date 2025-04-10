@@ -39,7 +39,7 @@ class ListRemuxTaskRequest:
     }
 
     def __init__(self, task_id=None, status=None, start_time=None, end_time=None, input_bucket=None, input_object=None, page=None, size=None):
-        """ListRemuxTaskRequest
+        r"""ListRemuxTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListRemuxTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListRemuxTaskRequest.
+        r"""Gets the task_id of this ListRemuxTaskRequest.
 
         任务ID。一次最多10个 
 
@@ -103,7 +103,7 @@ class ListRemuxTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListRemuxTaskRequest.
+        r"""Sets the task_id of this ListRemuxTaskRequest.
 
         任务ID。一次最多10个 
 
@@ -114,7 +114,7 @@ class ListRemuxTaskRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListRemuxTaskRequest.
+        r"""Gets the status of this ListRemuxTaskRequest.
 
         任务执行状态。  取值如下： - INIT：初始状态 - WAITING：等待启动 - PROCESSING：处理中 - SUCCEED：处理成功 - FAILED：处理失败 - CANCELED：已取消 
 
@@ -125,7 +125,7 @@ class ListRemuxTaskRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListRemuxTaskRequest.
+        r"""Sets the status of this ListRemuxTaskRequest.
 
         任务执行状态。  取值如下： - INIT：初始状态 - WAITING：等待启动 - PROCESSING：处理中 - SUCCEED：处理成功 - FAILED：处理失败 - CANCELED：已取消 
 
@@ -136,7 +136,7 @@ class ListRemuxTaskRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListRemuxTaskRequest.
+        r"""Gets the start_time of this ListRemuxTaskRequest.
 
         起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
@@ -147,7 +147,7 @@ class ListRemuxTaskRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListRemuxTaskRequest.
+        r"""Sets the start_time of this ListRemuxTaskRequest.
 
         起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
@@ -158,7 +158,7 @@ class ListRemuxTaskRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListRemuxTaskRequest.
+        r"""Gets the end_time of this ListRemuxTaskRequest.
 
         结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
@@ -169,7 +169,7 @@ class ListRemuxTaskRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListRemuxTaskRequest.
+        r"""Sets the end_time of this ListRemuxTaskRequest.
 
         结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
@@ -180,7 +180,7 @@ class ListRemuxTaskRequest:
 
     @property
     def input_bucket(self):
-        """Gets the input_bucket of this ListRemuxTaskRequest.
+        r"""Gets the input_bucket of this ListRemuxTaskRequest.
 
         源文件存储桶。 
 
@@ -191,7 +191,7 @@ class ListRemuxTaskRequest:
 
     @input_bucket.setter
     def input_bucket(self, input_bucket):
-        """Sets the input_bucket of this ListRemuxTaskRequest.
+        r"""Sets the input_bucket of this ListRemuxTaskRequest.
 
         源文件存储桶。 
 
@@ -202,7 +202,7 @@ class ListRemuxTaskRequest:
 
     @property
     def input_object(self):
-        """Gets the input_object of this ListRemuxTaskRequest.
+        r"""Gets the input_object of this ListRemuxTaskRequest.
 
         源对象名称. 
 
@@ -213,7 +213,7 @@ class ListRemuxTaskRequest:
 
     @input_object.setter
     def input_object(self, input_object):
-        """Sets the input_object of this ListRemuxTaskRequest.
+        r"""Sets the input_object of this ListRemuxTaskRequest.
 
         源对象名称. 
 
@@ -224,7 +224,7 @@ class ListRemuxTaskRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListRemuxTaskRequest.
+        r"""Gets the page of this ListRemuxTaskRequest.
 
         分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
@@ -235,7 +235,7 @@ class ListRemuxTaskRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListRemuxTaskRequest.
+        r"""Sets the page of this ListRemuxTaskRequest.
 
         分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
@@ -246,7 +246,7 @@ class ListRemuxTaskRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListRemuxTaskRequest.
+        r"""Gets the size of this ListRemuxTaskRequest.
 
         每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 
@@ -257,7 +257,7 @@ class ListRemuxTaskRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListRemuxTaskRequest.
+        r"""Sets the size of this ListRemuxTaskRequest.
 
         每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 

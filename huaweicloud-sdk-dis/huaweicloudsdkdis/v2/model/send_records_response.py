@@ -28,7 +28,7 @@ class SendRecordsResponse(SdkResponse):
     }
 
     def __init__(self, failed_record_count=None, records=None):
-        """SendRecordsResponse
+        r"""SendRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SendRecordsResponse(SdkResponse):
 
     @property
     def failed_record_count(self):
-        """Gets the failed_record_count of this SendRecordsResponse.
+        r"""Gets the failed_record_count of this SendRecordsResponse.
 
         上传失败的数据数量。
 
@@ -62,7 +62,7 @@ class SendRecordsResponse(SdkResponse):
 
     @failed_record_count.setter
     def failed_record_count(self, failed_record_count):
-        """Sets the failed_record_count of this SendRecordsResponse.
+        r"""Sets the failed_record_count of this SendRecordsResponse.
 
         上传失败的数据数量。
 
@@ -73,7 +73,7 @@ class SendRecordsResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this SendRecordsResponse.
+        r"""Gets the records of this SendRecordsResponse.
 
         上传结果列表。
 
@@ -84,7 +84,7 @@ class SendRecordsResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this SendRecordsResponse.
+        r"""Sets the records of this SendRecordsResponse.
 
         上传结果列表。
 

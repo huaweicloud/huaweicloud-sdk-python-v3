@@ -27,7 +27,7 @@ class NoSqlRequestEpsQuota:
     }
 
     def __init__(self, enterprise_project_id=None, quota=None):
-        """NoSqlRequestEpsQuota
+        r"""NoSqlRequestEpsQuota
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NoSqlRequestEpsQuota:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this NoSqlRequestEpsQuota.
+        r"""Gets the enterprise_project_id of this NoSqlRequestEpsQuota.
 
         企业项目ID。
 
@@ -59,7 +59,7 @@ class NoSqlRequestEpsQuota:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this NoSqlRequestEpsQuota.
+        r"""Sets the enterprise_project_id of this NoSqlRequestEpsQuota.
 
         企业项目ID。
 
@@ -70,7 +70,7 @@ class NoSqlRequestEpsQuota:
 
     @property
     def quota(self):
-        """Gets the quota of this NoSqlRequestEpsQuota.
+        r"""Gets the quota of this NoSqlRequestEpsQuota.
 
         :return: The quota of this NoSqlRequestEpsQuota.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuotaRequestInfo`
@@ -79,7 +79,7 @@ class NoSqlRequestEpsQuota:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this NoSqlRequestEpsQuota.
+        r"""Sets the quota of this NoSqlRequestEpsQuota.
 
         :param quota: The quota of this NoSqlRequestEpsQuota.
         :type quota: :class:`huaweicloudsdkgaussdbfornosql.v3.NoSqlEpsQuotaRequestInfo`

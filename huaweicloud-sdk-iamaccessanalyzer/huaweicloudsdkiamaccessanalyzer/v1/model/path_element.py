@@ -31,7 +31,7 @@ class PathElement:
     }
 
     def __init__(self, index=None, key=None, substring=None, value=None):
-        """PathElement
+        r"""PathElement
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PathElement:
 
     @property
     def index(self):
-        """Gets the index of this PathElement.
+        r"""Gets the index of this PathElement.
 
         数组中的索引，从0开始。
 
@@ -75,7 +75,7 @@ class PathElement:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this PathElement.
+        r"""Sets the index of this PathElement.
 
         数组中的索引，从0开始。
 
@@ -86,7 +86,7 @@ class PathElement:
 
     @property
     def key(self):
-        """Gets the key of this PathElement.
+        r"""Gets the key of this PathElement.
 
         对象中的键。
 
@@ -97,7 +97,7 @@ class PathElement:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this PathElement.
+        r"""Sets the key of this PathElement.
 
         对象中的键。
 
@@ -108,7 +108,7 @@ class PathElement:
 
     @property
     def substring(self):
-        """Gets the substring of this PathElement.
+        r"""Gets the substring of this PathElement.
 
         :return: The substring of this PathElement.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.Substring`
@@ -117,7 +117,7 @@ class PathElement:
 
     @substring.setter
     def substring(self, substring):
-        """Sets the substring of this PathElement.
+        r"""Sets the substring of this PathElement.
 
         :param substring: The substring of this PathElement.
         :type substring: :class:`huaweicloudsdkiamaccessanalyzer.v1.Substring`
@@ -126,7 +126,7 @@ class PathElement:
 
     @property
     def value(self):
-        """Gets the value of this PathElement.
+        r"""Gets the value of this PathElement.
 
         与对象中给定键关联的值。
 
@@ -137,7 +137,7 @@ class PathElement:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PathElement.
+        r"""Sets the value of this PathElement.
 
         与对象中给定键关联的值。
 

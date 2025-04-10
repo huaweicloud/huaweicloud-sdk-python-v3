@@ -25,7 +25,7 @@ class DeleteVirtualInterfaceRequest:
     }
 
     def __init__(self, virtual_interface_id=None):
-        """DeleteVirtualInterfaceRequest
+        r"""DeleteVirtualInterfaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteVirtualInterfaceRequest:
 
     @property
     def virtual_interface_id(self):
-        """Gets the virtual_interface_id of this DeleteVirtualInterfaceRequest.
+        r"""Gets the virtual_interface_id of this DeleteVirtualInterfaceRequest.
 
         虚拟接口ID。
 
@@ -53,7 +53,7 @@ class DeleteVirtualInterfaceRequest:
 
     @virtual_interface_id.setter
     def virtual_interface_id(self, virtual_interface_id):
-        """Sets the virtual_interface_id of this DeleteVirtualInterfaceRequest.
+        r"""Sets the virtual_interface_id of this DeleteVirtualInterfaceRequest.
 
         虚拟接口ID。
 

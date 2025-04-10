@@ -25,7 +25,7 @@ class UpdatePubInfoResponseModelData:
     }
 
     def __init__(self, pub_update_log_id=None):
-        """UpdatePubInfoResponseModelData
+        r"""UpdatePubInfoResponseModelData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdatePubInfoResponseModelData:
 
     @property
     def pub_update_log_id(self):
-        """Gets the pub_update_log_id of this UpdatePubInfoResponseModelData.
+        r"""Gets the pub_update_log_id of this UpdatePubInfoResponseModelData.
 
         服务号更新记录ID。
 
@@ -54,7 +54,7 @@ class UpdatePubInfoResponseModelData:
 
     @pub_update_log_id.setter
     def pub_update_log_id(self, pub_update_log_id):
-        """Sets the pub_update_log_id of this UpdatePubInfoResponseModelData.
+        r"""Sets the pub_update_log_id of this UpdatePubInfoResponseModelData.
 
         服务号更新记录ID。
 

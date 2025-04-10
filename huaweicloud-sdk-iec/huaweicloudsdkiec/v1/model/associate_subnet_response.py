@@ -26,7 +26,7 @@ class AssociateSubnetResponse(SdkResponse):
     }
 
     def __init__(self, routetable=None):
-        """AssociateSubnetResponse
+        r"""AssociateSubnetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AssociateSubnetResponse(SdkResponse):
 
     @property
     def routetable(self):
-        """Gets the routetable of this AssociateSubnetResponse.
+        r"""Gets the routetable of this AssociateSubnetResponse.
 
         :return: The routetable of this AssociateSubnetResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.Routetable`
@@ -53,7 +53,7 @@ class AssociateSubnetResponse(SdkResponse):
 
     @routetable.setter
     def routetable(self, routetable):
-        """Sets the routetable of this AssociateSubnetResponse.
+        r"""Sets the routetable of this AssociateSubnetResponse.
 
         :param routetable: The routetable of this AssociateSubnetResponse.
         :type routetable: :class:`huaweicloudsdkiec.v1.Routetable`

@@ -43,7 +43,7 @@ class ConfigTemplatesListInfo:
     }
 
     def __init__(self, template_id=None, cache_mode=None, description=None, engine=None, engine_version=None, name=None, product_type=None, storage_type=None, type=None, created_at=None):
-        """ConfigTemplatesListInfo
+        r"""ConfigTemplatesListInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ConfigTemplatesListInfo:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ConfigTemplatesListInfo.
+        r"""Gets the template_id of this ConfigTemplatesListInfo.
 
         模板ID
 
@@ -117,7 +117,7 @@ class ConfigTemplatesListInfo:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ConfigTemplatesListInfo.
+        r"""Sets the template_id of this ConfigTemplatesListInfo.
 
         模板ID
 
@@ -128,7 +128,7 @@ class ConfigTemplatesListInfo:
 
     @property
     def cache_mode(self):
-        """Gets the cache_mode of this ConfigTemplatesListInfo.
+        r"""Gets the cache_mode of this ConfigTemplatesListInfo.
 
         缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 [- ha_rw_split： 表示读写分离实例](tag:hws) 
 
@@ -139,7 +139,7 @@ class ConfigTemplatesListInfo:
 
     @cache_mode.setter
     def cache_mode(self, cache_mode):
-        """Sets the cache_mode of this ConfigTemplatesListInfo.
+        r"""Sets the cache_mode of this ConfigTemplatesListInfo.
 
         缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 [- ha_rw_split： 表示读写分离实例](tag:hws) 
 
@@ -150,7 +150,7 @@ class ConfigTemplatesListInfo:
 
     @property
     def description(self):
-        """Gets the description of this ConfigTemplatesListInfo.
+        r"""Gets the description of this ConfigTemplatesListInfo.
 
         模板的描述信息
 
@@ -161,7 +161,7 @@ class ConfigTemplatesListInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConfigTemplatesListInfo.
+        r"""Sets the description of this ConfigTemplatesListInfo.
 
         模板的描述信息
 
@@ -172,7 +172,7 @@ class ConfigTemplatesListInfo:
 
     @property
     def engine(self):
-        """Gets the engine of this ConfigTemplatesListInfo.
+        r"""Gets the engine of this ConfigTemplatesListInfo.
 
         缓存引擎：Redis[和Memcached](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc)。
 
@@ -183,7 +183,7 @@ class ConfigTemplatesListInfo:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ConfigTemplatesListInfo.
+        r"""Sets the engine of this ConfigTemplatesListInfo.
 
         缓存引擎：Redis[和Memcached](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc)。
 
@@ -194,7 +194,7 @@ class ConfigTemplatesListInfo:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this ConfigTemplatesListInfo.
+        r"""Gets the engine_version of this ConfigTemplatesListInfo.
 
         缓存版本。  当缓存引擎为Redis时，取值为4.0或5.0。  [当缓存引擎为Memcached时，该字段为可选，取值为空。](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc) 
 
@@ -205,7 +205,7 @@ class ConfigTemplatesListInfo:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this ConfigTemplatesListInfo.
+        r"""Sets the engine_version of this ConfigTemplatesListInfo.
 
         缓存版本。  当缓存引擎为Redis时，取值为4.0或5.0。  [当缓存引擎为Memcached时，该字段为可选，取值为空。](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc) 
 
@@ -216,7 +216,7 @@ class ConfigTemplatesListInfo:
 
     @property
     def name(self):
-        """Gets the name of this ConfigTemplatesListInfo.
+        r"""Gets the name of this ConfigTemplatesListInfo.
 
         模板名称
 
@@ -227,7 +227,7 @@ class ConfigTemplatesListInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigTemplatesListInfo.
+        r"""Sets the name of this ConfigTemplatesListInfo.
 
         模板名称
 
@@ -238,7 +238,7 @@ class ConfigTemplatesListInfo:
 
     @property
     def product_type(self):
-        """Gets the product_type of this ConfigTemplatesListInfo.
+        r"""Gets the product_type of this ConfigTemplatesListInfo.
 
         产品类型。 取值范围如下： - generic：普通版 - enterprise：企业版 
 
@@ -249,7 +249,7 @@ class ConfigTemplatesListInfo:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this ConfigTemplatesListInfo.
+        r"""Sets the product_type of this ConfigTemplatesListInfo.
 
         产品类型。 取值范围如下： - generic：普通版 - enterprise：企业版 
 
@@ -260,7 +260,7 @@ class ConfigTemplatesListInfo:
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this ConfigTemplatesListInfo.
+        r"""Gets the storage_type of this ConfigTemplatesListInfo.
 
         存储类型。 取值范围如下： - DRAM - SSD 
 
@@ -271,7 +271,7 @@ class ConfigTemplatesListInfo:
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this ConfigTemplatesListInfo.
+        r"""Sets the storage_type of this ConfigTemplatesListInfo.
 
         存储类型。 取值范围如下： - DRAM - SSD 
 
@@ -282,7 +282,7 @@ class ConfigTemplatesListInfo:
 
     @property
     def type(self):
-        """Gets the type of this ConfigTemplatesListInfo.
+        r"""Gets the type of this ConfigTemplatesListInfo.
 
         模板类型
 
@@ -293,7 +293,7 @@ class ConfigTemplatesListInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConfigTemplatesListInfo.
+        r"""Sets the type of this ConfigTemplatesListInfo.
 
         模板类型
 
@@ -304,7 +304,7 @@ class ConfigTemplatesListInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ConfigTemplatesListInfo.
+        r"""Gets the created_at of this ConfigTemplatesListInfo.
 
         模板创建时间，仅在自定义参数模板中有意义，格式例如：2023-05-10T11:09:35.802Z
 
@@ -315,7 +315,7 @@ class ConfigTemplatesListInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ConfigTemplatesListInfo.
+        r"""Sets the created_at of this ConfigTemplatesListInfo.
 
         模板创建时间，仅在自定义参数模板中有意义，格式例如：2023-05-10T11:09:35.802Z
 

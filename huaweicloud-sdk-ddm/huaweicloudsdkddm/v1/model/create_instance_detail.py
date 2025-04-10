@@ -49,7 +49,7 @@ class CreateInstanceDetail:
     }
 
     def __init__(self, name=None, flavor_id=None, node_num=None, engine_id=None, enterprise_project_id=None, available_zones=None, vpc_id=None, security_group_id=None, subnet_id=None, param_group_id=None, time_zone=None, admin_user_name=None, admin_user_password=None):
-        """CreateInstanceDetail
+        r"""CreateInstanceDetail
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class CreateInstanceDetail:
 
     @property
     def name(self):
-        """Gets the name of this CreateInstanceDetail.
+        r"""Gets the name of this CreateInstanceDetail.
 
         DDM实例名称，命名要求如下。 - 长度为4-64个字符。 - 必须以字母开头。 - 可以包含字母、数字、中划线，不能包含其它特殊字符。
 
@@ -130,7 +130,7 @@ class CreateInstanceDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateInstanceDetail.
+        r"""Sets the name of this CreateInstanceDetail.
 
         DDM实例名称，命名要求如下。 - 长度为4-64个字符。 - 必须以字母开头。 - 可以包含字母、数字、中划线，不能包含其它特殊字符。
 
@@ -141,7 +141,7 @@ class CreateInstanceDetail:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this CreateInstanceDetail.
+        r"""Gets the flavor_id of this CreateInstanceDetail.
 
         规格ID。
 
@@ -152,7 +152,7 @@ class CreateInstanceDetail:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this CreateInstanceDetail.
+        r"""Sets the flavor_id of this CreateInstanceDetail.
 
         规格ID。
 
@@ -163,7 +163,7 @@ class CreateInstanceDetail:
 
     @property
     def node_num(self):
-        """Gets the node_num of this CreateInstanceDetail.
+        r"""Gets the node_num of this CreateInstanceDetail.
 
         节点个数。
 
@@ -174,7 +174,7 @@ class CreateInstanceDetail:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this CreateInstanceDetail.
+        r"""Sets the node_num of this CreateInstanceDetail.
 
         节点个数。
 
@@ -185,7 +185,7 @@ class CreateInstanceDetail:
 
     @property
     def engine_id(self):
-        """Gets the engine_id of this CreateInstanceDetail.
+        r"""Gets the engine_id of this CreateInstanceDetail.
 
         引擎ID。
 
@@ -196,7 +196,7 @@ class CreateInstanceDetail:
 
     @engine_id.setter
     def engine_id(self, engine_id):
-        """Sets the engine_id of this CreateInstanceDetail.
+        r"""Sets the engine_id of this CreateInstanceDetail.
 
         引擎ID。
 
@@ -207,7 +207,7 @@ class CreateInstanceDetail:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateInstanceDetail.
+        r"""Gets the enterprise_project_id of this CreateInstanceDetail.
 
         企业项目ID。
 
@@ -218,7 +218,7 @@ class CreateInstanceDetail:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateInstanceDetail.
+        r"""Sets the enterprise_project_id of this CreateInstanceDetail.
 
         企业项目ID。
 
@@ -229,7 +229,7 @@ class CreateInstanceDetail:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this CreateInstanceDetail.
+        r"""Gets the available_zones of this CreateInstanceDetail.
 
         可用区code。取值非空，请参见地区和终端节点(https://developer.huaweicloud.com/endpoint?DDM)。
 
@@ -240,7 +240,7 @@ class CreateInstanceDetail:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this CreateInstanceDetail.
+        r"""Sets the available_zones of this CreateInstanceDetail.
 
         可用区code。取值非空，请参见地区和终端节点(https://developer.huaweicloud.com/endpoint?DDM)。
 
@@ -251,7 +251,7 @@ class CreateInstanceDetail:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateInstanceDetail.
+        r"""Gets the vpc_id of this CreateInstanceDetail.
 
         虚拟私有云的ID。
 
@@ -262,7 +262,7 @@ class CreateInstanceDetail:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateInstanceDetail.
+        r"""Sets the vpc_id of this CreateInstanceDetail.
 
         虚拟私有云的ID。
 
@@ -273,7 +273,7 @@ class CreateInstanceDetail:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CreateInstanceDetail.
+        r"""Gets the security_group_id of this CreateInstanceDetail.
 
         安全组ID。
 
@@ -284,7 +284,7 @@ class CreateInstanceDetail:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreateInstanceDetail.
+        r"""Sets the security_group_id of this CreateInstanceDetail.
 
         安全组ID。
 
@@ -295,7 +295,7 @@ class CreateInstanceDetail:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateInstanceDetail.
+        r"""Gets the subnet_id of this CreateInstanceDetail.
 
         子网ID。
 
@@ -306,7 +306,7 @@ class CreateInstanceDetail:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateInstanceDetail.
+        r"""Sets the subnet_id of this CreateInstanceDetail.
 
         子网ID。
 
@@ -317,7 +317,7 @@ class CreateInstanceDetail:
 
     @property
     def param_group_id(self):
-        """Gets the param_group_id of this CreateInstanceDetail.
+        r"""Gets the param_group_id of this CreateInstanceDetail.
 
         参数组ID.
 
@@ -328,7 +328,7 @@ class CreateInstanceDetail:
 
     @param_group_id.setter
     def param_group_id(self, param_group_id):
-        """Sets the param_group_id of this CreateInstanceDetail.
+        r"""Sets the param_group_id of this CreateInstanceDetail.
 
         参数组ID.
 
@@ -339,7 +339,7 @@ class CreateInstanceDetail:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this CreateInstanceDetail.
+        r"""Gets the time_zone of this CreateInstanceDetail.
 
         UTC时区。默认为UTC。取值范围：\"UTC\",\"UTC-12:00\",\"UTC-11:00\",\"UTC-10:00\",\"UTC-09:00\", \"UTC-08:00\", \"UTC-07:00\", \"UTC-06:00\", \"UTC-05:00\", \"UTC-04:00\", \"UTC-03:00\", \"UTC-02:00\", \"UTC-01:00\", \"UTC+01:00\", \"UTC+02:00\", \"UTC+03:00\", \"UTC+04:00\", \"UTC+05:00\", \"UTC+06:00\", \"UTC+07:00\", \"UTC+08:00\", \"UTC+09:00\", \"UTC+10:00\", \"UTC+11:00\", \"UTC+12:00\"
 
@@ -350,7 +350,7 @@ class CreateInstanceDetail:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this CreateInstanceDetail.
+        r"""Sets the time_zone of this CreateInstanceDetail.
 
         UTC时区。默认为UTC。取值范围：\"UTC\",\"UTC-12:00\",\"UTC-11:00\",\"UTC-10:00\",\"UTC-09:00\", \"UTC-08:00\", \"UTC-07:00\", \"UTC-06:00\", \"UTC-05:00\", \"UTC-04:00\", \"UTC-03:00\", \"UTC-02:00\", \"UTC-01:00\", \"UTC+01:00\", \"UTC+02:00\", \"UTC+03:00\", \"UTC+04:00\", \"UTC+05:00\", \"UTC+06:00\", \"UTC+07:00\", \"UTC+08:00\", \"UTC+09:00\", \"UTC+10:00\", \"UTC+11:00\", \"UTC+12:00\"
 
@@ -361,7 +361,7 @@ class CreateInstanceDetail:
 
     @property
     def admin_user_name(self):
-        """Gets the admin_user_name of this CreateInstanceDetail.
+        r"""Gets the admin_user_name of this CreateInstanceDetail.
 
         管理员账号用户名。 - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
 
@@ -372,7 +372,7 @@ class CreateInstanceDetail:
 
     @admin_user_name.setter
     def admin_user_name(self, admin_user_name):
-        """Sets the admin_user_name of this CreateInstanceDetail.
+        r"""Sets the admin_user_name of this CreateInstanceDetail.
 
         管理员账号用户名。 - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
 
@@ -383,7 +383,7 @@ class CreateInstanceDetail:
 
     @property
     def admin_user_password(self):
-        """Gets the admin_user_password of this CreateInstanceDetail.
+        r"""Gets the admin_user_password of this CreateInstanceDetail.
 
         管理员账号密码。 - 长度为8~32位。 - 必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -394,7 +394,7 @@ class CreateInstanceDetail:
 
     @admin_user_password.setter
     def admin_user_password(self, admin_user_password):
-        """Sets the admin_user_password of this CreateInstanceDetail.
+        r"""Sets the admin_user_password of this CreateInstanceDetail.
 
         管理员账号密码。 - 长度为8~32位。 - 必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 

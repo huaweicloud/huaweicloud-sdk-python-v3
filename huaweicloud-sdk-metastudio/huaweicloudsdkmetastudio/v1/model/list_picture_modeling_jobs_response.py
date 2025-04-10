@@ -30,7 +30,7 @@ class ListPictureModelingJobsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, picture_modeling_jobs=None, x_request_id=None):
-        """ListPictureModelingJobsResponse
+        r"""ListPictureModelingJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPictureModelingJobsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListPictureModelingJobsResponse.
+        r"""Gets the count of this ListPictureModelingJobsResponse.
 
         照片建模任务总数。
 
@@ -69,7 +69,7 @@ class ListPictureModelingJobsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListPictureModelingJobsResponse.
+        r"""Sets the count of this ListPictureModelingJobsResponse.
 
         照片建模任务总数。
 
@@ -80,7 +80,7 @@ class ListPictureModelingJobsResponse(SdkResponse):
 
     @property
     def picture_modeling_jobs(self):
-        """Gets the picture_modeling_jobs of this ListPictureModelingJobsResponse.
+        r"""Gets the picture_modeling_jobs of this ListPictureModelingJobsResponse.
 
         照片建模任务列表。
 
@@ -91,7 +91,7 @@ class ListPictureModelingJobsResponse(SdkResponse):
 
     @picture_modeling_jobs.setter
     def picture_modeling_jobs(self, picture_modeling_jobs):
-        """Sets the picture_modeling_jobs of this ListPictureModelingJobsResponse.
+        r"""Sets the picture_modeling_jobs of this ListPictureModelingJobsResponse.
 
         照片建模任务列表。
 
@@ -102,7 +102,7 @@ class ListPictureModelingJobsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListPictureModelingJobsResponse.
+        r"""Gets the x_request_id of this ListPictureModelingJobsResponse.
 
         :return: The x_request_id of this ListPictureModelingJobsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListPictureModelingJobsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListPictureModelingJobsResponse.
+        r"""Sets the x_request_id of this ListPictureModelingJobsResponse.
 
         :param x_request_id: The x_request_id of this ListPictureModelingJobsResponse.
         :type x_request_id: str

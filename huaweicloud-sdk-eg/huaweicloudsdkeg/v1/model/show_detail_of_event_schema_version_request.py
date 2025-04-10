@@ -27,7 +27,7 @@ class ShowDetailOfEventSchemaVersionRequest:
     }
 
     def __init__(self, schema_id=None, version=None):
-        """ShowDetailOfEventSchemaVersionRequest
+        r"""ShowDetailOfEventSchemaVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDetailOfEventSchemaVersionRequest:
 
     @property
     def schema_id(self):
-        """Gets the schema_id of this ShowDetailOfEventSchemaVersionRequest.
+        r"""Gets the schema_id of this ShowDetailOfEventSchemaVersionRequest.
 
         指定查询的事件模型ID
 
@@ -59,7 +59,7 @@ class ShowDetailOfEventSchemaVersionRequest:
 
     @schema_id.setter
     def schema_id(self, schema_id):
-        """Sets the schema_id of this ShowDetailOfEventSchemaVersionRequest.
+        r"""Sets the schema_id of this ShowDetailOfEventSchemaVersionRequest.
 
         指定查询的事件模型ID
 
@@ -70,7 +70,7 @@ class ShowDetailOfEventSchemaVersionRequest:
 
     @property
     def version(self):
-        """Gets the version of this ShowDetailOfEventSchemaVersionRequest.
+        r"""Gets the version of this ShowDetailOfEventSchemaVersionRequest.
 
         指定查询的事件模型版本号
 
@@ -81,7 +81,7 @@ class ShowDetailOfEventSchemaVersionRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowDetailOfEventSchemaVersionRequest.
+        r"""Sets the version of this ShowDetailOfEventSchemaVersionRequest.
 
         指定查询的事件模型版本号
 

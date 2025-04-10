@@ -27,7 +27,7 @@ class NodeTypeAvailableZones:
     }
 
     def __init__(self, code=None, status=None):
-        """NodeTypeAvailableZones
+        r"""NodeTypeAvailableZones
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NodeTypeAvailableZones:
 
     @property
     def code(self):
-        """Gets the code of this NodeTypeAvailableZones.
+        r"""Gets the code of this NodeTypeAvailableZones.
 
         可用区ID。
 
@@ -59,7 +59,7 @@ class NodeTypeAvailableZones:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this NodeTypeAvailableZones.
+        r"""Sets the code of this NodeTypeAvailableZones.
 
         可用区ID。
 
@@ -70,7 +70,7 @@ class NodeTypeAvailableZones:
 
     @property
     def status(self):
-        """Gets the status of this NodeTypeAvailableZones.
+        r"""Gets the status of this NodeTypeAvailableZones.
 
         节点类型可用状态。 - normal：可用 - sellout：售罄 - abandon：不可用
 
@@ -81,7 +81,7 @@ class NodeTypeAvailableZones:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NodeTypeAvailableZones.
+        r"""Sets the status of this NodeTypeAvailableZones.
 
         节点类型可用状态。 - normal：可用 - sellout：售罄 - abandon：不可用
 

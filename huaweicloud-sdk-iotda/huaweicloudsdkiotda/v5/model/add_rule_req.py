@@ -37,7 +37,7 @@ class AddRuleReq:
     }
 
     def __init__(self, rule_name=None, description=None, subject=None, app_type=None, app_id=None, select=None, where=None):
-        """AddRuleReq
+        r"""AddRuleReq
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class AddRuleReq:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this AddRuleReq.
+        r"""Gets the rule_name of this AddRuleReq.
 
         **参数说明**：规则名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
@@ -95,7 +95,7 @@ class AddRuleReq:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this AddRuleReq.
+        r"""Sets the rule_name of this AddRuleReq.
 
         **参数说明**：规则名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
@@ -106,7 +106,7 @@ class AddRuleReq:
 
     @property
     def description(self):
-        """Gets the description of this AddRuleReq.
+        r"""Gets the description of this AddRuleReq.
 
         **参数说明**：用户自定义的规则描述。
 
@@ -117,7 +117,7 @@ class AddRuleReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddRuleReq.
+        r"""Sets the description of this AddRuleReq.
 
         **参数说明**：用户自定义的规则描述。
 
@@ -128,7 +128,7 @@ class AddRuleReq:
 
     @property
     def subject(self):
-        """Gets the subject of this AddRuleReq.
+        r"""Gets the subject of this AddRuleReq.
 
         :return: The subject of this AddRuleReq.
         :rtype: :class:`huaweicloudsdkiotda.v5.RoutingRuleSubject`
@@ -137,7 +137,7 @@ class AddRuleReq:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this AddRuleReq.
+        r"""Sets the subject of this AddRuleReq.
 
         :param subject: The subject of this AddRuleReq.
         :type subject: :class:`huaweicloudsdkiotda.v5.RoutingRuleSubject`
@@ -146,7 +146,7 @@ class AddRuleReq:
 
     @property
     def app_type(self):
-        """Gets the app_type of this AddRuleReq.
+        r"""Gets the app_type of this AddRuleReq.
 
         **参数说明**：租户规则的生效范围，默认GLOBAL，。 **取值范围**： - GLOBAL：生效范围为租户级。 - APP：生效范围为资源空间级。如果类型为APP，创建的规则生效范围为携带的app_id指定的资源空间，不携带app_id则创建规则生效范围为[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)。
 
@@ -157,7 +157,7 @@ class AddRuleReq:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this AddRuleReq.
+        r"""Sets the app_type of this AddRuleReq.
 
         **参数说明**：租户规则的生效范围，默认GLOBAL，。 **取值范围**： - GLOBAL：生效范围为租户级。 - APP：生效范围为资源空间级。如果类型为APP，创建的规则生效范围为携带的app_id指定的资源空间，不携带app_id则创建规则生效范围为[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)。
 
@@ -168,7 +168,7 @@ class AddRuleReq:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AddRuleReq.
+        r"""Gets the app_id of this AddRuleReq.
 
         **参数说明**：资源空间ID。。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -179,7 +179,7 @@ class AddRuleReq:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AddRuleReq.
+        r"""Sets the app_id of this AddRuleReq.
 
         **参数说明**：资源空间ID。。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -190,7 +190,7 @@ class AddRuleReq:
 
     @property
     def select(self):
-        """Gets the select of this AddRuleReq.
+        r"""Gets the select of this AddRuleReq.
 
         **参数说明**：用户自定义sql select语句，最大长度2500，该参数仅供标准版和企业版用户使用。可填参数可参考帮助文档数据下各接口的请求参数，如notify_data.body。
 
@@ -201,7 +201,7 @@ class AddRuleReq:
 
     @select.setter
     def select(self, select):
-        """Sets the select of this AddRuleReq.
+        r"""Sets the select of this AddRuleReq.
 
         **参数说明**：用户自定义sql select语句，最大长度2500，该参数仅供标准版和企业版用户使用。可填参数可参考帮助文档数据下各接口的请求参数，如notify_data.body。
 
@@ -212,7 +212,7 @@ class AddRuleReq:
 
     @property
     def where(self):
-        """Gets the where of this AddRuleReq.
+        r"""Gets the where of this AddRuleReq.
 
         **参数说明**：用户自定义sql where语句，最大长度2500，该参数仅供标准版和企业版用户使用可填参数可参考帮助文档数据下各接口的请求参数，如notify_data.body。
 
@@ -223,7 +223,7 @@ class AddRuleReq:
 
     @where.setter
     def where(self, where):
-        """Sets the where of this AddRuleReq.
+        r"""Sets the where of this AddRuleReq.
 
         **参数说明**：用户自定义sql where语句，最大长度2500，该参数仅供标准版和企业版用户使用可填参数可参考帮助文档数据下各接口的请求参数，如notify_data.body。
 

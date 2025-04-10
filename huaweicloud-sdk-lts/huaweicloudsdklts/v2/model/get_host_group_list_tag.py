@@ -27,7 +27,7 @@ class GetHostGroupListTag:
     }
 
     def __init__(self, tag_type=None, tag_list=None):
-        """GetHostGroupListTag
+        r"""GetHostGroupListTag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class GetHostGroupListTag:
 
     @property
     def tag_type(self):
-        """Gets the tag_type of this GetHostGroupListTag.
+        r"""Gets the tag_type of this GetHostGroupListTag.
 
         标签类型。AND：标签过滤的逻辑为与，OR：标签过滤的逻辑为或
 
@@ -61,7 +61,7 @@ class GetHostGroupListTag:
 
     @tag_type.setter
     def tag_type(self, tag_type):
-        """Sets the tag_type of this GetHostGroupListTag.
+        r"""Sets the tag_type of this GetHostGroupListTag.
 
         标签类型。AND：标签过滤的逻辑为与，OR：标签过滤的逻辑为或
 
@@ -72,7 +72,7 @@ class GetHostGroupListTag:
 
     @property
     def tag_list(self):
-        """Gets the tag_list of this GetHostGroupListTag.
+        r"""Gets the tag_list of this GetHostGroupListTag.
 
         主机组标签
 
@@ -83,7 +83,7 @@ class GetHostGroupListTag:
 
     @tag_list.setter
     def tag_list(self, tag_list):
-        """Sets the tag_list of this GetHostGroupListTag.
+        r"""Sets the tag_list of this GetHostGroupListTag.
 
         主机组标签
 

@@ -29,7 +29,7 @@ class UpdateFirewallOption:
     }
 
     def __init__(self, name=None, description=None, admin_state_up=None):
-        """UpdateFirewallOption
+        r"""UpdateFirewallOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateFirewallOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateFirewallOption.
+        r"""Gets the name of this UpdateFirewallOption.
 
         功能说明：ACL名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -68,7 +68,7 @@ class UpdateFirewallOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateFirewallOption.
+        r"""Sets the name of this UpdateFirewallOption.
 
         功能说明：ACL名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -79,7 +79,7 @@ class UpdateFirewallOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateFirewallOption.
+        r"""Gets the description of this UpdateFirewallOption.
 
         功能说明：ACL描述信息 取值范围：0-255个字符 约束：不能包含“<”和“>”
 
@@ -90,7 +90,7 @@ class UpdateFirewallOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateFirewallOption.
+        r"""Sets the description of this UpdateFirewallOption.
 
         功能说明：ACL描述信息 取值范围：0-255个字符 约束：不能包含“<”和“>”
 
@@ -101,7 +101,7 @@ class UpdateFirewallOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this UpdateFirewallOption.
+        r"""Gets the admin_state_up of this UpdateFirewallOption.
 
         功能说明：ACL是否开启 取值范围：true表示ACL开启；false表示ACL关闭
 
@@ -112,7 +112,7 @@ class UpdateFirewallOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this UpdateFirewallOption.
+        r"""Sets the admin_state_up of this UpdateFirewallOption.
 
         功能说明：ACL是否开启 取值范围：true表示ACL开启；false表示ACL关闭
 

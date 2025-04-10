@@ -26,7 +26,7 @@ class ListGaussMySqlDatabaseCharsetsResponse(SdkResponse):
     }
 
     def __init__(self, charsets=None):
-        """ListGaussMySqlDatabaseCharsetsResponse
+        r"""ListGaussMySqlDatabaseCharsetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListGaussMySqlDatabaseCharsetsResponse(SdkResponse):
 
     @property
     def charsets(self):
-        """Gets the charsets of this ListGaussMySqlDatabaseCharsetsResponse.
+        r"""Gets the charsets of this ListGaussMySqlDatabaseCharsetsResponse.
 
         数据库字符集列表
 
@@ -55,7 +55,7 @@ class ListGaussMySqlDatabaseCharsetsResponse(SdkResponse):
 
     @charsets.setter
     def charsets(self, charsets):
-        """Sets the charsets of this ListGaussMySqlDatabaseCharsetsResponse.
+        r"""Sets the charsets of this ListGaussMySqlDatabaseCharsetsResponse.
 
         数据库字符集列表
 

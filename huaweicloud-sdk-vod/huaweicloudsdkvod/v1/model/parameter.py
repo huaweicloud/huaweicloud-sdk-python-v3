@@ -25,7 +25,7 @@ class Parameter:
     }
 
     def __init__(self, format=None):
-        """Parameter
+        r"""Parameter
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Parameter:
 
     @property
     def format(self):
-        """Gets the format of this Parameter.
+        r"""Gets the format of this Parameter.
 
         封装格式。  取值如下： - MP3 - AAC
 
@@ -54,7 +54,7 @@ class Parameter:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this Parameter.
+        r"""Sets the format of this Parameter.
 
         封装格式。  取值如下： - MP3 - AAC
 

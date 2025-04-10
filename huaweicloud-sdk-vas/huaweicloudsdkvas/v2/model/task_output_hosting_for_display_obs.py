@@ -27,7 +27,7 @@ class TaskOutputHostingForDisplayObs:
     }
 
     def __init__(self, bucket=None, path=None):
-        """TaskOutputHostingForDisplayObs
+        r"""TaskOutputHostingForDisplayObs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TaskOutputHostingForDisplayObs:
 
     @property
     def bucket(self):
-        """Gets the bucket of this TaskOutputHostingForDisplayObs.
+        r"""Gets the bucket of this TaskOutputHostingForDisplayObs.
 
         结果文件result.json所在的OBS桶
 
@@ -61,7 +61,7 @@ class TaskOutputHostingForDisplayObs:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this TaskOutputHostingForDisplayObs.
+        r"""Sets the bucket of this TaskOutputHostingForDisplayObs.
 
         结果文件result.json所在的OBS桶
 
@@ -72,7 +72,7 @@ class TaskOutputHostingForDisplayObs:
 
     @property
     def path(self):
-        """Gets the path of this TaskOutputHostingForDisplayObs.
+        r"""Gets the path of this TaskOutputHostingForDisplayObs.
 
         结果文件result.json所在的路径
 
@@ -83,7 +83,7 @@ class TaskOutputHostingForDisplayObs:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this TaskOutputHostingForDisplayObs.
+        r"""Sets the path of this TaskOutputHostingForDisplayObs.
 
         结果文件result.json所在的路径
 

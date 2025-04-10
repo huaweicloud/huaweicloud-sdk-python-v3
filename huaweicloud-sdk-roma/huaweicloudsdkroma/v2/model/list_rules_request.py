@@ -33,7 +33,7 @@ class ListRulesRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, app_id=None, name=None, offset=None):
-        """ListRulesRequest
+        r"""ListRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListRulesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListRulesRequest.
+        r"""Gets the instance_id of this ListRulesRequest.
 
         实例ID
 
@@ -81,7 +81,7 @@ class ListRulesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListRulesRequest.
+        r"""Sets the instance_id of this ListRulesRequest.
 
         实例ID
 
@@ -92,7 +92,7 @@ class ListRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRulesRequest.
+        r"""Gets the limit of this ListRulesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -103,7 +103,7 @@ class ListRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRulesRequest.
+        r"""Sets the limit of this ListRulesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -114,7 +114,7 @@ class ListRulesRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListRulesRequest.
+        r"""Gets the app_id of this ListRulesRequest.
 
         应用ID
 
@@ -125,7 +125,7 @@ class ListRulesRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListRulesRequest.
+        r"""Sets the app_id of this ListRulesRequest.
 
         应用ID
 
@@ -136,7 +136,7 @@ class ListRulesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListRulesRequest.
+        r"""Gets the name of this ListRulesRequest.
 
         规则名称
 
@@ -147,7 +147,7 @@ class ListRulesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListRulesRequest.
+        r"""Sets the name of this ListRulesRequest.
 
         规则名称
 
@@ -158,7 +158,7 @@ class ListRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRulesRequest.
+        r"""Gets the offset of this ListRulesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -169,7 +169,7 @@ class ListRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRulesRequest.
+        r"""Sets the offset of this ListRulesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 

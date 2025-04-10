@@ -29,7 +29,7 @@ class ResourceDTO:
     }
 
     def __init__(self, resource_id=None, resource_name=None, tags=None):
-        """ResourceDTO
+        r"""ResourceDTO
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResourceDTO:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourceDTO.
+        r"""Gets the resource_id of this ResourceDTO.
 
         资源Id。
 
@@ -66,7 +66,7 @@ class ResourceDTO:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourceDTO.
+        r"""Sets the resource_id of this ResourceDTO.
 
         资源Id。
 
@@ -77,7 +77,7 @@ class ResourceDTO:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ResourceDTO.
+        r"""Gets the resource_name of this ResourceDTO.
 
         资源名称。
 
@@ -88,7 +88,7 @@ class ResourceDTO:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ResourceDTO.
+        r"""Sets the resource_name of this ResourceDTO.
 
         资源名称。
 
@@ -99,7 +99,7 @@ class ResourceDTO:
 
     @property
     def tags(self):
-        """Gets the tags of this ResourceDTO.
+        r"""Gets the tags of this ResourceDTO.
 
         资源标签列表。
 
@@ -110,7 +110,7 @@ class ResourceDTO:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ResourceDTO.
+        r"""Sets the tags of this ResourceDTO.
 
         资源标签列表。
 

@@ -39,7 +39,7 @@ class AccountBalanceV2:
     }
 
     def __init__(self, account_id=None, account_type=None, amount=None, currency=None, designated_amount=None, credit_amount=None, measure_id=None, memo=None):
-        """AccountBalanceV2
+        r"""AccountBalanceV2
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class AccountBalanceV2:
 
     @property
     def account_id(self):
-        """Gets the account_id of this AccountBalanceV2.
+        r"""Gets the account_id of this AccountBalanceV2.
 
         账户标识。
 
@@ -98,7 +98,7 @@ class AccountBalanceV2:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this AccountBalanceV2.
+        r"""Sets the account_id of this AccountBalanceV2.
 
         账户标识。
 
@@ -109,7 +109,7 @@ class AccountBalanceV2:
 
     @property
     def account_type(self):
-        """Gets the account_type of this AccountBalanceV2.
+        r"""Gets the account_type of this AccountBalanceV2.
 
         账户类型： 1：余额2：信用5：奖励7：保证金8：可拨款
 
@@ -120,7 +120,7 @@ class AccountBalanceV2:
 
     @account_type.setter
     def account_type(self, account_type):
-        """Sets the account_type of this AccountBalanceV2.
+        r"""Sets the account_type of this AccountBalanceV2.
 
         账户类型： 1：余额2：信用5：奖励7：保证金8：可拨款
 
@@ -131,7 +131,7 @@ class AccountBalanceV2:
 
     @property
     def amount(self):
-        """Gets the amount of this AccountBalanceV2.
+        r"""Gets the amount of this AccountBalanceV2.
 
         账户余额。
 
@@ -142,7 +142,7 @@ class AccountBalanceV2:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this AccountBalanceV2.
+        r"""Sets the amount of this AccountBalanceV2.
 
         账户余额。
 
@@ -153,7 +153,7 @@ class AccountBalanceV2:
 
     @property
     def currency(self):
-        """Gets the currency of this AccountBalanceV2.
+        r"""Gets the currency of this AccountBalanceV2.
 
         币种。 CNY：人民币。
 
@@ -164,7 +164,7 @@ class AccountBalanceV2:
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this AccountBalanceV2.
+        r"""Sets the currency of this AccountBalanceV2.
 
         币种。 CNY：人民币。
 
@@ -175,7 +175,7 @@ class AccountBalanceV2:
 
     @property
     def designated_amount(self):
-        """Gets the designated_amount of this AccountBalanceV2.
+        r"""Gets the designated_amount of this AccountBalanceV2.
 
         专款专用余额。
 
@@ -186,7 +186,7 @@ class AccountBalanceV2:
 
     @designated_amount.setter
     def designated_amount(self, designated_amount):
-        """Sets the designated_amount of this AccountBalanceV2.
+        r"""Sets the designated_amount of this AccountBalanceV2.
 
         专款专用余额。
 
@@ -197,7 +197,7 @@ class AccountBalanceV2:
 
     @property
     def credit_amount(self):
-        """Gets the credit_amount of this AccountBalanceV2.
+        r"""Gets the credit_amount of this AccountBalanceV2.
 
         总信用额度。只有account_type取值为2时，该字段才有效。
 
@@ -208,7 +208,7 @@ class AccountBalanceV2:
 
     @credit_amount.setter
     def credit_amount(self, credit_amount):
-        """Sets the credit_amount of this AccountBalanceV2.
+        r"""Sets the credit_amount of this AccountBalanceV2.
 
         总信用额度。只有account_type取值为2时，该字段才有效。
 
@@ -219,7 +219,7 @@ class AccountBalanceV2:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this AccountBalanceV2.
+        r"""Gets the measure_id of this AccountBalanceV2.
 
         度量单位。 1：元。
 
@@ -230,7 +230,7 @@ class AccountBalanceV2:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this AccountBalanceV2.
+        r"""Sets the measure_id of this AccountBalanceV2.
 
         度量单位。 1：元。
 
@@ -241,7 +241,7 @@ class AccountBalanceV2:
 
     @property
     def memo(self):
-        """Gets the memo of this AccountBalanceV2.
+        r"""Gets the memo of this AccountBalanceV2.
 
         备注。
 
@@ -252,7 +252,7 @@ class AccountBalanceV2:
 
     @memo.setter
     def memo(self, memo):
-        """Sets the memo of this AccountBalanceV2.
+        r"""Sets the memo of this AccountBalanceV2.
 
         备注。
 

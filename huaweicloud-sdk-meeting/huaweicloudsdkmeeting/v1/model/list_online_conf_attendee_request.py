@@ -31,7 +31,7 @@ class ListOnlineConfAttendeeRequest:
     }
 
     def __init__(self, conf_id=None, offset=None, limit=None, search_key=None):
-        """ListOnlineConfAttendeeRequest
+        r"""ListOnlineConfAttendeeRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListOnlineConfAttendeeRequest:
 
     @property
     def conf_id(self):
-        """Gets the conf_id of this ListOnlineConfAttendeeRequest.
+        r"""Gets the conf_id of this ListOnlineConfAttendeeRequest.
 
         会议ID
 
@@ -74,7 +74,7 @@ class ListOnlineConfAttendeeRequest:
 
     @conf_id.setter
     def conf_id(self, conf_id):
-        """Sets the conf_id of this ListOnlineConfAttendeeRequest.
+        r"""Sets the conf_id of this ListOnlineConfAttendeeRequest.
 
         会议ID
 
@@ -85,7 +85,7 @@ class ListOnlineConfAttendeeRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListOnlineConfAttendeeRequest.
+        r"""Gets the offset of this ListOnlineConfAttendeeRequest.
 
         记录数偏移
 
@@ -96,7 +96,7 @@ class ListOnlineConfAttendeeRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListOnlineConfAttendeeRequest.
+        r"""Sets the offset of this ListOnlineConfAttendeeRequest.
 
         记录数偏移
 
@@ -107,7 +107,7 @@ class ListOnlineConfAttendeeRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListOnlineConfAttendeeRequest.
+        r"""Gets the limit of this ListOnlineConfAttendeeRequest.
 
         返回的与会者记录数，最大500条
 
@@ -118,7 +118,7 @@ class ListOnlineConfAttendeeRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListOnlineConfAttendeeRequest.
+        r"""Sets the limit of this ListOnlineConfAttendeeRequest.
 
         返回的与会者记录数，最大500条
 
@@ -129,7 +129,7 @@ class ListOnlineConfAttendeeRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this ListOnlineConfAttendeeRequest.
+        r"""Gets the search_key of this ListOnlineConfAttendeeRequest.
 
         查询条件,支持third-account查询返回
 
@@ -140,7 +140,7 @@ class ListOnlineConfAttendeeRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this ListOnlineConfAttendeeRequest.
+        r"""Sets the search_key of this ListOnlineConfAttendeeRequest.
 
         查询条件,支持third-account查询返回
 

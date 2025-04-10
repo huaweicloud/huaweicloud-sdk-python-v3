@@ -39,7 +39,7 @@ class UpgradeV3RequestBody:
     }
 
     def __init__(self, action=None, l4_flavor_id=None, l7_flavor_id=None, availability_zone_list=None, ipv6_vip_virsubnet_id=None, ipv6_vip_address=None, elb_virsubnet_ids=None, prepaid_options=None):
-        """UpgradeV3RequestBody
+        r"""UpgradeV3RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class UpgradeV3RequestBody:
 
     @property
     def action(self):
-        """Gets the action of this UpgradeV3RequestBody.
+        r"""Gets the action of this UpgradeV3RequestBody.
 
         升级操作： - start：开始升级，仅负载均衡器的provisioning_status为ACTIVE时支持。 - complete：升级完成确认，仅实例的provision_status为UPGRADED时支持。确认后，实例无法再执行回退。 - rollback：回滚，仅实例的provision_status为UPGRADED,UPGRADE_FAILED,ROLLBACK_FAILED时支持。
 
@@ -102,7 +102,7 @@ class UpgradeV3RequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpgradeV3RequestBody.
+        r"""Sets the action of this UpgradeV3RequestBody.
 
         升级操作： - start：开始升级，仅负载均衡器的provisioning_status为ACTIVE时支持。 - complete：升级完成确认，仅实例的provision_status为UPGRADED时支持。确认后，实例无法再执行回退。 - rollback：回滚，仅实例的provision_status为UPGRADED,UPGRADE_FAILED,ROLLBACK_FAILED时支持。
 
@@ -113,7 +113,7 @@ class UpgradeV3RequestBody:
 
     @property
     def l4_flavor_id(self):
-        """Gets the l4_flavor_id of this UpgradeV3RequestBody.
+        r"""Gets the l4_flavor_id of this UpgradeV3RequestBody.
 
         四层规格ID。仅action为start时生效。 负载均衡器有四层监听器时该字段必须指定。 l4_flavor_id和l7_flavor_id不能同时为空。
 
@@ -124,7 +124,7 @@ class UpgradeV3RequestBody:
 
     @l4_flavor_id.setter
     def l4_flavor_id(self, l4_flavor_id):
-        """Sets the l4_flavor_id of this UpgradeV3RequestBody.
+        r"""Sets the l4_flavor_id of this UpgradeV3RequestBody.
 
         四层规格ID。仅action为start时生效。 负载均衡器有四层监听器时该字段必须指定。 l4_flavor_id和l7_flavor_id不能同时为空。
 
@@ -135,7 +135,7 @@ class UpgradeV3RequestBody:
 
     @property
     def l7_flavor_id(self):
-        """Gets the l7_flavor_id of this UpgradeV3RequestBody.
+        r"""Gets the l7_flavor_id of this UpgradeV3RequestBody.
 
         七层规格ID。仅action为start时生效。 负载均衡器有七层监听器时该字段必须指定。 l4_flavor_id和l7_flavor_id不能同时为空。
 
@@ -146,7 +146,7 @@ class UpgradeV3RequestBody:
 
     @l7_flavor_id.setter
     def l7_flavor_id(self, l7_flavor_id):
-        """Sets the l7_flavor_id of this UpgradeV3RequestBody.
+        r"""Sets the l7_flavor_id of this UpgradeV3RequestBody.
 
         七层规格ID。仅action为start时生效。 负载均衡器有七层监听器时该字段必须指定。 l4_flavor_id和l7_flavor_id不能同时为空。
 
@@ -157,7 +157,7 @@ class UpgradeV3RequestBody:
 
     @property
     def availability_zone_list(self):
-        """Gets the availability_zone_list of this UpgradeV3RequestBody.
+        r"""Gets the availability_zone_list of this UpgradeV3RequestBody.
 
         可用区列表。仅在action为start时生效。且action为start时，该字段必传 可通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/availability-zones 接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。
 
@@ -168,7 +168,7 @@ class UpgradeV3RequestBody:
 
     @availability_zone_list.setter
     def availability_zone_list(self, availability_zone_list):
-        """Sets the availability_zone_list of this UpgradeV3RequestBody.
+        r"""Sets the availability_zone_list of this UpgradeV3RequestBody.
 
         可用区列表。仅在action为start时生效。且action为start时，该字段必传 可通过GET https://{ELB_Endpoint}/v3/{project_id}/elb/availability-zones 接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。
 
@@ -179,7 +179,7 @@ class UpgradeV3RequestBody:
 
     @property
     def ipv6_vip_virsubnet_id(self):
-        """Gets the ipv6_vip_virsubnet_id of this UpgradeV3RequestBody.
+        r"""Gets the ipv6_vip_virsubnet_id of this UpgradeV3RequestBody.
 
         双栈类型负载均衡器所在子网的IPv6网络ID。 若实例升级到独享型后期望使用IPv6功能，则升级时该字段必传。  可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  使用说明： ipv6_vip_virsubnet_id需要属于原共享型实例所属VPC。 ipv6_vip_virsubnet_id所属子网需要开启IPv6。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -190,7 +190,7 @@ class UpgradeV3RequestBody:
 
     @ipv6_vip_virsubnet_id.setter
     def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
-        """Sets the ipv6_vip_virsubnet_id of this UpgradeV3RequestBody.
+        r"""Sets the ipv6_vip_virsubnet_id of this UpgradeV3RequestBody.
 
         双栈类型负载均衡器所在子网的IPv6网络ID。 若实例升级到独享型后期望使用IPv6功能，则升级时该字段必传。  可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  使用说明： ipv6_vip_virsubnet_id需要属于原共享型实例所属VPC。 ipv6_vip_virsubnet_id所属子网需要开启IPv6。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -201,7 +201,7 @@ class UpgradeV3RequestBody:
 
     @property
     def ipv6_vip_address(self):
-        """Gets the ipv6_vip_address of this UpgradeV3RequestBody.
+        r"""Gets the ipv6_vip_address of this UpgradeV3RequestBody.
 
         负载均衡器的IPv6虚拟IP。该地址必须包含在所在子网的IPv6网段内，且未被占用。  使用说明：  传入ipv6_vip_address时必须传入ipv6_vip_virsubnet_id。 不传入ipv6_vip_address，但传入ipv6_vip_virsubnet_id，则自动分配IPv6虚拟IP。 不传入ipv6_vip_address，且不传ipv6_vip_virsubnet_id，则不分配虚拟IP，ipv6_vip_address=null。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -212,7 +212,7 @@ class UpgradeV3RequestBody:
 
     @ipv6_vip_address.setter
     def ipv6_vip_address(self, ipv6_vip_address):
-        """Sets the ipv6_vip_address of this UpgradeV3RequestBody.
+        r"""Sets the ipv6_vip_address of this UpgradeV3RequestBody.
 
         负载均衡器的IPv6虚拟IP。该地址必须包含在所在子网的IPv6网段内，且未被占用。  使用说明：  传入ipv6_vip_address时必须传入ipv6_vip_virsubnet_id。 不传入ipv6_vip_address，但传入ipv6_vip_virsubnet_id，则自动分配IPv6虚拟IP。 不传入ipv6_vip_address，且不传ipv6_vip_virsubnet_id，则不分配虚拟IP，ipv6_vip_address=null。  [不支持IPv6，请勿使用。](tag:dt)
 
@@ -223,7 +223,7 @@ class UpgradeV3RequestBody:
 
     @property
     def elb_virsubnet_ids(self):
-        """Gets the elb_virsubnet_ids of this UpgradeV3RequestBody.
+        r"""Gets the elb_virsubnet_ids of this UpgradeV3RequestBody.
 
         下联面子网的网络ID列表。仅action为start时生效。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  若不指定该字段，则选择vip_subnet_cidr_id子网对应的网络ID。  下联面子网必须属于该LB所在的VPC。
 
@@ -234,7 +234,7 @@ class UpgradeV3RequestBody:
 
     @elb_virsubnet_ids.setter
     def elb_virsubnet_ids(self, elb_virsubnet_ids):
-        """Sets the elb_virsubnet_ids of this UpgradeV3RequestBody.
+        r"""Sets the elb_virsubnet_ids of this UpgradeV3RequestBody.
 
         下联面子网的网络ID列表。仅action为start时生效。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  若不指定该字段，则选择vip_subnet_cidr_id子网对应的网络ID。  下联面子网必须属于该LB所在的VPC。
 
@@ -245,7 +245,7 @@ class UpgradeV3RequestBody:
 
     @property
     def prepaid_options(self):
-        """Gets the prepaid_options of this UpgradeV3RequestBody.
+        r"""Gets the prepaid_options of this UpgradeV3RequestBody.
 
         :return: The prepaid_options of this UpgradeV3RequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.UpgradePrepaidOption`
@@ -254,7 +254,7 @@ class UpgradeV3RequestBody:
 
     @prepaid_options.setter
     def prepaid_options(self, prepaid_options):
-        """Sets the prepaid_options of this UpgradeV3RequestBody.
+        r"""Sets the prepaid_options of this UpgradeV3RequestBody.
 
         :param prepaid_options: The prepaid_options of this UpgradeV3RequestBody.
         :type prepaid_options: :class:`huaweicloudsdkelb.v3.UpgradePrepaidOption`

@@ -25,7 +25,7 @@ class BatchStart:
     }
 
     def __init__(self, servers=None):
-        """BatchStart
+        r"""BatchStart
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchStart:
 
     @property
     def servers(self):
-        """Gets the servers of this BatchStart.
+        r"""Gets the servers of this BatchStart.
 
         待启动的边缘实例列表。
 
@@ -54,7 +54,7 @@ class BatchStart:
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this BatchStart.
+        r"""Sets the servers of this BatchStart.
 
         待启动的边缘实例列表。
 

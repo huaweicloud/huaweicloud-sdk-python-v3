@@ -32,7 +32,7 @@ class InstanceFailDetail:
     }
 
     def __init__(self):
-        """InstanceFailDetail
+        r"""InstanceFailDetail
 
         The model defined in huaweicloud sdk
 

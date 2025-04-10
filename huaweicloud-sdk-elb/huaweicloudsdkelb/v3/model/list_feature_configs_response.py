@@ -30,7 +30,7 @@ class ListFeatureConfigsResponse(SdkResponse):
     }
 
     def __init__(self, configs=None, page_info=None, request_id=None):
-        """ListFeatureConfigsResponse
+        r"""ListFeatureConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFeatureConfigsResponse(SdkResponse):
 
     @property
     def configs(self):
-        """Gets the configs of this ListFeatureConfigsResponse.
+        r"""Gets the configs of this ListFeatureConfigsResponse.
 
         参数解释：特性配置列表。
 
@@ -69,7 +69,7 @@ class ListFeatureConfigsResponse(SdkResponse):
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ListFeatureConfigsResponse.
+        r"""Sets the configs of this ListFeatureConfigsResponse.
 
         参数解释：特性配置列表。
 
@@ -80,7 +80,7 @@ class ListFeatureConfigsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListFeatureConfigsResponse.
+        r"""Gets the page_info of this ListFeatureConfigsResponse.
 
         :return: The page_info of this ListFeatureConfigsResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListFeatureConfigsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListFeatureConfigsResponse.
+        r"""Sets the page_info of this ListFeatureConfigsResponse.
 
         :param page_info: The page_info of this ListFeatureConfigsResponse.
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListFeatureConfigsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListFeatureConfigsResponse.
+        r"""Gets the request_id of this ListFeatureConfigsResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -109,7 +109,7 @@ class ListFeatureConfigsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListFeatureConfigsResponse.
+        r"""Sets the request_id of this ListFeatureConfigsResponse.
 
         参数解释：请求ID。  注：自动生成 。
 

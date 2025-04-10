@@ -28,7 +28,7 @@ class ListLogicalClusterVolumesResponse(SdkResponse):
     }
 
     def __init__(self, volumes=None, count=None):
-        """ListLogicalClusterVolumesResponse
+        r"""ListLogicalClusterVolumesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListLogicalClusterVolumesResponse(SdkResponse):
 
     @property
     def volumes(self):
-        """Gets the volumes of this ListLogicalClusterVolumesResponse.
+        r"""Gets the volumes of this ListLogicalClusterVolumesResponse.
 
         逻辑集群磁盘信息列表
 
@@ -62,7 +62,7 @@ class ListLogicalClusterVolumesResponse(SdkResponse):
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this ListLogicalClusterVolumesResponse.
+        r"""Sets the volumes of this ListLogicalClusterVolumesResponse.
 
         逻辑集群磁盘信息列表
 
@@ -73,7 +73,7 @@ class ListLogicalClusterVolumesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListLogicalClusterVolumesResponse.
+        r"""Gets the count of this ListLogicalClusterVolumesResponse.
 
         逻辑集群磁盘总数
 
@@ -84,7 +84,7 @@ class ListLogicalClusterVolumesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListLogicalClusterVolumesResponse.
+        r"""Sets the count of this ListLogicalClusterVolumesResponse.
 
         逻辑集群磁盘总数
 

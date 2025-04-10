@@ -41,7 +41,7 @@ class ListPublicScriptsRequest:
     }
 
     def __init__(self, limit=None, marker=None, name_like=None, name=None, risk_level=None, type=None, x_language=None, x_project_id=None, x_user_profile=None):
-        """ListPublicScriptsRequest
+        r"""ListPublicScriptsRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListPublicScriptsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPublicScriptsRequest.
+        r"""Gets the limit of this ListPublicScriptsRequest.
 
         分页参数：每页返回记录个数限制
 
@@ -109,7 +109,7 @@ class ListPublicScriptsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPublicScriptsRequest.
+        r"""Sets the limit of this ListPublicScriptsRequest.
 
         分页参数：每页返回记录个数限制
 
@@ -120,7 +120,7 @@ class ListPublicScriptsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPublicScriptsRequest.
+        r"""Gets the marker of this ListPublicScriptsRequest.
 
         分页参数：上一页最后一个记录id
 
@@ -131,7 +131,7 @@ class ListPublicScriptsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPublicScriptsRequest.
+        r"""Sets the marker of this ListPublicScriptsRequest.
 
         分页参数：上一页最后一个记录id
 
@@ -142,7 +142,7 @@ class ListPublicScriptsRequest:
 
     @property
     def name_like(self):
-        """Gets the name_like of this ListPublicScriptsRequest.
+        r"""Gets the name_like of this ListPublicScriptsRequest.
 
         脚本名（只支持右模糊搜索）
 
@@ -153,7 +153,7 @@ class ListPublicScriptsRequest:
 
     @name_like.setter
     def name_like(self, name_like):
-        """Sets the name_like of this ListPublicScriptsRequest.
+        r"""Sets the name_like of this ListPublicScriptsRequest.
 
         脚本名（只支持右模糊搜索）
 
@@ -164,7 +164,7 @@ class ListPublicScriptsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPublicScriptsRequest.
+        r"""Gets the name of this ListPublicScriptsRequest.
 
         脚本名（精确搜索）
 
@@ -175,7 +175,7 @@ class ListPublicScriptsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPublicScriptsRequest.
+        r"""Sets the name of this ListPublicScriptsRequest.
 
         脚本名（精确搜索）
 
@@ -186,7 +186,7 @@ class ListPublicScriptsRequest:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this ListPublicScriptsRequest.
+        r"""Gets the risk_level of this ListPublicScriptsRequest.
 
         风险等级 LOW：低风险 MEDIUM：中风险 HIGH：高风险
 
@@ -197,7 +197,7 @@ class ListPublicScriptsRequest:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this ListPublicScriptsRequest.
+        r"""Sets the risk_level of this ListPublicScriptsRequest.
 
         风险等级 LOW：低风险 MEDIUM：中风险 HIGH：高风险
 
@@ -208,7 +208,7 @@ class ListPublicScriptsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListPublicScriptsRequest.
+        r"""Gets the type of this ListPublicScriptsRequest.
 
         脚本类型 SHELL：shell脚本 PYTHON：python脚本 BAT：bat脚本
 
@@ -219,7 +219,7 @@ class ListPublicScriptsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListPublicScriptsRequest.
+        r"""Sets the type of this ListPublicScriptsRequest.
 
         脚本类型 SHELL：shell脚本 PYTHON：python脚本 BAT：bat脚本
 
@@ -230,7 +230,7 @@ class ListPublicScriptsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListPublicScriptsRequest.
+        r"""Gets the x_language of this ListPublicScriptsRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -241,7 +241,7 @@ class ListPublicScriptsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListPublicScriptsRequest.
+        r"""Sets the x_language of this ListPublicScriptsRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -252,7 +252,7 @@ class ListPublicScriptsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListPublicScriptsRequest.
+        r"""Gets the x_project_id of this ListPublicScriptsRequest.
 
         项目ID，一个项目对应一个region
 
@@ -263,7 +263,7 @@ class ListPublicScriptsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListPublicScriptsRequest.
+        r"""Sets the x_project_id of this ListPublicScriptsRequest.
 
         项目ID，一个项目对应一个region
 
@@ -274,7 +274,7 @@ class ListPublicScriptsRequest:
 
     @property
     def x_user_profile(self):
-        """Gets the x_user_profile of this ListPublicScriptsRequest.
+        r"""Gets the x_user_profile of this ListPublicScriptsRequest.
 
         IAM5.0用户信息
 
@@ -285,7 +285,7 @@ class ListPublicScriptsRequest:
 
     @x_user_profile.setter
     def x_user_profile(self, x_user_profile):
-        """Sets the x_user_profile of this ListPublicScriptsRequest.
+        r"""Sets the x_user_profile of this ListPublicScriptsRequest.
 
         IAM5.0用户信息
 

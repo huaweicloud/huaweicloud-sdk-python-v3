@@ -27,7 +27,7 @@ class NacosUserInfo:
     }
 
     def __init__(self, user_name=None, password=None):
-        """NacosUserInfo
+        r"""NacosUserInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NacosUserInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this NacosUserInfo.
+        r"""Gets the user_name of this NacosUserInfo.
 
         nacos用户名。
 
@@ -59,7 +59,7 @@ class NacosUserInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this NacosUserInfo.
+        r"""Sets the user_name of this NacosUserInfo.
 
         nacos用户名。
 
@@ -70,7 +70,7 @@ class NacosUserInfo:
 
     @property
     def password(self):
-        """Gets the password of this NacosUserInfo.
+        r"""Gets the password of this NacosUserInfo.
 
         nacos密码。
 
@@ -81,7 +81,7 @@ class NacosUserInfo:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this NacosUserInfo.
+        r"""Sets the password of this NacosUserInfo.
 
         nacos密码。
 

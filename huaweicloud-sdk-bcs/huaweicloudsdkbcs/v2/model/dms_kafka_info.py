@@ -35,7 +35,7 @@ class DmsKafkaInfo:
     }
 
     def __init__(self, status=None, status_detail=None, order_fade_enabled=None, addr=None, order_fade_enable=None, order_fade_cache=None):
-        """DmsKafkaInfo
+        r"""DmsKafkaInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DmsKafkaInfo:
 
     @property
     def status(self):
-        """Gets the status of this DmsKafkaInfo.
+        r"""Gets the status of this DmsKafkaInfo.
 
         状态
 
@@ -89,7 +89,7 @@ class DmsKafkaInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DmsKafkaInfo.
+        r"""Sets the status of this DmsKafkaInfo.
 
         状态
 
@@ -100,7 +100,7 @@ class DmsKafkaInfo:
 
     @property
     def status_detail(self):
-        """Gets the status_detail of this DmsKafkaInfo.
+        r"""Gets the status_detail of this DmsKafkaInfo.
 
         状态详情
 
@@ -111,7 +111,7 @@ class DmsKafkaInfo:
 
     @status_detail.setter
     def status_detail(self, status_detail):
-        """Sets the status_detail of this DmsKafkaInfo.
+        r"""Sets the status_detail of this DmsKafkaInfo.
 
         状态详情
 
@@ -122,7 +122,7 @@ class DmsKafkaInfo:
 
     @property
     def order_fade_enabled(self):
-        """Gets the order_fade_enabled of this DmsKafkaInfo.
+        r"""Gets the order_fade_enabled of this DmsKafkaInfo.
 
         是否允许order老化
 
@@ -133,7 +133,7 @@ class DmsKafkaInfo:
 
     @order_fade_enabled.setter
     def order_fade_enabled(self, order_fade_enabled):
-        """Sets the order_fade_enabled of this DmsKafkaInfo.
+        r"""Sets the order_fade_enabled of this DmsKafkaInfo.
 
         是否允许order老化
 
@@ -144,7 +144,7 @@ class DmsKafkaInfo:
 
     @property
     def addr(self):
-        """Gets the addr of this DmsKafkaInfo.
+        r"""Gets the addr of this DmsKafkaInfo.
 
         Kafka连接地址
 
@@ -155,7 +155,7 @@ class DmsKafkaInfo:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this DmsKafkaInfo.
+        r"""Sets the addr of this DmsKafkaInfo.
 
         Kafka连接地址
 
@@ -166,7 +166,7 @@ class DmsKafkaInfo:
 
     @property
     def order_fade_enable(self):
-        """Gets the order_fade_enable of this DmsKafkaInfo.
+        r"""Gets the order_fade_enable of this DmsKafkaInfo.
 
         Kafka模式下，是否开启共识节点老化
 
@@ -177,7 +177,7 @@ class DmsKafkaInfo:
 
     @order_fade_enable.setter
     def order_fade_enable(self, order_fade_enable):
-        """Sets the order_fade_enable of this DmsKafkaInfo.
+        r"""Sets the order_fade_enable of this DmsKafkaInfo.
 
         Kafka模式下，是否开启共识节点老化
 
@@ -188,7 +188,7 @@ class DmsKafkaInfo:
 
     @property
     def order_fade_cache(self):
-        """Gets the order_fade_cache of this DmsKafkaInfo.
+        r"""Gets the order_fade_cache of this DmsKafkaInfo.
 
         Kafka模式下，开启共识节点后的老化阈值
 
@@ -199,7 +199,7 @@ class DmsKafkaInfo:
 
     @order_fade_cache.setter
     def order_fade_cache(self, order_fade_cache):
-        """Sets the order_fade_cache of this DmsKafkaInfo.
+        r"""Sets the order_fade_cache of this DmsKafkaInfo.
 
         Kafka模式下，开启共识节点后的老化阈值
 

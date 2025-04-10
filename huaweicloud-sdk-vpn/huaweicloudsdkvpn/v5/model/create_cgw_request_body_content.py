@@ -35,7 +35,7 @@ class CreateCgwRequestBodyContent:
     }
 
     def __init__(self, name=None, id_type=None, id_value=None, bgp_asn=None, ca_certificate=None, tags=None):
-        """CreateCgwRequestBodyContent
+        r"""CreateCgwRequestBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class CreateCgwRequestBodyContent:
 
     @property
     def name(self):
-        """Gets the name of this CreateCgwRequestBodyContent.
+        r"""Gets the name of this CreateCgwRequestBodyContent.
 
         网关名称
 
@@ -88,7 +88,7 @@ class CreateCgwRequestBodyContent:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCgwRequestBodyContent.
+        r"""Sets the name of this CreateCgwRequestBodyContent.
 
         网关名称
 
@@ -99,7 +99,7 @@ class CreateCgwRequestBodyContent:
 
     @property
     def id_type(self):
-        """Gets the id_type of this CreateCgwRequestBodyContent.
+        r"""Gets the id_type of this CreateCgwRequestBodyContent.
 
         对端网关标识类型
 
@@ -110,7 +110,7 @@ class CreateCgwRequestBodyContent:
 
     @id_type.setter
     def id_type(self, id_type):
-        """Sets the id_type of this CreateCgwRequestBodyContent.
+        r"""Sets the id_type of this CreateCgwRequestBodyContent.
 
         对端网关标识类型
 
@@ -121,7 +121,7 @@ class CreateCgwRequestBodyContent:
 
     @property
     def id_value(self):
-        """Gets the id_value of this CreateCgwRequestBodyContent.
+        r"""Gets the id_value of this CreateCgwRequestBodyContent.
 
         对端网关标识值
 
@@ -132,7 +132,7 @@ class CreateCgwRequestBodyContent:
 
     @id_value.setter
     def id_value(self, id_value):
-        """Sets the id_value of this CreateCgwRequestBodyContent.
+        r"""Sets the id_value of this CreateCgwRequestBodyContent.
 
         对端网关标识值
 
@@ -143,7 +143,7 @@ class CreateCgwRequestBodyContent:
 
     @property
     def bgp_asn(self):
-        """Gets the bgp_asn of this CreateCgwRequestBodyContent.
+        r"""Gets the bgp_asn of this CreateCgwRequestBodyContent.
 
         网关的bgp asn号，默认值为65000
 
@@ -154,7 +154,7 @@ class CreateCgwRequestBodyContent:
 
     @bgp_asn.setter
     def bgp_asn(self, bgp_asn):
-        """Sets the bgp_asn of this CreateCgwRequestBodyContent.
+        r"""Sets the bgp_asn of this CreateCgwRequestBodyContent.
 
         网关的bgp asn号，默认值为65000
 
@@ -165,7 +165,7 @@ class CreateCgwRequestBodyContent:
 
     @property
     def ca_certificate(self):
-        """Gets the ca_certificate of this CreateCgwRequestBodyContent.
+        r"""Gets the ca_certificate of this CreateCgwRequestBodyContent.
 
         :return: The ca_certificate of this CreateCgwRequestBodyContent.
         :rtype: :class:`huaweicloudsdkvpn.v5.CaCertificateRequest`
@@ -174,7 +174,7 @@ class CreateCgwRequestBodyContent:
 
     @ca_certificate.setter
     def ca_certificate(self, ca_certificate):
-        """Sets the ca_certificate of this CreateCgwRequestBodyContent.
+        r"""Sets the ca_certificate of this CreateCgwRequestBodyContent.
 
         :param ca_certificate: The ca_certificate of this CreateCgwRequestBodyContent.
         :type ca_certificate: :class:`huaweicloudsdkvpn.v5.CaCertificateRequest`
@@ -183,7 +183,7 @@ class CreateCgwRequestBodyContent:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateCgwRequestBodyContent.
+        r"""Gets the tags of this CreateCgwRequestBodyContent.
 
         标签
 
@@ -194,7 +194,7 @@ class CreateCgwRequestBodyContent:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateCgwRequestBodyContent.
+        r"""Sets the tags of this CreateCgwRequestBodyContent.
 
         标签
 

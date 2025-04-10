@@ -26,7 +26,7 @@ class CreateSecretVersionResponse(SdkResponse):
     }
 
     def __init__(self, version_metadata=None):
-        """CreateSecretVersionResponse
+        r"""CreateSecretVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateSecretVersionResponse(SdkResponse):
 
     @property
     def version_metadata(self):
-        """Gets the version_metadata of this CreateSecretVersionResponse.
+        r"""Gets the version_metadata of this CreateSecretVersionResponse.
 
         :return: The version_metadata of this CreateSecretVersionResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.VersionMetadata`
@@ -53,7 +53,7 @@ class CreateSecretVersionResponse(SdkResponse):
 
     @version_metadata.setter
     def version_metadata(self, version_metadata):
-        """Sets the version_metadata of this CreateSecretVersionResponse.
+        r"""Sets the version_metadata of this CreateSecretVersionResponse.
 
         :param version_metadata: The version_metadata of this CreateSecretVersionResponse.
         :type version_metadata: :class:`huaweicloudsdkcsms.v1.VersionMetadata`

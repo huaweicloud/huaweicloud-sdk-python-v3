@@ -24,7 +24,7 @@ class CancelingAuthorizationV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """CancelingAuthorizationV2Response
+        r"""CancelingAuthorizationV2Response
 
         The model defined in huaweicloud sdk
 

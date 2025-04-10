@@ -24,7 +24,7 @@ class DeleteUserRepositoryAuthResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteUserRepositoryAuthResponse
+        r"""DeleteUserRepositoryAuthResponse
 
         The model defined in huaweicloud sdk
 

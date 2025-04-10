@@ -30,7 +30,7 @@ class ListFabricWorkspaceTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, sys_tags=None, x_request_id=None):
-        """ListFabricWorkspaceTagsResponse
+        r"""ListFabricWorkspaceTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFabricWorkspaceTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListFabricWorkspaceTagsResponse.
+        r"""Gets the tags of this ListFabricWorkspaceTagsResponse.
 
         资源标签列表
 
@@ -69,7 +69,7 @@ class ListFabricWorkspaceTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListFabricWorkspaceTagsResponse.
+        r"""Sets the tags of this ListFabricWorkspaceTagsResponse.
 
         资源标签列表
 
@@ -80,7 +80,7 @@ class ListFabricWorkspaceTagsResponse(SdkResponse):
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ListFabricWorkspaceTagsResponse.
+        r"""Gets the sys_tags of this ListFabricWorkspaceTagsResponse.
 
         系统标签列表。
 
@@ -91,7 +91,7 @@ class ListFabricWorkspaceTagsResponse(SdkResponse):
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ListFabricWorkspaceTagsResponse.
+        r"""Sets the sys_tags of this ListFabricWorkspaceTagsResponse.
 
         系统标签列表。
 
@@ -102,7 +102,7 @@ class ListFabricWorkspaceTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListFabricWorkspaceTagsResponse.
+        r"""Gets the x_request_id of this ListFabricWorkspaceTagsResponse.
 
         :return: The x_request_id of this ListFabricWorkspaceTagsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListFabricWorkspaceTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListFabricWorkspaceTagsResponse.
+        r"""Sets the x_request_id of this ListFabricWorkspaceTagsResponse.
 
         :param x_request_id: The x_request_id of this ListFabricWorkspaceTagsResponse.
         :type x_request_id: str

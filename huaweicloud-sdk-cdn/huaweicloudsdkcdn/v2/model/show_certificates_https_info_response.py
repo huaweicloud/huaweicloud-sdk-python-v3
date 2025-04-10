@@ -30,7 +30,7 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
     }
 
     def __init__(self, total=None, https=None, x_request_id=None):
-        """ShowCertificatesHttpsInfoResponse
+        r"""ShowCertificatesHttpsInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowCertificatesHttpsInfoResponse.
+        r"""Gets the total of this ShowCertificatesHttpsInfoResponse.
 
         查询结果总数
 
@@ -69,7 +69,7 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowCertificatesHttpsInfoResponse.
+        r"""Sets the total of this ShowCertificatesHttpsInfoResponse.
 
         查询结果总数
 
@@ -80,7 +80,7 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
 
     @property
     def https(self):
-        """Gets the https of this ShowCertificatesHttpsInfoResponse.
+        r"""Gets the https of this ShowCertificatesHttpsInfoResponse.
 
         https配置。
 
@@ -91,7 +91,7 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
 
     @https.setter
     def https(self, https):
-        """Sets the https of this ShowCertificatesHttpsInfoResponse.
+        r"""Sets the https of this ShowCertificatesHttpsInfoResponse.
 
         https配置。
 
@@ -102,7 +102,7 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowCertificatesHttpsInfoResponse.
+        r"""Gets the x_request_id of this ShowCertificatesHttpsInfoResponse.
 
         :return: The x_request_id of this ShowCertificatesHttpsInfoResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ShowCertificatesHttpsInfoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowCertificatesHttpsInfoResponse.
+        r"""Sets the x_request_id of this ShowCertificatesHttpsInfoResponse.
 
         :param x_request_id: The x_request_id of this ShowCertificatesHttpsInfoResponse.
         :type x_request_id: str

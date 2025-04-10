@@ -24,7 +24,7 @@ class UpdateInstanceSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateInstanceSecurityGroupResponse
+        r"""UpdateInstanceSecurityGroupResponse
 
         The model defined in huaweicloud sdk
 

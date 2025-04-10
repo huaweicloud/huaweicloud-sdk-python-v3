@@ -34,7 +34,7 @@ class ElbClient(Client):
         return client_builder
 
     def batch_add_available_zones(self, request):
-        """新增负载均衡器可用区
+        r"""新增负载均衡器可用区
 
         给负载均衡器新增可用区。
         
@@ -101,7 +101,7 @@ class ElbClient(Client):
         return http_info
 
     def batch_create_load_balancers(self, request):
-        """批量创建负载均衡器
+        r"""批量创建负载均衡器
 
         [批量创建独享型或者共享型负载均衡器，包括按需及包周期计费负载均衡器。](tag:hws)
         [批量创建独享型或者共享型负载均衡器。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,dt,ctc,cmcc,sbc,hk_sbc)
@@ -179,7 +179,7 @@ class ElbClient(Client):
         return http_info
 
     def batch_create_members(self, request):
-        """批量创建后端服务器
+        r"""批量创建后端服务器
 
         在指定pool下批量创建后端服务器。一次最多创建200个。
         
@@ -246,7 +246,7 @@ class ElbClient(Client):
         return http_info
 
     def batch_delete_members(self, request):
-        """批量删除后端服务器
+        r"""批量删除后端服务器
 
         在指定pool下批量删除后端服务器。一次最多添加200个。
         
@@ -313,7 +313,7 @@ class ElbClient(Client):
         return http_info
 
     def batch_remove_available_zones(self, request):
-        """移除负载均衡器可用区
+        r"""移除负载均衡器可用区
 
         移除负载均衡器的可用区。
         &gt; 移除可用区可能导致已有链接断开，请谨慎操作。
@@ -381,7 +381,7 @@ class ElbClient(Client):
         return http_info
 
     def batch_update_members(self, request):
-        """批量更新后端服务器
+        r"""批量更新后端服务器
 
         在指定pool下批量更新后端服务器。一次最多添加200个。
         
@@ -448,7 +448,7 @@ class ElbClient(Client):
         return http_info
 
     def batch_update_policies_priority(self, request):
-        """批量更新转发策略优先级
+        r"""批量更新转发策略优先级
 
         批量更新转发策略的优先级。
         
@@ -513,7 +513,7 @@ class ElbClient(Client):
         return http_info
 
     def change_loadbalancer_charge_mode(self, request):
-        """变更负载均衡器计费模式
+        r"""变更负载均衡器计费模式
 
         负载均衡器计费模式变更，当前支持的计费模式变更为：
         1. 按需计费转包周期计费；
@@ -581,7 +581,7 @@ class ElbClient(Client):
         return http_info
 
     def clone_loadbalancer(self, request):
-        """复制已有负载均衡器
+        r"""复制已有负载均衡器
 
         复制已有的负载均衡器实例。
         
@@ -648,7 +648,7 @@ class ElbClient(Client):
         return http_info
 
     def create_certificate(self, request):
-        """创建证书
+        r"""创建证书
 
         创建证书。用于HTTPS协议监听器。
         
@@ -713,7 +713,7 @@ class ElbClient(Client):
         return http_info
 
     def create_certificate_private_key_echo(self, request):
-        """修改证书私钥字段回显开关
+        r"""修改证书私钥字段回显开关
 
         开启或关闭证书私钥字段回显开关。
         
@@ -778,7 +778,7 @@ class ElbClient(Client):
         return http_info
 
     def create_health_monitor(self, request):
-        """创建健康检查
+        r"""创建健康检查
 
         创建健康检查。
         
@@ -843,7 +843,7 @@ class ElbClient(Client):
         return http_info
 
     def create_l7_policy(self, request):
-        """创建转发策略
+        r"""创建转发策略
 
         创建七层转发策略。
         
@@ -908,7 +908,7 @@ class ElbClient(Client):
         return http_info
 
     def create_l7_rule(self, request):
-        """创建转发规则
+        r"""创建转发规则
 
         创建七层转发规则。
         
@@ -975,7 +975,7 @@ class ElbClient(Client):
         return http_info
 
     def create_listener(self, request):
-        """创建监听器
+        r"""创建监听器
 
         创建监听器。
         
@@ -1040,7 +1040,7 @@ class ElbClient(Client):
         return http_info
 
     def create_load_balancer(self, request):
-        """创建负载均衡器
+        r"""创建负载均衡器
 
         [创建独享型负载均衡器，包括按需及包周期计费负载均衡器。](tag:hws)
         [创建独享型负载均衡器。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,dt,ctc,cmcc,sbc,hk_sbc)
@@ -1121,7 +1121,7 @@ class ElbClient(Client):
         return http_info
 
     def create_logtank(self, request):
-        """创建云日志
+        r"""创建云日志
 
         创建云日志。[荷兰region不支持云日志功能，请勿使用。](tag:dt)
         
@@ -1186,7 +1186,7 @@ class ElbClient(Client):
         return http_info
 
     def create_master_slave_pool(self, request):
-        """创建主备后端服务器组
+        r"""创建主备后端服务器组
 
         创建主备后端服务器组。
         
@@ -1251,7 +1251,7 @@ class ElbClient(Client):
         return http_info
 
     def create_member(self, request):
-        """创建后端服务器
+        r"""创建后端服务器
 
         创建后端服务器。
         
@@ -1318,7 +1318,7 @@ class ElbClient(Client):
         return http_info
 
     def create_pool(self, request):
-        """创建后端服务器组
+        r"""创建后端服务器组
 
         创建后端服务器组。
         
@@ -1383,7 +1383,7 @@ class ElbClient(Client):
         return http_info
 
     def create_security_policy(self, request):
-        """创建自定义安全策略
+        r"""创建自定义安全策略
 
         创建自定义安全策略。用于在创建HTTPS监听器时，请求参数中指定security_policy_id来设置监听器的自定义安全策略。
         
@@ -1450,7 +1450,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_certificate(self, request):
-        """删除证书
+        r"""删除证书
 
         删除证书。
         
@@ -1515,7 +1515,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_health_monitor(self, request):
-        """删除健康检查
+        r"""删除健康检查
 
         删除健康检查。
         
@@ -1580,7 +1580,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_l7_policy(self, request):
-        """删除转发策略
+        r"""删除转发策略
 
         删除七层转发策略。
         
@@ -1645,7 +1645,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_l7_rule(self, request):
-        """删除转发规则
+        r"""删除转发规则
 
         删除七层转发规则。
         
@@ -1712,7 +1712,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_listener(self, request):
-        """删除监听器
+        r"""删除监听器
 
         删除监听器。
         
@@ -1777,7 +1777,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_listener_force(self, request):
-        """级联删除监听器
+        r"""级联删除监听器
 
         删除监听器且级联删除其下子资源（删除监听器、转发策略等，解绑后端服务器组）。
         
@@ -1842,7 +1842,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_load_balancer(self, request):
-        """删除负载均衡器
+        r"""删除负载均衡器
 
         删除负载均衡器。
         
@@ -1907,7 +1907,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_load_balancer_cascade(self, request):
-        """级联删除负载均衡器及关联EIP
+        r"""级联删除负载均衡器及关联EIP
 
         删除负载均衡器且级联删除其下子资源（删除负载均衡器及其绑定的监听器、后端服务器等一系列资源）。以及根据需要删除或解绑后端服务器组和LB关联的EIP。
         
@@ -1974,7 +1974,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_load_balancer_force(self, request):
-        """级联删除负载均衡器
+        r"""级联删除负载均衡器
 
         删除负载均衡器且级联删除其下子资源（删除负载均衡器及其绑定的监听器、后端服务器组、后端服务器等一系列资源）。
         - 若LB关联了EIP，则只解绑EIP，不会删除EIP。
@@ -2042,7 +2042,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_logtank(self, request):
-        """删除云日志
+        r"""删除云日志
 
         删除云日志。[荷兰region不支持云日志功能，请勿使用。](tag:dt)
         
@@ -2107,7 +2107,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_master_slave_pool(self, request):
-        """删除主备后端服务器组
+        r"""删除主备后端服务器组
 
         删除主备后端服务器组。
         
@@ -2172,7 +2172,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_member(self, request):
-        """删除后端服务器
+        r"""删除后端服务器
 
         删除后端服务器。
         
@@ -2239,7 +2239,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_pool(self, request):
-        """删除后端服务器组
+        r"""删除后端服务器组
 
         删除后端服务器组。
         
@@ -2304,7 +2304,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_pool_cascade(self, request):
-        """级联删除后端服务器组
+        r"""级联删除后端服务器组
 
         级联删除后端服务器组，包含在此后端服务器组下的所有后端服务器和健康检查也将被删除。
         
@@ -2369,7 +2369,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_security_policy(self, request):
-        """删除自定义安全策略
+        r"""删除自定义安全策略
 
         删除自定义安全策略。[荷兰region不支持自定义安全策略功能，请勿使用。](tag:dt)
         
@@ -2434,7 +2434,7 @@ class ElbClient(Client):
         return http_info
 
     def list_all_members(self, request):
-        """后端服务器全局列表
+        r"""后端服务器全局列表
 
         查询当前项目下的后端服务器列表。
         
@@ -2538,7 +2538,7 @@ class ElbClient(Client):
         return http_info
 
     def list_availability_zones(self, request):
-        """查询可用区列表
+        r"""查询可用区列表
 
         返回租户创建LB时可使用的可用区集合列表情况。
         
@@ -2615,7 +2615,7 @@ class ElbClient(Client):
         return http_info
 
     def list_certificates(self, request):
-        """查询证书列表
+        r"""查询证书列表
 
         查询证书列表。
         
@@ -2710,7 +2710,7 @@ class ElbClient(Client):
         return http_info
 
     def list_feature_configs(self, request):
-        """查询当前租户ELB服务的特性配置
+        r"""查询当前租户ELB服务的特性配置
 
         查询当前租户ELB服务的特性配置。
         
@@ -2775,7 +2775,7 @@ class ElbClient(Client):
         return http_info
 
     def list_flavors(self, request):
-        """查询规格列表
+        r"""查询规格列表
 
         查询当前region下可用的负载均衡规格列表。
         
@@ -2865,7 +2865,7 @@ class ElbClient(Client):
         return http_info
 
     def list_health_monitors(self, request):
-        """查询健康检查列表
+        r"""查询健康检查列表
 
         健康检查列表。
         
@@ -2974,7 +2974,7 @@ class ElbClient(Client):
         return http_info
 
     def list_jobs(self, request):
-        """查询异步任务的job列表
+        r"""查询异步任务的job列表
 
         用于查询实例导出、实例复制、实例升级等异步接口任务的状态。
         
@@ -3049,7 +3049,7 @@ class ElbClient(Client):
         return http_info
 
     def list_l7_policies(self, request):
-        """查询转发策略列表
+        r"""查询转发策略列表
 
         查询七层转发策略列表。
         
@@ -3158,7 +3158,7 @@ class ElbClient(Client):
         return http_info
 
     def list_l7_rules(self, request):
-        """查询转发规则列表
+        r"""查询转发规则列表
 
         查询转发规则列表。
         
@@ -3254,7 +3254,7 @@ class ElbClient(Client):
         return http_info
 
     def list_listeners(self, request):
-        """查询监听器列表
+        r"""查询监听器列表
 
         查询监听器列表。
         
@@ -3396,7 +3396,7 @@ class ElbClient(Client):
         return http_info
 
     def list_load_balancers(self, request):
-        """查询负载均衡器列表
+        r"""查询负载均衡器列表
 
         查询负载均衡器列表。
         
@@ -3559,7 +3559,7 @@ class ElbClient(Client):
         return http_info
 
     def list_loadbalancer_feature(self, request):
-        """查询指定ELB实例的特性配置
+        r"""查询指定ELB实例的特性配置
 
         查询指定ELB实例的特性配置情况。
         
@@ -3624,7 +3624,7 @@ class ElbClient(Client):
         return http_info
 
     def list_logtanks(self, request):
-        """查询云日志列表
+        r"""查询云日志列表
 
         查询云日志列表。[荷兰region不支持云日志功能，请勿使用。](tag:dt)
         
@@ -3708,7 +3708,7 @@ class ElbClient(Client):
         return http_info
 
     def list_master_slave_pools(self, request):
-        """查询主备后端服务器组列表
+        r"""查询主备后端服务器组列表
 
         主备后端服务器组列表。
         
@@ -3824,7 +3824,7 @@ class ElbClient(Client):
         return http_info
 
     def list_members(self, request):
-        """查询后端服务器列表
+        r"""查询后端服务器列表
 
         Pool下的后端服务器列表。
         
@@ -3930,7 +3930,7 @@ class ElbClient(Client):
         return http_info
 
     def list_pools(self, request):
-        """查询后端服务器组列表
+        r"""查询后端服务器组列表
 
         后端服务器组列表。
         
@@ -4063,7 +4063,7 @@ class ElbClient(Client):
         return http_info
 
     def list_quota_details(self, request):
-        """查询配额使用详情
+        r"""查询配额使用详情
 
         查询指定项目中负载均衡相关的各类资源的当前配额和已使用配额信息。
         
@@ -4129,7 +4129,7 @@ class ElbClient(Client):
         return http_info
 
     def list_security_policies(self, request):
-        """查询自定义安全策略列表
+        r"""查询自定义安全策略列表
 
         查询自定义安全策略列表。[荷兰region不支持自定义安全策略功能，请勿使用。](tag:dt)
         
@@ -4213,7 +4213,7 @@ class ElbClient(Client):
         return http_info
 
     def list_system_security_policies(self, request):
-        """查询系统安全策略列表
+        r"""查询系统安全策略列表
 
         查询系统安全策略列表。
         
@@ -4278,7 +4278,7 @@ class ElbClient(Client):
         return http_info
 
     def show_certificate(self, request):
-        """查询证书详情
+        r"""查询证书详情
 
         查询证书详情。
         
@@ -4343,7 +4343,7 @@ class ElbClient(Client):
         return http_info
 
     def show_certificate_private_key_echo(self, request):
-        """查询证书私钥字段回显开关
+        r"""查询证书私钥字段回显开关
 
         查询证书私钥回显开关当前的状态，开启或关闭。
         
@@ -4406,7 +4406,7 @@ class ElbClient(Client):
         return http_info
 
     def show_flavor(self, request):
-        """查询规格详情
+        r"""查询规格详情
 
         查询规格的详情。
         
@@ -4471,7 +4471,7 @@ class ElbClient(Client):
         return http_info
 
     def show_health_monitor(self, request):
-        """查询健康检查详情
+        r"""查询健康检查详情
 
         查询健康检查详情。
         
@@ -4536,7 +4536,7 @@ class ElbClient(Client):
         return http_info
 
     def show_job(self, request):
-        """查询异步任务的job状态
+        r"""查询异步任务的job状态
 
         用于查询模板导入、实例复制、实例升级等异步接口任务的状态
         
@@ -4601,7 +4601,7 @@ class ElbClient(Client):
         return http_info
 
     def show_l7_policy(self, request):
-        """查询转发策略详情
+        r"""查询转发策略详情
 
         查询七层转发策略详情。
         
@@ -4666,7 +4666,7 @@ class ElbClient(Client):
         return http_info
 
     def show_l7_rule(self, request):
-        """查询转发规则详情
+        r"""查询转发规则详情
 
         查询七层转发规则详情。
         
@@ -4733,7 +4733,7 @@ class ElbClient(Client):
         return http_info
 
     def show_listener(self, request):
-        """查询监听器详情
+        r"""查询监听器详情
 
         监听器详情。
         
@@ -4798,7 +4798,7 @@ class ElbClient(Client):
         return http_info
 
     def show_load_balancer(self, request):
-        """查询负载均衡器详情
+        r"""查询负载均衡器详情
 
         查询负载均衡器详情。
         
@@ -4863,7 +4863,7 @@ class ElbClient(Client):
         return http_info
 
     def show_load_balancer_status(self, request):
-        """查询负载均衡器状态树
+        r"""查询负载均衡器状态树
 
         查询负载均衡器状态树，包括负载均衡器及其关联的子资源的状态信息。
         注意：该接口中的operating_status不一定与对应资源的operating_status相同。
@@ -4931,7 +4931,7 @@ class ElbClient(Client):
         return http_info
 
     def show_logtank(self, request):
-        """查询云日志详情
+        r"""查询云日志详情
 
         云日志详情。[荷兰region不支持云日志功能，请勿使用。](tag:dt)
         
@@ -4996,7 +4996,7 @@ class ElbClient(Client):
         return http_info
 
     def show_master_slave_pool(self, request):
-        """查询主备后端服务器组详情
+        r"""查询主备后端服务器组详情
 
         主备后端服务器组详情。
         
@@ -5061,7 +5061,7 @@ class ElbClient(Client):
         return http_info
 
     def show_member(self, request):
-        """查询后端服务器详情
+        r"""查询后端服务器详情
 
         后端服务器详情。
         
@@ -5128,7 +5128,7 @@ class ElbClient(Client):
         return http_info
 
     def show_pool(self, request):
-        """查询后端服务器组详情
+        r"""查询后端服务器组详情
 
         后端服务器组详情。
         
@@ -5193,7 +5193,7 @@ class ElbClient(Client):
         return http_info
 
     def show_quota(self, request):
-        """查询配额详情
+        r"""查询配额详情
 
         查询指定项目中负载均衡相关的各类资源的当前配额。
         
@@ -5256,7 +5256,7 @@ class ElbClient(Client):
         return http_info
 
     def show_security_policy(self, request):
-        """查询自定义安全策略详情
+        r"""查询自定义安全策略详情
 
         查询自定义安全策略详情。[荷兰region不支持自定义安全策略功能，请勿使用。](tag:dt)
         
@@ -5321,7 +5321,7 @@ class ElbClient(Client):
         return http_info
 
     def update_certificate(self, request):
-        """更新证书
+        r"""更新证书
 
         更新证书。
         
@@ -5388,7 +5388,7 @@ class ElbClient(Client):
         return http_info
 
     def update_health_monitor(self, request):
-        """更新健康检查
+        r"""更新健康检查
 
         更新健康检查。
         
@@ -5455,7 +5455,7 @@ class ElbClient(Client):
         return http_info
 
     def update_l7_policy(self, request):
-        """更新转发策略
+        r"""更新转发策略
 
         更新七层转发策略。
         
@@ -5522,7 +5522,7 @@ class ElbClient(Client):
         return http_info
 
     def update_l7_rule(self, request):
-        """更新转发规则
+        r"""更新转发规则
 
         更新七层转发规则。
         
@@ -5591,7 +5591,7 @@ class ElbClient(Client):
         return http_info
 
     def update_listener(self, request):
-        """更新监听器
+        r"""更新监听器
 
         更新监听器。
         
@@ -5658,7 +5658,7 @@ class ElbClient(Client):
         return http_info
 
     def update_load_balancer(self, request):
-        """更新负载均衡器
+        r"""更新负载均衡器
 
         更新负载均衡器。
         
@@ -5725,7 +5725,7 @@ class ElbClient(Client):
         return http_info
 
     def update_logtank(self, request):
-        """更新云日志
+        r"""更新云日志
 
         更新云日志。[荷兰region不支持云日志功能，请勿使用。](tag:dt)
         
@@ -5792,7 +5792,7 @@ class ElbClient(Client):
         return http_info
 
     def update_member(self, request):
-        """更新后端服务器
+        r"""更新后端服务器
 
         更新后端服务器。
         
@@ -5861,7 +5861,7 @@ class ElbClient(Client):
         return http_info
 
     def update_pool(self, request):
-        """更新后端服务器组
+        r"""更新后端服务器组
 
         更新后端服务器组。
         
@@ -5928,7 +5928,7 @@ class ElbClient(Client):
         return http_info
 
     def update_security_policy(self, request):
-        """更新自定义安全策略
+        r"""更新自定义安全策略
 
         更新自定义安全策略。[荷兰region不支持自定义安全策略功能，请勿使用。](tag:dt)
         
@@ -5995,7 +5995,7 @@ class ElbClient(Client):
         return http_info
 
     def upgrade_loadbalancer(self, request):
-        """升级负载均衡器类型
+        r"""升级负载均衡器类型
 
         升级负载均衡器类型。支持将共享型ELB升级为独享型ELB，但不支持独享型降级为共享型。
         
@@ -6062,7 +6062,7 @@ class ElbClient(Client):
         return http_info
 
     def list_api_versions(self, request):
-        """查询API版本列表信息
+        r"""查询API版本列表信息
 
         返回ELB当前所有可用的API版本。
         
@@ -6125,7 +6125,7 @@ class ElbClient(Client):
         return http_info
 
     def batch_delete_ip_list(self, request):
-        """删除IP地址组的IP列表项
+        r"""删除IP地址组的IP列表项
 
         批量删除IP地址组的IP列表信息。[荷兰region不支持该API](tag:dt)
         
@@ -6192,7 +6192,7 @@ class ElbClient(Client):
         return http_info
 
     def count_preoccupy_ip_num(self, request):
-        """计算预占IP数
+        r"""计算预占IP数
 
         计算以下几种场景的预占用IP数量：
         
@@ -6291,7 +6291,7 @@ class ElbClient(Client):
         return http_info
 
     def create_ip_group(self, request):
-        """创建IP地址组
+        r"""创建IP地址组
 
         创建IP地址组。输入的ip可为ip地址、CIDR子网或者ip地址段，格式为ip-ip，例如10.12.3.1-10.12.3.10，支持IPV4和IPV6。
         
@@ -6360,7 +6360,7 @@ class ElbClient(Client):
         return http_info
 
     def delete_ip_group(self, request):
-        """删除IP地址组
+        r"""删除IP地址组
 
         删除ip地址组。[荷兰region不支持IP地址组功能，请勿使用。](tag:dt)
         
@@ -6425,7 +6425,7 @@ class ElbClient(Client):
         return http_info
 
     def list_ip_groups(self, request):
-        """查询IP地址组列表
+        r"""查询IP地址组列表
 
         查询IP地址组列表。[荷兰region不支持IP地址组功能，请勿使用。](tag:dt)
         
@@ -6509,7 +6509,7 @@ class ElbClient(Client):
         return http_info
 
     def show_ip_group(self, request):
-        """查询IP地址组详情
+        r"""查询IP地址组详情
 
         获取IP地址组详情。[荷兰region不支持IP地址组功能，请勿使用。](tag:dt)
         
@@ -6574,7 +6574,7 @@ class ElbClient(Client):
         return http_info
 
     def show_ip_group_related_listeners(self, request):
-        """查询IP地址组关联的监听器列表
+        r"""查询IP地址组关联的监听器列表
 
         查询IP地址组关联的监听器列表。
         
@@ -6639,7 +6639,7 @@ class ElbClient(Client):
         return http_info
 
     def update_ip_group(self, request):
-        """更新IP地址组
+        r"""更新IP地址组
 
         更新IP地址组，只支持全量更新IP。即IP地址组中的ip_list将被全量覆盖，不在请求参数中的IP地址将被移除。
         输入的ip可为ip地址、CIDR子网或者ip地址段，格式为ip-ip，例如10.12.3.1-10.12.3.10，支持IPV4和IPV6。
@@ -6711,7 +6711,7 @@ class ElbClient(Client):
         return http_info
 
     def update_ip_list(self, request):
-        """更新IP地址组的IP列表项
+        r"""更新IP地址组的IP列表项
 
         添加新的IP地址到IP地址组的IP列表信息，或更新已有IP地址的描述。[荷兰region不支持该API](tag:dt)
         

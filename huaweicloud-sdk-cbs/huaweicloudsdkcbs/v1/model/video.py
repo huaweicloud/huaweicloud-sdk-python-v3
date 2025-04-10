@@ -43,7 +43,7 @@ class Video:
     }
 
     def __init__(self, create_time=None, update_time=None, error_msg=None, id=None, name=None, progress=None, status=None, subtitle_url=None, video_url=None, video_shot=None):
-        """Video
+        r"""Video
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class Video:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Video.
+        r"""Gets the create_time of this Video.
 
         创建时间
 
@@ -111,7 +111,7 @@ class Video:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Video.
+        r"""Sets the create_time of this Video.
 
         创建时间
 
@@ -122,7 +122,7 @@ class Video:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Video.
+        r"""Gets the update_time of this Video.
 
         更新时间
 
@@ -133,7 +133,7 @@ class Video:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Video.
+        r"""Sets the update_time of this Video.
 
         更新时间
 
@@ -144,7 +144,7 @@ class Video:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this Video.
+        r"""Gets the error_msg of this Video.
 
         错误信息 如: {\\\"error_code\\\":\\\"0001\\\",\\\"error_msg\\\":\\\"播报内容超过10分钟，请重新调整播报内容。\\\"}
 
@@ -155,7 +155,7 @@ class Video:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this Video.
+        r"""Sets the error_msg of this Video.
 
         错误信息 如: {\\\"error_code\\\":\\\"0001\\\",\\\"error_msg\\\":\\\"播报内容超过10分钟，请重新调整播报内容。\\\"}
 
@@ -166,7 +166,7 @@ class Video:
 
     @property
     def id(self):
-        """Gets the id of this Video.
+        r"""Gets the id of this Video.
 
         
 
@@ -177,7 +177,7 @@ class Video:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Video.
+        r"""Sets the id of this Video.
 
         
 
@@ -188,7 +188,7 @@ class Video:
 
     @property
     def name(self):
-        """Gets the name of this Video.
+        r"""Gets the name of this Video.
 
         视频名称
 
@@ -199,7 +199,7 @@ class Video:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Video.
+        r"""Sets the name of this Video.
 
         视频名称
 
@@ -210,7 +210,7 @@ class Video:
 
     @property
     def progress(self):
-        """Gets the progress of this Video.
+        r"""Gets the progress of this Video.
 
         视频生成进度 0~100
 
@@ -221,7 +221,7 @@ class Video:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this Video.
+        r"""Sets the progress of this Video.
 
         视频生成进度 0~100
 
@@ -232,7 +232,7 @@ class Video:
 
     @property
     def status(self):
-        """Gets the status of this Video.
+        r"""Gets the status of this Video.
 
         0：未初始化 1：生成中 2：生成成功 3：生成失败
 
@@ -243,7 +243,7 @@ class Video:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Video.
+        r"""Sets the status of this Video.
 
         0：未初始化 1：生成中 2：生成成功 3：生成失败
 
@@ -254,7 +254,7 @@ class Video:
 
     @property
     def subtitle_url(self):
-        """Gets the subtitle_url of this Video.
+        r"""Gets the subtitle_url of this Video.
 
         字幕地址
 
@@ -265,7 +265,7 @@ class Video:
 
     @subtitle_url.setter
     def subtitle_url(self, subtitle_url):
-        """Sets the subtitle_url of this Video.
+        r"""Sets the subtitle_url of this Video.
 
         字幕地址
 
@@ -276,7 +276,7 @@ class Video:
 
     @property
     def video_url(self):
-        """Gets the video_url of this Video.
+        r"""Gets the video_url of this Video.
 
         视频的obs地址，当视频生成成功时返回
 
@@ -287,7 +287,7 @@ class Video:
 
     @video_url.setter
     def video_url(self, video_url):
-        """Sets the video_url of this Video.
+        r"""Sets the video_url of this Video.
 
         视频的obs地址，当视频生成成功时返回
 
@@ -298,7 +298,7 @@ class Video:
 
     @property
     def video_shot(self):
-        """Gets the video_shot of this Video.
+        r"""Gets the video_shot of this Video.
 
         视频截图地址，jpg格式 分辨率480 * 270 当status=2：生成成功时返回
 
@@ -309,7 +309,7 @@ class Video:
 
     @video_shot.setter
     def video_shot(self, video_shot):
-        """Sets the video_shot of this Video.
+        r"""Sets the video_shot of this Video.
 
         视频截图地址，jpg格式 分辨率480 * 270 当status=2：生成成功时返回
 

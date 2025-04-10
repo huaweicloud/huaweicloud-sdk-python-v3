@@ -25,7 +25,7 @@ class ClusterRing:
     }
 
     def __init__(self, ring_hosts=None):
-        """ClusterRing
+        r"""ClusterRing
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ClusterRing:
 
     @property
     def ring_hosts(self):
-        """Gets the ring_hosts of this ClusterRing.
+        r"""Gets the ring_hosts of this ClusterRing.
 
         集群主机信息
 
@@ -53,7 +53,7 @@ class ClusterRing:
 
     @ring_hosts.setter
     def ring_hosts(self, ring_hosts):
-        """Sets the ring_hosts of this ClusterRing.
+        r"""Sets the ring_hosts of this ClusterRing.
 
         集群主机信息
 

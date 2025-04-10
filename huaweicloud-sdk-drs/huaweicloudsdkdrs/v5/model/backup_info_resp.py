@@ -29,7 +29,7 @@ class BackupInfoResp:
     }
 
     def __init__(self, file_source=None, bucket_name=None, file_info=None):
-        """BackupInfoResp
+        r"""BackupInfoResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BackupInfoResp:
 
     @property
     def file_source(self):
-        """Gets the file_source of this BackupInfoResp.
+        r"""Gets the file_source of this BackupInfoResp.
 
         备份文件来源，包括OBS和RDS两种。
 
@@ -68,7 +68,7 @@ class BackupInfoResp:
 
     @file_source.setter
     def file_source(self, file_source):
-        """Sets the file_source of this BackupInfoResp.
+        r"""Sets the file_source of this BackupInfoResp.
 
         备份文件来源，包括OBS和RDS两种。
 
@@ -79,7 +79,7 @@ class BackupInfoResp:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this BackupInfoResp.
+        r"""Gets the bucket_name of this BackupInfoResp.
 
         OBS桶名称。
 
@@ -90,7 +90,7 @@ class BackupInfoResp:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this BackupInfoResp.
+        r"""Sets the bucket_name of this BackupInfoResp.
 
         OBS桶名称。
 
@@ -101,7 +101,7 @@ class BackupInfoResp:
 
     @property
     def file_info(self):
-        """Gets the file_info of this BackupInfoResp.
+        r"""Gets the file_info of this BackupInfoResp.
 
         备份文件列表。
 
@@ -112,7 +112,7 @@ class BackupInfoResp:
 
     @file_info.setter
     def file_info(self, file_info):
-        """Sets the file_info of this BackupInfoResp.
+        r"""Sets the file_info of this BackupInfoResp.
 
         备份文件列表。
 

@@ -29,7 +29,7 @@ class PublishPluginDTO:
     }
 
     def __init__(self, plugin_name=None, version=None, publisher_unique_id=None):
-        """PublishPluginDTO
+        r"""PublishPluginDTO
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PublishPluginDTO:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this PublishPluginDTO.
+        r"""Gets the plugin_name of this PublishPluginDTO.
 
         插件名
 
@@ -65,7 +65,7 @@ class PublishPluginDTO:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this PublishPluginDTO.
+        r"""Sets the plugin_name of this PublishPluginDTO.
 
         插件名
 
@@ -76,7 +76,7 @@ class PublishPluginDTO:
 
     @property
     def version(self):
-        """Gets the version of this PublishPluginDTO.
+        r"""Gets the version of this PublishPluginDTO.
 
         版本
 
@@ -87,7 +87,7 @@ class PublishPluginDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PublishPluginDTO.
+        r"""Sets the version of this PublishPluginDTO.
 
         版本
 
@@ -98,7 +98,7 @@ class PublishPluginDTO:
 
     @property
     def publisher_unique_id(self):
-        """Gets the publisher_unique_id of this PublishPluginDTO.
+        r"""Gets the publisher_unique_id of this PublishPluginDTO.
 
         发布商ID
 
@@ -109,7 +109,7 @@ class PublishPluginDTO:
 
     @publisher_unique_id.setter
     def publisher_unique_id(self, publisher_unique_id):
-        """Sets the publisher_unique_id of this PublishPluginDTO.
+        r"""Sets the publisher_unique_id of this PublishPluginDTO.
 
         发布商ID
 

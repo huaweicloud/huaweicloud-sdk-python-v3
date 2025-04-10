@@ -27,7 +27,7 @@ class MetaCert:
     }
 
     def __init__(self, id=None, name=None):
-        """MetaCert
+        r"""MetaCert
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MetaCert:
 
     @property
     def id(self):
-        """Gets the id of this MetaCert.
+        r"""Gets the id of this MetaCert.
 
         证书ID。
 
@@ -61,7 +61,7 @@ class MetaCert:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MetaCert.
+        r"""Sets the id of this MetaCert.
 
         证书ID。
 
@@ -72,7 +72,7 @@ class MetaCert:
 
     @property
     def name(self):
-        """Gets the name of this MetaCert.
+        r"""Gets the name of this MetaCert.
 
         证书名称。
 
@@ -83,7 +83,7 @@ class MetaCert:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MetaCert.
+        r"""Sets the name of this MetaCert.
 
         证书名称。
 

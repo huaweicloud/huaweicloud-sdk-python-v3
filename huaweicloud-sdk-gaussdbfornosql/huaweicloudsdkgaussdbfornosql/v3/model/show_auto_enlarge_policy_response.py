@@ -26,7 +26,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
     }
 
     def __init__(self, policy=None):
-        """ShowAutoEnlargePolicyResponse
+        r"""ShowAutoEnlargePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def policy(self):
-        """Gets the policy of this ShowAutoEnlargePolicyResponse.
+        r"""Gets the policy of this ShowAutoEnlargePolicyResponse.
 
         :return: The policy of this ShowAutoEnlargePolicyResponse.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DiskAutoExpansionPolicy`
@@ -53,7 +53,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this ShowAutoEnlargePolicyResponse.
+        r"""Sets the policy of this ShowAutoEnlargePolicyResponse.
 
         :param policy: The policy of this ShowAutoEnlargePolicyResponse.
         :type policy: :class:`huaweicloudsdkgaussdbfornosql.v3.DiskAutoExpansionPolicy`

@@ -27,7 +27,7 @@ class DownloadAddressForList:
     }
 
     def __init__(self, id=None, download_url=None):
-        """DownloadAddressForList
+        r"""DownloadAddressForList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DownloadAddressForList:
 
     @property
     def id(self):
-        """Gets the id of this DownloadAddressForList.
+        r"""Gets the id of this DownloadAddressForList.
 
         录屏记录（文件）UUID。
 
@@ -61,7 +61,7 @@ class DownloadAddressForList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DownloadAddressForList.
+        r"""Sets the id of this DownloadAddressForList.
 
         录屏记录（文件）UUID。
 
@@ -72,7 +72,7 @@ class DownloadAddressForList:
 
     @property
     def download_url(self):
-        """Gets the download_url of this DownloadAddressForList.
+        r"""Gets the download_url of this DownloadAddressForList.
 
         下载地址。
 
@@ -83,7 +83,7 @@ class DownloadAddressForList:
 
     @download_url.setter
     def download_url(self, download_url):
-        """Sets the download_url of this DownloadAddressForList.
+        r"""Sets the download_url of this DownloadAddressForList.
 
         下载地址。
 

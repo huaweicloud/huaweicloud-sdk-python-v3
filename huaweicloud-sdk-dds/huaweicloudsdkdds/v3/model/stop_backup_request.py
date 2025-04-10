@@ -27,7 +27,7 @@ class StopBackupRequest:
     }
 
     def __init__(self, backup_id=None, body=None):
-        """StopBackupRequest
+        r"""StopBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StopBackupRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this StopBackupRequest.
+        r"""Gets the backup_id of this StopBackupRequest.
 
         备份ID。
 
@@ -60,7 +60,7 @@ class StopBackupRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this StopBackupRequest.
+        r"""Sets the backup_id of this StopBackupRequest.
 
         备份ID。
 
@@ -71,7 +71,7 @@ class StopBackupRequest:
 
     @property
     def body(self):
-        """Gets the body of this StopBackupRequest.
+        r"""Gets the body of this StopBackupRequest.
 
         :return: The body of this StopBackupRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.StopBackupRequestBody`
@@ -80,7 +80,7 @@ class StopBackupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StopBackupRequest.
+        r"""Sets the body of this StopBackupRequest.
 
         :param body: The body of this StopBackupRequest.
         :type body: :class:`huaweicloudsdkdds.v3.StopBackupRequestBody`

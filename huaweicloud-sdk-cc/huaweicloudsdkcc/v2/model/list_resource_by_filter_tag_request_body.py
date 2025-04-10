@@ -33,7 +33,7 @@ class ListResourceByFilterTagRequestBody:
     }
 
     def __init__(self, action=None, limit=None, offset=None, tags=None, matches=None):
-        """ListResourceByFilterTagRequestBody
+        r"""ListResourceByFilterTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListResourceByFilterTagRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this ListResourceByFilterTagRequestBody.
+        r"""Gets the action of this ListResourceByFilterTagRequestBody.
 
         动作。|- filter：过滤。 count：查询总条数。
 
@@ -82,7 +82,7 @@ class ListResourceByFilterTagRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListResourceByFilterTagRequestBody.
+        r"""Sets the action of this ListResourceByFilterTagRequestBody.
 
         动作。|- filter：过滤。 count：查询总条数。
 
@@ -93,7 +93,7 @@ class ListResourceByFilterTagRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourceByFilterTagRequestBody.
+        r"""Gets the limit of this ListResourceByFilterTagRequestBody.
 
         查询结果数量限制
 
@@ -104,7 +104,7 @@ class ListResourceByFilterTagRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourceByFilterTagRequestBody.
+        r"""Sets the limit of this ListResourceByFilterTagRequestBody.
 
         查询结果数量限制
 
@@ -115,7 +115,7 @@ class ListResourceByFilterTagRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListResourceByFilterTagRequestBody.
+        r"""Gets the offset of this ListResourceByFilterTagRequestBody.
 
         查询结果偏移
 
@@ -126,7 +126,7 @@ class ListResourceByFilterTagRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListResourceByFilterTagRequestBody.
+        r"""Sets the offset of this ListResourceByFilterTagRequestBody.
 
         查询结果偏移
 
@@ -137,7 +137,7 @@ class ListResourceByFilterTagRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListResourceByFilterTagRequestBody.
+        r"""Gets the tags of this ListResourceByFilterTagRequestBody.
 
         是否包含以下tag（多个key取\"与\"关系，多个value取\"或\"关系）
 
@@ -148,7 +148,7 @@ class ListResourceByFilterTagRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListResourceByFilterTagRequestBody.
+        r"""Sets the tags of this ListResourceByFilterTagRequestBody.
 
         是否包含以下tag（多个key取\"与\"关系，多个value取\"或\"关系）
 
@@ -159,7 +159,7 @@ class ListResourceByFilterTagRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this ListResourceByFilterTagRequestBody.
+        r"""Gets the matches of this ListResourceByFilterTagRequestBody.
 
         是否匹配以下tag，key必须为\"resource_name\"，value如果有值则模糊匹配，如果为空字符串则精确匹配
 
@@ -170,7 +170,7 @@ class ListResourceByFilterTagRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ListResourceByFilterTagRequestBody.
+        r"""Sets the matches of this ListResourceByFilterTagRequestBody.
 
         是否匹配以下tag，key必须为\"resource_name\"，value如果有值则模糊匹配，如果为空字符串则精确匹配
 

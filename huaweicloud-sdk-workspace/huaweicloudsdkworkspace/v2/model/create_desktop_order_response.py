@@ -26,7 +26,7 @@ class CreateDesktopOrderResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None):
-        """CreateDesktopOrderResponse
+        r"""CreateDesktopOrderResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDesktopOrderResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateDesktopOrderResponse.
+        r"""Gets the order_id of this CreateDesktopOrderResponse.
 
         订单号，下单成功时返回订单ID。
 
@@ -55,7 +55,7 @@ class CreateDesktopOrderResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateDesktopOrderResponse.
+        r"""Sets the order_id of this CreateDesktopOrderResponse.
 
         订单号，下单成功时返回订单ID。
 

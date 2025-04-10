@@ -26,7 +26,7 @@ class CreateDrugLigandSimilarityGraphTaskResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateDrugLigandSimilarityGraphTaskResponse
+        r"""CreateDrugLigandSimilarityGraphTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDrugLigandSimilarityGraphTaskResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateDrugLigandSimilarityGraphTaskResponse.
+        r"""Gets the id of this CreateDrugLigandSimilarityGraphTaskResponse.
 
         任务ID
 
@@ -55,7 +55,7 @@ class CreateDrugLigandSimilarityGraphTaskResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDrugLigandSimilarityGraphTaskResponse.
+        r"""Sets the id of this CreateDrugLigandSimilarityGraphTaskResponse.
 
         任务ID
 

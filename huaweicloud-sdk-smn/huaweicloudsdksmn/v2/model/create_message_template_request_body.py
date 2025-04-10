@@ -29,7 +29,7 @@ class CreateMessageTemplateRequestBody:
     }
 
     def __init__(self, message_template_name=None, protocol=None, content=None):
-        """CreateMessageTemplateRequestBody
+        r"""CreateMessageTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateMessageTemplateRequestBody:
 
     @property
     def message_template_name(self):
-        """Gets the message_template_name of this CreateMessageTemplateRequestBody.
+        r"""Gets the message_template_name of this CreateMessageTemplateRequestBody.
 
         创建模板的名称。只能包含大写字母、小写字母、数字、-和_，且必须由大写字母、小写字母或数字开头，长度在1到64个字符之间。
 
@@ -65,7 +65,7 @@ class CreateMessageTemplateRequestBody:
 
     @message_template_name.setter
     def message_template_name(self, message_template_name):
-        """Sets the message_template_name of this CreateMessageTemplateRequestBody.
+        r"""Sets the message_template_name of this CreateMessageTemplateRequestBody.
 
         创建模板的名称。只能包含大写字母、小写字母、数字、-和_，且必须由大写字母、小写字母或数字开头，长度在1到64个字符之间。
 
@@ -76,7 +76,7 @@ class CreateMessageTemplateRequestBody:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreateMessageTemplateRequestBody.
+        r"""Gets the protocol of this CreateMessageTemplateRequestBody.
 
         模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
 
@@ -87,7 +87,7 @@ class CreateMessageTemplateRequestBody:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreateMessageTemplateRequestBody.
+        r"""Sets the protocol of this CreateMessageTemplateRequestBody.
 
         模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
 
@@ -98,7 +98,7 @@ class CreateMessageTemplateRequestBody:
 
     @property
     def content(self):
-        """Gets the content of this CreateMessageTemplateRequestBody.
+        r"""Gets the content of this CreateMessageTemplateRequestBody.
 
         模板内容，模板目前仅支持纯文本模式。模板内容不能空，最大支持256KB。
 
@@ -109,7 +109,7 @@ class CreateMessageTemplateRequestBody:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CreateMessageTemplateRequestBody.
+        r"""Sets the content of this CreateMessageTemplateRequestBody.
 
         模板内容，模板目前仅支持纯文本模式。模板内容不能空，最大支持256KB。
 

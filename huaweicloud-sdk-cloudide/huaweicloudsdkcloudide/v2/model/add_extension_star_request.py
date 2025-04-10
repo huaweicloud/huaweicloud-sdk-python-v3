@@ -25,7 +25,7 @@ class AddExtensionStarRequest:
     }
 
     def __init__(self, body=None):
-        """AddExtensionStarRequest
+        r"""AddExtensionStarRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddExtensionStarRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddExtensionStarRequest.
+        r"""Gets the body of this AddExtensionStarRequest.
 
         :return: The body of this AddExtensionStarRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.ExtensionStar`
@@ -52,7 +52,7 @@ class AddExtensionStarRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddExtensionStarRequest.
+        r"""Sets the body of this AddExtensionStarRequest.
 
         :param body: The body of this AddExtensionStarRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.ExtensionStar`

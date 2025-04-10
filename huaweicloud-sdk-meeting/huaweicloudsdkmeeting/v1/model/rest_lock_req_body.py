@@ -25,7 +25,7 @@ class RestLockReqBody:
     }
 
     def __init__(self, is_lock=None):
-        """RestLockReqBody
+        r"""RestLockReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestLockReqBody:
 
     @property
     def is_lock(self):
-        """Gets the is_lock of this RestLockReqBody.
+        r"""Gets the is_lock of this RestLockReqBody.
 
         - 0: 解锁 - 1: 锁定
 
@@ -53,7 +53,7 @@ class RestLockReqBody:
 
     @is_lock.setter
     def is_lock(self, is_lock):
-        """Sets the is_lock of this RestLockReqBody.
+        r"""Sets the is_lock of this RestLockReqBody.
 
         - 0: 解锁 - 1: 锁定
 

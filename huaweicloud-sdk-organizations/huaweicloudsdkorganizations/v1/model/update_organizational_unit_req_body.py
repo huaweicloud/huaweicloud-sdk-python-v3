@@ -25,7 +25,7 @@ class UpdateOrganizationalUnitReqBody:
     }
 
     def __init__(self, name=None):
-        """UpdateOrganizationalUnitReqBody
+        r"""UpdateOrganizationalUnitReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateOrganizationalUnitReqBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateOrganizationalUnitReqBody.
+        r"""Gets the name of this UpdateOrganizationalUnitReqBody.
 
         要分配给新组织单元的名称。
 
@@ -53,7 +53,7 @@ class UpdateOrganizationalUnitReqBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateOrganizationalUnitReqBody.
+        r"""Sets the name of this UpdateOrganizationalUnitReqBody.
 
         要分配给新组织单元的名称。
 

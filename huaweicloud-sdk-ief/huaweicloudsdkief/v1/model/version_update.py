@@ -41,7 +41,7 @@ class VersionUpdate:
     }
 
     def __init__(self, envs=None, volumes=None, configs=None, resources=None, command=None, args=None, liveness_probe=None, readiness_probe=None, npu_type=None):
-        """VersionUpdate
+        r"""VersionUpdate
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class VersionUpdate:
 
     @property
     def envs(self):
-        """Gets the envs of this VersionUpdate.
+        r"""Gets the envs of this VersionUpdate.
 
         环境变量
 
@@ -110,7 +110,7 @@ class VersionUpdate:
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this VersionUpdate.
+        r"""Sets the envs of this VersionUpdate.
 
         环境变量
 
@@ -121,7 +121,7 @@ class VersionUpdate:
 
     @property
     def volumes(self):
-        """Gets the volumes of this VersionUpdate.
+        r"""Gets the volumes of this VersionUpdate.
 
         卷配置
 
@@ -132,7 +132,7 @@ class VersionUpdate:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this VersionUpdate.
+        r"""Sets the volumes of this VersionUpdate.
 
         卷配置
 
@@ -143,7 +143,7 @@ class VersionUpdate:
 
     @property
     def configs(self):
-        """Gets the configs of this VersionUpdate.
+        r"""Gets the configs of this VersionUpdate.
 
         :return: The configs of this VersionUpdate.
         :rtype: :class:`huaweicloudsdkief.v1.AppConfigs`
@@ -152,7 +152,7 @@ class VersionUpdate:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this VersionUpdate.
+        r"""Sets the configs of this VersionUpdate.
 
         :param configs: The configs of this VersionUpdate.
         :type configs: :class:`huaweicloudsdkief.v1.AppConfigs`
@@ -161,7 +161,7 @@ class VersionUpdate:
 
     @property
     def resources(self):
-        """Gets the resources of this VersionUpdate.
+        r"""Gets the resources of this VersionUpdate.
 
         :return: The resources of this VersionUpdate.
         :rtype: :class:`huaweicloudsdkief.v1.Resources`
@@ -170,7 +170,7 @@ class VersionUpdate:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this VersionUpdate.
+        r"""Sets the resources of this VersionUpdate.
 
         :param resources: The resources of this VersionUpdate.
         :type resources: :class:`huaweicloudsdkief.v1.Resources`
@@ -179,7 +179,7 @@ class VersionUpdate:
 
     @property
     def command(self):
-        """Gets the command of this VersionUpdate.
+        r"""Gets the command of this VersionUpdate.
 
         启动命令
 
@@ -190,7 +190,7 @@ class VersionUpdate:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this VersionUpdate.
+        r"""Sets the command of this VersionUpdate.
 
         启动命令
 
@@ -201,7 +201,7 @@ class VersionUpdate:
 
     @property
     def args(self):
-        """Gets the args of this VersionUpdate.
+        r"""Gets the args of this VersionUpdate.
 
         参数
 
@@ -212,7 +212,7 @@ class VersionUpdate:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this VersionUpdate.
+        r"""Sets the args of this VersionUpdate.
 
         参数
 
@@ -223,7 +223,7 @@ class VersionUpdate:
 
     @property
     def liveness_probe(self):
-        """Gets the liveness_probe of this VersionUpdate.
+        r"""Gets the liveness_probe of this VersionUpdate.
 
         :return: The liveness_probe of this VersionUpdate.
         :rtype: :class:`huaweicloudsdkief.v1.ProbeDetail`
@@ -232,7 +232,7 @@ class VersionUpdate:
 
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
-        """Sets the liveness_probe of this VersionUpdate.
+        r"""Sets the liveness_probe of this VersionUpdate.
 
         :param liveness_probe: The liveness_probe of this VersionUpdate.
         :type liveness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
@@ -241,7 +241,7 @@ class VersionUpdate:
 
     @property
     def readiness_probe(self):
-        """Gets the readiness_probe of this VersionUpdate.
+        r"""Gets the readiness_probe of this VersionUpdate.
 
         :return: The readiness_probe of this VersionUpdate.
         :rtype: :class:`huaweicloudsdkief.v1.ProbeDetail`
@@ -250,7 +250,7 @@ class VersionUpdate:
 
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
-        """Sets the readiness_probe of this VersionUpdate.
+        r"""Sets the readiness_probe of this VersionUpdate.
 
         :param readiness_probe: The readiness_probe of this VersionUpdate.
         :type readiness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
@@ -259,7 +259,7 @@ class VersionUpdate:
 
     @property
     def npu_type(self):
-        """Gets the npu_type of this VersionUpdate.
+        r"""Gets the npu_type of this VersionUpdate.
 
         NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 
@@ -270,7 +270,7 @@ class VersionUpdate:
 
     @npu_type.setter
     def npu_type(self, npu_type):
-        """Sets the npu_type of this VersionUpdate.
+        r"""Sets the npu_type of this VersionUpdate.
 
         NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 

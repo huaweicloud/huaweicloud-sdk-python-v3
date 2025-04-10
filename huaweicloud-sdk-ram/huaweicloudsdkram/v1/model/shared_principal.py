@@ -31,7 +31,7 @@ class SharedPrincipal:
     }
 
     def __init__(self, resource_share_id=None, id=None, created_at=None, updated_at=None):
-        """SharedPrincipal
+        r"""SharedPrincipal
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SharedPrincipal:
 
     @property
     def resource_share_id(self):
-        """Gets the resource_share_id of this SharedPrincipal.
+        r"""Gets the resource_share_id of this SharedPrincipal.
 
         资源使用者绑定的资源共享实例的ID。
 
@@ -75,7 +75,7 @@ class SharedPrincipal:
 
     @resource_share_id.setter
     def resource_share_id(self, resource_share_id):
-        """Sets the resource_share_id of this SharedPrincipal.
+        r"""Sets the resource_share_id of this SharedPrincipal.
 
         资源使用者绑定的资源共享实例的ID。
 
@@ -86,7 +86,7 @@ class SharedPrincipal:
 
     @property
     def id(self):
-        """Gets the id of this SharedPrincipal.
+        r"""Gets the id of this SharedPrincipal.
 
         资源使用者的账号ID或URN。
 
@@ -97,7 +97,7 @@ class SharedPrincipal:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SharedPrincipal.
+        r"""Sets the id of this SharedPrincipal.
 
         资源使用者的账号ID或URN。
 
@@ -108,7 +108,7 @@ class SharedPrincipal:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SharedPrincipal.
+        r"""Gets the created_at of this SharedPrincipal.
 
         资源使用者与资源共享实例关联的时间。
 
@@ -119,7 +119,7 @@ class SharedPrincipal:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SharedPrincipal.
+        r"""Sets the created_at of this SharedPrincipal.
 
         资源使用者与资源共享实例关联的时间。
 
@@ -130,7 +130,7 @@ class SharedPrincipal:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SharedPrincipal.
+        r"""Gets the updated_at of this SharedPrincipal.
 
         最后一次更新资源共享实例的时间。
 
@@ -141,7 +141,7 @@ class SharedPrincipal:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SharedPrincipal.
+        r"""Sets the updated_at of this SharedPrincipal.
 
         最后一次更新资源共享实例的时间。
 

@@ -30,7 +30,7 @@ class ShowGenerationTaskResultResponse(SdkResponse):
     }
 
     def __init__(self, status=None, task_data=None, result=None):
-        """ShowGenerationTaskResultResponse
+        r"""ShowGenerationTaskResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowGenerationTaskResultResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowGenerationTaskResultResponse.
+        r"""Gets the status of this ShowGenerationTaskResultResponse.
 
         :return: The status of this ShowGenerationTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.AsyncTaskStatus`
@@ -67,7 +67,7 @@ class ShowGenerationTaskResultResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowGenerationTaskResultResponse.
+        r"""Sets the status of this ShowGenerationTaskResultResponse.
 
         :param status: The status of this ShowGenerationTaskResultResponse.
         :type status: :class:`huaweicloudsdkeihealth.v1.AsyncTaskStatus`
@@ -76,7 +76,7 @@ class ShowGenerationTaskResultResponse(SdkResponse):
 
     @property
     def task_data(self):
-        """Gets the task_data of this ShowGenerationTaskResultResponse.
+        r"""Gets the task_data of this ShowGenerationTaskResultResponse.
 
         :return: The task_data of this ShowGenerationTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.GenerationTaskData`
@@ -85,7 +85,7 @@ class ShowGenerationTaskResultResponse(SdkResponse):
 
     @task_data.setter
     def task_data(self, task_data):
-        """Sets the task_data of this ShowGenerationTaskResultResponse.
+        r"""Sets the task_data of this ShowGenerationTaskResultResponse.
 
         :param task_data: The task_data of this ShowGenerationTaskResultResponse.
         :type task_data: :class:`huaweicloudsdkeihealth.v1.GenerationTaskData`
@@ -94,7 +94,7 @@ class ShowGenerationTaskResultResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowGenerationTaskResultResponse.
+        r"""Gets the result of this ShowGenerationTaskResultResponse.
 
         :return: The result of this ShowGenerationTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.GenerationResult`
@@ -103,7 +103,7 @@ class ShowGenerationTaskResultResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowGenerationTaskResultResponse.
+        r"""Sets the result of this ShowGenerationTaskResultResponse.
 
         :param result: The result of this ShowGenerationTaskResultResponse.
         :type result: :class:`huaweicloudsdkeihealth.v1.GenerationResult`

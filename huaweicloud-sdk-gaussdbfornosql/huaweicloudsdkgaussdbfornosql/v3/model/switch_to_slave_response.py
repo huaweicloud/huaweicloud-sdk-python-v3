@@ -26,7 +26,7 @@ class SwitchToSlaveResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """SwitchToSlaveResponse
+        r"""SwitchToSlaveResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchToSlaveResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this SwitchToSlaveResponse.
+        r"""Gets the job_id of this SwitchToSlaveResponse.
 
         容灾实例主备倒换的工作ID。
 
@@ -55,7 +55,7 @@ class SwitchToSlaveResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SwitchToSlaveResponse.
+        r"""Sets the job_id of this SwitchToSlaveResponse.
 
         容灾实例主备倒换的工作ID。
 

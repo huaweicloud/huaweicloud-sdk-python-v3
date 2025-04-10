@@ -35,7 +35,7 @@ class ListInteractionRuleGroupsRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None, create_since=None, create_until=None, group_name=None):
-        """ListInteractionRuleGroupsRequest
+        r"""ListInteractionRuleGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListInteractionRuleGroupsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListInteractionRuleGroupsRequest.
+        r"""Gets the x_app_user_id of this ListInteractionRuleGroupsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -89,7 +89,7 @@ class ListInteractionRuleGroupsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListInteractionRuleGroupsRequest.
+        r"""Sets the x_app_user_id of this ListInteractionRuleGroupsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -100,7 +100,7 @@ class ListInteractionRuleGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInteractionRuleGroupsRequest.
+        r"""Gets the offset of this ListInteractionRuleGroupsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -111,7 +111,7 @@ class ListInteractionRuleGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInteractionRuleGroupsRequest.
+        r"""Sets the offset of this ListInteractionRuleGroupsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -122,7 +122,7 @@ class ListInteractionRuleGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInteractionRuleGroupsRequest.
+        r"""Gets the limit of this ListInteractionRuleGroupsRequest.
 
         每页显示的条目数量。
 
@@ -133,7 +133,7 @@ class ListInteractionRuleGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInteractionRuleGroupsRequest.
+        r"""Sets the limit of this ListInteractionRuleGroupsRequest.
 
         每页显示的条目数量。
 
@@ -144,7 +144,7 @@ class ListInteractionRuleGroupsRequest:
 
     @property
     def create_since(self):
-        """Gets the create_since of this ListInteractionRuleGroupsRequest.
+        r"""Gets the create_since of this ListInteractionRuleGroupsRequest.
 
         过滤创建时间>=输入时间的记录。
 
@@ -155,7 +155,7 @@ class ListInteractionRuleGroupsRequest:
 
     @create_since.setter
     def create_since(self, create_since):
-        """Sets the create_since of this ListInteractionRuleGroupsRequest.
+        r"""Sets the create_since of this ListInteractionRuleGroupsRequest.
 
         过滤创建时间>=输入时间的记录。
 
@@ -166,7 +166,7 @@ class ListInteractionRuleGroupsRequest:
 
     @property
     def create_until(self):
-        """Gets the create_until of this ListInteractionRuleGroupsRequest.
+        r"""Gets the create_until of this ListInteractionRuleGroupsRequest.
 
         过滤创建时间<=输入时间的记录。
 
@@ -177,7 +177,7 @@ class ListInteractionRuleGroupsRequest:
 
     @create_until.setter
     def create_until(self, create_until):
-        """Sets the create_until of this ListInteractionRuleGroupsRequest.
+        r"""Sets the create_until of this ListInteractionRuleGroupsRequest.
 
         过滤创建时间<=输入时间的记录。
 
@@ -188,7 +188,7 @@ class ListInteractionRuleGroupsRequest:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ListInteractionRuleGroupsRequest.
+        r"""Gets the group_name of this ListInteractionRuleGroupsRequest.
 
         规则库名称
 
@@ -199,7 +199,7 @@ class ListInteractionRuleGroupsRequest:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ListInteractionRuleGroupsRequest.
+        r"""Sets the group_name of this ListInteractionRuleGroupsRequest.
 
         规则库名称
 

@@ -33,7 +33,7 @@ class CreateLoadBalancerPublicIpOption:
     }
 
     def __init__(self, ip_version=None, network_type=None, billing_info=None, description=None, bandwidth=None):
-        """CreateLoadBalancerPublicIpOption
+        r"""CreateLoadBalancerPublicIpOption
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateLoadBalancerPublicIpOption:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this CreateLoadBalancerPublicIpOption.
+        r"""Gets the ip_version of this CreateLoadBalancerPublicIpOption.
 
         参数解释：IP版本。  约束限制：取值只有4和6。4：IPv4, 6: IPv6。 [不支持IPv6，请勿设置为6。](tag:dt)  取值范围：  - 4：表示IPv4。  - 6：表示IPv6。  默认取值：4
 
@@ -80,7 +80,7 @@ class CreateLoadBalancerPublicIpOption:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this CreateLoadBalancerPublicIpOption.
+        r"""Sets the ip_version of this CreateLoadBalancerPublicIpOption.
 
         参数解释：IP版本。  约束限制：取值只有4和6。4：IPv4, 6: IPv6。 [不支持IPv6，请勿设置为6。](tag:dt)  取值范围：  - 4：表示IPv4。  - 6：表示IPv6。  默认取值：4
 
@@ -91,7 +91,7 @@ class CreateLoadBalancerPublicIpOption:
 
     @property
     def network_type(self):
-        """Gets the network_type of this CreateLoadBalancerPublicIpOption.
+        r"""Gets the network_type of this CreateLoadBalancerPublicIpOption.
 
         参数解释：弹性公网IP的网络类型，默认5_bgp，更多请参考弹性公网ip创建。  [约束限制：华南-深圳局点该参数取值只能为5_gray。](tag:hws) [约束限制：只支持设置为5_gray。](tag:dt)  取值范围：5_bgp。  默认取值：5_bgp。
 
@@ -102,7 +102,7 @@ class CreateLoadBalancerPublicIpOption:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this CreateLoadBalancerPublicIpOption.
+        r"""Sets the network_type of this CreateLoadBalancerPublicIpOption.
 
         参数解释：弹性公网IP的网络类型，默认5_bgp，更多请参考弹性公网ip创建。  [约束限制：华南-深圳局点该参数取值只能为5_gray。](tag:hws) [约束限制：只支持设置为5_gray。](tag:dt)  取值范围：5_bgp。  默认取值：5_bgp。
 
@@ -113,7 +113,7 @@ class CreateLoadBalancerPublicIpOption:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this CreateLoadBalancerPublicIpOption.
+        r"""Gets the billing_info of this CreateLoadBalancerPublicIpOption.
 
         参数解释：计费订单信息。  约束限制： - 空：按需计费。 [ - 非空：包周期计费。格式：order_id:product_id:region_id:project_id ](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
@@ -124,7 +124,7 @@ class CreateLoadBalancerPublicIpOption:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this CreateLoadBalancerPublicIpOption.
+        r"""Sets the billing_info of this CreateLoadBalancerPublicIpOption.
 
         参数解释：计费订单信息。  约束限制： - 空：按需计费。 [ - 非空：包周期计费。格式：order_id:product_id:region_id:project_id ](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
@@ -135,7 +135,7 @@ class CreateLoadBalancerPublicIpOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateLoadBalancerPublicIpOption.
+        r"""Gets the description of this CreateLoadBalancerPublicIpOption.
 
         参数解释：弹性公网IP的描述信息。
 
@@ -146,7 +146,7 @@ class CreateLoadBalancerPublicIpOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateLoadBalancerPublicIpOption.
+        r"""Sets the description of this CreateLoadBalancerPublicIpOption.
 
         参数解释：弹性公网IP的描述信息。
 
@@ -157,7 +157,7 @@ class CreateLoadBalancerPublicIpOption:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this CreateLoadBalancerPublicIpOption.
+        r"""Gets the bandwidth of this CreateLoadBalancerPublicIpOption.
 
         :return: The bandwidth of this CreateLoadBalancerPublicIpOption.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerBandwidthOption`
@@ -166,7 +166,7 @@ class CreateLoadBalancerPublicIpOption:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this CreateLoadBalancerPublicIpOption.
+        r"""Sets the bandwidth of this CreateLoadBalancerPublicIpOption.
 
         :param bandwidth: The bandwidth of this CreateLoadBalancerPublicIpOption.
         :type bandwidth: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerBandwidthOption`

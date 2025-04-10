@@ -25,7 +25,7 @@ class UpdateDesktopSidReq:
     }
 
     def __init__(self, desktop_ids=None):
-        """UpdateDesktopSidReq
+        r"""UpdateDesktopSidReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateDesktopSidReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this UpdateDesktopSidReq.
+        r"""Gets the desktop_ids of this UpdateDesktopSidReq.
 
         虚拟机列表
 
@@ -53,7 +53,7 @@ class UpdateDesktopSidReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this UpdateDesktopSidReq.
+        r"""Sets the desktop_ids of this UpdateDesktopSidReq.
 
         虚拟机列表
 

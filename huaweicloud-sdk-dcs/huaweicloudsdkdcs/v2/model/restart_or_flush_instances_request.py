@@ -25,7 +25,7 @@ class RestartOrFlushInstancesRequest:
     }
 
     def __init__(self, body=None):
-        """RestartOrFlushInstancesRequest
+        r"""RestartOrFlushInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RestartOrFlushInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this RestartOrFlushInstancesRequest.
+        r"""Gets the body of this RestartOrFlushInstancesRequest.
 
         :return: The body of this RestartOrFlushInstancesRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.ChangeInstanceStatusBody`
@@ -52,7 +52,7 @@ class RestartOrFlushInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestartOrFlushInstancesRequest.
+        r"""Sets the body of this RestartOrFlushInstancesRequest.
 
         :param body: The body of this RestartOrFlushInstancesRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.ChangeInstanceStatusBody`

@@ -37,7 +37,7 @@ class UpdateRuleReq:
     }
 
     def __init__(self, type=None, name=None, layout_content=None, plugin_id=None, plugin_name=None, plugin_version=None, content=None):
-        """UpdateRuleReq
+        r"""UpdateRuleReq
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class UpdateRuleReq:
 
     @property
     def type(self):
-        """Gets the type of this UpdateRuleReq.
+        r"""Gets the type of this UpdateRuleReq.
 
         规则类型
 
@@ -92,7 +92,7 @@ class UpdateRuleReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateRuleReq.
+        r"""Sets the type of this UpdateRuleReq.
 
         规则类型
 
@@ -103,7 +103,7 @@ class UpdateRuleReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateRuleReq.
+        r"""Gets the name of this UpdateRuleReq.
 
         规则名称
 
@@ -114,7 +114,7 @@ class UpdateRuleReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateRuleReq.
+        r"""Sets the name of this UpdateRuleReq.
 
         规则名称
 
@@ -125,7 +125,7 @@ class UpdateRuleReq:
 
     @property
     def layout_content(self):
-        """Gets the layout_content of this UpdateRuleReq.
+        r"""Gets the layout_content of this UpdateRuleReq.
 
         布局内容
 
@@ -136,7 +136,7 @@ class UpdateRuleReq:
 
     @layout_content.setter
     def layout_content(self, layout_content):
-        """Sets the layout_content of this UpdateRuleReq.
+        r"""Sets the layout_content of this UpdateRuleReq.
 
         布局内容
 
@@ -147,7 +147,7 @@ class UpdateRuleReq:
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this UpdateRuleReq.
+        r"""Gets the plugin_id of this UpdateRuleReq.
 
         插件ID
 
@@ -158,7 +158,7 @@ class UpdateRuleReq:
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this UpdateRuleReq.
+        r"""Sets the plugin_id of this UpdateRuleReq.
 
         插件ID
 
@@ -169,7 +169,7 @@ class UpdateRuleReq:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this UpdateRuleReq.
+        r"""Gets the plugin_name of this UpdateRuleReq.
 
         插件名称
 
@@ -180,7 +180,7 @@ class UpdateRuleReq:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this UpdateRuleReq.
+        r"""Sets the plugin_name of this UpdateRuleReq.
 
         插件名称
 
@@ -191,7 +191,7 @@ class UpdateRuleReq:
 
     @property
     def plugin_version(self):
-        """Gets the plugin_version of this UpdateRuleReq.
+        r"""Gets the plugin_version of this UpdateRuleReq.
 
         插件版本号
 
@@ -202,7 +202,7 @@ class UpdateRuleReq:
 
     @plugin_version.setter
     def plugin_version(self, plugin_version):
-        """Sets the plugin_version of this UpdateRuleReq.
+        r"""Sets the plugin_version of this UpdateRuleReq.
 
         插件版本号
 
@@ -213,7 +213,7 @@ class UpdateRuleReq:
 
     @property
     def content(self):
-        """Gets the content of this UpdateRuleReq.
+        r"""Gets the content of this UpdateRuleReq.
 
         规则属性集
 
@@ -224,7 +224,7 @@ class UpdateRuleReq:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this UpdateRuleReq.
+        r"""Sets the content of this UpdateRuleReq.
 
         规则属性集
 

@@ -60,7 +60,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
     }
 
     def __init__(self, project_id=None, asset_id=None, asset_name=None, asset_description=None, app_user_id=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, reason=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, asset_order=None, supported_service=None, x_request_id=None):
-        """UpdateDigitalAssetResponse
+        r"""UpdateDigitalAssetResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateDigitalAssetResponse.
+        r"""Gets the project_id of this UpdateDigitalAssetResponse.
 
         租户id
 
@@ -174,7 +174,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateDigitalAssetResponse.
+        r"""Sets the project_id of this UpdateDigitalAssetResponse.
 
         租户id
 
@@ -185,7 +185,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this UpdateDigitalAssetResponse.
+        r"""Gets the asset_id of this UpdateDigitalAssetResponse.
 
         资产ID。
 
@@ -196,7 +196,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this UpdateDigitalAssetResponse.
+        r"""Sets the asset_id of this UpdateDigitalAssetResponse.
 
         资产ID。
 
@@ -207,7 +207,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def asset_name(self):
-        """Gets the asset_name of this UpdateDigitalAssetResponse.
+        r"""Gets the asset_name of this UpdateDigitalAssetResponse.
 
         资产名称。
 
@@ -218,7 +218,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @asset_name.setter
     def asset_name(self, asset_name):
-        """Sets the asset_name of this UpdateDigitalAssetResponse.
+        r"""Sets the asset_name of this UpdateDigitalAssetResponse.
 
         资产名称。
 
@@ -229,7 +229,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def asset_description(self):
-        """Gets the asset_description of this UpdateDigitalAssetResponse.
+        r"""Gets the asset_description of this UpdateDigitalAssetResponse.
 
         资产描述。
 
@@ -240,7 +240,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @asset_description.setter
     def asset_description(self, asset_description):
-        """Sets the asset_description of this UpdateDigitalAssetResponse.
+        r"""Sets the asset_description of this UpdateDigitalAssetResponse.
 
         资产描述。
 
@@ -251,7 +251,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def app_user_id(self):
-        """Gets the app_user_id of this UpdateDigitalAssetResponse.
+        r"""Gets the app_user_id of this UpdateDigitalAssetResponse.
 
         第三方用户ID。 > * 即创建资产是通过X-App-UserId头域传入的值。
 
@@ -262,7 +262,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @app_user_id.setter
     def app_user_id(self, app_user_id):
-        """Sets the app_user_id of this UpdateDigitalAssetResponse.
+        r"""Sets the app_user_id of this UpdateDigitalAssetResponse.
 
         第三方用户ID。 > * 即创建资产是通过X-App-UserId头域传入的值。
 
@@ -273,7 +273,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateDigitalAssetResponse.
+        r"""Gets the create_time of this UpdateDigitalAssetResponse.
 
         资产创建时间。
 
@@ -284,7 +284,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateDigitalAssetResponse.
+        r"""Sets the create_time of this UpdateDigitalAssetResponse.
 
         资产创建时间。
 
@@ -295,7 +295,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateDigitalAssetResponse.
+        r"""Gets the update_time of this UpdateDigitalAssetResponse.
 
         资产更新时间。
 
@@ -306,7 +306,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateDigitalAssetResponse.
+        r"""Sets the update_time of this UpdateDigitalAssetResponse.
 
         资产更新时间。
 
@@ -317,7 +317,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def asset_type(self):
-        """Gets the asset_type of this UpdateDigitalAssetResponse.
+        r"""Gets the asset_type of this UpdateDigitalAssetResponse.
 
         资产类型。  公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产类型： * HUMAN_MODEL_2D：分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产类型： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
 
@@ -328,7 +328,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @asset_type.setter
     def asset_type(self, asset_type):
-        """Sets the asset_type of this UpdateDigitalAssetResponse.
+        r"""Sets the asset_type of this UpdateDigitalAssetResponse.
 
         资产类型。  公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产类型： * HUMAN_MODEL_2D：分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产类型： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
 
@@ -339,7 +339,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def asset_state(self):
-        """Gets the asset_state of this UpdateDigitalAssetResponse.
+        r"""Gets the asset_state of this UpdateDigitalAssetResponse.
 
         资产状态。 * CREATING：资产创建中，主文件尚未上传 * FAILED：主文件上传失败 * UNACTIVED：主文件上传成功，资产未激活，资产不可用于其他业务（用户可更新状态） * ACTIVED：主文件上传成功，资产激活，资产可用于其他业务（用户可更新状态） * DELETING：资产删除中，资产不可用，资产可恢复 * DELETED：资产文件已删除，资产不可用，资产不可恢复 * BLOCK: 资产被冻结，资产不可用，不可查看文件。 * WAITING_DELETE：资产将被下线
 
@@ -350,7 +350,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @asset_state.setter
     def asset_state(self, asset_state):
-        """Sets the asset_state of this UpdateDigitalAssetResponse.
+        r"""Sets the asset_state of this UpdateDigitalAssetResponse.
 
         资产状态。 * CREATING：资产创建中，主文件尚未上传 * FAILED：主文件上传失败 * UNACTIVED：主文件上传成功，资产未激活，资产不可用于其他业务（用户可更新状态） * ACTIVED：主文件上传成功，资产激活，资产可用于其他业务（用户可更新状态） * DELETING：资产删除中，资产不可用，资产可恢复 * DELETED：资产文件已删除，资产不可用，资产不可恢复 * BLOCK: 资产被冻结，资产不可用，不可查看文件。 * WAITING_DELETE：资产将被下线
 
@@ -361,7 +361,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def fail_type(self):
-        """Gets the fail_type of this UpdateDigitalAssetResponse.
+        r"""Gets the fail_type of this UpdateDigitalAssetResponse.
 
         失败原因。 * AUTOMATIC_REVIEW_REJECT：自动审核失败 * MANUAL_REVIEW_REJECT：人工审核失败
 
@@ -372,7 +372,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @fail_type.setter
     def fail_type(self, fail_type):
-        """Sets the fail_type of this UpdateDigitalAssetResponse.
+        r"""Sets the fail_type of this UpdateDigitalAssetResponse.
 
         失败原因。 * AUTOMATIC_REVIEW_REJECT：自动审核失败 * MANUAL_REVIEW_REJECT：人工审核失败
 
@@ -383,7 +383,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def reason(self):
-        """Gets the reason of this UpdateDigitalAssetResponse.
+        r"""Gets the reason of this UpdateDigitalAssetResponse.
 
         冻结/解冻/失败 原因。
 
@@ -394,7 +394,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this UpdateDigitalAssetResponse.
+        r"""Sets the reason of this UpdateDigitalAssetResponse.
 
         冻结/解冻/失败 原因。
 
@@ -405,7 +405,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateDigitalAssetResponse.
+        r"""Gets the tags of this UpdateDigitalAssetResponse.
 
         标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
 
@@ -416,7 +416,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateDigitalAssetResponse.
+        r"""Sets the tags of this UpdateDigitalAssetResponse.
 
         标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
 
@@ -427,7 +427,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def asset_extra_meta(self):
-        """Gets the asset_extra_meta of this UpdateDigitalAssetResponse.
+        r"""Gets the asset_extra_meta of this UpdateDigitalAssetResponse.
 
         :return: The asset_extra_meta of this UpdateDigitalAssetResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
@@ -436,7 +436,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @asset_extra_meta.setter
     def asset_extra_meta(self, asset_extra_meta):
-        """Sets the asset_extra_meta of this UpdateDigitalAssetResponse.
+        r"""Sets the asset_extra_meta of this UpdateDigitalAssetResponse.
 
         :param asset_extra_meta: The asset_extra_meta of this UpdateDigitalAssetResponse.
         :type asset_extra_meta: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
@@ -445,7 +445,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def system_properties(self):
-        """Gets the system_properties of this UpdateDigitalAssetResponse.
+        r"""Gets the system_properties of this UpdateDigitalAssetResponse.
 
         设置系统属性。
 
@@ -456,7 +456,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @system_properties.setter
     def system_properties(self, system_properties):
-        """Sets the system_properties of this UpdateDigitalAssetResponse.
+        r"""Sets the system_properties of this UpdateDigitalAssetResponse.
 
         设置系统属性。
 
@@ -467,7 +467,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def files(self):
-        """Gets the files of this UpdateDigitalAssetResponse.
+        r"""Gets the files of this UpdateDigitalAssetResponse.
 
         资产下的文件。
 
@@ -478,7 +478,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @files.setter
     def files(self, files):
-        """Sets the files of this UpdateDigitalAssetResponse.
+        r"""Sets the files of this UpdateDigitalAssetResponse.
 
         资产下的文件。
 
@@ -489,7 +489,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def asset_order(self):
-        """Gets the asset_order of this UpdateDigitalAssetResponse.
+        r"""Gets the asset_order of this UpdateDigitalAssetResponse.
 
         展示顺序
 
@@ -500,7 +500,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @asset_order.setter
     def asset_order(self, asset_order):
-        """Sets the asset_order of this UpdateDigitalAssetResponse.
+        r"""Sets the asset_order of this UpdateDigitalAssetResponse.
 
         展示顺序
 
@@ -511,7 +511,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def supported_service(self):
-        """Gets the supported_service of this UpdateDigitalAssetResponse.
+        r"""Gets the supported_service of this UpdateDigitalAssetResponse.
 
         支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 
@@ -522,7 +522,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @supported_service.setter
     def supported_service(self, supported_service):
-        """Sets the supported_service of this UpdateDigitalAssetResponse.
+        r"""Sets the supported_service of this UpdateDigitalAssetResponse.
 
         支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 
@@ -533,7 +533,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateDigitalAssetResponse.
+        r"""Gets the x_request_id of this UpdateDigitalAssetResponse.
 
         :return: The x_request_id of this UpdateDigitalAssetResponse.
         :rtype: str
@@ -542,7 +542,7 @@ class UpdateDigitalAssetResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateDigitalAssetResponse.
+        r"""Sets the x_request_id of this UpdateDigitalAssetResponse.
 
         :param x_request_id: The x_request_id of this UpdateDigitalAssetResponse.
         :type x_request_id: str

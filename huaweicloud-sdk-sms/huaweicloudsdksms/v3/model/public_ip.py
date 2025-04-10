@@ -29,7 +29,7 @@ class PublicIp:
     }
 
     def __init__(self, type=None, bandwidth_size=None, bandwidth_share_type=None):
-        """PublicIp
+        r"""PublicIp
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class PublicIp:
 
     @property
     def type(self):
-        """Gets the type of this PublicIp.
+        r"""Gets the type of this PublicIp.
 
         弹性公网IP类型，默认为5_bgp
 
@@ -66,7 +66,7 @@ class PublicIp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PublicIp.
+        r"""Sets the type of this PublicIp.
 
         弹性公网IP类型，默认为5_bgp
 
@@ -77,7 +77,7 @@ class PublicIp:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this PublicIp.
+        r"""Gets the bandwidth_size of this PublicIp.
 
         带宽大小，单位：Mbit/s。 调整带宽时的最小单位会根据带宽范围不同存在差异。 小于等于300Mbit/s，默认最小单位为1Mbit/s。300Mbit/s~1000Mbit/s，默认最小单位为50Mbit/s。大于1000Mbit/s：默认最小单位为500Mbit/s。
 
@@ -88,7 +88,7 @@ class PublicIp:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this PublicIp.
+        r"""Sets the bandwidth_size of this PublicIp.
 
         带宽大小，单位：Mbit/s。 调整带宽时的最小单位会根据带宽范围不同存在差异。 小于等于300Mbit/s，默认最小单位为1Mbit/s。300Mbit/s~1000Mbit/s，默认最小单位为50Mbit/s。大于1000Mbit/s：默认最小单位为500Mbit/s。
 
@@ -99,7 +99,7 @@ class PublicIp:
 
     @property
     def bandwidth_share_type(self):
-        """Gets the bandwidth_share_type of this PublicIp.
+        r"""Gets the bandwidth_share_type of this PublicIp.
 
         带宽共享类型
 
@@ -110,7 +110,7 @@ class PublicIp:
 
     @bandwidth_share_type.setter
     def bandwidth_share_type(self, bandwidth_share_type):
-        """Sets the bandwidth_share_type of this PublicIp.
+        r"""Sets the bandwidth_share_type of this PublicIp.
 
         带宽共享类型
 

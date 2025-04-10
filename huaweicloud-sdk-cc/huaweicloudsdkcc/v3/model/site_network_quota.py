@@ -31,7 +31,7 @@ class SiteNetworkQuota:
     }
 
     def __init__(self, quota_key=None, quota_limit=None, used=None, unit=None):
-        """SiteNetworkQuota
+        r"""SiteNetworkQuota
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class SiteNetworkQuota:
 
     @property
     def quota_key(self):
-        """Gets the quota_key of this SiteNetworkQuota.
+        r"""Gets the quota_key of this SiteNetworkQuota.
 
         :return: The quota_key of this SiteNetworkQuota.
         :rtype: :class:`huaweicloudsdkcc.v3.SiteNetworkQuotaKeyEnum`
@@ -69,7 +69,7 @@ class SiteNetworkQuota:
 
     @quota_key.setter
     def quota_key(self, quota_key):
-        """Sets the quota_key of this SiteNetworkQuota.
+        r"""Sets the quota_key of this SiteNetworkQuota.
 
         :param quota_key: The quota_key of this SiteNetworkQuota.
         :type quota_key: :class:`huaweicloudsdkcc.v3.SiteNetworkQuotaKeyEnum`
@@ -78,7 +78,7 @@ class SiteNetworkQuota:
 
     @property
     def quota_limit(self):
-        """Gets the quota_limit of this SiteNetworkQuota.
+        r"""Gets the quota_limit of this SiteNetworkQuota.
 
         配额大小。
 
@@ -89,7 +89,7 @@ class SiteNetworkQuota:
 
     @quota_limit.setter
     def quota_limit(self, quota_limit):
-        """Sets the quota_limit of this SiteNetworkQuota.
+        r"""Sets the quota_limit of this SiteNetworkQuota.
 
         配额大小。
 
@@ -100,7 +100,7 @@ class SiteNetworkQuota:
 
     @property
     def used(self):
-        """Gets the used of this SiteNetworkQuota.
+        r"""Gets the used of this SiteNetworkQuota.
 
         已使用配额。
 
@@ -111,7 +111,7 @@ class SiteNetworkQuota:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this SiteNetworkQuota.
+        r"""Sets the used of this SiteNetworkQuota.
 
         已使用配额。
 
@@ -122,7 +122,7 @@ class SiteNetworkQuota:
 
     @property
     def unit(self):
-        """Gets the unit of this SiteNetworkQuota.
+        r"""Gets the unit of this SiteNetworkQuota.
 
         配额值的单位。
 
@@ -133,7 +133,7 @@ class SiteNetworkQuota:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this SiteNetworkQuota.
+        r"""Sets the unit of this SiteNetworkQuota.
 
         配额值的单位。
 

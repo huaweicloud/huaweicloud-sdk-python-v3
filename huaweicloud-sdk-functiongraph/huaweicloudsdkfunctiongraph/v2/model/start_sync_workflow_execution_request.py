@@ -27,7 +27,7 @@ class StartSyncWorkflowExecutionRequest:
     }
 
     def __init__(self, workflow_id=None, body=None):
-        """StartSyncWorkflowExecutionRequest
+        r"""StartSyncWorkflowExecutionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartSyncWorkflowExecutionRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this StartSyncWorkflowExecutionRequest.
+        r"""Gets the workflow_id of this StartSyncWorkflowExecutionRequest.
 
         函数流定义ID
 
@@ -60,7 +60,7 @@ class StartSyncWorkflowExecutionRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this StartSyncWorkflowExecutionRequest.
+        r"""Sets the workflow_id of this StartSyncWorkflowExecutionRequest.
 
         函数流定义ID
 
@@ -71,7 +71,7 @@ class StartSyncWorkflowExecutionRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartSyncWorkflowExecutionRequest.
+        r"""Gets the body of this StartSyncWorkflowExecutionRequest.
 
         :return: The body of this StartSyncWorkflowExecutionRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecuteBody`
@@ -80,7 +80,7 @@ class StartSyncWorkflowExecutionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartSyncWorkflowExecutionRequest.
+        r"""Sets the body of this StartSyncWorkflowExecutionRequest.
 
         :param body: The body of this StartSyncWorkflowExecutionRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecuteBody`

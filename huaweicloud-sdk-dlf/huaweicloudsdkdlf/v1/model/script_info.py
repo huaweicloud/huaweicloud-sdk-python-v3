@@ -39,7 +39,7 @@ class ScriptInfo:
     }
 
     def __init__(self, name=None, type=None, directory=None, content=None, connection_name=None, database=None, queue_name=None, configuration=None):
-        """ScriptInfo
+        r"""ScriptInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ScriptInfo:
 
     @property
     def name(self):
-        """Gets the name of this ScriptInfo.
+        r"""Gets the name of this ScriptInfo.
 
         :return: The name of this ScriptInfo.
         :rtype: str
@@ -101,7 +101,7 @@ class ScriptInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScriptInfo.
+        r"""Sets the name of this ScriptInfo.
 
         :param name: The name of this ScriptInfo.
         :type name: str
@@ -110,7 +110,7 @@ class ScriptInfo:
 
     @property
     def type(self):
-        """Gets the type of this ScriptInfo.
+        r"""Gets the type of this ScriptInfo.
 
         脚本类型
 
@@ -121,7 +121,7 @@ class ScriptInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ScriptInfo.
+        r"""Sets the type of this ScriptInfo.
 
         脚本类型
 
@@ -132,7 +132,7 @@ class ScriptInfo:
 
     @property
     def directory(self):
-        """Gets the directory of this ScriptInfo.
+        r"""Gets the directory of this ScriptInfo.
 
         脚本关联的目录
 
@@ -143,7 +143,7 @@ class ScriptInfo:
 
     @directory.setter
     def directory(self, directory):
-        """Sets the directory of this ScriptInfo.
+        r"""Sets the directory of this ScriptInfo.
 
         脚本关联的目录
 
@@ -154,7 +154,7 @@ class ScriptInfo:
 
     @property
     def content(self):
-        """Gets the content of this ScriptInfo.
+        r"""Gets the content of this ScriptInfo.
 
         脚本内容
 
@@ -165,7 +165,7 @@ class ScriptInfo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ScriptInfo.
+        r"""Sets the content of this ScriptInfo.
 
         脚本内容
 
@@ -176,7 +176,7 @@ class ScriptInfo:
 
     @property
     def connection_name(self):
-        """Gets the connection_name of this ScriptInfo.
+        r"""Gets the connection_name of this ScriptInfo.
 
         脚本关联的连接名称
 
@@ -187,7 +187,7 @@ class ScriptInfo:
 
     @connection_name.setter
     def connection_name(self, connection_name):
-        """Sets the connection_name of this ScriptInfo.
+        r"""Sets the connection_name of this ScriptInfo.
 
         脚本关联的连接名称
 
@@ -198,7 +198,7 @@ class ScriptInfo:
 
     @property
     def database(self):
-        """Gets the database of this ScriptInfo.
+        r"""Gets the database of this ScriptInfo.
 
         脚本执行所在的数据库
 
@@ -209,7 +209,7 @@ class ScriptInfo:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ScriptInfo.
+        r"""Sets the database of this ScriptInfo.
 
         脚本执行所在的数据库
 
@@ -220,7 +220,7 @@ class ScriptInfo:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ScriptInfo.
+        r"""Gets the queue_name of this ScriptInfo.
 
         脚本关联的DLI队列名称
 
@@ -231,7 +231,7 @@ class ScriptInfo:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ScriptInfo.
+        r"""Sets the queue_name of this ScriptInfo.
 
         脚本关联的DLI队列名称
 
@@ -242,7 +242,7 @@ class ScriptInfo:
 
     @property
     def configuration(self):
-        """Gets the configuration of this ScriptInfo.
+        r"""Gets the configuration of this ScriptInfo.
 
         脚本的配置项参数
 
@@ -253,7 +253,7 @@ class ScriptInfo:
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this ScriptInfo.
+        r"""Sets the configuration of this ScriptInfo.
 
         脚本的配置项参数
 

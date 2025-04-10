@@ -25,7 +25,7 @@ class SnapshotSpec:
     }
 
     def __init__(self, items=None):
-        """SnapshotSpec
+        r"""SnapshotSpec
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SnapshotSpec:
 
     @property
     def items(self):
-        """Gets the items of this SnapshotSpec.
+        r"""Gets the items of this SnapshotSpec.
 
         备份任务详情
 
@@ -54,7 +54,7 @@ class SnapshotSpec:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this SnapshotSpec.
+        r"""Sets the items of this SnapshotSpec.
 
         备份任务详情
 

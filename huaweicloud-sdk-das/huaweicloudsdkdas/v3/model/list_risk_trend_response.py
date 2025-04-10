@@ -28,7 +28,7 @@ class ListRiskTrendResponse(SdkResponse):
     }
 
     def __init__(self, metric_code=None, metric=None):
-        """ListRiskTrendResponse
+        r"""ListRiskTrendResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRiskTrendResponse(SdkResponse):
 
     @property
     def metric_code(self):
-        """Gets the metric_code of this ListRiskTrendResponse.
+        r"""Gets the metric_code of this ListRiskTrendResponse.
 
         指标码
 
@@ -62,7 +62,7 @@ class ListRiskTrendResponse(SdkResponse):
 
     @metric_code.setter
     def metric_code(self, metric_code):
-        """Sets the metric_code of this ListRiskTrendResponse.
+        r"""Sets the metric_code of this ListRiskTrendResponse.
 
         指标码
 
@@ -73,7 +73,7 @@ class ListRiskTrendResponse(SdkResponse):
 
     @property
     def metric(self):
-        """Gets the metric of this ListRiskTrendResponse.
+        r"""Gets the metric of this ListRiskTrendResponse.
 
         :return: The metric of this ListRiskTrendResponse.
         :rtype: :class:`huaweicloudsdkdas.v3.QueryRiskTrendMetric`
@@ -82,7 +82,7 @@ class ListRiskTrendResponse(SdkResponse):
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this ListRiskTrendResponse.
+        r"""Sets the metric of this ListRiskTrendResponse.
 
         :param metric: The metric of this ListRiskTrendResponse.
         :type metric: :class:`huaweicloudsdkdas.v3.QueryRiskTrendMetric`

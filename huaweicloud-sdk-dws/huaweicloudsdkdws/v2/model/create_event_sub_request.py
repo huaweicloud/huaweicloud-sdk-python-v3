@@ -25,7 +25,7 @@ class CreateEventSubRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEventSubRequest
+        r"""CreateEventSubRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateEventSubRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEventSubRequest.
+        r"""Gets the body of this CreateEventSubRequest.
 
         :return: The body of this CreateEventSubRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.EventSubRequest`
@@ -52,7 +52,7 @@ class CreateEventSubRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEventSubRequest.
+        r"""Sets the body of this CreateEventSubRequest.
 
         :param body: The body of this CreateEventSubRequest.
         :type body: :class:`huaweicloudsdkdws.v2.EventSubRequest`

@@ -30,7 +30,7 @@ class ListClusterCnResponse(SdkResponse):
     }
 
     def __init__(self, min_num=None, max_num=None, instances=None):
-        """ListClusterCnResponse
+        r"""ListClusterCnResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListClusterCnResponse(SdkResponse):
 
     @property
     def min_num(self):
-        """Gets the min_num of this ListClusterCnResponse.
+        r"""Gets the min_num of this ListClusterCnResponse.
 
         集群支持的最小CN节点数量。
 
@@ -69,7 +69,7 @@ class ListClusterCnResponse(SdkResponse):
 
     @min_num.setter
     def min_num(self, min_num):
-        """Sets the min_num of this ListClusterCnResponse.
+        r"""Sets the min_num of this ListClusterCnResponse.
 
         集群支持的最小CN节点数量。
 
@@ -80,7 +80,7 @@ class ListClusterCnResponse(SdkResponse):
 
     @property
     def max_num(self):
-        """Gets the max_num of this ListClusterCnResponse.
+        r"""Gets the max_num of this ListClusterCnResponse.
 
         集群支持的最大CN节点数量。
 
@@ -91,7 +91,7 @@ class ListClusterCnResponse(SdkResponse):
 
     @max_num.setter
     def max_num(self, max_num):
-        """Sets the max_num of this ListClusterCnResponse.
+        r"""Sets the max_num of this ListClusterCnResponse.
 
         集群支持的最大CN节点数量。
 
@@ -102,7 +102,7 @@ class ListClusterCnResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListClusterCnResponse.
+        r"""Gets the instances of this ListClusterCnResponse.
 
         CN节点详情列表。
 
@@ -113,7 +113,7 @@ class ListClusterCnResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListClusterCnResponse.
+        r"""Sets the instances of this ListClusterCnResponse.
 
         CN节点详情列表。
 

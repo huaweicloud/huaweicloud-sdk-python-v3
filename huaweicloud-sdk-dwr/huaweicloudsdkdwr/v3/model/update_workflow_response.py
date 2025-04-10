@@ -38,7 +38,7 @@ class UpdateWorkflowResponse(SdkResponse):
     }
 
     def __init__(self, graph_name=None, graph_urn=None, last_modified=None, x_request_id=None, connection=None, content_length=None, date=None):
-        """UpdateWorkflowResponse
+        r"""UpdateWorkflowResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class UpdateWorkflowResponse(SdkResponse):
 
     @property
     def graph_name(self):
-        """Gets the graph_name of this UpdateWorkflowResponse.
+        r"""Gets the graph_name of this UpdateWorkflowResponse.
 
         工作流名称。
 
@@ -97,7 +97,7 @@ class UpdateWorkflowResponse(SdkResponse):
 
     @graph_name.setter
     def graph_name(self, graph_name):
-        """Sets the graph_name of this UpdateWorkflowResponse.
+        r"""Sets the graph_name of this UpdateWorkflowResponse.
 
         工作流名称。
 
@@ -108,7 +108,7 @@ class UpdateWorkflowResponse(SdkResponse):
 
     @property
     def graph_urn(self):
-        """Gets the graph_urn of this UpdateWorkflowResponse.
+        r"""Gets the graph_urn of this UpdateWorkflowResponse.
 
         工作流的URN。
 
@@ -119,7 +119,7 @@ class UpdateWorkflowResponse(SdkResponse):
 
     @graph_urn.setter
     def graph_urn(self, graph_urn):
-        """Sets the graph_urn of this UpdateWorkflowResponse.
+        r"""Sets the graph_urn of this UpdateWorkflowResponse.
 
         工作流的URN。
 
@@ -130,7 +130,7 @@ class UpdateWorkflowResponse(SdkResponse):
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this UpdateWorkflowResponse.
+        r"""Gets the last_modified of this UpdateWorkflowResponse.
 
         工作流更新的时间。
 
@@ -141,7 +141,7 @@ class UpdateWorkflowResponse(SdkResponse):
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this UpdateWorkflowResponse.
+        r"""Sets the last_modified of this UpdateWorkflowResponse.
 
         工作流更新的时间。
 
@@ -152,7 +152,7 @@ class UpdateWorkflowResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateWorkflowResponse.
+        r"""Gets the x_request_id of this UpdateWorkflowResponse.
 
         :return: The x_request_id of this UpdateWorkflowResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class UpdateWorkflowResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateWorkflowResponse.
+        r"""Sets the x_request_id of this UpdateWorkflowResponse.
 
         :param x_request_id: The x_request_id of this UpdateWorkflowResponse.
         :type x_request_id: str
@@ -170,7 +170,7 @@ class UpdateWorkflowResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this UpdateWorkflowResponse.
+        r"""Gets the connection of this UpdateWorkflowResponse.
 
         :return: The connection of this UpdateWorkflowResponse.
         :rtype: str
@@ -179,7 +179,7 @@ class UpdateWorkflowResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this UpdateWorkflowResponse.
+        r"""Sets the connection of this UpdateWorkflowResponse.
 
         :param connection: The connection of this UpdateWorkflowResponse.
         :type connection: str
@@ -188,7 +188,7 @@ class UpdateWorkflowResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this UpdateWorkflowResponse.
+        r"""Gets the content_length of this UpdateWorkflowResponse.
 
         :return: The content_length of this UpdateWorkflowResponse.
         :rtype: str
@@ -197,7 +197,7 @@ class UpdateWorkflowResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this UpdateWorkflowResponse.
+        r"""Sets the content_length of this UpdateWorkflowResponse.
 
         :param content_length: The content_length of this UpdateWorkflowResponse.
         :type content_length: str
@@ -206,7 +206,7 @@ class UpdateWorkflowResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this UpdateWorkflowResponse.
+        r"""Gets the date of this UpdateWorkflowResponse.
 
         :return: The date of this UpdateWorkflowResponse.
         :rtype: str
@@ -215,7 +215,7 @@ class UpdateWorkflowResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this UpdateWorkflowResponse.
+        r"""Sets the date of this UpdateWorkflowResponse.
 
         :param date: The date of this UpdateWorkflowResponse.
         :type date: str

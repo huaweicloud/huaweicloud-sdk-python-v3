@@ -27,7 +27,7 @@ class BatchUpdateTaskStatusResponseBodyResult:
     }
 
     def __init__(self, task_id=None, task_run_id=None):
-        """BatchUpdateTaskStatusResponseBodyResult
+        r"""BatchUpdateTaskStatusResponseBodyResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchUpdateTaskStatusResponseBodyResult:
 
     @property
     def task_id(self):
-        """Gets the task_id of this BatchUpdateTaskStatusResponseBodyResult.
+        r"""Gets the task_id of this BatchUpdateTaskStatusResponseBodyResult.
 
         任务id
 
@@ -61,7 +61,7 @@ class BatchUpdateTaskStatusResponseBodyResult:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this BatchUpdateTaskStatusResponseBodyResult.
+        r"""Sets the task_id of this BatchUpdateTaskStatusResponseBodyResult.
 
         任务id
 
@@ -72,7 +72,7 @@ class BatchUpdateTaskStatusResponseBodyResult:
 
     @property
     def task_run_id(self):
-        """Gets the task_run_id of this BatchUpdateTaskStatusResponseBodyResult.
+        r"""Gets the task_run_id of this BatchUpdateTaskStatusResponseBodyResult.
 
         报告id
 
@@ -83,7 +83,7 @@ class BatchUpdateTaskStatusResponseBodyResult:
 
     @task_run_id.setter
     def task_run_id(self, task_run_id):
-        """Sets the task_run_id of this BatchUpdateTaskStatusResponseBodyResult.
+        r"""Sets the task_run_id of this BatchUpdateTaskStatusResponseBodyResult.
 
         报告id
 

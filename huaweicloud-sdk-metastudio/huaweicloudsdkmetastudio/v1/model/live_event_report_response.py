@@ -28,7 +28,7 @@ class LiveEventReportResponse(SdkResponse):
     }
 
     def __init__(self, live_event_report_url=None, x_request_id=None):
-        """LiveEventReportResponse
+        r"""LiveEventReportResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class LiveEventReportResponse(SdkResponse):
 
     @property
     def live_event_report_url(self):
-        """Gets the live_event_report_url of this LiveEventReportResponse.
+        r"""Gets the live_event_report_url of this LiveEventReportResponse.
 
         刷新后的直播事件上传URL
 
@@ -62,7 +62,7 @@ class LiveEventReportResponse(SdkResponse):
 
     @live_event_report_url.setter
     def live_event_report_url(self, live_event_report_url):
-        """Sets the live_event_report_url of this LiveEventReportResponse.
+        r"""Sets the live_event_report_url of this LiveEventReportResponse.
 
         刷新后的直播事件上传URL
 
@@ -73,7 +73,7 @@ class LiveEventReportResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this LiveEventReportResponse.
+        r"""Gets the x_request_id of this LiveEventReportResponse.
 
         :return: The x_request_id of this LiveEventReportResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class LiveEventReportResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this LiveEventReportResponse.
+        r"""Sets the x_request_id of this LiveEventReportResponse.
 
         :param x_request_id: The x_request_id of this LiveEventReportResponse.
         :type x_request_id: str

@@ -29,7 +29,7 @@ class ComCCE:
     }
 
     def __init__(self, cluster=None, network=None, security_group=None):
-        """ComCCE
+        r"""ComCCE
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ComCCE:
 
     @property
     def cluster(self):
-        """Gets the cluster of this ComCCE.
+        r"""Gets the cluster of this ComCCE.
 
         :return: The cluster of this ComCCE.
         :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
@@ -66,7 +66,7 @@ class ComCCE:
 
     @cluster.setter
     def cluster(self, cluster):
-        """Sets the cluster of this ComCCE.
+        r"""Sets the cluster of this ComCCE.
 
         :param cluster: The cluster of this ComCCE.
         :type cluster: :class:`huaweicloudsdkbcs.v2.Detail`
@@ -75,7 +75,7 @@ class ComCCE:
 
     @property
     def network(self):
-        """Gets the network of this ComCCE.
+        r"""Gets the network of this ComCCE.
 
         :return: The network of this ComCCE.
         :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
@@ -84,7 +84,7 @@ class ComCCE:
 
     @network.setter
     def network(self, network):
-        """Sets the network of this ComCCE.
+        r"""Sets the network of this ComCCE.
 
         :param network: The network of this ComCCE.
         :type network: :class:`huaweicloudsdkbcs.v2.Detail`
@@ -93,7 +93,7 @@ class ComCCE:
 
     @property
     def security_group(self):
-        """Gets the security_group of this ComCCE.
+        r"""Gets the security_group of this ComCCE.
 
         :return: The security_group of this ComCCE.
         :rtype: :class:`huaweicloudsdkbcs.v2.Detail`
@@ -102,7 +102,7 @@ class ComCCE:
 
     @security_group.setter
     def security_group(self, security_group):
-        """Sets the security_group of this ComCCE.
+        r"""Sets the security_group of this ComCCE.
 
         :param security_group: The security_group of this ComCCE.
         :type security_group: :class:`huaweicloudsdkbcs.v2.Detail`

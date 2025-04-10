@@ -61,7 +61,7 @@ class CreateImageRequestBody:
     }
 
     def __init__(self, data_images=None, description=None, enterprise_project_id=None, image_tags=None, instance_id=None, name=None, tags=None, max_ram=None, min_ram=None, os_version=None, image_url=None, min_disk=None, is_config=None, cmk_id=None, type=None, is_quick_import=None, architecture=None, volume_id=None, hw_firmware_type=None):
-        """CreateImageRequestBody
+        r"""CreateImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -167,7 +167,7 @@ class CreateImageRequestBody:
 
     @property
     def data_images(self):
-        """Gets the data_images of this CreateImageRequestBody.
+        r"""Gets the data_images of this CreateImageRequestBody.
 
         需要转换的数据盘信息，其中，当使用云服务器上的数据盘进行私有数据盘镜像创建时，该字段必选。 如果不是用于制作数据盘镜像，该字段默认为空。
 
@@ -178,7 +178,7 @@ class CreateImageRequestBody:
 
     @data_images.setter
     def data_images(self, data_images):
-        """Sets the data_images of this CreateImageRequestBody.
+        r"""Sets the data_images of this CreateImageRequestBody.
 
         需要转换的数据盘信息，其中，当使用云服务器上的数据盘进行私有数据盘镜像创建时，该字段必选。 如果不是用于制作数据盘镜像，该字段默认为空。
 
@@ -189,7 +189,7 @@ class CreateImageRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateImageRequestBody.
+        r"""Gets the description of this CreateImageRequestBody.
 
         镜像描述信息。支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。默认为空。
 
@@ -200,7 +200,7 @@ class CreateImageRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateImageRequestBody.
+        r"""Sets the description of this CreateImageRequestBody.
 
         镜像描述信息。支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。默认为空。
 
@@ -211,7 +211,7 @@ class CreateImageRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateImageRequestBody.
+        r"""Gets the enterprise_project_id of this CreateImageRequestBody.
 
         表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目。取值为UUID，表示属于该UUID对应的企业项目。
 
@@ -222,7 +222,7 @@ class CreateImageRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateImageRequestBody.
+        r"""Sets the enterprise_project_id of this CreateImageRequestBody.
 
         表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目。取值为UUID，表示属于该UUID对应的企业项目。
 
@@ -233,7 +233,7 @@ class CreateImageRequestBody:
 
     @property
     def image_tags(self):
-        """Gets the image_tags of this CreateImageRequestBody.
+        r"""Gets the image_tags of this CreateImageRequestBody.
 
         新规范的镜像标签列表。默认为空。tags和image_tags只能使用一个。
 
@@ -244,7 +244,7 @@ class CreateImageRequestBody:
 
     @image_tags.setter
     def image_tags(self, image_tags):
-        """Sets the image_tags of this CreateImageRequestBody.
+        r"""Sets the image_tags of this CreateImageRequestBody.
 
         新规范的镜像标签列表。默认为空。tags和image_tags只能使用一个。
 
@@ -255,7 +255,7 @@ class CreateImageRequestBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateImageRequestBody.
+        r"""Gets the instance_id of this CreateImageRequestBody.
 
         需要转换的云服务器ID。使用instance_id字段，从云服务器制作私有镜像时，该字段填写云服务器ID。
 
@@ -266,7 +266,7 @@ class CreateImageRequestBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateImageRequestBody.
+        r"""Sets the instance_id of this CreateImageRequestBody.
 
         需要转换的云服务器ID。使用instance_id字段，从云服务器制作私有镜像时，该字段填写云服务器ID。
 
@@ -277,7 +277,7 @@ class CreateImageRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateImageRequestBody.
+        r"""Gets the name of this CreateImageRequestBody.
 
         镜像名称
 
@@ -288,7 +288,7 @@ class CreateImageRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateImageRequestBody.
+        r"""Sets the name of this CreateImageRequestBody.
 
         镜像名称
 
@@ -299,7 +299,7 @@ class CreateImageRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateImageRequestBody.
+        r"""Gets the tags of this CreateImageRequestBody.
 
         镜像标签列表。默认为空。tags和image_tags只能使用一个。
 
@@ -310,7 +310,7 @@ class CreateImageRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateImageRequestBody.
+        r"""Sets the tags of this CreateImageRequestBody.
 
         镜像标签列表。默认为空。tags和image_tags只能使用一个。
 
@@ -321,7 +321,7 @@ class CreateImageRequestBody:
 
     @property
     def max_ram(self):
-        """Gets the max_ram of this CreateImageRequestBody.
+        r"""Gets the max_ram of this CreateImageRequestBody.
 
         表示镜像支持的最大内存，单位为MB。
 
@@ -332,7 +332,7 @@ class CreateImageRequestBody:
 
     @max_ram.setter
     def max_ram(self, max_ram):
-        """Sets the max_ram of this CreateImageRequestBody.
+        r"""Sets the max_ram of this CreateImageRequestBody.
 
         表示镜像支持的最大内存，单位为MB。
 
@@ -343,7 +343,7 @@ class CreateImageRequestBody:
 
     @property
     def min_ram(self):
-        """Gets the min_ram of this CreateImageRequestBody.
+        r"""Gets the min_ram of this CreateImageRequestBody.
 
         表示镜像支持的最小内存，单位为MB，默认为0，表示不受限制。
 
@@ -354,7 +354,7 @@ class CreateImageRequestBody:
 
     @min_ram.setter
     def min_ram(self, min_ram):
-        """Sets the min_ram of this CreateImageRequestBody.
+        r"""Sets the min_ram of this CreateImageRequestBody.
 
         表示镜像支持的最小内存，单位为MB，默认为0，表示不受限制。
 
@@ -365,7 +365,7 @@ class CreateImageRequestBody:
 
     @property
     def os_version(self):
-        """Gets the os_version of this CreateImageRequestBody.
+        r"""Gets the os_version of this CreateImageRequestBody.
 
         操作系统版本。 使用上传至OBS桶中的外部镜像文件制作镜像时生效。 当“is_quick_import”的值为“true”时，即使用镜像文件快速导入方式导入系统盘镜像，则该参数为必填参数。
 
@@ -376,7 +376,7 @@ class CreateImageRequestBody:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this CreateImageRequestBody.
+        r"""Sets the os_version of this CreateImageRequestBody.
 
         操作系统版本。 使用上传至OBS桶中的外部镜像文件制作镜像时生效。 当“is_quick_import”的值为“true”时，即使用镜像文件快速导入方式导入系统盘镜像，则该参数为必填参数。
 
@@ -387,7 +387,7 @@ class CreateImageRequestBody:
 
     @property
     def image_url(self):
-        """Gets the image_url of this CreateImageRequestBody.
+        r"""Gets the image_url of this CreateImageRequestBody.
 
         OBS桶中外部镜像文件地址。 在使用OBS桶的外部镜像文件制作镜像时生效且为必选字段。格式为<OBS桶名>:<OBS镜像文件名称>。
 
@@ -398,7 +398,7 @@ class CreateImageRequestBody:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this CreateImageRequestBody.
+        r"""Sets the image_url of this CreateImageRequestBody.
 
         OBS桶中外部镜像文件地址。 在使用OBS桶的外部镜像文件制作镜像时生效且为必选字段。格式为<OBS桶名>:<OBS镜像文件名称>。
 
@@ -409,7 +409,7 @@ class CreateImageRequestBody:
 
     @property
     def min_disk(self):
-        """Gets the min_disk of this CreateImageRequestBody.
+        r"""Gets the min_disk of this CreateImageRequestBody.
 
         最小系统盘大小。 在使用OBS桶的外部镜像文件制作镜像时生效且为必选字段。取值为40～1024GB。
 
@@ -420,7 +420,7 @@ class CreateImageRequestBody:
 
     @min_disk.setter
     def min_disk(self, min_disk):
-        """Sets the min_disk of this CreateImageRequestBody.
+        r"""Sets the min_disk of this CreateImageRequestBody.
 
         最小系统盘大小。 在使用OBS桶的外部镜像文件制作镜像时生效且为必选字段。取值为40～1024GB。
 
@@ -431,7 +431,7 @@ class CreateImageRequestBody:
 
     @property
     def is_config(self):
-        """Gets the is_config of this CreateImageRequestBody.
+        r"""Gets the is_config of this CreateImageRequestBody.
 
         是否自动配置。 取值为true或false。 如果需要后台自动配置，取值为true，否则为false。默认取值为false。
 
@@ -442,7 +442,7 @@ class CreateImageRequestBody:
 
     @is_config.setter
     def is_config(self, is_config):
-        """Sets the is_config of this CreateImageRequestBody.
+        r"""Sets the is_config of this CreateImageRequestBody.
 
         是否自动配置。 取值为true或false。 如果需要后台自动配置，取值为true，否则为false。默认取值为false。
 
@@ -453,7 +453,7 @@ class CreateImageRequestBody:
 
     @property
     def cmk_id(self):
-        """Gets the cmk_id of this CreateImageRequestBody.
+        r"""Gets the cmk_id of this CreateImageRequestBody.
 
         创建加密镜像的用户主密钥，具体取值请参考《密钥管理服务用户指南》获取。
 
@@ -464,7 +464,7 @@ class CreateImageRequestBody:
 
     @cmk_id.setter
     def cmk_id(self, cmk_id):
-        """Sets the cmk_id of this CreateImageRequestBody.
+        r"""Sets the cmk_id of this CreateImageRequestBody.
 
         创建加密镜像的用户主密钥，具体取值请参考《密钥管理服务用户指南》获取。
 
@@ -475,7 +475,7 @@ class CreateImageRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateImageRequestBody.
+        r"""Gets the type of this CreateImageRequestBody.
 
         镜像的类型。 取值为ECS、BMS、FusionCompute、Ironic。默认使用“ECS”。 ECS/FusionCompute：表示是ECS服务器的镜像。 BMS/Ironic：表示是BMS服务器的镜像。
 
@@ -486,7 +486,7 @@ class CreateImageRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateImageRequestBody.
+        r"""Sets the type of this CreateImageRequestBody.
 
         镜像的类型。 取值为ECS、BMS、FusionCompute、Ironic。默认使用“ECS”。 ECS/FusionCompute：表示是ECS服务器的镜像。 BMS/Ironic：表示是BMS服务器的镜像。
 
@@ -497,7 +497,7 @@ class CreateImageRequestBody:
 
     @property
     def is_quick_import(self):
-        """Gets the is_quick_import of this CreateImageRequestBody.
+        r"""Gets the is_quick_import of this CreateImageRequestBody.
 
         是否使用镜像文件快速导入方式，导入系统盘镜像。 是，配置为true。 否，配置为false。 关于镜像文件快速导入的约束与限制请参见镜像文件快速导入。
 
@@ -508,7 +508,7 @@ class CreateImageRequestBody:
 
     @is_quick_import.setter
     def is_quick_import(self, is_quick_import):
-        """Sets the is_quick_import of this CreateImageRequestBody.
+        r"""Sets the is_quick_import of this CreateImageRequestBody.
 
         是否使用镜像文件快速导入方式，导入系统盘镜像。 是，配置为true。 否，配置为false。 关于镜像文件快速导入的约束与限制请参见镜像文件快速导入。
 
@@ -519,7 +519,7 @@ class CreateImageRequestBody:
 
     @property
     def architecture(self):
-        """Gets the architecture of this CreateImageRequestBody.
+        r"""Gets the architecture of this CreateImageRequestBody.
 
         镜像的架构类型。取值包括： x86 arm 默认使用“x86”。 当架构类型为arm时，镜像引导方式将自动转为UEFI的引导方式。
 
@@ -530,7 +530,7 @@ class CreateImageRequestBody:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this CreateImageRequestBody.
+        r"""Sets the architecture of this CreateImageRequestBody.
 
         镜像的架构类型。取值包括： x86 arm 默认使用“x86”。 当架构类型为arm时，镜像引导方式将自动转为UEFI的引导方式。
 
@@ -541,7 +541,7 @@ class CreateImageRequestBody:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this CreateImageRequestBody.
+        r"""Gets the volume_id of this CreateImageRequestBody.
 
         数据盘的卷ID。当数据盘创建系统盘镜像时，该参数必选
 
@@ -552,7 +552,7 @@ class CreateImageRequestBody:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this CreateImageRequestBody.
+        r"""Sets the volume_id of this CreateImageRequestBody.
 
         数据盘的卷ID。当数据盘创建系统盘镜像时，该参数必选
 
@@ -563,7 +563,7 @@ class CreateImageRequestBody:
 
     @property
     def hw_firmware_type(self):
-        """Gets the hw_firmware_type of this CreateImageRequestBody.
+        r"""Gets the hw_firmware_type of this CreateImageRequestBody.
 
         云主机云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
 
@@ -574,7 +574,7 @@ class CreateImageRequestBody:
 
     @hw_firmware_type.setter
     def hw_firmware_type(self, hw_firmware_type):
-        """Sets the hw_firmware_type of this CreateImageRequestBody.
+        r"""Sets the hw_firmware_type of this CreateImageRequestBody.
 
         云主机云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
 

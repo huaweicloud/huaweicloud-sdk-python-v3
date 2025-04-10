@@ -25,7 +25,7 @@ class PayForDgcOneKeyRequest:
     }
 
     def __init__(self, body=None):
-        """PayForDgcOneKeyRequest
+        r"""PayForDgcOneKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PayForDgcOneKeyRequest:
 
     @property
     def body(self):
-        """Gets the body of this PayForDgcOneKeyRequest.
+        r"""Gets the body of this PayForDgcOneKeyRequest.
 
         :return: The body of this PayForDgcOneKeyRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.OrderReq`
@@ -52,7 +52,7 @@ class PayForDgcOneKeyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PayForDgcOneKeyRequest.
+        r"""Sets the body of this PayForDgcOneKeyRequest.
 
         :param body: The body of this PayForDgcOneKeyRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.OrderReq`

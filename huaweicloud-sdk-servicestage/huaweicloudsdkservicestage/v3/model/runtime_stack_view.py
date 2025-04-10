@@ -33,7 +33,7 @@ class RuntimeStackView:
     }
 
     def __init__(self, name=None, deploy_mode=None, version=None, type=None, status=None):
-        """RuntimeStackView
+        r"""RuntimeStackView
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class RuntimeStackView:
 
     @property
     def name(self):
-        """Gets the name of this RuntimeStackView.
+        r"""Gets the name of this RuntimeStackView.
 
         :return: The name of this RuntimeStackView.
         :rtype: str
@@ -80,7 +80,7 @@ class RuntimeStackView:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RuntimeStackView.
+        r"""Sets the name of this RuntimeStackView.
 
         :param name: The name of this RuntimeStackView.
         :type name: str
@@ -89,7 +89,7 @@ class RuntimeStackView:
 
     @property
     def deploy_mode(self):
-        """Gets the deploy_mode of this RuntimeStackView.
+        r"""Gets the deploy_mode of this RuntimeStackView.
 
         :return: The deploy_mode of this RuntimeStackView.
         :rtype: str
@@ -98,7 +98,7 @@ class RuntimeStackView:
 
     @deploy_mode.setter
     def deploy_mode(self, deploy_mode):
-        """Sets the deploy_mode of this RuntimeStackView.
+        r"""Sets the deploy_mode of this RuntimeStackView.
 
         :param deploy_mode: The deploy_mode of this RuntimeStackView.
         :type deploy_mode: str
@@ -107,7 +107,7 @@ class RuntimeStackView:
 
     @property
     def version(self):
-        """Gets the version of this RuntimeStackView.
+        r"""Gets the version of this RuntimeStackView.
 
         :return: The version of this RuntimeStackView.
         :rtype: str
@@ -116,7 +116,7 @@ class RuntimeStackView:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this RuntimeStackView.
+        r"""Sets the version of this RuntimeStackView.
 
         :param version: The version of this RuntimeStackView.
         :type version: str
@@ -125,7 +125,7 @@ class RuntimeStackView:
 
     @property
     def type(self):
-        """Gets the type of this RuntimeStackView.
+        r"""Gets the type of this RuntimeStackView.
 
         :return: The type of this RuntimeStackView.
         :rtype: str
@@ -134,7 +134,7 @@ class RuntimeStackView:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RuntimeStackView.
+        r"""Sets the type of this RuntimeStackView.
 
         :param type: The type of this RuntimeStackView.
         :type type: str
@@ -143,7 +143,7 @@ class RuntimeStackView:
 
     @property
     def status(self):
-        """Gets the status of this RuntimeStackView.
+        r"""Gets the status of this RuntimeStackView.
 
         :return: The status of this RuntimeStackView.
         :rtype: str
@@ -152,7 +152,7 @@ class RuntimeStackView:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RuntimeStackView.
+        r"""Sets the status of this RuntimeStackView.
 
         :param status: The status of this RuntimeStackView.
         :type status: str

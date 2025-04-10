@@ -30,7 +30,7 @@ class ListSmartLiveScriptCommandsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, scripts_commands=None, x_request_id=None):
-        """ListSmartLiveScriptCommandsResponse
+        r"""ListSmartLiveScriptCommandsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSmartLiveScriptCommandsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSmartLiveScriptCommandsResponse.
+        r"""Gets the count of this ListSmartLiveScriptCommandsResponse.
 
         数字人直播任务总数。
 
@@ -69,7 +69,7 @@ class ListSmartLiveScriptCommandsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSmartLiveScriptCommandsResponse.
+        r"""Sets the count of this ListSmartLiveScriptCommandsResponse.
 
         数字人直播任务总数。
 
@@ -80,7 +80,7 @@ class ListSmartLiveScriptCommandsResponse(SdkResponse):
 
     @property
     def scripts_commands(self):
-        """Gets the scripts_commands of this ListSmartLiveScriptCommandsResponse.
+        r"""Gets the scripts_commands of this ListSmartLiveScriptCommandsResponse.
 
         数字人话术命令列表。
 
@@ -91,7 +91,7 @@ class ListSmartLiveScriptCommandsResponse(SdkResponse):
 
     @scripts_commands.setter
     def scripts_commands(self, scripts_commands):
-        """Sets the scripts_commands of this ListSmartLiveScriptCommandsResponse.
+        r"""Sets the scripts_commands of this ListSmartLiveScriptCommandsResponse.
 
         数字人话术命令列表。
 
@@ -102,7 +102,7 @@ class ListSmartLiveScriptCommandsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListSmartLiveScriptCommandsResponse.
+        r"""Gets the x_request_id of this ListSmartLiveScriptCommandsResponse.
 
         :return: The x_request_id of this ListSmartLiveScriptCommandsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListSmartLiveScriptCommandsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListSmartLiveScriptCommandsResponse.
+        r"""Sets the x_request_id of this ListSmartLiveScriptCommandsResponse.
 
         :param x_request_id: The x_request_id of this ListSmartLiveScriptCommandsResponse.
         :type x_request_id: str

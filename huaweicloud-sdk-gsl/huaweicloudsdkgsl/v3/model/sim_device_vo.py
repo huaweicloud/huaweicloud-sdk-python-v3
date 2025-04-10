@@ -99,7 +99,7 @@ class SimDeviceVO:
     }
 
     def __init__(self, sim_card_id=None, account_id=None, cid=None, sim_pool_id=None, imei=None, sim_status=None, device_status=None, device_model=None, act_date=None, device_status_date=None, node_id=None, iccid=None, network_type=None, dbm=None, signal_level=None, sim_type=None, tag_names=None, order_id=None, expire_time=None, price_plan_name=None, sim_price_plan_id=None, flow_left=None, flow_used=None, operator_status=None, msisdn=None, imsi=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None, real_named=None, cut_net_flag=None, exceed_cut_net_flag=None, exceed_cut_net_quota=None, imei_bind_remain_times=None, speed_value=None):
-        """SimDeviceVO
+        r"""SimDeviceVO
 
         The model defined in huaweicloud sdk
 
@@ -302,7 +302,7 @@ class SimDeviceVO:
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this SimDeviceVO.
+        r"""Gets the sim_card_id of this SimDeviceVO.
 
         sim卡id
 
@@ -313,7 +313,7 @@ class SimDeviceVO:
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this SimDeviceVO.
+        r"""Sets the sim_card_id of this SimDeviceVO.
 
         sim卡id
 
@@ -324,7 +324,7 @@ class SimDeviceVO:
 
     @property
     def account_id(self):
-        """Gets the account_id of this SimDeviceVO.
+        r"""Gets the account_id of this SimDeviceVO.
 
         账户id
 
@@ -335,7 +335,7 @@ class SimDeviceVO:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this SimDeviceVO.
+        r"""Sets the account_id of this SimDeviceVO.
 
         账户id
 
@@ -346,7 +346,7 @@ class SimDeviceVO:
 
     @property
     def cid(self):
-        """Gets the cid of this SimDeviceVO.
+        r"""Gets the cid of this SimDeviceVO.
 
         容器ID:不同类型卡含义如下 iccid(实体卡)，eid（eSIM）cid（vSIM)
 
@@ -357,7 +357,7 @@ class SimDeviceVO:
 
     @cid.setter
     def cid(self, cid):
-        """Sets the cid of this SimDeviceVO.
+        r"""Sets the cid of this SimDeviceVO.
 
         容器ID:不同类型卡含义如下 iccid(实体卡)，eid（eSIM）cid（vSIM)
 
@@ -368,7 +368,7 @@ class SimDeviceVO:
 
     @property
     def sim_pool_id(self):
-        """Gets the sim_pool_id of this SimDeviceVO.
+        r"""Gets the sim_pool_id of this SimDeviceVO.
 
         流量池ID
 
@@ -379,7 +379,7 @@ class SimDeviceVO:
 
     @sim_pool_id.setter
     def sim_pool_id(self, sim_pool_id):
-        """Sets the sim_pool_id of this SimDeviceVO.
+        r"""Sets the sim_pool_id of this SimDeviceVO.
 
         流量池ID
 
@@ -390,7 +390,7 @@ class SimDeviceVO:
 
     @property
     def imei(self):
-        """Gets the imei of this SimDeviceVO.
+        r"""Gets the imei of this SimDeviceVO.
 
         设备IMEI
 
@@ -401,7 +401,7 @@ class SimDeviceVO:
 
     @imei.setter
     def imei(self, imei):
-        """Sets the imei of this SimDeviceVO.
+        r"""Sets the imei of this SimDeviceVO.
 
         设备IMEI
 
@@ -412,7 +412,7 @@ class SimDeviceVO:
 
     @property
     def sim_status(self):
-        """Gets the sim_status of this SimDeviceVO.
+        r"""Gets the sim_status of this SimDeviceVO.
 
         sim卡状态：  10.可测试  11.未激活  13.可激活  14.已停用  20.在用  30.已拆机
 
@@ -423,7 +423,7 @@ class SimDeviceVO:
 
     @sim_status.setter
     def sim_status(self, sim_status):
-        """Sets the sim_status of this SimDeviceVO.
+        r"""Sets the sim_status of this SimDeviceVO.
 
         sim卡状态：  10.可测试  11.未激活  13.可激活  14.已停用  20.在用  30.已拆机
 
@@ -434,7 +434,7 @@ class SimDeviceVO:
 
     @property
     def device_status(self):
-        """Gets the device_status of this SimDeviceVO.
+        r"""Gets the device_status of this SimDeviceVO.
 
         设备状态：1.注册 2.重启 3.在线 4.离线 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -445,7 +445,7 @@ class SimDeviceVO:
 
     @device_status.setter
     def device_status(self, device_status):
-        """Sets the device_status of this SimDeviceVO.
+        r"""Sets the device_status of this SimDeviceVO.
 
         设备状态：1.注册 2.重启 3.在线 4.离线 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -456,7 +456,7 @@ class SimDeviceVO:
 
     @property
     def device_model(self):
-        """Gets the device_model of this SimDeviceVO.
+        r"""Gets the device_model of this SimDeviceVO.
 
         设备模组 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -467,7 +467,7 @@ class SimDeviceVO:
 
     @device_model.setter
     def device_model(self, device_model):
-        """Sets the device_model of this SimDeviceVO.
+        r"""Sets the device_model of this SimDeviceVO.
 
         设备模组 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -478,7 +478,7 @@ class SimDeviceVO:
 
     @property
     def act_date(self):
-        """Gets the act_date of this SimDeviceVO.
+        r"""Gets the act_date of this SimDeviceVO.
 
         激活日期 例如2020-01-31T16:00:00.000Z
 
@@ -489,7 +489,7 @@ class SimDeviceVO:
 
     @act_date.setter
     def act_date(self, act_date):
-        """Sets the act_date of this SimDeviceVO.
+        r"""Sets the act_date of this SimDeviceVO.
 
         激活日期 例如2020-01-31T16:00:00.000Z
 
@@ -500,7 +500,7 @@ class SimDeviceVO:
 
     @property
     def device_status_date(self):
-        """Gets the device_status_date of this SimDeviceVO.
+        r"""Gets the device_status_date of this SimDeviceVO.
 
         设备状态变更时间 例如2020-01-31T16:00:00.000Z (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -511,7 +511,7 @@ class SimDeviceVO:
 
     @device_status_date.setter
     def device_status_date(self, device_status_date):
-        """Sets the device_status_date of this SimDeviceVO.
+        r"""Sets the device_status_date of this SimDeviceVO.
 
         设备状态变更时间 例如2020-01-31T16:00:00.000Z (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -522,7 +522,7 @@ class SimDeviceVO:
 
     @property
     def node_id(self):
-        """Gets the node_id of this SimDeviceVO.
+        r"""Gets the node_id of this SimDeviceVO.
 
         设备标识
 
@@ -533,7 +533,7 @@ class SimDeviceVO:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this SimDeviceVO.
+        r"""Sets the node_id of this SimDeviceVO.
 
         设备标识
 
@@ -544,7 +544,7 @@ class SimDeviceVO:
 
     @property
     def iccid(self):
-        """Gets the iccid of this SimDeviceVO.
+        r"""Gets the iccid of this SimDeviceVO.
 
         码号iccid
 
@@ -555,7 +555,7 @@ class SimDeviceVO:
 
     @iccid.setter
     def iccid(self, iccid):
-        """Sets the iccid of this SimDeviceVO.
+        r"""Sets the iccid of this SimDeviceVO.
 
         码号iccid
 
@@ -566,7 +566,7 @@ class SimDeviceVO:
 
     @property
     def network_type(self):
-        """Gets the network_type of this SimDeviceVO.
+        r"""Gets the network_type of this SimDeviceVO.
 
         网络类型
 
@@ -577,7 +577,7 @@ class SimDeviceVO:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this SimDeviceVO.
+        r"""Sets the network_type of this SimDeviceVO.
 
         网络类型
 
@@ -588,7 +588,7 @@ class SimDeviceVO:
 
     @property
     def dbm(self):
-        """Gets the dbm of this SimDeviceVO.
+        r"""Gets the dbm of this SimDeviceVO.
 
         信号强度 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -599,7 +599,7 @@ class SimDeviceVO:
 
     @dbm.setter
     def dbm(self, dbm):
-        """Sets the dbm of this SimDeviceVO.
+        r"""Sets the dbm of this SimDeviceVO.
 
         信号强度 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -610,7 +610,7 @@ class SimDeviceVO:
 
     @property
     def signal_level(self):
-        """Gets the signal_level of this SimDeviceVO.
+        r"""Gets the signal_level of this SimDeviceVO.
 
         信号等级:1.差  2.良  3.良  4.优 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -621,7 +621,7 @@ class SimDeviceVO:
 
     @signal_level.setter
     def signal_level(self, signal_level):
-        """Sets the signal_level of this SimDeviceVO.
+        r"""Sets the signal_level of this SimDeviceVO.
 
         信号等级:1.差  2.良  3.良  4.优 (该参数只有ESIM、VSIM返回, 实体卡返回null)
 
@@ -632,7 +632,7 @@ class SimDeviceVO:
 
     @property
     def sim_type(self):
-        """Gets the sim_type of this SimDeviceVO.
+        r"""Gets the sim_type of this SimDeviceVO.
 
         sim卡类型 1.vSIM  2.eSIM  3.实体卡
 
@@ -643,7 +643,7 @@ class SimDeviceVO:
 
     @sim_type.setter
     def sim_type(self, sim_type):
-        """Sets the sim_type of this SimDeviceVO.
+        r"""Sets the sim_type of this SimDeviceVO.
 
         sim卡类型 1.vSIM  2.eSIM  3.实体卡
 
@@ -654,7 +654,7 @@ class SimDeviceVO:
 
     @property
     def tag_names(self):
-        """Gets the tag_names of this SimDeviceVO.
+        r"""Gets the tag_names of this SimDeviceVO.
 
         标签名
 
@@ -665,7 +665,7 @@ class SimDeviceVO:
 
     @tag_names.setter
     def tag_names(self, tag_names):
-        """Sets the tag_names of this SimDeviceVO.
+        r"""Sets the tag_names of this SimDeviceVO.
 
         标签名
 
@@ -676,7 +676,7 @@ class SimDeviceVO:
 
     @property
     def order_id(self):
-        """Gets the order_id of this SimDeviceVO.
+        r"""Gets the order_id of this SimDeviceVO.
 
         批次号
 
@@ -687,7 +687,7 @@ class SimDeviceVO:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this SimDeviceVO.
+        r"""Sets the order_id of this SimDeviceVO.
 
         批次号
 
@@ -698,7 +698,7 @@ class SimDeviceVO:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this SimDeviceVO.
+        r"""Gets the expire_time of this SimDeviceVO.
 
         到期时间 例如2021-06-30T00:00:00.000Z
 
@@ -709,7 +709,7 @@ class SimDeviceVO:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this SimDeviceVO.
+        r"""Sets the expire_time of this SimDeviceVO.
 
         到期时间 例如2021-06-30T00:00:00.000Z
 
@@ -720,7 +720,7 @@ class SimDeviceVO:
 
     @property
     def price_plan_name(self):
-        """Gets the price_plan_name of this SimDeviceVO.
+        r"""Gets the price_plan_name of this SimDeviceVO.
 
         在用套餐名
 
@@ -731,7 +731,7 @@ class SimDeviceVO:
 
     @price_plan_name.setter
     def price_plan_name(self, price_plan_name):
-        """Sets the price_plan_name of this SimDeviceVO.
+        r"""Sets the price_plan_name of this SimDeviceVO.
 
         在用套餐名
 
@@ -742,7 +742,7 @@ class SimDeviceVO:
 
     @property
     def sim_price_plan_id(self):
-        """Gets the sim_price_plan_id of this SimDeviceVO.
+        r"""Gets the sim_price_plan_id of this SimDeviceVO.
 
         套餐订购实例ID
 
@@ -753,7 +753,7 @@ class SimDeviceVO:
 
     @sim_price_plan_id.setter
     def sim_price_plan_id(self, sim_price_plan_id):
-        """Sets the sim_price_plan_id of this SimDeviceVO.
+        r"""Sets the sim_price_plan_id of this SimDeviceVO.
 
         套餐订购实例ID
 
@@ -764,7 +764,7 @@ class SimDeviceVO:
 
     @property
     def flow_left(self):
-        """Gets the flow_left of this SimDeviceVO.
+        r"""Gets the flow_left of this SimDeviceVO.
 
         剩余流量(单位M)，数据默认截止到昨日24点。
 
@@ -775,7 +775,7 @@ class SimDeviceVO:
 
     @flow_left.setter
     def flow_left(self, flow_left):
-        """Sets the flow_left of this SimDeviceVO.
+        r"""Sets the flow_left of this SimDeviceVO.
 
         剩余流量(单位M)，数据默认截止到昨日24点。
 
@@ -786,7 +786,7 @@ class SimDeviceVO:
 
     @property
     def flow_used(self):
-        """Gets the flow_used of this SimDeviceVO.
+        r"""Gets the flow_used of this SimDeviceVO.
 
         已用流量(单位M)，数据默认截止到昨日24点。
 
@@ -797,7 +797,7 @@ class SimDeviceVO:
 
     @flow_used.setter
     def flow_used(self, flow_used):
-        """Sets the flow_used of this SimDeviceVO.
+        r"""Sets the flow_used of this SimDeviceVO.
 
         已用流量(单位M)，数据默认截止到昨日24点。
 
@@ -808,7 +808,7 @@ class SimDeviceVO:
 
     @property
     def operator_status(self):
-        """Gets the operator_status of this SimDeviceVO.
+        r"""Gets the operator_status of this SimDeviceVO.
 
         运营商状态 -1.正常（非停机状态） 1.停机（超流量停机） 2.停机（超流量阈值停机） 3.停机（流量池停机） 4.停机（套餐到期停机） 5.停机（主动停机） 6.停机（违规停机） 7.停机（机卡分离停机）
 
@@ -819,7 +819,7 @@ class SimDeviceVO:
 
     @operator_status.setter
     def operator_status(self, operator_status):
-        """Sets the operator_status of this SimDeviceVO.
+        r"""Sets the operator_status of this SimDeviceVO.
 
         运营商状态 -1.正常（非停机状态） 1.停机（超流量停机） 2.停机（超流量阈值停机） 3.停机（流量池停机） 4.停机（套餐到期停机） 5.停机（主动停机） 6.停机（违规停机） 7.停机（机卡分离停机）
 
@@ -830,7 +830,7 @@ class SimDeviceVO:
 
     @property
     def msisdn(self):
-        """Gets the msisdn of this SimDeviceVO.
+        r"""Gets the msisdn of this SimDeviceVO.
 
         MSISDN
 
@@ -841,7 +841,7 @@ class SimDeviceVO:
 
     @msisdn.setter
     def msisdn(self, msisdn):
-        """Sets the msisdn of this SimDeviceVO.
+        r"""Sets the msisdn of this SimDeviceVO.
 
         MSISDN
 
@@ -852,7 +852,7 @@ class SimDeviceVO:
 
     @property
     def imsi(self):
-        """Gets the imsi of this SimDeviceVO.
+        r"""Gets the imsi of this SimDeviceVO.
 
         IMSI
 
@@ -863,7 +863,7 @@ class SimDeviceVO:
 
     @imsi.setter
     def imsi(self, imsi):
-        """Sets the imsi of this SimDeviceVO.
+        r"""Sets the imsi of this SimDeviceVO.
 
         IMSI
 
@@ -874,7 +874,7 @@ class SimDeviceVO:
 
     @property
     def customer_attribute1(self):
-        """Gets the customer_attribute1 of this SimDeviceVO.
+        r"""Gets the customer_attribute1 of this SimDeviceVO.
 
         自定义属性一
 
@@ -885,7 +885,7 @@ class SimDeviceVO:
 
     @customer_attribute1.setter
     def customer_attribute1(self, customer_attribute1):
-        """Sets the customer_attribute1 of this SimDeviceVO.
+        r"""Sets the customer_attribute1 of this SimDeviceVO.
 
         自定义属性一
 
@@ -896,7 +896,7 @@ class SimDeviceVO:
 
     @property
     def customer_attribute2(self):
-        """Gets the customer_attribute2 of this SimDeviceVO.
+        r"""Gets the customer_attribute2 of this SimDeviceVO.
 
         自定义属性二
 
@@ -907,7 +907,7 @@ class SimDeviceVO:
 
     @customer_attribute2.setter
     def customer_attribute2(self, customer_attribute2):
-        """Sets the customer_attribute2 of this SimDeviceVO.
+        r"""Sets the customer_attribute2 of this SimDeviceVO.
 
         自定义属性二
 
@@ -918,7 +918,7 @@ class SimDeviceVO:
 
     @property
     def customer_attribute3(self):
-        """Gets the customer_attribute3 of this SimDeviceVO.
+        r"""Gets the customer_attribute3 of this SimDeviceVO.
 
         自定义属性三
 
@@ -929,7 +929,7 @@ class SimDeviceVO:
 
     @customer_attribute3.setter
     def customer_attribute3(self, customer_attribute3):
-        """Sets the customer_attribute3 of this SimDeviceVO.
+        r"""Sets the customer_attribute3 of this SimDeviceVO.
 
         自定义属性三
 
@@ -940,7 +940,7 @@ class SimDeviceVO:
 
     @property
     def customer_attribute4(self):
-        """Gets the customer_attribute4 of this SimDeviceVO.
+        r"""Gets the customer_attribute4 of this SimDeviceVO.
 
         自定义属性四
 
@@ -951,7 +951,7 @@ class SimDeviceVO:
 
     @customer_attribute4.setter
     def customer_attribute4(self, customer_attribute4):
-        """Sets the customer_attribute4 of this SimDeviceVO.
+        r"""Sets the customer_attribute4 of this SimDeviceVO.
 
         自定义属性四
 
@@ -962,7 +962,7 @@ class SimDeviceVO:
 
     @property
     def customer_attribute5(self):
-        """Gets the customer_attribute5 of this SimDeviceVO.
+        r"""Gets the customer_attribute5 of this SimDeviceVO.
 
         自定义属性五
 
@@ -973,7 +973,7 @@ class SimDeviceVO:
 
     @customer_attribute5.setter
     def customer_attribute5(self, customer_attribute5):
-        """Sets the customer_attribute5 of this SimDeviceVO.
+        r"""Sets the customer_attribute5 of this SimDeviceVO.
 
         自定义属性五
 
@@ -984,7 +984,7 @@ class SimDeviceVO:
 
     @property
     def customer_attribute6(self):
-        """Gets the customer_attribute6 of this SimDeviceVO.
+        r"""Gets the customer_attribute6 of this SimDeviceVO.
 
         自定义属性六
 
@@ -995,7 +995,7 @@ class SimDeviceVO:
 
     @customer_attribute6.setter
     def customer_attribute6(self, customer_attribute6):
-        """Sets the customer_attribute6 of this SimDeviceVO.
+        r"""Sets the customer_attribute6 of this SimDeviceVO.
 
         自定义属性六
 
@@ -1006,7 +1006,7 @@ class SimDeviceVO:
 
     @property
     def real_named(self):
-        """Gets the real_named of this SimDeviceVO.
+        r"""Gets the real_named of this SimDeviceVO.
 
         是否已实名认证: true表示是，false表示否，系统SIM卡实名认证状态非实时。
 
@@ -1017,7 +1017,7 @@ class SimDeviceVO:
 
     @real_named.setter
     def real_named(self, real_named):
-        """Sets the real_named of this SimDeviceVO.
+        r"""Sets the real_named of this SimDeviceVO.
 
         是否已实名认证: true表示是，false表示否，系统SIM卡实名认证状态非实时。
 
@@ -1028,7 +1028,7 @@ class SimDeviceVO:
 
     @property
     def cut_net_flag(self):
-        """Gets the cut_net_flag of this SimDeviceVO.
+        r"""Gets the cut_net_flag of this SimDeviceVO.
 
         是否单独断网 true:断网，false:未断网 （当前只支持联通、移动的组池卡，电信卡不限制）
 
@@ -1039,7 +1039,7 @@ class SimDeviceVO:
 
     @cut_net_flag.setter
     def cut_net_flag(self, cut_net_flag):
-        """Sets the cut_net_flag of this SimDeviceVO.
+        r"""Sets the cut_net_flag of this SimDeviceVO.
 
         是否单独断网 true:断网，false:未断网 （当前只支持联通、移动的组池卡，电信卡不限制）
 
@@ -1050,7 +1050,7 @@ class SimDeviceVO:
 
     @property
     def exceed_cut_net_flag(self):
-        """Gets the exceed_cut_net_flag of this SimDeviceVO.
+        r"""Gets the exceed_cut_net_flag of this SimDeviceVO.
 
         是否达量断网 true:达量断网，false:未达量断网 （当前只支持联通、移动的组池卡，电信卡不限制）
 
@@ -1061,7 +1061,7 @@ class SimDeviceVO:
 
     @exceed_cut_net_flag.setter
     def exceed_cut_net_flag(self, exceed_cut_net_flag):
-        """Sets the exceed_cut_net_flag of this SimDeviceVO.
+        r"""Sets the exceed_cut_net_flag of this SimDeviceVO.
 
         是否达量断网 true:达量断网，false:未达量断网 （当前只支持联通、移动的组池卡，电信卡不限制）
 
@@ -1072,7 +1072,7 @@ class SimDeviceVO:
 
     @property
     def exceed_cut_net_quota(self):
-        """Gets the exceed_cut_net_quota of this SimDeviceVO.
+        r"""Gets the exceed_cut_net_quota of this SimDeviceVO.
 
         达量断网阈值（单位MB 当前仅电信卡支持）
 
@@ -1083,7 +1083,7 @@ class SimDeviceVO:
 
     @exceed_cut_net_quota.setter
     def exceed_cut_net_quota(self, exceed_cut_net_quota):
-        """Sets the exceed_cut_net_quota of this SimDeviceVO.
+        r"""Sets the exceed_cut_net_quota of this SimDeviceVO.
 
         达量断网阈值（单位MB 当前仅电信卡支持）
 
@@ -1094,7 +1094,7 @@ class SimDeviceVO:
 
     @property
     def imei_bind_remain_times(self):
-        """Gets the imei_bind_remain_times of this SimDeviceVO.
+        r"""Gets the imei_bind_remain_times of this SimDeviceVO.
 
         本月机卡绑定剩余次数（当前仅电信卡支持）
 
@@ -1105,7 +1105,7 @@ class SimDeviceVO:
 
     @imei_bind_remain_times.setter
     def imei_bind_remain_times(self, imei_bind_remain_times):
-        """Sets the imei_bind_remain_times of this SimDeviceVO.
+        r"""Sets the imei_bind_remain_times of this SimDeviceVO.
 
         本月机卡绑定剩余次数（当前仅电信卡支持）
 
@@ -1116,7 +1116,7 @@ class SimDeviceVO:
 
     @property
     def speed_value(self):
-        """Gets the speed_value of this SimDeviceVO.
+        r"""Gets the speed_value of this SimDeviceVO.
 
         网络限制速率（单位Kbps,当前电信联通卡支持）
 
@@ -1127,7 +1127,7 @@ class SimDeviceVO:
 
     @speed_value.setter
     def speed_value(self, speed_value):
-        """Sets the speed_value of this SimDeviceVO.
+        r"""Sets the speed_value of this SimDeviceVO.
 
         网络限制速率（单位Kbps,当前电信联通卡支持）
 

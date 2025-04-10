@@ -27,7 +27,7 @@ class DeleteKnowledgeQuestionRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """DeleteKnowledgeQuestionRequest
+        r"""DeleteKnowledgeQuestionRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteKnowledgeQuestionRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this DeleteKnowledgeQuestionRequest.
+        r"""Gets the x_app_user_id of this DeleteKnowledgeQuestionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class DeleteKnowledgeQuestionRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this DeleteKnowledgeQuestionRequest.
+        r"""Sets the x_app_user_id of this DeleteKnowledgeQuestionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class DeleteKnowledgeQuestionRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteKnowledgeQuestionRequest.
+        r"""Gets the body of this DeleteKnowledgeQuestionRequest.
 
         :return: The body of this DeleteKnowledgeQuestionRequest.
         :rtype: list[str]
@@ -81,7 +81,7 @@ class DeleteKnowledgeQuestionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteKnowledgeQuestionRequest.
+        r"""Sets the body of this DeleteKnowledgeQuestionRequest.
 
         :param body: The body of this DeleteKnowledgeQuestionRequest.
         :type body: list[str]

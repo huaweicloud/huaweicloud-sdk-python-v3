@@ -27,7 +27,7 @@ class ListRuleGroupsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListRuleGroupsRequest
+        r"""ListRuleGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListRuleGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRuleGroupsRequest.
+        r"""Gets the offset of this ListRuleGroupsRequest.
 
         页码
 
@@ -61,7 +61,7 @@ class ListRuleGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRuleGroupsRequest.
+        r"""Sets the offset of this ListRuleGroupsRequest.
 
         页码
 
@@ -72,7 +72,7 @@ class ListRuleGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRuleGroupsRequest.
+        r"""Gets the limit of this ListRuleGroupsRequest.
 
         分页大小
 
@@ -83,7 +83,7 @@ class ListRuleGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRuleGroupsRequest.
+        r"""Sets the limit of this ListRuleGroupsRequest.
 
         分页大小
 

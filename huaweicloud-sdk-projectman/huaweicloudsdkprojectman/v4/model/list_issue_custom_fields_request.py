@@ -27,7 +27,7 @@ class ListIssueCustomFieldsRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ListIssueCustomFieldsRequest
+        r"""ListIssueCustomFieldsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListIssueCustomFieldsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListIssueCustomFieldsRequest.
+        r"""Gets the project_id of this ListIssueCustomFieldsRequest.
 
         devcloud项目的32位id
 
@@ -60,7 +60,7 @@ class ListIssueCustomFieldsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListIssueCustomFieldsRequest.
+        r"""Sets the project_id of this ListIssueCustomFieldsRequest.
 
         devcloud项目的32位id
 
@@ -71,7 +71,7 @@ class ListIssueCustomFieldsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListIssueCustomFieldsRequest.
+        r"""Gets the body of this ListIssueCustomFieldsRequest.
 
         :return: The body of this ListIssueCustomFieldsRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueCustomFieldsRequestBody`
@@ -80,7 +80,7 @@ class ListIssueCustomFieldsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListIssueCustomFieldsRequest.
+        r"""Sets the body of this ListIssueCustomFieldsRequest.
 
         :param body: The body of this ListIssueCustomFieldsRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.ListIssueCustomFieldsRequestBody`

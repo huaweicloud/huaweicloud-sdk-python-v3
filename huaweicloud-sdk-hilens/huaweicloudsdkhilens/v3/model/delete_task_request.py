@@ -27,7 +27,7 @@ class DeleteTaskRequest:
     }
 
     def __init__(self, deployment_id=None, task_id=None):
-        """DeleteTaskRequest
+        r"""DeleteTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteTaskRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this DeleteTaskRequest.
+        r"""Gets the deployment_id of this DeleteTaskRequest.
 
         部署ID，从专业版HiLens控制台部署管理[获取部署列表](getDeploymentListUsingGET.xml)获取
 
@@ -59,7 +59,7 @@ class DeleteTaskRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this DeleteTaskRequest.
+        r"""Sets the deployment_id of this DeleteTaskRequest.
 
         部署ID，从专业版HiLens控制台部署管理[获取部署列表](getDeploymentListUsingGET.xml)获取
 
@@ -70,7 +70,7 @@ class DeleteTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteTaskRequest.
+        r"""Gets the task_id of this DeleteTaskRequest.
 
         作业ID，从专业版HiLens控制台作业管理[获取作业列表](listTasksUsingGET.xml)获取
 
@@ -81,7 +81,7 @@ class DeleteTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteTaskRequest.
+        r"""Sets the task_id of this DeleteTaskRequest.
 
         作业ID，从专业版HiLens控制台作业管理[获取作业列表](listTasksUsingGET.xml)获取
 

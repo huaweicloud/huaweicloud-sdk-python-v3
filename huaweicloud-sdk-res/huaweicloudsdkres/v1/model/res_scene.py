@@ -47,7 +47,7 @@ class ResScene:
     }
 
     def __init__(self, category=None, datasource_id=None, ds_config=None, scene_id=None, scene_name=None, type=None, service_type=None, status=None, workspace_id=None, created_at=None, update_at=None, specs_config=None):
-        """ResScene
+        r"""ResScene
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ResScene:
 
     @property
     def category(self):
-        """Gets the category of this ResScene.
+        r"""Gets the category of this ResScene.
 
         类型。
 
@@ -131,7 +131,7 @@ class ResScene:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ResScene.
+        r"""Sets the category of this ResScene.
 
         类型。
 
@@ -142,7 +142,7 @@ class ResScene:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this ResScene.
+        r"""Gets the datasource_id of this ResScene.
 
         数据源id。
 
@@ -153,7 +153,7 @@ class ResScene:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this ResScene.
+        r"""Sets the datasource_id of this ResScene.
 
         数据源id。
 
@@ -164,7 +164,7 @@ class ResScene:
 
     @property
     def ds_config(self):
-        """Gets the ds_config of this ResScene.
+        r"""Gets the ds_config of this ResScene.
 
         :return: The ds_config of this ResScene.
         :rtype: :class:`huaweicloudsdkres.v1.DataConfig`
@@ -173,7 +173,7 @@ class ResScene:
 
     @ds_config.setter
     def ds_config(self, ds_config):
-        """Sets the ds_config of this ResScene.
+        r"""Sets the ds_config of this ResScene.
 
         :param ds_config: The ds_config of this ResScene.
         :type ds_config: :class:`huaweicloudsdkres.v1.DataConfig`
@@ -182,7 +182,7 @@ class ResScene:
 
     @property
     def scene_id(self):
-        """Gets the scene_id of this ResScene.
+        r"""Gets the scene_id of this ResScene.
 
         场景id。
 
@@ -193,7 +193,7 @@ class ResScene:
 
     @scene_id.setter
     def scene_id(self, scene_id):
-        """Sets the scene_id of this ResScene.
+        r"""Sets the scene_id of this ResScene.
 
         场景id。
 
@@ -204,7 +204,7 @@ class ResScene:
 
     @property
     def scene_name(self):
-        """Gets the scene_name of this ResScene.
+        r"""Gets the scene_name of this ResScene.
 
         场景名称。
 
@@ -215,7 +215,7 @@ class ResScene:
 
     @scene_name.setter
     def scene_name(self, scene_name):
-        """Sets the scene_name of this ResScene.
+        r"""Sets the scene_name of this ResScene.
 
         场景名称。
 
@@ -226,7 +226,7 @@ class ResScene:
 
     @property
     def type(self):
-        """Gets the type of this ResScene.
+        r"""Gets the type of this ResScene.
 
         场景类型。
 
@@ -237,7 +237,7 @@ class ResScene:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResScene.
+        r"""Sets the type of this ResScene.
 
         场景类型。
 
@@ -248,7 +248,7 @@ class ResScene:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ResScene.
+        r"""Gets the service_type of this ResScene.
 
         服务类型。
 
@@ -259,7 +259,7 @@ class ResScene:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ResScene.
+        r"""Sets the service_type of this ResScene.
 
         服务类型。
 
@@ -270,7 +270,7 @@ class ResScene:
 
     @property
     def status(self):
-        """Gets the status of this ResScene.
+        r"""Gets the status of this ResScene.
 
         状态。
 
@@ -281,7 +281,7 @@ class ResScene:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ResScene.
+        r"""Sets the status of this ResScene.
 
         状态。
 
@@ -292,7 +292,7 @@ class ResScene:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ResScene.
+        r"""Gets the workspace_id of this ResScene.
 
         工作空间id。
 
@@ -303,7 +303,7 @@ class ResScene:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ResScene.
+        r"""Sets the workspace_id of this ResScene.
 
         工作空间id。
 
@@ -314,7 +314,7 @@ class ResScene:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ResScene.
+        r"""Gets the created_at of this ResScene.
 
         创建时间。
 
@@ -325,7 +325,7 @@ class ResScene:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ResScene.
+        r"""Sets the created_at of this ResScene.
 
         创建时间。
 
@@ -336,7 +336,7 @@ class ResScene:
 
     @property
     def update_at(self):
-        """Gets the update_at of this ResScene.
+        r"""Gets the update_at of this ResScene.
 
         更新时间。
 
@@ -347,7 +347,7 @@ class ResScene:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this ResScene.
+        r"""Sets the update_at of this ResScene.
 
         更新时间。
 
@@ -358,7 +358,7 @@ class ResScene:
 
     @property
     def specs_config(self):
-        """Gets the specs_config of this ResScene.
+        r"""Gets the specs_config of this ResScene.
 
         :return: The specs_config of this ResScene.
         :rtype: :class:`huaweicloudsdkres.v1.SpecsConfig`
@@ -367,7 +367,7 @@ class ResScene:
 
     @specs_config.setter
     def specs_config(self, specs_config):
-        """Sets the specs_config of this ResScene.
+        r"""Sets the specs_config of this ResScene.
 
         :param specs_config: The specs_config of this ResScene.
         :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`

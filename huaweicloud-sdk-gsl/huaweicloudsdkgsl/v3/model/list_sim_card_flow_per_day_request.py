@@ -25,7 +25,7 @@ class ListSimCardFlowPerDayRequest:
     }
 
     def __init__(self, body=None):
-        """ListSimCardFlowPerDayRequest
+        r"""ListSimCardFlowPerDayRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListSimCardFlowPerDayRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListSimCardFlowPerDayRequest.
+        r"""Gets the body of this ListSimCardFlowPerDayRequest.
 
         :return: The body of this ListSimCardFlowPerDayRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.SimCardFlowPerDayReq`
@@ -52,7 +52,7 @@ class ListSimCardFlowPerDayRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSimCardFlowPerDayRequest.
+        r"""Sets the body of this ListSimCardFlowPerDayRequest.
 
         :param body: The body of this ListSimCardFlowPerDayRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.SimCardFlowPerDayReq`

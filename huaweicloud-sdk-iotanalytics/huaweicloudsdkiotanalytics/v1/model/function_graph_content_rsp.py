@@ -37,7 +37,7 @@ class FunctionGraphContentRsp:
     }
 
     def __init__(self, function_name=None, orig_url=None, final_url=None, verify_body=None, ak=None, sk=None, project_id=None):
-        """FunctionGraphContentRsp
+        r"""FunctionGraphContentRsp
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class FunctionGraphContentRsp:
 
     @property
     def function_name(self):
-        """Gets the function_name of this FunctionGraphContentRsp.
+        r"""Gets the function_name of this FunctionGraphContentRsp.
 
         名称
 
@@ -96,7 +96,7 @@ class FunctionGraphContentRsp:
 
     @function_name.setter
     def function_name(self, function_name):
-        """Sets the function_name of this FunctionGraphContentRsp.
+        r"""Sets the function_name of this FunctionGraphContentRsp.
 
         名称
 
@@ -107,7 +107,7 @@ class FunctionGraphContentRsp:
 
     @property
     def orig_url(self):
-        """Gets the orig_url of this FunctionGraphContentRsp.
+        r"""Gets the orig_url of this FunctionGraphContentRsp.
 
         原始URL
 
@@ -118,7 +118,7 @@ class FunctionGraphContentRsp:
 
     @orig_url.setter
     def orig_url(self, orig_url):
-        """Sets the orig_url of this FunctionGraphContentRsp.
+        r"""Sets the orig_url of this FunctionGraphContentRsp.
 
         原始URL
 
@@ -129,7 +129,7 @@ class FunctionGraphContentRsp:
 
     @property
     def final_url(self):
-        """Gets the final_url of this FunctionGraphContentRsp.
+        r"""Gets the final_url of this FunctionGraphContentRsp.
 
         转换后的URL
 
@@ -140,7 +140,7 @@ class FunctionGraphContentRsp:
 
     @final_url.setter
     def final_url(self, final_url):
-        """Sets the final_url of this FunctionGraphContentRsp.
+        r"""Sets the final_url of this FunctionGraphContentRsp.
 
         转换后的URL
 
@@ -151,7 +151,7 @@ class FunctionGraphContentRsp:
 
     @property
     def verify_body(self):
-        """Gets the verify_body of this FunctionGraphContentRsp.
+        r"""Gets the verify_body of this FunctionGraphContentRsp.
 
         校验参数
 
@@ -162,7 +162,7 @@ class FunctionGraphContentRsp:
 
     @verify_body.setter
     def verify_body(self, verify_body):
-        """Sets the verify_body of this FunctionGraphContentRsp.
+        r"""Sets the verify_body of this FunctionGraphContentRsp.
 
         校验参数
 
@@ -173,7 +173,7 @@ class FunctionGraphContentRsp:
 
     @property
     def ak(self):
-        """Gets the ak of this FunctionGraphContentRsp.
+        r"""Gets the ak of this FunctionGraphContentRsp.
 
         租户的AK
 
@@ -184,7 +184,7 @@ class FunctionGraphContentRsp:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this FunctionGraphContentRsp.
+        r"""Sets the ak of this FunctionGraphContentRsp.
 
         租户的AK
 
@@ -195,7 +195,7 @@ class FunctionGraphContentRsp:
 
     @property
     def sk(self):
-        """Gets the sk of this FunctionGraphContentRsp.
+        r"""Gets the sk of this FunctionGraphContentRsp.
 
         租户的SK
 
@@ -206,7 +206,7 @@ class FunctionGraphContentRsp:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this FunctionGraphContentRsp.
+        r"""Sets the sk of this FunctionGraphContentRsp.
 
         租户的SK
 
@@ -217,7 +217,7 @@ class FunctionGraphContentRsp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this FunctionGraphContentRsp.
+        r"""Gets the project_id of this FunctionGraphContentRsp.
 
         项目id
 
@@ -228,7 +228,7 @@ class FunctionGraphContentRsp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this FunctionGraphContentRsp.
+        r"""Sets the project_id of this FunctionGraphContentRsp.
 
         项目id
 

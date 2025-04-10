@@ -39,7 +39,7 @@ class ListWafAttackEventRequest:
     }
 
     def __init__(self, domains=None, start_time=None, end_time=None, recent=None, overseas_type=None, sip=None, limit=None, offset=None):
-        """ListWafAttackEventRequest
+        r"""ListWafAttackEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListWafAttackEventRequest:
 
     @property
     def domains(self):
-        """Gets the domains of this ListWafAttackEventRequest.
+        r"""Gets the domains of this ListWafAttackEventRequest.
 
         不传时代表全部域名
 
@@ -103,7 +103,7 @@ class ListWafAttackEventRequest:
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this ListWafAttackEventRequest.
+        r"""Sets the domains of this ListWafAttackEventRequest.
 
         不传时代表全部域名
 
@@ -114,7 +114,7 @@ class ListWafAttackEventRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListWafAttackEventRequest.
+        r"""Gets the start_time of this ListWafAttackEventRequest.
 
         开始时间（毫秒时间戳）
 
@@ -125,7 +125,7 @@ class ListWafAttackEventRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListWafAttackEventRequest.
+        r"""Sets the start_time of this ListWafAttackEventRequest.
 
         开始时间（毫秒时间戳）
 
@@ -136,7 +136,7 @@ class ListWafAttackEventRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListWafAttackEventRequest.
+        r"""Gets the end_time of this ListWafAttackEventRequest.
 
         结束时间（毫秒时间戳）
 
@@ -147,7 +147,7 @@ class ListWafAttackEventRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListWafAttackEventRequest.
+        r"""Sets the end_time of this ListWafAttackEventRequest.
 
         结束时间（毫秒时间戳）
 
@@ -158,7 +158,7 @@ class ListWafAttackEventRequest:
 
     @property
     def recent(self):
-        """Gets the recent of this ListWafAttackEventRequest.
+        r"""Gets the recent of this ListWafAttackEventRequest.
 
         枚举值：yesterday,today,3days,1week,1month 与开始结束时间不同时为空
 
@@ -169,7 +169,7 @@ class ListWafAttackEventRequest:
 
     @recent.setter
     def recent(self, recent):
-        """Sets the recent of this ListWafAttackEventRequest.
+        r"""Sets the recent of this ListWafAttackEventRequest.
 
         枚举值：yesterday,today,3days,1week,1month 与开始结束时间不同时为空
 
@@ -180,7 +180,7 @@ class ListWafAttackEventRequest:
 
     @property
     def overseas_type(self):
-        """Gets the overseas_type of this ListWafAttackEventRequest.
+        r"""Gets the overseas_type of this ListWafAttackEventRequest.
 
         实例类型，0-大陆，1-海外
 
@@ -191,7 +191,7 @@ class ListWafAttackEventRequest:
 
     @overseas_type.setter
     def overseas_type(self, overseas_type):
-        """Sets the overseas_type of this ListWafAttackEventRequest.
+        r"""Sets the overseas_type of this ListWafAttackEventRequest.
 
         实例类型，0-大陆，1-海外
 
@@ -202,7 +202,7 @@ class ListWafAttackEventRequest:
 
     @property
     def sip(self):
-        """Gets the sip of this ListWafAttackEventRequest.
+        r"""Gets the sip of this ListWafAttackEventRequest.
 
         攻击源IP
 
@@ -213,7 +213,7 @@ class ListWafAttackEventRequest:
 
     @sip.setter
     def sip(self, sip):
-        """Sets the sip of this ListWafAttackEventRequest.
+        r"""Sets the sip of this ListWafAttackEventRequest.
 
         攻击源IP
 
@@ -224,7 +224,7 @@ class ListWafAttackEventRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWafAttackEventRequest.
+        r"""Gets the limit of this ListWafAttackEventRequest.
 
         limit
 
@@ -235,7 +235,7 @@ class ListWafAttackEventRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWafAttackEventRequest.
+        r"""Sets the limit of this ListWafAttackEventRequest.
 
         limit
 
@@ -246,7 +246,7 @@ class ListWafAttackEventRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWafAttackEventRequest.
+        r"""Gets the offset of this ListWafAttackEventRequest.
 
         offset
 
@@ -257,7 +257,7 @@ class ListWafAttackEventRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWafAttackEventRequest.
+        r"""Sets the offset of this ListWafAttackEventRequest.
 
         offset
 

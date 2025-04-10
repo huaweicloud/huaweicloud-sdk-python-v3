@@ -33,7 +33,7 @@ class CreateInstanceExtendParam:
     }
 
     def __init__(self, charge_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None):
-        """CreateInstanceExtendParam
+        r"""CreateInstanceExtendParam
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CreateInstanceExtendParam:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this CreateInstanceExtendParam.
+        r"""Gets the charge_mode of this CreateInstanceExtendParam.
 
         计费模式，取值范围： - prePaid：预付费，即包年/包月。 - postPaid：后付费，即按需付费。 默认值为postPaid。
 
@@ -82,7 +82,7 @@ class CreateInstanceExtendParam:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this CreateInstanceExtendParam.
+        r"""Sets the charge_mode of this CreateInstanceExtendParam.
 
         计费模式，取值范围： - prePaid：预付费，即包年/包月。 - postPaid：后付费，即按需付费。 默认值为postPaid。
 
@@ -93,7 +93,7 @@ class CreateInstanceExtendParam:
 
     @property
     def period_type(self):
-        """Gets the period_type of this CreateInstanceExtendParam.
+        r"""Gets the period_type of this CreateInstanceExtendParam.
 
         订购周期类型，取值范围： - month：月。 - year：年。 “charge_mode”参数配置为“prePaid”时该参数有效且为必选值。
 
@@ -104,7 +104,7 @@ class CreateInstanceExtendParam:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this CreateInstanceExtendParam.
+        r"""Sets the period_type of this CreateInstanceExtendParam.
 
         订购周期类型，取值范围： - month：月。 - year：年。 “charge_mode”参数配置为“prePaid”时该参数有效且为必选值。
 
@@ -115,7 +115,7 @@ class CreateInstanceExtendParam:
 
     @property
     def period_num(self):
-        """Gets the period_num of this CreateInstanceExtendParam.
+        r"""Gets the period_num of this CreateInstanceExtendParam.
 
         订购周期数，取值范围： - period_type=month（周期类型为月）时，取值为[1，9]。 - period_type=year（周期类型为年）时，取值为1。 “charge_mode”参数配置为“prePaid”时该参数有效且为必选值。
 
@@ -126,7 +126,7 @@ class CreateInstanceExtendParam:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this CreateInstanceExtendParam.
+        r"""Sets the period_num of this CreateInstanceExtendParam.
 
         订购周期数，取值范围： - period_type=month（周期类型为月）时，取值为[1，9]。 - period_type=year（周期类型为年）时，取值为1。 “charge_mode”参数配置为“prePaid”时该参数有效且为必选值。
 
@@ -137,7 +137,7 @@ class CreateInstanceExtendParam:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this CreateInstanceExtendParam.
+        r"""Gets the is_auto_renew of this CreateInstanceExtendParam.
 
         是否自动续订，取值范围： - “true”：自动续订。 - “false”：不自动续订。 “charge_mode”参数配置为“prePaid”时该参数有效，不传该字段时默认为不自动续订。\"
 
@@ -148,7 +148,7 @@ class CreateInstanceExtendParam:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this CreateInstanceExtendParam.
+        r"""Sets the is_auto_renew of this CreateInstanceExtendParam.
 
         是否自动续订，取值范围： - “true”：自动续订。 - “false”：不自动续订。 “charge_mode”参数配置为“prePaid”时该参数有效，不传该字段时默认为不自动续订。\"
 
@@ -159,7 +159,7 @@ class CreateInstanceExtendParam:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this CreateInstanceExtendParam.
+        r"""Gets the is_auto_pay of this CreateInstanceExtendParam.
 
         下单订购后，是否自动从客户的账户的余额中支付，取值范围： - “true”：是（自动从客户账户的余额中支付）。 - “false”：否（需要客户手动支付）。 “charge_mode”参数配置为“prePaid”时该参数有效，不传该字段时默认为客户手动支付。\"
 
@@ -170,7 +170,7 @@ class CreateInstanceExtendParam:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this CreateInstanceExtendParam.
+        r"""Sets the is_auto_pay of this CreateInstanceExtendParam.
 
         下单订购后，是否自动从客户的账户的余额中支付，取值范围： - “true”：是（自动从客户账户的余额中支付）。 - “false”：否（需要客户手动支付）。 “charge_mode”参数配置为“prePaid”时该参数有效，不传该字段时默认为客户手动支付。\"
 

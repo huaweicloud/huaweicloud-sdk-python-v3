@@ -25,7 +25,7 @@ class MigrateDomainRequest:
     }
 
     def __init__(self, body=None):
-        """MigrateDomainRequest
+        r"""MigrateDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MigrateDomainRequest:
 
     @property
     def body(self):
-        """Gets the body of this MigrateDomainRequest.
+        r"""Gets the body of this MigrateDomainRequest.
 
         :return: The body of this MigrateDomainRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.DomainMigrate`
@@ -52,7 +52,7 @@ class MigrateDomainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this MigrateDomainRequest.
+        r"""Sets the body of this MigrateDomainRequest.
 
         :param body: The body of this MigrateDomainRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.DomainMigrate`

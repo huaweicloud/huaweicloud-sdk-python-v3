@@ -55,7 +55,7 @@ class IsolatedFileResponseInfo:
     }
 
     def __init__(self, os_type=None, host_id=None, host_name=None, file_hash=None, file_path=None, file_attr=None, isolation_status=None, private_ip=None, public_ip=None, asset_value=None, update_time=None, agent_version=None, isolate_source=None, event_name=None, agent_event_info=None, antivirus_result_info=None):
-        """IsolatedFileResponseInfo
+        r"""IsolatedFileResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class IsolatedFileResponseInfo:
         :type private_ip: str
         :param public_ip: 弹性公网IP地址
         :type public_ip: str
-        :param asset_value: 资产重要性
+        :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
         :type asset_value: str
         :param update_time: 更新时间，毫秒
         :type update_time: int
@@ -132,7 +132,7 @@ class IsolatedFileResponseInfo:
 
     @property
     def os_type(self):
-        """Gets the os_type of this IsolatedFileResponseInfo.
+        r"""Gets the os_type of this IsolatedFileResponseInfo.
 
         操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
 
@@ -143,7 +143,7 @@ class IsolatedFileResponseInfo:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this IsolatedFileResponseInfo.
+        r"""Sets the os_type of this IsolatedFileResponseInfo.
 
         操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
 
@@ -154,7 +154,7 @@ class IsolatedFileResponseInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this IsolatedFileResponseInfo.
+        r"""Gets the host_id of this IsolatedFileResponseInfo.
 
         主机ID
 
@@ -165,7 +165,7 @@ class IsolatedFileResponseInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this IsolatedFileResponseInfo.
+        r"""Sets the host_id of this IsolatedFileResponseInfo.
 
         主机ID
 
@@ -176,7 +176,7 @@ class IsolatedFileResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this IsolatedFileResponseInfo.
+        r"""Gets the host_name of this IsolatedFileResponseInfo.
 
         服务器名称
 
@@ -187,7 +187,7 @@ class IsolatedFileResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this IsolatedFileResponseInfo.
+        r"""Sets the host_name of this IsolatedFileResponseInfo.
 
         服务器名称
 
@@ -198,7 +198,7 @@ class IsolatedFileResponseInfo:
 
     @property
     def file_hash(self):
-        """Gets the file_hash of this IsolatedFileResponseInfo.
+        r"""Gets the file_hash of this IsolatedFileResponseInfo.
 
         文件哈希
 
@@ -209,7 +209,7 @@ class IsolatedFileResponseInfo:
 
     @file_hash.setter
     def file_hash(self, file_hash):
-        """Sets the file_hash of this IsolatedFileResponseInfo.
+        r"""Sets the file_hash of this IsolatedFileResponseInfo.
 
         文件哈希
 
@@ -220,7 +220,7 @@ class IsolatedFileResponseInfo:
 
     @property
     def file_path(self):
-        """Gets the file_path of this IsolatedFileResponseInfo.
+        r"""Gets the file_path of this IsolatedFileResponseInfo.
 
         文件路径
 
@@ -231,7 +231,7 @@ class IsolatedFileResponseInfo:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this IsolatedFileResponseInfo.
+        r"""Sets the file_path of this IsolatedFileResponseInfo.
 
         文件路径
 
@@ -242,7 +242,7 @@ class IsolatedFileResponseInfo:
 
     @property
     def file_attr(self):
-        """Gets the file_attr of this IsolatedFileResponseInfo.
+        r"""Gets the file_attr of this IsolatedFileResponseInfo.
 
         文件属性
 
@@ -253,7 +253,7 @@ class IsolatedFileResponseInfo:
 
     @file_attr.setter
     def file_attr(self, file_attr):
-        """Sets the file_attr of this IsolatedFileResponseInfo.
+        r"""Sets the file_attr of this IsolatedFileResponseInfo.
 
         文件属性
 
@@ -264,7 +264,7 @@ class IsolatedFileResponseInfo:
 
     @property
     def isolation_status(self):
-        """Gets the isolation_status of this IsolatedFileResponseInfo.
+        r"""Gets the isolation_status of this IsolatedFileResponseInfo.
 
         隔离状态，包含如下:   - isolated : 已隔离   - restored : 已恢复   - isolating : 已下发隔离任务   - restoring : 已下发恢复任务
 
@@ -275,7 +275,7 @@ class IsolatedFileResponseInfo:
 
     @isolation_status.setter
     def isolation_status(self, isolation_status):
-        """Sets the isolation_status of this IsolatedFileResponseInfo.
+        r"""Sets the isolation_status of this IsolatedFileResponseInfo.
 
         隔离状态，包含如下:   - isolated : 已隔离   - restored : 已恢复   - isolating : 已下发隔离任务   - restoring : 已下发恢复任务
 
@@ -286,7 +286,7 @@ class IsolatedFileResponseInfo:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this IsolatedFileResponseInfo.
+        r"""Gets the private_ip of this IsolatedFileResponseInfo.
 
         服务器私有IP
 
@@ -297,7 +297,7 @@ class IsolatedFileResponseInfo:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this IsolatedFileResponseInfo.
+        r"""Sets the private_ip of this IsolatedFileResponseInfo.
 
         服务器私有IP
 
@@ -308,7 +308,7 @@ class IsolatedFileResponseInfo:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this IsolatedFileResponseInfo.
+        r"""Gets the public_ip of this IsolatedFileResponseInfo.
 
         弹性公网IP地址
 
@@ -319,7 +319,7 @@ class IsolatedFileResponseInfo:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this IsolatedFileResponseInfo.
+        r"""Sets the public_ip of this IsolatedFileResponseInfo.
 
         弹性公网IP地址
 
@@ -330,9 +330,9 @@ class IsolatedFileResponseInfo:
 
     @property
     def asset_value(self):
-        """Gets the asset_value of this IsolatedFileResponseInfo.
+        r"""Gets the asset_value of this IsolatedFileResponseInfo.
 
-        资产重要性
+        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
 
         :return: The asset_value of this IsolatedFileResponseInfo.
         :rtype: str
@@ -341,9 +341,9 @@ class IsolatedFileResponseInfo:
 
     @asset_value.setter
     def asset_value(self, asset_value):
-        """Sets the asset_value of this IsolatedFileResponseInfo.
+        r"""Sets the asset_value of this IsolatedFileResponseInfo.
 
-        资产重要性
+        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
 
         :param asset_value: The asset_value of this IsolatedFileResponseInfo.
         :type asset_value: str
@@ -352,7 +352,7 @@ class IsolatedFileResponseInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this IsolatedFileResponseInfo.
+        r"""Gets the update_time of this IsolatedFileResponseInfo.
 
         更新时间，毫秒
 
@@ -363,7 +363,7 @@ class IsolatedFileResponseInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this IsolatedFileResponseInfo.
+        r"""Sets the update_time of this IsolatedFileResponseInfo.
 
         更新时间，毫秒
 
@@ -374,7 +374,7 @@ class IsolatedFileResponseInfo:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this IsolatedFileResponseInfo.
+        r"""Gets the agent_version of this IsolatedFileResponseInfo.
 
         agent版本
 
@@ -385,7 +385,7 @@ class IsolatedFileResponseInfo:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this IsolatedFileResponseInfo.
+        r"""Sets the agent_version of this IsolatedFileResponseInfo.
 
         agent版本
 
@@ -396,7 +396,7 @@ class IsolatedFileResponseInfo:
 
     @property
     def isolate_source(self):
-        """Gets the isolate_source of this IsolatedFileResponseInfo.
+        r"""Gets the isolate_source of this IsolatedFileResponseInfo.
 
         隔离来源，包含如下:   - event : 安全告警事件   - antivirus : 病毒查杀
 
@@ -407,7 +407,7 @@ class IsolatedFileResponseInfo:
 
     @isolate_source.setter
     def isolate_source(self, isolate_source):
-        """Sets the isolate_source of this IsolatedFileResponseInfo.
+        r"""Sets the isolate_source of this IsolatedFileResponseInfo.
 
         隔离来源，包含如下:   - event : 安全告警事件   - antivirus : 病毒查杀
 
@@ -418,7 +418,7 @@ class IsolatedFileResponseInfo:
 
     @property
     def event_name(self):
-        """Gets the event_name of this IsolatedFileResponseInfo.
+        r"""Gets the event_name of this IsolatedFileResponseInfo.
 
         事件名称
 
@@ -429,7 +429,7 @@ class IsolatedFileResponseInfo:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this IsolatedFileResponseInfo.
+        r"""Sets the event_name of this IsolatedFileResponseInfo.
 
         事件名称
 
@@ -440,7 +440,7 @@ class IsolatedFileResponseInfo:
 
     @property
     def agent_event_info(self):
-        """Gets the agent_event_info of this IsolatedFileResponseInfo.
+        r"""Gets the agent_event_info of this IsolatedFileResponseInfo.
 
         :return: The agent_event_info of this IsolatedFileResponseInfo.
         :rtype: :class:`huaweicloudsdkhss.v5.IsolateEventResponseInfo`
@@ -449,7 +449,7 @@ class IsolatedFileResponseInfo:
 
     @agent_event_info.setter
     def agent_event_info(self, agent_event_info):
-        """Sets the agent_event_info of this IsolatedFileResponseInfo.
+        r"""Sets the agent_event_info of this IsolatedFileResponseInfo.
 
         :param agent_event_info: The agent_event_info of this IsolatedFileResponseInfo.
         :type agent_event_info: :class:`huaweicloudsdkhss.v5.IsolateEventResponseInfo`
@@ -458,7 +458,7 @@ class IsolatedFileResponseInfo:
 
     @property
     def antivirus_result_info(self):
-        """Gets the antivirus_result_info of this IsolatedFileResponseInfo.
+        r"""Gets the antivirus_result_info of this IsolatedFileResponseInfo.
 
         :return: The antivirus_result_info of this IsolatedFileResponseInfo.
         :rtype: :class:`huaweicloudsdkhss.v5.AntivirusResultDetailInfo`
@@ -467,7 +467,7 @@ class IsolatedFileResponseInfo:
 
     @antivirus_result_info.setter
     def antivirus_result_info(self, antivirus_result_info):
-        """Sets the antivirus_result_info of this IsolatedFileResponseInfo.
+        r"""Sets the antivirus_result_info of this IsolatedFileResponseInfo.
 
         :param antivirus_result_info: The antivirus_result_info of this IsolatedFileResponseInfo.
         :type antivirus_result_info: :class:`huaweicloudsdkhss.v5.AntivirusResultDetailInfo`

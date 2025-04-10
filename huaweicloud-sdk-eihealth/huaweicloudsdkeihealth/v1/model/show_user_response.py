@@ -48,7 +48,7 @@ class ShowUserResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, role=None, status=None, email=None, phone=None, areacode=None, is_domain_owner=None, create_time=None, pwd_status=None, update_time=None, source=None):
-        """ShowUserResponse
+        r"""ShowUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowUserResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowUserResponse.
+        r"""Gets the id of this ShowUserResponse.
 
         用户id
 
@@ -132,7 +132,7 @@ class ShowUserResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowUserResponse.
+        r"""Sets the id of this ShowUserResponse.
 
         用户id
 
@@ -143,7 +143,7 @@ class ShowUserResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowUserResponse.
+        r"""Gets the name of this ShowUserResponse.
 
         用户名，长度4~31之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格
 
@@ -154,7 +154,7 @@ class ShowUserResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowUserResponse.
+        r"""Sets the name of this ShowUserResponse.
 
         用户名，长度4~31之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格
 
@@ -165,7 +165,7 @@ class ShowUserResponse(SdkResponse):
 
     @property
     def role(self):
-        """Gets the role of this ShowUserResponse.
+        r"""Gets the role of this ShowUserResponse.
 
         角色类型：管理员(ADMIN)、操作者(OPERATOR)
 
@@ -176,7 +176,7 @@ class ShowUserResponse(SdkResponse):
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ShowUserResponse.
+        r"""Sets the role of this ShowUserResponse.
 
         角色类型：管理员(ADMIN)、操作者(OPERATOR)
 
@@ -187,7 +187,7 @@ class ShowUserResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowUserResponse.
+        r"""Gets the status of this ShowUserResponse.
 
         状态
 
@@ -198,7 +198,7 @@ class ShowUserResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowUserResponse.
+        r"""Sets the status of this ShowUserResponse.
 
         状态
 
@@ -209,7 +209,7 @@ class ShowUserResponse(SdkResponse):
 
     @property
     def email(self):
-        """Gets the email of this ShowUserResponse.
+        r"""Gets the email of this ShowUserResponse.
 
         用户邮箱，需符合邮箱格式
 
@@ -220,7 +220,7 @@ class ShowUserResponse(SdkResponse):
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ShowUserResponse.
+        r"""Sets the email of this ShowUserResponse.
 
         用户邮箱，需符合邮箱格式
 
@@ -231,7 +231,7 @@ class ShowUserResponse(SdkResponse):
 
     @property
     def phone(self):
-        """Gets the phone of this ShowUserResponse.
+        r"""Gets the phone of this ShowUserResponse.
 
         用户手机号，纯数字，长度小于等于32位。必须与国家码同时存在。
 
@@ -242,7 +242,7 @@ class ShowUserResponse(SdkResponse):
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this ShowUserResponse.
+        r"""Sets the phone of this ShowUserResponse.
 
         用户手机号，纯数字，长度小于等于32位。必须与国家码同时存在。
 
@@ -253,7 +253,7 @@ class ShowUserResponse(SdkResponse):
 
     @property
     def areacode(self):
-        """Gets the areacode of this ShowUserResponse.
+        r"""Gets the areacode of this ShowUserResponse.
 
         国家码。中国大陆为“0086”
 
@@ -264,7 +264,7 @@ class ShowUserResponse(SdkResponse):
 
     @areacode.setter
     def areacode(self, areacode):
-        """Sets the areacode of this ShowUserResponse.
+        r"""Sets the areacode of this ShowUserResponse.
 
         国家码。中国大陆为“0086”
 
@@ -275,7 +275,7 @@ class ShowUserResponse(SdkResponse):
 
     @property
     def is_domain_owner(self):
-        """Gets the is_domain_owner of this ShowUserResponse.
+        r"""Gets the is_domain_owner of this ShowUserResponse.
 
         是否domain用户
 
@@ -286,7 +286,7 @@ class ShowUserResponse(SdkResponse):
 
     @is_domain_owner.setter
     def is_domain_owner(self, is_domain_owner):
-        """Sets the is_domain_owner of this ShowUserResponse.
+        r"""Sets the is_domain_owner of this ShowUserResponse.
 
         是否domain用户
 
@@ -297,7 +297,7 @@ class ShowUserResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowUserResponse.
+        r"""Gets the create_time of this ShowUserResponse.
 
         用户创建时间，UTC时间
 
@@ -308,7 +308,7 @@ class ShowUserResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowUserResponse.
+        r"""Sets the create_time of this ShowUserResponse.
 
         用户创建时间，UTC时间
 
@@ -319,7 +319,7 @@ class ShowUserResponse(SdkResponse):
 
     @property
     def pwd_status(self):
-        """Gets the pwd_status of this ShowUserResponse.
+        r"""Gets the pwd_status of this ShowUserResponse.
 
         是否需要修改密码
 
@@ -330,7 +330,7 @@ class ShowUserResponse(SdkResponse):
 
     @pwd_status.setter
     def pwd_status(self, pwd_status):
-        """Sets the pwd_status of this ShowUserResponse.
+        r"""Sets the pwd_status of this ShowUserResponse.
 
         是否需要修改密码
 
@@ -341,7 +341,7 @@ class ShowUserResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowUserResponse.
+        r"""Gets the update_time of this ShowUserResponse.
 
         更新时间，UTC时间
 
@@ -352,7 +352,7 @@ class ShowUserResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowUserResponse.
+        r"""Sets the update_time of this ShowUserResponse.
 
         更新时间，UTC时间
 
@@ -363,7 +363,7 @@ class ShowUserResponse(SdkResponse):
 
     @property
     def source(self):
-        """Gets the source of this ShowUserResponse.
+        r"""Gets the source of this ShowUserResponse.
 
         来源，PLATFORM或者IAM
 
@@ -374,7 +374,7 @@ class ShowUserResponse(SdkResponse):
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ShowUserResponse.
+        r"""Sets the source of this ShowUserResponse.
 
         来源，PLATFORM或者IAM
 

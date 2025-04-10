@@ -29,7 +29,7 @@ class InstanceDrRelation:
     }
 
     def __init__(self, instance_id=None, master_instance=None, slave_instances=None):
-        """InstanceDrRelation
+        r"""InstanceDrRelation
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class InstanceDrRelation:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceDrRelation.
+        r"""Gets the instance_id of this InstanceDrRelation.
 
         当前区域实例ID。
 
@@ -68,7 +68,7 @@ class InstanceDrRelation:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceDrRelation.
+        r"""Sets the instance_id of this InstanceDrRelation.
 
         当前区域实例ID。
 
@@ -79,7 +79,7 @@ class InstanceDrRelation:
 
     @property
     def master_instance(self):
-        """Gets the master_instance of this InstanceDrRelation.
+        r"""Gets the master_instance of this InstanceDrRelation.
 
         :return: The master_instance of this InstanceDrRelation.
         :rtype: :class:`huaweicloudsdkrds.v3.MasterInstance`
@@ -88,7 +88,7 @@ class InstanceDrRelation:
 
     @master_instance.setter
     def master_instance(self, master_instance):
-        """Sets the master_instance of this InstanceDrRelation.
+        r"""Sets the master_instance of this InstanceDrRelation.
 
         :param master_instance: The master_instance of this InstanceDrRelation.
         :type master_instance: :class:`huaweicloudsdkrds.v3.MasterInstance`
@@ -97,7 +97,7 @@ class InstanceDrRelation:
 
     @property
     def slave_instances(self):
-        """Gets the slave_instances of this InstanceDrRelation.
+        r"""Gets the slave_instances of this InstanceDrRelation.
 
         容灾实例信息列表。
 
@@ -108,7 +108,7 @@ class InstanceDrRelation:
 
     @slave_instances.setter
     def slave_instances(self, slave_instances):
-        """Sets the slave_instances of this InstanceDrRelation.
+        r"""Sets the slave_instances of this InstanceDrRelation.
 
         容灾实例信息列表。
 

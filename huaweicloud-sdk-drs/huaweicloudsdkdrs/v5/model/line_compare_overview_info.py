@@ -29,7 +29,7 @@ class LineCompareOverviewInfo:
     }
 
     def __init__(self, source_db_name=None, target_db_name=None, status=None):
-        """LineCompareOverviewInfo
+        r"""LineCompareOverviewInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LineCompareOverviewInfo:
 
     @property
     def source_db_name(self):
-        """Gets the source_db_name of this LineCompareOverviewInfo.
+        r"""Gets the source_db_name of this LineCompareOverviewInfo.
 
         源库库名。
 
@@ -68,7 +68,7 @@ class LineCompareOverviewInfo:
 
     @source_db_name.setter
     def source_db_name(self, source_db_name):
-        """Sets the source_db_name of this LineCompareOverviewInfo.
+        r"""Sets the source_db_name of this LineCompareOverviewInfo.
 
         源库库名。
 
@@ -79,7 +79,7 @@ class LineCompareOverviewInfo:
 
     @property
     def target_db_name(self):
-        """Gets the target_db_name of this LineCompareOverviewInfo.
+        r"""Gets the target_db_name of this LineCompareOverviewInfo.
 
         目标库库名。
 
@@ -90,7 +90,7 @@ class LineCompareOverviewInfo:
 
     @target_db_name.setter
     def target_db_name(self, target_db_name):
-        """Sets the target_db_name of this LineCompareOverviewInfo.
+        r"""Sets the target_db_name of this LineCompareOverviewInfo.
 
         目标库库名。
 
@@ -101,7 +101,7 @@ class LineCompareOverviewInfo:
 
     @property
     def status(self):
-        """Gets the status of this LineCompareOverviewInfo.
+        r"""Gets the status of this LineCompareOverviewInfo.
 
         行对比结果。取值： - CONSISTENT：一致。 - INCONSISTENT：不一致。 - COMPARING：正在对比。 - WAITING_FOR_COMPARISON：等待对比。 - FAILED_TO_COMPARE：对比失败。 - TARGET_DB_NOT_EXIST：目标库不存在。 - CAN_NOT_COMPARE：无法对比。
 
@@ -112,7 +112,7 @@ class LineCompareOverviewInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this LineCompareOverviewInfo.
+        r"""Sets the status of this LineCompareOverviewInfo.
 
         行对比结果。取值： - CONSISTENT：一致。 - INCONSISTENT：不一致。 - COMPARING：正在对比。 - WAITING_FOR_COMPARISON：等待对比。 - FAILED_TO_COMPARE：对比失败。 - TARGET_DB_NOT_EXIST：目标库不存在。 - CAN_NOT_COMPARE：无法对比。
 

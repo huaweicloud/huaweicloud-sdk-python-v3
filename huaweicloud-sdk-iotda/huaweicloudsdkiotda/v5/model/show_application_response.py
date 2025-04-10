@@ -32,7 +32,7 @@ class ShowApplicationResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, app_name=None, create_time=None, default_app=None):
-        """ShowApplicationResponse
+        r"""ShowApplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowApplicationResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowApplicationResponse.
+        r"""Gets the app_id of this ShowApplicationResponse.
 
         资源空间ID，唯一标识一个资源空间，由物联网平台在创建资源空间时分配。资源空间对应的是物联网平台原有的应用，在物联网平台的含义与应用一致，只是变更了名称。
 
@@ -76,7 +76,7 @@ class ShowApplicationResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowApplicationResponse.
+        r"""Sets the app_id of this ShowApplicationResponse.
 
         资源空间ID，唯一标识一个资源空间，由物联网平台在创建资源空间时分配。资源空间对应的是物联网平台原有的应用，在物联网平台的含义与应用一致，只是变更了名称。
 
@@ -87,7 +87,7 @@ class ShowApplicationResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this ShowApplicationResponse.
+        r"""Gets the app_name of this ShowApplicationResponse.
 
         资源空间名称。
 
@@ -98,7 +98,7 @@ class ShowApplicationResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ShowApplicationResponse.
+        r"""Sets the app_name of this ShowApplicationResponse.
 
         资源空间名称。
 
@@ -109,7 +109,7 @@ class ShowApplicationResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowApplicationResponse.
+        r"""Gets the create_time of this ShowApplicationResponse.
 
         资源空间创建时间，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -120,7 +120,7 @@ class ShowApplicationResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowApplicationResponse.
+        r"""Sets the create_time of this ShowApplicationResponse.
 
         资源空间创建时间，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -131,7 +131,7 @@ class ShowApplicationResponse(SdkResponse):
 
     @property
     def default_app(self):
-        """Gets the default_app of this ShowApplicationResponse.
+        r"""Gets the default_app of this ShowApplicationResponse.
 
         是否为默认资源空间
 
@@ -142,7 +142,7 @@ class ShowApplicationResponse(SdkResponse):
 
     @default_app.setter
     def default_app(self, default_app):
-        """Sets the default_app of this ShowApplicationResponse.
+        r"""Sets the default_app of this ShowApplicationResponse.
 
         是否为默认资源空间
 

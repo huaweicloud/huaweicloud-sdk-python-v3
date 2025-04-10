@@ -29,7 +29,7 @@ class ListDatabaseNamesRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_pattern=None):
-        """ListDatabaseNamesRequest
+        r"""ListDatabaseNamesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListDatabaseNamesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDatabaseNamesRequest.
+        r"""Gets the instance_id of this ListDatabaseNamesRequest.
 
         实例Id
 
@@ -66,7 +66,7 @@ class ListDatabaseNamesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDatabaseNamesRequest.
+        r"""Sets the instance_id of this ListDatabaseNamesRequest.
 
         实例Id
 
@@ -77,7 +77,7 @@ class ListDatabaseNamesRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ListDatabaseNamesRequest.
+        r"""Gets the catalog_name of this ListDatabaseNamesRequest.
 
         catalog名字
 
@@ -88,7 +88,7 @@ class ListDatabaseNamesRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ListDatabaseNamesRequest.
+        r"""Sets the catalog_name of this ListDatabaseNamesRequest.
 
         catalog名字
 
@@ -99,7 +99,7 @@ class ListDatabaseNamesRequest:
 
     @property
     def database_pattern(self):
-        """Gets the database_pattern of this ListDatabaseNamesRequest.
+        r"""Gets the database_pattern of this ListDatabaseNamesRequest.
 
         数据库名字通配符
 
@@ -110,7 +110,7 @@ class ListDatabaseNamesRequest:
 
     @database_pattern.setter
     def database_pattern(self, database_pattern):
-        """Sets the database_pattern of this ListDatabaseNamesRequest.
+        r"""Sets the database_pattern of this ListDatabaseNamesRequest.
 
         数据库名字通配符
 

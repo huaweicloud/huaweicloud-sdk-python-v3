@@ -27,7 +27,7 @@ class UpdateAuthorisationRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateAuthorisationRequest
+        r"""UpdateAuthorisationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAuthorisationRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateAuthorisationRequest.
+        r"""Gets the id of this UpdateAuthorisationRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateAuthorisationRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateAuthorisationRequest.
+        r"""Sets the id of this UpdateAuthorisationRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateAuthorisationRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAuthorisationRequest.
+        r"""Gets the body of this UpdateAuthorisationRequest.
 
         :return: The body of this UpdateAuthorisationRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateAuthorisationRequestBody`
@@ -80,7 +80,7 @@ class UpdateAuthorisationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAuthorisationRequest.
+        r"""Sets the body of this UpdateAuthorisationRequest.
 
         :param body: The body of this UpdateAuthorisationRequest.
         :type body: :class:`huaweicloudsdkcc.v3.UpdateAuthorisationRequestBody`

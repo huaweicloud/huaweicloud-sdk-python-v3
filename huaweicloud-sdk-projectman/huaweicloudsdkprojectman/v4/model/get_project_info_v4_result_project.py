@@ -43,7 +43,7 @@ class GetProjectInfoV4ResultProject:
     }
 
     def __init__(self, project_num_id=None, project_id=None, name=None, created_on=None, updated_on=None, project_type=None, archive=None, enterprise_id=None, project_code=None, creator=None):
-        """GetProjectInfoV4ResultProject
+        r"""GetProjectInfoV4ResultProject
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class GetProjectInfoV4ResultProject:
 
     @property
     def project_num_id(self):
-        """Gets the project_num_id of this GetProjectInfoV4ResultProject.
+        r"""Gets the project_num_id of this GetProjectInfoV4ResultProject.
 
         项目numId
 
@@ -117,7 +117,7 @@ class GetProjectInfoV4ResultProject:
 
     @project_num_id.setter
     def project_num_id(self, project_num_id):
-        """Sets the project_num_id of this GetProjectInfoV4ResultProject.
+        r"""Sets the project_num_id of this GetProjectInfoV4ResultProject.
 
         项目numId
 
@@ -128,7 +128,7 @@ class GetProjectInfoV4ResultProject:
 
     @property
     def project_id(self):
-        """Gets the project_id of this GetProjectInfoV4ResultProject.
+        r"""Gets the project_id of this GetProjectInfoV4ResultProject.
 
         项目uuid
 
@@ -139,7 +139,7 @@ class GetProjectInfoV4ResultProject:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this GetProjectInfoV4ResultProject.
+        r"""Sets the project_id of this GetProjectInfoV4ResultProject.
 
         项目uuid
 
@@ -150,7 +150,7 @@ class GetProjectInfoV4ResultProject:
 
     @property
     def name(self):
-        """Gets the name of this GetProjectInfoV4ResultProject.
+        r"""Gets the name of this GetProjectInfoV4ResultProject.
 
         项目名称
 
@@ -161,7 +161,7 @@ class GetProjectInfoV4ResultProject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetProjectInfoV4ResultProject.
+        r"""Sets the name of this GetProjectInfoV4ResultProject.
 
         项目名称
 
@@ -172,7 +172,7 @@ class GetProjectInfoV4ResultProject:
 
     @property
     def created_on(self):
-        """Gets the created_on of this GetProjectInfoV4ResultProject.
+        r"""Gets the created_on of this GetProjectInfoV4ResultProject.
 
         项目创建时间
 
@@ -183,7 +183,7 @@ class GetProjectInfoV4ResultProject:
 
     @created_on.setter
     def created_on(self, created_on):
-        """Sets the created_on of this GetProjectInfoV4ResultProject.
+        r"""Sets the created_on of this GetProjectInfoV4ResultProject.
 
         项目创建时间
 
@@ -194,7 +194,7 @@ class GetProjectInfoV4ResultProject:
 
     @property
     def updated_on(self):
-        """Gets the updated_on of this GetProjectInfoV4ResultProject.
+        r"""Gets the updated_on of this GetProjectInfoV4ResultProject.
 
         项目更新时间
 
@@ -205,7 +205,7 @@ class GetProjectInfoV4ResultProject:
 
     @updated_on.setter
     def updated_on(self, updated_on):
-        """Sets the updated_on of this GetProjectInfoV4ResultProject.
+        r"""Sets the updated_on of this GetProjectInfoV4ResultProject.
 
         项目更新时间
 
@@ -216,7 +216,7 @@ class GetProjectInfoV4ResultProject:
 
     @property
     def project_type(self):
-        """Gets the project_type of this GetProjectInfoV4ResultProject.
+        r"""Gets the project_type of this GetProjectInfoV4ResultProject.
 
         项目类型
 
@@ -227,7 +227,7 @@ class GetProjectInfoV4ResultProject:
 
     @project_type.setter
     def project_type(self, project_type):
-        """Sets the project_type of this GetProjectInfoV4ResultProject.
+        r"""Sets the project_type of this GetProjectInfoV4ResultProject.
 
         项目类型
 
@@ -238,7 +238,7 @@ class GetProjectInfoV4ResultProject:
 
     @property
     def archive(self):
-        """Gets the archive of this GetProjectInfoV4ResultProject.
+        r"""Gets the archive of this GetProjectInfoV4ResultProject.
 
         是否归档
 
@@ -249,7 +249,7 @@ class GetProjectInfoV4ResultProject:
 
     @archive.setter
     def archive(self, archive):
-        """Sets the archive of this GetProjectInfoV4ResultProject.
+        r"""Sets the archive of this GetProjectInfoV4ResultProject.
 
         是否归档
 
@@ -260,7 +260,7 @@ class GetProjectInfoV4ResultProject:
 
     @property
     def enterprise_id(self):
-        """Gets the enterprise_id of this GetProjectInfoV4ResultProject.
+        r"""Gets the enterprise_id of this GetProjectInfoV4ResultProject.
 
         企业项目id
 
@@ -271,7 +271,7 @@ class GetProjectInfoV4ResultProject:
 
     @enterprise_id.setter
     def enterprise_id(self, enterprise_id):
-        """Sets the enterprise_id of this GetProjectInfoV4ResultProject.
+        r"""Sets the enterprise_id of this GetProjectInfoV4ResultProject.
 
         企业项目id
 
@@ -282,7 +282,7 @@ class GetProjectInfoV4ResultProject:
 
     @property
     def project_code(self):
-        """Gets the project_code of this GetProjectInfoV4ResultProject.
+        r"""Gets the project_code of this GetProjectInfoV4ResultProject.
 
         项目代号
 
@@ -293,7 +293,7 @@ class GetProjectInfoV4ResultProject:
 
     @project_code.setter
     def project_code(self, project_code):
-        """Sets the project_code of this GetProjectInfoV4ResultProject.
+        r"""Sets the project_code of this GetProjectInfoV4ResultProject.
 
         项目代号
 
@@ -304,7 +304,7 @@ class GetProjectInfoV4ResultProject:
 
     @property
     def creator(self):
-        """Gets the creator of this GetProjectInfoV4ResultProject.
+        r"""Gets the creator of this GetProjectInfoV4ResultProject.
 
         :return: The creator of this GetProjectInfoV4ResultProject.
         :rtype: :class:`huaweicloudsdkprojectman.v4.GetProjectInfoV4ResultProjectCreator`
@@ -313,7 +313,7 @@ class GetProjectInfoV4ResultProject:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this GetProjectInfoV4ResultProject.
+        r"""Sets the creator of this GetProjectInfoV4ResultProject.
 
         :param creator: The creator of this GetProjectInfoV4ResultProject.
         :type creator: :class:`huaweicloudsdkprojectman.v4.GetProjectInfoV4ResultProjectCreator`

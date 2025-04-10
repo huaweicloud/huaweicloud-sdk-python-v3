@@ -25,7 +25,7 @@ class JobActionReq:
     }
 
     def __init__(self, job=None):
-        """JobActionReq
+        r"""JobActionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class JobActionReq:
 
     @property
     def job(self):
-        """Gets the job of this JobActionReq.
+        r"""Gets the job of this JobActionReq.
 
         :return: The job of this JobActionReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.ActionReq`
@@ -51,7 +51,7 @@ class JobActionReq:
 
     @job.setter
     def job(self, job):
-        """Sets the job of this JobActionReq.
+        r"""Sets the job of this JobActionReq.
 
         :param job: The job of this JobActionReq.
         :type job: :class:`huaweicloudsdkdrs.v5.ActionReq`

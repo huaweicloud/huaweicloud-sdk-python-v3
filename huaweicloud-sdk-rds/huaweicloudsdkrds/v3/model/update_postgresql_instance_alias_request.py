@@ -29,7 +29,7 @@ class UpdatePostgresqlInstanceAliasRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdatePostgresqlInstanceAliasRequest
+        r"""UpdatePostgresqlInstanceAliasRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdatePostgresqlInstanceAliasRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdatePostgresqlInstanceAliasRequest.
+        r"""Gets the x_language of this UpdatePostgresqlInstanceAliasRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class UpdatePostgresqlInstanceAliasRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdatePostgresqlInstanceAliasRequest.
+        r"""Sets the x_language of this UpdatePostgresqlInstanceAliasRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class UpdatePostgresqlInstanceAliasRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdatePostgresqlInstanceAliasRequest.
+        r"""Gets the instance_id of this UpdatePostgresqlInstanceAliasRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class UpdatePostgresqlInstanceAliasRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdatePostgresqlInstanceAliasRequest.
+        r"""Sets the instance_id of this UpdatePostgresqlInstanceAliasRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class UpdatePostgresqlInstanceAliasRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePostgresqlInstanceAliasRequest.
+        r"""Gets the body of this UpdatePostgresqlInstanceAliasRequest.
 
         :return: The body of this UpdatePostgresqlInstanceAliasRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateRdsInstanceAliasRequest`
@@ -109,7 +109,7 @@ class UpdatePostgresqlInstanceAliasRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePostgresqlInstanceAliasRequest.
+        r"""Sets the body of this UpdatePostgresqlInstanceAliasRequest.
 
         :param body: The body of this UpdatePostgresqlInstanceAliasRequest.
         :type body: :class:`huaweicloudsdkrds.v3.UpdateRdsInstanceAliasRequest`

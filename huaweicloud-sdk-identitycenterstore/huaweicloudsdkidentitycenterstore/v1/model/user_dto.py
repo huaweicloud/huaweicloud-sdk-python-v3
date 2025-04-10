@@ -69,7 +69,7 @@ class UserDto:
     }
 
     def __init__(self, addresses=None, display_name=None, emails=None, external_id=None, external_ids=None, identity_store_id=None, locale=None, name=None, nickname=None, phone_numbers=None, preferred_language=None, profile_url=None, timezone=None, title=None, user_id=None, user_name=None, user_type=None, created_at=None, created_by=None, updated_at=None, updated_by=None, enabled=None, enterprise=None):
-        """UserDto
+        r"""UserDto
 
         The model defined in huaweicloud sdk
 
@@ -186,7 +186,7 @@ class UserDto:
 
     @property
     def addresses(self):
-        """Gets the addresses of this UserDto.
+        r"""Gets the addresses of this UserDto.
 
         用户的地址信息列表
 
@@ -197,7 +197,7 @@ class UserDto:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this UserDto.
+        r"""Sets the addresses of this UserDto.
 
         用户的地址信息列表
 
@@ -208,7 +208,7 @@ class UserDto:
 
     @property
     def display_name(self):
-        """Gets the display_name of this UserDto.
+        r"""Gets the display_name of this UserDto.
 
         用户的显示名称
 
@@ -219,7 +219,7 @@ class UserDto:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this UserDto.
+        r"""Sets the display_name of this UserDto.
 
         用户的显示名称
 
@@ -230,7 +230,7 @@ class UserDto:
 
     @property
     def emails(self):
-        """Gets the emails of this UserDto.
+        r"""Gets the emails of this UserDto.
 
         用户的电子邮箱信息列表
 
@@ -241,7 +241,7 @@ class UserDto:
 
     @emails.setter
     def emails(self, emails):
-        """Sets the emails of this UserDto.
+        r"""Sets the emails of this UserDto.
 
         用户的电子邮箱信息列表
 
@@ -252,7 +252,7 @@ class UserDto:
 
     @property
     def external_id(self):
-        """Gets the external_id of this UserDto.
+        r"""Gets the external_id of this UserDto.
 
         外部身份源分配给此资源的标识符
 
@@ -263,7 +263,7 @@ class UserDto:
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this UserDto.
+        r"""Sets the external_id of this UserDto.
 
         外部身份源分配给此资源的标识符
 
@@ -274,7 +274,7 @@ class UserDto:
 
     @property
     def external_ids(self):
-        """Gets the external_ids of this UserDto.
+        r"""Gets the external_ids of this UserDto.
 
         用户的外部标识符信息列表
 
@@ -285,7 +285,7 @@ class UserDto:
 
     @external_ids.setter
     def external_ids(self, external_ids):
-        """Sets the external_ids of this UserDto.
+        r"""Sets the external_ids of this UserDto.
 
         用户的外部标识符信息列表
 
@@ -296,7 +296,7 @@ class UserDto:
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this UserDto.
+        r"""Gets the identity_store_id of this UserDto.
 
         身份源的全局唯一标识符（ID）
 
@@ -307,7 +307,7 @@ class UserDto:
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this UserDto.
+        r"""Sets the identity_store_id of this UserDto.
 
         身份源的全局唯一标识符（ID）
 
@@ -318,7 +318,7 @@ class UserDto:
 
     @property
     def locale(self):
-        """Gets the locale of this UserDto.
+        r"""Gets the locale of this UserDto.
 
         用户的地理区域或位置信息
 
@@ -329,7 +329,7 @@ class UserDto:
 
     @locale.setter
     def locale(self, locale):
-        """Sets the locale of this UserDto.
+        r"""Sets the locale of this UserDto.
 
         用户的地理区域或位置信息
 
@@ -340,7 +340,7 @@ class UserDto:
 
     @property
     def name(self):
-        """Gets the name of this UserDto.
+        r"""Gets the name of this UserDto.
 
         :return: The name of this UserDto.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.NameDto`
@@ -349,7 +349,7 @@ class UserDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UserDto.
+        r"""Sets the name of this UserDto.
 
         :param name: The name of this UserDto.
         :type name: :class:`huaweicloudsdkidentitycenterstore.v1.NameDto`
@@ -358,7 +358,7 @@ class UserDto:
 
     @property
     def nickname(self):
-        """Gets the nickname of this UserDto.
+        r"""Gets the nickname of this UserDto.
 
         用户昵称
 
@@ -369,7 +369,7 @@ class UserDto:
 
     @nickname.setter
     def nickname(self, nickname):
-        """Sets the nickname of this UserDto.
+        r"""Sets the nickname of this UserDto.
 
         用户昵称
 
@@ -380,7 +380,7 @@ class UserDto:
 
     @property
     def phone_numbers(self):
-        """Gets the phone_numbers of this UserDto.
+        r"""Gets the phone_numbers of this UserDto.
 
         用户的电话号码信息列表
 
@@ -391,7 +391,7 @@ class UserDto:
 
     @phone_numbers.setter
     def phone_numbers(self, phone_numbers):
-        """Sets the phone_numbers of this UserDto.
+        r"""Sets the phone_numbers of this UserDto.
 
         用户的电话号码信息列表
 
@@ -402,7 +402,7 @@ class UserDto:
 
     @property
     def preferred_language(self):
-        """Gets the preferred_language of this UserDto.
+        r"""Gets the preferred_language of this UserDto.
 
         用户语言首选项
 
@@ -413,7 +413,7 @@ class UserDto:
 
     @preferred_language.setter
     def preferred_language(self, preferred_language):
-        """Sets the preferred_language of this UserDto.
+        r"""Sets the preferred_language of this UserDto.
 
         用户语言首选项
 
@@ -424,7 +424,7 @@ class UserDto:
 
     @property
     def profile_url(self):
-        """Gets the profile_url of this UserDto.
+        r"""Gets the profile_url of this UserDto.
 
         与用户关联的URL
 
@@ -435,7 +435,7 @@ class UserDto:
 
     @profile_url.setter
     def profile_url(self, profile_url):
-        """Sets the profile_url of this UserDto.
+        r"""Sets the profile_url of this UserDto.
 
         与用户关联的URL
 
@@ -446,7 +446,7 @@ class UserDto:
 
     @property
     def timezone(self):
-        """Gets the timezone of this UserDto.
+        r"""Gets the timezone of this UserDto.
 
         用户时区
 
@@ -457,7 +457,7 @@ class UserDto:
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this UserDto.
+        r"""Sets the timezone of this UserDto.
 
         用户时区
 
@@ -468,7 +468,7 @@ class UserDto:
 
     @property
     def title(self):
-        """Gets the title of this UserDto.
+        r"""Gets the title of this UserDto.
 
         用户头衔
 
@@ -479,7 +479,7 @@ class UserDto:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this UserDto.
+        r"""Sets the title of this UserDto.
 
         用户头衔
 
@@ -490,7 +490,7 @@ class UserDto:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UserDto.
+        r"""Gets the user_id of this UserDto.
 
         身份源中IAM身份中心用户的全局唯一标识符（ID）
 
@@ -501,7 +501,7 @@ class UserDto:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UserDto.
+        r"""Sets the user_id of this UserDto.
 
         身份源中IAM身份中心用户的全局唯一标识符（ID）
 
@@ -512,7 +512,7 @@ class UserDto:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UserDto.
+        r"""Gets the user_name of this UserDto.
 
         用户名，用于标识用户的唯一字符串
 
@@ -523,7 +523,7 @@ class UserDto:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UserDto.
+        r"""Sets the user_name of this UserDto.
 
         用户名，用于标识用户的唯一字符串
 
@@ -534,7 +534,7 @@ class UserDto:
 
     @property
     def user_type(self):
-        """Gets the user_type of this UserDto.
+        r"""Gets the user_type of this UserDto.
 
         用户类型
 
@@ -545,7 +545,7 @@ class UserDto:
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this UserDto.
+        r"""Sets the user_type of this UserDto.
 
         用户类型
 
@@ -556,7 +556,7 @@ class UserDto:
 
     @property
     def created_at(self):
-        """Gets the created_at of this UserDto.
+        r"""Gets the created_at of this UserDto.
 
         创建用户时的时间戳
 
@@ -567,7 +567,7 @@ class UserDto:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UserDto.
+        r"""Sets the created_at of this UserDto.
 
         创建用户时的时间戳
 
@@ -578,7 +578,7 @@ class UserDto:
 
     @property
     def created_by(self):
-        """Gets the created_by of this UserDto.
+        r"""Gets the created_by of this UserDto.
 
         创建者
 
@@ -589,7 +589,7 @@ class UserDto:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this UserDto.
+        r"""Sets the created_by of this UserDto.
 
         创建者
 
@@ -600,7 +600,7 @@ class UserDto:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UserDto.
+        r"""Gets the updated_at of this UserDto.
 
         更新用户时的时间戳
 
@@ -611,7 +611,7 @@ class UserDto:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UserDto.
+        r"""Sets the updated_at of this UserDto.
 
         更新用户时的时间戳
 
@@ -622,7 +622,7 @@ class UserDto:
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this UserDto.
+        r"""Gets the updated_by of this UserDto.
 
         更新者
 
@@ -633,7 +633,7 @@ class UserDto:
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this UserDto.
+        r"""Sets the updated_by of this UserDto.
 
         更新者
 
@@ -644,7 +644,7 @@ class UserDto:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UserDto.
+        r"""Gets the enabled of this UserDto.
 
         一个布尔值，表示用户是否启用
 
@@ -655,7 +655,7 @@ class UserDto:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UserDto.
+        r"""Sets the enabled of this UserDto.
 
         一个布尔值，表示用户是否启用
 
@@ -666,7 +666,7 @@ class UserDto:
 
     @property
     def enterprise(self):
-        """Gets the enterprise of this UserDto.
+        r"""Gets the enterprise of this UserDto.
 
         :return: The enterprise of this UserDto.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.EnterpriseDto`
@@ -675,7 +675,7 @@ class UserDto:
 
     @enterprise.setter
     def enterprise(self, enterprise):
-        """Sets the enterprise of this UserDto.
+        r"""Sets the enterprise of this UserDto.
 
         :param enterprise: The enterprise of this UserDto.
         :type enterprise: :class:`huaweicloudsdkidentitycenterstore.v1.EnterpriseDto`

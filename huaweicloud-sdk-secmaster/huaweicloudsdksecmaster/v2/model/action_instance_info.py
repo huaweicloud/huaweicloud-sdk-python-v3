@@ -27,7 +27,7 @@ class ActionInstanceInfo:
     }
 
     def __init__(self, action=None, instance_log=None):
-        """ActionInstanceInfo
+        r"""ActionInstanceInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ActionInstanceInfo:
 
     @property
     def action(self):
-        """Gets the action of this ActionInstanceInfo.
+        r"""Gets the action of this ActionInstanceInfo.
 
         :return: The action of this ActionInstanceInfo.
         :rtype: :class:`huaweicloudsdksecmaster.v2.ActionInfo`
@@ -59,7 +59,7 @@ class ActionInstanceInfo:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ActionInstanceInfo.
+        r"""Sets the action of this ActionInstanceInfo.
 
         :param action: The action of this ActionInstanceInfo.
         :type action: :class:`huaweicloudsdksecmaster.v2.ActionInfo`
@@ -68,7 +68,7 @@ class ActionInstanceInfo:
 
     @property
     def instance_log(self):
-        """Gets the instance_log of this ActionInstanceInfo.
+        r"""Gets the instance_log of this ActionInstanceInfo.
 
         :return: The instance_log of this ActionInstanceInfo.
         :rtype: :class:`huaweicloudsdksecmaster.v2.AuditLogInfo`
@@ -77,7 +77,7 @@ class ActionInstanceInfo:
 
     @instance_log.setter
     def instance_log(self, instance_log):
-        """Sets the instance_log of this ActionInstanceInfo.
+        r"""Sets the instance_log of this ActionInstanceInfo.
 
         :param instance_log: The instance_log of this ActionInstanceInfo.
         :type instance_log: :class:`huaweicloudsdksecmaster.v2.AuditLogInfo`

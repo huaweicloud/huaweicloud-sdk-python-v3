@@ -25,7 +25,7 @@ class BatchDeleteResourceGroupsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteResourceGroupsRequest
+        r"""BatchDeleteResourceGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteResourceGroupsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteResourceGroupsRequest.
+        r"""Gets the body of this BatchDeleteResourceGroupsRequest.
 
         :return: The body of this BatchDeleteResourceGroupsRequest.
         :rtype: :class:`huaweicloudsdkces.v2.BatchDeleteResourceGroupsRequestBody`
@@ -52,7 +52,7 @@ class BatchDeleteResourceGroupsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteResourceGroupsRequest.
+        r"""Sets the body of this BatchDeleteResourceGroupsRequest.
 
         :param body: The body of this BatchDeleteResourceGroupsRequest.
         :type body: :class:`huaweicloudsdkces.v2.BatchDeleteResourceGroupsRequestBody`

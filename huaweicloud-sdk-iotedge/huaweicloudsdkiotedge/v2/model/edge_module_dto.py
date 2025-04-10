@@ -45,7 +45,7 @@ class EdgeModuleDTO:
     }
 
     def __init__(self, edge_app_id=None, app_version=None, state=None, control_status=None, node_id=None, module_name=None, module_id=None, create_time=None, update_time=None, app_type=None, function_type=None):
-        """EdgeModuleDTO
+        r"""EdgeModuleDTO
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class EdgeModuleDTO:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this EdgeModuleDTO.
+        r"""Gets the edge_app_id of this EdgeModuleDTO.
 
         应用ID
 
@@ -124,7 +124,7 @@ class EdgeModuleDTO:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this EdgeModuleDTO.
+        r"""Sets the edge_app_id of this EdgeModuleDTO.
 
         应用ID
 
@@ -135,7 +135,7 @@ class EdgeModuleDTO:
 
     @property
     def app_version(self):
-        """Gets the app_version of this EdgeModuleDTO.
+        r"""Gets the app_version of this EdgeModuleDTO.
 
         应用版本
 
@@ -146,7 +146,7 @@ class EdgeModuleDTO:
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this EdgeModuleDTO.
+        r"""Sets the app_version of this EdgeModuleDTO.
 
         应用版本
 
@@ -157,7 +157,7 @@ class EdgeModuleDTO:
 
     @property
     def state(self):
-        """Gets the state of this EdgeModuleDTO.
+        r"""Gets the state of this EdgeModuleDTO.
 
         模块运行状态
 
@@ -168,7 +168,7 @@ class EdgeModuleDTO:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this EdgeModuleDTO.
+        r"""Sets the state of this EdgeModuleDTO.
 
         模块运行状态
 
@@ -179,7 +179,7 @@ class EdgeModuleDTO:
 
     @property
     def control_status(self):
-        """Gets the control_status of this EdgeModuleDTO.
+        r"""Gets the control_status of this EdgeModuleDTO.
 
         模块管控状态
 
@@ -190,7 +190,7 @@ class EdgeModuleDTO:
 
     @control_status.setter
     def control_status(self, control_status):
-        """Sets the control_status of this EdgeModuleDTO.
+        r"""Sets the control_status of this EdgeModuleDTO.
 
         模块管控状态
 
@@ -201,7 +201,7 @@ class EdgeModuleDTO:
 
     @property
     def node_id(self):
-        """Gets the node_id of this EdgeModuleDTO.
+        r"""Gets the node_id of this EdgeModuleDTO.
 
         边缘节点（同deviceID）ID
 
@@ -212,7 +212,7 @@ class EdgeModuleDTO:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this EdgeModuleDTO.
+        r"""Sets the node_id of this EdgeModuleDTO.
 
         边缘节点（同deviceID）ID
 
@@ -223,7 +223,7 @@ class EdgeModuleDTO:
 
     @property
     def module_name(self):
-        """Gets the module_name of this EdgeModuleDTO.
+        r"""Gets the module_name of this EdgeModuleDTO.
 
         模块名称
 
@@ -234,7 +234,7 @@ class EdgeModuleDTO:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this EdgeModuleDTO.
+        r"""Sets the module_name of this EdgeModuleDTO.
 
         模块名称
 
@@ -245,7 +245,7 @@ class EdgeModuleDTO:
 
     @property
     def module_id(self):
-        """Gets the module_id of this EdgeModuleDTO.
+        r"""Gets the module_id of this EdgeModuleDTO.
 
         模块ID
 
@@ -256,7 +256,7 @@ class EdgeModuleDTO:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this EdgeModuleDTO.
+        r"""Sets the module_id of this EdgeModuleDTO.
 
         模块ID
 
@@ -267,7 +267,7 @@ class EdgeModuleDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this EdgeModuleDTO.
+        r"""Gets the create_time of this EdgeModuleDTO.
 
         创建时间
 
@@ -278,7 +278,7 @@ class EdgeModuleDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this EdgeModuleDTO.
+        r"""Sets the create_time of this EdgeModuleDTO.
 
         创建时间
 
@@ -289,7 +289,7 @@ class EdgeModuleDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this EdgeModuleDTO.
+        r"""Gets the update_time of this EdgeModuleDTO.
 
         最后一次修改时间
 
@@ -300,7 +300,7 @@ class EdgeModuleDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this EdgeModuleDTO.
+        r"""Sets the update_time of this EdgeModuleDTO.
 
         最后一次修改时间
 
@@ -311,7 +311,7 @@ class EdgeModuleDTO:
 
     @property
     def app_type(self):
-        """Gets the app_type of this EdgeModuleDTO.
+        r"""Gets the app_type of this EdgeModuleDTO.
 
         应用类型
 
@@ -322,7 +322,7 @@ class EdgeModuleDTO:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this EdgeModuleDTO.
+        r"""Sets the app_type of this EdgeModuleDTO.
 
         应用类型
 
@@ -333,7 +333,7 @@ class EdgeModuleDTO:
 
     @property
     def function_type(self):
-        """Gets the function_type of this EdgeModuleDTO.
+        r"""Gets the function_type of this EdgeModuleDTO.
 
         功能类型
 
@@ -344,7 +344,7 @@ class EdgeModuleDTO:
 
     @function_type.setter
     def function_type(self, function_type):
-        """Sets the function_type of this EdgeModuleDTO.
+        r"""Sets the function_type of this EdgeModuleDTO.
 
         功能类型
 

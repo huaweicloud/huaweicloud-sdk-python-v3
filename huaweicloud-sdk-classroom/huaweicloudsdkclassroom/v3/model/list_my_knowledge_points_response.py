@@ -28,7 +28,7 @@ class ListMyKnowledgePointsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, data=None):
-        """ListMyKnowledgePointsResponse
+        r"""ListMyKnowledgePointsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMyKnowledgePointsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListMyKnowledgePointsResponse.
+        r"""Gets the total_count of this ListMyKnowledgePointsResponse.
 
         知识点数量
 
@@ -62,7 +62,7 @@ class ListMyKnowledgePointsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListMyKnowledgePointsResponse.
+        r"""Sets the total_count of this ListMyKnowledgePointsResponse.
 
         知识点数量
 
@@ -73,7 +73,7 @@ class ListMyKnowledgePointsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListMyKnowledgePointsResponse.
+        r"""Gets the data of this ListMyKnowledgePointsResponse.
 
         知识点信息
 
@@ -84,7 +84,7 @@ class ListMyKnowledgePointsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListMyKnowledgePointsResponse.
+        r"""Sets the data of this ListMyKnowledgePointsResponse.
 
         知识点信息
 

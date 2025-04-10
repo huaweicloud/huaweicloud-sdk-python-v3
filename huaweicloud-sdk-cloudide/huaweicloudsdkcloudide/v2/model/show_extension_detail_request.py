@@ -25,7 +25,7 @@ class ShowExtensionDetailRequest:
     }
 
     def __init__(self, body=None):
-        """ShowExtensionDetailRequest
+        r"""ShowExtensionDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowExtensionDetailRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowExtensionDetailRequest.
+        r"""Gets the body of this ShowExtensionDetailRequest.
 
         :return: The body of this ShowExtensionDetailRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.ExtensionSearchUserInputParamCustomizeForDetail`
@@ -52,7 +52,7 @@ class ShowExtensionDetailRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowExtensionDetailRequest.
+        r"""Sets the body of this ShowExtensionDetailRequest.
 
         :param body: The body of this ShowExtensionDetailRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.ExtensionSearchUserInputParamCustomizeForDetail`

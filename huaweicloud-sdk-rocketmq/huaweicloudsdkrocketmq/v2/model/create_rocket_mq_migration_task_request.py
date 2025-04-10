@@ -33,7 +33,7 @@ class CreateRocketMqMigrationTaskRequest:
     }
 
     def __init__(self, instance_id=None, overwrite=None, name=None, type=None, body=None):
-        """CreateRocketMqMigrationTaskRequest
+        r"""CreateRocketMqMigrationTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class CreateRocketMqMigrationTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateRocketMqMigrationTaskRequest.
+        r"""Gets the instance_id of this CreateRocketMqMigrationTaskRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class CreateRocketMqMigrationTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateRocketMqMigrationTaskRequest.
+        r"""Sets the instance_id of this CreateRocketMqMigrationTaskRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class CreateRocketMqMigrationTaskRequest:
 
     @property
     def overwrite(self):
-        """Gets the overwrite of this CreateRocketMqMigrationTaskRequest.
+        r"""Gets the overwrite of this CreateRocketMqMigrationTaskRequest.
 
         true开启同名覆盖，会对已有的同名元数据的配置进行修改，false时当Topic或group已存在则会报错。
 
@@ -100,7 +100,7 @@ class CreateRocketMqMigrationTaskRequest:
 
     @overwrite.setter
     def overwrite(self, overwrite):
-        """Sets the overwrite of this CreateRocketMqMigrationTaskRequest.
+        r"""Sets the overwrite of this CreateRocketMqMigrationTaskRequest.
 
         true开启同名覆盖，会对已有的同名元数据的配置进行修改，false时当Topic或group已存在则会报错。
 
@@ -111,7 +111,7 @@ class CreateRocketMqMigrationTaskRequest:
 
     @property
     def name(self):
-        """Gets the name of this CreateRocketMqMigrationTaskRequest.
+        r"""Gets the name of this CreateRocketMqMigrationTaskRequest.
 
         迁移任务名称，名称规则参考创建实例。
 
@@ -122,7 +122,7 @@ class CreateRocketMqMigrationTaskRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRocketMqMigrationTaskRequest.
+        r"""Sets the name of this CreateRocketMqMigrationTaskRequest.
 
         迁移任务名称，名称规则参考创建实例。
 
@@ -133,7 +133,7 @@ class CreateRocketMqMigrationTaskRequest:
 
     @property
     def type(self):
-        """Gets the type of this CreateRocketMqMigrationTaskRequest.
+        r"""Gets the type of this CreateRocketMqMigrationTaskRequest.
 
         迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket)
 
@@ -144,7 +144,7 @@ class CreateRocketMqMigrationTaskRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateRocketMqMigrationTaskRequest.
+        r"""Sets the type of this CreateRocketMqMigrationTaskRequest.
 
         迁移任务类型，分为自建RocketMQ上云(rocketmq)、自建RabbitMQ上云(rabbitToRocket)
 
@@ -155,7 +155,7 @@ class CreateRocketMqMigrationTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRocketMqMigrationTaskRequest.
+        r"""Gets the body of this CreateRocketMqMigrationTaskRequest.
 
         :return: The body of this CreateRocketMqMigrationTaskRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.CreateRocketMqMigrationTaskReq`
@@ -164,7 +164,7 @@ class CreateRocketMqMigrationTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRocketMqMigrationTaskRequest.
+        r"""Sets the body of this CreateRocketMqMigrationTaskRequest.
 
         :param body: The body of this CreateRocketMqMigrationTaskRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.CreateRocketMqMigrationTaskReq`

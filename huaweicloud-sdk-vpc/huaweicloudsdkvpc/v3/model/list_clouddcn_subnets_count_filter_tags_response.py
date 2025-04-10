@@ -28,7 +28,7 @@ class ListClouddcnSubnetsCountFilterTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, total_count=None):
-        """ListClouddcnSubnetsCountFilterTagsResponse
+        r"""ListClouddcnSubnetsCountFilterTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListClouddcnSubnetsCountFilterTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListClouddcnSubnetsCountFilterTagsResponse.
+        r"""Gets the request_id of this ListClouddcnSubnetsCountFilterTagsResponse.
 
         本次请求的编号
 
@@ -62,7 +62,7 @@ class ListClouddcnSubnetsCountFilterTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListClouddcnSubnetsCountFilterTagsResponse.
+        r"""Sets the request_id of this ListClouddcnSubnetsCountFilterTagsResponse.
 
         本次请求的编号
 
@@ -73,7 +73,7 @@ class ListClouddcnSubnetsCountFilterTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListClouddcnSubnetsCountFilterTagsResponse.
+        r"""Gets the total_count of this ListClouddcnSubnetsCountFilterTagsResponse.
 
         当前列表中资源数量。
 
@@ -84,7 +84,7 @@ class ListClouddcnSubnetsCountFilterTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListClouddcnSubnetsCountFilterTagsResponse.
+        r"""Sets the total_count of this ListClouddcnSubnetsCountFilterTagsResponse.
 
         当前列表中资源数量。
 

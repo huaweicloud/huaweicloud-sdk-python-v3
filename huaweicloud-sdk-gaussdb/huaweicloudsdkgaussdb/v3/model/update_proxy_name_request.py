@@ -31,7 +31,7 @@ class UpdateProxyNameRequest:
     }
 
     def __init__(self, instance_id=None, proxy_id=None, x_language=None, body=None):
-        """UpdateProxyNameRequest
+        r"""UpdateProxyNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateProxyNameRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateProxyNameRequest.
+        r"""Gets the instance_id of this UpdateProxyNameRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -73,7 +73,7 @@ class UpdateProxyNameRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateProxyNameRequest.
+        r"""Sets the instance_id of this UpdateProxyNameRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -84,7 +84,7 @@ class UpdateProxyNameRequest:
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this UpdateProxyNameRequest.
+        r"""Gets the proxy_id of this UpdateProxyNameRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -95,7 +95,7 @@ class UpdateProxyNameRequest:
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this UpdateProxyNameRequest.
+        r"""Sets the proxy_id of this UpdateProxyNameRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -106,7 +106,7 @@ class UpdateProxyNameRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateProxyNameRequest.
+        r"""Gets the x_language of this UpdateProxyNameRequest.
 
         语言。
 
@@ -117,7 +117,7 @@ class UpdateProxyNameRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateProxyNameRequest.
+        r"""Sets the x_language of this UpdateProxyNameRequest.
 
         语言。
 
@@ -128,7 +128,7 @@ class UpdateProxyNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateProxyNameRequest.
+        r"""Gets the body of this UpdateProxyNameRequest.
 
         :return: The body of this UpdateProxyNameRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ProxyUpdateProxyNameRequest`
@@ -137,7 +137,7 @@ class UpdateProxyNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateProxyNameRequest.
+        r"""Sets the body of this UpdateProxyNameRequest.
 
         :param body: The body of this UpdateProxyNameRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ProxyUpdateProxyNameRequest`

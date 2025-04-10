@@ -25,7 +25,7 @@ class CreateNotificationRequest:
     }
 
     def __init__(self, body=None):
-        """CreateNotificationRequest
+        r"""CreateNotificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateNotificationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateNotificationRequest.
+        r"""Gets the body of this CreateNotificationRequest.
 
         :return: The body of this CreateNotificationRequest.
         :rtype: :class:`huaweicloudsdkcts.v3.CreateNotificationRequestBody`
@@ -52,7 +52,7 @@ class CreateNotificationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateNotificationRequest.
+        r"""Sets the body of this CreateNotificationRequest.
 
         :param body: The body of this CreateNotificationRequest.
         :type body: :class:`huaweicloudsdkcts.v3.CreateNotificationRequestBody`

@@ -29,7 +29,7 @@ class PipelineGroupCreateDTO:
     }
 
     def __init__(self, name=None, project_id=None, parent_id=None):
-        """PipelineGroupCreateDTO
+        r"""PipelineGroupCreateDTO
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class PipelineGroupCreateDTO:
 
     @property
     def name(self):
-        """Gets the name of this PipelineGroupCreateDTO.
+        r"""Gets the name of this PipelineGroupCreateDTO.
 
         流水线分组名
 
@@ -66,7 +66,7 @@ class PipelineGroupCreateDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineGroupCreateDTO.
+        r"""Sets the name of this PipelineGroupCreateDTO.
 
         流水线分组名
 
@@ -77,7 +77,7 @@ class PipelineGroupCreateDTO:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PipelineGroupCreateDTO.
+        r"""Gets the project_id of this PipelineGroupCreateDTO.
 
         项目名
 
@@ -88,7 +88,7 @@ class PipelineGroupCreateDTO:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PipelineGroupCreateDTO.
+        r"""Sets the project_id of this PipelineGroupCreateDTO.
 
         项目名
 
@@ -99,7 +99,7 @@ class PipelineGroupCreateDTO:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this PipelineGroupCreateDTO.
+        r"""Gets the parent_id of this PipelineGroupCreateDTO.
 
         父分组ID
 
@@ -110,7 +110,7 @@ class PipelineGroupCreateDTO:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this PipelineGroupCreateDTO.
+        r"""Sets the parent_id of this PipelineGroupCreateDTO.
 
         父分组ID
 

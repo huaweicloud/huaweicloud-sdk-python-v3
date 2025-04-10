@@ -26,7 +26,7 @@ class DownloadAuditAgentResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """DownloadAuditAgentResponse
+        r"""DownloadAuditAgentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DownloadAuditAgentResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DownloadAuditAgentResponse.
+        r"""Gets the result of this DownloadAuditAgentResponse.
 
         响应状态
 
@@ -55,7 +55,7 @@ class DownloadAuditAgentResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DownloadAuditAgentResponse.
+        r"""Sets the result of this DownloadAuditAgentResponse.
 
         响应状态
 

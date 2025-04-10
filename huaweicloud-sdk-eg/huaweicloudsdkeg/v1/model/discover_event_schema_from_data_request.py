@@ -25,7 +25,7 @@ class DiscoverEventSchemaFromDataRequest:
     }
 
     def __init__(self, body=None):
-        """DiscoverEventSchemaFromDataRequest
+        r"""DiscoverEventSchemaFromDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DiscoverEventSchemaFromDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this DiscoverEventSchemaFromDataRequest.
+        r"""Gets the body of this DiscoverEventSchemaFromDataRequest.
 
         {   \"description\": \"通过事件数据发现事件模型的请求\",   \"type\": \"object\",   \"required\": [     \"event\"   ],   \"properties\": {     \"event\": {       \"description\": \"事件数据内容\",       \"type\": \"string\",       \"maxLength\": 1024,       \"example\": \"{\\\"fileName\\\": \\\"one.jpg\\\", \\\"fileSize\\\": 1048576}\"     },     \"format\": {       \"description\": \"事件模型格式类型\",       \"type\": \"string\",       \"default\": \"JSON_SCHEMA_DRAFT_6\",       \"enum\": [         \"JSON_SCHEMA_DRAFT_6\"       ]     }   } }
 
@@ -54,7 +54,7 @@ class DiscoverEventSchemaFromDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DiscoverEventSchemaFromDataRequest.
+        r"""Sets the body of this DiscoverEventSchemaFromDataRequest.
 
         {   \"description\": \"通过事件数据发现事件模型的请求\",   \"type\": \"object\",   \"required\": [     \"event\"   ],   \"properties\": {     \"event\": {       \"description\": \"事件数据内容\",       \"type\": \"string\",       \"maxLength\": 1024,       \"example\": \"{\\\"fileName\\\": \\\"one.jpg\\\", \\\"fileSize\\\": 1048576}\"     },     \"format\": {       \"description\": \"事件模型格式类型\",       \"type\": \"string\",       \"default\": \"JSON_SCHEMA_DRAFT_6\",       \"enum\": [         \"JSON_SCHEMA_DRAFT_6\"       ]     }   } }
 

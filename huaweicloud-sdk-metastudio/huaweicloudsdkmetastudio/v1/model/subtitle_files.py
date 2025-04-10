@@ -27,7 +27,7 @@ class SubtitleFiles:
     }
 
     def __init__(self, text_subtitle_file=None, audio_subtitle_file=None):
-        """SubtitleFiles
+        r"""SubtitleFiles
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SubtitleFiles:
 
     @property
     def text_subtitle_file(self):
-        """Gets the text_subtitle_file of this SubtitleFiles.
+        r"""Gets the text_subtitle_file of this SubtitleFiles.
 
         :return: The text_subtitle_file of this SubtitleFiles.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SubtitleFileInfo`
@@ -59,7 +59,7 @@ class SubtitleFiles:
 
     @text_subtitle_file.setter
     def text_subtitle_file(self, text_subtitle_file):
-        """Sets the text_subtitle_file of this SubtitleFiles.
+        r"""Sets the text_subtitle_file of this SubtitleFiles.
 
         :param text_subtitle_file: The text_subtitle_file of this SubtitleFiles.
         :type text_subtitle_file: :class:`huaweicloudsdkmetastudio.v1.SubtitleFileInfo`
@@ -68,7 +68,7 @@ class SubtitleFiles:
 
     @property
     def audio_subtitle_file(self):
-        """Gets the audio_subtitle_file of this SubtitleFiles.
+        r"""Gets the audio_subtitle_file of this SubtitleFiles.
 
         :return: The audio_subtitle_file of this SubtitleFiles.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SubtitleFileInfo`
@@ -77,7 +77,7 @@ class SubtitleFiles:
 
     @audio_subtitle_file.setter
     def audio_subtitle_file(self, audio_subtitle_file):
-        """Sets the audio_subtitle_file of this SubtitleFiles.
+        r"""Sets the audio_subtitle_file of this SubtitleFiles.
 
         :param audio_subtitle_file: The audio_subtitle_file of this SubtitleFiles.
         :type audio_subtitle_file: :class:`huaweicloudsdkmetastudio.v1.SubtitleFileInfo`

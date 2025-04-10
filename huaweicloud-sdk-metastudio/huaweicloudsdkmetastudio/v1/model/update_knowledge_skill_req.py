@@ -27,7 +27,7 @@ class UpdateKnowledgeSkillReq:
     }
 
     def __init__(self, name=None, identify=None):
-        """UpdateKnowledgeSkillReq
+        r"""UpdateKnowledgeSkillReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateKnowledgeSkillReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateKnowledgeSkillReq.
+        r"""Gets the name of this UpdateKnowledgeSkillReq.
 
         技能名称。
 
@@ -61,7 +61,7 @@ class UpdateKnowledgeSkillReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateKnowledgeSkillReq.
+        r"""Sets the name of this UpdateKnowledgeSkillReq.
 
         技能名称。
 
@@ -72,7 +72,7 @@ class UpdateKnowledgeSkillReq:
 
     @property
     def identify(self):
-        """Gets the identify of this UpdateKnowledgeSkillReq.
+        r"""Gets the identify of this UpdateKnowledgeSkillReq.
 
         技能标识。
 
@@ -83,7 +83,7 @@ class UpdateKnowledgeSkillReq:
 
     @identify.setter
     def identify(self, identify):
-        """Sets the identify of this UpdateKnowledgeSkillReq.
+        r"""Sets the identify of this UpdateKnowledgeSkillReq.
 
         技能标识。
 

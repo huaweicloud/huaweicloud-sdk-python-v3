@@ -62,7 +62,7 @@ class ShowJobResponse(SdkResponse):
     }
 
     def __init__(self, name=None, nodes=None, schedule=None, params=None, directory=None, downstream_jobs=None, process_type=None, id=None, create_time=None, single_node_job_flag=None, single_node_job_type=None, last_update_user=None, log_path=None, basic_config=None, description=None, clean_overdue_days=None, clean_waiting_job=None, empty_running_job=None, version=None):
-        """ShowJobResponse
+        r"""ShowJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -170,7 +170,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowJobResponse.
+        r"""Gets the name of this ShowJobResponse.
 
         作业名称
 
@@ -181,7 +181,7 @@ class ShowJobResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowJobResponse.
+        r"""Sets the name of this ShowJobResponse.
 
         作业名称
 
@@ -192,7 +192,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this ShowJobResponse.
+        r"""Gets the nodes of this ShowJobResponse.
 
         节点定义
 
@@ -203,7 +203,7 @@ class ShowJobResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ShowJobResponse.
+        r"""Sets the nodes of this ShowJobResponse.
 
         节点定义
 
@@ -214,7 +214,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def schedule(self):
-        """Gets the schedule of this ShowJobResponse.
+        r"""Gets the schedule of this ShowJobResponse.
 
         :return: The schedule of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkdgc.v1.Schedule`
@@ -223,7 +223,7 @@ class ShowJobResponse(SdkResponse):
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this ShowJobResponse.
+        r"""Sets the schedule of this ShowJobResponse.
 
         :param schedule: The schedule of this ShowJobResponse.
         :type schedule: :class:`huaweicloudsdkdgc.v1.Schedule`
@@ -232,7 +232,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def params(self):
-        """Gets the params of this ShowJobResponse.
+        r"""Gets the params of this ShowJobResponse.
 
         作业参数定义
 
@@ -243,7 +243,7 @@ class ShowJobResponse(SdkResponse):
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ShowJobResponse.
+        r"""Sets the params of this ShowJobResponse.
 
         作业参数定义
 
@@ -254,7 +254,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def directory(self):
-        """Gets the directory of this ShowJobResponse.
+        r"""Gets the directory of this ShowJobResponse.
 
         作业在目录树上的路径。创建作业时如果路径目录不存在，会自动创建目录，如/dir/a/，默认在根目录/。
 
@@ -265,7 +265,7 @@ class ShowJobResponse(SdkResponse):
 
     @directory.setter
     def directory(self, directory):
-        """Sets the directory of this ShowJobResponse.
+        r"""Sets the directory of this ShowJobResponse.
 
         作业在目录树上的路径。创建作业时如果路径目录不存在，会自动创建目录，如/dir/a/，默认在根目录/。
 
@@ -276,7 +276,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def downstream_jobs(self):
-        """Gets the downstream_jobs of this ShowJobResponse.
+        r"""Gets the downstream_jobs of this ShowJobResponse.
 
         下游作业信息
 
@@ -287,7 +287,7 @@ class ShowJobResponse(SdkResponse):
 
     @downstream_jobs.setter
     def downstream_jobs(self, downstream_jobs):
-        """Sets the downstream_jobs of this ShowJobResponse.
+        r"""Sets the downstream_jobs of this ShowJobResponse.
 
         下游作业信息
 
@@ -298,7 +298,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def process_type(self):
-        """Gets the process_type of this ShowJobResponse.
+        r"""Gets the process_type of this ShowJobResponse.
 
         作业类型，REAL_TIME： 实时处理，BATCH：批处理
 
@@ -309,7 +309,7 @@ class ShowJobResponse(SdkResponse):
 
     @process_type.setter
     def process_type(self, process_type):
-        """Sets the process_type of this ShowJobResponse.
+        r"""Sets the process_type of this ShowJobResponse.
 
         作业类型，REAL_TIME： 实时处理，BATCH：批处理
 
@@ -320,7 +320,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowJobResponse.
+        r"""Gets the id of this ShowJobResponse.
 
         作业Id, 用户查询作业时使用。
 
@@ -331,7 +331,7 @@ class ShowJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowJobResponse.
+        r"""Sets the id of this ShowJobResponse.
 
         作业Id, 用户查询作业时使用。
 
@@ -342,7 +342,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowJobResponse.
+        r"""Gets the create_time of this ShowJobResponse.
 
         作业创建时间.
 
@@ -353,7 +353,7 @@ class ShowJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowJobResponse.
+        r"""Sets the create_time of this ShowJobResponse.
 
         作业创建时间.
 
@@ -364,7 +364,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def single_node_job_flag(self):
-        """Gets the single_node_job_flag of this ShowJobResponse.
+        r"""Gets the single_node_job_flag of this ShowJobResponse.
 
         是否选择单任务，默认为false
 
@@ -375,7 +375,7 @@ class ShowJobResponse(SdkResponse):
 
     @single_node_job_flag.setter
     def single_node_job_flag(self, single_node_job_flag):
-        """Sets the single_node_job_flag of this ShowJobResponse.
+        r"""Sets the single_node_job_flag of this ShowJobResponse.
 
         是否选择单任务，默认为false
 
@@ -386,7 +386,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def single_node_job_type(self):
-        """Gets the single_node_job_type of this ShowJobResponse.
+        r"""Gets the single_node_job_type of this ShowJobResponse.
 
         单任务类型
 
@@ -397,7 +397,7 @@ class ShowJobResponse(SdkResponse):
 
     @single_node_job_type.setter
     def single_node_job_type(self, single_node_job_type):
-        """Sets the single_node_job_type of this ShowJobResponse.
+        r"""Sets the single_node_job_type of this ShowJobResponse.
 
         单任务类型
 
@@ -408,7 +408,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def last_update_user(self):
-        """Gets the last_update_user of this ShowJobResponse.
+        r"""Gets the last_update_user of this ShowJobResponse.
 
         作业最后修改人
 
@@ -419,7 +419,7 @@ class ShowJobResponse(SdkResponse):
 
     @last_update_user.setter
     def last_update_user(self, last_update_user):
-        """Sets the last_update_user of this ShowJobResponse.
+        r"""Sets the last_update_user of this ShowJobResponse.
 
         作业最后修改人
 
@@ -430,7 +430,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def log_path(self):
-        """Gets the log_path of this ShowJobResponse.
+        r"""Gets the log_path of this ShowJobResponse.
 
         作业运行日志存放的OBS路径。
 
@@ -441,7 +441,7 @@ class ShowJobResponse(SdkResponse):
 
     @log_path.setter
     def log_path(self, log_path):
-        """Sets the log_path of this ShowJobResponse.
+        r"""Sets the log_path of this ShowJobResponse.
 
         作业运行日志存放的OBS路径。
 
@@ -452,7 +452,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def basic_config(self):
-        """Gets the basic_config of this ShowJobResponse.
+        r"""Gets the basic_config of this ShowJobResponse.
 
         :return: The basic_config of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkdgc.v1.BasicConfig`
@@ -461,7 +461,7 @@ class ShowJobResponse(SdkResponse):
 
     @basic_config.setter
     def basic_config(self, basic_config):
-        """Sets the basic_config of this ShowJobResponse.
+        r"""Sets the basic_config of this ShowJobResponse.
 
         :param basic_config: The basic_config of this ShowJobResponse.
         :type basic_config: :class:`huaweicloudsdkdgc.v1.BasicConfig`
@@ -470,7 +470,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowJobResponse.
+        r"""Gets the description of this ShowJobResponse.
 
         作业描述信息
 
@@ -481,7 +481,7 @@ class ShowJobResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowJobResponse.
+        r"""Sets the description of this ShowJobResponse.
 
         作业描述信息
 
@@ -492,7 +492,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def clean_overdue_days(self):
-        """Gets the clean_overdue_days of this ShowJobResponse.
+        r"""Gets the clean_overdue_days of this ShowJobResponse.
 
         设置作业的最大超时时间。
 
@@ -503,7 +503,7 @@ class ShowJobResponse(SdkResponse):
 
     @clean_overdue_days.setter
     def clean_overdue_days(self, clean_overdue_days):
-        """Sets the clean_overdue_days of this ShowJobResponse.
+        r"""Sets the clean_overdue_days of this ShowJobResponse.
 
         设置作业的最大超时时间。
 
@@ -514,7 +514,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def clean_waiting_job(self):
-        """Gets the clean_waiting_job of this ShowJobResponse.
+        r"""Gets the clean_waiting_job of this ShowJobResponse.
 
         清除等待的作业。
 
@@ -525,7 +525,7 @@ class ShowJobResponse(SdkResponse):
 
     @clean_waiting_job.setter
     def clean_waiting_job(self, clean_waiting_job):
-        """Sets the clean_waiting_job of this ShowJobResponse.
+        r"""Sets the clean_waiting_job of this ShowJobResponse.
 
         清除等待的作业。
 
@@ -536,7 +536,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def empty_running_job(self):
-        """Gets the empty_running_job of this ShowJobResponse.
+        r"""Gets the empty_running_job of this ShowJobResponse.
 
         是否空跑。
 
@@ -547,7 +547,7 @@ class ShowJobResponse(SdkResponse):
 
     @empty_running_job.setter
     def empty_running_job(self, empty_running_job):
-        """Sets the empty_running_job of this ShowJobResponse.
+        r"""Sets the empty_running_job of this ShowJobResponse.
 
         是否空跑。
 
@@ -558,7 +558,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowJobResponse.
+        r"""Gets the version of this ShowJobResponse.
 
         作业版本信息。
 
@@ -569,7 +569,7 @@ class ShowJobResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowJobResponse.
+        r"""Sets the version of this ShowJobResponse.
 
         作业版本信息。
 

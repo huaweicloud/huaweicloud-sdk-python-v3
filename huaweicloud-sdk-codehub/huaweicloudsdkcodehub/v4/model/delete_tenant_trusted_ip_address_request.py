@@ -25,7 +25,7 @@ class DeleteTenantTrustedIpAddressRequest:
     }
 
     def __init__(self, ip_id=None):
-        """DeleteTenantTrustedIpAddressRequest
+        r"""DeleteTenantTrustedIpAddressRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTenantTrustedIpAddressRequest:
 
     @property
     def ip_id(self):
-        """Gets the ip_id of this DeleteTenantTrustedIpAddressRequest.
+        r"""Gets the ip_id of this DeleteTenantTrustedIpAddressRequest.
 
         ip的id
 
@@ -53,7 +53,7 @@ class DeleteTenantTrustedIpAddressRequest:
 
     @ip_id.setter
     def ip_id(self, ip_id):
-        """Sets the ip_id of this DeleteTenantTrustedIpAddressRequest.
+        r"""Sets the ip_id of this DeleteTenantTrustedIpAddressRequest.
 
         ip的id
 

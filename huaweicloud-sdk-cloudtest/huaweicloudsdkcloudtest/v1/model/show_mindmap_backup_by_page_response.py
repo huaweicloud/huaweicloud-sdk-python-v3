@@ -30,7 +30,7 @@ class ShowMindmapBackupByPageResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowMindmapBackupByPageResponse
+        r"""ShowMindmapBackupByPageResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowMindmapBackupByPageResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowMindmapBackupByPageResponse.
+        r"""Gets the code of this ShowMindmapBackupByPageResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class ShowMindmapBackupByPageResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowMindmapBackupByPageResponse.
+        r"""Sets the code of this ShowMindmapBackupByPageResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class ShowMindmapBackupByPageResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowMindmapBackupByPageResponse.
+        r"""Gets the data of this ShowMindmapBackupByPageResponse.
 
         :return: The data of this ShowMindmapBackupByPageResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoMindmapBackup`
@@ -89,7 +89,7 @@ class ShowMindmapBackupByPageResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowMindmapBackupByPageResponse.
+        r"""Sets the data of this ShowMindmapBackupByPageResponse.
 
         :param data: The data of this ShowMindmapBackupByPageResponse.
         :type data: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoMindmapBackup`
@@ -98,7 +98,7 @@ class ShowMindmapBackupByPageResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowMindmapBackupByPageResponse.
+        r"""Gets the message of this ShowMindmapBackupByPageResponse.
 
         错误信息
 
@@ -109,7 +109,7 @@ class ShowMindmapBackupByPageResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowMindmapBackupByPageResponse.
+        r"""Sets the message of this ShowMindmapBackupByPageResponse.
 
         错误信息
 

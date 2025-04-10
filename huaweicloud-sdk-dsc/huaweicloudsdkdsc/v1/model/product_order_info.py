@@ -33,7 +33,7 @@ class ProductOrderInfo:
     }
 
     def __init__(self, tenant_id=None, period_type=None, period_num=None, resource_id=None, product_info=None):
-        """ProductOrderInfo
+        r"""ProductOrderInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ProductOrderInfo:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ProductOrderInfo.
+        r"""Gets the tenant_id of this ProductOrderInfo.
 
         租户ID
 
@@ -82,7 +82,7 @@ class ProductOrderInfo:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ProductOrderInfo.
+        r"""Sets the tenant_id of this ProductOrderInfo.
 
         租户ID
 
@@ -93,7 +93,7 @@ class ProductOrderInfo:
 
     @property
     def period_type(self):
-        """Gets the period_type of this ProductOrderInfo.
+        r"""Gets the period_type of this ProductOrderInfo.
 
         订购周期类型
 
@@ -104,7 +104,7 @@ class ProductOrderInfo:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ProductOrderInfo.
+        r"""Sets the period_type of this ProductOrderInfo.
 
         订购周期类型
 
@@ -115,7 +115,7 @@ class ProductOrderInfo:
 
     @property
     def period_num(self):
-        """Gets the period_num of this ProductOrderInfo.
+        r"""Gets the period_num of this ProductOrderInfo.
 
         订购周期数量
 
@@ -126,7 +126,7 @@ class ProductOrderInfo:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this ProductOrderInfo.
+        r"""Sets the period_num of this ProductOrderInfo.
 
         订购周期数量
 
@@ -137,7 +137,7 @@ class ProductOrderInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ProductOrderInfo.
+        r"""Gets the resource_id of this ProductOrderInfo.
 
         资源ID
 
@@ -148,7 +148,7 @@ class ProductOrderInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ProductOrderInfo.
+        r"""Sets the resource_id of this ProductOrderInfo.
 
         资源ID
 
@@ -159,7 +159,7 @@ class ProductOrderInfo:
 
     @property
     def product_info(self):
-        """Gets the product_info of this ProductOrderInfo.
+        r"""Gets the product_info of this ProductOrderInfo.
 
         :return: The product_info of this ProductOrderInfo.
         :rtype: :class:`huaweicloudsdkdsc.v1.ProductInfo`
@@ -168,7 +168,7 @@ class ProductOrderInfo:
 
     @product_info.setter
     def product_info(self, product_info):
-        """Sets the product_info of this ProductOrderInfo.
+        r"""Sets the product_info of this ProductOrderInfo.
 
         :param product_info: The product_info of this ProductOrderInfo.
         :type product_info: :class:`huaweicloudsdkdsc.v1.ProductInfo`

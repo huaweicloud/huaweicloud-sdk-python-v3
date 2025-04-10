@@ -25,7 +25,7 @@ class NeutronUpdateFloatingIpRequestBody:
     }
 
     def __init__(self, floatingip=None):
-        """NeutronUpdateFloatingIpRequestBody
+        r"""NeutronUpdateFloatingIpRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NeutronUpdateFloatingIpRequestBody:
 
     @property
     def floatingip(self):
-        """Gets the floatingip of this NeutronUpdateFloatingIpRequestBody.
+        r"""Gets the floatingip of this NeutronUpdateFloatingIpRequestBody.
 
         :return: The floatingip of this NeutronUpdateFloatingIpRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v2.UpdateFloatingIpOption`
@@ -51,7 +51,7 @@ class NeutronUpdateFloatingIpRequestBody:
 
     @floatingip.setter
     def floatingip(self, floatingip):
-        """Sets the floatingip of this NeutronUpdateFloatingIpRequestBody.
+        r"""Sets the floatingip of this NeutronUpdateFloatingIpRequestBody.
 
         :param floatingip: The floatingip of this NeutronUpdateFloatingIpRequestBody.
         :type floatingip: :class:`huaweicloudsdkeip.v2.UpdateFloatingIpOption`

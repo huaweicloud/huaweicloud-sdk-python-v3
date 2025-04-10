@@ -30,7 +30,7 @@ class SearchApplicationResponse(SdkResponse):
     }
 
     def __init__(self, app_info_list=None, app_total_count=None, app_info_map=None):
-        """SearchApplicationResponse
+        r"""SearchApplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class SearchApplicationResponse(SdkResponse):
 
     @property
     def app_info_list(self):
-        """Gets the app_info_list of this SearchApplicationResponse.
+        r"""Gets the app_info_list of this SearchApplicationResponse.
 
         组件列表。
 
@@ -69,7 +69,7 @@ class SearchApplicationResponse(SdkResponse):
 
     @app_info_list.setter
     def app_info_list(self, app_info_list):
-        """Sets the app_info_list of this SearchApplicationResponse.
+        r"""Sets the app_info_list of this SearchApplicationResponse.
 
         组件列表。
 
@@ -80,7 +80,7 @@ class SearchApplicationResponse(SdkResponse):
 
     @property
     def app_total_count(self):
-        """Gets the app_total_count of this SearchApplicationResponse.
+        r"""Gets the app_total_count of this SearchApplicationResponse.
 
         组件总数目。
 
@@ -91,7 +91,7 @@ class SearchApplicationResponse(SdkResponse):
 
     @app_total_count.setter
     def app_total_count(self, app_total_count):
-        """Sets the app_total_count of this SearchApplicationResponse.
+        r"""Sets the app_total_count of this SearchApplicationResponse.
 
         组件总数目。
 
@@ -102,7 +102,7 @@ class SearchApplicationResponse(SdkResponse):
 
     @property
     def app_info_map(self):
-        """Gets the app_info_map of this SearchApplicationResponse.
+        r"""Gets the app_info_map of this SearchApplicationResponse.
 
         组件名称和组件详情map表。
 
@@ -113,7 +113,7 @@ class SearchApplicationResponse(SdkResponse):
 
     @app_info_map.setter
     def app_info_map(self, app_info_map):
-        """Sets the app_info_map of this SearchApplicationResponse.
+        r"""Sets the app_info_map of this SearchApplicationResponse.
 
         组件名称和组件详情map表。
 

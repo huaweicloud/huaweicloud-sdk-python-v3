@@ -33,7 +33,7 @@ class StackOutput:
     }
 
     def __init__(self, name=None, description=None, type=None, value=None, sensitive=None):
-        """StackOutput
+        r"""StackOutput
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class StackOutput:
 
     @property
     def name(self):
-        """Gets the name of this StackOutput.
+        r"""Gets the name of this StackOutput.
 
         资源栈输出的名称，由用户在模板中定义  以 HCL 模板为例，name 为 vpc_id  ```hcl output \"vpc_id\" {   value = huaweicloud_vpc.my_hello_world_vpc.id } ```  以 json 模板为例，name 为 vpc_id ```json {   \"output\": {     \"vpc_id\": [       {         \"value\": \"${huaweicloud_vpc.my_hello_world_vpc.id}\"       }     ]   } } ```
 
@@ -82,7 +82,7 @@ class StackOutput:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StackOutput.
+        r"""Sets the name of this StackOutput.
 
         资源栈输出的名称，由用户在模板中定义  以 HCL 模板为例，name 为 vpc_id  ```hcl output \"vpc_id\" {   value = huaweicloud_vpc.my_hello_world_vpc.id } ```  以 json 模板为例，name 为 vpc_id ```json {   \"output\": {     \"vpc_id\": [       {         \"value\": \"${huaweicloud_vpc.my_hello_world_vpc.id}\"       }     ]   } } ```
 
@@ -93,7 +93,7 @@ class StackOutput:
 
     @property
     def description(self):
-        """Gets the description of this StackOutput.
+        r"""Gets the description of this StackOutput.
 
         资源栈输出的描述，由用户在模板中定义
 
@@ -104,7 +104,7 @@ class StackOutput:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this StackOutput.
+        r"""Sets the description of this StackOutput.
 
         资源栈输出的描述，由用户在模板中定义
 
@@ -115,7 +115,7 @@ class StackOutput:
 
     @property
     def type(self):
-        """Gets the type of this StackOutput.
+        r"""Gets the type of this StackOutput.
 
         资源栈输出的类型
 
@@ -126,7 +126,7 @@ class StackOutput:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this StackOutput.
+        r"""Sets the type of this StackOutput.
 
         资源栈输出的类型
 
@@ -137,7 +137,7 @@ class StackOutput:
 
     @property
     def value(self):
-        """Gets the value of this StackOutput.
+        r"""Gets the value of this StackOutput.
 
         资源栈输出的值
 
@@ -148,7 +148,7 @@ class StackOutput:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this StackOutput.
+        r"""Sets the value of this StackOutput.
 
         资源栈输出的值
 
@@ -159,7 +159,7 @@ class StackOutput:
 
     @property
     def sensitive(self):
-        """Gets the sensitive of this StackOutput.
+        r"""Gets the sensitive of this StackOutput.
 
         标识该资源栈输出是否为敏感信息，由用户在模板中定义  如果用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回`<sensitive>`
 
@@ -170,7 +170,7 @@ class StackOutput:
 
     @sensitive.setter
     def sensitive(self, sensitive):
-        """Sets the sensitive of this StackOutput.
+        r"""Sets the sensitive of this StackOutput.
 
         标识该资源栈输出是否为敏感信息，由用户在模板中定义  如果用户在模板中将该输出定义为sensitive，则返回体中该输出的value和type不会返回真实值，而是返回`<sensitive>`
 

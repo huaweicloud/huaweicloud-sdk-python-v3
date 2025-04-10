@@ -26,7 +26,7 @@ class ShowResetPasswordFlagResponse(SdkResponse):
     }
 
     def __init__(self, resetpwd_flag=None):
-        """ShowResetPasswordFlagResponse
+        r"""ShowResetPasswordFlagResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowResetPasswordFlagResponse(SdkResponse):
 
     @property
     def resetpwd_flag(self):
-        """Gets the resetpwd_flag of this ShowResetPasswordFlagResponse.
+        r"""Gets the resetpwd_flag of this ShowResetPasswordFlagResponse.
 
         是否支持重置密码。  - True：支持一键重置密码。  - False：不支持一键重置密码。
 
@@ -55,7 +55,7 @@ class ShowResetPasswordFlagResponse(SdkResponse):
 
     @resetpwd_flag.setter
     def resetpwd_flag(self, resetpwd_flag):
-        """Sets the resetpwd_flag of this ShowResetPasswordFlagResponse.
+        r"""Sets the resetpwd_flag of this ShowResetPasswordFlagResponse.
 
         是否支持重置密码。  - True：支持一键重置密码。  - False：不支持一键重置密码。
 

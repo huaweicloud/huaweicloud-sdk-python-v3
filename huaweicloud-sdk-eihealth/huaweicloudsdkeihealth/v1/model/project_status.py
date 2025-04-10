@@ -27,7 +27,7 @@ class ProjectStatus:
     }
 
     def __init__(self):
-        """ProjectStatus
+        r"""ProjectStatus
 
         The model defined in huaweicloud sdk
 

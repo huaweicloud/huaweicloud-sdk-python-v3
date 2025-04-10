@@ -29,7 +29,7 @@ class PagedInfo:
     }
 
     def __init__(self, current_count=None, next_marker=None, previous_marker=None):
-        """PagedInfo
+        r"""PagedInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PagedInfo:
 
     @property
     def current_count(self):
-        """Gets the current_count of this PagedInfo.
+        r"""Gets the current_count of this PagedInfo.
 
         本次返回的对象个数
 
@@ -65,7 +65,7 @@ class PagedInfo:
 
     @current_count.setter
     def current_count(self, current_count):
-        """Sets the current_count of this PagedInfo.
+        r"""Sets the current_count of this PagedInfo.
 
         本次返回的对象个数
 
@@ -76,7 +76,7 @@ class PagedInfo:
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this PagedInfo.
+        r"""Gets the next_marker of this PagedInfo.
 
         下一页查询地址
 
@@ -87,7 +87,7 @@ class PagedInfo:
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this PagedInfo.
+        r"""Sets the next_marker of this PagedInfo.
 
         下一页查询地址
 
@@ -98,7 +98,7 @@ class PagedInfo:
 
     @property
     def previous_marker(self):
-        """Gets the previous_marker of this PagedInfo.
+        r"""Gets the previous_marker of this PagedInfo.
 
         上一页查询地址
 
@@ -109,7 +109,7 @@ class PagedInfo:
 
     @previous_marker.setter
     def previous_marker(self, previous_marker):
-        """Sets the previous_marker of this PagedInfo.
+        r"""Sets the previous_marker of this PagedInfo.
 
         上一页查询地址
 

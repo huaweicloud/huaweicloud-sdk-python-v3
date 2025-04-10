@@ -37,7 +37,7 @@ class BaselineSearchRequestBody:
     }
 
     def __init__(self, limit=None, offset=None, sort_by=None, order=None, from_date=None, to_date=None, condition=None):
-        """BaselineSearchRequestBody
+        r"""BaselineSearchRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class BaselineSearchRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this BaselineSearchRequestBody.
+        r"""Gets the limit of this BaselineSearchRequestBody.
 
         分页大小
 
@@ -96,7 +96,7 @@ class BaselineSearchRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BaselineSearchRequestBody.
+        r"""Sets the limit of this BaselineSearchRequestBody.
 
         分页大小
 
@@ -107,7 +107,7 @@ class BaselineSearchRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this BaselineSearchRequestBody.
+        r"""Gets the offset of this BaselineSearchRequestBody.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -118,7 +118,7 @@ class BaselineSearchRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BaselineSearchRequestBody.
+        r"""Sets the offset of this BaselineSearchRequestBody.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -129,7 +129,7 @@ class BaselineSearchRequestBody:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this BaselineSearchRequestBody.
+        r"""Gets the sort_by of this BaselineSearchRequestBody.
 
         排序关键字
 
@@ -140,7 +140,7 @@ class BaselineSearchRequestBody:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this BaselineSearchRequestBody.
+        r"""Sets the sort_by of this BaselineSearchRequestBody.
 
         排序关键字
 
@@ -151,7 +151,7 @@ class BaselineSearchRequestBody:
 
     @property
     def order(self):
-        """Gets the order of this BaselineSearchRequestBody.
+        r"""Gets the order of this BaselineSearchRequestBody.
 
         降序或升序, DESC|ESC
 
@@ -162,7 +162,7 @@ class BaselineSearchRequestBody:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this BaselineSearchRequestBody.
+        r"""Sets the order of this BaselineSearchRequestBody.
 
         降序或升序, DESC|ESC
 
@@ -173,7 +173,7 @@ class BaselineSearchRequestBody:
 
     @property
     def from_date(self):
-        """Gets the from_date of this BaselineSearchRequestBody.
+        r"""Gets the from_date of this BaselineSearchRequestBody.
 
         起始时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
@@ -184,7 +184,7 @@ class BaselineSearchRequestBody:
 
     @from_date.setter
     def from_date(self, from_date):
-        """Sets the from_date of this BaselineSearchRequestBody.
+        r"""Sets the from_date of this BaselineSearchRequestBody.
 
         起始时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
@@ -195,7 +195,7 @@ class BaselineSearchRequestBody:
 
     @property
     def to_date(self):
-        """Gets the to_date of this BaselineSearchRequestBody.
+        r"""Gets the to_date of this BaselineSearchRequestBody.
 
         截止时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
@@ -206,7 +206,7 @@ class BaselineSearchRequestBody:
 
     @to_date.setter
     def to_date(self, to_date):
-        """Sets the to_date of this BaselineSearchRequestBody.
+        r"""Sets the to_date of this BaselineSearchRequestBody.
 
         截止时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
@@ -217,7 +217,7 @@ class BaselineSearchRequestBody:
 
     @property
     def condition(self):
-        """Gets the condition of this BaselineSearchRequestBody.
+        r"""Gets the condition of this BaselineSearchRequestBody.
 
         搜索条件表达式
 
@@ -228,7 +228,7 @@ class BaselineSearchRequestBody:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this BaselineSearchRequestBody.
+        r"""Sets the condition of this BaselineSearchRequestBody.
 
         搜索条件表达式
 

@@ -27,7 +27,7 @@ class ShowBusinessDetailRequest:
     }
 
     def __init__(self, business_id=None, x_business_id=None):
-        """ShowBusinessDetailRequest
+        r"""ShowBusinessDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowBusinessDetailRequest:
 
     @property
     def business_id(self):
-        """Gets the business_id of this ShowBusinessDetailRequest.
+        r"""Gets the business_id of this ShowBusinessDetailRequest.
 
         应用id。
 
@@ -59,7 +59,7 @@ class ShowBusinessDetailRequest:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this ShowBusinessDetailRequest.
+        r"""Sets the business_id of this ShowBusinessDetailRequest.
 
         应用id。
 
@@ -70,7 +70,7 @@ class ShowBusinessDetailRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ShowBusinessDetailRequest.
+        r"""Gets the x_business_id of this ShowBusinessDetailRequest.
 
         应用id。
 
@@ -81,7 +81,7 @@ class ShowBusinessDetailRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ShowBusinessDetailRequest.
+        r"""Sets the x_business_id of this ShowBusinessDetailRequest.
 
         应用id。
 

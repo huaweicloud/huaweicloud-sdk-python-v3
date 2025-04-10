@@ -28,7 +28,7 @@ class ListApplicableInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, total_count=None):
-        """ListApplicableInstancesResponse
+        r"""ListApplicableInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListApplicableInstancesResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListApplicableInstancesResponse.
+        r"""Gets the instances of this ListApplicableInstancesResponse.
 
         实例列表，显示实例ID和实例名称。
 
@@ -62,7 +62,7 @@ class ListApplicableInstancesResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListApplicableInstancesResponse.
+        r"""Sets the instances of this ListApplicableInstancesResponse.
 
         实例列表，显示实例ID和实例名称。
 
@@ -73,7 +73,7 @@ class ListApplicableInstancesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListApplicableInstancesResponse.
+        r"""Gets the total_count of this ListApplicableInstancesResponse.
 
         查询数量。
 
@@ -84,7 +84,7 @@ class ListApplicableInstancesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListApplicableInstancesResponse.
+        r"""Sets the total_count of this ListApplicableInstancesResponse.
 
         查询数量。
 

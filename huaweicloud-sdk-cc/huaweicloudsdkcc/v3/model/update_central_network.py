@@ -29,7 +29,7 @@ class UpdateCentralNetwork:
     }
 
     def __init__(self, name=None, description=None, tags=None):
-        """UpdateCentralNetwork
+        r"""UpdateCentralNetwork
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateCentralNetwork:
 
     @property
     def name(self):
-        """Gets the name of this UpdateCentralNetwork.
+        r"""Gets the name of this UpdateCentralNetwork.
 
         实例名字。
 
@@ -68,7 +68,7 @@ class UpdateCentralNetwork:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCentralNetwork.
+        r"""Sets the name of this UpdateCentralNetwork.
 
         实例名字。
 
@@ -79,7 +79,7 @@ class UpdateCentralNetwork:
 
     @property
     def description(self):
-        """Gets the description of this UpdateCentralNetwork.
+        r"""Gets the description of this UpdateCentralNetwork.
 
         实例描述。不支持 <>。
 
@@ -90,7 +90,7 @@ class UpdateCentralNetwork:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateCentralNetwork.
+        r"""Sets the description of this UpdateCentralNetwork.
 
         实例描述。不支持 <>。
 
@@ -101,7 +101,7 @@ class UpdateCentralNetwork:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateCentralNetwork.
+        r"""Gets the tags of this UpdateCentralNetwork.
 
         实例标签。
 
@@ -112,7 +112,7 @@ class UpdateCentralNetwork:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateCentralNetwork.
+        r"""Sets the tags of this UpdateCentralNetwork.
 
         实例标签。
 

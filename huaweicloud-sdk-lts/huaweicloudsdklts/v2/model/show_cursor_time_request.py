@@ -31,7 +31,7 @@ class ShowCursorTimeRequest:
     }
 
     def __init__(self, group_id=None, stream_id=None, shard_id=None, cursor=None):
-        """ShowCursorTimeRequest
+        r"""ShowCursorTimeRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowCursorTimeRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowCursorTimeRequest.
+        r"""Gets the group_id of this ShowCursorTimeRequest.
 
         日志组ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID。 缺省值：None 最小长度：36 最大长度：36
 
@@ -71,7 +71,7 @@ class ShowCursorTimeRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowCursorTimeRequest.
+        r"""Sets the group_id of this ShowCursorTimeRequest.
 
         日志组ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID。 缺省值：None 最小长度：36 最大长度：36
 
@@ -82,7 +82,7 @@ class ShowCursorTimeRequest:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this ShowCursorTimeRequest.
+        r"""Gets the stream_id of this ShowCursorTimeRequest.
 
         日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID 缺省值：None 最小长度：36 最大长度：36
 
@@ -93,7 +93,7 @@ class ShowCursorTimeRequest:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this ShowCursorTimeRequest.
+        r"""Sets the stream_id of this ShowCursorTimeRequest.
 
         日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID 缺省值：None 最小长度：36 最大长度：36
 
@@ -104,7 +104,7 @@ class ShowCursorTimeRequest:
 
     @property
     def shard_id(self):
-        """Gets the shard_id of this ShowCursorTimeRequest.
+        r"""Gets the shard_id of this ShowCursorTimeRequest.
 
         Shard ID
 
@@ -115,7 +115,7 @@ class ShowCursorTimeRequest:
 
     @shard_id.setter
     def shard_id(self, shard_id):
-        """Sets the shard_id of this ShowCursorTimeRequest.
+        r"""Sets the shard_id of this ShowCursorTimeRequest.
 
         Shard ID
 
@@ -126,7 +126,7 @@ class ShowCursorTimeRequest:
 
     @property
     def cursor(self):
-        """Gets the cursor of this ShowCursorTimeRequest.
+        r"""Gets the cursor of this ShowCursorTimeRequest.
 
         游标值
 
@@ -137,7 +137,7 @@ class ShowCursorTimeRequest:
 
     @cursor.setter
     def cursor(self, cursor):
-        """Sets the cursor of this ShowCursorTimeRequest.
+        r"""Sets the cursor of this ShowCursorTimeRequest.
 
         游标值
 

@@ -28,7 +28,7 @@ class RecognizeSmartDocumentRecognizerResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeSmartDocumentRecognizerResponse
+        r"""RecognizeSmartDocumentRecognizerResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeSmartDocumentRecognizerResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeSmartDocumentRecognizerResponse.
+        r"""Gets the result of this RecognizeSmartDocumentRecognizerResponse.
 
         调用成功时返回的结果列表，按页面顺序返回，列表第一项为第一页识别结果，依次类推。 调用失败时无此字段。 
 
@@ -62,7 +62,7 @@ class RecognizeSmartDocumentRecognizerResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeSmartDocumentRecognizerResponse.
+        r"""Sets the result of this RecognizeSmartDocumentRecognizerResponse.
 
         调用成功时返回的结果列表，按页面顺序返回，列表第一项为第一页识别结果，依次类推。 调用失败时无此字段。 
 
@@ -73,7 +73,7 @@ class RecognizeSmartDocumentRecognizerResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeSmartDocumentRecognizerResponse.
+        r"""Gets the x_request_id of this RecognizeSmartDocumentRecognizerResponse.
 
         :return: The x_request_id of this RecognizeSmartDocumentRecognizerResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class RecognizeSmartDocumentRecognizerResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeSmartDocumentRecognizerResponse.
+        r"""Sets the x_request_id of this RecognizeSmartDocumentRecognizerResponse.
 
         :param x_request_id: The x_request_id of this RecognizeSmartDocumentRecognizerResponse.
         :type x_request_id: str

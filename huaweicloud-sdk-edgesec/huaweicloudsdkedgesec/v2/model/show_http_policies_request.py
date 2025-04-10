@@ -33,7 +33,7 @@ class ShowHttpPoliciesRequest:
     }
 
     def __init__(self, enterprise_project_id=None, page=None, pagesize=None, name=None, hostname=None):
-        """ShowHttpPoliciesRequest
+        r"""ShowHttpPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowHttpPoliciesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowHttpPoliciesRequest.
+        r"""Gets the enterprise_project_id of this ShowHttpPoliciesRequest.
 
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -82,7 +82,7 @@ class ShowHttpPoliciesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowHttpPoliciesRequest.
+        r"""Sets the enterprise_project_id of this ShowHttpPoliciesRequest.
 
         您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -93,7 +93,7 @@ class ShowHttpPoliciesRequest:
 
     @property
     def page(self):
-        """Gets the page of this ShowHttpPoliciesRequest.
+        r"""Gets the page of this ShowHttpPoliciesRequest.
 
         分页查询参数，第page页
 
@@ -104,7 +104,7 @@ class ShowHttpPoliciesRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowHttpPoliciesRequest.
+        r"""Sets the page of this ShowHttpPoliciesRequest.
 
         分页查询参数，第page页
 
@@ -115,7 +115,7 @@ class ShowHttpPoliciesRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ShowHttpPoliciesRequest.
+        r"""Gets the pagesize of this ShowHttpPoliciesRequest.
 
         分页查询参数，每页显示pagesize条记录
 
@@ -126,7 +126,7 @@ class ShowHttpPoliciesRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ShowHttpPoliciesRequest.
+        r"""Sets the pagesize of this ShowHttpPoliciesRequest.
 
         分页查询参数，每页显示pagesize条记录
 
@@ -137,7 +137,7 @@ class ShowHttpPoliciesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowHttpPoliciesRequest.
+        r"""Gets the name of this ShowHttpPoliciesRequest.
 
         模糊查询策略名称
 
@@ -148,7 +148,7 @@ class ShowHttpPoliciesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowHttpPoliciesRequest.
+        r"""Sets the name of this ShowHttpPoliciesRequest.
 
         模糊查询策略名称
 
@@ -159,7 +159,7 @@ class ShowHttpPoliciesRequest:
 
     @property
     def hostname(self):
-        """Gets the hostname of this ShowHttpPoliciesRequest.
+        r"""Gets the hostname of this ShowHttpPoliciesRequest.
 
         根据域名模糊查询策略
 
@@ -170,7 +170,7 @@ class ShowHttpPoliciesRequest:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this ShowHttpPoliciesRequest.
+        r"""Sets the hostname of this ShowHttpPoliciesRequest.
 
         根据域名模糊查询策略
 

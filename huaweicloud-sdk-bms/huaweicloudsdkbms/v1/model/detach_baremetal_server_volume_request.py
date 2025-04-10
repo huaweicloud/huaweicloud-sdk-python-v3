@@ -27,7 +27,7 @@ class DetachBaremetalServerVolumeRequest:
     }
 
     def __init__(self, server_id=None, attachment_id=None):
-        """DetachBaremetalServerVolumeRequest
+        r"""DetachBaremetalServerVolumeRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DetachBaremetalServerVolumeRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this DetachBaremetalServerVolumeRequest.
+        r"""Gets the server_id of this DetachBaremetalServerVolumeRequest.
 
         裸金属服务器ID
 
@@ -59,7 +59,7 @@ class DetachBaremetalServerVolumeRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this DetachBaremetalServerVolumeRequest.
+        r"""Sets the server_id of this DetachBaremetalServerVolumeRequest.
 
         裸金属服务器ID
 
@@ -70,7 +70,7 @@ class DetachBaremetalServerVolumeRequest:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this DetachBaremetalServerVolumeRequest.
+        r"""Gets the attachment_id of this DetachBaremetalServerVolumeRequest.
 
         裸金属服务器的云磁盘ID
 
@@ -81,7 +81,7 @@ class DetachBaremetalServerVolumeRequest:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this DetachBaremetalServerVolumeRequest.
+        r"""Sets the attachment_id of this DetachBaremetalServerVolumeRequest.
 
         裸金属服务器的云磁盘ID
 

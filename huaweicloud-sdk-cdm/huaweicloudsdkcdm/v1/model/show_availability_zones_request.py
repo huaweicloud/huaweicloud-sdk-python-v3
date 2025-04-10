@@ -25,7 +25,7 @@ class ShowAvailabilityZonesRequest:
     }
 
     def __init__(self, region_id=None):
-        """ShowAvailabilityZonesRequest
+        r"""ShowAvailabilityZonesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAvailabilityZonesRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ShowAvailabilityZonesRequest.
+        r"""Gets the region_id of this ShowAvailabilityZonesRequest.
 
         区域ID。
 
@@ -53,7 +53,7 @@ class ShowAvailabilityZonesRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ShowAvailabilityZonesRequest.
+        r"""Sets the region_id of this ShowAvailabilityZonesRequest.
 
         区域ID。
 

@@ -23,7 +23,7 @@ class EventClassId:
     }
 
     def __init__(self):
-        """EventClassId
+        r"""EventClassId
 
         The model defined in huaweicloud sdk
 

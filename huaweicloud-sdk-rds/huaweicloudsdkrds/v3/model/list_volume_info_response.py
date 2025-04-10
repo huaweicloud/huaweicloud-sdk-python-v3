@@ -26,7 +26,7 @@ class ListVolumeInfoResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListVolumeInfoResponse
+        r"""ListVolumeInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListVolumeInfoResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListVolumeInfoResponse.
+        r"""Gets the body of this ListVolumeInfoResponse.
 
         :return: The body of this ListVolumeInfoResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ListVolumeInfoResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListVolumeInfoResponse.
+        r"""Sets the body of this ListVolumeInfoResponse.
 
         :param body: The body of this ListVolumeInfoResponse.
         :type body: str

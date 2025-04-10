@@ -27,7 +27,7 @@ class ComponentExternalDatasource:
     }
 
     def __init__(self, name=None, types=None):
-        """ComponentExternalDatasource
+        r"""ComponentExternalDatasource
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ComponentExternalDatasource:
 
     @property
     def name(self):
-        """Gets the name of this ComponentExternalDatasource.
+        r"""Gets the name of this ComponentExternalDatasource.
 
         外部数据源名称
 
@@ -61,7 +61,7 @@ class ComponentExternalDatasource:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentExternalDatasource.
+        r"""Sets the name of this ComponentExternalDatasource.
 
         外部数据源名称
 
@@ -72,7 +72,7 @@ class ComponentExternalDatasource:
 
     @property
     def types(self):
-        """Gets the types of this ComponentExternalDatasource.
+        r"""Gets the types of this ComponentExternalDatasource.
 
         外部数据源类型
 
@@ -83,7 +83,7 @@ class ComponentExternalDatasource:
 
     @types.setter
     def types(self, types):
-        """Sets the types of this ComponentExternalDatasource.
+        r"""Sets the types of this ComponentExternalDatasource.
 
         外部数据源类型
 

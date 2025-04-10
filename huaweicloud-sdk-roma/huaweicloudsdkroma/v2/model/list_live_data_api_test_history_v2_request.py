@@ -31,7 +31,7 @@ class ListLiveDataApiTestHistoryV2Request:
     }
 
     def __init__(self, instance_id=None, ld_api_id=None, offset=None, limit=None):
-        """ListLiveDataApiTestHistoryV2Request
+        r"""ListLiveDataApiTestHistoryV2Request
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListLiveDataApiTestHistoryV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListLiveDataApiTestHistoryV2Request.
+        r"""Gets the instance_id of this ListLiveDataApiTestHistoryV2Request.
 
         实例ID
 
@@ -73,7 +73,7 @@ class ListLiveDataApiTestHistoryV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListLiveDataApiTestHistoryV2Request.
+        r"""Sets the instance_id of this ListLiveDataApiTestHistoryV2Request.
 
         实例ID
 
@@ -84,7 +84,7 @@ class ListLiveDataApiTestHistoryV2Request:
 
     @property
     def ld_api_id(self):
-        """Gets the ld_api_id of this ListLiveDataApiTestHistoryV2Request.
+        r"""Gets the ld_api_id of this ListLiveDataApiTestHistoryV2Request.
 
         后端API的编号
 
@@ -95,7 +95,7 @@ class ListLiveDataApiTestHistoryV2Request:
 
     @ld_api_id.setter
     def ld_api_id(self, ld_api_id):
-        """Sets the ld_api_id of this ListLiveDataApiTestHistoryV2Request.
+        r"""Sets the ld_api_id of this ListLiveDataApiTestHistoryV2Request.
 
         后端API的编号
 
@@ -106,7 +106,7 @@ class ListLiveDataApiTestHistoryV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLiveDataApiTestHistoryV2Request.
+        r"""Gets the offset of this ListLiveDataApiTestHistoryV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -117,7 +117,7 @@ class ListLiveDataApiTestHistoryV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLiveDataApiTestHistoryV2Request.
+        r"""Sets the offset of this ListLiveDataApiTestHistoryV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -128,7 +128,7 @@ class ListLiveDataApiTestHistoryV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLiveDataApiTestHistoryV2Request.
+        r"""Gets the limit of this ListLiveDataApiTestHistoryV2Request.
 
         每页显示的条目数量
 
@@ -139,7 +139,7 @@ class ListLiveDataApiTestHistoryV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLiveDataApiTestHistoryV2Request.
+        r"""Sets the limit of this ListLiveDataApiTestHistoryV2Request.
 
         每页显示的条目数量
 

@@ -27,7 +27,7 @@ class SaveLtsConfigsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """SaveLtsConfigsRequest
+        r"""SaveLtsConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SaveLtsConfigsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SaveLtsConfigsRequest.
+        r"""Gets the x_language of this SaveLtsConfigsRequest.
 
         语言。
 
@@ -61,7 +61,7 @@ class SaveLtsConfigsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SaveLtsConfigsRequest.
+        r"""Sets the x_language of this SaveLtsConfigsRequest.
 
         语言。
 
@@ -72,7 +72,7 @@ class SaveLtsConfigsRequest:
 
     @property
     def body(self):
-        """Gets the body of this SaveLtsConfigsRequest.
+        r"""Gets the body of this SaveLtsConfigsRequest.
 
         :return: The body of this SaveLtsConfigsRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SaveLtsConfigsRequestBody`
@@ -81,7 +81,7 @@ class SaveLtsConfigsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SaveLtsConfigsRequest.
+        r"""Sets the body of this SaveLtsConfigsRequest.
 
         :param body: The body of this SaveLtsConfigsRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.SaveLtsConfigsRequestBody`

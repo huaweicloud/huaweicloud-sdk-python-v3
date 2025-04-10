@@ -31,7 +31,7 @@ class NodeExecutionDetail:
     }
 
     def __init__(self, node_id=None, node_name=None, execution_id=None, executions=None):
-        """NodeExecutionDetail
+        r"""NodeExecutionDetail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class NodeExecutionDetail:
 
     @property
     def node_id(self):
-        """Gets the node_id of this NodeExecutionDetail.
+        r"""Gets the node_id of this NodeExecutionDetail.
 
         流程节点ID
 
@@ -75,7 +75,7 @@ class NodeExecutionDetail:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this NodeExecutionDetail.
+        r"""Sets the node_id of this NodeExecutionDetail.
 
         流程节点ID
 
@@ -86,7 +86,7 @@ class NodeExecutionDetail:
 
     @property
     def node_name(self):
-        """Gets the node_name of this NodeExecutionDetail.
+        r"""Gets the node_name of this NodeExecutionDetail.
 
         流程节点名称
 
@@ -97,7 +97,7 @@ class NodeExecutionDetail:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this NodeExecutionDetail.
+        r"""Sets the node_name of this NodeExecutionDetail.
 
         流程节点名称
 
@@ -108,7 +108,7 @@ class NodeExecutionDetail:
 
     @property
     def execution_id(self):
-        """Gets the execution_id of this NodeExecutionDetail.
+        r"""Gets the execution_id of this NodeExecutionDetail.
 
         流程节点执行ID
 
@@ -119,7 +119,7 @@ class NodeExecutionDetail:
 
     @execution_id.setter
     def execution_id(self, execution_id):
-        """Sets the execution_id of this NodeExecutionDetail.
+        r"""Sets the execution_id of this NodeExecutionDetail.
 
         流程节点执行ID
 
@@ -130,7 +130,7 @@ class NodeExecutionDetail:
 
     @property
     def executions(self):
-        """Gets the executions of this NodeExecutionDetail.
+        r"""Gets the executions of this NodeExecutionDetail.
 
         节点执行记录
 
@@ -141,7 +141,7 @@ class NodeExecutionDetail:
 
     @executions.setter
     def executions(self, executions):
-        """Sets the executions of this NodeExecutionDetail.
+        r"""Sets the executions of this NodeExecutionDetail.
 
         节点执行记录
 

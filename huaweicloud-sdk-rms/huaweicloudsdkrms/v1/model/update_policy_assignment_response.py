@@ -50,7 +50,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
     }
 
     def __init__(self, policy_assignment_type=None, id=None, name=None, description=None, policy_filter=None, period=None, state=None, created=None, updated=None, policy_definition_id=None, custom_policy=None, parameters=None, created_by=None):
-        """UpdatePolicyAssignmentResponse
+        r"""UpdatePolicyAssignmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @property
     def policy_assignment_type(self):
-        """Gets the policy_assignment_type of this UpdatePolicyAssignmentResponse.
+        r"""Gets the policy_assignment_type of this UpdatePolicyAssignmentResponse.
 
         规则类型，包括预定义合规规则(builtin)和用户自定义合规规则(custom)
 
@@ -139,7 +139,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @policy_assignment_type.setter
     def policy_assignment_type(self, policy_assignment_type):
-        """Sets the policy_assignment_type of this UpdatePolicyAssignmentResponse.
+        r"""Sets the policy_assignment_type of this UpdatePolicyAssignmentResponse.
 
         规则类型，包括预定义合规规则(builtin)和用户自定义合规规则(custom)
 
@@ -150,7 +150,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdatePolicyAssignmentResponse.
+        r"""Gets the id of this UpdatePolicyAssignmentResponse.
 
         规则ID
 
@@ -161,7 +161,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdatePolicyAssignmentResponse.
+        r"""Sets the id of this UpdatePolicyAssignmentResponse.
 
         规则ID
 
@@ -172,7 +172,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdatePolicyAssignmentResponse.
+        r"""Gets the name of this UpdatePolicyAssignmentResponse.
 
         规则名字
 
@@ -183,7 +183,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdatePolicyAssignmentResponse.
+        r"""Sets the name of this UpdatePolicyAssignmentResponse.
 
         规则名字
 
@@ -194,7 +194,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdatePolicyAssignmentResponse.
+        r"""Gets the description of this UpdatePolicyAssignmentResponse.
 
         规则描述
 
@@ -205,7 +205,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePolicyAssignmentResponse.
+        r"""Sets the description of this UpdatePolicyAssignmentResponse.
 
         规则描述
 
@@ -216,7 +216,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @property
     def policy_filter(self):
-        """Gets the policy_filter of this UpdatePolicyAssignmentResponse.
+        r"""Gets the policy_filter of this UpdatePolicyAssignmentResponse.
 
         :return: The policy_filter of this UpdatePolicyAssignmentResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.PolicyFilterDefinition`
@@ -225,7 +225,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @policy_filter.setter
     def policy_filter(self, policy_filter):
-        """Sets the policy_filter of this UpdatePolicyAssignmentResponse.
+        r"""Sets the policy_filter of this UpdatePolicyAssignmentResponse.
 
         :param policy_filter: The policy_filter of this UpdatePolicyAssignmentResponse.
         :type policy_filter: :class:`huaweicloudsdkrms.v1.PolicyFilterDefinition`
@@ -234,7 +234,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @property
     def period(self):
-        """Gets the period of this UpdatePolicyAssignmentResponse.
+        r"""Gets the period of this UpdatePolicyAssignmentResponse.
 
         触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
 
@@ -245,7 +245,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @period.setter
     def period(self, period):
-        """Sets the period of this UpdatePolicyAssignmentResponse.
+        r"""Sets the period of this UpdatePolicyAssignmentResponse.
 
         触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
 
@@ -256,7 +256,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this UpdatePolicyAssignmentResponse.
+        r"""Gets the state of this UpdatePolicyAssignmentResponse.
 
         规则状态
 
@@ -267,7 +267,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UpdatePolicyAssignmentResponse.
+        r"""Sets the state of this UpdatePolicyAssignmentResponse.
 
         规则状态
 
@@ -278,7 +278,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this UpdatePolicyAssignmentResponse.
+        r"""Gets the created of this UpdatePolicyAssignmentResponse.
 
         规则创建时间
 
@@ -289,7 +289,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this UpdatePolicyAssignmentResponse.
+        r"""Sets the created of this UpdatePolicyAssignmentResponse.
 
         规则创建时间
 
@@ -300,7 +300,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this UpdatePolicyAssignmentResponse.
+        r"""Gets the updated of this UpdatePolicyAssignmentResponse.
 
         规则更新时间
 
@@ -311,7 +311,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this UpdatePolicyAssignmentResponse.
+        r"""Sets the updated of this UpdatePolicyAssignmentResponse.
 
         规则更新时间
 
@@ -322,7 +322,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @property
     def policy_definition_id(self):
-        """Gets the policy_definition_id of this UpdatePolicyAssignmentResponse.
+        r"""Gets the policy_definition_id of this UpdatePolicyAssignmentResponse.
 
         规则的策略ID
 
@@ -333,7 +333,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @policy_definition_id.setter
     def policy_definition_id(self, policy_definition_id):
-        """Sets the policy_definition_id of this UpdatePolicyAssignmentResponse.
+        r"""Sets the policy_definition_id of this UpdatePolicyAssignmentResponse.
 
         规则的策略ID
 
@@ -344,7 +344,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @property
     def custom_policy(self):
-        """Gets the custom_policy of this UpdatePolicyAssignmentResponse.
+        r"""Gets the custom_policy of this UpdatePolicyAssignmentResponse.
 
         :return: The custom_policy of this UpdatePolicyAssignmentResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.CustomPolicy`
@@ -353,7 +353,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @custom_policy.setter
     def custom_policy(self, custom_policy):
-        """Sets the custom_policy of this UpdatePolicyAssignmentResponse.
+        r"""Sets the custom_policy of this UpdatePolicyAssignmentResponse.
 
         :param custom_policy: The custom_policy of this UpdatePolicyAssignmentResponse.
         :type custom_policy: :class:`huaweicloudsdkrms.v1.CustomPolicy`
@@ -362,7 +362,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @property
     def parameters(self):
-        """Gets the parameters of this UpdatePolicyAssignmentResponse.
+        r"""Gets the parameters of this UpdatePolicyAssignmentResponse.
 
         规则参数
 
@@ -373,7 +373,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this UpdatePolicyAssignmentResponse.
+        r"""Sets the parameters of this UpdatePolicyAssignmentResponse.
 
         规则参数
 
@@ -384,7 +384,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @property
     def created_by(self):
-        """Gets the created_by of this UpdatePolicyAssignmentResponse.
+        r"""Gets the created_by of this UpdatePolicyAssignmentResponse.
 
         规则的创建者
 
@@ -395,7 +395,7 @@ class UpdatePolicyAssignmentResponse(SdkResponse):
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this UpdatePolicyAssignmentResponse.
+        r"""Sets the created_by of this UpdatePolicyAssignmentResponse.
 
         规则的创建者
 

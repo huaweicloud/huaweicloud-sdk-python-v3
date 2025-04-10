@@ -26,7 +26,7 @@ class DeleteRoutingFlowControlPolicyResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteRoutingFlowControlPolicyResponse
+        r"""DeleteRoutingFlowControlPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteRoutingFlowControlPolicyResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteRoutingFlowControlPolicyResponse.
+        r"""Gets the body of this DeleteRoutingFlowControlPolicyResponse.
 
         :return: The body of this DeleteRoutingFlowControlPolicyResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteRoutingFlowControlPolicyResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteRoutingFlowControlPolicyResponse.
+        r"""Sets the body of this DeleteRoutingFlowControlPolicyResponse.
 
         :param body: The body of this DeleteRoutingFlowControlPolicyResponse.
         :type body: str

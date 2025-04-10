@@ -35,7 +35,7 @@ class NetworkConfig:
     }
 
     def __init__(self, vpc_id=None, vpc_name=None, subnet_ids=None, management_subnet_cidr=None, management_node_subnet_id=None, vpc_config_infos=None):
-        """NetworkConfig
+        r"""NetworkConfig
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class NetworkConfig:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this NetworkConfig.
+        r"""Gets the vpc_id of this NetworkConfig.
 
         VPC ID
 
@@ -89,7 +89,7 @@ class NetworkConfig:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this NetworkConfig.
+        r"""Sets the vpc_id of this NetworkConfig.
 
         VPC ID
 
@@ -100,7 +100,7 @@ class NetworkConfig:
 
     @property
     def vpc_name(self):
-        """Gets the vpc_name of this NetworkConfig.
+        r"""Gets the vpc_name of this NetworkConfig.
 
         VPC名称
 
@@ -111,7 +111,7 @@ class NetworkConfig:
 
     @vpc_name.setter
     def vpc_name(self, vpc_name):
-        """Sets the vpc_name of this NetworkConfig.
+        r"""Sets the vpc_name of this NetworkConfig.
 
         VPC名称
 
@@ -122,7 +122,7 @@ class NetworkConfig:
 
     @property
     def subnet_ids(self):
-        """Gets the subnet_ids of this NetworkConfig.
+        r"""Gets the subnet_ids of this NetworkConfig.
 
         业务子网，可以指定返回的网络ID订购桌面
 
@@ -133,7 +133,7 @@ class NetworkConfig:
 
     @subnet_ids.setter
     def subnet_ids(self, subnet_ids):
-        """Sets the subnet_ids of this NetworkConfig.
+        r"""Sets the subnet_ids of this NetworkConfig.
 
         业务子网，可以指定返回的网络ID订购桌面
 
@@ -144,7 +144,7 @@ class NetworkConfig:
 
     @property
     def management_subnet_cidr(self):
-        """Gets the management_subnet_cidr of this NetworkConfig.
+        r"""Gets the management_subnet_cidr of this NetworkConfig.
 
         后端管理组件占用的子网网段
 
@@ -155,7 +155,7 @@ class NetworkConfig:
 
     @management_subnet_cidr.setter
     def management_subnet_cidr(self, management_subnet_cidr):
-        """Sets the management_subnet_cidr of this NetworkConfig.
+        r"""Sets the management_subnet_cidr of this NetworkConfig.
 
         后端管理组件占用的子网网段
 
@@ -166,7 +166,7 @@ class NetworkConfig:
 
     @property
     def management_node_subnet_id(self):
-        """Gets the management_node_subnet_id of this NetworkConfig.
+        r"""Gets the management_node_subnet_id of this NetworkConfig.
 
         subnet_ids所返回的业务子网中,被管理节点所占用的子网id
 
@@ -177,7 +177,7 @@ class NetworkConfig:
 
     @management_node_subnet_id.setter
     def management_node_subnet_id(self, management_node_subnet_id):
-        """Sets the management_node_subnet_id of this NetworkConfig.
+        r"""Sets the management_node_subnet_id of this NetworkConfig.
 
         subnet_ids所返回的业务子网中,被管理节点所占用的子网id
 
@@ -188,7 +188,7 @@ class NetworkConfig:
 
     @property
     def vpc_config_infos(self):
-        """Gets the vpc_config_infos of this NetworkConfig.
+        r"""Gets the vpc_config_infos of this NetworkConfig.
 
         VPC配置信息列表。
 
@@ -199,7 +199,7 @@ class NetworkConfig:
 
     @vpc_config_infos.setter
     def vpc_config_infos(self, vpc_config_infos):
-        """Sets the vpc_config_infos of this NetworkConfig.
+        r"""Sets the vpc_config_infos of this NetworkConfig.
 
         VPC配置信息列表。
 

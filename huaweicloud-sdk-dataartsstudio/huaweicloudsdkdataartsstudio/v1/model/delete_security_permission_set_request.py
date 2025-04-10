@@ -27,7 +27,7 @@ class DeleteSecurityPermissionSetRequest:
     }
 
     def __init__(self, permission_set_id=None, workspace=None):
-        """DeleteSecurityPermissionSetRequest
+        r"""DeleteSecurityPermissionSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteSecurityPermissionSetRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this DeleteSecurityPermissionSetRequest.
+        r"""Gets the permission_set_id of this DeleteSecurityPermissionSetRequest.
 
         权限集id
 
@@ -59,7 +59,7 @@ class DeleteSecurityPermissionSetRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this DeleteSecurityPermissionSetRequest.
+        r"""Sets the permission_set_id of this DeleteSecurityPermissionSetRequest.
 
         权限集id
 
@@ -70,7 +70,7 @@ class DeleteSecurityPermissionSetRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteSecurityPermissionSetRequest.
+        r"""Gets the workspace of this DeleteSecurityPermissionSetRequest.
 
         DataArts Studio工作空间ID
 
@@ -81,7 +81,7 @@ class DeleteSecurityPermissionSetRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteSecurityPermissionSetRequest.
+        r"""Sets the workspace of this DeleteSecurityPermissionSetRequest.
 
         DataArts Studio工作空间ID
 

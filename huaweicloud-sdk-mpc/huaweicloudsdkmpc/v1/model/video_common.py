@@ -41,7 +41,7 @@ class VideoCommon:
     }
 
     def __init__(self, output_policy=None, codec=None, profile=None, level=None, preset=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, black_cut=None):
-        """VideoCommon
+        r"""VideoCommon
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class VideoCommon:
 
     @property
     def output_policy(self):
-        """Gets the output_policy of this VideoCommon.
+        r"""Gets the output_policy of this VideoCommon.
 
         输出策略。  取值如下： - discard - transcode  >- 当视频参数中的“output_policy”为\"discard\"，且音频参数中的“output_policy”为“transcode”时，表示只输出音频。 >- 当视频参数中的“output_policy”为\"transcode\"，且音频参数中的“output_policy”为“discard”时，表示只输出视频。 >- 同时为\"discard\"时不合法。 >- 同时为“transcode”时，表示输出音视频。 
 
@@ -110,7 +110,7 @@ class VideoCommon:
 
     @output_policy.setter
     def output_policy(self, output_policy):
-        """Sets the output_policy of this VideoCommon.
+        r"""Sets the output_policy of this VideoCommon.
 
         输出策略。  取值如下： - discard - transcode  >- 当视频参数中的“output_policy”为\"discard\"，且音频参数中的“output_policy”为“transcode”时，表示只输出音频。 >- 当视频参数中的“output_policy”为\"transcode\"，且音频参数中的“output_policy”为“discard”时，表示只输出视频。 >- 同时为\"discard\"时不合法。 >- 同时为“transcode”时，表示输出音视频。 
 
@@ -121,7 +121,7 @@ class VideoCommon:
 
     @property
     def codec(self):
-        """Gets the codec of this VideoCommon.
+        r"""Gets the codec of this VideoCommon.
 
         视频编码格式。  取值如下： - 1：表示H.264。 - 2：表示H.265。 
 
@@ -132,7 +132,7 @@ class VideoCommon:
 
     @codec.setter
     def codec(self, codec):
-        """Sets the codec of this VideoCommon.
+        r"""Sets the codec of this VideoCommon.
 
         视频编码格式。  取值如下： - 1：表示H.264。 - 2：表示H.265。 
 
@@ -143,7 +143,7 @@ class VideoCommon:
 
     @property
     def profile(self):
-        """Gets the profile of this VideoCommon.
+        r"""Gets the profile of this VideoCommon.
 
         编码档次，建议设为3。  取值如下： - 1：VIDEO_PROFILE_H264_BASE - 2：VIDEO_PROFILE_H264_MAIN - 3：VIDEO_PROFILE_H264_HIGH - 4：VIDEO_PROFILE_H265_MAIN 
 
@@ -154,7 +154,7 @@ class VideoCommon:
 
     @profile.setter
     def profile(self, profile):
-        """Sets the profile of this VideoCommon.
+        r"""Sets the profile of this VideoCommon.
 
         编码档次，建议设为3。  取值如下： - 1：VIDEO_PROFILE_H264_BASE - 2：VIDEO_PROFILE_H264_MAIN - 3：VIDEO_PROFILE_H264_HIGH - 4：VIDEO_PROFILE_H265_MAIN 
 
@@ -165,7 +165,7 @@ class VideoCommon:
 
     @property
     def level(self):
-        """Gets the level of this VideoCommon.
+        r"""Gets the level of this VideoCommon.
 
         编码级别。  取值如下： - 1：VIDEO_LEVEL_1_0 - 2：VIDEO_LEVEL_1_1 - 3：VIDEO_LEVEL_1_2 - 4：VIDEO_LEVEL_1_3 - 5：VIDEO_LEVEL_2_0 - 6：VIDEO_LEVEL_2_1 - 7：VIDEO_LEVEL_2_2 - 8：VIDEO_LEVEL_3_0 - 9：VIDEO_LEVEL_3_1 - 10：VIDEO_LEVEL_3_2 - 11：VIDEO_LEVEL_4_0 - 12：VIDEO_LEVEL_4_1 - 13：VIDEO_LEVEL_4_2 - 14：VIDEO_LEVEL_5_0 - 15：VIDEO_LEVEL_5_1 
 
@@ -176,7 +176,7 @@ class VideoCommon:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this VideoCommon.
+        r"""Sets the level of this VideoCommon.
 
         编码级别。  取值如下： - 1：VIDEO_LEVEL_1_0 - 2：VIDEO_LEVEL_1_1 - 3：VIDEO_LEVEL_1_2 - 4：VIDEO_LEVEL_1_3 - 5：VIDEO_LEVEL_2_0 - 6：VIDEO_LEVEL_2_1 - 7：VIDEO_LEVEL_2_2 - 8：VIDEO_LEVEL_3_0 - 9：VIDEO_LEVEL_3_1 - 10：VIDEO_LEVEL_3_2 - 11：VIDEO_LEVEL_4_0 - 12：VIDEO_LEVEL_4_1 - 13：VIDEO_LEVEL_4_2 - 14：VIDEO_LEVEL_5_0 - 15：VIDEO_LEVEL_5_1 
 
@@ -187,7 +187,7 @@ class VideoCommon:
 
     @property
     def preset(self):
-        """Gets the preset of this VideoCommon.
+        r"""Gets the preset of this VideoCommon.
 
         编码质量等级。  取值如下： - 1：VIDEO_PRESET_HSPEED2 - 2：VIDEO_PRESET_HSPEED - 3：VIDEO_PRESET_NORMAL > 值越大，表示编码的质量越高，转码耗时也越长。 
 
@@ -198,7 +198,7 @@ class VideoCommon:
 
     @preset.setter
     def preset(self, preset):
-        """Sets the preset of this VideoCommon.
+        r"""Sets the preset of this VideoCommon.
 
         编码质量等级。  取值如下： - 1：VIDEO_PRESET_HSPEED2 - 2：VIDEO_PRESET_HSPEED - 3：VIDEO_PRESET_NORMAL > 值越大，表示编码的质量越高，转码耗时也越长。 
 
@@ -209,7 +209,7 @@ class VideoCommon:
 
     @property
     def max_iframes_interval(self):
-        """Gets the max_iframes_interval of this VideoCommon.
+        r"""Gets the max_iframes_interval of this VideoCommon.
 
         I帧最大间隔  取值范围：[2，10]。  默认值：5。  单位：秒。 
 
@@ -220,7 +220,7 @@ class VideoCommon:
 
     @max_iframes_interval.setter
     def max_iframes_interval(self, max_iframes_interval):
-        """Sets the max_iframes_interval of this VideoCommon.
+        r"""Sets the max_iframes_interval of this VideoCommon.
 
         I帧最大间隔  取值范围：[2，10]。  默认值：5。  单位：秒。 
 
@@ -231,7 +231,7 @@ class VideoCommon:
 
     @property
     def bframes_count(self):
-        """Gets the bframes_count of this VideoCommon.
+        r"""Gets the bframes_count of this VideoCommon.
 
         最大B帧间隔。  取值范围： - H264：[0，7]，默认值为4。 - H265：[0，7]，默认值为7。  单位：帧。 
 
@@ -242,7 +242,7 @@ class VideoCommon:
 
     @bframes_count.setter
     def bframes_count(self, bframes_count):
-        """Sets the bframes_count of this VideoCommon.
+        r"""Sets the bframes_count of this VideoCommon.
 
         最大B帧间隔。  取值范围： - H264：[0，7]，默认值为4。 - H265：[0，7]，默认值为7。  单位：帧。 
 
@@ -253,7 +253,7 @@ class VideoCommon:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this VideoCommon.
+        r"""Gets the frame_rate of this VideoCommon.
 
         帧率  取值范围：0或[5,60]之间的整数，0表示自适应  单位：帧每秒 
 
@@ -264,7 +264,7 @@ class VideoCommon:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this VideoCommon.
+        r"""Sets the frame_rate of this VideoCommon.
 
         帧率  取值范围：0或[5,60]之间的整数，0表示自适应  单位：帧每秒 
 
@@ -275,7 +275,7 @@ class VideoCommon:
 
     @property
     def black_cut(self):
-        """Gets the black_cut of this VideoCommon.
+        r"""Gets the black_cut of this VideoCommon.
 
         黑边剪裁类型  取值如下： - 0：不开启黑边剪裁 - 1：开启黑边剪裁，低复杂度算法，针对长视频（>5分钟） - 2：开启黑边剪裁，高复杂度算法，针对短视频（<=5分钟） 
 
@@ -286,7 +286,7 @@ class VideoCommon:
 
     @black_cut.setter
     def black_cut(self, black_cut):
-        """Sets the black_cut of this VideoCommon.
+        r"""Sets the black_cut of this VideoCommon.
 
         黑边剪裁类型  取值如下： - 0：不开启黑边剪裁 - 1：开启黑边剪裁，低复杂度算法，针对长视频（>5分钟） - 2：开启黑边剪裁，高复杂度算法，针对短视频（<=5分钟） 
 

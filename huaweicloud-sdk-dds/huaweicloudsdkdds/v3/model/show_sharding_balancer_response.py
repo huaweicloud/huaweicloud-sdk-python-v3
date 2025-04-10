@@ -28,7 +28,7 @@ class ShowShardingBalancerResponse(SdkResponse):
     }
 
     def __init__(self, is_open=None, active_window=None):
-        """ShowShardingBalancerResponse
+        r"""ShowShardingBalancerResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowShardingBalancerResponse(SdkResponse):
 
     @property
     def is_open(self):
-        """Gets the is_open of this ShowShardingBalancerResponse.
+        r"""Gets the is_open of this ShowShardingBalancerResponse.
 
         集群均衡是否打开。
 
@@ -62,7 +62,7 @@ class ShowShardingBalancerResponse(SdkResponse):
 
     @is_open.setter
     def is_open(self, is_open):
-        """Sets the is_open of this ShowShardingBalancerResponse.
+        r"""Sets the is_open of this ShowShardingBalancerResponse.
 
         集群均衡是否打开。
 
@@ -73,7 +73,7 @@ class ShowShardingBalancerResponse(SdkResponse):
 
     @property
     def active_window(self):
-        """Gets the active_window of this ShowShardingBalancerResponse.
+        r"""Gets the active_window of this ShowShardingBalancerResponse.
 
         :return: The active_window of this ShowShardingBalancerResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.BalancerActiveWindow`
@@ -82,7 +82,7 @@ class ShowShardingBalancerResponse(SdkResponse):
 
     @active_window.setter
     def active_window(self, active_window):
-        """Sets the active_window of this ShowShardingBalancerResponse.
+        r"""Sets the active_window of this ShowShardingBalancerResponse.
 
         :param active_window: The active_window of this ShowShardingBalancerResponse.
         :type active_window: :class:`huaweicloudsdkdds.v3.BalancerActiveWindow`

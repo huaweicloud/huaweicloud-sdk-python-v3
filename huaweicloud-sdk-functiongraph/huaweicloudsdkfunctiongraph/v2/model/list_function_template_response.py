@@ -28,7 +28,7 @@ class ListFunctionTemplateResponse(SdkResponse):
     }
 
     def __init__(self, func_templates=None, next_marker=None):
-        """ListFunctionTemplateResponse
+        r"""ListFunctionTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFunctionTemplateResponse(SdkResponse):
 
     @property
     def func_templates(self):
-        """Gets the func_templates of this ListFunctionTemplateResponse.
+        r"""Gets the func_templates of this ListFunctionTemplateResponse.
 
         函数模板列表
 
@@ -62,7 +62,7 @@ class ListFunctionTemplateResponse(SdkResponse):
 
     @func_templates.setter
     def func_templates(self, func_templates):
-        """Sets the func_templates of this ListFunctionTemplateResponse.
+        r"""Sets the func_templates of this ListFunctionTemplateResponse.
 
         函数模板列表
 
@@ -73,7 +73,7 @@ class ListFunctionTemplateResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListFunctionTemplateResponse.
+        r"""Gets the next_marker of this ListFunctionTemplateResponse.
 
         函数下次记录读取位置。
 
@@ -84,7 +84,7 @@ class ListFunctionTemplateResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListFunctionTemplateResponse.
+        r"""Sets the next_marker of this ListFunctionTemplateResponse.
 
         函数下次记录读取位置。
 

@@ -26,7 +26,7 @@ class BatchDeleteInstanceIpRuleResponse(SdkResponse):
     }
 
     def __init__(self, success_num=None):
-        """BatchDeleteInstanceIpRuleResponse
+        r"""BatchDeleteInstanceIpRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteInstanceIpRuleResponse(SdkResponse):
 
     @property
     def success_num(self):
-        """Gets the success_num of this BatchDeleteInstanceIpRuleResponse.
+        r"""Gets the success_num of this BatchDeleteInstanceIpRuleResponse.
 
         数量
 
@@ -55,7 +55,7 @@ class BatchDeleteInstanceIpRuleResponse(SdkResponse):
 
     @success_num.setter
     def success_num(self, success_num):
-        """Sets the success_num of this BatchDeleteInstanceIpRuleResponse.
+        r"""Sets the success_num of this BatchDeleteInstanceIpRuleResponse.
 
         数量
 

@@ -25,7 +25,7 @@ class BatchDeleteScreenRecordsRequestBodyScreenRecords:
     }
 
     def __init__(self, id=None):
-        """BatchDeleteScreenRecordsRequestBodyScreenRecords
+        r"""BatchDeleteScreenRecordsRequestBodyScreenRecords
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteScreenRecordsRequestBodyScreenRecords:
 
     @property
     def id(self):
-        """Gets the id of this BatchDeleteScreenRecordsRequestBodyScreenRecords.
+        r"""Gets the id of this BatchDeleteScreenRecordsRequestBodyScreenRecords.
 
         主键UUID。
 
@@ -54,7 +54,7 @@ class BatchDeleteScreenRecordsRequestBodyScreenRecords:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchDeleteScreenRecordsRequestBodyScreenRecords.
+        r"""Sets the id of this BatchDeleteScreenRecordsRequestBodyScreenRecords.
 
         主键UUID。
 

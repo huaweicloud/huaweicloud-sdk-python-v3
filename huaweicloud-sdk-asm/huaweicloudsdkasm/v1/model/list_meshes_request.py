@@ -27,7 +27,7 @@ class ListMeshesRequest:
     }
 
     def __init__(self, content_type=None, x_apply_project_id=None):
-        """ListMeshesRequest
+        r"""ListMeshesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListMeshesRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ListMeshesRequest.
+        r"""Gets the content_type of this ListMeshesRequest.
 
         消息体的类型（格式）
 
@@ -60,7 +60,7 @@ class ListMeshesRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ListMeshesRequest.
+        r"""Sets the content_type of this ListMeshesRequest.
 
         消息体的类型（格式）
 
@@ -71,7 +71,7 @@ class ListMeshesRequest:
 
     @property
     def x_apply_project_id(self):
-        """Gets the x_apply_project_id of this ListMeshesRequest.
+        r"""Gets the x_apply_project_id of this ListMeshesRequest.
 
         网格所属ProjectID
 
@@ -82,7 +82,7 @@ class ListMeshesRequest:
 
     @x_apply_project_id.setter
     def x_apply_project_id(self, x_apply_project_id):
-        """Sets the x_apply_project_id of this ListMeshesRequest.
+        r"""Sets the x_apply_project_id of this ListMeshesRequest.
 
         网格所属ProjectID
 

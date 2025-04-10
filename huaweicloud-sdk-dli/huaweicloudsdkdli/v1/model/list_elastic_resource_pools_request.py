@@ -33,7 +33,7 @@ class ListElasticResourcePoolsRequest:
     }
 
     def __init__(self, limit=None, name=None, offset=None, status=None, tags=None):
-        """ListElasticResourcePoolsRequest
+        r"""ListElasticResourcePoolsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListElasticResourcePoolsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListElasticResourcePoolsRequest.
+        r"""Gets the limit of this ListElasticResourcePoolsRequest.
 
         默认为100
 
@@ -82,7 +82,7 @@ class ListElasticResourcePoolsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListElasticResourcePoolsRequest.
+        r"""Sets the limit of this ListElasticResourcePoolsRequest.
 
         默认为100
 
@@ -93,7 +93,7 @@ class ListElasticResourcePoolsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListElasticResourcePoolsRequest.
+        r"""Gets the name of this ListElasticResourcePoolsRequest.
 
         通过弹性资源池名称进行模糊匹配
 
@@ -104,7 +104,7 @@ class ListElasticResourcePoolsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListElasticResourcePoolsRequest.
+        r"""Sets the name of this ListElasticResourcePoolsRequest.
 
         通过弹性资源池名称进行模糊匹配
 
@@ -115,7 +115,7 @@ class ListElasticResourcePoolsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListElasticResourcePoolsRequest.
+        r"""Gets the offset of this ListElasticResourcePoolsRequest.
 
         默认为0
 
@@ -126,7 +126,7 @@ class ListElasticResourcePoolsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListElasticResourcePoolsRequest.
+        r"""Sets the offset of this ListElasticResourcePoolsRequest.
 
         默认为0
 
@@ -137,7 +137,7 @@ class ListElasticResourcePoolsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListElasticResourcePoolsRequest.
+        r"""Gets the status of this ListElasticResourcePoolsRequest.
 
         弹性资源池状态
 
@@ -148,7 +148,7 @@ class ListElasticResourcePoolsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListElasticResourcePoolsRequest.
+        r"""Sets the status of this ListElasticResourcePoolsRequest.
 
         弹性资源池状态
 
@@ -159,7 +159,7 @@ class ListElasticResourcePoolsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListElasticResourcePoolsRequest.
+        r"""Gets the tags of this ListElasticResourcePoolsRequest.
 
         查询根据标签进行过滤。
 
@@ -170,7 +170,7 @@ class ListElasticResourcePoolsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListElasticResourcePoolsRequest.
+        r"""Sets the tags of this ListElasticResourcePoolsRequest.
 
         查询根据标签进行过滤。
 

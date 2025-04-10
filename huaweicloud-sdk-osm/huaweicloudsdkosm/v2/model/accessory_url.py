@@ -29,7 +29,7 @@ class AccessoryUrl:
     }
 
     def __init__(self, accessory_id=None, accessory_name=None, accessory_url=None):
-        """AccessoryUrl
+        r"""AccessoryUrl
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AccessoryUrl:
 
     @property
     def accessory_id(self):
-        """Gets the accessory_id of this AccessoryUrl.
+        r"""Gets the accessory_id of this AccessoryUrl.
 
         附件id
 
@@ -68,7 +68,7 @@ class AccessoryUrl:
 
     @accessory_id.setter
     def accessory_id(self, accessory_id):
-        """Sets the accessory_id of this AccessoryUrl.
+        r"""Sets the accessory_id of this AccessoryUrl.
 
         附件id
 
@@ -79,7 +79,7 @@ class AccessoryUrl:
 
     @property
     def accessory_name(self):
-        """Gets the accessory_name of this AccessoryUrl.
+        r"""Gets the accessory_name of this AccessoryUrl.
 
         文件名称
 
@@ -90,7 +90,7 @@ class AccessoryUrl:
 
     @accessory_name.setter
     def accessory_name(self, accessory_name):
-        """Sets the accessory_name of this AccessoryUrl.
+        r"""Sets the accessory_name of this AccessoryUrl.
 
         文件名称
 
@@ -101,7 +101,7 @@ class AccessoryUrl:
 
     @property
     def accessory_url(self):
-        """Gets the accessory_url of this AccessoryUrl.
+        r"""Gets the accessory_url of this AccessoryUrl.
 
         附件链接
 
@@ -112,7 +112,7 @@ class AccessoryUrl:
 
     @accessory_url.setter
     def accessory_url(self, accessory_url):
-        """Sets the accessory_url of this AccessoryUrl.
+        r"""Sets the accessory_url of this AccessoryUrl.
 
         附件链接
 

@@ -28,7 +28,7 @@ class CreateSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, security_group=None):
-        """CreateSecurityGroupResponse
+        r"""CreateSecurityGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateSecurityGroupResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateSecurityGroupResponse.
+        r"""Gets the request_id of this CreateSecurityGroupResponse.
 
         请求Id
 
@@ -62,7 +62,7 @@ class CreateSecurityGroupResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateSecurityGroupResponse.
+        r"""Sets the request_id of this CreateSecurityGroupResponse.
 
         请求Id
 
@@ -73,7 +73,7 @@ class CreateSecurityGroupResponse(SdkResponse):
 
     @property
     def security_group(self):
-        """Gets the security_group of this CreateSecurityGroupResponse.
+        r"""Gets the security_group of this CreateSecurityGroupResponse.
 
         :return: The security_group of this CreateSecurityGroupResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.SecurityGroupInfo`
@@ -82,7 +82,7 @@ class CreateSecurityGroupResponse(SdkResponse):
 
     @security_group.setter
     def security_group(self, security_group):
-        """Sets the security_group of this CreateSecurityGroupResponse.
+        r"""Sets the security_group of this CreateSecurityGroupResponse.
 
         :param security_group: The security_group of this CreateSecurityGroupResponse.
         :type security_group: :class:`huaweicloudsdkvpc.v3.SecurityGroupInfo`

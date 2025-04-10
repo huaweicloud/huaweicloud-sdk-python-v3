@@ -31,7 +31,7 @@ class UpdateServiceInstanceInput:
     }
 
     def __init__(self, source=None, name=None, description=None, config=None):
-        """UpdateServiceInstanceInput
+        r"""UpdateServiceInstanceInput
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateServiceInstanceInput:
 
     @property
     def source(self):
-        """Gets the source of this UpdateServiceInstanceInput.
+        r"""Gets the source of this UpdateServiceInstanceInput.
 
         :return: The source of this UpdateServiceInstanceInput.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.SourceRef`
@@ -73,7 +73,7 @@ class UpdateServiceInstanceInput:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this UpdateServiceInstanceInput.
+        r"""Sets the source of this UpdateServiceInstanceInput.
 
         :param source: The source of this UpdateServiceInstanceInput.
         :type source: :class:`huaweicloudsdkdataartsfabricep.v1.SourceRef`
@@ -82,7 +82,7 @@ class UpdateServiceInstanceInput:
 
     @property
     def name(self):
-        """Gets the name of this UpdateServiceInstanceInput.
+        r"""Gets the name of this UpdateServiceInstanceInput.
 
         一个Service Instance的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -93,7 +93,7 @@ class UpdateServiceInstanceInput:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateServiceInstanceInput.
+        r"""Sets the name of this UpdateServiceInstanceInput.
 
         一个Service Instance的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -104,7 +104,7 @@ class UpdateServiceInstanceInput:
 
     @property
     def description(self):
-        """Gets the description of this UpdateServiceInstanceInput.
+        r"""Gets the description of this UpdateServiceInstanceInput.
 
         描述信息
 
@@ -115,7 +115,7 @@ class UpdateServiceInstanceInput:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateServiceInstanceInput.
+        r"""Sets the description of this UpdateServiceInstanceInput.
 
         描述信息
 
@@ -126,7 +126,7 @@ class UpdateServiceInstanceInput:
 
     @property
     def config(self):
-        """Gets the config of this UpdateServiceInstanceInput.
+        r"""Gets the config of this UpdateServiceInstanceInput.
 
         :return: The config of this UpdateServiceInstanceInput.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.UpdateServiceInstanceConfig`
@@ -135,7 +135,7 @@ class UpdateServiceInstanceInput:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this UpdateServiceInstanceInput.
+        r"""Sets the config of this UpdateServiceInstanceInput.
 
         :param config: The config of this UpdateServiceInstanceInput.
         :type config: :class:`huaweicloudsdkdataartsfabricep.v1.UpdateServiceInstanceConfig`

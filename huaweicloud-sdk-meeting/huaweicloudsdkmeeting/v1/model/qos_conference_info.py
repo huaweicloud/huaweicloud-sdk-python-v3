@@ -55,7 +55,7 @@ class QosConferenceInfo:
     }
 
     def __init__(self, conf_uuid=None, conference_id=None, subject=None, scheduser_name=None, dept_name=None, alarm=None, audio_alarm=None, video_alarm=None, screen_alarm=None, cpu_alarm=None, time_zone_id=None, start_time=None, end_time=None, duration=None, participants=None, webinar=None):
-        """QosConferenceInfo
+        r"""QosConferenceInfo
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class QosConferenceInfo:
 
     @property
     def conf_uuid(self):
-        """Gets the conf_uuid of this QosConferenceInfo.
+        r"""Gets the conf_uuid of this QosConferenceInfo.
 
         会议UUID。
 
@@ -159,7 +159,7 @@ class QosConferenceInfo:
 
     @conf_uuid.setter
     def conf_uuid(self, conf_uuid):
-        """Sets the conf_uuid of this QosConferenceInfo.
+        r"""Sets the conf_uuid of this QosConferenceInfo.
 
         会议UUID。
 
@@ -170,7 +170,7 @@ class QosConferenceInfo:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this QosConferenceInfo.
+        r"""Gets the conference_id of this QosConferenceInfo.
 
         会议ID。
 
@@ -181,7 +181,7 @@ class QosConferenceInfo:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this QosConferenceInfo.
+        r"""Sets the conference_id of this QosConferenceInfo.
 
         会议ID。
 
@@ -192,7 +192,7 @@ class QosConferenceInfo:
 
     @property
     def subject(self):
-        """Gets the subject of this QosConferenceInfo.
+        r"""Gets the subject of this QosConferenceInfo.
 
         会议主题。
 
@@ -203,7 +203,7 @@ class QosConferenceInfo:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this QosConferenceInfo.
+        r"""Sets the subject of this QosConferenceInfo.
 
         会议主题。
 
@@ -214,7 +214,7 @@ class QosConferenceInfo:
 
     @property
     def scheduser_name(self):
-        """Gets the scheduser_name of this QosConferenceInfo.
+        r"""Gets the scheduser_name of this QosConferenceInfo.
 
         会议预订者名称。
 
@@ -225,7 +225,7 @@ class QosConferenceInfo:
 
     @scheduser_name.setter
     def scheduser_name(self, scheduser_name):
-        """Sets the scheduser_name of this QosConferenceInfo.
+        r"""Sets the scheduser_name of this QosConferenceInfo.
 
         会议预订者名称。
 
@@ -236,7 +236,7 @@ class QosConferenceInfo:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this QosConferenceInfo.
+        r"""Gets the dept_name of this QosConferenceInfo.
 
         部门名称。
 
@@ -247,7 +247,7 @@ class QosConferenceInfo:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this QosConferenceInfo.
+        r"""Sets the dept_name of this QosConferenceInfo.
 
         部门名称。
 
@@ -258,7 +258,7 @@ class QosConferenceInfo:
 
     @property
     def alarm(self):
-        """Gets the alarm of this QosConferenceInfo.
+        r"""Gets the alarm of this QosConferenceInfo.
 
         总体告警 。 * YES：会议的音频、视频、屏幕共享、CPU任一项产生告警，总体告警就为YES * NO：无告警
 
@@ -269,7 +269,7 @@ class QosConferenceInfo:
 
     @alarm.setter
     def alarm(self, alarm):
-        """Sets the alarm of this QosConferenceInfo.
+        r"""Sets the alarm of this QosConferenceInfo.
 
         总体告警 。 * YES：会议的音频、视频、屏幕共享、CPU任一项产生告警，总体告警就为YES * NO：无告警
 
@@ -280,7 +280,7 @@ class QosConferenceInfo:
 
     @property
     def audio_alarm(self):
-        """Gets the audio_alarm of this QosConferenceInfo.
+        r"""Gets the audio_alarm of this QosConferenceInfo.
 
         音频告警 。 * YES：会议中任一与会者存在音频告警，会议音频告警就为YES * NO：无音频告警
 
@@ -291,7 +291,7 @@ class QosConferenceInfo:
 
     @audio_alarm.setter
     def audio_alarm(self, audio_alarm):
-        """Sets the audio_alarm of this QosConferenceInfo.
+        r"""Sets the audio_alarm of this QosConferenceInfo.
 
         音频告警 。 * YES：会议中任一与会者存在音频告警，会议音频告警就为YES * NO：无音频告警
 
@@ -302,7 +302,7 @@ class QosConferenceInfo:
 
     @property
     def video_alarm(self):
-        """Gets the video_alarm of this QosConferenceInfo.
+        r"""Gets the video_alarm of this QosConferenceInfo.
 
         视频告警。 * YES：会议中任一与会者存在视频告警，会议视频告警就为YES * NO：无音视频警
 
@@ -313,7 +313,7 @@ class QosConferenceInfo:
 
     @video_alarm.setter
     def video_alarm(self, video_alarm):
-        """Sets the video_alarm of this QosConferenceInfo.
+        r"""Sets the video_alarm of this QosConferenceInfo.
 
         视频告警。 * YES：会议中任一与会者存在视频告警，会议视频告警就为YES * NO：无音视频警
 
@@ -324,7 +324,7 @@ class QosConferenceInfo:
 
     @property
     def screen_alarm(self):
-        """Gets the screen_alarm of this QosConferenceInfo.
+        r"""Gets the screen_alarm of this QosConferenceInfo.
 
         屏幕共享告警 YES/NO。 * YES：会议中任一与会者存在屏幕共享告警，会议屏幕共享告警就为YES * NO：无屏幕共享告警
 
@@ -335,7 +335,7 @@ class QosConferenceInfo:
 
     @screen_alarm.setter
     def screen_alarm(self, screen_alarm):
-        """Sets the screen_alarm of this QosConferenceInfo.
+        r"""Sets the screen_alarm of this QosConferenceInfo.
 
         屏幕共享告警 YES/NO。 * YES：会议中任一与会者存在屏幕共享告警，会议屏幕共享告警就为YES * NO：无屏幕共享告警
 
@@ -346,7 +346,7 @@ class QosConferenceInfo:
 
     @property
     def cpu_alarm(self):
-        """Gets the cpu_alarm of this QosConferenceInfo.
+        r"""Gets the cpu_alarm of this QosConferenceInfo.
 
         CPU告警。 * YES：会议中任一与会者存在CPU告警，会议CPU告警就为YES * NO：无CPU告警
 
@@ -357,7 +357,7 @@ class QosConferenceInfo:
 
     @cpu_alarm.setter
     def cpu_alarm(self, cpu_alarm):
-        """Sets the cpu_alarm of this QosConferenceInfo.
+        r"""Sets the cpu_alarm of this QosConferenceInfo.
 
         CPU告警。 * YES：会议中任一与会者存在CPU告警，会议CPU告警就为YES * NO：无CPU告警
 
@@ -368,7 +368,7 @@ class QosConferenceInfo:
 
     @property
     def time_zone_id(self):
-        """Gets the time_zone_id of this QosConferenceInfo.
+        r"""Gets the time_zone_id of this QosConferenceInfo.
 
         时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
@@ -379,7 +379,7 @@ class QosConferenceInfo:
 
     @time_zone_id.setter
     def time_zone_id(self, time_zone_id):
-        """Sets the time_zone_id of this QosConferenceInfo.
+        r"""Sets the time_zone_id of this QosConferenceInfo.
 
         时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
@@ -390,7 +390,7 @@ class QosConferenceInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this QosConferenceInfo.
+        r"""Gets the start_time of this QosConferenceInfo.
 
         会议开始时间(UTC时间), Unix时间戳（单位毫秒）。
 
@@ -401,7 +401,7 @@ class QosConferenceInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this QosConferenceInfo.
+        r"""Sets the start_time of this QosConferenceInfo.
 
         会议开始时间(UTC时间), Unix时间戳（单位毫秒）。
 
@@ -412,7 +412,7 @@ class QosConferenceInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this QosConferenceInfo.
+        r"""Gets the end_time of this QosConferenceInfo.
 
         会议结束时间(UTC时间), Unix时间戳（单位毫秒）。 > * 在线会议：会议召开中，endTime = 会议预计结束时间 > * 历史会议：会议已结束，endTime = 会议实际结束时间
 
@@ -423,7 +423,7 @@ class QosConferenceInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this QosConferenceInfo.
+        r"""Sets the end_time of this QosConferenceInfo.
 
         会议结束时间(UTC时间), Unix时间戳（单位毫秒）。 > * 在线会议：会议召开中，endTime = 会议预计结束时间 > * 历史会议：会议已结束，endTime = 会议实际结束时间
 
@@ -434,7 +434,7 @@ class QosConferenceInfo:
 
     @property
     def duration(self):
-        """Gets the duration of this QosConferenceInfo.
+        r"""Gets the duration of this QosConferenceInfo.
 
         会议召开时长（分钟）。 > * 在线会议：会议召开中，duration = 0 > * 历史会议：会议已结束，duration = 会议实际召开时间
 
@@ -445,7 +445,7 @@ class QosConferenceInfo:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this QosConferenceInfo.
+        r"""Sets the duration of this QosConferenceInfo.
 
         会议召开时长（分钟）。 > * 在线会议：会议召开中，duration = 0 > * 历史会议：会议已结束，duration = 会议实际召开时间
 
@@ -456,7 +456,7 @@ class QosConferenceInfo:
 
     @property
     def participants(self):
-        """Gets the participants of this QosConferenceInfo.
+        r"""Gets the participants of this QosConferenceInfo.
 
         与会方数。 > 同一用户多次进出会议属于不同的与会方，与会方数计算多次。
 
@@ -467,7 +467,7 @@ class QosConferenceInfo:
 
     @participants.setter
     def participants(self, participants):
-        """Sets the participants of this QosConferenceInfo.
+        r"""Sets the participants of this QosConferenceInfo.
 
         与会方数。 > 同一用户多次进出会议属于不同的与会方，与会方数计算多次。
 
@@ -478,7 +478,7 @@ class QosConferenceInfo:
 
     @property
     def webinar(self):
-        """Gets the webinar of this QosConferenceInfo.
+        r"""Gets the webinar of this QosConferenceInfo.
 
         是否网络研讨会。
 
@@ -489,7 +489,7 @@ class QosConferenceInfo:
 
     @webinar.setter
     def webinar(self, webinar):
-        """Sets the webinar of this QosConferenceInfo.
+        r"""Sets the webinar of this QosConferenceInfo.
 
         是否网络研讨会。
 

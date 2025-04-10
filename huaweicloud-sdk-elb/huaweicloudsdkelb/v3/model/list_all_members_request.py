@@ -53,7 +53,7 @@ class ListAllMembersRequest:
     }
 
     def __init__(self, marker=None, limit=None, page_reverse=None, name=None, weight=None, admin_state_up=None, subnet_cidr_id=None, address=None, protocol_port=None, id=None, operating_status=None, enterprise_project_id=None, ip_version=None, pool_id=None, loadbalancer_id=None):
-        """ListAllMembersRequest
+        r"""ListAllMembersRequest
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ListAllMembersRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAllMembersRequest.
+        r"""Gets the marker of this ListAllMembersRequest.
 
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -152,7 +152,7 @@ class ListAllMembersRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAllMembersRequest.
+        r"""Sets the marker of this ListAllMembersRequest.
 
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -163,7 +163,7 @@ class ListAllMembersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAllMembersRequest.
+        r"""Gets the limit of this ListAllMembersRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -174,7 +174,7 @@ class ListAllMembersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAllMembersRequest.
+        r"""Sets the limit of this ListAllMembersRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -185,7 +185,7 @@ class ListAllMembersRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListAllMembersRequest.
+        r"""Gets the page_reverse of this ListAllMembersRequest.
 
         是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
@@ -196,7 +196,7 @@ class ListAllMembersRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListAllMembersRequest.
+        r"""Sets the page_reverse of this ListAllMembersRequest.
 
         是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
@@ -207,7 +207,7 @@ class ListAllMembersRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAllMembersRequest.
+        r"""Gets the name of this ListAllMembersRequest.
 
         后端服务器名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
@@ -218,7 +218,7 @@ class ListAllMembersRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAllMembersRequest.
+        r"""Sets the name of this ListAllMembersRequest.
 
         后端服务器名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
@@ -229,7 +229,7 @@ class ListAllMembersRequest:
 
     @property
     def weight(self):
-        """Gets the weight of this ListAllMembersRequest.
+        r"""Gets the weight of this ListAllMembersRequest.
 
         后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。 权重为0的后端不再接受新的请求。 当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。  支持多值查询，查询条件格式：*weight=xxx&weight=xxx*。
 
@@ -240,7 +240,7 @@ class ListAllMembersRequest:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this ListAllMembersRequest.
+        r"""Sets the weight of this ListAllMembersRequest.
 
         后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。 权重为0的后端不再接受新的请求。 当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。  支持多值查询，查询条件格式：*weight=xxx&weight=xxx*。
 
@@ -251,7 +251,7 @@ class ListAllMembersRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListAllMembersRequest.
+        r"""Gets the admin_state_up of this ListAllMembersRequest.
 
         后端服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。 若存在，该值为true，否则，该值为false。
 
@@ -262,7 +262,7 @@ class ListAllMembersRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListAllMembersRequest.
+        r"""Sets the admin_state_up of this ListAllMembersRequest.
 
         后端服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。 若存在，该值为true，否则，该值为false。
 
@@ -273,7 +273,7 @@ class ListAllMembersRequest:
 
     @property
     def subnet_cidr_id(self):
-        """Gets the subnet_cidr_id of this ListAllMembersRequest.
+        r"""Gets the subnet_cidr_id of this ListAllMembersRequest.
 
         后端服务器所在的子网ID。该子网和后端服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。
 
@@ -284,7 +284,7 @@ class ListAllMembersRequest:
 
     @subnet_cidr_id.setter
     def subnet_cidr_id(self, subnet_cidr_id):
-        """Sets the subnet_cidr_id of this ListAllMembersRequest.
+        r"""Sets the subnet_cidr_id of this ListAllMembersRequest.
 
         后端服务器所在的子网ID。该子网和后端服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。
 
@@ -295,7 +295,7 @@ class ListAllMembersRequest:
 
     @property
     def address(self):
-        """Gets the address of this ListAllMembersRequest.
+        r"""Gets the address of this ListAllMembersRequest.
 
         后端服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。 例如：192.168.3.11。  支持多值查询，查询条件格式：*address=xxx&address=xxx*。
 
@@ -306,7 +306,7 @@ class ListAllMembersRequest:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ListAllMembersRequest.
+        r"""Sets the address of this ListAllMembersRequest.
 
         后端服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。 例如：192.168.3.11。  支持多值查询，查询条件格式：*address=xxx&address=xxx*。
 
@@ -317,7 +317,7 @@ class ListAllMembersRequest:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this ListAllMembersRequest.
+        r"""Gets the protocol_port of this ListAllMembersRequest.
 
         后端服务器端口号。  支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。
 
@@ -328,7 +328,7 @@ class ListAllMembersRequest:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this ListAllMembersRequest.
+        r"""Sets the protocol_port of this ListAllMembersRequest.
 
         后端服务器端口号。  支持多值查询，查询条件格式：*protocol_port=xxx&protocol_port=xxx*。
 
@@ -339,7 +339,7 @@ class ListAllMembersRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListAllMembersRequest.
+        r"""Gets the id of this ListAllMembersRequest.
 
         后端服务器ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
@@ -350,7 +350,7 @@ class ListAllMembersRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListAllMembersRequest.
+        r"""Sets the id of this ListAllMembersRequest.
 
         后端服务器ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
@@ -361,7 +361,7 @@ class ListAllMembersRequest:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this ListAllMembersRequest.
+        r"""Gets the operating_status of this ListAllMembersRequest.
 
         后端服务器的健康状态。  取值： - ONLINE，后端服务器正常运行。 - NO_MONITOR，后端服务器无健康检查。 - OFFLINE，已下线。  支持多值查询，查询条件格式：*operating_status=xxx&operating_status=*。
 
@@ -372,7 +372,7 @@ class ListAllMembersRequest:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this ListAllMembersRequest.
+        r"""Sets the operating_status of this ListAllMembersRequest.
 
         后端服务器的健康状态。  取值： - ONLINE，后端服务器正常运行。 - NO_MONITOR，后端服务器无健康检查。 - OFFLINE，已下线。  支持多值查询，查询条件格式：*operating_status=xxx&operating_status=*。
 
@@ -383,7 +383,7 @@ class ListAllMembersRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAllMembersRequest.
+        r"""Gets the enterprise_project_id of this ListAllMembersRequest.
 
         参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:members:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -394,7 +394,7 @@ class ListAllMembersRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAllMembersRequest.
+        r"""Sets the enterprise_project_id of this ListAllMembersRequest.
 
         参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:members:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -405,7 +405,7 @@ class ListAllMembersRequest:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this ListAllMembersRequest.
+        r"""Gets the ip_version of this ListAllMembersRequest.
 
         IP版本，取值v4、v6。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
 
@@ -416,7 +416,7 @@ class ListAllMembersRequest:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this ListAllMembersRequest.
+        r"""Sets the ip_version of this ListAllMembersRequest.
 
         IP版本，取值v4、v6。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
 
@@ -427,7 +427,7 @@ class ListAllMembersRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ListAllMembersRequest.
+        r"""Gets the pool_id of this ListAllMembersRequest.
 
         member所属的服务器组ID  支持多值查询，查询条件格式：*pool_id=xxx&pool_id=xxx*。
 
@@ -438,7 +438,7 @@ class ListAllMembersRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ListAllMembersRequest.
+        r"""Sets the pool_id of this ListAllMembersRequest.
 
         member所属的服务器组ID  支持多值查询，查询条件格式：*pool_id=xxx&pool_id=xxx*。
 
@@ -449,7 +449,7 @@ class ListAllMembersRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this ListAllMembersRequest.
+        r"""Gets the loadbalancer_id of this ListAllMembersRequest.
 
         member所属的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id=xxx&loadbalancer_id=xxx*。
 
@@ -460,7 +460,7 @@ class ListAllMembersRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this ListAllMembersRequest.
+        r"""Sets the loadbalancer_id of this ListAllMembersRequest.
 
         member所属的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id=xxx&loadbalancer_id=xxx*。
 

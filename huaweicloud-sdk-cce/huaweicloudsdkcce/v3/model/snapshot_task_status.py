@@ -25,7 +25,7 @@ class SnapshotTaskStatus:
     }
 
     def __init__(self, latest_backup_time=None):
-        """SnapshotTaskStatus
+        r"""SnapshotTaskStatus
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SnapshotTaskStatus:
 
     @property
     def latest_backup_time(self):
-        """Gets the latest_backup_time of this SnapshotTaskStatus.
+        r"""Gets the latest_backup_time of this SnapshotTaskStatus.
 
         最近一次备份的时间
 
@@ -54,7 +54,7 @@ class SnapshotTaskStatus:
 
     @latest_backup_time.setter
     def latest_backup_time(self, latest_backup_time):
-        """Sets the latest_backup_time of this SnapshotTaskStatus.
+        r"""Sets the latest_backup_time of this SnapshotTaskStatus.
 
         最近一次备份的时间
 

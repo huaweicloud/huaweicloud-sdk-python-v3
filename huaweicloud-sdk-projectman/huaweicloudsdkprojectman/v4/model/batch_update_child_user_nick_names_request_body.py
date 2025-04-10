@@ -25,7 +25,7 @@ class BatchUpdateChildUserNickNamesRequestBody:
     }
 
     def __init__(self, users=None):
-        """BatchUpdateChildUserNickNamesRequestBody
+        r"""BatchUpdateChildUserNickNamesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchUpdateChildUserNickNamesRequestBody:
 
     @property
     def users(self):
-        """Gets the users of this BatchUpdateChildUserNickNamesRequestBody.
+        r"""Gets the users of this BatchUpdateChildUserNickNamesRequestBody.
 
         修改的用户列表
 
@@ -53,7 +53,7 @@ class BatchUpdateChildUserNickNamesRequestBody:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this BatchUpdateChildUserNickNamesRequestBody.
+        r"""Sets the users of this BatchUpdateChildUserNickNamesRequestBody.
 
         修改的用户列表
 

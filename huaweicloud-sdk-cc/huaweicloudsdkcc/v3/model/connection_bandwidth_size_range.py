@@ -27,7 +27,7 @@ class ConnectionBandwidthSizeRange:
     }
 
     def __init__(self, min=None, max=None):
-        """ConnectionBandwidthSizeRange
+        r"""ConnectionBandwidthSizeRange
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ConnectionBandwidthSizeRange:
 
     @property
     def min(self):
-        """Gets the min of this ConnectionBandwidthSizeRange.
+        r"""Gets the min of this ConnectionBandwidthSizeRange.
 
         最小值
 
@@ -59,7 +59,7 @@ class ConnectionBandwidthSizeRange:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this ConnectionBandwidthSizeRange.
+        r"""Sets the min of this ConnectionBandwidthSizeRange.
 
         最小值
 
@@ -70,7 +70,7 @@ class ConnectionBandwidthSizeRange:
 
     @property
     def max(self):
-        """Gets the max of this ConnectionBandwidthSizeRange.
+        r"""Gets the max of this ConnectionBandwidthSizeRange.
 
         最大值
 
@@ -81,7 +81,7 @@ class ConnectionBandwidthSizeRange:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this ConnectionBandwidthSizeRange.
+        r"""Sets the max of this ConnectionBandwidthSizeRange.
 
         最大值
 

@@ -39,7 +39,7 @@ class AIMTemplateReport:
     }
 
     def __init__(self, tpl_id=None, start_time=None, resolving_times=None, end_time=None, expose_uv=None, expose_pv=None, click_uv=None, click_pv=None):
-        """AIMTemplateReport
+        r"""AIMTemplateReport
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class AIMTemplateReport:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this AIMTemplateReport.
+        r"""Gets the tpl_id of this AIMTemplateReport.
 
         智能信息模板ID。
 
@@ -103,7 +103,7 @@ class AIMTemplateReport:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this AIMTemplateReport.
+        r"""Sets the tpl_id of this AIMTemplateReport.
 
         智能信息模板ID。
 
@@ -114,7 +114,7 @@ class AIMTemplateReport:
 
     @property
     def start_time(self):
-        """Gets the start_time of this AIMTemplateReport.
+        r"""Gets the start_time of this AIMTemplateReport.
 
         统计开始时间。样例为：1970-01-01T00:00:00Z。
 
@@ -125,7 +125,7 @@ class AIMTemplateReport:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this AIMTemplateReport.
+        r"""Sets the start_time of this AIMTemplateReport.
 
         统计开始时间。样例为：1970-01-01T00:00:00Z。
 
@@ -136,7 +136,7 @@ class AIMTemplateReport:
 
     @property
     def resolving_times(self):
-        """Gets the resolving_times of this AIMTemplateReport.
+        r"""Gets the resolving_times of this AIMTemplateReport.
 
         实际已解析数。
 
@@ -147,7 +147,7 @@ class AIMTemplateReport:
 
     @resolving_times.setter
     def resolving_times(self, resolving_times):
-        """Sets the resolving_times of this AIMTemplateReport.
+        r"""Sets the resolving_times of this AIMTemplateReport.
 
         实际已解析数。
 
@@ -158,7 +158,7 @@ class AIMTemplateReport:
 
     @property
     def end_time(self):
-        """Gets the end_time of this AIMTemplateReport.
+        r"""Gets the end_time of this AIMTemplateReport.
 
         统计结束时间。样例为：1970-01-01T00:00:00Z。
 
@@ -169,7 +169,7 @@ class AIMTemplateReport:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this AIMTemplateReport.
+        r"""Sets the end_time of this AIMTemplateReport.
 
         统计结束时间。样例为：1970-01-01T00:00:00Z。
 
@@ -180,7 +180,7 @@ class AIMTemplateReport:
 
     @property
     def expose_uv(self):
-        """Gets the expose_uv of this AIMTemplateReport.
+        r"""Gets the expose_uv of this AIMTemplateReport.
 
         消息曝光数。 
 
@@ -191,7 +191,7 @@ class AIMTemplateReport:
 
     @expose_uv.setter
     def expose_uv(self, expose_uv):
-        """Sets the expose_uv of this AIMTemplateReport.
+        r"""Sets the expose_uv of this AIMTemplateReport.
 
         消息曝光数。 
 
@@ -202,7 +202,7 @@ class AIMTemplateReport:
 
     @property
     def expose_pv(self):
-        """Gets the expose_pv of this AIMTemplateReport.
+        r"""Gets the expose_pv of this AIMTemplateReport.
 
         消息曝光次数。 
 
@@ -213,7 +213,7 @@ class AIMTemplateReport:
 
     @expose_pv.setter
     def expose_pv(self, expose_pv):
-        """Sets the expose_pv of this AIMTemplateReport.
+        r"""Sets the expose_pv of this AIMTemplateReport.
 
         消息曝光次数。 
 
@@ -224,7 +224,7 @@ class AIMTemplateReport:
 
     @property
     def click_uv(self):
-        """Gets the click_uv of this AIMTemplateReport.
+        r"""Gets the click_uv of this AIMTemplateReport.
 
         消息点击数。 
 
@@ -235,7 +235,7 @@ class AIMTemplateReport:
 
     @click_uv.setter
     def click_uv(self, click_uv):
-        """Sets the click_uv of this AIMTemplateReport.
+        r"""Sets the click_uv of this AIMTemplateReport.
 
         消息点击数。 
 
@@ -246,7 +246,7 @@ class AIMTemplateReport:
 
     @property
     def click_pv(self):
-        """Gets the click_pv of this AIMTemplateReport.
+        r"""Gets the click_pv of this AIMTemplateReport.
 
         消息点击次数。 
 
@@ -257,7 +257,7 @@ class AIMTemplateReport:
 
     @click_pv.setter
     def click_pv(self, click_pv):
-        """Sets the click_pv of this AIMTemplateReport.
+        r"""Sets the click_pv of this AIMTemplateReport.
 
         消息点击次数。 
 

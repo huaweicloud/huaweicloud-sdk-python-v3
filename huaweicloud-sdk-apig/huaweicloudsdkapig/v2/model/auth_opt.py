@@ -25,7 +25,7 @@ class AuthOpt:
     }
 
     def __init__(self, app_code_auth_type=None):
-        """AuthOpt
+        r"""AuthOpt
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AuthOpt:
 
     @property
     def app_code_auth_type(self):
-        """Gets the app_code_auth_type of this AuthOpt.
+        r"""Gets the app_code_auth_type of this AuthOpt.
 
         AppCode简易认证类型，仅在auth_type为APP时生效，默认为DISABLE： - DISABLE：不开启简易认证 - HEADER：开启简易认证且AppCode位置在HEADER
 
@@ -54,7 +54,7 @@ class AuthOpt:
 
     @app_code_auth_type.setter
     def app_code_auth_type(self, app_code_auth_type):
-        """Sets the app_code_auth_type of this AuthOpt.
+        r"""Sets the app_code_auth_type of this AuthOpt.
 
         AppCode简易认证类型，仅在auth_type为APP时生效，默认为DISABLE： - DISABLE：不开启简易认证 - HEADER：开启简易认证且AppCode位置在HEADER
 

@@ -25,7 +25,7 @@ class RunSemanticParserRequest:
     }
 
     def __init__(self, body=None):
-        """RunSemanticParserRequest
+        r"""RunSemanticParserRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunSemanticParserRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunSemanticParserRequest.
+        r"""Gets the body of this RunSemanticParserRequest.
 
         :return: The body of this RunSemanticParserRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.IntentReq`
@@ -52,7 +52,7 @@ class RunSemanticParserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunSemanticParserRequest.
+        r"""Sets the body of this RunSemanticParserRequest.
 
         :param body: The body of this RunSemanticParserRequest.
         :type body: :class:`huaweicloudsdknlp.v2.IntentReq`

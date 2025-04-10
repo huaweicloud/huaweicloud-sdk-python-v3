@@ -25,7 +25,7 @@ class ResourceID:
     }
 
     def __init__(self, id=None):
-        """ResourceID
+        r"""ResourceID
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResourceID:
 
     @property
     def id(self):
-        """Gets the id of this ResourceID.
+        r"""Gets the id of this ResourceID.
 
         资源ID
 
@@ -53,7 +53,7 @@ class ResourceID:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResourceID.
+        r"""Sets the id of this ResourceID.
 
         资源ID
 

@@ -31,7 +31,7 @@ class ShowRelationByIdRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, id=None, latest=None):
-        """ShowRelationByIdRequest
+        r"""ShowRelationByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowRelationByIdRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowRelationByIdRequest.
+        r"""Gets the workspace of this ShowRelationByIdRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -73,7 +73,7 @@ class ShowRelationByIdRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowRelationByIdRequest.
+        r"""Sets the workspace of this ShowRelationByIdRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -84,7 +84,7 @@ class ShowRelationByIdRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ShowRelationByIdRequest.
+        r"""Gets the x_project_id of this ShowRelationByIdRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -95,7 +95,7 @@ class ShowRelationByIdRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ShowRelationByIdRequest.
+        r"""Sets the x_project_id of this ShowRelationByIdRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -106,7 +106,7 @@ class ShowRelationByIdRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowRelationByIdRequest.
+        r"""Gets the id of this ShowRelationByIdRequest.
 
         实体ID，ID字符串。
 
@@ -117,7 +117,7 @@ class ShowRelationByIdRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowRelationByIdRequest.
+        r"""Sets the id of this ShowRelationByIdRequest.
 
         实体ID，ID字符串。
 
@@ -128,7 +128,7 @@ class ShowRelationByIdRequest:
 
     @property
     def latest(self):
-        """Gets the latest of this ShowRelationByIdRequest.
+        r"""Gets the latest of this ShowRelationByIdRequest.
 
         是否查询最新的。
 
@@ -139,7 +139,7 @@ class ShowRelationByIdRequest:
 
     @latest.setter
     def latest(self, latest):
-        """Sets the latest of this ShowRelationByIdRequest.
+        r"""Sets the latest of this ShowRelationByIdRequest.
 
         是否查询最新的。
 

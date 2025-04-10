@@ -37,7 +37,7 @@ class ListSubnetBandwidthsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, offset=None, limit=None, vpc_id=None, subnet_id=None, bandwidth_id=None, bandwidth_name=None):
-        """ListSubnetBandwidthsRequest
+        r"""ListSubnetBandwidthsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListSubnetBandwidthsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListSubnetBandwidthsRequest.
+        r"""Gets the enterprise_project_id of this ListSubnetBandwidthsRequest.
 
         企业项目ID。
 
@@ -96,7 +96,7 @@ class ListSubnetBandwidthsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListSubnetBandwidthsRequest.
+        r"""Sets the enterprise_project_id of this ListSubnetBandwidthsRequest.
 
         企业项目ID。
 
@@ -107,7 +107,7 @@ class ListSubnetBandwidthsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSubnetBandwidthsRequest.
+        r"""Gets the offset of this ListSubnetBandwidthsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -118,7 +118,7 @@ class ListSubnetBandwidthsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSubnetBandwidthsRequest.
+        r"""Sets the offset of this ListSubnetBandwidthsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -129,7 +129,7 @@ class ListSubnetBandwidthsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSubnetBandwidthsRequest.
+        r"""Gets the limit of this ListSubnetBandwidthsRequest.
 
         用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的记录。
 
@@ -140,7 +140,7 @@ class ListSubnetBandwidthsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSubnetBandwidthsRequest.
+        r"""Sets the limit of this ListSubnetBandwidthsRequest.
 
         用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的记录。
 
@@ -151,7 +151,7 @@ class ListSubnetBandwidthsRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListSubnetBandwidthsRequest.
+        r"""Gets the vpc_id of this ListSubnetBandwidthsRequest.
 
         vpc id。
 
@@ -162,7 +162,7 @@ class ListSubnetBandwidthsRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListSubnetBandwidthsRequest.
+        r"""Sets the vpc_id of this ListSubnetBandwidthsRequest.
 
         vpc id。
 
@@ -173,7 +173,7 @@ class ListSubnetBandwidthsRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListSubnetBandwidthsRequest.
+        r"""Gets the subnet_id of this ListSubnetBandwidthsRequest.
 
         子网id。
 
@@ -184,7 +184,7 @@ class ListSubnetBandwidthsRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListSubnetBandwidthsRequest.
+        r"""Sets the subnet_id of this ListSubnetBandwidthsRequest.
 
         子网id。
 
@@ -195,7 +195,7 @@ class ListSubnetBandwidthsRequest:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this ListSubnetBandwidthsRequest.
+        r"""Gets the bandwidth_id of this ListSubnetBandwidthsRequest.
 
         云办公带宽id。
 
@@ -206,7 +206,7 @@ class ListSubnetBandwidthsRequest:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this ListSubnetBandwidthsRequest.
+        r"""Sets the bandwidth_id of this ListSubnetBandwidthsRequest.
 
         云办公带宽id。
 
@@ -217,7 +217,7 @@ class ListSubnetBandwidthsRequest:
 
     @property
     def bandwidth_name(self):
-        """Gets the bandwidth_name of this ListSubnetBandwidthsRequest.
+        r"""Gets the bandwidth_name of this ListSubnetBandwidthsRequest.
 
         云办公带宽名称。
 
@@ -228,7 +228,7 @@ class ListSubnetBandwidthsRequest:
 
     @bandwidth_name.setter
     def bandwidth_name(self, bandwidth_name):
-        """Sets the bandwidth_name of this ListSubnetBandwidthsRequest.
+        r"""Sets the bandwidth_name of this ListSubnetBandwidthsRequest.
 
         云办公带宽名称。
 

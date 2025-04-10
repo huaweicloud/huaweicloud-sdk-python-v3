@@ -25,7 +25,7 @@ class CreateDatasourceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDatasourceRequest
+        r"""CreateDatasourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDatasourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDatasourceRequest.
+        r"""Gets the body of this CreateDatasourceRequest.
 
         :return: The body of this CreateDatasourceRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateDatasourceReqDTO`
@@ -52,7 +52,7 @@ class CreateDatasourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDatasourceRequest.
+        r"""Sets the body of this CreateDatasourceRequest.
 
         :param body: The body of this CreateDatasourceRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.CreateDatasourceReqDTO`

@@ -24,7 +24,7 @@ class UpdateKvResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateKvResponse
+        r"""UpdateKvResponse
 
         The model defined in huaweicloud sdk
 

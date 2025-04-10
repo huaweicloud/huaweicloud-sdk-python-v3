@@ -27,7 +27,7 @@ class Nameserver:
     }
 
     def __init__(self, hostname=None, priority=None):
-        """Nameserver
+        r"""Nameserver
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Nameserver:
 
     @property
     def hostname(self):
-        """Gets the hostname of this Nameserver.
+        r"""Gets the hostname of this Nameserver.
 
         主机名。
 
@@ -61,7 +61,7 @@ class Nameserver:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this Nameserver.
+        r"""Sets the hostname of this Nameserver.
 
         主机名。
 
@@ -72,7 +72,7 @@ class Nameserver:
 
     @property
     def priority(self):
-        """Gets the priority of this Nameserver.
+        r"""Gets the priority of this Nameserver.
 
         优先级。
 
@@ -83,7 +83,7 @@ class Nameserver:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this Nameserver.
+        r"""Sets the priority of this Nameserver.
 
         优先级。
 

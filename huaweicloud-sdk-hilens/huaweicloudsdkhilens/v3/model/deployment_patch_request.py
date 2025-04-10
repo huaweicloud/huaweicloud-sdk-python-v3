@@ -27,7 +27,7 @@ class DeploymentPatchRequest:
     }
 
     def __init__(self, version=None, patch=None):
-        """DeploymentPatchRequest
+        r"""DeploymentPatchRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeploymentPatchRequest:
 
     @property
     def version(self):
-        """Gets the version of this DeploymentPatchRequest.
+        r"""Gets the version of this DeploymentPatchRequest.
 
         技能版本，可选，当下发的技能版本和当前部署的版本不一致的时候，根据技能模板参数更新部署
 
@@ -61,7 +61,7 @@ class DeploymentPatchRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DeploymentPatchRequest.
+        r"""Sets the version of this DeploymentPatchRequest.
 
         技能版本，可选，当下发的技能版本和当前部署的版本不一致的时候，根据技能模板参数更新部署
 
@@ -72,7 +72,7 @@ class DeploymentPatchRequest:
 
     @property
     def patch(self):
-        """Gets the patch of this DeploymentPatchRequest.
+        r"""Gets the patch of this DeploymentPatchRequest.
 
         :return: The patch of this DeploymentPatchRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.Patch`
@@ -81,7 +81,7 @@ class DeploymentPatchRequest:
 
     @patch.setter
     def patch(self, patch):
-        """Sets the patch of this DeploymentPatchRequest.
+        r"""Sets the patch of this DeploymentPatchRequest.
 
         :param patch: The patch of this DeploymentPatchRequest.
         :type patch: :class:`huaweicloudsdkhilens.v3.Patch`

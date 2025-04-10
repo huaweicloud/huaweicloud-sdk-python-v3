@@ -31,7 +31,7 @@ class BatchListDcDsRequest:
     }
 
     def __init__(self, edge_node_id=None, module_id=None, offset=None, limit=None):
-        """BatchListDcDsRequest
+        r"""BatchListDcDsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class BatchListDcDsRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this BatchListDcDsRequest.
+        r"""Gets the edge_node_id of this BatchListDcDsRequest.
 
         边缘节点ID
 
@@ -74,7 +74,7 @@ class BatchListDcDsRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this BatchListDcDsRequest.
+        r"""Sets the edge_node_id of this BatchListDcDsRequest.
 
         边缘节点ID
 
@@ -85,7 +85,7 @@ class BatchListDcDsRequest:
 
     @property
     def module_id(self):
-        """Gets the module_id of this BatchListDcDsRequest.
+        r"""Gets the module_id of this BatchListDcDsRequest.
 
         数据源所属的模块id
 
@@ -96,7 +96,7 @@ class BatchListDcDsRequest:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this BatchListDcDsRequest.
+        r"""Sets the module_id of this BatchListDcDsRequest.
 
         数据源所属的模块id
 
@@ -107,7 +107,7 @@ class BatchListDcDsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchListDcDsRequest.
+        r"""Gets the offset of this BatchListDcDsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -118,7 +118,7 @@ class BatchListDcDsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchListDcDsRequest.
+        r"""Sets the offset of this BatchListDcDsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -129,7 +129,7 @@ class BatchListDcDsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchListDcDsRequest.
+        r"""Gets the limit of this BatchListDcDsRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 
@@ -140,7 +140,7 @@ class BatchListDcDsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchListDcDsRequest.
+        r"""Sets the limit of this BatchListDcDsRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 

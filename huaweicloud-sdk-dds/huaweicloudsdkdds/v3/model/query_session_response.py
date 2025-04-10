@@ -43,7 +43,7 @@ class QuerySessionResponse:
     }
 
     def __init__(self, id=None, active=None, operation=None, type=None, cost_time=None, plan_summary=None, host=None, client=None, description=None, namespace=None):
-        """QuerySessionResponse
+        r"""QuerySessionResponse
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class QuerySessionResponse:
 
     @property
     def id(self):
-        """Gets the id of this QuerySessionResponse.
+        r"""Gets the id of this QuerySessionResponse.
 
         会话ID。
 
@@ -107,7 +107,7 @@ class QuerySessionResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QuerySessionResponse.
+        r"""Sets the id of this QuerySessionResponse.
 
         会话ID。
 
@@ -118,7 +118,7 @@ class QuerySessionResponse:
 
     @property
     def active(self):
-        """Gets the active of this QuerySessionResponse.
+        r"""Gets the active of this QuerySessionResponse.
 
         当前会话是否活跃。 取值为“true”，表示活跃。 取值为“false”，表示不活跃。
 
@@ -129,7 +129,7 @@ class QuerySessionResponse:
 
     @active.setter
     def active(self, active):
-        """Sets the active of this QuerySessionResponse.
+        r"""Sets the active of this QuerySessionResponse.
 
         当前会话是否活跃。 取值为“true”，表示活跃。 取值为“false”，表示不活跃。
 
@@ -140,7 +140,7 @@ class QuerySessionResponse:
 
     @property
     def operation(self):
-        """Gets the operation of this QuerySessionResponse.
+        r"""Gets the operation of this QuerySessionResponse.
 
         操作。
 
@@ -151,7 +151,7 @@ class QuerySessionResponse:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this QuerySessionResponse.
+        r"""Sets the operation of this QuerySessionResponse.
 
         操作。
 
@@ -162,7 +162,7 @@ class QuerySessionResponse:
 
     @property
     def type(self):
-        """Gets the type of this QuerySessionResponse.
+        r"""Gets the type of this QuerySessionResponse.
 
         操作类型。
 
@@ -173,7 +173,7 @@ class QuerySessionResponse:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuerySessionResponse.
+        r"""Sets the type of this QuerySessionResponse.
 
         操作类型。
 
@@ -184,7 +184,7 @@ class QuerySessionResponse:
 
     @property
     def cost_time(self):
-        """Gets the cost_time of this QuerySessionResponse.
+        r"""Gets the cost_time of this QuerySessionResponse.
 
         运行时间，单位为 us。
 
@@ -195,7 +195,7 @@ class QuerySessionResponse:
 
     @cost_time.setter
     def cost_time(self, cost_time):
-        """Sets the cost_time of this QuerySessionResponse.
+        r"""Sets the cost_time of this QuerySessionResponse.
 
         运行时间，单位为 us。
 
@@ -206,7 +206,7 @@ class QuerySessionResponse:
 
     @property
     def plan_summary(self):
-        """Gets the plan_summary of this QuerySessionResponse.
+        r"""Gets the plan_summary of this QuerySessionResponse.
 
         执行计划描述。
 
@@ -217,7 +217,7 @@ class QuerySessionResponse:
 
     @plan_summary.setter
     def plan_summary(self, plan_summary):
-        """Sets the plan_summary of this QuerySessionResponse.
+        r"""Sets the plan_summary of this QuerySessionResponse.
 
         执行计划描述。
 
@@ -228,7 +228,7 @@ class QuerySessionResponse:
 
     @property
     def host(self):
-        """Gets the host of this QuerySessionResponse.
+        r"""Gets the host of this QuerySessionResponse.
 
         主机。
 
@@ -239,7 +239,7 @@ class QuerySessionResponse:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this QuerySessionResponse.
+        r"""Sets the host of this QuerySessionResponse.
 
         主机。
 
@@ -250,7 +250,7 @@ class QuerySessionResponse:
 
     @property
     def client(self):
-        """Gets the client of this QuerySessionResponse.
+        r"""Gets the client of this QuerySessionResponse.
 
         客户端地址。
 
@@ -261,7 +261,7 @@ class QuerySessionResponse:
 
     @client.setter
     def client(self, client):
-        """Sets the client of this QuerySessionResponse.
+        r"""Sets the client of this QuerySessionResponse.
 
         客户端地址。
 
@@ -272,7 +272,7 @@ class QuerySessionResponse:
 
     @property
     def description(self):
-        """Gets the description of this QuerySessionResponse.
+        r"""Gets the description of this QuerySessionResponse.
 
         连接描述。
 
@@ -283,7 +283,7 @@ class QuerySessionResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QuerySessionResponse.
+        r"""Sets the description of this QuerySessionResponse.
 
         连接描述。
 
@@ -294,7 +294,7 @@ class QuerySessionResponse:
 
     @property
     def namespace(self):
-        """Gets the namespace of this QuerySessionResponse.
+        r"""Gets the namespace of this QuerySessionResponse.
 
         命名空间。
 
@@ -305,7 +305,7 @@ class QuerySessionResponse:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this QuerySessionResponse.
+        r"""Sets the namespace of this QuerySessionResponse.
 
         命名空间。
 

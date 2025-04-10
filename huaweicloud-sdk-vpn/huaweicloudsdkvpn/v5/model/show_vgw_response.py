@@ -28,7 +28,7 @@ class ShowVgwResponse(SdkResponse):
     }
 
     def __init__(self, vpn_gateway=None, request_id=None):
-        """ShowVgwResponse
+        r"""ShowVgwResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowVgwResponse(SdkResponse):
 
     @property
     def vpn_gateway(self):
-        """Gets the vpn_gateway of this ShowVgwResponse.
+        r"""Gets the vpn_gateway of this ShowVgwResponse.
 
         :return: The vpn_gateway of this ShowVgwResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.ResponseVpnGateway`
@@ -60,7 +60,7 @@ class ShowVgwResponse(SdkResponse):
 
     @vpn_gateway.setter
     def vpn_gateway(self, vpn_gateway):
-        """Sets the vpn_gateway of this ShowVgwResponse.
+        r"""Sets the vpn_gateway of this ShowVgwResponse.
 
         :param vpn_gateway: The vpn_gateway of this ShowVgwResponse.
         :type vpn_gateway: :class:`huaweicloudsdkvpn.v5.ResponseVpnGateway`
@@ -69,7 +69,7 @@ class ShowVgwResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowVgwResponse.
+        r"""Gets the request_id of this ShowVgwResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class ShowVgwResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowVgwResponse.
+        r"""Sets the request_id of this ShowVgwResponse.
 
         请求ID
 

@@ -29,7 +29,7 @@ class UpdateDeviceTemplateByIdRequest:
     }
 
     def __init__(self, ief_instance_id=None, device_template_id=None, body=None):
-        """UpdateDeviceTemplateByIdRequest
+        r"""UpdateDeviceTemplateByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateDeviceTemplateByIdRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this UpdateDeviceTemplateByIdRequest.
+        r"""Gets the ief_instance_id of this UpdateDeviceTemplateByIdRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -67,7 +67,7 @@ class UpdateDeviceTemplateByIdRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this UpdateDeviceTemplateByIdRequest.
+        r"""Sets the ief_instance_id of this UpdateDeviceTemplateByIdRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -78,7 +78,7 @@ class UpdateDeviceTemplateByIdRequest:
 
     @property
     def device_template_id(self):
-        """Gets the device_template_id of this UpdateDeviceTemplateByIdRequest.
+        r"""Gets the device_template_id of this UpdateDeviceTemplateByIdRequest.
 
         设备模板ID
 
@@ -89,7 +89,7 @@ class UpdateDeviceTemplateByIdRequest:
 
     @device_template_id.setter
     def device_template_id(self, device_template_id):
-        """Sets the device_template_id of this UpdateDeviceTemplateByIdRequest.
+        r"""Sets the device_template_id of this UpdateDeviceTemplateByIdRequest.
 
         设备模板ID
 
@@ -100,7 +100,7 @@ class UpdateDeviceTemplateByIdRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDeviceTemplateByIdRequest.
+        r"""Gets the body of this UpdateDeviceTemplateByIdRequest.
 
         :return: The body of this UpdateDeviceTemplateByIdRequest.
         :rtype: :class:`huaweicloudsdkief.v1.DeviceTemplateUpdate`
@@ -109,7 +109,7 @@ class UpdateDeviceTemplateByIdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDeviceTemplateByIdRequest.
+        r"""Sets the body of this UpdateDeviceTemplateByIdRequest.
 
         :param body: The body of this UpdateDeviceTemplateByIdRequest.
         :type body: :class:`huaweicloudsdkief.v1.DeviceTemplateUpdate`

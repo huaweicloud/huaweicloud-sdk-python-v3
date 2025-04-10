@@ -25,7 +25,7 @@ class ListCatalogTreeResultData:
     }
 
     def __init__(self, value=None):
-        """ListCatalogTreeResultData
+        r"""ListCatalogTreeResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListCatalogTreeResultData:
 
     @property
     def value(self):
-        """Gets the value of this ListCatalogTreeResultData.
+        r"""Gets the value of this ListCatalogTreeResultData.
 
         value，统一的返回结果的外层数据结构。
 
@@ -54,7 +54,7 @@ class ListCatalogTreeResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListCatalogTreeResultData.
+        r"""Sets the value of this ListCatalogTreeResultData.
 
         value，统一的返回结果的外层数据结构。
 

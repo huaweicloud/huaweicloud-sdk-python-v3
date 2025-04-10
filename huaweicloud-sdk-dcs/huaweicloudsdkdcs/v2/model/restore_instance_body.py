@@ -27,7 +27,7 @@ class RestoreInstanceBody:
     }
 
     def __init__(self, backup_id=None, remark=None):
-        """RestoreInstanceBody
+        r"""RestoreInstanceBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RestoreInstanceBody:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this RestoreInstanceBody.
+        r"""Gets the backup_id of this RestoreInstanceBody.
 
         备份记录ID。
 
@@ -60,7 +60,7 @@ class RestoreInstanceBody:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this RestoreInstanceBody.
+        r"""Sets the backup_id of this RestoreInstanceBody.
 
         备份记录ID。
 
@@ -71,7 +71,7 @@ class RestoreInstanceBody:
 
     @property
     def remark(self):
-        """Gets the remark of this RestoreInstanceBody.
+        r"""Gets the remark of this RestoreInstanceBody.
 
         恢复缓存实例的备注信息。
 
@@ -82,7 +82,7 @@ class RestoreInstanceBody:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this RestoreInstanceBody.
+        r"""Sets the remark of this RestoreInstanceBody.
 
         恢复缓存实例的备注信息。
 

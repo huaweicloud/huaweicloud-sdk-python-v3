@@ -29,7 +29,7 @@ class ChInstancesInfoRsponseInstanceOpsWindow:
     }
 
     def __init__(self, period=None, start_time=None, end_time=None):
-        """ChInstancesInfoRsponseInstanceOpsWindow
+        r"""ChInstancesInfoRsponseInstanceOpsWindow
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ChInstancesInfoRsponseInstanceOpsWindow:
 
     @property
     def period(self):
-        """Gets the period of this ChInstancesInfoRsponseInstanceOpsWindow.
+        r"""Gets the period of this ChInstancesInfoRsponseInstanceOpsWindow.
 
         时间窗周期。
 
@@ -66,7 +66,7 @@ class ChInstancesInfoRsponseInstanceOpsWindow:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ChInstancesInfoRsponseInstanceOpsWindow.
+        r"""Sets the period of this ChInstancesInfoRsponseInstanceOpsWindow.
 
         时间窗周期。
 
@@ -77,7 +77,7 @@ class ChInstancesInfoRsponseInstanceOpsWindow:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ChInstancesInfoRsponseInstanceOpsWindow.
+        r"""Gets the start_time of this ChInstancesInfoRsponseInstanceOpsWindow.
 
         时间窗开始时间。
 
@@ -88,7 +88,7 @@ class ChInstancesInfoRsponseInstanceOpsWindow:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ChInstancesInfoRsponseInstanceOpsWindow.
+        r"""Sets the start_time of this ChInstancesInfoRsponseInstanceOpsWindow.
 
         时间窗开始时间。
 
@@ -99,7 +99,7 @@ class ChInstancesInfoRsponseInstanceOpsWindow:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ChInstancesInfoRsponseInstanceOpsWindow.
+        r"""Gets the end_time of this ChInstancesInfoRsponseInstanceOpsWindow.
 
         时间窗结束时间。
 
@@ -110,7 +110,7 @@ class ChInstancesInfoRsponseInstanceOpsWindow:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ChInstancesInfoRsponseInstanceOpsWindow.
+        r"""Sets the end_time of this ChInstancesInfoRsponseInstanceOpsWindow.
 
         时间窗结束时间。
 

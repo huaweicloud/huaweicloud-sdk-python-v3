@@ -29,7 +29,7 @@ class ShowAudienceCountInfo:
     }
 
     def __init__(self, show_audience_mode=None, base_audience_count=None, multiple=None):
-        """ShowAudienceCountInfo
+        r"""ShowAudienceCountInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowAudienceCountInfo:
 
     @property
     def show_audience_mode(self):
-        """Gets the show_audience_mode of this ShowAudienceCountInfo.
+        r"""Gets the show_audience_mode of this ShowAudienceCountInfo.
 
         观众显示策略。 * 0：不显示 * 1：倍增显示与会人数。基于实时与会人数或累计与会人次（假设为N），可以再进行倍增设置。支持设置倍增倍数X和基础人数Y，设置后，显示的人数为：N*X+Y 
 
@@ -68,7 +68,7 @@ class ShowAudienceCountInfo:
 
     @show_audience_mode.setter
     def show_audience_mode(self, show_audience_mode):
-        """Sets the show_audience_mode of this ShowAudienceCountInfo.
+        r"""Sets the show_audience_mode of this ShowAudienceCountInfo.
 
         观众显示策略。 * 0：不显示 * 1：倍增显示与会人数。基于实时与会人数或累计与会人次（假设为N），可以再进行倍增设置。支持设置倍增倍数X和基础人数Y，设置后，显示的人数为：N*X+Y 
 
@@ -79,7 +79,7 @@ class ShowAudienceCountInfo:
 
     @property
     def base_audience_count(self):
-        """Gets the base_audience_count of this ShowAudienceCountInfo.
+        r"""Gets the base_audience_count of this ShowAudienceCountInfo.
 
         基础人数。范围是0~10000。
 
@@ -90,7 +90,7 @@ class ShowAudienceCountInfo:
 
     @base_audience_count.setter
     def base_audience_count(self, base_audience_count):
-        """Sets the base_audience_count of this ShowAudienceCountInfo.
+        r"""Sets the base_audience_count of this ShowAudienceCountInfo.
 
         基础人数。范围是0~10000。
 
@@ -101,7 +101,7 @@ class ShowAudienceCountInfo:
 
     @property
     def multiple(self):
-        """Gets the multiple of this ShowAudienceCountInfo.
+        r"""Gets the multiple of this ShowAudienceCountInfo.
 
         倍增倍数。范围是1~10, 支持设置到小数点后1位。
 
@@ -112,7 +112,7 @@ class ShowAudienceCountInfo:
 
     @multiple.setter
     def multiple(self, multiple):
-        """Sets the multiple of this ShowAudienceCountInfo.
+        r"""Sets the multiple of this ShowAudienceCountInfo.
 
         倍增倍数。范围是1~10, 支持设置到小数点后1位。
 

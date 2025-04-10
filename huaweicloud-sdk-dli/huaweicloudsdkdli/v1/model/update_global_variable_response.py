@@ -28,7 +28,7 @@ class UpdateGlobalVariableResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None):
-        """UpdateGlobalVariableResponse
+        r"""UpdateGlobalVariableResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateGlobalVariableResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this UpdateGlobalVariableResponse.
+        r"""Gets the is_success of this UpdateGlobalVariableResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -62,7 +62,7 @@ class UpdateGlobalVariableResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this UpdateGlobalVariableResponse.
+        r"""Sets the is_success of this UpdateGlobalVariableResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -73,7 +73,7 @@ class UpdateGlobalVariableResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this UpdateGlobalVariableResponse.
+        r"""Gets the message of this UpdateGlobalVariableResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -84,7 +84,7 @@ class UpdateGlobalVariableResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this UpdateGlobalVariableResponse.
+        r"""Sets the message of this UpdateGlobalVariableResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 

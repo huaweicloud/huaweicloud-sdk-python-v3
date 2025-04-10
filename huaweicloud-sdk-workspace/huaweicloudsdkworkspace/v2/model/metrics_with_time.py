@@ -27,7 +27,7 @@ class MetricsWithTime:
     }
 
     def __init__(self, time=None, metrics=None):
-        """MetricsWithTime
+        r"""MetricsWithTime
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MetricsWithTime:
 
     @property
     def time(self):
-        """Gets the time of this MetricsWithTime.
+        r"""Gets the time of this MetricsWithTime.
 
         时间
 
@@ -61,7 +61,7 @@ class MetricsWithTime:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this MetricsWithTime.
+        r"""Sets the time of this MetricsWithTime.
 
         时间
 
@@ -72,7 +72,7 @@ class MetricsWithTime:
 
     @property
     def metrics(self):
-        """Gets the metrics of this MetricsWithTime.
+        r"""Gets the metrics of this MetricsWithTime.
 
         指标值
 
@@ -83,7 +83,7 @@ class MetricsWithTime:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this MetricsWithTime.
+        r"""Sets the metrics of this MetricsWithTime.
 
         指标值
 

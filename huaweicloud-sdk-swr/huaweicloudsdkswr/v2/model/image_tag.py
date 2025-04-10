@@ -23,7 +23,7 @@ class ImageTag:
     }
 
     def __init__(self):
-        """ImageTag
+        r"""ImageTag
 
         The model defined in huaweicloud sdk
 

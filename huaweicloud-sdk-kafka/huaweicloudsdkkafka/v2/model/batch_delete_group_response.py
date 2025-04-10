@@ -28,7 +28,7 @@ class BatchDeleteGroupResponse(SdkResponse):
     }
 
     def __init__(self, failed_groups=None, total=None):
-        """BatchDeleteGroupResponse
+        r"""BatchDeleteGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchDeleteGroupResponse(SdkResponse):
 
     @property
     def failed_groups(self):
-        """Gets the failed_groups of this BatchDeleteGroupResponse.
+        r"""Gets the failed_groups of this BatchDeleteGroupResponse.
 
         删除失败的消费组列表。
 
@@ -62,7 +62,7 @@ class BatchDeleteGroupResponse(SdkResponse):
 
     @failed_groups.setter
     def failed_groups(self, failed_groups):
-        """Sets the failed_groups of this BatchDeleteGroupResponse.
+        r"""Sets the failed_groups of this BatchDeleteGroupResponse.
 
         删除失败的消费组列表。
 
@@ -73,7 +73,7 @@ class BatchDeleteGroupResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this BatchDeleteGroupResponse.
+        r"""Gets the total of this BatchDeleteGroupResponse.
 
         删除失败的个数
 
@@ -84,7 +84,7 @@ class BatchDeleteGroupResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BatchDeleteGroupResponse.
+        r"""Sets the total of this BatchDeleteGroupResponse.
 
         删除失败的个数
 

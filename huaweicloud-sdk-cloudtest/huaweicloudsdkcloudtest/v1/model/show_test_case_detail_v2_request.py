@@ -27,7 +27,7 @@ class ShowTestCaseDetailV2Request:
     }
 
     def __init__(self, project_id=None, testcase_number=None):
-        """ShowTestCaseDetailV2Request
+        r"""ShowTestCaseDetailV2Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowTestCaseDetailV2Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowTestCaseDetailV2Request.
+        r"""Gets the project_id of this ShowTestCaseDetailV2Request.
 
         项目唯一标识，固定长度32位字符
 
@@ -59,7 +59,7 @@ class ShowTestCaseDetailV2Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowTestCaseDetailV2Request.
+        r"""Sets the project_id of this ShowTestCaseDetailV2Request.
 
         项目唯一标识，固定长度32位字符
 
@@ -70,7 +70,7 @@ class ShowTestCaseDetailV2Request:
 
     @property
     def testcase_number(self):
-        """Gets the testcase_number of this ShowTestCaseDetailV2Request.
+        r"""Gets the testcase_number of this ShowTestCaseDetailV2Request.
 
         用例编号，长度为[3-128]位字符
 
@@ -81,7 +81,7 @@ class ShowTestCaseDetailV2Request:
 
     @testcase_number.setter
     def testcase_number(self, testcase_number):
-        """Sets the testcase_number of this ShowTestCaseDetailV2Request.
+        r"""Sets the testcase_number of this ShowTestCaseDetailV2Request.
 
         用例编号，长度为[3-128]位字符
 

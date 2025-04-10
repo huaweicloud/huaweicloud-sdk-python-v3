@@ -31,7 +31,7 @@ class UploadAsset:
     }
 
     def __init__(self, url=None, asset_id=None, error_code=None, error_msg=None):
-        """UploadAsset
+        r"""UploadAsset
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UploadAsset:
 
     @property
     def url(self):
-        """Gets the url of this UploadAsset.
+        r"""Gets the url of this UploadAsset.
 
         媒资所在url 
 
@@ -75,7 +75,7 @@ class UploadAsset:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UploadAsset.
+        r"""Sets the url of this UploadAsset.
 
         媒资所在url 
 
@@ -86,7 +86,7 @@ class UploadAsset:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this UploadAsset.
+        r"""Gets the asset_id of this UploadAsset.
 
         新创建媒资的媒资id 
 
@@ -97,7 +97,7 @@ class UploadAsset:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this UploadAsset.
+        r"""Sets the asset_id of this UploadAsset.
 
         新创建媒资的媒资id 
 
@@ -108,7 +108,7 @@ class UploadAsset:
 
     @property
     def error_code(self):
-        """Gets the error_code of this UploadAsset.
+        r"""Gets the error_code of this UploadAsset.
 
         错误码。 
 
@@ -119,7 +119,7 @@ class UploadAsset:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this UploadAsset.
+        r"""Sets the error_code of this UploadAsset.
 
         错误码。 
 
@@ -130,7 +130,7 @@ class UploadAsset:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this UploadAsset.
+        r"""Gets the error_msg of this UploadAsset.
 
         错误描述。 
 
@@ -141,7 +141,7 @@ class UploadAsset:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this UploadAsset.
+        r"""Sets the error_msg of this UploadAsset.
 
         错误描述。 
 

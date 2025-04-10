@@ -27,7 +27,7 @@ class CreateStackRequest:
     }
 
     def __init__(self, client_request_id=None, body=None):
-        """CreateStackRequest
+        r"""CreateStackRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateStackRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this CreateStackRequest.
+        r"""Gets the client_request_id of this CreateStackRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -60,7 +60,7 @@ class CreateStackRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this CreateStackRequest.
+        r"""Sets the client_request_id of this CreateStackRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -71,7 +71,7 @@ class CreateStackRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateStackRequest.
+        r"""Gets the body of this CreateStackRequest.
 
         :return: The body of this CreateStackRequest.
         :rtype: :class:`huaweicloudsdkaos.v1.CreateStackRequestBody`
@@ -80,7 +80,7 @@ class CreateStackRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateStackRequest.
+        r"""Sets the body of this CreateStackRequest.
 
         :param body: The body of this CreateStackRequest.
         :type body: :class:`huaweicloudsdkaos.v1.CreateStackRequestBody`

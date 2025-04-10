@@ -31,7 +31,7 @@ class AttachStatistics:
     }
 
     def __init__(self, attached_num=None, unattached_num=None, attaching_num=None, attach_error_num=None):
-        """AttachStatistics
+        r"""AttachStatistics
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AttachStatistics:
 
     @property
     def attached_num(self):
-        """Gets the attached_num of this AttachStatistics.
+        r"""Gets the attached_num of this AttachStatistics.
 
         已分配个数。
 
@@ -75,7 +75,7 @@ class AttachStatistics:
 
     @attached_num.setter
     def attached_num(self, attached_num):
-        """Sets the attached_num of this AttachStatistics.
+        r"""Sets the attached_num of this AttachStatistics.
 
         已分配个数。
 
@@ -86,7 +86,7 @@ class AttachStatistics:
 
     @property
     def unattached_num(self):
-        """Gets the unattached_num of this AttachStatistics.
+        r"""Gets the unattached_num of this AttachStatistics.
 
         未分配个数。
 
@@ -97,7 +97,7 @@ class AttachStatistics:
 
     @unattached_num.setter
     def unattached_num(self, unattached_num):
-        """Sets the unattached_num of this AttachStatistics.
+        r"""Sets the unattached_num of this AttachStatistics.
 
         未分配个数。
 
@@ -108,7 +108,7 @@ class AttachStatistics:
 
     @property
     def attaching_num(self):
-        """Gets the attaching_num of this AttachStatistics.
+        r"""Gets the attaching_num of this AttachStatistics.
 
         分配中个数。
 
@@ -119,7 +119,7 @@ class AttachStatistics:
 
     @attaching_num.setter
     def attaching_num(self, attaching_num):
-        """Sets the attaching_num of this AttachStatistics.
+        r"""Sets the attaching_num of this AttachStatistics.
 
         分配中个数。
 
@@ -130,7 +130,7 @@ class AttachStatistics:
 
     @property
     def attach_error_num(self):
-        """Gets the attach_error_num of this AttachStatistics.
+        r"""Gets the attach_error_num of this AttachStatistics.
 
         分配失败的个数。
 
@@ -141,7 +141,7 @@ class AttachStatistics:
 
     @attach_error_num.setter
     def attach_error_num(self, attach_error_num):
-        """Sets the attach_error_num of this AttachStatistics.
+        r"""Sets the attach_error_num of this AttachStatistics.
 
         分配失败的个数。
 

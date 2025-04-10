@@ -35,7 +35,7 @@ class ListGeipResourceQuotasRequest:
     }
 
     def __init__(self, limit=None, offset=None, marker=None, page_reverse=None, fields=None, type=None):
-        """ListGeipResourceQuotasRequest
+        r"""ListGeipResourceQuotasRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListGeipResourceQuotasRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGeipResourceQuotasRequest.
+        r"""Gets the limit of this ListGeipResourceQuotasRequest.
 
         每页条数
 
@@ -89,7 +89,7 @@ class ListGeipResourceQuotasRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGeipResourceQuotasRequest.
+        r"""Sets the limit of this ListGeipResourceQuotasRequest.
 
         每页条数
 
@@ -100,7 +100,7 @@ class ListGeipResourceQuotasRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGeipResourceQuotasRequest.
+        r"""Gets the offset of this ListGeipResourceQuotasRequest.
 
         分页起始点
 
@@ -111,7 +111,7 @@ class ListGeipResourceQuotasRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGeipResourceQuotasRequest.
+        r"""Sets the offset of this ListGeipResourceQuotasRequest.
 
         分页起始点
 
@@ -122,7 +122,7 @@ class ListGeipResourceQuotasRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListGeipResourceQuotasRequest.
+        r"""Gets the marker of this ListGeipResourceQuotasRequest.
 
         分页起始点
 
@@ -133,7 +133,7 @@ class ListGeipResourceQuotasRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListGeipResourceQuotasRequest.
+        r"""Sets the marker of this ListGeipResourceQuotasRequest.
 
         分页起始点
 
@@ -144,7 +144,7 @@ class ListGeipResourceQuotasRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListGeipResourceQuotasRequest.
+        r"""Gets the page_reverse of this ListGeipResourceQuotasRequest.
 
         翻页方向
 
@@ -155,7 +155,7 @@ class ListGeipResourceQuotasRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListGeipResourceQuotasRequest.
+        r"""Sets the page_reverse of this ListGeipResourceQuotasRequest.
 
         翻页方向
 
@@ -166,7 +166,7 @@ class ListGeipResourceQuotasRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListGeipResourceQuotasRequest.
+        r"""Gets the fields of this ListGeipResourceQuotasRequest.
 
         :return: The fields of this ListGeipResourceQuotasRequest.
         :rtype: list[str]
@@ -175,7 +175,7 @@ class ListGeipResourceQuotasRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListGeipResourceQuotasRequest.
+        r"""Sets the fields of this ListGeipResourceQuotasRequest.
 
         :param fields: The fields of this ListGeipResourceQuotasRequest.
         :type fields: list[str]
@@ -184,7 +184,7 @@ class ListGeipResourceQuotasRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListGeipResourceQuotasRequest.
+        r"""Gets the type of this ListGeipResourceQuotasRequest.
 
         :return: The type of this ListGeipResourceQuotasRequest.
         :rtype: list[str]
@@ -193,7 +193,7 @@ class ListGeipResourceQuotasRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListGeipResourceQuotasRequest.
+        r"""Sets the type of this ListGeipResourceQuotasRequest.
 
         :param type: The type of this ListGeipResourceQuotasRequest.
         :type type: list[str]

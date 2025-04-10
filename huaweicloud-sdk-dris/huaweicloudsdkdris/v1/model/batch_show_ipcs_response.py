@@ -28,7 +28,7 @@ class BatchShowIpcsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, ipcs=None):
-        """BatchShowIpcsResponse
+        r"""BatchShowIpcsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchShowIpcsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchShowIpcsResponse.
+        r"""Gets the count of this BatchShowIpcsResponse.
 
         **参数说明**：总数
 
@@ -62,7 +62,7 @@ class BatchShowIpcsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchShowIpcsResponse.
+        r"""Sets the count of this BatchShowIpcsResponse.
 
         **参数说明**：总数
 
@@ -73,7 +73,7 @@ class BatchShowIpcsResponse(SdkResponse):
 
     @property
     def ipcs(self):
-        """Gets the ipcs of this BatchShowIpcsResponse.
+        r"""Gets the ipcs of this BatchShowIpcsResponse.
 
         **参数说明**：IPC列表
 
@@ -84,7 +84,7 @@ class BatchShowIpcsResponse(SdkResponse):
 
     @ipcs.setter
     def ipcs(self, ipcs):
-        """Sets the ipcs of this BatchShowIpcsResponse.
+        r"""Sets the ipcs of this BatchShowIpcsResponse.
 
         **参数说明**：IPC列表
 

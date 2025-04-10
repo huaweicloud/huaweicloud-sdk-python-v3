@@ -27,7 +27,7 @@ class TagPair:
     }
 
     def __init__(self, tag_key=None, tag_value=None):
-        """TagPair
+        r"""TagPair
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TagPair:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this TagPair.
+        r"""Gets the tag_key of this TagPair.
 
         标签key。
 
@@ -61,7 +61,7 @@ class TagPair:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this TagPair.
+        r"""Sets the tag_key of this TagPair.
 
         标签key。
 
@@ -72,7 +72,7 @@ class TagPair:
 
     @property
     def tag_value(self):
-        """Gets the tag_value of this TagPair.
+        r"""Gets the tag_value of this TagPair.
 
         标签value。
 
@@ -83,7 +83,7 @@ class TagPair:
 
     @tag_value.setter
     def tag_value(self, tag_value):
-        """Sets the tag_value of this TagPair.
+        r"""Sets the tag_value of this TagPair.
 
         标签value。
 

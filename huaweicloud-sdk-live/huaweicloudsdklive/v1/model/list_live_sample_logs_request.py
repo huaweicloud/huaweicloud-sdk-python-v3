@@ -29,7 +29,7 @@ class ListLiveSampleLogsRequest:
     }
 
     def __init__(self, play_domain=None, start_time=None, end_time=None):
-        """ListLiveSampleLogsRequest
+        r"""ListLiveSampleLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListLiveSampleLogsRequest:
 
     @property
     def play_domain(self):
-        """Gets the play_domain of this ListLiveSampleLogsRequest.
+        r"""Gets the play_domain of this ListLiveSampleLogsRequest.
 
         播放域名。
 
@@ -65,7 +65,7 @@ class ListLiveSampleLogsRequest:
 
     @play_domain.setter
     def play_domain(self, play_domain):
-        """Sets the play_domain of this ListLiveSampleLogsRequest.
+        r"""Sets the play_domain of this ListLiveSampleLogsRequest.
 
         播放域名。
 
@@ -76,7 +76,7 @@ class ListLiveSampleLogsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListLiveSampleLogsRequest.
+        r"""Gets the start_time of this ListLiveSampleLogsRequest.
 
         查询开始时间，UTC时间：YYYY-MM-DDTHH:mm:ssZ，如北京时间2020年3月4日16点00分00秒可表示为2020-03-04T08:00:00Z。仅支持查询最近3个月内的数据。
 
@@ -87,7 +87,7 @@ class ListLiveSampleLogsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListLiveSampleLogsRequest.
+        r"""Sets the start_time of this ListLiveSampleLogsRequest.
 
         查询开始时间，UTC时间：YYYY-MM-DDTHH:mm:ssZ，如北京时间2020年3月4日16点00分00秒可表示为2020-03-04T08:00:00Z。仅支持查询最近3个月内的数据。
 
@@ -98,7 +98,7 @@ class ListLiveSampleLogsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListLiveSampleLogsRequest.
+        r"""Gets the end_time of this ListLiveSampleLogsRequest.
 
         查询结束时间，UTC时间：YYYY-MM-DDTHH:mm:ssZ，如北京时间2020年3月4日16点00分00秒可表示为2020-03-04T08:00:00Z。查询时间跨度不能大于7天。
 
@@ -109,7 +109,7 @@ class ListLiveSampleLogsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListLiveSampleLogsRequest.
+        r"""Sets the end_time of this ListLiveSampleLogsRequest.
 
         查询结束时间，UTC时间：YYYY-MM-DDTHH:mm:ssZ，如北京时间2020年3月4日16点00分00秒可表示为2020-03-04T08:00:00Z。查询时间跨度不能大于7天。
 

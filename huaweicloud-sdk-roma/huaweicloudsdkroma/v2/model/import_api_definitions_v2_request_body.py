@@ -39,7 +39,7 @@ class ImportApiDefinitionsV2RequestBody:
     }
 
     def __init__(self, is_create_group=None, group_id=None, app_id=None, extend_mode=None, simple_mode=None, mock_mode=None, api_mode=None, file_name=None):
-        """ImportApiDefinitionsV2RequestBody
+        r"""ImportApiDefinitionsV2RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @property
     def is_create_group(self):
-        """Gets the is_create_group of this ImportApiDefinitionsV2RequestBody.
+        r"""Gets the is_create_group of this ImportApiDefinitionsV2RequestBody.
 
         是否创建新分组
 
@@ -102,7 +102,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @is_create_group.setter
     def is_create_group(self, is_create_group):
-        """Sets the is_create_group of this ImportApiDefinitionsV2RequestBody.
+        r"""Sets the is_create_group of this ImportApiDefinitionsV2RequestBody.
 
         是否创建新分组
 
@@ -113,7 +113,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ImportApiDefinitionsV2RequestBody.
+        r"""Gets the group_id of this ImportApiDefinitionsV2RequestBody.
 
         API分组编号。  当is_create_group=false时为必填
 
@@ -124,7 +124,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ImportApiDefinitionsV2RequestBody.
+        r"""Sets the group_id of this ImportApiDefinitionsV2RequestBody.
 
         API分组编号。  当is_create_group=false时为必填
 
@@ -135,7 +135,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ImportApiDefinitionsV2RequestBody.
+        r"""Gets the app_id of this ImportApiDefinitionsV2RequestBody.
 
         应用编号。  当is_create_group=false且使用集成应用分组时必填
 
@@ -146,7 +146,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ImportApiDefinitionsV2RequestBody.
+        r"""Sets the app_id of this ImportApiDefinitionsV2RequestBody.
 
         应用编号。  当is_create_group=false且使用集成应用分组时必填
 
@@ -157,7 +157,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @property
     def extend_mode(self):
-        """Gets the extend_mode of this ImportApiDefinitionsV2RequestBody.
+        r"""Gets the extend_mode of this ImportApiDefinitionsV2RequestBody.
 
         扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息
 
@@ -168,7 +168,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @extend_mode.setter
     def extend_mode(self, extend_mode):
-        """Sets the extend_mode of this ImportApiDefinitionsV2RequestBody.
+        r"""Sets the extend_mode of this ImportApiDefinitionsV2RequestBody.
 
         扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息
 
@@ -179,7 +179,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @property
     def simple_mode(self):
-        """Gets the simple_mode of this ImportApiDefinitionsV2RequestBody.
+        r"""Gets the simple_mode of this ImportApiDefinitionsV2RequestBody.
 
         是否开启简易导入模式
 
@@ -190,7 +190,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @simple_mode.setter
     def simple_mode(self, simple_mode):
-        """Sets the simple_mode of this ImportApiDefinitionsV2RequestBody.
+        r"""Sets the simple_mode of this ImportApiDefinitionsV2RequestBody.
 
         是否开启简易导入模式
 
@@ -201,7 +201,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @property
     def mock_mode(self):
-        """Gets the mock_mode of this ImportApiDefinitionsV2RequestBody.
+        r"""Gets the mock_mode of this ImportApiDefinitionsV2RequestBody.
 
         是否开启Mock后端
 
@@ -212,7 +212,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @mock_mode.setter
     def mock_mode(self, mock_mode):
-        """Sets the mock_mode of this ImportApiDefinitionsV2RequestBody.
+        r"""Sets the mock_mode of this ImportApiDefinitionsV2RequestBody.
 
         是否开启Mock后端
 
@@ -223,7 +223,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @property
     def api_mode(self):
-        """Gets the api_mode of this ImportApiDefinitionsV2RequestBody.
+        r"""Gets the api_mode of this ImportApiDefinitionsV2RequestBody.
 
         导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息
 
@@ -234,7 +234,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @api_mode.setter
     def api_mode(self, api_mode):
-        """Sets the api_mode of this ImportApiDefinitionsV2RequestBody.
+        r"""Sets the api_mode of this ImportApiDefinitionsV2RequestBody.
 
         导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息
 
@@ -245,7 +245,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ImportApiDefinitionsV2RequestBody.
+        r"""Gets the file_name of this ImportApiDefinitionsV2RequestBody.
 
         导入Api的请求体，json或yaml格式的文件
 
@@ -256,7 +256,7 @@ class ImportApiDefinitionsV2RequestBody:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ImportApiDefinitionsV2RequestBody.
+        r"""Sets the file_name of this ImportApiDefinitionsV2RequestBody.
 
         导入Api的请求体，json或yaml格式的文件
 

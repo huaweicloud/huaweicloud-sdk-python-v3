@@ -32,7 +32,7 @@ class ListFlowLogsResponse(SdkResponse):
     }
 
     def __init__(self, flow_logs=None, request_id=None, total_count=None, page_info=None):
-        """ListFlowLogsResponse
+        r"""ListFlowLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListFlowLogsResponse(SdkResponse):
 
     @property
     def flow_logs(self):
-        """Gets the flow_logs of this ListFlowLogsResponse.
+        r"""Gets the flow_logs of this ListFlowLogsResponse.
 
         :return: The flow_logs of this ListFlowLogsResponse.
         :rtype: list[:class:`huaweicloudsdker.v3.FlowLog`]
@@ -74,7 +74,7 @@ class ListFlowLogsResponse(SdkResponse):
 
     @flow_logs.setter
     def flow_logs(self, flow_logs):
-        """Sets the flow_logs of this ListFlowLogsResponse.
+        r"""Sets the flow_logs of this ListFlowLogsResponse.
 
         :param flow_logs: The flow_logs of this ListFlowLogsResponse.
         :type flow_logs: list[:class:`huaweicloudsdker.v3.FlowLog`]
@@ -83,7 +83,7 @@ class ListFlowLogsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListFlowLogsResponse.
+        r"""Gets the request_id of this ListFlowLogsResponse.
 
         请求ID
 
@@ -94,7 +94,7 @@ class ListFlowLogsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListFlowLogsResponse.
+        r"""Sets the request_id of this ListFlowLogsResponse.
 
         请求ID
 
@@ -105,7 +105,7 @@ class ListFlowLogsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListFlowLogsResponse.
+        r"""Gets the total_count of this ListFlowLogsResponse.
 
         总计数量
 
@@ -116,7 +116,7 @@ class ListFlowLogsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListFlowLogsResponse.
+        r"""Sets the total_count of this ListFlowLogsResponse.
 
         总计数量
 
@@ -127,7 +127,7 @@ class ListFlowLogsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListFlowLogsResponse.
+        r"""Gets the page_info of this ListFlowLogsResponse.
 
         :return: The page_info of this ListFlowLogsResponse.
         :rtype: :class:`huaweicloudsdker.v3.PageInfo`
@@ -136,7 +136,7 @@ class ListFlowLogsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListFlowLogsResponse.
+        r"""Sets the page_info of this ListFlowLogsResponse.
 
         :param page_info: The page_info of this ListFlowLogsResponse.
         :type page_info: :class:`huaweicloudsdker.v3.PageInfo`

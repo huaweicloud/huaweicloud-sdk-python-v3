@@ -25,7 +25,7 @@ class RecyclePolicyRequestBody:
     }
 
     def __init__(self, recycle_policy=None):
-        """RecyclePolicyRequestBody
+        r"""RecyclePolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RecyclePolicyRequestBody:
 
     @property
     def recycle_policy(self):
-        """Gets the recycle_policy of this RecyclePolicyRequestBody.
+        r"""Gets the recycle_policy of this RecyclePolicyRequestBody.
 
         :return: The recycle_policy of this RecyclePolicyRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.RecyclePolicy`
@@ -51,7 +51,7 @@ class RecyclePolicyRequestBody:
 
     @recycle_policy.setter
     def recycle_policy(self, recycle_policy):
-        """Sets the recycle_policy of this RecyclePolicyRequestBody.
+        r"""Sets the recycle_policy of this RecyclePolicyRequestBody.
 
         :param recycle_policy: The recycle_policy of this RecyclePolicyRequestBody.
         :type recycle_policy: :class:`huaweicloudsdkgaussdbforopengauss.v3.RecyclePolicy`

@@ -73,7 +73,7 @@ class EngineSimpleInfo:
     }
 
     def __init__(self, id=None, name=None, enterprise_project_id=None, enterprise_project_name=None, type=None, description=None, flavor=None, payment=None, auth_type=None, status=None, external_address=None, service_endpoint=None, public_address=None, public_service_endpoint=None, total_instance=None, used_instance=None, available_instance=None, version=None, latest_version=None, create_time=None, due_to=None, latest_job_id=None, engine_additional_actions=None, spec_type=None, reference=None):
-        """EngineSimpleInfo
+        r"""EngineSimpleInfo
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class EngineSimpleInfo:
 
     @property
     def id(self):
-        """Gets the id of this EngineSimpleInfo.
+        r"""Gets the id of this EngineSimpleInfo.
 
         微服务引擎的ID
 
@@ -222,7 +222,7 @@ class EngineSimpleInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EngineSimpleInfo.
+        r"""Sets the id of this EngineSimpleInfo.
 
         微服务引擎的ID
 
@@ -233,7 +233,7 @@ class EngineSimpleInfo:
 
     @property
     def name(self):
-        """Gets the name of this EngineSimpleInfo.
+        r"""Gets the name of this EngineSimpleInfo.
 
         引擎的名称
 
@@ -244,7 +244,7 @@ class EngineSimpleInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EngineSimpleInfo.
+        r"""Sets the name of this EngineSimpleInfo.
 
         引擎的名称
 
@@ -255,7 +255,7 @@ class EngineSimpleInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this EngineSimpleInfo.
+        r"""Gets the enterprise_project_id of this EngineSimpleInfo.
 
         微服务引擎所属企业项目ID
 
@@ -266,7 +266,7 @@ class EngineSimpleInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this EngineSimpleInfo.
+        r"""Sets the enterprise_project_id of this EngineSimpleInfo.
 
         微服务引擎所属企业项目ID
 
@@ -277,7 +277,7 @@ class EngineSimpleInfo:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this EngineSimpleInfo.
+        r"""Gets the enterprise_project_name of this EngineSimpleInfo.
 
         微服务引擎所属企业项目名称
 
@@ -288,7 +288,7 @@ class EngineSimpleInfo:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this EngineSimpleInfo.
+        r"""Sets the enterprise_project_name of this EngineSimpleInfo.
 
         微服务引擎所属企业项目名称
 
@@ -299,7 +299,7 @@ class EngineSimpleInfo:
 
     @property
     def type(self):
-        """Gets the type of this EngineSimpleInfo.
+        r"""Gets the type of this EngineSimpleInfo.
 
         微服务引擎的类型，CSE为专享版引擎，CSE_Share表示为专业版引擎
 
@@ -310,7 +310,7 @@ class EngineSimpleInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EngineSimpleInfo.
+        r"""Sets the type of this EngineSimpleInfo.
 
         微服务引擎的类型，CSE为专享版引擎，CSE_Share表示为专业版引擎
 
@@ -321,7 +321,7 @@ class EngineSimpleInfo:
 
     @property
     def description(self):
-        """Gets the description of this EngineSimpleInfo.
+        r"""Gets the description of this EngineSimpleInfo.
 
         微服务引擎的描述
 
@@ -332,7 +332,7 @@ class EngineSimpleInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EngineSimpleInfo.
+        r"""Sets the description of this EngineSimpleInfo.
 
         微服务引擎的描述
 
@@ -343,7 +343,7 @@ class EngineSimpleInfo:
 
     @property
     def flavor(self):
-        """Gets the flavor of this EngineSimpleInfo.
+        r"""Gets the flavor of this EngineSimpleInfo.
 
         微服务引擎的规格
 
@@ -354,7 +354,7 @@ class EngineSimpleInfo:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this EngineSimpleInfo.
+        r"""Sets the flavor of this EngineSimpleInfo.
 
         微服务引擎的规格
 
@@ -365,7 +365,7 @@ class EngineSimpleInfo:
 
     @property
     def payment(self):
-        """Gets the payment of this EngineSimpleInfo.
+        r"""Gets the payment of this EngineSimpleInfo.
 
         微服务引擎的计费方式，0表示包周期，1表示按需，2表示免费
 
@@ -376,7 +376,7 @@ class EngineSimpleInfo:
 
     @payment.setter
     def payment(self, payment):
-        """Sets the payment of this EngineSimpleInfo.
+        r"""Sets the payment of this EngineSimpleInfo.
 
         微服务引擎的计费方式，0表示包周期，1表示按需，2表示免费
 
@@ -387,7 +387,7 @@ class EngineSimpleInfo:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this EngineSimpleInfo.
+        r"""Gets the auth_type of this EngineSimpleInfo.
 
         微服务引擎的认证方式，RBAC/NONE
 
@@ -398,7 +398,7 @@ class EngineSimpleInfo:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this EngineSimpleInfo.
+        r"""Sets the auth_type of this EngineSimpleInfo.
 
         微服务引擎的认证方式，RBAC/NONE
 
@@ -409,7 +409,7 @@ class EngineSimpleInfo:
 
     @property
     def status(self):
-        """Gets the status of this EngineSimpleInfo.
+        r"""Gets the status of this EngineSimpleInfo.
 
         微服务引擎当前的状态
 
@@ -420,7 +420,7 @@ class EngineSimpleInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EngineSimpleInfo.
+        r"""Sets the status of this EngineSimpleInfo.
 
         微服务引擎当前的状态
 
@@ -431,7 +431,7 @@ class EngineSimpleInfo:
 
     @property
     def external_address(self):
-        """Gets the external_address of this EngineSimpleInfo.
+        r"""Gets the external_address of this EngineSimpleInfo.
 
         微服务引擎暴露的IP地址
 
@@ -442,7 +442,7 @@ class EngineSimpleInfo:
 
     @external_address.setter
     def external_address(self, external_address):
-        """Sets the external_address of this EngineSimpleInfo.
+        r"""Sets the external_address of this EngineSimpleInfo.
 
         微服务引擎暴露的IP地址
 
@@ -453,7 +453,7 @@ class EngineSimpleInfo:
 
     @property
     def service_endpoint(self):
-        """Gets the service_endpoint of this EngineSimpleInfo.
+        r"""Gets the service_endpoint of this EngineSimpleInfo.
 
         微服务引擎组件的访问地址。
 
@@ -464,7 +464,7 @@ class EngineSimpleInfo:
 
     @service_endpoint.setter
     def service_endpoint(self, service_endpoint):
-        """Sets the service_endpoint of this EngineSimpleInfo.
+        r"""Sets the service_endpoint of this EngineSimpleInfo.
 
         微服务引擎组件的访问地址。
 
@@ -475,7 +475,7 @@ class EngineSimpleInfo:
 
     @property
     def public_address(self):
-        """Gets the public_address of this EngineSimpleInfo.
+        r"""Gets the public_address of this EngineSimpleInfo.
 
         微服务引擎的公网IP地址
 
@@ -486,7 +486,7 @@ class EngineSimpleInfo:
 
     @public_address.setter
     def public_address(self, public_address):
-        """Sets the public_address of this EngineSimpleInfo.
+        r"""Sets the public_address of this EngineSimpleInfo.
 
         微服务引擎的公网IP地址
 
@@ -497,7 +497,7 @@ class EngineSimpleInfo:
 
     @property
     def public_service_endpoint(self):
-        """Gets the public_service_endpoint of this EngineSimpleInfo.
+        r"""Gets the public_service_endpoint of this EngineSimpleInfo.
 
         微服务引擎的公网接入地址
 
@@ -508,7 +508,7 @@ class EngineSimpleInfo:
 
     @public_service_endpoint.setter
     def public_service_endpoint(self, public_service_endpoint):
-        """Sets the public_service_endpoint of this EngineSimpleInfo.
+        r"""Sets the public_service_endpoint of this EngineSimpleInfo.
 
         微服务引擎的公网接入地址
 
@@ -519,7 +519,7 @@ class EngineSimpleInfo:
 
     @property
     def total_instance(self):
-        """Gets the total_instance of this EngineSimpleInfo.
+        r"""Gets the total_instance of this EngineSimpleInfo.
 
         微服务引擎可支持的实例总数
 
@@ -530,7 +530,7 @@ class EngineSimpleInfo:
 
     @total_instance.setter
     def total_instance(self, total_instance):
-        """Sets the total_instance of this EngineSimpleInfo.
+        r"""Sets the total_instance of this EngineSimpleInfo.
 
         微服务引擎可支持的实例总数
 
@@ -541,7 +541,7 @@ class EngineSimpleInfo:
 
     @property
     def used_instance(self):
-        """Gets the used_instance of this EngineSimpleInfo.
+        r"""Gets the used_instance of this EngineSimpleInfo.
 
         已使用的实例总数
 
@@ -552,7 +552,7 @@ class EngineSimpleInfo:
 
     @used_instance.setter
     def used_instance(self, used_instance):
-        """Sets the used_instance of this EngineSimpleInfo.
+        r"""Sets the used_instance of this EngineSimpleInfo.
 
         已使用的实例总数
 
@@ -563,7 +563,7 @@ class EngineSimpleInfo:
 
     @property
     def available_instance(self):
-        """Gets the available_instance of this EngineSimpleInfo.
+        r"""Gets the available_instance of this EngineSimpleInfo.
 
         可用实例总数
 
@@ -574,7 +574,7 @@ class EngineSimpleInfo:
 
     @available_instance.setter
     def available_instance(self, available_instance):
-        """Sets the available_instance of this EngineSimpleInfo.
+        r"""Sets the available_instance of this EngineSimpleInfo.
 
         可用实例总数
 
@@ -585,7 +585,7 @@ class EngineSimpleInfo:
 
     @property
     def version(self):
-        """Gets the version of this EngineSimpleInfo.
+        r"""Gets the version of this EngineSimpleInfo.
 
         微服务引擎当前版本
 
@@ -596,7 +596,7 @@ class EngineSimpleInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this EngineSimpleInfo.
+        r"""Sets the version of this EngineSimpleInfo.
 
         微服务引擎当前版本
 
@@ -607,7 +607,7 @@ class EngineSimpleInfo:
 
     @property
     def latest_version(self):
-        """Gets the latest_version of this EngineSimpleInfo.
+        r"""Gets the latest_version of this EngineSimpleInfo.
 
         微服务引擎最新版本
 
@@ -618,7 +618,7 @@ class EngineSimpleInfo:
 
     @latest_version.setter
     def latest_version(self, latest_version):
-        """Sets the latest_version of this EngineSimpleInfo.
+        r"""Sets the latest_version of this EngineSimpleInfo.
 
         微服务引擎最新版本
 
@@ -629,7 +629,7 @@ class EngineSimpleInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this EngineSimpleInfo.
+        r"""Gets the create_time of this EngineSimpleInfo.
 
         微服务引擎创建时间
 
@@ -640,7 +640,7 @@ class EngineSimpleInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this EngineSimpleInfo.
+        r"""Sets the create_time of this EngineSimpleInfo.
 
         微服务引擎创建时间
 
@@ -651,7 +651,7 @@ class EngineSimpleInfo:
 
     @property
     def due_to(self):
-        """Gets the due_to of this EngineSimpleInfo.
+        r"""Gets the due_to of this EngineSimpleInfo.
 
         微服务引擎到期时间
 
@@ -662,7 +662,7 @@ class EngineSimpleInfo:
 
     @due_to.setter
     def due_to(self, due_to):
-        """Sets the due_to of this EngineSimpleInfo.
+        r"""Sets the due_to of this EngineSimpleInfo.
 
         微服务引擎到期时间
 
@@ -673,7 +673,7 @@ class EngineSimpleInfo:
 
     @property
     def latest_job_id(self):
-        """Gets the latest_job_id of this EngineSimpleInfo.
+        r"""Gets the latest_job_id of this EngineSimpleInfo.
 
         微服务引擎最近的任务ID
 
@@ -684,7 +684,7 @@ class EngineSimpleInfo:
 
     @latest_job_id.setter
     def latest_job_id(self, latest_job_id):
-        """Sets the latest_job_id of this EngineSimpleInfo.
+        r"""Sets the latest_job_id of this EngineSimpleInfo.
 
         微服务引擎最近的任务ID
 
@@ -695,7 +695,7 @@ class EngineSimpleInfo:
 
     @property
     def engine_additional_actions(self):
-        """Gets the engine_additional_actions of this EngineSimpleInfo.
+        r"""Gets the engine_additional_actions of this EngineSimpleInfo.
 
         微服务引擎允许的附加操作
 
@@ -706,7 +706,7 @@ class EngineSimpleInfo:
 
     @engine_additional_actions.setter
     def engine_additional_actions(self, engine_additional_actions):
-        """Sets the engine_additional_actions of this EngineSimpleInfo.
+        r"""Sets the engine_additional_actions of this EngineSimpleInfo.
 
         微服务引擎允许的附加操作
 
@@ -717,7 +717,7 @@ class EngineSimpleInfo:
 
     @property
     def spec_type(self):
-        """Gets the spec_type of this EngineSimpleInfo.
+        r"""Gets the spec_type of this EngineSimpleInfo.
 
         微服务引擎应用部署类型
 
@@ -728,7 +728,7 @@ class EngineSimpleInfo:
 
     @spec_type.setter
     def spec_type(self, spec_type):
-        """Sets the spec_type of this EngineSimpleInfo.
+        r"""Sets the spec_type of this EngineSimpleInfo.
 
         微服务引擎应用部署类型
 
@@ -739,7 +739,7 @@ class EngineSimpleInfo:
 
     @property
     def reference(self):
-        """Gets the reference of this EngineSimpleInfo.
+        r"""Gets the reference of this EngineSimpleInfo.
 
         :return: The reference of this EngineSimpleInfo.
         :rtype: :class:`huaweicloudsdkcse.v1.EngineReference`
@@ -748,7 +748,7 @@ class EngineSimpleInfo:
 
     @reference.setter
     def reference(self, reference):
-        """Sets the reference of this EngineSimpleInfo.
+        r"""Sets the reference of this EngineSimpleInfo.
 
         :param reference: The reference of this EngineSimpleInfo.
         :type reference: :class:`huaweicloudsdkcse.v1.EngineReference`

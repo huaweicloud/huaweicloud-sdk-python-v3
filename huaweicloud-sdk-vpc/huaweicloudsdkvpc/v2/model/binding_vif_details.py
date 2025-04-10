@@ -29,7 +29,7 @@ class BindingVifDetails:
     }
 
     def __init__(self, primary_interface=None, port_filter=None, ovs_hybrid_plug=None):
-        """BindingVifDetails
+        r"""BindingVifDetails
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BindingVifDetails:
 
     @property
     def primary_interface(self):
-        """Gets the primary_interface of this BindingVifDetails.
+        r"""Gets the primary_interface of this BindingVifDetails.
 
         功能说明：取值为true，表示是虚拟机的主网卡。
 
@@ -68,7 +68,7 @@ class BindingVifDetails:
 
     @primary_interface.setter
     def primary_interface(self, primary_interface):
-        """Sets the primary_interface of this BindingVifDetails.
+        r"""Sets the primary_interface of this BindingVifDetails.
 
         功能说明：取值为true，表示是虚拟机的主网卡。
 
@@ -79,7 +79,7 @@ class BindingVifDetails:
 
     @property
     def port_filter(self):
-        """Gets the port_filter of this BindingVifDetails.
+        r"""Gets the port_filter of this BindingVifDetails.
 
         功能说明：表示该网络服务提供端口过滤特性，如安全组和反MAC/IP欺骗。
 
@@ -90,7 +90,7 @@ class BindingVifDetails:
 
     @port_filter.setter
     def port_filter(self, port_filter):
-        """Sets the port_filter of this BindingVifDetails.
+        r"""Sets the port_filter of this BindingVifDetails.
 
         功能说明：表示该网络服务提供端口过滤特性，如安全组和反MAC/IP欺骗。
 
@@ -101,7 +101,7 @@ class BindingVifDetails:
 
     @property
     def ovs_hybrid_plug(self):
-        """Gets the ovs_hybrid_plug of this BindingVifDetails.
+        r"""Gets the ovs_hybrid_plug of this BindingVifDetails.
 
         用于通知像nova这样的API消费者，应该使用OVS的混合插入策略。
 
@@ -112,7 +112,7 @@ class BindingVifDetails:
 
     @ovs_hybrid_plug.setter
     def ovs_hybrid_plug(self, ovs_hybrid_plug):
-        """Sets the ovs_hybrid_plug of this BindingVifDetails.
+        r"""Sets the ovs_hybrid_plug of this BindingVifDetails.
 
         用于通知像nova这样的API消费者，应该使用OVS的混合插入策略。
 

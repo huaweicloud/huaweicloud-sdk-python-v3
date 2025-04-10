@@ -29,7 +29,7 @@ class StartInstanceEnlargeVolumeActionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """StartInstanceEnlargeVolumeActionRequest
+        r"""StartInstanceEnlargeVolumeActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class StartInstanceEnlargeVolumeActionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this StartInstanceEnlargeVolumeActionRequest.
+        r"""Gets the x_language of this StartInstanceEnlargeVolumeActionRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class StartInstanceEnlargeVolumeActionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this StartInstanceEnlargeVolumeActionRequest.
+        r"""Sets the x_language of this StartInstanceEnlargeVolumeActionRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class StartInstanceEnlargeVolumeActionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StartInstanceEnlargeVolumeActionRequest.
+        r"""Gets the instance_id of this StartInstanceEnlargeVolumeActionRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class StartInstanceEnlargeVolumeActionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StartInstanceEnlargeVolumeActionRequest.
+        r"""Sets the instance_id of this StartInstanceEnlargeVolumeActionRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class StartInstanceEnlargeVolumeActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartInstanceEnlargeVolumeActionRequest.
+        r"""Gets the body of this StartInstanceEnlargeVolumeActionRequest.
 
         :return: The body of this StartInstanceEnlargeVolumeActionRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.EnlargeVolumeRequestBody`
@@ -109,7 +109,7 @@ class StartInstanceEnlargeVolumeActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartInstanceEnlargeVolumeActionRequest.
+        r"""Sets the body of this StartInstanceEnlargeVolumeActionRequest.
 
         :param body: The body of this StartInstanceEnlargeVolumeActionRequest.
         :type body: :class:`huaweicloudsdkrds.v3.EnlargeVolumeRequestBody`

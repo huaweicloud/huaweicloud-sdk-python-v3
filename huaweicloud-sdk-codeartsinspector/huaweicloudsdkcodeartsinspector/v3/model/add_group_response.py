@@ -28,7 +28,7 @@ class AddGroupResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None):
-        """AddGroupResponse
+        r"""AddGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddGroupResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this AddGroupResponse.
+        r"""Gets the id of this AddGroupResponse.
 
         群组ID
 
@@ -62,7 +62,7 @@ class AddGroupResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AddGroupResponse.
+        r"""Sets the id of this AddGroupResponse.
 
         群组ID
 
@@ -73,7 +73,7 @@ class AddGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this AddGroupResponse.
+        r"""Gets the name of this AddGroupResponse.
 
         群组名称
 
@@ -84,7 +84,7 @@ class AddGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddGroupResponse.
+        r"""Sets the name of this AddGroupResponse.
 
         群组名称
 

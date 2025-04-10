@@ -29,7 +29,7 @@ class ShowForwardingConfigRequest:
     }
 
     def __init__(self, instance_id=None, forwarding_type=None, forwarding_config_id=None):
-        """ShowForwardingConfigRequest
+        r"""ShowForwardingConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowForwardingConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowForwardingConfigRequest.
+        r"""Gets the instance_id of this ShowForwardingConfigRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -66,7 +66,7 @@ class ShowForwardingConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowForwardingConfigRequest.
+        r"""Sets the instance_id of this ShowForwardingConfigRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -77,7 +77,7 @@ class ShowForwardingConfigRequest:
 
     @property
     def forwarding_type(self):
-        """Gets the forwarding_type of this ShowForwardingConfigRequest.
+        r"""Gets the forwarding_type of this ShowForwardingConfigRequest.
 
         **参数说明**：转发配置的类型。  **取值范围**：当前仅支持“kafka，mrskafka”。
 
@@ -88,7 +88,7 @@ class ShowForwardingConfigRequest:
 
     @forwarding_type.setter
     def forwarding_type(self, forwarding_type):
-        """Sets the forwarding_type of this ShowForwardingConfigRequest.
+        r"""Sets the forwarding_type of this ShowForwardingConfigRequest.
 
         **参数说明**：转发配置的类型。  **取值范围**：当前仅支持“kafka，mrskafka”。
 
@@ -99,7 +99,7 @@ class ShowForwardingConfigRequest:
 
     @property
     def forwarding_config_id(self):
-        """Gets the forwarding_config_id of this ShowForwardingConfigRequest.
+        r"""Gets the forwarding_config_id of this ShowForwardingConfigRequest.
 
         **参数说明**：转发配置的唯一ID。
 
@@ -110,7 +110,7 @@ class ShowForwardingConfigRequest:
 
     @forwarding_config_id.setter
     def forwarding_config_id(self, forwarding_config_id):
-        """Sets the forwarding_config_id of this ShowForwardingConfigRequest.
+        r"""Sets the forwarding_config_id of this ShowForwardingConfigRequest.
 
         **参数说明**：转发配置的唯一ID。
 

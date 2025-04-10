@@ -25,7 +25,7 @@ class OperateSqlFilterControlReq:
     }
 
     def __init__(self, switch_status=None):
-        """OperateSqlFilterControlReq
+        r"""OperateSqlFilterControlReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OperateSqlFilterControlReq:
 
     @property
     def switch_status(self):
-        """Gets the switch_status of this OperateSqlFilterControlReq.
+        r"""Gets the switch_status of this OperateSqlFilterControlReq.
 
         SQL限流开关状态。 取值： - ON，表示开启。 - OFF，表示关闭。
 
@@ -53,7 +53,7 @@ class OperateSqlFilterControlReq:
 
     @switch_status.setter
     def switch_status(self, switch_status):
-        """Sets the switch_status of this OperateSqlFilterControlReq.
+        r"""Sets the switch_status of this OperateSqlFilterControlReq.
 
         SQL限流开关状态。 取值： - ON，表示开启。 - OFF，表示关闭。
 

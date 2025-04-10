@@ -23,7 +23,7 @@ class ShowAdminConfigRequest:
     }
 
     def __init__(self):
-        """ShowAdminConfigRequest
+        r"""ShowAdminConfigRequest
 
         The model defined in huaweicloud sdk
 

@@ -26,7 +26,7 @@ class ListElbCertsResponse(SdkResponse):
     }
 
     def __init__(self, certificates=None):
-        """ListElbCertsResponse
+        r"""ListElbCertsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListElbCertsResponse(SdkResponse):
 
     @property
     def certificates(self):
-        """Gets the certificates of this ListElbCertsResponse.
+        r"""Gets the certificates of this ListElbCertsResponse.
 
         :return: The certificates of this ListElbCertsResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.CertificatesResource`
@@ -53,7 +53,7 @@ class ListElbCertsResponse(SdkResponse):
 
     @certificates.setter
     def certificates(self, certificates):
-        """Sets the certificates of this ListElbCertsResponse.
+        r"""Sets the certificates of this ListElbCertsResponse.
 
         :param certificates: The certificates of this ListElbCertsResponse.
         :type certificates: :class:`huaweicloudsdkcss.v1.CertificatesResource`

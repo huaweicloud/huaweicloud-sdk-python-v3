@@ -31,7 +31,7 @@ class ListInvoicesRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, offset=None, limit=None):
-        """ListInvoicesRequest
+        r"""ListInvoicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListInvoicesRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListInvoicesRequest.
+        r"""Gets the start_time of this ListInvoicesRequest.
 
         发票申请开始时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -71,7 +71,7 @@ class ListInvoicesRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListInvoicesRequest.
+        r"""Sets the start_time of this ListInvoicesRequest.
 
         发票申请开始时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -82,7 +82,7 @@ class ListInvoicesRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListInvoicesRequest.
+        r"""Gets the end_time of this ListInvoicesRequest.
 
         发票申请结束时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -93,7 +93,7 @@ class ListInvoicesRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListInvoicesRequest.
+        r"""Sets the end_time of this ListInvoicesRequest.
 
         发票申请结束时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -104,7 +104,7 @@ class ListInvoicesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInvoicesRequest.
+        r"""Gets the offset of this ListInvoicesRequest.
 
         页码。
 
@@ -115,7 +115,7 @@ class ListInvoicesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInvoicesRequest.
+        r"""Sets the offset of this ListInvoicesRequest.
 
         页码。
 
@@ -126,7 +126,7 @@ class ListInvoicesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInvoicesRequest.
+        r"""Gets the limit of this ListInvoicesRequest.
 
         每页大小。
 
@@ -137,7 +137,7 @@ class ListInvoicesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInvoicesRequest.
+        r"""Sets the limit of this ListInvoicesRequest.
 
         每页大小。
 

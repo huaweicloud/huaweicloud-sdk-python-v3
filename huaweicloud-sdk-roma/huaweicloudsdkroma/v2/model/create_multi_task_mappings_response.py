@@ -26,7 +26,7 @@ class CreateMultiTaskMappingsResponse(SdkResponse):
     }
 
     def __init__(self, mapping_id=None):
-        """CreateMultiTaskMappingsResponse
+        r"""CreateMultiTaskMappingsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateMultiTaskMappingsResponse(SdkResponse):
 
     @property
     def mapping_id(self):
-        """Gets the mapping_id of this CreateMultiTaskMappingsResponse.
+        r"""Gets the mapping_id of this CreateMultiTaskMappingsResponse.
 
         映射唯一ID
 
@@ -55,7 +55,7 @@ class CreateMultiTaskMappingsResponse(SdkResponse):
 
     @mapping_id.setter
     def mapping_id(self, mapping_id):
-        """Sets the mapping_id of this CreateMultiTaskMappingsResponse.
+        r"""Sets the mapping_id of this CreateMultiTaskMappingsResponse.
 
         映射唯一ID
 

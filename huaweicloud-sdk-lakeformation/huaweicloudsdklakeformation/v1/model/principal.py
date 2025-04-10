@@ -29,7 +29,7 @@ class Principal:
     }
 
     def __init__(self, principal_type=None, principal_source=None, principal_name=None):
-        """Principal
+        r"""Principal
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Principal:
 
     @property
     def principal_type(self):
-        """Gets the principal_type of this Principal.
+        r"""Gets the principal_type of this Principal.
 
         主体类型 USER用户 GROUP组 ROLE角色 SHARE共享 OTHER其它
 
@@ -65,7 +65,7 @@ class Principal:
 
     @principal_type.setter
     def principal_type(self, principal_type):
-        """Sets the principal_type of this Principal.
+        r"""Sets the principal_type of this Principal.
 
         主体类型 USER用户 GROUP组 ROLE角色 SHARE共享 OTHER其它
 
@@ -76,7 +76,7 @@ class Principal:
 
     @property
     def principal_source(self):
-        """Gets the principal_source of this Principal.
+        r"""Gets the principal_source of this Principal.
 
         主体来源 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户
 
@@ -87,7 +87,7 @@ class Principal:
 
     @principal_source.setter
     def principal_source(self, principal_source):
-        """Sets the principal_source of this Principal.
+        r"""Sets the principal_source of this Principal.
 
         主体来源 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户
 
@@ -98,7 +98,7 @@ class Principal:
 
     @property
     def principal_name(self):
-        """Gets the principal_name of this Principal.
+        r"""Gets the principal_name of this Principal.
 
         主体名
 
@@ -109,7 +109,7 @@ class Principal:
 
     @principal_name.setter
     def principal_name(self, principal_name):
-        """Sets the principal_name of this Principal.
+        r"""Sets the principal_name of this Principal.
 
         主体名
 

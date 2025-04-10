@@ -31,7 +31,7 @@ class ShowSkillOrderListRequest:
     }
 
     def __init__(self, limit=None, offset=None, skill_name=None, skill_form=None):
-        """ShowSkillOrderListRequest
+        r"""ShowSkillOrderListRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowSkillOrderListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowSkillOrderListRequest.
+        r"""Gets the limit of this ShowSkillOrderListRequest.
 
         每页显示的条目数量, 最大 100，默认值 10
 
@@ -75,7 +75,7 @@ class ShowSkillOrderListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowSkillOrderListRequest.
+        r"""Sets the limit of this ShowSkillOrderListRequest.
 
         每页显示的条目数量, 最大 100，默认值 10
 
@@ -86,7 +86,7 @@ class ShowSkillOrderListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowSkillOrderListRequest.
+        r"""Gets the offset of this ShowSkillOrderListRequest.
 
         查询的起始位置, 默认值 0
 
@@ -97,7 +97,7 @@ class ShowSkillOrderListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowSkillOrderListRequest.
+        r"""Sets the offset of this ShowSkillOrderListRequest.
 
         查询的起始位置, 默认值 0
 
@@ -108,7 +108,7 @@ class ShowSkillOrderListRequest:
 
     @property
     def skill_name(self):
-        """Gets the skill_name of this ShowSkillOrderListRequest.
+        r"""Gets the skill_name of this ShowSkillOrderListRequest.
 
         技能名称，支持模糊匹配。中英文、数字、下划线、中划线 长度[1-60]
 
@@ -119,7 +119,7 @@ class ShowSkillOrderListRequest:
 
     @skill_name.setter
     def skill_name(self, skill_name):
-        """Sets the skill_name of this ShowSkillOrderListRequest.
+        r"""Sets the skill_name of this ShowSkillOrderListRequest.
 
         技能名称，支持模糊匹配。中英文、数字、下划线、中划线 长度[1-60]
 
@@ -130,7 +130,7 @@ class ShowSkillOrderListRequest:
 
     @property
     def skill_form(self):
-        """Gets the skill_form of this ShowSkillOrderListRequest.
+        r"""Gets the skill_form of this ShowSkillOrderListRequest.
 
         技能形式，no_termplate不支持Modelbox部署模板，support_template支持Modelbox模板。
 
@@ -141,7 +141,7 @@ class ShowSkillOrderListRequest:
 
     @skill_form.setter
     def skill_form(self, skill_form):
-        """Sets the skill_form of this ShowSkillOrderListRequest.
+        r"""Sets the skill_form of this ShowSkillOrderListRequest.
 
         技能形式，no_termplate不支持Modelbox部署模板，support_template支持Modelbox模板。
 

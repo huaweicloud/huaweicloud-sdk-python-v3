@@ -44,7 +44,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
     }
 
     def __init__(self, parent_directory_id=None, directory_name=None, category_type=None, directory_id=None, paging=None, offset=None, limit=None, count=None, elements=None, sub_directories=None):
-        """ShowDirectoryTreeResponse
+        r"""ShowDirectoryTreeResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @property
     def parent_directory_id(self):
-        """Gets the parent_directory_id of this ShowDirectoryTreeResponse.
+        r"""Gets the parent_directory_id of this ShowDirectoryTreeResponse.
 
         :return: The parent_directory_id of this ShowDirectoryTreeResponse.
         :rtype: str
@@ -116,7 +116,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @parent_directory_id.setter
     def parent_directory_id(self, parent_directory_id):
-        """Sets the parent_directory_id of this ShowDirectoryTreeResponse.
+        r"""Sets the parent_directory_id of this ShowDirectoryTreeResponse.
 
         :param parent_directory_id: The parent_directory_id of this ShowDirectoryTreeResponse.
         :type parent_directory_id: str
@@ -125,7 +125,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @property
     def directory_name(self):
-        """Gets the directory_name of this ShowDirectoryTreeResponse.
+        r"""Gets the directory_name of this ShowDirectoryTreeResponse.
 
         :return: The directory_name of this ShowDirectoryTreeResponse.
         :rtype: str
@@ -134,7 +134,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @directory_name.setter
     def directory_name(self, directory_name):
-        """Sets the directory_name of this ShowDirectoryTreeResponse.
+        r"""Sets the directory_name of this ShowDirectoryTreeResponse.
 
         :param directory_name: The directory_name of this ShowDirectoryTreeResponse.
         :type directory_name: str
@@ -143,7 +143,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @property
     def category_type(self):
-        """Gets the category_type of this ShowDirectoryTreeResponse.
+        r"""Gets the category_type of this ShowDirectoryTreeResponse.
 
         :return: The category_type of this ShowDirectoryTreeResponse.
         :rtype: str
@@ -152,7 +152,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @category_type.setter
     def category_type(self, category_type):
-        """Sets the category_type of this ShowDirectoryTreeResponse.
+        r"""Sets the category_type of this ShowDirectoryTreeResponse.
 
         :param category_type: The category_type of this ShowDirectoryTreeResponse.
         :type category_type: str
@@ -161,7 +161,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @property
     def directory_id(self):
-        """Gets the directory_id of this ShowDirectoryTreeResponse.
+        r"""Gets the directory_id of this ShowDirectoryTreeResponse.
 
         :return: The directory_id of this ShowDirectoryTreeResponse.
         :rtype: str
@@ -170,7 +170,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @directory_id.setter
     def directory_id(self, directory_id):
-        """Sets the directory_id of this ShowDirectoryTreeResponse.
+        r"""Sets the directory_id of this ShowDirectoryTreeResponse.
 
         :param directory_id: The directory_id of this ShowDirectoryTreeResponse.
         :type directory_id: str
@@ -179,7 +179,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @property
     def paging(self):
-        """Gets the paging of this ShowDirectoryTreeResponse.
+        r"""Gets the paging of this ShowDirectoryTreeResponse.
 
         :return: The paging of this ShowDirectoryTreeResponse.
         :rtype: bool
@@ -188,7 +188,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @paging.setter
     def paging(self, paging):
-        """Sets the paging of this ShowDirectoryTreeResponse.
+        r"""Sets the paging of this ShowDirectoryTreeResponse.
 
         :param paging: The paging of this ShowDirectoryTreeResponse.
         :type paging: bool
@@ -197,7 +197,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ShowDirectoryTreeResponse.
+        r"""Gets the offset of this ShowDirectoryTreeResponse.
 
         :return: The offset of this ShowDirectoryTreeResponse.
         :rtype: int
@@ -206,7 +206,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowDirectoryTreeResponse.
+        r"""Sets the offset of this ShowDirectoryTreeResponse.
 
         :param offset: The offset of this ShowDirectoryTreeResponse.
         :type offset: int
@@ -215,7 +215,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ShowDirectoryTreeResponse.
+        r"""Gets the limit of this ShowDirectoryTreeResponse.
 
         :return: The limit of this ShowDirectoryTreeResponse.
         :rtype: int
@@ -224,7 +224,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowDirectoryTreeResponse.
+        r"""Sets the limit of this ShowDirectoryTreeResponse.
 
         :param limit: The limit of this ShowDirectoryTreeResponse.
         :type limit: int
@@ -233,7 +233,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowDirectoryTreeResponse.
+        r"""Gets the count of this ShowDirectoryTreeResponse.
 
         :return: The count of this ShowDirectoryTreeResponse.
         :rtype: int
@@ -242,7 +242,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowDirectoryTreeResponse.
+        r"""Sets the count of this ShowDirectoryTreeResponse.
 
         :param count: The count of this ShowDirectoryTreeResponse.
         :type count: int
@@ -251,7 +251,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @property
     def elements(self):
-        """Gets the elements of this ShowDirectoryTreeResponse.
+        r"""Gets the elements of this ShowDirectoryTreeResponse.
 
         :return: The elements of this ShowDirectoryTreeResponse.
         :rtype: list[:class:`huaweicloudsdkdlf.v1.TreeNodeElement`]
@@ -260,7 +260,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @elements.setter
     def elements(self, elements):
-        """Sets the elements of this ShowDirectoryTreeResponse.
+        r"""Sets the elements of this ShowDirectoryTreeResponse.
 
         :param elements: The elements of this ShowDirectoryTreeResponse.
         :type elements: list[:class:`huaweicloudsdkdlf.v1.TreeNodeElement`]
@@ -269,7 +269,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @property
     def sub_directories(self):
-        """Gets the sub_directories of this ShowDirectoryTreeResponse.
+        r"""Gets the sub_directories of this ShowDirectoryTreeResponse.
 
         :return: The sub_directories of this ShowDirectoryTreeResponse.
         :rtype: list[:class:`huaweicloudsdkdlf.v1.DirectoryTreeResp`]
@@ -278,7 +278,7 @@ class ShowDirectoryTreeResponse(SdkResponse):
 
     @sub_directories.setter
     def sub_directories(self, sub_directories):
-        """Sets the sub_directories of this ShowDirectoryTreeResponse.
+        r"""Sets the sub_directories of this ShowDirectoryTreeResponse.
 
         :param sub_directories: The sub_directories of this ShowDirectoryTreeResponse.
         :type sub_directories: list[:class:`huaweicloudsdkdlf.v1.DirectoryTreeResp`]

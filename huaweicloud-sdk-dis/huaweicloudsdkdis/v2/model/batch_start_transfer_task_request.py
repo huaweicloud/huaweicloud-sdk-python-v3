@@ -27,7 +27,7 @@ class BatchStartTransferTaskRequest:
     }
 
     def __init__(self, stream_name=None, body=None):
-        """BatchStartTransferTaskRequest
+        r"""BatchStartTransferTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchStartTransferTaskRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this BatchStartTransferTaskRequest.
+        r"""Gets the stream_name of this BatchStartTransferTaskRequest.
 
         需要查询的通道名称。
 
@@ -60,7 +60,7 @@ class BatchStartTransferTaskRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this BatchStartTransferTaskRequest.
+        r"""Sets the stream_name of this BatchStartTransferTaskRequest.
 
         需要查询的通道名称。
 
@@ -71,7 +71,7 @@ class BatchStartTransferTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchStartTransferTaskRequest.
+        r"""Gets the body of this BatchStartTransferTaskRequest.
 
         :return: The body of this BatchStartTransferTaskRequest.
         :rtype: :class:`huaweicloudsdkdis.v2.BatchStartTransferTaskReq`
@@ -80,7 +80,7 @@ class BatchStartTransferTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchStartTransferTaskRequest.
+        r"""Sets the body of this BatchStartTransferTaskRequest.
 
         :param body: The body of this BatchStartTransferTaskRequest.
         :type body: :class:`huaweicloudsdkdis.v2.BatchStartTransferTaskReq`

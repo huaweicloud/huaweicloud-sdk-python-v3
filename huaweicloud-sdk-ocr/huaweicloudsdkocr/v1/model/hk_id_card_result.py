@@ -49,7 +49,7 @@ class HkIdCardResult:
     }
 
     def __init__(self, name=None, name_en=None, sex=None, birth_date=None, number=None, symbols=None, name_telegraph_code=None, permanent=None, initial_issue_date=None, issue_date=None, portrait_location=None, portrait_image=None, confidence=None):
-        """HkIdCardResult
+        r"""HkIdCardResult
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class HkIdCardResult:
 
     @property
     def name(self):
-        """Gets the name of this HkIdCardResult.
+        r"""Gets the name of this HkIdCardResult.
 
         中文姓名。 
 
@@ -138,7 +138,7 @@ class HkIdCardResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HkIdCardResult.
+        r"""Sets the name of this HkIdCardResult.
 
         中文姓名。 
 
@@ -149,7 +149,7 @@ class HkIdCardResult:
 
     @property
     def name_en(self):
-        """Gets the name_en of this HkIdCardResult.
+        r"""Gets the name_en of this HkIdCardResult.
 
         英文姓名。 
 
@@ -160,7 +160,7 @@ class HkIdCardResult:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this HkIdCardResult.
+        r"""Sets the name_en of this HkIdCardResult.
 
         英文姓名。 
 
@@ -171,7 +171,7 @@ class HkIdCardResult:
 
     @property
     def sex(self):
-        """Gets the sex of this HkIdCardResult.
+        r"""Gets the sex of this HkIdCardResult.
 
         性别。  男： value值为：M 女： value值为：F 
 
@@ -182,7 +182,7 @@ class HkIdCardResult:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this HkIdCardResult.
+        r"""Sets the sex of this HkIdCardResult.
 
         性别。  男： value值为：M 女： value值为：F 
 
@@ -193,7 +193,7 @@ class HkIdCardResult:
 
     @property
     def birth_date(self):
-        """Gets the birth_date of this HkIdCardResult.
+        r"""Gets the birth_date of this HkIdCardResult.
 
         出生日期。 
 
@@ -204,7 +204,7 @@ class HkIdCardResult:
 
     @birth_date.setter
     def birth_date(self, birth_date):
-        """Sets the birth_date of this HkIdCardResult.
+        r"""Sets the birth_date of this HkIdCardResult.
 
         出生日期。 
 
@@ -215,7 +215,7 @@ class HkIdCardResult:
 
     @property
     def number(self):
-        """Gets the number of this HkIdCardResult.
+        r"""Gets the number of this HkIdCardResult.
 
         身份证号。 
 
@@ -226,7 +226,7 @@ class HkIdCardResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this HkIdCardResult.
+        r"""Sets the number of this HkIdCardResult.
 
         身份证号。 
 
@@ -237,7 +237,7 @@ class HkIdCardResult:
 
     @property
     def symbols(self):
-        """Gets the symbols of this HkIdCardResult.
+        r"""Gets the symbols of this HkIdCardResult.
 
         证件符号。 
 
@@ -248,7 +248,7 @@ class HkIdCardResult:
 
     @symbols.setter
     def symbols(self, symbols):
-        """Sets the symbols of this HkIdCardResult.
+        r"""Sets the symbols of this HkIdCardResult.
 
         证件符号。 
 
@@ -259,7 +259,7 @@ class HkIdCardResult:
 
     @property
     def name_telegraph_code(self):
-        """Gets the name_telegraph_code of this HkIdCardResult.
+        r"""Gets the name_telegraph_code of this HkIdCardResult.
 
         中文姓名对应电码。 
 
@@ -270,7 +270,7 @@ class HkIdCardResult:
 
     @name_telegraph_code.setter
     def name_telegraph_code(self, name_telegraph_code):
-        """Sets the name_telegraph_code of this HkIdCardResult.
+        r"""Sets the name_telegraph_code of this HkIdCardResult.
 
         中文姓名对应电码。 
 
@@ -281,7 +281,7 @@ class HkIdCardResult:
 
     @property
     def permanent(self):
-        """Gets the permanent of this HkIdCardResult.
+        r"""Gets the permanent of this HkIdCardResult.
 
         是否永久性居民身份证。  永久：value值为true 非永久：value值为false 
 
@@ -292,7 +292,7 @@ class HkIdCardResult:
 
     @permanent.setter
     def permanent(self, permanent):
-        """Sets the permanent of this HkIdCardResult.
+        r"""Sets the permanent of this HkIdCardResult.
 
         是否永久性居民身份证。  永久：value值为true 非永久：value值为false 
 
@@ -303,7 +303,7 @@ class HkIdCardResult:
 
     @property
     def initial_issue_date(self):
-        """Gets the initial_issue_date of this HkIdCardResult.
+        r"""Gets the initial_issue_date of this HkIdCardResult.
 
         首次领用日期。 
 
@@ -314,7 +314,7 @@ class HkIdCardResult:
 
     @initial_issue_date.setter
     def initial_issue_date(self, initial_issue_date):
-        """Sets the initial_issue_date of this HkIdCardResult.
+        r"""Sets the initial_issue_date of this HkIdCardResult.
 
         首次领用日期。 
 
@@ -325,7 +325,7 @@ class HkIdCardResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this HkIdCardResult.
+        r"""Gets the issue_date of this HkIdCardResult.
 
         签发日期。 
 
@@ -336,7 +336,7 @@ class HkIdCardResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this HkIdCardResult.
+        r"""Sets the issue_date of this HkIdCardResult.
 
         签发日期。 
 
@@ -347,7 +347,7 @@ class HkIdCardResult:
 
     @property
     def portrait_location(self):
-        """Gets the portrait_location of this HkIdCardResult.
+        r"""Gets the portrait_location of this HkIdCardResult.
 
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -358,7 +358,7 @@ class HkIdCardResult:
 
     @portrait_location.setter
     def portrait_location(self, portrait_location):
-        """Sets the portrait_location of this HkIdCardResult.
+        r"""Sets the portrait_location of this HkIdCardResult.
 
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -369,7 +369,7 @@ class HkIdCardResult:
 
     @property
     def portrait_image(self):
-        """Gets the portrait_image of this HkIdCardResult.
+        r"""Gets the portrait_image of this HkIdCardResult.
 
         头像的base64编码，默认返回尺寸较大的头像。 当输入参数“return_portrait_image”为true时，才返回该参数。 
 
@@ -380,7 +380,7 @@ class HkIdCardResult:
 
     @portrait_image.setter
     def portrait_image(self, portrait_image):
-        """Sets the portrait_image of this HkIdCardResult.
+        r"""Sets the portrait_image of this HkIdCardResult.
 
         头像的base64编码，默认返回尺寸较大的头像。 当输入参数“return_portrait_image”为true时，才返回该参数。 
 
@@ -391,7 +391,7 @@ class HkIdCardResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this HkIdCardResult.
+        r"""Gets the confidence of this HkIdCardResult.
 
         各个字段的置信度。 
 
@@ -402,7 +402,7 @@ class HkIdCardResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this HkIdCardResult.
+        r"""Sets the confidence of this HkIdCardResult.
 
         各个字段的置信度。 
 

@@ -28,7 +28,7 @@ class BatchShowTrafficEventsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, events=None):
-        """BatchShowTrafficEventsResponse
+        r"""BatchShowTrafficEventsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchShowTrafficEventsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchShowTrafficEventsResponse.
+        r"""Gets the count of this BatchShowTrafficEventsResponse.
 
         **参数说明**：返回条目总数量。
 
@@ -62,7 +62,7 @@ class BatchShowTrafficEventsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchShowTrafficEventsResponse.
+        r"""Sets the count of this BatchShowTrafficEventsResponse.
 
         **参数说明**：返回条目总数量。
 
@@ -73,7 +73,7 @@ class BatchShowTrafficEventsResponse(SdkResponse):
 
     @property
     def events(self):
-        """Gets the events of this BatchShowTrafficEventsResponse.
+        r"""Gets the events of this BatchShowTrafficEventsResponse.
 
         **参数说明**：事件列表。
 
@@ -84,7 +84,7 @@ class BatchShowTrafficEventsResponse(SdkResponse):
 
     @events.setter
     def events(self, events):
-        """Sets the events of this BatchShowTrafficEventsResponse.
+        r"""Sets the events of this BatchShowTrafficEventsResponse.
 
         **参数说明**：事件列表。
 

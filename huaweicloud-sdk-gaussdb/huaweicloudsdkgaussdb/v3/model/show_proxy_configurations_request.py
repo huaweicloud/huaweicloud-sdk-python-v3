@@ -35,7 +35,7 @@ class ShowProxyConfigurationsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, proxy_id=None, limit=None, offset=None, name=None):
-        """ShowProxyConfigurationsRequest
+        r"""ShowProxyConfigurationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ShowProxyConfigurationsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowProxyConfigurationsRequest.
+        r"""Gets the x_language of this ShowProxyConfigurationsRequest.
 
         语言。
 
@@ -87,7 +87,7 @@ class ShowProxyConfigurationsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowProxyConfigurationsRequest.
+        r"""Sets the x_language of this ShowProxyConfigurationsRequest.
 
         语言。
 
@@ -98,7 +98,7 @@ class ShowProxyConfigurationsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowProxyConfigurationsRequest.
+        r"""Gets the instance_id of this ShowProxyConfigurationsRequest.
 
         实例ID。
 
@@ -109,7 +109,7 @@ class ShowProxyConfigurationsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowProxyConfigurationsRequest.
+        r"""Sets the instance_id of this ShowProxyConfigurationsRequest.
 
         实例ID。
 
@@ -120,7 +120,7 @@ class ShowProxyConfigurationsRequest:
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this ShowProxyConfigurationsRequest.
+        r"""Gets the proxy_id of this ShowProxyConfigurationsRequest.
 
         数据库代理ID。
 
@@ -131,7 +131,7 @@ class ShowProxyConfigurationsRequest:
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this ShowProxyConfigurationsRequest.
+        r"""Sets the proxy_id of this ShowProxyConfigurationsRequest.
 
         数据库代理ID。
 
@@ -142,7 +142,7 @@ class ShowProxyConfigurationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowProxyConfigurationsRequest.
+        r"""Gets the limit of this ShowProxyConfigurationsRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 
@@ -153,7 +153,7 @@ class ShowProxyConfigurationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowProxyConfigurationsRequest.
+        r"""Sets the limit of this ShowProxyConfigurationsRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 
@@ -164,7 +164,7 @@ class ShowProxyConfigurationsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowProxyConfigurationsRequest.
+        r"""Gets the offset of this ShowProxyConfigurationsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -175,7 +175,7 @@ class ShowProxyConfigurationsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowProxyConfigurationsRequest.
+        r"""Sets the offset of this ShowProxyConfigurationsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -186,7 +186,7 @@ class ShowProxyConfigurationsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowProxyConfigurationsRequest.
+        r"""Gets the name of this ShowProxyConfigurationsRequest.
 
         参数名称，为空则全量查询。
 
@@ -197,7 +197,7 @@ class ShowProxyConfigurationsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowProxyConfigurationsRequest.
+        r"""Sets the name of this ShowProxyConfigurationsRequest.
 
         参数名称，为空则全量查询。
 

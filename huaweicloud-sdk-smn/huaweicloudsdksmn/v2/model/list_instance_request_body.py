@@ -41,7 +41,7 @@ class ListInstanceRequestBody:
     }
 
     def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, offset=None, limit=None, action=None, matches=None, without_any_tag=None):
-        """ListInstanceRequestBody
+        r"""ListInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListInstanceRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListInstanceRequestBody.
+        r"""Gets the tags of this ListInstanceRequestBody.
 
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为与的关系。
 
@@ -109,7 +109,7 @@ class ListInstanceRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListInstanceRequestBody.
+        r"""Sets the tags of this ListInstanceRequestBody.
 
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为与的关系。
 
@@ -120,7 +120,7 @@ class ListInstanceRequestBody:
 
     @property
     def tags_any(self):
-        """Gets the tags_any of this ListInstanceRequestBody.
+        r"""Gets the tags_any of this ListInstanceRequestBody.
 
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为或的关系。
 
@@ -131,7 +131,7 @@ class ListInstanceRequestBody:
 
     @tags_any.setter
     def tags_any(self, tags_any):
-        """Sets the tags_any of this ListInstanceRequestBody.
+        r"""Sets the tags_any of this ListInstanceRequestBody.
 
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为或的关系。
 
@@ -142,7 +142,7 @@ class ListInstanceRequestBody:
 
     @property
     def not_tags(self):
-        """Gets the not_tags of this ListInstanceRequestBody.
+        r"""Gets the not_tags of this ListInstanceRequestBody.
 
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为与非的关系。
 
@@ -153,7 +153,7 @@ class ListInstanceRequestBody:
 
     @not_tags.setter
     def not_tags(self, not_tags):
-        """Sets the not_tags of this ListInstanceRequestBody.
+        r"""Sets the not_tags of this ListInstanceRequestBody.
 
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为与非的关系。
 
@@ -164,7 +164,7 @@ class ListInstanceRequestBody:
 
     @property
     def not_tags_any(self):
-        """Gets the not_tags_any of this ListInstanceRequestBody.
+        r"""Gets the not_tags_any of this ListInstanceRequestBody.
 
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为或非的关系。
 
@@ -175,7 +175,7 @@ class ListInstanceRequestBody:
 
     @not_tags_any.setter
     def not_tags_any(self, not_tags_any):
-        """Sets the not_tags_any of this ListInstanceRequestBody.
+        r"""Sets the not_tags_any of this ListInstanceRequestBody.
 
         最多包含10个key，每个key最多包含10个value，结构体不能缺失。key不能为空或者空字符串。key不能重复，同一个key中value不能重复，不同key对应的资源之间为或非的关系。
 
@@ -186,7 +186,7 @@ class ListInstanceRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstanceRequestBody.
+        r"""Gets the offset of this ListInstanceRequestBody.
 
         索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数。  action为count时无此参数。  action为filter时，默认为0，必须为数字，且不能为负数。
 
@@ -197,7 +197,7 @@ class ListInstanceRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstanceRequestBody.
+        r"""Sets the offset of this ListInstanceRequestBody.
 
         索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数。  action为count时无此参数。  action为filter时，默认为0，必须为数字，且不能为负数。
 
@@ -208,7 +208,7 @@ class ListInstanceRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstanceRequestBody.
+        r"""Gets the limit of this ListInstanceRequestBody.
 
         查询记录数。  action为count时无此参数。  action为filter时，默认为1000。limit最多为1000，不能为负数，最小值为1。
 
@@ -219,7 +219,7 @@ class ListInstanceRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstanceRequestBody.
+        r"""Sets the limit of this ListInstanceRequestBody.
 
         查询记录数。  action为count时无此参数。  action为filter时，默认为1000。limit最多为1000，不能为负数，最小值为1。
 
@@ -230,7 +230,7 @@ class ListInstanceRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this ListInstanceRequestBody.
+        r"""Gets the action of this ListInstanceRequestBody.
 
         操作标识（仅限于filter，count）：filter（过滤），count(查询总条数)。 为filter时表示分页查询，为count只需按照条件将总条数返回即可。
 
@@ -241,7 +241,7 @@ class ListInstanceRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListInstanceRequestBody.
+        r"""Sets the action of this ListInstanceRequestBody.
 
         操作标识（仅限于filter，count）：filter（过滤），count(查询总条数)。 为filter时表示分页查询，为count只需按照条件将总条数返回即可。
 
@@ -252,7 +252,7 @@ class ListInstanceRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this ListInstanceRequestBody.
+        r"""Gets the matches of this ListInstanceRequestBody.
 
         搜索字段。  key为要匹配的字段，当前只支持resource_name。  value为匹配的值，当前为精确匹配。
 
@@ -263,7 +263,7 @@ class ListInstanceRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ListInstanceRequestBody.
+        r"""Sets the matches of this ListInstanceRequestBody.
 
         搜索字段。  key为要匹配的字段，当前只支持resource_name。  value为匹配的值，当前为精确匹配。
 
@@ -274,7 +274,7 @@ class ListInstanceRequestBody:
 
     @property
     def without_any_tag(self):
-        """Gets the without_any_tag of this ListInstanceRequestBody.
+        r"""Gets the without_any_tag of this ListInstanceRequestBody.
 
         不包含任意一个标签。该字段为true时查询所有不带标签的资源，此时忽略“tags”、“tags_any”、“not_tags”、“not_tags_any”字段。
 
@@ -285,7 +285,7 @@ class ListInstanceRequestBody:
 
     @without_any_tag.setter
     def without_any_tag(self, without_any_tag):
-        """Sets the without_any_tag of this ListInstanceRequestBody.
+        r"""Sets the without_any_tag of this ListInstanceRequestBody.
 
         不包含任意一个标签。该字段为true时查询所有不带标签的资源，此时忽略“tags”、“tags_any”、“not_tags”、“not_tags_any”字段。
 

@@ -33,7 +33,7 @@ class BatchDeletePartitionedStatisticsRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name=None, body=None):
-        """BatchDeletePartitionedStatisticsRequest
+        r"""BatchDeletePartitionedStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class BatchDeletePartitionedStatisticsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchDeletePartitionedStatisticsRequest.
+        r"""Gets the instance_id of this BatchDeletePartitionedStatisticsRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class BatchDeletePartitionedStatisticsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchDeletePartitionedStatisticsRequest.
+        r"""Sets the instance_id of this BatchDeletePartitionedStatisticsRequest.
 
         实例ID
 
@@ -89,7 +89,7 @@ class BatchDeletePartitionedStatisticsRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this BatchDeletePartitionedStatisticsRequest.
+        r"""Gets the catalog_name of this BatchDeletePartitionedStatisticsRequest.
 
         catalog名字
 
@@ -100,7 +100,7 @@ class BatchDeletePartitionedStatisticsRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this BatchDeletePartitionedStatisticsRequest.
+        r"""Sets the catalog_name of this BatchDeletePartitionedStatisticsRequest.
 
         catalog名字
 
@@ -111,7 +111,7 @@ class BatchDeletePartitionedStatisticsRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this BatchDeletePartitionedStatisticsRequest.
+        r"""Gets the database_name of this BatchDeletePartitionedStatisticsRequest.
 
         数据库名字
 
@@ -122,7 +122,7 @@ class BatchDeletePartitionedStatisticsRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this BatchDeletePartitionedStatisticsRequest.
+        r"""Sets the database_name of this BatchDeletePartitionedStatisticsRequest.
 
         数据库名字
 
@@ -133,7 +133,7 @@ class BatchDeletePartitionedStatisticsRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this BatchDeletePartitionedStatisticsRequest.
+        r"""Gets the table_name of this BatchDeletePartitionedStatisticsRequest.
 
         表名称
 
@@ -144,7 +144,7 @@ class BatchDeletePartitionedStatisticsRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this BatchDeletePartitionedStatisticsRequest.
+        r"""Sets the table_name of this BatchDeletePartitionedStatisticsRequest.
 
         表名称
 
@@ -155,7 +155,7 @@ class BatchDeletePartitionedStatisticsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeletePartitionedStatisticsRequest.
+        r"""Gets the body of this BatchDeletePartitionedStatisticsRequest.
 
         :return: The body of this BatchDeletePartitionedStatisticsRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.TruncatePartitionInput`
@@ -164,7 +164,7 @@ class BatchDeletePartitionedStatisticsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeletePartitionedStatisticsRequest.
+        r"""Sets the body of this BatchDeletePartitionedStatisticsRequest.
 
         :param body: The body of this BatchDeletePartitionedStatisticsRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.TruncatePartitionInput`

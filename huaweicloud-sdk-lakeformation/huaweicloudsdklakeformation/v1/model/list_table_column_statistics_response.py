@@ -26,7 +26,7 @@ class ListTableColumnStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListTableColumnStatisticsResponse
+        r"""ListTableColumnStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTableColumnStatisticsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListTableColumnStatisticsResponse.
+        r"""Gets the body of this ListTableColumnStatisticsResponse.
 
         :return: The body of this ListTableColumnStatisticsResponse.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.ColumnStatisticsObj`]
@@ -53,7 +53,7 @@ class ListTableColumnStatisticsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTableColumnStatisticsResponse.
+        r"""Sets the body of this ListTableColumnStatisticsResponse.
 
         :param body: The body of this ListTableColumnStatisticsResponse.
         :type body: list[:class:`huaweicloudsdklakeformation.v1.ColumnStatisticsObj`]

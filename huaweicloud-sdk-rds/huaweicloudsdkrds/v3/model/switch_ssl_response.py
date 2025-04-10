@@ -24,7 +24,7 @@ class SwitchSslResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SwitchSslResponse
+        r"""SwitchSslResponse
 
         The model defined in huaweicloud sdk
 

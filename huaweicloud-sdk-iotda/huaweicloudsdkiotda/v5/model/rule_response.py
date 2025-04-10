@@ -45,7 +45,7 @@ class RuleResponse:
     }
 
     def __init__(self, rule_id=None, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None, edge_node_ids=None, last_update_time=None, device_side=None):
-        """RuleResponse
+        r"""RuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -109,7 +109,7 @@ class RuleResponse:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this RuleResponse.
+        r"""Gets the rule_id of this RuleResponse.
 
         规则id。
 
@@ -120,7 +120,7 @@ class RuleResponse:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this RuleResponse.
+        r"""Sets the rule_id of this RuleResponse.
 
         规则id。
 
@@ -131,7 +131,7 @@ class RuleResponse:
 
     @property
     def name(self):
-        """Gets the name of this RuleResponse.
+        r"""Gets the name of this RuleResponse.
 
         规则名称。
 
@@ -142,7 +142,7 @@ class RuleResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RuleResponse.
+        r"""Sets the name of this RuleResponse.
 
         规则名称。
 
@@ -153,7 +153,7 @@ class RuleResponse:
 
     @property
     def description(self):
-        """Gets the description of this RuleResponse.
+        r"""Gets the description of this RuleResponse.
 
         规则的描述信息。
 
@@ -164,7 +164,7 @@ class RuleResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RuleResponse.
+        r"""Sets the description of this RuleResponse.
 
         规则的描述信息。
 
@@ -175,7 +175,7 @@ class RuleResponse:
 
     @property
     def condition_group(self):
-        """Gets the condition_group of this RuleResponse.
+        r"""Gets the condition_group of this RuleResponse.
 
         :return: The condition_group of this RuleResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.ConditionGroup`
@@ -184,7 +184,7 @@ class RuleResponse:
 
     @condition_group.setter
     def condition_group(self, condition_group):
-        """Sets the condition_group of this RuleResponse.
+        r"""Sets the condition_group of this RuleResponse.
 
         :param condition_group: The condition_group of this RuleResponse.
         :type condition_group: :class:`huaweicloudsdkiotda.v5.ConditionGroup`
@@ -193,7 +193,7 @@ class RuleResponse:
 
     @property
     def actions(self):
-        """Gets the actions of this RuleResponse.
+        r"""Gets the actions of this RuleResponse.
 
         规则的动作列表，单个规则最多支持设置10个动作。
 
@@ -204,7 +204,7 @@ class RuleResponse:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this RuleResponse.
+        r"""Sets the actions of this RuleResponse.
 
         规则的动作列表，单个规则最多支持设置10个动作。
 
@@ -215,7 +215,7 @@ class RuleResponse:
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this RuleResponse.
+        r"""Gets the rule_type of this RuleResponse.
 
         规则的类型 - DEVICE_LINKAGE：云端联动规则。 - DEVICE_SIDE：端侧规则。
 
@@ -226,7 +226,7 @@ class RuleResponse:
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this RuleResponse.
+        r"""Sets the rule_type of this RuleResponse.
 
         规则的类型 - DEVICE_LINKAGE：云端联动规则。 - DEVICE_SIDE：端侧规则。
 
@@ -237,7 +237,7 @@ class RuleResponse:
 
     @property
     def status(self):
-        """Gets the status of this RuleResponse.
+        r"""Gets the status of this RuleResponse.
 
         规则的状态，默认值：active。 - active：激活。 - inactive：未激活。
 
@@ -248,7 +248,7 @@ class RuleResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RuleResponse.
+        r"""Sets the status of this RuleResponse.
 
         规则的状态，默认值：active。 - active：激活。 - inactive：未激活。
 
@@ -259,7 +259,7 @@ class RuleResponse:
 
     @property
     def app_id(self):
-        """Gets the app_id of this RuleResponse.
+        r"""Gets the app_id of this RuleResponse.
 
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)下。
 
@@ -270,7 +270,7 @@ class RuleResponse:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this RuleResponse.
+        r"""Sets the app_id of this RuleResponse.
 
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)下。
 
@@ -281,7 +281,7 @@ class RuleResponse:
 
     @property
     def edge_node_ids(self):
-        """Gets the edge_node_ids of this RuleResponse.
+        r"""Gets the edge_node_ids of this RuleResponse.
 
         归属边缘侧节点设备ID列表。
 
@@ -292,7 +292,7 @@ class RuleResponse:
 
     @edge_node_ids.setter
     def edge_node_ids(self, edge_node_ids):
-        """Sets the edge_node_ids of this RuleResponse.
+        r"""Sets the edge_node_ids of this RuleResponse.
 
         归属边缘侧节点设备ID列表。
 
@@ -303,7 +303,7 @@ class RuleResponse:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this RuleResponse.
+        r"""Gets the last_update_time of this RuleResponse.
 
         规则最后更新时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'。
 
@@ -314,7 +314,7 @@ class RuleResponse:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this RuleResponse.
+        r"""Sets the last_update_time of this RuleResponse.
 
         规则最后更新时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'。
 
@@ -325,7 +325,7 @@ class RuleResponse:
 
     @property
     def device_side(self):
-        """Gets the device_side of this RuleResponse.
+        r"""Gets the device_side of this RuleResponse.
 
         :return: The device_side of this RuleResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.DeviceSide`
@@ -334,7 +334,7 @@ class RuleResponse:
 
     @device_side.setter
     def device_side(self, device_side):
-        """Sets the device_side of this RuleResponse.
+        r"""Sets the device_side of this RuleResponse.
 
         :param device_side: The device_side of this RuleResponse.
         :type device_side: :class:`huaweicloudsdkiotda.v5.DeviceSide`

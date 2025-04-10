@@ -31,7 +31,7 @@ class ErInstance:
     }
 
     def __init__(self, id=None, name=None, project_id=None, attachment_id=None):
-        """ErInstance
+        r"""ErInstance
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ErInstance:
 
     @property
     def id(self):
-        """Gets the id of this ErInstance.
+        r"""Gets the id of this ErInstance.
 
         ER ID，创建ER时产生的ID
 
@@ -75,7 +75,7 @@ class ErInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ErInstance.
+        r"""Sets the id of this ErInstance.
 
         ER ID，创建ER时产生的ID
 
@@ -86,7 +86,7 @@ class ErInstance:
 
     @property
     def name(self):
-        """Gets the name of this ErInstance.
+        r"""Gets the name of this ErInstance.
 
         ER名称
 
@@ -97,7 +97,7 @@ class ErInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ErInstance.
+        r"""Sets the name of this ErInstance.
 
         ER名称
 
@@ -108,7 +108,7 @@ class ErInstance:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ErInstance.
+        r"""Gets the project_id of this ErInstance.
 
         项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
 
@@ -119,7 +119,7 @@ class ErInstance:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ErInstance.
+        r"""Sets the project_id of this ErInstance.
 
         项目ID, 可以从调API处获取，也可以从控制台获取。[项目ID获取方式](cfw_02_0015.xml)
 
@@ -130,7 +130,7 @@ class ErInstance:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this ErInstance.
+        r"""Gets the attachment_id of this ErInstance.
 
         企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。
 
@@ -141,7 +141,7 @@ class ErInstance:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this ErInstance.
+        r"""Sets the attachment_id of this ErInstance.
 
         企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。
 

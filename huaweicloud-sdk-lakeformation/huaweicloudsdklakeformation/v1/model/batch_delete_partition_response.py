@@ -26,7 +26,7 @@ class BatchDeletePartitionResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchDeletePartitionResponse
+        r"""BatchDeletePartitionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeletePartitionResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchDeletePartitionResponse.
+        r"""Gets the body of this BatchDeletePartitionResponse.
 
         :return: The body of this BatchDeletePartitionResponse.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.Partition`]
@@ -53,7 +53,7 @@ class BatchDeletePartitionResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeletePartitionResponse.
+        r"""Sets the body of this BatchDeletePartitionResponse.
 
         :param body: The body of this BatchDeletePartitionResponse.
         :type body: list[:class:`huaweicloudsdklakeformation.v1.Partition`]

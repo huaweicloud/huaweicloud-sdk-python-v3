@@ -30,7 +30,7 @@ class BatchShowPhoneConnectInfosResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, connect_infos=None, errors=None):
-        """BatchShowPhoneConnectInfosResponse
+        r"""BatchShowPhoneConnectInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchShowPhoneConnectInfosResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BatchShowPhoneConnectInfosResponse.
+        r"""Gets the request_id of this BatchShowPhoneConnectInfosResponse.
 
         请求的唯一标识ID。
 
@@ -69,7 +69,7 @@ class BatchShowPhoneConnectInfosResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BatchShowPhoneConnectInfosResponse.
+        r"""Sets the request_id of this BatchShowPhoneConnectInfosResponse.
 
         请求的唯一标识ID。
 
@@ -80,7 +80,7 @@ class BatchShowPhoneConnectInfosResponse(SdkResponse):
 
     @property
     def connect_infos(self):
-        """Gets the connect_infos of this BatchShowPhoneConnectInfosResponse.
+        r"""Gets the connect_infos of this BatchShowPhoneConnectInfosResponse.
 
         云手机接入信息列表
 
@@ -91,7 +91,7 @@ class BatchShowPhoneConnectInfosResponse(SdkResponse):
 
     @connect_infos.setter
     def connect_infos(self, connect_infos):
-        """Sets the connect_infos of this BatchShowPhoneConnectInfosResponse.
+        r"""Sets the connect_infos of this BatchShowPhoneConnectInfosResponse.
 
         云手机接入信息列表
 
@@ -102,7 +102,7 @@ class BatchShowPhoneConnectInfosResponse(SdkResponse):
 
     @property
     def errors(self):
-        """Gets the errors of this BatchShowPhoneConnectInfosResponse.
+        r"""Gets the errors of this BatchShowPhoneConnectInfosResponse.
 
         错误信息
 
@@ -113,7 +113,7 @@ class BatchShowPhoneConnectInfosResponse(SdkResponse):
 
     @errors.setter
     def errors(self, errors):
-        """Sets the errors of this BatchShowPhoneConnectInfosResponse.
+        r"""Sets the errors of this BatchShowPhoneConnectInfosResponse.
 
         错误信息
 

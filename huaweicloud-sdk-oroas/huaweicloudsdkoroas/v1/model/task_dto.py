@@ -29,7 +29,7 @@ class TaskDto:
     }
 
     def __init__(self, input_json=None, input_url=None, output_url=None):
-        """TaskDto
+        r"""TaskDto
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class TaskDto:
 
     @property
     def input_json(self):
-        """Gets the input_json of this TaskDto.
+        r"""Gets the input_json of this TaskDto.
 
         任务输入信息，json格式；每个子服务该对象结构不同，框架层不解析具体key，运行态直接透传给子服务REST API处理（参数合法性校验 只能子服务镜像内进行；当前算法镜像提供单独校验接口和处理接口，后续待统一交互机制）
 
@@ -67,7 +67,7 @@ class TaskDto:
 
     @input_json.setter
     def input_json(self, input_json):
-        """Sets the input_json of this TaskDto.
+        r"""Sets the input_json of this TaskDto.
 
         任务输入信息，json格式；每个子服务该对象结构不同，框架层不解析具体key，运行态直接透传给子服务REST API处理（参数合法性校验 只能子服务镜像内进行；当前算法镜像提供单独校验接口和处理接口，后续待统一交互机制）
 
@@ -78,7 +78,7 @@ class TaskDto:
 
     @property
     def input_url(self):
-        """Gets the input_url of this TaskDto.
+        r"""Gets the input_url of this TaskDto.
 
         任务输入信息为文件格式，传入值为租户OBS对应的文件绝对路径；在请求信息大于12MB情形使用该参数，需用户在Console进行OBS委托授权方可使用（和input_json二选一），暂不开放该功能
 
@@ -89,7 +89,7 @@ class TaskDto:
 
     @input_url.setter
     def input_url(self, input_url):
-        """Sets the input_url of this TaskDto.
+        r"""Sets the input_url of this TaskDto.
 
         任务输入信息为文件格式，传入值为租户OBS对应的文件绝对路径；在请求信息大于12MB情形使用该参数，需用户在Console进行OBS委托授权方可使用（和input_json二选一），暂不开放该功能
 
@@ -100,7 +100,7 @@ class TaskDto:
 
     @property
     def output_url(self):
-        """Gets the output_url of this TaskDto.
+        r"""Gets the output_url of this TaskDto.
 
         任务输出信息为文件格式，传入值为租户OBS对应的待存储路径前缀（和input_url成对使用），文件名服务端固定用task_id命名；在响应信息大于12MB情形使用该参数，需用户在Console进行OBS委托授权方可使用，暂不开放该功能
 
@@ -111,7 +111,7 @@ class TaskDto:
 
     @output_url.setter
     def output_url(self, output_url):
-        """Sets the output_url of this TaskDto.
+        r"""Sets the output_url of this TaskDto.
 
         任务输出信息为文件格式，传入值为租户OBS对应的待存储路径前缀（和input_url成对使用），文件名服务端固定用task_id命名；在响应信息大于12MB情形使用该参数，需用户在Console进行OBS委托授权方可使用，暂不开放该功能
 

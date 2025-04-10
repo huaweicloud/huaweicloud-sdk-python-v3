@@ -27,7 +27,7 @@ class PreheatingResult:
     }
 
     def __init__(self, url=None, status=None):
-        """PreheatingResult
+        r"""PreheatingResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PreheatingResult:
 
     @property
     def url(self):
-        """Gets the url of this PreheatingResult.
+        r"""Gets the url of this PreheatingResult.
 
         媒资URL。
 
@@ -61,7 +61,7 @@ class PreheatingResult:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this PreheatingResult.
+        r"""Sets the url of this PreheatingResult.
 
         媒资URL。
 
@@ -72,7 +72,7 @@ class PreheatingResult:
 
     @property
     def status(self):
-        """Gets the status of this PreheatingResult.
+        r"""Gets the status of this PreheatingResult.
 
         预热任务状态。  取值如下： - processing：处理中 - succeed：预热完成 - failed：预热失败
 
@@ -83,7 +83,7 @@ class PreheatingResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PreheatingResult.
+        r"""Sets the status of this PreheatingResult.
 
         预热任务状态。  取值如下： - processing：处理中 - succeed：预热完成 - failed：预热失败
 

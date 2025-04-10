@@ -26,7 +26,7 @@ class ChangeAgentStatusResponse(SdkResponse):
     }
 
     def __init__(self, flag=None):
-        """ChangeAgentStatusResponse
+        r"""ChangeAgentStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeAgentStatusResponse(SdkResponse):
 
     @property
     def flag(self):
-        """Gets the flag of this ChangeAgentStatusResponse.
+        r"""Gets the flag of this ChangeAgentStatusResponse.
 
         返回结果ok表示成功。
 
@@ -55,7 +55,7 @@ class ChangeAgentStatusResponse(SdkResponse):
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this ChangeAgentStatusResponse.
+        r"""Sets the flag of this ChangeAgentStatusResponse.
 
         返回结果ok表示成功。
 

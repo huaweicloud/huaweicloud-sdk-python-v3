@@ -29,7 +29,7 @@ class BackendRequestPara:
     }
 
     def __init__(self, name=None, position=None, backend_para_name=None):
-        """BackendRequestPara
+        r"""BackendRequestPara
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BackendRequestPara:
 
     @property
     def name(self):
-        """Gets the name of this BackendRequestPara.
+        r"""Gets the name of this BackendRequestPara.
 
         api请求参数名称
 
@@ -68,7 +68,7 @@ class BackendRequestPara:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BackendRequestPara.
+        r"""Sets the name of this BackendRequestPara.
 
         api请求参数名称
 
@@ -79,7 +79,7 @@ class BackendRequestPara:
 
     @property
     def position(self):
-        """Gets the position of this BackendRequestPara.
+        r"""Gets the position of this BackendRequestPara.
 
         参数位置
 
@@ -90,7 +90,7 @@ class BackendRequestPara:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this BackendRequestPara.
+        r"""Sets the position of this BackendRequestPara.
 
         参数位置
 
@@ -101,7 +101,7 @@ class BackendRequestPara:
 
     @property
     def backend_para_name(self):
-        """Gets the backend_para_name of this BackendRequestPara.
+        r"""Gets the backend_para_name of this BackendRequestPara.
 
         对应的后端参数
 
@@ -112,7 +112,7 @@ class BackendRequestPara:
 
     @backend_para_name.setter
     def backend_para_name(self, backend_para_name):
-        """Sets the backend_para_name of this BackendRequestPara.
+        r"""Sets the backend_para_name of this BackendRequestPara.
 
         对应的后端参数
 

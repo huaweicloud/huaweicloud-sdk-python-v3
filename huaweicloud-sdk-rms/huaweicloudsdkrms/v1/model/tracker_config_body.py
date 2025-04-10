@@ -29,7 +29,7 @@ class TrackerConfigBody:
     }
 
     def __init__(self, channel=None, selector=None, agency_name=None):
-        """TrackerConfigBody
+        r"""TrackerConfigBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class TrackerConfigBody:
 
     @property
     def channel(self):
-        """Gets the channel of this TrackerConfigBody.
+        r"""Gets the channel of this TrackerConfigBody.
 
         :return: The channel of this TrackerConfigBody.
         :rtype: :class:`huaweicloudsdkrms.v1.ChannelConfigBody`
@@ -63,7 +63,7 @@ class TrackerConfigBody:
 
     @channel.setter
     def channel(self, channel):
-        """Sets the channel of this TrackerConfigBody.
+        r"""Sets the channel of this TrackerConfigBody.
 
         :param channel: The channel of this TrackerConfigBody.
         :type channel: :class:`huaweicloudsdkrms.v1.ChannelConfigBody`
@@ -72,7 +72,7 @@ class TrackerConfigBody:
 
     @property
     def selector(self):
-        """Gets the selector of this TrackerConfigBody.
+        r"""Gets the selector of this TrackerConfigBody.
 
         :return: The selector of this TrackerConfigBody.
         :rtype: :class:`huaweicloudsdkrms.v1.SelectorConfigBody`
@@ -81,7 +81,7 @@ class TrackerConfigBody:
 
     @selector.setter
     def selector(self, selector):
-        """Sets the selector of this TrackerConfigBody.
+        r"""Sets the selector of this TrackerConfigBody.
 
         :param selector: The selector of this TrackerConfigBody.
         :type selector: :class:`huaweicloudsdkrms.v1.SelectorConfigBody`
@@ -90,7 +90,7 @@ class TrackerConfigBody:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this TrackerConfigBody.
+        r"""Gets the agency_name of this TrackerConfigBody.
 
         IAM委托名称
 
@@ -101,7 +101,7 @@ class TrackerConfigBody:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this TrackerConfigBody.
+        r"""Sets the agency_name of this TrackerConfigBody.
 
         IAM委托名称
 

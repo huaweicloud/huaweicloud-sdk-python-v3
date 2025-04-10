@@ -27,7 +27,7 @@ class SetOnlineMigrationTaskRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """SetOnlineMigrationTaskRequest
+        r"""SetOnlineMigrationTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SetOnlineMigrationTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this SetOnlineMigrationTaskRequest.
+        r"""Gets the task_id of this SetOnlineMigrationTaskRequest.
 
         在线迁移任务ID。
 
@@ -60,7 +60,7 @@ class SetOnlineMigrationTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this SetOnlineMigrationTaskRequest.
+        r"""Sets the task_id of this SetOnlineMigrationTaskRequest.
 
         在线迁移任务ID。
 
@@ -71,7 +71,7 @@ class SetOnlineMigrationTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetOnlineMigrationTaskRequest.
+        r"""Gets the body of this SetOnlineMigrationTaskRequest.
 
         :return: The body of this SetOnlineMigrationTaskRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.SetOnlineMigrationTaskBody`
@@ -80,7 +80,7 @@ class SetOnlineMigrationTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetOnlineMigrationTaskRequest.
+        r"""Sets the body of this SetOnlineMigrationTaskRequest.
 
         :param body: The body of this SetOnlineMigrationTaskRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.SetOnlineMigrationTaskBody`

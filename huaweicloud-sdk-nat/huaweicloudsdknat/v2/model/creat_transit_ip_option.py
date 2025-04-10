@@ -31,7 +31,7 @@ class CreatTransitIpOption:
     }
 
     def __init__(self, virsubnet_id=None, ip_address=None, enterprise_project_id=None, tags=None):
-        """CreatTransitIpOption
+        r"""CreatTransitIpOption
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CreatTransitIpOption:
 
     @property
     def virsubnet_id(self):
-        """Gets the virsubnet_id of this CreatTransitIpOption.
+        r"""Gets the virsubnet_id of this CreatTransitIpOption.
 
         当前项目子网的ID。
 
@@ -74,7 +74,7 @@ class CreatTransitIpOption:
 
     @virsubnet_id.setter
     def virsubnet_id(self, virsubnet_id):
-        """Sets the virsubnet_id of this CreatTransitIpOption.
+        r"""Sets the virsubnet_id of this CreatTransitIpOption.
 
         当前项目子网的ID。
 
@@ -85,7 +85,7 @@ class CreatTransitIpOption:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this CreatTransitIpOption.
+        r"""Gets the ip_address of this CreatTransitIpOption.
 
         中转IP地址。
 
@@ -96,7 +96,7 @@ class CreatTransitIpOption:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this CreatTransitIpOption.
+        r"""Sets the ip_address of this CreatTransitIpOption.
 
         中转IP地址。
 
@@ -107,7 +107,7 @@ class CreatTransitIpOption:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreatTransitIpOption.
+        r"""Gets the enterprise_project_id of this CreatTransitIpOption.
 
         企业项目ID。创建中转IP时，关联的企业项目ID。
 
@@ -118,7 +118,7 @@ class CreatTransitIpOption:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreatTransitIpOption.
+        r"""Sets the enterprise_project_id of this CreatTransitIpOption.
 
         企业项目ID。创建中转IP时，关联的企业项目ID。
 
@@ -129,7 +129,7 @@ class CreatTransitIpOption:
 
     @property
     def tags(self):
-        """Gets the tags of this CreatTransitIpOption.
+        r"""Gets the tags of this CreatTransitIpOption.
 
         标签
 
@@ -140,7 +140,7 @@ class CreatTransitIpOption:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreatTransitIpOption.
+        r"""Sets the tags of this CreatTransitIpOption.
 
         标签
 

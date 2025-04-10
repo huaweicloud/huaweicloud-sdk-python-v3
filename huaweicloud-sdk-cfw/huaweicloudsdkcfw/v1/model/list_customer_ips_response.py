@@ -26,7 +26,7 @@ class ListCustomerIpsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListCustomerIpsResponse
+        r"""ListCustomerIpsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListCustomerIpsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListCustomerIpsResponse.
+        r"""Gets the data of this ListCustomerIpsResponse.
 
         :return: The data of this ListCustomerIpsResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.HttpListCustomerIpsResponseData`
@@ -53,7 +53,7 @@ class ListCustomerIpsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListCustomerIpsResponse.
+        r"""Sets the data of this ListCustomerIpsResponse.
 
         :param data: The data of this ListCustomerIpsResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.HttpListCustomerIpsResponseData`

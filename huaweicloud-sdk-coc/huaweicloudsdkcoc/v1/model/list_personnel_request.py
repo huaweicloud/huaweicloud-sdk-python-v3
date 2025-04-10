@@ -31,7 +31,7 @@ class ListPersonnelRequest:
     }
 
     def __init__(self, has_mobile=None, name=None, offset=None, limit=None):
-        """ListPersonnelRequest
+        r"""ListPersonnelRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListPersonnelRequest:
 
     @property
     def has_mobile(self):
-        """Gets the has_mobile of this ListPersonnelRequest.
+        r"""Gets the has_mobile of this ListPersonnelRequest.
 
         是否有手机号
 
@@ -73,7 +73,7 @@ class ListPersonnelRequest:
 
     @has_mobile.setter
     def has_mobile(self, has_mobile):
-        """Sets the has_mobile of this ListPersonnelRequest.
+        r"""Sets the has_mobile of this ListPersonnelRequest.
 
         是否有手机号
 
@@ -84,7 +84,7 @@ class ListPersonnelRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPersonnelRequest.
+        r"""Gets the name of this ListPersonnelRequest.
 
         IAM账号
 
@@ -95,7 +95,7 @@ class ListPersonnelRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPersonnelRequest.
+        r"""Sets the name of this ListPersonnelRequest.
 
         IAM账号
 
@@ -106,7 +106,7 @@ class ListPersonnelRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPersonnelRequest.
+        r"""Gets the offset of this ListPersonnelRequest.
 
         偏移量
 
@@ -117,7 +117,7 @@ class ListPersonnelRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPersonnelRequest.
+        r"""Sets the offset of this ListPersonnelRequest.
 
         偏移量
 
@@ -128,7 +128,7 @@ class ListPersonnelRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPersonnelRequest.
+        r"""Gets the limit of this ListPersonnelRequest.
 
         分页
 
@@ -139,7 +139,7 @@ class ListPersonnelRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPersonnelRequest.
+        r"""Sets the limit of this ListPersonnelRequest.
 
         分页
 

@@ -29,7 +29,7 @@ class ImportFactorRequest:
     }
 
     def __init__(self, project_id=None, asset_id=None, body=None):
-        """ImportFactorRequest
+        r"""ImportFactorRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ImportFactorRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ImportFactorRequest.
+        r"""Gets the project_id of this ImportFactorRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -66,7 +66,7 @@ class ImportFactorRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ImportFactorRequest.
+        r"""Sets the project_id of this ImportFactorRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -77,7 +77,7 @@ class ImportFactorRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ImportFactorRequest.
+        r"""Gets the asset_id of this ImportFactorRequest.
 
         资产库ID
 
@@ -88,7 +88,7 @@ class ImportFactorRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ImportFactorRequest.
+        r"""Sets the asset_id of this ImportFactorRequest.
 
         资产库ID
 
@@ -99,7 +99,7 @@ class ImportFactorRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportFactorRequest.
+        r"""Gets the body of this ImportFactorRequest.
 
         :return: The body of this ImportFactorRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ImportFactorRequestBody`
@@ -108,7 +108,7 @@ class ImportFactorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportFactorRequest.
+        r"""Sets the body of this ImportFactorRequest.
 
         :param body: The body of this ImportFactorRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.ImportFactorRequestBody`

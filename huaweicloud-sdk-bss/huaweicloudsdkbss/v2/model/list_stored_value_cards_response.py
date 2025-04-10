@@ -28,7 +28,7 @@ class ListStoredValueCardsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, stored_value_cards=None):
-        """ListStoredValueCardsResponse
+        r"""ListStoredValueCardsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListStoredValueCardsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListStoredValueCardsResponse.
+        r"""Gets the total_count of this ListStoredValueCardsResponse.
 
         符合查询条件的总条数。
 
@@ -62,7 +62,7 @@ class ListStoredValueCardsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListStoredValueCardsResponse.
+        r"""Sets the total_count of this ListStoredValueCardsResponse.
 
         符合查询条件的总条数。
 
@@ -73,7 +73,7 @@ class ListStoredValueCardsResponse(SdkResponse):
 
     @property
     def stored_value_cards(self):
-        """Gets the stored_value_cards of this ListStoredValueCardsResponse.
+        r"""Gets the stored_value_cards of this ListStoredValueCardsResponse.
 
         优惠券记录。 具体请参见表2。
 
@@ -84,7 +84,7 @@ class ListStoredValueCardsResponse(SdkResponse):
 
     @stored_value_cards.setter
     def stored_value_cards(self, stored_value_cards):
-        """Sets the stored_value_cards of this ListStoredValueCardsResponse.
+        r"""Sets the stored_value_cards of this ListStoredValueCardsResponse.
 
         优惠券记录。 具体请参见表2。
 

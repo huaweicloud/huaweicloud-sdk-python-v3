@@ -28,7 +28,7 @@ class ListTranscodeTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_group_list=None, total=None):
-        """ListTranscodeTemplateResponse
+        r"""ListTranscodeTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTranscodeTemplateResponse(SdkResponse):
 
     @property
     def template_group_list(self):
-        """Gets the template_group_list of this ListTranscodeTemplateResponse.
+        r"""Gets the template_group_list of this ListTranscodeTemplateResponse.
 
         模板组信息<br/> 
 
@@ -62,7 +62,7 @@ class ListTranscodeTemplateResponse(SdkResponse):
 
     @template_group_list.setter
     def template_group_list(self, template_group_list):
-        """Sets the template_group_list of this ListTranscodeTemplateResponse.
+        r"""Sets the template_group_list of this ListTranscodeTemplateResponse.
 
         模板组信息<br/> 
 
@@ -73,7 +73,7 @@ class ListTranscodeTemplateResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTranscodeTemplateResponse.
+        r"""Gets the total of this ListTranscodeTemplateResponse.
 
         总记录条数<br/> 
 
@@ -84,7 +84,7 @@ class ListTranscodeTemplateResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTranscodeTemplateResponse.
+        r"""Sets the total of this ListTranscodeTemplateResponse.
 
         总记录条数<br/> 
 

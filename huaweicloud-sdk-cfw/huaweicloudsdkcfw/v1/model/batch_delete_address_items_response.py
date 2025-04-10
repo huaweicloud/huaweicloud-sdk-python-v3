@@ -26,7 +26,7 @@ class BatchDeleteAddressItemsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """BatchDeleteAddressItemsResponse
+        r"""BatchDeleteAddressItemsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteAddressItemsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this BatchDeleteAddressItemsResponse.
+        r"""Gets the data of this BatchDeleteAddressItemsResponse.
 
         批量删除地址组成员id列表
 
@@ -55,7 +55,7 @@ class BatchDeleteAddressItemsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this BatchDeleteAddressItemsResponse.
+        r"""Sets the data of this BatchDeleteAddressItemsResponse.
 
         批量删除地址组成员id列表
 

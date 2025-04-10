@@ -33,7 +33,7 @@ class ExternalAccessDetails:
     }
 
     def __init__(self, action=None, condition=None, is_public=None, principal=None, sources=None):
-        """ExternalAccessDetails
+        r"""ExternalAccessDetails
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ExternalAccessDetails:
 
     @property
     def action(self):
-        """Gets the action of this ExternalAccessDetails.
+        r"""Gets the action of this ExternalAccessDetails.
 
         允许外部主体使用的操作。
 
@@ -78,7 +78,7 @@ class ExternalAccessDetails:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ExternalAccessDetails.
+        r"""Sets the action of this ExternalAccessDetails.
 
         允许外部主体使用的操作。
 
@@ -89,7 +89,7 @@ class ExternalAccessDetails:
 
     @property
     def condition(self):
-        """Gets the condition of this ExternalAccessDetails.
+        r"""Gets the condition of this ExternalAccessDetails.
 
         分析的策略语句中导致访问分析结果的条件。
 
@@ -100,7 +100,7 @@ class ExternalAccessDetails:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this ExternalAccessDetails.
+        r"""Sets the condition of this ExternalAccessDetails.
 
         分析的策略语句中导致访问分析结果的条件。
 
@@ -111,7 +111,7 @@ class ExternalAccessDetails:
 
     @property
     def is_public(self):
-        """Gets the is_public of this ExternalAccessDetails.
+        r"""Gets the is_public of this ExternalAccessDetails.
 
         表示生成访问分析结果的策略是否允许公共访问资源。
 
@@ -122,7 +122,7 @@ class ExternalAccessDetails:
 
     @is_public.setter
     def is_public(self, is_public):
-        """Sets the is_public of this ExternalAccessDetails.
+        r"""Sets the is_public of this ExternalAccessDetails.
 
         表示生成访问分析结果的策略是否允许公共访问资源。
 
@@ -133,7 +133,7 @@ class ExternalAccessDetails:
 
     @property
     def principal(self):
-        """Gets the principal of this ExternalAccessDetails.
+        r"""Gets the principal of this ExternalAccessDetails.
 
         :return: The principal of this ExternalAccessDetails.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingPrincipal`
@@ -142,7 +142,7 @@ class ExternalAccessDetails:
 
     @principal.setter
     def principal(self, principal):
-        """Sets the principal of this ExternalAccessDetails.
+        r"""Sets the principal of this ExternalAccessDetails.
 
         :param principal: The principal of this ExternalAccessDetails.
         :type principal: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingPrincipal`
@@ -151,7 +151,7 @@ class ExternalAccessDetails:
 
     @property
     def sources(self):
-        """Gets the sources of this ExternalAccessDetails.
+        r"""Gets the sources of this ExternalAccessDetails.
 
         访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
 
@@ -162,7 +162,7 @@ class ExternalAccessDetails:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this ExternalAccessDetails.
+        r"""Sets the sources of this ExternalAccessDetails.
 
         访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
 

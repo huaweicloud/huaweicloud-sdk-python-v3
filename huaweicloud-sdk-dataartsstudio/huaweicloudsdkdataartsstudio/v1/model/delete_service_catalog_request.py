@@ -29,7 +29,7 @@ class DeleteServiceCatalogRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, body=None):
-        """DeleteServiceCatalogRequest
+        r"""DeleteServiceCatalogRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteServiceCatalogRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteServiceCatalogRequest.
+        r"""Gets the workspace of this DeleteServiceCatalogRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -67,7 +67,7 @@ class DeleteServiceCatalogRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteServiceCatalogRequest.
+        r"""Sets the workspace of this DeleteServiceCatalogRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -78,7 +78,7 @@ class DeleteServiceCatalogRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this DeleteServiceCatalogRequest.
+        r"""Gets the dlm_type of this DeleteServiceCatalogRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -89,7 +89,7 @@ class DeleteServiceCatalogRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this DeleteServiceCatalogRequest.
+        r"""Sets the dlm_type of this DeleteServiceCatalogRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -100,7 +100,7 @@ class DeleteServiceCatalogRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteServiceCatalogRequest.
+        r"""Gets the body of this DeleteServiceCatalogRequest.
 
         :return: The body of this DeleteServiceCatalogRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApiCatalogDeleteParaDTO`
@@ -109,7 +109,7 @@ class DeleteServiceCatalogRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteServiceCatalogRequest.
+        r"""Sets the body of this DeleteServiceCatalogRequest.
 
         :param body: The body of this DeleteServiceCatalogRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApiCatalogDeleteParaDTO`

@@ -25,7 +25,7 @@ class CreateProjectVpcChannelSyncsRequest:
     }
 
     def __init__(self, body=None):
-        """CreateProjectVpcChannelSyncsRequest
+        r"""CreateProjectVpcChannelSyncsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateProjectVpcChannelSyncsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateProjectVpcChannelSyncsRequest.
+        r"""Gets the body of this CreateProjectVpcChannelSyncsRequest.
 
         :return: The body of this CreateProjectVpcChannelSyncsRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.ProjectVpcSync`
@@ -52,7 +52,7 @@ class CreateProjectVpcChannelSyncsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateProjectVpcChannelSyncsRequest.
+        r"""Sets the body of this CreateProjectVpcChannelSyncsRequest.
 
         :param body: The body of this CreateProjectVpcChannelSyncsRequest.
         :type body: :class:`huaweicloudsdkroma.v2.ProjectVpcSync`

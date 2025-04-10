@@ -27,7 +27,7 @@ class ReclaimIndirectPartnerAccountReq:
     }
 
     def __init__(self, indirect_partner_id=None, amount=None):
-        """ReclaimIndirectPartnerAccountReq
+        r"""ReclaimIndirectPartnerAccountReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ReclaimIndirectPartnerAccountReq:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this ReclaimIndirectPartnerAccountReq.
+        r"""Gets the indirect_partner_id of this ReclaimIndirectPartnerAccountReq.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
 
@@ -59,7 +59,7 @@ class ReclaimIndirectPartnerAccountReq:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this ReclaimIndirectPartnerAccountReq.
+        r"""Sets the indirect_partner_id of this ReclaimIndirectPartnerAccountReq.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
 
@@ -70,7 +70,7 @@ class ReclaimIndirectPartnerAccountReq:
 
     @property
     def amount(self):
-        """Gets the amount of this ReclaimIndirectPartnerAccountReq.
+        r"""Gets the amount of this ReclaimIndirectPartnerAccountReq.
 
         回收金额。 华为云总经销商回收的云经销商的账户金额。  说明： 回收金额不能大于云经销商的账户余额。 单位：元。取值大于0且精确到小数点后2位。
 
@@ -81,7 +81,7 @@ class ReclaimIndirectPartnerAccountReq:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this ReclaimIndirectPartnerAccountReq.
+        r"""Sets the amount of this ReclaimIndirectPartnerAccountReq.
 
         回收金额。 华为云总经销商回收的云经销商的账户金额。  说明： 回收金额不能大于云经销商的账户余额。 单位：元。取值大于0且精确到小数点后2位。
 

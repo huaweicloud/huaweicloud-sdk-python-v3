@@ -40,7 +40,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, engine_version=None, instance_mode=None, created_at=None, updated_at=None, configuration_parameters=None):
-        """ShowParameterGroupDetailResponse
+        r"""ShowParameterGroupDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowParameterGroupDetailResponse.
+        r"""Gets the id of this ShowParameterGroupDetailResponse.
 
         参数模板ID。
 
@@ -104,7 +104,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowParameterGroupDetailResponse.
+        r"""Sets the id of this ShowParameterGroupDetailResponse.
 
         参数模板ID。
 
@@ -115,7 +115,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowParameterGroupDetailResponse.
+        r"""Gets the name of this ShowParameterGroupDetailResponse.
 
         参数模板名称。
 
@@ -126,7 +126,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowParameterGroupDetailResponse.
+        r"""Sets the name of this ShowParameterGroupDetailResponse.
 
         参数模板名称。
 
@@ -137,7 +137,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowParameterGroupDetailResponse.
+        r"""Gets the description of this ShowParameterGroupDetailResponse.
 
         参数模板描述。
 
@@ -148,7 +148,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowParameterGroupDetailResponse.
+        r"""Sets the description of this ShowParameterGroupDetailResponse.
 
         参数模板描述。
 
@@ -159,7 +159,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this ShowParameterGroupDetailResponse.
+        r"""Gets the engine_version of this ShowParameterGroupDetailResponse.
 
         引擎版本。 [数据库版本。支持V2.0-2.3版本，取值为“V2.0-2.3”]。
 
@@ -170,7 +170,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this ShowParameterGroupDetailResponse.
+        r"""Sets the engine_version of this ShowParameterGroupDetailResponse.
 
         引擎版本。 [数据库版本。支持V2.0-2.3版本，取值为“V2.0-2.3”]。
 
@@ -181,7 +181,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @property
     def instance_mode(self):
-        """Gets the instance_mode of this ShowParameterGroupDetailResponse.
+        r"""Gets the instance_mode of this ShowParameterGroupDetailResponse.
 
         实例部署形态。independent：独立；ha：主备。
 
@@ -192,7 +192,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @instance_mode.setter
     def instance_mode(self, instance_mode):
-        """Sets the instance_mode of this ShowParameterGroupDetailResponse.
+        r"""Sets the instance_mode of this ShowParameterGroupDetailResponse.
 
         实例部署形态。independent：独立；ha：主备。
 
@@ -203,7 +203,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowParameterGroupDetailResponse.
+        r"""Gets the created_at of this ShowParameterGroupDetailResponse.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -214,7 +214,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowParameterGroupDetailResponse.
+        r"""Sets the created_at of this ShowParameterGroupDetailResponse.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -225,7 +225,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowParameterGroupDetailResponse.
+        r"""Gets the updated_at of this ShowParameterGroupDetailResponse.
 
         修改时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -236,7 +236,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowParameterGroupDetailResponse.
+        r"""Sets the updated_at of this ShowParameterGroupDetailResponse.
 
         修改时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -247,7 +247,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @property
     def configuration_parameters(self):
-        """Gets the configuration_parameters of this ShowParameterGroupDetailResponse.
+        r"""Gets the configuration_parameters of this ShowParameterGroupDetailResponse.
 
         参数详情。
 
@@ -258,7 +258,7 @@ class ShowParameterGroupDetailResponse(SdkResponse):
 
     @configuration_parameters.setter
     def configuration_parameters(self, configuration_parameters):
-        """Sets the configuration_parameters of this ShowParameterGroupDetailResponse.
+        r"""Sets the configuration_parameters of this ShowParameterGroupDetailResponse.
 
         参数详情。
 

@@ -29,7 +29,7 @@ class EngineCreateReqEnginestateInfo:
     }
 
     def __init__(self, cluster=None, twin_clusters=None, single_engine=None):
-        """EngineCreateReqEnginestateInfo
+        r"""EngineCreateReqEnginestateInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EngineCreateReqEnginestateInfo:
 
     @property
     def cluster(self):
-        """Gets the cluster of this EngineCreateReqEnginestateInfo.
+        r"""Gets the cluster of this EngineCreateReqEnginestateInfo.
 
         集群
 
@@ -68,7 +68,7 @@ class EngineCreateReqEnginestateInfo:
 
     @cluster.setter
     def cluster(self, cluster):
-        """Sets the cluster of this EngineCreateReqEnginestateInfo.
+        r"""Sets the cluster of this EngineCreateReqEnginestateInfo.
 
         集群
 
@@ -79,7 +79,7 @@ class EngineCreateReqEnginestateInfo:
 
     @property
     def twin_clusters(self):
-        """Gets the twin_clusters of this EngineCreateReqEnginestateInfo.
+        r"""Gets the twin_clusters of this EngineCreateReqEnginestateInfo.
 
         双子集群
 
@@ -90,7 +90,7 @@ class EngineCreateReqEnginestateInfo:
 
     @twin_clusters.setter
     def twin_clusters(self, twin_clusters):
-        """Sets the twin_clusters of this EngineCreateReqEnginestateInfo.
+        r"""Sets the twin_clusters of this EngineCreateReqEnginestateInfo.
 
         双子集群
 
@@ -101,7 +101,7 @@ class EngineCreateReqEnginestateInfo:
 
     @property
     def single_engine(self):
-        """Gets the single_engine of this EngineCreateReqEnginestateInfo.
+        r"""Gets the single_engine of this EngineCreateReqEnginestateInfo.
 
         单引擎
 
@@ -112,7 +112,7 @@ class EngineCreateReqEnginestateInfo:
 
     @single_engine.setter
     def single_engine(self, single_engine):
-        """Sets the single_engine of this EngineCreateReqEnginestateInfo.
+        r"""Sets the single_engine of this EngineCreateReqEnginestateInfo.
 
         单引擎
 

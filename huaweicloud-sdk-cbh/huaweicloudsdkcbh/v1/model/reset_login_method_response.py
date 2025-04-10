@@ -26,7 +26,7 @@ class ResetLoginMethodResponse(SdkResponse):
     }
 
     def __init__(self, request_info=None):
-        """ResetLoginMethodResponse
+        r"""ResetLoginMethodResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ResetLoginMethodResponse(SdkResponse):
 
     @property
     def request_info(self):
-        """Gets the request_info of this ResetLoginMethodResponse.
+        r"""Gets the request_info of this ResetLoginMethodResponse.
 
         Requested information
 
@@ -55,7 +55,7 @@ class ResetLoginMethodResponse(SdkResponse):
 
     @request_info.setter
     def request_info(self, request_info):
-        """Sets the request_info of this ResetLoginMethodResponse.
+        r"""Sets the request_info of this ResetLoginMethodResponse.
 
         Requested information
 

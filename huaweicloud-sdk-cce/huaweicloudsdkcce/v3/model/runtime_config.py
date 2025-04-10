@@ -25,7 +25,7 @@ class RuntimeConfig:
     }
 
     def __init__(self, lv_type=None):
-        """RuntimeConfig
+        r"""RuntimeConfig
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RuntimeConfig:
 
     @property
     def lv_type(self):
-        """Gets the lv_type of this RuntimeConfig.
+        r"""Gets the lv_type of this RuntimeConfig.
 
         LVM写入模式：linear、striped。linear：线性模式；striped：条带模式，使用多块磁盘组成条带模式，能够提升磁盘性能。
 
@@ -53,7 +53,7 @@ class RuntimeConfig:
 
     @lv_type.setter
     def lv_type(self, lv_type):
-        """Sets the lv_type of this RuntimeConfig.
+        r"""Sets the lv_type of this RuntimeConfig.
 
         LVM写入模式：linear、striped。linear：线性模式；striped：条带模式，使用多块磁盘组成条带模式，能够提升磁盘性能。
 

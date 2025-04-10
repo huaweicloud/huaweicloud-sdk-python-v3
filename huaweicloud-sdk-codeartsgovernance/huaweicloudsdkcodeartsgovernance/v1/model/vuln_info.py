@@ -31,7 +31,7 @@ class VulnInfo:
     }
 
     def __init__(self, category=None, principle=None, solution=None, vuln_items=None):
-        """VulnInfo
+        r"""VulnInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class VulnInfo:
 
     @property
     def category(self):
-        """Gets the category of this VulnInfo.
+        r"""Gets the category of this VulnInfo.
 
         漏洞类型
 
@@ -75,7 +75,7 @@ class VulnInfo:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this VulnInfo.
+        r"""Sets the category of this VulnInfo.
 
         漏洞类型
 
@@ -86,7 +86,7 @@ class VulnInfo:
 
     @property
     def principle(self):
-        """Gets the principle of this VulnInfo.
+        r"""Gets the principle of this VulnInfo.
 
         漏洞原理
 
@@ -97,7 +97,7 @@ class VulnInfo:
 
     @principle.setter
     def principle(self, principle):
-        """Sets the principle of this VulnInfo.
+        r"""Sets the principle of this VulnInfo.
 
         漏洞原理
 
@@ -108,7 +108,7 @@ class VulnInfo:
 
     @property
     def solution(self):
-        """Gets the solution of this VulnInfo.
+        r"""Gets the solution of this VulnInfo.
 
         解决方案
 
@@ -119,7 +119,7 @@ class VulnInfo:
 
     @solution.setter
     def solution(self, solution):
-        """Sets the solution of this VulnInfo.
+        r"""Sets the solution of this VulnInfo.
 
         解决方案
 
@@ -130,7 +130,7 @@ class VulnInfo:
 
     @property
     def vuln_items(self):
-        """Gets the vuln_items of this VulnInfo.
+        r"""Gets the vuln_items of this VulnInfo.
 
         漏洞项列表
 
@@ -141,7 +141,7 @@ class VulnInfo:
 
     @vuln_items.setter
     def vuln_items(self, vuln_items):
-        """Sets the vuln_items of this VulnInfo.
+        r"""Sets the vuln_items of this VulnInfo.
 
         漏洞项列表
 

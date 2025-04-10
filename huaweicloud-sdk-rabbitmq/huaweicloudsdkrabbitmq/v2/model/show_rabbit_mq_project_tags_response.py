@@ -26,7 +26,7 @@ class ShowRabbitMqProjectTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowRabbitMqProjectTagsResponse
+        r"""ShowRabbitMqProjectTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowRabbitMqProjectTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowRabbitMqProjectTagsResponse.
+        r"""Gets the tags of this ShowRabbitMqProjectTagsResponse.
 
         标签列表
 
@@ -55,7 +55,7 @@ class ShowRabbitMqProjectTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowRabbitMqProjectTagsResponse.
+        r"""Sets the tags of this ShowRabbitMqProjectTagsResponse.
 
         标签列表
 

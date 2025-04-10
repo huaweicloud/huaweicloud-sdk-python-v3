@@ -25,7 +25,7 @@ class DeleteSqlFilterRuleReq:
     }
 
     def __init__(self, sql_filter_rules=None):
-        """DeleteSqlFilterRuleReq
+        r"""DeleteSqlFilterRuleReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSqlFilterRuleReq:
 
     @property
     def sql_filter_rules(self):
-        """Gets the sql_filter_rules of this DeleteSqlFilterRuleReq.
+        r"""Gets the sql_filter_rules of this DeleteSqlFilterRuleReq.
 
         :return: The sql_filter_rules of this DeleteSqlFilterRuleReq.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.DeleteNodeSqlFilterRuleInfo`]
@@ -51,7 +51,7 @@ class DeleteSqlFilterRuleReq:
 
     @sql_filter_rules.setter
     def sql_filter_rules(self, sql_filter_rules):
-        """Sets the sql_filter_rules of this DeleteSqlFilterRuleReq.
+        r"""Sets the sql_filter_rules of this DeleteSqlFilterRuleReq.
 
         :param sql_filter_rules: The sql_filter_rules of this DeleteSqlFilterRuleReq.
         :type sql_filter_rules: list[:class:`huaweicloudsdkgaussdb.v3.DeleteNodeSqlFilterRuleInfo`]

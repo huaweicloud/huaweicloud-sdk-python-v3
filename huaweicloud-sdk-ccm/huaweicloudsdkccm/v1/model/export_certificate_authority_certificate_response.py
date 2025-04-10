@@ -28,7 +28,7 @@ class ExportCertificateAuthorityCertificateResponse(SdkResponse):
     }
 
     def __init__(self, certificate=None, certificate_chain=None):
-        """ExportCertificateAuthorityCertificateResponse
+        r"""ExportCertificateAuthorityCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExportCertificateAuthorityCertificateResponse(SdkResponse):
 
     @property
     def certificate(self):
-        """Gets the certificate of this ExportCertificateAuthorityCertificateResponse.
+        r"""Gets the certificate of this ExportCertificateAuthorityCertificateResponse.
 
         证书内容。  >  - 通过API请求本接口，证书内容中换行符已使用\"\\r\\n\"代替；  >  - 通过console端导出证书，将得到标准的PEM格式的证书文件。
 
@@ -62,7 +62,7 @@ class ExportCertificateAuthorityCertificateResponse(SdkResponse):
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this ExportCertificateAuthorityCertificateResponse.
+        r"""Sets the certificate of this ExportCertificateAuthorityCertificateResponse.
 
         证书内容。  >  - 通过API请求本接口，证书内容中换行符已使用\"\\r\\n\"代替；  >  - 通过console端导出证书，将得到标准的PEM格式的证书文件。
 
@@ -73,7 +73,7 @@ class ExportCertificateAuthorityCertificateResponse(SdkResponse):
 
     @property
     def certificate_chain(self):
-        """Gets the certificate_chain of this ExportCertificateAuthorityCertificateResponse.
+        r"""Gets the certificate_chain of this ExportCertificateAuthorityCertificateResponse.
 
         证书链内容，证书链中排列顺序（从上至下）：中间证书>...>根证书。 >  - 通过API请求本接口，证书链内容中换行符已使用\"\\r\\n\"代替； >  - 通过console端导出证书链，将得到标准的PEM格式的证书链文件。
 
@@ -84,7 +84,7 @@ class ExportCertificateAuthorityCertificateResponse(SdkResponse):
 
     @certificate_chain.setter
     def certificate_chain(self, certificate_chain):
-        """Sets the certificate_chain of this ExportCertificateAuthorityCertificateResponse.
+        r"""Sets the certificate_chain of this ExportCertificateAuthorityCertificateResponse.
 
         证书链内容，证书链中排列顺序（从上至下）：中间证书>...>根证书。 >  - 通过API请求本接口，证书链内容中换行符已使用\"\\r\\n\"代替； >  - 通过console端导出证书链，将得到标准的PEM格式的证书链文件。
 

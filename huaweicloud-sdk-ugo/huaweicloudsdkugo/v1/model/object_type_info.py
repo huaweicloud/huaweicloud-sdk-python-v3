@@ -27,7 +27,7 @@ class ObjectTypeInfo:
     }
 
     def __init__(self, is_select_all_objects_type=None, objects_type_list=None):
-        """ObjectTypeInfo
+        r"""ObjectTypeInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ObjectTypeInfo:
 
     @property
     def is_select_all_objects_type(self):
-        """Gets the is_select_all_objects_type of this ObjectTypeInfo.
+        r"""Gets the is_select_all_objects_type of this ObjectTypeInfo.
 
         是否选择全部object类型。取值为true时，不包含USER。
 
@@ -60,7 +60,7 @@ class ObjectTypeInfo:
 
     @is_select_all_objects_type.setter
     def is_select_all_objects_type(self, is_select_all_objects_type):
-        """Sets the is_select_all_objects_type of this ObjectTypeInfo.
+        r"""Sets the is_select_all_objects_type of this ObjectTypeInfo.
 
         是否选择全部object类型。取值为true时，不包含USER。
 
@@ -71,7 +71,7 @@ class ObjectTypeInfo:
 
     @property
     def objects_type_list(self):
-        """Gets the objects_type_list of this ObjectTypeInfo.
+        r"""Gets the objects_type_list of this ObjectTypeInfo.
 
         需要评估的object类型列表。is_select_all_objects_type为false时必填。
 
@@ -82,7 +82,7 @@ class ObjectTypeInfo:
 
     @objects_type_list.setter
     def objects_type_list(self, objects_type_list):
-        """Sets the objects_type_list of this ObjectTypeInfo.
+        r"""Sets the objects_type_list of this ObjectTypeInfo.
 
         需要评估的object类型列表。is_select_all_objects_type为false时必填。
 

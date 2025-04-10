@@ -27,7 +27,7 @@ class CreateTaskRequest:
     }
 
     def __init__(self, service_type=None, body=None):
-        """CreateTaskRequest
+        r"""CreateTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTaskRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this CreateTaskRequest.
+        r"""Gets the service_type of this CreateTaskRequest.
 
         服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；二维切割-方形件固定为 regular-plate，二维切割-异形件固定为 irregular-textile， 数学规划求解器固定为 optverse-mpsolver
 
@@ -60,7 +60,7 @@ class CreateTaskRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this CreateTaskRequest.
+        r"""Sets the service_type of this CreateTaskRequest.
 
         服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；二维切割-方形件固定为 regular-plate，二维切割-异形件固定为 irregular-textile， 数学规划求解器固定为 optverse-mpsolver
 
@@ -71,7 +71,7 @@ class CreateTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTaskRequest.
+        r"""Gets the body of this CreateTaskRequest.
 
         :return: The body of this CreateTaskRequest.
         :rtype: :class:`huaweicloudsdkoptverse.v2.TaskDto`
@@ -80,7 +80,7 @@ class CreateTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTaskRequest.
+        r"""Sets the body of this CreateTaskRequest.
 
         :param body: The body of this CreateTaskRequest.
         :type body: :class:`huaweicloudsdkoptverse.v2.TaskDto`

@@ -27,7 +27,7 @@ class UpdatePublicipRequest:
     }
 
     def __init__(self, publicip_id=None, body=None):
-        """UpdatePublicipRequest
+        r"""UpdatePublicipRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePublicipRequest:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this UpdatePublicipRequest.
+        r"""Gets the publicip_id of this UpdatePublicipRequest.
 
         弹性公网IP的ID
 
@@ -60,7 +60,7 @@ class UpdatePublicipRequest:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this UpdatePublicipRequest.
+        r"""Sets the publicip_id of this UpdatePublicipRequest.
 
         弹性公网IP的ID
 
@@ -71,7 +71,7 @@ class UpdatePublicipRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePublicipRequest.
+        r"""Gets the body of this UpdatePublicipRequest.
 
         :return: The body of this UpdatePublicipRequest.
         :rtype: :class:`huaweicloudsdkeip.v3.UpdatePublicipsRequestBody`
@@ -80,7 +80,7 @@ class UpdatePublicipRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePublicipRequest.
+        r"""Sets the body of this UpdatePublicipRequest.
 
         :param body: The body of this UpdatePublicipRequest.
         :type body: :class:`huaweicloudsdkeip.v3.UpdatePublicipsRequestBody`

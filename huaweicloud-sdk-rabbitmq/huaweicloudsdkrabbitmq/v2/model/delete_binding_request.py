@@ -35,7 +35,7 @@ class DeleteBindingRequest:
     }
 
     def __init__(self, instance_id=None, vhost=None, exchange=None, destination_type=None, destination=None, properties_key=None):
-        """DeleteBindingRequest
+        r"""DeleteBindingRequest
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class DeleteBindingRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteBindingRequest.
+        r"""Gets the instance_id of this DeleteBindingRequest.
 
         实例ID
 
@@ -83,7 +83,7 @@ class DeleteBindingRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteBindingRequest.
+        r"""Sets the instance_id of this DeleteBindingRequest.
 
         实例ID
 
@@ -94,7 +94,7 @@ class DeleteBindingRequest:
 
     @property
     def vhost(self):
-        """Gets the vhost of this DeleteBindingRequest.
+        r"""Gets the vhost of this DeleteBindingRequest.
 
         Vhost名称
 
@@ -105,7 +105,7 @@ class DeleteBindingRequest:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this DeleteBindingRequest.
+        r"""Sets the vhost of this DeleteBindingRequest.
 
         Vhost名称
 
@@ -116,7 +116,7 @@ class DeleteBindingRequest:
 
     @property
     def exchange(self):
-        """Gets the exchange of this DeleteBindingRequest.
+        r"""Gets the exchange of this DeleteBindingRequest.
 
         Exchange名称
 
@@ -127,7 +127,7 @@ class DeleteBindingRequest:
 
     @exchange.setter
     def exchange(self, exchange):
-        """Sets the exchange of this DeleteBindingRequest.
+        r"""Sets the exchange of this DeleteBindingRequest.
 
         Exchange名称
 
@@ -138,7 +138,7 @@ class DeleteBindingRequest:
 
     @property
     def destination_type(self):
-        """Gets the destination_type of this DeleteBindingRequest.
+        r"""Gets the destination_type of this DeleteBindingRequest.
 
         绑定目标端类型，Exchange或Queue。[（AMQP版本只支持Queue绑定类型）](tag:hws,hws_hk)
 
@@ -149,7 +149,7 @@ class DeleteBindingRequest:
 
     @destination_type.setter
     def destination_type(self, destination_type):
-        """Sets the destination_type of this DeleteBindingRequest.
+        r"""Sets the destination_type of this DeleteBindingRequest.
 
         绑定目标端类型，Exchange或Queue。[（AMQP版本只支持Queue绑定类型）](tag:hws,hws_hk)
 
@@ -160,7 +160,7 @@ class DeleteBindingRequest:
 
     @property
     def destination(self):
-        """Gets the destination of this DeleteBindingRequest.
+        r"""Gets the destination of this DeleteBindingRequest.
 
         绑定的目标端名称
 
@@ -171,7 +171,7 @@ class DeleteBindingRequest:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this DeleteBindingRequest.
+        r"""Sets the destination of this DeleteBindingRequest.
 
         绑定的目标端名称
 
@@ -182,7 +182,7 @@ class DeleteBindingRequest:
 
     @property
     def properties_key(self):
-        """Gets the properties_key of this DeleteBindingRequest.
+        r"""Gets the properties_key of this DeleteBindingRequest.
 
         绑定路由键，经过URL转译后routing_key，可通过调用[查询Exchange绑定列表](ListBindings.xml)或者[查询指定Queue详情](ShowQueueDetails.xml)接口的响应信息获取。
 
@@ -193,7 +193,7 @@ class DeleteBindingRequest:
 
     @properties_key.setter
     def properties_key(self, properties_key):
-        """Sets the properties_key of this DeleteBindingRequest.
+        r"""Sets the properties_key of this DeleteBindingRequest.
 
         绑定路由键，经过URL转译后routing_key，可通过调用[查询Exchange绑定列表](ListBindings.xml)或者[查询指定Queue详情](ShowQueueDetails.xml)接口的响应信息获取。
 

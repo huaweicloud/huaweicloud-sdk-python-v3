@@ -31,7 +31,7 @@ class CreateDockerRepositoryDO:
     }
 
     def __init__(self, format=None, display_name=None, description=None, type=None):
-        """CreateDockerRepositoryDO
+        r"""CreateDockerRepositoryDO
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateDockerRepositoryDO:
 
     @property
     def format(self):
-        """Gets the format of this CreateDockerRepositoryDO.
+        r"""Gets the format of this CreateDockerRepositoryDO.
 
         仓库格式
 
@@ -72,7 +72,7 @@ class CreateDockerRepositoryDO:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this CreateDockerRepositoryDO.
+        r"""Sets the format of this CreateDockerRepositoryDO.
 
         仓库格式
 
@@ -83,7 +83,7 @@ class CreateDockerRepositoryDO:
 
     @property
     def display_name(self):
-        """Gets the display_name of this CreateDockerRepositoryDO.
+        r"""Gets the display_name of this CreateDockerRepositoryDO.
 
         仓库展示名称
 
@@ -94,7 +94,7 @@ class CreateDockerRepositoryDO:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this CreateDockerRepositoryDO.
+        r"""Sets the display_name of this CreateDockerRepositoryDO.
 
         仓库展示名称
 
@@ -105,7 +105,7 @@ class CreateDockerRepositoryDO:
 
     @property
     def description(self):
-        """Gets the description of this CreateDockerRepositoryDO.
+        r"""Gets the description of this CreateDockerRepositoryDO.
 
         仓库描述
 
@@ -116,7 +116,7 @@ class CreateDockerRepositoryDO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateDockerRepositoryDO.
+        r"""Sets the description of this CreateDockerRepositoryDO.
 
         仓库描述
 
@@ -127,7 +127,7 @@ class CreateDockerRepositoryDO:
 
     @property
     def type(self):
-        """Gets the type of this CreateDockerRepositoryDO.
+        r"""Gets the type of this CreateDockerRepositoryDO.
 
         仓库类型
 
@@ -138,7 +138,7 @@ class CreateDockerRepositoryDO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateDockerRepositoryDO.
+        r"""Sets the type of this CreateDockerRepositoryDO.
 
         仓库类型
 

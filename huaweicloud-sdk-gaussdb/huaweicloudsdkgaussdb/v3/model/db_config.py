@@ -27,7 +27,7 @@ class DbConfig:
     }
 
     def __init__(self, param_name=None, value=None):
-        """DbConfig
+        r"""DbConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DbConfig:
 
     @property
     def param_name(self):
-        """Gets the param_name of this DbConfig.
+        r"""Gets the param_name of this DbConfig.
 
         参数名。
 
@@ -61,7 +61,7 @@ class DbConfig:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this DbConfig.
+        r"""Sets the param_name of this DbConfig.
 
         参数名。
 
@@ -72,7 +72,7 @@ class DbConfig:
 
     @property
     def value(self):
-        """Gets the value of this DbConfig.
+        r"""Gets the value of this DbConfig.
 
         参数值。
 
@@ -83,7 +83,7 @@ class DbConfig:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DbConfig.
+        r"""Sets the value of this DbConfig.
 
         参数值。
 

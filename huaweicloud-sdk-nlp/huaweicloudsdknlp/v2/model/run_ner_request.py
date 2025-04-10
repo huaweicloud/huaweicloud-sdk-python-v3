@@ -25,7 +25,7 @@ class RunNerRequest:
     }
 
     def __init__(self, body=None):
-        """RunNerRequest
+        r"""RunNerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunNerRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunNerRequest.
+        r"""Gets the body of this RunNerRequest.
 
         :return: The body of this RunNerRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.NerRequest`
@@ -52,7 +52,7 @@ class RunNerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunNerRequest.
+        r"""Sets the body of this RunNerRequest.
 
         :param body: The body of this RunNerRequest.
         :type body: :class:`huaweicloudsdknlp.v2.NerRequest`

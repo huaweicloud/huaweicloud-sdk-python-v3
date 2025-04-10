@@ -25,7 +25,7 @@ class ProxyUpdateProxyNameRequest:
     }
 
     def __init__(self, alias=None):
-        """ProxyUpdateProxyNameRequest
+        r"""ProxyUpdateProxyNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ProxyUpdateProxyNameRequest:
 
     @property
     def alias(self):
-        """Gets the alias of this ProxyUpdateProxyNameRequest.
+        r"""Gets the alias of this ProxyUpdateProxyNameRequest.
 
         修改代理实例的新名称
 
@@ -53,7 +53,7 @@ class ProxyUpdateProxyNameRequest:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this ProxyUpdateProxyNameRequest.
+        r"""Sets the alias of this ProxyUpdateProxyNameRequest.
 
         修改代理实例的新名称
 

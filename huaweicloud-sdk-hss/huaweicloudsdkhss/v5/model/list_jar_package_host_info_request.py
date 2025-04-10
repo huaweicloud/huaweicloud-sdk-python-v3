@@ -39,11 +39,11 @@ class ListJarPackageHostInfoRequest:
     }
 
     def __init__(self, enterprise_project_id=None, file_name=None, category=None, host_name=None, host_ip=None, limit=None, offset=None, part_match=None):
-        """ListJarPackageHostInfoRequest
+        r"""ListJarPackageHostInfoRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param file_name: 文件名称
         :type file_name: str
@@ -91,9 +91,9 @@ class ListJarPackageHostInfoRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListJarPackageHostInfoRequest.
+        r"""Gets the enterprise_project_id of this ListJarPackageHostInfoRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListJarPackageHostInfoRequest.
         :rtype: str
@@ -102,9 +102,9 @@ class ListJarPackageHostInfoRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListJarPackageHostInfoRequest.
+        r"""Sets the enterprise_project_id of this ListJarPackageHostInfoRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListJarPackageHostInfoRequest.
         :type enterprise_project_id: str
@@ -113,7 +113,7 @@ class ListJarPackageHostInfoRequest:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ListJarPackageHostInfoRequest.
+        r"""Gets the file_name of this ListJarPackageHostInfoRequest.
 
         文件名称
 
@@ -124,7 +124,7 @@ class ListJarPackageHostInfoRequest:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ListJarPackageHostInfoRequest.
+        r"""Sets the file_name of this ListJarPackageHostInfoRequest.
 
         文件名称
 
@@ -135,7 +135,7 @@ class ListJarPackageHostInfoRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListJarPackageHostInfoRequest.
+        r"""Gets the category of this ListJarPackageHostInfoRequest.
 
         类别，包含如下:   - host : 主机   - container : 容器
 
@@ -146,7 +146,7 @@ class ListJarPackageHostInfoRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListJarPackageHostInfoRequest.
+        r"""Sets the category of this ListJarPackageHostInfoRequest.
 
         类别，包含如下:   - host : 主机   - container : 容器
 
@@ -157,7 +157,7 @@ class ListJarPackageHostInfoRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListJarPackageHostInfoRequest.
+        r"""Gets the host_name of this ListJarPackageHostInfoRequest.
 
         服务器名称
 
@@ -168,7 +168,7 @@ class ListJarPackageHostInfoRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListJarPackageHostInfoRequest.
+        r"""Sets the host_name of this ListJarPackageHostInfoRequest.
 
         服务器名称
 
@@ -179,7 +179,7 @@ class ListJarPackageHostInfoRequest:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this ListJarPackageHostInfoRequest.
+        r"""Gets the host_ip of this ListJarPackageHostInfoRequest.
 
         服务器IP
 
@@ -190,7 +190,7 @@ class ListJarPackageHostInfoRequest:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this ListJarPackageHostInfoRequest.
+        r"""Sets the host_ip of this ListJarPackageHostInfoRequest.
 
         服务器IP
 
@@ -201,7 +201,7 @@ class ListJarPackageHostInfoRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJarPackageHostInfoRequest.
+        r"""Gets the limit of this ListJarPackageHostInfoRequest.
 
         每页显示数量
 
@@ -212,7 +212,7 @@ class ListJarPackageHostInfoRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJarPackageHostInfoRequest.
+        r"""Sets the limit of this ListJarPackageHostInfoRequest.
 
         每页显示数量
 
@@ -223,7 +223,7 @@ class ListJarPackageHostInfoRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJarPackageHostInfoRequest.
+        r"""Gets the offset of this ListJarPackageHostInfoRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -234,7 +234,7 @@ class ListJarPackageHostInfoRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJarPackageHostInfoRequest.
+        r"""Sets the offset of this ListJarPackageHostInfoRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -245,7 +245,7 @@ class ListJarPackageHostInfoRequest:
 
     @property
     def part_match(self):
-        """Gets the part_match of this ListJarPackageHostInfoRequest.
+        r"""Gets the part_match of this ListJarPackageHostInfoRequest.
 
         是否模糊匹配，默认false表示精确匹配
 
@@ -256,7 +256,7 @@ class ListJarPackageHostInfoRequest:
 
     @part_match.setter
     def part_match(self, part_match):
-        """Sets the part_match of this ListJarPackageHostInfoRequest.
+        r"""Sets the part_match of this ListJarPackageHostInfoRequest.
 
         是否模糊匹配，默认false表示精确匹配
 

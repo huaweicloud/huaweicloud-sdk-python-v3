@@ -33,7 +33,7 @@ class EnlargeInstanceRequestBody:
     }
 
     def __init__(self, type=None, spec_code=None, num=None, volume=None, is_auto_pay=None):
-        """EnlargeInstanceRequestBody
+        r"""EnlargeInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class EnlargeInstanceRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this EnlargeInstanceRequestBody.
+        r"""Gets the type of this EnlargeInstanceRequestBody.
 
         待扩容的对象类型。 - 扩容mongos节点时，取值为“mongos”。 - 扩容shard组时，取值为“shard”。
 
@@ -79,7 +79,7 @@ class EnlargeInstanceRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EnlargeInstanceRequestBody.
+        r"""Sets the type of this EnlargeInstanceRequestBody.
 
         待扩容的对象类型。 - 扩容mongos节点时，取值为“mongos”。 - 扩容shard组时，取值为“shard”。
 
@@ -90,7 +90,7 @@ class EnlargeInstanceRequestBody:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this EnlargeInstanceRequestBody.
+        r"""Gets the spec_code of this EnlargeInstanceRequestBody.
 
         资源规格编码。
 
@@ -101,7 +101,7 @@ class EnlargeInstanceRequestBody:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this EnlargeInstanceRequestBody.
+        r"""Sets the spec_code of this EnlargeInstanceRequestBody.
 
         资源规格编码。
 
@@ -112,7 +112,7 @@ class EnlargeInstanceRequestBody:
 
     @property
     def num(self):
-        """Gets the num of this EnlargeInstanceRequestBody.
+        r"""Gets the num of this EnlargeInstanceRequestBody.
 
         一个集群实例下，最多支持16个mongos节点和16个shard组。
 
@@ -123,7 +123,7 @@ class EnlargeInstanceRequestBody:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this EnlargeInstanceRequestBody.
+        r"""Sets the num of this EnlargeInstanceRequestBody.
 
         一个集群实例下，最多支持16个mongos节点和16个shard组。
 
@@ -134,7 +134,7 @@ class EnlargeInstanceRequestBody:
 
     @property
     def volume(self):
-        """Gets the volume of this EnlargeInstanceRequestBody.
+        r"""Gets the volume of this EnlargeInstanceRequestBody.
 
         :return: The volume of this EnlargeInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkdds.v3.AddShardingNodeVolumeOption`
@@ -143,7 +143,7 @@ class EnlargeInstanceRequestBody:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this EnlargeInstanceRequestBody.
+        r"""Sets the volume of this EnlargeInstanceRequestBody.
 
         :param volume: The volume of this EnlargeInstanceRequestBody.
         :type volume: :class:`huaweicloudsdkdds.v3.AddShardingNodeVolumeOption`
@@ -152,7 +152,7 @@ class EnlargeInstanceRequestBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this EnlargeInstanceRequestBody.
+        r"""Gets the is_auto_pay of this EnlargeInstanceRequestBody.
 
         扩容包年包月实例的节点数量时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。
 
@@ -163,7 +163,7 @@ class EnlargeInstanceRequestBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this EnlargeInstanceRequestBody.
+        r"""Sets the is_auto_pay of this EnlargeInstanceRequestBody.
 
         扩容包年包月实例的节点数量时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。
 

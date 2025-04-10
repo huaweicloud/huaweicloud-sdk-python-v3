@@ -94,7 +94,7 @@ class ShowClusterDetailResponse(SdkResponse):
     }
 
     def __init__(self, public_endpoint=None, instances=None, security_group_id=None, subnet_id=None, vpc_id=None, customer_config=None, datastore=None, is_auto_off=None, public_endpoint_domain_name=None, bak_expected_start_time=None, bak_keep_day=None, maintain_window=None, recent_event=None, flavor_name=None, az_name=None, endpoint_domain_name=None, public_endpoint_status=None, is_schedule_boot_off=None, namespace=None, eip_id=None, failed_reasons=None, dbuser=None, links=None, cluster_mode=None, task=None, created=None, status_detail=None, config_status=None, action_progress=None, name=None, id=None, is_frozen=None, actions=None, updated=None, status=None):
-        """ShowClusterDetailResponse
+        r"""ShowClusterDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -282,7 +282,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def public_endpoint(self):
-        """Gets the public_endpoint of this ShowClusterDetailResponse.
+        r"""Gets the public_endpoint of this ShowClusterDetailResponse.
 
         集群绑定的EIP
 
@@ -293,7 +293,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @public_endpoint.setter
     def public_endpoint(self, public_endpoint):
-        """Sets the public_endpoint of this ShowClusterDetailResponse.
+        r"""Sets the public_endpoint of this ShowClusterDetailResponse.
 
         集群绑定的EIP
 
@@ -304,7 +304,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ShowClusterDetailResponse.
+        r"""Gets the instances of this ShowClusterDetailResponse.
 
         集群的节点信息，请参见instances参数说明
 
@@ -315,7 +315,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ShowClusterDetailResponse.
+        r"""Sets the instances of this ShowClusterDetailResponse.
 
         集群的节点信息，请参见instances参数说明
 
@@ -326,7 +326,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ShowClusterDetailResponse.
+        r"""Gets the security_group_id of this ShowClusterDetailResponse.
 
         安全组id
 
@@ -337,7 +337,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ShowClusterDetailResponse.
+        r"""Sets the security_group_id of this ShowClusterDetailResponse.
 
         安全组id
 
@@ -348,7 +348,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ShowClusterDetailResponse.
+        r"""Gets the subnet_id of this ShowClusterDetailResponse.
 
         子网id
 
@@ -359,7 +359,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ShowClusterDetailResponse.
+        r"""Sets the subnet_id of this ShowClusterDetailResponse.
 
         子网id
 
@@ -370,7 +370,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowClusterDetailResponse.
+        r"""Gets the vpc_id of this ShowClusterDetailResponse.
 
         虚拟私有云ID
 
@@ -381,7 +381,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowClusterDetailResponse.
+        r"""Sets the vpc_id of this ShowClusterDetailResponse.
 
         虚拟私有云ID
 
@@ -392,7 +392,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def customer_config(self):
-        """Gets the customer_config of this ShowClusterDetailResponse.
+        r"""Gets the customer_config of this ShowClusterDetailResponse.
 
         :return: The customer_config of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.CustomerConfig`
@@ -401,7 +401,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @customer_config.setter
     def customer_config(self, customer_config):
-        """Sets the customer_config of this ShowClusterDetailResponse.
+        r"""Sets the customer_config of this ShowClusterDetailResponse.
 
         :param customer_config: The customer_config of this ShowClusterDetailResponse.
         :type customer_config: :class:`huaweicloudsdkcdm.v1.CustomerConfig`
@@ -410,7 +410,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def datastore(self):
-        """Gets the datastore of this ShowClusterDetailResponse.
+        r"""Gets the datastore of this ShowClusterDetailResponse.
 
         :return: The datastore of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.Datastore`
@@ -419,7 +419,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this ShowClusterDetailResponse.
+        r"""Sets the datastore of this ShowClusterDetailResponse.
 
         :param datastore: The datastore of this ShowClusterDetailResponse.
         :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
@@ -428,7 +428,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def is_auto_off(self):
-        """Gets the is_auto_off of this ShowClusterDetailResponse.
+        r"""Gets the is_auto_off of this ShowClusterDetailResponse.
 
         自动关机
 
@@ -439,7 +439,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @is_auto_off.setter
     def is_auto_off(self, is_auto_off):
-        """Sets the is_auto_off of this ShowClusterDetailResponse.
+        r"""Sets the is_auto_off of this ShowClusterDetailResponse.
 
         自动关机
 
@@ -450,7 +450,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def public_endpoint_domain_name(self):
-        """Gets the public_endpoint_domain_name of this ShowClusterDetailResponse.
+        r"""Gets the public_endpoint_domain_name of this ShowClusterDetailResponse.
 
         集群绑定的EIP域名
 
@@ -461,7 +461,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @public_endpoint_domain_name.setter
     def public_endpoint_domain_name(self, public_endpoint_domain_name):
-        """Sets the public_endpoint_domain_name of this ShowClusterDetailResponse.
+        r"""Sets the public_endpoint_domain_name of this ShowClusterDetailResponse.
 
         集群绑定的EIP域名
 
@@ -472,7 +472,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def bak_expected_start_time(self):
-        """Gets the bak_expected_start_time of this ShowClusterDetailResponse.
+        r"""Gets the bak_expected_start_time of this ShowClusterDetailResponse.
 
         开始时间
 
@@ -483,7 +483,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @bak_expected_start_time.setter
     def bak_expected_start_time(self, bak_expected_start_time):
-        """Sets the bak_expected_start_time of this ShowClusterDetailResponse.
+        r"""Sets the bak_expected_start_time of this ShowClusterDetailResponse.
 
         开始时间
 
@@ -494,7 +494,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def bak_keep_day(self):
-        """Gets the bak_keep_day of this ShowClusterDetailResponse.
+        r"""Gets the bak_keep_day of this ShowClusterDetailResponse.
 
         保留时间
 
@@ -505,7 +505,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @bak_keep_day.setter
     def bak_keep_day(self, bak_keep_day):
-        """Sets the bak_keep_day of this ShowClusterDetailResponse.
+        r"""Sets the bak_keep_day of this ShowClusterDetailResponse.
 
         保留时间
 
@@ -516,7 +516,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def maintain_window(self):
-        """Gets the maintain_window of this ShowClusterDetailResponse.
+        r"""Gets the maintain_window of this ShowClusterDetailResponse.
 
         :return: The maintain_window of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterDetailsRepsonseMaintainWindow`
@@ -525,7 +525,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @maintain_window.setter
     def maintain_window(self, maintain_window):
-        """Sets the maintain_window of this ShowClusterDetailResponse.
+        r"""Sets the maintain_window of this ShowClusterDetailResponse.
 
         :param maintain_window: The maintain_window of this ShowClusterDetailResponse.
         :type maintain_window: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterDetailsRepsonseMaintainWindow`
@@ -534,7 +534,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def recent_event(self):
-        """Gets the recent_event of this ShowClusterDetailResponse.
+        r"""Gets the recent_event of this ShowClusterDetailResponse.
 
         事件数
 
@@ -545,7 +545,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @recent_event.setter
     def recent_event(self, recent_event):
-        """Sets the recent_event of this ShowClusterDetailResponse.
+        r"""Sets the recent_event of this ShowClusterDetailResponse.
 
         事件数
 
@@ -556,7 +556,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def flavor_name(self):
-        """Gets the flavor_name of this ShowClusterDetailResponse.
+        r"""Gets the flavor_name of this ShowClusterDetailResponse.
 
         规格名称
 
@@ -567,7 +567,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @flavor_name.setter
     def flavor_name(self, flavor_name):
-        """Sets the flavor_name of this ShowClusterDetailResponse.
+        r"""Sets the flavor_name of this ShowClusterDetailResponse.
 
         规格名称
 
@@ -578,7 +578,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def az_name(self):
-        """Gets the az_name of this ShowClusterDetailResponse.
+        r"""Gets the az_name of this ShowClusterDetailResponse.
 
         az名称
 
@@ -589,7 +589,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @az_name.setter
     def az_name(self, az_name):
-        """Sets the az_name of this ShowClusterDetailResponse.
+        r"""Sets the az_name of this ShowClusterDetailResponse.
 
         az名称
 
@@ -600,7 +600,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def endpoint_domain_name(self):
-        """Gets the endpoint_domain_name of this ShowClusterDetailResponse.
+        r"""Gets the endpoint_domain_name of this ShowClusterDetailResponse.
 
         对端域名
 
@@ -611,7 +611,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @endpoint_domain_name.setter
     def endpoint_domain_name(self, endpoint_domain_name):
-        """Sets the endpoint_domain_name of this ShowClusterDetailResponse.
+        r"""Sets the endpoint_domain_name of this ShowClusterDetailResponse.
 
         对端域名
 
@@ -622,7 +622,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def public_endpoint_status(self):
-        """Gets the public_endpoint_status of this ShowClusterDetailResponse.
+        r"""Gets the public_endpoint_status of this ShowClusterDetailResponse.
 
         :return: The public_endpoint_status of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterDetailsRepsonsePublicEndpointStatus`
@@ -631,7 +631,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @public_endpoint_status.setter
     def public_endpoint_status(self, public_endpoint_status):
-        """Sets the public_endpoint_status of this ShowClusterDetailResponse.
+        r"""Sets the public_endpoint_status of this ShowClusterDetailResponse.
 
         :param public_endpoint_status: The public_endpoint_status of this ShowClusterDetailResponse.
         :type public_endpoint_status: :class:`huaweicloudsdkcdm.v1.CdmQueryClusterDetailsRepsonsePublicEndpointStatus`
@@ -640,7 +640,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def is_schedule_boot_off(self):
-        """Gets the is_schedule_boot_off of this ShowClusterDetailResponse.
+        r"""Gets the is_schedule_boot_off of this ShowClusterDetailResponse.
 
         选择是否启用定时开关机功能。定时开关机功能和自动关机功能不可同时开启
 
@@ -651,7 +651,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @is_schedule_boot_off.setter
     def is_schedule_boot_off(self, is_schedule_boot_off):
-        """Sets the is_schedule_boot_off of this ShowClusterDetailResponse.
+        r"""Sets the is_schedule_boot_off of this ShowClusterDetailResponse.
 
         选择是否启用定时开关机功能。定时开关机功能和自动关机功能不可同时开启
 
@@ -662,7 +662,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def namespace(self):
-        """Gets the namespace of this ShowClusterDetailResponse.
+        r"""Gets the namespace of this ShowClusterDetailResponse.
 
         命名空间
 
@@ -673,7 +673,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ShowClusterDetailResponse.
+        r"""Sets the namespace of this ShowClusterDetailResponse.
 
         命名空间
 
@@ -684,7 +684,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this ShowClusterDetailResponse.
+        r"""Gets the eip_id of this ShowClusterDetailResponse.
 
         弹性ip id
 
@@ -695,7 +695,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this ShowClusterDetailResponse.
+        r"""Sets the eip_id of this ShowClusterDetailResponse.
 
         弹性ip id
 
@@ -706,7 +706,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def failed_reasons(self):
-        """Gets the failed_reasons of this ShowClusterDetailResponse.
+        r"""Gets the failed_reasons of this ShowClusterDetailResponse.
 
         :return: The failed_reasons of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.FailedReasons`
@@ -715,7 +715,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @failed_reasons.setter
     def failed_reasons(self, failed_reasons):
-        """Sets the failed_reasons of this ShowClusterDetailResponse.
+        r"""Sets the failed_reasons of this ShowClusterDetailResponse.
 
         :param failed_reasons: The failed_reasons of this ShowClusterDetailResponse.
         :type failed_reasons: :class:`huaweicloudsdkcdm.v1.FailedReasons`
@@ -724,7 +724,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def dbuser(self):
-        """Gets the dbuser of this ShowClusterDetailResponse.
+        r"""Gets the dbuser of this ShowClusterDetailResponse.
 
         数据库用户
 
@@ -735,7 +735,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @dbuser.setter
     def dbuser(self, dbuser):
-        """Sets the dbuser of this ShowClusterDetailResponse.
+        r"""Sets the dbuser of this ShowClusterDetailResponse.
 
         数据库用户
 
@@ -746,7 +746,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ShowClusterDetailResponse.
+        r"""Gets the links of this ShowClusterDetailResponse.
 
         :return: The links of this ShowClusterDetailResponse.
         :rtype: list[:class:`huaweicloudsdkcdm.v1.ClusterLinks`]
@@ -755,7 +755,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowClusterDetailResponse.
+        r"""Sets the links of this ShowClusterDetailResponse.
 
         :param links: The links of this ShowClusterDetailResponse.
         :type links: list[:class:`huaweicloudsdkcdm.v1.ClusterLinks`]
@@ -764,7 +764,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def cluster_mode(self):
-        """Gets the cluster_mode of this ShowClusterDetailResponse.
+        r"""Gets the cluster_mode of this ShowClusterDetailResponse.
 
         集群模式：sharding(分片集群)
 
@@ -775,7 +775,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @cluster_mode.setter
     def cluster_mode(self, cluster_mode):
-        """Sets the cluster_mode of this ShowClusterDetailResponse.
+        r"""Sets the cluster_mode of this ShowClusterDetailResponse.
 
         集群模式：sharding(分片集群)
 
@@ -786,7 +786,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def task(self):
-        """Gets the task of this ShowClusterDetailResponse.
+        r"""Gets the task of this ShowClusterDetailResponse.
 
         :return: The task of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.ClusterTask`
@@ -795,7 +795,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @task.setter
     def task(self, task):
-        """Sets the task of this ShowClusterDetailResponse.
+        r"""Sets the task of this ShowClusterDetailResponse.
 
         :param task: The task of this ShowClusterDetailResponse.
         :type task: :class:`huaweicloudsdkcdm.v1.ClusterTask`
@@ -804,7 +804,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this ShowClusterDetailResponse.
+        r"""Gets the created of this ShowClusterDetailResponse.
 
         集群创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -815,7 +815,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowClusterDetailResponse.
+        r"""Sets the created of this ShowClusterDetailResponse.
 
         集群创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -826,7 +826,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def status_detail(self):
-        """Gets the status_detail of this ShowClusterDetailResponse.
+        r"""Gets the status_detail of this ShowClusterDetailResponse.
 
         集群状态描述：Normal（正常）
 
@@ -837,7 +837,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @status_detail.setter
     def status_detail(self, status_detail):
-        """Sets the status_detail of this ShowClusterDetailResponse.
+        r"""Sets the status_detail of this ShowClusterDetailResponse.
 
         集群状态描述：Normal（正常）
 
@@ -848,7 +848,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def config_status(self):
-        """Gets the config_status of this ShowClusterDetailResponse.
+        r"""Gets the config_status of this ShowClusterDetailResponse.
 
         集群配置状态： - In-Sync：配置已同步。 - Applying：配置中。 - Sync-Failure：配置失败
 
@@ -859,7 +859,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @config_status.setter
     def config_status(self, config_status):
-        """Sets the config_status of this ShowClusterDetailResponse.
+        r"""Sets the config_status of this ShowClusterDetailResponse.
 
         集群配置状态： - In-Sync：配置已同步。 - Applying：配置中。 - Sync-Failure：配置失败
 
@@ -870,7 +870,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def action_progress(self):
-        """Gets the action_progress of this ShowClusterDetailResponse.
+        r"""Gets the action_progress of this ShowClusterDetailResponse.
 
         :return: The action_progress of this ShowClusterDetailResponse.
         :rtype: :class:`huaweicloudsdkcdm.v1.ActionProgress`
@@ -879,7 +879,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @action_progress.setter
     def action_progress(self, action_progress):
-        """Sets the action_progress of this ShowClusterDetailResponse.
+        r"""Sets the action_progress of this ShowClusterDetailResponse.
 
         :param action_progress: The action_progress of this ShowClusterDetailResponse.
         :type action_progress: :class:`huaweicloudsdkcdm.v1.ActionProgress`
@@ -888,7 +888,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowClusterDetailResponse.
+        r"""Gets the name of this ShowClusterDetailResponse.
 
         集群名称
 
@@ -899,7 +899,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowClusterDetailResponse.
+        r"""Sets the name of this ShowClusterDetailResponse.
 
         集群名称
 
@@ -910,7 +910,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowClusterDetailResponse.
+        r"""Gets the id of this ShowClusterDetailResponse.
 
         集群ID
 
@@ -921,7 +921,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowClusterDetailResponse.
+        r"""Sets the id of this ShowClusterDetailResponse.
 
         集群ID
 
@@ -932,7 +932,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def is_frozen(self):
-        """Gets the is_frozen of this ShowClusterDetailResponse.
+        r"""Gets the is_frozen of this ShowClusterDetailResponse.
 
         集群是否冻结：0：否1：是
 
@@ -943,7 +943,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @is_frozen.setter
     def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this ShowClusterDetailResponse.
+        r"""Sets the is_frozen of this ShowClusterDetailResponse.
 
         集群是否冻结：0：否1：是
 
@@ -954,7 +954,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def actions(self):
-        """Gets the actions of this ShowClusterDetailResponse.
+        r"""Gets the actions of this ShowClusterDetailResponse.
 
         集群配置状态：In-Sync：配置已同步。Applying：配置中。Sync-Failure：配置失败
 
@@ -965,7 +965,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this ShowClusterDetailResponse.
+        r"""Sets the actions of this ShowClusterDetailResponse.
 
         集群配置状态：In-Sync：配置已同步。Applying：配置中。Sync-Failure：配置失败
 
@@ -976,7 +976,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowClusterDetailResponse.
+        r"""Gets the updated of this ShowClusterDetailResponse.
 
         集群更新时间，格式为 ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -987,7 +987,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowClusterDetailResponse.
+        r"""Sets the updated of this ShowClusterDetailResponse.
 
         集群更新时间，格式为 ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -998,7 +998,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowClusterDetailResponse.
+        r"""Gets the status of this ShowClusterDetailResponse.
 
         集群状态： - 100：创建中 - 200：正常 - 300：失败 - 303：创建失败 - 800：冻结 - 900：已关机 - 910：正在关机 - 920：正在开机
 
@@ -1009,7 +1009,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowClusterDetailResponse.
+        r"""Sets the status of this ShowClusterDetailResponse.
 
         集群状态： - 100：创建中 - 200：正常 - 300：失败 - 303：创建失败 - 800：冻结 - 900：已关机 - 910：正在关机 - 920：正在开机
 

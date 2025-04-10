@@ -25,7 +25,7 @@ class ShowSha256Request:
     }
 
     def __init__(self, key=None):
-        """ShowSha256Request
+        r"""ShowSha256Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSha256Request:
 
     @property
     def key(self):
-        """Gets the key of this ShowSha256Request.
+        r"""Gets the key of this ShowSha256Request.
 
         关键字，加密字段值为uuid。
 
@@ -53,7 +53,7 @@ class ShowSha256Request:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ShowSha256Request.
+        r"""Sets the key of this ShowSha256Request.
 
         关键字，加密字段值为uuid。
 

@@ -24,7 +24,7 @@ class PauseScalingGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """PauseScalingGroupResponse
+        r"""PauseScalingGroupResponse
 
         The model defined in huaweicloud sdk
 

@@ -34,7 +34,7 @@ class ListVpnConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, vpn_connections=None, page_info=None, request_id=None, total_count=None, header_response_token=None):
-        """ListVpnConnectionsResponse
+        r"""ListVpnConnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListVpnConnectionsResponse(SdkResponse):
 
     @property
     def vpn_connections(self):
-        """Gets the vpn_connections of this ListVpnConnectionsResponse.
+        r"""Gets the vpn_connections of this ListVpnConnectionsResponse.
 
         :return: The vpn_connections of this ListVpnConnectionsResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.ResponseVpnConnection`]
@@ -81,7 +81,7 @@ class ListVpnConnectionsResponse(SdkResponse):
 
     @vpn_connections.setter
     def vpn_connections(self, vpn_connections):
-        """Sets the vpn_connections of this ListVpnConnectionsResponse.
+        r"""Sets the vpn_connections of this ListVpnConnectionsResponse.
 
         :param vpn_connections: The vpn_connections of this ListVpnConnectionsResponse.
         :type vpn_connections: list[:class:`huaweicloudsdkvpn.v5.ResponseVpnConnection`]
@@ -90,7 +90,7 @@ class ListVpnConnectionsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListVpnConnectionsResponse.
+        r"""Gets the page_info of this ListVpnConnectionsResponse.
 
         :return: The page_info of this ListVpnConnectionsResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -99,7 +99,7 @@ class ListVpnConnectionsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListVpnConnectionsResponse.
+        r"""Sets the page_info of this ListVpnConnectionsResponse.
 
         :param page_info: The page_info of this ListVpnConnectionsResponse.
         :type page_info: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -108,7 +108,7 @@ class ListVpnConnectionsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListVpnConnectionsResponse.
+        r"""Gets the request_id of this ListVpnConnectionsResponse.
 
         请求ID
 
@@ -119,7 +119,7 @@ class ListVpnConnectionsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListVpnConnectionsResponse.
+        r"""Sets the request_id of this ListVpnConnectionsResponse.
 
         请求ID
 
@@ -130,7 +130,7 @@ class ListVpnConnectionsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListVpnConnectionsResponse.
+        r"""Gets the total_count of this ListVpnConnectionsResponse.
 
         租户下连接总数
 
@@ -141,7 +141,7 @@ class ListVpnConnectionsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListVpnConnectionsResponse.
+        r"""Sets the total_count of this ListVpnConnectionsResponse.
 
         租户下连接总数
 
@@ -152,7 +152,7 @@ class ListVpnConnectionsResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this ListVpnConnectionsResponse.
+        r"""Gets the header_response_token of this ListVpnConnectionsResponse.
 
         :return: The header_response_token of this ListVpnConnectionsResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class ListVpnConnectionsResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this ListVpnConnectionsResponse.
+        r"""Sets the header_response_token of this ListVpnConnectionsResponse.
 
         :param header_response_token: The header_response_token of this ListVpnConnectionsResponse.
         :type header_response_token: str

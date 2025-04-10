@@ -29,7 +29,7 @@ class DelayRestoreDatabase:
     }
 
     def __init__(self, name=None, total_tables=None, schemas=None):
-        """DelayRestoreDatabase
+        r"""DelayRestoreDatabase
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DelayRestoreDatabase:
 
     @property
     def name(self):
-        """Gets the name of this DelayRestoreDatabase.
+        r"""Gets the name of this DelayRestoreDatabase.
 
         数据库名称
 
@@ -67,7 +67,7 @@ class DelayRestoreDatabase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DelayRestoreDatabase.
+        r"""Sets the name of this DelayRestoreDatabase.
 
         数据库名称
 
@@ -78,7 +78,7 @@ class DelayRestoreDatabase:
 
     @property
     def total_tables(self):
-        """Gets the total_tables of this DelayRestoreDatabase.
+        r"""Gets the total_tables of this DelayRestoreDatabase.
 
         返回该库下的总表数量
 
@@ -89,7 +89,7 @@ class DelayRestoreDatabase:
 
     @total_tables.setter
     def total_tables(self, total_tables):
-        """Sets the total_tables of this DelayRestoreDatabase.
+        r"""Sets the total_tables of this DelayRestoreDatabase.
 
         返回该库下的总表数量
 
@@ -100,7 +100,7 @@ class DelayRestoreDatabase:
 
     @property
     def schemas(self):
-        """Gets the schemas of this DelayRestoreDatabase.
+        r"""Gets the schemas of this DelayRestoreDatabase.
 
         该库下的schema列表
 
@@ -111,7 +111,7 @@ class DelayRestoreDatabase:
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this DelayRestoreDatabase.
+        r"""Sets the schemas of this DelayRestoreDatabase.
 
         该库下的schema列表
 

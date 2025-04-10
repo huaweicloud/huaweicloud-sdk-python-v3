@@ -24,7 +24,7 @@ class CheckProductHealthyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CheckProductHealthyResponse
+        r"""CheckProductHealthyResponse
 
         The model defined in huaweicloud sdk
 

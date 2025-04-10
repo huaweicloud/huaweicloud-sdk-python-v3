@@ -45,7 +45,7 @@ class WidgetInfoWithId:
     }
 
     def __init__(self, widget_id=None, metrics=None, title=None, threshold=None, threshold_enabled=None, view=None, metric_display_mode=None, properties=None, location=None, unit=None, create_time=None):
-        """WidgetInfoWithId
+        r"""WidgetInfoWithId
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class WidgetInfoWithId:
 
     @property
     def widget_id(self):
-        """Gets the widget_id of this WidgetInfoWithId.
+        r"""Gets the widget_id of this WidgetInfoWithId.
 
         视图id
 
@@ -124,7 +124,7 @@ class WidgetInfoWithId:
 
     @widget_id.setter
     def widget_id(self, widget_id):
-        """Sets the widget_id of this WidgetInfoWithId.
+        r"""Sets the widget_id of this WidgetInfoWithId.
 
         视图id
 
@@ -135,7 +135,7 @@ class WidgetInfoWithId:
 
     @property
     def metrics(self):
-        """Gets the metrics of this WidgetInfoWithId.
+        r"""Gets the metrics of this WidgetInfoWithId.
 
         指标列表
 
@@ -146,7 +146,7 @@ class WidgetInfoWithId:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this WidgetInfoWithId.
+        r"""Sets the metrics of this WidgetInfoWithId.
 
         指标列表
 
@@ -157,7 +157,7 @@ class WidgetInfoWithId:
 
     @property
     def title(self):
-        """Gets the title of this WidgetInfoWithId.
+        r"""Gets the title of this WidgetInfoWithId.
 
         监控视图标题
 
@@ -168,7 +168,7 @@ class WidgetInfoWithId:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this WidgetInfoWithId.
+        r"""Sets the title of this WidgetInfoWithId.
 
         监控视图标题
 
@@ -179,7 +179,7 @@ class WidgetInfoWithId:
 
     @property
     def threshold(self):
-        """Gets the threshold of this WidgetInfoWithId.
+        r"""Gets the threshold of this WidgetInfoWithId.
 
         监控视图指标的阈值
 
@@ -190,7 +190,7 @@ class WidgetInfoWithId:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this WidgetInfoWithId.
+        r"""Sets the threshold of this WidgetInfoWithId.
 
         监控视图指标的阈值
 
@@ -201,7 +201,7 @@ class WidgetInfoWithId:
 
     @property
     def threshold_enabled(self):
-        """Gets the threshold_enabled of this WidgetInfoWithId.
+        r"""Gets the threshold_enabled of this WidgetInfoWithId.
 
         阈值是否展示，true:展示，false:不展示
 
@@ -212,7 +212,7 @@ class WidgetInfoWithId:
 
     @threshold_enabled.setter
     def threshold_enabled(self, threshold_enabled):
-        """Sets the threshold_enabled of this WidgetInfoWithId.
+        r"""Sets the threshold_enabled of this WidgetInfoWithId.
 
         阈值是否展示，true:展示，false:不展示
 
@@ -223,7 +223,7 @@ class WidgetInfoWithId:
 
     @property
     def view(self):
-        """Gets the view of this WidgetInfoWithId.
+        r"""Gets the view of this WidgetInfoWithId.
 
         监控视图图表类型, bar柱状图，line折线图
 
@@ -234,7 +234,7 @@ class WidgetInfoWithId:
 
     @view.setter
     def view(self, view):
-        """Sets the view of this WidgetInfoWithId.
+        r"""Sets the view of this WidgetInfoWithId.
 
         监控视图图表类型, bar柱状图，line折线图
 
@@ -245,7 +245,7 @@ class WidgetInfoWithId:
 
     @property
     def metric_display_mode(self):
-        """Gets the metric_display_mode of this WidgetInfoWithId.
+        r"""Gets the metric_display_mode of this WidgetInfoWithId.
 
         指标展示类型，single 单指标展示，multiple 多指标展示
 
@@ -256,7 +256,7 @@ class WidgetInfoWithId:
 
     @metric_display_mode.setter
     def metric_display_mode(self, metric_display_mode):
-        """Sets the metric_display_mode of this WidgetInfoWithId.
+        r"""Sets the metric_display_mode of this WidgetInfoWithId.
 
         指标展示类型，single 单指标展示，multiple 多指标展示
 
@@ -267,7 +267,7 @@ class WidgetInfoWithId:
 
     @property
     def properties(self):
-        """Gets the properties of this WidgetInfoWithId.
+        r"""Gets the properties of this WidgetInfoWithId.
 
         :return: The properties of this WidgetInfoWithId.
         :rtype: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoProperties`
@@ -276,7 +276,7 @@ class WidgetInfoWithId:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this WidgetInfoWithId.
+        r"""Sets the properties of this WidgetInfoWithId.
 
         :param properties: The properties of this WidgetInfoWithId.
         :type properties: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoProperties`
@@ -285,7 +285,7 @@ class WidgetInfoWithId:
 
     @property
     def location(self):
-        """Gets the location of this WidgetInfoWithId.
+        r"""Gets the location of this WidgetInfoWithId.
 
         :return: The location of this WidgetInfoWithId.
         :rtype: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
@@ -294,7 +294,7 @@ class WidgetInfoWithId:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this WidgetInfoWithId.
+        r"""Sets the location of this WidgetInfoWithId.
 
         :param location: The location of this WidgetInfoWithId.
         :type location: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
@@ -303,7 +303,7 @@ class WidgetInfoWithId:
 
     @property
     def unit(self):
-        """Gets the unit of this WidgetInfoWithId.
+        r"""Gets the unit of this WidgetInfoWithId.
 
         单位
 
@@ -314,7 +314,7 @@ class WidgetInfoWithId:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this WidgetInfoWithId.
+        r"""Sets the unit of this WidgetInfoWithId.
 
         单位
 
@@ -325,7 +325,7 @@ class WidgetInfoWithId:
 
     @property
     def create_time(self):
-        """Gets the create_time of this WidgetInfoWithId.
+        r"""Gets the create_time of this WidgetInfoWithId.
 
         监控看板创建时间
 
@@ -336,7 +336,7 @@ class WidgetInfoWithId:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this WidgetInfoWithId.
+        r"""Sets the create_time of this WidgetInfoWithId.
 
         监控看板创建时间
 

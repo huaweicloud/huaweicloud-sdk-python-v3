@@ -34,7 +34,7 @@ class DcClient(Client):
         return client_builder
 
     def bind_global_eips(self, request):
-        """绑定GEIP操作
+        r"""绑定GEIP操作
 
         绑定GEIP操作
         
@@ -101,7 +101,7 @@ class DcClient(Client):
         return http_info
 
     def list_global_eips(self, request):
-        """查询已经绑定的GEIP列表
+        r"""查询已经绑定的GEIP列表
 
         查询已经绑定的GEIP列表
         
@@ -194,7 +194,7 @@ class DcClient(Client):
         return http_info
 
     def unbind_global_eips(self, request):
-        """解绑GEIP
+        r"""解绑GEIP
 
         解绑GEIP
         
@@ -261,7 +261,7 @@ class DcClient(Client):
         return http_info
 
     def create_connect_gateway(self, request):
-        """创建互联网关
+        r"""创建互联网关
 
         创建互联网关
         
@@ -326,7 +326,7 @@ class DcClient(Client):
         return http_info
 
     def delete_connect_gateway(self, request):
-        """删除互联网关
+        r"""删除互联网关
 
         删除互联网关
         
@@ -391,7 +391,7 @@ class DcClient(Client):
         return http_info
 
     def list_connect_gateways(self, request):
-        """查询互联网关列表信息
+        r"""查询互联网关列表信息
 
         查询互联网关列表信息
         
@@ -482,7 +482,7 @@ class DcClient(Client):
         return http_info
 
     def show_connect_gateway(self, request):
-        """查询互联网关详细信息
+        r"""查询互联网关详细信息
 
         查询互联网关详细信息
         
@@ -547,7 +547,7 @@ class DcClient(Client):
         return http_info
 
     def update_connect_gateway(self, request):
-        """更新互联网关
+        r"""更新互联网关
 
         更新互联网关
         
@@ -614,7 +614,7 @@ class DcClient(Client):
         return http_info
 
     def create_hosted_direct_connect(self, request):
-        """创建托管专线连接
+        r"""创建托管专线连接
 
         用于合作伙伴用户最终租户创建托管专线
         创建者必须拥有合作伙伴资质，并且已经构建好运营(hosting)专线
@@ -680,7 +680,7 @@ class DcClient(Client):
         return http_info
 
     def delete_direct_connect(self, request):
-        """删除物理连接
+        r"""删除物理连接
 
         删除物理连接，本接口只适用于按需计费物理专线，对于包周期购买的专线通过订单退订的方式删除物理连接
         
@@ -745,7 +745,7 @@ class DcClient(Client):
         return http_info
 
     def delete_hosted_direct_connect(self, request):
-        """删除托管专线连接
+        r"""删除托管专线连接
 
         合作伙伴删除托管专线
         
@@ -810,7 +810,7 @@ class DcClient(Client):
         return http_info
 
     def list_direct_connects(self, request):
-        """查询物理连接列表
+        r"""查询物理连接列表
 
         查询租户创建的所有的direct connect对象.
         
@@ -897,7 +897,7 @@ class DcClient(Client):
         return http_info
 
     def list_hosted_direct_connects(self, request):
-        """查询租户的托管专线列表
+        r"""查询租户的托管专线列表
 
         查询合作伙伴创建的托管专线连接列表.
         
@@ -981,7 +981,7 @@ class DcClient(Client):
         return http_info
 
     def show_direct_connect(self, request):
-        """查询物理连接详情
+        r"""查询物理连接详情
 
         查询物理连接详细信息.
         
@@ -1049,7 +1049,7 @@ class DcClient(Client):
         return http_info
 
     def show_hosted_direct_connect(self, request):
-        """查询租户的托管专线详情
+        r"""查询租户的托管专线详情
 
         查询合法作伙伴的Hosted专线类型.
         
@@ -1129,7 +1129,7 @@ class DcClient(Client):
         return http_info
 
     def update_direct_connect(self, request):
-        """更新物理连接信息
+        r"""更新物理连接信息
 
         更新物理连接信息，包括名字,描述等信息
         
@@ -1196,7 +1196,7 @@ class DcClient(Client):
         return http_info
 
     def update_hosted_direct_connect(self, request):
-        """更新托管专线连接
+        r"""更新托管专线连接
 
         合作伙伴更新托管专线.
         
@@ -1263,7 +1263,7 @@ class DcClient(Client):
         return http_info
 
     def list_direct_connect_locations(self, request):
-        """查询专线接入点位置列表
+        r"""查询专线接入点位置列表
 
         查询本区域下所有专线的接入点的信息，分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效
         
@@ -1344,7 +1344,7 @@ class DcClient(Client):
         return http_info
 
     def show_direct_connect_location(self, request):
-        """查询指定专线接入点详情
+        r"""查询指定专线接入点详情
 
         查询指定的专线接入点详情
         
@@ -1409,7 +1409,7 @@ class DcClient(Client):
         return http_info
 
     def list_gdgw_route_tables(self, request):
-        """查询全域接入网关路由表
+        r"""查询全域接入网关路由表
 
         查询全域接入网关路由表
         
@@ -1493,7 +1493,7 @@ class DcClient(Client):
         return http_info
 
     def update_gdgw_route_table(self, request):
-        """修改全域接入网关路由表
+        r"""修改全域接入网关路由表
 
         支持的修改操作：新增、删除、修改
         
@@ -1560,7 +1560,7 @@ class DcClient(Client):
         return http_info
 
     def create_global_dc_gateway(self, request):
-        """创建专线全域接入网关
+        r"""创建专线全域接入网关
 
         创建专线全域接入网关实例(global-dc-gateway)，用于接入全球的ER实例
         
@@ -1625,7 +1625,7 @@ class DcClient(Client):
         return http_info
 
     def delete_global_dc_gateway(self, request):
-        """删除专线全域接入网关
+        r"""删除专线全域接入网关
 
         删除专线全域接入网关global-dc-gateway实例
         
@@ -1690,7 +1690,7 @@ class DcClient(Client):
         return http_info
 
     def list_global_dc_gateways(self, request):
-        """查询专线全域接入网关列表
+        r"""查询专线全域接入网关列表
 
         查询专线全域接入网关列表，建议使用分页查询 分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效
         
@@ -1786,7 +1786,7 @@ class DcClient(Client):
         return http_info
 
     def show_global_dc_gateway(self, request):
-        """查询专线全域接入网关详情
+        r"""查询专线全域接入网关详情
 
         查询专线全域接入网关实例详情信息
         
@@ -1862,7 +1862,7 @@ class DcClient(Client):
         return http_info
 
     def update_global_dc_gateway(self, request):
-        """更新专线全域接入网关
+        r"""更新专线全域接入网关
 
         更新专线全域接入网关global-dc-gateway的名字，描述等信息
         
@@ -1929,7 +1929,7 @@ class DcClient(Client):
         return http_info
 
     def create_peer_link(self, request):
-        """创建专线关联连接
+        r"""创建专线关联连接
 
         创建专线全域接入网关的关联连接peer-link对象，用于连接企业路由器或者其他接入网关
         
@@ -1996,7 +1996,7 @@ class DcClient(Client):
         return http_info
 
     def delete_peer_link(self, request):
-        """删除专线关联连接
+        r"""删除专线关联连接
 
         删除全域接入网关与ER的关联连接peer-link
         
@@ -2063,7 +2063,7 @@ class DcClient(Client):
         return http_info
 
     def list_peer_links(self, request):
-        """查询专线关联连接列表
+        r"""查询专线关联连接列表
 
         查询全域接入网关与ER等对象的关联连接列表，分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效
         
@@ -2153,7 +2153,7 @@ class DcClient(Client):
         return http_info
 
     def show_peer_link(self, request):
-        """查询专线关联连接详情
+        r"""查询专线关联连接详情
 
         查询指定接入网关的指定的关联连接(peer link)详情
         
@@ -2226,7 +2226,7 @@ class DcClient(Client):
         return http_info
 
     def update_peer_link(self, request):
-        """更新专线关联连接
+        r"""更新专线关联连接
 
         更新接入网关与ER对接的关联连接peer-link
         
@@ -2295,7 +2295,7 @@ class DcClient(Client):
         return http_info
 
     def show_quotas(self, request):
-        """查询配额
+        r"""查询配额
 
         查询租户各类资源的使用情况，如Directconnect的使用量，虚拟接口的使用量等。
         
@@ -2361,7 +2361,7 @@ class DcClient(Client):
         return http_info
 
     def batch_create_resource_tags(self, request):
-        """批量添加删除资源标签
+        r"""批量添加删除资源标签
 
         - 为指定实例批量添加或删除标签
         - 标签管理服务需要使用该接口批量管理实例的标签。
@@ -2432,7 +2432,7 @@ class DcClient(Client):
         return http_info
 
     def create_resource_tag(self, request):
-        """添加资源标签
+        r"""添加资源标签
 
         - 一个资源上最多有10个标签。
         - 此接口为幂等接口：
@@ -2503,7 +2503,7 @@ class DcClient(Client):
         return http_info
 
     def delete_resource_tag(self, request):
-        """删除资源标签
+        r"""删除资源标签
 
         删除时,不对标签字符集做校验，调用接口前必须要做encodeURI，服务端需要对接口uri做decodeURI。删除的key不存在报404，Key不能为空或者空字符串。
         
@@ -2572,7 +2572,7 @@ class DcClient(Client):
         return http_info
 
     def list_project_tags(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         - 查询租户在指定Project中实例类型的所有资源标签集合。
         - 标签管理服务需要能够列出当前租户全部已使用的资源标签集合，为各服务打资源标签和过滤实例时提供标签联想功能。
@@ -2638,7 +2638,7 @@ class DcClient(Client):
         return http_info
 
     def list_tag_resource_instances(self, request):
-        """通过标签查询资源实例
+        r"""通过标签查询资源实例
 
         通过标签查询资源实例
         
@@ -2705,7 +2705,7 @@ class DcClient(Client):
         return http_info
 
     def show_resource_tag(self, request):
-        """查询资源标签
+        r"""查询资源标签
 
         查询资源标签
         
@@ -2772,7 +2772,7 @@ class DcClient(Client):
         return http_info
 
     def create_virtual_gateway(self, request):
-        """创建虚拟网关
+        r"""创建虚拟网关
 
         创建虚拟网关
         
@@ -2837,7 +2837,7 @@ class DcClient(Client):
         return http_info
 
     def delete_virtual_gateway(self, request):
-        """删除虚拟网关
+        r"""删除虚拟网关
 
         删除指定的虚拟网关
         
@@ -2902,7 +2902,7 @@ class DcClient(Client):
         return http_info
 
     def list_virtual_gateways(self, request):
-        """查询虚拟网关列表
+        r"""查询虚拟网关列表
 
         查询虚拟网关列表
         
@@ -2986,7 +2986,7 @@ class DcClient(Client):
         return http_info
 
     def show_virtual_gateway(self, request):
-        """查询虚拟网关详情
+        r"""查询虚拟网关详情
 
         查询指定虚拟网关的详细信息
         
@@ -3054,7 +3054,7 @@ class DcClient(Client):
         return http_info
 
     def update_virtual_gateway(self, request):
-        """更新虚拟网关信息
+        r"""更新虚拟网关信息
 
         更新虚拟网关的信息
         
@@ -3121,7 +3121,7 @@ class DcClient(Client):
         return http_info
 
     def create_vif_peer(self, request):
-        """创建虚拟接口对等体
+        r"""创建虚拟接口对等体
 
         每个虚拟接口可支持两个对等体，IPv4和IPv6对等体，在创建虚拟接口时默认创建IPv4对等体， 本接口一般用于增加ipv6对等体。创建虚拟接口对接体之后，可以通过虚拟接口查询配置结果 本接口只在支持Ipv6的区域开放，如需要使用请联系客服
         
@@ -3186,7 +3186,7 @@ class DcClient(Client):
         return http_info
 
     def create_virtual_interface(self, request):
-        """创建虚拟接口
+        r"""创建虚拟接口
 
         虚拟接口配置物理专线上与客户互联的IP和路由等相关信息
         
@@ -3251,7 +3251,7 @@ class DcClient(Client):
         return http_info
 
     def delete_vif_peer(self, request):
-        """删除虚拟接口对应的对等体
+        r"""删除虚拟接口对应的对等体
 
         删除虚拟接口对等体信息,虚拟接口至少要含一个对等体，最后一个对等体不能删除 本接口只在支持Ipv6的区域开放，如需要使用请联系客服
         
@@ -3316,7 +3316,7 @@ class DcClient(Client):
         return http_info
 
     def delete_virtual_interface(self, request):
-        """删除虚拟接口
+        r"""删除虚拟接口
 
         删除虚拟接口
         
@@ -3381,7 +3381,7 @@ class DcClient(Client):
         return http_info
 
     def list_switchover_test_records(self, request):
-        """查询虚拟接口倒换测试记录列表
+        r"""查询虚拟接口倒换测试记录列表
 
         查询倒换测试记录列表，只展示operate_status为COMPELTE的记录。
         
@@ -3459,7 +3459,7 @@ class DcClient(Client):
         return http_info
 
     def list_virtual_interfaces(self, request):
-        """查询虚拟接口列表
+        r"""查询虚拟接口列表
 
         查询租户所有的虚拟接口列表
         
@@ -3549,7 +3549,7 @@ class DcClient(Client):
         return http_info
 
     def show_virtual_interface(self, request):
-        """查询虚拟接口详情
+        r"""查询虚拟接口详情
 
         查询虚拟接口详细信息
         
@@ -3617,7 +3617,7 @@ class DcClient(Client):
         return http_info
 
     def switchover_test(self, request):
-        """执行虚拟接口倒换测试
+        r"""执行虚拟接口倒换测试
 
         客户双专线接入，需要支持双线自动倒换，方便进行功能测试。 虚拟接口进行倒换测试会导致接口关闭，业务流量中断。 对于虚拟接口，支持“关闭接口”和“开放接口”两种操作。 1、关闭接口：下发shutdown命令，关闭接口； 2、开放接口：下发undo_shutdown命令，使能接口。 倒换测试选择shutdown时，虚拟接口的状态为ADMIN_SHUTDOWN，此状态不允许虚拟接口的其他操作。 倒换测试选择undo_shutdown时，虚拟接口的状态为ACTIVE。
         
@@ -3682,7 +3682,7 @@ class DcClient(Client):
         return http_info
 
     def update_vif_peer(self, request):
-        """更新虚拟接口对等体
+        r"""更新虚拟接口对等体
 
         更新虚拟接口对等体信息,包括远端子网，名字和描述等。 本接口只在支持Ipv6的区域开放，如需要使用请联系客服
         
@@ -3749,7 +3749,7 @@ class DcClient(Client):
         return http_info
 
     def update_virtual_interface(self, request):
-        """更新虚拟接口
+        r"""更新虚拟接口
 
         更新虚拟接口的详细信息
         

@@ -25,7 +25,7 @@ class ShowVaultTagRequest:
     }
 
     def __init__(self, vault_id=None):
-        """ShowVaultTagRequest
+        r"""ShowVaultTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowVaultTagRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this ShowVaultTagRequest.
+        r"""Gets the vault_id of this ShowVaultTagRequest.
 
         资源id
 
@@ -53,7 +53,7 @@ class ShowVaultTagRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this ShowVaultTagRequest.
+        r"""Sets the vault_id of this ShowVaultTagRequest.
 
         资源id
 

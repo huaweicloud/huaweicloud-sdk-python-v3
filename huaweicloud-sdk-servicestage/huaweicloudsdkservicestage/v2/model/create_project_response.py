@@ -30,7 +30,7 @@ class CreateProjectResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, clone_url=None):
-        """CreateProjectResponse
+        r"""CreateProjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateProjectResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateProjectResponse.
+        r"""Gets the id of this CreateProjectResponse.
 
         项目ID。
 
@@ -69,7 +69,7 @@ class CreateProjectResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateProjectResponse.
+        r"""Sets the id of this CreateProjectResponse.
 
         项目ID。
 
@@ -80,7 +80,7 @@ class CreateProjectResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateProjectResponse.
+        r"""Gets the name of this CreateProjectResponse.
 
         项目名称。
 
@@ -91,7 +91,7 @@ class CreateProjectResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateProjectResponse.
+        r"""Sets the name of this CreateProjectResponse.
 
         项目名称。
 
@@ -102,7 +102,7 @@ class CreateProjectResponse(SdkResponse):
 
     @property
     def clone_url(self):
-        """Gets the clone_url of this CreateProjectResponse.
+        r"""Gets the clone_url of this CreateProjectResponse.
 
         项目的clone url路径。
 
@@ -113,7 +113,7 @@ class CreateProjectResponse(SdkResponse):
 
     @clone_url.setter
     def clone_url(self, clone_url):
-        """Sets the clone_url of this CreateProjectResponse.
+        r"""Sets the clone_url of this CreateProjectResponse.
 
         项目的clone url路径。
 

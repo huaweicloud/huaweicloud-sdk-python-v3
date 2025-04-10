@@ -32,7 +32,7 @@ class ListDataconnectionsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, max_records=None, total_size=None, data_connection_lists=None):
-        """ListDataconnectionsResponse
+        r"""ListDataconnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListDataconnectionsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDataconnectionsResponse.
+        r"""Gets the count of this ListDataconnectionsResponse.
 
         当前分页返回记录数
 
@@ -76,7 +76,7 @@ class ListDataconnectionsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDataconnectionsResponse.
+        r"""Sets the count of this ListDataconnectionsResponse.
 
         当前分页返回记录数
 
@@ -87,7 +87,7 @@ class ListDataconnectionsResponse(SdkResponse):
 
     @property
     def max_records(self):
-        """Gets the max_records of this ListDataconnectionsResponse.
+        r"""Gets the max_records of this ListDataconnectionsResponse.
 
         返回记录总数，一个工作空间最多只能创建50条数据连接
 
@@ -98,7 +98,7 @@ class ListDataconnectionsResponse(SdkResponse):
 
     @max_records.setter
     def max_records(self, max_records):
-        """Sets the max_records of this ListDataconnectionsResponse.
+        r"""Sets the max_records of this ListDataconnectionsResponse.
 
         返回记录总数，一个工作空间最多只能创建50条数据连接
 
@@ -109,7 +109,7 @@ class ListDataconnectionsResponse(SdkResponse):
 
     @property
     def total_size(self):
-        """Gets the total_size of this ListDataconnectionsResponse.
+        r"""Gets the total_size of this ListDataconnectionsResponse.
 
         返回当前空间内创建连接的总数
 
@@ -120,7 +120,7 @@ class ListDataconnectionsResponse(SdkResponse):
 
     @total_size.setter
     def total_size(self, total_size):
-        """Sets the total_size of this ListDataconnectionsResponse.
+        r"""Sets the total_size of this ListDataconnectionsResponse.
 
         返回当前空间内创建连接的总数
 
@@ -131,7 +131,7 @@ class ListDataconnectionsResponse(SdkResponse):
 
     @property
     def data_connection_lists(self):
-        """Gets the data_connection_lists of this ListDataconnectionsResponse.
+        r"""Gets the data_connection_lists of this ListDataconnectionsResponse.
 
         返回数据连接列表
 
@@ -142,7 +142,7 @@ class ListDataconnectionsResponse(SdkResponse):
 
     @data_connection_lists.setter
     def data_connection_lists(self, data_connection_lists):
-        """Sets the data_connection_lists of this ListDataconnectionsResponse.
+        r"""Sets the data_connection_lists of this ListDataconnectionsResponse.
 
         返回数据连接列表
 

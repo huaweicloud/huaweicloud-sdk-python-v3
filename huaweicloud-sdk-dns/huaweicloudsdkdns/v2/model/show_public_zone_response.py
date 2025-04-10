@@ -56,7 +56,7 @@ class ShowPublicZoneResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, pool_id=None, created_at=None, updated_at=None, enterprise_project_id=None, masters=None, links=None, project_id=None):
-        """ShowPublicZoneResponse
+        r"""ShowPublicZoneResponse
 
         The model defined in huaweicloud sdk
 
@@ -149,7 +149,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowPublicZoneResponse.
+        r"""Gets the id of this ShowPublicZoneResponse.
 
         Zone的ID
 
@@ -160,7 +160,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowPublicZoneResponse.
+        r"""Sets the id of this ShowPublicZoneResponse.
 
         Zone的ID
 
@@ -171,7 +171,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowPublicZoneResponse.
+        r"""Gets the name of this ShowPublicZoneResponse.
 
         zone名称
 
@@ -182,7 +182,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowPublicZoneResponse.
+        r"""Sets the name of this ShowPublicZoneResponse.
 
         zone名称
 
@@ -193,7 +193,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowPublicZoneResponse.
+        r"""Gets the description of this ShowPublicZoneResponse.
 
         对zone的描述信息
 
@@ -204,7 +204,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowPublicZoneResponse.
+        r"""Sets the description of this ShowPublicZoneResponse.
 
         对zone的描述信息
 
@@ -215,7 +215,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def email(self):
-        """Gets the email of this ShowPublicZoneResponse.
+        r"""Gets the email of this ShowPublicZoneResponse.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -226,7 +226,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ShowPublicZoneResponse.
+        r"""Sets the email of this ShowPublicZoneResponse.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -237,7 +237,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def zone_type(self):
-        """Gets the zone_type of this ShowPublicZoneResponse.
+        r"""Gets the zone_type of this ShowPublicZoneResponse.
 
         zone类型，公网（public）。
 
@@ -248,7 +248,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @zone_type.setter
     def zone_type(self, zone_type):
-        """Sets the zone_type of this ShowPublicZoneResponse.
+        r"""Sets the zone_type of this ShowPublicZoneResponse.
 
         zone类型，公网（public）。
 
@@ -259,7 +259,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def ttl(self):
-        """Gets the ttl of this ShowPublicZoneResponse.
+        r"""Gets the ttl of this ShowPublicZoneResponse.
 
         该zone下SOA记录中的ttl值
 
@@ -270,7 +270,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this ShowPublicZoneResponse.
+        r"""Sets the ttl of this ShowPublicZoneResponse.
 
         该zone下SOA记录中的ttl值
 
@@ -281,7 +281,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def serial(self):
-        """Gets the serial of this ShowPublicZoneResponse.
+        r"""Gets the serial of this ShowPublicZoneResponse.
 
         该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步
 
@@ -292,7 +292,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @serial.setter
     def serial(self, serial):
-        """Sets the serial of this ShowPublicZoneResponse.
+        r"""Sets the serial of this ShowPublicZoneResponse.
 
         该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步
 
@@ -303,7 +303,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowPublicZoneResponse.
+        r"""Gets the status of this ShowPublicZoneResponse.
 
         资源状态
 
@@ -314,7 +314,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowPublicZoneResponse.
+        r"""Sets the status of this ShowPublicZoneResponse.
 
         资源状态
 
@@ -325,7 +325,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def record_num(self):
-        """Gets the record_num of this ShowPublicZoneResponse.
+        r"""Gets the record_num of this ShowPublicZoneResponse.
 
         该zone下的recordset个数
 
@@ -336,7 +336,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @record_num.setter
     def record_num(self, record_num):
-        """Sets the record_num of this ShowPublicZoneResponse.
+        r"""Sets the record_num of this ShowPublicZoneResponse.
 
         该zone下的recordset个数
 
@@ -347,7 +347,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ShowPublicZoneResponse.
+        r"""Gets the pool_id of this ShowPublicZoneResponse.
 
         托管该zone的pool，由系统分配
 
@@ -358,7 +358,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ShowPublicZoneResponse.
+        r"""Sets the pool_id of this ShowPublicZoneResponse.
 
         托管该zone的pool，由系统分配
 
@@ -369,7 +369,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowPublicZoneResponse.
+        r"""Gets the created_at of this ShowPublicZoneResponse.
 
         创建时间
 
@@ -380,7 +380,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowPublicZoneResponse.
+        r"""Sets the created_at of this ShowPublicZoneResponse.
 
         创建时间
 
@@ -391,7 +391,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowPublicZoneResponse.
+        r"""Gets the updated_at of this ShowPublicZoneResponse.
 
         更新时间
 
@@ -402,7 +402,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowPublicZoneResponse.
+        r"""Sets the updated_at of this ShowPublicZoneResponse.
 
         更新时间
 
@@ -413,7 +413,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowPublicZoneResponse.
+        r"""Gets the enterprise_project_id of this ShowPublicZoneResponse.
 
         域名关联的企业项目ID，长度不超过36个字符
 
@@ -424,7 +424,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowPublicZoneResponse.
+        r"""Sets the enterprise_project_id of this ShowPublicZoneResponse.
 
         域名关联的企业项目ID，长度不超过36个字符
 
@@ -435,7 +435,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def masters(self):
-        """Gets the masters of this ShowPublicZoneResponse.
+        r"""Gets the masters of this ShowPublicZoneResponse.
 
         主从模式中，从DNS服务器获取DNS信息
 
@@ -446,7 +446,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @masters.setter
     def masters(self, masters):
-        """Sets the masters of this ShowPublicZoneResponse.
+        r"""Sets the masters of this ShowPublicZoneResponse.
 
         主从模式中，从DNS服务器获取DNS信息
 
@@ -457,7 +457,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ShowPublicZoneResponse.
+        r"""Gets the links of this ShowPublicZoneResponse.
 
         :return: The links of this ShowPublicZoneResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -466,7 +466,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowPublicZoneResponse.
+        r"""Sets the links of this ShowPublicZoneResponse.
 
         :param links: The links of this ShowPublicZoneResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -475,7 +475,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowPublicZoneResponse.
+        r"""Gets the project_id of this ShowPublicZoneResponse.
 
         zone所属的项目ID。
 
@@ -486,7 +486,7 @@ class ShowPublicZoneResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowPublicZoneResponse.
+        r"""Sets the project_id of this ShowPublicZoneResponse.
 
         zone所属的项目ID。
 

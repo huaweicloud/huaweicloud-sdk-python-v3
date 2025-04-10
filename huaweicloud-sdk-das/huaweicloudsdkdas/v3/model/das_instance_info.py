@@ -53,7 +53,7 @@ class DASInstanceInfo:
     }
 
     def __init__(self, instance_id=None, instance_name=None, instance_status=None, version=None, engine_type=None, ip=None, port=None, cpu=None, mem=None, login_flag=None, slow_sql_flag=None, deadlock_flag=None, lock_blocking_flag=None, charge_flag=None, full_sql_flag=None):
-        """DASInstanceInfo
+        r"""DASInstanceInfo
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class DASInstanceInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DASInstanceInfo.
+        r"""Gets the instance_id of this DASInstanceInfo.
 
         实例id。
 
@@ -137,7 +137,7 @@ class DASInstanceInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DASInstanceInfo.
+        r"""Sets the instance_id of this DASInstanceInfo.
 
         实例id。
 
@@ -148,7 +148,7 @@ class DASInstanceInfo:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this DASInstanceInfo.
+        r"""Gets the instance_name of this DASInstanceInfo.
 
         实例名称。
 
@@ -159,7 +159,7 @@ class DASInstanceInfo:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this DASInstanceInfo.
+        r"""Sets the instance_name of this DASInstanceInfo.
 
         实例名称。
 
@@ -170,7 +170,7 @@ class DASInstanceInfo:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this DASInstanceInfo.
+        r"""Gets the instance_status of this DASInstanceInfo.
 
         实例状态。
 
@@ -181,7 +181,7 @@ class DASInstanceInfo:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this DASInstanceInfo.
+        r"""Sets the instance_status of this DASInstanceInfo.
 
         实例状态。
 
@@ -192,7 +192,7 @@ class DASInstanceInfo:
 
     @property
     def version(self):
-        """Gets the version of this DASInstanceInfo.
+        r"""Gets the version of this DASInstanceInfo.
 
         实例版本号。
 
@@ -203,7 +203,7 @@ class DASInstanceInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DASInstanceInfo.
+        r"""Sets the version of this DASInstanceInfo.
 
         实例版本号。
 
@@ -214,7 +214,7 @@ class DASInstanceInfo:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this DASInstanceInfo.
+        r"""Gets the engine_type of this DASInstanceInfo.
 
         引擎类型。
 
@@ -225,7 +225,7 @@ class DASInstanceInfo:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this DASInstanceInfo.
+        r"""Sets the engine_type of this DASInstanceInfo.
 
         引擎类型。
 
@@ -236,7 +236,7 @@ class DASInstanceInfo:
 
     @property
     def ip(self):
-        """Gets the ip of this DASInstanceInfo.
+        r"""Gets the ip of this DASInstanceInfo.
 
         ip
 
@@ -247,7 +247,7 @@ class DASInstanceInfo:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this DASInstanceInfo.
+        r"""Sets the ip of this DASInstanceInfo.
 
         ip
 
@@ -258,7 +258,7 @@ class DASInstanceInfo:
 
     @property
     def port(self):
-        """Gets the port of this DASInstanceInfo.
+        r"""Gets the port of this DASInstanceInfo.
 
         端口号
 
@@ -269,7 +269,7 @@ class DASInstanceInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this DASInstanceInfo.
+        r"""Sets the port of this DASInstanceInfo.
 
         端口号
 
@@ -280,7 +280,7 @@ class DASInstanceInfo:
 
     @property
     def cpu(self):
-        """Gets the cpu of this DASInstanceInfo.
+        r"""Gets the cpu of this DASInstanceInfo.
 
         实例cpu核数
 
@@ -291,7 +291,7 @@ class DASInstanceInfo:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this DASInstanceInfo.
+        r"""Sets the cpu of this DASInstanceInfo.
 
         实例cpu核数
 
@@ -302,7 +302,7 @@ class DASInstanceInfo:
 
     @property
     def mem(self):
-        """Gets the mem of this DASInstanceInfo.
+        r"""Gets the mem of this DASInstanceInfo.
 
         实例内存大小
 
@@ -313,7 +313,7 @@ class DASInstanceInfo:
 
     @mem.setter
     def mem(self, mem):
-        """Sets the mem of this DASInstanceInfo.
+        r"""Sets the mem of this DASInstanceInfo.
 
         实例内存大小
 
@@ -324,7 +324,7 @@ class DASInstanceInfo:
 
     @property
     def login_flag(self):
-        """Gets the login_flag of this DASInstanceInfo.
+        r"""Gets the login_flag of this DASInstanceInfo.
 
         实例登录是否启用
 
@@ -335,7 +335,7 @@ class DASInstanceInfo:
 
     @login_flag.setter
     def login_flag(self, login_flag):
-        """Sets the login_flag of this DASInstanceInfo.
+        r"""Sets the login_flag of this DASInstanceInfo.
 
         实例登录是否启用
 
@@ -346,7 +346,7 @@ class DASInstanceInfo:
 
     @property
     def slow_sql_flag(self):
-        """Gets the slow_sql_flag of this DASInstanceInfo.
+        r"""Gets the slow_sql_flag of this DASInstanceInfo.
 
         慢sql是否启用
 
@@ -357,7 +357,7 @@ class DASInstanceInfo:
 
     @slow_sql_flag.setter
     def slow_sql_flag(self, slow_sql_flag):
-        """Sets the slow_sql_flag of this DASInstanceInfo.
+        r"""Sets the slow_sql_flag of this DASInstanceInfo.
 
         慢sql是否启用
 
@@ -368,7 +368,7 @@ class DASInstanceInfo:
 
     @property
     def deadlock_flag(self):
-        """Gets the deadlock_flag of this DASInstanceInfo.
+        r"""Gets the deadlock_flag of this DASInstanceInfo.
 
         死锁分析是否启用
 
@@ -379,7 +379,7 @@ class DASInstanceInfo:
 
     @deadlock_flag.setter
     def deadlock_flag(self, deadlock_flag):
-        """Sets the deadlock_flag of this DASInstanceInfo.
+        r"""Sets the deadlock_flag of this DASInstanceInfo.
 
         死锁分析是否启用
 
@@ -390,7 +390,7 @@ class DASInstanceInfo:
 
     @property
     def lock_blocking_flag(self):
-        """Gets the lock_blocking_flag of this DASInstanceInfo.
+        r"""Gets the lock_blocking_flag of this DASInstanceInfo.
 
         锁阻塞是否启用
 
@@ -401,7 +401,7 @@ class DASInstanceInfo:
 
     @lock_blocking_flag.setter
     def lock_blocking_flag(self, lock_blocking_flag):
-        """Sets the lock_blocking_flag of this DASInstanceInfo.
+        r"""Sets the lock_blocking_flag of this DASInstanceInfo.
 
         锁阻塞是否启用
 
@@ -412,7 +412,7 @@ class DASInstanceInfo:
 
     @property
     def charge_flag(self):
-        """Gets the charge_flag of this DASInstanceInfo.
+        r"""Gets the charge_flag of this DASInstanceInfo.
 
         当前实例是否计费
 
@@ -423,7 +423,7 @@ class DASInstanceInfo:
 
     @charge_flag.setter
     def charge_flag(self, charge_flag):
-        """Sets the charge_flag of this DASInstanceInfo.
+        r"""Sets the charge_flag of this DASInstanceInfo.
 
         当前实例是否计费
 
@@ -434,7 +434,7 @@ class DASInstanceInfo:
 
     @property
     def full_sql_flag(self):
-        """Gets the full_sql_flag of this DASInstanceInfo.
+        r"""Gets the full_sql_flag of this DASInstanceInfo.
 
         全量sql是否启用
 
@@ -445,7 +445,7 @@ class DASInstanceInfo:
 
     @full_sql_flag.setter
     def full_sql_flag(self, full_sql_flag):
-        """Sets the full_sql_flag of this DASInstanceInfo.
+        r"""Sets the full_sql_flag of this DASInstanceInfo.
 
         全量sql是否启用
 

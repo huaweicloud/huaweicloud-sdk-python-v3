@@ -37,7 +37,7 @@ class ConfigurationParameterList:
     }
 
     def __init__(self, name=None, value=None, need_restart=None, read_only=None, value_range=None, data_type=None, description=None):
-        """ConfigurationParameterList
+        r"""ConfigurationParameterList
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ConfigurationParameterList:
 
     @property
     def name(self):
-        """Gets the name of this ConfigurationParameterList.
+        r"""Gets the name of this ConfigurationParameterList.
 
         参数名称。
 
@@ -96,7 +96,7 @@ class ConfigurationParameterList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigurationParameterList.
+        r"""Sets the name of this ConfigurationParameterList.
 
         参数名称。
 
@@ -107,7 +107,7 @@ class ConfigurationParameterList:
 
     @property
     def value(self):
-        """Gets the value of this ConfigurationParameterList.
+        r"""Gets the value of this ConfigurationParameterList.
 
         参数值。
 
@@ -118,7 +118,7 @@ class ConfigurationParameterList:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ConfigurationParameterList.
+        r"""Sets the value of this ConfigurationParameterList.
 
         参数值。
 
@@ -129,7 +129,7 @@ class ConfigurationParameterList:
 
     @property
     def need_restart(self):
-        """Gets the need_restart of this ConfigurationParameterList.
+        r"""Gets the need_restart of this ConfigurationParameterList.
 
         是否需要重启实例。
 
@@ -140,7 +140,7 @@ class ConfigurationParameterList:
 
     @need_restart.setter
     def need_restart(self, need_restart):
-        """Sets the need_restart of this ConfigurationParameterList.
+        r"""Sets the need_restart of this ConfigurationParameterList.
 
         是否需要重启实例。
 
@@ -151,7 +151,7 @@ class ConfigurationParameterList:
 
     @property
     def read_only(self):
-        """Gets the read_only of this ConfigurationParameterList.
+        r"""Gets the read_only of this ConfigurationParameterList.
 
         参数是否只读。
 
@@ -162,7 +162,7 @@ class ConfigurationParameterList:
 
     @read_only.setter
     def read_only(self, read_only):
-        """Sets the read_only of this ConfigurationParameterList.
+        r"""Sets the read_only of this ConfigurationParameterList.
 
         参数是否只读。
 
@@ -173,7 +173,7 @@ class ConfigurationParameterList:
 
     @property
     def value_range(self):
-        """Gets the value_range of this ConfigurationParameterList.
+        r"""Gets the value_range of this ConfigurationParameterList.
 
         参数取值范围。
 
@@ -184,7 +184,7 @@ class ConfigurationParameterList:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this ConfigurationParameterList.
+        r"""Sets the value_range of this ConfigurationParameterList.
 
         参数取值范围。
 
@@ -195,7 +195,7 @@ class ConfigurationParameterList:
 
     @property
     def data_type(self):
-        """Gets the data_type of this ConfigurationParameterList.
+        r"""Gets the data_type of this ConfigurationParameterList.
 
         参数类型。
 
@@ -206,7 +206,7 @@ class ConfigurationParameterList:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ConfigurationParameterList.
+        r"""Sets the data_type of this ConfigurationParameterList.
 
         参数类型。
 
@@ -217,7 +217,7 @@ class ConfigurationParameterList:
 
     @property
     def description(self):
-        """Gets the description of this ConfigurationParameterList.
+        r"""Gets the description of this ConfigurationParameterList.
 
         参数描述。
 
@@ -228,7 +228,7 @@ class ConfigurationParameterList:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConfigurationParameterList.
+        r"""Sets the description of this ConfigurationParameterList.
 
         参数描述。
 

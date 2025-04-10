@@ -24,7 +24,7 @@ class UpdateShareSpaceConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateShareSpaceConfigResponse
+        r"""UpdateShareSpaceConfigResponse
 
         The model defined in huaweicloud sdk
 

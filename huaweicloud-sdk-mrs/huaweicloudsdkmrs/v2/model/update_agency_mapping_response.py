@@ -26,7 +26,7 @@ class UpdateAgencyMappingResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateAgencyMappingResponse
+        r"""UpdateAgencyMappingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAgencyMappingResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateAgencyMappingResponse.
+        r"""Gets the result of this UpdateAgencyMappingResponse.
 
         更新映射请求操作结果，succeeded为操作成功，failed为操作失败
 
@@ -55,7 +55,7 @@ class UpdateAgencyMappingResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateAgencyMappingResponse.
+        r"""Sets the result of this UpdateAgencyMappingResponse.
 
         更新映射请求操作结果，succeeded为操作成功，failed为操作失败
 

@@ -25,7 +25,7 @@ class ConfirmIaConfigsRequestBody:
     }
 
     def __init__(self, configs=None):
-        """ConfirmIaConfigsRequestBody
+        r"""ConfirmIaConfigsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ConfirmIaConfigsRequestBody:
 
     @property
     def configs(self):
-        """Gets the configs of this ConfirmIaConfigsRequestBody.
+        r"""Gets the configs of this ConfirmIaConfigsRequestBody.
 
         确认配置项列表
 
@@ -54,7 +54,7 @@ class ConfirmIaConfigsRequestBody:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ConfirmIaConfigsRequestBody.
+        r"""Sets the configs of this ConfirmIaConfigsRequestBody.
 
         确认配置项列表
 

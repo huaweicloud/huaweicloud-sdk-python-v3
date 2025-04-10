@@ -29,7 +29,7 @@ class ListConfigsRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, marker=None):
-        """ListConfigsRequest
+        r"""ListConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListConfigsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListConfigsRequest.
+        r"""Gets the instance_id of this ListConfigsRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -67,7 +67,7 @@ class ListConfigsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListConfigsRequest.
+        r"""Sets the instance_id of this ListConfigsRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -78,7 +78,7 @@ class ListConfigsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConfigsRequest.
+        r"""Gets the limit of this ListConfigsRequest.
 
         查询返回条数。默认值为1000。最小值为0，最大值为1000。
 
@@ -89,7 +89,7 @@ class ListConfigsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConfigsRequest.
+        r"""Sets the limit of this ListConfigsRequest.
 
         查询返回条数。默认值为1000。最小值为0，最大值为1000。
 
@@ -100,7 +100,7 @@ class ListConfigsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListConfigsRequest.
+        r"""Gets the marker of this ListConfigsRequest.
 
         查询的起始记录ID。最小长度为0，最大长度为256。
 
@@ -111,7 +111,7 @@ class ListConfigsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListConfigsRequest.
+        r"""Sets the marker of this ListConfigsRequest.
 
         查询的起始记录ID。最小长度为0，最大长度为256。
 

@@ -27,7 +27,7 @@ class UpdateClusterDnsRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateClusterDnsRequest
+        r"""UpdateClusterDnsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateClusterDnsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateClusterDnsRequest.
+        r"""Gets the cluster_id of this UpdateClusterDnsRequest.
 
         集群的ID
 
@@ -60,7 +60,7 @@ class UpdateClusterDnsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateClusterDnsRequest.
+        r"""Sets the cluster_id of this UpdateClusterDnsRequest.
 
         集群的ID
 
@@ -71,7 +71,7 @@ class UpdateClusterDnsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateClusterDnsRequest.
+        r"""Gets the body of this UpdateClusterDnsRequest.
 
         :return: The body of this UpdateClusterDnsRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.ModifyClusterDns`
@@ -80,7 +80,7 @@ class UpdateClusterDnsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateClusterDnsRequest.
+        r"""Sets the body of this UpdateClusterDnsRequest.
 
         :param body: The body of this UpdateClusterDnsRequest.
         :type body: :class:`huaweicloudsdkdws.v2.ModifyClusterDns`

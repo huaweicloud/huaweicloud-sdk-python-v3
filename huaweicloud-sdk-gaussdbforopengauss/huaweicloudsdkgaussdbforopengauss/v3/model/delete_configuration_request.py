@@ -27,7 +27,7 @@ class DeleteConfigurationRequest:
     }
 
     def __init__(self, x_language=None, config_id=None):
-        """DeleteConfigurationRequest
+        r"""DeleteConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteConfigurationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteConfigurationRequest.
+        r"""Gets the x_language of this DeleteConfigurationRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class DeleteConfigurationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteConfigurationRequest.
+        r"""Sets the x_language of this DeleteConfigurationRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class DeleteConfigurationRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this DeleteConfigurationRequest.
+        r"""Gets the config_id of this DeleteConfigurationRequest.
 
         参数配置模板ID。
 
@@ -82,7 +82,7 @@ class DeleteConfigurationRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this DeleteConfigurationRequest.
+        r"""Sets the config_id of this DeleteConfigurationRequest.
 
         参数配置模板ID。
 

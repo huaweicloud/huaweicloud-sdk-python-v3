@@ -25,7 +25,7 @@ class CreateBandwidthPackageRequest:
     }
 
     def __init__(self, body=None):
-        """CreateBandwidthPackageRequest
+        r"""CreateBandwidthPackageRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateBandwidthPackageRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateBandwidthPackageRequest.
+        r"""Gets the body of this CreateBandwidthPackageRequest.
 
         :return: The body of this CreateBandwidthPackageRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.CreateBandwidthPackageRequestBody`
@@ -52,7 +52,7 @@ class CreateBandwidthPackageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateBandwidthPackageRequest.
+        r"""Sets the body of this CreateBandwidthPackageRequest.
 
         :param body: The body of this CreateBandwidthPackageRequest.
         :type body: :class:`huaweicloudsdkcc.v3.CreateBandwidthPackageRequestBody`

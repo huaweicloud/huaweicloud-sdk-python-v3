@@ -24,7 +24,7 @@ class UpdateBaremetalServerInterfaceAttachmentsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateBaremetalServerInterfaceAttachmentsResponse
+        r"""UpdateBaremetalServerInterfaceAttachmentsResponse
 
         The model defined in huaweicloud sdk
 

@@ -35,7 +35,7 @@ class ListDatasourceTablesRequest:
     }
 
     def __init__(self, instance_id=None, datasource_id=None, position=None, db_name=None, db_schema=None, filter=None):
-        """ListDatasourceTablesRequest
+        r"""ListDatasourceTablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ListDatasourceTablesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDatasourceTablesRequest.
+        r"""Gets the instance_id of this ListDatasourceTablesRequest.
 
         实例ID
 
@@ -86,7 +86,7 @@ class ListDatasourceTablesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDatasourceTablesRequest.
+        r"""Sets the instance_id of this ListDatasourceTablesRequest.
 
         实例ID
 
@@ -97,7 +97,7 @@ class ListDatasourceTablesRequest:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this ListDatasourceTablesRequest.
+        r"""Gets the datasource_id of this ListDatasourceTablesRequest.
 
         数据源ID
 
@@ -108,7 +108,7 @@ class ListDatasourceTablesRequest:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this ListDatasourceTablesRequest.
+        r"""Sets the datasource_id of this ListDatasourceTablesRequest.
 
         数据源ID
 
@@ -119,7 +119,7 @@ class ListDatasourceTablesRequest:
 
     @property
     def position(self):
-        """Gets the position of this ListDatasourceTablesRequest.
+        r"""Gets the position of this ListDatasourceTablesRequest.
 
         数据源所在任务位置 - SOURCE 数据源处于任务源端 - TARGET 数据源处于任务目标端
 
@@ -130,7 +130,7 @@ class ListDatasourceTablesRequest:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this ListDatasourceTablesRequest.
+        r"""Sets the position of this ListDatasourceTablesRequest.
 
         数据源所在任务位置 - SOURCE 数据源处于任务源端 - TARGET 数据源处于任务目标端
 
@@ -141,7 +141,7 @@ class ListDatasourceTablesRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ListDatasourceTablesRequest.
+        r"""Gets the db_name of this ListDatasourceTablesRequest.
 
         数据库名称，只支持MRSHIVE，FIHIVE类型的数据源
 
@@ -152,7 +152,7 @@ class ListDatasourceTablesRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ListDatasourceTablesRequest.
+        r"""Sets the db_name of this ListDatasourceTablesRequest.
 
         数据库名称，只支持MRSHIVE，FIHIVE类型的数据源
 
@@ -163,7 +163,7 @@ class ListDatasourceTablesRequest:
 
     @property
     def db_schema(self):
-        """Gets the db_schema of this ListDatasourceTablesRequest.
+        r"""Gets the db_schema of this ListDatasourceTablesRequest.
 
         数据库模式,GAUSS100数据库使用
 
@@ -174,7 +174,7 @@ class ListDatasourceTablesRequest:
 
     @db_schema.setter
     def db_schema(self, db_schema):
-        """Sets the db_schema of this ListDatasourceTablesRequest.
+        r"""Sets the db_schema of this ListDatasourceTablesRequest.
 
         数据库模式,GAUSS100数据库使用
 
@@ -185,7 +185,7 @@ class ListDatasourceTablesRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListDatasourceTablesRequest.
+        r"""Gets the filter of this ListDatasourceTablesRequest.
 
         表名模糊匹配过滤器
 
@@ -196,7 +196,7 @@ class ListDatasourceTablesRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListDatasourceTablesRequest.
+        r"""Sets the filter of this ListDatasourceTablesRequest.
 
         表名模糊匹配过滤器
 

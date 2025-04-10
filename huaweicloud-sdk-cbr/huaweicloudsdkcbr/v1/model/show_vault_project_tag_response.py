@@ -26,7 +26,7 @@ class ShowVaultProjectTagResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowVaultProjectTagResponse
+        r"""ShowVaultProjectTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowVaultProjectTagResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowVaultProjectTagResponse.
+        r"""Gets the tags of this ShowVaultProjectTagResponse.
 
         标签列表
 
@@ -55,7 +55,7 @@ class ShowVaultProjectTagResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowVaultProjectTagResponse.
+        r"""Sets the tags of this ShowVaultProjectTagResponse.
 
         标签列表
 

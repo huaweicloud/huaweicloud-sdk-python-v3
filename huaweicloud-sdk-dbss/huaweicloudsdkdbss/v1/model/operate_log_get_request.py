@@ -35,7 +35,7 @@ class OperateLogGetRequest:
     }
 
     def __init__(self, time=None, user_name=None, action=None, result=None, page=None, size=None):
-        """OperateLogGetRequest
+        r"""OperateLogGetRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class OperateLogGetRequest:
 
     @property
     def time(self):
-        """Gets the time of this OperateLogGetRequest.
+        r"""Gets the time of this OperateLogGetRequest.
 
         :return: The time of this OperateLogGetRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.TimeRangeBean`
@@ -87,7 +87,7 @@ class OperateLogGetRequest:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this OperateLogGetRequest.
+        r"""Sets the time of this OperateLogGetRequest.
 
         :param time: The time of this OperateLogGetRequest.
         :type time: :class:`huaweicloudsdkdbss.v1.TimeRangeBean`
@@ -96,7 +96,7 @@ class OperateLogGetRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this OperateLogGetRequest.
+        r"""Gets the user_name of this OperateLogGetRequest.
 
         操作日志用户名
 
@@ -107,7 +107,7 @@ class OperateLogGetRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this OperateLogGetRequest.
+        r"""Sets the user_name of this OperateLogGetRequest.
 
         操作日志用户名
 
@@ -118,7 +118,7 @@ class OperateLogGetRequest:
 
     @property
     def action(self):
-        """Gets the action of this OperateLogGetRequest.
+        r"""Gets the action of this OperateLogGetRequest.
 
         动作名称 - CREATE - DELETE - DOWNLOAD - UPDATE
 
@@ -129,7 +129,7 @@ class OperateLogGetRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this OperateLogGetRequest.
+        r"""Sets the action of this OperateLogGetRequest.
 
         动作名称 - CREATE - DELETE - DOWNLOAD - UPDATE
 
@@ -140,7 +140,7 @@ class OperateLogGetRequest:
 
     @property
     def result(self):
-        """Gets the result of this OperateLogGetRequest.
+        r"""Gets the result of this OperateLogGetRequest.
 
         执行结果 - success - fail
 
@@ -151,7 +151,7 @@ class OperateLogGetRequest:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this OperateLogGetRequest.
+        r"""Sets the result of this OperateLogGetRequest.
 
         执行结果 - success - fail
 
@@ -162,7 +162,7 @@ class OperateLogGetRequest:
 
     @property
     def page(self):
-        """Gets the page of this OperateLogGetRequest.
+        r"""Gets the page of this OperateLogGetRequest.
 
         页数
 
@@ -173,7 +173,7 @@ class OperateLogGetRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this OperateLogGetRequest.
+        r"""Sets the page of this OperateLogGetRequest.
 
         页数
 
@@ -184,7 +184,7 @@ class OperateLogGetRequest:
 
     @property
     def size(self):
-        """Gets the size of this OperateLogGetRequest.
+        r"""Gets the size of this OperateLogGetRequest.
 
         每页条数
 
@@ -195,7 +195,7 @@ class OperateLogGetRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this OperateLogGetRequest.
+        r"""Sets the size of this OperateLogGetRequest.
 
         每页条数
 

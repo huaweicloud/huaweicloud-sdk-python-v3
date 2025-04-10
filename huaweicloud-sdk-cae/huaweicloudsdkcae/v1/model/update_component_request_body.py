@@ -31,7 +31,7 @@ class UpdateComponentRequestBody:
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None):
-        """UpdateComponentRequestBody
+        r"""UpdateComponentRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class UpdateComponentRequestBody:
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpdateComponentRequestBody.
+        r"""Gets the api_version of this UpdateComponentRequestBody.
 
         :return: The api_version of this UpdateComponentRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -69,7 +69,7 @@ class UpdateComponentRequestBody:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpdateComponentRequestBody.
+        r"""Sets the api_version of this UpdateComponentRequestBody.
 
         :param api_version: The api_version of this UpdateComponentRequestBody.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -78,7 +78,7 @@ class UpdateComponentRequestBody:
 
     @property
     def kind(self):
-        """Gets the kind of this UpdateComponentRequestBody.
+        r"""Gets the kind of this UpdateComponentRequestBody.
 
         :return: The kind of this UpdateComponentRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ComponentKindObj`
@@ -87,7 +87,7 @@ class UpdateComponentRequestBody:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpdateComponentRequestBody.
+        r"""Sets the kind of this UpdateComponentRequestBody.
 
         :param kind: The kind of this UpdateComponentRequestBody.
         :type kind: :class:`huaweicloudsdkcae.v1.ComponentKindObj`
@@ -96,7 +96,7 @@ class UpdateComponentRequestBody:
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpdateComponentRequestBody.
+        r"""Gets the metadata of this UpdateComponentRequestBody.
 
         :return: The metadata of this UpdateComponentRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateComponentRequestMetadata`
@@ -105,7 +105,7 @@ class UpdateComponentRequestBody:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpdateComponentRequestBody.
+        r"""Sets the metadata of this UpdateComponentRequestBody.
 
         :param metadata: The metadata of this UpdateComponentRequestBody.
         :type metadata: :class:`huaweicloudsdkcae.v1.UpdateComponentRequestMetadata`
@@ -114,7 +114,7 @@ class UpdateComponentRequestBody:
 
     @property
     def spec(self):
-        """Gets the spec of this UpdateComponentRequestBody.
+        r"""Gets the spec of this UpdateComponentRequestBody.
 
         :return: The spec of this UpdateComponentRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateComponentRequestSpec`
@@ -123,7 +123,7 @@ class UpdateComponentRequestBody:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpdateComponentRequestBody.
+        r"""Sets the spec of this UpdateComponentRequestBody.
 
         :param spec: The spec of this UpdateComponentRequestBody.
         :type spec: :class:`huaweicloudsdkcae.v1.UpdateComponentRequestSpec`

@@ -27,7 +27,7 @@ class ExportMqsInstanceTopicRequest:
     }
 
     def __init__(self, instance_id=None, name=None):
-        """ExportMqsInstanceTopicRequest
+        r"""ExportMqsInstanceTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExportMqsInstanceTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExportMqsInstanceTopicRequest.
+        r"""Gets the instance_id of this ExportMqsInstanceTopicRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class ExportMqsInstanceTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExportMqsInstanceTopicRequest.
+        r"""Sets the instance_id of this ExportMqsInstanceTopicRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ExportMqsInstanceTopicRequest:
 
     @property
     def name(self):
-        """Gets the name of this ExportMqsInstanceTopicRequest.
+        r"""Gets the name of this ExportMqsInstanceTopicRequest.
 
         待导出的topic。多个topic以“,”分隔。默认导出所有的topic。
 
@@ -82,7 +82,7 @@ class ExportMqsInstanceTopicRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExportMqsInstanceTopicRequest.
+        r"""Sets the name of this ExportMqsInstanceTopicRequest.
 
         待导出的topic。多个topic以“,”分隔。默认导出所有的topic。
 

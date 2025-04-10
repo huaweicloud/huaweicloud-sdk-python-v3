@@ -23,7 +23,7 @@ class KeystoneShowCatalogRequest:
     }
 
     def __init__(self):
-        """KeystoneShowCatalogRequest
+        r"""KeystoneShowCatalogRequest
 
         The model defined in huaweicloud sdk
 

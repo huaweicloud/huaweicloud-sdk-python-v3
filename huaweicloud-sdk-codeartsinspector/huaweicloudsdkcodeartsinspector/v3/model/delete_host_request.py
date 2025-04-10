@@ -25,7 +25,7 @@ class DeleteHostRequest:
     }
 
     def __init__(self, host_id=None):
-        """DeleteHostRequest
+        r"""DeleteHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteHostRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this DeleteHostRequest.
+        r"""Gets the host_id of this DeleteHostRequest.
 
         主机资产id
 
@@ -53,7 +53,7 @@ class DeleteHostRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this DeleteHostRequest.
+        r"""Sets the host_id of this DeleteHostRequest.
 
         主机资产id
 

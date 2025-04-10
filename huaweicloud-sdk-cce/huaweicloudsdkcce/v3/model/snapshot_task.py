@@ -33,7 +33,7 @@ class SnapshotTask:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """SnapshotTask
+        r"""SnapshotTask
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SnapshotTask:
 
     @property
     def kind(self):
-        """Gets the kind of this SnapshotTask.
+        r"""Gets the kind of this SnapshotTask.
 
         任务类型
 
@@ -82,7 +82,7 @@ class SnapshotTask:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this SnapshotTask.
+        r"""Sets the kind of this SnapshotTask.
 
         任务类型
 
@@ -93,7 +93,7 @@ class SnapshotTask:
 
     @property
     def api_version(self):
-        """Gets the api_version of this SnapshotTask.
+        r"""Gets the api_version of this SnapshotTask.
 
         API版本
 
@@ -104,7 +104,7 @@ class SnapshotTask:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this SnapshotTask.
+        r"""Sets the api_version of this SnapshotTask.
 
         API版本
 
@@ -115,7 +115,7 @@ class SnapshotTask:
 
     @property
     def metadata(self):
-        """Gets the metadata of this SnapshotTask.
+        r"""Gets the metadata of this SnapshotTask.
 
         :return: The metadata of this SnapshotTask.
         :rtype: :class:`huaweicloudsdkcce.v3.SnapshotTaskMetadata`
@@ -124,7 +124,7 @@ class SnapshotTask:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this SnapshotTask.
+        r"""Sets the metadata of this SnapshotTask.
 
         :param metadata: The metadata of this SnapshotTask.
         :type metadata: :class:`huaweicloudsdkcce.v3.SnapshotTaskMetadata`
@@ -133,7 +133,7 @@ class SnapshotTask:
 
     @property
     def spec(self):
-        """Gets the spec of this SnapshotTask.
+        r"""Gets the spec of this SnapshotTask.
 
         :return: The spec of this SnapshotTask.
         :rtype: :class:`huaweicloudsdkcce.v3.SnapshotSpec`
@@ -142,7 +142,7 @@ class SnapshotTask:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this SnapshotTask.
+        r"""Sets the spec of this SnapshotTask.
 
         :param spec: The spec of this SnapshotTask.
         :type spec: :class:`huaweicloudsdkcce.v3.SnapshotSpec`
@@ -151,7 +151,7 @@ class SnapshotTask:
 
     @property
     def status(self):
-        """Gets the status of this SnapshotTask.
+        r"""Gets the status of this SnapshotTask.
 
         :return: The status of this SnapshotTask.
         :rtype: :class:`huaweicloudsdkcce.v3.SnapshotStatus`
@@ -160,7 +160,7 @@ class SnapshotTask:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SnapshotTask.
+        r"""Sets the status of this SnapshotTask.
 
         :param status: The status of this SnapshotTask.
         :type status: :class:`huaweicloudsdkcce.v3.SnapshotStatus`

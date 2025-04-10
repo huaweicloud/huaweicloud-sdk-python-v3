@@ -37,7 +37,7 @@ class SubtaskcaseOverstockDto:
     }
 
     def __init__(self, data_time=None, executor_type=None, id=None, label=None, location_id=None, subtaskcase_overstock_count=None, test_service_id=None):
-        """SubtaskcaseOverstockDto
+        r"""SubtaskcaseOverstockDto
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SubtaskcaseOverstockDto:
 
     @property
     def data_time(self):
-        """Gets the data_time of this SubtaskcaseOverstockDto.
+        r"""Gets the data_time of this SubtaskcaseOverstockDto.
 
         查询时间
 
@@ -96,7 +96,7 @@ class SubtaskcaseOverstockDto:
 
     @data_time.setter
     def data_time(self, data_time):
-        """Sets the data_time of this SubtaskcaseOverstockDto.
+        r"""Sets the data_time of this SubtaskcaseOverstockDto.
 
         查询时间
 
@@ -107,7 +107,7 @@ class SubtaskcaseOverstockDto:
 
     @property
     def executor_type(self):
-        """Gets the executor_type of this SubtaskcaseOverstockDto.
+        r"""Gets the executor_type of this SubtaskcaseOverstockDto.
 
         执行机类型
 
@@ -118,7 +118,7 @@ class SubtaskcaseOverstockDto:
 
     @executor_type.setter
     def executor_type(self, executor_type):
-        """Sets the executor_type of this SubtaskcaseOverstockDto.
+        r"""Sets the executor_type of this SubtaskcaseOverstockDto.
 
         执行机类型
 
@@ -129,7 +129,7 @@ class SubtaskcaseOverstockDto:
 
     @property
     def id(self):
-        """Gets the id of this SubtaskcaseOverstockDto.
+        r"""Gets the id of this SubtaskcaseOverstockDto.
 
         UUID
 
@@ -140,7 +140,7 @@ class SubtaskcaseOverstockDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubtaskcaseOverstockDto.
+        r"""Sets the id of this SubtaskcaseOverstockDto.
 
         UUID
 
@@ -151,7 +151,7 @@ class SubtaskcaseOverstockDto:
 
     @property
     def label(self):
-        """Gets the label of this SubtaskcaseOverstockDto.
+        r"""Gets the label of this SubtaskcaseOverstockDto.
 
         执行机标签
 
@@ -162,7 +162,7 @@ class SubtaskcaseOverstockDto:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this SubtaskcaseOverstockDto.
+        r"""Sets the label of this SubtaskcaseOverstockDto.
 
         执行机标签
 
@@ -173,7 +173,7 @@ class SubtaskcaseOverstockDto:
 
     @property
     def location_id(self):
-        """Gets the location_id of this SubtaskcaseOverstockDto.
+        r"""Gets the location_id of this SubtaskcaseOverstockDto.
 
         执行机所属区域
 
@@ -184,7 +184,7 @@ class SubtaskcaseOverstockDto:
 
     @location_id.setter
     def location_id(self, location_id):
-        """Sets the location_id of this SubtaskcaseOverstockDto.
+        r"""Sets the location_id of this SubtaskcaseOverstockDto.
 
         执行机所属区域
 
@@ -195,7 +195,7 @@ class SubtaskcaseOverstockDto:
 
     @property
     def subtaskcase_overstock_count(self):
-        """Gets the subtaskcase_overstock_count of this SubtaskcaseOverstockDto.
+        r"""Gets the subtaskcase_overstock_count of this SubtaskcaseOverstockDto.
 
         积压数量
 
@@ -206,7 +206,7 @@ class SubtaskcaseOverstockDto:
 
     @subtaskcase_overstock_count.setter
     def subtaskcase_overstock_count(self, subtaskcase_overstock_count):
-        """Sets the subtaskcase_overstock_count of this SubtaskcaseOverstockDto.
+        r"""Sets the subtaskcase_overstock_count of this SubtaskcaseOverstockDto.
 
         积压数量
 
@@ -217,7 +217,7 @@ class SubtaskcaseOverstockDto:
 
     @property
     def test_service_id(self):
-        """Gets the test_service_id of this SubtaskcaseOverstockDto.
+        r"""Gets the test_service_id of this SubtaskcaseOverstockDto.
 
         服务ID
 
@@ -228,7 +228,7 @@ class SubtaskcaseOverstockDto:
 
     @test_service_id.setter
     def test_service_id(self, test_service_id):
-        """Sets the test_service_id of this SubtaskcaseOverstockDto.
+        r"""Sets the test_service_id of this SubtaskcaseOverstockDto.
 
         服务ID
 

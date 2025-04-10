@@ -81,7 +81,7 @@ class ConfigurationRequestDataSpec:
     }
 
     def __init__(self, rds_id=None, rds_db_name=None, rds_address=None, rds_username=None, rds_password=None, rds_port=None, config_center_addr=None, service_center_addr=None, cse_id=None, envs=None, ip=None, items=None, scale_strategy=None, max_replica_count=None, min_replica_count=None, advanced=None, triggers=None, volumes=None, liveness_probe=None, startup_probe=None, readiness_probe=None, post_start=None, pre_stop=None, log_paths=None, cloud_storage_log_paths=None, instrumentation=None, path=None, port=None, metrics=None):
-        """ConfigurationRequestDataSpec
+        r"""ConfigurationRequestDataSpec
 
         The model defined in huaweicloud sdk
 
@@ -239,7 +239,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def rds_id(self):
-        """Gets the rds_id of this ConfigurationRequestDataSpec.
+        r"""Gets the rds_id of this ConfigurationRequestDataSpec.
 
         RDS数据库实例ID。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
@@ -250,7 +250,7 @@ class ConfigurationRequestDataSpec:
 
     @rds_id.setter
     def rds_id(self, rds_id):
-        """Sets the rds_id of this ConfigurationRequestDataSpec.
+        r"""Sets the rds_id of this ConfigurationRequestDataSpec.
 
         RDS数据库实例ID。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
@@ -261,7 +261,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def rds_db_name(self):
-        """Gets the rds_db_name of this ConfigurationRequestDataSpec.
+        r"""Gets the rds_db_name of this ConfigurationRequestDataSpec.
 
         RDS数据库名称。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
@@ -272,7 +272,7 @@ class ConfigurationRequestDataSpec:
 
     @rds_db_name.setter
     def rds_db_name(self, rds_db_name):
-        """Sets the rds_db_name of this ConfigurationRequestDataSpec.
+        r"""Sets the rds_db_name of this ConfigurationRequestDataSpec.
 
         RDS数据库名称。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
@@ -283,7 +283,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def rds_address(self):
-        """Gets the rds_address of this ConfigurationRequestDataSpec.
+        r"""Gets the rds_address of this ConfigurationRequestDataSpec.
 
         RDS数据库地址。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
@@ -294,7 +294,7 @@ class ConfigurationRequestDataSpec:
 
     @rds_address.setter
     def rds_address(self, rds_address):
-        """Sets the rds_address of this ConfigurationRequestDataSpec.
+        r"""Sets the rds_address of this ConfigurationRequestDataSpec.
 
         RDS数据库地址。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
@@ -305,7 +305,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def rds_username(self):
-        """Gets the rds_username of this ConfigurationRequestDataSpec.
+        r"""Gets the rds_username of this ConfigurationRequestDataSpec.
 
         RDS数据库用户名称。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
@@ -316,7 +316,7 @@ class ConfigurationRequestDataSpec:
 
     @rds_username.setter
     def rds_username(self, rds_username):
-        """Sets the rds_username of this ConfigurationRequestDataSpec.
+        r"""Sets the rds_username of this ConfigurationRequestDataSpec.
 
         RDS数据库用户名称。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
@@ -327,7 +327,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def rds_password(self):
-        """Gets the rds_password of this ConfigurationRequestDataSpec.
+        r"""Gets the rds_password of this ConfigurationRequestDataSpec.
 
         RDS数据库密码。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
@@ -338,7 +338,7 @@ class ConfigurationRequestDataSpec:
 
     @rds_password.setter
     def rds_password(self, rds_password):
-        """Sets the rds_password of this ConfigurationRequestDataSpec.
+        r"""Sets the rds_password of this ConfigurationRequestDataSpec.
 
         RDS数据库密码。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
@@ -349,7 +349,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def rds_port(self):
-        """Gets the rds_port of this ConfigurationRequestDataSpec.
+        r"""Gets the rds_port of this ConfigurationRequestDataSpec.
 
         RDS数据库端口。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
@@ -360,7 +360,7 @@ class ConfigurationRequestDataSpec:
 
     @rds_port.setter
     def rds_port(self, rds_port):
-        """Sets the rds_port of this ConfigurationRequestDataSpec.
+        r"""Sets the rds_port of this ConfigurationRequestDataSpec.
 
         RDS数据库端口。  ConfigurationItem.type为\"rds\"时，配置此参数。 
 
@@ -371,7 +371,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def config_center_addr(self):
-        """Gets the config_center_addr of this ConfigurationRequestDataSpec.
+        r"""Gets the config_center_addr of this ConfigurationRequestDataSpec.
 
         CSE配置中心地址。  ConfigurationItem.type为\"cse\"时，配置此参数。 
 
@@ -382,7 +382,7 @@ class ConfigurationRequestDataSpec:
 
     @config_center_addr.setter
     def config_center_addr(self, config_center_addr):
-        """Sets the config_center_addr of this ConfigurationRequestDataSpec.
+        r"""Sets the config_center_addr of this ConfigurationRequestDataSpec.
 
         CSE配置中心地址。  ConfigurationItem.type为\"cse\"时，配置此参数。 
 
@@ -393,7 +393,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def service_center_addr(self):
-        """Gets the service_center_addr of this ConfigurationRequestDataSpec.
+        r"""Gets the service_center_addr of this ConfigurationRequestDataSpec.
 
         CSE服务注册发现地址。  ConfigurationItem.type为\"cse\"时，配置此参数。 
 
@@ -404,7 +404,7 @@ class ConfigurationRequestDataSpec:
 
     @service_center_addr.setter
     def service_center_addr(self, service_center_addr):
-        """Sets the service_center_addr of this ConfigurationRequestDataSpec.
+        r"""Sets the service_center_addr of this ConfigurationRequestDataSpec.
 
         CSE服务注册发现地址。  ConfigurationItem.type为\"cse\"时，配置此参数。 
 
@@ -415,7 +415,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def cse_id(self):
-        """Gets the cse_id of this ConfigurationRequestDataSpec.
+        r"""Gets the cse_id of this ConfigurationRequestDataSpec.
 
         CSE引擎ID。  ConfigurationItem.type为\"cse\"时，配置此参数。 
 
@@ -426,7 +426,7 @@ class ConfigurationRequestDataSpec:
 
     @cse_id.setter
     def cse_id(self, cse_id):
-        """Sets the cse_id of this ConfigurationRequestDataSpec.
+        r"""Sets the cse_id of this ConfigurationRequestDataSpec.
 
         CSE引擎ID。  ConfigurationItem.type为\"cse\"时，配置此参数。 
 
@@ -437,7 +437,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def envs(self):
-        """Gets the envs of this ConfigurationRequestDataSpec.
+        r"""Gets the envs of this ConfigurationRequestDataSpec.
 
         环境变量配置。 常用环境变量如下： - TZ: 时区设置，东八区可设置为Asia/Shanghai。 - LANG: 语言字符集设置，中文UTF8可设置为zh_CN.UTF-8。
 
@@ -448,7 +448,7 @@ class ConfigurationRequestDataSpec:
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this ConfigurationRequestDataSpec.
+        r"""Sets the envs of this ConfigurationRequestDataSpec.
 
         环境变量配置。 常用环境变量如下： - TZ: 时区设置，东八区可设置为Asia/Shanghai。 - LANG: 语言字符集设置，中文UTF8可设置为zh_CN.UTF-8。
 
@@ -459,7 +459,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def ip(self):
-        """Gets the ip of this ConfigurationRequestDataSpec.
+        r"""Gets the ip of this ConfigurationRequestDataSpec.
 
         弹性公网IP，响应体参数，未配置域名时返回此参数。
 
@@ -470,7 +470,7 @@ class ConfigurationRequestDataSpec:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ConfigurationRequestDataSpec.
+        r"""Sets the ip of this ConfigurationRequestDataSpec.
 
         弹性公网IP，响应体参数，未配置域名时返回此参数。
 
@@ -481,7 +481,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def items(self):
-        """Gets the items of this ConfigurationRequestDataSpec.
+        r"""Gets the items of this ConfigurationRequestDataSpec.
 
         访问方式配置列表。  ConfigurationItem.type为\"access\"时，配置此参数。 
 
@@ -492,7 +492,7 @@ class ConfigurationRequestDataSpec:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ConfigurationRequestDataSpec.
+        r"""Sets the items of this ConfigurationRequestDataSpec.
 
         访问方式配置列表。  ConfigurationItem.type为\"access\"时，配置此参数。 
 
@@ -503,7 +503,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def scale_strategy(self):
-        """Gets the scale_strategy of this ConfigurationRequestDataSpec.
+        r"""Gets the scale_strategy of this ConfigurationRequestDataSpec.
 
         伸缩策略配置策略类型。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
@@ -514,7 +514,7 @@ class ConfigurationRequestDataSpec:
 
     @scale_strategy.setter
     def scale_strategy(self, scale_strategy):
-        """Sets the scale_strategy of this ConfigurationRequestDataSpec.
+        r"""Sets the scale_strategy of this ConfigurationRequestDataSpec.
 
         伸缩策略配置策略类型。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
@@ -525,7 +525,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def max_replica_count(self):
-        """Gets the max_replica_count of this ConfigurationRequestDataSpec.
+        r"""Gets the max_replica_count of this ConfigurationRequestDataSpec.
 
         伸缩策略配置最大伸缩个数。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
@@ -536,7 +536,7 @@ class ConfigurationRequestDataSpec:
 
     @max_replica_count.setter
     def max_replica_count(self, max_replica_count):
-        """Sets the max_replica_count of this ConfigurationRequestDataSpec.
+        r"""Sets the max_replica_count of this ConfigurationRequestDataSpec.
 
         伸缩策略配置最大伸缩个数。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
@@ -547,7 +547,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def min_replica_count(self):
-        """Gets the min_replica_count of this ConfigurationRequestDataSpec.
+        r"""Gets the min_replica_count of this ConfigurationRequestDataSpec.
 
         伸缩策略配置最小伸缩个数。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
@@ -558,7 +558,7 @@ class ConfigurationRequestDataSpec:
 
     @min_replica_count.setter
     def min_replica_count(self, min_replica_count):
-        """Sets the min_replica_count of this ConfigurationRequestDataSpec.
+        r"""Sets the min_replica_count of this ConfigurationRequestDataSpec.
 
         伸缩策略配置最小伸缩个数。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
@@ -569,7 +569,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def advanced(self):
-        """Gets the advanced of this ConfigurationRequestDataSpec.
+        r"""Gets the advanced of this ConfigurationRequestDataSpec.
 
         :return: The advanced of this ConfigurationRequestDataSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ScaleConfigurationDataAdvanced`
@@ -578,7 +578,7 @@ class ConfigurationRequestDataSpec:
 
     @advanced.setter
     def advanced(self, advanced):
-        """Sets the advanced of this ConfigurationRequestDataSpec.
+        r"""Sets the advanced of this ConfigurationRequestDataSpec.
 
         :param advanced: The advanced of this ConfigurationRequestDataSpec.
         :type advanced: :class:`huaweicloudsdkcae.v1.ScaleConfigurationDataAdvanced`
@@ -587,7 +587,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def triggers(self):
-        """Gets the triggers of this ConfigurationRequestDataSpec.
+        r"""Gets the triggers of this ConfigurationRequestDataSpec.
 
         伸缩策略配置触发器列表。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
@@ -598,7 +598,7 @@ class ConfigurationRequestDataSpec:
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this ConfigurationRequestDataSpec.
+        r"""Sets the triggers of this ConfigurationRequestDataSpec.
 
         伸缩策略配置触发器列表。  ConfigurationItem.type为\"scaling\"时，配置此参数。 
 
@@ -609,7 +609,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def volumes(self):
-        """Gets the volumes of this ConfigurationRequestDataSpec.
+        r"""Gets the volumes of this ConfigurationRequestDataSpec.
 
         云存储配置列表。  ConfigurationItem.type为\"volume\"时，配置此参数。 
 
@@ -620,7 +620,7 @@ class ConfigurationRequestDataSpec:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this ConfigurationRequestDataSpec.
+        r"""Sets the volumes of this ConfigurationRequestDataSpec.
 
         云存储配置列表。  ConfigurationItem.type为\"volume\"时，配置此参数。 
 
@@ -631,7 +631,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def liveness_probe(self):
-        """Gets the liveness_probe of this ConfigurationRequestDataSpec.
+        r"""Gets the liveness_probe of this ConfigurationRequestDataSpec.
 
         :return: The liveness_probe of this ConfigurationRequestDataSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationLivenessProbe`
@@ -640,7 +640,7 @@ class ConfigurationRequestDataSpec:
 
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
-        """Sets the liveness_probe of this ConfigurationRequestDataSpec.
+        r"""Sets the liveness_probe of this ConfigurationRequestDataSpec.
 
         :param liveness_probe: The liveness_probe of this ConfigurationRequestDataSpec.
         :type liveness_probe: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationLivenessProbe`
@@ -649,7 +649,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def startup_probe(self):
-        """Gets the startup_probe of this ConfigurationRequestDataSpec.
+        r"""Gets the startup_probe of this ConfigurationRequestDataSpec.
 
         :return: The startup_probe of this ConfigurationRequestDataSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationStartupProbe`
@@ -658,7 +658,7 @@ class ConfigurationRequestDataSpec:
 
     @startup_probe.setter
     def startup_probe(self, startup_probe):
-        """Sets the startup_probe of this ConfigurationRequestDataSpec.
+        r"""Sets the startup_probe of this ConfigurationRequestDataSpec.
 
         :param startup_probe: The startup_probe of this ConfigurationRequestDataSpec.
         :type startup_probe: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationStartupProbe`
@@ -667,7 +667,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def readiness_probe(self):
-        """Gets the readiness_probe of this ConfigurationRequestDataSpec.
+        r"""Gets the readiness_probe of this ConfigurationRequestDataSpec.
 
         :return: The readiness_probe of this ConfigurationRequestDataSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationReadinessProbe`
@@ -676,7 +676,7 @@ class ConfigurationRequestDataSpec:
 
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
-        """Sets the readiness_probe of this ConfigurationRequestDataSpec.
+        r"""Sets the readiness_probe of this ConfigurationRequestDataSpec.
 
         :param readiness_probe: The readiness_probe of this ConfigurationRequestDataSpec.
         :type readiness_probe: :class:`huaweicloudsdkcae.v1.HealthCheckConfigurationReadinessProbe`
@@ -685,7 +685,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def post_start(self):
-        """Gets the post_start of this ConfigurationRequestDataSpec.
+        r"""Gets the post_start of this ConfigurationRequestDataSpec.
 
         :return: The post_start of this ConfigurationRequestDataSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ConfigurationRequestDataSpecPostStart`
@@ -694,7 +694,7 @@ class ConfigurationRequestDataSpec:
 
     @post_start.setter
     def post_start(self, post_start):
-        """Sets the post_start of this ConfigurationRequestDataSpec.
+        r"""Sets the post_start of this ConfigurationRequestDataSpec.
 
         :param post_start: The post_start of this ConfigurationRequestDataSpec.
         :type post_start: :class:`huaweicloudsdkcae.v1.ConfigurationRequestDataSpecPostStart`
@@ -703,7 +703,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def pre_stop(self):
-        """Gets the pre_stop of this ConfigurationRequestDataSpec.
+        r"""Gets the pre_stop of this ConfigurationRequestDataSpec.
 
         :return: The pre_stop of this ConfigurationRequestDataSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ConfigurationRequestDataSpecPreStop`
@@ -712,7 +712,7 @@ class ConfigurationRequestDataSpec:
 
     @pre_stop.setter
     def pre_stop(self, pre_stop):
-        """Sets the pre_stop of this ConfigurationRequestDataSpec.
+        r"""Sets the pre_stop of this ConfigurationRequestDataSpec.
 
         :param pre_stop: The pre_stop of this ConfigurationRequestDataSpec.
         :type pre_stop: :class:`huaweicloudsdkcae.v1.ConfigurationRequestDataSpecPreStop`
@@ -721,7 +721,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def log_paths(self):
-        """Gets the log_paths of this ConfigurationRequestDataSpec.
+        r"""Gets the log_paths of this ConfigurationRequestDataSpec.
 
         自定义本地磁盘日志路径数组。  ConfigurationItem.type为\"log\"时，配置此参数。 
 
@@ -732,7 +732,7 @@ class ConfigurationRequestDataSpec:
 
     @log_paths.setter
     def log_paths(self, log_paths):
-        """Sets the log_paths of this ConfigurationRequestDataSpec.
+        r"""Sets the log_paths of this ConfigurationRequestDataSpec.
 
         自定义本地磁盘日志路径数组。  ConfigurationItem.type为\"log\"时，配置此参数。 
 
@@ -743,7 +743,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def cloud_storage_log_paths(self):
-        """Gets the cloud_storage_log_paths of this ConfigurationRequestDataSpec.
+        r"""Gets the cloud_storage_log_paths of this ConfigurationRequestDataSpec.
 
         自定义云存储日志路径数组。  ConfigurationItem.type为\"log\"时，配置此参数。 
 
@@ -754,7 +754,7 @@ class ConfigurationRequestDataSpec:
 
     @cloud_storage_log_paths.setter
     def cloud_storage_log_paths(self, cloud_storage_log_paths):
-        """Sets the cloud_storage_log_paths of this ConfigurationRequestDataSpec.
+        r"""Sets the cloud_storage_log_paths of this ConfigurationRequestDataSpec.
 
         自定义云存储日志路径数组。  ConfigurationItem.type为\"log\"时，配置此参数。 
 
@@ -765,7 +765,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def instrumentation(self):
-        """Gets the instrumentation of this ConfigurationRequestDataSpec.
+        r"""Gets the instrumentation of this ConfigurationRequestDataSpec.
 
         探针注入方式。  ConfigurationItem.type为\"apm2\"时，配置此参数。 
 
@@ -776,7 +776,7 @@ class ConfigurationRequestDataSpec:
 
     @instrumentation.setter
     def instrumentation(self, instrumentation):
-        """Sets the instrumentation of this ConfigurationRequestDataSpec.
+        r"""Sets the instrumentation of this ConfigurationRequestDataSpec.
 
         探针注入方式。  ConfigurationItem.type为\"apm2\"时，配置此参数。 
 
@@ -787,7 +787,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def path(self):
-        """Gets the path of this ConfigurationRequestDataSpec.
+        r"""Gets the path of this ConfigurationRequestDataSpec.
 
         自定义监控指标配置采集路径。  ConfigurationItem.type为\"customMetric\"时，配置此参数。 
 
@@ -798,7 +798,7 @@ class ConfigurationRequestDataSpec:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ConfigurationRequestDataSpec.
+        r"""Sets the path of this ConfigurationRequestDataSpec.
 
         自定义监控指标配置采集路径。  ConfigurationItem.type为\"customMetric\"时，配置此参数。 
 
@@ -809,7 +809,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def port(self):
-        """Gets the port of this ConfigurationRequestDataSpec.
+        r"""Gets the port of this ConfigurationRequestDataSpec.
 
         自定义监控指标配置采集端口。  ConfigurationItem.type为\"customMetric\"时，配置此参数。 
 
@@ -820,7 +820,7 @@ class ConfigurationRequestDataSpec:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ConfigurationRequestDataSpec.
+        r"""Sets the port of this ConfigurationRequestDataSpec.
 
         自定义监控指标配置采集端口。  ConfigurationItem.type为\"customMetric\"时，配置此参数。 
 
@@ -831,7 +831,7 @@ class ConfigurationRequestDataSpec:
 
     @property
     def metrics(self):
-        """Gets the metrics of this ConfigurationRequestDataSpec.
+        r"""Gets the metrics of this ConfigurationRequestDataSpec.
 
         自定义监控指标配置指标名称。  ConfigurationItem.type为\"customMetric\"时，配置此参数。 
 
@@ -842,7 +842,7 @@ class ConfigurationRequestDataSpec:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ConfigurationRequestDataSpec.
+        r"""Sets the metrics of this ConfigurationRequestDataSpec.
 
         自定义监控指标配置指标名称。  ConfigurationItem.type为\"customMetric\"时，配置此参数。 
 

@@ -29,7 +29,7 @@ class SupportVersions:
     }
 
     def __init__(self, cluster_type=None, cluster_version=None, category=None):
-        """SupportVersions
+        r"""SupportVersions
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SupportVersions:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this SupportVersions.
+        r"""Gets the cluster_type of this SupportVersions.
 
         支持的集群类型
 
@@ -66,7 +66,7 @@ class SupportVersions:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this SupportVersions.
+        r"""Sets the cluster_type of this SupportVersions.
 
         支持的集群类型
 
@@ -77,7 +77,7 @@ class SupportVersions:
 
     @property
     def cluster_version(self):
-        """Gets the cluster_version of this SupportVersions.
+        r"""Gets the cluster_version of this SupportVersions.
 
         支持的集群版本（正则表达式）
 
@@ -88,7 +88,7 @@ class SupportVersions:
 
     @cluster_version.setter
     def cluster_version(self, cluster_version):
-        """Sets the cluster_version of this SupportVersions.
+        r"""Sets the cluster_version of this SupportVersions.
 
         支持的集群版本（正则表达式）
 
@@ -99,7 +99,7 @@ class SupportVersions:
 
     @property
     def category(self):
-        """Gets the category of this SupportVersions.
+        r"""Gets the category of this SupportVersions.
 
         作用的集群类型 **取值范围：** - CCE：CCE Standard集群 - Turbo：CCE Turbo集群 - Autopilot：CCE Autopilot集群  **默认取值** 为空时默认为CCE Standard，CCE Turbo集群
 
@@ -110,7 +110,7 @@ class SupportVersions:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this SupportVersions.
+        r"""Sets the category of this SupportVersions.
 
         作用的集群类型 **取值范围：** - CCE：CCE Standard集群 - Turbo：CCE Turbo集群 - Autopilot：CCE Autopilot集群  **默认取值** 为空时默认为CCE Standard，CCE Turbo集群
 

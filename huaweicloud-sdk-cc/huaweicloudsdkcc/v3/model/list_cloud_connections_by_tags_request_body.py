@@ -25,7 +25,7 @@ class ListCloudConnectionsByTagsRequestBody:
     }
 
     def __init__(self, tags=None):
-        """ListCloudConnectionsByTagsRequestBody
+        r"""ListCloudConnectionsByTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListCloudConnectionsByTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListCloudConnectionsByTagsRequestBody.
+        r"""Gets the tags of this ListCloudConnectionsByTagsRequestBody.
 
         包含标签。
 
@@ -53,7 +53,7 @@ class ListCloudConnectionsByTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListCloudConnectionsByTagsRequestBody.
+        r"""Sets the tags of this ListCloudConnectionsByTagsRequestBody.
 
         包含标签。
 

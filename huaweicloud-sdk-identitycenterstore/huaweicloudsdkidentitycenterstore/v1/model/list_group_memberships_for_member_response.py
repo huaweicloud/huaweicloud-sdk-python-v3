@@ -28,7 +28,7 @@ class ListGroupMembershipsForMemberResponse(SdkResponse):
     }
 
     def __init__(self, group_memberships=None, page_info=None):
-        """ListGroupMembershipsForMemberResponse
+        r"""ListGroupMembershipsForMemberResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListGroupMembershipsForMemberResponse(SdkResponse):
 
     @property
     def group_memberships(self):
-        """Gets the group_memberships of this ListGroupMembershipsForMemberResponse.
+        r"""Gets the group_memberships of this ListGroupMembershipsForMemberResponse.
 
         满足查询条件的关联关系对象列表
 
@@ -62,7 +62,7 @@ class ListGroupMembershipsForMemberResponse(SdkResponse):
 
     @group_memberships.setter
     def group_memberships(self, group_memberships):
-        """Sets the group_memberships of this ListGroupMembershipsForMemberResponse.
+        r"""Sets the group_memberships of this ListGroupMembershipsForMemberResponse.
 
         满足查询条件的关联关系对象列表
 
@@ -73,7 +73,7 @@ class ListGroupMembershipsForMemberResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListGroupMembershipsForMemberResponse.
+        r"""Gets the page_info of this ListGroupMembershipsForMemberResponse.
 
         :return: The page_info of this ListGroupMembershipsForMemberResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListGroupMembershipsForMemberResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListGroupMembershipsForMemberResponse.
+        r"""Sets the page_info of this ListGroupMembershipsForMemberResponse.
 
         :param page_info: The page_info of this ListGroupMembershipsForMemberResponse.
         :type page_info: :class:`huaweicloudsdkidentitycenterstore.v1.PageInfoDto`

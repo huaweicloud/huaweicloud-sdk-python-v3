@@ -27,7 +27,7 @@ class EsScanResult:
     }
 
     def __init__(self, total=None, db_scan_results=None):
-        """EsScanResult
+        r"""EsScanResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EsScanResult:
 
     @property
     def total(self):
-        """Gets the total of this EsScanResult.
+        r"""Gets the total of this EsScanResult.
 
         扫描结果总数
 
@@ -61,7 +61,7 @@ class EsScanResult:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this EsScanResult.
+        r"""Sets the total of this EsScanResult.
 
         扫描结果总数
 
@@ -72,7 +72,7 @@ class EsScanResult:
 
     @property
     def db_scan_results(self):
-        """Gets the db_scan_results of this EsScanResult.
+        r"""Gets the db_scan_results of this EsScanResult.
 
         ES扫描结果列表
 
@@ -83,7 +83,7 @@ class EsScanResult:
 
     @db_scan_results.setter
     def db_scan_results(self, db_scan_results):
-        """Sets the db_scan_results of this EsScanResult.
+        r"""Sets the db_scan_results of this EsScanResult.
 
         ES扫描结果列表
 

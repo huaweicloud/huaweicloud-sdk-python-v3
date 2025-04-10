@@ -27,7 +27,7 @@ class ListServerHdaUpgradeRecordsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListServerHdaUpgradeRecordsRequest
+        r"""ListServerHdaUpgradeRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListServerHdaUpgradeRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListServerHdaUpgradeRecordsRequest.
+        r"""Gets the offset of this ListServerHdaUpgradeRecordsRequest.
 
         查询的偏移量。
 
@@ -61,7 +61,7 @@ class ListServerHdaUpgradeRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListServerHdaUpgradeRecordsRequest.
+        r"""Sets the offset of this ListServerHdaUpgradeRecordsRequest.
 
         查询的偏移量。
 
@@ -72,7 +72,7 @@ class ListServerHdaUpgradeRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServerHdaUpgradeRecordsRequest.
+        r"""Gets the limit of this ListServerHdaUpgradeRecordsRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -83,7 +83,7 @@ class ListServerHdaUpgradeRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServerHdaUpgradeRecordsRequest.
+        r"""Sets the limit of this ListServerHdaUpgradeRecordsRequest.
 
         查询的数量，值区间[1-100]。
 

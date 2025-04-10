@@ -24,7 +24,7 @@ class UpdateAssistAuthMethodConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateAssistAuthMethodConfigResponse
+        r"""UpdateAssistAuthMethodConfigResponse
 
         The model defined in huaweicloud sdk
 

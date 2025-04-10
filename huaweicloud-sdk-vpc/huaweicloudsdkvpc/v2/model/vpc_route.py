@@ -35,7 +35,7 @@ class VpcRoute:
     }
 
     def __init__(self, id=None, destination=None, nexthop=None, type=None, vpc_id=None, tenant_id=None):
-        """VpcRoute
+        r"""VpcRoute
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class VpcRoute:
 
     @property
     def id(self):
-        """Gets the id of this VpcRoute.
+        r"""Gets the id of this VpcRoute.
 
         路由ID
 
@@ -83,7 +83,7 @@ class VpcRoute:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VpcRoute.
+        r"""Sets the id of this VpcRoute.
 
         路由ID
 
@@ -94,7 +94,7 @@ class VpcRoute:
 
     @property
     def destination(self):
-        """Gets the destination of this VpcRoute.
+        r"""Gets the destination of this VpcRoute.
 
         路由目的地址CIDR，如192.168.200.0/24。
 
@@ -105,7 +105,7 @@ class VpcRoute:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this VpcRoute.
+        r"""Sets the destination of this VpcRoute.
 
         路由目的地址CIDR，如192.168.200.0/24。
 
@@ -116,7 +116,7 @@ class VpcRoute:
 
     @property
     def nexthop(self):
-        """Gets the nexthop of this VpcRoute.
+        r"""Gets the nexthop of this VpcRoute.
 
         功能说明：路由下一跳 取值范围：如果type为peering类型，则nexthop为peering的ID
 
@@ -127,7 +127,7 @@ class VpcRoute:
 
     @nexthop.setter
     def nexthop(self, nexthop):
-        """Sets the nexthop of this VpcRoute.
+        r"""Sets the nexthop of this VpcRoute.
 
         功能说明：路由下一跳 取值范围：如果type为peering类型，则nexthop为peering的ID
 
@@ -138,7 +138,7 @@ class VpcRoute:
 
     @property
     def type(self):
-        """Gets the type of this VpcRoute.
+        r"""Gets the type of this VpcRoute.
 
         功能说明：路由类型 取值范围：peering
 
@@ -149,7 +149,7 @@ class VpcRoute:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VpcRoute.
+        r"""Sets the type of this VpcRoute.
 
         功能说明：路由类型 取值范围：peering
 
@@ -160,7 +160,7 @@ class VpcRoute:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this VpcRoute.
+        r"""Gets the vpc_id of this VpcRoute.
 
         请求添加路由的VPC ID
 
@@ -171,7 +171,7 @@ class VpcRoute:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this VpcRoute.
+        r"""Sets the vpc_id of this VpcRoute.
 
         请求添加路由的VPC ID
 
@@ -182,7 +182,7 @@ class VpcRoute:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this VpcRoute.
+        r"""Gets the tenant_id of this VpcRoute.
 
         项目ID
 
@@ -193,7 +193,7 @@ class VpcRoute:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this VpcRoute.
+        r"""Sets the tenant_id of this VpcRoute.
 
         项目ID
 

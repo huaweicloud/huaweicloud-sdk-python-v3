@@ -39,7 +39,7 @@ class RecordForGetAuthApp:
     }
 
     def __init__(self, app_id=None, app_name=None, instance_id=None, instance_name=None, api_using_time=None, approval_time=None, relationship_type=None, static_params=None):
-        """RecordForGetAuthApp
+        r"""RecordForGetAuthApp
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class RecordForGetAuthApp:
 
     @property
     def app_id(self):
-        """Gets the app_id of this RecordForGetAuthApp.
+        r"""Gets the app_id of this RecordForGetAuthApp.
 
         应用编号
 
@@ -103,7 +103,7 @@ class RecordForGetAuthApp:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this RecordForGetAuthApp.
+        r"""Sets the app_id of this RecordForGetAuthApp.
 
         应用编号
 
@@ -114,7 +114,7 @@ class RecordForGetAuthApp:
 
     @property
     def app_name(self):
-        """Gets the app_name of this RecordForGetAuthApp.
+        r"""Gets the app_name of this RecordForGetAuthApp.
 
         应用名称
 
@@ -125,7 +125,7 @@ class RecordForGetAuthApp:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this RecordForGetAuthApp.
+        r"""Sets the app_name of this RecordForGetAuthApp.
 
         应用名称
 
@@ -136,7 +136,7 @@ class RecordForGetAuthApp:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RecordForGetAuthApp.
+        r"""Gets the instance_id of this RecordForGetAuthApp.
 
         集群实例id
 
@@ -147,7 +147,7 @@ class RecordForGetAuthApp:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RecordForGetAuthApp.
+        r"""Sets the instance_id of this RecordForGetAuthApp.
 
         集群实例id
 
@@ -158,7 +158,7 @@ class RecordForGetAuthApp:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this RecordForGetAuthApp.
+        r"""Gets the instance_name of this RecordForGetAuthApp.
 
         集群实例名称
 
@@ -169,7 +169,7 @@ class RecordForGetAuthApp:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this RecordForGetAuthApp.
+        r"""Sets the instance_name of this RecordForGetAuthApp.
 
         集群实例名称
 
@@ -180,7 +180,7 @@ class RecordForGetAuthApp:
 
     @property
     def api_using_time(self):
-        """Gets the api_using_time of this RecordForGetAuthApp.
+        r"""Gets the api_using_time of this RecordForGetAuthApp.
 
         使用截止时间
 
@@ -191,7 +191,7 @@ class RecordForGetAuthApp:
 
     @api_using_time.setter
     def api_using_time(self, api_using_time):
-        """Sets the api_using_time of this RecordForGetAuthApp.
+        r"""Sets the api_using_time of this RecordForGetAuthApp.
 
         使用截止时间
 
@@ -202,7 +202,7 @@ class RecordForGetAuthApp:
 
     @property
     def approval_time(self):
-        """Gets the approval_time of this RecordForGetAuthApp.
+        r"""Gets the approval_time of this RecordForGetAuthApp.
 
         授权时间
 
@@ -213,7 +213,7 @@ class RecordForGetAuthApp:
 
     @approval_time.setter
     def approval_time(self, approval_time):
-        """Sets the approval_time of this RecordForGetAuthApp.
+        r"""Sets the approval_time of this RecordForGetAuthApp.
 
         授权时间
 
@@ -224,7 +224,7 @@ class RecordForGetAuthApp:
 
     @property
     def relationship_type(self):
-        """Gets the relationship_type of this RecordForGetAuthApp.
+        r"""Gets the relationship_type of this RecordForGetAuthApp.
 
         绑定关系
 
@@ -235,7 +235,7 @@ class RecordForGetAuthApp:
 
     @relationship_type.setter
     def relationship_type(self, relationship_type):
-        """Sets the relationship_type of this RecordForGetAuthApp.
+        r"""Sets the relationship_type of this RecordForGetAuthApp.
 
         绑定关系
 
@@ -246,7 +246,7 @@ class RecordForGetAuthApp:
 
     @property
     def static_params(self):
-        """Gets the static_params of this RecordForGetAuthApp.
+        r"""Gets the static_params of this RecordForGetAuthApp.
 
         静态参数列表
 
@@ -257,7 +257,7 @@ class RecordForGetAuthApp:
 
     @static_params.setter
     def static_params(self, static_params):
-        """Sets the static_params of this RecordForGetAuthApp.
+        r"""Sets the static_params of this RecordForGetAuthApp.
 
         静态参数列表
 

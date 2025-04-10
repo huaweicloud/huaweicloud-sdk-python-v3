@@ -37,7 +37,7 @@ class JobInfo:
     }
 
     def __init__(self, id=None, name=None, status=None, created_time=None, end_time=None, process=None, instance=None):
-        """JobInfo
+        r"""JobInfo
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class JobInfo:
 
     @property
     def id(self):
-        """Gets the id of this JobInfo.
+        r"""Gets the id of this JobInfo.
 
         任务ID。
 
@@ -90,7 +90,7 @@ class JobInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this JobInfo.
+        r"""Sets the id of this JobInfo.
 
         任务ID。
 
@@ -101,7 +101,7 @@ class JobInfo:
 
     @property
     def name(self):
-        """Gets the name of this JobInfo.
+        r"""Gets the name of this JobInfo.
 
         任务名称。
 
@@ -112,7 +112,7 @@ class JobInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobInfo.
+        r"""Sets the name of this JobInfo.
 
         任务名称。
 
@@ -123,7 +123,7 @@ class JobInfo:
 
     @property
     def status(self):
-        """Gets the status of this JobInfo.
+        r"""Gets the status of this JobInfo.
 
         任务执行状态。  取值： 值为“Running”，表示任务正在执行。 值为“Completed”，表示任务执行成功。 值为“Failed”，表示任务执行失败。
 
@@ -134,7 +134,7 @@ class JobInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobInfo.
+        r"""Sets the status of this JobInfo.
 
         任务执行状态。  取值： 值为“Running”，表示任务正在执行。 值为“Completed”，表示任务执行成功。 值为“Failed”，表示任务执行失败。
 
@@ -145,7 +145,7 @@ class JobInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this JobInfo.
+        r"""Gets the created_time of this JobInfo.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -156,7 +156,7 @@ class JobInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this JobInfo.
+        r"""Sets the created_time of this JobInfo.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -167,7 +167,7 @@ class JobInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this JobInfo.
+        r"""Gets the end_time of this JobInfo.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -178,7 +178,7 @@ class JobInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this JobInfo.
+        r"""Sets the end_time of this JobInfo.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -189,7 +189,7 @@ class JobInfo:
 
     @property
     def process(self):
-        """Gets the process of this JobInfo.
+        r"""Gets the process of this JobInfo.
 
         任务执行进度。  执行中状态才返回执行进度，例如“60%”，表示任务执行进度为60%，否则返回“”。
 
@@ -200,7 +200,7 @@ class JobInfo:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this JobInfo.
+        r"""Sets the process of this JobInfo.
 
         任务执行进度。  执行中状态才返回执行进度，例如“60%”，表示任务执行进度为60%，否则返回“”。
 
@@ -211,7 +211,7 @@ class JobInfo:
 
     @property
     def instance(self):
-        """Gets the instance of this JobInfo.
+        r"""Gets the instance of this JobInfo.
 
         :return: The instance of this JobInfo.
         :rtype: :class:`huaweicloudsdkddm.v1.Instance`
@@ -220,7 +220,7 @@ class JobInfo:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this JobInfo.
+        r"""Sets the instance of this JobInfo.
 
         :param instance: The instance of this JobInfo.
         :type instance: :class:`huaweicloudsdkddm.v1.Instance`

@@ -28,7 +28,7 @@ class ExportSqlStatementsResponse(SdkResponse):
     }
 
     def __init__(self, statements=None, next_marker=None):
-        """ExportSqlStatementsResponse
+        r"""ExportSqlStatementsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExportSqlStatementsResponse(SdkResponse):
 
     @property
     def statements(self):
-        """Gets the statements of this ExportSqlStatementsResponse.
+        r"""Gets the statements of this ExportSqlStatementsResponse.
 
         全量SQL集合。当集合为空时，说明SQL已全部导出。
 
@@ -62,7 +62,7 @@ class ExportSqlStatementsResponse(SdkResponse):
 
     @statements.setter
     def statements(self, statements):
-        """Sets the statements of this ExportSqlStatementsResponse.
+        r"""Sets the statements of this ExportSqlStatementsResponse.
 
         全量SQL集合。当集合为空时，说明SQL已全部导出。
 
@@ -73,7 +73,7 @@ class ExportSqlStatementsResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ExportSqlStatementsResponse.
+        r"""Gets the next_marker of this ExportSqlStatementsResponse.
 
         获取下一页所需的标识符。marker仅在3分钟内有效。
 
@@ -84,7 +84,7 @@ class ExportSqlStatementsResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ExportSqlStatementsResponse.
+        r"""Sets the next_marker of this ExportSqlStatementsResponse.
 
         获取下一页所需的标识符。marker仅在3分钟内有效。
 

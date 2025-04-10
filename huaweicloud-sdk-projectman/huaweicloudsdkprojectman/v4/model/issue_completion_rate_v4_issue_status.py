@@ -35,7 +35,7 @@ class IssueCompletionRateV4IssueStatus:
     }
 
     def __init__(self, closed_num=None, new_num=None, process_num=None, rejected_num=None, solved_num=None, test_num=None):
-        """IssueCompletionRateV4IssueStatus
+        r"""IssueCompletionRateV4IssueStatus
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class IssueCompletionRateV4IssueStatus:
 
     @property
     def closed_num(self):
-        """Gets the closed_num of this IssueCompletionRateV4IssueStatus.
+        r"""Gets the closed_num of this IssueCompletionRateV4IssueStatus.
 
         已关闭的工作项
 
@@ -89,7 +89,7 @@ class IssueCompletionRateV4IssueStatus:
 
     @closed_num.setter
     def closed_num(self, closed_num):
-        """Sets the closed_num of this IssueCompletionRateV4IssueStatus.
+        r"""Sets the closed_num of this IssueCompletionRateV4IssueStatus.
 
         已关闭的工作项
 
@@ -100,7 +100,7 @@ class IssueCompletionRateV4IssueStatus:
 
     @property
     def new_num(self):
-        """Gets the new_num of this IssueCompletionRateV4IssueStatus.
+        r"""Gets the new_num of this IssueCompletionRateV4IssueStatus.
 
         新建的工作项
 
@@ -111,7 +111,7 @@ class IssueCompletionRateV4IssueStatus:
 
     @new_num.setter
     def new_num(self, new_num):
-        """Sets the new_num of this IssueCompletionRateV4IssueStatus.
+        r"""Sets the new_num of this IssueCompletionRateV4IssueStatus.
 
         新建的工作项
 
@@ -122,7 +122,7 @@ class IssueCompletionRateV4IssueStatus:
 
     @property
     def process_num(self):
-        """Gets the process_num of this IssueCompletionRateV4IssueStatus.
+        r"""Gets the process_num of this IssueCompletionRateV4IssueStatus.
 
         进行中的工作项数目
 
@@ -133,7 +133,7 @@ class IssueCompletionRateV4IssueStatus:
 
     @process_num.setter
     def process_num(self, process_num):
-        """Sets the process_num of this IssueCompletionRateV4IssueStatus.
+        r"""Sets the process_num of this IssueCompletionRateV4IssueStatus.
 
         进行中的工作项数目
 
@@ -144,7 +144,7 @@ class IssueCompletionRateV4IssueStatus:
 
     @property
     def rejected_num(self):
-        """Gets the rejected_num of this IssueCompletionRateV4IssueStatus.
+        r"""Gets the rejected_num of this IssueCompletionRateV4IssueStatus.
 
         已经拒绝的工作项
 
@@ -155,7 +155,7 @@ class IssueCompletionRateV4IssueStatus:
 
     @rejected_num.setter
     def rejected_num(self, rejected_num):
-        """Sets the rejected_num of this IssueCompletionRateV4IssueStatus.
+        r"""Sets the rejected_num of this IssueCompletionRateV4IssueStatus.
 
         已经拒绝的工作项
 
@@ -166,7 +166,7 @@ class IssueCompletionRateV4IssueStatus:
 
     @property
     def solved_num(self):
-        """Gets the solved_num of this IssueCompletionRateV4IssueStatus.
+        r"""Gets the solved_num of this IssueCompletionRateV4IssueStatus.
 
         已经解决的工作项
 
@@ -177,7 +177,7 @@ class IssueCompletionRateV4IssueStatus:
 
     @solved_num.setter
     def solved_num(self, solved_num):
-        """Sets the solved_num of this IssueCompletionRateV4IssueStatus.
+        r"""Sets the solved_num of this IssueCompletionRateV4IssueStatus.
 
         已经解决的工作项
 
@@ -188,7 +188,7 @@ class IssueCompletionRateV4IssueStatus:
 
     @property
     def test_num(self):
-        """Gets the test_num of this IssueCompletionRateV4IssueStatus.
+        r"""Gets the test_num of this IssueCompletionRateV4IssueStatus.
 
         测试中的工作项
 
@@ -199,7 +199,7 @@ class IssueCompletionRateV4IssueStatus:
 
     @test_num.setter
     def test_num(self, test_num):
-        """Sets the test_num of this IssueCompletionRateV4IssueStatus.
+        r"""Sets the test_num of this IssueCompletionRateV4IssueStatus.
 
         测试中的工作项
 

@@ -35,7 +35,7 @@ class VersionModelVersionReviseDTO:
     }
 
     def __init__(self, creator=None, custom_link_set=None, master_id=None, modifier=None, work_copy_type=None, working_copy=None):
-        """VersionModelVersionReviseDTO
+        r"""VersionModelVersionReviseDTO
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class VersionModelVersionReviseDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this VersionModelVersionReviseDTO.
+        r"""Gets the creator of this VersionModelVersionReviseDTO.
 
         **参数解释：**  创建人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -88,7 +88,7 @@ class VersionModelVersionReviseDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this VersionModelVersionReviseDTO.
+        r"""Sets the creator of this VersionModelVersionReviseDTO.
 
         **参数解释：**  创建人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -99,7 +99,7 @@ class VersionModelVersionReviseDTO:
 
     @property
     def custom_link_set(self):
-        """Gets the custom_link_set of this VersionModelVersionReviseDTO.
+        r"""Gets the custom_link_set of this VersionModelVersionReviseDTO.
 
         **参数解释：**  关系实体名称集合，与workCopyType的值CUSTOM配合使用。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -110,7 +110,7 @@ class VersionModelVersionReviseDTO:
 
     @custom_link_set.setter
     def custom_link_set(self, custom_link_set):
-        """Sets the custom_link_set of this VersionModelVersionReviseDTO.
+        r"""Sets the custom_link_set of this VersionModelVersionReviseDTO.
 
         **参数解释：**  关系实体名称集合，与workCopyType的值CUSTOM配合使用。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -121,7 +121,7 @@ class VersionModelVersionReviseDTO:
 
     @property
     def master_id(self):
-        """Gets the master_id of this VersionModelVersionReviseDTO.
+        r"""Gets the master_id of this VersionModelVersionReviseDTO.
 
         **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -132,7 +132,7 @@ class VersionModelVersionReviseDTO:
 
     @master_id.setter
     def master_id(self, master_id):
-        """Sets the master_id of this VersionModelVersionReviseDTO.
+        r"""Sets the master_id of this VersionModelVersionReviseDTO.
 
         **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -143,7 +143,7 @@ class VersionModelVersionReviseDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this VersionModelVersionReviseDTO.
+        r"""Gets the modifier of this VersionModelVersionReviseDTO.
 
         **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -154,7 +154,7 @@ class VersionModelVersionReviseDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this VersionModelVersionReviseDTO.
+        r"""Sets the modifier of this VersionModelVersionReviseDTO.
 
         **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -165,7 +165,7 @@ class VersionModelVersionReviseDTO:
 
     @property
     def work_copy_type(self):
-        """Gets the work_copy_type of this VersionModelVersionReviseDTO.
+        r"""Gets the work_copy_type of this VersionModelVersionReviseDTO.
 
         **参数解释：**  关系的复制类型。  **约束限制：**  不涉及。  **取值范围：**  - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，修订后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，修订后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，修订后的数据实例将继承这些关系实例。 - NONE：修订后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，修订后的数据实例将继承这些关系实例。  **默认取值：**  不涉及。 
 
@@ -176,7 +176,7 @@ class VersionModelVersionReviseDTO:
 
     @work_copy_type.setter
     def work_copy_type(self, work_copy_type):
-        """Sets the work_copy_type of this VersionModelVersionReviseDTO.
+        r"""Sets the work_copy_type of this VersionModelVersionReviseDTO.
 
         **参数解释：**  关系的复制类型。  **约束限制：**  不涉及。  **取值范围：**  - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，修订后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，修订后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，修订后的数据实例将继承这些关系实例。 - NONE：修订后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，修订后的数据实例将继承这些关系实例。  **默认取值：**  不涉及。 
 
@@ -187,7 +187,7 @@ class VersionModelVersionReviseDTO:
 
     @property
     def working_copy(self):
-        """Gets the working_copy of this VersionModelVersionReviseDTO.
+        r"""Gets the working_copy of this VersionModelVersionReviseDTO.
 
         **参数解释：**  是否已检出。  **约束限制：**  不涉及。  **取值范围：**  - true：已检出。 - false：未检出。  **默认取值：**  false。 
 
@@ -198,7 +198,7 @@ class VersionModelVersionReviseDTO:
 
     @working_copy.setter
     def working_copy(self, working_copy):
-        """Sets the working_copy of this VersionModelVersionReviseDTO.
+        r"""Sets the working_copy of this VersionModelVersionReviseDTO.
 
         **参数解释：**  是否已检出。  **约束限制：**  不涉及。  **取值范围：**  - true：已检出。 - false：未检出。  **默认取值：**  false。 
 

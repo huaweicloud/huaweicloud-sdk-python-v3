@@ -31,7 +31,7 @@ class DataStruct:
     }
 
     def __init__(self, behaviors=None, item_attrs=None, user_attrs=None, user_dynamic_attr=None):
-        """DataStruct
+        r"""DataStruct
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DataStruct:
 
     @property
     def behaviors(self):
-        """Gets the behaviors of this DataStruct.
+        r"""Gets the behaviors of this DataStruct.
 
         :return: The behaviors of this DataStruct.
         :rtype: :class:`huaweicloudsdkres.v1.BehaviorsConfig`
@@ -73,7 +73,7 @@ class DataStruct:
 
     @behaviors.setter
     def behaviors(self, behaviors):
-        """Sets the behaviors of this DataStruct.
+        r"""Sets the behaviors of this DataStruct.
 
         :param behaviors: The behaviors of this DataStruct.
         :type behaviors: :class:`huaweicloudsdkres.v1.BehaviorsConfig`
@@ -82,7 +82,7 @@ class DataStruct:
 
     @property
     def item_attrs(self):
-        """Gets the item_attrs of this DataStruct.
+        r"""Gets the item_attrs of this DataStruct.
 
         物品参数。
 
@@ -93,7 +93,7 @@ class DataStruct:
 
     @item_attrs.setter
     def item_attrs(self, item_attrs):
-        """Sets the item_attrs of this DataStruct.
+        r"""Sets the item_attrs of this DataStruct.
 
         物品参数。
 
@@ -104,7 +104,7 @@ class DataStruct:
 
     @property
     def user_attrs(self):
-        """Gets the user_attrs of this DataStruct.
+        r"""Gets the user_attrs of this DataStruct.
 
         用户参数。
 
@@ -115,7 +115,7 @@ class DataStruct:
 
     @user_attrs.setter
     def user_attrs(self, user_attrs):
-        """Sets the user_attrs of this DataStruct.
+        r"""Sets the user_attrs of this DataStruct.
 
         用户参数。
 
@@ -126,7 +126,7 @@ class DataStruct:
 
     @property
     def user_dynamic_attr(self):
-        """Gets the user_dynamic_attr of this DataStruct.
+        r"""Gets the user_dynamic_attr of this DataStruct.
 
         :return: The user_dynamic_attr of this DataStruct.
         :rtype: :class:`huaweicloudsdkres.v1.UserDynamicAttr`
@@ -135,7 +135,7 @@ class DataStruct:
 
     @user_dynamic_attr.setter
     def user_dynamic_attr(self, user_dynamic_attr):
-        """Sets the user_dynamic_attr of this DataStruct.
+        r"""Sets the user_dynamic_attr of this DataStruct.
 
         :param user_dynamic_attr: The user_dynamic_attr of this DataStruct.
         :type user_dynamic_attr: :class:`huaweicloudsdkres.v1.UserDynamicAttr`

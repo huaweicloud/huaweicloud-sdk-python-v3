@@ -53,7 +53,7 @@ class JobResourceInfo:
     }
 
     def __init__(self, resource_id=None, resource_name=None, cloud_service_type=None, resource_type=None, resource_spec_code=None, spec_type=None, spec_size=None, measure=None, processed_time=None, is_main_resource=None, main_resources=None, extend_params=None, old_resource_id=None, old_cloud_service_type=None, old_resource_type=None):
-        """JobResourceInfo
+        r"""JobResourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class JobResourceInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this JobResourceInfo.
+        r"""Gets the resource_id of this JobResourceInfo.
 
         客户在云服务Console上可见的资源实例Id，全局唯一，且不可更改，最大64个字符。  注：“规格变更”场景下（包括升降配），是对某个资源实例的规格进行调整，  该资源实例其他信息（比如资源Id、资源名称）和运行的业务数据不变化。
 
@@ -152,7 +152,7 @@ class JobResourceInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this JobResourceInfo.
+        r"""Sets the resource_id of this JobResourceInfo.
 
         客户在云服务Console上可见的资源实例Id，全局唯一，且不可更改，最大64个字符。  注：“规格变更”场景下（包括升降配），是对某个资源实例的规格进行调整，  该资源实例其他信息（比如资源Id、资源名称）和运行的业务数据不变化。
 
@@ -163,7 +163,7 @@ class JobResourceInfo:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this JobResourceInfo.
+        r"""Gets the resource_name of this JobResourceInfo.
 
         资源名称；创建、有最新资源名称场景，必填。
 
@@ -174,7 +174,7 @@ class JobResourceInfo:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this JobResourceInfo.
+        r"""Sets the resource_name of this JobResourceInfo.
 
         资源名称；创建、有最新资源名称场景，必填。
 
@@ -185,7 +185,7 @@ class JobResourceInfo:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this JobResourceInfo.
+        r"""Gets the cloud_service_type of this JobResourceInfo.
 
         云服务类型编码；新购、规格变更场景，必填。
 
@@ -196,7 +196,7 @@ class JobResourceInfo:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this JobResourceInfo.
+        r"""Sets the cloud_service_type of this JobResourceInfo.
 
         云服务类型编码；新购、规格变更场景，必填。
 
@@ -207,7 +207,7 @@ class JobResourceInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this JobResourceInfo.
+        r"""Gets the resource_type of this JobResourceInfo.
 
         资源类型编码；新购、规格变更场景，必填。
 
@@ -218,7 +218,7 @@ class JobResourceInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this JobResourceInfo.
+        r"""Sets the resource_type of this JobResourceInfo.
 
         资源类型编码；新购、规格变更场景，必填。
 
@@ -229,7 +229,7 @@ class JobResourceInfo:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this JobResourceInfo.
+        r"""Gets the resource_spec_code of this JobResourceInfo.
 
         资源规格编码；新购、规格变更场景，必填。
 
@@ -240,7 +240,7 @@ class JobResourceInfo:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this JobResourceInfo.
+        r"""Sets the resource_spec_code of this JobResourceInfo.
 
         资源规格编码；新购、规格变更场景，必填。
 
@@ -251,7 +251,7 @@ class JobResourceInfo:
 
     @property
     def spec_type(self):
-        """Gets the spec_type of this JobResourceInfo.
+        r"""Gets the spec_type of this JobResourceInfo.
 
         规格类型，运营上需要呈现和使用的一些规格属性，多个使用K:V格式。 比如带宽的共享/独享(shareable:true/false)，数据盘的系统盘/数据盘类型(root:true/false)。 当前针对共享带宽、共享盘使用，必填。
 
@@ -262,7 +262,7 @@ class JobResourceInfo:
 
     @spec_type.setter
     def spec_type(self, spec_type):
-        """Sets the spec_type of this JobResourceInfo.
+        r"""Sets the spec_type of this JobResourceInfo.
 
         规格类型，运营上需要呈现和使用的一些规格属性，多个使用K:V格式。 比如带宽的共享/独享(shareable:true/false)，数据盘的系统盘/数据盘类型(root:true/false)。 当前针对共享带宽、共享盘使用，必填。
 
@@ -273,7 +273,7 @@ class JobResourceInfo:
 
     @property
     def spec_size(self):
-        """Gets the spec_size of this JobResourceInfo.
+        r"""Gets the spec_size of this JobResourceInfo.
 
         某些规格属性大小：比如带宽大小、数据盘大小。
 
@@ -284,7 +284,7 @@ class JobResourceInfo:
 
     @spec_size.setter
     def spec_size(self, spec_size):
-        """Sets the spec_size of this JobResourceInfo.
+        r"""Sets the spec_size of this JobResourceInfo.
 
         某些规格属性大小：比如带宽大小、数据盘大小。
 
@@ -295,7 +295,7 @@ class JobResourceInfo:
 
     @property
     def measure(self):
-        """Gets the measure of this JobResourceInfo.
+        r"""Gets the measure of this JobResourceInfo.
 
         specSize的单位编码，比如GB、M，有specSize时，此字段必填。
 
@@ -306,7 +306,7 @@ class JobResourceInfo:
 
     @measure.setter
     def measure(self, measure):
-        """Sets the measure of this JobResourceInfo.
+        r"""Sets the measure of this JobResourceInfo.
 
         specSize的单位编码，比如GB、M，有specSize时，此字段必填。
 
@@ -317,7 +317,7 @@ class JobResourceInfo:
 
     @property
     def processed_time(self):
-        """Gets the processed_time of this JobResourceInfo.
+        r"""Gets the processed_time of this JobResourceInfo.
 
         处理时间。
 
@@ -328,7 +328,7 @@ class JobResourceInfo:
 
     @processed_time.setter
     def processed_time(self, processed_time):
-        """Sets the processed_time of this JobResourceInfo.
+        r"""Sets the processed_time of this JobResourceInfo.
 
         处理时间。
 
@@ -339,7 +339,7 @@ class JobResourceInfo:
 
     @property
     def is_main_resource(self):
-        """Gets the is_main_resource of this JobResourceInfo.
+        r"""Gets the is_main_resource of this JobResourceInfo.
 
         该resourceId是否是主资源（仅开通场景使用，其他场景为空）。 * `1` - 是 * `0` - 否
 
@@ -350,7 +350,7 @@ class JobResourceInfo:
 
     @is_main_resource.setter
     def is_main_resource(self, is_main_resource):
-        """Sets the is_main_resource of this JobResourceInfo.
+        r"""Sets the is_main_resource of this JobResourceInfo.
 
         该resourceId是否是主资源（仅开通场景使用，其他场景为空）。 * `1` - 是 * `0` - 否
 
@@ -361,7 +361,7 @@ class JobResourceInfo:
 
     @property
     def main_resources(self):
-        """Gets the main_resources of this JobResourceInfo.
+        r"""Gets the main_resources of this JobResourceInfo.
 
         resourceId的主资源。  是挂载到/绑定到/依附到/包含于/关联到资源，比如IP的主资源‘云主机’、数据盘的主资源‘云主机’。  如果resourceId是依附在多个资源上，则有多个主资源，比如共享盘挂载到多个云主机上。  无关联主资源，则空，比如独立未挂载的数据盘。
 
@@ -372,7 +372,7 @@ class JobResourceInfo:
 
     @main_resources.setter
     def main_resources(self, main_resources):
-        """Sets the main_resources of this JobResourceInfo.
+        r"""Sets the main_resources of this JobResourceInfo.
 
         resourceId的主资源。  是挂载到/绑定到/依附到/包含于/关联到资源，比如IP的主资源‘云主机’、数据盘的主资源‘云主机’。  如果resourceId是依附在多个资源上，则有多个主资源，比如共享盘挂载到多个云主机上。  无关联主资源，则空，比如独立未挂载的数据盘。
 
@@ -383,7 +383,7 @@ class JobResourceInfo:
 
     @property
     def extend_params(self):
-        """Gets the extend_params of this JobResourceInfo.
+        r"""Gets the extend_params of this JobResourceInfo.
 
         expireTime：到期时间，域名注册服务使用。  UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ（2016-06-28T00:00:00Z）。
 
@@ -394,7 +394,7 @@ class JobResourceInfo:
 
     @extend_params.setter
     def extend_params(self, extend_params):
-        """Sets the extend_params of this JobResourceInfo.
+        r"""Sets the extend_params of this JobResourceInfo.
 
         expireTime：到期时间，域名注册服务使用。  UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ（2016-06-28T00:00:00Z）。
 
@@ -405,7 +405,7 @@ class JobResourceInfo:
 
     @property
     def old_resource_id(self):
-        """Gets the old_resource_id of this JobResourceInfo.
+        r"""Gets the old_resource_id of this JobResourceInfo.
 
         仅针对ECS/BMS云服务的“切换操作系统”场景使用。 云主机切换操作系统的资源id会变化场景。 填写变更前老的资源Id。资源Id未变化，无此字段。
 
@@ -416,7 +416,7 @@ class JobResourceInfo:
 
     @old_resource_id.setter
     def old_resource_id(self, old_resource_id):
-        """Sets the old_resource_id of this JobResourceInfo.
+        r"""Sets the old_resource_id of this JobResourceInfo.
 
         仅针对ECS/BMS云服务的“切换操作系统”场景使用。 云主机切换操作系统的资源id会变化场景。 填写变更前老的资源Id。资源Id未变化，无此字段。
 
@@ -427,7 +427,7 @@ class JobResourceInfo:
 
     @property
     def old_cloud_service_type(self):
-        """Gets the old_cloud_service_type of this JobResourceInfo.
+        r"""Gets the old_cloud_service_type of this JobResourceInfo.
 
         仅针对ECS/BMS云服务的“切换操作系统”场景使用：云主机切换操作系统的云服务类型编码会变化场景。 填写变更前老的云服务类型编码。云服务类型未变化，无此字段。
 
@@ -438,7 +438,7 @@ class JobResourceInfo:
 
     @old_cloud_service_type.setter
     def old_cloud_service_type(self, old_cloud_service_type):
-        """Sets the old_cloud_service_type of this JobResourceInfo.
+        r"""Sets the old_cloud_service_type of this JobResourceInfo.
 
         仅针对ECS/BMS云服务的“切换操作系统”场景使用：云主机切换操作系统的云服务类型编码会变化场景。 填写变更前老的云服务类型编码。云服务类型未变化，无此字段。
 
@@ -449,7 +449,7 @@ class JobResourceInfo:
 
     @property
     def old_resource_type(self):
-        """Gets the old_resource_type of this JobResourceInfo.
+        r"""Gets the old_resource_type of this JobResourceInfo.
 
         仅针对ECS/BMS云服务“切换操作系统”场景使用。 云主机切换操作系统的资源类型编码会变化场景。 填写变更前老的资源类型编码。资源类型未变化，无此字段。
 
@@ -460,7 +460,7 @@ class JobResourceInfo:
 
     @old_resource_type.setter
     def old_resource_type(self, old_resource_type):
-        """Sets the old_resource_type of this JobResourceInfo.
+        r"""Sets the old_resource_type of this JobResourceInfo.
 
         仅针对ECS/BMS云服务“切换操作系统”场景使用。 云主机切换操作系统的资源类型编码会变化场景。 填写变更前老的资源类型编码。资源类型未变化，无此字段。
 

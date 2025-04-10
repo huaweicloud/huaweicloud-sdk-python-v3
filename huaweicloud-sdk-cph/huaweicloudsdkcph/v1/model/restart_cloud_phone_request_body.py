@@ -27,7 +27,7 @@ class RestartCloudPhoneRequestBody:
     }
 
     def __init__(self, image_id=None, phones=None):
-        """RestartCloudPhoneRequestBody
+        r"""RestartCloudPhoneRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RestartCloudPhoneRequestBody:
 
     @property
     def image_id(self):
-        """Gets the image_id of this RestartCloudPhoneRequestBody.
+        r"""Gets the image_id of this RestartCloudPhoneRequestBody.
 
         云手机镜像。
 
@@ -60,7 +60,7 @@ class RestartCloudPhoneRequestBody:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this RestartCloudPhoneRequestBody.
+        r"""Sets the image_id of this RestartCloudPhoneRequestBody.
 
         云手机镜像。
 
@@ -71,7 +71,7 @@ class RestartCloudPhoneRequestBody:
 
     @property
     def phones(self):
-        """Gets the phones of this RestartCloudPhoneRequestBody.
+        r"""Gets the phones of this RestartCloudPhoneRequestBody.
 
         云手机列表。
 
@@ -82,7 +82,7 @@ class RestartCloudPhoneRequestBody:
 
     @phones.setter
     def phones(self, phones):
-        """Sets the phones of this RestartCloudPhoneRequestBody.
+        r"""Sets the phones of this RestartCloudPhoneRequestBody.
 
         云手机列表。
 

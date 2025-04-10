@@ -27,7 +27,7 @@ class RemoveFirewallRulesRequest:
     }
 
     def __init__(self, firewall_id=None, body=None):
-        """RemoveFirewallRulesRequest
+        r"""RemoveFirewallRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RemoveFirewallRulesRequest:
 
     @property
     def firewall_id(self):
-        """Gets the firewall_id of this RemoveFirewallRulesRequest.
+        r"""Gets the firewall_id of this RemoveFirewallRulesRequest.
 
         网络ACL唯一标识
 
@@ -60,7 +60,7 @@ class RemoveFirewallRulesRequest:
 
     @firewall_id.setter
     def firewall_id(self, firewall_id):
-        """Sets the firewall_id of this RemoveFirewallRulesRequest.
+        r"""Sets the firewall_id of this RemoveFirewallRulesRequest.
 
         网络ACL唯一标识
 
@@ -71,7 +71,7 @@ class RemoveFirewallRulesRequest:
 
     @property
     def body(self):
-        """Gets the body of this RemoveFirewallRulesRequest.
+        r"""Gets the body of this RemoveFirewallRulesRequest.
 
         :return: The body of this RemoveFirewallRulesRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.RemoveFirewallRulesRequestBody`
@@ -80,7 +80,7 @@ class RemoveFirewallRulesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RemoveFirewallRulesRequest.
+        r"""Sets the body of this RemoveFirewallRulesRequest.
 
         :param body: The body of this RemoveFirewallRulesRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.RemoveFirewallRulesRequestBody`

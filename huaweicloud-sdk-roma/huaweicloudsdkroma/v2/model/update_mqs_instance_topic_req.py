@@ -25,7 +25,7 @@ class UpdateMqsInstanceTopicReq:
     }
 
     def __init__(self, topics=None):
-        """UpdateMqsInstanceTopicReq
+        r"""UpdateMqsInstanceTopicReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateMqsInstanceTopicReq:
 
     @property
     def topics(self):
-        """Gets the topics of this UpdateMqsInstanceTopicReq.
+        r"""Gets the topics of this UpdateMqsInstanceTopicReq.
 
         Topic列表。
 
@@ -53,7 +53,7 @@ class UpdateMqsInstanceTopicReq:
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this UpdateMqsInstanceTopicReq.
+        r"""Sets the topics of this UpdateMqsInstanceTopicReq.
 
         Topic列表。
 

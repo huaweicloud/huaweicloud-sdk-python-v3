@@ -25,7 +25,7 @@ class HealthCheckConfigurationTcpSocket:
     }
 
     def __init__(self, port=None):
-        """HealthCheckConfigurationTcpSocket
+        r"""HealthCheckConfigurationTcpSocket
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class HealthCheckConfigurationTcpSocket:
 
     @property
     def port(self):
-        """Gets the port of this HealthCheckConfigurationTcpSocket.
+        r"""Gets the port of this HealthCheckConfigurationTcpSocket.
 
         端口。
 
@@ -54,7 +54,7 @@ class HealthCheckConfigurationTcpSocket:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this HealthCheckConfigurationTcpSocket.
+        r"""Sets the port of this HealthCheckConfigurationTcpSocket.
 
         端口。
 

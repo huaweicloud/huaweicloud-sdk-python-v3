@@ -27,7 +27,7 @@ class V2UserData:
     }
 
     def __init__(self, value=None, time=None):
-        """V2UserData
+        r"""V2UserData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class V2UserData:
 
     @property
     def value(self):
-        """Gets the value of this V2UserData.
+        r"""Gets the value of this V2UserData.
 
         采样点观众数。
 
@@ -61,7 +61,7 @@ class V2UserData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this V2UserData.
+        r"""Sets the value of this V2UserData.
 
         采样点观众数。
 
@@ -72,7 +72,7 @@ class V2UserData:
 
     @property
     def time(self):
-        """Gets the time of this V2UserData.
+        r"""Gets the time of this V2UserData.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -83,7 +83,7 @@ class V2UserData:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this V2UserData.
+        r"""Sets the time of this V2UserData.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 

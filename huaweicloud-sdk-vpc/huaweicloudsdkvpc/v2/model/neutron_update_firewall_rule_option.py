@@ -43,7 +43,7 @@ class NeutronUpdateFirewallRuleOption:
     }
 
     def __init__(self, action=None, description=None, destination_ip_address=None, destination_port=None, enabled=None, ip_version=None, name=None, protocol=None, source_ip_address=None, source_port=None):
-        """NeutronUpdateFirewallRuleOption
+        r"""NeutronUpdateFirewallRuleOption
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @property
     def action(self):
-        """Gets the action of this NeutronUpdateFirewallRuleOption.
+        r"""Gets the action of this NeutronUpdateFirewallRuleOption.
 
         对通过网络ACL防火墙的流量执行的操作。
 
@@ -117,7 +117,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this NeutronUpdateFirewallRuleOption.
+        r"""Sets the action of this NeutronUpdateFirewallRuleOption.
 
         对通过网络ACL防火墙的流量执行的操作。
 
@@ -128,7 +128,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @property
     def description(self):
-        """Gets the description of this NeutronUpdateFirewallRuleOption.
+        r"""Gets the description of this NeutronUpdateFirewallRuleOption.
 
         网络ACL防火墙规则描述。
 
@@ -139,7 +139,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronUpdateFirewallRuleOption.
+        r"""Sets the description of this NeutronUpdateFirewallRuleOption.
 
         网络ACL防火墙规则描述。
 
@@ -150,7 +150,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @property
     def destination_ip_address(self):
-        """Gets the destination_ip_address of this NeutronUpdateFirewallRuleOption.
+        r"""Gets the destination_ip_address of this NeutronUpdateFirewallRuleOption.
 
         目的地址或者CIDR。
 
@@ -161,7 +161,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @destination_ip_address.setter
     def destination_ip_address(self, destination_ip_address):
-        """Sets the destination_ip_address of this NeutronUpdateFirewallRuleOption.
+        r"""Sets the destination_ip_address of this NeutronUpdateFirewallRuleOption.
 
         目的地址或者CIDR。
 
@@ -172,7 +172,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @property
     def destination_port(self):
-        """Gets the destination_port of this NeutronUpdateFirewallRuleOption.
+        r"""Gets the destination_port of this NeutronUpdateFirewallRuleOption.
 
         目的端口号或者一段端口范围。
 
@@ -183,7 +183,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @destination_port.setter
     def destination_port(self, destination_port):
-        """Sets the destination_port of this NeutronUpdateFirewallRuleOption.
+        r"""Sets the destination_port of this NeutronUpdateFirewallRuleOption.
 
         目的端口号或者一段端口范围。
 
@@ -194,7 +194,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @property
     def enabled(self):
-        """Gets the enabled of this NeutronUpdateFirewallRuleOption.
+        r"""Gets the enabled of this NeutronUpdateFirewallRuleOption.
 
         是否使能网络ACL防火墙规则。
 
@@ -205,7 +205,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this NeutronUpdateFirewallRuleOption.
+        r"""Sets the enabled of this NeutronUpdateFirewallRuleOption.
 
         是否使能网络ACL防火墙规则。
 
@@ -216,7 +216,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this NeutronUpdateFirewallRuleOption.
+        r"""Gets the ip_version of this NeutronUpdateFirewallRuleOption.
 
         IP协议版本。
 
@@ -227,7 +227,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this NeutronUpdateFirewallRuleOption.
+        r"""Sets the ip_version of this NeutronUpdateFirewallRuleOption.
 
         IP协议版本。
 
@@ -238,7 +238,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @property
     def name(self):
-        """Gets the name of this NeutronUpdateFirewallRuleOption.
+        r"""Gets the name of this NeutronUpdateFirewallRuleOption.
 
         网络ACL防火墙规则名称。
 
@@ -249,7 +249,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronUpdateFirewallRuleOption.
+        r"""Sets the name of this NeutronUpdateFirewallRuleOption.
 
         网络ACL防火墙规则名称。
 
@@ -260,7 +260,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @property
     def protocol(self):
-        """Gets the protocol of this NeutronUpdateFirewallRuleOption.
+        r"""Gets the protocol of this NeutronUpdateFirewallRuleOption.
 
         IP协议，支持TCP,UDP,ICMP, ICMPV6或者IP协议号（0-255）
 
@@ -271,7 +271,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this NeutronUpdateFirewallRuleOption.
+        r"""Sets the protocol of this NeutronUpdateFirewallRuleOption.
 
         IP协议，支持TCP,UDP,ICMP, ICMPV6或者IP协议号（0-255）
 
@@ -282,7 +282,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @property
     def source_ip_address(self):
-        """Gets the source_ip_address of this NeutronUpdateFirewallRuleOption.
+        r"""Gets the source_ip_address of this NeutronUpdateFirewallRuleOption.
 
         源地址或者CIDR。
 
@@ -293,7 +293,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @source_ip_address.setter
     def source_ip_address(self, source_ip_address):
-        """Sets the source_ip_address of this NeutronUpdateFirewallRuleOption.
+        r"""Sets the source_ip_address of this NeutronUpdateFirewallRuleOption.
 
         源地址或者CIDR。
 
@@ -304,7 +304,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @property
     def source_port(self):
-        """Gets the source_port of this NeutronUpdateFirewallRuleOption.
+        r"""Gets the source_port of this NeutronUpdateFirewallRuleOption.
 
         源端口号或者一段端口范围。
 
@@ -315,7 +315,7 @@ class NeutronUpdateFirewallRuleOption:
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this NeutronUpdateFirewallRuleOption.
+        r"""Sets the source_port of this NeutronUpdateFirewallRuleOption.
 
         源端口号或者一段端口范围。
 

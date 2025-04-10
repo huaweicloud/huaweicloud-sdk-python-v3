@@ -27,7 +27,7 @@ class OCRTextDetail:
     }
 
     def __init__(self, segment=None, glossary_name=None):
-        """OCRTextDetail
+        r"""OCRTextDetail
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OCRTextDetail:
 
     @property
     def segment(self):
-        """Gets the segment of this OCRTextDetail.
+        r"""Gets the segment of this OCRTextDetail.
 
         命中的风险片段
 
@@ -61,7 +61,7 @@ class OCRTextDetail:
 
     @segment.setter
     def segment(self, segment):
-        """Sets the segment of this OCRTextDetail.
+        r"""Sets the segment of this OCRTextDetail.
 
         命中的风险片段
 
@@ -72,7 +72,7 @@ class OCRTextDetail:
 
     @property
     def glossary_name(self):
-        """Gets the glossary_name of this OCRTextDetail.
+        r"""Gets the glossary_name of this OCRTextDetail.
 
         命中的自定义词库名称。 命中自定义词库时，才会返回当前字段。
 
@@ -83,7 +83,7 @@ class OCRTextDetail:
 
     @glossary_name.setter
     def glossary_name(self, glossary_name):
-        """Sets the glossary_name of this OCRTextDetail.
+        r"""Sets the glossary_name of this OCRTextDetail.
 
         命中的自定义词库名称。 命中自定义词库时，才会返回当前字段。
 

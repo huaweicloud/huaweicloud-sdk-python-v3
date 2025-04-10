@@ -28,7 +28,7 @@ class ListAllVersionByVersionIdResponse(SdkResponse):
     }
 
     def __init__(self, elements=None, total_elements=None):
-        """ListAllVersionByVersionIdResponse
+        r"""ListAllVersionByVersionIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAllVersionByVersionIdResponse(SdkResponse):
 
     @property
     def elements(self):
-        """Gets the elements of this ListAllVersionByVersionIdResponse.
+        r"""Gets the elements of this ListAllVersionByVersionIdResponse.
 
         查询结果集合。
 
@@ -62,7 +62,7 @@ class ListAllVersionByVersionIdResponse(SdkResponse):
 
     @elements.setter
     def elements(self, elements):
-        """Sets the elements of this ListAllVersionByVersionIdResponse.
+        r"""Sets the elements of this ListAllVersionByVersionIdResponse.
 
         查询结果集合。
 
@@ -73,7 +73,7 @@ class ListAllVersionByVersionIdResponse(SdkResponse):
 
     @property
     def total_elements(self):
-        """Gets the total_elements of this ListAllVersionByVersionIdResponse.
+        r"""Gets the total_elements of this ListAllVersionByVersionIdResponse.
 
         查询到的结果数量。
 
@@ -84,7 +84,7 @@ class ListAllVersionByVersionIdResponse(SdkResponse):
 
     @total_elements.setter
     def total_elements(self, total_elements):
-        """Sets the total_elements of this ListAllVersionByVersionIdResponse.
+        r"""Sets the total_elements of this ListAllVersionByVersionIdResponse.
 
         查询到的结果数量。
 

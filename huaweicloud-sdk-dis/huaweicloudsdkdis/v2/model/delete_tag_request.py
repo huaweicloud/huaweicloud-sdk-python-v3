@@ -27,7 +27,7 @@ class DeleteTagRequest:
     }
 
     def __init__(self, stream_id=None, key=None):
-        """DeleteTagRequest
+        r"""DeleteTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteTagRequest:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this DeleteTagRequest.
+        r"""Gets the stream_id of this DeleteTagRequest.
 
         通道ID。
 
@@ -59,7 +59,7 @@ class DeleteTagRequest:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this DeleteTagRequest.
+        r"""Sets the stream_id of this DeleteTagRequest.
 
         通道ID。
 
@@ -70,7 +70,7 @@ class DeleteTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteTagRequest.
+        r"""Gets the key of this DeleteTagRequest.
 
         标签键。
 
@@ -81,7 +81,7 @@ class DeleteTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteTagRequest.
+        r"""Sets the key of this DeleteTagRequest.
 
         标签键。
 

@@ -28,7 +28,7 @@ class ListRestoreTimeResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, restorable_time_periods=None):
-        """ListRestoreTimeResponse
+        r"""ListRestoreTimeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRestoreTimeResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListRestoreTimeResponse.
+        r"""Gets the total_count of this ListRestoreTimeResponse.
 
         实例可恢复时间段总数
 
@@ -62,7 +62,7 @@ class ListRestoreTimeResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListRestoreTimeResponse.
+        r"""Sets the total_count of this ListRestoreTimeResponse.
 
         实例可恢复时间段总数
 
@@ -73,7 +73,7 @@ class ListRestoreTimeResponse(SdkResponse):
 
     @property
     def restorable_time_periods(self):
-        """Gets the restorable_time_periods of this ListRestoreTimeResponse.
+        r"""Gets the restorable_time_periods of this ListRestoreTimeResponse.
 
         实例可恢复的时间段
 
@@ -84,7 +84,7 @@ class ListRestoreTimeResponse(SdkResponse):
 
     @restorable_time_periods.setter
     def restorable_time_periods(self, restorable_time_periods):
-        """Sets the restorable_time_periods of this ListRestoreTimeResponse.
+        r"""Sets the restorable_time_periods of this ListRestoreTimeResponse.
 
         实例可恢复的时间段
 

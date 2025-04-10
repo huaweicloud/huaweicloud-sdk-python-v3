@@ -31,7 +31,7 @@ class ListQueuesRequest:
     }
 
     def __init__(self, queue_type=None, tags=None, with_charge_info=None, with_priv=None):
-        """ListQueuesRequest
+        r"""ListQueuesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListQueuesRequest:
 
     @property
     def queue_type(self):
-        """Gets the queue_type of this ListQueuesRequest.
+        r"""Gets the queue_type of this ListQueuesRequest.
 
         队列的类型,。有如下三种类型： sql general all 如果不指定，默认为sql。
 
@@ -75,7 +75,7 @@ class ListQueuesRequest:
 
     @queue_type.setter
     def queue_type(self, queue_type):
-        """Sets the queue_type of this ListQueuesRequest.
+        r"""Sets the queue_type of this ListQueuesRequest.
 
         队列的类型,。有如下三种类型： sql general all 如果不指定，默认为sql。
 
@@ -86,7 +86,7 @@ class ListQueuesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListQueuesRequest.
+        r"""Gets the tags of this ListQueuesRequest.
 
         查询根据标签进行过滤
 
@@ -97,7 +97,7 @@ class ListQueuesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListQueuesRequest.
+        r"""Sets the tags of this ListQueuesRequest.
 
         查询根据标签进行过滤
 
@@ -108,7 +108,7 @@ class ListQueuesRequest:
 
     @property
     def with_charge_info(self):
-        """Gets the with_charge_info of this ListQueuesRequest.
+        r"""Gets the with_charge_info of this ListQueuesRequest.
 
         是否返回收费信息
 
@@ -119,7 +119,7 @@ class ListQueuesRequest:
 
     @with_charge_info.setter
     def with_charge_info(self, with_charge_info):
-        """Sets the with_charge_info of this ListQueuesRequest.
+        r"""Sets the with_charge_info of this ListQueuesRequest.
 
         是否返回收费信息
 
@@ -130,7 +130,7 @@ class ListQueuesRequest:
 
     @property
     def with_priv(self):
-        """Gets the with_priv of this ListQueuesRequest.
+        r"""Gets the with_priv of this ListQueuesRequest.
 
         是否返回权限信息。
 
@@ -141,7 +141,7 @@ class ListQueuesRequest:
 
     @with_priv.setter
     def with_priv(self, with_priv):
-        """Sets the with_priv of this ListQueuesRequest.
+        r"""Sets the with_priv of this ListQueuesRequest.
 
         是否返回权限信息。
 

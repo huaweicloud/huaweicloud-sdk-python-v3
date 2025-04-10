@@ -31,7 +31,7 @@ class ListElasticResourcePoolQueuesRequest:
     }
 
     def __init__(self, elastic_resource_pool_name=None, limit=None, offset=None, queue_name=None):
-        """ListElasticResourcePoolQueuesRequest
+        r"""ListElasticResourcePoolQueuesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListElasticResourcePoolQueuesRequest:
 
     @property
     def elastic_resource_pool_name(self):
-        """Gets the elastic_resource_pool_name of this ListElasticResourcePoolQueuesRequest.
+        r"""Gets the elastic_resource_pool_name of this ListElasticResourcePoolQueuesRequest.
 
         弹性资源池名称
 
@@ -74,7 +74,7 @@ class ListElasticResourcePoolQueuesRequest:
 
     @elastic_resource_pool_name.setter
     def elastic_resource_pool_name(self, elastic_resource_pool_name):
-        """Sets the elastic_resource_pool_name of this ListElasticResourcePoolQueuesRequest.
+        r"""Sets the elastic_resource_pool_name of this ListElasticResourcePoolQueuesRequest.
 
         弹性资源池名称
 
@@ -85,7 +85,7 @@ class ListElasticResourcePoolQueuesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListElasticResourcePoolQueuesRequest.
+        r"""Gets the limit of this ListElasticResourcePoolQueuesRequest.
 
         默认为100
 
@@ -96,7 +96,7 @@ class ListElasticResourcePoolQueuesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListElasticResourcePoolQueuesRequest.
+        r"""Sets the limit of this ListElasticResourcePoolQueuesRequest.
 
         默认为100
 
@@ -107,7 +107,7 @@ class ListElasticResourcePoolQueuesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListElasticResourcePoolQueuesRequest.
+        r"""Gets the offset of this ListElasticResourcePoolQueuesRequest.
 
         默认为0
 
@@ -118,7 +118,7 @@ class ListElasticResourcePoolQueuesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListElasticResourcePoolQueuesRequest.
+        r"""Sets the offset of this ListElasticResourcePoolQueuesRequest.
 
         默认为0
 
@@ -129,7 +129,7 @@ class ListElasticResourcePoolQueuesRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ListElasticResourcePoolQueuesRequest.
+        r"""Gets the queue_name of this ListElasticResourcePoolQueuesRequest.
 
         可以根据queueName进行过滤
 
@@ -140,7 +140,7 @@ class ListElasticResourcePoolQueuesRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ListElasticResourcePoolQueuesRequest.
+        r"""Sets the queue_name of this ListElasticResourcePoolQueuesRequest.
 
         可以根据queueName进行过滤
 

@@ -27,7 +27,7 @@ class DeleteDbUserRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """DeleteDbUserRequest
+        r"""DeleteDbUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteDbUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteDbUserRequest.
+        r"""Gets the instance_id of this DeleteDbUserRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class DeleteDbUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteDbUserRequest.
+        r"""Sets the instance_id of this DeleteDbUserRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class DeleteDbUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteDbUserRequest.
+        r"""Gets the body of this DeleteDbUserRequest.
 
         :return: The body of this DeleteDbUserRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RedisDeleteDbUserRequest`
@@ -80,7 +80,7 @@ class DeleteDbUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDbUserRequest.
+        r"""Sets the body of this DeleteDbUserRequest.
 
         :param body: The body of this DeleteDbUserRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.RedisDeleteDbUserRequest`

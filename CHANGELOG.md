@@ -1,3 +1,360 @@
+# 3.1.143 2025-04-10
+
+### HuaweiCloud SDK CodeArtsArtifact
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ShowUserPrivileges`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CloudPond
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateEdgeSite**
+    - changes of request param
+      - `+ edge_site.project_id`
+  - **ListRacks**
+    - changes of response param
+      - `+ racks.market_options.strategies`
+  - **ShowRack**
+    - changes of response param
+      - `+ rack.market_options.strategies`
+  - **ListStoragePools**
+    - changes of response param
+      - `+ storage_pools.market_options.strategies`
+  - **ShowStoragePool**
+    - changes of response param
+      - `+ storage_pool.market_options.strategies`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListSecurityMemberTablePermission`
+    - `ListSecurityMemberPermission`
+    - `UpdateSecurityMemberPermissionExpireTime`
+    - `ListSecurityUserTablePermission`
+    - `BatchApproveSecurityApplications`
+    - `BatchRejectSecurityApplications`
+    - `ListSecurityTableApprovers`
+    - `ApplySecurityTableAuthority`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ResetParamGroupTemplate**
+    - changes of request param
+      - `- x-auth-token`
+  - **OfflineNodes**
+    - changes of request param
+      - `- x-auth-token`
+  - **ShowRedisBigKeys**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListConfigurations**
+    - changes of request param
+      - `+ datastore_name`
+      - `+ mode`
+  - **CreateConfiguration**
+    - changes of response param
+      - `+ configuration.mode`
+  - **ListConfigurationTemplates**
+    - changes of request param
+      - `+ datastore_name`
+      - `+ mode`
+  - **ShowConfigurationDetail**
+    - changes of response param
+      - `+ mode`
+  - **ListNosqlTaskList**
+    - changes of response param
+      - `* total_count: int32 -> string`
+      - `- schedules.job_id`
+      - `- schedules.job_name`
+      - `- schedules.job_status`
+      - `- schedules.instance_id`
+      - `- schedules.instance_name`
+      - `- schedules.instance_status`
+      - `- schedules.datastore_type`
+      - `- schedules.create_time`
+      - `- schedules.start_time`
+      - `- schedules.end_time`
+  - **CreateInstance**
+    - changes of request param
+      - `+ ipv6_enabled`
+      - `+ lb_access_control_settings`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListDisasterRecoveryRecord`
+    - `ResetDrConfig`
+    - `ShowCrossCloudDisasterInstanceMonitor`
+    - `CreateCrossCloudConstructDisaster`
+    - `ShowCrossCloudDisasterRelations`
+    - `ExecuteCrossCloudDisasterRecoveryFailover`
+    - `ExecuteCrossCloudReleaseDisaster`
+    - `ExecuteCrossCloudDisasterSwitchover`
+    - `ExecuteCrossCloudDisasterRestore`
+    - `ExecuteCrossCloudDisasterStartSimulation`
+    - `ExecuteCrossCloudDisasterEndSimulation`
+    - `ExecuteCrossCloudDisasterDataCacheStart`
+    - `ExecuteCrossCloudDisasterDataCacheEnd`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ListOperationLogsByVaultName`
+    - `ListBackupVaults`
+    - `ListRansomwareProtectionNodes`
+    - `ShowSingleBackupPolicyInfo`
+    - `ListPolicies`
+    - `ShowRaspServerDetail`
+    - `ShowRaspProtectStatistics`
+    - `ListRaspEvents`
+    - `ShowAppRaspSwitchStatus`
+    - `ListProtectionServers`
+    - `ListRaspPolicies`
+    - `ListCheckFeatureRule`
+    - `ShowRaspPolicyDetail`
+    - `SetTwoFactorLoginConfig`
+    - `ListTwoFactorLoginHost`
+    - `ListLoginCommonLocation`
+    - `ListLoginCommonIp`
+    - `ListLoginWhiteIp`
+    - `ListLoginWhiteList`
+    - `AddLoginWhiteList`
+    - `RemoveLoginWhiteList`
+    - `ListSystemUserWhiteList`
+    - `UpdateSystemUserWhiteList`
+    - `AddSystemUserWhiteList`
+    - `RemoveSystemUserWhiteList`
+    - `ListAntiVirusResult`
+    - `ExportAntiVirusResult`
+    - `HandleAntiVirusResult`
+    - `ListAntiVirusHost`
+    - `ListAntiVirusTask`
+    - `CreateAntiVirusTask`
+    - `ListAntiVirusPolicy`
+    - `ChangeAntivirusPolicy`
+    - `CreateAntiVirusPolicy`
+    - `ShowAntivirusStatistic`
+    - `ListAntivirusHandleHistory`
+    - `DeleteAntivirusPolicy`
+    - `ShowDecoyPortPolicyDetails`
+    - `ModifyDecoyPortPolicy`
+    - `DeleteDecoyPortPolicy`
+    - `CreateDecoyPortPolicy`
+    - `ListDecoyPortPolicy`
+    - `SwitchDecoyPortHostPolicy`
+    - `DeleteDecoyPortHostPolicy`
+    - `ListVulHandleHistory`
+    - `ListEventHandleHistory`
+    - `AddProtectionPolicy`
+    - `DeleteProtectionPolicy`
+    - `RemoveAlarmWhiteList`
+    - `DeleteIsolatedFile`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ExportVuls**
+    - changes of request param
+      - `+ vul_id_list`
+      - `+ host_id_list`
+  - **ListPortStatistics**
+    - changes of request param
+      - `+ status`
+  - **ListPorts**
+    - changes of request param
+      - `+ status`
+  - **ListProtectionServer**
+    - changes of response param
+      - `+ data_list.project_id`
+      - `+ data_list.enterprise_project_id`
+  - **ListPasswordComplexity**
+    - changes of request param
+      - `+ result_type`
+  - **ListContainerNodes**
+    - changes of response param
+      - `+ data_list.protect_degradation`
+      - `+ data_list.degradation_reason`
+  - **ListHostStatus**
+    - changes of request param
+      - `+ vpc_id`
+      - `+ has_vul`
+      - `+ has_baseline`
+      - `+ sort_key`
+      - `+ sort_dir`
+      - `+ get_common_login_locations`
+      - `+ install_mode`
+      - `+ binding_key`
+      - `+ protect_interrupt`
+      - `+ incluster`
+      - `+ protect_degradation`
+    - changes of response param
+      - `+ data_list.os_name`
+      - `+ data_list.os_version`
+      - `+ data_list.kernel_version`
+      - `+ data_list.protect_degradation`
+      - `+ data_list.host_sources`
+      - `+ data_list.interrupt_reason`
+      - `+ data_list.degradation_reason`
+      - `+ data_list.key_name`
+      - `+ data_list.auto_open_version`
+      - `+ data_list.install_progress`
+      - `+ data_list.vpc_id`
+      - `+ data_list.common_login_area_codes`
+      - `+ data_list.cluster_name`
+      - `+ data_list.cluster_id`
+  - **ListImageLocal**
+    - changes of response param
+      - `+ data_list.non_scan_reason`
+  - **ListImageRiskConfigs**
+    - changes of request param
+      - `+ image_id`
+  - **ListImageRiskConfigRules**
+    - changes of request param
+      - `+ image_id`
+  - **ShowImageCheckRuleDetail**
+    - changes of request param
+      - `+ image_id`
+  - **ListVulScanTask**
+    - changes of response param
+      - `+ data_list.estimated_time`
+  - **ListVulScanTaskHost**
+    - changes of response param
+      - `+ data_list.vul_scan_details`
+  - **ListWtpProtectHost**
+    - changes of request param
+      - `+ wtp_status`
+    - changes of response param
+      - `+ data_list.asset_value`
+      - `+ data_list.os_name`
+      - `+ data_list.os_version`
+      - `+ data_list.host_status`
+      - `+ data_list.protect_dir_num`
+      - `+ data_list.remote_backbup_info`
+  - **UpdateProtectionPolicy**
+    - changes of request param
+      - `+ ai_protection_status`
+  - **ListWeakPasswordUsers**
+    - changes of response param
+      - `+ data_list.update_time`
+      - `+ data_list.weak_pwd_accounts.desensitized_weak_passwords`
+      - `+ data_list.weak_pwd_accounts.suggestion`
+  - **ChangeCheckRuleAction**
+    - changes of request param
+      - `+ check_cce`
+  - **ListAlarmWhiteList**
+    - changes of response param
+      - `+ remain_num`
+      - `+ limit_num`
+  - **ListPolicyGroup**
+    - changes of request param
+      - `+ group_id`
+  - **ListSecurityEvents**
+    - changes of request param
+      - `+ auto_block`
+  - **ListIsolatedFile**
+    - changes of request param
+      - `+ isolation_status`
+      - `+ last_days`
+      - `+ begin_time`
+      - `+ end_time`
+    - changes of response param
+      - `+ data_list.agent_event_info.recent_time`
+      - `+ data_list.agent_event_info.memo`
+      - `+ data_list.agent_event_info.operate_accept_list`
+      - `+ data_list.agent_event_info.operate_detail_list`
+      - `+ data_list.agent_event_info.forensic_info`
+      - `+ data_list.agent_event_info.resource_info`
+      - `+ data_list.agent_event_info.geo_info`
+      - `+ data_list.agent_event_info.network_info`
+      - `+ data_list.agent_event_info.app_info`
+      - `+ data_list.agent_event_info.system_info`
+      - `+ data_list.agent_event_info.malware_info`
+      - `+ data_list.agent_event_info.extend_info`
+      - `+ data_list.agent_event_info.att_ck`
+      - `+ data_list.agent_event_info.event_details`
+      - `+ data_list.agent_event_info.confidence`
+      - `+ data_list.agent_event_info.process_info_list`
+      - `+ data_list.agent_event_info.user_info_list`
+      - `+ data_list.agent_event_info.file_info_list`
+      - `+ data_list.agent_event_info.registry_info_list`
+      - `+ data_list.agent_event_info.cluster_info`
+      - `+ data_list.agent_event_info.tag_list`
+      - `+ data_list.agent_event_info.cluster_id`
+
+### HuaweiCloud SDK IAM
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainConsoleAclPolicy**
+    - changes of response param
+      - `+ console_acl_policy.allow_address_netmasks_ipv6`
+      - `+ console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<AclPolicyResult> -> object<ConsoleAclPolicyResult>`
+  - **UpdateDomainConsoleAclPolicy**
+    - changes of request param
+      - `+ console_acl_policy.allow_address_netmasks_ipv6`
+      - `+ console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<AclPolicyOption> -> object<ConsoleAclPolicyOption>`
+    - changes of response param
+      - `+ console_acl_policy.allow_address_netmasks_ipv6`
+      - `+ console_acl_policy.allow_ip_ranges_ipv6`
+      - `* console_acl_policy: object<AclPolicyResult> -> object<ConsoleAclPolicyResult>`
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPremiumHost**
+    - changes of response param
+      - `+ items.pool_ids`
+      - `+ items.loadbalancer_id`
+      - `+ items.protocol_port`
+
 # 3.1.142 2025-04-03
 
 ### HuaweiCloud SDK Core

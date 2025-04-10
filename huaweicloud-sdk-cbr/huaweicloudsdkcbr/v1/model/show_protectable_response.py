@@ -26,7 +26,7 @@ class ShowProtectableResponse(SdkResponse):
     }
 
     def __init__(self, instance=None):
-        """ShowProtectableResponse
+        r"""ShowProtectableResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowProtectableResponse(SdkResponse):
 
     @property
     def instance(self):
-        """Gets the instance of this ShowProtectableResponse.
+        r"""Gets the instance of this ShowProtectableResponse.
 
         :return: The instance of this ShowProtectableResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.ProtectablesResp`
@@ -53,7 +53,7 @@ class ShowProtectableResponse(SdkResponse):
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ShowProtectableResponse.
+        r"""Sets the instance of this ShowProtectableResponse.
 
         :param instance: The instance of this ShowProtectableResponse.
         :type instance: :class:`huaweicloudsdkcbr.v1.ProtectablesResp`

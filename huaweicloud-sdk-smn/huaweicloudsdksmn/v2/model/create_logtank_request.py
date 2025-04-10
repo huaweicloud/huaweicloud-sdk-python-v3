@@ -27,7 +27,7 @@ class CreateLogtankRequest:
     }
 
     def __init__(self, topic_urn=None, body=None):
-        """CreateLogtankRequest
+        r"""CreateLogtankRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateLogtankRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this CreateLogtankRequest.
+        r"""Gets the topic_urn of this CreateLogtankRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -60,7 +60,7 @@ class CreateLogtankRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this CreateLogtankRequest.
+        r"""Sets the topic_urn of this CreateLogtankRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -71,7 +71,7 @@ class CreateLogtankRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLogtankRequest.
+        r"""Gets the body of this CreateLogtankRequest.
 
         :return: The body of this CreateLogtankRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.CreateLogtankRequestBody`
@@ -80,7 +80,7 @@ class CreateLogtankRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLogtankRequest.
+        r"""Sets the body of this CreateLogtankRequest.
 
         :param body: The body of this CreateLogtankRequest.
         :type body: :class:`huaweicloudsdksmn.v2.CreateLogtankRequestBody`

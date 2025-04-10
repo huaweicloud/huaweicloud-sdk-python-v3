@@ -37,11 +37,11 @@ class ListContainersRequest:
     }
 
     def __init__(self, enterprise_project_id=None, container_name=None, pod_name=None, image_name=None, cluster_container=None, limit=None, offset=None):
-        """ListContainersRequest
+        r"""ListContainersRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param container_name: 容器名称
         :type container_name: str
@@ -85,9 +85,9 @@ class ListContainersRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListContainersRequest.
+        r"""Gets the enterprise_project_id of this ListContainersRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListContainersRequest.
         :rtype: str
@@ -96,9 +96,9 @@ class ListContainersRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListContainersRequest.
+        r"""Sets the enterprise_project_id of this ListContainersRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListContainersRequest.
         :type enterprise_project_id: str
@@ -107,7 +107,7 @@ class ListContainersRequest:
 
     @property
     def container_name(self):
-        """Gets the container_name of this ListContainersRequest.
+        r"""Gets the container_name of this ListContainersRequest.
 
         容器名称
 
@@ -118,7 +118,7 @@ class ListContainersRequest:
 
     @container_name.setter
     def container_name(self, container_name):
-        """Sets the container_name of this ListContainersRequest.
+        r"""Sets the container_name of this ListContainersRequest.
 
         容器名称
 
@@ -129,7 +129,7 @@ class ListContainersRequest:
 
     @property
     def pod_name(self):
-        """Gets the pod_name of this ListContainersRequest.
+        r"""Gets the pod_name of this ListContainersRequest.
 
         所属Pod名称
 
@@ -140,7 +140,7 @@ class ListContainersRequest:
 
     @pod_name.setter
     def pod_name(self, pod_name):
-        """Sets the pod_name of this ListContainersRequest.
+        r"""Sets the pod_name of this ListContainersRequest.
 
         所属Pod名称
 
@@ -151,7 +151,7 @@ class ListContainersRequest:
 
     @property
     def image_name(self):
-        """Gets the image_name of this ListContainersRequest.
+        r"""Gets the image_name of this ListContainersRequest.
 
         镜像名称
 
@@ -162,7 +162,7 @@ class ListContainersRequest:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this ListContainersRequest.
+        r"""Sets the image_name of this ListContainersRequest.
 
         镜像名称
 
@@ -173,7 +173,7 @@ class ListContainersRequest:
 
     @property
     def cluster_container(self):
-        """Gets the cluster_container of this ListContainersRequest.
+        r"""Gets the cluster_container of this ListContainersRequest.
 
         是否是集群纳管的容器
 
@@ -184,7 +184,7 @@ class ListContainersRequest:
 
     @cluster_container.setter
     def cluster_container(self, cluster_container):
-        """Sets the cluster_container of this ListContainersRequest.
+        r"""Sets the cluster_container of this ListContainersRequest.
 
         是否是集群纳管的容器
 
@@ -195,7 +195,7 @@ class ListContainersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListContainersRequest.
+        r"""Gets the limit of this ListContainersRequest.
 
         每页显示个数
 
@@ -206,7 +206,7 @@ class ListContainersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListContainersRequest.
+        r"""Sets the limit of this ListContainersRequest.
 
         每页显示个数
 
@@ -217,7 +217,7 @@ class ListContainersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListContainersRequest.
+        r"""Gets the offset of this ListContainersRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -228,7 +228,7 @@ class ListContainersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListContainersRequest.
+        r"""Sets the offset of this ListContainersRequest.
 
         偏移量：指定返回记录的开始位置
 

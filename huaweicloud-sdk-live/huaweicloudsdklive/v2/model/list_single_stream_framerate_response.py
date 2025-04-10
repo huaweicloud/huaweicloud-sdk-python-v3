@@ -28,7 +28,7 @@ class ListSingleStreamFramerateResponse(SdkResponse):
     }
 
     def __init__(self, framerate_info_list=None, x_request_id=None):
-        """ListSingleStreamFramerateResponse
+        r"""ListSingleStreamFramerateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSingleStreamFramerateResponse(SdkResponse):
 
     @property
     def framerate_info_list(self):
-        """Gets the framerate_info_list of this ListSingleStreamFramerateResponse.
+        r"""Gets the framerate_info_list of this ListSingleStreamFramerateResponse.
 
         用量详情。 
 
@@ -62,7 +62,7 @@ class ListSingleStreamFramerateResponse(SdkResponse):
 
     @framerate_info_list.setter
     def framerate_info_list(self, framerate_info_list):
-        """Sets the framerate_info_list of this ListSingleStreamFramerateResponse.
+        r"""Sets the framerate_info_list of this ListSingleStreamFramerateResponse.
 
         用量详情。 
 
@@ -73,7 +73,7 @@ class ListSingleStreamFramerateResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListSingleStreamFramerateResponse.
+        r"""Gets the x_request_id of this ListSingleStreamFramerateResponse.
 
         :return: The x_request_id of this ListSingleStreamFramerateResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListSingleStreamFramerateResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListSingleStreamFramerateResponse.
+        r"""Sets the x_request_id of this ListSingleStreamFramerateResponse.
 
         :param x_request_id: The x_request_id of this ListSingleStreamFramerateResponse.
         :type x_request_id: str

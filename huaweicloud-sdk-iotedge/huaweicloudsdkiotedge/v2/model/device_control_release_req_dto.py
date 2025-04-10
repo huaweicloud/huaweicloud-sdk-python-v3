@@ -31,7 +31,7 @@ class DeviceControlReleaseReqDTO:
     }
 
     def __init__(self, control_id=None, service_id=None, priority=None, properties=None):
-        """DeviceControlReleaseReqDTO
+        r"""DeviceControlReleaseReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class DeviceControlReleaseReqDTO:
 
     @property
     def control_id(self):
-        """Gets the control_id of this DeviceControlReleaseReqDTO.
+        r"""Gets the control_id of this DeviceControlReleaseReqDTO.
 
         控制id
 
@@ -72,7 +72,7 @@ class DeviceControlReleaseReqDTO:
 
     @control_id.setter
     def control_id(self, control_id):
-        """Sets the control_id of this DeviceControlReleaseReqDTO.
+        r"""Sets the control_id of this DeviceControlReleaseReqDTO.
 
         控制id
 
@@ -83,7 +83,7 @@ class DeviceControlReleaseReqDTO:
 
     @property
     def service_id(self):
-        """Gets the service_id of this DeviceControlReleaseReqDTO.
+        r"""Gets the service_id of this DeviceControlReleaseReqDTO.
 
         服务id，可选
 
@@ -94,7 +94,7 @@ class DeviceControlReleaseReqDTO:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this DeviceControlReleaseReqDTO.
+        r"""Sets the service_id of this DeviceControlReleaseReqDTO.
 
         服务id，可选
 
@@ -105,7 +105,7 @@ class DeviceControlReleaseReqDTO:
 
     @property
     def priority(self):
-        """Gets the priority of this DeviceControlReleaseReqDTO.
+        r"""Gets the priority of this DeviceControlReleaseReqDTO.
 
         调度计划优先级。
 
@@ -116,7 +116,7 @@ class DeviceControlReleaseReqDTO:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this DeviceControlReleaseReqDTO.
+        r"""Sets the priority of this DeviceControlReleaseReqDTO.
 
         调度计划优先级。
 
@@ -127,7 +127,7 @@ class DeviceControlReleaseReqDTO:
 
     @property
     def properties(self):
-        """Gets the properties of this DeviceControlReleaseReqDTO.
+        r"""Gets the properties of this DeviceControlReleaseReqDTO.
 
         控制释放的属性数组
 
@@ -138,7 +138,7 @@ class DeviceControlReleaseReqDTO:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this DeviceControlReleaseReqDTO.
+        r"""Sets the properties of this DeviceControlReleaseReqDTO.
 
         控制释放的属性数组
 

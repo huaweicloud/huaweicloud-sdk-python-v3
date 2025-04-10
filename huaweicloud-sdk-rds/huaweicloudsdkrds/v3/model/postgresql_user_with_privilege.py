@@ -29,7 +29,7 @@ class PostgresqlUserWithPrivilege:
     }
 
     def __init__(self, name=None, readonly=None, schema_name=None):
-        """PostgresqlUserWithPrivilege
+        r"""PostgresqlUserWithPrivilege
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PostgresqlUserWithPrivilege:
 
     @property
     def name(self):
-        """Gets the name of this PostgresqlUserWithPrivilege.
+        r"""Gets the name of this PostgresqlUserWithPrivilege.
 
         数据库帐号名称。  数据库帐号名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，不能和系统用户名称相同且帐号名称必须存在。  系统用户包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”,“ rdsProxy”, “rdsDdm”。
 
@@ -65,7 +65,7 @@ class PostgresqlUserWithPrivilege:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PostgresqlUserWithPrivilege.
+        r"""Sets the name of this PostgresqlUserWithPrivilege.
 
         数据库帐号名称。  数据库帐号名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，不能和系统用户名称相同且帐号名称必须存在。  系统用户包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”,“ rdsProxy”, “rdsDdm”。
 
@@ -76,7 +76,7 @@ class PostgresqlUserWithPrivilege:
 
     @property
     def readonly(self):
-        """Gets the readonly of this PostgresqlUserWithPrivilege.
+        r"""Gets the readonly of this PostgresqlUserWithPrivilege.
 
         数据库帐号权限。 - true：只读。 - false：可读可写。
 
@@ -87,7 +87,7 @@ class PostgresqlUserWithPrivilege:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this PostgresqlUserWithPrivilege.
+        r"""Sets the readonly of this PostgresqlUserWithPrivilege.
 
         数据库帐号权限。 - true：只读。 - false：可读可写。
 
@@ -98,7 +98,7 @@ class PostgresqlUserWithPrivilege:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this PostgresqlUserWithPrivilege.
+        r"""Gets the schema_name of this PostgresqlUserWithPrivilege.
 
         schema名称。  schema名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，不能和RDS for PostgreSQL模板库重名，且schema名称必须存在。  RDS for PostgreSQL模板库包括postgres， template0 ，template1。
 
@@ -109,7 +109,7 @@ class PostgresqlUserWithPrivilege:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this PostgresqlUserWithPrivilege.
+        r"""Sets the schema_name of this PostgresqlUserWithPrivilege.
 
         schema名称。  schema名称在1到63个字符之间，由字母、数字、或下划线组成，不能包含其他特殊字符，不能以“pg”和数字开头，不能和RDS for PostgreSQL模板库重名，且schema名称必须存在。  RDS for PostgreSQL模板库包括postgres， template0 ，template1。
 

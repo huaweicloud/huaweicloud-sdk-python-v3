@@ -25,7 +25,7 @@ class DisassociateSubnetFirewallRequestBody:
     }
 
     def __init__(self, subnets=None):
-        """DisassociateSubnetFirewallRequestBody
+        r"""DisassociateSubnetFirewallRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DisassociateSubnetFirewallRequestBody:
 
     @property
     def subnets(self):
-        """Gets the subnets of this DisassociateSubnetFirewallRequestBody.
+        r"""Gets the subnets of this DisassociateSubnetFirewallRequestBody.
 
         解绑ACL的子网列表
 
@@ -53,7 +53,7 @@ class DisassociateSubnetFirewallRequestBody:
 
     @subnets.setter
     def subnets(self, subnets):
-        """Sets the subnets of this DisassociateSubnetFirewallRequestBody.
+        r"""Sets the subnets of this DisassociateSubnetFirewallRequestBody.
 
         解绑ACL的子网列表
 

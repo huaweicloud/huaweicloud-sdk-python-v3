@@ -31,7 +31,7 @@ class DeleteEquipmentLanConfigRequest:
     }
 
     def __init__(self, ieg_id=None, equipment_id=None, interface_name=None, vlan_id=None):
-        """DeleteEquipmentLanConfigRequest
+        r"""DeleteEquipmentLanConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class DeleteEquipmentLanConfigRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this DeleteEquipmentLanConfigRequest.
+        r"""Gets the ieg_id of this DeleteEquipmentLanConfigRequest.
 
         智能企业网关ID
 
@@ -72,7 +72,7 @@ class DeleteEquipmentLanConfigRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this DeleteEquipmentLanConfigRequest.
+        r"""Sets the ieg_id of this DeleteEquipmentLanConfigRequest.
 
         智能企业网关ID
 
@@ -83,7 +83,7 @@ class DeleteEquipmentLanConfigRequest:
 
     @property
     def equipment_id(self):
-        """Gets the equipment_id of this DeleteEquipmentLanConfigRequest.
+        r"""Gets the equipment_id of this DeleteEquipmentLanConfigRequest.
 
         智能企业网关设备ID
 
@@ -94,7 +94,7 @@ class DeleteEquipmentLanConfigRequest:
 
     @equipment_id.setter
     def equipment_id(self, equipment_id):
-        """Sets the equipment_id of this DeleteEquipmentLanConfigRequest.
+        r"""Sets the equipment_id of this DeleteEquipmentLanConfigRequest.
 
         智能企业网关设备ID
 
@@ -105,7 +105,7 @@ class DeleteEquipmentLanConfigRequest:
 
     @property
     def interface_name(self):
-        """Gets the interface_name of this DeleteEquipmentLanConfigRequest.
+        r"""Gets the interface_name of this DeleteEquipmentLanConfigRequest.
 
         接口名字
 
@@ -116,7 +116,7 @@ class DeleteEquipmentLanConfigRequest:
 
     @interface_name.setter
     def interface_name(self, interface_name):
-        """Sets the interface_name of this DeleteEquipmentLanConfigRequest.
+        r"""Sets the interface_name of this DeleteEquipmentLanConfigRequest.
 
         接口名字
 
@@ -127,7 +127,7 @@ class DeleteEquipmentLanConfigRequest:
 
     @property
     def vlan_id(self):
-        """Gets the vlan_id of this DeleteEquipmentLanConfigRequest.
+        r"""Gets the vlan_id of this DeleteEquipmentLanConfigRequest.
 
         VlanID
 
@@ -138,7 +138,7 @@ class DeleteEquipmentLanConfigRequest:
 
     @vlan_id.setter
     def vlan_id(self, vlan_id):
-        """Sets the vlan_id of this DeleteEquipmentLanConfigRequest.
+        r"""Sets the vlan_id of this DeleteEquipmentLanConfigRequest.
 
         VlanID
 

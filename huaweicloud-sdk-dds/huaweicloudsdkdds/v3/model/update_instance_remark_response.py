@@ -24,7 +24,7 @@ class UpdateInstanceRemarkResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateInstanceRemarkResponse
+        r"""UpdateInstanceRemarkResponse
 
         The model defined in huaweicloud sdk
 

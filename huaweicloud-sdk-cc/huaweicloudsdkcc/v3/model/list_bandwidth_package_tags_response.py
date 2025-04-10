@@ -28,7 +28,7 @@ class ListBandwidthPackageTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, tags=None):
-        """ListBandwidthPackageTagsResponse
+        r"""ListBandwidthPackageTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListBandwidthPackageTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListBandwidthPackageTagsResponse.
+        r"""Gets the request_id of this ListBandwidthPackageTagsResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class ListBandwidthPackageTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListBandwidthPackageTagsResponse.
+        r"""Sets the request_id of this ListBandwidthPackageTagsResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class ListBandwidthPackageTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListBandwidthPackageTagsResponse.
+        r"""Gets the tags of this ListBandwidthPackageTagsResponse.
 
         带宽包的所有标签。
 
@@ -82,7 +82,7 @@ class ListBandwidthPackageTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListBandwidthPackageTagsResponse.
+        r"""Sets the tags of this ListBandwidthPackageTagsResponse.
 
         带宽包的所有标签。
 

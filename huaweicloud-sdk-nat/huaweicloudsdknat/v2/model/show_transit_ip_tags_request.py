@@ -25,7 +25,7 @@ class ShowTransitIpTagsRequest:
     }
 
     def __init__(self, resource_id=None):
-        """ShowTransitIpTagsRequest
+        r"""ShowTransitIpTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowTransitIpTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowTransitIpTagsRequest.
+        r"""Gets the resource_id of this ShowTransitIpTagsRequest.
 
         中转IP的ID。
 
@@ -53,7 +53,7 @@ class ShowTransitIpTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowTransitIpTagsRequest.
+        r"""Sets the resource_id of this ShowTransitIpTagsRequest.
 
         中转IP的ID。
 

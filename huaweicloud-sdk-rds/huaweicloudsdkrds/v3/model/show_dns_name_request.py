@@ -29,7 +29,7 @@ class ShowDnsNameRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, dns_type=None):
-        """ShowDnsNameRequest
+        r"""ShowDnsNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowDnsNameRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDnsNameRequest.
+        r"""Gets the instance_id of this ShowDnsNameRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class ShowDnsNameRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDnsNameRequest.
+        r"""Sets the instance_id of this ShowDnsNameRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class ShowDnsNameRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowDnsNameRequest.
+        r"""Gets the x_language of this ShowDnsNameRequest.
 
         语言
 
@@ -88,7 +88,7 @@ class ShowDnsNameRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowDnsNameRequest.
+        r"""Sets the x_language of this ShowDnsNameRequest.
 
         语言
 
@@ -99,7 +99,7 @@ class ShowDnsNameRequest:
 
     @property
     def dns_type(self):
-        """Gets the dns_type of this ShowDnsNameRequest.
+        r"""Gets the dns_type of this ShowDnsNameRequest.
 
         实例域名类型，当前只支持\"private\"。
 
@@ -110,7 +110,7 @@ class ShowDnsNameRequest:
 
     @dns_type.setter
     def dns_type(self, dns_type):
-        """Sets the dns_type of this ShowDnsNameRequest.
+        r"""Sets the dns_type of this ShowDnsNameRequest.
 
         实例域名类型，当前只支持\"private\"。
 

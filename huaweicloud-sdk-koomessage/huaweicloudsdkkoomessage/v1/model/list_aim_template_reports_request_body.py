@@ -35,7 +35,7 @@ class ListAimTemplateReportsRequestBody:
     }
 
     def __init__(self, tpl_ids=None, begin_time=None, end_time=None, offset=None, limit=None, factory_type=None):
-        """ListAimTemplateReportsRequestBody
+        r"""ListAimTemplateReportsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ListAimTemplateReportsRequestBody:
 
     @property
     def tpl_ids(self):
-        """Gets the tpl_ids of this ListAimTemplateReportsRequestBody.
+        r"""Gets the tpl_ids of this ListAimTemplateReportsRequestBody.
 
         智能信息模板ID列表，一次最多请求100个。 
 
@@ -86,7 +86,7 @@ class ListAimTemplateReportsRequestBody:
 
     @tpl_ids.setter
     def tpl_ids(self, tpl_ids):
-        """Sets the tpl_ids of this ListAimTemplateReportsRequestBody.
+        r"""Sets the tpl_ids of this ListAimTemplateReportsRequestBody.
 
         智能信息模板ID列表，一次最多请求100个。 
 
@@ -97,7 +97,7 @@ class ListAimTemplateReportsRequestBody:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListAimTemplateReportsRequestBody.
+        r"""Gets the begin_time of this ListAimTemplateReportsRequestBody.
 
         模板报表查询开始时间。样例：2019-10-12T07:20:50.522Z。  >开始时间和结束时间最多间隔90天，超出时间限制返回为空。 
 
@@ -108,7 +108,7 @@ class ListAimTemplateReportsRequestBody:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListAimTemplateReportsRequestBody.
+        r"""Sets the begin_time of this ListAimTemplateReportsRequestBody.
 
         模板报表查询开始时间。样例：2019-10-12T07:20:50.522Z。  >开始时间和结束时间最多间隔90天，超出时间限制返回为空。 
 
@@ -119,7 +119,7 @@ class ListAimTemplateReportsRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAimTemplateReportsRequestBody.
+        r"""Gets the end_time of this ListAimTemplateReportsRequestBody.
 
         模板报表查询结束时间。样例：2019-10-12T07:20:50.522Z。  >开始时间和结束时间最多间隔90天，超出时间限制返回为空。 
 
@@ -130,7 +130,7 @@ class ListAimTemplateReportsRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAimTemplateReportsRequestBody.
+        r"""Sets the end_time of this ListAimTemplateReportsRequestBody.
 
         模板报表查询结束时间。样例：2019-10-12T07:20:50.522Z。  >开始时间和结束时间最多间隔90天，超出时间限制返回为空。 
 
@@ -141,7 +141,7 @@ class ListAimTemplateReportsRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAimTemplateReportsRequestBody.
+        r"""Gets the offset of this ListAimTemplateReportsRequestBody.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。 
 
@@ -152,7 +152,7 @@ class ListAimTemplateReportsRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAimTemplateReportsRequestBody.
+        r"""Sets the offset of this ListAimTemplateReportsRequestBody.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。 
 
@@ -163,7 +163,7 @@ class ListAimTemplateReportsRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAimTemplateReportsRequestBody.
+        r"""Gets the limit of this ListAimTemplateReportsRequestBody.
 
         每页显示的条目数量。 
 
@@ -174,7 +174,7 @@ class ListAimTemplateReportsRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAimTemplateReportsRequestBody.
+        r"""Sets the limit of this ListAimTemplateReportsRequestBody.
 
         每页显示的条目数量。 
 
@@ -185,7 +185,7 @@ class ListAimTemplateReportsRequestBody:
 
     @property
     def factory_type(self):
-        """Gets the factory_type of this ListAimTemplateReportsRequestBody.
+        r"""Gets the factory_type of this ListAimTemplateReportsRequestBody.
 
         厂商类型。不填时默认全厂商。列举值：\"huawei\", \"vivo\", \"oppo\", \"xiaomi\", \"meizu\", \"samsung\"。 
 
@@ -196,7 +196,7 @@ class ListAimTemplateReportsRequestBody:
 
     @factory_type.setter
     def factory_type(self, factory_type):
-        """Sets the factory_type of this ListAimTemplateReportsRequestBody.
+        r"""Sets the factory_type of this ListAimTemplateReportsRequestBody.
 
         厂商类型。不填时默认全厂商。列举值：\"huawei\", \"vivo\", \"oppo\", \"xiaomi\", \"meizu\", \"samsung\"。 
 

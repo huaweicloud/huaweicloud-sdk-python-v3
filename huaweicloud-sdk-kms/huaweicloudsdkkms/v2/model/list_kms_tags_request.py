@@ -23,7 +23,7 @@ class ListKmsTagsRequest:
     }
 
     def __init__(self):
-        """ListKmsTagsRequest
+        r"""ListKmsTagsRequest
 
         The model defined in huaweicloud sdk
 

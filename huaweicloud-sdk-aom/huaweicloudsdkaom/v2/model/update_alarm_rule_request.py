@@ -25,7 +25,7 @@ class UpdateAlarmRuleRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateAlarmRuleRequest
+        r"""UpdateAlarmRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateAlarmRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAlarmRuleRequest.
+        r"""Gets the body of this UpdateAlarmRuleRequest.
 
         :return: The body of this UpdateAlarmRuleRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.UpdateAlarmRuleParam`
@@ -52,7 +52,7 @@ class UpdateAlarmRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAlarmRuleRequest.
+        r"""Sets the body of this UpdateAlarmRuleRequest.
 
         :param body: The body of this UpdateAlarmRuleRequest.
         :type body: :class:`huaweicloudsdkaom.v2.UpdateAlarmRuleParam`

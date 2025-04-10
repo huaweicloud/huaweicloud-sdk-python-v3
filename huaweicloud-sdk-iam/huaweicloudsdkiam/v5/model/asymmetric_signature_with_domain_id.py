@@ -27,7 +27,7 @@ class AsymmetricSignatureWithDomainId:
     }
 
     def __init__(self, domain_id=None, asymmetric_signature_switch=None):
-        """AsymmetricSignatureWithDomainId
+        r"""AsymmetricSignatureWithDomainId
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AsymmetricSignatureWithDomainId:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AsymmetricSignatureWithDomainId.
+        r"""Gets the domain_id of this AsymmetricSignatureWithDomainId.
 
         账号ID。
 
@@ -59,7 +59,7 @@ class AsymmetricSignatureWithDomainId:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AsymmetricSignatureWithDomainId.
+        r"""Sets the domain_id of this AsymmetricSignatureWithDomainId.
 
         账号ID。
 
@@ -70,7 +70,7 @@ class AsymmetricSignatureWithDomainId:
 
     @property
     def asymmetric_signature_switch(self):
-        """Gets the asymmetric_signature_switch of this AsymmetricSignatureWithDomainId.
+        r"""Gets the asymmetric_signature_switch of this AsymmetricSignatureWithDomainId.
 
         凭证非对称签名开关。
 
@@ -81,7 +81,7 @@ class AsymmetricSignatureWithDomainId:
 
     @asymmetric_signature_switch.setter
     def asymmetric_signature_switch(self, asymmetric_signature_switch):
-        """Sets the asymmetric_signature_switch of this AsymmetricSignatureWithDomainId.
+        r"""Sets the asymmetric_signature_switch of this AsymmetricSignatureWithDomainId.
 
         凭证非对称签名开关。
 

@@ -54,7 +54,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, masters=None):
-        """UpdatePublicZoneStatusResponse
+        r"""UpdatePublicZoneStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdatePublicZoneStatusResponse.
+        r"""Gets the id of this UpdatePublicZoneStatusResponse.
 
         zone的ID，uuid形式的一个资源标识。
 
@@ -153,7 +153,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdatePublicZoneStatusResponse.
+        r"""Sets the id of this UpdatePublicZoneStatusResponse.
 
         zone的ID，uuid形式的一个资源标识。
 
@@ -164,7 +164,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdatePublicZoneStatusResponse.
+        r"""Gets the name of this UpdatePublicZoneStatusResponse.
 
         zone名称。
 
@@ -175,7 +175,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdatePublicZoneStatusResponse.
+        r"""Sets the name of this UpdatePublicZoneStatusResponse.
 
         zone名称。
 
@@ -186,7 +186,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdatePublicZoneStatusResponse.
+        r"""Gets the description of this UpdatePublicZoneStatusResponse.
 
         对zone的描述信息。
 
@@ -197,7 +197,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePublicZoneStatusResponse.
+        r"""Sets the description of this UpdatePublicZoneStatusResponse.
 
         对zone的描述信息。
 
@@ -208,7 +208,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @property
     def email(self):
-        """Gets the email of this UpdatePublicZoneStatusResponse.
+        r"""Gets the email of this UpdatePublicZoneStatusResponse.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -219,7 +219,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @email.setter
     def email(self, email):
-        """Sets the email of this UpdatePublicZoneStatusResponse.
+        r"""Sets the email of this UpdatePublicZoneStatusResponse.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -230,7 +230,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @property
     def zone_type(self):
-        """Gets the zone_type of this UpdatePublicZoneStatusResponse.
+        r"""Gets the zone_type of this UpdatePublicZoneStatusResponse.
 
         zone类型，公网（public）。
 
@@ -241,7 +241,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @zone_type.setter
     def zone_type(self, zone_type):
-        """Sets the zone_type of this UpdatePublicZoneStatusResponse.
+        r"""Sets the zone_type of this UpdatePublicZoneStatusResponse.
 
         zone类型，公网（public）。
 
@@ -252,7 +252,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @property
     def ttl(self):
-        """Gets the ttl of this UpdatePublicZoneStatusResponse.
+        r"""Gets the ttl of this UpdatePublicZoneStatusResponse.
 
         该zone下SOA记录中的ttl值。
 
@@ -263,7 +263,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this UpdatePublicZoneStatusResponse.
+        r"""Sets the ttl of this UpdatePublicZoneStatusResponse.
 
         该zone下SOA记录中的ttl值。
 
@@ -274,7 +274,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @property
     def serial(self):
-        """Gets the serial of this UpdatePublicZoneStatusResponse.
+        r"""Gets the serial of this UpdatePublicZoneStatusResponse.
 
         该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
 
@@ -285,7 +285,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @serial.setter
     def serial(self, serial):
-        """Sets the serial of this UpdatePublicZoneStatusResponse.
+        r"""Sets the serial of this UpdatePublicZoneStatusResponse.
 
         该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。
 
@@ -296,7 +296,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdatePublicZoneStatusResponse.
+        r"""Gets the status of this UpdatePublicZoneStatusResponse.
 
         资源状态。
 
@@ -307,7 +307,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdatePublicZoneStatusResponse.
+        r"""Sets the status of this UpdatePublicZoneStatusResponse.
 
         资源状态。
 
@@ -318,7 +318,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @property
     def record_num(self):
-        """Gets the record_num of this UpdatePublicZoneStatusResponse.
+        r"""Gets the record_num of this UpdatePublicZoneStatusResponse.
 
         该zone下的recordset个数。
 
@@ -329,7 +329,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @record_num.setter
     def record_num(self, record_num):
-        """Sets the record_num of this UpdatePublicZoneStatusResponse.
+        r"""Sets the record_num of this UpdatePublicZoneStatusResponse.
 
         该zone下的recordset个数。
 
@@ -340,7 +340,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this UpdatePublicZoneStatusResponse.
+        r"""Gets the pool_id of this UpdatePublicZoneStatusResponse.
 
         托管该zone的pool，由系统分配。
 
@@ -351,7 +351,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this UpdatePublicZoneStatusResponse.
+        r"""Sets the pool_id of this UpdatePublicZoneStatusResponse.
 
         托管该zone的pool，由系统分配。
 
@@ -362,7 +362,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdatePublicZoneStatusResponse.
+        r"""Gets the project_id of this UpdatePublicZoneStatusResponse.
 
         zone所属的项目ID。
 
@@ -373,7 +373,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdatePublicZoneStatusResponse.
+        r"""Sets the project_id of this UpdatePublicZoneStatusResponse.
 
         zone所属的项目ID。
 
@@ -384,7 +384,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdatePublicZoneStatusResponse.
+        r"""Gets the created_at of this UpdatePublicZoneStatusResponse.
 
         创建时间。
 
@@ -395,7 +395,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdatePublicZoneStatusResponse.
+        r"""Sets the created_at of this UpdatePublicZoneStatusResponse.
 
         创建时间。
 
@@ -406,7 +406,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdatePublicZoneStatusResponse.
+        r"""Gets the updated_at of this UpdatePublicZoneStatusResponse.
 
         更新时间。
 
@@ -417,7 +417,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdatePublicZoneStatusResponse.
+        r"""Sets the updated_at of this UpdatePublicZoneStatusResponse.
 
         更新时间。
 
@@ -428,7 +428,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this UpdatePublicZoneStatusResponse.
+        r"""Gets the links of this UpdatePublicZoneStatusResponse.
 
         :return: The links of this UpdatePublicZoneStatusResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -437,7 +437,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this UpdatePublicZoneStatusResponse.
+        r"""Sets the links of this UpdatePublicZoneStatusResponse.
 
         :param links: The links of this UpdatePublicZoneStatusResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -446,7 +446,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @property
     def masters(self):
-        """Gets the masters of this UpdatePublicZoneStatusResponse.
+        r"""Gets the masters of this UpdatePublicZoneStatusResponse.
 
         主从模式中，从DNS服务器获取DNS信息。目前暂未使用。
 
@@ -457,7 +457,7 @@ class UpdatePublicZoneStatusResponse(SdkResponse):
 
     @masters.setter
     def masters(self, masters):
-        """Sets the masters of this UpdatePublicZoneStatusResponse.
+        r"""Sets the masters of this UpdatePublicZoneStatusResponse.
 
         主从模式中，从DNS服务器获取DNS信息。目前暂未使用。
 

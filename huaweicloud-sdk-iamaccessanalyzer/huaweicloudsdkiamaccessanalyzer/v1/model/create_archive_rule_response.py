@@ -28,7 +28,7 @@ class CreateArchiveRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, urn=None):
-        """CreateArchiveRuleResponse
+        r"""CreateArchiveRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateArchiveRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateArchiveRuleResponse.
+        r"""Gets the id of this CreateArchiveRuleResponse.
 
         存档规则的唯一标识符。
 
@@ -62,7 +62,7 @@ class CreateArchiveRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateArchiveRuleResponse.
+        r"""Sets the id of this CreateArchiveRuleResponse.
 
         存档规则的唯一标识符。
 
@@ -73,7 +73,7 @@ class CreateArchiveRuleResponse(SdkResponse):
 
     @property
     def urn(self):
-        """Gets the urn of this CreateArchiveRuleResponse.
+        r"""Gets the urn of this CreateArchiveRuleResponse.
 
         存档规则的唯一资源标识符。
 
@@ -84,7 +84,7 @@ class CreateArchiveRuleResponse(SdkResponse):
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this CreateArchiveRuleResponse.
+        r"""Sets the urn of this CreateArchiveRuleResponse.
 
         存档规则的唯一资源标识符。
 

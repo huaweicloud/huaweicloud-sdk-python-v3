@@ -25,7 +25,7 @@ class DeleteTemplatesRequest:
     }
 
     def __init__(self, uuid=None):
-        """DeleteTemplatesRequest
+        r"""DeleteTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTemplatesRequest:
 
     @property
     def uuid(self):
-        """Gets the uuid of this DeleteTemplatesRequest.
+        r"""Gets the uuid of this DeleteTemplatesRequest.
 
         uuid
 
@@ -53,7 +53,7 @@ class DeleteTemplatesRequest:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this DeleteTemplatesRequest.
+        r"""Sets the uuid of this DeleteTemplatesRequest.
 
         uuid
 

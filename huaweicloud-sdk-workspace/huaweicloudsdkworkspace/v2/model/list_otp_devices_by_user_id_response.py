@@ -26,7 +26,7 @@ class ListOtpDevicesByUserIdResponse(SdkResponse):
     }
 
     def __init__(self, otp_devices=None):
-        """ListOtpDevicesByUserIdResponse
+        r"""ListOtpDevicesByUserIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListOtpDevicesByUserIdResponse(SdkResponse):
 
     @property
     def otp_devices(self):
-        """Gets the otp_devices of this ListOtpDevicesByUserIdResponse.
+        r"""Gets the otp_devices of this ListOtpDevicesByUserIdResponse.
 
         otp设备。
 
@@ -55,7 +55,7 @@ class ListOtpDevicesByUserIdResponse(SdkResponse):
 
     @otp_devices.setter
     def otp_devices(self, otp_devices):
-        """Sets the otp_devices of this ListOtpDevicesByUserIdResponse.
+        r"""Sets the otp_devices of this ListOtpDevicesByUserIdResponse.
 
         otp设备。
 

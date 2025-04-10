@@ -25,11 +25,11 @@ class ShowVulStaticsRequest:
     }
 
     def __init__(self, enterprise_project_id=None):
-        """ShowVulStaticsRequest
+        r"""ShowVulStaticsRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         """
         
@@ -43,9 +43,9 @@ class ShowVulStaticsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowVulStaticsRequest.
+        r"""Gets the enterprise_project_id of this ShowVulStaticsRequest.
 
-        企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ShowVulStaticsRequest.
         :rtype: str
@@ -54,9 +54,9 @@ class ShowVulStaticsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowVulStaticsRequest.
+        r"""Sets the enterprise_project_id of this ShowVulStaticsRequest.
 
-        企业租户ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowVulStaticsRequest.
         :type enterprise_project_id: str

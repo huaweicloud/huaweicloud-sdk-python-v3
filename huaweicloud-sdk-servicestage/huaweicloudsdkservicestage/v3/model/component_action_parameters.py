@@ -29,7 +29,7 @@ class ComponentActionParameters:
     }
 
     def __init__(self, replica=None, hosts=None, version=None):
-        """ComponentActionParameters
+        r"""ComponentActionParameters
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ComponentActionParameters:
 
     @property
     def replica(self):
-        """Gets the replica of this ComponentActionParameters.
+        r"""Gets the replica of this ComponentActionParameters.
 
         use for sacle, scale to specified replica
 
@@ -68,7 +68,7 @@ class ComponentActionParameters:
 
     @replica.setter
     def replica(self, replica):
-        """Sets the replica of this ComponentActionParameters.
+        r"""Sets the replica of this ComponentActionParameters.
 
         use for sacle, scale to specified replica
 
@@ -79,7 +79,7 @@ class ComponentActionParameters:
 
     @property
     def hosts(self):
-        """Gets the hosts of this ComponentActionParameters.
+        r"""Gets the hosts of this ComponentActionParameters.
 
         use for vmapp scale
 
@@ -90,7 +90,7 @@ class ComponentActionParameters:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this ComponentActionParameters.
+        r"""Sets the hosts of this ComponentActionParameters.
 
         use for vmapp scale
 
@@ -101,7 +101,7 @@ class ComponentActionParameters:
 
     @property
     def version(self):
-        """Gets the version of this ComponentActionParameters.
+        r"""Gets the version of this ComponentActionParameters.
 
         use for rollback, rollback to specified version
 
@@ -112,7 +112,7 @@ class ComponentActionParameters:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ComponentActionParameters.
+        r"""Sets the version of this ComponentActionParameters.
 
         use for rollback, rollback to specified version
 

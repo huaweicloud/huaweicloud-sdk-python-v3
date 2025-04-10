@@ -45,7 +45,7 @@ class Source:
     }
 
     def __init__(self, codehub_name=None, branches=None, scm_type=None, hook_flag=None, branch=None, git_url=None, codehub_id=None, web_url=None, branch_list=None, init_id=None, disable=None):
-        """Source
+        r"""Source
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class Source:
 
     @property
     def codehub_name(self):
-        """Gets the codehub_name of this Source.
+        r"""Gets the codehub_name of this Source.
 
         源码仓名字
 
@@ -113,7 +113,7 @@ class Source:
 
     @codehub_name.setter
     def codehub_name(self, codehub_name):
-        """Sets the codehub_name of this Source.
+        r"""Sets the codehub_name of this Source.
 
         源码仓名字
 
@@ -124,7 +124,7 @@ class Source:
 
     @property
     def branches(self):
-        """Gets the branches of this Source.
+        r"""Gets the branches of this Source.
 
         触发分支
 
@@ -135,7 +135,7 @@ class Source:
 
     @branches.setter
     def branches(self, branches):
-        """Sets the branches of this Source.
+        r"""Sets the branches of this Source.
 
         触发分支
 
@@ -146,7 +146,7 @@ class Source:
 
     @property
     def scm_type(self):
-        """Gets the scm_type of this Source.
+        r"""Gets the scm_type of this Source.
 
         源码仓来源
 
@@ -157,7 +157,7 @@ class Source:
 
     @scm_type.setter
     def scm_type(self, scm_type):
-        """Sets the scm_type of this Source.
+        r"""Sets the scm_type of this Source.
 
         源码仓来源
 
@@ -168,7 +168,7 @@ class Source:
 
     @property
     def hook_flag(self):
-        """Gets the hook_flag of this Source.
+        r"""Gets the hook_flag of this Source.
 
         是否开启触发执行流水线功能
 
@@ -179,7 +179,7 @@ class Source:
 
     @hook_flag.setter
     def hook_flag(self, hook_flag):
-        """Sets the hook_flag of this Source.
+        r"""Sets the hook_flag of this Source.
 
         是否开启触发执行流水线功能
 
@@ -190,7 +190,7 @@ class Source:
 
     @property
     def branch(self):
-        """Gets the branch of this Source.
+        r"""Gets the branch of this Source.
 
         触发分支
 
@@ -201,7 +201,7 @@ class Source:
 
     @branch.setter
     def branch(self, branch):
-        """Sets the branch of this Source.
+        r"""Sets the branch of this Source.
 
         触发分支
 
@@ -212,7 +212,7 @@ class Source:
 
     @property
     def git_url(self):
-        """Gets the git_url of this Source.
+        r"""Gets the git_url of this Source.
 
         源码仓ssh地址
 
@@ -223,7 +223,7 @@ class Source:
 
     @git_url.setter
     def git_url(self, git_url):
-        """Sets the git_url of this Source.
+        r"""Sets the git_url of this Source.
 
         源码仓ssh地址
 
@@ -234,7 +234,7 @@ class Source:
 
     @property
     def codehub_id(self):
-        """Gets the codehub_id of this Source.
+        r"""Gets the codehub_id of this Source.
 
         源码仓ID
 
@@ -245,7 +245,7 @@ class Source:
 
     @codehub_id.setter
     def codehub_id(self, codehub_id):
-        """Sets the codehub_id of this Source.
+        r"""Sets the codehub_id of this Source.
 
         源码仓ID
 
@@ -256,7 +256,7 @@ class Source:
 
     @property
     def web_url(self):
-        """Gets the web_url of this Source.
+        r"""Gets the web_url of this Source.
 
         源码仓首页url
 
@@ -267,7 +267,7 @@ class Source:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this Source.
+        r"""Sets the web_url of this Source.
 
         源码仓首页url
 
@@ -278,7 +278,7 @@ class Source:
 
     @property
     def branch_list(self):
-        """Gets the branch_list of this Source.
+        r"""Gets the branch_list of this Source.
 
         分支列表
 
@@ -289,7 +289,7 @@ class Source:
 
     @branch_list.setter
     def branch_list(self, branch_list):
-        """Sets the branch_list of this Source.
+        r"""Sets the branch_list of this Source.
 
         分支列表
 
@@ -300,7 +300,7 @@ class Source:
 
     @property
     def init_id(self):
-        """Gets the init_id of this Source.
+        r"""Gets the init_id of this Source.
 
         初始化ID
 
@@ -311,7 +311,7 @@ class Source:
 
     @init_id.setter
     def init_id(self, init_id):
-        """Sets the init_id of this Source.
+        r"""Sets the init_id of this Source.
 
         初始化ID
 
@@ -322,7 +322,7 @@ class Source:
 
     @property
     def disable(self):
-        """Gets the disable of this Source.
+        r"""Gets the disable of this Source.
 
         是否废弃
 
@@ -333,7 +333,7 @@ class Source:
 
     @disable.setter
     def disable(self, disable):
-        """Sets the disable of this Source.
+        r"""Sets the disable of this Source.
 
         是否废弃
 

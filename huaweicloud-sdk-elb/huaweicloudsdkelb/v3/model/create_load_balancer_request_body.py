@@ -25,7 +25,7 @@ class CreateLoadBalancerRequestBody:
     }
 
     def __init__(self, loadbalancer=None):
-        """CreateLoadBalancerRequestBody
+        r"""CreateLoadBalancerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateLoadBalancerRequestBody:
 
     @property
     def loadbalancer(self):
-        """Gets the loadbalancer of this CreateLoadBalancerRequestBody.
+        r"""Gets the loadbalancer of this CreateLoadBalancerRequestBody.
 
         :return: The loadbalancer of this CreateLoadBalancerRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerOption`
@@ -51,7 +51,7 @@ class CreateLoadBalancerRequestBody:
 
     @loadbalancer.setter
     def loadbalancer(self, loadbalancer):
-        """Sets the loadbalancer of this CreateLoadBalancerRequestBody.
+        r"""Sets the loadbalancer of this CreateLoadBalancerRequestBody.
 
         :param loadbalancer: The loadbalancer of this CreateLoadBalancerRequestBody.
         :type loadbalancer: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerOption`

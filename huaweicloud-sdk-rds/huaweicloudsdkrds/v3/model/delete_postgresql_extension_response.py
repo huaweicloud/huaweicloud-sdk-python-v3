@@ -26,7 +26,7 @@ class DeletePostgresqlExtensionResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeletePostgresqlExtensionResponse
+        r"""DeletePostgresqlExtensionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeletePostgresqlExtensionResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeletePostgresqlExtensionResponse.
+        r"""Gets the body of this DeletePostgresqlExtensionResponse.
 
         :return: The body of this DeletePostgresqlExtensionResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeletePostgresqlExtensionResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeletePostgresqlExtensionResponse.
+        r"""Sets the body of this DeletePostgresqlExtensionResponse.
 
         :param body: The body of this DeletePostgresqlExtensionResponse.
         :type body: str

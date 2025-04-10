@@ -27,7 +27,7 @@ class ShowValueListRequest:
     }
 
     def __init__(self, enterprise_project_id=None, valuelistid=None):
-        """ShowValueListRequest
+        r"""ShowValueListRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowValueListRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowValueListRequest.
+        r"""Gets the enterprise_project_id of this ShowValueListRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -60,7 +60,7 @@ class ShowValueListRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowValueListRequest.
+        r"""Sets the enterprise_project_id of this ShowValueListRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -71,7 +71,7 @@ class ShowValueListRequest:
 
     @property
     def valuelistid(self):
-        """Gets the valuelistid of this ShowValueListRequest.
+        r"""Gets the valuelistid of this ShowValueListRequest.
 
         引用表id，通过查询引用表列表（ListValueList）接口获取
 
@@ -82,7 +82,7 @@ class ShowValueListRequest:
 
     @valuelistid.setter
     def valuelistid(self, valuelistid):
-        """Sets the valuelistid of this ShowValueListRequest.
+        r"""Sets the valuelistid of this ShowValueListRequest.
 
         引用表id，通过查询引用表列表（ListValueList）接口获取
 

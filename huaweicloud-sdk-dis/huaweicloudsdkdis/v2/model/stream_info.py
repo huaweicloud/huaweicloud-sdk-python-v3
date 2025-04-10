@@ -47,7 +47,7 @@ class StreamInfo:
     }
 
     def __init__(self, stream_name=None, create_time=None, retention_period=None, status=None, stream_type=None, data_type=None, partition_count=None, auto_scale_enabled=None, auto_scale_min_partition_count=None, auto_scale_max_partition_count=None, tags=None, sys_tags=None):
-        """StreamInfo
+        r"""StreamInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class StreamInfo:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this StreamInfo.
+        r"""Gets the stream_name of this StreamInfo.
 
         通道名称。
 
@@ -131,7 +131,7 @@ class StreamInfo:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this StreamInfo.
+        r"""Sets the stream_name of this StreamInfo.
 
         通道名称。
 
@@ -142,7 +142,7 @@ class StreamInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StreamInfo.
+        r"""Gets the create_time of this StreamInfo.
 
         通道创建的时间，13位时间戳。
 
@@ -153,7 +153,7 @@ class StreamInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StreamInfo.
+        r"""Sets the create_time of this StreamInfo.
 
         通道创建的时间，13位时间戳。
 
@@ -164,7 +164,7 @@ class StreamInfo:
 
     @property
     def retention_period(self):
-        """Gets the retention_period of this StreamInfo.
+        r"""Gets the retention_period of this StreamInfo.
 
         数据保留时长，单位是小时。
 
@@ -175,7 +175,7 @@ class StreamInfo:
 
     @retention_period.setter
     def retention_period(self, retention_period):
-        """Sets the retention_period of this StreamInfo.
+        r"""Sets the retention_period of this StreamInfo.
 
         数据保留时长，单位是小时。
 
@@ -186,7 +186,7 @@ class StreamInfo:
 
     @property
     def status(self):
-        """Gets the status of this StreamInfo.
+        r"""Gets the status of this StreamInfo.
 
         通道的当前状态。  - CREATING：创建中 - RUNNING：运行中 - TERMINATING：删除中 - TERMINATED：已删除
 
@@ -197,7 +197,7 @@ class StreamInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StreamInfo.
+        r"""Sets the status of this StreamInfo.
 
         通道的当前状态。  - CREATING：创建中 - RUNNING：运行中 - TERMINATING：删除中 - TERMINATED：已删除
 
@@ -208,7 +208,7 @@ class StreamInfo:
 
     @property
     def stream_type(self):
-        """Gets the stream_type of this StreamInfo.
+        r"""Gets the stream_type of this StreamInfo.
 
         通道类型。  - COMMON：普通通道，表示1MB带宽。 - ADVANCED：高级通道，表示5MB带宽。
 
@@ -219,7 +219,7 @@ class StreamInfo:
 
     @stream_type.setter
     def stream_type(self, stream_type):
-        """Sets the stream_type of this StreamInfo.
+        r"""Sets the stream_type of this StreamInfo.
 
         通道类型。  - COMMON：普通通道，表示1MB带宽。 - ADVANCED：高级通道，表示5MB带宽。
 
@@ -230,7 +230,7 @@ class StreamInfo:
 
     @property
     def data_type(self):
-        """Gets the data_type of this StreamInfo.
+        r"""Gets the data_type of this StreamInfo.
 
         源数据类型。  - BLOB：存储在数据库管理系统中的一组二进制数据。 - JSON：一种开放的文件格式，以易读的文字为基础，用来传输由属性值或者序列性的值组成的数据对象。 - CSV：纯文本形式存储的表格数据，分隔符默认采用逗号。  缺省值：BLOB。
 
@@ -241,7 +241,7 @@ class StreamInfo:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this StreamInfo.
+        r"""Sets the data_type of this StreamInfo.
 
         源数据类型。  - BLOB：存储在数据库管理系统中的一组二进制数据。 - JSON：一种开放的文件格式，以易读的文字为基础，用来传输由属性值或者序列性的值组成的数据对象。 - CSV：纯文本形式存储的表格数据，分隔符默认采用逗号。  缺省值：BLOB。
 
@@ -252,7 +252,7 @@ class StreamInfo:
 
     @property
     def partition_count(self):
-        """Gets the partition_count of this StreamInfo.
+        r"""Gets the partition_count of this StreamInfo.
 
         分区数量。  分区是DIS数据通道的基本吞吐量单位。
 
@@ -263,7 +263,7 @@ class StreamInfo:
 
     @partition_count.setter
     def partition_count(self, partition_count):
-        """Sets the partition_count of this StreamInfo.
+        r"""Sets the partition_count of this StreamInfo.
 
         分区数量。  分区是DIS数据通道的基本吞吐量单位。
 
@@ -274,7 +274,7 @@ class StreamInfo:
 
     @property
     def auto_scale_enabled(self):
-        """Gets the auto_scale_enabled of this StreamInfo.
+        r"""Gets the auto_scale_enabled of this StreamInfo.
 
         是否开启自动扩缩容。  - true：开启自动扩缩容。 - false：关闭自动扩缩容。  默认不开启。
 
@@ -285,7 +285,7 @@ class StreamInfo:
 
     @auto_scale_enabled.setter
     def auto_scale_enabled(self, auto_scale_enabled):
-        """Sets the auto_scale_enabled of this StreamInfo.
+        r"""Sets the auto_scale_enabled of this StreamInfo.
 
         是否开启自动扩缩容。  - true：开启自动扩缩容。 - false：关闭自动扩缩容。  默认不开启。
 
@@ -296,7 +296,7 @@ class StreamInfo:
 
     @property
     def auto_scale_min_partition_count(self):
-        """Gets the auto_scale_min_partition_count of this StreamInfo.
+        r"""Gets the auto_scale_min_partition_count of this StreamInfo.
 
         当自动扩缩容启用时，自动缩容的最小分片数。
 
@@ -307,7 +307,7 @@ class StreamInfo:
 
     @auto_scale_min_partition_count.setter
     def auto_scale_min_partition_count(self, auto_scale_min_partition_count):
-        """Sets the auto_scale_min_partition_count of this StreamInfo.
+        r"""Sets the auto_scale_min_partition_count of this StreamInfo.
 
         当自动扩缩容启用时，自动缩容的最小分片数。
 
@@ -318,7 +318,7 @@ class StreamInfo:
 
     @property
     def auto_scale_max_partition_count(self):
-        """Gets the auto_scale_max_partition_count of this StreamInfo.
+        r"""Gets the auto_scale_max_partition_count of this StreamInfo.
 
         当自动扩缩容启用时，自动扩容的最大分片数。
 
@@ -329,7 +329,7 @@ class StreamInfo:
 
     @auto_scale_max_partition_count.setter
     def auto_scale_max_partition_count(self, auto_scale_max_partition_count):
-        """Sets the auto_scale_max_partition_count of this StreamInfo.
+        r"""Sets the auto_scale_max_partition_count of this StreamInfo.
 
         当自动扩缩容启用时，自动扩容的最大分片数。
 
@@ -340,7 +340,7 @@ class StreamInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this StreamInfo.
+        r"""Gets the tags of this StreamInfo.
 
         通道标签列表。
 
@@ -351,7 +351,7 @@ class StreamInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this StreamInfo.
+        r"""Sets the tags of this StreamInfo.
 
         通道标签列表。
 
@@ -362,7 +362,7 @@ class StreamInfo:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this StreamInfo.
+        r"""Gets the sys_tags of this StreamInfo.
 
         通道企业项目列表。
 
@@ -373,7 +373,7 @@ class StreamInfo:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this StreamInfo.
+        r"""Sets the sys_tags of this StreamInfo.
 
         通道企业项目列表。
 

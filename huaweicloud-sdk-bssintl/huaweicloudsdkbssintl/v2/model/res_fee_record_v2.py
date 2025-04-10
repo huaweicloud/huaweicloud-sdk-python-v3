@@ -139,7 +139,7 @@ class ResFeeRecordV2:
     }
 
     def __init__(self, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type=None, cloud_service_type_name=None, resource_type_name=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_id=None, product_name=None, product_spec_desc=None, sku_code=None, spec_size=None, spec_size_measure_id=None, trade_id=None, id=None, trade_time=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, unit_price=None, unit=None, official_amount=None, discount_amount=None, amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, measure_id=None, formula=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, consume_time=None, relative_order_id=None):
-        """ResFeeRecordV2
+        r"""ResFeeRecordV2
 
         The model defined in huaweicloud sdk
 
@@ -442,7 +442,7 @@ class ResFeeRecordV2:
 
     @property
     def bill_date(self):
-        """Gets the bill_date of this ResFeeRecordV2.
+        r"""Gets the bill_date of this ResFeeRecordV2.
 
         资源消费记录的日期。 格式：YYYY-MM-DD。按照东八区截取。
 
@@ -453,7 +453,7 @@ class ResFeeRecordV2:
 
     @bill_date.setter
     def bill_date(self, bill_date):
-        """Sets the bill_date of this ResFeeRecordV2.
+        r"""Sets the bill_date of this ResFeeRecordV2.
 
         资源消费记录的日期。 格式：YYYY-MM-DD。按照东八区截取。
 
@@ -464,7 +464,7 @@ class ResFeeRecordV2:
 
     @property
     def bill_type(self):
-        """Gets the bill_type of this ResFeeRecordV2.
+        r"""Gets the bill_type of this ResFeeRecordV2.
 
         账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。 20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需 100：退款-退订税金101：调账-补偿税金102：调账-扣费税金|
 
@@ -475,7 +475,7 @@ class ResFeeRecordV2:
 
     @bill_type.setter
     def bill_type(self, bill_type):
-        """Sets the bill_type of this ResFeeRecordV2.
+        r"""Sets the bill_type of this ResFeeRecordV2.
 
         账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。 20：退款-变更23：消费-节省计划抵扣24：退款-包年/包月转按需 100：退款-退订税金101：调账-补偿税金102：调账-扣费税金|
 
@@ -486,7 +486,7 @@ class ResFeeRecordV2:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this ResFeeRecordV2.
+        r"""Gets the customer_id of this ResFeeRecordV2.
 
         消费的客户账号ID。 如果是普通客户或者企业子查询消费记录，只能查询到自身的消费记录，则这个地方显示的是自身的客户ID如果是企业主查询消费记录，可以查询到自身以及企业子的消费记录，这个地方是消费的实际客户ID，如果是企业主自身消费，为企业主ID，如果这条消费记录是某个企业子客户的消费，这个地方的ID是企业子账号ID。
 
@@ -497,7 +497,7 @@ class ResFeeRecordV2:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this ResFeeRecordV2.
+        r"""Sets the customer_id of this ResFeeRecordV2.
 
         消费的客户账号ID。 如果是普通客户或者企业子查询消费记录，只能查询到自身的消费记录，则这个地方显示的是自身的客户ID如果是企业主查询消费记录，可以查询到自身以及企业子的消费记录，这个地方是消费的实际客户ID，如果是企业主自身消费，为企业主ID，如果这条消费记录是某个企业子客户的消费，这个地方的ID是企业子账号ID。
 
@@ -508,7 +508,7 @@ class ResFeeRecordV2:
 
     @property
     def region(self):
-        """Gets the region of this ResFeeRecordV2.
+        r"""Gets the region of this ResFeeRecordV2.
 
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -519,7 +519,7 @@ class ResFeeRecordV2:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ResFeeRecordV2.
+        r"""Sets the region of this ResFeeRecordV2.
 
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -530,7 +530,7 @@ class ResFeeRecordV2:
 
     @property
     def region_name(self):
-        """Gets the region_name of this ResFeeRecordV2.
+        r"""Gets the region_name of this ResFeeRecordV2.
 
         云服务区名称，例如：“中国-香港”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
@@ -541,7 +541,7 @@ class ResFeeRecordV2:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this ResFeeRecordV2.
+        r"""Sets the region_name of this ResFeeRecordV2.
 
         云服务区名称，例如：“中国-香港”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
@@ -552,7 +552,7 @@ class ResFeeRecordV2:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this ResFeeRecordV2.
+        r"""Gets the cloud_service_type of this ResFeeRecordV2.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -563,7 +563,7 @@ class ResFeeRecordV2:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this ResFeeRecordV2.
+        r"""Sets the cloud_service_type of this ResFeeRecordV2.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -574,7 +574,7 @@ class ResFeeRecordV2:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ResFeeRecordV2.
+        r"""Gets the resource_type of this ResFeeRecordV2.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。
 
@@ -585,7 +585,7 @@ class ResFeeRecordV2:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ResFeeRecordV2.
+        r"""Sets the resource_type of this ResFeeRecordV2.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。
 
@@ -596,7 +596,7 @@ class ResFeeRecordV2:
 
     @property
     def cloud_service_type_name(self):
-        """Gets the cloud_service_type_name of this ResFeeRecordV2.
+        r"""Gets the cloud_service_type_name of this ResFeeRecordV2.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -607,7 +607,7 @@ class ResFeeRecordV2:
 
     @cloud_service_type_name.setter
     def cloud_service_type_name(self, cloud_service_type_name):
-        """Sets the cloud_service_type_name of this ResFeeRecordV2.
+        r"""Sets the cloud_service_type_name of this ResFeeRecordV2.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -618,7 +618,7 @@ class ResFeeRecordV2:
 
     @property
     def resource_type_name(self):
-        """Gets the resource_type_name of this ResFeeRecordV2.
+        r"""Gets the resource_type_name of this ResFeeRecordV2.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -629,7 +629,7 @@ class ResFeeRecordV2:
 
     @resource_type_name.setter
     def resource_type_name(self, resource_type_name):
-        """Sets the resource_type_name of this ResFeeRecordV2.
+        r"""Sets the resource_type_name of this ResFeeRecordV2.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -640,7 +640,7 @@ class ResFeeRecordV2:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this ResFeeRecordV2.
+        r"""Gets the effective_time of this ResFeeRecordV2.
 
         费用对应的资源使用的开始时间，按需有效，包年/包月该字段保留。
 
@@ -651,7 +651,7 @@ class ResFeeRecordV2:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this ResFeeRecordV2.
+        r"""Sets the effective_time of this ResFeeRecordV2.
 
         费用对应的资源使用的开始时间，按需有效，包年/包月该字段保留。
 
@@ -662,7 +662,7 @@ class ResFeeRecordV2:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ResFeeRecordV2.
+        r"""Gets the expire_time of this ResFeeRecordV2.
 
         费用对应的资源使用的结束时间，按需有效，包年/包月该字段保留。
 
@@ -673,7 +673,7 @@ class ResFeeRecordV2:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ResFeeRecordV2.
+        r"""Sets the expire_time of this ResFeeRecordV2.
 
         费用对应的资源使用的结束时间，按需有效，包年/包月该字段保留。
 
@@ -684,7 +684,7 @@ class ResFeeRecordV2:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResFeeRecordV2.
+        r"""Gets the resource_id of this ResFeeRecordV2.
 
         资源ID。
 
@@ -695,7 +695,7 @@ class ResFeeRecordV2:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResFeeRecordV2.
+        r"""Sets the resource_id of this ResFeeRecordV2.
 
         资源ID。
 
@@ -706,7 +706,7 @@ class ResFeeRecordV2:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ResFeeRecordV2.
+        r"""Gets the resource_name of this ResFeeRecordV2.
 
         资源名称。
 
@@ -717,7 +717,7 @@ class ResFeeRecordV2:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ResFeeRecordV2.
+        r"""Sets the resource_name of this ResFeeRecordV2.
 
         资源名称。
 
@@ -728,7 +728,7 @@ class ResFeeRecordV2:
 
     @property
     def resource_tag(self):
-        """Gets the resource_tag of this ResFeeRecordV2.
+        r"""Gets the resource_tag of this ResFeeRecordV2.
 
         资源标签。
 
@@ -739,7 +739,7 @@ class ResFeeRecordV2:
 
     @resource_tag.setter
     def resource_tag(self, resource_tag):
-        """Sets the resource_tag of this ResFeeRecordV2.
+        r"""Sets the resource_tag of this ResFeeRecordV2.
 
         资源标签。
 
@@ -750,7 +750,7 @@ class ResFeeRecordV2:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ResFeeRecordV2.
+        r"""Gets the product_id of this ResFeeRecordV2.
 
         产品ID。
 
@@ -761,7 +761,7 @@ class ResFeeRecordV2:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ResFeeRecordV2.
+        r"""Sets the product_id of this ResFeeRecordV2.
 
         产品ID。
 
@@ -772,7 +772,7 @@ class ResFeeRecordV2:
 
     @property
     def product_name(self):
-        """Gets the product_name of this ResFeeRecordV2.
+        r"""Gets the product_name of this ResFeeRecordV2.
 
         产品名称。
 
@@ -783,7 +783,7 @@ class ResFeeRecordV2:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this ResFeeRecordV2.
+        r"""Sets the product_name of this ResFeeRecordV2.
 
         产品名称。
 
@@ -794,7 +794,7 @@ class ResFeeRecordV2:
 
     @property
     def product_spec_desc(self):
-        """Gets the product_spec_desc of this ResFeeRecordV2.
+        r"""Gets the product_spec_desc of this ResFeeRecordV2.
 
         产品的规格描述。
 
@@ -805,7 +805,7 @@ class ResFeeRecordV2:
 
     @product_spec_desc.setter
     def product_spec_desc(self, product_spec_desc):
-        """Sets the product_spec_desc of this ResFeeRecordV2.
+        r"""Sets the product_spec_desc of this ResFeeRecordV2.
 
         产品的规格描述。
 
@@ -816,7 +816,7 @@ class ResFeeRecordV2:
 
     @property
     def sku_code(self):
-        """Gets the sku_code of this ResFeeRecordV2.
+        r"""Gets the sku_code of this ResFeeRecordV2.
 
         SKU编码，在账单中唯一标识一个资源的规格。
 
@@ -827,7 +827,7 @@ class ResFeeRecordV2:
 
     @sku_code.setter
     def sku_code(self, sku_code):
-        """Sets the sku_code of this ResFeeRecordV2.
+        r"""Sets the sku_code of this ResFeeRecordV2.
 
         SKU编码，在账单中唯一标识一个资源的规格。
 
@@ -838,7 +838,7 @@ class ResFeeRecordV2:
 
     @property
     def spec_size(self):
-        """Gets the spec_size of this ResFeeRecordV2.
+        r"""Gets the spec_size of this ResFeeRecordV2.
 
         产品的实例大小，仅线性产品有效。  说明： 线性产品是指订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小规格。
 
@@ -849,7 +849,7 @@ class ResFeeRecordV2:
 
     @spec_size.setter
     def spec_size(self, spec_size):
-        """Sets the spec_size of this ResFeeRecordV2.
+        r"""Sets the spec_size of this ResFeeRecordV2.
 
         产品的实例大小，仅线性产品有效。  说明： 线性产品是指订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小规格。
 
@@ -860,7 +860,7 @@ class ResFeeRecordV2:
 
     @property
     def spec_size_measure_id(self):
-        """Gets the spec_size_measure_id of this ResFeeRecordV2.
+        r"""Gets the spec_size_measure_id of this ResFeeRecordV2.
 
         产品实例大小的单位，仅线性产品有该字段。 您可以调用查询度量单位列表接口获取。
 
@@ -871,7 +871,7 @@ class ResFeeRecordV2:
 
     @spec_size_measure_id.setter
     def spec_size_measure_id(self, spec_size_measure_id):
-        """Sets the spec_size_measure_id of this ResFeeRecordV2.
+        r"""Sets the spec_size_measure_id of this ResFeeRecordV2.
 
         产品实例大小的单位，仅线性产品有该字段。 您可以调用查询度量单位列表接口获取。
 
@@ -882,7 +882,7 @@ class ResFeeRecordV2:
 
     @property
     def trade_id(self):
-        """Gets the trade_id of this ResFeeRecordV2.
+        r"""Gets the trade_id of this ResFeeRecordV2.
 
         订单ID或交易ID，扣费维度的唯一标识。
 
@@ -893,7 +893,7 @@ class ResFeeRecordV2:
 
     @trade_id.setter
     def trade_id(self, trade_id):
-        """Sets the trade_id of this ResFeeRecordV2.
+        r"""Sets the trade_id of this ResFeeRecordV2.
 
         订单ID或交易ID，扣费维度的唯一标识。
 
@@ -904,7 +904,7 @@ class ResFeeRecordV2:
 
     @property
     def id(self):
-        """Gets the id of this ResFeeRecordV2.
+        r"""Gets the id of this ResFeeRecordV2.
 
         |参数名称：唯一标识。|
 
@@ -915,7 +915,7 @@ class ResFeeRecordV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResFeeRecordV2.
+        r"""Sets the id of this ResFeeRecordV2.
 
         |参数名称：唯一标识。|
 
@@ -926,7 +926,7 @@ class ResFeeRecordV2:
 
     @property
     def trade_time(self):
-        """Gets the trade_time of this ResFeeRecordV2.
+        r"""Gets the trade_time of this ResFeeRecordV2.
 
         交易时间。
 
@@ -937,7 +937,7 @@ class ResFeeRecordV2:
 
     @trade_time.setter
     def trade_time(self, trade_time):
-        """Sets the trade_time of this ResFeeRecordV2.
+        r"""Sets the trade_time of this ResFeeRecordV2.
 
         交易时间。
 
@@ -948,7 +948,7 @@ class ResFeeRecordV2:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ResFeeRecordV2.
+        r"""Gets the enterprise_project_id of this ResFeeRecordV2.
 
         企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null
 
@@ -959,7 +959,7 @@ class ResFeeRecordV2:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ResFeeRecordV2.
+        r"""Sets the enterprise_project_id of this ResFeeRecordV2.
 
         企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null
 
@@ -970,7 +970,7 @@ class ResFeeRecordV2:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this ResFeeRecordV2.
+        r"""Gets the enterprise_project_name of this ResFeeRecordV2.
 
         企业项目的名称。
 
@@ -981,7 +981,7 @@ class ResFeeRecordV2:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this ResFeeRecordV2.
+        r"""Sets the enterprise_project_name of this ResFeeRecordV2.
 
         企业项目的名称。
 
@@ -992,7 +992,7 @@ class ResFeeRecordV2:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ResFeeRecordV2.
+        r"""Gets the charge_mode of this ResFeeRecordV2.
 
         计费模式。 1：包年/包月3：按需10：预留实例
 
@@ -1003,7 +1003,7 @@ class ResFeeRecordV2:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ResFeeRecordV2.
+        r"""Sets the charge_mode of this ResFeeRecordV2.
 
         计费模式。 1：包年/包月3：按需10：预留实例
 
@@ -1014,7 +1014,7 @@ class ResFeeRecordV2:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ResFeeRecordV2.
+        r"""Gets the order_id of this ResFeeRecordV2.
 
         订单ID。  说明： 包年/包月资源的使用记录才有该字段，按需资源则为空。
 
@@ -1025,7 +1025,7 @@ class ResFeeRecordV2:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ResFeeRecordV2.
+        r"""Sets the order_id of this ResFeeRecordV2.
 
         订单ID。  说明： 包年/包月资源的使用记录才有该字段，按需资源则为空。
 
@@ -1036,7 +1036,7 @@ class ResFeeRecordV2:
 
     @property
     def period_type(self):
-        """Gets the period_type of this ResFeeRecordV2.
+        r"""Gets the period_type of this ResFeeRecordV2.
 
         周期类型： 19：年20：月24：天25：小时5：一次性
 
@@ -1047,7 +1047,7 @@ class ResFeeRecordV2:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ResFeeRecordV2.
+        r"""Sets the period_type of this ResFeeRecordV2.
 
         周期类型： 19：年20：月24：天25：小时5：一次性
 
@@ -1058,7 +1058,7 @@ class ResFeeRecordV2:
 
     @property
     def usage_type(self):
-        """Gets the usage_type of this ResFeeRecordV2.
+        r"""Gets the usage_type of this ResFeeRecordV2.
 
         资源使用量的类型，您可以调用查询使用量类型列表接口获取。
 
@@ -1069,7 +1069,7 @@ class ResFeeRecordV2:
 
     @usage_type.setter
     def usage_type(self, usage_type):
-        """Sets the usage_type of this ResFeeRecordV2.
+        r"""Sets the usage_type of this ResFeeRecordV2.
 
         资源使用量的类型，您可以调用查询使用量类型列表接口获取。
 
@@ -1080,7 +1080,7 @@ class ResFeeRecordV2:
 
     @property
     def usage(self):
-        """Gets the usage of this ResFeeRecordV2.
+        r"""Gets the usage of this ResFeeRecordV2.
 
         资源的使用量。
 
@@ -1091,7 +1091,7 @@ class ResFeeRecordV2:
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this ResFeeRecordV2.
+        r"""Sets the usage of this ResFeeRecordV2.
 
         资源的使用量。
 
@@ -1102,7 +1102,7 @@ class ResFeeRecordV2:
 
     @property
     def usage_measure_id(self):
-        """Gets the usage_measure_id of this ResFeeRecordV2.
+        r"""Gets the usage_measure_id of this ResFeeRecordV2.
 
         资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
@@ -1113,7 +1113,7 @@ class ResFeeRecordV2:
 
     @usage_measure_id.setter
     def usage_measure_id(self, usage_measure_id):
-        """Sets the usage_measure_id of this ResFeeRecordV2.
+        r"""Sets the usage_measure_id of this ResFeeRecordV2.
 
         资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
@@ -1124,7 +1124,7 @@ class ResFeeRecordV2:
 
     @property
     def free_resource_usage(self):
-        """Gets the free_resource_usage of this ResFeeRecordV2.
+        r"""Gets the free_resource_usage of this ResFeeRecordV2.
 
         套餐内使用量。
 
@@ -1135,7 +1135,7 @@ class ResFeeRecordV2:
 
     @free_resource_usage.setter
     def free_resource_usage(self, free_resource_usage):
-        """Sets the free_resource_usage of this ResFeeRecordV2.
+        r"""Sets the free_resource_usage of this ResFeeRecordV2.
 
         套餐内使用量。
 
@@ -1146,7 +1146,7 @@ class ResFeeRecordV2:
 
     @property
     def free_resource_measure_id(self):
-        """Gets the free_resource_measure_id of this ResFeeRecordV2.
+        r"""Gets the free_resource_measure_id of this ResFeeRecordV2.
 
         套餐内使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
@@ -1157,7 +1157,7 @@ class ResFeeRecordV2:
 
     @free_resource_measure_id.setter
     def free_resource_measure_id(self, free_resource_measure_id):
-        """Sets the free_resource_measure_id of this ResFeeRecordV2.
+        r"""Sets the free_resource_measure_id of this ResFeeRecordV2.
 
         套餐内使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
@@ -1168,7 +1168,7 @@ class ResFeeRecordV2:
 
     @property
     def ri_usage(self):
-        """Gets the ri_usage of this ResFeeRecordV2.
+        r"""Gets the ri_usage of this ResFeeRecordV2.
 
         预留实例使用量。
 
@@ -1179,7 +1179,7 @@ class ResFeeRecordV2:
 
     @ri_usage.setter
     def ri_usage(self, ri_usage):
-        """Sets the ri_usage of this ResFeeRecordV2.
+        r"""Sets the ri_usage of this ResFeeRecordV2.
 
         预留实例使用量。
 
@@ -1190,7 +1190,7 @@ class ResFeeRecordV2:
 
     @property
     def ri_usage_measure_id(self):
-        """Gets the ri_usage_measure_id of this ResFeeRecordV2.
+        r"""Gets the ri_usage_measure_id of this ResFeeRecordV2.
 
         预留实例使用量单位。
 
@@ -1201,7 +1201,7 @@ class ResFeeRecordV2:
 
     @ri_usage_measure_id.setter
     def ri_usage_measure_id(self, ri_usage_measure_id):
-        """Sets the ri_usage_measure_id of this ResFeeRecordV2.
+        r"""Sets the ri_usage_measure_id of this ResFeeRecordV2.
 
         预留实例使用量单位。
 
@@ -1212,7 +1212,7 @@ class ResFeeRecordV2:
 
     @property
     def unit_price(self):
-        """Gets the unit_price of this ResFeeRecordV2.
+        r"""Gets the unit_price of this ResFeeRecordV2.
 
         产品的单价。 按需产品的单价，只有简单定价，不分档的场景会返回。 包周期产品的单价，只有包周期的如下场景会返回：包周期订购/续订/降配/升配/扩容简单定价，不分档 预留实例的单价，只有如下场景下会返回：订购/续订/降配/升配/扩容/按时计费简单定价，不分档
 
@@ -1223,7 +1223,7 @@ class ResFeeRecordV2:
 
     @unit_price.setter
     def unit_price(self, unit_price):
-        """Sets the unit_price of this ResFeeRecordV2.
+        r"""Sets the unit_price of this ResFeeRecordV2.
 
         产品的单价。 按需产品的单价，只有简单定价，不分档的场景会返回。 包周期产品的单价，只有包周期的如下场景会返回：包周期订购/续订/降配/升配/扩容简单定价，不分档 预留实例的单价，只有如下场景下会返回：订购/续订/降配/升配/扩容/按时计费简单定价，不分档
 
@@ -1234,7 +1234,7 @@ class ResFeeRecordV2:
 
     @property
     def unit(self):
-        """Gets the unit of this ResFeeRecordV2.
+        r"""Gets the unit of this ResFeeRecordV2.
 
         产品的单价单位。 线性产品的单价单位为“元/{线性单位}/月”或“元/{线性单位}/小时”等。非线性产品的单价单位为“元/月”或“元/小时”等。  说明： “线性单位”为线性产品（即订购时需要指定大小的产品）的大小的单位，比如硬盘的线性单位为GB，带宽的线性单位为Mbps。
 
@@ -1245,7 +1245,7 @@ class ResFeeRecordV2:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ResFeeRecordV2.
+        r"""Sets the unit of this ResFeeRecordV2.
 
         产品的单价单位。 线性产品的单价单位为“元/{线性单位}/月”或“元/{线性单位}/小时”等。非线性产品的单价单位为“元/月”或“元/小时”等。  说明： “线性单位”为线性产品（即订购时需要指定大小的产品）的大小的单位，比如硬盘的线性单位为GB，带宽的线性单位为Mbps。
 
@@ -1256,7 +1256,7 @@ class ResFeeRecordV2:
 
     @property
     def official_amount(self):
-        """Gets the official_amount of this ResFeeRecordV2.
+        r"""Gets the official_amount of this ResFeeRecordV2.
 
         官网价，华为云商品在官网上未叠加应用商务折扣、促销折扣等优惠的销售价格。
 
@@ -1267,7 +1267,7 @@ class ResFeeRecordV2:
 
     @official_amount.setter
     def official_amount(self, official_amount):
-        """Sets the official_amount of this ResFeeRecordV2.
+        r"""Sets the official_amount of this ResFeeRecordV2.
 
         官网价，华为云商品在官网上未叠加应用商务折扣、促销折扣等优惠的销售价格。
 
@@ -1278,7 +1278,7 @@ class ResFeeRecordV2:
 
     @property
     def discount_amount(self):
-        """Gets the discount_amount of this ResFeeRecordV2.
+        r"""Gets the discount_amount of this ResFeeRecordV2.
 
         优惠金额，用户使用云服务享受折扣优惠如商务折扣、伙伴授予折扣以及促销优惠等减免的金额。
 
@@ -1289,7 +1289,7 @@ class ResFeeRecordV2:
 
     @discount_amount.setter
     def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this ResFeeRecordV2.
+        r"""Sets the discount_amount of this ResFeeRecordV2.
 
         优惠金额，用户使用云服务享受折扣优惠如商务折扣、伙伴授予折扣以及促销优惠等减免的金额。
 
@@ -1300,7 +1300,7 @@ class ResFeeRecordV2:
 
     @property
     def amount(self):
-        """Gets the amount of this ResFeeRecordV2.
+        r"""Gets the amount of this ResFeeRecordV2.
 
         应付金额，用户使用云服务享受折扣优惠后需要支付的费用金额，包括代金券金额，精确到小数点后8位。  说明： amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
@@ -1311,7 +1311,7 @@ class ResFeeRecordV2:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this ResFeeRecordV2.
+        r"""Sets the amount of this ResFeeRecordV2.
 
         应付金额，用户使用云服务享受折扣优惠后需要支付的费用金额，包括代金券金额，精确到小数点后8位。  说明： amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
@@ -1322,7 +1322,7 @@ class ResFeeRecordV2:
 
     @property
     def cash_amount(self):
-        """Gets the cash_amount of this ResFeeRecordV2.
+        r"""Gets the cash_amount of this ResFeeRecordV2.
 
         现金支付金额。
 
@@ -1333,7 +1333,7 @@ class ResFeeRecordV2:
 
     @cash_amount.setter
     def cash_amount(self, cash_amount):
-        """Sets the cash_amount of this ResFeeRecordV2.
+        r"""Sets the cash_amount of this ResFeeRecordV2.
 
         现金支付金额。
 
@@ -1344,7 +1344,7 @@ class ResFeeRecordV2:
 
     @property
     def credit_amount(self):
-        """Gets the credit_amount of this ResFeeRecordV2.
+        r"""Gets the credit_amount of this ResFeeRecordV2.
 
         信用额度支付金额。
 
@@ -1355,7 +1355,7 @@ class ResFeeRecordV2:
 
     @credit_amount.setter
     def credit_amount(self, credit_amount):
-        """Sets the credit_amount of this ResFeeRecordV2.
+        r"""Sets the credit_amount of this ResFeeRecordV2.
 
         信用额度支付金额。
 
@@ -1366,7 +1366,7 @@ class ResFeeRecordV2:
 
     @property
     def coupon_amount(self):
-        """Gets the coupon_amount of this ResFeeRecordV2.
+        r"""Gets the coupon_amount of this ResFeeRecordV2.
 
         代金券支付金额。
 
@@ -1377,7 +1377,7 @@ class ResFeeRecordV2:
 
     @coupon_amount.setter
     def coupon_amount(self, coupon_amount):
-        """Sets the coupon_amount of this ResFeeRecordV2.
+        r"""Sets the coupon_amount of this ResFeeRecordV2.
 
         代金券支付金额。
 
@@ -1388,7 +1388,7 @@ class ResFeeRecordV2:
 
     @property
     def flexipurchase_coupon_amount(self):
-        """Gets the flexipurchase_coupon_amount of this ResFeeRecordV2.
+        r"""Gets the flexipurchase_coupon_amount of this ResFeeRecordV2.
 
         现金券支付金额。
 
@@ -1399,7 +1399,7 @@ class ResFeeRecordV2:
 
     @flexipurchase_coupon_amount.setter
     def flexipurchase_coupon_amount(self, flexipurchase_coupon_amount):
-        """Sets the flexipurchase_coupon_amount of this ResFeeRecordV2.
+        r"""Sets the flexipurchase_coupon_amount of this ResFeeRecordV2.
 
         现金券支付金额。
 
@@ -1410,7 +1410,7 @@ class ResFeeRecordV2:
 
     @property
     def stored_card_amount(self):
-        """Gets the stored_card_amount of this ResFeeRecordV2.
+        r"""Gets the stored_card_amount of this ResFeeRecordV2.
 
         储值卡支付金额。
 
@@ -1421,7 +1421,7 @@ class ResFeeRecordV2:
 
     @stored_card_amount.setter
     def stored_card_amount(self, stored_card_amount):
-        """Sets the stored_card_amount of this ResFeeRecordV2.
+        r"""Sets the stored_card_amount of this ResFeeRecordV2.
 
         储值卡支付金额。
 
@@ -1432,7 +1432,7 @@ class ResFeeRecordV2:
 
     @property
     def bonus_amount(self):
-        """Gets the bonus_amount of this ResFeeRecordV2.
+        r"""Gets the bonus_amount of this ResFeeRecordV2.
 
         奖励金支付金额（用于现网客户未使用完的奖励金）。
 
@@ -1443,7 +1443,7 @@ class ResFeeRecordV2:
 
     @bonus_amount.setter
     def bonus_amount(self, bonus_amount):
-        """Sets the bonus_amount of this ResFeeRecordV2.
+        r"""Sets the bonus_amount of this ResFeeRecordV2.
 
         奖励金支付金额（用于现网客户未使用完的奖励金）。
 
@@ -1454,7 +1454,7 @@ class ResFeeRecordV2:
 
     @property
     def debt_amount(self):
-        """Gets the debt_amount of this ResFeeRecordV2.
+        r"""Gets the debt_amount of this ResFeeRecordV2.
 
         欠费金额。
 
@@ -1465,7 +1465,7 @@ class ResFeeRecordV2:
 
     @debt_amount.setter
     def debt_amount(self, debt_amount):
-        """Sets the debt_amount of this ResFeeRecordV2.
+        r"""Sets the debt_amount of this ResFeeRecordV2.
 
         欠费金额。
 
@@ -1476,7 +1476,7 @@ class ResFeeRecordV2:
 
     @property
     def adjustment_amount(self):
-        """Gets the adjustment_amount of this ResFeeRecordV2.
+        r"""Gets the adjustment_amount of this ResFeeRecordV2.
 
         欠费核销金额。
 
@@ -1487,7 +1487,7 @@ class ResFeeRecordV2:
 
     @adjustment_amount.setter
     def adjustment_amount(self, adjustment_amount):
-        """Sets the adjustment_amount of this ResFeeRecordV2.
+        r"""Sets the adjustment_amount of this ResFeeRecordV2.
 
         欠费核销金额。
 
@@ -1498,7 +1498,7 @@ class ResFeeRecordV2:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this ResFeeRecordV2.
+        r"""Gets the measure_id of this ResFeeRecordV2.
 
         金额单位。 1：元
 
@@ -1509,7 +1509,7 @@ class ResFeeRecordV2:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this ResFeeRecordV2.
+        r"""Sets the measure_id of this ResFeeRecordV2.
 
         金额单位。 1：元
 
@@ -1520,7 +1520,7 @@ class ResFeeRecordV2:
 
     @property
     def formula(self):
-        """Gets the formula of this ResFeeRecordV2.
+        r"""Gets the formula of this ResFeeRecordV2.
 
         实付金额计算公式。当前只包含如下场景： 按需简单定价 按需线性定价 包年包月新购和续费的简单定价 包年包月新购和续费的线性定价  说明： 实付金额计算公式得到的金额值等于amount - coupon_amount的差值。
 
@@ -1531,7 +1531,7 @@ class ResFeeRecordV2:
 
     @formula.setter
     def formula(self, formula):
-        """Sets the formula of this ResFeeRecordV2.
+        r"""Sets the formula of this ResFeeRecordV2.
 
         实付金额计算公式。当前只包含如下场景： 按需简单定价 按需线性定价 包年包月新购和续费的简单定价 包年包月新购和续费的线性定价  说明： 实付金额计算公式得到的金额值等于amount - coupon_amount的差值。
 
@@ -1542,7 +1542,7 @@ class ResFeeRecordV2:
 
     @property
     def sub_service_type_code(self):
-        """Gets the sub_service_type_code of this ResFeeRecordV2.
+        r"""Gets the sub_service_type_code of this ResFeeRecordV2.
 
         该字段为预留字段。
 
@@ -1553,7 +1553,7 @@ class ResFeeRecordV2:
 
     @sub_service_type_code.setter
     def sub_service_type_code(self, sub_service_type_code):
-        """Sets the sub_service_type_code of this ResFeeRecordV2.
+        r"""Sets the sub_service_type_code of this ResFeeRecordV2.
 
         该字段为预留字段。
 
@@ -1564,7 +1564,7 @@ class ResFeeRecordV2:
 
     @property
     def sub_service_type_name(self):
-        """Gets the sub_service_type_name of this ResFeeRecordV2.
+        r"""Gets the sub_service_type_name of this ResFeeRecordV2.
 
         该字段为预留字段。
 
@@ -1575,7 +1575,7 @@ class ResFeeRecordV2:
 
     @sub_service_type_name.setter
     def sub_service_type_name(self, sub_service_type_name):
-        """Sets the sub_service_type_name of this ResFeeRecordV2.
+        r"""Sets the sub_service_type_name of this ResFeeRecordV2.
 
         该字段为预留字段。
 
@@ -1586,7 +1586,7 @@ class ResFeeRecordV2:
 
     @property
     def sub_resource_type_code(self):
-        """Gets the sub_resource_type_code of this ResFeeRecordV2.
+        r"""Gets the sub_resource_type_code of this ResFeeRecordV2.
 
         该字段为预留字段。
 
@@ -1597,7 +1597,7 @@ class ResFeeRecordV2:
 
     @sub_resource_type_code.setter
     def sub_resource_type_code(self, sub_resource_type_code):
-        """Sets the sub_resource_type_code of this ResFeeRecordV2.
+        r"""Sets the sub_resource_type_code of this ResFeeRecordV2.
 
         该字段为预留字段。
 
@@ -1608,7 +1608,7 @@ class ResFeeRecordV2:
 
     @property
     def sub_resource_type_name(self):
-        """Gets the sub_resource_type_name of this ResFeeRecordV2.
+        r"""Gets the sub_resource_type_name of this ResFeeRecordV2.
 
         该字段为预留字段。
 
@@ -1619,7 +1619,7 @@ class ResFeeRecordV2:
 
     @sub_resource_type_name.setter
     def sub_resource_type_name(self, sub_resource_type_name):
-        """Sets the sub_resource_type_name of this ResFeeRecordV2.
+        r"""Sets the sub_resource_type_name of this ResFeeRecordV2.
 
         该字段为预留字段。
 
@@ -1630,7 +1630,7 @@ class ResFeeRecordV2:
 
     @property
     def sub_resource_id(self):
-        """Gets the sub_resource_id of this ResFeeRecordV2.
+        r"""Gets the sub_resource_id of this ResFeeRecordV2.
 
         该字段为预留字段。
 
@@ -1641,7 +1641,7 @@ class ResFeeRecordV2:
 
     @sub_resource_id.setter
     def sub_resource_id(self, sub_resource_id):
-        """Sets the sub_resource_id of this ResFeeRecordV2.
+        r"""Sets the sub_resource_id of this ResFeeRecordV2.
 
         该字段为预留字段。
 
@@ -1652,7 +1652,7 @@ class ResFeeRecordV2:
 
     @property
     def sub_resource_name(self):
-        """Gets the sub_resource_name of this ResFeeRecordV2.
+        r"""Gets the sub_resource_name of this ResFeeRecordV2.
 
         该字段为预留字段。
 
@@ -1663,7 +1663,7 @@ class ResFeeRecordV2:
 
     @sub_resource_name.setter
     def sub_resource_name(self, sub_resource_name):
-        """Sets the sub_resource_name of this ResFeeRecordV2.
+        r"""Sets the sub_resource_name of this ResFeeRecordV2.
 
         该字段为预留字段。
 
@@ -1674,7 +1674,7 @@ class ResFeeRecordV2:
 
     @property
     def consume_time(self):
-        """Gets the consume_time of this ResFeeRecordV2.
+        r"""Gets the consume_time of this ResFeeRecordV2.
 
         |参数名称：消费时间| |参数约束及描述：消费时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ。包周期、预留实例预付为交易时间，按需、预留实例按时计费为话单生失效时间。 说明：当statistic_type=3时有效。|
 
@@ -1685,7 +1685,7 @@ class ResFeeRecordV2:
 
     @consume_time.setter
     def consume_time(self, consume_time):
-        """Sets the consume_time of this ResFeeRecordV2.
+        r"""Sets the consume_time of this ResFeeRecordV2.
 
         |参数名称：消费时间| |参数约束及描述：消费时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ。包周期、预留实例预付为交易时间，按需、预留实例按时计费为话单生失效时间。 说明：当statistic_type=3时有效。|
 
@@ -1696,7 +1696,7 @@ class ResFeeRecordV2:
 
     @property
     def relative_order_id(self):
-        """Gets the relative_order_id of this ResFeeRecordV2.
+        r"""Gets the relative_order_id of this ResFeeRecordV2.
 
         |参数名称：客户订单关联的订单ID| |参数约束及描述：客户订单关联的订单ID，包年/包月资源的使用记录该字段才有值，按需资源则为空。当order_id为组合交易订单时，该字段才有值，当查询为普通订单时，此字段返回为空。|
 
@@ -1707,7 +1707,7 @@ class ResFeeRecordV2:
 
     @relative_order_id.setter
     def relative_order_id(self, relative_order_id):
-        """Sets the relative_order_id of this ResFeeRecordV2.
+        r"""Sets the relative_order_id of this ResFeeRecordV2.
 
         |参数名称：客户订单关联的订单ID| |参数约束及描述：客户订单关联的订单ID，包年/包月资源的使用记录该字段才有值，按需资源则为空。当order_id为组合交易订单时，该字段才有值，当查询为普通订单时，此字段返回为空。|
 

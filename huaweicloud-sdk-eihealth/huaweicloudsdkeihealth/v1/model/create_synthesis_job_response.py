@@ -28,7 +28,7 @@ class CreateSynthesisJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None, limit_concurrency=None):
-        """CreateSynthesisJobResponse
+        r"""CreateSynthesisJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateSynthesisJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateSynthesisJobResponse.
+        r"""Gets the id of this CreateSynthesisJobResponse.
 
         作业id
 
@@ -62,7 +62,7 @@ class CreateSynthesisJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateSynthesisJobResponse.
+        r"""Sets the id of this CreateSynthesisJobResponse.
 
         作业id
 
@@ -73,7 +73,7 @@ class CreateSynthesisJobResponse(SdkResponse):
 
     @property
     def limit_concurrency(self):
-        """Gets the limit_concurrency of this CreateSynthesisJobResponse.
+        r"""Gets the limit_concurrency of this CreateSynthesisJobResponse.
 
         限制的并发量
 
@@ -84,7 +84,7 @@ class CreateSynthesisJobResponse(SdkResponse):
 
     @limit_concurrency.setter
     def limit_concurrency(self, limit_concurrency):
-        """Sets the limit_concurrency of this CreateSynthesisJobResponse.
+        r"""Sets the limit_concurrency of this CreateSynthesisJobResponse.
 
         限制的并发量
 

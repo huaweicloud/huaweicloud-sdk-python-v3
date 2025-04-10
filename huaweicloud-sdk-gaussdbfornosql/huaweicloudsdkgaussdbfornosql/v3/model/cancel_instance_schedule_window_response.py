@@ -24,7 +24,7 @@ class CancelInstanceScheduleWindowResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CancelInstanceScheduleWindowResponse
+        r"""CancelInstanceScheduleWindowResponse
 
         The model defined in huaweicloud sdk
 

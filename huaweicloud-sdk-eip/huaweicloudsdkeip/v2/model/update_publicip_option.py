@@ -29,7 +29,7 @@ class UpdatePublicipOption:
     }
 
     def __init__(self, port_id=None, ip_version=None, alias=None):
-        """UpdatePublicipOption
+        r"""UpdatePublicipOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdatePublicipOption:
 
     @property
     def port_id(self):
-        """Gets the port_id of this UpdatePublicipOption.
+        r"""Gets the port_id of this UpdatePublicipOption.
 
         功能说明：端口id  约束：必须是存在的端口id，如果不带该参数或者值为空时为解除绑定弹性公网IP，如果该端口不存在或端口已绑定弹性公网IP则会提示出错。  和ip_version字段互斥，不能同时更新。如果alias和port_id都携带，只有alias生效。
 
@@ -68,7 +68,7 @@ class UpdatePublicipOption:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this UpdatePublicipOption.
+        r"""Sets the port_id of this UpdatePublicipOption.
 
         功能说明：端口id  约束：必须是存在的端口id，如果不带该参数或者值为空时为解除绑定弹性公网IP，如果该端口不存在或端口已绑定弹性公网IP则会提示出错。  和ip_version字段互斥，不能同时更新。如果alias和port_id都携带，只有alias生效。
 
@@ -79,7 +79,7 @@ class UpdatePublicipOption:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this UpdatePublicipOption.
+        r"""Gets the ip_version of this UpdatePublicipOption.
 
         功能说明：IP版本信息  取值范围：4和6  4：IPv4  6：IPv6  约束：必须是系统支持的IP版本类型，和port_id互斥，不能同时更新。
 
@@ -90,7 +90,7 @@ class UpdatePublicipOption:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this UpdatePublicipOption.
+        r"""Sets the ip_version of this UpdatePublicipOption.
 
         功能说明：IP版本信息  取值范围：4和6  4：IPv4  6：IPv6  约束：必须是系统支持的IP版本类型，和port_id互斥，不能同时更新。
 
@@ -101,7 +101,7 @@ class UpdatePublicipOption:
 
     @property
     def alias(self):
-        """Gets the alias of this UpdatePublicipOption.
+        r"""Gets the alias of this UpdatePublicipOption.
 
         功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点） 约束：如果alias和port_id都携带，只有alias生效。
 
@@ -112,7 +112,7 @@ class UpdatePublicipOption:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this UpdatePublicipOption.
+        r"""Sets the alias of this UpdatePublicipOption.
 
         功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点） 约束：如果alias和port_id都携带，只有alias生效。
 

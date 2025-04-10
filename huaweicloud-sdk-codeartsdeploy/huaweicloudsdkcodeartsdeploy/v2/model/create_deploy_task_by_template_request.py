@@ -25,7 +25,7 @@ class CreateDeployTaskByTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDeployTaskByTemplateRequest
+        r"""CreateDeployTaskByTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDeployTaskByTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDeployTaskByTemplateRequest.
+        r"""Gets the body of this CreateDeployTaskByTemplateRequest.
 
         :return: The body of this CreateDeployTaskByTemplateRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.TemplateTaskRequestBody`
@@ -52,7 +52,7 @@ class CreateDeployTaskByTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDeployTaskByTemplateRequest.
+        r"""Sets the body of this CreateDeployTaskByTemplateRequest.
 
         :param body: The body of this CreateDeployTaskByTemplateRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.TemplateTaskRequestBody`

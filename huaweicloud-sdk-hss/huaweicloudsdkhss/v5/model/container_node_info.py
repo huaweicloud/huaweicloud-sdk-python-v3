@@ -24,6 +24,8 @@ class ContainerNodeInfo:
         'agent_status': 'str',
         'protect_status': 'str',
         'protect_interrupt': 'bool',
+        'protect_degradation': 'bool',
+        'degradation_reason': 'str',
         'container_tags': 'str',
         'private_ip': 'str',
         'public_ip': 'str',
@@ -46,6 +48,8 @@ class ContainerNodeInfo:
         'agent_status': 'agent_status',
         'protect_status': 'protect_status',
         'protect_interrupt': 'protect_interrupt',
+        'protect_degradation': 'protect_degradation',
+        'degradation_reason': 'degradation_reason',
         'container_tags': 'container_tags',
         'private_ip': 'private_ip',
         'public_ip': 'public_ip',
@@ -60,8 +64,8 @@ class ContainerNodeInfo:
         'policy_group_name': 'policy_group_name'
     }
 
-    def __init__(self, agent_id=None, host_id=None, host_name=None, host_status=None, agent_status=None, protect_status=None, protect_interrupt=None, container_tags=None, private_ip=None, public_ip=None, resource_id=None, group_name=None, enterprise_project_name=None, detect_result=None, asset=None, vulnerability=None, intrusion=None, policy_group_id=None, policy_group_name=None):
-        """ContainerNodeInfo
+    def __init__(self, agent_id=None, host_id=None, host_name=None, host_status=None, agent_status=None, protect_status=None, protect_interrupt=None, protect_degradation=None, degradation_reason=None, container_tags=None, private_ip=None, public_ip=None, resource_id=None, group_name=None, enterprise_project_name=None, detect_result=None, asset=None, vulnerability=None, intrusion=None, policy_group_id=None, policy_group_name=None):
+        r"""ContainerNodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -79,6 +83,10 @@ class ContainerNodeInfo:
         :type protect_status: str
         :param protect_interrupt: 防护是否中断
         :type protect_interrupt: bool
+        :param protect_degradation: 防护是否降级
+        :type protect_degradation: bool
+        :param degradation_reason: 防护降级原因
+        :type degradation_reason: str
         :param container_tags: 标签：用来识别cce容器节点和自建  - cce：cce节点  - self：自建节点  - other：其他节点
         :type container_tags: str
         :param private_ip: 私有IP地址
@@ -114,6 +122,8 @@ class ContainerNodeInfo:
         self._agent_status = None
         self._protect_status = None
         self._protect_interrupt = None
+        self._protect_degradation = None
+        self._degradation_reason = None
         self._container_tags = None
         self._private_ip = None
         self._public_ip = None
@@ -142,6 +152,10 @@ class ContainerNodeInfo:
             self.protect_status = protect_status
         if protect_interrupt is not None:
             self.protect_interrupt = protect_interrupt
+        if protect_degradation is not None:
+            self.protect_degradation = protect_degradation
+        if degradation_reason is not None:
+            self.degradation_reason = degradation_reason
         if container_tags is not None:
             self.container_tags = container_tags
         if private_ip is not None:
@@ -169,7 +183,7 @@ class ContainerNodeInfo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this ContainerNodeInfo.
+        r"""Gets the agent_id of this ContainerNodeInfo.
 
         Agent ID
 
@@ -180,7 +194,7 @@ class ContainerNodeInfo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this ContainerNodeInfo.
+        r"""Sets the agent_id of this ContainerNodeInfo.
 
         Agent ID
 
@@ -191,7 +205,7 @@ class ContainerNodeInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ContainerNodeInfo.
+        r"""Gets the host_id of this ContainerNodeInfo.
 
         服务器ID
 
@@ -202,7 +216,7 @@ class ContainerNodeInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ContainerNodeInfo.
+        r"""Sets the host_id of this ContainerNodeInfo.
 
         服务器ID
 
@@ -213,7 +227,7 @@ class ContainerNodeInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ContainerNodeInfo.
+        r"""Gets the host_name of this ContainerNodeInfo.
 
         节点名称
 
@@ -224,7 +238,7 @@ class ContainerNodeInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ContainerNodeInfo.
+        r"""Sets the host_name of this ContainerNodeInfo.
 
         节点名称
 
@@ -235,7 +249,7 @@ class ContainerNodeInfo:
 
     @property
     def host_status(self):
-        """Gets the host_status of this ContainerNodeInfo.
+        r"""Gets the host_status of this ContainerNodeInfo.
 
         服务器状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
 
@@ -246,7 +260,7 @@ class ContainerNodeInfo:
 
     @host_status.setter
     def host_status(self, host_status):
-        """Sets the host_status of this ContainerNodeInfo.
+        r"""Sets the host_status of this ContainerNodeInfo.
 
         服务器状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
 
@@ -257,7 +271,7 @@ class ContainerNodeInfo:
 
     @property
     def agent_status(self):
-        """Gets the agent_status of this ContainerNodeInfo.
+        r"""Gets the agent_status of this ContainerNodeInfo.
 
         Agent状态，包含如下3种。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。
 
@@ -268,7 +282,7 @@ class ContainerNodeInfo:
 
     @agent_status.setter
     def agent_status(self, agent_status):
-        """Sets the agent_status of this ContainerNodeInfo.
+        r"""Sets the agent_status of this ContainerNodeInfo.
 
         Agent状态，包含如下3种。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。
 
@@ -279,7 +293,7 @@ class ContainerNodeInfo:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this ContainerNodeInfo.
+        r"""Gets the protect_status of this ContainerNodeInfo.
 
         防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
 
@@ -290,7 +304,7 @@ class ContainerNodeInfo:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this ContainerNodeInfo.
+        r"""Sets the protect_status of this ContainerNodeInfo.
 
         防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
 
@@ -301,7 +315,7 @@ class ContainerNodeInfo:
 
     @property
     def protect_interrupt(self):
-        """Gets the protect_interrupt of this ContainerNodeInfo.
+        r"""Gets the protect_interrupt of this ContainerNodeInfo.
 
         防护是否中断
 
@@ -312,7 +326,7 @@ class ContainerNodeInfo:
 
     @protect_interrupt.setter
     def protect_interrupt(self, protect_interrupt):
-        """Sets the protect_interrupt of this ContainerNodeInfo.
+        r"""Sets the protect_interrupt of this ContainerNodeInfo.
 
         防护是否中断
 
@@ -322,8 +336,52 @@ class ContainerNodeInfo:
         self._protect_interrupt = protect_interrupt
 
     @property
+    def protect_degradation(self):
+        r"""Gets the protect_degradation of this ContainerNodeInfo.
+
+        防护是否降级
+
+        :return: The protect_degradation of this ContainerNodeInfo.
+        :rtype: bool
+        """
+        return self._protect_degradation
+
+    @protect_degradation.setter
+    def protect_degradation(self, protect_degradation):
+        r"""Sets the protect_degradation of this ContainerNodeInfo.
+
+        防护是否降级
+
+        :param protect_degradation: The protect_degradation of this ContainerNodeInfo.
+        :type protect_degradation: bool
+        """
+        self._protect_degradation = protect_degradation
+
+    @property
+    def degradation_reason(self):
+        r"""Gets the degradation_reason of this ContainerNodeInfo.
+
+        防护降级原因
+
+        :return: The degradation_reason of this ContainerNodeInfo.
+        :rtype: str
+        """
+        return self._degradation_reason
+
+    @degradation_reason.setter
+    def degradation_reason(self, degradation_reason):
+        r"""Sets the degradation_reason of this ContainerNodeInfo.
+
+        防护降级原因
+
+        :param degradation_reason: The degradation_reason of this ContainerNodeInfo.
+        :type degradation_reason: str
+        """
+        self._degradation_reason = degradation_reason
+
+    @property
     def container_tags(self):
-        """Gets the container_tags of this ContainerNodeInfo.
+        r"""Gets the container_tags of this ContainerNodeInfo.
 
         标签：用来识别cce容器节点和自建  - cce：cce节点  - self：自建节点  - other：其他节点
 
@@ -334,7 +392,7 @@ class ContainerNodeInfo:
 
     @container_tags.setter
     def container_tags(self, container_tags):
-        """Sets the container_tags of this ContainerNodeInfo.
+        r"""Sets the container_tags of this ContainerNodeInfo.
 
         标签：用来识别cce容器节点和自建  - cce：cce节点  - self：自建节点  - other：其他节点
 
@@ -345,7 +403,7 @@ class ContainerNodeInfo:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ContainerNodeInfo.
+        r"""Gets the private_ip of this ContainerNodeInfo.
 
         私有IP地址
 
@@ -356,7 +414,7 @@ class ContainerNodeInfo:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ContainerNodeInfo.
+        r"""Sets the private_ip of this ContainerNodeInfo.
 
         私有IP地址
 
@@ -367,7 +425,7 @@ class ContainerNodeInfo:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ContainerNodeInfo.
+        r"""Gets the public_ip of this ContainerNodeInfo.
 
         弹性公网IP地址
 
@@ -378,7 +436,7 @@ class ContainerNodeInfo:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ContainerNodeInfo.
+        r"""Sets the public_ip of this ContainerNodeInfo.
 
         弹性公网IP地址
 
@@ -389,7 +447,7 @@ class ContainerNodeInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ContainerNodeInfo.
+        r"""Gets the resource_id of this ContainerNodeInfo.
 
         主机安全配额ID（UUID）
 
@@ -400,7 +458,7 @@ class ContainerNodeInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ContainerNodeInfo.
+        r"""Sets the resource_id of this ContainerNodeInfo.
 
         主机安全配额ID（UUID）
 
@@ -411,7 +469,7 @@ class ContainerNodeInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ContainerNodeInfo.
+        r"""Gets the group_name of this ContainerNodeInfo.
 
         服务器组名称
 
@@ -422,7 +480,7 @@ class ContainerNodeInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ContainerNodeInfo.
+        r"""Sets the group_name of this ContainerNodeInfo.
 
         服务器组名称
 
@@ -433,7 +491,7 @@ class ContainerNodeInfo:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this ContainerNodeInfo.
+        r"""Gets the enterprise_project_name of this ContainerNodeInfo.
 
         所属企业项目名称
 
@@ -444,7 +502,7 @@ class ContainerNodeInfo:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this ContainerNodeInfo.
+        r"""Sets the enterprise_project_name of this ContainerNodeInfo.
 
         所属企业项目名称
 
@@ -455,7 +513,7 @@ class ContainerNodeInfo:
 
     @property
     def detect_result(self):
-        """Gets the detect_result of this ContainerNodeInfo.
+        r"""Gets the detect_result of this ContainerNodeInfo.
 
         云主机安全检测结果，包含如下4种。 - undetected ：未检测。 - clean ：无风险。 - risk ：有风险。 - scanning ：检测中。
 
@@ -466,7 +524,7 @@ class ContainerNodeInfo:
 
     @detect_result.setter
     def detect_result(self, detect_result):
-        """Sets the detect_result of this ContainerNodeInfo.
+        r"""Sets the detect_result of this ContainerNodeInfo.
 
         云主机安全检测结果，包含如下4种。 - undetected ：未检测。 - clean ：无风险。 - risk ：有风险。 - scanning ：检测中。
 
@@ -477,7 +535,7 @@ class ContainerNodeInfo:
 
     @property
     def asset(self):
-        """Gets the asset of this ContainerNodeInfo.
+        r"""Gets the asset of this ContainerNodeInfo.
 
         资产风险
 
@@ -488,7 +546,7 @@ class ContainerNodeInfo:
 
     @asset.setter
     def asset(self, asset):
-        """Sets the asset of this ContainerNodeInfo.
+        r"""Sets the asset of this ContainerNodeInfo.
 
         资产风险
 
@@ -499,7 +557,7 @@ class ContainerNodeInfo:
 
     @property
     def vulnerability(self):
-        """Gets the vulnerability of this ContainerNodeInfo.
+        r"""Gets the vulnerability of this ContainerNodeInfo.
 
         漏洞风险
 
@@ -510,7 +568,7 @@ class ContainerNodeInfo:
 
     @vulnerability.setter
     def vulnerability(self, vulnerability):
-        """Sets the vulnerability of this ContainerNodeInfo.
+        r"""Sets the vulnerability of this ContainerNodeInfo.
 
         漏洞风险
 
@@ -521,7 +579,7 @@ class ContainerNodeInfo:
 
     @property
     def intrusion(self):
-        """Gets the intrusion of this ContainerNodeInfo.
+        r"""Gets the intrusion of this ContainerNodeInfo.
 
         入侵风险
 
@@ -532,7 +590,7 @@ class ContainerNodeInfo:
 
     @intrusion.setter
     def intrusion(self, intrusion):
-        """Sets the intrusion of this ContainerNodeInfo.
+        r"""Sets the intrusion of this ContainerNodeInfo.
 
         入侵风险
 
@@ -543,7 +601,7 @@ class ContainerNodeInfo:
 
     @property
     def policy_group_id(self):
-        """Gets the policy_group_id of this ContainerNodeInfo.
+        r"""Gets the policy_group_id of this ContainerNodeInfo.
 
         策略组ID
 
@@ -554,7 +612,7 @@ class ContainerNodeInfo:
 
     @policy_group_id.setter
     def policy_group_id(self, policy_group_id):
-        """Sets the policy_group_id of this ContainerNodeInfo.
+        r"""Sets the policy_group_id of this ContainerNodeInfo.
 
         策略组ID
 
@@ -565,7 +623,7 @@ class ContainerNodeInfo:
 
     @property
     def policy_group_name(self):
-        """Gets the policy_group_name of this ContainerNodeInfo.
+        r"""Gets the policy_group_name of this ContainerNodeInfo.
 
         策略组名称
 
@@ -576,7 +634,7 @@ class ContainerNodeInfo:
 
     @policy_group_name.setter
     def policy_group_name(self, policy_group_name):
-        """Sets the policy_group_name of this ContainerNodeInfo.
+        r"""Sets the policy_group_name of this ContainerNodeInfo.
 
         策略组名称
 

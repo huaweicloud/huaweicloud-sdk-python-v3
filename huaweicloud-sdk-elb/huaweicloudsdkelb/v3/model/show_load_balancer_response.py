@@ -28,7 +28,7 @@ class ShowLoadBalancerResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, loadbalancer=None):
-        """ShowLoadBalancerResponse
+        r"""ShowLoadBalancerResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowLoadBalancerResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowLoadBalancerResponse.
+        r"""Gets the request_id of this ShowLoadBalancerResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -62,7 +62,7 @@ class ShowLoadBalancerResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowLoadBalancerResponse.
+        r"""Sets the request_id of this ShowLoadBalancerResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -73,7 +73,7 @@ class ShowLoadBalancerResponse(SdkResponse):
 
     @property
     def loadbalancer(self):
-        """Gets the loadbalancer of this ShowLoadBalancerResponse.
+        r"""Gets the loadbalancer of this ShowLoadBalancerResponse.
 
         :return: The loadbalancer of this ShowLoadBalancerResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.LoadBalancer`
@@ -82,7 +82,7 @@ class ShowLoadBalancerResponse(SdkResponse):
 
     @loadbalancer.setter
     def loadbalancer(self, loadbalancer):
-        """Sets the loadbalancer of this ShowLoadBalancerResponse.
+        r"""Sets the loadbalancer of this ShowLoadBalancerResponse.
 
         :param loadbalancer: The loadbalancer of this ShowLoadBalancerResponse.
         :type loadbalancer: :class:`huaweicloudsdkelb.v3.LoadBalancer`

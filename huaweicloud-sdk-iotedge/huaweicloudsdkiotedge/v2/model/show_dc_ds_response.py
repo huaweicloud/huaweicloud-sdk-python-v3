@@ -54,7 +54,7 @@ class ShowDcDsResponse(SdkResponse):
     }
 
     def __init__(self, ds_id=None, config=None, name=None, edge_node_id=None, module_id=None, tpl_id=None, quality_report=None, edge_app_name=None, connection_info=None, module_state=None, count=None, create_time=None, update_time=None, synchronized=None, synchronized_time=None):
-        """ShowDcDsResponse
+        r"""ShowDcDsResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @property
     def ds_id(self):
-        """Gets the ds_id of this ShowDcDsResponse.
+        r"""Gets the ds_id of this ShowDcDsResponse.
 
         采集数据源id，节点下唯一
 
@@ -153,7 +153,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @ds_id.setter
     def ds_id(self, ds_id):
-        """Sets the ds_id of this ShowDcDsResponse.
+        r"""Sets the ds_id of this ShowDcDsResponse.
 
         采集数据源id，节点下唯一
 
@@ -164,7 +164,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @property
     def config(self):
-        """Gets the config of this ShowDcDsResponse.
+        r"""Gets the config of this ShowDcDsResponse.
 
         数据源的连接及采集信息
 
@@ -175,7 +175,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @config.setter
     def config(self, config):
-        """Sets the config of this ShowDcDsResponse.
+        r"""Sets the config of this ShowDcDsResponse.
 
         数据源的连接及采集信息
 
@@ -186,7 +186,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDcDsResponse.
+        r"""Gets the name of this ShowDcDsResponse.
 
         采集数据源名称，允许中、数字、英文大小写、下划线、中划线
 
@@ -197,7 +197,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDcDsResponse.
+        r"""Sets the name of this ShowDcDsResponse.
 
         采集数据源名称，允许中、数字、英文大小写、下划线、中划线
 
@@ -208,7 +208,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this ShowDcDsResponse.
+        r"""Gets the edge_node_id of this ShowDcDsResponse.
 
         边缘节点id
 
@@ -219,7 +219,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this ShowDcDsResponse.
+        r"""Sets the edge_node_id of this ShowDcDsResponse.
 
         边缘节点id
 
@@ -230,7 +230,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @property
     def module_id(self):
-        """Gets the module_id of this ShowDcDsResponse.
+        r"""Gets the module_id of this ShowDcDsResponse.
 
         模块id
 
@@ -241,7 +241,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this ShowDcDsResponse.
+        r"""Sets the module_id of this ShowDcDsResponse.
 
         模块id
 
@@ -252,7 +252,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this ShowDcDsResponse.
+        r"""Gets the tpl_id of this ShowDcDsResponse.
 
         模板id，节点下唯一
 
@@ -263,7 +263,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this ShowDcDsResponse.
+        r"""Sets the tpl_id of this ShowDcDsResponse.
 
         模板id，节点下唯一
 
@@ -274,7 +274,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @property
     def quality_report(self):
-        """Gets the quality_report of this ShowDcDsResponse.
+        r"""Gets the quality_report of this ShowDcDsResponse.
 
         质量上报开关，不携带或值不为true，默认为false
 
@@ -285,7 +285,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @quality_report.setter
     def quality_report(self, quality_report):
-        """Sets the quality_report of this ShowDcDsResponse.
+        r"""Sets the quality_report of this ShowDcDsResponse.
 
         质量上报开关，不携带或值不为true，默认为false
 
@@ -296,7 +296,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @property
     def edge_app_name(self):
-        """Gets the edge_app_name of this ShowDcDsResponse.
+        r"""Gets the edge_app_name of this ShowDcDsResponse.
 
         应用ID
 
@@ -307,7 +307,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @edge_app_name.setter
     def edge_app_name(self, edge_app_name):
-        """Sets the edge_app_name of this ShowDcDsResponse.
+        r"""Sets the edge_app_name of this ShowDcDsResponse.
 
         应用ID
 
@@ -318,7 +318,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @property
     def connection_info(self):
-        """Gets the connection_info of this ShowDcDsResponse.
+        r"""Gets the connection_info of this ShowDcDsResponse.
 
         数采连接信息
 
@@ -329,7 +329,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @connection_info.setter
     def connection_info(self, connection_info):
-        """Sets the connection_info of this ShowDcDsResponse.
+        r"""Sets the connection_info of this ShowDcDsResponse.
 
         数采连接信息
 
@@ -340,7 +340,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @property
     def module_state(self):
-        """Gets the module_state of this ShowDcDsResponse.
+        r"""Gets the module_state of this ShowDcDsResponse.
 
         数采连接状态,stopped|running
 
@@ -351,7 +351,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @module_state.setter
     def module_state(self, module_state):
-        """Sets the module_state of this ShowDcDsResponse.
+        r"""Sets the module_state of this ShowDcDsResponse.
 
         数采连接状态,stopped|running
 
@@ -362,7 +362,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowDcDsResponse.
+        r"""Gets the count of this ShowDcDsResponse.
 
         数采连接下点位数
 
@@ -373,7 +373,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowDcDsResponse.
+        r"""Sets the count of this ShowDcDsResponse.
 
         数采连接下点位数
 
@@ -384,7 +384,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowDcDsResponse.
+        r"""Gets the create_time of this ShowDcDsResponse.
 
         创建时间
 
@@ -395,7 +395,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowDcDsResponse.
+        r"""Sets the create_time of this ShowDcDsResponse.
 
         创建时间
 
@@ -406,7 +406,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowDcDsResponse.
+        r"""Gets the update_time of this ShowDcDsResponse.
 
         最后一次修改时间
 
@@ -417,7 +417,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowDcDsResponse.
+        r"""Sets the update_time of this ShowDcDsResponse.
 
         最后一次修改时间
 
@@ -428,7 +428,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @property
     def synchronized(self):
-        """Gets the synchronized of this ShowDcDsResponse.
+        r"""Gets the synchronized of this ShowDcDsResponse.
 
         数采配置是否已同步，已同步：true,未同步：false
 
@@ -439,7 +439,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @synchronized.setter
     def synchronized(self, synchronized):
-        """Sets the synchronized of this ShowDcDsResponse.
+        r"""Sets the synchronized of this ShowDcDsResponse.
 
         数采配置是否已同步，已同步：true,未同步：false
 
@@ -450,7 +450,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @property
     def synchronized_time(self):
-        """Gets the synchronized_time of this ShowDcDsResponse.
+        r"""Gets the synchronized_time of this ShowDcDsResponse.
 
         数采配置同步时间
 
@@ -461,7 +461,7 @@ class ShowDcDsResponse(SdkResponse):
 
     @synchronized_time.setter
     def synchronized_time(self, synchronized_time):
-        """Sets the synchronized_time of this ShowDcDsResponse.
+        r"""Sets the synchronized_time of this ShowDcDsResponse.
 
         数采配置同步时间
 

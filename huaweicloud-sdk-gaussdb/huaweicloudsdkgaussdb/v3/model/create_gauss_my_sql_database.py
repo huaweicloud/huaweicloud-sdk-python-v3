@@ -31,7 +31,7 @@ class CreateGaussMySqlDatabase:
     }
 
     def __init__(self, name=None, comment=None, character_set=None, users=None):
-        """CreateGaussMySqlDatabase
+        r"""CreateGaussMySqlDatabase
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateGaussMySqlDatabase:
 
     @property
     def name(self):
-        """Gets the name of this CreateGaussMySqlDatabase.
+        r"""Gets the name of this CreateGaussMySqlDatabase.
 
         数据库名称,数据库名称长度可在1～64个字符之间，由字母、数字、下划线、中划线组成，中划线的累计总长度小于等于10个字符，且不能包含其他特殊字符。
 
@@ -73,7 +73,7 @@ class CreateGaussMySqlDatabase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGaussMySqlDatabase.
+        r"""Sets the name of this CreateGaussMySqlDatabase.
 
         数据库名称,数据库名称长度可在1～64个字符之间，由字母、数字、下划线、中划线组成，中划线的累计总长度小于等于10个字符，且不能包含其他特殊字符。
 
@@ -84,7 +84,7 @@ class CreateGaussMySqlDatabase:
 
     @property
     def comment(self):
-        """Gets the comment of this CreateGaussMySqlDatabase.
+        r"""Gets the comment of this CreateGaussMySqlDatabase.
 
         数据库备注,长度不能超过512个字符，不能包含回车和特殊字符!<\"='>&。
 
@@ -95,7 +95,7 @@ class CreateGaussMySqlDatabase:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this CreateGaussMySqlDatabase.
+        r"""Sets the comment of this CreateGaussMySqlDatabase.
 
         数据库备注,长度不能超过512个字符，不能包含回车和特殊字符!<\"='>&。
 
@@ -106,7 +106,7 @@ class CreateGaussMySqlDatabase:
 
     @property
     def character_set(self):
-        """Gets the character_set of this CreateGaussMySqlDatabase.
+        r"""Gets the character_set of this CreateGaussMySqlDatabase.
 
         数据库使用的字符集名称，如utf8mb4、gbk。
 
@@ -117,7 +117,7 @@ class CreateGaussMySqlDatabase:
 
     @character_set.setter
     def character_set(self, character_set):
-        """Sets the character_set of this CreateGaussMySqlDatabase.
+        r"""Sets the character_set of this CreateGaussMySqlDatabase.
 
         数据库使用的字符集名称，如utf8mb4、gbk。
 
@@ -128,7 +128,7 @@ class CreateGaussMySqlDatabase:
 
     @property
     def users(self):
-        """Gets the users of this CreateGaussMySqlDatabase.
+        r"""Gets the users of this CreateGaussMySqlDatabase.
 
         数据库用户列表，即创建数据库时同步授权给列表中的用户，列表最大长度为50。列表可以为空，即创建数据库时不授予其权限到数据库用户，在需要给该数据库授权某数据库用户时，调用数据库用户授权接口即可。
 
@@ -139,7 +139,7 @@ class CreateGaussMySqlDatabase:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this CreateGaussMySqlDatabase.
+        r"""Sets the users of this CreateGaussMySqlDatabase.
 
         数据库用户列表，即创建数据库时同步授权给列表中的用户，列表最大长度为50。列表可以为空，即创建数据库时不授予其权限到数据库用户，在需要给该数据库授权某数据库用户时，调用数据库用户授权接口即可。
 

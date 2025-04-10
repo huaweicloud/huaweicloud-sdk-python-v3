@@ -34,7 +34,7 @@ class CodeArtsInspectorClient(Client):
         return client_builder
 
     def create_purchase_order(self, request):
-        """订购下单接口
+        r"""订购下单接口
 
         订购下单接口
         
@@ -101,7 +101,7 @@ class CodeArtsInspectorClient(Client):
         return http_info
 
     def update_purchase_order(self, request):
-        """变更下单接口
+        r"""变更下单接口
 
         变更下单接口
         

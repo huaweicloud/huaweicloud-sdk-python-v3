@@ -26,7 +26,7 @@ class ChangeIpsProtectModeResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ChangeIpsProtectModeResponse
+        r"""ChangeIpsProtectModeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeIpsProtectModeResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ChangeIpsProtectModeResponse.
+        r"""Gets the data of this ChangeIpsProtectModeResponse.
 
         :return: The data of this ChangeIpsProtectModeResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.CommonResponseDTOData`
@@ -53,7 +53,7 @@ class ChangeIpsProtectModeResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ChangeIpsProtectModeResponse.
+        r"""Sets the data of this ChangeIpsProtectModeResponse.
 
         :param data: The data of this ChangeIpsProtectModeResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.CommonResponseDTOData`

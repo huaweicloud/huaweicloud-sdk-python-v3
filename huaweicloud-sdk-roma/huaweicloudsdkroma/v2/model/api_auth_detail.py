@@ -51,7 +51,7 @@ class ApiAuthDetail:
     }
 
     def __init__(self, auth_method=None, app_auth_type=None, user_name=None, password=None, app_key=None, app_secret=None, secret=None, alt_ip=None, access_token_url=None, client_id=None, client_secret=None, scope=None, authorization=None, grant_type=None):
-        """ApiAuthDetail
+        r"""ApiAuthDetail
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ApiAuthDetail:
 
     @property
     def auth_method(self):
-        """Gets the auth_method of this ApiAuthDetail.
+        r"""Gets the auth_method of this ApiAuthDetail.
 
         访问API服务的认证方式 - none - basicauth - oauth2.0 - hmac - secret - md5 - apiGateway - keyTop - hikVision - huaweiNetworkManagement - liHe
 
@@ -145,7 +145,7 @@ class ApiAuthDetail:
 
     @auth_method.setter
     def auth_method(self, auth_method):
-        """Sets the auth_method of this ApiAuthDetail.
+        r"""Sets the auth_method of this ApiAuthDetail.
 
         访问API服务的认证方式 - none - basicauth - oauth2.0 - hmac - secret - md5 - apiGateway - keyTop - hikVision - huaweiNetworkManagement - liHe
 
@@ -156,7 +156,7 @@ class ApiAuthDetail:
 
     @property
     def app_auth_type(self):
-        """Gets the app_auth_type of this ApiAuthDetail.
+        r"""Gets the app_auth_type of this ApiAuthDetail.
 
         访问API服务的APP认证方式，认证方式为（apiGateway）时填写 - default - secret - jwt
 
@@ -167,7 +167,7 @@ class ApiAuthDetail:
 
     @app_auth_type.setter
     def app_auth_type(self, app_auth_type):
-        """Sets the app_auth_type of this ApiAuthDetail.
+        r"""Sets the app_auth_type of this ApiAuthDetail.
 
         访问API服务的APP认证方式，认证方式为（apiGateway）时填写 - default - secret - jwt
 
@@ -178,7 +178,7 @@ class ApiAuthDetail:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ApiAuthDetail.
+        r"""Gets the user_name of this ApiAuthDetail.
 
         访问API服务的用户名 - 认证方式为（lihe、huaweiNetworkManagement、basicauth）时填写
 
@@ -189,7 +189,7 @@ class ApiAuthDetail:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ApiAuthDetail.
+        r"""Sets the user_name of this ApiAuthDetail.
 
         访问API服务的用户名 - 认证方式为（lihe、huaweiNetworkManagement、basicauth）时填写
 
@@ -200,7 +200,7 @@ class ApiAuthDetail:
 
     @property
     def password(self):
-        """Gets the password of this ApiAuthDetail.
+        r"""Gets the password of this ApiAuthDetail.
 
         访问API服务的密码 - 认证方式为（lihe、huaweiNetworkManagement、basicauth、secret、md5、hmac）时填写
 
@@ -211,7 +211,7 @@ class ApiAuthDetail:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this ApiAuthDetail.
+        r"""Sets the password of this ApiAuthDetail.
 
         访问API服务的密码 - 认证方式为（lihe、huaweiNetworkManagement、basicauth、secret、md5、hmac）时填写
 
@@ -222,7 +222,7 @@ class ApiAuthDetail:
 
     @property
     def app_key(self):
-        """Gets the app_key of this ApiAuthDetail.
+        r"""Gets the app_key of this ApiAuthDetail.
 
         访问API服务的AppKey - 认证方式为（apiGateway、oauth2.0）时填写
 
@@ -233,7 +233,7 @@ class ApiAuthDetail:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this ApiAuthDetail.
+        r"""Sets the app_key of this ApiAuthDetail.
 
         访问API服务的AppKey - 认证方式为（apiGateway、oauth2.0）时填写
 
@@ -244,7 +244,7 @@ class ApiAuthDetail:
 
     @property
     def app_secret(self):
-        """Gets the app_secret of this ApiAuthDetail.
+        r"""Gets the app_secret of this ApiAuthDetail.
 
         访问API服务的AppSecret - 认证方式为（apiGateway、oauth2.0）时填写
 
@@ -255,7 +255,7 @@ class ApiAuthDetail:
 
     @app_secret.setter
     def app_secret(self, app_secret):
-        """Sets the app_secret of this ApiAuthDetail.
+        r"""Sets the app_secret of this ApiAuthDetail.
 
         访问API服务的AppSecret - 认证方式为（apiGateway、oauth2.0）时填写
 
@@ -266,7 +266,7 @@ class ApiAuthDetail:
 
     @property
     def secret(self):
-        """Gets the secret of this ApiAuthDetail.
+        r"""Gets the secret of this ApiAuthDetail.
 
         访问API服务的Secret - 认证方式为（KeyTop、HikVision、Secret、HMAC、MD5）时填写
 
@@ -277,7 +277,7 @@ class ApiAuthDetail:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this ApiAuthDetail.
+        r"""Sets the secret of this ApiAuthDetail.
 
         访问API服务的Secret - 认证方式为（KeyTop、HikVision、Secret、HMAC、MD5）时填写
 
@@ -288,7 +288,7 @@ class ApiAuthDetail:
 
     @property
     def alt_ip(self):
-        """Gets the alt_ip of this ApiAuthDetail.
+        r"""Gets the alt_ip of this ApiAuthDetail.
 
         访问API服务的备用IP - 认证方式为（HuaweiNetworkManagement）时填写
 
@@ -299,7 +299,7 @@ class ApiAuthDetail:
 
     @alt_ip.setter
     def alt_ip(self, alt_ip):
-        """Sets the alt_ip of this ApiAuthDetail.
+        r"""Sets the alt_ip of this ApiAuthDetail.
 
         访问API服务的备用IP - 认证方式为（HuaweiNetworkManagement）时填写
 
@@ -310,7 +310,7 @@ class ApiAuthDetail:
 
     @property
     def access_token_url(self):
-        """Gets the access_token_url of this ApiAuthDetail.
+        r"""Gets the access_token_url of this ApiAuthDetail.
 
         访问API服务的AccessTokenUrl - 认证方式为（liHe、oauth2.0 huaweiNetworkManagement）时填写
 
@@ -321,7 +321,7 @@ class ApiAuthDetail:
 
     @access_token_url.setter
     def access_token_url(self, access_token_url):
-        """Sets the access_token_url of this ApiAuthDetail.
+        r"""Sets the access_token_url of this ApiAuthDetail.
 
         访问API服务的AccessTokenUrl - 认证方式为（liHe、oauth2.0 huaweiNetworkManagement）时填写
 
@@ -332,7 +332,7 @@ class ApiAuthDetail:
 
     @property
     def client_id(self):
-        """Gets the client_id of this ApiAuthDetail.
+        r"""Gets the client_id of this ApiAuthDetail.
 
         访问API服务的客户端标识 - 认证方式为Oauth2时填写
 
@@ -343,7 +343,7 @@ class ApiAuthDetail:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this ApiAuthDetail.
+        r"""Sets the client_id of this ApiAuthDetail.
 
         访问API服务的客户端标识 - 认证方式为Oauth2时填写
 
@@ -354,7 +354,7 @@ class ApiAuthDetail:
 
     @property
     def client_secret(self):
-        """Gets the client_secret of this ApiAuthDetail.
+        r"""Gets the client_secret of this ApiAuthDetail.
 
         访问API服务的客户端密钥 - 认证方式为Oauth2时填写
 
@@ -365,7 +365,7 @@ class ApiAuthDetail:
 
     @client_secret.setter
     def client_secret(self, client_secret):
-        """Sets the client_secret of this ApiAuthDetail.
+        r"""Sets the client_secret of this ApiAuthDetail.
 
         访问API服务的客户端密钥 - 认证方式为Oauth2时填写
 
@@ -376,7 +376,7 @@ class ApiAuthDetail:
 
     @property
     def scope(self):
-        """Gets the scope of this ApiAuthDetail.
+        r"""Gets the scope of this ApiAuthDetail.
 
         访问API服务的Scope - 认证方式为（LiHe、Oauth2）时填写
 
@@ -387,7 +387,7 @@ class ApiAuthDetail:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this ApiAuthDetail.
+        r"""Sets the scope of this ApiAuthDetail.
 
         访问API服务的Scope - 认证方式为（LiHe、Oauth2）时填写
 
@@ -398,7 +398,7 @@ class ApiAuthDetail:
 
     @property
     def authorization(self):
-        """Gets the authorization of this ApiAuthDetail.
+        r"""Gets the authorization of this ApiAuthDetail.
 
         访问API服务的Authorization - 认证方式为（LiHe）时填写
 
@@ -409,7 +409,7 @@ class ApiAuthDetail:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this ApiAuthDetail.
+        r"""Sets the authorization of this ApiAuthDetail.
 
         访问API服务的Authorization - 认证方式为（LiHe）时填写
 
@@ -420,7 +420,7 @@ class ApiAuthDetail:
 
     @property
     def grant_type(self):
-        """Gets the grant_type of this ApiAuthDetail.
+        r"""Gets the grant_type of this ApiAuthDetail.
 
         访问API服务的授权类型 - 认证方式为（LiHe、Oauth2）时填写 - client_credentials （oauth2.0使用）
 
@@ -431,7 +431,7 @@ class ApiAuthDetail:
 
     @grant_type.setter
     def grant_type(self, grant_type):
-        """Sets the grant_type of this ApiAuthDetail.
+        r"""Sets the grant_type of this ApiAuthDetail.
 
         访问API服务的授权类型 - 认证方式为（LiHe、Oauth2）时填写 - client_credentials （oauth2.0使用）
 

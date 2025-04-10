@@ -27,7 +27,7 @@ class QueryDataGuardMonitorAndChartResp:
     }
 
     def __init__(self, id=None, data_guard_minitor=None):
-        """QueryDataGuardMonitorAndChartResp
+        r"""QueryDataGuardMonitorAndChartResp
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class QueryDataGuardMonitorAndChartResp:
 
     @property
     def id(self):
-        """Gets the id of this QueryDataGuardMonitorAndChartResp.
+        r"""Gets the id of this QueryDataGuardMonitorAndChartResp.
 
         任务id
 
@@ -59,7 +59,7 @@ class QueryDataGuardMonitorAndChartResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryDataGuardMonitorAndChartResp.
+        r"""Sets the id of this QueryDataGuardMonitorAndChartResp.
 
         任务id
 
@@ -70,7 +70,7 @@ class QueryDataGuardMonitorAndChartResp:
 
     @property
     def data_guard_minitor(self):
-        """Gets the data_guard_minitor of this QueryDataGuardMonitorAndChartResp.
+        r"""Gets the data_guard_minitor of this QueryDataGuardMonitorAndChartResp.
 
         :return: The data_guard_minitor of this QueryDataGuardMonitorAndChartResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.QueryDataGuardMonitorResponse`
@@ -79,7 +79,7 @@ class QueryDataGuardMonitorAndChartResp:
 
     @data_guard_minitor.setter
     def data_guard_minitor(self, data_guard_minitor):
-        """Sets the data_guard_minitor of this QueryDataGuardMonitorAndChartResp.
+        r"""Sets the data_guard_minitor of this QueryDataGuardMonitorAndChartResp.
 
         :param data_guard_minitor: The data_guard_minitor of this QueryDataGuardMonitorAndChartResp.
         :type data_guard_minitor: :class:`huaweicloudsdkdrs.v3.QueryDataGuardMonitorResponse`

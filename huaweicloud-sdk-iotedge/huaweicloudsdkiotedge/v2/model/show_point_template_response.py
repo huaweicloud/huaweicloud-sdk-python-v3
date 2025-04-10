@@ -24,7 +24,7 @@ class ShowPointTemplateResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """ShowPointTemplateResponse
+        r"""ShowPointTemplateResponse
 
         The model defined in huaweicloud sdk
 

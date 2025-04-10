@@ -27,7 +27,7 @@ class UpdateDatabaseOwnerRequestBody:
     }
 
     def __init__(self, owner=None, database=None):
-        """UpdateDatabaseOwnerRequestBody
+        r"""UpdateDatabaseOwnerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateDatabaseOwnerRequestBody:
 
     @property
     def owner(self):
-        """Gets the owner of this UpdateDatabaseOwnerRequestBody.
+        r"""Gets the owner of this UpdateDatabaseOwnerRequestBody.
 
         修改后数据库owner
 
@@ -59,7 +59,7 @@ class UpdateDatabaseOwnerRequestBody:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this UpdateDatabaseOwnerRequestBody.
+        r"""Sets the owner of this UpdateDatabaseOwnerRequestBody.
 
         修改后数据库owner
 
@@ -70,7 +70,7 @@ class UpdateDatabaseOwnerRequestBody:
 
     @property
     def database(self):
-        """Gets the database of this UpdateDatabaseOwnerRequestBody.
+        r"""Gets the database of this UpdateDatabaseOwnerRequestBody.
 
         数据库名称
 
@@ -81,7 +81,7 @@ class UpdateDatabaseOwnerRequestBody:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this UpdateDatabaseOwnerRequestBody.
+        r"""Sets the database of this UpdateDatabaseOwnerRequestBody.
 
         数据库名称
 

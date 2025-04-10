@@ -31,7 +31,7 @@ class TmsResourceResp:
     }
 
     def __init__(self, resource_id=None, resouce_detail=None, resource_name=None, tags=None):
-        """TmsResourceResp
+        r"""TmsResourceResp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TmsResourceResp:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this TmsResourceResp.
+        r"""Gets the resource_id of this TmsResourceResp.
 
         实例编号
 
@@ -75,7 +75,7 @@ class TmsResourceResp:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this TmsResourceResp.
+        r"""Sets the resource_id of this TmsResourceResp.
 
         实例编号
 
@@ -86,7 +86,7 @@ class TmsResourceResp:
 
     @property
     def resouce_detail(self):
-        """Gets the resouce_detail of this TmsResourceResp.
+        r"""Gets the resouce_detail of this TmsResourceResp.
 
         实例详细描述。暂不支持
 
@@ -97,7 +97,7 @@ class TmsResourceResp:
 
     @resouce_detail.setter
     def resouce_detail(self, resouce_detail):
-        """Sets the resouce_detail of this TmsResourceResp.
+        r"""Sets the resouce_detail of this TmsResourceResp.
 
         实例详细描述。暂不支持
 
@@ -108,7 +108,7 @@ class TmsResourceResp:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this TmsResourceResp.
+        r"""Gets the resource_name of this TmsResourceResp.
 
         实例名称
 
@@ -119,7 +119,7 @@ class TmsResourceResp:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this TmsResourceResp.
+        r"""Sets the resource_name of this TmsResourceResp.
 
         实例名称
 
@@ -130,7 +130,7 @@ class TmsResourceResp:
 
     @property
     def tags(self):
-        """Gets the tags of this TmsResourceResp.
+        r"""Gets the tags of this TmsResourceResp.
 
         实例绑定的标签列表
 
@@ -141,7 +141,7 @@ class TmsResourceResp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TmsResourceResp.
+        r"""Sets the tags of this TmsResourceResp.
 
         实例绑定的标签列表
 

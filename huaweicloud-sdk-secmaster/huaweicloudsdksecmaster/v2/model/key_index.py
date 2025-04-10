@@ -29,7 +29,7 @@ class KeyIndex:
     }
 
     def __init__(self, type=None, is_chinese_exist=None, properties=None):
-        """KeyIndex
+        r"""KeyIndex
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class KeyIndex:
 
     @property
     def type(self):
-        """Gets the type of this KeyIndex.
+        r"""Gets the type of this KeyIndex.
 
         字段类型；text 全文索引字段、keyword 结构化字段、long Long、integer Integer、double Double、float Float、date 时间字段
 
@@ -68,7 +68,7 @@ class KeyIndex:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this KeyIndex.
+        r"""Sets the type of this KeyIndex.
 
         字段类型；text 全文索引字段、keyword 结构化字段、long Long、integer Integer、double Double、float Float、date 时间字段
 
@@ -79,7 +79,7 @@ class KeyIndex:
 
     @property
     def is_chinese_exist(self):
-        """Gets the is_chinese_exist of this KeyIndex.
+        r"""Gets the is_chinese_exist of this KeyIndex.
 
         是否包含中文
 
@@ -90,7 +90,7 @@ class KeyIndex:
 
     @is_chinese_exist.setter
     def is_chinese_exist(self, is_chinese_exist):
-        """Sets the is_chinese_exist of this KeyIndex.
+        r"""Sets the is_chinese_exist of this KeyIndex.
 
         是否包含中文
 
@@ -101,7 +101,7 @@ class KeyIndex:
 
     @property
     def properties(self):
-        """Gets the properties of this KeyIndex.
+        r"""Gets the properties of this KeyIndex.
 
         嵌套结构
 
@@ -112,7 +112,7 @@ class KeyIndex:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this KeyIndex.
+        r"""Sets the properties of this KeyIndex.
 
         嵌套结构
 

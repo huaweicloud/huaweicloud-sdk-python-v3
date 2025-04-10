@@ -43,7 +43,7 @@ class ListObjectsRequest:
     }
 
     def __init__(self, date=None, bucket_name=None, prefix=None, marker=None, max_keys=None, delimiter=None, key_marker=None, version_id_marker=None, encoding_type=None):
-        """ListObjectsRequest
+        r"""ListObjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ListObjectsRequest:
 
     @property
     def date(self):
-        """Gets the date of this ListObjectsRequest.
+        r"""Gets the date of this ListObjectsRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -111,7 +111,7 @@ class ListObjectsRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ListObjectsRequest.
+        r"""Sets the date of this ListObjectsRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -122,7 +122,7 @@ class ListObjectsRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this ListObjectsRequest.
+        r"""Gets the bucket_name of this ListObjectsRequest.
 
         Name of the requested bucket
 
@@ -133,7 +133,7 @@ class ListObjectsRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this ListObjectsRequest.
+        r"""Sets the bucket_name of this ListObjectsRequest.
 
         Name of the requested bucket
 
@@ -144,7 +144,7 @@ class ListObjectsRequest:
 
     @property
     def prefix(self):
-        """Gets the prefix of this ListObjectsRequest.
+        r"""Gets the prefix of this ListObjectsRequest.
 
         Lists objects whose name starts with the specified prefix.
 
@@ -155,7 +155,7 @@ class ListObjectsRequest:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this ListObjectsRequest.
+        r"""Sets the prefix of this ListObjectsRequest.
 
         Lists objects whose name starts with the specified prefix.
 
@@ -166,7 +166,7 @@ class ListObjectsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListObjectsRequest.
+        r"""Gets the marker of this ListObjectsRequest.
 
         Specifies a marker when listing objects in a bucket. With a marker configured, objects after this marker will be returned in alphabetical order.
 
@@ -177,7 +177,7 @@ class ListObjectsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListObjectsRequest.
+        r"""Sets the marker of this ListObjectsRequest.
 
         Specifies a marker when listing objects in a bucket. With a marker configured, objects after this marker will be returned in alphabetical order.
 
@@ -188,7 +188,7 @@ class ListObjectsRequest:
 
     @property
     def max_keys(self):
-        """Gets the max_keys of this ListObjectsRequest.
+        r"""Gets the max_keys of this ListObjectsRequest.
 
         Sets the maximum number of objects returned (in alphabetical order) in the response. The value ranges from 1 to 1000. If there are over 1,000 objects, only 1,000 objects are returned by default.
 
@@ -199,7 +199,7 @@ class ListObjectsRequest:
 
     @max_keys.setter
     def max_keys(self, max_keys):
-        """Sets the max_keys of this ListObjectsRequest.
+        r"""Sets the max_keys of this ListObjectsRequest.
 
         Sets the maximum number of objects returned (in alphabetical order) in the response. The value ranges from 1 to 1000. If there are over 1,000 objects, only 1,000 objects are returned by default.
 
@@ -210,7 +210,7 @@ class ListObjectsRequest:
 
     @property
     def delimiter(self):
-        """Gets the delimiter of this ListObjectsRequest.
+        r"""Gets the delimiter of this ListObjectsRequest.
 
         Separator used to group object names. If a prefix is specified, objects with the same string from the prefix to the first delimiter are grouped into one **CommonPrefixes**. If no prefix is specified, objects with the same string from the first character to the first delimiter are grouped into one **CommonPrefixes**.  Assume that a bucket has objects **abcd**, **abcde**, and **bbcde** in it. If **delimiter** is set to **d** and **prefix** is set to **a**, objects **abcd** and **abcde** are grouped into a **CommonPrefixes** with **abcd** as the prefix. If only **delimiter** is set to **d**, objects **abcd** and **abcde** are grouped into a **CommonPrefixes** with **abcd** as the prefix, and **bbcde** is grouped separately into another **CommonPrefixes** with **bbcd** as the prefix.
 
@@ -221,7 +221,7 @@ class ListObjectsRequest:
 
     @delimiter.setter
     def delimiter(self, delimiter):
-        """Sets the delimiter of this ListObjectsRequest.
+        r"""Sets the delimiter of this ListObjectsRequest.
 
         Separator used to group object names. If a prefix is specified, objects with the same string from the prefix to the first delimiter are grouped into one **CommonPrefixes**. If no prefix is specified, objects with the same string from the first character to the first delimiter are grouped into one **CommonPrefixes**.  Assume that a bucket has objects **abcd**, **abcde**, and **bbcde** in it. If **delimiter** is set to **d** and **prefix** is set to **a**, objects **abcd** and **abcde** are grouped into a **CommonPrefixes** with **abcd** as the prefix. If only **delimiter** is set to **d**, objects **abcd** and **abcde** are grouped into a **CommonPrefixes** with **abcd** as the prefix, and **bbcde** is grouped separately into another **CommonPrefixes** with **bbcd** as the prefix.
 
@@ -232,7 +232,7 @@ class ListObjectsRequest:
 
     @property
     def key_marker(self):
-        """Gets the key_marker of this ListObjectsRequest.
+        r"""Gets the key_marker of this ListObjectsRequest.
 
         Position to start with when objects are listed. Valid value: value of **NextKeyMarker** in the response body of the last request
 
@@ -243,7 +243,7 @@ class ListObjectsRequest:
 
     @key_marker.setter
     def key_marker(self, key_marker):
-        """Sets the key_marker of this ListObjectsRequest.
+        r"""Sets the key_marker of this ListObjectsRequest.
 
         Position to start with when objects are listed. Valid value: value of **NextKeyMarker** in the response body of the last request
 
@@ -254,7 +254,7 @@ class ListObjectsRequest:
 
     @property
     def version_id_marker(self):
-        """Gets the version_id_marker of this ListObjectsRequest.
+        r"""Gets the version_id_marker of this ListObjectsRequest.
 
         This parameter applies only when versioning is enabled.  Specifies the version ID to start with when objects in a bucket are listed. Objects are listed in alphabetical order and a maximum of 1,000 objects can be displayed at a time. This parameter is used together with **key-marker**. If the value of **version-id-marker** does not match **key-marker**, **version-id-marker** is invalid.  Valid value: object version ID, which is the value of **NextVersionIdMarker** in the response body of the last request
 
@@ -265,7 +265,7 @@ class ListObjectsRequest:
 
     @version_id_marker.setter
     def version_id_marker(self, version_id_marker):
-        """Sets the version_id_marker of this ListObjectsRequest.
+        r"""Sets the version_id_marker of this ListObjectsRequest.
 
         This parameter applies only when versioning is enabled.  Specifies the version ID to start with when objects in a bucket are listed. Objects are listed in alphabetical order and a maximum of 1,000 objects can be displayed at a time. This parameter is used together with **key-marker**. If the value of **version-id-marker** does not match **key-marker**, **version-id-marker** is invalid.  Valid value: object version ID, which is the value of **NextVersionIdMarker** in the response body of the last request
 
@@ -276,7 +276,7 @@ class ListObjectsRequest:
 
     @property
     def encoding_type(self):
-        """Gets the encoding_type of this ListObjectsRequest.
+        r"""Gets the encoding_type of this ListObjectsRequest.
 
         Encodes some elements in the response based on the specified type. If **Delimiter**, **Marker** (or **KeyMarker**), **Prefix**, **NextMarker** (or **NextKeyMarker**), and **Key** contain control characters that are not supported by XML 1.0 standards, you can configure **encoding-type** to encode **Delimiter**, **Marker** (or **KeyMarker**), **Prefix** (including the **Prefix** in **CommonPrefixes**), **NextMarker** (or **NextKeyMarker**), and **Key** in the response.  Optional value: url
 
@@ -287,7 +287,7 @@ class ListObjectsRequest:
 
     @encoding_type.setter
     def encoding_type(self, encoding_type):
-        """Sets the encoding_type of this ListObjectsRequest.
+        r"""Sets the encoding_type of this ListObjectsRequest.
 
         Encodes some elements in the response based on the specified type. If **Delimiter**, **Marker** (or **KeyMarker**), **Prefix**, **NextMarker** (or **NextKeyMarker**), and **Key** contain control characters that are not supported by XML 1.0 standards, you can configure **encoding-type** to encode **Delimiter**, **Marker** (or **KeyMarker**), **Prefix** (including the **Prefix** in **CommonPrefixes**), **NextMarker** (or **NextKeyMarker**), and **Key** in the response.  Optional value: url
 

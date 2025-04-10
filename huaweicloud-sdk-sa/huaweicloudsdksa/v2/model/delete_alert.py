@@ -25,7 +25,7 @@ class DeleteAlert:
     }
 
     def __init__(self, ids=None):
-        """DeleteAlert
+        r"""DeleteAlert
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteAlert:
 
     @property
     def ids(self):
-        """Gets the ids of this DeleteAlert.
+        r"""Gets the ids of this DeleteAlert.
 
         删除事件的ID列表
 
@@ -54,7 +54,7 @@ class DeleteAlert:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this DeleteAlert.
+        r"""Sets the ids of this DeleteAlert.
 
         删除事件的ID列表
 

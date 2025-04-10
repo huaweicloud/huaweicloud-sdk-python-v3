@@ -29,7 +29,7 @@ class BlackWhiteIpListRequest:
     }
 
     def __init__(self, instance_id=None, type=None, ips=None):
-        """BlackWhiteIpListRequest
+        r"""BlackWhiteIpListRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class BlackWhiteIpListRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BlackWhiteIpListRequest.
+        r"""Gets the instance_id of this BlackWhiteIpListRequest.
 
         实例id
 
@@ -65,7 +65,7 @@ class BlackWhiteIpListRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BlackWhiteIpListRequest.
+        r"""Sets the instance_id of this BlackWhiteIpListRequest.
 
         实例id
 
@@ -76,7 +76,7 @@ class BlackWhiteIpListRequest:
 
     @property
     def type(self):
-        """Gets the type of this BlackWhiteIpListRequest.
+        r"""Gets the type of this BlackWhiteIpListRequest.
 
         规则类型。black - 黑名单， white - 白名单
 
@@ -87,7 +87,7 @@ class BlackWhiteIpListRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BlackWhiteIpListRequest.
+        r"""Sets the type of this BlackWhiteIpListRequest.
 
         规则类型。black - 黑名单， white - 白名单
 
@@ -98,7 +98,7 @@ class BlackWhiteIpListRequest:
 
     @property
     def ips(self):
-        """Gets the ips of this BlackWhiteIpListRequest.
+        r"""Gets the ips of this BlackWhiteIpListRequest.
 
         ip列表
 
@@ -109,7 +109,7 @@ class BlackWhiteIpListRequest:
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this BlackWhiteIpListRequest.
+        r"""Sets the ips of this BlackWhiteIpListRequest.
 
         ip列表
 

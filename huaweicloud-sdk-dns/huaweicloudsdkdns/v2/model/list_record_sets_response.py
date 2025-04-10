@@ -30,7 +30,7 @@ class ListRecordSetsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, recordsets=None, metadata=None):
-        """ListRecordSetsResponse
+        r"""ListRecordSetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRecordSetsResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ListRecordSetsResponse.
+        r"""Gets the links of this ListRecordSetsResponse.
 
         :return: The links of this ListRecordSetsResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -67,7 +67,7 @@ class ListRecordSetsResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListRecordSetsResponse.
+        r"""Sets the links of this ListRecordSetsResponse.
 
         :param links: The links of this ListRecordSetsResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -76,7 +76,7 @@ class ListRecordSetsResponse(SdkResponse):
 
     @property
     def recordsets(self):
-        """Gets the recordsets of this ListRecordSetsResponse.
+        r"""Gets the recordsets of this ListRecordSetsResponse.
 
         recordset列表对象。
 
@@ -87,7 +87,7 @@ class ListRecordSetsResponse(SdkResponse):
 
     @recordsets.setter
     def recordsets(self, recordsets):
-        """Sets the recordsets of this ListRecordSetsResponse.
+        r"""Sets the recordsets of this ListRecordSetsResponse.
 
         recordset列表对象。
 
@@ -98,7 +98,7 @@ class ListRecordSetsResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListRecordSetsResponse.
+        r"""Gets the metadata of this ListRecordSetsResponse.
 
         :return: The metadata of this ListRecordSetsResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -107,7 +107,7 @@ class ListRecordSetsResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListRecordSetsResponse.
+        r"""Sets the metadata of this ListRecordSetsResponse.
 
         :param metadata: The metadata of this ListRecordSetsResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`

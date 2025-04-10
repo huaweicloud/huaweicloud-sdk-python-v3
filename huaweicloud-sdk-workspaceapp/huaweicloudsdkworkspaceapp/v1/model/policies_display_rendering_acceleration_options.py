@@ -29,7 +29,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
     }
 
     def __init__(self, video_acceleration_enhancement_enable=None, video_optimization_enable=None, gpu_color_optimization_enable=None):
-        """PoliciesDisplayRenderingAccelerationOptions
+        r"""PoliciesDisplayRenderingAccelerationOptions
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def video_acceleration_enhancement_enable(self):
-        """Gets the video_acceleration_enhancement_enable of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the video_acceleration_enhancement_enable of this PoliciesDisplayRenderingAccelerationOptions.
 
         视频加速增强配置。取值为： false：表示关闭。 true：表示开启。
 
@@ -68,7 +68,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @video_acceleration_enhancement_enable.setter
     def video_acceleration_enhancement_enable(self, video_acceleration_enhancement_enable):
-        """Sets the video_acceleration_enhancement_enable of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the video_acceleration_enhancement_enable of this PoliciesDisplayRenderingAccelerationOptions.
 
         视频加速增强配置。取值为： false：表示关闭。 true：表示开启。
 
@@ -79,7 +79,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def video_optimization_enable(self):
-        """Gets the video_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the video_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
 
         是否开启视频场景优化。取值为： false：表示关闭。 true：表示开启。
 
@@ -90,7 +90,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @video_optimization_enable.setter
     def video_optimization_enable(self, video_optimization_enable):
-        """Sets the video_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the video_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
 
         是否开启视频场景优化。取值为： false：表示关闭。 true：表示开启。
 
@@ -101,7 +101,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def gpu_color_optimization_enable(self):
-        """Gets the gpu_color_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the gpu_color_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
 
         是否开启GPU色彩优化。取值为： false：表示关闭。 true：表示开启。
 
@@ -112,7 +112,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @gpu_color_optimization_enable.setter
     def gpu_color_optimization_enable(self, gpu_color_optimization_enable):
-        """Sets the gpu_color_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the gpu_color_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
 
         是否开启GPU色彩优化。取值为： false：表示关闭。 true：表示开启。
 

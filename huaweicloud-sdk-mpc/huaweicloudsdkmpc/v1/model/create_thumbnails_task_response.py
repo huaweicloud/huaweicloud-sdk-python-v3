@@ -38,7 +38,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, output=None, output_file_name=None, thumbnail_time=None, description=None):
-        """CreateThumbnailsTaskResponse
+        r"""CreateThumbnailsTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateThumbnailsTaskResponse.
+        r"""Gets the task_id of this CreateThumbnailsTaskResponse.
 
         任务ID。
 
@@ -97,7 +97,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateThumbnailsTaskResponse.
+        r"""Sets the task_id of this CreateThumbnailsTaskResponse.
 
         任务ID。
 
@@ -108,7 +108,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateThumbnailsTaskResponse.
+        r"""Gets the status of this CreateThumbnailsTaskResponse.
 
         任务状态
 
@@ -119,7 +119,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateThumbnailsTaskResponse.
+        r"""Sets the status of this CreateThumbnailsTaskResponse.
 
         任务状态
 
@@ -130,7 +130,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateThumbnailsTaskResponse.
+        r"""Gets the create_time of this CreateThumbnailsTaskResponse.
 
         任务创建时间
 
@@ -141,7 +141,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateThumbnailsTaskResponse.
+        r"""Sets the create_time of this CreateThumbnailsTaskResponse.
 
         任务创建时间
 
@@ -152,7 +152,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
     @property
     def output(self):
-        """Gets the output of this CreateThumbnailsTaskResponse.
+        r"""Gets the output of this CreateThumbnailsTaskResponse.
 
         :return: The output of this CreateThumbnailsTaskResponse.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -161,7 +161,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CreateThumbnailsTaskResponse.
+        r"""Sets the output of this CreateThumbnailsTaskResponse.
 
         :param output: The output of this CreateThumbnailsTaskResponse.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -170,7 +170,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
     @property
     def output_file_name(self):
-        """Gets the output_file_name of this CreateThumbnailsTaskResponse.
+        r"""Gets the output_file_name of this CreateThumbnailsTaskResponse.
 
         截图文件名称
 
@@ -181,7 +181,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
     @output_file_name.setter
     def output_file_name(self, output_file_name):
-        """Sets the output_file_name of this CreateThumbnailsTaskResponse.
+        r"""Sets the output_file_name of this CreateThumbnailsTaskResponse.
 
         截图文件名称
 
@@ -192,7 +192,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
     @property
     def thumbnail_time(self):
-        """Gets the thumbnail_time of this CreateThumbnailsTaskResponse.
+        r"""Gets the thumbnail_time of this CreateThumbnailsTaskResponse.
 
         指定的截图时间点
 
@@ -203,7 +203,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
     @thumbnail_time.setter
     def thumbnail_time(self, thumbnail_time):
-        """Sets the thumbnail_time of this CreateThumbnailsTaskResponse.
+        r"""Sets the thumbnail_time of this CreateThumbnailsTaskResponse.
 
         指定的截图时间点
 
@@ -214,7 +214,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateThumbnailsTaskResponse.
+        r"""Gets the description of this CreateThumbnailsTaskResponse.
 
         截图任务描述，当截图出现异常时，此字段为异常的原因
 
@@ -225,7 +225,7 @@ class CreateThumbnailsTaskResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateThumbnailsTaskResponse.
+        r"""Sets the description of this CreateThumbnailsTaskResponse.
 
         截图任务描述，当截图出现异常时，此字段为异常的原因
 

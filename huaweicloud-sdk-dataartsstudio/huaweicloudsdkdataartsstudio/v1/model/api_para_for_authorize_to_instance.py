@@ -27,7 +27,7 @@ class ApiParaForAuthorizeToInstance:
     }
 
     def __init__(self, time=None, app_ids=None):
-        """ApiParaForAuthorizeToInstance
+        r"""ApiParaForAuthorizeToInstance
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApiParaForAuthorizeToInstance:
 
     @property
     def time(self):
-        """Gets the time of this ApiParaForAuthorizeToInstance.
+        r"""Gets the time of this ApiParaForAuthorizeToInstance.
 
         截止时间
 
@@ -61,7 +61,7 @@ class ApiParaForAuthorizeToInstance:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ApiParaForAuthorizeToInstance.
+        r"""Sets the time of this ApiParaForAuthorizeToInstance.
 
         截止时间
 
@@ -72,7 +72,7 @@ class ApiParaForAuthorizeToInstance:
 
     @property
     def app_ids(self):
-        """Gets the app_ids of this ApiParaForAuthorizeToInstance.
+        r"""Gets the app_ids of this ApiParaForAuthorizeToInstance.
 
         app编号列表
 
@@ -83,7 +83,7 @@ class ApiParaForAuthorizeToInstance:
 
     @app_ids.setter
     def app_ids(self, app_ids):
-        """Sets the app_ids of this ApiParaForAuthorizeToInstance.
+        r"""Sets the app_ids of this ApiParaForAuthorizeToInstance.
 
         app编号列表
 

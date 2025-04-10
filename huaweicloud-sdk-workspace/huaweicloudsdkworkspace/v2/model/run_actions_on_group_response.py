@@ -24,7 +24,7 @@ class RunActionsOnGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RunActionsOnGroupResponse
+        r"""RunActionsOnGroupResponse
 
         The model defined in huaweicloud sdk
 

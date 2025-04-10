@@ -23,7 +23,7 @@ class ShowAdminHealthCheckRequest:
     }
 
     def __init__(self):
-        """ShowAdminHealthCheckRequest
+        r"""ShowAdminHealthCheckRequest
 
         The model defined in huaweicloud sdk
 

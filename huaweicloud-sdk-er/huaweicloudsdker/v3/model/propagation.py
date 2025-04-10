@@ -45,7 +45,7 @@ class Propagation:
     }
 
     def __init__(self, id=None, project_id=None, er_id=None, route_table_id=None, attachment_id=None, resource_type=None, resource_id=None, route_policy=None, state=None, created_at=None, updated_at=None):
-        """Propagation
+        r"""Propagation
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class Propagation:
 
     @property
     def id(self):
-        """Gets the id of this Propagation.
+        r"""Gets the id of this Propagation.
 
         关联唯一标识
 
@@ -124,7 +124,7 @@ class Propagation:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Propagation.
+        r"""Sets the id of this Propagation.
 
         关联唯一标识
 
@@ -135,7 +135,7 @@ class Propagation:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Propagation.
+        r"""Gets the project_id of this Propagation.
 
         项目ID
 
@@ -146,7 +146,7 @@ class Propagation:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Propagation.
+        r"""Sets the project_id of this Propagation.
 
         项目ID
 
@@ -157,7 +157,7 @@ class Propagation:
 
     @property
     def er_id(self):
-        """Gets the er_id of this Propagation.
+        r"""Gets the er_id of this Propagation.
 
         企业路由器id
 
@@ -168,7 +168,7 @@ class Propagation:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this Propagation.
+        r"""Sets the er_id of this Propagation.
 
         企业路由器id
 
@@ -179,7 +179,7 @@ class Propagation:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this Propagation.
+        r"""Gets the route_table_id of this Propagation.
 
         路由表唯一标识
 
@@ -190,7 +190,7 @@ class Propagation:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this Propagation.
+        r"""Sets the route_table_id of this Propagation.
 
         路由表唯一标识
 
@@ -201,7 +201,7 @@ class Propagation:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this Propagation.
+        r"""Gets the attachment_id of this Propagation.
 
         连接唯一标识
 
@@ -212,7 +212,7 @@ class Propagation:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this Propagation.
+        r"""Sets the attachment_id of this Propagation.
 
         连接唯一标识
 
@@ -223,7 +223,7 @@ class Propagation:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Propagation.
+        r"""Gets the resource_type of this Propagation.
 
         连接的类型
 
@@ -234,7 +234,7 @@ class Propagation:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Propagation.
+        r"""Sets the resource_type of this Propagation.
 
         连接的类型
 
@@ -245,7 +245,7 @@ class Propagation:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this Propagation.
+        r"""Gets the resource_id of this Propagation.
 
         连接的资源唯一标识
 
@@ -256,7 +256,7 @@ class Propagation:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this Propagation.
+        r"""Sets the resource_id of this Propagation.
 
         连接的资源唯一标识
 
@@ -267,7 +267,7 @@ class Propagation:
 
     @property
     def route_policy(self):
-        """Gets the route_policy of this Propagation.
+        r"""Gets the route_policy of this Propagation.
 
         :return: The route_policy of this Propagation.
         :rtype: :class:`huaweicloudsdker.v3.ImportRoutePolicy`
@@ -276,7 +276,7 @@ class Propagation:
 
     @route_policy.setter
     def route_policy(self, route_policy):
-        """Sets the route_policy of this Propagation.
+        r"""Sets the route_policy of this Propagation.
 
         :param route_policy: The route_policy of this Propagation.
         :type route_policy: :class:`huaweicloudsdker.v3.ImportRoutePolicy`
@@ -285,7 +285,7 @@ class Propagation:
 
     @property
     def state(self):
-        """Gets the state of this Propagation.
+        r"""Gets the state of this Propagation.
 
         状态
 
@@ -296,7 +296,7 @@ class Propagation:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this Propagation.
+        r"""Sets the state of this Propagation.
 
         状态
 
@@ -307,7 +307,7 @@ class Propagation:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Propagation.
+        r"""Gets the created_at of this Propagation.
 
         资源创建时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
 
@@ -318,7 +318,7 @@ class Propagation:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Propagation.
+        r"""Sets the created_at of this Propagation.
 
         资源创建时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
 
@@ -329,7 +329,7 @@ class Propagation:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Propagation.
+        r"""Gets the updated_at of this Propagation.
 
         资源更新时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
 
@@ -340,7 +340,7 @@ class Propagation:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Propagation.
+        r"""Sets the updated_at of this Propagation.
 
         资源更新时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
 

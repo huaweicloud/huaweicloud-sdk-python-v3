@@ -27,7 +27,7 @@ class EventStreamingCreateReqRuleConfig:
     }
 
     def __init__(self, transform=None, filter=None):
-        """EventStreamingCreateReqRuleConfig
+        r"""EventStreamingCreateReqRuleConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EventStreamingCreateReqRuleConfig:
 
     @property
     def transform(self):
-        """Gets the transform of this EventStreamingCreateReqRuleConfig.
+        r"""Gets the transform of this EventStreamingCreateReqRuleConfig.
 
         :return: The transform of this EventStreamingCreateReqRuleConfig.
         :rtype: :class:`huaweicloudsdkeg.v1.TransForm`
@@ -59,7 +59,7 @@ class EventStreamingCreateReqRuleConfig:
 
     @transform.setter
     def transform(self, transform):
-        """Sets the transform of this EventStreamingCreateReqRuleConfig.
+        r"""Sets the transform of this EventStreamingCreateReqRuleConfig.
 
         :param transform: The transform of this EventStreamingCreateReqRuleConfig.
         :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
@@ -68,7 +68,7 @@ class EventStreamingCreateReqRuleConfig:
 
     @property
     def filter(self):
-        """Gets the filter of this EventStreamingCreateReqRuleConfig.
+        r"""Gets the filter of this EventStreamingCreateReqRuleConfig.
 
         过滤规则
 
@@ -79,7 +79,7 @@ class EventStreamingCreateReqRuleConfig:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this EventStreamingCreateReqRuleConfig.
+        r"""Sets the filter of this EventStreamingCreateReqRuleConfig.
 
         过滤规则
 

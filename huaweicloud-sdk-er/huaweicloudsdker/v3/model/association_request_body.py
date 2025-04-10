@@ -27,7 +27,7 @@ class AssociationRequestBody:
     }
 
     def __init__(self, attachment_id=None, route_policy=None):
-        """AssociationRequestBody
+        r"""AssociationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AssociationRequestBody:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this AssociationRequestBody.
+        r"""Gets the attachment_id of this AssociationRequestBody.
 
         连接唯一标识
 
@@ -61,7 +61,7 @@ class AssociationRequestBody:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this AssociationRequestBody.
+        r"""Sets the attachment_id of this AssociationRequestBody.
 
         连接唯一标识
 
@@ -72,7 +72,7 @@ class AssociationRequestBody:
 
     @property
     def route_policy(self):
-        """Gets the route_policy of this AssociationRequestBody.
+        r"""Gets the route_policy of this AssociationRequestBody.
 
         :return: The route_policy of this AssociationRequestBody.
         :rtype: :class:`huaweicloudsdker.v3.ExportRoutePolicy`
@@ -81,7 +81,7 @@ class AssociationRequestBody:
 
     @route_policy.setter
     def route_policy(self, route_policy):
-        """Sets the route_policy of this AssociationRequestBody.
+        r"""Sets the route_policy of this AssociationRequestBody.
 
         :param route_policy: The route_policy of this AssociationRequestBody.
         :type route_policy: :class:`huaweicloudsdker.v3.ExportRoutePolicy`

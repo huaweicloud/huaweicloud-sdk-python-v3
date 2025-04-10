@@ -27,7 +27,7 @@ class CreateAccessPolicyReq:
     }
 
     def __init__(self, policy=None, policy_objects_list=None):
-        """CreateAccessPolicyReq
+        r"""CreateAccessPolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAccessPolicyReq:
 
     @property
     def policy(self):
-        """Gets the policy of this CreateAccessPolicyReq.
+        r"""Gets the policy of this CreateAccessPolicyReq.
 
         :return: The policy of this CreateAccessPolicyReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AccessPolicyInfo`
@@ -58,7 +58,7 @@ class CreateAccessPolicyReq:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this CreateAccessPolicyReq.
+        r"""Sets the policy of this CreateAccessPolicyReq.
 
         :param policy: The policy of this CreateAccessPolicyReq.
         :type policy: :class:`huaweicloudsdkworkspace.v2.AccessPolicyInfo`
@@ -67,7 +67,7 @@ class CreateAccessPolicyReq:
 
     @property
     def policy_objects_list(self):
-        """Gets the policy_objects_list of this CreateAccessPolicyReq.
+        r"""Gets the policy_objects_list of this CreateAccessPolicyReq.
 
         策略应用对象列表。
 
@@ -78,7 +78,7 @@ class CreateAccessPolicyReq:
 
     @policy_objects_list.setter
     def policy_objects_list(self, policy_objects_list):
-        """Sets the policy_objects_list of this CreateAccessPolicyReq.
+        r"""Sets the policy_objects_list of this CreateAccessPolicyReq.
 
         策略应用对象列表。
 

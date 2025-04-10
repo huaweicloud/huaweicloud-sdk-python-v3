@@ -34,7 +34,7 @@ class UpdateTransferResponse(SdkResponse):
     }
 
     def __init__(self, log_group_id=None, log_group_name=None, log_streams=None, log_transfer_id=None, log_transfer_info=None):
-        """UpdateTransferResponse
+        r"""UpdateTransferResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpdateTransferResponse(SdkResponse):
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this UpdateTransferResponse.
+        r"""Gets the log_group_id of this UpdateTransferResponse.
 
         日志组ID
 
@@ -83,7 +83,7 @@ class UpdateTransferResponse(SdkResponse):
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this UpdateTransferResponse.
+        r"""Sets the log_group_id of this UpdateTransferResponse.
 
         日志组ID
 
@@ -94,7 +94,7 @@ class UpdateTransferResponse(SdkResponse):
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this UpdateTransferResponse.
+        r"""Gets the log_group_name of this UpdateTransferResponse.
 
         日志组名称
 
@@ -105,7 +105,7 @@ class UpdateTransferResponse(SdkResponse):
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this UpdateTransferResponse.
+        r"""Sets the log_group_name of this UpdateTransferResponse.
 
         日志组名称
 
@@ -116,7 +116,7 @@ class UpdateTransferResponse(SdkResponse):
 
     @property
     def log_streams(self):
-        """Gets the log_streams of this UpdateTransferResponse.
+        r"""Gets the log_streams of this UpdateTransferResponse.
 
         日志流ID集合
 
@@ -127,7 +127,7 @@ class UpdateTransferResponse(SdkResponse):
 
     @log_streams.setter
     def log_streams(self, log_streams):
-        """Sets the log_streams of this UpdateTransferResponse.
+        r"""Sets the log_streams of this UpdateTransferResponse.
 
         日志流ID集合
 
@@ -138,7 +138,7 @@ class UpdateTransferResponse(SdkResponse):
 
     @property
     def log_transfer_id(self):
-        """Gets the log_transfer_id of this UpdateTransferResponse.
+        r"""Gets the log_transfer_id of this UpdateTransferResponse.
 
         日志转储ID
 
@@ -149,7 +149,7 @@ class UpdateTransferResponse(SdkResponse):
 
     @log_transfer_id.setter
     def log_transfer_id(self, log_transfer_id):
-        """Sets the log_transfer_id of this UpdateTransferResponse.
+        r"""Sets the log_transfer_id of this UpdateTransferResponse.
 
         日志转储ID
 
@@ -160,7 +160,7 @@ class UpdateTransferResponse(SdkResponse):
 
     @property
     def log_transfer_info(self):
-        """Gets the log_transfer_info of this UpdateTransferResponse.
+        r"""Gets the log_transfer_info of this UpdateTransferResponse.
 
         :return: The log_transfer_info of this UpdateTransferResponse.
         :rtype: :class:`huaweicloudsdklts.v2.CreateTransferResponseBodyLogTransferInfo`
@@ -169,7 +169,7 @@ class UpdateTransferResponse(SdkResponse):
 
     @log_transfer_info.setter
     def log_transfer_info(self, log_transfer_info):
-        """Sets the log_transfer_info of this UpdateTransferResponse.
+        r"""Sets the log_transfer_info of this UpdateTransferResponse.
 
         :param log_transfer_info: The log_transfer_info of this UpdateTransferResponse.
         :type log_transfer_info: :class:`huaweicloudsdklts.v2.CreateTransferResponseBodyLogTransferInfo`

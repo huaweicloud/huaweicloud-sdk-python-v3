@@ -55,7 +55,7 @@ class ListCasesRequest:
     }
 
     def __init__(self, search_key=None, label_id_list=None, app_key=None, incident_id=None, query_start_time=None, query_end_time=None, status=None, incident_status=None, x_customer_id=None, x_customer_name=None, group_id=None, offset=None, limit=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListCasesRequest
+        r"""ListCasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class ListCasesRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this ListCasesRequest.
+        r"""Gets the search_key of this ListCasesRequest.
 
         关键字查询，支持多个空格隔开
 
@@ -159,7 +159,7 @@ class ListCasesRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this ListCasesRequest.
+        r"""Sets the search_key of this ListCasesRequest.
 
         关键字查询，支持多个空格隔开
 
@@ -170,7 +170,7 @@ class ListCasesRequest:
 
     @property
     def label_id_list(self):
-        """Gets the label_id_list of this ListCasesRequest.
+        r"""Gets the label_id_list of this ListCasesRequest.
 
         标签列表，最多支持5个
 
@@ -181,7 +181,7 @@ class ListCasesRequest:
 
     @label_id_list.setter
     def label_id_list(self, label_id_list):
-        """Sets the label_id_list of this ListCasesRequest.
+        r"""Sets the label_id_list of this ListCasesRequest.
 
         标签列表，最多支持5个
 
@@ -192,7 +192,7 @@ class ListCasesRequest:
 
     @property
     def app_key(self):
-        """Gets the app_key of this ListCasesRequest.
+        r"""Gets the app_key of this ListCasesRequest.
 
         app关键字查询
 
@@ -203,7 +203,7 @@ class ListCasesRequest:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this ListCasesRequest.
+        r"""Sets the app_key of this ListCasesRequest.
 
         app关键字查询
 
@@ -214,7 +214,7 @@ class ListCasesRequest:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this ListCasesRequest.
+        r"""Gets the incident_id of this ListCasesRequest.
 
         工单id
 
@@ -225,7 +225,7 @@ class ListCasesRequest:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this ListCasesRequest.
+        r"""Sets the incident_id of this ListCasesRequest.
 
         工单id
 
@@ -236,7 +236,7 @@ class ListCasesRequest:
 
     @property
     def query_start_time(self):
-        """Gets the query_start_time of this ListCasesRequest.
+        r"""Gets the query_start_time of this ListCasesRequest.
 
         查询开始时间
 
@@ -247,7 +247,7 @@ class ListCasesRequest:
 
     @query_start_time.setter
     def query_start_time(self, query_start_time):
-        """Sets the query_start_time of this ListCasesRequest.
+        r"""Sets the query_start_time of this ListCasesRequest.
 
         查询开始时间
 
@@ -258,7 +258,7 @@ class ListCasesRequest:
 
     @property
     def query_end_time(self):
-        """Gets the query_end_time of this ListCasesRequest.
+        r"""Gets the query_end_time of this ListCasesRequest.
 
         查询结束时间
 
@@ -269,7 +269,7 @@ class ListCasesRequest:
 
     @query_end_time.setter
     def query_end_time(self, query_end_time):
-        """Sets the query_end_time of this ListCasesRequest.
+        r"""Sets the query_end_time of this ListCasesRequest.
 
         查询结束时间
 
@@ -280,7 +280,7 @@ class ListCasesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListCasesRequest.
+        r"""Gets the status of this ListCasesRequest.
 
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 
@@ -291,7 +291,7 @@ class ListCasesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListCasesRequest.
+        r"""Sets the status of this ListCasesRequest.
 
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 
@@ -302,7 +302,7 @@ class ListCasesRequest:
 
     @property
     def incident_status(self):
-        """Gets the incident_status of this ListCasesRequest.
+        r"""Gets the incident_status of this ListCasesRequest.
 
         状态列表
 
@@ -313,7 +313,7 @@ class ListCasesRequest:
 
     @incident_status.setter
     def incident_status(self, incident_status):
-        """Sets the incident_status of this ListCasesRequest.
+        r"""Sets the incident_status of this ListCasesRequest.
 
         状态列表
 
@@ -324,7 +324,7 @@ class ListCasesRequest:
 
     @property
     def x_customer_id(self):
-        """Gets the x_customer_id of this ListCasesRequest.
+        r"""Gets the x_customer_id of this ListCasesRequest.
 
         子用户id
 
@@ -335,7 +335,7 @@ class ListCasesRequest:
 
     @x_customer_id.setter
     def x_customer_id(self, x_customer_id):
-        """Sets the x_customer_id of this ListCasesRequest.
+        r"""Sets the x_customer_id of this ListCasesRequest.
 
         子用户id
 
@@ -346,7 +346,7 @@ class ListCasesRequest:
 
     @property
     def x_customer_name(self):
-        """Gets the x_customer_name of this ListCasesRequest.
+        r"""Gets the x_customer_name of this ListCasesRequest.
 
         子用户名称
 
@@ -357,7 +357,7 @@ class ListCasesRequest:
 
     @x_customer_name.setter
     def x_customer_name(self, x_customer_name):
-        """Sets the x_customer_name of this ListCasesRequest.
+        r"""Sets the x_customer_name of this ListCasesRequest.
 
         子用户名称
 
@@ -368,7 +368,7 @@ class ListCasesRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListCasesRequest.
+        r"""Gets the group_id of this ListCasesRequest.
 
         华为云IAM组id，同组其他工单时，该id必传
 
@@ -379,7 +379,7 @@ class ListCasesRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListCasesRequest.
+        r"""Sets the group_id of this ListCasesRequest.
 
         华为云IAM组id，同组其他工单时，该id必传
 
@@ -390,7 +390,7 @@ class ListCasesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCasesRequest.
+        r"""Gets the offset of this ListCasesRequest.
 
         查询偏移量
 
@@ -401,7 +401,7 @@ class ListCasesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCasesRequest.
+        r"""Sets the offset of this ListCasesRequest.
 
         查询偏移量
 
@@ -412,7 +412,7 @@ class ListCasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCasesRequest.
+        r"""Gets the limit of this ListCasesRequest.
 
         查询限制数量
 
@@ -423,7 +423,7 @@ class ListCasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCasesRequest.
+        r"""Sets the limit of this ListCasesRequest.
 
         查询限制数量
 
@@ -434,7 +434,7 @@ class ListCasesRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ListCasesRequest.
+        r"""Gets the x_site of this ListCasesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -445,7 +445,7 @@ class ListCasesRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ListCasesRequest.
+        r"""Sets the x_site of this ListCasesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -456,7 +456,7 @@ class ListCasesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListCasesRequest.
+        r"""Gets the x_language of this ListCasesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -467,7 +467,7 @@ class ListCasesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListCasesRequest.
+        r"""Sets the x_language of this ListCasesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -478,7 +478,7 @@ class ListCasesRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this ListCasesRequest.
+        r"""Gets the x_time_zone of this ListCasesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -489,7 +489,7 @@ class ListCasesRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this ListCasesRequest.
+        r"""Sets the x_time_zone of this ListCasesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

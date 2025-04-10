@@ -40,7 +40,7 @@ class ListJobDetailsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, job_name=None, begin_time=None, end_time=None, status=None, failed_code=None, failed_detail=None, progress=None):
-        """ListJobDetailsResponse
+        r"""ListJobDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListJobDetailsResponse.
+        r"""Gets the job_id of this ListJobDetailsResponse.
 
         任务ID
 
@@ -104,7 +104,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListJobDetailsResponse.
+        r"""Sets the job_id of this ListJobDetailsResponse.
 
         任务ID
 
@@ -115,7 +115,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListJobDetailsResponse.
+        r"""Gets the job_name of this ListJobDetailsResponse.
 
         任务名称
 
@@ -126,7 +126,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListJobDetailsResponse.
+        r"""Sets the job_name of this ListJobDetailsResponse.
 
         任务名称
 
@@ -137,7 +137,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListJobDetailsResponse.
+        r"""Gets the begin_time of this ListJobDetailsResponse.
 
         任务开始时间
 
@@ -148,7 +148,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListJobDetailsResponse.
+        r"""Sets the begin_time of this ListJobDetailsResponse.
 
         任务开始时间
 
@@ -159,7 +159,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListJobDetailsResponse.
+        r"""Gets the end_time of this ListJobDetailsResponse.
 
         任务结束时间
 
@@ -170,7 +170,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListJobDetailsResponse.
+        r"""Sets the end_time of this ListJobDetailsResponse.
 
         任务结束时间
 
@@ -181,7 +181,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListJobDetailsResponse.
+        r"""Gets the status of this ListJobDetailsResponse.
 
         任务当前状态
 
@@ -192,7 +192,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListJobDetailsResponse.
+        r"""Sets the status of this ListJobDetailsResponse.
 
         任务当前状态
 
@@ -203,7 +203,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @property
     def failed_code(self):
-        """Gets the failed_code of this ListJobDetailsResponse.
+        r"""Gets the failed_code of this ListJobDetailsResponse.
 
         任务失败错误码
 
@@ -214,7 +214,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @failed_code.setter
     def failed_code(self, failed_code):
-        """Sets the failed_code of this ListJobDetailsResponse.
+        r"""Sets the failed_code of this ListJobDetailsResponse.
 
         任务失败错误码
 
@@ -225,7 +225,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @property
     def failed_detail(self):
-        """Gets the failed_detail of this ListJobDetailsResponse.
+        r"""Gets the failed_detail of this ListJobDetailsResponse.
 
         任务失败错误详情
 
@@ -236,7 +236,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @failed_detail.setter
     def failed_detail(self, failed_detail):
-        """Sets the failed_detail of this ListJobDetailsResponse.
+        r"""Sets the failed_detail of this ListJobDetailsResponse.
 
         任务失败错误详情
 
@@ -247,7 +247,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @property
     def progress(self):
-        """Gets the progress of this ListJobDetailsResponse.
+        r"""Gets the progress of this ListJobDetailsResponse.
 
         任务进度
 
@@ -258,7 +258,7 @@ class ListJobDetailsResponse(SdkResponse):
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ListJobDetailsResponse.
+        r"""Sets the progress of this ListJobDetailsResponse.
 
         任务进度
 

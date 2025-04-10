@@ -35,7 +35,7 @@ class TrackerObsInfo:
     }
 
     def __init__(self, bucket_name=None, file_prefix_name=None, is_obs_created=None, bucket_lifecycle=None, compress_type=None, is_sort_by_service=None):
-        """TrackerObsInfo
+        r"""TrackerObsInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class TrackerObsInfo:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this TrackerObsInfo.
+        r"""Gets the bucket_name of this TrackerObsInfo.
 
         标识OBS桶名称。由数字或字母开头，支持小写字母、数字、“-”、“.”，长度为3～63个字符。
 
@@ -89,7 +89,7 @@ class TrackerObsInfo:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this TrackerObsInfo.
+        r"""Sets the bucket_name of this TrackerObsInfo.
 
         标识OBS桶名称。由数字或字母开头，支持小写字母、数字、“-”、“.”，长度为3～63个字符。
 
@@ -100,7 +100,7 @@ class TrackerObsInfo:
 
     @property
     def file_prefix_name(self):
-        """Gets the file_prefix_name of this TrackerObsInfo.
+        r"""Gets the file_prefix_name of this TrackerObsInfo.
 
         标识需要存储于OBS的日志文件前缀，0-9，a-z，A-Z，'-'，'.'，'_'长度为0～64字符。
 
@@ -111,7 +111,7 @@ class TrackerObsInfo:
 
     @file_prefix_name.setter
     def file_prefix_name(self, file_prefix_name):
-        """Sets the file_prefix_name of this TrackerObsInfo.
+        r"""Sets the file_prefix_name of this TrackerObsInfo.
 
         标识需要存储于OBS的日志文件前缀，0-9，a-z，A-Z，'-'，'.'，'_'长度为0～64字符。
 
@@ -122,7 +122,7 @@ class TrackerObsInfo:
 
     @property
     def is_obs_created(self):
-        """Gets the is_obs_created of this TrackerObsInfo.
+        r"""Gets the is_obs_created of this TrackerObsInfo.
 
         是否支持新建OBS桶。   值为“true”时，表示新创建OBS桶存储事件文件；   值为“false”时，选择已存在的OBS桶存储事件文件。
 
@@ -133,7 +133,7 @@ class TrackerObsInfo:
 
     @is_obs_created.setter
     def is_obs_created(self, is_obs_created):
-        """Sets the is_obs_created of this TrackerObsInfo.
+        r"""Sets the is_obs_created of this TrackerObsInfo.
 
         是否支持新建OBS桶。   值为“true”时，表示新创建OBS桶存储事件文件；   值为“false”时，选择已存在的OBS桶存储事件文件。
 
@@ -144,7 +144,7 @@ class TrackerObsInfo:
 
     @property
     def bucket_lifecycle(self):
-        """Gets the bucket_lifecycle of this TrackerObsInfo.
+        r"""Gets the bucket_lifecycle of this TrackerObsInfo.
 
         标识配置桶内对象存储周期。 当\"tracker_type\"参数值为\"data\"时该参数值有效。
 
@@ -155,7 +155,7 @@ class TrackerObsInfo:
 
     @bucket_lifecycle.setter
     def bucket_lifecycle(self, bucket_lifecycle):
-        """Sets the bucket_lifecycle of this TrackerObsInfo.
+        r"""Sets the bucket_lifecycle of this TrackerObsInfo.
 
         标识配置桶内对象存储周期。 当\"tracker_type\"参数值为\"data\"时该参数值有效。
 
@@ -166,7 +166,7 @@ class TrackerObsInfo:
 
     @property
     def compress_type(self):
-        """Gets the compress_type of this TrackerObsInfo.
+        r"""Gets the compress_type of this TrackerObsInfo.
 
         压缩类型。包括不压缩（json），压缩（gzip）两种状态。默认为gzip格式。
 
@@ -177,7 +177,7 @@ class TrackerObsInfo:
 
     @compress_type.setter
     def compress_type(self, compress_type):
-        """Sets the compress_type of this TrackerObsInfo.
+        r"""Sets the compress_type of this TrackerObsInfo.
 
         压缩类型。包括不压缩（json），压缩（gzip）两种状态。默认为gzip格式。
 
@@ -188,7 +188,7 @@ class TrackerObsInfo:
 
     @property
     def is_sort_by_service(self):
-        """Gets the is_sort_by_service of this TrackerObsInfo.
+        r"""Gets the is_sort_by_service of this TrackerObsInfo.
 
         路径按云服务划分，打开后转储文件路径中将增加云服务名。默认为true。
 
@@ -199,7 +199,7 @@ class TrackerObsInfo:
 
     @is_sort_by_service.setter
     def is_sort_by_service(self, is_sort_by_service):
-        """Sets the is_sort_by_service of this TrackerObsInfo.
+        r"""Sets the is_sort_by_service of this TrackerObsInfo.
 
         路径按云服务划分，打开后转储文件路径中将增加云服务名。默认为true。
 

@@ -27,7 +27,7 @@ class ScopedTokenInfoRoles:
     }
 
     def __init__(self, id=None, name=None):
-        """ScopedTokenInfoRoles
+        r"""ScopedTokenInfoRoles
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ScopedTokenInfoRoles:
 
     @property
     def id(self):
-        """Gets the id of this ScopedTokenInfoRoles.
+        r"""Gets the id of this ScopedTokenInfoRoles.
 
         role id
 
@@ -61,7 +61,7 @@ class ScopedTokenInfoRoles:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScopedTokenInfoRoles.
+        r"""Sets the id of this ScopedTokenInfoRoles.
 
         role id
 
@@ -72,7 +72,7 @@ class ScopedTokenInfoRoles:
 
     @property
     def name(self):
-        """Gets the name of this ScopedTokenInfoRoles.
+        r"""Gets the name of this ScopedTokenInfoRoles.
 
         name id
 
@@ -83,7 +83,7 @@ class ScopedTokenInfoRoles:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScopedTokenInfoRoles.
+        r"""Sets the name of this ScopedTokenInfoRoles.
 
         name id
 

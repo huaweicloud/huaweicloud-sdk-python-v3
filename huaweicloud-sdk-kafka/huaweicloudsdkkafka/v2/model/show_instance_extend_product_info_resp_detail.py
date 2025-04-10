@@ -47,7 +47,7 @@ class ShowInstanceExtendProductInfoRespDetail:
     }
 
     def __init__(self, tps=None, storage=None, partition_num=None, product_id=None, spec_code=None, io=None, bandwidth=None, recommend_max_cons_groups=None, unavailable_zones=None, available_zones=None, ecs_flavor_id=None, arch_type=None):
-        """ShowInstanceExtendProductInfoRespDetail
+        r"""ShowInstanceExtendProductInfoRespDetail
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @property
     def tps(self):
-        """Gets the tps of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Gets the tps of this ShowInstanceExtendProductInfoRespDetail.
 
         单位时间内的消息量最大值。
 
@@ -131,7 +131,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @tps.setter
     def tps(self, tps):
-        """Sets the tps of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Sets the tps of this ShowInstanceExtendProductInfoRespDetail.
 
         单位时间内的消息量最大值。
 
@@ -142,7 +142,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @property
     def storage(self):
-        """Gets the storage of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Gets the storage of this ShowInstanceExtendProductInfoRespDetail.
 
         消息存储空间。
 
@@ -153,7 +153,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @storage.setter
     def storage(self, storage):
-        """Sets the storage of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Sets the storage of this ShowInstanceExtendProductInfoRespDetail.
 
         消息存储空间。
 
@@ -164,7 +164,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @property
     def partition_num(self):
-        """Gets the partition_num of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Gets the partition_num of this ShowInstanceExtendProductInfoRespDetail.
 
         Kafka实例的分区数量。
 
@@ -175,7 +175,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @partition_num.setter
     def partition_num(self, partition_num):
-        """Sets the partition_num of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Sets the partition_num of this ShowInstanceExtendProductInfoRespDetail.
 
         Kafka实例的分区数量。
 
@@ -186,7 +186,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Gets the product_id of this ShowInstanceExtendProductInfoRespDetail.
 
         产品ID。
 
@@ -197,7 +197,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Sets the product_id of this ShowInstanceExtendProductInfoRespDetail.
 
         产品ID。
 
@@ -208,7 +208,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Gets the spec_code of this ShowInstanceExtendProductInfoRespDetail.
 
         规格ID。
 
@@ -219,7 +219,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Sets the spec_code of this ShowInstanceExtendProductInfoRespDetail.
 
         规格ID。
 
@@ -230,7 +230,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @property
     def io(self):
-        """Gets the io of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Gets the io of this ShowInstanceExtendProductInfoRespDetail.
 
         IO信息。
 
@@ -241,7 +241,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @io.setter
     def io(self, io):
-        """Sets the io of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Sets the io of this ShowInstanceExtendProductInfoRespDetail.
 
         IO信息。
 
@@ -252,7 +252,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Gets the bandwidth of this ShowInstanceExtendProductInfoRespDetail.
 
         Kafka实例的基准带宽。
 
@@ -263,7 +263,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Sets the bandwidth of this ShowInstanceExtendProductInfoRespDetail.
 
         Kafka实例的基准带宽。
 
@@ -274,7 +274,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @property
     def recommend_max_cons_groups(self):
-        """Gets the recommend_max_cons_groups of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Gets the recommend_max_cons_groups of this ShowInstanceExtendProductInfoRespDetail.
 
         Kafka实例最大消费组数参考值。
 
@@ -285,7 +285,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @recommend_max_cons_groups.setter
     def recommend_max_cons_groups(self, recommend_max_cons_groups):
-        """Sets the recommend_max_cons_groups of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Sets the recommend_max_cons_groups of this ShowInstanceExtendProductInfoRespDetail.
 
         Kafka实例最大消费组数参考值。
 
@@ -296,7 +296,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @property
     def unavailable_zones(self):
-        """Gets the unavailable_zones of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Gets the unavailable_zones of this ShowInstanceExtendProductInfoRespDetail.
 
         资源售罄的可用区列表。
 
@@ -307,7 +307,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @unavailable_zones.setter
     def unavailable_zones(self, unavailable_zones):
-        """Sets the unavailable_zones of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Sets the unavailable_zones of this ShowInstanceExtendProductInfoRespDetail.
 
         资源售罄的可用区列表。
 
@@ -318,7 +318,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Gets the available_zones of this ShowInstanceExtendProductInfoRespDetail.
 
         有可用资源的可用区列表。
 
@@ -329,7 +329,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Sets the available_zones of this ShowInstanceExtendProductInfoRespDetail.
 
         有可用资源的可用区列表。
 
@@ -340,7 +340,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @property
     def ecs_flavor_id(self):
-        """Gets the ecs_flavor_id of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Gets the ecs_flavor_id of this ShowInstanceExtendProductInfoRespDetail.
 
         该产品规格对应的虚拟机规格。
 
@@ -351,7 +351,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @ecs_flavor_id.setter
     def ecs_flavor_id(self, ecs_flavor_id):
-        """Sets the ecs_flavor_id of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Sets the ecs_flavor_id of this ShowInstanceExtendProductInfoRespDetail.
 
         该产品规格对应的虚拟机规格。
 
@@ -362,7 +362,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @property
     def arch_type(self):
-        """Gets the arch_type of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Gets the arch_type of this ShowInstanceExtendProductInfoRespDetail.
 
         实例规格架构类型。当前仅支持X86。
 
@@ -373,7 +373,7 @@ class ShowInstanceExtendProductInfoRespDetail:
 
     @arch_type.setter
     def arch_type(self, arch_type):
-        """Sets the arch_type of this ShowInstanceExtendProductInfoRespDetail.
+        r"""Sets the arch_type of this ShowInstanceExtendProductInfoRespDetail.
 
         实例规格架构类型。当前仅支持X86。
 

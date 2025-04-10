@@ -25,7 +25,7 @@ class AddNodesToNodePool:
     }
 
     def __init__(self, server_id=None):
-        """AddNodesToNodePool
+        r"""AddNodesToNodePool
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddNodesToNodePool:
 
     @property
     def server_id(self):
-        """Gets the server_id of this AddNodesToNodePool.
+        r"""Gets the server_id of this AddNodesToNodePool.
 
         服务器ID，获取方式请参见ECS/BMS相关资料。
 
@@ -53,7 +53,7 @@ class AddNodesToNodePool:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this AddNodesToNodePool.
+        r"""Sets the server_id of this AddNodesToNodePool.
 
         服务器ID，获取方式请参见ECS/BMS相关资料。
 

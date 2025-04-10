@@ -24,7 +24,7 @@ class UpdateTrustPolicyV5Response(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateTrustPolicyV5Response
+        r"""UpdateTrustPolicyV5Response
 
         The model defined in huaweicloud sdk
 

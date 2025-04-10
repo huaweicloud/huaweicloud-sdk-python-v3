@@ -27,7 +27,7 @@ class CreateOrUpdateStoragePolicyStatementReq:
     }
 
     def __init__(self, actions=None, roam_actions=None):
-        """CreateOrUpdateStoragePolicyStatementReq
+        r"""CreateOrUpdateStoragePolicyStatementReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateOrUpdateStoragePolicyStatementReq:
 
     @property
     def actions(self):
-        """Gets the actions of this CreateOrUpdateStoragePolicyStatementReq.
+        r"""Gets the actions of this CreateOrUpdateStoragePolicyStatementReq.
 
         客户端访问存储可操作的权限合集 允许为空，为空时配置了该策略的用户，通过云办公客户端接入后仅可查看文件列表，不可上传下载。 * `PutObject` -  上传、修改、重命名、移动。 * `DeleteObject` - 删除。 * `GetObject` - 下载。 注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个。
 
@@ -60,7 +60,7 @@ class CreateOrUpdateStoragePolicyStatementReq:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this CreateOrUpdateStoragePolicyStatementReq.
+        r"""Sets the actions of this CreateOrUpdateStoragePolicyStatementReq.
 
         客户端访问存储可操作的权限合集 允许为空，为空时配置了该策略的用户，通过云办公客户端接入后仅可查看文件列表，不可上传下载。 * `PutObject` -  上传、修改、重命名、移动。 * `DeleteObject` - 删除。 * `GetObject` - 下载。 注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个。
 
@@ -71,7 +71,7 @@ class CreateOrUpdateStoragePolicyStatementReq:
 
     @property
     def roam_actions(self):
-        """Gets the roam_actions of this CreateOrUpdateStoragePolicyStatementReq.
+        r"""Gets the roam_actions of this CreateOrUpdateStoragePolicyStatementReq.
 
         云端访问存储可操作的权限合集，不允许为空。 * `PutObject` -  上传、修改、重命名、移动。 * `DeleteObject` - 删除。 * `GetObject` - 下载 。          注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个。
 
@@ -82,7 +82,7 @@ class CreateOrUpdateStoragePolicyStatementReq:
 
     @roam_actions.setter
     def roam_actions(self, roam_actions):
-        """Sets the roam_actions of this CreateOrUpdateStoragePolicyStatementReq.
+        r"""Sets the roam_actions of this CreateOrUpdateStoragePolicyStatementReq.
 
         云端访问存储可操作的权限合集，不允许为空。 * `PutObject` -  上传、修改、重命名、移动。 * `DeleteObject` - 删除。 * `GetObject` - 下载 。          注：PutObject和DeleteObject必须同时设置,不支持仅设置其中一个。
 

@@ -25,7 +25,7 @@ class CancelScheduleTask:
     }
 
     def __init__(self, job_ids=None):
-        """CancelScheduleTask
+        r"""CancelScheduleTask
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CancelScheduleTask:
 
     @property
     def job_ids(self):
-        """Gets the job_ids of this CancelScheduleTask.
+        r"""Gets the job_ids of this CancelScheduleTask.
 
         任务ID。
 
@@ -53,7 +53,7 @@ class CancelScheduleTask:
 
     @job_ids.setter
     def job_ids(self, job_ids):
-        """Sets the job_ids of this CancelScheduleTask.
+        r"""Sets the job_ids of this CancelScheduleTask.
 
         任务ID。
 

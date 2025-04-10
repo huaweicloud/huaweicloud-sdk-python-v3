@@ -23,7 +23,7 @@ class ResourceDescription:
     }
 
     def __init__(self):
-        """ResourceDescription
+        r"""ResourceDescription
 
         The model defined in huaweicloud sdk
 

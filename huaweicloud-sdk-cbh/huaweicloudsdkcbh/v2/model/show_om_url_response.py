@@ -30,7 +30,7 @@ class ShowOmUrlResponse(SdkResponse):
     }
 
     def __init__(self, state=None, description=None, login_url=None):
-        """ShowOmUrlResponse
+        r"""ShowOmUrlResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowOmUrlResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowOmUrlResponse.
+        r"""Gets the state of this ShowOmUrlResponse.
 
         链接获取状态     # SUCCESS(0): 成功；非SUCCESS状态都认为获取失败，需要展示错误代码及description     # IAM_USER_CONFLICT(1016): IAM用户冲突；     # HOST_NOT_MANAGE(1): 查询主机未被纳管；     # HOST_ACCOUNT_NOT_EXIST(553): 主机账户不可用；     # IAM_USER_NO_PERMISSION(901): IAM用户无运维该主机权限；     # CUR_VERSION_NOT_SUPPORT_OPERATION(9001):当前服务版本不支持;     # INS_WHITE_LIST_INITIALIZING(9002):实例白名单正在初始化，请稍后重试;     # UNKNOWN_ERROR(9003):未知错误;
 
@@ -69,7 +69,7 @@ class ShowOmUrlResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowOmUrlResponse.
+        r"""Sets the state of this ShowOmUrlResponse.
 
         链接获取状态     # SUCCESS(0): 成功；非SUCCESS状态都认为获取失败，需要展示错误代码及description     # IAM_USER_CONFLICT(1016): IAM用户冲突；     # HOST_NOT_MANAGE(1): 查询主机未被纳管；     # HOST_ACCOUNT_NOT_EXIST(553): 主机账户不可用；     # IAM_USER_NO_PERMISSION(901): IAM用户无运维该主机权限；     # CUR_VERSION_NOT_SUPPORT_OPERATION(9001):当前服务版本不支持;     # INS_WHITE_LIST_INITIALIZING(9002):实例白名单正在初始化，请稍后重试;     # UNKNOWN_ERROR(9003):未知错误;
 
@@ -80,7 +80,7 @@ class ShowOmUrlResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowOmUrlResponse.
+        r"""Gets the description of this ShowOmUrlResponse.
 
         链接获取异常时说明提示
 
@@ -91,7 +91,7 @@ class ShowOmUrlResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowOmUrlResponse.
+        r"""Sets the description of this ShowOmUrlResponse.
 
         链接获取异常时说明提示
 
@@ -102,7 +102,7 @@ class ShowOmUrlResponse(SdkResponse):
 
     @property
     def login_url(self):
-        """Gets the login_url of this ShowOmUrlResponse.
+        r"""Gets the login_url of this ShowOmUrlResponse.
 
         ECS运维登录地址
 
@@ -113,7 +113,7 @@ class ShowOmUrlResponse(SdkResponse):
 
     @login_url.setter
     def login_url(self, login_url):
-        """Sets the login_url of this ShowOmUrlResponse.
+        r"""Sets the login_url of this ShowOmUrlResponse.
 
         ECS运维登录地址
 

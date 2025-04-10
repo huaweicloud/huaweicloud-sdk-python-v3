@@ -27,7 +27,7 @@ class UpdateDashboardRequest:
     }
 
     def __init__(self, dashboard_id=None, body=None):
-        """UpdateDashboardRequest
+        r"""UpdateDashboardRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDashboardRequest:
 
     @property
     def dashboard_id(self):
-        """Gets the dashboard_id of this UpdateDashboardRequest.
+        r"""Gets the dashboard_id of this UpdateDashboardRequest.
 
         监控看板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn'
 
@@ -60,7 +60,7 @@ class UpdateDashboardRequest:
 
     @dashboard_id.setter
     def dashboard_id(self, dashboard_id):
-        """Sets the dashboard_id of this UpdateDashboardRequest.
+        r"""Sets the dashboard_id of this UpdateDashboardRequest.
 
         监控看板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn'
 
@@ -71,7 +71,7 @@ class UpdateDashboardRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDashboardRequest.
+        r"""Gets the body of this UpdateDashboardRequest.
 
         :return: The body of this UpdateDashboardRequest.
         :rtype: :class:`huaweicloudsdkces.v2.UpdateDashboardRequestBody`
@@ -80,7 +80,7 @@ class UpdateDashboardRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDashboardRequest.
+        r"""Sets the body of this UpdateDashboardRequest.
 
         :param body: The body of this UpdateDashboardRequest.
         :type body: :class:`huaweicloudsdkces.v2.UpdateDashboardRequestBody`

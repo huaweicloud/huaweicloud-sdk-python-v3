@@ -28,7 +28,7 @@ class ShowTablePreviewResponse(SdkResponse):
     }
 
     def __init__(self, schema=None, rows=None):
-        """ShowTablePreviewResponse
+        r"""ShowTablePreviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTablePreviewResponse(SdkResponse):
 
     @property
     def schema(self):
-        """Gets the schema of this ShowTablePreviewResponse.
+        r"""Gets the schema of this ShowTablePreviewResponse.
 
         表的列名称和类型。
 
@@ -62,7 +62,7 @@ class ShowTablePreviewResponse(SdkResponse):
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this ShowTablePreviewResponse.
+        r"""Sets the schema of this ShowTablePreviewResponse.
 
         表的列名称和类型。
 
@@ -73,7 +73,7 @@ class ShowTablePreviewResponse(SdkResponse):
 
     @property
     def rows(self):
-        """Gets the rows of this ShowTablePreviewResponse.
+        r"""Gets the rows of this ShowTablePreviewResponse.
 
         预览的表内容。
 
@@ -84,7 +84,7 @@ class ShowTablePreviewResponse(SdkResponse):
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this ShowTablePreviewResponse.
+        r"""Sets the rows of this ShowTablePreviewResponse.
 
         预览的表内容。
 

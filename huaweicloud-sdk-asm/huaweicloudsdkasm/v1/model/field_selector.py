@@ -29,7 +29,7 @@ class FieldSelector:
     }
 
     def __init__(self, key=None, operator=None, values=None):
-        """FieldSelector
+        r"""FieldSelector
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FieldSelector:
 
     @property
     def key(self):
-        """Gets the key of this FieldSelector.
+        r"""Gets the key of this FieldSelector.
 
         Key值
 
@@ -68,7 +68,7 @@ class FieldSelector:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this FieldSelector.
+        r"""Sets the key of this FieldSelector.
 
         Key值
 
@@ -79,7 +79,7 @@ class FieldSelector:
 
     @property
     def operator(self):
-        """Gets the operator of this FieldSelector.
+        r"""Gets the operator of this FieldSelector.
 
         操作符，仅支持取值\"In\"
 
@@ -90,7 +90,7 @@ class FieldSelector:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this FieldSelector.
+        r"""Sets the operator of this FieldSelector.
 
         操作符，仅支持取值\"In\"
 
@@ -101,7 +101,7 @@ class FieldSelector:
 
     @property
     def values(self):
-        """Gets the values of this FieldSelector.
+        r"""Gets the values of this FieldSelector.
 
         Value值
 
@@ -112,7 +112,7 @@ class FieldSelector:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this FieldSelector.
+        r"""Sets the values of this FieldSelector.
 
         Value值
 

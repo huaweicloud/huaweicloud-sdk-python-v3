@@ -25,7 +25,7 @@ class UpdatePacifyWordsReq:
     }
 
     def __init__(self, pacify_words=None):
-        """UpdatePacifyWordsReq
+        r"""UpdatePacifyWordsReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdatePacifyWordsReq:
 
     @property
     def pacify_words(self):
-        """Gets the pacify_words of this UpdatePacifyWordsReq.
+        r"""Gets the pacify_words of this UpdatePacifyWordsReq.
 
         安抚话术。
 
@@ -53,7 +53,7 @@ class UpdatePacifyWordsReq:
 
     @pacify_words.setter
     def pacify_words(self, pacify_words):
-        """Sets the pacify_words of this UpdatePacifyWordsReq.
+        r"""Sets the pacify_words of this UpdatePacifyWordsReq.
 
         安抚话术。
 

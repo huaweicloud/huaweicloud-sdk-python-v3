@@ -24,7 +24,7 @@ class ResumeScalingGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ResumeScalingGroupResponse
+        r"""ResumeScalingGroupResponse
 
         The model defined in huaweicloud sdk
 

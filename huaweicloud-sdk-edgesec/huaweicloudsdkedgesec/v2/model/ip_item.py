@@ -27,7 +27,7 @@ class IpItem:
     }
 
     def __init__(self, key=None, num=None):
-        """IpItem
+        r"""IpItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IpItem:
 
     @property
     def key(self):
-        """Gets the key of this IpItem.
+        r"""Gets the key of this IpItem.
 
         ip地址
 
@@ -61,7 +61,7 @@ class IpItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this IpItem.
+        r"""Sets the key of this IpItem.
 
         ip地址
 
@@ -72,7 +72,7 @@ class IpItem:
 
     @property
     def num(self):
-        """Gets the num of this IpItem.
+        r"""Gets the num of this IpItem.
 
         数量
 
@@ -83,7 +83,7 @@ class IpItem:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this IpItem.
+        r"""Sets the num of this IpItem.
 
         数量
 

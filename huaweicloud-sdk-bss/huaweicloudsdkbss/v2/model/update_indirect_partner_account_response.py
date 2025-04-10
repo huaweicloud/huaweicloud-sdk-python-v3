@@ -26,7 +26,7 @@ class UpdateIndirectPartnerAccountResponse(SdkResponse):
     }
 
     def __init__(self, transfer_id=None):
-        """UpdateIndirectPartnerAccountResponse
+        r"""UpdateIndirectPartnerAccountResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateIndirectPartnerAccountResponse(SdkResponse):
 
     @property
     def transfer_id(self):
-        """Gets the transfer_id of this UpdateIndirectPartnerAccountResponse.
+        r"""Gets the transfer_id of this UpdateIndirectPartnerAccountResponse.
 
         事务流水ID，只有成功响应才会返回。
 
@@ -55,7 +55,7 @@ class UpdateIndirectPartnerAccountResponse(SdkResponse):
 
     @transfer_id.setter
     def transfer_id(self, transfer_id):
-        """Sets the transfer_id of this UpdateIndirectPartnerAccountResponse.
+        r"""Sets the transfer_id of this UpdateIndirectPartnerAccountResponse.
 
         事务流水ID，只有成功响应才会返回。
 

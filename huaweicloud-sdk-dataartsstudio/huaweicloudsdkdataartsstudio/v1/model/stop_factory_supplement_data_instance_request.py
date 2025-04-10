@@ -27,7 +27,7 @@ class StopFactorySupplementDataInstanceRequest:
     }
 
     def __init__(self, instance_name=None, workspace=None):
-        """StopFactorySupplementDataInstanceRequest
+        r"""StopFactorySupplementDataInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StopFactorySupplementDataInstanceRequest:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this StopFactorySupplementDataInstanceRequest.
+        r"""Gets the instance_name of this StopFactorySupplementDataInstanceRequest.
 
         补数据名称
 
@@ -60,7 +60,7 @@ class StopFactorySupplementDataInstanceRequest:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this StopFactorySupplementDataInstanceRequest.
+        r"""Sets the instance_name of this StopFactorySupplementDataInstanceRequest.
 
         补数据名称
 
@@ -71,7 +71,7 @@ class StopFactorySupplementDataInstanceRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this StopFactorySupplementDataInstanceRequest.
+        r"""Gets the workspace of this StopFactorySupplementDataInstanceRequest.
 
         工作空间ID
 
@@ -82,7 +82,7 @@ class StopFactorySupplementDataInstanceRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this StopFactorySupplementDataInstanceRequest.
+        r"""Sets the workspace of this StopFactorySupplementDataInstanceRequest.
 
         工作空间ID
 

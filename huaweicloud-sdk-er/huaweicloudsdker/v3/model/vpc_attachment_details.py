@@ -47,7 +47,7 @@ class VpcAttachmentDetails:
     }
 
     def __init__(self, id=None, name=None, vpc_id=None, virsubnet_id=None, auto_create_vpc_routes=None, state=None, created_at=None, updated_at=None, tags=None, description=None, project_id=None, vpc_project_id=None):
-        """VpcAttachmentDetails
+        r"""VpcAttachmentDetails
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class VpcAttachmentDetails:
 
     @property
     def id(self):
-        """Gets the id of this VpcAttachmentDetails.
+        r"""Gets the id of this VpcAttachmentDetails.
 
         VPC连接ID
 
@@ -124,7 +124,7 @@ class VpcAttachmentDetails:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VpcAttachmentDetails.
+        r"""Sets the id of this VpcAttachmentDetails.
 
         VPC连接ID
 
@@ -135,7 +135,7 @@ class VpcAttachmentDetails:
 
     @property
     def name(self):
-        """Gets the name of this VpcAttachmentDetails.
+        r"""Gets the name of this VpcAttachmentDetails.
 
         VPC连接名称
 
@@ -146,7 +146,7 @@ class VpcAttachmentDetails:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VpcAttachmentDetails.
+        r"""Sets the name of this VpcAttachmentDetails.
 
         VPC连接名称
 
@@ -157,7 +157,7 @@ class VpcAttachmentDetails:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this VpcAttachmentDetails.
+        r"""Gets the vpc_id of this VpcAttachmentDetails.
 
         VPC id
 
@@ -168,7 +168,7 @@ class VpcAttachmentDetails:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this VpcAttachmentDetails.
+        r"""Sets the vpc_id of this VpcAttachmentDetails.
 
         VPC id
 
@@ -179,7 +179,7 @@ class VpcAttachmentDetails:
 
     @property
     def virsubnet_id(self):
-        """Gets the virsubnet_id of this VpcAttachmentDetails.
+        r"""Gets the virsubnet_id of this VpcAttachmentDetails.
 
         VPC子网id
 
@@ -190,7 +190,7 @@ class VpcAttachmentDetails:
 
     @virsubnet_id.setter
     def virsubnet_id(self, virsubnet_id):
-        """Sets the virsubnet_id of this VpcAttachmentDetails.
+        r"""Sets the virsubnet_id of this VpcAttachmentDetails.
 
         VPC子网id
 
@@ -201,7 +201,7 @@ class VpcAttachmentDetails:
 
     @property
     def auto_create_vpc_routes(self):
-        """Gets the auto_create_vpc_routes of this VpcAttachmentDetails.
+        r"""Gets the auto_create_vpc_routes of this VpcAttachmentDetails.
 
         默认为false,当设置true时，会自动为VPC配置10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16三条路由，下一跳指向企业路由器。
 
@@ -212,7 +212,7 @@ class VpcAttachmentDetails:
 
     @auto_create_vpc_routes.setter
     def auto_create_vpc_routes(self, auto_create_vpc_routes):
-        """Sets the auto_create_vpc_routes of this VpcAttachmentDetails.
+        r"""Sets the auto_create_vpc_routes of this VpcAttachmentDetails.
 
         默认为false,当设置true时，会自动为VPC配置10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16三条路由，下一跳指向企业路由器。
 
@@ -223,7 +223,7 @@ class VpcAttachmentDetails:
 
     @property
     def state(self):
-        """Gets the state of this VpcAttachmentDetails.
+        r"""Gets the state of this VpcAttachmentDetails.
 
         VPC连接状态:pending|available|modifying|deleting|deleted|failed|initiating_request|rejected|pending_acceptance|freezed
 
@@ -234,7 +234,7 @@ class VpcAttachmentDetails:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this VpcAttachmentDetails.
+        r"""Sets the state of this VpcAttachmentDetails.
 
         VPC连接状态:pending|available|modifying|deleting|deleted|failed|initiating_request|rejected|pending_acceptance|freezed
 
@@ -245,7 +245,7 @@ class VpcAttachmentDetails:
 
     @property
     def created_at(self):
-        """Gets the created_at of this VpcAttachmentDetails.
+        r"""Gets the created_at of this VpcAttachmentDetails.
 
         创建时间
 
@@ -256,7 +256,7 @@ class VpcAttachmentDetails:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this VpcAttachmentDetails.
+        r"""Sets the created_at of this VpcAttachmentDetails.
 
         创建时间
 
@@ -267,7 +267,7 @@ class VpcAttachmentDetails:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this VpcAttachmentDetails.
+        r"""Gets the updated_at of this VpcAttachmentDetails.
 
         更新时间
 
@@ -278,7 +278,7 @@ class VpcAttachmentDetails:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this VpcAttachmentDetails.
+        r"""Sets the updated_at of this VpcAttachmentDetails.
 
         更新时间
 
@@ -289,7 +289,7 @@ class VpcAttachmentDetails:
 
     @property
     def tags(self):
-        """Gets the tags of this VpcAttachmentDetails.
+        r"""Gets the tags of this VpcAttachmentDetails.
 
         标签信息
 
@@ -300,7 +300,7 @@ class VpcAttachmentDetails:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this VpcAttachmentDetails.
+        r"""Sets the tags of this VpcAttachmentDetails.
 
         标签信息
 
@@ -311,7 +311,7 @@ class VpcAttachmentDetails:
 
     @property
     def description(self):
-        """Gets the description of this VpcAttachmentDetails.
+        r"""Gets the description of this VpcAttachmentDetails.
 
         VPC连接描述信息
 
@@ -322,7 +322,7 @@ class VpcAttachmentDetails:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VpcAttachmentDetails.
+        r"""Sets the description of this VpcAttachmentDetails.
 
         VPC连接描述信息
 
@@ -333,7 +333,7 @@ class VpcAttachmentDetails:
 
     @property
     def project_id(self):
-        """Gets the project_id of this VpcAttachmentDetails.
+        r"""Gets the project_id of this VpcAttachmentDetails.
 
         项目ID
 
@@ -344,7 +344,7 @@ class VpcAttachmentDetails:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this VpcAttachmentDetails.
+        r"""Sets the project_id of this VpcAttachmentDetails.
 
         项目ID
 
@@ -355,7 +355,7 @@ class VpcAttachmentDetails:
 
     @property
     def vpc_project_id(self):
-        """Gets the vpc_project_id of this VpcAttachmentDetails.
+        r"""Gets the vpc_project_id of this VpcAttachmentDetails.
 
         vpc所属项目ID
 
@@ -366,7 +366,7 @@ class VpcAttachmentDetails:
 
     @vpc_project_id.setter
     def vpc_project_id(self, vpc_project_id):
-        """Sets the vpc_project_id of this VpcAttachmentDetails.
+        r"""Sets the vpc_project_id of this VpcAttachmentDetails.
 
         vpc所属项目ID
 

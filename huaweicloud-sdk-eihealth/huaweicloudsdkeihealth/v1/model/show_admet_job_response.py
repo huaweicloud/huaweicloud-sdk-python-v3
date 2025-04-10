@@ -40,7 +40,7 @@ class ShowAdmetJobResponse(SdkResponse):
     }
 
     def __init__(self, basic_info=None, molecule_file=None, job_result=None, part_failed_reason=None, base_model=None, models=None, cluster_result=None, save_fingerprint=None):
-        """ShowAdmetJobResponse
+        r"""ShowAdmetJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this ShowAdmetJobResponse.
+        r"""Gets the basic_info of this ShowAdmetJobResponse.
 
         :return: The basic_info of this ShowAdmetJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -102,7 +102,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this ShowAdmetJobResponse.
+        r"""Sets the basic_info of this ShowAdmetJobResponse.
 
         :param basic_info: The basic_info of this ShowAdmetJobResponse.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -111,7 +111,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @property
     def molecule_file(self):
-        """Gets the molecule_file of this ShowAdmetJobResponse.
+        r"""Gets the molecule_file of this ShowAdmetJobResponse.
 
         :return: The molecule_file of this ShowAdmetJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.MoleculeFileDto`
@@ -120,7 +120,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @molecule_file.setter
     def molecule_file(self, molecule_file):
-        """Sets the molecule_file of this ShowAdmetJobResponse.
+        r"""Sets the molecule_file of this ShowAdmetJobResponse.
 
         :param molecule_file: The molecule_file of this ShowAdmetJobResponse.
         :type molecule_file: :class:`huaweicloudsdkeihealth.v1.MoleculeFileDto`
@@ -129,7 +129,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @property
     def job_result(self):
-        """Gets the job_result of this ShowAdmetJobResponse.
+        r"""Gets the job_result of this ShowAdmetJobResponse.
 
         :return: The job_result of this ShowAdmetJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.JobResult`
@@ -138,7 +138,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @job_result.setter
     def job_result(self, job_result):
-        """Sets the job_result of this ShowAdmetJobResponse.
+        r"""Sets the job_result of this ShowAdmetJobResponse.
 
         :param job_result: The job_result of this ShowAdmetJobResponse.
         :type job_result: :class:`huaweicloudsdkeihealth.v1.JobResult`
@@ -147,7 +147,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @property
     def part_failed_reason(self):
-        """Gets the part_failed_reason of this ShowAdmetJobResponse.
+        r"""Gets the part_failed_reason of this ShowAdmetJobResponse.
 
         作业结果信息
 
@@ -158,7 +158,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @part_failed_reason.setter
     def part_failed_reason(self, part_failed_reason):
-        """Sets the part_failed_reason of this ShowAdmetJobResponse.
+        r"""Sets the part_failed_reason of this ShowAdmetJobResponse.
 
         作业结果信息
 
@@ -169,7 +169,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @property
     def base_model(self):
-        """Gets the base_model of this ShowAdmetJobResponse.
+        r"""Gets the base_model of this ShowAdmetJobResponse.
 
         :return: The base_model of this ShowAdmetJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BaseModel`
@@ -178,7 +178,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @base_model.setter
     def base_model(self, base_model):
-        """Sets the base_model of this ShowAdmetJobResponse.
+        r"""Sets the base_model of this ShowAdmetJobResponse.
 
         :param base_model: The base_model of this ShowAdmetJobResponse.
         :type base_model: :class:`huaweicloudsdkeihealth.v1.BaseModel`
@@ -187,7 +187,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @property
     def models(self):
-        """Gets the models of this ShowAdmetJobResponse.
+        r"""Gets the models of this ShowAdmetJobResponse.
 
         模型信息
 
@@ -198,7 +198,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @models.setter
     def models(self, models):
-        """Sets the models of this ShowAdmetJobResponse.
+        r"""Sets the models of this ShowAdmetJobResponse.
 
         模型信息
 
@@ -209,7 +209,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @property
     def cluster_result(self):
-        """Gets the cluster_result of this ShowAdmetJobResponse.
+        r"""Gets the cluster_result of this ShowAdmetJobResponse.
 
         :return: The cluster_result of this ShowAdmetJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
@@ -218,7 +218,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @cluster_result.setter
     def cluster_result(self, cluster_result):
-        """Sets the cluster_result of this ShowAdmetJobResponse.
+        r"""Sets the cluster_result of this ShowAdmetJobResponse.
 
         :param cluster_result: The cluster_result of this ShowAdmetJobResponse.
         :type cluster_result: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
@@ -227,7 +227,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @property
     def save_fingerprint(self):
-        """Gets the save_fingerprint of this ShowAdmetJobResponse.
+        r"""Gets the save_fingerprint of this ShowAdmetJobResponse.
 
         是否输出表征
 
@@ -238,7 +238,7 @@ class ShowAdmetJobResponse(SdkResponse):
 
     @save_fingerprint.setter
     def save_fingerprint(self, save_fingerprint):
-        """Sets the save_fingerprint of this ShowAdmetJobResponse.
+        r"""Sets the save_fingerprint of this ShowAdmetJobResponse.
 
         是否输出表征
 

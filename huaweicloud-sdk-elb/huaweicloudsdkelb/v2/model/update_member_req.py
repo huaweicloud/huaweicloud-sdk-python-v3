@@ -29,7 +29,7 @@ class UpdateMemberReq:
     }
 
     def __init__(self, name=None, admin_state_up=None, weight=None):
-        """UpdateMemberReq
+        r"""UpdateMemberReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateMemberReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateMemberReq.
+        r"""Gets the name of this UpdateMemberReq.
 
         后端云服务器名称。
 
@@ -68,7 +68,7 @@ class UpdateMemberReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateMemberReq.
+        r"""Sets the name of this UpdateMemberReq.
 
         后端云服务器名称。
 
@@ -79,7 +79,7 @@ class UpdateMemberReq:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this UpdateMemberReq.
+        r"""Gets the admin_state_up of this UpdateMemberReq.
 
         后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
@@ -90,7 +90,7 @@ class UpdateMemberReq:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this UpdateMemberReq.
+        r"""Sets the admin_state_up of this UpdateMemberReq.
 
         后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
@@ -101,7 +101,7 @@ class UpdateMemberReq:
 
     @property
     def weight(self):
-        """Gets the weight of this UpdateMemberReq.
+        r"""Gets the weight of this UpdateMemberReq.
 
         后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
 
@@ -112,7 +112,7 @@ class UpdateMemberReq:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this UpdateMemberReq.
+        r"""Sets the weight of this UpdateMemberReq.
 
         后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
 

@@ -25,7 +25,7 @@ class BatchUpdateTsviRequest:
     }
 
     def __init__(self, body=None):
-        """BatchUpdateTsviRequest
+        r"""BatchUpdateTsviRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchUpdateTsviRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateTsviRequest.
+        r"""Gets the body of this BatchUpdateTsviRequest.
 
         :return: The body of this BatchUpdateTsviRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdateTsviReq`
@@ -52,7 +52,7 @@ class BatchUpdateTsviRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateTsviRequest.
+        r"""Sets the body of this BatchUpdateTsviRequest.
 
         :param body: The body of this BatchUpdateTsviRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.UpdateTsviReq`

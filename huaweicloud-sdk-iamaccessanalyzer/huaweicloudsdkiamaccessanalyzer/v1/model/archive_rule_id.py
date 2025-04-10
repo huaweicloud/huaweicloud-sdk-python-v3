@@ -23,7 +23,7 @@ class ArchiveRuleId:
     }
 
     def __init__(self):
-        """ArchiveRuleId
+        r"""ArchiveRuleId
 
         The model defined in huaweicloud sdk
 

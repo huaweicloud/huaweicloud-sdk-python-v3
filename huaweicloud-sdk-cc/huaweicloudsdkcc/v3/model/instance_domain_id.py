@@ -25,7 +25,7 @@ class InstanceDomainId:
     }
 
     def __init__(self, instance_domain_id=None):
-        """InstanceDomainId
+        r"""InstanceDomainId
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class InstanceDomainId:
 
     @property
     def instance_domain_id(self):
-        """Gets the instance_domain_id of this InstanceDomainId.
+        r"""Gets the instance_domain_id of this InstanceDomainId.
 
         网络实例（VPC，VGW）所属账号ID。
 
@@ -54,7 +54,7 @@ class InstanceDomainId:
 
     @instance_domain_id.setter
     def instance_domain_id(self, instance_domain_id):
-        """Sets the instance_domain_id of this InstanceDomainId.
+        r"""Sets the instance_domain_id of this InstanceDomainId.
 
         网络实例（VPC，VGW）所属账号ID。
 

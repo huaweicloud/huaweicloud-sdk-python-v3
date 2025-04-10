@@ -26,7 +26,7 @@ class CreatePortalRefNonceResponse(SdkResponse):
     }
 
     def __init__(self, nonce=None):
-        """CreatePortalRefNonceResponse
+        r"""CreatePortalRefNonceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePortalRefNonceResponse(SdkResponse):
 
     @property
     def nonce(self):
-        """Gets the nonce of this CreatePortalRefNonceResponse.
+        r"""Gets the nonce of this CreatePortalRefNonceResponse.
 
         用于跳转登录的nonce信息。同一个nonce只能使用一次。 > 通过链接https://meeting.huaweicloud.com/?lang=zh-CN&nonce=xxxxxxxxxxxxx#/login进行免登陆跳转。 
 
@@ -55,7 +55,7 @@ class CreatePortalRefNonceResponse(SdkResponse):
 
     @nonce.setter
     def nonce(self, nonce):
-        """Sets the nonce of this CreatePortalRefNonceResponse.
+        r"""Sets the nonce of this CreatePortalRefNonceResponse.
 
         用于跳转登录的nonce信息。同一个nonce只能使用一次。 > 通过链接https://meeting.huaweicloud.com/?lang=zh-CN&nonce=xxxxxxxxxxxxx#/login进行免登陆跳转。 
 

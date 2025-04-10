@@ -27,7 +27,7 @@ class SnapshotCluserResponseMetadata:
     }
 
     def __init__(self, api_version=None, kind=None):
-        """SnapshotCluserResponseMetadata
+        r"""SnapshotCluserResponseMetadata
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SnapshotCluserResponseMetadata:
 
     @property
     def api_version(self):
-        """Gets the api_version of this SnapshotCluserResponseMetadata.
+        r"""Gets the api_version of this SnapshotCluserResponseMetadata.
 
         API版本，默认为v3.1
 
@@ -61,7 +61,7 @@ class SnapshotCluserResponseMetadata:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this SnapshotCluserResponseMetadata.
+        r"""Sets the api_version of this SnapshotCluserResponseMetadata.
 
         API版本，默认为v3.1
 
@@ -72,7 +72,7 @@ class SnapshotCluserResponseMetadata:
 
     @property
     def kind(self):
-        """Gets the kind of this SnapshotCluserResponseMetadata.
+        r"""Gets the kind of this SnapshotCluserResponseMetadata.
 
         任务类型
 
@@ -83,7 +83,7 @@ class SnapshotCluserResponseMetadata:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this SnapshotCluserResponseMetadata.
+        r"""Sets the kind of this SnapshotCluserResponseMetadata.
 
         任务类型
 

@@ -25,7 +25,7 @@ class RestartEncodeServerRequest:
     }
 
     def __init__(self, body=None):
-        """RestartEncodeServerRequest
+        r"""RestartEncodeServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RestartEncodeServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this RestartEncodeServerRequest.
+        r"""Gets the body of this RestartEncodeServerRequest.
 
         :return: The body of this RestartEncodeServerRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.RestartEncodeServerRequestBody`
@@ -52,7 +52,7 @@ class RestartEncodeServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestartEncodeServerRequest.
+        r"""Sets the body of this RestartEncodeServerRequest.
 
         :param body: The body of this RestartEncodeServerRequest.
         :type body: :class:`huaweicloudsdkcph.v1.RestartEncodeServerRequestBody`

@@ -64,7 +64,7 @@ class UpdateTaskResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, creator=None, project_id=None, description=None, service_name=None, service_version=None, service_title=None, edge_pool_id=None, resource_order_id=None, created_at=None, updated_at=None, state=None, status=None, error=None, timing_status=None, timing=None, input=None, output=None, service_config=None):
-        """UpdateTaskResponse
+        r"""UpdateTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -165,7 +165,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateTaskResponse.
+        r"""Gets the id of this UpdateTaskResponse.
 
         作业ID
 
@@ -176,7 +176,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateTaskResponse.
+        r"""Sets the id of this UpdateTaskResponse.
 
         作业ID
 
@@ -187,7 +187,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateTaskResponse.
+        r"""Gets the name of this UpdateTaskResponse.
 
         作业的名称
 
@@ -198,7 +198,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTaskResponse.
+        r"""Sets the name of this UpdateTaskResponse.
 
         作业的名称
 
@@ -209,7 +209,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this UpdateTaskResponse.
+        r"""Gets the creator of this UpdateTaskResponse.
 
         作业创建者的用户名
 
@@ -220,7 +220,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this UpdateTaskResponse.
+        r"""Sets the creator of this UpdateTaskResponse.
 
         作业创建者的用户名
 
@@ -231,7 +231,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateTaskResponse.
+        r"""Gets the project_id of this UpdateTaskResponse.
 
         作业创建者的项目ID
 
@@ -242,7 +242,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateTaskResponse.
+        r"""Sets the project_id of this UpdateTaskResponse.
 
         作业创建者的项目ID
 
@@ -253,7 +253,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateTaskResponse.
+        r"""Gets the description of this UpdateTaskResponse.
 
         作业的描述
 
@@ -264,7 +264,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateTaskResponse.
+        r"""Sets the description of this UpdateTaskResponse.
 
         作业的描述
 
@@ -275,7 +275,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def service_name(self):
-        """Gets the service_name of this UpdateTaskResponse.
+        r"""Gets the service_name of this UpdateTaskResponse.
 
         作业对应服务的名称
 
@@ -286,7 +286,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this UpdateTaskResponse.
+        r"""Sets the service_name of this UpdateTaskResponse.
 
         作业对应服务的名称
 
@@ -297,7 +297,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def service_version(self):
-        """Gets the service_version of this UpdateTaskResponse.
+        r"""Gets the service_version of this UpdateTaskResponse.
 
         作业对应服务的版本号
 
@@ -308,7 +308,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @service_version.setter
     def service_version(self, service_version):
-        """Sets the service_version of this UpdateTaskResponse.
+        r"""Sets the service_version of this UpdateTaskResponse.
 
         作业对应服务的版本号
 
@@ -319,7 +319,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def service_title(self):
-        """Gets the service_title of this UpdateTaskResponse.
+        r"""Gets the service_title of this UpdateTaskResponse.
 
         :return: The service_title of this UpdateTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskDetailsServiceTitle`
@@ -328,7 +328,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @service_title.setter
     def service_title(self, service_title):
-        """Sets the service_title of this UpdateTaskResponse.
+        r"""Sets the service_title of this UpdateTaskResponse.
 
         :param service_title: The service_title of this UpdateTaskResponse.
         :type service_title: :class:`huaweicloudsdkvas.v2.TaskDetailsServiceTitle`
@@ -337,7 +337,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def edge_pool_id(self):
-        """Gets the edge_pool_id of this UpdateTaskResponse.
+        r"""Gets the edge_pool_id of this UpdateTaskResponse.
 
         仅边缘作业会出现，作业运行所在的边缘运行池ID
 
@@ -348,7 +348,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @edge_pool_id.setter
     def edge_pool_id(self, edge_pool_id):
-        """Sets the edge_pool_id of this UpdateTaskResponse.
+        r"""Sets the edge_pool_id of this UpdateTaskResponse.
 
         仅边缘作业会出现，作业运行所在的边缘运行池ID
 
@@ -359,7 +359,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def resource_order_id(self):
-        """Gets the resource_order_id of this UpdateTaskResponse.
+        r"""Gets the resource_order_id of this UpdateTaskResponse.
 
         作业指定的算法能力包包周期订单ID
 
@@ -370,7 +370,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @resource_order_id.setter
     def resource_order_id(self, resource_order_id):
-        """Sets the resource_order_id of this UpdateTaskResponse.
+        r"""Sets the resource_order_id of this UpdateTaskResponse.
 
         作业指定的算法能力包包周期订单ID
 
@@ -381,7 +381,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateTaskResponse.
+        r"""Gets the created_at of this UpdateTaskResponse.
 
         作业创建的时间
 
@@ -392,7 +392,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateTaskResponse.
+        r"""Sets the created_at of this UpdateTaskResponse.
 
         作业创建的时间
 
@@ -403,7 +403,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateTaskResponse.
+        r"""Gets the updated_at of this UpdateTaskResponse.
 
         作业最近一次状态更新的时间
 
@@ -414,7 +414,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateTaskResponse.
+        r"""Sets the updated_at of this UpdateTaskResponse.
 
         作业最近一次状态更新的时间
 
@@ -425,7 +425,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this UpdateTaskResponse.
+        r"""Gets the state of this UpdateTaskResponse.
 
         作业当前的状态，分别为PENDING（等待中），RECOVERING（恢复中），STARTING（启动中），UPGRADING（升级中），CREATE_FAILED（创建失败），START_FAILED（启动失败），RUNNING（运行中），STOPPING（停止中），STOPPED（已停止），ABNORMAL（异常），SUCCEEDED（运行成功），FAILED（运行失败），DELETING（删除中），FREEZING（冻结中），FROZEN（已冻结）
 
@@ -436,7 +436,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UpdateTaskResponse.
+        r"""Sets the state of this UpdateTaskResponse.
 
         作业当前的状态，分别为PENDING（等待中），RECOVERING（恢复中），STARTING（启动中），UPGRADING（升级中），CREATE_FAILED（创建失败），START_FAILED（启动失败），RUNNING（运行中），STOPPING（停止中），STOPPED（已停止），ABNORMAL（异常），SUCCEEDED（运行成功），FAILED（运行失败），DELETING（删除中），FREEZING（冻结中），FROZEN（已冻结）
 
@@ -447,7 +447,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateTaskResponse.
+        r"""Gets the status of this UpdateTaskResponse.
 
         作业状态的详情信息，仅部分状态会有详情信息
 
@@ -458,7 +458,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateTaskResponse.
+        r"""Sets the status of this UpdateTaskResponse.
 
         作业状态的详情信息，仅部分状态会有详情信息
 
@@ -469,7 +469,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this UpdateTaskResponse.
+        r"""Gets the error of this UpdateTaskResponse.
 
         :return: The error of this UpdateTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskDetailsError`
@@ -478,7 +478,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this UpdateTaskResponse.
+        r"""Sets the error of this UpdateTaskResponse.
 
         :param error: The error of this UpdateTaskResponse.
         :type error: :class:`huaweicloudsdkvas.v2.TaskDetailsError`
@@ -487,7 +487,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def timing_status(self):
-        """Gets the timing_status of this UpdateTaskResponse.
+        r"""Gets the timing_status of this UpdateTaskResponse.
 
         计划任务的状态，分别为ACTIVATED（激活），INACTIVATED（未激活）
 
@@ -498,7 +498,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @timing_status.setter
     def timing_status(self, timing_status):
-        """Sets the timing_status of this UpdateTaskResponse.
+        r"""Sets the timing_status of this UpdateTaskResponse.
 
         计划任务的状态，分别为ACTIVATED（激活），INACTIVATED（未激活）
 
@@ -509,7 +509,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def timing(self):
-        """Gets the timing of this UpdateTaskResponse.
+        r"""Gets the timing of this UpdateTaskResponse.
 
         :return: The timing of this UpdateTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskTiming`
@@ -518,7 +518,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @timing.setter
     def timing(self, timing):
-        """Sets the timing of this UpdateTaskResponse.
+        r"""Sets the timing of this UpdateTaskResponse.
 
         :param timing: The timing of this UpdateTaskResponse.
         :type timing: :class:`huaweicloudsdkvas.v2.TaskTiming`
@@ -527,7 +527,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def input(self):
-        """Gets the input of this UpdateTaskResponse.
+        r"""Gets the input of this UpdateTaskResponse.
 
         :return: The input of this UpdateTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskInput`
@@ -536,7 +536,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @input.setter
     def input(self, input):
-        """Sets the input of this UpdateTaskResponse.
+        r"""Sets the input of this UpdateTaskResponse.
 
         :param input: The input of this UpdateTaskResponse.
         :type input: :class:`huaweicloudsdkvas.v2.TaskInput`
@@ -545,7 +545,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def output(self):
-        """Gets the output of this UpdateTaskResponse.
+        r"""Gets the output of this UpdateTaskResponse.
 
         :return: The output of this UpdateTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskOutputForDisplay`
@@ -554,7 +554,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @output.setter
     def output(self, output):
-        """Sets the output of this UpdateTaskResponse.
+        r"""Sets the output of this UpdateTaskResponse.
 
         :param output: The output of this UpdateTaskResponse.
         :type output: :class:`huaweicloudsdkvas.v2.TaskOutputForDisplay`
@@ -563,7 +563,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def service_config(self):
-        """Gets the service_config of this UpdateTaskResponse.
+        r"""Gets the service_config of this UpdateTaskResponse.
 
         :return: The service_config of this UpdateTaskResponse.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`
@@ -572,7 +572,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @service_config.setter
     def service_config(self, service_config):
-        """Sets the service_config of this UpdateTaskResponse.
+        r"""Sets the service_config of this UpdateTaskResponse.
 
         :param service_config: The service_config of this UpdateTaskResponse.
         :type service_config: :class:`huaweicloudsdkvas.v2.TaskServiceConfig`

@@ -25,7 +25,7 @@ class NotificationConfigReq:
     }
 
     def __init__(self, notifications=None):
-        """NotificationConfigReq
+        r"""NotificationConfigReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NotificationConfigReq:
 
     @property
     def notifications(self):
-        """Gets the notifications of this NotificationConfigReq.
+        r"""Gets the notifications of this NotificationConfigReq.
 
         事件通知模板信息 
 
@@ -53,7 +53,7 @@ class NotificationConfigReq:
 
     @notifications.setter
     def notifications(self, notifications):
-        """Sets the notifications of this NotificationConfigReq.
+        r"""Sets the notifications of this NotificationConfigReq.
 
         事件通知模板信息 
 

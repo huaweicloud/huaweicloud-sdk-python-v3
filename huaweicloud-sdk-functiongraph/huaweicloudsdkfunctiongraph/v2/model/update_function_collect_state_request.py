@@ -27,7 +27,7 @@ class UpdateFunctionCollectStateRequest:
     }
 
     def __init__(self, func_urn=None, state=None):
-        """UpdateFunctionCollectStateRequest
+        r"""UpdateFunctionCollectStateRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateFunctionCollectStateRequest:
 
     @property
     def func_urn(self):
-        """Gets the func_urn of this UpdateFunctionCollectStateRequest.
+        r"""Gets the func_urn of this UpdateFunctionCollectStateRequest.
 
         函数URN
 
@@ -59,7 +59,7 @@ class UpdateFunctionCollectStateRequest:
 
     @func_urn.setter
     def func_urn(self, func_urn):
-        """Sets the func_urn of this UpdateFunctionCollectStateRequest.
+        r"""Sets the func_urn of this UpdateFunctionCollectStateRequest.
 
         函数URN
 
@@ -70,7 +70,7 @@ class UpdateFunctionCollectStateRequest:
 
     @property
     def state(self):
-        """Gets the state of this UpdateFunctionCollectStateRequest.
+        r"""Gets the state of this UpdateFunctionCollectStateRequest.
 
         置顶状态
 
@@ -81,7 +81,7 @@ class UpdateFunctionCollectStateRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UpdateFunctionCollectStateRequest.
+        r"""Sets the state of this UpdateFunctionCollectStateRequest.
 
         置顶状态
 

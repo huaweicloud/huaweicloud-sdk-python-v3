@@ -29,7 +29,7 @@ class ExpireVo:
     }
 
     def __init__(self, expiration=None, instance_id=None, interval=None):
-        """ExpireVo
+        r"""ExpireVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ExpireVo:
 
     @property
     def expiration(self):
-        """Gets the expiration of this ExpireVo.
+        r"""Gets the expiration of this ExpireVo.
 
         过期时间。UNIX时间戳，单位毫秒。eg:1635905480465
 
@@ -68,7 +68,7 @@ class ExpireVo:
 
     @expiration.setter
     def expiration(self, expiration):
-        """Sets the expiration of this ExpireVo.
+        r"""Sets the expiration of this ExpireVo.
 
         过期时间。UNIX时间戳，单位毫秒。eg:1635905480465
 
@@ -79,7 +79,7 @@ class ExpireVo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExpireVo.
+        r"""Gets the instance_id of this ExpireVo.
 
         CodeArtsIDEOnline实例id
 
@@ -90,7 +90,7 @@ class ExpireVo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExpireVo.
+        r"""Sets the instance_id of this ExpireVo.
 
         CodeArtsIDEOnline实例id
 
@@ -101,7 +101,7 @@ class ExpireVo:
 
     @property
     def interval(self):
-        """Gets the interval of this ExpireVo.
+        r"""Gets the interval of this ExpireVo.
 
         CodeArtsIDEOnline实例自动休眠时长，单位‘分钟’
 
@@ -112,7 +112,7 @@ class ExpireVo:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ExpireVo.
+        r"""Sets the interval of this ExpireVo.
 
         CodeArtsIDEOnline实例自动休眠时长，单位‘分钟’
 

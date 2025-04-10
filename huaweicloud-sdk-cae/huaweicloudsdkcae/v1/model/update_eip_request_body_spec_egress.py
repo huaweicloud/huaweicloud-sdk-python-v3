@@ -27,7 +27,7 @@ class UpdateEipRequestBodySpecEgress:
     }
 
     def __init__(self, bandwidth_size=None, enabled=None):
-        """UpdateEipRequestBodySpecEgress
+        r"""UpdateEipRequestBodySpecEgress
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateEipRequestBodySpecEgress:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this UpdateEipRequestBodySpecEgress.
+        r"""Gets the bandwidth_size of this UpdateEipRequestBodySpecEgress.
 
         出网IP带宽。
 
@@ -61,7 +61,7 @@ class UpdateEipRequestBodySpecEgress:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this UpdateEipRequestBodySpecEgress.
+        r"""Sets the bandwidth_size of this UpdateEipRequestBodySpecEgress.
 
         出网IP带宽。
 
@@ -72,7 +72,7 @@ class UpdateEipRequestBodySpecEgress:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateEipRequestBodySpecEgress.
+        r"""Gets the enabled of this UpdateEipRequestBodySpecEgress.
 
         是否关闭出网IP。
 
@@ -83,7 +83,7 @@ class UpdateEipRequestBodySpecEgress:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateEipRequestBodySpecEgress.
+        r"""Sets the enabled of this UpdateEipRequestBodySpecEgress.
 
         是否关闭出网IP。
 

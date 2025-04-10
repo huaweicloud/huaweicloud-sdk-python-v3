@@ -35,7 +35,7 @@ class SetBucketAclRequest:
     }
 
     def __init__(self, date=None, bucket_name=None, acl=None, x_obs_acl=None, body=None):
-        """SetBucketAclRequest
+        r"""SetBucketAclRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SetBucketAclRequest:
 
     @property
     def date(self):
-        """Gets the date of this SetBucketAclRequest.
+        r"""Gets the date of this SetBucketAclRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -82,7 +82,7 @@ class SetBucketAclRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this SetBucketAclRequest.
+        r"""Sets the date of this SetBucketAclRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -93,7 +93,7 @@ class SetBucketAclRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this SetBucketAclRequest.
+        r"""Gets the bucket_name of this SetBucketAclRequest.
 
         Name of the requested bucket
 
@@ -104,7 +104,7 @@ class SetBucketAclRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this SetBucketAclRequest.
+        r"""Sets the bucket_name of this SetBucketAclRequest.
 
         Name of the requested bucket
 
@@ -115,7 +115,7 @@ class SetBucketAclRequest:
 
     @property
     def acl(self):
-        """Gets the acl of this SetBucketAclRequest.
+        r"""Gets the acl of this SetBucketAclRequest.
 
         Indicates the API for sending a request to the ACL.
 
@@ -126,7 +126,7 @@ class SetBucketAclRequest:
 
     @acl.setter
     def acl(self, acl):
-        """Sets the acl of this SetBucketAclRequest.
+        r"""Sets the acl of this SetBucketAclRequest.
 
         Indicates the API for sending a request to the ACL.
 
@@ -137,7 +137,7 @@ class SetBucketAclRequest:
 
     @property
     def x_obs_acl(self):
-        """Gets the x_obs_acl of this SetBucketAclRequest.
+        r"""Gets the x_obs_acl of this SetBucketAclRequest.
 
         Uses a canned ACL for the bucket.Value options: **private**, **public-read**, **public-read-write**, **public-read-delivered**, or **public-read-write-delivered**
 
@@ -148,7 +148,7 @@ class SetBucketAclRequest:
 
     @x_obs_acl.setter
     def x_obs_acl(self, x_obs_acl):
-        """Sets the x_obs_acl of this SetBucketAclRequest.
+        r"""Sets the x_obs_acl of this SetBucketAclRequest.
 
         Uses a canned ACL for the bucket.Value options: **private**, **public-read**, **public-read-write**, **public-read-delivered**, or **public-read-write-delivered**
 
@@ -159,7 +159,7 @@ class SetBucketAclRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetBucketAclRequest.
+        r"""Gets the body of this SetBucketAclRequest.
 
         :return: The body of this SetBucketAclRequest.
         :rtype: :class:`huaweicloudsdkobs.v1.SetBucketAclRequestBody`
@@ -168,7 +168,7 @@ class SetBucketAclRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetBucketAclRequest.
+        r"""Sets the body of this SetBucketAclRequest.
 
         :param body: The body of this SetBucketAclRequest.
         :type body: :class:`huaweicloudsdkobs.v1.SetBucketAclRequestBody`

@@ -24,7 +24,7 @@ class ImportMqsInstanceTopicResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ImportMqsInstanceTopicResponse
+        r"""ImportMqsInstanceTopicResponse
 
         The model defined in huaweicloud sdk
 

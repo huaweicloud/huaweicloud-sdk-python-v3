@@ -34,7 +34,7 @@ class OcrClient(Client):
         return client_builder
 
     def recognize_acceptance_bill(self, request):
-        """承兑汇票识别
+        r"""承兑汇票识别
 
         识别承兑汇票中的关键信息, 并以json格式返回结构化结果。
         
@@ -101,7 +101,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_auto_classification(self, request):
-        """智能分类识别
+        r"""智能分类识别
 
         检测定位图片上指定要识别的票证（票据、证件或其他文字载体），并对其进行结构化识别。接口以列表形式返回图片上要识别票证的位置坐标、结构化识别的内容以及对应的类别。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section3)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         计费次数说明：
@@ -170,7 +170,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_bank_receipt(self, request):
-        """银行回单识别
+        r"""银行回单识别
 
         支持对银行回单版式进行文字识别及键值对提取，实现高效的自动化结构化返回。
         
@@ -237,7 +237,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_bankcard(self, request):
-        """银行卡识别
+        r"""银行卡识别
 
         识别银行卡上的关键文字信息，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section9)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         说明：
@@ -306,7 +306,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_business_card(self, request):
-        """名片识别
+        r"""名片识别
 
         识别名片图片上的文字信息，并返回识别的结构化结果。支持对多种不同版式名片进行结构化信息提取。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section13)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -373,7 +373,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_business_license(self, request):
-        """营业执照识别
+        r"""营业执照识别
 
         识别营业执照首页图片中的文字信息，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section10)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -444,7 +444,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_cambodian_id_card(self, request):
-        """柬文身份证识别
+        r"""柬文身份证识别
 
         识别柬文身份证图片中的文字内容，并将识别的结构化结果返回给用户。
         
@@ -511,7 +511,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_chile_id_card(self, request):
-        """智利身份证识别
+        r"""智利身份证识别
 
         识别智利身份证图片中的文字内容，并返回识别的结构化结果。
         
@@ -578,7 +578,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_colombia_id_card(self, request):
-        """哥伦比亚身份证识别
+        r"""哥伦比亚身份证识别
 
         识别哥伦比亚身份证中的文字信息，并将识别的结构化结果返回给用户。
         
@@ -645,7 +645,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_driver_license(self, request):
-        """驾驶证识别
+        r"""驾驶证识别
 
         识别用户上传的驾驶证图片（或者用户提供的华为云上OBS的驾驶证图片文件的URL）中主页与副页的文字内容，并将识别的结果返回给用户。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section6)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -716,7 +716,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_exit_entry_permit(self, request):
-        """往来港澳台通行证识别
+        r"""往来港澳台通行证识别
 
         识别往来港澳台证件图片中的文字内容，并将识别的结构化结果返回给用户。
         
@@ -783,7 +783,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_financial_statement(self, request):
-        """财务报表识别
+        r"""财务报表识别
 
         识别用户上传的表格图片中的文字内容，并将识别的结果返回给用户。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section24)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -850,7 +850,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_flight_itinerary(self, request):
-        """飞机行程单识别
+        r"""飞机行程单识别
 
         识别飞机行程单中的文字信息，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section20)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         说明：
@@ -919,7 +919,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_general_table(self, request):
-        """通用表格识别
+        r"""通用表格识别
 
         用于识别用户上传的通用表格图片（或者用户提供的华为云上OBS的通用表格图片文件的URL）中的文字内容，并将识别的结果返回给用户。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section0)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -986,7 +986,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_general_text(self, request):
-        """通用文字识别
+        r"""通用文字识别
 
         识别图片上的文字信息，返回识别的文字和坐标。支持扫描文件、电子文档、书籍、票据和表单等多种场景的文字识别。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section1)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -1053,7 +1053,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_handwriting(self, request):
-        """手写文字识别
+        r"""手写文字识别
 
         识别文档中的手写文字信息，并将识别的结构化结果返回给用户。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section4)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -1120,7 +1120,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_health_code(self, request):
-        """防疫健康码识别
+        r"""防疫健康码识别
 
         支持对全国各地区不同版式的防疫健康码、核酸检测记录、行程卡中的14个关键字段进行结构化识别；支持识别4种健康码颜色，包括绿码、黄码、红码、灰码；支持返回各个关键字段的置信度，以便提高人工校验效率。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section26)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -1187,7 +1187,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_hk_id_card(self, request):
-        """香港身份证识别
+        r"""香港身份证识别
 
         识别香港身份证中的文字内容，并将识别的结果返回给用户。
         
@@ -1254,7 +1254,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_household_register(self, request):
-        """户口本识别
+        r"""户口本识别
 
         识别户口本中的文字信息，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section11)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -1321,7 +1321,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_id_card(self, request):
-        """身份证识别
+        r"""身份证识别
 
         识别身份证图片中的文字内容，并将识别的结果返回给用户。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section5)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -1394,7 +1394,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_id_document(self, request):
-        """通用证件识别
+        r"""通用证件识别
 
         识别身份证件图像，并将识别的结构化结果返回给用户。支持多个国家/地区的身份证、驾驶证和护照，具体国家/地区和证件列表详见表1国家/地区和证件列表。
         
@@ -1485,7 +1485,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_insurance_policy(self, request):
-        """保险单识别
+        r"""保险单识别
 
         识别保险单图片上的文字信息，并将识别的结构化结果返回给用户。支持对多种版式保险单的扫描图片及手机照片进行结构化信息提取。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section23)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -1552,7 +1552,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_invoice_verification(self, request):
-        """发票验真
+        r"""发票验真
 
         发票验真服务支持10种增值税发票的信息核验，包括增值税专用发票、增值税普通发票、增值税普通发票（卷式）、增值税电子专用发票、增值税电子普通发票、增值税电子普通发票（通行费）、二手车销售统一发票、机动车销售统一发票、区块链电子发票、全电发票，支持返回票面的全部信息。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section16)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -1619,7 +1619,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_license_plate(self, request):
-        """车牌识别
+        r"""车牌识别
 
         识别输入图片中的车牌信息，并返回其坐标和内容。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section12)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -1686,7 +1686,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_macao_id_card(self, request):
-        """澳门身份证识别
+        r"""澳门身份证识别
 
         识别澳门身份证图片中的文字内容，并将识别的结果返回给用户。
         
@@ -1753,7 +1753,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_mainland_travel_permit(self, request):
-        """港澳台居民来往内地通行证识别
+        r"""港澳台居民来往内地通行证识别
 
         识别港澳居民来往内地通行证上的文字内容，并将识别的结构化结果返回给用户。支持港澳居民来往内地通行证和台湾居民来往内地通行证两种卡证。
         
@@ -1820,7 +1820,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_mvs_invoice(self, request):
-        """机动车销售发票识别
+        r"""机动车销售发票识别
 
         识别机动车销售发票、二手车销售发票图片（服务能自动分辨两种类型，返回对应的字段）中的文字内容，并将识别的结果以JSON格式返回给用户。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section17)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         说明：
@@ -1890,7 +1890,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_myanmar_driver_license(self, request):
-        """缅文驾驶证识别
+        r"""缅文驾驶证识别
 
         识别缅甸驾驶证中的文字信息，并返回识别的结构化结果。
         
@@ -1957,7 +1957,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_myanmar_idcard(self, request):
-        """缅文身份证识别
+        r"""缅文身份证识别
 
         识别缅文身份证中的文字信息，并返回识别的结构化结果。
         
@@ -2024,7 +2024,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_passport(self, request):
-        """护照识别
+        r"""护照识别
 
         识别用户上传的护照首页图片中的文字信息，并返回识别的结构化结果。当前版本支持中国护照的全字段识别。外国护照支持护照下方两行国际标准化的机读码识别，并可从中提取6-7个关键字段信息。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section8)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         说明：
@@ -2093,7 +2093,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_pcr_test_record(self, request):
-        """核酸检测记录识别
+        r"""核酸检测记录识别
 
         识别核酸检测记录中的文字信息，并将识别的结构化结果返回给用户。PCR，全称Polymerase chain reaction,即聚合酶链式反应。PCR-test也为大众所认知为新型冠状病毒核酸检测测试。
         
@@ -2160,7 +2160,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_peru_id_card(self, request):
-        """秘鲁身份证识别
+        r"""秘鲁身份证识别
 
         识别秘鲁身份证图片中的文字内容，并将识别的结构化结果返回给用户。
         
@@ -2227,7 +2227,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_qualification_certificate(self, request):
-        """道路运输从业资格证识别
+        r"""道路运输从业资格证识别
 
         识别道路运输从业资格证上的关键文字信息，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section25)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -2294,7 +2294,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_quota_invoice(self, request):
-        """定额发票识别
+        r"""定额发票识别
 
         识别定额发票中的文字信息，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section21)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -2365,7 +2365,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_real_estate_certificate(self, request):
-        """不动产证识别
+        r"""不动产证识别
 
         识别不动产证中的文字信息，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section11)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         说明： 如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;OCR&amp;api&#x3D;AutoClassification)服务。
@@ -2433,7 +2433,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_seal(self, request):
-        """印章识别
+        r"""印章识别
 
         检测和识别合同文件或常用票据中的印章，并可擦除和提取图片中的印章，通过JSON格式返回印章检测、识别、擦除和提取的结果。
         
@@ -2500,7 +2500,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_smart_document_recognizer(self, request):
-        """智能文档解析
+        r"""智能文档解析
 
         对证件、票据、表单等任意版式文档进行键值对提取、文字识别、以及表格识别等任务，实现进阶高效的自动化结构化返回。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section11)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -2567,7 +2567,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_taxi_invoice(self, request):
-        """出租车发票识别
+        r"""出租车发票识别
 
         识别出租车发票中的文字信息，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section18)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -2637,7 +2637,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_thailand_idcard(self, request):
-        """泰文身份证识别
+        r"""泰文身份证识别
 
         识别泰国身份证中的文字信息，并返回识别的结构化结果。
         
@@ -2704,7 +2704,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_thailand_license_plate(self, request):
-        """泰国车牌识别
+        r"""泰国车牌识别
 
         识别泰国车牌图片中的车牌信息，并返回识别的结构化结果。
         
@@ -2771,7 +2771,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_toll_invoice(self, request):
-        """车辆通行费发票识别
+        r"""车辆通行费发票识别
 
         识别车辆通行费发票中的文字信息，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section19)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         说明：
@@ -2840,7 +2840,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_train_ticket(self, request):
-        """火车票识别
+        r"""火车票识别
 
         识别火车票中的文字信息，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section22)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         说明：
@@ -2909,7 +2909,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_transportation_license(self, request):
-        """道路运输证识别
+        r"""道路运输证识别
 
         识别道路运输证首页中的文字信息，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section11)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         说明： 如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;OCR&amp;api&#x3D;AutoClassification)服务。
@@ -2977,7 +2977,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_vat_invoice(self, request):
-        """增值税发票识别
+        r"""增值税发票识别
 
         识别增值税发票的类别，以及图片中的文字内容，并以json格式返回识别的结构化结果，不支持真伪验证。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section15)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         说明：
@@ -3048,7 +3048,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_vehicle_certificate(self, request):
-        """车辆合格证识别
+        r"""车辆合格证识别
 
         识别车辆合格证中的文字信息，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section11)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -3115,7 +3115,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_vehicle_license(self, request):
-        """行驶证识别
+        r"""行驶证识别
 
         识别用户上传的行驶证图片（或者用户提供的华为云上OBS的行驶证图片文件的URL）中主页和副页的文字内容，并将识别的结果返回给用户。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section7)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         说明：
@@ -3184,7 +3184,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_vietnam_id_card(self, request):
-        """越南身份证识别
+        r"""越南身份证识别
 
         识别越南身份证中的文字信息，并将识别的结构化结果返回给用户。
         
@@ -3251,7 +3251,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_waybill_electronic(self, request):
-        """电子面单识别
+        r"""电子面单识别
 
         识别用户上传的电子面单图片中的文字内容，并将识别的结果以json格式返回给用户。
         
@@ -3318,7 +3318,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_web_image(self, request):
-        """网络图片识别
+        r"""网络图片识别
 
         识别网络图片中的文字内容，并返回识别的结构化结果。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section2)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
@@ -3385,7 +3385,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_custom_template(self, request):
-        """自定义模板OCR
+        r"""自定义模板OCR
 
         自定义模板OCR，支持用户自定义模板，对于版式固定的各种票据和卡证，通过可视化界面操作，指定需要识别的关键字段，实现用户特定格式图片的自动识别和结构化提取。
         
@@ -3452,7 +3452,7 @@ class OcrClient(Client):
         return http_info
 
     def recognize_vin(self, request):
-        """VIN码识别
+        r"""VIN码识别
 
         识别图片中的车架号信息，并将识别结果返回给用户。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section14)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         

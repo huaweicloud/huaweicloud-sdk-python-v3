@@ -93,7 +93,7 @@ class WorkItemVo:
     }
 
     def __init__(self, name=None, owner=None, path=None, start_date=None, due_date=None, region=None, creator=None, updator=None, project_uuid=None, work_item_id=None, status_id=None, status_name=None, tracker_id=None, tracker_name=None, iteration_id=None, module_id=None, severity_id=None, severity_name=None, parent_workitem_id=None, board_id=None, board_name=None, create_time=None, update_time=None, iteration_name=None, module_name=None, module_path=None, module_path_name=None, owner_name=None, have_child_dynamic=None, has_child=None, issue_dynamic_count=None, case_count=None, sequence_id=None, pi_id=None, pi_name=None):
-        """WorkItemVo
+        r"""WorkItemVo
 
         The model defined in huaweicloud sdk
 
@@ -281,7 +281,7 @@ class WorkItemVo:
 
     @property
     def name(self):
-        """Gets the name of this WorkItemVo.
+        r"""Gets the name of this WorkItemVo.
 
         工作项名称
 
@@ -292,7 +292,7 @@ class WorkItemVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkItemVo.
+        r"""Sets the name of this WorkItemVo.
 
         工作项名称
 
@@ -303,7 +303,7 @@ class WorkItemVo:
 
     @property
     def owner(self):
-        """Gets the owner of this WorkItemVo.
+        r"""Gets the owner of this WorkItemVo.
 
         处理人
 
@@ -314,7 +314,7 @@ class WorkItemVo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this WorkItemVo.
+        r"""Sets the owner of this WorkItemVo.
 
         处理人
 
@@ -325,7 +325,7 @@ class WorkItemVo:
 
     @property
     def path(self):
-        """Gets the path of this WorkItemVo.
+        r"""Gets the path of this WorkItemVo.
 
         工作项路径
 
@@ -336,7 +336,7 @@ class WorkItemVo:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this WorkItemVo.
+        r"""Sets the path of this WorkItemVo.
 
         工作项路径
 
@@ -347,7 +347,7 @@ class WorkItemVo:
 
     @property
     def start_date(self):
-        """Gets the start_date of this WorkItemVo.
+        r"""Gets the start_date of this WorkItemVo.
 
         预计开始日期
 
@@ -358,7 +358,7 @@ class WorkItemVo:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this WorkItemVo.
+        r"""Sets the start_date of this WorkItemVo.
 
         预计开始日期
 
@@ -369,7 +369,7 @@ class WorkItemVo:
 
     @property
     def due_date(self):
-        """Gets the due_date of this WorkItemVo.
+        r"""Gets the due_date of this WorkItemVo.
 
         预计结束日期
 
@@ -380,7 +380,7 @@ class WorkItemVo:
 
     @due_date.setter
     def due_date(self, due_date):
-        """Sets the due_date of this WorkItemVo.
+        r"""Sets the due_date of this WorkItemVo.
 
         预计结束日期
 
@@ -391,7 +391,7 @@ class WorkItemVo:
 
     @property
     def region(self):
-        """Gets the region of this WorkItemVo.
+        r"""Gets the region of this WorkItemVo.
 
         逻辑region，外部使用公有云实际区域，内部使用默认值
 
@@ -402,7 +402,7 @@ class WorkItemVo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this WorkItemVo.
+        r"""Sets the region of this WorkItemVo.
 
         逻辑region，外部使用公有云实际区域，内部使用默认值
 
@@ -413,7 +413,7 @@ class WorkItemVo:
 
     @property
     def creator(self):
-        """Gets the creator of this WorkItemVo.
+        r"""Gets the creator of this WorkItemVo.
 
         创建人
 
@@ -424,7 +424,7 @@ class WorkItemVo:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this WorkItemVo.
+        r"""Sets the creator of this WorkItemVo.
 
         创建人
 
@@ -435,7 +435,7 @@ class WorkItemVo:
 
     @property
     def updator(self):
-        """Gets the updator of this WorkItemVo.
+        r"""Gets the updator of this WorkItemVo.
 
         更新人
 
@@ -446,7 +446,7 @@ class WorkItemVo:
 
     @updator.setter
     def updator(self, updator):
-        """Sets the updator of this WorkItemVo.
+        r"""Sets the updator of this WorkItemVo.
 
         更新人
 
@@ -457,7 +457,7 @@ class WorkItemVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this WorkItemVo.
+        r"""Gets the project_uuid of this WorkItemVo.
 
         项目ID，外部使用项目ID，内部使用默认值
 
@@ -468,7 +468,7 @@ class WorkItemVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this WorkItemVo.
+        r"""Sets the project_uuid of this WorkItemVo.
 
         项目ID，外部使用项目ID，内部使用默认值
 
@@ -479,7 +479,7 @@ class WorkItemVo:
 
     @property
     def work_item_id(self):
-        """Gets the work_item_id of this WorkItemVo.
+        r"""Gets the work_item_id of this WorkItemVo.
 
         工作项编号
 
@@ -490,7 +490,7 @@ class WorkItemVo:
 
     @work_item_id.setter
     def work_item_id(self, work_item_id):
-        """Sets the work_item_id of this WorkItemVo.
+        r"""Sets the work_item_id of this WorkItemVo.
 
         工作项编号
 
@@ -501,7 +501,7 @@ class WorkItemVo:
 
     @property
     def status_id(self):
-        """Gets the status_id of this WorkItemVo.
+        r"""Gets the status_id of this WorkItemVo.
 
         状态ID
 
@@ -512,7 +512,7 @@ class WorkItemVo:
 
     @status_id.setter
     def status_id(self, status_id):
-        """Sets the status_id of this WorkItemVo.
+        r"""Sets the status_id of this WorkItemVo.
 
         状态ID
 
@@ -523,7 +523,7 @@ class WorkItemVo:
 
     @property
     def status_name(self):
-        """Gets the status_name of this WorkItemVo.
+        r"""Gets the status_name of this WorkItemVo.
 
         状态
 
@@ -534,7 +534,7 @@ class WorkItemVo:
 
     @status_name.setter
     def status_name(self, status_name):
-        """Sets the status_name of this WorkItemVo.
+        r"""Sets the status_name of this WorkItemVo.
 
         状态
 
@@ -545,7 +545,7 @@ class WorkItemVo:
 
     @property
     def tracker_id(self):
-        """Gets the tracker_id of this WorkItemVo.
+        r"""Gets the tracker_id of this WorkItemVo.
 
         类型ID
 
@@ -556,7 +556,7 @@ class WorkItemVo:
 
     @tracker_id.setter
     def tracker_id(self, tracker_id):
-        """Sets the tracker_id of this WorkItemVo.
+        r"""Sets the tracker_id of this WorkItemVo.
 
         类型ID
 
@@ -567,7 +567,7 @@ class WorkItemVo:
 
     @property
     def tracker_name(self):
-        """Gets the tracker_name of this WorkItemVo.
+        r"""Gets the tracker_name of this WorkItemVo.
 
         类型
 
@@ -578,7 +578,7 @@ class WorkItemVo:
 
     @tracker_name.setter
     def tracker_name(self, tracker_name):
-        """Sets the tracker_name of this WorkItemVo.
+        r"""Sets the tracker_name of this WorkItemVo.
 
         类型
 
@@ -589,7 +589,7 @@ class WorkItemVo:
 
     @property
     def iteration_id(self):
-        """Gets the iteration_id of this WorkItemVo.
+        r"""Gets the iteration_id of this WorkItemVo.
 
         迭代ID
 
@@ -600,7 +600,7 @@ class WorkItemVo:
 
     @iteration_id.setter
     def iteration_id(self, iteration_id):
-        """Sets the iteration_id of this WorkItemVo.
+        r"""Sets the iteration_id of this WorkItemVo.
 
         迭代ID
 
@@ -611,7 +611,7 @@ class WorkItemVo:
 
     @property
     def module_id(self):
-        """Gets the module_id of this WorkItemVo.
+        r"""Gets the module_id of this WorkItemVo.
 
         模块ID
 
@@ -622,7 +622,7 @@ class WorkItemVo:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this WorkItemVo.
+        r"""Sets the module_id of this WorkItemVo.
 
         模块ID
 
@@ -633,7 +633,7 @@ class WorkItemVo:
 
     @property
     def severity_id(self):
-        """Gets the severity_id of this WorkItemVo.
+        r"""Gets the severity_id of this WorkItemVo.
 
         重要程度ID
 
@@ -644,7 +644,7 @@ class WorkItemVo:
 
     @severity_id.setter
     def severity_id(self, severity_id):
-        """Sets the severity_id of this WorkItemVo.
+        r"""Sets the severity_id of this WorkItemVo.
 
         重要程度ID
 
@@ -655,7 +655,7 @@ class WorkItemVo:
 
     @property
     def severity_name(self):
-        """Gets the severity_name of this WorkItemVo.
+        r"""Gets the severity_name of this WorkItemVo.
 
         重要程度
 
@@ -666,7 +666,7 @@ class WorkItemVo:
 
     @severity_name.setter
     def severity_name(self, severity_name):
-        """Sets the severity_name of this WorkItemVo.
+        r"""Sets the severity_name of this WorkItemVo.
 
         重要程度
 
@@ -677,7 +677,7 @@ class WorkItemVo:
 
     @property
     def parent_workitem_id(self):
-        """Gets the parent_workitem_id of this WorkItemVo.
+        r"""Gets the parent_workitem_id of this WorkItemVo.
 
         父工作项编号
 
@@ -688,7 +688,7 @@ class WorkItemVo:
 
     @parent_workitem_id.setter
     def parent_workitem_id(self, parent_workitem_id):
-        """Sets the parent_workitem_id of this WorkItemVo.
+        r"""Sets the parent_workitem_id of this WorkItemVo.
 
         父工作项编号
 
@@ -699,7 +699,7 @@ class WorkItemVo:
 
     @property
     def board_id(self):
-        """Gets the board_id of this WorkItemVo.
+        r"""Gets the board_id of this WorkItemVo.
 
         看板ID
 
@@ -710,7 +710,7 @@ class WorkItemVo:
 
     @board_id.setter
     def board_id(self, board_id):
-        """Sets the board_id of this WorkItemVo.
+        r"""Sets the board_id of this WorkItemVo.
 
         看板ID
 
@@ -721,7 +721,7 @@ class WorkItemVo:
 
     @property
     def board_name(self):
-        """Gets the board_name of this WorkItemVo.
+        r"""Gets the board_name of this WorkItemVo.
 
         看板
 
@@ -732,7 +732,7 @@ class WorkItemVo:
 
     @board_name.setter
     def board_name(self, board_name):
-        """Sets the board_name of this WorkItemVo.
+        r"""Sets the board_name of this WorkItemVo.
 
         看板
 
@@ -743,7 +743,7 @@ class WorkItemVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this WorkItemVo.
+        r"""Gets the create_time of this WorkItemVo.
 
         创建时间
 
@@ -754,7 +754,7 @@ class WorkItemVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this WorkItemVo.
+        r"""Sets the create_time of this WorkItemVo.
 
         创建时间
 
@@ -765,7 +765,7 @@ class WorkItemVo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this WorkItemVo.
+        r"""Gets the update_time of this WorkItemVo.
 
         更新时间
 
@@ -776,7 +776,7 @@ class WorkItemVo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this WorkItemVo.
+        r"""Sets the update_time of this WorkItemVo.
 
         更新时间
 
@@ -787,7 +787,7 @@ class WorkItemVo:
 
     @property
     def iteration_name(self):
-        """Gets the iteration_name of this WorkItemVo.
+        r"""Gets the iteration_name of this WorkItemVo.
 
         迭代名
 
@@ -798,7 +798,7 @@ class WorkItemVo:
 
     @iteration_name.setter
     def iteration_name(self, iteration_name):
-        """Sets the iteration_name of this WorkItemVo.
+        r"""Sets the iteration_name of this WorkItemVo.
 
         迭代名
 
@@ -809,7 +809,7 @@ class WorkItemVo:
 
     @property
     def module_name(self):
-        """Gets the module_name of this WorkItemVo.
+        r"""Gets the module_name of this WorkItemVo.
 
         模块名
 
@@ -820,7 +820,7 @@ class WorkItemVo:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this WorkItemVo.
+        r"""Sets the module_name of this WorkItemVo.
 
         模块名
 
@@ -831,7 +831,7 @@ class WorkItemVo:
 
     @property
     def module_path(self):
-        """Gets the module_path of this WorkItemVo.
+        r"""Gets the module_path of this WorkItemVo.
 
         模块path
 
@@ -842,7 +842,7 @@ class WorkItemVo:
 
     @module_path.setter
     def module_path(self, module_path):
-        """Sets the module_path of this WorkItemVo.
+        r"""Sets the module_path of this WorkItemVo.
 
         模块path
 
@@ -853,7 +853,7 @@ class WorkItemVo:
 
     @property
     def module_path_name(self):
-        """Gets the module_path_name of this WorkItemVo.
+        r"""Gets the module_path_name of this WorkItemVo.
 
         模块路径名称
 
@@ -864,7 +864,7 @@ class WorkItemVo:
 
     @module_path_name.setter
     def module_path_name(self, module_path_name):
-        """Sets the module_path_name of this WorkItemVo.
+        r"""Sets the module_path_name of this WorkItemVo.
 
         模块路径名称
 
@@ -875,7 +875,7 @@ class WorkItemVo:
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this WorkItemVo.
+        r"""Gets the owner_name of this WorkItemVo.
 
         处理人
 
@@ -886,7 +886,7 @@ class WorkItemVo:
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this WorkItemVo.
+        r"""Sets the owner_name of this WorkItemVo.
 
         处理人
 
@@ -897,7 +897,7 @@ class WorkItemVo:
 
     @property
     def have_child_dynamic(self):
-        """Gets the have_child_dynamic of this WorkItemVo.
+        r"""Gets the have_child_dynamic of this WorkItemVo.
 
         父工作项下是否有子工作项包含动态
 
@@ -908,7 +908,7 @@ class WorkItemVo:
 
     @have_child_dynamic.setter
     def have_child_dynamic(self, have_child_dynamic):
-        """Sets the have_child_dynamic of this WorkItemVo.
+        r"""Sets the have_child_dynamic of this WorkItemVo.
 
         父工作项下是否有子工作项包含动态
 
@@ -919,7 +919,7 @@ class WorkItemVo:
 
     @property
     def has_child(self):
-        """Gets the has_child of this WorkItemVo.
+        r"""Gets the has_child of this WorkItemVo.
 
         父工作项下是否有子工作项
 
@@ -930,7 +930,7 @@ class WorkItemVo:
 
     @has_child.setter
     def has_child(self, has_child):
-        """Sets the has_child of this WorkItemVo.
+        r"""Sets the has_child of this WorkItemVo.
 
         父工作项下是否有子工作项
 
@@ -941,7 +941,7 @@ class WorkItemVo:
 
     @property
     def issue_dynamic_count(self):
-        """Gets the issue_dynamic_count of this WorkItemVo.
+        r"""Gets the issue_dynamic_count of this WorkItemVo.
 
         需求动态数量
 
@@ -952,7 +952,7 @@ class WorkItemVo:
 
     @issue_dynamic_count.setter
     def issue_dynamic_count(self, issue_dynamic_count):
-        """Sets the issue_dynamic_count of this WorkItemVo.
+        r"""Sets the issue_dynamic_count of this WorkItemVo.
 
         需求动态数量
 
@@ -963,7 +963,7 @@ class WorkItemVo:
 
     @property
     def case_count(self):
-        """Gets the case_count of this WorkItemVo.
+        r"""Gets the case_count of this WorkItemVo.
 
         用例数量
 
@@ -974,7 +974,7 @@ class WorkItemVo:
 
     @case_count.setter
     def case_count(self, case_count):
-        """Sets the case_count of this WorkItemVo.
+        r"""Sets the case_count of this WorkItemVo.
 
         用例数量
 
@@ -985,7 +985,7 @@ class WorkItemVo:
 
     @property
     def sequence_id(self):
-        """Gets the sequence_id of this WorkItemVo.
+        r"""Gets the sequence_id of this WorkItemVo.
 
         xBoard项目工作项序列号
 
@@ -996,7 +996,7 @@ class WorkItemVo:
 
     @sequence_id.setter
     def sequence_id(self, sequence_id):
-        """Sets the sequence_id of this WorkItemVo.
+        r"""Sets the sequence_id of this WorkItemVo.
 
         xBoard项目工作项序列号
 
@@ -1007,7 +1007,7 @@ class WorkItemVo:
 
     @property
     def pi_id(self):
-        """Gets the pi_id of this WorkItemVo.
+        r"""Gets the pi_id of this WorkItemVo.
 
         pi的id，层级关系：pi -> 迭代 -> 需求
 
@@ -1018,7 +1018,7 @@ class WorkItemVo:
 
     @pi_id.setter
     def pi_id(self, pi_id):
-        """Sets the pi_id of this WorkItemVo.
+        r"""Sets the pi_id of this WorkItemVo.
 
         pi的id，层级关系：pi -> 迭代 -> 需求
 
@@ -1029,7 +1029,7 @@ class WorkItemVo:
 
     @property
     def pi_name(self):
-        """Gets the pi_name of this WorkItemVo.
+        r"""Gets the pi_name of this WorkItemVo.
 
         迭代ID
 
@@ -1040,7 +1040,7 @@ class WorkItemVo:
 
     @pi_name.setter
     def pi_name(self, pi_name):
-        """Sets the pi_name of this WorkItemVo.
+        r"""Sets the pi_name of this WorkItemVo.
 
         迭代ID
 

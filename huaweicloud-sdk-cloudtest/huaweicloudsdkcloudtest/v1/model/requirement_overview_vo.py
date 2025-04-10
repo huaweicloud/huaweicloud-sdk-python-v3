@@ -43,7 +43,7 @@ class RequirementOverviewVo:
     }
 
     def __init__(self, name=None, workitem_id=None, sequence_id=None, board_id=None, tracker_id=None, tracker_name=None, relate_case_number=None, case_pass_vo=None, case_execute_vo=None, relate_defect_number=None):
-        """RequirementOverviewVo
+        r"""RequirementOverviewVo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class RequirementOverviewVo:
 
     @property
     def name(self):
-        """Gets the name of this RequirementOverviewVo.
+        r"""Gets the name of this RequirementOverviewVo.
 
         需求名称
 
@@ -117,7 +117,7 @@ class RequirementOverviewVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RequirementOverviewVo.
+        r"""Sets the name of this RequirementOverviewVo.
 
         需求名称
 
@@ -128,7 +128,7 @@ class RequirementOverviewVo:
 
     @property
     def workitem_id(self):
-        """Gets the workitem_id of this RequirementOverviewVo.
+        r"""Gets the workitem_id of this RequirementOverviewVo.
 
         需求id
 
@@ -139,7 +139,7 @@ class RequirementOverviewVo:
 
     @workitem_id.setter
     def workitem_id(self, workitem_id):
-        """Sets the workitem_id of this RequirementOverviewVo.
+        r"""Sets the workitem_id of this RequirementOverviewVo.
 
         需求id
 
@@ -150,7 +150,7 @@ class RequirementOverviewVo:
 
     @property
     def sequence_id(self):
-        """Gets the sequence_id of this RequirementOverviewVo.
+        r"""Gets the sequence_id of this RequirementOverviewVo.
 
         需求序列编号
 
@@ -161,7 +161,7 @@ class RequirementOverviewVo:
 
     @sequence_id.setter
     def sequence_id(self, sequence_id):
-        """Sets the sequence_id of this RequirementOverviewVo.
+        r"""Sets the sequence_id of this RequirementOverviewVo.
 
         需求序列编号
 
@@ -172,7 +172,7 @@ class RequirementOverviewVo:
 
     @property
     def board_id(self):
-        """Gets the board_id of this RequirementOverviewVo.
+        r"""Gets the board_id of this RequirementOverviewVo.
 
         看板需求id
 
@@ -183,7 +183,7 @@ class RequirementOverviewVo:
 
     @board_id.setter
     def board_id(self, board_id):
-        """Sets the board_id of this RequirementOverviewVo.
+        r"""Sets the board_id of this RequirementOverviewVo.
 
         看板需求id
 
@@ -194,7 +194,7 @@ class RequirementOverviewVo:
 
     @property
     def tracker_id(self):
-        """Gets the tracker_id of this RequirementOverviewVo.
+        r"""Gets the tracker_id of this RequirementOverviewVo.
 
         需求类型id
 
@@ -205,7 +205,7 @@ class RequirementOverviewVo:
 
     @tracker_id.setter
     def tracker_id(self, tracker_id):
-        """Sets the tracker_id of this RequirementOverviewVo.
+        r"""Sets the tracker_id of this RequirementOverviewVo.
 
         需求类型id
 
@@ -216,7 +216,7 @@ class RequirementOverviewVo:
 
     @property
     def tracker_name(self):
-        """Gets the tracker_name of this RequirementOverviewVo.
+        r"""Gets the tracker_name of this RequirementOverviewVo.
 
         需求类型
 
@@ -227,7 +227,7 @@ class RequirementOverviewVo:
 
     @tracker_name.setter
     def tracker_name(self, tracker_name):
-        """Sets the tracker_name of this RequirementOverviewVo.
+        r"""Sets the tracker_name of this RequirementOverviewVo.
 
         需求类型
 
@@ -238,7 +238,7 @@ class RequirementOverviewVo:
 
     @property
     def relate_case_number(self):
-        """Gets the relate_case_number of this RequirementOverviewVo.
+        r"""Gets the relate_case_number of this RequirementOverviewVo.
 
         需求关联用例总数
 
@@ -249,7 +249,7 @@ class RequirementOverviewVo:
 
     @relate_case_number.setter
     def relate_case_number(self, relate_case_number):
-        """Sets the relate_case_number of this RequirementOverviewVo.
+        r"""Sets the relate_case_number of this RequirementOverviewVo.
 
         需求关联用例总数
 
@@ -260,7 +260,7 @@ class RequirementOverviewVo:
 
     @property
     def case_pass_vo(self):
-        """Gets the case_pass_vo of this RequirementOverviewVo.
+        r"""Gets the case_pass_vo of this RequirementOverviewVo.
 
         :return: The case_pass_vo of this RequirementOverviewVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CasePassVo`
@@ -269,7 +269,7 @@ class RequirementOverviewVo:
 
     @case_pass_vo.setter
     def case_pass_vo(self, case_pass_vo):
-        """Sets the case_pass_vo of this RequirementOverviewVo.
+        r"""Sets the case_pass_vo of this RequirementOverviewVo.
 
         :param case_pass_vo: The case_pass_vo of this RequirementOverviewVo.
         :type case_pass_vo: :class:`huaweicloudsdkcloudtest.v1.CasePassVo`
@@ -278,7 +278,7 @@ class RequirementOverviewVo:
 
     @property
     def case_execute_vo(self):
-        """Gets the case_execute_vo of this RequirementOverviewVo.
+        r"""Gets the case_execute_vo of this RequirementOverviewVo.
 
         :return: The case_execute_vo of this RequirementOverviewVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CaseExecuteVo`
@@ -287,7 +287,7 @@ class RequirementOverviewVo:
 
     @case_execute_vo.setter
     def case_execute_vo(self, case_execute_vo):
-        """Sets the case_execute_vo of this RequirementOverviewVo.
+        r"""Sets the case_execute_vo of this RequirementOverviewVo.
 
         :param case_execute_vo: The case_execute_vo of this RequirementOverviewVo.
         :type case_execute_vo: :class:`huaweicloudsdkcloudtest.v1.CaseExecuteVo`
@@ -296,7 +296,7 @@ class RequirementOverviewVo:
 
     @property
     def relate_defect_number(self):
-        """Gets the relate_defect_number of this RequirementOverviewVo.
+        r"""Gets the relate_defect_number of this RequirementOverviewVo.
 
         需求关联缺陷总数
 
@@ -307,7 +307,7 @@ class RequirementOverviewVo:
 
     @relate_defect_number.setter
     def relate_defect_number(self, relate_defect_number):
-        """Sets the relate_defect_number of this RequirementOverviewVo.
+        r"""Sets the relate_defect_number of this RequirementOverviewVo.
 
         需求关联缺陷总数
 

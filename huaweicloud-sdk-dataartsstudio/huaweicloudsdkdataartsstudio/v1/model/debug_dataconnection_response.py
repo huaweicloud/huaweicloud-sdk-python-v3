@@ -24,7 +24,7 @@ class DebugDataconnectionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DebugDataconnectionResponse
+        r"""DebugDataconnectionResponse
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class ListCustomerselfResourceRecordDetailsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListCustomerselfResourceRecordDetailsRequest
+        r"""ListCustomerselfResourceRecordDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListCustomerselfResourceRecordDetailsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListCustomerselfResourceRecordDetailsRequest.
+        r"""Gets the x_language of this ListCustomerselfResourceRecordDetailsRequest.
 
         |国际站默认英文，枚举：zh_cn：中文 en_us：英文|
 
@@ -61,7 +61,7 @@ class ListCustomerselfResourceRecordDetailsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListCustomerselfResourceRecordDetailsRequest.
+        r"""Sets the x_language of this ListCustomerselfResourceRecordDetailsRequest.
 
         |国际站默认英文，枚举：zh_cn：中文 en_us：英文|
 
@@ -72,7 +72,7 @@ class ListCustomerselfResourceRecordDetailsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListCustomerselfResourceRecordDetailsRequest.
+        r"""Gets the body of this ListCustomerselfResourceRecordDetailsRequest.
 
         :return: The body of this ListCustomerselfResourceRecordDetailsRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.QueryResRecordsDetailReq`
@@ -81,7 +81,7 @@ class ListCustomerselfResourceRecordDetailsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListCustomerselfResourceRecordDetailsRequest.
+        r"""Sets the body of this ListCustomerselfResourceRecordDetailsRequest.
 
         :param body: The body of this ListCustomerselfResourceRecordDetailsRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.QueryResRecordsDetailReq`

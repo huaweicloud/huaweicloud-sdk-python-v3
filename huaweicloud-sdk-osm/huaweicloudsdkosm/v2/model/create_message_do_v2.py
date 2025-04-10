@@ -27,7 +27,7 @@ class CreateMessageDoV2:
     }
 
     def __init__(self, content=None, accessory_ids=None):
-        """CreateMessageDoV2
+        r"""CreateMessageDoV2
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateMessageDoV2:
 
     @property
     def content(self):
-        """Gets the content of this CreateMessageDoV2.
+        r"""Gets the content of this CreateMessageDoV2.
 
         留言内容
 
@@ -60,7 +60,7 @@ class CreateMessageDoV2:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CreateMessageDoV2.
+        r"""Sets the content of this CreateMessageDoV2.
 
         留言内容
 
@@ -71,7 +71,7 @@ class CreateMessageDoV2:
 
     @property
     def accessory_ids(self):
-        """Gets the accessory_ids of this CreateMessageDoV2.
+        r"""Gets the accessory_ids of this CreateMessageDoV2.
 
         附件id
 
@@ -82,7 +82,7 @@ class CreateMessageDoV2:
 
     @accessory_ids.setter
     def accessory_ids(self, accessory_ids):
-        """Sets the accessory_ids of this CreateMessageDoV2.
+        r"""Sets the accessory_ids of this CreateMessageDoV2.
 
         附件id
 

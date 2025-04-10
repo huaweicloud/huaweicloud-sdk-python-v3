@@ -25,7 +25,7 @@ class UpdateSwitchRequest:
     }
 
     def __init__(self, log_converge_switch=None):
-        """UpdateSwitchRequest
+        r"""UpdateSwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateSwitchRequest:
 
     @property
     def log_converge_switch(self):
-        """Gets the log_converge_switch of this UpdateSwitchRequest.
+        r"""Gets the log_converge_switch of this UpdateSwitchRequest.
 
         开关参数
 
@@ -53,7 +53,7 @@ class UpdateSwitchRequest:
 
     @log_converge_switch.setter
     def log_converge_switch(self, log_converge_switch):
-        """Sets the log_converge_switch of this UpdateSwitchRequest.
+        r"""Sets the log_converge_switch of this UpdateSwitchRequest.
 
         开关参数
 

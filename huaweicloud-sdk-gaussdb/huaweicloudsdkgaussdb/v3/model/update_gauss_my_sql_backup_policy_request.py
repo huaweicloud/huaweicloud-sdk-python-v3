@@ -29,7 +29,7 @@ class UpdateGaussMySqlBackupPolicyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateGaussMySqlBackupPolicyRequest
+        r"""UpdateGaussMySqlBackupPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateGaussMySqlBackupPolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateGaussMySqlBackupPolicyRequest.
+        r"""Gets the x_language of this UpdateGaussMySqlBackupPolicyRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class UpdateGaussMySqlBackupPolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateGaussMySqlBackupPolicyRequest.
+        r"""Sets the x_language of this UpdateGaussMySqlBackupPolicyRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class UpdateGaussMySqlBackupPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateGaussMySqlBackupPolicyRequest.
+        r"""Gets the instance_id of this UpdateGaussMySqlBackupPolicyRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -89,7 +89,7 @@ class UpdateGaussMySqlBackupPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateGaussMySqlBackupPolicyRequest.
+        r"""Sets the instance_id of this UpdateGaussMySqlBackupPolicyRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -100,7 +100,7 @@ class UpdateGaussMySqlBackupPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGaussMySqlBackupPolicyRequest.
+        r"""Gets the body of this UpdateGaussMySqlBackupPolicyRequest.
 
         :return: The body of this UpdateGaussMySqlBackupPolicyRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlUpdateBackupPolicyRequest`
@@ -109,7 +109,7 @@ class UpdateGaussMySqlBackupPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGaussMySqlBackupPolicyRequest.
+        r"""Sets the body of this UpdateGaussMySqlBackupPolicyRequest.
 
         :param body: The body of this UpdateGaussMySqlBackupPolicyRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlUpdateBackupPolicyRequest`

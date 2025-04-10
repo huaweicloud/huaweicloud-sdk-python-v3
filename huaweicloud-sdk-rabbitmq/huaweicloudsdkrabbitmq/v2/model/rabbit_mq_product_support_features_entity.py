@@ -27,7 +27,7 @@ class RabbitMQProductSupportFeaturesEntity:
     }
 
     def __init__(self, name=None, properties=None):
-        """RabbitMQProductSupportFeaturesEntity
+        r"""RabbitMQProductSupportFeaturesEntity
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RabbitMQProductSupportFeaturesEntity:
 
     @property
     def name(self):
-        """Gets the name of this RabbitMQProductSupportFeaturesEntity.
+        r"""Gets the name of this RabbitMQProductSupportFeaturesEntity.
 
         特性名称。
 
@@ -61,7 +61,7 @@ class RabbitMQProductSupportFeaturesEntity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RabbitMQProductSupportFeaturesEntity.
+        r"""Sets the name of this RabbitMQProductSupportFeaturesEntity.
 
         特性名称。
 
@@ -72,7 +72,7 @@ class RabbitMQProductSupportFeaturesEntity:
 
     @property
     def properties(self):
-        """Gets the properties of this RabbitMQProductSupportFeaturesEntity.
+        r"""Gets the properties of this RabbitMQProductSupportFeaturesEntity.
 
         功能特性的键值对。
 
@@ -83,7 +83,7 @@ class RabbitMQProductSupportFeaturesEntity:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this RabbitMQProductSupportFeaturesEntity.
+        r"""Sets the properties of this RabbitMQProductSupportFeaturesEntity.
 
         功能特性的键值对。
 

@@ -29,7 +29,7 @@ class AttachApiToPluginRequest:
     }
 
     def __init__(self, instance_id=None, plugin_id=None, body=None):
-        """AttachApiToPluginRequest
+        r"""AttachApiToPluginRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AttachApiToPluginRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AttachApiToPluginRequest.
+        r"""Gets the instance_id of this AttachApiToPluginRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class AttachApiToPluginRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AttachApiToPluginRequest.
+        r"""Sets the instance_id of this AttachApiToPluginRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class AttachApiToPluginRequest:
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this AttachApiToPluginRequest.
+        r"""Gets the plugin_id of this AttachApiToPluginRequest.
 
         插件编号
 
@@ -88,7 +88,7 @@ class AttachApiToPluginRequest:
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this AttachApiToPluginRequest.
+        r"""Sets the plugin_id of this AttachApiToPluginRequest.
 
         插件编号
 
@@ -99,7 +99,7 @@ class AttachApiToPluginRequest:
 
     @property
     def body(self):
-        """Gets the body of this AttachApiToPluginRequest.
+        r"""Gets the body of this AttachApiToPluginRequest.
 
         :return: The body of this AttachApiToPluginRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.PluginOperApiInfo`
@@ -108,7 +108,7 @@ class AttachApiToPluginRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachApiToPluginRequest.
+        r"""Sets the body of this AttachApiToPluginRequest.
 
         :param body: The body of this AttachApiToPluginRequest.
         :type body: :class:`huaweicloudsdkroma.v2.PluginOperApiInfo`

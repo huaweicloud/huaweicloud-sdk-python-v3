@@ -29,7 +29,7 @@ class DTTransformMetrics:
     }
 
     def __init__(self, inputs=None, expression=None, metric_name=None):
-        """DTTransformMetrics
+        r"""DTTransformMetrics
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DTTransformMetrics:
 
     @property
     def inputs(self):
-        """Gets the inputs of this DTTransformMetrics.
+        r"""Gets the inputs of this DTTransformMetrics.
 
         定义指标计算查询的输入资产属性列表
 
@@ -65,7 +65,7 @@ class DTTransformMetrics:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this DTTransformMetrics.
+        r"""Sets the inputs of this DTTransformMetrics.
 
         定义指标计算查询的输入资产属性列表
 
@@ -76,7 +76,7 @@ class DTTransformMetrics:
 
     @property
     def expression(self):
-        """Gets the expression of this DTTransformMetrics.
+        r"""Gets the expression of this DTTransformMetrics.
 
         指标表达式,最多64个字符
 
@@ -87,7 +87,7 @@ class DTTransformMetrics:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this DTTransformMetrics.
+        r"""Sets the expression of this DTTransformMetrics.
 
         指标表达式,最多64个字符
 
@@ -98,7 +98,7 @@ class DTTransformMetrics:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this DTTransformMetrics.
+        r"""Gets the metric_name of this DTTransformMetrics.
 
         指标名，指标计算查询的输出指标名称
 
@@ -109,7 +109,7 @@ class DTTransformMetrics:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this DTTransformMetrics.
+        r"""Sets the metric_name of this DTTransformMetrics.
 
         指标名，指标计算查询的输出指标名称
 

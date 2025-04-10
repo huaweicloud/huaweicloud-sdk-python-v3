@@ -27,7 +27,7 @@ class BackupSyncRespBody:
     }
 
     def __init__(self, backup_id=None, operation_log_id=None):
-        """BackupSyncRespBody
+        r"""BackupSyncRespBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BackupSyncRespBody:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this BackupSyncRespBody.
+        r"""Gets the backup_id of this BackupSyncRespBody.
 
         备份副本ID
 
@@ -59,7 +59,7 @@ class BackupSyncRespBody:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this BackupSyncRespBody.
+        r"""Sets the backup_id of this BackupSyncRespBody.
 
         备份副本ID
 
@@ -70,7 +70,7 @@ class BackupSyncRespBody:
 
     @property
     def operation_log_id(self):
-        """Gets the operation_log_id of this BackupSyncRespBody.
+        r"""Gets the operation_log_id of this BackupSyncRespBody.
 
         同步任务ID
 
@@ -81,7 +81,7 @@ class BackupSyncRespBody:
 
     @operation_log_id.setter
     def operation_log_id(self, operation_log_id):
-        """Sets the operation_log_id of this BackupSyncRespBody.
+        r"""Sets the operation_log_id of this BackupSyncRespBody.
 
         同步任务ID
 

@@ -31,7 +31,7 @@ class TextDetectionResultDetail:
     }
 
     def __init__(self, suggestion=None, label=None, confidence=None, segments=None):
-        """TextDetectionResultDetail
+        r"""TextDetectionResultDetail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TextDetectionResultDetail:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this TextDetectionResultDetail.
+        r"""Gets the suggestion of this TextDetectionResultDetail.
 
         审核结果是否通过。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检
 
@@ -75,7 +75,7 @@ class TextDetectionResultDetail:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this TextDetectionResultDetail.
+        r"""Sets the suggestion of this TextDetectionResultDetail.
 
         审核结果是否通过。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检
 
@@ -86,7 +86,7 @@ class TextDetectionResultDetail:
 
     @property
     def label(self):
-        """Gets the label of this TextDetectionResultDetail.
+        r"""Gets the label of this TextDetectionResultDetail.
 
         检测结果的标签。  支持label列表如下：  politics: 涉政  terrorism: 暴恐  porn: 色情  ban: 违禁  abuse: 辱骂  ad: 广告  ad_law: 广告法  customized：自定义（命中自定义词库中的关键词）
 
@@ -97,7 +97,7 @@ class TextDetectionResultDetail:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this TextDetectionResultDetail.
+        r"""Sets the label of this TextDetectionResultDetail.
 
         检测结果的标签。  支持label列表如下：  politics: 涉政  terrorism: 暴恐  porn: 色情  ban: 违禁  abuse: 辱骂  ad: 广告  ad_law: 广告法  customized：自定义（命中自定义词库中的关键词）
 
@@ -108,7 +108,7 @@ class TextDetectionResultDetail:
 
     @property
     def confidence(self):
-        """Gets the confidence of this TextDetectionResultDetail.
+        r"""Gets the confidence of this TextDetectionResultDetail.
 
         置信度，取值范围 0-1，值越⼤，可信度越⾼。
 
@@ -119,7 +119,7 @@ class TextDetectionResultDetail:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this TextDetectionResultDetail.
+        r"""Sets the confidence of this TextDetectionResultDetail.
 
         置信度，取值范围 0-1，值越⼤，可信度越⾼。
 
@@ -130,7 +130,7 @@ class TextDetectionResultDetail:
 
     @property
     def segments(self):
-        """Gets the segments of this TextDetectionResultDetail.
+        r"""Gets the segments of this TextDetectionResultDetail.
 
         命中的风险片段信息，如果命中了语义算法模型，则会返回一个空的列表。
 
@@ -141,7 +141,7 @@ class TextDetectionResultDetail:
 
     @segments.setter
     def segments(self, segments):
-        """Sets the segments of this TextDetectionResultDetail.
+        r"""Sets the segments of this TextDetectionResultDetail.
 
         命中的风险片段信息，如果命中了语义算法模型，则会返回一个空的列表。
 

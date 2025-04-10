@@ -27,7 +27,7 @@ class TaskInstanceSpecConResourceRsp:
     }
 
     def __init__(self, limits=None, requests=None):
-        """TaskInstanceSpecConResourceRsp
+        r"""TaskInstanceSpecConResourceRsp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TaskInstanceSpecConResourceRsp:
 
     @property
     def limits(self):
-        """Gets the limits of this TaskInstanceSpecConResourceRsp.
+        r"""Gets the limits of this TaskInstanceSpecConResourceRsp.
 
         :return: The limits of this TaskInstanceSpecConResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskInstanceSpecConResLimitRsp`
@@ -59,7 +59,7 @@ class TaskInstanceSpecConResourceRsp:
 
     @limits.setter
     def limits(self, limits):
-        """Sets the limits of this TaskInstanceSpecConResourceRsp.
+        r"""Sets the limits of this TaskInstanceSpecConResourceRsp.
 
         :param limits: The limits of this TaskInstanceSpecConResourceRsp.
         :type limits: :class:`huaweicloudsdkeihealth.v1.TaskInstanceSpecConResLimitRsp`
@@ -68,7 +68,7 @@ class TaskInstanceSpecConResourceRsp:
 
     @property
     def requests(self):
-        """Gets the requests of this TaskInstanceSpecConResourceRsp.
+        r"""Gets the requests of this TaskInstanceSpecConResourceRsp.
 
         :return: The requests of this TaskInstanceSpecConResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskInstanceSpecConResRequestRsp`
@@ -77,7 +77,7 @@ class TaskInstanceSpecConResourceRsp:
 
     @requests.setter
     def requests(self, requests):
-        """Sets the requests of this TaskInstanceSpecConResourceRsp.
+        r"""Sets the requests of this TaskInstanceSpecConResourceRsp.
 
         :param requests: The requests of this TaskInstanceSpecConResourceRsp.
         :type requests: :class:`huaweicloudsdkeihealth.v1.TaskInstanceSpecConResRequestRsp`

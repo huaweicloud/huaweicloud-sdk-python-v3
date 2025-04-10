@@ -24,7 +24,7 @@ class DownloadBlockchainCertResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """DownloadBlockchainCertResponse
+        r"""DownloadBlockchainCertResponse
 
         The model defined in huaweicloud sdk
 

@@ -45,7 +45,7 @@ class EdgemgrDevice:
     }
 
     def __init__(self, id=None, name=None, access_protocol=None, description=None, attributes=None, twin=None, project_id=None, created_at=None, updated_at=None, property_visitors=None, tags=None):
-        """EdgemgrDevice
+        r"""EdgemgrDevice
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class EdgemgrDevice:
 
     @property
     def id(self):
-        """Gets the id of this EdgemgrDevice.
+        r"""Gets the id of this EdgemgrDevice.
 
         终端设备ID，只允许英文字母、数字、下划线、中划线，必须以英文字母和数字开头，长度限制为24~64之间
 
@@ -114,7 +114,7 @@ class EdgemgrDevice:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EdgemgrDevice.
+        r"""Sets the id of this EdgemgrDevice.
 
         终端设备ID，只允许英文字母、数字、下划线、中划线，必须以英文字母和数字开头，长度限制为24~64之间
 
@@ -125,7 +125,7 @@ class EdgemgrDevice:
 
     @property
     def name(self):
-        """Gets the name of this EdgemgrDevice.
+        r"""Gets the name of this EdgemgrDevice.
 
         终端设备名称，只允许中文字符、英文字母、数字、下划线、中划线，长度限制为1~64
 
@@ -136,7 +136,7 @@ class EdgemgrDevice:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EdgemgrDevice.
+        r"""Sets the name of this EdgemgrDevice.
 
         终端设备名称，只允许中文字符、英文字母、数字、下划线、中划线，长度限制为1~64
 
@@ -147,7 +147,7 @@ class EdgemgrDevice:
 
     @property
     def access_protocol(self):
-        """Gets the access_protocol of this EdgemgrDevice.
+        r"""Gets the access_protocol of this EdgemgrDevice.
 
         访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议 默认为userdefine
 
@@ -158,7 +158,7 @@ class EdgemgrDevice:
 
     @access_protocol.setter
     def access_protocol(self, access_protocol):
-        """Sets the access_protocol of this EdgemgrDevice.
+        r"""Sets the access_protocol of this EdgemgrDevice.
 
         访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议 默认为userdefine
 
@@ -169,7 +169,7 @@ class EdgemgrDevice:
 
     @property
     def description(self):
-        """Gets the description of this EdgemgrDevice.
+        r"""Gets the description of this EdgemgrDevice.
 
         终端设备描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -180,7 +180,7 @@ class EdgemgrDevice:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EdgemgrDevice.
+        r"""Sets the description of this EdgemgrDevice.
 
         终端设备描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -191,7 +191,7 @@ class EdgemgrDevice:
 
     @property
     def attributes(self):
-        """Gets the attributes of this EdgemgrDevice.
+        r"""Gets the attributes of this EdgemgrDevice.
 
         静态属性
 
@@ -202,7 +202,7 @@ class EdgemgrDevice:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this EdgemgrDevice.
+        r"""Sets the attributes of this EdgemgrDevice.
 
         静态属性
 
@@ -213,7 +213,7 @@ class EdgemgrDevice:
 
     @property
     def twin(self):
-        """Gets the twin of this EdgemgrDevice.
+        r"""Gets the twin of this EdgemgrDevice.
 
         终端设备静态属性信息
 
@@ -224,7 +224,7 @@ class EdgemgrDevice:
 
     @twin.setter
     def twin(self, twin):
-        """Sets the twin of this EdgemgrDevice.
+        r"""Sets the twin of this EdgemgrDevice.
 
         终端设备静态属性信息
 
@@ -235,7 +235,7 @@ class EdgemgrDevice:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EdgemgrDevice.
+        r"""Gets the project_id of this EdgemgrDevice.
 
         项目ID
 
@@ -246,7 +246,7 @@ class EdgemgrDevice:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EdgemgrDevice.
+        r"""Sets the project_id of this EdgemgrDevice.
 
         项目ID
 
@@ -257,7 +257,7 @@ class EdgemgrDevice:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EdgemgrDevice.
+        r"""Gets the created_at of this EdgemgrDevice.
 
         创建时间
 
@@ -268,7 +268,7 @@ class EdgemgrDevice:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EdgemgrDevice.
+        r"""Sets the created_at of this EdgemgrDevice.
 
         创建时间
 
@@ -279,7 +279,7 @@ class EdgemgrDevice:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EdgemgrDevice.
+        r"""Gets the updated_at of this EdgemgrDevice.
 
         更新时间
 
@@ -290,7 +290,7 @@ class EdgemgrDevice:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EdgemgrDevice.
+        r"""Sets the updated_at of this EdgemgrDevice.
 
         更新时间
 
@@ -301,7 +301,7 @@ class EdgemgrDevice:
 
     @property
     def property_visitors(self):
-        """Gets the property_visitors of this EdgemgrDevice.
+        r"""Gets the property_visitors of this EdgemgrDevice.
 
         孪生属性配置
 
@@ -312,7 +312,7 @@ class EdgemgrDevice:
 
     @property_visitors.setter
     def property_visitors(self, property_visitors):
-        """Sets the property_visitors of this EdgemgrDevice.
+        r"""Sets the property_visitors of this EdgemgrDevice.
 
         孪生属性配置
 
@@ -323,7 +323,7 @@ class EdgemgrDevice:
 
     @property
     def tags(self):
-        """Gets the tags of this EdgemgrDevice.
+        r"""Gets the tags of this EdgemgrDevice.
 
         :return: The tags of this EdgemgrDevice.
         :rtype: :class:`huaweicloudsdkief.v1.ResourceTag`
@@ -332,7 +332,7 @@ class EdgemgrDevice:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this EdgemgrDevice.
+        r"""Sets the tags of this EdgemgrDevice.
 
         :param tags: The tags of this EdgemgrDevice.
         :type tags: :class:`huaweicloudsdkief.v1.ResourceTag`

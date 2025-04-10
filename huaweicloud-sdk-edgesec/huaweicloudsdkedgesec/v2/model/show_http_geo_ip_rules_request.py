@@ -29,7 +29,7 @@ class ShowHttpGeoIpRulesRequest:
     }
 
     def __init__(self, policy_id=None, page=None, pagesize=None):
-        """ShowHttpGeoIpRulesRequest
+        r"""ShowHttpGeoIpRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowHttpGeoIpRulesRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowHttpGeoIpRulesRequest.
+        r"""Gets the policy_id of this ShowHttpGeoIpRulesRequest.
 
         策略id
 
@@ -67,7 +67,7 @@ class ShowHttpGeoIpRulesRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowHttpGeoIpRulesRequest.
+        r"""Sets the policy_id of this ShowHttpGeoIpRulesRequest.
 
         策略id
 
@@ -78,7 +78,7 @@ class ShowHttpGeoIpRulesRequest:
 
     @property
     def page(self):
-        """Gets the page of this ShowHttpGeoIpRulesRequest.
+        r"""Gets the page of this ShowHttpGeoIpRulesRequest.
 
         分页查询参数，第page页
 
@@ -89,7 +89,7 @@ class ShowHttpGeoIpRulesRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowHttpGeoIpRulesRequest.
+        r"""Sets the page of this ShowHttpGeoIpRulesRequest.
 
         分页查询参数，第page页
 
@@ -100,7 +100,7 @@ class ShowHttpGeoIpRulesRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ShowHttpGeoIpRulesRequest.
+        r"""Gets the pagesize of this ShowHttpGeoIpRulesRequest.
 
         分页查询参数，每页显示pagesize条记录
 
@@ -111,7 +111,7 @@ class ShowHttpGeoIpRulesRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ShowHttpGeoIpRulesRequest.
+        r"""Sets the pagesize of this ShowHttpGeoIpRulesRequest.
 
         分页查询参数，每页显示pagesize条记录
 

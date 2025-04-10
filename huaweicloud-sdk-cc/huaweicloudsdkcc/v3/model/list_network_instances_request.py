@@ -43,7 +43,7 @@ class ListNetworkInstancesRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, description=None, cloud_connection_id=None, status=None, type=None, instance_id=None, region_id=None):
-        """ListNetworkInstancesRequest
+        r"""ListNetworkInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListNetworkInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNetworkInstancesRequest.
+        r"""Gets the limit of this ListNetworkInstancesRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -117,7 +117,7 @@ class ListNetworkInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNetworkInstancesRequest.
+        r"""Sets the limit of this ListNetworkInstancesRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -128,7 +128,7 @@ class ListNetworkInstancesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListNetworkInstancesRequest.
+        r"""Gets the marker of this ListNetworkInstancesRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -139,7 +139,7 @@ class ListNetworkInstancesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListNetworkInstancesRequest.
+        r"""Sets the marker of this ListNetworkInstancesRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -150,7 +150,7 @@ class ListNetworkInstancesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListNetworkInstancesRequest.
+        r"""Gets the id of this ListNetworkInstancesRequest.
 
         根据id查询，可查询多个id。
 
@@ -161,7 +161,7 @@ class ListNetworkInstancesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListNetworkInstancesRequest.
+        r"""Sets the id of this ListNetworkInstancesRequest.
 
         根据id查询，可查询多个id。
 
@@ -172,7 +172,7 @@ class ListNetworkInstancesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListNetworkInstancesRequest.
+        r"""Gets the name of this ListNetworkInstancesRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -183,7 +183,7 @@ class ListNetworkInstancesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListNetworkInstancesRequest.
+        r"""Sets the name of this ListNetworkInstancesRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -194,7 +194,7 @@ class ListNetworkInstancesRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListNetworkInstancesRequest.
+        r"""Gets the description of this ListNetworkInstancesRequest.
 
         根据描述查询，可查询多个描述。
 
@@ -205,7 +205,7 @@ class ListNetworkInstancesRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListNetworkInstancesRequest.
+        r"""Sets the description of this ListNetworkInstancesRequest.
 
         根据描述查询，可查询多个描述。
 
@@ -216,7 +216,7 @@ class ListNetworkInstancesRequest:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this ListNetworkInstancesRequest.
+        r"""Gets the cloud_connection_id of this ListNetworkInstancesRequest.
 
         根据云连接的ID过滤列表。
 
@@ -227,7 +227,7 @@ class ListNetworkInstancesRequest:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this ListNetworkInstancesRequest.
+        r"""Sets the cloud_connection_id of this ListNetworkInstancesRequest.
 
         根据云连接的ID过滤列表。
 
@@ -238,7 +238,7 @@ class ListNetworkInstancesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListNetworkInstancesRequest.
+        r"""Gets the status of this ListNetworkInstancesRequest.
 
         根据状态过滤网络实例列表。ACTIVE：表示状态可用。
 
@@ -249,7 +249,7 @@ class ListNetworkInstancesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListNetworkInstancesRequest.
+        r"""Sets the status of this ListNetworkInstancesRequest.
 
         根据状态过滤网络实例列表。ACTIVE：表示状态可用。
 
@@ -260,7 +260,7 @@ class ListNetworkInstancesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListNetworkInstancesRequest.
+        r"""Gets the type of this ListNetworkInstancesRequest.
 
         根据类型过滤网络实例列表。
 
@@ -271,7 +271,7 @@ class ListNetworkInstancesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListNetworkInstancesRequest.
+        r"""Sets the type of this ListNetworkInstancesRequest.
 
         根据类型过滤网络实例列表。
 
@@ -282,7 +282,7 @@ class ListNetworkInstancesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListNetworkInstancesRequest.
+        r"""Gets the instance_id of this ListNetworkInstancesRequest.
 
         根据网络实例ID过滤网络实例列表。
 
@@ -293,7 +293,7 @@ class ListNetworkInstancesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListNetworkInstancesRequest.
+        r"""Sets the instance_id of this ListNetworkInstancesRequest.
 
         根据网络实例ID过滤网络实例列表。
 
@@ -304,7 +304,7 @@ class ListNetworkInstancesRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListNetworkInstancesRequest.
+        r"""Gets the region_id of this ListNetworkInstancesRequest.
 
         根据网络实例所在的Region过滤网络实例列表。
 
@@ -315,7 +315,7 @@ class ListNetworkInstancesRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListNetworkInstancesRequest.
+        r"""Sets the region_id of this ListNetworkInstancesRequest.
 
         根据网络实例所在的Region过滤网络实例列表。
 

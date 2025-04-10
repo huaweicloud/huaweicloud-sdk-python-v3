@@ -27,7 +27,7 @@ class ShowBigkeyScanTaskDetailsRequest:
     }
 
     def __init__(self, instance_id=None, bigkey_id=None):
-        """ShowBigkeyScanTaskDetailsRequest
+        r"""ShowBigkeyScanTaskDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowBigkeyScanTaskDetailsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowBigkeyScanTaskDetailsRequest.
+        r"""Gets the instance_id of this ShowBigkeyScanTaskDetailsRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class ShowBigkeyScanTaskDetailsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowBigkeyScanTaskDetailsRequest.
+        r"""Sets the instance_id of this ShowBigkeyScanTaskDetailsRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class ShowBigkeyScanTaskDetailsRequest:
 
     @property
     def bigkey_id(self):
-        """Gets the bigkey_id of this ShowBigkeyScanTaskDetailsRequest.
+        r"""Gets the bigkey_id of this ShowBigkeyScanTaskDetailsRequest.
 
         大key分析任务ID。
 
@@ -81,7 +81,7 @@ class ShowBigkeyScanTaskDetailsRequest:
 
     @bigkey_id.setter
     def bigkey_id(self, bigkey_id):
-        """Sets the bigkey_id of this ShowBigkeyScanTaskDetailsRequest.
+        r"""Sets the bigkey_id of this ShowBigkeyScanTaskDetailsRequest.
 
         大key分析任务ID。
 

@@ -29,7 +29,7 @@ class UpdateCaseRequest:
     }
 
     def __init__(self, case_id=None, target=None, body=None):
-        """UpdateCaseRequest
+        r"""UpdateCaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateCaseRequest:
 
     @property
     def case_id(self):
-        """Gets the case_id of this UpdateCaseRequest.
+        r"""Gets the case_id of this UpdateCaseRequest.
 
         用例id
 
@@ -66,7 +66,7 @@ class UpdateCaseRequest:
 
     @case_id.setter
     def case_id(self, case_id):
-        """Sets the case_id of this UpdateCaseRequest.
+        r"""Sets the case_id of this UpdateCaseRequest.
 
         用例id
 
@@ -77,7 +77,7 @@ class UpdateCaseRequest:
 
     @property
     def target(self):
-        """Gets the target of this UpdateCaseRequest.
+        r"""Gets the target of this UpdateCaseRequest.
 
         类型
 
@@ -88,7 +88,7 @@ class UpdateCaseRequest:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this UpdateCaseRequest.
+        r"""Sets the target of this UpdateCaseRequest.
 
         类型
 
@@ -99,7 +99,7 @@ class UpdateCaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCaseRequest.
+        r"""Gets the body of this UpdateCaseRequest.
 
         :return: The body of this UpdateCaseRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.CaseInfoDetail`
@@ -108,7 +108,7 @@ class UpdateCaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCaseRequest.
+        r"""Sets the body of this UpdateCaseRequest.
 
         :param body: The body of this UpdateCaseRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.CaseInfoDetail`

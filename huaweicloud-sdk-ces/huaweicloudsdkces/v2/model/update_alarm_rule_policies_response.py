@@ -26,7 +26,7 @@ class UpdateAlarmRulePoliciesResponse(SdkResponse):
     }
 
     def __init__(self, policies=None):
-        """UpdateAlarmRulePoliciesResponse
+        r"""UpdateAlarmRulePoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAlarmRulePoliciesResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this UpdateAlarmRulePoliciesResponse.
+        r"""Gets the policies of this UpdateAlarmRulePoliciesResponse.
 
         策略信息
 
@@ -55,7 +55,7 @@ class UpdateAlarmRulePoliciesResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this UpdateAlarmRulePoliciesResponse.
+        r"""Sets the policies of this UpdateAlarmRulePoliciesResponse.
 
         策略信息
 

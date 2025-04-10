@@ -34,7 +34,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
     }
 
     def __init__(self, success=None, failure=None, swagger=None, group_id=None, ignore=None):
-        """ImportApiDefinitionsV2Response
+        r"""ImportApiDefinitionsV2Response
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this ImportApiDefinitionsV2Response.
+        r"""Gets the success of this ImportApiDefinitionsV2Response.
 
         导入成功信息
 
@@ -83,7 +83,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ImportApiDefinitionsV2Response.
+        r"""Sets the success of this ImportApiDefinitionsV2Response.
 
         导入成功信息
 
@@ -94,7 +94,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
 
     @property
     def failure(self):
-        """Gets the failure of this ImportApiDefinitionsV2Response.
+        r"""Gets the failure of this ImportApiDefinitionsV2Response.
 
         导入失败信息
 
@@ -105,7 +105,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
 
     @failure.setter
     def failure(self, failure):
-        """Sets the failure of this ImportApiDefinitionsV2Response.
+        r"""Sets the failure of this ImportApiDefinitionsV2Response.
 
         导入失败信息
 
@@ -116,7 +116,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
 
     @property
     def swagger(self):
-        """Gets the swagger of this ImportApiDefinitionsV2Response.
+        r"""Gets the swagger of this ImportApiDefinitionsV2Response.
 
         :return: The swagger of this ImportApiDefinitionsV2Response.
         :rtype: :class:`huaweicloudsdkapig.v2.Swagger`
@@ -125,7 +125,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
 
     @swagger.setter
     def swagger(self, swagger):
-        """Sets the swagger of this ImportApiDefinitionsV2Response.
+        r"""Sets the swagger of this ImportApiDefinitionsV2Response.
 
         :param swagger: The swagger of this ImportApiDefinitionsV2Response.
         :type swagger: :class:`huaweicloudsdkapig.v2.Swagger`
@@ -134,7 +134,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this ImportApiDefinitionsV2Response.
+        r"""Gets the group_id of this ImportApiDefinitionsV2Response.
 
         API分组编号
 
@@ -145,7 +145,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ImportApiDefinitionsV2Response.
+        r"""Sets the group_id of this ImportApiDefinitionsV2Response.
 
         API分组编号
 
@@ -156,7 +156,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
 
     @property
     def ignore(self):
-        """Gets the ignore of this ImportApiDefinitionsV2Response.
+        r"""Gets the ignore of this ImportApiDefinitionsV2Response.
 
         被忽略导入的API信息
 
@@ -167,7 +167,7 @@ class ImportApiDefinitionsV2Response(SdkResponse):
 
     @ignore.setter
     def ignore(self, ignore):
-        """Sets the ignore of this ImportApiDefinitionsV2Response.
+        r"""Sets the ignore of this ImportApiDefinitionsV2Response.
 
         被忽略导入的API信息
 

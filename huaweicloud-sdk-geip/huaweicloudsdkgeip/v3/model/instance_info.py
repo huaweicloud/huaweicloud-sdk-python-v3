@@ -41,7 +41,7 @@ class InstanceInfo:
     }
 
     def __init__(self, region=None, quark_vpc_endpoint=None, project_id=None, instance_type=None, instance_id=None, service_type=None, service_id=None, public_border_group=None, instance_site=None):
-        """InstanceInfo
+        r"""InstanceInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class InstanceInfo:
 
     @property
     def region(self):
-        """Gets the region of this InstanceInfo.
+        r"""Gets the region of this InstanceInfo.
 
         region
 
@@ -110,7 +110,7 @@ class InstanceInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this InstanceInfo.
+        r"""Sets the region of this InstanceInfo.
 
         region
 
@@ -121,7 +121,7 @@ class InstanceInfo:
 
     @property
     def quark_vpc_endpoint(self):
-        """Gets the quark_vpc_endpoint of this InstanceInfo.
+        r"""Gets the quark_vpc_endpoint of this InstanceInfo.
 
         quark后端地址
 
@@ -132,7 +132,7 @@ class InstanceInfo:
 
     @quark_vpc_endpoint.setter
     def quark_vpc_endpoint(self, quark_vpc_endpoint):
-        """Sets the quark_vpc_endpoint of this InstanceInfo.
+        r"""Sets the quark_vpc_endpoint of this InstanceInfo.
 
         quark后端地址
 
@@ -143,7 +143,7 @@ class InstanceInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this InstanceInfo.
+        r"""Gets the project_id of this InstanceInfo.
 
         项目ID，获取项目ID请参见[获取项目ID](https://support.huaweicloud.com/api-vpc/vpc_api_0011.html)
 
@@ -154,7 +154,7 @@ class InstanceInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this InstanceInfo.
+        r"""Sets the project_id of this InstanceInfo.
 
         项目ID，获取项目ID请参见[获取项目ID](https://support.huaweicloud.com/api-vpc/vpc_api_0011.html)
 
@@ -165,7 +165,7 @@ class InstanceInfo:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this InstanceInfo.
+        r"""Gets the instance_type of this InstanceInfo.
 
         支持绑定的实例类型
 
@@ -176,7 +176,7 @@ class InstanceInfo:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this InstanceInfo.
+        r"""Sets the instance_type of this InstanceInfo.
 
         支持绑定的实例类型
 
@@ -187,7 +187,7 @@ class InstanceInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceInfo.
+        r"""Gets the instance_id of this InstanceInfo.
 
         实例ID
 
@@ -198,7 +198,7 @@ class InstanceInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceInfo.
+        r"""Sets the instance_id of this InstanceInfo.
 
         实例ID
 
@@ -209,7 +209,7 @@ class InstanceInfo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this InstanceInfo.
+        r"""Gets the service_type of this InstanceInfo.
 
         服务类型
 
@@ -220,7 +220,7 @@ class InstanceInfo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this InstanceInfo.
+        r"""Sets the service_type of this InstanceInfo.
 
         服务类型
 
@@ -231,7 +231,7 @@ class InstanceInfo:
 
     @property
     def service_id(self):
-        """Gets the service_id of this InstanceInfo.
+        r"""Gets the service_id of this InstanceInfo.
 
         服务id
 
@@ -242,7 +242,7 @@ class InstanceInfo:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this InstanceInfo.
+        r"""Sets the service_id of this InstanceInfo.
 
         服务id
 
@@ -253,7 +253,7 @@ class InstanceInfo:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this InstanceInfo.
+        r"""Gets the public_border_group of this InstanceInfo.
 
         - 功能说明：表示中心站点资源或者边缘站点资源 - 取值范围：center、边缘站点名称
 
@@ -264,7 +264,7 @@ class InstanceInfo:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this InstanceInfo.
+        r"""Sets the public_border_group of this InstanceInfo.
 
         - 功能说明：表示中心站点资源或者边缘站点资源 - 取值范围：center、边缘站点名称
 
@@ -275,7 +275,7 @@ class InstanceInfo:
 
     @property
     def instance_site(self):
-        """Gets the instance_site of this InstanceInfo.
+        r"""Gets the instance_site of this InstanceInfo.
 
         绑定实例所在的站点
 
@@ -286,7 +286,7 @@ class InstanceInfo:
 
     @instance_site.setter
     def instance_site(self, instance_site):
-        """Sets the instance_site of this InstanceInfo.
+        r"""Sets the instance_site of this InstanceInfo.
 
         绑定实例所在的站点
 

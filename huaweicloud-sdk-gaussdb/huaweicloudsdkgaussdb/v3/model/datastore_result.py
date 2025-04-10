@@ -27,7 +27,7 @@ class DatastoreResult:
     }
 
     def __init__(self, type=None, version=None):
-        """DatastoreResult
+        r"""DatastoreResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DatastoreResult:
 
     @property
     def type(self):
-        """Gets the type of this DatastoreResult.
+        r"""Gets the type of this DatastoreResult.
 
         数据库引擎，现在只支持gaussdb-mysql
 
@@ -59,7 +59,7 @@ class DatastoreResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DatastoreResult.
+        r"""Sets the type of this DatastoreResult.
 
         数据库引擎，现在只支持gaussdb-mysql
 
@@ -70,7 +70,7 @@ class DatastoreResult:
 
     @property
     def version(self):
-        """Gets the version of this DatastoreResult.
+        r"""Gets the version of this DatastoreResult.
 
         数据库版本。数据库支持的详细版本信息，可调用查询数据库引擎的版本接口获取。
 
@@ -81,7 +81,7 @@ class DatastoreResult:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DatastoreResult.
+        r"""Sets the version of this DatastoreResult.
 
         数据库版本。数据库支持的详细版本信息，可调用查询数据库引擎的版本接口获取。
 

@@ -28,7 +28,7 @@ class ShowFileInfoResponse(SdkResponse):
     }
 
     def __init__(self, jobs=None, scripts=None):
-        """ShowFileInfoResponse
+        r"""ShowFileInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowFileInfoResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ShowFileInfoResponse.
+        r"""Gets the jobs of this ShowFileInfoResponse.
 
         :return: The jobs of this ShowFileInfoResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.Job`]
@@ -60,7 +60,7 @@ class ShowFileInfoResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ShowFileInfoResponse.
+        r"""Sets the jobs of this ShowFileInfoResponse.
 
         :param jobs: The jobs of this ShowFileInfoResponse.
         :type jobs: list[:class:`huaweicloudsdkdgc.v1.Job`]
@@ -69,7 +69,7 @@ class ShowFileInfoResponse(SdkResponse):
 
     @property
     def scripts(self):
-        """Gets the scripts of this ShowFileInfoResponse.
+        r"""Gets the scripts of this ShowFileInfoResponse.
 
         :return: The scripts of this ShowFileInfoResponse.
         :rtype: list[:class:`huaweicloudsdkdgc.v1.Script`]
@@ -78,7 +78,7 @@ class ShowFileInfoResponse(SdkResponse):
 
     @scripts.setter
     def scripts(self, scripts):
-        """Sets the scripts of this ShowFileInfoResponse.
+        r"""Sets the scripts of this ShowFileInfoResponse.
 
         :param scripts: The scripts of this ShowFileInfoResponse.
         :type scripts: list[:class:`huaweicloudsdkdgc.v1.Script`]

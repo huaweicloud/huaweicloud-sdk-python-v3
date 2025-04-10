@@ -78,7 +78,7 @@ class ShowSingleConnectionResponse(SdkResponse):
     }
 
     def __init__(self, auth_config=None, auth_config_id=None, auth_dynamic=None, auth_id=None, auth_info=None, auth_key=None, auth_name=None, auth_prop=None, auth_type=None, cdm_params_config=None, connection_name=None, connector_id=None, connector_name=None, create_time=None, created_by=None, description=None, domain_id=None, host_config=None, id=None, is_open=None, logo=None, project_id=None, status=None, type=None, updated_by=None, updated_time=None, user_id=None):
-        """ShowSingleConnectionResponse
+        r"""ShowSingleConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -226,7 +226,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def auth_config(self):
-        """Gets the auth_config of this ShowSingleConnectionResponse.
+        r"""Gets the auth_config of this ShowSingleConnectionResponse.
 
         :return: The auth_config of this ShowSingleConnectionResponse.
         :rtype: object
@@ -235,7 +235,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @auth_config.setter
     def auth_config(self, auth_config):
-        """Sets the auth_config of this ShowSingleConnectionResponse.
+        r"""Sets the auth_config of this ShowSingleConnectionResponse.
 
         :param auth_config: The auth_config of this ShowSingleConnectionResponse.
         :type auth_config: object
@@ -244,7 +244,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def auth_config_id(self):
-        """Gets the auth_config_id of this ShowSingleConnectionResponse.
+        r"""Gets the auth_config_id of this ShowSingleConnectionResponse.
 
         :return: The auth_config_id of this ShowSingleConnectionResponse.
         :rtype: str
@@ -253,7 +253,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @auth_config_id.setter
     def auth_config_id(self, auth_config_id):
-        """Sets the auth_config_id of this ShowSingleConnectionResponse.
+        r"""Sets the auth_config_id of this ShowSingleConnectionResponse.
 
         :param auth_config_id: The auth_config_id of this ShowSingleConnectionResponse.
         :type auth_config_id: str
@@ -262,7 +262,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def auth_dynamic(self):
-        """Gets the auth_dynamic of this ShowSingleConnectionResponse.
+        r"""Gets the auth_dynamic of this ShowSingleConnectionResponse.
 
         :return: The auth_dynamic of this ShowSingleConnectionResponse.
         :rtype: object
@@ -271,7 +271,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @auth_dynamic.setter
     def auth_dynamic(self, auth_dynamic):
-        """Sets the auth_dynamic of this ShowSingleConnectionResponse.
+        r"""Sets the auth_dynamic of this ShowSingleConnectionResponse.
 
         :param auth_dynamic: The auth_dynamic of this ShowSingleConnectionResponse.
         :type auth_dynamic: object
@@ -280,7 +280,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def auth_id(self):
-        """Gets the auth_id of this ShowSingleConnectionResponse.
+        r"""Gets the auth_id of this ShowSingleConnectionResponse.
 
         :return: The auth_id of this ShowSingleConnectionResponse.
         :rtype: str
@@ -289,7 +289,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @auth_id.setter
     def auth_id(self, auth_id):
-        """Sets the auth_id of this ShowSingleConnectionResponse.
+        r"""Sets the auth_id of this ShowSingleConnectionResponse.
 
         :param auth_id: The auth_id of this ShowSingleConnectionResponse.
         :type auth_id: str
@@ -298,7 +298,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def auth_info(self):
-        """Gets the auth_info of this ShowSingleConnectionResponse.
+        r"""Gets the auth_info of this ShowSingleConnectionResponse.
 
         :return: The auth_info of this ShowSingleConnectionResponse.
         :rtype: object
@@ -307,7 +307,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @auth_info.setter
     def auth_info(self, auth_info):
-        """Sets the auth_info of this ShowSingleConnectionResponse.
+        r"""Sets the auth_info of this ShowSingleConnectionResponse.
 
         :param auth_info: The auth_info of this ShowSingleConnectionResponse.
         :type auth_info: object
@@ -316,7 +316,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def auth_key(self):
-        """Gets the auth_key of this ShowSingleConnectionResponse.
+        r"""Gets the auth_key of this ShowSingleConnectionResponse.
 
         :return: The auth_key of this ShowSingleConnectionResponse.
         :rtype: str
@@ -325,7 +325,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @auth_key.setter
     def auth_key(self, auth_key):
-        """Sets the auth_key of this ShowSingleConnectionResponse.
+        r"""Sets the auth_key of this ShowSingleConnectionResponse.
 
         :param auth_key: The auth_key of this ShowSingleConnectionResponse.
         :type auth_key: str
@@ -334,7 +334,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def auth_name(self):
-        """Gets the auth_name of this ShowSingleConnectionResponse.
+        r"""Gets the auth_name of this ShowSingleConnectionResponse.
 
         :return: The auth_name of this ShowSingleConnectionResponse.
         :rtype: str
@@ -343,7 +343,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @auth_name.setter
     def auth_name(self, auth_name):
-        """Sets the auth_name of this ShowSingleConnectionResponse.
+        r"""Sets the auth_name of this ShowSingleConnectionResponse.
 
         :param auth_name: The auth_name of this ShowSingleConnectionResponse.
         :type auth_name: str
@@ -352,7 +352,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def auth_prop(self):
-        """Gets the auth_prop of this ShowSingleConnectionResponse.
+        r"""Gets the auth_prop of this ShowSingleConnectionResponse.
 
         :return: The auth_prop of this ShowSingleConnectionResponse.
         :rtype: object
@@ -361,7 +361,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @auth_prop.setter
     def auth_prop(self, auth_prop):
-        """Sets the auth_prop of this ShowSingleConnectionResponse.
+        r"""Sets the auth_prop of this ShowSingleConnectionResponse.
 
         :param auth_prop: The auth_prop of this ShowSingleConnectionResponse.
         :type auth_prop: object
@@ -370,7 +370,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ShowSingleConnectionResponse.
+        r"""Gets the auth_type of this ShowSingleConnectionResponse.
 
         :return: The auth_type of this ShowSingleConnectionResponse.
         :rtype: str
@@ -379,7 +379,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ShowSingleConnectionResponse.
+        r"""Sets the auth_type of this ShowSingleConnectionResponse.
 
         :param auth_type: The auth_type of this ShowSingleConnectionResponse.
         :type auth_type: str
@@ -388,7 +388,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def cdm_params_config(self):
-        """Gets the cdm_params_config of this ShowSingleConnectionResponse.
+        r"""Gets the cdm_params_config of this ShowSingleConnectionResponse.
 
         :return: The cdm_params_config of this ShowSingleConnectionResponse.
         :rtype: object
@@ -397,7 +397,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @cdm_params_config.setter
     def cdm_params_config(self, cdm_params_config):
-        """Sets the cdm_params_config of this ShowSingleConnectionResponse.
+        r"""Sets the cdm_params_config of this ShowSingleConnectionResponse.
 
         :param cdm_params_config: The cdm_params_config of this ShowSingleConnectionResponse.
         :type cdm_params_config: object
@@ -406,7 +406,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def connection_name(self):
-        """Gets the connection_name of this ShowSingleConnectionResponse.
+        r"""Gets the connection_name of this ShowSingleConnectionResponse.
 
         :return: The connection_name of this ShowSingleConnectionResponse.
         :rtype: str
@@ -415,7 +415,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @connection_name.setter
     def connection_name(self, connection_name):
-        """Sets the connection_name of this ShowSingleConnectionResponse.
+        r"""Sets the connection_name of this ShowSingleConnectionResponse.
 
         :param connection_name: The connection_name of this ShowSingleConnectionResponse.
         :type connection_name: str
@@ -424,7 +424,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def connector_id(self):
-        """Gets the connector_id of this ShowSingleConnectionResponse.
+        r"""Gets the connector_id of this ShowSingleConnectionResponse.
 
         :return: The connector_id of this ShowSingleConnectionResponse.
         :rtype: str
@@ -433,7 +433,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @connector_id.setter
     def connector_id(self, connector_id):
-        """Sets the connector_id of this ShowSingleConnectionResponse.
+        r"""Sets the connector_id of this ShowSingleConnectionResponse.
 
         :param connector_id: The connector_id of this ShowSingleConnectionResponse.
         :type connector_id: str
@@ -442,7 +442,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def connector_name(self):
-        """Gets the connector_name of this ShowSingleConnectionResponse.
+        r"""Gets the connector_name of this ShowSingleConnectionResponse.
 
         :return: The connector_name of this ShowSingleConnectionResponse.
         :rtype: str
@@ -451,7 +451,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @connector_name.setter
     def connector_name(self, connector_name):
-        """Sets the connector_name of this ShowSingleConnectionResponse.
+        r"""Sets the connector_name of this ShowSingleConnectionResponse.
 
         :param connector_name: The connector_name of this ShowSingleConnectionResponse.
         :type connector_name: str
@@ -460,7 +460,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowSingleConnectionResponse.
+        r"""Gets the create_time of this ShowSingleConnectionResponse.
 
         :return: The create_time of this ShowSingleConnectionResponse.
         :rtype: datetime
@@ -469,7 +469,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowSingleConnectionResponse.
+        r"""Sets the create_time of this ShowSingleConnectionResponse.
 
         :param create_time: The create_time of this ShowSingleConnectionResponse.
         :type create_time: datetime
@@ -478,7 +478,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def created_by(self):
-        """Gets the created_by of this ShowSingleConnectionResponse.
+        r"""Gets the created_by of this ShowSingleConnectionResponse.
 
         :return: The created_by of this ShowSingleConnectionResponse.
         :rtype: str
@@ -487,7 +487,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this ShowSingleConnectionResponse.
+        r"""Sets the created_by of this ShowSingleConnectionResponse.
 
         :param created_by: The created_by of this ShowSingleConnectionResponse.
         :type created_by: str
@@ -496,7 +496,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowSingleConnectionResponse.
+        r"""Gets the description of this ShowSingleConnectionResponse.
 
         :return: The description of this ShowSingleConnectionResponse.
         :rtype: str
@@ -505,7 +505,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowSingleConnectionResponse.
+        r"""Sets the description of this ShowSingleConnectionResponse.
 
         :param description: The description of this ShowSingleConnectionResponse.
         :type description: str
@@ -514,7 +514,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowSingleConnectionResponse.
+        r"""Gets the domain_id of this ShowSingleConnectionResponse.
 
         :return: The domain_id of this ShowSingleConnectionResponse.
         :rtype: str
@@ -523,7 +523,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowSingleConnectionResponse.
+        r"""Sets the domain_id of this ShowSingleConnectionResponse.
 
         :param domain_id: The domain_id of this ShowSingleConnectionResponse.
         :type domain_id: str
@@ -532,7 +532,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def host_config(self):
-        """Gets the host_config of this ShowSingleConnectionResponse.
+        r"""Gets the host_config of this ShowSingleConnectionResponse.
 
         :return: The host_config of this ShowSingleConnectionResponse.
         :rtype: object
@@ -541,7 +541,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @host_config.setter
     def host_config(self, host_config):
-        """Sets the host_config of this ShowSingleConnectionResponse.
+        r"""Sets the host_config of this ShowSingleConnectionResponse.
 
         :param host_config: The host_config of this ShowSingleConnectionResponse.
         :type host_config: object
@@ -550,7 +550,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowSingleConnectionResponse.
+        r"""Gets the id of this ShowSingleConnectionResponse.
 
         :return: The id of this ShowSingleConnectionResponse.
         :rtype: str
@@ -559,7 +559,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowSingleConnectionResponse.
+        r"""Sets the id of this ShowSingleConnectionResponse.
 
         :param id: The id of this ShowSingleConnectionResponse.
         :type id: str
@@ -568,7 +568,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def is_open(self):
-        """Gets the is_open of this ShowSingleConnectionResponse.
+        r"""Gets the is_open of this ShowSingleConnectionResponse.
 
         :return: The is_open of this ShowSingleConnectionResponse.
         :rtype: int
@@ -577,7 +577,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @is_open.setter
     def is_open(self, is_open):
-        """Sets the is_open of this ShowSingleConnectionResponse.
+        r"""Sets the is_open of this ShowSingleConnectionResponse.
 
         :param is_open: The is_open of this ShowSingleConnectionResponse.
         :type is_open: int
@@ -586,7 +586,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def logo(self):
-        """Gets the logo of this ShowSingleConnectionResponse.
+        r"""Gets the logo of this ShowSingleConnectionResponse.
 
         :return: The logo of this ShowSingleConnectionResponse.
         :rtype: str
@@ -595,7 +595,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @logo.setter
     def logo(self, logo):
-        """Sets the logo of this ShowSingleConnectionResponse.
+        r"""Sets the logo of this ShowSingleConnectionResponse.
 
         :param logo: The logo of this ShowSingleConnectionResponse.
         :type logo: str
@@ -604,7 +604,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowSingleConnectionResponse.
+        r"""Gets the project_id of this ShowSingleConnectionResponse.
 
         :return: The project_id of this ShowSingleConnectionResponse.
         :rtype: str
@@ -613,7 +613,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowSingleConnectionResponse.
+        r"""Sets the project_id of this ShowSingleConnectionResponse.
 
         :param project_id: The project_id of this ShowSingleConnectionResponse.
         :type project_id: str
@@ -622,7 +622,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowSingleConnectionResponse.
+        r"""Gets the status of this ShowSingleConnectionResponse.
 
         :return: The status of this ShowSingleConnectionResponse.
         :rtype: str
@@ -631,7 +631,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowSingleConnectionResponse.
+        r"""Sets the status of this ShowSingleConnectionResponse.
 
         :param status: The status of this ShowSingleConnectionResponse.
         :type status: str
@@ -640,7 +640,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowSingleConnectionResponse.
+        r"""Gets the type of this ShowSingleConnectionResponse.
 
         :return: The type of this ShowSingleConnectionResponse.
         :rtype: str
@@ -649,7 +649,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowSingleConnectionResponse.
+        r"""Sets the type of this ShowSingleConnectionResponse.
 
         :param type: The type of this ShowSingleConnectionResponse.
         :type type: str
@@ -658,7 +658,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this ShowSingleConnectionResponse.
+        r"""Gets the updated_by of this ShowSingleConnectionResponse.
 
         :return: The updated_by of this ShowSingleConnectionResponse.
         :rtype: str
@@ -667,7 +667,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this ShowSingleConnectionResponse.
+        r"""Sets the updated_by of this ShowSingleConnectionResponse.
 
         :param updated_by: The updated_by of this ShowSingleConnectionResponse.
         :type updated_by: str
@@ -676,7 +676,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ShowSingleConnectionResponse.
+        r"""Gets the updated_time of this ShowSingleConnectionResponse.
 
         :return: The updated_time of this ShowSingleConnectionResponse.
         :rtype: datetime
@@ -685,7 +685,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ShowSingleConnectionResponse.
+        r"""Sets the updated_time of this ShowSingleConnectionResponse.
 
         :param updated_time: The updated_time of this ShowSingleConnectionResponse.
         :type updated_time: datetime
@@ -694,7 +694,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowSingleConnectionResponse.
+        r"""Gets the user_id of this ShowSingleConnectionResponse.
 
         :return: The user_id of this ShowSingleConnectionResponse.
         :rtype: str
@@ -703,7 +703,7 @@ class ShowSingleConnectionResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowSingleConnectionResponse.
+        r"""Sets the user_id of this ShowSingleConnectionResponse.
 
         :param user_id: The user_id of this ShowSingleConnectionResponse.
         :type user_id: str

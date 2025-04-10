@@ -24,7 +24,7 @@ class ResetPwdByAdminResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ResetPwdByAdminResponse
+        r"""ResetPwdByAdminResponse
 
         The model defined in huaweicloud sdk
 

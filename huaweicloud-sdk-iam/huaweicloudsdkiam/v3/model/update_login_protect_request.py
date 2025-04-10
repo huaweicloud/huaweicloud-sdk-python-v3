@@ -27,7 +27,7 @@ class UpdateLoginProtectRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """UpdateLoginProtectRequest
+        r"""UpdateLoginProtectRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateLoginProtectRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateLoginProtectRequest.
+        r"""Gets the user_id of this UpdateLoginProtectRequest.
 
         待修改登录保护状态信息的IAM用户ID。
 
@@ -60,7 +60,7 @@ class UpdateLoginProtectRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateLoginProtectRequest.
+        r"""Sets the user_id of this UpdateLoginProtectRequest.
 
         待修改登录保护状态信息的IAM用户ID。
 
@@ -71,7 +71,7 @@ class UpdateLoginProtectRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLoginProtectRequest.
+        r"""Gets the body of this UpdateLoginProtectRequest.
 
         :return: The body of this UpdateLoginProtectRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateLoginProjectReq`
@@ -80,7 +80,7 @@ class UpdateLoginProtectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLoginProtectRequest.
+        r"""Sets the body of this UpdateLoginProtectRequest.
 
         :param body: The body of this UpdateLoginProtectRequest.
         :type body: :class:`huaweicloudsdkiam.v3.UpdateLoginProjectReq`

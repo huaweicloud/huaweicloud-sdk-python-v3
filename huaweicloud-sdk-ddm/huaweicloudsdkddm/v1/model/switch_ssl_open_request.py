@@ -25,7 +25,7 @@ class SwitchSslOpenRequest:
     }
 
     def __init__(self, ssl_enabled=None):
-        """SwitchSslOpenRequest
+        r"""SwitchSslOpenRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SwitchSslOpenRequest:
 
     @property
     def ssl_enabled(self):
-        """Gets the ssl_enabled of this SwitchSslOpenRequest.
+        r"""Gets the ssl_enabled of this SwitchSslOpenRequest.
 
         true:  打开 false: 关闭
 
@@ -53,7 +53,7 @@ class SwitchSslOpenRequest:
 
     @ssl_enabled.setter
     def ssl_enabled(self, ssl_enabled):
-        """Sets the ssl_enabled of this SwitchSslOpenRequest.
+        r"""Sets the ssl_enabled of this SwitchSslOpenRequest.
 
         true:  打开 false: 关闭
 

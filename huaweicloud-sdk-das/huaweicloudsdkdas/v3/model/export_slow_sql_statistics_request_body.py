@@ -37,7 +37,7 @@ class ExportSlowSqlStatisticsRequestBody:
     }
 
     def __init__(self, datastore_type=None, start_at=None, end_at=None, node_ids=None, statistics_field=None, offset=None, limit=None):
-        """ExportSlowSqlStatisticsRequestBody
+        r"""ExportSlowSqlStatisticsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ExportSlowSqlStatisticsRequestBody:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ExportSlowSqlStatisticsRequestBody.
+        r"""Gets the datastore_type of this ExportSlowSqlStatisticsRequestBody.
 
         数据库类型。慢SQL统计支持的类型：DDS-Community。
 
@@ -93,7 +93,7 @@ class ExportSlowSqlStatisticsRequestBody:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ExportSlowSqlStatisticsRequestBody.
+        r"""Sets the datastore_type of this ExportSlowSqlStatisticsRequestBody.
 
         数据库类型。慢SQL统计支持的类型：DDS-Community。
 
@@ -104,7 +104,7 @@ class ExportSlowSqlStatisticsRequestBody:
 
     @property
     def start_at(self):
-        """Gets the start_at of this ExportSlowSqlStatisticsRequestBody.
+        r"""Gets the start_at of this ExportSlowSqlStatisticsRequestBody.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -115,7 +115,7 @@ class ExportSlowSqlStatisticsRequestBody:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this ExportSlowSqlStatisticsRequestBody.
+        r"""Sets the start_at of this ExportSlowSqlStatisticsRequestBody.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -126,7 +126,7 @@ class ExportSlowSqlStatisticsRequestBody:
 
     @property
     def end_at(self):
-        """Gets the end_at of this ExportSlowSqlStatisticsRequestBody.
+        r"""Gets the end_at of this ExportSlowSqlStatisticsRequestBody.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -137,7 +137,7 @@ class ExportSlowSqlStatisticsRequestBody:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this ExportSlowSqlStatisticsRequestBody.
+        r"""Sets the end_at of this ExportSlowSqlStatisticsRequestBody.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -148,7 +148,7 @@ class ExportSlowSqlStatisticsRequestBody:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this ExportSlowSqlStatisticsRequestBody.
+        r"""Gets the node_ids of this ExportSlowSqlStatisticsRequestBody.
 
         节点ID列表。
 
@@ -159,7 +159,7 @@ class ExportSlowSqlStatisticsRequestBody:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this ExportSlowSqlStatisticsRequestBody.
+        r"""Sets the node_ids of this ExportSlowSqlStatisticsRequestBody.
 
         节点ID列表。
 
@@ -170,7 +170,7 @@ class ExportSlowSqlStatisticsRequestBody:
 
     @property
     def statistics_field(self):
-        """Gets the statistics_field of this ExportSlowSqlStatisticsRequestBody.
+        r"""Gets the statistics_field of this ExportSlowSqlStatisticsRequestBody.
 
         统计字段。支持统计的字段：node_id、sql_type、db_name、collection、user、client。默认使用node_id统计。
 
@@ -181,7 +181,7 @@ class ExportSlowSqlStatisticsRequestBody:
 
     @statistics_field.setter
     def statistics_field(self, statistics_field):
-        """Sets the statistics_field of this ExportSlowSqlStatisticsRequestBody.
+        r"""Sets the statistics_field of this ExportSlowSqlStatisticsRequestBody.
 
         统计字段。支持统计的字段：node_id、sql_type、db_name、collection、user、client。默认使用node_id统计。
 
@@ -192,7 +192,7 @@ class ExportSlowSqlStatisticsRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ExportSlowSqlStatisticsRequestBody.
+        r"""Gets the offset of this ExportSlowSqlStatisticsRequestBody.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -203,7 +203,7 @@ class ExportSlowSqlStatisticsRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ExportSlowSqlStatisticsRequestBody.
+        r"""Sets the offset of this ExportSlowSqlStatisticsRequestBody.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -214,7 +214,7 @@ class ExportSlowSqlStatisticsRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ExportSlowSqlStatisticsRequestBody.
+        r"""Gets the limit of this ExportSlowSqlStatisticsRequestBody.
 
         每页记录数，默认为20，最大取值100。
 
@@ -225,7 +225,7 @@ class ExportSlowSqlStatisticsRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ExportSlowSqlStatisticsRequestBody.
+        r"""Sets the limit of this ExportSlowSqlStatisticsRequestBody.
 
         每页记录数，默认为20，最大取值100。
 

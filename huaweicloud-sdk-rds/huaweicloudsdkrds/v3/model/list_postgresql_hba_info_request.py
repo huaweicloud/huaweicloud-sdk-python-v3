@@ -25,7 +25,7 @@ class ListPostgresqlHbaInfoRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ListPostgresqlHbaInfoRequest
+        r"""ListPostgresqlHbaInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListPostgresqlHbaInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPostgresqlHbaInfoRequest.
+        r"""Gets the instance_id of this ListPostgresqlHbaInfoRequest.
 
         实例id
 
@@ -53,7 +53,7 @@ class ListPostgresqlHbaInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPostgresqlHbaInfoRequest.
+        r"""Sets the instance_id of this ListPostgresqlHbaInfoRequest.
 
         实例id
 

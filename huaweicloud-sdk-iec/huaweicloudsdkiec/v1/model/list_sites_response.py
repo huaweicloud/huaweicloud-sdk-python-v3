@@ -28,7 +28,7 @@ class ListSitesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, sites=None):
-        """ListSitesResponse
+        r"""ListSitesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSitesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSitesResponse.
+        r"""Gets the count of this ListSitesResponse.
 
         边缘站点总数。
 
@@ -62,7 +62,7 @@ class ListSitesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSitesResponse.
+        r"""Sets the count of this ListSitesResponse.
 
         边缘站点总数。
 
@@ -73,7 +73,7 @@ class ListSitesResponse(SdkResponse):
 
     @property
     def sites(self):
-        """Gets the sites of this ListSitesResponse.
+        r"""Gets the sites of this ListSitesResponse.
 
         站点列表。
 
@@ -84,7 +84,7 @@ class ListSitesResponse(SdkResponse):
 
     @sites.setter
     def sites(self, sites):
-        """Sets the sites of this ListSitesResponse.
+        r"""Sets the sites of this ListSitesResponse.
 
         站点列表。
 

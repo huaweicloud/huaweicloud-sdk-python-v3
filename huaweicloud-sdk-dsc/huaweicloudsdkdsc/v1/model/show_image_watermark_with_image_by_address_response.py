@@ -28,7 +28,7 @@ class ShowImageWatermarkWithImageByAddressResponse(SdkResponse):
     }
 
     def __init__(self, region_id=None, image_watermark=None):
-        """ShowImageWatermarkWithImageByAddressResponse
+        r"""ShowImageWatermarkWithImageByAddressResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowImageWatermarkWithImageByAddressResponse(SdkResponse):
 
     @property
     def region_id(self):
-        """Gets the region_id of this ShowImageWatermarkWithImageByAddressResponse.
+        r"""Gets the region_id of this ShowImageWatermarkWithImageByAddressResponse.
 
         当前项目所在region的id，如：xx-xx-1。
 
@@ -62,7 +62,7 @@ class ShowImageWatermarkWithImageByAddressResponse(SdkResponse):
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ShowImageWatermarkWithImageByAddressResponse.
+        r"""Sets the region_id of this ShowImageWatermarkWithImageByAddressResponse.
 
         当前项目所在region的id，如：xx-xx-1。
 
@@ -73,7 +73,7 @@ class ShowImageWatermarkWithImageByAddressResponse(SdkResponse):
 
     @property
     def image_watermark(self):
-        """Gets the image_watermark of this ShowImageWatermarkWithImageByAddressResponse.
+        r"""Gets the image_watermark of this ShowImageWatermarkWithImageByAddressResponse.
 
         提取出的水印图片存放地址，当前只支持华为云OBS对象，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
 
@@ -84,7 +84,7 @@ class ShowImageWatermarkWithImageByAddressResponse(SdkResponse):
 
     @image_watermark.setter
     def image_watermark(self, image_watermark):
-        """Sets the image_watermark of this ShowImageWatermarkWithImageByAddressResponse.
+        r"""Sets the image_watermark of this ShowImageWatermarkWithImageByAddressResponse.
 
         提取出的水印图片存放地址，当前只支持华为云OBS对象，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
 

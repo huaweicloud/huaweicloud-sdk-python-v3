@@ -55,7 +55,7 @@ class CreateChInstanceInfo:
     }
 
     def __init__(self, id=None, az_code=None, az_mode=None, name=None, engine=None, vpc_id=None, security_group_id=None, subnet_id=None, db_user=None, port=None, ha_mode=None, pay_info=None, ssl_option=None, status=None, region=None, tags_info=None):
-        """CreateChInstanceInfo
+        r"""CreateChInstanceInfo
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class CreateChInstanceInfo:
 
     @property
     def id(self):
-        """Gets the id of this CreateChInstanceInfo.
+        r"""Gets the id of this CreateChInstanceInfo.
 
         实例ID。
 
@@ -143,7 +143,7 @@ class CreateChInstanceInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateChInstanceInfo.
+        r"""Sets the id of this CreateChInstanceInfo.
 
         实例ID。
 
@@ -154,7 +154,7 @@ class CreateChInstanceInfo:
 
     @property
     def az_code(self):
-        """Gets the az_code of this CreateChInstanceInfo.
+        r"""Gets the az_code of this CreateChInstanceInfo.
 
         可用区。
 
@@ -165,7 +165,7 @@ class CreateChInstanceInfo:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this CreateChInstanceInfo.
+        r"""Sets the az_code of this CreateChInstanceInfo.
 
         可用区。
 
@@ -176,7 +176,7 @@ class CreateChInstanceInfo:
 
     @property
     def az_mode(self):
-        """Gets the az_mode of this CreateChInstanceInfo.
+        r"""Gets the az_mode of this CreateChInstanceInfo.
 
         可用区模式。 取值范围： - single：单可用区 - double：多可用区
 
@@ -187,7 +187,7 @@ class CreateChInstanceInfo:
 
     @az_mode.setter
     def az_mode(self, az_mode):
-        """Sets the az_mode of this CreateChInstanceInfo.
+        r"""Sets the az_mode of this CreateChInstanceInfo.
 
         可用区模式。 取值范围： - single：单可用区 - double：多可用区
 
@@ -198,7 +198,7 @@ class CreateChInstanceInfo:
 
     @property
     def name(self):
-        """Gets the name of this CreateChInstanceInfo.
+        r"""Gets the name of this CreateChInstanceInfo.
 
         实例名。
 
@@ -209,7 +209,7 @@ class CreateChInstanceInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateChInstanceInfo.
+        r"""Sets the name of this CreateChInstanceInfo.
 
         实例名。
 
@@ -220,7 +220,7 @@ class CreateChInstanceInfo:
 
     @property
     def engine(self):
-        """Gets the engine of this CreateChInstanceInfo.
+        r"""Gets the engine of this CreateChInstanceInfo.
 
         :return: The engine of this CreateChInstanceInfo.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ClickHouseEngineInfo`
@@ -229,7 +229,7 @@ class CreateChInstanceInfo:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this CreateChInstanceInfo.
+        r"""Sets the engine of this CreateChInstanceInfo.
 
         :param engine: The engine of this CreateChInstanceInfo.
         :type engine: :class:`huaweicloudsdkgaussdb.v3.ClickHouseEngineInfo`
@@ -238,7 +238,7 @@ class CreateChInstanceInfo:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateChInstanceInfo.
+        r"""Gets the vpc_id of this CreateChInstanceInfo.
 
         虚拟私有云ID。
 
@@ -249,7 +249,7 @@ class CreateChInstanceInfo:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateChInstanceInfo.
+        r"""Sets the vpc_id of this CreateChInstanceInfo.
 
         虚拟私有云ID。
 
@@ -260,7 +260,7 @@ class CreateChInstanceInfo:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CreateChInstanceInfo.
+        r"""Gets the security_group_id of this CreateChInstanceInfo.
 
         安全组ID。
 
@@ -271,7 +271,7 @@ class CreateChInstanceInfo:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreateChInstanceInfo.
+        r"""Sets the security_group_id of this CreateChInstanceInfo.
 
         安全组ID。
 
@@ -282,7 +282,7 @@ class CreateChInstanceInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateChInstanceInfo.
+        r"""Gets the subnet_id of this CreateChInstanceInfo.
 
         子网ID。
 
@@ -293,7 +293,7 @@ class CreateChInstanceInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateChInstanceInfo.
+        r"""Sets the subnet_id of this CreateChInstanceInfo.
 
         子网ID。
 
@@ -304,7 +304,7 @@ class CreateChInstanceInfo:
 
     @property
     def db_user(self):
-        """Gets the db_user of this CreateChInstanceInfo.
+        r"""Gets the db_user of this CreateChInstanceInfo.
 
         数据库用户。
 
@@ -315,7 +315,7 @@ class CreateChInstanceInfo:
 
     @db_user.setter
     def db_user(self, db_user):
-        """Sets the db_user of this CreateChInstanceInfo.
+        r"""Sets the db_user of this CreateChInstanceInfo.
 
         数据库用户。
 
@@ -326,7 +326,7 @@ class CreateChInstanceInfo:
 
     @property
     def port(self):
-        """Gets the port of this CreateChInstanceInfo.
+        r"""Gets the port of this CreateChInstanceInfo.
 
         数据库端口。取值范围：0~65535。
 
@@ -337,7 +337,7 @@ class CreateChInstanceInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this CreateChInstanceInfo.
+        r"""Sets the port of this CreateChInstanceInfo.
 
         数据库端口。取值范围：0~65535。
 
@@ -348,7 +348,7 @@ class CreateChInstanceInfo:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this CreateChInstanceInfo.
+        r"""Gets the ha_mode of this CreateChInstanceInfo.
 
         部署模式。 取值范围： - Single：单机 - Ha：主备
 
@@ -359,7 +359,7 @@ class CreateChInstanceInfo:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this CreateChInstanceInfo.
+        r"""Sets the ha_mode of this CreateChInstanceInfo.
 
         部署模式。 取值范围： - Single：单机 - Ha：主备
 
@@ -370,7 +370,7 @@ class CreateChInstanceInfo:
 
     @property
     def pay_info(self):
-        """Gets the pay_info of this CreateChInstanceInfo.
+        r"""Gets the pay_info of this CreateChInstanceInfo.
 
         :return: The pay_info of this CreateChInstanceInfo.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceInfoPayInfo`
@@ -379,7 +379,7 @@ class CreateChInstanceInfo:
 
     @pay_info.setter
     def pay_info(self, pay_info):
-        """Sets the pay_info of this CreateChInstanceInfo.
+        r"""Sets the pay_info of this CreateChInstanceInfo.
 
         :param pay_info: The pay_info of this CreateChInstanceInfo.
         :type pay_info: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceInfoPayInfo`
@@ -388,7 +388,7 @@ class CreateChInstanceInfo:
 
     @property
     def ssl_option(self):
-        """Gets the ssl_option of this CreateChInstanceInfo.
+        r"""Gets the ssl_option of this CreateChInstanceInfo.
 
         SSL开关。
 
@@ -399,7 +399,7 @@ class CreateChInstanceInfo:
 
     @ssl_option.setter
     def ssl_option(self, ssl_option):
-        """Sets the ssl_option of this CreateChInstanceInfo.
+        r"""Sets the ssl_option of this CreateChInstanceInfo.
 
         SSL开关。
 
@@ -410,7 +410,7 @@ class CreateChInstanceInfo:
 
     @property
     def status(self):
-        """Gets the status of this CreateChInstanceInfo.
+        r"""Gets the status of this CreateChInstanceInfo.
 
         实例状态。 取值范围： - creating：创建 - normal：正常 - abnormal：异常 - createfailed：创建失败 - deleted：已删除
 
@@ -421,7 +421,7 @@ class CreateChInstanceInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateChInstanceInfo.
+        r"""Sets the status of this CreateChInstanceInfo.
 
         实例状态。 取值范围： - creating：创建 - normal：正常 - abnormal：异常 - createfailed：创建失败 - deleted：已删除
 
@@ -432,7 +432,7 @@ class CreateChInstanceInfo:
 
     @property
     def region(self):
-        """Gets the region of this CreateChInstanceInfo.
+        r"""Gets the region of this CreateChInstanceInfo.
 
         实例所在区。
 
@@ -443,7 +443,7 @@ class CreateChInstanceInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreateChInstanceInfo.
+        r"""Sets the region of this CreateChInstanceInfo.
 
         实例所在区。
 
@@ -454,7 +454,7 @@ class CreateChInstanceInfo:
 
     @property
     def tags_info(self):
-        """Gets the tags_info of this CreateChInstanceInfo.
+        r"""Gets the tags_info of this CreateChInstanceInfo.
 
         :return: The tags_info of this CreateChInstanceInfo.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceInfoTagsInfo`
@@ -463,7 +463,7 @@ class CreateChInstanceInfo:
 
     @tags_info.setter
     def tags_info(self, tags_info):
-        """Sets the tags_info of this CreateChInstanceInfo.
+        r"""Sets the tags_info of this CreateChInstanceInfo.
 
         :param tags_info: The tags_info of this CreateChInstanceInfo.
         :type tags_info: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceInfoTagsInfo`

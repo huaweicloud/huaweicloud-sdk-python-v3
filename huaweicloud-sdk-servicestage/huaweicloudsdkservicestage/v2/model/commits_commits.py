@@ -29,7 +29,7 @@ class CommitsCommits:
     }
 
     def __init__(self, sha=None, message=None, authored_date=None):
-        """CommitsCommits
+        r"""CommitsCommits
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CommitsCommits:
 
     @property
     def sha(self):
-        """Gets the sha of this CommitsCommits.
+        r"""Gets the sha of this CommitsCommits.
 
         提交记录sha值。
 
@@ -65,7 +65,7 @@ class CommitsCommits:
 
     @sha.setter
     def sha(self, sha):
-        """Sets the sha of this CommitsCommits.
+        r"""Sets the sha of this CommitsCommits.
 
         提交记录sha值。
 
@@ -76,7 +76,7 @@ class CommitsCommits:
 
     @property
     def message(self):
-        """Gets the message of this CommitsCommits.
+        r"""Gets the message of this CommitsCommits.
 
         提交记录描述。
 
@@ -87,7 +87,7 @@ class CommitsCommits:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CommitsCommits.
+        r"""Sets the message of this CommitsCommits.
 
         提交记录描述。
 
@@ -98,7 +98,7 @@ class CommitsCommits:
 
     @property
     def authored_date(self):
-        """Gets the authored_date of this CommitsCommits.
+        r"""Gets the authored_date of this CommitsCommits.
 
         合入时间。
 
@@ -109,7 +109,7 @@ class CommitsCommits:
 
     @authored_date.setter
     def authored_date(self, authored_date):
-        """Sets the authored_date of this CommitsCommits.
+        r"""Sets the authored_date of this CommitsCommits.
 
         合入时间。
 

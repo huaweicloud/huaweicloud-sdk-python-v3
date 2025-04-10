@@ -61,7 +61,7 @@ class PublishableApp:
     }
 
     def __init__(self, id=None, name=None, version=None, command_param=None, execute_path=None, work_path=None, icon_path=None, icon_index=None, description=None, app_group_id=None, state=None, tenant_id=None, publish_at=None, source_type=None, publisher=None, icon_url=None, publishable=None, sandbox_enable=None, source_image_ids=None):
-        """PublishableApp
+        r"""PublishableApp
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class PublishableApp:
 
     @property
     def id(self):
-        """Gets the id of this PublishableApp.
+        r"""Gets the id of this PublishableApp.
 
         应用ID。
 
@@ -180,7 +180,7 @@ class PublishableApp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublishableApp.
+        r"""Sets the id of this PublishableApp.
 
         应用ID。
 
@@ -191,7 +191,7 @@ class PublishableApp:
 
     @property
     def name(self):
-        """Gets the name of this PublishableApp.
+        r"""Gets the name of this PublishableApp.
 
         应用名称。
 
@@ -202,7 +202,7 @@ class PublishableApp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublishableApp.
+        r"""Sets the name of this PublishableApp.
 
         应用名称。
 
@@ -213,7 +213,7 @@ class PublishableApp:
 
     @property
     def version(self):
-        """Gets the version of this PublishableApp.
+        r"""Gets the version of this PublishableApp.
 
         应用版本号。
 
@@ -224,7 +224,7 @@ class PublishableApp:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PublishableApp.
+        r"""Sets the version of this PublishableApp.
 
         应用版本号。
 
@@ -235,7 +235,7 @@ class PublishableApp:
 
     @property
     def command_param(self):
-        """Gets the command_param of this PublishableApp.
+        r"""Gets the command_param of this PublishableApp.
 
         启动命令行参数。
 
@@ -246,7 +246,7 @@ class PublishableApp:
 
     @command_param.setter
     def command_param(self, command_param):
-        """Sets the command_param of this PublishableApp.
+        r"""Sets the command_param of this PublishableApp.
 
         启动命令行参数。
 
@@ -257,7 +257,7 @@ class PublishableApp:
 
     @property
     def execute_path(self):
-        """Gets the execute_path of this PublishableApp.
+        r"""Gets the execute_path of this PublishableApp.
 
         执行路径。
 
@@ -268,7 +268,7 @@ class PublishableApp:
 
     @execute_path.setter
     def execute_path(self, execute_path):
-        """Sets the execute_path of this PublishableApp.
+        r"""Sets the execute_path of this PublishableApp.
 
         执行路径。
 
@@ -279,7 +279,7 @@ class PublishableApp:
 
     @property
     def work_path(self):
-        """Gets the work_path of this PublishableApp.
+        r"""Gets the work_path of this PublishableApp.
 
         应用工作目录。
 
@@ -290,7 +290,7 @@ class PublishableApp:
 
     @work_path.setter
     def work_path(self, work_path):
-        """Sets the work_path of this PublishableApp.
+        r"""Sets the work_path of this PublishableApp.
 
         应用工作目录。
 
@@ -301,7 +301,7 @@ class PublishableApp:
 
     @property
     def icon_path(self):
-        """Gets the icon_path of this PublishableApp.
+        r"""Gets the icon_path of this PublishableApp.
 
         应用图标的路径。
 
@@ -312,7 +312,7 @@ class PublishableApp:
 
     @icon_path.setter
     def icon_path(self, icon_path):
-        """Sets the icon_path of this PublishableApp.
+        r"""Sets the icon_path of this PublishableApp.
 
         应用图标的路径。
 
@@ -323,7 +323,7 @@ class PublishableApp:
 
     @property
     def icon_index(self):
-        """Gets the icon_index of this PublishableApp.
+        r"""Gets the icon_index of this PublishableApp.
 
         应用图标的索引。
 
@@ -334,7 +334,7 @@ class PublishableApp:
 
     @icon_index.setter
     def icon_index(self, icon_index):
-        """Sets the icon_index of this PublishableApp.
+        r"""Sets the icon_index of this PublishableApp.
 
         应用图标的索引。
 
@@ -345,7 +345,7 @@ class PublishableApp:
 
     @property
     def description(self):
-        """Gets the description of this PublishableApp.
+        r"""Gets the description of this PublishableApp.
 
         应用描述。
 
@@ -356,7 +356,7 @@ class PublishableApp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublishableApp.
+        r"""Sets the description of this PublishableApp.
 
         应用描述。
 
@@ -367,7 +367,7 @@ class PublishableApp:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this PublishableApp.
+        r"""Gets the app_group_id of this PublishableApp.
 
         应用组标识Id。
 
@@ -378,7 +378,7 @@ class PublishableApp:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this PublishableApp.
+        r"""Sets the app_group_id of this PublishableApp.
 
         应用组标识Id。
 
@@ -389,7 +389,7 @@ class PublishableApp:
 
     @property
     def state(self):
-        """Gets the state of this PublishableApp.
+        r"""Gets the state of this PublishableApp.
 
         :return: The state of this PublishableApp.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
@@ -398,7 +398,7 @@ class PublishableApp:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this PublishableApp.
+        r"""Sets the state of this PublishableApp.
 
         :param state: The state of this PublishableApp.
         :type state: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
@@ -407,7 +407,7 @@ class PublishableApp:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this PublishableApp.
+        r"""Gets the tenant_id of this PublishableApp.
 
         所在的租户ID。
 
@@ -418,7 +418,7 @@ class PublishableApp:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this PublishableApp.
+        r"""Sets the tenant_id of this PublishableApp.
 
         所在的租户ID。
 
@@ -429,7 +429,7 @@ class PublishableApp:
 
     @property
     def publish_at(self):
-        """Gets the publish_at of this PublishableApp.
+        r"""Gets the publish_at of this PublishableApp.
 
         发布时间。
 
@@ -440,7 +440,7 @@ class PublishableApp:
 
     @publish_at.setter
     def publish_at(self, publish_at):
-        """Sets the publish_at of this PublishableApp.
+        r"""Sets the publish_at of this PublishableApp.
 
         发布时间。
 
@@ -451,7 +451,7 @@ class PublishableApp:
 
     @property
     def source_type(self):
-        """Gets the source_type of this PublishableApp.
+        r"""Gets the source_type of this PublishableApp.
 
         应用类型： - '1':系统内置应用 - '2':镜像应用 - '3':自定义应用
 
@@ -462,7 +462,7 @@ class PublishableApp:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this PublishableApp.
+        r"""Sets the source_type of this PublishableApp.
 
         应用类型： - '1':系统内置应用 - '2':镜像应用 - '3':自定义应用
 
@@ -473,7 +473,7 @@ class PublishableApp:
 
     @property
     def publisher(self):
-        """Gets the publisher of this PublishableApp.
+        r"""Gets the publisher of this PublishableApp.
 
         应用发布者。
 
@@ -484,7 +484,7 @@ class PublishableApp:
 
     @publisher.setter
     def publisher(self, publisher):
-        """Sets the publisher of this PublishableApp.
+        r"""Sets the publisher of this PublishableApp.
 
         应用发布者。
 
@@ -495,7 +495,7 @@ class PublishableApp:
 
     @property
     def icon_url(self):
-        """Gets the icon_url of this PublishableApp.
+        r"""Gets the icon_url of this PublishableApp.
 
         图标url。
 
@@ -506,7 +506,7 @@ class PublishableApp:
 
     @icon_url.setter
     def icon_url(self, icon_url):
-        """Sets the icon_url of this PublishableApp.
+        r"""Sets the icon_url of this PublishableApp.
 
         图标url。
 
@@ -517,7 +517,7 @@ class PublishableApp:
 
     @property
     def publishable(self):
-        """Gets the publishable of this PublishableApp.
+        r"""Gets the publishable of this PublishableApp.
 
         是否可发布应用： - true: 可发布。 - false: 不可发布。
 
@@ -528,7 +528,7 @@ class PublishableApp:
 
     @publishable.setter
     def publishable(self, publishable):
-        """Sets the publishable of this PublishableApp.
+        r"""Sets the publishable of this PublishableApp.
 
         是否可发布应用： - true: 可发布。 - false: 不可发布。
 
@@ -539,7 +539,7 @@ class PublishableApp:
 
     @property
     def sandbox_enable(self):
-        """Gets the sandbox_enable of this PublishableApp.
+        r"""Gets the sandbox_enable of this PublishableApp.
 
         是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行。 - true: 表示以沙箱模式运行。
 
@@ -550,7 +550,7 @@ class PublishableApp:
 
     @sandbox_enable.setter
     def sandbox_enable(self, sandbox_enable):
-        """Sets the sandbox_enable of this PublishableApp.
+        r"""Sets the sandbox_enable of this PublishableApp.
 
         是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行。 - true: 表示以沙箱模式运行。
 
@@ -561,7 +561,7 @@ class PublishableApp:
 
     @property
     def source_image_ids(self):
-        """Gets the source_image_ids of this PublishableApp.
+        r"""Gets the source_image_ids of this PublishableApp.
 
         镜像ids。
 
@@ -572,7 +572,7 @@ class PublishableApp:
 
     @source_image_ids.setter
     def source_image_ids(self, source_image_ids):
-        """Sets the source_image_ids of this PublishableApp.
+        r"""Sets the source_image_ids of this PublishableApp.
 
         镜像ids。
 

@@ -29,7 +29,7 @@ class ActionAssociatedResource:
     }
 
     def __init__(self, urn_template=None, required=None, condition_keys=None):
-        """ActionAssociatedResource
+        r"""ActionAssociatedResource
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ActionAssociatedResource:
 
     @property
     def urn_template(self):
-        """Gets the urn_template of this ActionAssociatedResource.
+        r"""Gets the urn_template of this ActionAssociatedResource.
 
         统一资源名称模板，表示可以通过这类资源的统一资源名称对该授权项进行资源粒度的授权。
 
@@ -66,7 +66,7 @@ class ActionAssociatedResource:
 
     @urn_template.setter
     def urn_template(self, urn_template):
-        """Sets the urn_template of this ActionAssociatedResource.
+        r"""Sets the urn_template of this ActionAssociatedResource.
 
         统一资源名称模板，表示可以通过这类资源的统一资源名称对该授权项进行资源粒度的授权。
 
@@ -77,7 +77,7 @@ class ActionAssociatedResource:
 
     @property
     def required(self):
-        """Gets the required of this ActionAssociatedResource.
+        r"""Gets the required of this ActionAssociatedResource.
 
         标识该资源类型是否是这个授权项必选的，即授权项一定涉及对这类资源的操作；例如subnet是vpc:subnets:get的必选资源类型；而ou是organizations::tagResource的可选资源类型，因为organizations::tagResource操作的资源还可能是account或者policy。
 
@@ -88,7 +88,7 @@ class ActionAssociatedResource:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this ActionAssociatedResource.
+        r"""Sets the required of this ActionAssociatedResource.
 
         标识该资源类型是否是这个授权项必选的，即授权项一定涉及对这类资源的操作；例如subnet是vpc:subnets:get的必选资源类型；而ou是organizations::tagResource的可选资源类型，因为organizations::tagResource操作的资源还可能是account或者policy。
 
@@ -99,7 +99,7 @@ class ActionAssociatedResource:
 
     @property
     def condition_keys(self):
-        """Gets the condition_keys of this ActionAssociatedResource.
+        r"""Gets the condition_keys of this ActionAssociatedResource.
 
         针对该授权项和资源的服务自定义条件属性以及部分全局属性，只有授权项和资源同时匹配时才会生效。
 
@@ -110,7 +110,7 @@ class ActionAssociatedResource:
 
     @condition_keys.setter
     def condition_keys(self, condition_keys):
-        """Sets the condition_keys of this ActionAssociatedResource.
+        r"""Sets the condition_keys of this ActionAssociatedResource.
 
         针对该授权项和资源的服务自定义条件属性以及部分全局属性，只有授权项和资源同时匹配时才会生效。
 

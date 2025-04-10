@@ -24,7 +24,7 @@ class DeleteStaticRouteResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteStaticRouteResponse
+        r"""DeleteStaticRouteResponse
 
         The model defined in huaweicloud sdk
 

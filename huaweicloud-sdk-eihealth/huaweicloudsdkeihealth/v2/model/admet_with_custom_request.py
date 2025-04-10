@@ -27,7 +27,7 @@ class AdmetWithCustomRequest:
     }
 
     def __init__(self, smiles=None, custom_props=None):
-        """AdmetWithCustomRequest
+        r"""AdmetWithCustomRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AdmetWithCustomRequest:
 
     @property
     def smiles(self):
-        """Gets the smiles of this AdmetWithCustomRequest.
+        r"""Gets the smiles of this AdmetWithCustomRequest.
 
         分子SMILES表达式
 
@@ -60,7 +60,7 @@ class AdmetWithCustomRequest:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this AdmetWithCustomRequest.
+        r"""Sets the smiles of this AdmetWithCustomRequest.
 
         分子SMILES表达式
 
@@ -71,7 +71,7 @@ class AdmetWithCustomRequest:
 
     @property
     def custom_props(self):
-        """Gets the custom_props of this AdmetWithCustomRequest.
+        r"""Gets the custom_props of this AdmetWithCustomRequest.
 
         用户已开启的自定义属性集合
 
@@ -82,7 +82,7 @@ class AdmetWithCustomRequest:
 
     @custom_props.setter
     def custom_props(self, custom_props):
-        """Sets the custom_props of this AdmetWithCustomRequest.
+        r"""Sets the custom_props of this AdmetWithCustomRequest.
 
         用户已开启的自定义属性集合
 

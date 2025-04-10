@@ -30,7 +30,7 @@ class ListVolumesResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, items=None):
-        """ListVolumesResponse
+        r"""ListVolumesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListVolumesResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListVolumesResponse.
+        r"""Gets the api_version of this ListVolumesResponse.
 
         :return: The api_version of this ListVolumesResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class ListVolumesResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListVolumesResponse.
+        r"""Sets the api_version of this ListVolumesResponse.
 
         :param api_version: The api_version of this ListVolumesResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class ListVolumesResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListVolumesResponse.
+        r"""Gets the kind of this ListVolumesResponse.
 
         :return: The kind of this ListVolumesResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.VolumeKindObj`
@@ -85,7 +85,7 @@ class ListVolumesResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListVolumesResponse.
+        r"""Sets the kind of this ListVolumesResponse.
 
         :param kind: The kind of this ListVolumesResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.VolumeKindObj`
@@ -94,7 +94,7 @@ class ListVolumesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListVolumesResponse.
+        r"""Gets the items of this ListVolumesResponse.
 
         云存储列表。
 
@@ -105,7 +105,7 @@ class ListVolumesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListVolumesResponse.
+        r"""Sets the items of this ListVolumesResponse.
 
         云存储列表。
 

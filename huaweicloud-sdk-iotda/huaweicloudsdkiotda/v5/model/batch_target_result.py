@@ -31,7 +31,7 @@ class BatchTargetResult:
     }
 
     def __init__(self, target=None, status=None, error_code=None, error_msg=None):
-        """BatchTargetResult
+        r"""BatchTargetResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BatchTargetResult:
 
     @property
     def target(self):
-        """Gets the target of this BatchTargetResult.
+        r"""Gets the target of this BatchTargetResult.
 
         执行批量任务的目标。
 
@@ -75,7 +75,7 @@ class BatchTargetResult:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this BatchTargetResult.
+        r"""Sets the target of this BatchTargetResult.
 
         执行批量任务的目标。
 
@@ -86,7 +86,7 @@ class BatchTargetResult:
 
     @property
     def status(self):
-        """Gets the status of this BatchTargetResult.
+        r"""Gets the status of this BatchTargetResult.
 
         目标的执行结果，为success或failure
 
@@ -97,7 +97,7 @@ class BatchTargetResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchTargetResult.
+        r"""Sets the status of this BatchTargetResult.
 
         目标的执行结果，为success或failure
 
@@ -108,7 +108,7 @@ class BatchTargetResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this BatchTargetResult.
+        r"""Gets the error_code of this BatchTargetResult.
 
         操作失败的错误码
 
@@ -119,7 +119,7 @@ class BatchTargetResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this BatchTargetResult.
+        r"""Sets the error_code of this BatchTargetResult.
 
         操作失败的错误码
 
@@ -130,7 +130,7 @@ class BatchTargetResult:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this BatchTargetResult.
+        r"""Gets the error_msg of this BatchTargetResult.
 
         操作失败的错误描述
 
@@ -141,7 +141,7 @@ class BatchTargetResult:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this BatchTargetResult.
+        r"""Sets the error_msg of this BatchTargetResult.
 
         操作失败的错误描述
 

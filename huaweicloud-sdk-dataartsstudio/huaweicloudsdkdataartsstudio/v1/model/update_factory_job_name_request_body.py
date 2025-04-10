@@ -25,7 +25,7 @@ class UpdateFactoryJobNameRequestBody:
     }
 
     def __init__(self, name=None):
-        """UpdateFactoryJobNameRequestBody
+        r"""UpdateFactoryJobNameRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateFactoryJobNameRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateFactoryJobNameRequestBody.
+        r"""Gets the name of this UpdateFactoryJobNameRequestBody.
 
         作业名称
 
@@ -53,7 +53,7 @@ class UpdateFactoryJobNameRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateFactoryJobNameRequestBody.
+        r"""Sets the name of this UpdateFactoryJobNameRequestBody.
 
         作业名称
 

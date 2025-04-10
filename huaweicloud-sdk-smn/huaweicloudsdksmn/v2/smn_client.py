@@ -34,7 +34,7 @@ class SmnClient(Client):
         return client_builder
 
     def add_subscription(self, request):
-        """订阅
+        r"""订阅
 
         为指定Topic添加一个订阅者，如果订阅者的状态为未确认，则向订阅者发送一个确认的消息。待订阅者进行ConfirmSubscription确认后，该订阅者才能收到Topic发布的消息。单Topic默认可添加10000个订阅者，高并发场景下，可能会出现订阅者数量超过10000仍添加成功的情况，此为正常现象。接口是幂等的，如果添加已存在的订阅者，则返回成功，且status code为200，否则status code为201。
         
@@ -101,7 +101,7 @@ class SmnClient(Client):
         return http_info
 
     def add_subscription_from_subscription_user(self, request):
-        """导入订阅
+        r"""导入订阅
 
         为指定的Topic添加订阅者，订阅者信息来源为订阅用户列表。
         
@@ -168,7 +168,7 @@ class SmnClient(Client):
         return http_info
 
     def batch_create_or_delete_resource_tags(self, request):
-        """批量添加删除资源标签
+        r"""批量添加删除资源标签
 
         为指定实例批量添加或删除标签。一个资源上最多有10个标签。
         此接口为幂等接口：创建时如果请求体中存在重复key则报错。
@@ -240,7 +240,7 @@ class SmnClient(Client):
         return http_info
 
     def batch_create_subscriptions_filter_polices(self, request):
-        """批量创建订阅过滤策略
+        r"""批量创建订阅过滤策略
 
         创建订阅者的消息过滤策略。
         
@@ -305,7 +305,7 @@ class SmnClient(Client):
         return http_info
 
     def batch_delete_subscriptions_filter_polices(self, request):
-        """批量删除订阅过滤策略
+        r"""批量删除订阅过滤策略
 
         删除订阅者的消息过滤策略。
         
@@ -370,7 +370,7 @@ class SmnClient(Client):
         return http_info
 
     def batch_update_subscriptions_filter_polices(self, request):
-        """批量更新订阅过滤策略
+        r"""批量更新订阅过滤策略
 
         更新订阅者的消息过滤策略。
         
@@ -435,7 +435,7 @@ class SmnClient(Client):
         return http_info
 
     def cancel_subscription(self, request):
-        """取消订阅
+        r"""取消订阅
 
         删除指定的订阅者。
         
@@ -500,7 +500,7 @@ class SmnClient(Client):
         return http_info
 
     def create_logtank(self, request):
-        """绑定云日志
+        r"""绑定云日志
 
         为指定Topic绑定一个云日志，用于记录主题消息发送状态等信息。
         
@@ -567,7 +567,7 @@ class SmnClient(Client):
         return http_info
 
     def create_message_template(self, request):
-        """创建消息模板
+        r"""创建消息模板
 
         创建一个模板，用户可以按照模板去发送消息，这样可以减少请求的数据量。
         单用户默认可创建100个消息模板，高并发场景下，可能会出现消息模板数量超过100仍创建成功的情况，此为正常现象。
@@ -633,7 +633,7 @@ class SmnClient(Client):
         return http_info
 
     def create_notify_policy(self, request):
-        """创建通知策略
+        r"""创建通知策略
 
         创建通知策略
         
@@ -700,7 +700,7 @@ class SmnClient(Client):
         return http_info
 
     def create_resource_tag(self, request):
-        """添加资源标签
+        r"""添加资源标签
 
         一个资源上最多有10个标签。此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
         
@@ -769,7 +769,7 @@ class SmnClient(Client):
         return http_info
 
     def create_topic(self, request):
-        """创建主题
+        r"""创建主题
 
         创建Topic，单用户默认配额为3000。高并发场景下，可能会出现Topic数量超过3000仍创建成功的情况，此为正常现象。
         接口是幂等的，接口调用返回成功时，若已存在同名的Topic，返回的status code为200，否则返回的status code为201
@@ -835,7 +835,7 @@ class SmnClient(Client):
         return http_info
 
     def delete_logtank(self, request):
-        """解绑云日志
+        r"""解绑云日志
 
         解绑指定Topic绑定的云日志。
         
@@ -902,7 +902,7 @@ class SmnClient(Client):
         return http_info
 
     def delete_message_template(self, request):
-        """删除消息模板
+        r"""删除消息模板
 
         删除消息模板。删除模板之前的消息请求都可以使用该模板发送，删除之后无法再使用该模板发送消息。
         
@@ -967,7 +967,7 @@ class SmnClient(Client):
         return http_info
 
     def delete_notify_policy(self, request):
-        """删除通知策略
+        r"""删除通知策略
 
         删除通知策略
         
@@ -1034,7 +1034,7 @@ class SmnClient(Client):
         return http_info
 
     def delete_resource_tag(self, request):
-        """删除资源标签
+        r"""删除资源标签
 
         幂等接口：删除时，不对标签做校验。删除的key不存在报404，key不能为空或者空字符串。
         
@@ -1103,7 +1103,7 @@ class SmnClient(Client):
         return http_info
 
     def delete_topic(self, request):
-        """删除主题
+        r"""删除主题
 
         删除主题。
         
@@ -1168,7 +1168,7 @@ class SmnClient(Client):
         return http_info
 
     def delete_topic_attribute_by_name(self, request):
-        """删除指定名称的主题策略
+        r"""删除指定名称的主题策略
 
         删除指定名称的主题策略。
         
@@ -1235,7 +1235,7 @@ class SmnClient(Client):
         return http_info
 
     def delete_topic_attributes(self, request):
-        """删除所有主题策略
+        r"""删除所有主题策略
 
         删除所有主题策略。
         
@@ -1300,7 +1300,7 @@ class SmnClient(Client):
         return http_info
 
     def list_logtank(self, request):
-        """查询云日志
+        r"""查询云日志
 
         查询指定Topic绑定的云日志。
         
@@ -1365,7 +1365,7 @@ class SmnClient(Client):
         return http_info
 
     def list_message_template_details(self, request):
-        """查询消息模板详情
+        r"""查询消息模板详情
 
         查询模板详情，包括模板内容。
         
@@ -1430,7 +1430,7 @@ class SmnClient(Client):
         return http_info
 
     def list_message_templates(self, request):
-        """查询消息模板列表
+        r"""查询消息模板列表
 
         分页查询模板列表，模板列表按照创建时间进行升序排列。分页查询可以指定offset以及limit。如果不存在模板，则返回空列表。额外的查询参数分别有message_template_name和protocol。
         
@@ -1501,7 +1501,7 @@ class SmnClient(Client):
         return http_info
 
     def list_project_tags(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询租户在指定Region和实例类型的所有标签集合。
         
@@ -1566,7 +1566,7 @@ class SmnClient(Client):
         return http_info
 
     def list_resource_instances(self, request):
-        """查询资源实例
+        r"""查询资源实例
 
         使用标签过滤实例。
         
@@ -1633,7 +1633,7 @@ class SmnClient(Client):
         return http_info
 
     def list_resource_tags(self, request):
-        """查询资源标签
+        r"""查询资源标签
 
         查询指定实例的标签信息。
         
@@ -1700,7 +1700,7 @@ class SmnClient(Client):
         return http_info
 
     def list_subscriptions(self, request):
-        """查询订阅者列表
+        r"""查询订阅者列表
 
         分页返回请求者的所有的订阅列表，订阅列表按照订阅创建时间进行升序排列。分页查询可以指定offset以及limit。如果订阅者不存在，返回空列表。
         
@@ -1775,7 +1775,7 @@ class SmnClient(Client):
         return http_info
 
     def list_subscriptions_by_topic(self, request):
-        """查询指定Topic的订阅者列表
+        r"""查询指定Topic的订阅者列表
 
         分页获取特定Topic的订阅列表，订阅列表按照订阅创建时间进行升序排列。分页查询可以指定offset以及limit。如果指定Topic不存在订阅者，返回空列表。
         
@@ -1846,7 +1846,7 @@ class SmnClient(Client):
         return http_info
 
     def list_topic_attributes(self, request):
-        """查询主题策略
+        r"""查询主题策略
 
         查询主题的策略信息。
         
@@ -1913,7 +1913,7 @@ class SmnClient(Client):
         return http_info
 
     def list_topic_details(self, request):
-        """查询主题详情
+        r"""查询主题详情
 
         查询Topic的详细信息。
         
@@ -1978,7 +1978,7 @@ class SmnClient(Client):
         return http_info
 
     def list_topics(self, request):
-        """查询主题列表
+        r"""查询主题列表
 
         分页查询Topic列表，Topic列表按照Topic创建时间进行降序排列。分页查询可以指定offset以及limit。如果不存在Topic，则返回空列表。
         
@@ -2055,7 +2055,7 @@ class SmnClient(Client):
         return http_info
 
     def list_version(self, request):
-        """查询SMN API V2版本信息
+        r"""查询SMN API V2版本信息
 
         查询SMN API V2版本信息。
         
@@ -2118,7 +2118,7 @@ class SmnClient(Client):
         return http_info
 
     def list_versions(self, request):
-        """查询SMN支持的API版本号信息
+        r"""查询SMN支持的API版本号信息
 
         查询SMN开放API支持的版本号。
         
@@ -2181,7 +2181,7 @@ class SmnClient(Client):
         return http_info
 
     def publish_http_detect(self, request):
-        """发布探测消息
+        r"""发布探测消息
 
         基于主题发送http/https探测消息，探测当前http/https 终端是否可用，SMN出口是否能够正常访问该终端。
         
@@ -2248,7 +2248,7 @@ class SmnClient(Client):
         return http_info
 
     def publish_message(self, request):
-        """消息发布
+        r"""消息发布
 
         将消息发送给Topic的所有订阅端点。当返回消息ID时，该消息已被保存并开始尝试将其推送给Topic的订阅者。为确保您的消息能够成功推送到各个订阅者，请确保您的消息内容符合当地法律法规要求。
         三种消息发送方式
@@ -2325,7 +2325,7 @@ class SmnClient(Client):
         return http_info
 
     def show_http_detect_result(self, request):
-        """获取http探测结果
+        r"""获取http探测结果
 
         根据http探测发送返回的task_id查询探测结果。
         
@@ -2392,7 +2392,7 @@ class SmnClient(Client):
         return http_info
 
     def show_notify_policy(self, request):
-        """查询通知策略
+        r"""查询通知策略
 
         查询通知策略
         
@@ -2457,7 +2457,7 @@ class SmnClient(Client):
         return http_info
 
     def update_logtank(self, request):
-        """更新云日志
+        r"""更新云日志
 
         更新指定Topic绑定的云日志。
         
@@ -2526,7 +2526,7 @@ class SmnClient(Client):
         return http_info
 
     def update_message_template(self, request):
-        """更新消息模板
+        r"""更新消息模板
 
         修改消息模板的内容。
         
@@ -2593,7 +2593,7 @@ class SmnClient(Client):
         return http_info
 
     def update_notify_policy(self, request):
-        """修改通知策略
+        r"""修改通知策略
 
         修改通知策略，该接口仅支持全量修改，不支持部分修改。
         
@@ -2662,7 +2662,7 @@ class SmnClient(Client):
         return http_info
 
     def update_subscription(self, request):
-        """更新订阅者
+        r"""更新订阅者
 
         更新订阅者备注。
         
@@ -2731,7 +2731,7 @@ class SmnClient(Client):
         return http_info
 
     def update_topic(self, request):
-        """更新主题
+        r"""更新主题
 
         更新显示名。
         
@@ -2798,7 +2798,7 @@ class SmnClient(Client):
         return http_info
 
     def update_topic_attribute(self, request):
-        """更新主题策略
+        r"""更新主题策略
 
         更新主题的策略信息。
         
@@ -2867,7 +2867,7 @@ class SmnClient(Client):
         return http_info
 
     def create_application(self, request):
-        """创建Application
+        r"""创建Application
 
         创建平台应用。
         
@@ -2934,7 +2934,7 @@ class SmnClient(Client):
         return http_info
 
     def delete_application(self, request):
-        """删除Application
+        r"""删除Application
 
         删除平台应用。
         
@@ -3001,7 +3001,7 @@ class SmnClient(Client):
         return http_info
 
     def list_application_attributes(self, request):
-        """查询Application属性
+        r"""查询Application属性
 
         获取应用平台属性。
         
@@ -3068,7 +3068,7 @@ class SmnClient(Client):
         return http_info
 
     def list_applications(self, request):
-        """查询Application
+        r"""查询Application
 
         查询应用平台列表。
         
@@ -3141,7 +3141,7 @@ class SmnClient(Client):
         return http_info
 
     def publish_app_message(self, request):
-        """App消息发布
+        r"""App消息发布
 
         将消息直发给endpoint设备。
         
@@ -3210,7 +3210,7 @@ class SmnClient(Client):
         return http_info
 
     def update_application(self, request):
-        """更新Application
+        r"""更新Application
 
         更新应用平台。
         
@@ -3279,7 +3279,7 @@ class SmnClient(Client):
         return http_info
 
     def create_application_endpoint(self, request):
-        """创建Application endpoint
+        r"""创建Application endpoint
 
         创建应用平台的endpoint终端。
         
@@ -3348,7 +3348,7 @@ class SmnClient(Client):
         return http_info
 
     def delete_application_endpoint(self, request):
-        """删除Application endpoint
+        r"""删除Application endpoint
 
         删除设备。
         
@@ -3415,7 +3415,7 @@ class SmnClient(Client):
         return http_info
 
     def list_application_endpoint_attributes(self, request):
-        """查询Application的Endpoint属性
+        r"""查询Application的Endpoint属性
 
         获取endpoint的属性。
         
@@ -3482,7 +3482,7 @@ class SmnClient(Client):
         return http_info
 
     def list_application_endpoints(self, request):
-        """查询Application的Endpoint列表
+        r"""查询Application的Endpoint列表
 
         查询平台的endpoint列表。
         
@@ -3559,7 +3559,7 @@ class SmnClient(Client):
         return http_info
 
     def update_application_endpoint(self, request):
-        """更新Application endpoint
+        r"""更新Application endpoint
 
         更新设备属性。
         

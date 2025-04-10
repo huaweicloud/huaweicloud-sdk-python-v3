@@ -24,7 +24,7 @@ class CreateInstanceAccessControlAttributeConfigurationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateInstanceAccessControlAttributeConfigurationResponse
+        r"""CreateInstanceAccessControlAttributeConfigurationResponse
 
         The model defined in huaweicloud sdk
 

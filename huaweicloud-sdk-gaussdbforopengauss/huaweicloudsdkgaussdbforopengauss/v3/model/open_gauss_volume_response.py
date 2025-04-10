@@ -27,7 +27,7 @@ class OpenGaussVolumeResponse:
     }
 
     def __init__(self, type=None, size=None):
-        """OpenGaussVolumeResponse
+        r"""OpenGaussVolumeResponse
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OpenGaussVolumeResponse:
 
     @property
     def type(self):
-        """Gets the type of this OpenGaussVolumeResponse.
+        r"""Gets the type of this OpenGaussVolumeResponse.
 
         磁盘类型。  取值如下，区分大小写：  - ULTRAHIGH，表示SSD。 - ESSD，表示急速云盘
 
@@ -59,7 +59,7 @@ class OpenGaussVolumeResponse:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this OpenGaussVolumeResponse.
+        r"""Sets the type of this OpenGaussVolumeResponse.
 
         磁盘类型。  取值如下，区分大小写：  - ULTRAHIGH，表示SSD。 - ESSD，表示急速云盘
 
@@ -70,7 +70,7 @@ class OpenGaussVolumeResponse:
 
     @property
     def size(self):
-        """Gets the size of this OpenGaussVolumeResponse.
+        r"""Gets the size of this OpenGaussVolumeResponse.
 
         磁盘大小。  GaussDB分布式实例创建时需指定大小：要求必须为（分片数 * 40GB）的倍数，取值范围：（分片数*40GB）~（分片数*16TB）。
 
@@ -81,7 +81,7 @@ class OpenGaussVolumeResponse:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this OpenGaussVolumeResponse.
+        r"""Sets the size of this OpenGaussVolumeResponse.
 
         磁盘大小。  GaussDB分布式实例创建时需指定大小：要求必须为（分片数 * 40GB）的倍数，取值范围：（分片数*40GB）~（分片数*16TB）。
 

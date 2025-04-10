@@ -29,7 +29,7 @@ class UpdateComparePolicyRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, body=None):
-        """UpdateComparePolicyRequest
+        r"""UpdateComparePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateComparePolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateComparePolicyRequest.
+        r"""Gets the x_language of this UpdateComparePolicyRequest.
 
         请求语言类型。
 
@@ -67,7 +67,7 @@ class UpdateComparePolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateComparePolicyRequest.
+        r"""Sets the x_language of this UpdateComparePolicyRequest.
 
         请求语言类型。
 
@@ -78,7 +78,7 @@ class UpdateComparePolicyRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateComparePolicyRequest.
+        r"""Gets the job_id of this UpdateComparePolicyRequest.
 
         任务ID。
 
@@ -89,7 +89,7 @@ class UpdateComparePolicyRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateComparePolicyRequest.
+        r"""Sets the job_id of this UpdateComparePolicyRequest.
 
         任务ID。
 
@@ -100,7 +100,7 @@ class UpdateComparePolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateComparePolicyRequest.
+        r"""Gets the body of this UpdateComparePolicyRequest.
 
         :return: The body of this UpdateComparePolicyRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.ModifyComparePolicyReq`
@@ -109,7 +109,7 @@ class UpdateComparePolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateComparePolicyRequest.
+        r"""Sets the body of this UpdateComparePolicyRequest.
 
         :param body: The body of this UpdateComparePolicyRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.ModifyComparePolicyReq`

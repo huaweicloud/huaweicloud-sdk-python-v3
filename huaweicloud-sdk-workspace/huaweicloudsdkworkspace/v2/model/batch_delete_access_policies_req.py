@@ -25,7 +25,7 @@ class BatchDeleteAccessPoliciesReq:
     }
 
     def __init__(self, policy_id_list=None):
-        """BatchDeleteAccessPoliciesReq
+        r"""BatchDeleteAccessPoliciesReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteAccessPoliciesReq:
 
     @property
     def policy_id_list(self):
-        """Gets the policy_id_list of this BatchDeleteAccessPoliciesReq.
+        r"""Gets the policy_id_list of this BatchDeleteAccessPoliciesReq.
 
         策略ID列表。
 
@@ -54,7 +54,7 @@ class BatchDeleteAccessPoliciesReq:
 
     @policy_id_list.setter
     def policy_id_list(self, policy_id_list):
-        """Sets the policy_id_list of this BatchDeleteAccessPoliciesReq.
+        r"""Sets the policy_id_list of this BatchDeleteAccessPoliciesReq.
 
         策略ID列表。
 

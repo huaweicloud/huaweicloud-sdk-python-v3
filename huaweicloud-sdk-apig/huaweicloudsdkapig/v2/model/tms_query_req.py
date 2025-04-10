@@ -31,7 +31,7 @@ class TmsQueryReq:
     }
 
     def __init__(self, without_any_tag=None, tags=None, sys_tags=None, matches=None):
-        """TmsQueryReq
+        r"""TmsQueryReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TmsQueryReq:
 
     @property
     def without_any_tag(self):
-        """Gets the without_any_tag of this TmsQueryReq.
+        r"""Gets the without_any_tag of this TmsQueryReq.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”字段。 该字段为false或者未提供该参数时，该条件不生效。 
 
@@ -75,7 +75,7 @@ class TmsQueryReq:
 
     @without_any_tag.setter
     def without_any_tag(self, without_any_tag):
-        """Sets the without_any_tag of this TmsQueryReq.
+        r"""Sets the without_any_tag of this TmsQueryReq.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”字段。 该字段为false或者未提供该参数时，该条件不生效。 
 
@@ -86,7 +86,7 @@ class TmsQueryReq:
 
     @property
     def tags(self):
-        """Gets the tags of this TmsQueryReq.
+        r"""Gets the tags of this TmsQueryReq.
 
         包含标签，最多包含20个key，每个key下面的value最多20个。无tag过滤条件时返回全量数据。
 
@@ -97,7 +97,7 @@ class TmsQueryReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TmsQueryReq.
+        r"""Sets the tags of this TmsQueryReq.
 
         包含标签，最多包含20个key，每个key下面的value最多20个。无tag过滤条件时返回全量数据。
 
@@ -108,7 +108,7 @@ class TmsQueryReq:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this TmsQueryReq.
+        r"""Gets the sys_tags of this TmsQueryReq.
 
         企业项目.仅op_service权限可以使用此字段做资源实例过滤条件. 无sys_tags时按照tag接口处理，无tag过滤条件时返回全量数据。
 
@@ -119,7 +119,7 @@ class TmsQueryReq:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this TmsQueryReq.
+        r"""Sets the sys_tags of this TmsQueryReq.
 
         企业项目.仅op_service权限可以使用此字段做资源实例过滤条件. 无sys_tags时按照tag接口处理，无tag过滤条件时返回全量数据。
 
@@ -130,7 +130,7 @@ class TmsQueryReq:
 
     @property
     def matches(self):
-        """Gets the matches of this TmsQueryReq.
+        r"""Gets the matches of this TmsQueryReq.
 
         搜索字段,key为要匹配的字段,当前限定为resource_name。value为匹配的值。 根据key的值确认是否需要模糊匹配，如resource_name需要实现前缀搜索。 
 
@@ -141,7 +141,7 @@ class TmsQueryReq:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this TmsQueryReq.
+        r"""Sets the matches of this TmsQueryReq.
 
         搜索字段,key为要匹配的字段,当前限定为resource_name。value为匹配的值。 根据key的值确认是否需要模糊匹配，如resource_name需要实现前缀搜索。 
 

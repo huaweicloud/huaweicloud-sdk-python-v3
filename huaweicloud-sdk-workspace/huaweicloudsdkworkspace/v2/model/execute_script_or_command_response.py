@@ -26,7 +26,7 @@ class ExecuteScriptOrCommandResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """ExecuteScriptOrCommandResponse
+        r"""ExecuteScriptOrCommandResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExecuteScriptOrCommandResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ExecuteScriptOrCommandResponse.
+        r"""Gets the task_id of this ExecuteScriptOrCommandResponse.
 
         执行脚本的任务ID。
 
@@ -55,7 +55,7 @@ class ExecuteScriptOrCommandResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ExecuteScriptOrCommandResponse.
+        r"""Sets the task_id of this ExecuteScriptOrCommandResponse.
 
         执行脚本的任务ID。
 

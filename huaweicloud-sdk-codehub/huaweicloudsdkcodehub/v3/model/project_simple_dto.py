@@ -65,7 +65,7 @@ class ProjectSimpleDto:
     }
 
     def __init__(self, id=None, description=None, name=None, name_with_namespace=None, path=None, path_with_namespace=None, develop_mode=None, created_at=None, updated_at=None, archived=None, is_kia=None, ssh_url_to_repo=None, http_url_to_repo=None, web_url=None, readme_url=None, product_id=None, product_name=None, member_mgnt_mode=None, visibility=None, namespace=None, repo_type=None):
-        """ProjectSimpleDto
+        r"""ProjectSimpleDto
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class ProjectSimpleDto:
 
     @property
     def id(self):
-        """Gets the id of this ProjectSimpleDto.
+        r"""Gets the id of this ProjectSimpleDto.
 
         项目id
 
@@ -194,7 +194,7 @@ class ProjectSimpleDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProjectSimpleDto.
+        r"""Sets the id of this ProjectSimpleDto.
 
         项目id
 
@@ -205,7 +205,7 @@ class ProjectSimpleDto:
 
     @property
     def description(self):
-        """Gets the description of this ProjectSimpleDto.
+        r"""Gets the description of this ProjectSimpleDto.
 
         项目描述
 
@@ -216,7 +216,7 @@ class ProjectSimpleDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProjectSimpleDto.
+        r"""Sets the description of this ProjectSimpleDto.
 
         项目描述
 
@@ -227,7 +227,7 @@ class ProjectSimpleDto:
 
     @property
     def name(self):
-        """Gets the name of this ProjectSimpleDto.
+        r"""Gets the name of this ProjectSimpleDto.
 
         项目名称
 
@@ -238,7 +238,7 @@ class ProjectSimpleDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProjectSimpleDto.
+        r"""Sets the name of this ProjectSimpleDto.
 
         项目名称
 
@@ -249,7 +249,7 @@ class ProjectSimpleDto:
 
     @property
     def name_with_namespace(self):
-        """Gets the name_with_namespace of this ProjectSimpleDto.
+        r"""Gets the name_with_namespace of this ProjectSimpleDto.
 
         项目名称
 
@@ -260,7 +260,7 @@ class ProjectSimpleDto:
 
     @name_with_namespace.setter
     def name_with_namespace(self, name_with_namespace):
-        """Sets the name_with_namespace of this ProjectSimpleDto.
+        r"""Sets the name_with_namespace of this ProjectSimpleDto.
 
         项目名称
 
@@ -271,7 +271,7 @@ class ProjectSimpleDto:
 
     @property
     def path(self):
-        """Gets the path of this ProjectSimpleDto.
+        r"""Gets the path of this ProjectSimpleDto.
 
         项目路径
 
@@ -282,7 +282,7 @@ class ProjectSimpleDto:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ProjectSimpleDto.
+        r"""Sets the path of this ProjectSimpleDto.
 
         项目路径
 
@@ -293,7 +293,7 @@ class ProjectSimpleDto:
 
     @property
     def path_with_namespace(self):
-        """Gets the path_with_namespace of this ProjectSimpleDto.
+        r"""Gets the path_with_namespace of this ProjectSimpleDto.
 
         项目路径
 
@@ -304,7 +304,7 @@ class ProjectSimpleDto:
 
     @path_with_namespace.setter
     def path_with_namespace(self, path_with_namespace):
-        """Sets the path_with_namespace of this ProjectSimpleDto.
+        r"""Sets the path_with_namespace of this ProjectSimpleDto.
 
         项目路径
 
@@ -315,7 +315,7 @@ class ProjectSimpleDto:
 
     @property
     def develop_mode(self):
-        """Gets the develop_mode of this ProjectSimpleDto.
+        r"""Gets the develop_mode of this ProjectSimpleDto.
 
         开发模式
 
@@ -326,7 +326,7 @@ class ProjectSimpleDto:
 
     @develop_mode.setter
     def develop_mode(self, develop_mode):
-        """Sets the develop_mode of this ProjectSimpleDto.
+        r"""Sets the develop_mode of this ProjectSimpleDto.
 
         开发模式
 
@@ -337,7 +337,7 @@ class ProjectSimpleDto:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ProjectSimpleDto.
+        r"""Gets the created_at of this ProjectSimpleDto.
 
         创建时间
 
@@ -348,7 +348,7 @@ class ProjectSimpleDto:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ProjectSimpleDto.
+        r"""Sets the created_at of this ProjectSimpleDto.
 
         创建时间
 
@@ -359,7 +359,7 @@ class ProjectSimpleDto:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ProjectSimpleDto.
+        r"""Gets the updated_at of this ProjectSimpleDto.
 
         更新时间
 
@@ -370,7 +370,7 @@ class ProjectSimpleDto:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ProjectSimpleDto.
+        r"""Sets the updated_at of this ProjectSimpleDto.
 
         更新时间
 
@@ -381,7 +381,7 @@ class ProjectSimpleDto:
 
     @property
     def archived(self):
-        """Gets the archived of this ProjectSimpleDto.
+        r"""Gets the archived of this ProjectSimpleDto.
 
         是否归档
 
@@ -392,7 +392,7 @@ class ProjectSimpleDto:
 
     @archived.setter
     def archived(self, archived):
-        """Sets the archived of this ProjectSimpleDto.
+        r"""Sets the archived of this ProjectSimpleDto.
 
         是否归档
 
@@ -403,7 +403,7 @@ class ProjectSimpleDto:
 
     @property
     def is_kia(self):
-        """Gets the is_kia of this ProjectSimpleDto.
+        r"""Gets the is_kia of this ProjectSimpleDto.
 
         是否为kia仓
 
@@ -414,7 +414,7 @@ class ProjectSimpleDto:
 
     @is_kia.setter
     def is_kia(self, is_kia):
-        """Sets the is_kia of this ProjectSimpleDto.
+        r"""Sets the is_kia of this ProjectSimpleDto.
 
         是否为kia仓
 
@@ -425,7 +425,7 @@ class ProjectSimpleDto:
 
     @property
     def ssh_url_to_repo(self):
-        """Gets the ssh_url_to_repo of this ProjectSimpleDto.
+        r"""Gets the ssh_url_to_repo of this ProjectSimpleDto.
 
         项目url
 
@@ -436,7 +436,7 @@ class ProjectSimpleDto:
 
     @ssh_url_to_repo.setter
     def ssh_url_to_repo(self, ssh_url_to_repo):
-        """Sets the ssh_url_to_repo of this ProjectSimpleDto.
+        r"""Sets the ssh_url_to_repo of this ProjectSimpleDto.
 
         项目url
 
@@ -447,7 +447,7 @@ class ProjectSimpleDto:
 
     @property
     def http_url_to_repo(self):
-        """Gets the http_url_to_repo of this ProjectSimpleDto.
+        r"""Gets the http_url_to_repo of this ProjectSimpleDto.
 
         项目url
 
@@ -458,7 +458,7 @@ class ProjectSimpleDto:
 
     @http_url_to_repo.setter
     def http_url_to_repo(self, http_url_to_repo):
-        """Sets the http_url_to_repo of this ProjectSimpleDto.
+        r"""Sets the http_url_to_repo of this ProjectSimpleDto.
 
         项目url
 
@@ -469,7 +469,7 @@ class ProjectSimpleDto:
 
     @property
     def web_url(self):
-        """Gets the web_url of this ProjectSimpleDto.
+        r"""Gets the web_url of this ProjectSimpleDto.
 
         项目url
 
@@ -480,7 +480,7 @@ class ProjectSimpleDto:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this ProjectSimpleDto.
+        r"""Sets the web_url of this ProjectSimpleDto.
 
         项目url
 
@@ -491,7 +491,7 @@ class ProjectSimpleDto:
 
     @property
     def readme_url(self):
-        """Gets the readme_url of this ProjectSimpleDto.
+        r"""Gets the readme_url of this ProjectSimpleDto.
 
         项目readme url
 
@@ -502,7 +502,7 @@ class ProjectSimpleDto:
 
     @readme_url.setter
     def readme_url(self, readme_url):
-        """Sets the readme_url of this ProjectSimpleDto.
+        r"""Sets the readme_url of this ProjectSimpleDto.
 
         项目readme url
 
@@ -513,7 +513,7 @@ class ProjectSimpleDto:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ProjectSimpleDto.
+        r"""Gets the product_id of this ProjectSimpleDto.
 
         product id
 
@@ -524,7 +524,7 @@ class ProjectSimpleDto:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ProjectSimpleDto.
+        r"""Sets the product_id of this ProjectSimpleDto.
 
         product id
 
@@ -535,7 +535,7 @@ class ProjectSimpleDto:
 
     @property
     def product_name(self):
-        """Gets the product_name of this ProjectSimpleDto.
+        r"""Gets the product_name of this ProjectSimpleDto.
 
         product name
 
@@ -546,7 +546,7 @@ class ProjectSimpleDto:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this ProjectSimpleDto.
+        r"""Sets the product_name of this ProjectSimpleDto.
 
         product name
 
@@ -557,7 +557,7 @@ class ProjectSimpleDto:
 
     @property
     def member_mgnt_mode(self):
-        """Gets the member_mgnt_mode of this ProjectSimpleDto.
+        r"""Gets the member_mgnt_mode of this ProjectSimpleDto.
 
         member mgnt mode
 
@@ -568,7 +568,7 @@ class ProjectSimpleDto:
 
     @member_mgnt_mode.setter
     def member_mgnt_mode(self, member_mgnt_mode):
-        """Sets the member_mgnt_mode of this ProjectSimpleDto.
+        r"""Sets the member_mgnt_mode of this ProjectSimpleDto.
 
         member mgnt mode
 
@@ -579,7 +579,7 @@ class ProjectSimpleDto:
 
     @property
     def visibility(self):
-        """Gets the visibility of this ProjectSimpleDto.
+        r"""Gets the visibility of this ProjectSimpleDto.
 
         visibility
 
@@ -590,7 +590,7 @@ class ProjectSimpleDto:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this ProjectSimpleDto.
+        r"""Sets the visibility of this ProjectSimpleDto.
 
         visibility
 
@@ -601,7 +601,7 @@ class ProjectSimpleDto:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ProjectSimpleDto.
+        r"""Gets the namespace of this ProjectSimpleDto.
 
         :return: The namespace of this ProjectSimpleDto.
         :rtype: :class:`huaweicloudsdkcodehub.v3.NamespaceBasicDto`
@@ -610,7 +610,7 @@ class ProjectSimpleDto:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ProjectSimpleDto.
+        r"""Sets the namespace of this ProjectSimpleDto.
 
         :param namespace: The namespace of this ProjectSimpleDto.
         :type namespace: :class:`huaweicloudsdkcodehub.v3.NamespaceBasicDto`
@@ -619,7 +619,7 @@ class ProjectSimpleDto:
 
     @property
     def repo_type(self):
-        """Gets the repo_type of this ProjectSimpleDto.
+        r"""Gets the repo_type of this ProjectSimpleDto.
 
         项目类型
 
@@ -630,7 +630,7 @@ class ProjectSimpleDto:
 
     @repo_type.setter
     def repo_type(self, repo_type):
-        """Sets the repo_type of this ProjectSimpleDto.
+        r"""Sets the repo_type of this ProjectSimpleDto.
 
         项目类型
 

@@ -27,7 +27,7 @@ class ExpandGraphRequest:
     }
 
     def __init__(self, graph_id=None, body=None):
-        """ExpandGraphRequest
+        r"""ExpandGraphRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExpandGraphRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this ExpandGraphRequest.
+        r"""Gets the graph_id of this ExpandGraphRequest.
 
         图ID。
 
@@ -60,7 +60,7 @@ class ExpandGraphRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this ExpandGraphRequest.
+        r"""Sets the graph_id of this ExpandGraphRequest.
 
         图ID。
 
@@ -71,7 +71,7 @@ class ExpandGraphRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExpandGraphRequest.
+        r"""Gets the body of this ExpandGraphRequest.
 
         :return: The body of this ExpandGraphRequest.
         :rtype: :class:`huaweicloudsdkges.v1.ExpandGraphReq`
@@ -80,7 +80,7 @@ class ExpandGraphRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExpandGraphRequest.
+        r"""Sets the body of this ExpandGraphRequest.
 
         :param body: The body of this ExpandGraphRequest.
         :type body: :class:`huaweicloudsdkges.v1.ExpandGraphReq`

@@ -27,7 +27,7 @@ class VersionMasterIdsDtoVersionModelVersionMasterDTO:
     }
 
     def __init__(self, master_ids=None, modifier=None):
-        """VersionMasterIdsDtoVersionModelVersionMasterDTO
+        r"""VersionMasterIdsDtoVersionModelVersionMasterDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class VersionMasterIdsDtoVersionModelVersionMasterDTO:
 
     @property
     def master_ids(self):
-        """Gets the master_ids of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
+        r"""Gets the master_ids of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
 
         **参数解释：**  主对象集合。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -60,7 +60,7 @@ class VersionMasterIdsDtoVersionModelVersionMasterDTO:
 
     @master_ids.setter
     def master_ids(self, master_ids):
-        """Sets the master_ids of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
+        r"""Sets the master_ids of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
 
         **参数解释：**  主对象集合。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -71,7 +71,7 @@ class VersionMasterIdsDtoVersionModelVersionMasterDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
+        r"""Gets the modifier of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
 
         **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -82,7 +82,7 @@ class VersionMasterIdsDtoVersionModelVersionMasterDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
+        r"""Sets the modifier of this VersionMasterIdsDtoVersionModelVersionMasterDTO.
 
         **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

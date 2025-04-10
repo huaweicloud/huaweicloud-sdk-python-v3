@@ -35,7 +35,7 @@ class MetricOpenSearchParams:
     }
 
     def __init__(self, architecture_guid=None, query=None, limit=None, offset=None, search_name_description=None, include_sub_architecture=None):
-        """MetricOpenSearchParams
+        r"""MetricOpenSearchParams
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class MetricOpenSearchParams:
 
     @property
     def architecture_guid(self):
-        """Gets the architecture_guid of this MetricOpenSearchParams.
+        r"""Gets the architecture_guid of this MetricOpenSearchParams.
 
         指标资产ID
 
@@ -88,7 +88,7 @@ class MetricOpenSearchParams:
 
     @architecture_guid.setter
     def architecture_guid(self, architecture_guid):
-        """Sets the architecture_guid of this MetricOpenSearchParams.
+        r"""Sets the architecture_guid of this MetricOpenSearchParams.
 
         指标资产ID
 
@@ -99,7 +99,7 @@ class MetricOpenSearchParams:
 
     @property
     def query(self):
-        """Gets the query of this MetricOpenSearchParams.
+        r"""Gets the query of this MetricOpenSearchParams.
 
         查询条件
 
@@ -110,7 +110,7 @@ class MetricOpenSearchParams:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this MetricOpenSearchParams.
+        r"""Sets the query of this MetricOpenSearchParams.
 
         查询条件
 
@@ -121,7 +121,7 @@ class MetricOpenSearchParams:
 
     @property
     def limit(self):
-        """Gets the limit of this MetricOpenSearchParams.
+        r"""Gets the limit of this MetricOpenSearchParams.
 
         单次请求条数
 
@@ -132,7 +132,7 @@ class MetricOpenSearchParams:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this MetricOpenSearchParams.
+        r"""Sets the limit of this MetricOpenSearchParams.
 
         单次请求条数
 
@@ -143,7 +143,7 @@ class MetricOpenSearchParams:
 
     @property
     def offset(self):
-        """Gets the offset of this MetricOpenSearchParams.
+        r"""Gets the offset of this MetricOpenSearchParams.
 
         偏移量
 
@@ -154,7 +154,7 @@ class MetricOpenSearchParams:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this MetricOpenSearchParams.
+        r"""Sets the offset of this MetricOpenSearchParams.
 
         偏移量
 
@@ -165,7 +165,7 @@ class MetricOpenSearchParams:
 
     @property
     def search_name_description(self):
-        """Gets the search_name_description of this MetricOpenSearchParams.
+        r"""Gets the search_name_description of this MetricOpenSearchParams.
 
         是否按名称和描述搜索
 
@@ -176,7 +176,7 @@ class MetricOpenSearchParams:
 
     @search_name_description.setter
     def search_name_description(self, search_name_description):
-        """Sets the search_name_description of this MetricOpenSearchParams.
+        r"""Sets the search_name_description of this MetricOpenSearchParams.
 
         是否按名称和描述搜索
 
@@ -187,7 +187,7 @@ class MetricOpenSearchParams:
 
     @property
     def include_sub_architecture(self):
-        """Gets the include_sub_architecture of this MetricOpenSearchParams.
+        r"""Gets the include_sub_architecture of this MetricOpenSearchParams.
 
         是否查询子指标
 
@@ -198,7 +198,7 @@ class MetricOpenSearchParams:
 
     @include_sub_architecture.setter
     def include_sub_architecture(self, include_sub_architecture):
-        """Sets the include_sub_architecture of this MetricOpenSearchParams.
+        r"""Sets the include_sub_architecture of this MetricOpenSearchParams.
 
         是否查询子指标
 

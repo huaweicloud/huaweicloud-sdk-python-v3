@@ -30,7 +30,7 @@ class ShowSystemConfigsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowSystemConfigsResponse
+        r"""ShowSystemConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowSystemConfigsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowSystemConfigsResponse.
+        r"""Gets the code of this ShowSystemConfigsResponse.
 
         接口调用失败错误码
 
@@ -69,7 +69,7 @@ class ShowSystemConfigsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowSystemConfigsResponse.
+        r"""Sets the code of this ShowSystemConfigsResponse.
 
         接口调用失败错误码
 
@@ -80,7 +80,7 @@ class ShowSystemConfigsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowSystemConfigsResponse.
+        r"""Gets the data of this ShowSystemConfigsResponse.
 
         :return: The data of this ShowSystemConfigsResponse.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.SystemConfig`]
@@ -89,7 +89,7 @@ class ShowSystemConfigsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowSystemConfigsResponse.
+        r"""Sets the data of this ShowSystemConfigsResponse.
 
         :param data: The data of this ShowSystemConfigsResponse.
         :type data: list[:class:`huaweicloudsdkcloudtest.v1.SystemConfig`]
@@ -98,7 +98,7 @@ class ShowSystemConfigsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowSystemConfigsResponse.
+        r"""Gets the message of this ShowSystemConfigsResponse.
 
         接口调用错误信息
 
@@ -109,7 +109,7 @@ class ShowSystemConfigsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowSystemConfigsResponse.
+        r"""Sets the message of this ShowSystemConfigsResponse.
 
         接口调用错误信息
 

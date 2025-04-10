@@ -29,7 +29,7 @@ class RegionInfo:
     }
 
     def __init__(self, cloud_type=None, value=None, description=None):
-        """RegionInfo
+        r"""RegionInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RegionInfo:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this RegionInfo.
+        r"""Gets the cloud_type of this RegionInfo.
 
         云服务名称
 
@@ -68,7 +68,7 @@ class RegionInfo:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this RegionInfo.
+        r"""Sets the cloud_type of this RegionInfo.
 
         云服务名称
 
@@ -79,7 +79,7 @@ class RegionInfo:
 
     @property
     def value(self):
-        """Gets the value of this RegionInfo.
+        r"""Gets the value of this RegionInfo.
 
         region名称
 
@@ -90,7 +90,7 @@ class RegionInfo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RegionInfo.
+        r"""Sets the value of this RegionInfo.
 
         region名称
 
@@ -101,7 +101,7 @@ class RegionInfo:
 
     @property
     def description(self):
-        """Gets the description of this RegionInfo.
+        r"""Gets the description of this RegionInfo.
 
         region的描述信息
 
@@ -112,7 +112,7 @@ class RegionInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RegionInfo.
+        r"""Sets the description of this RegionInfo.
 
         region的描述信息
 

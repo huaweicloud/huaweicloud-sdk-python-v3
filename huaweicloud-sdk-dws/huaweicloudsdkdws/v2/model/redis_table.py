@@ -35,7 +35,7 @@ class RedisTable:
     }
 
     def __init__(self, table_name=None, id=None, schema_name=None, logical_cluster_name=None, size=None, status=None):
-        """RedisTable
+        r"""RedisTable
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RedisTable:
 
     @property
     def table_name(self):
-        """Gets the table_name of this RedisTable.
+        r"""Gets the table_name of this RedisTable.
 
         表名
 
@@ -89,7 +89,7 @@ class RedisTable:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this RedisTable.
+        r"""Sets the table_name of this RedisTable.
 
         表名
 
@@ -100,7 +100,7 @@ class RedisTable:
 
     @property
     def id(self):
-        """Gets the id of this RedisTable.
+        r"""Gets the id of this RedisTable.
 
         表唯一id
 
@@ -111,7 +111,7 @@ class RedisTable:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RedisTable.
+        r"""Sets the id of this RedisTable.
 
         表唯一id
 
@@ -122,7 +122,7 @@ class RedisTable:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this RedisTable.
+        r"""Gets the schema_name of this RedisTable.
 
         schema名
 
@@ -133,7 +133,7 @@ class RedisTable:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this RedisTable.
+        r"""Sets the schema_name of this RedisTable.
 
         schema名
 
@@ -144,7 +144,7 @@ class RedisTable:
 
     @property
     def logical_cluster_name(self):
-        """Gets the logical_cluster_name of this RedisTable.
+        r"""Gets the logical_cluster_name of this RedisTable.
 
         逻辑集群名
 
@@ -155,7 +155,7 @@ class RedisTable:
 
     @logical_cluster_name.setter
     def logical_cluster_name(self, logical_cluster_name):
-        """Sets the logical_cluster_name of this RedisTable.
+        r"""Sets the logical_cluster_name of this RedisTable.
 
         逻辑集群名
 
@@ -166,7 +166,7 @@ class RedisTable:
 
     @property
     def size(self):
-        """Gets the size of this RedisTable.
+        r"""Gets the size of this RedisTable.
 
         表大小
 
@@ -177,7 +177,7 @@ class RedisTable:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this RedisTable.
+        r"""Sets the size of this RedisTable.
 
         表大小
 
@@ -188,7 +188,7 @@ class RedisTable:
 
     @property
     def status(self):
-        """Gets the status of this RedisTable.
+        r"""Gets the status of this RedisTable.
 
         重分布类型 i：重分布中； y：重分布完成； n：未开始
 
@@ -199,7 +199,7 @@ class RedisTable:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RedisTable.
+        r"""Sets the status of this RedisTable.
 
         重分布类型 i：重分布中； y：重分布完成； n：未开始
 

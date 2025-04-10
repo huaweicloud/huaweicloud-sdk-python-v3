@@ -26,7 +26,7 @@ class ShowAntiVirusSwitchResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ShowAntiVirusSwitchResponse
+        r"""ShowAntiVirusSwitchResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAntiVirusSwitchResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowAntiVirusSwitchResponse.
+        r"""Gets the data of this ShowAntiVirusSwitchResponse.
 
         :return: The data of this ShowAntiVirusSwitchResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.AntiVirusVO`
@@ -53,7 +53,7 @@ class ShowAntiVirusSwitchResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowAntiVirusSwitchResponse.
+        r"""Sets the data of this ShowAntiVirusSwitchResponse.
 
         :param data: The data of this ShowAntiVirusSwitchResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.AntiVirusVO`

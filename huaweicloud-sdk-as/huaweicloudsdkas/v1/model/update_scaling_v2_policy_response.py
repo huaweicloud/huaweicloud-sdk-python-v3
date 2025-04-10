@@ -26,7 +26,7 @@ class UpdateScalingV2PolicyResponse(SdkResponse):
     }
 
     def __init__(self, scaling_policy_id=None):
-        """UpdateScalingV2PolicyResponse
+        r"""UpdateScalingV2PolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateScalingV2PolicyResponse(SdkResponse):
 
     @property
     def scaling_policy_id(self):
-        """Gets the scaling_policy_id of this UpdateScalingV2PolicyResponse.
+        r"""Gets the scaling_policy_id of this UpdateScalingV2PolicyResponse.
 
         伸缩策略ID。
 
@@ -55,7 +55,7 @@ class UpdateScalingV2PolicyResponse(SdkResponse):
 
     @scaling_policy_id.setter
     def scaling_policy_id(self, scaling_policy_id):
-        """Sets the scaling_policy_id of this UpdateScalingV2PolicyResponse.
+        r"""Sets the scaling_policy_id of this UpdateScalingV2PolicyResponse.
 
         伸缩策略ID。
 

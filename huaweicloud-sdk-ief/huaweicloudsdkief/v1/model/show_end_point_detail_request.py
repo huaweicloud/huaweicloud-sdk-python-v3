@@ -27,7 +27,7 @@ class ShowEndPointDetailRequest:
     }
 
     def __init__(self, ief_instance_id=None, endpoint_id=None):
-        """ShowEndPointDetailRequest
+        r"""ShowEndPointDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowEndPointDetailRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ShowEndPointDetailRequest.
+        r"""Gets the ief_instance_id of this ShowEndPointDetailRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -60,7 +60,7 @@ class ShowEndPointDetailRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ShowEndPointDetailRequest.
+        r"""Sets the ief_instance_id of this ShowEndPointDetailRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -71,7 +71,7 @@ class ShowEndPointDetailRequest:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this ShowEndPointDetailRequest.
+        r"""Gets the endpoint_id of this ShowEndPointDetailRequest.
 
         端点ID
 
@@ -82,7 +82,7 @@ class ShowEndPointDetailRequest:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this ShowEndPointDetailRequest.
+        r"""Sets the endpoint_id of this ShowEndPointDetailRequest.
 
         端点ID
 

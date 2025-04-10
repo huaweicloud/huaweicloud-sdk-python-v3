@@ -26,7 +26,7 @@ class ListAgentsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListAgentsResponse
+        r"""ListAgentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAgentsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListAgentsResponse.
+        r"""Gets the body of this ListAgentsResponse.
 
         :return: The body of this ListAgentsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ListAgentsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAgentsResponse.
+        r"""Sets the body of this ListAgentsResponse.
 
         :param body: The body of this ListAgentsResponse.
         :type body: str

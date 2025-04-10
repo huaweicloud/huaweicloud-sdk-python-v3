@@ -49,7 +49,7 @@ class ShowJobExeListNewRequest:
     }
 
     def __init__(self, cluster_id=None, job_name=None, job_id=None, user=None, job_type=None, job_state=None, job_result=None, queue=None, limit=None, offset=None, sort_by=None, submitted_time_begin=None, submitted_time_end=None):
-        """ShowJobExeListNewRequest
+        r"""ShowJobExeListNewRequest
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class ShowJobExeListNewRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowJobExeListNewRequest.
+        r"""Gets the cluster_id of this ShowJobExeListNewRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -137,7 +137,7 @@ class ShowJobExeListNewRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowJobExeListNewRequest.
+        r"""Sets the cluster_id of this ShowJobExeListNewRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -148,7 +148,7 @@ class ShowJobExeListNewRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ShowJobExeListNewRequest.
+        r"""Gets the job_name of this ShowJobExeListNewRequest.
 
         作业名称，只能由字母、数字、中划线和下划线组成，并且长度为1～128个字符。
 
@@ -159,7 +159,7 @@ class ShowJobExeListNewRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ShowJobExeListNewRequest.
+        r"""Sets the job_name of this ShowJobExeListNewRequest.
 
         作业名称，只能由字母、数字、中划线和下划线组成，并且长度为1～128个字符。
 
@@ -170,7 +170,7 @@ class ShowJobExeListNewRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobExeListNewRequest.
+        r"""Gets the job_id of this ShowJobExeListNewRequest.
 
         作业ID，只能由字母、数字、中划线(-)组成，并且长度为1~64字符。
 
@@ -181,7 +181,7 @@ class ShowJobExeListNewRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobExeListNewRequest.
+        r"""Sets the job_id of this ShowJobExeListNewRequest.
 
         作业ID，只能由字母、数字、中划线(-)组成，并且长度为1~64字符。
 
@@ -192,7 +192,7 @@ class ShowJobExeListNewRequest:
 
     @property
     def user(self):
-        """Gets the user of this ShowJobExeListNewRequest.
+        r"""Gets the user of this ShowJobExeListNewRequest.
 
         用户名称、只能由字母、数字、特殊字符(-_.)组成，且不能以数字开头，并且长度为1～32字符。
 
@@ -203,7 +203,7 @@ class ShowJobExeListNewRequest:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this ShowJobExeListNewRequest.
+        r"""Sets the user of this ShowJobExeListNewRequest.
 
         用户名称、只能由字母、数字、特殊字符(-_.)组成，且不能以数字开头，并且长度为1～32字符。
 
@@ -214,7 +214,7 @@ class ShowJobExeListNewRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowJobExeListNewRequest.
+        r"""Gets the job_type of this ShowJobExeListNewRequest.
 
         作业类型。 - MapReduce - SparkPython - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
 
@@ -225,7 +225,7 @@ class ShowJobExeListNewRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowJobExeListNewRequest.
+        r"""Sets the job_type of this ShowJobExeListNewRequest.
 
         作业类型。 - MapReduce - SparkPython - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
 
@@ -236,7 +236,7 @@ class ShowJobExeListNewRequest:
 
     @property
     def job_state(self):
-        """Gets the job_state of this ShowJobExeListNewRequest.
+        r"""Gets the job_state of this ShowJobExeListNewRequest.
 
         作业运行状态。 - FAILED：失败 - KILLED：已终止 - NEW：已创建 - NEW_SAVING：已创建保存中 - SUBMITTED：已提交 - ACCEPTED：已接受 - RUNNING：运行中 - FINISHED：已完成
 
@@ -247,7 +247,7 @@ class ShowJobExeListNewRequest:
 
     @job_state.setter
     def job_state(self, job_state):
-        """Sets the job_state of this ShowJobExeListNewRequest.
+        r"""Sets the job_state of this ShowJobExeListNewRequest.
 
         作业运行状态。 - FAILED：失败 - KILLED：已终止 - NEW：已创建 - NEW_SAVING：已创建保存中 - SUBMITTED：已提交 - ACCEPTED：已接受 - RUNNING：运行中 - FINISHED：已完成
 
@@ -258,7 +258,7 @@ class ShowJobExeListNewRequest:
 
     @property
     def job_result(self):
-        """Gets the job_result of this ShowJobExeListNewRequest.
+        r"""Gets the job_result of this ShowJobExeListNewRequest.
 
         作业运行结果。 - FAILED：执行失败的作业。 - KILLED：执行中被手动终止的作业。 - UNDEFINED：正在执行的作业。 - SUCCEEDED：执行成功的作业。
 
@@ -269,7 +269,7 @@ class ShowJobExeListNewRequest:
 
     @job_result.setter
     def job_result(self, job_result):
-        """Sets the job_result of this ShowJobExeListNewRequest.
+        r"""Sets the job_result of this ShowJobExeListNewRequest.
 
         作业运行结果。 - FAILED：执行失败的作业。 - KILLED：执行中被手动终止的作业。 - UNDEFINED：正在执行的作业。 - SUCCEEDED：执行成功的作业。
 
@@ -280,7 +280,7 @@ class ShowJobExeListNewRequest:
 
     @property
     def queue(self):
-        """Gets the queue of this ShowJobExeListNewRequest.
+        r"""Gets the queue of this ShowJobExeListNewRequest.
 
         作业的资源对列类型名称，作业的资源对列类型名称，只能由数字、字母和特殊字符(-_)组成, 并且长度为1～64字符。
 
@@ -291,7 +291,7 @@ class ShowJobExeListNewRequest:
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this ShowJobExeListNewRequest.
+        r"""Sets the queue of this ShowJobExeListNewRequest.
 
         作业的资源对列类型名称，作业的资源对列类型名称，只能由数字、字母和特殊字符(-_)组成, 并且长度为1～64字符。
 
@@ -302,7 +302,7 @@ class ShowJobExeListNewRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowJobExeListNewRequest.
+        r"""Gets the limit of this ShowJobExeListNewRequest.
 
         返回结果中每页显示条数。缺省值：10
 
@@ -313,7 +313,7 @@ class ShowJobExeListNewRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowJobExeListNewRequest.
+        r"""Sets the limit of this ShowJobExeListNewRequest.
 
         返回结果中每页显示条数。缺省值：10
 
@@ -324,7 +324,7 @@ class ShowJobExeListNewRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowJobExeListNewRequest.
+        r"""Gets the offset of this ShowJobExeListNewRequest.
 
         表示作业列表从该偏移量开始查询。缺省值：0
 
@@ -335,7 +335,7 @@ class ShowJobExeListNewRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowJobExeListNewRequest.
+        r"""Sets the offset of this ShowJobExeListNewRequest.
 
         表示作业列表从该偏移量开始查询。缺省值：0
 
@@ -346,7 +346,7 @@ class ShowJobExeListNewRequest:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this ShowJobExeListNewRequest.
+        r"""Gets the sort_by of this ShowJobExeListNewRequest.
 
         返回结果的排序方式，默认值为desc。 - asc：按升序排列 - desc：按降序排列
 
@@ -357,7 +357,7 @@ class ShowJobExeListNewRequest:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this ShowJobExeListNewRequest.
+        r"""Sets the sort_by of this ShowJobExeListNewRequest.
 
         返回结果的排序方式，默认值为desc。 - asc：按升序排列 - desc：按降序排列
 
@@ -368,7 +368,7 @@ class ShowJobExeListNewRequest:
 
     @property
     def submitted_time_begin(self):
-        """Gets the submitted_time_begin of this ShowJobExeListNewRequest.
+        r"""Gets the submitted_time_begin of this ShowJobExeListNewRequest.
 
         查询该时间之后提交的作业，UTC的毫秒时间戳。例如：1562032041362。
 
@@ -379,7 +379,7 @@ class ShowJobExeListNewRequest:
 
     @submitted_time_begin.setter
     def submitted_time_begin(self, submitted_time_begin):
-        """Sets the submitted_time_begin of this ShowJobExeListNewRequest.
+        r"""Sets the submitted_time_begin of this ShowJobExeListNewRequest.
 
         查询该时间之后提交的作业，UTC的毫秒时间戳。例如：1562032041362。
 
@@ -390,7 +390,7 @@ class ShowJobExeListNewRequest:
 
     @property
     def submitted_time_end(self):
-        """Gets the submitted_time_end of this ShowJobExeListNewRequest.
+        r"""Gets the submitted_time_end of this ShowJobExeListNewRequest.
 
         查询该时间之前提交的作业UTC的毫秒时间戳。例如：1562032041362。
 
@@ -401,7 +401,7 @@ class ShowJobExeListNewRequest:
 
     @submitted_time_end.setter
     def submitted_time_end(self, submitted_time_end):
-        """Sets the submitted_time_end of this ShowJobExeListNewRequest.
+        r"""Sets the submitted_time_end of this ShowJobExeListNewRequest.
 
         查询该时间之前提交的作业UTC的毫秒时间戳。例如：1562032041362。
 

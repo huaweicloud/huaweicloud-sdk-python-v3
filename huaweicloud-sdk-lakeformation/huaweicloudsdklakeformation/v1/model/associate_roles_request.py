@@ -29,7 +29,7 @@ class AssociateRolesRequest:
     }
 
     def __init__(self, instance_id=None, user_name=None, body=None):
-        """AssociateRolesRequest
+        r"""AssociateRolesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AssociateRolesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AssociateRolesRequest.
+        r"""Gets the instance_id of this AssociateRolesRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -66,7 +66,7 @@ class AssociateRolesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AssociateRolesRequest.
+        r"""Sets the instance_id of this AssociateRolesRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -77,7 +77,7 @@ class AssociateRolesRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this AssociateRolesRequest.
+        r"""Gets the user_name of this AssociateRolesRequest.
 
         用户名。只能包含字母、数字、下划线和中划线，且长度为1~256个字符。
 
@@ -88,7 +88,7 @@ class AssociateRolesRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this AssociateRolesRequest.
+        r"""Sets the user_name of this AssociateRolesRequest.
 
         用户名。只能包含字母、数字、下划线和中划线，且长度为1~256个字符。
 
@@ -99,7 +99,7 @@ class AssociateRolesRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateRolesRequest.
+        r"""Gets the body of this AssociateRolesRequest.
 
         :return: The body of this AssociateRolesRequest.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.RoleInfoInput`]
@@ -108,7 +108,7 @@ class AssociateRolesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateRolesRequest.
+        r"""Sets the body of this AssociateRolesRequest.
 
         :param body: The body of this AssociateRolesRequest.
         :type body: list[:class:`huaweicloudsdklakeformation.v1.RoleInfoInput`]

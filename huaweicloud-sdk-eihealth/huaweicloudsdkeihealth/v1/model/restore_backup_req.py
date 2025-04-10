@@ -29,7 +29,7 @@ class RestoreBackupReq:
     }
 
     def __init__(self, overwrite=None, target_folder=None, target_project_id=None):
-        """RestoreBackupReq
+        r"""RestoreBackupReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RestoreBackupReq:
 
     @property
     def overwrite(self):
-        """Gets the overwrite of this RestoreBackupReq.
+        r"""Gets the overwrite of this RestoreBackupReq.
 
         执行策略（true：全部覆盖，false：全部跳过，默认为true）
 
@@ -67,7 +67,7 @@ class RestoreBackupReq:
 
     @overwrite.setter
     def overwrite(self, overwrite):
-        """Sets the overwrite of this RestoreBackupReq.
+        r"""Sets the overwrite of this RestoreBackupReq.
 
         执行策略（true：全部覆盖，false：全部跳过，默认为true）
 
@@ -78,7 +78,7 @@ class RestoreBackupReq:
 
     @property
     def target_folder(self):
-        """Gets the target_folder of this RestoreBackupReq.
+        r"""Gets the target_folder of this RestoreBackupReq.
 
         目标文件夹
 
@@ -89,7 +89,7 @@ class RestoreBackupReq:
 
     @target_folder.setter
     def target_folder(self, target_folder):
-        """Sets the target_folder of this RestoreBackupReq.
+        r"""Sets the target_folder of this RestoreBackupReq.
 
         目标文件夹
 
@@ -100,7 +100,7 @@ class RestoreBackupReq:
 
     @property
     def target_project_id(self):
-        """Gets the target_project_id of this RestoreBackupReq.
+        r"""Gets the target_project_id of this RestoreBackupReq.
 
         目标项目ID
 
@@ -111,7 +111,7 @@ class RestoreBackupReq:
 
     @target_project_id.setter
     def target_project_id(self, target_project_id):
-        """Sets the target_project_id of this RestoreBackupReq.
+        r"""Sets the target_project_id of this RestoreBackupReq.
 
         目标项目ID
 

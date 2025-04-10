@@ -31,7 +31,7 @@ class HealthmonitorsInStatusResp:
     }
 
     def __init__(self, id=None, name=None, type=None, provisioning_status=None):
-        """HealthmonitorsInStatusResp
+        r"""HealthmonitorsInStatusResp
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class HealthmonitorsInStatusResp:
 
     @property
     def id(self):
-        """Gets the id of this HealthmonitorsInStatusResp.
+        r"""Gets the id of this HealthmonitorsInStatusResp.
 
         健康检查ID
 
@@ -71,7 +71,7 @@ class HealthmonitorsInStatusResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HealthmonitorsInStatusResp.
+        r"""Sets the id of this HealthmonitorsInStatusResp.
 
         健康检查ID
 
@@ -82,7 +82,7 @@ class HealthmonitorsInStatusResp:
 
     @property
     def name(self):
-        """Gets the name of this HealthmonitorsInStatusResp.
+        r"""Gets the name of this HealthmonitorsInStatusResp.
 
         健康检查名称
 
@@ -93,7 +93,7 @@ class HealthmonitorsInStatusResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HealthmonitorsInStatusResp.
+        r"""Sets the name of this HealthmonitorsInStatusResp.
 
         健康检查名称
 
@@ -104,7 +104,7 @@ class HealthmonitorsInStatusResp:
 
     @property
     def type(self):
-        """Gets the type of this HealthmonitorsInStatusResp.
+        r"""Gets the type of this HealthmonitorsInStatusResp.
 
         健康检查类型
 
@@ -115,7 +115,7 @@ class HealthmonitorsInStatusResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HealthmonitorsInStatusResp.
+        r"""Sets the type of this HealthmonitorsInStatusResp.
 
         健康检查类型
 
@@ -126,7 +126,7 @@ class HealthmonitorsInStatusResp:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this HealthmonitorsInStatusResp.
+        r"""Gets the provisioning_status of this HealthmonitorsInStatusResp.
 
         健康检查的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
@@ -137,7 +137,7 @@ class HealthmonitorsInStatusResp:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this HealthmonitorsInStatusResp.
+        r"""Sets the provisioning_status of this HealthmonitorsInStatusResp.
 
         健康检查的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 

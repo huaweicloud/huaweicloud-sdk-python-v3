@@ -25,7 +25,7 @@ class ShowUserDisclaimerRequest:
     }
 
     def __init__(self, fields=None):
-        """ShowUserDisclaimerRequest
+        r"""ShowUserDisclaimerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowUserDisclaimerRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ShowUserDisclaimerRequest.
+        r"""Gets the fields of this ShowUserDisclaimerRequest.
 
         :return: The fields of this ShowUserDisclaimerRequest.
         :rtype: list[str]
@@ -52,7 +52,7 @@ class ShowUserDisclaimerRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ShowUserDisclaimerRequest.
+        r"""Sets the fields of this ShowUserDisclaimerRequest.
 
         :param fields: The fields of this ShowUserDisclaimerRequest.
         :type fields: list[str]

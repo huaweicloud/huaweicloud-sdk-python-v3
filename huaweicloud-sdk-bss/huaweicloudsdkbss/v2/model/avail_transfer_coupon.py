@@ -35,7 +35,7 @@ class AvailTransferCoupon:
     }
 
     def __init__(self, coupon_id=None, plan_name=None, balance=None, effective_time=None, expire_time=None, use_limits=None):
-        """AvailTransferCoupon
+        r"""AvailTransferCoupon
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AvailTransferCoupon:
 
     @property
     def coupon_id(self):
-        """Gets the coupon_id of this AvailTransferCoupon.
+        r"""Gets the coupon_id of this AvailTransferCoupon.
 
         优惠券ID。
 
@@ -89,7 +89,7 @@ class AvailTransferCoupon:
 
     @coupon_id.setter
     def coupon_id(self, coupon_id):
-        """Sets the coupon_id of this AvailTransferCoupon.
+        r"""Sets the coupon_id of this AvailTransferCoupon.
 
         优惠券ID。
 
@@ -100,7 +100,7 @@ class AvailTransferCoupon:
 
     @property
     def plan_name(self):
-        """Gets the plan_name of this AvailTransferCoupon.
+        r"""Gets the plan_name of this AvailTransferCoupon.
 
         促销计划名称。
 
@@ -111,7 +111,7 @@ class AvailTransferCoupon:
 
     @plan_name.setter
     def plan_name(self, plan_name):
-        """Sets the plan_name of this AvailTransferCoupon.
+        r"""Sets the plan_name of this AvailTransferCoupon.
 
         促销计划名称。
 
@@ -122,7 +122,7 @@ class AvailTransferCoupon:
 
     @property
     def balance(self):
-        """Gets the balance of this AvailTransferCoupon.
+        r"""Gets the balance of this AvailTransferCoupon.
 
         优惠券余额。单位为元
 
@@ -133,7 +133,7 @@ class AvailTransferCoupon:
 
     @balance.setter
     def balance(self, balance):
-        """Sets the balance of this AvailTransferCoupon.
+        r"""Sets the balance of this AvailTransferCoupon.
 
         优惠券余额。单位为元
 
@@ -144,7 +144,7 @@ class AvailTransferCoupon:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this AvailTransferCoupon.
+        r"""Gets the effective_time of this AvailTransferCoupon.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -155,7 +155,7 @@ class AvailTransferCoupon:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this AvailTransferCoupon.
+        r"""Sets the effective_time of this AvailTransferCoupon.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -166,7 +166,7 @@ class AvailTransferCoupon:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this AvailTransferCoupon.
+        r"""Gets the expire_time of this AvailTransferCoupon.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -177,7 +177,7 @@ class AvailTransferCoupon:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this AvailTransferCoupon.
+        r"""Sets the expire_time of this AvailTransferCoupon.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
@@ -188,7 +188,7 @@ class AvailTransferCoupon:
 
     @property
     def use_limits(self):
-        """Gets the use_limits of this AvailTransferCoupon.
+        r"""Gets the use_limits of this AvailTransferCoupon.
 
         优惠券限制。 具体请参见表3。
 
@@ -199,7 +199,7 @@ class AvailTransferCoupon:
 
     @use_limits.setter
     def use_limits(self, use_limits):
-        """Sets the use_limits of this AvailTransferCoupon.
+        r"""Sets the use_limits of this AvailTransferCoupon.
 
         优惠券限制。 具体请参见表3。
 

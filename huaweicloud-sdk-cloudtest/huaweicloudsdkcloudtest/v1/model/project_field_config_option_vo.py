@@ -43,7 +43,7 @@ class ProjectFieldConfigOptionVo:
     }
 
     def __init__(self, uri=None, name=None, code=None, updator=None, description=None, flag=None, sort_numb=None, creator=None, create_time_stamp=None, update_time_stamp=None):
-        """ProjectFieldConfigOptionVo
+        r"""ProjectFieldConfigOptionVo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ProjectFieldConfigOptionVo:
 
     @property
     def uri(self):
-        """Gets the uri of this ProjectFieldConfigOptionVo.
+        r"""Gets the uri of this ProjectFieldConfigOptionVo.
 
         字段选项URI标识.新增不传，修改、删除使用必传
 
@@ -117,7 +117,7 @@ class ProjectFieldConfigOptionVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this ProjectFieldConfigOptionVo.
+        r"""Sets the uri of this ProjectFieldConfigOptionVo.
 
         字段选项URI标识.新增不传，修改、删除使用必传
 
@@ -128,7 +128,7 @@ class ProjectFieldConfigOptionVo:
 
     @property
     def name(self):
-        """Gets the name of this ProjectFieldConfigOptionVo.
+        r"""Gets the name of this ProjectFieldConfigOptionVo.
 
         可选项名称
 
@@ -139,7 +139,7 @@ class ProjectFieldConfigOptionVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProjectFieldConfigOptionVo.
+        r"""Sets the name of this ProjectFieldConfigOptionVo.
 
         可选项名称
 
@@ -150,7 +150,7 @@ class ProjectFieldConfigOptionVo:
 
     @property
     def code(self):
-        """Gets the code of this ProjectFieldConfigOptionVo.
+        r"""Gets the code of this ProjectFieldConfigOptionVo.
 
         可选项code值
 
@@ -161,7 +161,7 @@ class ProjectFieldConfigOptionVo:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ProjectFieldConfigOptionVo.
+        r"""Sets the code of this ProjectFieldConfigOptionVo.
 
         可选项code值
 
@@ -172,7 +172,7 @@ class ProjectFieldConfigOptionVo:
 
     @property
     def updator(self):
-        """Gets the updator of this ProjectFieldConfigOptionVo.
+        r"""Gets the updator of this ProjectFieldConfigOptionVo.
 
         :return: The updator of this ProjectFieldConfigOptionVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -181,7 +181,7 @@ class ProjectFieldConfigOptionVo:
 
     @updator.setter
     def updator(self, updator):
-        """Sets the updator of this ProjectFieldConfigOptionVo.
+        r"""Sets the updator of this ProjectFieldConfigOptionVo.
 
         :param updator: The updator of this ProjectFieldConfigOptionVo.
         :type updator: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -190,7 +190,7 @@ class ProjectFieldConfigOptionVo:
 
     @property
     def description(self):
-        """Gets the description of this ProjectFieldConfigOptionVo.
+        r"""Gets the description of this ProjectFieldConfigOptionVo.
 
         描述
 
@@ -201,7 +201,7 @@ class ProjectFieldConfigOptionVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProjectFieldConfigOptionVo.
+        r"""Sets the description of this ProjectFieldConfigOptionVo.
 
         描述
 
@@ -212,7 +212,7 @@ class ProjectFieldConfigOptionVo:
 
     @property
     def flag(self):
-        """Gets the flag of this ProjectFieldConfigOptionVo.
+        r"""Gets the flag of this ProjectFieldConfigOptionVo.
 
         修改标识，0：不可修改 1：可修改，用于结果和状态的选项值
 
@@ -223,7 +223,7 @@ class ProjectFieldConfigOptionVo:
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this ProjectFieldConfigOptionVo.
+        r"""Sets the flag of this ProjectFieldConfigOptionVo.
 
         修改标识，0：不可修改 1：可修改，用于结果和状态的选项值
 
@@ -234,7 +234,7 @@ class ProjectFieldConfigOptionVo:
 
     @property
     def sort_numb(self):
-        """Gets the sort_numb of this ProjectFieldConfigOptionVo.
+        r"""Gets the sort_numb of this ProjectFieldConfigOptionVo.
 
         顺序数值
 
@@ -245,7 +245,7 @@ class ProjectFieldConfigOptionVo:
 
     @sort_numb.setter
     def sort_numb(self, sort_numb):
-        """Sets the sort_numb of this ProjectFieldConfigOptionVo.
+        r"""Sets the sort_numb of this ProjectFieldConfigOptionVo.
 
         顺序数值
 
@@ -256,7 +256,7 @@ class ProjectFieldConfigOptionVo:
 
     @property
     def creator(self):
-        """Gets the creator of this ProjectFieldConfigOptionVo.
+        r"""Gets the creator of this ProjectFieldConfigOptionVo.
 
         :return: The creator of this ProjectFieldConfigOptionVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -265,7 +265,7 @@ class ProjectFieldConfigOptionVo:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ProjectFieldConfigOptionVo.
+        r"""Sets the creator of this ProjectFieldConfigOptionVo.
 
         :param creator: The creator of this ProjectFieldConfigOptionVo.
         :type creator: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -274,7 +274,7 @@ class ProjectFieldConfigOptionVo:
 
     @property
     def create_time_stamp(self):
-        """Gets the create_time_stamp of this ProjectFieldConfigOptionVo.
+        r"""Gets the create_time_stamp of this ProjectFieldConfigOptionVo.
 
         创建时间时间戳
 
@@ -285,7 +285,7 @@ class ProjectFieldConfigOptionVo:
 
     @create_time_stamp.setter
     def create_time_stamp(self, create_time_stamp):
-        """Sets the create_time_stamp of this ProjectFieldConfigOptionVo.
+        r"""Sets the create_time_stamp of this ProjectFieldConfigOptionVo.
 
         创建时间时间戳
 
@@ -296,7 +296,7 @@ class ProjectFieldConfigOptionVo:
 
     @property
     def update_time_stamp(self):
-        """Gets the update_time_stamp of this ProjectFieldConfigOptionVo.
+        r"""Gets the update_time_stamp of this ProjectFieldConfigOptionVo.
 
         更新时间时间戳
 
@@ -307,7 +307,7 @@ class ProjectFieldConfigOptionVo:
 
     @update_time_stamp.setter
     def update_time_stamp(self, update_time_stamp):
-        """Sets the update_time_stamp of this ProjectFieldConfigOptionVo.
+        r"""Sets the update_time_stamp of this ProjectFieldConfigOptionVo.
 
         更新时间时间戳
 

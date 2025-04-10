@@ -35,7 +35,7 @@ class ShowRestoreTablesRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, restore_time=None, last_table_info=None, database_name=None, table_name=None):
-        """ShowRestoreTablesRequest
+        r"""ShowRestoreTablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ShowRestoreTablesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowRestoreTablesRequest.
+        r"""Gets the x_language of this ShowRestoreTablesRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -86,7 +86,7 @@ class ShowRestoreTablesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowRestoreTablesRequest.
+        r"""Sets the x_language of this ShowRestoreTablesRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -97,7 +97,7 @@ class ShowRestoreTablesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowRestoreTablesRequest.
+        r"""Gets the instance_id of this ShowRestoreTablesRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -108,7 +108,7 @@ class ShowRestoreTablesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowRestoreTablesRequest.
+        r"""Sets the instance_id of this ShowRestoreTablesRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -119,7 +119,7 @@ class ShowRestoreTablesRequest:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this ShowRestoreTablesRequest.
+        r"""Gets the restore_time of this ShowRestoreTablesRequest.
 
         备份时间点，时间戳格式。  通过[查询可恢复时间段](https://support.huaweicloud.com/api-taurusdb/ShowBackupRestoreTime.html)获取。
 
@@ -130,7 +130,7 @@ class ShowRestoreTablesRequest:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this ShowRestoreTablesRequest.
+        r"""Sets the restore_time of this ShowRestoreTablesRequest.
 
         备份时间点，时间戳格式。  通过[查询可恢复时间段](https://support.huaweicloud.com/api-taurusdb/ShowBackupRestoreTime.html)获取。
 
@@ -141,7 +141,7 @@ class ShowRestoreTablesRequest:
 
     @property
     def last_table_info(self):
-        """Gets the last_table_info of this ShowRestoreTablesRequest.
+        r"""Gets the last_table_info of this ShowRestoreTablesRequest.
 
         是否是最新库表。 - true：是最新库表。 - false：是恢复时间点库表。
 
@@ -152,7 +152,7 @@ class ShowRestoreTablesRequest:
 
     @last_table_info.setter
     def last_table_info(self, last_table_info):
-        """Sets the last_table_info of this ShowRestoreTablesRequest.
+        r"""Sets the last_table_info of this ShowRestoreTablesRequest.
 
         是否是最新库表。 - true：是最新库表。 - false：是恢复时间点库表。
 
@@ -163,7 +163,7 @@ class ShowRestoreTablesRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ShowRestoreTablesRequest.
+        r"""Gets the database_name of this ShowRestoreTablesRequest.
 
         数据库名称，模糊匹配。
 
@@ -174,7 +174,7 @@ class ShowRestoreTablesRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ShowRestoreTablesRequest.
+        r"""Sets the database_name of this ShowRestoreTablesRequest.
 
         数据库名称，模糊匹配。
 
@@ -185,7 +185,7 @@ class ShowRestoreTablesRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ShowRestoreTablesRequest.
+        r"""Gets the table_name of this ShowRestoreTablesRequest.
 
         表名称，模糊匹配。
 
@@ -196,7 +196,7 @@ class ShowRestoreTablesRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ShowRestoreTablesRequest.
+        r"""Sets the table_name of this ShowRestoreTablesRequest.
 
         表名称，模糊匹配。
 

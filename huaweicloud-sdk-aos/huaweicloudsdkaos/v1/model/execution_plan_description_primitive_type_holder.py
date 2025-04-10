@@ -25,7 +25,7 @@ class ExecutionPlanDescriptionPrimitiveTypeHolder:
     }
 
     def __init__(self, description=None):
-        """ExecutionPlanDescriptionPrimitiveTypeHolder
+        r"""ExecutionPlanDescriptionPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExecutionPlanDescriptionPrimitiveTypeHolder:
 
     @property
     def description(self):
-        """Gets the description of this ExecutionPlanDescriptionPrimitiveTypeHolder.
+        r"""Gets the description of this ExecutionPlanDescriptionPrimitiveTypeHolder.
 
         执行计划的描述。可用于客户识别自己的执行计划。
 
@@ -54,7 +54,7 @@ class ExecutionPlanDescriptionPrimitiveTypeHolder:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ExecutionPlanDescriptionPrimitiveTypeHolder.
+        r"""Sets the description of this ExecutionPlanDescriptionPrimitiveTypeHolder.
 
         执行计划的描述。可用于客户识别自己的执行计划。
 

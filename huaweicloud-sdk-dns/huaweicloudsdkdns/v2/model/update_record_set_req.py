@@ -33,7 +33,7 @@ class UpdateRecordSetReq:
     }
 
     def __init__(self, name=None, description=None, type=None, ttl=None, records=None):
-        """UpdateRecordSetReq
+        r"""UpdateRecordSetReq
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateRecordSetReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateRecordSetReq.
+        r"""Gets the name of this UpdateRecordSetReq.
 
         域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
 
@@ -82,7 +82,7 @@ class UpdateRecordSetReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateRecordSetReq.
+        r"""Sets the name of this UpdateRecordSetReq.
 
         域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
 
@@ -93,7 +93,7 @@ class UpdateRecordSetReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateRecordSetReq.
+        r"""Gets the description of this UpdateRecordSetReq.
 
         可选配置，对域名的描述。
 
@@ -104,7 +104,7 @@ class UpdateRecordSetReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateRecordSetReq.
+        r"""Sets the description of this UpdateRecordSetReq.
 
         可选配置，对域名的描述。
 
@@ -115,7 +115,7 @@ class UpdateRecordSetReq:
 
     @property
     def type(self):
-        """Gets the type of this UpdateRecordSetReq.
+        r"""Gets the type of this UpdateRecordSetReq.
 
         Record Set的类型。
 
@@ -126,7 +126,7 @@ class UpdateRecordSetReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateRecordSetReq.
+        r"""Sets the type of this UpdateRecordSetReq.
 
         Record Set的类型。
 
@@ -137,7 +137,7 @@ class UpdateRecordSetReq:
 
     @property
     def ttl(self):
-        """Gets the ttl of this UpdateRecordSetReq.
+        r"""Gets the ttl of this UpdateRecordSetReq.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -148,7 +148,7 @@ class UpdateRecordSetReq:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this UpdateRecordSetReq.
+        r"""Sets the ttl of this UpdateRecordSetReq.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -159,7 +159,7 @@ class UpdateRecordSetReq:
 
     @property
     def records(self):
-        """Gets the records of this UpdateRecordSetReq.
+        r"""Gets the records of this UpdateRecordSetReq.
 
         解析记录的值。不同类型解析记录对应的值的规则不同。
 
@@ -170,7 +170,7 @@ class UpdateRecordSetReq:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this UpdateRecordSetReq.
+        r"""Sets the records of this UpdateRecordSetReq.
 
         解析记录的值。不同类型解析记录对应的值的规则不同。
 

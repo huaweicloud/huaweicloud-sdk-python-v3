@@ -31,7 +31,7 @@ class PostImagesReq:
     }
 
     def __init__(self, type=None, name=None, file=None, resolution_type=None):
-        """PostImagesReq
+        r"""PostImagesReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class PostImagesReq:
 
     @property
     def type(self):
-        """Gets the type of this PostImagesReq.
+        r"""Gets the type of this PostImagesReq.
 
         图片类型： 0：背景 最大 1920*1080 2：图标  最大1920*1080 图片格式：jpg，png
 
@@ -72,7 +72,7 @@ class PostImagesReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PostImagesReq.
+        r"""Sets the type of this PostImagesReq.
 
         图片类型： 0：背景 最大 1920*1080 2：图标  最大1920*1080 图片格式：jpg，png
 
@@ -83,7 +83,7 @@ class PostImagesReq:
 
     @property
     def name(self):
-        """Gets the name of this PostImagesReq.
+        r"""Gets the name of this PostImagesReq.
 
         :return: The name of this PostImagesReq.
         :rtype: str
@@ -92,7 +92,7 @@ class PostImagesReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PostImagesReq.
+        r"""Sets the name of this PostImagesReq.
 
         :param name: The name of this PostImagesReq.
         :type name: str
@@ -101,7 +101,7 @@ class PostImagesReq:
 
     @property
     def file(self):
-        """Gets the file of this PostImagesReq.
+        r"""Gets the file of this PostImagesReq.
 
         图片文件
 
@@ -112,7 +112,7 @@ class PostImagesReq:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this PostImagesReq.
+        r"""Sets the file of this PostImagesReq.
 
         图片文件
 
@@ -123,7 +123,7 @@ class PostImagesReq:
 
     @property
     def resolution_type(self):
-        """Gets the resolution_type of this PostImagesReq.
+        r"""Gets the resolution_type of this PostImagesReq.
 
         横竖屏模式 0：横屏（默认） 1：竖屏
 
@@ -134,7 +134,7 @@ class PostImagesReq:
 
     @resolution_type.setter
     def resolution_type(self, resolution_type):
-        """Sets the resolution_type of this PostImagesReq.
+        r"""Sets the resolution_type of this PostImagesReq.
 
         横竖屏模式 0：横屏（默认） 1：竖屏
 

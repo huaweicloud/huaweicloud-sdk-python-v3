@@ -26,7 +26,7 @@ class UninstallResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UninstallResponse
+        r"""UninstallResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UninstallResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UninstallResponse.
+        r"""Gets the body of this UninstallResponse.
 
         :return: The body of this UninstallResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UninstallResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UninstallResponse.
+        r"""Sets the body of this UninstallResponse.
 
         :param body: The body of this UninstallResponse.
         :type body: str

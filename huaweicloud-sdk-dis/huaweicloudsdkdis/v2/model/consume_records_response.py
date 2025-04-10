@@ -28,7 +28,7 @@ class ConsumeRecordsResponse(SdkResponse):
     }
 
     def __init__(self, records=None, next_partition_cursor=None):
-        """ConsumeRecordsResponse
+        r"""ConsumeRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ConsumeRecordsResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ConsumeRecordsResponse.
+        r"""Gets the records of this ConsumeRecordsResponse.
 
         下载的记录列表。
 
@@ -62,7 +62,7 @@ class ConsumeRecordsResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ConsumeRecordsResponse.
+        r"""Sets the records of this ConsumeRecordsResponse.
 
         下载的记录列表。
 
@@ -73,7 +73,7 @@ class ConsumeRecordsResponse(SdkResponse):
 
     @property
     def next_partition_cursor(self):
-        """Gets the next_partition_cursor of this ConsumeRecordsResponse.
+        r"""Gets the next_partition_cursor of this ConsumeRecordsResponse.
 
         下一个迭代器。  说明：  数据游标有效期为5分钟。
 
@@ -84,7 +84,7 @@ class ConsumeRecordsResponse(SdkResponse):
 
     @next_partition_cursor.setter
     def next_partition_cursor(self, next_partition_cursor):
-        """Sets the next_partition_cursor of this ConsumeRecordsResponse.
+        r"""Sets the next_partition_cursor of this ConsumeRecordsResponse.
 
         下一个迭代器。  说明：  数据游标有效期为5分钟。
 

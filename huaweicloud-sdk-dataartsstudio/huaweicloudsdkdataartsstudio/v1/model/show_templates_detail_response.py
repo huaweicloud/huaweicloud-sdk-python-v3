@@ -44,7 +44,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, category_id=None, dimension=None, type=None, system_template=None, sql_info=None, result_description=None, create_time=None, creator=None):
-        """ShowTemplatesDetailResponse
+        r"""ShowTemplatesDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowTemplatesDetailResponse.
+        r"""Gets the id of this ShowTemplatesDetailResponse.
 
         id
 
@@ -118,7 +118,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowTemplatesDetailResponse.
+        r"""Sets the id of this ShowTemplatesDetailResponse.
 
         id
 
@@ -129,7 +129,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowTemplatesDetailResponse.
+        r"""Gets the name of this ShowTemplatesDetailResponse.
 
         name
 
@@ -140,7 +140,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowTemplatesDetailResponse.
+        r"""Sets the name of this ShowTemplatesDetailResponse.
 
         name
 
@@ -151,7 +151,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @property
     def category_id(self):
-        """Gets the category_id of this ShowTemplatesDetailResponse.
+        r"""Gets the category_id of this ShowTemplatesDetailResponse.
 
         目录ID
 
@@ -162,7 +162,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this ShowTemplatesDetailResponse.
+        r"""Sets the category_id of this ShowTemplatesDetailResponse.
 
         目录ID
 
@@ -173,7 +173,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @property
     def dimension(self):
-        """Gets the dimension of this ShowTemplatesDetailResponse.
+        r"""Gets the dimension of this ShowTemplatesDetailResponse.
 
         Completeness:完整性,Uniqueness:唯一性,Timeliness:及时性,Validity:有效性,Accuracy:准确性,Consistency:一致性
 
@@ -184,7 +184,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @dimension.setter
     def dimension(self, dimension):
-        """Sets the dimension of this ShowTemplatesDetailResponse.
+        r"""Sets the dimension of this ShowTemplatesDetailResponse.
 
         Completeness:完整性,Uniqueness:唯一性,Timeliness:及时性,Validity:有效性,Accuracy:准确性,Consistency:一致性
 
@@ -195,7 +195,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowTemplatesDetailResponse.
+        r"""Gets the type of this ShowTemplatesDetailResponse.
 
         规则类型，Field:字段级规则,Table:表级规则,Database:库级规则,Cross-field:跨字段级规则,Customize:自定义规则
 
@@ -206,7 +206,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowTemplatesDetailResponse.
+        r"""Sets the type of this ShowTemplatesDetailResponse.
 
         规则类型，Field:字段级规则,Table:表级规则,Database:库级规则,Cross-field:跨字段级规则,Customize:自定义规则
 
@@ -217,7 +217,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @property
     def system_template(self):
-        """Gets the system_template of this ShowTemplatesDetailResponse.
+        r"""Gets the system_template of this ShowTemplatesDetailResponse.
 
         是否为系统模板
 
@@ -228,7 +228,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @system_template.setter
     def system_template(self, system_template):
-        """Sets the system_template of this ShowTemplatesDetailResponse.
+        r"""Sets the system_template of this ShowTemplatesDetailResponse.
 
         是否为系统模板
 
@@ -239,7 +239,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @property
     def sql_info(self):
-        """Gets the sql_info of this ShowTemplatesDetailResponse.
+        r"""Gets the sql_info of this ShowTemplatesDetailResponse.
 
         定义关系
 
@@ -250,7 +250,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @sql_info.setter
     def sql_info(self, sql_info):
-        """Sets the sql_info of this ShowTemplatesDetailResponse.
+        r"""Sets the sql_info of this ShowTemplatesDetailResponse.
 
         定义关系
 
@@ -261,7 +261,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @property
     def result_description(self):
-        """Gets the result_description of this ShowTemplatesDetailResponse.
+        r"""Gets the result_description of this ShowTemplatesDetailResponse.
 
         结果说明
 
@@ -272,7 +272,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @result_description.setter
     def result_description(self, result_description):
-        """Sets the result_description of this ShowTemplatesDetailResponse.
+        r"""Sets the result_description of this ShowTemplatesDetailResponse.
 
         结果说明
 
@@ -283,7 +283,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowTemplatesDetailResponse.
+        r"""Gets the create_time of this ShowTemplatesDetailResponse.
 
         创建时间,13位时间戳(精确到毫秒)
 
@@ -294,7 +294,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowTemplatesDetailResponse.
+        r"""Sets the create_time of this ShowTemplatesDetailResponse.
 
         创建时间,13位时间戳(精确到毫秒)
 
@@ -305,7 +305,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowTemplatesDetailResponse.
+        r"""Gets the creator of this ShowTemplatesDetailResponse.
 
         创建者,System代表系统自带
 
@@ -316,7 +316,7 @@ class ShowTemplatesDetailResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowTemplatesDetailResponse.
+        r"""Sets the creator of this ShowTemplatesDetailResponse.
 
         创建者,System代表系统自带
 

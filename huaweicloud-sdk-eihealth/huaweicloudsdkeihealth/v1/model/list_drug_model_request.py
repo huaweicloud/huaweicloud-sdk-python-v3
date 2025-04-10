@@ -49,7 +49,7 @@ class ListDrugModelRequest:
     }
 
     def __init__(self, search_key=None, creator_list=None, type_list=None, status_list=None, sort_key=None, sort_dir=None, create_start_time=None, create_end_time=None, finish_start_time=None, finish_end_time=None, limit=None, offset=None, base_model_list=None):
-        """ListDrugModelRequest
+        r"""ListDrugModelRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListDrugModelRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this ListDrugModelRequest.
+        r"""Gets the search_key of this ListDrugModelRequest.
 
         模糊搜索值
 
@@ -138,7 +138,7 @@ class ListDrugModelRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this ListDrugModelRequest.
+        r"""Sets the search_key of this ListDrugModelRequest.
 
         模糊搜索值
 
@@ -149,7 +149,7 @@ class ListDrugModelRequest:
 
     @property
     def creator_list(self):
-        """Gets the creator_list of this ListDrugModelRequest.
+        r"""Gets the creator_list of this ListDrugModelRequest.
 
         创建者列表
 
@@ -160,7 +160,7 @@ class ListDrugModelRequest:
 
     @creator_list.setter
     def creator_list(self, creator_list):
-        """Sets the creator_list of this ListDrugModelRequest.
+        r"""Sets the creator_list of this ListDrugModelRequest.
 
         创建者列表
 
@@ -171,7 +171,7 @@ class ListDrugModelRequest:
 
     @property
     def type_list(self):
-        """Gets the type_list of this ListDrugModelRequest.
+        r"""Gets the type_list of this ListDrugModelRequest.
 
         模型类型列表
 
@@ -182,7 +182,7 @@ class ListDrugModelRequest:
 
     @type_list.setter
     def type_list(self, type_list):
-        """Sets the type_list of this ListDrugModelRequest.
+        r"""Sets the type_list of this ListDrugModelRequest.
 
         模型类型列表
 
@@ -193,7 +193,7 @@ class ListDrugModelRequest:
 
     @property
     def status_list(self):
-        """Gets the status_list of this ListDrugModelRequest.
+        r"""Gets the status_list of this ListDrugModelRequest.
 
         模型状态列表
 
@@ -204,7 +204,7 @@ class ListDrugModelRequest:
 
     @status_list.setter
     def status_list(self, status_list):
-        """Sets the status_list of this ListDrugModelRequest.
+        r"""Sets the status_list of this ListDrugModelRequest.
 
         模型状态列表
 
@@ -215,7 +215,7 @@ class ListDrugModelRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListDrugModelRequest.
+        r"""Gets the sort_key of this ListDrugModelRequest.
 
         排序规则 目前默认时间降序，支持根据create_time|finish_time|base_model_name
 
@@ -226,7 +226,7 @@ class ListDrugModelRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListDrugModelRequest.
+        r"""Sets the sort_key of this ListDrugModelRequest.
 
         排序规则 目前默认时间降序，支持根据create_time|finish_time|base_model_name
 
@@ -237,7 +237,7 @@ class ListDrugModelRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListDrugModelRequest.
+        r"""Gets the sort_dir of this ListDrugModelRequest.
 
         排序规则 目前默认时间降序
 
@@ -248,7 +248,7 @@ class ListDrugModelRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListDrugModelRequest.
+        r"""Sets the sort_dir of this ListDrugModelRequest.
 
         排序规则 目前默认时间降序
 
@@ -259,7 +259,7 @@ class ListDrugModelRequest:
 
     @property
     def create_start_time(self):
-        """Gets the create_start_time of this ListDrugModelRequest.
+        r"""Gets the create_start_time of this ListDrugModelRequest.
 
         最小创建时间
 
@@ -270,7 +270,7 @@ class ListDrugModelRequest:
 
     @create_start_time.setter
     def create_start_time(self, create_start_time):
-        """Sets the create_start_time of this ListDrugModelRequest.
+        r"""Sets the create_start_time of this ListDrugModelRequest.
 
         最小创建时间
 
@@ -281,7 +281,7 @@ class ListDrugModelRequest:
 
     @property
     def create_end_time(self):
-        """Gets the create_end_time of this ListDrugModelRequest.
+        r"""Gets the create_end_time of this ListDrugModelRequest.
 
         最大创建时间
 
@@ -292,7 +292,7 @@ class ListDrugModelRequest:
 
     @create_end_time.setter
     def create_end_time(self, create_end_time):
-        """Sets the create_end_time of this ListDrugModelRequest.
+        r"""Sets the create_end_time of this ListDrugModelRequest.
 
         最大创建时间
 
@@ -303,7 +303,7 @@ class ListDrugModelRequest:
 
     @property
     def finish_start_time(self):
-        """Gets the finish_start_time of this ListDrugModelRequest.
+        r"""Gets the finish_start_time of this ListDrugModelRequest.
 
         最小结束时间
 
@@ -314,7 +314,7 @@ class ListDrugModelRequest:
 
     @finish_start_time.setter
     def finish_start_time(self, finish_start_time):
-        """Sets the finish_start_time of this ListDrugModelRequest.
+        r"""Sets the finish_start_time of this ListDrugModelRequest.
 
         最小结束时间
 
@@ -325,7 +325,7 @@ class ListDrugModelRequest:
 
     @property
     def finish_end_time(self):
-        """Gets the finish_end_time of this ListDrugModelRequest.
+        r"""Gets the finish_end_time of this ListDrugModelRequest.
 
         最大结束时间
 
@@ -336,7 +336,7 @@ class ListDrugModelRequest:
 
     @finish_end_time.setter
     def finish_end_time(self, finish_end_time):
-        """Sets the finish_end_time of this ListDrugModelRequest.
+        r"""Sets the finish_end_time of this ListDrugModelRequest.
 
         最大结束时间
 
@@ -347,7 +347,7 @@ class ListDrugModelRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDrugModelRequest.
+        r"""Gets the limit of this ListDrugModelRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -358,7 +358,7 @@ class ListDrugModelRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDrugModelRequest.
+        r"""Sets the limit of this ListDrugModelRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -369,7 +369,7 @@ class ListDrugModelRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDrugModelRequest.
+        r"""Gets the offset of this ListDrugModelRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -380,7 +380,7 @@ class ListDrugModelRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDrugModelRequest.
+        r"""Sets the offset of this ListDrugModelRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -391,7 +391,7 @@ class ListDrugModelRequest:
 
     @property
     def base_model_list(self):
-        """Gets the base_model_list of this ListDrugModelRequest.
+        r"""Gets the base_model_list of this ListDrugModelRequest.
 
         基模型id列表
 
@@ -402,7 +402,7 @@ class ListDrugModelRequest:
 
     @base_model_list.setter
     def base_model_list(self, base_model_list):
-        """Sets the base_model_list of this ListDrugModelRequest.
+        r"""Sets the base_model_list of this ListDrugModelRequest.
 
         基模型id列表
 

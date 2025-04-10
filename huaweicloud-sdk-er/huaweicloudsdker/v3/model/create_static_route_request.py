@@ -30,7 +30,7 @@ class CreateStaticRouteRequest:
     }
 
     def __init__(self, x_client_token=None, route_table_id=None, body=None):
-        """CreateStaticRouteRequest
+        r"""CreateStaticRouteRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateStaticRouteRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateStaticRouteRequest.
+        r"""Gets the x_client_token of this CreateStaticRouteRequest.
 
         幂等性标识
 
@@ -68,7 +68,7 @@ class CreateStaticRouteRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateStaticRouteRequest.
+        r"""Sets the x_client_token of this CreateStaticRouteRequest.
 
         幂等性标识
 
@@ -79,7 +79,7 @@ class CreateStaticRouteRequest:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this CreateStaticRouteRequest.
+        r"""Gets the route_table_id of this CreateStaticRouteRequest.
 
         路由表ID
 
@@ -90,7 +90,7 @@ class CreateStaticRouteRequest:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this CreateStaticRouteRequest.
+        r"""Sets the route_table_id of this CreateStaticRouteRequest.
 
         路由表ID
 
@@ -101,7 +101,7 @@ class CreateStaticRouteRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateStaticRouteRequest.
+        r"""Gets the body of this CreateStaticRouteRequest.
 
         :return: The body of this CreateStaticRouteRequest.
         :rtype: :class:`huaweicloudsdker.v3.CreateRouteRequestBody`
@@ -110,7 +110,7 @@ class CreateStaticRouteRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateStaticRouteRequest.
+        r"""Sets the body of this CreateStaticRouteRequest.
 
         :param body: The body of this CreateStaticRouteRequest.
         :type body: :class:`huaweicloudsdker.v3.CreateRouteRequestBody`

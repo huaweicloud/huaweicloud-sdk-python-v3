@@ -28,7 +28,7 @@ class ListDeviceAuthorizersResponse(SdkResponse):
     }
 
     def __init__(self, authorizers=None, page=None):
-        """ListDeviceAuthorizersResponse
+        r"""ListDeviceAuthorizersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDeviceAuthorizersResponse(SdkResponse):
 
     @property
     def authorizers(self):
-        """Gets the authorizers of this ListDeviceAuthorizersResponse.
+        r"""Gets the authorizers of this ListDeviceAuthorizersResponse.
 
         **参数说明**：自定义鉴权列表。
 
@@ -62,7 +62,7 @@ class ListDeviceAuthorizersResponse(SdkResponse):
 
     @authorizers.setter
     def authorizers(self, authorizers):
-        """Sets the authorizers of this ListDeviceAuthorizersResponse.
+        r"""Sets the authorizers of this ListDeviceAuthorizersResponse.
 
         **参数说明**：自定义鉴权列表。
 
@@ -73,7 +73,7 @@ class ListDeviceAuthorizersResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ListDeviceAuthorizersResponse.
+        r"""Gets the page of this ListDeviceAuthorizersResponse.
 
         :return: The page of this ListDeviceAuthorizersResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Page`
@@ -82,7 +82,7 @@ class ListDeviceAuthorizersResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListDeviceAuthorizersResponse.
+        r"""Sets the page of this ListDeviceAuthorizersResponse.
 
         :param page: The page of this ListDeviceAuthorizersResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.Page`

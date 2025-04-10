@@ -30,7 +30,7 @@ class ShowPermissionRequest:
     }
 
     def __init__(self, permission_id=None, x_security_token=None, permission_version=None):
-        """ShowPermissionRequest
+        r"""ShowPermissionRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowPermissionRequest:
 
     @property
     def permission_id(self):
-        """Gets the permission_id of this ShowPermissionRequest.
+        r"""Gets the permission_id of this ShowPermissionRequest.
 
         共享资源权限的ID。
 
@@ -68,7 +68,7 @@ class ShowPermissionRequest:
 
     @permission_id.setter
     def permission_id(self, permission_id):
-        """Sets the permission_id of this ShowPermissionRequest.
+        r"""Sets the permission_id of this ShowPermissionRequest.
 
         共享资源权限的ID。
 
@@ -79,7 +79,7 @@ class ShowPermissionRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ShowPermissionRequest.
+        r"""Gets the x_security_token of this ShowPermissionRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -90,7 +90,7 @@ class ShowPermissionRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ShowPermissionRequest.
+        r"""Sets the x_security_token of this ShowPermissionRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -101,7 +101,7 @@ class ShowPermissionRequest:
 
     @property
     def permission_version(self):
-        """Gets the permission_version of this ShowPermissionRequest.
+        r"""Gets the permission_version of this ShowPermissionRequest.
 
         资源权限版本。
 
@@ -112,7 +112,7 @@ class ShowPermissionRequest:
 
     @permission_version.setter
     def permission_version(self, permission_version):
-        """Sets the permission_version of this ShowPermissionRequest.
+        r"""Sets the permission_version of this ShowPermissionRequest.
 
         资源权限版本。
 

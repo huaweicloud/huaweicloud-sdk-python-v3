@@ -31,7 +31,7 @@ class CreateWhitelistReq:
     }
 
     def __init__(self, tenant_id=None, listener_id=None, enable_whitelist=None, whitelist=None):
-        """CreateWhitelistReq
+        r"""CreateWhitelistReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CreateWhitelistReq:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CreateWhitelistReq.
+        r"""Gets the tenant_id of this CreateWhitelistReq.
 
         白名单所在的项目ID
 
@@ -74,7 +74,7 @@ class CreateWhitelistReq:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CreateWhitelistReq.
+        r"""Sets the tenant_id of this CreateWhitelistReq.
 
         白名单所在的项目ID
 
@@ -85,7 +85,7 @@ class CreateWhitelistReq:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this CreateWhitelistReq.
+        r"""Gets the listener_id of this CreateWhitelistReq.
 
         白名单关联的监听器ID
 
@@ -96,7 +96,7 @@ class CreateWhitelistReq:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this CreateWhitelistReq.
+        r"""Sets the listener_id of this CreateWhitelistReq.
 
         白名单关联的监听器ID
 
@@ -107,7 +107,7 @@ class CreateWhitelistReq:
 
     @property
     def enable_whitelist(self):
-        """Gets the enable_whitelist of this CreateWhitelistReq.
+        r"""Gets the enable_whitelist of this CreateWhitelistReq.
 
         是否开启白名单访问控制开关。true：开启；false：关闭
 
@@ -118,7 +118,7 @@ class CreateWhitelistReq:
 
     @enable_whitelist.setter
     def enable_whitelist(self, enable_whitelist):
-        """Sets the enable_whitelist of this CreateWhitelistReq.
+        r"""Sets the enable_whitelist of this CreateWhitelistReq.
 
         是否开启白名单访问控制开关。true：开启；false：关闭
 
@@ -129,7 +129,7 @@ class CreateWhitelistReq:
 
     @property
     def whitelist(self):
-        """Gets the whitelist of this CreateWhitelistReq.
+        r"""Gets the whitelist of this CreateWhitelistReq.
 
         白名单IP列表。可以是ip，例如192.168.10.123。也可以是一个网段，例如192.168.10.1/24。不同的值之间用逗号分隔。 不传，默认为空。
 
@@ -140,7 +140,7 @@ class CreateWhitelistReq:
 
     @whitelist.setter
     def whitelist(self, whitelist):
-        """Sets the whitelist of this CreateWhitelistReq.
+        r"""Sets the whitelist of this CreateWhitelistReq.
 
         白名单IP列表。可以是ip，例如192.168.10.123。也可以是一个网段，例如192.168.10.1/24。不同的值之间用逗号分隔。 不传，默认为空。
 

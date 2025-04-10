@@ -33,7 +33,7 @@ class CreateCustomfieldV1Req:
     }
 
     def __init__(self, name=None, type=None, options=None, memo=None, scrum_type=None):
-        """CreateCustomfieldV1Req
+        r"""CreateCustomfieldV1Req
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class CreateCustomfieldV1Req:
 
     @property
     def name(self):
-        """Gets the name of this CreateCustomfieldV1Req.
+        r"""Gets the name of this CreateCustomfieldV1Req.
 
         字段名称
 
@@ -77,7 +77,7 @@ class CreateCustomfieldV1Req:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCustomfieldV1Req.
+        r"""Sets the name of this CreateCustomfieldV1Req.
 
         字段名称
 
@@ -88,7 +88,7 @@ class CreateCustomfieldV1Req:
 
     @property
     def type(self):
-        """Gets the type of this CreateCustomfieldV1Req.
+        r"""Gets the type of this CreateCustomfieldV1Req.
 
         自定义字段类型 可选类型  textArea|select|radio|text|checkbox|date|time_date|number
 
@@ -99,7 +99,7 @@ class CreateCustomfieldV1Req:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateCustomfieldV1Req.
+        r"""Sets the type of this CreateCustomfieldV1Req.
 
         自定义字段类型 可选类型  textArea|select|radio|text|checkbox|date|time_date|number
 
@@ -110,7 +110,7 @@ class CreateCustomfieldV1Req:
 
     @property
     def options(self):
-        """Gets the options of this CreateCustomfieldV1Req.
+        r"""Gets the options of this CreateCustomfieldV1Req.
 
         字段选项
 
@@ -121,7 +121,7 @@ class CreateCustomfieldV1Req:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this CreateCustomfieldV1Req.
+        r"""Sets the options of this CreateCustomfieldV1Req.
 
         字段选项
 
@@ -132,7 +132,7 @@ class CreateCustomfieldV1Req:
 
     @property
     def memo(self):
-        """Gets the memo of this CreateCustomfieldV1Req.
+        r"""Gets the memo of this CreateCustomfieldV1Req.
 
         描述
 
@@ -143,7 +143,7 @@ class CreateCustomfieldV1Req:
 
     @memo.setter
     def memo(self, memo):
-        """Sets the memo of this CreateCustomfieldV1Req.
+        r"""Sets the memo of this CreateCustomfieldV1Req.
 
         描述
 
@@ -154,7 +154,7 @@ class CreateCustomfieldV1Req:
 
     @property
     def scrum_type(self):
-        """Gets the scrum_type of this CreateCustomfieldV1Req.
+        r"""Gets the scrum_type of this CreateCustomfieldV1Req.
 
         工作项类型
 
@@ -165,7 +165,7 @@ class CreateCustomfieldV1Req:
 
     @scrum_type.setter
     def scrum_type(self, scrum_type):
-        """Sets the scrum_type of this CreateCustomfieldV1Req.
+        r"""Sets the scrum_type of this CreateCustomfieldV1Req.
 
         工作项类型
 

@@ -31,7 +31,7 @@ class ListBandwidthsRequest:
     }
 
     def __init__(self, marker=None, limit=None, enterprise_project_id=None, share_type=None):
-        """ListBandwidthsRequest
+        r"""ListBandwidthsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListBandwidthsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListBandwidthsRequest.
+        r"""Gets the marker of this ListBandwidthsRequest.
 
         取值为上一页数据的最后一条记录的id，为空时为查询第一页
 
@@ -75,7 +75,7 @@ class ListBandwidthsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListBandwidthsRequest.
+        r"""Sets the marker of this ListBandwidthsRequest.
 
         取值为上一页数据的最后一条记录的id，为空时为查询第一页
 
@@ -86,7 +86,7 @@ class ListBandwidthsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBandwidthsRequest.
+        r"""Gets the limit of this ListBandwidthsRequest.
 
         功能说明：每页返回的个数  取值范围：0~intmax
 
@@ -97,7 +97,7 @@ class ListBandwidthsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBandwidthsRequest.
+        r"""Sets the limit of this ListBandwidthsRequest.
 
         功能说明：每页返回的个数  取值范围：0~intmax
 
@@ -108,7 +108,7 @@ class ListBandwidthsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListBandwidthsRequest.
+        r"""Gets the enterprise_project_id of this ListBandwidthsRequest.
 
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的虚拟私有云。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的虚拟私有云，请传参all_granted_eps。
 
@@ -119,7 +119,7 @@ class ListBandwidthsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListBandwidthsRequest.
+        r"""Sets the enterprise_project_id of this ListBandwidthsRequest.
 
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的虚拟私有云。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的虚拟私有云，请传参all_granted_eps。
 
@@ -130,7 +130,7 @@ class ListBandwidthsRequest:
 
     @property
     def share_type(self):
-        """Gets the share_type of this ListBandwidthsRequest.
+        r"""Gets the share_type of this ListBandwidthsRequest.
 
         功能说明：带宽类型，标识是否是共享带宽 取值范围：WHOLE，PER WHOLE表示共享带宽；PER，表示独享带宽
 
@@ -141,7 +141,7 @@ class ListBandwidthsRequest:
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this ListBandwidthsRequest.
+        r"""Sets the share_type of this ListBandwidthsRequest.
 
         功能说明：带宽类型，标识是否是共享带宽 取值范围：WHOLE，PER WHOLE表示共享带宽；PER，表示独享带宽
 

@@ -51,7 +51,7 @@ class Script:
     }
 
     def __init__(self, approve_info=None, create_by=None, create_time=None, description=None, enterprise_project_id=None, id=None, name=None, online_exist_status=None, online_id=None, project_id=None, rate_control=None, script_language=None, update_by=None, update_time=None):
-        """Script
+        r"""Script
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class Script:
 
     @property
     def approve_info(self):
-        """Gets the approve_info of this Script.
+        r"""Gets the approve_info of this Script.
 
         :return: The approve_info of this Script.
         :rtype: :class:`huaweicloudsdkaom.v1.ApproveInfo`
@@ -141,7 +141,7 @@ class Script:
 
     @approve_info.setter
     def approve_info(self, approve_info):
-        """Sets the approve_info of this Script.
+        r"""Sets the approve_info of this Script.
 
         :param approve_info: The approve_info of this Script.
         :type approve_info: :class:`huaweicloudsdkaom.v1.ApproveInfo`
@@ -150,7 +150,7 @@ class Script:
 
     @property
     def create_by(self):
-        """Gets the create_by of this Script.
+        r"""Gets the create_by of this Script.
 
         创建人，比如为：张三
 
@@ -161,7 +161,7 @@ class Script:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this Script.
+        r"""Sets the create_by of this Script.
 
         创建人，比如为：张三
 
@@ -172,7 +172,7 @@ class Script:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Script.
+        r"""Gets the create_time of this Script.
 
         创建时间
 
@@ -183,7 +183,7 @@ class Script:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Script.
+        r"""Sets the create_time of this Script.
 
         创建时间
 
@@ -194,7 +194,7 @@ class Script:
 
     @property
     def description(self):
-        """Gets the description of this Script.
+        r"""Gets the description of this Script.
 
         脚本描述，脚本描述,对脚本进行描述，最大长度为1000
 
@@ -205,7 +205,7 @@ class Script:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Script.
+        r"""Sets the description of this Script.
 
         脚本描述，脚本描述,对脚本进行描述，最大长度为1000
 
@@ -216,7 +216,7 @@ class Script:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Script.
+        r"""Gets the enterprise_project_id of this Script.
 
         企业项目id
 
@@ -227,7 +227,7 @@ class Script:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Script.
+        r"""Sets the enterprise_project_id of this Script.
 
         企业项目id
 
@@ -238,7 +238,7 @@ class Script:
 
     @property
     def id(self):
-        """Gets the id of this Script.
+        r"""Gets the id of this Script.
 
         脚本id，根据UUID.randomUUID生成。
 
@@ -249,7 +249,7 @@ class Script:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Script.
+        r"""Sets the id of this Script.
 
         脚本id，根据UUID.randomUUID生成。
 
@@ -260,7 +260,7 @@ class Script:
 
     @property
     def name(self):
-        """Gets the name of this Script.
+        r"""Gets the name of this Script.
 
         脚本名称，支持数字，下划线，大小写字母 ,中文
 
@@ -271,7 +271,7 @@ class Script:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Script.
+        r"""Sets the name of this Script.
 
         脚本名称，支持数字，下划线，大小写字母 ,中文
 
@@ -282,7 +282,7 @@ class Script:
 
     @property
     def online_exist_status(self):
-        """Gets the online_exist_status of this Script.
+        r"""Gets the online_exist_status of this Script.
 
         脚本中是否有已上线的版本，true表示有已上线的版本，false表示没有已上线的版本
 
@@ -293,7 +293,7 @@ class Script:
 
     @online_exist_status.setter
     def online_exist_status(self, online_exist_status):
-        """Sets the online_exist_status of this Script.
+        r"""Sets the online_exist_status of this Script.
 
         脚本中是否有已上线的版本，true表示有已上线的版本，false表示没有已上线的版本
 
@@ -304,7 +304,7 @@ class Script:
 
     @property
     def online_id(self):
-        """Gets the online_id of this Script.
+        r"""Gets the online_id of this Script.
 
         已上线版本id
 
@@ -315,7 +315,7 @@ class Script:
 
     @online_id.setter
     def online_id(self, online_id):
-        """Sets the online_id of this Script.
+        r"""Sets the online_id of this Script.
 
         已上线版本id
 
@@ -326,7 +326,7 @@ class Script:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Script.
+        r"""Gets the project_id of this Script.
 
         租户从IAM申请到的projectid，一般为32位字符串
 
@@ -337,7 +337,7 @@ class Script:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Script.
+        r"""Sets the project_id of this Script.
 
         租户从IAM申请到的projectid，一般为32位字符串
 
@@ -348,7 +348,7 @@ class Script:
 
     @property
     def rate_control(self):
-        """Gets the rate_control of this Script.
+        r"""Gets the rate_control of this Script.
 
         :return: The rate_control of this Script.
         :rtype: :class:`huaweicloudsdkaom.v1.RateControl`
@@ -357,7 +357,7 @@ class Script:
 
     @rate_control.setter
     def rate_control(self, rate_control):
-        """Sets the rate_control of this Script.
+        r"""Sets the rate_control of this Script.
 
         :param rate_control: The rate_control of this Script.
         :type rate_control: :class:`huaweicloudsdkaom.v1.RateControl`
@@ -366,7 +366,7 @@ class Script:
 
     @property
     def script_language(self):
-        """Gets the script_language of this Script.
+        r"""Gets the script_language of this Script.
 
         脚本语言，目前支持四种，分别是：SHELL BAT PYTHON POWER_SHELL
 
@@ -377,7 +377,7 @@ class Script:
 
     @script_language.setter
     def script_language(self, script_language):
-        """Sets the script_language of this Script.
+        r"""Sets the script_language of this Script.
 
         脚本语言，目前支持四种，分别是：SHELL BAT PYTHON POWER_SHELL
 
@@ -388,7 +388,7 @@ class Script:
 
     @property
     def update_by(self):
-        """Gets the update_by of this Script.
+        r"""Gets the update_by of this Script.
 
         修改人
 
@@ -399,7 +399,7 @@ class Script:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this Script.
+        r"""Sets the update_by of this Script.
 
         修改人
 
@@ -410,7 +410,7 @@ class Script:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Script.
+        r"""Gets the update_time of this Script.
 
         实体的最后更新时间戳。 注意：执行创建/修改/删除操作时，update_time将更新。
 
@@ -421,7 +421,7 @@ class Script:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Script.
+        r"""Sets the update_time of this Script.
 
         实体的最后更新时间戳。 注意：执行创建/修改/删除操作时，update_time将更新。
 

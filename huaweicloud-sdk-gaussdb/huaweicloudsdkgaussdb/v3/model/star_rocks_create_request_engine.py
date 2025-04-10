@@ -27,7 +27,7 @@ class StarRocksCreateRequestEngine:
     }
 
     def __init__(self, type=None, version=None):
-        """StarRocksCreateRequestEngine
+        r"""StarRocksCreateRequestEngine
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StarRocksCreateRequestEngine:
 
     @property
     def type(self):
-        """Gets the type of this StarRocksCreateRequestEngine.
+        r"""Gets the type of this StarRocksCreateRequestEngine.
 
         引擎类型。仅支持star-rocks。
 
@@ -59,7 +59,7 @@ class StarRocksCreateRequestEngine:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this StarRocksCreateRequestEngine.
+        r"""Sets the type of this StarRocksCreateRequestEngine.
 
         引擎类型。仅支持star-rocks。
 
@@ -70,7 +70,7 @@ class StarRocksCreateRequestEngine:
 
     @property
     def version(self):
-        """Gets the version of this StarRocksCreateRequestEngine.
+        r"""Gets the version of this StarRocksCreateRequestEngine.
 
         引擎大版本号。
 
@@ -81,7 +81,7 @@ class StarRocksCreateRequestEngine:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this StarRocksCreateRequestEngine.
+        r"""Sets the version of this StarRocksCreateRequestEngine.
 
         引擎大版本号。
 

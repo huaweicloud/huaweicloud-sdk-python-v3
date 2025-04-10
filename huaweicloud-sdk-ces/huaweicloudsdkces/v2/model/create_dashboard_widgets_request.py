@@ -27,7 +27,7 @@ class CreateDashboardWidgetsRequest:
     }
 
     def __init__(self, dashboard_id=None, body=None):
-        """CreateDashboardWidgetsRequest
+        r"""CreateDashboardWidgetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDashboardWidgetsRequest:
 
     @property
     def dashboard_id(self):
-        """Gets the dashboard_id of this CreateDashboardWidgetsRequest.
+        r"""Gets the dashboard_id of this CreateDashboardWidgetsRequest.
 
         监控看板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn'
 
@@ -60,7 +60,7 @@ class CreateDashboardWidgetsRequest:
 
     @dashboard_id.setter
     def dashboard_id(self, dashboard_id):
-        """Sets the dashboard_id of this CreateDashboardWidgetsRequest.
+        r"""Sets the dashboard_id of this CreateDashboardWidgetsRequest.
 
         监控看板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn'
 
@@ -71,7 +71,7 @@ class CreateDashboardWidgetsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDashboardWidgetsRequest.
+        r"""Gets the body of this CreateDashboardWidgetsRequest.
 
         :return: The body of this CreateDashboardWidgetsRequest.
         :rtype: list[object]
@@ -80,7 +80,7 @@ class CreateDashboardWidgetsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDashboardWidgetsRequest.
+        r"""Sets the body of this CreateDashboardWidgetsRequest.
 
         :param body: The body of this CreateDashboardWidgetsRequest.
         :type body: list[object]

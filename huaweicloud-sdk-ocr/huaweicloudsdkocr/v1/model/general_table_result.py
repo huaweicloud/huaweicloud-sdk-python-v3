@@ -29,7 +29,7 @@ class GeneralTableResult:
     }
 
     def __init__(self, words_region_count=None, words_region_list=None, excel=None):
-        """GeneralTableResult
+        r"""GeneralTableResult
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class GeneralTableResult:
 
     @property
     def words_region_count(self):
-        """Gets the words_region_count of this GeneralTableResult.
+        r"""Gets the words_region_count of this GeneralTableResult.
 
         文字区域数目。          
 
@@ -66,7 +66,7 @@ class GeneralTableResult:
 
     @words_region_count.setter
     def words_region_count(self, words_region_count):
-        """Sets the words_region_count of this GeneralTableResult.
+        r"""Sets the words_region_count of this GeneralTableResult.
 
         文字区域数目。          
 
@@ -77,7 +77,7 @@ class GeneralTableResult:
 
     @property
     def words_region_list(self):
-        """Gets the words_region_list of this GeneralTableResult.
+        r"""Gets the words_region_list of this GeneralTableResult.
 
         文字区域识别结果列表，输出顺序从左到右，先上后下。 
 
@@ -88,7 +88,7 @@ class GeneralTableResult:
 
     @words_region_list.setter
     def words_region_list(self, words_region_list):
-        """Sets the words_region_list of this GeneralTableResult.
+        r"""Sets the words_region_list of this GeneralTableResult.
 
         文字区域识别结果列表，输出顺序从左到右，先上后下。 
 
@@ -99,7 +99,7 @@ class GeneralTableResult:
 
     @property
     def excel(self):
-        """Gets the excel of this GeneralTableResult.
+        r"""Gets the excel of this GeneralTableResult.
 
         表格图像转换为excel的base64编码，图像中的文字和表格按位置写入excel。对返回的excel编码可用base64.b64decode解码并保存为.xlsx文件。 
 
@@ -110,7 +110,7 @@ class GeneralTableResult:
 
     @excel.setter
     def excel(self, excel):
-        """Sets the excel of this GeneralTableResult.
+        r"""Sets the excel of this GeneralTableResult.
 
         表格图像转换为excel的base64编码，图像中的文字和表格按位置写入excel。对返回的excel编码可用base64.b64decode解码并保存为.xlsx文件。 
 

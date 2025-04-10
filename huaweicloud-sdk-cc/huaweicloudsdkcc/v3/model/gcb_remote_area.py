@@ -25,7 +25,7 @@ class GcbRemoteArea:
     }
 
     def __init__(self, remote_area=None):
-        """GcbRemoteArea
+        r"""GcbRemoteArea
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GcbRemoteArea:
 
     @property
     def remote_area(self):
-        """Gets the remote_area of this GcbRemoteArea.
+        r"""Gets the remote_area of this GcbRemoteArea.
 
         功能说明：远端接入点，配合local_area信息描述带宽实例应用的范围。 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点），站点编码通过接口获取，带宽类型为Region可不传，其他类型必传 
 
@@ -54,7 +54,7 @@ class GcbRemoteArea:
 
     @remote_area.setter
     def remote_area(self, remote_area):
-        """Sets the remote_area of this GcbRemoteArea.
+        r"""Sets the remote_area of this GcbRemoteArea.
 
         功能说明：远端接入点，配合local_area信息描述带宽实例应用的范围。 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点），站点编码通过接口获取，带宽类型为Region可不传，其他类型必传 
 

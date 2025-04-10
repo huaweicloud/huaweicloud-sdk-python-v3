@@ -26,7 +26,7 @@ class ListBandwidthTimelineResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListBandwidthTimelineResponse
+        r"""ListBandwidthTimelineResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBandwidthTimelineResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListBandwidthTimelineResponse.
+        r"""Gets the body of this ListBandwidthTimelineResponse.
 
         带宽时间线统计数据，包括带宽（BANDWIDTH）、入带宽（IN_BANDWIDTH）以及出带宽（OUT_BANDWIDTH）统计数据。
 
@@ -55,7 +55,7 @@ class ListBandwidthTimelineResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListBandwidthTimelineResponse.
+        r"""Sets the body of this ListBandwidthTimelineResponse.
 
         带宽时间线统计数据，包括带宽（BANDWIDTH）、入带宽（IN_BANDWIDTH）以及出带宽（OUT_BANDWIDTH）统计数据。
 

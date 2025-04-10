@@ -27,7 +27,7 @@ class Nics:
     }
 
     def __init__(self, interface=None, ip=None):
-        """Nics
+        r"""Nics
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Nics:
 
     @property
     def interface(self):
-        """Gets the interface of this Nics.
+        r"""Gets the interface of this Nics.
 
         边缘节点网卡名称
 
@@ -61,7 +61,7 @@ class Nics:
 
     @interface.setter
     def interface(self, interface):
-        """Sets the interface of this Nics.
+        r"""Sets the interface of this Nics.
 
         边缘节点网卡名称
 
@@ -72,7 +72,7 @@ class Nics:
 
     @property
     def ip(self):
-        """Gets the ip of this Nics.
+        r"""Gets the ip of this Nics.
 
         上述网卡对应的IPv4地址
 
@@ -83,7 +83,7 @@ class Nics:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this Nics.
+        r"""Sets the ip of this Nics.
 
         上述网卡对应的IPv4地址
 

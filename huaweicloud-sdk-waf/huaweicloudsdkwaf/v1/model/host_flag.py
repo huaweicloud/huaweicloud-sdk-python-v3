@@ -27,7 +27,7 @@ class HostFlag:
     }
 
     def __init__(self, pci_3ds=None, pci_dss=None):
-        """HostFlag
+        r"""HostFlag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HostFlag:
 
     @property
     def pci_3ds(self):
-        """Gets the pci_3ds of this HostFlag.
+        r"""Gets the pci_3ds of this HostFlag.
 
         是否开启pci_3ds合规认证，该参数需要与tls和cipher参数同时使用，且tls参数值需要设置为TLS v1.2，cipher参数值设置为cipher_2。注：pci_3ds合规认证开启后不支持关闭，在开启pci_3ds合规认证前，请先阅读帮助中心Web应用防火墙WAF文档中关于pci_3ds合规认证的说明   - true：开启   - false：不开启
 
@@ -61,7 +61,7 @@ class HostFlag:
 
     @pci_3ds.setter
     def pci_3ds(self, pci_3ds):
-        """Sets the pci_3ds of this HostFlag.
+        r"""Sets the pci_3ds of this HostFlag.
 
         是否开启pci_3ds合规认证，该参数需要与tls和cipher参数同时使用，且tls参数值需要设置为TLS v1.2，cipher参数值设置为cipher_2。注：pci_3ds合规认证开启后不支持关闭，在开启pci_3ds合规认证前，请先阅读帮助中心Web应用防火墙WAF文档中关于pci_3ds合规认证的说明   - true：开启   - false：不开启
 
@@ -72,7 +72,7 @@ class HostFlag:
 
     @property
     def pci_dss(self):
-        """Gets the pci_dss of this HostFlag.
+        r"""Gets the pci_dss of this HostFlag.
 
         是否开启pci_dss合规认证，该参数需要与tls和cipher参数同时使用，且tls参数值需要设置为TLS v1.2，cipher参数值设置为cipher_2。注：在开启pci_dss合规认证前，请先阅读帮助中心Web应用防火墙WAF文档中关于pci_dss合规认证的说明   - true：开启   - false：不开启
 
@@ -83,7 +83,7 @@ class HostFlag:
 
     @pci_dss.setter
     def pci_dss(self, pci_dss):
-        """Sets the pci_dss of this HostFlag.
+        r"""Sets the pci_dss of this HostFlag.
 
         是否开启pci_dss合规认证，该参数需要与tls和cipher参数同时使用，且tls参数值需要设置为TLS v1.2，cipher参数值设置为cipher_2。注：在开启pci_dss合规认证前，请先阅读帮助中心Web应用防火墙WAF文档中关于pci_dss合规认证的说明   - true：开启   - false：不开启
 

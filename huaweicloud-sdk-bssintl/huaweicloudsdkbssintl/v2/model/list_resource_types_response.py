@@ -28,7 +28,7 @@ class ListResourceTypesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, resource_types=None):
-        """ListResourceTypesResponse
+        r"""ListResourceTypesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListResourceTypesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListResourceTypesResponse.
+        r"""Gets the total_count of this ListResourceTypesResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListResourceTypesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListResourceTypesResponse.
+        r"""Sets the total_count of this ListResourceTypesResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListResourceTypesResponse(SdkResponse):
 
     @property
     def resource_types(self):
-        """Gets the resource_types of this ListResourceTypesResponse.
+        r"""Gets the resource_types of this ListResourceTypesResponse.
 
         资源类型信息列表，具体请参见表3。
 
@@ -84,7 +84,7 @@ class ListResourceTypesResponse(SdkResponse):
 
     @resource_types.setter
     def resource_types(self, resource_types):
-        """Sets the resource_types of this ListResourceTypesResponse.
+        r"""Sets the resource_types of this ListResourceTypesResponse.
 
         资源类型信息列表，具体请参见表3。
 

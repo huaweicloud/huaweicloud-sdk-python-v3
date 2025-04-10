@@ -33,7 +33,7 @@ class UpdateNacosNamespacesRequest:
     }
 
     def __init__(self, x_engine_id=None, x_enterprise_project_id=None, namespace=None, namespace_show_name=None, namespace_desc=None):
-        """UpdateNacosNamespacesRequest
+        r"""UpdateNacosNamespacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class UpdateNacosNamespacesRequest:
 
     @property
     def x_engine_id(self):
-        """Gets the x_engine_id of this UpdateNacosNamespacesRequest.
+        r"""Gets the x_engine_id of this UpdateNacosNamespacesRequest.
 
         微服务引擎的实例ID
 
@@ -77,7 +77,7 @@ class UpdateNacosNamespacesRequest:
 
     @x_engine_id.setter
     def x_engine_id(self, x_engine_id):
-        """Sets the x_engine_id of this UpdateNacosNamespacesRequest.
+        r"""Sets the x_engine_id of this UpdateNacosNamespacesRequest.
 
         微服务引擎的实例ID
 
@@ -88,7 +88,7 @@ class UpdateNacosNamespacesRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this UpdateNacosNamespacesRequest.
+        r"""Gets the x_enterprise_project_id of this UpdateNacosNamespacesRequest.
 
         企业项目ID
 
@@ -99,7 +99,7 @@ class UpdateNacosNamespacesRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this UpdateNacosNamespacesRequest.
+        r"""Sets the x_enterprise_project_id of this UpdateNacosNamespacesRequest.
 
         企业项目ID
 
@@ -110,7 +110,7 @@ class UpdateNacosNamespacesRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this UpdateNacosNamespacesRequest.
+        r"""Gets the namespace of this UpdateNacosNamespacesRequest.
 
         命名空间ID
 
@@ -121,7 +121,7 @@ class UpdateNacosNamespacesRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this UpdateNacosNamespacesRequest.
+        r"""Sets the namespace of this UpdateNacosNamespacesRequest.
 
         命名空间ID
 
@@ -132,7 +132,7 @@ class UpdateNacosNamespacesRequest:
 
     @property
     def namespace_show_name(self):
-        """Gets the namespace_show_name of this UpdateNacosNamespacesRequest.
+        r"""Gets the namespace_show_name of this UpdateNacosNamespacesRequest.
 
         命名空间名，支持非@、#、$、%、^、&、*，不超过128个字符。
 
@@ -143,7 +143,7 @@ class UpdateNacosNamespacesRequest:
 
     @namespace_show_name.setter
     def namespace_show_name(self, namespace_show_name):
-        """Sets the namespace_show_name of this UpdateNacosNamespacesRequest.
+        r"""Sets the namespace_show_name of this UpdateNacosNamespacesRequest.
 
         命名空间名，支持非@、#、$、%、^、&、*，不超过128个字符。
 
@@ -154,7 +154,7 @@ class UpdateNacosNamespacesRequest:
 
     @property
     def namespace_desc(self):
-        """Gets the namespace_desc of this UpdateNacosNamespacesRequest.
+        r"""Gets the namespace_desc of this UpdateNacosNamespacesRequest.
 
         命名空间描述，不超过256个字符。
 
@@ -165,7 +165,7 @@ class UpdateNacosNamespacesRequest:
 
     @namespace_desc.setter
     def namespace_desc(self, namespace_desc):
-        """Sets the namespace_desc of this UpdateNacosNamespacesRequest.
+        r"""Sets the namespace_desc of this UpdateNacosNamespacesRequest.
 
         命名空间描述，不超过256个字符。
 

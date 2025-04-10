@@ -27,7 +27,7 @@ class EncryptionReq:
     }
 
     def __init__(self, enable=None, master_key_id=None):
-        """EncryptionReq
+        r"""EncryptionReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EncryptionReq:
 
     @property
     def enable(self):
-        """Gets the enable of this EncryptionReq.
+        r"""Gets the enable of this EncryptionReq.
 
         是否启动加密特性。取值为“true”或者“false”。默认为“false”。
 
@@ -61,7 +61,7 @@ class EncryptionReq:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this EncryptionReq.
+        r"""Sets the enable of this EncryptionReq.
 
         是否启动加密特性。取值为“true”或者“false”。默认为“false”。
 
@@ -72,7 +72,7 @@ class EncryptionReq:
 
     @property
     def master_key_id(self):
-        """Gets the master_key_id of this EncryptionReq.
+        r"""Gets the master_key_id of this EncryptionReq.
 
         与建图对应的project下，华为云数据加密服务创建的用户主密钥ID。
 
@@ -83,7 +83,7 @@ class EncryptionReq:
 
     @master_key_id.setter
     def master_key_id(self, master_key_id):
-        """Sets the master_key_id of this EncryptionReq.
+        r"""Sets the master_key_id of this EncryptionReq.
 
         与建图对应的project下，华为云数据加密服务创建的用户主密钥ID。
 

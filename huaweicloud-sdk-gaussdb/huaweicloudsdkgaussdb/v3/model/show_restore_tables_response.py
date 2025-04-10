@@ -28,7 +28,7 @@ class ShowRestoreTablesResponse(SdkResponse):
     }
 
     def __init__(self, total_databases=None, databases=None):
-        """ShowRestoreTablesResponse
+        r"""ShowRestoreTablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowRestoreTablesResponse(SdkResponse):
 
     @property
     def total_databases(self):
-        """Gets the total_databases of this ShowRestoreTablesResponse.
+        r"""Gets the total_databases of this ShowRestoreTablesResponse.
 
         数据库总数。
 
@@ -62,7 +62,7 @@ class ShowRestoreTablesResponse(SdkResponse):
 
     @total_databases.setter
     def total_databases(self, total_databases):
-        """Sets the total_databases of this ShowRestoreTablesResponse.
+        r"""Sets the total_databases of this ShowRestoreTablesResponse.
 
         数据库总数。
 
@@ -73,7 +73,7 @@ class ShowRestoreTablesResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this ShowRestoreTablesResponse.
+        r"""Gets the databases of this ShowRestoreTablesResponse.
 
         数据库信息。
 
@@ -84,7 +84,7 @@ class ShowRestoreTablesResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ShowRestoreTablesResponse.
+        r"""Sets the databases of this ShowRestoreTablesResponse.
 
         数据库信息。
 

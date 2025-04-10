@@ -43,7 +43,7 @@ class Job:
     }
 
     def __init__(self, job_id=None, status=None, job_type=None, job_name=None, related_graph=None, begin_time=None, end_time=None, job_detail=None, fail_reason=None, job_progress=None):
-        """Job
+        r"""Job
 
         The model defined in huaweicloud sdk
 
@@ -101,7 +101,7 @@ class Job:
 
     @property
     def job_id(self):
-        """Gets the job_id of this Job.
+        r"""Gets the job_id of this Job.
 
         任务ID。
 
@@ -112,7 +112,7 @@ class Job:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this Job.
+        r"""Sets the job_id of this Job.
 
         任务ID。
 
@@ -123,7 +123,7 @@ class Job:
 
     @property
     def status(self):
-        """Gets the status of this Job.
+        r"""Gets the status of this Job.
 
         任务状态。  - pending:等待中 - running:运行中 - success:成功 - failed:失败
 
@@ -134,7 +134,7 @@ class Job:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Job.
+        r"""Sets the status of this Job.
 
         任务状态。  - pending:等待中 - running:运行中 - success:成功 - failed:失败
 
@@ -145,7 +145,7 @@ class Job:
 
     @property
     def job_type(self):
-        """Gets the job_type of this Job.
+        r"""Gets the job_type of this Job.
 
         任务类型。
 
@@ -156,7 +156,7 @@ class Job:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this Job.
+        r"""Sets the job_type of this Job.
 
         任务类型。
 
@@ -167,7 +167,7 @@ class Job:
 
     @property
     def job_name(self):
-        """Gets the job_name of this Job.
+        r"""Gets the job_name of this Job.
 
         任务名称。
 
@@ -178,7 +178,7 @@ class Job:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this Job.
+        r"""Sets the job_name of this Job.
 
         任务名称。
 
@@ -189,7 +189,7 @@ class Job:
 
     @property
     def related_graph(self):
-        """Gets the related_graph of this Job.
+        r"""Gets the related_graph of this Job.
 
         关联图名称。
 
@@ -200,7 +200,7 @@ class Job:
 
     @related_graph.setter
     def related_graph(self, related_graph):
-        """Sets the related_graph of this Job.
+        r"""Sets the related_graph of this Job.
 
         关联图名称。
 
@@ -211,7 +211,7 @@ class Job:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this Job.
+        r"""Gets the begin_time of this Job.
 
         任务开始时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"
 
@@ -222,7 +222,7 @@ class Job:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this Job.
+        r"""Sets the begin_time of this Job.
 
         任务开始时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"
 
@@ -233,7 +233,7 @@ class Job:
 
     @property
     def end_time(self):
-        """Gets the end_time of this Job.
+        r"""Gets the end_time of this Job.
 
         任务结束时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"
 
@@ -244,7 +244,7 @@ class Job:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this Job.
+        r"""Sets the end_time of this Job.
 
         任务结束时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"
 
@@ -255,7 +255,7 @@ class Job:
 
     @property
     def job_detail(self):
-        """Gets the job_detail of this Job.
+        r"""Gets the job_detail of this Job.
 
         :return: The job_detail of this Job.
         :rtype: :class:`huaweicloudsdkges.v1.JobDetail`
@@ -264,7 +264,7 @@ class Job:
 
     @job_detail.setter
     def job_detail(self, job_detail):
-        """Sets the job_detail of this Job.
+        r"""Sets the job_detail of this Job.
 
         :param job_detail: The job_detail of this Job.
         :type job_detail: :class:`huaweicloudsdkges.v1.JobDetail`
@@ -273,7 +273,7 @@ class Job:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this Job.
+        r"""Gets the fail_reason of this Job.
 
         任务失败原因
 
@@ -284,7 +284,7 @@ class Job:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this Job.
+        r"""Sets the fail_reason of this Job.
 
         任务失败原因
 
@@ -295,7 +295,7 @@ class Job:
 
     @property
     def job_progress(self):
-        """Gets the job_progress of this Job.
+        r"""Gets the job_progress of this Job.
 
         任务执行进度，预留字段，暂未使用。
 
@@ -306,7 +306,7 @@ class Job:
 
     @job_progress.setter
     def job_progress(self, job_progress):
-        """Sets the job_progress of this Job.
+        r"""Sets the job_progress of this Job.
 
         任务执行进度，预留字段，暂未使用。
 

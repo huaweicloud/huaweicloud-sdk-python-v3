@@ -41,7 +41,7 @@ class ComponentStatusView:
     }
 
     def __init__(self, component_status=None, available_replica=None, replica=None, fail_detail=None, last_job_id=None, creator=None, create_time=None, update_time=None, artifact=None):
-        """ComponentStatusView
+        r"""ComponentStatusView
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ComponentStatusView:
 
     @property
     def component_status(self):
-        """Gets the component_status of this ComponentStatusView.
+        r"""Gets the component_status of this ComponentStatusView.
 
         :return: The component_status of this ComponentStatusView.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentStatusType`
@@ -108,7 +108,7 @@ class ComponentStatusView:
 
     @component_status.setter
     def component_status(self, component_status):
-        """Sets the component_status of this ComponentStatusView.
+        r"""Sets the component_status of this ComponentStatusView.
 
         :param component_status: The component_status of this ComponentStatusView.
         :type component_status: :class:`huaweicloudsdkservicestage.v3.ComponentStatusType`
@@ -117,7 +117,7 @@ class ComponentStatusView:
 
     @property
     def available_replica(self):
-        """Gets the available_replica of this ComponentStatusView.
+        r"""Gets the available_replica of this ComponentStatusView.
 
         :return: The available_replica of this ComponentStatusView.
         :rtype: int
@@ -126,7 +126,7 @@ class ComponentStatusView:
 
     @available_replica.setter
     def available_replica(self, available_replica):
-        """Sets the available_replica of this ComponentStatusView.
+        r"""Sets the available_replica of this ComponentStatusView.
 
         :param available_replica: The available_replica of this ComponentStatusView.
         :type available_replica: int
@@ -135,7 +135,7 @@ class ComponentStatusView:
 
     @property
     def replica(self):
-        """Gets the replica of this ComponentStatusView.
+        r"""Gets the replica of this ComponentStatusView.
 
         :return: The replica of this ComponentStatusView.
         :rtype: int
@@ -144,7 +144,7 @@ class ComponentStatusView:
 
     @replica.setter
     def replica(self, replica):
-        """Sets the replica of this ComponentStatusView.
+        r"""Sets the replica of this ComponentStatusView.
 
         :param replica: The replica of this ComponentStatusView.
         :type replica: int
@@ -153,7 +153,7 @@ class ComponentStatusView:
 
     @property
     def fail_detail(self):
-        """Gets the fail_detail of this ComponentStatusView.
+        r"""Gets the fail_detail of this ComponentStatusView.
 
         :return: The fail_detail of this ComponentStatusView.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentFailDetail`
@@ -162,7 +162,7 @@ class ComponentStatusView:
 
     @fail_detail.setter
     def fail_detail(self, fail_detail):
-        """Sets the fail_detail of this ComponentStatusView.
+        r"""Sets the fail_detail of this ComponentStatusView.
 
         :param fail_detail: The fail_detail of this ComponentStatusView.
         :type fail_detail: :class:`huaweicloudsdkservicestage.v3.ComponentFailDetail`
@@ -171,7 +171,7 @@ class ComponentStatusView:
 
     @property
     def last_job_id(self):
-        """Gets the last_job_id of this ComponentStatusView.
+        r"""Gets the last_job_id of this ComponentStatusView.
 
         :return: The last_job_id of this ComponentStatusView.
         :rtype: str
@@ -180,7 +180,7 @@ class ComponentStatusView:
 
     @last_job_id.setter
     def last_job_id(self, last_job_id):
-        """Sets the last_job_id of this ComponentStatusView.
+        r"""Sets the last_job_id of this ComponentStatusView.
 
         :param last_job_id: The last_job_id of this ComponentStatusView.
         :type last_job_id: str
@@ -189,7 +189,7 @@ class ComponentStatusView:
 
     @property
     def creator(self):
-        """Gets the creator of this ComponentStatusView.
+        r"""Gets the creator of this ComponentStatusView.
 
         :return: The creator of this ComponentStatusView.
         :rtype: str
@@ -198,7 +198,7 @@ class ComponentStatusView:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ComponentStatusView.
+        r"""Sets the creator of this ComponentStatusView.
 
         :param creator: The creator of this ComponentStatusView.
         :type creator: str
@@ -207,7 +207,7 @@ class ComponentStatusView:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ComponentStatusView.
+        r"""Gets the create_time of this ComponentStatusView.
 
         创建时间。
 
@@ -218,7 +218,7 @@ class ComponentStatusView:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ComponentStatusView.
+        r"""Sets the create_time of this ComponentStatusView.
 
         创建时间。
 
@@ -229,7 +229,7 @@ class ComponentStatusView:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ComponentStatusView.
+        r"""Gets the update_time of this ComponentStatusView.
 
         修改时间。
 
@@ -240,7 +240,7 @@ class ComponentStatusView:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ComponentStatusView.
+        r"""Sets the update_time of this ComponentStatusView.
 
         修改时间。
 
@@ -251,7 +251,7 @@ class ComponentStatusView:
 
     @property
     def artifact(self):
-        """Gets the artifact of this ComponentStatusView.
+        r"""Gets the artifact of this ComponentStatusView.
 
         :return: The artifact of this ComponentStatusView.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentArtifact`
@@ -260,7 +260,7 @@ class ComponentStatusView:
 
     @artifact.setter
     def artifact(self, artifact):
-        """Sets the artifact of this ComponentStatusView.
+        r"""Sets the artifact of this ComponentStatusView.
 
         :param artifact: The artifact of this ComponentStatusView.
         :type artifact: :class:`huaweicloudsdkservicestage.v3.ComponentArtifact`

@@ -25,7 +25,7 @@ class AssetNameRequest:
     }
 
     def __init__(self, name=None):
-        """AssetNameRequest
+        r"""AssetNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AssetNameRequest:
 
     @property
     def name(self):
-        """Gets the name of this AssetNameRequest.
+        r"""Gets the name of this AssetNameRequest.
 
         资产名称
 
@@ -54,7 +54,7 @@ class AssetNameRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AssetNameRequest.
+        r"""Sets the name of this AssetNameRequest.
 
         资产名称
 

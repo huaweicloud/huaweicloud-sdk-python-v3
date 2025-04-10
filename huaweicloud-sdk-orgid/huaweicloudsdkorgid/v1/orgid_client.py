@@ -34,7 +34,7 @@ class OrgIDClient(Client):
         return client_builder
 
     def validate_service(self, request):
-        """验证票据接口
+        r"""验证票据接口
 
         CAS 3.0验证票据接口
         
@@ -101,7 +101,7 @@ class OrgIDClient(Client):
         return http_info
 
     def show_oauth2_token(self, request):
-        """用户级Token获取
+        r"""用户级Token获取
 
         用户级Token获取
         
@@ -178,7 +178,7 @@ class OrgIDClient(Client):
         return http_info
 
     def show_oauth2_user_info(self, request):
-        """用户信息获取
+        r"""用户信息获取
 
         用户级Token获取
         

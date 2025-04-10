@@ -27,7 +27,7 @@ class JobLogRequest:
     }
 
     def __init__(self, bridge_id=None, classification_id=None):
-        """JobLogRequest
+        r"""JobLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class JobLogRequest:
 
     @property
     def bridge_id(self):
-        """Gets the bridge_id of this JobLogRequest.
+        r"""Gets the bridge_id of this JobLogRequest.
 
         桥接作业id
 
@@ -60,7 +60,7 @@ class JobLogRequest:
 
     @bridge_id.setter
     def bridge_id(self, bridge_id):
-        """Sets the bridge_id of this JobLogRequest.
+        r"""Sets the bridge_id of this JobLogRequest.
 
         桥接作业id
 
@@ -71,7 +71,7 @@ class JobLogRequest:
 
     @property
     def classification_id(self):
-        """Gets the classification_id of this JobLogRequest.
+        r"""Gets the classification_id of this JobLogRequest.
 
         分类作业id
 
@@ -82,7 +82,7 @@ class JobLogRequest:
 
     @classification_id.setter
     def classification_id(self, classification_id):
-        """Sets the classification_id of this JobLogRequest.
+        r"""Sets the classification_id of this JobLogRequest.
 
         分类作业id
 

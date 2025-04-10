@@ -25,7 +25,7 @@ class CreatePrivateSnatOptionBody:
     }
 
     def __init__(self, snat_rule=None):
-        """CreatePrivateSnatOptionBody
+        r"""CreatePrivateSnatOptionBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreatePrivateSnatOptionBody:
 
     @property
     def snat_rule(self):
-        """Gets the snat_rule of this CreatePrivateSnatOptionBody.
+        r"""Gets the snat_rule of this CreatePrivateSnatOptionBody.
 
         :return: The snat_rule of this CreatePrivateSnatOptionBody.
         :rtype: :class:`huaweicloudsdknat.v2.CreatePrivateSnatOption`
@@ -51,7 +51,7 @@ class CreatePrivateSnatOptionBody:
 
     @snat_rule.setter
     def snat_rule(self, snat_rule):
-        """Sets the snat_rule of this CreatePrivateSnatOptionBody.
+        r"""Sets the snat_rule of this CreatePrivateSnatOptionBody.
 
         :param snat_rule: The snat_rule of this CreatePrivateSnatOptionBody.
         :type snat_rule: :class:`huaweicloudsdknat.v2.CreatePrivateSnatOption`

@@ -27,7 +27,7 @@ class City:
     }
 
     def __init__(self, code=None, name=None):
-        """City
+        r"""City
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class City:
 
     @property
     def code(self):
-        """Gets the code of this City.
+        r"""Gets the code of this City.
 
         城市的编码。
 
@@ -59,7 +59,7 @@ class City:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this City.
+        r"""Sets the code of this City.
 
         城市的编码。
 
@@ -70,7 +70,7 @@ class City:
 
     @property
     def name(self):
-        """Gets the name of this City.
+        r"""Gets the name of this City.
 
         城市的名称，根据请求参数X-Language的取值返回对应语言的名称，目前仅支持中文。
 
@@ -81,7 +81,7 @@ class City:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this City.
+        r"""Sets the name of this City.
 
         城市的名称，根据请求参数X-Language的取值返回对应语言的名称，目前仅支持中文。
 

@@ -41,7 +41,7 @@ class NodeGroupV11:
     }
 
     def __init__(self, group_name=None, node_num=None, node_size=None, root_volume_size=None, root_volume_type=None, data_volume_type=None, data_volume_count=None, data_volume_size=None, auto_scaling_policy=None):
-        """NodeGroupV11
+        r"""NodeGroupV11
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class NodeGroupV11:
 
     @property
     def group_name(self):
-        """Gets the group_name of this NodeGroupV11.
+        r"""Gets the group_name of this NodeGroupV11.
 
         节点组名。 - master_node_default_group - core_node_analysis_group - core_node_streaming_group - task_node_analysis_group - task_node_streaming_group
 
@@ -107,7 +107,7 @@ class NodeGroupV11:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this NodeGroupV11.
+        r"""Sets the group_name of this NodeGroupV11.
 
         节点组名。 - master_node_default_group - core_node_analysis_group - core_node_streaming_group - task_node_analysis_group - task_node_streaming_group
 
@@ -118,7 +118,7 @@ class NodeGroupV11:
 
     @property
     def node_num(self):
-        """Gets the node_num of this NodeGroupV11.
+        r"""Gets the node_num of this NodeGroupV11.
 
         节点数量，取值范围0～500，Core与Task节点总数最大为500个。
 
@@ -129,7 +129,7 @@ class NodeGroupV11:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this NodeGroupV11.
+        r"""Sets the node_num of this NodeGroupV11.
 
         节点数量，取值范围0～500，Core与Task节点总数最大为500个。
 
@@ -140,7 +140,7 @@ class NodeGroupV11:
 
     @property
     def node_size(self):
-        """Gets the node_size of this NodeGroupV11.
+        r"""Gets the node_size of this NodeGroupV11.
 
         节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。MRS当前支持主机规格的配型由CPU+内存+Disk共同决定。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
@@ -151,7 +151,7 @@ class NodeGroupV11:
 
     @node_size.setter
     def node_size(self, node_size):
-        """Sets the node_size of this NodeGroupV11.
+        r"""Sets the node_size of this NodeGroupV11.
 
         节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。MRS当前支持主机规格的配型由CPU+内存+Disk共同决定。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
@@ -162,7 +162,7 @@ class NodeGroupV11:
 
     @property
     def root_volume_size(self):
-        """Gets the root_volume_size of this NodeGroupV11.
+        r"""Gets the root_volume_size of this NodeGroupV11.
 
         节点系统磁盘存储大小。
 
@@ -173,7 +173,7 @@ class NodeGroupV11:
 
     @root_volume_size.setter
     def root_volume_size(self, root_volume_size):
-        """Sets the root_volume_size of this NodeGroupV11.
+        r"""Sets the root_volume_size of this NodeGroupV11.
 
         节点系统磁盘存储大小。
 
@@ -184,7 +184,7 @@ class NodeGroupV11:
 
     @property
     def root_volume_type(self):
-        """Gets the root_volume_type of this NodeGroupV11.
+        r"""Gets the root_volume_type of this NodeGroupV11.
 
         节点系统磁盘存储类别，目前支持SATA、SAS和SSD。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
 
@@ -195,7 +195,7 @@ class NodeGroupV11:
 
     @root_volume_type.setter
     def root_volume_type(self, root_volume_type):
-        """Sets the root_volume_type of this NodeGroupV11.
+        r"""Sets the root_volume_type of this NodeGroupV11.
 
         节点系统磁盘存储类别，目前支持SATA、SAS和SSD。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
 
@@ -206,7 +206,7 @@ class NodeGroupV11:
 
     @property
     def data_volume_type(self):
-        """Gets the data_volume_type of this NodeGroupV11.
+        r"""Gets the data_volume_type of this NodeGroupV11.
 
         节点数据磁盘存储类别，目前支持SATA、SAS和SSD。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
 
@@ -217,7 +217,7 @@ class NodeGroupV11:
 
     @data_volume_type.setter
     def data_volume_type(self, data_volume_type):
-        """Sets the data_volume_type of this NodeGroupV11.
+        r"""Sets the data_volume_type of this NodeGroupV11.
 
         节点数据磁盘存储类别，目前支持SATA、SAS和SSD。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
 
@@ -228,7 +228,7 @@ class NodeGroupV11:
 
     @property
     def data_volume_count(self):
-        """Gets the data_volume_count of this NodeGroupV11.
+        r"""Gets the data_volume_count of this NodeGroupV11.
 
         节点数据磁盘存储数目 取值范围：0～20。
 
@@ -239,7 +239,7 @@ class NodeGroupV11:
 
     @data_volume_count.setter
     def data_volume_count(self, data_volume_count):
-        """Sets the data_volume_count of this NodeGroupV11.
+        r"""Sets the data_volume_count of this NodeGroupV11.
 
         节点数据磁盘存储数目 取值范围：0～20。
 
@@ -250,7 +250,7 @@ class NodeGroupV11:
 
     @property
     def data_volume_size(self):
-        """Gets the data_volume_size of this NodeGroupV11.
+        r"""Gets the data_volume_size of this NodeGroupV11.
 
         节点数据磁盘存储大小 取值范围：100GB～32000GB。
 
@@ -261,7 +261,7 @@ class NodeGroupV11:
 
     @data_volume_size.setter
     def data_volume_size(self, data_volume_size):
-        """Sets the data_volume_size of this NodeGroupV11.
+        r"""Sets the data_volume_size of this NodeGroupV11.
 
         节点数据磁盘存储大小 取值范围：100GB～32000GB。
 
@@ -272,7 +272,7 @@ class NodeGroupV11:
 
     @property
     def auto_scaling_policy(self):
-        """Gets the auto_scaling_policy of this NodeGroupV11.
+        r"""Gets the auto_scaling_policy of this NodeGroupV11.
 
         :return: The auto_scaling_policy of this NodeGroupV11.
         :rtype: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicy`
@@ -281,7 +281,7 @@ class NodeGroupV11:
 
     @auto_scaling_policy.setter
     def auto_scaling_policy(self, auto_scaling_policy):
-        """Sets the auto_scaling_policy of this NodeGroupV11.
+        r"""Sets the auto_scaling_policy of this NodeGroupV11.
 
         :param auto_scaling_policy: The auto_scaling_policy of this NodeGroupV11.
         :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicy`

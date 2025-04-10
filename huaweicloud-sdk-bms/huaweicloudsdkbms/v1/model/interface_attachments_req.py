@@ -25,7 +25,7 @@ class InterfaceAttachmentsReq:
     }
 
     def __init__(self, delete_on_termination=None):
-        """InterfaceAttachmentsReq
+        r"""InterfaceAttachmentsReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class InterfaceAttachmentsReq:
 
     @property
     def delete_on_termination(self):
-        """Gets the delete_on_termination of this InterfaceAttachmentsReq.
+        r"""Gets the delete_on_termination of this InterfaceAttachmentsReq.
 
         :return: The delete_on_termination of this InterfaceAttachmentsReq.
         :rtype: bool
@@ -51,7 +51,7 @@ class InterfaceAttachmentsReq:
 
     @delete_on_termination.setter
     def delete_on_termination(self, delete_on_termination):
-        """Sets the delete_on_termination of this InterfaceAttachmentsReq.
+        r"""Sets the delete_on_termination of this InterfaceAttachmentsReq.
 
         :param delete_on_termination: The delete_on_termination of this InterfaceAttachmentsReq.
         :type delete_on_termination: bool

@@ -27,7 +27,7 @@ class DeleteConnctionRequest:
     }
 
     def __init__(self, workspace=None, connection_name=None):
-        """DeleteConnctionRequest
+        r"""DeleteConnctionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteConnctionRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteConnctionRequest.
+        r"""Gets the workspace of this DeleteConnctionRequest.
 
         工作空间id
 
@@ -60,7 +60,7 @@ class DeleteConnctionRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteConnctionRequest.
+        r"""Sets the workspace of this DeleteConnctionRequest.
 
         工作空间id
 
@@ -71,7 +71,7 @@ class DeleteConnctionRequest:
 
     @property
     def connection_name(self):
-        """Gets the connection_name of this DeleteConnctionRequest.
+        r"""Gets the connection_name of this DeleteConnctionRequest.
 
         连接名称.
 
@@ -82,7 +82,7 @@ class DeleteConnctionRequest:
 
     @connection_name.setter
     def connection_name(self, connection_name):
-        """Sets the connection_name of this DeleteConnctionRequest.
+        r"""Sets the connection_name of this DeleteConnctionRequest.
 
         连接名称.
 

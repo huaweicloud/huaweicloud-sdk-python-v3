@@ -37,7 +37,7 @@ class ShowProjectWorkHoursRequestBody:
     }
 
     def __init__(self, user_ids=None, work_hours_types=None, work_hours_dates=None, begin_time=None, end_time=None, offset=None, limit=None):
-        """ShowProjectWorkHoursRequestBody
+        r"""ShowProjectWorkHoursRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ShowProjectWorkHoursRequestBody:
 
     @property
     def user_ids(self):
-        """Gets the user_ids of this ShowProjectWorkHoursRequestBody.
+        r"""Gets the user_ids of this ShowProjectWorkHoursRequestBody.
 
         查询的用户id列表
 
@@ -94,7 +94,7 @@ class ShowProjectWorkHoursRequestBody:
 
     @user_ids.setter
     def user_ids(self, user_ids):
-        """Sets the user_ids of this ShowProjectWorkHoursRequestBody.
+        r"""Sets the user_ids of this ShowProjectWorkHoursRequestBody.
 
         查询的用户id列表
 
@@ -105,7 +105,7 @@ class ShowProjectWorkHoursRequestBody:
 
     @property
     def work_hours_types(self):
-        """Gets the work_hours_types of this ShowProjectWorkHoursRequestBody.
+        r"""Gets the work_hours_types of this ShowProjectWorkHoursRequestBody.
 
         工时类型，以逗号分隔,21:研发设计,22:后端开发,23:前端开发(Web),24:前端开发(小程序),25:前端开发(App),26:测试验证,27:缺陷修复,28:UI设计,29:会议,30:公共事务,31:培训,32:研究,33:其它,34:调休请假
 
@@ -116,7 +116,7 @@ class ShowProjectWorkHoursRequestBody:
 
     @work_hours_types.setter
     def work_hours_types(self, work_hours_types):
-        """Sets the work_hours_types of this ShowProjectWorkHoursRequestBody.
+        r"""Sets the work_hours_types of this ShowProjectWorkHoursRequestBody.
 
         工时类型，以逗号分隔,21:研发设计,22:后端开发,23:前端开发(Web),24:前端开发(小程序),25:前端开发(App),26:测试验证,27:缺陷修复,28:UI设计,29:会议,30:公共事务,31:培训,32:研究,33:其它,34:调休请假
 
@@ -127,7 +127,7 @@ class ShowProjectWorkHoursRequestBody:
 
     @property
     def work_hours_dates(self):
-        """Gets the work_hours_dates of this ShowProjectWorkHoursRequestBody.
+        r"""Gets the work_hours_dates of this ShowProjectWorkHoursRequestBody.
 
         工时日期，以逗号分隔，年-月-日
 
@@ -138,7 +138,7 @@ class ShowProjectWorkHoursRequestBody:
 
     @work_hours_dates.setter
     def work_hours_dates(self, work_hours_dates):
-        """Sets the work_hours_dates of this ShowProjectWorkHoursRequestBody.
+        r"""Sets the work_hours_dates of this ShowProjectWorkHoursRequestBody.
 
         工时日期，以逗号分隔，年-月-日
 
@@ -149,7 +149,7 @@ class ShowProjectWorkHoursRequestBody:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowProjectWorkHoursRequestBody.
+        r"""Gets the begin_time of this ShowProjectWorkHoursRequestBody.
 
         工时开始日期，年-月-日
 
@@ -160,7 +160,7 @@ class ShowProjectWorkHoursRequestBody:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowProjectWorkHoursRequestBody.
+        r"""Sets the begin_time of this ShowProjectWorkHoursRequestBody.
 
         工时开始日期，年-月-日
 
@@ -171,7 +171,7 @@ class ShowProjectWorkHoursRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowProjectWorkHoursRequestBody.
+        r"""Gets the end_time of this ShowProjectWorkHoursRequestBody.
 
         工时结束日期，年-月-日
 
@@ -182,7 +182,7 @@ class ShowProjectWorkHoursRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowProjectWorkHoursRequestBody.
+        r"""Sets the end_time of this ShowProjectWorkHoursRequestBody.
 
         工时结束日期，年-月-日
 
@@ -193,7 +193,7 @@ class ShowProjectWorkHoursRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowProjectWorkHoursRequestBody.
+        r"""Gets the offset of this ShowProjectWorkHoursRequestBody.
 
         偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
@@ -204,7 +204,7 @@ class ShowProjectWorkHoursRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowProjectWorkHoursRequestBody.
+        r"""Sets the offset of this ShowProjectWorkHoursRequestBody.
 
         偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
@@ -215,7 +215,7 @@ class ShowProjectWorkHoursRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowProjectWorkHoursRequestBody.
+        r"""Gets the limit of this ShowProjectWorkHoursRequestBody.
 
         每页显示数量，每页最多显示100条
 
@@ -226,7 +226,7 @@ class ShowProjectWorkHoursRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowProjectWorkHoursRequestBody.
+        r"""Sets the limit of this ShowProjectWorkHoursRequestBody.
 
         每页显示数量，每页最多显示100条
 

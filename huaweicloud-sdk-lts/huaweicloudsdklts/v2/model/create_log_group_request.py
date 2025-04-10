@@ -25,7 +25,7 @@ class CreateLogGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateLogGroupRequest
+        r"""CreateLogGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateLogGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLogGroupRequest.
+        r"""Gets the body of this CreateLogGroupRequest.
 
         :return: The body of this CreateLogGroupRequest.
         :rtype: :class:`huaweicloudsdklts.v2.CreateLogGroupParams`
@@ -52,7 +52,7 @@ class CreateLogGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLogGroupRequest.
+        r"""Sets the body of this CreateLogGroupRequest.
 
         :param body: The body of this CreateLogGroupRequest.
         :type body: :class:`huaweicloudsdklts.v2.CreateLogGroupParams`

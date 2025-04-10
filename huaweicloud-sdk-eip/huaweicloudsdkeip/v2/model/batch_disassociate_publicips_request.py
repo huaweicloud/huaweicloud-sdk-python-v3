@@ -25,7 +25,7 @@ class BatchDisassociatePublicipsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDisassociatePublicipsRequest
+        r"""BatchDisassociatePublicipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDisassociatePublicipsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDisassociatePublicipsRequest.
+        r"""Gets the body of this BatchDisassociatePublicipsRequest.
 
         :return: The body of this BatchDisassociatePublicipsRequest.
         :rtype: :class:`huaweicloudsdkeip.v2.BatchDeletePublicIpRequestBody`
@@ -52,7 +52,7 @@ class BatchDisassociatePublicipsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDisassociatePublicipsRequest.
+        r"""Sets the body of this BatchDisassociatePublicipsRequest.
 
         :param body: The body of this BatchDisassociatePublicipsRequest.
         :type body: :class:`huaweicloudsdkeip.v2.BatchDeletePublicIpRequestBody`

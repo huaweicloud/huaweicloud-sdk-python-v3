@@ -26,7 +26,7 @@ class UpdateSpeedResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateSpeedResponse
+        r"""UpdateSpeedResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateSpeedResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateSpeedResponse.
+        r"""Gets the body of this UpdateSpeedResponse.
 
         设置迁移限速规则成功
 
@@ -55,7 +55,7 @@ class UpdateSpeedResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSpeedResponse.
+        r"""Sets the body of this UpdateSpeedResponse.
 
         设置迁移限速规则成功
 

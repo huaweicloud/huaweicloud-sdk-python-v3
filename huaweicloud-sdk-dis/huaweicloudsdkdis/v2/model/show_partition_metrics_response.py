@@ -26,7 +26,7 @@ class ShowPartitionMetricsResponse(SdkResponse):
     }
 
     def __init__(self, metrics=None):
-        """ShowPartitionMetricsResponse
+        r"""ShowPartitionMetricsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPartitionMetricsResponse(SdkResponse):
 
     @property
     def metrics(self):
-        """Gets the metrics of this ShowPartitionMetricsResponse.
+        r"""Gets the metrics of this ShowPartitionMetricsResponse.
 
         :return: The metrics of this ShowPartitionMetricsResponse.
         :rtype: :class:`huaweicloudsdkdis.v2.Metrics`
@@ -53,7 +53,7 @@ class ShowPartitionMetricsResponse(SdkResponse):
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ShowPartitionMetricsResponse.
+        r"""Sets the metrics of this ShowPartitionMetricsResponse.
 
         :param metrics: The metrics of this ShowPartitionMetricsResponse.
         :type metrics: :class:`huaweicloudsdkdis.v2.Metrics`

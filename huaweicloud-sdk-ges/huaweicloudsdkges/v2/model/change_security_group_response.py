@@ -26,7 +26,7 @@ class ChangeSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ChangeSecurityGroupResponse
+        r"""ChangeSecurityGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeSecurityGroupResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ChangeSecurityGroupResponse.
+        r"""Gets the body of this ChangeSecurityGroupResponse.
 
         :return: The body of this ChangeSecurityGroupResponse.
         :rtype: dict(str, str)
@@ -53,7 +53,7 @@ class ChangeSecurityGroupResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeSecurityGroupResponse.
+        r"""Sets the body of this ChangeSecurityGroupResponse.
 
         :param body: The body of this ChangeSecurityGroupResponse.
         :type body: dict(str, str)

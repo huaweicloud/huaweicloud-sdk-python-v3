@@ -29,7 +29,7 @@ class Interaction:
     }
 
     def __init__(self, binding_site=None, type=None, amino_acid=None):
-        """Interaction
+        r"""Interaction
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Interaction:
 
     @property
     def binding_site(self):
-        """Gets the binding_site of this Interaction.
+        r"""Gets the binding_site of this Interaction.
 
         靶点，只支持target1或target2。
 
@@ -65,7 +65,7 @@ class Interaction:
 
     @binding_site.setter
     def binding_site(self, binding_site):
-        """Sets the binding_site of this Interaction.
+        r"""Sets the binding_site of this Interaction.
 
         靶点，只支持target1或target2。
 
@@ -76,7 +76,7 @@ class Interaction:
 
     @property
     def type(self):
-        """Gets the type of this Interaction.
+        r"""Gets the type of this Interaction.
 
         :return: The type of this Interaction.
         :rtype: :class:`huaweicloudsdkeihealth.v1.InteractionType`
@@ -85,7 +85,7 @@ class Interaction:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Interaction.
+        r"""Sets the type of this Interaction.
 
         :param type: The type of this Interaction.
         :type type: :class:`huaweicloudsdkeihealth.v1.InteractionType`
@@ -94,7 +94,7 @@ class Interaction:
 
     @property
     def amino_acid(self):
-        """Gets the amino_acid of this Interaction.
+        r"""Gets the amino_acid of this Interaction.
 
         氨基酸
 
@@ -105,7 +105,7 @@ class Interaction:
 
     @amino_acid.setter
     def amino_acid(self, amino_acid):
-        """Sets the amino_acid of this Interaction.
+        r"""Sets the amino_acid of this Interaction.
 
         氨基酸
 

@@ -29,7 +29,7 @@ class ResetMessageOffsetRequest:
     }
 
     def __init__(self, instance_id=None, group=None, body=None):
-        """ResetMessageOffsetRequest
+        r"""ResetMessageOffsetRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResetMessageOffsetRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetMessageOffsetRequest.
+        r"""Gets the instance_id of this ResetMessageOffsetRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class ResetMessageOffsetRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetMessageOffsetRequest.
+        r"""Sets the instance_id of this ResetMessageOffsetRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class ResetMessageOffsetRequest:
 
     @property
     def group(self):
-        """Gets the group of this ResetMessageOffsetRequest.
+        r"""Gets the group of this ResetMessageOffsetRequest.
 
         消费组名称。
 
@@ -88,7 +88,7 @@ class ResetMessageOffsetRequest:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ResetMessageOffsetRequest.
+        r"""Sets the group of this ResetMessageOffsetRequest.
 
         消费组名称。
 
@@ -99,7 +99,7 @@ class ResetMessageOffsetRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetMessageOffsetRequest.
+        r"""Gets the body of this ResetMessageOffsetRequest.
 
         :return: The body of this ResetMessageOffsetRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetReq`
@@ -108,7 +108,7 @@ class ResetMessageOffsetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetMessageOffsetRequest.
+        r"""Sets the body of this ResetMessageOffsetRequest.
 
         :param body: The body of this ResetMessageOffsetRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetReq`

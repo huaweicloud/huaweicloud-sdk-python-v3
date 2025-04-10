@@ -33,7 +33,7 @@ class AvailabilityZones:
     }
 
     def __init__(self, region_id=None, id=None, display_name=None, status=None, type=None):
-        """AvailabilityZones
+        r"""AvailabilityZones
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class AvailabilityZones:
 
     @property
     def region_id(self):
-        """Gets the region_id of this AvailabilityZones.
+        r"""Gets the region_id of this AvailabilityZones.
 
         可用区ID。
 
@@ -78,7 +78,7 @@ class AvailabilityZones:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this AvailabilityZones.
+        r"""Sets the region_id of this AvailabilityZones.
 
         可用区ID。
 
@@ -89,7 +89,7 @@ class AvailabilityZones:
 
     @property
     def id(self):
-        """Gets the id of this AvailabilityZones.
+        r"""Gets the id of this AvailabilityZones.
 
         可用分区ID。
 
@@ -100,7 +100,7 @@ class AvailabilityZones:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AvailabilityZones.
+        r"""Sets the id of this AvailabilityZones.
 
         可用分区ID。
 
@@ -111,7 +111,7 @@ class AvailabilityZones:
 
     @property
     def display_name(self):
-        """Gets the display_name of this AvailabilityZones.
+        r"""Gets the display_name of this AvailabilityZones.
 
         可用分区显示名称。
 
@@ -122,7 +122,7 @@ class AvailabilityZones:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this AvailabilityZones.
+        r"""Sets the display_name of this AvailabilityZones.
 
         可用分区显示名称。
 
@@ -133,7 +133,7 @@ class AvailabilityZones:
 
     @property
     def status(self):
-        """Gets the status of this AvailabilityZones.
+        r"""Gets the status of this AvailabilityZones.
 
         可用分区状态。 - Running：运行中
 
@@ -144,7 +144,7 @@ class AvailabilityZones:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AvailabilityZones.
+        r"""Sets the status of this AvailabilityZones.
 
         可用分区状态。 - Running：运行中
 
@@ -155,7 +155,7 @@ class AvailabilityZones:
 
     @property
     def type(self):
-        """Gets the type of this AvailabilityZones.
+        r"""Gets the type of this AvailabilityZones.
 
         可用分区类型。 - Core：核心可用区 - Dedicated：专属可用区，只对内部客户开放
 
@@ -166,7 +166,7 @@ class AvailabilityZones:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AvailabilityZones.
+        r"""Sets the type of this AvailabilityZones.
 
         可用分区类型。 - Core：核心可用区 - Dedicated：专属可用区，只对内部客户开放
 

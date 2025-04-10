@@ -26,7 +26,7 @@ class UpdatePipelineGroupResponse(SdkResponse):
     }
 
     def __init__(self, success=None):
-        """UpdatePipelineGroupResponse
+        r"""UpdatePipelineGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdatePipelineGroupResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this UpdatePipelineGroupResponse.
+        r"""Gets the success of this UpdatePipelineGroupResponse.
 
         操作是否成功
 
@@ -55,7 +55,7 @@ class UpdatePipelineGroupResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this UpdatePipelineGroupResponse.
+        r"""Sets the success of this UpdatePipelineGroupResponse.
 
         操作是否成功
 

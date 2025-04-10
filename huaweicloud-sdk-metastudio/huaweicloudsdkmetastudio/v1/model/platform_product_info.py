@@ -27,7 +27,7 @@ class PlatformProductInfo:
     }
 
     def __init__(self, product_id=None, product_title=None):
-        """PlatformProductInfo
+        r"""PlatformProductInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PlatformProductInfo:
 
     @property
     def product_id(self):
-        """Gets the product_id of this PlatformProductInfo.
+        r"""Gets the product_id of this PlatformProductInfo.
 
         商品id
 
@@ -61,7 +61,7 @@ class PlatformProductInfo:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this PlatformProductInfo.
+        r"""Sets the product_id of this PlatformProductInfo.
 
         商品id
 
@@ -72,7 +72,7 @@ class PlatformProductInfo:
 
     @property
     def product_title(self):
-        """Gets the product_title of this PlatformProductInfo.
+        r"""Gets the product_title of this PlatformProductInfo.
 
         商品标题
 
@@ -83,7 +83,7 @@ class PlatformProductInfo:
 
     @product_title.setter
     def product_title(self, product_title):
-        """Sets the product_title of this PlatformProductInfo.
+        r"""Sets the product_title of this PlatformProductInfo.
 
         商品标题
 

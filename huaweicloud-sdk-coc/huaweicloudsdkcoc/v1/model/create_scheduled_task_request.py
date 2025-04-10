@@ -25,7 +25,7 @@ class CreateScheduledTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateScheduledTaskRequest
+        r"""CreateScheduledTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateScheduledTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateScheduledTaskRequest.
+        r"""Gets the body of this CreateScheduledTaskRequest.
 
         :return: The body of this CreateScheduledTaskRequest.
         :rtype: :class:`huaweicloudsdkcoc.v1.ScheduledTaskRequestBody`
@@ -52,7 +52,7 @@ class CreateScheduledTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateScheduledTaskRequest.
+        r"""Sets the body of this CreateScheduledTaskRequest.
 
         :param body: The body of this CreateScheduledTaskRequest.
         :type body: :class:`huaweicloudsdkcoc.v1.ScheduledTaskRequestBody`

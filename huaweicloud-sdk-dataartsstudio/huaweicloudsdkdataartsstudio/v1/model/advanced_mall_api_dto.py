@@ -53,7 +53,7 @@ class AdvancedMallApiDTO:
     }
 
     def __init__(self, id=None, name=None, auth_type=None, application_num=None, call_num=None, user_name=None, create_time=None, update_time=None, is_owner=None, is_authorized=None, is_update_recently=None, is_release_recently=None, is_hot_recently=None, success_rate=None, failure_rate=None):
-        """AdvancedMallApiDTO
+        r"""AdvancedMallApiDTO
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class AdvancedMallApiDTO:
 
     @property
     def id(self):
-        """Gets the id of this AdvancedMallApiDTO.
+        r"""Gets the id of this AdvancedMallApiDTO.
 
         API ID。
 
@@ -152,7 +152,7 @@ class AdvancedMallApiDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AdvancedMallApiDTO.
+        r"""Sets the id of this AdvancedMallApiDTO.
 
         API ID。
 
@@ -163,7 +163,7 @@ class AdvancedMallApiDTO:
 
     @property
     def name(self):
-        """Gets the name of this AdvancedMallApiDTO.
+        r"""Gets the name of this AdvancedMallApiDTO.
 
         API名称。
 
@@ -174,7 +174,7 @@ class AdvancedMallApiDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AdvancedMallApiDTO.
+        r"""Sets the name of this AdvancedMallApiDTO.
 
         API名称。
 
@@ -185,7 +185,7 @@ class AdvancedMallApiDTO:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this AdvancedMallApiDTO.
+        r"""Gets the auth_type of this AdvancedMallApiDTO.
 
         认证类型。
 
@@ -196,7 +196,7 @@ class AdvancedMallApiDTO:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this AdvancedMallApiDTO.
+        r"""Sets the auth_type of this AdvancedMallApiDTO.
 
         认证类型。
 
@@ -207,7 +207,7 @@ class AdvancedMallApiDTO:
 
     @property
     def application_num(self):
-        """Gets the application_num of this AdvancedMallApiDTO.
+        r"""Gets the application_num of this AdvancedMallApiDTO.
 
         授权使用的应用数量。
 
@@ -218,7 +218,7 @@ class AdvancedMallApiDTO:
 
     @application_num.setter
     def application_num(self, application_num):
-        """Sets the application_num of this AdvancedMallApiDTO.
+        r"""Sets the application_num of this AdvancedMallApiDTO.
 
         授权使用的应用数量。
 
@@ -229,7 +229,7 @@ class AdvancedMallApiDTO:
 
     @property
     def call_num(self):
-        """Gets the call_num of this AdvancedMallApiDTO.
+        r"""Gets the call_num of this AdvancedMallApiDTO.
 
         被调用量。
 
@@ -240,7 +240,7 @@ class AdvancedMallApiDTO:
 
     @call_num.setter
     def call_num(self, call_num):
-        """Sets the call_num of this AdvancedMallApiDTO.
+        r"""Sets the call_num of this AdvancedMallApiDTO.
 
         被调用量。
 
@@ -251,7 +251,7 @@ class AdvancedMallApiDTO:
 
     @property
     def user_name(self):
-        """Gets the user_name of this AdvancedMallApiDTO.
+        r"""Gets the user_name of this AdvancedMallApiDTO.
 
         创建者。
 
@@ -262,7 +262,7 @@ class AdvancedMallApiDTO:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this AdvancedMallApiDTO.
+        r"""Sets the user_name of this AdvancedMallApiDTO.
 
         创建者。
 
@@ -273,7 +273,7 @@ class AdvancedMallApiDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AdvancedMallApiDTO.
+        r"""Gets the create_time of this AdvancedMallApiDTO.
 
         创建时间。
 
@@ -284,7 +284,7 @@ class AdvancedMallApiDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AdvancedMallApiDTO.
+        r"""Sets the create_time of this AdvancedMallApiDTO.
 
         创建时间。
 
@@ -295,7 +295,7 @@ class AdvancedMallApiDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AdvancedMallApiDTO.
+        r"""Gets the update_time of this AdvancedMallApiDTO.
 
         更新时间。
 
@@ -306,7 +306,7 @@ class AdvancedMallApiDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AdvancedMallApiDTO.
+        r"""Sets the update_time of this AdvancedMallApiDTO.
 
         更新时间。
 
@@ -317,7 +317,7 @@ class AdvancedMallApiDTO:
 
     @property
     def is_owner(self):
-        """Gets the is_owner of this AdvancedMallApiDTO.
+        r"""Gets the is_owner of this AdvancedMallApiDTO.
 
         是否当前空间的API。
 
@@ -328,7 +328,7 @@ class AdvancedMallApiDTO:
 
     @is_owner.setter
     def is_owner(self, is_owner):
-        """Sets the is_owner of this AdvancedMallApiDTO.
+        r"""Sets the is_owner of this AdvancedMallApiDTO.
 
         是否当前空间的API。
 
@@ -339,7 +339,7 @@ class AdvancedMallApiDTO:
 
     @property
     def is_authorized(self):
-        """Gets the is_authorized of this AdvancedMallApiDTO.
+        r"""Gets the is_authorized of this AdvancedMallApiDTO.
 
         是否已被授权。
 
@@ -350,7 +350,7 @@ class AdvancedMallApiDTO:
 
     @is_authorized.setter
     def is_authorized(self, is_authorized):
-        """Sets the is_authorized of this AdvancedMallApiDTO.
+        r"""Sets the is_authorized of this AdvancedMallApiDTO.
 
         是否已被授权。
 
@@ -361,7 +361,7 @@ class AdvancedMallApiDTO:
 
     @property
     def is_update_recently(self):
-        """Gets the is_update_recently of this AdvancedMallApiDTO.
+        r"""Gets the is_update_recently of this AdvancedMallApiDTO.
 
         是否最近更新（三天内更新过该API）。
 
@@ -372,7 +372,7 @@ class AdvancedMallApiDTO:
 
     @is_update_recently.setter
     def is_update_recently(self, is_update_recently):
-        """Sets the is_update_recently of this AdvancedMallApiDTO.
+        r"""Sets the is_update_recently of this AdvancedMallApiDTO.
 
         是否最近更新（三天内更新过该API）。
 
@@ -383,7 +383,7 @@ class AdvancedMallApiDTO:
 
     @property
     def is_release_recently(self):
-        """Gets the is_release_recently of this AdvancedMallApiDTO.
+        r"""Gets the is_release_recently of this AdvancedMallApiDTO.
 
         是否新品上市（三天内新发布的API）。
 
@@ -394,7 +394,7 @@ class AdvancedMallApiDTO:
 
     @is_release_recently.setter
     def is_release_recently(self, is_release_recently):
-        """Sets the is_release_recently of this AdvancedMallApiDTO.
+        r"""Sets the is_release_recently of this AdvancedMallApiDTO.
 
         是否新品上市（三天内新发布的API）。
 
@@ -405,7 +405,7 @@ class AdvancedMallApiDTO:
 
     @property
     def is_hot_recently(self):
-        """Gets the is_hot_recently of this AdvancedMallApiDTO.
+        r"""Gets the is_hot_recently of this AdvancedMallApiDTO.
 
         是否热销产品（三天内有其他空间用户申请该API）。
 
@@ -416,7 +416,7 @@ class AdvancedMallApiDTO:
 
     @is_hot_recently.setter
     def is_hot_recently(self, is_hot_recently):
-        """Sets the is_hot_recently of this AdvancedMallApiDTO.
+        r"""Sets the is_hot_recently of this AdvancedMallApiDTO.
 
         是否热销产品（三天内有其他空间用户申请该API）。
 
@@ -427,7 +427,7 @@ class AdvancedMallApiDTO:
 
     @property
     def success_rate(self):
-        """Gets the success_rate of this AdvancedMallApiDTO.
+        r"""Gets the success_rate of this AdvancedMallApiDTO.
 
         7天内调用成功率。
 
@@ -438,7 +438,7 @@ class AdvancedMallApiDTO:
 
     @success_rate.setter
     def success_rate(self, success_rate):
-        """Sets the success_rate of this AdvancedMallApiDTO.
+        r"""Sets the success_rate of this AdvancedMallApiDTO.
 
         7天内调用成功率。
 
@@ -449,7 +449,7 @@ class AdvancedMallApiDTO:
 
     @property
     def failure_rate(self):
-        """Gets the failure_rate of this AdvancedMallApiDTO.
+        r"""Gets the failure_rate of this AdvancedMallApiDTO.
 
         7天内调用失败率。
 
@@ -460,7 +460,7 @@ class AdvancedMallApiDTO:
 
     @failure_rate.setter
     def failure_rate(self, failure_rate):
-        """Sets the failure_rate of this AdvancedMallApiDTO.
+        r"""Sets the failure_rate of this AdvancedMallApiDTO.
 
         7天内调用失败率。
 

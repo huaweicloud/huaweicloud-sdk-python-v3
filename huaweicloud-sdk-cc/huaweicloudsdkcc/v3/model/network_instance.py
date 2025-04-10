@@ -51,7 +51,7 @@ class NetworkInstance:
     }
 
     def __init__(self, id=None, name=None, description=None, domain_id=None, created_at=None, updated_at=None, cloud_connection_id=None, instance_id=None, instance_domain_id=None, region_id=None, project_id=None, status=None, type=None, cidrs=None):
-        """NetworkInstance
+        r"""NetworkInstance
 
         The model defined in huaweicloud sdk
 
@@ -125,7 +125,7 @@ class NetworkInstance:
 
     @property
     def id(self):
-        """Gets the id of this NetworkInstance.
+        r"""Gets the id of this NetworkInstance.
 
         实例ID。
 
@@ -136,7 +136,7 @@ class NetworkInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NetworkInstance.
+        r"""Sets the id of this NetworkInstance.
 
         实例ID。
 
@@ -147,7 +147,7 @@ class NetworkInstance:
 
     @property
     def name(self):
-        """Gets the name of this NetworkInstance.
+        r"""Gets the name of this NetworkInstance.
 
         实例名字。
 
@@ -158,7 +158,7 @@ class NetworkInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NetworkInstance.
+        r"""Sets the name of this NetworkInstance.
 
         实例名字。
 
@@ -169,7 +169,7 @@ class NetworkInstance:
 
     @property
     def description(self):
-        """Gets the description of this NetworkInstance.
+        r"""Gets the description of this NetworkInstance.
 
         实例描述。不支持 <>。
 
@@ -180,7 +180,7 @@ class NetworkInstance:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NetworkInstance.
+        r"""Sets the description of this NetworkInstance.
 
         实例描述。不支持 <>。
 
@@ -191,7 +191,7 @@ class NetworkInstance:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this NetworkInstance.
+        r"""Gets the domain_id of this NetworkInstance.
 
         实例所属账号ID。
 
@@ -202,7 +202,7 @@ class NetworkInstance:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this NetworkInstance.
+        r"""Sets the domain_id of this NetworkInstance.
 
         实例所属账号ID。
 
@@ -213,7 +213,7 @@ class NetworkInstance:
 
     @property
     def created_at(self):
-        """Gets the created_at of this NetworkInstance.
+        r"""Gets the created_at of this NetworkInstance.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -224,7 +224,7 @@ class NetworkInstance:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this NetworkInstance.
+        r"""Sets the created_at of this NetworkInstance.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -235,7 +235,7 @@ class NetworkInstance:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this NetworkInstance.
+        r"""Gets the updated_at of this NetworkInstance.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -246,7 +246,7 @@ class NetworkInstance:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this NetworkInstance.
+        r"""Sets the updated_at of this NetworkInstance.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -257,7 +257,7 @@ class NetworkInstance:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this NetworkInstance.
+        r"""Gets the cloud_connection_id of this NetworkInstance.
 
         云连接实例ID。
 
@@ -268,7 +268,7 @@ class NetworkInstance:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this NetworkInstance.
+        r"""Sets the cloud_connection_id of this NetworkInstance.
 
         云连接实例ID。
 
@@ -279,7 +279,7 @@ class NetworkInstance:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this NetworkInstance.
+        r"""Gets the instance_id of this NetworkInstance.
 
         网络实例（VPC，VGW）的ID。
 
@@ -290,7 +290,7 @@ class NetworkInstance:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this NetworkInstance.
+        r"""Sets the instance_id of this NetworkInstance.
 
         网络实例（VPC，VGW）的ID。
 
@@ -301,7 +301,7 @@ class NetworkInstance:
 
     @property
     def instance_domain_id(self):
-        """Gets the instance_domain_id of this NetworkInstance.
+        r"""Gets the instance_domain_id of this NetworkInstance.
 
         网络实例（VPC，VGW）所属账号ID。
 
@@ -312,7 +312,7 @@ class NetworkInstance:
 
     @instance_domain_id.setter
     def instance_domain_id(self, instance_domain_id):
-        """Sets the instance_domain_id of this NetworkInstance.
+        r"""Sets the instance_domain_id of this NetworkInstance.
 
         网络实例（VPC，VGW）所属账号ID。
 
@@ -323,7 +323,7 @@ class NetworkInstance:
 
     @property
     def region_id(self):
-        """Gets the region_id of this NetworkInstance.
+        r"""Gets the region_id of this NetworkInstance.
 
         RegionID。
 
@@ -334,7 +334,7 @@ class NetworkInstance:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this NetworkInstance.
+        r"""Sets the region_id of this NetworkInstance.
 
         RegionID。
 
@@ -345,7 +345,7 @@ class NetworkInstance:
 
     @property
     def project_id(self):
-        """Gets the project_id of this NetworkInstance.
+        r"""Gets the project_id of this NetworkInstance.
 
         实例所属项目ID。
 
@@ -356,7 +356,7 @@ class NetworkInstance:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this NetworkInstance.
+        r"""Sets the project_id of this NetworkInstance.
 
         实例所属项目ID。
 
@@ -367,7 +367,7 @@ class NetworkInstance:
 
     @property
     def status(self):
-        """Gets the status of this NetworkInstance.
+        r"""Gets the status of this NetworkInstance.
 
         网络实例的状态。 - ACTIVE：处理成功。 - PENDING：处理中。 - ERROR：处理失败。
 
@@ -378,7 +378,7 @@ class NetworkInstance:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NetworkInstance.
+        r"""Sets the status of this NetworkInstance.
 
         网络实例的状态。 - ACTIVE：处理成功。 - PENDING：处理中。 - ERROR：处理失败。
 
@@ -389,7 +389,7 @@ class NetworkInstance:
 
     @property
     def type(self):
-        """Gets the type of this NetworkInstance.
+        r"""Gets the type of this NetworkInstance.
 
         网络实例的类型。 - vpc：虚拟私有云。 - vgw：虚拟网关。
 
@@ -400,7 +400,7 @@ class NetworkInstance:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NetworkInstance.
+        r"""Sets the type of this NetworkInstance.
 
         网络实例的类型。 - vpc：虚拟私有云。 - vgw：虚拟网关。
 
@@ -411,7 +411,7 @@ class NetworkInstance:
 
     @property
     def cidrs(self):
-        """Gets the cidrs of this NetworkInstance.
+        r"""Gets the cidrs of this NetworkInstance.
 
         网络实例发布的网段路由列表。
 
@@ -422,7 +422,7 @@ class NetworkInstance:
 
     @cidrs.setter
     def cidrs(self, cidrs):
-        """Sets the cidrs of this NetworkInstance.
+        r"""Sets the cidrs of this NetworkInstance.
 
         网络实例发布的网段路由列表。
 

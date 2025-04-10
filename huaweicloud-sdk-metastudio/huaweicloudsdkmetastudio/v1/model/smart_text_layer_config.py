@@ -35,7 +35,7 @@ class SmartTextLayerConfig:
     }
 
     def __init__(self, text_type=None, text_context=None, font_name=None, font_size=None, font_color=None, display_duration=None):
-        """SmartTextLayerConfig
+        r"""SmartTextLayerConfig
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SmartTextLayerConfig:
 
     @property
     def text_type(self):
-        """Gets the text_type of this SmartTextLayerConfig.
+        r"""Gets the text_type of this SmartTextLayerConfig.
 
         **参数解释**： 文本类型。 * DYNAMIC：动态文本，需要进行关键字替换。 * STATIC：静态文本。
 
@@ -89,7 +89,7 @@ class SmartTextLayerConfig:
 
     @text_type.setter
     def text_type(self, text_type):
-        """Sets the text_type of this SmartTextLayerConfig.
+        r"""Sets the text_type of this SmartTextLayerConfig.
 
         **参数解释**： 文本类型。 * DYNAMIC：动态文本，需要进行关键字替换。 * STATIC：静态文本。
 
@@ -100,7 +100,7 @@ class SmartTextLayerConfig:
 
     @property
     def text_context(self):
-        """Gets the text_context of this SmartTextLayerConfig.
+        r"""Gets the text_context of this SmartTextLayerConfig.
 
         文本。
 
@@ -111,7 +111,7 @@ class SmartTextLayerConfig:
 
     @text_context.setter
     def text_context(self, text_context):
-        """Sets the text_context of this SmartTextLayerConfig.
+        r"""Sets the text_context of this SmartTextLayerConfig.
 
         文本。
 
@@ -122,7 +122,7 @@ class SmartTextLayerConfig:
 
     @property
     def font_name(self):
-        """Gets the font_name of this SmartTextLayerConfig.
+        r"""Gets the font_name of this SmartTextLayerConfig.
 
         **参数解释**： 字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体 * fzyouh：方正瘦体
 
@@ -133,7 +133,7 @@ class SmartTextLayerConfig:
 
     @font_name.setter
     def font_name(self, font_name):
-        """Sets the font_name of this SmartTextLayerConfig.
+        r"""Sets the font_name of this SmartTextLayerConfig.
 
         **参数解释**： 字体。当前支持的字体： * HarmonyOS_Sans_SC_Black：鸿蒙粗体 * HarmonyOS_Sans_SC_Regular：鸿蒙常规 * HarmonyOS_Sans_SC_Thin：鸿蒙细体 * fzyouh：方正瘦体
 
@@ -144,7 +144,7 @@ class SmartTextLayerConfig:
 
     @property
     def font_size(self):
-        """Gets the font_size of this SmartTextLayerConfig.
+        r"""Gets the font_size of this SmartTextLayerConfig.
 
         **参数解释**： 字体大小（像素）。  业务取值范围：[4, 120]，请以业务取值范围为准。
 
@@ -155,7 +155,7 @@ class SmartTextLayerConfig:
 
     @font_size.setter
     def font_size(self, font_size):
-        """Sets the font_size of this SmartTextLayerConfig.
+        r"""Sets the font_size of this SmartTextLayerConfig.
 
         **参数解释**： 字体大小（像素）。  业务取值范围：[4, 120]，请以业务取值范围为准。
 
@@ -166,7 +166,7 @@ class SmartTextLayerConfig:
 
     @property
     def font_color(self):
-        """Gets the font_color of this SmartTextLayerConfig.
+        r"""Gets the font_color of this SmartTextLayerConfig.
 
         **参数解释**： 字体颜色。RGB颜色值。
 
@@ -177,7 +177,7 @@ class SmartTextLayerConfig:
 
     @font_color.setter
     def font_color(self, font_color):
-        """Sets the font_color of this SmartTextLayerConfig.
+        r"""Sets the font_color of this SmartTextLayerConfig.
 
         **参数解释**： 字体颜色。RGB颜色值。
 
@@ -188,7 +188,7 @@ class SmartTextLayerConfig:
 
     @property
     def display_duration(self):
-        """Gets the display_duration of this SmartTextLayerConfig.
+        r"""Gets the display_duration of this SmartTextLayerConfig.
 
         **参数解释**： 文本显示时长，单位s。 显示时长规则为，若携带reply_texts、reply_audios，则与播放语音内容时长保持一致；若未携带，则与匹配的关键词语音内容时长保持一致。
 
@@ -199,7 +199,7 @@ class SmartTextLayerConfig:
 
     @display_duration.setter
     def display_duration(self, display_duration):
-        """Sets the display_duration of this SmartTextLayerConfig.
+        r"""Sets the display_duration of this SmartTextLayerConfig.
 
         **参数解释**： 文本显示时长，单位s。 显示时长规则为，若携带reply_texts、reply_audios，则与播放语音内容时长保持一致；若未携带，则与匹配的关键词语音内容时长保持一致。
 

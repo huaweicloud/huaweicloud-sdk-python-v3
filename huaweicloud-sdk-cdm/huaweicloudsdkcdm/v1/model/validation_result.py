@@ -25,7 +25,7 @@ class ValidationResult:
     }
 
     def __init__(self, link_config=None):
-        """ValidationResult
+        r"""ValidationResult
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ValidationResult:
 
     @property
     def link_config(self):
-        """Gets the link_config of this ValidationResult.
+        r"""Gets the link_config of this ValidationResult.
 
         创建或更新连接校验结果，请参见linkConfig参数说明
 
@@ -54,7 +54,7 @@ class ValidationResult:
 
     @link_config.setter
     def link_config(self, link_config):
-        """Sets the link_config of this ValidationResult.
+        r"""Sets the link_config of this ValidationResult.
 
         创建或更新连接校验结果，请参见linkConfig参数说明
 

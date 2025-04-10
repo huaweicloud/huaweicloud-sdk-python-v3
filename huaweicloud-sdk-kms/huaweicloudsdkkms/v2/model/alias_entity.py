@@ -35,7 +35,7 @@ class AliasEntity:
     }
 
     def __init__(self, domain_id=None, key_id=None, alias=None, alias_urn=None, create_time=None, update_time=None):
-        """AliasEntity
+        r"""AliasEntity
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class AliasEntity:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AliasEntity.
+        r"""Gets the domain_id of this AliasEntity.
 
         账号ID
 
@@ -87,7 +87,7 @@ class AliasEntity:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AliasEntity.
+        r"""Sets the domain_id of this AliasEntity.
 
         账号ID
 
@@ -98,7 +98,7 @@ class AliasEntity:
 
     @property
     def key_id(self):
-        """Gets the key_id of this AliasEntity.
+        r"""Gets the key_id of this AliasEntity.
 
         密钥ID
 
@@ -109,7 +109,7 @@ class AliasEntity:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this AliasEntity.
+        r"""Sets the key_id of this AliasEntity.
 
         密钥ID
 
@@ -120,7 +120,7 @@ class AliasEntity:
 
     @property
     def alias(self):
-        """Gets the alias of this AliasEntity.
+        r"""Gets the alias of this AliasEntity.
 
         别名
 
@@ -131,7 +131,7 @@ class AliasEntity:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this AliasEntity.
+        r"""Sets the alias of this AliasEntity.
 
         别名
 
@@ -142,7 +142,7 @@ class AliasEntity:
 
     @property
     def alias_urn(self):
-        """Gets the alias_urn of this AliasEntity.
+        r"""Gets the alias_urn of this AliasEntity.
 
         别名资源定位符
 
@@ -153,7 +153,7 @@ class AliasEntity:
 
     @alias_urn.setter
     def alias_urn(self, alias_urn):
-        """Sets the alias_urn of this AliasEntity.
+        r"""Sets the alias_urn of this AliasEntity.
 
         别名资源定位符
 
@@ -164,7 +164,7 @@ class AliasEntity:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AliasEntity.
+        r"""Gets the create_time of this AliasEntity.
 
         创建时间
 
@@ -175,7 +175,7 @@ class AliasEntity:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AliasEntity.
+        r"""Sets the create_time of this AliasEntity.
 
         创建时间
 
@@ -186,7 +186,7 @@ class AliasEntity:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AliasEntity.
+        r"""Gets the update_time of this AliasEntity.
 
         更新时间
 
@@ -197,7 +197,7 @@ class AliasEntity:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AliasEntity.
+        r"""Sets the update_time of this AliasEntity.
 
         更新时间
 

@@ -39,7 +39,7 @@ class UploadAimTemplateMaterialRequestBody:
     }
 
     def __init__(self, resource_type=None, material_id=None, file_type=None, file_url=None, file_stream=None, image_rate=None, file_name=None, description=None):
-        """UploadAimTemplateMaterialRequestBody
+        r"""UploadAimTemplateMaterialRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this UploadAimTemplateMaterialRequestBody.
+        r"""Gets the resource_type of this UploadAimTemplateMaterialRequestBody.
 
         资源类型。  - image：图片 - video：视频 - thumbnail：缩略图  > 图片支持png、jpeg、jpg格式，最大2M; > 视频支持格式mp4，大小不超过7M，建议时长不超过33S; > 缩略图支持png、jpeg、jpg格式，大小不超过100K。 
 
@@ -101,7 +101,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this UploadAimTemplateMaterialRequestBody.
+        r"""Sets the resource_type of this UploadAimTemplateMaterialRequestBody.
 
         资源类型。  - image：图片 - video：视频 - thumbnail：缩略图  > 图片支持png、jpeg、jpg格式，最大2M; > 视频支持格式mp4，大小不超过7M，建议时长不超过33S; > 缩略图支持png、jpeg、jpg格式，大小不超过100K。 
 
@@ -112,7 +112,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @property
     def material_id(self):
-        """Gets the material_id of this UploadAimTemplateMaterialRequestBody.
+        r"""Gets the material_id of this UploadAimTemplateMaterialRequestBody.
 
         素材ID。 > resource_type=thumbnail时，material_id必填，填写内容为上传视频资源返回的material_id字段的值。 
 
@@ -123,7 +123,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @material_id.setter
     def material_id(self, material_id):
-        """Sets the material_id of this UploadAimTemplateMaterialRequestBody.
+        r"""Sets the material_id of this UploadAimTemplateMaterialRequestBody.
 
         素材ID。 > resource_type=thumbnail时，material_id必填，填写内容为上传视频资源返回的material_id字段的值。 
 
@@ -134,7 +134,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @property
     def file_type(self):
-        """Gets the file_type of this UploadAimTemplateMaterialRequestBody.
+        r"""Gets the file_type of this UploadAimTemplateMaterialRequestBody.
 
         文件类型。 - url：资源为URL链接地址 - stream：资源为多媒体资源文件流的BASE64编码，需要带资源类型前缀，样例：\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQ...\"，样例过长，未显示全部 
 
@@ -145,7 +145,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this UploadAimTemplateMaterialRequestBody.
+        r"""Sets the file_type of this UploadAimTemplateMaterialRequestBody.
 
         文件类型。 - url：资源为URL链接地址 - stream：资源为多媒体资源文件流的BASE64编码，需要带资源类型前缀，样例：\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gIoSUNDX1BST0ZJTEUAAQEAAAIYAAAAAAQwAABtbnRyUkdCIFhZWiAAAAAAAAAAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQ...\"，样例过长，未显示全部 
 
@@ -156,7 +156,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @property
     def file_url(self):
-        """Gets the file_url of this UploadAimTemplateMaterialRequestBody.
+        r"""Gets the file_url of this UploadAimTemplateMaterialRequestBody.
 
         文件URL。  > file_type=url时，file_url为必填。URL地址必须包含文件格式的后缀，例如：jpg、jpeg，大小写后缀都支持。 
 
@@ -167,7 +167,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @file_url.setter
     def file_url(self, file_url):
-        """Sets the file_url of this UploadAimTemplateMaterialRequestBody.
+        r"""Sets the file_url of this UploadAimTemplateMaterialRequestBody.
 
         文件URL。  > file_type=url时，file_url为必填。URL地址必须包含文件格式的后缀，例如：jpg、jpeg，大小写后缀都支持。 
 
@@ -178,7 +178,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @property
     def file_stream(self):
-        """Gets the file_stream of this UploadAimTemplateMaterialRequestBody.
+        r"""Gets the file_stream of this UploadAimTemplateMaterialRequestBody.
 
         文件资源码流。  > file_type=stream时，file_stream为必填。 
 
@@ -189,7 +189,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @file_stream.setter
     def file_stream(self, file_stream):
-        """Sets the file_stream of this UploadAimTemplateMaterialRequestBody.
+        r"""Sets the file_stream of this UploadAimTemplateMaterialRequestBody.
 
         文件资源码流。  > file_type=stream时，file_stream为必填。 
 
@@ -200,7 +200,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @property
     def image_rate(self):
-        """Gets the image_rate of this UploadAimTemplateMaterialRequestBody.
+        r"""Gets the image_rate of this UploadAimTemplateMaterialRequestBody.
 
         图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 - threeToFour：指3:4比例  > resource type=image时，image_rate必填。 
 
@@ -211,7 +211,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @image_rate.setter
     def image_rate(self, image_rate):
-        """Sets the image_rate of this UploadAimTemplateMaterialRequestBody.
+        r"""Sets the image_rate of this UploadAimTemplateMaterialRequestBody.
 
         图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 - threeToFour：指3:4比例  > resource type=image时，image_rate必填。 
 
@@ -222,7 +222,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @property
     def file_name(self):
-        """Gets the file_name of this UploadAimTemplateMaterialRequestBody.
+        r"""Gets the file_name of this UploadAimTemplateMaterialRequestBody.
 
         文件名称。  > file_type=stream时，file_name必填。 
 
@@ -233,7 +233,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this UploadAimTemplateMaterialRequestBody.
+        r"""Sets the file_name of this UploadAimTemplateMaterialRequestBody.
 
         文件名称。  > file_type=stream时，file_name必填。 
 
@@ -244,7 +244,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UploadAimTemplateMaterialRequestBody.
+        r"""Gets the description of this UploadAimTemplateMaterialRequestBody.
 
         描述。
 
@@ -255,7 +255,7 @@ class UploadAimTemplateMaterialRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UploadAimTemplateMaterialRequestBody.
+        r"""Sets the description of this UploadAimTemplateMaterialRequestBody.
 
         描述。
 

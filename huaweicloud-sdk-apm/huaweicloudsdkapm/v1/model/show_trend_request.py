@@ -27,7 +27,7 @@ class ShowTrendRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """ShowTrendRequest
+        r"""ShowTrendRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowTrendRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ShowTrendRequest.
+        r"""Gets the x_business_id of this ShowTrendRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class ShowTrendRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ShowTrendRequest.
+        r"""Sets the x_business_id of this ShowTrendRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class ShowTrendRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowTrendRequest.
+        r"""Gets the body of this ShowTrendRequest.
 
         :return: The body of this ShowTrendRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.TrendParam`
@@ -80,7 +80,7 @@ class ShowTrendRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowTrendRequest.
+        r"""Sets the body of this ShowTrendRequest.
 
         :param body: The body of this ShowTrendRequest.
         :type body: :class:`huaweicloudsdkapm.v1.TrendParam`

@@ -27,7 +27,7 @@ class CreateKmsTagRequestBody:
     }
 
     def __init__(self, tag=None, sequence=None):
-        """CreateKmsTagRequestBody
+        r"""CreateKmsTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateKmsTagRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateKmsTagRequestBody.
+        r"""Gets the tag of this CreateKmsTagRequestBody.
 
         :return: The tag of this CreateKmsTagRequestBody.
         :rtype: :class:`huaweicloudsdkkms.v2.TagItem`
@@ -59,7 +59,7 @@ class CreateKmsTagRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateKmsTagRequestBody.
+        r"""Sets the tag of this CreateKmsTagRequestBody.
 
         :param tag: The tag of this CreateKmsTagRequestBody.
         :type tag: :class:`huaweicloudsdkkms.v2.TagItem`
@@ -68,7 +68,7 @@ class CreateKmsTagRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this CreateKmsTagRequestBody.
+        r"""Gets the sequence of this CreateKmsTagRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -79,7 +79,7 @@ class CreateKmsTagRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this CreateKmsTagRequestBody.
+        r"""Sets the sequence of this CreateKmsTagRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

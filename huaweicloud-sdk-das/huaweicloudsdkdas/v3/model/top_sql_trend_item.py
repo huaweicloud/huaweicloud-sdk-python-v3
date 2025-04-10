@@ -33,7 +33,7 @@ class TopSqlTrendItem:
     }
 
     def __init__(self, execute_at=None, query_time_in_100ms=None, query_time_in_500ms=None, query_time_in_1s=None, query_time_over_1s=None):
-        """TopSqlTrendItem
+        r"""TopSqlTrendItem
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class TopSqlTrendItem:
 
     @property
     def execute_at(self):
-        """Gets the execute_at of this TopSqlTrendItem.
+        r"""Gets the execute_at of this TopSqlTrendItem.
 
         执行时间点，毫秒时间戳。表示统计数据的时间范围为execute_at到execute_at + interval_millis。
 
@@ -77,7 +77,7 @@ class TopSqlTrendItem:
 
     @execute_at.setter
     def execute_at(self, execute_at):
-        """Sets the execute_at of this TopSqlTrendItem.
+        r"""Sets the execute_at of this TopSqlTrendItem.
 
         执行时间点，毫秒时间戳。表示统计数据的时间范围为execute_at到execute_at + interval_millis。
 
@@ -88,7 +88,7 @@ class TopSqlTrendItem:
 
     @property
     def query_time_in_100ms(self):
-        """Gets the query_time_in_100ms of this TopSqlTrendItem.
+        r"""Gets the query_time_in_100ms of this TopSqlTrendItem.
 
         执行耗时小于100ms。
 
@@ -99,7 +99,7 @@ class TopSqlTrendItem:
 
     @query_time_in_100ms.setter
     def query_time_in_100ms(self, query_time_in_100ms):
-        """Sets the query_time_in_100ms of this TopSqlTrendItem.
+        r"""Sets the query_time_in_100ms of this TopSqlTrendItem.
 
         执行耗时小于100ms。
 
@@ -110,7 +110,7 @@ class TopSqlTrendItem:
 
     @property
     def query_time_in_500ms(self):
-        """Gets the query_time_in_500ms of this TopSqlTrendItem.
+        r"""Gets the query_time_in_500ms of this TopSqlTrendItem.
 
         执行耗时100ms-500ms。
 
@@ -121,7 +121,7 @@ class TopSqlTrendItem:
 
     @query_time_in_500ms.setter
     def query_time_in_500ms(self, query_time_in_500ms):
-        """Sets the query_time_in_500ms of this TopSqlTrendItem.
+        r"""Sets the query_time_in_500ms of this TopSqlTrendItem.
 
         执行耗时100ms-500ms。
 
@@ -132,7 +132,7 @@ class TopSqlTrendItem:
 
     @property
     def query_time_in_1s(self):
-        """Gets the query_time_in_1s of this TopSqlTrendItem.
+        r"""Gets the query_time_in_1s of this TopSqlTrendItem.
 
         执行耗时500ms-1000ms
 
@@ -143,7 +143,7 @@ class TopSqlTrendItem:
 
     @query_time_in_1s.setter
     def query_time_in_1s(self, query_time_in_1s):
-        """Sets the query_time_in_1s of this TopSqlTrendItem.
+        r"""Sets the query_time_in_1s of this TopSqlTrendItem.
 
         执行耗时500ms-1000ms
 
@@ -154,7 +154,7 @@ class TopSqlTrendItem:
 
     @property
     def query_time_over_1s(self):
-        """Gets the query_time_over_1s of this TopSqlTrendItem.
+        r"""Gets the query_time_over_1s of this TopSqlTrendItem.
 
         执行耗时大于1000ms。
 
@@ -165,7 +165,7 @@ class TopSqlTrendItem:
 
     @query_time_over_1s.setter
     def query_time_over_1s(self, query_time_over_1s):
-        """Sets the query_time_over_1s of this TopSqlTrendItem.
+        r"""Sets the query_time_over_1s of this TopSqlTrendItem.
 
         执行耗时大于1000ms。
 

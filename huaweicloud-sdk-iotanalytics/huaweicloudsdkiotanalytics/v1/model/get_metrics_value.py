@@ -29,7 +29,7 @@ class GetMetricsValue:
     }
 
     def __init__(self, type=None, transform=None, aggregate=None):
-        """GetMetricsValue
+        r"""GetMetricsValue
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class GetMetricsValue:
 
     @property
     def type(self):
-        """Gets the type of this GetMetricsValue.
+        r"""Gets the type of this GetMetricsValue.
 
         查询类型，经过转换计算的序列值（transform）、经过聚合计算的序列值（aggregate）
 
@@ -67,7 +67,7 @@ class GetMetricsValue:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GetMetricsValue.
+        r"""Sets the type of this GetMetricsValue.
 
         查询类型，经过转换计算的序列值（transform）、经过聚合计算的序列值（aggregate）
 
@@ -78,7 +78,7 @@ class GetMetricsValue:
 
     @property
     def transform(self):
-        """Gets the transform of this GetMetricsValue.
+        r"""Gets the transform of this GetMetricsValue.
 
         :return: The transform of this GetMetricsValue.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TransformMetricsRequest`
@@ -87,7 +87,7 @@ class GetMetricsValue:
 
     @transform.setter
     def transform(self, transform):
-        """Sets the transform of this GetMetricsValue.
+        r"""Sets the transform of this GetMetricsValue.
 
         :param transform: The transform of this GetMetricsValue.
         :type transform: :class:`huaweicloudsdkiotanalytics.v1.TransformMetricsRequest`
@@ -96,7 +96,7 @@ class GetMetricsValue:
 
     @property
     def aggregate(self):
-        """Gets the aggregate of this GetMetricsValue.
+        r"""Gets the aggregate of this GetMetricsValue.
 
         :return: The aggregate of this GetMetricsValue.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.AggregateMetricsRequest`
@@ -105,7 +105,7 @@ class GetMetricsValue:
 
     @aggregate.setter
     def aggregate(self, aggregate):
-        """Sets the aggregate of this GetMetricsValue.
+        r"""Sets the aggregate of this GetMetricsValue.
 
         :param aggregate: The aggregate of this GetMetricsValue.
         :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.AggregateMetricsRequest`

@@ -34,7 +34,7 @@ class EiHealthClient(Client):
         return client_builder
 
     def show_admet_with_custom_props(self, request):
-        """ADMET属性预测接口(默认+自定义属性)
+        r"""ADMET属性预测接口(默认+自定义属性)
 
         计算小分子的物化性质，包括默认的吸收(adsorption)、分布(distribution)、代谢(metabolism)、清除(excretion)与毒性(toxicity)，以及用户自定义的属性。
         

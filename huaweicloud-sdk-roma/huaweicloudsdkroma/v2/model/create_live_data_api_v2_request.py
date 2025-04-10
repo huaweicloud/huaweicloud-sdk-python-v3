@@ -27,7 +27,7 @@ class CreateLiveDataApiV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateLiveDataApiV2Request
+        r"""CreateLiveDataApiV2Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateLiveDataApiV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateLiveDataApiV2Request.
+        r"""Gets the instance_id of this CreateLiveDataApiV2Request.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateLiveDataApiV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateLiveDataApiV2Request.
+        r"""Sets the instance_id of this CreateLiveDataApiV2Request.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateLiveDataApiV2Request:
 
     @property
     def body(self):
-        """Gets the body of this CreateLiveDataApiV2Request.
+        r"""Gets the body of this CreateLiveDataApiV2Request.
 
         :return: The body of this CreateLiveDataApiV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.LdApiCreate`
@@ -80,7 +80,7 @@ class CreateLiveDataApiV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLiveDataApiV2Request.
+        r"""Sets the body of this CreateLiveDataApiV2Request.
 
         :param body: The body of this CreateLiveDataApiV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.LdApiCreate`

@@ -25,7 +25,7 @@ class UpdateFlowLogReqBody:
     }
 
     def __init__(self, flow_log=None):
-        """UpdateFlowLogReqBody
+        r"""UpdateFlowLogReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateFlowLogReqBody:
 
     @property
     def flow_log(self):
-        """Gets the flow_log of this UpdateFlowLogReqBody.
+        r"""Gets the flow_log of this UpdateFlowLogReqBody.
 
         :return: The flow_log of this UpdateFlowLogReqBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.UpdateFlowLogReq`
@@ -51,7 +51,7 @@ class UpdateFlowLogReqBody:
 
     @flow_log.setter
     def flow_log(self, flow_log):
-        """Sets the flow_log of this UpdateFlowLogReqBody.
+        r"""Sets the flow_log of this UpdateFlowLogReqBody.
 
         :param flow_log: The flow_log of this UpdateFlowLogReqBody.
         :type flow_log: :class:`huaweicloudsdkvpc.v2.UpdateFlowLogReq`

@@ -27,7 +27,7 @@ class SwitchAgentRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SwitchAgentRequest
+        r"""SwitchAgentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SwitchAgentRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchAgentRequest.
+        r"""Gets the instance_id of this SwitchAgentRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -60,7 +60,7 @@ class SwitchAgentRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchAgentRequest.
+        r"""Sets the instance_id of this SwitchAgentRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -71,7 +71,7 @@ class SwitchAgentRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchAgentRequest.
+        r"""Gets the body of this SwitchAgentRequest.
 
         :return: The body of this SwitchAgentRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.AgentSwitchRequest`
@@ -80,7 +80,7 @@ class SwitchAgentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchAgentRequest.
+        r"""Sets the body of this SwitchAgentRequest.
 
         :param body: The body of this SwitchAgentRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.AgentSwitchRequest`

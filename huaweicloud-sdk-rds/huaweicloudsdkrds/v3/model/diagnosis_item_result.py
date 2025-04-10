@@ -27,7 +27,7 @@ class DiagnosisItemResult:
     }
 
     def __init__(self, name=None, count=None):
-        """DiagnosisItemResult
+        r"""DiagnosisItemResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DiagnosisItemResult:
 
     @property
     def name(self):
-        """Gets the name of this DiagnosisItemResult.
+        r"""Gets the name of this DiagnosisItemResult.
 
         诊断项
 
@@ -61,7 +61,7 @@ class DiagnosisItemResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DiagnosisItemResult.
+        r"""Sets the name of this DiagnosisItemResult.
 
         诊断项
 
@@ -72,7 +72,7 @@ class DiagnosisItemResult:
 
     @property
     def count(self):
-        """Gets the count of this DiagnosisItemResult.
+        r"""Gets the count of this DiagnosisItemResult.
 
         实例数量
 
@@ -83,7 +83,7 @@ class DiagnosisItemResult:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this DiagnosisItemResult.
+        r"""Sets the count of this DiagnosisItemResult.
 
         实例数量
 

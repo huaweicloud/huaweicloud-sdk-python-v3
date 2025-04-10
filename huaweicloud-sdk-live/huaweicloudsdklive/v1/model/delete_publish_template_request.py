@@ -25,7 +25,7 @@ class DeletePublishTemplateRequest:
     }
 
     def __init__(self, domain=None):
-        """DeletePublishTemplateRequest
+        r"""DeletePublishTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeletePublishTemplateRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this DeletePublishTemplateRequest.
+        r"""Gets the domain of this DeletePublishTemplateRequest.
 
         推流域名
 
@@ -53,7 +53,7 @@ class DeletePublishTemplateRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this DeletePublishTemplateRequest.
+        r"""Sets the domain of this DeletePublishTemplateRequest.
 
         推流域名
 

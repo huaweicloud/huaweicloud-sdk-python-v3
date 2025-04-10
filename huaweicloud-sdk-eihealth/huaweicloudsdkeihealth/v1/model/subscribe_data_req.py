@@ -31,7 +31,7 @@ class SubscribeDataReq:
     }
 
     def __init__(self, asset_id=None, overwrite=None, target_folder=None, version=None):
-        """SubscribeDataReq
+        r"""SubscribeDataReq
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class SubscribeDataReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this SubscribeDataReq.
+        r"""Gets the asset_id of this SubscribeDataReq.
 
         资产ID
 
@@ -73,7 +73,7 @@ class SubscribeDataReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this SubscribeDataReq.
+        r"""Sets the asset_id of this SubscribeDataReq.
 
         资产ID
 
@@ -84,7 +84,7 @@ class SubscribeDataReq:
 
     @property
     def overwrite(self):
-        """Gets the overwrite of this SubscribeDataReq.
+        r"""Gets the overwrite of this SubscribeDataReq.
 
         执行策略（true：全部覆盖，false：全部跳过，默认为true）
 
@@ -95,7 +95,7 @@ class SubscribeDataReq:
 
     @overwrite.setter
     def overwrite(self, overwrite):
-        """Sets the overwrite of this SubscribeDataReq.
+        r"""Sets the overwrite of this SubscribeDataReq.
 
         执行策略（true：全部覆盖，false：全部跳过，默认为true）
 
@@ -106,7 +106,7 @@ class SubscribeDataReq:
 
     @property
     def target_folder(self):
-        """Gets the target_folder of this SubscribeDataReq.
+        r"""Gets the target_folder of this SubscribeDataReq.
 
         目标文件夹
 
@@ -117,7 +117,7 @@ class SubscribeDataReq:
 
     @target_folder.setter
     def target_folder(self, target_folder):
-        """Sets the target_folder of this SubscribeDataReq.
+        r"""Sets the target_folder of this SubscribeDataReq.
 
         目标文件夹
 
@@ -128,7 +128,7 @@ class SubscribeDataReq:
 
     @property
     def version(self):
-        """Gets the version of this SubscribeDataReq.
+        r"""Gets the version of this SubscribeDataReq.
 
         版本号
 
@@ -139,7 +139,7 @@ class SubscribeDataReq:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this SubscribeDataReq.
+        r"""Sets the version of this SubscribeDataReq.
 
         版本号
 

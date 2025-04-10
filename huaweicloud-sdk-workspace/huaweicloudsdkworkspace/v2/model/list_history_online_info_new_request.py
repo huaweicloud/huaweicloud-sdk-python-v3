@@ -31,7 +31,7 @@ class ListHistoryOnlineInfoNewRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, query_type=None, client_hour=None):
-        """ListHistoryOnlineInfoNewRequest
+        r"""ListHistoryOnlineInfoNewRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListHistoryOnlineInfoNewRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListHistoryOnlineInfoNewRequest.
+        r"""Gets the start_time of this ListHistoryOnlineInfoNewRequest.
 
         查询的起始时间。指定该参数后，返回的结果为此时间之后的所有登录记录。时间格式如：“2016-08-20T21:11Z”。终止时间不为空时，起始时间为必填参数。类型查询优先于时间查询。类型查询和时间查询必须有一个存在。
 
@@ -75,7 +75,7 @@ class ListHistoryOnlineInfoNewRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListHistoryOnlineInfoNewRequest.
+        r"""Sets the start_time of this ListHistoryOnlineInfoNewRequest.
 
         查询的起始时间。指定该参数后，返回的结果为此时间之后的所有登录记录。时间格式如：“2016-08-20T21:11Z”。终止时间不为空时，起始时间为必填参数。类型查询优先于时间查询。类型查询和时间查询必须有一个存在。
 
@@ -86,7 +86,7 @@ class ListHistoryOnlineInfoNewRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListHistoryOnlineInfoNewRequest.
+        r"""Gets the end_time of this ListHistoryOnlineInfoNewRequest.
 
         查询的结束时间。指定该参数后，返回的结果为此时间之前的所有登录记录。时间格式如：“2016-08-20T21:11Z”。起始时间不为空时，终止时间为必填参数。类型查询优先于时间查询。类型查询和时间查询必须有一个存在。
 
@@ -97,7 +97,7 @@ class ListHistoryOnlineInfoNewRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListHistoryOnlineInfoNewRequest.
+        r"""Sets the end_time of this ListHistoryOnlineInfoNewRequest.
 
         查询的结束时间。指定该参数后，返回的结果为此时间之前的所有登录记录。时间格式如：“2016-08-20T21:11Z”。起始时间不为空时，终止时间为必填参数。类型查询优先于时间查询。类型查询和时间查询必须有一个存在。
 
@@ -108,7 +108,7 @@ class ListHistoryOnlineInfoNewRequest:
 
     @property
     def query_type(self):
-        """Gets the query_type of this ListHistoryOnlineInfoNewRequest.
+        r"""Gets the query_type of this ListHistoryOnlineInfoNewRequest.
 
         查询类型，类型查询优先于时间查询。类型查询和时间查询必须有一个存在。 -MONTH：按月查询。 -WEEK：按周查询。 -DAY：按天查询。
 
@@ -119,7 +119,7 @@ class ListHistoryOnlineInfoNewRequest:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this ListHistoryOnlineInfoNewRequest.
+        r"""Sets the query_type of this ListHistoryOnlineInfoNewRequest.
 
         查询类型，类型查询优先于时间查询。类型查询和时间查询必须有一个存在。 -MONTH：按月查询。 -WEEK：按周查询。 -DAY：按天查询。
 
@@ -130,7 +130,7 @@ class ListHistoryOnlineInfoNewRequest:
 
     @property
     def client_hour(self):
-        """Gets the client_hour of this ListHistoryOnlineInfoNewRequest.
+        r"""Gets the client_hour of this ListHistoryOnlineInfoNewRequest.
 
         客户端所在操作系统时间的小时数。
 
@@ -141,7 +141,7 @@ class ListHistoryOnlineInfoNewRequest:
 
     @client_hour.setter
     def client_hour(self, client_hour):
-        """Sets the client_hour of this ListHistoryOnlineInfoNewRequest.
+        r"""Sets the client_hour of this ListHistoryOnlineInfoNewRequest.
 
         客户端所在操作系统时间的小时数。
 

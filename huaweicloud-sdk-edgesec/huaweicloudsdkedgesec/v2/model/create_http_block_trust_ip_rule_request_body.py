@@ -35,7 +35,7 @@ class CreateHttpBlockTrustIpRuleRequestBody:
     }
 
     def __init__(self, name=None, description=None, addr=None, white=None, followed_action_id=None, ip_group_id=None):
-        """CreateHttpBlockTrustIpRuleRequestBody
+        r"""CreateHttpBlockTrustIpRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class CreateHttpBlockTrustIpRuleRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateHttpBlockTrustIpRuleRequestBody.
+        r"""Gets the name of this CreateHttpBlockTrustIpRuleRequestBody.
 
         规则名称
 
@@ -87,7 +87,7 @@ class CreateHttpBlockTrustIpRuleRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateHttpBlockTrustIpRuleRequestBody.
+        r"""Sets the name of this CreateHttpBlockTrustIpRuleRequestBody.
 
         规则名称
 
@@ -98,7 +98,7 @@ class CreateHttpBlockTrustIpRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateHttpBlockTrustIpRuleRequestBody.
+        r"""Gets the description of this CreateHttpBlockTrustIpRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -109,7 +109,7 @@ class CreateHttpBlockTrustIpRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateHttpBlockTrustIpRuleRequestBody.
+        r"""Sets the description of this CreateHttpBlockTrustIpRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -120,7 +120,7 @@ class CreateHttpBlockTrustIpRuleRequestBody:
 
     @property
     def addr(self):
-        """Gets the addr of this CreateHttpBlockTrustIpRuleRequestBody.
+        r"""Gets the addr of this CreateHttpBlockTrustIpRuleRequestBody.
 
         ip地址/地址段；ip地址/地址段或者ip地址组id至少有一个
 
@@ -131,7 +131,7 @@ class CreateHttpBlockTrustIpRuleRequestBody:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this CreateHttpBlockTrustIpRuleRequestBody.
+        r"""Sets the addr of this CreateHttpBlockTrustIpRuleRequestBody.
 
         ip地址/地址段；ip地址/地址段或者ip地址组id至少有一个
 
@@ -142,7 +142,7 @@ class CreateHttpBlockTrustIpRuleRequestBody:
 
     @property
     def white(self):
-        """Gets the white of this CreateHttpBlockTrustIpRuleRequestBody.
+        r"""Gets the white of this CreateHttpBlockTrustIpRuleRequestBody.
 
         - 0：拦截 - 1：放行 - 2：仅记录 
 
@@ -153,7 +153,7 @@ class CreateHttpBlockTrustIpRuleRequestBody:
 
     @white.setter
     def white(self, white):
-        """Sets the white of this CreateHttpBlockTrustIpRuleRequestBody.
+        r"""Sets the white of this CreateHttpBlockTrustIpRuleRequestBody.
 
         - 0：拦截 - 1：放行 - 2：仅记录 
 
@@ -164,7 +164,7 @@ class CreateHttpBlockTrustIpRuleRequestBody:
 
     @property
     def followed_action_id(self):
-        """Gets the followed_action_id of this CreateHttpBlockTrustIpRuleRequestBody.
+        r"""Gets the followed_action_id of this CreateHttpBlockTrustIpRuleRequestBody.
 
         攻击惩罚规则id
 
@@ -175,7 +175,7 @@ class CreateHttpBlockTrustIpRuleRequestBody:
 
     @followed_action_id.setter
     def followed_action_id(self, followed_action_id):
-        """Sets the followed_action_id of this CreateHttpBlockTrustIpRuleRequestBody.
+        r"""Sets the followed_action_id of this CreateHttpBlockTrustIpRuleRequestBody.
 
         攻击惩罚规则id
 
@@ -186,7 +186,7 @@ class CreateHttpBlockTrustIpRuleRequestBody:
 
     @property
     def ip_group_id(self):
-        """Gets the ip_group_id of this CreateHttpBlockTrustIpRuleRequestBody.
+        r"""Gets the ip_group_id of this CreateHttpBlockTrustIpRuleRequestBody.
 
         ip地址组id；ip地址/地址段或者ip地址组id至少有一个
 
@@ -197,7 +197,7 @@ class CreateHttpBlockTrustIpRuleRequestBody:
 
     @ip_group_id.setter
     def ip_group_id(self, ip_group_id):
-        """Sets the ip_group_id of this CreateHttpBlockTrustIpRuleRequestBody.
+        r"""Sets the ip_group_id of this CreateHttpBlockTrustIpRuleRequestBody.
 
         ip地址组id；ip地址/地址段或者ip地址组id至少有一个
 

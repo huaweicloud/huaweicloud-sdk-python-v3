@@ -27,7 +27,7 @@ class CreateHttpGeoIpRuleRequest:
     }
 
     def __init__(self, policy_id=None, body=None):
-        """CreateHttpGeoIpRuleRequest
+        r"""CreateHttpGeoIpRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateHttpGeoIpRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CreateHttpGeoIpRuleRequest.
+        r"""Gets the policy_id of this CreateHttpGeoIpRuleRequest.
 
         策略id
 
@@ -60,7 +60,7 @@ class CreateHttpGeoIpRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CreateHttpGeoIpRuleRequest.
+        r"""Sets the policy_id of this CreateHttpGeoIpRuleRequest.
 
         策略id
 
@@ -71,7 +71,7 @@ class CreateHttpGeoIpRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHttpGeoIpRuleRequest.
+        r"""Gets the body of this CreateHttpGeoIpRuleRequest.
 
         :return: The body of this CreateHttpGeoIpRuleRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.CreateHttpGeoIpRuleRequestBody`
@@ -80,7 +80,7 @@ class CreateHttpGeoIpRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHttpGeoIpRuleRequest.
+        r"""Sets the body of this CreateHttpGeoIpRuleRequest.
 
         :param body: The body of this CreateHttpGeoIpRuleRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.CreateHttpGeoIpRuleRequestBody`

@@ -25,7 +25,7 @@ class EventStreamingOperateReq:
     }
 
     def __init__(self, operation=None):
-        """EventStreamingOperateReq
+        r"""EventStreamingOperateReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EventStreamingOperateReq:
 
     @property
     def operation(self):
-        """Gets the operation of this EventStreamingOperateReq.
+        r"""Gets the operation of this EventStreamingOperateReq.
 
         操作类型
 
@@ -54,7 +54,7 @@ class EventStreamingOperateReq:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this EventStreamingOperateReq.
+        r"""Sets the operation of this EventStreamingOperateReq.
 
         操作类型
 

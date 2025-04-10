@@ -34,7 +34,7 @@ class ComponentActionType:
     }
 
     def __init__(self):
-        """ComponentActionType
+        r"""ComponentActionType
 
         The model defined in huaweicloud sdk
 

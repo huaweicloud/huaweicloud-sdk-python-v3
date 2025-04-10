@@ -49,11 +49,11 @@ class ListVulnerabilitiesRequest:
     }
 
     def __init__(self, enterprise_project_id=None, type=None, vul_id=None, vul_name=None, limit=None, offset=None, repair_priority=None, handle_status=None, cve_id=None, label_list=None, status=None, asset_value=None, group_name=None):
-        """ListVulnerabilitiesRequest
+        r"""ListVulnerabilitiesRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param type: 漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
         :type type: str
@@ -127,9 +127,9 @@ class ListVulnerabilitiesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListVulnerabilitiesRequest.
+        r"""Gets the enterprise_project_id of this ListVulnerabilitiesRequest.
 
-        企业项目ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListVulnerabilitiesRequest.
         :rtype: str
@@ -138,9 +138,9 @@ class ListVulnerabilitiesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListVulnerabilitiesRequest.
+        r"""Sets the enterprise_project_id of this ListVulnerabilitiesRequest.
 
-        企业项目ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListVulnerabilitiesRequest.
         :type enterprise_project_id: str
@@ -149,7 +149,7 @@ class ListVulnerabilitiesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListVulnerabilitiesRequest.
+        r"""Gets the type of this ListVulnerabilitiesRequest.
 
         漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
 
@@ -160,7 +160,7 @@ class ListVulnerabilitiesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListVulnerabilitiesRequest.
+        r"""Sets the type of this ListVulnerabilitiesRequest.
 
         漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞
 
@@ -171,7 +171,7 @@ class ListVulnerabilitiesRequest:
 
     @property
     def vul_id(self):
-        """Gets the vul_id of this ListVulnerabilitiesRequest.
+        r"""Gets the vul_id of this ListVulnerabilitiesRequest.
 
         漏洞ID
 
@@ -182,7 +182,7 @@ class ListVulnerabilitiesRequest:
 
     @vul_id.setter
     def vul_id(self, vul_id):
-        """Sets the vul_id of this ListVulnerabilitiesRequest.
+        r"""Sets the vul_id of this ListVulnerabilitiesRequest.
 
         漏洞ID
 
@@ -193,7 +193,7 @@ class ListVulnerabilitiesRequest:
 
     @property
     def vul_name(self):
-        """Gets the vul_name of this ListVulnerabilitiesRequest.
+        r"""Gets the vul_name of this ListVulnerabilitiesRequest.
 
         漏洞名称
 
@@ -204,7 +204,7 @@ class ListVulnerabilitiesRequest:
 
     @vul_name.setter
     def vul_name(self, vul_name):
-        """Sets the vul_name of this ListVulnerabilitiesRequest.
+        r"""Sets the vul_name of this ListVulnerabilitiesRequest.
 
         漏洞名称
 
@@ -215,7 +215,7 @@ class ListVulnerabilitiesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVulnerabilitiesRequest.
+        r"""Gets the limit of this ListVulnerabilitiesRequest.
 
         每页显示个数
 
@@ -226,7 +226,7 @@ class ListVulnerabilitiesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVulnerabilitiesRequest.
+        r"""Sets the limit of this ListVulnerabilitiesRequest.
 
         每页显示个数
 
@@ -237,7 +237,7 @@ class ListVulnerabilitiesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListVulnerabilitiesRequest.
+        r"""Gets the offset of this ListVulnerabilitiesRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -248,7 +248,7 @@ class ListVulnerabilitiesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListVulnerabilitiesRequest.
+        r"""Sets the offset of this ListVulnerabilitiesRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -259,7 +259,7 @@ class ListVulnerabilitiesRequest:
 
     @property
     def repair_priority(self):
-        """Gets the repair_priority of this ListVulnerabilitiesRequest.
+        r"""Gets the repair_priority of this ListVulnerabilitiesRequest.
 
         修复优先级 Critical 紧急 High  高 Medium 中 Low 低
 
@@ -270,7 +270,7 @@ class ListVulnerabilitiesRequest:
 
     @repair_priority.setter
     def repair_priority(self, repair_priority):
-        """Sets the repair_priority of this ListVulnerabilitiesRequest.
+        r"""Sets the repair_priority of this ListVulnerabilitiesRequest.
 
         修复优先级 Critical 紧急 High  高 Medium 中 Low 低
 
@@ -281,7 +281,7 @@ class ListVulnerabilitiesRequest:
 
     @property
     def handle_status(self):
-        """Gets the handle_status of this ListVulnerabilitiesRequest.
+        r"""Gets the handle_status of this ListVulnerabilitiesRequest.
 
         处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
 
@@ -292,7 +292,7 @@ class ListVulnerabilitiesRequest:
 
     @handle_status.setter
     def handle_status(self, handle_status):
-        """Sets the handle_status of this ListVulnerabilitiesRequest.
+        r"""Sets the handle_status of this ListVulnerabilitiesRequest.
 
         处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
 
@@ -303,7 +303,7 @@ class ListVulnerabilitiesRequest:
 
     @property
     def cve_id(self):
-        """Gets the cve_id of this ListVulnerabilitiesRequest.
+        r"""Gets the cve_id of this ListVulnerabilitiesRequest.
 
         漏洞编号
 
@@ -314,7 +314,7 @@ class ListVulnerabilitiesRequest:
 
     @cve_id.setter
     def cve_id(self, cve_id):
-        """Sets the cve_id of this ListVulnerabilitiesRequest.
+        r"""Sets the cve_id of this ListVulnerabilitiesRequest.
 
         漏洞编号
 
@@ -325,7 +325,7 @@ class ListVulnerabilitiesRequest:
 
     @property
     def label_list(self):
-        """Gets the label_list of this ListVulnerabilitiesRequest.
+        r"""Gets the label_list of this ListVulnerabilitiesRequest.
 
         漏洞标签
 
@@ -336,7 +336,7 @@ class ListVulnerabilitiesRequest:
 
     @label_list.setter
     def label_list(self, label_list):
-        """Sets the label_list of this ListVulnerabilitiesRequest.
+        r"""Sets the label_list of this ListVulnerabilitiesRequest.
 
         漏洞标签
 
@@ -347,7 +347,7 @@ class ListVulnerabilitiesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListVulnerabilitiesRequest.
+        r"""Gets the status of this ListVulnerabilitiesRequest.
 
         漏洞状态
 
@@ -358,7 +358,7 @@ class ListVulnerabilitiesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListVulnerabilitiesRequest.
+        r"""Sets the status of this ListVulnerabilitiesRequest.
 
         漏洞状态
 
@@ -369,7 +369,7 @@ class ListVulnerabilitiesRequest:
 
     @property
     def asset_value(self):
-        """Gets the asset_value of this ListVulnerabilitiesRequest.
+        r"""Gets the asset_value of this ListVulnerabilitiesRequest.
 
         资产重要性 important common test
 
@@ -380,7 +380,7 @@ class ListVulnerabilitiesRequest:
 
     @asset_value.setter
     def asset_value(self, asset_value):
-        """Sets the asset_value of this ListVulnerabilitiesRequest.
+        r"""Sets the asset_value of this ListVulnerabilitiesRequest.
 
         资产重要性 important common test
 
@@ -391,7 +391,7 @@ class ListVulnerabilitiesRequest:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ListVulnerabilitiesRequest.
+        r"""Gets the group_name of this ListVulnerabilitiesRequest.
 
         服务器组名称
 
@@ -402,7 +402,7 @@ class ListVulnerabilitiesRequest:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ListVulnerabilitiesRequest.
+        r"""Sets the group_name of this ListVulnerabilitiesRequest.
 
         服务器组名称
 

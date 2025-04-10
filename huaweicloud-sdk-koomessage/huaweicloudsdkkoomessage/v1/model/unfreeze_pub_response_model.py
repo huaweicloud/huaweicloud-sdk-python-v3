@@ -25,7 +25,7 @@ class UnfreezePubResponseModel:
     }
 
     def __init__(self, pub_id=None):
-        """UnfreezePubResponseModel
+        r"""UnfreezePubResponseModel
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UnfreezePubResponseModel:
 
     @property
     def pub_id(self):
-        """Gets the pub_id of this UnfreezePubResponseModel.
+        r"""Gets the pub_id of this UnfreezePubResponseModel.
 
         服务号ID。
 
@@ -54,7 +54,7 @@ class UnfreezePubResponseModel:
 
     @pub_id.setter
     def pub_id(self, pub_id):
-        """Sets the pub_id of this UnfreezePubResponseModel.
+        r"""Sets the pub_id of this UnfreezePubResponseModel.
 
         服务号ID。
 

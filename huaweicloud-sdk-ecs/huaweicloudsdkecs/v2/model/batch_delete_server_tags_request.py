@@ -27,7 +27,7 @@ class BatchDeleteServerTagsRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """BatchDeleteServerTagsRequest
+        r"""BatchDeleteServerTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteServerTagsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this BatchDeleteServerTagsRequest.
+        r"""Gets the server_id of this BatchDeleteServerTagsRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteServerTagsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this BatchDeleteServerTagsRequest.
+        r"""Sets the server_id of this BatchDeleteServerTagsRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteServerTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteServerTagsRequest.
+        r"""Gets the body of this BatchDeleteServerTagsRequest.
 
         :return: The body of this BatchDeleteServerTagsRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.BatchDeleteServerTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteServerTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteServerTagsRequest.
+        r"""Sets the body of this BatchDeleteServerTagsRequest.
 
         :param body: The body of this BatchDeleteServerTagsRequest.
         :type body: :class:`huaweicloudsdkecs.v2.BatchDeleteServerTagsRequestBody`

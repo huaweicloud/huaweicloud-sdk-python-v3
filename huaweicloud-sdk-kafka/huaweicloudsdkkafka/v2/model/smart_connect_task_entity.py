@@ -43,7 +43,7 @@ class SmartConnectTaskEntity:
     }
 
     def __init__(self, task_name=None, topics=None, topics_regex=None, source_type=None, source_task=None, sink_type=None, sink_task=None, id=None, status=None, create_time=None):
-        """SmartConnectTaskEntity
+        r"""SmartConnectTaskEntity
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class SmartConnectTaskEntity:
 
     @property
     def task_name(self):
-        """Gets the task_name of this SmartConnectTaskEntity.
+        r"""Gets the task_name of this SmartConnectTaskEntity.
 
         SmartConnect任务名称。
 
@@ -117,7 +117,7 @@ class SmartConnectTaskEntity:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this SmartConnectTaskEntity.
+        r"""Sets the task_name of this SmartConnectTaskEntity.
 
         SmartConnect任务名称。
 
@@ -128,7 +128,7 @@ class SmartConnectTaskEntity:
 
     @property
     def topics(self):
-        """Gets the topics of this SmartConnectTaskEntity.
+        r"""Gets the topics of this SmartConnectTaskEntity.
 
         SmartConnect任务配置的Topic。
 
@@ -139,7 +139,7 @@ class SmartConnectTaskEntity:
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this SmartConnectTaskEntity.
+        r"""Sets the topics of this SmartConnectTaskEntity.
 
         SmartConnect任务配置的Topic。
 
@@ -150,7 +150,7 @@ class SmartConnectTaskEntity:
 
     @property
     def topics_regex(self):
-        """Gets the topics_regex of this SmartConnectTaskEntity.
+        r"""Gets the topics_regex of this SmartConnectTaskEntity.
 
         SmartConnect任务配置的Topic正则表达式。
 
@@ -161,7 +161,7 @@ class SmartConnectTaskEntity:
 
     @topics_regex.setter
     def topics_regex(self, topics_regex):
-        """Sets the topics_regex of this SmartConnectTaskEntity.
+        r"""Sets the topics_regex of this SmartConnectTaskEntity.
 
         SmartConnect任务配置的Topic正则表达式。
 
@@ -172,7 +172,7 @@ class SmartConnectTaskEntity:
 
     @property
     def source_type(self):
-        """Gets the source_type of this SmartConnectTaskEntity.
+        r"""Gets the source_type of this SmartConnectTaskEntity.
 
         SmartConnect任务的源端类型。
 
@@ -183,7 +183,7 @@ class SmartConnectTaskEntity:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this SmartConnectTaskEntity.
+        r"""Sets the source_type of this SmartConnectTaskEntity.
 
         SmartConnect任务的源端类型。
 
@@ -194,7 +194,7 @@ class SmartConnectTaskEntity:
 
     @property
     def source_task(self):
-        """Gets the source_task of this SmartConnectTaskEntity.
+        r"""Gets the source_task of this SmartConnectTaskEntity.
 
         :return: The source_task of this SmartConnectTaskEntity.
         :rtype: :class:`huaweicloudsdkkafka.v2.SmartConnectTaskRespSourceConfig`
@@ -203,7 +203,7 @@ class SmartConnectTaskEntity:
 
     @source_task.setter
     def source_task(self, source_task):
-        """Sets the source_task of this SmartConnectTaskEntity.
+        r"""Sets the source_task of this SmartConnectTaskEntity.
 
         :param source_task: The source_task of this SmartConnectTaskEntity.
         :type source_task: :class:`huaweicloudsdkkafka.v2.SmartConnectTaskRespSourceConfig`
@@ -212,7 +212,7 @@ class SmartConnectTaskEntity:
 
     @property
     def sink_type(self):
-        """Gets the sink_type of this SmartConnectTaskEntity.
+        r"""Gets the sink_type of this SmartConnectTaskEntity.
 
         SmartConnect任务的目标端类型。
 
@@ -223,7 +223,7 @@ class SmartConnectTaskEntity:
 
     @sink_type.setter
     def sink_type(self, sink_type):
-        """Sets the sink_type of this SmartConnectTaskEntity.
+        r"""Sets the sink_type of this SmartConnectTaskEntity.
 
         SmartConnect任务的目标端类型。
 
@@ -234,7 +234,7 @@ class SmartConnectTaskEntity:
 
     @property
     def sink_task(self):
-        """Gets the sink_task of this SmartConnectTaskEntity.
+        r"""Gets the sink_task of this SmartConnectTaskEntity.
 
         :return: The sink_task of this SmartConnectTaskEntity.
         :rtype: :class:`huaweicloudsdkkafka.v2.SmartConnectTaskRespSinkConfig`
@@ -243,7 +243,7 @@ class SmartConnectTaskEntity:
 
     @sink_task.setter
     def sink_task(self, sink_task):
-        """Sets the sink_task of this SmartConnectTaskEntity.
+        r"""Sets the sink_task of this SmartConnectTaskEntity.
 
         :param sink_task: The sink_task of this SmartConnectTaskEntity.
         :type sink_task: :class:`huaweicloudsdkkafka.v2.SmartConnectTaskRespSinkConfig`
@@ -252,7 +252,7 @@ class SmartConnectTaskEntity:
 
     @property
     def id(self):
-        """Gets the id of this SmartConnectTaskEntity.
+        r"""Gets the id of this SmartConnectTaskEntity.
 
         SmartConnect任务的id。
 
@@ -263,7 +263,7 @@ class SmartConnectTaskEntity:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SmartConnectTaskEntity.
+        r"""Sets the id of this SmartConnectTaskEntity.
 
         SmartConnect任务的id。
 
@@ -274,7 +274,7 @@ class SmartConnectTaskEntity:
 
     @property
     def status(self):
-        """Gets the status of this SmartConnectTaskEntity.
+        r"""Gets the status of this SmartConnectTaskEntity.
 
         SmartConnect任务的状态。
 
@@ -285,7 +285,7 @@ class SmartConnectTaskEntity:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SmartConnectTaskEntity.
+        r"""Sets the status of this SmartConnectTaskEntity.
 
         SmartConnect任务的状态。
 
@@ -296,7 +296,7 @@ class SmartConnectTaskEntity:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SmartConnectTaskEntity.
+        r"""Gets the create_time of this SmartConnectTaskEntity.
 
         SmartConnect任务的创建时间。
 
@@ -307,7 +307,7 @@ class SmartConnectTaskEntity:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SmartConnectTaskEntity.
+        r"""Sets the create_time of this SmartConnectTaskEntity.
 
         SmartConnect任务的创建时间。
 

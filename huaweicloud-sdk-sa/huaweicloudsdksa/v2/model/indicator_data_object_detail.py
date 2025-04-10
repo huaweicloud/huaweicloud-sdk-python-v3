@@ -27,7 +27,7 @@ class IndicatorDataObjectDetail:
     }
 
     def __init__(self, indicator_type=None, value=None):
-        """IndicatorDataObjectDetail
+        r"""IndicatorDataObjectDetail
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def indicator_type(self):
-        """Gets the indicator_type of this IndicatorDataObjectDetail.
+        r"""Gets the indicator_type of this IndicatorDataObjectDetail.
 
         :return: The indicator_type of this IndicatorDataObjectDetail.
         :rtype: :class:`huaweicloudsdksa.v2.CreateIndicatorDetailIndicatorType`
@@ -59,7 +59,7 @@ class IndicatorDataObjectDetail:
 
     @indicator_type.setter
     def indicator_type(self, indicator_type):
-        """Sets the indicator_type of this IndicatorDataObjectDetail.
+        r"""Sets the indicator_type of this IndicatorDataObjectDetail.
 
         :param indicator_type: The indicator_type of this IndicatorDataObjectDetail.
         :type indicator_type: :class:`huaweicloudsdksa.v2.CreateIndicatorDetailIndicatorType`
@@ -68,7 +68,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def value(self):
-        """Gets the value of this IndicatorDataObjectDetail.
+        r"""Gets the value of this IndicatorDataObjectDetail.
 
         值，如：ip url domain等
 
@@ -79,7 +79,7 @@ class IndicatorDataObjectDetail:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this IndicatorDataObjectDetail.
+        r"""Sets the value of this IndicatorDataObjectDetail.
 
         值，如：ip url domain等
 

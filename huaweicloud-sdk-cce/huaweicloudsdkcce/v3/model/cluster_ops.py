@@ -25,7 +25,7 @@ class ClusterOps:
     }
 
     def __init__(self, alarm=None):
-        """ClusterOps
+        r"""ClusterOps
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ClusterOps:
 
     @property
     def alarm(self):
-        """Gets the alarm of this ClusterOps.
+        r"""Gets the alarm of this ClusterOps.
 
         :return: The alarm of this ClusterOps.
         :rtype: :class:`huaweicloudsdkcce.v3.AlarmInfo`
@@ -51,7 +51,7 @@ class ClusterOps:
 
     @alarm.setter
     def alarm(self, alarm):
-        """Sets the alarm of this ClusterOps.
+        r"""Sets the alarm of this ClusterOps.
 
         :param alarm: The alarm of this ClusterOps.
         :type alarm: :class:`huaweicloudsdkcce.v3.AlarmInfo`

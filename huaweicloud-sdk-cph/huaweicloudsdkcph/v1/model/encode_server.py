@@ -41,7 +41,7 @@ class EncodeServer:
     }
 
     def __init__(self, encode_server_name=None, encode_server_id=None, encode_server_ip=None, server_id=None, keypair_name=None, type=None, status=None, access_infos=None, encode_server_ipv6=None):
-        """EncodeServer
+        r"""EncodeServer
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class EncodeServer:
 
     @property
     def encode_server_name(self):
-        """Gets the encode_server_name of this EncodeServer.
+        r"""Gets the encode_server_name of this EncodeServer.
 
         编码服务的名称，不大于64个字节。
 
@@ -110,7 +110,7 @@ class EncodeServer:
 
     @encode_server_name.setter
     def encode_server_name(self, encode_server_name):
-        """Sets the encode_server_name of this EncodeServer.
+        r"""Sets the encode_server_name of this EncodeServer.
 
         编码服务的名称，不大于64个字节。
 
@@ -121,7 +121,7 @@ class EncodeServer:
 
     @property
     def encode_server_id(self):
-        """Gets the encode_server_id of this EncodeServer.
+        r"""Gets the encode_server_id of this EncodeServer.
 
         编码服务的唯一标识ID，不大于32个字节。
 
@@ -132,7 +132,7 @@ class EncodeServer:
 
     @encode_server_id.setter
     def encode_server_id(self, encode_server_id):
-        """Sets the encode_server_id of this EncodeServer.
+        r"""Sets the encode_server_id of this EncodeServer.
 
         编码服务的唯一标识ID，不大于32个字节。
 
@@ -143,7 +143,7 @@ class EncodeServer:
 
     @property
     def encode_server_ip(self):
-        """Gets the encode_server_ip of this EncodeServer.
+        r"""Gets the encode_server_ip of this EncodeServer.
 
         编码服务IP地址。
 
@@ -154,7 +154,7 @@ class EncodeServer:
 
     @encode_server_ip.setter
     def encode_server_ip(self, encode_server_ip):
-        """Sets the encode_server_ip of this EncodeServer.
+        r"""Sets the encode_server_ip of this EncodeServer.
 
         编码服务IP地址。
 
@@ -165,7 +165,7 @@ class EncodeServer:
 
     @property
     def server_id(self):
-        """Gets the server_id of this EncodeServer.
+        r"""Gets the server_id of this EncodeServer.
 
         云手机服务器ID，不大于32个字节。
 
@@ -176,7 +176,7 @@ class EncodeServer:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this EncodeServer.
+        r"""Sets the server_id of this EncodeServer.
 
         云手机服务器ID，不大于32个字节。
 
@@ -187,7 +187,7 @@ class EncodeServer:
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this EncodeServer.
+        r"""Gets the keypair_name of this EncodeServer.
 
         编码服务登录密钥名称。
 
@@ -198,7 +198,7 @@ class EncodeServer:
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this EncodeServer.
+        r"""Sets the keypair_name of this EncodeServer.
 
         编码服务登录密钥名称。
 
@@ -209,7 +209,7 @@ class EncodeServer:
 
     @property
     def type(self):
-        """Gets the type of this EncodeServer.
+        r"""Gets the type of this EncodeServer.
 
         编码服务类型。 - 0：服务器 - 1：容器
 
@@ -220,7 +220,7 @@ class EncodeServer:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EncodeServer.
+        r"""Sets the type of this EncodeServer.
 
         编码服务类型。 - 0：服务器 - 1：容器
 
@@ -231,7 +231,7 @@ class EncodeServer:
 
     @property
     def status(self):
-        """Gets the status of this EncodeServer.
+        r"""Gets the status of this EncodeServer.
 
         编码服务状态。 - 1：运行中 - 2：异常 - 3：重启中 - 0、4、5：创建中
 
@@ -242,7 +242,7 @@ class EncodeServer:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EncodeServer.
+        r"""Sets the status of this EncodeServer.
 
         编码服务状态。 - 1：运行中 - 2：异常 - 3：重启中 - 0、4、5：创建中
 
@@ -253,7 +253,7 @@ class EncodeServer:
 
     @property
     def access_infos(self):
-        """Gets the access_infos of this EncodeServer.
+        r"""Gets the access_infos of this EncodeServer.
 
         编码服务的访问信息。
 
@@ -264,7 +264,7 @@ class EncodeServer:
 
     @access_infos.setter
     def access_infos(self, access_infos):
-        """Sets the access_infos of this EncodeServer.
+        r"""Sets the access_infos of this EncodeServer.
 
         编码服务的访问信息。
 
@@ -275,7 +275,7 @@ class EncodeServer:
 
     @property
     def encode_server_ipv6(self):
-        """Gets the encode_server_ipv6 of this EncodeServer.
+        r"""Gets the encode_server_ipv6 of this EncodeServer.
 
         编码服务IPv6地址。
 
@@ -286,7 +286,7 @@ class EncodeServer:
 
     @encode_server_ipv6.setter
     def encode_server_ipv6(self, encode_server_ipv6):
-        """Sets the encode_server_ipv6 of this EncodeServer.
+        r"""Sets the encode_server_ipv6 of this EncodeServer.
 
         编码服务IPv6地址。
 

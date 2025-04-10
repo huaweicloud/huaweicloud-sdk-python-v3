@@ -25,7 +25,7 @@ class ResizeFlavorRequest:
     }
 
     def __init__(self, resize_flavor=None):
-        """ResizeFlavorRequest
+        r"""ResizeFlavorRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResizeFlavorRequest:
 
     @property
     def resize_flavor(self):
-        """Gets the resize_flavor of this ResizeFlavorRequest.
+        r"""Gets the resize_flavor of this ResizeFlavorRequest.
 
         :return: The resize_flavor of this ResizeFlavorRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ResizeFlavorObject`
@@ -51,7 +51,7 @@ class ResizeFlavorRequest:
 
     @resize_flavor.setter
     def resize_flavor(self, resize_flavor):
-        """Sets the resize_flavor of this ResizeFlavorRequest.
+        r"""Sets the resize_flavor of this ResizeFlavorRequest.
 
         :param resize_flavor: The resize_flavor of this ResizeFlavorRequest.
         :type resize_flavor: :class:`huaweicloudsdkrds.v3.ResizeFlavorObject`

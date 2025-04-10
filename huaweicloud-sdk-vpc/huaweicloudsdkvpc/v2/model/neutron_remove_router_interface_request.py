@@ -27,7 +27,7 @@ class NeutronRemoveRouterInterfaceRequest:
     }
 
     def __init__(self, router_id=None, body=None):
-        """NeutronRemoveRouterInterfaceRequest
+        r"""NeutronRemoveRouterInterfaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NeutronRemoveRouterInterfaceRequest:
 
     @property
     def router_id(self):
-        """Gets the router_id of this NeutronRemoveRouterInterfaceRequest.
+        r"""Gets the router_id of this NeutronRemoveRouterInterfaceRequest.
 
         路由器ID
 
@@ -60,7 +60,7 @@ class NeutronRemoveRouterInterfaceRequest:
 
     @router_id.setter
     def router_id(self, router_id):
-        """Sets the router_id of this NeutronRemoveRouterInterfaceRequest.
+        r"""Sets the router_id of this NeutronRemoveRouterInterfaceRequest.
 
         路由器ID
 
@@ -71,7 +71,7 @@ class NeutronRemoveRouterInterfaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this NeutronRemoveRouterInterfaceRequest.
+        r"""Gets the body of this NeutronRemoveRouterInterfaceRequest.
 
         :return: The body of this NeutronRemoveRouterInterfaceRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.RouterInterfaceRequestBody`
@@ -80,7 +80,7 @@ class NeutronRemoveRouterInterfaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this NeutronRemoveRouterInterfaceRequest.
+        r"""Sets the body of this NeutronRemoveRouterInterfaceRequest.
 
         :param body: The body of this NeutronRemoveRouterInterfaceRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.RouterInterfaceRequestBody`

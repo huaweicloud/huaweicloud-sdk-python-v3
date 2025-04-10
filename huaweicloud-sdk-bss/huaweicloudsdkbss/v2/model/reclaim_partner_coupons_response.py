@@ -24,7 +24,7 @@ class ReclaimPartnerCouponsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ReclaimPartnerCouponsResponse
+        r"""ReclaimPartnerCouponsResponse
 
         The model defined in huaweicloud sdk
 

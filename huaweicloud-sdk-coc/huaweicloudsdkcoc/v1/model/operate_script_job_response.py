@@ -26,7 +26,7 @@ class OperateScriptJobResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """OperateScriptJobResponse
+        r"""OperateScriptJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class OperateScriptJobResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this OperateScriptJobResponse.
+        r"""Gets the data of this OperateScriptJobResponse.
 
         操作的工单execute_uuid
 
@@ -55,7 +55,7 @@ class OperateScriptJobResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this OperateScriptJobResponse.
+        r"""Sets the data of this OperateScriptJobResponse.
 
         操作的工单execute_uuid
 

@@ -25,7 +25,7 @@ class BatchDeleteDataReq:
     }
 
     def __init__(self, paths=None):
-        """BatchDeleteDataReq
+        r"""BatchDeleteDataReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteDataReq:
 
     @property
     def paths(self):
-        """Gets the paths of this BatchDeleteDataReq.
+        r"""Gets the paths of this BatchDeleteDataReq.
 
         删除的数据ID集（项目名称:/路径）
 
@@ -53,7 +53,7 @@ class BatchDeleteDataReq:
 
     @paths.setter
     def paths(self, paths):
-        """Sets the paths of this BatchDeleteDataReq.
+        r"""Sets the paths of this BatchDeleteDataReq.
 
         删除的数据ID集（项目名称:/路径）
 

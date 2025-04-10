@@ -27,7 +27,7 @@ class UpdateTenantVpcIgwRequestBodyVpcIgw:
     }
 
     def __init__(self, name=None, enable_ipv6=None):
-        """UpdateTenantVpcIgwRequestBodyVpcIgw
+        r"""UpdateTenantVpcIgwRequestBodyVpcIgw
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateTenantVpcIgwRequestBodyVpcIgw:
 
     @property
     def name(self):
-        """Gets the name of this UpdateTenantVpcIgwRequestBodyVpcIgw.
+        r"""Gets the name of this UpdateTenantVpcIgwRequestBodyVpcIgw.
 
         虚拟IGW的名称
 
@@ -61,7 +61,7 @@ class UpdateTenantVpcIgwRequestBodyVpcIgw:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTenantVpcIgwRequestBodyVpcIgw.
+        r"""Sets the name of this UpdateTenantVpcIgwRequestBodyVpcIgw.
 
         虚拟IGW的名称
 
@@ -72,7 +72,7 @@ class UpdateTenantVpcIgwRequestBodyVpcIgw:
 
     @property
     def enable_ipv6(self):
-        """Gets the enable_ipv6 of this UpdateTenantVpcIgwRequestBodyVpcIgw.
+        r"""Gets the enable_ipv6 of this UpdateTenantVpcIgwRequestBodyVpcIgw.
 
         是否使能ipv6
 
@@ -83,7 +83,7 @@ class UpdateTenantVpcIgwRequestBodyVpcIgw:
 
     @enable_ipv6.setter
     def enable_ipv6(self, enable_ipv6):
-        """Sets the enable_ipv6 of this UpdateTenantVpcIgwRequestBodyVpcIgw.
+        r"""Sets the enable_ipv6 of this UpdateTenantVpcIgwRequestBodyVpcIgw.
 
         是否使能ipv6
 

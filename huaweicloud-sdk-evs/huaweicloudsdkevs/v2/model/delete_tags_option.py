@@ -25,7 +25,7 @@ class DeleteTagsOption:
     }
 
     def __init__(self, key=None):
-        """DeleteTagsOption
+        r"""DeleteTagsOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTagsOption:
 
     @property
     def key(self):
-        """Gets the key of this DeleteTagsOption.
+        r"""Gets the key of this DeleteTagsOption.
 
         标签键。
 
@@ -53,7 +53,7 @@ class DeleteTagsOption:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteTagsOption.
+        r"""Sets the key of this DeleteTagsOption.
 
         标签键。
 

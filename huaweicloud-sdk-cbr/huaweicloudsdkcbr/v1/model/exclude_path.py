@@ -27,7 +27,7 @@ class ExcludePath:
     }
 
     def __init__(self, path_name=None, exclude_path_name=None):
-        """ExcludePath
+        r"""ExcludePath
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExcludePath:
 
     @property
     def path_name(self):
-        """Gets the path_name of this ExcludePath.
+        r"""Gets the path_name of this ExcludePath.
 
         备份目录
 
@@ -61,7 +61,7 @@ class ExcludePath:
 
     @path_name.setter
     def path_name(self, path_name):
-        """Sets the path_name of this ExcludePath.
+        r"""Sets the path_name of this ExcludePath.
 
         备份目录
 
@@ -72,7 +72,7 @@ class ExcludePath:
 
     @property
     def exclude_path_name(self):
-        """Gets the exclude_path_name of this ExcludePath.
+        r"""Gets the exclude_path_name of this ExcludePath.
 
         排除目录列表
 
@@ -83,7 +83,7 @@ class ExcludePath:
 
     @exclude_path_name.setter
     def exclude_path_name(self, exclude_path_name):
-        """Sets the exclude_path_name of this ExcludePath.
+        r"""Sets the exclude_path_name of this ExcludePath.
 
         排除目录列表
 

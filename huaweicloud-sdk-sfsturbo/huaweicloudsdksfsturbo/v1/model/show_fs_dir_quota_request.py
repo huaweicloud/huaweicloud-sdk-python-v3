@@ -27,7 +27,7 @@ class ShowFsDirQuotaRequest:
     }
 
     def __init__(self, share_id=None, path=None):
-        """ShowFsDirQuotaRequest
+        r"""ShowFsDirQuotaRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowFsDirQuotaRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this ShowFsDirQuotaRequest.
+        r"""Gets the share_id of this ShowFsDirQuotaRequest.
 
         文件系统id
 
@@ -59,7 +59,7 @@ class ShowFsDirQuotaRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this ShowFsDirQuotaRequest.
+        r"""Sets the share_id of this ShowFsDirQuotaRequest.
 
         文件系统id
 
@@ -70,7 +70,7 @@ class ShowFsDirQuotaRequest:
 
     @property
     def path(self):
-        """Gets the path of this ShowFsDirQuotaRequest.
+        r"""Gets the path of this ShowFsDirQuotaRequest.
 
         合法的已存在的目录的全路径
 
@@ -81,7 +81,7 @@ class ShowFsDirQuotaRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowFsDirQuotaRequest.
+        r"""Sets the path of this ShowFsDirQuotaRequest.
 
         合法的已存在的目录的全路径
 

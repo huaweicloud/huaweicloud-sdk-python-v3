@@ -32,7 +32,7 @@ class DetachManagedRoleFromPermissionSetRequest:
     }
 
     def __init__(self, instance_id=None, permission_set_id=None, x_security_token=None, body=None):
-        """DetachManagedRoleFromPermissionSetRequest
+        r"""DetachManagedRoleFromPermissionSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class DetachManagedRoleFromPermissionSetRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DetachManagedRoleFromPermissionSetRequest.
+        r"""Gets the instance_id of this DetachManagedRoleFromPermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -74,7 +74,7 @@ class DetachManagedRoleFromPermissionSetRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DetachManagedRoleFromPermissionSetRequest.
+        r"""Sets the instance_id of this DetachManagedRoleFromPermissionSetRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -85,7 +85,7 @@ class DetachManagedRoleFromPermissionSetRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this DetachManagedRoleFromPermissionSetRequest.
+        r"""Gets the permission_set_id of this DetachManagedRoleFromPermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -96,7 +96,7 @@ class DetachManagedRoleFromPermissionSetRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this DetachManagedRoleFromPermissionSetRequest.
+        r"""Sets the permission_set_id of this DetachManagedRoleFromPermissionSetRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -107,7 +107,7 @@ class DetachManagedRoleFromPermissionSetRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this DetachManagedRoleFromPermissionSetRequest.
+        r"""Gets the x_security_token of this DetachManagedRoleFromPermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -118,7 +118,7 @@ class DetachManagedRoleFromPermissionSetRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this DetachManagedRoleFromPermissionSetRequest.
+        r"""Sets the x_security_token of this DetachManagedRoleFromPermissionSetRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -129,7 +129,7 @@ class DetachManagedRoleFromPermissionSetRequest:
 
     @property
     def body(self):
-        """Gets the body of this DetachManagedRoleFromPermissionSetRequest.
+        r"""Gets the body of this DetachManagedRoleFromPermissionSetRequest.
 
         :return: The body of this DetachManagedRoleFromPermissionSetRequest.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.ResourceDetachManagedPolicyFromPermissionSetReqBody`
@@ -138,7 +138,7 @@ class DetachManagedRoleFromPermissionSetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DetachManagedRoleFromPermissionSetRequest.
+        r"""Sets the body of this DetachManagedRoleFromPermissionSetRequest.
 
         :param body: The body of this DetachManagedRoleFromPermissionSetRequest.
         :type body: :class:`huaweicloudsdkidentitycenter.v1.ResourceDetachManagedPolicyFromPermissionSetReqBody`

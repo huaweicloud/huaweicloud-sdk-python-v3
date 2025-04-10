@@ -27,7 +27,7 @@ class CustomizeSourceInfoEventTypes:
     }
 
     def __init__(self, name=None, description=None):
-        """CustomizeSourceInfoEventTypes
+        r"""CustomizeSourceInfoEventTypes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CustomizeSourceInfoEventTypes:
 
     @property
     def name(self):
-        """Gets the name of this CustomizeSourceInfoEventTypes.
+        r"""Gets the name of this CustomizeSourceInfoEventTypes.
 
         事件类型名称
 
@@ -61,7 +61,7 @@ class CustomizeSourceInfoEventTypes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CustomizeSourceInfoEventTypes.
+        r"""Sets the name of this CustomizeSourceInfoEventTypes.
 
         事件类型名称
 
@@ -72,7 +72,7 @@ class CustomizeSourceInfoEventTypes:
 
     @property
     def description(self):
-        """Gets the description of this CustomizeSourceInfoEventTypes.
+        r"""Gets the description of this CustomizeSourceInfoEventTypes.
 
         事件类型描述
 
@@ -83,7 +83,7 @@ class CustomizeSourceInfoEventTypes:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CustomizeSourceInfoEventTypes.
+        r"""Sets the description of this CustomizeSourceInfoEventTypes.
 
         事件类型描述
 

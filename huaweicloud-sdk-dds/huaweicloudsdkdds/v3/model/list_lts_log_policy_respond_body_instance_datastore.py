@@ -27,7 +27,7 @@ class ListLtsLogPolicyRespondBodyInstanceDatastore:
     }
 
     def __init__(self, type=None, version=None):
-        """ListLtsLogPolicyRespondBodyInstanceDatastore
+        r"""ListLtsLogPolicyRespondBodyInstanceDatastore
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListLtsLogPolicyRespondBodyInstanceDatastore:
 
     @property
     def type(self):
-        """Gets the type of this ListLtsLogPolicyRespondBodyInstanceDatastore.
+        r"""Gets the type of this ListLtsLogPolicyRespondBodyInstanceDatastore.
 
         数据库引擎，值为mongodb。
 
@@ -61,7 +61,7 @@ class ListLtsLogPolicyRespondBodyInstanceDatastore:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListLtsLogPolicyRespondBodyInstanceDatastore.
+        r"""Sets the type of this ListLtsLogPolicyRespondBodyInstanceDatastore.
 
         数据库引擎，值为mongodb。
 
@@ -72,7 +72,7 @@ class ListLtsLogPolicyRespondBodyInstanceDatastore:
 
     @property
     def version(self):
-        """Gets the version of this ListLtsLogPolicyRespondBodyInstanceDatastore.
+        r"""Gets the version of this ListLtsLogPolicyRespondBodyInstanceDatastore.
 
         数据库大版本。
 
@@ -83,7 +83,7 @@ class ListLtsLogPolicyRespondBodyInstanceDatastore:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListLtsLogPolicyRespondBodyInstanceDatastore.
+        r"""Sets the version of this ListLtsLogPolicyRespondBodyInstanceDatastore.
 
         数据库大版本。
 

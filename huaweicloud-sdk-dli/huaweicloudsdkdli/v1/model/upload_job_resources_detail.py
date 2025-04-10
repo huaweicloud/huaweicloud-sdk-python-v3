@@ -37,7 +37,7 @@ class UploadJobResourcesDetail:
     }
 
     def __init__(self, create_time=None, update_time=None, resource_type=None, is_async=None, resource_name=None, status=None, underlying_name=None):
-        """UploadJobResourcesDetail
+        r"""UploadJobResourcesDetail
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class UploadJobResourcesDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this UploadJobResourcesDetail.
+        r"""Gets the create_time of this UploadJobResourcesDetail.
 
         资源包上传的unix时间。是单位为“毫秒”的时间戳。
 
@@ -94,7 +94,7 @@ class UploadJobResourcesDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UploadJobResourcesDetail.
+        r"""Sets the create_time of this UploadJobResourcesDetail.
 
         资源包上传的unix时间。是单位为“毫秒”的时间戳。
 
@@ -105,7 +105,7 @@ class UploadJobResourcesDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this UploadJobResourcesDetail.
+        r"""Gets the update_time of this UploadJobResourcesDetail.
 
         更新已上传资源包的unix时间。是单位为“毫秒”的时间戳
 
@@ -116,7 +116,7 @@ class UploadJobResourcesDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UploadJobResourcesDetail.
+        r"""Sets the update_time of this UploadJobResourcesDetail.
 
         更新已上传资源包的unix时间。是单位为“毫秒”的时间戳
 
@@ -127,7 +127,7 @@ class UploadJobResourcesDetail:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this UploadJobResourcesDetail.
+        r"""Gets the resource_type of this UploadJobResourcesDetail.
 
         资源类型。
 
@@ -138,7 +138,7 @@ class UploadJobResourcesDetail:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this UploadJobResourcesDetail.
+        r"""Sets the resource_type of this UploadJobResourcesDetail.
 
         资源类型。
 
@@ -149,7 +149,7 @@ class UploadJobResourcesDetail:
 
     @property
     def is_async(self):
-        """Gets the is_async of this UploadJobResourcesDetail.
+        r"""Gets the is_async of this UploadJobResourcesDetail.
 
         是否异步上传资源包
 
@@ -160,7 +160,7 @@ class UploadJobResourcesDetail:
 
     @is_async.setter
     def is_async(self, is_async):
-        """Sets the is_async of this UploadJobResourcesDetail.
+        r"""Sets the is_async of this UploadJobResourcesDetail.
 
         是否异步上传资源包
 
@@ -171,7 +171,7 @@ class UploadJobResourcesDetail:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this UploadJobResourcesDetail.
+        r"""Gets the resource_name of this UploadJobResourcesDetail.
 
         资源名。
 
@@ -182,7 +182,7 @@ class UploadJobResourcesDetail:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this UploadJobResourcesDetail.
+        r"""Sets the resource_name of this UploadJobResourcesDetail.
 
         资源名。
 
@@ -193,7 +193,7 @@ class UploadJobResourcesDetail:
 
     @property
     def status(self):
-        """Gets the status of this UploadJobResourcesDetail.
+        r"""Gets the status of this UploadJobResourcesDetail.
 
         \"UPLOADING\"表示正在上传。\"READY\"表示资源包已上传。\"FAILED\"表示资源包上传失败。
 
@@ -204,7 +204,7 @@ class UploadJobResourcesDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UploadJobResourcesDetail.
+        r"""Sets the status of this UploadJobResourcesDetail.
 
         \"UPLOADING\"表示正在上传。\"READY\"表示资源包已上传。\"FAILED\"表示资源包上传失败。
 
@@ -215,7 +215,7 @@ class UploadJobResourcesDetail:
 
     @property
     def underlying_name(self):
-        """Gets the underlying_name of this UploadJobResourcesDetail.
+        r"""Gets the underlying_name of this UploadJobResourcesDetail.
 
         资源包在队列中的名字。
 
@@ -226,7 +226,7 @@ class UploadJobResourcesDetail:
 
     @underlying_name.setter
     def underlying_name(self, underlying_name):
-        """Sets the underlying_name of this UploadJobResourcesDetail.
+        r"""Sets the underlying_name of this UploadJobResourcesDetail.
 
         资源包在队列中的名字。
 

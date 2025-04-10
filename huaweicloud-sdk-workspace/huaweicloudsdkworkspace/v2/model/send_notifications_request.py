@@ -25,7 +25,7 @@ class SendNotificationsRequest:
     }
 
     def __init__(self, body=None):
-        """SendNotificationsRequest
+        r"""SendNotificationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SendNotificationsRequest:
 
     @property
     def body(self):
-        """Gets the body of this SendNotificationsRequest.
+        r"""Gets the body of this SendNotificationsRequest.
 
         :return: The body of this SendNotificationsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.SendNotificationsReq`
@@ -52,7 +52,7 @@ class SendNotificationsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SendNotificationsRequest.
+        r"""Sets the body of this SendNotificationsRequest.
 
         :param body: The body of this SendNotificationsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.SendNotificationsReq`

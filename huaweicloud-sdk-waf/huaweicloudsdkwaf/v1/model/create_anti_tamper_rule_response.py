@@ -36,7 +36,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, hostname=None, url=None, description=None, status=None):
-        """CreateAntiTamperRuleResponse
+        r"""CreateAntiTamperRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateAntiTamperRuleResponse.
+        r"""Gets the id of this CreateAntiTamperRuleResponse.
 
         规则id
 
@@ -90,7 +90,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateAntiTamperRuleResponse.
+        r"""Sets the id of this CreateAntiTamperRuleResponse.
 
         规则id
 
@@ -101,7 +101,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this CreateAntiTamperRuleResponse.
+        r"""Gets the policyid of this CreateAntiTamperRuleResponse.
 
         策略id
 
@@ -112,7 +112,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this CreateAntiTamperRuleResponse.
+        r"""Sets the policyid of this CreateAntiTamperRuleResponse.
 
         策略id
 
@@ -123,7 +123,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
 
     @property
     def hostname(self):
-        """Gets the hostname of this CreateAntiTamperRuleResponse.
+        r"""Gets the hostname of this CreateAntiTamperRuleResponse.
 
         防篡改的域名
 
@@ -134,7 +134,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this CreateAntiTamperRuleResponse.
+        r"""Sets the hostname of this CreateAntiTamperRuleResponse.
 
         防篡改的域名
 
@@ -145,7 +145,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this CreateAntiTamperRuleResponse.
+        r"""Gets the url of this CreateAntiTamperRuleResponse.
 
         防篡改的url，
 
@@ -156,7 +156,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CreateAntiTamperRuleResponse.
+        r"""Sets the url of this CreateAntiTamperRuleResponse.
 
         防篡改的url，
 
@@ -167,7 +167,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateAntiTamperRuleResponse.
+        r"""Gets the description of this CreateAntiTamperRuleResponse.
 
         创建规则的时间戳
 
@@ -178,7 +178,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAntiTamperRuleResponse.
+        r"""Sets the description of this CreateAntiTamperRuleResponse.
 
         创建规则的时间戳
 
@@ -189,7 +189,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateAntiTamperRuleResponse.
+        r"""Gets the status of this CreateAntiTamperRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -200,7 +200,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateAntiTamperRuleResponse.
+        r"""Sets the status of this CreateAntiTamperRuleResponse.
 
         规则状态，0：关闭，1：开启
 

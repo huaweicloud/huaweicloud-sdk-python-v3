@@ -39,7 +39,7 @@ class RestScheduleCycleConfDTO:
     }
 
     def __init__(self, cycle_sub_conf_id=None, media_types=None, start_time=None, length=None, is_auto_record=None, conf_config_info=None, record_auth_type=None, description=None):
-        """RestScheduleCycleConfDTO
+        r"""RestScheduleCycleConfDTO
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class RestScheduleCycleConfDTO:
 
     @property
     def cycle_sub_conf_id(self):
-        """Gets the cycle_sub_conf_id of this RestScheduleCycleConfDTO.
+        r"""Gets the cycle_sub_conf_id of this RestScheduleCycleConfDTO.
 
         子会议UUID。
 
@@ -99,7 +99,7 @@ class RestScheduleCycleConfDTO:
 
     @cycle_sub_conf_id.setter
     def cycle_sub_conf_id(self, cycle_sub_conf_id):
-        """Sets the cycle_sub_conf_id of this RestScheduleCycleConfDTO.
+        r"""Sets the cycle_sub_conf_id of this RestScheduleCycleConfDTO.
 
         子会议UUID。
 
@@ -110,7 +110,7 @@ class RestScheduleCycleConfDTO:
 
     @property
     def media_types(self):
-        """Gets the media_types of this RestScheduleCycleConfDTO.
+        r"""Gets the media_types of this RestScheduleCycleConfDTO.
 
         会议的媒体类型。 * Voice：语音会议 * HDVideo：视频会议 
 
@@ -121,7 +121,7 @@ class RestScheduleCycleConfDTO:
 
     @media_types.setter
     def media_types(self, media_types):
-        """Sets the media_types of this RestScheduleCycleConfDTO.
+        r"""Sets the media_types of this RestScheduleCycleConfDTO.
 
         会议的媒体类型。 * Voice：语音会议 * HDVideo：视频会议 
 
@@ -132,7 +132,7 @@ class RestScheduleCycleConfDTO:
 
     @property
     def start_time(self):
-        """Gets the start_time of this RestScheduleCycleConfDTO.
+        r"""Gets the start_time of this RestScheduleCycleConfDTO.
 
         会议开始时间（UTC时间）。格式：yyyy-MM-dd HH:mm。 > * 如果没有指定开始时间或填空串，则表示会议马上开始 > * 时间是UTC时间，即0时区的时间 
 
@@ -143,7 +143,7 @@ class RestScheduleCycleConfDTO:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this RestScheduleCycleConfDTO.
+        r"""Sets the start_time of this RestScheduleCycleConfDTO.
 
         会议开始时间（UTC时间）。格式：yyyy-MM-dd HH:mm。 > * 如果没有指定开始时间或填空串，则表示会议马上开始 > * 时间是UTC时间，即0时区的时间 
 
@@ -154,7 +154,7 @@ class RestScheduleCycleConfDTO:
 
     @property
     def length(self):
-        """Gets the length of this RestScheduleCycleConfDTO.
+        r"""Gets the length of this RestScheduleCycleConfDTO.
 
         会议持续时长，单位分钟。默认30分钟。最大1440分钟（24小时），最小15分钟。 
 
@@ -165,7 +165,7 @@ class RestScheduleCycleConfDTO:
 
     @length.setter
     def length(self, length):
-        """Sets the length of this RestScheduleCycleConfDTO.
+        r"""Sets the length of this RestScheduleCycleConfDTO.
 
         会议持续时长，单位分钟。默认30分钟。最大1440分钟（24小时），最小15分钟。 
 
@@ -176,7 +176,7 @@ class RestScheduleCycleConfDTO:
 
     @property
     def is_auto_record(self):
-        """Gets the is_auto_record of this RestScheduleCycleConfDTO.
+        r"""Gets the is_auto_record of this RestScheduleCycleConfDTO.
 
         会议是否自动启动录制，在录播类型为：录播、录播+直播时才生效。默认为不自动启动。 * 1：自动启动录制 * 0：不自动启动录制 
 
@@ -187,7 +187,7 @@ class RestScheduleCycleConfDTO:
 
     @is_auto_record.setter
     def is_auto_record(self, is_auto_record):
-        """Sets the is_auto_record of this RestScheduleCycleConfDTO.
+        r"""Sets the is_auto_record of this RestScheduleCycleConfDTO.
 
         会议是否自动启动录制，在录播类型为：录播、录播+直播时才生效。默认为不自动启动。 * 1：自动启动录制 * 0：不自动启动录制 
 
@@ -198,7 +198,7 @@ class RestScheduleCycleConfDTO:
 
     @property
     def conf_config_info(self):
-        """Gets the conf_config_info of this RestScheduleCycleConfDTO.
+        r"""Gets the conf_config_info of this RestScheduleCycleConfDTO.
 
         :return: The conf_config_info of this RestScheduleCycleConfDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CycleSubConfConfigDTO`
@@ -207,7 +207,7 @@ class RestScheduleCycleConfDTO:
 
     @conf_config_info.setter
     def conf_config_info(self, conf_config_info):
-        """Sets the conf_config_info of this RestScheduleCycleConfDTO.
+        r"""Sets the conf_config_info of this RestScheduleCycleConfDTO.
 
         :param conf_config_info: The conf_config_info of this RestScheduleCycleConfDTO.
         :type conf_config_info: :class:`huaweicloudsdkmeeting.v1.CycleSubConfConfigDTO`
@@ -216,7 +216,7 @@ class RestScheduleCycleConfDTO:
 
     @property
     def record_auth_type(self):
-        """Gets the record_auth_type of this RestScheduleCycleConfDTO.
+        r"""Gets the record_auth_type of this RestScheduleCycleConfDTO.
 
         录播观看鉴权方式，在录播类型为:录播、直播+录播时有效。 * 0：可通过链接观看/下载 * 1：企业用户可观看/下载 * 2：与会者可观看/下载 
 
@@ -227,7 +227,7 @@ class RestScheduleCycleConfDTO:
 
     @record_auth_type.setter
     def record_auth_type(self, record_auth_type):
-        """Sets the record_auth_type of this RestScheduleCycleConfDTO.
+        r"""Sets the record_auth_type of this RestScheduleCycleConfDTO.
 
         录播观看鉴权方式，在录播类型为:录播、直播+录播时有效。 * 0：可通过链接观看/下载 * 1：企业用户可观看/下载 * 2：与会者可观看/下载 
 
@@ -238,7 +238,7 @@ class RestScheduleCycleConfDTO:
 
     @property
     def description(self):
-        """Gets the description of this RestScheduleCycleConfDTO.
+        r"""Gets the description of this RestScheduleCycleConfDTO.
 
         会议描述，长度限制为200个字符。
 
@@ -249,7 +249,7 @@ class RestScheduleCycleConfDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RestScheduleCycleConfDTO.
+        r"""Sets the description of this RestScheduleCycleConfDTO.
 
         会议描述，长度限制为200个字符。
 

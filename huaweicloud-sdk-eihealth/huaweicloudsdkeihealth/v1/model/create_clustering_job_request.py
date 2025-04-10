@@ -27,7 +27,7 @@ class CreateClusteringJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateClusteringJobRequest
+        r"""CreateClusteringJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateClusteringJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateClusteringJobRequest.
+        r"""Gets the eihealth_project_id of this CreateClusteringJobRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class CreateClusteringJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateClusteringJobRequest.
+        r"""Sets the eihealth_project_id of this CreateClusteringJobRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class CreateClusteringJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateClusteringJobRequest.
+        r"""Gets the body of this CreateClusteringJobRequest.
 
         :return: The body of this CreateClusteringJobRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateClusteringJobReq`
@@ -80,7 +80,7 @@ class CreateClusteringJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateClusteringJobRequest.
+        r"""Sets the body of this CreateClusteringJobRequest.
 
         :param body: The body of this CreateClusteringJobRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateClusteringJobReq`

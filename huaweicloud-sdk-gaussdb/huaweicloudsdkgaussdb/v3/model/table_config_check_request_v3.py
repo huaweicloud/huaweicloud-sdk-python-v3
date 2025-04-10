@@ -41,7 +41,7 @@ class TableConfigCheckRequestV3:
     }
 
     def __init__(self, source_instance_id=None, source_node_id=None, source_database_name=None, task_name=None, db_configs=None, tables_configs=None, table_repl_config=None, target_database_name=None, is_create_task=None):
-        """TableConfigCheckRequestV3
+        r"""TableConfigCheckRequestV3
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class TableConfigCheckRequestV3:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this TableConfigCheckRequestV3.
+        r"""Gets the source_instance_id of this TableConfigCheckRequestV3.
 
         TaurusDB实例ID。
 
@@ -110,7 +110,7 @@ class TableConfigCheckRequestV3:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this TableConfigCheckRequestV3.
+        r"""Sets the source_instance_id of this TableConfigCheckRequestV3.
 
         TaurusDB实例ID。
 
@@ -121,7 +121,7 @@ class TableConfigCheckRequestV3:
 
     @property
     def source_node_id(self):
-        """Gets the source_node_id of this TableConfigCheckRequestV3.
+        r"""Gets the source_node_id of this TableConfigCheckRequestV3.
 
         TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID
 
@@ -132,7 +132,7 @@ class TableConfigCheckRequestV3:
 
     @source_node_id.setter
     def source_node_id(self, source_node_id):
-        """Sets the source_node_id of this TableConfigCheckRequestV3.
+        r"""Sets the source_node_id of this TableConfigCheckRequestV3.
 
         TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID
 
@@ -143,7 +143,7 @@ class TableConfigCheckRequestV3:
 
     @property
     def source_database_name(self):
-        """Gets the source_database_name of this TableConfigCheckRequestV3.
+        r"""Gets the source_database_name of this TableConfigCheckRequestV3.
 
         TaurusDB数据库名。
 
@@ -154,7 +154,7 @@ class TableConfigCheckRequestV3:
 
     @source_database_name.setter
     def source_database_name(self, source_database_name):
-        """Sets the source_database_name of this TableConfigCheckRequestV3.
+        r"""Sets the source_database_name of this TableConfigCheckRequestV3.
 
         TaurusDB数据库名。
 
@@ -165,7 +165,7 @@ class TableConfigCheckRequestV3:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TableConfigCheckRequestV3.
+        r"""Gets the task_name of this TableConfigCheckRequestV3.
 
         同步任务名称。字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线_。
 
@@ -176,7 +176,7 @@ class TableConfigCheckRequestV3:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TableConfigCheckRequestV3.
+        r"""Sets the task_name of this TableConfigCheckRequestV3.
 
         同步任务名称。字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线_。
 
@@ -187,7 +187,7 @@ class TableConfigCheckRequestV3:
 
     @property
     def db_configs(self):
-        """Gets the db_configs of this TableConfigCheckRequestV3.
+        r"""Gets the db_configs of this TableConfigCheckRequestV3.
 
         库配置列表。
 
@@ -198,7 +198,7 @@ class TableConfigCheckRequestV3:
 
     @db_configs.setter
     def db_configs(self, db_configs):
-        """Sets the db_configs of this TableConfigCheckRequestV3.
+        r"""Sets the db_configs of this TableConfigCheckRequestV3.
 
         库配置列表。
 
@@ -209,7 +209,7 @@ class TableConfigCheckRequestV3:
 
     @property
     def tables_configs(self):
-        """Gets the tables_configs of this TableConfigCheckRequestV3.
+        r"""Gets the tables_configs of this TableConfigCheckRequestV3.
 
         表配置信息。
 
@@ -220,7 +220,7 @@ class TableConfigCheckRequestV3:
 
     @tables_configs.setter
     def tables_configs(self, tables_configs):
-        """Sets the tables_configs of this TableConfigCheckRequestV3.
+        r"""Sets the tables_configs of this TableConfigCheckRequestV3.
 
         表配置信息。
 
@@ -231,7 +231,7 @@ class TableConfigCheckRequestV3:
 
     @property
     def table_repl_config(self):
-        """Gets the table_repl_config of this TableConfigCheckRequestV3.
+        r"""Gets the table_repl_config of this TableConfigCheckRequestV3.
 
         :return: The table_repl_config of this TableConfigCheckRequestV3.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.TableReplConfig`
@@ -240,7 +240,7 @@ class TableConfigCheckRequestV3:
 
     @table_repl_config.setter
     def table_repl_config(self, table_repl_config):
-        """Sets the table_repl_config of this TableConfigCheckRequestV3.
+        r"""Sets the table_repl_config of this TableConfigCheckRequestV3.
 
         :param table_repl_config: The table_repl_config of this TableConfigCheckRequestV3.
         :type table_repl_config: :class:`huaweicloudsdkgaussdb.v3.TableReplConfig`
@@ -249,7 +249,7 @@ class TableConfigCheckRequestV3:
 
     @property
     def target_database_name(self):
-        """Gets the target_database_name of this TableConfigCheckRequestV3.
+        r"""Gets the target_database_name of this TableConfigCheckRequestV3.
 
         目标数据库名。字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线。
 
@@ -260,7 +260,7 @@ class TableConfigCheckRequestV3:
 
     @target_database_name.setter
     def target_database_name(self, target_database_name):
-        """Sets the target_database_name of this TableConfigCheckRequestV3.
+        r"""Sets the target_database_name of this TableConfigCheckRequestV3.
 
         目标数据库名。字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线。
 
@@ -271,7 +271,7 @@ class TableConfigCheckRequestV3:
 
     @property
     def is_create_task(self):
-        """Gets the is_create_task of this TableConfigCheckRequestV3.
+        r"""Gets the is_create_task of this TableConfigCheckRequestV3.
 
         是否创建同步任务
 
@@ -282,7 +282,7 @@ class TableConfigCheckRequestV3:
 
     @is_create_task.setter
     def is_create_task(self, is_create_task):
-        """Sets the is_create_task of this TableConfigCheckRequestV3.
+        r"""Sets the is_create_task of this TableConfigCheckRequestV3.
 
         是否创建同步任务
 

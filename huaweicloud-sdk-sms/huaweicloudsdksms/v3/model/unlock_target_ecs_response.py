@@ -26,7 +26,7 @@ class UnlockTargetEcsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UnlockTargetEcsResponse
+        r"""UnlockTargetEcsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UnlockTargetEcsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UnlockTargetEcsResponse.
+        r"""Gets the body of this UnlockTargetEcsResponse.
 
         解锁指定任务的目的端服务器成功
 
@@ -55,7 +55,7 @@ class UnlockTargetEcsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UnlockTargetEcsResponse.
+        r"""Sets the body of this UnlockTargetEcsResponse.
 
         解锁指定任务的目的端服务器成功
 

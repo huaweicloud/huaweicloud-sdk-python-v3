@@ -31,7 +31,7 @@ class ModifyRdSforMySqlProxyRouteModeRequest:
     }
 
     def __init__(self, instance_id=None, proxy_id=None, x_language=None, body=None):
-        """ModifyRdSforMySqlProxyRouteModeRequest
+        r"""ModifyRdSforMySqlProxyRouteModeRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ModifyRdSforMySqlProxyRouteModeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ModifyRdSforMySqlProxyRouteModeRequest.
+        r"""Gets the instance_id of this ModifyRdSforMySqlProxyRouteModeRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -73,7 +73,7 @@ class ModifyRdSforMySqlProxyRouteModeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ModifyRdSforMySqlProxyRouteModeRequest.
+        r"""Sets the instance_id of this ModifyRdSforMySqlProxyRouteModeRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -84,7 +84,7 @@ class ModifyRdSforMySqlProxyRouteModeRequest:
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this ModifyRdSforMySqlProxyRouteModeRequest.
+        r"""Gets the proxy_id of this ModifyRdSforMySqlProxyRouteModeRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -95,7 +95,7 @@ class ModifyRdSforMySqlProxyRouteModeRequest:
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this ModifyRdSforMySqlProxyRouteModeRequest.
+        r"""Sets the proxy_id of this ModifyRdSforMySqlProxyRouteModeRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -106,7 +106,7 @@ class ModifyRdSforMySqlProxyRouteModeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ModifyRdSforMySqlProxyRouteModeRequest.
+        r"""Gets the x_language of this ModifyRdSforMySqlProxyRouteModeRequest.
 
         语言。
 
@@ -117,7 +117,7 @@ class ModifyRdSforMySqlProxyRouteModeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ModifyRdSforMySqlProxyRouteModeRequest.
+        r"""Sets the x_language of this ModifyRdSforMySqlProxyRouteModeRequest.
 
         语言。
 
@@ -128,7 +128,7 @@ class ModifyRdSforMySqlProxyRouteModeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyRdSforMySqlProxyRouteModeRequest.
+        r"""Gets the body of this ModifyRdSforMySqlProxyRouteModeRequest.
 
         :return: The body of this ModifyRdSforMySqlProxyRouteModeRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ModifyMySqlProxyRouteModeRequest`
@@ -137,7 +137,7 @@ class ModifyRdSforMySqlProxyRouteModeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyRdSforMySqlProxyRouteModeRequest.
+        r"""Sets the body of this ModifyRdSforMySqlProxyRouteModeRequest.
 
         :param body: The body of this ModifyRdSforMySqlProxyRouteModeRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ModifyMySqlProxyRouteModeRequest`

@@ -39,7 +39,7 @@ class HourPackageInfo:
     }
 
     def __init__(self, root_order_id=None, package_resource_id=None, package_instance_id=None, package_spec_code=None, combined_product_type_code=None, use_up_policy=None, package_duration=None, use_duration=None):
-        """HourPackageInfo
+        r"""HourPackageInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class HourPackageInfo:
 
     @property
     def root_order_id(self):
-        """Gets the root_order_id of this HourPackageInfo.
+        r"""Gets the root_order_id of this HourPackageInfo.
 
         小时包根订单ID。
 
@@ -103,7 +103,7 @@ class HourPackageInfo:
 
     @root_order_id.setter
     def root_order_id(self, root_order_id):
-        """Sets the root_order_id of this HourPackageInfo.
+        r"""Sets the root_order_id of this HourPackageInfo.
 
         小时包根订单ID。
 
@@ -114,7 +114,7 @@ class HourPackageInfo:
 
     @property
     def package_resource_id(self):
-        """Gets the package_resource_id of this HourPackageInfo.
+        r"""Gets the package_resource_id of this HourPackageInfo.
 
         小时包资源ID。
 
@@ -125,7 +125,7 @@ class HourPackageInfo:
 
     @package_resource_id.setter
     def package_resource_id(self, package_resource_id):
-        """Sets the package_resource_id of this HourPackageInfo.
+        r"""Sets the package_resource_id of this HourPackageInfo.
 
         小时包资源ID。
 
@@ -136,7 +136,7 @@ class HourPackageInfo:
 
     @property
     def package_instance_id(self):
-        """Gets the package_instance_id of this HourPackageInfo.
+        r"""Gets the package_instance_id of this HourPackageInfo.
 
         小时包实例ID。
 
@@ -147,7 +147,7 @@ class HourPackageInfo:
 
     @package_instance_id.setter
     def package_instance_id(self, package_instance_id):
-        """Sets the package_instance_id of this HourPackageInfo.
+        r"""Sets the package_instance_id of this HourPackageInfo.
 
         小时包实例ID。
 
@@ -158,7 +158,7 @@ class HourPackageInfo:
 
     @property
     def package_spec_code(self):
-        """Gets the package_spec_code of this HourPackageInfo.
+        r"""Gets the package_spec_code of this HourPackageInfo.
 
         小时包specCode。
 
@@ -169,7 +169,7 @@ class HourPackageInfo:
 
     @package_spec_code.setter
     def package_spec_code(self, package_spec_code):
-        """Sets the package_spec_code of this HourPackageInfo.
+        r"""Sets the package_spec_code of this HourPackageInfo.
 
         小时包specCode。
 
@@ -180,7 +180,7 @@ class HourPackageInfo:
 
     @property
     def combined_product_type_code(self):
-        """Gets the combined_product_type_code of this HourPackageInfo.
+        r"""Gets the combined_product_type_code of this HourPackageInfo.
 
         组合商品resourceTypeCode。
 
@@ -191,7 +191,7 @@ class HourPackageInfo:
 
     @combined_product_type_code.setter
     def combined_product_type_code(self, combined_product_type_code):
-        """Sets the combined_product_type_code of this HourPackageInfo.
+        r"""Sets the combined_product_type_code of this HourPackageInfo.
 
         组合商品resourceTypeCode。
 
@@ -202,7 +202,7 @@ class HourPackageInfo:
 
     @property
     def use_up_policy(self):
-        """Gets the use_up_policy of this HourPackageInfo.
+        r"""Gets the use_up_policy of this HourPackageInfo.
 
         小时包用完策略：SHUTDOWN_OR_HIBERNATE：自动关机/休眠；PAY_PER_USE：自动按需计费。
 
@@ -213,7 +213,7 @@ class HourPackageInfo:
 
     @use_up_policy.setter
     def use_up_policy(self, use_up_policy):
-        """Sets the use_up_policy of this HourPackageInfo.
+        r"""Sets the use_up_policy of this HourPackageInfo.
 
         小时包用完策略：SHUTDOWN_OR_HIBERNATE：自动关机/休眠；PAY_PER_USE：自动按需计费。
 
@@ -224,7 +224,7 @@ class HourPackageInfo:
 
     @property
     def package_duration(self):
-        """Gets the package_duration of this HourPackageInfo.
+        r"""Gets the package_duration of this HourPackageInfo.
 
         小时包总时长。
 
@@ -235,7 +235,7 @@ class HourPackageInfo:
 
     @package_duration.setter
     def package_duration(self, package_duration):
-        """Sets the package_duration of this HourPackageInfo.
+        r"""Sets the package_duration of this HourPackageInfo.
 
         小时包总时长。
 
@@ -246,7 +246,7 @@ class HourPackageInfo:
 
     @property
     def use_duration(self):
-        """Gets the use_duration of this HourPackageInfo.
+        r"""Gets the use_duration of this HourPackageInfo.
 
         小时包已用用时长。
 
@@ -257,7 +257,7 @@ class HourPackageInfo:
 
     @use_duration.setter
     def use_duration(self, use_duration):
-        """Sets the use_duration of this HourPackageInfo.
+        r"""Sets the use_duration of this HourPackageInfo.
 
         小时包已用用时长。
 

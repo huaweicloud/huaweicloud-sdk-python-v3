@@ -25,7 +25,7 @@ class UpdateServerBlockDeviceReq:
     }
 
     def __init__(self, block_device=None):
-        """UpdateServerBlockDeviceReq
+        r"""UpdateServerBlockDeviceReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateServerBlockDeviceReq:
 
     @property
     def block_device(self):
-        """Gets the block_device of this UpdateServerBlockDeviceReq.
+        r"""Gets the block_device of this UpdateServerBlockDeviceReq.
 
         :return: The block_device of this UpdateServerBlockDeviceReq.
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerBlockDeviceOption`
@@ -51,7 +51,7 @@ class UpdateServerBlockDeviceReq:
 
     @block_device.setter
     def block_device(self, block_device):
-        """Sets the block_device of this UpdateServerBlockDeviceReq.
+        r"""Sets the block_device of this UpdateServerBlockDeviceReq.
 
         :param block_device: The block_device of this UpdateServerBlockDeviceReq.
         :type block_device: :class:`huaweicloudsdkecs.v2.UpdateServerBlockDeviceOption`

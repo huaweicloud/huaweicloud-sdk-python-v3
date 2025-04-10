@@ -31,7 +31,7 @@ class TemplatePageParam:
     }
 
     def __init__(self, creator_num=None, offset=None, limit=None, name=None):
-        """TemplatePageParam
+        r"""TemplatePageParam
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TemplatePageParam:
 
     @property
     def creator_num(self):
-        """Gets the creator_num of this TemplatePageParam.
+        r"""Gets the creator_num of this TemplatePageParam.
 
         创建人ID
 
@@ -75,7 +75,7 @@ class TemplatePageParam:
 
     @creator_num.setter
     def creator_num(self, creator_num):
-        """Sets the creator_num of this TemplatePageParam.
+        r"""Sets the creator_num of this TemplatePageParam.
 
         创建人ID
 
@@ -86,7 +86,7 @@ class TemplatePageParam:
 
     @property
     def offset(self):
-        """Gets the offset of this TemplatePageParam.
+        r"""Gets the offset of this TemplatePageParam.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -97,7 +97,7 @@ class TemplatePageParam:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this TemplatePageParam.
+        r"""Sets the offset of this TemplatePageParam.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -108,7 +108,7 @@ class TemplatePageParam:
 
     @property
     def limit(self):
-        """Gets the limit of this TemplatePageParam.
+        r"""Gets the limit of this TemplatePageParam.
 
         每页显示的条目数量，最大支持200条
 
@@ -119,7 +119,7 @@ class TemplatePageParam:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this TemplatePageParam.
+        r"""Sets the limit of this TemplatePageParam.
 
         每页显示的条目数量，最大支持200条
 
@@ -130,7 +130,7 @@ class TemplatePageParam:
 
     @property
     def name(self):
-        """Gets the name of this TemplatePageParam.
+        r"""Gets the name of this TemplatePageParam.
 
         脑图名称
 
@@ -141,7 +141,7 @@ class TemplatePageParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TemplatePageParam.
+        r"""Sets the name of this TemplatePageParam.
 
         脑图名称
 

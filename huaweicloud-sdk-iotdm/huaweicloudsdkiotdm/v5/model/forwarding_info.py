@@ -27,7 +27,7 @@ class ForwardingInfo:
     }
 
     def __init__(self, eip=None, enable_snat=None):
-        """ForwardingInfo
+        r"""ForwardingInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ForwardingInfo:
 
     @property
     def eip(self):
-        """Gets the eip of this ForwardingInfo.
+        r"""Gets the eip of this ForwardingInfo.
 
         **参数说明**：NAT网关绑定的EIP 
 
@@ -61,7 +61,7 @@ class ForwardingInfo:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this ForwardingInfo.
+        r"""Sets the eip of this ForwardingInfo.
 
         **参数说明**：NAT网关绑定的EIP 
 
@@ -72,7 +72,7 @@ class ForwardingInfo:
 
     @property
     def enable_snat(self):
-        """Gets the enable_snat of this ForwardingInfo.
+        r"""Gets the enable_snat of this ForwardingInfo.
 
         **参数说明**：是否启用SNAT配置 **取值范围**： - true: SNAT配置已启用 - false: SNAT配置未启用 
 
@@ -83,7 +83,7 @@ class ForwardingInfo:
 
     @enable_snat.setter
     def enable_snat(self, enable_snat):
-        """Sets the enable_snat of this ForwardingInfo.
+        r"""Sets the enable_snat of this ForwardingInfo.
 
         **参数说明**：是否启用SNAT配置 **取值范围**： - true: SNAT配置已启用 - false: SNAT配置未启用 
 

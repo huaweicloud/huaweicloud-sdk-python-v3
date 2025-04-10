@@ -27,7 +27,7 @@ class AttachInternetBandwidth:
     }
 
     def __init__(self, global_eip_segment_id=None, internet_bandwidth_id=None):
-        """AttachInternetBandwidth
+        r"""AttachInternetBandwidth
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AttachInternetBandwidth:
 
     @property
     def global_eip_segment_id(self):
-        """Gets the global_eip_segment_id of this AttachInternetBandwidth.
+        r"""Gets the global_eip_segment_id of this AttachInternetBandwidth.
 
         全域弹性公网IP段的ID
 
@@ -59,7 +59,7 @@ class AttachInternetBandwidth:
 
     @global_eip_segment_id.setter
     def global_eip_segment_id(self, global_eip_segment_id):
-        """Sets the global_eip_segment_id of this AttachInternetBandwidth.
+        r"""Sets the global_eip_segment_id of this AttachInternetBandwidth.
 
         全域弹性公网IP段的ID
 
@@ -70,7 +70,7 @@ class AttachInternetBandwidth:
 
     @property
     def internet_bandwidth_id(self):
-        """Gets the internet_bandwidth_id of this AttachInternetBandwidth.
+        r"""Gets the internet_bandwidth_id of this AttachInternetBandwidth.
 
         全域公网带宽的ID
 
@@ -81,7 +81,7 @@ class AttachInternetBandwidth:
 
     @internet_bandwidth_id.setter
     def internet_bandwidth_id(self, internet_bandwidth_id):
-        """Sets the internet_bandwidth_id of this AttachInternetBandwidth.
+        r"""Sets the internet_bandwidth_id of this AttachInternetBandwidth.
 
         全域公网带宽的ID
 

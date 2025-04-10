@@ -39,7 +39,7 @@ class LTSFieldsInfo:
     }
 
     def __init__(self, field_type=None, field_name=None, case_sensitive=None, include_chinese=None, tokenizer=None, quick_analysis=None, ascii=None, lts_sub_fields_info_list=None):
-        """LTSFieldsInfo
+        r"""LTSFieldsInfo
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class LTSFieldsInfo:
 
     @property
     def field_type(self):
-        """Gets the field_type of this LTSFieldsInfo.
+        r"""Gets the field_type of this LTSFieldsInfo.
 
         字段类型
 
@@ -100,7 +100,7 @@ class LTSFieldsInfo:
 
     @field_type.setter
     def field_type(self, field_type):
-        """Sets the field_type of this LTSFieldsInfo.
+        r"""Sets the field_type of this LTSFieldsInfo.
 
         字段类型
 
@@ -111,7 +111,7 @@ class LTSFieldsInfo:
 
     @property
     def field_name(self):
-        """Gets the field_name of this LTSFieldsInfo.
+        r"""Gets the field_name of this LTSFieldsInfo.
 
         字段名称
 
@@ -122,7 +122,7 @@ class LTSFieldsInfo:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this LTSFieldsInfo.
+        r"""Sets the field_name of this LTSFieldsInfo.
 
         字段名称
 
@@ -133,7 +133,7 @@ class LTSFieldsInfo:
 
     @property
     def case_sensitive(self):
-        """Gets the case_sensitive of this LTSFieldsInfo.
+        r"""Gets the case_sensitive of this LTSFieldsInfo.
 
         是否大小写敏感
 
@@ -144,7 +144,7 @@ class LTSFieldsInfo:
 
     @case_sensitive.setter
     def case_sensitive(self, case_sensitive):
-        """Sets the case_sensitive of this LTSFieldsInfo.
+        r"""Sets the case_sensitive of this LTSFieldsInfo.
 
         是否大小写敏感
 
@@ -155,7 +155,7 @@ class LTSFieldsInfo:
 
     @property
     def include_chinese(self):
-        """Gets the include_chinese of this LTSFieldsInfo.
+        r"""Gets the include_chinese of this LTSFieldsInfo.
 
         是否包含中文
 
@@ -166,7 +166,7 @@ class LTSFieldsInfo:
 
     @include_chinese.setter
     def include_chinese(self, include_chinese):
-        """Sets the include_chinese of this LTSFieldsInfo.
+        r"""Sets the include_chinese of this LTSFieldsInfo.
 
         是否包含中文
 
@@ -177,7 +177,7 @@ class LTSFieldsInfo:
 
     @property
     def tokenizer(self):
-        """Gets the tokenizer of this LTSFieldsInfo.
+        r"""Gets the tokenizer of this LTSFieldsInfo.
 
         分词符
 
@@ -188,7 +188,7 @@ class LTSFieldsInfo:
 
     @tokenizer.setter
     def tokenizer(self, tokenizer):
-        """Sets the tokenizer of this LTSFieldsInfo.
+        r"""Sets the tokenizer of this LTSFieldsInfo.
 
         分词符
 
@@ -199,7 +199,7 @@ class LTSFieldsInfo:
 
     @property
     def quick_analysis(self):
-        """Gets the quick_analysis of this LTSFieldsInfo.
+        r"""Gets the quick_analysis of this LTSFieldsInfo.
 
         是否快速分析
 
@@ -210,7 +210,7 @@ class LTSFieldsInfo:
 
     @quick_analysis.setter
     def quick_analysis(self, quick_analysis):
-        """Sets the quick_analysis of this LTSFieldsInfo.
+        r"""Sets the quick_analysis of this LTSFieldsInfo.
 
         是否快速分析
 
@@ -221,7 +221,7 @@ class LTSFieldsInfo:
 
     @property
     def ascii(self):
-        """Gets the ascii of this LTSFieldsInfo.
+        r"""Gets the ascii of this LTSFieldsInfo.
 
         特殊分词符
 
@@ -232,7 +232,7 @@ class LTSFieldsInfo:
 
     @ascii.setter
     def ascii(self, ascii):
-        """Sets the ascii of this LTSFieldsInfo.
+        r"""Sets the ascii of this LTSFieldsInfo.
 
         特殊分词符
 
@@ -243,7 +243,7 @@ class LTSFieldsInfo:
 
     @property
     def lts_sub_fields_info_list(self):
-        """Gets the lts_sub_fields_info_list of this LTSFieldsInfo.
+        r"""Gets the lts_sub_fields_info_list of this LTSFieldsInfo.
 
         json字段信息
 
@@ -254,7 +254,7 @@ class LTSFieldsInfo:
 
     @lts_sub_fields_info_list.setter
     def lts_sub_fields_info_list(self, lts_sub_fields_info_list):
-        """Sets the lts_sub_fields_info_list of this LTSFieldsInfo.
+        r"""Sets the lts_sub_fields_info_list of this LTSFieldsInfo.
 
         json字段信息
 

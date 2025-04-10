@@ -32,7 +32,7 @@ class UpdateFlowResponse(SdkResponse):
     }
 
     def __init__(self, apig_url=None, flow_id=None, steps=None, webhook=None):
-        """UpdateFlowResponse
+        r"""UpdateFlowResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateFlowResponse(SdkResponse):
 
     @property
     def apig_url(self):
-        """Gets the apig_url of this UpdateFlowResponse.
+        r"""Gets the apig_url of this UpdateFlowResponse.
 
         api流注册到apig的url
 
@@ -76,7 +76,7 @@ class UpdateFlowResponse(SdkResponse):
 
     @apig_url.setter
     def apig_url(self, apig_url):
-        """Sets the apig_url of this UpdateFlowResponse.
+        r"""Sets the apig_url of this UpdateFlowResponse.
 
         api流注册到apig的url
 
@@ -87,7 +87,7 @@ class UpdateFlowResponse(SdkResponse):
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this UpdateFlowResponse.
+        r"""Gets the flow_id of this UpdateFlowResponse.
 
         ID
 
@@ -98,7 +98,7 @@ class UpdateFlowResponse(SdkResponse):
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this UpdateFlowResponse.
+        r"""Sets the flow_id of this UpdateFlowResponse.
 
         ID
 
@@ -109,7 +109,7 @@ class UpdateFlowResponse(SdkResponse):
 
     @property
     def steps(self):
-        """Gets the steps of this UpdateFlowResponse.
+        r"""Gets the steps of this UpdateFlowResponse.
 
         函数连接器对应functionId
 
@@ -120,7 +120,7 @@ class UpdateFlowResponse(SdkResponse):
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this UpdateFlowResponse.
+        r"""Sets the steps of this UpdateFlowResponse.
 
         函数连接器对应functionId
 
@@ -131,7 +131,7 @@ class UpdateFlowResponse(SdkResponse):
 
     @property
     def webhook(self):
-        """Gets the webhook of this UpdateFlowResponse.
+        r"""Gets the webhook of this UpdateFlowResponse.
 
         webhook触发url的ID
 
@@ -142,7 +142,7 @@ class UpdateFlowResponse(SdkResponse):
 
     @webhook.setter
     def webhook(self, webhook):
-        """Sets the webhook of this UpdateFlowResponse.
+        r"""Sets the webhook of this UpdateFlowResponse.
 
         webhook触发url的ID
 

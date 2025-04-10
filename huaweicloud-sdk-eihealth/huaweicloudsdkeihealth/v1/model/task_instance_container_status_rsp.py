@@ -25,7 +25,7 @@ class TaskInstanceContainerStatusRsp:
     }
 
     def __init__(self, restart_count=None):
-        """TaskInstanceContainerStatusRsp
+        r"""TaskInstanceContainerStatusRsp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TaskInstanceContainerStatusRsp:
 
     @property
     def restart_count(self):
-        """Gets the restart_count of this TaskInstanceContainerStatusRsp.
+        r"""Gets the restart_count of this TaskInstanceContainerStatusRsp.
 
         重启次数
 
@@ -54,7 +54,7 @@ class TaskInstanceContainerStatusRsp:
 
     @restart_count.setter
     def restart_count(self, restart_count):
-        """Sets the restart_count of this TaskInstanceContainerStatusRsp.
+        r"""Sets the restart_count of this TaskInstanceContainerStatusRsp.
 
         重启次数
 

@@ -55,7 +55,7 @@ class RestoreNewInstanceRequestBody:
     }
 
     def __init__(self, name=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, disk_encryption_id=None, configurations=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, server_group_policies=None, restore_point=None, charge_info=None):
-        """RestoreNewInstanceRequestBody
+        r"""RestoreNewInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this RestoreNewInstanceRequestBody.
+        r"""Gets the name of this RestoreNewInstanceRequestBody.
 
         实例名称。用于表示实例的名称，用于表示实例的名称，允许和已有名称重复。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
@@ -152,7 +152,7 @@ class RestoreNewInstanceRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RestoreNewInstanceRequestBody.
+        r"""Sets the name of this RestoreNewInstanceRequestBody.
 
         实例名称。用于表示实例的名称，用于表示实例的名称，允许和已有名称重复。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
@@ -163,7 +163,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this RestoreNewInstanceRequestBody.
+        r"""Gets the availability_zone of this RestoreNewInstanceRequestBody.
 
         可用区ID，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
@@ -174,7 +174,7 @@ class RestoreNewInstanceRequestBody:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this RestoreNewInstanceRequestBody.
+        r"""Sets the availability_zone of this RestoreNewInstanceRequestBody.
 
         可用区ID，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
@@ -185,7 +185,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this RestoreNewInstanceRequestBody.
+        r"""Gets the vpc_id of this RestoreNewInstanceRequestBody.
 
         虚拟私有云ID。获取方法请参见《虚拟私有云API参考》中“VPC”的内容。 取值：非空，字符长度校验，严格UUID正则校验。
 
@@ -196,7 +196,7 @@ class RestoreNewInstanceRequestBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this RestoreNewInstanceRequestBody.
+        r"""Sets the vpc_id of this RestoreNewInstanceRequestBody.
 
         虚拟私有云ID。获取方法请参见《虚拟私有云API参考》中“VPC”的内容。 取值：非空，字符长度校验，严格UUID正则校验。
 
@@ -207,7 +207,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this RestoreNewInstanceRequestBody.
+        r"""Gets the subnet_id of this RestoreNewInstanceRequestBody.
 
         子网ID。获取方法请参见《虚拟私有云API参考》中“子网”的内容。
 
@@ -218,7 +218,7 @@ class RestoreNewInstanceRequestBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this RestoreNewInstanceRequestBody.
+        r"""Sets the subnet_id of this RestoreNewInstanceRequestBody.
 
         子网ID。获取方法请参见《虚拟私有云API参考》中“子网”的内容。
 
@@ -229,7 +229,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this RestoreNewInstanceRequestBody.
+        r"""Gets the security_group_id of this RestoreNewInstanceRequestBody.
 
         指定实例所属的安全组ID。 获取方法请参见《虚拟私有云API参考》中“安全组”的内容。
 
@@ -240,7 +240,7 @@ class RestoreNewInstanceRequestBody:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this RestoreNewInstanceRequestBody.
+        r"""Sets the security_group_id of this RestoreNewInstanceRequestBody.
 
         指定实例所属的安全组ID。 获取方法请参见《虚拟私有云API参考》中“安全组”的内容。
 
@@ -251,7 +251,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this RestoreNewInstanceRequestBody.
+        r"""Gets the password of this RestoreNewInstanceRequestBody.
 
         数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -262,7 +262,7 @@ class RestoreNewInstanceRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this RestoreNewInstanceRequestBody.
+        r"""Sets the password of this RestoreNewInstanceRequestBody.
 
         数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -273,7 +273,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def disk_encryption_id(self):
-        """Gets the disk_encryption_id of this RestoreNewInstanceRequestBody.
+        r"""Gets the disk_encryption_id of this RestoreNewInstanceRequestBody.
 
         磁盘加密时的密钥ID，严格UUID正则校验。 不传该参数时，表示不进行磁盘加密。
 
@@ -284,7 +284,7 @@ class RestoreNewInstanceRequestBody:
 
     @disk_encryption_id.setter
     def disk_encryption_id(self, disk_encryption_id):
-        """Sets the disk_encryption_id of this RestoreNewInstanceRequestBody.
+        r"""Sets the disk_encryption_id of this RestoreNewInstanceRequestBody.
 
         磁盘加密时的密钥ID，严格UUID正则校验。 不传该参数时，表示不进行磁盘加密。
 
@@ -295,7 +295,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def configurations(self):
-        """Gets the configurations of this RestoreNewInstanceRequestBody.
+        r"""Gets the configurations of this RestoreNewInstanceRequestBody.
 
         参数组配置信息。
 
@@ -306,7 +306,7 @@ class RestoreNewInstanceRequestBody:
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this RestoreNewInstanceRequestBody.
+        r"""Sets the configurations of this RestoreNewInstanceRequestBody.
 
         参数组配置信息。
 
@@ -317,7 +317,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def flavor(self):
-        """Gets the flavor of this RestoreNewInstanceRequestBody.
+        r"""Gets the flavor of this RestoreNewInstanceRequestBody.
 
         实例规格详情。
 
@@ -328,7 +328,7 @@ class RestoreNewInstanceRequestBody:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this RestoreNewInstanceRequestBody.
+        r"""Sets the flavor of this RestoreNewInstanceRequestBody.
 
         实例规格详情。
 
@@ -339,7 +339,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this RestoreNewInstanceRequestBody.
+        r"""Gets the backup_strategy of this RestoreNewInstanceRequestBody.
 
         :return: The backup_strategy of this RestoreNewInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkdds.v3.BackupStrategy`
@@ -348,7 +348,7 @@ class RestoreNewInstanceRequestBody:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this RestoreNewInstanceRequestBody.
+        r"""Sets the backup_strategy of this RestoreNewInstanceRequestBody.
 
         :param backup_strategy: The backup_strategy of this RestoreNewInstanceRequestBody.
         :type backup_strategy: :class:`huaweicloudsdkdds.v3.BackupStrategy`
@@ -357,7 +357,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RestoreNewInstanceRequestBody.
+        r"""Gets the enterprise_project_id of this RestoreNewInstanceRequestBody.
 
         企业项目ID。
 
@@ -368,7 +368,7 @@ class RestoreNewInstanceRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RestoreNewInstanceRequestBody.
+        r"""Sets the enterprise_project_id of this RestoreNewInstanceRequestBody.
 
         企业项目ID。
 
@@ -379,7 +379,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def ssl_option(self):
-        """Gets the ssl_option of this RestoreNewInstanceRequestBody.
+        r"""Gets the ssl_option of this RestoreNewInstanceRequestBody.
 
         SSL开关选项。 取值： - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认启用SSL连接。
 
@@ -390,7 +390,7 @@ class RestoreNewInstanceRequestBody:
 
     @ssl_option.setter
     def ssl_option(self, ssl_option):
-        """Sets the ssl_option of this RestoreNewInstanceRequestBody.
+        r"""Sets the ssl_option of this RestoreNewInstanceRequestBody.
 
         SSL开关选项。 取值： - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认启用SSL连接。
 
@@ -401,7 +401,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def dss_pool_id(self):
-        """Gets the dss_pool_id of this RestoreNewInstanceRequestBody.
+        r"""Gets the dss_pool_id of this RestoreNewInstanceRequestBody.
 
         创建新实例所在专属存储池ID，仅专属云创建实例时有效。
 
@@ -412,7 +412,7 @@ class RestoreNewInstanceRequestBody:
 
     @dss_pool_id.setter
     def dss_pool_id(self, dss_pool_id):
-        """Sets the dss_pool_id of this RestoreNewInstanceRequestBody.
+        r"""Sets the dss_pool_id of this RestoreNewInstanceRequestBody.
 
         创建新实例所在专属存储池ID，仅专属云创建实例时有效。
 
@@ -423,7 +423,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def server_group_policies(self):
-        """Gets the server_group_policies of this RestoreNewInstanceRequestBody.
+        r"""Gets the server_group_policies of this RestoreNewInstanceRequestBody.
 
         创建新实例设置云服务器组关联的策略名称列表，仅专属云创建实例时有效。 取值    - 取“anti-affinity”，表示DDS实例开启反亲和部署，反亲和部署是出于高可用性考虑，将您的Primary、Secondary和Hidden节点分别创建在不同的物理机上。当前仅支持该值，不传该值默认不开启反亲和部署。
 
@@ -434,7 +434,7 @@ class RestoreNewInstanceRequestBody:
 
     @server_group_policies.setter
     def server_group_policies(self, server_group_policies):
-        """Sets the server_group_policies of this RestoreNewInstanceRequestBody.
+        r"""Sets the server_group_policies of this RestoreNewInstanceRequestBody.
 
         创建新实例设置云服务器组关联的策略名称列表，仅专属云创建实例时有效。 取值    - 取“anti-affinity”，表示DDS实例开启反亲和部署，反亲和部署是出于高可用性考虑，将您的Primary、Secondary和Hidden节点分别创建在不同的物理机上。当前仅支持该值，不传该值默认不开启反亲和部署。
 
@@ -445,7 +445,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def restore_point(self):
-        """Gets the restore_point of this RestoreNewInstanceRequestBody.
+        r"""Gets the restore_point of this RestoreNewInstanceRequestBody.
 
         :return: The restore_point of this RestoreNewInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkdds.v3.RestorePoint`
@@ -454,7 +454,7 @@ class RestoreNewInstanceRequestBody:
 
     @restore_point.setter
     def restore_point(self, restore_point):
-        """Sets the restore_point of this RestoreNewInstanceRequestBody.
+        r"""Sets the restore_point of this RestoreNewInstanceRequestBody.
 
         :param restore_point: The restore_point of this RestoreNewInstanceRequestBody.
         :type restore_point: :class:`huaweicloudsdkdds.v3.RestorePoint`
@@ -463,7 +463,7 @@ class RestoreNewInstanceRequestBody:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this RestoreNewInstanceRequestBody.
+        r"""Gets the charge_info of this RestoreNewInstanceRequestBody.
 
         :return: The charge_info of this RestoreNewInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkdds.v3.ChargeInfoOption`
@@ -472,7 +472,7 @@ class RestoreNewInstanceRequestBody:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this RestoreNewInstanceRequestBody.
+        r"""Sets the charge_info of this RestoreNewInstanceRequestBody.
 
         :param charge_info: The charge_info of this RestoreNewInstanceRequestBody.
         :type charge_info: :class:`huaweicloudsdkdds.v3.ChargeInfoOption`

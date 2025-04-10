@@ -25,7 +25,7 @@ class PublishAppReq:
     }
 
     def __init__(self, items=None):
-        """PublishAppReq
+        r"""PublishAppReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PublishAppReq:
 
     @property
     def items(self):
-        """Gets the items of this PublishAppReq.
+        r"""Gets the items of this PublishAppReq.
 
         发布应用列表(单次最多20个应用)。
 
@@ -53,7 +53,7 @@ class PublishAppReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this PublishAppReq.
+        r"""Sets the items of this PublishAppReq.
 
         发布应用列表(单次最多20个应用)。
 

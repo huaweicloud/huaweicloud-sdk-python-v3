@@ -29,7 +29,7 @@ class TasksSuccessRateQuery:
     }
 
     def __init__(self, start_date=None, end_date=None, task_ids=None):
-        """TasksSuccessRateQuery
+        r"""TasksSuccessRateQuery
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class TasksSuccessRateQuery:
 
     @property
     def start_date(self):
-        """Gets the start_date of this TasksSuccessRateQuery.
+        r"""Gets the start_date of this TasksSuccessRateQuery.
 
         部署应用开始时间范围的左边界（包含），格式yyyy-MM-dd
 
@@ -65,7 +65,7 @@ class TasksSuccessRateQuery:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this TasksSuccessRateQuery.
+        r"""Sets the start_date of this TasksSuccessRateQuery.
 
         部署应用开始时间范围的左边界（包含），格式yyyy-MM-dd
 
@@ -76,7 +76,7 @@ class TasksSuccessRateQuery:
 
     @property
     def end_date(self):
-        """Gets the end_date of this TasksSuccessRateQuery.
+        r"""Gets the end_date of this TasksSuccessRateQuery.
 
         部署应用开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
 
@@ -87,7 +87,7 @@ class TasksSuccessRateQuery:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this TasksSuccessRateQuery.
+        r"""Sets the end_date of this TasksSuccessRateQuery.
 
         部署应用开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
 
@@ -98,7 +98,7 @@ class TasksSuccessRateQuery:
 
     @property
     def task_ids(self):
-        """Gets the task_ids of this TasksSuccessRateQuery.
+        r"""Gets the task_ids of this TasksSuccessRateQuery.
 
         任务id列表
 
@@ -109,7 +109,7 @@ class TasksSuccessRateQuery:
 
     @task_ids.setter
     def task_ids(self, task_ids):
-        """Sets the task_ids of this TasksSuccessRateQuery.
+        r"""Sets the task_ids of this TasksSuccessRateQuery.
 
         任务id列表
 

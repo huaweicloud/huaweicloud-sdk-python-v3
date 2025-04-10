@@ -25,7 +25,7 @@ class ValidateSignatureRequest:
     }
 
     def __init__(self, body=None):
-        """ValidateSignatureRequest
+        r"""ValidateSignatureRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ValidateSignatureRequest:
 
     @property
     def body(self):
-        """Gets the body of this ValidateSignatureRequest.
+        r"""Gets the body of this ValidateSignatureRequest.
 
         :return: The body of this ValidateSignatureRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.VerifyRequestBody`
@@ -52,7 +52,7 @@ class ValidateSignatureRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ValidateSignatureRequest.
+        r"""Sets the body of this ValidateSignatureRequest.
 
         :param body: The body of this ValidateSignatureRequest.
         :type body: :class:`huaweicloudsdkkms.v2.VerifyRequestBody`

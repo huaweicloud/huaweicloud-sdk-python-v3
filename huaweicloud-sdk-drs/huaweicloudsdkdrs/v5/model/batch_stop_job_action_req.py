@@ -25,7 +25,7 @@ class BatchStopJobActionReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchStopJobActionReq
+        r"""BatchStopJobActionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchStopJobActionReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchStopJobActionReq.
+        r"""Gets the jobs of this BatchStopJobActionReq.
 
         批量结束任务请求体。
 
@@ -53,7 +53,7 @@ class BatchStopJobActionReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchStopJobActionReq.
+        r"""Sets the jobs of this BatchStopJobActionReq.
 
         批量结束任务请求体。
 

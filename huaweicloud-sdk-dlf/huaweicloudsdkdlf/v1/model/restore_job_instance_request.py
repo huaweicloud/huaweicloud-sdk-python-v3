@@ -29,7 +29,7 @@ class RestoreJobInstanceRequest:
     }
 
     def __init__(self, workspace=None, job_name=None, instance_id=None):
-        """RestoreJobInstanceRequest
+        r"""RestoreJobInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RestoreJobInstanceRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this RestoreJobInstanceRequest.
+        r"""Gets the workspace of this RestoreJobInstanceRequest.
 
         工作空间id
 
@@ -66,7 +66,7 @@ class RestoreJobInstanceRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this RestoreJobInstanceRequest.
+        r"""Sets the workspace of this RestoreJobInstanceRequest.
 
         工作空间id
 
@@ -77,7 +77,7 @@ class RestoreJobInstanceRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this RestoreJobInstanceRequest.
+        r"""Gets the job_name of this RestoreJobInstanceRequest.
 
         作业名称.
 
@@ -88,7 +88,7 @@ class RestoreJobInstanceRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this RestoreJobInstanceRequest.
+        r"""Sets the job_name of this RestoreJobInstanceRequest.
 
         作业名称.
 
@@ -99,7 +99,7 @@ class RestoreJobInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RestoreJobInstanceRequest.
+        r"""Gets the instance_id of this RestoreJobInstanceRequest.
 
         作业实例id.
 
@@ -110,7 +110,7 @@ class RestoreJobInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RestoreJobInstanceRequest.
+        r"""Sets the instance_id of this RestoreJobInstanceRequest.
 
         作业实例id.
 

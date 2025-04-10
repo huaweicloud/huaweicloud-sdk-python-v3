@@ -37,7 +37,7 @@ class ListFreeResourcesUsageRecordsRequest:
     }
 
     def __init__(self, free_resource_id=None, product_id=None, resource_type_code=None, deduct_time_begin=None, deduct_time_end=None, offset=None, limit=None):
-        """ListFreeResourcesUsageRecordsRequest
+        r"""ListFreeResourcesUsageRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListFreeResourcesUsageRecordsRequest:
 
     @property
     def free_resource_id(self):
-        """Gets the free_resource_id of this ListFreeResourcesUsageRecordsRequest.
+        r"""Gets the free_resource_id of this ListFreeResourcesUsageRecordsRequest.
 
         资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。资源项ID来自查询资源包列表接口的响应。 此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -94,7 +94,7 @@ class ListFreeResourcesUsageRecordsRequest:
 
     @free_resource_id.setter
     def free_resource_id(self, free_resource_id):
-        """Sets the free_resource_id of this ListFreeResourcesUsageRecordsRequest.
+        r"""Sets the free_resource_id of this ListFreeResourcesUsageRecordsRequest.
 
         资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。资源项ID来自查询资源包列表接口的响应。 此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -105,7 +105,7 @@ class ListFreeResourcesUsageRecordsRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ListFreeResourcesUsageRecordsRequest.
+        r"""Gets the product_id of this ListFreeResourcesUsageRecordsRequest.
 
         产品ID，即资源包ID。 此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -116,7 +116,7 @@ class ListFreeResourcesUsageRecordsRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ListFreeResourcesUsageRecordsRequest.
+        r"""Sets the product_id of this ListFreeResourcesUsageRecordsRequest.
 
         产品ID，即资源包ID。 此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -127,7 +127,7 @@ class ListFreeResourcesUsageRecordsRequest:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this ListFreeResourcesUsageRecordsRequest.
+        r"""Gets the resource_type_code of this ListFreeResourcesUsageRecordsRequest.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。 此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -138,7 +138,7 @@ class ListFreeResourcesUsageRecordsRequest:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this ListFreeResourcesUsageRecordsRequest.
+        r"""Sets the resource_type_code of this ListFreeResourcesUsageRecordsRequest.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。 此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -149,7 +149,7 @@ class ListFreeResourcesUsageRecordsRequest:
 
     @property
     def deduct_time_begin(self):
-        """Gets the deduct_time_begin of this ListFreeResourcesUsageRecordsRequest.
+        r"""Gets the deduct_time_begin of this ListFreeResourcesUsageRecordsRequest.
 
         资源抵扣的起始时间。东八区时间，格式为YYYY-MM-DD。
 
@@ -160,7 +160,7 @@ class ListFreeResourcesUsageRecordsRequest:
 
     @deduct_time_begin.setter
     def deduct_time_begin(self, deduct_time_begin):
-        """Sets the deduct_time_begin of this ListFreeResourcesUsageRecordsRequest.
+        r"""Sets the deduct_time_begin of this ListFreeResourcesUsageRecordsRequest.
 
         资源抵扣的起始时间。东八区时间，格式为YYYY-MM-DD。
 
@@ -171,7 +171,7 @@ class ListFreeResourcesUsageRecordsRequest:
 
     @property
     def deduct_time_end(self):
-        """Gets the deduct_time_end of this ListFreeResourcesUsageRecordsRequest.
+        r"""Gets the deduct_time_end of this ListFreeResourcesUsageRecordsRequest.
 
         资源抵扣的结束时间。东八区时间，格式为YYYY-MM-DD。  说明： 抵扣结束时间-抵扣起始时间<=90天。
 
@@ -182,7 +182,7 @@ class ListFreeResourcesUsageRecordsRequest:
 
     @deduct_time_end.setter
     def deduct_time_end(self, deduct_time_end):
-        """Sets the deduct_time_end of this ListFreeResourcesUsageRecordsRequest.
+        r"""Sets the deduct_time_end of this ListFreeResourcesUsageRecordsRequest.
 
         资源抵扣的结束时间。东八区时间，格式为YYYY-MM-DD。  说明： 抵扣结束时间-抵扣起始时间<=90天。
 
@@ -193,7 +193,7 @@ class ListFreeResourcesUsageRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFreeResourcesUsageRecordsRequest.
+        r"""Gets the offset of this ListFreeResourcesUsageRecordsRequest.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -204,7 +204,7 @@ class ListFreeResourcesUsageRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFreeResourcesUsageRecordsRequest.
+        r"""Sets the offset of this ListFreeResourcesUsageRecordsRequest.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -215,7 +215,7 @@ class ListFreeResourcesUsageRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFreeResourcesUsageRecordsRequest.
+        r"""Gets the limit of this ListFreeResourcesUsageRecordsRequest.
 
         每次查询的数量限制。默认值为10。
 
@@ -226,7 +226,7 @@ class ListFreeResourcesUsageRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFreeResourcesUsageRecordsRequest.
+        r"""Sets the limit of this ListFreeResourcesUsageRecordsRequest.
 
         每次查询的数量限制。默认值为10。
 

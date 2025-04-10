@@ -25,7 +25,7 @@ class UpdateUserReq:
     }
 
     def __init__(self, user=None):
-        """UpdateUserReq
+        r"""UpdateUserReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateUserReq:
 
     @property
     def user(self):
-        """Gets the user of this UpdateUserReq.
+        r"""Gets the user of this UpdateUserReq.
 
         :return: The user of this UpdateUserReq.
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateUserDetailReq`
@@ -51,7 +51,7 @@ class UpdateUserReq:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this UpdateUserReq.
+        r"""Sets the user of this UpdateUserReq.
 
         :param user: The user of this UpdateUserReq.
         :type user: :class:`huaweicloudsdkddm.v1.UpdateUserDetailReq`

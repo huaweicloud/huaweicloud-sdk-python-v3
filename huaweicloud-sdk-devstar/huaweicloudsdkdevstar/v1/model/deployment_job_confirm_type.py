@@ -25,7 +25,7 @@ class DeploymentJobConfirmType:
     }
 
     def __init__(self, type=None):
-        """DeploymentJobConfirmType
+        r"""DeploymentJobConfirmType
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeploymentJobConfirmType:
 
     @property
     def type(self):
-        """Gets the type of this DeploymentJobConfirmType.
+        r"""Gets the type of this DeploymentJobConfirmType.
 
         部署人工审核确认类型 stop终止部署 continue继续部署
 
@@ -54,7 +54,7 @@ class DeploymentJobConfirmType:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DeploymentJobConfirmType.
+        r"""Sets the type of this DeploymentJobConfirmType.
 
         部署人工审核确认类型 stop终止部署 continue继续部署
 

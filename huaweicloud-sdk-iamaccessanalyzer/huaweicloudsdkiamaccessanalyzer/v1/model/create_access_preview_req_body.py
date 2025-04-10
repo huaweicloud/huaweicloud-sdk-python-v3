@@ -27,7 +27,7 @@ class CreateAccessPreviewReqBody:
     }
 
     def __init__(self, configurations=None, resource_urn=None):
-        """CreateAccessPreviewReqBody
+        r"""CreateAccessPreviewReqBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateAccessPreviewReqBody:
 
     @property
     def configurations(self):
-        """Gets the configurations of this CreateAccessPreviewReqBody.
+        r"""Gets the configurations of this CreateAccessPreviewReqBody.
 
         :return: The configurations of this CreateAccessPreviewReqBody.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.Configuration`
@@ -57,7 +57,7 @@ class CreateAccessPreviewReqBody:
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this CreateAccessPreviewReqBody.
+        r"""Sets the configurations of this CreateAccessPreviewReqBody.
 
         :param configurations: The configurations of this CreateAccessPreviewReqBody.
         :type configurations: :class:`huaweicloudsdkiamaccessanalyzer.v1.Configuration`
@@ -66,7 +66,7 @@ class CreateAccessPreviewReqBody:
 
     @property
     def resource_urn(self):
-        """Gets the resource_urn of this CreateAccessPreviewReqBody.
+        r"""Gets the resource_urn of this CreateAccessPreviewReqBody.
 
         资源的唯一资源标识符。
 
@@ -77,7 +77,7 @@ class CreateAccessPreviewReqBody:
 
     @resource_urn.setter
     def resource_urn(self, resource_urn):
-        """Sets the resource_urn of this CreateAccessPreviewReqBody.
+        r"""Sets the resource_urn of this CreateAccessPreviewReqBody.
 
         资源的唯一资源标识符。
 

@@ -37,7 +37,7 @@ class NeutronListFirewallGroupsRequest:
     }
 
     def __init__(self, marker=None, limit=None, id=None, name=None, description=None, ingress_firewall_policy_id=None, egress_firewall_policy_id=None):
-        """NeutronListFirewallGroupsRequest
+        r"""NeutronListFirewallGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class NeutronListFirewallGroupsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this NeutronListFirewallGroupsRequest.
+        r"""Gets the marker of this NeutronListFirewallGroupsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -96,7 +96,7 @@ class NeutronListFirewallGroupsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this NeutronListFirewallGroupsRequest.
+        r"""Sets the marker of this NeutronListFirewallGroupsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -107,7 +107,7 @@ class NeutronListFirewallGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this NeutronListFirewallGroupsRequest.
+        r"""Gets the limit of this NeutronListFirewallGroupsRequest.
 
         每页返回的个数
 
@@ -118,7 +118,7 @@ class NeutronListFirewallGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this NeutronListFirewallGroupsRequest.
+        r"""Sets the limit of this NeutronListFirewallGroupsRequest.
 
         每页返回的个数
 
@@ -129,7 +129,7 @@ class NeutronListFirewallGroupsRequest:
 
     @property
     def id(self):
-        """Gets the id of this NeutronListFirewallGroupsRequest.
+        r"""Gets the id of this NeutronListFirewallGroupsRequest.
 
         使用id过滤网络ACL组
 
@@ -140,7 +140,7 @@ class NeutronListFirewallGroupsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronListFirewallGroupsRequest.
+        r"""Sets the id of this NeutronListFirewallGroupsRequest.
 
         使用id过滤网络ACL组
 
@@ -151,7 +151,7 @@ class NeutronListFirewallGroupsRequest:
 
     @property
     def name(self):
-        """Gets the name of this NeutronListFirewallGroupsRequest.
+        r"""Gets the name of this NeutronListFirewallGroupsRequest.
 
         使用name过滤ACL组
 
@@ -162,7 +162,7 @@ class NeutronListFirewallGroupsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronListFirewallGroupsRequest.
+        r"""Sets the name of this NeutronListFirewallGroupsRequest.
 
         使用name过滤ACL组
 
@@ -173,7 +173,7 @@ class NeutronListFirewallGroupsRequest:
 
     @property
     def description(self):
-        """Gets the description of this NeutronListFirewallGroupsRequest.
+        r"""Gets the description of this NeutronListFirewallGroupsRequest.
 
         使用description过滤ACL组
 
@@ -184,7 +184,7 @@ class NeutronListFirewallGroupsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronListFirewallGroupsRequest.
+        r"""Sets the description of this NeutronListFirewallGroupsRequest.
 
         使用description过滤ACL组
 
@@ -195,7 +195,7 @@ class NeutronListFirewallGroupsRequest:
 
     @property
     def ingress_firewall_policy_id(self):
-        """Gets the ingress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
+        r"""Gets the ingress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
 
         使用入方向的网络ACL策略ID过滤网络ACL组
 
@@ -206,7 +206,7 @@ class NeutronListFirewallGroupsRequest:
 
     @ingress_firewall_policy_id.setter
     def ingress_firewall_policy_id(self, ingress_firewall_policy_id):
-        """Sets the ingress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
+        r"""Sets the ingress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
 
         使用入方向的网络ACL策略ID过滤网络ACL组
 
@@ -217,7 +217,7 @@ class NeutronListFirewallGroupsRequest:
 
     @property
     def egress_firewall_policy_id(self):
-        """Gets the egress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
+        r"""Gets the egress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
 
         使用出方向的网络ACL策略过滤查询网络ACL组
 
@@ -228,7 +228,7 @@ class NeutronListFirewallGroupsRequest:
 
     @egress_firewall_policy_id.setter
     def egress_firewall_policy_id(self, egress_firewall_policy_id):
-        """Sets the egress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
+        r"""Sets the egress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
 
         使用出方向的网络ACL策略过滤查询网络ACL组
 

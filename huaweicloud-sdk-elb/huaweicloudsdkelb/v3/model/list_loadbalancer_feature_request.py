@@ -25,7 +25,7 @@ class ListLoadbalancerFeatureRequest:
     }
 
     def __init__(self, loadbalancer_id=None):
-        """ListLoadbalancerFeatureRequest
+        r"""ListLoadbalancerFeatureRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListLoadbalancerFeatureRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this ListLoadbalancerFeatureRequest.
+        r"""Gets the loadbalancer_id of this ListLoadbalancerFeatureRequest.
 
         ELB实例ID。
 
@@ -53,7 +53,7 @@ class ListLoadbalancerFeatureRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this ListLoadbalancerFeatureRequest.
+        r"""Sets the loadbalancer_id of this ListLoadbalancerFeatureRequest.
 
         ELB实例ID。
 

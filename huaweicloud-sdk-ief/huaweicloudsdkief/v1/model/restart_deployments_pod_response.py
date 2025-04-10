@@ -26,7 +26,7 @@ class RestartDeploymentsPodResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """RestartDeploymentsPodResponse
+        r"""RestartDeploymentsPodResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RestartDeploymentsPodResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this RestartDeploymentsPodResponse.
+        r"""Gets the body of this RestartDeploymentsPodResponse.
 
         :return: The body of this RestartDeploymentsPodResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class RestartDeploymentsPodResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestartDeploymentsPodResponse.
+        r"""Sets the body of this RestartDeploymentsPodResponse.
 
         :param body: The body of this RestartDeploymentsPodResponse.
         :type body: str

@@ -25,7 +25,7 @@ class DeleteCenterTaskRequestBody:
     }
 
     def __init__(self, message=None):
-        """DeleteCenterTaskRequestBody
+        r"""DeleteCenterTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteCenterTaskRequestBody:
 
     @property
     def message(self):
-        """Gets the message of this DeleteCenterTaskRequestBody.
+        r"""Gets the message of this DeleteCenterTaskRequestBody.
 
         删除结果
 
@@ -54,7 +54,7 @@ class DeleteCenterTaskRequestBody:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteCenterTaskRequestBody.
+        r"""Sets the message of this DeleteCenterTaskRequestBody.
 
         删除结果
 

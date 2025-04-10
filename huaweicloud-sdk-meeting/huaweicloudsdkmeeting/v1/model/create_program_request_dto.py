@@ -27,7 +27,7 @@ class CreateProgramRequestDTO:
     }
 
     def __init__(self, program_name=None, program_item_list=None):
-        """CreateProgramRequestDTO
+        r"""CreateProgramRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateProgramRequestDTO:
 
     @property
     def program_name(self):
-        """Gets the program_name of this CreateProgramRequestDTO.
+        r"""Gets the program_name of this CreateProgramRequestDTO.
 
         节目名称。
 
@@ -60,7 +60,7 @@ class CreateProgramRequestDTO:
 
     @program_name.setter
     def program_name(self, program_name):
-        """Sets the program_name of this CreateProgramRequestDTO.
+        r"""Sets the program_name of this CreateProgramRequestDTO.
 
         节目名称。
 
@@ -71,7 +71,7 @@ class CreateProgramRequestDTO:
 
     @property
     def program_item_list(self):
-        """Gets the program_item_list of this CreateProgramRequestDTO.
+        r"""Gets the program_item_list of this CreateProgramRequestDTO.
 
         节目素材列表。
 
@@ -82,7 +82,7 @@ class CreateProgramRequestDTO:
 
     @program_item_list.setter
     def program_item_list(self, program_item_list):
-        """Sets the program_item_list of this CreateProgramRequestDTO.
+        r"""Sets the program_item_list of this CreateProgramRequestDTO.
 
         节目素材列表。
 

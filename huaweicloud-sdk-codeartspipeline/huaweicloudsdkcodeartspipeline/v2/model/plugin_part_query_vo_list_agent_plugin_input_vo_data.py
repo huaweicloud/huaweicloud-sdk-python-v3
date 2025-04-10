@@ -41,7 +41,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     }
 
     def __init__(self, unique_id=None, name=None, default_value=None, plugin_name=None, version=None, type=None, workspace_id=None, validation=None, layout_content=None):
-        """PluginPartQueryVOListAgentPluginInputVOData
+        r"""PluginPartQueryVOListAgentPluginInputVOData
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @property
     def unique_id(self):
-        """Gets the unique_id of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Gets the unique_id of this PluginPartQueryVOListAgentPluginInputVOData.
 
         唯一ID
 
@@ -110,7 +110,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @unique_id.setter
     def unique_id(self, unique_id):
-        """Sets the unique_id of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Sets the unique_id of this PluginPartQueryVOListAgentPluginInputVOData.
 
         唯一ID
 
@@ -121,7 +121,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @property
     def name(self):
-        """Gets the name of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Gets the name of this PluginPartQueryVOListAgentPluginInputVOData.
 
         名称
 
@@ -132,7 +132,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Sets the name of this PluginPartQueryVOListAgentPluginInputVOData.
 
         名称
 
@@ -143,7 +143,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @property
     def default_value(self):
-        """Gets the default_value of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Gets the default_value of this PluginPartQueryVOListAgentPluginInputVOData.
 
         默认值
 
@@ -154,7 +154,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Sets the default_value of this PluginPartQueryVOListAgentPluginInputVOData.
 
         默认值
 
@@ -165,7 +165,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Gets the plugin_name of this PluginPartQueryVOListAgentPluginInputVOData.
 
         插件名
 
@@ -176,7 +176,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Sets the plugin_name of this PluginPartQueryVOListAgentPluginInputVOData.
 
         插件名
 
@@ -187,7 +187,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @property
     def version(self):
-        """Gets the version of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Gets the version of this PluginPartQueryVOListAgentPluginInputVOData.
 
         版本
 
@@ -198,7 +198,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Sets the version of this PluginPartQueryVOListAgentPluginInputVOData.
 
         版本
 
@@ -209,7 +209,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @property
     def type(self):
-        """Gets the type of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Gets the type of this PluginPartQueryVOListAgentPluginInputVOData.
 
         类型
 
@@ -220,7 +220,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Sets the type of this PluginPartQueryVOListAgentPluginInputVOData.
 
         类型
 
@@ -231,7 +231,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Gets the workspace_id of this PluginPartQueryVOListAgentPluginInputVOData.
 
         租户ID
 
@@ -242,7 +242,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Sets the workspace_id of this PluginPartQueryVOListAgentPluginInputVOData.
 
         租户ID
 
@@ -253,7 +253,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @property
     def validation(self):
-        """Gets the validation of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Gets the validation of this PluginPartQueryVOListAgentPluginInputVOData.
 
         :return: The validation of this PluginPartQueryVOListAgentPluginInputVOData.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ExtensionValidation`
@@ -262,7 +262,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @validation.setter
     def validation(self, validation):
-        """Sets the validation of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Sets the validation of this PluginPartQueryVOListAgentPluginInputVOData.
 
         :param validation: The validation of this PluginPartQueryVOListAgentPluginInputVOData.
         :type validation: :class:`huaweicloudsdkcodeartspipeline.v2.ExtensionValidation`
@@ -271,7 +271,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @property
     def layout_content(self):
-        """Gets the layout_content of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Gets the layout_content of this PluginPartQueryVOListAgentPluginInputVOData.
 
         样式信息
 
@@ -282,7 +282,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
 
     @layout_content.setter
     def layout_content(self, layout_content):
-        """Sets the layout_content of this PluginPartQueryVOListAgentPluginInputVOData.
+        r"""Sets the layout_content of this PluginPartQueryVOListAgentPluginInputVOData.
 
         样式信息
 

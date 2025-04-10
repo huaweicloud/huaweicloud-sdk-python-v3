@@ -31,7 +31,7 @@ class IndicatorDataObjectDetailEnvironment:
     }
 
     def __init__(self, vendor_type=None, domain_id=None, region_id=None, project_id=None):
-        """IndicatorDataObjectDetailEnvironment
+        r"""IndicatorDataObjectDetailEnvironment
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class IndicatorDataObjectDetailEnvironment:
 
     @property
     def vendor_type(self):
-        """Gets the vendor_type of this IndicatorDataObjectDetailEnvironment.
+        r"""Gets the vendor_type of this IndicatorDataObjectDetailEnvironment.
 
         环境供应商（如HWC,AWS,Azure等）
 
@@ -75,7 +75,7 @@ class IndicatorDataObjectDetailEnvironment:
 
     @vendor_type.setter
     def vendor_type(self, vendor_type):
-        """Sets the vendor_type of this IndicatorDataObjectDetailEnvironment.
+        r"""Sets the vendor_type of this IndicatorDataObjectDetailEnvironment.
 
         环境供应商（如HWC,AWS,Azure等）
 
@@ -86,7 +86,7 @@ class IndicatorDataObjectDetailEnvironment:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this IndicatorDataObjectDetailEnvironment.
+        r"""Gets the domain_id of this IndicatorDataObjectDetailEnvironment.
 
         租户ID
 
@@ -97,7 +97,7 @@ class IndicatorDataObjectDetailEnvironment:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this IndicatorDataObjectDetailEnvironment.
+        r"""Sets the domain_id of this IndicatorDataObjectDetailEnvironment.
 
         租户ID
 
@@ -108,7 +108,7 @@ class IndicatorDataObjectDetailEnvironment:
 
     @property
     def region_id(self):
-        """Gets the region_id of this IndicatorDataObjectDetailEnvironment.
+        r"""Gets the region_id of this IndicatorDataObjectDetailEnvironment.
 
         区域ID
 
@@ -119,7 +119,7 @@ class IndicatorDataObjectDetailEnvironment:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this IndicatorDataObjectDetailEnvironment.
+        r"""Sets the region_id of this IndicatorDataObjectDetailEnvironment.
 
         区域ID
 
@@ -130,7 +130,7 @@ class IndicatorDataObjectDetailEnvironment:
 
     @property
     def project_id(self):
-        """Gets the project_id of this IndicatorDataObjectDetailEnvironment.
+        r"""Gets the project_id of this IndicatorDataObjectDetailEnvironment.
 
         项目ID
 
@@ -141,7 +141,7 @@ class IndicatorDataObjectDetailEnvironment:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this IndicatorDataObjectDetailEnvironment.
+        r"""Sets the project_id of this IndicatorDataObjectDetailEnvironment.
 
         项目ID
 

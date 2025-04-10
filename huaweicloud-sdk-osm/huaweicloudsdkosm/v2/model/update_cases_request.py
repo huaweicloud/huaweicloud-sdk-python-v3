@@ -35,7 +35,7 @@ class UpdateCasesRequest:
     }
 
     def __init__(self, case_id=None, action_id=None, x_site=None, x_language=None, x_time_zone=None, body=None):
-        """UpdateCasesRequest
+        r"""UpdateCasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class UpdateCasesRequest:
 
     @property
     def case_id(self):
-        """Gets the case_id of this UpdateCasesRequest.
+        r"""Gets the case_id of this UpdateCasesRequest.
 
         工单id
 
@@ -87,7 +87,7 @@ class UpdateCasesRequest:
 
     @case_id.setter
     def case_id(self, case_id):
-        """Sets the case_id of this UpdateCasesRequest.
+        r"""Sets the case_id of this UpdateCasesRequest.
 
         工单id
 
@@ -98,7 +98,7 @@ class UpdateCasesRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this UpdateCasesRequest.
+        r"""Gets the action_id of this UpdateCasesRequest.
 
         具体操作 cancel,close,press,delete
 
@@ -109,7 +109,7 @@ class UpdateCasesRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this UpdateCasesRequest.
+        r"""Sets the action_id of this UpdateCasesRequest.
 
         具体操作 cancel,close,press,delete
 
@@ -120,7 +120,7 @@ class UpdateCasesRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this UpdateCasesRequest.
+        r"""Gets the x_site of this UpdateCasesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -131,7 +131,7 @@ class UpdateCasesRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this UpdateCasesRequest.
+        r"""Sets the x_site of this UpdateCasesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -142,7 +142,7 @@ class UpdateCasesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateCasesRequest.
+        r"""Gets the x_language of this UpdateCasesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -153,7 +153,7 @@ class UpdateCasesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateCasesRequest.
+        r"""Sets the x_language of this UpdateCasesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -164,7 +164,7 @@ class UpdateCasesRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this UpdateCasesRequest.
+        r"""Gets the x_time_zone of this UpdateCasesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -175,7 +175,7 @@ class UpdateCasesRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this UpdateCasesRequest.
+        r"""Sets the x_time_zone of this UpdateCasesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -186,7 +186,7 @@ class UpdateCasesRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCasesRequest.
+        r"""Gets the body of this UpdateCasesRequest.
 
         :return: The body of this UpdateCasesRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.WorkOrderOperateV2Req`
@@ -195,7 +195,7 @@ class UpdateCasesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCasesRequest.
+        r"""Sets the body of this UpdateCasesRequest.
 
         :param body: The body of this UpdateCasesRequest.
         :type body: :class:`huaweicloudsdkosm.v2.WorkOrderOperateV2Req`

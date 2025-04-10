@@ -25,7 +25,7 @@ class CreateConnectionMonitorRequestBody:
     }
 
     def __init__(self, connection_monitor=None):
-        """CreateConnectionMonitorRequestBody
+        r"""CreateConnectionMonitorRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateConnectionMonitorRequestBody:
 
     @property
     def connection_monitor(self):
-        """Gets the connection_monitor of this CreateConnectionMonitorRequestBody.
+        r"""Gets the connection_monitor of this CreateConnectionMonitorRequestBody.
 
         :return: The connection_monitor of this CreateConnectionMonitorRequestBody.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateConnectionMonitorRequestBodyContent`
@@ -51,7 +51,7 @@ class CreateConnectionMonitorRequestBody:
 
     @connection_monitor.setter
     def connection_monitor(self, connection_monitor):
-        """Sets the connection_monitor of this CreateConnectionMonitorRequestBody.
+        r"""Sets the connection_monitor of this CreateConnectionMonitorRequestBody.
 
         :param connection_monitor: The connection_monitor of this CreateConnectionMonitorRequestBody.
         :type connection_monitor: :class:`huaweicloudsdkvpn.v5.CreateConnectionMonitorRequestBodyContent`

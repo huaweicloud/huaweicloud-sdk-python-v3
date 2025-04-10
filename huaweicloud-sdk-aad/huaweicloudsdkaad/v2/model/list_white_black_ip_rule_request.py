@@ -27,7 +27,7 @@ class ListWhiteBlackIpRuleRequest:
     }
 
     def __init__(self, type=None, instance_id=None):
-        """ListWhiteBlackIpRuleRequest
+        r"""ListWhiteBlackIpRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListWhiteBlackIpRuleRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListWhiteBlackIpRuleRequest.
+        r"""Gets the type of this ListWhiteBlackIpRuleRequest.
 
         white-白名单，black-黑名单
 
@@ -59,7 +59,7 @@ class ListWhiteBlackIpRuleRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListWhiteBlackIpRuleRequest.
+        r"""Sets the type of this ListWhiteBlackIpRuleRequest.
 
         white-白名单，black-黑名单
 
@@ -70,7 +70,7 @@ class ListWhiteBlackIpRuleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListWhiteBlackIpRuleRequest.
+        r"""Gets the instance_id of this ListWhiteBlackIpRuleRequest.
 
         instanceId
 
@@ -81,7 +81,7 @@ class ListWhiteBlackIpRuleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListWhiteBlackIpRuleRequest.
+        r"""Sets the instance_id of this ListWhiteBlackIpRuleRequest.
 
         instanceId
 

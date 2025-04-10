@@ -49,7 +49,7 @@ class ShowServerResponse:
     }
 
     def __init__(self, id=None, p2c_vgw_id=None, client_cidr=None, local_subnets=None, client_auth_type=None, tunnel_protocol=None, server_certificate=None, client_ca_certificates=None, ssl_options=None, dns_servers=None, status=None, created_at=None, updated_at=None):
-        """ShowServerResponse
+        r"""ShowServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ShowServerResponse:
 
     @property
     def id(self):
-        """Gets the id of this ShowServerResponse.
+        r"""Gets the id of this ShowServerResponse.
 
         服务端 ID
 
@@ -138,7 +138,7 @@ class ShowServerResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowServerResponse.
+        r"""Sets the id of this ShowServerResponse.
 
         服务端 ID
 
@@ -149,7 +149,7 @@ class ShowServerResponse:
 
     @property
     def p2c_vgw_id(self):
-        """Gets the p2c_vgw_id of this ShowServerResponse.
+        r"""Gets the p2c_vgw_id of this ShowServerResponse.
 
         P2C VPN 网关 ID
 
@@ -160,7 +160,7 @@ class ShowServerResponse:
 
     @p2c_vgw_id.setter
     def p2c_vgw_id(self, p2c_vgw_id):
-        """Sets the p2c_vgw_id of this ShowServerResponse.
+        r"""Sets the p2c_vgw_id of this ShowServerResponse.
 
         P2C VPN 网关 ID
 
@@ -171,7 +171,7 @@ class ShowServerResponse:
 
     @property
     def client_cidr(self):
-        """Gets the client_cidr of this ShowServerResponse.
+        r"""Gets the client_cidr of this ShowServerResponse.
 
         客户端网段
 
@@ -182,7 +182,7 @@ class ShowServerResponse:
 
     @client_cidr.setter
     def client_cidr(self, client_cidr):
-        """Sets the client_cidr of this ShowServerResponse.
+        r"""Sets the client_cidr of this ShowServerResponse.
 
         客户端网段
 
@@ -193,7 +193,7 @@ class ShowServerResponse:
 
     @property
     def local_subnets(self):
-        """Gets the local_subnets of this ShowServerResponse.
+        r"""Gets the local_subnets of this ShowServerResponse.
 
         本端网段列表
 
@@ -204,7 +204,7 @@ class ShowServerResponse:
 
     @local_subnets.setter
     def local_subnets(self, local_subnets):
-        """Sets the local_subnets of this ShowServerResponse.
+        r"""Sets the local_subnets of this ShowServerResponse.
 
         本端网段列表
 
@@ -215,7 +215,7 @@ class ShowServerResponse:
 
     @property
     def client_auth_type(self):
-        """Gets the client_auth_type of this ShowServerResponse.
+        r"""Gets the client_auth_type of this ShowServerResponse.
 
         客户端认证类型
 
@@ -226,7 +226,7 @@ class ShowServerResponse:
 
     @client_auth_type.setter
     def client_auth_type(self, client_auth_type):
-        """Sets the client_auth_type of this ShowServerResponse.
+        r"""Sets the client_auth_type of this ShowServerResponse.
 
         客户端认证类型
 
@@ -237,7 +237,7 @@ class ShowServerResponse:
 
     @property
     def tunnel_protocol(self):
-        """Gets the tunnel_protocol of this ShowServerResponse.
+        r"""Gets the tunnel_protocol of this ShowServerResponse.
 
         隧道协议类型
 
@@ -248,7 +248,7 @@ class ShowServerResponse:
 
     @tunnel_protocol.setter
     def tunnel_protocol(self, tunnel_protocol):
-        """Sets the tunnel_protocol of this ShowServerResponse.
+        r"""Sets the tunnel_protocol of this ShowServerResponse.
 
         隧道协议类型
 
@@ -259,7 +259,7 @@ class ShowServerResponse:
 
     @property
     def server_certificate(self):
-        """Gets the server_certificate of this ShowServerResponse.
+        r"""Gets the server_certificate of this ShowServerResponse.
 
         :return: The server_certificate of this ShowServerResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.ShowServerResponseServerCertificate`
@@ -268,7 +268,7 @@ class ShowServerResponse:
 
     @server_certificate.setter
     def server_certificate(self, server_certificate):
-        """Sets the server_certificate of this ShowServerResponse.
+        r"""Sets the server_certificate of this ShowServerResponse.
 
         :param server_certificate: The server_certificate of this ShowServerResponse.
         :type server_certificate: :class:`huaweicloudsdkvpn.v5.ShowServerResponseServerCertificate`
@@ -277,7 +277,7 @@ class ShowServerResponse:
 
     @property
     def client_ca_certificates(self):
-        """Gets the client_ca_certificates of this ShowServerResponse.
+        r"""Gets the client_ca_certificates of this ShowServerResponse.
 
         :return: The client_ca_certificates of this ShowServerResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.QueryClientCaCertificateBody`]
@@ -286,7 +286,7 @@ class ShowServerResponse:
 
     @client_ca_certificates.setter
     def client_ca_certificates(self, client_ca_certificates):
-        """Sets the client_ca_certificates of this ShowServerResponse.
+        r"""Sets the client_ca_certificates of this ShowServerResponse.
 
         :param client_ca_certificates: The client_ca_certificates of this ShowServerResponse.
         :type client_ca_certificates: list[:class:`huaweicloudsdkvpn.v5.QueryClientCaCertificateBody`]
@@ -295,7 +295,7 @@ class ShowServerResponse:
 
     @property
     def ssl_options(self):
-        """Gets the ssl_options of this ShowServerResponse.
+        r"""Gets the ssl_options of this ShowServerResponse.
 
         :return: The ssl_options of this ShowServerResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.ShowServerResponseSslOptions`
@@ -304,7 +304,7 @@ class ShowServerResponse:
 
     @ssl_options.setter
     def ssl_options(self, ssl_options):
-        """Sets the ssl_options of this ShowServerResponse.
+        r"""Sets the ssl_options of this ShowServerResponse.
 
         :param ssl_options: The ssl_options of this ShowServerResponse.
         :type ssl_options: :class:`huaweicloudsdkvpn.v5.ShowServerResponseSslOptions`
@@ -313,7 +313,7 @@ class ShowServerResponse:
 
     @property
     def dns_servers(self):
-        """Gets the dns_servers of this ShowServerResponse.
+        r"""Gets the dns_servers of this ShowServerResponse.
 
         DNS服务器列表
 
@@ -324,7 +324,7 @@ class ShowServerResponse:
 
     @dns_servers.setter
     def dns_servers(self, dns_servers):
-        """Sets the dns_servers of this ShowServerResponse.
+        r"""Sets the dns_servers of this ShowServerResponse.
 
         DNS服务器列表
 
@@ -335,7 +335,7 @@ class ShowServerResponse:
 
     @property
     def status(self):
-        """Gets the status of this ShowServerResponse.
+        r"""Gets the status of this ShowServerResponse.
 
         服务端状态
 
@@ -346,7 +346,7 @@ class ShowServerResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowServerResponse.
+        r"""Sets the status of this ShowServerResponse.
 
         服务端状态
 
@@ -357,7 +357,7 @@ class ShowServerResponse:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowServerResponse.
+        r"""Gets the created_at of this ShowServerResponse.
 
         创建时间
 
@@ -368,7 +368,7 @@ class ShowServerResponse:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowServerResponse.
+        r"""Sets the created_at of this ShowServerResponse.
 
         创建时间
 
@@ -379,7 +379,7 @@ class ShowServerResponse:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowServerResponse.
+        r"""Gets the updated_at of this ShowServerResponse.
 
         更新时间
 
@@ -390,7 +390,7 @@ class ShowServerResponse:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowServerResponse.
+        r"""Sets the updated_at of this ShowServerResponse.
 
         更新时间
 

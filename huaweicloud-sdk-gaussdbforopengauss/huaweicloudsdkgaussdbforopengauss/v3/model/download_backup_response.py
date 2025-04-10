@@ -28,7 +28,7 @@ class DownloadBackupResponse(SdkResponse):
     }
 
     def __init__(self, files=None, bucket=None):
-        """DownloadBackupResponse
+        r"""DownloadBackupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DownloadBackupResponse(SdkResponse):
 
     @property
     def files(self):
-        """Gets the files of this DownloadBackupResponse.
+        r"""Gets the files of this DownloadBackupResponse.
 
         备份文件信息。
 
@@ -62,7 +62,7 @@ class DownloadBackupResponse(SdkResponse):
 
     @files.setter
     def files(self, files):
-        """Sets the files of this DownloadBackupResponse.
+        r"""Sets the files of this DownloadBackupResponse.
 
         备份文件信息。
 
@@ -73,7 +73,7 @@ class DownloadBackupResponse(SdkResponse):
 
     @property
     def bucket(self):
-        """Gets the bucket of this DownloadBackupResponse.
+        r"""Gets the bucket of this DownloadBackupResponse.
 
         桶名。
 
@@ -84,7 +84,7 @@ class DownloadBackupResponse(SdkResponse):
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this DownloadBackupResponse.
+        r"""Sets the bucket of this DownloadBackupResponse.
 
         桶名。
 

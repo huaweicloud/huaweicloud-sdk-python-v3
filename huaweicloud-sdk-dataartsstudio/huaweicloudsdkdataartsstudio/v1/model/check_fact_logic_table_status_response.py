@@ -26,7 +26,7 @@ class CheckFactLogicTableStatusResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """CheckFactLogicTableStatusResponse
+        r"""CheckFactLogicTableStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CheckFactLogicTableStatusResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CheckFactLogicTableStatusResponse.
+        r"""Gets the data of this CheckFactLogicTableStatusResponse.
 
         :return: The data of this CheckFactLogicTableStatusResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CheckDimensionStatusResultData`
@@ -53,7 +53,7 @@ class CheckFactLogicTableStatusResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CheckFactLogicTableStatusResponse.
+        r"""Sets the data of this CheckFactLogicTableStatusResponse.
 
         :param data: The data of this CheckFactLogicTableStatusResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.CheckDimensionStatusResultData`

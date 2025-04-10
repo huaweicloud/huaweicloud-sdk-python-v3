@@ -29,7 +29,7 @@ class ListEventsResult:
     }
 
     def __init__(self, id=None, last_modified=None, name=None):
-        """ListEventsResult
+        r"""ListEventsResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListEventsResult:
 
     @property
     def id(self):
-        """Gets the id of this ListEventsResult.
+        r"""Gets the id of this ListEventsResult.
 
         测试事件ID。
 
@@ -68,7 +68,7 @@ class ListEventsResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListEventsResult.
+        r"""Sets the id of this ListEventsResult.
 
         测试事件ID。
 
@@ -79,7 +79,7 @@ class ListEventsResult:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this ListEventsResult.
+        r"""Gets the last_modified of this ListEventsResult.
 
         上次修改的时间。
 
@@ -90,7 +90,7 @@ class ListEventsResult:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this ListEventsResult.
+        r"""Sets the last_modified of this ListEventsResult.
 
         上次修改的时间。
 
@@ -101,7 +101,7 @@ class ListEventsResult:
 
     @property
     def name(self):
-        """Gets the name of this ListEventsResult.
+        r"""Gets the name of this ListEventsResult.
 
         测试事件名称。
 
@@ -112,7 +112,7 @@ class ListEventsResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListEventsResult.
+        r"""Sets the name of this ListEventsResult.
 
         测试事件名称。
 

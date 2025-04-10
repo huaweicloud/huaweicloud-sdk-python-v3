@@ -30,7 +30,7 @@ class CreateTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, result=None, error=None, status=None):
-        """CreateTemplatesResponse
+        r"""CreateTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateTemplatesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateTemplatesResponse.
+        r"""Gets the result of this CreateTemplatesResponse.
 
         :return: The result of this CreateTemplatesResponse.
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.CreateTemplatesItems`
@@ -67,7 +67,7 @@ class CreateTemplatesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateTemplatesResponse.
+        r"""Sets the result of this CreateTemplatesResponse.
 
         :param result: The result of this CreateTemplatesResponse.
         :type result: :class:`huaweicloudsdkcodeartsbuild.v3.CreateTemplatesItems`
@@ -76,7 +76,7 @@ class CreateTemplatesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this CreateTemplatesResponse.
+        r"""Gets the error of this CreateTemplatesResponse.
 
         返回错误信息
 
@@ -87,7 +87,7 @@ class CreateTemplatesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this CreateTemplatesResponse.
+        r"""Sets the error of this CreateTemplatesResponse.
 
         返回错误信息
 
@@ -98,7 +98,7 @@ class CreateTemplatesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateTemplatesResponse.
+        r"""Gets the status of this CreateTemplatesResponse.
 
         返回状态信息
 
@@ -109,7 +109,7 @@ class CreateTemplatesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateTemplatesResponse.
+        r"""Sets the status of this CreateTemplatesResponse.
 
         返回状态信息
 

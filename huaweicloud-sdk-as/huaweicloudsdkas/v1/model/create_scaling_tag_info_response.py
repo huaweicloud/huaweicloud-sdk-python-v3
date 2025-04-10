@@ -24,7 +24,7 @@ class CreateScalingTagInfoResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateScalingTagInfoResponse
+        r"""CreateScalingTagInfoResponse
 
         The model defined in huaweicloud sdk
 

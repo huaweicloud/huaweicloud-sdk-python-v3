@@ -47,7 +47,7 @@ class WhiteBlackIpResponseBody:
     }
 
     def __init__(self, id=None, name=None, policyid=None, timestamp=None, description=None, status=None, addr=None, white=None, ip_group=None, time_mode=None, start=None, terminal=None):
-        """WhiteBlackIpResponseBody
+        r"""WhiteBlackIpResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class WhiteBlackIpResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this WhiteBlackIpResponseBody.
+        r"""Gets the id of this WhiteBlackIpResponseBody.
 
         规则id
 
@@ -131,7 +131,7 @@ class WhiteBlackIpResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WhiteBlackIpResponseBody.
+        r"""Sets the id of this WhiteBlackIpResponseBody.
 
         规则id
 
@@ -142,7 +142,7 @@ class WhiteBlackIpResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this WhiteBlackIpResponseBody.
+        r"""Gets the name of this WhiteBlackIpResponseBody.
 
         黑白名单规则名称
 
@@ -153,7 +153,7 @@ class WhiteBlackIpResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WhiteBlackIpResponseBody.
+        r"""Sets the name of this WhiteBlackIpResponseBody.
 
         黑白名单规则名称
 
@@ -164,7 +164,7 @@ class WhiteBlackIpResponseBody:
 
     @property
     def policyid(self):
-        """Gets the policyid of this WhiteBlackIpResponseBody.
+        r"""Gets the policyid of this WhiteBlackIpResponseBody.
 
         策略id
 
@@ -175,7 +175,7 @@ class WhiteBlackIpResponseBody:
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this WhiteBlackIpResponseBody.
+        r"""Sets the policyid of this WhiteBlackIpResponseBody.
 
         策略id
 
@@ -186,7 +186,7 @@ class WhiteBlackIpResponseBody:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this WhiteBlackIpResponseBody.
+        r"""Gets the timestamp of this WhiteBlackIpResponseBody.
 
         创建规则的时间戳（毫秒）
 
@@ -197,7 +197,7 @@ class WhiteBlackIpResponseBody:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this WhiteBlackIpResponseBody.
+        r"""Sets the timestamp of this WhiteBlackIpResponseBody.
 
         创建规则的时间戳（毫秒）
 
@@ -208,7 +208,7 @@ class WhiteBlackIpResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this WhiteBlackIpResponseBody.
+        r"""Gets the description of this WhiteBlackIpResponseBody.
 
         规则描述
 
@@ -219,7 +219,7 @@ class WhiteBlackIpResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this WhiteBlackIpResponseBody.
+        r"""Sets the description of this WhiteBlackIpResponseBody.
 
         规则描述
 
@@ -230,7 +230,7 @@ class WhiteBlackIpResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this WhiteBlackIpResponseBody.
+        r"""Gets the status of this WhiteBlackIpResponseBody.
 
         规则状态，0：关闭，1：开启
 
@@ -241,7 +241,7 @@ class WhiteBlackIpResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this WhiteBlackIpResponseBody.
+        r"""Sets the status of this WhiteBlackIpResponseBody.
 
         规则状态，0：关闭，1：开启
 
@@ -252,7 +252,7 @@ class WhiteBlackIpResponseBody:
 
     @property
     def addr(self):
-        """Gets the addr of this WhiteBlackIpResponseBody.
+        r"""Gets the addr of this WhiteBlackIpResponseBody.
 
         Ip/Ip段
 
@@ -263,7 +263,7 @@ class WhiteBlackIpResponseBody:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this WhiteBlackIpResponseBody.
+        r"""Sets the addr of this WhiteBlackIpResponseBody.
 
         Ip/Ip段
 
@@ -274,7 +274,7 @@ class WhiteBlackIpResponseBody:
 
     @property
     def white(self):
-        """Gets the white of this WhiteBlackIpResponseBody.
+        r"""Gets the white of this WhiteBlackIpResponseBody.
 
         防护动作：  - 0拦截  - 1放行  - 2仅记录
 
@@ -285,7 +285,7 @@ class WhiteBlackIpResponseBody:
 
     @white.setter
     def white(self, white):
-        """Sets the white of this WhiteBlackIpResponseBody.
+        r"""Sets the white of this WhiteBlackIpResponseBody.
 
         防护动作：  - 0拦截  - 1放行  - 2仅记录
 
@@ -296,7 +296,7 @@ class WhiteBlackIpResponseBody:
 
     @property
     def ip_group(self):
-        """Gets the ip_group of this WhiteBlackIpResponseBody.
+        r"""Gets the ip_group of this WhiteBlackIpResponseBody.
 
         :return: The ip_group of this WhiteBlackIpResponseBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.IpGroup`
@@ -305,7 +305,7 @@ class WhiteBlackIpResponseBody:
 
     @ip_group.setter
     def ip_group(self, ip_group):
-        """Sets the ip_group of this WhiteBlackIpResponseBody.
+        r"""Sets the ip_group of this WhiteBlackIpResponseBody.
 
         :param ip_group: The ip_group of this WhiteBlackIpResponseBody.
         :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
@@ -314,7 +314,7 @@ class WhiteBlackIpResponseBody:
 
     @property
     def time_mode(self):
-        """Gets the time_mode of this WhiteBlackIpResponseBody.
+        r"""Gets the time_mode of this WhiteBlackIpResponseBody.
 
         生效模式，默认为permanent（立即生效）
 
@@ -325,7 +325,7 @@ class WhiteBlackIpResponseBody:
 
     @time_mode.setter
     def time_mode(self, time_mode):
-        """Sets the time_mode of this WhiteBlackIpResponseBody.
+        r"""Sets the time_mode of this WhiteBlackIpResponseBody.
 
         生效模式，默认为permanent（立即生效）
 
@@ -336,7 +336,7 @@ class WhiteBlackIpResponseBody:
 
     @property
     def start(self):
-        """Gets the start of this WhiteBlackIpResponseBody.
+        r"""Gets the start of this WhiteBlackIpResponseBody.
 
         规则生效的开始时间，生效模式为自定义时，此字段才有效
 
@@ -347,7 +347,7 @@ class WhiteBlackIpResponseBody:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this WhiteBlackIpResponseBody.
+        r"""Sets the start of this WhiteBlackIpResponseBody.
 
         规则生效的开始时间，生效模式为自定义时，此字段才有效
 
@@ -358,7 +358,7 @@ class WhiteBlackIpResponseBody:
 
     @property
     def terminal(self):
-        """Gets the terminal of this WhiteBlackIpResponseBody.
+        r"""Gets the terminal of this WhiteBlackIpResponseBody.
 
         规则生效的结束时间，生效模式为自定义时，此字段才有效
 
@@ -369,7 +369,7 @@ class WhiteBlackIpResponseBody:
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this WhiteBlackIpResponseBody.
+        r"""Sets the terminal of this WhiteBlackIpResponseBody.
 
         规则生效的结束时间，生效模式为自定义时，此字段才有效
 

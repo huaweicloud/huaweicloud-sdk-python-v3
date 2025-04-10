@@ -27,7 +27,7 @@ class AgencyTokenAuth:
     }
 
     def __init__(self, identity=None, scope=None):
-        """AgencyTokenAuth
+        r"""AgencyTokenAuth
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AgencyTokenAuth:
 
     @property
     def identity(self):
-        """Gets the identity of this AgencyTokenAuth.
+        r"""Gets the identity of this AgencyTokenAuth.
 
         :return: The identity of this AgencyTokenAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenIdentity`
@@ -57,7 +57,7 @@ class AgencyTokenAuth:
 
     @identity.setter
     def identity(self, identity):
-        """Sets the identity of this AgencyTokenAuth.
+        r"""Sets the identity of this AgencyTokenAuth.
 
         :param identity: The identity of this AgencyTokenAuth.
         :type identity: :class:`huaweicloudsdkiam.v3.AgencyTokenIdentity`
@@ -66,7 +66,7 @@ class AgencyTokenAuth:
 
     @property
     def scope(self):
-        """Gets the scope of this AgencyTokenAuth.
+        r"""Gets the scope of this AgencyTokenAuth.
 
         :return: The scope of this AgencyTokenAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenScope`
@@ -75,7 +75,7 @@ class AgencyTokenAuth:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this AgencyTokenAuth.
+        r"""Sets the scope of this AgencyTokenAuth.
 
         :param scope: The scope of this AgencyTokenAuth.
         :type scope: :class:`huaweicloudsdkiam.v3.AgencyTokenScope`

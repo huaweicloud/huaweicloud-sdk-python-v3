@@ -27,7 +27,7 @@ class AddRdsDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """AddRdsDatabaseRequest
+        r"""AddRdsDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddRdsDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddRdsDatabaseRequest.
+        r"""Gets the instance_id of this AddRdsDatabaseRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -60,7 +60,7 @@ class AddRdsDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddRdsDatabaseRequest.
+        r"""Sets the instance_id of this AddRdsDatabaseRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -71,7 +71,7 @@ class AddRdsDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddRdsDatabaseRequest.
+        r"""Gets the body of this AddRdsDatabaseRequest.
 
         :return: The body of this AddRdsDatabaseRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.RdsDbRequest`
@@ -80,7 +80,7 @@ class AddRdsDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddRdsDatabaseRequest.
+        r"""Sets the body of this AddRdsDatabaseRequest.
 
         :param body: The body of this AddRdsDatabaseRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.RdsDbRequest`

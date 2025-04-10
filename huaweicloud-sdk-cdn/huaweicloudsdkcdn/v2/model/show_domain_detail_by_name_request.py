@@ -27,7 +27,7 @@ class ShowDomainDetailByNameRequest:
     }
 
     def __init__(self, domain_name=None, enterprise_project_id=None):
-        """ShowDomainDetailByNameRequest
+        r"""ShowDomainDetailByNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowDomainDetailByNameRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowDomainDetailByNameRequest.
+        r"""Gets the domain_name of this ShowDomainDetailByNameRequest.
 
         加速域名名称。
 
@@ -60,7 +60,7 @@ class ShowDomainDetailByNameRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowDomainDetailByNameRequest.
+        r"""Sets the domain_name of this ShowDomainDetailByNameRequest.
 
         加速域名名称。
 
@@ -71,7 +71,7 @@ class ShowDomainDetailByNameRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowDomainDetailByNameRequest.
+        r"""Gets the enterprise_project_id of this ShowDomainDetailByNameRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -82,7 +82,7 @@ class ShowDomainDetailByNameRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowDomainDetailByNameRequest.
+        r"""Sets the enterprise_project_id of this ShowDomainDetailByNameRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 

@@ -102,7 +102,7 @@ class UpdateInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, status=None, updated=None, host_id=None, addresses=None, created=None, tags=None, locked=None, description=None, tenant_id=None, sys_tags=None, flavor=None, metadata=None, security_groups=None, progress=None, os_ext_st_spower_state=None, os_ext_st_svm_state=None, os_ext_st_stask_state=None, os_dc_fdisk_config=None, os_ext_a_zavailability_zone=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_ruser_data=None, os_ext_srv_att_rhost=None, os_ext_srv_att_rhypervisor_hostname=None, os_extended_volumesvolumes_attached=None, geolocation=None, edgecloud_id=None, edgecloud_name=None, domain_id=None, key_name=None, os_ext_srv_att_rinstance_name=None):
-        """UpdateInstanceResponse
+        r"""UpdateInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -310,7 +310,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateInstanceResponse.
+        r"""Gets the id of this UpdateInstanceResponse.
 
         边缘实例ID。
 
@@ -321,7 +321,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateInstanceResponse.
+        r"""Sets the id of this UpdateInstanceResponse.
 
         边缘实例ID。
 
@@ -332,7 +332,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateInstanceResponse.
+        r"""Gets the name of this UpdateInstanceResponse.
 
         边缘实例名称。
 
@@ -343,7 +343,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateInstanceResponse.
+        r"""Sets the name of this UpdateInstanceResponse.
 
         边缘实例名称。
 
@@ -354,7 +354,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateInstanceResponse.
+        r"""Gets the status of this UpdateInstanceResponse.
 
         边缘实例状态。 取值范围： ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE
 
@@ -365,7 +365,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateInstanceResponse.
+        r"""Sets the status of this UpdateInstanceResponse.
 
         边缘实例状态。 取值范围： ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE
 
@@ -376,7 +376,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this UpdateInstanceResponse.
+        r"""Gets the updated of this UpdateInstanceResponse.
 
         边缘实例修改时间。 UTC时间，格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T03:21:39Z
 
@@ -387,7 +387,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this UpdateInstanceResponse.
+        r"""Sets the updated of this UpdateInstanceResponse.
 
         边缘实例修改时间。 UTC时间，格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T03:21:39Z
 
@@ -398,7 +398,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def host_id(self):
-        """Gets the host_id of this UpdateInstanceResponse.
+        r"""Gets the host_id of this UpdateInstanceResponse.
 
         边缘实例所在主机的主机ID。
 
@@ -409,7 +409,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this UpdateInstanceResponse.
+        r"""Sets the host_id of this UpdateInstanceResponse.
 
         边缘实例所在主机的主机ID。
 
@@ -420,7 +420,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def addresses(self):
-        """Gets the addresses of this UpdateInstanceResponse.
+        r"""Gets the addresses of this UpdateInstanceResponse.
 
         边缘实例对应的网络地址信息，详情请参见表addresses字段数据结构说明。
 
@@ -431,7 +431,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this UpdateInstanceResponse.
+        r"""Sets the addresses of this UpdateInstanceResponse.
 
         边缘实例对应的网络地址信息，详情请参见表addresses字段数据结构说明。
 
@@ -442,7 +442,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this UpdateInstanceResponse.
+        r"""Gets the created of this UpdateInstanceResponse.
 
         边缘实例创建时间。 时间格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T02:46:23Z
 
@@ -453,7 +453,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this UpdateInstanceResponse.
+        r"""Sets the created of this UpdateInstanceResponse.
 
         边缘实例创建时间。 时间格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T02:46:23Z
 
@@ -464,7 +464,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateInstanceResponse.
+        r"""Gets the tags of this UpdateInstanceResponse.
 
         边缘实例标签。 主要用来存储边缘业务ID。
 
@@ -475,7 +475,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateInstanceResponse.
+        r"""Sets the tags of this UpdateInstanceResponse.
 
         边缘实例标签。 主要用来存储边缘业务ID。
 
@@ -486,7 +486,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def locked(self):
-        """Gets the locked of this UpdateInstanceResponse.
+        r"""Gets the locked of this UpdateInstanceResponse.
 
         边缘实例是否为锁定状态。  - true：锁定 - false：未锁定
 
@@ -497,7 +497,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this UpdateInstanceResponse.
+        r"""Sets the locked of this UpdateInstanceResponse.
 
         边缘实例是否为锁定状态。  - true：锁定 - false：未锁定
 
@@ -508,7 +508,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateInstanceResponse.
+        r"""Gets the description of this UpdateInstanceResponse.
 
         边缘实例的描述信息。
 
@@ -519,7 +519,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateInstanceResponse.
+        r"""Sets the description of this UpdateInstanceResponse.
 
         边缘实例的描述信息。
 
@@ -530,7 +530,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this UpdateInstanceResponse.
+        r"""Gets the tenant_id of this UpdateInstanceResponse.
 
         边缘实例所属租户ID，即项目ID，和project_id表示相同的概念，格式为UUID。
 
@@ -541,7 +541,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this UpdateInstanceResponse.
+        r"""Sets the tenant_id of this UpdateInstanceResponse.
 
         边缘实例所属租户ID，即项目ID，和project_id表示相同的概念，格式为UUID。
 
@@ -552,7 +552,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this UpdateInstanceResponse.
+        r"""Gets the sys_tags of this UpdateInstanceResponse.
 
         边缘实例系统标签。
 
@@ -563,7 +563,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this UpdateInstanceResponse.
+        r"""Sets the sys_tags of this UpdateInstanceResponse.
 
         边缘实例系统标签。
 
@@ -574,7 +574,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def flavor(self):
-        """Gets the flavor of this UpdateInstanceResponse.
+        r"""Gets the flavor of this UpdateInstanceResponse.
 
         :return: The flavor of this UpdateInstanceResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.FlavorInstance`
@@ -583,7 +583,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this UpdateInstanceResponse.
+        r"""Sets the flavor of this UpdateInstanceResponse.
 
         :param flavor: The flavor of this UpdateInstanceResponse.
         :type flavor: :class:`huaweicloudsdkiec.v1.FlavorInstance`
@@ -592,7 +592,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpdateInstanceResponse.
+        r"""Gets the metadata of this UpdateInstanceResponse.
 
         边缘实例元数据。
 
@@ -603,7 +603,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpdateInstanceResponse.
+        r"""Sets the metadata of this UpdateInstanceResponse.
 
         边缘实例元数据。
 
@@ -614,7 +614,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this UpdateInstanceResponse.
+        r"""Gets the security_groups of this UpdateInstanceResponse.
 
         边缘实例所属安全组列表。
 
@@ -625,7 +625,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this UpdateInstanceResponse.
+        r"""Sets the security_groups of this UpdateInstanceResponse.
 
         边缘实例所属安全组列表。
 
@@ -636,7 +636,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def progress(self):
-        """Gets the progress of this UpdateInstanceResponse.
+        r"""Gets the progress of this UpdateInstanceResponse.
 
         边缘实例进度。
 
@@ -647,7 +647,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this UpdateInstanceResponse.
+        r"""Sets the progress of this UpdateInstanceResponse.
 
         边缘实例进度。
 
@@ -658,7 +658,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_ext_st_spower_state(self):
-        """Gets the os_ext_st_spower_state of this UpdateInstanceResponse.
+        r"""Gets the os_ext_st_spower_state of this UpdateInstanceResponse.
 
         扩展属性，边缘实例电源状态。
 
@@ -669,7 +669,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_ext_st_spower_state.setter
     def os_ext_st_spower_state(self, os_ext_st_spower_state):
-        """Sets the os_ext_st_spower_state of this UpdateInstanceResponse.
+        r"""Sets the os_ext_st_spower_state of this UpdateInstanceResponse.
 
         扩展属性，边缘实例电源状态。
 
@@ -680,7 +680,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_ext_st_svm_state(self):
-        """Gets the os_ext_st_svm_state of this UpdateInstanceResponse.
+        r"""Gets the os_ext_st_svm_state of this UpdateInstanceResponse.
 
         扩展属性，边缘实例当前状态。
 
@@ -691,7 +691,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_ext_st_svm_state.setter
     def os_ext_st_svm_state(self, os_ext_st_svm_state):
-        """Sets the os_ext_st_svm_state of this UpdateInstanceResponse.
+        r"""Sets the os_ext_st_svm_state of this UpdateInstanceResponse.
 
         扩展属性，边缘实例当前状态。
 
@@ -702,7 +702,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_ext_st_stask_state(self):
-        """Gets the os_ext_st_stask_state of this UpdateInstanceResponse.
+        r"""Gets the os_ext_st_stask_state of this UpdateInstanceResponse.
 
         边缘实例任务状态。
 
@@ -713,7 +713,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_ext_st_stask_state.setter
     def os_ext_st_stask_state(self, os_ext_st_stask_state):
-        """Sets the os_ext_st_stask_state of this UpdateInstanceResponse.
+        r"""Sets the os_ext_st_stask_state of this UpdateInstanceResponse.
 
         边缘实例任务状态。
 
@@ -724,7 +724,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_dc_fdisk_config(self):
-        """Gets the os_dc_fdisk_config of this UpdateInstanceResponse.
+        r"""Gets the os_dc_fdisk_config of this UpdateInstanceResponse.
 
         扩展属性， diskConfig的类型。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
 
@@ -735,7 +735,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_dc_fdisk_config.setter
     def os_dc_fdisk_config(self, os_dc_fdisk_config):
-        """Sets the os_dc_fdisk_config of this UpdateInstanceResponse.
+        r"""Sets the os_dc_fdisk_config of this UpdateInstanceResponse.
 
         扩展属性， diskConfig的类型。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
 
@@ -746,7 +746,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_ext_a_zavailability_zone(self):
-        """Gets the os_ext_a_zavailability_zone of this UpdateInstanceResponse.
+        r"""Gets the os_ext_a_zavailability_zone of this UpdateInstanceResponse.
 
         扩展属性，边缘实例所在可用区名称。
 
@@ -757,7 +757,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_ext_a_zavailability_zone.setter
     def os_ext_a_zavailability_zone(self, os_ext_a_zavailability_zone):
-        """Sets the os_ext_a_zavailability_zone of this UpdateInstanceResponse.
+        r"""Sets the os_ext_a_zavailability_zone of this UpdateInstanceResponse.
 
         扩展属性，边缘实例所在可用区名称。
 
@@ -768,7 +768,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_srv_us_glaunched_at(self):
-        """Gets the os_srv_us_glaunched_at of this UpdateInstanceResponse.
+        r"""Gets the os_srv_us_glaunched_at of this UpdateInstanceResponse.
 
         边缘实例启动时间。 时间格式例如：2019-05-22T03:23:59.000000
 
@@ -779,7 +779,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_srv_us_glaunched_at.setter
     def os_srv_us_glaunched_at(self, os_srv_us_glaunched_at):
-        """Sets the os_srv_us_glaunched_at of this UpdateInstanceResponse.
+        r"""Sets the os_srv_us_glaunched_at of this UpdateInstanceResponse.
 
         边缘实例启动时间。 时间格式例如：2019-05-22T03:23:59.000000
 
@@ -790,7 +790,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_srv_us_gterminated_at(self):
-        """Gets the os_srv_us_gterminated_at of this UpdateInstanceResponse.
+        r"""Gets the os_srv_us_gterminated_at of this UpdateInstanceResponse.
 
         边缘实例删除时间。 时间格式例如：2019-05-22T03:23:59.000000
 
@@ -801,7 +801,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_srv_us_gterminated_at.setter
     def os_srv_us_gterminated_at(self, os_srv_us_gterminated_at):
-        """Sets the os_srv_us_gterminated_at of this UpdateInstanceResponse.
+        r"""Sets the os_srv_us_gterminated_at of this UpdateInstanceResponse.
 
         边缘实例删除时间。 时间格式例如：2019-05-22T03:23:59.000000
 
@@ -812,7 +812,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_ext_srv_att_rroot_device_name(self):
-        """Gets the os_ext_srv_att_rroot_device_name of this UpdateInstanceResponse.
+        r"""Gets the os_ext_srv_att_rroot_device_name of this UpdateInstanceResponse.
 
         边缘实例系统盘的设备名称。
 
@@ -823,7 +823,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_ext_srv_att_rroot_device_name.setter
     def os_ext_srv_att_rroot_device_name(self, os_ext_srv_att_rroot_device_name):
-        """Sets the os_ext_srv_att_rroot_device_name of this UpdateInstanceResponse.
+        r"""Sets the os_ext_srv_att_rroot_device_name of this UpdateInstanceResponse.
 
         边缘实例系统盘的设备名称。
 
@@ -834,7 +834,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_ext_srv_att_rramdisk_id(self):
-        """Gets the os_ext_srv_att_rramdisk_id of this UpdateInstanceResponse.
+        r"""Gets the os_ext_srv_att_rramdisk_id of this UpdateInstanceResponse.
 
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
 
@@ -845,7 +845,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_ext_srv_att_rramdisk_id.setter
     def os_ext_srv_att_rramdisk_id(self, os_ext_srv_att_rramdisk_id):
-        """Sets the os_ext_srv_att_rramdisk_id of this UpdateInstanceResponse.
+        r"""Sets the os_ext_srv_att_rramdisk_id of this UpdateInstanceResponse.
 
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
 
@@ -856,7 +856,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_ext_srv_att_rkernel_id(self):
-        """Gets the os_ext_srv_att_rkernel_id of this UpdateInstanceResponse.
+        r"""Gets the os_ext_srv_att_rkernel_id of this UpdateInstanceResponse.
 
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空。
 
@@ -867,7 +867,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_ext_srv_att_rkernel_id.setter
     def os_ext_srv_att_rkernel_id(self, os_ext_srv_att_rkernel_id):
-        """Sets the os_ext_srv_att_rkernel_id of this UpdateInstanceResponse.
+        r"""Sets the os_ext_srv_att_rkernel_id of this UpdateInstanceResponse.
 
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空。
 
@@ -878,7 +878,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_ext_srv_att_rlaunch_index(self):
-        """Gets the os_ext_srv_att_rlaunch_index of this UpdateInstanceResponse.
+        r"""Gets the os_ext_srv_att_rlaunch_index of this UpdateInstanceResponse.
 
         批量创建场景，边缘实例的启动顺序。
 
@@ -889,7 +889,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_ext_srv_att_rlaunch_index.setter
     def os_ext_srv_att_rlaunch_index(self, os_ext_srv_att_rlaunch_index):
-        """Sets the os_ext_srv_att_rlaunch_index of this UpdateInstanceResponse.
+        r"""Sets the os_ext_srv_att_rlaunch_index of this UpdateInstanceResponse.
 
         批量创建场景，边缘实例的启动顺序。
 
@@ -900,7 +900,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_ext_srv_att_rreservation_id(self):
-        """Gets the os_ext_srv_att_rreservation_id of this UpdateInstanceResponse.
+        r"""Gets the os_ext_srv_att_rreservation_id of this UpdateInstanceResponse.
 
         批量创建场景，边缘实例的预留ID。
 
@@ -911,7 +911,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_ext_srv_att_rreservation_id.setter
     def os_ext_srv_att_rreservation_id(self, os_ext_srv_att_rreservation_id):
-        """Sets the os_ext_srv_att_rreservation_id of this UpdateInstanceResponse.
+        r"""Sets the os_ext_srv_att_rreservation_id of this UpdateInstanceResponse.
 
         批量创建场景，边缘实例的预留ID。
 
@@ -922,7 +922,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_ext_srv_att_rhostname(self):
-        """Gets the os_ext_srv_att_rhostname of this UpdateInstanceResponse.
+        r"""Gets the os_ext_srv_att_rhostname of this UpdateInstanceResponse.
 
         边缘实例的主机名。
 
@@ -933,7 +933,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_ext_srv_att_rhostname.setter
     def os_ext_srv_att_rhostname(self, os_ext_srv_att_rhostname):
-        """Sets the os_ext_srv_att_rhostname of this UpdateInstanceResponse.
+        r"""Sets the os_ext_srv_att_rhostname of this UpdateInstanceResponse.
 
         边缘实例的主机名。
 
@@ -944,7 +944,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_ext_srv_att_ruser_data(self):
-        """Gets the os_ext_srv_att_ruser_data of this UpdateInstanceResponse.
+        r"""Gets the os_ext_srv_att_ruser_data of this UpdateInstanceResponse.
 
         创建边缘实例时指定的user_data。
 
@@ -955,7 +955,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_ext_srv_att_ruser_data.setter
     def os_ext_srv_att_ruser_data(self, os_ext_srv_att_ruser_data):
-        """Sets the os_ext_srv_att_ruser_data of this UpdateInstanceResponse.
+        r"""Sets the os_ext_srv_att_ruser_data of this UpdateInstanceResponse.
 
         创建边缘实例时指定的user_data。
 
@@ -966,7 +966,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_ext_srv_att_rhost(self):
-        """Gets the os_ext_srv_att_rhost of this UpdateInstanceResponse.
+        r"""Gets the os_ext_srv_att_rhost of this UpdateInstanceResponse.
 
         边缘实例所在主机的主机名称。
 
@@ -977,7 +977,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_ext_srv_att_rhost.setter
     def os_ext_srv_att_rhost(self, os_ext_srv_att_rhost):
-        """Sets the os_ext_srv_att_rhost of this UpdateInstanceResponse.
+        r"""Sets the os_ext_srv_att_rhost of this UpdateInstanceResponse.
 
         边缘实例所在主机的主机名称。
 
@@ -988,7 +988,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_ext_srv_att_rhypervisor_hostname(self):
-        """Gets the os_ext_srv_att_rhypervisor_hostname of this UpdateInstanceResponse.
+        r"""Gets the os_ext_srv_att_rhypervisor_hostname of this UpdateInstanceResponse.
 
         扩展属性，边缘实例所在虚拟化主机名。
 
@@ -999,7 +999,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_ext_srv_att_rhypervisor_hostname.setter
     def os_ext_srv_att_rhypervisor_hostname(self, os_ext_srv_att_rhypervisor_hostname):
-        """Sets the os_ext_srv_att_rhypervisor_hostname of this UpdateInstanceResponse.
+        r"""Sets the os_ext_srv_att_rhypervisor_hostname of this UpdateInstanceResponse.
 
         扩展属性，边缘实例所在虚拟化主机名。
 
@@ -1010,7 +1010,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_extended_volumesvolumes_attached(self):
-        """Gets the os_extended_volumesvolumes_attached of this UpdateInstanceResponse.
+        r"""Gets the os_extended_volumesvolumes_attached of this UpdateInstanceResponse.
 
         挂载到边缘实例上的磁盘。
 
@@ -1021,7 +1021,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_extended_volumesvolumes_attached.setter
     def os_extended_volumesvolumes_attached(self, os_extended_volumesvolumes_attached):
-        """Sets the os_extended_volumesvolumes_attached of this UpdateInstanceResponse.
+        r"""Sets the os_extended_volumesvolumes_attached of this UpdateInstanceResponse.
 
         挂载到边缘实例上的磁盘。
 
@@ -1032,7 +1032,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def geolocation(self):
-        """Gets the geolocation of this UpdateInstanceResponse.
+        r"""Gets the geolocation of this UpdateInstanceResponse.
 
         :return: The geolocation of this UpdateInstanceResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.GeoLocation`
@@ -1041,7 +1041,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @geolocation.setter
     def geolocation(self, geolocation):
-        """Sets the geolocation of this UpdateInstanceResponse.
+        r"""Sets the geolocation of this UpdateInstanceResponse.
 
         :param geolocation: The geolocation of this UpdateInstanceResponse.
         :type geolocation: :class:`huaweicloudsdkiec.v1.GeoLocation`
@@ -1050,7 +1050,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def edgecloud_id(self):
-        """Gets the edgecloud_id of this UpdateInstanceResponse.
+        r"""Gets the edgecloud_id of this UpdateInstanceResponse.
 
         边缘实例所属边缘业务的ID。
 
@@ -1061,7 +1061,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @edgecloud_id.setter
     def edgecloud_id(self, edgecloud_id):
-        """Sets the edgecloud_id of this UpdateInstanceResponse.
+        r"""Sets the edgecloud_id of this UpdateInstanceResponse.
 
         边缘实例所属边缘业务的ID。
 
@@ -1072,7 +1072,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def edgecloud_name(self):
-        """Gets the edgecloud_name of this UpdateInstanceResponse.
+        r"""Gets the edgecloud_name of this UpdateInstanceResponse.
 
         边缘实例所属边缘业务的名称
 
@@ -1083,7 +1083,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @edgecloud_name.setter
     def edgecloud_name(self, edgecloud_name):
-        """Sets the edgecloud_name of this UpdateInstanceResponse.
+        r"""Sets the edgecloud_name of this UpdateInstanceResponse.
 
         边缘实例所属边缘业务的名称
 
@@ -1094,7 +1094,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateInstanceResponse.
+        r"""Gets the domain_id of this UpdateInstanceResponse.
 
         帐号ID。
 
@@ -1105,7 +1105,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateInstanceResponse.
+        r"""Sets the domain_id of this UpdateInstanceResponse.
 
         帐号ID。
 
@@ -1116,7 +1116,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def key_name(self):
-        """Gets the key_name of this UpdateInstanceResponse.
+        r"""Gets the key_name of this UpdateInstanceResponse.
 
         使用的密钥对名称。
 
@@ -1127,7 +1127,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this UpdateInstanceResponse.
+        r"""Sets the key_name of this UpdateInstanceResponse.
 
         使用的密钥对名称。
 
@@ -1138,7 +1138,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def os_ext_srv_att_rinstance_name(self):
-        """Gets the os_ext_srv_att_rinstance_name of this UpdateInstanceResponse.
+        r"""Gets the os_ext_srv_att_rinstance_name of this UpdateInstanceResponse.
 
         扩展属性，边缘实例别名。
 
@@ -1149,7 +1149,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @os_ext_srv_att_rinstance_name.setter
     def os_ext_srv_att_rinstance_name(self, os_ext_srv_att_rinstance_name):
-        """Sets the os_ext_srv_att_rinstance_name of this UpdateInstanceResponse.
+        r"""Sets the os_ext_srv_att_rinstance_name of this UpdateInstanceResponse.
 
         扩展属性，边缘实例别名。
 

@@ -30,7 +30,7 @@ class ExportGraphResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, job_id=None):
-        """ExportGraphResponse
+        r"""ExportGraphResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ExportGraphResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ExportGraphResponse.
+        r"""Gets the error_message of this ExportGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -69,7 +69,7 @@ class ExportGraphResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ExportGraphResponse.
+        r"""Sets the error_message of this ExportGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -80,7 +80,7 @@ class ExportGraphResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ExportGraphResponse.
+        r"""Gets the error_code of this ExportGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -91,7 +91,7 @@ class ExportGraphResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ExportGraphResponse.
+        r"""Sets the error_code of this ExportGraphResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -102,7 +102,7 @@ class ExportGraphResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExportGraphResponse.
+        r"""Gets the job_id of this ExportGraphResponse.
 
         执行该异步任务的jobId。 >可以查询jobId查看任务执行状态、获取返回结果
 
@@ -113,7 +113,7 @@ class ExportGraphResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExportGraphResponse.
+        r"""Sets the job_id of this ExportGraphResponse.
 
         执行该异步任务的jobId。 >可以查询jobId查看任务执行状态、获取返回结果
 

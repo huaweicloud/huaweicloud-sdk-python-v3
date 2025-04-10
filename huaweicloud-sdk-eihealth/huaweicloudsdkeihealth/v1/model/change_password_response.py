@@ -24,7 +24,7 @@ class ChangePasswordResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangePasswordResponse
+        r"""ChangePasswordResponse
 
         The model defined in huaweicloud sdk
 

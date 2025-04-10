@@ -32,7 +32,7 @@ class ListOrganizationPolicyDetailResponse(SdkResponse):
     }
 
     def __init__(self, policies=None, count=None, limit=None, offset=None):
-        """ListOrganizationPolicyDetailResponse
+        r"""ListOrganizationPolicyDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListOrganizationPolicyDetailResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ListOrganizationPolicyDetailResponse.
+        r"""Gets the policies of this ListOrganizationPolicyDetailResponse.
 
         组织策略部署状态列表
 
@@ -76,7 +76,7 @@ class ListOrganizationPolicyDetailResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListOrganizationPolicyDetailResponse.
+        r"""Sets the policies of this ListOrganizationPolicyDetailResponse.
 
         组织策略部署状态列表
 
@@ -87,7 +87,7 @@ class ListOrganizationPolicyDetailResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListOrganizationPolicyDetailResponse.
+        r"""Gets the count of this ListOrganizationPolicyDetailResponse.
 
         组织策略状态成员数量
 
@@ -98,7 +98,7 @@ class ListOrganizationPolicyDetailResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListOrganizationPolicyDetailResponse.
+        r"""Sets the count of this ListOrganizationPolicyDetailResponse.
 
         组织策略状态成员数量
 
@@ -109,7 +109,7 @@ class ListOrganizationPolicyDetailResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListOrganizationPolicyDetailResponse.
+        r"""Gets the limit of this ListOrganizationPolicyDetailResponse.
 
         每页显示的条目数量
 
@@ -120,7 +120,7 @@ class ListOrganizationPolicyDetailResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListOrganizationPolicyDetailResponse.
+        r"""Sets the limit of this ListOrganizationPolicyDetailResponse.
 
         每页显示的条目数量
 
@@ -131,7 +131,7 @@ class ListOrganizationPolicyDetailResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListOrganizationPolicyDetailResponse.
+        r"""Gets the offset of this ListOrganizationPolicyDetailResponse.
 
         偏移量，表示从此偏移量开始查询
 
@@ -142,7 +142,7 @@ class ListOrganizationPolicyDetailResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListOrganizationPolicyDetailResponse.
+        r"""Sets the offset of this ListOrganizationPolicyDetailResponse.
 
         偏移量，表示从此偏移量开始查询
 

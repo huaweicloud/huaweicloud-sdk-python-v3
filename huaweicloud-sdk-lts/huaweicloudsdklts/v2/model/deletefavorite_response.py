@@ -24,7 +24,7 @@ class DeletefavoriteResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeletefavoriteResponse
+        r"""DeletefavoriteResponse
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class BindEipRequest:
     }
 
     def __init__(self, public_ip=None, public_ip_id=None, is_bind=None):
-        """BindEipRequest
+        r"""BindEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BindEipRequest:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this BindEipRequest.
+        r"""Gets the public_ip of this BindEipRequest.
 
         待绑定的弹性公网IP地址，仅允许使用标准的IP地址格式。is_bind为true时必选
 
@@ -67,7 +67,7 @@ class BindEipRequest:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this BindEipRequest.
+        r"""Sets the public_ip of this BindEipRequest.
 
         待绑定的弹性公网IP地址，仅允许使用标准的IP地址格式。is_bind为true时必选
 
@@ -78,7 +78,7 @@ class BindEipRequest:
 
     @property
     def public_ip_id(self):
-        """Gets the public_ip_id of this BindEipRequest.
+        r"""Gets the public_ip_id of this BindEipRequest.
 
         弹性公网IP对应的ID，仅允许使用标准的UUID格式。is_bind为true时必选
 
@@ -89,7 +89,7 @@ class BindEipRequest:
 
     @public_ip_id.setter
     def public_ip_id(self, public_ip_id):
-        """Sets the public_ip_id of this BindEipRequest.
+        r"""Sets the public_ip_id of this BindEipRequest.
 
         弹性公网IP对应的ID，仅允许使用标准的UUID格式。is_bind为true时必选
 
@@ -100,7 +100,7 @@ class BindEipRequest:
 
     @property
     def is_bind(self):
-        """Gets the is_bind of this BindEipRequest.
+        r"""Gets the is_bind of this BindEipRequest.
 
         - true，绑定弹性公网IP。 - false，解绑弹性公网IP。
 
@@ -111,7 +111,7 @@ class BindEipRequest:
 
     @is_bind.setter
     def is_bind(self, is_bind):
-        """Sets the is_bind of this BindEipRequest.
+        r"""Sets the is_bind of this BindEipRequest.
 
         - true，绑定弹性公网IP。 - false，解绑弹性公网IP。
 

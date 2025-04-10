@@ -35,7 +35,7 @@ class ScheduleInstance:
     }
 
     def __init__(self, target_selection=None, target_resource=None, target_instances=None, order_no=None, batch_strategy=None, sub_target_instances=None):
-        """ScheduleInstance
+        r"""ScheduleInstance
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ScheduleInstance:
 
     @property
     def target_selection(self):
-        """Gets the target_selection of this ScheduleInstance.
+        r"""Gets the target_selection of this ScheduleInstance.
 
         目标选择方式，枚举值：ALL 全部实例，MANUAL 手动选择, NONE
 
@@ -87,7 +87,7 @@ class ScheduleInstance:
 
     @target_selection.setter
     def target_selection(self, target_selection):
-        """Sets the target_selection of this ScheduleInstance.
+        r"""Sets the target_selection of this ScheduleInstance.
 
         目标选择方式，枚举值：ALL 全部实例，MANUAL 手动选择, NONE
 
@@ -98,7 +98,7 @@ class ScheduleInstance:
 
     @property
     def target_resource(self):
-        """Gets the target_resource of this ScheduleInstance.
+        r"""Gets the target_resource of this ScheduleInstance.
 
         :return: The target_resource of this ScheduleInstance.
         :rtype: :class:`huaweicloudsdkcoc.v1.TargetResource`
@@ -107,7 +107,7 @@ class ScheduleInstance:
 
     @target_resource.setter
     def target_resource(self, target_resource):
-        """Sets the target_resource of this ScheduleInstance.
+        r"""Sets the target_resource of this ScheduleInstance.
 
         :param target_resource: The target_resource of this ScheduleInstance.
         :type target_resource: :class:`huaweicloudsdkcoc.v1.TargetResource`
@@ -116,7 +116,7 @@ class ScheduleInstance:
 
     @property
     def target_instances(self):
-        """Gets the target_instances of this ScheduleInstance.
+        r"""Gets the target_instances of this ScheduleInstance.
 
         实例信息
 
@@ -127,7 +127,7 @@ class ScheduleInstance:
 
     @target_instances.setter
     def target_instances(self, target_instances):
-        """Sets the target_instances of this ScheduleInstance.
+        r"""Sets the target_instances of this ScheduleInstance.
 
         实例信息
 
@@ -138,7 +138,7 @@ class ScheduleInstance:
 
     @property
     def order_no(self):
-        """Gets the order_no of this ScheduleInstance.
+        r"""Gets the order_no of this ScheduleInstance.
 
         步骤号
 
@@ -149,7 +149,7 @@ class ScheduleInstance:
 
     @order_no.setter
     def order_no(self, order_no):
-        """Sets the order_no of this ScheduleInstance.
+        r"""Sets the order_no of this ScheduleInstance.
 
         步骤号
 
@@ -160,7 +160,7 @@ class ScheduleInstance:
 
     @property
     def batch_strategy(self):
-        """Gets the batch_strategy of this ScheduleInstance.
+        r"""Gets the batch_strategy of this ScheduleInstance.
 
         实例分批策略(AUTO_BATCH,MANUAL_BATCH,NONE)
 
@@ -171,7 +171,7 @@ class ScheduleInstance:
 
     @batch_strategy.setter
     def batch_strategy(self, batch_strategy):
-        """Sets the batch_strategy of this ScheduleInstance.
+        r"""Sets the batch_strategy of this ScheduleInstance.
 
         实例分批策略(AUTO_BATCH,MANUAL_BATCH,NONE)
 
@@ -182,7 +182,7 @@ class ScheduleInstance:
 
     @property
     def sub_target_instances(self):
-        """Gets the sub_target_instances of this ScheduleInstance.
+        r"""Gets the sub_target_instances of this ScheduleInstance.
 
         目标实例
 
@@ -193,7 +193,7 @@ class ScheduleInstance:
 
     @sub_target_instances.setter
     def sub_target_instances(self, sub_target_instances):
-        """Sets the sub_target_instances of this ScheduleInstance.
+        r"""Sets the sub_target_instances of this ScheduleInstance.
 
         目标实例
 

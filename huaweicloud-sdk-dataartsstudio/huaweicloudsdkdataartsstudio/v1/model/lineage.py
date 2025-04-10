@@ -71,7 +71,7 @@ class Lineage:
     }
 
     def __init__(self, relation_type_name=None, direction=None, ep1_id=None, ep1_type_name=None, ep2_id=None, ep2_type_name=None, end1=None, end2=None, propagate_tag=None, guid=None, type_name=None, type_display_name=None, display_text=None, attributes=None, updated_attributes=None, project_id=None, domain_id=None, instance_id=None, workspace_id=None, status=None, created_by=None, updated_by=None, create_time=None, update_time=None):
-        """Lineage
+        r"""Lineage
 
         The model defined in huaweicloud sdk
 
@@ -204,7 +204,7 @@ class Lineage:
 
     @property
     def relation_type_name(self):
-        """Gets the relation_type_name of this Lineage.
+        r"""Gets the relation_type_name of this Lineage.
 
         关系类型。PARENT_CHILD,LOGICAL_PHYSICAL,PK_FK,DATA_FLOW,INSTANCE_OF,JOIN,IS_A,UP_DOWN,ASSOCIATION,WORK_FLOW
 
@@ -215,7 +215,7 @@ class Lineage:
 
     @relation_type_name.setter
     def relation_type_name(self, relation_type_name):
-        """Sets the relation_type_name of this Lineage.
+        r"""Sets the relation_type_name of this Lineage.
 
         关系类型。PARENT_CHILD,LOGICAL_PHYSICAL,PK_FK,DATA_FLOW,INSTANCE_OF,JOIN,IS_A,UP_DOWN,ASSOCIATION,WORK_FLOW
 
@@ -226,7 +226,7 @@ class Lineage:
 
     @property
     def direction(self):
-        """Gets the direction of this Lineage.
+        r"""Gets the direction of this Lineage.
 
         血缘流向，IN,OUT,BOTH
 
@@ -237,7 +237,7 @@ class Lineage:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this Lineage.
+        r"""Sets the direction of this Lineage.
 
         血缘流向，IN,OUT,BOTH
 
@@ -248,7 +248,7 @@ class Lineage:
 
     @property
     def ep1_id(self):
-        """Gets the ep1_id of this Lineage.
+        r"""Gets the ep1_id of this Lineage.
 
         节点一资产guid
 
@@ -259,7 +259,7 @@ class Lineage:
 
     @ep1_id.setter
     def ep1_id(self, ep1_id):
-        """Sets the ep1_id of this Lineage.
+        r"""Sets the ep1_id of this Lineage.
 
         节点一资产guid
 
@@ -270,7 +270,7 @@ class Lineage:
 
     @property
     def ep1_type_name(self):
-        """Gets the ep1_type_name of this Lineage.
+        r"""Gets the ep1_type_name of this Lineage.
 
         节点一资产类型
 
@@ -281,7 +281,7 @@ class Lineage:
 
     @ep1_type_name.setter
     def ep1_type_name(self, ep1_type_name):
-        """Sets the ep1_type_name of this Lineage.
+        r"""Sets the ep1_type_name of this Lineage.
 
         节点一资产类型
 
@@ -292,7 +292,7 @@ class Lineage:
 
     @property
     def ep2_id(self):
-        """Gets the ep2_id of this Lineage.
+        r"""Gets the ep2_id of this Lineage.
 
         节点二资产guid
 
@@ -303,7 +303,7 @@ class Lineage:
 
     @ep2_id.setter
     def ep2_id(self, ep2_id):
-        """Sets the ep2_id of this Lineage.
+        r"""Sets the ep2_id of this Lineage.
 
         节点二资产guid
 
@@ -314,7 +314,7 @@ class Lineage:
 
     @property
     def ep2_type_name(self):
-        """Gets the ep2_type_name of this Lineage.
+        r"""Gets the ep2_type_name of this Lineage.
 
         节点二资产类型
 
@@ -325,7 +325,7 @@ class Lineage:
 
     @ep2_type_name.setter
     def ep2_type_name(self, ep2_type_name):
-        """Sets the ep2_type_name of this Lineage.
+        r"""Sets the ep2_type_name of this Lineage.
 
         节点二资产类型
 
@@ -336,7 +336,7 @@ class Lineage:
 
     @property
     def end1(self):
-        """Gets the end1 of this Lineage.
+        r"""Gets the end1 of this Lineage.
 
         :return: The end1 of this Lineage.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.Entity`
@@ -345,7 +345,7 @@ class Lineage:
 
     @end1.setter
     def end1(self, end1):
-        """Sets the end1 of this Lineage.
+        r"""Sets the end1 of this Lineage.
 
         :param end1: The end1 of this Lineage.
         :type end1: :class:`huaweicloudsdkdataartsstudio.v1.Entity`
@@ -354,7 +354,7 @@ class Lineage:
 
     @property
     def end2(self):
-        """Gets the end2 of this Lineage.
+        r"""Gets the end2 of this Lineage.
 
         :return: The end2 of this Lineage.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.Entity`
@@ -363,7 +363,7 @@ class Lineage:
 
     @end2.setter
     def end2(self, end2):
-        """Sets the end2 of this Lineage.
+        r"""Sets the end2 of this Lineage.
 
         :param end2: The end2 of this Lineage.
         :type end2: :class:`huaweicloudsdkdataartsstudio.v1.Entity`
@@ -372,7 +372,7 @@ class Lineage:
 
     @property
     def propagate_tag(self):
-        """Gets the propagate_tag of this Lineage.
+        r"""Gets the propagate_tag of this Lineage.
 
         关系类型。NONE,ONE_TO_TWO,TWO_TO_ONE,BOTH
 
@@ -383,7 +383,7 @@ class Lineage:
 
     @propagate_tag.setter
     def propagate_tag(self, propagate_tag):
-        """Sets the propagate_tag of this Lineage.
+        r"""Sets the propagate_tag of this Lineage.
 
         关系类型。NONE,ONE_TO_TWO,TWO_TO_ONE,BOTH
 
@@ -394,7 +394,7 @@ class Lineage:
 
     @property
     def guid(self):
-        """Gets the guid of this Lineage.
+        r"""Gets the guid of this Lineage.
 
         资产guid
 
@@ -405,7 +405,7 @@ class Lineage:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this Lineage.
+        r"""Sets the guid of this Lineage.
 
         资产guid
 
@@ -416,7 +416,7 @@ class Lineage:
 
     @property
     def type_name(self):
-        """Gets the type_name of this Lineage.
+        r"""Gets the type_name of this Lineage.
 
         资产类型名称
 
@@ -427,7 +427,7 @@ class Lineage:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this Lineage.
+        r"""Sets the type_name of this Lineage.
 
         资产类型名称
 
@@ -438,7 +438,7 @@ class Lineage:
 
     @property
     def type_display_name(self):
-        """Gets the type_display_name of this Lineage.
+        r"""Gets the type_display_name of this Lineage.
 
         类型展示名称
 
@@ -449,7 +449,7 @@ class Lineage:
 
     @type_display_name.setter
     def type_display_name(self, type_display_name):
-        """Sets the type_display_name of this Lineage.
+        r"""Sets the type_display_name of this Lineage.
 
         类型展示名称
 
@@ -460,7 +460,7 @@ class Lineage:
 
     @property
     def display_text(self):
-        """Gets the display_text of this Lineage.
+        r"""Gets the display_text of this Lineage.
 
         展示名称
 
@@ -471,7 +471,7 @@ class Lineage:
 
     @display_text.setter
     def display_text(self, display_text):
-        """Sets the display_text of this Lineage.
+        r"""Sets the display_text of this Lineage.
 
         展示名称
 
@@ -482,7 +482,7 @@ class Lineage:
 
     @property
     def attributes(self):
-        """Gets the attributes of this Lineage.
+        r"""Gets the attributes of this Lineage.
 
         资产属性，Map<String, Object>
 
@@ -493,7 +493,7 @@ class Lineage:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this Lineage.
+        r"""Sets the attributes of this Lineage.
 
         资产属性，Map<String, Object>
 
@@ -504,7 +504,7 @@ class Lineage:
 
     @property
     def updated_attributes(self):
-        """Gets the updated_attributes of this Lineage.
+        r"""Gets the updated_attributes of this Lineage.
 
         修改属性列表
 
@@ -515,7 +515,7 @@ class Lineage:
 
     @updated_attributes.setter
     def updated_attributes(self, updated_attributes):
-        """Sets the updated_attributes of this Lineage.
+        r"""Sets the updated_attributes of this Lineage.
 
         修改属性列表
 
@@ -526,7 +526,7 @@ class Lineage:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Lineage.
+        r"""Gets the project_id of this Lineage.
 
         项目id
 
@@ -537,7 +537,7 @@ class Lineage:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Lineage.
+        r"""Sets the project_id of this Lineage.
 
         项目id
 
@@ -548,7 +548,7 @@ class Lineage:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this Lineage.
+        r"""Gets the domain_id of this Lineage.
 
         主账号id
 
@@ -559,7 +559,7 @@ class Lineage:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this Lineage.
+        r"""Sets the domain_id of this Lineage.
 
         主账号id
 
@@ -570,7 +570,7 @@ class Lineage:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this Lineage.
+        r"""Gets the instance_id of this Lineage.
 
         实例id
 
@@ -581,7 +581,7 @@ class Lineage:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this Lineage.
+        r"""Sets the instance_id of this Lineage.
 
         实例id
 
@@ -592,7 +592,7 @@ class Lineage:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this Lineage.
+        r"""Gets the workspace_id of this Lineage.
 
         空间id列表
 
@@ -603,7 +603,7 @@ class Lineage:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this Lineage.
+        r"""Sets the workspace_id of this Lineage.
 
         空间id列表
 
@@ -614,7 +614,7 @@ class Lineage:
 
     @property
     def status(self):
-        """Gets the status of this Lineage.
+        r"""Gets the status of this Lineage.
 
         状态
 
@@ -625,7 +625,7 @@ class Lineage:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Lineage.
+        r"""Sets the status of this Lineage.
 
         状态
 
@@ -636,7 +636,7 @@ class Lineage:
 
     @property
     def created_by(self):
-        """Gets the created_by of this Lineage.
+        r"""Gets the created_by of this Lineage.
 
         创建人
 
@@ -647,7 +647,7 @@ class Lineage:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this Lineage.
+        r"""Sets the created_by of this Lineage.
 
         创建人
 
@@ -658,7 +658,7 @@ class Lineage:
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this Lineage.
+        r"""Gets the updated_by of this Lineage.
 
         修改人
 
@@ -669,7 +669,7 @@ class Lineage:
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this Lineage.
+        r"""Sets the updated_by of this Lineage.
 
         修改人
 
@@ -680,7 +680,7 @@ class Lineage:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Lineage.
+        r"""Gets the create_time of this Lineage.
 
         创建时间
 
@@ -691,7 +691,7 @@ class Lineage:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Lineage.
+        r"""Sets the create_time of this Lineage.
 
         创建时间
 
@@ -702,7 +702,7 @@ class Lineage:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Lineage.
+        r"""Gets the update_time of this Lineage.
 
         修改时间
 
@@ -713,7 +713,7 @@ class Lineage:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Lineage.
+        r"""Sets the update_time of this Lineage.
 
         修改时间
 

@@ -27,7 +27,7 @@ class DeleteDeviceGroupRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None):
-        """DeleteDeviceGroupRequest
+        r"""DeleteDeviceGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteDeviceGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteDeviceGroupRequest.
+        r"""Gets the instance_id of this DeleteDeviceGroupRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID
 
@@ -60,7 +60,7 @@ class DeleteDeviceGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteDeviceGroupRequest.
+        r"""Sets the instance_id of this DeleteDeviceGroupRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID
 
@@ -71,7 +71,7 @@ class DeleteDeviceGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeleteDeviceGroupRequest.
+        r"""Gets the group_id of this DeleteDeviceGroupRequest.
 
         **参数说明**：设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。 **取值范围**：长度不超过36，十六进制字符串和连接符（-）的组合。
 
@@ -82,7 +82,7 @@ class DeleteDeviceGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeleteDeviceGroupRequest.
+        r"""Sets the group_id of this DeleteDeviceGroupRequest.
 
         **参数说明**：设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。 **取值范围**：长度不超过36，十六进制字符串和连接符（-）的组合。
 

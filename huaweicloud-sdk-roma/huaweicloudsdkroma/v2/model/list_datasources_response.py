@@ -30,7 +30,7 @@ class ListDatasourcesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, entities=None):
-        """ListDatasourcesResponse
+        r"""ListDatasourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDatasourcesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDatasourcesResponse.
+        r"""Gets the total of this ListDatasourcesResponse.
 
         返回所有满足条件的对象个数
 
@@ -69,7 +69,7 @@ class ListDatasourcesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDatasourcesResponse.
+        r"""Sets the total of this ListDatasourcesResponse.
 
         返回所有满足条件的对象个数
 
@@ -80,7 +80,7 @@ class ListDatasourcesResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListDatasourcesResponse.
+        r"""Gets the size of this ListDatasourcesResponse.
 
         返回对象的大小
 
@@ -91,7 +91,7 @@ class ListDatasourcesResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListDatasourcesResponse.
+        r"""Sets the size of this ListDatasourcesResponse.
 
         返回对象的大小
 
@@ -102,7 +102,7 @@ class ListDatasourcesResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this ListDatasourcesResponse.
+        r"""Gets the entities of this ListDatasourcesResponse.
 
         返回的实体对象
 
@@ -113,7 +113,7 @@ class ListDatasourcesResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ListDatasourcesResponse.
+        r"""Sets the entities of this ListDatasourcesResponse.
 
         返回的实体对象
 

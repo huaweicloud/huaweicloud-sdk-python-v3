@@ -33,7 +33,7 @@ class SvcPort:
     }
 
     def __init__(self, name=None, node_port=None, port=None, protocol=None, target_port=None):
-        """SvcPort
+        r"""SvcPort
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SvcPort:
 
     @property
     def name(self):
-        """Gets the name of this SvcPort.
+        r"""Gets the name of this SvcPort.
 
         服务端口必须进行命名，而且名称只允许是{protocol}-{suffix}这种格式，其中{protocol}可以是tcp、http等，IEF根据在端口上定义的协议来提供对应的路由能力。例如“name:http-0”和“name:tcp-0”是合法的端口名，“name:http2forecast”是非法的端口号。
 
@@ -82,7 +82,7 @@ class SvcPort:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SvcPort.
+        r"""Sets the name of this SvcPort.
 
         服务端口必须进行命名，而且名称只允许是{protocol}-{suffix}这种格式，其中{protocol}可以是tcp、http等，IEF根据在端口上定义的协议来提供对应的路由能力。例如“name:http-0”和“name:tcp-0”是合法的端口名，“name:http2forecast”是非法的端口号。
 
@@ -93,7 +93,7 @@ class SvcPort:
 
     @property
     def node_port(self):
-        """Gets the node_port of this SvcPort.
+        r"""Gets the node_port of this SvcPort.
 
         当spec.type=NodePort时，指定映射到物理机的端口号
 
@@ -104,7 +104,7 @@ class SvcPort:
 
     @node_port.setter
     def node_port(self, node_port):
-        """Sets the node_port of this SvcPort.
+        r"""Sets the node_port of this SvcPort.
 
         当spec.type=NodePort时，指定映射到物理机的端口号
 
@@ -115,7 +115,7 @@ class SvcPort:
 
     @property
     def port(self):
-        """Gets the port of this SvcPort.
+        r"""Gets the port of this SvcPort.
 
         服务监听的端口号
 
@@ -126,7 +126,7 @@ class SvcPort:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this SvcPort.
+        r"""Sets the port of this SvcPort.
 
         服务监听的端口号
 
@@ -137,7 +137,7 @@ class SvcPort:
 
     @property
     def protocol(self):
-        """Gets the protocol of this SvcPort.
+        r"""Gets the protocol of this SvcPort.
 
         具体的协议，比如TCP
 
@@ -148,7 +148,7 @@ class SvcPort:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this SvcPort.
+        r"""Sets the protocol of this SvcPort.
 
         具体的协议，比如TCP
 
@@ -159,7 +159,7 @@ class SvcPort:
 
     @property
     def target_port(self):
-        """Gets the target_port of this SvcPort.
+        r"""Gets the target_port of this SvcPort.
 
         需要转发到后端Pod的端口号
 
@@ -170,7 +170,7 @@ class SvcPort:
 
     @target_port.setter
     def target_port(self, target_port):
-        """Sets the target_port of this SvcPort.
+        r"""Sets the target_port of this SvcPort.
 
         需要转发到后端Pod的端口号
 

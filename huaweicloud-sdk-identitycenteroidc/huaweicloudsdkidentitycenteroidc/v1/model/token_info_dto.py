@@ -36,7 +36,7 @@ class TokenInfoDto:
     }
 
     def __init__(self, access_token=None, expires_in=None, id_token=None, refresh_token=None, token_type=None):
-        """TokenInfoDto
+        r"""TokenInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class TokenInfoDto:
 
     @property
     def access_token(self):
-        """Gets the access_token of this TokenInfoDto.
+        r"""Gets the access_token of this TokenInfoDto.
 
         用于访问分配给用户的IAM身份中心资源的不透明令牌
 
@@ -85,7 +85,7 @@ class TokenInfoDto:
 
     @access_token.setter
     def access_token(self, access_token):
-        """Sets the access_token of this TokenInfoDto.
+        r"""Sets the access_token of this TokenInfoDto.
 
         用于访问分配给用户的IAM身份中心资源的不透明令牌
 
@@ -96,7 +96,7 @@ class TokenInfoDto:
 
     @property
     def expires_in(self):
-        """Gets the expires_in of this TokenInfoDto.
+        r"""Gets the expires_in of this TokenInfoDto.
 
         访问令牌的过期时间（以秒为单位）
 
@@ -107,7 +107,7 @@ class TokenInfoDto:
 
     @expires_in.setter
     def expires_in(self, expires_in):
-        """Sets the expires_in of this TokenInfoDto.
+        r"""Sets the expires_in of this TokenInfoDto.
 
         访问令牌的过期时间（以秒为单位）
 
@@ -118,7 +118,7 @@ class TokenInfoDto:
 
     @property
     def id_token(self):
-        """Gets the id_token of this TokenInfoDto.
+        r"""Gets the id_token of this TokenInfoDto.
 
         用于表明用户身份的不透明令牌
 
@@ -129,7 +129,7 @@ class TokenInfoDto:
 
     @id_token.setter
     def id_token(self, id_token):
-        """Sets the id_token of this TokenInfoDto.
+        r"""Sets the id_token of this TokenInfoDto.
 
         用于表明用户身份的不透明令牌
 
@@ -140,7 +140,7 @@ class TokenInfoDto:
 
     @property
     def refresh_token(self):
-        """Gets the refresh_token of this TokenInfoDto.
+        r"""Gets the refresh_token of this TokenInfoDto.
 
         刷新令牌，此令牌可在访问令牌过期后获取新的访问令牌
 
@@ -151,7 +151,7 @@ class TokenInfoDto:
 
     @refresh_token.setter
     def refresh_token(self, refresh_token):
-        """Sets the refresh_token of this TokenInfoDto.
+        r"""Sets the refresh_token of this TokenInfoDto.
 
         刷新令牌，此令牌可在访问令牌过期后获取新的访问令牌
 
@@ -162,7 +162,7 @@ class TokenInfoDto:
 
     @property
     def token_type(self):
-        """Gets the token_type of this TokenInfoDto.
+        r"""Gets the token_type of this TokenInfoDto.
 
         用于通知客户端返回的令牌是访问令牌，目前为BearerToken
 
@@ -173,7 +173,7 @@ class TokenInfoDto:
 
     @token_type.setter
     def token_type(self, token_type):
-        """Sets the token_type of this TokenInfoDto.
+        r"""Sets the token_type of this TokenInfoDto.
 
         用于通知客户端返回的令牌是访问令牌，目前为BearerToken
 

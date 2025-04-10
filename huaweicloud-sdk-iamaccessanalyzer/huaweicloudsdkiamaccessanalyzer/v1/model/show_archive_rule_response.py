@@ -26,7 +26,7 @@ class ShowArchiveRuleResponse(SdkResponse):
     }
 
     def __init__(self, archive_rule=None):
-        """ShowArchiveRuleResponse
+        r"""ShowArchiveRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowArchiveRuleResponse(SdkResponse):
 
     @property
     def archive_rule(self):
-        """Gets the archive_rule of this ShowArchiveRuleResponse.
+        r"""Gets the archive_rule of this ShowArchiveRuleResponse.
 
         :return: The archive_rule of this ShowArchiveRuleResponse.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ArchiveRuleSummary`
@@ -53,7 +53,7 @@ class ShowArchiveRuleResponse(SdkResponse):
 
     @archive_rule.setter
     def archive_rule(self, archive_rule):
-        """Sets the archive_rule of this ShowArchiveRuleResponse.
+        r"""Sets the archive_rule of this ShowArchiveRuleResponse.
 
         :param archive_rule: The archive_rule of this ShowArchiveRuleResponse.
         :type archive_rule: :class:`huaweicloudsdkiamaccessanalyzer.v1.ArchiveRuleSummary`

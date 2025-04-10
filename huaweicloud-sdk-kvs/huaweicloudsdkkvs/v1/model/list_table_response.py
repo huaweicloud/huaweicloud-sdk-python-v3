@@ -28,7 +28,7 @@ class ListTableResponse(SdkResponse):
     }
 
     def __init__(self, cursor_name=None, table_names=None):
-        """ListTableResponse
+        r"""ListTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTableResponse(SdkResponse):
 
     @property
     def cursor_name(self):
-        """Gets the cursor_name of this ListTableResponse.
+        r"""Gets the cursor_name of this ListTableResponse.
 
         本次响应后的游标位置，下次请求时携带，如果为空，表示后面无更多。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+ > 如果为空，表示后面无更多。
 
@@ -62,7 +62,7 @@ class ListTableResponse(SdkResponse):
 
     @cursor_name.setter
     def cursor_name(self, cursor_name):
-        """Sets the cursor_name of this ListTableResponse.
+        r"""Sets the cursor_name of this ListTableResponse.
 
         本次响应后的游标位置，下次请求时携带，如果为空，表示后面无更多。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+ > 如果为空，表示后面无更多。
 
@@ -73,7 +73,7 @@ class ListTableResponse(SdkResponse):
 
     @property
     def table_names(self):
-        """Gets the table_names of this ListTableResponse.
+        r"""Gets the table_names of this ListTableResponse.
 
         返回的表名列表。 - 长度：最大100
 
@@ -84,7 +84,7 @@ class ListTableResponse(SdkResponse):
 
     @table_names.setter
     def table_names(self, table_names):
-        """Sets the table_names of this ListTableResponse.
+        r"""Sets the table_names of this ListTableResponse.
 
         返回的表名列表。 - 长度：最大100
 

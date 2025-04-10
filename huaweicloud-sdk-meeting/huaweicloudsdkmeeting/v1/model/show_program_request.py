@@ -29,7 +29,7 @@ class ShowProgramRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, id=None):
-        """ShowProgramRequest
+        r"""ShowProgramRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowProgramRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowProgramRequest.
+        r"""Gets the x_request_id of this ShowProgramRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -67,7 +67,7 @@ class ShowProgramRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowProgramRequest.
+        r"""Sets the x_request_id of this ShowProgramRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -78,7 +78,7 @@ class ShowProgramRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this ShowProgramRequest.
+        r"""Gets the accept_language of this ShowProgramRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -89,7 +89,7 @@ class ShowProgramRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this ShowProgramRequest.
+        r"""Sets the accept_language of this ShowProgramRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -100,7 +100,7 @@ class ShowProgramRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowProgramRequest.
+        r"""Gets the id of this ShowProgramRequest.
 
         节目ID。
 
@@ -111,7 +111,7 @@ class ShowProgramRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowProgramRequest.
+        r"""Sets the id of this ShowProgramRequest.
 
         节目ID。
 

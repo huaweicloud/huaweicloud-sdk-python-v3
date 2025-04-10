@@ -28,7 +28,7 @@ class ListCceCompliantResponse(SdkResponse):
     }
 
     def __init__(self, count=None, cce_info_list=None):
-        """ListCceCompliantResponse
+        r"""ListCceCompliantResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCceCompliantResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListCceCompliantResponse.
+        r"""Gets the count of this ListCceCompliantResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListCceCompliantResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListCceCompliantResponse.
+        r"""Sets the count of this ListCceCompliantResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListCceCompliantResponse(SdkResponse):
 
     @property
     def cce_info_list(self):
-        """Gets the cce_info_list of this ListCceCompliantResponse.
+        r"""Gets the cce_info_list of this ListCceCompliantResponse.
 
         CCE信息列表
 
@@ -84,7 +84,7 @@ class ListCceCompliantResponse(SdkResponse):
 
     @cce_info_list.setter
     def cce_info_list(self, cce_info_list):
-        """Sets the cce_info_list of this ListCceCompliantResponse.
+        r"""Sets the cce_info_list of this ListCceCompliantResponse.
 
         CCE信息列表
 

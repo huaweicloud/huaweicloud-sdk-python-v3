@@ -33,7 +33,7 @@ class DeleteOttChannelInfoRequest:
     }
 
     def __init__(self, access_control_allow_internal=None, access_control_allow_external=None, domain=None, app_name=None, id=None):
-        """DeleteOttChannelInfoRequest
+        r"""DeleteOttChannelInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class DeleteOttChannelInfoRequest:
 
     @property
     def access_control_allow_internal(self):
-        """Gets the access_control_allow_internal of this DeleteOttChannelInfoRequest.
+        r"""Gets the access_control_allow_internal of this DeleteOttChannelInfoRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -79,7 +79,7 @@ class DeleteOttChannelInfoRequest:
 
     @access_control_allow_internal.setter
     def access_control_allow_internal(self, access_control_allow_internal):
-        """Sets the access_control_allow_internal of this DeleteOttChannelInfoRequest.
+        r"""Sets the access_control_allow_internal of this DeleteOttChannelInfoRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -90,7 +90,7 @@ class DeleteOttChannelInfoRequest:
 
     @property
     def access_control_allow_external(self):
-        """Gets the access_control_allow_external of this DeleteOttChannelInfoRequest.
+        r"""Gets the access_control_allow_external of this DeleteOttChannelInfoRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -101,7 +101,7 @@ class DeleteOttChannelInfoRequest:
 
     @access_control_allow_external.setter
     def access_control_allow_external(self, access_control_allow_external):
-        """Sets the access_control_allow_external of this DeleteOttChannelInfoRequest.
+        r"""Sets the access_control_allow_external of this DeleteOttChannelInfoRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -112,7 +112,7 @@ class DeleteOttChannelInfoRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this DeleteOttChannelInfoRequest.
+        r"""Gets the domain of this DeleteOttChannelInfoRequest.
 
         推流域名
 
@@ -123,7 +123,7 @@ class DeleteOttChannelInfoRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this DeleteOttChannelInfoRequest.
+        r"""Sets the domain of this DeleteOttChannelInfoRequest.
 
         推流域名
 
@@ -134,7 +134,7 @@ class DeleteOttChannelInfoRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this DeleteOttChannelInfoRequest.
+        r"""Gets the app_name of this DeleteOttChannelInfoRequest.
 
         组名或应用名
 
@@ -145,7 +145,7 @@ class DeleteOttChannelInfoRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this DeleteOttChannelInfoRequest.
+        r"""Sets the app_name of this DeleteOttChannelInfoRequest.
 
         组名或应用名
 
@@ -156,7 +156,7 @@ class DeleteOttChannelInfoRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteOttChannelInfoRequest.
+        r"""Gets the id of this DeleteOttChannelInfoRequest.
 
         频道ID
 
@@ -167,7 +167,7 @@ class DeleteOttChannelInfoRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteOttChannelInfoRequest.
+        r"""Sets the id of this DeleteOttChannelInfoRequest.
 
         频道ID
 

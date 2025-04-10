@@ -41,7 +41,7 @@ class GlanceCreateImageMetadataRequestBody:
     }
 
     def __init__(self, os_version=None, container_format=None, disk_format=None, min_disk=None, min_ram=None, name=None, protected=None, tags=None, visibility=None):
-        """GlanceCreateImageMetadataRequestBody
+        r"""GlanceCreateImageMetadataRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @property
     def os_version(self):
-        """Gets the os_version of this GlanceCreateImageMetadataRequestBody.
+        r"""Gets the os_version of this GlanceCreateImageMetadataRequestBody.
 
         镜像的操作系统具体版本,如果未指定__os_version，则默认设置为Other Linux(64 bit)，不保证该镜像能成功创建虚拟机以及通过该镜像创建的虚拟机能够正常使用。
 
@@ -110,7 +110,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this GlanceCreateImageMetadataRequestBody.
+        r"""Sets the os_version of this GlanceCreateImageMetadataRequestBody.
 
         镜像的操作系统具体版本,如果未指定__os_version，则默认设置为Other Linux(64 bit)，不保证该镜像能成功创建虚拟机以及通过该镜像创建的虚拟机能够正常使用。
 
@@ -121,7 +121,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @property
     def container_format(self):
-        """Gets the container_format of this GlanceCreateImageMetadataRequestBody.
+        r"""Gets the container_format of this GlanceCreateImageMetadataRequestBody.
 
         容器格式。默认取值为bare。
 
@@ -132,7 +132,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @container_format.setter
     def container_format(self, container_format):
-        """Sets the container_format of this GlanceCreateImageMetadataRequestBody.
+        r"""Sets the container_format of this GlanceCreateImageMetadataRequestBody.
 
         容器格式。默认取值为bare。
 
@@ -143,7 +143,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @property
     def disk_format(self):
-        """Gets the disk_format of this GlanceCreateImageMetadataRequestBody.
+        r"""Gets the disk_format of this GlanceCreateImageMetadataRequestBody.
 
         镜像文件格式。目前支持vhd，zvhd、zvhd2、raw，qcow2。默认取值为vhd
 
@@ -154,7 +154,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @disk_format.setter
     def disk_format(self, disk_format):
-        """Sets the disk_format of this GlanceCreateImageMetadataRequestBody.
+        r"""Sets the disk_format of this GlanceCreateImageMetadataRequestBody.
 
         镜像文件格式。目前支持vhd，zvhd、zvhd2、raw，qcow2。默认取值为vhd
 
@@ -165,7 +165,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @property
     def min_disk(self):
-        """Gets the min_disk of this GlanceCreateImageMetadataRequestBody.
+        r"""Gets the min_disk of this GlanceCreateImageMetadataRequestBody.
 
         镜像运行需要的最小磁盘，单位为GB 。必须大于镜像系统盘容量，否则创建云主机云服务器可能失败。
 
@@ -176,7 +176,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @min_disk.setter
     def min_disk(self, min_disk):
-        """Sets the min_disk of this GlanceCreateImageMetadataRequestBody.
+        r"""Sets the min_disk of this GlanceCreateImageMetadataRequestBody.
 
         镜像运行需要的最小磁盘，单位为GB 。必须大于镜像系统盘容量，否则创建云主机云服务器可能失败。
 
@@ -187,7 +187,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @property
     def min_ram(self):
-        """Gets the min_ram of this GlanceCreateImageMetadataRequestBody.
+        r"""Gets the min_ram of this GlanceCreateImageMetadataRequestBody.
 
         镜像运行需要的最小内存，单位为MB。参数取值依据云主机云服务器的规格限制。默认取值为0。
 
@@ -198,7 +198,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @min_ram.setter
     def min_ram(self, min_ram):
-        """Sets the min_ram of this GlanceCreateImageMetadataRequestBody.
+        r"""Sets the min_ram of this GlanceCreateImageMetadataRequestBody.
 
         镜像运行需要的最小内存，单位为MB。参数取值依据云主机云服务器的规格限制。默认取值为0。
 
@@ -209,7 +209,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this GlanceCreateImageMetadataRequestBody.
+        r"""Gets the name of this GlanceCreateImageMetadataRequestBody.
 
         镜像名称，如果未指定name的取值，则默认为空，但是使用该镜像创建虚拟机会失败。名称的长度为1-255位。
 
@@ -220,7 +220,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GlanceCreateImageMetadataRequestBody.
+        r"""Sets the name of this GlanceCreateImageMetadataRequestBody.
 
         镜像名称，如果未指定name的取值，则默认为空，但是使用该镜像创建虚拟机会失败。名称的长度为1-255位。
 
@@ -231,7 +231,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @property
     def protected(self):
-        """Gets the protected of this GlanceCreateImageMetadataRequestBody.
+        r"""Gets the protected of this GlanceCreateImageMetadataRequestBody.
 
         镜像是否被保护，保护后的镜像不可删除。默认取值为false。
 
@@ -242,7 +242,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @protected.setter
     def protected(self, protected):
-        """Sets the protected of this GlanceCreateImageMetadataRequestBody.
+        r"""Sets the protected of this GlanceCreateImageMetadataRequestBody.
 
         镜像是否被保护，保护后的镜像不可删除。默认取值为false。
 
@@ -253,7 +253,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this GlanceCreateImageMetadataRequestBody.
+        r"""Gets the tags of this GlanceCreateImageMetadataRequestBody.
 
         镜像标签列表。长度为1-255位。默认为空。
 
@@ -264,7 +264,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this GlanceCreateImageMetadataRequestBody.
+        r"""Sets the tags of this GlanceCreateImageMetadataRequestBody.
 
         镜像标签列表。长度为1-255位。默认为空。
 
@@ -275,7 +275,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @property
     def visibility(self):
-        """Gets the visibility of this GlanceCreateImageMetadataRequestBody.
+        r"""Gets the visibility of this GlanceCreateImageMetadataRequestBody.
 
         其他租户是否可见。默认取值为private。创建镜像元数据时，visibility取值只能为private。
 
@@ -286,7 +286,7 @@ class GlanceCreateImageMetadataRequestBody:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this GlanceCreateImageMetadataRequestBody.
+        r"""Sets the visibility of this GlanceCreateImageMetadataRequestBody.
 
         其他租户是否可见。默认取值为private。创建镜像元数据时，visibility取值只能为private。
 

@@ -31,7 +31,7 @@ class EmChildNodeV2:
     }
 
     def __init__(self, relation_id=None, id=None, name=None, child_nodes=None):
-        """EmChildNodeV2
+        r"""EmChildNodeV2
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class EmChildNodeV2:
 
     @property
     def relation_id(self):
-        """Gets the relation_id of this EmChildNodeV2.
+        r"""Gets the relation_id of this EmChildNodeV2.
 
         实体关系ID。
 
@@ -75,7 +75,7 @@ class EmChildNodeV2:
 
     @relation_id.setter
     def relation_id(self, relation_id):
-        """Sets the relation_id of this EmChildNodeV2.
+        r"""Sets the relation_id of this EmChildNodeV2.
 
         实体关系ID。
 
@@ -86,7 +86,7 @@ class EmChildNodeV2:
 
     @property
     def id(self):
-        """Gets the id of this EmChildNodeV2.
+        r"""Gets the id of this EmChildNodeV2.
 
         节点ID（即组织单元的Party ID）。
 
@@ -97,7 +97,7 @@ class EmChildNodeV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EmChildNodeV2.
+        r"""Sets the id of this EmChildNodeV2.
 
         节点ID（即组织单元的Party ID）。
 
@@ -108,7 +108,7 @@ class EmChildNodeV2:
 
     @property
     def name(self):
-        """Gets the name of this EmChildNodeV2.
+        r"""Gets the name of this EmChildNodeV2.
 
         节点名称。
 
@@ -119,7 +119,7 @@ class EmChildNodeV2:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EmChildNodeV2.
+        r"""Sets the name of this EmChildNodeV2.
 
         节点名称。
 
@@ -130,7 +130,7 @@ class EmChildNodeV2:
 
     @property
     def child_nodes(self):
-        """Gets the child_nodes of this EmChildNodeV2.
+        r"""Gets the child_nodes of this EmChildNodeV2.
 
         子节点列表。
 
@@ -141,7 +141,7 @@ class EmChildNodeV2:
 
     @child_nodes.setter
     def child_nodes(self, child_nodes):
-        """Sets the child_nodes of this EmChildNodeV2.
+        r"""Sets the child_nodes of this EmChildNodeV2.
 
         子节点列表。
 

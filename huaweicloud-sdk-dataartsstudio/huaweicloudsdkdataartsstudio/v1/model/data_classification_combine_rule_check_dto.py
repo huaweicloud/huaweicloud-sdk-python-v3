@@ -31,7 +31,7 @@ class DataClassificationCombineRuleCheckDTO:
     }
 
     def __init__(self, expression=None, combine_input_data=None, combine=None, single_rule_check_list=None):
-        """DataClassificationCombineRuleCheckDTO
+        r"""DataClassificationCombineRuleCheckDTO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DataClassificationCombineRuleCheckDTO:
 
     @property
     def expression(self):
-        """Gets the expression of this DataClassificationCombineRuleCheckDTO.
+        r"""Gets the expression of this DataClassificationCombineRuleCheckDTO.
 
         条件表达式
 
@@ -75,7 +75,7 @@ class DataClassificationCombineRuleCheckDTO:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this DataClassificationCombineRuleCheckDTO.
+        r"""Sets the expression of this DataClassificationCombineRuleCheckDTO.
 
         条件表达式
 
@@ -86,7 +86,7 @@ class DataClassificationCombineRuleCheckDTO:
 
     @property
     def combine_input_data(self):
-        """Gets the combine_input_data of this DataClassificationCombineRuleCheckDTO.
+        r"""Gets the combine_input_data of this DataClassificationCombineRuleCheckDTO.
 
         :return: The combine_input_data of this DataClassificationCombineRuleCheckDTO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataClassificationCombineRuleCheckDTOCombineInputData`
@@ -95,7 +95,7 @@ class DataClassificationCombineRuleCheckDTO:
 
     @combine_input_data.setter
     def combine_input_data(self, combine_input_data):
-        """Sets the combine_input_data of this DataClassificationCombineRuleCheckDTO.
+        r"""Sets the combine_input_data of this DataClassificationCombineRuleCheckDTO.
 
         :param combine_input_data: The combine_input_data of this DataClassificationCombineRuleCheckDTO.
         :type combine_input_data: :class:`huaweicloudsdkdataartsstudio.v1.DataClassificationCombineRuleCheckDTOCombineInputData`
@@ -104,7 +104,7 @@ class DataClassificationCombineRuleCheckDTO:
 
     @property
     def combine(self):
-        """Gets the combine of this DataClassificationCombineRuleCheckDTO.
+        r"""Gets the combine of this DataClassificationCombineRuleCheckDTO.
 
         分类ID
 
@@ -115,7 +115,7 @@ class DataClassificationCombineRuleCheckDTO:
 
     @combine.setter
     def combine(self, combine):
-        """Sets the combine of this DataClassificationCombineRuleCheckDTO.
+        r"""Sets the combine of this DataClassificationCombineRuleCheckDTO.
 
         分类ID
 
@@ -126,7 +126,7 @@ class DataClassificationCombineRuleCheckDTO:
 
     @property
     def single_rule_check_list(self):
-        """Gets the single_rule_check_list of this DataClassificationCombineRuleCheckDTO.
+        r"""Gets the single_rule_check_list of this DataClassificationCombineRuleCheckDTO.
 
         条件单规则列表
 
@@ -137,7 +137,7 @@ class DataClassificationCombineRuleCheckDTO:
 
     @single_rule_check_list.setter
     def single_rule_check_list(self, single_rule_check_list):
-        """Sets the single_rule_check_list of this DataClassificationCombineRuleCheckDTO.
+        r"""Sets the single_rule_check_list of this DataClassificationCombineRuleCheckDTO.
 
         条件单规则列表
 

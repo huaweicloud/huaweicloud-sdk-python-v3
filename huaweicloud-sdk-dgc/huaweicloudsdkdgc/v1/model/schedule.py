@@ -29,7 +29,7 @@ class Schedule:
     }
 
     def __init__(self, type=None, cron=None, event=None):
-        """Schedule
+        r"""Schedule
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Schedule:
 
     @property
     def type(self):
-        """Gets the type of this Schedule.
+        r"""Gets the type of this Schedule.
 
         调度类型 - EXECUTE_ONCE: 作业立即运行，只运行一次。 - CRON: 作业按指定频率周期执行。 - EVENT:  根据事件触发执行。
 
@@ -68,7 +68,7 @@ class Schedule:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Schedule.
+        r"""Sets the type of this Schedule.
 
         调度类型 - EXECUTE_ONCE: 作业立即运行，只运行一次。 - CRON: 作业按指定频率周期执行。 - EVENT:  根据事件触发执行。
 
@@ -79,7 +79,7 @@ class Schedule:
 
     @property
     def cron(self):
-        """Gets the cron of this Schedule.
+        r"""Gets the cron of this Schedule.
 
         :return: The cron of this Schedule.
         :rtype: :class:`huaweicloudsdkdgc.v1.Cron`
@@ -88,7 +88,7 @@ class Schedule:
 
     @cron.setter
     def cron(self, cron):
-        """Sets the cron of this Schedule.
+        r"""Sets the cron of this Schedule.
 
         :param cron: The cron of this Schedule.
         :type cron: :class:`huaweicloudsdkdgc.v1.Cron`
@@ -97,7 +97,7 @@ class Schedule:
 
     @property
     def event(self):
-        """Gets the event of this Schedule.
+        r"""Gets the event of this Schedule.
 
         :return: The event of this Schedule.
         :rtype: :class:`huaweicloudsdkdgc.v1.Event`
@@ -106,7 +106,7 @@ class Schedule:
 
     @event.setter
     def event(self, event):
-        """Sets the event of this Schedule.
+        r"""Sets the event of this Schedule.
 
         :param event: The event of this Schedule.
         :type event: :class:`huaweicloudsdkdgc.v1.Event`

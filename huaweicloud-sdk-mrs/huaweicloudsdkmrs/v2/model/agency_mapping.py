@@ -31,7 +31,7 @@ class AgencyMapping:
     }
 
     def __init__(self, agency=None, identifier_type=None, identifiers=None, agency_id=None):
-        """AgencyMapping
+        r"""AgencyMapping
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class AgencyMapping:
 
     @property
     def agency(self):
-        """Gets the agency of this AgencyMapping.
+        r"""Gets the agency of this AgencyMapping.
 
         该映射绑定的IAM委托名称。
 
@@ -71,7 +71,7 @@ class AgencyMapping:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this AgencyMapping.
+        r"""Sets the agency of this AgencyMapping.
 
         该映射绑定的IAM委托名称。
 
@@ -82,7 +82,7 @@ class AgencyMapping:
 
     @property
     def identifier_type(self):
-        """Gets the identifier_type of this AgencyMapping.
+        r"""Gets the identifier_type of this AgencyMapping.
 
         委托类型，分为“User”和“Group”两种。 - User表示该映射关系为针对用户的映射，identifiers中填写用户名称列表。 - Group表示该映射关系为针对用户组的映射，identifiers中填写用户组名称列表。
 
@@ -93,7 +93,7 @@ class AgencyMapping:
 
     @identifier_type.setter
     def identifier_type(self, identifier_type):
-        """Sets the identifier_type of this AgencyMapping.
+        r"""Sets the identifier_type of this AgencyMapping.
 
         委托类型，分为“User”和“Group”两种。 - User表示该映射关系为针对用户的映射，identifiers中填写用户名称列表。 - Group表示该映射关系为针对用户组的映射，identifiers中填写用户组名称列表。
 
@@ -104,7 +104,7 @@ class AgencyMapping:
 
     @property
     def identifiers(self):
-        """Gets the identifiers of this AgencyMapping.
+        r"""Gets the identifiers of this AgencyMapping.
 
         IAM委托映射的用户（组）名称列表。请前往IAM，单击“用户（组）”按钮，获取用户（组）名称列表。
 
@@ -115,7 +115,7 @@ class AgencyMapping:
 
     @identifiers.setter
     def identifiers(self, identifiers):
-        """Sets the identifiers of this AgencyMapping.
+        r"""Sets the identifiers of this AgencyMapping.
 
         IAM委托映射的用户（组）名称列表。请前往IAM，单击“用户（组）”按钮，获取用户（组）名称列表。
 
@@ -126,7 +126,7 @@ class AgencyMapping:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this AgencyMapping.
+        r"""Gets the agency_id of this AgencyMapping.
 
         该映射关系绑定的委托的的唯一标识码。请前往IAM，单击“委托”按钮，进入委托页面，将鼠标放置委托名称上，在弹窗中获取委托唯一标识码。
 
@@ -137,7 +137,7 @@ class AgencyMapping:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this AgencyMapping.
+        r"""Sets the agency_id of this AgencyMapping.
 
         该映射关系绑定的委托的的唯一标识码。请前往IAM，单击“委托”按钮，进入委托页面，将鼠标放置委托名称上，在弹窗中获取委托唯一标识码。
 

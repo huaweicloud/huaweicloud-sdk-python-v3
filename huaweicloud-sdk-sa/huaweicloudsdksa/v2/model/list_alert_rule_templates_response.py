@@ -30,7 +30,7 @@ class ListAlertRuleTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, records=None, x_request_id=None):
-        """ListAlertRuleTemplatesResponse
+        r"""ListAlertRuleTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAlertRuleTemplatesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAlertRuleTemplatesResponse.
+        r"""Gets the count of this ListAlertRuleTemplatesResponse.
 
         total count
 
@@ -69,7 +69,7 @@ class ListAlertRuleTemplatesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAlertRuleTemplatesResponse.
+        r"""Sets the count of this ListAlertRuleTemplatesResponse.
 
         total count
 
@@ -80,7 +80,7 @@ class ListAlertRuleTemplatesResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListAlertRuleTemplatesResponse.
+        r"""Gets the records of this ListAlertRuleTemplatesResponse.
 
         templates
 
@@ -91,7 +91,7 @@ class ListAlertRuleTemplatesResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListAlertRuleTemplatesResponse.
+        r"""Sets the records of this ListAlertRuleTemplatesResponse.
 
         templates
 
@@ -102,7 +102,7 @@ class ListAlertRuleTemplatesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListAlertRuleTemplatesResponse.
+        r"""Gets the x_request_id of this ListAlertRuleTemplatesResponse.
 
         :return: The x_request_id of this ListAlertRuleTemplatesResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListAlertRuleTemplatesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListAlertRuleTemplatesResponse.
+        r"""Sets the x_request_id of this ListAlertRuleTemplatesResponse.
 
         :param x_request_id: The x_request_id of this ListAlertRuleTemplatesResponse.
         :type x_request_id: str

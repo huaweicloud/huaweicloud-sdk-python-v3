@@ -24,7 +24,7 @@ class HangUpClientsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """HangUpClientsResponse
+        r"""HangUpClientsResponse
 
         The model defined in huaweicloud sdk
 

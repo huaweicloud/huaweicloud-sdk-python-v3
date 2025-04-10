@@ -29,7 +29,7 @@ class EngineGroupInfo:
     }
 
     def __init__(self, id=None, name=None, version=None):
-        """EngineGroupInfo
+        r"""EngineGroupInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class EngineGroupInfo:
 
     @property
     def id(self):
-        """Gets the id of this EngineGroupInfo.
+        r"""Gets the id of this EngineGroupInfo.
 
         引擎id。
 
@@ -65,7 +65,7 @@ class EngineGroupInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EngineGroupInfo.
+        r"""Sets the id of this EngineGroupInfo.
 
         引擎id。
 
@@ -76,7 +76,7 @@ class EngineGroupInfo:
 
     @property
     def name(self):
-        """Gets the name of this EngineGroupInfo.
+        r"""Gets the name of this EngineGroupInfo.
 
         引擎名称。
 
@@ -87,7 +87,7 @@ class EngineGroupInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EngineGroupInfo.
+        r"""Sets the name of this EngineGroupInfo.
 
         引擎名称。
 
@@ -98,7 +98,7 @@ class EngineGroupInfo:
 
     @property
     def version(self):
-        """Gets the version of this EngineGroupInfo.
+        r"""Gets the version of this EngineGroupInfo.
 
         引擎版本。
 
@@ -109,7 +109,7 @@ class EngineGroupInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this EngineGroupInfo.
+        r"""Sets the version of this EngineGroupInfo.
 
         引擎版本。
 

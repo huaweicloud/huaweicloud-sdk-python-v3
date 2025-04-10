@@ -47,7 +47,7 @@ class DatabaseUserInfoReq:
     }
 
     def __init__(self, login=None, createrole=None, createdb=None, systemadmin=None, auditadmin=None, inherit=None, useft=None, conn_limit=None, replication=None, valid_begin=None, valid_until=None, lock=None):
-        """DatabaseUserInfoReq
+        r"""DatabaseUserInfoReq
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class DatabaseUserInfoReq:
 
     @property
     def login(self):
-        """Gets the login of this DatabaseUserInfoReq.
+        r"""Gets the login of this DatabaseUserInfoReq.
 
         是否可以登陆
 
@@ -131,7 +131,7 @@ class DatabaseUserInfoReq:
 
     @login.setter
     def login(self, login):
-        """Sets the login of this DatabaseUserInfoReq.
+        r"""Sets the login of this DatabaseUserInfoReq.
 
         是否可以登陆
 
@@ -142,7 +142,7 @@ class DatabaseUserInfoReq:
 
     @property
     def createrole(self):
-        """Gets the createrole of this DatabaseUserInfoReq.
+        r"""Gets the createrole of this DatabaseUserInfoReq.
 
         创建角色权限
 
@@ -153,7 +153,7 @@ class DatabaseUserInfoReq:
 
     @createrole.setter
     def createrole(self, createrole):
-        """Sets the createrole of this DatabaseUserInfoReq.
+        r"""Sets the createrole of this DatabaseUserInfoReq.
 
         创建角色权限
 
@@ -164,7 +164,7 @@ class DatabaseUserInfoReq:
 
     @property
     def createdb(self):
-        """Gets the createdb of this DatabaseUserInfoReq.
+        r"""Gets the createdb of this DatabaseUserInfoReq.
 
         创建数据库权限
 
@@ -175,7 +175,7 @@ class DatabaseUserInfoReq:
 
     @createdb.setter
     def createdb(self, createdb):
-        """Sets the createdb of this DatabaseUserInfoReq.
+        r"""Sets the createdb of this DatabaseUserInfoReq.
 
         创建数据库权限
 
@@ -186,7 +186,7 @@ class DatabaseUserInfoReq:
 
     @property
     def systemadmin(self):
-        """Gets the systemadmin of this DatabaseUserInfoReq.
+        r"""Gets the systemadmin of this DatabaseUserInfoReq.
 
         系统管理员
 
@@ -197,7 +197,7 @@ class DatabaseUserInfoReq:
 
     @systemadmin.setter
     def systemadmin(self, systemadmin):
-        """Sets the systemadmin of this DatabaseUserInfoReq.
+        r"""Sets the systemadmin of this DatabaseUserInfoReq.
 
         系统管理员
 
@@ -208,7 +208,7 @@ class DatabaseUserInfoReq:
 
     @property
     def auditadmin(self):
-        """Gets the auditadmin of this DatabaseUserInfoReq.
+        r"""Gets the auditadmin of this DatabaseUserInfoReq.
 
         审计管理员
 
@@ -219,7 +219,7 @@ class DatabaseUserInfoReq:
 
     @auditadmin.setter
     def auditadmin(self, auditadmin):
-        """Sets the auditadmin of this DatabaseUserInfoReq.
+        r"""Sets the auditadmin of this DatabaseUserInfoReq.
 
         审计管理员
 
@@ -230,7 +230,7 @@ class DatabaseUserInfoReq:
 
     @property
     def inherit(self):
-        """Gets the inherit of this DatabaseUserInfoReq.
+        r"""Gets the inherit of this DatabaseUserInfoReq.
 
         继承所在组权限
 
@@ -241,7 +241,7 @@ class DatabaseUserInfoReq:
 
     @inherit.setter
     def inherit(self, inherit):
-        """Sets the inherit of this DatabaseUserInfoReq.
+        r"""Sets the inherit of this DatabaseUserInfoReq.
 
         继承所在组权限
 
@@ -252,7 +252,7 @@ class DatabaseUserInfoReq:
 
     @property
     def useft(self):
-        """Gets the useft of this DatabaseUserInfoReq.
+        r"""Gets the useft of this DatabaseUserInfoReq.
 
         访问外表权限
 
@@ -263,7 +263,7 @@ class DatabaseUserInfoReq:
 
     @useft.setter
     def useft(self, useft):
-        """Sets the useft of this DatabaseUserInfoReq.
+        r"""Sets the useft of this DatabaseUserInfoReq.
 
         访问外表权限
 
@@ -274,7 +274,7 @@ class DatabaseUserInfoReq:
 
     @property
     def conn_limit(self):
-        """Gets the conn_limit of this DatabaseUserInfoReq.
+        r"""Gets the conn_limit of this DatabaseUserInfoReq.
 
         连接数限制
 
@@ -285,7 +285,7 @@ class DatabaseUserInfoReq:
 
     @conn_limit.setter
     def conn_limit(self, conn_limit):
-        """Sets the conn_limit of this DatabaseUserInfoReq.
+        r"""Sets the conn_limit of this DatabaseUserInfoReq.
 
         连接数限制
 
@@ -296,7 +296,7 @@ class DatabaseUserInfoReq:
 
     @property
     def replication(self):
-        """Gets the replication of this DatabaseUserInfoReq.
+        r"""Gets the replication of this DatabaseUserInfoReq.
 
         是否允许流复制
 
@@ -307,7 +307,7 @@ class DatabaseUserInfoReq:
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this DatabaseUserInfoReq.
+        r"""Sets the replication of this DatabaseUserInfoReq.
 
         是否允许流复制
 
@@ -318,7 +318,7 @@ class DatabaseUserInfoReq:
 
     @property
     def valid_begin(self):
-        """Gets the valid_begin of this DatabaseUserInfoReq.
+        r"""Gets the valid_begin of this DatabaseUserInfoReq.
 
         角色生效时间 yyyy-MM-ddTHH:mm:ssZ
 
@@ -329,7 +329,7 @@ class DatabaseUserInfoReq:
 
     @valid_begin.setter
     def valid_begin(self, valid_begin):
-        """Sets the valid_begin of this DatabaseUserInfoReq.
+        r"""Sets the valid_begin of this DatabaseUserInfoReq.
 
         角色生效时间 yyyy-MM-ddTHH:mm:ssZ
 
@@ -340,7 +340,7 @@ class DatabaseUserInfoReq:
 
     @property
     def valid_until(self):
-        """Gets the valid_until of this DatabaseUserInfoReq.
+        r"""Gets the valid_until of this DatabaseUserInfoReq.
 
         角色过期时间 yyyy-MM-ddTHH:mm:ssZ
 
@@ -351,7 +351,7 @@ class DatabaseUserInfoReq:
 
     @valid_until.setter
     def valid_until(self, valid_until):
-        """Sets the valid_until of this DatabaseUserInfoReq.
+        r"""Sets the valid_until of this DatabaseUserInfoReq.
 
         角色过期时间 yyyy-MM-ddTHH:mm:ssZ
 
@@ -362,7 +362,7 @@ class DatabaseUserInfoReq:
 
     @property
     def lock(self):
-        """Gets the lock of this DatabaseUserInfoReq.
+        r"""Gets the lock of this DatabaseUserInfoReq.
 
         是否锁定
 
@@ -373,7 +373,7 @@ class DatabaseUserInfoReq:
 
     @lock.setter
     def lock(self, lock):
-        """Sets the lock of this DatabaseUserInfoReq.
+        r"""Sets the lock of this DatabaseUserInfoReq.
 
         是否锁定
 

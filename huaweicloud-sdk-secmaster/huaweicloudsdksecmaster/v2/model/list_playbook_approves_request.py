@@ -31,7 +31,7 @@ class ListPlaybookApprovesRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, resource_id=None, approve_type=None):
-        """ListPlaybookApprovesRequest
+        r"""ListPlaybookApprovesRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListPlaybookApprovesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListPlaybookApprovesRequest.
+        r"""Gets the project_id of this ListPlaybookApprovesRequest.
 
         项目ID
 
@@ -73,7 +73,7 @@ class ListPlaybookApprovesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListPlaybookApprovesRequest.
+        r"""Sets the project_id of this ListPlaybookApprovesRequest.
 
         项目ID
 
@@ -84,7 +84,7 @@ class ListPlaybookApprovesRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListPlaybookApprovesRequest.
+        r"""Gets the workspace_id of this ListPlaybookApprovesRequest.
 
         工作空间ID
 
@@ -95,7 +95,7 @@ class ListPlaybookApprovesRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListPlaybookApprovesRequest.
+        r"""Sets the workspace_id of this ListPlaybookApprovesRequest.
 
         工作空间ID
 
@@ -106,7 +106,7 @@ class ListPlaybookApprovesRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListPlaybookApprovesRequest.
+        r"""Gets the resource_id of this ListPlaybookApprovesRequest.
 
         资源ID
 
@@ -117,7 +117,7 @@ class ListPlaybookApprovesRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListPlaybookApprovesRequest.
+        r"""Sets the resource_id of this ListPlaybookApprovesRequest.
 
         资源ID
 
@@ -128,7 +128,7 @@ class ListPlaybookApprovesRequest:
 
     @property
     def approve_type(self):
-        """Gets the approve_type of this ListPlaybookApprovesRequest.
+        r"""Gets the approve_type of this ListPlaybookApprovesRequest.
 
         审核类型。（PLAYBOOK-剧本, AOP_WORKFLOW--流程)
 
@@ -139,7 +139,7 @@ class ListPlaybookApprovesRequest:
 
     @approve_type.setter
     def approve_type(self, approve_type):
-        """Sets the approve_type of this ListPlaybookApprovesRequest.
+        r"""Sets the approve_type of this ListPlaybookApprovesRequest.
 
         审核类型。（PLAYBOOK-剧本, AOP_WORKFLOW--流程)
 

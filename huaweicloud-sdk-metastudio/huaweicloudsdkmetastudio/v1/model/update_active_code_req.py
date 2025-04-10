@@ -25,7 +25,7 @@ class UpdateActiveCodeReq:
     }
 
     def __init__(self, valid_period=None):
-        """UpdateActiveCodeReq
+        r"""UpdateActiveCodeReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateActiveCodeReq:
 
     @property
     def valid_period(self):
-        """Gets the valid_period of this UpdateActiveCodeReq.
+        r"""Gets the valid_period of this UpdateActiveCodeReq.
 
         有效天数（0表示长期有效）。
 
@@ -54,7 +54,7 @@ class UpdateActiveCodeReq:
 
     @valid_period.setter
     def valid_period(self, valid_period):
-        """Sets the valid_period of this UpdateActiveCodeReq.
+        r"""Sets the valid_period of this UpdateActiveCodeReq.
 
         有效天数（0表示长期有效）。
 

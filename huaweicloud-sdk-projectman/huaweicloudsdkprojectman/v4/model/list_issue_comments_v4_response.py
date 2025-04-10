@@ -28,7 +28,7 @@ class ListIssueCommentsV4Response(SdkResponse):
     }
 
     def __init__(self, total=None, comments=None):
-        """ListIssueCommentsV4Response
+        r"""ListIssueCommentsV4Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListIssueCommentsV4Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListIssueCommentsV4Response.
+        r"""Gets the total of this ListIssueCommentsV4Response.
 
         评论总数
 
@@ -62,7 +62,7 @@ class ListIssueCommentsV4Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListIssueCommentsV4Response.
+        r"""Sets the total of this ListIssueCommentsV4Response.
 
         评论总数
 
@@ -73,7 +73,7 @@ class ListIssueCommentsV4Response(SdkResponse):
 
     @property
     def comments(self):
-        """Gets the comments of this ListIssueCommentsV4Response.
+        r"""Gets the comments of this ListIssueCommentsV4Response.
 
         品论列表
 
@@ -84,7 +84,7 @@ class ListIssueCommentsV4Response(SdkResponse):
 
     @comments.setter
     def comments(self, comments):
-        """Sets the comments of this ListIssueCommentsV4Response.
+        r"""Sets the comments of this ListIssueCommentsV4Response.
 
         品论列表
 

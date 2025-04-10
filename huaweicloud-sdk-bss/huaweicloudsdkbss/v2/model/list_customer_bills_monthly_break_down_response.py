@@ -30,7 +30,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
     }
 
     def __init__(self, currency=None, total_count=None, details=None):
-        """ListCustomerBillsMonthlyBreakDownResponse
+        r"""ListCustomerBillsMonthlyBreakDownResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ListCustomerBillsMonthlyBreakDownResponse.
+        r"""Gets the currency of this ListCustomerBillsMonthlyBreakDownResponse.
 
         货币单位代码： CNY：人民币
 
@@ -69,7 +69,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ListCustomerBillsMonthlyBreakDownResponse.
+        r"""Sets the currency of this ListCustomerBillsMonthlyBreakDownResponse.
 
         货币单位代码： CNY：人民币
 
@@ -80,7 +80,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListCustomerBillsMonthlyBreakDownResponse.
+        r"""Gets the total_count of this ListCustomerBillsMonthlyBreakDownResponse.
 
         结果集数量，只有成功才返回这个参数。
 
@@ -91,7 +91,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListCustomerBillsMonthlyBreakDownResponse.
+        r"""Sets the total_count of this ListCustomerBillsMonthlyBreakDownResponse.
 
         结果集数量，只有成功才返回这个参数。
 
@@ -102,7 +102,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
 
     @property
     def details(self):
-        """Gets the details of this ListCustomerBillsMonthlyBreakDownResponse.
+        r"""Gets the details of this ListCustomerBillsMonthlyBreakDownResponse.
 
         分摊成本记录数据。 具体请参见表3。
 
@@ -113,7 +113,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
 
     @details.setter
     def details(self, details):
-        """Sets the details of this ListCustomerBillsMonthlyBreakDownResponse.
+        r"""Sets the details of this ListCustomerBillsMonthlyBreakDownResponse.
 
         分摊成本记录数据。 具体请参见表3。
 

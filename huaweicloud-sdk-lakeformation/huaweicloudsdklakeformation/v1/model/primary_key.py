@@ -41,7 +41,7 @@ class PrimaryKey:
     }
 
     def __init__(self, catalog_name=None, column_name=None, database_name=None, table_name=None, primary_key_name=None, enable_constraint=None, key_sequence=None, rely_constraint=None, validate_constraint=None):
-        """PrimaryKey
+        r"""PrimaryKey
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class PrimaryKey:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this PrimaryKey.
+        r"""Gets the catalog_name of this PrimaryKey.
 
         catalog名称
 
@@ -102,7 +102,7 @@ class PrimaryKey:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this PrimaryKey.
+        r"""Sets the catalog_name of this PrimaryKey.
 
         catalog名称
 
@@ -113,7 +113,7 @@ class PrimaryKey:
 
     @property
     def column_name(self):
-        """Gets the column_name of this PrimaryKey.
+        r"""Gets the column_name of this PrimaryKey.
 
         列名称
 
@@ -124,7 +124,7 @@ class PrimaryKey:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this PrimaryKey.
+        r"""Sets the column_name of this PrimaryKey.
 
         列名称
 
@@ -135,7 +135,7 @@ class PrimaryKey:
 
     @property
     def database_name(self):
-        """Gets the database_name of this PrimaryKey.
+        r"""Gets the database_name of this PrimaryKey.
 
         数据库名称
 
@@ -146,7 +146,7 @@ class PrimaryKey:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this PrimaryKey.
+        r"""Sets the database_name of this PrimaryKey.
 
         数据库名称
 
@@ -157,7 +157,7 @@ class PrimaryKey:
 
     @property
     def table_name(self):
-        """Gets the table_name of this PrimaryKey.
+        r"""Gets the table_name of this PrimaryKey.
 
         表名字
 
@@ -168,7 +168,7 @@ class PrimaryKey:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this PrimaryKey.
+        r"""Sets the table_name of this PrimaryKey.
 
         表名字
 
@@ -179,7 +179,7 @@ class PrimaryKey:
 
     @property
     def primary_key_name(self):
-        """Gets the primary_key_name of this PrimaryKey.
+        r"""Gets the primary_key_name of this PrimaryKey.
 
         主键名称
 
@@ -190,7 +190,7 @@ class PrimaryKey:
 
     @primary_key_name.setter
     def primary_key_name(self, primary_key_name):
-        """Sets the primary_key_name of this PrimaryKey.
+        r"""Sets the primary_key_name of this PrimaryKey.
 
         主键名称
 
@@ -201,7 +201,7 @@ class PrimaryKey:
 
     @property
     def enable_constraint(self):
-        """Gets the enable_constraint of this PrimaryKey.
+        r"""Gets the enable_constraint of this PrimaryKey.
 
         是否启用主键
 
@@ -212,7 +212,7 @@ class PrimaryKey:
 
     @enable_constraint.setter
     def enable_constraint(self, enable_constraint):
-        """Sets the enable_constraint of this PrimaryKey.
+        r"""Sets the enable_constraint of this PrimaryKey.
 
         是否启用主键
 
@@ -223,7 +223,7 @@ class PrimaryKey:
 
     @property
     def key_sequence(self):
-        """Gets the key_sequence of this PrimaryKey.
+        r"""Gets the key_sequence of this PrimaryKey.
 
         主键排序顺序
 
@@ -234,7 +234,7 @@ class PrimaryKey:
 
     @key_sequence.setter
     def key_sequence(self, key_sequence):
-        """Sets the key_sequence of this PrimaryKey.
+        r"""Sets the key_sequence of this PrimaryKey.
 
         主键排序顺序
 
@@ -245,7 +245,7 @@ class PrimaryKey:
 
     @property
     def rely_constraint(self):
-        """Gets the rely_constraint of this PrimaryKey.
+        r"""Gets the rely_constraint of this PrimaryKey.
 
         是否被外键依赖
 
@@ -256,7 +256,7 @@ class PrimaryKey:
 
     @rely_constraint.setter
     def rely_constraint(self, rely_constraint):
-        """Sets the rely_constraint of this PrimaryKey.
+        r"""Sets the rely_constraint of this PrimaryKey.
 
         是否被外键依赖
 
@@ -267,7 +267,7 @@ class PrimaryKey:
 
     @property
     def validate_constraint(self):
-        """Gets the validate_constraint of this PrimaryKey.
+        r"""Gets the validate_constraint of this PrimaryKey.
 
         限制条件是否可用
 
@@ -278,7 +278,7 @@ class PrimaryKey:
 
     @validate_constraint.setter
     def validate_constraint(self, validate_constraint):
-        """Sets the validate_constraint of this PrimaryKey.
+        r"""Sets the validate_constraint of this PrimaryKey.
 
         限制条件是否可用
 

@@ -35,7 +35,7 @@ class SearchSharedPrincipalsReqBody:
     }
 
     def __init__(self, limit=None, marker=None, principals=None, resource_urn=None, resource_owner=None, resource_share_ids=None):
-        """SearchSharedPrincipalsReqBody
+        r"""SearchSharedPrincipalsReqBody
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class SearchSharedPrincipalsReqBody:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchSharedPrincipalsReqBody.
+        r"""Gets the limit of this SearchSharedPrincipalsReqBody.
 
         分页页面的最大值。
 
@@ -88,7 +88,7 @@ class SearchSharedPrincipalsReqBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchSharedPrincipalsReqBody.
+        r"""Sets the limit of this SearchSharedPrincipalsReqBody.
 
         分页页面的最大值。
 
@@ -99,7 +99,7 @@ class SearchSharedPrincipalsReqBody:
 
     @property
     def marker(self):
-        """Gets the marker of this SearchSharedPrincipalsReqBody.
+        r"""Gets the marker of this SearchSharedPrincipalsReqBody.
 
         页面标记。
 
@@ -110,7 +110,7 @@ class SearchSharedPrincipalsReqBody:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this SearchSharedPrincipalsReqBody.
+        r"""Sets the marker of this SearchSharedPrincipalsReqBody.
 
         页面标记。
 
@@ -121,7 +121,7 @@ class SearchSharedPrincipalsReqBody:
 
     @property
     def principals(self):
-        """Gets the principals of this SearchSharedPrincipalsReqBody.
+        r"""Gets the principals of this SearchSharedPrincipalsReqBody.
 
         指定资源使用者。
 
@@ -132,7 +132,7 @@ class SearchSharedPrincipalsReqBody:
 
     @principals.setter
     def principals(self, principals):
-        """Sets the principals of this SearchSharedPrincipalsReqBody.
+        r"""Sets the principals of this SearchSharedPrincipalsReqBody.
 
         指定资源使用者。
 
@@ -143,7 +143,7 @@ class SearchSharedPrincipalsReqBody:
 
     @property
     def resource_urn(self):
-        """Gets the resource_urn of this SearchSharedPrincipalsReqBody.
+        r"""Gets the resource_urn of this SearchSharedPrincipalsReqBody.
 
         指定资源的URN。
 
@@ -154,7 +154,7 @@ class SearchSharedPrincipalsReqBody:
 
     @resource_urn.setter
     def resource_urn(self, resource_urn):
-        """Sets the resource_urn of this SearchSharedPrincipalsReqBody.
+        r"""Sets the resource_urn of this SearchSharedPrincipalsReqBody.
 
         指定资源的URN。
 
@@ -165,7 +165,7 @@ class SearchSharedPrincipalsReqBody:
 
     @property
     def resource_owner(self):
-        """Gets the resource_owner of this SearchSharedPrincipalsReqBody.
+        r"""Gets the resource_owner of this SearchSharedPrincipalsReqBody.
 
         指定资源共享实例的所有者（self或者other-accounts）。
 
@@ -176,7 +176,7 @@ class SearchSharedPrincipalsReqBody:
 
     @resource_owner.setter
     def resource_owner(self, resource_owner):
-        """Sets the resource_owner of this SearchSharedPrincipalsReqBody.
+        r"""Sets the resource_owner of this SearchSharedPrincipalsReqBody.
 
         指定资源共享实例的所有者（self或者other-accounts）。
 
@@ -187,7 +187,7 @@ class SearchSharedPrincipalsReqBody:
 
     @property
     def resource_share_ids(self):
-        """Gets the resource_share_ids of this SearchSharedPrincipalsReqBody.
+        r"""Gets the resource_share_ids of this SearchSharedPrincipalsReqBody.
 
         指定资源共享实例的ID列表。
 
@@ -198,7 +198,7 @@ class SearchSharedPrincipalsReqBody:
 
     @resource_share_ids.setter
     def resource_share_ids(self, resource_share_ids):
-        """Sets the resource_share_ids of this SearchSharedPrincipalsReqBody.
+        r"""Sets the resource_share_ids of this SearchSharedPrincipalsReqBody.
 
         指定资源共享实例的ID列表。
 

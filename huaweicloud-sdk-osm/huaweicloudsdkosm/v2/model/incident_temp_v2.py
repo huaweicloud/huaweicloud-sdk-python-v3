@@ -29,7 +29,7 @@ class IncidentTempV2:
     }
 
     def __init__(self, incident_template_id=None, incident_template_name=None, incident_template_content=None):
-        """IncidentTempV2
+        r"""IncidentTempV2
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IncidentTempV2:
 
     @property
     def incident_template_id(self):
-        """Gets the incident_template_id of this IncidentTempV2.
+        r"""Gets the incident_template_id of this IncidentTempV2.
 
         模板id
 
@@ -68,7 +68,7 @@ class IncidentTempV2:
 
     @incident_template_id.setter
     def incident_template_id(self, incident_template_id):
-        """Sets the incident_template_id of this IncidentTempV2.
+        r"""Sets the incident_template_id of this IncidentTempV2.
 
         模板id
 
@@ -79,7 +79,7 @@ class IncidentTempV2:
 
     @property
     def incident_template_name(self):
-        """Gets the incident_template_name of this IncidentTempV2.
+        r"""Gets the incident_template_name of this IncidentTempV2.
 
         模板名称
 
@@ -90,7 +90,7 @@ class IncidentTempV2:
 
     @incident_template_name.setter
     def incident_template_name(self, incident_template_name):
-        """Sets the incident_template_name of this IncidentTempV2.
+        r"""Sets the incident_template_name of this IncidentTempV2.
 
         模板名称
 
@@ -101,7 +101,7 @@ class IncidentTempV2:
 
     @property
     def incident_template_content(self):
-        """Gets the incident_template_content of this IncidentTempV2.
+        r"""Gets the incident_template_content of this IncidentTempV2.
 
         模板内容
 
@@ -112,7 +112,7 @@ class IncidentTempV2:
 
     @incident_template_content.setter
     def incident_template_content(self, incident_template_content):
-        """Sets the incident_template_content of this IncidentTempV2.
+        r"""Sets the incident_template_content of this IncidentTempV2.
 
         模板内容
 

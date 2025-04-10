@@ -26,7 +26,7 @@ class DeleteMicroserviceRouteRuleResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """DeleteMicroserviceRouteRuleResponse
+        r"""DeleteMicroserviceRouteRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteMicroserviceRouteRuleResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteMicroserviceRouteRuleResponse.
+        r"""Gets the result of this DeleteMicroserviceRouteRuleResponse.
 
         结果信息
 
@@ -55,7 +55,7 @@ class DeleteMicroserviceRouteRuleResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteMicroserviceRouteRuleResponse.
+        r"""Sets the result of this DeleteMicroserviceRouteRuleResponse.
 
         结果信息
 

@@ -30,7 +30,7 @@ class CreateCgwResponse(SdkResponse):
     }
 
     def __init__(self, customer_gateway=None, request_id=None, header_response_token=None):
-        """CreateCgwResponse
+        r"""CreateCgwResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateCgwResponse(SdkResponse):
 
     @property
     def customer_gateway(self):
-        """Gets the customer_gateway of this CreateCgwResponse.
+        r"""Gets the customer_gateway of this CreateCgwResponse.
 
         :return: The customer_gateway of this CreateCgwResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.ResponseCustomerGateway`
@@ -67,7 +67,7 @@ class CreateCgwResponse(SdkResponse):
 
     @customer_gateway.setter
     def customer_gateway(self, customer_gateway):
-        """Sets the customer_gateway of this CreateCgwResponse.
+        r"""Sets the customer_gateway of this CreateCgwResponse.
 
         :param customer_gateway: The customer_gateway of this CreateCgwResponse.
         :type customer_gateway: :class:`huaweicloudsdkvpn.v5.ResponseCustomerGateway`
@@ -76,7 +76,7 @@ class CreateCgwResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateCgwResponse.
+        r"""Gets the request_id of this CreateCgwResponse.
 
         请求id
 
@@ -87,7 +87,7 @@ class CreateCgwResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateCgwResponse.
+        r"""Sets the request_id of this CreateCgwResponse.
 
         请求id
 
@@ -98,7 +98,7 @@ class CreateCgwResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this CreateCgwResponse.
+        r"""Gets the header_response_token of this CreateCgwResponse.
 
         :return: The header_response_token of this CreateCgwResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateCgwResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this CreateCgwResponse.
+        r"""Sets the header_response_token of this CreateCgwResponse.
 
         :param header_response_token: The header_response_token of this CreateCgwResponse.
         :type header_response_token: str

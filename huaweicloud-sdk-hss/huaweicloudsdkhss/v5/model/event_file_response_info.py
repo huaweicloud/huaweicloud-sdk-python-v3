@@ -65,7 +65,7 @@ class EventFileResponseInfo:
     }
 
     def __init__(self, file_path=None, file_alias=None, file_size=None, file_mtime=None, file_atime=None, file_ctime=None, file_hash=None, file_md5=None, file_sha256=None, file_type=None, file_content=None, file_attr=None, file_operation=None, file_action=None, file_change_attr=None, file_new_path=None, file_desc=None, file_key_word=None, is_dir=None, fd_info=None, fd_count=None):
-        """EventFileResponseInfo
+        r"""EventFileResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class EventFileResponseInfo:
 
     @property
     def file_path(self):
-        """Gets the file_path of this EventFileResponseInfo.
+        r"""Gets the file_path of this EventFileResponseInfo.
 
         文件路径
 
@@ -194,7 +194,7 @@ class EventFileResponseInfo:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this EventFileResponseInfo.
+        r"""Sets the file_path of this EventFileResponseInfo.
 
         文件路径
 
@@ -205,7 +205,7 @@ class EventFileResponseInfo:
 
     @property
     def file_alias(self):
-        """Gets the file_alias of this EventFileResponseInfo.
+        r"""Gets the file_alias of this EventFileResponseInfo.
 
         文件别名
 
@@ -216,7 +216,7 @@ class EventFileResponseInfo:
 
     @file_alias.setter
     def file_alias(self, file_alias):
-        """Sets the file_alias of this EventFileResponseInfo.
+        r"""Sets the file_alias of this EventFileResponseInfo.
 
         文件别名
 
@@ -227,7 +227,7 @@ class EventFileResponseInfo:
 
     @property
     def file_size(self):
-        """Gets the file_size of this EventFileResponseInfo.
+        r"""Gets the file_size of this EventFileResponseInfo.
 
         文件大小
 
@@ -238,7 +238,7 @@ class EventFileResponseInfo:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this EventFileResponseInfo.
+        r"""Sets the file_size of this EventFileResponseInfo.
 
         文件大小
 
@@ -249,7 +249,7 @@ class EventFileResponseInfo:
 
     @property
     def file_mtime(self):
-        """Gets the file_mtime of this EventFileResponseInfo.
+        r"""Gets the file_mtime of this EventFileResponseInfo.
 
         文件最后一次修改时间
 
@@ -260,7 +260,7 @@ class EventFileResponseInfo:
 
     @file_mtime.setter
     def file_mtime(self, file_mtime):
-        """Sets the file_mtime of this EventFileResponseInfo.
+        r"""Sets the file_mtime of this EventFileResponseInfo.
 
         文件最后一次修改时间
 
@@ -271,7 +271,7 @@ class EventFileResponseInfo:
 
     @property
     def file_atime(self):
-        """Gets the file_atime of this EventFileResponseInfo.
+        r"""Gets the file_atime of this EventFileResponseInfo.
 
         文件最后一次访问时间
 
@@ -282,7 +282,7 @@ class EventFileResponseInfo:
 
     @file_atime.setter
     def file_atime(self, file_atime):
-        """Sets the file_atime of this EventFileResponseInfo.
+        r"""Sets the file_atime of this EventFileResponseInfo.
 
         文件最后一次访问时间
 
@@ -293,7 +293,7 @@ class EventFileResponseInfo:
 
     @property
     def file_ctime(self):
-        """Gets the file_ctime of this EventFileResponseInfo.
+        r"""Gets the file_ctime of this EventFileResponseInfo.
 
         文件最后一次状态改变时间
 
@@ -304,7 +304,7 @@ class EventFileResponseInfo:
 
     @file_ctime.setter
     def file_ctime(self, file_ctime):
-        """Sets the file_ctime of this EventFileResponseInfo.
+        r"""Sets the file_ctime of this EventFileResponseInfo.
 
         文件最后一次状态改变时间
 
@@ -315,7 +315,7 @@ class EventFileResponseInfo:
 
     @property
     def file_hash(self):
-        """Gets the file_hash of this EventFileResponseInfo.
+        r"""Gets the file_hash of this EventFileResponseInfo.
 
         文件hash,当前为sha256
 
@@ -326,7 +326,7 @@ class EventFileResponseInfo:
 
     @file_hash.setter
     def file_hash(self, file_hash):
-        """Sets the file_hash of this EventFileResponseInfo.
+        r"""Sets the file_hash of this EventFileResponseInfo.
 
         文件hash,当前为sha256
 
@@ -337,7 +337,7 @@ class EventFileResponseInfo:
 
     @property
     def file_md5(self):
-        """Gets the file_md5 of this EventFileResponseInfo.
+        r"""Gets the file_md5 of this EventFileResponseInfo.
 
         文件md5
 
@@ -348,7 +348,7 @@ class EventFileResponseInfo:
 
     @file_md5.setter
     def file_md5(self, file_md5):
-        """Sets the file_md5 of this EventFileResponseInfo.
+        r"""Sets the file_md5 of this EventFileResponseInfo.
 
         文件md5
 
@@ -359,7 +359,7 @@ class EventFileResponseInfo:
 
     @property
     def file_sha256(self):
-        """Gets the file_sha256 of this EventFileResponseInfo.
+        r"""Gets the file_sha256 of this EventFileResponseInfo.
 
         文件sha256
 
@@ -370,7 +370,7 @@ class EventFileResponseInfo:
 
     @file_sha256.setter
     def file_sha256(self, file_sha256):
-        """Sets the file_sha256 of this EventFileResponseInfo.
+        r"""Sets the file_sha256 of this EventFileResponseInfo.
 
         文件sha256
 
@@ -381,7 +381,7 @@ class EventFileResponseInfo:
 
     @property
     def file_type(self):
-        """Gets the file_type of this EventFileResponseInfo.
+        r"""Gets the file_type of this EventFileResponseInfo.
 
         文件类型
 
@@ -392,7 +392,7 @@ class EventFileResponseInfo:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this EventFileResponseInfo.
+        r"""Sets the file_type of this EventFileResponseInfo.
 
         文件类型
 
@@ -403,7 +403,7 @@ class EventFileResponseInfo:
 
     @property
     def file_content(self):
-        """Gets the file_content of this EventFileResponseInfo.
+        r"""Gets the file_content of this EventFileResponseInfo.
 
         文件内容
 
@@ -414,7 +414,7 @@ class EventFileResponseInfo:
 
     @file_content.setter
     def file_content(self, file_content):
-        """Sets the file_content of this EventFileResponseInfo.
+        r"""Sets the file_content of this EventFileResponseInfo.
 
         文件内容
 
@@ -425,7 +425,7 @@ class EventFileResponseInfo:
 
     @property
     def file_attr(self):
-        """Gets the file_attr of this EventFileResponseInfo.
+        r"""Gets the file_attr of this EventFileResponseInfo.
 
         文件属性
 
@@ -436,7 +436,7 @@ class EventFileResponseInfo:
 
     @file_attr.setter
     def file_attr(self, file_attr):
-        """Sets the file_attr of this EventFileResponseInfo.
+        r"""Sets the file_attr of this EventFileResponseInfo.
 
         文件属性
 
@@ -447,7 +447,7 @@ class EventFileResponseInfo:
 
     @property
     def file_operation(self):
-        """Gets the file_operation of this EventFileResponseInfo.
+        r"""Gets the file_operation of this EventFileResponseInfo.
 
         文件操作类型
 
@@ -458,7 +458,7 @@ class EventFileResponseInfo:
 
     @file_operation.setter
     def file_operation(self, file_operation):
-        """Sets the file_operation of this EventFileResponseInfo.
+        r"""Sets the file_operation of this EventFileResponseInfo.
 
         文件操作类型
 
@@ -469,7 +469,7 @@ class EventFileResponseInfo:
 
     @property
     def file_action(self):
-        """Gets the file_action of this EventFileResponseInfo.
+        r"""Gets the file_action of this EventFileResponseInfo.
 
         文件动作
 
@@ -480,7 +480,7 @@ class EventFileResponseInfo:
 
     @file_action.setter
     def file_action(self, file_action):
-        """Sets the file_action of this EventFileResponseInfo.
+        r"""Sets the file_action of this EventFileResponseInfo.
 
         文件动作
 
@@ -491,7 +491,7 @@ class EventFileResponseInfo:
 
     @property
     def file_change_attr(self):
-        """Gets the file_change_attr of this EventFileResponseInfo.
+        r"""Gets the file_change_attr of this EventFileResponseInfo.
 
         变更前后的属性
 
@@ -502,7 +502,7 @@ class EventFileResponseInfo:
 
     @file_change_attr.setter
     def file_change_attr(self, file_change_attr):
-        """Sets the file_change_attr of this EventFileResponseInfo.
+        r"""Sets the file_change_attr of this EventFileResponseInfo.
 
         变更前后的属性
 
@@ -513,7 +513,7 @@ class EventFileResponseInfo:
 
     @property
     def file_new_path(self):
-        """Gets the file_new_path of this EventFileResponseInfo.
+        r"""Gets the file_new_path of this EventFileResponseInfo.
 
         新文件路径
 
@@ -524,7 +524,7 @@ class EventFileResponseInfo:
 
     @file_new_path.setter
     def file_new_path(self, file_new_path):
-        """Sets the file_new_path of this EventFileResponseInfo.
+        r"""Sets the file_new_path of this EventFileResponseInfo.
 
         新文件路径
 
@@ -535,7 +535,7 @@ class EventFileResponseInfo:
 
     @property
     def file_desc(self):
-        """Gets the file_desc of this EventFileResponseInfo.
+        r"""Gets the file_desc of this EventFileResponseInfo.
 
         文件描述
 
@@ -546,7 +546,7 @@ class EventFileResponseInfo:
 
     @file_desc.setter
     def file_desc(self, file_desc):
-        """Sets the file_desc of this EventFileResponseInfo.
+        r"""Sets the file_desc of this EventFileResponseInfo.
 
         文件描述
 
@@ -557,7 +557,7 @@ class EventFileResponseInfo:
 
     @property
     def file_key_word(self):
-        """Gets the file_key_word of this EventFileResponseInfo.
+        r"""Gets the file_key_word of this EventFileResponseInfo.
 
         文件关键字
 
@@ -568,7 +568,7 @@ class EventFileResponseInfo:
 
     @file_key_word.setter
     def file_key_word(self, file_key_word):
-        """Sets the file_key_word of this EventFileResponseInfo.
+        r"""Sets the file_key_word of this EventFileResponseInfo.
 
         文件关键字
 
@@ -579,7 +579,7 @@ class EventFileResponseInfo:
 
     @property
     def is_dir(self):
-        """Gets the is_dir of this EventFileResponseInfo.
+        r"""Gets the is_dir of this EventFileResponseInfo.
 
         是否目录
 
@@ -590,7 +590,7 @@ class EventFileResponseInfo:
 
     @is_dir.setter
     def is_dir(self, is_dir):
-        """Sets the is_dir of this EventFileResponseInfo.
+        r"""Sets the is_dir of this EventFileResponseInfo.
 
         是否目录
 
@@ -601,7 +601,7 @@ class EventFileResponseInfo:
 
     @property
     def fd_info(self):
-        """Gets the fd_info of this EventFileResponseInfo.
+        r"""Gets the fd_info of this EventFileResponseInfo.
 
         文件句柄信息
 
@@ -612,7 +612,7 @@ class EventFileResponseInfo:
 
     @fd_info.setter
     def fd_info(self, fd_info):
-        """Sets the fd_info of this EventFileResponseInfo.
+        r"""Sets the fd_info of this EventFileResponseInfo.
 
         文件句柄信息
 
@@ -623,7 +623,7 @@ class EventFileResponseInfo:
 
     @property
     def fd_count(self):
-        """Gets the fd_count of this EventFileResponseInfo.
+        r"""Gets the fd_count of this EventFileResponseInfo.
 
         文件句柄数量
 
@@ -634,7 +634,7 @@ class EventFileResponseInfo:
 
     @fd_count.setter
     def fd_count(self, fd_count):
-        """Sets the fd_count of this EventFileResponseInfo.
+        r"""Sets the fd_count of this EventFileResponseInfo.
 
         文件句柄数量
 

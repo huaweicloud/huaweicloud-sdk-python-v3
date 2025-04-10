@@ -63,7 +63,7 @@ class VaultGet:
     }
 
     def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, sys_lock_source_service=None, locked=None, updated_at=None, version=None):
-        """VaultGet
+        r"""VaultGet
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class VaultGet:
 
     @property
     def billing(self):
-        """Gets the billing of this VaultGet.
+        r"""Gets the billing of this VaultGet.
 
         :return: The billing of this VaultGet.
         :rtype: :class:`huaweicloudsdkcbr.v1.Billing`
@@ -178,7 +178,7 @@ class VaultGet:
 
     @billing.setter
     def billing(self, billing):
-        """Sets the billing of this VaultGet.
+        r"""Sets the billing of this VaultGet.
 
         :param billing: The billing of this VaultGet.
         :type billing: :class:`huaweicloudsdkcbr.v1.Billing`
@@ -187,7 +187,7 @@ class VaultGet:
 
     @property
     def description(self):
-        """Gets the description of this VaultGet.
+        r"""Gets the description of this VaultGet.
 
         存储库自定义描述信息。
 
@@ -198,7 +198,7 @@ class VaultGet:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VaultGet.
+        r"""Sets the description of this VaultGet.
 
         存储库自定义描述信息。
 
@@ -209,7 +209,7 @@ class VaultGet:
 
     @property
     def id(self):
-        """Gets the id of this VaultGet.
+        r"""Gets the id of this VaultGet.
 
         存储库ID
 
@@ -220,7 +220,7 @@ class VaultGet:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VaultGet.
+        r"""Sets the id of this VaultGet.
 
         存储库ID
 
@@ -231,7 +231,7 @@ class VaultGet:
 
     @property
     def name(self):
-        """Gets the name of this VaultGet.
+        r"""Gets the name of this VaultGet.
 
         存储库名称
 
@@ -242,7 +242,7 @@ class VaultGet:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VaultGet.
+        r"""Sets the name of this VaultGet.
 
         存储库名称
 
@@ -253,7 +253,7 @@ class VaultGet:
 
     @property
     def project_id(self):
-        """Gets the project_id of this VaultGet.
+        r"""Gets the project_id of this VaultGet.
 
         项目ID
 
@@ -264,7 +264,7 @@ class VaultGet:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this VaultGet.
+        r"""Sets the project_id of this VaultGet.
 
         项目ID
 
@@ -275,7 +275,7 @@ class VaultGet:
 
     @property
     def provider_id(self):
-        """Gets the provider_id of this VaultGet.
+        r"""Gets the provider_id of this VaultGet.
 
         存储库资源类型id
 
@@ -286,7 +286,7 @@ class VaultGet:
 
     @provider_id.setter
     def provider_id(self, provider_id):
-        """Sets the provider_id of this VaultGet.
+        r"""Sets the provider_id of this VaultGet.
 
         存储库资源类型id
 
@@ -297,7 +297,7 @@ class VaultGet:
 
     @property
     def resources(self):
-        """Gets the resources of this VaultGet.
+        r"""Gets the resources of this VaultGet.
 
         资源
 
@@ -308,7 +308,7 @@ class VaultGet:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this VaultGet.
+        r"""Sets the resources of this VaultGet.
 
         资源
 
@@ -319,7 +319,7 @@ class VaultGet:
 
     @property
     def tags(self):
-        """Gets the tags of this VaultGet.
+        r"""Gets the tags of this VaultGet.
 
         存储库标签
 
@@ -330,7 +330,7 @@ class VaultGet:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this VaultGet.
+        r"""Sets the tags of this VaultGet.
 
         存储库标签
 
@@ -341,7 +341,7 @@ class VaultGet:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this VaultGet.
+        r"""Gets the enterprise_project_id of this VaultGet.
 
         企业项目id，默认为‘0’。
 
@@ -352,7 +352,7 @@ class VaultGet:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this VaultGet.
+        r"""Sets the enterprise_project_id of this VaultGet.
 
         企业项目id，默认为‘0’。
 
@@ -363,7 +363,7 @@ class VaultGet:
 
     @property
     def auto_bind(self):
-        """Gets the auto_bind of this VaultGet.
+        r"""Gets the auto_bind of this VaultGet.
 
         是否自动绑定，默认为false，不支持。
 
@@ -374,7 +374,7 @@ class VaultGet:
 
     @auto_bind.setter
     def auto_bind(self, auto_bind):
-        """Sets the auto_bind of this VaultGet.
+        r"""Sets the auto_bind of this VaultGet.
 
         是否自动绑定，默认为false，不支持。
 
@@ -385,7 +385,7 @@ class VaultGet:
 
     @property
     def bind_rules(self):
-        """Gets the bind_rules of this VaultGet.
+        r"""Gets the bind_rules of this VaultGet.
 
         :return: The bind_rules of this VaultGet.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
@@ -394,7 +394,7 @@ class VaultGet:
 
     @bind_rules.setter
     def bind_rules(self, bind_rules):
-        """Sets the bind_rules of this VaultGet.
+        r"""Sets the bind_rules of this VaultGet.
 
         :param bind_rules: The bind_rules of this VaultGet.
         :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
@@ -403,7 +403,7 @@ class VaultGet:
 
     @property
     def user_id(self):
-        """Gets the user_id of this VaultGet.
+        r"""Gets the user_id of this VaultGet.
 
         用户id
 
@@ -414,7 +414,7 @@ class VaultGet:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this VaultGet.
+        r"""Sets the user_id of this VaultGet.
 
         用户id
 
@@ -425,7 +425,7 @@ class VaultGet:
 
     @property
     def created_at(self):
-        """Gets the created_at of this VaultGet.
+        r"""Gets the created_at of this VaultGet.
 
         创建时间,例如:\"2020-02-05T10:38:34.209782\"
 
@@ -436,7 +436,7 @@ class VaultGet:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this VaultGet.
+        r"""Sets the created_at of this VaultGet.
 
         创建时间,例如:\"2020-02-05T10:38:34.209782\"
 
@@ -447,7 +447,7 @@ class VaultGet:
 
     @property
     def auto_expand(self):
-        """Gets the auto_expand of this VaultGet.
+        r"""Gets the auto_expand of this VaultGet.
 
         是否开启存储库自动扩容能力（只支持按需存储库）。
 
@@ -458,7 +458,7 @@ class VaultGet:
 
     @auto_expand.setter
     def auto_expand(self, auto_expand):
-        """Sets the auto_expand of this VaultGet.
+        r"""Sets the auto_expand of this VaultGet.
 
         是否开启存储库自动扩容能力（只支持按需存储库）。
 
@@ -469,7 +469,7 @@ class VaultGet:
 
     @property
     def smn_notify(self):
-        """Gets the smn_notify of this VaultGet.
+        r"""Gets the smn_notify of this VaultGet.
 
         存储库smn消息通知开关
 
@@ -480,7 +480,7 @@ class VaultGet:
 
     @smn_notify.setter
     def smn_notify(self, smn_notify):
-        """Sets the smn_notify of this VaultGet.
+        r"""Sets the smn_notify of this VaultGet.
 
         存储库smn消息通知开关
 
@@ -491,7 +491,7 @@ class VaultGet:
 
     @property
     def threshold(self):
-        """Gets the threshold of this VaultGet.
+        r"""Gets the threshold of this VaultGet.
 
         存储库容量阈值，已用容量占总容量达到此百分比即发送相关通知
 
@@ -502,7 +502,7 @@ class VaultGet:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this VaultGet.
+        r"""Sets the threshold of this VaultGet.
 
         存储库容量阈值，已用容量占总容量达到此百分比即发送相关通知
 
@@ -513,7 +513,7 @@ class VaultGet:
 
     @property
     def sys_lock_source_service(self):
-        """Gets the sys_lock_source_service of this VaultGet.
+        r"""Gets the sys_lock_source_service of this VaultGet.
 
         用于标识SMB服务
 
@@ -524,7 +524,7 @@ class VaultGet:
 
     @sys_lock_source_service.setter
     def sys_lock_source_service(self, sys_lock_source_service):
-        """Sets the sys_lock_source_service of this VaultGet.
+        r"""Sets the sys_lock_source_service of this VaultGet.
 
         用于标识SMB服务
 
@@ -535,7 +535,7 @@ class VaultGet:
 
     @property
     def locked(self):
-        """Gets the locked of this VaultGet.
+        r"""Gets the locked of this VaultGet.
 
         用于标识该存储库是否已锁定
 
@@ -546,7 +546,7 @@ class VaultGet:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this VaultGet.
+        r"""Sets the locked of this VaultGet.
 
         用于标识该存储库是否已锁定
 
@@ -557,7 +557,7 @@ class VaultGet:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this VaultGet.
+        r"""Gets the updated_at of this VaultGet.
 
         更新时间,例如:\"2020-02-05T10:38:34.209782\"
 
@@ -568,7 +568,7 @@ class VaultGet:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this VaultGet.
+        r"""Sets the updated_at of this VaultGet.
 
         更新时间,例如:\"2020-02-05T10:38:34.209782\"
 
@@ -579,7 +579,7 @@ class VaultGet:
 
     @property
     def version(self):
-        """Gets the version of this VaultGet.
+        r"""Gets the version of this VaultGet.
 
         版本
 
@@ -590,7 +590,7 @@ class VaultGet:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this VaultGet.
+        r"""Sets the version of this VaultGet.
 
         版本
 

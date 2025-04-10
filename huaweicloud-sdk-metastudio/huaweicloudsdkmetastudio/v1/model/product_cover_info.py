@@ -25,7 +25,7 @@ class ProductCoverInfo:
     }
 
     def __init__(self, asset_id=None):
-        """ProductCoverInfo
+        r"""ProductCoverInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ProductCoverInfo:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ProductCoverInfo.
+        r"""Gets the asset_id of this ProductCoverInfo.
 
         资产ID
 
@@ -54,7 +54,7 @@ class ProductCoverInfo:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ProductCoverInfo.
+        r"""Sets the asset_id of this ProductCoverInfo.
 
         资产ID
 

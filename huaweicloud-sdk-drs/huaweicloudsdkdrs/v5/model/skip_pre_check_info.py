@@ -27,7 +27,7 @@ class SkipPreCheckInfo:
     }
 
     def __init__(self, skipped_precheck_list=None, skip_reason=None):
-        """SkipPreCheckInfo
+        r"""SkipPreCheckInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SkipPreCheckInfo:
 
     @property
     def skipped_precheck_list(self):
-        """Gets the skipped_precheck_list of this SkipPreCheckInfo.
+        r"""Gets the skipped_precheck_list of this SkipPreCheckInfo.
 
         跳过的预检查项。
 
@@ -59,7 +59,7 @@ class SkipPreCheckInfo:
 
     @skipped_precheck_list.setter
     def skipped_precheck_list(self, skipped_precheck_list):
-        """Sets the skipped_precheck_list of this SkipPreCheckInfo.
+        r"""Sets the skipped_precheck_list of this SkipPreCheckInfo.
 
         跳过的预检查项。
 
@@ -70,7 +70,7 @@ class SkipPreCheckInfo:
 
     @property
     def skip_reason(self):
-        """Gets the skip_reason of this SkipPreCheckInfo.
+        r"""Gets the skip_reason of this SkipPreCheckInfo.
 
         跳过预检查原因。
 
@@ -81,7 +81,7 @@ class SkipPreCheckInfo:
 
     @skip_reason.setter
     def skip_reason(self, skip_reason):
-        """Sets the skip_reason of this SkipPreCheckInfo.
+        r"""Sets the skip_reason of this SkipPreCheckInfo.
 
         跳过预检查原因。
 

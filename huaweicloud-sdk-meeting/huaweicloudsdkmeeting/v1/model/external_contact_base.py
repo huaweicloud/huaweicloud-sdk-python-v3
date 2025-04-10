@@ -43,7 +43,7 @@ class ExternalContactBase:
     }
 
     def __init__(self, other_number=None, other_number_country=None, country=None, phone=None, email=None, corp_name=None, dept_name=None, position=None, address=None, remarks=None):
-        """ExternalContactBase
+        r"""ExternalContactBase
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ExternalContactBase:
 
     @property
     def other_number(self):
-        """Gets the other_number of this ExternalContactBase.
+        r"""Gets the other_number of this ExternalContactBase.
 
         其他号码。 > * 其他号码必须以国家码作为前缀 > * otherNumber填写时，otherNumberCountry也必须填写 > * 如果要清空手机号配置，则otherNumberCountry和otherNumber都要置为\"\" 
 
@@ -117,7 +117,7 @@ class ExternalContactBase:
 
     @other_number.setter
     def other_number(self, other_number):
-        """Sets the other_number of this ExternalContactBase.
+        r"""Sets the other_number of this ExternalContactBase.
 
         其他号码。 > * 其他号码必须以国家码作为前缀 > * otherNumber填写时，otherNumberCountry也必须填写 > * 如果要清空手机号配置，则otherNumberCountry和otherNumber都要置为\"\" 
 
@@ -128,7 +128,7 @@ class ExternalContactBase:
 
     @property
     def other_number_country(self):
-        """Gets the other_number_country of this ExternalContactBase.
+        r"""Gets the other_number_country of this ExternalContactBase.
 
         [[其他号码所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -139,7 +139,7 @@ class ExternalContactBase:
 
     @other_number_country.setter
     def other_number_country(self, other_number_country):
-        """Sets the other_number_country of this ExternalContactBase.
+        r"""Sets the other_number_country of this ExternalContactBase.
 
         [[其他号码所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -150,7 +150,7 @@ class ExternalContactBase:
 
     @property
     def country(self):
-        """Gets the country of this ExternalContactBase.
+        r"""Gets the country of this ExternalContactBase.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -161,7 +161,7 @@ class ExternalContactBase:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this ExternalContactBase.
+        r"""Sets the country of this ExternalContactBase.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -172,7 +172,7 @@ class ExternalContactBase:
 
     @property
     def phone(self):
-        """Gets the phone of this ExternalContactBase.
+        r"""Gets the phone of this ExternalContactBase.
 
         手机号。 > * 手机号必须以国家码作为前缀 > * phone填写时，country也必须填写 > * 如果要清空手机号配置，则country和phone都要置为\"\" 
 
@@ -183,7 +183,7 @@ class ExternalContactBase:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this ExternalContactBase.
+        r"""Sets the phone of this ExternalContactBase.
 
         手机号。 > * 手机号必须以国家码作为前缀 > * phone填写时，country也必须填写 > * 如果要清空手机号配置，则country和phone都要置为\"\" 
 
@@ -194,7 +194,7 @@ class ExternalContactBase:
 
     @property
     def email(self):
-        """Gets the email of this ExternalContactBase.
+        r"""Gets the email of this ExternalContactBase.
 
         邮箱。
 
@@ -205,7 +205,7 @@ class ExternalContactBase:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ExternalContactBase.
+        r"""Sets the email of this ExternalContactBase.
 
         邮箱。
 
@@ -216,7 +216,7 @@ class ExternalContactBase:
 
     @property
     def corp_name(self):
-        """Gets the corp_name of this ExternalContactBase.
+        r"""Gets the corp_name of this ExternalContactBase.
 
         公司名称。
 
@@ -227,7 +227,7 @@ class ExternalContactBase:
 
     @corp_name.setter
     def corp_name(self, corp_name):
-        """Sets the corp_name of this ExternalContactBase.
+        r"""Sets the corp_name of this ExternalContactBase.
 
         公司名称。
 
@@ -238,7 +238,7 @@ class ExternalContactBase:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this ExternalContactBase.
+        r"""Gets the dept_name of this ExternalContactBase.
 
         部门。
 
@@ -249,7 +249,7 @@ class ExternalContactBase:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this ExternalContactBase.
+        r"""Sets the dept_name of this ExternalContactBase.
 
         部门。
 
@@ -260,7 +260,7 @@ class ExternalContactBase:
 
     @property
     def position(self):
-        """Gets the position of this ExternalContactBase.
+        r"""Gets the position of this ExternalContactBase.
 
         职务。
 
@@ -271,7 +271,7 @@ class ExternalContactBase:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this ExternalContactBase.
+        r"""Sets the position of this ExternalContactBase.
 
         职务。
 
@@ -282,7 +282,7 @@ class ExternalContactBase:
 
     @property
     def address(self):
-        """Gets the address of this ExternalContactBase.
+        r"""Gets the address of this ExternalContactBase.
 
         个人地址。
 
@@ -293,7 +293,7 @@ class ExternalContactBase:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ExternalContactBase.
+        r"""Sets the address of this ExternalContactBase.
 
         个人地址。
 
@@ -304,7 +304,7 @@ class ExternalContactBase:
 
     @property
     def remarks(self):
-        """Gets the remarks of this ExternalContactBase.
+        r"""Gets the remarks of this ExternalContactBase.
 
         备注。
 
@@ -315,7 +315,7 @@ class ExternalContactBase:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this ExternalContactBase.
+        r"""Sets the remarks of this ExternalContactBase.
 
         备注。
 

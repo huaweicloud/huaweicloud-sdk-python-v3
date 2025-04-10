@@ -27,7 +27,7 @@ class ShowSecurityDataClassificationRuleRequest:
     }
 
     def __init__(self, workspace=None, id=None):
-        """ShowSecurityDataClassificationRuleRequest
+        r"""ShowSecurityDataClassificationRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowSecurityDataClassificationRuleRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowSecurityDataClassificationRuleRequest.
+        r"""Gets the workspace of this ShowSecurityDataClassificationRuleRequest.
 
         DataArts Studio工作空间ID
 
@@ -59,7 +59,7 @@ class ShowSecurityDataClassificationRuleRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowSecurityDataClassificationRuleRequest.
+        r"""Sets the workspace of this ShowSecurityDataClassificationRuleRequest.
 
         DataArts Studio工作空间ID
 
@@ -70,7 +70,7 @@ class ShowSecurityDataClassificationRuleRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowSecurityDataClassificationRuleRequest.
+        r"""Gets the id of this ShowSecurityDataClassificationRuleRequest.
 
         需要查询的规则ID
 
@@ -81,7 +81,7 @@ class ShowSecurityDataClassificationRuleRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowSecurityDataClassificationRuleRequest.
+        r"""Sets the id of this ShowSecurityDataClassificationRuleRequest.
 
         需要查询的规则ID
 

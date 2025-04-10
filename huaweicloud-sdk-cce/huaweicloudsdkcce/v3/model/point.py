@@ -25,7 +25,7 @@ class Point:
     }
 
     def __init__(self, task_type=None):
-        """Point
+        r"""Point
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Point:
 
     @property
     def task_type(self):
-        """Gets the task_type of this Point.
+        r"""Gets the task_type of this Point.
 
         :return: The task_type of this Point.
         :rtype: :class:`huaweicloudsdkcce.v3.TaskType`
@@ -52,7 +52,7 @@ class Point:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this Point.
+        r"""Sets the task_type of this Point.
 
         :param task_type: The task_type of this Point.
         :type task_type: :class:`huaweicloudsdkcce.v3.TaskType`

@@ -25,7 +25,7 @@ class CreateDomainsRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDomainsRequest
+        r"""CreateDomainsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDomainsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDomainsRequest.
+        r"""Gets the body of this CreateDomainsRequest.
 
         :return: The body of this CreateDomainsRequest.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.CreateDomainsRequestBody`
@@ -52,7 +52,7 @@ class CreateDomainsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDomainsRequest.
+        r"""Sets the body of this CreateDomainsRequest.
 
         :param body: The body of this CreateDomainsRequest.
         :type body: :class:`huaweicloudsdkcodeartsinspector.v3.CreateDomainsRequestBody`

@@ -30,7 +30,7 @@ class ListQueuesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, queues=None):
-        """ListQueuesResponse
+        r"""ListQueuesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListQueuesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListQueuesResponse.
+        r"""Gets the is_success of this ListQueuesResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -69,7 +69,7 @@ class ListQueuesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListQueuesResponse.
+        r"""Sets the is_success of this ListQueuesResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -80,7 +80,7 @@ class ListQueuesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListQueuesResponse.
+        r"""Gets the message of this ListQueuesResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -91,7 +91,7 @@ class ListQueuesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListQueuesResponse.
+        r"""Sets the message of this ListQueuesResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -102,7 +102,7 @@ class ListQueuesResponse(SdkResponse):
 
     @property
     def queues(self):
-        """Gets the queues of this ListQueuesResponse.
+        r"""Gets the queues of this ListQueuesResponse.
 
         队列信息。
 
@@ -113,7 +113,7 @@ class ListQueuesResponse(SdkResponse):
 
     @queues.setter
     def queues(self, queues):
-        """Sets the queues of this ListQueuesResponse.
+        r"""Sets the queues of this ListQueuesResponse.
 
         队列信息。
 

@@ -29,7 +29,7 @@ class CreateEnvironmentRequestBody:
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None):
-        """CreateEnvironmentRequestBody
+        r"""CreateEnvironmentRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateEnvironmentRequestBody:
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateEnvironmentRequestBody.
+        r"""Gets the api_version of this CreateEnvironmentRequestBody.
 
         :return: The api_version of this CreateEnvironmentRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -63,7 +63,7 @@ class CreateEnvironmentRequestBody:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateEnvironmentRequestBody.
+        r"""Sets the api_version of this CreateEnvironmentRequestBody.
 
         :param api_version: The api_version of this CreateEnvironmentRequestBody.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -72,7 +72,7 @@ class CreateEnvironmentRequestBody:
 
     @property
     def kind(self):
-        """Gets the kind of this CreateEnvironmentRequestBody.
+        r"""Gets the kind of this CreateEnvironmentRequestBody.
 
         :return: The kind of this CreateEnvironmentRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.EnvironmentKindObj`
@@ -81,7 +81,7 @@ class CreateEnvironmentRequestBody:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateEnvironmentRequestBody.
+        r"""Sets the kind of this CreateEnvironmentRequestBody.
 
         :param kind: The kind of this CreateEnvironmentRequestBody.
         :type kind: :class:`huaweicloudsdkcae.v1.EnvironmentKindObj`
@@ -90,7 +90,7 @@ class CreateEnvironmentRequestBody:
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateEnvironmentRequestBody.
+        r"""Gets the metadata of this CreateEnvironmentRequestBody.
 
         :return: The metadata of this CreateEnvironmentRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateEnvironmentRequestBodyMetadata`
@@ -99,7 +99,7 @@ class CreateEnvironmentRequestBody:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateEnvironmentRequestBody.
+        r"""Sets the metadata of this CreateEnvironmentRequestBody.
 
         :param metadata: The metadata of this CreateEnvironmentRequestBody.
         :type metadata: :class:`huaweicloudsdkcae.v1.CreateEnvironmentRequestBodyMetadata`

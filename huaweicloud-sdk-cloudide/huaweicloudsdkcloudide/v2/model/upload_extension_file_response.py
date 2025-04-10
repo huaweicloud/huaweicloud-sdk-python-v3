@@ -30,7 +30,7 @@ class UploadExtensionFileResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """UploadExtensionFileResponse
+        r"""UploadExtensionFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UploadExtensionFileResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this UploadExtensionFileResponse.
+        r"""Gets the error of this UploadExtensionFileResponse.
 
         :return: The error of this UploadExtensionFileResponse.
         :rtype: :class:`huaweicloudsdkcloudide.v2.Error`
@@ -67,7 +67,7 @@ class UploadExtensionFileResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this UploadExtensionFileResponse.
+        r"""Sets the error of this UploadExtensionFileResponse.
 
         :param error: The error of this UploadExtensionFileResponse.
         :type error: :class:`huaweicloudsdkcloudide.v2.Error`
@@ -76,7 +76,7 @@ class UploadExtensionFileResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UploadExtensionFileResponse.
+        r"""Gets the result of this UploadExtensionFileResponse.
 
         结果
 
@@ -87,7 +87,7 @@ class UploadExtensionFileResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UploadExtensionFileResponse.
+        r"""Sets the result of this UploadExtensionFileResponse.
 
         结果
 
@@ -98,7 +98,7 @@ class UploadExtensionFileResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UploadExtensionFileResponse.
+        r"""Gets the status of this UploadExtensionFileResponse.
 
         状态
 
@@ -109,7 +109,7 @@ class UploadExtensionFileResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UploadExtensionFileResponse.
+        r"""Sets the status of this UploadExtensionFileResponse.
 
         状态
 

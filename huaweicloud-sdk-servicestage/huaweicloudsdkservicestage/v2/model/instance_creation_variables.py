@@ -27,7 +27,7 @@ class InstanceCreationVariables:
     }
 
     def __init__(self, environment=None, components=None):
-        """InstanceCreationVariables
+        r"""InstanceCreationVariables
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InstanceCreationVariables:
 
     @property
     def environment(self):
-        """Gets the environment of this InstanceCreationVariables.
+        r"""Gets the environment of this InstanceCreationVariables.
 
         环境变量
 
@@ -61,7 +61,7 @@ class InstanceCreationVariables:
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this InstanceCreationVariables.
+        r"""Sets the environment of this InstanceCreationVariables.
 
         环境变量
 
@@ -72,7 +72,7 @@ class InstanceCreationVariables:
 
     @property
     def components(self):
-        """Gets the components of this InstanceCreationVariables.
+        r"""Gets the components of this InstanceCreationVariables.
 
         组件变量
 
@@ -83,7 +83,7 @@ class InstanceCreationVariables:
 
     @components.setter
     def components(self, components):
-        """Sets the components of this InstanceCreationVariables.
+        r"""Sets the components of this InstanceCreationVariables.
 
         组件变量
 

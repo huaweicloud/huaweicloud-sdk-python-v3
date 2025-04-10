@@ -25,7 +25,7 @@ class EnableAction:
     }
 
     def __init__(self, action=None):
-        """EnableAction
+        r"""EnableAction
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnableAction:
 
     @property
     def action(self):
-        """Gets the action of this EnableAction.
+        r"""Gets the action of this EnableAction.
 
         启用操作
 
@@ -53,7 +53,7 @@ class EnableAction:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this EnableAction.
+        r"""Sets the action of this EnableAction.
 
         启用操作
 

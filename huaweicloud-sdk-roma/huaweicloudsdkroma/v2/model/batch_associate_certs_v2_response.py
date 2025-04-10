@@ -24,7 +24,7 @@ class BatchAssociateCertsV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """BatchAssociateCertsV2Response
+        r"""BatchAssociateCertsV2Response
 
         The model defined in huaweicloud sdk
 

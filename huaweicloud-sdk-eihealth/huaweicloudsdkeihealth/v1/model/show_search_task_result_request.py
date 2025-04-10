@@ -25,7 +25,7 @@ class ShowSearchTaskResultRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowSearchTaskResultRequest
+        r"""ShowSearchTaskResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSearchTaskResultRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowSearchTaskResultRequest.
+        r"""Gets the task_id of this ShowSearchTaskResultRequest.
 
         分子搜索任务ID
 
@@ -53,7 +53,7 @@ class ShowSearchTaskResultRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowSearchTaskResultRequest.
+        r"""Sets the task_id of this ShowSearchTaskResultRequest.
 
         分子搜索任务ID
 

@@ -31,7 +31,7 @@ class GaussDBforOpenGaussRoleAttributes:
     }
 
     def __init__(self, name=None, schema=None, readonly=None, default_privilege_grantee=None):
-        """GaussDBforOpenGaussRoleAttributes
+        r"""GaussDBforOpenGaussRoleAttributes
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class GaussDBforOpenGaussRoleAttributes:
 
     @property
     def name(self):
-        """Gets the name of this GaussDBforOpenGaussRoleAttributes.
+        r"""Gets the name of this GaussDBforOpenGaussRoleAttributes.
 
         数据库角色名称。 不能使用系统用户或角色，且名称必须存在。 系统用户/角色包括“rdsAdmin”,“rdsMetric”, “rdsBackup”, “rdsRepl”, “root”。
 
@@ -72,7 +72,7 @@ class GaussDBforOpenGaussRoleAttributes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GaussDBforOpenGaussRoleAttributes.
+        r"""Sets the name of this GaussDBforOpenGaussRoleAttributes.
 
         数据库角色名称。 不能使用系统用户或角色，且名称必须存在。 系统用户/角色包括“rdsAdmin”,“rdsMetric”, “rdsBackup”, “rdsRepl”, “root”。
 
@@ -83,7 +83,7 @@ class GaussDBforOpenGaussRoleAttributes:
 
     @property
     def schema(self):
-        """Gets the schema of this GaussDBforOpenGaussRoleAttributes.
+        r"""Gets the schema of this GaussDBforOpenGaussRoleAttributes.
 
         SCHEMA名称。 不能和模板库以及系统内schema重名，且schema名称必须存在。 模板库包括postgres， template0 ，template1, 系统内schema包括public，information_schema。
 
@@ -94,7 +94,7 @@ class GaussDBforOpenGaussRoleAttributes:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this GaussDBforOpenGaussRoleAttributes.
+        r"""Sets the schema of this GaussDBforOpenGaussRoleAttributes.
 
         SCHEMA名称。 不能和模板库以及系统内schema重名，且schema名称必须存在。 模板库包括postgres， template0 ，template1, 系统内schema包括public，information_schema。
 
@@ -105,7 +105,7 @@ class GaussDBforOpenGaussRoleAttributes:
 
     @property
     def readonly(self):
-        """Gets the readonly of this GaussDBforOpenGaussRoleAttributes.
+        r"""Gets the readonly of this GaussDBforOpenGaussRoleAttributes.
 
         数据库角色权限。 - true：只读。 - false：可读可写。
 
@@ -116,7 +116,7 @@ class GaussDBforOpenGaussRoleAttributes:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this GaussDBforOpenGaussRoleAttributes.
+        r"""Sets the readonly of this GaussDBforOpenGaussRoleAttributes.
 
         数据库角色权限。 - true：只读。 - false：可读可写。
 
@@ -127,7 +127,7 @@ class GaussDBforOpenGaussRoleAttributes:
 
     @property
     def default_privilege_grantee(self):
-        """Gets the default_privilege_grantee of this GaussDBforOpenGaussRoleAttributes.
+        r"""Gets the default_privilege_grantee of this GaussDBforOpenGaussRoleAttributes.
 
         数据库用户/角色名称。 该字段的含义是将此用户/角色的权限授予给name字段指定的角色，通过readonly字段判断是否授予只读权限。 不能和系统用户/角色名称相同，且用户/角色名称必须存在，系统用户/角色包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”, “root”。
 
@@ -138,7 +138,7 @@ class GaussDBforOpenGaussRoleAttributes:
 
     @default_privilege_grantee.setter
     def default_privilege_grantee(self, default_privilege_grantee):
-        """Sets the default_privilege_grantee of this GaussDBforOpenGaussRoleAttributes.
+        r"""Sets the default_privilege_grantee of this GaussDBforOpenGaussRoleAttributes.
 
         数据库用户/角色名称。 该字段的含义是将此用户/角色的权限授予给name字段指定的角色，通过readonly字段判断是否授予只读权限。 不能和系统用户/角色名称相同，且用户/角色名称必须存在，系统用户/角色包括“rdsAdmin”,“ rdsMetric”, “rdsBackup”, “rdsRepl”, “root”。
 

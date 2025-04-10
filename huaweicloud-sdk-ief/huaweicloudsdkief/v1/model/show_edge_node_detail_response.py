@@ -26,7 +26,7 @@ class ShowEdgeNodeDetailResponse(SdkResponse):
     }
 
     def __init__(self, node=None):
-        """ShowEdgeNodeDetailResponse
+        r"""ShowEdgeNodeDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowEdgeNodeDetailResponse(SdkResponse):
 
     @property
     def node(self):
-        """Gets the node of this ShowEdgeNodeDetailResponse.
+        r"""Gets the node of this ShowEdgeNodeDetailResponse.
 
         :return: The node of this ShowEdgeNodeDetailResponse.
         :rtype: :class:`huaweicloudsdkief.v1.EdgeNodeResp`
@@ -53,7 +53,7 @@ class ShowEdgeNodeDetailResponse(SdkResponse):
 
     @node.setter
     def node(self, node):
-        """Sets the node of this ShowEdgeNodeDetailResponse.
+        r"""Sets the node of this ShowEdgeNodeDetailResponse.
 
         :param node: The node of this ShowEdgeNodeDetailResponse.
         :type node: :class:`huaweicloudsdkief.v1.EdgeNodeResp`

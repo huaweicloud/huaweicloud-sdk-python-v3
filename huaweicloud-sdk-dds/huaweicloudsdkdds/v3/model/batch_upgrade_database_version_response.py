@@ -26,7 +26,7 @@ class BatchUpgradeDatabaseVersionResponse(SdkResponse):
     }
 
     def __init__(self, upgrade_results=None):
-        """BatchUpgradeDatabaseVersionResponse
+        r"""BatchUpgradeDatabaseVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchUpgradeDatabaseVersionResponse(SdkResponse):
 
     @property
     def upgrade_results(self):
-        """Gets the upgrade_results of this BatchUpgradeDatabaseVersionResponse.
+        r"""Gets the upgrade_results of this BatchUpgradeDatabaseVersionResponse.
 
         批量升级结果。
 
@@ -55,7 +55,7 @@ class BatchUpgradeDatabaseVersionResponse(SdkResponse):
 
     @upgrade_results.setter
     def upgrade_results(self, upgrade_results):
-        """Sets the upgrade_results of this BatchUpgradeDatabaseVersionResponse.
+        r"""Sets the upgrade_results of this BatchUpgradeDatabaseVersionResponse.
 
         批量升级结果。
 

@@ -39,7 +39,7 @@ class NeutronFirewallPolicy:
     }
 
     def __init__(self, audited=None, description=None, firewall_rules=None, id=None, name=None, public=None, tenant_id=None, project_id=None):
-        """NeutronFirewallPolicy
+        r"""NeutronFirewallPolicy
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class NeutronFirewallPolicy:
 
     @property
     def audited(self):
-        """Gets the audited of this NeutronFirewallPolicy.
+        r"""Gets the audited of this NeutronFirewallPolicy.
 
         审计标记。
 
@@ -95,7 +95,7 @@ class NeutronFirewallPolicy:
 
     @audited.setter
     def audited(self, audited):
-        """Sets the audited of this NeutronFirewallPolicy.
+        r"""Sets the audited of this NeutronFirewallPolicy.
 
         审计标记。
 
@@ -106,7 +106,7 @@ class NeutronFirewallPolicy:
 
     @property
     def description(self):
-        """Gets the description of this NeutronFirewallPolicy.
+        r"""Gets the description of this NeutronFirewallPolicy.
 
         网络ACL防火墙策略描述。
 
@@ -117,7 +117,7 @@ class NeutronFirewallPolicy:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronFirewallPolicy.
+        r"""Sets the description of this NeutronFirewallPolicy.
 
         网络ACL防火墙策略描述。
 
@@ -128,7 +128,7 @@ class NeutronFirewallPolicy:
 
     @property
     def firewall_rules(self):
-        """Gets the firewall_rules of this NeutronFirewallPolicy.
+        r"""Gets the firewall_rules of this NeutronFirewallPolicy.
 
         策略引用的网络ACL防火墙规则链。
 
@@ -139,7 +139,7 @@ class NeutronFirewallPolicy:
 
     @firewall_rules.setter
     def firewall_rules(self, firewall_rules):
-        """Sets the firewall_rules of this NeutronFirewallPolicy.
+        r"""Sets the firewall_rules of this NeutronFirewallPolicy.
 
         策略引用的网络ACL防火墙规则链。
 
@@ -150,7 +150,7 @@ class NeutronFirewallPolicy:
 
     @property
     def id(self):
-        """Gets the id of this NeutronFirewallPolicy.
+        r"""Gets the id of this NeutronFirewallPolicy.
 
         网络ACL防火墙策略uuid标识。
 
@@ -161,7 +161,7 @@ class NeutronFirewallPolicy:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronFirewallPolicy.
+        r"""Sets the id of this NeutronFirewallPolicy.
 
         网络ACL防火墙策略uuid标识。
 
@@ -172,7 +172,7 @@ class NeutronFirewallPolicy:
 
     @property
     def name(self):
-        """Gets the name of this NeutronFirewallPolicy.
+        r"""Gets the name of this NeutronFirewallPolicy.
 
         网络ACL防火墙策略名称。
 
@@ -183,7 +183,7 @@ class NeutronFirewallPolicy:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronFirewallPolicy.
+        r"""Sets the name of this NeutronFirewallPolicy.
 
         网络ACL防火墙策略名称。
 
@@ -194,7 +194,7 @@ class NeutronFirewallPolicy:
 
     @property
     def public(self):
-        """Gets the public of this NeutronFirewallPolicy.
+        r"""Gets the public of this NeutronFirewallPolicy.
 
         是否支持跨租户共享。
 
@@ -205,7 +205,7 @@ class NeutronFirewallPolicy:
 
     @public.setter
     def public(self, public):
-        """Sets the public of this NeutronFirewallPolicy.
+        r"""Sets the public of this NeutronFirewallPolicy.
 
         是否支持跨租户共享。
 
@@ -216,7 +216,7 @@ class NeutronFirewallPolicy:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronFirewallPolicy.
+        r"""Gets the tenant_id of this NeutronFirewallPolicy.
 
         项目ID
 
@@ -227,7 +227,7 @@ class NeutronFirewallPolicy:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronFirewallPolicy.
+        r"""Sets the tenant_id of this NeutronFirewallPolicy.
 
         项目ID
 
@@ -238,7 +238,7 @@ class NeutronFirewallPolicy:
 
     @property
     def project_id(self):
-        """Gets the project_id of this NeutronFirewallPolicy.
+        r"""Gets the project_id of this NeutronFirewallPolicy.
 
         项目ID
 
@@ -249,7 +249,7 @@ class NeutronFirewallPolicy:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this NeutronFirewallPolicy.
+        r"""Sets the project_id of this NeutronFirewallPolicy.
 
         项目ID
 

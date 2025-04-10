@@ -25,7 +25,7 @@ class ShowBmsDevicesRequest:
     }
 
     def __init__(self, id=None):
-        """ShowBmsDevicesRequest
+        r"""ShowBmsDevicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowBmsDevicesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowBmsDevicesRequest.
+        r"""Gets the id of this ShowBmsDevicesRequest.
 
         计算资源id
 
@@ -53,7 +53,7 @@ class ShowBmsDevicesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowBmsDevicesRequest.
+        r"""Sets the id of this ShowBmsDevicesRequest.
 
         计算资源id
 

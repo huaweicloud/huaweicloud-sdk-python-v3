@@ -27,7 +27,7 @@ class UpdateAlarmSubRequest:
     }
 
     def __init__(self, alarm_sub_id=None, body=None):
-        """UpdateAlarmSubRequest
+        r"""UpdateAlarmSubRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAlarmSubRequest:
 
     @property
     def alarm_sub_id(self):
-        """Gets the alarm_sub_id of this UpdateAlarmSubRequest.
+        r"""Gets the alarm_sub_id of this UpdateAlarmSubRequest.
 
         告警订阅ID
 
@@ -60,7 +60,7 @@ class UpdateAlarmSubRequest:
 
     @alarm_sub_id.setter
     def alarm_sub_id(self, alarm_sub_id):
-        """Sets the alarm_sub_id of this UpdateAlarmSubRequest.
+        r"""Sets the alarm_sub_id of this UpdateAlarmSubRequest.
 
         告警订阅ID
 
@@ -71,7 +71,7 @@ class UpdateAlarmSubRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAlarmSubRequest.
+        r"""Gets the body of this UpdateAlarmSubRequest.
 
         :return: The body of this UpdateAlarmSubRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.AlarmSubUpdateRequest`
@@ -80,7 +80,7 @@ class UpdateAlarmSubRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAlarmSubRequest.
+        r"""Sets the body of this UpdateAlarmSubRequest.
 
         :param body: The body of this UpdateAlarmSubRequest.
         :type body: :class:`huaweicloudsdkdws.v2.AlarmSubUpdateRequest`

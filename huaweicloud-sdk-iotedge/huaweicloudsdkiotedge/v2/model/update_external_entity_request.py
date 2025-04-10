@@ -29,7 +29,7 @@ class UpdateExternalEntityRequest:
     }
 
     def __init__(self, edge_node_id=None, external_id=None, body=None):
-        """UpdateExternalEntityRequest
+        r"""UpdateExternalEntityRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateExternalEntityRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this UpdateExternalEntityRequest.
+        r"""Gets the edge_node_id of this UpdateExternalEntityRequest.
 
         边缘节点ID
 
@@ -66,7 +66,7 @@ class UpdateExternalEntityRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this UpdateExternalEntityRequest.
+        r"""Sets the edge_node_id of this UpdateExternalEntityRequest.
 
         边缘节点ID
 
@@ -77,7 +77,7 @@ class UpdateExternalEntityRequest:
 
     @property
     def external_id(self):
-        """Gets the external_id of this UpdateExternalEntityRequest.
+        r"""Gets the external_id of this UpdateExternalEntityRequest.
 
         外部实体ID
 
@@ -88,7 +88,7 @@ class UpdateExternalEntityRequest:
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this UpdateExternalEntityRequest.
+        r"""Sets the external_id of this UpdateExternalEntityRequest.
 
         外部实体ID
 
@@ -99,7 +99,7 @@ class UpdateExternalEntityRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateExternalEntityRequest.
+        r"""Gets the body of this UpdateExternalEntityRequest.
 
         :return: The body of this UpdateExternalEntityRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateExternalEntityReqDTO`
@@ -108,7 +108,7 @@ class UpdateExternalEntityRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateExternalEntityRequest.
+        r"""Sets the body of this UpdateExternalEntityRequest.
 
         :param body: The body of this UpdateExternalEntityRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.UpdateExternalEntityReqDTO`

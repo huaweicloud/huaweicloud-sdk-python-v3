@@ -25,7 +25,7 @@ class TemplateListRO:
     }
 
     def __init__(self, ids=None):
-        """TemplateListRO
+        r"""TemplateListRO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TemplateListRO:
 
     @property
     def ids(self):
-        """Gets the ids of this TemplateListRO.
+        r"""Gets the ids of this TemplateListRO.
 
         模板id列表
 
@@ -54,7 +54,7 @@ class TemplateListRO:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this TemplateListRO.
+        r"""Sets the ids of this TemplateListRO.
 
         模板id列表
 

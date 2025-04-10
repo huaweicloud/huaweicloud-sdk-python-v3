@@ -35,7 +35,7 @@ class EditVideoInfo:
     }
 
     def __init__(self, reference=None, width=None, height=None, codec=None, bitrate=None, frame_rate=None):
-        """EditVideoInfo
+        r"""EditVideoInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class EditVideoInfo:
 
     @property
     def reference(self):
-        """Gets the reference of this EditVideoInfo.
+        r"""Gets the reference of this EditVideoInfo.
 
         剪辑输出视频参数的参照物。取值如下： - MAX，以输入片源中最大分辨率的视频参数作为输出参照。 - MIN，以输入片源中最小分辨率的视频参数作为输出参照。 - CUSTOM，自定义视频输出参数，使用该参数时，所有视频参数必填。- SHORT_HEIGHT_SHORT_WIDTH，当edit_type为MIX时，只能使用该值。
 
@@ -89,7 +89,7 @@ class EditVideoInfo:
 
     @reference.setter
     def reference(self, reference):
-        """Sets the reference of this EditVideoInfo.
+        r"""Sets the reference of this EditVideoInfo.
 
         剪辑输出视频参数的参照物。取值如下： - MAX，以输入片源中最大分辨率的视频参数作为输出参照。 - MIN，以输入片源中最小分辨率的视频参数作为输出参照。 - CUSTOM，自定义视频输出参数，使用该参数时，所有视频参数必填。- SHORT_HEIGHT_SHORT_WIDTH，当edit_type为MIX时，只能使用该值。
 
@@ -100,7 +100,7 @@ class EditVideoInfo:
 
     @property
     def width(self):
-        """Gets the width of this EditVideoInfo.
+        r"""Gets the width of this EditVideoInfo.
 
         视频宽度。
 
@@ -111,7 +111,7 @@ class EditVideoInfo:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this EditVideoInfo.
+        r"""Sets the width of this EditVideoInfo.
 
         视频宽度。
 
@@ -122,7 +122,7 @@ class EditVideoInfo:
 
     @property
     def height(self):
-        """Gets the height of this EditVideoInfo.
+        r"""Gets the height of this EditVideoInfo.
 
         视频高度。
 
@@ -133,7 +133,7 @@ class EditVideoInfo:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this EditVideoInfo.
+        r"""Sets the height of this EditVideoInfo.
 
         视频高度。
 
@@ -144,7 +144,7 @@ class EditVideoInfo:
 
     @property
     def codec(self):
-        """Gets the codec of this EditVideoInfo.
+        r"""Gets the codec of this EditVideoInfo.
 
         视频频编码格式。
 
@@ -155,7 +155,7 @@ class EditVideoInfo:
 
     @codec.setter
     def codec(self, codec):
-        """Sets the codec of this EditVideoInfo.
+        r"""Sets the codec of this EditVideoInfo.
 
         视频频编码格式。
 
@@ -166,7 +166,7 @@ class EditVideoInfo:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this EditVideoInfo.
+        r"""Gets the bitrate of this EditVideoInfo.
 
         视频码率，单位: bit/s 
 
@@ -177,7 +177,7 @@ class EditVideoInfo:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this EditVideoInfo.
+        r"""Sets the bitrate of this EditVideoInfo.
 
         视频码率，单位: bit/s 
 
@@ -188,7 +188,7 @@ class EditVideoInfo:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this EditVideoInfo.
+        r"""Gets the frame_rate of this EditVideoInfo.
 
         帧率。 
 
@@ -199,7 +199,7 @@ class EditVideoInfo:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this EditVideoInfo.
+        r"""Sets the frame_rate of this EditVideoInfo.
 
         帧率。 
 

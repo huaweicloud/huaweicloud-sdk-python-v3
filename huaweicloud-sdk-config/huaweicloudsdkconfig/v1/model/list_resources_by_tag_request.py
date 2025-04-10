@@ -31,7 +31,7 @@ class ListResourcesByTagRequest:
     }
 
     def __init__(self, resource_type=None, limit=None, offset=None, body=None):
-        """ListResourcesByTagRequest
+        r"""ListResourcesByTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListResourcesByTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListResourcesByTagRequest.
+        r"""Gets the resource_type of this ListResourcesByTagRequest.
 
         资源类型
 
@@ -74,7 +74,7 @@ class ListResourcesByTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListResourcesByTagRequest.
+        r"""Sets the resource_type of this ListResourcesByTagRequest.
 
         资源类型
 
@@ -85,7 +85,7 @@ class ListResourcesByTagRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourcesByTagRequest.
+        r"""Gets the limit of this ListResourcesByTagRequest.
 
         查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000,不能为负数，最小值为1
 
@@ -96,7 +96,7 @@ class ListResourcesByTagRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourcesByTagRequest.
+        r"""Sets the limit of this ListResourcesByTagRequest.
 
         查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000,不能为负数，最小值为1
 
@@ -107,7 +107,7 @@ class ListResourcesByTagRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListResourcesByTagRequest.
+        r"""Gets the offset of this ListResourcesByTagRequest.
 
         索引位置，偏移量（action为count时无此参数）从第一条数据偏移offset条数据后开始查询，如果action为filter默认为0（偏移0条数据，表示从第一条数据开始查询）,必须为数字，不能为负数
 
@@ -118,7 +118,7 @@ class ListResourcesByTagRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListResourcesByTagRequest.
+        r"""Sets the offset of this ListResourcesByTagRequest.
 
         索引位置，偏移量（action为count时无此参数）从第一条数据偏移offset条数据后开始查询，如果action为filter默认为0（偏移0条数据，表示从第一条数据开始查询）,必须为数字，不能为负数
 
@@ -129,7 +129,7 @@ class ListResourcesByTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListResourcesByTagRequest.
+        r"""Gets the body of this ListResourcesByTagRequest.
 
         :return: The body of this ListResourcesByTagRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.ResourceInstancesReq`
@@ -138,7 +138,7 @@ class ListResourcesByTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListResourcesByTagRequest.
+        r"""Sets the body of this ListResourcesByTagRequest.
 
         :param body: The body of this ListResourcesByTagRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.ResourceInstancesReq`

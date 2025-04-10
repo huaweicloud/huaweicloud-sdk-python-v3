@@ -27,7 +27,7 @@ class CreateTrafficControllerRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateTrafficControllerRequest
+        r"""CreateTrafficControllerRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateTrafficControllerRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateTrafficControllerRequest.
+        r"""Gets the instance_id of this CreateTrafficControllerRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -61,7 +61,7 @@ class CreateTrafficControllerRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateTrafficControllerRequest.
+        r"""Sets the instance_id of this CreateTrafficControllerRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -72,7 +72,7 @@ class CreateTrafficControllerRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTrafficControllerRequest.
+        r"""Gets the body of this CreateTrafficControllerRequest.
 
         :return: The body of this CreateTrafficControllerRequest.
         :rtype: :class:`huaweicloudsdkdris.v1.AddTrafficControllerDTO`
@@ -81,7 +81,7 @@ class CreateTrafficControllerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTrafficControllerRequest.
+        r"""Sets the body of this CreateTrafficControllerRequest.
 
         :param body: The body of this CreateTrafficControllerRequest.
         :type body: :class:`huaweicloudsdkdris.v1.AddTrafficControllerDTO`

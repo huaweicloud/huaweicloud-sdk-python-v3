@@ -25,7 +25,7 @@ class SiteConnectionState:
     }
 
     def __init__(self, state=None):
-        """SiteConnectionState
+        r"""SiteConnectionState
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SiteConnectionState:
 
     @property
     def state(self):
-        """Gets the state of this SiteConnectionState.
+        r"""Gets the state of this SiteConnectionState.
 
         :return: The state of this SiteConnectionState.
         :rtype: :class:`huaweicloudsdkcc.v3.SiteConnectionStateEnum`
@@ -51,7 +51,7 @@ class SiteConnectionState:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this SiteConnectionState.
+        r"""Sets the state of this SiteConnectionState.
 
         :param state: The state of this SiteConnectionState.
         :type state: :class:`huaweicloudsdkcc.v3.SiteConnectionStateEnum`

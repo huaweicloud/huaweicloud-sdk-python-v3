@@ -29,7 +29,7 @@ class UpdateWorkSpaceUserOrGroupRequest:
     }
 
     def __init__(self, workspace_id=None, user_id=None, body=None):
-        """UpdateWorkSpaceUserOrGroupRequest
+        r"""UpdateWorkSpaceUserOrGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateWorkSpaceUserOrGroupRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdateWorkSpaceUserOrGroupRequest.
+        r"""Gets the workspace_id of this UpdateWorkSpaceUserOrGroupRequest.
 
         工作空间id
 
@@ -66,7 +66,7 @@ class UpdateWorkSpaceUserOrGroupRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdateWorkSpaceUserOrGroupRequest.
+        r"""Sets the workspace_id of this UpdateWorkSpaceUserOrGroupRequest.
 
         工作空间id
 
@@ -77,7 +77,7 @@ class UpdateWorkSpaceUserOrGroupRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateWorkSpaceUserOrGroupRequest.
+        r"""Gets the user_id of this UpdateWorkSpaceUserOrGroupRequest.
 
         用户id
 
@@ -88,7 +88,7 @@ class UpdateWorkSpaceUserOrGroupRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateWorkSpaceUserOrGroupRequest.
+        r"""Sets the user_id of this UpdateWorkSpaceUserOrGroupRequest.
 
         用户id
 
@@ -99,7 +99,7 @@ class UpdateWorkSpaceUserOrGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateWorkSpaceUserOrGroupRequest.
+        r"""Gets the body of this UpdateWorkSpaceUserOrGroupRequest.
 
         :return: The body of this UpdateWorkSpaceUserOrGroupRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApigWorkspaceUserDto`
@@ -108,7 +108,7 @@ class UpdateWorkSpaceUserOrGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateWorkSpaceUserOrGroupRequest.
+        r"""Sets the body of this UpdateWorkSpaceUserOrGroupRequest.
 
         :param body: The body of this UpdateWorkSpaceUserOrGroupRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApigWorkspaceUserDto`

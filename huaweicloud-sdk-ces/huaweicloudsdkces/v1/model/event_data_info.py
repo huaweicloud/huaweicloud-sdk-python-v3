@@ -29,7 +29,7 @@ class EventDataInfo:
     }
 
     def __init__(self, type=None, timestamp=None, value=None):
-        """EventDataInfo
+        r"""EventDataInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class EventDataInfo:
 
     @property
     def type(self):
-        """Gets the type of this EventDataInfo.
+        r"""Gets the type of this EventDataInfo.
 
         事件类型，例如instance_host_info。
 
@@ -65,7 +65,7 @@ class EventDataInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EventDataInfo.
+        r"""Sets the type of this EventDataInfo.
 
         事件类型，例如instance_host_info。
 
@@ -76,7 +76,7 @@ class EventDataInfo:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this EventDataInfo.
+        r"""Gets the timestamp of this EventDataInfo.
 
         事件上报时间。
 
@@ -87,7 +87,7 @@ class EventDataInfo:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this EventDataInfo.
+        r"""Sets the timestamp of this EventDataInfo.
 
         事件上报时间。
 
@@ -98,7 +98,7 @@ class EventDataInfo:
 
     @property
     def value(self):
-        """Gets the value of this EventDataInfo.
+        r"""Gets the value of this EventDataInfo.
 
         主机配置信息。
 
@@ -109,7 +109,7 @@ class EventDataInfo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this EventDataInfo.
+        r"""Sets the value of this EventDataInfo.
 
         主机配置信息。
 

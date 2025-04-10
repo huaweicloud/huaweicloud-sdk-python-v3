@@ -41,7 +41,7 @@ class SearchMeetingsRequest:
     }
 
     def __init__(self, user_uuid=None, offset=None, limit=None, query_all=None, search_key=None, query_conf_mode=None, sort_type=None, x_authorization_type=None, x_site_id=None):
-        """SearchMeetingsRequest
+        r"""SearchMeetingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class SearchMeetingsRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this SearchMeetingsRequest.
+        r"""Gets the user_uuid of this SearchMeetingsRequest.
 
         用户的UUID。 > 仅管理员有权限查询本企业其他用户的会议列表；普通帐号该字段无效，只能查询自己的。 
 
@@ -110,7 +110,7 @@ class SearchMeetingsRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this SearchMeetingsRequest.
+        r"""Sets the user_uuid of this SearchMeetingsRequest.
 
         用户的UUID。 > 仅管理员有权限查询本企业其他用户的会议列表；普通帐号该字段无效，只能查询自己的。 
 
@@ -121,7 +121,7 @@ class SearchMeetingsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchMeetingsRequest.
+        r"""Gets the offset of this SearchMeetingsRequest.
 
         查询偏移量。默认为0。
 
@@ -132,7 +132,7 @@ class SearchMeetingsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchMeetingsRequest.
+        r"""Sets the offset of this SearchMeetingsRequest.
 
         查询偏移量。默认为0。
 
@@ -143,7 +143,7 @@ class SearchMeetingsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchMeetingsRequest.
+        r"""Gets the limit of this SearchMeetingsRequest.
 
         查询数量。默认是20，最大500条。
 
@@ -154,7 +154,7 @@ class SearchMeetingsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchMeetingsRequest.
+        r"""Sets the limit of this SearchMeetingsRequest.
 
         查询数量。默认是20，最大500条。
 
@@ -165,7 +165,7 @@ class SearchMeetingsRequest:
 
     @property
     def query_all(self):
-        """Gets the query_all of this SearchMeetingsRequest.
+        r"""Gets the query_all of this SearchMeetingsRequest.
 
         是否查询企业下所有用户的会议记录。默认值为false。 * true：查询所有用户的会议 * false：仅查询管理员自己创建的会议 > 仅对企业管理员生效。
 
@@ -176,7 +176,7 @@ class SearchMeetingsRequest:
 
     @query_all.setter
     def query_all(self, query_all):
-        """Sets the query_all of this SearchMeetingsRequest.
+        r"""Sets the query_all of this SearchMeetingsRequest.
 
         是否查询企业下所有用户的会议记录。默认值为false。 * true：查询所有用户的会议 * false：仅查询管理员自己创建的会议 > 仅对企业管理员生效。
 
@@ -187,7 +187,7 @@ class SearchMeetingsRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchMeetingsRequest.
+        r"""Gets the search_key of this SearchMeetingsRequest.
 
         查询条件。会议主题、会议预约人和会议ID等可作为搜索内容。长度限制为1-128个字符。
 
@@ -198,7 +198,7 @@ class SearchMeetingsRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchMeetingsRequest.
+        r"""Sets the search_key of this SearchMeetingsRequest.
 
         查询条件。会议主题、会议预约人和会议ID等可作为搜索内容。长度限制为1-128个字符。
 
@@ -209,7 +209,7 @@ class SearchMeetingsRequest:
 
     @property
     def query_conf_mode(self):
-        """Gets the query_conf_mode of this SearchMeetingsRequest.
+        r"""Gets the query_conf_mode of this SearchMeetingsRequest.
 
         查询时间范围。 - ADAY:  一天 - AWEEK:  一周 - AMONTH:  一个月 - ALL:  查询所有
 
@@ -220,7 +220,7 @@ class SearchMeetingsRequest:
 
     @query_conf_mode.setter
     def query_conf_mode(self, query_conf_mode):
-        """Sets the query_conf_mode of this SearchMeetingsRequest.
+        r"""Sets the query_conf_mode of this SearchMeetingsRequest.
 
         查询时间范围。 - ADAY:  一天 - AWEEK:  一周 - AMONTH:  一个月 - ALL:  查询所有
 
@@ -231,7 +231,7 @@ class SearchMeetingsRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this SearchMeetingsRequest.
+        r"""Gets the sort_type of this SearchMeetingsRequest.
 
         查询结果排序。 - ASC_StartTIME:  按会议开始时间升序排序 - DSC_StartTIME:  按会议开始时间降序排序
 
@@ -242,7 +242,7 @@ class SearchMeetingsRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this SearchMeetingsRequest.
+        r"""Sets the sort_type of this SearchMeetingsRequest.
 
         查询结果排序。 - ASC_StartTIME:  按会议开始时间升序排序 - DSC_StartTIME:  按会议开始时间降序排序
 
@@ -253,7 +253,7 @@ class SearchMeetingsRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this SearchMeetingsRequest.
+        r"""Gets the x_authorization_type of this SearchMeetingsRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -264,7 +264,7 @@ class SearchMeetingsRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this SearchMeetingsRequest.
+        r"""Sets the x_authorization_type of this SearchMeetingsRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -275,7 +275,7 @@ class SearchMeetingsRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this SearchMeetingsRequest.
+        r"""Gets the x_site_id of this SearchMeetingsRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -286,7 +286,7 @@ class SearchMeetingsRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this SearchMeetingsRequest.
+        r"""Sets the x_site_id of this SearchMeetingsRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 

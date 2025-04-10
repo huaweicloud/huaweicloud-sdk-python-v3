@@ -25,7 +25,7 @@ class ShowDeployTaskDetailRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowDeployTaskDetailRequest
+        r"""ShowDeployTaskDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDeployTaskDetailRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowDeployTaskDetailRequest.
+        r"""Gets the task_id of this ShowDeployTaskDetailRequest.
 
         部署任务id
 
@@ -53,7 +53,7 @@ class ShowDeployTaskDetailRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowDeployTaskDetailRequest.
+        r"""Sets the task_id of this ShowDeployTaskDetailRequest.
 
         部署任务id
 

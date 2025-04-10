@@ -26,7 +26,7 @@ class ListScalingNotificationsResponse(SdkResponse):
     }
 
     def __init__(self, topics=None):
-        """ListScalingNotificationsResponse
+        r"""ListScalingNotificationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListScalingNotificationsResponse(SdkResponse):
 
     @property
     def topics(self):
-        """Gets the topics of this ListScalingNotificationsResponse.
+        r"""Gets the topics of this ListScalingNotificationsResponse.
 
         伸缩组通知列表。
 
@@ -55,7 +55,7 @@ class ListScalingNotificationsResponse(SdkResponse):
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this ListScalingNotificationsResponse.
+        r"""Sets the topics of this ListScalingNotificationsResponse.
 
         伸缩组通知列表。
 

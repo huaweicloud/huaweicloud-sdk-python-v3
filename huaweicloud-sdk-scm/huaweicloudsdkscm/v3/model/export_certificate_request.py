@@ -25,7 +25,7 @@ class ExportCertificateRequest:
     }
 
     def __init__(self, certificate_id=None):
-        """ExportCertificateRequest
+        r"""ExportCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExportCertificateRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this ExportCertificateRequest.
+        r"""Gets the certificate_id of this ExportCertificateRequest.
 
         证书id。
 
@@ -53,7 +53,7 @@ class ExportCertificateRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this ExportCertificateRequest.
+        r"""Sets the certificate_id of this ExportCertificateRequest.
 
         证书id。
 

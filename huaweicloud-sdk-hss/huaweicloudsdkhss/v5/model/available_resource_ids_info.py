@@ -29,7 +29,7 @@ class AvailableResourceIdsInfo:
     }
 
     def __init__(self, resource_id=None, current_time=None, shared_quota=None):
-        """AvailableResourceIdsInfo
+        r"""AvailableResourceIdsInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AvailableResourceIdsInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this AvailableResourceIdsInfo.
+        r"""Gets the resource_id of this AvailableResourceIdsInfo.
 
         资源ID
 
@@ -68,7 +68,7 @@ class AvailableResourceIdsInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this AvailableResourceIdsInfo.
+        r"""Sets the resource_id of this AvailableResourceIdsInfo.
 
         资源ID
 
@@ -79,7 +79,7 @@ class AvailableResourceIdsInfo:
 
     @property
     def current_time(self):
-        """Gets the current_time of this AvailableResourceIdsInfo.
+        r"""Gets the current_time of this AvailableResourceIdsInfo.
 
         当前时间
 
@@ -90,7 +90,7 @@ class AvailableResourceIdsInfo:
 
     @current_time.setter
     def current_time(self, current_time):
-        """Sets the current_time of this AvailableResourceIdsInfo.
+        r"""Sets the current_time of this AvailableResourceIdsInfo.
 
         当前时间
 
@@ -101,7 +101,7 @@ class AvailableResourceIdsInfo:
 
     @property
     def shared_quota(self):
-        """Gets the shared_quota of this AvailableResourceIdsInfo.
+        r"""Gets the shared_quota of this AvailableResourceIdsInfo.
 
         是否共享配额   - shared：共享的   - unshared：非共享的
 
@@ -112,7 +112,7 @@ class AvailableResourceIdsInfo:
 
     @shared_quota.setter
     def shared_quota(self, shared_quota):
-        """Sets the shared_quota of this AvailableResourceIdsInfo.
+        r"""Sets the shared_quota of this AvailableResourceIdsInfo.
 
         是否共享配额   - shared：共享的   - unshared：非共享的
 

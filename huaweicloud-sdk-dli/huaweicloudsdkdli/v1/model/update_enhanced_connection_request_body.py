@@ -25,7 +25,7 @@ class UpdateEnhancedConnectionRequestBody:
     }
 
     def __init__(self, hosts=None):
-        """UpdateEnhancedConnectionRequestBody
+        r"""UpdateEnhancedConnectionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateEnhancedConnectionRequestBody:
 
     @property
     def hosts(self):
-        """Gets the hosts of this UpdateEnhancedConnectionRequestBody.
+        r"""Gets the hosts of this UpdateEnhancedConnectionRequestBody.
 
         用户自定义主机信息，最大支持2万条记录。内容填空表示清除所有已配置的主机信息。
 
@@ -53,7 +53,7 @@ class UpdateEnhancedConnectionRequestBody:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this UpdateEnhancedConnectionRequestBody.
+        r"""Sets the hosts of this UpdateEnhancedConnectionRequestBody.
 
         用户自定义主机信息，最大支持2万条记录。内容填空表示清除所有已配置的主机信息。
 

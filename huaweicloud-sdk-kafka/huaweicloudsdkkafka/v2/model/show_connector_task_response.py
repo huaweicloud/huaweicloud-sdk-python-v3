@@ -44,7 +44,7 @@ class ShowConnectorTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_name=None, topics=None, topics_regex=None, source_type=None, source_task=None, sink_type=None, sink_task=None, id=None, status=None, create_time=None):
-        """ShowConnectorTaskResponse
+        r"""ShowConnectorTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this ShowConnectorTaskResponse.
+        r"""Gets the task_name of this ShowConnectorTaskResponse.
 
         SmartConnect任务名称。
 
@@ -118,7 +118,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ShowConnectorTaskResponse.
+        r"""Sets the task_name of this ShowConnectorTaskResponse.
 
         SmartConnect任务名称。
 
@@ -129,7 +129,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @property
     def topics(self):
-        """Gets the topics of this ShowConnectorTaskResponse.
+        r"""Gets the topics of this ShowConnectorTaskResponse.
 
         SmartConnect任务配置的Topic。
 
@@ -140,7 +140,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this ShowConnectorTaskResponse.
+        r"""Sets the topics of this ShowConnectorTaskResponse.
 
         SmartConnect任务配置的Topic。
 
@@ -151,7 +151,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @property
     def topics_regex(self):
-        """Gets the topics_regex of this ShowConnectorTaskResponse.
+        r"""Gets the topics_regex of this ShowConnectorTaskResponse.
 
         SmartConnect任务配置的Topic正则表达式。
 
@@ -162,7 +162,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @topics_regex.setter
     def topics_regex(self, topics_regex):
-        """Sets the topics_regex of this ShowConnectorTaskResponse.
+        r"""Sets the topics_regex of this ShowConnectorTaskResponse.
 
         SmartConnect任务配置的Topic正则表达式。
 
@@ -173,7 +173,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @property
     def source_type(self):
-        """Gets the source_type of this ShowConnectorTaskResponse.
+        r"""Gets the source_type of this ShowConnectorTaskResponse.
 
         SmartConnect任务的源端类型。
 
@@ -184,7 +184,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this ShowConnectorTaskResponse.
+        r"""Sets the source_type of this ShowConnectorTaskResponse.
 
         SmartConnect任务的源端类型。
 
@@ -195,7 +195,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @property
     def source_task(self):
-        """Gets the source_task of this ShowConnectorTaskResponse.
+        r"""Gets the source_task of this ShowConnectorTaskResponse.
 
         :return: The source_task of this ShowConnectorTaskResponse.
         :rtype: :class:`huaweicloudsdkkafka.v2.SmartConnectTaskRespSourceConfig`
@@ -204,7 +204,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @source_task.setter
     def source_task(self, source_task):
-        """Sets the source_task of this ShowConnectorTaskResponse.
+        r"""Sets the source_task of this ShowConnectorTaskResponse.
 
         :param source_task: The source_task of this ShowConnectorTaskResponse.
         :type source_task: :class:`huaweicloudsdkkafka.v2.SmartConnectTaskRespSourceConfig`
@@ -213,7 +213,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @property
     def sink_type(self):
-        """Gets the sink_type of this ShowConnectorTaskResponse.
+        r"""Gets the sink_type of this ShowConnectorTaskResponse.
 
         SmartConnect任务的目标端类型。
 
@@ -224,7 +224,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @sink_type.setter
     def sink_type(self, sink_type):
-        """Sets the sink_type of this ShowConnectorTaskResponse.
+        r"""Sets the sink_type of this ShowConnectorTaskResponse.
 
         SmartConnect任务的目标端类型。
 
@@ -235,7 +235,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @property
     def sink_task(self):
-        """Gets the sink_task of this ShowConnectorTaskResponse.
+        r"""Gets the sink_task of this ShowConnectorTaskResponse.
 
         :return: The sink_task of this ShowConnectorTaskResponse.
         :rtype: :class:`huaweicloudsdkkafka.v2.SmartConnectTaskRespSinkConfig`
@@ -244,7 +244,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @sink_task.setter
     def sink_task(self, sink_task):
-        """Sets the sink_task of this ShowConnectorTaskResponse.
+        r"""Sets the sink_task of this ShowConnectorTaskResponse.
 
         :param sink_task: The sink_task of this ShowConnectorTaskResponse.
         :type sink_task: :class:`huaweicloudsdkkafka.v2.SmartConnectTaskRespSinkConfig`
@@ -253,7 +253,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowConnectorTaskResponse.
+        r"""Gets the id of this ShowConnectorTaskResponse.
 
         SmartConnect任务的id。
 
@@ -264,7 +264,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowConnectorTaskResponse.
+        r"""Sets the id of this ShowConnectorTaskResponse.
 
         SmartConnect任务的id。
 
@@ -275,7 +275,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowConnectorTaskResponse.
+        r"""Gets the status of this ShowConnectorTaskResponse.
 
         SmartConnect任务的状态。
 
@@ -286,7 +286,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowConnectorTaskResponse.
+        r"""Sets the status of this ShowConnectorTaskResponse.
 
         SmartConnect任务的状态。
 
@@ -297,7 +297,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowConnectorTaskResponse.
+        r"""Gets the create_time of this ShowConnectorTaskResponse.
 
         SmartConnect任务的创建时间。
 
@@ -308,7 +308,7 @@ class ShowConnectorTaskResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowConnectorTaskResponse.
+        r"""Sets the create_time of this ShowConnectorTaskResponse.
 
         SmartConnect任务的创建时间。
 

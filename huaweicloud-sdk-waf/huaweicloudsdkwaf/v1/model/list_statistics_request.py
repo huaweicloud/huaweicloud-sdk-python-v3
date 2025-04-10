@@ -33,7 +33,7 @@ class ListStatisticsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, _from=None, to=None, hosts=None, instances=None):
-        """ListStatisticsRequest
+        r"""ListStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListStatisticsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListStatisticsRequest.
+        r"""Gets the enterprise_project_id of this ListStatisticsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -80,7 +80,7 @@ class ListStatisticsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListStatisticsRequest.
+        r"""Sets the enterprise_project_id of this ListStatisticsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -91,7 +91,7 @@ class ListStatisticsRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ListStatisticsRequest.
+        r"""Gets the _from of this ListStatisticsRequest.
 
         起始时间(13位时间戳)，需要和to同时使用
 
@@ -102,7 +102,7 @@ class ListStatisticsRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ListStatisticsRequest.
+        r"""Sets the _from of this ListStatisticsRequest.
 
         起始时间(13位时间戳)，需要和to同时使用
 
@@ -113,7 +113,7 @@ class ListStatisticsRequest:
 
     @property
     def to(self):
-        """Gets the to of this ListStatisticsRequest.
+        r"""Gets the to of this ListStatisticsRequest.
 
         结束时间(13位时间戳),需要和from同时使用
 
@@ -124,7 +124,7 @@ class ListStatisticsRequest:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ListStatisticsRequest.
+        r"""Sets the to of this ListStatisticsRequest.
 
         结束时间(13位时间戳),需要和from同时使用
 
@@ -135,7 +135,7 @@ class ListStatisticsRequest:
 
     @property
     def hosts(self):
-        """Gets the hosts of this ListStatisticsRequest.
+        r"""Gets the hosts of this ListStatisticsRequest.
 
         域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
@@ -146,7 +146,7 @@ class ListStatisticsRequest:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this ListStatisticsRequest.
+        r"""Sets the hosts of this ListStatisticsRequest.
 
         域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
@@ -157,7 +157,7 @@ class ListStatisticsRequest:
 
     @property
     def instances(self):
-        """Gets the instances of this ListStatisticsRequest.
+        r"""Gets the instances of this ListStatisticsRequest.
 
         要查询引擎实例id
 
@@ -168,7 +168,7 @@ class ListStatisticsRequest:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListStatisticsRequest.
+        r"""Sets the instances of this ListStatisticsRequest.
 
         要查询引擎实例id
 

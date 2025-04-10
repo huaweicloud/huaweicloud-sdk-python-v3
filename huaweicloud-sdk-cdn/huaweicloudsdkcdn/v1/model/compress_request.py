@@ -25,7 +25,7 @@ class CompressRequest:
     }
 
     def __init__(self, compress_switch=None):
-        """CompressRequest
+        r"""CompressRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CompressRequest:
 
     @property
     def compress_switch(self):
-        """Gets the compress_switch of this CompressRequest.
+        r"""Gets the compress_switch of this CompressRequest.
 
         GZIP压缩开关。0关闭。1打开。
 
@@ -54,7 +54,7 @@ class CompressRequest:
 
     @compress_switch.setter
     def compress_switch(self, compress_switch):
-        """Sets the compress_switch of this CompressRequest.
+        r"""Sets the compress_switch of this CompressRequest.
 
         GZIP压缩开关。0关闭。1打开。
 

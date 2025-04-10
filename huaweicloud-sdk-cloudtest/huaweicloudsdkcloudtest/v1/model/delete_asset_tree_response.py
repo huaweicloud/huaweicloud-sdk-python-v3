@@ -30,7 +30,7 @@ class DeleteAssetTreeResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """DeleteAssetTreeResponse
+        r"""DeleteAssetTreeResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteAssetTreeResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DeleteAssetTreeResponse.
+        r"""Gets the code of this DeleteAssetTreeResponse.
 
         :return: The code of this DeleteAssetTreeResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class DeleteAssetTreeResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeleteAssetTreeResponse.
+        r"""Sets the code of this DeleteAssetTreeResponse.
 
         :param code: The code of this DeleteAssetTreeResponse.
         :type code: str
@@ -76,7 +76,7 @@ class DeleteAssetTreeResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteAssetTreeResponse.
+        r"""Gets the data of this DeleteAssetTreeResponse.
 
         :return: The data of this DeleteAssetTreeResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class DeleteAssetTreeResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteAssetTreeResponse.
+        r"""Sets the data of this DeleteAssetTreeResponse.
 
         :param data: The data of this DeleteAssetTreeResponse.
         :type data: object
@@ -94,7 +94,7 @@ class DeleteAssetTreeResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteAssetTreeResponse.
+        r"""Gets the message of this DeleteAssetTreeResponse.
 
         :return: The message of this DeleteAssetTreeResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class DeleteAssetTreeResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteAssetTreeResponse.
+        r"""Sets the message of this DeleteAssetTreeResponse.
 
         :param message: The message of this DeleteAssetTreeResponse.
         :type message: str

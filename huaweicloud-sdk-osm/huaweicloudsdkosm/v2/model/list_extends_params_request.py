@@ -35,7 +35,7 @@ class ListExtendsParamsRequest:
     }
 
     def __init__(self, business_type_id=None, incident_sub_type_id=None, product_category_id=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListExtendsParamsRequest
+        r"""ListExtendsParamsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListExtendsParamsRequest:
 
     @property
     def business_type_id(self):
-        """Gets the business_type_id of this ListExtendsParamsRequest.
+        r"""Gets the business_type_id of this ListExtendsParamsRequest.
 
         业务类型id
 
@@ -88,7 +88,7 @@ class ListExtendsParamsRequest:
 
     @business_type_id.setter
     def business_type_id(self, business_type_id):
-        """Sets the business_type_id of this ListExtendsParamsRequest.
+        r"""Sets the business_type_id of this ListExtendsParamsRequest.
 
         业务类型id
 
@@ -99,7 +99,7 @@ class ListExtendsParamsRequest:
 
     @property
     def incident_sub_type_id(self):
-        """Gets the incident_sub_type_id of this ListExtendsParamsRequest.
+        r"""Gets the incident_sub_type_id of this ListExtendsParamsRequest.
 
         工单子类型id
 
@@ -110,7 +110,7 @@ class ListExtendsParamsRequest:
 
     @incident_sub_type_id.setter
     def incident_sub_type_id(self, incident_sub_type_id):
-        """Sets the incident_sub_type_id of this ListExtendsParamsRequest.
+        r"""Sets the incident_sub_type_id of this ListExtendsParamsRequest.
 
         工单子类型id
 
@@ -121,7 +121,7 @@ class ListExtendsParamsRequest:
 
     @property
     def product_category_id(self):
-        """Gets the product_category_id of this ListExtendsParamsRequest.
+        r"""Gets the product_category_id of this ListExtendsParamsRequest.
 
         产品类型id
 
@@ -132,7 +132,7 @@ class ListExtendsParamsRequest:
 
     @product_category_id.setter
     def product_category_id(self, product_category_id):
-        """Sets the product_category_id of this ListExtendsParamsRequest.
+        r"""Sets the product_category_id of this ListExtendsParamsRequest.
 
         产品类型id
 
@@ -143,7 +143,7 @@ class ListExtendsParamsRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ListExtendsParamsRequest.
+        r"""Gets the x_site of this ListExtendsParamsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -154,7 +154,7 @@ class ListExtendsParamsRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ListExtendsParamsRequest.
+        r"""Sets the x_site of this ListExtendsParamsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -165,7 +165,7 @@ class ListExtendsParamsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListExtendsParamsRequest.
+        r"""Gets the x_language of this ListExtendsParamsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -176,7 +176,7 @@ class ListExtendsParamsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListExtendsParamsRequest.
+        r"""Sets the x_language of this ListExtendsParamsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -187,7 +187,7 @@ class ListExtendsParamsRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this ListExtendsParamsRequest.
+        r"""Gets the x_time_zone of this ListExtendsParamsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -198,7 +198,7 @@ class ListExtendsParamsRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this ListExtendsParamsRequest.
+        r"""Sets the x_time_zone of this ListExtendsParamsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

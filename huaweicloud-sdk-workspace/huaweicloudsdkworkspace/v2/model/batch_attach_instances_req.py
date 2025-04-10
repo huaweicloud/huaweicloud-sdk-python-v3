@@ -29,7 +29,7 @@ class BatchAttachInstancesReq:
     }
 
     def __init__(self, desktops=None, users=None, assign_model=None):
-        """BatchAttachInstancesReq
+        r"""BatchAttachInstancesReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchAttachInstancesReq:
 
     @property
     def desktops(self):
-        """Gets the desktops of this BatchAttachInstancesReq.
+        r"""Gets the desktops of this BatchAttachInstancesReq.
 
         桌面信息列表。
 
@@ -68,7 +68,7 @@ class BatchAttachInstancesReq:
 
     @desktops.setter
     def desktops(self, desktops):
-        """Sets the desktops of this BatchAttachInstancesReq.
+        r"""Sets the desktops of this BatchAttachInstancesReq.
 
         桌面信息列表。
 
@@ -79,7 +79,7 @@ class BatchAttachInstancesReq:
 
     @property
     def users(self):
-        """Gets the users of this BatchAttachInstancesReq.
+        r"""Gets the users of this BatchAttachInstancesReq.
 
         用户信息列表。
 
@@ -90,7 +90,7 @@ class BatchAttachInstancesReq:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this BatchAttachInstancesReq.
+        r"""Sets the users of this BatchAttachInstancesReq.
 
         用户信息列表。
 
@@ -101,7 +101,7 @@ class BatchAttachInstancesReq:
 
     @property
     def assign_model(self):
-        """Gets the assign_model of this BatchAttachInstancesReq.
+        r"""Gets the assign_model of this BatchAttachInstancesReq.
 
         :return: The assign_model of this BatchAttachInstancesReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AssignModelInfo`
@@ -110,7 +110,7 @@ class BatchAttachInstancesReq:
 
     @assign_model.setter
     def assign_model(self, assign_model):
-        """Sets the assign_model of this BatchAttachInstancesReq.
+        r"""Sets the assign_model of this BatchAttachInstancesReq.
 
         :param assign_model: The assign_model of this BatchAttachInstancesReq.
         :type assign_model: :class:`huaweicloudsdkworkspace.v2.AssignModelInfo`

@@ -28,7 +28,7 @@ class ListPremiumHostResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListPremiumHostResponse
+        r"""ListPremiumHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPremiumHostResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPremiumHostResponse.
+        r"""Gets the total of this ListPremiumHostResponse.
 
         全部防护域名的数量
 
@@ -62,7 +62,7 @@ class ListPremiumHostResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPremiumHostResponse.
+        r"""Sets the total of this ListPremiumHostResponse.
 
         全部防护域名的数量
 
@@ -73,7 +73,7 @@ class ListPremiumHostResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListPremiumHostResponse.
+        r"""Gets the items of this ListPremiumHostResponse.
 
         详细的防护域名信息数组
 
@@ -84,7 +84,7 @@ class ListPremiumHostResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListPremiumHostResponse.
+        r"""Sets the items of this ListPremiumHostResponse.
 
         详细的防护域名信息数组
 

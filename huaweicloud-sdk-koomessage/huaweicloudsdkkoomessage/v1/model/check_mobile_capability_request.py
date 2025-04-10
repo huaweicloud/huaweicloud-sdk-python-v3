@@ -25,7 +25,7 @@ class CheckMobileCapabilityRequest:
     }
 
     def __init__(self, body=None):
-        """CheckMobileCapabilityRequest
+        r"""CheckMobileCapabilityRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckMobileCapabilityRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckMobileCapabilityRequest.
+        r"""Gets the body of this CheckMobileCapabilityRequest.
 
         :return: The body of this CheckMobileCapabilityRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CheckMobileCapabilityRequestBody`
@@ -52,7 +52,7 @@ class CheckMobileCapabilityRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckMobileCapabilityRequest.
+        r"""Sets the body of this CheckMobileCapabilityRequest.
 
         :param body: The body of this CheckMobileCapabilityRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.CheckMobileCapabilityRequestBody`

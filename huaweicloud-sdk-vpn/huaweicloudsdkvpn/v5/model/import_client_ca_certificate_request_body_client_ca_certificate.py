@@ -28,7 +28,7 @@ class ImportClientCaCertificateRequestBodyClientCaCertificate:
     }
 
     def __init__(self, name=None, content=None):
-        """ImportClientCaCertificateRequestBodyClientCaCertificate
+        r"""ImportClientCaCertificateRequestBodyClientCaCertificate
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImportClientCaCertificateRequestBodyClientCaCertificate:
 
     @property
     def name(self):
-        """Gets the name of this ImportClientCaCertificateRequestBodyClientCaCertificate.
+        r"""Gets the name of this ImportClientCaCertificateRequestBodyClientCaCertificate.
 
         证书名
 
@@ -61,7 +61,7 @@ class ImportClientCaCertificateRequestBodyClientCaCertificate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImportClientCaCertificateRequestBodyClientCaCertificate.
+        r"""Sets the name of this ImportClientCaCertificateRequestBodyClientCaCertificate.
 
         证书名
 
@@ -72,7 +72,7 @@ class ImportClientCaCertificateRequestBodyClientCaCertificate:
 
     @property
     def content(self):
-        """Gets the content of this ImportClientCaCertificateRequestBodyClientCaCertificate.
+        r"""Gets the content of this ImportClientCaCertificateRequestBodyClientCaCertificate.
 
         内容
 
@@ -83,7 +83,7 @@ class ImportClientCaCertificateRequestBodyClientCaCertificate:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ImportClientCaCertificateRequestBodyClientCaCertificate.
+        r"""Sets the content of this ImportClientCaCertificateRequestBodyClientCaCertificate.
 
         内容
 

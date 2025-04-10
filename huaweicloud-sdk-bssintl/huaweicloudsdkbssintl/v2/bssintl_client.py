@@ -34,7 +34,7 @@ class BssintlClient(Client):
         return client_builder
 
     def list_conversions(self, request):
-        """查询使用量单位进制
+        r"""查询使用量单位进制
 
         功能描述：伙伴在伙伴销售平台上查询使用量单位的进制转换信息，用于不同度量单位之间的转换。
         
@@ -101,7 +101,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_costs(self, request):
-        """查询成本数据
+        r"""查询成本数据
 
         客户在自建平台查询成本分析数据。
         
@@ -168,7 +168,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_free_resource_usages(self, request):
-        """查询资源内使用量
+        r"""查询资源内使用量
 
         功能描述：客户在自建平台查询客户自己的资源包列表
         
@@ -235,7 +235,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_free_resources_usage_records(self, request):
-        """查询资源包使用明细
+        r"""查询资源包使用明细
 
         客户在自建平台查询资源包使用明细。
         
@@ -312,7 +312,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_measure_units(self, request):
-        """查询使用量单位列表
+        r"""查询使用量单位列表
 
         功能描述：伙伴在伙伴销售平台上查询资源使用量的度量单位及名称，度量单位类型等。
         
@@ -377,7 +377,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_resource_types(self, request):
-        """查询资源类型列表
+        r"""查询资源类型列表
 
         伙伴在伙伴销售平台查询资源类型的列表。
         
@@ -446,7 +446,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_service_types(self, request):
-        """查询云服务类型列表
+        r"""查询云服务类型列表
 
         伙伴在伙伴销售平台查询云服务类型的列表。
         
@@ -515,7 +515,7 @@ class BssintlClient(Client):
         return http_info
 
     def change_enterprise_realname_authentication(self, request):
-        """申请实名认证变更
+        r"""申请实名认证变更
 
         功能描述：客户可以进行实名认证变更申请。
         
@@ -580,7 +580,7 @@ class BssintlClient(Client):
         return http_info
 
     def check_user_identity(self, request):
-        """校验客户注册信息
+        r"""校验客户注册信息
 
         功能描述：客户注册时可检查客户的登录名称、手机号或者邮箱是否可以用于注册。
         
@@ -645,7 +645,7 @@ class BssintlClient(Client):
         return http_info
 
     def create_enterprise_project_auth(self, request):
-        """开通客户企业项目权限
+        r"""开通客户企业项目权限
 
         客户在自建平台开通客户企业项目权限。
         
@@ -708,7 +708,7 @@ class BssintlClient(Client):
         return http_info
 
     def create_enterprise_realname_authentication(self, request):
-        """申请企业实名认证
+        r"""申请企业实名认证
 
         功能描述：企业客户可以进行企业实名认证申请。
         
@@ -773,7 +773,7 @@ class BssintlClient(Client):
         return http_info
 
     def create_personal_realname_auth(self, request):
-        """申请个人实名认证
+        r"""申请个人实名认证
 
         功能描述：个人客户可以进行个人实名认证申请。
         
@@ -838,7 +838,7 @@ class BssintlClient(Client):
         return http_info
 
     def create_sub_customer(self, request):
-        """创建客户
+        r"""创建客户
 
         功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。华为云伙伴能力中心（一级经销商）可以注册云经销商伙伴（二级经销商）的子客户。注册完成后，子客户可以自动和云经销商伙伴绑定。
         
@@ -903,7 +903,7 @@ class BssintlClient(Client):
         return http_info
 
     def freeze_sub_customers(self, request):
-        """冻结客户账号
+        r"""冻结客户账号
 
         功能描述：冻结伙伴子客户
         
@@ -968,7 +968,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_customer_on_demand_resources(self, request):
-        """查询客户按需资源列表
+        r"""查询客户按需资源列表
 
         功能描述：客户在伙伴销售平台查询已开通的按需资源
         
@@ -1035,7 +1035,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_customerself_resource_record_details(self, request):
-        """查询资源详单
+        r"""查询资源详单
 
         功能描述：客户在客户自建平台查询自己的资源详单，用于反映各类资源的消耗情况。
         
@@ -1102,7 +1102,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_customerself_resource_records(self, request):
-        """查询资源消费记录
+        r"""查询资源消费记录
 
         功能描述：客户在客户自建平台查询每个资源的消费明细数据
         
@@ -1199,7 +1199,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_enterprise_sub_customers(self, request):
-        """查询企业子账号列表
+        r"""查询企业子账号列表
 
         企业主账号在自建平台查询企业子账号信息列表。
         
@@ -1274,7 +1274,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_free_resource_infos(self, request):
-        """查询资源包列表
+        r"""查询资源包列表
 
         功能描述：客户在自建平台查询资源包列表。
         
@@ -1341,7 +1341,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_indirect_partners(self, request):
-        """查询云经销商列表
+        r"""查询云经销商列表
 
         华为云总经销商（一级经销商）可以查询云经销商（二级经销商）列表。
         
@@ -1408,7 +1408,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_invoices(self, request):
-        """查询发票列表
+        r"""查询发票列表
 
         功能描述：查询发票列表
         
@@ -1479,7 +1479,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_monthly_expenditures(self, request):
-        """查询消费汇总(客户)
+        r"""查询消费汇总(客户)
 
         功能描述：客户可以查询自身的消费汇总单的功能，消费按月汇总。
         
@@ -1550,7 +1550,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_on_demand_resource_ratings(self, request):
-        """查询按需产品价格
+        r"""查询按需产品价格
 
         功能描述：按需资源询价
         
@@ -1615,7 +1615,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_postpaid_bill_sum(self, request):
-        """查询伙伴月度消费账单
+        r"""查询伙伴月度消费账单
 
         功能描述：伙伴可以查询伙伴月度消费账单
         
@@ -1680,7 +1680,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_rate_on_period_detail(self, request):
-        """查询包年/包月产品价格
+        r"""查询包年/包月产品价格
 
         功能描述：客户在自建平台按照条件查询包年/包月产品开通时候的价格
         
@@ -1745,7 +1745,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_renew_rate_on_period(self, request):
-        """查询待续订包年包月资源的续订金额
+        r"""查询待续订包年包月资源的续订金额
 
         功能描述：客户在自建平台按照条件查询待续订包年/包月资源续订时候的续订金额
         
@@ -1810,7 +1810,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_service_resources(self, request):
-        """根据云服务类型查询资源列表
+        r"""根据云服务类型查询资源列表
 
         功能描述：伙伴在伙伴销售平台根据云服务类型查询关联的资源类型编码和名称，用于查询按需产品的价格或包年/包月产品的价格。
         
@@ -1881,7 +1881,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_sub_customer_budget(self, request):
-        """批量查询客户预算
+        r"""批量查询客户预算
 
         功能描述：批量查询客户预算
         
@@ -1946,7 +1946,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_sub_customer_coupons(self, request):
-        """查询优惠券列表
+        r"""查询优惠券列表
 
         功能描述：伙伴/客户可以查询自身的优惠券信息。
         
@@ -2029,7 +2029,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_sub_customers(self, request):
-        """查询客户列表
+        r"""查询客户列表
 
         功能描述：伙伴可以查询合作伙伴的客户信息列表。
         
@@ -2094,7 +2094,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_usage_types(self, request):
-        """查询使用量类型列表
+        r"""查询使用量类型列表
 
         功能描述：伙伴在伙伴销售平台查询资源的使用量类型列表。
         
@@ -2165,7 +2165,7 @@ class BssintlClient(Client):
         return http_info
 
     def send_verification_message_code(self, request):
-        """发送验证码
+        r"""发送验证码
 
         功能描述：客户注册时，如果填写了邮箱，可以向对应的邮箱发送注册验证码，校验信息的正确性。
         
@@ -2230,7 +2230,7 @@ class BssintlClient(Client):
         return http_info
 
     def show_customer_account_balances(self, request):
-        """查询账户余额
+        r"""查询账户余额
 
         功能描述：客户可以查询自身的账户余额。
         
@@ -2293,7 +2293,7 @@ class BssintlClient(Client):
         return http_info
 
     def show_partner_consumption_quota(self, request):
-        """查询消费配额
+        r"""查询消费配额
 
         功能描述：合作伙伴可以查询消费配额。
         
@@ -2356,7 +2356,7 @@ class BssintlClient(Client):
         return http_info
 
     def show_realname_authentication_review_result(self, request):
-        """查询实名认证审核结果
+        r"""查询实名认证审核结果
 
         功能描述：如果实名认证申请或实名认证变更申请的响应中，显示需要人工审核，使用该接口查询审核结果。
         
@@ -2421,7 +2421,7 @@ class BssintlClient(Client):
         return http_info
 
     def show_sub_customer_budget(self, request):
-        """查询客户预算
+        r"""查询客户预算
 
         功能描述：查询客户预算
         
@@ -2488,7 +2488,7 @@ class BssintlClient(Client):
         return http_info
 
     def unfreeze_sub_customers(self, request):
-        """解冻客户账号
+        r"""解冻客户账号
 
         功能描述：解冻伙伴子客户
         
@@ -2553,7 +2553,7 @@ class BssintlClient(Client):
         return http_info
 
     def update_sub_customer_budget(self, request):
-        """设置客户预算
+        r"""设置客户预算
 
         功能描述：设置客户预算
         
@@ -2618,7 +2618,7 @@ class BssintlClient(Client):
         return http_info
 
     def auto_renewal_resources(self, request):
-        """设置包年/包月资源自动续费
+        r"""设置包年/包月资源自动续费
 
         功能描述：客户可以设置包年/包月资源到期后转为按需资源计费
         
@@ -2683,7 +2683,7 @@ class BssintlClient(Client):
         return http_info
 
     def cancel_auto_renewal_resources(self, request):
-        """取消包年/包月资源自动续费
+        r"""取消包年/包月资源自动续费
 
         功能描述：取消包年/包月资源自动续费
         
@@ -2748,7 +2748,7 @@ class BssintlClient(Client):
         return http_info
 
     def cancel_customer_order(self, request):
-        """取消待支付订单
+        r"""取消待支付订单
 
         功能描述：客户可以对待支付的订单进行取消操作
         
@@ -2813,7 +2813,7 @@ class BssintlClient(Client):
         return http_info
 
     def cancel_resources_subscription(self, request):
-        """退订包年/包月资源
+        r"""退订包年/包月资源
 
         功能描述：客户购买包年/包月资源后，支持客户退订包年/包月实例。退订资源实例包括资源续费部分和当前正在使用的部分，退订后资源将无法使用
         
@@ -2878,7 +2878,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_customer_orders(self, request):
-        """查询订单列表
+        r"""查询订单列表
 
         功能描述：客户购买包年包月资源后，可以查看待审核、处理中、已取消、已完成和待支付等状态的订单
         
@@ -2969,7 +2969,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_order_discounts(self, request):
-        """查询订单可用折扣
+        r"""查询订单可用折扣
 
         功能描述：功能介绍客户在伙伴销售平台支付待支付订单时，查询可使用的折扣。只返回商务合同折扣和伙伴授权折扣客户在客户自建平台查看订单可用的优惠券列表。
         
@@ -3034,7 +3034,7 @@ class BssintlClient(Client):
         return http_info
 
     def list_pay_per_use_customer_resources(self, request):
-        """查询客户包年/包月资源列表
+        r"""查询客户包年/包月资源列表
 
         功能描述：客户在客户自建平台查询某个或所有的包年/包月资源
         
@@ -3099,7 +3099,7 @@ class BssintlClient(Client):
         return http_info
 
     def pay_orders(self, request):
-        """支付包年/包月产品订单
+        r"""支付包年/包月产品订单
 
         客户可以对待支付状态的包年/包月产品订单进行支付
         
@@ -3164,7 +3164,7 @@ class BssintlClient(Client):
         return http_info
 
     def renewal_resources(self, request):
-        """续订包年/包月资源
+        r"""续订包年/包月资源
 
         功能描述：客户的包年包/月资源即将到期时，可进行包年/包月资源的续订
         
@@ -3229,7 +3229,7 @@ class BssintlClient(Client):
         return http_info
 
     def show_customer_order_details(self, request):
-        """查询订单详情
+        r"""查询订单详情
 
         功能描述：客户可以查看订单详情
         
@@ -3302,7 +3302,7 @@ class BssintlClient(Client):
         return http_info
 
     def show_refund_order_details(self, request):
-        """查询退款订单的金额详情
+        r"""查询退款订单的金额详情
 
         功能描述：客户在伙伴销售平台查询某次退订订单或者降配订单的退款金额来自哪些资源和对应订单
         
@@ -3367,7 +3367,7 @@ class BssintlClient(Client):
         return http_info
 
     def update_period_to_on_demand(self, request):
-        """设置或者取消包年/包月资源到期转按需
+        r"""设置或者取消包年/包月资源到期转按需
 
         功能描述：客户可以设置包年/包月资源到期后转为按需资源计费。包年/包月计费模式到期后，按需的计费模式即生效
         

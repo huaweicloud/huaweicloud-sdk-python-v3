@@ -25,7 +25,7 @@ class KeystoneShowIdentityProviderRequest:
     }
 
     def __init__(self, id=None):
-        """KeystoneShowIdentityProviderRequest
+        r"""KeystoneShowIdentityProviderRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneShowIdentityProviderRequest:
 
     @property
     def id(self):
-        """Gets the id of this KeystoneShowIdentityProviderRequest.
+        r"""Gets the id of this KeystoneShowIdentityProviderRequest.
 
         待查询的身份提供商ID。
 
@@ -53,7 +53,7 @@ class KeystoneShowIdentityProviderRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this KeystoneShowIdentityProviderRequest.
+        r"""Sets the id of this KeystoneShowIdentityProviderRequest.
 
         待查询的身份提供商ID。
 

@@ -35,7 +35,7 @@ class ListFailureJobsRequest:
     }
 
     def __init__(self, failure_status=None, resource_name=None, server_group_id=None, resource_type=None, limit=None, offset=None):
-        """ListFailureJobsRequest
+        r"""ListFailureJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListFailureJobsRequest:
 
     @property
     def failure_status(self):
-        """Gets the failure_status of this ListFailureJobsRequest.
+        r"""Gets the failure_status of this ListFailureJobsRequest.
 
         失败任务状态。createFail：表示创建失败。deleteFail：表示删除失败。attachFail：表示挂载失败。detachFail：表示卸载失败。expandFail：表示扩容失败。resizeFail：表示变更规格失败。startFail：表示开启保护失败。stopFail：表示停止保护失败。reverseFail：表示切换失败。failoverFail：表示故障切换失败。reprotectFail : 表示重保护失败。
 
@@ -89,7 +89,7 @@ class ListFailureJobsRequest:
 
     @failure_status.setter
     def failure_status(self, failure_status):
-        """Sets the failure_status of this ListFailureJobsRequest.
+        r"""Sets the failure_status of this ListFailureJobsRequest.
 
         失败任务状态。createFail：表示创建失败。deleteFail：表示删除失败。attachFail：表示挂载失败。detachFail：表示卸载失败。expandFail：表示扩容失败。resizeFail：表示变更规格失败。startFail：表示开启保护失败。stopFail：表示停止保护失败。reverseFail：表示切换失败。failoverFail：表示故障切换失败。reprotectFail : 表示重保护失败。
 
@@ -100,7 +100,7 @@ class ListFailureJobsRequest:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ListFailureJobsRequest.
+        r"""Gets the resource_name of this ListFailureJobsRequest.
 
         保护组资源名称。
 
@@ -111,7 +111,7 @@ class ListFailureJobsRequest:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ListFailureJobsRequest.
+        r"""Sets the resource_name of this ListFailureJobsRequest.
 
         保护组资源名称。
 
@@ -122,7 +122,7 @@ class ListFailureJobsRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ListFailureJobsRequest.
+        r"""Gets the server_group_id of this ListFailureJobsRequest.
 
         保护组ID。
 
@@ -133,7 +133,7 @@ class ListFailureJobsRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ListFailureJobsRequest.
+        r"""Sets the server_group_id of this ListFailureJobsRequest.
 
         保护组ID。
 
@@ -144,7 +144,7 @@ class ListFailureJobsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListFailureJobsRequest.
+        r"""Gets the resource_type of this ListFailureJobsRequest.
 
         资源类型。server_groups：表示保护组。protected_instances：表示保护实例。replications：表示复制对。disaster_recovery_drills：表示容灾演练。
 
@@ -155,7 +155,7 @@ class ListFailureJobsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListFailureJobsRequest.
+        r"""Sets the resource_type of this ListFailureJobsRequest.
 
         资源类型。server_groups：表示保护组。protected_instances：表示保护实例。replications：表示复制对。disaster_recovery_drills：表示容灾演练。
 
@@ -166,7 +166,7 @@ class ListFailureJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFailureJobsRequest.
+        r"""Gets the limit of this ListFailureJobsRequest.
 
         每次请求返回结果个数限制。取值范围为[0,1000]的正整数，默认值为1000。
 
@@ -177,7 +177,7 @@ class ListFailureJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFailureJobsRequest.
+        r"""Sets the limit of this ListFailureJobsRequest.
 
         每次请求返回结果个数限制。取值范围为[0,1000]的正整数，默认值为1000。
 
@@ -188,7 +188,7 @@ class ListFailureJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFailureJobsRequest.
+        r"""Gets the offset of this ListFailureJobsRequest.
 
         每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
 
@@ -199,7 +199,7 @@ class ListFailureJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFailureJobsRequest.
+        r"""Sets the offset of this ListFailureJobsRequest.
 
         每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
 

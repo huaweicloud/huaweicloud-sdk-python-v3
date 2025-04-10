@@ -37,7 +37,7 @@ class ListContentCompareDifferenceRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, compare_job_id=None, table_name=None, db_name=None, limit=None, offset=None):
-        """ListContentCompareDifferenceRequest
+        r"""ListContentCompareDifferenceRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListContentCompareDifferenceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListContentCompareDifferenceRequest.
+        r"""Gets the x_language of this ListContentCompareDifferenceRequest.
 
         请求语言类型。
 
@@ -94,7 +94,7 @@ class ListContentCompareDifferenceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListContentCompareDifferenceRequest.
+        r"""Sets the x_language of this ListContentCompareDifferenceRequest.
 
         请求语言类型。
 
@@ -105,7 +105,7 @@ class ListContentCompareDifferenceRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListContentCompareDifferenceRequest.
+        r"""Gets the job_id of this ListContentCompareDifferenceRequest.
 
         任务ID。
 
@@ -116,7 +116,7 @@ class ListContentCompareDifferenceRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListContentCompareDifferenceRequest.
+        r"""Sets the job_id of this ListContentCompareDifferenceRequest.
 
         任务ID。
 
@@ -127,7 +127,7 @@ class ListContentCompareDifferenceRequest:
 
     @property
     def compare_job_id(self):
-        """Gets the compare_job_id of this ListContentCompareDifferenceRequest.
+        r"""Gets the compare_job_id of this ListContentCompareDifferenceRequest.
 
         对比任务ID。
 
@@ -138,7 +138,7 @@ class ListContentCompareDifferenceRequest:
 
     @compare_job_id.setter
     def compare_job_id(self, compare_job_id):
-        """Sets the compare_job_id of this ListContentCompareDifferenceRequest.
+        r"""Sets the compare_job_id of this ListContentCompareDifferenceRequest.
 
         对比任务ID。
 
@@ -149,7 +149,7 @@ class ListContentCompareDifferenceRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListContentCompareDifferenceRequest.
+        r"""Gets the table_name of this ListContentCompareDifferenceRequest.
 
         表名。
 
@@ -160,7 +160,7 @@ class ListContentCompareDifferenceRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListContentCompareDifferenceRequest.
+        r"""Sets the table_name of this ListContentCompareDifferenceRequest.
 
         表名。
 
@@ -171,7 +171,7 @@ class ListContentCompareDifferenceRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ListContentCompareDifferenceRequest.
+        r"""Gets the db_name of this ListContentCompareDifferenceRequest.
 
         源库名称。
 
@@ -182,7 +182,7 @@ class ListContentCompareDifferenceRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ListContentCompareDifferenceRequest.
+        r"""Sets the db_name of this ListContentCompareDifferenceRequest.
 
         源库名称。
 
@@ -193,7 +193,7 @@ class ListContentCompareDifferenceRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListContentCompareDifferenceRequest.
+        r"""Gets the limit of this ListContentCompareDifferenceRequest.
 
         每页显示的条目数量，最大值1000。
 
@@ -204,7 +204,7 @@ class ListContentCompareDifferenceRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListContentCompareDifferenceRequest.
+        r"""Sets the limit of this ListContentCompareDifferenceRequest.
 
         每页显示的条目数量，最大值1000。
 
@@ -215,7 +215,7 @@ class ListContentCompareDifferenceRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListContentCompareDifferenceRequest.
+        r"""Gets the offset of this ListContentCompareDifferenceRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -226,7 +226,7 @@ class ListContentCompareDifferenceRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListContentCompareDifferenceRequest.
+        r"""Sets the offset of this ListContentCompareDifferenceRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 

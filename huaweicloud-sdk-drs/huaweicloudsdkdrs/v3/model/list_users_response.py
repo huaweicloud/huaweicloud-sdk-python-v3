@@ -36,7 +36,7 @@ class ListUsersResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, is_global_password=None, message=None, user_list=None, roles_list=None, is_success=None):
-        """ListUsersResponse
+        r"""ListUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListUsersResponse.
+        r"""Gets the job_id of this ListUsersResponse.
 
         任务id
 
@@ -90,7 +90,7 @@ class ListUsersResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListUsersResponse.
+        r"""Sets the job_id of this ListUsersResponse.
 
         任务id
 
@@ -101,7 +101,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def is_global_password(self):
-        """Gets the is_global_password of this ListUsersResponse.
+        r"""Gets the is_global_password of this ListUsersResponse.
 
         是否使用全局密码
 
@@ -112,7 +112,7 @@ class ListUsersResponse(SdkResponse):
 
     @is_global_password.setter
     def is_global_password(self, is_global_password):
-        """Sets the is_global_password of this ListUsersResponse.
+        r"""Sets the is_global_password of this ListUsersResponse.
 
         是否使用全局密码
 
@@ -123,7 +123,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListUsersResponse.
+        r"""Gets the message of this ListUsersResponse.
 
         错误码
 
@@ -134,7 +134,7 @@ class ListUsersResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListUsersResponse.
+        r"""Sets the message of this ListUsersResponse.
 
         错误码
 
@@ -145,7 +145,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def user_list(self):
-        """Gets the user_list of this ListUsersResponse.
+        r"""Gets the user_list of this ListUsersResponse.
 
         用户列表数据
 
@@ -156,7 +156,7 @@ class ListUsersResponse(SdkResponse):
 
     @user_list.setter
     def user_list(self, user_list):
-        """Sets the user_list of this ListUsersResponse.
+        r"""Sets the user_list of this ListUsersResponse.
 
         用户列表数据
 
@@ -167,7 +167,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def roles_list(self):
-        """Gets the roles_list of this ListUsersResponse.
+        r"""Gets the roles_list of this ListUsersResponse.
 
         角色列表数据
 
@@ -178,7 +178,7 @@ class ListUsersResponse(SdkResponse):
 
     @roles_list.setter
     def roles_list(self, roles_list):
-        """Sets the roles_list of this ListUsersResponse.
+        r"""Sets the roles_list of this ListUsersResponse.
 
         角色列表数据
 
@@ -189,7 +189,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListUsersResponse.
+        r"""Gets the is_success of this ListUsersResponse.
 
         是否成功
 
@@ -200,7 +200,7 @@ class ListUsersResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListUsersResponse.
+        r"""Sets the is_success of this ListUsersResponse.
 
         是否成功
 

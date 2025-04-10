@@ -43,7 +43,7 @@ class SecrecyLevelVO:
     }
 
     def __init__(self, id=None, uuid=None, name=None, slevel=None, description=None, create_by=None, update_by=None, create_time=None, update_time=None, new_biz=None):
-        """SecrecyLevelVO
+        r"""SecrecyLevelVO
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class SecrecyLevelVO:
 
     @property
     def id(self):
-        """Gets the id of this SecrecyLevelVO.
+        r"""Gets the id of this SecrecyLevelVO.
 
         密级ID，ID字符串。
 
@@ -116,7 +116,7 @@ class SecrecyLevelVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecrecyLevelVO.
+        r"""Sets the id of this SecrecyLevelVO.
 
         密级ID，ID字符串。
 
@@ -127,7 +127,7 @@ class SecrecyLevelVO:
 
     @property
     def uuid(self):
-        """Gets the uuid of this SecrecyLevelVO.
+        r"""Gets the uuid of this SecrecyLevelVO.
 
         数据安全主键。
 
@@ -138,7 +138,7 @@ class SecrecyLevelVO:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this SecrecyLevelVO.
+        r"""Sets the uuid of this SecrecyLevelVO.
 
         数据安全主键。
 
@@ -149,7 +149,7 @@ class SecrecyLevelVO:
 
     @property
     def name(self):
-        """Gets the name of this SecrecyLevelVO.
+        r"""Gets the name of this SecrecyLevelVO.
 
         密级名。
 
@@ -160,7 +160,7 @@ class SecrecyLevelVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SecrecyLevelVO.
+        r"""Sets the name of this SecrecyLevelVO.
 
         密级名。
 
@@ -171,7 +171,7 @@ class SecrecyLevelVO:
 
     @property
     def slevel(self):
-        """Gets the slevel of this SecrecyLevelVO.
+        r"""Gets the slevel of this SecrecyLevelVO.
 
         密级等级。
 
@@ -182,7 +182,7 @@ class SecrecyLevelVO:
 
     @slevel.setter
     def slevel(self, slevel):
-        """Sets the slevel of this SecrecyLevelVO.
+        r"""Sets the slevel of this SecrecyLevelVO.
 
         密级等级。
 
@@ -193,7 +193,7 @@ class SecrecyLevelVO:
 
     @property
     def description(self):
-        """Gets the description of this SecrecyLevelVO.
+        r"""Gets the description of this SecrecyLevelVO.
 
         密级描述。
 
@@ -204,7 +204,7 @@ class SecrecyLevelVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SecrecyLevelVO.
+        r"""Sets the description of this SecrecyLevelVO.
 
         密级描述。
 
@@ -215,7 +215,7 @@ class SecrecyLevelVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this SecrecyLevelVO.
+        r"""Gets the create_by of this SecrecyLevelVO.
 
         创建人。
 
@@ -226,7 +226,7 @@ class SecrecyLevelVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this SecrecyLevelVO.
+        r"""Sets the create_by of this SecrecyLevelVO.
 
         创建人。
 
@@ -237,7 +237,7 @@ class SecrecyLevelVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this SecrecyLevelVO.
+        r"""Gets the update_by of this SecrecyLevelVO.
 
         更新人。
 
@@ -248,7 +248,7 @@ class SecrecyLevelVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this SecrecyLevelVO.
+        r"""Sets the update_by of this SecrecyLevelVO.
 
         更新人。
 
@@ -259,7 +259,7 @@ class SecrecyLevelVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SecrecyLevelVO.
+        r"""Gets the create_time of this SecrecyLevelVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -270,7 +270,7 @@ class SecrecyLevelVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SecrecyLevelVO.
+        r"""Sets the create_time of this SecrecyLevelVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -281,7 +281,7 @@ class SecrecyLevelVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this SecrecyLevelVO.
+        r"""Gets the update_time of this SecrecyLevelVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -292,7 +292,7 @@ class SecrecyLevelVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this SecrecyLevelVO.
+        r"""Sets the update_time of this SecrecyLevelVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -303,7 +303,7 @@ class SecrecyLevelVO:
 
     @property
     def new_biz(self):
-        """Gets the new_biz of this SecrecyLevelVO.
+        r"""Gets the new_biz of this SecrecyLevelVO.
 
         :return: The new_biz of this SecrecyLevelVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -312,7 +312,7 @@ class SecrecyLevelVO:
 
     @new_biz.setter
     def new_biz(self, new_biz):
-        """Sets the new_biz of this SecrecyLevelVO.
+        r"""Sets the new_biz of this SecrecyLevelVO.
 
         :param new_biz: The new_biz of this SecrecyLevelVO.
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`

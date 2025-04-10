@@ -33,7 +33,7 @@ class OperateScriptJobRequest:
     }
 
     def __init__(self, execute_uuid=None, x_language=None, x_project_id=None, x_user_profile=None, body=None):
-        """OperateScriptJobRequest
+        r"""OperateScriptJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class OperateScriptJobRequest:
 
     @property
     def execute_uuid(self):
-        """Gets the execute_uuid of this OperateScriptJobRequest.
+        r"""Gets the execute_uuid of this OperateScriptJobRequest.
 
         脚本工单的执行Id，取自executeJobScript和ListJobScriptOrders返回体中
 
@@ -81,7 +81,7 @@ class OperateScriptJobRequest:
 
     @execute_uuid.setter
     def execute_uuid(self, execute_uuid):
-        """Sets the execute_uuid of this OperateScriptJobRequest.
+        r"""Sets the execute_uuid of this OperateScriptJobRequest.
 
         脚本工单的执行Id，取自executeJobScript和ListJobScriptOrders返回体中
 
@@ -92,7 +92,7 @@ class OperateScriptJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this OperateScriptJobRequest.
+        r"""Gets the x_language of this OperateScriptJobRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -103,7 +103,7 @@ class OperateScriptJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this OperateScriptJobRequest.
+        r"""Sets the x_language of this OperateScriptJobRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -114,7 +114,7 @@ class OperateScriptJobRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this OperateScriptJobRequest.
+        r"""Gets the x_project_id of this OperateScriptJobRequest.
 
         项目ID，一个项目对应一个region
 
@@ -125,7 +125,7 @@ class OperateScriptJobRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this OperateScriptJobRequest.
+        r"""Sets the x_project_id of this OperateScriptJobRequest.
 
         项目ID，一个项目对应一个region
 
@@ -136,7 +136,7 @@ class OperateScriptJobRequest:
 
     @property
     def x_user_profile(self):
-        """Gets the x_user_profile of this OperateScriptJobRequest.
+        r"""Gets the x_user_profile of this OperateScriptJobRequest.
 
         IAM5.0用户信息
 
@@ -147,7 +147,7 @@ class OperateScriptJobRequest:
 
     @x_user_profile.setter
     def x_user_profile(self, x_user_profile):
-        """Sets the x_user_profile of this OperateScriptJobRequest.
+        r"""Sets the x_user_profile of this OperateScriptJobRequest.
 
         IAM5.0用户信息
 
@@ -158,7 +158,7 @@ class OperateScriptJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this OperateScriptJobRequest.
+        r"""Gets the body of this OperateScriptJobRequest.
 
         :return: The body of this OperateScriptJobRequest.
         :rtype: :class:`huaweicloudsdkcoc.v1.JobScriptOrderOperationBody`
@@ -167,7 +167,7 @@ class OperateScriptJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this OperateScriptJobRequest.
+        r"""Sets the body of this OperateScriptJobRequest.
 
         :param body: The body of this OperateScriptJobRequest.
         :type body: :class:`huaweicloudsdkcoc.v1.JobScriptOrderOperationBody`

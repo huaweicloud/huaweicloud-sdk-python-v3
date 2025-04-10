@@ -25,7 +25,7 @@ class RegisterBucketRequest:
     }
 
     def __init__(self, body=None):
-        """RegisterBucketRequest
+        r"""RegisterBucketRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RegisterBucketRequest:
 
     @property
     def body(self):
-        """Gets the body of this RegisterBucketRequest.
+        r"""Gets the body of this RegisterBucketRequest.
 
         :return: The body of this RegisterBucketRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.RegisterBucketRequestBody`
@@ -52,7 +52,7 @@ class RegisterBucketRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RegisterBucketRequest.
+        r"""Sets the body of this RegisterBucketRequest.
 
         :param body: The body of this RegisterBucketRequest.
         :type body: :class:`huaweicloudsdkdli.v1.RegisterBucketRequestBody`

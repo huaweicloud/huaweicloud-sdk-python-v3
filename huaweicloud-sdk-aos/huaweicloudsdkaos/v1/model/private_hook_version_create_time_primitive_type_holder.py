@@ -25,7 +25,7 @@ class PrivateHookVersionCreateTimePrimitiveTypeHolder:
     }
 
     def __init__(self, create_time=None):
-        """PrivateHookVersionCreateTimePrimitiveTypeHolder
+        r"""PrivateHookVersionCreateTimePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PrivateHookVersionCreateTimePrimitiveTypeHolder:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PrivateHookVersionCreateTimePrimitiveTypeHolder.
+        r"""Gets the create_time of this PrivateHookVersionCreateTimePrimitiveTypeHolder.
 
         私有Hook Version（private-hook-version）的生成时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 
@@ -54,7 +54,7 @@ class PrivateHookVersionCreateTimePrimitiveTypeHolder:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PrivateHookVersionCreateTimePrimitiveTypeHolder.
+        r"""Sets the create_time of this PrivateHookVersionCreateTimePrimitiveTypeHolder.
 
         私有Hook Version（private-hook-version）的生成时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 

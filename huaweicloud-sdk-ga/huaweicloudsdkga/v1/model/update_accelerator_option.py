@@ -27,7 +27,7 @@ class UpdateAcceleratorOption:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateAcceleratorOption
+        r"""UpdateAcceleratorOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateAcceleratorOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAcceleratorOption.
+        r"""Gets the name of this UpdateAcceleratorOption.
 
         全球加速器名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -61,7 +61,7 @@ class UpdateAcceleratorOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAcceleratorOption.
+        r"""Sets the name of this UpdateAcceleratorOption.
 
         全球加速器名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -72,7 +72,7 @@ class UpdateAcceleratorOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAcceleratorOption.
+        r"""Gets the description of this UpdateAcceleratorOption.
 
         全球加速器描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -83,7 +83,7 @@ class UpdateAcceleratorOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAcceleratorOption.
+        r"""Sets the description of this UpdateAcceleratorOption.
 
         全球加速器描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 

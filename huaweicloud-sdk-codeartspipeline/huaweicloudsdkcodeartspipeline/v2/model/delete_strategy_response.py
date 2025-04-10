@@ -26,7 +26,7 @@ class DeleteStrategyResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """DeleteStrategyResponse
+        r"""DeleteStrategyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteStrategyResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteStrategyResponse.
+        r"""Gets the status of this DeleteStrategyResponse.
 
         状态
 
@@ -55,7 +55,7 @@ class DeleteStrategyResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteStrategyResponse.
+        r"""Sets the status of this DeleteStrategyResponse.
 
         状态
 

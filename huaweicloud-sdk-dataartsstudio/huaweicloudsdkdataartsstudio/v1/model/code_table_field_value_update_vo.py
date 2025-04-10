@@ -29,7 +29,7 @@ class CodeTableFieldValueUpdateVO:
     }
 
     def __init__(self, to_add=None, to_modify=None, to_remove=None):
-        """CodeTableFieldValueUpdateVO
+        r"""CodeTableFieldValueUpdateVO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CodeTableFieldValueUpdateVO:
 
     @property
     def to_add(self):
-        """Gets the to_add of this CodeTableFieldValueUpdateVO.
+        r"""Gets the to_add of this CodeTableFieldValueUpdateVO.
 
         新增码表属性、属性值列表。
 
@@ -68,7 +68,7 @@ class CodeTableFieldValueUpdateVO:
 
     @to_add.setter
     def to_add(self, to_add):
-        """Sets the to_add of this CodeTableFieldValueUpdateVO.
+        r"""Sets the to_add of this CodeTableFieldValueUpdateVO.
 
         新增码表属性、属性值列表。
 
@@ -79,7 +79,7 @@ class CodeTableFieldValueUpdateVO:
 
     @property
     def to_modify(self):
-        """Gets the to_modify of this CodeTableFieldValueUpdateVO.
+        r"""Gets the to_modify of this CodeTableFieldValueUpdateVO.
 
         编辑码表属性值列表。
 
@@ -90,7 +90,7 @@ class CodeTableFieldValueUpdateVO:
 
     @to_modify.setter
     def to_modify(self, to_modify):
-        """Sets the to_modify of this CodeTableFieldValueUpdateVO.
+        r"""Sets the to_modify of this CodeTableFieldValueUpdateVO.
 
         编辑码表属性值列表。
 
@@ -101,7 +101,7 @@ class CodeTableFieldValueUpdateVO:
 
     @property
     def to_remove(self):
-        """Gets the to_remove of this CodeTableFieldValueUpdateVO.
+        r"""Gets the to_remove of this CodeTableFieldValueUpdateVO.
 
         删除码表属性ID列表。
 
@@ -112,7 +112,7 @@ class CodeTableFieldValueUpdateVO:
 
     @to_remove.setter
     def to_remove(self, to_remove):
-        """Sets the to_remove of this CodeTableFieldValueUpdateVO.
+        r"""Sets the to_remove of this CodeTableFieldValueUpdateVO.
 
         删除码表属性ID列表。
 

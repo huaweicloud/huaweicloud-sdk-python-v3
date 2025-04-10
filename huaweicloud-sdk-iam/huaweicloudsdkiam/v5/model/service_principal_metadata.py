@@ -31,7 +31,7 @@ class ServicePrincipalMetadata:
     }
 
     def __init__(self, service_principal=None, service_catalog=None, display_name=None, description=None):
-        """ServicePrincipalMetadata
+        r"""ServicePrincipalMetadata
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ServicePrincipalMetadata:
 
     @property
     def service_principal(self):
-        """Gets the service_principal of this ServicePrincipalMetadata.
+        r"""Gets the service_principal of this ServicePrincipalMetadata.
 
         服务主体，由\"service.\"开头，后跟一个长度为1到56个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -71,7 +71,7 @@ class ServicePrincipalMetadata:
 
     @service_principal.setter
     def service_principal(self, service_principal):
-        """Sets the service_principal of this ServicePrincipalMetadata.
+        r"""Sets the service_principal of this ServicePrincipalMetadata.
 
         服务主体，由\"service.\"开头，后跟一个长度为1到56个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -82,7 +82,7 @@ class ServicePrincipalMetadata:
 
     @property
     def service_catalog(self):
-        """Gets the service_catalog of this ServicePrincipalMetadata.
+        r"""Gets the service_catalog of this ServicePrincipalMetadata.
 
         云服务名称。
 
@@ -93,7 +93,7 @@ class ServicePrincipalMetadata:
 
     @service_catalog.setter
     def service_catalog(self, service_catalog):
-        """Sets the service_catalog of this ServicePrincipalMetadata.
+        r"""Sets the service_catalog of this ServicePrincipalMetadata.
 
         云服务名称。
 
@@ -104,7 +104,7 @@ class ServicePrincipalMetadata:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ServicePrincipalMetadata.
+        r"""Gets the display_name of this ServicePrincipalMetadata.
 
         用于显示的服务主体名称。
 
@@ -115,7 +115,7 @@ class ServicePrincipalMetadata:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ServicePrincipalMetadata.
+        r"""Sets the display_name of this ServicePrincipalMetadata.
 
         用于显示的服务主体名称。
 
@@ -126,7 +126,7 @@ class ServicePrincipalMetadata:
 
     @property
     def description(self):
-        """Gets the description of this ServicePrincipalMetadata.
+        r"""Gets the description of this ServicePrincipalMetadata.
 
         服务主体的描述。
 
@@ -137,7 +137,7 @@ class ServicePrincipalMetadata:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServicePrincipalMetadata.
+        r"""Sets the description of this ServicePrincipalMetadata.
 
         服务主体的描述。
 

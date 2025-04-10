@@ -27,7 +27,7 @@ class BatchImportAgentRequest:
     }
 
     def __init__(self, region=None, body=None):
-        """BatchImportAgentRequest
+        r"""BatchImportAgentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchImportAgentRequest:
 
     @property
     def region(self):
-        """Gets the region of this BatchImportAgentRequest.
+        r"""Gets the region of this BatchImportAgentRequest.
 
         region id，例如：cn-north-7
 
@@ -60,7 +60,7 @@ class BatchImportAgentRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this BatchImportAgentRequest.
+        r"""Sets the region of this BatchImportAgentRequest.
 
         region id，例如：cn-north-7
 
@@ -71,7 +71,7 @@ class BatchImportAgentRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchImportAgentRequest.
+        r"""Gets the body of this BatchImportAgentRequest.
 
         :return: The body of this BatchImportAgentRequest.
         :rtype: :class:`huaweicloudsdkaom.v4.AgentBatchImportParamNew`
@@ -80,7 +80,7 @@ class BatchImportAgentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchImportAgentRequest.
+        r"""Sets the body of this BatchImportAgentRequest.
 
         :param body: The body of this BatchImportAgentRequest.
         :type body: :class:`huaweicloudsdkaom.v4.AgentBatchImportParamNew`

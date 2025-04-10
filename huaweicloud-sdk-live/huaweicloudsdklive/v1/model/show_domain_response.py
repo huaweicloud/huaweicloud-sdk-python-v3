@@ -28,7 +28,7 @@ class ShowDomainResponse(SdkResponse):
     }
 
     def __init__(self, total=None, domain_info=None):
-        """ShowDomainResponse
+        r"""ShowDomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDomainResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowDomainResponse.
+        r"""Gets the total of this ShowDomainResponse.
 
         查询结果的总数量
 
@@ -62,7 +62,7 @@ class ShowDomainResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowDomainResponse.
+        r"""Sets the total of this ShowDomainResponse.
 
         查询结果的总数量
 
@@ -73,7 +73,7 @@ class ShowDomainResponse(SdkResponse):
 
     @property
     def domain_info(self):
-        """Gets the domain_info of this ShowDomainResponse.
+        r"""Gets the domain_info of this ShowDomainResponse.
 
         直播域名列表
 
@@ -84,7 +84,7 @@ class ShowDomainResponse(SdkResponse):
 
     @domain_info.setter
     def domain_info(self, domain_info):
-        """Sets the domain_info of this ShowDomainResponse.
+        r"""Sets the domain_info of this ShowDomainResponse.
 
         直播域名列表
 

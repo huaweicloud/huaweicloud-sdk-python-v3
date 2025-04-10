@@ -27,7 +27,7 @@ class UpdateHealthCheckRequest:
     }
 
     def __init__(self, health_check_id=None, body=None):
-        """UpdateHealthCheckRequest
+        r"""UpdateHealthCheckRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateHealthCheckRequest:
 
     @property
     def health_check_id(self):
-        """Gets the health_check_id of this UpdateHealthCheckRequest.
+        r"""Gets the health_check_id of this UpdateHealthCheckRequest.
 
         健康检查ID。
 
@@ -60,7 +60,7 @@ class UpdateHealthCheckRequest:
 
     @health_check_id.setter
     def health_check_id(self, health_check_id):
-        """Sets the health_check_id of this UpdateHealthCheckRequest.
+        r"""Sets the health_check_id of this UpdateHealthCheckRequest.
 
         健康检查ID。
 
@@ -71,7 +71,7 @@ class UpdateHealthCheckRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHealthCheckRequest.
+        r"""Gets the body of this UpdateHealthCheckRequest.
 
         :return: The body of this UpdateHealthCheckRequest.
         :rtype: :class:`huaweicloudsdkga.v1.UpdateHealthCheckRequestBody`
@@ -80,7 +80,7 @@ class UpdateHealthCheckRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHealthCheckRequest.
+        r"""Sets the body of this UpdateHealthCheckRequest.
 
         :param body: The body of this UpdateHealthCheckRequest.
         :type body: :class:`huaweicloudsdkga.v1.UpdateHealthCheckRequestBody`

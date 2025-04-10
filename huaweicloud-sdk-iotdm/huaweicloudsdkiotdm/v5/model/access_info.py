@@ -41,7 +41,7 @@ class AccessInfo:
     }
 
     def __init__(self, type=None, port=None, non_tls_port=None, websocket_port=None, domain_name=None, private_addresses=None, public_address=None, ipv6_address=None, ip_whitelist=None):
-        """AccessInfo
+        r"""AccessInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class AccessInfo:
 
     @property
     def type(self):
-        """Gets the type of this AccessInfo.
+        r"""Gets the type of this AccessInfo.
 
         **参数说明**：接入地址的类型，如应用接入的HTTPS协议的取值为：APP_HTTPS，设备接入的MQTT协议的取值为：DEVICE_MQTT **取值范围**： - APP_HTTPS：应用接入HTTPS协议 - APP_AMQP：应用接入AMQP协议 - APP_MQTT：应用接入MQTT协议 - DEVICE_COAP：设备接入COAP协议 - DEVICE_MQTT：设备接入MQTT协议 - DEVICE_HTTPS：设备接入HTTPS协议 
 
@@ -110,7 +110,7 @@ class AccessInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AccessInfo.
+        r"""Sets the type of this AccessInfo.
 
         **参数说明**：接入地址的类型，如应用接入的HTTPS协议的取值为：APP_HTTPS，设备接入的MQTT协议的取值为：DEVICE_MQTT **取值范围**： - APP_HTTPS：应用接入HTTPS协议 - APP_AMQP：应用接入AMQP协议 - APP_MQTT：应用接入MQTT协议 - DEVICE_COAP：设备接入COAP协议 - DEVICE_MQTT：设备接入MQTT协议 - DEVICE_HTTPS：设备接入HTTPS协议 
 
@@ -121,7 +121,7 @@ class AccessInfo:
 
     @property
     def port(self):
-        """Gets the port of this AccessInfo.
+        r"""Gets the port of this AccessInfo.
 
         **参数说明**：实例的应用/设备的安全接入端口 
 
@@ -132,7 +132,7 @@ class AccessInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this AccessInfo.
+        r"""Sets the port of this AccessInfo.
 
         **参数说明**：实例的应用/设备的安全接入端口 
 
@@ -143,7 +143,7 @@ class AccessInfo:
 
     @property
     def non_tls_port(self):
-        """Gets the non_tls_port of this AccessInfo.
+        r"""Gets the non_tls_port of this AccessInfo.
 
         **参数说明**：实例的应用/设备的非安全接入端口。返回null时表示该类型的接入地址不支持非安全端口接入。 
 
@@ -154,7 +154,7 @@ class AccessInfo:
 
     @non_tls_port.setter
     def non_tls_port(self, non_tls_port):
-        """Sets the non_tls_port of this AccessInfo.
+        r"""Sets the non_tls_port of this AccessInfo.
 
         **参数说明**：实例的应用/设备的非安全接入端口。返回null时表示该类型的接入地址不支持非安全端口接入。 
 
@@ -165,7 +165,7 @@ class AccessInfo:
 
     @property
     def websocket_port(self):
-        """Gets the websocket_port of this AccessInfo.
+        r"""Gets the websocket_port of this AccessInfo.
 
         **参数说明**：基于WebSocket的MQTT接入端口。返回null时表示该类型的接入地址不支持WebSocket端口接入。 
 
@@ -176,7 +176,7 @@ class AccessInfo:
 
     @websocket_port.setter
     def websocket_port(self, websocket_port):
-        """Sets the websocket_port of this AccessInfo.
+        r"""Sets the websocket_port of this AccessInfo.
 
         **参数说明**：基于WebSocket的MQTT接入端口。返回null时表示该类型的接入地址不支持WebSocket端口接入。 
 
@@ -187,7 +187,7 @@ class AccessInfo:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this AccessInfo.
+        r"""Gets the domain_name of this AccessInfo.
 
         **参数说明**：实例的接入域名 
 
@@ -198,7 +198,7 @@ class AccessInfo:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this AccessInfo.
+        r"""Sets the domain_name of this AccessInfo.
 
         **参数说明**：实例的接入域名 
 
@@ -209,7 +209,7 @@ class AccessInfo:
 
     @property
     def private_addresses(self):
-        """Gets the private_addresses of this AccessInfo.
+        r"""Gets the private_addresses of this AccessInfo.
 
         **参数说明**：实例的私网接入地址列表 
 
@@ -220,7 +220,7 @@ class AccessInfo:
 
     @private_addresses.setter
     def private_addresses(self, private_addresses):
-        """Sets the private_addresses of this AccessInfo.
+        r"""Sets the private_addresses of this AccessInfo.
 
         **参数说明**：实例的私网接入地址列表 
 
@@ -231,7 +231,7 @@ class AccessInfo:
 
     @property
     def public_address(self):
-        """Gets the public_address of this AccessInfo.
+        r"""Gets the public_address of this AccessInfo.
 
         **参数说明**：实例的公网接入地址 
 
@@ -242,7 +242,7 @@ class AccessInfo:
 
     @public_address.setter
     def public_address(self, public_address):
-        """Sets the public_address of this AccessInfo.
+        r"""Sets the public_address of this AccessInfo.
 
         **参数说明**：实例的公网接入地址 
 
@@ -253,7 +253,7 @@ class AccessInfo:
 
     @property
     def ipv6_address(self):
-        """Gets the ipv6_address of this AccessInfo.
+        r"""Gets the ipv6_address of this AccessInfo.
 
         **参数说明**：实例的ipv6接入地址列表 
 
@@ -264,7 +264,7 @@ class AccessInfo:
 
     @ipv6_address.setter
     def ipv6_address(self, ipv6_address):
-        """Sets the ipv6_address of this AccessInfo.
+        r"""Sets the ipv6_address of this AccessInfo.
 
         **参数说明**：实例的ipv6接入地址列表 
 
@@ -275,7 +275,7 @@ class AccessInfo:
 
     @property
     def ip_whitelist(self):
-        """Gets the ip_whitelist of this AccessInfo.
+        r"""Gets the ip_whitelist of this AccessInfo.
 
         :return: The ip_whitelist of this AccessInfo.
         :rtype: :class:`huaweicloudsdkiotdm.v5.IPWhiteList`
@@ -284,7 +284,7 @@ class AccessInfo:
 
     @ip_whitelist.setter
     def ip_whitelist(self, ip_whitelist):
-        """Sets the ip_whitelist of this AccessInfo.
+        r"""Sets the ip_whitelist of this AccessInfo.
 
         :param ip_whitelist: The ip_whitelist of this AccessInfo.
         :type ip_whitelist: :class:`huaweicloudsdkiotdm.v5.IPWhiteList`

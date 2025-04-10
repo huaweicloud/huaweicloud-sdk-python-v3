@@ -33,7 +33,7 @@ class StarRocksInstanceInfoGroups:
     }
 
     def __init__(self, id=None, name=None, nodes=None, group_type_name=None, group_node_type=None):
-        """StarRocksInstanceInfoGroups
+        r"""StarRocksInstanceInfoGroups
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class StarRocksInstanceInfoGroups:
 
     @property
     def id(self):
-        """Gets the id of this StarRocksInstanceInfoGroups.
+        r"""Gets the id of this StarRocksInstanceInfoGroups.
 
         分组ID。
 
@@ -82,7 +82,7 @@ class StarRocksInstanceInfoGroups:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StarRocksInstanceInfoGroups.
+        r"""Sets the id of this StarRocksInstanceInfoGroups.
 
         分组ID。
 
@@ -93,7 +93,7 @@ class StarRocksInstanceInfoGroups:
 
     @property
     def name(self):
-        """Gets the name of this StarRocksInstanceInfoGroups.
+        r"""Gets the name of this StarRocksInstanceInfoGroups.
 
         分组名。
 
@@ -104,7 +104,7 @@ class StarRocksInstanceInfoGroups:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StarRocksInstanceInfoGroups.
+        r"""Sets the name of this StarRocksInstanceInfoGroups.
 
         分组名。
 
@@ -115,7 +115,7 @@ class StarRocksInstanceInfoGroups:
 
     @property
     def nodes(self):
-        """Gets the nodes of this StarRocksInstanceInfoGroups.
+        r"""Gets the nodes of this StarRocksInstanceInfoGroups.
 
         实例节点。
 
@@ -126,7 +126,7 @@ class StarRocksInstanceInfoGroups:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this StarRocksInstanceInfoGroups.
+        r"""Sets the nodes of this StarRocksInstanceInfoGroups.
 
         实例节点。
 
@@ -137,7 +137,7 @@ class StarRocksInstanceInfoGroups:
 
     @property
     def group_type_name(self):
-        """Gets the group_type_name of this StarRocksInstanceInfoGroups.
+        r"""Gets the group_type_name of this StarRocksInstanceInfoGroups.
 
         实例分组类型名。
 
@@ -148,7 +148,7 @@ class StarRocksInstanceInfoGroups:
 
     @group_type_name.setter
     def group_type_name(self, group_type_name):
-        """Sets the group_type_name of this StarRocksInstanceInfoGroups.
+        r"""Sets the group_type_name of this StarRocksInstanceInfoGroups.
 
         实例分组类型名。
 
@@ -159,7 +159,7 @@ class StarRocksInstanceInfoGroups:
 
     @property
     def group_node_type(self):
-        """Gets the group_node_type of this StarRocksInstanceInfoGroups.
+        r"""Gets the group_node_type of this StarRocksInstanceInfoGroups.
 
         实例分组节点类型。
 
@@ -170,7 +170,7 @@ class StarRocksInstanceInfoGroups:
 
     @group_node_type.setter
     def group_node_type(self, group_node_type):
-        """Sets the group_node_type of this StarRocksInstanceInfoGroups.
+        r"""Sets the group_node_type of this StarRocksInstanceInfoGroups.
 
         实例分组节点类型。
 

@@ -29,7 +29,7 @@ class CreateLinkRequest:
     }
 
     def __init__(self, cluster_id=None, validate=None, body=None):
-        """CreateLinkRequest
+        r"""CreateLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateLinkRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateLinkRequest.
+        r"""Gets the cluster_id of this CreateLinkRequest.
 
         集群ID
 
@@ -67,7 +67,7 @@ class CreateLinkRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateLinkRequest.
+        r"""Sets the cluster_id of this CreateLinkRequest.
 
         集群ID
 
@@ -78,7 +78,7 @@ class CreateLinkRequest:
 
     @property
     def validate(self):
-        """Gets the validate of this CreateLinkRequest.
+        r"""Gets the validate of this CreateLinkRequest.
 
         为“true”时，此API仅校验参数是否正确，不创建连接
 
@@ -89,7 +89,7 @@ class CreateLinkRequest:
 
     @validate.setter
     def validate(self, validate):
-        """Sets the validate of this CreateLinkRequest.
+        r"""Sets the validate of this CreateLinkRequest.
 
         为“true”时，此API仅校验参数是否正确，不创建连接
 
@@ -100,7 +100,7 @@ class CreateLinkRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLinkRequest.
+        r"""Gets the body of this CreateLinkRequest.
 
         :return: The body of this CreateLinkRequest.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmCreateAndUpdateLinkReq`
@@ -109,7 +109,7 @@ class CreateLinkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLinkRequest.
+        r"""Sets the body of this CreateLinkRequest.
 
         :param body: The body of this CreateLinkRequest.
         :type body: :class:`huaweicloudsdkcdm.v1.CdmCreateAndUpdateLinkReq`

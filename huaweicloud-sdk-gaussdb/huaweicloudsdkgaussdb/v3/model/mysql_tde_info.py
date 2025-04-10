@@ -27,7 +27,7 @@ class MysqlTdeInfo:
     }
 
     def __init__(self, enable_tde=None, encryption_type=None):
-        """MysqlTdeInfo
+        r"""MysqlTdeInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MysqlTdeInfo:
 
     @property
     def enable_tde(self):
-        """Gets the enable_tde of this MysqlTdeInfo.
+        r"""Gets the enable_tde of this MysqlTdeInfo.
 
         是否打开透明加密功能。
 
@@ -59,7 +59,7 @@ class MysqlTdeInfo:
 
     @enable_tde.setter
     def enable_tde(self, enable_tde):
-        """Sets the enable_tde of this MysqlTdeInfo.
+        r"""Sets the enable_tde of this MysqlTdeInfo.
 
         是否打开透明加密功能。
 
@@ -70,7 +70,7 @@ class MysqlTdeInfo:
 
     @property
     def encryption_type(self):
-        """Gets the encryption_type of this MysqlTdeInfo.
+        r"""Gets the encryption_type of this MysqlTdeInfo.
 
         透明加密算法，支持AES256、SM4加密算法。
 
@@ -81,7 +81,7 @@ class MysqlTdeInfo:
 
     @encryption_type.setter
     def encryption_type(self, encryption_type):
-        """Sets the encryption_type of this MysqlTdeInfo.
+        r"""Sets the encryption_type of this MysqlTdeInfo.
 
         透明加密算法，支持AES256、SM4加密算法。
 

@@ -30,7 +30,7 @@ class AddCallBackResponse(SdkResponse):
     }
 
     def __init__(self, status=None, message=None, data=None):
-        """AddCallBackResponse
+        r"""AddCallBackResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class AddCallBackResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AddCallBackResponse.
+        r"""Gets the status of this AddCallBackResponse.
 
         状态码。
 
@@ -69,7 +69,7 @@ class AddCallBackResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AddCallBackResponse.
+        r"""Sets the status of this AddCallBackResponse.
 
         状态码。
 
@@ -80,7 +80,7 @@ class AddCallBackResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this AddCallBackResponse.
+        r"""Gets the message of this AddCallBackResponse.
 
         响应信息。
 
@@ -91,7 +91,7 @@ class AddCallBackResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this AddCallBackResponse.
+        r"""Sets the message of this AddCallBackResponse.
 
         响应信息。
 
@@ -102,7 +102,7 @@ class AddCallBackResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this AddCallBackResponse.
+        r"""Gets the data of this AddCallBackResponse.
 
         :return: The data of this AddCallBackResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.Callback`
@@ -111,7 +111,7 @@ class AddCallBackResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this AddCallBackResponse.
+        r"""Sets the data of this AddCallBackResponse.
 
         :param data: The data of this AddCallBackResponse.
         :type data: :class:`huaweicloudsdkkoomessage.v1.Callback`

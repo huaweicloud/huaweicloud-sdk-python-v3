@@ -65,7 +65,7 @@ class RepoInfoV2:
     }
 
     def __init__(self, created_at=None, creator_name=None, domain_name=None, group_name=None, https_url=None, iam_user_uuid=None, is_owner=None, lfs_size=None, project_is_deleted=None, project_uuid=None, repository_id=None, repository_name=None, repository_size=None, repository_uuid=None, ssh_url=None, star=None, status=None, updated_at=None, user_role=None, visibility_level=None, web_url=None):
-        """RepoInfoV2
+        r"""RepoInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class RepoInfoV2:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RepoInfoV2.
+        r"""Gets the created_at of this RepoInfoV2.
 
         创建时间
 
@@ -194,7 +194,7 @@ class RepoInfoV2:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RepoInfoV2.
+        r"""Sets the created_at of this RepoInfoV2.
 
         创建时间
 
@@ -205,7 +205,7 @@ class RepoInfoV2:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this RepoInfoV2.
+        r"""Gets the creator_name of this RepoInfoV2.
 
         创建者的用户名，在用户是租户的情况下，用户名和租户名相等
 
@@ -216,7 +216,7 @@ class RepoInfoV2:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this RepoInfoV2.
+        r"""Sets the creator_name of this RepoInfoV2.
 
         创建者的用户名，在用户是租户的情况下，用户名和租户名相等
 
@@ -227,7 +227,7 @@ class RepoInfoV2:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this RepoInfoV2.
+        r"""Gets the domain_name of this RepoInfoV2.
 
         创建者的租户名
 
@@ -238,7 +238,7 @@ class RepoInfoV2:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this RepoInfoV2.
+        r"""Sets the domain_name of this RepoInfoV2.
 
         创建者的租户名
 
@@ -249,7 +249,7 @@ class RepoInfoV2:
 
     @property
     def group_name(self):
-        """Gets the group_name of this RepoInfoV2.
+        r"""Gets the group_name of this RepoInfoV2.
 
         仓库组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
@@ -260,7 +260,7 @@ class RepoInfoV2:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this RepoInfoV2.
+        r"""Sets the group_name of this RepoInfoV2.
 
         仓库组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
@@ -271,7 +271,7 @@ class RepoInfoV2:
 
     @property
     def https_url(self):
-        """Gets the https_url of this RepoInfoV2.
+        r"""Gets the https_url of this RepoInfoV2.
 
         使用 https 克隆仓库时所使用的 url
 
@@ -282,7 +282,7 @@ class RepoInfoV2:
 
     @https_url.setter
     def https_url(self, https_url):
-        """Sets the https_url of this RepoInfoV2.
+        r"""Sets the https_url of this RepoInfoV2.
 
         使用 https 克隆仓库时所使用的 url
 
@@ -293,7 +293,7 @@ class RepoInfoV2:
 
     @property
     def iam_user_uuid(self):
-        """Gets the iam_user_uuid of this RepoInfoV2.
+        r"""Gets the iam_user_uuid of this RepoInfoV2.
 
         用户的 iam user uuid
 
@@ -304,7 +304,7 @@ class RepoInfoV2:
 
     @iam_user_uuid.setter
     def iam_user_uuid(self, iam_user_uuid):
-        """Sets the iam_user_uuid of this RepoInfoV2.
+        r"""Sets the iam_user_uuid of this RepoInfoV2.
 
         用户的 iam user uuid
 
@@ -315,7 +315,7 @@ class RepoInfoV2:
 
     @property
     def is_owner(self):
-        """Gets the is_owner of this RepoInfoV2.
+        r"""Gets the is_owner of this RepoInfoV2.
 
         当前用户是否是仓库的创建者，1：是，0：不是
 
@@ -326,7 +326,7 @@ class RepoInfoV2:
 
     @is_owner.setter
     def is_owner(self, is_owner):
-        """Sets the is_owner of this RepoInfoV2.
+        r"""Sets the is_owner of this RepoInfoV2.
 
         当前用户是否是仓库的创建者，1：是，0：不是
 
@@ -337,7 +337,7 @@ class RepoInfoV2:
 
     @property
     def lfs_size(self):
-        """Gets the lfs_size of this RepoInfoV2.
+        r"""Gets the lfs_size of this RepoInfoV2.
 
         仓库 LFS 容量，单位为M，大于 1024M 则单位为 G
 
@@ -348,7 +348,7 @@ class RepoInfoV2:
 
     @lfs_size.setter
     def lfs_size(self, lfs_size):
-        """Sets the lfs_size of this RepoInfoV2.
+        r"""Sets the lfs_size of this RepoInfoV2.
 
         仓库 LFS 容量，单位为M，大于 1024M 则单位为 G
 
@@ -359,7 +359,7 @@ class RepoInfoV2:
 
     @property
     def project_is_deleted(self):
-        """Gets the project_is_deleted of this RepoInfoV2.
+        r"""Gets the project_is_deleted of this RepoInfoV2.
 
         项目是否被删除
 
@@ -370,7 +370,7 @@ class RepoInfoV2:
 
     @project_is_deleted.setter
     def project_is_deleted(self, project_is_deleted):
-        """Sets the project_is_deleted of this RepoInfoV2.
+        r"""Sets the project_is_deleted of this RepoInfoV2.
 
         项目是否被删除
 
@@ -381,7 +381,7 @@ class RepoInfoV2:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this RepoInfoV2.
+        r"""Gets the project_uuid of this RepoInfoV2.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -392,7 +392,7 @@ class RepoInfoV2:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this RepoInfoV2.
+        r"""Sets the project_uuid of this RepoInfoV2.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -403,7 +403,7 @@ class RepoInfoV2:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this RepoInfoV2.
+        r"""Gets the repository_id of this RepoInfoV2.
 
         仓库主键id
 
@@ -414,7 +414,7 @@ class RepoInfoV2:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this RepoInfoV2.
+        r"""Sets the repository_id of this RepoInfoV2.
 
         仓库主键id
 
@@ -425,7 +425,7 @@ class RepoInfoV2:
 
     @property
     def repository_name(self):
-        """Gets the repository_name of this RepoInfoV2.
+        r"""Gets the repository_name of this RepoInfoV2.
 
         仓库名
 
@@ -436,7 +436,7 @@ class RepoInfoV2:
 
     @repository_name.setter
     def repository_name(self, repository_name):
-        """Sets the repository_name of this RepoInfoV2.
+        r"""Sets the repository_name of this RepoInfoV2.
 
         仓库名
 
@@ -447,7 +447,7 @@ class RepoInfoV2:
 
     @property
     def repository_size(self):
-        """Gets the repository_size of this RepoInfoV2.
+        r"""Gets the repository_size of this RepoInfoV2.
 
         仓库总容量 = 仓库 LFS 容量 + git 库容量，单位为M，大于 1024M 则单位为 G
 
@@ -458,7 +458,7 @@ class RepoInfoV2:
 
     @repository_size.setter
     def repository_size(self, repository_size):
-        """Sets the repository_size of this RepoInfoV2.
+        r"""Sets the repository_size of this RepoInfoV2.
 
         仓库总容量 = 仓库 LFS 容量 + git 库容量，单位为M，大于 1024M 则单位为 G
 
@@ -469,7 +469,7 @@ class RepoInfoV2:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this RepoInfoV2.
+        r"""Gets the repository_uuid of this RepoInfoV2.
 
         仓库uuid(由CreateRepository接口返回)
 
@@ -480,7 +480,7 @@ class RepoInfoV2:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this RepoInfoV2.
+        r"""Sets the repository_uuid of this RepoInfoV2.
 
         仓库uuid(由CreateRepository接口返回)
 
@@ -491,7 +491,7 @@ class RepoInfoV2:
 
     @property
     def ssh_url(self):
-        """Gets the ssh_url of this RepoInfoV2.
+        r"""Gets the ssh_url of this RepoInfoV2.
 
         使用 ssh 方式克隆仓库时所使用的 url
 
@@ -502,7 +502,7 @@ class RepoInfoV2:
 
     @ssh_url.setter
     def ssh_url(self, ssh_url):
-        """Sets the ssh_url of this RepoInfoV2.
+        r"""Sets the ssh_url of this RepoInfoV2.
 
         使用 ssh 方式克隆仓库时所使用的 url
 
@@ -513,7 +513,7 @@ class RepoInfoV2:
 
     @property
     def star(self):
-        """Gets the star of this RepoInfoV2.
+        r"""Gets the star of this RepoInfoV2.
 
         当前用户是否收藏该仓库
 
@@ -524,7 +524,7 @@ class RepoInfoV2:
 
     @star.setter
     def star(self, star):
-        """Sets the star of this RepoInfoV2.
+        r"""Sets the star of this RepoInfoV2.
 
         当前用户是否收藏该仓库
 
@@ -535,7 +535,7 @@ class RepoInfoV2:
 
     @property
     def status(self):
-        """Gets the status of this RepoInfoV2.
+        r"""Gets the status of this RepoInfoV2.
 
         仓库状态， 0：仓库正常创建成功 1：仓库创建中 2：创建失败 3：仓库冻结 4：仓库已经关闭 
 
@@ -546,7 +546,7 @@ class RepoInfoV2:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RepoInfoV2.
+        r"""Sets the status of this RepoInfoV2.
 
         仓库状态， 0：仓库正常创建成功 1：仓库创建中 2：创建失败 3：仓库冻结 4：仓库已经关闭 
 
@@ -557,7 +557,7 @@ class RepoInfoV2:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this RepoInfoV2.
+        r"""Gets the updated_at of this RepoInfoV2.
 
         更新时间
 
@@ -568,7 +568,7 @@ class RepoInfoV2:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this RepoInfoV2.
+        r"""Sets the updated_at of this RepoInfoV2.
 
         更新时间
 
@@ -579,7 +579,7 @@ class RepoInfoV2:
 
     @property
     def user_role(self):
-        """Gets the user_role of this RepoInfoV2.
+        r"""Gets the user_role of this RepoInfoV2.
 
         用户在仓库中的权限:20：只读成员 30：普通成员 40：管理员 
 
@@ -590,7 +590,7 @@ class RepoInfoV2:
 
     @user_role.setter
     def user_role(self, user_role):
-        """Sets the user_role of this RepoInfoV2.
+        r"""Sets the user_role of this RepoInfoV2.
 
         用户在仓库中的权限:20：只读成员 30：普通成员 40：管理员 
 
@@ -601,7 +601,7 @@ class RepoInfoV2:
 
     @property
     def visibility_level(self):
-        """Gets the visibility_level of this RepoInfoV2.
+        r"""Gets the visibility_level of this RepoInfoV2.
 
         是否可见：0私有仓库，20公有仓库
 
@@ -612,7 +612,7 @@ class RepoInfoV2:
 
     @visibility_level.setter
     def visibility_level(self, visibility_level):
-        """Sets the visibility_level of this RepoInfoV2.
+        r"""Sets the visibility_level of this RepoInfoV2.
 
         是否可见：0私有仓库，20公有仓库
 
@@ -623,7 +623,7 @@ class RepoInfoV2:
 
     @property
     def web_url(self):
-        """Gets the web_url of this RepoInfoV2.
+        r"""Gets the web_url of this RepoInfoV2.
 
         web url 路径，访问它将跳转至仓库详情页
 
@@ -634,7 +634,7 @@ class RepoInfoV2:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this RepoInfoV2.
+        r"""Sets the web_url of this RepoInfoV2.
 
         web url 路径，访问它将跳转至仓库详情页
 

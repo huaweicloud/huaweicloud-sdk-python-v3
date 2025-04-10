@@ -37,7 +37,7 @@ class ListJobDdlsRequest:
     }
 
     def __init__(self, x_language=None, offset=None, limit=None, start_seq_no=None, end_seq_no=None, status=None, job_id=None):
-        """ListJobDdlsRequest
+        r"""ListJobDdlsRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListJobDdlsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListJobDdlsRequest.
+        r"""Gets the x_language of this ListJobDdlsRequest.
 
         请求语言类型。
 
@@ -95,7 +95,7 @@ class ListJobDdlsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListJobDdlsRequest.
+        r"""Sets the x_language of this ListJobDdlsRequest.
 
         请求语言类型。
 
@@ -106,7 +106,7 @@ class ListJobDdlsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJobDdlsRequest.
+        r"""Gets the offset of this ListJobDdlsRequest.
 
         偏移量，默认值为0，表示查询该偏移量后面的记录。
 
@@ -117,7 +117,7 @@ class ListJobDdlsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJobDdlsRequest.
+        r"""Sets the offset of this ListJobDdlsRequest.
 
         偏移量，默认值为0，表示查询该偏移量后面的记录。
 
@@ -128,7 +128,7 @@ class ListJobDdlsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJobDdlsRequest.
+        r"""Gets the limit of this ListJobDdlsRequest.
 
         查询返回记录的数量限制.默认值为10。
 
@@ -139,7 +139,7 @@ class ListJobDdlsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJobDdlsRequest.
+        r"""Sets the limit of this ListJobDdlsRequest.
 
         查询返回记录的数量限制.默认值为10。
 
@@ -150,7 +150,7 @@ class ListJobDdlsRequest:
 
     @property
     def start_seq_no(self):
-        """Gets the start_seq_no of this ListJobDdlsRequest.
+        r"""Gets the start_seq_no of this ListJobDdlsRequest.
 
         DDL序列起始值。
 
@@ -161,7 +161,7 @@ class ListJobDdlsRequest:
 
     @start_seq_no.setter
     def start_seq_no(self, start_seq_no):
-        """Sets the start_seq_no of this ListJobDdlsRequest.
+        r"""Sets the start_seq_no of this ListJobDdlsRequest.
 
         DDL序列起始值。
 
@@ -172,7 +172,7 @@ class ListJobDdlsRequest:
 
     @property
     def end_seq_no(self):
-        """Gets the end_seq_no of this ListJobDdlsRequest.
+        r"""Gets the end_seq_no of this ListJobDdlsRequest.
 
         DDL序列结束值。
 
@@ -183,7 +183,7 @@ class ListJobDdlsRequest:
 
     @end_seq_no.setter
     def end_seq_no(self, end_seq_no):
-        """Sets the end_seq_no of this ListJobDdlsRequest.
+        r"""Sets the end_seq_no of this ListJobDdlsRequest.
 
         DDL序列结束值。
 
@@ -194,7 +194,7 @@ class ListJobDdlsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListJobDdlsRequest.
+        r"""Gets the status of this ListJobDdlsRequest.
 
         DDL状态，0为无告警，1为告警中。
 
@@ -205,7 +205,7 @@ class ListJobDdlsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListJobDdlsRequest.
+        r"""Sets the status of this ListJobDdlsRequest.
 
         DDL状态，0为无告警，1为告警中。
 
@@ -216,7 +216,7 @@ class ListJobDdlsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListJobDdlsRequest.
+        r"""Gets the job_id of this ListJobDdlsRequest.
 
         任务ID。
 
@@ -227,7 +227,7 @@ class ListJobDdlsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListJobDdlsRequest.
+        r"""Sets the job_id of this ListJobDdlsRequest.
 
         任务ID。
 

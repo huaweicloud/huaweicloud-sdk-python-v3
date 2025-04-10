@@ -29,7 +29,7 @@ class DeleteGaussMySqlDatabaseRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """DeleteGaussMySqlDatabaseRequest
+        r"""DeleteGaussMySqlDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteGaussMySqlDatabaseRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteGaussMySqlDatabaseRequest.
+        r"""Gets the x_language of this DeleteGaussMySqlDatabaseRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class DeleteGaussMySqlDatabaseRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteGaussMySqlDatabaseRequest.
+        r"""Sets the x_language of this DeleteGaussMySqlDatabaseRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class DeleteGaussMySqlDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteGaussMySqlDatabaseRequest.
+        r"""Gets the instance_id of this DeleteGaussMySqlDatabaseRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class DeleteGaussMySqlDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteGaussMySqlDatabaseRequest.
+        r"""Sets the instance_id of this DeleteGaussMySqlDatabaseRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class DeleteGaussMySqlDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteGaussMySqlDatabaseRequest.
+        r"""Gets the body of this DeleteGaussMySqlDatabaseRequest.
 
         :return: The body of this DeleteGaussMySqlDatabaseRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlDatabaseRequestBody`
@@ -109,7 +109,7 @@ class DeleteGaussMySqlDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteGaussMySqlDatabaseRequest.
+        r"""Sets the body of this DeleteGaussMySqlDatabaseRequest.
 
         :param body: The body of this DeleteGaussMySqlDatabaseRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlDatabaseRequestBody`

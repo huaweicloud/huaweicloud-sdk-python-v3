@@ -31,7 +31,7 @@ class FlavorVolumeNodeInfo:
     }
 
     def __init__(self, volume_type=None, volume_num=None, capacity=None, volume_size=None):
-        """FlavorVolumeNodeInfo
+        r"""FlavorVolumeNodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class FlavorVolumeNodeInfo:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this FlavorVolumeNodeInfo.
+        r"""Gets the volume_type of this FlavorVolumeNodeInfo.
 
         节点使用存储类型
 
@@ -71,7 +71,7 @@ class FlavorVolumeNodeInfo:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this FlavorVolumeNodeInfo.
+        r"""Sets the volume_type of this FlavorVolumeNodeInfo.
 
         节点使用存储类型
 
@@ -82,7 +82,7 @@ class FlavorVolumeNodeInfo:
 
     @property
     def volume_num(self):
-        """Gets the volume_num of this FlavorVolumeNodeInfo.
+        r"""Gets the volume_num of this FlavorVolumeNodeInfo.
 
         节点使用的磁盘数量
 
@@ -93,7 +93,7 @@ class FlavorVolumeNodeInfo:
 
     @volume_num.setter
     def volume_num(self, volume_num):
-        """Sets the volume_num of this FlavorVolumeNodeInfo.
+        r"""Sets the volume_num of this FlavorVolumeNodeInfo.
 
         节点使用的磁盘数量
 
@@ -104,7 +104,7 @@ class FlavorVolumeNodeInfo:
 
     @property
     def capacity(self):
-        """Gets the capacity of this FlavorVolumeNodeInfo.
+        r"""Gets the capacity of this FlavorVolumeNodeInfo.
 
         节点去除副本后的有效容量
 
@@ -115,7 +115,7 @@ class FlavorVolumeNodeInfo:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this FlavorVolumeNodeInfo.
+        r"""Sets the capacity of this FlavorVolumeNodeInfo.
 
         节点去除副本后的有效容量
 
@@ -126,7 +126,7 @@ class FlavorVolumeNodeInfo:
 
     @property
     def volume_size(self):
-        """Gets the volume_size of this FlavorVolumeNodeInfo.
+        r"""Gets the volume_size of this FlavorVolumeNodeInfo.
 
         节点存的单盘容量
 
@@ -137,7 +137,7 @@ class FlavorVolumeNodeInfo:
 
     @volume_size.setter
     def volume_size(self, volume_size):
-        """Sets the volume_size of this FlavorVolumeNodeInfo.
+        r"""Sets the volume_size of this FlavorVolumeNodeInfo.
 
         节点存的单盘容量
 

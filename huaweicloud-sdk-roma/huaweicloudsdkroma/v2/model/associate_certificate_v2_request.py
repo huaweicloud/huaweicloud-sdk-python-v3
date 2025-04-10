@@ -31,7 +31,7 @@ class AssociateCertificateV2Request:
     }
 
     def __init__(self, instance_id=None, group_id=None, domain_id=None, body=None):
-        """AssociateCertificateV2Request
+        r"""AssociateCertificateV2Request
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class AssociateCertificateV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AssociateCertificateV2Request.
+        r"""Gets the instance_id of this AssociateCertificateV2Request.
 
         实例ID
 
@@ -72,7 +72,7 @@ class AssociateCertificateV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AssociateCertificateV2Request.
+        r"""Sets the instance_id of this AssociateCertificateV2Request.
 
         实例ID
 
@@ -83,7 +83,7 @@ class AssociateCertificateV2Request:
 
     @property
     def group_id(self):
-        """Gets the group_id of this AssociateCertificateV2Request.
+        r"""Gets the group_id of this AssociateCertificateV2Request.
 
         分组的编号
 
@@ -94,7 +94,7 @@ class AssociateCertificateV2Request:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this AssociateCertificateV2Request.
+        r"""Sets the group_id of this AssociateCertificateV2Request.
 
         分组的编号
 
@@ -105,7 +105,7 @@ class AssociateCertificateV2Request:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AssociateCertificateV2Request.
+        r"""Gets the domain_id of this AssociateCertificateV2Request.
 
         域名的编号
 
@@ -116,7 +116,7 @@ class AssociateCertificateV2Request:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AssociateCertificateV2Request.
+        r"""Sets the domain_id of this AssociateCertificateV2Request.
 
         域名的编号
 
@@ -127,7 +127,7 @@ class AssociateCertificateV2Request:
 
     @property
     def body(self):
-        """Gets the body of this AssociateCertificateV2Request.
+        r"""Gets the body of this AssociateCertificateV2Request.
 
         :return: The body of this AssociateCertificateV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.CertForm`
@@ -136,7 +136,7 @@ class AssociateCertificateV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateCertificateV2Request.
+        r"""Sets the body of this AssociateCertificateV2Request.
 
         :param body: The body of this AssociateCertificateV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.CertForm`

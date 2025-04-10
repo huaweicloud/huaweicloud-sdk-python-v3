@@ -25,7 +25,7 @@ class CreateAutoExpireScanTaskRequest:
     }
 
     def __init__(self, instance_id=None):
-        """CreateAutoExpireScanTaskRequest
+        r"""CreateAutoExpireScanTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateAutoExpireScanTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateAutoExpireScanTaskRequest.
+        r"""Gets the instance_id of this CreateAutoExpireScanTaskRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class CreateAutoExpireScanTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateAutoExpireScanTaskRequest.
+        r"""Sets the instance_id of this CreateAutoExpireScanTaskRequest.
 
         实例ID。
 

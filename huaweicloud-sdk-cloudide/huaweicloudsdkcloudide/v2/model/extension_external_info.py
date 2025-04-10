@@ -39,7 +39,7 @@ class ExtensionExternalInfo:
     }
 
     def __init__(self, extension_id=None, repo_url=None, help_page=None, website=None, issue_link=None, show_previews=None, created_at=None, updated_at=None):
-        """ExtensionExternalInfo
+        r"""ExtensionExternalInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ExtensionExternalInfo:
 
     @property
     def extension_id(self):
-        """Gets the extension_id of this ExtensionExternalInfo.
+        r"""Gets the extension_id of this ExtensionExternalInfo.
 
         插件id
 
@@ -103,7 +103,7 @@ class ExtensionExternalInfo:
 
     @extension_id.setter
     def extension_id(self, extension_id):
-        """Sets the extension_id of this ExtensionExternalInfo.
+        r"""Sets the extension_id of this ExtensionExternalInfo.
 
         插件id
 
@@ -114,7 +114,7 @@ class ExtensionExternalInfo:
 
     @property
     def repo_url(self):
-        """Gets the repo_url of this ExtensionExternalInfo.
+        r"""Gets the repo_url of this ExtensionExternalInfo.
 
         源码仓地址
 
@@ -125,7 +125,7 @@ class ExtensionExternalInfo:
 
     @repo_url.setter
     def repo_url(self, repo_url):
-        """Sets the repo_url of this ExtensionExternalInfo.
+        r"""Sets the repo_url of this ExtensionExternalInfo.
 
         源码仓地址
 
@@ -136,7 +136,7 @@ class ExtensionExternalInfo:
 
     @property
     def help_page(self):
-        """Gets the help_page of this ExtensionExternalInfo.
+        r"""Gets the help_page of this ExtensionExternalInfo.
 
         帮助页面
 
@@ -147,7 +147,7 @@ class ExtensionExternalInfo:
 
     @help_page.setter
     def help_page(self, help_page):
-        """Sets the help_page of this ExtensionExternalInfo.
+        r"""Sets the help_page of this ExtensionExternalInfo.
 
         帮助页面
 
@@ -158,7 +158,7 @@ class ExtensionExternalInfo:
 
     @property
     def website(self):
-        """Gets the website of this ExtensionExternalInfo.
+        r"""Gets the website of this ExtensionExternalInfo.
 
         产品首页
 
@@ -169,7 +169,7 @@ class ExtensionExternalInfo:
 
     @website.setter
     def website(self, website):
-        """Sets the website of this ExtensionExternalInfo.
+        r"""Sets the website of this ExtensionExternalInfo.
 
         产品首页
 
@@ -180,7 +180,7 @@ class ExtensionExternalInfo:
 
     @property
     def issue_link(self):
-        """Gets the issue_link of this ExtensionExternalInfo.
+        r"""Gets the issue_link of this ExtensionExternalInfo.
 
         问题链接
 
@@ -191,7 +191,7 @@ class ExtensionExternalInfo:
 
     @issue_link.setter
     def issue_link(self, issue_link):
-        """Sets the issue_link of this ExtensionExternalInfo.
+        r"""Sets the issue_link of this ExtensionExternalInfo.
 
         问题链接
 
@@ -202,7 +202,7 @@ class ExtensionExternalInfo:
 
     @property
     def show_previews(self):
-        """Gets the show_previews of this ExtensionExternalInfo.
+        r"""Gets the show_previews of this ExtensionExternalInfo.
 
         是否支持预览
 
@@ -213,7 +213,7 @@ class ExtensionExternalInfo:
 
     @show_previews.setter
     def show_previews(self, show_previews):
-        """Sets the show_previews of this ExtensionExternalInfo.
+        r"""Sets the show_previews of this ExtensionExternalInfo.
 
         是否支持预览
 
@@ -224,7 +224,7 @@ class ExtensionExternalInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ExtensionExternalInfo.
+        r"""Gets the created_at of this ExtensionExternalInfo.
 
         创建时间
 
@@ -235,7 +235,7 @@ class ExtensionExternalInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ExtensionExternalInfo.
+        r"""Sets the created_at of this ExtensionExternalInfo.
 
         创建时间
 
@@ -246,7 +246,7 @@ class ExtensionExternalInfo:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ExtensionExternalInfo.
+        r"""Gets the updated_at of this ExtensionExternalInfo.
 
         更新时间
 
@@ -257,7 +257,7 @@ class ExtensionExternalInfo:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ExtensionExternalInfo.
+        r"""Sets the updated_at of this ExtensionExternalInfo.
 
         更新时间
 

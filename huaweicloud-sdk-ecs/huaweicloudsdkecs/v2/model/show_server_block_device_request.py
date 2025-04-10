@@ -27,7 +27,7 @@ class ShowServerBlockDeviceRequest:
     }
 
     def __init__(self, server_id=None, volume_id=None):
-        """ShowServerBlockDeviceRequest
+        r"""ShowServerBlockDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowServerBlockDeviceRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowServerBlockDeviceRequest.
+        r"""Gets the server_id of this ShowServerBlockDeviceRequest.
 
         云服务器ID。
 
@@ -59,7 +59,7 @@ class ShowServerBlockDeviceRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowServerBlockDeviceRequest.
+        r"""Sets the server_id of this ShowServerBlockDeviceRequest.
 
         云服务器ID。
 
@@ -70,7 +70,7 @@ class ShowServerBlockDeviceRequest:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this ShowServerBlockDeviceRequest.
+        r"""Gets the volume_id of this ShowServerBlockDeviceRequest.
 
         云硬盘ID，UUID格式。
 
@@ -81,7 +81,7 @@ class ShowServerBlockDeviceRequest:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this ShowServerBlockDeviceRequest.
+        r"""Sets the volume_id of this ShowServerBlockDeviceRequest.
 
         云硬盘ID，UUID格式。
 

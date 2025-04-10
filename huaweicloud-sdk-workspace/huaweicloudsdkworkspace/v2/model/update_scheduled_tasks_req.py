@@ -67,7 +67,7 @@ class UpdateScheduledTasksReq:
     }
 
     def __init__(self, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, scheduled_date=None, scheduled_time=None, expire_time=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, life_cycle_type=None, time_zone=None, task_name=None, force_execute=None, description=None, enable=None, extra_params=None, apply_objects=None, priority=None, is_gray=None, wait_time=None):
-        """UpdateScheduledTasksReq
+        r"""UpdateScheduledTasksReq
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def scheduled_type(self):
-        """Gets the scheduled_type of this UpdateScheduledTasksReq.
+        r"""Gets the scheduled_type of this UpdateScheduledTasksReq.
 
         执行周期类型，可选值为： - FIXED_TIME：指定时间。 - DAY：按天。 - WEEK：按周。 - MONTH：按月。 - LIFE_CYCLE：指定场景下触发。
 
@@ -201,7 +201,7 @@ class UpdateScheduledTasksReq:
 
     @scheduled_type.setter
     def scheduled_type(self, scheduled_type):
-        """Sets the scheduled_type of this UpdateScheduledTasksReq.
+        r"""Sets the scheduled_type of this UpdateScheduledTasksReq.
 
         执行周期类型，可选值为： - FIXED_TIME：指定时间。 - DAY：按天。 - WEEK：按周。 - MONTH：按月。 - LIFE_CYCLE：指定场景下触发。
 
@@ -212,7 +212,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def day_interval(self):
-        """Gets the day_interval of this UpdateScheduledTasksReq.
+        r"""Gets the day_interval of this UpdateScheduledTasksReq.
 
         周期按天时：按x天间隔执行。
 
@@ -223,7 +223,7 @@ class UpdateScheduledTasksReq:
 
     @day_interval.setter
     def day_interval(self, day_interval):
-        """Sets the day_interval of this UpdateScheduledTasksReq.
+        r"""Sets the day_interval of this UpdateScheduledTasksReq.
 
         周期按天时：按x天间隔执行。
 
@@ -234,7 +234,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def week_list(self):
-        """Gets the week_list of this UpdateScheduledTasksReq.
+        r"""Gets the week_list of this UpdateScheduledTasksReq.
 
         周期按周时：取值1~7，分别对应周日~周六，英文逗号分隔，如1,2,7。
 
@@ -245,7 +245,7 @@ class UpdateScheduledTasksReq:
 
     @week_list.setter
     def week_list(self, week_list):
-        """Sets the week_list of this UpdateScheduledTasksReq.
+        r"""Sets the week_list of this UpdateScheduledTasksReq.
 
         周期按周时：取值1~7，分别对应周日~周六，英文逗号分隔，如1,2,7。
 
@@ -256,7 +256,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def month_list(self):
-        """Gets the month_list of this UpdateScheduledTasksReq.
+        r"""Gets the month_list of this UpdateScheduledTasksReq.
 
         周期按月时：取值1~12，英文逗号分隔，如1,3,12。
 
@@ -267,7 +267,7 @@ class UpdateScheduledTasksReq:
 
     @month_list.setter
     def month_list(self, month_list):
-        """Sets the month_list of this UpdateScheduledTasksReq.
+        r"""Sets the month_list of this UpdateScheduledTasksReq.
 
         周期按月时：取值1~12，英文逗号分隔，如1,3,12。
 
@@ -278,7 +278,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def date_list(self):
-        """Gets the date_list of this UpdateScheduledTasksReq.
+        r"""Gets the date_list of this UpdateScheduledTasksReq.
 
         周期按月时：取值1~31及L(代表当月最后一天)，英文逗号分隔，如1,2,28,L。
 
@@ -289,7 +289,7 @@ class UpdateScheduledTasksReq:
 
     @date_list.setter
     def date_list(self, date_list):
-        """Sets the date_list of this UpdateScheduledTasksReq.
+        r"""Sets the date_list of this UpdateScheduledTasksReq.
 
         周期按月时：取值1~31及L(代表当月最后一天)，英文逗号分隔，如1,2,28,L。
 
@@ -300,7 +300,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def scheduled_date(self):
-        """Gets the scheduled_date of this UpdateScheduledTasksReq.
+        r"""Gets the scheduled_date of this UpdateScheduledTasksReq.
 
         周期指定时间时：表示指定的日期，格式为yyyy-MM-dd。
 
@@ -311,7 +311,7 @@ class UpdateScheduledTasksReq:
 
     @scheduled_date.setter
     def scheduled_date(self, scheduled_date):
-        """Sets the scheduled_date of this UpdateScheduledTasksReq.
+        r"""Sets the scheduled_date of this UpdateScheduledTasksReq.
 
         周期指定时间时：表示指定的日期，格式为yyyy-MM-dd。
 
@@ -322,7 +322,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def scheduled_time(self):
-        """Gets the scheduled_time of this UpdateScheduledTasksReq.
+        r"""Gets the scheduled_time of this UpdateScheduledTasksReq.
 
         指定的执行时间点，格式为HH:mm:ss。
 
@@ -333,7 +333,7 @@ class UpdateScheduledTasksReq:
 
     @scheduled_time.setter
     def scheduled_time(self, scheduled_time):
-        """Sets the scheduled_time of this UpdateScheduledTasksReq.
+        r"""Sets the scheduled_time of this UpdateScheduledTasksReq.
 
         指定的执行时间点，格式为HH:mm:ss。
 
@@ -344,7 +344,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this UpdateScheduledTasksReq.
+        r"""Gets the expire_time of this UpdateScheduledTasksReq.
 
         到期时间，格式为yyyy-MM-dd HH:mm:ss。
 
@@ -355,7 +355,7 @@ class UpdateScheduledTasksReq:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this UpdateScheduledTasksReq.
+        r"""Sets the expire_time of this UpdateScheduledTasksReq.
 
         到期时间，格式为yyyy-MM-dd HH:mm:ss。
 
@@ -366,7 +366,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def gray_count(self):
-        """Gets the gray_count of this UpdateScheduledTasksReq.
+        r"""Gets the gray_count of this UpdateScheduledTasksReq.
 
         灰度对象数量，优先级高于gray_desktop_ids。只支持脚本执行。
 
@@ -377,7 +377,7 @@ class UpdateScheduledTasksReq:
 
     @gray_count.setter
     def gray_count(self, gray_count):
-        """Sets the gray_count of this UpdateScheduledTasksReq.
+        r"""Sets the gray_count of this UpdateScheduledTasksReq.
 
         灰度对象数量，优先级高于gray_desktop_ids。只支持脚本执行。
 
@@ -388,7 +388,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def gray_desktop_ids(self):
-        """Gets the gray_desktop_ids of this UpdateScheduledTasksReq.
+        r"""Gets the gray_desktop_ids of this UpdateScheduledTasksReq.
 
         灰度执行的桌面id列表，优先级低于gray_count。只支持脚本执行。
 
@@ -399,7 +399,7 @@ class UpdateScheduledTasksReq:
 
     @gray_desktop_ids.setter
     def gray_desktop_ids(self, gray_desktop_ids):
-        """Sets the gray_desktop_ids of this UpdateScheduledTasksReq.
+        r"""Sets the gray_desktop_ids of this UpdateScheduledTasksReq.
 
         灰度执行的桌面id列表，优先级低于gray_count。只支持脚本执行。
 
@@ -410,7 +410,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def gray_fail_threshold(self):
-        """Gets the gray_fail_threshold of this UpdateScheduledTasksReq.
+        r"""Gets the gray_fail_threshold of this UpdateScheduledTasksReq.
 
         灰度失败阈值，灰度执行失败次数达到该值时，不执行下一批任务。只支持脚本执行。
 
@@ -421,7 +421,7 @@ class UpdateScheduledTasksReq:
 
     @gray_fail_threshold.setter
     def gray_fail_threshold(self, gray_fail_threshold):
-        """Sets the gray_fail_threshold of this UpdateScheduledTasksReq.
+        r"""Sets the gray_fail_threshold of this UpdateScheduledTasksReq.
 
         灰度失败阈值，灰度执行失败次数达到该值时，不执行下一批任务。只支持脚本执行。
 
@@ -432,7 +432,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def life_cycle_type(self):
-        """Gets the life_cycle_type of this UpdateScheduledTasksReq.
+        r"""Gets the life_cycle_type of this UpdateScheduledTasksReq.
 
         触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后，POST_DESKTOP_DISCONNECTED：桌面断开连接后。
 
@@ -443,7 +443,7 @@ class UpdateScheduledTasksReq:
 
     @life_cycle_type.setter
     def life_cycle_type(self, life_cycle_type):
-        """Sets the life_cycle_type of this UpdateScheduledTasksReq.
+        r"""Sets the life_cycle_type of this UpdateScheduledTasksReq.
 
         触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后，POST_DESKTOP_DISCONNECTED：桌面断开连接后。
 
@@ -454,7 +454,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this UpdateScheduledTasksReq.
+        r"""Gets the time_zone of this UpdateScheduledTasksReq.
 
         时区。
 
@@ -465,7 +465,7 @@ class UpdateScheduledTasksReq:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this UpdateScheduledTasksReq.
+        r"""Sets the time_zone of this UpdateScheduledTasksReq.
 
         时区。
 
@@ -476,7 +476,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def task_name(self):
-        """Gets the task_name of this UpdateScheduledTasksReq.
+        r"""Gets the task_name of this UpdateScheduledTasksReq.
 
         任务名称。
 
@@ -487,7 +487,7 @@ class UpdateScheduledTasksReq:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this UpdateScheduledTasksReq.
+        r"""Sets the task_name of this UpdateScheduledTasksReq.
 
         任务名称。
 
@@ -498,7 +498,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def force_execute(self):
-        """Gets the force_execute of this UpdateScheduledTasksReq.
+        r"""Gets the force_execute of this UpdateScheduledTasksReq.
 
         是否强制执行
 
@@ -509,7 +509,7 @@ class UpdateScheduledTasksReq:
 
     @force_execute.setter
     def force_execute(self, force_execute):
-        """Sets the force_execute of this UpdateScheduledTasksReq.
+        r"""Sets the force_execute of this UpdateScheduledTasksReq.
 
         是否强制执行
 
@@ -520,7 +520,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateScheduledTasksReq.
+        r"""Gets the description of this UpdateScheduledTasksReq.
 
         描述。
 
@@ -531,7 +531,7 @@ class UpdateScheduledTasksReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateScheduledTasksReq.
+        r"""Sets the description of this UpdateScheduledTasksReq.
 
         描述。
 
@@ -542,7 +542,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def enable(self):
-        """Gets the enable of this UpdateScheduledTasksReq.
+        r"""Gets the enable of this UpdateScheduledTasksReq.
 
         是否启用
 
@@ -553,7 +553,7 @@ class UpdateScheduledTasksReq:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this UpdateScheduledTasksReq.
+        r"""Sets the enable of this UpdateScheduledTasksReq.
 
         是否启用
 
@@ -564,7 +564,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def extra_params(self):
-        """Gets the extra_params of this UpdateScheduledTasksReq.
+        r"""Gets the extra_params of this UpdateScheduledTasksReq.
 
         扩展参数，json格式。
 
@@ -575,7 +575,7 @@ class UpdateScheduledTasksReq:
 
     @extra_params.setter
     def extra_params(self, extra_params):
-        """Sets the extra_params of this UpdateScheduledTasksReq.
+        r"""Sets the extra_params of this UpdateScheduledTasksReq.
 
         扩展参数，json格式。
 
@@ -586,7 +586,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def apply_objects(self):
-        """Gets the apply_objects of this UpdateScheduledTasksReq.
+        r"""Gets the apply_objects of this UpdateScheduledTasksReq.
 
         定时任务应用的对象列表。
 
@@ -597,7 +597,7 @@ class UpdateScheduledTasksReq:
 
     @apply_objects.setter
     def apply_objects(self, apply_objects):
-        """Sets the apply_objects of this UpdateScheduledTasksReq.
+        r"""Sets the apply_objects of this UpdateScheduledTasksReq.
 
         定时任务应用的对象列表。
 
@@ -608,7 +608,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def priority(self):
-        """Gets the priority of this UpdateScheduledTasksReq.
+        r"""Gets the priority of this UpdateScheduledTasksReq.
 
         优先级。触发式任务使用。
 
@@ -619,7 +619,7 @@ class UpdateScheduledTasksReq:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this UpdateScheduledTasksReq.
+        r"""Sets the priority of this UpdateScheduledTasksReq.
 
         优先级。触发式任务使用。
 
@@ -630,7 +630,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def is_gray(self):
-        """Gets the is_gray of this UpdateScheduledTasksReq.
+        r"""Gets the is_gray of this UpdateScheduledTasksReq.
 
         任务是否灰度执行，供远程脚本使用。
 
@@ -641,7 +641,7 @@ class UpdateScheduledTasksReq:
 
     @is_gray.setter
     def is_gray(self, is_gray):
-        """Sets the is_gray of this UpdateScheduledTasksReq.
+        r"""Sets the is_gray of this UpdateScheduledTasksReq.
 
         任务是否灰度执行，供远程脚本使用。
 
@@ -652,7 +652,7 @@ class UpdateScheduledTasksReq:
 
     @property
     def wait_time(self):
-        """Gets the wait_time of this UpdateScheduledTasksReq.
+        r"""Gets the wait_time of this UpdateScheduledTasksReq.
 
         触发式任务触发后，等待时长。
 
@@ -663,7 +663,7 @@ class UpdateScheduledTasksReq:
 
     @wait_time.setter
     def wait_time(self, wait_time):
-        """Sets the wait_time of this UpdateScheduledTasksReq.
+        r"""Sets the wait_time of this UpdateScheduledTasksReq.
 
         触发式任务触发后，等待时长。
 

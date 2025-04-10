@@ -31,7 +31,7 @@ class SetAuditlogPolicyRequestBody:
     }
 
     def __init__(self, keep_days=None, reserve_auditlogs=None, audit_scope=None, audit_types=None):
-        """SetAuditlogPolicyRequestBody
+        r"""SetAuditlogPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class SetAuditlogPolicyRequestBody:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this SetAuditlogPolicyRequestBody.
+        r"""Gets the keep_days of this SetAuditlogPolicyRequestBody.
 
         审计日志保存天数，取值范围0，7~732。 - 取值0，表示关闭审计日志策略。 - 取值7~732，表示开启审计日志策略，并设置审计日志保存天数为该值。
 
@@ -74,7 +74,7 @@ class SetAuditlogPolicyRequestBody:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this SetAuditlogPolicyRequestBody.
+        r"""Sets the keep_days of this SetAuditlogPolicyRequestBody.
 
         审计日志保存天数，取值范围0，7~732。 - 取值0，表示关闭审计日志策略。 - 取值7~732，表示开启审计日志策略，并设置审计日志保存天数为该值。
 
@@ -85,7 +85,7 @@ class SetAuditlogPolicyRequestBody:
 
     @property
     def reserve_auditlogs(self):
-        """Gets the reserve_auditlogs of this SetAuditlogPolicyRequestBody.
+        r"""Gets the reserve_auditlogs of this SetAuditlogPolicyRequestBody.
 
         仅关闭审计日志策略时有效。 - true（默认），表示关闭审计日志策略的同时，保留历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
 
@@ -96,7 +96,7 @@ class SetAuditlogPolicyRequestBody:
 
     @reserve_auditlogs.setter
     def reserve_auditlogs(self, reserve_auditlogs):
-        """Sets the reserve_auditlogs of this SetAuditlogPolicyRequestBody.
+        r"""Sets the reserve_auditlogs of this SetAuditlogPolicyRequestBody.
 
         仅关闭审计日志策略时有效。 - true（默认），表示关闭审计日志策略的同时，保留历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
 
@@ -107,7 +107,7 @@ class SetAuditlogPolicyRequestBody:
 
     @property
     def audit_scope(self):
-        """Gets the audit_scope of this SetAuditlogPolicyRequestBody.
+        r"""Gets the audit_scope of this SetAuditlogPolicyRequestBody.
 
         仅打开审计日志策略时有效，并且为空时，默认全部。审计范围。请输入数据库或集合名称，多个库或集合请用英文逗号分隔。若名称中有英文逗号，请在逗号前添加“$”符号，用以区分分隔符。
 
@@ -118,7 +118,7 @@ class SetAuditlogPolicyRequestBody:
 
     @audit_scope.setter
     def audit_scope(self, audit_scope):
-        """Sets the audit_scope of this SetAuditlogPolicyRequestBody.
+        r"""Sets the audit_scope of this SetAuditlogPolicyRequestBody.
 
         仅打开审计日志策略时有效，并且为空时，默认全部。审计范围。请输入数据库或集合名称，多个库或集合请用英文逗号分隔。若名称中有英文逗号，请在逗号前添加“$”符号，用以区分分隔符。
 
@@ -129,7 +129,7 @@ class SetAuditlogPolicyRequestBody:
 
     @property
     def audit_types(self):
-        """Gets the audit_types of this SetAuditlogPolicyRequestBody.
+        r"""Gets the audit_types of this SetAuditlogPolicyRequestBody.
 
         仅打开审计日志策略时有效，并且为空时，默认全部。审计类型。支持insert，delete，update，query等。
 
@@ -140,7 +140,7 @@ class SetAuditlogPolicyRequestBody:
 
     @audit_types.setter
     def audit_types(self, audit_types):
-        """Sets the audit_types of this SetAuditlogPolicyRequestBody.
+        r"""Sets the audit_types of this SetAuditlogPolicyRequestBody.
 
         仅打开审计日志策略时有效，并且为空时，默认全部。审计类型。支持insert，delete，update，query等。
 

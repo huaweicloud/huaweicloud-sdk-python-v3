@@ -32,7 +32,7 @@ class ListPipelinesResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, total=None, pipelines=None):
-        """ListPipelinesResponse
+        r"""ListPipelinesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListPipelinesResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListPipelinesResponse.
+        r"""Gets the offset of this ListPipelinesResponse.
 
         起始偏移
 
@@ -76,7 +76,7 @@ class ListPipelinesResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPipelinesResponse.
+        r"""Sets the offset of this ListPipelinesResponse.
 
         起始偏移
 
@@ -87,7 +87,7 @@ class ListPipelinesResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListPipelinesResponse.
+        r"""Gets the limit of this ListPipelinesResponse.
 
         查询大小
 
@@ -98,7 +98,7 @@ class ListPipelinesResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPipelinesResponse.
+        r"""Sets the limit of this ListPipelinesResponse.
 
         查询大小
 
@@ -109,7 +109,7 @@ class ListPipelinesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPipelinesResponse.
+        r"""Gets the total of this ListPipelinesResponse.
 
         总数
 
@@ -120,7 +120,7 @@ class ListPipelinesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPipelinesResponse.
+        r"""Sets the total of this ListPipelinesResponse.
 
         总数
 
@@ -131,7 +131,7 @@ class ListPipelinesResponse(SdkResponse):
 
     @property
     def pipelines(self):
-        """Gets the pipelines of this ListPipelinesResponse.
+        r"""Gets the pipelines of this ListPipelinesResponse.
 
         流水线
 
@@ -142,7 +142,7 @@ class ListPipelinesResponse(SdkResponse):
 
     @pipelines.setter
     def pipelines(self, pipelines):
-        """Sets the pipelines of this ListPipelinesResponse.
+        r"""Sets the pipelines of this ListPipelinesResponse.
 
         流水线
 

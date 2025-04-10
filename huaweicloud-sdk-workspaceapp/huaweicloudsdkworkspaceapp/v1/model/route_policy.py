@@ -29,7 +29,7 @@ class RoutePolicy:
     }
 
     def __init__(self, max_session=None, cpu_threshold=None, mem_threshold=None):
-        """RoutePolicy
+        r"""RoutePolicy
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RoutePolicy:
 
     @property
     def max_session(self):
-        """Gets the max_session of this RoutePolicy.
+        r"""Gets the max_session of this RoutePolicy.
 
         单台服务器最大的链接会话数。
 
@@ -68,7 +68,7 @@ class RoutePolicy:
 
     @max_session.setter
     def max_session(self, max_session):
-        """Sets the max_session of this RoutePolicy.
+        r"""Sets the max_session of this RoutePolicy.
 
         单台服务器最大的链接会话数。
 
@@ -79,7 +79,7 @@ class RoutePolicy:
 
     @property
     def cpu_threshold(self):
-        """Gets the cpu_threshold of this RoutePolicy.
+        r"""Gets the cpu_threshold of this RoutePolicy.
 
         cpu使用率阈值，单位为%。
 
@@ -90,7 +90,7 @@ class RoutePolicy:
 
     @cpu_threshold.setter
     def cpu_threshold(self, cpu_threshold):
-        """Sets the cpu_threshold of this RoutePolicy.
+        r"""Sets the cpu_threshold of this RoutePolicy.
 
         cpu使用率阈值，单位为%。
 
@@ -101,7 +101,7 @@ class RoutePolicy:
 
     @property
     def mem_threshold(self):
-        """Gets the mem_threshold of this RoutePolicy.
+        r"""Gets the mem_threshold of this RoutePolicy.
 
         内存使用率阈值，单位为%。
 
@@ -112,7 +112,7 @@ class RoutePolicy:
 
     @mem_threshold.setter
     def mem_threshold(self, mem_threshold):
-        """Sets the mem_threshold of this RoutePolicy.
+        r"""Sets the mem_threshold of this RoutePolicy.
 
         内存使用率阈值，单位为%。
 

@@ -25,7 +25,7 @@ class CreatePostPaidVaultRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePostPaidVaultRequest
+        r"""CreatePostPaidVaultRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreatePostPaidVaultRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePostPaidVaultRequest.
+        r"""Gets the body of this CreatePostPaidVaultRequest.
 
         :return: The body of this CreatePostPaidVaultRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultOrderCreateReqs`
@@ -52,7 +52,7 @@ class CreatePostPaidVaultRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePostPaidVaultRequest.
+        r"""Sets the body of this CreatePostPaidVaultRequest.
 
         :param body: The body of this CreatePostPaidVaultRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.VaultOrderCreateReqs`

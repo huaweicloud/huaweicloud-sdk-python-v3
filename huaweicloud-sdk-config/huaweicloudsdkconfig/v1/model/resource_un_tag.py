@@ -27,7 +27,7 @@ class ResourceUnTag:
     }
 
     def __init__(self, key=None, value=None):
-        """ResourceUnTag
+        r"""ResourceUnTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ResourceUnTag:
 
     @property
     def key(self):
-        """Gets the key of this ResourceUnTag.
+        r"""Gets the key of this ResourceUnTag.
 
         键。最大长度128个unicode字符。 key符合3.1 KEY字符集规范。
 
@@ -59,7 +59,7 @@ class ResourceUnTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceUnTag.
+        r"""Sets the key of this ResourceUnTag.
 
         键。最大长度128个unicode字符。 key符合3.1 KEY字符集规范。
 
@@ -70,7 +70,7 @@ class ResourceUnTag:
 
     @property
     def value(self):
-        """Gets the value of this ResourceUnTag.
+        r"""Gets the value of this ResourceUnTag.
 
         值。每个值最大长度255个unicode字符。value符合3.2 VALUE字符集规范。
 
@@ -81,7 +81,7 @@ class ResourceUnTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResourceUnTag.
+        r"""Sets the value of this ResourceUnTag.
 
         值。每个值最大长度255个unicode字符。value符合3.2 VALUE字符集规范。
 

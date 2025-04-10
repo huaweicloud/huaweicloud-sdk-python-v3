@@ -25,7 +25,7 @@ class UpdateMaterialRequestDTO:
     }
 
     def __init__(self, material_name=None):
-        """UpdateMaterialRequestDTO
+        r"""UpdateMaterialRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateMaterialRequestDTO:
 
     @property
     def material_name(self):
-        """Gets the material_name of this UpdateMaterialRequestDTO.
+        r"""Gets the material_name of this UpdateMaterialRequestDTO.
 
         素材名称。
 
@@ -54,7 +54,7 @@ class UpdateMaterialRequestDTO:
 
     @material_name.setter
     def material_name(self, material_name):
-        """Sets the material_name of this UpdateMaterialRequestDTO.
+        r"""Sets the material_name of this UpdateMaterialRequestDTO.
 
         素材名称。
 

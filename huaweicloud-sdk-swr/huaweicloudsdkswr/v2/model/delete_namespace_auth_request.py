@@ -27,7 +27,7 @@ class DeleteNamespaceAuthRequest:
     }
 
     def __init__(self, namespace=None, body=None):
-        """DeleteNamespaceAuthRequest
+        r"""DeleteNamespaceAuthRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteNamespaceAuthRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this DeleteNamespaceAuthRequest.
+        r"""Gets the namespace of this DeleteNamespaceAuthRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -60,7 +60,7 @@ class DeleteNamespaceAuthRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this DeleteNamespaceAuthRequest.
+        r"""Sets the namespace of this DeleteNamespaceAuthRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -71,7 +71,7 @@ class DeleteNamespaceAuthRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteNamespaceAuthRequest.
+        r"""Gets the body of this DeleteNamespaceAuthRequest.
 
         :return: The body of this DeleteNamespaceAuthRequest.
         :rtype: list[str]
@@ -80,7 +80,7 @@ class DeleteNamespaceAuthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteNamespaceAuthRequest.
+        r"""Sets the body of this DeleteNamespaceAuthRequest.
 
         :param body: The body of this DeleteNamespaceAuthRequest.
         :type body: list[str]

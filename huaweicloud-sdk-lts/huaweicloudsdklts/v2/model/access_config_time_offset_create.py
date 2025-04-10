@@ -27,7 +27,7 @@ class AccessConfigTimeOffsetCreate:
     }
 
     def __init__(self, offset=None, unit=None):
-        """AccessConfigTimeOffsetCreate
+        r"""AccessConfigTimeOffsetCreate
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AccessConfigTimeOffsetCreate:
 
     @property
     def offset(self):
-        """Gets the offset of this AccessConfigTimeOffsetCreate.
+        r"""Gets the offset of this AccessConfigTimeOffsetCreate.
 
         偏移时间。 当\"unit\"选择\"day\"时，范围为1~7天。 当\"unit\"选择\"hour\"时，范围为1~168小时。 当\"unit\"选择\"sec\"时，范围为1~604800秒。
 
@@ -59,7 +59,7 @@ class AccessConfigTimeOffsetCreate:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this AccessConfigTimeOffsetCreate.
+        r"""Sets the offset of this AccessConfigTimeOffsetCreate.
 
         偏移时间。 当\"unit\"选择\"day\"时，范围为1~7天。 当\"unit\"选择\"hour\"时，范围为1~168小时。 当\"unit\"选择\"sec\"时，范围为1~604800秒。
 
@@ -70,7 +70,7 @@ class AccessConfigTimeOffsetCreate:
 
     @property
     def unit(self):
-        """Gets the unit of this AccessConfigTimeOffsetCreate.
+        r"""Gets the unit of this AccessConfigTimeOffsetCreate.
 
         偏移时间单位。day ：天，hour：小时，sec：秒
 
@@ -81,7 +81,7 @@ class AccessConfigTimeOffsetCreate:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this AccessConfigTimeOffsetCreate.
+        r"""Sets the unit of this AccessConfigTimeOffsetCreate.
 
         偏移时间单位。day ：天，hour：小时，sec：秒
 

@@ -35,7 +35,7 @@ class CheckRulesetParametersRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, ruleset_id=None, language=None, offset=None, limit=None):
-        """CheckRulesetParametersRequest
+        r"""CheckRulesetParametersRequest
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CheckRulesetParametersRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CheckRulesetParametersRequest.
+        r"""Gets the project_id of this CheckRulesetParametersRequest.
 
         项目ID
 
@@ -85,7 +85,7 @@ class CheckRulesetParametersRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CheckRulesetParametersRequest.
+        r"""Sets the project_id of this CheckRulesetParametersRequest.
 
         项目ID
 
@@ -96,7 +96,7 @@ class CheckRulesetParametersRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CheckRulesetParametersRequest.
+        r"""Gets the task_id of this CheckRulesetParametersRequest.
 
         任务ID
 
@@ -107,7 +107,7 @@ class CheckRulesetParametersRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CheckRulesetParametersRequest.
+        r"""Sets the task_id of this CheckRulesetParametersRequest.
 
         任务ID
 
@@ -118,7 +118,7 @@ class CheckRulesetParametersRequest:
 
     @property
     def ruleset_id(self):
-        """Gets the ruleset_id of this CheckRulesetParametersRequest.
+        r"""Gets the ruleset_id of this CheckRulesetParametersRequest.
 
         规则集ID
 
@@ -129,7 +129,7 @@ class CheckRulesetParametersRequest:
 
     @ruleset_id.setter
     def ruleset_id(self, ruleset_id):
-        """Sets the ruleset_id of this CheckRulesetParametersRequest.
+        r"""Sets the ruleset_id of this CheckRulesetParametersRequest.
 
         规则集ID
 
@@ -140,7 +140,7 @@ class CheckRulesetParametersRequest:
 
     @property
     def language(self):
-        """Gets the language of this CheckRulesetParametersRequest.
+        r"""Gets the language of this CheckRulesetParametersRequest.
 
         规则集语言
 
@@ -151,7 +151,7 @@ class CheckRulesetParametersRequest:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this CheckRulesetParametersRequest.
+        r"""Sets the language of this CheckRulesetParametersRequest.
 
         规则集语言
 
@@ -162,7 +162,7 @@ class CheckRulesetParametersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this CheckRulesetParametersRequest.
+        r"""Gets the offset of this CheckRulesetParametersRequest.
 
         分页索引，偏移量，非必填
 
@@ -173,7 +173,7 @@ class CheckRulesetParametersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this CheckRulesetParametersRequest.
+        r"""Sets the offset of this CheckRulesetParametersRequest.
 
         分页索引，偏移量，非必填
 
@@ -184,7 +184,7 @@ class CheckRulesetParametersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this CheckRulesetParametersRequest.
+        r"""Gets the limit of this CheckRulesetParametersRequest.
 
         每页显示的数量，非必填
 
@@ -195,7 +195,7 @@ class CheckRulesetParametersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this CheckRulesetParametersRequest.
+        r"""Sets the limit of this CheckRulesetParametersRequest.
 
         每页显示的数量，非必填
 

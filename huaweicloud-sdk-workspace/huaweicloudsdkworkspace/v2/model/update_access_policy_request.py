@@ -27,7 +27,7 @@ class UpdateAccessPolicyRequest:
     }
 
     def __init__(self, access_policy_id=None, body=None):
-        """UpdateAccessPolicyRequest
+        r"""UpdateAccessPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAccessPolicyRequest:
 
     @property
     def access_policy_id(self):
-        """Gets the access_policy_id of this UpdateAccessPolicyRequest.
+        r"""Gets the access_policy_id of this UpdateAccessPolicyRequest.
 
         接入策略id。
 
@@ -60,7 +60,7 @@ class UpdateAccessPolicyRequest:
 
     @access_policy_id.setter
     def access_policy_id(self, access_policy_id):
-        """Sets the access_policy_id of this UpdateAccessPolicyRequest.
+        r"""Sets the access_policy_id of this UpdateAccessPolicyRequest.
 
         接入策略id。
 
@@ -71,7 +71,7 @@ class UpdateAccessPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAccessPolicyRequest.
+        r"""Gets the body of this UpdateAccessPolicyRequest.
 
         :return: The body of this UpdateAccessPolicyRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateAccessPolicyReq`
@@ -80,7 +80,7 @@ class UpdateAccessPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAccessPolicyRequest.
+        r"""Sets the body of this UpdateAccessPolicyRequest.
 
         :param body: The body of this UpdateAccessPolicyRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateAccessPolicyReq`

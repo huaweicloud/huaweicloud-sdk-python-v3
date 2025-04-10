@@ -33,7 +33,7 @@ class ApplyDesktopsInternet:
     }
 
     def __init__(self, desktop_ids=None, eip_type=None, eip_charge_mode=None, bandwidth_size=None, count=None):
-        """ApplyDesktopsInternet
+        r"""ApplyDesktopsInternet
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ApplyDesktopsInternet:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this ApplyDesktopsInternet.
+        r"""Gets the desktop_ids of this ApplyDesktopsInternet.
 
         需要开通上网功能的桌面id列表。
 
@@ -79,7 +79,7 @@ class ApplyDesktopsInternet:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this ApplyDesktopsInternet.
+        r"""Sets the desktop_ids of this ApplyDesktopsInternet.
 
         需要开通上网功能的桌面id列表。
 
@@ -90,7 +90,7 @@ class ApplyDesktopsInternet:
 
     @property
     def eip_type(self):
-        """Gets the eip_type of this ApplyDesktopsInternet.
+        r"""Gets the eip_type of this ApplyDesktopsInternet.
 
         支持的类型请参考EIP服务支持的类型。可通过调用如下链接的接口查询，https://support.huaweicloud.com/api-eip/ShowPublicIpType.html。
 
@@ -101,7 +101,7 @@ class ApplyDesktopsInternet:
 
     @eip_type.setter
     def eip_type(self, eip_type):
-        """Sets the eip_type of this ApplyDesktopsInternet.
+        r"""Sets the eip_type of this ApplyDesktopsInternet.
 
         支持的类型请参考EIP服务支持的类型。可通过调用如下链接的接口查询，https://support.huaweicloud.com/api-eip/ShowPublicIpType.html。
 
@@ -112,7 +112,7 @@ class ApplyDesktopsInternet:
 
     @property
     def eip_charge_mode(self):
-        """Gets the eip_charge_mode of this ApplyDesktopsInternet.
+        r"""Gets the eip_charge_mode of this ApplyDesktopsInternet.
 
         eip带宽计费模式 - TRAFFIC：按流量计费。 - BANDWIDTH：按带宽计费。
 
@@ -123,7 +123,7 @@ class ApplyDesktopsInternet:
 
     @eip_charge_mode.setter
     def eip_charge_mode(self, eip_charge_mode):
-        """Sets the eip_charge_mode of this ApplyDesktopsInternet.
+        r"""Sets the eip_charge_mode of this ApplyDesktopsInternet.
 
         eip带宽计费模式 - TRAFFIC：按流量计费。 - BANDWIDTH：按带宽计费。
 
@@ -134,7 +134,7 @@ class ApplyDesktopsInternet:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this ApplyDesktopsInternet.
+        r"""Gets the bandwidth_size of this ApplyDesktopsInternet.
 
         带宽大小，单位Mbit/s。默认1Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。
 
@@ -145,7 +145,7 @@ class ApplyDesktopsInternet:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this ApplyDesktopsInternet.
+        r"""Sets the bandwidth_size of this ApplyDesktopsInternet.
 
         带宽大小，单位Mbit/s。默认1Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。
 
@@ -156,7 +156,7 @@ class ApplyDesktopsInternet:
 
     @property
     def count(self):
-        """Gets the count of this ApplyDesktopsInternet.
+        r"""Gets the count of this ApplyDesktopsInternet.
 
         需要购买EIP的数量，当desktop_ids为空时需要填，兼容单独购买EIP场景。
 
@@ -167,7 +167,7 @@ class ApplyDesktopsInternet:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ApplyDesktopsInternet.
+        r"""Sets the count of this ApplyDesktopsInternet.
 
         需要购买EIP的数量，当desktop_ids为空时需要填，兼容单独购买EIP场景。
 

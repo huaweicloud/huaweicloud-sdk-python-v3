@@ -25,7 +25,7 @@ class UpdateWatermarkTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateWatermarkTemplateRequest
+        r"""UpdateWatermarkTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateWatermarkTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateWatermarkTemplateRequest.
+        r"""Gets the body of this UpdateWatermarkTemplateRequest.
 
         :return: The body of this UpdateWatermarkTemplateRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.WatermarkTemplate`
@@ -52,7 +52,7 @@ class UpdateWatermarkTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateWatermarkTemplateRequest.
+        r"""Sets the body of this UpdateWatermarkTemplateRequest.
 
         :param body: The body of this UpdateWatermarkTemplateRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.WatermarkTemplate`

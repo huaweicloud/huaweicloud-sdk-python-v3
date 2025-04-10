@@ -29,7 +29,7 @@ class AddDesktopVolumesRequest:
     }
 
     def __init__(self, desktop_id=None, service_transaction_id=None, body=None):
-        """AddDesktopVolumesRequest
+        r"""AddDesktopVolumesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AddDesktopVolumesRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this AddDesktopVolumesRequest.
+        r"""Gets the desktop_id of this AddDesktopVolumesRequest.
 
         桌面ID。
 
@@ -67,7 +67,7 @@ class AddDesktopVolumesRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this AddDesktopVolumesRequest.
+        r"""Sets the desktop_id of this AddDesktopVolumesRequest.
 
         桌面ID。
 
@@ -78,7 +78,7 @@ class AddDesktopVolumesRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this AddDesktopVolumesRequest.
+        r"""Gets the service_transaction_id of this AddDesktopVolumesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -89,7 +89,7 @@ class AddDesktopVolumesRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this AddDesktopVolumesRequest.
+        r"""Sets the service_transaction_id of this AddDesktopVolumesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -100,7 +100,7 @@ class AddDesktopVolumesRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddDesktopVolumesRequest.
+        r"""Gets the body of this AddDesktopVolumesRequest.
 
         :return: The body of this AddDesktopVolumesRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AddVolumesReq`
@@ -109,7 +109,7 @@ class AddDesktopVolumesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddDesktopVolumesRequest.
+        r"""Sets the body of this AddDesktopVolumesRequest.
 
         :param body: The body of this AddDesktopVolumesRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.AddVolumesReq`

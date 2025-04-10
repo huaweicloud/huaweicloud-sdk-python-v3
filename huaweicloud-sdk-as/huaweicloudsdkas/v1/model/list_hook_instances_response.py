@@ -26,7 +26,7 @@ class ListHookInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instance_hanging_info=None):
-        """ListHookInstancesResponse
+        r"""ListHookInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListHookInstancesResponse(SdkResponse):
 
     @property
     def instance_hanging_info(self):
-        """Gets the instance_hanging_info of this ListHookInstancesResponse.
+        r"""Gets the instance_hanging_info of this ListHookInstancesResponse.
 
         伸缩实例生命周期挂钩列表。
 
@@ -55,7 +55,7 @@ class ListHookInstancesResponse(SdkResponse):
 
     @instance_hanging_info.setter
     def instance_hanging_info(self, instance_hanging_info):
-        """Sets the instance_hanging_info of this ListHookInstancesResponse.
+        r"""Sets the instance_hanging_info of this ListHookInstancesResponse.
 
         伸缩实例生命周期挂钩列表。
 

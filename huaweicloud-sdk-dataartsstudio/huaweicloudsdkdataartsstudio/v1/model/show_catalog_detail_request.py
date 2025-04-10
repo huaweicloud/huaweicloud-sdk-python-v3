@@ -29,7 +29,7 @@ class ShowCatalogDetailRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, catalog_id=None):
-        """ShowCatalogDetailRequest
+        r"""ShowCatalogDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowCatalogDetailRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowCatalogDetailRequest.
+        r"""Gets the workspace of this ShowCatalogDetailRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -66,7 +66,7 @@ class ShowCatalogDetailRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowCatalogDetailRequest.
+        r"""Sets the workspace of this ShowCatalogDetailRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -77,7 +77,7 @@ class ShowCatalogDetailRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ShowCatalogDetailRequest.
+        r"""Gets the dlm_type of this ShowCatalogDetailRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -88,7 +88,7 @@ class ShowCatalogDetailRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ShowCatalogDetailRequest.
+        r"""Sets the dlm_type of this ShowCatalogDetailRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -99,7 +99,7 @@ class ShowCatalogDetailRequest:
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this ShowCatalogDetailRequest.
+        r"""Gets the catalog_id of this ShowCatalogDetailRequest.
 
         目录编号。
 
@@ -110,7 +110,7 @@ class ShowCatalogDetailRequest:
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this ShowCatalogDetailRequest.
+        r"""Sets the catalog_id of this ShowCatalogDetailRequest.
 
         目录编号。
 

@@ -45,7 +45,7 @@ class UserBasicDto:
     }
 
     def __init__(self, id=None, name=None, username=None, state=None, avatar_url=None, avatar_path=None, email=None, name_cn=None, web_url=None, nick_name=None, tenant_name=None):
-        """UserBasicDto
+        r"""UserBasicDto
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class UserBasicDto:
 
     @property
     def id(self):
-        """Gets the id of this UserBasicDto.
+        r"""Gets the id of this UserBasicDto.
 
         用户id
 
@@ -124,7 +124,7 @@ class UserBasicDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UserBasicDto.
+        r"""Sets the id of this UserBasicDto.
 
         用户id
 
@@ -135,7 +135,7 @@ class UserBasicDto:
 
     @property
     def name(self):
-        """Gets the name of this UserBasicDto.
+        r"""Gets the name of this UserBasicDto.
 
         姓名
 
@@ -146,7 +146,7 @@ class UserBasicDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UserBasicDto.
+        r"""Sets the name of this UserBasicDto.
 
         姓名
 
@@ -157,7 +157,7 @@ class UserBasicDto:
 
     @property
     def username(self):
-        """Gets the username of this UserBasicDto.
+        r"""Gets the username of this UserBasicDto.
 
         用户名
 
@@ -168,7 +168,7 @@ class UserBasicDto:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this UserBasicDto.
+        r"""Sets the username of this UserBasicDto.
 
         用户名
 
@@ -179,7 +179,7 @@ class UserBasicDto:
 
     @property
     def state(self):
-        """Gets the state of this UserBasicDto.
+        r"""Gets the state of this UserBasicDto.
 
         状态
 
@@ -190,7 +190,7 @@ class UserBasicDto:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UserBasicDto.
+        r"""Sets the state of this UserBasicDto.
 
         状态
 
@@ -201,7 +201,7 @@ class UserBasicDto:
 
     @property
     def avatar_url(self):
-        """Gets the avatar_url of this UserBasicDto.
+        r"""Gets the avatar_url of this UserBasicDto.
 
         头像url
 
@@ -212,7 +212,7 @@ class UserBasicDto:
 
     @avatar_url.setter
     def avatar_url(self, avatar_url):
-        """Sets the avatar_url of this UserBasicDto.
+        r"""Sets the avatar_url of this UserBasicDto.
 
         头像url
 
@@ -223,7 +223,7 @@ class UserBasicDto:
 
     @property
     def avatar_path(self):
-        """Gets the avatar_path of this UserBasicDto.
+        r"""Gets the avatar_path of this UserBasicDto.
 
         头像路径
 
@@ -234,7 +234,7 @@ class UserBasicDto:
 
     @avatar_path.setter
     def avatar_path(self, avatar_path):
-        """Sets the avatar_path of this UserBasicDto.
+        r"""Sets the avatar_path of this UserBasicDto.
 
         头像路径
 
@@ -245,7 +245,7 @@ class UserBasicDto:
 
     @property
     def email(self):
-        """Gets the email of this UserBasicDto.
+        r"""Gets the email of this UserBasicDto.
 
         邮箱
 
@@ -256,7 +256,7 @@ class UserBasicDto:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this UserBasicDto.
+        r"""Sets the email of this UserBasicDto.
 
         邮箱
 
@@ -267,7 +267,7 @@ class UserBasicDto:
 
     @property
     def name_cn(self):
-        """Gets the name_cn of this UserBasicDto.
+        r"""Gets the name_cn of this UserBasicDto.
 
         中文名
 
@@ -278,7 +278,7 @@ class UserBasicDto:
 
     @name_cn.setter
     def name_cn(self, name_cn):
-        """Sets the name_cn of this UserBasicDto.
+        r"""Sets the name_cn of this UserBasicDto.
 
         中文名
 
@@ -289,7 +289,7 @@ class UserBasicDto:
 
     @property
     def web_url(self):
-        """Gets the web_url of this UserBasicDto.
+        r"""Gets the web_url of this UserBasicDto.
 
         主页
 
@@ -300,7 +300,7 @@ class UserBasicDto:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this UserBasicDto.
+        r"""Sets the web_url of this UserBasicDto.
 
         主页
 
@@ -311,7 +311,7 @@ class UserBasicDto:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this UserBasicDto.
+        r"""Gets the nick_name of this UserBasicDto.
 
         昵称
 
@@ -322,7 +322,7 @@ class UserBasicDto:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this UserBasicDto.
+        r"""Sets the nick_name of this UserBasicDto.
 
         昵称
 
@@ -333,7 +333,7 @@ class UserBasicDto:
 
     @property
     def tenant_name(self):
-        """Gets the tenant_name of this UserBasicDto.
+        r"""Gets the tenant_name of this UserBasicDto.
 
         租户名称
 
@@ -344,7 +344,7 @@ class UserBasicDto:
 
     @tenant_name.setter
     def tenant_name(self, tenant_name):
-        """Sets the tenant_name of this UserBasicDto.
+        r"""Sets the tenant_name of this UserBasicDto.
 
         租户名称
 

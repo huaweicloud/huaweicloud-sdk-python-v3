@@ -27,7 +27,7 @@ class CreateHealthReportReq:
     }
 
     def __init__(self, start_at=None, end_at=None):
-        """CreateHealthReportReq
+        r"""CreateHealthReportReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateHealthReportReq:
 
     @property
     def start_at(self):
-        """Gets the start_at of this CreateHealthReportReq.
+        r"""Gets the start_at of this CreateHealthReportReq.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -59,7 +59,7 @@ class CreateHealthReportReq:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this CreateHealthReportReq.
+        r"""Sets the start_at of this CreateHealthReportReq.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -70,7 +70,7 @@ class CreateHealthReportReq:
 
     @property
     def end_at(self):
-        """Gets the end_at of this CreateHealthReportReq.
+        r"""Gets the end_at of this CreateHealthReportReq.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -81,7 +81,7 @@ class CreateHealthReportReq:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this CreateHealthReportReq.
+        r"""Sets the end_at of this CreateHealthReportReq.
 
         结束时间（Unix timestamp），单位：毫秒。
 

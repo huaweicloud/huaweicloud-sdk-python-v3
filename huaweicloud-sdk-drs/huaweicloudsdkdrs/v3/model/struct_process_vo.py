@@ -35,7 +35,7 @@ class StructProcessVO:
     }
 
     def __init__(self, type=None, status=None, src_count=None, dst_count=None, start_time=None, end_time=None):
-        """StructProcessVO
+        r"""StructProcessVO
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class StructProcessVO:
 
     @property
     def type(self):
-        """Gets the type of this StructProcessVO.
+        r"""Gets the type of this StructProcessVO.
 
         对象类型
 
@@ -84,7 +84,7 @@ class StructProcessVO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this StructProcessVO.
+        r"""Sets the type of this StructProcessVO.
 
         对象类型
 
@@ -95,7 +95,7 @@ class StructProcessVO:
 
     @property
     def status(self):
-        """Gets the status of this StructProcessVO.
+        r"""Gets the status of this StructProcessVO.
 
         状态
 
@@ -106,7 +106,7 @@ class StructProcessVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StructProcessVO.
+        r"""Sets the status of this StructProcessVO.
 
         状态
 
@@ -117,7 +117,7 @@ class StructProcessVO:
 
     @property
     def src_count(self):
-        """Gets the src_count of this StructProcessVO.
+        r"""Gets the src_count of this StructProcessVO.
 
         源对象数量
 
@@ -128,7 +128,7 @@ class StructProcessVO:
 
     @src_count.setter
     def src_count(self, src_count):
-        """Sets the src_count of this StructProcessVO.
+        r"""Sets the src_count of this StructProcessVO.
 
         源对象数量
 
@@ -139,7 +139,7 @@ class StructProcessVO:
 
     @property
     def dst_count(self):
-        """Gets the dst_count of this StructProcessVO.
+        r"""Gets the dst_count of this StructProcessVO.
 
         目标对象数量
 
@@ -150,7 +150,7 @@ class StructProcessVO:
 
     @dst_count.setter
     def dst_count(self, dst_count):
-        """Sets the dst_count of this StructProcessVO.
+        r"""Sets the dst_count of this StructProcessVO.
 
         目标对象数量
 
@@ -161,7 +161,7 @@ class StructProcessVO:
 
     @property
     def start_time(self):
-        """Gets the start_time of this StructProcessVO.
+        r"""Gets the start_time of this StructProcessVO.
 
         开始时间
 
@@ -172,7 +172,7 @@ class StructProcessVO:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this StructProcessVO.
+        r"""Sets the start_time of this StructProcessVO.
 
         开始时间
 
@@ -183,7 +183,7 @@ class StructProcessVO:
 
     @property
     def end_time(self):
-        """Gets the end_time of this StructProcessVO.
+        r"""Gets the end_time of this StructProcessVO.
 
         结束时间
 
@@ -194,7 +194,7 @@ class StructProcessVO:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this StructProcessVO.
+        r"""Sets the end_time of this StructProcessVO.
 
         结束时间
 

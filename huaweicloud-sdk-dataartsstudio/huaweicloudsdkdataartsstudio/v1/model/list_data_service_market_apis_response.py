@@ -28,7 +28,7 @@ class ListDataServiceMarketApisResponse(SdkResponse):
     }
 
     def __init__(self, total=None, apis=None):
-        """ListDataServiceMarketApisResponse
+        r"""ListDataServiceMarketApisResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDataServiceMarketApisResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDataServiceMarketApisResponse.
+        r"""Gets the total of this ListDataServiceMarketApisResponse.
 
         API总条数。
 
@@ -62,7 +62,7 @@ class ListDataServiceMarketApisResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDataServiceMarketApisResponse.
+        r"""Sets the total of this ListDataServiceMarketApisResponse.
 
         API总条数。
 
@@ -73,7 +73,7 @@ class ListDataServiceMarketApisResponse(SdkResponse):
 
     @property
     def apis(self):
-        """Gets the apis of this ListDataServiceMarketApisResponse.
+        r"""Gets the apis of this ListDataServiceMarketApisResponse.
 
         API列表。
 
@@ -84,7 +84,7 @@ class ListDataServiceMarketApisResponse(SdkResponse):
 
     @apis.setter
     def apis(self, apis):
-        """Sets the apis of this ListDataServiceMarketApisResponse.
+        r"""Sets the apis of this ListDataServiceMarketApisResponse.
 
         API列表。
 

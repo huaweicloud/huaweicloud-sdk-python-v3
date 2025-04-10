@@ -27,7 +27,7 @@ class Recipe:
     }
 
     def __init__(self, content=None, type=None):
-        """Recipe
+        r"""Recipe
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Recipe:
 
     @property
     def content(self):
-        """Gets the content of this Recipe.
+        r"""Gets the content of this Recipe.
 
         镜像内容
 
@@ -61,7 +61,7 @@ class Recipe:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this Recipe.
+        r"""Sets the content of this Recipe.
 
         镜像内容
 
@@ -72,7 +72,7 @@ class Recipe:
 
     @property
     def type(self):
-        """Gets the type of this Recipe.
+        r"""Gets the type of this Recipe.
 
         镜像类型
 
@@ -83,7 +83,7 @@ class Recipe:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Recipe.
+        r"""Sets the type of this Recipe.
 
         镜像类型
 

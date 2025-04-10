@@ -27,7 +27,7 @@ class UpdateAttributeRequest:
     }
 
     def __init__(self, attribute_id=None, body=None):
-        """UpdateAttributeRequest
+        r"""UpdateAttributeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAttributeRequest:
 
     @property
     def attribute_id(self):
-        """Gets the attribute_id of this UpdateAttributeRequest.
+        r"""Gets the attribute_id of this UpdateAttributeRequest.
 
         自定义属性标识
 
@@ -60,7 +60,7 @@ class UpdateAttributeRequest:
 
     @attribute_id.setter
     def attribute_id(self, attribute_id):
-        """Sets the attribute_id of this UpdateAttributeRequest.
+        r"""Sets the attribute_id of this UpdateAttributeRequest.
 
         自定义属性标识
 
@@ -71,7 +71,7 @@ class UpdateAttributeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAttributeRequest.
+        r"""Gets the body of this UpdateAttributeRequest.
 
         :return: The body of this UpdateAttributeRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.AddOrModifyAttributeReq`
@@ -80,7 +80,7 @@ class UpdateAttributeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAttributeRequest.
+        r"""Sets the body of this UpdateAttributeRequest.
 
         :param body: The body of this UpdateAttributeRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.AddOrModifyAttributeReq`

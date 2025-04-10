@@ -27,7 +27,7 @@ class AddAppIdRequestBody:
     }
 
     def __init__(self, app_name=None, description=None):
-        """AddAppIdRequestBody
+        r"""AddAppIdRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddAppIdRequestBody:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AddAppIdRequestBody.
+        r"""Gets the app_name of this AddAppIdRequestBody.
 
         企业应用名称
 
@@ -60,7 +60,7 @@ class AddAppIdRequestBody:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AddAppIdRequestBody.
+        r"""Sets the app_name of this AddAppIdRequestBody.
 
         企业应用名称
 
@@ -71,7 +71,7 @@ class AddAppIdRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this AddAppIdRequestBody.
+        r"""Gets the description of this AddAppIdRequestBody.
 
         企业应用描述
 
@@ -82,7 +82,7 @@ class AddAppIdRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddAppIdRequestBody.
+        r"""Sets the description of this AddAppIdRequestBody.
 
         企业应用描述
 

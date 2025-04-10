@@ -29,7 +29,7 @@ class RedisModifyDbUserPrivilegeRequestBody:
     }
 
     def __init__(self, name=None, privilege=None, databases=None):
-        """RedisModifyDbUserPrivilegeRequestBody
+        r"""RedisModifyDbUserPrivilegeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RedisModifyDbUserPrivilegeRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this RedisModifyDbUserPrivilegeRequestBody.
+        r"""Gets the name of this RedisModifyDbUserPrivilegeRequestBody.
 
         账号名称。  小于36个字符，以字母开头，仅包含数字、字母、中划线、下划线。
 
@@ -66,7 +66,7 @@ class RedisModifyDbUserPrivilegeRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RedisModifyDbUserPrivilegeRequestBody.
+        r"""Sets the name of this RedisModifyDbUserPrivilegeRequestBody.
 
         账号名称。  小于36个字符，以字母开头，仅包含数字、字母、中划线、下划线。
 
@@ -77,7 +77,7 @@ class RedisModifyDbUserPrivilegeRequestBody:
 
     @property
     def privilege(self):
-        """Gets the privilege of this RedisModifyDbUserPrivilegeRequestBody.
+        r"""Gets the privilege of this RedisModifyDbUserPrivilegeRequestBody.
 
         账号权限。  - 取值\"ReadOnly\"：账号为只读权限； - 取值\"ReadWrite\"：账号为读写权限。
 
@@ -88,7 +88,7 @@ class RedisModifyDbUserPrivilegeRequestBody:
 
     @privilege.setter
     def privilege(self, privilege):
-        """Sets the privilege of this RedisModifyDbUserPrivilegeRequestBody.
+        r"""Sets the privilege of this RedisModifyDbUserPrivilegeRequestBody.
 
         账号权限。  - 取值\"ReadOnly\"：账号为只读权限； - 取值\"ReadWrite\"：账号为读写权限。
 
@@ -99,7 +99,7 @@ class RedisModifyDbUserPrivilegeRequestBody:
 
     @property
     def databases(self):
-        """Gets the databases of this RedisModifyDbUserPrivilegeRequestBody.
+        r"""Gets the databases of this RedisModifyDbUserPrivilegeRequestBody.
 
         账号授权database列表。 不传值则对账号授权的db不做修改。
 
@@ -110,7 +110,7 @@ class RedisModifyDbUserPrivilegeRequestBody:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this RedisModifyDbUserPrivilegeRequestBody.
+        r"""Sets the databases of this RedisModifyDbUserPrivilegeRequestBody.
 
         账号授权database列表。 不传值则对账号授权的db不做修改。
 

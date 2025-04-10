@@ -33,7 +33,7 @@ class ListRestoreDatabasesRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, restore_time=None, offset=None, limit=None):
-        """ListRestoreDatabasesRequest
+        r"""ListRestoreDatabasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListRestoreDatabasesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListRestoreDatabasesRequest.
+        r"""Gets the x_language of this ListRestoreDatabasesRequest.
 
         语言。
 
@@ -80,7 +80,7 @@ class ListRestoreDatabasesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListRestoreDatabasesRequest.
+        r"""Sets the x_language of this ListRestoreDatabasesRequest.
 
         语言。
 
@@ -91,7 +91,7 @@ class ListRestoreDatabasesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListRestoreDatabasesRequest.
+        r"""Gets the instance_id of this ListRestoreDatabasesRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -102,7 +102,7 @@ class ListRestoreDatabasesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListRestoreDatabasesRequest.
+        r"""Sets the instance_id of this ListRestoreDatabasesRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -113,7 +113,7 @@ class ListRestoreDatabasesRequest:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this ListRestoreDatabasesRequest.
+        r"""Gets the restore_time of this ListRestoreDatabasesRequest.
 
         恢复时间点。UNIX时间戳格式，单位是毫秒，时区是UTC。
 
@@ -124,7 +124,7 @@ class ListRestoreDatabasesRequest:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this ListRestoreDatabasesRequest.
+        r"""Sets the restore_time of this ListRestoreDatabasesRequest.
 
         恢复时间点。UNIX时间戳格式，单位是毫秒，时区是UTC。
 
@@ -135,7 +135,7 @@ class ListRestoreDatabasesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRestoreDatabasesRequest.
+        r"""Gets the offset of this ListRestoreDatabasesRequest.
 
         索引位置偏移量。取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
@@ -146,7 +146,7 @@ class ListRestoreDatabasesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRestoreDatabasesRequest.
+        r"""Sets the offset of this ListRestoreDatabasesRequest.
 
         索引位置偏移量。取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
@@ -157,7 +157,7 @@ class ListRestoreDatabasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRestoreDatabasesRequest.
+        r"""Gets the limit of this ListRestoreDatabasesRequest.
 
         查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
 
@@ -168,7 +168,7 @@ class ListRestoreDatabasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRestoreDatabasesRequest.
+        r"""Sets the limit of this ListRestoreDatabasesRequest.
 
         查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
 

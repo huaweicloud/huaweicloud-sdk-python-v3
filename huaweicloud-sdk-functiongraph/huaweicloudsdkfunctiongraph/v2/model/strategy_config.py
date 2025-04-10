@@ -27,7 +27,7 @@ class StrategyConfig:
     }
 
     def __init__(self, concurrency=None, concurrent_num=None):
-        """StrategyConfig
+        r"""StrategyConfig
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StrategyConfig:
 
     @property
     def concurrency(self):
-        """Gets the concurrency of this StrategyConfig.
+        r"""Gets the concurrency of this StrategyConfig.
 
         单函数最大实例数，v1取值0和-1，v2取值-1到1000 -1代表该函数实例数无限制 0代表该函数被禁用
 
@@ -59,7 +59,7 @@ class StrategyConfig:
 
     @concurrency.setter
     def concurrency(self, concurrency):
-        """Sets the concurrency of this StrategyConfig.
+        r"""Sets the concurrency of this StrategyConfig.
 
         单函数最大实例数，v1取值0和-1，v2取值-1到1000 -1代表该函数实例数无限制 0代表该函数被禁用
 
@@ -70,7 +70,7 @@ class StrategyConfig:
 
     @property
     def concurrent_num(self):
-        """Gets the concurrent_num of this StrategyConfig.
+        r"""Gets the concurrent_num of this StrategyConfig.
 
         单实例并发数，v2版本才支持，取值1到1000
 
@@ -81,7 +81,7 @@ class StrategyConfig:
 
     @concurrent_num.setter
     def concurrent_num(self, concurrent_num):
-        """Sets the concurrent_num of this StrategyConfig.
+        r"""Sets the concurrent_num of this StrategyConfig.
 
         单实例并发数，v2版本才支持，取值1到1000
 

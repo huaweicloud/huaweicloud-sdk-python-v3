@@ -25,7 +25,7 @@ class MemberGroupCreateBatch:
     }
 
     def __init__(self, member_groups=None):
-        """MemberGroupCreateBatch
+        r"""MemberGroupCreateBatch
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MemberGroupCreateBatch:
 
     @property
     def member_groups(self):
-        """Gets the member_groups of this MemberGroupCreateBatch.
+        r"""Gets the member_groups of this MemberGroupCreateBatch.
 
         后端服务器组列表
 
@@ -54,7 +54,7 @@ class MemberGroupCreateBatch:
 
     @member_groups.setter
     def member_groups(self, member_groups):
-        """Sets the member_groups of this MemberGroupCreateBatch.
+        r"""Sets the member_groups of this MemberGroupCreateBatch.
 
         后端服务器组列表
 

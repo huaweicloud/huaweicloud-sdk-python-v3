@@ -35,7 +35,7 @@ class QuoteDatabaseResultRsp:
     }
 
     def __init__(self, source_project_id=None, source_database_id=None, destination_database_id=None, destination_database_name=None, failed_reason=None, status=None):
-        """QuoteDatabaseResultRsp
+        r"""QuoteDatabaseResultRsp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QuoteDatabaseResultRsp:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this QuoteDatabaseResultRsp.
+        r"""Gets the source_project_id of this QuoteDatabaseResultRsp.
 
         源项目id
 
@@ -89,7 +89,7 @@ class QuoteDatabaseResultRsp:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this QuoteDatabaseResultRsp.
+        r"""Sets the source_project_id of this QuoteDatabaseResultRsp.
 
         源项目id
 
@@ -100,7 +100,7 @@ class QuoteDatabaseResultRsp:
 
     @property
     def source_database_id(self):
-        """Gets the source_database_id of this QuoteDatabaseResultRsp.
+        r"""Gets the source_database_id of this QuoteDatabaseResultRsp.
 
         源数据库id
 
@@ -111,7 +111,7 @@ class QuoteDatabaseResultRsp:
 
     @source_database_id.setter
     def source_database_id(self, source_database_id):
-        """Sets the source_database_id of this QuoteDatabaseResultRsp.
+        r"""Sets the source_database_id of this QuoteDatabaseResultRsp.
 
         源数据库id
 
@@ -122,7 +122,7 @@ class QuoteDatabaseResultRsp:
 
     @property
     def destination_database_id(self):
-        """Gets the destination_database_id of this QuoteDatabaseResultRsp.
+        r"""Gets the destination_database_id of this QuoteDatabaseResultRsp.
 
         引用到项目后的数据库id
 
@@ -133,7 +133,7 @@ class QuoteDatabaseResultRsp:
 
     @destination_database_id.setter
     def destination_database_id(self, destination_database_id):
-        """Sets the destination_database_id of this QuoteDatabaseResultRsp.
+        r"""Sets the destination_database_id of this QuoteDatabaseResultRsp.
 
         引用到项目后的数据库id
 
@@ -144,7 +144,7 @@ class QuoteDatabaseResultRsp:
 
     @property
     def destination_database_name(self):
-        """Gets the destination_database_name of this QuoteDatabaseResultRsp.
+        r"""Gets the destination_database_name of this QuoteDatabaseResultRsp.
 
         引用到项目后的数据库名称
 
@@ -155,7 +155,7 @@ class QuoteDatabaseResultRsp:
 
     @destination_database_name.setter
     def destination_database_name(self, destination_database_name):
-        """Sets the destination_database_name of this QuoteDatabaseResultRsp.
+        r"""Sets the destination_database_name of this QuoteDatabaseResultRsp.
 
         引用到项目后的数据库名称
 
@@ -166,7 +166,7 @@ class QuoteDatabaseResultRsp:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this QuoteDatabaseResultRsp.
+        r"""Gets the failed_reason of this QuoteDatabaseResultRsp.
 
         失败原因
 
@@ -177,7 +177,7 @@ class QuoteDatabaseResultRsp:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this QuoteDatabaseResultRsp.
+        r"""Sets the failed_reason of this QuoteDatabaseResultRsp.
 
         失败原因
 
@@ -188,7 +188,7 @@ class QuoteDatabaseResultRsp:
 
     @property
     def status(self):
-        """Gets the status of this QuoteDatabaseResultRsp.
+        r"""Gets the status of this QuoteDatabaseResultRsp.
 
         导入结果
 
@@ -199,7 +199,7 @@ class QuoteDatabaseResultRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QuoteDatabaseResultRsp.
+        r"""Sets the status of this QuoteDatabaseResultRsp.
 
         导入结果
 

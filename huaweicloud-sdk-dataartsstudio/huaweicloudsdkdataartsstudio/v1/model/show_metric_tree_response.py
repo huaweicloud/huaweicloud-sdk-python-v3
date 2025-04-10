@@ -26,7 +26,7 @@ class ShowMetricTreeResponse(SdkResponse):
     }
 
     def __init__(self, architecture=None):
-        """ShowMetricTreeResponse
+        r"""ShowMetricTreeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowMetricTreeResponse(SdkResponse):
 
     @property
     def architecture(self):
-        """Gets the architecture of this ShowMetricTreeResponse.
+        r"""Gets the architecture of this ShowMetricTreeResponse.
 
         结构体系
 
@@ -55,7 +55,7 @@ class ShowMetricTreeResponse(SdkResponse):
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this ShowMetricTreeResponse.
+        r"""Sets the architecture of this ShowMetricTreeResponse.
 
         结构体系
 

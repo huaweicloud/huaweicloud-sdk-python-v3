@@ -31,7 +31,7 @@ class Source:
     }
 
     def __init__(self, code=None, type=None, sub_type=None, url=None):
-        """Source
+        r"""Source
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class Source:
 
     @property
     def code(self):
-        """Gets the code of this Source.
+        r"""Gets the code of this Source.
 
         :return: The code of this Source.
         :rtype: :class:`huaweicloudsdkcae.v1.Repo`
@@ -71,7 +71,7 @@ class Source:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this Source.
+        r"""Sets the code of this Source.
 
         :param code: The code of this Source.
         :type code: :class:`huaweicloudsdkcae.v1.Repo`
@@ -80,7 +80,7 @@ class Source:
 
     @property
     def type(self):
-        """Gets the type of this Source.
+        r"""Gets the type of this Source.
 
         源类型。
 
@@ -91,7 +91,7 @@ class Source:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Source.
+        r"""Sets the type of this Source.
 
         源类型。
 
@@ -102,7 +102,7 @@ class Source:
 
     @property
     def sub_type(self):
-        """Gets the sub_type of this Source.
+        r"""Gets the sub_type of this Source.
 
         源子类型。 - 源类型为code时，子类型表示不同的代码仓库，如DevCloud（CodeArts）、GitLab、GitHub、Gitee、Bitbucket。 - 源类型为softwarePackage时，子类型表示不同的软件包仓库，如BinObs、BinDevCloud（CodeArts软件发布库）。
 
@@ -113,7 +113,7 @@ class Source:
 
     @sub_type.setter
     def sub_type(self, sub_type):
-        """Sets the sub_type of this Source.
+        r"""Sets the sub_type of this Source.
 
         源子类型。 - 源类型为code时，子类型表示不同的代码仓库，如DevCloud（CodeArts）、GitLab、GitHub、Gitee、Bitbucket。 - 源类型为softwarePackage时，子类型表示不同的软件包仓库，如BinObs、BinDevCloud（CodeArts软件发布库）。
 
@@ -124,7 +124,7 @@ class Source:
 
     @property
     def url(self):
-        """Gets the url of this Source.
+        r"""Gets the url of this Source.
 
         url地址。 - 源类型为image时，url地址为镜像地址。 - 源类型为code时，url地址为git地址。 - 源类型为softwarePackage时，url地址为软件包地址。
 
@@ -135,7 +135,7 @@ class Source:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this Source.
+        r"""Sets the url of this Source.
 
         url地址。 - 源类型为image时，url地址为镜像地址。 - 源类型为code时，url地址为git地址。 - 源类型为softwarePackage时，url地址为软件包地址。
 

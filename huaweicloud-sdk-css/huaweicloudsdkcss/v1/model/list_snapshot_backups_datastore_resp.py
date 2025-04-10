@@ -27,7 +27,7 @@ class ListSnapshotBackupsDatastoreResp:
     }
 
     def __init__(self, type=None, version=None):
-        """ListSnapshotBackupsDatastoreResp
+        r"""ListSnapshotBackupsDatastoreResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListSnapshotBackupsDatastoreResp:
 
     @property
     def type(self):
-        """Gets the type of this ListSnapshotBackupsDatastoreResp.
+        r"""Gets the type of this ListSnapshotBackupsDatastoreResp.
 
         引擎类型，目前只支持elasticsearch。
 
@@ -61,7 +61,7 @@ class ListSnapshotBackupsDatastoreResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListSnapshotBackupsDatastoreResp.
+        r"""Sets the type of this ListSnapshotBackupsDatastoreResp.
 
         引擎类型，目前只支持elasticsearch。
 
@@ -72,7 +72,7 @@ class ListSnapshotBackupsDatastoreResp:
 
     @property
     def version(self):
-        """Gets the version of this ListSnapshotBackupsDatastoreResp.
+        r"""Gets the version of this ListSnapshotBackupsDatastoreResp.
 
         Esasticsearch引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
 
@@ -83,7 +83,7 @@ class ListSnapshotBackupsDatastoreResp:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListSnapshotBackupsDatastoreResp.
+        r"""Sets the version of this ListSnapshotBackupsDatastoreResp.
 
         Esasticsearch引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
 

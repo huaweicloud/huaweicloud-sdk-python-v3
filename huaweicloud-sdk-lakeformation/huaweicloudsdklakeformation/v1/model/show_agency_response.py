@@ -26,7 +26,7 @@ class ShowAgencyResponse(SdkResponse):
     }
 
     def __init__(self, agency_type=None):
-        """ShowAgencyResponse
+        r"""ShowAgencyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAgencyResponse(SdkResponse):
 
     @property
     def agency_type(self):
-        """Gets the agency_type of this ShowAgencyResponse.
+        r"""Gets the agency_type of this ShowAgencyResponse.
 
         委托类型,JOB_TRUST-任务委托,ADMIN_TRUST-系统委托
 
@@ -55,7 +55,7 @@ class ShowAgencyResponse(SdkResponse):
 
     @agency_type.setter
     def agency_type(self, agency_type):
-        """Sets the agency_type of this ShowAgencyResponse.
+        r"""Sets the agency_type of this ShowAgencyResponse.
 
         委托类型,JOB_TRUST-任务委托,ADMIN_TRUST-系统委托
 

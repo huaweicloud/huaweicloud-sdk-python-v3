@@ -29,7 +29,7 @@ class AttachOrDetachDomainInfo:
     }
 
     def __init__(self, domain=None, instance_ids=None, verified_client_certificate_enabled=None):
-        """AttachOrDetachDomainInfo
+        r"""AttachOrDetachDomainInfo
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AttachOrDetachDomainInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this AttachOrDetachDomainInfo.
+        r"""Gets the domain of this AttachOrDetachDomainInfo.
 
         域名
 
@@ -67,7 +67,7 @@ class AttachOrDetachDomainInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AttachOrDetachDomainInfo.
+        r"""Sets the domain of this AttachOrDetachDomainInfo.
 
         域名
 
@@ -78,7 +78,7 @@ class AttachOrDetachDomainInfo:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this AttachOrDetachDomainInfo.
+        r"""Gets the instance_ids of this AttachOrDetachDomainInfo.
 
         实例ID集合
 
@@ -89,7 +89,7 @@ class AttachOrDetachDomainInfo:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this AttachOrDetachDomainInfo.
+        r"""Sets the instance_ids of this AttachOrDetachDomainInfo.
 
         实例ID集合
 
@@ -100,7 +100,7 @@ class AttachOrDetachDomainInfo:
 
     @property
     def verified_client_certificate_enabled(self):
-        """Gets the verified_client_certificate_enabled of this AttachOrDetachDomainInfo.
+        r"""Gets the verified_client_certificate_enabled of this AttachOrDetachDomainInfo.
 
         是否开启客户端证书校验。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 
@@ -111,7 +111,7 @@ class AttachOrDetachDomainInfo:
 
     @verified_client_certificate_enabled.setter
     def verified_client_certificate_enabled(self, verified_client_certificate_enabled):
-        """Sets the verified_client_certificate_enabled of this AttachOrDetachDomainInfo.
+        r"""Sets the verified_client_certificate_enabled of this AttachOrDetachDomainInfo.
 
         是否开启客户端证书校验。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 

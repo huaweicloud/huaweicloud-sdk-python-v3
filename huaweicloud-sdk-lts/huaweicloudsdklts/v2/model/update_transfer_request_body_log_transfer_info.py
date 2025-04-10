@@ -29,7 +29,7 @@ class UpdateTransferRequestBodyLogTransferInfo:
     }
 
     def __init__(self, log_storage_format=None, log_transfer_status=None, log_transfer_detail=None):
-        """UpdateTransferRequestBodyLogTransferInfo
+        r"""UpdateTransferRequestBodyLogTransferInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateTransferRequestBodyLogTransferInfo:
 
     @property
     def log_storage_format(self):
-        """Gets the log_storage_format of this UpdateTransferRequestBodyLogTransferInfo.
+        r"""Gets the log_storage_format of this UpdateTransferRequestBodyLogTransferInfo.
 
         日志转储格式。只支持\"RAW\", \"JSON\"。RAW是指原始日志格式，JSON是指JSON日志格式。OBS转储和DIS转储支持JSON和RAW，DMS转储仅支持RAW
 
@@ -65,7 +65,7 @@ class UpdateTransferRequestBodyLogTransferInfo:
 
     @log_storage_format.setter
     def log_storage_format(self, log_storage_format):
-        """Sets the log_storage_format of this UpdateTransferRequestBodyLogTransferInfo.
+        r"""Sets the log_storage_format of this UpdateTransferRequestBodyLogTransferInfo.
 
         日志转储格式。只支持\"RAW\", \"JSON\"。RAW是指原始日志格式，JSON是指JSON日志格式。OBS转储和DIS转储支持JSON和RAW，DMS转储仅支持RAW
 
@@ -76,7 +76,7 @@ class UpdateTransferRequestBodyLogTransferInfo:
 
     @property
     def log_transfer_status(self):
-        """Gets the log_transfer_status of this UpdateTransferRequestBodyLogTransferInfo.
+        r"""Gets the log_transfer_status of this UpdateTransferRequestBodyLogTransferInfo.
 
         日志转储状态，ENABLE是指日志转储开启状态，DISABLE是指日志转储关闭状态，EXCEPTION是指日志转储异常状态
 
@@ -87,7 +87,7 @@ class UpdateTransferRequestBodyLogTransferInfo:
 
     @log_transfer_status.setter
     def log_transfer_status(self, log_transfer_status):
-        """Sets the log_transfer_status of this UpdateTransferRequestBodyLogTransferInfo.
+        r"""Sets the log_transfer_status of this UpdateTransferRequestBodyLogTransferInfo.
 
         日志转储状态，ENABLE是指日志转储开启状态，DISABLE是指日志转储关闭状态，EXCEPTION是指日志转储异常状态
 
@@ -98,7 +98,7 @@ class UpdateTransferRequestBodyLogTransferInfo:
 
     @property
     def log_transfer_detail(self):
-        """Gets the log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
+        r"""Gets the log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
 
         :return: The log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
         :rtype: :class:`huaweicloudsdklts.v2.TransferDetail`
@@ -107,7 +107,7 @@ class UpdateTransferRequestBodyLogTransferInfo:
 
     @log_transfer_detail.setter
     def log_transfer_detail(self, log_transfer_detail):
-        """Sets the log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
+        r"""Sets the log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
 
         :param log_transfer_detail: The log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
         :type log_transfer_detail: :class:`huaweicloudsdklts.v2.TransferDetail`

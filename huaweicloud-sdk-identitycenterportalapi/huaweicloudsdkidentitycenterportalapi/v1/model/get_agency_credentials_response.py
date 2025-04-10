@@ -26,7 +26,7 @@ class GetAgencyCredentialsResponse(SdkResponse):
     }
 
     def __init__(self, agency_credentials=None):
-        """GetAgencyCredentialsResponse
+        r"""GetAgencyCredentialsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class GetAgencyCredentialsResponse(SdkResponse):
 
     @property
     def agency_credentials(self):
-        """Gets the agency_credentials of this GetAgencyCredentialsResponse.
+        r"""Gets the agency_credentials of this GetAgencyCredentialsResponse.
 
         :return: The agency_credentials of this GetAgencyCredentialsResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterportalapi.v1.AgencyCredentials`
@@ -53,7 +53,7 @@ class GetAgencyCredentialsResponse(SdkResponse):
 
     @agency_credentials.setter
     def agency_credentials(self, agency_credentials):
-        """Sets the agency_credentials of this GetAgencyCredentialsResponse.
+        r"""Sets the agency_credentials of this GetAgencyCredentialsResponse.
 
         :param agency_credentials: The agency_credentials of this GetAgencyCredentialsResponse.
         :type agency_credentials: :class:`huaweicloudsdkidentitycenterportalapi.v1.AgencyCredentials`

@@ -26,7 +26,7 @@ class ListUsersForEnterpriseProjectResponse(SdkResponse):
     }
 
     def __init__(self, users=None):
-        """ListUsersForEnterpriseProjectResponse
+        r"""ListUsersForEnterpriseProjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListUsersForEnterpriseProjectResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this ListUsersForEnterpriseProjectResponse.
+        r"""Gets the users of this ListUsersForEnterpriseProjectResponse.
 
         用户信息。
 
@@ -55,7 +55,7 @@ class ListUsersForEnterpriseProjectResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ListUsersForEnterpriseProjectResponse.
+        r"""Sets the users of this ListUsersForEnterpriseProjectResponse.
 
         用户信息。
 

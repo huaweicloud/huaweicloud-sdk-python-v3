@@ -46,7 +46,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, app_server_group_id=None, app_server_group_name=None, description=None, authorization_type=None, tenant_id=None, app_type=None, create_at=None, app_count=None, app_server_group_description=None):
-        """ShowAppGroupDetailResponse
+        r"""ShowAppGroupDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowAppGroupDetailResponse.
+        r"""Gets the id of this ShowAppGroupDetailResponse.
 
         应用组ID。
 
@@ -125,7 +125,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAppGroupDetailResponse.
+        r"""Sets the id of this ShowAppGroupDetailResponse.
 
         应用组ID。
 
@@ -136,7 +136,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowAppGroupDetailResponse.
+        r"""Gets the name of this ShowAppGroupDetailResponse.
 
         应用组名称。
 
@@ -147,7 +147,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAppGroupDetailResponse.
+        r"""Sets the name of this ShowAppGroupDetailResponse.
 
         应用组名称。
 
@@ -158,7 +158,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @property
     def app_server_group_id(self):
-        """Gets the app_server_group_id of this ShowAppGroupDetailResponse.
+        r"""Gets the app_server_group_id of this ShowAppGroupDetailResponse.
 
         应用服务器组ID。
 
@@ -169,7 +169,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @app_server_group_id.setter
     def app_server_group_id(self, app_server_group_id):
-        """Sets the app_server_group_id of this ShowAppGroupDetailResponse.
+        r"""Sets the app_server_group_id of this ShowAppGroupDetailResponse.
 
         应用服务器组ID。
 
@@ -180,7 +180,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @property
     def app_server_group_name(self):
-        """Gets the app_server_group_name of this ShowAppGroupDetailResponse.
+        r"""Gets the app_server_group_name of this ShowAppGroupDetailResponse.
 
         应用服务器组名称。
 
@@ -191,7 +191,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @app_server_group_name.setter
     def app_server_group_name(self, app_server_group_name):
-        """Sets the app_server_group_name of this ShowAppGroupDetailResponse.
+        r"""Sets the app_server_group_name of this ShowAppGroupDetailResponse.
 
         应用服务器组名称。
 
@@ -202,7 +202,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowAppGroupDetailResponse.
+        r"""Gets the description of this ShowAppGroupDetailResponse.
 
         应用组描述。
 
@@ -213,7 +213,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowAppGroupDetailResponse.
+        r"""Sets the description of this ShowAppGroupDetailResponse.
 
         应用组描述。
 
@@ -224,7 +224,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @property
     def authorization_type(self):
-        """Gets the authorization_type of this ShowAppGroupDetailResponse.
+        r"""Gets the authorization_type of this ShowAppGroupDetailResponse.
 
         :return: The authorization_type of this ShowAppGroupDetailResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
@@ -233,7 +233,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @authorization_type.setter
     def authorization_type(self, authorization_type):
-        """Sets the authorization_type of this ShowAppGroupDetailResponse.
+        r"""Sets the authorization_type of this ShowAppGroupDetailResponse.
 
         :param authorization_type: The authorization_type of this ShowAppGroupDetailResponse.
         :type authorization_type: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
@@ -242,7 +242,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ShowAppGroupDetailResponse.
+        r"""Gets the tenant_id of this ShowAppGroupDetailResponse.
 
         租户ID。
 
@@ -253,7 +253,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ShowAppGroupDetailResponse.
+        r"""Sets the tenant_id of this ShowAppGroupDetailResponse.
 
         租户ID。
 
@@ -264,7 +264,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @property
     def app_type(self):
-        """Gets the app_type of this ShowAppGroupDetailResponse.
+        r"""Gets the app_type of this ShowAppGroupDetailResponse.
 
         :return: The app_type of this ShowAppGroupDetailResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -273,7 +273,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ShowAppGroupDetailResponse.
+        r"""Sets the app_type of this ShowAppGroupDetailResponse.
 
         :param app_type: The app_type of this ShowAppGroupDetailResponse.
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -282,7 +282,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @property
     def create_at(self):
-        """Gets the create_at of this ShowAppGroupDetailResponse.
+        r"""Gets the create_at of this ShowAppGroupDetailResponse.
 
         发布时间。
 
@@ -293,7 +293,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this ShowAppGroupDetailResponse.
+        r"""Sets the create_at of this ShowAppGroupDetailResponse.
 
         发布时间。
 
@@ -304,7 +304,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @property
     def app_count(self):
-        """Gets the app_count of this ShowAppGroupDetailResponse.
+        r"""Gets the app_count of this ShowAppGroupDetailResponse.
 
         应用数量。
 
@@ -315,7 +315,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @app_count.setter
     def app_count(self, app_count):
-        """Sets the app_count of this ShowAppGroupDetailResponse.
+        r"""Sets the app_count of this ShowAppGroupDetailResponse.
 
         应用数量。
 
@@ -326,7 +326,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @property
     def app_server_group_description(self):
-        """Gets the app_server_group_description of this ShowAppGroupDetailResponse.
+        r"""Gets the app_server_group_description of this ShowAppGroupDetailResponse.
 
         应用组描述
 
@@ -337,7 +337,7 @@ class ShowAppGroupDetailResponse(SdkResponse):
 
     @app_server_group_description.setter
     def app_server_group_description(self, app_server_group_description):
-        """Sets the app_server_group_description of this ShowAppGroupDetailResponse.
+        r"""Sets the app_server_group_description of this ShowAppGroupDetailResponse.
 
         应用组描述
 

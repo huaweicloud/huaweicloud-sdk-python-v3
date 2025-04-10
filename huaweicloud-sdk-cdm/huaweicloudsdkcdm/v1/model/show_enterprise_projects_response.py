@@ -26,7 +26,7 @@ class ShowEnterpriseProjectsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None):
-        """ShowEnterpriseProjectsResponse
+        r"""ShowEnterpriseProjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowEnterpriseProjectsResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ShowEnterpriseProjectsResponse.
+        r"""Gets the resources of this ShowEnterpriseProjectsResponse.
 
         集群企业项目列表
 
@@ -55,7 +55,7 @@ class ShowEnterpriseProjectsResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowEnterpriseProjectsResponse.
+        r"""Sets the resources of this ShowEnterpriseProjectsResponse.
 
         集群企业项目列表
 

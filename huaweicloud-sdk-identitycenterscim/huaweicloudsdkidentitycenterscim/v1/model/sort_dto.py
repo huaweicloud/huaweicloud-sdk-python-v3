@@ -25,7 +25,7 @@ class SortDto:
     }
 
     def __init__(self, supported=None):
-        """SortDto
+        r"""SortDto
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SortDto:
 
     @property
     def supported(self):
-        """Gets the supported of this SortDto.
+        r"""Gets the supported of this SortDto.
 
         一个布尔值，表示服务提供商是否支持这种操作
 
@@ -54,7 +54,7 @@ class SortDto:
 
     @supported.setter
     def supported(self, supported):
-        """Sets the supported of this SortDto.
+        r"""Sets the supported of this SortDto.
 
         一个布尔值，表示服务提供商是否支持这种操作
 

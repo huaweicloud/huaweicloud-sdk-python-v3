@@ -24,7 +24,7 @@ class DeleteJobResourceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteJobResourceResponse
+        r"""DeleteJobResourceResponse
 
         The model defined in huaweicloud sdk
 

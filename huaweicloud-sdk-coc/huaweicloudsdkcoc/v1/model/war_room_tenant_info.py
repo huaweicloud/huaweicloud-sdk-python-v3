@@ -71,7 +71,7 @@ class WarRoomTenantInfo:
     }
 
     def __init__(self, id=None, title=None, admin=None, recover_member=None, recover_leader=None, incident=None, source=None, regions=None, change_num=None, occur_time=None, recover_time=None, fault_cause=None, create_time=None, first_report_time=None, recovery_notification_time=None, fault_impact=None, description=None, circular_level=None, war_room_status=None, impacted_application=None, processing_duration=None, restoration_duration=None, war_room_num=None, enterprise_project_id=None):
-        """WarRoomTenantInfo
+        r"""WarRoomTenantInfo
 
         The model defined in huaweicloud sdk
 
@@ -204,7 +204,7 @@ class WarRoomTenantInfo:
 
     @property
     def id(self):
-        """Gets the id of this WarRoomTenantInfo.
+        r"""Gets the id of this WarRoomTenantInfo.
 
         主键
 
@@ -215,7 +215,7 @@ class WarRoomTenantInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WarRoomTenantInfo.
+        r"""Sets the id of this WarRoomTenantInfo.
 
         主键
 
@@ -226,7 +226,7 @@ class WarRoomTenantInfo:
 
     @property
     def title(self):
-        """Gets the title of this WarRoomTenantInfo.
+        r"""Gets the title of this WarRoomTenantInfo.
 
         标题
 
@@ -237,7 +237,7 @@ class WarRoomTenantInfo:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this WarRoomTenantInfo.
+        r"""Sets the title of this WarRoomTenantInfo.
 
         标题
 
@@ -248,7 +248,7 @@ class WarRoomTenantInfo:
 
     @property
     def admin(self):
-        """Gets the admin of this WarRoomTenantInfo.
+        r"""Gets the admin of this WarRoomTenantInfo.
 
         WarRoom管理员
 
@@ -259,7 +259,7 @@ class WarRoomTenantInfo:
 
     @admin.setter
     def admin(self, admin):
-        """Sets the admin of this WarRoomTenantInfo.
+        r"""Sets the admin of this WarRoomTenantInfo.
 
         WarRoom管理员
 
@@ -270,7 +270,7 @@ class WarRoomTenantInfo:
 
     @property
     def recover_member(self):
-        """Gets the recover_member of this WarRoomTenantInfo.
+        r"""Gets the recover_member of this WarRoomTenantInfo.
 
         恢复成员
 
@@ -281,7 +281,7 @@ class WarRoomTenantInfo:
 
     @recover_member.setter
     def recover_member(self, recover_member):
-        """Sets the recover_member of this WarRoomTenantInfo.
+        r"""Sets the recover_member of this WarRoomTenantInfo.
 
         恢复成员
 
@@ -292,7 +292,7 @@ class WarRoomTenantInfo:
 
     @property
     def recover_leader(self):
-        """Gets the recover_leader of this WarRoomTenantInfo.
+        r"""Gets the recover_leader of this WarRoomTenantInfo.
 
         主恢复责任人
 
@@ -303,7 +303,7 @@ class WarRoomTenantInfo:
 
     @recover_leader.setter
     def recover_leader(self, recover_leader):
-        """Sets the recover_leader of this WarRoomTenantInfo.
+        r"""Sets the recover_leader of this WarRoomTenantInfo.
 
         主恢复责任人
 
@@ -314,7 +314,7 @@ class WarRoomTenantInfo:
 
     @property
     def incident(self):
-        """Gets the incident of this WarRoomTenantInfo.
+        r"""Gets the incident of this WarRoomTenantInfo.
 
         :return: The incident of this WarRoomTenantInfo.
         :rtype: :class:`huaweicloudsdkcoc.v1.WarRoomIncident`
@@ -323,7 +323,7 @@ class WarRoomTenantInfo:
 
     @incident.setter
     def incident(self, incident):
-        """Sets the incident of this WarRoomTenantInfo.
+        r"""Sets the incident of this WarRoomTenantInfo.
 
         :param incident: The incident of this WarRoomTenantInfo.
         :type incident: :class:`huaweicloudsdkcoc.v1.WarRoomIncident`
@@ -332,7 +332,7 @@ class WarRoomTenantInfo:
 
     @property
     def source(self):
-        """Gets the source of this WarRoomTenantInfo.
+        r"""Gets the source of this WarRoomTenantInfo.
 
         事件来源
 
@@ -343,7 +343,7 @@ class WarRoomTenantInfo:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this WarRoomTenantInfo.
+        r"""Sets the source of this WarRoomTenantInfo.
 
         事件来源
 
@@ -354,7 +354,7 @@ class WarRoomTenantInfo:
 
     @property
     def regions(self):
-        """Gets the regions of this WarRoomTenantInfo.
+        r"""Gets the regions of this WarRoomTenantInfo.
 
         影响的Region
 
@@ -365,7 +365,7 @@ class WarRoomTenantInfo:
 
     @regions.setter
     def regions(self, regions):
-        """Sets the regions of this WarRoomTenantInfo.
+        r"""Sets the regions of this WarRoomTenantInfo.
 
         影响的Region
 
@@ -376,7 +376,7 @@ class WarRoomTenantInfo:
 
     @property
     def change_num(self):
-        """Gets the change_num of this WarRoomTenantInfo.
+        r"""Gets the change_num of this WarRoomTenantInfo.
 
         变更单号
 
@@ -387,7 +387,7 @@ class WarRoomTenantInfo:
 
     @change_num.setter
     def change_num(self, change_num):
-        """Sets the change_num of this WarRoomTenantInfo.
+        r"""Sets the change_num of this WarRoomTenantInfo.
 
         变更单号
 
@@ -398,7 +398,7 @@ class WarRoomTenantInfo:
 
     @property
     def occur_time(self):
-        """Gets the occur_time of this WarRoomTenantInfo.
+        r"""Gets the occur_time of this WarRoomTenantInfo.
 
         开始时间
 
@@ -409,7 +409,7 @@ class WarRoomTenantInfo:
 
     @occur_time.setter
     def occur_time(self, occur_time):
-        """Sets the occur_time of this WarRoomTenantInfo.
+        r"""Sets the occur_time of this WarRoomTenantInfo.
 
         开始时间
 
@@ -420,7 +420,7 @@ class WarRoomTenantInfo:
 
     @property
     def recover_time(self):
-        """Gets the recover_time of this WarRoomTenantInfo.
+        r"""Gets the recover_time of this WarRoomTenantInfo.
 
         故障恢复时间
 
@@ -431,7 +431,7 @@ class WarRoomTenantInfo:
 
     @recover_time.setter
     def recover_time(self, recover_time):
-        """Sets the recover_time of this WarRoomTenantInfo.
+        r"""Sets the recover_time of this WarRoomTenantInfo.
 
         故障恢复时间
 
@@ -442,7 +442,7 @@ class WarRoomTenantInfo:
 
     @property
     def fault_cause(self):
-        """Gets the fault_cause of this WarRoomTenantInfo.
+        r"""Gets the fault_cause of this WarRoomTenantInfo.
 
         故障原因
 
@@ -453,7 +453,7 @@ class WarRoomTenantInfo:
 
     @fault_cause.setter
     def fault_cause(self, fault_cause):
-        """Sets the fault_cause of this WarRoomTenantInfo.
+        r"""Sets the fault_cause of this WarRoomTenantInfo.
 
         故障原因
 
@@ -464,7 +464,7 @@ class WarRoomTenantInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this WarRoomTenantInfo.
+        r"""Gets the create_time of this WarRoomTenantInfo.
 
         添加时间
 
@@ -475,7 +475,7 @@ class WarRoomTenantInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this WarRoomTenantInfo.
+        r"""Sets the create_time of this WarRoomTenantInfo.
 
         添加时间
 
@@ -486,7 +486,7 @@ class WarRoomTenantInfo:
 
     @property
     def first_report_time(self):
-        """Gets the first_report_time of this WarRoomTenantInfo.
+        r"""Gets the first_report_time of this WarRoomTenantInfo.
 
         首次通报时间
 
@@ -497,7 +497,7 @@ class WarRoomTenantInfo:
 
     @first_report_time.setter
     def first_report_time(self, first_report_time):
-        """Sets the first_report_time of this WarRoomTenantInfo.
+        r"""Sets the first_report_time of this WarRoomTenantInfo.
 
         首次通报时间
 
@@ -508,7 +508,7 @@ class WarRoomTenantInfo:
 
     @property
     def recovery_notification_time(self):
-        """Gets the recovery_notification_time of this WarRoomTenantInfo.
+        r"""Gets the recovery_notification_time of this WarRoomTenantInfo.
 
         恢复通报时间
 
@@ -519,7 +519,7 @@ class WarRoomTenantInfo:
 
     @recovery_notification_time.setter
     def recovery_notification_time(self, recovery_notification_time):
-        """Sets the recovery_notification_time of this WarRoomTenantInfo.
+        r"""Sets the recovery_notification_time of this WarRoomTenantInfo.
 
         恢复通报时间
 
@@ -530,7 +530,7 @@ class WarRoomTenantInfo:
 
     @property
     def fault_impact(self):
-        """Gets the fault_impact of this WarRoomTenantInfo.
+        r"""Gets the fault_impact of this WarRoomTenantInfo.
 
         故障影响
 
@@ -541,7 +541,7 @@ class WarRoomTenantInfo:
 
     @fault_impact.setter
     def fault_impact(self, fault_impact):
-        """Sets the fault_impact of this WarRoomTenantInfo.
+        r"""Sets the fault_impact of this WarRoomTenantInfo.
 
         故障影响
 
@@ -552,7 +552,7 @@ class WarRoomTenantInfo:
 
     @property
     def description(self):
-        """Gets the description of this WarRoomTenantInfo.
+        r"""Gets the description of this WarRoomTenantInfo.
 
         WarRoom描述
 
@@ -563,7 +563,7 @@ class WarRoomTenantInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this WarRoomTenantInfo.
+        r"""Sets the description of this WarRoomTenantInfo.
 
         WarRoom描述
 
@@ -574,7 +574,7 @@ class WarRoomTenantInfo:
 
     @property
     def circular_level(self):
-        """Gets the circular_level of this WarRoomTenantInfo.
+        r"""Gets the circular_level of this WarRoomTenantInfo.
 
         通报级别 租户区同事件级别
 
@@ -585,7 +585,7 @@ class WarRoomTenantInfo:
 
     @circular_level.setter
     def circular_level(self, circular_level):
-        """Sets the circular_level of this WarRoomTenantInfo.
+        r"""Sets the circular_level of this WarRoomTenantInfo.
 
         通报级别 租户区同事件级别
 
@@ -596,7 +596,7 @@ class WarRoomTenantInfo:
 
     @property
     def war_room_status(self):
-        """Gets the war_room_status of this WarRoomTenantInfo.
+        r"""Gets the war_room_status of this WarRoomTenantInfo.
 
         :return: The war_room_status of this WarRoomTenantInfo.
         :rtype: :class:`huaweicloudsdkcoc.v1.WarRoomEnumeration`
@@ -605,7 +605,7 @@ class WarRoomTenantInfo:
 
     @war_room_status.setter
     def war_room_status(self, war_room_status):
-        """Sets the war_room_status of this WarRoomTenantInfo.
+        r"""Sets the war_room_status of this WarRoomTenantInfo.
 
         :param war_room_status: The war_room_status of this WarRoomTenantInfo.
         :type war_room_status: :class:`huaweicloudsdkcoc.v1.WarRoomEnumeration`
@@ -614,7 +614,7 @@ class WarRoomTenantInfo:
 
     @property
     def impacted_application(self):
-        """Gets the impacted_application of this WarRoomTenantInfo.
+        r"""Gets the impacted_application of this WarRoomTenantInfo.
 
         影响应用
 
@@ -625,7 +625,7 @@ class WarRoomTenantInfo:
 
     @impacted_application.setter
     def impacted_application(self, impacted_application):
-        """Sets the impacted_application of this WarRoomTenantInfo.
+        r"""Sets the impacted_application of this WarRoomTenantInfo.
 
         影响应用
 
@@ -636,7 +636,7 @@ class WarRoomTenantInfo:
 
     @property
     def processing_duration(self):
-        """Gets the processing_duration of this WarRoomTenantInfo.
+        r"""Gets the processing_duration of this WarRoomTenantInfo.
 
         处理时长(分钟)
 
@@ -647,7 +647,7 @@ class WarRoomTenantInfo:
 
     @processing_duration.setter
     def processing_duration(self, processing_duration):
-        """Sets the processing_duration of this WarRoomTenantInfo.
+        r"""Sets the processing_duration of this WarRoomTenantInfo.
 
         处理时长(分钟)
 
@@ -658,7 +658,7 @@ class WarRoomTenantInfo:
 
     @property
     def restoration_duration(self):
-        """Gets the restoration_duration of this WarRoomTenantInfo.
+        r"""Gets the restoration_duration of this WarRoomTenantInfo.
 
         恢复时长(分钟)
 
@@ -669,7 +669,7 @@ class WarRoomTenantInfo:
 
     @restoration_duration.setter
     def restoration_duration(self, restoration_duration):
-        """Sets the restoration_duration of this WarRoomTenantInfo.
+        r"""Sets the restoration_duration of this WarRoomTenantInfo.
 
         恢复时长(分钟)
 
@@ -680,7 +680,7 @@ class WarRoomTenantInfo:
 
     @property
     def war_room_num(self):
-        """Gets the war_room_num of this WarRoomTenantInfo.
+        r"""Gets the war_room_num of this WarRoomTenantInfo.
 
         WarRoom单号
 
@@ -691,7 +691,7 @@ class WarRoomTenantInfo:
 
     @war_room_num.setter
     def war_room_num(self, war_room_num):
-        """Sets the war_room_num of this WarRoomTenantInfo.
+        r"""Sets the war_room_num of this WarRoomTenantInfo.
 
         WarRoom单号
 
@@ -702,7 +702,7 @@ class WarRoomTenantInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this WarRoomTenantInfo.
+        r"""Gets the enterprise_project_id of this WarRoomTenantInfo.
 
         企业项目id
 
@@ -713,7 +713,7 @@ class WarRoomTenantInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this WarRoomTenantInfo.
+        r"""Sets the enterprise_project_id of this WarRoomTenantInfo.
 
         企业项目id
 

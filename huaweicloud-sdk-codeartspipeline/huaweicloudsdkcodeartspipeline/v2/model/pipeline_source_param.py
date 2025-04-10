@@ -61,7 +61,7 @@ class PipelineSourceParam:
     }
 
     def __init__(self, alias=None, git_type=None, codehub_id=None, endpoint_id=None, default_branch=None, git_url=None, ssh_git_url=None, web_url=None, repo_name=None, artifact_type=None, artifact_type_name=None, branch_filter=None, directory=None, directory_id=None, organization=None, package_name=None, version=None, version_strategy=None, source_system=None):
-        """PipelineSourceParam
+        r"""PipelineSourceParam
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class PipelineSourceParam:
 
     @property
     def alias(self):
-        """Gets the alias of this PipelineSourceParam.
+        r"""Gets the alias of this PipelineSourceParam.
 
         代码/制品源参数 - 代码仓/制品源别名。别名仅支持输入大小写英文字母、数字、“_”，至多128个字符
 
@@ -180,7 +180,7 @@ class PipelineSourceParam:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this PipelineSourceParam.
+        r"""Sets the alias of this PipelineSourceParam.
 
         代码/制品源参数 - 代码仓/制品源别名。别名仅支持输入大小写英文字母、数字、“_”，至多128个字符
 
@@ -191,7 +191,7 @@ class PipelineSourceParam:
 
     @property
     def git_type(self):
-        """Gets the git_type of this PipelineSourceParam.
+        r"""Gets the git_type of this PipelineSourceParam.
 
         代码源参数 - git类型
 
@@ -202,7 +202,7 @@ class PipelineSourceParam:
 
     @git_type.setter
     def git_type(self, git_type):
-        """Sets the git_type of this PipelineSourceParam.
+        r"""Sets the git_type of this PipelineSourceParam.
 
         代码源参数 - git类型
 
@@ -213,7 +213,7 @@ class PipelineSourceParam:
 
     @property
     def codehub_id(self):
-        """Gets the codehub_id of this PipelineSourceParam.
+        r"""Gets the codehub_id of this PipelineSourceParam.
 
         代码源参数 - Repo代码仓ID
 
@@ -224,7 +224,7 @@ class PipelineSourceParam:
 
     @codehub_id.setter
     def codehub_id(self, codehub_id):
-        """Sets the codehub_id of this PipelineSourceParam.
+        r"""Sets the codehub_id of this PipelineSourceParam.
 
         代码源参数 - Repo代码仓ID
 
@@ -235,7 +235,7 @@ class PipelineSourceParam:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this PipelineSourceParam.
+        r"""Gets the endpoint_id of this PipelineSourceParam.
 
         代码源参数 - 扩展点id
 
@@ -246,7 +246,7 @@ class PipelineSourceParam:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this PipelineSourceParam.
+        r"""Sets the endpoint_id of this PipelineSourceParam.
 
         代码源参数 - 扩展点id
 
@@ -257,7 +257,7 @@ class PipelineSourceParam:
 
     @property
     def default_branch(self):
-        """Gets the default_branch of this PipelineSourceParam.
+        r"""Gets the default_branch of this PipelineSourceParam.
 
         代码源参数 - 默认分支
 
@@ -268,7 +268,7 @@ class PipelineSourceParam:
 
     @default_branch.setter
     def default_branch(self, default_branch):
-        """Sets the default_branch of this PipelineSourceParam.
+        r"""Sets the default_branch of this PipelineSourceParam.
 
         代码源参数 - 默认分支
 
@@ -279,7 +279,7 @@ class PipelineSourceParam:
 
     @property
     def git_url(self):
-        """Gets the git_url of this PipelineSourceParam.
+        r"""Gets the git_url of this PipelineSourceParam.
 
         代码源参数 - git链接
 
@@ -290,7 +290,7 @@ class PipelineSourceParam:
 
     @git_url.setter
     def git_url(self, git_url):
-        """Sets the git_url of this PipelineSourceParam.
+        r"""Sets the git_url of this PipelineSourceParam.
 
         代码源参数 - git链接
 
@@ -301,7 +301,7 @@ class PipelineSourceParam:
 
     @property
     def ssh_git_url(self):
-        """Gets the ssh_git_url of this PipelineSourceParam.
+        r"""Gets the ssh_git_url of this PipelineSourceParam.
 
         代码源参数 - ssh_git链接
 
@@ -312,7 +312,7 @@ class PipelineSourceParam:
 
     @ssh_git_url.setter
     def ssh_git_url(self, ssh_git_url):
-        """Sets the ssh_git_url of this PipelineSourceParam.
+        r"""Sets the ssh_git_url of this PipelineSourceParam.
 
         代码源参数 - ssh_git链接
 
@@ -323,7 +323,7 @@ class PipelineSourceParam:
 
     @property
     def web_url(self):
-        """Gets the web_url of this PipelineSourceParam.
+        r"""Gets the web_url of this PipelineSourceParam.
 
         代码源参数 - 网页url
 
@@ -334,7 +334,7 @@ class PipelineSourceParam:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this PipelineSourceParam.
+        r"""Sets the web_url of this PipelineSourceParam.
 
         代码源参数 - 网页url
 
@@ -345,7 +345,7 @@ class PipelineSourceParam:
 
     @property
     def repo_name(self):
-        """Gets the repo_name of this PipelineSourceParam.
+        r"""Gets the repo_name of this PipelineSourceParam.
 
         代码源参数 - 流水线源名称
 
@@ -356,7 +356,7 @@ class PipelineSourceParam:
 
     @repo_name.setter
     def repo_name(self, repo_name):
-        """Sets the repo_name of this PipelineSourceParam.
+        r"""Sets the repo_name of this PipelineSourceParam.
 
         代码源参数 - 流水线源名称
 
@@ -367,7 +367,7 @@ class PipelineSourceParam:
 
     @property
     def artifact_type(self):
-        """Gets the artifact_type of this PipelineSourceParam.
+        r"""Gets the artifact_type of this PipelineSourceParam.
 
         制品源参数 - 制品源类型，generic/docker
 
@@ -378,7 +378,7 @@ class PipelineSourceParam:
 
     @artifact_type.setter
     def artifact_type(self, artifact_type):
-        """Sets the artifact_type of this PipelineSourceParam.
+        r"""Sets the artifact_type of this PipelineSourceParam.
 
         制品源参数 - 制品源类型，generic/docker
 
@@ -389,7 +389,7 @@ class PipelineSourceParam:
 
     @property
     def artifact_type_name(self):
-        """Gets the artifact_type_name of this PipelineSourceParam.
+        r"""Gets the artifact_type_name of this PipelineSourceParam.
 
         制品源参数 - 制品源类型名
 
@@ -400,7 +400,7 @@ class PipelineSourceParam:
 
     @artifact_type_name.setter
     def artifact_type_name(self, artifact_type_name):
-        """Sets the artifact_type_name of this PipelineSourceParam.
+        r"""Sets the artifact_type_name of this PipelineSourceParam.
 
         制品源参数 - 制品源类型名
 
@@ -411,7 +411,7 @@ class PipelineSourceParam:
 
     @property
     def branch_filter(self):
-        """Gets the branch_filter of this PipelineSourceParam.
+        r"""Gets the branch_filter of this PipelineSourceParam.
 
         制品源参数 - 过滤分支
 
@@ -422,7 +422,7 @@ class PipelineSourceParam:
 
     @branch_filter.setter
     def branch_filter(self, branch_filter):
-        """Sets the branch_filter of this PipelineSourceParam.
+        r"""Sets the branch_filter of this PipelineSourceParam.
 
         制品源参数 - 过滤分支
 
@@ -433,7 +433,7 @@ class PipelineSourceParam:
 
     @property
     def directory(self):
-        """Gets the directory of this PipelineSourceParam.
+        r"""Gets the directory of this PipelineSourceParam.
 
         制品源参数 - 目录
 
@@ -444,7 +444,7 @@ class PipelineSourceParam:
 
     @directory.setter
     def directory(self, directory):
-        """Sets the directory of this PipelineSourceParam.
+        r"""Sets the directory of this PipelineSourceParam.
 
         制品源参数 - 目录
 
@@ -455,7 +455,7 @@ class PipelineSourceParam:
 
     @property
     def directory_id(self):
-        """Gets the directory_id of this PipelineSourceParam.
+        r"""Gets the directory_id of this PipelineSourceParam.
 
         制品源参数 - 目录ID
 
@@ -466,7 +466,7 @@ class PipelineSourceParam:
 
     @directory_id.setter
     def directory_id(self, directory_id):
-        """Sets the directory_id of this PipelineSourceParam.
+        r"""Sets the directory_id of this PipelineSourceParam.
 
         制品源参数 - 目录ID
 
@@ -477,7 +477,7 @@ class PipelineSourceParam:
 
     @property
     def organization(self):
-        """Gets the organization of this PipelineSourceParam.
+        r"""Gets the organization of this PipelineSourceParam.
 
         制品源参数 - Docker组织
 
@@ -488,7 +488,7 @@ class PipelineSourceParam:
 
     @organization.setter
     def organization(self, organization):
-        """Sets the organization of this PipelineSourceParam.
+        r"""Sets the organization of this PipelineSourceParam.
 
         制品源参数 - Docker组织
 
@@ -499,7 +499,7 @@ class PipelineSourceParam:
 
     @property
     def package_name(self):
-        """Gets the package_name of this PipelineSourceParam.
+        r"""Gets the package_name of this PipelineSourceParam.
 
         制品源参数 - 包名称
 
@@ -510,7 +510,7 @@ class PipelineSourceParam:
 
     @package_name.setter
     def package_name(self, package_name):
-        """Sets the package_name of this PipelineSourceParam.
+        r"""Sets the package_name of this PipelineSourceParam.
 
         制品源参数 - 包名称
 
@@ -521,7 +521,7 @@ class PipelineSourceParam:
 
     @property
     def version(self):
-        """Gets the version of this PipelineSourceParam.
+        r"""Gets the version of this PipelineSourceParam.
 
         制品源参数 - 版本
 
@@ -532,7 +532,7 @@ class PipelineSourceParam:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PipelineSourceParam.
+        r"""Sets the version of this PipelineSourceParam.
 
         制品源参数 - 版本
 
@@ -543,7 +543,7 @@ class PipelineSourceParam:
 
     @property
     def version_strategy(self):
-        """Gets the version_strategy of this PipelineSourceParam.
+        r"""Gets the version_strategy of this PipelineSourceParam.
 
         制品源参数 - 获取制品源版本的策略，latest/specificVersion
 
@@ -554,7 +554,7 @@ class PipelineSourceParam:
 
     @version_strategy.setter
     def version_strategy(self, version_strategy):
-        """Sets the version_strategy of this PipelineSourceParam.
+        r"""Sets the version_strategy of this PipelineSourceParam.
 
         制品源参数 - 获取制品源版本的策略，latest/specificVersion
 
@@ -565,7 +565,7 @@ class PipelineSourceParam:
 
     @property
     def source_system(self):
-        """Gets the source_system of this PipelineSourceParam.
+        r"""Gets the source_system of this PipelineSourceParam.
 
         制品源参数 - 制品源名称,如CloudArtifact
 
@@ -576,7 +576,7 @@ class PipelineSourceParam:
 
     @source_system.setter
     def source_system(self, source_system):
-        """Sets the source_system of this PipelineSourceParam.
+        r"""Sets the source_system of this PipelineSourceParam.
 
         制品源参数 - 制品源名称,如CloudArtifact
 

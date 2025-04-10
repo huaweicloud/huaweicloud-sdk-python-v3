@@ -25,7 +25,7 @@ class RestartGraph2Request:
     }
 
     def __init__(self, graph_id=None):
-        """RestartGraph2Request
+        r"""RestartGraph2Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestartGraph2Request:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this RestartGraph2Request.
+        r"""Gets the graph_id of this RestartGraph2Request.
 
         图ID。
 
@@ -53,7 +53,7 @@ class RestartGraph2Request:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this RestartGraph2Request.
+        r"""Sets the graph_id of this RestartGraph2Request.
 
         图ID。
 

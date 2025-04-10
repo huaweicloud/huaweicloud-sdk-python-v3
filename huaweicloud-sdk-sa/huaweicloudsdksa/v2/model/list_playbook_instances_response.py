@@ -30,7 +30,7 @@ class ListPlaybookInstancesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, instances=None, x_request_id=None):
-        """ListPlaybookInstancesResponse
+        r"""ListPlaybookInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPlaybookInstancesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListPlaybookInstancesResponse.
+        r"""Gets the count of this ListPlaybookInstancesResponse.
 
         tatal count
 
@@ -69,7 +69,7 @@ class ListPlaybookInstancesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListPlaybookInstancesResponse.
+        r"""Sets the count of this ListPlaybookInstancesResponse.
 
         tatal count
 
@@ -80,7 +80,7 @@ class ListPlaybookInstancesResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListPlaybookInstancesResponse.
+        r"""Gets the instances of this ListPlaybookInstancesResponse.
 
         list of informations of PlaybookInstanceInfo
 
@@ -91,7 +91,7 @@ class ListPlaybookInstancesResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListPlaybookInstancesResponse.
+        r"""Sets the instances of this ListPlaybookInstancesResponse.
 
         list of informations of PlaybookInstanceInfo
 
@@ -102,7 +102,7 @@ class ListPlaybookInstancesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListPlaybookInstancesResponse.
+        r"""Gets the x_request_id of this ListPlaybookInstancesResponse.
 
         :return: The x_request_id of this ListPlaybookInstancesResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListPlaybookInstancesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListPlaybookInstancesResponse.
+        r"""Sets the x_request_id of this ListPlaybookInstancesResponse.
 
         :param x_request_id: The x_request_id of this ListPlaybookInstancesResponse.
         :type x_request_id: str

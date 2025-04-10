@@ -27,7 +27,7 @@ class AwParamBasicValue:
     }
 
     def __init__(self, value=None, value_range=None):
-        """AwParamBasicValue
+        r"""AwParamBasicValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AwParamBasicValue:
 
     @property
     def value(self):
-        """Gets the value of this AwParamBasicValue.
+        r"""Gets the value of this AwParamBasicValue.
 
         参数默认值，用例有效
 
@@ -61,7 +61,7 @@ class AwParamBasicValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AwParamBasicValue.
+        r"""Sets the value of this AwParamBasicValue.
 
         参数默认值，用例有效
 
@@ -72,7 +72,7 @@ class AwParamBasicValue:
 
     @property
     def value_range(self):
-        """Gets the value_range of this AwParamBasicValue.
+        r"""Gets the value_range of this AwParamBasicValue.
 
         参数值范围，逻辑用例有效
 
@@ -83,7 +83,7 @@ class AwParamBasicValue:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this AwParamBasicValue.
+        r"""Sets the value_range of this AwParamBasicValue.
 
         参数值范围，逻辑用例有效
 

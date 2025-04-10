@@ -31,7 +31,7 @@ class UpdateDomainV2Request:
     }
 
     def __init__(self, instance_id=None, group_id=None, domain_id=None, body=None):
-        """UpdateDomainV2Request
+        r"""UpdateDomainV2Request
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateDomainV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDomainV2Request.
+        r"""Gets the instance_id of this UpdateDomainV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -72,7 +72,7 @@ class UpdateDomainV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDomainV2Request.
+        r"""Sets the instance_id of this UpdateDomainV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -83,7 +83,7 @@ class UpdateDomainV2Request:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateDomainV2Request.
+        r"""Gets the group_id of this UpdateDomainV2Request.
 
         分组的编号
 
@@ -94,7 +94,7 @@ class UpdateDomainV2Request:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateDomainV2Request.
+        r"""Sets the group_id of this UpdateDomainV2Request.
 
         分组的编号
 
@@ -105,7 +105,7 @@ class UpdateDomainV2Request:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateDomainV2Request.
+        r"""Gets the domain_id of this UpdateDomainV2Request.
 
         域名的编号
 
@@ -116,7 +116,7 @@ class UpdateDomainV2Request:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateDomainV2Request.
+        r"""Sets the domain_id of this UpdateDomainV2Request.
 
         域名的编号
 
@@ -127,7 +127,7 @@ class UpdateDomainV2Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDomainV2Request.
+        r"""Gets the body of this UpdateDomainV2Request.
 
         :return: The body of this UpdateDomainV2Request.
         :rtype: :class:`huaweicloudsdkapig.v2.UrlDomainModify`
@@ -136,7 +136,7 @@ class UpdateDomainV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDomainV2Request.
+        r"""Sets the body of this UpdateDomainV2Request.
 
         :param body: The body of this UpdateDomainV2Request.
         :type body: :class:`huaweicloudsdkapig.v2.UrlDomainModify`

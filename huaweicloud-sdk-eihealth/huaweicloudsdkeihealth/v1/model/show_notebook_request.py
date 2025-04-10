@@ -27,7 +27,7 @@ class ShowNotebookRequest:
     }
 
     def __init__(self, eihealth_project_id=None, notebook_id=None):
-        """ShowNotebookRequest
+        r"""ShowNotebookRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowNotebookRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowNotebookRequest.
+        r"""Gets the eihealth_project_id of this ShowNotebookRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class ShowNotebookRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowNotebookRequest.
+        r"""Sets the eihealth_project_id of this ShowNotebookRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class ShowNotebookRequest:
 
     @property
     def notebook_id(self):
-        """Gets the notebook_id of this ShowNotebookRequest.
+        r"""Gets the notebook_id of this ShowNotebookRequest.
 
         notebook id
 
@@ -81,7 +81,7 @@ class ShowNotebookRequest:
 
     @notebook_id.setter
     def notebook_id(self, notebook_id):
-        """Sets the notebook_id of this ShowNotebookRequest.
+        r"""Sets the notebook_id of this ShowNotebookRequest.
 
         notebook id
 

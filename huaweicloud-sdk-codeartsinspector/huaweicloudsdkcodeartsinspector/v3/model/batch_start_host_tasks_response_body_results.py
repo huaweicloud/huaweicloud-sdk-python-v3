@@ -27,7 +27,7 @@ class BatchStartHostTasksResponseBodyResults:
     }
 
     def __init__(self, scan_id=None, host_id=None):
-        """BatchStartHostTasksResponseBodyResults
+        r"""BatchStartHostTasksResponseBodyResults
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchStartHostTasksResponseBodyResults:
 
     @property
     def scan_id(self):
-        """Gets the scan_id of this BatchStartHostTasksResponseBodyResults.
+        r"""Gets the scan_id of this BatchStartHostTasksResponseBodyResults.
 
         扫描ID
 
@@ -61,7 +61,7 @@ class BatchStartHostTasksResponseBodyResults:
 
     @scan_id.setter
     def scan_id(self, scan_id):
-        """Sets the scan_id of this BatchStartHostTasksResponseBodyResults.
+        r"""Sets the scan_id of this BatchStartHostTasksResponseBodyResults.
 
         扫描ID
 
@@ -72,7 +72,7 @@ class BatchStartHostTasksResponseBodyResults:
 
     @property
     def host_id(self):
-        """Gets the host_id of this BatchStartHostTasksResponseBodyResults.
+        r"""Gets the host_id of this BatchStartHostTasksResponseBodyResults.
 
         主机ID
 
@@ -83,7 +83,7 @@ class BatchStartHostTasksResponseBodyResults:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this BatchStartHostTasksResponseBodyResults.
+        r"""Sets the host_id of this BatchStartHostTasksResponseBodyResults.
 
         主机ID
 

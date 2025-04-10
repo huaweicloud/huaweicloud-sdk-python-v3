@@ -31,7 +31,7 @@ class ResourceDetail:
     }
 
     def __init__(self, enterprise_project_id=None, detail_id=None, topic_urn=None, display_name=None):
-        """ResourceDetail
+        r"""ResourceDetail
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ResourceDetail:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ResourceDetail.
+        r"""Gets the enterprise_project_id of this ResourceDetail.
 
         企业项目ID
 
@@ -71,7 +71,7 @@ class ResourceDetail:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ResourceDetail.
+        r"""Sets the enterprise_project_id of this ResourceDetail.
 
         企业项目ID
 
@@ -82,7 +82,7 @@ class ResourceDetail:
 
     @property
     def detail_id(self):
-        """Gets the detail_id of this ResourceDetail.
+        r"""Gets the detail_id of this ResourceDetail.
 
         详情ID
 
@@ -93,7 +93,7 @@ class ResourceDetail:
 
     @detail_id.setter
     def detail_id(self, detail_id):
-        """Sets the detail_id of this ResourceDetail.
+        r"""Sets the detail_id of this ResourceDetail.
 
         详情ID
 
@@ -104,7 +104,7 @@ class ResourceDetail:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this ResourceDetail.
+        r"""Gets the topic_urn of this ResourceDetail.
 
         topic唯一标识
 
@@ -115,7 +115,7 @@ class ResourceDetail:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this ResourceDetail.
+        r"""Sets the topic_urn of this ResourceDetail.
 
         topic唯一标识
 
@@ -126,7 +126,7 @@ class ResourceDetail:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ResourceDetail.
+        r"""Gets the display_name of this ResourceDetail.
 
         显示名
 
@@ -137,7 +137,7 @@ class ResourceDetail:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ResourceDetail.
+        r"""Sets the display_name of this ResourceDetail.
 
         显示名
 

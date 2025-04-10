@@ -26,7 +26,7 @@ class DisablePolicyTypeResponse(SdkResponse):
     }
 
     def __init__(self, root=None):
-        """DisablePolicyTypeResponse
+        r"""DisablePolicyTypeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DisablePolicyTypeResponse(SdkResponse):
 
     @property
     def root(self):
-        """Gets the root of this DisablePolicyTypeResponse.
+        r"""Gets the root of this DisablePolicyTypeResponse.
 
         :return: The root of this DisablePolicyTypeResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.RootDto`
@@ -53,7 +53,7 @@ class DisablePolicyTypeResponse(SdkResponse):
 
     @root.setter
     def root(self, root):
-        """Sets the root of this DisablePolicyTypeResponse.
+        r"""Sets the root of this DisablePolicyTypeResponse.
 
         :param root: The root of this DisablePolicyTypeResponse.
         :type root: :class:`huaweicloudsdkorganizations.v1.RootDto`

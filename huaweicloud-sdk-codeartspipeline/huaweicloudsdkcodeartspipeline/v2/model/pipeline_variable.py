@@ -43,7 +43,7 @@ class PipelineVariable:
     }
 
     def __init__(self, name=None, sequence=None, type=None, value=None, is_secret=None, description=None, is_runtime=None, limits=None, is_reset=None, latest_value=None):
-        """PipelineVariable
+        r"""PipelineVariable
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class PipelineVariable:
 
     @property
     def name(self):
-        """Gets the name of this PipelineVariable.
+        r"""Gets the name of this PipelineVariable.
 
         参数名称
 
@@ -117,7 +117,7 @@ class PipelineVariable:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineVariable.
+        r"""Sets the name of this PipelineVariable.
 
         参数名称
 
@@ -128,7 +128,7 @@ class PipelineVariable:
 
     @property
     def sequence(self):
-        """Gets the sequence of this PipelineVariable.
+        r"""Gets the sequence of this PipelineVariable.
 
         序号
 
@@ -139,7 +139,7 @@ class PipelineVariable:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this PipelineVariable.
+        r"""Sets the sequence of this PipelineVariable.
 
         序号
 
@@ -150,7 +150,7 @@ class PipelineVariable:
 
     @property
     def type(self):
-        """Gets the type of this PipelineVariable.
+        r"""Gets the type of this PipelineVariable.
 
         类型
 
@@ -161,7 +161,7 @@ class PipelineVariable:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PipelineVariable.
+        r"""Sets the type of this PipelineVariable.
 
         类型
 
@@ -172,7 +172,7 @@ class PipelineVariable:
 
     @property
     def value(self):
-        """Gets the value of this PipelineVariable.
+        r"""Gets the value of this PipelineVariable.
 
         默认值
 
@@ -183,7 +183,7 @@ class PipelineVariable:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PipelineVariable.
+        r"""Sets the value of this PipelineVariable.
 
         默认值
 
@@ -194,7 +194,7 @@ class PipelineVariable:
 
     @property
     def is_secret(self):
-        """Gets the is_secret of this PipelineVariable.
+        r"""Gets the is_secret of this PipelineVariable.
 
         是否私密
 
@@ -205,7 +205,7 @@ class PipelineVariable:
 
     @is_secret.setter
     def is_secret(self, is_secret):
-        """Sets the is_secret of this PipelineVariable.
+        r"""Sets the is_secret of this PipelineVariable.
 
         是否私密
 
@@ -216,7 +216,7 @@ class PipelineVariable:
 
     @property
     def description(self):
-        """Gets the description of this PipelineVariable.
+        r"""Gets the description of this PipelineVariable.
 
         描述
 
@@ -227,7 +227,7 @@ class PipelineVariable:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PipelineVariable.
+        r"""Sets the description of this PipelineVariable.
 
         描述
 
@@ -238,7 +238,7 @@ class PipelineVariable:
 
     @property
     def is_runtime(self):
-        """Gets the is_runtime of this PipelineVariable.
+        r"""Gets the is_runtime of this PipelineVariable.
 
         是否运行时设置
 
@@ -249,7 +249,7 @@ class PipelineVariable:
 
     @is_runtime.setter
     def is_runtime(self, is_runtime):
-        """Sets the is_runtime of this PipelineVariable.
+        r"""Sets the is_runtime of this PipelineVariable.
 
         是否运行时设置
 
@@ -260,7 +260,7 @@ class PipelineVariable:
 
     @property
     def limits(self):
-        """Gets the limits of this PipelineVariable.
+        r"""Gets the limits of this PipelineVariable.
 
         限定枚举值
 
@@ -271,7 +271,7 @@ class PipelineVariable:
 
     @limits.setter
     def limits(self, limits):
-        """Sets the limits of this PipelineVariable.
+        r"""Sets the limits of this PipelineVariable.
 
         限定枚举值
 
@@ -282,7 +282,7 @@ class PipelineVariable:
 
     @property
     def is_reset(self):
-        """Gets the is_reset of this PipelineVariable.
+        r"""Gets the is_reset of this PipelineVariable.
 
         自增长参数是否被重置
 
@@ -293,7 +293,7 @@ class PipelineVariable:
 
     @is_reset.setter
     def is_reset(self, is_reset):
-        """Sets the is_reset of this PipelineVariable.
+        r"""Sets the is_reset of this PipelineVariable.
 
         自增长参数是否被重置
 
@@ -304,7 +304,7 @@ class PipelineVariable:
 
     @property
     def latest_value(self):
-        """Gets the latest_value of this PipelineVariable.
+        r"""Gets the latest_value of this PipelineVariable.
 
         自增长参数最新值
 
@@ -315,7 +315,7 @@ class PipelineVariable:
 
     @latest_value.setter
     def latest_value(self, latest_value):
-        """Sets the latest_value of this PipelineVariable.
+        r"""Sets the latest_value of this PipelineVariable.
 
         自增长参数最新值
 

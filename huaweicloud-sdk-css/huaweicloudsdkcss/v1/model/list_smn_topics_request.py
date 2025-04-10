@@ -25,7 +25,7 @@ class ListSmnTopicsRequest:
     }
 
     def __init__(self, domain_id=None):
-        """ListSmnTopicsRequest
+        r"""ListSmnTopicsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListSmnTopicsRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListSmnTopicsRequest.
+        r"""Gets the domain_id of this ListSmnTopicsRequest.
 
         指定待查询的集群ID。
 
@@ -53,7 +53,7 @@ class ListSmnTopicsRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListSmnTopicsRequest.
+        r"""Sets the domain_id of this ListSmnTopicsRequest.
 
         指定待查询的集群ID。
 

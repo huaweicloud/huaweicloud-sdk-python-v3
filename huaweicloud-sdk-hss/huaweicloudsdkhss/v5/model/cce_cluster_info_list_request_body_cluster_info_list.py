@@ -27,7 +27,7 @@ class CCEClusterInfoListRequestBodyClusterInfoList:
     }
 
     def __init__(self, cluster_id=None, cluster_name=None):
-        """CCEClusterInfoListRequestBodyClusterInfoList
+        r"""CCEClusterInfoListRequestBodyClusterInfoList
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CCEClusterInfoListRequestBodyClusterInfoList:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CCEClusterInfoListRequestBodyClusterInfoList.
+        r"""Gets the cluster_id of this CCEClusterInfoListRequestBodyClusterInfoList.
 
         集群id
 
@@ -59,7 +59,7 @@ class CCEClusterInfoListRequestBodyClusterInfoList:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CCEClusterInfoListRequestBodyClusterInfoList.
+        r"""Sets the cluster_id of this CCEClusterInfoListRequestBodyClusterInfoList.
 
         集群id
 
@@ -70,7 +70,7 @@ class CCEClusterInfoListRequestBodyClusterInfoList:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this CCEClusterInfoListRequestBodyClusterInfoList.
+        r"""Gets the cluster_name of this CCEClusterInfoListRequestBodyClusterInfoList.
 
         集群名称
 
@@ -81,7 +81,7 @@ class CCEClusterInfoListRequestBodyClusterInfoList:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this CCEClusterInfoListRequestBodyClusterInfoList.
+        r"""Sets the cluster_name of this CCEClusterInfoListRequestBodyClusterInfoList.
 
         集群名称
 

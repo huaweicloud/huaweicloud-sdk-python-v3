@@ -25,7 +25,7 @@ class UpdateAuditSecurityGroupRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateAuditSecurityGroupRequest
+        r"""UpdateAuditSecurityGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateAuditSecurityGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAuditSecurityGroupRequest.
+        r"""Gets the body of this UpdateAuditSecurityGroupRequest.
 
         :return: The body of this UpdateAuditSecurityGroupRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.SecurityGroupRequest`
@@ -52,7 +52,7 @@ class UpdateAuditSecurityGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAuditSecurityGroupRequest.
+        r"""Sets the body of this UpdateAuditSecurityGroupRequest.
 
         :param body: The body of this UpdateAuditSecurityGroupRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.SecurityGroupRequest`

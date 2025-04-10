@@ -31,7 +31,7 @@ class ListConformancePackComplianceDetailsByPackIdRequest:
     }
 
     def __init__(self, conformance_pack_id=None, limit=None, marker=None, policy_assignment_name=None):
-        """ListConformancePackComplianceDetailsByPackIdRequest
+        r"""ListConformancePackComplianceDetailsByPackIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListConformancePackComplianceDetailsByPackIdRequest:
 
     @property
     def conformance_pack_id(self):
-        """Gets the conformance_pack_id of this ListConformancePackComplianceDetailsByPackIdRequest.
+        r"""Gets the conformance_pack_id of this ListConformancePackComplianceDetailsByPackIdRequest.
 
         合规规则包ID。
 
@@ -74,7 +74,7 @@ class ListConformancePackComplianceDetailsByPackIdRequest:
 
     @conformance_pack_id.setter
     def conformance_pack_id(self, conformance_pack_id):
-        """Sets the conformance_pack_id of this ListConformancePackComplianceDetailsByPackIdRequest.
+        r"""Sets the conformance_pack_id of this ListConformancePackComplianceDetailsByPackIdRequest.
 
         合规规则包ID。
 
@@ -85,7 +85,7 @@ class ListConformancePackComplianceDetailsByPackIdRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConformancePackComplianceDetailsByPackIdRequest.
+        r"""Gets the limit of this ListConformancePackComplianceDetailsByPackIdRequest.
 
         最大的返回数量
 
@@ -96,7 +96,7 @@ class ListConformancePackComplianceDetailsByPackIdRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConformancePackComplianceDetailsByPackIdRequest.
+        r"""Sets the limit of this ListConformancePackComplianceDetailsByPackIdRequest.
 
         最大的返回数量
 
@@ -107,7 +107,7 @@ class ListConformancePackComplianceDetailsByPackIdRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListConformancePackComplianceDetailsByPackIdRequest.
+        r"""Gets the marker of this ListConformancePackComplianceDetailsByPackIdRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -118,7 +118,7 @@ class ListConformancePackComplianceDetailsByPackIdRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListConformancePackComplianceDetailsByPackIdRequest.
+        r"""Sets the marker of this ListConformancePackComplianceDetailsByPackIdRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -129,7 +129,7 @@ class ListConformancePackComplianceDetailsByPackIdRequest:
 
     @property
     def policy_assignment_name(self):
-        """Gets the policy_assignment_name of this ListConformancePackComplianceDetailsByPackIdRequest.
+        r"""Gets the policy_assignment_name of this ListConformancePackComplianceDetailsByPackIdRequest.
 
         合规规则名称。
 
@@ -140,7 +140,7 @@ class ListConformancePackComplianceDetailsByPackIdRequest:
 
     @policy_assignment_name.setter
     def policy_assignment_name(self, policy_assignment_name):
-        """Sets the policy_assignment_name of this ListConformancePackComplianceDetailsByPackIdRequest.
+        r"""Sets the policy_assignment_name of this ListConformancePackComplianceDetailsByPackIdRequest.
 
         合规规则名称。
 

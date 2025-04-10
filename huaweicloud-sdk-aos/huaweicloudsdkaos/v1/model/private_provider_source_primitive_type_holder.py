@@ -25,7 +25,7 @@ class PrivateProviderSourcePrimitiveTypeHolder:
     }
 
     def __init__(self, provider_source=None):
-        """PrivateProviderSourcePrimitiveTypeHolder
+        r"""PrivateProviderSourcePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PrivateProviderSourcePrimitiveTypeHolder:
 
     @property
     def provider_source(self):
-        """Gets the provider_source of this PrivateProviderSourcePrimitiveTypeHolder.
+        r"""Gets the provider_source of this PrivateProviderSourcePrimitiveTypeHolder.
 
         用户使用私有provider，在Terraform模板中定义required_providers信息时，需要指明的source参数。  该参数按照“huawei.com/private-provider/{provider_name}”的形式拼接。关于provider_name和provider_source字段在模板中的使用细节，详见创建私有Provider的API描述。
 
@@ -54,7 +54,7 @@ class PrivateProviderSourcePrimitiveTypeHolder:
 
     @provider_source.setter
     def provider_source(self, provider_source):
-        """Sets the provider_source of this PrivateProviderSourcePrimitiveTypeHolder.
+        r"""Sets the provider_source of this PrivateProviderSourcePrimitiveTypeHolder.
 
         用户使用私有provider，在Terraform模板中定义required_providers信息时，需要指明的source参数。  该参数按照“huawei.com/private-provider/{provider_name}”的形式拼接。关于provider_name和provider_source字段在模板中的使用细节，详见创建私有Provider的API描述。
 

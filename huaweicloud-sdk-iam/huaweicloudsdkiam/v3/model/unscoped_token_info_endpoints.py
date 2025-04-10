@@ -33,7 +33,7 @@ class UnscopedTokenInfoEndpoints:
     }
 
     def __init__(self, id=None, interface=None, region=None, region_id=None, url=None):
-        """UnscopedTokenInfoEndpoints
+        r"""UnscopedTokenInfoEndpoints
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UnscopedTokenInfoEndpoints:
 
     @property
     def id(self):
-        """Gets the id of this UnscopedTokenInfoEndpoints.
+        r"""Gets the id of this UnscopedTokenInfoEndpoints.
 
         终端节点ID。
 
@@ -82,7 +82,7 @@ class UnscopedTokenInfoEndpoints:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UnscopedTokenInfoEndpoints.
+        r"""Sets the id of this UnscopedTokenInfoEndpoints.
 
         终端节点ID。
 
@@ -93,7 +93,7 @@ class UnscopedTokenInfoEndpoints:
 
     @property
     def interface(self):
-        """Gets the interface of this UnscopedTokenInfoEndpoints.
+        r"""Gets the interface of this UnscopedTokenInfoEndpoints.
 
         接口类型，描述接口在该终端节点的可见性。值为“public”，表示该接口为公开接口。
 
@@ -104,7 +104,7 @@ class UnscopedTokenInfoEndpoints:
 
     @interface.setter
     def interface(self, interface):
-        """Sets the interface of this UnscopedTokenInfoEndpoints.
+        r"""Sets the interface of this UnscopedTokenInfoEndpoints.
 
         接口类型，描述接口在该终端节点的可见性。值为“public”，表示该接口为公开接口。
 
@@ -115,7 +115,7 @@ class UnscopedTokenInfoEndpoints:
 
     @property
     def region(self):
-        """Gets the region of this UnscopedTokenInfoEndpoints.
+        r"""Gets the region of this UnscopedTokenInfoEndpoints.
 
         终端节点所属区域。
 
@@ -126,7 +126,7 @@ class UnscopedTokenInfoEndpoints:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this UnscopedTokenInfoEndpoints.
+        r"""Sets the region of this UnscopedTokenInfoEndpoints.
 
         终端节点所属区域。
 
@@ -137,7 +137,7 @@ class UnscopedTokenInfoEndpoints:
 
     @property
     def region_id(self):
-        """Gets the region_id of this UnscopedTokenInfoEndpoints.
+        r"""Gets the region_id of this UnscopedTokenInfoEndpoints.
 
         终端节点所属区域ID。
 
@@ -148,7 +148,7 @@ class UnscopedTokenInfoEndpoints:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this UnscopedTokenInfoEndpoints.
+        r"""Sets the region_id of this UnscopedTokenInfoEndpoints.
 
         终端节点所属区域ID。
 
@@ -159,7 +159,7 @@ class UnscopedTokenInfoEndpoints:
 
     @property
     def url(self):
-        """Gets the url of this UnscopedTokenInfoEndpoints.
+        r"""Gets the url of this UnscopedTokenInfoEndpoints.
 
         终端节点的URL。
 
@@ -170,7 +170,7 @@ class UnscopedTokenInfoEndpoints:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UnscopedTokenInfoEndpoints.
+        r"""Sets the url of this UnscopedTokenInfoEndpoints.
 
         终端节点的URL。
 

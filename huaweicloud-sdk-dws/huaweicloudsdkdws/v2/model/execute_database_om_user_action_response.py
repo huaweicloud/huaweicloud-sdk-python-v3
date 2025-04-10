@@ -30,7 +30,7 @@ class ExecuteDatabaseOmUserActionResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, om_user_info=None):
-        """ExecuteDatabaseOmUserActionResponse
+        r"""ExecuteDatabaseOmUserActionResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ExecuteDatabaseOmUserActionResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ExecuteDatabaseOmUserActionResponse.
+        r"""Gets the error_code of this ExecuteDatabaseOmUserActionResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class ExecuteDatabaseOmUserActionResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ExecuteDatabaseOmUserActionResponse.
+        r"""Sets the error_code of this ExecuteDatabaseOmUserActionResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class ExecuteDatabaseOmUserActionResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ExecuteDatabaseOmUserActionResponse.
+        r"""Gets the error_msg of this ExecuteDatabaseOmUserActionResponse.
 
         错误信息
 
@@ -91,7 +91,7 @@ class ExecuteDatabaseOmUserActionResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ExecuteDatabaseOmUserActionResponse.
+        r"""Sets the error_msg of this ExecuteDatabaseOmUserActionResponse.
 
         错误信息
 
@@ -102,7 +102,7 @@ class ExecuteDatabaseOmUserActionResponse(SdkResponse):
 
     @property
     def om_user_info(self):
-        """Gets the om_user_info of this ExecuteDatabaseOmUserActionResponse.
+        r"""Gets the om_user_info of this ExecuteDatabaseOmUserActionResponse.
 
         :return: The om_user_info of this ExecuteDatabaseOmUserActionResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.DatabaseOmUserInfo`
@@ -111,7 +111,7 @@ class ExecuteDatabaseOmUserActionResponse(SdkResponse):
 
     @om_user_info.setter
     def om_user_info(self, om_user_info):
-        """Sets the om_user_info of this ExecuteDatabaseOmUserActionResponse.
+        r"""Sets the om_user_info of this ExecuteDatabaseOmUserActionResponse.
 
         :param om_user_info: The om_user_info of this ExecuteDatabaseOmUserActionResponse.
         :type om_user_info: :class:`huaweicloudsdkdws.v2.DatabaseOmUserInfo`

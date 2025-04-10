@@ -39,7 +39,7 @@ class CreateResolveTaskRequestBody:
     }
 
     def __init__(self, tpl_id=None, sms_signs=None, resolving_times=None, aim_code_type=None, generation_type=None, domain=None, expiration_time=None, params=None):
-        """CreateResolveTaskRequestBody
+        r"""CreateResolveTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateResolveTaskRequestBody:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this CreateResolveTaskRequestBody.
+        r"""Gets the tpl_id of this CreateResolveTaskRequestBody.
 
         智能信息模板ID，由9位数字组成。
 
@@ -97,7 +97,7 @@ class CreateResolveTaskRequestBody:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this CreateResolveTaskRequestBody.
+        r"""Sets the tpl_id of this CreateResolveTaskRequestBody.
 
         智能信息模板ID，由9位数字组成。
 
@@ -108,7 +108,7 @@ class CreateResolveTaskRequestBody:
 
     @property
     def sms_signs(self):
-        """Gets the sms_signs of this CreateResolveTaskRequestBody.
+        r"""Gets the sms_signs of this CreateResolveTaskRequestBody.
 
         短信签名列表，需要与最终发送短信的签名一致，才能解析。  > 最多传入5个签名，单个签名内容不包括中括号。 
 
@@ -119,7 +119,7 @@ class CreateResolveTaskRequestBody:
 
     @sms_signs.setter
     def sms_signs(self, sms_signs):
-        """Sets the sms_signs of this CreateResolveTaskRequestBody.
+        r"""Sets the sms_signs of this CreateResolveTaskRequestBody.
 
         短信签名列表，需要与最终发送短信的签名一致，才能解析。  > 最多传入5个签名，单个签名内容不包括中括号。 
 
@@ -130,7 +130,7 @@ class CreateResolveTaskRequestBody:
 
     @property
     def resolving_times(self):
-        """Gets the resolving_times of this CreateResolveTaskRequestBody.
+        r"""Gets the resolving_times of this CreateResolveTaskRequestBody.
 
         短链最大解析次数。  >个性化短链只支持最大解析数为1，设置其他值无效。 >群发短链设置解析次数需要大于等于2。 
 
@@ -141,7 +141,7 @@ class CreateResolveTaskRequestBody:
 
     @resolving_times.setter
     def resolving_times(self, resolving_times):
-        """Sets the resolving_times of this CreateResolveTaskRequestBody.
+        r"""Sets the resolving_times of this CreateResolveTaskRequestBody.
 
         短链最大解析次数。  >个性化短链只支持最大解析数为1，设置其他值无效。 >群发短链设置解析次数需要大于等于2。 
 
@@ -152,7 +152,7 @@ class CreateResolveTaskRequestBody:
 
     @property
     def aim_code_type(self):
-        """Gets the aim_code_type of this CreateResolveTaskRequestBody.
+        r"""Gets the aim_code_type of this CreateResolveTaskRequestBody.
 
         生成短链类型。  - group：群发 - individual：个性化  > 使用动态参数模板时，该字段只能为individual。 
 
@@ -163,7 +163,7 @@ class CreateResolveTaskRequestBody:
 
     @aim_code_type.setter
     def aim_code_type(self, aim_code_type):
-        """Sets the aim_code_type of this CreateResolveTaskRequestBody.
+        r"""Sets the aim_code_type of this CreateResolveTaskRequestBody.
 
         生成短链类型。  - group：群发 - individual：个性化  > 使用动态参数模板时，该字段只能为individual。 
 
@@ -174,7 +174,7 @@ class CreateResolveTaskRequestBody:
 
     @property
     def generation_type(self):
-        """Gets the generation_type of this CreateResolveTaskRequestBody.
+        r"""Gets the generation_type of this CreateResolveTaskRequestBody.
 
         生成短码方式。  - 1：标准 - 2：自定义  > 默认1，即标准生成短码。 
 
@@ -185,7 +185,7 @@ class CreateResolveTaskRequestBody:
 
     @generation_type.setter
     def generation_type(self, generation_type):
-        """Sets the generation_type of this CreateResolveTaskRequestBody.
+        r"""Sets the generation_type of this CreateResolveTaskRequestBody.
 
         生成短码方式。  - 1：标准 - 2：自定义  > 默认1，即标准生成短码。 
 
@@ -196,7 +196,7 @@ class CreateResolveTaskRequestBody:
 
     @property
     def domain(self):
-        """Gets the domain of this CreateResolveTaskRequestBody.
+        r"""Gets the domain of this CreateResolveTaskRequestBody.
 
         自定义短链域名，由大小写字母和数字组成的二级域名。  > generation_type为2时，此参数为必填。域名需要提前报备，请联系KooMessage运营人员进行域名报备，域名区分生成短码方式，如报备的是标准生成短码方式，则在自定义生成短码时不能使用此域名。 
 
@@ -207,7 +207,7 @@ class CreateResolveTaskRequestBody:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CreateResolveTaskRequestBody.
+        r"""Sets the domain of this CreateResolveTaskRequestBody.
 
         自定义短链域名，由大小写字母和数字组成的二级域名。  > generation_type为2时，此参数为必填。域名需要提前报备，请联系KooMessage运营人员进行域名报备，域名区分生成短码方式，如报备的是标准生成短码方式，则在自定义生成短码时不能使用此域名。 
 
@@ -218,7 +218,7 @@ class CreateResolveTaskRequestBody:
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this CreateResolveTaskRequestBody.
+        r"""Gets the expiration_time of this CreateResolveTaskRequestBody.
 
         失效时间（天）。aim_code_type为group时，取值范围为1~180；aim_code_type为individual个性化时，取值范围为1~7。  > 失效时间精确到秒，例如参数设置为1，创建时间为2022-07-22 21:10:12，过期时间为2022-07-23 21:10:12。 
 
@@ -229,7 +229,7 @@ class CreateResolveTaskRequestBody:
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this CreateResolveTaskRequestBody.
+        r"""Sets the expiration_time of this CreateResolveTaskRequestBody.
 
         失效时间（天）。aim_code_type为group时，取值范围为1~180；aim_code_type为individual个性化时，取值范围为1~7。  > 失效时间精确到秒，例如参数设置为1，创建时间为2022-07-22 21:10:12，过期时间为2022-07-23 21:10:12。 
 
@@ -240,7 +240,7 @@ class CreateResolveTaskRequestBody:
 
     @property
     def params(self):
-        """Gets the params of this CreateResolveTaskRequestBody.
+        r"""Gets the params of this CreateResolveTaskRequestBody.
 
         短链参数列表。一次请求最多生成100个短链。  > 群发短链每次调用最多申请一条。 
 
@@ -251,7 +251,7 @@ class CreateResolveTaskRequestBody:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CreateResolveTaskRequestBody.
+        r"""Sets the params of this CreateResolveTaskRequestBody.
 
         短链参数列表。一次请求最多生成100个短链。  > 群发短链每次调用最多申请一条。 
 

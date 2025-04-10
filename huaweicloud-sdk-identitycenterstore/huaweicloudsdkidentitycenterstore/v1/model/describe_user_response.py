@@ -72,7 +72,7 @@ class DescribeUserResponse(SdkResponse):
     }
 
     def __init__(self, addresses=None, display_name=None, emails=None, external_id=None, external_ids=None, identity_store_id=None, locale=None, name=None, nickname=None, phone_numbers=None, preferred_language=None, profile_url=None, timezone=None, title=None, user_id=None, user_name=None, user_type=None, created_at=None, created_by=None, updated_at=None, updated_by=None, email_verified=None, enabled=None, enterprise=None):
-        """DescribeUserResponse
+        r"""DescribeUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -205,7 +205,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def addresses(self):
-        """Gets the addresses of this DescribeUserResponse.
+        r"""Gets the addresses of this DescribeUserResponse.
 
         用户的地址信息列表
 
@@ -216,7 +216,7 @@ class DescribeUserResponse(SdkResponse):
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this DescribeUserResponse.
+        r"""Sets the addresses of this DescribeUserResponse.
 
         用户的地址信息列表
 
@@ -227,7 +227,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def display_name(self):
-        """Gets the display_name of this DescribeUserResponse.
+        r"""Gets the display_name of this DescribeUserResponse.
 
         用户的显示名称
 
@@ -238,7 +238,7 @@ class DescribeUserResponse(SdkResponse):
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this DescribeUserResponse.
+        r"""Sets the display_name of this DescribeUserResponse.
 
         用户的显示名称
 
@@ -249,7 +249,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def emails(self):
-        """Gets the emails of this DescribeUserResponse.
+        r"""Gets the emails of this DescribeUserResponse.
 
         用户的电子邮箱信息列表
 
@@ -260,7 +260,7 @@ class DescribeUserResponse(SdkResponse):
 
     @emails.setter
     def emails(self, emails):
-        """Sets the emails of this DescribeUserResponse.
+        r"""Sets the emails of this DescribeUserResponse.
 
         用户的电子邮箱信息列表
 
@@ -271,7 +271,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def external_id(self):
-        """Gets the external_id of this DescribeUserResponse.
+        r"""Gets the external_id of this DescribeUserResponse.
 
         外部身份源分配给此资源的标识符
 
@@ -282,7 +282,7 @@ class DescribeUserResponse(SdkResponse):
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this DescribeUserResponse.
+        r"""Sets the external_id of this DescribeUserResponse.
 
         外部身份源分配给此资源的标识符
 
@@ -293,7 +293,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def external_ids(self):
-        """Gets the external_ids of this DescribeUserResponse.
+        r"""Gets the external_ids of this DescribeUserResponse.
 
         用户的外部标识符信息列表
 
@@ -304,7 +304,7 @@ class DescribeUserResponse(SdkResponse):
 
     @external_ids.setter
     def external_ids(self, external_ids):
-        """Sets the external_ids of this DescribeUserResponse.
+        r"""Sets the external_ids of this DescribeUserResponse.
 
         用户的外部标识符信息列表
 
@@ -315,7 +315,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this DescribeUserResponse.
+        r"""Gets the identity_store_id of this DescribeUserResponse.
 
         身份源的全局唯一标识符（ID）
 
@@ -326,7 +326,7 @@ class DescribeUserResponse(SdkResponse):
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this DescribeUserResponse.
+        r"""Sets the identity_store_id of this DescribeUserResponse.
 
         身份源的全局唯一标识符（ID）
 
@@ -337,7 +337,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def locale(self):
-        """Gets the locale of this DescribeUserResponse.
+        r"""Gets the locale of this DescribeUserResponse.
 
         用户的地理区域或位置信息
 
@@ -348,7 +348,7 @@ class DescribeUserResponse(SdkResponse):
 
     @locale.setter
     def locale(self, locale):
-        """Sets the locale of this DescribeUserResponse.
+        r"""Sets the locale of this DescribeUserResponse.
 
         用户的地理区域或位置信息
 
@@ -359,7 +359,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this DescribeUserResponse.
+        r"""Gets the name of this DescribeUserResponse.
 
         :return: The name of this DescribeUserResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.NameDto`
@@ -368,7 +368,7 @@ class DescribeUserResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DescribeUserResponse.
+        r"""Sets the name of this DescribeUserResponse.
 
         :param name: The name of this DescribeUserResponse.
         :type name: :class:`huaweicloudsdkidentitycenterstore.v1.NameDto`
@@ -377,7 +377,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def nickname(self):
-        """Gets the nickname of this DescribeUserResponse.
+        r"""Gets the nickname of this DescribeUserResponse.
 
         用户昵称
 
@@ -388,7 +388,7 @@ class DescribeUserResponse(SdkResponse):
 
     @nickname.setter
     def nickname(self, nickname):
-        """Sets the nickname of this DescribeUserResponse.
+        r"""Sets the nickname of this DescribeUserResponse.
 
         用户昵称
 
@@ -399,7 +399,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def phone_numbers(self):
-        """Gets the phone_numbers of this DescribeUserResponse.
+        r"""Gets the phone_numbers of this DescribeUserResponse.
 
         用户的电话号码信息列表
 
@@ -410,7 +410,7 @@ class DescribeUserResponse(SdkResponse):
 
     @phone_numbers.setter
     def phone_numbers(self, phone_numbers):
-        """Sets the phone_numbers of this DescribeUserResponse.
+        r"""Sets the phone_numbers of this DescribeUserResponse.
 
         用户的电话号码信息列表
 
@@ -421,7 +421,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def preferred_language(self):
-        """Gets the preferred_language of this DescribeUserResponse.
+        r"""Gets the preferred_language of this DescribeUserResponse.
 
         用户语言首选项
 
@@ -432,7 +432,7 @@ class DescribeUserResponse(SdkResponse):
 
     @preferred_language.setter
     def preferred_language(self, preferred_language):
-        """Sets the preferred_language of this DescribeUserResponse.
+        r"""Sets the preferred_language of this DescribeUserResponse.
 
         用户语言首选项
 
@@ -443,7 +443,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def profile_url(self):
-        """Gets the profile_url of this DescribeUserResponse.
+        r"""Gets the profile_url of this DescribeUserResponse.
 
         与用户关联的URL
 
@@ -454,7 +454,7 @@ class DescribeUserResponse(SdkResponse):
 
     @profile_url.setter
     def profile_url(self, profile_url):
-        """Sets the profile_url of this DescribeUserResponse.
+        r"""Sets the profile_url of this DescribeUserResponse.
 
         与用户关联的URL
 
@@ -465,7 +465,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def timezone(self):
-        """Gets the timezone of this DescribeUserResponse.
+        r"""Gets the timezone of this DescribeUserResponse.
 
         用户时区
 
@@ -476,7 +476,7 @@ class DescribeUserResponse(SdkResponse):
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this DescribeUserResponse.
+        r"""Sets the timezone of this DescribeUserResponse.
 
         用户时区
 
@@ -487,7 +487,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def title(self):
-        """Gets the title of this DescribeUserResponse.
+        r"""Gets the title of this DescribeUserResponse.
 
         用户头衔
 
@@ -498,7 +498,7 @@ class DescribeUserResponse(SdkResponse):
 
     @title.setter
     def title(self, title):
-        """Sets the title of this DescribeUserResponse.
+        r"""Sets the title of this DescribeUserResponse.
 
         用户头衔
 
@@ -509,7 +509,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this DescribeUserResponse.
+        r"""Gets the user_id of this DescribeUserResponse.
 
         身份源中IAM身份中心用户的全局唯一标识符（ID）
 
@@ -520,7 +520,7 @@ class DescribeUserResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this DescribeUserResponse.
+        r"""Sets the user_id of this DescribeUserResponse.
 
         身份源中IAM身份中心用户的全局唯一标识符（ID）
 
@@ -531,7 +531,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this DescribeUserResponse.
+        r"""Gets the user_name of this DescribeUserResponse.
 
         用户名，用于标识用户的唯一字符串
 
@@ -542,7 +542,7 @@ class DescribeUserResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this DescribeUserResponse.
+        r"""Sets the user_name of this DescribeUserResponse.
 
         用户名，用于标识用户的唯一字符串
 
@@ -553,7 +553,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def user_type(self):
-        """Gets the user_type of this DescribeUserResponse.
+        r"""Gets the user_type of this DescribeUserResponse.
 
         用户类型
 
@@ -564,7 +564,7 @@ class DescribeUserResponse(SdkResponse):
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this DescribeUserResponse.
+        r"""Sets the user_type of this DescribeUserResponse.
 
         用户类型
 
@@ -575,7 +575,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this DescribeUserResponse.
+        r"""Gets the created_at of this DescribeUserResponse.
 
         创建用户时的时间戳
 
@@ -586,7 +586,7 @@ class DescribeUserResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this DescribeUserResponse.
+        r"""Sets the created_at of this DescribeUserResponse.
 
         创建用户时的时间戳
 
@@ -597,7 +597,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def created_by(self):
-        """Gets the created_by of this DescribeUserResponse.
+        r"""Gets the created_by of this DescribeUserResponse.
 
         创建者
 
@@ -608,7 +608,7 @@ class DescribeUserResponse(SdkResponse):
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this DescribeUserResponse.
+        r"""Sets the created_by of this DescribeUserResponse.
 
         创建者
 
@@ -619,7 +619,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this DescribeUserResponse.
+        r"""Gets the updated_at of this DescribeUserResponse.
 
         更新用户时的时间戳
 
@@ -630,7 +630,7 @@ class DescribeUserResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this DescribeUserResponse.
+        r"""Sets the updated_at of this DescribeUserResponse.
 
         更新用户时的时间戳
 
@@ -641,7 +641,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this DescribeUserResponse.
+        r"""Gets the updated_by of this DescribeUserResponse.
 
         更新者
 
@@ -652,7 +652,7 @@ class DescribeUserResponse(SdkResponse):
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this DescribeUserResponse.
+        r"""Sets the updated_by of this DescribeUserResponse.
 
         更新者
 
@@ -663,7 +663,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def email_verified(self):
-        """Gets the email_verified of this DescribeUserResponse.
+        r"""Gets the email_verified of this DescribeUserResponse.
 
         一个布尔值，表示用户主的电子邮箱是否验证
 
@@ -674,7 +674,7 @@ class DescribeUserResponse(SdkResponse):
 
     @email_verified.setter
     def email_verified(self, email_verified):
-        """Sets the email_verified of this DescribeUserResponse.
+        r"""Sets the email_verified of this DescribeUserResponse.
 
         一个布尔值，表示用户主的电子邮箱是否验证
 
@@ -685,7 +685,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def enabled(self):
-        """Gets the enabled of this DescribeUserResponse.
+        r"""Gets the enabled of this DescribeUserResponse.
 
         一个布尔值，表示用户是否启用
 
@@ -696,7 +696,7 @@ class DescribeUserResponse(SdkResponse):
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this DescribeUserResponse.
+        r"""Sets the enabled of this DescribeUserResponse.
 
         一个布尔值，表示用户是否启用
 
@@ -707,7 +707,7 @@ class DescribeUserResponse(SdkResponse):
 
     @property
     def enterprise(self):
-        """Gets the enterprise of this DescribeUserResponse.
+        r"""Gets the enterprise of this DescribeUserResponse.
 
         :return: The enterprise of this DescribeUserResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.EnterpriseDto`
@@ -716,7 +716,7 @@ class DescribeUserResponse(SdkResponse):
 
     @enterprise.setter
     def enterprise(self, enterprise):
-        """Sets the enterprise of this DescribeUserResponse.
+        r"""Sets the enterprise of this DescribeUserResponse.
 
         :param enterprise: The enterprise of this DescribeUserResponse.
         :type enterprise: :class:`huaweicloudsdkidentitycenterstore.v1.EnterpriseDto`

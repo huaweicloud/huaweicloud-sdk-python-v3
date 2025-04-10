@@ -31,7 +31,7 @@ class ComponentExecutionResult:
     }
 
     def __init__(self, component_name=None, component_id=None, status=None, error_message=None):
-        """ComponentExecutionResult
+        r"""ComponentExecutionResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ComponentExecutionResult:
 
     @property
     def component_name(self):
-        """Gets the component_name of this ComponentExecutionResult.
+        r"""Gets the component_name of this ComponentExecutionResult.
 
         组件名称。
 
@@ -75,7 +75,7 @@ class ComponentExecutionResult:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this ComponentExecutionResult.
+        r"""Sets the component_name of this ComponentExecutionResult.
 
         组件名称。
 
@@ -86,7 +86,7 @@ class ComponentExecutionResult:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ComponentExecutionResult.
+        r"""Gets the component_id of this ComponentExecutionResult.
 
         组件ID。
 
@@ -97,7 +97,7 @@ class ComponentExecutionResult:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ComponentExecutionResult.
+        r"""Sets the component_id of this ComponentExecutionResult.
 
         组件ID。
 
@@ -108,7 +108,7 @@ class ComponentExecutionResult:
 
     @property
     def status(self):
-        """Gets the status of this ComponentExecutionResult.
+        r"""Gets the status of this ComponentExecutionResult.
 
         组件执行启停的结果：failed/success。
 
@@ -119,7 +119,7 @@ class ComponentExecutionResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ComponentExecutionResult.
+        r"""Sets the status of this ComponentExecutionResult.
 
         组件执行启停的结果：failed/success。
 
@@ -130,7 +130,7 @@ class ComponentExecutionResult:
 
     @property
     def error_message(self):
-        """Gets the error_message of this ComponentExecutionResult.
+        r"""Gets the error_message of this ComponentExecutionResult.
 
         组件执行启停的错误信息，如果执行结果为成功，则为空。
 
@@ -141,7 +141,7 @@ class ComponentExecutionResult:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ComponentExecutionResult.
+        r"""Sets the error_message of this ComponentExecutionResult.
 
         组件执行启停的错误信息，如果执行结果为成功，则为空。
 

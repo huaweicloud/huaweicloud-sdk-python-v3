@@ -31,7 +31,7 @@ class ShowInstanceConfigurationModifyHistoryRequest:
     }
 
     def __init__(self, instance_id=None, entity_id=None, offset=None, limit=None):
-        """ShowInstanceConfigurationModifyHistoryRequest
+        r"""ShowInstanceConfigurationModifyHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowInstanceConfigurationModifyHistoryRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceConfigurationModifyHistoryRequest.
+        r"""Gets the instance_id of this ShowInstanceConfigurationModifyHistoryRequest.
 
         实例ID。
 
@@ -73,7 +73,7 @@ class ShowInstanceConfigurationModifyHistoryRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceConfigurationModifyHistoryRequest.
+        r"""Sets the instance_id of this ShowInstanceConfigurationModifyHistoryRequest.
 
         实例ID。
 
@@ -84,7 +84,7 @@ class ShowInstanceConfigurationModifyHistoryRequest:
 
     @property
     def entity_id(self):
-        """Gets the entity_id of this ShowInstanceConfigurationModifyHistoryRequest.
+        r"""Gets the entity_id of this ShowInstanceConfigurationModifyHistoryRequest.
 
         实例ID或组ID或节点ID。可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -95,7 +95,7 @@ class ShowInstanceConfigurationModifyHistoryRequest:
 
     @entity_id.setter
     def entity_id(self, entity_id):
-        """Sets the entity_id of this ShowInstanceConfigurationModifyHistoryRequest.
+        r"""Sets the entity_id of this ShowInstanceConfigurationModifyHistoryRequest.
 
         实例ID或组ID或节点ID。可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -106,7 +106,7 @@ class ShowInstanceConfigurationModifyHistoryRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowInstanceConfigurationModifyHistoryRequest.
+        r"""Gets the offset of this ShowInstanceConfigurationModifyHistoryRequest.
 
         索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 取值必须为数字，不能为负数。
 
@@ -117,7 +117,7 @@ class ShowInstanceConfigurationModifyHistoryRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowInstanceConfigurationModifyHistoryRequest.
+        r"""Sets the offset of this ShowInstanceConfigurationModifyHistoryRequest.
 
         索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 取值必须为数字，不能为负数。
 
@@ -128,7 +128,7 @@ class ShowInstanceConfigurationModifyHistoryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowInstanceConfigurationModifyHistoryRequest.
+        r"""Gets the limit of this ShowInstanceConfigurationModifyHistoryRequest.
 
         查询个数上限值。 - 取值范围: 1~100。 - 不传该参数时，默认查询前100条信息。
 
@@ -139,7 +139,7 @@ class ShowInstanceConfigurationModifyHistoryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowInstanceConfigurationModifyHistoryRequest.
+        r"""Sets the limit of this ShowInstanceConfigurationModifyHistoryRequest.
 
         查询个数上限值。 - 取值范围: 1~100。 - 不传该参数时，默认查询前100条信息。
 

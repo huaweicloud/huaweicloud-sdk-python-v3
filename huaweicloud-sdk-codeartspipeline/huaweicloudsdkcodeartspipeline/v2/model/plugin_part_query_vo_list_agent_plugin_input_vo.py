@@ -29,7 +29,7 @@ class PluginPartQueryVOListAgentPluginInputVO:
     }
 
     def __init__(self, plugin_name=None, display_name=None, data=None):
-        """PluginPartQueryVOListAgentPluginInputVO
+        r"""PluginPartQueryVOListAgentPluginInputVO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PluginPartQueryVOListAgentPluginInputVO:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this PluginPartQueryVOListAgentPluginInputVO.
+        r"""Gets the plugin_name of this PluginPartQueryVOListAgentPluginInputVO.
 
         插件名
 
@@ -68,7 +68,7 @@ class PluginPartQueryVOListAgentPluginInputVO:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this PluginPartQueryVOListAgentPluginInputVO.
+        r"""Sets the plugin_name of this PluginPartQueryVOListAgentPluginInputVO.
 
         插件名
 
@@ -79,7 +79,7 @@ class PluginPartQueryVOListAgentPluginInputVO:
 
     @property
     def display_name(self):
-        """Gets the display_name of this PluginPartQueryVOListAgentPluginInputVO.
+        r"""Gets the display_name of this PluginPartQueryVOListAgentPluginInputVO.
 
         展示名
 
@@ -90,7 +90,7 @@ class PluginPartQueryVOListAgentPluginInputVO:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this PluginPartQueryVOListAgentPluginInputVO.
+        r"""Sets the display_name of this PluginPartQueryVOListAgentPluginInputVO.
 
         展示名
 
@@ -101,7 +101,7 @@ class PluginPartQueryVOListAgentPluginInputVO:
 
     @property
     def data(self):
-        """Gets the data of this PluginPartQueryVOListAgentPluginInputVO.
+        r"""Gets the data of this PluginPartQueryVOListAgentPluginInputVO.
 
         结果集
 
@@ -112,7 +112,7 @@ class PluginPartQueryVOListAgentPluginInputVO:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this PluginPartQueryVOListAgentPluginInputVO.
+        r"""Sets the data of this PluginPartQueryVOListAgentPluginInputVO.
 
         结果集
 

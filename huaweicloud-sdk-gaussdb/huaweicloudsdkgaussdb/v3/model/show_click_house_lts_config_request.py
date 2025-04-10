@@ -35,7 +35,7 @@ class ShowClickHouseLtsConfigRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, enterprise_project_id=None, instance_name=None, limit=None, offset=None):
-        """ShowClickHouseLtsConfigRequest
+        r"""ShowClickHouseLtsConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ShowClickHouseLtsConfigRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowClickHouseLtsConfigRequest.
+        r"""Gets the x_language of this ShowClickHouseLtsConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -89,7 +89,7 @@ class ShowClickHouseLtsConfigRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowClickHouseLtsConfigRequest.
+        r"""Sets the x_language of this ShowClickHouseLtsConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -100,7 +100,7 @@ class ShowClickHouseLtsConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowClickHouseLtsConfigRequest.
+        r"""Gets the instance_id of this ShowClickHouseLtsConfigRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -111,7 +111,7 @@ class ShowClickHouseLtsConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowClickHouseLtsConfigRequest.
+        r"""Sets the instance_id of this ShowClickHouseLtsConfigRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -122,7 +122,7 @@ class ShowClickHouseLtsConfigRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowClickHouseLtsConfigRequest.
+        r"""Gets the enterprise_project_id of this ShowClickHouseLtsConfigRequest.
 
         企业项目id。
 
@@ -133,7 +133,7 @@ class ShowClickHouseLtsConfigRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowClickHouseLtsConfigRequest.
+        r"""Sets the enterprise_project_id of this ShowClickHouseLtsConfigRequest.
 
         企业项目id。
 
@@ -144,7 +144,7 @@ class ShowClickHouseLtsConfigRequest:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ShowClickHouseLtsConfigRequest.
+        r"""Gets the instance_name of this ShowClickHouseLtsConfigRequest.
 
         实例名称。
 
@@ -155,7 +155,7 @@ class ShowClickHouseLtsConfigRequest:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ShowClickHouseLtsConfigRequest.
+        r"""Sets the instance_name of this ShowClickHouseLtsConfigRequest.
 
         实例名称。
 
@@ -166,7 +166,7 @@ class ShowClickHouseLtsConfigRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowClickHouseLtsConfigRequest.
+        r"""Gets the limit of this ShowClickHouseLtsConfigRequest.
 
         查询记录数，默认10。不能为负数，最小值为1，最大值为100。
 
@@ -177,7 +177,7 @@ class ShowClickHouseLtsConfigRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowClickHouseLtsConfigRequest.
+        r"""Sets the limit of this ShowClickHouseLtsConfigRequest.
 
         查询记录数，默认10。不能为负数，最小值为1，最大值为100。
 
@@ -188,7 +188,7 @@ class ShowClickHouseLtsConfigRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowClickHouseLtsConfigRequest.
+        r"""Gets the offset of this ShowClickHouseLtsConfigRequest.
 
         索引位置，偏移量，默认0。从第一条数据偏移offset条数据后开始查询（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -199,7 +199,7 @@ class ShowClickHouseLtsConfigRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowClickHouseLtsConfigRequest.
+        r"""Sets the offset of this ShowClickHouseLtsConfigRequest.
 
         索引位置，偏移量，默认0。从第一条数据偏移offset条数据后开始查询（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 

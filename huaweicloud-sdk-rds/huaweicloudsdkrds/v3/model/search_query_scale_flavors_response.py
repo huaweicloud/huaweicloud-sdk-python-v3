@@ -26,7 +26,7 @@ class SearchQueryScaleFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, compute_flavor_groups=None):
-        """SearchQueryScaleFlavorsResponse
+        r"""SearchQueryScaleFlavorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SearchQueryScaleFlavorsResponse(SdkResponse):
 
     @property
     def compute_flavor_groups(self):
-        """Gets the compute_flavor_groups of this SearchQueryScaleFlavorsResponse.
+        r"""Gets the compute_flavor_groups of this SearchQueryScaleFlavorsResponse.
 
         计算规格列表对象。
 
@@ -55,7 +55,7 @@ class SearchQueryScaleFlavorsResponse(SdkResponse):
 
     @compute_flavor_groups.setter
     def compute_flavor_groups(self, compute_flavor_groups):
-        """Sets the compute_flavor_groups of this SearchQueryScaleFlavorsResponse.
+        r"""Sets the compute_flavor_groups of this SearchQueryScaleFlavorsResponse.
 
         计算规格列表对象。
 

@@ -31,7 +31,7 @@ class RunSyncCommandRequestBody:
     }
 
     def __init__(self, command=None, content=None, phone_ids=None, server_ids=None):
-        """RunSyncCommandRequestBody
+        r"""RunSyncCommandRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class RunSyncCommandRequestBody:
 
     @property
     def command(self):
-        """Gets the command of this RunSyncCommandRequestBody.
+        r"""Gets the command of this RunSyncCommandRequestBody.
 
         ADB命令，固定填写shell。
 
@@ -73,7 +73,7 @@ class RunSyncCommandRequestBody:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this RunSyncCommandRequestBody.
+        r"""Sets the command of this RunSyncCommandRequestBody.
 
         ADB命令，固定填写shell。
 
@@ -84,7 +84,7 @@ class RunSyncCommandRequestBody:
 
     @property
     def content(self):
-        """Gets the content of this RunSyncCommandRequestBody.
+        r"""Gets the content of this RunSyncCommandRequestBody.
 
         待执行的命令。  最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
 
@@ -95,7 +95,7 @@ class RunSyncCommandRequestBody:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this RunSyncCommandRequestBody.
+        r"""Sets the content of this RunSyncCommandRequestBody.
 
         待执行的命令。  最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
 
@@ -106,7 +106,7 @@ class RunSyncCommandRequestBody:
 
     @property
     def phone_ids(self):
-        """Gets the phone_ids of this RunSyncCommandRequestBody.
+        r"""Gets the phone_ids of this RunSyncCommandRequestBody.
 
         云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。最多支持传入15个phone_id。
 
@@ -117,7 +117,7 @@ class RunSyncCommandRequestBody:
 
     @phone_ids.setter
     def phone_ids(self, phone_ids):
-        """Sets the phone_ids of this RunSyncCommandRequestBody.
+        r"""Sets the phone_ids of this RunSyncCommandRequestBody.
 
         云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。最多支持传入15个phone_id。
 
@@ -128,7 +128,7 @@ class RunSyncCommandRequestBody:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this RunSyncCommandRequestBody.
+        r"""Gets the server_ids of this RunSyncCommandRequestBody.
 
         云手机服务器ID列表。 phone_ids参数不存在时必选，同时存在只处理phone_ids。
 
@@ -139,7 +139,7 @@ class RunSyncCommandRequestBody:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this RunSyncCommandRequestBody.
+        r"""Sets the server_ids of this RunSyncCommandRequestBody.
 
         云手机服务器ID列表。 phone_ids参数不存在时必选，同时存在只处理phone_ids。
 

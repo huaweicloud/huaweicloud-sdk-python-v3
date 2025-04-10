@@ -25,6 +25,7 @@ class ListImageRiskConfigRulesRequest:
         'namespace': 'str',
         'image_name': 'str',
         'image_version': 'str',
+        'image_id': 'str',
         'check_name': 'str',
         'standard': 'str',
         'result_type': 'str',
@@ -42,6 +43,7 @@ class ListImageRiskConfigRulesRequest:
         'namespace': 'namespace',
         'image_name': 'image_name',
         'image_version': 'image_version',
+        'image_id': 'image_id',
         'check_name': 'check_name',
         'standard': 'standard',
         'result_type': 'result_type',
@@ -50,14 +52,14 @@ class ListImageRiskConfigRulesRequest:
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, image_type=None, offset=None, limit=None, namespace=None, image_name=None, image_version=None, check_name=None, standard=None, result_type=None, check_rule_name=None, severity=None, instance_id=None):
-        """ListImageRiskConfigRulesRequest
+    def __init__(self, region=None, enterprise_project_id=None, image_type=None, offset=None, limit=None, namespace=None, image_name=None, image_version=None, image_id=None, check_name=None, standard=None, result_type=None, check_rule_name=None, severity=None, instance_id=None):
+        r"""ListImageRiskConfigRulesRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
         :type image_type: str
@@ -71,6 +73,8 @@ class ListImageRiskConfigRulesRequest:
         :type image_name: str
         :param image_version: 镜像版本名称
         :type image_version: str
+        :param image_id: 镜像id
+        :type image_id: str
         :param check_name: 基线名称
         :type check_name: str
         :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
@@ -95,6 +99,7 @@ class ListImageRiskConfigRulesRequest:
         self._namespace = None
         self._image_name = None
         self._image_version = None
+        self._image_id = None
         self._check_name = None
         self._standard = None
         self._result_type = None
@@ -118,6 +123,8 @@ class ListImageRiskConfigRulesRequest:
             self.image_name = image_name
         if image_version is not None:
             self.image_version = image_version
+        if image_id is not None:
+            self.image_id = image_id
         self.check_name = check_name
         self.standard = standard
         if result_type is not None:
@@ -131,7 +138,7 @@ class ListImageRiskConfigRulesRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListImageRiskConfigRulesRequest.
+        r"""Gets the region of this ListImageRiskConfigRulesRequest.
 
         Region ID
 
@@ -142,7 +149,7 @@ class ListImageRiskConfigRulesRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListImageRiskConfigRulesRequest.
+        r"""Sets the region of this ListImageRiskConfigRulesRequest.
 
         Region ID
 
@@ -153,9 +160,9 @@ class ListImageRiskConfigRulesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListImageRiskConfigRulesRequest.
+        r"""Gets the enterprise_project_id of this ListImageRiskConfigRulesRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListImageRiskConfigRulesRequest.
         :rtype: str
@@ -164,9 +171,9 @@ class ListImageRiskConfigRulesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListImageRiskConfigRulesRequest.
+        r"""Sets the enterprise_project_id of this ListImageRiskConfigRulesRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListImageRiskConfigRulesRequest.
         :type enterprise_project_id: str
@@ -175,7 +182,7 @@ class ListImageRiskConfigRulesRequest:
 
     @property
     def image_type(self):
-        """Gets the image_type of this ListImageRiskConfigRulesRequest.
+        r"""Gets the image_type of this ListImageRiskConfigRulesRequest.
 
         镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
@@ -186,7 +193,7 @@ class ListImageRiskConfigRulesRequest:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this ListImageRiskConfigRulesRequest.
+        r"""Sets the image_type of this ListImageRiskConfigRulesRequest.
 
         镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
@@ -197,7 +204,7 @@ class ListImageRiskConfigRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListImageRiskConfigRulesRequest.
+        r"""Gets the offset of this ListImageRiskConfigRulesRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -208,7 +215,7 @@ class ListImageRiskConfigRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListImageRiskConfigRulesRequest.
+        r"""Sets the offset of this ListImageRiskConfigRulesRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -219,7 +226,7 @@ class ListImageRiskConfigRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListImageRiskConfigRulesRequest.
+        r"""Gets the limit of this ListImageRiskConfigRulesRequest.
 
         每页显示数量
 
@@ -230,7 +237,7 @@ class ListImageRiskConfigRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListImageRiskConfigRulesRequest.
+        r"""Sets the limit of this ListImageRiskConfigRulesRequest.
 
         每页显示数量
 
@@ -241,7 +248,7 @@ class ListImageRiskConfigRulesRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListImageRiskConfigRulesRequest.
+        r"""Gets the namespace of this ListImageRiskConfigRulesRequest.
 
         组织名称（没有镜像相关信息时，表示查询所有镜像）
 
@@ -252,7 +259,7 @@ class ListImageRiskConfigRulesRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListImageRiskConfigRulesRequest.
+        r"""Sets the namespace of this ListImageRiskConfigRulesRequest.
 
         组织名称（没有镜像相关信息时，表示查询所有镜像）
 
@@ -263,7 +270,7 @@ class ListImageRiskConfigRulesRequest:
 
     @property
     def image_name(self):
-        """Gets the image_name of this ListImageRiskConfigRulesRequest.
+        r"""Gets the image_name of this ListImageRiskConfigRulesRequest.
 
         镜像名称
 
@@ -274,7 +281,7 @@ class ListImageRiskConfigRulesRequest:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this ListImageRiskConfigRulesRequest.
+        r"""Sets the image_name of this ListImageRiskConfigRulesRequest.
 
         镜像名称
 
@@ -285,7 +292,7 @@ class ListImageRiskConfigRulesRequest:
 
     @property
     def image_version(self):
-        """Gets the image_version of this ListImageRiskConfigRulesRequest.
+        r"""Gets the image_version of this ListImageRiskConfigRulesRequest.
 
         镜像版本名称
 
@@ -296,7 +303,7 @@ class ListImageRiskConfigRulesRequest:
 
     @image_version.setter
     def image_version(self, image_version):
-        """Sets the image_version of this ListImageRiskConfigRulesRequest.
+        r"""Sets the image_version of this ListImageRiskConfigRulesRequest.
 
         镜像版本名称
 
@@ -306,8 +313,30 @@ class ListImageRiskConfigRulesRequest:
         self._image_version = image_version
 
     @property
+    def image_id(self):
+        r"""Gets the image_id of this ListImageRiskConfigRulesRequest.
+
+        镜像id
+
+        :return: The image_id of this ListImageRiskConfigRulesRequest.
+        :rtype: str
+        """
+        return self._image_id
+
+    @image_id.setter
+    def image_id(self, image_id):
+        r"""Sets the image_id of this ListImageRiskConfigRulesRequest.
+
+        镜像id
+
+        :param image_id: The image_id of this ListImageRiskConfigRulesRequest.
+        :type image_id: str
+        """
+        self._image_id = image_id
+
+    @property
     def check_name(self):
-        """Gets the check_name of this ListImageRiskConfigRulesRequest.
+        r"""Gets the check_name of this ListImageRiskConfigRulesRequest.
 
         基线名称
 
@@ -318,7 +347,7 @@ class ListImageRiskConfigRulesRequest:
 
     @check_name.setter
     def check_name(self, check_name):
-        """Sets the check_name of this ListImageRiskConfigRulesRequest.
+        r"""Sets the check_name of this ListImageRiskConfigRulesRequest.
 
         基线名称
 
@@ -329,7 +358,7 @@ class ListImageRiskConfigRulesRequest:
 
     @property
     def standard(self):
-        """Gets the standard of this ListImageRiskConfigRulesRequest.
+        r"""Gets the standard of this ListImageRiskConfigRulesRequest.
 
         标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
@@ -340,7 +369,7 @@ class ListImageRiskConfigRulesRequest:
 
     @standard.setter
     def standard(self, standard):
-        """Sets the standard of this ListImageRiskConfigRulesRequest.
+        r"""Sets the standard of this ListImageRiskConfigRulesRequest.
 
         标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
@@ -351,7 +380,7 @@ class ListImageRiskConfigRulesRequest:
 
     @property
     def result_type(self):
-        """Gets the result_type of this ListImageRiskConfigRulesRequest.
+        r"""Gets the result_type of this ListImageRiskConfigRulesRequest.
 
         结果类型，包含如下： - pass ： 已通过 - failed : 未通过
 
@@ -362,7 +391,7 @@ class ListImageRiskConfigRulesRequest:
 
     @result_type.setter
     def result_type(self, result_type):
-        """Sets the result_type of this ListImageRiskConfigRulesRequest.
+        r"""Sets the result_type of this ListImageRiskConfigRulesRequest.
 
         结果类型，包含如下： - pass ： 已通过 - failed : 未通过
 
@@ -373,7 +402,7 @@ class ListImageRiskConfigRulesRequest:
 
     @property
     def check_rule_name(self):
-        """Gets the check_rule_name of this ListImageRiskConfigRulesRequest.
+        r"""Gets the check_rule_name of this ListImageRiskConfigRulesRequest.
 
         检查项名称，支持模糊匹配
 
@@ -384,7 +413,7 @@ class ListImageRiskConfigRulesRequest:
 
     @check_rule_name.setter
     def check_rule_name(self, check_rule_name):
-        """Sets the check_rule_name of this ListImageRiskConfigRulesRequest.
+        r"""Sets the check_rule_name of this ListImageRiskConfigRulesRequest.
 
         检查项名称，支持模糊匹配
 
@@ -395,7 +424,7 @@ class ListImageRiskConfigRulesRequest:
 
     @property
     def severity(self):
-        """Gets the severity of this ListImageRiskConfigRulesRequest.
+        r"""Gets the severity of this ListImageRiskConfigRulesRequest.
 
         风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
 
@@ -406,7 +435,7 @@ class ListImageRiskConfigRulesRequest:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ListImageRiskConfigRulesRequest.
+        r"""Sets the severity of this ListImageRiskConfigRulesRequest.
 
         风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
 
@@ -417,7 +446,7 @@ class ListImageRiskConfigRulesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListImageRiskConfigRulesRequest.
+        r"""Gets the instance_id of this ListImageRiskConfigRulesRequest.
 
         企业仓库实例ID，swr共享版无需使用该参数
 
@@ -428,7 +457,7 @@ class ListImageRiskConfigRulesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListImageRiskConfigRulesRequest.
+        r"""Sets the instance_id of this ListImageRiskConfigRulesRequest.
 
         企业仓库实例ID，swr共享版无需使用该参数
 

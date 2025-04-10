@@ -25,7 +25,7 @@ class NeutronDeleteSecurityGroupRuleRequest:
     }
 
     def __init__(self, security_group_rule_id=None):
-        """NeutronDeleteSecurityGroupRuleRequest
+        r"""NeutronDeleteSecurityGroupRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NeutronDeleteSecurityGroupRuleRequest:
 
     @property
     def security_group_rule_id(self):
-        """Gets the security_group_rule_id of this NeutronDeleteSecurityGroupRuleRequest.
+        r"""Gets the security_group_rule_id of this NeutronDeleteSecurityGroupRuleRequest.
 
         安全组规则ID
 
@@ -53,7 +53,7 @@ class NeutronDeleteSecurityGroupRuleRequest:
 
     @security_group_rule_id.setter
     def security_group_rule_id(self, security_group_rule_id):
-        """Sets the security_group_rule_id of this NeutronDeleteSecurityGroupRuleRequest.
+        r"""Sets the security_group_rule_id of this NeutronDeleteSecurityGroupRuleRequest.
 
         安全组规则ID
 

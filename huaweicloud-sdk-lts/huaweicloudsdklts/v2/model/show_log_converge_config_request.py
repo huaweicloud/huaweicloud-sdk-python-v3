@@ -25,7 +25,7 @@ class ShowLogConvergeConfigRequest:
     }
 
     def __init__(self, member_account_id=None):
-        """ShowLogConvergeConfigRequest
+        r"""ShowLogConvergeConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowLogConvergeConfigRequest:
 
     @property
     def member_account_id(self):
-        """Gets the member_account_id of this ShowLogConvergeConfigRequest.
+        r"""Gets the member_account_id of this ShowLogConvergeConfigRequest.
 
         成员帐户ID
 
@@ -53,7 +53,7 @@ class ShowLogConvergeConfigRequest:
 
     @member_account_id.setter
     def member_account_id(self, member_account_id):
-        """Sets the member_account_id of this ShowLogConvergeConfigRequest.
+        r"""Sets the member_account_id of this ShowLogConvergeConfigRequest.
 
         成员帐户ID
 

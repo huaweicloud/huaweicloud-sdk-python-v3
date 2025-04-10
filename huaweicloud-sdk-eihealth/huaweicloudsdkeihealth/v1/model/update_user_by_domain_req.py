@@ -31,7 +31,7 @@ class UpdateUserByDomainReq:
     }
 
     def __init__(self, password=None, mobile=None, areacode=None, email=None):
-        """UpdateUserByDomainReq
+        r"""UpdateUserByDomainReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateUserByDomainReq:
 
     @property
     def password(self):
-        """Gets the password of this UpdateUserByDomainReq.
+        r"""Gets the password of this UpdateUserByDomainReq.
 
         新密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。
 
@@ -75,7 +75,7 @@ class UpdateUserByDomainReq:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this UpdateUserByDomainReq.
+        r"""Sets the password of this UpdateUserByDomainReq.
 
         新密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。
 
@@ -86,7 +86,7 @@ class UpdateUserByDomainReq:
 
     @property
     def mobile(self):
-        """Gets the mobile of this UpdateUserByDomainReq.
+        r"""Gets the mobile of this UpdateUserByDomainReq.
 
         用户手机号，纯数字，长度小于等于32位，当且仅当重置手机号时传入空串。必须与国家码同时存在。
 
@@ -97,7 +97,7 @@ class UpdateUserByDomainReq:
 
     @mobile.setter
     def mobile(self, mobile):
-        """Sets the mobile of this UpdateUserByDomainReq.
+        r"""Sets the mobile of this UpdateUserByDomainReq.
 
         用户手机号，纯数字，长度小于等于32位，当且仅当重置手机号时传入空串。必须与国家码同时存在。
 
@@ -108,7 +108,7 @@ class UpdateUserByDomainReq:
 
     @property
     def areacode(self):
-        """Gets the areacode of this UpdateUserByDomainReq.
+        r"""Gets the areacode of this UpdateUserByDomainReq.
 
         国家码，当且仅当重置手机号时传入空串。中国大陆为“0086”
 
@@ -119,7 +119,7 @@ class UpdateUserByDomainReq:
 
     @areacode.setter
     def areacode(self, areacode):
-        """Sets the areacode of this UpdateUserByDomainReq.
+        r"""Sets the areacode of this UpdateUserByDomainReq.
 
         国家码，当且仅当重置手机号时传入空串。中国大陆为“0086”
 
@@ -130,7 +130,7 @@ class UpdateUserByDomainReq:
 
     @property
     def email(self):
-        """Gets the email of this UpdateUserByDomainReq.
+        r"""Gets the email of this UpdateUserByDomainReq.
 
         用户邮箱，需符合邮箱格式
 
@@ -141,7 +141,7 @@ class UpdateUserByDomainReq:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this UpdateUserByDomainReq.
+        r"""Sets the email of this UpdateUserByDomainReq.
 
         用户邮箱，需符合邮箱格式
 

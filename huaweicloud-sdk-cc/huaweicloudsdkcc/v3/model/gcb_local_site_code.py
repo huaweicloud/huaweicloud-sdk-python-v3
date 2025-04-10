@@ -25,7 +25,7 @@ class GcbLocalSiteCode:
     }
 
     def __init__(self, local_site_code=None):
-        """GcbLocalSiteCode
+        r"""GcbLocalSiteCode
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GcbLocalSiteCode:
 
     @property
     def local_site_code(self):
-        """Gets the local_site_code of this GcbLocalSiteCode.
+        r"""Gets the local_site_code of this GcbLocalSiteCode.
 
         功能说明：本端接入点的编码。
 
@@ -54,7 +54,7 @@ class GcbLocalSiteCode:
 
     @local_site_code.setter
     def local_site_code(self, local_site_code):
-        """Sets the local_site_code of this GcbLocalSiteCode.
+        r"""Sets the local_site_code of this GcbLocalSiteCode.
 
         功能说明：本端接入点的编码。
 

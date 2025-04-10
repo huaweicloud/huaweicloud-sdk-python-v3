@@ -47,7 +47,7 @@ class MallParaDTO:
     }
 
     def __init__(self, auth_type=None, visibility=None, market_sort_type=None, asc_or_desc=None, offset=None, limit=None, is_owner=None, is_authorized=None, is_update_recently=None, is_release_recently=None, is_hot_recently=None, success_and_failure_rate=None):
-        """MallParaDTO
+        r"""MallParaDTO
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class MallParaDTO:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this MallParaDTO.
+        r"""Gets the auth_type of this MallParaDTO.
 
         认证类型。
 
@@ -131,7 +131,7 @@ class MallParaDTO:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this MallParaDTO.
+        r"""Sets the auth_type of this MallParaDTO.
 
         认证类型。
 
@@ -142,7 +142,7 @@ class MallParaDTO:
 
     @property
     def visibility(self):
-        """Gets the visibility of this MallParaDTO.
+        r"""Gets the visibility of this MallParaDTO.
 
         API可见性，WORKSPACE：工作空间可见，PROJECT： 项目可见，DOMAIN：租户可见，SPECIFIC_PROJECT：指定项目可见。
 
@@ -153,7 +153,7 @@ class MallParaDTO:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this MallParaDTO.
+        r"""Sets the visibility of this MallParaDTO.
 
         API可见性，WORKSPACE：工作空间可见，PROJECT： 项目可见，DOMAIN：租户可见，SPECIFIC_PROJECT：指定项目可见。
 
@@ -164,7 +164,7 @@ class MallParaDTO:
 
     @property
     def market_sort_type(self):
-        """Gets the market_sort_type of this MallParaDTO.
+        r"""Gets the market_sort_type of this MallParaDTO.
 
         排序参数。
 
@@ -175,7 +175,7 @@ class MallParaDTO:
 
     @market_sort_type.setter
     def market_sort_type(self, market_sort_type):
-        """Sets the market_sort_type of this MallParaDTO.
+        r"""Sets the market_sort_type of this MallParaDTO.
 
         排序参数。
 
@@ -186,7 +186,7 @@ class MallParaDTO:
 
     @property
     def asc_or_desc(self):
-        """Gets the asc_or_desc of this MallParaDTO.
+        r"""Gets the asc_or_desc of this MallParaDTO.
 
         升序、降序。
 
@@ -197,7 +197,7 @@ class MallParaDTO:
 
     @asc_or_desc.setter
     def asc_or_desc(self, asc_or_desc):
-        """Sets the asc_or_desc of this MallParaDTO.
+        r"""Sets the asc_or_desc of this MallParaDTO.
 
         升序、降序。
 
@@ -208,7 +208,7 @@ class MallParaDTO:
 
     @property
     def offset(self):
-        """Gets the offset of this MallParaDTO.
+        r"""Gets the offset of this MallParaDTO.
 
         查询起始坐标。
 
@@ -219,7 +219,7 @@ class MallParaDTO:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this MallParaDTO.
+        r"""Sets the offset of this MallParaDTO.
 
         查询起始坐标。
 
@@ -230,7 +230,7 @@ class MallParaDTO:
 
     @property
     def limit(self):
-        """Gets the limit of this MallParaDTO.
+        r"""Gets the limit of this MallParaDTO.
 
         查询条数。
 
@@ -241,7 +241,7 @@ class MallParaDTO:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this MallParaDTO.
+        r"""Sets the limit of this MallParaDTO.
 
         查询条数。
 
@@ -252,7 +252,7 @@ class MallParaDTO:
 
     @property
     def is_owner(self):
-        """Gets the is_owner of this MallParaDTO.
+        r"""Gets the is_owner of this MallParaDTO.
 
         是否显示拥有者。
 
@@ -263,7 +263,7 @@ class MallParaDTO:
 
     @is_owner.setter
     def is_owner(self, is_owner):
-        """Sets the is_owner of this MallParaDTO.
+        r"""Sets the is_owner of this MallParaDTO.
 
         是否显示拥有者。
 
@@ -274,7 +274,7 @@ class MallParaDTO:
 
     @property
     def is_authorized(self):
-        """Gets the is_authorized of this MallParaDTO.
+        r"""Gets the is_authorized of this MallParaDTO.
 
         是否显示已被授权。
 
@@ -285,7 +285,7 @@ class MallParaDTO:
 
     @is_authorized.setter
     def is_authorized(self, is_authorized):
-        """Sets the is_authorized of this MallParaDTO.
+        r"""Sets the is_authorized of this MallParaDTO.
 
         是否显示已被授权。
 
@@ -296,7 +296,7 @@ class MallParaDTO:
 
     @property
     def is_update_recently(self):
-        """Gets the is_update_recently of this MallParaDTO.
+        r"""Gets the is_update_recently of this MallParaDTO.
 
         是否显示最近更新。
 
@@ -307,7 +307,7 @@ class MallParaDTO:
 
     @is_update_recently.setter
     def is_update_recently(self, is_update_recently):
-        """Sets the is_update_recently of this MallParaDTO.
+        r"""Sets the is_update_recently of this MallParaDTO.
 
         是否显示最近更新。
 
@@ -318,7 +318,7 @@ class MallParaDTO:
 
     @property
     def is_release_recently(self):
-        """Gets the is_release_recently of this MallParaDTO.
+        r"""Gets the is_release_recently of this MallParaDTO.
 
         是否显示最近发布。
 
@@ -329,7 +329,7 @@ class MallParaDTO:
 
     @is_release_recently.setter
     def is_release_recently(self, is_release_recently):
-        """Sets the is_release_recently of this MallParaDTO.
+        r"""Sets the is_release_recently of this MallParaDTO.
 
         是否显示最近发布。
 
@@ -340,7 +340,7 @@ class MallParaDTO:
 
     @property
     def is_hot_recently(self):
-        """Gets the is_hot_recently of this MallParaDTO.
+        r"""Gets the is_hot_recently of this MallParaDTO.
 
         是否显示热销状态。
 
@@ -351,7 +351,7 @@ class MallParaDTO:
 
     @is_hot_recently.setter
     def is_hot_recently(self, is_hot_recently):
-        """Sets the is_hot_recently of this MallParaDTO.
+        r"""Sets the is_hot_recently of this MallParaDTO.
 
         是否显示热销状态。
 
@@ -362,7 +362,7 @@ class MallParaDTO:
 
     @property
     def success_and_failure_rate(self):
-        """Gets the success_and_failure_rate of this MallParaDTO.
+        r"""Gets the success_and_failure_rate of this MallParaDTO.
 
         是否显示7天内成功率与失败率。
 
@@ -373,7 +373,7 @@ class MallParaDTO:
 
     @success_and_failure_rate.setter
     def success_and_failure_rate(self, success_and_failure_rate):
-        """Sets the success_and_failure_rate of this MallParaDTO.
+        r"""Sets the success_and_failure_rate of this MallParaDTO.
 
         是否显示7天内成功率与失败率。
 

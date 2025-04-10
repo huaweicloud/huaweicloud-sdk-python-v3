@@ -23,7 +23,7 @@ class FileHash:
     }
 
     def __init__(self):
-        """FileHash
+        r"""FileHash
 
         The model defined in huaweicloud sdk
 

@@ -26,7 +26,7 @@ class CreateRemuxTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """CreateRemuxTaskResponse
+        r"""CreateRemuxTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateRemuxTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateRemuxTaskResponse.
+        r"""Gets the task_id of this CreateRemuxTaskResponse.
 
         任务ID 
 
@@ -55,7 +55,7 @@ class CreateRemuxTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateRemuxTaskResponse.
+        r"""Sets the task_id of this CreateRemuxTaskResponse.
 
         任务ID 
 

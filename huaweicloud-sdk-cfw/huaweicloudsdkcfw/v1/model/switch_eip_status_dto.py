@@ -29,7 +29,7 @@ class SwitchEipStatusDto:
     }
 
     def __init__(self, fw_instance_id=None, object_id=None, status=None):
-        """SwitchEipStatusDto
+        r"""SwitchEipStatusDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SwitchEipStatusDto:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this SwitchEipStatusDto.
+        r"""Gets the fw_instance_id of this SwitchEipStatusDto.
 
         防火墙id
 
@@ -68,7 +68,7 @@ class SwitchEipStatusDto:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this SwitchEipStatusDto.
+        r"""Sets the fw_instance_id of this SwitchEipStatusDto.
 
         防火墙id
 
@@ -79,7 +79,7 @@ class SwitchEipStatusDto:
 
     @property
     def object_id(self):
-        """Gets the object_id of this SwitchEipStatusDto.
+        r"""Gets the object_id of this SwitchEipStatusDto.
 
         防护对象id
 
@@ -90,7 +90,7 @@ class SwitchEipStatusDto:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this SwitchEipStatusDto.
+        r"""Sets the object_id of this SwitchEipStatusDto.
 
         防护对象id
 
@@ -101,7 +101,7 @@ class SwitchEipStatusDto:
 
     @property
     def status(self):
-        """Gets the status of this SwitchEipStatusDto.
+        r"""Gets the status of this SwitchEipStatusDto.
 
         是否开启新增eip自动防护，1；是，0：否
 
@@ -112,7 +112,7 @@ class SwitchEipStatusDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SwitchEipStatusDto.
+        r"""Sets the status of this SwitchEipStatusDto.
 
         是否开启新增eip自动防护，1；是，0：否
 

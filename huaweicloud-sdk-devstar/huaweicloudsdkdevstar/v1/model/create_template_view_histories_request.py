@@ -27,7 +27,7 @@ class CreateTemplateViewHistoriesRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateTemplateViewHistoriesRequest
+        r"""CreateTemplateViewHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateTemplateViewHistoriesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateTemplateViewHistoriesRequest.
+        r"""Gets the x_language of this CreateTemplateViewHistoriesRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -61,7 +61,7 @@ class CreateTemplateViewHistoriesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateTemplateViewHistoriesRequest.
+        r"""Sets the x_language of this CreateTemplateViewHistoriesRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -72,7 +72,7 @@ class CreateTemplateViewHistoriesRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTemplateViewHistoriesRequest.
+        r"""Gets the body of this CreateTemplateViewHistoriesRequest.
 
         :return: The body of this CreateTemplateViewHistoriesRequest.
         :rtype: :class:`huaweicloudsdkdevstar.v1.TemplatesInfo`
@@ -81,7 +81,7 @@ class CreateTemplateViewHistoriesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTemplateViewHistoriesRequest.
+        r"""Sets the body of this CreateTemplateViewHistoriesRequest.
 
         :param body: The body of this CreateTemplateViewHistoriesRequest.
         :type body: :class:`huaweicloudsdkdevstar.v1.TemplatesInfo`

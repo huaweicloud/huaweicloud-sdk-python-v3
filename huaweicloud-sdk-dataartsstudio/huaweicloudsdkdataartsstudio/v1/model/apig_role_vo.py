@@ -31,7 +31,7 @@ class ApigRoleVo:
     }
 
     def __init__(self, role_id=None, role_code=None, role_name=None, description=None):
-        """ApigRoleVo
+        r"""ApigRoleVo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ApigRoleVo:
 
     @property
     def role_id(self):
-        """Gets the role_id of this ApigRoleVo.
+        r"""Gets the role_id of this ApigRoleVo.
 
         角色id
 
@@ -75,7 +75,7 @@ class ApigRoleVo:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this ApigRoleVo.
+        r"""Sets the role_id of this ApigRoleVo.
 
         角色id
 
@@ -86,7 +86,7 @@ class ApigRoleVo:
 
     @property
     def role_code(self):
-        """Gets the role_code of this ApigRoleVo.
+        r"""Gets the role_code of this ApigRoleVo.
 
         角色编码
 
@@ -97,7 +97,7 @@ class ApigRoleVo:
 
     @role_code.setter
     def role_code(self, role_code):
-        """Sets the role_code of this ApigRoleVo.
+        r"""Sets the role_code of this ApigRoleVo.
 
         角色编码
 
@@ -108,7 +108,7 @@ class ApigRoleVo:
 
     @property
     def role_name(self):
-        """Gets the role_name of this ApigRoleVo.
+        r"""Gets the role_name of this ApigRoleVo.
 
         角色名称
 
@@ -119,7 +119,7 @@ class ApigRoleVo:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this ApigRoleVo.
+        r"""Sets the role_name of this ApigRoleVo.
 
         角色名称
 
@@ -130,7 +130,7 @@ class ApigRoleVo:
 
     @property
     def description(self):
-        """Gets the description of this ApigRoleVo.
+        r"""Gets the description of this ApigRoleVo.
 
         描述
 
@@ -141,7 +141,7 @@ class ApigRoleVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApigRoleVo.
+        r"""Sets the description of this ApigRoleVo.
 
         描述
 

@@ -24,7 +24,7 @@ class DeleteTranscodingTaskByConsoleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteTranscodingTaskByConsoleResponse
+        r"""DeleteTranscodingTaskByConsoleResponse
 
         The model defined in huaweicloud sdk
 

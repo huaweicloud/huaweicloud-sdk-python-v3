@@ -25,7 +25,7 @@ class UpgradeDatabaseVersionRequestBody:
     }
 
     def __init__(self, upgrade_mode=None):
-        """UpgradeDatabaseVersionRequestBody
+        r"""UpgradeDatabaseVersionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpgradeDatabaseVersionRequestBody:
 
     @property
     def upgrade_mode(self):
-        """Gets the upgrade_mode of this UpgradeDatabaseVersionRequestBody.
+        r"""Gets the upgrade_mode of this UpgradeDatabaseVersionRequestBody.
 
         升级模式。  取值为“minimized_interrupt_time”为中断时间最短优先模式：升级过程对业务影响相对较小的升级方式  取值为“minimized_upgrade_time”为升级时长最短优先模式：升级过程时长相对较快的升级方式。  默认取值为“minimized_interrupt_time”。
 
@@ -54,7 +54,7 @@ class UpgradeDatabaseVersionRequestBody:
 
     @upgrade_mode.setter
     def upgrade_mode(self, upgrade_mode):
-        """Sets the upgrade_mode of this UpgradeDatabaseVersionRequestBody.
+        r"""Sets the upgrade_mode of this UpgradeDatabaseVersionRequestBody.
 
         升级模式。  取值为“minimized_interrupt_time”为中断时间最短优先模式：升级过程对业务影响相对较小的升级方式  取值为“minimized_upgrade_time”为升级时长最短优先模式：升级过程时长相对较快的升级方式。  默认取值为“minimized_interrupt_time”。
 

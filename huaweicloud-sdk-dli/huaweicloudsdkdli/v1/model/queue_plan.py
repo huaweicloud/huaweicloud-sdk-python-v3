@@ -43,7 +43,7 @@ class QueuePlan:
     }
 
     def __init__(self, id=None, plan_name=None, target_cu=None, start_hour=None, start_minute=None, repeat_day=None, valid_date_begin=None, valid_date_end=None, activate=None, last_execute_time=None):
-        """QueuePlan
+        r"""QueuePlan
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class QueuePlan:
 
     @property
     def id(self):
-        """Gets the id of this QueuePlan.
+        r"""Gets the id of this QueuePlan.
 
         扩缩容计划的ID编号。
 
@@ -116,7 +116,7 @@ class QueuePlan:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueuePlan.
+        r"""Sets the id of this QueuePlan.
 
         扩缩容计划的ID编号。
 
@@ -127,7 +127,7 @@ class QueuePlan:
 
     @property
     def plan_name(self):
-        """Gets the plan_name of this QueuePlan.
+        r"""Gets the plan_name of this QueuePlan.
 
         扩缩容计划的名称。
 
@@ -138,7 +138,7 @@ class QueuePlan:
 
     @plan_name.setter
     def plan_name(self, plan_name):
-        """Sets the plan_name of this QueuePlan.
+        r"""Sets the plan_name of this QueuePlan.
 
         扩缩容计划的名称。
 
@@ -149,7 +149,7 @@ class QueuePlan:
 
     @property
     def target_cu(self):
-        """Gets the target_cu of this QueuePlan.
+        r"""Gets the target_cu of this QueuePlan.
 
         队列扩缩容计划的目标CU值。
 
@@ -160,7 +160,7 @@ class QueuePlan:
 
     @target_cu.setter
     def target_cu(self, target_cu):
-        """Sets the target_cu of this QueuePlan.
+        r"""Sets the target_cu of this QueuePlan.
 
         队列扩缩容计划的目标CU值。
 
@@ -171,7 +171,7 @@ class QueuePlan:
 
     @property
     def start_hour(self):
-        """Gets the start_hour of this QueuePlan.
+        r"""Gets the start_hour of this QueuePlan.
 
         队列扩缩容计划的起始时（24小时制）。
 
@@ -182,7 +182,7 @@ class QueuePlan:
 
     @start_hour.setter
     def start_hour(self, start_hour):
-        """Sets the start_hour of this QueuePlan.
+        r"""Sets the start_hour of this QueuePlan.
 
         队列扩缩容计划的起始时（24小时制）。
 
@@ -193,7 +193,7 @@ class QueuePlan:
 
     @property
     def start_minute(self):
-        """Gets the start_minute of this QueuePlan.
+        r"""Gets the start_minute of this QueuePlan.
 
         定时扩缩容计划的起始分。
 
@@ -204,7 +204,7 @@ class QueuePlan:
 
     @start_minute.setter
     def start_minute(self, start_minute):
-        """Sets the start_minute of this QueuePlan.
+        r"""Sets the start_minute of this QueuePlan.
 
         定时扩缩容计划的起始分。
 
@@ -215,7 +215,7 @@ class QueuePlan:
 
     @property
     def repeat_day(self):
-        """Gets the repeat_day of this QueuePlan.
+        r"""Gets the repeat_day of this QueuePlan.
 
         定时扩缩容计划的重复周期规律
 
@@ -226,7 +226,7 @@ class QueuePlan:
 
     @repeat_day.setter
     def repeat_day(self, repeat_day):
-        """Sets the repeat_day of this QueuePlan.
+        r"""Sets the repeat_day of this QueuePlan.
 
         定时扩缩容计划的重复周期规律
 
@@ -237,7 +237,7 @@ class QueuePlan:
 
     @property
     def valid_date_begin(self):
-        """Gets the valid_date_begin of this QueuePlan.
+        r"""Gets the valid_date_begin of this QueuePlan.
 
         有效期开始时间（13位时间戳）
 
@@ -248,7 +248,7 @@ class QueuePlan:
 
     @valid_date_begin.setter
     def valid_date_begin(self, valid_date_begin):
-        """Sets the valid_date_begin of this QueuePlan.
+        r"""Sets the valid_date_begin of this QueuePlan.
 
         有效期开始时间（13位时间戳）
 
@@ -259,7 +259,7 @@ class QueuePlan:
 
     @property
     def valid_date_end(self):
-        """Gets the valid_date_end of this QueuePlan.
+        r"""Gets the valid_date_end of this QueuePlan.
 
         有效期结束时间（13位时间戳）
 
@@ -270,7 +270,7 @@ class QueuePlan:
 
     @valid_date_end.setter
     def valid_date_end(self, valid_date_end):
-        """Sets the valid_date_end of this QueuePlan.
+        r"""Sets the valid_date_end of this QueuePlan.
 
         有效期结束时间（13位时间戳）
 
@@ -281,7 +281,7 @@ class QueuePlan:
 
     @property
     def activate(self):
-        """Gets the activate of this QueuePlan.
+        r"""Gets the activate of this QueuePlan.
 
         当前的扩缩容计划是否激活。
 
@@ -292,7 +292,7 @@ class QueuePlan:
 
     @activate.setter
     def activate(self, activate):
-        """Sets the activate of this QueuePlan.
+        r"""Sets the activate of this QueuePlan.
 
         当前的扩缩容计划是否激活。
 
@@ -303,7 +303,7 @@ class QueuePlan:
 
     @property
     def last_execute_time(self):
-        """Gets the last_execute_time of this QueuePlan.
+        r"""Gets the last_execute_time of this QueuePlan.
 
         当前扩缩容计划最近一次执行的时间。
 
@@ -314,7 +314,7 @@ class QueuePlan:
 
     @last_execute_time.setter
     def last_execute_time(self, last_execute_time):
-        """Sets the last_execute_time of this QueuePlan.
+        r"""Sets the last_execute_time of this QueuePlan.
 
         当前扩缩容计划最近一次执行的时间。
 

@@ -23,7 +23,7 @@ class ShowScaleInPolicyRequest:
     }
 
     def __init__(self):
-        """ShowScaleInPolicyRequest
+        r"""ShowScaleInPolicyRequest
 
         The model defined in huaweicloud sdk
 

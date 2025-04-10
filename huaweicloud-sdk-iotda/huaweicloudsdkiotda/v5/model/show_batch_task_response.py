@@ -30,7 +30,7 @@ class ShowBatchTaskResponse(SdkResponse):
     }
 
     def __init__(self, batchtask=None, task_details=None, page=None):
-        """ShowBatchTaskResponse
+        r"""ShowBatchTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowBatchTaskResponse(SdkResponse):
 
     @property
     def batchtask(self):
-        """Gets the batchtask of this ShowBatchTaskResponse.
+        r"""Gets the batchtask of this ShowBatchTaskResponse.
 
         :return: The batchtask of this ShowBatchTaskResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Task`
@@ -67,7 +67,7 @@ class ShowBatchTaskResponse(SdkResponse):
 
     @batchtask.setter
     def batchtask(self, batchtask):
-        """Sets the batchtask of this ShowBatchTaskResponse.
+        r"""Sets the batchtask of this ShowBatchTaskResponse.
 
         :param batchtask: The batchtask of this ShowBatchTaskResponse.
         :type batchtask: :class:`huaweicloudsdkiotda.v5.Task`
@@ -76,7 +76,7 @@ class ShowBatchTaskResponse(SdkResponse):
 
     @property
     def task_details(self):
-        """Gets the task_details of this ShowBatchTaskResponse.
+        r"""Gets the task_details of this ShowBatchTaskResponse.
 
         子任务详情列表。
 
@@ -87,7 +87,7 @@ class ShowBatchTaskResponse(SdkResponse):
 
     @task_details.setter
     def task_details(self, task_details):
-        """Sets the task_details of this ShowBatchTaskResponse.
+        r"""Sets the task_details of this ShowBatchTaskResponse.
 
         子任务详情列表。
 
@@ -98,7 +98,7 @@ class ShowBatchTaskResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ShowBatchTaskResponse.
+        r"""Gets the page of this ShowBatchTaskResponse.
 
         :return: The page of this ShowBatchTaskResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Page`
@@ -107,7 +107,7 @@ class ShowBatchTaskResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowBatchTaskResponse.
+        r"""Sets the page of this ShowBatchTaskResponse.
 
         :param page: The page of this ShowBatchTaskResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.Page`

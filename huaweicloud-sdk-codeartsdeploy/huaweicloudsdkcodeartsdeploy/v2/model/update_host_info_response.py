@@ -28,7 +28,7 @@ class UpdateHostInfoResponse(SdkResponse):
     }
 
     def __init__(self, status=None, id=None):
-        """UpdateHostInfoResponse
+        r"""UpdateHostInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateHostInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateHostInfoResponse.
+        r"""Gets the status of this UpdateHostInfoResponse.
 
         请求成功失败状态
 
@@ -62,7 +62,7 @@ class UpdateHostInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateHostInfoResponse.
+        r"""Sets the status of this UpdateHostInfoResponse.
 
         请求成功失败状态
 
@@ -73,7 +73,7 @@ class UpdateHostInfoResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateHostInfoResponse.
+        r"""Gets the id of this UpdateHostInfoResponse.
 
         主机id
 
@@ -84,7 +84,7 @@ class UpdateHostInfoResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateHostInfoResponse.
+        r"""Sets the id of this UpdateHostInfoResponse.
 
         主机id
 

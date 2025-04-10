@@ -24,7 +24,7 @@ class ChangeBlockedIpResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeBlockedIpResponse
+        r"""ChangeBlockedIpResponse
 
         The model defined in huaweicloud sdk
 

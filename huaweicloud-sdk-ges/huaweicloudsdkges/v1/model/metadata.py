@@ -37,7 +37,7 @@ class Metadata:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, metadata_path=None, create_timestamp=None, last_update_timestamp=None):
-        """Metadata
+        r"""Metadata
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class Metadata:
 
     @property
     def id(self):
-        """Gets the id of this Metadata.
+        r"""Gets the id of this Metadata.
 
         元数据 ID。
 
@@ -91,7 +91,7 @@ class Metadata:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Metadata.
+        r"""Sets the id of this Metadata.
 
         元数据 ID。
 
@@ -102,7 +102,7 @@ class Metadata:
 
     @property
     def name(self):
-        """Gets the name of this Metadata.
+        r"""Gets the name of this Metadata.
 
         元数据名称。
 
@@ -113,7 +113,7 @@ class Metadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Metadata.
+        r"""Sets the name of this Metadata.
 
         元数据名称。
 
@@ -124,7 +124,7 @@ class Metadata:
 
     @property
     def description(self):
-        """Gets the description of this Metadata.
+        r"""Gets the description of this Metadata.
 
         元数据 描述。
 
@@ -135,7 +135,7 @@ class Metadata:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Metadata.
+        r"""Sets the description of this Metadata.
 
         元数据 描述。
 
@@ -146,7 +146,7 @@ class Metadata:
 
     @property
     def status(self):
-        """Gets the status of this Metadata.
+        r"""Gets the status of this Metadata.
 
         元数据是否可用。
 
@@ -157,7 +157,7 @@ class Metadata:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Metadata.
+        r"""Sets the status of this Metadata.
 
         元数据是否可用。
 
@@ -168,7 +168,7 @@ class Metadata:
 
     @property
     def metadata_path(self):
-        """Gets the metadata_path of this Metadata.
+        r"""Gets the metadata_path of this Metadata.
 
         元数据对应路径。
 
@@ -179,7 +179,7 @@ class Metadata:
 
     @metadata_path.setter
     def metadata_path(self, metadata_path):
-        """Sets the metadata_path of this Metadata.
+        r"""Sets the metadata_path of this Metadata.
 
         元数据对应路径。
 
@@ -190,7 +190,7 @@ class Metadata:
 
     @property
     def create_timestamp(self):
-        """Gets the create_timestamp of this Metadata.
+        r"""Gets the create_timestamp of this Metadata.
 
         元数据创建时间戳。
 
@@ -201,7 +201,7 @@ class Metadata:
 
     @create_timestamp.setter
     def create_timestamp(self, create_timestamp):
-        """Sets the create_timestamp of this Metadata.
+        r"""Sets the create_timestamp of this Metadata.
 
         元数据创建时间戳。
 
@@ -212,7 +212,7 @@ class Metadata:
 
     @property
     def last_update_timestamp(self):
-        """Gets the last_update_timestamp of this Metadata.
+        r"""Gets the last_update_timestamp of this Metadata.
 
         元数据最后更新时间戳。
 
@@ -223,7 +223,7 @@ class Metadata:
 
     @last_update_timestamp.setter
     def last_update_timestamp(self, last_update_timestamp):
-        """Sets the last_update_timestamp of this Metadata.
+        r"""Sets the last_update_timestamp of this Metadata.
 
         元数据最后更新时间戳。
 

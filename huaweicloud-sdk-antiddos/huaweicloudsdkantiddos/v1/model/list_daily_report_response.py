@@ -26,7 +26,7 @@ class ListDailyReportResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListDailyReportResponse
+        r"""ListDailyReportResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDailyReportResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListDailyReportResponse.
+        r"""Gets the data of this ListDailyReportResponse.
 
         24小时内的流量数据
 
@@ -55,7 +55,7 @@ class ListDailyReportResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListDailyReportResponse.
+        r"""Sets the data of this ListDailyReportResponse.
 
         24小时内的流量数据
 

@@ -28,7 +28,7 @@ class CreateColdVolumeResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None):
-        """CreateColdVolumeResponse
+        r"""CreateColdVolumeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateColdVolumeResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateColdVolumeResponse.
+        r"""Gets the job_id of this CreateColdVolumeResponse.
 
         任务ID。
 
@@ -62,7 +62,7 @@ class CreateColdVolumeResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateColdVolumeResponse.
+        r"""Sets the job_id of this CreateColdVolumeResponse.
 
         任务ID。
 
@@ -73,7 +73,7 @@ class CreateColdVolumeResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateColdVolumeResponse.
+        r"""Gets the order_id of this CreateColdVolumeResponse.
 
         订单ID，仅创建包年包月实例的冷数据存储时返回该参数
 
@@ -84,7 +84,7 @@ class CreateColdVolumeResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateColdVolumeResponse.
+        r"""Sets the order_id of this CreateColdVolumeResponse.
 
         订单ID，仅创建包年包月实例的冷数据存储时返回该参数
 

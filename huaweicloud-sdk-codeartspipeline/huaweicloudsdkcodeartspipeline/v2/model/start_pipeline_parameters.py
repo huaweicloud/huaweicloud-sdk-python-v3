@@ -25,7 +25,7 @@ class StartPipelineParameters:
     }
 
     def __init__(self, build_params=None):
-        """StartPipelineParameters
+        r"""StartPipelineParameters
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StartPipelineParameters:
 
     @property
     def build_params(self):
-        """Gets the build_params of this StartPipelineParameters.
+        r"""Gets the build_params of this StartPipelineParameters.
 
         启动流水线时的构建参数
 
@@ -54,7 +54,7 @@ class StartPipelineParameters:
 
     @build_params.setter
     def build_params(self, build_params):
-        """Sets the build_params of this StartPipelineParameters.
+        r"""Sets the build_params of this StartPipelineParameters.
 
         启动流水线时的构建参数
 

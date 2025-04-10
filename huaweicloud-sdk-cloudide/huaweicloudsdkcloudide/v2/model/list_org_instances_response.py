@@ -28,7 +28,7 @@ class ListOrgInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, status=None):
-        """ListOrgInstancesResponse
+        r"""ListOrgInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListOrgInstancesResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListOrgInstancesResponse.
+        r"""Gets the instances of this ListOrgInstancesResponse.
 
         :return: The instances of this ListOrgInstancesResponse.
         :rtype: :class:`huaweicloudsdkcloudide.v2.PageInstancesVO`
@@ -60,7 +60,7 @@ class ListOrgInstancesResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListOrgInstancesResponse.
+        r"""Sets the instances of this ListOrgInstancesResponse.
 
         :param instances: The instances of this ListOrgInstancesResponse.
         :type instances: :class:`huaweicloudsdkcloudide.v2.PageInstancesVO`
@@ -69,7 +69,7 @@ class ListOrgInstancesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListOrgInstancesResponse.
+        r"""Gets the status of this ListOrgInstancesResponse.
 
         状态
 
@@ -80,7 +80,7 @@ class ListOrgInstancesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListOrgInstancesResponse.
+        r"""Sets the status of this ListOrgInstancesResponse.
 
         状态
 

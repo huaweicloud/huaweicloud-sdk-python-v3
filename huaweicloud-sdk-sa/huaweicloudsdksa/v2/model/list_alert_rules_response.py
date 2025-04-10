@@ -30,7 +30,7 @@ class ListAlertRulesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, records=None, x_request_id=None):
-        """ListAlertRulesResponse
+        r"""ListAlertRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAlertRulesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAlertRulesResponse.
+        r"""Gets the count of this ListAlertRulesResponse.
 
         total count
 
@@ -69,7 +69,7 @@ class ListAlertRulesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAlertRulesResponse.
+        r"""Sets the count of this ListAlertRulesResponse.
 
         total count
 
@@ -80,7 +80,7 @@ class ListAlertRulesResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListAlertRulesResponse.
+        r"""Gets the records of this ListAlertRulesResponse.
 
         rules
 
@@ -91,7 +91,7 @@ class ListAlertRulesResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListAlertRulesResponse.
+        r"""Sets the records of this ListAlertRulesResponse.
 
         rules
 
@@ -102,7 +102,7 @@ class ListAlertRulesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListAlertRulesResponse.
+        r"""Gets the x_request_id of this ListAlertRulesResponse.
 
         :return: The x_request_id of this ListAlertRulesResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListAlertRulesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListAlertRulesResponse.
+        r"""Sets the x_request_id of this ListAlertRulesResponse.
 
         :param x_request_id: The x_request_id of this ListAlertRulesResponse.
         :type x_request_id: str

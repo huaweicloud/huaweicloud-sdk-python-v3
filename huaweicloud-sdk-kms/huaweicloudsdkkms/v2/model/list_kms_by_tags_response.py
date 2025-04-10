@@ -28,7 +28,7 @@ class ListKmsByTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListKmsByTagsResponse
+        r"""ListKmsByTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListKmsByTagsResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListKmsByTagsResponse.
+        r"""Gets the resources of this ListKmsByTagsResponse.
 
         资源实例列表，详情请参见resource字段数据结构说明。
 
@@ -62,7 +62,7 @@ class ListKmsByTagsResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListKmsByTagsResponse.
+        r"""Sets the resources of this ListKmsByTagsResponse.
 
         资源实例列表，详情请参见resource字段数据结构说明。
 
@@ -73,7 +73,7 @@ class ListKmsByTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListKmsByTagsResponse.
+        r"""Gets the total_count of this ListKmsByTagsResponse.
 
         总记录数。
 
@@ -84,7 +84,7 @@ class ListKmsByTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListKmsByTagsResponse.
+        r"""Sets the total_count of this ListKmsByTagsResponse.
 
         总记录数。
 

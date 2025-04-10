@@ -25,7 +25,7 @@ class PluginDTOExecutionInfo:
     }
 
     def __init__(self, inner_execution_info=None):
-        """PluginDTOExecutionInfo
+        r"""PluginDTOExecutionInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PluginDTOExecutionInfo:
 
     @property
     def inner_execution_info(self):
-        """Gets the inner_execution_info of this PluginDTOExecutionInfo.
+        r"""Gets the inner_execution_info of this PluginDTOExecutionInfo.
 
         执行信息
 
@@ -54,7 +54,7 @@ class PluginDTOExecutionInfo:
 
     @inner_execution_info.setter
     def inner_execution_info(self, inner_execution_info):
-        """Sets the inner_execution_info of this PluginDTOExecutionInfo.
+        r"""Sets the inner_execution_info of this PluginDTOExecutionInfo.
 
         执行信息
 

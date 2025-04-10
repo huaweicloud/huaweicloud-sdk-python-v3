@@ -28,7 +28,7 @@ class ListTracesResponse(SdkResponse):
     }
 
     def __init__(self, traces=None, meta_data=None):
-        """ListTracesResponse
+        r"""ListTracesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTracesResponse(SdkResponse):
 
     @property
     def traces(self):
-        """Gets the traces of this ListTracesResponse.
+        r"""Gets the traces of this ListTracesResponse.
 
         本次查询事件列表返回事件数组。
 
@@ -62,7 +62,7 @@ class ListTracesResponse(SdkResponse):
 
     @traces.setter
     def traces(self, traces):
-        """Sets the traces of this ListTracesResponse.
+        r"""Sets the traces of this ListTracesResponse.
 
         本次查询事件列表返回事件数组。
 
@@ -73,7 +73,7 @@ class ListTracesResponse(SdkResponse):
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ListTracesResponse.
+        r"""Gets the meta_data of this ListTracesResponse.
 
         :return: The meta_data of this ListTracesResponse.
         :rtype: :class:`huaweicloudsdkcts.v3.MetaData`
@@ -82,7 +82,7 @@ class ListTracesResponse(SdkResponse):
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ListTracesResponse.
+        r"""Sets the meta_data of this ListTracesResponse.
 
         :param meta_data: The meta_data of this ListTracesResponse.
         :type meta_data: :class:`huaweicloudsdkcts.v3.MetaData`

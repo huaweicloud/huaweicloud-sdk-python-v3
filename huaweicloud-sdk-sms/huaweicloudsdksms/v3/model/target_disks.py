@@ -35,7 +35,7 @@ class TargetDisks:
     }
 
     def __init__(self, device_use=None, disk_id=None, name=None, physical_volumes=None, size=None, used_size=None):
-        """TargetDisks
+        r"""TargetDisks
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class TargetDisks:
 
     @property
     def device_use(self):
-        """Gets the device_use of this TargetDisks.
+        r"""Gets the device_use of this TargetDisks.
 
         磁盘类型，普通磁盘，OS所在磁盘，BOOT所在磁盘 BOOT：BOOT设备 OS：系统设备 NORMAL:平常
 
@@ -85,7 +85,7 @@ class TargetDisks:
 
     @device_use.setter
     def device_use(self, device_use):
-        """Sets the device_use of this TargetDisks.
+        r"""Sets the device_use of this TargetDisks.
 
         磁盘类型，普通磁盘，OS所在磁盘，BOOT所在磁盘 BOOT：BOOT设备 OS：系统设备 NORMAL:平常
 
@@ -96,7 +96,7 @@ class TargetDisks:
 
     @property
     def disk_id(self):
-        """Gets the disk_id of this TargetDisks.
+        r"""Gets the disk_id of this TargetDisks.
 
         磁盘ID,自动创建虚拟机不用设置
 
@@ -107,7 +107,7 @@ class TargetDisks:
 
     @disk_id.setter
     def disk_id(self, disk_id):
-        """Sets the disk_id of this TargetDisks.
+        r"""Sets the disk_id of this TargetDisks.
 
         磁盘ID,自动创建虚拟机不用设置
 
@@ -118,7 +118,7 @@ class TargetDisks:
 
     @property
     def name(self):
-        """Gets the name of this TargetDisks.
+        r"""Gets the name of this TargetDisks.
 
         名称，根据磁盘顺序设置为disk X
 
@@ -129,7 +129,7 @@ class TargetDisks:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TargetDisks.
+        r"""Sets the name of this TargetDisks.
 
         名称，根据磁盘顺序设置为disk X
 
@@ -140,7 +140,7 @@ class TargetDisks:
 
     @property
     def physical_volumes(self):
-        """Gets the physical_volumes of this TargetDisks.
+        r"""Gets the physical_volumes of this TargetDisks.
 
         物理卷信息
 
@@ -151,7 +151,7 @@ class TargetDisks:
 
     @physical_volumes.setter
     def physical_volumes(self, physical_volumes):
-        """Sets the physical_volumes of this TargetDisks.
+        r"""Sets the physical_volumes of this TargetDisks.
 
         物理卷信息
 
@@ -162,7 +162,7 @@ class TargetDisks:
 
     @property
     def size(self):
-        """Gets the size of this TargetDisks.
+        r"""Gets the size of this TargetDisks.
 
         大小
 
@@ -173,7 +173,7 @@ class TargetDisks:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this TargetDisks.
+        r"""Sets the size of this TargetDisks.
 
         大小
 
@@ -184,7 +184,7 @@ class TargetDisks:
 
     @property
     def used_size(self):
-        """Gets the used_size of this TargetDisks.
+        r"""Gets the used_size of this TargetDisks.
 
         使用大小
 
@@ -195,7 +195,7 @@ class TargetDisks:
 
     @used_size.setter
     def used_size(self, used_size):
-        """Sets the used_size of this TargetDisks.
+        r"""Sets the used_size of this TargetDisks.
 
         使用大小
 

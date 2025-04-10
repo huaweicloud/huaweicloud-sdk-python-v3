@@ -28,7 +28,7 @@ class ListServersByTagResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListServersByTagResponse
+        r"""ListServersByTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListServersByTagResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListServersByTagResponse.
+        r"""Gets the resources of this ListServersByTagResponse.
 
         返回的云服务器列表。
 
@@ -62,7 +62,7 @@ class ListServersByTagResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListServersByTagResponse.
+        r"""Sets the resources of this ListServersByTagResponse.
 
         返回的云服务器列表。
 
@@ -73,7 +73,7 @@ class ListServersByTagResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListServersByTagResponse.
+        r"""Gets the total_count of this ListServersByTagResponse.
 
         总记录数。
 
@@ -84,7 +84,7 @@ class ListServersByTagResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListServersByTagResponse.
+        r"""Sets the total_count of this ListServersByTagResponse.
 
         总记录数。
 

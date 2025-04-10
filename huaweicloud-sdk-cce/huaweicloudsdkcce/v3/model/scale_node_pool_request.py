@@ -29,7 +29,7 @@ class ScaleNodePoolRequest:
     }
 
     def __init__(self, cluster_id=None, nodepool_id=None, body=None):
-        """ScaleNodePoolRequest
+        r"""ScaleNodePoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ScaleNodePoolRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ScaleNodePoolRequest.
+        r"""Gets the cluster_id of this ScaleNodePoolRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -66,7 +66,7 @@ class ScaleNodePoolRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ScaleNodePoolRequest.
+        r"""Sets the cluster_id of this ScaleNodePoolRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -77,7 +77,7 @@ class ScaleNodePoolRequest:
 
     @property
     def nodepool_id(self):
-        """Gets the nodepool_id of this ScaleNodePoolRequest.
+        r"""Gets the nodepool_id of this ScaleNodePoolRequest.
 
         节点池ID
 
@@ -88,7 +88,7 @@ class ScaleNodePoolRequest:
 
     @nodepool_id.setter
     def nodepool_id(self, nodepool_id):
-        """Sets the nodepool_id of this ScaleNodePoolRequest.
+        r"""Sets the nodepool_id of this ScaleNodePoolRequest.
 
         节点池ID
 
@@ -99,7 +99,7 @@ class ScaleNodePoolRequest:
 
     @property
     def body(self):
-        """Gets the body of this ScaleNodePoolRequest.
+        r"""Gets the body of this ScaleNodePoolRequest.
 
         :return: The body of this ScaleNodePoolRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.ScaleNodePoolRequestBody`
@@ -108,7 +108,7 @@ class ScaleNodePoolRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ScaleNodePoolRequest.
+        r"""Sets the body of this ScaleNodePoolRequest.
 
         :param body: The body of this ScaleNodePoolRequest.
         :type body: :class:`huaweicloudsdkcce.v3.ScaleNodePoolRequestBody`

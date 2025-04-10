@@ -29,7 +29,7 @@ class DeleteAuditAgentRequest:
     }
 
     def __init__(self, instance_id=None, agent_id=None, db_id=None):
-        """DeleteAuditAgentRequest
+        r"""DeleteAuditAgentRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteAuditAgentRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteAuditAgentRequest.
+        r"""Gets the instance_id of this DeleteAuditAgentRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -65,7 +65,7 @@ class DeleteAuditAgentRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteAuditAgentRequest.
+        r"""Sets the instance_id of this DeleteAuditAgentRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -76,7 +76,7 @@ class DeleteAuditAgentRequest:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this DeleteAuditAgentRequest.
+        r"""Gets the agent_id of this DeleteAuditAgentRequest.
 
         agent ID。可在查询数据库agent列表接口ID字段获取。
 
@@ -87,7 +87,7 @@ class DeleteAuditAgentRequest:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this DeleteAuditAgentRequest.
+        r"""Sets the agent_id of this DeleteAuditAgentRequest.
 
         agent ID。可在查询数据库agent列表接口ID字段获取。
 
@@ -98,7 +98,7 @@ class DeleteAuditAgentRequest:
 
     @property
     def db_id(self):
-        """Gets the db_id of this DeleteAuditAgentRequest.
+        r"""Gets the db_id of this DeleteAuditAgentRequest.
 
         数据库ID, 可在查询数据库列表接口ID字段获取。
 
@@ -109,7 +109,7 @@ class DeleteAuditAgentRequest:
 
     @db_id.setter
     def db_id(self, db_id):
-        """Sets the db_id of this DeleteAuditAgentRequest.
+        r"""Sets the db_id of this DeleteAuditAgentRequest.
 
         数据库ID, 可在查询数据库列表接口ID字段获取。
 

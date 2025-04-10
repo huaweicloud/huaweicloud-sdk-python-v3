@@ -28,7 +28,7 @@ class SignResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, signature=None):
-        """SignResponse
+        r"""SignResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SignResponse(SdkResponse):
 
     @property
     def key_id(self):
-        """Gets the key_id of this SignResponse.
+        r"""Gets the key_id of this SignResponse.
 
         密钥ID。
 
@@ -62,7 +62,7 @@ class SignResponse(SdkResponse):
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this SignResponse.
+        r"""Sets the key_id of this SignResponse.
 
         密钥ID。
 
@@ -73,7 +73,7 @@ class SignResponse(SdkResponse):
 
     @property
     def signature(self):
-        """Gets the signature of this SignResponse.
+        r"""Gets the signature of this SignResponse.
 
         签名值，使用base64编码。
 
@@ -84,7 +84,7 @@ class SignResponse(SdkResponse):
 
     @signature.setter
     def signature(self, signature):
-        """Sets the signature of this SignResponse.
+        r"""Sets the signature of this SignResponse.
 
         签名值，使用base64编码。
 

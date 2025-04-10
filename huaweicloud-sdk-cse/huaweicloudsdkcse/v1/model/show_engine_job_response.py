@@ -46,7 +46,7 @@ class ShowEngineJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None, engine_id=None, type=None, description=None, status=None, scheduling=None, create_user=None, start_time=None, end_time=None, context=None, tasks=None):
-        """ShowEngineJobResponse
+        r"""ShowEngineJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowEngineJobResponse.
+        r"""Gets the id of this ShowEngineJobResponse.
 
         任务ID
 
@@ -125,7 +125,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowEngineJobResponse.
+        r"""Sets the id of this ShowEngineJobResponse.
 
         任务ID
 
@@ -136,7 +136,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @property
     def engine_id(self):
-        """Gets the engine_id of this ShowEngineJobResponse.
+        r"""Gets the engine_id of this ShowEngineJobResponse.
 
         任务所属引擎ID
 
@@ -147,7 +147,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @engine_id.setter
     def engine_id(self, engine_id):
-        """Sets the engine_id of this ShowEngineJobResponse.
+        r"""Sets the engine_id of this ShowEngineJobResponse.
 
         任务所属引擎ID
 
@@ -158,7 +158,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowEngineJobResponse.
+        r"""Gets the type of this ShowEngineJobResponse.
 
         任务类型
 
@@ -169,7 +169,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowEngineJobResponse.
+        r"""Sets the type of this ShowEngineJobResponse.
 
         任务类型
 
@@ -180,7 +180,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowEngineJobResponse.
+        r"""Gets the description of this ShowEngineJobResponse.
 
         任务描述
 
@@ -191,7 +191,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowEngineJobResponse.
+        r"""Sets the description of this ShowEngineJobResponse.
 
         任务描述
 
@@ -202,7 +202,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowEngineJobResponse.
+        r"""Gets the status of this ShowEngineJobResponse.
 
         任务状态
 
@@ -213,7 +213,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowEngineJobResponse.
+        r"""Sets the status of this ShowEngineJobResponse.
 
         任务状态
 
@@ -224,7 +224,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @property
     def scheduling(self):
-        """Gets the scheduling of this ShowEngineJobResponse.
+        r"""Gets the scheduling of this ShowEngineJobResponse.
 
         任务是否正在执行，0表示不在执行，1表示执行中
 
@@ -235,7 +235,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @scheduling.setter
     def scheduling(self, scheduling):
-        """Sets the scheduling of this ShowEngineJobResponse.
+        r"""Sets the scheduling of this ShowEngineJobResponse.
 
         任务是否正在执行，0表示不在执行，1表示执行中
 
@@ -246,7 +246,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this ShowEngineJobResponse.
+        r"""Gets the create_user of this ShowEngineJobResponse.
 
         任务创建者
 
@@ -257,7 +257,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ShowEngineJobResponse.
+        r"""Sets the create_user of this ShowEngineJobResponse.
 
         任务创建者
 
@@ -268,7 +268,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowEngineJobResponse.
+        r"""Gets the start_time of this ShowEngineJobResponse.
 
         任务开始时间
 
@@ -279,7 +279,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowEngineJobResponse.
+        r"""Sets the start_time of this ShowEngineJobResponse.
 
         任务开始时间
 
@@ -290,7 +290,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowEngineJobResponse.
+        r"""Gets the end_time of this ShowEngineJobResponse.
 
         任务结束时间
 
@@ -301,7 +301,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowEngineJobResponse.
+        r"""Sets the end_time of this ShowEngineJobResponse.
 
         任务结束时间
 
@@ -312,7 +312,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @property
     def context(self):
-        """Gets the context of this ShowEngineJobResponse.
+        r"""Gets the context of this ShowEngineJobResponse.
 
         任务执行上下文
 
@@ -323,7 +323,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @context.setter
     def context(self, context):
-        """Sets the context of this ShowEngineJobResponse.
+        r"""Sets the context of this ShowEngineJobResponse.
 
         任务执行上下文
 
@@ -334,7 +334,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ShowEngineJobResponse.
+        r"""Gets the tasks of this ShowEngineJobResponse.
 
         任务包含的处理阶段
 
@@ -345,7 +345,7 @@ class ShowEngineJobResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ShowEngineJobResponse.
+        r"""Sets the tasks of this ShowEngineJobResponse.
 
         任务包含的处理阶段
 

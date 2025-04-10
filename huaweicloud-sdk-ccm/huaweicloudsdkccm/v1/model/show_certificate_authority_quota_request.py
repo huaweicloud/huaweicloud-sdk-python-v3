@@ -23,7 +23,7 @@ class ShowCertificateAuthorityQuotaRequest:
     }
 
     def __init__(self):
-        """ShowCertificateAuthorityQuotaRequest
+        r"""ShowCertificateAuthorityQuotaRequest
 
         The model defined in huaweicloud sdk
 

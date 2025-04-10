@@ -46,7 +46,7 @@ class ShowAppResponse(SdkResponse):
     }
 
     def __init__(self, app_name=None, app_id=None, state=None, scope=None, tenant_name=None, domain=None, create_time=None, authentication=None, callbacks=None, auto_record_mode=None, x_request_id=None):
-        """ShowAppResponse
+        r"""ShowAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this ShowAppResponse.
+        r"""Gets the app_name of this ShowAppResponse.
 
         app名称
 
@@ -125,7 +125,7 @@ class ShowAppResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ShowAppResponse.
+        r"""Sets the app_name of this ShowAppResponse.
 
         app名称
 
@@ -136,7 +136,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowAppResponse.
+        r"""Gets the app_id of this ShowAppResponse.
 
         应用id
 
@@ -147,7 +147,7 @@ class ShowAppResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowAppResponse.
+        r"""Sets the app_id of this ShowAppResponse.
 
         应用id
 
@@ -158,7 +158,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowAppResponse.
+        r"""Gets the state of this ShowAppResponse.
 
         :return: The state of this ShowAppResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppState`
@@ -167,7 +167,7 @@ class ShowAppResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowAppResponse.
+        r"""Sets the state of this ShowAppResponse.
 
         :param state: The state of this ShowAppResponse.
         :type state: :class:`huaweicloudsdkcloudrtc.v2.AppState`
@@ -176,7 +176,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def scope(self):
-        """Gets the scope of this ShowAppResponse.
+        r"""Gets the scope of this ShowAppResponse.
 
         RTC覆盖范围。  取值如下：    - DOMESTIC：国内范围。   - OVERSEA：海外范围。   - GLOBAL：全球范围。 
 
@@ -187,7 +187,7 @@ class ShowAppResponse(SdkResponse):
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this ShowAppResponse.
+        r"""Sets the scope of this ShowAppResponse.
 
         RTC覆盖范围。  取值如下：    - DOMESTIC：国内范围。   - OVERSEA：海外范围。   - GLOBAL：全球范围。 
 
@@ -198,7 +198,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def tenant_name(self):
-        """Gets the tenant_name of this ShowAppResponse.
+        r"""Gets the tenant_name of this ShowAppResponse.
 
         账号名
 
@@ -209,7 +209,7 @@ class ShowAppResponse(SdkResponse):
 
     @tenant_name.setter
     def tenant_name(self, tenant_name):
-        """Sets the tenant_name of this ShowAppResponse.
+        r"""Sets the tenant_name of this ShowAppResponse.
 
         账号名
 
@@ -220,7 +220,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this ShowAppResponse.
+        r"""Gets the domain of this ShowAppResponse.
 
         域名，App对应域名
 
@@ -231,7 +231,7 @@ class ShowAppResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ShowAppResponse.
+        r"""Sets the domain of this ShowAppResponse.
 
         域名，App对应域名
 
@@ -242,7 +242,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowAppResponse.
+        r"""Gets the create_time of this ShowAppResponse.
 
         创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -253,7 +253,7 @@ class ShowAppResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowAppResponse.
+        r"""Sets the create_time of this ShowAppResponse.
 
         创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -264,7 +264,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def authentication(self):
-        """Gets the authentication of this ShowAppResponse.
+        r"""Gets the authentication of this ShowAppResponse.
 
         :return: The authentication of this ShowAppResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
@@ -273,7 +273,7 @@ class ShowAppResponse(SdkResponse):
 
     @authentication.setter
     def authentication(self, authentication):
-        """Sets the authentication of this ShowAppResponse.
+        r"""Sets the authentication of this ShowAppResponse.
 
         :param authentication: The authentication of this ShowAppResponse.
         :type authentication: :class:`huaweicloudsdkcloudrtc.v2.AppAuth`
@@ -282,7 +282,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def callbacks(self):
-        """Gets the callbacks of this ShowAppResponse.
+        r"""Gets the callbacks of this ShowAppResponse.
 
         :return: The callbacks of this ShowAppResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppCallbacks`
@@ -291,7 +291,7 @@ class ShowAppResponse(SdkResponse):
 
     @callbacks.setter
     def callbacks(self, callbacks):
-        """Sets the callbacks of this ShowAppResponse.
+        r"""Sets the callbacks of this ShowAppResponse.
 
         :param callbacks: The callbacks of this ShowAppResponse.
         :type callbacks: :class:`huaweicloudsdkcloudrtc.v2.AppCallbacks`
@@ -300,7 +300,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def auto_record_mode(self):
-        """Gets the auto_record_mode of this ShowAppResponse.
+        r"""Gets the auto_record_mode of this ShowAppResponse.
 
         :return: The auto_record_mode of this ShowAppResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
@@ -309,7 +309,7 @@ class ShowAppResponse(SdkResponse):
 
     @auto_record_mode.setter
     def auto_record_mode(self, auto_record_mode):
-        """Sets the auto_record_mode of this ShowAppResponse.
+        r"""Sets the auto_record_mode of this ShowAppResponse.
 
         :param auto_record_mode: The auto_record_mode of this ShowAppResponse.
         :type auto_record_mode: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
@@ -318,7 +318,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowAppResponse.
+        r"""Gets the x_request_id of this ShowAppResponse.
 
         :return: The x_request_id of this ShowAppResponse.
         :rtype: str
@@ -327,7 +327,7 @@ class ShowAppResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowAppResponse.
+        r"""Sets the x_request_id of this ShowAppResponse.
 
         :param x_request_id: The x_request_id of this ShowAppResponse.
         :type x_request_id: str

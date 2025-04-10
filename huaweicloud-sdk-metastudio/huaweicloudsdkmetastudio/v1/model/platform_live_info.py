@@ -27,7 +27,7 @@ class PlatformLiveInfo:
     }
 
     def __init__(self, platform_id=None, live_id=None):
-        """PlatformLiveInfo
+        r"""PlatformLiveInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PlatformLiveInfo:
 
     @property
     def platform_id(self):
-        """Gets the platform_id of this PlatformLiveInfo.
+        r"""Gets the platform_id of this PlatformLiveInfo.
 
         直播平台ID。
 
@@ -59,7 +59,7 @@ class PlatformLiveInfo:
 
     @platform_id.setter
     def platform_id(self, platform_id):
-        """Sets the platform_id of this PlatformLiveInfo.
+        r"""Sets the platform_id of this PlatformLiveInfo.
 
         直播平台ID。
 
@@ -70,7 +70,7 @@ class PlatformLiveInfo:
 
     @property
     def live_id(self):
-        """Gets the live_id of this PlatformLiveInfo.
+        r"""Gets the live_id of this PlatformLiveInfo.
 
         直播ID。如果配置，则段落切换回调中会携带该信息。只能包含英文、数字、-、_。 美团对应liveId
 
@@ -81,7 +81,7 @@ class PlatformLiveInfo:
 
     @live_id.setter
     def live_id(self, live_id):
-        """Sets the live_id of this PlatformLiveInfo.
+        r"""Sets the live_id of this PlatformLiveInfo.
 
         直播ID。如果配置，则段落切换回调中会携带该信息。只能包含英文、数字、-、_。 美团对应liveId
 

@@ -25,7 +25,7 @@ class CheckHealthRequest:
     }
 
     def __init__(self, body=None):
-        """CheckHealthRequest
+        r"""CheckHealthRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckHealthRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckHealthRequest.
+        r"""Gets the body of this CheckHealthRequest.
 
         :return: The body of this CheckHealthRequest.
         :rtype: :class:`huaweicloudsdkkvs.v1.CheckHealthRequestBody`
@@ -52,7 +52,7 @@ class CheckHealthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckHealthRequest.
+        r"""Sets the body of this CheckHealthRequest.
 
         :param body: The body of this CheckHealthRequest.
         :type body: :class:`huaweicloudsdkkvs.v1.CheckHealthRequestBody`

@@ -55,7 +55,7 @@ class EipResource:
     }
 
     def __init__(self, id=None, public_ip=None, status=None, public_ipv6=None, enterprise_project_id=None, device_id=None, device_name=None, device_owner=None, associate_instance_type=None, fw_instance_name=None, fw_instance_id=None, fw_enterprise_project_id=None, object_id=None, tags=None, domain_id=None, fw_domain_id=None):
-        """EipResource
+        r"""EipResource
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class EipResource:
 
     @property
     def id(self):
-        """Gets the id of this EipResource.
+        r"""Gets the id of this EipResource.
 
         弹性公网ID
 
@@ -159,7 +159,7 @@ class EipResource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EipResource.
+        r"""Sets the id of this EipResource.
 
         弹性公网ID
 
@@ -170,7 +170,7 @@ class EipResource:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this EipResource.
+        r"""Gets the public_ip of this EipResource.
 
         弹性公网IP
 
@@ -181,7 +181,7 @@ class EipResource:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this EipResource.
+        r"""Sets the public_ip of this EipResource.
 
         弹性公网IP
 
@@ -192,7 +192,7 @@ class EipResource:
 
     @property
     def status(self):
-        """Gets the status of this EipResource.
+        r"""Gets the status of this EipResource.
 
         EIP防护状态，0表示防护中，1表示未防护
 
@@ -203,7 +203,7 @@ class EipResource:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EipResource.
+        r"""Sets the status of this EipResource.
 
         EIP防护状态，0表示防护中，1表示未防护
 
@@ -214,7 +214,7 @@ class EipResource:
 
     @property
     def public_ipv6(self):
-        """Gets the public_ipv6 of this EipResource.
+        r"""Gets the public_ipv6 of this EipResource.
 
         弹性公网IP,IPV6类型
 
@@ -225,7 +225,7 @@ class EipResource:
 
     @public_ipv6.setter
     def public_ipv6(self, public_ipv6):
-        """Sets the public_ipv6 of this EipResource.
+        r"""Sets the public_ipv6 of this EipResource.
 
         弹性公网IP,IPV6类型
 
@@ -236,7 +236,7 @@ class EipResource:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this EipResource.
+        r"""Gets the enterprise_project_id of this EipResource.
 
         Eip所在账户企业项目id
 
@@ -247,7 +247,7 @@ class EipResource:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this EipResource.
+        r"""Sets the enterprise_project_id of this EipResource.
 
         Eip所在账户企业项目id
 
@@ -258,7 +258,7 @@ class EipResource:
 
     @property
     def device_id(self):
-        """Gets the device_id of this EipResource.
+        r"""Gets the device_id of this EipResource.
 
         EIP绑定设备（如ecs，nat）id
 
@@ -269,7 +269,7 @@ class EipResource:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this EipResource.
+        r"""Sets the device_id of this EipResource.
 
         EIP绑定设备（如ecs，nat）id
 
@@ -280,7 +280,7 @@ class EipResource:
 
     @property
     def device_name(self):
-        """Gets the device_name of this EipResource.
+        r"""Gets the device_name of this EipResource.
 
         EIP绑定设备（如ecs，nat）名称
 
@@ -291,7 +291,7 @@ class EipResource:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this EipResource.
+        r"""Sets the device_name of this EipResource.
 
         EIP绑定设备（如ecs，nat）名称
 
@@ -302,7 +302,7 @@ class EipResource:
 
     @property
     def device_owner(self):
-        """Gets the device_owner of this EipResource.
+        r"""Gets the device_owner of this EipResource.
 
         EIP绑定设备（如ecs，nat）拥有者
 
@@ -313,7 +313,7 @@ class EipResource:
 
     @device_owner.setter
     def device_owner(self, device_owner):
-        """Sets the device_owner of this EipResource.
+        r"""Sets the device_owner of this EipResource.
 
         EIP绑定设备（如ecs，nat）拥有者
 
@@ -324,7 +324,7 @@ class EipResource:
 
     @property
     def associate_instance_type(self):
-        """Gets the associate_instance_type of this EipResource.
+        r"""Gets the associate_instance_type of this EipResource.
 
         关联实例类型，包括：NATGW，ELB，PORT等。
 
@@ -335,7 +335,7 @@ class EipResource:
 
     @associate_instance_type.setter
     def associate_instance_type(self, associate_instance_type):
-        """Sets the associate_instance_type of this EipResource.
+        r"""Sets the associate_instance_type of this EipResource.
 
         关联实例类型，包括：NATGW，ELB，PORT等。
 
@@ -346,7 +346,7 @@ class EipResource:
 
     @property
     def fw_instance_name(self):
-        """Gets the fw_instance_name of this EipResource.
+        r"""Gets the fw_instance_name of this EipResource.
 
         防火墙名称
 
@@ -357,7 +357,7 @@ class EipResource:
 
     @fw_instance_name.setter
     def fw_instance_name(self, fw_instance_name):
-        """Sets the fw_instance_name of this EipResource.
+        r"""Sets the fw_instance_name of this EipResource.
 
         防火墙名称
 
@@ -368,7 +368,7 @@ class EipResource:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this EipResource.
+        r"""Gets the fw_instance_id of this EipResource.
 
         防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
 
@@ -379,7 +379,7 @@ class EipResource:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this EipResource.
+        r"""Sets the fw_instance_id of this EipResource.
 
         防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
 
@@ -390,7 +390,7 @@ class EipResource:
 
     @property
     def fw_enterprise_project_id(self):
-        """Gets the fw_enterprise_project_id of this EipResource.
+        r"""Gets the fw_enterprise_project_id of this EipResource.
 
         Eip绑定的防火墙企业项目id
 
@@ -401,7 +401,7 @@ class EipResource:
 
     @fw_enterprise_project_id.setter
     def fw_enterprise_project_id(self, fw_enterprise_project_id):
-        """Sets the fw_enterprise_project_id of this EipResource.
+        r"""Sets the fw_enterprise_project_id of this EipResource.
 
         Eip绑定的防火墙企业项目id
 
@@ -412,7 +412,7 @@ class EipResource:
 
     @property
     def object_id(self):
-        """Gets the object_id of this EipResource.
+        r"""Gets the object_id of this EipResource.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
@@ -423,7 +423,7 @@ class EipResource:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this EipResource.
+        r"""Sets the object_id of this EipResource.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
@@ -434,7 +434,7 @@ class EipResource:
 
     @property
     def tags(self):
-        """Gets the tags of this EipResource.
+        r"""Gets the tags of this EipResource.
 
         标签列表
 
@@ -445,7 +445,7 @@ class EipResource:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this EipResource.
+        r"""Sets the tags of this EipResource.
 
         标签列表
 
@@ -456,7 +456,7 @@ class EipResource:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this EipResource.
+        r"""Gets the domain_id of this EipResource.
 
         EIP所属用户id，可通过[获取账号、IAM用户、项目、用户组、区域、委托的名称和ID](cfw_02_0030.xml)获取。
 
@@ -467,7 +467,7 @@ class EipResource:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this EipResource.
+        r"""Sets the domain_id of this EipResource.
 
         EIP所属用户id，可通过[获取账号、IAM用户、项目、用户组、区域、委托的名称和ID](cfw_02_0030.xml)获取。
 
@@ -478,7 +478,7 @@ class EipResource:
 
     @property
     def fw_domain_id(self):
-        """Gets the fw_domain_id of this EipResource.
+        r"""Gets the fw_domain_id of this EipResource.
 
         防火墙所属用户，可通过[获取账号、IAM用户、项目、用户组、区域、委托的名称和ID](cfw_02_0030.xml)获取。
 
@@ -489,7 +489,7 @@ class EipResource:
 
     @fw_domain_id.setter
     def fw_domain_id(self, fw_domain_id):
-        """Sets the fw_domain_id of this EipResource.
+        r"""Sets the fw_domain_id of this EipResource.
 
         防火墙所属用户，可通过[获取账号、IAM用户、项目、用户组、区域、委托的名称和ID](cfw_02_0030.xml)获取。
 

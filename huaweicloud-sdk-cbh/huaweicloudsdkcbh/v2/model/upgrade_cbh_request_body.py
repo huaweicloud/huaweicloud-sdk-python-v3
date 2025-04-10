@@ -29,7 +29,7 @@ class UpgradeCbhRequestBody:
     }
 
     def __init__(self, server_id=None, upgrade_time=None, cancel=None):
-        """UpgradeCbhRequestBody
+        r"""UpgradeCbhRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpgradeCbhRequestBody:
 
     @property
     def server_id(self):
-        """Gets the server_id of this UpgradeCbhRequestBody.
+        r"""Gets the server_id of this UpgradeCbhRequestBody.
 
         实例id
 
@@ -66,7 +66,7 @@ class UpgradeCbhRequestBody:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this UpgradeCbhRequestBody.
+        r"""Sets the server_id of this UpgradeCbhRequestBody.
 
         实例id
 
@@ -77,7 +77,7 @@ class UpgradeCbhRequestBody:
 
     @property
     def upgrade_time(self):
-        """Gets the upgrade_time of this UpgradeCbhRequestBody.
+        r"""Gets the upgrade_time of this UpgradeCbhRequestBody.
 
         定时升级的时间，需要比当前时间大24小时
 
@@ -88,7 +88,7 @@ class UpgradeCbhRequestBody:
 
     @upgrade_time.setter
     def upgrade_time(self, upgrade_time):
-        """Sets the upgrade_time of this UpgradeCbhRequestBody.
+        r"""Sets the upgrade_time of this UpgradeCbhRequestBody.
 
         定时升级的时间，需要比当前时间大24小时
 
@@ -99,7 +99,7 @@ class UpgradeCbhRequestBody:
 
     @property
     def cancel(self):
-        """Gets the cancel of this UpgradeCbhRequestBody.
+        r"""Gets the cancel of this UpgradeCbhRequestBody.
 
         是否取消升级定时任务，已开始任务不可取消。 - true：取消 - false：无影响
 
@@ -110,7 +110,7 @@ class UpgradeCbhRequestBody:
 
     @cancel.setter
     def cancel(self, cancel):
-        """Sets the cancel of this UpgradeCbhRequestBody.
+        r"""Sets the cancel of this UpgradeCbhRequestBody.
 
         是否取消升级定时任务，已开始任务不可取消。 - true：取消 - false：无影响
 

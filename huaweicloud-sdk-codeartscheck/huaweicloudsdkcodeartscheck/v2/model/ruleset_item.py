@@ -45,7 +45,7 @@ class RulesetItem:
     }
 
     def __init__(self, template_id=None, language=None, template_name=None, creator_id=None, creator_name=None, template_create_time=None, is_used=None, rule_ids=None, is_default=None, is_devcloud_project_default=None, is_default_template=None):
-        """RulesetItem
+        r"""RulesetItem
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class RulesetItem:
 
     @property
     def template_id(self):
-        """Gets the template_id of this RulesetItem.
+        r"""Gets the template_id of this RulesetItem.
 
         规则集id
 
@@ -124,7 +124,7 @@ class RulesetItem:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this RulesetItem.
+        r"""Sets the template_id of this RulesetItem.
 
         规则集id
 
@@ -135,7 +135,7 @@ class RulesetItem:
 
     @property
     def language(self):
-        """Gets the language of this RulesetItem.
+        r"""Gets the language of this RulesetItem.
 
         规则集语言
 
@@ -146,7 +146,7 @@ class RulesetItem:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this RulesetItem.
+        r"""Sets the language of this RulesetItem.
 
         规则集语言
 
@@ -157,7 +157,7 @@ class RulesetItem:
 
     @property
     def template_name(self):
-        """Gets the template_name of this RulesetItem.
+        r"""Gets the template_name of this RulesetItem.
 
         规则集名称
 
@@ -168,7 +168,7 @@ class RulesetItem:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this RulesetItem.
+        r"""Sets the template_name of this RulesetItem.
 
         规则集名称
 
@@ -179,7 +179,7 @@ class RulesetItem:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this RulesetItem.
+        r"""Gets the creator_id of this RulesetItem.
 
         创建人ID
 
@@ -190,7 +190,7 @@ class RulesetItem:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this RulesetItem.
+        r"""Sets the creator_id of this RulesetItem.
 
         创建人ID
 
@@ -201,7 +201,7 @@ class RulesetItem:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this RulesetItem.
+        r"""Gets the creator_name of this RulesetItem.
 
         创建人名称
 
@@ -212,7 +212,7 @@ class RulesetItem:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this RulesetItem.
+        r"""Sets the creator_name of this RulesetItem.
 
         创建人名称
 
@@ -223,7 +223,7 @@ class RulesetItem:
 
     @property
     def template_create_time(self):
-        """Gets the template_create_time of this RulesetItem.
+        r"""Gets the template_create_time of this RulesetItem.
 
         创建人时间
 
@@ -234,7 +234,7 @@ class RulesetItem:
 
     @template_create_time.setter
     def template_create_time(self, template_create_time):
-        """Sets the template_create_time of this RulesetItem.
+        r"""Sets the template_create_time of this RulesetItem.
 
         创建人时间
 
@@ -245,7 +245,7 @@ class RulesetItem:
 
     @property
     def is_used(self):
-        """Gets the is_used of this RulesetItem.
+        r"""Gets the is_used of this RulesetItem.
 
         使用状态1使用中，0空闲中
 
@@ -256,7 +256,7 @@ class RulesetItem:
 
     @is_used.setter
     def is_used(self, is_used):
-        """Sets the is_used of this RulesetItem.
+        r"""Sets the is_used of this RulesetItem.
 
         使用状态1使用中，0空闲中
 
@@ -267,7 +267,7 @@ class RulesetItem:
 
     @property
     def rule_ids(self):
-        """Gets the rule_ids of this RulesetItem.
+        r"""Gets the rule_ids of this RulesetItem.
 
         规则集包含的规则id
 
@@ -278,7 +278,7 @@ class RulesetItem:
 
     @rule_ids.setter
     def rule_ids(self, rule_ids):
-        """Sets the rule_ids of this RulesetItem.
+        r"""Sets the rule_ids of this RulesetItem.
 
         规则集包含的规则id
 
@@ -289,7 +289,7 @@ class RulesetItem:
 
     @property
     def is_default(self):
-        """Gets the is_default of this RulesetItem.
+        r"""Gets the is_default of this RulesetItem.
 
         是否该语言默认规则集，0不是，1是
 
@@ -300,7 +300,7 @@ class RulesetItem:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this RulesetItem.
+        r"""Sets the is_default of this RulesetItem.
 
         是否该语言默认规则集，0不是，1是
 
@@ -311,7 +311,7 @@ class RulesetItem:
 
     @property
     def is_devcloud_project_default(self):
-        """Gets the is_devcloud_project_default of this RulesetItem.
+        r"""Gets the is_devcloud_project_default of this RulesetItem.
 
         是否是项目下语言默认规则集，0不是，1是
 
@@ -322,7 +322,7 @@ class RulesetItem:
 
     @is_devcloud_project_default.setter
     def is_devcloud_project_default(self, is_devcloud_project_default):
-        """Sets the is_devcloud_project_default of this RulesetItem.
+        r"""Sets the is_devcloud_project_default of this RulesetItem.
 
         是否是项目下语言默认规则集，0不是，1是
 
@@ -333,7 +333,7 @@ class RulesetItem:
 
     @property
     def is_default_template(self):
-        """Gets the is_default_template of this RulesetItem.
+        r"""Gets the is_default_template of this RulesetItem.
 
         是否是系统规则集，0不是，1是
 
@@ -344,7 +344,7 @@ class RulesetItem:
 
     @is_default_template.setter
     def is_default_template(self, is_default_template):
-        """Sets the is_default_template of this RulesetItem.
+        r"""Sets the is_default_template of this RulesetItem.
 
         是否是系统规则集，0不是，1是
 

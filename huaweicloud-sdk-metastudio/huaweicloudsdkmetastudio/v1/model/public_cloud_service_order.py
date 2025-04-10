@@ -35,7 +35,7 @@ class PublicCloudServiceOrder:
     }
 
     def __init__(self, is_auto_pay=None, period_type=None, period_num=None, is_auto_renew=None, subscription_num=None, resource_spec_code=None):
-        """PublicCloudServiceOrder
+        r"""PublicCloudServiceOrder
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class PublicCloudServiceOrder:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this PublicCloudServiceOrder.
+        r"""Gets the is_auto_pay of this PublicCloudServiceOrder.
 
         是否自动支付：下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付；  1：是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。 0：否（需要客户手动去支付，客户可以选择折扣和优惠券）。 默认值为“0”。
 
@@ -85,7 +85,7 @@ class PublicCloudServiceOrder:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this PublicCloudServiceOrder.
+        r"""Sets the is_auto_pay of this PublicCloudServiceOrder.
 
         是否自动支付：下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付；  1：是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。 0：否（需要客户手动去支付，客户可以选择折扣和优惠券）。 默认值为“0”。
 
@@ -96,7 +96,7 @@ class PublicCloudServiceOrder:
 
     @property
     def period_type(self):
-        """Gets the period_type of this PublicCloudServiceOrder.
+        r"""Gets the period_type of this PublicCloudServiceOrder.
 
         订购周期类型： 2：月； 3：年； 6：一次性（chargingMode=1 一次性计费场景使用）
 
@@ -107,7 +107,7 @@ class PublicCloudServiceOrder:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this PublicCloudServiceOrder.
+        r"""Sets the period_type of this PublicCloudServiceOrder.
 
         订购周期类型： 2：月； 3：年； 6：一次性（chargingMode=1 一次性计费场景使用）
 
@@ -118,7 +118,7 @@ class PublicCloudServiceOrder:
 
     @property
     def period_num(self):
-        """Gets the period_num of this PublicCloudServiceOrder.
+        r"""Gets the period_num of this PublicCloudServiceOrder.
 
         订购周期数 取值大于0；小于等于0会报错
 
@@ -129,7 +129,7 @@ class PublicCloudServiceOrder:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this PublicCloudServiceOrder.
+        r"""Sets the period_num of this PublicCloudServiceOrder.
 
         订购周期数 取值大于0；小于等于0会报错
 
@@ -140,7 +140,7 @@ class PublicCloudServiceOrder:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this PublicCloudServiceOrder.
+        r"""Gets the is_auto_renew of this PublicCloudServiceOrder.
 
         是否自动续订，为空时表示不自动续订； 1：自动续订 0：不自动续订（默认）
 
@@ -151,7 +151,7 @@ class PublicCloudServiceOrder:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this PublicCloudServiceOrder.
+        r"""Sets the is_auto_renew of this PublicCloudServiceOrder.
 
         是否自动续订，为空时表示不自动续订； 1：自动续订 0：不自动续订（默认）
 
@@ -162,7 +162,7 @@ class PublicCloudServiceOrder:
 
     @property
     def subscription_num(self):
-        """Gets the subscription_num of this PublicCloudServiceOrder.
+        r"""Gets the subscription_num of this PublicCloudServiceOrder.
 
         订购数量； 取值大于0
 
@@ -173,7 +173,7 @@ class PublicCloudServiceOrder:
 
     @subscription_num.setter
     def subscription_num(self, subscription_num):
-        """Sets the subscription_num of this PublicCloudServiceOrder.
+        r"""Sets the subscription_num of this PublicCloudServiceOrder.
 
         订购数量； 取值大于0
 
@@ -184,7 +184,7 @@ class PublicCloudServiceOrder:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this PublicCloudServiceOrder.
+        r"""Gets the resource_spec_code of this PublicCloudServiceOrder.
 
         用户购买云服务产品的资源规格，详见[资源类型](metastudio_02_0042.xml)。
 
@@ -195,7 +195,7 @@ class PublicCloudServiceOrder:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this PublicCloudServiceOrder.
+        r"""Sets the resource_spec_code of this PublicCloudServiceOrder.
 
         用户购买云服务产品的资源规格，详见[资源类型](metastudio_02_0042.xml)。
 

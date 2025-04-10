@@ -26,7 +26,7 @@ class UpdatePolicyGroupResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """UpdatePolicyGroupResponse
+        r"""UpdatePolicyGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdatePolicyGroupResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdatePolicyGroupResponse.
+        r"""Gets the id of this UpdatePolicyGroupResponse.
 
         被修改策略主键
 
@@ -55,7 +55,7 @@ class UpdatePolicyGroupResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdatePolicyGroupResponse.
+        r"""Sets the id of this UpdatePolicyGroupResponse.
 
         被修改策略主键
 

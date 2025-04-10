@@ -31,7 +31,7 @@ class AreaIdDef:
     }
 
     def __init__(self):
-        """AreaIdDef
+        r"""AreaIdDef
 
         The model defined in huaweicloud sdk
 

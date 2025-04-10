@@ -29,7 +29,7 @@ class UpdateDataProgressRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """UpdateDataProgressRequest
+        r"""UpdateDataProgressRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateDataProgressRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateDataProgressRequest.
+        r"""Gets the job_id of this UpdateDataProgressRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class UpdateDataProgressRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateDataProgressRequest.
+        r"""Sets the job_id of this UpdateDataProgressRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class UpdateDataProgressRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateDataProgressRequest.
+        r"""Gets the x_language of this UpdateDataProgressRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class UpdateDataProgressRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateDataProgressRequest.
+        r"""Sets the x_language of this UpdateDataProgressRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class UpdateDataProgressRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDataProgressRequest.
+        r"""Gets the body of this UpdateDataProgressRequest.
 
         :return: The body of this UpdateDataProgressRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.DataProcessReq`
@@ -109,7 +109,7 @@ class UpdateDataProgressRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDataProgressRequest.
+        r"""Sets the body of this UpdateDataProgressRequest.
 
         :param body: The body of this UpdateDataProgressRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.DataProcessReq`

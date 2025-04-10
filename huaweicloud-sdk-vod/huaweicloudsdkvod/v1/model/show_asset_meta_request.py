@@ -45,7 +45,7 @@ class ShowAssetMetaRequest:
     }
 
     def __init__(self, asset_id=None, status=None, transcode_status=None, asset_status=None, start_time=None, end_time=None, category_id=None, tags=None, query_string=None, page=None, size=None):
-        """ShowAssetMetaRequest
+        r"""ShowAssetMetaRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ShowAssetMetaRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ShowAssetMetaRequest.
+        r"""Gets the asset_id of this ShowAssetMetaRequest.
 
         媒资id，最多同时查询10个媒资。
 
@@ -124,7 +124,7 @@ class ShowAssetMetaRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ShowAssetMetaRequest.
+        r"""Sets the asset_id of this ShowAssetMetaRequest.
 
         媒资id，最多同时查询10个媒资。
 
@@ -135,7 +135,7 @@ class ShowAssetMetaRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowAssetMetaRequest.
+        r"""Gets the status of this ShowAssetMetaRequest.
 
         媒资状态。  取值如下： - UNCREATED：未创建（媒资ID不存在 ） - DELETED：已删除 - CANCELLED：上传取消 - SERVER_ERROR：上传失败（点播服务端故障） - UPLOAD_FAILED：上传失败（向OBS上传失败） - CREATING：创建中 - PUBLISHED：已发布 - TRANSCODING：待发布（转码中） - TRANSCODE_FAILED：待发布（转码失败） - TRANSCODE_SUCCEED：待发布（转码成功） - CREATED：待发布（未转码）
 
@@ -146,7 +146,7 @@ class ShowAssetMetaRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAssetMetaRequest.
+        r"""Sets the status of this ShowAssetMetaRequest.
 
         媒资状态。  取值如下： - UNCREATED：未创建（媒资ID不存在 ） - DELETED：已删除 - CANCELLED：上传取消 - SERVER_ERROR：上传失败（点播服务端故障） - UPLOAD_FAILED：上传失败（向OBS上传失败） - CREATING：创建中 - PUBLISHED：已发布 - TRANSCODING：待发布（转码中） - TRANSCODE_FAILED：待发布（转码失败） - TRANSCODE_SUCCEED：待发布（转码成功） - CREATED：待发布（未转码）
 
@@ -157,7 +157,7 @@ class ShowAssetMetaRequest:
 
     @property
     def transcode_status(self):
-        """Gets the transcode_status of this ShowAssetMetaRequest.
+        r"""Gets the transcode_status of this ShowAssetMetaRequest.
 
         转码状态  取值如下： - TRANSCODING：转码中 - TRANSCODE_FAILED：转码失败 - TRANSCODE_SUCCEED：转码成功 - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：等待转码
 
@@ -168,7 +168,7 @@ class ShowAssetMetaRequest:
 
     @transcode_status.setter
     def transcode_status(self, transcode_status):
-        """Sets the transcode_status of this ShowAssetMetaRequest.
+        r"""Sets the transcode_status of this ShowAssetMetaRequest.
 
         转码状态  取值如下： - TRANSCODING：转码中 - TRANSCODE_FAILED：转码失败 - TRANSCODE_SUCCEED：转码成功 - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：等待转码
 
@@ -179,7 +179,7 @@ class ShowAssetMetaRequest:
 
     @property
     def asset_status(self):
-        """Gets the asset_status of this ShowAssetMetaRequest.
+        r"""Gets the asset_status of this ShowAssetMetaRequest.
 
         媒资状态。  取值如下： - PUBLISHED：已发布 - CREATED：未发布
 
@@ -190,7 +190,7 @@ class ShowAssetMetaRequest:
 
     @asset_status.setter
     def asset_status(self, asset_status):
-        """Sets the asset_status of this ShowAssetMetaRequest.
+        r"""Sets the asset_status of this ShowAssetMetaRequest.
 
         媒资状态。  取值如下： - PUBLISHED：已发布 - CREATED：未发布
 
@@ -201,7 +201,7 @@ class ShowAssetMetaRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowAssetMetaRequest.
+        r"""Gets the start_time of this ShowAssetMetaRequest.
 
         起始时间，查询指定“**asset_id**”时，该参数无效。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
@@ -212,7 +212,7 @@ class ShowAssetMetaRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowAssetMetaRequest.
+        r"""Sets the start_time of this ShowAssetMetaRequest.
 
         起始时间，查询指定“**asset_id**”时，该参数无效。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
@@ -223,7 +223,7 @@ class ShowAssetMetaRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowAssetMetaRequest.
+        r"""Gets the end_time of this ShowAssetMetaRequest.
 
         结束时间，查询指定“**asset_id**”时，该参数无效。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
@@ -234,7 +234,7 @@ class ShowAssetMetaRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowAssetMetaRequest.
+        r"""Sets the end_time of this ShowAssetMetaRequest.
 
         结束时间，查询指定“**asset_id**”时，该参数无效。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
@@ -245,7 +245,7 @@ class ShowAssetMetaRequest:
 
     @property
     def category_id(self):
-        """Gets the category_id of this ShowAssetMetaRequest.
+        r"""Gets the category_id of this ShowAssetMetaRequest.
 
         分类ID。
 
@@ -256,7 +256,7 @@ class ShowAssetMetaRequest:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this ShowAssetMetaRequest.
+        r"""Sets the category_id of this ShowAssetMetaRequest.
 
         分类ID。
 
@@ -267,7 +267,7 @@ class ShowAssetMetaRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ShowAssetMetaRequest.
+        r"""Gets the tags of this ShowAssetMetaRequest.
 
         媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
@@ -278,7 +278,7 @@ class ShowAssetMetaRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowAssetMetaRequest.
+        r"""Sets the tags of this ShowAssetMetaRequest.
 
         媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
@@ -289,7 +289,7 @@ class ShowAssetMetaRequest:
 
     @property
     def query_string(self):
-        """Gets the query_string of this ShowAssetMetaRequest.
+        r"""Gets the query_string of this ShowAssetMetaRequest.
 
         在媒资标题、描述中模糊查询的字符串。
 
@@ -300,7 +300,7 @@ class ShowAssetMetaRequest:
 
     @query_string.setter
     def query_string(self, query_string):
-        """Sets the query_string of this ShowAssetMetaRequest.
+        r"""Sets the query_string of this ShowAssetMetaRequest.
 
         在媒资标题、描述中模糊查询的字符串。
 
@@ -311,7 +311,7 @@ class ShowAssetMetaRequest:
 
     @property
     def page(self):
-        """Gets the page of this ShowAssetMetaRequest.
+        r"""Gets the page of this ShowAssetMetaRequest.
 
         分页编号，查询指定“asset_id”时，该参数无效。  默认值：0。
 
@@ -322,7 +322,7 @@ class ShowAssetMetaRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowAssetMetaRequest.
+        r"""Sets the page of this ShowAssetMetaRequest.
 
         分页编号，查询指定“asset_id”时，该参数无效。  默认值：0。
 
@@ -333,7 +333,7 @@ class ShowAssetMetaRequest:
 
     @property
     def size(self):
-        """Gets the size of this ShowAssetMetaRequest.
+        r"""Gets the size of this ShowAssetMetaRequest.
 
         每页记录数，查询指定“**asset_id**”时，该参数无效。  取值范围：[1,100]。  默认值：10。
 
@@ -344,7 +344,7 @@ class ShowAssetMetaRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowAssetMetaRequest.
+        r"""Sets the size of this ShowAssetMetaRequest.
 
         每页记录数，查询指定“**asset_id**”时，该参数无效。  取值范围：[1,100]。  默认值：10。
 

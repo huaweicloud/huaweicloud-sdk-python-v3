@@ -27,7 +27,7 @@ class ListFactoryReleasePackagesRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """ListFactoryReleasePackagesRequest
+        r"""ListFactoryReleasePackagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListFactoryReleasePackagesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListFactoryReleasePackagesRequest.
+        r"""Gets the workspace of this ListFactoryReleasePackagesRequest.
 
         工作空间ID，默认查询default空间
 
@@ -61,7 +61,7 @@ class ListFactoryReleasePackagesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListFactoryReleasePackagesRequest.
+        r"""Sets the workspace of this ListFactoryReleasePackagesRequest.
 
         工作空间ID，默认查询default空间
 
@@ -72,7 +72,7 @@ class ListFactoryReleasePackagesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListFactoryReleasePackagesRequest.
+        r"""Gets the body of this ListFactoryReleasePackagesRequest.
 
         :return: The body of this ListFactoryReleasePackagesRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListReleasePackagesRequestBody`
@@ -81,7 +81,7 @@ class ListFactoryReleasePackagesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListFactoryReleasePackagesRequest.
+        r"""Sets the body of this ListFactoryReleasePackagesRequest.
 
         :param body: The body of this ListFactoryReleasePackagesRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ListReleasePackagesRequestBody`

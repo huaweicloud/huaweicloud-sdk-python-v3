@@ -25,7 +25,7 @@ class ShowChartValuesRequest:
     }
 
     def __init__(self, chart_id=None):
-        """ShowChartValuesRequest
+        r"""ShowChartValuesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowChartValuesRequest:
 
     @property
     def chart_id(self):
-        """Gets the chart_id of this ShowChartValuesRequest.
+        r"""Gets the chart_id of this ShowChartValuesRequest.
 
         模板的ID
 
@@ -53,7 +53,7 @@ class ShowChartValuesRequest:
 
     @chart_id.setter
     def chart_id(self, chart_id):
-        """Sets the chart_id of this ShowChartValuesRequest.
+        r"""Sets the chart_id of this ShowChartValuesRequest.
 
         模板的ID
 

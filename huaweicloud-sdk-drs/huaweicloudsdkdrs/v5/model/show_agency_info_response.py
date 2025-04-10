@@ -30,7 +30,7 @@ class ShowAgencyInfoResponse(SdkResponse):
     }
 
     def __init__(self, is_existed=None, name=None, roles=None):
-        """ShowAgencyInfoResponse
+        r"""ShowAgencyInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowAgencyInfoResponse(SdkResponse):
 
     @property
     def is_existed(self):
-        """Gets the is_existed of this ShowAgencyInfoResponse.
+        r"""Gets the is_existed of this ShowAgencyInfoResponse.
 
         委托是否存在。
 
@@ -69,7 +69,7 @@ class ShowAgencyInfoResponse(SdkResponse):
 
     @is_existed.setter
     def is_existed(self, is_existed):
-        """Sets the is_existed of this ShowAgencyInfoResponse.
+        r"""Sets the is_existed of this ShowAgencyInfoResponse.
 
         委托是否存在。
 
@@ -80,7 +80,7 @@ class ShowAgencyInfoResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowAgencyInfoResponse.
+        r"""Gets the name of this ShowAgencyInfoResponse.
 
         委托名称。
 
@@ -91,7 +91,7 @@ class ShowAgencyInfoResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAgencyInfoResponse.
+        r"""Sets the name of this ShowAgencyInfoResponse.
 
         委托名称。
 
@@ -102,7 +102,7 @@ class ShowAgencyInfoResponse(SdkResponse):
 
     @property
     def roles(self):
-        """Gets the roles of this ShowAgencyInfoResponse.
+        r"""Gets the roles of this ShowAgencyInfoResponse.
 
         委托绑定的权限策略信息。
 
@@ -113,7 +113,7 @@ class ShowAgencyInfoResponse(SdkResponse):
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this ShowAgencyInfoResponse.
+        r"""Sets the roles of this ShowAgencyInfoResponse.
 
         委托绑定的权限策略信息。
 

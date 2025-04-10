@@ -29,7 +29,7 @@ class UpdateTrafficControllerRequest:
     }
 
     def __init__(self, instance_id=None, traffic_controller_id=None, body=None):
-        """UpdateTrafficControllerRequest
+        r"""UpdateTrafficControllerRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateTrafficControllerRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateTrafficControllerRequest.
+        r"""Gets the instance_id of this UpdateTrafficControllerRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -67,7 +67,7 @@ class UpdateTrafficControllerRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateTrafficControllerRequest.
+        r"""Sets the instance_id of this UpdateTrafficControllerRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -78,7 +78,7 @@ class UpdateTrafficControllerRequest:
 
     @property
     def traffic_controller_id(self):
-        """Gets the traffic_controller_id of this UpdateTrafficControllerRequest.
+        r"""Gets the traffic_controller_id of this UpdateTrafficControllerRequest.
 
         **参数说明**：信号机设备ID，全局唯一。
 
@@ -89,7 +89,7 @@ class UpdateTrafficControllerRequest:
 
     @traffic_controller_id.setter
     def traffic_controller_id(self, traffic_controller_id):
-        """Sets the traffic_controller_id of this UpdateTrafficControllerRequest.
+        r"""Sets the traffic_controller_id of this UpdateTrafficControllerRequest.
 
         **参数说明**：信号机设备ID，全局唯一。
 
@@ -100,7 +100,7 @@ class UpdateTrafficControllerRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTrafficControllerRequest.
+        r"""Gets the body of this UpdateTrafficControllerRequest.
 
         :return: The body of this UpdateTrafficControllerRequest.
         :rtype: :class:`huaweicloudsdkdris.v1.ModifyTrafficControllerRequestDTO`
@@ -109,7 +109,7 @@ class UpdateTrafficControllerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTrafficControllerRequest.
+        r"""Sets the body of this UpdateTrafficControllerRequest.
 
         :param body: The body of this UpdateTrafficControllerRequest.
         :type body: :class:`huaweicloudsdkdris.v1.ModifyTrafficControllerRequestDTO`

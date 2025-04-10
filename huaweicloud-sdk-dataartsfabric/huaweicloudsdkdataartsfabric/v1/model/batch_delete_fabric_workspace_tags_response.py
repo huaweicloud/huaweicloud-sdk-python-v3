@@ -24,7 +24,7 @@ class BatchDeleteFabricWorkspaceTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeleteFabricWorkspaceTagsResponse
+        r"""BatchDeleteFabricWorkspaceTagsResponse
 
         The model defined in huaweicloud sdk
 

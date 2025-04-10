@@ -42,7 +42,7 @@ class ShowJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None, job_type=None, begin_time=None, end_time=None, status=None, job_error_code=None, fail_reason=None, sub_jobs_total=None, sub_jobs=None):
-        """ShowJobResponse
+        r"""ShowJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowJobResponse.
+        r"""Gets the id of this ShowJobResponse.
 
         任务ID
 
@@ -111,7 +111,7 @@ class ShowJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowJobResponse.
+        r"""Sets the id of this ShowJobResponse.
 
         任务ID
 
@@ -122,7 +122,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowJobResponse.
+        r"""Gets the job_type of this ShowJobResponse.
 
         任务类型
 
@@ -133,7 +133,7 @@ class ShowJobResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowJobResponse.
+        r"""Sets the job_type of this ShowJobResponse.
 
         任务类型
 
@@ -144,7 +144,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowJobResponse.
+        r"""Gets the begin_time of this ShowJobResponse.
 
         任务开始时间
 
@@ -155,7 +155,7 @@ class ShowJobResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowJobResponse.
+        r"""Sets the begin_time of this ShowJobResponse.
 
         任务开始时间
 
@@ -166,7 +166,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowJobResponse.
+        r"""Gets the end_time of this ShowJobResponse.
 
         任务结束时间
 
@@ -177,7 +177,7 @@ class ShowJobResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowJobResponse.
+        r"""Sets the end_time of this ShowJobResponse.
 
         任务结束时间
 
@@ -188,7 +188,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowJobResponse.
+        r"""Gets the status of this ShowJobResponse.
 
         任务状态
 
@@ -199,7 +199,7 @@ class ShowJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowJobResponse.
+        r"""Sets the status of this ShowJobResponse.
 
         任务状态
 
@@ -210,7 +210,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def job_error_code(self):
-        """Gets the job_error_code of this ShowJobResponse.
+        r"""Gets the job_error_code of this ShowJobResponse.
 
         任务错误码
 
@@ -221,7 +221,7 @@ class ShowJobResponse(SdkResponse):
 
     @job_error_code.setter
     def job_error_code(self, job_error_code):
-        """Sets the job_error_code of this ShowJobResponse.
+        r"""Sets the job_error_code of this ShowJobResponse.
 
         任务错误码
 
@@ -232,7 +232,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ShowJobResponse.
+        r"""Gets the fail_reason of this ShowJobResponse.
 
         任务失败原因
 
@@ -243,7 +243,7 @@ class ShowJobResponse(SdkResponse):
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ShowJobResponse.
+        r"""Sets the fail_reason of this ShowJobResponse.
 
         任务失败原因
 
@@ -254,7 +254,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def sub_jobs_total(self):
-        """Gets the sub_jobs_total of this ShowJobResponse.
+        r"""Gets the sub_jobs_total of this ShowJobResponse.
 
         子任务总数
 
@@ -265,7 +265,7 @@ class ShowJobResponse(SdkResponse):
 
     @sub_jobs_total.setter
     def sub_jobs_total(self, sub_jobs_total):
-        """Sets the sub_jobs_total of this ShowJobResponse.
+        r"""Sets the sub_jobs_total of this ShowJobResponse.
 
         子任务总数
 
@@ -276,7 +276,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def sub_jobs(self):
-        """Gets the sub_jobs of this ShowJobResponse.
+        r"""Gets the sub_jobs of this ShowJobResponse.
 
         子任务列表
 
@@ -287,7 +287,7 @@ class ShowJobResponse(SdkResponse):
 
     @sub_jobs.setter
     def sub_jobs(self, sub_jobs):
-        """Sets the sub_jobs of this ShowJobResponse.
+        r"""Sets the sub_jobs of this ShowJobResponse.
 
         子任务列表
 

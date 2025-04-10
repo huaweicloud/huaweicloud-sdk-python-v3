@@ -41,7 +41,7 @@ class MicroServiceInfoCCECreate:
     }
 
     def __init__(self, cluster_id=None, namespace=None, workload_type=None, app_name=None, label_key=None, label_value=None, version=None, port=None, labels=None):
-        """MicroServiceInfoCCECreate
+        r"""MicroServiceInfoCCECreate
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class MicroServiceInfoCCECreate:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this MicroServiceInfoCCECreate.
+        r"""Gets the cluster_id of this MicroServiceInfoCCECreate.
 
         云容器引擎集群编号
 
@@ -106,7 +106,7 @@ class MicroServiceInfoCCECreate:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this MicroServiceInfoCCECreate.
+        r"""Sets the cluster_id of this MicroServiceInfoCCECreate.
 
         云容器引擎集群编号
 
@@ -117,7 +117,7 @@ class MicroServiceInfoCCECreate:
 
     @property
     def namespace(self):
-        """Gets the namespace of this MicroServiceInfoCCECreate.
+        r"""Gets the namespace of this MicroServiceInfoCCECreate.
 
         命名空间
 
@@ -128,7 +128,7 @@ class MicroServiceInfoCCECreate:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this MicroServiceInfoCCECreate.
+        r"""Sets the namespace of this MicroServiceInfoCCECreate.
 
         命名空间
 
@@ -139,7 +139,7 @@ class MicroServiceInfoCCECreate:
 
     @property
     def workload_type(self):
-        """Gets the workload_type of this MicroServiceInfoCCECreate.
+        r"""Gets the workload_type of this MicroServiceInfoCCECreate.
 
         工作负载类型  - deployment：无状态负载  - statefulset：有状态负载  - daemonset：守护进程集
 
@@ -150,7 +150,7 @@ class MicroServiceInfoCCECreate:
 
     @workload_type.setter
     def workload_type(self, workload_type):
-        """Sets the workload_type of this MicroServiceInfoCCECreate.
+        r"""Sets the workload_type of this MicroServiceInfoCCECreate.
 
         工作负载类型  - deployment：无状态负载  - statefulset：有状态负载  - daemonset：守护进程集
 
@@ -161,7 +161,7 @@ class MicroServiceInfoCCECreate:
 
     @property
     def app_name(self):
-        """Gets the app_name of this MicroServiceInfoCCECreate.
+        r"""Gets the app_name of this MicroServiceInfoCCECreate.
 
         APP名称。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -172,7 +172,7 @@ class MicroServiceInfoCCECreate:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this MicroServiceInfoCCECreate.
+        r"""Sets the app_name of this MicroServiceInfoCCECreate.
 
         APP名称。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -183,7 +183,7 @@ class MicroServiceInfoCCECreate:
 
     @property
     def label_key(self):
-        """Gets the label_key of this MicroServiceInfoCCECreate.
+        r"""Gets the label_key of this MicroServiceInfoCCECreate.
 
         服务标识名。支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号，且只能以英文、汉字和数字开头，1-64个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -194,7 +194,7 @@ class MicroServiceInfoCCECreate:
 
     @label_key.setter
     def label_key(self, label_key):
-        """Sets the label_key of this MicroServiceInfoCCECreate.
+        r"""Sets the label_key of this MicroServiceInfoCCECreate.
 
         服务标识名。支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号，且只能以英文、汉字和数字开头，1-64个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -205,7 +205,7 @@ class MicroServiceInfoCCECreate:
 
     @property
     def label_value(self):
-        """Gets the label_value of this MicroServiceInfoCCECreate.
+        r"""Gets the label_value of this MicroServiceInfoCCECreate.
 
         服务标识值。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -216,7 +216,7 @@ class MicroServiceInfoCCECreate:
 
     @label_value.setter
     def label_value(self, label_value):
-        """Sets the label_value of this MicroServiceInfoCCECreate.
+        r"""Sets the label_value of this MicroServiceInfoCCECreate.
 
         服务标识值。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -227,7 +227,7 @@ class MicroServiceInfoCCECreate:
 
     @property
     def version(self):
-        """Gets the version of this MicroServiceInfoCCECreate.
+        r"""Gets the version of this MicroServiceInfoCCECreate.
 
         工作负载的版本
 
@@ -238,7 +238,7 @@ class MicroServiceInfoCCECreate:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this MicroServiceInfoCCECreate.
+        r"""Sets the version of this MicroServiceInfoCCECreate.
 
         工作负载的版本
 
@@ -249,7 +249,7 @@ class MicroServiceInfoCCECreate:
 
     @property
     def port(self):
-        """Gets the port of this MicroServiceInfoCCECreate.
+        r"""Gets the port of this MicroServiceInfoCCECreate.
 
         工作负载的监听端口号
 
@@ -260,7 +260,7 @@ class MicroServiceInfoCCECreate:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this MicroServiceInfoCCECreate.
+        r"""Sets the port of this MicroServiceInfoCCECreate.
 
         工作负载的监听端口号
 
@@ -271,7 +271,7 @@ class MicroServiceInfoCCECreate:
 
     @property
     def labels(self):
-        """Gets the labels of this MicroServiceInfoCCECreate.
+        r"""Gets the labels of this MicroServiceInfoCCECreate.
 
         工作负载的标签列表。
 
@@ -282,7 +282,7 @@ class MicroServiceInfoCCECreate:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this MicroServiceInfoCCECreate.
+        r"""Sets the labels of this MicroServiceInfoCCECreate.
 
         工作负载的标签列表。
 

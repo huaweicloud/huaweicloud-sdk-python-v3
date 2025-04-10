@@ -25,7 +25,7 @@ class ResourceDetachManagedPolicyFromPermissionSetReqBody:
     }
 
     def __init__(self, managed_role_id=None):
-        """ResourceDetachManagedPolicyFromPermissionSetReqBody
+        r"""ResourceDetachManagedPolicyFromPermissionSetReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResourceDetachManagedPolicyFromPermissionSetReqBody:
 
     @property
     def managed_role_id(self):
-        """Gets the managed_role_id of this ResourceDetachManagedPolicyFromPermissionSetReqBody.
+        r"""Gets the managed_role_id of this ResourceDetachManagedPolicyFromPermissionSetReqBody.
 
         IAM系统策略唯一标识
 
@@ -53,7 +53,7 @@ class ResourceDetachManagedPolicyFromPermissionSetReqBody:
 
     @managed_role_id.setter
     def managed_role_id(self, managed_role_id):
-        """Sets the managed_role_id of this ResourceDetachManagedPolicyFromPermissionSetReqBody.
+        r"""Sets the managed_role_id of this ResourceDetachManagedPolicyFromPermissionSetReqBody.
 
         IAM系统策略唯一标识
 

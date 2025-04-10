@@ -23,7 +23,7 @@ class Deletable:
     }
 
     def __init__(self):
-        """Deletable
+        r"""Deletable
 
         The model defined in huaweicloud sdk
 

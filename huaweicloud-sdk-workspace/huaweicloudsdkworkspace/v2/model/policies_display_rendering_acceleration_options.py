@@ -51,7 +51,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
     }
 
     def __init__(self, video_acceleration_enhancement_enable=None, video_optimization_enable=None, gpu_color_optimization_enable=None, video_recognition_threshold=None, frame_rate_statistical_length=None, image_quality_threshold=None, refresh_frequency_threshold=None, exiting_video_area_threshold=None, min_video_width=None, min_video_length=None, single_frame_natural_percentage=None, cyclical_natural_images_number=None, non_natural_image_percentage=None, non_natural_images_number=None):
-        """PoliciesDisplayRenderingAccelerationOptions
+        r"""PoliciesDisplayRenderingAccelerationOptions
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def video_acceleration_enhancement_enable(self):
-        """Gets the video_acceleration_enhancement_enable of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the video_acceleration_enhancement_enable of this PoliciesDisplayRenderingAccelerationOptions.
 
         视频加速增强配置。取值为： false：表示关闭。 true：表示开启。
 
@@ -145,7 +145,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @video_acceleration_enhancement_enable.setter
     def video_acceleration_enhancement_enable(self, video_acceleration_enhancement_enable):
-        """Sets the video_acceleration_enhancement_enable of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the video_acceleration_enhancement_enable of this PoliciesDisplayRenderingAccelerationOptions.
 
         视频加速增强配置。取值为： false：表示关闭。 true：表示开启。
 
@@ -156,7 +156,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def video_optimization_enable(self):
-        """Gets the video_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the video_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
 
         是否开启视频场景优化。取值为： false：表示关闭。 true：表示开启。
 
@@ -167,7 +167,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @video_optimization_enable.setter
     def video_optimization_enable(self, video_optimization_enable):
-        """Sets the video_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the video_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
 
         是否开启视频场景优化。取值为： false：表示关闭。 true：表示开启。
 
@@ -178,7 +178,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def gpu_color_optimization_enable(self):
-        """Gets the gpu_color_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the gpu_color_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
 
         是否开启GPU色彩优化。取值为： false：表示关闭。 true：表示开启。
 
@@ -189,7 +189,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @gpu_color_optimization_enable.setter
     def gpu_color_optimization_enable(self, gpu_color_optimization_enable):
-        """Sets the gpu_color_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the gpu_color_optimization_enable of this PoliciesDisplayRenderingAccelerationOptions.
 
         是否开启GPU色彩优化。取值为： false：表示关闭。 true：表示开启。
 
@@ -200,7 +200,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def video_recognition_threshold(self):
-        """Gets the video_recognition_threshold of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the video_recognition_threshold of this PoliciesDisplayRenderingAccelerationOptions.
 
         视频识别阈值。取值范围为[0-500]。默认：10。
 
@@ -211,7 +211,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @video_recognition_threshold.setter
     def video_recognition_threshold(self, video_recognition_threshold):
-        """Sets the video_recognition_threshold of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the video_recognition_threshold of this PoliciesDisplayRenderingAccelerationOptions.
 
         视频识别阈值。取值范围为[0-500]。默认：10。
 
@@ -222,7 +222,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def frame_rate_statistical_length(self):
-        """Gets the frame_rate_statistical_length of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the frame_rate_statistical_length of this PoliciesDisplayRenderingAccelerationOptions.
 
         帧率统计长度。取值范围为[2-100]。默认：4。
 
@@ -233,7 +233,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @frame_rate_statistical_length.setter
     def frame_rate_statistical_length(self, frame_rate_statistical_length):
-        """Sets the frame_rate_statistical_length of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the frame_rate_statistical_length of this PoliciesDisplayRenderingAccelerationOptions.
 
         帧率统计长度。取值范围为[2-100]。默认：4。
 
@@ -244,7 +244,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def image_quality_threshold(self):
-        """Gets the image_quality_threshold of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the image_quality_threshold of this PoliciesDisplayRenderingAccelerationOptions.
 
         图像质量阈值。取值范围为[0-100]。默认：0。
 
@@ -255,7 +255,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @image_quality_threshold.setter
     def image_quality_threshold(self, image_quality_threshold):
-        """Sets the image_quality_threshold of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the image_quality_threshold of this PoliciesDisplayRenderingAccelerationOptions.
 
         图像质量阈值。取值范围为[0-100]。默认：0。
 
@@ -266,7 +266,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def refresh_frequency_threshold(self):
-        """Gets the refresh_frequency_threshold of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the refresh_frequency_threshold of this PoliciesDisplayRenderingAccelerationOptions.
 
         刷新率阈值。取值范围为[1-100]。默认：3。
 
@@ -277,7 +277,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @refresh_frequency_threshold.setter
     def refresh_frequency_threshold(self, refresh_frequency_threshold):
-        """Sets the refresh_frequency_threshold of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the refresh_frequency_threshold of this PoliciesDisplayRenderingAccelerationOptions.
 
         刷新率阈值。取值范围为[1-100]。默认：3。
 
@@ -288,7 +288,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def exiting_video_area_threshold(self):
-        """Gets the exiting_video_area_threshold of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the exiting_video_area_threshold of this PoliciesDisplayRenderingAccelerationOptions.
 
         退出视频区域阈值。取值范围为[0-100]。默认：8。
 
@@ -299,7 +299,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @exiting_video_area_threshold.setter
     def exiting_video_area_threshold(self, exiting_video_area_threshold):
-        """Sets the exiting_video_area_threshold of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the exiting_video_area_threshold of this PoliciesDisplayRenderingAccelerationOptions.
 
         退出视频区域阈值。取值范围为[0-100]。默认：8。
 
@@ -310,7 +310,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def min_video_width(self):
-        """Gets the min_video_width of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the min_video_width of this PoliciesDisplayRenderingAccelerationOptions.
 
         识别为视频的最小宽。取值范围为[0-1280]。默认：191。
 
@@ -321,7 +321,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @min_video_width.setter
     def min_video_width(self, min_video_width):
-        """Sets the min_video_width of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the min_video_width of this PoliciesDisplayRenderingAccelerationOptions.
 
         识别为视频的最小宽。取值范围为[0-1280]。默认：191。
 
@@ -332,7 +332,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def min_video_length(self):
-        """Gets the min_video_length of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the min_video_length of this PoliciesDisplayRenderingAccelerationOptions.
 
         识别为视频的最小高。取值范围为[0-1280]。默认：191。
 
@@ -343,7 +343,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @min_video_length.setter
     def min_video_length(self, min_video_length):
-        """Sets the min_video_length of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the min_video_length of this PoliciesDisplayRenderingAccelerationOptions.
 
         识别为视频的最小高。取值范围为[0-1280]。默认：191。
 
@@ -354,7 +354,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def single_frame_natural_percentage(self):
-        """Gets the single_frame_natural_percentage of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the single_frame_natural_percentage of this PoliciesDisplayRenderingAccelerationOptions.
 
         单帧自然图像块占比阈值。取值范围为[0.000001-1]。默认：0.3。
 
@@ -365,7 +365,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @single_frame_natural_percentage.setter
     def single_frame_natural_percentage(self, single_frame_natural_percentage):
-        """Sets the single_frame_natural_percentage of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the single_frame_natural_percentage of this PoliciesDisplayRenderingAccelerationOptions.
 
         单帧自然图像块占比阈值。取值范围为[0.000001-1]。默认：0.3。
 
@@ -376,7 +376,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def cyclical_natural_images_number(self):
-        """Gets the cyclical_natural_images_number of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the cyclical_natural_images_number of this PoliciesDisplayRenderingAccelerationOptions.
 
         周期自然图像数目占比阈值。取值范围为[0-100]。默认：2。
 
@@ -387,7 +387,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @cyclical_natural_images_number.setter
     def cyclical_natural_images_number(self, cyclical_natural_images_number):
-        """Sets the cyclical_natural_images_number of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the cyclical_natural_images_number of this PoliciesDisplayRenderingAccelerationOptions.
 
         周期自然图像数目占比阈值。取值范围为[0-100]。默认：2。
 
@@ -398,7 +398,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def non_natural_image_percentage(self):
-        """Gets the non_natural_image_percentage of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the non_natural_image_percentage of this PoliciesDisplayRenderingAccelerationOptions.
 
         非自然图面积占比阈值。取值范围为[0.000001-1]。默认：0.85。
 
@@ -409,7 +409,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @non_natural_image_percentage.setter
     def non_natural_image_percentage(self, non_natural_image_percentage):
-        """Sets the non_natural_image_percentage of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the non_natural_image_percentage of this PoliciesDisplayRenderingAccelerationOptions.
 
         非自然图面积占比阈值。取值范围为[0.000001-1]。默认：0.85。
 
@@ -420,7 +420,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @property
     def non_natural_images_number(self):
-        """Gets the non_natural_images_number of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Gets the non_natural_images_number of this PoliciesDisplayRenderingAccelerationOptions.
 
         非自然图数目占比阈值。取值范围为[0-100]。默认：25。
 
@@ -431,7 +431,7 @@ class PoliciesDisplayRenderingAccelerationOptions:
 
     @non_natural_images_number.setter
     def non_natural_images_number(self, non_natural_images_number):
-        """Sets the non_natural_images_number of this PoliciesDisplayRenderingAccelerationOptions.
+        r"""Sets the non_natural_images_number of this PoliciesDisplayRenderingAccelerationOptions.
 
         非自然图数目占比阈值。取值范围为[0-100]。默认：25。
 

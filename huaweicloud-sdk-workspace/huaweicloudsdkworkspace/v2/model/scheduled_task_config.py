@@ -49,7 +49,7 @@ class ScheduledTaskConfig:
     }
 
     def __init__(self, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, scheduled_date=None, scheduled_time=None, expire_time=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, life_cycle_type=None, time_zone=None):
-        """ScheduledTaskConfig
+        r"""ScheduledTaskConfig
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ScheduledTaskConfig:
 
     @property
     def scheduled_type(self):
-        """Gets the scheduled_type of this ScheduledTaskConfig.
+        r"""Gets the scheduled_type of this ScheduledTaskConfig.
 
         执行周期类型，可选值为： - FIXED_TIME：指定时间。 - DAY：按天。 - WEEK：按周。 - MONTH：按月。 - LIFE_CYCLE：指定场景下触发。
 
@@ -138,7 +138,7 @@ class ScheduledTaskConfig:
 
     @scheduled_type.setter
     def scheduled_type(self, scheduled_type):
-        """Sets the scheduled_type of this ScheduledTaskConfig.
+        r"""Sets the scheduled_type of this ScheduledTaskConfig.
 
         执行周期类型，可选值为： - FIXED_TIME：指定时间。 - DAY：按天。 - WEEK：按周。 - MONTH：按月。 - LIFE_CYCLE：指定场景下触发。
 
@@ -149,7 +149,7 @@ class ScheduledTaskConfig:
 
     @property
     def day_interval(self):
-        """Gets the day_interval of this ScheduledTaskConfig.
+        r"""Gets the day_interval of this ScheduledTaskConfig.
 
         周期按天时：按x天间隔执行。
 
@@ -160,7 +160,7 @@ class ScheduledTaskConfig:
 
     @day_interval.setter
     def day_interval(self, day_interval):
-        """Sets the day_interval of this ScheduledTaskConfig.
+        r"""Sets the day_interval of this ScheduledTaskConfig.
 
         周期按天时：按x天间隔执行。
 
@@ -171,7 +171,7 @@ class ScheduledTaskConfig:
 
     @property
     def week_list(self):
-        """Gets the week_list of this ScheduledTaskConfig.
+        r"""Gets the week_list of this ScheduledTaskConfig.
 
         周期按周时：取值1~7，分别对应周日~周六，英文逗号分隔，如1,2,7。
 
@@ -182,7 +182,7 @@ class ScheduledTaskConfig:
 
     @week_list.setter
     def week_list(self, week_list):
-        """Sets the week_list of this ScheduledTaskConfig.
+        r"""Sets the week_list of this ScheduledTaskConfig.
 
         周期按周时：取值1~7，分别对应周日~周六，英文逗号分隔，如1,2,7。
 
@@ -193,7 +193,7 @@ class ScheduledTaskConfig:
 
     @property
     def month_list(self):
-        """Gets the month_list of this ScheduledTaskConfig.
+        r"""Gets the month_list of this ScheduledTaskConfig.
 
         周期按月时：取值1~12，英文逗号分隔，如1,3,12。
 
@@ -204,7 +204,7 @@ class ScheduledTaskConfig:
 
     @month_list.setter
     def month_list(self, month_list):
-        """Sets the month_list of this ScheduledTaskConfig.
+        r"""Sets the month_list of this ScheduledTaskConfig.
 
         周期按月时：取值1~12，英文逗号分隔，如1,3,12。
 
@@ -215,7 +215,7 @@ class ScheduledTaskConfig:
 
     @property
     def date_list(self):
-        """Gets the date_list of this ScheduledTaskConfig.
+        r"""Gets the date_list of this ScheduledTaskConfig.
 
         周期按月时：取值1~31及L(代表当月最后一天)，英文逗号分隔，如1,2,28,L。
 
@@ -226,7 +226,7 @@ class ScheduledTaskConfig:
 
     @date_list.setter
     def date_list(self, date_list):
-        """Sets the date_list of this ScheduledTaskConfig.
+        r"""Sets the date_list of this ScheduledTaskConfig.
 
         周期按月时：取值1~31及L(代表当月最后一天)，英文逗号分隔，如1,2,28,L。
 
@@ -237,7 +237,7 @@ class ScheduledTaskConfig:
 
     @property
     def scheduled_date(self):
-        """Gets the scheduled_date of this ScheduledTaskConfig.
+        r"""Gets the scheduled_date of this ScheduledTaskConfig.
 
         周期指定时间时：表示指定的日期，格式为yyyy-MM-dd。
 
@@ -248,7 +248,7 @@ class ScheduledTaskConfig:
 
     @scheduled_date.setter
     def scheduled_date(self, scheduled_date):
-        """Sets the scheduled_date of this ScheduledTaskConfig.
+        r"""Sets the scheduled_date of this ScheduledTaskConfig.
 
         周期指定时间时：表示指定的日期，格式为yyyy-MM-dd。
 
@@ -259,7 +259,7 @@ class ScheduledTaskConfig:
 
     @property
     def scheduled_time(self):
-        """Gets the scheduled_time of this ScheduledTaskConfig.
+        r"""Gets the scheduled_time of this ScheduledTaskConfig.
 
         指定的执行时间点，格式为HH:mm:ss。
 
@@ -270,7 +270,7 @@ class ScheduledTaskConfig:
 
     @scheduled_time.setter
     def scheduled_time(self, scheduled_time):
-        """Sets the scheduled_time of this ScheduledTaskConfig.
+        r"""Sets the scheduled_time of this ScheduledTaskConfig.
 
         指定的执行时间点，格式为HH:mm:ss。
 
@@ -281,7 +281,7 @@ class ScheduledTaskConfig:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ScheduledTaskConfig.
+        r"""Gets the expire_time of this ScheduledTaskConfig.
 
         到期时间，格式为yyyy-MM-dd HH:mm:ss。
 
@@ -292,7 +292,7 @@ class ScheduledTaskConfig:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ScheduledTaskConfig.
+        r"""Sets the expire_time of this ScheduledTaskConfig.
 
         到期时间，格式为yyyy-MM-dd HH:mm:ss。
 
@@ -303,7 +303,7 @@ class ScheduledTaskConfig:
 
     @property
     def gray_count(self):
-        """Gets the gray_count of this ScheduledTaskConfig.
+        r"""Gets the gray_count of this ScheduledTaskConfig.
 
         灰度对象数量，优先级高于gray_desktop_ids。只支持脚本执行。
 
@@ -314,7 +314,7 @@ class ScheduledTaskConfig:
 
     @gray_count.setter
     def gray_count(self, gray_count):
-        """Sets the gray_count of this ScheduledTaskConfig.
+        r"""Sets the gray_count of this ScheduledTaskConfig.
 
         灰度对象数量，优先级高于gray_desktop_ids。只支持脚本执行。
 
@@ -325,7 +325,7 @@ class ScheduledTaskConfig:
 
     @property
     def gray_desktop_ids(self):
-        """Gets the gray_desktop_ids of this ScheduledTaskConfig.
+        r"""Gets the gray_desktop_ids of this ScheduledTaskConfig.
 
         灰度执行的桌面id列表，优先级低于gray_count。只支持脚本执行。
 
@@ -336,7 +336,7 @@ class ScheduledTaskConfig:
 
     @gray_desktop_ids.setter
     def gray_desktop_ids(self, gray_desktop_ids):
-        """Sets the gray_desktop_ids of this ScheduledTaskConfig.
+        r"""Sets the gray_desktop_ids of this ScheduledTaskConfig.
 
         灰度执行的桌面id列表，优先级低于gray_count。只支持脚本执行。
 
@@ -347,7 +347,7 @@ class ScheduledTaskConfig:
 
     @property
     def gray_fail_threshold(self):
-        """Gets the gray_fail_threshold of this ScheduledTaskConfig.
+        r"""Gets the gray_fail_threshold of this ScheduledTaskConfig.
 
         灰度失败阈值，灰度执行失败次数达到该值时，不执行下一批任务。只支持脚本执行。
 
@@ -358,7 +358,7 @@ class ScheduledTaskConfig:
 
     @gray_fail_threshold.setter
     def gray_fail_threshold(self, gray_fail_threshold):
-        """Sets the gray_fail_threshold of this ScheduledTaskConfig.
+        r"""Sets the gray_fail_threshold of this ScheduledTaskConfig.
 
         灰度失败阈值，灰度执行失败次数达到该值时，不执行下一批任务。只支持脚本执行。
 
@@ -369,7 +369,7 @@ class ScheduledTaskConfig:
 
     @property
     def life_cycle_type(self):
-        """Gets the life_cycle_type of this ScheduledTaskConfig.
+        r"""Gets the life_cycle_type of this ScheduledTaskConfig.
 
         触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后，POST_DESKTOP_DISCONNECTED：桌面断开连接后。
 
@@ -380,7 +380,7 @@ class ScheduledTaskConfig:
 
     @life_cycle_type.setter
     def life_cycle_type(self, life_cycle_type):
-        """Sets the life_cycle_type of this ScheduledTaskConfig.
+        r"""Sets the life_cycle_type of this ScheduledTaskConfig.
 
         触发场景。POST_CREATE_DESKTOP_SUCCESS：创建桌面成功后，POST_REBUILD_DESKTOP_SUCCESS：重建桌面成功后，POST_REATTACH_DESKTOP_SUCCESS：触发重建的分配用户任务成功后，POST_DESKTOP_DISCONNECTED：桌面断开连接后。
 
@@ -391,7 +391,7 @@ class ScheduledTaskConfig:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ScheduledTaskConfig.
+        r"""Gets the time_zone of this ScheduledTaskConfig.
 
         时区。
 
@@ -402,7 +402,7 @@ class ScheduledTaskConfig:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ScheduledTaskConfig.
+        r"""Sets the time_zone of this ScheduledTaskConfig.
 
         时区。
 

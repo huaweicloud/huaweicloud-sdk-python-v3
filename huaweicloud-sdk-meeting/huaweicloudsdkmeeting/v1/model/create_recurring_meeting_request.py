@@ -31,7 +31,7 @@ class CreateRecurringMeetingRequest:
     }
 
     def __init__(self, x_authorization_type=None, user_uuid=None, x_site_id=None, body=None):
-        """CreateRecurringMeetingRequest
+        r"""CreateRecurringMeetingRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateRecurringMeetingRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this CreateRecurringMeetingRequest.
+        r"""Gets the x_authorization_type of this CreateRecurringMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -75,7 +75,7 @@ class CreateRecurringMeetingRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this CreateRecurringMeetingRequest.
+        r"""Sets the x_authorization_type of this CreateRecurringMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -86,7 +86,7 @@ class CreateRecurringMeetingRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this CreateRecurringMeetingRequest.
+        r"""Gets the user_uuid of this CreateRecurringMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -97,7 +97,7 @@ class CreateRecurringMeetingRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this CreateRecurringMeetingRequest.
+        r"""Sets the user_uuid of this CreateRecurringMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -108,7 +108,7 @@ class CreateRecurringMeetingRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this CreateRecurringMeetingRequest.
+        r"""Gets the x_site_id of this CreateRecurringMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -119,7 +119,7 @@ class CreateRecurringMeetingRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this CreateRecurringMeetingRequest.
+        r"""Sets the x_site_id of this CreateRecurringMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -130,7 +130,7 @@ class CreateRecurringMeetingRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRecurringMeetingRequest.
+        r"""Gets the body of this CreateRecurringMeetingRequest.
 
         :return: The body of this CreateRecurringMeetingRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestScheduleConfDTO`
@@ -139,7 +139,7 @@ class CreateRecurringMeetingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRecurringMeetingRequest.
+        r"""Sets the body of this CreateRecurringMeetingRequest.
 
         :param body: The body of this CreateRecurringMeetingRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestScheduleConfDTO`

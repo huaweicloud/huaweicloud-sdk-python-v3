@@ -41,7 +41,7 @@ class ListClusterNodesRequest:
     }
 
     def __init__(self, cluster_id=None, deleted=None, node_ids=None, offset=None, limit=None, filter_by=None, filter=None, order_by=None, order=None):
-        """ListClusterNodesRequest
+        r"""ListClusterNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListClusterNodesRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListClusterNodesRequest.
+        r"""Gets the cluster_id of this ListClusterNodesRequest.
 
         集群ID
 
@@ -109,7 +109,7 @@ class ListClusterNodesRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListClusterNodesRequest.
+        r"""Sets the cluster_id of this ListClusterNodesRequest.
 
         集群ID
 
@@ -120,7 +120,7 @@ class ListClusterNodesRequest:
 
     @property
     def deleted(self):
-        """Gets the deleted of this ListClusterNodesRequest.
+        r"""Gets the deleted of this ListClusterNodesRequest.
 
         是否被删除，true/false
 
@@ -131,7 +131,7 @@ class ListClusterNodesRequest:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this ListClusterNodesRequest.
+        r"""Sets the deleted of this ListClusterNodesRequest.
 
         是否被删除，true/false
 
@@ -142,7 +142,7 @@ class ListClusterNodesRequest:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this ListClusterNodesRequest.
+        r"""Gets the node_ids of this ListClusterNodesRequest.
 
         节点ID列表
 
@@ -153,7 +153,7 @@ class ListClusterNodesRequest:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this ListClusterNodesRequest.
+        r"""Sets the node_ids of this ListClusterNodesRequest.
 
         节点ID列表
 
@@ -164,7 +164,7 @@ class ListClusterNodesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListClusterNodesRequest.
+        r"""Gets the offset of this ListClusterNodesRequest.
 
         分页查询，偏移
 
@@ -175,7 +175,7 @@ class ListClusterNodesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListClusterNodesRequest.
+        r"""Sets the offset of this ListClusterNodesRequest.
 
         分页查询，偏移
 
@@ -186,7 +186,7 @@ class ListClusterNodesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListClusterNodesRequest.
+        r"""Gets the limit of this ListClusterNodesRequest.
 
         分页查询，每页显示的条目数量
 
@@ -197,7 +197,7 @@ class ListClusterNodesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListClusterNodesRequest.
+        r"""Sets the limit of this ListClusterNodesRequest.
 
         分页查询，每页显示的条目数量
 
@@ -208,7 +208,7 @@ class ListClusterNodesRequest:
 
     @property
     def filter_by(self):
-        """Gets the filter_by of this ListClusterNodesRequest.
+        r"""Gets the filter_by of this ListClusterNodesRequest.
 
         过滤字段
 
@@ -219,7 +219,7 @@ class ListClusterNodesRequest:
 
     @filter_by.setter
     def filter_by(self, filter_by):
-        """Sets the filter_by of this ListClusterNodesRequest.
+        r"""Sets the filter_by of this ListClusterNodesRequest.
 
         过滤字段
 
@@ -230,7 +230,7 @@ class ListClusterNodesRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListClusterNodesRequest.
+        r"""Gets the filter of this ListClusterNodesRequest.
 
         过滤字段内容
 
@@ -241,7 +241,7 @@ class ListClusterNodesRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListClusterNodesRequest.
+        r"""Sets the filter of this ListClusterNodesRequest.
 
         过滤字段内容
 
@@ -252,7 +252,7 @@ class ListClusterNodesRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListClusterNodesRequest.
+        r"""Gets the order_by of this ListClusterNodesRequest.
 
         排序字段
 
@@ -263,7 +263,7 @@ class ListClusterNodesRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListClusterNodesRequest.
+        r"""Sets the order_by of this ListClusterNodesRequest.
 
         排序字段
 
@@ -274,7 +274,7 @@ class ListClusterNodesRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListClusterNodesRequest.
+        r"""Gets the order of this ListClusterNodesRequest.
 
         排序：升序/降序
 
@@ -285,7 +285,7 @@ class ListClusterNodesRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListClusterNodesRequest.
+        r"""Sets the order of this ListClusterNodesRequest.
 
         排序：升序/降序
 

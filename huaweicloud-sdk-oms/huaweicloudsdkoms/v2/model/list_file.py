@@ -29,7 +29,7 @@ class ListFile:
     }
 
     def __init__(self, list_file_key=None, obs_bucket=None, list_file_num=None):
-        """ListFile
+        r"""ListFile
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListFile:
 
     @property
     def list_file_key(self):
-        """Gets the list_file_key of this ListFile.
+        r"""Gets the list_file_key of this ListFile.
 
         对象列表文件或URL列表文件对象名。
 
@@ -66,7 +66,7 @@ class ListFile:
 
     @list_file_key.setter
     def list_file_key(self, list_file_key):
-        """Sets the list_file_key of this ListFile.
+        r"""Sets the list_file_key of this ListFile.
 
         对象列表文件或URL列表文件对象名。
 
@@ -77,7 +77,7 @@ class ListFile:
 
     @property
     def obs_bucket(self):
-        """Gets the obs_bucket of this ListFile.
+        r"""Gets the obs_bucket of this ListFile.
 
         存放对象列表文件的OBS桶名。  请确保与目的端桶处于同一区域，否则将导致任务创建失败。
 
@@ -88,7 +88,7 @@ class ListFile:
 
     @obs_bucket.setter
     def obs_bucket(self, obs_bucket):
-        """Sets the obs_bucket of this ListFile.
+        r"""Sets the obs_bucket of this ListFile.
 
         存放对象列表文件的OBS桶名。  请确保与目的端桶处于同一区域，否则将导致任务创建失败。
 
@@ -99,7 +99,7 @@ class ListFile:
 
     @property
     def list_file_num(self):
-        """Gets the list_file_num of this ListFile.
+        r"""Gets the list_file_num of this ListFile.
 
         存放对象列表文件的数量
 
@@ -110,7 +110,7 @@ class ListFile:
 
     @list_file_num.setter
     def list_file_num(self, list_file_num):
-        """Sets the list_file_num of this ListFile.
+        r"""Sets the list_file_num of this ListFile.
 
         存放对象列表文件的数量
 

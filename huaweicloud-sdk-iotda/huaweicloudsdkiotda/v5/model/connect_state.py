@@ -27,7 +27,7 @@ class ConnectState:
     }
 
     def __init__(self, last_update_time=None, status=None):
-        """ConnectState
+        r"""ConnectState
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ConnectState:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this ConnectState.
+        r"""Gets the last_update_time of this ConnectState.
 
         隧道最近一次状态更新时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -61,7 +61,7 @@ class ConnectState:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this ConnectState.
+        r"""Sets the last_update_time of this ConnectState.
 
         隧道最近一次状态更新时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -72,7 +72,7 @@ class ConnectState:
 
     @property
     def status(self):
-        """Gets the status of this ConnectState.
+        r"""Gets the status of this ConnectState.
 
         客户端连接状态 CONNECTED | DISCONNECTED
 
@@ -83,7 +83,7 @@ class ConnectState:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ConnectState.
+        r"""Sets the status of this ConnectState.
 
         客户端连接状态 CONNECTED | DISCONNECTED
 

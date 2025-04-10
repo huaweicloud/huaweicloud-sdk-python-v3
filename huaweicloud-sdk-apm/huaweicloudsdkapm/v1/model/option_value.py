@@ -27,7 +27,7 @@ class OptionValue:
     }
 
     def __init__(self, value=None, hint=None):
-        """OptionValue
+        r"""OptionValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OptionValue:
 
     @property
     def value(self):
-        """Gets the value of this OptionValue.
+        r"""Gets the value of this OptionValue.
 
         可选值
 
@@ -61,7 +61,7 @@ class OptionValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this OptionValue.
+        r"""Sets the value of this OptionValue.
 
         可选值
 
@@ -72,7 +72,7 @@ class OptionValue:
 
     @property
     def hint(self):
-        """Gets the hint of this OptionValue.
+        r"""Gets the hint of this OptionValue.
 
         提示信息
 
@@ -83,7 +83,7 @@ class OptionValue:
 
     @hint.setter
     def hint(self, hint):
-        """Sets the hint of this OptionValue.
+        r"""Sets the hint of this OptionValue.
 
         提示信息
 

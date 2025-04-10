@@ -39,7 +39,7 @@ class ListIpGroupsRequest:
     }
 
     def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, ip_list=None, enterprise_project_id=None):
-        """ListIpGroupsRequest
+        r"""ListIpGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListIpGroupsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListIpGroupsRequest.
+        r"""Gets the marker of this ListIpGroupsRequest.
 
         参数解释：上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -103,7 +103,7 @@ class ListIpGroupsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListIpGroupsRequest.
+        r"""Sets the marker of this ListIpGroupsRequest.
 
         参数解释：上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -114,7 +114,7 @@ class ListIpGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListIpGroupsRequest.
+        r"""Gets the limit of this ListIpGroupsRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -125,7 +125,7 @@ class ListIpGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListIpGroupsRequest.
+        r"""Sets the limit of this ListIpGroupsRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -136,7 +136,7 @@ class ListIpGroupsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListIpGroupsRequest.
+        r"""Gets the page_reverse of this ListIpGroupsRequest.
 
         参数解释：是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
@@ -147,7 +147,7 @@ class ListIpGroupsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListIpGroupsRequest.
+        r"""Sets the page_reverse of this ListIpGroupsRequest.
 
         参数解释：是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
@@ -158,7 +158,7 @@ class ListIpGroupsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListIpGroupsRequest.
+        r"""Gets the id of this ListIpGroupsRequest.
 
         参数解释：IP地址组的ID。
 
@@ -169,7 +169,7 @@ class ListIpGroupsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListIpGroupsRequest.
+        r"""Sets the id of this ListIpGroupsRequest.
 
         参数解释：IP地址组的ID。
 
@@ -180,7 +180,7 @@ class ListIpGroupsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListIpGroupsRequest.
+        r"""Gets the name of this ListIpGroupsRequest.
 
         参数解释：IP地址组的名称。
 
@@ -191,7 +191,7 @@ class ListIpGroupsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListIpGroupsRequest.
+        r"""Sets the name of this ListIpGroupsRequest.
 
         参数解释：IP地址组的名称。
 
@@ -202,7 +202,7 @@ class ListIpGroupsRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListIpGroupsRequest.
+        r"""Gets the description of this ListIpGroupsRequest.
 
         参数解释：IP地址组的描述信息。
 
@@ -213,7 +213,7 @@ class ListIpGroupsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListIpGroupsRequest.
+        r"""Sets the description of this ListIpGroupsRequest.
 
         参数解释：IP地址组的描述信息。
 
@@ -224,7 +224,7 @@ class ListIpGroupsRequest:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this ListIpGroupsRequest.
+        r"""Gets the ip_list of this ListIpGroupsRequest.
 
         参数解释：IP地址，多个用逗号分隔。
 
@@ -235,7 +235,7 @@ class ListIpGroupsRequest:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this ListIpGroupsRequest.
+        r"""Sets the ip_list of this ListIpGroupsRequest.
 
         参数解释：IP地址，多个用逗号分隔。
 
@@ -246,7 +246,7 @@ class ListIpGroupsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListIpGroupsRequest.
+        r"""Gets the enterprise_project_id of this ListIpGroupsRequest.
 
         参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:ipgroups:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -257,7 +257,7 @@ class ListIpGroupsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListIpGroupsRequest.
+        r"""Sets the enterprise_project_id of this ListIpGroupsRequest.
 
         参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:ipgroups:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 

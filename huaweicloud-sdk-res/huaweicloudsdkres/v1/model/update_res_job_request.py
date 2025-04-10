@@ -33,7 +33,7 @@ class UpdateResJobRequest:
     }
 
     def __init__(self, content_type=None, job_id=None, resource_id=None, workspace_id=None, body=None):
-        """UpdateResJobRequest
+        r"""UpdateResJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class UpdateResJobRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this UpdateResJobRequest.
+        r"""Gets the content_type of this UpdateResJobRequest.
 
         内容类型，取值为application/json
 
@@ -79,7 +79,7 @@ class UpdateResJobRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this UpdateResJobRequest.
+        r"""Sets the content_type of this UpdateResJobRequest.
 
         内容类型，取值为application/json
 
@@ -90,7 +90,7 @@ class UpdateResJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateResJobRequest.
+        r"""Gets the job_id of this UpdateResJobRequest.
 
         作业id
 
@@ -101,7 +101,7 @@ class UpdateResJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateResJobRequest.
+        r"""Sets the job_id of this UpdateResJobRequest.
 
         作业id
 
@@ -112,7 +112,7 @@ class UpdateResJobRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this UpdateResJobRequest.
+        r"""Gets the resource_id of this UpdateResJobRequest.
 
         资源id（数据源id或场景id）
 
@@ -123,7 +123,7 @@ class UpdateResJobRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this UpdateResJobRequest.
+        r"""Sets the resource_id of this UpdateResJobRequest.
 
         资源id（数据源id或场景id）
 
@@ -134,7 +134,7 @@ class UpdateResJobRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdateResJobRequest.
+        r"""Gets the workspace_id of this UpdateResJobRequest.
 
         工作空间id
 
@@ -145,7 +145,7 @@ class UpdateResJobRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdateResJobRequest.
+        r"""Sets the workspace_id of this UpdateResJobRequest.
 
         工作空间id
 
@@ -156,7 +156,7 @@ class UpdateResJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateResJobRequest.
+        r"""Gets the body of this UpdateResJobRequest.
 
         :return: The body of this UpdateResJobRequest.
         :rtype: :class:`huaweicloudsdkres.v1.UpdateResJobRequestBody`
@@ -165,7 +165,7 @@ class UpdateResJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateResJobRequest.
+        r"""Sets the body of this UpdateResJobRequest.
 
         :param body: The body of this UpdateResJobRequest.
         :type body: :class:`huaweicloudsdkres.v1.UpdateResJobRequestBody`

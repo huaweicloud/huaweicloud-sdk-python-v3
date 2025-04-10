@@ -23,7 +23,7 @@ class IsolationStatus:
     }
 
     def __init__(self):
-        """IsolationStatus
+        r"""IsolationStatus
 
         The model defined in huaweicloud sdk
 

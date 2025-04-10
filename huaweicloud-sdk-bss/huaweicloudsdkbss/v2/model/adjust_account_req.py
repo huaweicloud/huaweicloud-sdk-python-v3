@@ -29,7 +29,7 @@ class AdjustAccountReq:
     }
 
     def __init__(self, customer_id=None, amount=None, indirect_partner_id=None):
-        """AdjustAccountReq
+        r"""AdjustAccountReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AdjustAccountReq:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this AdjustAccountReq.
+        r"""Gets the customer_id of this AdjustAccountReq.
 
         客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
@@ -66,7 +66,7 @@ class AdjustAccountReq:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this AdjustAccountReq.
+        r"""Sets the customer_id of this AdjustAccountReq.
 
         客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
@@ -77,7 +77,7 @@ class AdjustAccountReq:
 
     @property
     def amount(self):
-        """Gets the amount of this AdjustAccountReq.
+        r"""Gets the amount of this AdjustAccountReq.
 
         拨款金额。 单位：元。取值大于0且精确到小数点后2位。 注意该值不能大于“查询伙伴账户余额”接口响应消息表2中参数amount - designated_amount的值。
 
@@ -88,7 +88,7 @@ class AdjustAccountReq:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this AdjustAccountReq.
+        r"""Sets the amount of this AdjustAccountReq.
 
         拨款金额。 单位：元。取值大于0且精确到小数点后2位。 注意该值不能大于“查询伙伴账户余额”接口响应消息表2中参数amount - designated_amount的值。
 
@@ -99,7 +99,7 @@ class AdjustAccountReq:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this AdjustAccountReq.
+        r"""Gets the indirect_partner_id of this AdjustAccountReq.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 云经销商（二级经销商）给子客户拨款时，需携带该参数。除此之外，该参数不做处理。  说明： 该参数存在的情况下，如果结果返回余额不足，表示对应的二级经销商的余额不足。如果该参数不存在，则余额不足表示调用的伙伴自身账号的余额不足。
 
@@ -110,7 +110,7 @@ class AdjustAccountReq:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this AdjustAccountReq.
+        r"""Sets the indirect_partner_id of this AdjustAccountReq.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 云经销商（二级经销商）给子客户拨款时，需携带该参数。除此之外，该参数不做处理。  说明： 该参数存在的情况下，如果结果返回余额不足，表示对应的二级经销商的余额不足。如果该参数不存在，则余额不足表示调用的伙伴自身账号的余额不足。
 

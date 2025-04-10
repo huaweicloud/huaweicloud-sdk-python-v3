@@ -27,7 +27,7 @@ class UpdatePrivateSnatOption:
     }
 
     def __init__(self, transit_ip_ids=None, description=None):
-        """UpdatePrivateSnatOption
+        r"""UpdatePrivateSnatOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdatePrivateSnatOption:
 
     @property
     def transit_ip_ids(self):
-        """Gets the transit_ip_ids of this UpdatePrivateSnatOption.
+        r"""Gets the transit_ip_ids of this UpdatePrivateSnatOption.
 
         中转IP的ID的列表。
 
@@ -61,7 +61,7 @@ class UpdatePrivateSnatOption:
 
     @transit_ip_ids.setter
     def transit_ip_ids(self, transit_ip_ids):
-        """Sets the transit_ip_ids of this UpdatePrivateSnatOption.
+        r"""Sets the transit_ip_ids of this UpdatePrivateSnatOption.
 
         中转IP的ID的列表。
 
@@ -72,7 +72,7 @@ class UpdatePrivateSnatOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdatePrivateSnatOption.
+        r"""Gets the description of this UpdatePrivateSnatOption.
 
         SNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -83,7 +83,7 @@ class UpdatePrivateSnatOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePrivateSnatOption.
+        r"""Sets the description of this UpdatePrivateSnatOption.
 
         SNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 

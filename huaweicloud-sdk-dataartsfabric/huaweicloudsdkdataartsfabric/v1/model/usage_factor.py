@@ -23,7 +23,7 @@ class UsageFactor:
     }
 
     def __init__(self):
-        """UsageFactor
+        r"""UsageFactor
 
         The model defined in huaweicloud sdk
 

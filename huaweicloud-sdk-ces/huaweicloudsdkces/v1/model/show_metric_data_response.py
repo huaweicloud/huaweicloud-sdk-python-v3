@@ -28,7 +28,7 @@ class ShowMetricDataResponse(SdkResponse):
     }
 
     def __init__(self, datapoints=None, metric_name=None):
-        """ShowMetricDataResponse
+        r"""ShowMetricDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowMetricDataResponse(SdkResponse):
 
     @property
     def datapoints(self):
-        """Gets the datapoints of this ShowMetricDataResponse.
+        r"""Gets the datapoints of this ShowMetricDataResponse.
 
         指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
 
@@ -62,7 +62,7 @@ class ShowMetricDataResponse(SdkResponse):
 
     @datapoints.setter
     def datapoints(self, datapoints):
-        """Sets the datapoints of this ShowMetricDataResponse.
+        r"""Sets the datapoints of this ShowMetricDataResponse.
 
         指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
 
@@ -73,7 +73,7 @@ class ShowMetricDataResponse(SdkResponse):
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ShowMetricDataResponse.
+        r"""Gets the metric_name of this ShowMetricDataResponse.
 
         指标名称，例如弹性云服务器监控指标中的cpu_util。
 
@@ -84,7 +84,7 @@ class ShowMetricDataResponse(SdkResponse):
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ShowMetricDataResponse.
+        r"""Sets the metric_name of this ShowMetricDataResponse.
 
         指标名称，例如弹性云服务器监控指标中的cpu_util。
 

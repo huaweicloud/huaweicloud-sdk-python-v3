@@ -27,7 +27,7 @@ class ExtendQuestion:
     }
 
     def __init__(self, content=None, score=None):
-        """ExtendQuestion
+        r"""ExtendQuestion
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExtendQuestion:
 
     @property
     def content(self):
-        """Gets the content of this ExtendQuestion.
+        r"""Gets the content of this ExtendQuestion.
 
         扩展问内容
 
@@ -61,7 +61,7 @@ class ExtendQuestion:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ExtendQuestion.
+        r"""Sets the content of this ExtendQuestion.
 
         扩展问内容
 
@@ -72,7 +72,7 @@ class ExtendQuestion:
 
     @property
     def score(self):
-        """Gets the score of this ExtendQuestion.
+        r"""Gets the score of this ExtendQuestion.
 
         分值
 
@@ -83,7 +83,7 @@ class ExtendQuestion:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this ExtendQuestion.
+        r"""Sets the score of this ExtendQuestion.
 
         分值
 

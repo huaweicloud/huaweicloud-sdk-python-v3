@@ -43,7 +43,7 @@ class ListAimTemplatesRequest:
     }
 
     def __init__(self, tpl_id=None, tpl_name=None, tpl_type=None, factory_type=None, has_param=None, begin_time=None, end_time=None, is_only_status=None, offset=None, limit=None):
-        """ListAimTemplatesRequest
+        r"""ListAimTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListAimTemplatesRequest:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this ListAimTemplatesRequest.
+        r"""Gets the tpl_id of this ListAimTemplatesRequest.
 
         智能信息模板ID。
 
@@ -117,7 +117,7 @@ class ListAimTemplatesRequest:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this ListAimTemplatesRequest.
+        r"""Sets the tpl_id of this ListAimTemplatesRequest.
 
         智能信息模板ID。
 
@@ -128,7 +128,7 @@ class ListAimTemplatesRequest:
 
     @property
     def tpl_name(self):
-        """Gets the tpl_name of this ListAimTemplatesRequest.
+        r"""Gets the tpl_name of this ListAimTemplatesRequest.
 
         智能信息模板名称。
 
@@ -139,7 +139,7 @@ class ListAimTemplatesRequest:
 
     @tpl_name.setter
     def tpl_name(self, tpl_name):
-        """Sets the tpl_name of this ListAimTemplatesRequest.
+        r"""Sets the tpl_name of this ListAimTemplatesRequest.
 
         智能信息模板名称。
 
@@ -150,7 +150,7 @@ class ListAimTemplatesRequest:
 
     @property
     def tpl_type(self):
-        """Gets the tpl_type of this ListAimTemplatesRequest.
+        r"""Gets the tpl_type of this ListAimTemplatesRequest.
 
         模板分类。  - public：查公共模板 - private：查个人模板  > 不传查全部模板。 
 
@@ -161,7 +161,7 @@ class ListAimTemplatesRequest:
 
     @tpl_type.setter
     def tpl_type(self, tpl_type):
-        """Sets the tpl_type of this ListAimTemplatesRequest.
+        r"""Sets the tpl_type of this ListAimTemplatesRequest.
 
         模板分类。  - public：查公共模板 - private：查个人模板  > 不传查全部模板。 
 
@@ -172,7 +172,7 @@ class ListAimTemplatesRequest:
 
     @property
     def factory_type(self):
-        """Gets the factory_type of this ListAimTemplatesRequest.
+        r"""Gets the factory_type of this ListAimTemplatesRequest.
 
         厂商类型。 - HUAWEI：华为 - XIAOMI：小米 - OPPO：OPPO - MEIZU：魅族 - VIVO：VIVO 
 
@@ -183,7 +183,7 @@ class ListAimTemplatesRequest:
 
     @factory_type.setter
     def factory_type(self, factory_type):
-        """Sets the factory_type of this ListAimTemplatesRequest.
+        r"""Sets the factory_type of this ListAimTemplatesRequest.
 
         厂商类型。 - HUAWEI：华为 - XIAOMI：小米 - OPPO：OPPO - MEIZU：魅族 - VIVO：VIVO 
 
@@ -194,7 +194,7 @@ class ListAimTemplatesRequest:
 
     @property
     def has_param(self):
-        """Gets the has_param of this ListAimTemplatesRequest.
+        r"""Gets the has_param of this ListAimTemplatesRequest.
 
         模板是否携带参数。  - true：是 - false：否 
 
@@ -205,7 +205,7 @@ class ListAimTemplatesRequest:
 
     @has_param.setter
     def has_param(self, has_param):
-        """Sets the has_param of this ListAimTemplatesRequest.
+        r"""Sets the has_param of this ListAimTemplatesRequest.
 
         模板是否携带参数。  - true：是 - false：否 
 
@@ -216,7 +216,7 @@ class ListAimTemplatesRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListAimTemplatesRequest.
+        r"""Gets the begin_time of this ListAimTemplatesRequest.
 
         模板创建开始时间。样例：2019-10-12T07:20:50Z。  > begin_time和end_time必须全部为空或全部不为空，并且begin_time不能大于end_time。 
 
@@ -227,7 +227,7 @@ class ListAimTemplatesRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListAimTemplatesRequest.
+        r"""Sets the begin_time of this ListAimTemplatesRequest.
 
         模板创建开始时间。样例：2019-10-12T07:20:50Z。  > begin_time和end_time必须全部为空或全部不为空，并且begin_time不能大于end_time。 
 
@@ -238,7 +238,7 @@ class ListAimTemplatesRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAimTemplatesRequest.
+        r"""Gets the end_time of this ListAimTemplatesRequest.
 
         模板创建结束时间。样例：2019-10-12T07:20:50Z。  > begin_time和end_time必须全部为空或全部不为空，并且begin_time不能大于end_time。 
 
@@ -249,7 +249,7 @@ class ListAimTemplatesRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAimTemplatesRequest.
+        r"""Sets the end_time of this ListAimTemplatesRequest.
 
         模板创建结束时间。样例：2019-10-12T07:20:50Z。  > begin_time和end_time必须全部为空或全部不为空，并且begin_time不能大于end_time。 
 
@@ -260,7 +260,7 @@ class ListAimTemplatesRequest:
 
     @property
     def is_only_status(self):
-        """Gets the is_only_status of this ListAimTemplatesRequest.
+        r"""Gets the is_only_status of this ListAimTemplatesRequest.
 
         响应里只返回状态信息，不返回pages和params。  - false：默认值，返回全量信息 - true：只返回状态信息 
 
@@ -271,7 +271,7 @@ class ListAimTemplatesRequest:
 
     @is_only_status.setter
     def is_only_status(self, is_only_status):
-        """Sets the is_only_status of this ListAimTemplatesRequest.
+        r"""Sets the is_only_status of this ListAimTemplatesRequest.
 
         响应里只返回状态信息，不返回pages和params。  - false：默认值，返回全量信息 - true：只返回状态信息 
 
@@ -282,7 +282,7 @@ class ListAimTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAimTemplatesRequest.
+        r"""Gets the offset of this ListAimTemplatesRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。 
 
@@ -293,7 +293,7 @@ class ListAimTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAimTemplatesRequest.
+        r"""Sets the offset of this ListAimTemplatesRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。 
 
@@ -304,7 +304,7 @@ class ListAimTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAimTemplatesRequest.
+        r"""Gets the limit of this ListAimTemplatesRequest.
 
         每页显示的条目数量。 
 
@@ -315,7 +315,7 @@ class ListAimTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAimTemplatesRequest.
+        r"""Sets the limit of this ListAimTemplatesRequest.
 
         每页显示的条目数量。 
 

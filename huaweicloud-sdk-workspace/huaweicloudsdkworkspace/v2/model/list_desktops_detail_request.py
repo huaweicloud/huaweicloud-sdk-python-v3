@@ -73,7 +73,7 @@ class ListDesktopsDetailRequest:
     }
 
     def __init__(self, status=None, user_name=None, user_names=None, sort_field=None, sort_type=None, computer_name=None, desktop_ip=None, sids=None, offset=None, limit=None, desktop_id=None, desktop_type=None, login_status=None, tag=None, fuzzy_query=None, pool_id=None, user_attached=None, enterprise_project_id=None, image_id=None, charge_mode=None, in_maintenance_mode=None, is_share_desktop=None, subnet_id=None, is_support_internet=None, availability_zone=None):
-        """ListDesktopsDetailRequest
+        r"""ListDesktopsDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListDesktopsDetailRequest.
+        r"""Gets the status of this ListDesktopsDetailRequest.
 
         桌面状态。  - ACTIVE：运行中。 - SHUTOFF：关机。 - ERROR：异常。 - HIBERNATED：休眠。
 
@@ -222,7 +222,7 @@ class ListDesktopsDetailRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListDesktopsDetailRequest.
+        r"""Sets the status of this ListDesktopsDetailRequest.
 
         桌面状态。  - ACTIVE：运行中。 - SHUTOFF：关机。 - ERROR：异常。 - HIBERNATED：休眠。
 
@@ -233,7 +233,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListDesktopsDetailRequest.
+        r"""Gets the user_name of this ListDesktopsDetailRequest.
 
         桌面所属用户，当传user_names时，本字段不生效。
 
@@ -244,7 +244,7 @@ class ListDesktopsDetailRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListDesktopsDetailRequest.
+        r"""Sets the user_name of this ListDesktopsDetailRequest.
 
         桌面所属用户，当传user_names时，本字段不生效。
 
@@ -255,7 +255,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def user_names(self):
-        """Gets the user_names of this ListDesktopsDetailRequest.
+        r"""Gets the user_names of this ListDesktopsDetailRequest.
 
         桌面所属用户，批量筛选，最多不超过100个用户。
 
@@ -266,7 +266,7 @@ class ListDesktopsDetailRequest:
 
     @user_names.setter
     def user_names(self, user_names):
-        """Sets the user_names of this ListDesktopsDetailRequest.
+        r"""Sets the user_names of this ListDesktopsDetailRequest.
 
         桌面所属用户，批量筛选，最多不超过100个用户。
 
@@ -277,7 +277,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ListDesktopsDetailRequest.
+        r"""Gets the sort_field of this ListDesktopsDetailRequest.
 
         排序字段名称，需要结合sort_type字段一起使用。 - created 创建时间。 - computer_name 桌面名称。
 
@@ -288,7 +288,7 @@ class ListDesktopsDetailRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ListDesktopsDetailRequest.
+        r"""Sets the sort_field of this ListDesktopsDetailRequest.
 
         排序字段名称，需要结合sort_type字段一起使用。 - created 创建时间。 - computer_name 桌面名称。
 
@@ -299,7 +299,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this ListDesktopsDetailRequest.
+        r"""Gets the sort_type of this ListDesktopsDetailRequest.
 
         排序类型，默认升序，需要结合sort_field字段一起使用。 - ASC 升序。 - DESC 降序。
 
@@ -310,7 +310,7 @@ class ListDesktopsDetailRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this ListDesktopsDetailRequest.
+        r"""Sets the sort_type of this ListDesktopsDetailRequest.
 
         排序类型，默认升序，需要结合sort_field字段一起使用。 - ASC 升序。 - DESC 降序。
 
@@ -321,7 +321,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def computer_name(self):
-        """Gets the computer_name of this ListDesktopsDetailRequest.
+        r"""Gets the computer_name of this ListDesktopsDetailRequest.
 
         桌面名。
 
@@ -332,7 +332,7 @@ class ListDesktopsDetailRequest:
 
     @computer_name.setter
     def computer_name(self, computer_name):
-        """Sets the computer_name of this ListDesktopsDetailRequest.
+        r"""Sets the computer_name of this ListDesktopsDetailRequest.
 
         桌面名。
 
@@ -343,7 +343,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def desktop_ip(self):
-        """Gets the desktop_ip of this ListDesktopsDetailRequest.
+        r"""Gets the desktop_ip of this ListDesktopsDetailRequest.
 
         桌面IP地址。
 
@@ -354,7 +354,7 @@ class ListDesktopsDetailRequest:
 
     @desktop_ip.setter
     def desktop_ip(self, desktop_ip):
-        """Sets the desktop_ip of this ListDesktopsDetailRequest.
+        r"""Sets the desktop_ip of this ListDesktopsDetailRequest.
 
         桌面IP地址。
 
@@ -365,7 +365,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def sids(self):
-        """Gets the sids of this ListDesktopsDetailRequest.
+        r"""Gets the sids of this ListDesktopsDetailRequest.
 
         桌面的sid列表。
 
@@ -376,7 +376,7 @@ class ListDesktopsDetailRequest:
 
     @sids.setter
     def sids(self, sids):
-        """Sets the sids of this ListDesktopsDetailRequest.
+        r"""Sets the sids of this ListDesktopsDetailRequest.
 
         桌面的sid列表。
 
@@ -387,7 +387,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDesktopsDetailRequest.
+        r"""Gets the offset of this ListDesktopsDetailRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -398,7 +398,7 @@ class ListDesktopsDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDesktopsDetailRequest.
+        r"""Sets the offset of this ListDesktopsDetailRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -409,7 +409,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDesktopsDetailRequest.
+        r"""Gets the limit of this ListDesktopsDetailRequest.
 
         用于分页查询，取值范围0-500，默认值500。
 
@@ -420,7 +420,7 @@ class ListDesktopsDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDesktopsDetailRequest.
+        r"""Sets the limit of this ListDesktopsDetailRequest.
 
         用于分页查询，取值范围0-500，默认值500。
 
@@ -431,7 +431,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ListDesktopsDetailRequest.
+        r"""Gets the desktop_id of this ListDesktopsDetailRequest.
 
         桌面ID。
 
@@ -442,7 +442,7 @@ class ListDesktopsDetailRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ListDesktopsDetailRequest.
+        r"""Sets the desktop_id of this ListDesktopsDetailRequest.
 
         桌面ID。
 
@@ -453,7 +453,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def desktop_type(self):
-        """Gets the desktop_type of this ListDesktopsDetailRequest.
+        r"""Gets the desktop_type of this ListDesktopsDetailRequest.
 
         桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面
 
@@ -464,7 +464,7 @@ class ListDesktopsDetailRequest:
 
     @desktop_type.setter
     def desktop_type(self, desktop_type):
-        """Sets the desktop_type of this ListDesktopsDetailRequest.
+        r"""Sets the desktop_type of this ListDesktopsDetailRequest.
 
         桌面类型，为空时查所有桌面。 - DEDICATED：普通桌面，包括专享桌面、专属桌面等 - POOLED：池桌面，即桌面池里的桌面
 
@@ -475,7 +475,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def login_status(self):
-        """Gets the login_status of this ListDesktopsDetailRequest.
+        r"""Gets the login_status of this ListDesktopsDetailRequest.
 
         桌面的登录状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功登录，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
 
@@ -486,7 +486,7 @@ class ListDesktopsDetailRequest:
 
     @login_status.setter
     def login_status(self, login_status):
-        """Sets the login_status of this ListDesktopsDetailRequest.
+        r"""Sets the login_status of this ListDesktopsDetailRequest.
 
         桌面的登录状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功登录，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
 
@@ -497,7 +497,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ListDesktopsDetailRequest.
+        r"""Gets the tag of this ListDesktopsDetailRequest.
 
         桌面的标签。样例：  - key1=value1。 - key1=value1，key2=value2。
 
@@ -508,7 +508,7 @@ class ListDesktopsDetailRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListDesktopsDetailRequest.
+        r"""Sets the tag of this ListDesktopsDetailRequest.
 
         桌面的标签。样例：  - key1=value1。 - key1=value1，key2=value2。
 
@@ -519,7 +519,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def fuzzy_query(self):
-        """Gets the fuzzy_query of this ListDesktopsDetailRequest.
+        r"""Gets the fuzzy_query of this ListDesktopsDetailRequest.
 
         是不是模糊用户查询。
 
@@ -530,7 +530,7 @@ class ListDesktopsDetailRequest:
 
     @fuzzy_query.setter
     def fuzzy_query(self, fuzzy_query):
-        """Sets the fuzzy_query of this ListDesktopsDetailRequest.
+        r"""Sets the fuzzy_query of this ListDesktopsDetailRequest.
 
         是不是模糊用户查询。
 
@@ -541,7 +541,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ListDesktopsDetailRequest.
+        r"""Gets the pool_id of this ListDesktopsDetailRequest.
 
         桌面池ID,多个桌面池ID用逗号隔开。
 
@@ -552,7 +552,7 @@ class ListDesktopsDetailRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ListDesktopsDetailRequest.
+        r"""Sets the pool_id of this ListDesktopsDetailRequest.
 
         桌面池ID,多个桌面池ID用逗号隔开。
 
@@ -563,7 +563,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def user_attached(self):
-        """Gets the user_attached of this ListDesktopsDetailRequest.
+        r"""Gets the user_attached of this ListDesktopsDetailRequest.
 
         是否分配了用户。
 
@@ -574,7 +574,7 @@ class ListDesktopsDetailRequest:
 
     @user_attached.setter
     def user_attached(self, user_attached):
-        """Sets the user_attached of this ListDesktopsDetailRequest.
+        r"""Sets the user_attached of this ListDesktopsDetailRequest.
 
         是否分配了用户。
 
@@ -585,7 +585,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListDesktopsDetailRequest.
+        r"""Gets the enterprise_project_id of this ListDesktopsDetailRequest.
 
         企业项目ID
 
@@ -596,7 +596,7 @@ class ListDesktopsDetailRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListDesktopsDetailRequest.
+        r"""Sets the enterprise_project_id of this ListDesktopsDetailRequest.
 
         企业项目ID
 
@@ -607,7 +607,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ListDesktopsDetailRequest.
+        r"""Gets the image_id of this ListDesktopsDetailRequest.
 
         镜像ID
 
@@ -618,7 +618,7 @@ class ListDesktopsDetailRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ListDesktopsDetailRequest.
+        r"""Sets the image_id of this ListDesktopsDetailRequest.
 
         镜像ID
 
@@ -629,7 +629,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ListDesktopsDetailRequest.
+        r"""Gets the charge_mode of this ListDesktopsDetailRequest.
 
         计费模式，0：包周期，1：按需。
 
@@ -640,7 +640,7 @@ class ListDesktopsDetailRequest:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ListDesktopsDetailRequest.
+        r"""Sets the charge_mode of this ListDesktopsDetailRequest.
 
         计费模式，0：包周期，1：按需。
 
@@ -651,7 +651,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def in_maintenance_mode(self):
-        """Gets the in_maintenance_mode of this ListDesktopsDetailRequest.
+        r"""Gets the in_maintenance_mode of this ListDesktopsDetailRequest.
 
         按照维护模式过滤
 
@@ -662,7 +662,7 @@ class ListDesktopsDetailRequest:
 
     @in_maintenance_mode.setter
     def in_maintenance_mode(self, in_maintenance_mode):
-        """Sets the in_maintenance_mode of this ListDesktopsDetailRequest.
+        r"""Sets the in_maintenance_mode of this ListDesktopsDetailRequest.
 
         按照维护模式过滤
 
@@ -673,7 +673,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def is_share_desktop(self):
-        """Gets the is_share_desktop of this ListDesktopsDetailRequest.
+        r"""Gets the is_share_desktop of this ListDesktopsDetailRequest.
 
         是否为协同桌面
 
@@ -684,7 +684,7 @@ class ListDesktopsDetailRequest:
 
     @is_share_desktop.setter
     def is_share_desktop(self, is_share_desktop):
-        """Sets the is_share_desktop of this ListDesktopsDetailRequest.
+        r"""Sets the is_share_desktop of this ListDesktopsDetailRequest.
 
         是否为协同桌面
 
@@ -695,7 +695,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListDesktopsDetailRequest.
+        r"""Gets the subnet_id of this ListDesktopsDetailRequest.
 
         桌面的子网ID。
 
@@ -706,7 +706,7 @@ class ListDesktopsDetailRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListDesktopsDetailRequest.
+        r"""Sets the subnet_id of this ListDesktopsDetailRequest.
 
         桌面的子网ID。
 
@@ -717,7 +717,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def is_support_internet(self):
-        """Gets the is_support_internet of this ListDesktopsDetailRequest.
+        r"""Gets the is_support_internet of this ListDesktopsDetailRequest.
 
         是否支持上网。
 
@@ -728,7 +728,7 @@ class ListDesktopsDetailRequest:
 
     @is_support_internet.setter
     def is_support_internet(self, is_support_internet):
-        """Sets the is_support_internet of this ListDesktopsDetailRequest.
+        r"""Sets the is_support_internet of this ListDesktopsDetailRequest.
 
         是否支持上网。
 
@@ -739,7 +739,7 @@ class ListDesktopsDetailRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListDesktopsDetailRequest.
+        r"""Gets the availability_zone of this ListDesktopsDetailRequest.
 
         查询可用区
 
@@ -750,7 +750,7 @@ class ListDesktopsDetailRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListDesktopsDetailRequest.
+        r"""Sets the availability_zone of this ListDesktopsDetailRequest.
 
         查询可用区
 

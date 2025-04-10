@@ -27,7 +27,7 @@ class AssignedUserInfo:
     }
 
     def __init__(self, id=None, name=None):
-        """AssignedUserInfo
+        r"""AssignedUserInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AssignedUserInfo:
 
     @property
     def id(self):
-        """Gets the id of this AssignedUserInfo.
+        r"""Gets the id of this AssignedUserInfo.
 
         id信息
 
@@ -61,7 +61,7 @@ class AssignedUserInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AssignedUserInfo.
+        r"""Sets the id of this AssignedUserInfo.
 
         id信息
 
@@ -72,7 +72,7 @@ class AssignedUserInfo:
 
     @property
     def name(self):
-        """Gets the name of this AssignedUserInfo.
+        r"""Gets the name of this AssignedUserInfo.
 
         名称信息
 
@@ -83,7 +83,7 @@ class AssignedUserInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AssignedUserInfo.
+        r"""Sets the name of this AssignedUserInfo.
 
         名称信息
 

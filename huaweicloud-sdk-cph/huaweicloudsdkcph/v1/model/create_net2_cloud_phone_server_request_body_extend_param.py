@@ -35,7 +35,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
     }
 
     def __init__(self, charging_mode=None, period_type=None, period_num=None, is_auto_pay=None, is_auto_renew=None, enterprise_project_id=None):
-        """CreateNet2CloudPhoneServerRequestBodyExtendParam
+        r"""CreateNet2CloudPhoneServerRequestBodyExtendParam
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+        r"""Gets the charging_mode of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
         计费类型。  [- 0：包周期](tag:hws,hws_hk,cmcc) [- 1：按需](tag:fcs)
 
@@ -86,7 +86,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+        r"""Sets the charging_mode of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
         计费类型。  [- 0：包周期](tag:hws,hws_hk,cmcc) [- 1：按需](tag:fcs)
 
@@ -97,7 +97,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
 
     @property
     def period_type(self):
-        """Gets the period_type of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+        r"""Gets the period_type of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
         订购周期类型。 - 2：月 - 3：年
 
@@ -108,7 +108,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+        r"""Sets the period_type of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
         订购周期类型。 - 2：月 - 3：年
 
@@ -119,7 +119,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
 
     @property
     def period_num(self):
-        """Gets the period_num of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+        r"""Gets the period_num of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
         订购周期数。 当订购周期为月时，取值范围[1, 9]。 当订购周期为年时，取值范围[1,10]。
 
@@ -130,7 +130,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+        r"""Sets the period_num of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
         订购周期数。 当订购周期为月时，取值范围[1, 9]。 当订购周期为年时，取值范围[1,10]。
 
@@ -141,7 +141,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+        r"""Gets the is_auto_pay of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
         是否自动付款。默认不自动付款。 - 1：自动付款 - 0：不自动付款
 
@@ -152,7 +152,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+        r"""Sets the is_auto_pay of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
         是否自动付款。默认不自动付款。 - 1：自动付款 - 0：不自动付款
 
@@ -163,7 +163,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+        r"""Gets the is_auto_renew of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
         是否自动续订。默认不自动续订。 - 1：自动续订 - 0：不自动续订
 
@@ -174,7 +174,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+        r"""Sets the is_auto_renew of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
         是否自动续订。默认不自动续订。 - 1：自动续订 - 0：不自动续订
 
@@ -185,7 +185,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+        r"""Gets the enterprise_project_id of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
         企业项目ID。 该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。
 
@@ -196,7 +196,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
+        r"""Sets the enterprise_project_id of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
         企业项目ID。 该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。
 

@@ -27,7 +27,7 @@ class Resource:
     }
 
     def __init__(self, resource_id=None, resource_type=None):
-        """Resource
+        r"""Resource
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Resource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this Resource.
+        r"""Gets the resource_id of this Resource.
 
         资源id
 
@@ -61,7 +61,7 @@ class Resource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this Resource.
+        r"""Sets the resource_id of this Resource.
 
         资源id
 
@@ -72,7 +72,7 @@ class Resource:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Resource.
+        r"""Gets the resource_type of this Resource.
 
         资源类型：server(服务器)
 
@@ -83,7 +83,7 @@ class Resource:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Resource.
+        r"""Sets the resource_type of this Resource.
 
         资源类型：server(服务器)
 

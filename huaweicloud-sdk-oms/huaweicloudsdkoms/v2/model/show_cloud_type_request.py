@@ -25,7 +25,7 @@ class ShowCloudTypeRequest:
     }
 
     def __init__(self, type=None):
-        """ShowCloudTypeRequest
+        r"""ShowCloudTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCloudTypeRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowCloudTypeRequest.
+        r"""Gets the type of this ShowCloudTypeRequest.
 
         连接端类型源端(src)，目的端(dst)
 
@@ -53,7 +53,7 @@ class ShowCloudTypeRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowCloudTypeRequest.
+        r"""Sets the type of this ShowCloudTypeRequest.
 
         连接端类型源端(src)，目的端(dst)
 

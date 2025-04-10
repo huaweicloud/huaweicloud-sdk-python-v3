@@ -25,7 +25,7 @@ class ShowMigrateStatusRequest:
     }
 
     def __init__(self, all_regions=None):
-        """ShowMigrateStatusRequest
+        r"""ShowMigrateStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowMigrateStatusRequest:
 
     @property
     def all_regions(self):
-        """Gets the all_regions of this ShowMigrateStatusRequest.
+        r"""Gets the all_regions of this ShowMigrateStatusRequest.
 
         是否查询其他区域结果
 
@@ -54,7 +54,7 @@ class ShowMigrateStatusRequest:
 
     @all_regions.setter
     def all_regions(self, all_regions):
-        """Sets the all_regions of this ShowMigrateStatusRequest.
+        r"""Sets the all_regions of this ShowMigrateStatusRequest.
 
         是否查询其他区域结果
 

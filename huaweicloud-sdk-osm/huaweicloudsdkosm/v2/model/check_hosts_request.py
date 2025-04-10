@@ -33,7 +33,7 @@ class CheckHostsRequest:
     }
 
     def __init__(self, authorization_detail_id=None, x_site=None, x_language=None, x_time_zone=None, body=None):
-        """CheckHostsRequest
+        r"""CheckHostsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CheckHostsRequest:
 
     @property
     def authorization_detail_id(self):
-        """Gets the authorization_detail_id of this CheckHostsRequest.
+        r"""Gets the authorization_detail_id of this CheckHostsRequest.
 
         授权详情id
 
@@ -81,7 +81,7 @@ class CheckHostsRequest:
 
     @authorization_detail_id.setter
     def authorization_detail_id(self, authorization_detail_id):
-        """Sets the authorization_detail_id of this CheckHostsRequest.
+        r"""Sets the authorization_detail_id of this CheckHostsRequest.
 
         授权详情id
 
@@ -92,7 +92,7 @@ class CheckHostsRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this CheckHostsRequest.
+        r"""Gets the x_site of this CheckHostsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -103,7 +103,7 @@ class CheckHostsRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this CheckHostsRequest.
+        r"""Sets the x_site of this CheckHostsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -114,7 +114,7 @@ class CheckHostsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CheckHostsRequest.
+        r"""Gets the x_language of this CheckHostsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -125,7 +125,7 @@ class CheckHostsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CheckHostsRequest.
+        r"""Sets the x_language of this CheckHostsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -136,7 +136,7 @@ class CheckHostsRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this CheckHostsRequest.
+        r"""Gets the x_time_zone of this CheckHostsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -147,7 +147,7 @@ class CheckHostsRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this CheckHostsRequest.
+        r"""Sets the x_time_zone of this CheckHostsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -158,7 +158,7 @@ class CheckHostsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckHostsRequest.
+        r"""Gets the body of this CheckHostsRequest.
 
         :return: The body of this CheckHostsRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.VerifyHostV2Req`
@@ -167,7 +167,7 @@ class CheckHostsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckHostsRequest.
+        r"""Sets the body of this CheckHostsRequest.
 
         :param body: The body of this CheckHostsRequest.
         :type body: :class:`huaweicloudsdkosm.v2.VerifyHostV2Req`

@@ -27,7 +27,7 @@ class ExtractAudioTaskReq:
     }
 
     def __init__(self, asset_id=None, parameter=None):
-        """ExtractAudioTaskReq
+        r"""ExtractAudioTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExtractAudioTaskReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ExtractAudioTaskReq.
+        r"""Gets the asset_id of this ExtractAudioTaskReq.
 
         媒资ID。
 
@@ -60,7 +60,7 @@ class ExtractAudioTaskReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ExtractAudioTaskReq.
+        r"""Sets the asset_id of this ExtractAudioTaskReq.
 
         媒资ID。
 
@@ -71,7 +71,7 @@ class ExtractAudioTaskReq:
 
     @property
     def parameter(self):
-        """Gets the parameter of this ExtractAudioTaskReq.
+        r"""Gets the parameter of this ExtractAudioTaskReq.
 
         :return: The parameter of this ExtractAudioTaskReq.
         :rtype: :class:`huaweicloudsdkvod.v1.Parameter`
@@ -80,7 +80,7 @@ class ExtractAudioTaskReq:
 
     @parameter.setter
     def parameter(self, parameter):
-        """Sets the parameter of this ExtractAudioTaskReq.
+        r"""Sets the parameter of this ExtractAudioTaskReq.
 
         :param parameter: The parameter of this ExtractAudioTaskReq.
         :type parameter: :class:`huaweicloudsdkvod.v1.Parameter`

@@ -28,7 +28,7 @@ class ShowRouteTableResponse(SdkResponse):
     }
 
     def __init__(self, route_table=None, request_id=None):
-        """ShowRouteTableResponse
+        r"""ShowRouteTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowRouteTableResponse(SdkResponse):
 
     @property
     def route_table(self):
-        """Gets the route_table of this ShowRouteTableResponse.
+        r"""Gets the route_table of this ShowRouteTableResponse.
 
         :return: The route_table of this ShowRouteTableResponse.
         :rtype: :class:`huaweicloudsdker.v3.RouteTable`
@@ -60,7 +60,7 @@ class ShowRouteTableResponse(SdkResponse):
 
     @route_table.setter
     def route_table(self, route_table):
-        """Sets the route_table of this ShowRouteTableResponse.
+        r"""Sets the route_table of this ShowRouteTableResponse.
 
         :param route_table: The route_table of this ShowRouteTableResponse.
         :type route_table: :class:`huaweicloudsdker.v3.RouteTable`
@@ -69,7 +69,7 @@ class ShowRouteTableResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowRouteTableResponse.
+        r"""Gets the request_id of this ShowRouteTableResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class ShowRouteTableResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowRouteTableResponse.
+        r"""Sets the request_id of this ShowRouteTableResponse.
 
         请求ID
 

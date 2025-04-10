@@ -69,7 +69,7 @@ class ListResourceRequest:
     }
 
     def __init__(self, provider=None, type=None, limit=None, marker=None, resource_id_list=None, name=None, region_id=None, az_id=None, ip_type=None, ip=None, status=None, agent_state=None, image_name=None, os_type=None, tag=None, tag_key=None, group_id=None, component_id=None, application_id=None, cce_cluster_id=None, vpc_id=None, ep_id=None, is_delegated=None):
-        """ListResourceRequest
+        r"""ListResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -194,7 +194,7 @@ class ListResourceRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this ListResourceRequest.
+        r"""Gets the provider of this ListResourceRequest.
 
         云服务名称
 
@@ -205,7 +205,7 @@ class ListResourceRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ListResourceRequest.
+        r"""Sets the provider of this ListResourceRequest.
 
         云服务名称
 
@@ -216,7 +216,7 @@ class ListResourceRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListResourceRequest.
+        r"""Gets the type of this ListResourceRequest.
 
         资源类型名称
 
@@ -227,7 +227,7 @@ class ListResourceRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListResourceRequest.
+        r"""Sets the type of this ListResourceRequest.
 
         资源类型名称
 
@@ -238,7 +238,7 @@ class ListResourceRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourceRequest.
+        r"""Gets the limit of this ListResourceRequest.
 
         最大的返回数量
 
@@ -249,7 +249,7 @@ class ListResourceRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourceRequest.
+        r"""Sets the limit of this ListResourceRequest.
 
         最大的返回数量
 
@@ -260,7 +260,7 @@ class ListResourceRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListResourceRequest.
+        r"""Gets the marker of this ListResourceRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -271,7 +271,7 @@ class ListResourceRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListResourceRequest.
+        r"""Sets the marker of this ListResourceRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -282,7 +282,7 @@ class ListResourceRequest:
 
     @property
     def resource_id_list(self):
-        """Gets the resource_id_list of this ListResourceRequest.
+        r"""Gets the resource_id_list of this ListResourceRequest.
 
         资源id列表
 
@@ -293,7 +293,7 @@ class ListResourceRequest:
 
     @resource_id_list.setter
     def resource_id_list(self, resource_id_list):
-        """Sets the resource_id_list of this ListResourceRequest.
+        r"""Sets the resource_id_list of this ListResourceRequest.
 
         资源id列表
 
@@ -304,7 +304,7 @@ class ListResourceRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListResourceRequest.
+        r"""Gets the name of this ListResourceRequest.
 
         名称
 
@@ -315,7 +315,7 @@ class ListResourceRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListResourceRequest.
+        r"""Sets the name of this ListResourceRequest.
 
         名称
 
@@ -326,7 +326,7 @@ class ListResourceRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListResourceRequest.
+        r"""Gets the region_id of this ListResourceRequest.
 
         region id
 
@@ -337,7 +337,7 @@ class ListResourceRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListResourceRequest.
+        r"""Sets the region_id of this ListResourceRequest.
 
         region id
 
@@ -348,7 +348,7 @@ class ListResourceRequest:
 
     @property
     def az_id(self):
-        """Gets the az_id of this ListResourceRequest.
+        r"""Gets the az_id of this ListResourceRequest.
 
         az id
 
@@ -359,7 +359,7 @@ class ListResourceRequest:
 
     @az_id.setter
     def az_id(self, az_id):
-        """Sets the az_id of this ListResourceRequest.
+        r"""Sets the az_id of this ListResourceRequest.
 
         az id
 
@@ -370,7 +370,7 @@ class ListResourceRequest:
 
     @property
     def ip_type(self):
-        """Gets the ip_type of this ListResourceRequest.
+        r"""Gets the ip_type of this ListResourceRequest.
 
         ip类型，fixed：内网IP，floating：弹性公网IP
 
@@ -381,7 +381,7 @@ class ListResourceRequest:
 
     @ip_type.setter
     def ip_type(self, ip_type):
-        """Sets the ip_type of this ListResourceRequest.
+        r"""Sets the ip_type of this ListResourceRequest.
 
         ip类型，fixed：内网IP，floating：弹性公网IP
 
@@ -392,7 +392,7 @@ class ListResourceRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListResourceRequest.
+        r"""Gets the ip of this ListResourceRequest.
 
         ip
 
@@ -403,7 +403,7 @@ class ListResourceRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListResourceRequest.
+        r"""Sets the ip of this ListResourceRequest.
 
         ip
 
@@ -414,7 +414,7 @@ class ListResourceRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListResourceRequest.
+        r"""Gets the status of this ListResourceRequest.
 
         资源状态
 
@@ -425,7 +425,7 @@ class ListResourceRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListResourceRequest.
+        r"""Sets the status of this ListResourceRequest.
 
         资源状态
 
@@ -436,7 +436,7 @@ class ListResourceRequest:
 
     @property
     def agent_state(self):
-        """Gets the agent_state of this ListResourceRequest.
+        r"""Gets the agent_state of this ListResourceRequest.
 
         agent状态
 
@@ -447,7 +447,7 @@ class ListResourceRequest:
 
     @agent_state.setter
     def agent_state(self, agent_state):
-        """Sets the agent_state of this ListResourceRequest.
+        r"""Sets the agent_state of this ListResourceRequest.
 
         agent状态
 
@@ -458,7 +458,7 @@ class ListResourceRequest:
 
     @property
     def image_name(self):
-        """Gets the image_name of this ListResourceRequest.
+        r"""Gets the image_name of this ListResourceRequest.
 
         镜像名称，模糊匹配
 
@@ -469,7 +469,7 @@ class ListResourceRequest:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this ListResourceRequest.
+        r"""Sets the image_name of this ListResourceRequest.
 
         镜像名称，模糊匹配
 
@@ -480,7 +480,7 @@ class ListResourceRequest:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ListResourceRequest.
+        r"""Gets the os_type of this ListResourceRequest.
 
         系统类型
 
@@ -491,7 +491,7 @@ class ListResourceRequest:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ListResourceRequest.
+        r"""Sets the os_type of this ListResourceRequest.
 
         系统类型
 
@@ -502,7 +502,7 @@ class ListResourceRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ListResourceRequest.
+        r"""Gets the tag of this ListResourceRequest.
 
         标签的值
 
@@ -513,7 +513,7 @@ class ListResourceRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListResourceRequest.
+        r"""Sets the tag of this ListResourceRequest.
 
         标签的值
 
@@ -524,7 +524,7 @@ class ListResourceRequest:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this ListResourceRequest.
+        r"""Gets the tag_key of this ListResourceRequest.
 
         标签的key
 
@@ -535,7 +535,7 @@ class ListResourceRequest:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this ListResourceRequest.
+        r"""Sets the tag_key of this ListResourceRequest.
 
         标签的key
 
@@ -546,7 +546,7 @@ class ListResourceRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListResourceRequest.
+        r"""Gets the group_id of this ListResourceRequest.
 
         分组id
 
@@ -557,7 +557,7 @@ class ListResourceRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListResourceRequest.
+        r"""Sets the group_id of this ListResourceRequest.
 
         分组id
 
@@ -568,7 +568,7 @@ class ListResourceRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ListResourceRequest.
+        r"""Gets the component_id of this ListResourceRequest.
 
         组件id
 
@@ -579,7 +579,7 @@ class ListResourceRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ListResourceRequest.
+        r"""Sets the component_id of this ListResourceRequest.
 
         组件id
 
@@ -590,7 +590,7 @@ class ListResourceRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ListResourceRequest.
+        r"""Gets the application_id of this ListResourceRequest.
 
         应用id
 
@@ -601,7 +601,7 @@ class ListResourceRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ListResourceRequest.
+        r"""Sets the application_id of this ListResourceRequest.
 
         应用id
 
@@ -612,7 +612,7 @@ class ListResourceRequest:
 
     @property
     def cce_cluster_id(self):
-        """Gets the cce_cluster_id of this ListResourceRequest.
+        r"""Gets the cce_cluster_id of this ListResourceRequest.
 
         cce集群id
 
@@ -623,7 +623,7 @@ class ListResourceRequest:
 
     @cce_cluster_id.setter
     def cce_cluster_id(self, cce_cluster_id):
-        """Sets the cce_cluster_id of this ListResourceRequest.
+        r"""Sets the cce_cluster_id of this ListResourceRequest.
 
         cce集群id
 
@@ -634,7 +634,7 @@ class ListResourceRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListResourceRequest.
+        r"""Gets the vpc_id of this ListResourceRequest.
 
         vpc id
 
@@ -645,7 +645,7 @@ class ListResourceRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListResourceRequest.
+        r"""Sets the vpc_id of this ListResourceRequest.
 
         vpc id
 
@@ -656,7 +656,7 @@ class ListResourceRequest:
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this ListResourceRequest.
+        r"""Gets the ep_id of this ListResourceRequest.
 
         企业项目id
 
@@ -667,7 +667,7 @@ class ListResourceRequest:
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this ListResourceRequest.
+        r"""Sets the ep_id of this ListResourceRequest.
 
         企业项目id
 
@@ -678,7 +678,7 @@ class ListResourceRequest:
 
     @property
     def is_delegated(self):
-        """Gets the is_delegated of this ListResourceRequest.
+        r"""Gets the is_delegated of this ListResourceRequest.
 
         资源是否已托管
 
@@ -689,7 +689,7 @@ class ListResourceRequest:
 
     @is_delegated.setter
     def is_delegated(self, is_delegated):
-        """Sets the is_delegated of this ListResourceRequest.
+        r"""Sets the is_delegated of this ListResourceRequest.
 
         资源是否已托管
 

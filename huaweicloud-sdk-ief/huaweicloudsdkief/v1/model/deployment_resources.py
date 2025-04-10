@@ -27,7 +27,7 @@ class DeploymentResources:
     }
 
     def __init__(self, limits=None, requests=None):
-        """DeploymentResources
+        r"""DeploymentResources
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeploymentResources:
 
     @property
     def limits(self):
-        """Gets the limits of this DeploymentResources.
+        r"""Gets the limits of this DeploymentResources.
 
         - 允许容器使用的最大资源，key值支持填写：cpu, memory, gpu, npu。 - 申请NPU资源时可填写指定的NPU芯片类型，支持填写：D310、D310B。注意：key值填写为npu时，默认使用npu_type字段指定的芯片类型。如果npu_type字段为空，默认使用D310芯片类型。
 
@@ -61,7 +61,7 @@ class DeploymentResources:
 
     @limits.setter
     def limits(self, limits):
-        """Sets the limits of this DeploymentResources.
+        r"""Sets the limits of this DeploymentResources.
 
         - 允许容器使用的最大资源，key值支持填写：cpu, memory, gpu, npu。 - 申请NPU资源时可填写指定的NPU芯片类型，支持填写：D310、D310B。注意：key值填写为npu时，默认使用npu_type字段指定的芯片类型。如果npu_type字段为空，默认使用D310芯片类型。
 
@@ -72,7 +72,7 @@ class DeploymentResources:
 
     @property
     def requests(self):
-        """Gets the requests of this DeploymentResources.
+        r"""Gets the requests of this DeploymentResources.
 
         - 容器需要使用的最小资源，key值支持填写：cpu, memory, gpu, npu - 申请NPU资源时可填写指定的NPU芯片类型，支持填写：D310、D310B。注意：key值填写为npu时，默认使用npu_type字段指定的芯片类型。如果npu_type字段为空，默认使用D310芯片类型。
 
@@ -83,7 +83,7 @@ class DeploymentResources:
 
     @requests.setter
     def requests(self, requests):
-        """Sets the requests of this DeploymentResources.
+        r"""Sets the requests of this DeploymentResources.
 
         - 容器需要使用的最小资源，key值支持填写：cpu, memory, gpu, npu - 申请NPU资源时可填写指定的NPU芯片类型，支持填写：D310、D310B。注意：key值填写为npu时，默认使用npu_type字段指定的芯片类型。如果npu_type字段为空，默认使用D310芯片类型。
 

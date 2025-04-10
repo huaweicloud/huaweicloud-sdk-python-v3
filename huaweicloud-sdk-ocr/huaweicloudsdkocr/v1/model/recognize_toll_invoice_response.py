@@ -28,7 +28,7 @@ class RecognizeTollInvoiceResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeTollInvoiceResponse
+        r"""RecognizeTollInvoiceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeTollInvoiceResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeTollInvoiceResponse.
+        r"""Gets the result of this RecognizeTollInvoiceResponse.
 
         :return: The result of this RecognizeTollInvoiceResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.TollInvoiceResult`
@@ -60,7 +60,7 @@ class RecognizeTollInvoiceResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeTollInvoiceResponse.
+        r"""Sets the result of this RecognizeTollInvoiceResponse.
 
         :param result: The result of this RecognizeTollInvoiceResponse.
         :type result: :class:`huaweicloudsdkocr.v1.TollInvoiceResult`
@@ -69,7 +69,7 @@ class RecognizeTollInvoiceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeTollInvoiceResponse.
+        r"""Gets the x_request_id of this RecognizeTollInvoiceResponse.
 
         :return: The x_request_id of this RecognizeTollInvoiceResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeTollInvoiceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeTollInvoiceResponse.
+        r"""Sets the x_request_id of this RecognizeTollInvoiceResponse.
 
         :param x_request_id: The x_request_id of this RecognizeTollInvoiceResponse.
         :type x_request_id: str

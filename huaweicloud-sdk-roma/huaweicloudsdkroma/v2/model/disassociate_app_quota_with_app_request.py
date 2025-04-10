@@ -29,7 +29,7 @@ class DisassociateAppQuotaWithAppRequest:
     }
 
     def __init__(self, instance_id=None, app_quota_id=None, app_id=None):
-        """DisassociateAppQuotaWithAppRequest
+        r"""DisassociateAppQuotaWithAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DisassociateAppQuotaWithAppRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DisassociateAppQuotaWithAppRequest.
+        r"""Gets the instance_id of this DisassociateAppQuotaWithAppRequest.
 
         实例ID
 
@@ -65,7 +65,7 @@ class DisassociateAppQuotaWithAppRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DisassociateAppQuotaWithAppRequest.
+        r"""Sets the instance_id of this DisassociateAppQuotaWithAppRequest.
 
         实例ID
 
@@ -76,7 +76,7 @@ class DisassociateAppQuotaWithAppRequest:
 
     @property
     def app_quota_id(self):
-        """Gets the app_quota_id of this DisassociateAppQuotaWithAppRequest.
+        r"""Gets the app_quota_id of this DisassociateAppQuotaWithAppRequest.
 
         客户端配额编号
 
@@ -87,7 +87,7 @@ class DisassociateAppQuotaWithAppRequest:
 
     @app_quota_id.setter
     def app_quota_id(self, app_quota_id):
-        """Sets the app_quota_id of this DisassociateAppQuotaWithAppRequest.
+        r"""Sets the app_quota_id of this DisassociateAppQuotaWithAppRequest.
 
         客户端配额编号
 
@@ -98,7 +98,7 @@ class DisassociateAppQuotaWithAppRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this DisassociateAppQuotaWithAppRequest.
+        r"""Gets the app_id of this DisassociateAppQuotaWithAppRequest.
 
         应用编号
 
@@ -109,7 +109,7 @@ class DisassociateAppQuotaWithAppRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this DisassociateAppQuotaWithAppRequest.
+        r"""Sets the app_id of this DisassociateAppQuotaWithAppRequest.
 
         应用编号
 

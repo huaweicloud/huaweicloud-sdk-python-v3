@@ -28,7 +28,7 @@ class DeleteEndpointPermissionsResponse(SdkResponse):
     }
 
     def __init__(self, permissions=None, x_request_id=None):
-        """DeleteEndpointPermissionsResponse
+        r"""DeleteEndpointPermissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteEndpointPermissionsResponse(SdkResponse):
 
     @property
     def permissions(self):
-        """Gets the permissions of this DeleteEndpointPermissionsResponse.
+        r"""Gets the permissions of this DeleteEndpointPermissionsResponse.
 
         白名单记录列表。每个白名单记录的格式为iam:domain::授权账号ID。  其中，授权账号ID是长度为32的字符串，只包含英文字母（a-f）或数字；也可为*，表示允许全部用户连接。
 
@@ -62,7 +62,7 @@ class DeleteEndpointPermissionsResponse(SdkResponse):
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this DeleteEndpointPermissionsResponse.
+        r"""Sets the permissions of this DeleteEndpointPermissionsResponse.
 
         白名单记录列表。每个白名单记录的格式为iam:domain::授权账号ID。  其中，授权账号ID是长度为32的字符串，只包含英文字母（a-f）或数字；也可为*，表示允许全部用户连接。
 
@@ -73,7 +73,7 @@ class DeleteEndpointPermissionsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteEndpointPermissionsResponse.
+        r"""Gets the x_request_id of this DeleteEndpointPermissionsResponse.
 
         :return: The x_request_id of this DeleteEndpointPermissionsResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class DeleteEndpointPermissionsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteEndpointPermissionsResponse.
+        r"""Sets the x_request_id of this DeleteEndpointPermissionsResponse.
 
         :param x_request_id: The x_request_id of this DeleteEndpointPermissionsResponse.
         :type x_request_id: str

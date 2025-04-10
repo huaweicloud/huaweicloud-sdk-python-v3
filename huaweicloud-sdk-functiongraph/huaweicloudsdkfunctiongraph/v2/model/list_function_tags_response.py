@@ -28,7 +28,7 @@ class ListFunctionTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, sys_tags=None):
-        """ListFunctionTagsResponse
+        r"""ListFunctionTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFunctionTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListFunctionTagsResponse.
+        r"""Gets the tags of this ListFunctionTagsResponse.
 
         标签列表
 
@@ -62,7 +62,7 @@ class ListFunctionTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListFunctionTagsResponse.
+        r"""Sets the tags of this ListFunctionTagsResponse.
 
         标签列表
 
@@ -73,7 +73,7 @@ class ListFunctionTagsResponse(SdkResponse):
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ListFunctionTagsResponse.
+        r"""Gets the sys_tags of this ListFunctionTagsResponse.
 
         系统标签列表
 
@@ -84,7 +84,7 @@ class ListFunctionTagsResponse(SdkResponse):
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ListFunctionTagsResponse.
+        r"""Sets the sys_tags of this ListFunctionTagsResponse.
 
         系统标签列表
 

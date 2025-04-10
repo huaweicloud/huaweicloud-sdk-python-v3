@@ -25,7 +25,7 @@ class InferenceActionMarkInfo:
     }
 
     def __init__(self, action_info=None):
-        """InferenceActionMarkInfo
+        r"""InferenceActionMarkInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class InferenceActionMarkInfo:
 
     @property
     def action_info(self):
-        """Gets the action_info of this InferenceActionMarkInfo.
+        r"""Gets the action_info of this InferenceActionMarkInfo.
 
         动作列表。
 
@@ -54,7 +54,7 @@ class InferenceActionMarkInfo:
 
     @action_info.setter
     def action_info(self, action_info):
-        """Sets the action_info of this InferenceActionMarkInfo.
+        r"""Sets the action_info of this InferenceActionMarkInfo.
 
         动作列表。
 

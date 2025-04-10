@@ -24,7 +24,7 @@ class MigrateResourceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """MigrateResourceResponse
+        r"""MigrateResourceResponse
 
         The model defined in huaweicloud sdk
 

@@ -26,7 +26,7 @@ class DescribeAccountAssignmentCreationStatusResponse(SdkResponse):
     }
 
     def __init__(self, account_assignment_creation_status=None):
-        """DescribeAccountAssignmentCreationStatusResponse
+        r"""DescribeAccountAssignmentCreationStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DescribeAccountAssignmentCreationStatusResponse(SdkResponse):
 
     @property
     def account_assignment_creation_status(self):
-        """Gets the account_assignment_creation_status of this DescribeAccountAssignmentCreationStatusResponse.
+        r"""Gets the account_assignment_creation_status of this DescribeAccountAssignmentCreationStatusResponse.
 
         :return: The account_assignment_creation_status of this DescribeAccountAssignmentCreationStatusResponse.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.AccountAssignmentOperationStatusDto`
@@ -53,7 +53,7 @@ class DescribeAccountAssignmentCreationStatusResponse(SdkResponse):
 
     @account_assignment_creation_status.setter
     def account_assignment_creation_status(self, account_assignment_creation_status):
-        """Sets the account_assignment_creation_status of this DescribeAccountAssignmentCreationStatusResponse.
+        r"""Sets the account_assignment_creation_status of this DescribeAccountAssignmentCreationStatusResponse.
 
         :param account_assignment_creation_status: The account_assignment_creation_status of this DescribeAccountAssignmentCreationStatusResponse.
         :type account_assignment_creation_status: :class:`huaweicloudsdkidentitycenter.v1.AccountAssignmentOperationStatusDto`

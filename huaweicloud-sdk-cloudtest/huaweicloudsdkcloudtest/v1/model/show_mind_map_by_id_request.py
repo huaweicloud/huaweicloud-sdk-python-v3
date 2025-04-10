@@ -27,7 +27,7 @@ class ShowMindMapByIdRequest:
     }
 
     def __init__(self, project_id=None, id=None):
-        """ShowMindMapByIdRequest
+        r"""ShowMindMapByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowMindMapByIdRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowMindMapByIdRequest.
+        r"""Gets the project_id of this ShowMindMapByIdRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -59,7 +59,7 @@ class ShowMindMapByIdRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowMindMapByIdRequest.
+        r"""Sets the project_id of this ShowMindMapByIdRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -70,7 +70,7 @@ class ShowMindMapByIdRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowMindMapByIdRequest.
+        r"""Gets the id of this ShowMindMapByIdRequest.
 
         脑图ID
 
@@ -81,7 +81,7 @@ class ShowMindMapByIdRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowMindMapByIdRequest.
+        r"""Sets the id of this ShowMindMapByIdRequest.
 
         脑图ID
 

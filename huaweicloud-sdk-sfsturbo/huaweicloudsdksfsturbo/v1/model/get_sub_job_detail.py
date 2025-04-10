@@ -37,7 +37,7 @@ class GetSubJobDetail:
     }
 
     def __init__(self, status=None, job_id=None, job_type=None, begin_time=None, end_time=None, error_code=None, fail_reason=None):
-        """GetSubJobDetail
+        r"""GetSubJobDetail
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class GetSubJobDetail:
 
     @property
     def status(self):
-        """Gets the status of this GetSubJobDetail.
+        r"""Gets the status of this GetSubJobDetail.
 
         子job的状态。success：成功。running：运行中。failed：失败。waiting：等待执行。
 
@@ -96,7 +96,7 @@ class GetSubJobDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetSubJobDetail.
+        r"""Sets the status of this GetSubJobDetail.
 
         子job的状态。success：成功。running：运行中。failed：失败。waiting：等待执行。
 
@@ -107,7 +107,7 @@ class GetSubJobDetail:
 
     @property
     def job_id(self):
-        """Gets the job_id of this GetSubJobDetail.
+        r"""Gets the job_id of this GetSubJobDetail.
 
         job的ID。
 
@@ -118,7 +118,7 @@ class GetSubJobDetail:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this GetSubJobDetail.
+        r"""Sets the job_id of this GetSubJobDetail.
 
         job的ID。
 
@@ -129,7 +129,7 @@ class GetSubJobDetail:
 
     @property
     def job_type(self):
-        """Gets the job_type of this GetSubJobDetail.
+        r"""Gets the job_type of this GetSubJobDetail.
 
         子job的类型。
 
@@ -140,7 +140,7 @@ class GetSubJobDetail:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this GetSubJobDetail.
+        r"""Sets the job_type of this GetSubJobDetail.
 
         子job的类型。
 
@@ -151,7 +151,7 @@ class GetSubJobDetail:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this GetSubJobDetail.
+        r"""Gets the begin_time of this GetSubJobDetail.
 
         job开始时间。UTC时间，格式：'2016-01-02 15:04:05'
 
@@ -162,7 +162,7 @@ class GetSubJobDetail:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this GetSubJobDetail.
+        r"""Sets the begin_time of this GetSubJobDetail.
 
         job开始时间。UTC时间，格式：'2016-01-02 15:04:05'
 
@@ -173,7 +173,7 @@ class GetSubJobDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this GetSubJobDetail.
+        r"""Gets the end_time of this GetSubJobDetail.
 
         job结束时间。UTC时间，格式：'2016-01-02 15:04:05'
 
@@ -184,7 +184,7 @@ class GetSubJobDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this GetSubJobDetail.
+        r"""Sets the end_time of this GetSubJobDetail.
 
         job结束时间。UTC时间，格式：'2016-01-02 15:04:05'
 
@@ -195,7 +195,7 @@ class GetSubJobDetail:
 
     @property
     def error_code(self):
-        """Gets the error_code of this GetSubJobDetail.
+        r"""Gets the error_code of this GetSubJobDetail.
 
         job执行失败时的错误码
 
@@ -206,7 +206,7 @@ class GetSubJobDetail:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this GetSubJobDetail.
+        r"""Sets the error_code of this GetSubJobDetail.
 
         job执行失败时的错误码
 
@@ -217,7 +217,7 @@ class GetSubJobDetail:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this GetSubJobDetail.
+        r"""Gets the fail_reason of this GetSubJobDetail.
 
         job执行失败时的错误原因
 
@@ -228,7 +228,7 @@ class GetSubJobDetail:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this GetSubJobDetail.
+        r"""Sets the fail_reason of this GetSubJobDetail.
 
         job执行失败时的错误原因
 

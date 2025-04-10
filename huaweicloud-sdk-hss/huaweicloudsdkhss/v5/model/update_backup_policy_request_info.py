@@ -31,7 +31,7 @@ class UpdateBackupPolicyRequestInfo:
     }
 
     def __init__(self, enabled=None, policy_id=None, operation_definition=None, trigger=None):
-        """UpdateBackupPolicyRequestInfo
+        r"""UpdateBackupPolicyRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateBackupPolicyRequestInfo:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateBackupPolicyRequestInfo.
+        r"""Gets the enabled of this UpdateBackupPolicyRequestInfo.
 
         策略是否启用，缺省值：true
 
@@ -74,7 +74,7 @@ class UpdateBackupPolicyRequestInfo:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateBackupPolicyRequestInfo.
+        r"""Sets the enabled of this UpdateBackupPolicyRequestInfo.
 
         策略是否启用，缺省值：true
 
@@ -85,7 +85,7 @@ class UpdateBackupPolicyRequestInfo:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateBackupPolicyRequestInfo.
+        r"""Gets the policy_id of this UpdateBackupPolicyRequestInfo.
 
         备份策略ID
 
@@ -96,7 +96,7 @@ class UpdateBackupPolicyRequestInfo:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateBackupPolicyRequestInfo.
+        r"""Sets the policy_id of this UpdateBackupPolicyRequestInfo.
 
         备份策略ID
 
@@ -107,7 +107,7 @@ class UpdateBackupPolicyRequestInfo:
 
     @property
     def operation_definition(self):
-        """Gets the operation_definition of this UpdateBackupPolicyRequestInfo.
+        r"""Gets the operation_definition of this UpdateBackupPolicyRequestInfo.
 
         :return: The operation_definition of this UpdateBackupPolicyRequestInfo.
         :rtype: :class:`huaweicloudsdkhss.v5.OperationDefinitionRequestInfo`
@@ -116,7 +116,7 @@ class UpdateBackupPolicyRequestInfo:
 
     @operation_definition.setter
     def operation_definition(self, operation_definition):
-        """Sets the operation_definition of this UpdateBackupPolicyRequestInfo.
+        r"""Sets the operation_definition of this UpdateBackupPolicyRequestInfo.
 
         :param operation_definition: The operation_definition of this UpdateBackupPolicyRequestInfo.
         :type operation_definition: :class:`huaweicloudsdkhss.v5.OperationDefinitionRequestInfo`
@@ -125,7 +125,7 @@ class UpdateBackupPolicyRequestInfo:
 
     @property
     def trigger(self):
-        """Gets the trigger of this UpdateBackupPolicyRequestInfo.
+        r"""Gets the trigger of this UpdateBackupPolicyRequestInfo.
 
         :return: The trigger of this UpdateBackupPolicyRequestInfo.
         :rtype: :class:`huaweicloudsdkhss.v5.BackupTriggerRequestInfo`
@@ -134,7 +134,7 @@ class UpdateBackupPolicyRequestInfo:
 
     @trigger.setter
     def trigger(self, trigger):
-        """Sets the trigger of this UpdateBackupPolicyRequestInfo.
+        r"""Sets the trigger of this UpdateBackupPolicyRequestInfo.
 
         :param trigger: The trigger of this UpdateBackupPolicyRequestInfo.
         :type trigger: :class:`huaweicloudsdkhss.v5.BackupTriggerRequestInfo`

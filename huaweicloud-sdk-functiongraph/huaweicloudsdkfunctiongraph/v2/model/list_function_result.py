@@ -105,7 +105,7 @@ class ListFunctionResult:
     }
 
     def __init__(self, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc_id=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, fail_count=None, is_bridge_function=None, bind_bridge_func_urns=None):
-        """ListFunctionResult
+        r"""ListFunctionResult
 
         The model defined in huaweicloud sdk
 
@@ -306,7 +306,7 @@ class ListFunctionResult:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListFunctionResult.
+        r"""Gets the resource_id of this ListFunctionResult.
 
         资源id。
 
@@ -317,7 +317,7 @@ class ListFunctionResult:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListFunctionResult.
+        r"""Sets the resource_id of this ListFunctionResult.
 
         资源id。
 
@@ -328,7 +328,7 @@ class ListFunctionResult:
 
     @property
     def func_urn(self):
-        """Gets the func_urn of this ListFunctionResult.
+        r"""Gets the func_urn of this ListFunctionResult.
 
         函数的URN（Uniform Resource Name），唯一标识函数。
 
@@ -339,7 +339,7 @@ class ListFunctionResult:
 
     @func_urn.setter
     def func_urn(self, func_urn):
-        """Sets the func_urn of this ListFunctionResult.
+        r"""Sets the func_urn of this ListFunctionResult.
 
         函数的URN（Uniform Resource Name），唯一标识函数。
 
@@ -350,7 +350,7 @@ class ListFunctionResult:
 
     @property
     def func_name(self):
-        """Gets the func_name of this ListFunctionResult.
+        r"""Gets the func_name of this ListFunctionResult.
 
         函数名称。
 
@@ -361,7 +361,7 @@ class ListFunctionResult:
 
     @func_name.setter
     def func_name(self, func_name):
-        """Sets the func_name of this ListFunctionResult.
+        r"""Sets the func_name of this ListFunctionResult.
 
         函数名称。
 
@@ -372,7 +372,7 @@ class ListFunctionResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListFunctionResult.
+        r"""Gets the domain_id of this ListFunctionResult.
 
         域名id。
 
@@ -383,7 +383,7 @@ class ListFunctionResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListFunctionResult.
+        r"""Sets the domain_id of this ListFunctionResult.
 
         域名id。
 
@@ -394,7 +394,7 @@ class ListFunctionResult:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListFunctionResult.
+        r"""Gets the namespace of this ListFunctionResult.
 
         租户的project id。
 
@@ -405,7 +405,7 @@ class ListFunctionResult:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListFunctionResult.
+        r"""Sets the namespace of this ListFunctionResult.
 
         租户的project id。
 
@@ -416,7 +416,7 @@ class ListFunctionResult:
 
     @property
     def project_name(self):
-        """Gets the project_name of this ListFunctionResult.
+        r"""Gets the project_name of this ListFunctionResult.
 
         租户的project name。
 
@@ -427,7 +427,7 @@ class ListFunctionResult:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ListFunctionResult.
+        r"""Sets the project_name of this ListFunctionResult.
 
         租户的project name。
 
@@ -438,7 +438,7 @@ class ListFunctionResult:
 
     @property
     def package(self):
-        """Gets the package of this ListFunctionResult.
+        r"""Gets the package of this ListFunctionResult.
 
         函数所属的分组Package，用于用户针对函数的自定义分组。
 
@@ -449,7 +449,7 @@ class ListFunctionResult:
 
     @package.setter
     def package(self, package):
-        """Sets the package of this ListFunctionResult.
+        r"""Sets the package of this ListFunctionResult.
 
         函数所属的分组Package，用于用户针对函数的自定义分组。
 
@@ -460,7 +460,7 @@ class ListFunctionResult:
 
     @property
     def runtime(self):
-        """Gets the runtime of this ListFunctionResult.
+        r"""Gets the runtime of this ListFunctionResult.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -471,7 +471,7 @@ class ListFunctionResult:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this ListFunctionResult.
+        r"""Sets the runtime of this ListFunctionResult.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -482,7 +482,7 @@ class ListFunctionResult:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ListFunctionResult.
+        r"""Gets the timeout of this ListFunctionResult.
 
         函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
@@ -493,7 +493,7 @@ class ListFunctionResult:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ListFunctionResult.
+        r"""Sets the timeout of this ListFunctionResult.
 
         函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
@@ -504,7 +504,7 @@ class ListFunctionResult:
 
     @property
     def handler(self):
-        """Gets the handler of this ListFunctionResult.
+        r"""Gets the handler of this ListFunctionResult.
 
         函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
 
@@ -515,7 +515,7 @@ class ListFunctionResult:
 
     @handler.setter
     def handler(self, handler):
-        """Sets the handler of this ListFunctionResult.
+        r"""Sets the handler of this ListFunctionResult.
 
         函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
 
@@ -526,7 +526,7 @@ class ListFunctionResult:
 
     @property
     def memory_size(self):
-        """Gets the memory_size of this ListFunctionResult.
+        r"""Gets the memory_size of this ListFunctionResult.
 
         函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
 
@@ -537,7 +537,7 @@ class ListFunctionResult:
 
     @memory_size.setter
     def memory_size(self, memory_size):
-        """Sets the memory_size of this ListFunctionResult.
+        r"""Sets the memory_size of this ListFunctionResult.
 
         函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
 
@@ -548,7 +548,7 @@ class ListFunctionResult:
 
     @property
     def gpu_memory(self):
-        """Gets the gpu_memory of this ListFunctionResult.
+        r"""Gets the gpu_memory of this ListFunctionResult.
 
         函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
 
@@ -559,7 +559,7 @@ class ListFunctionResult:
 
     @gpu_memory.setter
     def gpu_memory(self, gpu_memory):
-        """Sets the gpu_memory of this ListFunctionResult.
+        r"""Sets the gpu_memory of this ListFunctionResult.
 
         函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
 
@@ -570,7 +570,7 @@ class ListFunctionResult:
 
     @property
     def cpu(self):
-        """Gets the cpu of this ListFunctionResult.
+        r"""Gets the cpu of this ListFunctionResult.
 
         函数占用的cpu资源。 单位为millicore（1 core=1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。
 
@@ -581,7 +581,7 @@ class ListFunctionResult:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this ListFunctionResult.
+        r"""Sets the cpu of this ListFunctionResult.
 
         函数占用的cpu资源。 单位为millicore（1 core=1000 millicores）。 取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores）。
 
@@ -592,7 +592,7 @@ class ListFunctionResult:
 
     @property
     def code_type(self):
-        """Gets the code_type of this ListFunctionResult.
+        r"""Gets the code_type of this ListFunctionResult.
 
         函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
@@ -603,7 +603,7 @@ class ListFunctionResult:
 
     @code_type.setter
     def code_type(self, code_type):
-        """Sets the code_type of this ListFunctionResult.
+        r"""Sets the code_type of this ListFunctionResult.
 
         函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。
 
@@ -614,7 +614,7 @@ class ListFunctionResult:
 
     @property
     def code_url(self):
-        """Gets the code_url of this ListFunctionResult.
+        r"""Gets the code_url of this ListFunctionResult.
 
         当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
 
@@ -625,7 +625,7 @@ class ListFunctionResult:
 
     @code_url.setter
     def code_url(self, code_url):
-        """Sets the code_url of this ListFunctionResult.
+        r"""Sets the code_url of this ListFunctionResult.
 
         当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
 
@@ -636,7 +636,7 @@ class ListFunctionResult:
 
     @property
     def code_filename(self):
-        """Gets the code_filename of this ListFunctionResult.
+        r"""Gets the code_filename of this ListFunctionResult.
 
         函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
 
@@ -647,7 +647,7 @@ class ListFunctionResult:
 
     @code_filename.setter
     def code_filename(self, code_filename):
-        """Sets the code_filename of this ListFunctionResult.
+        r"""Sets the code_filename of this ListFunctionResult.
 
         函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。
 
@@ -658,7 +658,7 @@ class ListFunctionResult:
 
     @property
     def code_size(self):
-        """Gets the code_size of this ListFunctionResult.
+        r"""Gets the code_size of this ListFunctionResult.
 
         函数大小，单位：字节。
 
@@ -669,7 +669,7 @@ class ListFunctionResult:
 
     @code_size.setter
     def code_size(self, code_size):
-        """Sets the code_size of this ListFunctionResult.
+        r"""Sets the code_size of this ListFunctionResult.
 
         函数大小，单位：字节。
 
@@ -680,7 +680,7 @@ class ListFunctionResult:
 
     @property
     def user_data(self):
-        """Gets the user_data of this ListFunctionResult.
+        r"""Gets the user_data of this ListFunctionResult.
 
         用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host={host_ip}，最多定义20个，总长度不超过4KB。
 
@@ -691,7 +691,7 @@ class ListFunctionResult:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this ListFunctionResult.
+        r"""Sets the user_data of this ListFunctionResult.
 
         用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host={host_ip}，最多定义20个，总长度不超过4KB。
 
@@ -702,7 +702,7 @@ class ListFunctionResult:
 
     @property
     def encrypted_user_data(self):
-        """Gets the encrypted_user_data of this ListFunctionResult.
+        r"""Gets the encrypted_user_data of this ListFunctionResult.
 
         用户自定义的name/value信息，用于需要加密的配置。
 
@@ -713,7 +713,7 @@ class ListFunctionResult:
 
     @encrypted_user_data.setter
     def encrypted_user_data(self, encrypted_user_data):
-        """Sets the encrypted_user_data of this ListFunctionResult.
+        r"""Sets the encrypted_user_data of this ListFunctionResult.
 
         用户自定义的name/value信息，用于需要加密的配置。
 
@@ -724,7 +724,7 @@ class ListFunctionResult:
 
     @property
     def digest(self):
-        """Gets the digest of this ListFunctionResult.
+        r"""Gets the digest of this ListFunctionResult.
 
         函数代码SHA512 hash值，用于判断函数是否变化。
 
@@ -735,7 +735,7 @@ class ListFunctionResult:
 
     @digest.setter
     def digest(self, digest):
-        """Sets the digest of this ListFunctionResult.
+        r"""Sets the digest of this ListFunctionResult.
 
         函数代码SHA512 hash值，用于判断函数是否变化。
 
@@ -746,7 +746,7 @@ class ListFunctionResult:
 
     @property
     def version(self):
-        """Gets the version of this ListFunctionResult.
+        r"""Gets the version of this ListFunctionResult.
 
         函数版本号。
 
@@ -757,7 +757,7 @@ class ListFunctionResult:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListFunctionResult.
+        r"""Sets the version of this ListFunctionResult.
 
         函数版本号。
 
@@ -768,7 +768,7 @@ class ListFunctionResult:
 
     @property
     def image_name(self):
-        """Gets the image_name of this ListFunctionResult.
+        r"""Gets the image_name of this ListFunctionResult.
 
         函数版本的内部标识。
 
@@ -779,7 +779,7 @@ class ListFunctionResult:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this ListFunctionResult.
+        r"""Sets the image_name of this ListFunctionResult.
 
         函数版本的内部标识。
 
@@ -790,7 +790,7 @@ class ListFunctionResult:
 
     @property
     def xrole(self):
-        """Gets the xrole of this ListFunctionResult.
+        r"""Gets the xrole of this ListFunctionResult.
 
         函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
 
@@ -801,7 +801,7 @@ class ListFunctionResult:
 
     @xrole.setter
     def xrole(self, xrole):
-        """Sets the xrole of this ListFunctionResult.
+        r"""Sets the xrole of this ListFunctionResult.
 
         函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
 
@@ -812,7 +812,7 @@ class ListFunctionResult:
 
     @property
     def app_xrole(self):
-        """Gets the app_xrole of this ListFunctionResult.
+        r"""Gets the app_xrole of this ListFunctionResult.
 
         函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
 
@@ -823,7 +823,7 @@ class ListFunctionResult:
 
     @app_xrole.setter
     def app_xrole(self, app_xrole):
-        """Sets the app_xrole of this ListFunctionResult.
+        r"""Sets the app_xrole of this ListFunctionResult.
 
         函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。
 
@@ -834,7 +834,7 @@ class ListFunctionResult:
 
     @property
     def description(self):
-        """Gets the description of this ListFunctionResult.
+        r"""Gets the description of this ListFunctionResult.
 
         函数描述。
 
@@ -845,7 +845,7 @@ class ListFunctionResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListFunctionResult.
+        r"""Sets the description of this ListFunctionResult.
 
         函数描述。
 
@@ -856,7 +856,7 @@ class ListFunctionResult:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this ListFunctionResult.
+        r"""Gets the last_modified of this ListFunctionResult.
 
         函数最后一次更新时间。
 
@@ -867,7 +867,7 @@ class ListFunctionResult:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this ListFunctionResult.
+        r"""Sets the last_modified of this ListFunctionResult.
 
         函数最后一次更新时间。
 
@@ -878,7 +878,7 @@ class ListFunctionResult:
 
     @property
     def func_vpc_id(self):
-        """Gets the func_vpc_id of this ListFunctionResult.
+        r"""Gets the func_vpc_id of this ListFunctionResult.
 
         用户的vpcid。
 
@@ -889,7 +889,7 @@ class ListFunctionResult:
 
     @func_vpc_id.setter
     def func_vpc_id(self, func_vpc_id):
-        """Sets the func_vpc_id of this ListFunctionResult.
+        r"""Sets the func_vpc_id of this ListFunctionResult.
 
         用户的vpcid。
 
@@ -900,7 +900,7 @@ class ListFunctionResult:
 
     @property
     def strategy_config(self):
-        """Gets the strategy_config of this ListFunctionResult.
+        r"""Gets the strategy_config of this ListFunctionResult.
 
         :return: The strategy_config of this ListFunctionResult.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
@@ -909,7 +909,7 @@ class ListFunctionResult:
 
     @strategy_config.setter
     def strategy_config(self, strategy_config):
-        """Sets the strategy_config of this ListFunctionResult.
+        r"""Sets the strategy_config of this ListFunctionResult.
 
         :param strategy_config: The strategy_config of this ListFunctionResult.
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
@@ -918,7 +918,7 @@ class ListFunctionResult:
 
     @property
     def extend_config(self):
-        """Gets the extend_config of this ListFunctionResult.
+        r"""Gets the extend_config of this ListFunctionResult.
 
         函数扩展配置。
 
@@ -929,7 +929,7 @@ class ListFunctionResult:
 
     @extend_config.setter
     def extend_config(self, extend_config):
-        """Sets the extend_config of this ListFunctionResult.
+        r"""Sets the extend_config of this ListFunctionResult.
 
         函数扩展配置。
 
@@ -940,7 +940,7 @@ class ListFunctionResult:
 
     @property
     def initializer_handler(self):
-        """Gets the initializer_handler of this ListFunctionResult.
+        r"""Gets the initializer_handler of this ListFunctionResult.
 
         函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
@@ -951,7 +951,7 @@ class ListFunctionResult:
 
     @initializer_handler.setter
     def initializer_handler(self, initializer_handler):
-        """Sets the initializer_handler of this ListFunctionResult.
+        r"""Sets the initializer_handler of this ListFunctionResult.
 
         函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
@@ -962,7 +962,7 @@ class ListFunctionResult:
 
     @property
     def initializer_timeout(self):
-        """Gets the initializer_timeout of this ListFunctionResult.
+        r"""Gets the initializer_timeout of this ListFunctionResult.
 
         初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
@@ -973,7 +973,7 @@ class ListFunctionResult:
 
     @initializer_timeout.setter
     def initializer_timeout(self, initializer_timeout):
-        """Sets the initializer_timeout of this ListFunctionResult.
+        r"""Sets the initializer_timeout of this ListFunctionResult.
 
         初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
@@ -984,7 +984,7 @@ class ListFunctionResult:
 
     @property
     def pre_stop_handler(self):
-        """Gets the pre_stop_handler of this ListFunctionResult.
+        r"""Gets the pre_stop_handler of this ListFunctionResult.
 
         函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
 
@@ -995,7 +995,7 @@ class ListFunctionResult:
 
     @pre_stop_handler.setter
     def pre_stop_handler(self, pre_stop_handler):
-        """Sets the pre_stop_handler of this ListFunctionResult.
+        r"""Sets the pre_stop_handler of this ListFunctionResult.
 
         函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
 
@@ -1006,7 +1006,7 @@ class ListFunctionResult:
 
     @property
     def pre_stop_timeout(self):
-        """Gets the pre_stop_timeout of this ListFunctionResult.
+        r"""Gets the pre_stop_timeout of this ListFunctionResult.
 
         初始化超时时间，超时函数将被强行停止，范围1～90秒。
 
@@ -1017,7 +1017,7 @@ class ListFunctionResult:
 
     @pre_stop_timeout.setter
     def pre_stop_timeout(self, pre_stop_timeout):
-        """Sets the pre_stop_timeout of this ListFunctionResult.
+        r"""Sets the pre_stop_timeout of this ListFunctionResult.
 
         初始化超时时间，超时函数将被强行停止，范围1～90秒。
 
@@ -1028,7 +1028,7 @@ class ListFunctionResult:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListFunctionResult.
+        r"""Gets the enterprise_project_id of this ListFunctionResult.
 
         企业项目ID，在企业用户创建函数时必填。
 
@@ -1039,7 +1039,7 @@ class ListFunctionResult:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListFunctionResult.
+        r"""Sets the enterprise_project_id of this ListFunctionResult.
 
         企业项目ID，在企业用户创建函数时必填。
 
@@ -1050,7 +1050,7 @@ class ListFunctionResult:
 
     @property
     def long_time(self):
-        """Gets the long_time of this ListFunctionResult.
+        r"""Gets the long_time of this ListFunctionResult.
 
         是否允许进行长时间超时设置。
 
@@ -1061,7 +1061,7 @@ class ListFunctionResult:
 
     @long_time.setter
     def long_time(self, long_time):
-        """Sets the long_time of this ListFunctionResult.
+        r"""Sets the long_time of this ListFunctionResult.
 
         是否允许进行长时间超时设置。
 
@@ -1072,7 +1072,7 @@ class ListFunctionResult:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this ListFunctionResult.
+        r"""Gets the log_group_id of this ListFunctionResult.
 
         自定义日志查询组id
 
@@ -1083,7 +1083,7 @@ class ListFunctionResult:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ListFunctionResult.
+        r"""Sets the log_group_id of this ListFunctionResult.
 
         自定义日志查询组id
 
@@ -1094,7 +1094,7 @@ class ListFunctionResult:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this ListFunctionResult.
+        r"""Gets the log_stream_id of this ListFunctionResult.
 
         自定义日志查询流id
 
@@ -1105,7 +1105,7 @@ class ListFunctionResult:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this ListFunctionResult.
+        r"""Sets the log_stream_id of this ListFunctionResult.
 
         自定义日志查询流id
 
@@ -1116,7 +1116,7 @@ class ListFunctionResult:
 
     @property
     def type(self):
-        """Gets the type of this ListFunctionResult.
+        r"""Gets the type of this ListFunctionResult.
 
         v2表示为正式版本,v1为废弃版本。
 
@@ -1127,7 +1127,7 @@ class ListFunctionResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListFunctionResult.
+        r"""Sets the type of this ListFunctionResult.
 
         v2表示为正式版本,v1为废弃版本。
 
@@ -1138,7 +1138,7 @@ class ListFunctionResult:
 
     @property
     def fail_count(self):
-        """Gets the fail_count of this ListFunctionResult.
+        r"""Gets the fail_count of this ListFunctionResult.
 
         函数最近1天内执行失败的次数。
 
@@ -1149,7 +1149,7 @@ class ListFunctionResult:
 
     @fail_count.setter
     def fail_count(self, fail_count):
-        """Sets the fail_count of this ListFunctionResult.
+        r"""Sets the fail_count of this ListFunctionResult.
 
         函数最近1天内执行失败的次数。
 
@@ -1160,7 +1160,7 @@ class ListFunctionResult:
 
     @property
     def is_bridge_function(self):
-        """Gets the is_bridge_function of this ListFunctionResult.
+        r"""Gets the is_bridge_function of this ListFunctionResult.
 
         是否为bridge函数
 
@@ -1171,7 +1171,7 @@ class ListFunctionResult:
 
     @is_bridge_function.setter
     def is_bridge_function(self, is_bridge_function):
-        """Sets the is_bridge_function of this ListFunctionResult.
+        r"""Sets the is_bridge_function of this ListFunctionResult.
 
         是否为bridge函数
 
@@ -1182,7 +1182,7 @@ class ListFunctionResult:
 
     @property
     def bind_bridge_func_urns(self):
-        """Gets the bind_bridge_func_urns of this ListFunctionResult.
+        r"""Gets the bind_bridge_func_urns of this ListFunctionResult.
 
         绑定bridge函数的urn列表
 
@@ -1193,7 +1193,7 @@ class ListFunctionResult:
 
     @bind_bridge_func_urns.setter
     def bind_bridge_func_urns(self, bind_bridge_func_urns):
-        """Sets the bind_bridge_func_urns of this ListFunctionResult.
+        r"""Sets the bind_bridge_func_urns of this ListFunctionResult.
 
         绑定bridge函数的urn列表
 

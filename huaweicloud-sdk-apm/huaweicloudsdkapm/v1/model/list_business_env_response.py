@@ -26,7 +26,7 @@ class ListBusinessEnvResponse(SdkResponse):
     }
 
     def __init__(self, env_entry_list=None):
-        """ListBusinessEnvResponse
+        r"""ListBusinessEnvResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBusinessEnvResponse(SdkResponse):
 
     @property
     def env_entry_list(self):
-        """Gets the env_entry_list of this ListBusinessEnvResponse.
+        r"""Gets the env_entry_list of this ListBusinessEnvResponse.
 
         环境列表。
 
@@ -55,7 +55,7 @@ class ListBusinessEnvResponse(SdkResponse):
 
     @env_entry_list.setter
     def env_entry_list(self, env_entry_list):
-        """Sets the env_entry_list of this ListBusinessEnvResponse.
+        r"""Sets the env_entry_list of this ListBusinessEnvResponse.
 
         环境列表。
 

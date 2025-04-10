@@ -25,7 +25,7 @@ class ListBcsMetricRequestBody:
     }
 
     def __init__(self, metric_names=None):
-        """ListBcsMetricRequestBody
+        r"""ListBcsMetricRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListBcsMetricRequestBody:
 
     @property
     def metric_names(self):
-        """Gets the metric_names of this ListBcsMetricRequestBody.
+        r"""Gets the metric_names of this ListBcsMetricRequestBody.
 
         指标列表 取值范围 cpuUsage：CPU使用率 diskUsedRate：磁盘使用率 memUsedRate：物理内存使用率 sendBytesRate：上行Bps recvBytesRate：下行Bps cpuCoreLimit：CPU内核总量 cpuCoreUsed：CPU内核占用 totalMem：物理内存总量 freeMem：可用物理内存 diskCapacity：磁盘空间容量 diskAvailableCapacity：可用磁盘空间 默认值：前5项 
 
@@ -54,7 +54,7 @@ class ListBcsMetricRequestBody:
 
     @metric_names.setter
     def metric_names(self, metric_names):
-        """Sets the metric_names of this ListBcsMetricRequestBody.
+        r"""Sets the metric_names of this ListBcsMetricRequestBody.
 
         指标列表 取值范围 cpuUsage：CPU使用率 diskUsedRate：磁盘使用率 memUsedRate：物理内存使用率 sendBytesRate：上行Bps recvBytesRate：下行Bps cpuCoreLimit：CPU内核总量 cpuCoreUsed：CPU内核占用 totalMem：物理内存总量 freeMem：可用物理内存 diskCapacity：磁盘空间容量 diskAvailableCapacity：可用磁盘空间 默认值：前5项 
 

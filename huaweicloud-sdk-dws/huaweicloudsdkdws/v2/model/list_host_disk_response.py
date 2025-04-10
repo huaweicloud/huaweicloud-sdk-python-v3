@@ -26,7 +26,7 @@ class ListHostDiskResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListHostDiskResponse
+        r"""ListHostDiskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListHostDiskResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListHostDiskResponse.
+        r"""Gets the body of this ListHostDiskResponse.
 
         :return: The body of this ListHostDiskResponse.
         :rtype: list[:class:`huaweicloudsdkdws.v2.DiskResp`]
@@ -53,7 +53,7 @@ class ListHostDiskResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListHostDiskResponse.
+        r"""Sets the body of this ListHostDiskResponse.
 
         :param body: The body of this ListHostDiskResponse.
         :type body: list[:class:`huaweicloudsdkdws.v2.DiskResp`]

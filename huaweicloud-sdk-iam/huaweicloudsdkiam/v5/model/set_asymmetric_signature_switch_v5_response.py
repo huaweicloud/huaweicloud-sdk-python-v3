@@ -24,7 +24,7 @@ class SetAsymmetricSignatureSwitchV5Response(SdkResponse):
     }
 
     def __init__(self):
-        """SetAsymmetricSignatureSwitchV5Response
+        r"""SetAsymmetricSignatureSwitchV5Response
 
         The model defined in huaweicloud sdk
 

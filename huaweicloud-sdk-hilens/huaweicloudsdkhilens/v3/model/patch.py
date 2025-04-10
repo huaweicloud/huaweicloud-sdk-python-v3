@@ -25,7 +25,7 @@ class Patch:
     }
 
     def __init__(self, envs=None):
-        """Patch
+        r"""Patch
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Patch:
 
     @property
     def envs(self):
-        """Gets the envs of this Patch.
+        r"""Gets the envs of this Patch.
 
         环境变量更新
 
@@ -54,7 +54,7 @@ class Patch:
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this Patch.
+        r"""Sets the envs of this Patch.
 
         环境变量更新
 

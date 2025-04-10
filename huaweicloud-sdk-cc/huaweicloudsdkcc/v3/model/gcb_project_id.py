@@ -25,7 +25,7 @@ class GcbProjectId:
     }
 
     def __init__(self, project_id=None):
-        """GcbProjectId
+        r"""GcbProjectId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GcbProjectId:
 
     @property
     def project_id(self):
-        """Gets the project_id of this GcbProjectId.
+        r"""Gets the project_id of this GcbProjectId.
 
         功能说明：实例所在region对应的projectId。
 
@@ -53,7 +53,7 @@ class GcbProjectId:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this GcbProjectId.
+        r"""Sets the project_id of this GcbProjectId.
 
         功能说明：实例所在region对应的projectId。
 

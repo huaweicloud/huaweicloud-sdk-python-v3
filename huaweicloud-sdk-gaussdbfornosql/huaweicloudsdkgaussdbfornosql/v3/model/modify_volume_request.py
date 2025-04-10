@@ -27,7 +27,7 @@ class ModifyVolumeRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ModifyVolumeRequest
+        r"""ModifyVolumeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ModifyVolumeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ModifyVolumeRequest.
+        r"""Gets the instance_id of this ModifyVolumeRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class ModifyVolumeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ModifyVolumeRequest.
+        r"""Sets the instance_id of this ModifyVolumeRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ModifyVolumeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyVolumeRequest.
+        r"""Gets the body of this ModifyVolumeRequest.
 
         :return: The body of this ModifyVolumeRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyVolumeRequestBody`
@@ -80,7 +80,7 @@ class ModifyVolumeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyVolumeRequest.
+        r"""Sets the body of this ModifyVolumeRequest.
 
         :param body: The body of this ModifyVolumeRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyVolumeRequestBody`

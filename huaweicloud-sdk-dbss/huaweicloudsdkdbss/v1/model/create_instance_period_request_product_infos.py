@@ -33,7 +33,7 @@ class CreateInstancePeriodRequestProductInfos:
     }
 
     def __init__(self, product_id=None, cloud_service_type=None, resource_type=None, resource_spec_code=None, product_spec_desc=None):
-        """CreateInstancePeriodRequestProductInfos
+        r"""CreateInstancePeriodRequestProductInfos
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class CreateInstancePeriodRequestProductInfos:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateInstancePeriodRequestProductInfos.
+        r"""Gets the product_id of this CreateInstancePeriodRequestProductInfos.
 
         产品ID
 
@@ -78,7 +78,7 @@ class CreateInstancePeriodRequestProductInfos:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateInstancePeriodRequestProductInfos.
+        r"""Sets the product_id of this CreateInstancePeriodRequestProductInfos.
 
         产品ID
 
@@ -89,7 +89,7 @@ class CreateInstancePeriodRequestProductInfos:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this CreateInstancePeriodRequestProductInfos.
+        r"""Gets the cloud_service_type of this CreateInstancePeriodRequestProductInfos.
 
         服务类型： - hws.service.type.dbss
 
@@ -100,7 +100,7 @@ class CreateInstancePeriodRequestProductInfos:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this CreateInstancePeriodRequestProductInfos.
+        r"""Sets the cloud_service_type of this CreateInstancePeriodRequestProductInfos.
 
         服务类型： - hws.service.type.dbss
 
@@ -111,7 +111,7 @@ class CreateInstancePeriodRequestProductInfos:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CreateInstancePeriodRequestProductInfos.
+        r"""Gets the resource_type of this CreateInstancePeriodRequestProductInfos.
 
         资源类型: - hws.resource.type.dbss
 
@@ -122,7 +122,7 @@ class CreateInstancePeriodRequestProductInfos:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CreateInstancePeriodRequestProductInfos.
+        r"""Sets the resource_type of this CreateInstancePeriodRequestProductInfos.
 
         资源类型: - hws.resource.type.dbss
 
@@ -133,7 +133,7 @@ class CreateInstancePeriodRequestProductInfos:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this CreateInstancePeriodRequestProductInfos.
+        r"""Gets the resource_spec_code of this CreateInstancePeriodRequestProductInfos.
 
         资源规格： - dbss.bypassaudit.low - dbss.bypassaudit.medium - dbss.bypassaudit.high
 
@@ -144,7 +144,7 @@ class CreateInstancePeriodRequestProductInfos:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this CreateInstancePeriodRequestProductInfos.
+        r"""Sets the resource_spec_code of this CreateInstancePeriodRequestProductInfos.
 
         资源规格： - dbss.bypassaudit.low - dbss.bypassaudit.medium - dbss.bypassaudit.high
 
@@ -155,7 +155,7 @@ class CreateInstancePeriodRequestProductInfos:
 
     @property
     def product_spec_desc(self):
-        """Gets the product_spec_desc of this CreateInstancePeriodRequestProductInfos.
+        r"""Gets the product_spec_desc of this CreateInstancePeriodRequestProductInfos.
 
         产品规格描述。json字符串格式 ：{\"specDesc\":{\"zh-cn\":{\"key1\":\"value1\"},\"en-us\":{\"key1\":\"value1\"}}}。key和value为用户自定义希望展示的产品描述信息。
 
@@ -166,7 +166,7 @@ class CreateInstancePeriodRequestProductInfos:
 
     @product_spec_desc.setter
     def product_spec_desc(self, product_spec_desc):
-        """Sets the product_spec_desc of this CreateInstancePeriodRequestProductInfos.
+        r"""Sets the product_spec_desc of this CreateInstancePeriodRequestProductInfos.
 
         产品规格描述。json字符串格式 ：{\"specDesc\":{\"zh-cn\":{\"key1\":\"value1\"},\"en-us\":{\"key1\":\"value1\"}}}。key和value为用户自定义希望展示的产品描述信息。
 

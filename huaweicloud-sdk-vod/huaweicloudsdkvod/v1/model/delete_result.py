@@ -27,7 +27,7 @@ class DeleteResult:
     }
 
     def __init__(self, asset_id=None, status=None):
-        """DeleteResult
+        r"""DeleteResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteResult:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this DeleteResult.
+        r"""Gets the asset_id of this DeleteResult.
 
         媒资ID。
 
@@ -61,7 +61,7 @@ class DeleteResult:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this DeleteResult.
+        r"""Sets the asset_id of this DeleteResult.
 
         媒资ID。
 
@@ -72,7 +72,7 @@ class DeleteResult:
 
     @property
     def status(self):
-        """Gets the status of this DeleteResult.
+        r"""Gets the status of this DeleteResult.
 
         删除状态。  取值如下： - DELETED：已删除。 - FAILED：删除失败。
 
@@ -83,7 +83,7 @@ class DeleteResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteResult.
+        r"""Sets the status of this DeleteResult.
 
         删除状态。  取值如下： - DELETED：已删除。 - FAILED：删除失败。
 

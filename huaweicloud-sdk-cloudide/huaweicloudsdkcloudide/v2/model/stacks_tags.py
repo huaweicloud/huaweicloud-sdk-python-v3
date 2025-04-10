@@ -27,7 +27,7 @@ class StacksTags:
     }
 
     def __init__(self, stack_list=None, tags=None):
-        """StacksTags
+        r"""StacksTags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StacksTags:
 
     @property
     def stack_list(self):
-        """Gets the stack_list of this StacksTags.
+        r"""Gets the stack_list of this StacksTags.
 
         技术栈列表
 
@@ -61,7 +61,7 @@ class StacksTags:
 
     @stack_list.setter
     def stack_list(self, stack_list):
-        """Sets the stack_list of this StacksTags.
+        r"""Sets the stack_list of this StacksTags.
 
         技术栈列表
 
@@ -72,7 +72,7 @@ class StacksTags:
 
     @property
     def tags(self):
-        """Gets the tags of this StacksTags.
+        r"""Gets the tags of this StacksTags.
 
         技术栈tag集合
 
@@ -83,7 +83,7 @@ class StacksTags:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this StacksTags.
+        r"""Sets the tags of this StacksTags.
 
         技术栈tag集合
 

@@ -37,7 +37,7 @@ class ChannelInfo:
     }
 
     def __init__(self, id=None, name=None, description=None, provider_type=None, created_time=None, updated_time=None, enterprise_project_id=None):
-        """ChannelInfo
+        r"""ChannelInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ChannelInfo:
 
     @property
     def id(self):
-        """Gets the id of this ChannelInfo.
+        r"""Gets the id of this ChannelInfo.
 
         通道ID
 
@@ -96,7 +96,7 @@ class ChannelInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ChannelInfo.
+        r"""Sets the id of this ChannelInfo.
 
         通道ID
 
@@ -107,7 +107,7 @@ class ChannelInfo:
 
     @property
     def name(self):
-        """Gets the name of this ChannelInfo.
+        r"""Gets the name of this ChannelInfo.
 
         通道名称
 
@@ -118,7 +118,7 @@ class ChannelInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ChannelInfo.
+        r"""Sets the name of this ChannelInfo.
 
         通道名称
 
@@ -129,7 +129,7 @@ class ChannelInfo:
 
     @property
     def description(self):
-        """Gets the description of this ChannelInfo.
+        r"""Gets the description of this ChannelInfo.
 
         通道描述
 
@@ -140,7 +140,7 @@ class ChannelInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ChannelInfo.
+        r"""Sets the description of this ChannelInfo.
 
         通道描述
 
@@ -151,7 +151,7 @@ class ChannelInfo:
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this ChannelInfo.
+        r"""Gets the provider_type of this ChannelInfo.
 
         通道提供方类型，OFFICIAL：官方事件通道；CUSTOM：自定义事件通道；PARTNER：伙伴事件通道
 
@@ -162,7 +162,7 @@ class ChannelInfo:
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this ChannelInfo.
+        r"""Sets the provider_type of this ChannelInfo.
 
         通道提供方类型，OFFICIAL：官方事件通道；CUSTOM：自定义事件通道；PARTNER：伙伴事件通道
 
@@ -173,7 +173,7 @@ class ChannelInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ChannelInfo.
+        r"""Gets the created_time of this ChannelInfo.
 
         创建UTC时间
 
@@ -184,7 +184,7 @@ class ChannelInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ChannelInfo.
+        r"""Sets the created_time of this ChannelInfo.
 
         创建UTC时间
 
@@ -195,7 +195,7 @@ class ChannelInfo:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ChannelInfo.
+        r"""Gets the updated_time of this ChannelInfo.
 
         更新UTC时间
 
@@ -206,7 +206,7 @@ class ChannelInfo:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ChannelInfo.
+        r"""Sets the updated_time of this ChannelInfo.
 
         更新UTC时间
 
@@ -217,7 +217,7 @@ class ChannelInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ChannelInfo.
+        r"""Gets the enterprise_project_id of this ChannelInfo.
 
         企业项目id
 
@@ -228,7 +228,7 @@ class ChannelInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ChannelInfo.
+        r"""Sets the enterprise_project_id of this ChannelInfo.
 
         企业项目id
 

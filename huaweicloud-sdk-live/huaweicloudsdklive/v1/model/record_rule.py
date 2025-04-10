@@ -39,7 +39,7 @@ class RecordRule:
     }
 
     def __init__(self, id=None, publish_domain=None, app=None, stream=None, record_type=None, default_record_config=None, create_time=None, update_time=None):
-        """RecordRule
+        r"""RecordRule
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class RecordRule:
 
     @property
     def id(self):
-        """Gets the id of this RecordRule.
+        r"""Gets the id of this RecordRule.
 
         规则id，由服务端返回。创建或修改的时候不携带
 
@@ -100,7 +100,7 @@ class RecordRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RecordRule.
+        r"""Sets the id of this RecordRule.
 
         规则id，由服务端返回。创建或修改的时候不携带
 
@@ -111,7 +111,7 @@ class RecordRule:
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this RecordRule.
+        r"""Gets the publish_domain of this RecordRule.
 
         直播推流域名
 
@@ -122,7 +122,7 @@ class RecordRule:
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this RecordRule.
+        r"""Sets the publish_domain of this RecordRule.
 
         直播推流域名
 
@@ -133,7 +133,7 @@ class RecordRule:
 
     @property
     def app(self):
-        """Gets the app of this RecordRule.
+        r"""Gets the app of this RecordRule.
 
         应用名，如果任意应用填写*。录制规则匹配的时候，优先精确app匹配，如果匹配不到，则匹配*
 
@@ -144,7 +144,7 @@ class RecordRule:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this RecordRule.
+        r"""Sets the app of this RecordRule.
 
         应用名，如果任意应用填写*。录制规则匹配的时候，优先精确app匹配，如果匹配不到，则匹配*
 
@@ -155,7 +155,7 @@ class RecordRule:
 
     @property
     def stream(self):
-        """Gets the stream of this RecordRule.
+        r"""Gets the stream of this RecordRule.
 
         录制的流名，如果任意流名则填写*。录制规则匹配的时候，优先精确stream匹配，如果匹配不到，则匹配*
 
@@ -166,7 +166,7 @@ class RecordRule:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this RecordRule.
+        r"""Sets the stream of this RecordRule.
 
         录制的流名，如果任意流名则填写*。录制规则匹配的时候，优先精确stream匹配，如果匹配不到，则匹配*
 
@@ -177,7 +177,7 @@ class RecordRule:
 
     @property
     def record_type(self):
-        """Gets the record_type of this RecordRule.
+        r"""Gets the record_type of this RecordRule.
 
         录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD, ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD: 持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD: 命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。命令控制的接口参考/v1/{project_id}/record/control - PLAN_RECORD: 计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD: 按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。租户提供的接口定义参考：/customer-record-ondemand-url 
 
@@ -188,7 +188,7 @@ class RecordRule:
 
     @record_type.setter
     def record_type(self, record_type):
-        """Sets the record_type of this RecordRule.
+        r"""Sets the record_type of this RecordRule.
 
         录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD, ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD: 持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD: 命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。命令控制的接口参考/v1/{project_id}/record/control - PLAN_RECORD: 计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD: 按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。租户提供的接口定义参考：/customer-record-ondemand-url 
 
@@ -199,7 +199,7 @@ class RecordRule:
 
     @property
     def default_record_config(self):
-        """Gets the default_record_config of this RecordRule.
+        r"""Gets the default_record_config of this RecordRule.
 
         :return: The default_record_config of this RecordRule.
         :rtype: :class:`huaweicloudsdklive.v1.DefaultRecordConfig`
@@ -208,7 +208,7 @@ class RecordRule:
 
     @default_record_config.setter
     def default_record_config(self, default_record_config):
-        """Sets the default_record_config of this RecordRule.
+        r"""Sets the default_record_config of this RecordRule.
 
         :param default_record_config: The default_record_config of this RecordRule.
         :type default_record_config: :class:`huaweicloudsdklive.v1.DefaultRecordConfig`
@@ -217,7 +217,7 @@ class RecordRule:
 
     @property
     def create_time(self):
-        """Gets the create_time of this RecordRule.
+        r"""Gets the create_time of this RecordRule.
 
         创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
 
@@ -228,7 +228,7 @@ class RecordRule:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this RecordRule.
+        r"""Sets the create_time of this RecordRule.
 
         创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
 
@@ -239,7 +239,7 @@ class RecordRule:
 
     @property
     def update_time(self):
-        """Gets the update_time of this RecordRule.
+        r"""Gets the update_time of this RecordRule.
 
         修改时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
 
@@ -250,7 +250,7 @@ class RecordRule:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this RecordRule.
+        r"""Sets the update_time of this RecordRule.
 
         修改时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
 

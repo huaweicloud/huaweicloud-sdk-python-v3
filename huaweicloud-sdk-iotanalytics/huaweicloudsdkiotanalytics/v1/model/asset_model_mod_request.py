@@ -29,7 +29,7 @@ class AssetModelModRequest:
     }
 
     def __init__(self, display_name=None, properties=None, analyses=None):
-        """AssetModelModRequest
+        r"""AssetModelModRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AssetModelModRequest:
 
     @property
     def display_name(self):
-        """Gets the display_name of this AssetModelModRequest.
+        r"""Gets the display_name of this AssetModelModRequest.
 
         模型显示名称，正则：\"^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{1,64}$\"
 
@@ -68,7 +68,7 @@ class AssetModelModRequest:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this AssetModelModRequest.
+        r"""Sets the display_name of this AssetModelModRequest.
 
         模型显示名称，正则：\"^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{1,64}$\"
 
@@ -79,7 +79,7 @@ class AssetModelModRequest:
 
     @property
     def properties(self):
-        """Gets the properties of this AssetModelModRequest.
+        r"""Gets the properties of this AssetModelModRequest.
 
         属性集，最多200个
 
@@ -90,7 +90,7 @@ class AssetModelModRequest:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this AssetModelModRequest.
+        r"""Sets the properties of this AssetModelModRequest.
 
         属性集，最多200个
 
@@ -101,7 +101,7 @@ class AssetModelModRequest:
 
     @property
     def analyses(self):
-        """Gets the analyses of this AssetModelModRequest.
+        r"""Gets the analyses of this AssetModelModRequest.
 
         分析任务集，最多50个
 
@@ -112,7 +112,7 @@ class AssetModelModRequest:
 
     @analyses.setter
     def analyses(self, analyses):
-        """Sets the analyses of this AssetModelModRequest.
+        r"""Sets the analyses of this AssetModelModRequest.
 
         分析任务集，最多50个
 

@@ -49,7 +49,7 @@ class TrustedIpAddressDto:
     }
 
     def __init__(self, id=None, repository_id=None, ip_range=None, ip_type=None, ip_start=None, ip_end=None, view_flag=None, download_flag=None, upload_flag=None, remark=None, created_at=None, updated_at=None, order_flag=None):
-        """TrustedIpAddressDto
+        r"""TrustedIpAddressDto
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class TrustedIpAddressDto:
 
     @property
     def id(self):
-        """Gets the id of this TrustedIpAddressDto.
+        r"""Gets the id of this TrustedIpAddressDto.
 
         关联结果
 
@@ -138,7 +138,7 @@ class TrustedIpAddressDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TrustedIpAddressDto.
+        r"""Sets the id of this TrustedIpAddressDto.
 
         关联结果
 
@@ -149,7 +149,7 @@ class TrustedIpAddressDto:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this TrustedIpAddressDto.
+        r"""Gets the repository_id of this TrustedIpAddressDto.
 
         仓库id
 
@@ -160,7 +160,7 @@ class TrustedIpAddressDto:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this TrustedIpAddressDto.
+        r"""Sets the repository_id of this TrustedIpAddressDto.
 
         仓库id
 
@@ -171,7 +171,7 @@ class TrustedIpAddressDto:
 
     @property
     def ip_range(self):
-        """Gets the ip_range of this TrustedIpAddressDto.
+        r"""Gets the ip_range of this TrustedIpAddressDto.
 
         ip范围
 
@@ -182,7 +182,7 @@ class TrustedIpAddressDto:
 
     @ip_range.setter
     def ip_range(self, ip_range):
-        """Sets the ip_range of this TrustedIpAddressDto.
+        r"""Sets the ip_range of this TrustedIpAddressDto.
 
         ip范围
 
@@ -193,7 +193,7 @@ class TrustedIpAddressDto:
 
     @property
     def ip_type(self):
-        """Gets the ip_type of this TrustedIpAddressDto.
+        r"""Gets the ip_type of this TrustedIpAddressDto.
 
         格式类型，指定ip，ip范围，CIDR
 
@@ -204,7 +204,7 @@ class TrustedIpAddressDto:
 
     @ip_type.setter
     def ip_type(self, ip_type):
-        """Sets the ip_type of this TrustedIpAddressDto.
+        r"""Sets the ip_type of this TrustedIpAddressDto.
 
         格式类型，指定ip，ip范围，CIDR
 
@@ -215,7 +215,7 @@ class TrustedIpAddressDto:
 
     @property
     def ip_start(self):
-        """Gets the ip_start of this TrustedIpAddressDto.
+        r"""Gets the ip_start of this TrustedIpAddressDto.
 
         起始ip
 
@@ -226,7 +226,7 @@ class TrustedIpAddressDto:
 
     @ip_start.setter
     def ip_start(self, ip_start):
-        """Sets the ip_start of this TrustedIpAddressDto.
+        r"""Sets the ip_start of this TrustedIpAddressDto.
 
         起始ip
 
@@ -237,7 +237,7 @@ class TrustedIpAddressDto:
 
     @property
     def ip_end(self):
-        """Gets the ip_end of this TrustedIpAddressDto.
+        r"""Gets the ip_end of this TrustedIpAddressDto.
 
         结束ip
 
@@ -248,7 +248,7 @@ class TrustedIpAddressDto:
 
     @ip_end.setter
     def ip_end(self, ip_end):
-        """Sets the ip_end of this TrustedIpAddressDto.
+        r"""Sets the ip_end of this TrustedIpAddressDto.
 
         结束ip
 
@@ -259,7 +259,7 @@ class TrustedIpAddressDto:
 
     @property
     def view_flag(self):
-        """Gets the view_flag of this TrustedIpAddressDto.
+        r"""Gets the view_flag of this TrustedIpAddressDto.
 
         是否允许访问代码仓库
 
@@ -270,7 +270,7 @@ class TrustedIpAddressDto:
 
     @view_flag.setter
     def view_flag(self, view_flag):
-        """Sets the view_flag of this TrustedIpAddressDto.
+        r"""Sets the view_flag of this TrustedIpAddressDto.
 
         是否允许访问代码仓库
 
@@ -281,7 +281,7 @@ class TrustedIpAddressDto:
 
     @property
     def download_flag(self):
-        """Gets the download_flag of this TrustedIpAddressDto.
+        r"""Gets the download_flag of this TrustedIpAddressDto.
 
         是否允许下载代码
 
@@ -292,7 +292,7 @@ class TrustedIpAddressDto:
 
     @download_flag.setter
     def download_flag(self, download_flag):
-        """Sets the download_flag of this TrustedIpAddressDto.
+        r"""Sets the download_flag of this TrustedIpAddressDto.
 
         是否允许下载代码
 
@@ -303,7 +303,7 @@ class TrustedIpAddressDto:
 
     @property
     def upload_flag(self):
-        """Gets the upload_flag of this TrustedIpAddressDto.
+        r"""Gets the upload_flag of this TrustedIpAddressDto.
 
         是否允许提交代码
 
@@ -314,7 +314,7 @@ class TrustedIpAddressDto:
 
     @upload_flag.setter
     def upload_flag(self, upload_flag):
-        """Sets the upload_flag of this TrustedIpAddressDto.
+        r"""Sets the upload_flag of this TrustedIpAddressDto.
 
         是否允许提交代码
 
@@ -325,7 +325,7 @@ class TrustedIpAddressDto:
 
     @property
     def remark(self):
-        """Gets the remark of this TrustedIpAddressDto.
+        r"""Gets the remark of this TrustedIpAddressDto.
 
         备注
 
@@ -336,7 +336,7 @@ class TrustedIpAddressDto:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this TrustedIpAddressDto.
+        r"""Sets the remark of this TrustedIpAddressDto.
 
         备注
 
@@ -347,7 +347,7 @@ class TrustedIpAddressDto:
 
     @property
     def created_at(self):
-        """Gets the created_at of this TrustedIpAddressDto.
+        r"""Gets the created_at of this TrustedIpAddressDto.
 
         创建时间
 
@@ -358,7 +358,7 @@ class TrustedIpAddressDto:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this TrustedIpAddressDto.
+        r"""Sets the created_at of this TrustedIpAddressDto.
 
         创建时间
 
@@ -369,7 +369,7 @@ class TrustedIpAddressDto:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this TrustedIpAddressDto.
+        r"""Gets the updated_at of this TrustedIpAddressDto.
 
         更新时间
 
@@ -380,7 +380,7 @@ class TrustedIpAddressDto:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this TrustedIpAddressDto.
+        r"""Sets the updated_at of this TrustedIpAddressDto.
 
         更新时间
 
@@ -391,7 +391,7 @@ class TrustedIpAddressDto:
 
     @property
     def order_flag(self):
-        """Gets the order_flag of this TrustedIpAddressDto.
+        r"""Gets the order_flag of this TrustedIpAddressDto.
 
         排序
 
@@ -402,7 +402,7 @@ class TrustedIpAddressDto:
 
     @order_flag.setter
     def order_flag(self, order_flag):
-        """Sets the order_flag of this TrustedIpAddressDto.
+        r"""Sets the order_flag of this TrustedIpAddressDto.
 
         排序
 

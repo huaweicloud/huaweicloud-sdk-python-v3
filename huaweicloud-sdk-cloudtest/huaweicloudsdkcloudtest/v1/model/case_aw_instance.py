@@ -29,7 +29,7 @@ class CaseAwInstance:
     }
 
     def __init__(self, setup_aw_list=None, teardown_aw_list=None, test_aw_list=None):
-        """CaseAwInstance
+        r"""CaseAwInstance
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CaseAwInstance:
 
     @property
     def setup_aw_list(self):
-        """Gets the setup_aw_list of this CaseAwInstance.
+        r"""Gets the setup_aw_list of this CaseAwInstance.
 
         测试用例前置步骤
 
@@ -68,7 +68,7 @@ class CaseAwInstance:
 
     @setup_aw_list.setter
     def setup_aw_list(self, setup_aw_list):
-        """Sets the setup_aw_list of this CaseAwInstance.
+        r"""Sets the setup_aw_list of this CaseAwInstance.
 
         测试用例前置步骤
 
@@ -79,7 +79,7 @@ class CaseAwInstance:
 
     @property
     def teardown_aw_list(self):
-        """Gets the teardown_aw_list of this CaseAwInstance.
+        r"""Gets the teardown_aw_list of this CaseAwInstance.
 
         测试步骤
 
@@ -90,7 +90,7 @@ class CaseAwInstance:
 
     @teardown_aw_list.setter
     def teardown_aw_list(self, teardown_aw_list):
-        """Sets the teardown_aw_list of this CaseAwInstance.
+        r"""Sets the teardown_aw_list of this CaseAwInstance.
 
         测试步骤
 
@@ -101,7 +101,7 @@ class CaseAwInstance:
 
     @property
     def test_aw_list(self):
-        """Gets the test_aw_list of this CaseAwInstance.
+        r"""Gets the test_aw_list of this CaseAwInstance.
 
         测试用例后置不走
 
@@ -112,7 +112,7 @@ class CaseAwInstance:
 
     @test_aw_list.setter
     def test_aw_list(self, test_aw_list):
-        """Sets the test_aw_list of this CaseAwInstance.
+        r"""Sets the test_aw_list of this CaseAwInstance.
 
         测试用例后置不走
 

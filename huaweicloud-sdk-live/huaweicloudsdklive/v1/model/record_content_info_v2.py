@@ -47,7 +47,7 @@ class RecordContentInfoV2:
     }
 
     def __init__(self, publish_domain=None, file_name=None, app=None, stream=None, record_format=None, record_type=None, obs_addr=None, vod_info=None, download_url=None, start_time=None, end_time=None, duration=None):
-        """RecordContentInfoV2
+        r"""RecordContentInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class RecordContentInfoV2:
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this RecordContentInfoV2.
+        r"""Gets the publish_domain of this RecordContentInfoV2.
 
         直播推流域名
 
@@ -131,7 +131,7 @@ class RecordContentInfoV2:
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this RecordContentInfoV2.
+        r"""Sets the publish_domain of this RecordContentInfoV2.
 
         直播推流域名
 
@@ -142,7 +142,7 @@ class RecordContentInfoV2:
 
     @property
     def file_name(self):
-        """Gets the file_name of this RecordContentInfoV2.
+        r"""Gets the file_name of this RecordContentInfoV2.
 
         录制文件名
 
@@ -153,7 +153,7 @@ class RecordContentInfoV2:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this RecordContentInfoV2.
+        r"""Sets the file_name of this RecordContentInfoV2.
 
         录制文件名
 
@@ -164,7 +164,7 @@ class RecordContentInfoV2:
 
     @property
     def app(self):
-        """Gets the app of this RecordContentInfoV2.
+        r"""Gets the app of this RecordContentInfoV2.
 
         应用名
 
@@ -175,7 +175,7 @@ class RecordContentInfoV2:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this RecordContentInfoV2.
+        r"""Sets the app of this RecordContentInfoV2.
 
         应用名
 
@@ -186,7 +186,7 @@ class RecordContentInfoV2:
 
     @property
     def stream(self):
-        """Gets the stream of this RecordContentInfoV2.
+        r"""Gets the stream of this RecordContentInfoV2.
 
         录制的流名
 
@@ -197,7 +197,7 @@ class RecordContentInfoV2:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this RecordContentInfoV2.
+        r"""Sets the stream of this RecordContentInfoV2.
 
         录制的流名
 
@@ -208,7 +208,7 @@ class RecordContentInfoV2:
 
     @property
     def record_format(self):
-        """Gets the record_format of this RecordContentInfoV2.
+        r"""Gets the record_format of this RecordContentInfoV2.
 
         录制格式flv，hls，mp4
 
@@ -219,7 +219,7 @@ class RecordContentInfoV2:
 
     @record_format.setter
     def record_format(self, record_format):
-        """Sets the record_format of this RecordContentInfoV2.
+        r"""Sets the record_format of this RecordContentInfoV2.
 
         录制格式flv，hls，mp4
 
@@ -230,7 +230,7 @@ class RecordContentInfoV2:
 
     @property
     def record_type(self):
-        """Gets the record_type of this RecordContentInfoV2.
+        r"""Gets the record_type of this RecordContentInfoV2.
 
         录制类型，CONTINUOUS_RECORD，COMMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 
 
@@ -241,7 +241,7 @@ class RecordContentInfoV2:
 
     @record_type.setter
     def record_type(self, record_type):
-        """Sets the record_type of this RecordContentInfoV2.
+        r"""Sets the record_type of this RecordContentInfoV2.
 
         录制类型，CONTINUOUS_RECORD，COMMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 
 
@@ -252,7 +252,7 @@ class RecordContentInfoV2:
 
     @property
     def obs_addr(self):
-        """Gets the obs_addr of this RecordContentInfoV2.
+        r"""Gets the obs_addr of this RecordContentInfoV2.
 
         :return: The obs_addr of this RecordContentInfoV2.
         :rtype: :class:`huaweicloudsdklive.v1.RecordObsFileAddr`
@@ -261,7 +261,7 @@ class RecordContentInfoV2:
 
     @obs_addr.setter
     def obs_addr(self, obs_addr):
-        """Sets the obs_addr of this RecordContentInfoV2.
+        r"""Sets the obs_addr of this RecordContentInfoV2.
 
         :param obs_addr: The obs_addr of this RecordContentInfoV2.
         :type obs_addr: :class:`huaweicloudsdklive.v1.RecordObsFileAddr`
@@ -270,7 +270,7 @@ class RecordContentInfoV2:
 
     @property
     def vod_info(self):
-        """Gets the vod_info of this RecordContentInfoV2.
+        r"""Gets the vod_info of this RecordContentInfoV2.
 
         :return: The vod_info of this RecordContentInfoV2.
         :rtype: :class:`huaweicloudsdklive.v1.VodInfoV2`
@@ -279,7 +279,7 @@ class RecordContentInfoV2:
 
     @vod_info.setter
     def vod_info(self, vod_info):
-        """Sets the vod_info of this RecordContentInfoV2.
+        r"""Sets the vod_info of this RecordContentInfoV2.
 
         :param vod_info: The vod_info of this RecordContentInfoV2.
         :type vod_info: :class:`huaweicloudsdklive.v1.VodInfoV2`
@@ -288,7 +288,7 @@ class RecordContentInfoV2:
 
     @property
     def download_url(self):
-        """Gets the download_url of this RecordContentInfoV2.
+        r"""Gets the download_url of this RecordContentInfoV2.
 
         OBS下载地址
 
@@ -299,7 +299,7 @@ class RecordContentInfoV2:
 
     @download_url.setter
     def download_url(self, download_url):
-        """Sets the download_url of this RecordContentInfoV2.
+        r"""Sets the download_url of this RecordContentInfoV2.
 
         OBS下载地址
 
@@ -310,7 +310,7 @@ class RecordContentInfoV2:
 
     @property
     def start_time(self):
-        """Gets the start_time of this RecordContentInfoV2.
+        r"""Gets the start_time of this RecordContentInfoV2.
 
         录制开始时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。对record_type为PLAN_RECORD有效
 
@@ -321,7 +321,7 @@ class RecordContentInfoV2:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this RecordContentInfoV2.
+        r"""Sets the start_time of this RecordContentInfoV2.
 
         录制开始时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。对record_type为PLAN_RECORD有效
 
@@ -332,7 +332,7 @@ class RecordContentInfoV2:
 
     @property
     def end_time(self):
-        """Gets the end_time of this RecordContentInfoV2.
+        r"""Gets the end_time of this RecordContentInfoV2.
 
         录制结束时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。对record_type为PLAN_RECORD有效
 
@@ -343,7 +343,7 @@ class RecordContentInfoV2:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this RecordContentInfoV2.
+        r"""Sets the end_time of this RecordContentInfoV2.
 
         录制结束时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。对record_type为PLAN_RECORD有效
 
@@ -354,7 +354,7 @@ class RecordContentInfoV2:
 
     @property
     def duration(self):
-        """Gets the duration of this RecordContentInfoV2.
+        r"""Gets the duration of this RecordContentInfoV2.
 
         该录制文件时长，单位为秒
 
@@ -365,7 +365,7 @@ class RecordContentInfoV2:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this RecordContentInfoV2.
+        r"""Sets the duration of this RecordContentInfoV2.
 
         该录制文件时长，单位为秒
 

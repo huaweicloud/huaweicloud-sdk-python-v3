@@ -27,7 +27,7 @@ class CreateSynthesisJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateSynthesisJobRequest
+        r"""CreateSynthesisJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSynthesisJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateSynthesisJobRequest.
+        r"""Gets the eihealth_project_id of this CreateSynthesisJobRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class CreateSynthesisJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateSynthesisJobRequest.
+        r"""Sets the eihealth_project_id of this CreateSynthesisJobRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class CreateSynthesisJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSynthesisJobRequest.
+        r"""Gets the body of this CreateSynthesisJobRequest.
 
         :return: The body of this CreateSynthesisJobRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateSynthesisJobReq`
@@ -80,7 +80,7 @@ class CreateSynthesisJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSynthesisJobRequest.
+        r"""Sets the body of this CreateSynthesisJobRequest.
 
         :param body: The body of this CreateSynthesisJobRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateSynthesisJobReq`

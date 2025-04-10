@@ -32,7 +32,7 @@ class ScanSkeyKvResponse(SdkResponse):
     }
 
     def __init__(self, returned_count=None, filtered_count=None, cursor_sort_key=None, returned_kv_items=None):
-        """ScanSkeyKvResponse
+        r"""ScanSkeyKvResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ScanSkeyKvResponse(SdkResponse):
 
     @property
     def returned_count(self):
-        """Gets the returned_count of this ScanSkeyKvResponse.
+        r"""Gets the returned_count of this ScanSkeyKvResponse.
 
         返回的文档数量，为0不表示结束。 - 如果filtered_count超过500仍无匹配，则返回0。 -  长度：4
 
@@ -76,7 +76,7 @@ class ScanSkeyKvResponse(SdkResponse):
 
     @returned_count.setter
     def returned_count(self, returned_count):
-        """Sets the returned_count of this ScanSkeyKvResponse.
+        r"""Sets the returned_count of this ScanSkeyKvResponse.
 
         返回的文档数量，为0不表示结束。 - 如果filtered_count超过500仍无匹配，则返回0。 -  长度：4
 
@@ -87,7 +87,7 @@ class ScanSkeyKvResponse(SdkResponse):
 
     @property
     def filtered_count(self):
-        """Gets the filtered_count of this ScanSkeyKvResponse.
+        r"""Gets the filtered_count of this ScanSkeyKvResponse.
 
         被过滤掉的文档数量。 - 长度：4
 
@@ -98,7 +98,7 @@ class ScanSkeyKvResponse(SdkResponse):
 
     @filtered_count.setter
     def filtered_count(self, filtered_count):
-        """Sets the filtered_count of this ScanSkeyKvResponse.
+        r"""Sets the filtered_count of this ScanSkeyKvResponse.
 
         被过滤掉的文档数量。 - 长度：4
 
@@ -109,7 +109,7 @@ class ScanSkeyKvResponse(SdkResponse):
 
     @property
     def cursor_sort_key(self):
-        """Gets the cursor_sort_key of this ScanSkeyKvResponse.
+        r"""Gets the cursor_sort_key of this ScanSkeyKvResponse.
 
         下次请求时的start_key。 > 该值为空时，表示指定范围或者指定filter条件所有kv已经返回。
 
@@ -120,7 +120,7 @@ class ScanSkeyKvResponse(SdkResponse):
 
     @cursor_sort_key.setter
     def cursor_sort_key(self, cursor_sort_key):
-        """Sets the cursor_sort_key of this ScanSkeyKvResponse.
+        r"""Sets the cursor_sort_key of this ScanSkeyKvResponse.
 
         下次请求时的start_key。 > 该值为空时，表示指定范围或者指定filter条件所有kv已经返回。
 
@@ -131,7 +131,7 @@ class ScanSkeyKvResponse(SdkResponse):
 
     @property
     def returned_kv_items(self):
-        """Gets the returned_kv_items of this ScanSkeyKvResponse.
+        r"""Gets the returned_kv_items of this ScanSkeyKvResponse.
 
         返回的kv列表，与scan_kv的kv_array相同。
 
@@ -142,7 +142,7 @@ class ScanSkeyKvResponse(SdkResponse):
 
     @returned_kv_items.setter
     def returned_kv_items(self, returned_kv_items):
-        """Sets the returned_kv_items of this ScanSkeyKvResponse.
+        r"""Sets the returned_kv_items of this ScanSkeyKvResponse.
 
         返回的kv列表，与scan_kv的kv_array相同。
 

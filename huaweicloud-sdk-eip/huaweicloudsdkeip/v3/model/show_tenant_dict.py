@@ -33,7 +33,7 @@ class ShowTenantDict:
     }
 
     def __init__(self, id=None, charge_mode=None, min_size=None, max_size=None, ext_limit=None):
-        """ShowTenantDict
+        r"""ShowTenantDict
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowTenantDict:
 
     @property
     def id(self):
-        """Gets the id of this ShowTenantDict.
+        r"""Gets the id of this ShowTenantDict.
 
         - 功能说明：弹性公网IP的唯一标识
 
@@ -82,7 +82,7 @@ class ShowTenantDict:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowTenantDict.
+        r"""Sets the id of this ShowTenantDict.
 
         - 功能说明：弹性公网IP的唯一标识
 
@@ -93,7 +93,7 @@ class ShowTenantDict:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ShowTenantDict.
+        r"""Gets the charge_mode of this ShowTenantDict.
 
         带宽的计费模式
 
@@ -104,7 +104,7 @@ class ShowTenantDict:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ShowTenantDict.
+        r"""Sets the charge_mode of this ShowTenantDict.
 
         带宽的计费模式
 
@@ -115,7 +115,7 @@ class ShowTenantDict:
 
     @property
     def min_size(self):
-        """Gets the min_size of this ShowTenantDict.
+        r"""Gets the min_size of this ShowTenantDict.
 
         该类型带宽可购买的最小size
 
@@ -126,7 +126,7 @@ class ShowTenantDict:
 
     @min_size.setter
     def min_size(self, min_size):
-        """Sets the min_size of this ShowTenantDict.
+        r"""Sets the min_size of this ShowTenantDict.
 
         该类型带宽可购买的最小size
 
@@ -137,7 +137,7 @@ class ShowTenantDict:
 
     @property
     def max_size(self):
-        """Gets the max_size of this ShowTenantDict.
+        r"""Gets the max_size of this ShowTenantDict.
 
         该类型带宽可购买的最大size
 
@@ -148,7 +148,7 @@ class ShowTenantDict:
 
     @max_size.setter
     def max_size(self, max_size):
-        """Sets the max_size of this ShowTenantDict.
+        r"""Sets the max_size of this ShowTenantDict.
 
         该类型带宽可购买的最大size
 
@@ -159,7 +159,7 @@ class ShowTenantDict:
 
     @property
     def ext_limit(self):
-        """Gets the ext_limit of this ShowTenantDict.
+        r"""Gets the ext_limit of this ShowTenantDict.
 
         :return: The ext_limit of this ShowTenantDict.
         :rtype: :class:`huaweicloudsdkeip.v3.ExtLimitPojo`
@@ -168,7 +168,7 @@ class ShowTenantDict:
 
     @ext_limit.setter
     def ext_limit(self, ext_limit):
-        """Sets the ext_limit of this ShowTenantDict.
+        r"""Sets the ext_limit of this ShowTenantDict.
 
         :param ext_limit: The ext_limit of this ShowTenantDict.
         :type ext_limit: :class:`huaweicloudsdkeip.v3.ExtLimitPojo`

@@ -26,7 +26,7 @@ class CreateApiAclBindingV2Response(SdkResponse):
     }
 
     def __init__(self, acl_bindings=None):
-        """CreateApiAclBindingV2Response
+        r"""CreateApiAclBindingV2Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateApiAclBindingV2Response(SdkResponse):
 
     @property
     def acl_bindings(self):
-        """Gets the acl_bindings of this CreateApiAclBindingV2Response.
+        r"""Gets the acl_bindings of this CreateApiAclBindingV2Response.
 
         API与ACL的绑定关系列表
 
@@ -55,7 +55,7 @@ class CreateApiAclBindingV2Response(SdkResponse):
 
     @acl_bindings.setter
     def acl_bindings(self, acl_bindings):
-        """Sets the acl_bindings of this CreateApiAclBindingV2Response.
+        r"""Sets the acl_bindings of this CreateApiAclBindingV2Response.
 
         API与ACL的绑定关系列表
 

@@ -37,7 +37,7 @@ class BlackWhiteListResponseDataRecords:
     }
 
     def __init__(self, list_id=None, direction=None, address_type=None, address=None, protocol=None, port=None, description=None):
-        """BlackWhiteListResponseDataRecords
+        r"""BlackWhiteListResponseDataRecords
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class BlackWhiteListResponseDataRecords:
 
     @property
     def list_id(self):
-        """Gets the list_id of this BlackWhiteListResponseDataRecords.
+        r"""Gets the list_id of this BlackWhiteListResponseDataRecords.
 
         黑白名单列表id
 
@@ -96,7 +96,7 @@ class BlackWhiteListResponseDataRecords:
 
     @list_id.setter
     def list_id(self, list_id):
-        """Sets the list_id of this BlackWhiteListResponseDataRecords.
+        r"""Sets the list_id of this BlackWhiteListResponseDataRecords.
 
         黑白名单列表id
 
@@ -107,7 +107,7 @@ class BlackWhiteListResponseDataRecords:
 
     @property
     def direction(self):
-        """Gets the direction of this BlackWhiteListResponseDataRecords.
+        r"""Gets the direction of this BlackWhiteListResponseDataRecords.
 
         黑白地址方向0：源地址1：目的地址
 
@@ -118,7 +118,7 @@ class BlackWhiteListResponseDataRecords:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this BlackWhiteListResponseDataRecords.
+        r"""Sets the direction of this BlackWhiteListResponseDataRecords.
 
         黑白地址方向0：源地址1：目的地址
 
@@ -129,7 +129,7 @@ class BlackWhiteListResponseDataRecords:
 
     @property
     def address_type(self):
-        """Gets the address_type of this BlackWhiteListResponseDataRecords.
+        r"""Gets the address_type of this BlackWhiteListResponseDataRecords.
 
         ip地址类型0：ipv4，1:ipv6
 
@@ -140,7 +140,7 @@ class BlackWhiteListResponseDataRecords:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this BlackWhiteListResponseDataRecords.
+        r"""Sets the address_type of this BlackWhiteListResponseDataRecords.
 
         ip地址类型0：ipv4，1:ipv6
 
@@ -151,7 +151,7 @@ class BlackWhiteListResponseDataRecords:
 
     @property
     def address(self):
-        """Gets the address of this BlackWhiteListResponseDataRecords.
+        r"""Gets the address of this BlackWhiteListResponseDataRecords.
 
         ip地址
 
@@ -162,7 +162,7 @@ class BlackWhiteListResponseDataRecords:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this BlackWhiteListResponseDataRecords.
+        r"""Sets the address of this BlackWhiteListResponseDataRecords.
 
         ip地址
 
@@ -173,7 +173,7 @@ class BlackWhiteListResponseDataRecords:
 
     @property
     def protocol(self):
-        """Gets the protocol of this BlackWhiteListResponseDataRecords.
+        r"""Gets the protocol of this BlackWhiteListResponseDataRecords.
 
         协议类型:TCP为6,UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
 
@@ -184,7 +184,7 @@ class BlackWhiteListResponseDataRecords:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this BlackWhiteListResponseDataRecords.
+        r"""Sets the protocol of this BlackWhiteListResponseDataRecords.
 
         协议类型:TCP为6,UDP为17,ICMP为1,ICMPV6为58,ANY为-1,手动类型不为空，自动类型为空
 
@@ -195,7 +195,7 @@ class BlackWhiteListResponseDataRecords:
 
     @property
     def port(self):
-        """Gets the port of this BlackWhiteListResponseDataRecords.
+        r"""Gets the port of this BlackWhiteListResponseDataRecords.
 
         端口
 
@@ -206,7 +206,7 @@ class BlackWhiteListResponseDataRecords:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this BlackWhiteListResponseDataRecords.
+        r"""Sets the port of this BlackWhiteListResponseDataRecords.
 
         端口
 
@@ -217,7 +217,7 @@ class BlackWhiteListResponseDataRecords:
 
     @property
     def description(self):
-        """Gets the description of this BlackWhiteListResponseDataRecords.
+        r"""Gets the description of this BlackWhiteListResponseDataRecords.
 
         描述
 
@@ -228,7 +228,7 @@ class BlackWhiteListResponseDataRecords:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BlackWhiteListResponseDataRecords.
+        r"""Sets the description of this BlackWhiteListResponseDataRecords.
 
         描述
 

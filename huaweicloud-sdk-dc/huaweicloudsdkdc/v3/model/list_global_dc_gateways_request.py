@@ -47,7 +47,7 @@ class ListGlobalDcGatewaysRequest:
     }
 
     def __init__(self, limit=None, fields=None, marker=None, sort_key=None, sort_dir=None, id=None, name=None, enterprise_project_id=None, site_network_id=None, cloud_connection_id=None, status=None, global_center_network_id=None):
-        """ListGlobalDcGatewaysRequest
+        r"""ListGlobalDcGatewaysRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListGlobalDcGatewaysRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGlobalDcGatewaysRequest.
+        r"""Gets the limit of this ListGlobalDcGatewaysRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -131,7 +131,7 @@ class ListGlobalDcGatewaysRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGlobalDcGatewaysRequest.
+        r"""Sets the limit of this ListGlobalDcGatewaysRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -142,7 +142,7 @@ class ListGlobalDcGatewaysRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListGlobalDcGatewaysRequest.
+        r"""Gets the fields of this ListGlobalDcGatewaysRequest.
 
         显示字段列表
 
@@ -153,7 +153,7 @@ class ListGlobalDcGatewaysRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListGlobalDcGatewaysRequest.
+        r"""Sets the fields of this ListGlobalDcGatewaysRequest.
 
         显示字段列表
 
@@ -164,7 +164,7 @@ class ListGlobalDcGatewaysRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListGlobalDcGatewaysRequest.
+        r"""Gets the marker of this ListGlobalDcGatewaysRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -175,7 +175,7 @@ class ListGlobalDcGatewaysRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListGlobalDcGatewaysRequest.
+        r"""Sets the marker of this ListGlobalDcGatewaysRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -186,7 +186,7 @@ class ListGlobalDcGatewaysRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListGlobalDcGatewaysRequest.
+        r"""Gets the sort_key of this ListGlobalDcGatewaysRequest.
 
         排序字段。
 
@@ -197,7 +197,7 @@ class ListGlobalDcGatewaysRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListGlobalDcGatewaysRequest.
+        r"""Sets the sort_key of this ListGlobalDcGatewaysRequest.
 
         排序字段。
 
@@ -208,7 +208,7 @@ class ListGlobalDcGatewaysRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListGlobalDcGatewaysRequest.
+        r"""Gets the sort_dir of this ListGlobalDcGatewaysRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -219,7 +219,7 @@ class ListGlobalDcGatewaysRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListGlobalDcGatewaysRequest.
+        r"""Sets the sort_dir of this ListGlobalDcGatewaysRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -230,7 +230,7 @@ class ListGlobalDcGatewaysRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListGlobalDcGatewaysRequest.
+        r"""Gets the id of this ListGlobalDcGatewaysRequest.
 
         根据资源ID过滤实例
 
@@ -241,7 +241,7 @@ class ListGlobalDcGatewaysRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListGlobalDcGatewaysRequest.
+        r"""Sets the id of this ListGlobalDcGatewaysRequest.
 
         根据资源ID过滤实例
 
@@ -252,7 +252,7 @@ class ListGlobalDcGatewaysRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListGlobalDcGatewaysRequest.
+        r"""Gets the name of this ListGlobalDcGatewaysRequest.
 
         根据名字过滤查询，可查询多个名字。
 
@@ -263,7 +263,7 @@ class ListGlobalDcGatewaysRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListGlobalDcGatewaysRequest.
+        r"""Sets the name of this ListGlobalDcGatewaysRequest.
 
         根据名字过滤查询，可查询多个名字。
 
@@ -274,7 +274,7 @@ class ListGlobalDcGatewaysRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListGlobalDcGatewaysRequest.
+        r"""Gets the enterprise_project_id of this ListGlobalDcGatewaysRequest.
 
         根据企业项目ID过滤资源实例
 
@@ -285,7 +285,7 @@ class ListGlobalDcGatewaysRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListGlobalDcGatewaysRequest.
+        r"""Sets the enterprise_project_id of this ListGlobalDcGatewaysRequest.
 
         根据企业项目ID过滤资源实例
 
@@ -296,7 +296,7 @@ class ListGlobalDcGatewaysRequest:
 
     @property
     def site_network_id(self):
-        """Gets the site_network_id of this ListGlobalDcGatewaysRequest.
+        r"""Gets the site_network_id of this ListGlobalDcGatewaysRequest.
 
         站点网络ID
 
@@ -307,7 +307,7 @@ class ListGlobalDcGatewaysRequest:
 
     @site_network_id.setter
     def site_network_id(self, site_network_id):
-        """Sets the site_network_id of this ListGlobalDcGatewaysRequest.
+        r"""Sets the site_network_id of this ListGlobalDcGatewaysRequest.
 
         站点网络ID
 
@@ -318,7 +318,7 @@ class ListGlobalDcGatewaysRequest:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this ListGlobalDcGatewaysRequest.
+        r"""Gets the cloud_connection_id of this ListGlobalDcGatewaysRequest.
 
         云连接ID
 
@@ -329,7 +329,7 @@ class ListGlobalDcGatewaysRequest:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this ListGlobalDcGatewaysRequest.
+        r"""Sets the cloud_connection_id of this ListGlobalDcGatewaysRequest.
 
         云连接ID
 
@@ -340,7 +340,7 @@ class ListGlobalDcGatewaysRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListGlobalDcGatewaysRequest.
+        r"""Gets the status of this ListGlobalDcGatewaysRequest.
 
         根椐资源状态过滤实例
 
@@ -351,7 +351,7 @@ class ListGlobalDcGatewaysRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListGlobalDcGatewaysRequest.
+        r"""Sets the status of this ListGlobalDcGatewaysRequest.
 
         根椐资源状态过滤实例
 
@@ -362,7 +362,7 @@ class ListGlobalDcGatewaysRequest:
 
     @property
     def global_center_network_id(self):
-        """Gets the global_center_network_id of this ListGlobalDcGatewaysRequest.
+        r"""Gets the global_center_network_id of this ListGlobalDcGatewaysRequest.
 
         全球中心网络ID
 
@@ -373,7 +373,7 @@ class ListGlobalDcGatewaysRequest:
 
     @global_center_network_id.setter
     def global_center_network_id(self, global_center_network_id):
-        """Sets the global_center_network_id of this ListGlobalDcGatewaysRequest.
+        r"""Sets the global_center_network_id of this ListGlobalDcGatewaysRequest.
 
         全球中心网络ID
 

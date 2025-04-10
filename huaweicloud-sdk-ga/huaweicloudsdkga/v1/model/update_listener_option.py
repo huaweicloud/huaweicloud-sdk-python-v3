@@ -31,7 +31,7 @@ class UpdateListenerOption:
     }
 
     def __init__(self, name=None, description=None, port_ranges=None, client_affinity=None):
-        """UpdateListenerOption
+        r"""UpdateListenerOption
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateListenerOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateListenerOption.
+        r"""Gets the name of this UpdateListenerOption.
 
         监听器名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -75,7 +75,7 @@ class UpdateListenerOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateListenerOption.
+        r"""Sets the name of this UpdateListenerOption.
 
         监听器名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -86,7 +86,7 @@ class UpdateListenerOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateListenerOption.
+        r"""Gets the description of this UpdateListenerOption.
 
         监听器的描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -97,7 +97,7 @@ class UpdateListenerOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateListenerOption.
+        r"""Sets the description of this UpdateListenerOption.
 
         监听器的描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -108,7 +108,7 @@ class UpdateListenerOption:
 
     @property
     def port_ranges(self):
-        """Gets the port_ranges of this UpdateListenerOption.
+        r"""Gets the port_ranges of this UpdateListenerOption.
 
         监听端口范围列表。
 
@@ -119,7 +119,7 @@ class UpdateListenerOption:
 
     @port_ranges.setter
     def port_ranges(self, port_ranges):
-        """Sets the port_ranges of this UpdateListenerOption.
+        r"""Sets the port_ranges of this UpdateListenerOption.
 
         监听端口范围列表。
 
@@ -130,7 +130,7 @@ class UpdateListenerOption:
 
     @property
     def client_affinity(self):
-        """Gets the client_affinity of this UpdateListenerOption.
+        r"""Gets the client_affinity of this UpdateListenerOption.
 
         :return: The client_affinity of this UpdateListenerOption.
         :rtype: :class:`huaweicloudsdkga.v1.ClientAffinity`
@@ -139,7 +139,7 @@ class UpdateListenerOption:
 
     @client_affinity.setter
     def client_affinity(self, client_affinity):
-        """Sets the client_affinity of this UpdateListenerOption.
+        r"""Sets the client_affinity of this UpdateListenerOption.
 
         :param client_affinity: The client_affinity of this UpdateListenerOption.
         :type client_affinity: :class:`huaweicloudsdkga.v1.ClientAffinity`

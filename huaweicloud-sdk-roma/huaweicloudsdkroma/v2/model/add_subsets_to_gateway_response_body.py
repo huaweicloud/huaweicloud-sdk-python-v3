@@ -55,7 +55,7 @@ class AddSubsetsToGatewayResponseBody:
     }
 
     def __init__(self, id=None, device_id=None, parent_device_id=None, product=None, device_name=None, instance_id=None, client_id=None, node_id=None, status=None, online_status=None, description=None, created_user=None, last_updated_user=None, created_datetime=None, last_updated_datetime=None, app_id=None):
-        """AddSubsetsToGatewayResponseBody
+        r"""AddSubsetsToGatewayResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the id of this AddSubsetsToGatewayResponseBody.
 
         设备ID
 
@@ -159,7 +159,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the id of this AddSubsetsToGatewayResponseBody.
 
         设备ID
 
@@ -170,7 +170,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def device_id(self):
-        """Gets the device_id of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the device_id of this AddSubsetsToGatewayResponseBody.
 
         设备ID（兼容20.0）
 
@@ -181,7 +181,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the device_id of this AddSubsetsToGatewayResponseBody.
 
         设备ID（兼容20.0）
 
@@ -192,7 +192,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def parent_device_id(self):
-        """Gets the parent_device_id of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the parent_device_id of this AddSubsetsToGatewayResponseBody.
 
         父设备ID
 
@@ -203,7 +203,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @parent_device_id.setter
     def parent_device_id(self, parent_device_id):
-        """Sets the parent_device_id of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the parent_device_id of this AddSubsetsToGatewayResponseBody.
 
         父设备ID
 
@@ -214,7 +214,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def product(self):
-        """Gets the product of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the product of this AddSubsetsToGatewayResponseBody.
 
         :return: The product of this AddSubsetsToGatewayResponseBody.
         :rtype: :class:`huaweicloudsdkroma.v2.ProductReferer`
@@ -223,7 +223,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @product.setter
     def product(self, product):
-        """Sets the product of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the product of this AddSubsetsToGatewayResponseBody.
 
         :param product: The product of this AddSubsetsToGatewayResponseBody.
         :type product: :class:`huaweicloudsdkroma.v2.ProductReferer`
@@ -232,7 +232,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def device_name(self):
-        """Gets the device_name of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the device_name of this AddSubsetsToGatewayResponseBody.
 
         设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?'-@%&!, 长度2-64
 
@@ -243,7 +243,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the device_name of this AddSubsetsToGatewayResponseBody.
 
         设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?'-@%&!, 长度2-64
 
@@ -254,7 +254,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the instance_id of this AddSubsetsToGatewayResponseBody.
 
         实例id
 
@@ -265,7 +265,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the instance_id of this AddSubsetsToGatewayResponseBody.
 
         实例id
 
@@ -276,7 +276,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def client_id(self):
-        """Gets the client_id of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the client_id of this AddSubsetsToGatewayResponseBody.
 
         设备客户端ID，平台生成的设备唯一标识
 
@@ -287,7 +287,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the client_id of this AddSubsetsToGatewayResponseBody.
 
         设备客户端ID，平台生成的设备唯一标识
 
@@ -298,7 +298,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def node_id(self):
-        """Gets the node_id of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the node_id of this AddSubsetsToGatewayResponseBody.
 
         设备物理编号，通常使用MAC或者IMEI号，支持英文大小写，数字，下划线和中划线，长度2-64
 
@@ -309,7 +309,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the node_id of this AddSubsetsToGatewayResponseBody.
 
         设备物理编号，通常使用MAC或者IMEI号，支持英文大小写，数字，下划线和中划线，长度2-64
 
@@ -320,7 +320,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the status of this AddSubsetsToGatewayResponseBody.
 
         设备状态 0-启用 1-禁用
 
@@ -331,7 +331,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the status of this AddSubsetsToGatewayResponseBody.
 
         设备状态 0-启用 1-禁用
 
@@ -342,7 +342,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def online_status(self):
-        """Gets the online_status of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the online_status of this AddSubsetsToGatewayResponseBody.
 
         是否在线 0-未连接 1-在线 2-离线
 
@@ -353,7 +353,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @online_status.setter
     def online_status(self, online_status):
-        """Sets the online_status of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the online_status of this AddSubsetsToGatewayResponseBody.
 
         是否在线 0-未连接 1-在线 2-离线
 
@@ -364,7 +364,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the description of this AddSubsetsToGatewayResponseBody.
 
         备注
 
@@ -375,7 +375,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the description of this AddSubsetsToGatewayResponseBody.
 
         备注
 
@@ -386,7 +386,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def created_user(self):
-        """Gets the created_user of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the created_user of this AddSubsetsToGatewayResponseBody.
 
         :return: The created_user of this AddSubsetsToGatewayResponseBody.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -395,7 +395,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @created_user.setter
     def created_user(self, created_user):
-        """Sets the created_user of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the created_user of this AddSubsetsToGatewayResponseBody.
 
         :param created_user: The created_user of this AddSubsetsToGatewayResponseBody.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -404,7 +404,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def last_updated_user(self):
-        """Gets the last_updated_user of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the last_updated_user of this AddSubsetsToGatewayResponseBody.
 
         :return: The last_updated_user of this AddSubsetsToGatewayResponseBody.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -413,7 +413,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
-        """Sets the last_updated_user of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the last_updated_user of this AddSubsetsToGatewayResponseBody.
 
         :param last_updated_user: The last_updated_user of this AddSubsetsToGatewayResponseBody.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -422,7 +422,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def created_datetime(self):
-        """Gets the created_datetime of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the created_datetime of this AddSubsetsToGatewayResponseBody.
 
         创建时间，timestamp(ms)，使用UTC时区
 
@@ -433,7 +433,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @created_datetime.setter
     def created_datetime(self, created_datetime):
-        """Sets the created_datetime of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the created_datetime of this AddSubsetsToGatewayResponseBody.
 
         创建时间，timestamp(ms)，使用UTC时区
 
@@ -444,7 +444,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def last_updated_datetime(self):
-        """Gets the last_updated_datetime of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the last_updated_datetime of this AddSubsetsToGatewayResponseBody.
 
         最后修改时间，timestamp(ms)，使用UTC时区
 
@@ -455,7 +455,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @last_updated_datetime.setter
     def last_updated_datetime(self, last_updated_datetime):
-        """Sets the last_updated_datetime of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the last_updated_datetime of this AddSubsetsToGatewayResponseBody.
 
         最后修改时间，timestamp(ms)，使用UTC时区
 
@@ -466,7 +466,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AddSubsetsToGatewayResponseBody.
+        r"""Gets the app_id of this AddSubsetsToGatewayResponseBody.
 
         应用ID
 
@@ -477,7 +477,7 @@ class AddSubsetsToGatewayResponseBody:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AddSubsetsToGatewayResponseBody.
+        r"""Sets the app_id of this AddSubsetsToGatewayResponseBody.
 
         应用ID
 

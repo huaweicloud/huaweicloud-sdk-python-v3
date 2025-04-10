@@ -26,7 +26,7 @@ class ListStackSetsResponse(SdkResponse):
     }
 
     def __init__(self, stack_sets=None):
-        """ListStackSetsResponse
+        r"""ListStackSetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListStackSetsResponse(SdkResponse):
 
     @property
     def stack_sets(self):
-        """Gets the stack_sets of this ListStackSetsResponse.
+        r"""Gets the stack_sets of this ListStackSetsResponse.
 
         资源栈集
 
@@ -55,7 +55,7 @@ class ListStackSetsResponse(SdkResponse):
 
     @stack_sets.setter
     def stack_sets(self, stack_sets):
-        """Sets the stack_sets of this ListStackSetsResponse.
+        r"""Sets the stack_sets of this ListStackSetsResponse.
 
         资源栈集
 

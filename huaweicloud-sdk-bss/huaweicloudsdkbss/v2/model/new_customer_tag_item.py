@@ -33,7 +33,7 @@ class NewCustomerTagItem:
     }
 
     def __init__(self, customer_id=None, customer_tag_type=None, new_customer_tag=None, effective_time=None, expire_time=None):
-        """NewCustomerTagItem
+        r"""NewCustomerTagItem
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class NewCustomerTagItem:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this NewCustomerTagItem.
+        r"""Gets the customer_id of this NewCustomerTagItem.
 
         客户ID。
 
@@ -82,7 +82,7 @@ class NewCustomerTagItem:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this NewCustomerTagItem.
+        r"""Sets the customer_id of this NewCustomerTagItem.
 
         客户ID。
 
@@ -93,7 +93,7 @@ class NewCustomerTagItem:
 
     @property
     def customer_tag_type(self):
-        """Gets the customer_tag_type of this NewCustomerTagItem.
+        r"""Gets the customer_tag_type of this NewCustomerTagItem.
 
         新客标签类型。 SMB：SMB新客标签。
 
@@ -104,7 +104,7 @@ class NewCustomerTagItem:
 
     @customer_tag_type.setter
     def customer_tag_type(self, customer_tag_type):
-        """Sets the customer_tag_type of this NewCustomerTagItem.
+        r"""Sets the customer_tag_type of this NewCustomerTagItem.
 
         新客标签类型。 SMB：SMB新客标签。
 
@@ -115,7 +115,7 @@ class NewCustomerTagItem:
 
     @property
     def new_customer_tag(self):
-        """Gets the new_customer_tag of this NewCustomerTagItem.
+        r"""Gets the new_customer_tag of this NewCustomerTagItem.
 
         新客标签。 Y：合格新客N：非新客UNDETERMINED：未达标新客，即有新客资格但尚未成为新客
 
@@ -126,7 +126,7 @@ class NewCustomerTagItem:
 
     @new_customer_tag.setter
     def new_customer_tag(self, new_customer_tag):
-        """Sets the new_customer_tag of this NewCustomerTagItem.
+        r"""Sets the new_customer_tag of this NewCustomerTagItem.
 
         新客标签。 Y：合格新客N：非新客UNDETERMINED：未达标新客，即有新客资格但尚未成为新客
 
@@ -137,7 +137,7 @@ class NewCustomerTagItem:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this NewCustomerTagItem.
+        r"""Gets the effective_time of this NewCustomerTagItem.
 
         生效月份。 格式为YYYY-MM。
 
@@ -148,7 +148,7 @@ class NewCustomerTagItem:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this NewCustomerTagItem.
+        r"""Sets the effective_time of this NewCustomerTagItem.
 
         生效月份。 格式为YYYY-MM。
 
@@ -159,7 +159,7 @@ class NewCustomerTagItem:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this NewCustomerTagItem.
+        r"""Gets the expire_time of this NewCustomerTagItem.
 
         失效月份。 格式为YYYY-MM。
 
@@ -170,7 +170,7 @@ class NewCustomerTagItem:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this NewCustomerTagItem.
+        r"""Sets the expire_time of this NewCustomerTagItem.
 
         失效月份。 格式为YYYY-MM。
 

@@ -35,7 +35,7 @@ class QaBotAnswer:
     }
 
     def __init__(self, qa_pair_id=None, st_question=None, answer=None, score=None, domain=None, top_score_question=None):
-        """QaBotAnswer
+        r"""QaBotAnswer
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QaBotAnswer:
 
     @property
     def qa_pair_id(self):
-        """Gets the qa_pair_id of this QaBotAnswer.
+        r"""Gets the qa_pair_id of this QaBotAnswer.
 
         问答对ID。
 
@@ -89,7 +89,7 @@ class QaBotAnswer:
 
     @qa_pair_id.setter
     def qa_pair_id(self, qa_pair_id):
-        """Sets the qa_pair_id of this QaBotAnswer.
+        r"""Sets the qa_pair_id of this QaBotAnswer.
 
         问答对ID。
 
@@ -100,7 +100,7 @@ class QaBotAnswer:
 
     @property
     def st_question(self):
-        """Gets the st_question of this QaBotAnswer.
+        r"""Gets the st_question of this QaBotAnswer.
 
         标准问题。
 
@@ -111,7 +111,7 @@ class QaBotAnswer:
 
     @st_question.setter
     def st_question(self, st_question):
-        """Sets the st_question of this QaBotAnswer.
+        r"""Sets the st_question of this QaBotAnswer.
 
         标准问题。
 
@@ -122,7 +122,7 @@ class QaBotAnswer:
 
     @property
     def answer(self):
-        """Gets the answer of this QaBotAnswer.
+        r"""Gets the answer of this QaBotAnswer.
 
         知识库答案，包含该字段的回答为直接回答，未包含该字段的是推荐回答。
 
@@ -133,7 +133,7 @@ class QaBotAnswer:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this QaBotAnswer.
+        r"""Sets the answer of this QaBotAnswer.
 
         知识库答案，包含该字段的回答为直接回答，未包含该字段的是推荐回答。
 
@@ -144,7 +144,7 @@ class QaBotAnswer:
 
     @property
     def score(self):
-        """Gets the score of this QaBotAnswer.
+        r"""Gets the score of this QaBotAnswer.
 
         相似度得分，精确到小数点后3位。
 
@@ -155,7 +155,7 @@ class QaBotAnswer:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this QaBotAnswer.
+        r"""Sets the score of this QaBotAnswer.
 
         相似度得分，精确到小数点后3位。
 
@@ -166,7 +166,7 @@ class QaBotAnswer:
 
     @property
     def domain(self):
-        """Gets the domain of this QaBotAnswer.
+        r"""Gets the domain of this QaBotAnswer.
 
         所属领域。
 
@@ -177,7 +177,7 @@ class QaBotAnswer:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this QaBotAnswer.
+        r"""Sets the domain of this QaBotAnswer.
 
         所属领域。
 
@@ -188,7 +188,7 @@ class QaBotAnswer:
 
     @property
     def top_score_question(self):
-        """Gets the top_score_question of this QaBotAnswer.
+        r"""Gets the top_score_question of this QaBotAnswer.
 
         最高评分的扩展问或标准问，当关闭内部阈值处理时返回。
 
@@ -199,7 +199,7 @@ class QaBotAnswer:
 
     @top_score_question.setter
     def top_score_question(self, top_score_question):
-        """Sets the top_score_question of this QaBotAnswer.
+        r"""Sets the top_score_question of this QaBotAnswer.
 
         最高评分的扩展问或标准问，当关闭内部阈值处理时返回。
 

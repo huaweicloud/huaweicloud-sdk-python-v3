@@ -27,7 +27,7 @@ class ParameterInfo:
     }
 
     def __init__(self, parameter_name=None, parameter_value=None):
-        """ParameterInfo
+        r"""ParameterInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ParameterInfo:
 
     @property
     def parameter_name(self):
-        """Gets the parameter_name of this ParameterInfo.
+        r"""Gets the parameter_name of this ParameterInfo.
 
         参数名称，如：“applier_thread_num”，“read_task_num”等
 
@@ -59,7 +59,7 @@ class ParameterInfo:
 
     @parameter_name.setter
     def parameter_name(self, parameter_name):
-        """Sets the parameter_name of this ParameterInfo.
+        r"""Sets the parameter_name of this ParameterInfo.
 
         参数名称，如：“applier_thread_num”，“read_task_num”等
 
@@ -70,7 +70,7 @@ class ParameterInfo:
 
     @property
     def parameter_value(self):
-        """Gets the parameter_value of this ParameterInfo.
+        r"""Gets the parameter_value of this ParameterInfo.
 
         参数名称对应的参数值，如：“20”，“false”
 
@@ -81,7 +81,7 @@ class ParameterInfo:
 
     @parameter_value.setter
     def parameter_value(self, parameter_value):
-        """Sets the parameter_value of this ParameterInfo.
+        r"""Sets the parameter_value of this ParameterInfo.
 
         参数名称对应的参数值，如：“20”，“false”
 

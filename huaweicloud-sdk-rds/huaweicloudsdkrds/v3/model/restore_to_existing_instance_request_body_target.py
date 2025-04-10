@@ -25,7 +25,7 @@ class RestoreToExistingInstanceRequestBodyTarget:
     }
 
     def __init__(self, instance_id=None):
-        """RestoreToExistingInstanceRequestBodyTarget
+        r"""RestoreToExistingInstanceRequestBodyTarget
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestoreToExistingInstanceRequestBodyTarget:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RestoreToExistingInstanceRequestBodyTarget.
+        r"""Gets the instance_id of this RestoreToExistingInstanceRequestBodyTarget.
 
         恢复目标实例ID。
 
@@ -53,7 +53,7 @@ class RestoreToExistingInstanceRequestBodyTarget:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RestoreToExistingInstanceRequestBodyTarget.
+        r"""Sets the instance_id of this RestoreToExistingInstanceRequestBodyTarget.
 
         恢复目标实例ID。
 

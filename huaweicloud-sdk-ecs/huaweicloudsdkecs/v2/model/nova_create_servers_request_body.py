@@ -27,7 +27,7 @@ class NovaCreateServersRequestBody:
     }
 
     def __init__(self, server=None, osscheduler_hints=None):
-        """NovaCreateServersRequestBody
+        r"""NovaCreateServersRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NovaCreateServersRequestBody:
 
     @property
     def server(self):
-        """Gets the server of this NovaCreateServersRequestBody.
+        r"""Gets the server of this NovaCreateServersRequestBody.
 
         :return: The server of this NovaCreateServersRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateServersOption`
@@ -58,7 +58,7 @@ class NovaCreateServersRequestBody:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this NovaCreateServersRequestBody.
+        r"""Sets the server of this NovaCreateServersRequestBody.
 
         :param server: The server of this NovaCreateServersRequestBody.
         :type server: :class:`huaweicloudsdkecs.v2.NovaCreateServersOption`
@@ -67,7 +67,7 @@ class NovaCreateServersRequestBody:
 
     @property
     def osscheduler_hints(self):
-        """Gets the osscheduler_hints of this NovaCreateServersRequestBody.
+        r"""Gets the osscheduler_hints of this NovaCreateServersRequestBody.
 
         :return: The osscheduler_hints of this NovaCreateServersRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateServersSchedulerHint`
@@ -76,7 +76,7 @@ class NovaCreateServersRequestBody:
 
     @osscheduler_hints.setter
     def osscheduler_hints(self, osscheduler_hints):
-        """Sets the osscheduler_hints of this NovaCreateServersRequestBody.
+        r"""Sets the osscheduler_hints of this NovaCreateServersRequestBody.
 
         :param osscheduler_hints: The osscheduler_hints of this NovaCreateServersRequestBody.
         :type osscheduler_hints: :class:`huaweicloudsdkecs.v2.NovaCreateServersSchedulerHint`

@@ -35,7 +35,7 @@ class EnvironmentCreate:
     }
 
     def __init__(self, name=None, description=None, enterprise_project_id=None, vpc_id=None, deploy_mode=None, labels=None):
-        """EnvironmentCreate
+        r"""EnvironmentCreate
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class EnvironmentCreate:
 
     @property
     def name(self):
-        """Gets the name of this EnvironmentCreate.
+        r"""Gets the name of this EnvironmentCreate.
 
         :return: The name of this EnvironmentCreate.
         :rtype: str
@@ -85,7 +85,7 @@ class EnvironmentCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvironmentCreate.
+        r"""Sets the name of this EnvironmentCreate.
 
         :param name: The name of this EnvironmentCreate.
         :type name: str
@@ -94,7 +94,7 @@ class EnvironmentCreate:
 
     @property
     def description(self):
-        """Gets the description of this EnvironmentCreate.
+        r"""Gets the description of this EnvironmentCreate.
 
         :return: The description of this EnvironmentCreate.
         :rtype: str
@@ -103,7 +103,7 @@ class EnvironmentCreate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EnvironmentCreate.
+        r"""Sets the description of this EnvironmentCreate.
 
         :param description: The description of this EnvironmentCreate.
         :type description: str
@@ -112,7 +112,7 @@ class EnvironmentCreate:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this EnvironmentCreate.
+        r"""Gets the enterprise_project_id of this EnvironmentCreate.
 
         :return: The enterprise_project_id of this EnvironmentCreate.
         :rtype: str
@@ -121,7 +121,7 @@ class EnvironmentCreate:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this EnvironmentCreate.
+        r"""Sets the enterprise_project_id of this EnvironmentCreate.
 
         :param enterprise_project_id: The enterprise_project_id of this EnvironmentCreate.
         :type enterprise_project_id: str
@@ -130,7 +130,7 @@ class EnvironmentCreate:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this EnvironmentCreate.
+        r"""Gets the vpc_id of this EnvironmentCreate.
 
         :return: The vpc_id of this EnvironmentCreate.
         :rtype: str
@@ -139,7 +139,7 @@ class EnvironmentCreate:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this EnvironmentCreate.
+        r"""Sets the vpc_id of this EnvironmentCreate.
 
         :param vpc_id: The vpc_id of this EnvironmentCreate.
         :type vpc_id: str
@@ -148,7 +148,7 @@ class EnvironmentCreate:
 
     @property
     def deploy_mode(self):
-        """Gets the deploy_mode of this EnvironmentCreate.
+        r"""Gets the deploy_mode of this EnvironmentCreate.
 
         :return: The deploy_mode of this EnvironmentCreate.
         :rtype: str
@@ -157,7 +157,7 @@ class EnvironmentCreate:
 
     @deploy_mode.setter
     def deploy_mode(self, deploy_mode):
-        """Sets the deploy_mode of this EnvironmentCreate.
+        r"""Sets the deploy_mode of this EnvironmentCreate.
 
         :param deploy_mode: The deploy_mode of this EnvironmentCreate.
         :type deploy_mode: str
@@ -166,7 +166,7 @@ class EnvironmentCreate:
 
     @property
     def labels(self):
-        """Gets the labels of this EnvironmentCreate.
+        r"""Gets the labels of this EnvironmentCreate.
 
         :return: The labels of this EnvironmentCreate.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]
@@ -175,7 +175,7 @@ class EnvironmentCreate:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this EnvironmentCreate.
+        r"""Sets the labels of this EnvironmentCreate.
 
         :param labels: The labels of this EnvironmentCreate.
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]

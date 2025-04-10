@@ -28,7 +28,7 @@ class ListInstancesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, instance=None):
-        """ListInstancesResponse
+        r"""ListInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListInstancesResponse.
+        r"""Gets the total of this ListInstancesResponse.
 
         云堡垒机实例总数。
 
@@ -62,7 +62,7 @@ class ListInstancesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListInstancesResponse.
+        r"""Sets the total of this ListInstancesResponse.
 
         云堡垒机实例总数。
 
@@ -73,7 +73,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def instance(self):
-        """Gets the instance of this ListInstancesResponse.
+        r"""Gets the instance of this ListInstancesResponse.
 
         云堡垒机实例列表信息。
 
@@ -84,7 +84,7 @@ class ListInstancesResponse(SdkResponse):
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ListInstancesResponse.
+        r"""Sets the instance of this ListInstancesResponse.
 
         云堡垒机实例列表信息。
 

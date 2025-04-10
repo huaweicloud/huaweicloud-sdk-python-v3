@@ -25,7 +25,7 @@ class CreateVpcEndpointRequest:
     }
 
     def __init__(self, body=None):
-        """CreateVpcEndpointRequest
+        r"""CreateVpcEndpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVpcEndpointRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVpcEndpointRequest.
+        r"""Gets the body of this CreateVpcEndpointRequest.
 
         :return: The body of this CreateVpcEndpointRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateVpcEndpointRequestBody`
@@ -52,7 +52,7 @@ class CreateVpcEndpointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVpcEndpointRequest.
+        r"""Sets the body of this CreateVpcEndpointRequest.
 
         :param body: The body of this CreateVpcEndpointRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateVpcEndpointRequestBody`

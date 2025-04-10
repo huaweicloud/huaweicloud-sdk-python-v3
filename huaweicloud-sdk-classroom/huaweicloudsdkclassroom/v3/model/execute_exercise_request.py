@@ -30,7 +30,7 @@ class ExecuteExerciseRequest:
     }
 
     def __init__(self, user_token=None, exercise_id=None, body=None):
-        """ExecuteExerciseRequest
+        r"""ExecuteExerciseRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ExecuteExerciseRequest:
 
     @property
     def user_token(self):
-        """Gets the user_token of this ExecuteExerciseRequest.
+        r"""Gets the user_token of this ExecuteExerciseRequest.
 
         具体调用者的用户token
 
@@ -68,7 +68,7 @@ class ExecuteExerciseRequest:
 
     @user_token.setter
     def user_token(self, user_token):
-        """Sets the user_token of this ExecuteExerciseRequest.
+        r"""Sets the user_token of this ExecuteExerciseRequest.
 
         具体调用者的用户token
 
@@ -79,7 +79,7 @@ class ExecuteExerciseRequest:
 
     @property
     def exercise_id(self):
-        """Gets the exercise_id of this ExecuteExerciseRequest.
+        r"""Gets the exercise_id of this ExecuteExerciseRequest.
 
         需判题的习题id
 
@@ -90,7 +90,7 @@ class ExecuteExerciseRequest:
 
     @exercise_id.setter
     def exercise_id(self, exercise_id):
-        """Sets the exercise_id of this ExecuteExerciseRequest.
+        r"""Sets the exercise_id of this ExecuteExerciseRequest.
 
         需判题的习题id
 
@@ -101,7 +101,7 @@ class ExecuteExerciseRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteExerciseRequest.
+        r"""Gets the body of this ExecuteExerciseRequest.
 
         :return: The body of this ExecuteExerciseRequest.
         :rtype: :class:`huaweicloudsdkclassroom.v3.PackageExerciseJudgeRequestBody`
@@ -110,7 +110,7 @@ class ExecuteExerciseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteExerciseRequest.
+        r"""Sets the body of this ExecuteExerciseRequest.
 
         :param body: The body of this ExecuteExerciseRequest.
         :type body: :class:`huaweicloudsdkclassroom.v3.PackageExerciseJudgeRequestBody`

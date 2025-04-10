@@ -25,7 +25,7 @@ class SyncResourceRequest:
     }
 
     def __init__(self, body=None):
-        """SyncResourceRequest
+        r"""SyncResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SyncResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this SyncResourceRequest.
+        r"""Gets the body of this SyncResourceRequest.
 
         :return: The body of this SyncResourceRequest.
         :rtype: :class:`huaweicloudsdkcoc.v1.SyncResourceReq`
@@ -52,7 +52,7 @@ class SyncResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SyncResourceRequest.
+        r"""Sets the body of this SyncResourceRequest.
 
         :param body: The body of this SyncResourceRequest.
         :type body: :class:`huaweicloudsdkcoc.v1.SyncResourceReq`

@@ -28,7 +28,7 @@ class MaskStatus:
     }
 
     def __init__(self):
-        """MaskStatus
+        r"""MaskStatus
 
         The model defined in huaweicloud sdk
 

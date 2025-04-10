@@ -33,7 +33,7 @@ class ListSubnetsByTagsRequestBody:
     }
 
     def __init__(self, action=None, limit=None, offset=None, matches=None, tags=None):
-        """ListSubnetsByTagsRequestBody
+        r"""ListSubnetsByTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListSubnetsByTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this ListSubnetsByTagsRequestBody.
+        r"""Gets the action of this ListSubnetsByTagsRequestBody.
 
         功能说明：操作标识 取值范围：filter(过滤)，count(查询总条数)
 
@@ -81,7 +81,7 @@ class ListSubnetsByTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListSubnetsByTagsRequestBody.
+        r"""Sets the action of this ListSubnetsByTagsRequestBody.
 
         功能说明：操作标识 取值范围：filter(过滤)，count(查询总条数)
 
@@ -92,7 +92,7 @@ class ListSubnetsByTagsRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSubnetsByTagsRequestBody.
+        r"""Gets the limit of this ListSubnetsByTagsRequestBody.
 
         功能说明：查询记录数 取值范围：1-1000 约束：action为count时此参数不生效；action为filter时默认为1000
 
@@ -103,7 +103,7 @@ class ListSubnetsByTagsRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSubnetsByTagsRequestBody.
+        r"""Sets the limit of this ListSubnetsByTagsRequestBody.
 
         功能说明：查询记录数 取值范围：1-1000 约束：action为count时此参数不生效；action为filter时默认为1000
 
@@ -114,7 +114,7 @@ class ListSubnetsByTagsRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSubnetsByTagsRequestBody.
+        r"""Gets the offset of this ListSubnetsByTagsRequestBody.
 
         功能说明：索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数 约束：action为count时无此参数；action为filter时默认为0；必须为数字，不能为负数
 
@@ -125,7 +125,7 @@ class ListSubnetsByTagsRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSubnetsByTagsRequestBody.
+        r"""Sets the offset of this ListSubnetsByTagsRequestBody.
 
         功能说明：索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数 约束：action为count时无此参数；action为filter时默认为0；必须为数字，不能为负数
 
@@ -136,7 +136,7 @@ class ListSubnetsByTagsRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this ListSubnetsByTagsRequestBody.
+        r"""Gets the matches of this ListSubnetsByTagsRequestBody.
 
         功能说明：搜索字段，key为要匹配的字段，value为匹配的值 约束：当前仅支持resource_name
 
@@ -147,7 +147,7 @@ class ListSubnetsByTagsRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ListSubnetsByTagsRequestBody.
+        r"""Sets the matches of this ListSubnetsByTagsRequestBody.
 
         功能说明：搜索字段，key为要匹配的字段，value为匹配的值 约束：当前仅支持resource_name
 
@@ -158,7 +158,7 @@ class ListSubnetsByTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListSubnetsByTagsRequestBody.
+        r"""Gets the tags of this ListSubnetsByTagsRequestBody.
 
         包含标签，最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复
 
@@ -169,7 +169,7 @@ class ListSubnetsByTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListSubnetsByTagsRequestBody.
+        r"""Sets the tags of this ListSubnetsByTagsRequestBody.
 
         包含标签，最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复
 

@@ -33,7 +33,7 @@ class CdmClusterDatastore:
     }
 
     def __init__(self, id=None, name=None, bigcluster_enable=None, default_version=None, versions=None):
-        """CdmClusterDatastore
+        r"""CdmClusterDatastore
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class CdmClusterDatastore:
 
     @property
     def id(self):
-        """Gets the id of this CdmClusterDatastore.
+        r"""Gets the id of this CdmClusterDatastore.
 
         服务ID，用于区分不同服务。
 
@@ -77,7 +77,7 @@ class CdmClusterDatastore:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CdmClusterDatastore.
+        r"""Sets the id of this CdmClusterDatastore.
 
         服务ID，用于区分不同服务。
 
@@ -88,7 +88,7 @@ class CdmClusterDatastore:
 
     @property
     def name(self):
-        """Gets the name of this CdmClusterDatastore.
+        r"""Gets the name of this CdmClusterDatastore.
 
         服务名称。
 
@@ -99,7 +99,7 @@ class CdmClusterDatastore:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CdmClusterDatastore.
+        r"""Sets the name of this CdmClusterDatastore.
 
         服务名称。
 
@@ -110,7 +110,7 @@ class CdmClusterDatastore:
 
     @property
     def bigcluster_enable(self):
-        """Gets the bigcluster_enable of this CdmClusterDatastore.
+        r"""Gets the bigcluster_enable of this CdmClusterDatastore.
 
         是否支持大规格集群。
 
@@ -121,7 +121,7 @@ class CdmClusterDatastore:
 
     @bigcluster_enable.setter
     def bigcluster_enable(self, bigcluster_enable):
-        """Sets the bigcluster_enable of this CdmClusterDatastore.
+        r"""Sets the bigcluster_enable of this CdmClusterDatastore.
 
         是否支持大规格集群。
 
@@ -132,7 +132,7 @@ class CdmClusterDatastore:
 
     @property
     def default_version(self):
-        """Gets the default_version of this CdmClusterDatastore.
+        r"""Gets the default_version of this CdmClusterDatastore.
 
         默认版本。
 
@@ -143,7 +143,7 @@ class CdmClusterDatastore:
 
     @default_version.setter
     def default_version(self, default_version):
-        """Sets the default_version of this CdmClusterDatastore.
+        r"""Sets the default_version of this CdmClusterDatastore.
 
         默认版本。
 
@@ -154,7 +154,7 @@ class CdmClusterDatastore:
 
     @property
     def versions(self):
-        """Gets the versions of this CdmClusterDatastore.
+        r"""Gets the versions of this CdmClusterDatastore.
 
         版本。
 
@@ -165,7 +165,7 @@ class CdmClusterDatastore:
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this CdmClusterDatastore.
+        r"""Sets the versions of this CdmClusterDatastore.
 
         版本。
 

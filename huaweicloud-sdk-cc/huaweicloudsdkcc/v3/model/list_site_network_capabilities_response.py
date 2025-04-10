@@ -28,7 +28,7 @@ class ListSiteNetworkCapabilitiesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, capabilities=None):
-        """ListSiteNetworkCapabilitiesResponse
+        r"""ListSiteNetworkCapabilitiesResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListSiteNetworkCapabilitiesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListSiteNetworkCapabilitiesResponse.
+        r"""Gets the request_id of this ListSiteNetworkCapabilitiesResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class ListSiteNetworkCapabilitiesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListSiteNetworkCapabilitiesResponse.
+        r"""Sets the request_id of this ListSiteNetworkCapabilitiesResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class ListSiteNetworkCapabilitiesResponse(SdkResponse):
 
     @property
     def capabilities(self):
-        """Gets the capabilities of this ListSiteNetworkCapabilitiesResponse.
+        r"""Gets the capabilities of this ListSiteNetworkCapabilitiesResponse.
 
         分支网络租户能力列表。
 
@@ -82,7 +82,7 @@ class ListSiteNetworkCapabilitiesResponse(SdkResponse):
 
     @capabilities.setter
     def capabilities(self, capabilities):
-        """Sets the capabilities of this ListSiteNetworkCapabilitiesResponse.
+        r"""Sets the capabilities of this ListSiteNetworkCapabilitiesResponse.
 
         分支网络租户能力列表。
 

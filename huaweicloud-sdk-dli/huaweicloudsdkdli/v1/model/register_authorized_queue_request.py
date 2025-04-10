@@ -25,7 +25,7 @@ class RegisterAuthorizedQueueRequest:
     }
 
     def __init__(self, body=None):
-        """RegisterAuthorizedQueueRequest
+        r"""RegisterAuthorizedQueueRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RegisterAuthorizedQueueRequest:
 
     @property
     def body(self):
-        """Gets the body of this RegisterAuthorizedQueueRequest.
+        r"""Gets the body of this RegisterAuthorizedQueueRequest.
 
         :return: The body of this RegisterAuthorizedQueueRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueRequestBody`
@@ -52,7 +52,7 @@ class RegisterAuthorizedQueueRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RegisterAuthorizedQueueRequest.
+        r"""Sets the body of this RegisterAuthorizedQueueRequest.
 
         :param body: The body of this RegisterAuthorizedQueueRequest.
         :type body: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueRequestBody`

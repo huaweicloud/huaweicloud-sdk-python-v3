@@ -27,7 +27,7 @@ class CreatePerformanceResourceReq:
     }
 
     def __init__(self, space=None, count=None):
-        """CreatePerformanceResourceReq
+        r"""CreatePerformanceResourceReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreatePerformanceResourceReq:
 
     @property
     def space(self):
-        """Gets the space of this CreatePerformanceResourceReq.
+        r"""Gets the space of this CreatePerformanceResourceReq.
 
         存储空间，单位GB
 
@@ -59,7 +59,7 @@ class CreatePerformanceResourceReq:
 
     @space.setter
     def space(self, space):
-        """Sets the space of this CreatePerformanceResourceReq.
+        r"""Sets the space of this CreatePerformanceResourceReq.
 
         存储空间，单位GB
 
@@ -70,7 +70,7 @@ class CreatePerformanceResourceReq:
 
     @property
     def count(self):
-        """Gets the count of this CreatePerformanceResourceReq.
+        r"""Gets the count of this CreatePerformanceResourceReq.
 
         购买数量
 
@@ -81,7 +81,7 @@ class CreatePerformanceResourceReq:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CreatePerformanceResourceReq.
+        r"""Sets the count of this CreatePerformanceResourceReq.
 
         购买数量
 

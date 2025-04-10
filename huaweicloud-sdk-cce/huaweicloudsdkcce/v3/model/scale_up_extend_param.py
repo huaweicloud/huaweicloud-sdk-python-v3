@@ -31,7 +31,7 @@ class ScaleUpExtendParam:
     }
 
     def __init__(self, period_num=None, period_type=None, is_auto_renew=None, is_auto_pay=None):
-        """ScaleUpExtendParam
+        r"""ScaleUpExtendParam
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ScaleUpExtendParam:
 
     @property
     def period_num(self):
-        """Gets the period_num of this ScaleUpExtendParam.
+        r"""Gets the period_num of this ScaleUpExtendParam.
 
         包周期时长, 包月1-9, 包年1-3
 
@@ -73,7 +73,7 @@ class ScaleUpExtendParam:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this ScaleUpExtendParam.
+        r"""Sets the period_num of this ScaleUpExtendParam.
 
         包周期时长, 包月1-9, 包年1-3
 
@@ -84,7 +84,7 @@ class ScaleUpExtendParam:
 
     @property
     def period_type(self):
-        """Gets the period_type of this ScaleUpExtendParam.
+        r"""Gets the period_type of this ScaleUpExtendParam.
 
         包周期类型, year(包年), month(包月)
 
@@ -95,7 +95,7 @@ class ScaleUpExtendParam:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ScaleUpExtendParam.
+        r"""Sets the period_type of this ScaleUpExtendParam.
 
         包周期类型, year(包年), month(包月)
 
@@ -106,7 +106,7 @@ class ScaleUpExtendParam:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this ScaleUpExtendParam.
+        r"""Gets the is_auto_renew of this ScaleUpExtendParam.
 
         是否自动续费，可选参数，如果不填写，以节点池isAutoRenew属性为准。
 
@@ -117,7 +117,7 @@ class ScaleUpExtendParam:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this ScaleUpExtendParam.
+        r"""Sets the is_auto_renew of this ScaleUpExtendParam.
 
         是否自动续费，可选参数，如果不填写，以节点池isAutoRenew属性为准。
 
@@ -128,7 +128,7 @@ class ScaleUpExtendParam:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ScaleUpExtendParam.
+        r"""Gets the is_auto_pay of this ScaleUpExtendParam.
 
         是否自动付费，可选参数，如果不填写，以节点池isAutoPay属性为准。
 
@@ -139,7 +139,7 @@ class ScaleUpExtendParam:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ScaleUpExtendParam.
+        r"""Sets the is_auto_pay of this ScaleUpExtendParam.
 
         是否自动付费，可选参数，如果不填写，以节点池isAutoPay属性为准。
 

@@ -25,7 +25,7 @@ class ListProjectTagsRequest:
     }
 
     def __init__(self, resource_type=None):
-        """ListProjectTagsRequest
+        r"""ListProjectTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListProjectTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListProjectTagsRequest.
+        r"""Gets the resource_type of this ListProjectTagsRequest.
 
         标签资源类型: - instance: 企业路由器实例 - route-table: 路由表 - vpc-attachment: VPC连接 - vgw-attachment: 虚拟网关连接 - peering-attachment: 对等连接（Peering）连接 - vpn-attachment: VPN网关连接 -  -  -  -  - attachments: 所有连接类型
 
@@ -53,7 +53,7 @@ class ListProjectTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListProjectTagsRequest.
+        r"""Sets the resource_type of this ListProjectTagsRequest.
 
         标签资源类型: - instance: 企业路由器实例 - route-table: 路由表 - vpc-attachment: VPC连接 - vgw-attachment: 虚拟网关连接 - peering-attachment: 对等连接（Peering）连接 - vpn-attachment: VPN网关连接 -  -  -  -  - attachments: 所有连接类型
 

@@ -26,7 +26,7 @@ class CinderListQuotasResponse(SdkResponse):
     }
 
     def __init__(self, quota_set=None):
-        """CinderListQuotasResponse
+        r"""CinderListQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CinderListQuotasResponse(SdkResponse):
 
     @property
     def quota_set(self):
-        """Gets the quota_set of this CinderListQuotasResponse.
+        r"""Gets the quota_set of this CinderListQuotasResponse.
 
         :return: The quota_set of this CinderListQuotasResponse.
         :rtype: :class:`huaweicloudsdkevs.v2.QuotaList`
@@ -53,7 +53,7 @@ class CinderListQuotasResponse(SdkResponse):
 
     @quota_set.setter
     def quota_set(self, quota_set):
-        """Sets the quota_set of this CinderListQuotasResponse.
+        r"""Sets the quota_set of this CinderListQuotasResponse.
 
         :param quota_set: The quota_set of this CinderListQuotasResponse.
         :type quota_set: :class:`huaweicloudsdkevs.v2.QuotaList`

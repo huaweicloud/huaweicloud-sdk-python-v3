@@ -31,7 +31,7 @@ class AntiVirusRuleVO:
     }
 
     def __init__(self, id=None, name=None, scan_protocol_configs=None, total=None):
-        """AntiVirusRuleVO
+        r"""AntiVirusRuleVO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AntiVirusRuleVO:
 
     @property
     def id(self):
-        """Gets the id of this AntiVirusRuleVO.
+        r"""Gets the id of this AntiVirusRuleVO.
 
         :return: The id of this AntiVirusRuleVO.
         :rtype: str
@@ -73,7 +73,7 @@ class AntiVirusRuleVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AntiVirusRuleVO.
+        r"""Sets the id of this AntiVirusRuleVO.
 
         :param id: The id of this AntiVirusRuleVO.
         :type id: str
@@ -82,7 +82,7 @@ class AntiVirusRuleVO:
 
     @property
     def name(self):
-        """Gets the name of this AntiVirusRuleVO.
+        r"""Gets the name of this AntiVirusRuleVO.
 
         :return: The name of this AntiVirusRuleVO.
         :rtype: str
@@ -91,7 +91,7 @@ class AntiVirusRuleVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AntiVirusRuleVO.
+        r"""Sets the name of this AntiVirusRuleVO.
 
         :param name: The name of this AntiVirusRuleVO.
         :type name: str
@@ -100,7 +100,7 @@ class AntiVirusRuleVO:
 
     @property
     def scan_protocol_configs(self):
-        """Gets the scan_protocol_configs of this AntiVirusRuleVO.
+        r"""Gets the scan_protocol_configs of this AntiVirusRuleVO.
 
         :return: The scan_protocol_configs of this AntiVirusRuleVO.
         :rtype: list[:class:`huaweicloudsdkcfw.v1.ScanProtocolConfig`]
@@ -109,7 +109,7 @@ class AntiVirusRuleVO:
 
     @scan_protocol_configs.setter
     def scan_protocol_configs(self, scan_protocol_configs):
-        """Sets the scan_protocol_configs of this AntiVirusRuleVO.
+        r"""Sets the scan_protocol_configs of this AntiVirusRuleVO.
 
         :param scan_protocol_configs: The scan_protocol_configs of this AntiVirusRuleVO.
         :type scan_protocol_configs: list[:class:`huaweicloudsdkcfw.v1.ScanProtocolConfig`]
@@ -118,7 +118,7 @@ class AntiVirusRuleVO:
 
     @property
     def total(self):
-        """Gets the total of this AntiVirusRuleVO.
+        r"""Gets the total of this AntiVirusRuleVO.
 
         :return: The total of this AntiVirusRuleVO.
         :rtype: int
@@ -127,7 +127,7 @@ class AntiVirusRuleVO:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this AntiVirusRuleVO.
+        r"""Sets the total of this AntiVirusRuleVO.
 
         :param total: The total of this AntiVirusRuleVO.
         :type total: int

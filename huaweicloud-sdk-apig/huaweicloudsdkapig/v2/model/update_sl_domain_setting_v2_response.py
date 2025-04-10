@@ -24,7 +24,7 @@ class UpdateSlDomainSettingV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateSlDomainSettingV2Response
+        r"""UpdateSlDomainSettingV2Response
 
         The model defined in huaweicloud sdk
 

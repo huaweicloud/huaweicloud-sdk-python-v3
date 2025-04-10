@@ -27,7 +27,7 @@ class ListVolumeProductInfoRequest:
     }
 
     def __init__(self, availability_zone=None, volume_type=None):
-        """ListVolumeProductInfoRequest
+        r"""ListVolumeProductInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListVolumeProductInfoRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListVolumeProductInfoRequest.
+        r"""Gets the availability_zone of this ListVolumeProductInfoRequest.
 
         可用分区
 
@@ -61,7 +61,7 @@ class ListVolumeProductInfoRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListVolumeProductInfoRequest.
+        r"""Sets the availability_zone of this ListVolumeProductInfoRequest.
 
         可用分区
 
@@ -72,7 +72,7 @@ class ListVolumeProductInfoRequest:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this ListVolumeProductInfoRequest.
+        r"""Gets the volume_type of this ListVolumeProductInfoRequest.
 
         磁盘类型（多个磁盘类型用逗号隔开）： - SATA: 普通IO磁盘 - SAS：高IO磁盘 - SSD：超高IO磁盘
 
@@ -83,7 +83,7 @@ class ListVolumeProductInfoRequest:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this ListVolumeProductInfoRequest.
+        r"""Sets the volume_type of this ListVolumeProductInfoRequest.
 
         磁盘类型（多个磁盘类型用逗号隔开）： - SATA: 普通IO磁盘 - SAS：高IO磁盘 - SSD：超高IO磁盘
 

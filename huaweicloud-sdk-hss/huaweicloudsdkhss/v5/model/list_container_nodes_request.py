@@ -39,13 +39,13 @@ class ListContainerNodesRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, offset=None, limit=None, host_name=None, agent_status=None, protect_status=None, container_tags=None):
-        """ListContainerNodesRequest
+        r"""ListContainerNodesRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
@@ -91,7 +91,7 @@ class ListContainerNodesRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListContainerNodesRequest.
+        r"""Gets the region of this ListContainerNodesRequest.
 
         Region ID
 
@@ -102,7 +102,7 @@ class ListContainerNodesRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListContainerNodesRequest.
+        r"""Sets the region of this ListContainerNodesRequest.
 
         Region ID
 
@@ -113,9 +113,9 @@ class ListContainerNodesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListContainerNodesRequest.
+        r"""Gets the enterprise_project_id of this ListContainerNodesRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListContainerNodesRequest.
         :rtype: str
@@ -124,9 +124,9 @@ class ListContainerNodesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListContainerNodesRequest.
+        r"""Sets the enterprise_project_id of this ListContainerNodesRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListContainerNodesRequest.
         :type enterprise_project_id: str
@@ -135,7 +135,7 @@ class ListContainerNodesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListContainerNodesRequest.
+        r"""Gets the offset of this ListContainerNodesRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -146,7 +146,7 @@ class ListContainerNodesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListContainerNodesRequest.
+        r"""Sets the offset of this ListContainerNodesRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -157,7 +157,7 @@ class ListContainerNodesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListContainerNodesRequest.
+        r"""Gets the limit of this ListContainerNodesRequest.
 
         每页显示个数
 
@@ -168,7 +168,7 @@ class ListContainerNodesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListContainerNodesRequest.
+        r"""Sets the limit of this ListContainerNodesRequest.
 
         每页显示个数
 
@@ -179,7 +179,7 @@ class ListContainerNodesRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListContainerNodesRequest.
+        r"""Gets the host_name of this ListContainerNodesRequest.
 
         节点名称
 
@@ -190,7 +190,7 @@ class ListContainerNodesRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListContainerNodesRequest.
+        r"""Sets the host_name of this ListContainerNodesRequest.
 
         节点名称
 
@@ -201,7 +201,7 @@ class ListContainerNodesRequest:
 
     @property
     def agent_status(self):
-        """Gets the agent_status of this ListContainerNodesRequest.
+        r"""Gets the agent_status of this ListContainerNodesRequest.
 
         Agent状态，包含如下3种。   - not_installed ：未安装   - online ：在线   - offline ：离线
 
@@ -212,7 +212,7 @@ class ListContainerNodesRequest:
 
     @agent_status.setter
     def agent_status(self, agent_status):
-        """Sets the agent_status of this ListContainerNodesRequest.
+        r"""Sets the agent_status of this ListContainerNodesRequest.
 
         Agent状态，包含如下3种。   - not_installed ：未安装   - online ：在线   - offline ：离线
 
@@ -223,7 +223,7 @@ class ListContainerNodesRequest:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this ListContainerNodesRequest.
+        r"""Gets the protect_status of this ListContainerNodesRequest.
 
         防护状态，包含如下2种。   - closed ：关闭   - opened ：开启
 
@@ -234,7 +234,7 @@ class ListContainerNodesRequest:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this ListContainerNodesRequest.
+        r"""Sets the protect_status of this ListContainerNodesRequest.
 
         防护状态，包含如下2种。   - closed ：关闭   - opened ：开启
 
@@ -245,7 +245,7 @@ class ListContainerNodesRequest:
 
     @property
     def container_tags(self):
-        """Gets the container_tags of this ListContainerNodesRequest.
+        r"""Gets the container_tags of this ListContainerNodesRequest.
 
         标签：用来识别cce容器节点和自建  - cce：cce节点  - self：自建节点  - other：其他节点
 
@@ -256,7 +256,7 @@ class ListContainerNodesRequest:
 
     @container_tags.setter
     def container_tags(self, container_tags):
-        """Sets the container_tags of this ListContainerNodesRequest.
+        r"""Sets the container_tags of this ListContainerNodesRequest.
 
         标签：用来识别cce容器节点和自建  - cce：cce节点  - self：自建节点  - other：其他节点
 

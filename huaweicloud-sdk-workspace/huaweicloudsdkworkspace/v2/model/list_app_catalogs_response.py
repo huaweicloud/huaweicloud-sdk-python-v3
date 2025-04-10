@@ -26,7 +26,7 @@ class ListAppCatalogsResponse(SdkResponse):
     }
 
     def __init__(self, items=None):
-        """ListAppCatalogsResponse
+        r"""ListAppCatalogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAppCatalogsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListAppCatalogsResponse.
+        r"""Gets the items of this ListAppCatalogsResponse.
 
         应用分类信息。
 
@@ -55,7 +55,7 @@ class ListAppCatalogsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListAppCatalogsResponse.
+        r"""Sets the items of this ListAppCatalogsResponse.
 
         应用分类信息。
 

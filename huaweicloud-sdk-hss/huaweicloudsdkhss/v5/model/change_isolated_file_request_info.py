@@ -25,7 +25,7 @@ class ChangeIsolatedFileRequestInfo:
     }
 
     def __init__(self, data_list=None):
-        """ChangeIsolatedFileRequestInfo
+        r"""ChangeIsolatedFileRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeIsolatedFileRequestInfo:
 
     @property
     def data_list(self):
-        """Gets the data_list of this ChangeIsolatedFileRequestInfo.
+        r"""Gets the data_list of this ChangeIsolatedFileRequestInfo.
 
         需要恢复的文件列表
 
@@ -54,7 +54,7 @@ class ChangeIsolatedFileRequestInfo:
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ChangeIsolatedFileRequestInfo.
+        r"""Sets the data_list of this ChangeIsolatedFileRequestInfo.
 
         需要恢复的文件列表
 

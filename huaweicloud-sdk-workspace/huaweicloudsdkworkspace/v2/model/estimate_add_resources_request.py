@@ -25,7 +25,7 @@ class EstimateAddResourcesRequest:
     }
 
     def __init__(self, body=None):
-        """EstimateAddResourcesRequest
+        r"""EstimateAddResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EstimateAddResourcesRequest:
 
     @property
     def body(self):
-        """Gets the body of this EstimateAddResourcesRequest.
+        r"""Gets the body of this EstimateAddResourcesRequest.
 
         :return: The body of this EstimateAddResourcesRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.EstimateAddSubResourcesRequestBody`
@@ -52,7 +52,7 @@ class EstimateAddResourcesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EstimateAddResourcesRequest.
+        r"""Sets the body of this EstimateAddResourcesRequest.
 
         :param body: The body of this EstimateAddResourcesRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.EstimateAddSubResourcesRequestBody`

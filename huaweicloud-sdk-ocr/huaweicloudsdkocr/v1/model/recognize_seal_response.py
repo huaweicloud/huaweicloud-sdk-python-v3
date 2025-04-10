@@ -28,7 +28,7 @@ class RecognizeSealResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeSealResponse
+        r"""RecognizeSealResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeSealResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeSealResponse.
+        r"""Gets the result of this RecognizeSealResponse.
 
         :return: The result of this RecognizeSealResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.SealResult`
@@ -60,7 +60,7 @@ class RecognizeSealResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeSealResponse.
+        r"""Sets the result of this RecognizeSealResponse.
 
         :param result: The result of this RecognizeSealResponse.
         :type result: :class:`huaweicloudsdkocr.v1.SealResult`
@@ -69,7 +69,7 @@ class RecognizeSealResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeSealResponse.
+        r"""Gets the x_request_id of this RecognizeSealResponse.
 
         :return: The x_request_id of this RecognizeSealResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeSealResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeSealResponse.
+        r"""Sets the x_request_id of this RecognizeSealResponse.
 
         :param x_request_id: The x_request_id of this RecognizeSealResponse.
         :type x_request_id: str

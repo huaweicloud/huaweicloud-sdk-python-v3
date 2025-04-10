@@ -30,7 +30,7 @@ class ShowDownloadAccessoryUrlResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, accessory_url=None):
-        """ShowDownloadAccessoryUrlResponse
+        r"""ShowDownloadAccessoryUrlResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowDownloadAccessoryUrlResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowDownloadAccessoryUrlResponse.
+        r"""Gets the error_code of this ShowDownloadAccessoryUrlResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class ShowDownloadAccessoryUrlResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowDownloadAccessoryUrlResponse.
+        r"""Sets the error_code of this ShowDownloadAccessoryUrlResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class ShowDownloadAccessoryUrlResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ShowDownloadAccessoryUrlResponse.
+        r"""Gets the error_msg of this ShowDownloadAccessoryUrlResponse.
 
         错误描述
 
@@ -91,7 +91,7 @@ class ShowDownloadAccessoryUrlResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ShowDownloadAccessoryUrlResponse.
+        r"""Sets the error_msg of this ShowDownloadAccessoryUrlResponse.
 
         错误描述
 
@@ -102,7 +102,7 @@ class ShowDownloadAccessoryUrlResponse(SdkResponse):
 
     @property
     def accessory_url(self):
-        """Gets the accessory_url of this ShowDownloadAccessoryUrlResponse.
+        r"""Gets the accessory_url of this ShowDownloadAccessoryUrlResponse.
 
         附件下载url
 
@@ -113,7 +113,7 @@ class ShowDownloadAccessoryUrlResponse(SdkResponse):
 
     @accessory_url.setter
     def accessory_url(self, accessory_url):
-        """Sets the accessory_url of this ShowDownloadAccessoryUrlResponse.
+        r"""Sets the accessory_url of this ShowDownloadAccessoryUrlResponse.
 
         附件下载url
 

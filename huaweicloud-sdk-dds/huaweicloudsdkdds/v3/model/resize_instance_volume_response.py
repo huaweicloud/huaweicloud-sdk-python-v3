@@ -28,7 +28,7 @@ class ResizeInstanceVolumeResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None):
-        """ResizeInstanceVolumeResponse
+        r"""ResizeInstanceVolumeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ResizeInstanceVolumeResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ResizeInstanceVolumeResponse.
+        r"""Gets the job_id of this ResizeInstanceVolumeResponse.
 
         工作流ID。
 
@@ -62,7 +62,7 @@ class ResizeInstanceVolumeResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ResizeInstanceVolumeResponse.
+        r"""Sets the job_id of this ResizeInstanceVolumeResponse.
 
         工作流ID。
 
@@ -73,7 +73,7 @@ class ResizeInstanceVolumeResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ResizeInstanceVolumeResponse.
+        r"""Gets the order_id of this ResizeInstanceVolumeResponse.
 
         订单ID，仅扩容包年包月实例的存储容量时返回该参数。
 
@@ -84,7 +84,7 @@ class ResizeInstanceVolumeResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ResizeInstanceVolumeResponse.
+        r"""Sets the order_id of this ResizeInstanceVolumeResponse.
 
         订单ID，仅扩容包年包月实例的存储容量时返回该参数。
 

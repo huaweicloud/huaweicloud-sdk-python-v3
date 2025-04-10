@@ -33,7 +33,7 @@ class MicroServiceCreate:
     }
 
     def __init__(self, service_type=None, cse_info=None, cce_info=None, cce_service_info=None, nacos_info=None):
-        """MicroServiceCreate
+        r"""MicroServiceCreate
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MicroServiceCreate:
 
     @property
     def service_type(self):
-        """Gets the service_type of this MicroServiceCreate.
+        r"""Gets the service_type of this MicroServiceCreate.
 
         微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service） - NACOS: Nacos注册中心，nacos_info必填
 
@@ -82,7 +82,7 @@ class MicroServiceCreate:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this MicroServiceCreate.
+        r"""Sets the service_type of this MicroServiceCreate.
 
         微服务类型： - CSE：CSE微服务注册中心 - CCE：CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service） - NACOS: Nacos注册中心，nacos_info必填
 
@@ -93,7 +93,7 @@ class MicroServiceCreate:
 
     @property
     def cse_info(self):
-        """Gets the cse_info of this MicroServiceCreate.
+        r"""Gets the cse_info of this MicroServiceCreate.
 
         :return: The cse_info of this MicroServiceCreate.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSEBase`
@@ -102,7 +102,7 @@ class MicroServiceCreate:
 
     @cse_info.setter
     def cse_info(self, cse_info):
-        """Sets the cse_info of this MicroServiceCreate.
+        r"""Sets the cse_info of this MicroServiceCreate.
 
         :param cse_info: The cse_info of this MicroServiceCreate.
         :type cse_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSEBase`
@@ -111,7 +111,7 @@ class MicroServiceCreate:
 
     @property
     def cce_info(self):
-        """Gets the cce_info of this MicroServiceCreate.
+        r"""Gets the cce_info of this MicroServiceCreate.
 
         :return: The cce_info of this MicroServiceCreate.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEBase`
@@ -120,7 +120,7 @@ class MicroServiceCreate:
 
     @cce_info.setter
     def cce_info(self, cce_info):
-        """Sets the cce_info of this MicroServiceCreate.
+        r"""Sets the cce_info of this MicroServiceCreate.
 
         :param cce_info: The cce_info of this MicroServiceCreate.
         :type cce_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEBase`
@@ -129,7 +129,7 @@ class MicroServiceCreate:
 
     @property
     def cce_service_info(self):
-        """Gets the cce_service_info of this MicroServiceCreate.
+        r"""Gets the cce_service_info of this MicroServiceCreate.
 
         :return: The cce_service_info of this MicroServiceCreate.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceBase`
@@ -138,7 +138,7 @@ class MicroServiceCreate:
 
     @cce_service_info.setter
     def cce_service_info(self, cce_service_info):
-        """Sets the cce_service_info of this MicroServiceCreate.
+        r"""Sets the cce_service_info of this MicroServiceCreate.
 
         :param cce_service_info: The cce_service_info of this MicroServiceCreate.
         :type cce_service_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceBase`
@@ -147,7 +147,7 @@ class MicroServiceCreate:
 
     @property
     def nacos_info(self):
-        """Gets the nacos_info of this MicroServiceCreate.
+        r"""Gets the nacos_info of this MicroServiceCreate.
 
         :return: The nacos_info of this MicroServiceCreate.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoNacosBase`
@@ -156,7 +156,7 @@ class MicroServiceCreate:
 
     @nacos_info.setter
     def nacos_info(self, nacos_info):
-        """Sets the nacos_info of this MicroServiceCreate.
+        r"""Sets the nacos_info of this MicroServiceCreate.
 
         :param nacos_info: The nacos_info of this MicroServiceCreate.
         :type nacos_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoNacosBase`

@@ -33,7 +33,7 @@ class ScheduleConf:
     }
 
     def __init__(self, schedule_start=None, schedule_end=None, schedule_type=None, schedule_date=None, schedule_time=None):
-        """ScheduleConf
+        r"""ScheduleConf
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ScheduleConf:
 
     @property
     def schedule_start(self):
-        """Gets the schedule_start of this ScheduleConf.
+        r"""Gets the schedule_start of this ScheduleConf.
 
         调度开始时间
 
@@ -82,7 +82,7 @@ class ScheduleConf:
 
     @schedule_start.setter
     def schedule_start(self, schedule_start):
-        """Sets the schedule_start of this ScheduleConf.
+        r"""Sets the schedule_start of this ScheduleConf.
 
         调度开始时间
 
@@ -93,7 +93,7 @@ class ScheduleConf:
 
     @property
     def schedule_end(self):
-        """Gets the schedule_end of this ScheduleConf.
+        r"""Gets the schedule_end of this ScheduleConf.
 
         调度结束时间
 
@@ -104,7 +104,7 @@ class ScheduleConf:
 
     @schedule_end.setter
     def schedule_end(self, schedule_end):
-        """Sets the schedule_end of this ScheduleConf.
+        r"""Sets the schedule_end of this ScheduleConf.
 
         调度结束时间
 
@@ -115,7 +115,7 @@ class ScheduleConf:
 
     @property
     def schedule_type(self):
-        """Gets the schedule_type of this ScheduleConf.
+        r"""Gets the schedule_type of this ScheduleConf.
 
         调度类型
 
@@ -126,7 +126,7 @@ class ScheduleConf:
 
     @schedule_type.setter
     def schedule_type(self, schedule_type):
-        """Sets the schedule_type of this ScheduleConf.
+        r"""Sets the schedule_type of this ScheduleConf.
 
         调度类型
 
@@ -137,7 +137,7 @@ class ScheduleConf:
 
     @property
     def schedule_date(self):
-        """Gets the schedule_date of this ScheduleConf.
+        r"""Gets the schedule_date of this ScheduleConf.
 
         调度日期
 
@@ -148,7 +148,7 @@ class ScheduleConf:
 
     @schedule_date.setter
     def schedule_date(self, schedule_date):
-        """Sets the schedule_date of this ScheduleConf.
+        r"""Sets the schedule_date of this ScheduleConf.
 
         调度日期
 
@@ -159,7 +159,7 @@ class ScheduleConf:
 
     @property
     def schedule_time(self):
-        """Gets the schedule_time of this ScheduleConf.
+        r"""Gets the schedule_time of this ScheduleConf.
 
         调度时间列表
 
@@ -170,7 +170,7 @@ class ScheduleConf:
 
     @schedule_time.setter
     def schedule_time(self, schedule_time):
-        """Sets the schedule_time of this ScheduleConf.
+        r"""Sets the schedule_time of this ScheduleConf.
 
         调度时间列表
 

@@ -65,7 +65,7 @@ class ApiAuthBase:
     }
 
     def __init__(self, id=None, api_id=None, api_name=None, group_name=None, api_type=None, api_remark=None, env_id=None, auth_role=None, auth_time=None, app_name=None, app_remark=None, app_type=None, app_creator=None, publish_id=None, group_id=None, auth_tunnel=None, auth_whitelist=None, auth_blacklist=None, visit_param=None, roma_app_type=None, tags=None):
-        """ApiAuthBase
+        r"""ApiAuthBase
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class ApiAuthBase:
 
     @property
     def id(self):
-        """Gets the id of this ApiAuthBase.
+        r"""Gets the id of this ApiAuthBase.
 
         授权关系编号
 
@@ -194,7 +194,7 @@ class ApiAuthBase:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiAuthBase.
+        r"""Sets the id of this ApiAuthBase.
 
         授权关系编号
 
@@ -205,7 +205,7 @@ class ApiAuthBase:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ApiAuthBase.
+        r"""Gets the api_id of this ApiAuthBase.
 
         API的编号
 
@@ -216,7 +216,7 @@ class ApiAuthBase:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ApiAuthBase.
+        r"""Sets the api_id of this ApiAuthBase.
 
         API的编号
 
@@ -227,7 +227,7 @@ class ApiAuthBase:
 
     @property
     def api_name(self):
-        """Gets the api_name of this ApiAuthBase.
+        r"""Gets the api_name of this ApiAuthBase.
 
         API的名称
 
@@ -238,7 +238,7 @@ class ApiAuthBase:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this ApiAuthBase.
+        r"""Sets the api_name of this ApiAuthBase.
 
         API的名称
 
@@ -249,7 +249,7 @@ class ApiAuthBase:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ApiAuthBase.
+        r"""Gets the group_name of this ApiAuthBase.
 
         API绑定的分组名称
 
@@ -260,7 +260,7 @@ class ApiAuthBase:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ApiAuthBase.
+        r"""Sets the group_name of this ApiAuthBase.
 
         API绑定的分组名称
 
@@ -271,7 +271,7 @@ class ApiAuthBase:
 
     @property
     def api_type(self):
-        """Gets the api_type of this ApiAuthBase.
+        r"""Gets the api_type of this ApiAuthBase.
 
         API类型
 
@@ -282,7 +282,7 @@ class ApiAuthBase:
 
     @api_type.setter
     def api_type(self, api_type):
-        """Sets the api_type of this ApiAuthBase.
+        r"""Sets the api_type of this ApiAuthBase.
 
         API类型
 
@@ -293,7 +293,7 @@ class ApiAuthBase:
 
     @property
     def api_remark(self):
-        """Gets the api_remark of this ApiAuthBase.
+        r"""Gets the api_remark of this ApiAuthBase.
 
         API的描述信息
 
@@ -304,7 +304,7 @@ class ApiAuthBase:
 
     @api_remark.setter
     def api_remark(self, api_remark):
-        """Sets the api_remark of this ApiAuthBase.
+        r"""Sets the api_remark of this ApiAuthBase.
 
         API的描述信息
 
@@ -315,7 +315,7 @@ class ApiAuthBase:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ApiAuthBase.
+        r"""Gets the env_id of this ApiAuthBase.
 
         api授权绑定的环境ID
 
@@ -326,7 +326,7 @@ class ApiAuthBase:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ApiAuthBase.
+        r"""Sets the env_id of this ApiAuthBase.
 
         api授权绑定的环境ID
 
@@ -337,7 +337,7 @@ class ApiAuthBase:
 
     @property
     def auth_role(self):
-        """Gets the auth_role of this ApiAuthBase.
+        r"""Gets the auth_role of this ApiAuthBase.
 
         授权者
 
@@ -348,7 +348,7 @@ class ApiAuthBase:
 
     @auth_role.setter
     def auth_role(self, auth_role):
-        """Sets the auth_role of this ApiAuthBase.
+        r"""Sets the auth_role of this ApiAuthBase.
 
         授权者
 
@@ -359,7 +359,7 @@ class ApiAuthBase:
 
     @property
     def auth_time(self):
-        """Gets the auth_time of this ApiAuthBase.
+        r"""Gets the auth_time of this ApiAuthBase.
 
         授权创建的时间
 
@@ -370,7 +370,7 @@ class ApiAuthBase:
 
     @auth_time.setter
     def auth_time(self, auth_time):
-        """Sets the auth_time of this ApiAuthBase.
+        r"""Sets the auth_time of this ApiAuthBase.
 
         授权创建的时间
 
@@ -381,7 +381,7 @@ class ApiAuthBase:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ApiAuthBase.
+        r"""Gets the app_name of this ApiAuthBase.
 
         APP的名称
 
@@ -392,7 +392,7 @@ class ApiAuthBase:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ApiAuthBase.
+        r"""Sets the app_name of this ApiAuthBase.
 
         APP的名称
 
@@ -403,7 +403,7 @@ class ApiAuthBase:
 
     @property
     def app_remark(self):
-        """Gets the app_remark of this ApiAuthBase.
+        r"""Gets the app_remark of this ApiAuthBase.
 
         APP的描述
 
@@ -414,7 +414,7 @@ class ApiAuthBase:
 
     @app_remark.setter
     def app_remark(self, app_remark):
-        """Sets the app_remark of this ApiAuthBase.
+        r"""Sets the app_remark of this ApiAuthBase.
 
         APP的描述
 
@@ -425,7 +425,7 @@ class ApiAuthBase:
 
     @property
     def app_type(self):
-        """Gets the app_type of this ApiAuthBase.
+        r"""Gets the app_type of this ApiAuthBase.
 
         APP的类型：  默认为apig，暂不支持其他类型
 
@@ -436,7 +436,7 @@ class ApiAuthBase:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ApiAuthBase.
+        r"""Sets the app_type of this ApiAuthBase.
 
         APP的类型：  默认为apig，暂不支持其他类型
 
@@ -447,7 +447,7 @@ class ApiAuthBase:
 
     @property
     def app_creator(self):
-        """Gets the app_creator of this ApiAuthBase.
+        r"""Gets the app_creator of this ApiAuthBase.
 
         APP的创建者，取值如下： - USER：租户自己创建 - MARKET：API市场分配，暂不支持
 
@@ -458,7 +458,7 @@ class ApiAuthBase:
 
     @app_creator.setter
     def app_creator(self, app_creator):
-        """Sets the app_creator of this ApiAuthBase.
+        r"""Sets the app_creator of this ApiAuthBase.
 
         APP的创建者，取值如下： - USER：租户自己创建 - MARKET：API市场分配，暂不支持
 
@@ -469,7 +469,7 @@ class ApiAuthBase:
 
     @property
     def publish_id(self):
-        """Gets the publish_id of this ApiAuthBase.
+        r"""Gets the publish_id of this ApiAuthBase.
 
         API的发布编号
 
@@ -480,7 +480,7 @@ class ApiAuthBase:
 
     @publish_id.setter
     def publish_id(self, publish_id):
-        """Sets the publish_id of this ApiAuthBase.
+        r"""Sets the publish_id of this ApiAuthBase.
 
         API的发布编号
 
@@ -491,7 +491,7 @@ class ApiAuthBase:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ApiAuthBase.
+        r"""Gets the group_id of this ApiAuthBase.
 
         API绑定的分组ID
 
@@ -502,7 +502,7 @@ class ApiAuthBase:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ApiAuthBase.
+        r"""Sets the group_id of this ApiAuthBase.
 
         API绑定的分组ID
 
@@ -513,7 +513,7 @@ class ApiAuthBase:
 
     @property
     def auth_tunnel(self):
-        """Gets the auth_tunnel of this ApiAuthBase.
+        r"""Gets the auth_tunnel of this ApiAuthBase.
 
         授权通道类型 - NORMAL：普通通道 - GREEN：绿色通道  暂不支持，默认NORMAL
 
@@ -524,7 +524,7 @@ class ApiAuthBase:
 
     @auth_tunnel.setter
     def auth_tunnel(self, auth_tunnel):
-        """Sets the auth_tunnel of this ApiAuthBase.
+        r"""Sets the auth_tunnel of this ApiAuthBase.
 
         授权通道类型 - NORMAL：普通通道 - GREEN：绿色通道  暂不支持，默认NORMAL
 
@@ -535,7 +535,7 @@ class ApiAuthBase:
 
     @property
     def auth_whitelist(self):
-        """Gets the auth_whitelist of this ApiAuthBase.
+        r"""Gets the auth_whitelist of this ApiAuthBase.
 
         绿色通道的白名单配置
 
@@ -546,7 +546,7 @@ class ApiAuthBase:
 
     @auth_whitelist.setter
     def auth_whitelist(self, auth_whitelist):
-        """Sets the auth_whitelist of this ApiAuthBase.
+        r"""Sets the auth_whitelist of this ApiAuthBase.
 
         绿色通道的白名单配置
 
@@ -557,7 +557,7 @@ class ApiAuthBase:
 
     @property
     def auth_blacklist(self):
-        """Gets the auth_blacklist of this ApiAuthBase.
+        r"""Gets the auth_blacklist of this ApiAuthBase.
 
         绿色通道的黑名单配置
 
@@ -568,7 +568,7 @@ class ApiAuthBase:
 
     @auth_blacklist.setter
     def auth_blacklist(self, auth_blacklist):
-        """Sets the auth_blacklist of this ApiAuthBase.
+        r"""Sets the auth_blacklist of this ApiAuthBase.
 
         绿色通道的黑名单配置
 
@@ -579,7 +579,7 @@ class ApiAuthBase:
 
     @property
     def visit_param(self):
-        """Gets the visit_param of this ApiAuthBase.
+        r"""Gets the visit_param of this ApiAuthBase.
 
         访问参数。
 
@@ -590,7 +590,7 @@ class ApiAuthBase:
 
     @visit_param.setter
     def visit_param(self, visit_param):
-        """Sets the visit_param of this ApiAuthBase.
+        r"""Sets the visit_param of this ApiAuthBase.
 
         访问参数。
 
@@ -601,7 +601,7 @@ class ApiAuthBase:
 
     @property
     def roma_app_type(self):
-        """Gets the roma_app_type of this ApiAuthBase.
+        r"""Gets the roma_app_type of this ApiAuthBase.
 
         ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用  暂不支持
 
@@ -612,7 +612,7 @@ class ApiAuthBase:
 
     @roma_app_type.setter
     def roma_app_type(self, roma_app_type):
-        """Sets the roma_app_type of this ApiAuthBase.
+        r"""Sets the roma_app_type of this ApiAuthBase.
 
         ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用  暂不支持
 
@@ -623,7 +623,7 @@ class ApiAuthBase:
 
     @property
     def tags(self):
-        """Gets the tags of this ApiAuthBase.
+        r"""Gets the tags of this ApiAuthBase.
 
         API绑定的标签，标签配额默认10条，可以联系技术调整。
 
@@ -634,7 +634,7 @@ class ApiAuthBase:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ApiAuthBase.
+        r"""Sets the tags of this ApiAuthBase.
 
         API绑定的标签，标签配额默认10条，可以联系技术调整。
 

@@ -28,7 +28,7 @@ class ListTransitIpTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, tags=None):
-        """ListTransitIpTagsResponse
+        r"""ListTransitIpTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTransitIpTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListTransitIpTagsResponse.
+        r"""Gets the request_id of this ListTransitIpTagsResponse.
 
         请求id。
 
@@ -62,7 +62,7 @@ class ListTransitIpTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListTransitIpTagsResponse.
+        r"""Sets the request_id of this ListTransitIpTagsResponse.
 
         请求id。
 
@@ -73,7 +73,7 @@ class ListTransitIpTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListTransitIpTagsResponse.
+        r"""Gets the tags of this ListTransitIpTagsResponse.
 
         标签。
 
@@ -84,7 +84,7 @@ class ListTransitIpTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListTransitIpTagsResponse.
+        r"""Sets the tags of this ListTransitIpTagsResponse.
 
         标签。
 

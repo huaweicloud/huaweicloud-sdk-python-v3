@@ -25,7 +25,7 @@ class AclBatchDelete:
     }
 
     def __init__(self, acls=None):
-        """AclBatchDelete
+        r"""AclBatchDelete
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AclBatchDelete:
 
     @property
     def acls(self):
-        """Gets the acls of this AclBatchDelete.
+        r"""Gets the acls of this AclBatchDelete.
 
         需要删除的ACL策略ID列表
 
@@ -54,7 +54,7 @@ class AclBatchDelete:
 
     @acls.setter
     def acls(self, acls):
-        """Sets the acls of this AclBatchDelete.
+        r"""Sets the acls of this AclBatchDelete.
 
         需要删除的ACL策略ID列表
 

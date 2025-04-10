@@ -28,7 +28,7 @@ class ListEdgeSitesResponse(SdkResponse):
     }
 
     def __init__(self, edge_sites=None, page_info=None):
-        """ListEdgeSitesResponse
+        r"""ListEdgeSitesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEdgeSitesResponse(SdkResponse):
 
     @property
     def edge_sites(self):
-        """Gets the edge_sites of this ListEdgeSitesResponse.
+        r"""Gets the edge_sites of this ListEdgeSitesResponse.
 
         边缘小站列表。
 
@@ -62,7 +62,7 @@ class ListEdgeSitesResponse(SdkResponse):
 
     @edge_sites.setter
     def edge_sites(self, edge_sites):
-        """Sets the edge_sites of this ListEdgeSitesResponse.
+        r"""Sets the edge_sites of this ListEdgeSitesResponse.
 
         边缘小站列表。
 
@@ -73,7 +73,7 @@ class ListEdgeSitesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListEdgeSitesResponse.
+        r"""Gets the page_info of this ListEdgeSitesResponse.
 
         :return: The page_info of this ListEdgeSitesResponse.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListEdgeSitesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListEdgeSitesResponse.
+        r"""Sets the page_info of this ListEdgeSitesResponse.
 
         :param page_info: The page_info of this ListEdgeSitesResponse.
         :type page_info: :class:`huaweicloudsdkcloudpond.v1.PageInfo`

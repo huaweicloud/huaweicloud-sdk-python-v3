@@ -28,7 +28,7 @@ class ListEnterpriseMultiAccountResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, amount_infos=None):
-        """ListEnterpriseMultiAccountResponse
+        r"""ListEnterpriseMultiAccountResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEnterpriseMultiAccountResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListEnterpriseMultiAccountResponse.
+        r"""Gets the total_count of this ListEnterpriseMultiAccountResponse.
 
         记录条数。
 
@@ -62,7 +62,7 @@ class ListEnterpriseMultiAccountResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListEnterpriseMultiAccountResponse.
+        r"""Sets the total_count of this ListEnterpriseMultiAccountResponse.
 
         记录条数。
 
@@ -73,7 +73,7 @@ class ListEnterpriseMultiAccountResponse(SdkResponse):
 
     @property
     def amount_infos(self):
-        """Gets the amount_infos of this ListEnterpriseMultiAccountResponse.
+        r"""Gets the amount_infos of this ListEnterpriseMultiAccountResponse.
 
         可回收余额信息，如果是余额账户，只会有一条记录。 具体请参见表2。
 
@@ -84,7 +84,7 @@ class ListEnterpriseMultiAccountResponse(SdkResponse):
 
     @amount_infos.setter
     def amount_infos(self, amount_infos):
-        """Sets the amount_infos of this ListEnterpriseMultiAccountResponse.
+        r"""Sets the amount_infos of this ListEnterpriseMultiAccountResponse.
 
         可回收余额信息，如果是余额账户，只会有一条记录。 具体请参见表2。
 

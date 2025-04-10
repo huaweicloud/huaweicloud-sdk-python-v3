@@ -63,7 +63,7 @@ class ProgressVo:
     }
 
     def __init__(self, uri=None, name=None, total=None, completed=None, cancelled=None, informations=None, code=None, reason=None, submitted_time=None, begin_time=None, end_time=None, server_ip=None, last_modified_time=None, finished_count=None, return_value=None, exception_message=None, line_up_num=None, asyn_operation_key=None, is_ended=None, finished_percent=None):
-        """ProgressVo
+        r"""ProgressVo
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class ProgressVo:
 
     @property
     def uri(self):
-        """Gets the uri of this ProgressVo.
+        r"""Gets the uri of this ProgressVo.
 
         进度uri
 
@@ -187,7 +187,7 @@ class ProgressVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this ProgressVo.
+        r"""Sets the uri of this ProgressVo.
 
         进度uri
 
@@ -198,7 +198,7 @@ class ProgressVo:
 
     @property
     def name(self):
-        """Gets the name of this ProgressVo.
+        r"""Gets the name of this ProgressVo.
 
         异步进度名称
 
@@ -209,7 +209,7 @@ class ProgressVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProgressVo.
+        r"""Sets the name of this ProgressVo.
 
         异步进度名称
 
@@ -220,7 +220,7 @@ class ProgressVo:
 
     @property
     def total(self):
-        """Gets the total of this ProgressVo.
+        r"""Gets the total of this ProgressVo.
 
         资源总数
 
@@ -231,7 +231,7 @@ class ProgressVo:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ProgressVo.
+        r"""Sets the total of this ProgressVo.
 
         资源总数
 
@@ -242,7 +242,7 @@ class ProgressVo:
 
     @property
     def completed(self):
-        """Gets the completed of this ProgressVo.
+        r"""Gets the completed of this ProgressVo.
 
         异步操作是否完成
 
@@ -253,7 +253,7 @@ class ProgressVo:
 
     @completed.setter
     def completed(self, completed):
-        """Sets the completed of this ProgressVo.
+        r"""Sets the completed of this ProgressVo.
 
         异步操作是否完成
 
@@ -264,7 +264,7 @@ class ProgressVo:
 
     @property
     def cancelled(self):
-        """Gets the cancelled of this ProgressVo.
+        r"""Gets the cancelled of this ProgressVo.
 
         异步操作是否取消
 
@@ -275,7 +275,7 @@ class ProgressVo:
 
     @cancelled.setter
     def cancelled(self, cancelled):
-        """Sets the cancelled of this ProgressVo.
+        r"""Sets the cancelled of this ProgressVo.
 
         异步操作是否取消
 
@@ -286,7 +286,7 @@ class ProgressVo:
 
     @property
     def informations(self):
-        """Gets the informations of this ProgressVo.
+        r"""Gets the informations of this ProgressVo.
 
         提示信息列表
 
@@ -297,7 +297,7 @@ class ProgressVo:
 
     @informations.setter
     def informations(self, informations):
-        """Sets the informations of this ProgressVo.
+        r"""Sets the informations of this ProgressVo.
 
         提示信息列表
 
@@ -308,7 +308,7 @@ class ProgressVo:
 
     @property
     def code(self):
-        """Gets the code of this ProgressVo.
+        r"""Gets the code of this ProgressVo.
 
         错误编码
 
@@ -319,7 +319,7 @@ class ProgressVo:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ProgressVo.
+        r"""Sets the code of this ProgressVo.
 
         错误编码
 
@@ -330,7 +330,7 @@ class ProgressVo:
 
     @property
     def reason(self):
-        """Gets the reason of this ProgressVo.
+        r"""Gets the reason of this ProgressVo.
 
         错误信息
 
@@ -341,7 +341,7 @@ class ProgressVo:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ProgressVo.
+        r"""Sets the reason of this ProgressVo.
 
         错误信息
 
@@ -352,7 +352,7 @@ class ProgressVo:
 
     @property
     def submitted_time(self):
-        """Gets the submitted_time of this ProgressVo.
+        r"""Gets the submitted_time of this ProgressVo.
 
         提交时间
 
@@ -363,7 +363,7 @@ class ProgressVo:
 
     @submitted_time.setter
     def submitted_time(self, submitted_time):
-        """Sets the submitted_time of this ProgressVo.
+        r"""Sets the submitted_time of this ProgressVo.
 
         提交时间
 
@@ -374,7 +374,7 @@ class ProgressVo:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ProgressVo.
+        r"""Gets the begin_time of this ProgressVo.
 
         开始时间
 
@@ -385,7 +385,7 @@ class ProgressVo:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ProgressVo.
+        r"""Sets the begin_time of this ProgressVo.
 
         开始时间
 
@@ -396,7 +396,7 @@ class ProgressVo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ProgressVo.
+        r"""Gets the end_time of this ProgressVo.
 
         结束时间
 
@@ -407,7 +407,7 @@ class ProgressVo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ProgressVo.
+        r"""Sets the end_time of this ProgressVo.
 
         结束时间
 
@@ -418,7 +418,7 @@ class ProgressVo:
 
     @property
     def server_ip(self):
-        """Gets the server_ip of this ProgressVo.
+        r"""Gets the server_ip of this ProgressVo.
 
         服务ip
 
@@ -429,7 +429,7 @@ class ProgressVo:
 
     @server_ip.setter
     def server_ip(self, server_ip):
-        """Sets the server_ip of this ProgressVo.
+        r"""Sets the server_ip of this ProgressVo.
 
         服务ip
 
@@ -440,7 +440,7 @@ class ProgressVo:
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this ProgressVo.
+        r"""Gets the last_modified_time of this ProgressVo.
 
         最后修改时间
 
@@ -451,7 +451,7 @@ class ProgressVo:
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this ProgressVo.
+        r"""Sets the last_modified_time of this ProgressVo.
 
         最后修改时间
 
@@ -462,7 +462,7 @@ class ProgressVo:
 
     @property
     def finished_count(self):
-        """Gets the finished_count of this ProgressVo.
+        r"""Gets the finished_count of this ProgressVo.
 
         执行完成总数
 
@@ -473,7 +473,7 @@ class ProgressVo:
 
     @finished_count.setter
     def finished_count(self, finished_count):
-        """Sets the finished_count of this ProgressVo.
+        r"""Sets the finished_count of this ProgressVo.
 
         执行完成总数
 
@@ -484,7 +484,7 @@ class ProgressVo:
 
     @property
     def return_value(self):
-        """Gets the return_value of this ProgressVo.
+        r"""Gets the return_value of this ProgressVo.
 
         异步操作返回值
 
@@ -495,7 +495,7 @@ class ProgressVo:
 
     @return_value.setter
     def return_value(self, return_value):
-        """Sets the return_value of this ProgressVo.
+        r"""Sets the return_value of this ProgressVo.
 
         异步操作返回值
 
@@ -506,7 +506,7 @@ class ProgressVo:
 
     @property
     def exception_message(self):
-        """Gets the exception_message of this ProgressVo.
+        r"""Gets the exception_message of this ProgressVo.
 
         异常信息
 
@@ -517,7 +517,7 @@ class ProgressVo:
 
     @exception_message.setter
     def exception_message(self, exception_message):
-        """Sets the exception_message of this ProgressVo.
+        r"""Sets the exception_message of this ProgressVo.
 
         异常信息
 
@@ -528,7 +528,7 @@ class ProgressVo:
 
     @property
     def line_up_num(self):
-        """Gets the line_up_num of this ProgressVo.
+        r"""Gets the line_up_num of this ProgressVo.
 
         行编号
 
@@ -539,7 +539,7 @@ class ProgressVo:
 
     @line_up_num.setter
     def line_up_num(self, line_up_num):
-        """Sets the line_up_num of this ProgressVo.
+        r"""Sets the line_up_num of this ProgressVo.
 
         行编号
 
@@ -550,7 +550,7 @@ class ProgressVo:
 
     @property
     def asyn_operation_key(self):
-        """Gets the asyn_operation_key of this ProgressVo.
+        r"""Gets the asyn_operation_key of this ProgressVo.
 
         异步操作的key
 
@@ -561,7 +561,7 @@ class ProgressVo:
 
     @asyn_operation_key.setter
     def asyn_operation_key(self, asyn_operation_key):
-        """Sets the asyn_operation_key of this ProgressVo.
+        r"""Sets the asyn_operation_key of this ProgressVo.
 
         异步操作的key
 
@@ -572,7 +572,7 @@ class ProgressVo:
 
     @property
     def is_ended(self):
-        """Gets the is_ended of this ProgressVo.
+        r"""Gets the is_ended of this ProgressVo.
 
         是否结束
 
@@ -583,7 +583,7 @@ class ProgressVo:
 
     @is_ended.setter
     def is_ended(self, is_ended):
-        """Sets the is_ended of this ProgressVo.
+        r"""Sets the is_ended of this ProgressVo.
 
         是否结束
 
@@ -594,7 +594,7 @@ class ProgressVo:
 
     @property
     def finished_percent(self):
-        """Gets the finished_percent of this ProgressVo.
+        r"""Gets the finished_percent of this ProgressVo.
 
         异步操作完成进度
 
@@ -605,7 +605,7 @@ class ProgressVo:
 
     @finished_percent.setter
     def finished_percent(self, finished_percent):
-        """Sets the finished_percent of this ProgressVo.
+        r"""Sets the finished_percent of this ProgressVo.
 
         异步操作完成进度
 

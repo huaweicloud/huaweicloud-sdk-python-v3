@@ -35,7 +35,7 @@ class UpdateHealthCheckOption:
     }
 
     def __init__(self, protocol=None, port=None, interval=None, timeout=None, max_retries=None, enabled=None):
-        """UpdateHealthCheckOption
+        r"""UpdateHealthCheckOption
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpdateHealthCheckOption:
 
     @property
     def protocol(self):
-        """Gets the protocol of this UpdateHealthCheckOption.
+        r"""Gets the protocol of this UpdateHealthCheckOption.
 
         :return: The protocol of this UpdateHealthCheckOption.
         :rtype: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
@@ -87,7 +87,7 @@ class UpdateHealthCheckOption:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this UpdateHealthCheckOption.
+        r"""Sets the protocol of this UpdateHealthCheckOption.
 
         :param protocol: The protocol of this UpdateHealthCheckOption.
         :type protocol: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
@@ -96,7 +96,7 @@ class UpdateHealthCheckOption:
 
     @property
     def port(self):
-        """Gets the port of this UpdateHealthCheckOption.
+        r"""Gets the port of this UpdateHealthCheckOption.
 
         健康检查的端口。
 
@@ -107,7 +107,7 @@ class UpdateHealthCheckOption:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this UpdateHealthCheckOption.
+        r"""Sets the port of this UpdateHealthCheckOption.
 
         健康检查的端口。
 
@@ -118,7 +118,7 @@ class UpdateHealthCheckOption:
 
     @property
     def interval(self):
-        """Gets the interval of this UpdateHealthCheckOption.
+        r"""Gets the interval of this UpdateHealthCheckOption.
 
         健康检查的时间间隔，单位为秒。
 
@@ -129,7 +129,7 @@ class UpdateHealthCheckOption:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this UpdateHealthCheckOption.
+        r"""Sets the interval of this UpdateHealthCheckOption.
 
         健康检查的时间间隔，单位为秒。
 
@@ -140,7 +140,7 @@ class UpdateHealthCheckOption:
 
     @property
     def timeout(self):
-        """Gets the timeout of this UpdateHealthCheckOption.
+        r"""Gets the timeout of this UpdateHealthCheckOption.
 
         健康检查的超时时间，单位为秒。建议该值小于interval的值。
 
@@ -151,7 +151,7 @@ class UpdateHealthCheckOption:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this UpdateHealthCheckOption.
+        r"""Sets the timeout of this UpdateHealthCheckOption.
 
         健康检查的超时时间，单位为秒。建议该值小于interval的值。
 
@@ -162,7 +162,7 @@ class UpdateHealthCheckOption:
 
     @property
     def max_retries(self):
-        """Gets the max_retries of this UpdateHealthCheckOption.
+        r"""Gets the max_retries of this UpdateHealthCheckOption.
 
         最大重试次数。将终端节点的状态从“健康”设置为“不健康”或从“不健康”设置为“健康”所需的连续健康检查次数。
 
@@ -173,7 +173,7 @@ class UpdateHealthCheckOption:
 
     @max_retries.setter
     def max_retries(self, max_retries):
-        """Sets the max_retries of this UpdateHealthCheckOption.
+        r"""Sets the max_retries of this UpdateHealthCheckOption.
 
         最大重试次数。将终端节点的状态从“健康”设置为“不健康”或从“不健康”设置为“健康”所需的连续健康检查次数。
 
@@ -184,7 +184,7 @@ class UpdateHealthCheckOption:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateHealthCheckOption.
+        r"""Gets the enabled of this UpdateHealthCheckOption.
 
         是否开启健康检查。
 
@@ -195,7 +195,7 @@ class UpdateHealthCheckOption:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateHealthCheckOption.
+        r"""Sets the enabled of this UpdateHealthCheckOption.
 
         是否开启健康检查。
 

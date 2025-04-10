@@ -29,7 +29,7 @@ class ShowInstanceExtendProductInfoRespHourly:
     }
 
     def __init__(self, name=None, version=None, values=None):
-        """ShowInstanceExtendProductInfoRespHourly
+        r"""ShowInstanceExtendProductInfoRespHourly
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowInstanceExtendProductInfoRespHourly:
 
     @property
     def name(self):
-        """Gets the name of this ShowInstanceExtendProductInfoRespHourly.
+        r"""Gets the name of this ShowInstanceExtendProductInfoRespHourly.
 
         消息引擎的名称，该字段显示为rabbitmq。
 
@@ -68,7 +68,7 @@ class ShowInstanceExtendProductInfoRespHourly:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowInstanceExtendProductInfoRespHourly.
+        r"""Sets the name of this ShowInstanceExtendProductInfoRespHourly.
 
         消息引擎的名称，该字段显示为rabbitmq。
 
@@ -79,7 +79,7 @@ class ShowInstanceExtendProductInfoRespHourly:
 
     @property
     def version(self):
-        """Gets the version of this ShowInstanceExtendProductInfoRespHourly.
+        r"""Gets the version of this ShowInstanceExtendProductInfoRespHourly.
 
         消息引擎的版本，当前支持3.8.35[和3.7.17](tag:hk_sbc,sbc)。
 
@@ -90,7 +90,7 @@ class ShowInstanceExtendProductInfoRespHourly:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowInstanceExtendProductInfoRespHourly.
+        r"""Sets the version of this ShowInstanceExtendProductInfoRespHourly.
 
         消息引擎的版本，当前支持3.8.35[和3.7.17](tag:hk_sbc,sbc)。
 
@@ -101,7 +101,7 @@ class ShowInstanceExtendProductInfoRespHourly:
 
     @property
     def values(self):
-        """Gets the values of this ShowInstanceExtendProductInfoRespHourly.
+        r"""Gets the values of this ShowInstanceExtendProductInfoRespHourly.
 
         产品规格列表。
 
@@ -112,7 +112,7 @@ class ShowInstanceExtendProductInfoRespHourly:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ShowInstanceExtendProductInfoRespHourly.
+        r"""Sets the values of this ShowInstanceExtendProductInfoRespHourly.
 
         产品规格列表。
 

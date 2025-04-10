@@ -28,7 +28,7 @@ class SearchSharedPrincipalsResponse(SdkResponse):
     }
 
     def __init__(self, shared_principals=None, page_info=None):
-        """SearchSharedPrincipalsResponse
+        r"""SearchSharedPrincipalsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SearchSharedPrincipalsResponse(SdkResponse):
 
     @property
     def shared_principals(self):
-        """Gets the shared_principals of this SearchSharedPrincipalsResponse.
+        r"""Gets the shared_principals of this SearchSharedPrincipalsResponse.
 
         资源使用者的详细信息列表。
 
@@ -62,7 +62,7 @@ class SearchSharedPrincipalsResponse(SdkResponse):
 
     @shared_principals.setter
     def shared_principals(self, shared_principals):
-        """Sets the shared_principals of this SearchSharedPrincipalsResponse.
+        r"""Sets the shared_principals of this SearchSharedPrincipalsResponse.
 
         资源使用者的详细信息列表。
 
@@ -73,7 +73,7 @@ class SearchSharedPrincipalsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this SearchSharedPrincipalsResponse.
+        r"""Gets the page_info of this SearchSharedPrincipalsResponse.
 
         :return: The page_info of this SearchSharedPrincipalsResponse.
         :rtype: :class:`huaweicloudsdkram.v1.PageInfo`
@@ -82,7 +82,7 @@ class SearchSharedPrincipalsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this SearchSharedPrincipalsResponse.
+        r"""Sets the page_info of this SearchSharedPrincipalsResponse.
 
         :param page_info: The page_info of this SearchSharedPrincipalsResponse.
         :type page_info: :class:`huaweicloudsdkram.v1.PageInfo`

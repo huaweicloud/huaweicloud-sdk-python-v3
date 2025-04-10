@@ -30,7 +30,7 @@ class CreateDatakeyResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, plain_text=None, cipher_text=None):
-        """CreateDatakeyResponse
+        r"""CreateDatakeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateDatakeyResponse(SdkResponse):
 
     @property
     def key_id(self):
-        """Gets the key_id of this CreateDatakeyResponse.
+        r"""Gets the key_id of this CreateDatakeyResponse.
 
         密钥ID。
 
@@ -69,7 +69,7 @@ class CreateDatakeyResponse(SdkResponse):
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this CreateDatakeyResponse.
+        r"""Sets the key_id of this CreateDatakeyResponse.
 
         密钥ID。
 
@@ -80,7 +80,7 @@ class CreateDatakeyResponse(SdkResponse):
 
     @property
     def plain_text(self):
-        """Gets the plain_text of this CreateDatakeyResponse.
+        r"""Gets the plain_text of this CreateDatakeyResponse.
 
         DEK明文16进制，两位表示1byte。
 
@@ -91,7 +91,7 @@ class CreateDatakeyResponse(SdkResponse):
 
     @plain_text.setter
     def plain_text(self, plain_text):
-        """Sets the plain_text of this CreateDatakeyResponse.
+        r"""Sets the plain_text of this CreateDatakeyResponse.
 
         DEK明文16进制，两位表示1byte。
 
@@ -102,7 +102,7 @@ class CreateDatakeyResponse(SdkResponse):
 
     @property
     def cipher_text(self):
-        """Gets the cipher_text of this CreateDatakeyResponse.
+        r"""Gets the cipher_text of this CreateDatakeyResponse.
 
         DEK密文16进制，两位表示1byte。
 
@@ -113,7 +113,7 @@ class CreateDatakeyResponse(SdkResponse):
 
     @cipher_text.setter
     def cipher_text(self, cipher_text):
-        """Sets the cipher_text of this CreateDatakeyResponse.
+        r"""Sets the cipher_text of this CreateDatakeyResponse.
 
         DEK密文16进制，两位表示1byte。
 

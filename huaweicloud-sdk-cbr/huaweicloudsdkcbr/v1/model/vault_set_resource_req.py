@@ -27,7 +27,7 @@ class VaultSetResourceReq:
     }
 
     def __init__(self, resource_ids=None, action=None):
-        """VaultSetResourceReq
+        r"""VaultSetResourceReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class VaultSetResourceReq:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this VaultSetResourceReq.
+        r"""Gets the resource_ids of this VaultSetResourceReq.
 
         需要设置的资源id。
 
@@ -59,7 +59,7 @@ class VaultSetResourceReq:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this VaultSetResourceReq.
+        r"""Sets the resource_ids of this VaultSetResourceReq.
 
         需要设置的资源id。
 
@@ -70,7 +70,7 @@ class VaultSetResourceReq:
 
     @property
     def action(self):
-        """Gets the action of this VaultSetResourceReq.
+        r"""Gets the action of this VaultSetResourceReq.
 
         设置存储库资源动作
 
@@ -81,7 +81,7 @@ class VaultSetResourceReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this VaultSetResourceReq.
+        r"""Sets the action of this VaultSetResourceReq.
 
         设置存储库资源动作
 

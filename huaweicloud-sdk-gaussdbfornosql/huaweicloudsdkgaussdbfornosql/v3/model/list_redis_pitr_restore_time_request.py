@@ -33,7 +33,7 @@ class ListRedisPitrRestoreTimeRequest:
     }
 
     def __init__(self, instance_id=None, start_time=None, end_time=None, offset=None, limit=None):
-        """ListRedisPitrRestoreTimeRequest
+        r"""ListRedisPitrRestoreTimeRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListRedisPitrRestoreTimeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListRedisPitrRestoreTimeRequest.
+        r"""Gets the instance_id of this ListRedisPitrRestoreTimeRequest.
 
         实例ID。
 
@@ -79,7 +79,7 @@ class ListRedisPitrRestoreTimeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListRedisPitrRestoreTimeRequest.
+        r"""Sets the instance_id of this ListRedisPitrRestoreTimeRequest.
 
         实例ID。
 
@@ -90,7 +90,7 @@ class ListRedisPitrRestoreTimeRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListRedisPitrRestoreTimeRequest.
+        r"""Gets the start_time of this ListRedisPitrRestoreTimeRequest.
 
         查询可恢复时间点的开始时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
 
@@ -101,7 +101,7 @@ class ListRedisPitrRestoreTimeRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListRedisPitrRestoreTimeRequest.
+        r"""Sets the start_time of this ListRedisPitrRestoreTimeRequest.
 
         查询可恢复时间点的开始时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
 
@@ -112,7 +112,7 @@ class ListRedisPitrRestoreTimeRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListRedisPitrRestoreTimeRequest.
+        r"""Gets the end_time of this ListRedisPitrRestoreTimeRequest.
 
         查询可恢复时间点的结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
 
@@ -123,7 +123,7 @@ class ListRedisPitrRestoreTimeRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListRedisPitrRestoreTimeRequest.
+        r"""Sets the end_time of this ListRedisPitrRestoreTimeRequest.
 
         查询可恢复时间点的结束时间，为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
 
@@ -134,7 +134,7 @@ class ListRedisPitrRestoreTimeRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRedisPitrRestoreTimeRequest.
+        r"""Gets the offset of this ListRedisPitrRestoreTimeRequest.
 
         偏移量，表示查询该偏移量后面的记录，默认值为0。
 
@@ -145,7 +145,7 @@ class ListRedisPitrRestoreTimeRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRedisPitrRestoreTimeRequest.
+        r"""Sets the offset of this ListRedisPitrRestoreTimeRequest.
 
         偏移量，表示查询该偏移量后面的记录，默认值为0。
 
@@ -156,7 +156,7 @@ class ListRedisPitrRestoreTimeRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRedisPitrRestoreTimeRequest.
+        r"""Gets the limit of this ListRedisPitrRestoreTimeRequest.
 
         查询返回记录的数量上限值，取值范围为1~100，默认值为100。
 
@@ -167,7 +167,7 @@ class ListRedisPitrRestoreTimeRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRedisPitrRestoreTimeRequest.
+        r"""Sets the limit of this ListRedisPitrRestoreTimeRequest.
 
         查询返回记录的数量上限值，取值范围为1~100，默认值为100。
 

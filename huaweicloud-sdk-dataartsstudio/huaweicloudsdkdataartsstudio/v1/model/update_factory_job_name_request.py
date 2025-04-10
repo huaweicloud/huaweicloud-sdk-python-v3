@@ -33,7 +33,7 @@ class UpdateFactoryJobNameRequest:
     }
 
     def __init__(self, job_name=None, workspace=None, authorization=None, host=None, body=None):
-        """UpdateFactoryJobNameRequest
+        r"""UpdateFactoryJobNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class UpdateFactoryJobNameRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this UpdateFactoryJobNameRequest.
+        r"""Gets the job_name of this UpdateFactoryJobNameRequest.
 
         作业名
 
@@ -80,7 +80,7 @@ class UpdateFactoryJobNameRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this UpdateFactoryJobNameRequest.
+        r"""Sets the job_name of this UpdateFactoryJobNameRequest.
 
         作业名
 
@@ -91,7 +91,7 @@ class UpdateFactoryJobNameRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateFactoryJobNameRequest.
+        r"""Gets the workspace of this UpdateFactoryJobNameRequest.
 
         工作空间ID
 
@@ -102,7 +102,7 @@ class UpdateFactoryJobNameRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateFactoryJobNameRequest.
+        r"""Sets the workspace of this UpdateFactoryJobNameRequest.
 
         工作空间ID
 
@@ -113,7 +113,7 @@ class UpdateFactoryJobNameRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this UpdateFactoryJobNameRequest.
+        r"""Gets the authorization of this UpdateFactoryJobNameRequest.
 
         使用AK/SK进行认证时该字段必选
 
@@ -124,7 +124,7 @@ class UpdateFactoryJobNameRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this UpdateFactoryJobNameRequest.
+        r"""Sets the authorization of this UpdateFactoryJobNameRequest.
 
         使用AK/SK进行认证时该字段必选
 
@@ -135,7 +135,7 @@ class UpdateFactoryJobNameRequest:
 
     @property
     def host(self):
-        """Gets the host of this UpdateFactoryJobNameRequest.
+        r"""Gets the host of this UpdateFactoryJobNameRequest.
 
         使用AK/SK进行认证时该字段必选
 
@@ -146,7 +146,7 @@ class UpdateFactoryJobNameRequest:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this UpdateFactoryJobNameRequest.
+        r"""Sets the host of this UpdateFactoryJobNameRequest.
 
         使用AK/SK进行认证时该字段必选
 
@@ -157,7 +157,7 @@ class UpdateFactoryJobNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFactoryJobNameRequest.
+        r"""Gets the body of this UpdateFactoryJobNameRequest.
 
         :return: The body of this UpdateFactoryJobNameRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateFactoryJobNameRequestBody`
@@ -166,7 +166,7 @@ class UpdateFactoryJobNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFactoryJobNameRequest.
+        r"""Sets the body of this UpdateFactoryJobNameRequest.
 
         :param body: The body of this UpdateFactoryJobNameRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.UpdateFactoryJobNameRequestBody`

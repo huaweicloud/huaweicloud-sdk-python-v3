@@ -27,7 +27,7 @@ class Compliance:
     }
 
     def __init__(self, compliance_state=None, resource_details=None):
-        """Compliance
+        r"""Compliance
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Compliance:
 
     @property
     def compliance_state(self):
-        """Gets the compliance_state of this Compliance.
+        r"""Gets the compliance_state of this Compliance.
 
         合规结果。
 
@@ -61,7 +61,7 @@ class Compliance:
 
     @compliance_state.setter
     def compliance_state(self, compliance_state):
-        """Sets the compliance_state of this Compliance.
+        r"""Sets the compliance_state of this Compliance.
 
         合规结果。
 
@@ -72,7 +72,7 @@ class Compliance:
 
     @property
     def resource_details(self):
-        """Gets the resource_details of this Compliance.
+        r"""Gets the resource_details of this Compliance.
 
         :return: The resource_details of this Compliance.
         :rtype: :class:`huaweicloudsdkconfig.v1.PolicyComplianceSummaryUnit`
@@ -81,7 +81,7 @@ class Compliance:
 
     @resource_details.setter
     def resource_details(self, resource_details):
-        """Sets the resource_details of this Compliance.
+        r"""Sets the resource_details of this Compliance.
 
         :param resource_details: The resource_details of this Compliance.
         :type resource_details: :class:`huaweicloudsdkconfig.v1.PolicyComplianceSummaryUnit`

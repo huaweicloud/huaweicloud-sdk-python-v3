@@ -69,7 +69,7 @@ class PrivateImageRepositoryInfo:
     }
 
     def __init__(self, id=None, namespace=None, image_name=None, image_id=None, image_digest=None, image_version=None, image_type=None, latest_version=None, scan_status=None, scan_failed_desc=None, image_size=None, latest_update_time=None, latest_scan_time=None, vul_num=None, unsafe_setting_num=None, malicious_file_num=None, domain_name=None, shared_status=None, scannable=None, instance_name=None, instance_id=None, instance_url=None, association_images=None):
-        """PrivateImageRepositoryInfo
+        r"""PrivateImageRepositoryInfo
 
         The model defined in huaweicloud sdk
 
@@ -197,7 +197,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def id(self):
-        """Gets the id of this PrivateImageRepositoryInfo.
+        r"""Gets the id of this PrivateImageRepositoryInfo.
 
         id
 
@@ -208,7 +208,7 @@ class PrivateImageRepositoryInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PrivateImageRepositoryInfo.
+        r"""Sets the id of this PrivateImageRepositoryInfo.
 
         id
 
@@ -219,7 +219,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def namespace(self):
-        """Gets the namespace of this PrivateImageRepositoryInfo.
+        r"""Gets the namespace of this PrivateImageRepositoryInfo.
 
         命名空间
 
@@ -230,7 +230,7 @@ class PrivateImageRepositoryInfo:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this PrivateImageRepositoryInfo.
+        r"""Sets the namespace of this PrivateImageRepositoryInfo.
 
         命名空间
 
@@ -241,7 +241,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def image_name(self):
-        """Gets the image_name of this PrivateImageRepositoryInfo.
+        r"""Gets the image_name of this PrivateImageRepositoryInfo.
 
         镜像名称
 
@@ -252,7 +252,7 @@ class PrivateImageRepositoryInfo:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this PrivateImageRepositoryInfo.
+        r"""Sets the image_name of this PrivateImageRepositoryInfo.
 
         镜像名称
 
@@ -263,7 +263,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def image_id(self):
-        """Gets the image_id of this PrivateImageRepositoryInfo.
+        r"""Gets the image_id of this PrivateImageRepositoryInfo.
 
         镜像id
 
@@ -274,7 +274,7 @@ class PrivateImageRepositoryInfo:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this PrivateImageRepositoryInfo.
+        r"""Sets the image_id of this PrivateImageRepositoryInfo.
 
         镜像id
 
@@ -285,7 +285,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def image_digest(self):
-        """Gets the image_digest of this PrivateImageRepositoryInfo.
+        r"""Gets the image_digest of this PrivateImageRepositoryInfo.
 
         镜像digest
 
@@ -296,7 +296,7 @@ class PrivateImageRepositoryInfo:
 
     @image_digest.setter
     def image_digest(self, image_digest):
-        """Sets the image_digest of this PrivateImageRepositoryInfo.
+        r"""Sets the image_digest of this PrivateImageRepositoryInfo.
 
         镜像digest
 
@@ -307,7 +307,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def image_version(self):
-        """Gets the image_version of this PrivateImageRepositoryInfo.
+        r"""Gets the image_version of this PrivateImageRepositoryInfo.
 
         镜像版本
 
@@ -318,7 +318,7 @@ class PrivateImageRepositoryInfo:
 
     @image_version.setter
     def image_version(self, image_version):
-        """Sets the image_version of this PrivateImageRepositoryInfo.
+        r"""Sets the image_version of this PrivateImageRepositoryInfo.
 
         镜像版本
 
@@ -329,7 +329,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def image_type(self):
-        """Gets the image_type of this PrivateImageRepositoryInfo.
+        r"""Gets the image_type of this PrivateImageRepositoryInfo.
 
         镜像类型，包含如下2种。   - private_image ：私有镜像。   - shared_image ：共享镜像。
 
@@ -340,7 +340,7 @@ class PrivateImageRepositoryInfo:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this PrivateImageRepositoryInfo.
+        r"""Sets the image_type of this PrivateImageRepositoryInfo.
 
         镜像类型，包含如下2种。   - private_image ：私有镜像。   - shared_image ：共享镜像。
 
@@ -351,7 +351,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def latest_version(self):
-        """Gets the latest_version of this PrivateImageRepositoryInfo.
+        r"""Gets the latest_version of this PrivateImageRepositoryInfo.
 
         是否是最新版本
 
@@ -362,7 +362,7 @@ class PrivateImageRepositoryInfo:
 
     @latest_version.setter
     def latest_version(self, latest_version):
-        """Sets the latest_version of this PrivateImageRepositoryInfo.
+        r"""Sets the latest_version of this PrivateImageRepositoryInfo.
 
         是否是最新版本
 
@@ -373,7 +373,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def scan_status(self):
-        """Gets the scan_status of this PrivateImageRepositoryInfo.
+        r"""Gets the scan_status of this PrivateImageRepositoryInfo.
 
         扫描状态，包含如下2种。   - unscan ：未扫描。   - success ：扫描完成。   - scanning ：正在扫描。   - failed ：扫描失败。   - download_failed ：下载失败。   - image_oversized ：镜像超大。   - waiting_for_scan ：等待扫描。
 
@@ -384,7 +384,7 @@ class PrivateImageRepositoryInfo:
 
     @scan_status.setter
     def scan_status(self, scan_status):
-        """Sets the scan_status of this PrivateImageRepositoryInfo.
+        r"""Sets the scan_status of this PrivateImageRepositoryInfo.
 
         扫描状态，包含如下2种。   - unscan ：未扫描。   - success ：扫描完成。   - scanning ：正在扫描。   - failed ：扫描失败。   - download_failed ：下载失败。   - image_oversized ：镜像超大。   - waiting_for_scan ：等待扫描。
 
@@ -395,7 +395,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def scan_failed_desc(self):
-        """Gets the scan_failed_desc of this PrivateImageRepositoryInfo.
+        r"""Gets the scan_failed_desc of this PrivateImageRepositoryInfo.
 
         扫描失败原因，包含如下14种。   - \"unknown_error\" :未知错误   - \"authentication_failed\":认证失败   - \"download_failed\":镜像下载失败   - \"image_over_sized\":镜像大小超限   - \"image_oversized\":镜像超大   - \"failed_to_scan_vulnerability\":漏洞扫描失败      - \"failed_to_scan_file\":文件扫描失败   - \"failed_to_scan_software\":软件扫描失败   - \"failed_to_check_sensitive_information\":敏感信息核查失败   - \"failed_to_check_baseline\":基线检查失败   - \"failed_to_check_software_compliance\":软件合规检查失败   - \"failed_to_query_basic_image_information\":基础镜像信息查询失败   - \"response_timed_out\":响应超时   - \"database_error\" : 数据库错误   - \"failed_to_send_the_scan_request\" : 发送扫描请求失败
 
@@ -406,7 +406,7 @@ class PrivateImageRepositoryInfo:
 
     @scan_failed_desc.setter
     def scan_failed_desc(self, scan_failed_desc):
-        """Sets the scan_failed_desc of this PrivateImageRepositoryInfo.
+        r"""Sets the scan_failed_desc of this PrivateImageRepositoryInfo.
 
         扫描失败原因，包含如下14种。   - \"unknown_error\" :未知错误   - \"authentication_failed\":认证失败   - \"download_failed\":镜像下载失败   - \"image_over_sized\":镜像大小超限   - \"image_oversized\":镜像超大   - \"failed_to_scan_vulnerability\":漏洞扫描失败      - \"failed_to_scan_file\":文件扫描失败   - \"failed_to_scan_software\":软件扫描失败   - \"failed_to_check_sensitive_information\":敏感信息核查失败   - \"failed_to_check_baseline\":基线检查失败   - \"failed_to_check_software_compliance\":软件合规检查失败   - \"failed_to_query_basic_image_information\":基础镜像信息查询失败   - \"response_timed_out\":响应超时   - \"database_error\" : 数据库错误   - \"failed_to_send_the_scan_request\" : 发送扫描请求失败
 
@@ -417,7 +417,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def image_size(self):
-        """Gets the image_size of this PrivateImageRepositoryInfo.
+        r"""Gets the image_size of this PrivateImageRepositoryInfo.
 
         镜像大小
 
@@ -428,7 +428,7 @@ class PrivateImageRepositoryInfo:
 
     @image_size.setter
     def image_size(self, image_size):
-        """Sets the image_size of this PrivateImageRepositoryInfo.
+        r"""Sets the image_size of this PrivateImageRepositoryInfo.
 
         镜像大小
 
@@ -439,7 +439,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def latest_update_time(self):
-        """Gets the latest_update_time of this PrivateImageRepositoryInfo.
+        r"""Gets the latest_update_time of this PrivateImageRepositoryInfo.
 
         镜像版本最后更新时间，时间单位 毫秒（ms）
 
@@ -450,7 +450,7 @@ class PrivateImageRepositoryInfo:
 
     @latest_update_time.setter
     def latest_update_time(self, latest_update_time):
-        """Sets the latest_update_time of this PrivateImageRepositoryInfo.
+        r"""Sets the latest_update_time of this PrivateImageRepositoryInfo.
 
         镜像版本最后更新时间，时间单位 毫秒（ms）
 
@@ -461,7 +461,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def latest_scan_time(self):
-        """Gets the latest_scan_time of this PrivateImageRepositoryInfo.
+        r"""Gets the latest_scan_time of this PrivateImageRepositoryInfo.
 
         最近扫描时间，时间单位 毫秒（ms）
 
@@ -472,7 +472,7 @@ class PrivateImageRepositoryInfo:
 
     @latest_scan_time.setter
     def latest_scan_time(self, latest_scan_time):
-        """Sets the latest_scan_time of this PrivateImageRepositoryInfo.
+        r"""Sets the latest_scan_time of this PrivateImageRepositoryInfo.
 
         最近扫描时间，时间单位 毫秒（ms）
 
@@ -483,7 +483,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def vul_num(self):
-        """Gets the vul_num of this PrivateImageRepositoryInfo.
+        r"""Gets the vul_num of this PrivateImageRepositoryInfo.
 
         漏洞个数
 
@@ -494,7 +494,7 @@ class PrivateImageRepositoryInfo:
 
     @vul_num.setter
     def vul_num(self, vul_num):
-        """Sets the vul_num of this PrivateImageRepositoryInfo.
+        r"""Sets the vul_num of this PrivateImageRepositoryInfo.
 
         漏洞个数
 
@@ -505,7 +505,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def unsafe_setting_num(self):
-        """Gets the unsafe_setting_num of this PrivateImageRepositoryInfo.
+        r"""Gets the unsafe_setting_num of this PrivateImageRepositoryInfo.
 
         基线扫描未通过数
 
@@ -516,7 +516,7 @@ class PrivateImageRepositoryInfo:
 
     @unsafe_setting_num.setter
     def unsafe_setting_num(self, unsafe_setting_num):
-        """Sets the unsafe_setting_num of this PrivateImageRepositoryInfo.
+        r"""Sets the unsafe_setting_num of this PrivateImageRepositoryInfo.
 
         基线扫描未通过数
 
@@ -527,7 +527,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def malicious_file_num(self):
-        """Gets the malicious_file_num of this PrivateImageRepositoryInfo.
+        r"""Gets the malicious_file_num of this PrivateImageRepositoryInfo.
 
         恶意文件数
 
@@ -538,7 +538,7 @@ class PrivateImageRepositoryInfo:
 
     @malicious_file_num.setter
     def malicious_file_num(self, malicious_file_num):
-        """Sets the malicious_file_num of this PrivateImageRepositoryInfo.
+        r"""Sets the malicious_file_num of this PrivateImageRepositoryInfo.
 
         恶意文件数
 
@@ -549,7 +549,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this PrivateImageRepositoryInfo.
+        r"""Gets the domain_name of this PrivateImageRepositoryInfo.
 
         拥有者（共享镜像参数）
 
@@ -560,7 +560,7 @@ class PrivateImageRepositoryInfo:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this PrivateImageRepositoryInfo.
+        r"""Sets the domain_name of this PrivateImageRepositoryInfo.
 
         拥有者（共享镜像参数）
 
@@ -571,7 +571,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def shared_status(self):
-        """Gets the shared_status of this PrivateImageRepositoryInfo.
+        r"""Gets the shared_status of this PrivateImageRepositoryInfo.
 
         共享镜像状态，包含如下2种。   - expired ：已过期。   - effective ：有效。
 
@@ -582,7 +582,7 @@ class PrivateImageRepositoryInfo:
 
     @shared_status.setter
     def shared_status(self, shared_status):
-        """Sets the shared_status of this PrivateImageRepositoryInfo.
+        r"""Sets the shared_status of this PrivateImageRepositoryInfo.
 
         共享镜像状态，包含如下2种。   - expired ：已过期。   - effective ：有效。
 
@@ -593,7 +593,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def scannable(self):
-        """Gets the scannable of this PrivateImageRepositoryInfo.
+        r"""Gets the scannable of this PrivateImageRepositoryInfo.
 
         是否可扫描
 
@@ -604,7 +604,7 @@ class PrivateImageRepositoryInfo:
 
     @scannable.setter
     def scannable(self, scannable):
-        """Sets the scannable of this PrivateImageRepositoryInfo.
+        r"""Sets the scannable of this PrivateImageRepositoryInfo.
 
         是否可扫描
 
@@ -615,7 +615,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this PrivateImageRepositoryInfo.
+        r"""Gets the instance_name of this PrivateImageRepositoryInfo.
 
         企业版镜像实例名称
 
@@ -626,7 +626,7 @@ class PrivateImageRepositoryInfo:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this PrivateImageRepositoryInfo.
+        r"""Sets the instance_name of this PrivateImageRepositoryInfo.
 
         企业版镜像实例名称
 
@@ -637,7 +637,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this PrivateImageRepositoryInfo.
+        r"""Gets the instance_id of this PrivateImageRepositoryInfo.
 
         企业版镜像实例ID
 
@@ -648,7 +648,7 @@ class PrivateImageRepositoryInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this PrivateImageRepositoryInfo.
+        r"""Sets the instance_id of this PrivateImageRepositoryInfo.
 
         企业版镜像实例ID
 
@@ -659,7 +659,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def instance_url(self):
-        """Gets the instance_url of this PrivateImageRepositoryInfo.
+        r"""Gets the instance_url of this PrivateImageRepositoryInfo.
 
         企业版镜像实例URL
 
@@ -670,7 +670,7 @@ class PrivateImageRepositoryInfo:
 
     @instance_url.setter
     def instance_url(self, instance_url):
-        """Sets the instance_url of this PrivateImageRepositoryInfo.
+        r"""Sets the instance_url of this PrivateImageRepositoryInfo.
 
         企业版镜像实例URL
 
@@ -681,7 +681,7 @@ class PrivateImageRepositoryInfo:
 
     @property
     def association_images(self):
-        """Gets the association_images of this PrivateImageRepositoryInfo.
+        r"""Gets the association_images of this PrivateImageRepositoryInfo.
 
         多架构关联镜像信息
 
@@ -692,7 +692,7 @@ class PrivateImageRepositoryInfo:
 
     @association_images.setter
     def association_images(self, association_images):
-        """Sets the association_images of this PrivateImageRepositoryInfo.
+        r"""Sets the association_images of this PrivateImageRepositoryInfo.
 
         多架构关联镜像信息
 

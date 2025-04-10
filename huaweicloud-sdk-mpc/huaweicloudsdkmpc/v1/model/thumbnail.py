@@ -29,7 +29,7 @@ class Thumbnail:
     }
 
     def __init__(self, tar=None, out=None, params=None):
-        """Thumbnail
+        r"""Thumbnail
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class Thumbnail:
 
     @property
     def tar(self):
-        """Gets the tar of this Thumbnail.
+        r"""Gets the tar of this Thumbnail.
 
         是否压缩抽帧图片生成tar包 - 0：表示压缩 - 1：表示不压缩 
 
@@ -67,7 +67,7 @@ class Thumbnail:
 
     @tar.setter
     def tar(self, tar):
-        """Sets the tar of this Thumbnail.
+        r"""Sets the tar of this Thumbnail.
 
         是否压缩抽帧图片生成tar包 - 0：表示压缩 - 1：表示不压缩 
 
@@ -78,7 +78,7 @@ class Thumbnail:
 
     @property
     def out(self):
-        """Gets the out of this Thumbnail.
+        r"""Gets the out of this Thumbnail.
 
         :return: The out of this Thumbnail.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -87,7 +87,7 @@ class Thumbnail:
 
     @out.setter
     def out(self, out):
-        """Sets the out of this Thumbnail.
+        r"""Sets the out of this Thumbnail.
 
         :param out: The out of this Thumbnail.
         :type out: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -96,7 +96,7 @@ class Thumbnail:
 
     @property
     def params(self):
-        """Gets the params of this Thumbnail.
+        r"""Gets the params of this Thumbnail.
 
         :return: The params of this Thumbnail.
         :rtype: :class:`huaweicloudsdkmpc.v1.ThumbnailPara`
@@ -105,7 +105,7 @@ class Thumbnail:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this Thumbnail.
+        r"""Sets the params of this Thumbnail.
 
         :param params: The params of this Thumbnail.
         :type params: :class:`huaweicloudsdkmpc.v1.ThumbnailPara`

@@ -28,7 +28,7 @@ class PublishHttpDetectResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, task_id=None):
-        """PublishHttpDetectResponse
+        r"""PublishHttpDetectResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class PublishHttpDetectResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this PublishHttpDetectResponse.
+        r"""Gets the request_id of this PublishHttpDetectResponse.
 
         请求ID
 
@@ -62,7 +62,7 @@ class PublishHttpDetectResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this PublishHttpDetectResponse.
+        r"""Sets the request_id of this PublishHttpDetectResponse.
 
         请求ID
 
@@ -73,7 +73,7 @@ class PublishHttpDetectResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this PublishHttpDetectResponse.
+        r"""Gets the task_id of this PublishHttpDetectResponse.
 
         探测任务ID
 
@@ -84,7 +84,7 @@ class PublishHttpDetectResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this PublishHttpDetectResponse.
+        r"""Sets the task_id of this PublishHttpDetectResponse.
 
         探测任务ID
 

@@ -51,7 +51,7 @@ class VideoScriptsCreateInfo:
     }
 
     def __init__(self, script_name=None, script_description=None, view_mode=None, model_asset_id=None, model_asset_type=None, voice_config=None, video_config=None, scene_asset_id=None, priv_data=None, background_music_config=None, review_config=None, audio_files=None, action_config=None, shoot_scripts=None):
-        """VideoScriptsCreateInfo
+        r"""VideoScriptsCreateInfo
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class VideoScriptsCreateInfo:
 
     @property
     def script_name(self):
-        """Gets the script_name of this VideoScriptsCreateInfo.
+        r"""Gets the script_name of this VideoScriptsCreateInfo.
 
         **参数解释**： 剧本名称。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -145,7 +145,7 @@ class VideoScriptsCreateInfo:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this VideoScriptsCreateInfo.
+        r"""Sets the script_name of this VideoScriptsCreateInfo.
 
         **参数解释**： 剧本名称。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -156,7 +156,7 @@ class VideoScriptsCreateInfo:
 
     @property
     def script_description(self):
-        """Gets the script_description of this VideoScriptsCreateInfo.
+        r"""Gets the script_description of this VideoScriptsCreateInfo.
 
         **参数解释**： 剧本描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
@@ -167,7 +167,7 @@ class VideoScriptsCreateInfo:
 
     @script_description.setter
     def script_description(self, script_description):
-        """Sets the script_description of this VideoScriptsCreateInfo.
+        r"""Sets the script_description of this VideoScriptsCreateInfo.
 
         **参数解释**： 剧本描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
@@ -178,7 +178,7 @@ class VideoScriptsCreateInfo:
 
     @property
     def view_mode(self):
-        """Gets the view_mode of this VideoScriptsCreateInfo.
+        r"""Gets the view_mode of this VideoScriptsCreateInfo.
 
         **参数解释**： 横竖屏类型。 **约束限制**： 不涉及。 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL：竖屏。
 
@@ -189,7 +189,7 @@ class VideoScriptsCreateInfo:
 
     @view_mode.setter
     def view_mode(self, view_mode):
-        """Sets the view_mode of this VideoScriptsCreateInfo.
+        r"""Sets the view_mode of this VideoScriptsCreateInfo.
 
         **参数解释**： 横竖屏类型。 **约束限制**： 不涉及。 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL：竖屏。
 
@@ -200,7 +200,7 @@ class VideoScriptsCreateInfo:
 
     @property
     def model_asset_id(self):
-        """Gets the model_asset_id of this VideoScriptsCreateInfo.
+        r"""Gets the model_asset_id of this VideoScriptsCreateInfo.
 
         **参数解释**： 数字人模型资产ID。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
 
@@ -211,7 +211,7 @@ class VideoScriptsCreateInfo:
 
     @model_asset_id.setter
     def model_asset_id(self, model_asset_id):
-        """Sets the model_asset_id of this VideoScriptsCreateInfo.
+        r"""Sets the model_asset_id of this VideoScriptsCreateInfo.
 
         **参数解释**： 数字人模型资产ID。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
 
@@ -222,7 +222,7 @@ class VideoScriptsCreateInfo:
 
     @property
     def model_asset_type(self):
-        """Gets the model_asset_type of this VideoScriptsCreateInfo.
+        r"""Gets the model_asset_type of this VideoScriptsCreateInfo.
 
         **参数解释**： 数字人模型类型。 **约束限制**： 不涉及 **取值范围**： * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人  **默认取值**： 不涉及
 
@@ -233,7 +233,7 @@ class VideoScriptsCreateInfo:
 
     @model_asset_type.setter
     def model_asset_type(self, model_asset_type):
-        """Sets the model_asset_type of this VideoScriptsCreateInfo.
+        r"""Sets the model_asset_type of this VideoScriptsCreateInfo.
 
         **参数解释**： 数字人模型类型。 **约束限制**： 不涉及 **取值范围**： * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人  **默认取值**： 不涉及
 
@@ -244,7 +244,7 @@ class VideoScriptsCreateInfo:
 
     @property
     def voice_config(self):
-        """Gets the voice_config of this VideoScriptsCreateInfo.
+        r"""Gets the voice_config of this VideoScriptsCreateInfo.
 
         :return: The voice_config of this VideoScriptsCreateInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -253,7 +253,7 @@ class VideoScriptsCreateInfo:
 
     @voice_config.setter
     def voice_config(self, voice_config):
-        """Sets the voice_config of this VideoScriptsCreateInfo.
+        r"""Sets the voice_config of this VideoScriptsCreateInfo.
 
         :param voice_config: The voice_config of this VideoScriptsCreateInfo.
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -262,7 +262,7 @@ class VideoScriptsCreateInfo:
 
     @property
     def video_config(self):
-        """Gets the video_config of this VideoScriptsCreateInfo.
+        r"""Gets the video_config of this VideoScriptsCreateInfo.
 
         :return: The video_config of this VideoScriptsCreateInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -271,7 +271,7 @@ class VideoScriptsCreateInfo:
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this VideoScriptsCreateInfo.
+        r"""Sets the video_config of this VideoScriptsCreateInfo.
 
         :param video_config: The video_config of this VideoScriptsCreateInfo.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -280,7 +280,7 @@ class VideoScriptsCreateInfo:
 
     @property
     def scene_asset_id(self):
-        """Gets the scene_asset_id of this VideoScriptsCreateInfo.
+        r"""Gets the scene_asset_id of this VideoScriptsCreateInfo.
 
         **参数解释**： 场景资产ID。 **约束限制**： 分身数字人视频制作不需要填写该参数。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
@@ -291,7 +291,7 @@ class VideoScriptsCreateInfo:
 
     @scene_asset_id.setter
     def scene_asset_id(self, scene_asset_id):
-        """Sets the scene_asset_id of this VideoScriptsCreateInfo.
+        r"""Sets the scene_asset_id of this VideoScriptsCreateInfo.
 
         **参数解释**： 场景资产ID。 **约束限制**： 分身数字人视频制作不需要填写该参数。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
@@ -302,7 +302,7 @@ class VideoScriptsCreateInfo:
 
     @property
     def priv_data(self):
-        """Gets the priv_data of this VideoScriptsCreateInfo.
+        r"""Gets the priv_data of this VideoScriptsCreateInfo.
 
         **参数解释**： 私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192位 **默认取值**： 不涉及
 
@@ -313,7 +313,7 @@ class VideoScriptsCreateInfo:
 
     @priv_data.setter
     def priv_data(self, priv_data):
-        """Sets the priv_data of this VideoScriptsCreateInfo.
+        r"""Sets the priv_data of this VideoScriptsCreateInfo.
 
         **参数解释**： 私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192位 **默认取值**： 不涉及
 
@@ -324,7 +324,7 @@ class VideoScriptsCreateInfo:
 
     @property
     def background_music_config(self):
-        """Gets the background_music_config of this VideoScriptsCreateInfo.
+        r"""Gets the background_music_config of this VideoScriptsCreateInfo.
 
         :return: The background_music_config of this VideoScriptsCreateInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
@@ -333,7 +333,7 @@ class VideoScriptsCreateInfo:
 
     @background_music_config.setter
     def background_music_config(self, background_music_config):
-        """Sets the background_music_config of this VideoScriptsCreateInfo.
+        r"""Sets the background_music_config of this VideoScriptsCreateInfo.
 
         :param background_music_config: The background_music_config of this VideoScriptsCreateInfo.
         :type background_music_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
@@ -342,7 +342,7 @@ class VideoScriptsCreateInfo:
 
     @property
     def review_config(self):
-        """Gets the review_config of this VideoScriptsCreateInfo.
+        r"""Gets the review_config of this VideoScriptsCreateInfo.
 
         :return: The review_config of this VideoScriptsCreateInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -351,7 +351,7 @@ class VideoScriptsCreateInfo:
 
     @review_config.setter
     def review_config(self, review_config):
-        """Sets the review_config of this VideoScriptsCreateInfo.
+        r"""Sets the review_config of this VideoScriptsCreateInfo.
 
         :param review_config: The review_config of this VideoScriptsCreateInfo.
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -360,7 +360,7 @@ class VideoScriptsCreateInfo:
 
     @property
     def audio_files(self):
-        """Gets the audio_files of this VideoScriptsCreateInfo.
+        r"""Gets the audio_files of this VideoScriptsCreateInfo.
 
         :return: The audio_files of this VideoScriptsCreateInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
@@ -369,7 +369,7 @@ class VideoScriptsCreateInfo:
 
     @audio_files.setter
     def audio_files(self, audio_files):
-        """Sets the audio_files of this VideoScriptsCreateInfo.
+        r"""Sets the audio_files of this VideoScriptsCreateInfo.
 
         :param audio_files: The audio_files of this VideoScriptsCreateInfo.
         :type audio_files: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
@@ -378,7 +378,7 @@ class VideoScriptsCreateInfo:
 
     @property
     def action_config(self):
-        """Gets the action_config of this VideoScriptsCreateInfo.
+        r"""Gets the action_config of this VideoScriptsCreateInfo.
 
         :return: The action_config of this VideoScriptsCreateInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
@@ -387,7 +387,7 @@ class VideoScriptsCreateInfo:
 
     @action_config.setter
     def action_config(self, action_config):
-        """Sets the action_config of this VideoScriptsCreateInfo.
+        r"""Sets the action_config of this VideoScriptsCreateInfo.
 
         :param action_config: The action_config of this VideoScriptsCreateInfo.
         :type action_config: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
@@ -396,7 +396,7 @@ class VideoScriptsCreateInfo:
 
     @property
     def shoot_scripts(self):
-        """Gets the shoot_scripts of this VideoScriptsCreateInfo.
+        r"""Gets the shoot_scripts of this VideoScriptsCreateInfo.
 
         拍摄脚本列表。
 
@@ -407,7 +407,7 @@ class VideoScriptsCreateInfo:
 
     @shoot_scripts.setter
     def shoot_scripts(self, shoot_scripts):
-        """Sets the shoot_scripts of this VideoScriptsCreateInfo.
+        r"""Sets the shoot_scripts of this VideoScriptsCreateInfo.
 
         拍摄脚本列表。
 

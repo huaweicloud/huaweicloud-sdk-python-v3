@@ -37,7 +37,7 @@ class ListAppsTopRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, start_time=None, end_time=None, time_unit=None, top_num=None, order_by=None):
-        """ListAppsTopRequest
+        r"""ListAppsTopRequest
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListAppsTopRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListAppsTopRequest.
+        r"""Gets the workspace of this ListAppsTopRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -90,7 +90,7 @@ class ListAppsTopRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListAppsTopRequest.
+        r"""Sets the workspace of this ListAppsTopRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -101,7 +101,7 @@ class ListAppsTopRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ListAppsTopRequest.
+        r"""Gets the dlm_type of this ListAppsTopRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -112,7 +112,7 @@ class ListAppsTopRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ListAppsTopRequest.
+        r"""Sets the dlm_type of this ListAppsTopRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -123,7 +123,7 @@ class ListAppsTopRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListAppsTopRequest.
+        r"""Gets the start_time of this ListAppsTopRequest.
 
         开始时间（13位时间戳）。
 
@@ -134,7 +134,7 @@ class ListAppsTopRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListAppsTopRequest.
+        r"""Sets the start_time of this ListAppsTopRequest.
 
         开始时间（13位时间戳）。
 
@@ -145,7 +145,7 @@ class ListAppsTopRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAppsTopRequest.
+        r"""Gets the end_time of this ListAppsTopRequest.
 
         结束时间（13位时间戳）。
 
@@ -156,7 +156,7 @@ class ListAppsTopRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAppsTopRequest.
+        r"""Sets the end_time of this ListAppsTopRequest.
 
         结束时间（13位时间戳）。
 
@@ -167,7 +167,7 @@ class ListAppsTopRequest:
 
     @property
     def time_unit(self):
-        """Gets the time_unit of this ListAppsTopRequest.
+        r"""Gets the time_unit of this ListAppsTopRequest.
 
         时间单位。
 
@@ -178,7 +178,7 @@ class ListAppsTopRequest:
 
     @time_unit.setter
     def time_unit(self, time_unit):
-        """Sets the time_unit of this ListAppsTopRequest.
+        r"""Sets the time_unit of this ListAppsTopRequest.
 
         时间单位。
 
@@ -189,7 +189,7 @@ class ListAppsTopRequest:
 
     @property
     def top_num(self):
-        """Gets the top_num of this ListAppsTopRequest.
+        r"""Gets the top_num of this ListAppsTopRequest.
 
         前几名。
 
@@ -200,7 +200,7 @@ class ListAppsTopRequest:
 
     @top_num.setter
     def top_num(self, top_num):
-        """Sets the top_num of this ListAppsTopRequest.
+        r"""Sets the top_num of this ListAppsTopRequest.
 
         前几名。
 
@@ -211,7 +211,7 @@ class ListAppsTopRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListAppsTopRequest.
+        r"""Gets the order_by of this ListAppsTopRequest.
 
         排序条件
 
@@ -222,7 +222,7 @@ class ListAppsTopRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListAppsTopRequest.
+        r"""Sets the order_by of this ListAppsTopRequest.
 
         排序条件
 

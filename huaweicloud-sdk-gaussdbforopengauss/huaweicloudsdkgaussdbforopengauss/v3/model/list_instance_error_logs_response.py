@@ -28,7 +28,7 @@ class ListInstanceErrorLogsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, log_files=None):
-        """ListInstanceErrorLogsResponse
+        r"""ListInstanceErrorLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInstanceErrorLogsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListInstanceErrorLogsResponse.
+        r"""Gets the total of this ListInstanceErrorLogsResponse.
 
         总条数
 
@@ -62,7 +62,7 @@ class ListInstanceErrorLogsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListInstanceErrorLogsResponse.
+        r"""Sets the total of this ListInstanceErrorLogsResponse.
 
         总条数
 
@@ -73,7 +73,7 @@ class ListInstanceErrorLogsResponse(SdkResponse):
 
     @property
     def log_files(self):
-        """Gets the log_files of this ListInstanceErrorLogsResponse.
+        r"""Gets the log_files of this ListInstanceErrorLogsResponse.
 
         日志文件列表
 
@@ -84,7 +84,7 @@ class ListInstanceErrorLogsResponse(SdkResponse):
 
     @log_files.setter
     def log_files(self, log_files):
-        """Sets the log_files of this ListInstanceErrorLogsResponse.
+        r"""Sets the log_files of this ListInstanceErrorLogsResponse.
 
         日志文件列表
 

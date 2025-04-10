@@ -25,7 +25,7 @@ class AddTagsRequestBody:
     }
 
     def __init__(self, tags=None):
-        """AddTagsRequestBody
+        r"""AddTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this AddTagsRequestBody.
+        r"""Gets the tags of this AddTagsRequestBody.
 
         :return: The tags of this AddTagsRequestBody.
         :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.TagsOption`]
@@ -51,7 +51,7 @@ class AddTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this AddTagsRequestBody.
+        r"""Sets the tags of this AddTagsRequestBody.
 
         :param tags: The tags of this AddTagsRequestBody.
         :type tags: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.TagsOption`]

@@ -34,7 +34,7 @@ class AssociateKeypairResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, server_id=None, status=None, error_code=None, error_msg=None):
-        """AssociateKeypairResponse
+        r"""AssociateKeypairResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class AssociateKeypairResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this AssociateKeypairResponse.
+        r"""Gets the task_id of this AssociateKeypairResponse.
 
         任务下发成功返回的ID。
 
@@ -83,7 +83,7 @@ class AssociateKeypairResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this AssociateKeypairResponse.
+        r"""Sets the task_id of this AssociateKeypairResponse.
 
         任务下发成功返回的ID。
 
@@ -94,7 +94,7 @@ class AssociateKeypairResponse(SdkResponse):
 
     @property
     def server_id(self):
-        """Gets the server_id of this AssociateKeypairResponse.
+        r"""Gets the server_id of this AssociateKeypairResponse.
 
         绑定的虚拟机id。
 
@@ -105,7 +105,7 @@ class AssociateKeypairResponse(SdkResponse):
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this AssociateKeypairResponse.
+        r"""Sets the server_id of this AssociateKeypairResponse.
 
         绑定的虚拟机id。
 
@@ -116,7 +116,7 @@ class AssociateKeypairResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AssociateKeypairResponse.
+        r"""Gets the status of this AssociateKeypairResponse.
 
         任务下发的状态。SUCCESS或FAILED。
 
@@ -127,7 +127,7 @@ class AssociateKeypairResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AssociateKeypairResponse.
+        r"""Sets the status of this AssociateKeypairResponse.
 
         任务下发的状态。SUCCESS或FAILED。
 
@@ -138,7 +138,7 @@ class AssociateKeypairResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this AssociateKeypairResponse.
+        r"""Gets the error_code of this AssociateKeypairResponse.
 
         任务下发失败返回的错误码。
 
@@ -149,7 +149,7 @@ class AssociateKeypairResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AssociateKeypairResponse.
+        r"""Sets the error_code of this AssociateKeypairResponse.
 
         任务下发失败返回的错误码。
 
@@ -160,7 +160,7 @@ class AssociateKeypairResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this AssociateKeypairResponse.
+        r"""Gets the error_msg of this AssociateKeypairResponse.
 
         任务下发失败返回的错误信息。
 
@@ -171,7 +171,7 @@ class AssociateKeypairResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this AssociateKeypairResponse.
+        r"""Sets the error_msg of this AssociateKeypairResponse.
 
         任务下发失败返回的错误信息。
 

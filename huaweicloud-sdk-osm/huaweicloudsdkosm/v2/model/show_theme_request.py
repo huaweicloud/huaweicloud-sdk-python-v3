@@ -35,7 +35,7 @@ class ShowThemeRequest:
     }
 
     def __init__(self, x_service_key=None, x_site=None, x_language=None, product_type_id=None, product_type_name=None, product_type_short_name=None):
-        """ShowThemeRequest
+        r"""ShowThemeRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ShowThemeRequest:
 
     @property
     def x_service_key(self):
-        """Gets the x_service_key of this ShowThemeRequest.
+        r"""Gets the x_service_key of this ShowThemeRequest.
 
         调用智能客服服务标志。
 
@@ -88,7 +88,7 @@ class ShowThemeRequest:
 
     @x_service_key.setter
     def x_service_key(self, x_service_key):
-        """Sets the x_service_key of this ShowThemeRequest.
+        r"""Sets the x_service_key of this ShowThemeRequest.
 
         调用智能客服服务标志。
 
@@ -99,7 +99,7 @@ class ShowThemeRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ShowThemeRequest.
+        r"""Gets the x_site of this ShowThemeRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -110,7 +110,7 @@ class ShowThemeRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ShowThemeRequest.
+        r"""Sets the x_site of this ShowThemeRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -121,7 +121,7 @@ class ShowThemeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowThemeRequest.
+        r"""Gets the x_language of this ShowThemeRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -132,7 +132,7 @@ class ShowThemeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowThemeRequest.
+        r"""Sets the x_language of this ShowThemeRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -143,7 +143,7 @@ class ShowThemeRequest:
 
     @property
     def product_type_id(self):
-        """Gets the product_type_id of this ShowThemeRequest.
+        r"""Gets the product_type_id of this ShowThemeRequest.
 
         产品类型Id
 
@@ -154,7 +154,7 @@ class ShowThemeRequest:
 
     @product_type_id.setter
     def product_type_id(self, product_type_id):
-        """Sets the product_type_id of this ShowThemeRequest.
+        r"""Sets the product_type_id of this ShowThemeRequest.
 
         产品类型Id
 
@@ -165,7 +165,7 @@ class ShowThemeRequest:
 
     @property
     def product_type_name(self):
-        """Gets the product_type_name of this ShowThemeRequest.
+        r"""Gets the product_type_name of this ShowThemeRequest.
 
         产品类型名称
 
@@ -176,7 +176,7 @@ class ShowThemeRequest:
 
     @product_type_name.setter
     def product_type_name(self, product_type_name):
-        """Sets the product_type_name of this ShowThemeRequest.
+        r"""Sets the product_type_name of this ShowThemeRequest.
 
         产品类型名称
 
@@ -187,7 +187,7 @@ class ShowThemeRequest:
 
     @property
     def product_type_short_name(self):
-        """Gets the product_type_short_name of this ShowThemeRequest.
+        r"""Gets the product_type_short_name of this ShowThemeRequest.
 
         产品类型缩写
 
@@ -198,7 +198,7 @@ class ShowThemeRequest:
 
     @product_type_short_name.setter
     def product_type_short_name(self, product_type_short_name):
-        """Sets the product_type_short_name of this ShowThemeRequest.
+        r"""Sets the product_type_short_name of this ShowThemeRequest.
 
         产品类型缩写
 

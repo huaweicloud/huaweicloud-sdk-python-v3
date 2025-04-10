@@ -31,7 +31,7 @@ class CustomFieldVo:
     }
 
     def __init__(self, type=None, value=None, custom_field_param=None, user_name=None):
-        """CustomFieldVo
+        r"""CustomFieldVo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CustomFieldVo:
 
     @property
     def type(self):
-        """Gets the type of this CustomFieldVo.
+        r"""Gets the type of this CustomFieldVo.
 
         字段类型（单行文本text、多行文本textArea、单选框radio、多选框checkBox、日期date、数字number、单选用户user）
 
@@ -75,7 +75,7 @@ class CustomFieldVo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CustomFieldVo.
+        r"""Sets the type of this CustomFieldVo.
 
         字段类型（单行文本text、多行文本textArea、单选框radio、多选框checkBox、日期date、数字number、单选用户user）
 
@@ -86,7 +86,7 @@ class CustomFieldVo:
 
     @property
     def value(self):
-        """Gets the value of this CustomFieldVo.
+        r"""Gets the value of this CustomFieldVo.
 
         测试用例自定义字段值
 
@@ -97,7 +97,7 @@ class CustomFieldVo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CustomFieldVo.
+        r"""Sets the value of this CustomFieldVo.
 
         测试用例自定义字段值
 
@@ -108,7 +108,7 @@ class CustomFieldVo:
 
     @property
     def custom_field_param(self):
-        """Gets the custom_field_param of this CustomFieldVo.
+        r"""Gets the custom_field_param of this CustomFieldVo.
 
         项目用例自定义字段入参或者返回参数名称
 
@@ -119,7 +119,7 @@ class CustomFieldVo:
 
     @custom_field_param.setter
     def custom_field_param(self, custom_field_param):
-        """Sets the custom_field_param of this CustomFieldVo.
+        r"""Sets the custom_field_param of this CustomFieldVo.
 
         项目用例自定义字段入参或者返回参数名称
 
@@ -130,7 +130,7 @@ class CustomFieldVo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CustomFieldVo.
+        r"""Gets the user_name of this CustomFieldVo.
 
         user类型测试用例自定义字段对应用户名，其它类型字段不返回
 
@@ -141,7 +141,7 @@ class CustomFieldVo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CustomFieldVo.
+        r"""Sets the user_name of this CustomFieldVo.
 
         user类型测试用例自定义字段对应用户名，其它类型字段不返回
 

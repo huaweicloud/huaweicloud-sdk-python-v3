@@ -37,7 +37,7 @@ class InstanceNodeDTO:
     }
 
     def __init__(self, id=None, name=None, private_ip=None, status=None, create_user=None, create_time=None, gateway_version=None):
-        """InstanceNodeDTO
+        r"""InstanceNodeDTO
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class InstanceNodeDTO:
 
     @property
     def id(self):
-        """Gets the id of this InstanceNodeDTO.
+        r"""Gets the id of this InstanceNodeDTO.
 
         节点ID。
 
@@ -96,7 +96,7 @@ class InstanceNodeDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstanceNodeDTO.
+        r"""Sets the id of this InstanceNodeDTO.
 
         节点ID。
 
@@ -107,7 +107,7 @@ class InstanceNodeDTO:
 
     @property
     def name(self):
-        """Gets the name of this InstanceNodeDTO.
+        r"""Gets the name of this InstanceNodeDTO.
 
         节点名称。
 
@@ -118,7 +118,7 @@ class InstanceNodeDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceNodeDTO.
+        r"""Sets the name of this InstanceNodeDTO.
 
         节点名称。
 
@@ -129,7 +129,7 @@ class InstanceNodeDTO:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this InstanceNodeDTO.
+        r"""Gets the private_ip of this InstanceNodeDTO.
 
         节点IP地址。
 
@@ -140,7 +140,7 @@ class InstanceNodeDTO:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this InstanceNodeDTO.
+        r"""Sets the private_ip of this InstanceNodeDTO.
 
         节点IP地址。
 
@@ -151,7 +151,7 @@ class InstanceNodeDTO:
 
     @property
     def status(self):
-        """Gets the status of this InstanceNodeDTO.
+        r"""Gets the status of this InstanceNodeDTO.
 
         节点状态。
 
@@ -162,7 +162,7 @@ class InstanceNodeDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceNodeDTO.
+        r"""Sets the status of this InstanceNodeDTO.
 
         节点状态。
 
@@ -173,7 +173,7 @@ class InstanceNodeDTO:
 
     @property
     def create_user(self):
-        """Gets the create_user of this InstanceNodeDTO.
+        r"""Gets the create_user of this InstanceNodeDTO.
 
         节点创建人。
 
@@ -184,7 +184,7 @@ class InstanceNodeDTO:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this InstanceNodeDTO.
+        r"""Sets the create_user of this InstanceNodeDTO.
 
         节点创建人。
 
@@ -195,7 +195,7 @@ class InstanceNodeDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this InstanceNodeDTO.
+        r"""Gets the create_time of this InstanceNodeDTO.
 
         节点创建时间。
 
@@ -206,7 +206,7 @@ class InstanceNodeDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this InstanceNodeDTO.
+        r"""Sets the create_time of this InstanceNodeDTO.
 
         节点创建时间。
 
@@ -217,7 +217,7 @@ class InstanceNodeDTO:
 
     @property
     def gateway_version(self):
-        """Gets the gateway_version of this InstanceNodeDTO.
+        r"""Gets the gateway_version of this InstanceNodeDTO.
 
         节点版本号。
 
@@ -228,7 +228,7 @@ class InstanceNodeDTO:
 
     @gateway_version.setter
     def gateway_version(self, gateway_version):
-        """Sets the gateway_version of this InstanceNodeDTO.
+        r"""Sets the gateway_version of this InstanceNodeDTO.
 
         节点版本号。
 

@@ -26,7 +26,7 @@ class CreateUrlAuthchainResponse(SdkResponse):
     }
 
     def __init__(self, keychain=None):
-        """CreateUrlAuthchainResponse
+        r"""CreateUrlAuthchainResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateUrlAuthchainResponse(SdkResponse):
 
     @property
     def keychain(self):
-        """Gets the keychain of this CreateUrlAuthchainResponse.
+        r"""Gets the keychain of this CreateUrlAuthchainResponse.
 
         生成的鉴权串列表
 
@@ -55,7 +55,7 @@ class CreateUrlAuthchainResponse(SdkResponse):
 
     @keychain.setter
     def keychain(self, keychain):
-        """Sets the keychain of this CreateUrlAuthchainResponse.
+        r"""Sets the keychain of this CreateUrlAuthchainResponse.
 
         生成的鉴权串列表
 

@@ -49,7 +49,7 @@ class NextflowJobListDto:
     }
 
     def __init__(self, id=None, name=None, description=None, labels=None, status=None, has_ignore_failed_tasks=None, create_time=None, finish_time=None, failed_message=None, failed_reason=None, user_name=None, workflow_name=None, workflow_id=None):
-        """NextflowJobListDto
+        r"""NextflowJobListDto
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class NextflowJobListDto:
 
     @property
     def id(self):
-        """Gets the id of this NextflowJobListDto.
+        r"""Gets the id of this NextflowJobListDto.
 
         作业id
 
@@ -138,7 +138,7 @@ class NextflowJobListDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NextflowJobListDto.
+        r"""Sets the id of this NextflowJobListDto.
 
         作业id
 
@@ -149,7 +149,7 @@ class NextflowJobListDto:
 
     @property
     def name(self):
-        """Gets the name of this NextflowJobListDto.
+        r"""Gets the name of this NextflowJobListDto.
 
         作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -160,7 +160,7 @@ class NextflowJobListDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NextflowJobListDto.
+        r"""Sets the name of this NextflowJobListDto.
 
         作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -171,7 +171,7 @@ class NextflowJobListDto:
 
     @property
     def description(self):
-        """Gets the description of this NextflowJobListDto.
+        r"""Gets the description of this NextflowJobListDto.
 
         作业的描述,取值范围：输入字符最大长度为255
 
@@ -182,7 +182,7 @@ class NextflowJobListDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NextflowJobListDto.
+        r"""Sets the description of this NextflowJobListDto.
 
         作业的描述,取值范围：输入字符最大长度为255
 
@@ -193,7 +193,7 @@ class NextflowJobListDto:
 
     @property
     def labels(self):
-        """Gets the labels of this NextflowJobListDto.
+        r"""Gets the labels of this NextflowJobListDto.
 
         作业标签
 
@@ -204,7 +204,7 @@ class NextflowJobListDto:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this NextflowJobListDto.
+        r"""Sets the labels of this NextflowJobListDto.
 
         作业标签
 
@@ -215,7 +215,7 @@ class NextflowJobListDto:
 
     @property
     def status(self):
-        """Gets the status of this NextflowJobListDto.
+        r"""Gets the status of this NextflowJobListDto.
 
         作业状态
 
@@ -226,7 +226,7 @@ class NextflowJobListDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NextflowJobListDto.
+        r"""Sets the status of this NextflowJobListDto.
 
         作业状态
 
@@ -237,7 +237,7 @@ class NextflowJobListDto:
 
     @property
     def has_ignore_failed_tasks(self):
-        """Gets the has_ignore_failed_tasks of this NextflowJobListDto.
+        r"""Gets the has_ignore_failed_tasks of this NextflowJobListDto.
 
         是否包含已被忽略的失败tasks
 
@@ -248,7 +248,7 @@ class NextflowJobListDto:
 
     @has_ignore_failed_tasks.setter
     def has_ignore_failed_tasks(self, has_ignore_failed_tasks):
-        """Sets the has_ignore_failed_tasks of this NextflowJobListDto.
+        r"""Sets the has_ignore_failed_tasks of this NextflowJobListDto.
 
         是否包含已被忽略的失败tasks
 
@@ -259,7 +259,7 @@ class NextflowJobListDto:
 
     @property
     def create_time(self):
-        """Gets the create_time of this NextflowJobListDto.
+        r"""Gets the create_time of this NextflowJobListDto.
 
         作业创建时间
 
@@ -270,7 +270,7 @@ class NextflowJobListDto:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this NextflowJobListDto.
+        r"""Sets the create_time of this NextflowJobListDto.
 
         作业创建时间
 
@@ -281,7 +281,7 @@ class NextflowJobListDto:
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this NextflowJobListDto.
+        r"""Gets the finish_time of this NextflowJobListDto.
 
         作业结束时间
 
@@ -292,7 +292,7 @@ class NextflowJobListDto:
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this NextflowJobListDto.
+        r"""Sets the finish_time of this NextflowJobListDto.
 
         作业结束时间
 
@@ -303,7 +303,7 @@ class NextflowJobListDto:
 
     @property
     def failed_message(self):
-        """Gets the failed_message of this NextflowJobListDto.
+        r"""Gets the failed_message of this NextflowJobListDto.
 
         失败提示，当作业执行失败时会返回
 
@@ -314,7 +314,7 @@ class NextflowJobListDto:
 
     @failed_message.setter
     def failed_message(self, failed_message):
-        """Sets the failed_message of this NextflowJobListDto.
+        r"""Sets the failed_message of this NextflowJobListDto.
 
         失败提示，当作业执行失败时会返回
 
@@ -325,7 +325,7 @@ class NextflowJobListDto:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this NextflowJobListDto.
+        r"""Gets the failed_reason of this NextflowJobListDto.
 
         失败原因，当作业执行失败时会返回
 
@@ -336,7 +336,7 @@ class NextflowJobListDto:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this NextflowJobListDto.
+        r"""Sets the failed_reason of this NextflowJobListDto.
 
         失败原因，当作业执行失败时会返回
 
@@ -347,7 +347,7 @@ class NextflowJobListDto:
 
     @property
     def user_name(self):
-        """Gets the user_name of this NextflowJobListDto.
+        r"""Gets the user_name of this NextflowJobListDto.
 
         创建任务的用户名称
 
@@ -358,7 +358,7 @@ class NextflowJobListDto:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this NextflowJobListDto.
+        r"""Sets the user_name of this NextflowJobListDto.
 
         创建任务的用户名称
 
@@ -369,7 +369,7 @@ class NextflowJobListDto:
 
     @property
     def workflow_name(self):
-        """Gets the workflow_name of this NextflowJobListDto.
+        r"""Gets the workflow_name of this NextflowJobListDto.
 
         流程名称
 
@@ -380,7 +380,7 @@ class NextflowJobListDto:
 
     @workflow_name.setter
     def workflow_name(self, workflow_name):
-        """Sets the workflow_name of this NextflowJobListDto.
+        r"""Sets the workflow_name of this NextflowJobListDto.
 
         流程名称
 
@@ -391,7 +391,7 @@ class NextflowJobListDto:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this NextflowJobListDto.
+        r"""Gets the workflow_id of this NextflowJobListDto.
 
         流程id
 
@@ -402,7 +402,7 @@ class NextflowJobListDto:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this NextflowJobListDto.
+        r"""Sets the workflow_id of this NextflowJobListDto.
 
         流程id
 

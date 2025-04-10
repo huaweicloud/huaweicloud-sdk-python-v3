@@ -29,7 +29,7 @@ class TableQaAnswers:
     }
 
     def __init__(self, answer=None, score=None, table_id=None):
-        """TableQaAnswers
+        r"""TableQaAnswers
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class TableQaAnswers:
 
     @property
     def answer(self):
-        """Gets the answer of this TableQaAnswers.
+        r"""Gets the answer of this TableQaAnswers.
 
         表格问答答案。
 
@@ -65,7 +65,7 @@ class TableQaAnswers:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this TableQaAnswers.
+        r"""Sets the answer of this TableQaAnswers.
 
         表格问答答案。
 
@@ -76,7 +76,7 @@ class TableQaAnswers:
 
     @property
     def score(self):
-        """Gets the score of this TableQaAnswers.
+        r"""Gets the score of this TableQaAnswers.
 
         评分。
 
@@ -87,7 +87,7 @@ class TableQaAnswers:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this TableQaAnswers.
+        r"""Sets the score of this TableQaAnswers.
 
         评分。
 
@@ -98,7 +98,7 @@ class TableQaAnswers:
 
     @property
     def table_id(self):
-        """Gets the table_id of this TableQaAnswers.
+        r"""Gets the table_id of this TableQaAnswers.
 
         表格ID。
 
@@ -109,7 +109,7 @@ class TableQaAnswers:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this TableQaAnswers.
+        r"""Sets the table_id of this TableQaAnswers.
 
         表格ID。
 

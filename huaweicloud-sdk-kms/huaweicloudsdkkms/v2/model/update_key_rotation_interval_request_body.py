@@ -29,7 +29,7 @@ class UpdateKeyRotationIntervalRequestBody:
     }
 
     def __init__(self, key_id=None, rotation_interval=None, sequence=None):
-        """UpdateKeyRotationIntervalRequestBody
+        r"""UpdateKeyRotationIntervalRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateKeyRotationIntervalRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this UpdateKeyRotationIntervalRequestBody.
+        r"""Gets the key_id of this UpdateKeyRotationIntervalRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -66,7 +66,7 @@ class UpdateKeyRotationIntervalRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this UpdateKeyRotationIntervalRequestBody.
+        r"""Sets the key_id of this UpdateKeyRotationIntervalRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -77,7 +77,7 @@ class UpdateKeyRotationIntervalRequestBody:
 
     @property
     def rotation_interval(self):
-        """Gets the rotation_interval of this UpdateKeyRotationIntervalRequestBody.
+        r"""Gets the rotation_interval of this UpdateKeyRotationIntervalRequestBody.
 
         轮换周期，取值范围为30~365的整数。 周期范围设置根据密钥使用频率进行，若密钥使用频率高，建议设置为短周期；反之，则设置为长周期。
 
@@ -88,7 +88,7 @@ class UpdateKeyRotationIntervalRequestBody:
 
     @rotation_interval.setter
     def rotation_interval(self, rotation_interval):
-        """Sets the rotation_interval of this UpdateKeyRotationIntervalRequestBody.
+        r"""Sets the rotation_interval of this UpdateKeyRotationIntervalRequestBody.
 
         轮换周期，取值范围为30~365的整数。 周期范围设置根据密钥使用频率进行，若密钥使用频率高，建议设置为短周期；反之，则设置为长周期。
 
@@ -99,7 +99,7 @@ class UpdateKeyRotationIntervalRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this UpdateKeyRotationIntervalRequestBody.
+        r"""Gets the sequence of this UpdateKeyRotationIntervalRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -110,7 +110,7 @@ class UpdateKeyRotationIntervalRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this UpdateKeyRotationIntervalRequestBody.
+        r"""Sets the sequence of this UpdateKeyRotationIntervalRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

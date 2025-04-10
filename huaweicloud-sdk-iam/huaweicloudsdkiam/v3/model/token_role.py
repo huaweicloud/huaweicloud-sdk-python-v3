@@ -27,7 +27,7 @@ class TokenRole:
     }
 
     def __init__(self, name=None, id=None):
-        """TokenRole
+        r"""TokenRole
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TokenRole:
 
     @property
     def name(self):
-        """Gets the name of this TokenRole.
+        r"""Gets the name of this TokenRole.
 
         权限名称。
 
@@ -59,7 +59,7 @@ class TokenRole:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TokenRole.
+        r"""Sets the name of this TokenRole.
 
         权限名称。
 
@@ -70,7 +70,7 @@ class TokenRole:
 
     @property
     def id(self):
-        """Gets the id of this TokenRole.
+        r"""Gets the id of this TokenRole.
 
         权限ID。默认显示为0，非真实权限ID。
 
@@ -81,7 +81,7 @@ class TokenRole:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TokenRole.
+        r"""Sets the id of this TokenRole.
 
         权限ID。默认显示为0，非真实权限ID。
 

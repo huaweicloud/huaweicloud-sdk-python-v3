@@ -27,7 +27,7 @@ class PersistObjectIdsDecryptDTO:
     }
 
     def __init__(self, decrypt=None, ids=None):
-        """PersistObjectIdsDecryptDTO
+        r"""PersistObjectIdsDecryptDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PersistObjectIdsDecryptDTO:
 
     @property
     def decrypt(self):
-        """Gets the decrypt of this PersistObjectIdsDecryptDTO.
+        r"""Gets the decrypt of this PersistObjectIdsDecryptDTO.
 
         **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
@@ -60,7 +60,7 @@ class PersistObjectIdsDecryptDTO:
 
     @decrypt.setter
     def decrypt(self, decrypt):
-        """Sets the decrypt of this PersistObjectIdsDecryptDTO.
+        r"""Sets the decrypt of this PersistObjectIdsDecryptDTO.
 
         **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
@@ -71,7 +71,7 @@ class PersistObjectIdsDecryptDTO:
 
     @property
     def ids(self):
-        """Gets the ids of this PersistObjectIdsDecryptDTO.
+        r"""Gets the ids of this PersistObjectIdsDecryptDTO.
 
         **参数解释：**  ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -82,7 +82,7 @@ class PersistObjectIdsDecryptDTO:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this PersistObjectIdsDecryptDTO.
+        r"""Sets the ids of this PersistObjectIdsDecryptDTO.
 
         **参数解释：**  ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

@@ -27,7 +27,7 @@ class ClusterLinks:
     }
 
     def __init__(self, rel=None, href=None):
-        """ClusterLinks
+        r"""ClusterLinks
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ClusterLinks:
 
     @property
     def rel(self):
-        """Gets the rel of this ClusterLinks.
+        r"""Gets the rel of this ClusterLinks.
 
         关系
 
@@ -61,7 +61,7 @@ class ClusterLinks:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this ClusterLinks.
+        r"""Sets the rel of this ClusterLinks.
 
         关系
 
@@ -72,7 +72,7 @@ class ClusterLinks:
 
     @property
     def href(self):
-        """Gets the href of this ClusterLinks.
+        r"""Gets the href of this ClusterLinks.
 
         链接地址
 
@@ -83,7 +83,7 @@ class ClusterLinks:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this ClusterLinks.
+        r"""Sets the href of this ClusterLinks.
 
         链接地址
 

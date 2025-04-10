@@ -28,7 +28,7 @@ class ListCustomerOnDemandResourcesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ListCustomerOnDemandResourcesResponse
+        r"""ListCustomerOnDemandResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCustomerOnDemandResourcesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListCustomerOnDemandResourcesResponse.
+        r"""Gets the resources of this ListCustomerOnDemandResourcesResponse.
 
         客户资源列表。 具体参见表2。
 
@@ -62,7 +62,7 @@ class ListCustomerOnDemandResourcesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListCustomerOnDemandResourcesResponse.
+        r"""Sets the resources of this ListCustomerOnDemandResourcesResponse.
 
         客户资源列表。 具体参见表2。
 
@@ -73,7 +73,7 @@ class ListCustomerOnDemandResourcesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListCustomerOnDemandResourcesResponse.
+        r"""Gets the total_count of this ListCustomerOnDemandResourcesResponse.
 
         查询总数。
 
@@ -84,7 +84,7 @@ class ListCustomerOnDemandResourcesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListCustomerOnDemandResourcesResponse.
+        r"""Sets the total_count of this ListCustomerOnDemandResourcesResponse.
 
         查询总数。
 

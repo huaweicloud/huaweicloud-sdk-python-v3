@@ -24,7 +24,7 @@ class RestartCbhInstanceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RestartCbhInstanceResponse
+        r"""RestartCbhInstanceResponse
 
         The model defined in huaweicloud sdk
 

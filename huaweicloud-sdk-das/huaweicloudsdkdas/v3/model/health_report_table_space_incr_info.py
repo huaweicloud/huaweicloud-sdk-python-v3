@@ -33,7 +33,7 @@ class HealthReportTableSpaceIncrInfo:
     }
 
     def __init__(self, database=None, table=None, increment=None, analyze_success=None, error_message=None):
-        """HealthReportTableSpaceIncrInfo
+        r"""HealthReportTableSpaceIncrInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class HealthReportTableSpaceIncrInfo:
 
     @property
     def database(self):
-        """Gets the database of this HealthReportTableSpaceIncrInfo.
+        r"""Gets the database of this HealthReportTableSpaceIncrInfo.
 
         数据库名。
 
@@ -77,7 +77,7 @@ class HealthReportTableSpaceIncrInfo:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this HealthReportTableSpaceIncrInfo.
+        r"""Sets the database of this HealthReportTableSpaceIncrInfo.
 
         数据库名。
 
@@ -88,7 +88,7 @@ class HealthReportTableSpaceIncrInfo:
 
     @property
     def table(self):
-        """Gets the table of this HealthReportTableSpaceIncrInfo.
+        r"""Gets the table of this HealthReportTableSpaceIncrInfo.
 
         表名。
 
@@ -99,7 +99,7 @@ class HealthReportTableSpaceIncrInfo:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this HealthReportTableSpaceIncrInfo.
+        r"""Sets the table of this HealthReportTableSpaceIncrInfo.
 
         表名。
 
@@ -110,7 +110,7 @@ class HealthReportTableSpaceIncrInfo:
 
     @property
     def increment(self):
-        """Gets the increment of this HealthReportTableSpaceIncrInfo.
+        r"""Gets the increment of this HealthReportTableSpaceIncrInfo.
 
         增长量。
 
@@ -121,7 +121,7 @@ class HealthReportTableSpaceIncrInfo:
 
     @increment.setter
     def increment(self, increment):
-        """Sets the increment of this HealthReportTableSpaceIncrInfo.
+        r"""Sets the increment of this HealthReportTableSpaceIncrInfo.
 
         增长量。
 
@@ -132,7 +132,7 @@ class HealthReportTableSpaceIncrInfo:
 
     @property
     def analyze_success(self):
-        """Gets the analyze_success of this HealthReportTableSpaceIncrInfo.
+        r"""Gets the analyze_success of this HealthReportTableSpaceIncrInfo.
 
         统计分析是否成功。
 
@@ -143,7 +143,7 @@ class HealthReportTableSpaceIncrInfo:
 
     @analyze_success.setter
     def analyze_success(self, analyze_success):
-        """Sets the analyze_success of this HealthReportTableSpaceIncrInfo.
+        r"""Sets the analyze_success of this HealthReportTableSpaceIncrInfo.
 
         统计分析是否成功。
 
@@ -154,7 +154,7 @@ class HealthReportTableSpaceIncrInfo:
 
     @property
     def error_message(self):
-        """Gets the error_message of this HealthReportTableSpaceIncrInfo.
+        r"""Gets the error_message of this HealthReportTableSpaceIncrInfo.
 
         错误信息。
 
@@ -165,7 +165,7 @@ class HealthReportTableSpaceIncrInfo:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this HealthReportTableSpaceIncrInfo.
+        r"""Sets the error_message of this HealthReportTableSpaceIncrInfo.
 
         错误信息。
 

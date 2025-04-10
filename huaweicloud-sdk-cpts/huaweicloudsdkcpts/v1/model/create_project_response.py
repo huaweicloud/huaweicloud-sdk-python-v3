@@ -30,7 +30,7 @@ class CreateProjectResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, project_id=None):
-        """CreateProjectResponse
+        r"""CreateProjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateProjectResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateProjectResponse.
+        r"""Gets the code of this CreateProjectResponse.
 
         响应码
 
@@ -69,7 +69,7 @@ class CreateProjectResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateProjectResponse.
+        r"""Sets the code of this CreateProjectResponse.
 
         响应码
 
@@ -80,7 +80,7 @@ class CreateProjectResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateProjectResponse.
+        r"""Gets the message of this CreateProjectResponse.
 
         响应消息
 
@@ -91,7 +91,7 @@ class CreateProjectResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateProjectResponse.
+        r"""Sets the message of this CreateProjectResponse.
 
         响应消息
 
@@ -102,7 +102,7 @@ class CreateProjectResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateProjectResponse.
+        r"""Gets the project_id of this CreateProjectResponse.
 
         项目ID
 
@@ -113,7 +113,7 @@ class CreateProjectResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateProjectResponse.
+        r"""Sets the project_id of this CreateProjectResponse.
 
         项目ID
 

@@ -27,7 +27,7 @@ class ShowDeploymentRequest:
     }
 
     def __init__(self, deployment_id=None, ief_instance_id=None):
-        """ShowDeploymentRequest
+        r"""ShowDeploymentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowDeploymentRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this ShowDeploymentRequest.
+        r"""Gets the deployment_id of this ShowDeploymentRequest.
 
         应用部署ID
 
@@ -60,7 +60,7 @@ class ShowDeploymentRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this ShowDeploymentRequest.
+        r"""Sets the deployment_id of this ShowDeploymentRequest.
 
         应用部署ID
 
@@ -71,7 +71,7 @@ class ShowDeploymentRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ShowDeploymentRequest.
+        r"""Gets the ief_instance_id of this ShowDeploymentRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -82,7 +82,7 @@ class ShowDeploymentRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ShowDeploymentRequest.
+        r"""Sets the ief_instance_id of this ShowDeploymentRequest.
 
         铂金版实例ID，专业版实例为空值
 

@@ -26,7 +26,7 @@ class ShowDomainResourceReportsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowDomainResourceReportsResponse
+        r"""ShowDomainResourceReportsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDomainResourceReportsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowDomainResourceReportsResponse.
+        r"""Gets the body of this ShowDomainResourceReportsResponse.
 
         统计数据
 
@@ -55,7 +55,7 @@ class ShowDomainResourceReportsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowDomainResourceReportsResponse.
+        r"""Sets the body of this ShowDomainResourceReportsResponse.
 
         统计数据
 

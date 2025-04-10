@@ -35,7 +35,7 @@ class TrendQueryDataResp:
     }
 
     def __init__(self, query_time=None, indicator_name=None, object_id=None, unit=None, sub_object_id=None, data_points=None):
-        """TrendQueryDataResp
+        r"""TrendQueryDataResp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class TrendQueryDataResp:
 
     @property
     def query_time(self):
-        """Gets the query_time of this TrendQueryDataResp.
+        r"""Gets the query_time of this TrendQueryDataResp.
 
         查询时间。
 
@@ -89,7 +89,7 @@ class TrendQueryDataResp:
 
     @query_time.setter
     def query_time(self, query_time):
-        """Sets the query_time of this TrendQueryDataResp.
+        r"""Sets the query_time of this TrendQueryDataResp.
 
         查询时间。
 
@@ -100,7 +100,7 @@ class TrendQueryDataResp:
 
     @property
     def indicator_name(self):
-        """Gets the indicator_name of this TrendQueryDataResp.
+        r"""Gets the indicator_name of this TrendQueryDataResp.
 
         监控指标名称。
 
@@ -111,7 +111,7 @@ class TrendQueryDataResp:
 
     @indicator_name.setter
     def indicator_name(self, indicator_name):
-        """Sets the indicator_name of this TrendQueryDataResp.
+        r"""Sets the indicator_name of this TrendQueryDataResp.
 
         监控指标名称。
 
@@ -122,7 +122,7 @@ class TrendQueryDataResp:
 
     @property
     def object_id(self):
-        """Gets the object_id of this TrendQueryDataResp.
+        r"""Gets the object_id of this TrendQueryDataResp.
 
         监控对象id。
 
@@ -133,7 +133,7 @@ class TrendQueryDataResp:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this TrendQueryDataResp.
+        r"""Sets the object_id of this TrendQueryDataResp.
 
         监控对象id。
 
@@ -144,7 +144,7 @@ class TrendQueryDataResp:
 
     @property
     def unit(self):
-        """Gets the unit of this TrendQueryDataResp.
+        r"""Gets the unit of this TrendQueryDataResp.
 
         单位。
 
@@ -155,7 +155,7 @@ class TrendQueryDataResp:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this TrendQueryDataResp.
+        r"""Sets the unit of this TrendQueryDataResp.
 
         单位。
 
@@ -166,7 +166,7 @@ class TrendQueryDataResp:
 
     @property
     def sub_object_id(self):
-        """Gets the sub_object_id of this TrendQueryDataResp.
+        r"""Gets the sub_object_id of this TrendQueryDataResp.
 
         次级监控id。
 
@@ -177,7 +177,7 @@ class TrendQueryDataResp:
 
     @sub_object_id.setter
     def sub_object_id(self, sub_object_id):
-        """Sets the sub_object_id of this TrendQueryDataResp.
+        r"""Sets the sub_object_id of this TrendQueryDataResp.
 
         次级监控id。
 
@@ -188,7 +188,7 @@ class TrendQueryDataResp:
 
     @property
     def data_points(self):
-        """Gets the data_points of this TrendQueryDataResp.
+        r"""Gets the data_points of this TrendQueryDataResp.
 
         节点数据。
 
@@ -199,7 +199,7 @@ class TrendQueryDataResp:
 
     @data_points.setter
     def data_points(self, data_points):
-        """Sets the data_points of this TrendQueryDataResp.
+        r"""Sets the data_points of this TrendQueryDataResp.
 
         节点数据。
 

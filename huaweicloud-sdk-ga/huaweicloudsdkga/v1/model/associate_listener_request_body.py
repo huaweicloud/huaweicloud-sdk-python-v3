@@ -27,7 +27,7 @@ class AssociateListenerRequestBody:
     }
 
     def __init__(self, listener_id=None, type=None):
-        """AssociateListenerRequestBody
+        r"""AssociateListenerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AssociateListenerRequestBody:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this AssociateListenerRequestBody.
+        r"""Gets the listener_id of this AssociateListenerRequestBody.
 
         监听器ID。
 
@@ -59,7 +59,7 @@ class AssociateListenerRequestBody:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this AssociateListenerRequestBody.
+        r"""Sets the listener_id of this AssociateListenerRequestBody.
 
         监听器ID。
 
@@ -70,7 +70,7 @@ class AssociateListenerRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this AssociateListenerRequestBody.
+        r"""Gets the type of this AssociateListenerRequestBody.
 
         :return: The type of this AssociateListenerRequestBody.
         :rtype: :class:`huaweicloudsdkga.v1.ListenerAccessControlType`
@@ -79,7 +79,7 @@ class AssociateListenerRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AssociateListenerRequestBody.
+        r"""Sets the type of this AssociateListenerRequestBody.
 
         :param type: The type of this AssociateListenerRequestBody.
         :type type: :class:`huaweicloudsdkga.v1.ListenerAccessControlType`

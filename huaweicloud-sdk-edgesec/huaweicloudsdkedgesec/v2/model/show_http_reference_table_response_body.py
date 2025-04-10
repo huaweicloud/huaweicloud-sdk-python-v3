@@ -37,7 +37,7 @@ class ShowHttpReferenceTableResponseBody:
     }
 
     def __init__(self, id=None, name=None, type=None, description=None, timestamp=None, values=None, producer=None):
-        """ShowHttpReferenceTableResponseBody
+        r"""ShowHttpReferenceTableResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ShowHttpReferenceTableResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this ShowHttpReferenceTableResponseBody.
+        r"""Gets the id of this ShowHttpReferenceTableResponseBody.
 
         引用表id
 
@@ -96,7 +96,7 @@ class ShowHttpReferenceTableResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowHttpReferenceTableResponseBody.
+        r"""Sets the id of this ShowHttpReferenceTableResponseBody.
 
         引用表id
 
@@ -107,7 +107,7 @@ class ShowHttpReferenceTableResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this ShowHttpReferenceTableResponseBody.
+        r"""Gets the name of this ShowHttpReferenceTableResponseBody.
 
         引用表名称
 
@@ -118,7 +118,7 @@ class ShowHttpReferenceTableResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowHttpReferenceTableResponseBody.
+        r"""Sets the name of this ShowHttpReferenceTableResponseBody.
 
         引用表名称
 
@@ -129,7 +129,7 @@ class ShowHttpReferenceTableResponseBody:
 
     @property
     def type(self):
-        """Gets the type of this ShowHttpReferenceTableResponseBody.
+        r"""Gets the type of this ShowHttpReferenceTableResponseBody.
 
         引用表类型
 
@@ -140,7 +140,7 @@ class ShowHttpReferenceTableResponseBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowHttpReferenceTableResponseBody.
+        r"""Sets the type of this ShowHttpReferenceTableResponseBody.
 
         引用表类型
 
@@ -151,7 +151,7 @@ class ShowHttpReferenceTableResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this ShowHttpReferenceTableResponseBody.
+        r"""Gets the description of this ShowHttpReferenceTableResponseBody.
 
         引用表描述
 
@@ -162,7 +162,7 @@ class ShowHttpReferenceTableResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowHttpReferenceTableResponseBody.
+        r"""Sets the description of this ShowHttpReferenceTableResponseBody.
 
         引用表描述
 
@@ -173,7 +173,7 @@ class ShowHttpReferenceTableResponseBody:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ShowHttpReferenceTableResponseBody.
+        r"""Gets the timestamp of this ShowHttpReferenceTableResponseBody.
 
         引用表时间戳
 
@@ -184,7 +184,7 @@ class ShowHttpReferenceTableResponseBody:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowHttpReferenceTableResponseBody.
+        r"""Sets the timestamp of this ShowHttpReferenceTableResponseBody.
 
         引用表时间戳
 
@@ -195,7 +195,7 @@ class ShowHttpReferenceTableResponseBody:
 
     @property
     def values(self):
-        """Gets the values of this ShowHttpReferenceTableResponseBody.
+        r"""Gets the values of this ShowHttpReferenceTableResponseBody.
 
         引用表的值
 
@@ -206,7 +206,7 @@ class ShowHttpReferenceTableResponseBody:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ShowHttpReferenceTableResponseBody.
+        r"""Sets the values of this ShowHttpReferenceTableResponseBody.
 
         引用表的值
 
@@ -217,7 +217,7 @@ class ShowHttpReferenceTableResponseBody:
 
     @property
     def producer(self):
-        """Gets the producer of this ShowHttpReferenceTableResponseBody.
+        r"""Gets the producer of this ShowHttpReferenceTableResponseBody.
 
         创建来源
 
@@ -228,7 +228,7 @@ class ShowHttpReferenceTableResponseBody:
 
     @producer.setter
     def producer(self, producer):
-        """Sets the producer of this ShowHttpReferenceTableResponseBody.
+        r"""Sets the producer of this ShowHttpReferenceTableResponseBody.
 
         创建来源
 

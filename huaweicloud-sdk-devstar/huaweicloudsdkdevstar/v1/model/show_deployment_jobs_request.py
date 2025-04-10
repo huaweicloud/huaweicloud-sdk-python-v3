@@ -29,7 +29,7 @@ class ShowDeploymentJobsRequest:
     }
 
     def __init__(self, x_language=None, application_id=None, environment_tag=None):
-        """ShowDeploymentJobsRequest
+        r"""ShowDeploymentJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowDeploymentJobsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowDeploymentJobsRequest.
+        r"""Gets the x_language of this ShowDeploymentJobsRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -66,7 +66,7 @@ class ShowDeploymentJobsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowDeploymentJobsRequest.
+        r"""Sets the x_language of this ShowDeploymentJobsRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -77,7 +77,7 @@ class ShowDeploymentJobsRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ShowDeploymentJobsRequest.
+        r"""Gets the application_id of this ShowDeploymentJobsRequest.
 
         应用id
 
@@ -88,7 +88,7 @@ class ShowDeploymentJobsRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ShowDeploymentJobsRequest.
+        r"""Sets the application_id of this ShowDeploymentJobsRequest.
 
         应用id
 
@@ -99,7 +99,7 @@ class ShowDeploymentJobsRequest:
 
     @property
     def environment_tag(self):
-        """Gets the environment_tag of this ShowDeploymentJobsRequest.
+        r"""Gets the environment_tag of this ShowDeploymentJobsRequest.
 
         环境标识，从 [应用详情接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DevStar&api=ShowApplication) 返回报文中的环境信息获取。
 
@@ -110,7 +110,7 @@ class ShowDeploymentJobsRequest:
 
     @environment_tag.setter
     def environment_tag(self, environment_tag):
-        """Sets the environment_tag of this ShowDeploymentJobsRequest.
+        r"""Sets the environment_tag of this ShowDeploymentJobsRequest.
 
         环境标识，从 [应用详情接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DevStar&api=ShowApplication) 返回报文中的环境信息获取。
 

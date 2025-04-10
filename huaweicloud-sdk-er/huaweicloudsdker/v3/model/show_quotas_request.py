@@ -31,7 +31,7 @@ class ShowQuotasRequest:
     }
 
     def __init__(self, type=None, er_id=None, route_table_id=None, vpc_id=None):
-        """ShowQuotasRequest
+        r"""ShowQuotasRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowQuotasRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowQuotasRequest.
+        r"""Gets the type of this ShowQuotasRequest.
 
         支持过滤的配额类型： - er_instance: 企业路由器实例的配额和使用量 - dc_attachment: 云专线网关连接的配额和使用量 - vpc_attachment: VPC连接的配额和使用量 - vpn_attachment: VPN网关连接的配额和使用量 - peering_attachment：云连接实例连接的配额和使用量 - can_attachment: 智能接入网关连接的配额和使用量 - route_table: 路由表的配额和使用量 - static_route: 静态路由的配额和使用量 - vpc_er: 每个vpc可以接入的企业路由器数量和当前使用量 - flow_log: 每个连接可以创建的流日志数量
 
@@ -75,7 +75,7 @@ class ShowQuotasRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowQuotasRequest.
+        r"""Sets the type of this ShowQuotasRequest.
 
         支持过滤的配额类型： - er_instance: 企业路由器实例的配额和使用量 - dc_attachment: 云专线网关连接的配额和使用量 - vpc_attachment: VPC连接的配额和使用量 - vpn_attachment: VPN网关连接的配额和使用量 - peering_attachment：云连接实例连接的配额和使用量 - can_attachment: 智能接入网关连接的配额和使用量 - route_table: 路由表的配额和使用量 - static_route: 静态路由的配额和使用量 - vpc_er: 每个vpc可以接入的企业路由器数量和当前使用量 - flow_log: 每个连接可以创建的流日志数量
 
@@ -86,7 +86,7 @@ class ShowQuotasRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this ShowQuotasRequest.
+        r"""Gets the er_id of this ShowQuotasRequest.
 
         :return: The er_id of this ShowQuotasRequest.
         :rtype: list[str]
@@ -95,7 +95,7 @@ class ShowQuotasRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this ShowQuotasRequest.
+        r"""Sets the er_id of this ShowQuotasRequest.
 
         :param er_id: The er_id of this ShowQuotasRequest.
         :type er_id: list[str]
@@ -104,7 +104,7 @@ class ShowQuotasRequest:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this ShowQuotasRequest.
+        r"""Gets the route_table_id of this ShowQuotasRequest.
 
         :return: The route_table_id of this ShowQuotasRequest.
         :rtype: list[str]
@@ -113,7 +113,7 @@ class ShowQuotasRequest:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this ShowQuotasRequest.
+        r"""Sets the route_table_id of this ShowQuotasRequest.
 
         :param route_table_id: The route_table_id of this ShowQuotasRequest.
         :type route_table_id: list[str]
@@ -122,7 +122,7 @@ class ShowQuotasRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowQuotasRequest.
+        r"""Gets the vpc_id of this ShowQuotasRequest.
 
         :return: The vpc_id of this ShowQuotasRequest.
         :rtype: list[str]
@@ -131,7 +131,7 @@ class ShowQuotasRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowQuotasRequest.
+        r"""Sets the vpc_id of this ShowQuotasRequest.
 
         :param vpc_id: The vpc_id of this ShowQuotasRequest.
         :type vpc_id: list[str]

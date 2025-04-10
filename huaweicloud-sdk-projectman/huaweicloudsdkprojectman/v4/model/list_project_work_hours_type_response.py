@@ -28,7 +28,7 @@ class ListProjectWorkHoursTypeResponse(SdkResponse):
     }
 
     def __init__(self, work_hours_types=None, total=None):
-        """ListProjectWorkHoursTypeResponse
+        r"""ListProjectWorkHoursTypeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProjectWorkHoursTypeResponse(SdkResponse):
 
     @property
     def work_hours_types(self):
-        """Gets the work_hours_types of this ListProjectWorkHoursTypeResponse.
+        r"""Gets the work_hours_types of this ListProjectWorkHoursTypeResponse.
 
         工时类型列表
 
@@ -62,7 +62,7 @@ class ListProjectWorkHoursTypeResponse(SdkResponse):
 
     @work_hours_types.setter
     def work_hours_types(self, work_hours_types):
-        """Sets the work_hours_types of this ListProjectWorkHoursTypeResponse.
+        r"""Sets the work_hours_types of this ListProjectWorkHoursTypeResponse.
 
         工时类型列表
 
@@ -73,7 +73,7 @@ class ListProjectWorkHoursTypeResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListProjectWorkHoursTypeResponse.
+        r"""Gets the total of this ListProjectWorkHoursTypeResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListProjectWorkHoursTypeResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListProjectWorkHoursTypeResponse.
+        r"""Sets the total of this ListProjectWorkHoursTypeResponse.
 
         总数
 

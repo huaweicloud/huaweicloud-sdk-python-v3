@@ -31,7 +31,7 @@ class CreateImageSyncRepoRequestBody:
     }
 
     def __init__(self, remote_region_id=None, remote_namespace=None, sync_auto=None, override=None):
-        """CreateImageSyncRepoRequestBody
+        r"""CreateImageSyncRepoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateImageSyncRepoRequestBody:
 
     @property
     def remote_region_id(self):
-        """Gets the remote_region_id of this CreateImageSyncRepoRequestBody.
+        r"""Gets the remote_region_id of this CreateImageSyncRepoRequestBody.
 
         目标region ID。
 
@@ -73,7 +73,7 @@ class CreateImageSyncRepoRequestBody:
 
     @remote_region_id.setter
     def remote_region_id(self, remote_region_id):
-        """Sets the remote_region_id of this CreateImageSyncRepoRequestBody.
+        r"""Sets the remote_region_id of this CreateImageSyncRepoRequestBody.
 
         目标region ID。
 
@@ -84,7 +84,7 @@ class CreateImageSyncRepoRequestBody:
 
     @property
     def remote_namespace(self):
-        """Gets the remote_namespace of this CreateImageSyncRepoRequestBody.
+        r"""Gets the remote_namespace of this CreateImageSyncRepoRequestBody.
 
         目标组织
 
@@ -95,7 +95,7 @@ class CreateImageSyncRepoRequestBody:
 
     @remote_namespace.setter
     def remote_namespace(self, remote_namespace):
-        """Sets the remote_namespace of this CreateImageSyncRepoRequestBody.
+        r"""Sets the remote_namespace of this CreateImageSyncRepoRequestBody.
 
         目标组织
 
@@ -106,7 +106,7 @@ class CreateImageSyncRepoRequestBody:
 
     @property
     def sync_auto(self):
-        """Gets the sync_auto of this CreateImageSyncRepoRequestBody.
+        r"""Gets the sync_auto of this CreateImageSyncRepoRequestBody.
 
         自动同步，默认为false
 
@@ -117,7 +117,7 @@ class CreateImageSyncRepoRequestBody:
 
     @sync_auto.setter
     def sync_auto(self, sync_auto):
-        """Sets the sync_auto of this CreateImageSyncRepoRequestBody.
+        r"""Sets the sync_auto of this CreateImageSyncRepoRequestBody.
 
         自动同步，默认为false
 
@@ -128,7 +128,7 @@ class CreateImageSyncRepoRequestBody:
 
     @property
     def override(self):
-        """Gets the override of this CreateImageSyncRepoRequestBody.
+        r"""Gets the override of this CreateImageSyncRepoRequestBody.
 
         是否覆盖，默认为false
 
@@ -139,7 +139,7 @@ class CreateImageSyncRepoRequestBody:
 
     @override.setter
     def override(self, override):
-        """Sets the override of this CreateImageSyncRepoRequestBody.
+        r"""Sets the override of this CreateImageSyncRepoRequestBody.
 
         是否覆盖，默认为false
 

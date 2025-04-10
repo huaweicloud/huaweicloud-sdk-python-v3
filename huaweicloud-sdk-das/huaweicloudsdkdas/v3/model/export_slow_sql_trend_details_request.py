@@ -39,7 +39,7 @@ class ExportSlowSqlTrendDetailsRequest:
     }
 
     def __init__(self, instance_id=None, start_at=None, end_at=None, datastore_type=None, node_id=None, x_language=None, offset=None, limit=None):
-        """ExportSlowSqlTrendDetailsRequest
+        r"""ExportSlowSqlTrendDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExportSlowSqlTrendDetailsRequest.
+        r"""Gets the instance_id of this ExportSlowSqlTrendDetailsRequest.
 
         实例ID。
 
@@ -99,7 +99,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExportSlowSqlTrendDetailsRequest.
+        r"""Sets the instance_id of this ExportSlowSqlTrendDetailsRequest.
 
         实例ID。
 
@@ -110,7 +110,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @property
     def start_at(self):
-        """Gets the start_at of this ExportSlowSqlTrendDetailsRequest.
+        r"""Gets the start_at of this ExportSlowSqlTrendDetailsRequest.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -121,7 +121,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this ExportSlowSqlTrendDetailsRequest.
+        r"""Sets the start_at of this ExportSlowSqlTrendDetailsRequest.
 
         开始时间（Unix timestamp），单位：毫秒。
 
@@ -132,7 +132,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @property
     def end_at(self):
-        """Gets the end_at of this ExportSlowSqlTrendDetailsRequest.
+        r"""Gets the end_at of this ExportSlowSqlTrendDetailsRequest.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -143,7 +143,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this ExportSlowSqlTrendDetailsRequest.
+        r"""Sets the end_at of this ExportSlowSqlTrendDetailsRequest.
 
         结束时间（Unix timestamp），单位：毫秒。
 
@@ -154,7 +154,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ExportSlowSqlTrendDetailsRequest.
+        r"""Gets the datastore_type of this ExportSlowSqlTrendDetailsRequest.
 
         数据库类型。支持MySQL和GaussDB(for MySQL)。
 
@@ -165,7 +165,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ExportSlowSqlTrendDetailsRequest.
+        r"""Sets the datastore_type of this ExportSlowSqlTrendDetailsRequest.
 
         数据库类型。支持MySQL和GaussDB(for MySQL)。
 
@@ -176,7 +176,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ExportSlowSqlTrendDetailsRequest.
+        r"""Gets the node_id of this ExportSlowSqlTrendDetailsRequest.
 
         节点ID。
 
@@ -187,7 +187,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ExportSlowSqlTrendDetailsRequest.
+        r"""Sets the node_id of this ExportSlowSqlTrendDetailsRequest.
 
         节点ID。
 
@@ -198,7 +198,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ExportSlowSqlTrendDetailsRequest.
+        r"""Gets the x_language of this ExportSlowSqlTrendDetailsRequest.
 
         请求语言类型。
 
@@ -209,7 +209,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ExportSlowSqlTrendDetailsRequest.
+        r"""Sets the x_language of this ExportSlowSqlTrendDetailsRequest.
 
         请求语言类型。
 
@@ -220,7 +220,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ExportSlowSqlTrendDetailsRequest.
+        r"""Gets the offset of this ExportSlowSqlTrendDetailsRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -231,7 +231,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ExportSlowSqlTrendDetailsRequest.
+        r"""Sets the offset of this ExportSlowSqlTrendDetailsRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -242,7 +242,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ExportSlowSqlTrendDetailsRequest.
+        r"""Gets the limit of this ExportSlowSqlTrendDetailsRequest.
 
         每页记录数，默认为20，最大取值100。
 
@@ -253,7 +253,7 @@ class ExportSlowSqlTrendDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ExportSlowSqlTrendDetailsRequest.
+        r"""Sets the limit of this ExportSlowSqlTrendDetailsRequest.
 
         每页记录数，默认为20，最大取值100。
 

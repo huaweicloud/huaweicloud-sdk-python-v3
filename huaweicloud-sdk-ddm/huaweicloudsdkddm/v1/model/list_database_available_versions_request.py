@@ -25,7 +25,7 @@ class ListDatabaseAvailableVersionsRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ListDatabaseAvailableVersionsRequest
+        r"""ListDatabaseAvailableVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListDatabaseAvailableVersionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDatabaseAvailableVersionsRequest.
+        r"""Gets the instance_id of this ListDatabaseAvailableVersionsRequest.
 
         DDM实例ID。
 
@@ -53,7 +53,7 @@ class ListDatabaseAvailableVersionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDatabaseAvailableVersionsRequest.
+        r"""Sets the instance_id of this ListDatabaseAvailableVersionsRequest.
 
         DDM实例ID。
 

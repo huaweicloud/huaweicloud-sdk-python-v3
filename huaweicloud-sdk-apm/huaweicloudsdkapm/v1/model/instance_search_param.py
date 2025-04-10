@@ -35,7 +35,7 @@ class InstanceSearchParam:
     }
 
     def __init__(self, env_id=None, page=None, page_size=None, keyword=None, status=None, return_count=None):
-        """InstanceSearchParam
+        r"""InstanceSearchParam
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class InstanceSearchParam:
 
     @property
     def env_id(self):
-        """Gets the env_id of this InstanceSearchParam.
+        r"""Gets the env_id of this InstanceSearchParam.
 
         环境id。
 
@@ -87,7 +87,7 @@ class InstanceSearchParam:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this InstanceSearchParam.
+        r"""Sets the env_id of this InstanceSearchParam.
 
         环境id。
 
@@ -98,7 +98,7 @@ class InstanceSearchParam:
 
     @property
     def page(self):
-        """Gets the page of this InstanceSearchParam.
+        r"""Gets the page of this InstanceSearchParam.
 
         当前页码。
 
@@ -109,7 +109,7 @@ class InstanceSearchParam:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this InstanceSearchParam.
+        r"""Sets the page of this InstanceSearchParam.
 
         当前页码。
 
@@ -120,7 +120,7 @@ class InstanceSearchParam:
 
     @property
     def page_size(self):
-        """Gets the page_size of this InstanceSearchParam.
+        r"""Gets the page_size of this InstanceSearchParam.
 
         每页数据容量。
 
@@ -131,7 +131,7 @@ class InstanceSearchParam:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this InstanceSearchParam.
+        r"""Sets the page_size of this InstanceSearchParam.
 
         每页数据容量。
 
@@ -142,7 +142,7 @@ class InstanceSearchParam:
 
     @property
     def keyword(self):
-        """Gets the keyword of this InstanceSearchParam.
+        r"""Gets the keyword of this InstanceSearchParam.
 
         关键字。
 
@@ -153,7 +153,7 @@ class InstanceSearchParam:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this InstanceSearchParam.
+        r"""Sets the keyword of this InstanceSearchParam.
 
         关键字。
 
@@ -164,7 +164,7 @@ class InstanceSearchParam:
 
     @property
     def status(self):
-        """Gets the status of this InstanceSearchParam.
+        r"""Gets the status of this InstanceSearchParam.
 
         实例状态。
 
@@ -175,7 +175,7 @@ class InstanceSearchParam:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceSearchParam.
+        r"""Sets the status of this InstanceSearchParam.
 
         实例状态。
 
@@ -186,7 +186,7 @@ class InstanceSearchParam:
 
     @property
     def return_count(self):
-        """Gets the return_count of this InstanceSearchParam.
+        r"""Gets the return_count of this InstanceSearchParam.
 
         是否返回计数结果。
 
@@ -197,7 +197,7 @@ class InstanceSearchParam:
 
     @return_count.setter
     def return_count(self, return_count):
-        """Sets the return_count of this InstanceSearchParam.
+        r"""Sets the return_count of this InstanceSearchParam.
 
         是否返回计数结果。
 

@@ -26,7 +26,7 @@ class DeleteSqlLimitResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """DeleteSqlLimitResponse
+        r"""DeleteSqlLimitResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteSqlLimitResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this DeleteSqlLimitResponse.
+        r"""Gets the resp of this DeleteSqlLimitResponse.
 
         调用正常时，返回“successful”。
 
@@ -55,7 +55,7 @@ class DeleteSqlLimitResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this DeleteSqlLimitResponse.
+        r"""Sets the resp of this DeleteSqlLimitResponse.
 
         调用正常时，返回“successful”。
 

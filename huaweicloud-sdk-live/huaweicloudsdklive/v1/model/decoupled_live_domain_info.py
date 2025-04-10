@@ -49,7 +49,7 @@ class DecoupledLiveDomainInfo:
     }
 
     def __init__(self, domain=None, domain_type=None, vendor=None, region=None, domain_cname=None, status=None, related_domain=None, create_time=None, status_describe=None, service_area=None, enterprise_project_id=None, pull_protocol=None, is_ipv6=None):
-        """DecoupledLiveDomainInfo
+        r"""DecoupledLiveDomainInfo
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class DecoupledLiveDomainInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this DecoupledLiveDomainInfo.
+        r"""Gets the domain of this DecoupledLiveDomainInfo.
 
         直播域名
 
@@ -130,7 +130,7 @@ class DecoupledLiveDomainInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this DecoupledLiveDomainInfo.
+        r"""Sets the domain of this DecoupledLiveDomainInfo.
 
         直播域名
 
@@ -141,7 +141,7 @@ class DecoupledLiveDomainInfo:
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this DecoupledLiveDomainInfo.
+        r"""Gets the domain_type of this DecoupledLiveDomainInfo.
 
         域名类型
 
@@ -152,7 +152,7 @@ class DecoupledLiveDomainInfo:
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this DecoupledLiveDomainInfo.
+        r"""Sets the domain_type of this DecoupledLiveDomainInfo.
 
         域名类型
 
@@ -163,7 +163,7 @@ class DecoupledLiveDomainInfo:
 
     @property
     def vendor(self):
-        """Gets the vendor of this DecoupledLiveDomainInfo.
+        r"""Gets the vendor of this DecoupledLiveDomainInfo.
 
         CDN厂商
 
@@ -174,7 +174,7 @@ class DecoupledLiveDomainInfo:
 
     @vendor.setter
     def vendor(self, vendor):
-        """Sets the vendor of this DecoupledLiveDomainInfo.
+        r"""Sets the vendor of this DecoupledLiveDomainInfo.
 
         CDN厂商
 
@@ -185,7 +185,7 @@ class DecoupledLiveDomainInfo:
 
     @property
     def region(self):
-        """Gets the region of this DecoupledLiveDomainInfo.
+        r"""Gets the region of this DecoupledLiveDomainInfo.
 
         直播所属直播中心
 
@@ -196,7 +196,7 @@ class DecoupledLiveDomainInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this DecoupledLiveDomainInfo.
+        r"""Sets the region of this DecoupledLiveDomainInfo.
 
         直播所属直播中心
 
@@ -207,7 +207,7 @@ class DecoupledLiveDomainInfo:
 
     @property
     def domain_cname(self):
-        """Gets the domain_cname of this DecoupledLiveDomainInfo.
+        r"""Gets the domain_cname of this DecoupledLiveDomainInfo.
 
         直播域名的CName
 
@@ -218,7 +218,7 @@ class DecoupledLiveDomainInfo:
 
     @domain_cname.setter
     def domain_cname(self, domain_cname):
-        """Sets the domain_cname of this DecoupledLiveDomainInfo.
+        r"""Sets the domain_cname of this DecoupledLiveDomainInfo.
 
         直播域名的CName
 
@@ -229,7 +229,7 @@ class DecoupledLiveDomainInfo:
 
     @property
     def status(self):
-        """Gets the status of this DecoupledLiveDomainInfo.
+        r"""Gets the status of this DecoupledLiveDomainInfo.
 
         直播域名的状态
 
@@ -240,7 +240,7 @@ class DecoupledLiveDomainInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DecoupledLiveDomainInfo.
+        r"""Sets the status of this DecoupledLiveDomainInfo.
 
         直播域名的状态
 
@@ -251,7 +251,7 @@ class DecoupledLiveDomainInfo:
 
     @property
     def related_domain(self):
-        """Gets the related_domain of this DecoupledLiveDomainInfo.
+        r"""Gets the related_domain of this DecoupledLiveDomainInfo.
 
         播放域名关联的推流域名（只有domain_type为pull的时候有效）
 
@@ -262,7 +262,7 @@ class DecoupledLiveDomainInfo:
 
     @related_domain.setter
     def related_domain(self, related_domain):
-        """Sets the related_domain of this DecoupledLiveDomainInfo.
+        r"""Sets the related_domain of this DecoupledLiveDomainInfo.
 
         播放域名关联的推流域名（只有domain_type为pull的时候有效）
 
@@ -273,7 +273,7 @@ class DecoupledLiveDomainInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DecoupledLiveDomainInfo.
+        r"""Gets the create_time of this DecoupledLiveDomainInfo.
 
         域名创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间
 
@@ -284,7 +284,7 @@ class DecoupledLiveDomainInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DecoupledLiveDomainInfo.
+        r"""Sets the create_time of this DecoupledLiveDomainInfo.
 
         域名创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间
 
@@ -295,7 +295,7 @@ class DecoupledLiveDomainInfo:
 
     @property
     def status_describe(self):
-        """Gets the status_describe of this DecoupledLiveDomainInfo.
+        r"""Gets the status_describe of this DecoupledLiveDomainInfo.
 
         状态描述
 
@@ -306,7 +306,7 @@ class DecoupledLiveDomainInfo:
 
     @status_describe.setter
     def status_describe(self, status_describe):
-        """Sets the status_describe of this DecoupledLiveDomainInfo.
+        r"""Sets the status_describe of this DecoupledLiveDomainInfo.
 
         状态描述
 
@@ -317,7 +317,7 @@ class DecoupledLiveDomainInfo:
 
     @property
     def service_area(self):
-        """Gets the service_area of this DecoupledLiveDomainInfo.
+        r"""Gets the service_area of this DecoupledLiveDomainInfo.
 
         域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球加速区域 
 
@@ -328,7 +328,7 @@ class DecoupledLiveDomainInfo:
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this DecoupledLiveDomainInfo.
+        r"""Sets the service_area of this DecoupledLiveDomainInfo.
 
         域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球加速区域 
 
@@ -339,7 +339,7 @@ class DecoupledLiveDomainInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DecoupledLiveDomainInfo.
+        r"""Gets the enterprise_project_id of this DecoupledLiveDomainInfo.
 
         企业项目ID
 
@@ -350,7 +350,7 @@ class DecoupledLiveDomainInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DecoupledLiveDomainInfo.
+        r"""Sets the enterprise_project_id of this DecoupledLiveDomainInfo.
 
         企业项目ID
 
@@ -361,7 +361,7 @@ class DecoupledLiveDomainInfo:
 
     @property
     def pull_protocol(self):
-        """Gets the pull_protocol of this DecoupledLiveDomainInfo.
+        r"""Gets the pull_protocol of this DecoupledLiveDomainInfo.
 
         域名支持的拉流协议；仅domain_type为pull时生效。若不填写此字段，视为默认支持FLV、RTMP拉流协议 - flv_rtmp表示支持FLV、RTMP协议 - hls表示支持HLS协议 
 
@@ -372,7 +372,7 @@ class DecoupledLiveDomainInfo:
 
     @pull_protocol.setter
     def pull_protocol(self, pull_protocol):
-        """Sets the pull_protocol of this DecoupledLiveDomainInfo.
+        r"""Sets the pull_protocol of this DecoupledLiveDomainInfo.
 
         域名支持的拉流协议；仅domain_type为pull时生效。若不填写此字段，视为默认支持FLV、RTMP拉流协议 - flv_rtmp表示支持FLV、RTMP协议 - hls表示支持HLS协议 
 
@@ -383,7 +383,7 @@ class DecoupledLiveDomainInfo:
 
     @property
     def is_ipv6(self):
-        """Gets the is_ipv6 of this DecoupledLiveDomainInfo.
+        r"""Gets the is_ipv6 of this DecoupledLiveDomainInfo.
 
         IPV6开关是否开启，默认关闭，true为开启；false或空为关闭
 
@@ -394,7 +394,7 @@ class DecoupledLiveDomainInfo:
 
     @is_ipv6.setter
     def is_ipv6(self, is_ipv6):
-        """Sets the is_ipv6 of this DecoupledLiveDomainInfo.
+        r"""Sets the is_ipv6 of this DecoupledLiveDomainInfo.
 
         IPV6开关是否开启，默认关闭，true为开启；false或空为关闭
 

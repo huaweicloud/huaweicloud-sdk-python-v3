@@ -29,7 +29,7 @@ class OrganizationPolicyAssignmentRequest:
     }
 
     def __init__(self, excluded_accounts=None, organization_policy_assignment_name=None, managed_policy_assignment_metadata=None):
-        """OrganizationPolicyAssignmentRequest
+        r"""OrganizationPolicyAssignmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class OrganizationPolicyAssignmentRequest:
 
     @property
     def excluded_accounts(self):
-        """Gets the excluded_accounts of this OrganizationPolicyAssignmentRequest.
+        r"""Gets the excluded_accounts of this OrganizationPolicyAssignmentRequest.
 
         需要排除配置规则的帐号。
 
@@ -67,7 +67,7 @@ class OrganizationPolicyAssignmentRequest:
 
     @excluded_accounts.setter
     def excluded_accounts(self, excluded_accounts):
-        """Sets the excluded_accounts of this OrganizationPolicyAssignmentRequest.
+        r"""Sets the excluded_accounts of this OrganizationPolicyAssignmentRequest.
 
         需要排除配置规则的帐号。
 
@@ -78,7 +78,7 @@ class OrganizationPolicyAssignmentRequest:
 
     @property
     def organization_policy_assignment_name(self):
-        """Gets the organization_policy_assignment_name of this OrganizationPolicyAssignmentRequest.
+        r"""Gets the organization_policy_assignment_name of this OrganizationPolicyAssignmentRequest.
 
         组织合规规则名称。
 
@@ -89,7 +89,7 @@ class OrganizationPolicyAssignmentRequest:
 
     @organization_policy_assignment_name.setter
     def organization_policy_assignment_name(self, organization_policy_assignment_name):
-        """Sets the organization_policy_assignment_name of this OrganizationPolicyAssignmentRequest.
+        r"""Sets the organization_policy_assignment_name of this OrganizationPolicyAssignmentRequest.
 
         组织合规规则名称。
 
@@ -100,7 +100,7 @@ class OrganizationPolicyAssignmentRequest:
 
     @property
     def managed_policy_assignment_metadata(self):
-        """Gets the managed_policy_assignment_metadata of this OrganizationPolicyAssignmentRequest.
+        r"""Gets the managed_policy_assignment_metadata of this OrganizationPolicyAssignmentRequest.
 
         :return: The managed_policy_assignment_metadata of this OrganizationPolicyAssignmentRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.ManagedPolicyAssignmentMetadata`
@@ -109,7 +109,7 @@ class OrganizationPolicyAssignmentRequest:
 
     @managed_policy_assignment_metadata.setter
     def managed_policy_assignment_metadata(self, managed_policy_assignment_metadata):
-        """Sets the managed_policy_assignment_metadata of this OrganizationPolicyAssignmentRequest.
+        r"""Sets the managed_policy_assignment_metadata of this OrganizationPolicyAssignmentRequest.
 
         :param managed_policy_assignment_metadata: The managed_policy_assignment_metadata of this OrganizationPolicyAssignmentRequest.
         :type managed_policy_assignment_metadata: :class:`huaweicloudsdkconfig.v1.ManagedPolicyAssignmentMetadata`

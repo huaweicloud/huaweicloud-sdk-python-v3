@@ -28,7 +28,7 @@ class ListInstanceSnapshotsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, snapshots=None):
-        """ListInstanceSnapshotsResponse
+        r"""ListInstanceSnapshotsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInstanceSnapshotsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListInstanceSnapshotsResponse.
+        r"""Gets the count of this ListInstanceSnapshotsResponse.
 
         快照总数。
 
@@ -62,7 +62,7 @@ class ListInstanceSnapshotsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListInstanceSnapshotsResponse.
+        r"""Sets the count of this ListInstanceSnapshotsResponse.
 
         快照总数。
 
@@ -73,7 +73,7 @@ class ListInstanceSnapshotsResponse(SdkResponse):
 
     @property
     def snapshots(self):
-        """Gets the snapshots of this ListInstanceSnapshotsResponse.
+        r"""Gets the snapshots of this ListInstanceSnapshotsResponse.
 
         快照列表。
 
@@ -84,7 +84,7 @@ class ListInstanceSnapshotsResponse(SdkResponse):
 
     @snapshots.setter
     def snapshots(self, snapshots):
-        """Sets the snapshots of this ListInstanceSnapshotsResponse.
+        r"""Sets the snapshots of this ListInstanceSnapshotsResponse.
 
         快照列表。
 

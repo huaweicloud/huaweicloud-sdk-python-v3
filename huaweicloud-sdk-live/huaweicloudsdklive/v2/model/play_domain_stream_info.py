@@ -33,7 +33,7 @@ class PlayDomainStreamInfo:
     }
 
     def __init__(self, play_domain=None, stream=None, protocol=None, bandwidth=None, online=None):
-        """PlayDomainStreamInfo
+        r"""PlayDomainStreamInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PlayDomainStreamInfo:
 
     @property
     def play_domain(self):
-        """Gets the play_domain of this PlayDomainStreamInfo.
+        r"""Gets the play_domain of this PlayDomainStreamInfo.
 
         播放域名
 
@@ -82,7 +82,7 @@ class PlayDomainStreamInfo:
 
     @play_domain.setter
     def play_domain(self, play_domain):
-        """Sets the play_domain of this PlayDomainStreamInfo.
+        r"""Sets the play_domain of this PlayDomainStreamInfo.
 
         播放域名
 
@@ -93,7 +93,7 @@ class PlayDomainStreamInfo:
 
     @property
     def stream(self):
-        """Gets the stream of this PlayDomainStreamInfo.
+        r"""Gets the stream of this PlayDomainStreamInfo.
 
         播放流名
 
@@ -104,7 +104,7 @@ class PlayDomainStreamInfo:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this PlayDomainStreamInfo.
+        r"""Sets the stream of this PlayDomainStreamInfo.
 
         播放流名
 
@@ -115,7 +115,7 @@ class PlayDomainStreamInfo:
 
     @property
     def protocol(self):
-        """Gets the protocol of this PlayDomainStreamInfo.
+        r"""Gets the protocol of this PlayDomainStreamInfo.
 
         播放的协议，支持flv,hls,rtmp。
 
@@ -126,7 +126,7 @@ class PlayDomainStreamInfo:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this PlayDomainStreamInfo.
+        r"""Sets the protocol of this PlayDomainStreamInfo.
 
         播放的协议，支持flv,hls,rtmp。
 
@@ -137,7 +137,7 @@ class PlayDomainStreamInfo:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this PlayDomainStreamInfo.
+        r"""Gets the bandwidth of this PlayDomainStreamInfo.
 
         1分钟粒度的带宽值，单位为bps。
 
@@ -148,7 +148,7 @@ class PlayDomainStreamInfo:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this PlayDomainStreamInfo.
+        r"""Sets the bandwidth of this PlayDomainStreamInfo.
 
         1分钟粒度的带宽值，单位为bps。
 
@@ -159,7 +159,7 @@ class PlayDomainStreamInfo:
 
     @property
     def online(self):
-        """Gets the online of this PlayDomainStreamInfo.
+        r"""Gets the online of this PlayDomainStreamInfo.
 
         1分钟粒度的在线人数。
 
@@ -170,7 +170,7 @@ class PlayDomainStreamInfo:
 
     @online.setter
     def online(self, online):
-        """Sets the online of this PlayDomainStreamInfo.
+        r"""Sets the online of this PlayDomainStreamInfo.
 
         1分钟粒度的在线人数。
 

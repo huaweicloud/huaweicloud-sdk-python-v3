@@ -26,7 +26,7 @@ class CheckCertificateResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CheckCertificateResponse
+        r"""CheckCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CheckCertificateResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CheckCertificateResponse.
+        r"""Gets the body of this CheckCertificateResponse.
 
         :return: The body of this CheckCertificateResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CheckCertificateResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckCertificateResponse.
+        r"""Sets the body of this CheckCertificateResponse.
 
         :param body: The body of this CheckCertificateResponse.
         :type body: str

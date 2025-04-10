@@ -27,7 +27,7 @@ class CreateKnowledgeQuestionRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreateKnowledgeQuestionRequest
+        r"""CreateKnowledgeQuestionRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateKnowledgeQuestionRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreateKnowledgeQuestionRequest.
+        r"""Gets the x_app_user_id of this CreateKnowledgeQuestionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreateKnowledgeQuestionRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreateKnowledgeQuestionRequest.
+        r"""Sets the x_app_user_id of this CreateKnowledgeQuestionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreateKnowledgeQuestionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateKnowledgeQuestionRequest.
+        r"""Gets the body of this CreateKnowledgeQuestionRequest.
 
         :return: The body of this CreateKnowledgeQuestionRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateKnowledgeQuestionReq`
@@ -81,7 +81,7 @@ class CreateKnowledgeQuestionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateKnowledgeQuestionRequest.
+        r"""Sets the body of this CreateKnowledgeQuestionRequest.
 
         :param body: The body of this CreateKnowledgeQuestionRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateKnowledgeQuestionReq`

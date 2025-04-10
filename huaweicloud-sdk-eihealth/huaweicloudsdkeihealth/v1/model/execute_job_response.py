@@ -32,7 +32,7 @@ class ExecuteJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None, max_platform_flavor=None, app_infos=None, job_info=None):
-        """ExecuteJobResponse
+        r"""ExecuteJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ExecuteJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ExecuteJobResponse.
+        r"""Gets the id of this ExecuteJobResponse.
 
         作业id
 
@@ -76,7 +76,7 @@ class ExecuteJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExecuteJobResponse.
+        r"""Sets the id of this ExecuteJobResponse.
 
         作业id
 
@@ -87,7 +87,7 @@ class ExecuteJobResponse(SdkResponse):
 
     @property
     def max_platform_flavor(self):
-        """Gets the max_platform_flavor of this ExecuteJobResponse.
+        r"""Gets the max_platform_flavor of this ExecuteJobResponse.
 
         :return: The max_platform_flavor of this ExecuteJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
@@ -96,7 +96,7 @@ class ExecuteJobResponse(SdkResponse):
 
     @max_platform_flavor.setter
     def max_platform_flavor(self, max_platform_flavor):
-        """Sets the max_platform_flavor of this ExecuteJobResponse.
+        r"""Sets the max_platform_flavor of this ExecuteJobResponse.
 
         :param max_platform_flavor: The max_platform_flavor of this ExecuteJobResponse.
         :type max_platform_flavor: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
@@ -105,7 +105,7 @@ class ExecuteJobResponse(SdkResponse):
 
     @property
     def app_infos(self):
-        """Gets the app_infos of this ExecuteJobResponse.
+        r"""Gets the app_infos of this ExecuteJobResponse.
 
         筛选后的app集合
 
@@ -116,7 +116,7 @@ class ExecuteJobResponse(SdkResponse):
 
     @app_infos.setter
     def app_infos(self, app_infos):
-        """Sets the app_infos of this ExecuteJobResponse.
+        r"""Sets the app_infos of this ExecuteJobResponse.
 
         筛选后的app集合
 
@@ -127,7 +127,7 @@ class ExecuteJobResponse(SdkResponse):
 
     @property
     def job_info(self):
-        """Gets the job_info of this ExecuteJobResponse.
+        r"""Gets the job_info of this ExecuteJobResponse.
 
         :return: The job_info of this ExecuteJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.JobFilterDto`
@@ -136,7 +136,7 @@ class ExecuteJobResponse(SdkResponse):
 
     @job_info.setter
     def job_info(self, job_info):
-        """Sets the job_info of this ExecuteJobResponse.
+        r"""Sets the job_info of this ExecuteJobResponse.
 
         :param job_info: The job_info of this ExecuteJobResponse.
         :type job_info: :class:`huaweicloudsdkeihealth.v1.JobFilterDto`

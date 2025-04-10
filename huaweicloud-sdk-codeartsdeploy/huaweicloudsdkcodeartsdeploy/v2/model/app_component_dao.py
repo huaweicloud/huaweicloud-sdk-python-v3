@@ -39,7 +39,7 @@ class AppComponentDao:
     }
 
     def __init__(self, task_id=None, app_id=None, app_name=None, comp_id=None, comp_name=None, domain_id=None, region=None, state=None):
-        """AppComponentDao
+        r"""AppComponentDao
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class AppComponentDao:
 
     @property
     def task_id(self):
-        """Gets the task_id of this AppComponentDao.
+        r"""Gets the task_id of this AppComponentDao.
 
         部署任务id
 
@@ -103,7 +103,7 @@ class AppComponentDao:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this AppComponentDao.
+        r"""Sets the task_id of this AppComponentDao.
 
         部署任务id
 
@@ -114,7 +114,7 @@ class AppComponentDao:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AppComponentDao.
+        r"""Gets the app_id of this AppComponentDao.
 
         AOM应用id
 
@@ -125,7 +125,7 @@ class AppComponentDao:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AppComponentDao.
+        r"""Sets the app_id of this AppComponentDao.
 
         AOM应用id
 
@@ -136,7 +136,7 @@ class AppComponentDao:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AppComponentDao.
+        r"""Gets the app_name of this AppComponentDao.
 
         AOM应用名称
 
@@ -147,7 +147,7 @@ class AppComponentDao:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AppComponentDao.
+        r"""Sets the app_name of this AppComponentDao.
 
         AOM应用名称
 
@@ -158,7 +158,7 @@ class AppComponentDao:
 
     @property
     def comp_id(self):
-        """Gets the comp_id of this AppComponentDao.
+        r"""Gets the comp_id of this AppComponentDao.
 
         AOM应用组件id
 
@@ -169,7 +169,7 @@ class AppComponentDao:
 
     @comp_id.setter
     def comp_id(self, comp_id):
-        """Sets the comp_id of this AppComponentDao.
+        r"""Sets the comp_id of this AppComponentDao.
 
         AOM应用组件id
 
@@ -180,7 +180,7 @@ class AppComponentDao:
 
     @property
     def comp_name(self):
-        """Gets the comp_name of this AppComponentDao.
+        r"""Gets the comp_name of this AppComponentDao.
 
         AOM应用组件名称
 
@@ -191,7 +191,7 @@ class AppComponentDao:
 
     @comp_name.setter
     def comp_name(self, comp_name):
-        """Sets the comp_name of this AppComponentDao.
+        r"""Sets the comp_name of this AppComponentDao.
 
         AOM应用组件名称
 
@@ -202,7 +202,7 @@ class AppComponentDao:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AppComponentDao.
+        r"""Gets the domain_id of this AppComponentDao.
 
         租户id
 
@@ -213,7 +213,7 @@ class AppComponentDao:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AppComponentDao.
+        r"""Sets the domain_id of this AppComponentDao.
 
         租户id
 
@@ -224,7 +224,7 @@ class AppComponentDao:
 
     @property
     def region(self):
-        """Gets the region of this AppComponentDao.
+        r"""Gets the region of this AppComponentDao.
 
         局点信息
 
@@ -235,7 +235,7 @@ class AppComponentDao:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AppComponentDao.
+        r"""Sets the region of this AppComponentDao.
 
         局点信息
 
@@ -246,7 +246,7 @@ class AppComponentDao:
 
     @property
     def state(self):
-        """Gets the state of this AppComponentDao.
+        r"""Gets the state of this AppComponentDao.
 
         AOM应用组件是否生效，0表示初始化，1表示执行成功，已生效
 
@@ -257,7 +257,7 @@ class AppComponentDao:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this AppComponentDao.
+        r"""Sets the state of this AppComponentDao.
 
         AOM应用组件是否生效，0表示初始化，1表示执行成功，已生效
 

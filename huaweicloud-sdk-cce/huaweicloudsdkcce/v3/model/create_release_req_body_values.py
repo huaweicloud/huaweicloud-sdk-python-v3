@@ -27,7 +27,7 @@ class CreateReleaseReqBodyValues:
     }
 
     def __init__(self, image_pull_policy=None, image_tag=None):
-        """CreateReleaseReqBodyValues
+        r"""CreateReleaseReqBodyValues
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateReleaseReqBodyValues:
 
     @property
     def image_pull_policy(self):
-        """Gets the image_pull_policy of this CreateReleaseReqBodyValues.
+        r"""Gets the image_pull_policy of this CreateReleaseReqBodyValues.
 
         镜像拉取策略
 
@@ -61,7 +61,7 @@ class CreateReleaseReqBodyValues:
 
     @image_pull_policy.setter
     def image_pull_policy(self, image_pull_policy):
-        """Sets the image_pull_policy of this CreateReleaseReqBodyValues.
+        r"""Sets the image_pull_policy of this CreateReleaseReqBodyValues.
 
         镜像拉取策略
 
@@ -72,7 +72,7 @@ class CreateReleaseReqBodyValues:
 
     @property
     def image_tag(self):
-        """Gets the image_tag of this CreateReleaseReqBodyValues.
+        r"""Gets the image_tag of this CreateReleaseReqBodyValues.
 
         镜像标签
 
@@ -83,7 +83,7 @@ class CreateReleaseReqBodyValues:
 
     @image_tag.setter
     def image_tag(self, image_tag):
-        """Sets the image_tag of this CreateReleaseReqBodyValues.
+        r"""Sets the image_tag of this CreateReleaseReqBodyValues.
 
         镜像标签
 

@@ -27,7 +27,7 @@ class ListAimTemplateMaterialsResponseMode:
     }
 
     def __init__(self, page_info=None, results=None):
-        """ListAimTemplateMaterialsResponseMode
+        r"""ListAimTemplateMaterialsResponseMode
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListAimTemplateMaterialsResponseMode:
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAimTemplateMaterialsResponseMode.
+        r"""Gets the page_info of this ListAimTemplateMaterialsResponseMode.
 
         :return: The page_info of this ListAimTemplateMaterialsResponseMode.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.PageInfo`
@@ -58,7 +58,7 @@ class ListAimTemplateMaterialsResponseMode:
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAimTemplateMaterialsResponseMode.
+        r"""Sets the page_info of this ListAimTemplateMaterialsResponseMode.
 
         :param page_info: The page_info of this ListAimTemplateMaterialsResponseMode.
         :type page_info: :class:`huaweicloudsdkkoomessage.v1.PageInfo`
@@ -67,7 +67,7 @@ class ListAimTemplateMaterialsResponseMode:
 
     @property
     def results(self):
-        """Gets the results of this ListAimTemplateMaterialsResponseMode.
+        r"""Gets the results of this ListAimTemplateMaterialsResponseMode.
 
         模板素材列表。
 
@@ -78,7 +78,7 @@ class ListAimTemplateMaterialsResponseMode:
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ListAimTemplateMaterialsResponseMode.
+        r"""Sets the results of this ListAimTemplateMaterialsResponseMode.
 
         模板素材列表。
 

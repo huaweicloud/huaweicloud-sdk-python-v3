@@ -33,7 +33,7 @@ class CreateStudyJobReq:
     }
 
     def __init__(self, workflow_job_id=None, template_id=None, database_name=None, relative_path=None, output_file_type=None):
-        """CreateStudyJobReq
+        r"""CreateStudyJobReq
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class CreateStudyJobReq:
 
     @property
     def workflow_job_id(self):
-        """Gets the workflow_job_id of this CreateStudyJobReq.
+        r"""Gets the workflow_job_id of this CreateStudyJobReq.
 
         workflow作业id
 
@@ -78,7 +78,7 @@ class CreateStudyJobReq:
 
     @workflow_job_id.setter
     def workflow_job_id(self, workflow_job_id):
-        """Sets the workflow_job_id of this CreateStudyJobReq.
+        r"""Sets the workflow_job_id of this CreateStudyJobReq.
 
         workflow作业id
 
@@ -89,7 +89,7 @@ class CreateStudyJobReq:
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreateStudyJobReq.
+        r"""Gets the template_id of this CreateStudyJobReq.
 
         数据库模板id
 
@@ -100,7 +100,7 @@ class CreateStudyJobReq:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreateStudyJobReq.
+        r"""Sets the template_id of this CreateStudyJobReq.
 
         数据库模板id
 
@@ -111,7 +111,7 @@ class CreateStudyJobReq:
 
     @property
     def database_name(self):
-        """Gets the database_name of this CreateStudyJobReq.
+        r"""Gets the database_name of this CreateStudyJobReq.
 
         数据库名称
 
@@ -122,7 +122,7 @@ class CreateStudyJobReq:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this CreateStudyJobReq.
+        r"""Sets the database_name of this CreateStudyJobReq.
 
         数据库名称
 
@@ -133,7 +133,7 @@ class CreateStudyJobReq:
 
     @property
     def relative_path(self):
-        """Gets the relative_path of this CreateStudyJobReq.
+        r"""Gets the relative_path of this CreateStudyJobReq.
 
         生成数据库实例的文件相对路径
 
@@ -144,7 +144,7 @@ class CreateStudyJobReq:
 
     @relative_path.setter
     def relative_path(self, relative_path):
-        """Sets the relative_path of this CreateStudyJobReq.
+        r"""Sets the relative_path of this CreateStudyJobReq.
 
         生成数据库实例的文件相对路径
 
@@ -155,7 +155,7 @@ class CreateStudyJobReq:
 
     @property
     def output_file_type(self):
-        """Gets the output_file_type of this CreateStudyJobReq.
+        r"""Gets the output_file_type of this CreateStudyJobReq.
 
         :return: The output_file_type of this CreateStudyJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.OutputFileType`
@@ -164,7 +164,7 @@ class CreateStudyJobReq:
 
     @output_file_type.setter
     def output_file_type(self, output_file_type):
-        """Sets the output_file_type of this CreateStudyJobReq.
+        r"""Sets the output_file_type of this CreateStudyJobReq.
 
         :param output_file_type: The output_file_type of this CreateStudyJobReq.
         :type output_file_type: :class:`huaweicloudsdkeihealth.v1.OutputFileType`

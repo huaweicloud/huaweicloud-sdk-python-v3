@@ -41,7 +41,7 @@ class ShowAlertRspResourceList:
     }
 
     def __init__(self, id=None, name=None, type=None, domain_id=None, project_id=None, region_id=None, ep_id=None, ep_name=None, tags=None):
-        """ShowAlertRspResourceList
+        r"""ShowAlertRspResourceList
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ShowAlertRspResourceList:
 
     @property
     def id(self):
-        """Gets the id of this ShowAlertRspResourceList.
+        r"""Gets the id of this ShowAlertRspResourceList.
 
         Id value
 
@@ -110,7 +110,7 @@ class ShowAlertRspResourceList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAlertRspResourceList.
+        r"""Sets the id of this ShowAlertRspResourceList.
 
         Id value
 
@@ -121,7 +121,7 @@ class ShowAlertRspResourceList:
 
     @property
     def name(self):
-        """Gets the name of this ShowAlertRspResourceList.
+        r"""Gets the name of this ShowAlertRspResourceList.
 
         The name, display only
 
@@ -132,7 +132,7 @@ class ShowAlertRspResourceList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAlertRspResourceList.
+        r"""Sets the name of this ShowAlertRspResourceList.
 
         The name, display only
 
@@ -143,7 +143,7 @@ class ShowAlertRspResourceList:
 
     @property
     def type(self):
-        """Gets the type of this ShowAlertRspResourceList.
+        r"""Gets the type of this ShowAlertRspResourceList.
 
         The name, display only
 
@@ -154,7 +154,7 @@ class ShowAlertRspResourceList:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowAlertRspResourceList.
+        r"""Sets the type of this ShowAlertRspResourceList.
 
         The name, display only
 
@@ -165,7 +165,7 @@ class ShowAlertRspResourceList:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowAlertRspResourceList.
+        r"""Gets the domain_id of this ShowAlertRspResourceList.
 
         Id value
 
@@ -176,7 +176,7 @@ class ShowAlertRspResourceList:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowAlertRspResourceList.
+        r"""Sets the domain_id of this ShowAlertRspResourceList.
 
         Id value
 
@@ -187,7 +187,7 @@ class ShowAlertRspResourceList:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowAlertRspResourceList.
+        r"""Gets the project_id of this ShowAlertRspResourceList.
 
         Id value
 
@@ -198,7 +198,7 @@ class ShowAlertRspResourceList:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowAlertRspResourceList.
+        r"""Sets the project_id of this ShowAlertRspResourceList.
 
         Id value
 
@@ -209,7 +209,7 @@ class ShowAlertRspResourceList:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ShowAlertRspResourceList.
+        r"""Gets the region_id of this ShowAlertRspResourceList.
 
         Id value
 
@@ -220,7 +220,7 @@ class ShowAlertRspResourceList:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ShowAlertRspResourceList.
+        r"""Sets the region_id of this ShowAlertRspResourceList.
 
         Id value
 
@@ -231,7 +231,7 @@ class ShowAlertRspResourceList:
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this ShowAlertRspResourceList.
+        r"""Gets the ep_id of this ShowAlertRspResourceList.
 
         Id value
 
@@ -242,7 +242,7 @@ class ShowAlertRspResourceList:
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this ShowAlertRspResourceList.
+        r"""Sets the ep_id of this ShowAlertRspResourceList.
 
         Id value
 
@@ -253,7 +253,7 @@ class ShowAlertRspResourceList:
 
     @property
     def ep_name(self):
-        """Gets the ep_name of this ShowAlertRspResourceList.
+        r"""Gets the ep_name of this ShowAlertRspResourceList.
 
         The name, display only
 
@@ -264,7 +264,7 @@ class ShowAlertRspResourceList:
 
     @ep_name.setter
     def ep_name(self, ep_name):
-        """Sets the ep_name of this ShowAlertRspResourceList.
+        r"""Sets the ep_name of this ShowAlertRspResourceList.
 
         The name, display only
 
@@ -275,7 +275,7 @@ class ShowAlertRspResourceList:
 
     @property
     def tags(self):
-        """Gets the tags of this ShowAlertRspResourceList.
+        r"""Gets the tags of this ShowAlertRspResourceList.
 
         Id value
 
@@ -286,7 +286,7 @@ class ShowAlertRspResourceList:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowAlertRspResourceList.
+        r"""Sets the tags of this ShowAlertRspResourceList.
 
         Id value
 

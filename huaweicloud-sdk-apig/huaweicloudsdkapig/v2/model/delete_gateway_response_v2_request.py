@@ -29,7 +29,7 @@ class DeleteGatewayResponseV2Request:
     }
 
     def __init__(self, instance_id=None, group_id=None, response_id=None):
-        """DeleteGatewayResponseV2Request
+        r"""DeleteGatewayResponseV2Request
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteGatewayResponseV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteGatewayResponseV2Request.
+        r"""Gets the instance_id of this DeleteGatewayResponseV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -65,7 +65,7 @@ class DeleteGatewayResponseV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteGatewayResponseV2Request.
+        r"""Sets the instance_id of this DeleteGatewayResponseV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -76,7 +76,7 @@ class DeleteGatewayResponseV2Request:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeleteGatewayResponseV2Request.
+        r"""Gets the group_id of this DeleteGatewayResponseV2Request.
 
         分组的编号
 
@@ -87,7 +87,7 @@ class DeleteGatewayResponseV2Request:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeleteGatewayResponseV2Request.
+        r"""Sets the group_id of this DeleteGatewayResponseV2Request.
 
         分组的编号
 
@@ -98,7 +98,7 @@ class DeleteGatewayResponseV2Request:
 
     @property
     def response_id(self):
-        """Gets the response_id of this DeleteGatewayResponseV2Request.
+        r"""Gets the response_id of this DeleteGatewayResponseV2Request.
 
         响应编号
 
@@ -109,7 +109,7 @@ class DeleteGatewayResponseV2Request:
 
     @response_id.setter
     def response_id(self, response_id):
-        """Sets the response_id of this DeleteGatewayResponseV2Request.
+        r"""Sets the response_id of this DeleteGatewayResponseV2Request.
 
         响应编号
 

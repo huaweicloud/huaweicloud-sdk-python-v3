@@ -25,7 +25,7 @@ class ModifyRedisConfigBody:
     }
 
     def __init__(self, redis_config=None):
-        """ModifyRedisConfigBody
+        r"""ModifyRedisConfigBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ModifyRedisConfigBody:
 
     @property
     def redis_config(self):
-        """Gets the redis_config of this ModifyRedisConfigBody.
+        r"""Gets the redis_config of this ModifyRedisConfigBody.
 
         实例配置项数组。
 
@@ -54,7 +54,7 @@ class ModifyRedisConfigBody:
 
     @redis_config.setter
     def redis_config(self, redis_config):
-        """Sets the redis_config of this ModifyRedisConfigBody.
+        r"""Sets the redis_config of this ModifyRedisConfigBody.
 
         实例配置项数组。
 

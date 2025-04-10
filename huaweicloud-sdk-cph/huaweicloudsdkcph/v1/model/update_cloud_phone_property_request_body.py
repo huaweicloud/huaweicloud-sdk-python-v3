@@ -25,7 +25,7 @@ class UpdateCloudPhonePropertyRequestBody:
     }
 
     def __init__(self, phones=None):
-        """UpdateCloudPhonePropertyRequestBody
+        r"""UpdateCloudPhonePropertyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateCloudPhonePropertyRequestBody:
 
     @property
     def phones(self):
-        """Gets the phones of this UpdateCloudPhonePropertyRequestBody.
+        r"""Gets the phones of this UpdateCloudPhonePropertyRequestBody.
 
         手机列表。
 
@@ -53,7 +53,7 @@ class UpdateCloudPhonePropertyRequestBody:
 
     @phones.setter
     def phones(self, phones):
-        """Sets the phones of this UpdateCloudPhonePropertyRequestBody.
+        r"""Sets the phones of this UpdateCloudPhonePropertyRequestBody.
 
         手机列表。
 

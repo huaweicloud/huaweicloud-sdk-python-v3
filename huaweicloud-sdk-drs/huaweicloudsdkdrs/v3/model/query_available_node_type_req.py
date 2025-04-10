@@ -33,7 +33,7 @@ class QueryAvailableNodeTypeReq:
     }
 
     def __init__(self, engine_type=None, db_use_type=None, job_direction=None, node_type=None, multi_write=None):
-        """QueryAvailableNodeTypeReq
+        r"""QueryAvailableNodeTypeReq
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class QueryAvailableNodeTypeReq:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this QueryAvailableNodeTypeReq.
+        r"""Gets the engine_type of this QueryAvailableNodeTypeReq.
 
         引擎类型
 
@@ -78,7 +78,7 @@ class QueryAvailableNodeTypeReq:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this QueryAvailableNodeTypeReq.
+        r"""Sets the engine_type of this QueryAvailableNodeTypeReq.
 
         引擎类型
 
@@ -89,7 +89,7 @@ class QueryAvailableNodeTypeReq:
 
     @property
     def db_use_type(self):
-        """Gets the db_use_type of this QueryAvailableNodeTypeReq.
+        r"""Gets the db_use_type of this QueryAvailableNodeTypeReq.
 
         迁移场景，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
 
@@ -100,7 +100,7 @@ class QueryAvailableNodeTypeReq:
 
     @db_use_type.setter
     def db_use_type(self, db_use_type):
-        """Sets the db_use_type of this QueryAvailableNodeTypeReq.
+        r"""Sets the db_use_type of this QueryAvailableNodeTypeReq.
 
         迁移场景，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
 
@@ -111,7 +111,7 @@ class QueryAvailableNodeTypeReq:
 
     @property
     def job_direction(self):
-        """Gets the job_direction of this QueryAvailableNodeTypeReq.
+        r"""Gets the job_direction of this QueryAvailableNodeTypeReq.
 
         迁移方向，up ：入云 ，灾备场景时对应本云为备，down：出云，灾备场景时对应本云为主，non-dbs：自建
 
@@ -122,7 +122,7 @@ class QueryAvailableNodeTypeReq:
 
     @job_direction.setter
     def job_direction(self, job_direction):
-        """Sets the job_direction of this QueryAvailableNodeTypeReq.
+        r"""Sets the job_direction of this QueryAvailableNodeTypeReq.
 
         迁移方向，up ：入云 ，灾备场景时对应本云为备，down：出云，灾备场景时对应本云为主，non-dbs：自建
 
@@ -133,7 +133,7 @@ class QueryAvailableNodeTypeReq:
 
     @property
     def node_type(self):
-        """Gets the node_type of this QueryAvailableNodeTypeReq.
+        r"""Gets the node_type of this QueryAvailableNodeTypeReq.
 
         规格类型。
 
@@ -144,7 +144,7 @@ class QueryAvailableNodeTypeReq:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this QueryAvailableNodeTypeReq.
+        r"""Sets the node_type of this QueryAvailableNodeTypeReq.
 
         规格类型。
 
@@ -155,7 +155,7 @@ class QueryAvailableNodeTypeReq:
 
     @property
     def multi_write(self):
-        """Gets the multi_write of this QueryAvailableNodeTypeReq.
+        r"""Gets the multi_write of this QueryAvailableNodeTypeReq.
 
         是否是双主灾备，不填默认为false
 
@@ -166,7 +166,7 @@ class QueryAvailableNodeTypeReq:
 
     @multi_write.setter
     def multi_write(self, multi_write):
-        """Sets the multi_write of this QueryAvailableNodeTypeReq.
+        r"""Sets the multi_write of this QueryAvailableNodeTypeReq.
 
         是否是双主灾备，不填默认为false
 

@@ -25,7 +25,7 @@ class ShowTrafficMirrorSessionRequest:
     }
 
     def __init__(self, traffic_mirror_session_id=None):
-        """ShowTrafficMirrorSessionRequest
+        r"""ShowTrafficMirrorSessionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowTrafficMirrorSessionRequest:
 
     @property
     def traffic_mirror_session_id(self):
-        """Gets the traffic_mirror_session_id of this ShowTrafficMirrorSessionRequest.
+        r"""Gets the traffic_mirror_session_id of this ShowTrafficMirrorSessionRequest.
 
         流量镜像会话ID
 
@@ -53,7 +53,7 @@ class ShowTrafficMirrorSessionRequest:
 
     @traffic_mirror_session_id.setter
     def traffic_mirror_session_id(self, traffic_mirror_session_id):
-        """Sets the traffic_mirror_session_id of this ShowTrafficMirrorSessionRequest.
+        r"""Sets the traffic_mirror_session_id of this ShowTrafficMirrorSessionRequest.
 
         流量镜像会话ID
 

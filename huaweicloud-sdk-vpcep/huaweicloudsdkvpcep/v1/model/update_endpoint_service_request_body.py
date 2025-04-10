@@ -37,7 +37,7 @@ class UpdateEndpointServiceRequestBody:
     }
 
     def __init__(self, approval_enabled=None, service_name=None, ports=None, port_id=None, tcp_proxy=None, description=None, ip=None):
-        """UpdateEndpointServiceRequestBody
+        r"""UpdateEndpointServiceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class UpdateEndpointServiceRequestBody:
 
     @property
     def approval_enabled(self):
-        """Gets the approval_enabled of this UpdateEndpointServiceRequestBody.
+        r"""Gets the approval_enabled of this UpdateEndpointServiceRequestBody.
 
         是否需要审批。  - false：不需审批，创建的终端节点连接直接为accepted状态。  - true：需审批，创建的终端节点连接需要终端节点服务所属用户审核后方可使用。 默认为true，需要审批。
 
@@ -96,7 +96,7 @@ class UpdateEndpointServiceRequestBody:
 
     @approval_enabled.setter
     def approval_enabled(self, approval_enabled):
-        """Sets the approval_enabled of this UpdateEndpointServiceRequestBody.
+        r"""Sets the approval_enabled of this UpdateEndpointServiceRequestBody.
 
         是否需要审批。  - false：不需审批，创建的终端节点连接直接为accepted状态。  - true：需审批，创建的终端节点连接需要终端节点服务所属用户审核后方可使用。 默认为true，需要审批。
 
@@ -107,7 +107,7 @@ class UpdateEndpointServiceRequestBody:
 
     @property
     def service_name(self):
-        """Gets the service_name of this UpdateEndpointServiceRequestBody.
+        r"""Gets the service_name of this UpdateEndpointServiceRequestBody.
 
         终端节点服务的名称，长度不大于16，允许传入大小写字母、数字、下划线、中划线。
 
@@ -118,7 +118,7 @@ class UpdateEndpointServiceRequestBody:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this UpdateEndpointServiceRequestBody.
+        r"""Sets the service_name of this UpdateEndpointServiceRequestBody.
 
         终端节点服务的名称，长度不大于16，允许传入大小写字母、数字、下划线、中划线。
 
@@ -129,7 +129,7 @@ class UpdateEndpointServiceRequestBody:
 
     @property
     def ports(self):
-        """Gets the ports of this UpdateEndpointServiceRequestBody.
+        r"""Gets the ports of this UpdateEndpointServiceRequestBody.
 
         服务开放的端口映射列表，同一个终端节点服务下，不允许重复的端口映射。 若多个终端节点服务共用一个port_id， 则终端节点之间服务的所有端口映射的server_port和protocol的组合不能重复， 单次最多添加200个。 该参数值将被全量更新。
 
@@ -140,7 +140,7 @@ class UpdateEndpointServiceRequestBody:
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this UpdateEndpointServiceRequestBody.
+        r"""Sets the ports of this UpdateEndpointServiceRequestBody.
 
         服务开放的端口映射列表，同一个终端节点服务下，不允许重复的端口映射。 若多个终端节点服务共用一个port_id， 则终端节点之间服务的所有端口映射的server_port和protocol的组合不能重复， 单次最多添加200个。 该参数值将被全量更新。
 
@@ -151,7 +151,7 @@ class UpdateEndpointServiceRequestBody:
 
     @property
     def port_id(self):
-        """Gets the port_id of this UpdateEndpointServiceRequestBody.
+        r"""Gets the port_id of this UpdateEndpointServiceRequestBody.
 
         弹性云服务器IP地址对应的网卡ID
 
@@ -162,7 +162,7 @@ class UpdateEndpointServiceRequestBody:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this UpdateEndpointServiceRequestBody.
+        r"""Sets the port_id of this UpdateEndpointServiceRequestBody.
 
         弹性云服务器IP地址对应的网卡ID
 
@@ -173,7 +173,7 @@ class UpdateEndpointServiceRequestBody:
 
     @property
     def tcp_proxy(self):
-        """Gets the tcp_proxy of this UpdateEndpointServiceRequestBody.
+        r"""Gets the tcp_proxy of this UpdateEndpointServiceRequestBody.
 
         用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
@@ -184,7 +184,7 @@ class UpdateEndpointServiceRequestBody:
 
     @tcp_proxy.setter
     def tcp_proxy(self, tcp_proxy):
-        """Sets the tcp_proxy of this UpdateEndpointServiceRequestBody.
+        r"""Sets the tcp_proxy of this UpdateEndpointServiceRequestBody.
 
         用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
@@ -195,7 +195,7 @@ class UpdateEndpointServiceRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateEndpointServiceRequestBody.
+        r"""Gets the description of this UpdateEndpointServiceRequestBody.
 
         描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
 
@@ -206,7 +206,7 @@ class UpdateEndpointServiceRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateEndpointServiceRequestBody.
+        r"""Sets the description of this UpdateEndpointServiceRequestBody.
 
         描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
 
@@ -217,7 +217,7 @@ class UpdateEndpointServiceRequestBody:
 
     @property
     def ip(self):
-        """Gets the ip of this UpdateEndpointServiceRequestBody.
+        r"""Gets the ip of this UpdateEndpointServiceRequestBody.
 
         接口型VLAN场景服务端IPv4地址或域名
 
@@ -228,7 +228,7 @@ class UpdateEndpointServiceRequestBody:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this UpdateEndpointServiceRequestBody.
+        r"""Sets the ip of this UpdateEndpointServiceRequestBody.
 
         接口型VLAN场景服务端IPv4地址或域名
 

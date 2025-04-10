@@ -28,7 +28,7 @@ class CreateAssetReviewTaskResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, review=None):
-        """CreateAssetReviewTaskResponse
+        r"""CreateAssetReviewTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateAssetReviewTaskResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this CreateAssetReviewTaskResponse.
+        r"""Gets the asset_id of this CreateAssetReviewTaskResponse.
 
         媒资ID
 
@@ -62,7 +62,7 @@ class CreateAssetReviewTaskResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this CreateAssetReviewTaskResponse.
+        r"""Sets the asset_id of this CreateAssetReviewTaskResponse.
 
         媒资ID
 
@@ -73,7 +73,7 @@ class CreateAssetReviewTaskResponse(SdkResponse):
 
     @property
     def review(self):
-        """Gets the review of this CreateAssetReviewTaskResponse.
+        r"""Gets the review of this CreateAssetReviewTaskResponse.
 
         :return: The review of this CreateAssetReviewTaskResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.Review`
@@ -82,7 +82,7 @@ class CreateAssetReviewTaskResponse(SdkResponse):
 
     @review.setter
     def review(self, review):
-        """Sets the review of this CreateAssetReviewTaskResponse.
+        r"""Sets the review of this CreateAssetReviewTaskResponse.
 
         :param review: The review of this CreateAssetReviewTaskResponse.
         :type review: :class:`huaweicloudsdkvod.v1.Review`

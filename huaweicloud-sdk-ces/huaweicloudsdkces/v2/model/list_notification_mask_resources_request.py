@@ -29,7 +29,7 @@ class ListNotificationMaskResourcesRequest:
     }
 
     def __init__(self, notification_mask_id=None, offset=None, limit=None):
-        """ListNotificationMaskResourcesRequest
+        r"""ListNotificationMaskResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListNotificationMaskResourcesRequest:
 
     @property
     def notification_mask_id(self):
-        """Gets the notification_mask_id of this ListNotificationMaskResourcesRequest.
+        r"""Gets the notification_mask_id of this ListNotificationMaskResourcesRequest.
 
         屏蔽规则ID
 
@@ -67,7 +67,7 @@ class ListNotificationMaskResourcesRequest:
 
     @notification_mask_id.setter
     def notification_mask_id(self, notification_mask_id):
-        """Sets the notification_mask_id of this ListNotificationMaskResourcesRequest.
+        r"""Sets the notification_mask_id of this ListNotificationMaskResourcesRequest.
 
         屏蔽规则ID
 
@@ -78,7 +78,7 @@ class ListNotificationMaskResourcesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNotificationMaskResourcesRequest.
+        r"""Gets the offset of this ListNotificationMaskResourcesRequest.
 
         分页偏移量
 
@@ -89,7 +89,7 @@ class ListNotificationMaskResourcesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNotificationMaskResourcesRequest.
+        r"""Sets the offset of this ListNotificationMaskResourcesRequest.
 
         分页偏移量
 
@@ -100,7 +100,7 @@ class ListNotificationMaskResourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNotificationMaskResourcesRequest.
+        r"""Gets the limit of this ListNotificationMaskResourcesRequest.
 
         分页大小
 
@@ -111,7 +111,7 @@ class ListNotificationMaskResourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNotificationMaskResourcesRequest.
+        r"""Sets the limit of this ListNotificationMaskResourcesRequest.
 
         分页大小
 

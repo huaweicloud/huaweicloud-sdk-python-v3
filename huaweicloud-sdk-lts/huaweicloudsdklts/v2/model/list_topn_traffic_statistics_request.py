@@ -25,7 +25,7 @@ class ListTopnTrafficStatisticsRequest:
     }
 
     def __init__(self, body=None):
-        """ListTopnTrafficStatisticsRequest
+        r"""ListTopnTrafficStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListTopnTrafficStatisticsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTopnTrafficStatisticsRequest.
+        r"""Gets the body of this ListTopnTrafficStatisticsRequest.
 
         :return: The body of this ListTopnTrafficStatisticsRequest.
         :rtype: :class:`huaweicloudsdklts.v2.TopnRequstBody`
@@ -52,7 +52,7 @@ class ListTopnTrafficStatisticsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTopnTrafficStatisticsRequest.
+        r"""Sets the body of this ListTopnTrafficStatisticsRequest.
 
         :param body: The body of this ListTopnTrafficStatisticsRequest.
         :type body: :class:`huaweicloudsdklts.v2.TopnRequstBody`

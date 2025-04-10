@@ -26,7 +26,7 @@ class ListDatabaseUserRoleResponse(SdkResponse):
     }
 
     def __init__(self, roles=None):
-        """ListDatabaseUserRoleResponse
+        r"""ListDatabaseUserRoleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDatabaseUserRoleResponse(SdkResponse):
 
     @property
     def roles(self):
-        """Gets the roles of this ListDatabaseUserRoleResponse.
+        r"""Gets the roles of this ListDatabaseUserRoleResponse.
 
         角色信息
 
@@ -55,7 +55,7 @@ class ListDatabaseUserRoleResponse(SdkResponse):
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this ListDatabaseUserRoleResponse.
+        r"""Sets the roles of this ListDatabaseUserRoleResponse.
 
         角色信息
 

@@ -28,7 +28,7 @@ class ShowClickHouseDatabaseUserResponse(SdkResponse):
     }
 
     def __init__(self, user_details=None, total_count=None):
-        """ShowClickHouseDatabaseUserResponse
+        r"""ShowClickHouseDatabaseUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowClickHouseDatabaseUserResponse(SdkResponse):
 
     @property
     def user_details(self):
-        """Gets the user_details of this ShowClickHouseDatabaseUserResponse.
+        r"""Gets the user_details of this ShowClickHouseDatabaseUserResponse.
 
         数据库账户信息。
 
@@ -62,7 +62,7 @@ class ShowClickHouseDatabaseUserResponse(SdkResponse):
 
     @user_details.setter
     def user_details(self, user_details):
-        """Sets the user_details of this ShowClickHouseDatabaseUserResponse.
+        r"""Sets the user_details of this ShowClickHouseDatabaseUserResponse.
 
         数据库账户信息。
 
@@ -73,7 +73,7 @@ class ShowClickHouseDatabaseUserResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowClickHouseDatabaseUserResponse.
+        r"""Gets the total_count of this ShowClickHouseDatabaseUserResponse.
 
         数据库账户数量。
 
@@ -84,7 +84,7 @@ class ShowClickHouseDatabaseUserResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowClickHouseDatabaseUserResponse.
+        r"""Sets the total_count of this ShowClickHouseDatabaseUserResponse.
 
         数据库账户数量。
 

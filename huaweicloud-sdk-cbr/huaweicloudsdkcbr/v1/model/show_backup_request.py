@@ -25,7 +25,7 @@ class ShowBackupRequest:
     }
 
     def __init__(self, backup_id=None):
-        """ShowBackupRequest
+        r"""ShowBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowBackupRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ShowBackupRequest.
+        r"""Gets the backup_id of this ShowBackupRequest.
 
         备份ID
 
@@ -53,7 +53,7 @@ class ShowBackupRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ShowBackupRequest.
+        r"""Sets the backup_id of this ShowBackupRequest.
 
         备份ID
 

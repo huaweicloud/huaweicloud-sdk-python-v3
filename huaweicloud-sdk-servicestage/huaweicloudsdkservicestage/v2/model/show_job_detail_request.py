@@ -33,7 +33,7 @@ class ShowJobDetailRequest:
     }
 
     def __init__(self, job_id=None, instance_id=None, limit=None, offset=None, desc=None):
-        """ShowJobDetailRequest
+        r"""ShowJobDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ShowJobDetailRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobDetailRequest.
+        r"""Gets the job_id of this ShowJobDetailRequest.
 
         部署任务ID。
 
@@ -81,7 +81,7 @@ class ShowJobDetailRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobDetailRequest.
+        r"""Sets the job_id of this ShowJobDetailRequest.
 
         部署任务ID。
 
@@ -92,7 +92,7 @@ class ShowJobDetailRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowJobDetailRequest.
+        r"""Gets the instance_id of this ShowJobDetailRequest.
 
         应用组件实例ID。
 
@@ -103,7 +103,7 @@ class ShowJobDetailRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowJobDetailRequest.
+        r"""Sets the instance_id of this ShowJobDetailRequest.
 
         应用组件实例ID。
 
@@ -114,7 +114,7 @@ class ShowJobDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowJobDetailRequest.
+        r"""Gets the limit of this ShowJobDetailRequest.
 
         指定查询的个数，可用于分页查询。
 
@@ -125,7 +125,7 @@ class ShowJobDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowJobDetailRequest.
+        r"""Sets the limit of this ShowJobDetailRequest.
 
         指定查询的个数，可用于分页查询。
 
@@ -136,7 +136,7 @@ class ShowJobDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowJobDetailRequest.
+        r"""Gets the offset of this ShowJobDetailRequest.
 
         指定查询的偏移量，可用于分页查询。
 
@@ -147,7 +147,7 @@ class ShowJobDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowJobDetailRequest.
+        r"""Sets the offset of this ShowJobDetailRequest.
 
         指定查询的偏移量，可用于分页查询。
 
@@ -158,7 +158,7 @@ class ShowJobDetailRequest:
 
     @property
     def desc(self):
-        """Gets the desc of this ShowJobDetailRequest.
+        r"""Gets the desc of this ShowJobDetailRequest.
 
         是否降序。true表示desc, false表示asc。
 
@@ -169,7 +169,7 @@ class ShowJobDetailRequest:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this ShowJobDetailRequest.
+        r"""Sets the desc of this ShowJobDetailRequest.
 
         是否降序。true表示desc, false表示asc。
 

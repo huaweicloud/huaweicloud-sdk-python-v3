@@ -39,7 +39,7 @@ class ColumnInfo:
     }
 
     def __init__(self, field_name=None, field_type=None, field_length=None, null_able=None, is_partition=None, primary=None, unique=None, decimal_digits=None):
-        """ColumnInfo
+        r"""ColumnInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ColumnInfo:
 
     @property
     def field_name(self):
-        """Gets the field_name of this ColumnInfo.
+        r"""Gets the field_name of this ColumnInfo.
 
         字段名称
 
@@ -103,7 +103,7 @@ class ColumnInfo:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this ColumnInfo.
+        r"""Sets the field_name of this ColumnInfo.
 
         字段名称
 
@@ -114,7 +114,7 @@ class ColumnInfo:
 
     @property
     def field_type(self):
-        """Gets the field_type of this ColumnInfo.
+        r"""Gets the field_type of this ColumnInfo.
 
         字段类型
 
@@ -125,7 +125,7 @@ class ColumnInfo:
 
     @field_type.setter
     def field_type(self, field_type):
-        """Sets the field_type of this ColumnInfo.
+        r"""Sets the field_type of this ColumnInfo.
 
         字段类型
 
@@ -136,7 +136,7 @@ class ColumnInfo:
 
     @property
     def field_length(self):
-        """Gets the field_length of this ColumnInfo.
+        r"""Gets the field_length of this ColumnInfo.
 
         字段长度
 
@@ -147,7 +147,7 @@ class ColumnInfo:
 
     @field_length.setter
     def field_length(self, field_length):
-        """Sets the field_length of this ColumnInfo.
+        r"""Sets the field_length of this ColumnInfo.
 
         字段长度
 
@@ -158,7 +158,7 @@ class ColumnInfo:
 
     @property
     def null_able(self):
-        """Gets the null_able of this ColumnInfo.
+        r"""Gets the null_able of this ColumnInfo.
 
         是否允许为空
 
@@ -169,7 +169,7 @@ class ColumnInfo:
 
     @null_able.setter
     def null_able(self, null_able):
-        """Sets the null_able of this ColumnInfo.
+        r"""Sets the null_able of this ColumnInfo.
 
         是否允许为空
 
@@ -180,7 +180,7 @@ class ColumnInfo:
 
     @property
     def is_partition(self):
-        """Gets the is_partition of this ColumnInfo.
+        r"""Gets the is_partition of this ColumnInfo.
 
         是否是分区字段
 
@@ -191,7 +191,7 @@ class ColumnInfo:
 
     @is_partition.setter
     def is_partition(self, is_partition):
-        """Sets the is_partition of this ColumnInfo.
+        r"""Sets the is_partition of this ColumnInfo.
 
         是否是分区字段
 
@@ -202,7 +202,7 @@ class ColumnInfo:
 
     @property
     def primary(self):
-        """Gets the primary of this ColumnInfo.
+        r"""Gets the primary of this ColumnInfo.
 
         是否是主键字段
 
@@ -213,7 +213,7 @@ class ColumnInfo:
 
     @primary.setter
     def primary(self, primary):
-        """Sets the primary of this ColumnInfo.
+        r"""Sets the primary of this ColumnInfo.
 
         是否是主键字段
 
@@ -224,7 +224,7 @@ class ColumnInfo:
 
     @property
     def unique(self):
-        """Gets the unique of this ColumnInfo.
+        r"""Gets the unique of this ColumnInfo.
 
         是否是唯一键字段
 
@@ -235,7 +235,7 @@ class ColumnInfo:
 
     @unique.setter
     def unique(self, unique):
-        """Sets the unique of this ColumnInfo.
+        r"""Sets the unique of this ColumnInfo.
 
         是否是唯一键字段
 
@@ -246,7 +246,7 @@ class ColumnInfo:
 
     @property
     def decimal_digits(self):
-        """Gets the decimal_digits of this ColumnInfo.
+        r"""Gets the decimal_digits of this ColumnInfo.
 
         小数部分位数，非数字类型返回null
 
@@ -257,7 +257,7 @@ class ColumnInfo:
 
     @decimal_digits.setter
     def decimal_digits(self, decimal_digits):
-        """Sets the decimal_digits of this ColumnInfo.
+        r"""Sets the decimal_digits of this ColumnInfo.
 
         小数部分位数，非数字类型返回null
 

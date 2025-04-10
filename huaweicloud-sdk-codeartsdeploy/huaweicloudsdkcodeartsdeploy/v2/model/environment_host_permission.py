@@ -33,7 +33,7 @@ class EnvironmentHostPermission:
     }
 
     def __init__(self, can_delete=None, can_deploy=None, can_edit=None, can_manage=None, can_view=None):
-        """EnvironmentHostPermission
+        r"""EnvironmentHostPermission
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class EnvironmentHostPermission:
 
     @property
     def can_delete(self):
-        """Gets the can_delete of this EnvironmentHostPermission.
+        r"""Gets the can_delete of this EnvironmentHostPermission.
 
         是否有删除权限
 
@@ -82,7 +82,7 @@ class EnvironmentHostPermission:
 
     @can_delete.setter
     def can_delete(self, can_delete):
-        """Sets the can_delete of this EnvironmentHostPermission.
+        r"""Sets the can_delete of this EnvironmentHostPermission.
 
         是否有删除权限
 
@@ -93,7 +93,7 @@ class EnvironmentHostPermission:
 
     @property
     def can_deploy(self):
-        """Gets the can_deploy of this EnvironmentHostPermission.
+        r"""Gets the can_deploy of this EnvironmentHostPermission.
 
         是否有部署权限
 
@@ -104,7 +104,7 @@ class EnvironmentHostPermission:
 
     @can_deploy.setter
     def can_deploy(self, can_deploy):
-        """Sets the can_deploy of this EnvironmentHostPermission.
+        r"""Sets the can_deploy of this EnvironmentHostPermission.
 
         是否有部署权限
 
@@ -115,7 +115,7 @@ class EnvironmentHostPermission:
 
     @property
     def can_edit(self):
-        """Gets the can_edit of this EnvironmentHostPermission.
+        r"""Gets the can_edit of this EnvironmentHostPermission.
 
         是否有编辑权限
 
@@ -126,7 +126,7 @@ class EnvironmentHostPermission:
 
     @can_edit.setter
     def can_edit(self, can_edit):
-        """Sets the can_edit of this EnvironmentHostPermission.
+        r"""Sets the can_edit of this EnvironmentHostPermission.
 
         是否有编辑权限
 
@@ -137,7 +137,7 @@ class EnvironmentHostPermission:
 
     @property
     def can_manage(self):
-        """Gets the can_manage of this EnvironmentHostPermission.
+        r"""Gets the can_manage of this EnvironmentHostPermission.
 
         是否有权限管理权限
 
@@ -148,7 +148,7 @@ class EnvironmentHostPermission:
 
     @can_manage.setter
     def can_manage(self, can_manage):
-        """Sets the can_manage of this EnvironmentHostPermission.
+        r"""Sets the can_manage of this EnvironmentHostPermission.
 
         是否有权限管理权限
 
@@ -159,7 +159,7 @@ class EnvironmentHostPermission:
 
     @property
     def can_view(self):
-        """Gets the can_view of this EnvironmentHostPermission.
+        r"""Gets the can_view of this EnvironmentHostPermission.
 
         是否有查看权限
 
@@ -170,7 +170,7 @@ class EnvironmentHostPermission:
 
     @can_view.setter
     def can_view(self, can_view):
-        """Sets the can_view of this EnvironmentHostPermission.
+        r"""Sets the can_view of this EnvironmentHostPermission.
 
         是否有查看权限
 

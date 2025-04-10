@@ -24,7 +24,7 @@ class BatchCreateVpcTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateVpcTagsResponse
+        r"""BatchCreateVpcTagsResponse
 
         The model defined in huaweicloud sdk
 

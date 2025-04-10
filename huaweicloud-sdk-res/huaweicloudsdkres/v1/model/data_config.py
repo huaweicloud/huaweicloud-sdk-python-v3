@@ -27,7 +27,7 @@ class DataConfig:
     }
 
     def __init__(self, offline=None, nearline=None):
-        """DataConfig
+        r"""DataConfig
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DataConfig:
 
     @property
     def offline(self):
-        """Gets the offline of this DataConfig.
+        r"""Gets the offline of this DataConfig.
 
         :return: The offline of this DataConfig.
         :rtype: :class:`huaweicloudsdkres.v1.Offline`
@@ -58,7 +58,7 @@ class DataConfig:
 
     @offline.setter
     def offline(self, offline):
-        """Sets the offline of this DataConfig.
+        r"""Sets the offline of this DataConfig.
 
         :param offline: The offline of this DataConfig.
         :type offline: :class:`huaweicloudsdkres.v1.Offline`
@@ -67,7 +67,7 @@ class DataConfig:
 
     @property
     def nearline(self):
-        """Gets the nearline of this DataConfig.
+        r"""Gets the nearline of this DataConfig.
 
         :return: The nearline of this DataConfig.
         :rtype: :class:`huaweicloudsdkres.v1.Nearline`
@@ -76,7 +76,7 @@ class DataConfig:
 
     @nearline.setter
     def nearline(self, nearline):
-        """Sets the nearline of this DataConfig.
+        r"""Sets the nearline of this DataConfig.
 
         :param nearline: The nearline of this DataConfig.
         :type nearline: :class:`huaweicloudsdkres.v1.Nearline`

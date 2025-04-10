@@ -29,7 +29,7 @@ class ConfigurationParameterUnit:
     }
 
     def __init__(self, type=None, value=None, default_value=None):
-        """ConfigurationParameterUnit
+        r"""ConfigurationParameterUnit
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ConfigurationParameterUnit:
 
     @property
     def type(self):
-        """Gets the type of this ConfigurationParameterUnit.
+        r"""Gets the type of this ConfigurationParameterUnit.
 
         参数类型，包括：cn、dn。
 
@@ -65,7 +65,7 @@ class ConfigurationParameterUnit:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConfigurationParameterUnit.
+        r"""Sets the type of this ConfigurationParameterUnit.
 
         参数类型，包括：cn、dn。
 
@@ -76,7 +76,7 @@ class ConfigurationParameterUnit:
 
     @property
     def value(self):
-        """Gets the value of this ConfigurationParameterUnit.
+        r"""Gets the value of this ConfigurationParameterUnit.
 
         参数值。
 
@@ -87,7 +87,7 @@ class ConfigurationParameterUnit:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ConfigurationParameterUnit.
+        r"""Sets the value of this ConfigurationParameterUnit.
 
         参数值。
 
@@ -98,7 +98,7 @@ class ConfigurationParameterUnit:
 
     @property
     def default_value(self):
-        """Gets the default_value of this ConfigurationParameterUnit.
+        r"""Gets the default_value of this ConfigurationParameterUnit.
 
         参数默认值。
 
@@ -109,7 +109,7 @@ class ConfigurationParameterUnit:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this ConfigurationParameterUnit.
+        r"""Sets the default_value of this ConfigurationParameterUnit.
 
         参数默认值。
 

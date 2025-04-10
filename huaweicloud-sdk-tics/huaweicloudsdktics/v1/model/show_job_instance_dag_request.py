@@ -29,7 +29,7 @@ class ShowJobInstanceDagRequest:
     }
 
     def __init__(self, instance_id=None, league_id=None, round_id=None):
-        """ShowJobInstanceDagRequest
+        r"""ShowJobInstanceDagRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowJobInstanceDagRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowJobInstanceDagRequest.
+        r"""Gets the instance_id of this ShowJobInstanceDagRequest.
 
         实例id，最大32位，字母和数字组成
 
@@ -65,7 +65,7 @@ class ShowJobInstanceDagRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowJobInstanceDagRequest.
+        r"""Sets the instance_id of this ShowJobInstanceDagRequest.
 
         实例id，最大32位，字母和数字组成
 
@@ -76,7 +76,7 @@ class ShowJobInstanceDagRequest:
 
     @property
     def league_id(self):
-        """Gets the league_id of this ShowJobInstanceDagRequest.
+        r"""Gets the league_id of this ShowJobInstanceDagRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -87,7 +87,7 @@ class ShowJobInstanceDagRequest:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this ShowJobInstanceDagRequest.
+        r"""Sets the league_id of this ShowJobInstanceDagRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -98,7 +98,7 @@ class ShowJobInstanceDagRequest:
 
     @property
     def round_id(self):
-        """Gets the round_id of this ShowJobInstanceDagRequest.
+        r"""Gets the round_id of this ShowJobInstanceDagRequest.
 
         轮数，最小值0最大值0x7fffffff
 
@@ -109,7 +109,7 @@ class ShowJobInstanceDagRequest:
 
     @round_id.setter
     def round_id(self, round_id):
-        """Sets the round_id of this ShowJobInstanceDagRequest.
+        r"""Sets the round_id of this ShowJobInstanceDagRequest.
 
         轮数，最小值0最大值0x7fffffff
 

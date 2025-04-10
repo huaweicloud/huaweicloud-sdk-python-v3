@@ -23,7 +23,7 @@ class ListLoadbalancerTagsRequest:
     }
 
     def __init__(self):
-        """ListLoadbalancerTagsRequest
+        r"""ListLoadbalancerTagsRequest
 
         The model defined in huaweicloud sdk
 

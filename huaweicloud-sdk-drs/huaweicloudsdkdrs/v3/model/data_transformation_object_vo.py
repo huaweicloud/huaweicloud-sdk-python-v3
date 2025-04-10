@@ -33,7 +33,7 @@ class DataTransformationObjectVO:
     }
 
     def __init__(self, id=None, data_transformation_type=None, db_name=None, schema_name=None, table_name=None):
-        """DataTransformationObjectVO
+        r"""DataTransformationObjectVO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DataTransformationObjectVO:
 
     @property
     def id(self):
-        """Gets the id of this DataTransformationObjectVO.
+        r"""Gets the id of this DataTransformationObjectVO.
 
         数据库对象、数据库表名称和过滤类型名称，例如格式为db1-*-*-tb1-*-*---conditionFilter--。
 
@@ -82,7 +82,7 @@ class DataTransformationObjectVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DataTransformationObjectVO.
+        r"""Sets the id of this DataTransformationObjectVO.
 
         数据库对象、数据库表名称和过滤类型名称，例如格式为db1-*-*-tb1-*-*---conditionFilter--。
 
@@ -93,7 +93,7 @@ class DataTransformationObjectVO:
 
     @property
     def data_transformation_type(self):
-        """Gets the data_transformation_type of this DataTransformationObjectVO.
+        r"""Gets the data_transformation_type of this DataTransformationObjectVO.
 
         contentConditionalFilter：普通行过滤配置； configConditionalFilter：高级行过滤配置。
 
@@ -104,7 +104,7 @@ class DataTransformationObjectVO:
 
     @data_transformation_type.setter
     def data_transformation_type(self, data_transformation_type):
-        """Sets the data_transformation_type of this DataTransformationObjectVO.
+        r"""Sets the data_transformation_type of this DataTransformationObjectVO.
 
         contentConditionalFilter：普通行过滤配置； configConditionalFilter：高级行过滤配置。
 
@@ -115,7 +115,7 @@ class DataTransformationObjectVO:
 
     @property
     def db_name(self):
-        """Gets the db_name of this DataTransformationObjectVO.
+        r"""Gets the db_name of this DataTransformationObjectVO.
 
         库名称。
 
@@ -126,7 +126,7 @@ class DataTransformationObjectVO:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this DataTransformationObjectVO.
+        r"""Sets the db_name of this DataTransformationObjectVO.
 
         库名称。
 
@@ -137,7 +137,7 @@ class DataTransformationObjectVO:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this DataTransformationObjectVO.
+        r"""Gets the schema_name of this DataTransformationObjectVO.
 
         schema名称。
 
@@ -148,7 +148,7 @@ class DataTransformationObjectVO:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this DataTransformationObjectVO.
+        r"""Sets the schema_name of this DataTransformationObjectVO.
 
         schema名称。
 
@@ -159,7 +159,7 @@ class DataTransformationObjectVO:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DataTransformationObjectVO.
+        r"""Gets the table_name of this DataTransformationObjectVO.
 
         表名称。
 
@@ -170,7 +170,7 @@ class DataTransformationObjectVO:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DataTransformationObjectVO.
+        r"""Sets the table_name of this DataTransformationObjectVO.
 
         表名称。
 

@@ -25,7 +25,7 @@ class CreateLigandSdfReq:
     }
 
     def __init__(self, smiles=None):
-        """CreateLigandSdfReq
+        r"""CreateLigandSdfReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateLigandSdfReq:
 
     @property
     def smiles(self):
-        """Gets the smiles of this CreateLigandSdfReq.
+        r"""Gets the smiles of this CreateLigandSdfReq.
 
         分子SMILES表达式
 
@@ -53,7 +53,7 @@ class CreateLigandSdfReq:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this CreateLigandSdfReq.
+        r"""Sets the smiles of this CreateLigandSdfReq.
 
         分子SMILES表达式
 

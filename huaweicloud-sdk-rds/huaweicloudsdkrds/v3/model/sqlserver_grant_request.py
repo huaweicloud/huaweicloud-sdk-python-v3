@@ -27,7 +27,7 @@ class SqlserverGrantRequest:
     }
 
     def __init__(self, db_name=None, users=None):
-        """SqlserverGrantRequest
+        r"""SqlserverGrantRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SqlserverGrantRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this SqlserverGrantRequest.
+        r"""Gets the db_name of this SqlserverGrantRequest.
 
         数据库名称。
 
@@ -59,7 +59,7 @@ class SqlserverGrantRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this SqlserverGrantRequest.
+        r"""Sets the db_name of this SqlserverGrantRequest.
 
         数据库名称。
 
@@ -70,7 +70,7 @@ class SqlserverGrantRequest:
 
     @property
     def users(self):
-        """Gets the users of this SqlserverGrantRequest.
+        r"""Gets the users of this SqlserverGrantRequest.
 
         每个元素都是与数据库相关联的帐号。单次请求最多支持50个元素。
 
@@ -81,7 +81,7 @@ class SqlserverGrantRequest:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this SqlserverGrantRequest.
+        r"""Sets the users of this SqlserverGrantRequest.
 
         每个元素都是与数据库相关联的帐号。单次请求最多支持50个元素。
 

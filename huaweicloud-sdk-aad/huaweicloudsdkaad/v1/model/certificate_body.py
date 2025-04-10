@@ -33,7 +33,7 @@ class CertificateBody:
     }
 
     def __init__(self, op_type=None, cert_name=None, cert_file=None, cert_key_file=None, domain_id=None):
-        """CertificateBody
+        r"""CertificateBody
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CertificateBody:
 
     @property
     def op_type(self):
-        """Gets the op_type of this CertificateBody.
+        r"""Gets the op_type of this CertificateBody.
 
         操作类型。0 - 上传， 1 - 更换
 
@@ -79,7 +79,7 @@ class CertificateBody:
 
     @op_type.setter
     def op_type(self, op_type):
-        """Sets the op_type of this CertificateBody.
+        r"""Sets the op_type of this CertificateBody.
 
         操作类型。0 - 上传， 1 - 更换
 
@@ -90,7 +90,7 @@ class CertificateBody:
 
     @property
     def cert_name(self):
-        """Gets the cert_name of this CertificateBody.
+        r"""Gets the cert_name of this CertificateBody.
 
         证书名称
 
@@ -101,7 +101,7 @@ class CertificateBody:
 
     @cert_name.setter
     def cert_name(self, cert_name):
-        """Sets the cert_name of this CertificateBody.
+        r"""Sets the cert_name of this CertificateBody.
 
         证书名称
 
@@ -112,7 +112,7 @@ class CertificateBody:
 
     @property
     def cert_file(self):
-        """Gets the cert_file of this CertificateBody.
+        r"""Gets the cert_file of this CertificateBody.
 
         证书文件。上传新证书(op_type为0)时必填，更换为已有证书(op_type为1)时置空
 
@@ -123,7 +123,7 @@ class CertificateBody:
 
     @cert_file.setter
     def cert_file(self, cert_file):
-        """Sets the cert_file of this CertificateBody.
+        r"""Sets the cert_file of this CertificateBody.
 
         证书文件。上传新证书(op_type为0)时必填，更换为已有证书(op_type为1)时置空
 
@@ -134,7 +134,7 @@ class CertificateBody:
 
     @property
     def cert_key_file(self):
-        """Gets the cert_key_file of this CertificateBody.
+        r"""Gets the cert_key_file of this CertificateBody.
 
         私钥文件。上传新证书(op_type为0)时必填，更换为已有证书(op_type为1)时置空
 
@@ -145,7 +145,7 @@ class CertificateBody:
 
     @cert_key_file.setter
     def cert_key_file(self, cert_key_file):
-        """Sets the cert_key_file of this CertificateBody.
+        r"""Sets the cert_key_file of this CertificateBody.
 
         私钥文件。上传新证书(op_type为0)时必填，更换为已有证书(op_type为1)时置空
 
@@ -156,7 +156,7 @@ class CertificateBody:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CertificateBody.
+        r"""Gets the domain_id of this CertificateBody.
 
         域名id
 
@@ -167,7 +167,7 @@ class CertificateBody:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CertificateBody.
+        r"""Sets the domain_id of this CertificateBody.
 
         域名id
 

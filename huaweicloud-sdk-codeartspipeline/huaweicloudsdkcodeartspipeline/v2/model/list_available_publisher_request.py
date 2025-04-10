@@ -25,7 +25,7 @@ class ListAvailablePublisherRequest:
     }
 
     def __init__(self, domain_id=None):
-        """ListAvailablePublisherRequest
+        r"""ListAvailablePublisherRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListAvailablePublisherRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListAvailablePublisherRequest.
+        r"""Gets the domain_id of this ListAvailablePublisherRequest.
 
         租户ID
 
@@ -53,7 +53,7 @@ class ListAvailablePublisherRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListAvailablePublisherRequest.
+        r"""Sets the domain_id of this ListAvailablePublisherRequest.
 
         租户ID
 

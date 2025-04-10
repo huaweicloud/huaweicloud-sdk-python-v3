@@ -25,7 +25,7 @@ class AgencyPolicyResource:
     }
 
     def __init__(self, uri=None):
-        """AgencyPolicyResource
+        r"""AgencyPolicyResource
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AgencyPolicyResource:
 
     @property
     def uri(self):
-        """Gets the uri of this AgencyPolicyResource.
+        r"""Gets the uri of this AgencyPolicyResource.
 
         委托资源的URI。格式为：/iam/agencies/委托ID。例： ``` \"uri\": [\"/iam/agencies/07805acaba800fdd4fbdc00b8f888c7c\"] ```
 
@@ -53,7 +53,7 @@ class AgencyPolicyResource:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this AgencyPolicyResource.
+        r"""Sets the uri of this AgencyPolicyResource.
 
         委托资源的URI。格式为：/iam/agencies/委托ID。例： ``` \"uri\": [\"/iam/agencies/07805acaba800fdd4fbdc00b8f888c7c\"] ```
 

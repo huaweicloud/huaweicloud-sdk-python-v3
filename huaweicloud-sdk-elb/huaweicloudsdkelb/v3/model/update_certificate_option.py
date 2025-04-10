@@ -39,7 +39,7 @@ class UpdateCertificateOption:
     }
 
     def __init__(self, certificate=None, description=None, name=None, private_key=None, domain=None, enc_certificate=None, enc_private_key=None, scm_certificate_id=None):
-        """UpdateCertificateOption
+        r"""UpdateCertificateOption
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class UpdateCertificateOption:
 
     @property
     def certificate(self):
-        """Gets the certificate of this UpdateCertificateOption.
+        r"""Gets the certificate of this UpdateCertificateOption.
 
         证书的内容。PEM编码格式。 最大长度65536字符。 支持证书链，最大11层(含证书和证书链)。
 
@@ -103,7 +103,7 @@ class UpdateCertificateOption:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this UpdateCertificateOption.
+        r"""Sets the certificate of this UpdateCertificateOption.
 
         证书的内容。PEM编码格式。 最大长度65536字符。 支持证书链，最大11层(含证书和证书链)。
 
@@ -114,7 +114,7 @@ class UpdateCertificateOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateCertificateOption.
+        r"""Gets the description of this UpdateCertificateOption.
 
         证书的描述。
 
@@ -125,7 +125,7 @@ class UpdateCertificateOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateCertificateOption.
+        r"""Sets the description of this UpdateCertificateOption.
 
         证书的描述。
 
@@ -136,7 +136,7 @@ class UpdateCertificateOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateCertificateOption.
+        r"""Gets the name of this UpdateCertificateOption.
 
         证书的名称。
 
@@ -147,7 +147,7 @@ class UpdateCertificateOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCertificateOption.
+        r"""Sets the name of this UpdateCertificateOption.
 
         证书的名称。
 
@@ -158,7 +158,7 @@ class UpdateCertificateOption:
 
     @property
     def private_key(self):
-        """Gets the private_key of this UpdateCertificateOption.
+        r"""Gets the private_key of this UpdateCertificateOption.
 
         服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。若传入不符合格式值，则会报错。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。 最大长度8192字符。
 
@@ -169,7 +169,7 @@ class UpdateCertificateOption:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this UpdateCertificateOption.
+        r"""Sets the private_key of this UpdateCertificateOption.
 
         服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。若传入不符合格式值，则会报错。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。 最大长度8192字符。
 
@@ -180,7 +180,7 @@ class UpdateCertificateOption:
 
     @property
     def domain(self):
-        """Gets the domain of this UpdateCertificateOption.
+        r"""Gets the domain of this UpdateCertificateOption.
 
         服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分隔，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分隔，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\"\\*\"。例：\\*.test.com
 
@@ -191,7 +191,7 @@ class UpdateCertificateOption:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this UpdateCertificateOption.
+        r"""Sets the domain of this UpdateCertificateOption.
 
         服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分隔，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分隔，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com；  泛域名：在普通域名的基础上仅允许首字母为\"\\*\"。例：\\*.test.com
 
@@ -202,7 +202,7 @@ class UpdateCertificateOption:
 
     @property
     def enc_certificate(self):
-        """Gets the enc_certificate of this UpdateCertificateOption.
+        r"""Gets the enc_certificate of this UpdateCertificateOption.
 
         HTTPS协议使用的SM加密证书内容。支持证书链，最大11层(含证书和证书链)。  取值：PEM编码格式。最大长度65536字符。  使用说明：仅type为server_sm时有效。
 
@@ -213,7 +213,7 @@ class UpdateCertificateOption:
 
     @enc_certificate.setter
     def enc_certificate(self, enc_certificate):
-        """Sets the enc_certificate of this UpdateCertificateOption.
+        r"""Sets the enc_certificate of this UpdateCertificateOption.
 
         HTTPS协议使用的SM加密证书内容。支持证书链，最大11层(含证书和证书链)。  取值：PEM编码格式。最大长度65536字符。  使用说明：仅type为server_sm时有效。
 
@@ -224,7 +224,7 @@ class UpdateCertificateOption:
 
     @property
     def enc_private_key(self):
-        """Gets the enc_private_key of this UpdateCertificateOption.
+        r"""Gets the enc_private_key of this UpdateCertificateOption.
 
         HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。最大长度8192字符。  使用说明：仅type为server_sm时有效。
 
@@ -235,7 +235,7 @@ class UpdateCertificateOption:
 
     @enc_private_key.setter
     def enc_private_key(self, enc_private_key):
-        """Sets the enc_private_key of this UpdateCertificateOption.
+        r"""Sets the enc_private_key of this UpdateCertificateOption.
 
         HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。最大长度8192字符。  使用说明：仅type为server_sm时有效。
 
@@ -246,7 +246,7 @@ class UpdateCertificateOption:
 
     @property
     def scm_certificate_id(self):
-        """Gets the scm_certificate_id of this UpdateCertificateOption.
+        r"""Gets the scm_certificate_id of this UpdateCertificateOption.
 
         scm证书id
 
@@ -257,7 +257,7 @@ class UpdateCertificateOption:
 
     @scm_certificate_id.setter
     def scm_certificate_id(self, scm_certificate_id):
-        """Sets the scm_certificate_id of this UpdateCertificateOption.
+        r"""Sets the scm_certificate_id of this UpdateCertificateOption.
 
         scm证书id
 

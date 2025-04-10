@@ -23,7 +23,7 @@ class Stride:
     }
 
     def __init__(self):
-        """Stride
+        r"""Stride
 
         The model defined in huaweicloud sdk
 

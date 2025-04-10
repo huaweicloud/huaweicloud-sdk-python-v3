@@ -27,7 +27,7 @@ class CreateIpGroupIpOption:
     }
 
     def __init__(self, ip=None, description=None):
-        """CreateIpGroupIpOption
+        r"""CreateIpGroupIpOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateIpGroupIpOption:
 
     @property
     def ip(self):
-        """Gets the ip of this CreateIpGroupIpOption.
+        r"""Gets the ip of this CreateIpGroupIpOption.
 
         IP地址或IP地址段。支持IPv4、IPv6。IP地址段格式为ip-ip，例如192.168.1.2-192.168.2.253或者2001:0DB8:02de::0e12-2001:0DB8:02de::0e13，终止IP需要大于起始IP.  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
@@ -60,7 +60,7 @@ class CreateIpGroupIpOption:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this CreateIpGroupIpOption.
+        r"""Sets the ip of this CreateIpGroupIpOption.
 
         IP地址或IP地址段。支持IPv4、IPv6。IP地址段格式为ip-ip，例如192.168.1.2-192.168.2.253或者2001:0DB8:02de::0e12-2001:0DB8:02de::0e13，终止IP需要大于起始IP.  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
@@ -71,7 +71,7 @@ class CreateIpGroupIpOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateIpGroupIpOption.
+        r"""Gets the description of this CreateIpGroupIpOption.
 
         参数解释：备注信息。
 
@@ -82,7 +82,7 @@ class CreateIpGroupIpOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateIpGroupIpOption.
+        r"""Sets the description of this CreateIpGroupIpOption.
 
         参数解释：备注信息。
 

@@ -61,7 +61,7 @@ class SimpleDesktopInfo:
     }
 
     def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, created=None, ip_address=None, user_name=None, attach_user_infos=None, user_group=None, sid=None, ou_name=None, enterprise_project_id=None, tags=None, in_maintenance_mode=None, share_resource_sku=None, desktop_type=None, subnet_id=None, bill_resource_id=None, status=None, task_status=None):
-        """SimpleDesktopInfo
+        r"""SimpleDesktopInfo
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class SimpleDesktopInfo:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this SimpleDesktopInfo.
+        r"""Gets the desktop_id of this SimpleDesktopInfo.
 
         桌面ID。
 
@@ -180,7 +180,7 @@ class SimpleDesktopInfo:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this SimpleDesktopInfo.
+        r"""Sets the desktop_id of this SimpleDesktopInfo.
 
         桌面ID。
 
@@ -191,7 +191,7 @@ class SimpleDesktopInfo:
 
     @property
     def computer_name(self):
-        """Gets the computer_name of this SimpleDesktopInfo.
+        r"""Gets the computer_name of this SimpleDesktopInfo.
 
         桌面名。
 
@@ -202,7 +202,7 @@ class SimpleDesktopInfo:
 
     @computer_name.setter
     def computer_name(self, computer_name):
-        """Sets the computer_name of this SimpleDesktopInfo.
+        r"""Sets the computer_name of this SimpleDesktopInfo.
 
         桌面名。
 
@@ -213,7 +213,7 @@ class SimpleDesktopInfo:
 
     @property
     def os_host_name(self):
-        """Gets the os_host_name of this SimpleDesktopInfo.
+        r"""Gets the os_host_name of this SimpleDesktopInfo.
 
         系统计算机名。
 
@@ -224,7 +224,7 @@ class SimpleDesktopInfo:
 
     @os_host_name.setter
     def os_host_name(self, os_host_name):
-        """Sets the os_host_name of this SimpleDesktopInfo.
+        r"""Sets the os_host_name of this SimpleDesktopInfo.
 
         系统计算机名。
 
@@ -235,7 +235,7 @@ class SimpleDesktopInfo:
 
     @property
     def created(self):
-        """Gets the created of this SimpleDesktopInfo.
+        r"""Gets the created of this SimpleDesktopInfo.
 
         创建时间。
 
@@ -246,7 +246,7 @@ class SimpleDesktopInfo:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this SimpleDesktopInfo.
+        r"""Sets the created of this SimpleDesktopInfo.
 
         创建时间。
 
@@ -257,7 +257,7 @@ class SimpleDesktopInfo:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this SimpleDesktopInfo.
+        r"""Gets the ip_address of this SimpleDesktopInfo.
 
         桌面ip地址。
 
@@ -268,7 +268,7 @@ class SimpleDesktopInfo:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this SimpleDesktopInfo.
+        r"""Sets the ip_address of this SimpleDesktopInfo.
 
         桌面ip地址。
 
@@ -279,7 +279,7 @@ class SimpleDesktopInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this SimpleDesktopInfo.
+        r"""Gets the user_name of this SimpleDesktopInfo.
 
         用户名。
 
@@ -290,7 +290,7 @@ class SimpleDesktopInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this SimpleDesktopInfo.
+        r"""Sets the user_name of this SimpleDesktopInfo.
 
         用户名。
 
@@ -301,7 +301,7 @@ class SimpleDesktopInfo:
 
     @property
     def attach_user_infos(self):
-        """Gets the attach_user_infos of this SimpleDesktopInfo.
+        r"""Gets the attach_user_infos of this SimpleDesktopInfo.
 
         桌面已分配的用户信息列表。
 
@@ -312,7 +312,7 @@ class SimpleDesktopInfo:
 
     @attach_user_infos.setter
     def attach_user_infos(self, attach_user_infos):
-        """Sets the attach_user_infos of this SimpleDesktopInfo.
+        r"""Sets the attach_user_infos of this SimpleDesktopInfo.
 
         桌面已分配的用户信息列表。
 
@@ -323,7 +323,7 @@ class SimpleDesktopInfo:
 
     @property
     def user_group(self):
-        """Gets the user_group of this SimpleDesktopInfo.
+        r"""Gets the user_group of this SimpleDesktopInfo.
 
         权限组。
 
@@ -334,7 +334,7 @@ class SimpleDesktopInfo:
 
     @user_group.setter
     def user_group(self, user_group):
-        """Sets the user_group of this SimpleDesktopInfo.
+        r"""Sets the user_group of this SimpleDesktopInfo.
 
         权限组。
 
@@ -345,7 +345,7 @@ class SimpleDesktopInfo:
 
     @property
     def sid(self):
-        """Gets the sid of this SimpleDesktopInfo.
+        r"""Gets the sid of this SimpleDesktopInfo.
 
         桌面的SID信息。
 
@@ -356,7 +356,7 @@ class SimpleDesktopInfo:
 
     @sid.setter
     def sid(self, sid):
-        """Sets the sid of this SimpleDesktopInfo.
+        r"""Sets the sid of this SimpleDesktopInfo.
 
         桌面的SID信息。
 
@@ -367,7 +367,7 @@ class SimpleDesktopInfo:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this SimpleDesktopInfo.
+        r"""Gets the ou_name of this SimpleDesktopInfo.
 
         ou名称。
 
@@ -378,7 +378,7 @@ class SimpleDesktopInfo:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this SimpleDesktopInfo.
+        r"""Sets the ou_name of this SimpleDesktopInfo.
 
         ou名称。
 
@@ -389,7 +389,7 @@ class SimpleDesktopInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SimpleDesktopInfo.
+        r"""Gets the enterprise_project_id of this SimpleDesktopInfo.
 
         企业项目ID
 
@@ -400,7 +400,7 @@ class SimpleDesktopInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SimpleDesktopInfo.
+        r"""Sets the enterprise_project_id of this SimpleDesktopInfo.
 
         企业项目ID
 
@@ -411,7 +411,7 @@ class SimpleDesktopInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this SimpleDesktopInfo.
+        r"""Gets the tags of this SimpleDesktopInfo.
 
         标签列表。
 
@@ -422,7 +422,7 @@ class SimpleDesktopInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this SimpleDesktopInfo.
+        r"""Sets the tags of this SimpleDesktopInfo.
 
         标签列表。
 
@@ -433,7 +433,7 @@ class SimpleDesktopInfo:
 
     @property
     def in_maintenance_mode(self):
-        """Gets the in_maintenance_mode of this SimpleDesktopInfo.
+        r"""Gets the in_maintenance_mode of this SimpleDesktopInfo.
 
         是否处于管理员维护模式
 
@@ -444,7 +444,7 @@ class SimpleDesktopInfo:
 
     @in_maintenance_mode.setter
     def in_maintenance_mode(self, in_maintenance_mode):
-        """Sets the in_maintenance_mode of this SimpleDesktopInfo.
+        r"""Sets the in_maintenance_mode of this SimpleDesktopInfo.
 
         是否处于管理员维护模式
 
@@ -455,7 +455,7 @@ class SimpleDesktopInfo:
 
     @property
     def share_resource_sku(self):
-        """Gets the share_resource_sku of this SimpleDesktopInfo.
+        r"""Gets the share_resource_sku of this SimpleDesktopInfo.
 
         桌面协同资源SKU码
 
@@ -466,7 +466,7 @@ class SimpleDesktopInfo:
 
     @share_resource_sku.setter
     def share_resource_sku(self, share_resource_sku):
-        """Sets the share_resource_sku of this SimpleDesktopInfo.
+        r"""Sets the share_resource_sku of this SimpleDesktopInfo.
 
         桌面协同资源SKU码
 
@@ -477,7 +477,7 @@ class SimpleDesktopInfo:
 
     @property
     def desktop_type(self):
-        """Gets the desktop_type of this SimpleDesktopInfo.
+        r"""Gets the desktop_type of this SimpleDesktopInfo.
 
         桌面类型
 
@@ -488,7 +488,7 @@ class SimpleDesktopInfo:
 
     @desktop_type.setter
     def desktop_type(self, desktop_type):
-        """Sets the desktop_type of this SimpleDesktopInfo.
+        r"""Sets the desktop_type of this SimpleDesktopInfo.
 
         桌面类型
 
@@ -499,7 +499,7 @@ class SimpleDesktopInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this SimpleDesktopInfo.
+        r"""Gets the subnet_id of this SimpleDesktopInfo.
 
         桌面的子网ID。
 
@@ -510,7 +510,7 @@ class SimpleDesktopInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this SimpleDesktopInfo.
+        r"""Sets the subnet_id of this SimpleDesktopInfo.
 
         桌面的子网ID。
 
@@ -521,7 +521,7 @@ class SimpleDesktopInfo:
 
     @property
     def bill_resource_id(self):
-        """Gets the bill_resource_id of this SimpleDesktopInfo.
+        r"""Gets the bill_resource_id of this SimpleDesktopInfo.
 
         桌面计费资源ID。
 
@@ -532,7 +532,7 @@ class SimpleDesktopInfo:
 
     @bill_resource_id.setter
     def bill_resource_id(self, bill_resource_id):
-        """Sets the bill_resource_id of this SimpleDesktopInfo.
+        r"""Sets the bill_resource_id of this SimpleDesktopInfo.
 
         桌面计费资源ID。
 
@@ -543,7 +543,7 @@ class SimpleDesktopInfo:
 
     @property
     def status(self):
-        """Gets the status of this SimpleDesktopInfo.
+        r"""Gets the status of this SimpleDesktopInfo.
 
         桌面的运行状态。
 
@@ -554,7 +554,7 @@ class SimpleDesktopInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SimpleDesktopInfo.
+        r"""Sets the status of this SimpleDesktopInfo.
 
         桌面的运行状态。
 
@@ -565,7 +565,7 @@ class SimpleDesktopInfo:
 
     @property
     def task_status(self):
-        """Gets the task_status of this SimpleDesktopInfo.
+        r"""Gets the task_status of this SimpleDesktopInfo.
 
         桌面的任务状态。
 
@@ -576,7 +576,7 @@ class SimpleDesktopInfo:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this SimpleDesktopInfo.
+        r"""Sets the task_status of this SimpleDesktopInfo.
 
         桌面的任务状态。
 

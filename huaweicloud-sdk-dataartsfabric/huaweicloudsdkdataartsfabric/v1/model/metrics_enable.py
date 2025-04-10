@@ -23,7 +23,7 @@ class MetricsEnable:
     }
 
     def __init__(self):
-        """MetricsEnable
+        r"""MetricsEnable
 
         The model defined in huaweicloud sdk
 

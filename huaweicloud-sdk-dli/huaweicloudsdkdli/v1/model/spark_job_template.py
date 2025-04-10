@@ -39,7 +39,7 @@ class SparkJobTemplate:
     }
 
     def __init__(self, type=None, id=None, name=None, body=None, group=None, description=None, language=None, owner=None):
-        """SparkJobTemplate
+        r"""SparkJobTemplate
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class SparkJobTemplate:
 
     @property
     def type(self):
-        """Gets the type of this SparkJobTemplate.
+        r"""Gets the type of this SparkJobTemplate.
 
         模板类型
 
@@ -103,7 +103,7 @@ class SparkJobTemplate:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SparkJobTemplate.
+        r"""Sets the type of this SparkJobTemplate.
 
         模板类型
 
@@ -114,7 +114,7 @@ class SparkJobTemplate:
 
     @property
     def id(self):
-        """Gets the id of this SparkJobTemplate.
+        r"""Gets the id of this SparkJobTemplate.
 
         模板id
 
@@ -125,7 +125,7 @@ class SparkJobTemplate:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SparkJobTemplate.
+        r"""Sets the id of this SparkJobTemplate.
 
         模板id
 
@@ -136,7 +136,7 @@ class SparkJobTemplate:
 
     @property
     def name(self):
-        """Gets the name of this SparkJobTemplate.
+        r"""Gets the name of this SparkJobTemplate.
 
         模板名字
 
@@ -147,7 +147,7 @@ class SparkJobTemplate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SparkJobTemplate.
+        r"""Sets the name of this SparkJobTemplate.
 
         模板名字
 
@@ -158,7 +158,7 @@ class SparkJobTemplate:
 
     @property
     def body(self):
-        """Gets the body of this SparkJobTemplate.
+        r"""Gets the body of this SparkJobTemplate.
 
         :return: The body of this SparkJobTemplate.
         :rtype: :class:`huaweicloudsdkdli.v1.SparkJobTemplateDetail`
@@ -167,7 +167,7 @@ class SparkJobTemplate:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SparkJobTemplate.
+        r"""Sets the body of this SparkJobTemplate.
 
         :param body: The body of this SparkJobTemplate.
         :type body: :class:`huaweicloudsdkdli.v1.SparkJobTemplateDetail`
@@ -176,7 +176,7 @@ class SparkJobTemplate:
 
     @property
     def group(self):
-        """Gets the group of this SparkJobTemplate.
+        r"""Gets the group of this SparkJobTemplate.
 
         组名
 
@@ -187,7 +187,7 @@ class SparkJobTemplate:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this SparkJobTemplate.
+        r"""Sets the group of this SparkJobTemplate.
 
         组名
 
@@ -198,7 +198,7 @@ class SparkJobTemplate:
 
     @property
     def description(self):
-        """Gets the description of this SparkJobTemplate.
+        r"""Gets the description of this SparkJobTemplate.
 
         模板描述
 
@@ -209,7 +209,7 @@ class SparkJobTemplate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SparkJobTemplate.
+        r"""Sets the description of this SparkJobTemplate.
 
         模板描述
 
@@ -220,7 +220,7 @@ class SparkJobTemplate:
 
     @property
     def language(self):
-        """Gets the language of this SparkJobTemplate.
+        r"""Gets the language of this SparkJobTemplate.
 
         语言
 
@@ -231,7 +231,7 @@ class SparkJobTemplate:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this SparkJobTemplate.
+        r"""Sets the language of this SparkJobTemplate.
 
         语言
 
@@ -242,7 +242,7 @@ class SparkJobTemplate:
 
     @property
     def owner(self):
-        """Gets the owner of this SparkJobTemplate.
+        r"""Gets the owner of this SparkJobTemplate.
 
         模板拥有者
 
@@ -253,7 +253,7 @@ class SparkJobTemplate:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this SparkJobTemplate.
+        r"""Sets the owner of this SparkJobTemplate.
 
         模板拥有者
 

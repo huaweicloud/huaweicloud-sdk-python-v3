@@ -25,7 +25,7 @@ class ResizeGraphReq:
     }
 
     def __init__(self, resize=None):
-        """ResizeGraphReq
+        r"""ResizeGraphReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResizeGraphReq:
 
     @property
     def resize(self):
-        """Gets the resize of this ResizeGraphReq.
+        r"""Gets the resize of this ResizeGraphReq.
 
         :return: The resize of this ResizeGraphReq.
         :rtype: :class:`huaweicloudsdkges.v2.ResizeGraphReqResize`
@@ -51,7 +51,7 @@ class ResizeGraphReq:
 
     @resize.setter
     def resize(self, resize):
-        """Sets the resize of this ResizeGraphReq.
+        r"""Sets the resize of this ResizeGraphReq.
 
         :param resize: The resize of this ResizeGraphReq.
         :type resize: :class:`huaweicloudsdkges.v2.ResizeGraphReqResize`

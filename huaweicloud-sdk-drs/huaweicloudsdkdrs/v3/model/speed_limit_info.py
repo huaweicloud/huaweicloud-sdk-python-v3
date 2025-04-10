@@ -31,7 +31,7 @@ class SpeedLimitInfo:
     }
 
     def __init__(self, begin=None, end=None, speed=None, is_utc=None):
-        """SpeedLimitInfo
+        r"""SpeedLimitInfo
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class SpeedLimitInfo:
 
     @property
     def begin(self):
-        """Gets the begin of this SpeedLimitInfo.
+        r"""Gets the begin of this SpeedLimitInfo.
 
         开始限速时间, 此时间为UTC时间，开始时间为整时，若有分钟，则会忽略，格式为hh:mm，小时数为两位，例如：01:00。
 
@@ -72,7 +72,7 @@ class SpeedLimitInfo:
 
     @begin.setter
     def begin(self, begin):
-        """Sets the begin of this SpeedLimitInfo.
+        r"""Sets the begin of this SpeedLimitInfo.
 
         开始限速时间, 此时间为UTC时间，开始时间为整时，若有分钟，则会忽略，格式为hh:mm，小时数为两位，例如：01:00。
 
@@ -83,7 +83,7 @@ class SpeedLimitInfo:
 
     @property
     def end(self):
-        """Gets the end of this SpeedLimitInfo.
+        r"""Gets the end of this SpeedLimitInfo.
 
         结束时间,此时间为UTC时间,输入必须为59分结尾，格式为hh:mm，小时数为两位，例如：05:59。
 
@@ -94,7 +94,7 @@ class SpeedLimitInfo:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this SpeedLimitInfo.
+        r"""Sets the end of this SpeedLimitInfo.
 
         结束时间,此时间为UTC时间,输入必须为59分结尾，格式为hh:mm，小时数为两位，例如：05:59。
 
@@ -105,7 +105,7 @@ class SpeedLimitInfo:
 
     @property
     def speed(self):
-        """Gets the speed of this SpeedLimitInfo.
+        r"""Gets the speed of this SpeedLimitInfo.
 
         限速，取值范围为1~9999 ,单位为MB/s
 
@@ -116,7 +116,7 @@ class SpeedLimitInfo:
 
     @speed.setter
     def speed(self, speed):
-        """Sets the speed of this SpeedLimitInfo.
+        r"""Sets the speed of this SpeedLimitInfo.
 
         限速，取值范围为1~9999 ,单位为MB/s
 
@@ -127,7 +127,7 @@ class SpeedLimitInfo:
 
     @property
     def is_utc(self):
-        """Gets the is_utc of this SpeedLimitInfo.
+        r"""Gets the is_utc of this SpeedLimitInfo.
 
         是否为UTC时间
 
@@ -138,7 +138,7 @@ class SpeedLimitInfo:
 
     @is_utc.setter
     def is_utc(self, is_utc):
-        """Sets the is_utc of this SpeedLimitInfo.
+        r"""Sets the is_utc of this SpeedLimitInfo.
 
         是否为UTC时间
 

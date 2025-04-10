@@ -28,7 +28,7 @@ class ShowDirtyDataResponse(SdkResponse):
     }
 
     def __init__(self, count=None, dirty_data_list=None):
-        """ShowDirtyDataResponse
+        r"""ShowDirtyDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDirtyDataResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowDirtyDataResponse.
+        r"""Gets the count of this ShowDirtyDataResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ShowDirtyDataResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowDirtyDataResponse.
+        r"""Sets the count of this ShowDirtyDataResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ShowDirtyDataResponse(SdkResponse):
 
     @property
     def dirty_data_list(self):
-        """Gets the dirty_data_list of this ShowDirtyDataResponse.
+        r"""Gets the dirty_data_list of this ShowDirtyDataResponse.
 
         异常数据列表。
 
@@ -84,7 +84,7 @@ class ShowDirtyDataResponse(SdkResponse):
 
     @dirty_data_list.setter
     def dirty_data_list(self, dirty_data_list):
-        """Sets the dirty_data_list of this ShowDirtyDataResponse.
+        r"""Sets the dirty_data_list of this ShowDirtyDataResponse.
 
         异常数据列表。
 

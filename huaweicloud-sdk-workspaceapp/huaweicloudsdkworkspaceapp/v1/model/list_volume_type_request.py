@@ -23,7 +23,7 @@ class ListVolumeTypeRequest:
     }
 
     def __init__(self):
-        """ListVolumeTypeRequest
+        r"""ListVolumeTypeRequest
 
         The model defined in huaweicloud sdk
 

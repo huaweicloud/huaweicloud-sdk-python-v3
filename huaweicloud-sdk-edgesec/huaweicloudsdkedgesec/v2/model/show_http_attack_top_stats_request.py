@@ -39,7 +39,7 @@ class ShowHttpAttackTopStatsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, domain_name=None, stat_type=None, group_by=None, limit=None, time_type=None, start_time=None, end_time=None):
-        """ShowHttpAttackTopStatsRequest
+        r"""ShowHttpAttackTopStatsRequest
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowHttpAttackTopStatsRequest.
+        r"""Gets the enterprise_project_id of this ShowHttpAttackTopStatsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -100,7 +100,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowHttpAttackTopStatsRequest.
+        r"""Sets the enterprise_project_id of this ShowHttpAttackTopStatsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -111,7 +111,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowHttpAttackTopStatsRequest.
+        r"""Gets the domain_name of this ShowHttpAttackTopStatsRequest.
 
         域名
 
@@ -122,7 +122,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowHttpAttackTopStatsRequest.
+        r"""Sets the domain_name of this ShowHttpAttackTopStatsRequest.
 
         域名
 
@@ -133,7 +133,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this ShowHttpAttackTopStatsRequest.
+        r"""Gets the stat_type of this ShowHttpAttackTopStatsRequest.
 
         指标类型。例如：req_num（请求次数）、bw（带宽）。目前只支持req_num
 
@@ -144,7 +144,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this ShowHttpAttackTopStatsRequest.
+        r"""Sets the stat_type of this ShowHttpAttackTopStatsRequest.
 
         指标类型。例如：req_num（请求次数）、bw（带宽）。目前只支持req_num
 
@@ -155,7 +155,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @property
     def group_by(self):
-        """Gets the group_by of this ShowHttpAttackTopStatsRequest.
+        r"""Gets the group_by of this ShowHttpAttackTopStatsRequest.
 
         分组类型。响应值按分组类型进行统计，类型可为：host（请求的服务器域名）、sip（请求的客户端IP）、url（请求URL）、rule（自定义的策略类型描述）、user-agent（用户代理）、method（请求方法）、country（国家维度统计）。
 
@@ -166,7 +166,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this ShowHttpAttackTopStatsRequest.
+        r"""Sets the group_by of this ShowHttpAttackTopStatsRequest.
 
         分组类型。响应值按分组类型进行统计，类型可为：host（请求的服务器域名）、sip（请求的客户端IP）、url（请求URL）、rule（自定义的策略类型描述）、user-agent（用户代理）、method（请求方法）、country（国家维度统计）。
 
@@ -177,7 +177,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowHttpAttackTopStatsRequest.
+        r"""Gets the limit of this ShowHttpAttackTopStatsRequest.
 
         限制Top数量(不超过100，默认为10)
 
@@ -188,7 +188,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowHttpAttackTopStatsRequest.
+        r"""Sets the limit of this ShowHttpAttackTopStatsRequest.
 
         限制Top数量(不超过100，默认为10)
 
@@ -199,7 +199,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @property
     def time_type(self):
-        """Gets the time_type of this ShowHttpAttackTopStatsRequest.
+        r"""Gets the time_type of this ShowHttpAttackTopStatsRequest.
 
         时间枚举（LATEST（最近30mins）、TODAY（今天）、CUSTOMIZE（自定义，昨天到近30天任意整数天内））
 
@@ -210,7 +210,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @time_type.setter
     def time_type(self, time_type):
-        """Sets the time_type of this ShowHttpAttackTopStatsRequest.
+        r"""Sets the time_type of this ShowHttpAttackTopStatsRequest.
 
         时间枚举（LATEST（最近30mins）、TODAY（今天）、CUSTOMIZE（自定义，昨天到近30天任意整数天内））
 
@@ -221,7 +221,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowHttpAttackTopStatsRequest.
+        r"""Gets the start_time of this ShowHttpAttackTopStatsRequest.
 
         开始时间
 
@@ -232,7 +232,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowHttpAttackTopStatsRequest.
+        r"""Sets the start_time of this ShowHttpAttackTopStatsRequest.
 
         开始时间
 
@@ -243,7 +243,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowHttpAttackTopStatsRequest.
+        r"""Gets the end_time of this ShowHttpAttackTopStatsRequest.
 
         结束时间
 
@@ -254,7 +254,7 @@ class ShowHttpAttackTopStatsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowHttpAttackTopStatsRequest.
+        r"""Sets the end_time of this ShowHttpAttackTopStatsRequest.
 
         结束时间
 

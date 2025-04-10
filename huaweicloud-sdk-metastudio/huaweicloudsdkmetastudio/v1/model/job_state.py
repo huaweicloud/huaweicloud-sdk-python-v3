@@ -41,7 +41,7 @@ class JobState:
     }
 
     def __init__(self):
-        """JobState
+        r"""JobState
 
         The model defined in huaweicloud sdk
 

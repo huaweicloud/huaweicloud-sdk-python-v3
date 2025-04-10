@@ -30,7 +30,7 @@ class ShowWorkloadPlanStageResponse(SdkResponse):
     }
 
     def __init__(self, workload_res_code=None, workload_res_str=None, workload_plan_stage=None):
-        """ShowWorkloadPlanStageResponse
+        r"""ShowWorkloadPlanStageResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowWorkloadPlanStageResponse(SdkResponse):
 
     @property
     def workload_res_code(self):
-        """Gets the workload_res_code of this ShowWorkloadPlanStageResponse.
+        r"""Gets the workload_res_code of this ShowWorkloadPlanStageResponse.
 
         结果状态码。
 
@@ -69,7 +69,7 @@ class ShowWorkloadPlanStageResponse(SdkResponse):
 
     @workload_res_code.setter
     def workload_res_code(self, workload_res_code):
-        """Sets the workload_res_code of this ShowWorkloadPlanStageResponse.
+        r"""Sets the workload_res_code of this ShowWorkloadPlanStageResponse.
 
         结果状态码。
 
@@ -80,7 +80,7 @@ class ShowWorkloadPlanStageResponse(SdkResponse):
 
     @property
     def workload_res_str(self):
-        """Gets the workload_res_str of this ShowWorkloadPlanStageResponse.
+        r"""Gets the workload_res_str of this ShowWorkloadPlanStageResponse.
 
         结果描述。
 
@@ -91,7 +91,7 @@ class ShowWorkloadPlanStageResponse(SdkResponse):
 
     @workload_res_str.setter
     def workload_res_str(self, workload_res_str):
-        """Sets the workload_res_str of this ShowWorkloadPlanStageResponse.
+        r"""Sets the workload_res_str of this ShowWorkloadPlanStageResponse.
 
         结果描述。
 
@@ -102,7 +102,7 @@ class ShowWorkloadPlanStageResponse(SdkResponse):
 
     @property
     def workload_plan_stage(self):
-        """Gets the workload_plan_stage of this ShowWorkloadPlanStageResponse.
+        r"""Gets the workload_plan_stage of this ShowWorkloadPlanStageResponse.
 
         :return: The workload_plan_stage of this ShowWorkloadPlanStageResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.PlanStage`
@@ -111,7 +111,7 @@ class ShowWorkloadPlanStageResponse(SdkResponse):
 
     @workload_plan_stage.setter
     def workload_plan_stage(self, workload_plan_stage):
-        """Sets the workload_plan_stage of this ShowWorkloadPlanStageResponse.
+        r"""Sets the workload_plan_stage of this ShowWorkloadPlanStageResponse.
 
         :param workload_plan_stage: The workload_plan_stage of this ShowWorkloadPlanStageResponse.
         :type workload_plan_stage: :class:`huaweicloudsdkdws.v2.PlanStage`

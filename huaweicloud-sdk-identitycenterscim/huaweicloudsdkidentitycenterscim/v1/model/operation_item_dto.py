@@ -29,7 +29,7 @@ class OperationItemDto:
     }
 
     def __init__(self, op=None, path=None, value=None):
-        """OperationItemDto
+        r"""OperationItemDto
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class OperationItemDto:
 
     @property
     def op(self):
-        """Gets the op of this OperationItemDto.
+        r"""Gets the op of this OperationItemDto.
 
         要执行的修改操作类型。 add：添加属性，replace：替换属性，remove：删除属性
 
@@ -67,7 +67,7 @@ class OperationItemDto:
 
     @op.setter
     def op(self, op):
-        """Sets the op of this OperationItemDto.
+        r"""Sets the op of this OperationItemDto.
 
         要执行的修改操作类型。 add：添加属性，replace：替换属性，remove：删除属性
 
@@ -78,7 +78,7 @@ class OperationItemDto:
 
     @property
     def path(self):
-        """Gets the path of this OperationItemDto.
+        r"""Gets the path of this OperationItemDto.
 
         要修改的属性路径
 
@@ -89,7 +89,7 @@ class OperationItemDto:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this OperationItemDto.
+        r"""Sets the path of this OperationItemDto.
 
         要修改的属性路径
 
@@ -100,7 +100,7 @@ class OperationItemDto:
 
     @property
     def value(self):
-        """Gets the value of this OperationItemDto.
+        r"""Gets the value of this OperationItemDto.
 
         要修改的属性值。执行删除操作时不填写
 
@@ -111,7 +111,7 @@ class OperationItemDto:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this OperationItemDto.
+        r"""Sets the value of this OperationItemDto.
 
         要修改的属性值。执行删除操作时不填写
 

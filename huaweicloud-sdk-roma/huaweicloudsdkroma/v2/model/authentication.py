@@ -27,7 +27,7 @@ class Authentication:
     }
 
     def __init__(self, user_name=None, password=None):
-        """Authentication
+        r"""Authentication
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Authentication:
 
     @property
     def user_name(self):
-        """Gets the user_name of this Authentication.
+        r"""Gets the user_name of this Authentication.
 
         一型一密/一机一密的用户名
 
@@ -61,7 +61,7 @@ class Authentication:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this Authentication.
+        r"""Sets the user_name of this Authentication.
 
         一型一密/一机一密的用户名
 
@@ -72,7 +72,7 @@ class Authentication:
 
     @property
     def password(self):
-        """Gets the password of this Authentication.
+        r"""Gets the password of this Authentication.
 
         一型一密/一机一密的密码，输入要求：至少1个数字，1个大写字母，1个小写字母，1个特殊字符(~!@#$%^&*()-_=+|[{}];:<>/?)，长度8-32个字符
 
@@ -83,7 +83,7 @@ class Authentication:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this Authentication.
+        r"""Sets the password of this Authentication.
 
         一型一密/一机一密的密码，输入要求：至少1个数字，1个大写字母，1个小写字母，1个特殊字符(~!@#$%^&*()-_=+|[{}];:<>/?)，长度8-32个字符
 

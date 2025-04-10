@@ -25,7 +25,7 @@ class ShowSecAppTaskResultRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowSecAppTaskResultRequest
+        r"""ShowSecAppTaskResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSecAppTaskResultRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowSecAppTaskResultRequest.
+        r"""Gets the task_id of this ShowSecAppTaskResultRequest.
 
         任务ID
 
@@ -53,7 +53,7 @@ class ShowSecAppTaskResultRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowSecAppTaskResultRequest.
+        r"""Sets the task_id of this ShowSecAppTaskResultRequest.
 
         任务ID
 

@@ -27,7 +27,7 @@ class UpdateFlavorRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateFlavorRequest
+        r"""UpdateFlavorRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateFlavorRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateFlavorRequest.
+        r"""Gets the cluster_id of this UpdateFlavorRequest.
 
         指定待更改规格的集群ID。
 
@@ -60,7 +60,7 @@ class UpdateFlavorRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateFlavorRequest.
+        r"""Sets the cluster_id of this UpdateFlavorRequest.
 
         指定待更改规格的集群ID。
 
@@ -71,7 +71,7 @@ class UpdateFlavorRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFlavorRequest.
+        r"""Gets the body of this UpdateFlavorRequest.
 
         :return: The body of this UpdateFlavorRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateFlavorReq`
@@ -80,7 +80,7 @@ class UpdateFlavorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFlavorRequest.
+        r"""Sets the body of this UpdateFlavorRequest.
 
         :param body: The body of this UpdateFlavorRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UpdateFlavorReq`

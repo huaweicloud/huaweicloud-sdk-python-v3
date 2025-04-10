@@ -29,7 +29,7 @@ class UpdateJobRequest:
     }
 
     def __init__(self, workspace=None, job_name=None, body=None):
-        """UpdateJobRequest
+        r"""UpdateJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateJobRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateJobRequest.
+        r"""Gets the workspace of this UpdateJobRequest.
 
         工作空间id
 
@@ -67,7 +67,7 @@ class UpdateJobRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateJobRequest.
+        r"""Sets the workspace of this UpdateJobRequest.
 
         工作空间id
 
@@ -78,7 +78,7 @@ class UpdateJobRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this UpdateJobRequest.
+        r"""Gets the job_name of this UpdateJobRequest.
 
         作业名称.
 
@@ -89,7 +89,7 @@ class UpdateJobRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this UpdateJobRequest.
+        r"""Sets the job_name of this UpdateJobRequest.
 
         作业名称.
 
@@ -100,7 +100,7 @@ class UpdateJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateJobRequest.
+        r"""Gets the body of this UpdateJobRequest.
 
         :return: The body of this UpdateJobRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.JobInfo`
@@ -109,7 +109,7 @@ class UpdateJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateJobRequest.
+        r"""Sets the body of this UpdateJobRequest.
 
         :param body: The body of this UpdateJobRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.JobInfo`

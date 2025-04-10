@@ -29,7 +29,7 @@ class UpdateMultiTasksRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None, body=None):
-        """UpdateMultiTasksRequest
+        r"""UpdateMultiTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateMultiTasksRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateMultiTasksRequest.
+        r"""Gets the instance_id of this UpdateMultiTasksRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class UpdateMultiTasksRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateMultiTasksRequest.
+        r"""Sets the instance_id of this UpdateMultiTasksRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class UpdateMultiTasksRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateMultiTasksRequest.
+        r"""Gets the task_id of this UpdateMultiTasksRequest.
 
         任务ID
 
@@ -88,7 +88,7 @@ class UpdateMultiTasksRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateMultiTasksRequest.
+        r"""Sets the task_id of this UpdateMultiTasksRequest.
 
         任务ID
 
@@ -99,7 +99,7 @@ class UpdateMultiTasksRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMultiTasksRequest.
+        r"""Gets the body of this UpdateMultiTasksRequest.
 
         :return: The body of this UpdateMultiTasksRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.MultiTaskUpdateBody`
@@ -108,7 +108,7 @@ class UpdateMultiTasksRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMultiTasksRequest.
+        r"""Sets the body of this UpdateMultiTasksRequest.
 
         :param body: The body of this UpdateMultiTasksRequest.
         :type body: :class:`huaweicloudsdkroma.v2.MultiTaskUpdateBody`

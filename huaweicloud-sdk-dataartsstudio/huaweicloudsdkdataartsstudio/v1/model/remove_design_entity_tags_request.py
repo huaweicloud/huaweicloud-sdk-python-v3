@@ -33,7 +33,7 @@ class RemoveDesignEntityTagsRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, entity_id=None, attr_id=None, tag=None):
-        """RemoveDesignEntityTagsRequest
+        r"""RemoveDesignEntityTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class RemoveDesignEntityTagsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this RemoveDesignEntityTagsRequest.
+        r"""Gets the workspace of this RemoveDesignEntityTagsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -79,7 +79,7 @@ class RemoveDesignEntityTagsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this RemoveDesignEntityTagsRequest.
+        r"""Sets the workspace of this RemoveDesignEntityTagsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -90,7 +90,7 @@ class RemoveDesignEntityTagsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this RemoveDesignEntityTagsRequest.
+        r"""Gets the x_project_id of this RemoveDesignEntityTagsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -101,7 +101,7 @@ class RemoveDesignEntityTagsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this RemoveDesignEntityTagsRequest.
+        r"""Sets the x_project_id of this RemoveDesignEntityTagsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -112,7 +112,7 @@ class RemoveDesignEntityTagsRequest:
 
     @property
     def entity_id(self):
-        """Gets the entity_id of this RemoveDesignEntityTagsRequest.
+        r"""Gets the entity_id of this RemoveDesignEntityTagsRequest.
 
         表的ID，ID字符串。
 
@@ -123,7 +123,7 @@ class RemoveDesignEntityTagsRequest:
 
     @entity_id.setter
     def entity_id(self, entity_id):
-        """Sets the entity_id of this RemoveDesignEntityTagsRequest.
+        r"""Sets the entity_id of this RemoveDesignEntityTagsRequest.
 
         表的ID，ID字符串。
 
@@ -134,7 +134,7 @@ class RemoveDesignEntityTagsRequest:
 
     @property
     def attr_id(self):
-        """Gets the attr_id of this RemoveDesignEntityTagsRequest.
+        r"""Gets the attr_id of this RemoveDesignEntityTagsRequest.
 
         属性的ID，ID字符串。
 
@@ -145,7 +145,7 @@ class RemoveDesignEntityTagsRequest:
 
     @attr_id.setter
     def attr_id(self, attr_id):
-        """Sets the attr_id of this RemoveDesignEntityTagsRequest.
+        r"""Sets the attr_id of this RemoveDesignEntityTagsRequest.
 
         属性的ID，ID字符串。
 
@@ -156,7 +156,7 @@ class RemoveDesignEntityTagsRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this RemoveDesignEntityTagsRequest.
+        r"""Gets the tag of this RemoveDesignEntityTagsRequest.
 
         标签名。
 
@@ -167,7 +167,7 @@ class RemoveDesignEntityTagsRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this RemoveDesignEntityTagsRequest.
+        r"""Sets the tag of this RemoveDesignEntityTagsRequest.
 
         标签名。
 

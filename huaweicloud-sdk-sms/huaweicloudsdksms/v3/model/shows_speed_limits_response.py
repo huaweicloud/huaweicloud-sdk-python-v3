@@ -26,7 +26,7 @@ class ShowsSpeedLimitsResponse(SdkResponse):
     }
 
     def __init__(self, speed_limit=None):
-        """ShowsSpeedLimitsResponse
+        r"""ShowsSpeedLimitsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowsSpeedLimitsResponse(SdkResponse):
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this ShowsSpeedLimitsResponse.
+        r"""Gets the speed_limit of this ShowsSpeedLimitsResponse.
 
         按时间段限速信息
 
@@ -55,7 +55,7 @@ class ShowsSpeedLimitsResponse(SdkResponse):
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this ShowsSpeedLimitsResponse.
+        r"""Sets the speed_limit of this ShowsSpeedLimitsResponse.
 
         按时间段限速信息
 

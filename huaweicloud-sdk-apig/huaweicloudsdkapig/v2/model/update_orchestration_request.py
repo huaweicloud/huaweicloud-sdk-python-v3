@@ -29,7 +29,7 @@ class UpdateOrchestrationRequest:
     }
 
     def __init__(self, instance_id=None, orchestration_id=None, body=None):
-        """UpdateOrchestrationRequest
+        r"""UpdateOrchestrationRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateOrchestrationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateOrchestrationRequest.
+        r"""Gets the instance_id of this UpdateOrchestrationRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -66,7 +66,7 @@ class UpdateOrchestrationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateOrchestrationRequest.
+        r"""Sets the instance_id of this UpdateOrchestrationRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -77,7 +77,7 @@ class UpdateOrchestrationRequest:
 
     @property
     def orchestration_id(self):
-        """Gets the orchestration_id of this UpdateOrchestrationRequest.
+        r"""Gets the orchestration_id of this UpdateOrchestrationRequest.
 
         编排规则编号
 
@@ -88,7 +88,7 @@ class UpdateOrchestrationRequest:
 
     @orchestration_id.setter
     def orchestration_id(self, orchestration_id):
-        """Sets the orchestration_id of this UpdateOrchestrationRequest.
+        r"""Sets the orchestration_id of this UpdateOrchestrationRequest.
 
         编排规则编号
 
@@ -99,7 +99,7 @@ class UpdateOrchestrationRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateOrchestrationRequest.
+        r"""Gets the body of this UpdateOrchestrationRequest.
 
         :return: The body of this UpdateOrchestrationRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.OrchestrationCreate`
@@ -108,7 +108,7 @@ class UpdateOrchestrationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateOrchestrationRequest.
+        r"""Sets the body of this UpdateOrchestrationRequest.
 
         :param body: The body of this UpdateOrchestrationRequest.
         :type body: :class:`huaweicloudsdkapig.v2.OrchestrationCreate`

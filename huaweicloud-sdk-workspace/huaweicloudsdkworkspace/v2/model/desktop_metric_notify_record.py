@@ -31,7 +31,7 @@ class DesktopMetricNotifyRecord:
     }
 
     def __init__(self, match_count=None, metric_name=None, threshold=None, comparison_operator=None):
-        """DesktopMetricNotifyRecord
+        r"""DesktopMetricNotifyRecord
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DesktopMetricNotifyRecord:
 
     @property
     def match_count(self):
-        """Gets the match_count of this DesktopMetricNotifyRecord.
+        r"""Gets the match_count of this DesktopMetricNotifyRecord.
 
         满足通知规则阈值的桌面数
 
@@ -75,7 +75,7 @@ class DesktopMetricNotifyRecord:
 
     @match_count.setter
     def match_count(self, match_count):
-        """Sets the match_count of this DesktopMetricNotifyRecord.
+        r"""Sets the match_count of this DesktopMetricNotifyRecord.
 
         满足通知规则阈值的桌面数
 
@@ -86,7 +86,7 @@ class DesktopMetricNotifyRecord:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this DesktopMetricNotifyRecord.
+        r"""Gets the metric_name of this DesktopMetricNotifyRecord.
 
         指标名称
 
@@ -97,7 +97,7 @@ class DesktopMetricNotifyRecord:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this DesktopMetricNotifyRecord.
+        r"""Sets the metric_name of this DesktopMetricNotifyRecord.
 
         指标名称
 
@@ -108,7 +108,7 @@ class DesktopMetricNotifyRecord:
 
     @property
     def threshold(self):
-        """Gets the threshold of this DesktopMetricNotifyRecord.
+        r"""Gets the threshold of this DesktopMetricNotifyRecord.
 
         统计持续周期(天)
 
@@ -119,7 +119,7 @@ class DesktopMetricNotifyRecord:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this DesktopMetricNotifyRecord.
+        r"""Sets the threshold of this DesktopMetricNotifyRecord.
 
         统计持续周期(天)
 
@@ -130,7 +130,7 @@ class DesktopMetricNotifyRecord:
 
     @property
     def comparison_operator(self):
-        """Gets the comparison_operator of this DesktopMetricNotifyRecord.
+        r"""Gets the comparison_operator of this DesktopMetricNotifyRecord.
 
         统计指标对应的统计值和threshold进行比较的条件 * `>=` -  统计指标大于等于threshold时触发 * `>` -   统计指标大于threshold时触发 * `=` -  统计指标等于threshold时触发 * `<=` -  统计指标小于等于threshold时触发 * `<` -  统计指标小于threshold时触发
 
@@ -141,7 +141,7 @@ class DesktopMetricNotifyRecord:
 
     @comparison_operator.setter
     def comparison_operator(self, comparison_operator):
-        """Sets the comparison_operator of this DesktopMetricNotifyRecord.
+        r"""Sets the comparison_operator of this DesktopMetricNotifyRecord.
 
         统计指标对应的统计值和threshold进行比较的条件 * `>=` -  统计指标大于等于threshold时触发 * `>` -   统计指标大于threshold时触发 * `=` -  统计指标等于threshold时触发 * `<=` -  统计指标小于等于threshold时触发 * `<` -  统计指标小于threshold时触发
 

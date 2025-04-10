@@ -33,7 +33,7 @@ class DeleteTableColumnStatisticsRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name=None, column_name=None):
-        """DeleteTableColumnStatisticsRequest
+        r"""DeleteTableColumnStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class DeleteTableColumnStatisticsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteTableColumnStatisticsRequest.
+        r"""Gets the instance_id of this DeleteTableColumnStatisticsRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class DeleteTableColumnStatisticsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteTableColumnStatisticsRequest.
+        r"""Sets the instance_id of this DeleteTableColumnStatisticsRequest.
 
         实例ID
 
@@ -89,7 +89,7 @@ class DeleteTableColumnStatisticsRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this DeleteTableColumnStatisticsRequest.
+        r"""Gets the catalog_name of this DeleteTableColumnStatisticsRequest.
 
         catalog名字
 
@@ -100,7 +100,7 @@ class DeleteTableColumnStatisticsRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this DeleteTableColumnStatisticsRequest.
+        r"""Sets the catalog_name of this DeleteTableColumnStatisticsRequest.
 
         catalog名字
 
@@ -111,7 +111,7 @@ class DeleteTableColumnStatisticsRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DeleteTableColumnStatisticsRequest.
+        r"""Gets the database_name of this DeleteTableColumnStatisticsRequest.
 
         数据库名字
 
@@ -122,7 +122,7 @@ class DeleteTableColumnStatisticsRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DeleteTableColumnStatisticsRequest.
+        r"""Sets the database_name of this DeleteTableColumnStatisticsRequest.
 
         数据库名字
 
@@ -133,7 +133,7 @@ class DeleteTableColumnStatisticsRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DeleteTableColumnStatisticsRequest.
+        r"""Gets the table_name of this DeleteTableColumnStatisticsRequest.
 
         表名称
 
@@ -144,7 +144,7 @@ class DeleteTableColumnStatisticsRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DeleteTableColumnStatisticsRequest.
+        r"""Sets the table_name of this DeleteTableColumnStatisticsRequest.
 
         表名称
 
@@ -155,7 +155,7 @@ class DeleteTableColumnStatisticsRequest:
 
     @property
     def column_name(self):
-        """Gets the column_name of this DeleteTableColumnStatisticsRequest.
+        r"""Gets the column_name of this DeleteTableColumnStatisticsRequest.
 
         被删除的列名，不填写则删除表所有统计信息
 
@@ -166,7 +166,7 @@ class DeleteTableColumnStatisticsRequest:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this DeleteTableColumnStatisticsRequest.
+        r"""Sets the column_name of this DeleteTableColumnStatisticsRequest.
 
         被删除的列名，不填写则删除表所有统计信息
 

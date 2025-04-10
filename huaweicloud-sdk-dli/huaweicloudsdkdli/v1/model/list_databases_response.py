@@ -32,7 +32,7 @@ class ListDatabasesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, database_count=None, databases=None):
-        """ListDatabasesResponse
+        r"""ListDatabasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListDatabasesResponse.
+        r"""Gets the is_success of this ListDatabasesResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -76,7 +76,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListDatabasesResponse.
+        r"""Sets the is_success of this ListDatabasesResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -87,7 +87,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListDatabasesResponse.
+        r"""Gets the message of this ListDatabasesResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -98,7 +98,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListDatabasesResponse.
+        r"""Sets the message of this ListDatabasesResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -109,7 +109,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @property
     def database_count(self):
-        """Gets the database_count of this ListDatabasesResponse.
+        r"""Gets the database_count of this ListDatabasesResponse.
 
         数据库的总数。
 
@@ -120,7 +120,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @database_count.setter
     def database_count(self, database_count):
-        """Sets the database_count of this ListDatabasesResponse.
+        r"""Sets the database_count of this ListDatabasesResponse.
 
         数据库的总数。
 
@@ -131,7 +131,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this ListDatabasesResponse.
+        r"""Gets the databases of this ListDatabasesResponse.
 
         查询所有数据库的响应参数。
 
@@ -142,7 +142,7 @@ class ListDatabasesResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ListDatabasesResponse.
+        r"""Sets the databases of this ListDatabasesResponse.
 
         查询所有数据库的响应参数。
 

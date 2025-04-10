@@ -37,7 +37,7 @@ class TunnelInfo:
     }
 
     def __init__(self, tunnel_id=None, device_id=None, create_time=None, closed_time=None, status=None, source_connect_state=None, device_connect_state=None):
-        """TunnelInfo
+        r"""TunnelInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class TunnelInfo:
 
     @property
     def tunnel_id(self):
-        """Gets the tunnel_id of this TunnelInfo.
+        r"""Gets the tunnel_id of this TunnelInfo.
 
         隧道ID
 
@@ -96,7 +96,7 @@ class TunnelInfo:
 
     @tunnel_id.setter
     def tunnel_id(self, tunnel_id):
-        """Sets the tunnel_id of this TunnelInfo.
+        r"""Sets the tunnel_id of this TunnelInfo.
 
         隧道ID
 
@@ -107,7 +107,7 @@ class TunnelInfo:
 
     @property
     def device_id(self):
-        """Gets the device_id of this TunnelInfo.
+        r"""Gets the device_id of this TunnelInfo.
 
         设备ID
 
@@ -118,7 +118,7 @@ class TunnelInfo:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this TunnelInfo.
+        r"""Sets the device_id of this TunnelInfo.
 
         设备ID
 
@@ -129,7 +129,7 @@ class TunnelInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TunnelInfo.
+        r"""Gets the create_time of this TunnelInfo.
 
         隧道创建时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -140,7 +140,7 @@ class TunnelInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TunnelInfo.
+        r"""Sets the create_time of this TunnelInfo.
 
         隧道创建时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -151,7 +151,7 @@ class TunnelInfo:
 
     @property
     def closed_time(self):
-        """Gets the closed_time of this TunnelInfo.
+        r"""Gets the closed_time of this TunnelInfo.
 
         隧道更新时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -162,7 +162,7 @@ class TunnelInfo:
 
     @closed_time.setter
     def closed_time(self, closed_time):
-        """Sets the closed_time of this TunnelInfo.
+        r"""Sets the closed_time of this TunnelInfo.
 
         隧道更新时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -173,7 +173,7 @@ class TunnelInfo:
 
     @property
     def status(self):
-        """Gets the status of this TunnelInfo.
+        r"""Gets the status of this TunnelInfo.
 
         隧道状态 CLOSED | OPEN
 
@@ -184,7 +184,7 @@ class TunnelInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TunnelInfo.
+        r"""Sets the status of this TunnelInfo.
 
         隧道状态 CLOSED | OPEN
 
@@ -195,7 +195,7 @@ class TunnelInfo:
 
     @property
     def source_connect_state(self):
-        """Gets the source_connect_state of this TunnelInfo.
+        r"""Gets the source_connect_state of this TunnelInfo.
 
         :return: The source_connect_state of this TunnelInfo.
         :rtype: :class:`huaweicloudsdkiotda.v5.ConnectState`
@@ -204,7 +204,7 @@ class TunnelInfo:
 
     @source_connect_state.setter
     def source_connect_state(self, source_connect_state):
-        """Sets the source_connect_state of this TunnelInfo.
+        r"""Sets the source_connect_state of this TunnelInfo.
 
         :param source_connect_state: The source_connect_state of this TunnelInfo.
         :type source_connect_state: :class:`huaweicloudsdkiotda.v5.ConnectState`
@@ -213,7 +213,7 @@ class TunnelInfo:
 
     @property
     def device_connect_state(self):
-        """Gets the device_connect_state of this TunnelInfo.
+        r"""Gets the device_connect_state of this TunnelInfo.
 
         :return: The device_connect_state of this TunnelInfo.
         :rtype: :class:`huaweicloudsdkiotda.v5.ConnectState`
@@ -222,7 +222,7 @@ class TunnelInfo:
 
     @device_connect_state.setter
     def device_connect_state(self, device_connect_state):
-        """Sets the device_connect_state of this TunnelInfo.
+        r"""Sets the device_connect_state of this TunnelInfo.
 
         :param device_connect_state: The device_connect_state of this TunnelInfo.
         :type device_connect_state: :class:`huaweicloudsdkiotda.v5.ConnectState`

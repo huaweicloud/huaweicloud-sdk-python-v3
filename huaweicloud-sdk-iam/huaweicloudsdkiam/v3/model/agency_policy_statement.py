@@ -29,7 +29,7 @@ class AgencyPolicyStatement:
     }
 
     def __init__(self, action=None, effect=None, resource=None):
-        """AgencyPolicyStatement
+        r"""AgencyPolicyStatement
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AgencyPolicyStatement:
 
     @property
     def action(self):
-        """Gets the action of this AgencyPolicyStatement.
+        r"""Gets the action of this AgencyPolicyStatement.
 
         授权项，指对资源的具体操作权限。 > - 当自定义策略为委托自定义策略时，该字段值为：``` \"Action\": [\"iam:agencies:assume\"]```。
 
@@ -66,7 +66,7 @@ class AgencyPolicyStatement:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this AgencyPolicyStatement.
+        r"""Sets the action of this AgencyPolicyStatement.
 
         授权项，指对资源的具体操作权限。 > - 当自定义策略为委托自定义策略时，该字段值为：``` \"Action\": [\"iam:agencies:assume\"]```。
 
@@ -77,7 +77,7 @@ class AgencyPolicyStatement:
 
     @property
     def effect(self):
-        """Gets the effect of this AgencyPolicyStatement.
+        r"""Gets the effect of this AgencyPolicyStatement.
 
         作用。包含两种：允许（Allow）和拒绝（Deny），既有Allow又有Deny的授权语句时，遵循Deny优先的原则。
 
@@ -88,7 +88,7 @@ class AgencyPolicyStatement:
 
     @effect.setter
     def effect(self, effect):
-        """Sets the effect of this AgencyPolicyStatement.
+        r"""Sets the effect of this AgencyPolicyStatement.
 
         作用。包含两种：允许（Allow）和拒绝（Deny），既有Allow又有Deny的授权语句时，遵循Deny优先的原则。
 
@@ -99,7 +99,7 @@ class AgencyPolicyStatement:
 
     @property
     def resource(self):
-        """Gets the resource of this AgencyPolicyStatement.
+        r"""Gets the resource of this AgencyPolicyStatement.
 
         :return: The resource of this AgencyPolicyStatement.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyPolicyResource`
@@ -108,7 +108,7 @@ class AgencyPolicyStatement:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this AgencyPolicyStatement.
+        r"""Sets the resource of this AgencyPolicyStatement.
 
         :param resource: The resource of this AgencyPolicyStatement.
         :type resource: :class:`huaweicloudsdkiam.v3.AgencyPolicyResource`

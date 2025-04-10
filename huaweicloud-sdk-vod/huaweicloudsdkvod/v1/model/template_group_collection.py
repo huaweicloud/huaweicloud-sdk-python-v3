@@ -31,7 +31,7 @@ class TemplateGroupCollection:
     }
 
     def __init__(self, group_collection_id=None, name=None, description=None, template_group_list=None):
-        """TemplateGroupCollection
+        r"""TemplateGroupCollection
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TemplateGroupCollection:
 
     @property
     def group_collection_id(self):
-        """Gets the group_collection_id of this TemplateGroupCollection.
+        r"""Gets the group_collection_id of this TemplateGroupCollection.
 
         模板组集合id<br/> 
 
@@ -75,7 +75,7 @@ class TemplateGroupCollection:
 
     @group_collection_id.setter
     def group_collection_id(self, group_collection_id):
-        """Sets the group_collection_id of this TemplateGroupCollection.
+        r"""Sets the group_collection_id of this TemplateGroupCollection.
 
         模板组集合id<br/> 
 
@@ -86,7 +86,7 @@ class TemplateGroupCollection:
 
     @property
     def name(self):
-        """Gets the name of this TemplateGroupCollection.
+        r"""Gets the name of this TemplateGroupCollection.
 
         模板组集合名称<br/> 
 
@@ -97,7 +97,7 @@ class TemplateGroupCollection:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TemplateGroupCollection.
+        r"""Sets the name of this TemplateGroupCollection.
 
         模板组集合名称<br/> 
 
@@ -108,7 +108,7 @@ class TemplateGroupCollection:
 
     @property
     def description(self):
-        """Gets the description of this TemplateGroupCollection.
+        r"""Gets the description of this TemplateGroupCollection.
 
         模板介绍<br/> 
 
@@ -119,7 +119,7 @@ class TemplateGroupCollection:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TemplateGroupCollection.
+        r"""Sets the description of this TemplateGroupCollection.
 
         模板介绍<br/> 
 
@@ -130,7 +130,7 @@ class TemplateGroupCollection:
 
     @property
     def template_group_list(self):
-        """Gets the template_group_list of this TemplateGroupCollection.
+        r"""Gets the template_group_list of this TemplateGroupCollection.
 
         转码组列表<br/> 
 
@@ -141,7 +141,7 @@ class TemplateGroupCollection:
 
     @template_group_list.setter
     def template_group_list(self, template_group_list):
-        """Sets the template_group_list of this TemplateGroupCollection.
+        r"""Sets the template_group_list of this TemplateGroupCollection.
 
         转码组列表<br/> 
 

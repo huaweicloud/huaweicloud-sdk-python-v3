@@ -26,7 +26,7 @@ class ShowPublisherResponse(SdkResponse):
     }
 
     def __init__(self, publisher_detail_map=None):
-        """ShowPublisherResponse
+        r"""ShowPublisherResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPublisherResponse(SdkResponse):
 
     @property
     def publisher_detail_map(self):
-        """Gets the publisher_detail_map of this ShowPublisherResponse.
+        r"""Gets the publisher_detail_map of this ShowPublisherResponse.
 
         发布商详情
 
@@ -55,7 +55,7 @@ class ShowPublisherResponse(SdkResponse):
 
     @publisher_detail_map.setter
     def publisher_detail_map(self, publisher_detail_map):
-        """Sets the publisher_detail_map of this ShowPublisherResponse.
+        r"""Sets the publisher_detail_map of this ShowPublisherResponse.
 
         发布商详情
 

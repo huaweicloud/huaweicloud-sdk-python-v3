@@ -27,7 +27,7 @@ class ShowCentralNetworkGdgwAttachmentRequest:
     }
 
     def __init__(self, central_network_id=None, gdgw_attachment_id=None):
-        """ShowCentralNetworkGdgwAttachmentRequest
+        r"""ShowCentralNetworkGdgwAttachmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowCentralNetworkGdgwAttachmentRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this ShowCentralNetworkGdgwAttachmentRequest.
+        r"""Gets the central_network_id of this ShowCentralNetworkGdgwAttachmentRequest.
 
         中心网络的ID。
 
@@ -59,7 +59,7 @@ class ShowCentralNetworkGdgwAttachmentRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this ShowCentralNetworkGdgwAttachmentRequest.
+        r"""Sets the central_network_id of this ShowCentralNetworkGdgwAttachmentRequest.
 
         中心网络的ID。
 
@@ -70,7 +70,7 @@ class ShowCentralNetworkGdgwAttachmentRequest:
 
     @property
     def gdgw_attachment_id(self):
-        """Gets the gdgw_attachment_id of this ShowCentralNetworkGdgwAttachmentRequest.
+        r"""Gets the gdgw_attachment_id of this ShowCentralNetworkGdgwAttachmentRequest.
 
         中心网络DGW附件ID。
 
@@ -81,7 +81,7 @@ class ShowCentralNetworkGdgwAttachmentRequest:
 
     @gdgw_attachment_id.setter
     def gdgw_attachment_id(self, gdgw_attachment_id):
-        """Sets the gdgw_attachment_id of this ShowCentralNetworkGdgwAttachmentRequest.
+        r"""Sets the gdgw_attachment_id of this ShowCentralNetworkGdgwAttachmentRequest.
 
         中心网络DGW附件ID。
 

@@ -26,7 +26,7 @@ class CollectKeyWordsResponse(SdkResponse):
     }
 
     def __init__(self, keywords=None):
-        """CollectKeyWordsResponse
+        r"""CollectKeyWordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CollectKeyWordsResponse(SdkResponse):
 
     @property
     def keywords(self):
-        """Gets the keywords of this CollectKeyWordsResponse.
+        r"""Gets the keywords of this CollectKeyWordsResponse.
 
         指定时间范围内，用户问关键词列表。
 
@@ -55,7 +55,7 @@ class CollectKeyWordsResponse(SdkResponse):
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this CollectKeyWordsResponse.
+        r"""Sets the keywords of this CollectKeyWordsResponse.
 
         指定时间范围内，用户问关键词列表。
 

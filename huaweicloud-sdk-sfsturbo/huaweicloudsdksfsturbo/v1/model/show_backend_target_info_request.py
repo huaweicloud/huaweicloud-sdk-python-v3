@@ -27,7 +27,7 @@ class ShowBackendTargetInfoRequest:
     }
 
     def __init__(self, share_id=None, target_id=None):
-        """ShowBackendTargetInfoRequest
+        r"""ShowBackendTargetInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowBackendTargetInfoRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this ShowBackendTargetInfoRequest.
+        r"""Gets the share_id of this ShowBackendTargetInfoRequest.
 
         文件系统id
 
@@ -59,7 +59,7 @@ class ShowBackendTargetInfoRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this ShowBackendTargetInfoRequest.
+        r"""Sets the share_id of this ShowBackendTargetInfoRequest.
 
         文件系统id
 
@@ -70,7 +70,7 @@ class ShowBackendTargetInfoRequest:
 
     @property
     def target_id(self):
-        """Gets the target_id of this ShowBackendTargetInfoRequest.
+        r"""Gets the target_id of this ShowBackendTargetInfoRequest.
 
         绑定关系id
 
@@ -81,7 +81,7 @@ class ShowBackendTargetInfoRequest:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this ShowBackendTargetInfoRequest.
+        r"""Sets the target_id of this ShowBackendTargetInfoRequest.
 
         绑定关系id
 

@@ -27,7 +27,7 @@ class ClusterDetailTags:
     }
 
     def __init__(self, key=None, value=None):
-        """ClusterDetailTags
+        r"""ClusterDetailTags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ClusterDetailTags:
 
     @property
     def key(self):
-        """Gets the key of this ClusterDetailTags.
+        r"""Gets the key of this ClusterDetailTags.
 
         集群标签的key值。
 
@@ -61,7 +61,7 @@ class ClusterDetailTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ClusterDetailTags.
+        r"""Sets the key of this ClusterDetailTags.
 
         集群标签的key值。
 
@@ -72,7 +72,7 @@ class ClusterDetailTags:
 
     @property
     def value(self):
-        """Gets the value of this ClusterDetailTags.
+        r"""Gets the value of this ClusterDetailTags.
 
         集群标签的value值。
 
@@ -83,7 +83,7 @@ class ClusterDetailTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ClusterDetailTags.
+        r"""Sets the value of this ClusterDetailTags.
 
         集群标签的value值。
 

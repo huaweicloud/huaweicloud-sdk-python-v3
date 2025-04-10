@@ -39,7 +39,7 @@ class ListTagReq:
     }
 
     def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, limit=None, offset=None, action=None, matches=None):
-        """ListTagReq
+        r"""ListTagReq
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListTagReq:
 
     @property
     def tags(self):
-        """Gets the tags of this ListTagReq.
+        r"""Gets the tags of this ListTagReq.
 
         包含标签。 最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
@@ -102,7 +102,7 @@ class ListTagReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListTagReq.
+        r"""Sets the tags of this ListTagReq.
 
         包含标签。 最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
@@ -113,7 +113,7 @@ class ListTagReq:
 
     @property
     def tags_any(self):
-        """Gets the tags_any of this ListTagReq.
+        r"""Gets the tags_any of this ListTagReq.
 
         最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
@@ -124,7 +124,7 @@ class ListTagReq:
 
     @tags_any.setter
     def tags_any(self, tags_any):
-        """Sets the tags_any of this ListTagReq.
+        r"""Sets the tags_any of this ListTagReq.
 
         最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
@@ -135,7 +135,7 @@ class ListTagReq:
 
     @property
     def not_tags(self):
-        """Gets the not_tags of this ListTagReq.
+        r"""Gets the not_tags of this ListTagReq.
 
         最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
@@ -146,7 +146,7 @@ class ListTagReq:
 
     @not_tags.setter
     def not_tags(self, not_tags):
-        """Sets the not_tags of this ListTagReq.
+        r"""Sets the not_tags of this ListTagReq.
 
         最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
@@ -157,7 +157,7 @@ class ListTagReq:
 
     @property
     def not_tags_any(self):
-        """Gets the not_tags_any of this ListTagReq.
+        r"""Gets the not_tags_any of this ListTagReq.
 
         最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
@@ -168,7 +168,7 @@ class ListTagReq:
 
     @not_tags_any.setter
     def not_tags_any(self, not_tags_any):
-        """Sets the not_tags_any of this ListTagReq.
+        r"""Sets the not_tags_any of this ListTagReq.
 
         最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
@@ -179,7 +179,7 @@ class ListTagReq:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTagReq.
+        r"""Gets the limit of this ListTagReq.
 
         每页返回的资源个数。  取值范围：1~1000  参数取值说明：  如果action为filter时，默认为1000。 如果action为count时，无此参数。
 
@@ -190,7 +190,7 @@ class ListTagReq:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTagReq.
+        r"""Sets the limit of this ListTagReq.
 
         每页返回的资源个数。  取值范围：1~1000  参数取值说明：  如果action为filter时，默认为1000。 如果action为count时，无此参数。
 
@@ -201,7 +201,7 @@ class ListTagReq:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTagReq.
+        r"""Gets the offset of this ListTagReq.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  参数取值说明： 查询第一页数据时，不需要传入此参数。 查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数。 如果action为filter时，默认为0，必须为数字，不能为负数。 如果action为count时，无此参数。
 
@@ -212,7 +212,7 @@ class ListTagReq:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTagReq.
+        r"""Sets the offset of this ListTagReq.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  参数取值说明： 查询第一页数据时，不需要传入此参数。 查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数。 如果action为filter时，默认为0，必须为数字，不能为负数。 如果action为count时，无此参数。
 
@@ -223,7 +223,7 @@ class ListTagReq:
 
     @property
     def action(self):
-        """Gets the action of this ListTagReq.
+        r"""Gets the action of this ListTagReq.
 
         操作标识（区分大小写）。  取值范围：  filter：分页过滤查询 count：查询总条数
 
@@ -234,7 +234,7 @@ class ListTagReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListTagReq.
+        r"""Sets the action of this ListTagReq.
 
         操作标识（区分大小写）。  取值范围：  filter：分页过滤查询 count：查询总条数
 
@@ -245,7 +245,7 @@ class ListTagReq:
 
     @property
     def matches(self):
-        """Gets the matches of this ListTagReq.
+        r"""Gets the matches of this ListTagReq.
 
         key为要匹配的字段，value为匹配的值。  如果value为空字符串则精确匹配，否则模糊匹配。
 
@@ -256,7 +256,7 @@ class ListTagReq:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ListTagReq.
+        r"""Sets the matches of this ListTagReq.
 
         key为要匹配的字段，value为匹配的值。  如果value为空字符串则精确匹配，否则模糊匹配。
 

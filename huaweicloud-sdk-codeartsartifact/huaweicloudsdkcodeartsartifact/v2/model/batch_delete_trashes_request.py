@@ -25,7 +25,7 @@ class BatchDeleteTrashesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteTrashesRequest
+        r"""BatchDeleteTrashesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteTrashesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteTrashesRequest.
+        r"""Gets the body of this BatchDeleteTrashesRequest.
 
         :return: The body of this BatchDeleteTrashesRequest.
         :rtype: list[:class:`huaweicloudsdkcodeartsartifact.v2.TrashArtifactModelForDelete`]
@@ -52,7 +52,7 @@ class BatchDeleteTrashesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteTrashesRequest.
+        r"""Sets the body of this BatchDeleteTrashesRequest.
 
         :param body: The body of this BatchDeleteTrashesRequest.
         :type body: list[:class:`huaweicloudsdkcodeartsartifact.v2.TrashArtifactModelForDelete`]

@@ -29,7 +29,7 @@ class VersionConstraint:
     }
 
     def __init__(self, other=None, node_constraint=None, safe_mode_kerberos_exclude_components=None):
-        """VersionConstraint
+        r"""VersionConstraint
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VersionConstraint:
 
     @property
     def other(self):
-        """Gets the other of this VersionConstraint.
+        r"""Gets the other of this VersionConstraint.
 
         其他限制
 
@@ -68,7 +68,7 @@ class VersionConstraint:
 
     @other.setter
     def other(self, other):
-        """Sets the other of this VersionConstraint.
+        r"""Sets the other of this VersionConstraint.
 
         其他限制
 
@@ -79,7 +79,7 @@ class VersionConstraint:
 
     @property
     def node_constraint(self):
-        """Gets the node_constraint of this VersionConstraint.
+        r"""Gets the node_constraint of this VersionConstraint.
 
         :return: The node_constraint of this VersionConstraint.
         :rtype: :class:`huaweicloudsdkmrs.v1.NodeConstraints`
@@ -88,7 +88,7 @@ class VersionConstraint:
 
     @node_constraint.setter
     def node_constraint(self, node_constraint):
-        """Sets the node_constraint of this VersionConstraint.
+        r"""Sets the node_constraint of this VersionConstraint.
 
         :param node_constraint: The node_constraint of this VersionConstraint.
         :type node_constraint: :class:`huaweicloudsdkmrs.v1.NodeConstraints`
@@ -97,7 +97,7 @@ class VersionConstraint:
 
     @property
     def safe_mode_kerberos_exclude_components(self):
-        """Gets the safe_mode_kerberos_exclude_components of this VersionConstraint.
+        r"""Gets the safe_mode_kerberos_exclude_components of this VersionConstraint.
 
         安全模式kerberos排除组件列表
 
@@ -108,7 +108,7 @@ class VersionConstraint:
 
     @safe_mode_kerberos_exclude_components.setter
     def safe_mode_kerberos_exclude_components(self, safe_mode_kerberos_exclude_components):
-        """Sets the safe_mode_kerberos_exclude_components of this VersionConstraint.
+        r"""Sets the safe_mode_kerberos_exclude_components of this VersionConstraint.
 
         安全模式kerberos排除组件列表
 

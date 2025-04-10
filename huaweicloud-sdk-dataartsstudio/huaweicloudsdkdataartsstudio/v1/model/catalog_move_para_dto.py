@@ -25,7 +25,7 @@ class CatalogMoveParaDTO:
     }
 
     def __init__(self, target_pid=None):
-        """CatalogMoveParaDTO
+        r"""CatalogMoveParaDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CatalogMoveParaDTO:
 
     @property
     def target_pid(self):
-        """Gets the target_pid of this CatalogMoveParaDTO.
+        r"""Gets the target_pid of this CatalogMoveParaDTO.
 
         父目录编号
 
@@ -54,7 +54,7 @@ class CatalogMoveParaDTO:
 
     @target_pid.setter
     def target_pid(self, target_pid):
-        """Sets the target_pid of this CatalogMoveParaDTO.
+        r"""Sets the target_pid of this CatalogMoveParaDTO.
 
         父目录编号
 

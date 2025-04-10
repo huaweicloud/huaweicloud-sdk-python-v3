@@ -29,7 +29,7 @@ class ShowAccessDomainRequest:
     }
 
     def __init__(self, namespace=None, repository=None, access_domain=None):
-        """ShowAccessDomainRequest
+        r"""ShowAccessDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowAccessDomainRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ShowAccessDomainRequest.
+        r"""Gets the namespace of this ShowAccessDomainRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -65,7 +65,7 @@ class ShowAccessDomainRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ShowAccessDomainRequest.
+        r"""Sets the namespace of this ShowAccessDomainRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -76,7 +76,7 @@ class ShowAccessDomainRequest:
 
     @property
     def repository(self):
-        """Gets the repository of this ShowAccessDomainRequest.
+        r"""Gets the repository of this ShowAccessDomainRequest.
 
         镜像仓库名称
 
@@ -87,7 +87,7 @@ class ShowAccessDomainRequest:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this ShowAccessDomainRequest.
+        r"""Sets the repository of this ShowAccessDomainRequest.
 
         镜像仓库名称
 
@@ -98,7 +98,7 @@ class ShowAccessDomainRequest:
 
     @property
     def access_domain(self):
-        """Gets the access_domain of this ShowAccessDomainRequest.
+        r"""Gets the access_domain of this ShowAccessDomainRequest.
 
         共享帐号
 
@@ -109,7 +109,7 @@ class ShowAccessDomainRequest:
 
     @access_domain.setter
     def access_domain(self, access_domain):
-        """Sets the access_domain of this ShowAccessDomainRequest.
+        r"""Sets the access_domain of this ShowAccessDomainRequest.
 
         共享帐号
 

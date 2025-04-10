@@ -35,7 +35,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     }
 
     def __init__(self, instance_id=None, throttle_id=None, offset=None, limit=None, object_type=None, app_name=None):
-        """ListSpecialThrottlingConfigurationsV2Request
+        r"""ListSpecialThrottlingConfigurationsV2Request
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSpecialThrottlingConfigurationsV2Request.
+        r"""Gets the instance_id of this ListSpecialThrottlingConfigurationsV2Request.
 
         实例ID
 
@@ -87,7 +87,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSpecialThrottlingConfigurationsV2Request.
+        r"""Sets the instance_id of this ListSpecialThrottlingConfigurationsV2Request.
 
         实例ID
 
@@ -98,7 +98,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
 
     @property
     def throttle_id(self):
-        """Gets the throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
+        r"""Gets the throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
 
         流控策略的编号
 
@@ -109,7 +109,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
 
     @throttle_id.setter
     def throttle_id(self, throttle_id):
-        """Sets the throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
+        r"""Sets the throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
 
         流控策略的编号
 
@@ -120,7 +120,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSpecialThrottlingConfigurationsV2Request.
+        r"""Gets the offset of this ListSpecialThrottlingConfigurationsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -131,7 +131,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSpecialThrottlingConfigurationsV2Request.
+        r"""Sets the offset of this ListSpecialThrottlingConfigurationsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -142,7 +142,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSpecialThrottlingConfigurationsV2Request.
+        r"""Gets the limit of this ListSpecialThrottlingConfigurationsV2Request.
 
         每页显示的条目数量
 
@@ -153,7 +153,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSpecialThrottlingConfigurationsV2Request.
+        r"""Sets the limit of this ListSpecialThrottlingConfigurationsV2Request.
 
         每页显示的条目数量
 
@@ -164,7 +164,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
 
     @property
     def object_type(self):
-        """Gets the object_type of this ListSpecialThrottlingConfigurationsV2Request.
+        r"""Gets the object_type of this ListSpecialThrottlingConfigurationsV2Request.
 
         特殊流控类型：APP, USER
 
@@ -175,7 +175,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this ListSpecialThrottlingConfigurationsV2Request.
+        r"""Sets the object_type of this ListSpecialThrottlingConfigurationsV2Request.
 
         特殊流控类型：APP, USER
 
@@ -186,7 +186,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListSpecialThrottlingConfigurationsV2Request.
+        r"""Gets the app_name of this ListSpecialThrottlingConfigurationsV2Request.
 
         筛选的特殊应用名称
 
@@ -197,7 +197,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListSpecialThrottlingConfigurationsV2Request.
+        r"""Sets the app_name of this ListSpecialThrottlingConfigurationsV2Request.
 
         筛选的特殊应用名称
 

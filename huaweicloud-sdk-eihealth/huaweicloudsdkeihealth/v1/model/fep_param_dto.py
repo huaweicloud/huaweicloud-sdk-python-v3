@@ -35,7 +35,7 @@ class FepParamDto:
     }
 
     def __init__(self, pre_equilibrium_time=None, equilibrium_time=None, num_pre_equilibrium_steps=None, num_equilibrium_steps=None, timestep_size=None, num_lambda=None):
-        """FepParamDto
+        r"""FepParamDto
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class FepParamDto:
 
     @property
     def pre_equilibrium_time(self):
-        """Gets the pre_equilibrium_time of this FepParamDto.
+        r"""Gets the pre_equilibrium_time of this FepParamDto.
 
         预平衡时长，单位ps，范围为0-200，不包含0，默认为100ps
 
@@ -89,7 +89,7 @@ class FepParamDto:
 
     @pre_equilibrium_time.setter
     def pre_equilibrium_time(self, pre_equilibrium_time):
-        """Sets the pre_equilibrium_time of this FepParamDto.
+        r"""Sets the pre_equilibrium_time of this FepParamDto.
 
         预平衡时长，单位ps，范围为0-200，不包含0，默认为100ps
 
@@ -100,7 +100,7 @@ class FepParamDto:
 
     @property
     def equilibrium_time(self):
-        """Gets the equilibrium_time of this FepParamDto.
+        r"""Gets the equilibrium_time of this FepParamDto.
 
         平衡时长，单位ns，范围为0-10，不包含0，默认为1ns
 
@@ -111,7 +111,7 @@ class FepParamDto:
 
     @equilibrium_time.setter
     def equilibrium_time(self, equilibrium_time):
-        """Sets the equilibrium_time of this FepParamDto.
+        r"""Sets the equilibrium_time of this FepParamDto.
 
         平衡时长，单位ns，范围为0-10，不包含0，默认为1ns
 
@@ -122,7 +122,7 @@ class FepParamDto:
 
     @property
     def num_pre_equilibrium_steps(self):
-        """Gets the num_pre_equilibrium_steps of this FepParamDto.
+        r"""Gets the num_pre_equilibrium_steps of this FepParamDto.
 
         预平衡步数，默认为50000
 
@@ -133,7 +133,7 @@ class FepParamDto:
 
     @num_pre_equilibrium_steps.setter
     def num_pre_equilibrium_steps(self, num_pre_equilibrium_steps):
-        """Sets the num_pre_equilibrium_steps of this FepParamDto.
+        r"""Sets the num_pre_equilibrium_steps of this FepParamDto.
 
         预平衡步数，默认为50000
 
@@ -144,7 +144,7 @@ class FepParamDto:
 
     @property
     def num_equilibrium_steps(self):
-        """Gets the num_equilibrium_steps of this FepParamDto.
+        r"""Gets the num_equilibrium_steps of this FepParamDto.
 
         平衡步数，默认为500000
 
@@ -155,7 +155,7 @@ class FepParamDto:
 
     @num_equilibrium_steps.setter
     def num_equilibrium_steps(self, num_equilibrium_steps):
-        """Sets the num_equilibrium_steps of this FepParamDto.
+        r"""Sets the num_equilibrium_steps of this FepParamDto.
 
         平衡步数，默认为500000
 
@@ -166,7 +166,7 @@ class FepParamDto:
 
     @property
     def timestep_size(self):
-        """Gets the timestep_size of this FepParamDto.
+        r"""Gets the timestep_size of this FepParamDto.
 
         时间步长，单位ps，取值范围：大于0，小于等于0.005
 
@@ -177,7 +177,7 @@ class FepParamDto:
 
     @timestep_size.setter
     def timestep_size(self, timestep_size):
-        """Sets the timestep_size of this FepParamDto.
+        r"""Sets the timestep_size of this FepParamDto.
 
         时间步长，单位ps，取值范围：大于0，小于等于0.005
 
@@ -188,7 +188,7 @@ class FepParamDto:
 
     @property
     def num_lambda(self):
-        """Gets the num_lambda of this FepParamDto.
+        r"""Gets the num_lambda of this FepParamDto.
 
         lambda个数
 
@@ -199,7 +199,7 @@ class FepParamDto:
 
     @num_lambda.setter
     def num_lambda(self, num_lambda):
-        """Sets the num_lambda of this FepParamDto.
+        r"""Sets the num_lambda of this FepParamDto.
 
         lambda个数
 

@@ -37,7 +37,7 @@ class BasicDrugModel:
     }
 
     def __init__(self, id=None, task_id=None, name=None, creator=None, type=None, value_range=None, description=None):
-        """BasicDrugModel
+        r"""BasicDrugModel
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class BasicDrugModel:
 
     @property
     def id(self):
-        """Gets the id of this BasicDrugModel.
+        r"""Gets the id of this BasicDrugModel.
 
         模型ID
 
@@ -96,7 +96,7 @@ class BasicDrugModel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BasicDrugModel.
+        r"""Sets the id of this BasicDrugModel.
 
         模型ID
 
@@ -107,7 +107,7 @@ class BasicDrugModel:
 
     @property
     def task_id(self):
-        """Gets the task_id of this BasicDrugModel.
+        r"""Gets the task_id of this BasicDrugModel.
 
         任务ID
 
@@ -118,7 +118,7 @@ class BasicDrugModel:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this BasicDrugModel.
+        r"""Sets the task_id of this BasicDrugModel.
 
         任务ID
 
@@ -129,7 +129,7 @@ class BasicDrugModel:
 
     @property
     def name(self):
-        """Gets the name of this BasicDrugModel.
+        r"""Gets the name of this BasicDrugModel.
 
         模型名称
 
@@ -140,7 +140,7 @@ class BasicDrugModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BasicDrugModel.
+        r"""Sets the name of this BasicDrugModel.
 
         模型名称
 
@@ -151,7 +151,7 @@ class BasicDrugModel:
 
     @property
     def creator(self):
-        """Gets the creator of this BasicDrugModel.
+        r"""Gets the creator of this BasicDrugModel.
 
         模型创建者
 
@@ -162,7 +162,7 @@ class BasicDrugModel:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this BasicDrugModel.
+        r"""Sets the creator of this BasicDrugModel.
 
         模型创建者
 
@@ -173,7 +173,7 @@ class BasicDrugModel:
 
     @property
     def type(self):
-        """Gets the type of this BasicDrugModel.
+        r"""Gets the type of this BasicDrugModel.
 
         模型类型
 
@@ -184,7 +184,7 @@ class BasicDrugModel:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BasicDrugModel.
+        r"""Sets the type of this BasicDrugModel.
 
         模型类型
 
@@ -195,7 +195,7 @@ class BasicDrugModel:
 
     @property
     def value_range(self):
-        """Gets the value_range of this BasicDrugModel.
+        r"""Gets the value_range of this BasicDrugModel.
 
         :return: The value_range of this BasicDrugModel.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ValueRange2`
@@ -204,7 +204,7 @@ class BasicDrugModel:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this BasicDrugModel.
+        r"""Sets the value_range of this BasicDrugModel.
 
         :param value_range: The value_range of this BasicDrugModel.
         :type value_range: :class:`huaweicloudsdkeihealth.v1.ValueRange2`
@@ -213,7 +213,7 @@ class BasicDrugModel:
 
     @property
     def description(self):
-        """Gets the description of this BasicDrugModel.
+        r"""Gets the description of this BasicDrugModel.
 
         模型描述信息
 
@@ -224,7 +224,7 @@ class BasicDrugModel:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BasicDrugModel.
+        r"""Sets the description of this BasicDrugModel.
 
         模型描述信息
 

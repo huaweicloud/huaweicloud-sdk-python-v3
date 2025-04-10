@@ -37,7 +37,7 @@ class PolicyStateRequestBody:
     }
 
     def __init__(self, policy_resource=None, trigger_type=None, compliance_state=None, policy_assignment_id=None, policy_assignment_name=None, evaluation_time=None, evaluation_hash=None):
-        """PolicyStateRequestBody
+        r"""PolicyStateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class PolicyStateRequestBody:
 
     @property
     def policy_resource(self):
-        """Gets the policy_resource of this PolicyStateRequestBody.
+        r"""Gets the policy_resource of this PolicyStateRequestBody.
 
         :return: The policy_resource of this PolicyStateRequestBody.
         :rtype: :class:`huaweicloudsdkrms.v1.PolicyResource`
@@ -88,7 +88,7 @@ class PolicyStateRequestBody:
 
     @policy_resource.setter
     def policy_resource(self, policy_resource):
-        """Sets the policy_resource of this PolicyStateRequestBody.
+        r"""Sets the policy_resource of this PolicyStateRequestBody.
 
         :param policy_resource: The policy_resource of this PolicyStateRequestBody.
         :type policy_resource: :class:`huaweicloudsdkrms.v1.PolicyResource`
@@ -97,7 +97,7 @@ class PolicyStateRequestBody:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this PolicyStateRequestBody.
+        r"""Gets the trigger_type of this PolicyStateRequestBody.
 
         触发器类型
 
@@ -108,7 +108,7 @@ class PolicyStateRequestBody:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this PolicyStateRequestBody.
+        r"""Sets the trigger_type of this PolicyStateRequestBody.
 
         触发器类型
 
@@ -119,7 +119,7 @@ class PolicyStateRequestBody:
 
     @property
     def compliance_state(self):
-        """Gets the compliance_state of this PolicyStateRequestBody.
+        r"""Gets the compliance_state of this PolicyStateRequestBody.
 
         合规状态
 
@@ -130,7 +130,7 @@ class PolicyStateRequestBody:
 
     @compliance_state.setter
     def compliance_state(self, compliance_state):
-        """Sets the compliance_state of this PolicyStateRequestBody.
+        r"""Sets the compliance_state of this PolicyStateRequestBody.
 
         合规状态
 
@@ -141,7 +141,7 @@ class PolicyStateRequestBody:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this PolicyStateRequestBody.
+        r"""Gets the policy_assignment_id of this PolicyStateRequestBody.
 
         规则ID
 
@@ -152,7 +152,7 @@ class PolicyStateRequestBody:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this PolicyStateRequestBody.
+        r"""Sets the policy_assignment_id of this PolicyStateRequestBody.
 
         规则ID
 
@@ -163,7 +163,7 @@ class PolicyStateRequestBody:
 
     @property
     def policy_assignment_name(self):
-        """Gets the policy_assignment_name of this PolicyStateRequestBody.
+        r"""Gets the policy_assignment_name of this PolicyStateRequestBody.
 
         规则名称
 
@@ -174,7 +174,7 @@ class PolicyStateRequestBody:
 
     @policy_assignment_name.setter
     def policy_assignment_name(self, policy_assignment_name):
-        """Sets the policy_assignment_name of this PolicyStateRequestBody.
+        r"""Sets the policy_assignment_name of this PolicyStateRequestBody.
 
         规则名称
 
@@ -185,7 +185,7 @@ class PolicyStateRequestBody:
 
     @property
     def evaluation_time(self):
-        """Gets the evaluation_time of this PolicyStateRequestBody.
+        r"""Gets the evaluation_time of this PolicyStateRequestBody.
 
         合规状态评估时间
 
@@ -196,7 +196,7 @@ class PolicyStateRequestBody:
 
     @evaluation_time.setter
     def evaluation_time(self, evaluation_time):
-        """Sets the evaluation_time of this PolicyStateRequestBody.
+        r"""Sets the evaluation_time of this PolicyStateRequestBody.
 
         合规状态评估时间
 
@@ -207,7 +207,7 @@ class PolicyStateRequestBody:
 
     @property
     def evaluation_hash(self):
-        """Gets the evaluation_hash of this PolicyStateRequestBody.
+        r"""Gets the evaluation_hash of this PolicyStateRequestBody.
 
         评估校验码
 
@@ -218,7 +218,7 @@ class PolicyStateRequestBody:
 
     @evaluation_hash.setter
     def evaluation_hash(self, evaluation_hash):
-        """Sets the evaluation_hash of this PolicyStateRequestBody.
+        r"""Sets the evaluation_hash of this PolicyStateRequestBody.
 
         评估校验码
 

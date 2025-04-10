@@ -37,7 +37,7 @@ class FlinkJobExecutionGraph:
     }
 
     def __init__(self, jid=None, name=None, is_stoppable=None, state=None, start_time=None, end_time=None, duration=None):
-        """FlinkJobExecutionGraph
+        r"""FlinkJobExecutionGraph
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class FlinkJobExecutionGraph:
 
     @property
     def jid(self):
-        """Gets the jid of this FlinkJobExecutionGraph.
+        r"""Gets the jid of this FlinkJobExecutionGraph.
 
         flink作业id。
 
@@ -96,7 +96,7 @@ class FlinkJobExecutionGraph:
 
     @jid.setter
     def jid(self, jid):
-        """Sets the jid of this FlinkJobExecutionGraph.
+        r"""Sets the jid of this FlinkJobExecutionGraph.
 
         flink作业id。
 
@@ -107,7 +107,7 @@ class FlinkJobExecutionGraph:
 
     @property
     def name(self):
-        """Gets the name of this FlinkJobExecutionGraph.
+        r"""Gets the name of this FlinkJobExecutionGraph.
 
         flink作业名字。
 
@@ -118,7 +118,7 @@ class FlinkJobExecutionGraph:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlinkJobExecutionGraph.
+        r"""Sets the name of this FlinkJobExecutionGraph.
 
         flink作业名字。
 
@@ -129,7 +129,7 @@ class FlinkJobExecutionGraph:
 
     @property
     def is_stoppable(self):
-        """Gets the is_stoppable of this FlinkJobExecutionGraph.
+        r"""Gets the is_stoppable of this FlinkJobExecutionGraph.
 
         是否可停止。
 
@@ -140,7 +140,7 @@ class FlinkJobExecutionGraph:
 
     @is_stoppable.setter
     def is_stoppable(self, is_stoppable):
-        """Sets the is_stoppable of this FlinkJobExecutionGraph.
+        r"""Sets the is_stoppable of this FlinkJobExecutionGraph.
 
         是否可停止。
 
@@ -151,7 +151,7 @@ class FlinkJobExecutionGraph:
 
     @property
     def state(self):
-        """Gets the state of this FlinkJobExecutionGraph.
+        r"""Gets the state of this FlinkJobExecutionGraph.
 
         作业运行状态。
 
@@ -162,7 +162,7 @@ class FlinkJobExecutionGraph:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this FlinkJobExecutionGraph.
+        r"""Sets the state of this FlinkJobExecutionGraph.
 
         作业运行状态。
 
@@ -173,7 +173,7 @@ class FlinkJobExecutionGraph:
 
     @property
     def start_time(self):
-        """Gets the start_time of this FlinkJobExecutionGraph.
+        r"""Gets the start_time of this FlinkJobExecutionGraph.
 
         作业启动时间。
 
@@ -184,7 +184,7 @@ class FlinkJobExecutionGraph:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this FlinkJobExecutionGraph.
+        r"""Sets the start_time of this FlinkJobExecutionGraph.
 
         作业启动时间。
 
@@ -195,7 +195,7 @@ class FlinkJobExecutionGraph:
 
     @property
     def end_time(self):
-        """Gets the end_time of this FlinkJobExecutionGraph.
+        r"""Gets the end_time of this FlinkJobExecutionGraph.
 
         作业停止时间。
 
@@ -206,7 +206,7 @@ class FlinkJobExecutionGraph:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this FlinkJobExecutionGraph.
+        r"""Sets the end_time of this FlinkJobExecutionGraph.
 
         作业停止时间。
 
@@ -217,7 +217,7 @@ class FlinkJobExecutionGraph:
 
     @property
     def duration(self):
-        """Gets the duration of this FlinkJobExecutionGraph.
+        r"""Gets the duration of this FlinkJobExecutionGraph.
 
         作业运行时长。
 
@@ -228,7 +228,7 @@ class FlinkJobExecutionGraph:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this FlinkJobExecutionGraph.
+        r"""Sets the duration of this FlinkJobExecutionGraph.
 
         作业运行时长。
 

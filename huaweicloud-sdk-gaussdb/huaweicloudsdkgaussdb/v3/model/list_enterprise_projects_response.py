@@ -28,7 +28,7 @@ class ListEnterpriseProjectsResponse(SdkResponse):
     }
 
     def __init__(self, enterprise_projects=None, total_count=None):
-        """ListEnterpriseProjectsResponse
+        r"""ListEnterpriseProjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEnterpriseProjectsResponse(SdkResponse):
 
     @property
     def enterprise_projects(self):
-        """Gets the enterprise_projects of this ListEnterpriseProjectsResponse.
+        r"""Gets the enterprise_projects of this ListEnterpriseProjectsResponse.
 
         企业项目信息列表。
 
@@ -62,7 +62,7 @@ class ListEnterpriseProjectsResponse(SdkResponse):
 
     @enterprise_projects.setter
     def enterprise_projects(self, enterprise_projects):
-        """Sets the enterprise_projects of this ListEnterpriseProjectsResponse.
+        r"""Sets the enterprise_projects of this ListEnterpriseProjectsResponse.
 
         企业项目信息列表。
 
@@ -73,7 +73,7 @@ class ListEnterpriseProjectsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListEnterpriseProjectsResponse.
+        r"""Gets the total_count of this ListEnterpriseProjectsResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ListEnterpriseProjectsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListEnterpriseProjectsResponse.
+        r"""Sets the total_count of this ListEnterpriseProjectsResponse.
 
         总数。
 

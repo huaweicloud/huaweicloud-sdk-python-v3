@@ -28,7 +28,7 @@ class BatchAuthorizeInterfaceResponse(SdkResponse):
     }
 
     def __init__(self, policies=None, page_info=None):
-        """BatchAuthorizeInterfaceResponse
+        r"""BatchAuthorizeInterfaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchAuthorizeInterfaceResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this BatchAuthorizeInterfaceResponse.
+        r"""Gets the policies of this BatchAuthorizeInterfaceResponse.
 
         lakecat策略信息
 
@@ -62,7 +62,7 @@ class BatchAuthorizeInterfaceResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this BatchAuthorizeInterfaceResponse.
+        r"""Sets the policies of this BatchAuthorizeInterfaceResponse.
 
         lakecat策略信息
 
@@ -73,7 +73,7 @@ class BatchAuthorizeInterfaceResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this BatchAuthorizeInterfaceResponse.
+        r"""Gets the page_info of this BatchAuthorizeInterfaceResponse.
 
         :return: The page_info of this BatchAuthorizeInterfaceResponse.
         :rtype: :class:`huaweicloudsdklakeformation.v1.PagedInfo`
@@ -82,7 +82,7 @@ class BatchAuthorizeInterfaceResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this BatchAuthorizeInterfaceResponse.
+        r"""Sets the page_info of this BatchAuthorizeInterfaceResponse.
 
         :param page_info: The page_info of this BatchAuthorizeInterfaceResponse.
         :type page_info: :class:`huaweicloudsdklakeformation.v1.PagedInfo`

@@ -27,7 +27,7 @@ class CreateTasksRequest:
     }
 
     def __init__(self, service_name=None, body=None):
-        """CreateTasksRequest
+        r"""CreateTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTasksRequest:
 
     @property
     def service_name(self):
-        """Gets the service_name of this CreateTasksRequest.
+        r"""Gets the service_name of this CreateTasksRequest.
 
         服务API,具体API名称见园区智能体提供的API参考列表中URI描述[API列表](https://support.huaweicloud.com/api-campusgo/campusgo_03_0013.html)
 
@@ -60,7 +60,7 @@ class CreateTasksRequest:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this CreateTasksRequest.
+        r"""Sets the service_name of this CreateTasksRequest.
 
         服务API,具体API名称见园区智能体提供的API参考列表中URI描述[API列表](https://support.huaweicloud.com/api-campusgo/campusgo_03_0013.html)
 
@@ -71,7 +71,7 @@ class CreateTasksRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTasksRequest.
+        r"""Gets the body of this CreateTasksRequest.
 
         :return: The body of this CreateTasksRequest.
         :rtype: :class:`huaweicloudsdkcampusgo.v2.CreateTasksRequestBody`
@@ -80,7 +80,7 @@ class CreateTasksRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTasksRequest.
+        r"""Sets the body of this CreateTasksRequest.
 
         :param body: The body of this CreateTasksRequest.
         :type body: :class:`huaweicloudsdkcampusgo.v2.CreateTasksRequestBody`

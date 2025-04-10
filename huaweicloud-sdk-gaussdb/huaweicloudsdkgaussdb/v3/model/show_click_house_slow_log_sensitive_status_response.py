@@ -26,7 +26,7 @@ class ShowClickHouseSlowLogSensitiveStatusResponse(SdkResponse):
     }
 
     def __init__(self, open_slow_log_switch=None):
-        """ShowClickHouseSlowLogSensitiveStatusResponse
+        r"""ShowClickHouseSlowLogSensitiveStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowClickHouseSlowLogSensitiveStatusResponse(SdkResponse):
 
     @property
     def open_slow_log_switch(self):
-        """Gets the open_slow_log_switch of this ShowClickHouseSlowLogSensitiveStatusResponse.
+        r"""Gets the open_slow_log_switch of this ShowClickHouseSlowLogSensitiveStatusResponse.
 
         慢日志脱敏开关。
 
@@ -55,7 +55,7 @@ class ShowClickHouseSlowLogSensitiveStatusResponse(SdkResponse):
 
     @open_slow_log_switch.setter
     def open_slow_log_switch(self, open_slow_log_switch):
-        """Sets the open_slow_log_switch of this ShowClickHouseSlowLogSensitiveStatusResponse.
+        r"""Sets the open_slow_log_switch of this ShowClickHouseSlowLogSensitiveStatusResponse.
 
         慢日志脱敏开关。
 

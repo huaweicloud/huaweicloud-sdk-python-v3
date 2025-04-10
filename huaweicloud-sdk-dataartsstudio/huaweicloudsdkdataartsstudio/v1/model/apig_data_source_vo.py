@@ -41,7 +41,7 @@ class ApigDataSourceVo:
     }
 
     def __init__(self, dw_name=None, dw_type=None, dw_config=None, agent_id=None, agent_name=None, env_type=None, support_service=None, dw_category=None, description=None):
-        """ApigDataSourceVo
+        r"""ApigDataSourceVo
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class ApigDataSourceVo:
 
     @property
     def dw_name(self):
-        """Gets the dw_name of this ApigDataSourceVo.
+        r"""Gets the dw_name of this ApigDataSourceVo.
 
         数据连接名称
 
@@ -107,7 +107,7 @@ class ApigDataSourceVo:
 
     @dw_name.setter
     def dw_name(self, dw_name):
-        """Sets the dw_name of this ApigDataSourceVo.
+        r"""Sets the dw_name of this ApigDataSourceVo.
 
         数据连接名称
 
@@ -118,7 +118,7 @@ class ApigDataSourceVo:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this ApigDataSourceVo.
+        r"""Gets the dw_type of this ApigDataSourceVo.
 
         数据连接类型
 
@@ -129,7 +129,7 @@ class ApigDataSourceVo:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this ApigDataSourceVo.
+        r"""Sets the dw_type of this ApigDataSourceVo.
 
         数据连接类型
 
@@ -140,7 +140,7 @@ class ApigDataSourceVo:
 
     @property
     def dw_config(self):
-        """Gets the dw_config of this ApigDataSourceVo.
+        r"""Gets the dw_config of this ApigDataSourceVo.
 
         连接动态变化配置项，每种连接略有区别，建议在界面进行调试
 
@@ -151,7 +151,7 @@ class ApigDataSourceVo:
 
     @dw_config.setter
     def dw_config(self, dw_config):
-        """Sets the dw_config of this ApigDataSourceVo.
+        r"""Sets the dw_config of this ApigDataSourceVo.
 
         连接动态变化配置项，每种连接略有区别，建议在界面进行调试
 
@@ -162,7 +162,7 @@ class ApigDataSourceVo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this ApigDataSourceVo.
+        r"""Gets the agent_id of this ApigDataSourceVo.
 
         代理id（若使用代理连接则必填）
 
@@ -173,7 +173,7 @@ class ApigDataSourceVo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this ApigDataSourceVo.
+        r"""Sets the agent_id of this ApigDataSourceVo.
 
         代理id（若使用代理连接则必填）
 
@@ -184,7 +184,7 @@ class ApigDataSourceVo:
 
     @property
     def agent_name(self):
-        """Gets the agent_name of this ApigDataSourceVo.
+        r"""Gets the agent_name of this ApigDataSourceVo.
 
         代理名称id（若使用代理连接则必填）
 
@@ -195,7 +195,7 @@ class ApigDataSourceVo:
 
     @agent_name.setter
     def agent_name(self, agent_name):
-        """Sets the agent_name of this ApigDataSourceVo.
+        r"""Sets the agent_name of this ApigDataSourceVo.
 
         代理名称id（若使用代理连接则必填）
 
@@ -206,7 +206,7 @@ class ApigDataSourceVo:
 
     @property
     def env_type(self):
-        """Gets the env_type of this ApigDataSourceVo.
+        r"""Gets the env_type of this ApigDataSourceVo.
 
         0：开发模式 1：生产模式。默认为0
 
@@ -217,7 +217,7 @@ class ApigDataSourceVo:
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this ApigDataSourceVo.
+        r"""Sets the env_type of this ApigDataSourceVo.
 
         0：开发模式 1：生产模式。默认为0
 
@@ -228,7 +228,7 @@ class ApigDataSourceVo:
 
     @property
     def support_service(self):
-        """Gets the support_service of this ApigDataSourceVo.
+        r"""Gets the support_service of this ApigDataSourceVo.
 
         1：cdm 2：数据架构 4:数据开发 8：数据质量 16：数据目录 32：数据安全 64：数据服务
 
@@ -239,7 +239,7 @@ class ApigDataSourceVo:
 
     @support_service.setter
     def support_service(self, support_service):
-        """Sets the support_service of this ApigDataSourceVo.
+        r"""Sets the support_service of this ApigDataSourceVo.
 
         1：cdm 2：数据架构 4:数据开发 8：数据质量 16：数据目录 32：数据安全 64：数据服务
 
@@ -250,7 +250,7 @@ class ApigDataSourceVo:
 
     @property
     def dw_category(self):
-        """Gets the dw_category of this ApigDataSourceVo.
+        r"""Gets the dw_category of this ApigDataSourceVo.
 
         标签信息
 
@@ -261,7 +261,7 @@ class ApigDataSourceVo:
 
     @dw_category.setter
     def dw_category(self, dw_category):
-        """Sets the dw_category of this ApigDataSourceVo.
+        r"""Sets the dw_category of this ApigDataSourceVo.
 
         标签信息
 
@@ -272,7 +272,7 @@ class ApigDataSourceVo:
 
     @property
     def description(self):
-        """Gets the description of this ApigDataSourceVo.
+        r"""Gets the description of this ApigDataSourceVo.
 
         连接描述信息
 
@@ -283,7 +283,7 @@ class ApigDataSourceVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApigDataSourceVo.
+        r"""Sets the description of this ApigDataSourceVo.
 
         连接描述信息
 

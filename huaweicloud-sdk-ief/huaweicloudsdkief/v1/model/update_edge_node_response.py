@@ -26,7 +26,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
     }
 
     def __init__(self, node=None):
-        """UpdateEdgeNodeResponse
+        r"""UpdateEdgeNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @property
     def node(self):
-        """Gets the node of this UpdateEdgeNodeResponse.
+        r"""Gets the node of this UpdateEdgeNodeResponse.
 
         :return: The node of this UpdateEdgeNodeResponse.
         :rtype: :class:`huaweicloudsdkief.v1.EdgeNodeResp`
@@ -53,7 +53,7 @@ class UpdateEdgeNodeResponse(SdkResponse):
 
     @node.setter
     def node(self, node):
-        """Sets the node of this UpdateEdgeNodeResponse.
+        r"""Sets the node of this UpdateEdgeNodeResponse.
 
         :param node: The node of this UpdateEdgeNodeResponse.
         :type node: :class:`huaweicloudsdkief.v1.EdgeNodeResp`

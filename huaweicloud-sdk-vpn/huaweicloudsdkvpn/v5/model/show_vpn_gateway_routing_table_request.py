@@ -33,7 +33,7 @@ class ShowVpnGatewayRoutingTableRequest:
     }
 
     def __init__(self, vgw_id=None, limit=None, marker=None, offset=None, is_include_nexthop_resource=None):
-        """ShowVpnGatewayRoutingTableRequest
+        r"""ShowVpnGatewayRoutingTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ShowVpnGatewayRoutingTableRequest:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this ShowVpnGatewayRoutingTableRequest.
+        r"""Gets the vgw_id of this ShowVpnGatewayRoutingTableRequest.
 
         VPN网关实例ID
 
@@ -81,7 +81,7 @@ class ShowVpnGatewayRoutingTableRequest:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this ShowVpnGatewayRoutingTableRequest.
+        r"""Sets the vgw_id of this ShowVpnGatewayRoutingTableRequest.
 
         VPN网关实例ID
 
@@ -92,7 +92,7 @@ class ShowVpnGatewayRoutingTableRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowVpnGatewayRoutingTableRequest.
+        r"""Gets the limit of this ShowVpnGatewayRoutingTableRequest.
 
         分页查询时每页返回的记录数量
 
@@ -103,7 +103,7 @@ class ShowVpnGatewayRoutingTableRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowVpnGatewayRoutingTableRequest.
+        r"""Sets the limit of this ShowVpnGatewayRoutingTableRequest.
 
         分页查询时每页返回的记录数量
 
@@ -114,7 +114,7 @@ class ShowVpnGatewayRoutingTableRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ShowVpnGatewayRoutingTableRequest.
+        r"""Gets the marker of this ShowVpnGatewayRoutingTableRequest.
 
         上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
 
@@ -125,7 +125,7 @@ class ShowVpnGatewayRoutingTableRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ShowVpnGatewayRoutingTableRequest.
+        r"""Sets the marker of this ShowVpnGatewayRoutingTableRequest.
 
         上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
 
@@ -136,7 +136,7 @@ class ShowVpnGatewayRoutingTableRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowVpnGatewayRoutingTableRequest.
+        r"""Gets the offset of this ShowVpnGatewayRoutingTableRequest.
 
         分页查询的偏移量
 
@@ -147,7 +147,7 @@ class ShowVpnGatewayRoutingTableRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowVpnGatewayRoutingTableRequest.
+        r"""Sets the offset of this ShowVpnGatewayRoutingTableRequest.
 
         分页查询的偏移量
 
@@ -158,7 +158,7 @@ class ShowVpnGatewayRoutingTableRequest:
 
     @property
     def is_include_nexthop_resource(self):
-        """Gets the is_include_nexthop_resource of this ShowVpnGatewayRoutingTableRequest.
+        r"""Gets the is_include_nexthop_resource of this ShowVpnGatewayRoutingTableRequest.
 
         是否包含下一跳资源信息
 
@@ -169,7 +169,7 @@ class ShowVpnGatewayRoutingTableRequest:
 
     @is_include_nexthop_resource.setter
     def is_include_nexthop_resource(self, is_include_nexthop_resource):
-        """Sets the is_include_nexthop_resource of this ShowVpnGatewayRoutingTableRequest.
+        r"""Sets the is_include_nexthop_resource of this ShowVpnGatewayRoutingTableRequest.
 
         是否包含下一跳资源信息
 

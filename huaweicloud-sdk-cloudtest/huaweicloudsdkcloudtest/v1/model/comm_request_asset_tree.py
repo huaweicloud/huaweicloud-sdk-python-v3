@@ -25,7 +25,7 @@ class CommRequestAssetTree:
     }
 
     def __init__(self, params=None):
-        """CommRequestAssetTree
+        r"""CommRequestAssetTree
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CommRequestAssetTree:
 
     @property
     def params(self):
-        """Gets the params of this CommRequestAssetTree.
+        r"""Gets the params of this CommRequestAssetTree.
 
         :return: The params of this CommRequestAssetTree.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AssetTree`
@@ -52,7 +52,7 @@ class CommRequestAssetTree:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CommRequestAssetTree.
+        r"""Sets the params of this CommRequestAssetTree.
 
         :param params: The params of this CommRequestAssetTree.
         :type params: :class:`huaweicloudsdkcloudtest.v1.AssetTree`

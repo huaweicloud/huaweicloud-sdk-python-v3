@@ -39,7 +39,7 @@ class CreateAuthorisation:
     }
 
     def __init__(self, name=None, description=None, instance_id=None, project_id=None, region_id=None, cloud_connection_id=None, instance_type=None, cloud_connection_domain_id=None):
-        """CreateAuthorisation
+        r"""CreateAuthorisation
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateAuthorisation:
 
     @property
     def name(self):
-        """Gets the name of this CreateAuthorisation.
+        r"""Gets the name of this CreateAuthorisation.
 
         实例名字。
 
@@ -97,7 +97,7 @@ class CreateAuthorisation:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAuthorisation.
+        r"""Sets the name of this CreateAuthorisation.
 
         实例名字。
 
@@ -108,7 +108,7 @@ class CreateAuthorisation:
 
     @property
     def description(self):
-        """Gets the description of this CreateAuthorisation.
+        r"""Gets the description of this CreateAuthorisation.
 
         实例描述。不支持 <>。
 
@@ -119,7 +119,7 @@ class CreateAuthorisation:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAuthorisation.
+        r"""Sets the description of this CreateAuthorisation.
 
         实例描述。不支持 <>。
 
@@ -130,7 +130,7 @@ class CreateAuthorisation:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateAuthorisation.
+        r"""Gets the instance_id of this CreateAuthorisation.
 
         网络实例（VPC，VGW）的ID。
 
@@ -141,7 +141,7 @@ class CreateAuthorisation:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateAuthorisation.
+        r"""Sets the instance_id of this CreateAuthorisation.
 
         网络实例（VPC，VGW）的ID。
 
@@ -152,7 +152,7 @@ class CreateAuthorisation:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateAuthorisation.
+        r"""Gets the project_id of this CreateAuthorisation.
 
         实例所属项目ID。
 
@@ -163,7 +163,7 @@ class CreateAuthorisation:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateAuthorisation.
+        r"""Sets the project_id of this CreateAuthorisation.
 
         实例所属项目ID。
 
@@ -174,7 +174,7 @@ class CreateAuthorisation:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateAuthorisation.
+        r"""Gets the region_id of this CreateAuthorisation.
 
         RegionID。
 
@@ -185,7 +185,7 @@ class CreateAuthorisation:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateAuthorisation.
+        r"""Sets the region_id of this CreateAuthorisation.
 
         RegionID。
 
@@ -196,7 +196,7 @@ class CreateAuthorisation:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this CreateAuthorisation.
+        r"""Gets the cloud_connection_id of this CreateAuthorisation.
 
         云连接实例ID。
 
@@ -207,7 +207,7 @@ class CreateAuthorisation:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this CreateAuthorisation.
+        r"""Sets the cloud_connection_id of this CreateAuthorisation.
 
         云连接实例ID。
 
@@ -218,7 +218,7 @@ class CreateAuthorisation:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this CreateAuthorisation.
+        r"""Gets the instance_type of this CreateAuthorisation.
 
         授权网络实例的类型: - vpc：虚拟私有云
 
@@ -229,7 +229,7 @@ class CreateAuthorisation:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this CreateAuthorisation.
+        r"""Sets the instance_type of this CreateAuthorisation.
 
         授权网络实例的类型: - vpc：虚拟私有云
 
@@ -240,7 +240,7 @@ class CreateAuthorisation:
 
     @property
     def cloud_connection_domain_id(self):
-        """Gets the cloud_connection_domain_id of this CreateAuthorisation.
+        r"""Gets the cloud_connection_domain_id of this CreateAuthorisation.
 
         被授权云连接实例所属的账户ID。
 
@@ -251,7 +251,7 @@ class CreateAuthorisation:
 
     @cloud_connection_domain_id.setter
     def cloud_connection_domain_id(self, cloud_connection_domain_id):
-        """Sets the cloud_connection_domain_id of this CreateAuthorisation.
+        r"""Sets the cloud_connection_domain_id of this CreateAuthorisation.
 
         被授权云连接实例所属的账户ID。
 

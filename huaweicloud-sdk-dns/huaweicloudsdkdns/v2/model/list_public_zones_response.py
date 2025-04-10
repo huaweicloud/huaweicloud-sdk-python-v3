@@ -30,7 +30,7 @@ class ListPublicZonesResponse(SdkResponse):
     }
 
     def __init__(self, links=None, zones=None, metadata=None):
-        """ListPublicZonesResponse
+        r"""ListPublicZonesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPublicZonesResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ListPublicZonesResponse.
+        r"""Gets the links of this ListPublicZonesResponse.
 
         :return: The links of this ListPublicZonesResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -67,7 +67,7 @@ class ListPublicZonesResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListPublicZonesResponse.
+        r"""Sets the links of this ListPublicZonesResponse.
 
         :param links: The links of this ListPublicZonesResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -76,7 +76,7 @@ class ListPublicZonesResponse(SdkResponse):
 
     @property
     def zones(self):
-        """Gets the zones of this ListPublicZonesResponse.
+        r"""Gets the zones of this ListPublicZonesResponse.
 
         查询公网Zone的列表响应。
 
@@ -87,7 +87,7 @@ class ListPublicZonesResponse(SdkResponse):
 
     @zones.setter
     def zones(self, zones):
-        """Sets the zones of this ListPublicZonesResponse.
+        r"""Sets the zones of this ListPublicZonesResponse.
 
         查询公网Zone的列表响应。
 
@@ -98,7 +98,7 @@ class ListPublicZonesResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListPublicZonesResponse.
+        r"""Gets the metadata of this ListPublicZonesResponse.
 
         :return: The metadata of this ListPublicZonesResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -107,7 +107,7 @@ class ListPublicZonesResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListPublicZonesResponse.
+        r"""Sets the metadata of this ListPublicZonesResponse.
 
         :param metadata: The metadata of this ListPublicZonesResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`

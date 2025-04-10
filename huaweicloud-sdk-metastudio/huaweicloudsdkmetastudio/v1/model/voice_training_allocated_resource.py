@@ -29,7 +29,7 @@ class VoiceTrainingAllocatedResource:
     }
 
     def __init__(self, resource_id=None, charge_mode=None, expire_time=None):
-        """VoiceTrainingAllocatedResource
+        r"""VoiceTrainingAllocatedResource
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VoiceTrainingAllocatedResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this VoiceTrainingAllocatedResource.
+        r"""Gets the resource_id of this VoiceTrainingAllocatedResource.
 
         资源ID。
 
@@ -68,7 +68,7 @@ class VoiceTrainingAllocatedResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this VoiceTrainingAllocatedResource.
+        r"""Sets the resource_id of this VoiceTrainingAllocatedResource.
 
         资源ID。
 
@@ -79,7 +79,7 @@ class VoiceTrainingAllocatedResource:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this VoiceTrainingAllocatedResource.
+        r"""Gets the charge_mode of this VoiceTrainingAllocatedResource.
 
         :return: The charge_mode of this VoiceTrainingAllocatedResource.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ChardMode`
@@ -88,7 +88,7 @@ class VoiceTrainingAllocatedResource:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this VoiceTrainingAllocatedResource.
+        r"""Sets the charge_mode of this VoiceTrainingAllocatedResource.
 
         :param charge_mode: The charge_mode of this VoiceTrainingAllocatedResource.
         :type charge_mode: :class:`huaweicloudsdkmetastudio.v1.ChardMode`
@@ -97,7 +97,7 @@ class VoiceTrainingAllocatedResource:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this VoiceTrainingAllocatedResource.
+        r"""Gets the expire_time of this VoiceTrainingAllocatedResource.
 
         资源过期时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"
 
@@ -108,7 +108,7 @@ class VoiceTrainingAllocatedResource:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this VoiceTrainingAllocatedResource.
+        r"""Sets the expire_time of this VoiceTrainingAllocatedResource.
 
         资源过期时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"
 

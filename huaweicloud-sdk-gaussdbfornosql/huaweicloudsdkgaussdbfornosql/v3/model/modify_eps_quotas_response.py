@@ -24,7 +24,7 @@ class ModifyEpsQuotasResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ModifyEpsQuotasResponse
+        r"""ModifyEpsQuotasResponse
 
         The model defined in huaweicloud sdk
 

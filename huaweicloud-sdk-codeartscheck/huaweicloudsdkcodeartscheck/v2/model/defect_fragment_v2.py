@@ -31,7 +31,7 @@ class DefectFragmentV2:
     }
 
     def __init__(self, line_num=None, line_content=None, start_offset=None, end_offset=None):
-        """DefectFragmentV2
+        r"""DefectFragmentV2
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DefectFragmentV2:
 
     @property
     def line_num(self):
-        """Gets the line_num of this DefectFragmentV2.
+        r"""Gets the line_num of this DefectFragmentV2.
 
         行号
 
@@ -75,7 +75,7 @@ class DefectFragmentV2:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this DefectFragmentV2.
+        r"""Sets the line_num of this DefectFragmentV2.
 
         行号
 
@@ -86,7 +86,7 @@ class DefectFragmentV2:
 
     @property
     def line_content(self):
-        """Gets the line_content of this DefectFragmentV2.
+        r"""Gets the line_content of this DefectFragmentV2.
 
         该行代码内容
 
@@ -97,7 +97,7 @@ class DefectFragmentV2:
 
     @line_content.setter
     def line_content(self, line_content):
-        """Sets the line_content of this DefectFragmentV2.
+        r"""Sets the line_content of this DefectFragmentV2.
 
         该行代码内容
 
@@ -108,7 +108,7 @@ class DefectFragmentV2:
 
     @property
     def start_offset(self):
-        """Gets the start_offset of this DefectFragmentV2.
+        r"""Gets the start_offset of this DefectFragmentV2.
 
         缺陷开始列号
 
@@ -119,7 +119,7 @@ class DefectFragmentV2:
 
     @start_offset.setter
     def start_offset(self, start_offset):
-        """Sets the start_offset of this DefectFragmentV2.
+        r"""Sets the start_offset of this DefectFragmentV2.
 
         缺陷开始列号
 
@@ -130,7 +130,7 @@ class DefectFragmentV2:
 
     @property
     def end_offset(self):
-        """Gets the end_offset of this DefectFragmentV2.
+        r"""Gets the end_offset of this DefectFragmentV2.
 
         缺陷结束列号
 
@@ -141,7 +141,7 @@ class DefectFragmentV2:
 
     @end_offset.setter
     def end_offset(self, end_offset):
-        """Sets the end_offset of this DefectFragmentV2.
+        r"""Sets the end_offset of this DefectFragmentV2.
 
         缺陷结束列号
 

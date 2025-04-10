@@ -27,7 +27,7 @@ class UpdateBaremetalServerMetadataRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """UpdateBaremetalServerMetadataRequest
+        r"""UpdateBaremetalServerMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateBaremetalServerMetadataRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this UpdateBaremetalServerMetadataRequest.
+        r"""Gets the server_id of this UpdateBaremetalServerMetadataRequest.
 
         裸金属服务器ID
 
@@ -60,7 +60,7 @@ class UpdateBaremetalServerMetadataRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this UpdateBaremetalServerMetadataRequest.
+        r"""Sets the server_id of this UpdateBaremetalServerMetadataRequest.
 
         裸金属服务器ID
 
@@ -71,7 +71,7 @@ class UpdateBaremetalServerMetadataRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateBaremetalServerMetadataRequest.
+        r"""Gets the body of this UpdateBaremetalServerMetadataRequest.
 
         :return: The body of this UpdateBaremetalServerMetadataRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataReq`
@@ -80,7 +80,7 @@ class UpdateBaremetalServerMetadataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBaremetalServerMetadataRequest.
+        r"""Sets the body of this UpdateBaremetalServerMetadataRequest.
 
         :param body: The body of this UpdateBaremetalServerMetadataRequest.
         :type body: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataReq`

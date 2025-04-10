@@ -25,7 +25,7 @@ class BatchUpdateSrcUserReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchUpdateSrcUserReq
+        r"""BatchUpdateSrcUserReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchUpdateSrcUserReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchUpdateSrcUserReq.
+        r"""Gets the jobs of this BatchUpdateSrcUserReq.
 
         批量更新迁移用户请求列表
 
@@ -53,7 +53,7 @@ class BatchUpdateSrcUserReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchUpdateSrcUserReq.
+        r"""Sets the jobs of this BatchUpdateSrcUserReq.
 
         批量更新迁移用户请求列表
 

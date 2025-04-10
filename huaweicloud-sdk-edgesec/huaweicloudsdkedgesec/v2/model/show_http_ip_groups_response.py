@@ -28,7 +28,7 @@ class ShowHttpIpGroupsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ShowHttpIpGroupsResponse
+        r"""ShowHttpIpGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowHttpIpGroupsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowHttpIpGroupsResponse.
+        r"""Gets the total of this ShowHttpIpGroupsResponse.
 
         全部IP地址组的数量
 
@@ -62,7 +62,7 @@ class ShowHttpIpGroupsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowHttpIpGroupsResponse.
+        r"""Sets the total of this ShowHttpIpGroupsResponse.
 
         全部IP地址组的数量
 
@@ -73,7 +73,7 @@ class ShowHttpIpGroupsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ShowHttpIpGroupsResponse.
+        r"""Gets the items of this ShowHttpIpGroupsResponse.
 
         详细的IP地址组信息
 
@@ -84,7 +84,7 @@ class ShowHttpIpGroupsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ShowHttpIpGroupsResponse.
+        r"""Sets the items of this ShowHttpIpGroupsResponse.
 
         详细的IP地址组信息
 

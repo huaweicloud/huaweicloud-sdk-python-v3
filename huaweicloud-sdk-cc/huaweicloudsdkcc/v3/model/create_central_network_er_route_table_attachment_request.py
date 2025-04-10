@@ -27,7 +27,7 @@ class CreateCentralNetworkErRouteTableAttachmentRequest:
     }
 
     def __init__(self, central_network_id=None, body=None):
-        """CreateCentralNetworkErRouteTableAttachmentRequest
+        r"""CreateCentralNetworkErRouteTableAttachmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCentralNetworkErRouteTableAttachmentRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this CreateCentralNetworkErRouteTableAttachmentRequest.
+        r"""Gets the central_network_id of this CreateCentralNetworkErRouteTableAttachmentRequest.
 
         中心网络的ID。
 
@@ -60,7 +60,7 @@ class CreateCentralNetworkErRouteTableAttachmentRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this CreateCentralNetworkErRouteTableAttachmentRequest.
+        r"""Sets the central_network_id of this CreateCentralNetworkErRouteTableAttachmentRequest.
 
         中心网络的ID。
 
@@ -71,7 +71,7 @@ class CreateCentralNetworkErRouteTableAttachmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCentralNetworkErRouteTableAttachmentRequest.
+        r"""Gets the body of this CreateCentralNetworkErRouteTableAttachmentRequest.
 
         :return: The body of this CreateCentralNetworkErRouteTableAttachmentRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.CreateCentralNetworkErRouteTableAttachmentsRequestBody`
@@ -80,7 +80,7 @@ class CreateCentralNetworkErRouteTableAttachmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCentralNetworkErRouteTableAttachmentRequest.
+        r"""Sets the body of this CreateCentralNetworkErRouteTableAttachmentRequest.
 
         :param body: The body of this CreateCentralNetworkErRouteTableAttachmentRequest.
         :type body: :class:`huaweicloudsdkcc.v3.CreateCentralNetworkErRouteTableAttachmentsRequestBody`

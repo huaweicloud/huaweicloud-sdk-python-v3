@@ -27,7 +27,7 @@ class RollingRestartReq:
     }
 
     def __init__(self, type=None, value=None):
-        """RollingRestartReq
+        r"""RollingRestartReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RollingRestartReq:
 
     @property
     def type(self):
-        """Gets the type of this RollingRestartReq.
+        r"""Gets the type of this RollingRestartReq.
 
         操作角色。type的值只能为role。
 
@@ -59,7 +59,7 @@ class RollingRestartReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RollingRestartReq.
+        r"""Sets the type of this RollingRestartReq.
 
         操作角色。type的值只能为role。
 
@@ -70,7 +70,7 @@ class RollingRestartReq:
 
     @property
     def value(self):
-        """Gets the value of this RollingRestartReq.
+        r"""Gets the value of this RollingRestartReq.
 
         实例类型（选择实例类型时至少需要一个数据节点），多个类型使用逗号隔开。例如:  - ess-master对应Master节点。 - ess-client对应Client节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。 - all对应所有节点。
 
@@ -81,7 +81,7 @@ class RollingRestartReq:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RollingRestartReq.
+        r"""Sets the value of this RollingRestartReq.
 
         实例类型（选择实例类型时至少需要一个数据节点），多个类型使用逗号隔开。例如:  - ess-master对应Master节点。 - ess-client对应Client节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。 - all对应所有节点。
 

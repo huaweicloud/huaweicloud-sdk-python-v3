@@ -31,7 +31,7 @@ class UpdateTestCaseAndScriptRequest:
     }
 
     def __init__(self, project_id=None, tmss_case_uri=None, turn_on_awmapping=None, body=None):
-        """UpdateTestCaseAndScriptRequest
+        r"""UpdateTestCaseAndScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateTestCaseAndScriptRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateTestCaseAndScriptRequest.
+        r"""Gets the project_id of this UpdateTestCaseAndScriptRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -73,7 +73,7 @@ class UpdateTestCaseAndScriptRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateTestCaseAndScriptRequest.
+        r"""Sets the project_id of this UpdateTestCaseAndScriptRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -84,7 +84,7 @@ class UpdateTestCaseAndScriptRequest:
 
     @property
     def tmss_case_uri(self):
-        """Gets the tmss_case_uri of this UpdateTestCaseAndScriptRequest.
+        r"""Gets the tmss_case_uri of this UpdateTestCaseAndScriptRequest.
 
         TMSS用例uri
 
@@ -95,7 +95,7 @@ class UpdateTestCaseAndScriptRequest:
 
     @tmss_case_uri.setter
     def tmss_case_uri(self, tmss_case_uri):
-        """Sets the tmss_case_uri of this UpdateTestCaseAndScriptRequest.
+        r"""Sets the tmss_case_uri of this UpdateTestCaseAndScriptRequest.
 
         TMSS用例uri
 
@@ -106,7 +106,7 @@ class UpdateTestCaseAndScriptRequest:
 
     @property
     def turn_on_awmapping(self):
-        """Gets the turn_on_awmapping of this UpdateTestCaseAndScriptRequest.
+        r"""Gets the turn_on_awmapping of this UpdateTestCaseAndScriptRequest.
 
         新组合AW开关
 
@@ -117,7 +117,7 @@ class UpdateTestCaseAndScriptRequest:
 
     @turn_on_awmapping.setter
     def turn_on_awmapping(self, turn_on_awmapping):
-        """Sets the turn_on_awmapping of this UpdateTestCaseAndScriptRequest.
+        r"""Sets the turn_on_awmapping of this UpdateTestCaseAndScriptRequest.
 
         新组合AW开关
 
@@ -128,7 +128,7 @@ class UpdateTestCaseAndScriptRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTestCaseAndScriptRequest.
+        r"""Gets the body of this UpdateTestCaseAndScriptRequest.
 
         :return: The body of this UpdateTestCaseAndScriptRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseReq`
@@ -137,7 +137,7 @@ class UpdateTestCaseAndScriptRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTestCaseAndScriptRequest.
+        r"""Sets the body of this UpdateTestCaseAndScriptRequest.
 
         :param body: The body of this UpdateTestCaseAndScriptRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseReq`

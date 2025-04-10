@@ -31,7 +31,7 @@ class BindMfaDevice:
     }
 
     def __init__(self, user_id=None, serial_number=None, authentication_code_first=None, authentication_code_second=None):
-        """BindMfaDevice
+        r"""BindMfaDevice
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class BindMfaDevice:
 
     @property
     def user_id(self):
-        """Gets the user_id of this BindMfaDevice.
+        r"""Gets the user_id of this BindMfaDevice.
 
         待绑定MFA设备的IAM用户ID。
 
@@ -71,7 +71,7 @@ class BindMfaDevice:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this BindMfaDevice.
+        r"""Sets the user_id of this BindMfaDevice.
 
         待绑定MFA设备的IAM用户ID。
 
@@ -82,7 +82,7 @@ class BindMfaDevice:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this BindMfaDevice.
+        r"""Gets the serial_number of this BindMfaDevice.
 
         MFA设备序列号。
 
@@ -93,7 +93,7 @@ class BindMfaDevice:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this BindMfaDevice.
+        r"""Sets the serial_number of this BindMfaDevice.
 
         MFA设备序列号。
 
@@ -104,7 +104,7 @@ class BindMfaDevice:
 
     @property
     def authentication_code_first(self):
-        """Gets the authentication_code_first of this BindMfaDevice.
+        r"""Gets the authentication_code_first of this BindMfaDevice.
 
         第一组验证码。
 
@@ -115,7 +115,7 @@ class BindMfaDevice:
 
     @authentication_code_first.setter
     def authentication_code_first(self, authentication_code_first):
-        """Sets the authentication_code_first of this BindMfaDevice.
+        r"""Sets the authentication_code_first of this BindMfaDevice.
 
         第一组验证码。
 
@@ -126,7 +126,7 @@ class BindMfaDevice:
 
     @property
     def authentication_code_second(self):
-        """Gets the authentication_code_second of this BindMfaDevice.
+        r"""Gets the authentication_code_second of this BindMfaDevice.
 
         第二组验证码。
 
@@ -137,7 +137,7 @@ class BindMfaDevice:
 
     @authentication_code_second.setter
     def authentication_code_second(self, authentication_code_second):
-        """Sets the authentication_code_second of this BindMfaDevice.
+        r"""Sets the authentication_code_second of this BindMfaDevice.
 
         第二组验证码。
 

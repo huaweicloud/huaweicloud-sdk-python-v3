@@ -25,7 +25,7 @@ class ResetActiveCodeReq:
     }
 
     def __init__(self, clean_auth_credential=None):
-        """ResetActiveCodeReq
+        r"""ResetActiveCodeReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResetActiveCodeReq:
 
     @property
     def clean_auth_credential(self):
-        """Gets the clean_auth_credential of this ResetActiveCodeReq.
+        r"""Gets the clean_auth_credential of this ResetActiveCodeReq.
 
         是否清除鉴权凭证。
 
@@ -54,7 +54,7 @@ class ResetActiveCodeReq:
 
     @clean_auth_credential.setter
     def clean_auth_credential(self, clean_auth_credential):
-        """Sets the clean_auth_credential of this ResetActiveCodeReq.
+        r"""Sets the clean_auth_credential of this ResetActiveCodeReq.
 
         是否清除鉴权凭证。
 

@@ -38,7 +38,7 @@ class ListPermissionSetsRequest:
     }
 
     def __init__(self, x_security_token=None, instance_id=None, limit=None, marker=None, permission_set_id=None, permission_urn=None, name=None):
-        """ListPermissionSetsRequest
+        r"""ListPermissionSetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListPermissionSetsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListPermissionSetsRequest.
+        r"""Gets the x_security_token of this ListPermissionSetsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -96,7 +96,7 @@ class ListPermissionSetsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListPermissionSetsRequest.
+        r"""Sets the x_security_token of this ListPermissionSetsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -107,7 +107,7 @@ class ListPermissionSetsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPermissionSetsRequest.
+        r"""Gets the instance_id of this ListPermissionSetsRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -118,7 +118,7 @@ class ListPermissionSetsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPermissionSetsRequest.
+        r"""Sets the instance_id of this ListPermissionSetsRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -129,7 +129,7 @@ class ListPermissionSetsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPermissionSetsRequest.
+        r"""Gets the limit of this ListPermissionSetsRequest.
 
         每个请求返回的最大结果数
 
@@ -140,7 +140,7 @@ class ListPermissionSetsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPermissionSetsRequest.
+        r"""Sets the limit of this ListPermissionSetsRequest.
 
         每个请求返回的最大结果数
 
@@ -151,7 +151,7 @@ class ListPermissionSetsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPermissionSetsRequest.
+        r"""Gets the marker of this ListPermissionSetsRequest.
 
         分页标记
 
@@ -162,7 +162,7 @@ class ListPermissionSetsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPermissionSetsRequest.
+        r"""Sets the marker of this ListPermissionSetsRequest.
 
         分页标记
 
@@ -173,7 +173,7 @@ class ListPermissionSetsRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this ListPermissionSetsRequest.
+        r"""Gets the permission_set_id of this ListPermissionSetsRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -184,7 +184,7 @@ class ListPermissionSetsRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this ListPermissionSetsRequest.
+        r"""Sets the permission_set_id of this ListPermissionSetsRequest.
 
         权限集的全局唯一标识符（ID）
 
@@ -195,7 +195,7 @@ class ListPermissionSetsRequest:
 
     @property
     def permission_urn(self):
-        """Gets the permission_urn of this ListPermissionSetsRequest.
+        r"""Gets the permission_urn of this ListPermissionSetsRequest.
 
         权限集urn
 
@@ -206,7 +206,7 @@ class ListPermissionSetsRequest:
 
     @permission_urn.setter
     def permission_urn(self, permission_urn):
-        """Sets the permission_urn of this ListPermissionSetsRequest.
+        r"""Sets the permission_urn of this ListPermissionSetsRequest.
 
         权限集urn
 
@@ -217,7 +217,7 @@ class ListPermissionSetsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPermissionSetsRequest.
+        r"""Gets the name of this ListPermissionSetsRequest.
 
         权限集名称
 
@@ -228,7 +228,7 @@ class ListPermissionSetsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPermissionSetsRequest.
+        r"""Sets the name of this ListPermissionSetsRequest.
 
         权限集名称
 

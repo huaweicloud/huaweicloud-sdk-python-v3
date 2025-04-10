@@ -25,7 +25,7 @@ class ShowPublicKeyRequest:
     }
 
     def __init__(self, body=None):
-        """ShowPublicKeyRequest
+        r"""ShowPublicKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowPublicKeyRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowPublicKeyRequest.
+        r"""Gets the body of this ShowPublicKeyRequest.
 
         :return: The body of this ShowPublicKeyRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
@@ -52,7 +52,7 @@ class ShowPublicKeyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowPublicKeyRequest.
+        r"""Sets the body of this ShowPublicKeyRequest.
 
         :param body: The body of this ShowPublicKeyRequest.
         :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`

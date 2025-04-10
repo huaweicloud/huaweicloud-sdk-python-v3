@@ -29,7 +29,7 @@ class CreatePluginRequest:
     }
 
     def __init__(self, gateway_id=None, accept=None, body=None):
-        """CreatePluginRequest
+        r"""CreatePluginRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreatePluginRequest:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this CreatePluginRequest.
+        r"""Gets the gateway_id of this CreatePluginRequest.
 
         网关实例id
 
@@ -67,7 +67,7 @@ class CreatePluginRequest:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this CreatePluginRequest.
+        r"""Sets the gateway_id of this CreatePluginRequest.
 
         网关实例id
 
@@ -78,7 +78,7 @@ class CreatePluginRequest:
 
     @property
     def accept(self):
-        """Gets the accept of this CreatePluginRequest.
+        r"""Gets the accept of this CreatePluginRequest.
 
         该字段内容填为 \"application/json\"
 
@@ -89,7 +89,7 @@ class CreatePluginRequest:
 
     @accept.setter
     def accept(self, accept):
-        """Sets the accept of this CreatePluginRequest.
+        r"""Sets the accept of this CreatePluginRequest.
 
         该字段内容填为 \"application/json\"
 
@@ -100,7 +100,7 @@ class CreatePluginRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePluginRequest.
+        r"""Gets the body of this CreatePluginRequest.
 
         :return: The body of this CreatePluginRequest.
         :rtype: :class:`huaweicloudsdkcse.v1.WasmPlugin`
@@ -109,7 +109,7 @@ class CreatePluginRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePluginRequest.
+        r"""Sets the body of this CreatePluginRequest.
 
         :param body: The body of this CreatePluginRequest.
         :type body: :class:`huaweicloudsdkcse.v1.WasmPlugin`

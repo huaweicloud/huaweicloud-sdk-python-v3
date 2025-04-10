@@ -45,7 +45,7 @@ class InstancevirtualListResp:
     }
 
     def __init__(self, id=None, owner=None, location=None, forward_mode=None, cluster_id=None, hash_mode=None, type=None, vni=None, nexthops=None, created_at=None, updated_at=None):
-        """InstancevirtualListResp
+        r"""InstancevirtualListResp
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class InstancevirtualListResp:
 
     @property
     def id(self):
-        """Gets the id of this InstancevirtualListResp.
+        r"""Gets the id of this InstancevirtualListResp.
 
         virtualnexthop的uuid
 
@@ -124,7 +124,7 @@ class InstancevirtualListResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstancevirtualListResp.
+        r"""Sets the id of this InstancevirtualListResp.
 
         virtualnexthop的uuid
 
@@ -135,7 +135,7 @@ class InstancevirtualListResp:
 
     @property
     def owner(self):
-        """Gets the owner of this InstancevirtualListResp.
+        r"""Gets the owner of this InstancevirtualListResp.
 
         virtualnexthop的所有者
 
@@ -146,7 +146,7 @@ class InstancevirtualListResp:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this InstancevirtualListResp.
+        r"""Sets the owner of this InstancevirtualListResp.
 
         virtualnexthop的所有者
 
@@ -157,7 +157,7 @@ class InstancevirtualListResp:
 
     @property
     def location(self):
-        """Gets the location of this InstancevirtualListResp.
+        r"""Gets the location of this InstancevirtualListResp.
 
         标识网关所在位置POD、AZ、REGION、GLOBAL
 
@@ -168,7 +168,7 @@ class InstancevirtualListResp:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this InstancevirtualListResp.
+        r"""Sets the location of this InstancevirtualListResp.
 
         标识网关所在位置POD、AZ、REGION、GLOBAL
 
@@ -179,7 +179,7 @@ class InstancevirtualListResp:
 
     @property
     def forward_mode(self):
-        """Gets the forward_mode of this InstancevirtualListResp.
+        r"""Gets the forward_mode of this InstancevirtualListResp.
 
         功能说明：nexthops的转发模式  取值范围：'ACTIVE-ACTIVE'多活模式、'ACTIVE-STANDBY'主备模式
 
@@ -190,7 +190,7 @@ class InstancevirtualListResp:
 
     @forward_mode.setter
     def forward_mode(self, forward_mode):
-        """Sets the forward_mode of this InstancevirtualListResp.
+        r"""Sets the forward_mode of this InstancevirtualListResp.
 
         功能说明：nexthops的转发模式  取值范围：'ACTIVE-ACTIVE'多活模式、'ACTIVE-STANDBY'主备模式
 
@@ -201,7 +201,7 @@ class InstancevirtualListResp:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this InstancevirtualListResp.
+        r"""Gets the cluster_id of this InstancevirtualListResp.
 
         功能说明：网关所在集群信息，可为空  取值范围：0-36长度的字符串
 
@@ -212,7 +212,7 @@ class InstancevirtualListResp:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this InstancevirtualListResp.
+        r"""Sets the cluster_id of this InstancevirtualListResp.
 
         功能说明：网关所在集群信息，可为空  取值范围：0-36长度的字符串
 
@@ -223,7 +223,7 @@ class InstancevirtualListResp:
 
     @property
     def hash_mode(self):
-        """Gets the hash_mode of this InstancevirtualListResp.
+        r"""Gets the hash_mode of this InstancevirtualListResp.
 
         功能说明：nexthops在底层的负载均衡策略  取值范围：'2_TUPLE'二元组、'3_TUPLE'三元组、'5_TUPLE'五元组
 
@@ -234,7 +234,7 @@ class InstancevirtualListResp:
 
     @hash_mode.setter
     def hash_mode(self, hash_mode):
-        """Sets the hash_mode of this InstancevirtualListResp.
+        r"""Sets the hash_mode of this InstancevirtualListResp.
 
         功能说明：nexthops在底层的负载均衡策略  取值范围：'2_TUPLE'二元组、'3_TUPLE'三元组、'5_TUPLE'五元组
 
@@ -245,7 +245,7 @@ class InstancevirtualListResp:
 
     @property
     def type(self):
-        """Gets the type of this InstancevirtualListResp.
+        r"""Gets the type of this InstancevirtualListResp.
 
         功能说明：下一跳所属网络类型  取值范围：'VXLAN'、'VLAN'
 
@@ -256,7 +256,7 @@ class InstancevirtualListResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this InstancevirtualListResp.
+        r"""Sets the type of this InstancevirtualListResp.
 
         功能说明：下一跳所属网络类型  取值范围：'VXLAN'、'VLAN'
 
@@ -267,7 +267,7 @@ class InstancevirtualListResp:
 
     @property
     def vni(self):
-        """Gets the vni of this InstancevirtualListResp.
+        r"""Gets the vni of this InstancevirtualListResp.
 
         功能说明：网络id标识，与type组合使用  取值范围：type=VXLAN时取值0-16777215,type=VLAN时取值0-4095
 
@@ -278,7 +278,7 @@ class InstancevirtualListResp:
 
     @vni.setter
     def vni(self, vni):
-        """Sets the vni of this InstancevirtualListResp.
+        r"""Sets the vni of this InstancevirtualListResp.
 
         功能说明：网络id标识，与type组合使用  取值范围：type=VXLAN时取值0-16777215,type=VLAN时取值0-4095
 
@@ -289,7 +289,7 @@ class InstancevirtualListResp:
 
     @property
     def nexthops(self):
-        """Gets the nexthops of this InstancevirtualListResp.
+        r"""Gets the nexthops of this InstancevirtualListResp.
 
         下一跳信息列表
 
@@ -300,7 +300,7 @@ class InstancevirtualListResp:
 
     @nexthops.setter
     def nexthops(self, nexthops):
-        """Sets the nexthops of this InstancevirtualListResp.
+        r"""Sets the nexthops of this InstancevirtualListResp.
 
         下一跳信息列表
 
@@ -311,7 +311,7 @@ class InstancevirtualListResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this InstancevirtualListResp.
+        r"""Gets the created_at of this InstancevirtualListResp.
 
         功能说明：VirtualNexthop对象创建时间，UTC格式
 
@@ -322,7 +322,7 @@ class InstancevirtualListResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this InstancevirtualListResp.
+        r"""Sets the created_at of this InstancevirtualListResp.
 
         功能说明：VirtualNexthop对象创建时间，UTC格式
 
@@ -333,7 +333,7 @@ class InstancevirtualListResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this InstancevirtualListResp.
+        r"""Gets the updated_at of this InstancevirtualListResp.
 
         功能说明：VirtualNexthop对象更新时间，UTC格式
 
@@ -344,7 +344,7 @@ class InstancevirtualListResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this InstancevirtualListResp.
+        r"""Sets the updated_at of this InstancevirtualListResp.
 
         功能说明：VirtualNexthop对象更新时间，UTC格式
 

@@ -29,7 +29,7 @@ class PageInfoMarkerByKey:
     }
 
     def __init__(self, previous_marker=None, next_marker=None, current_count=None):
-        """PageInfoMarkerByKey
+        r"""PageInfoMarkerByKey
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PageInfoMarkerByKey:
 
     @property
     def previous_marker(self):
-        """Gets the previous_marker of this PageInfoMarkerByKey.
+        r"""Gets the previous_marker of this PageInfoMarkerByKey.
 
         上一页的页面标识。
 
@@ -68,7 +68,7 @@ class PageInfoMarkerByKey:
 
     @previous_marker.setter
     def previous_marker(self, previous_marker):
-        """Sets the previous_marker of this PageInfoMarkerByKey.
+        r"""Sets the previous_marker of this PageInfoMarkerByKey.
 
         上一页的页面标识。
 
@@ -79,7 +79,7 @@ class PageInfoMarkerByKey:
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this PageInfoMarkerByKey.
+        r"""Gets the next_marker of this PageInfoMarkerByKey.
 
         下一页的页面标识。
 
@@ -90,7 +90,7 @@ class PageInfoMarkerByKey:
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this PageInfoMarkerByKey.
+        r"""Sets the next_marker of this PageInfoMarkerByKey.
 
         下一页的页面标识。
 
@@ -101,7 +101,7 @@ class PageInfoMarkerByKey:
 
     @property
     def current_count(self):
-        """Gets the current_count of this PageInfoMarkerByKey.
+        r"""Gets the current_count of this PageInfoMarkerByKey.
 
         页面数量。
 
@@ -112,7 +112,7 @@ class PageInfoMarkerByKey:
 
     @current_count.setter
     def current_count(self, current_count):
-        """Sets the current_count of this PageInfoMarkerByKey.
+        r"""Sets the current_count of this PageInfoMarkerByKey.
 
         页面数量。
 

@@ -26,7 +26,7 @@ class UpdateStorageModeResponse(SdkResponse):
     }
 
     def __init__(self, task_result_array=None):
-        """UpdateStorageModeResponse
+        r"""UpdateStorageModeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateStorageModeResponse(SdkResponse):
 
     @property
     def task_result_array(self):
-        """Gets the task_result_array of this UpdateStorageModeResponse.
+        r"""Gets the task_result_array of this UpdateStorageModeResponse.
 
         :return: The task_result_array of this UpdateStorageModeResponse.
         :rtype: list[:class:`huaweicloudsdkvod.v1.TaskResult`]
@@ -53,7 +53,7 @@ class UpdateStorageModeResponse(SdkResponse):
 
     @task_result_array.setter
     def task_result_array(self, task_result_array):
-        """Sets the task_result_array of this UpdateStorageModeResponse.
+        r"""Sets the task_result_array of this UpdateStorageModeResponse.
 
         :param task_result_array: The task_result_array of this UpdateStorageModeResponse.
         :type task_result_array: list[:class:`huaweicloudsdkvod.v1.TaskResult`]

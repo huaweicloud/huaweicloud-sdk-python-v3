@@ -29,7 +29,7 @@ class AccessPolicyObject:
     }
 
     def __init__(self, object_id=None, object_name=None, object_type=None):
-        """AccessPolicyObject
+        r"""AccessPolicyObject
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AccessPolicyObject:
 
     @property
     def object_id(self):
-        """Gets the object_id of this AccessPolicyObject.
+        r"""Gets the object_id of this AccessPolicyObject.
 
         黑名单中的对象id。
 
@@ -68,7 +68,7 @@ class AccessPolicyObject:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this AccessPolicyObject.
+        r"""Sets the object_id of this AccessPolicyObject.
 
         黑名单中的对象id。
 
@@ -79,7 +79,7 @@ class AccessPolicyObject:
 
     @property
     def object_name(self):
-        """Gets the object_name of this AccessPolicyObject.
+        r"""Gets the object_name of this AccessPolicyObject.
 
         对象名。
 
@@ -90,7 +90,7 @@ class AccessPolicyObject:
 
     @object_name.setter
     def object_name(self, object_name):
-        """Sets the object_name of this AccessPolicyObject.
+        r"""Sets the object_name of this AccessPolicyObject.
 
         对象名。
 
@@ -101,7 +101,7 @@ class AccessPolicyObject:
 
     @property
     def object_type(self):
-        """Gets the object_type of this AccessPolicyObject.
+        r"""Gets the object_type of this AccessPolicyObject.
 
         对象类型。 * USER： 用户 * USERGROUP： 用户组
 
@@ -112,7 +112,7 @@ class AccessPolicyObject:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this AccessPolicyObject.
+        r"""Sets the object_type of this AccessPolicyObject.
 
         对象类型。 * USER： 用户 * USERGROUP： 用户组
 

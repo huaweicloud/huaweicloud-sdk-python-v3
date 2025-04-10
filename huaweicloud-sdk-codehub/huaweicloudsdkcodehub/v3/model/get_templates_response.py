@@ -30,7 +30,7 @@ class GetTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """GetTemplatesResponse
+        r"""GetTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class GetTemplatesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this GetTemplatesResponse.
+        r"""Gets the error of this GetTemplatesResponse.
 
         :return: The error of this GetTemplatesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class GetTemplatesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this GetTemplatesResponse.
+        r"""Sets the error of this GetTemplatesResponse.
 
         :param error: The error of this GetTemplatesResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class GetTemplatesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this GetTemplatesResponse.
+        r"""Gets the result of this GetTemplatesResponse.
 
         :return: The result of this GetTemplatesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.TemplateRepositoryList`
@@ -85,7 +85,7 @@ class GetTemplatesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this GetTemplatesResponse.
+        r"""Sets the result of this GetTemplatesResponse.
 
         :param result: The result of this GetTemplatesResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.TemplateRepositoryList`
@@ -94,7 +94,7 @@ class GetTemplatesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this GetTemplatesResponse.
+        r"""Gets the status of this GetTemplatesResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class GetTemplatesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetTemplatesResponse.
+        r"""Sets the status of this GetTemplatesResponse.
 
         响应状态
 

@@ -31,7 +31,7 @@ class Criterion:
     }
 
     def __init__(self, contains=None, eq=None, exists=None, neq=None):
-        """Criterion
+        r"""Criterion
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Criterion:
 
     @property
     def contains(self):
-        """Gets the contains of this Criterion.
+        r"""Gets the contains of this Criterion.
 
         要匹配筛选器的“包含”运算符。
 
@@ -75,7 +75,7 @@ class Criterion:
 
     @contains.setter
     def contains(self, contains):
-        """Sets the contains of this Criterion.
+        r"""Sets the contains of this Criterion.
 
         要匹配筛选器的“包含”运算符。
 
@@ -86,7 +86,7 @@ class Criterion:
 
     @property
     def eq(self):
-        """Gets the eq of this Criterion.
+        r"""Gets the eq of this Criterion.
 
         要匹配筛选器的“等于”运算符。
 
@@ -97,7 +97,7 @@ class Criterion:
 
     @eq.setter
     def eq(self, eq):
-        """Sets the eq of this Criterion.
+        r"""Sets the eq of this Criterion.
 
         要匹配筛选器的“等于”运算符。
 
@@ -108,7 +108,7 @@ class Criterion:
 
     @property
     def exists(self):
-        """Gets the exists of this Criterion.
+        r"""Gets the exists of this Criterion.
 
         要匹配筛选器的“存在”运算符。
 
@@ -119,7 +119,7 @@ class Criterion:
 
     @exists.setter
     def exists(self, exists):
-        """Sets the exists of this Criterion.
+        r"""Sets the exists of this Criterion.
 
         要匹配筛选器的“存在”运算符。
 
@@ -130,7 +130,7 @@ class Criterion:
 
     @property
     def neq(self):
-        """Gets the neq of this Criterion.
+        r"""Gets the neq of this Criterion.
 
         要匹配筛选器的“不等于”运算符。
 
@@ -141,7 +141,7 @@ class Criterion:
 
     @neq.setter
     def neq(self, neq):
-        """Sets the neq of this Criterion.
+        r"""Sets the neq of this Criterion.
 
         要匹配筛选器的“不等于”运算符。
 

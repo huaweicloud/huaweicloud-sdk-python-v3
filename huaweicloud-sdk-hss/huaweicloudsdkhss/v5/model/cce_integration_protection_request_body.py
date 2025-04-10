@@ -35,7 +35,7 @@ class CceIntegrationProtectionRequestBody:
     }
 
     def __init__(self, cluster_type=None, cluster_id=None, cluster_name=None, charging_mode=None, cce_protection_type=None, prefer_packet_cycle=None):
-        """CceIntegrationProtectionRequestBody
+        r"""CceIntegrationProtectionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class CceIntegrationProtectionRequestBody:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this CceIntegrationProtectionRequestBody.
+        r"""Gets the cluster_type of this CceIntegrationProtectionRequestBody.
 
         cce集群类型：   existing 存量集群   adding 新增集群
 
@@ -88,7 +88,7 @@ class CceIntegrationProtectionRequestBody:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this CceIntegrationProtectionRequestBody.
+        r"""Sets the cluster_type of this CceIntegrationProtectionRequestBody.
 
         cce集群类型：   existing 存量集群   adding 新增集群
 
@@ -99,7 +99,7 @@ class CceIntegrationProtectionRequestBody:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CceIntegrationProtectionRequestBody.
+        r"""Gets the cluster_id of this CceIntegrationProtectionRequestBody.
 
         集群id
 
@@ -110,7 +110,7 @@ class CceIntegrationProtectionRequestBody:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CceIntegrationProtectionRequestBody.
+        r"""Sets the cluster_id of this CceIntegrationProtectionRequestBody.
 
         集群id
 
@@ -121,7 +121,7 @@ class CceIntegrationProtectionRequestBody:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this CceIntegrationProtectionRequestBody.
+        r"""Gets the cluster_name of this CceIntegrationProtectionRequestBody.
 
         集群名称
 
@@ -132,7 +132,7 @@ class CceIntegrationProtectionRequestBody:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this CceIntegrationProtectionRequestBody.
+        r"""Sets the cluster_name of this CceIntegrationProtectionRequestBody.
 
         集群名称
 
@@ -143,7 +143,7 @@ class CceIntegrationProtectionRequestBody:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this CceIntegrationProtectionRequestBody.
+        r"""Gets the charging_mode of this CceIntegrationProtectionRequestBody.
 
         付费模式：   on_demand 按需   free_security_check 免费安全体检
 
@@ -154,7 +154,7 @@ class CceIntegrationProtectionRequestBody:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this CceIntegrationProtectionRequestBody.
+        r"""Sets the charging_mode of this CceIntegrationProtectionRequestBody.
 
         付费模式：   on_demand 按需   free_security_check 免费安全体检
 
@@ -165,7 +165,7 @@ class CceIntegrationProtectionRequestBody:
 
     @property
     def cce_protection_type(self):
-        """Gets the cce_protection_type of this CceIntegrationProtectionRequestBody.
+        r"""Gets the cce_protection_type of this CceIntegrationProtectionRequestBody.
 
         cce防护类型：   cluster_level 集群级别防护   node_level 节点级别防护
 
@@ -176,7 +176,7 @@ class CceIntegrationProtectionRequestBody:
 
     @cce_protection_type.setter
     def cce_protection_type(self, cce_protection_type):
-        """Sets the cce_protection_type of this CceIntegrationProtectionRequestBody.
+        r"""Sets the cce_protection_type of this CceIntegrationProtectionRequestBody.
 
         cce防护类型：   cluster_level 集群级别防护   node_level 节点级别防护
 
@@ -187,7 +187,7 @@ class CceIntegrationProtectionRequestBody:
 
     @property
     def prefer_packet_cycle(self):
-        """Gets the prefer_packet_cycle of this CceIntegrationProtectionRequestBody.
+        r"""Gets the prefer_packet_cycle of this CceIntegrationProtectionRequestBody.
 
         优先使用包周期配额；默认false
 
@@ -198,7 +198,7 @@ class CceIntegrationProtectionRequestBody:
 
     @prefer_packet_cycle.setter
     def prefer_packet_cycle(self, prefer_packet_cycle):
-        """Sets the prefer_packet_cycle of this CceIntegrationProtectionRequestBody.
+        r"""Sets the prefer_packet_cycle of this CceIntegrationProtectionRequestBody.
 
         优先使用包周期配额；默认false
 

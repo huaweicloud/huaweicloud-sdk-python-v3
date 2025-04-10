@@ -62,7 +62,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
     }
 
     def __init__(self, tenant_id=None, basic_min=None, basic_max=None, basic_advice_value=None, middle_min=None, middle_max=None, middle_advice_value=None, advance_min=None, advance_max=None, advance_advice_value=None, flexus_min=None, flexus_max=None, flexus_advice_value=None, cmww_min=None, cmww_max=None, cmww_advice_value=None, ljzn_min=None, ljzn_max=None, ljzn_advice_value=None):
-        """ShowTenantDurationCfgResponse
+        r"""ShowTenantDurationCfgResponse
 
         The model defined in huaweicloud sdk
 
@@ -170,7 +170,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ShowTenantDurationCfgResponse.
+        r"""Gets the tenant_id of this ShowTenantDurationCfgResponse.
 
         租户id
 
@@ -181,7 +181,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ShowTenantDurationCfgResponse.
+        r"""Sets the tenant_id of this ShowTenantDurationCfgResponse.
 
         租户id
 
@@ -192,7 +192,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def basic_min(self):
-        """Gets the basic_min of this ShowTenantDurationCfgResponse.
+        r"""Gets the basic_min of this ShowTenantDurationCfgResponse.
 
         基础版最低时长（秒）
 
@@ -203,7 +203,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @basic_min.setter
     def basic_min(self, basic_min):
-        """Sets the basic_min of this ShowTenantDurationCfgResponse.
+        r"""Sets the basic_min of this ShowTenantDurationCfgResponse.
 
         基础版最低时长（秒）
 
@@ -214,7 +214,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def basic_max(self):
-        """Gets the basic_max of this ShowTenantDurationCfgResponse.
+        r"""Gets the basic_max of this ShowTenantDurationCfgResponse.
 
         基础版最高时长（秒）
 
@@ -225,7 +225,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @basic_max.setter
     def basic_max(self, basic_max):
-        """Sets the basic_max of this ShowTenantDurationCfgResponse.
+        r"""Sets the basic_max of this ShowTenantDurationCfgResponse.
 
         基础版最高时长（秒）
 
@@ -236,7 +236,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def basic_advice_value(self):
-        """Gets the basic_advice_value of this ShowTenantDurationCfgResponse.
+        r"""Gets the basic_advice_value of this ShowTenantDurationCfgResponse.
 
         建议时长（秒）
 
@@ -247,7 +247,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @basic_advice_value.setter
     def basic_advice_value(self, basic_advice_value):
-        """Sets the basic_advice_value of this ShowTenantDurationCfgResponse.
+        r"""Sets the basic_advice_value of this ShowTenantDurationCfgResponse.
 
         建议时长（秒）
 
@@ -258,7 +258,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def middle_min(self):
-        """Gets the middle_min of this ShowTenantDurationCfgResponse.
+        r"""Gets the middle_min of this ShowTenantDurationCfgResponse.
 
         进阶版最低时长（秒）
 
@@ -269,7 +269,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @middle_min.setter
     def middle_min(self, middle_min):
-        """Sets the middle_min of this ShowTenantDurationCfgResponse.
+        r"""Sets the middle_min of this ShowTenantDurationCfgResponse.
 
         进阶版最低时长（秒）
 
@@ -280,7 +280,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def middle_max(self):
-        """Gets the middle_max of this ShowTenantDurationCfgResponse.
+        r"""Gets the middle_max of this ShowTenantDurationCfgResponse.
 
         进阶版最高时长（秒）
 
@@ -291,7 +291,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @middle_max.setter
     def middle_max(self, middle_max):
-        """Sets the middle_max of this ShowTenantDurationCfgResponse.
+        r"""Sets the middle_max of this ShowTenantDurationCfgResponse.
 
         进阶版最高时长（秒）
 
@@ -302,7 +302,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def middle_advice_value(self):
-        """Gets the middle_advice_value of this ShowTenantDurationCfgResponse.
+        r"""Gets the middle_advice_value of this ShowTenantDurationCfgResponse.
 
         建议时长（秒）
 
@@ -313,7 +313,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @middle_advice_value.setter
     def middle_advice_value(self, middle_advice_value):
-        """Sets the middle_advice_value of this ShowTenantDurationCfgResponse.
+        r"""Sets the middle_advice_value of this ShowTenantDurationCfgResponse.
 
         建议时长（秒）
 
@@ -324,7 +324,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def advance_min(self):
-        """Gets the advance_min of this ShowTenantDurationCfgResponse.
+        r"""Gets the advance_min of this ShowTenantDurationCfgResponse.
 
         高级版最低时长（秒）
 
@@ -335,7 +335,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @advance_min.setter
     def advance_min(self, advance_min):
-        """Sets the advance_min of this ShowTenantDurationCfgResponse.
+        r"""Sets the advance_min of this ShowTenantDurationCfgResponse.
 
         高级版最低时长（秒）
 
@@ -346,7 +346,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def advance_max(self):
-        """Gets the advance_max of this ShowTenantDurationCfgResponse.
+        r"""Gets the advance_max of this ShowTenantDurationCfgResponse.
 
         高级版最高时长（秒）
 
@@ -357,7 +357,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @advance_max.setter
     def advance_max(self, advance_max):
-        """Sets the advance_max of this ShowTenantDurationCfgResponse.
+        r"""Sets the advance_max of this ShowTenantDurationCfgResponse.
 
         高级版最高时长（秒）
 
@@ -368,7 +368,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def advance_advice_value(self):
-        """Gets the advance_advice_value of this ShowTenantDurationCfgResponse.
+        r"""Gets the advance_advice_value of this ShowTenantDurationCfgResponse.
 
         建议时长（秒）
 
@@ -379,7 +379,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @advance_advice_value.setter
     def advance_advice_value(self, advance_advice_value):
-        """Sets the advance_advice_value of this ShowTenantDurationCfgResponse.
+        r"""Sets the advance_advice_value of this ShowTenantDurationCfgResponse.
 
         建议时长（秒）
 
@@ -390,7 +390,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def flexus_min(self):
-        """Gets the flexus_min of this ShowTenantDurationCfgResponse.
+        r"""Gets the flexus_min of this ShowTenantDurationCfgResponse.
 
         flexus版最低时长（秒）
 
@@ -401,7 +401,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @flexus_min.setter
     def flexus_min(self, flexus_min):
-        """Sets the flexus_min of this ShowTenantDurationCfgResponse.
+        r"""Sets the flexus_min of this ShowTenantDurationCfgResponse.
 
         flexus版最低时长（秒）
 
@@ -412,7 +412,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def flexus_max(self):
-        """Gets the flexus_max of this ShowTenantDurationCfgResponse.
+        r"""Gets the flexus_max of this ShowTenantDurationCfgResponse.
 
         flexus版最高时长（秒）
 
@@ -423,7 +423,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @flexus_max.setter
     def flexus_max(self, flexus_max):
-        """Sets the flexus_max of this ShowTenantDurationCfgResponse.
+        r"""Sets the flexus_max of this ShowTenantDurationCfgResponse.
 
         flexus版最高时长（秒）
 
@@ -434,7 +434,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def flexus_advice_value(self):
-        """Gets the flexus_advice_value of this ShowTenantDurationCfgResponse.
+        r"""Gets the flexus_advice_value of this ShowTenantDurationCfgResponse.
 
         flexus建议时长（秒）
 
@@ -445,7 +445,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @flexus_advice_value.setter
     def flexus_advice_value(self, flexus_advice_value):
-        """Sets the flexus_advice_value of this ShowTenantDurationCfgResponse.
+        r"""Sets the flexus_advice_value of this ShowTenantDurationCfgResponse.
 
         flexus建议时长（秒）
 
@@ -456,7 +456,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def cmww_min(self):
-        """Gets the cmww_min of this ShowTenantDurationCfgResponse.
+        r"""Gets the cmww_min of this ShowTenantDurationCfgResponse.
 
         出门问问最低时长（秒）
 
@@ -467,7 +467,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @cmww_min.setter
     def cmww_min(self, cmww_min):
-        """Sets the cmww_min of this ShowTenantDurationCfgResponse.
+        r"""Sets the cmww_min of this ShowTenantDurationCfgResponse.
 
         出门问问最低时长（秒）
 
@@ -478,7 +478,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def cmww_max(self):
-        """Gets the cmww_max of this ShowTenantDurationCfgResponse.
+        r"""Gets the cmww_max of this ShowTenantDurationCfgResponse.
 
         出门问问最高时长（秒）
 
@@ -489,7 +489,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @cmww_max.setter
     def cmww_max(self, cmww_max):
-        """Sets the cmww_max of this ShowTenantDurationCfgResponse.
+        r"""Sets the cmww_max of this ShowTenantDurationCfgResponse.
 
         出门问问最高时长（秒）
 
@@ -500,7 +500,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def cmww_advice_value(self):
-        """Gets the cmww_advice_value of this ShowTenantDurationCfgResponse.
+        r"""Gets the cmww_advice_value of this ShowTenantDurationCfgResponse.
 
         出门问问建议时长（秒）
 
@@ -511,7 +511,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @cmww_advice_value.setter
     def cmww_advice_value(self, cmww_advice_value):
-        """Sets the cmww_advice_value of this ShowTenantDurationCfgResponse.
+        r"""Sets the cmww_advice_value of this ShowTenantDurationCfgResponse.
 
         出门问问建议时长（秒）
 
@@ -522,7 +522,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def ljzn_min(self):
-        """Gets the ljzn_min of this ShowTenantDurationCfgResponse.
+        r"""Gets the ljzn_min of this ShowTenantDurationCfgResponse.
 
         逻辑智能最低时长（秒）
 
@@ -533,7 +533,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @ljzn_min.setter
     def ljzn_min(self, ljzn_min):
-        """Sets the ljzn_min of this ShowTenantDurationCfgResponse.
+        r"""Sets the ljzn_min of this ShowTenantDurationCfgResponse.
 
         逻辑智能最低时长（秒）
 
@@ -544,7 +544,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def ljzn_max(self):
-        """Gets the ljzn_max of this ShowTenantDurationCfgResponse.
+        r"""Gets the ljzn_max of this ShowTenantDurationCfgResponse.
 
         逻辑智能最高时长（秒）
 
@@ -555,7 +555,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @ljzn_max.setter
     def ljzn_max(self, ljzn_max):
-        """Sets the ljzn_max of this ShowTenantDurationCfgResponse.
+        r"""Sets the ljzn_max of this ShowTenantDurationCfgResponse.
 
         逻辑智能最高时长（秒）
 
@@ -566,7 +566,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @property
     def ljzn_advice_value(self):
-        """Gets the ljzn_advice_value of this ShowTenantDurationCfgResponse.
+        r"""Gets the ljzn_advice_value of this ShowTenantDurationCfgResponse.
 
         逻辑智能建议时长（秒）
 
@@ -577,7 +577,7 @@ class ShowTenantDurationCfgResponse(SdkResponse):
 
     @ljzn_advice_value.setter
     def ljzn_advice_value(self, ljzn_advice_value):
-        """Sets the ljzn_advice_value of this ShowTenantDurationCfgResponse.
+        r"""Sets the ljzn_advice_value of this ShowTenantDurationCfgResponse.
 
         逻辑智能建议时长（秒）
 

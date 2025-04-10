@@ -30,7 +30,7 @@ class ListVirtualInterfacesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, virtual_interfaces=None, page_info=None):
-        """ListVirtualInterfacesResponse
+        r"""ListVirtualInterfacesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListVirtualInterfacesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListVirtualInterfacesResponse.
+        r"""Gets the request_id of this ListVirtualInterfacesResponse.
 
         操作请求ID
 
@@ -69,7 +69,7 @@ class ListVirtualInterfacesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListVirtualInterfacesResponse.
+        r"""Sets the request_id of this ListVirtualInterfacesResponse.
 
         操作请求ID
 
@@ -80,7 +80,7 @@ class ListVirtualInterfacesResponse(SdkResponse):
 
     @property
     def virtual_interfaces(self):
-        """Gets the virtual_interfaces of this ListVirtualInterfacesResponse.
+        r"""Gets the virtual_interfaces of this ListVirtualInterfacesResponse.
 
         虚拟接口对象
 
@@ -91,7 +91,7 @@ class ListVirtualInterfacesResponse(SdkResponse):
 
     @virtual_interfaces.setter
     def virtual_interfaces(self, virtual_interfaces):
-        """Sets the virtual_interfaces of this ListVirtualInterfacesResponse.
+        r"""Sets the virtual_interfaces of this ListVirtualInterfacesResponse.
 
         虚拟接口对象
 
@@ -102,7 +102,7 @@ class ListVirtualInterfacesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListVirtualInterfacesResponse.
+        r"""Gets the page_info of this ListVirtualInterfacesResponse.
 
         :return: The page_info of this ListVirtualInterfacesResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.PageInfo`
@@ -111,7 +111,7 @@ class ListVirtualInterfacesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListVirtualInterfacesResponse.
+        r"""Sets the page_info of this ListVirtualInterfacesResponse.
 
         :param page_info: The page_info of this ListVirtualInterfacesResponse.
         :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`

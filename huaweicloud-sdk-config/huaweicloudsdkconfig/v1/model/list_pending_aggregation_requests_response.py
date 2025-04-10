@@ -28,7 +28,7 @@ class ListPendingAggregationRequestsResponse(SdkResponse):
     }
 
     def __init__(self, pending_aggregation_requests=None, page_info=None):
-        """ListPendingAggregationRequestsResponse
+        r"""ListPendingAggregationRequestsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPendingAggregationRequestsResponse(SdkResponse):
 
     @property
     def pending_aggregation_requests(self):
-        """Gets the pending_aggregation_requests of this ListPendingAggregationRequestsResponse.
+        r"""Gets the pending_aggregation_requests of this ListPendingAggregationRequestsResponse.
 
         挂起的聚合请求列表。
 
@@ -62,7 +62,7 @@ class ListPendingAggregationRequestsResponse(SdkResponse):
 
     @pending_aggregation_requests.setter
     def pending_aggregation_requests(self, pending_aggregation_requests):
-        """Sets the pending_aggregation_requests of this ListPendingAggregationRequestsResponse.
+        r"""Sets the pending_aggregation_requests of this ListPendingAggregationRequestsResponse.
 
         挂起的聚合请求列表。
 
@@ -73,7 +73,7 @@ class ListPendingAggregationRequestsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPendingAggregationRequestsResponse.
+        r"""Gets the page_info of this ListPendingAggregationRequestsResponse.
 
         :return: The page_info of this ListPendingAggregationRequestsResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListPendingAggregationRequestsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPendingAggregationRequestsResponse.
+        r"""Sets the page_info of this ListPendingAggregationRequestsResponse.
 
         :param page_info: The page_info of this ListPendingAggregationRequestsResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

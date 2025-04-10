@@ -25,7 +25,7 @@ class ShowKeyRotationStatusRequest:
     }
 
     def __init__(self, body=None):
-        """ShowKeyRotationStatusRequest
+        r"""ShowKeyRotationStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowKeyRotationStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowKeyRotationStatusRequest.
+        r"""Gets the body of this ShowKeyRotationStatusRequest.
 
         :return: The body of this ShowKeyRotationStatusRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
@@ -52,7 +52,7 @@ class ShowKeyRotationStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowKeyRotationStatusRequest.
+        r"""Sets the body of this ShowKeyRotationStatusRequest.
 
         :param body: The body of this ShowKeyRotationStatusRequest.
         :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`

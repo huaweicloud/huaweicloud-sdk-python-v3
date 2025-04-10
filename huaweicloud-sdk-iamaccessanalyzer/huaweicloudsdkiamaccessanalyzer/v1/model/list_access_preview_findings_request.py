@@ -29,7 +29,7 @@ class ListAccessPreviewFindingsRequest:
     }
 
     def __init__(self, analyzer_id=None, access_preview_id=None, body=None):
-        """ListAccessPreviewFindingsRequest
+        r"""ListAccessPreviewFindingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListAccessPreviewFindingsRequest:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this ListAccessPreviewFindingsRequest.
+        r"""Gets the analyzer_id of this ListAccessPreviewFindingsRequest.
 
         分析器的唯一标识符。
 
@@ -66,7 +66,7 @@ class ListAccessPreviewFindingsRequest:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this ListAccessPreviewFindingsRequest.
+        r"""Sets the analyzer_id of this ListAccessPreviewFindingsRequest.
 
         分析器的唯一标识符。
 
@@ -77,7 +77,7 @@ class ListAccessPreviewFindingsRequest:
 
     @property
     def access_preview_id(self):
-        """Gets the access_preview_id of this ListAccessPreviewFindingsRequest.
+        r"""Gets the access_preview_id of this ListAccessPreviewFindingsRequest.
 
         访问预览的唯一标识符。
 
@@ -88,7 +88,7 @@ class ListAccessPreviewFindingsRequest:
 
     @access_preview_id.setter
     def access_preview_id(self, access_preview_id):
-        """Sets the access_preview_id of this ListAccessPreviewFindingsRequest.
+        r"""Sets the access_preview_id of this ListAccessPreviewFindingsRequest.
 
         访问预览的唯一标识符。
 
@@ -99,7 +99,7 @@ class ListAccessPreviewFindingsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAccessPreviewFindingsRequest.
+        r"""Gets the body of this ListAccessPreviewFindingsRequest.
 
         :return: The body of this ListAccessPreviewFindingsRequest.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListPreviewFindingsReqBody`
@@ -108,7 +108,7 @@ class ListAccessPreviewFindingsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAccessPreviewFindingsRequest.
+        r"""Sets the body of this ListAccessPreviewFindingsRequest.
 
         :param body: The body of this ListAccessPreviewFindingsRequest.
         :type body: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListPreviewFindingsReqBody`

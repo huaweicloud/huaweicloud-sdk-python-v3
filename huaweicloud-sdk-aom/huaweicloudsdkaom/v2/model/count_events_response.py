@@ -32,7 +32,7 @@ class CountEventsResponse(SdkResponse):
     }
 
     def __init__(self, step=None, timestamps=None, series=None, summary=None):
-        """CountEventsResponse
+        r"""CountEventsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CountEventsResponse(SdkResponse):
 
     @property
     def step(self):
-        """Gets the step of this CountEventsResponse.
+        r"""Gets the step of this CountEventsResponse.
 
         统计步长。毫秒数，例如一分钟则填写为60000。
 
@@ -76,7 +76,7 @@ class CountEventsResponse(SdkResponse):
 
     @step.setter
     def step(self, step):
-        """Sets the step of this CountEventsResponse.
+        r"""Sets the step of this CountEventsResponse.
 
         统计步长。毫秒数，例如一分钟则填写为60000。
 
@@ -87,7 +87,7 @@ class CountEventsResponse(SdkResponse):
 
     @property
     def timestamps(self):
-        """Gets the timestamps of this CountEventsResponse.
+        r"""Gets the timestamps of this CountEventsResponse.
 
         统计结果对应的时间序列。
 
@@ -98,7 +98,7 @@ class CountEventsResponse(SdkResponse):
 
     @timestamps.setter
     def timestamps(self, timestamps):
-        """Sets the timestamps of this CountEventsResponse.
+        r"""Sets the timestamps of this CountEventsResponse.
 
         统计结果对应的时间序列。
 
@@ -109,7 +109,7 @@ class CountEventsResponse(SdkResponse):
 
     @property
     def series(self):
-        """Gets the series of this CountEventsResponse.
+        r"""Gets the series of this CountEventsResponse.
 
         事件或者告警不同级别相同时间序列对应的统计结果。
 
@@ -120,7 +120,7 @@ class CountEventsResponse(SdkResponse):
 
     @series.setter
     def series(self, series):
-        """Sets the series of this CountEventsResponse.
+        r"""Sets the series of this CountEventsResponse.
 
         事件或者告警不同级别相同时间序列对应的统计结果。
 
@@ -131,7 +131,7 @@ class CountEventsResponse(SdkResponse):
 
     @property
     def summary(self):
-        """Gets the summary of this CountEventsResponse.
+        r"""Gets the summary of this CountEventsResponse.
 
         各类告警信息的数量汇总
 
@@ -142,7 +142,7 @@ class CountEventsResponse(SdkResponse):
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this CountEventsResponse.
+        r"""Sets the summary of this CountEventsResponse.
 
         各类告警信息的数量汇总
 

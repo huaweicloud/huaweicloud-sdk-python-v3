@@ -31,7 +31,7 @@ class UpdateDomainSetRequest:
     }
 
     def __init__(self, set_id=None, enterprise_project_id=None, fw_instance_id=None, body=None):
-        """UpdateDomainSetRequest
+        r"""UpdateDomainSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateDomainSetRequest:
 
     @property
     def set_id(self):
-        """Gets the set_id of this UpdateDomainSetRequest.
+        r"""Gets the set_id of this UpdateDomainSetRequest.
 
         域名组id，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -73,7 +73,7 @@ class UpdateDomainSetRequest:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this UpdateDomainSetRequest.
+        r"""Sets the set_id of this UpdateDomainSetRequest.
 
         域名组id，可通过[查询域名组列表接口](ListDomainSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -84,7 +84,7 @@ class UpdateDomainSetRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateDomainSetRequest.
+        r"""Gets the enterprise_project_id of this UpdateDomainSetRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -95,7 +95,7 @@ class UpdateDomainSetRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateDomainSetRequest.
+        r"""Sets the enterprise_project_id of this UpdateDomainSetRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -106,7 +106,7 @@ class UpdateDomainSetRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this UpdateDomainSetRequest.
+        r"""Gets the fw_instance_id of this UpdateDomainSetRequest.
 
         防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
 
@@ -117,7 +117,7 @@ class UpdateDomainSetRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this UpdateDomainSetRequest.
+        r"""Sets the fw_instance_id of this UpdateDomainSetRequest.
 
         防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
 
@@ -128,7 +128,7 @@ class UpdateDomainSetRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDomainSetRequest.
+        r"""Gets the body of this UpdateDomainSetRequest.
 
         :return: The body of this UpdateDomainSetRequest.
         :rtype: :class:`huaweicloudsdkcfw.v1.UpdateDomainSetInfoDto`
@@ -137,7 +137,7 @@ class UpdateDomainSetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDomainSetRequest.
+        r"""Sets the body of this UpdateDomainSetRequest.
 
         :param body: The body of this UpdateDomainSetRequest.
         :type body: :class:`huaweicloudsdkcfw.v1.UpdateDomainSetInfoDto`

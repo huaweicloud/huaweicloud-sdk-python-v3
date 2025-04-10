@@ -27,7 +27,7 @@ class ExportImageRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """ExportImageRequest
+        r"""ExportImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExportImageRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ExportImageRequest.
+        r"""Gets the image_id of this ExportImageRequest.
 
         镜像ID。
 
@@ -60,7 +60,7 @@ class ExportImageRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ExportImageRequest.
+        r"""Sets the image_id of this ExportImageRequest.
 
         镜像ID。
 
@@ -71,7 +71,7 @@ class ExportImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExportImageRequest.
+        r"""Gets the body of this ExportImageRequest.
 
         :return: The body of this ExportImageRequest.
         :rtype: :class:`huaweicloudsdkims.v2.ExportImageRequestBody`
@@ -80,7 +80,7 @@ class ExportImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportImageRequest.
+        r"""Sets the body of this ExportImageRequest.
 
         :param body: The body of this ExportImageRequest.
         :type body: :class:`huaweicloudsdkims.v2.ExportImageRequestBody`

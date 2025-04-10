@@ -27,7 +27,7 @@ class RuleHitCountObject:
     }
 
     def __init__(self, rule_id=None, rule_hit_count=None):
-        """RuleHitCountObject
+        r"""RuleHitCountObject
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RuleHitCountObject:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this RuleHitCountObject.
+        r"""Gets the rule_id of this RuleHitCountObject.
 
         规则id
 
@@ -61,7 +61,7 @@ class RuleHitCountObject:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this RuleHitCountObject.
+        r"""Sets the rule_id of this RuleHitCountObject.
 
         规则id
 
@@ -72,7 +72,7 @@ class RuleHitCountObject:
 
     @property
     def rule_hit_count(self):
-        """Gets the rule_hit_count of this RuleHitCountObject.
+        r"""Gets the rule_hit_count of this RuleHitCountObject.
 
         规则击中次数，当acl规则被触发时，对应规则id的击中次数会添加一次。
 
@@ -83,7 +83,7 @@ class RuleHitCountObject:
 
     @rule_hit_count.setter
     def rule_hit_count(self, rule_hit_count):
-        """Sets the rule_hit_count of this RuleHitCountObject.
+        r"""Sets the rule_hit_count of this RuleHitCountObject.
 
         规则击中次数，当acl规则被触发时，对应规则id的击中次数会添加一次。
 

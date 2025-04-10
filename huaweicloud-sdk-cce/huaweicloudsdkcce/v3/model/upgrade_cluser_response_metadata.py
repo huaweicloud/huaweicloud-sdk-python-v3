@@ -25,7 +25,7 @@ class UpgradeCluserResponseMetadata:
     }
 
     def __init__(self, uid=None):
-        """UpgradeCluserResponseMetadata
+        r"""UpgradeCluserResponseMetadata
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpgradeCluserResponseMetadata:
 
     @property
     def uid(self):
-        """Gets the uid of this UpgradeCluserResponseMetadata.
+        r"""Gets the uid of this UpgradeCluserResponseMetadata.
 
         升级任务ID，可通过调用获取集群升级任务详情API查询进展
 
@@ -54,7 +54,7 @@ class UpgradeCluserResponseMetadata:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this UpgradeCluserResponseMetadata.
+        r"""Sets the uid of this UpgradeCluserResponseMetadata.
 
         升级任务ID，可通过调用获取集群升级任务详情API查询进展
 

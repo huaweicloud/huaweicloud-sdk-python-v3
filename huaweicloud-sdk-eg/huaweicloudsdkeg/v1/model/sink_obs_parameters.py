@@ -33,7 +33,7 @@ class SinkObsParameters:
     }
 
     def __init__(self, access_key=None, secret_key=None, obs_bucket=None, obs_path=None, time_format=None):
-        """SinkObsParameters
+        r"""SinkObsParameters
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class SinkObsParameters:
 
     @property
     def access_key(self):
-        """Gets the access_key of this SinkObsParameters.
+        r"""Gets the access_key of this SinkObsParameters.
 
         AK
 
@@ -78,7 +78,7 @@ class SinkObsParameters:
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this SinkObsParameters.
+        r"""Sets the access_key of this SinkObsParameters.
 
         AK
 
@@ -89,7 +89,7 @@ class SinkObsParameters:
 
     @property
     def secret_key(self):
-        """Gets the secret_key of this SinkObsParameters.
+        r"""Gets the secret_key of this SinkObsParameters.
 
         SK
 
@@ -100,7 +100,7 @@ class SinkObsParameters:
 
     @secret_key.setter
     def secret_key(self, secret_key):
-        """Sets the secret_key of this SinkObsParameters.
+        r"""Sets the secret_key of this SinkObsParameters.
 
         SK
 
@@ -111,7 +111,7 @@ class SinkObsParameters:
 
     @property
     def obs_bucket(self):
-        """Gets the obs_bucket of this SinkObsParameters.
+        r"""Gets the obs_bucket of this SinkObsParameters.
 
         桶
 
@@ -122,7 +122,7 @@ class SinkObsParameters:
 
     @obs_bucket.setter
     def obs_bucket(self, obs_bucket):
-        """Sets the obs_bucket of this SinkObsParameters.
+        r"""Sets the obs_bucket of this SinkObsParameters.
 
         桶
 
@@ -133,7 +133,7 @@ class SinkObsParameters:
 
     @property
     def obs_path(self):
-        """Gets the obs_path of this SinkObsParameters.
+        r"""Gets the obs_path of this SinkObsParameters.
 
         转储目录
 
@@ -144,7 +144,7 @@ class SinkObsParameters:
 
     @obs_path.setter
     def obs_path(self, obs_path):
-        """Sets the obs_path of this SinkObsParameters.
+        r"""Sets the obs_path of this SinkObsParameters.
 
         转储目录
 
@@ -155,7 +155,7 @@ class SinkObsParameters:
 
     @property
     def time_format(self):
-        """Gets the time_format of this SinkObsParameters.
+        r"""Gets the time_format of this SinkObsParameters.
 
         时间目录格式
 
@@ -166,7 +166,7 @@ class SinkObsParameters:
 
     @time_format.setter
     def time_format(self, time_format):
-        """Sets the time_format of this SinkObsParameters.
+        r"""Sets the time_format of this SinkObsParameters.
 
         时间目录格式
 

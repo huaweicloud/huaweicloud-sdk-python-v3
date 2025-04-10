@@ -37,7 +37,7 @@ class CreateNotificationRequestBody:
     }
 
     def __init__(self, notification_name=None, operation_type=None, agency_name=None, operations=None, notify_user_list=None, topic_id=None, filter=None):
-        """CreateNotificationRequestBody
+        r"""CreateNotificationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class CreateNotificationRequestBody:
 
     @property
     def notification_name(self):
-        """Gets the notification_name of this CreateNotificationRequestBody.
+        r"""Gets the notification_name of this CreateNotificationRequestBody.
 
         标识关键操作名称。
 
@@ -94,7 +94,7 @@ class CreateNotificationRequestBody:
 
     @notification_name.setter
     def notification_name(self, notification_name):
-        """Sets the notification_name of this CreateNotificationRequestBody.
+        r"""Sets the notification_name of this CreateNotificationRequestBody.
 
         标识关键操作名称。
 
@@ -105,7 +105,7 @@ class CreateNotificationRequestBody:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this CreateNotificationRequestBody.
+        r"""Gets the operation_type of this CreateNotificationRequestBody.
 
         标识操作类型。 目前支持的操作类型有完整类型(complete)和自定义类型(customized)。 完整类型下，CTS发送通知的对象为已对接服务的所有事件，此时不用指定operations和notify_user_list字段。 自定义类型下，CTS发送通知的对象是在operations列表中指定的事件。
 
@@ -116,7 +116,7 @@ class CreateNotificationRequestBody:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this CreateNotificationRequestBody.
+        r"""Sets the operation_type of this CreateNotificationRequestBody.
 
         标识操作类型。 目前支持的操作类型有完整类型(complete)和自定义类型(customized)。 完整类型下，CTS发送通知的对象为已对接服务的所有事件，此时不用指定operations和notify_user_list字段。 自定义类型下，CTS发送通知的对象是在operations列表中指定的事件。
 
@@ -127,7 +127,7 @@ class CreateNotificationRequestBody:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this CreateNotificationRequestBody.
+        r"""Gets the agency_name of this CreateNotificationRequestBody.
 
         云服务委托名称。 参数值为\"cts_admin_trust\"时，创建关键操作通知时会自动创建一个云服务委托：cts_admin_trust。
 
@@ -138,7 +138,7 @@ class CreateNotificationRequestBody:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this CreateNotificationRequestBody.
+        r"""Sets the agency_name of this CreateNotificationRequestBody.
 
         云服务委托名称。 参数值为\"cts_admin_trust\"时，创建关键操作通知时会自动创建一个云服务委托：cts_admin_trust。
 
@@ -149,7 +149,7 @@ class CreateNotificationRequestBody:
 
     @property
     def operations(self):
-        """Gets the operations of this CreateNotificationRequestBody.
+        r"""Gets the operations of this CreateNotificationRequestBody.
 
         操作事件列表。
 
@@ -160,7 +160,7 @@ class CreateNotificationRequestBody:
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this CreateNotificationRequestBody.
+        r"""Sets the operations of this CreateNotificationRequestBody.
 
         操作事件列表。
 
@@ -171,7 +171,7 @@ class CreateNotificationRequestBody:
 
     @property
     def notify_user_list(self):
-        """Gets the notify_user_list of this CreateNotificationRequestBody.
+        r"""Gets the notify_user_list of this CreateNotificationRequestBody.
 
         通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
 
@@ -182,7 +182,7 @@ class CreateNotificationRequestBody:
 
     @notify_user_list.setter
     def notify_user_list(self, notify_user_list):
-        """Sets the notify_user_list of this CreateNotificationRequestBody.
+        r"""Sets the notify_user_list of this CreateNotificationRequestBody.
 
         通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
 
@@ -193,7 +193,7 @@ class CreateNotificationRequestBody:
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this CreateNotificationRequestBody.
+        r"""Gets the topic_id of this CreateNotificationRequestBody.
 
         消息通知服务的topic_urn或者函数工作流的func_urn。 - 消息通知服务的topic_urn可以通过消息通知服务的查询主题列表API获取，示例：urn:smn:regionId:f96188c7ccaf4ffba0c9aa149ab2bd57:test_topic_v2。 - 函数工作流的func_urn可以通过函数工作流的获取函数列表API获取，示例：urn:fss:xxxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test。
 
@@ -204,7 +204,7 @@ class CreateNotificationRequestBody:
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this CreateNotificationRequestBody.
+        r"""Sets the topic_id of this CreateNotificationRequestBody.
 
         消息通知服务的topic_urn或者函数工作流的func_urn。 - 消息通知服务的topic_urn可以通过消息通知服务的查询主题列表API获取，示例：urn:smn:regionId:f96188c7ccaf4ffba0c9aa149ab2bd57:test_topic_v2。 - 函数工作流的func_urn可以通过函数工作流的获取函数列表API获取，示例：urn:fss:xxxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test。
 
@@ -215,7 +215,7 @@ class CreateNotificationRequestBody:
 
     @property
     def filter(self):
-        """Gets the filter of this CreateNotificationRequestBody.
+        r"""Gets the filter of this CreateNotificationRequestBody.
 
         :return: The filter of this CreateNotificationRequestBody.
         :rtype: :class:`huaweicloudsdkcts.v3.Filter`
@@ -224,7 +224,7 @@ class CreateNotificationRequestBody:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this CreateNotificationRequestBody.
+        r"""Sets the filter of this CreateNotificationRequestBody.
 
         :param filter: The filter of this CreateNotificationRequestBody.
         :type filter: :class:`huaweicloudsdkcts.v3.Filter`

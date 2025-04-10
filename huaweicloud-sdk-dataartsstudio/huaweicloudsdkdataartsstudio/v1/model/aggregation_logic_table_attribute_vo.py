@@ -65,7 +65,7 @@ class AggregationLogicTableAttributeVO:
     }
 
     def __init__(self, id=None, aggregation_logic_table_id=None, ordinal=None, name_en=None, name_ch=None, attribute_type=None, is_primary_key=None, is_partition_key=None, secrecy_levels=None, not_null=None, description=None, data_type=None, domain_type=None, data_type_extend=None, ref_id=None, ref_name_ch=None, ref_name_en=None, stand_row_id=None, stand_row_name=None, quality_infos=None, alias=None):
-        """AggregationLogicTableAttributeVO
+        r"""AggregationLogicTableAttributeVO
 
         The model defined in huaweicloud sdk
 
@@ -178,7 +178,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def id(self):
-        """Gets the id of this AggregationLogicTableAttributeVO.
+        r"""Gets the id of this AggregationLogicTableAttributeVO.
 
         编码，ID字符串。
 
@@ -189,7 +189,7 @@ class AggregationLogicTableAttributeVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AggregationLogicTableAttributeVO.
+        r"""Sets the id of this AggregationLogicTableAttributeVO.
 
         编码，ID字符串。
 
@@ -200,7 +200,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def aggregation_logic_table_id(self):
-        """Gets the aggregation_logic_table_id of this AggregationLogicTableAttributeVO.
+        r"""Gets the aggregation_logic_table_id of this AggregationLogicTableAttributeVO.
 
         所属汇总表ID，ID字符串。
 
@@ -211,7 +211,7 @@ class AggregationLogicTableAttributeVO:
 
     @aggregation_logic_table_id.setter
     def aggregation_logic_table_id(self, aggregation_logic_table_id):
-        """Sets the aggregation_logic_table_id of this AggregationLogicTableAttributeVO.
+        r"""Sets the aggregation_logic_table_id of this AggregationLogicTableAttributeVO.
 
         所属汇总表ID，ID字符串。
 
@@ -222,7 +222,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this AggregationLogicTableAttributeVO.
+        r"""Gets the ordinal of this AggregationLogicTableAttributeVO.
 
         序号。
 
@@ -233,7 +233,7 @@ class AggregationLogicTableAttributeVO:
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this AggregationLogicTableAttributeVO.
+        r"""Sets the ordinal of this AggregationLogicTableAttributeVO.
 
         序号。
 
@@ -244,7 +244,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this AggregationLogicTableAttributeVO.
+        r"""Gets the name_en of this AggregationLogicTableAttributeVO.
 
         字段名。
 
@@ -255,7 +255,7 @@ class AggregationLogicTableAttributeVO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this AggregationLogicTableAttributeVO.
+        r"""Sets the name_en of this AggregationLogicTableAttributeVO.
 
         字段名。
 
@@ -266,7 +266,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def name_ch(self):
-        """Gets the name_ch of this AggregationLogicTableAttributeVO.
+        r"""Gets the name_ch of this AggregationLogicTableAttributeVO.
 
         业务属性。
 
@@ -277,7 +277,7 @@ class AggregationLogicTableAttributeVO:
 
     @name_ch.setter
     def name_ch(self, name_ch):
-        """Sets the name_ch of this AggregationLogicTableAttributeVO.
+        r"""Sets the name_ch of this AggregationLogicTableAttributeVO.
 
         业务属性。
 
@@ -288,7 +288,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def attribute_type(self):
-        """Gets the attribute_type of this AggregationLogicTableAttributeVO.
+        r"""Gets the attribute_type of this AggregationLogicTableAttributeVO.
 
         :return: The attribute_type of this AggregationLogicTableAttributeVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -297,7 +297,7 @@ class AggregationLogicTableAttributeVO:
 
     @attribute_type.setter
     def attribute_type(self, attribute_type):
-        """Sets the attribute_type of this AggregationLogicTableAttributeVO.
+        r"""Sets the attribute_type of this AggregationLogicTableAttributeVO.
 
         :param attribute_type: The attribute_type of this AggregationLogicTableAttributeVO.
         :type attribute_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -306,7 +306,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def is_primary_key(self):
-        """Gets the is_primary_key of this AggregationLogicTableAttributeVO.
+        r"""Gets the is_primary_key of this AggregationLogicTableAttributeVO.
 
         是否主键。
 
@@ -317,7 +317,7 @@ class AggregationLogicTableAttributeVO:
 
     @is_primary_key.setter
     def is_primary_key(self, is_primary_key):
-        """Sets the is_primary_key of this AggregationLogicTableAttributeVO.
+        r"""Sets the is_primary_key of this AggregationLogicTableAttributeVO.
 
         是否主键。
 
@@ -328,7 +328,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def is_partition_key(self):
-        """Gets the is_partition_key of this AggregationLogicTableAttributeVO.
+        r"""Gets the is_partition_key of this AggregationLogicTableAttributeVO.
 
         是否分区键。
 
@@ -339,7 +339,7 @@ class AggregationLogicTableAttributeVO:
 
     @is_partition_key.setter
     def is_partition_key(self, is_partition_key):
-        """Sets the is_partition_key of this AggregationLogicTableAttributeVO.
+        r"""Sets the is_partition_key of this AggregationLogicTableAttributeVO.
 
         是否分区键。
 
@@ -350,7 +350,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def secrecy_levels(self):
-        """Gets the secrecy_levels of this AggregationLogicTableAttributeVO.
+        r"""Gets the secrecy_levels of this AggregationLogicTableAttributeVO.
 
         密级
 
@@ -361,7 +361,7 @@ class AggregationLogicTableAttributeVO:
 
     @secrecy_levels.setter
     def secrecy_levels(self, secrecy_levels):
-        """Sets the secrecy_levels of this AggregationLogicTableAttributeVO.
+        r"""Sets the secrecy_levels of this AggregationLogicTableAttributeVO.
 
         密级
 
@@ -372,7 +372,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def not_null(self):
-        """Gets the not_null of this AggregationLogicTableAttributeVO.
+        r"""Gets the not_null of this AggregationLogicTableAttributeVO.
 
         是否不为空。
 
@@ -383,7 +383,7 @@ class AggregationLogicTableAttributeVO:
 
     @not_null.setter
     def not_null(self, not_null):
-        """Sets the not_null of this AggregationLogicTableAttributeVO.
+        r"""Sets the not_null of this AggregationLogicTableAttributeVO.
 
         是否不为空。
 
@@ -394,7 +394,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def description(self):
-        """Gets the description of this AggregationLogicTableAttributeVO.
+        r"""Gets the description of this AggregationLogicTableAttributeVO.
 
         描述。
 
@@ -405,7 +405,7 @@ class AggregationLogicTableAttributeVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AggregationLogicTableAttributeVO.
+        r"""Sets the description of this AggregationLogicTableAttributeVO.
 
         描述。
 
@@ -416,7 +416,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def data_type(self):
-        """Gets the data_type of this AggregationLogicTableAttributeVO.
+        r"""Gets the data_type of this AggregationLogicTableAttributeVO.
 
         字段类型。
 
@@ -427,7 +427,7 @@ class AggregationLogicTableAttributeVO:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this AggregationLogicTableAttributeVO.
+        r"""Sets the data_type of this AggregationLogicTableAttributeVO.
 
         字段类型。
 
@@ -438,7 +438,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this AggregationLogicTableAttributeVO.
+        r"""Gets the domain_type of this AggregationLogicTableAttributeVO.
 
         :return: The domain_type of this AggregationLogicTableAttributeVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
@@ -447,7 +447,7 @@ class AggregationLogicTableAttributeVO:
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this AggregationLogicTableAttributeVO.
+        r"""Sets the domain_type of this AggregationLogicTableAttributeVO.
 
         :param domain_type: The domain_type of this AggregationLogicTableAttributeVO.
         :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
@@ -456,7 +456,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def data_type_extend(self):
-        """Gets the data_type_extend of this AggregationLogicTableAttributeVO.
+        r"""Gets the data_type_extend of this AggregationLogicTableAttributeVO.
 
         数据类型扩展字段。
 
@@ -467,7 +467,7 @@ class AggregationLogicTableAttributeVO:
 
     @data_type_extend.setter
     def data_type_extend(self, data_type_extend):
-        """Sets the data_type_extend of this AggregationLogicTableAttributeVO.
+        r"""Sets the data_type_extend of this AggregationLogicTableAttributeVO.
 
         数据类型扩展字段。
 
@@ -478,7 +478,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def ref_id(self):
-        """Gets the ref_id of this AggregationLogicTableAttributeVO.
+        r"""Gets the ref_id of this AggregationLogicTableAttributeVO.
 
         属性关联对象的id
 
@@ -489,7 +489,7 @@ class AggregationLogicTableAttributeVO:
 
     @ref_id.setter
     def ref_id(self, ref_id):
-        """Sets the ref_id of this AggregationLogicTableAttributeVO.
+        r"""Sets the ref_id of this AggregationLogicTableAttributeVO.
 
         属性关联对象的id
 
@@ -500,7 +500,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def ref_name_ch(self):
-        """Gets the ref_name_ch of this AggregationLogicTableAttributeVO.
+        r"""Gets the ref_name_ch of this AggregationLogicTableAttributeVO.
 
         属性关联对象的中文名
 
@@ -511,7 +511,7 @@ class AggregationLogicTableAttributeVO:
 
     @ref_name_ch.setter
     def ref_name_ch(self, ref_name_ch):
-        """Sets the ref_name_ch of this AggregationLogicTableAttributeVO.
+        r"""Sets the ref_name_ch of this AggregationLogicTableAttributeVO.
 
         属性关联对象的中文名
 
@@ -522,7 +522,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def ref_name_en(self):
-        """Gets the ref_name_en of this AggregationLogicTableAttributeVO.
+        r"""Gets the ref_name_en of this AggregationLogicTableAttributeVO.
 
         属性关联对象的英文名
 
@@ -533,7 +533,7 @@ class AggregationLogicTableAttributeVO:
 
     @ref_name_en.setter
     def ref_name_en(self, ref_name_en):
-        """Sets the ref_name_en of this AggregationLogicTableAttributeVO.
+        r"""Sets the ref_name_en of this AggregationLogicTableAttributeVO.
 
         属性关联对象的英文名
 
@@ -544,7 +544,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def stand_row_id(self):
-        """Gets the stand_row_id of this AggregationLogicTableAttributeVO.
+        r"""Gets the stand_row_id of this AggregationLogicTableAttributeVO.
 
         关联的数据标准的ID，ID字符串。
 
@@ -555,7 +555,7 @@ class AggregationLogicTableAttributeVO:
 
     @stand_row_id.setter
     def stand_row_id(self, stand_row_id):
-        """Sets the stand_row_id of this AggregationLogicTableAttributeVO.
+        r"""Sets the stand_row_id of this AggregationLogicTableAttributeVO.
 
         关联的数据标准的ID，ID字符串。
 
@@ -566,7 +566,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def stand_row_name(self):
-        """Gets the stand_row_name of this AggregationLogicTableAttributeVO.
+        r"""Gets the stand_row_name of this AggregationLogicTableAttributeVO.
 
         关联的数据标准名称，只读。
 
@@ -577,7 +577,7 @@ class AggregationLogicTableAttributeVO:
 
     @stand_row_name.setter
     def stand_row_name(self, stand_row_name):
-        """Sets the stand_row_name of this AggregationLogicTableAttributeVO.
+        r"""Sets the stand_row_name of this AggregationLogicTableAttributeVO.
 
         关联的数据标准名称，只读。
 
@@ -588,7 +588,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def quality_infos(self):
-        """Gets the quality_infos of this AggregationLogicTableAttributeVO.
+        r"""Gets the quality_infos of this AggregationLogicTableAttributeVO.
 
         质量信息，只读。
 
@@ -599,7 +599,7 @@ class AggregationLogicTableAttributeVO:
 
     @quality_infos.setter
     def quality_infos(self, quality_infos):
-        """Sets the quality_infos of this AggregationLogicTableAttributeVO.
+        r"""Sets the quality_infos of this AggregationLogicTableAttributeVO.
 
         质量信息，只读。
 
@@ -610,7 +610,7 @@ class AggregationLogicTableAttributeVO:
 
     @property
     def alias(self):
-        """Gets the alias of this AggregationLogicTableAttributeVO.
+        r"""Gets the alias of this AggregationLogicTableAttributeVO.
 
         别名。
 
@@ -621,7 +621,7 @@ class AggregationLogicTableAttributeVO:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this AggregationLogicTableAttributeVO.
+        r"""Sets the alias of this AggregationLogicTableAttributeVO.
 
         别名。
 

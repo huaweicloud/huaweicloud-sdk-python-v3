@@ -28,7 +28,7 @@ class ShowStreamCountResponse(SdkResponse):
     }
 
     def __init__(self, data_list=None, x_request_id=None):
-        """ShowStreamCountResponse
+        r"""ShowStreamCountResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowStreamCountResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ShowStreamCountResponse.
+        r"""Gets the data_list of this ShowStreamCountResponse.
 
         采样数据列表。
 
@@ -62,7 +62,7 @@ class ShowStreamCountResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ShowStreamCountResponse.
+        r"""Sets the data_list of this ShowStreamCountResponse.
 
         采样数据列表。
 
@@ -73,7 +73,7 @@ class ShowStreamCountResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowStreamCountResponse.
+        r"""Gets the x_request_id of this ShowStreamCountResponse.
 
         :return: The x_request_id of this ShowStreamCountResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowStreamCountResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowStreamCountResponse.
+        r"""Sets the x_request_id of this ShowStreamCountResponse.
 
         :param x_request_id: The x_request_id of this ShowStreamCountResponse.
         :type x_request_id: str

@@ -25,7 +25,7 @@ class ListPropertyRequest:
     }
 
     def __init__(self, _property=None):
-        """ListPropertyRequest
+        r"""ListPropertyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListPropertyRequest:
 
     @property
     def _property(self):
-        """Gets the _property of this ListPropertyRequest.
+        r"""Gets the _property of this ListPropertyRequest.
 
         属性，支持LABEL/PUBLISHER/CATEGORY
 
@@ -53,7 +53,7 @@ class ListPropertyRequest:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this ListPropertyRequest.
+        r"""Sets the _property of this ListPropertyRequest.
 
         属性，支持LABEL/PUBLISHER/CATEGORY
 

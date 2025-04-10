@@ -66,7 +66,7 @@ class PutObjectRequest(SdkStreamRequest):
     }
 
     def __init__(self, stream=None, bucket_name=None, object_key=None, date=None, content_md5=None, x_obs_acl=None, x_obs_grant_read=None, x_obs_grant_read_acp=None, x_obs_grant_write_acp=None, x_obs_grant_full_control=None, x_obs_storage_class=None, x_obs_meta_xxx=None, x_obs_persistent_headers=None, x_obs_website_redirect_location=None, x_obs_server_side_encryption=None, x_obs_server_side_encryption_kms_key_id=None, x_obs_server_side_encryption_customer_algorithm=None, x_obs_server_side_encryption_customer_key=None, x_obs_server_side_encryption_customer_key_md5=None, success_action_redirect=None, x_obs_expires=None):
-        """PutObjectRequest
+        r"""PutObjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this PutObjectRequest.
+        r"""Gets the bucket_name of this PutObjectRequest.
 
         Name of the bucket.
 
@@ -188,7 +188,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this PutObjectRequest.
+        r"""Sets the bucket_name of this PutObjectRequest.
 
         Name of the bucket.
 
@@ -199,7 +199,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def object_key(self):
-        """Gets the object_key of this PutObjectRequest.
+        r"""Gets the object_key of this PutObjectRequest.
 
         Object key for which this operation was initiated.
 
@@ -210,7 +210,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @object_key.setter
     def object_key(self, object_key):
-        """Sets the object_key of this PutObjectRequest.
+        r"""Sets the object_key of this PutObjectRequest.
 
         Object key for which this operation was initiated.
 
@@ -221,7 +221,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def date(self):
-        """Gets the date of this PutObjectRequest.
+        r"""Gets the date of this PutObjectRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -232,7 +232,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this PutObjectRequest.
+        r"""Sets the date of this PutObjectRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -243,7 +243,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def content_md5(self):
-        """Gets the content_md5 of this PutObjectRequest.
+        r"""Gets the content_md5 of this PutObjectRequest.
 
         Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.  Example: n58IG6hfM7vqI4K0vnWpog==
 
@@ -254,7 +254,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @content_md5.setter
     def content_md5(self, content_md5):
-        """Sets the content_md5 of this PutObjectRequest.
+        r"""Sets the content_md5 of this PutObjectRequest.
 
         Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.  Example: n58IG6hfM7vqI4K0vnWpog==
 
@@ -265,7 +265,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def x_obs_acl(self):
-        """Gets the x_obs_acl of this PutObjectRequest.
+        r"""Gets the x_obs_acl of this PutObjectRequest.
 
         When creating a bucket, you can add this header to configure access control policies (predefined policies) for the bucket.  Example: x-obs-acl: public-read
 
@@ -276,7 +276,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @x_obs_acl.setter
     def x_obs_acl(self, x_obs_acl):
-        """Sets the x_obs_acl of this PutObjectRequest.
+        r"""Sets the x_obs_acl of this PutObjectRequest.
 
         When creating a bucket, you can add this header to configure access control policies (predefined policies) for the bucket.  Example: x-obs-acl: public-read
 
@@ -287,7 +287,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def x_obs_grant_read(self):
-        """Gets the x_obs_grant_read of this PutObjectRequest.
+        r"""Gets the x_obs_grant_read of this PutObjectRequest.
 
         When creating an object, you can use this header to grant all users under a tenant the permissions to read the object and obtain the object metadata.  Example: x-obs-grant-read: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
@@ -298,7 +298,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @x_obs_grant_read.setter
     def x_obs_grant_read(self, x_obs_grant_read):
-        """Sets the x_obs_grant_read of this PutObjectRequest.
+        r"""Sets the x_obs_grant_read of this PutObjectRequest.
 
         When creating an object, you can use this header to grant all users under a tenant the permissions to read the object and obtain the object metadata.  Example: x-obs-grant-read: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
@@ -309,7 +309,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def x_obs_grant_read_acp(self):
-        """Gets the x_obs_grant_read_acp of this PutObjectRequest.
+        r"""Gets the x_obs_grant_read_acp of this PutObjectRequest.
 
         When creating an object, you can use this header to grant all users under a tenant the permissions to obtain the object ACL.  Example: x-obs-grant-read-acp: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
@@ -320,7 +320,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @x_obs_grant_read_acp.setter
     def x_obs_grant_read_acp(self, x_obs_grant_read_acp):
-        """Sets the x_obs_grant_read_acp of this PutObjectRequest.
+        r"""Sets the x_obs_grant_read_acp of this PutObjectRequest.
 
         When creating an object, you can use this header to grant all users under a tenant the permissions to obtain the object ACL.  Example: x-obs-grant-read-acp: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
@@ -331,7 +331,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def x_obs_grant_write_acp(self):
-        """Gets the x_obs_grant_write_acp of this PutObjectRequest.
+        r"""Gets the x_obs_grant_write_acp of this PutObjectRequest.
 
         When creating an object, you can use this header to grant all users under a tenant the permissions to write the object ACL.  Example: x-obs-grant-write-acp: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
@@ -342,7 +342,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @x_obs_grant_write_acp.setter
     def x_obs_grant_write_acp(self, x_obs_grant_write_acp):
-        """Sets the x_obs_grant_write_acp of this PutObjectRequest.
+        r"""Sets the x_obs_grant_write_acp of this PutObjectRequest.
 
         When creating an object, you can use this header to grant all users under a tenant the permissions to write the object ACL.  Example: x-obs-grant-write-acp: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
@@ -353,7 +353,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def x_obs_grant_full_control(self):
-        """Gets the x_obs_grant_full_control of this PutObjectRequest.
+        r"""Gets the x_obs_grant_full_control of this PutObjectRequest.
 
         When creating an object, you can use this header to grant all users in a domain the permissions to read the object, to obtain the object metadata and ACL, and to write the object ACL.  Example: x-obs-grant-full-control: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
@@ -364,7 +364,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @x_obs_grant_full_control.setter
     def x_obs_grant_full_control(self, x_obs_grant_full_control):
-        """Sets the x_obs_grant_full_control of this PutObjectRequest.
+        r"""Sets the x_obs_grant_full_control of this PutObjectRequest.
 
         When creating an object, you can use this header to grant all users in a domain the permissions to read the object, to obtain the object metadata and ACL, and to write the object ACL.  Example: x-obs-grant-full-control: id=domainID. If multiple tenants are authorized, separate them with commas (,).
 
@@ -375,7 +375,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def x_obs_storage_class(self):
-        """Gets the x_obs_storage_class of this PutObjectRequest.
+        r"""Gets the x_obs_storage_class of this PutObjectRequest.
 
         When creating an object, you can use this header to specify a storage class for the object. If you do not have this header configured, the object inherits the default storage class of the bucket.Note: There are three storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD), so the value can be **STANDARD**, **WARM**, or **COLD**. The value is case sensitive.Example: x-obs-storage-class: STANDARD
 
@@ -386,7 +386,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @x_obs_storage_class.setter
     def x_obs_storage_class(self, x_obs_storage_class):
-        """Sets the x_obs_storage_class of this PutObjectRequest.
+        r"""Sets the x_obs_storage_class of this PutObjectRequest.
 
         When creating an object, you can use this header to specify a storage class for the object. If you do not have this header configured, the object inherits the default storage class of the bucket.Note: There are three storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD), so the value can be **STANDARD**, **WARM**, or **COLD**. The value is case sensitive.Example: x-obs-storage-class: STANDARD
 
@@ -397,7 +397,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def x_obs_meta_xxx(self):
-        """Gets the x_obs_meta_xxx of this PutObjectRequest.
+        r"""Gets the x_obs_meta_xxx of this PutObjectRequest.
 
         User-defined metadata.  Example: x-obs-meta-test: test metadata
 
@@ -408,7 +408,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @x_obs_meta_xxx.setter
     def x_obs_meta_xxx(self, x_obs_meta_xxx):
-        """Sets the x_obs_meta_xxx of this PutObjectRequest.
+        r"""Sets the x_obs_meta_xxx of this PutObjectRequest.
 
         User-defined metadata.  Example: x-obs-meta-test: test metadata
 
@@ -419,7 +419,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def x_obs_persistent_headers(self):
-        """Gets the x_obs_persistent_headers of this PutObjectRequest.
+        r"""Gets the x_obs_persistent_headers of this PutObjectRequest.
 
         When creating an object, you can add the **x-obs-persistent-headers** header in an HTTP request to customize one or more response headers. When you retrieve the object or query the object metadata, the custom headers will be returned in the response message.Format: **x-obs-persistent-headers: ****key1:base64_encode(***value1***),****key2:base64_encode(***value2***)...**Note: Items, such as **key1** and **key2**, are user-defined headers. If they contain non-ASCII or unrecognizable characters, they can be encoded using URL or Base64. The server processes these headers as strings, but does not decode them. Items, such as *value1* and *value2* are the values of the corresponding headers. **base64_encode** indicates that the value is encoded using Base64. A user-defined header and its Base64-encoded value are connected using a colon (:) to form a key-value pair. All key-value pairs are separated with a comma (,) and are placed in the **x-obs-persistent-headers** header. The server then decodes the uploaded value.Example: x-obs-persistent-headers: key1:dmFsdWUx,key2:dmFsdWUyWhen you download the object or obtain the object metadata, headers **key1:***value1* and **key2:***value2* will be returned.Restrictions:+ Response headers customized in this way cannot be prefixed with **x-obs-**. For example, you should use **key1**, instead of **x-obs-key1**.+ Standard HTTP headers, such as **host**, **content-md5**, **origin**, **range**, and **Content-Disposition**, cannot be specified as custom headers.+ The total length of this header and the custom metadata cannot exceed 8 KB.+ If the same keys are transferred, values are separated with commas (,) and then returned in one key.
 
@@ -430,7 +430,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @x_obs_persistent_headers.setter
     def x_obs_persistent_headers(self, x_obs_persistent_headers):
-        """Sets the x_obs_persistent_headers of this PutObjectRequest.
+        r"""Sets the x_obs_persistent_headers of this PutObjectRequest.
 
         When creating an object, you can add the **x-obs-persistent-headers** header in an HTTP request to customize one or more response headers. When you retrieve the object or query the object metadata, the custom headers will be returned in the response message.Format: **x-obs-persistent-headers: ****key1:base64_encode(***value1***),****key2:base64_encode(***value2***)...**Note: Items, such as **key1** and **key2**, are user-defined headers. If they contain non-ASCII or unrecognizable characters, they can be encoded using URL or Base64. The server processes these headers as strings, but does not decode them. Items, such as *value1* and *value2* are the values of the corresponding headers. **base64_encode** indicates that the value is encoded using Base64. A user-defined header and its Base64-encoded value are connected using a colon (:) to form a key-value pair. All key-value pairs are separated with a comma (,) and are placed in the **x-obs-persistent-headers** header. The server then decodes the uploaded value.Example: x-obs-persistent-headers: key1:dmFsdWUx,key2:dmFsdWUyWhen you download the object or obtain the object metadata, headers **key1:***value1* and **key2:***value2* will be returned.Restrictions:+ Response headers customized in this way cannot be prefixed with **x-obs-**. For example, you should use **key1**, instead of **x-obs-key1**.+ Standard HTTP headers, such as **host**, **content-md5**, **origin**, **range**, and **Content-Disposition**, cannot be specified as custom headers.+ The total length of this header and the custom metadata cannot exceed 8 KB.+ If the same keys are transferred, values are separated with commas (,) and then returned in one key.
 
@@ -441,7 +441,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def x_obs_website_redirect_location(self):
-        """Gets the x_obs_website_redirect_location of this PutObjectRequest.
+        r"""Gets the x_obs_website_redirect_location of this PutObjectRequest.
 
         If static website hosting has been configured for a bucket, you can configure this parameter to redirect requests for an object in this bucket to another object in the same bucket or to an external URL. OBS stores the value of this header in the object metadata.Example of redirecting requests to another object in the bucket:x-obs-website-redirect-location:/anotherPage.htmlExample of redirecting requests to an external URL:x-obs-website-redirect-location:http://www.example.com/Default value: noneRestriction: The value must start with a slash (/), **http://**, or **https://**, with a length of no more than 2 KB.
 
@@ -452,7 +452,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @x_obs_website_redirect_location.setter
     def x_obs_website_redirect_location(self, x_obs_website_redirect_location):
-        """Sets the x_obs_website_redirect_location of this PutObjectRequest.
+        r"""Sets the x_obs_website_redirect_location of this PutObjectRequest.
 
         If static website hosting has been configured for a bucket, you can configure this parameter to redirect requests for an object in this bucket to another object in the same bucket or to an external URL. OBS stores the value of this header in the object metadata.Example of redirecting requests to another object in the bucket:x-obs-website-redirect-location:/anotherPage.htmlExample of redirecting requests to an external URL:x-obs-website-redirect-location:http://www.example.com/Default value: noneRestriction: The value must start with a slash (/), **http://**, or **https://**, with a length of no more than 2 KB.
 
@@ -463,7 +463,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def x_obs_server_side_encryption(self):
-        """Gets the x_obs_server_side_encryption of this PutObjectRequest.
+        r"""Gets the x_obs_server_side_encryption of this PutObjectRequest.
 
         Indicates that SSE-KMS is used.   Example: x-obs-server-side-encryption: kms
 
@@ -474,7 +474,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @x_obs_server_side_encryption.setter
     def x_obs_server_side_encryption(self, x_obs_server_side_encryption):
-        """Sets the x_obs_server_side_encryption of this PutObjectRequest.
+        r"""Sets the x_obs_server_side_encryption of this PutObjectRequest.
 
         Indicates that SSE-KMS is used.   Example: x-obs-server-side-encryption: kms
 
@@ -485,7 +485,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def x_obs_server_side_encryption_kms_key_id(self):
-        """Gets the x_obs_server_side_encryption_kms_key_id of this PutObjectRequest.
+        r"""Gets the x_obs_server_side_encryption_kms_key_id of this PutObjectRequest.
 
         Master key ID. This header is used for encryption with SSE-KMS. If the customer does not provide the master key ID, the default master key ID will be used.Supported formats:+ *regionID***:***domainID***:key/***key_id* + *key_id**regionID* is the ID of the region to which the key belongs. *domainID* is the account ID of the tenant to which the key belongs. *key_id* is the key ID created in DEW.Examples:+ x-obs-server-side-encryption-kms-key-id:cn-north-4:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0 + x-obs-server-side-encryption-kms-key-id:4f1cd4de-ab64-4807-920a-47fc42e7f0d0
 
@@ -496,7 +496,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @x_obs_server_side_encryption_kms_key_id.setter
     def x_obs_server_side_encryption_kms_key_id(self, x_obs_server_side_encryption_kms_key_id):
-        """Sets the x_obs_server_side_encryption_kms_key_id of this PutObjectRequest.
+        r"""Sets the x_obs_server_side_encryption_kms_key_id of this PutObjectRequest.
 
         Master key ID. This header is used for encryption with SSE-KMS. If the customer does not provide the master key ID, the default master key ID will be used.Supported formats:+ *regionID***:***domainID***:key/***key_id* + *key_id**regionID* is the ID of the region to which the key belongs. *domainID* is the account ID of the tenant to which the key belongs. *key_id* is the key ID created in DEW.Examples:+ x-obs-server-side-encryption-kms-key-id:cn-north-4:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0 + x-obs-server-side-encryption-kms-key-id:4f1cd4de-ab64-4807-920a-47fc42e7f0d0
 
@@ -507,7 +507,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def x_obs_server_side_encryption_customer_algorithm(self):
-        """Gets the x_obs_server_side_encryption_customer_algorithm of this PutObjectRequest.
+        r"""Gets the x_obs_server_side_encryption_customer_algorithm of this PutObjectRequest.
 
         The encryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
 
@@ -518,7 +518,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @x_obs_server_side_encryption_customer_algorithm.setter
     def x_obs_server_side_encryption_customer_algorithm(self, x_obs_server_side_encryption_customer_algorithm):
-        """Sets the x_obs_server_side_encryption_customer_algorithm of this PutObjectRequest.
+        r"""Sets the x_obs_server_side_encryption_customer_algorithm of this PutObjectRequest.
 
         The encryption algorithm used for SSE-C.Example: x-obs-server-side-encryption-customer-algorithm:AES256Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.
 
@@ -529,7 +529,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def x_obs_server_side_encryption_customer_key(self):
-        """Gets the x_obs_server_side_encryption_customer_key of this PutObjectRequest.
+        r"""Gets the x_obs_server_side_encryption_customer_key of this PutObjectRequest.
 
         Encryption key used for SSE-C. This key is used to encrypt objects.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
 
@@ -540,7 +540,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @x_obs_server_side_encryption_customer_key.setter
     def x_obs_server_side_encryption_customer_key(self, x_obs_server_side_encryption_customer_key):
-        """Sets the x_obs_server_side_encryption_customer_key of this PutObjectRequest.
+        r"""Sets the x_obs_server_side_encryption_customer_key of this PutObjectRequest.
 
         Encryption key used for SSE-C. This key is used to encrypt objects.Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.
 
@@ -551,7 +551,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def x_obs_server_side_encryption_customer_key_md5(self):
-        """Gets the x_obs_server_side_encryption_customer_key_md5 of this PutObjectRequest.
+        r"""Gets the x_obs_server_side_encryption_customer_key_md5 of this PutObjectRequest.
 
         MD5 value of the key used to encrypt objects in SSE-C mode. The MD5 value is used to check whether any error occurs during the transmission of the key. Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.
 
@@ -562,7 +562,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @x_obs_server_side_encryption_customer_key_md5.setter
     def x_obs_server_side_encryption_customer_key_md5(self, x_obs_server_side_encryption_customer_key_md5):
-        """Sets the x_obs_server_side_encryption_customer_key_md5 of this PutObjectRequest.
+        r"""Sets the x_obs_server_side_encryption_customer_key_md5 of this PutObjectRequest.
 
         MD5 value of the key used to encrypt objects in SSE-C mode. The MD5 value is used to check whether any error occurs during the transmission of the key. Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.
 
@@ -573,7 +573,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def success_action_redirect(self):
-        """Gets the success_action_redirect of this PutObjectRequest.
+        r"""Gets the success_action_redirect of this PutObjectRequest.
 
         The address (a URL) which a successfully responded request is redirected to.  If this parameter value is valid and the request succeeds, OBS returns status code 303. The **Location** header consists of **success_action_redirect** as well as the bucket name, object name, and object ETag. If this parameter is invalid, OBS ignores this parameter and returns status code 204. In such case, the **Location** header is the object address.
 
@@ -584,7 +584,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @success_action_redirect.setter
     def success_action_redirect(self, success_action_redirect):
-        """Sets the success_action_redirect of this PutObjectRequest.
+        r"""Sets the success_action_redirect of this PutObjectRequest.
 
         The address (a URL) which a successfully responded request is redirected to.  If this parameter value is valid and the request succeeds, OBS returns status code 303. The **Location** header consists of **success_action_redirect** as well as the bucket name, object name, and object ETag. If this parameter is invalid, OBS ignores this parameter and returns status code 204. In such case, the **Location** header is the object address.
 
@@ -595,7 +595,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @property
     def x_obs_expires(self):
-        """Gets the x_obs_expires of this PutObjectRequest.
+        r"""Gets the x_obs_expires of this PutObjectRequest.
 
         When an object expires. It is measured in days. An object will be automatically deleted once it expires. The expiration is calculated from when the object was last modified. This header can be only configured during the object upload, and cannot be modified later by using the metadata API.  Example: x-obs-expires:3
 
@@ -606,7 +606,7 @@ class PutObjectRequest(SdkStreamRequest):
 
     @x_obs_expires.setter
     def x_obs_expires(self, x_obs_expires):
-        """Sets the x_obs_expires of this PutObjectRequest.
+        r"""Sets the x_obs_expires of this PutObjectRequest.
 
         When an object expires. It is measured in days. An object will be automatically deleted once it expires. The expiration is calculated from when the object was last modified. This header can be only configured during the object upload, and cannot be modified later by using the metadata API.  Example: x-obs-expires:3
 

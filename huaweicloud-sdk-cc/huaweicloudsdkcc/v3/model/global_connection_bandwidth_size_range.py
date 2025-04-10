@@ -29,7 +29,7 @@ class GlobalConnectionBandwidthSizeRange:
     }
 
     def __init__(self, type=None, min=None, max=None):
-        """GlobalConnectionBandwidthSizeRange
+        r"""GlobalConnectionBandwidthSizeRange
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GlobalConnectionBandwidthSizeRange:
 
     @property
     def type(self):
-        """Gets the type of this GlobalConnectionBandwidthSizeRange.
+        r"""Gets the type of this GlobalConnectionBandwidthSizeRange.
 
         描述计费类型，描述可选计费类型。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr：日95计费
 
@@ -68,7 +68,7 @@ class GlobalConnectionBandwidthSizeRange:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GlobalConnectionBandwidthSizeRange.
+        r"""Sets the type of this GlobalConnectionBandwidthSizeRange.
 
         描述计费类型，描述可选计费类型。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr：日95计费
 
@@ -79,7 +79,7 @@ class GlobalConnectionBandwidthSizeRange:
 
     @property
     def min(self):
-        """Gets the min of this GlobalConnectionBandwidthSizeRange.
+        r"""Gets the min of this GlobalConnectionBandwidthSizeRange.
 
         全域互联带宽最小值，单位Mbit/s。
 
@@ -90,7 +90,7 @@ class GlobalConnectionBandwidthSizeRange:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this GlobalConnectionBandwidthSizeRange.
+        r"""Sets the min of this GlobalConnectionBandwidthSizeRange.
 
         全域互联带宽最小值，单位Mbit/s。
 
@@ -101,7 +101,7 @@ class GlobalConnectionBandwidthSizeRange:
 
     @property
     def max(self):
-        """Gets the max of this GlobalConnectionBandwidthSizeRange.
+        r"""Gets the max of this GlobalConnectionBandwidthSizeRange.
 
         全域互联带宽最大值，单位Mbit/s。
 
@@ -112,7 +112,7 @@ class GlobalConnectionBandwidthSizeRange:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this GlobalConnectionBandwidthSizeRange.
+        r"""Sets the max of this GlobalConnectionBandwidthSizeRange.
 
         全域互联带宽最大值，单位Mbit/s。
 

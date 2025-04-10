@@ -26,7 +26,7 @@ class DocumentTemplateVersionEnum:
     }
 
     def __init__(self):
-        """DocumentTemplateVersionEnum
+        r"""DocumentTemplateVersionEnum
 
         The model defined in huaweicloud sdk
 

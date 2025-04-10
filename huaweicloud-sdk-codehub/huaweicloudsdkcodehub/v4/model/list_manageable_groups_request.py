@@ -31,7 +31,7 @@ class ListManageableGroupsRequest:
     }
 
     def __init__(self, project_id=None, scope=None, offset=None, limit=None):
-        """ListManageableGroupsRequest
+        r"""ListManageableGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListManageableGroupsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListManageableGroupsRequest.
+        r"""Gets the project_id of this ListManageableGroupsRequest.
 
         项目id
 
@@ -74,7 +74,7 @@ class ListManageableGroupsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListManageableGroupsRequest.
+        r"""Sets the project_id of this ListManageableGroupsRequest.
 
         项目id
 
@@ -85,7 +85,7 @@ class ListManageableGroupsRequest:
 
     @property
     def scope(self):
-        """Gets the scope of this ListManageableGroupsRequest.
+        r"""Gets the scope of this ListManageableGroupsRequest.
 
         创建资源类型，group 代码组，repository仓库
 
@@ -96,7 +96,7 @@ class ListManageableGroupsRequest:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this ListManageableGroupsRequest.
+        r"""Sets the scope of this ListManageableGroupsRequest.
 
         创建资源类型，group 代码组，repository仓库
 
@@ -107,7 +107,7 @@ class ListManageableGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListManageableGroupsRequest.
+        r"""Gets the offset of this ListManageableGroupsRequest.
 
         偏移量
 
@@ -118,7 +118,7 @@ class ListManageableGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListManageableGroupsRequest.
+        r"""Sets the offset of this ListManageableGroupsRequest.
 
         偏移量
 
@@ -129,7 +129,7 @@ class ListManageableGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListManageableGroupsRequest.
+        r"""Gets the limit of this ListManageableGroupsRequest.
 
         返回数量
 
@@ -140,7 +140,7 @@ class ListManageableGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListManageableGroupsRequest.
+        r"""Sets the limit of this ListManageableGroupsRequest.
 
         返回数量
 

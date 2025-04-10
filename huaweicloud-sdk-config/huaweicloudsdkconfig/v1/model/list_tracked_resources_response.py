@@ -28,7 +28,7 @@ class ListTrackedResourcesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, page_info=None):
-        """ListTrackedResourcesResponse
+        r"""ListTrackedResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTrackedResourcesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListTrackedResourcesResponse.
+        r"""Gets the resources of this ListTrackedResourcesResponse.
 
         资源列表
 
@@ -62,7 +62,7 @@ class ListTrackedResourcesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListTrackedResourcesResponse.
+        r"""Sets the resources of this ListTrackedResourcesResponse.
 
         资源列表
 
@@ -73,7 +73,7 @@ class ListTrackedResourcesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListTrackedResourcesResponse.
+        r"""Gets the page_info of this ListTrackedResourcesResponse.
 
         :return: The page_info of this ListTrackedResourcesResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListTrackedResourcesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListTrackedResourcesResponse.
+        r"""Sets the page_info of this ListTrackedResourcesResponse.
 
         :param page_info: The page_info of this ListTrackedResourcesResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

@@ -33,7 +33,7 @@ class Address:
     }
 
     def __init__(self, version=None, addr=None, os_ext_ip_stype=None, os_ext_ips_ma_cmac_addr=None, os_ext_ip_sport_id=None):
-        """Address
+        r"""Address
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Address:
 
     @property
     def version(self):
-        """Gets the version of this Address.
+        r"""Gets the version of this Address.
 
         IP地址版本。4：代表IPv4。6：代表IPv6。
 
@@ -82,7 +82,7 @@ class Address:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Address.
+        r"""Sets the version of this Address.
 
         IP地址版本。4：代表IPv4。6：代表IPv6。
 
@@ -93,7 +93,7 @@ class Address:
 
     @property
     def addr(self):
-        """Gets the addr of this Address.
+        r"""Gets the addr of this Address.
 
         IP地址
 
@@ -104,7 +104,7 @@ class Address:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this Address.
+        r"""Sets the addr of this Address.
 
         IP地址
 
@@ -115,7 +115,7 @@ class Address:
 
     @property
     def os_ext_ip_stype(self):
-        """Gets the os_ext_ip_stype of this Address.
+        r"""Gets the os_ext_ip_stype of this Address.
 
         IP地址类型。fixed：代表私有IP地址。floating：代表浮动IP地址。
 
@@ -126,7 +126,7 @@ class Address:
 
     @os_ext_ip_stype.setter
     def os_ext_ip_stype(self, os_ext_ip_stype):
-        """Sets the os_ext_ip_stype of this Address.
+        r"""Sets the os_ext_ip_stype of this Address.
 
         IP地址类型。fixed：代表私有IP地址。floating：代表浮动IP地址。
 
@@ -137,7 +137,7 @@ class Address:
 
     @property
     def os_ext_ips_ma_cmac_addr(self):
-        """Gets the os_ext_ips_ma_cmac_addr of this Address.
+        r"""Gets the os_ext_ips_ma_cmac_addr of this Address.
 
         MAC地址
 
@@ -148,7 +148,7 @@ class Address:
 
     @os_ext_ips_ma_cmac_addr.setter
     def os_ext_ips_ma_cmac_addr(self, os_ext_ips_ma_cmac_addr):
-        """Sets the os_ext_ips_ma_cmac_addr of this Address.
+        r"""Sets the os_ext_ips_ma_cmac_addr of this Address.
 
         MAC地址
 
@@ -159,7 +159,7 @@ class Address:
 
     @property
     def os_ext_ip_sport_id(self):
-        """Gets the os_ext_ip_sport_id of this Address.
+        r"""Gets the os_ext_ip_sport_id of this Address.
 
         IP地址对应的端口ID
 
@@ -170,7 +170,7 @@ class Address:
 
     @os_ext_ip_sport_id.setter
     def os_ext_ip_sport_id(self, os_ext_ip_sport_id):
-        """Sets the os_ext_ip_sport_id of this Address.
+        r"""Sets the os_ext_ip_sport_id of this Address.
 
         IP地址对应的端口ID
 

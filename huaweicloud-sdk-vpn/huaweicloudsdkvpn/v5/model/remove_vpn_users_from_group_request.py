@@ -29,7 +29,7 @@ class RemoveVpnUsersFromGroupRequest:
     }
 
     def __init__(self, vpn_server_id=None, group_id=None, body=None):
-        """RemoveVpnUsersFromGroupRequest
+        r"""RemoveVpnUsersFromGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RemoveVpnUsersFromGroupRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this RemoveVpnUsersFromGroupRequest.
+        r"""Gets the vpn_server_id of this RemoveVpnUsersFromGroupRequest.
 
         VPN服务端 ID
 
@@ -66,7 +66,7 @@ class RemoveVpnUsersFromGroupRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this RemoveVpnUsersFromGroupRequest.
+        r"""Sets the vpn_server_id of this RemoveVpnUsersFromGroupRequest.
 
         VPN服务端 ID
 
@@ -77,7 +77,7 @@ class RemoveVpnUsersFromGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this RemoveVpnUsersFromGroupRequest.
+        r"""Gets the group_id of this RemoveVpnUsersFromGroupRequest.
 
         用户组ID
 
@@ -88,7 +88,7 @@ class RemoveVpnUsersFromGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this RemoveVpnUsersFromGroupRequest.
+        r"""Sets the group_id of this RemoveVpnUsersFromGroupRequest.
 
         用户组ID
 
@@ -99,7 +99,7 @@ class RemoveVpnUsersFromGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this RemoveVpnUsersFromGroupRequest.
+        r"""Gets the body of this RemoveVpnUsersFromGroupRequest.
 
         :return: The body of this RemoveVpnUsersFromGroupRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.RemoveVpnUserFromGroupRequestBody`
@@ -108,7 +108,7 @@ class RemoveVpnUsersFromGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RemoveVpnUsersFromGroupRequest.
+        r"""Sets the body of this RemoveVpnUsersFromGroupRequest.
 
         :param body: The body of this RemoveVpnUsersFromGroupRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.RemoveVpnUserFromGroupRequestBody`

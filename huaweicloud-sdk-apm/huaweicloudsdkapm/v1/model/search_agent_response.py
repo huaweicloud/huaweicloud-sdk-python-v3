@@ -36,7 +36,7 @@ class SearchAgentResponse(SdkResponse):
     }
 
     def __init__(self, total_page=None, total_count=None, online_count=None, offline_count=None, disable_count=None, agent_info_list=None):
-        """SearchAgentResponse
+        r"""SearchAgentResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class SearchAgentResponse(SdkResponse):
 
     @property
     def total_page(self):
-        """Gets the total_page of this SearchAgentResponse.
+        r"""Gets the total_page of this SearchAgentResponse.
 
         总页数。
 
@@ -90,7 +90,7 @@ class SearchAgentResponse(SdkResponse):
 
     @total_page.setter
     def total_page(self, total_page):
-        """Sets the total_page of this SearchAgentResponse.
+        r"""Sets the total_page of this SearchAgentResponse.
 
         总页数。
 
@@ -101,7 +101,7 @@ class SearchAgentResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this SearchAgentResponse.
+        r"""Gets the total_count of this SearchAgentResponse.
 
         总个数。
 
@@ -112,7 +112,7 @@ class SearchAgentResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this SearchAgentResponse.
+        r"""Sets the total_count of this SearchAgentResponse.
 
         总个数。
 
@@ -123,7 +123,7 @@ class SearchAgentResponse(SdkResponse):
 
     @property
     def online_count(self):
-        """Gets the online_count of this SearchAgentResponse.
+        r"""Gets the online_count of this SearchAgentResponse.
 
         正常个数。
 
@@ -134,7 +134,7 @@ class SearchAgentResponse(SdkResponse):
 
     @online_count.setter
     def online_count(self, online_count):
-        """Sets the online_count of this SearchAgentResponse.
+        r"""Sets the online_count of this SearchAgentResponse.
 
         正常个数。
 
@@ -145,7 +145,7 @@ class SearchAgentResponse(SdkResponse):
 
     @property
     def offline_count(self):
-        """Gets the offline_count of this SearchAgentResponse.
+        r"""Gets the offline_count of this SearchAgentResponse.
 
         心跳异常个数。
 
@@ -156,7 +156,7 @@ class SearchAgentResponse(SdkResponse):
 
     @offline_count.setter
     def offline_count(self, offline_count):
-        """Sets the offline_count of this SearchAgentResponse.
+        r"""Sets the offline_count of this SearchAgentResponse.
 
         心跳异常个数。
 
@@ -167,7 +167,7 @@ class SearchAgentResponse(SdkResponse):
 
     @property
     def disable_count(self):
-        """Gets the disable_count of this SearchAgentResponse.
+        r"""Gets the disable_count of this SearchAgentResponse.
 
         被关闭的个数。
 
@@ -178,7 +178,7 @@ class SearchAgentResponse(SdkResponse):
 
     @disable_count.setter
     def disable_count(self, disable_count):
-        """Sets the disable_count of this SearchAgentResponse.
+        r"""Sets the disable_count of this SearchAgentResponse.
 
         被关闭的个数。
 
@@ -189,7 +189,7 @@ class SearchAgentResponse(SdkResponse):
 
     @property
     def agent_info_list(self):
-        """Gets the agent_info_list of this SearchAgentResponse.
+        r"""Gets the agent_info_list of this SearchAgentResponse.
 
         agent地址列表。
 
@@ -200,7 +200,7 @@ class SearchAgentResponse(SdkResponse):
 
     @agent_info_list.setter
     def agent_info_list(self, agent_info_list):
-        """Sets the agent_info_list of this SearchAgentResponse.
+        r"""Sets the agent_info_list of this SearchAgentResponse.
 
         agent地址列表。
 

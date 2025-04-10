@@ -27,7 +27,7 @@ class CreateColdVolumeRequestBody:
     }
 
     def __init__(self, size=None, is_auto_pay=None):
-        """CreateColdVolumeRequestBody
+        r"""CreateColdVolumeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateColdVolumeRequestBody:
 
     @property
     def size(self):
-        """Gets the size of this CreateColdVolumeRequestBody.
+        r"""Gets the size of this CreateColdVolumeRequestBody.
 
         创建的冷数据存储大小，最小申请规格为500GB，最大申请规格为100000GB。单位：GB
 
@@ -60,7 +60,7 @@ class CreateColdVolumeRequestBody:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateColdVolumeRequestBody.
+        r"""Sets the size of this CreateColdVolumeRequestBody.
 
         创建的冷数据存储大小，最小申请规格为500GB，最大申请规格为100000GB。单位：GB
 
@@ -71,7 +71,7 @@ class CreateColdVolumeRequestBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this CreateColdVolumeRequestBody.
+        r"""Gets the is_auto_pay of this CreateColdVolumeRequestBody.
 
         创建包年包月实例的冷数据存储时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。
 
@@ -82,7 +82,7 @@ class CreateColdVolumeRequestBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this CreateColdVolumeRequestBody.
+        r"""Sets the is_auto_pay of this CreateColdVolumeRequestBody.
 
         创建包年包月实例的冷数据存储时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。
 

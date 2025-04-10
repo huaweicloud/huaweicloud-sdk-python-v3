@@ -41,7 +41,7 @@ class ListPlaybooksRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, search_txt=None, enabled=None, offset=None, limit=None, description=None, dataclass_name=None, name=None):
-        """ListPlaybooksRequest
+        r"""ListPlaybooksRequest
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class ListPlaybooksRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListPlaybooksRequest.
+        r"""Gets the project_id of this ListPlaybooksRequest.
 
         项目ID
 
@@ -106,7 +106,7 @@ class ListPlaybooksRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListPlaybooksRequest.
+        r"""Sets the project_id of this ListPlaybooksRequest.
 
         项目ID
 
@@ -117,7 +117,7 @@ class ListPlaybooksRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListPlaybooksRequest.
+        r"""Gets the workspace_id of this ListPlaybooksRequest.
 
         工作空间ID
 
@@ -128,7 +128,7 @@ class ListPlaybooksRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListPlaybooksRequest.
+        r"""Sets the workspace_id of this ListPlaybooksRequest.
 
         工作空间ID
 
@@ -139,7 +139,7 @@ class ListPlaybooksRequest:
 
     @property
     def search_txt(self):
-        """Gets the search_txt of this ListPlaybooksRequest.
+        r"""Gets the search_txt of this ListPlaybooksRequest.
 
         搜索关键字
 
@@ -150,7 +150,7 @@ class ListPlaybooksRequest:
 
     @search_txt.setter
     def search_txt(self, search_txt):
-        """Sets the search_txt of this ListPlaybooksRequest.
+        r"""Sets the search_txt of this ListPlaybooksRequest.
 
         搜索关键字
 
@@ -161,7 +161,7 @@ class ListPlaybooksRequest:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListPlaybooksRequest.
+        r"""Gets the enabled of this ListPlaybooksRequest.
 
         是否启用
 
@@ -172,7 +172,7 @@ class ListPlaybooksRequest:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListPlaybooksRequest.
+        r"""Sets the enabled of this ListPlaybooksRequest.
 
         是否启用
 
@@ -183,7 +183,7 @@ class ListPlaybooksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPlaybooksRequest.
+        r"""Gets the offset of this ListPlaybooksRequest.
 
         分页查询参数。用于指定查询结果的起始位置，从0开始
 
@@ -194,7 +194,7 @@ class ListPlaybooksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPlaybooksRequest.
+        r"""Sets the offset of this ListPlaybooksRequest.
 
         分页查询参数。用于指定查询结果的起始位置，从0开始
 
@@ -205,7 +205,7 @@ class ListPlaybooksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPlaybooksRequest.
+        r"""Gets the limit of this ListPlaybooksRequest.
 
         分页查询参数，用于指定一次查询最多的结果数，从1开始
 
@@ -216,7 +216,7 @@ class ListPlaybooksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPlaybooksRequest.
+        r"""Sets the limit of this ListPlaybooksRequest.
 
         分页查询参数，用于指定一次查询最多的结果数，从1开始
 
@@ -227,7 +227,7 @@ class ListPlaybooksRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListPlaybooksRequest.
+        r"""Gets the description of this ListPlaybooksRequest.
 
         剧本描述
 
@@ -238,7 +238,7 @@ class ListPlaybooksRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListPlaybooksRequest.
+        r"""Sets the description of this ListPlaybooksRequest.
 
         剧本描述
 
@@ -249,7 +249,7 @@ class ListPlaybooksRequest:
 
     @property
     def dataclass_name(self):
-        """Gets the dataclass_name of this ListPlaybooksRequest.
+        r"""Gets the dataclass_name of this ListPlaybooksRequest.
 
         数据类名称
 
@@ -260,7 +260,7 @@ class ListPlaybooksRequest:
 
     @dataclass_name.setter
     def dataclass_name(self, dataclass_name):
-        """Sets the dataclass_name of this ListPlaybooksRequest.
+        r"""Sets the dataclass_name of this ListPlaybooksRequest.
 
         数据类名称
 
@@ -271,7 +271,7 @@ class ListPlaybooksRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPlaybooksRequest.
+        r"""Gets the name of this ListPlaybooksRequest.
 
         剧本名称
 
@@ -282,7 +282,7 @@ class ListPlaybooksRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPlaybooksRequest.
+        r"""Sets the name of this ListPlaybooksRequest.
 
         剧本名称
 

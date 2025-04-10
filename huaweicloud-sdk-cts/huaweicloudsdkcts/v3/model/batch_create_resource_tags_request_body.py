@@ -25,7 +25,7 @@ class BatchCreateResourceTagsRequestBody:
     }
 
     def __init__(self, tags=None):
-        """BatchCreateResourceTagsRequestBody
+        r"""BatchCreateResourceTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchCreateResourceTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateResourceTagsRequestBody.
+        r"""Gets the tags of this BatchCreateResourceTagsRequestBody.
 
         标签列表。
 
@@ -54,7 +54,7 @@ class BatchCreateResourceTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateResourceTagsRequestBody.
+        r"""Sets the tags of this BatchCreateResourceTagsRequestBody.
 
         标签列表。
 

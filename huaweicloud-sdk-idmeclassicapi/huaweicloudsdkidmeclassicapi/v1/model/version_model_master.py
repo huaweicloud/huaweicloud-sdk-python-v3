@@ -37,7 +37,7 @@ class VersionModelMaster:
     }
 
     def __init__(self, create_time=None, creator=None, id=None, last_update_time=None, modifier=None, need_set_null_attrs=None, rdm_extension_type=None):
-        """VersionModelMaster
+        r"""VersionModelMaster
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class VersionModelMaster:
 
     @property
     def create_time(self):
-        """Gets the create_time of this VersionModelMaster.
+        r"""Gets the create_time of this VersionModelMaster.
 
         **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -95,7 +95,7 @@ class VersionModelMaster:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this VersionModelMaster.
+        r"""Sets the create_time of this VersionModelMaster.
 
         **参数解释：**  创建时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -106,7 +106,7 @@ class VersionModelMaster:
 
     @property
     def creator(self):
-        """Gets the creator of this VersionModelMaster.
+        r"""Gets the creator of this VersionModelMaster.
 
         **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -117,7 +117,7 @@ class VersionModelMaster:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this VersionModelMaster.
+        r"""Sets the creator of this VersionModelMaster.
 
         **参数解释：**  创建者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -128,7 +128,7 @@ class VersionModelMaster:
 
     @property
     def id(self):
-        """Gets the id of this VersionModelMaster.
+        r"""Gets the id of this VersionModelMaster.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -139,7 +139,7 @@ class VersionModelMaster:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VersionModelMaster.
+        r"""Sets the id of this VersionModelMaster.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -150,7 +150,7 @@ class VersionModelMaster:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this VersionModelMaster.
+        r"""Gets the last_update_time of this VersionModelMaster.
 
         **参数解释**：  最后更新时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
 
@@ -161,7 +161,7 @@ class VersionModelMaster:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this VersionModelMaster.
+        r"""Sets the last_update_time of this VersionModelMaster.
 
         **参数解释**：  最后更新时间。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
 
@@ -172,7 +172,7 @@ class VersionModelMaster:
 
     @property
     def modifier(self):
-        """Gets the modifier of this VersionModelMaster.
+        r"""Gets the modifier of this VersionModelMaster.
 
         **参数解释**：  更新者。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
 
@@ -183,7 +183,7 @@ class VersionModelMaster:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this VersionModelMaster.
+        r"""Sets the modifier of this VersionModelMaster.
 
         **参数解释**：  更新者。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
 
@@ -194,7 +194,7 @@ class VersionModelMaster:
 
     @property
     def need_set_null_attrs(self):
-        """Gets the need_set_null_attrs of this VersionModelMaster.
+        r"""Gets the need_set_null_attrs of this VersionModelMaster.
 
         **参数解释：**  将自定义属性（包括基本属性、扩展属性和分类属性）设置为空值，其长度不能超过1000个字符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -205,7 +205,7 @@ class VersionModelMaster:
 
     @need_set_null_attrs.setter
     def need_set_null_attrs(self, need_set_null_attrs):
-        """Sets the need_set_null_attrs of this VersionModelMaster.
+        r"""Sets the need_set_null_attrs of this VersionModelMaster.
 
         **参数解释：**  将自定义属性（包括基本属性、扩展属性和分类属性）设置为空值，其长度不能超过1000个字符。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -216,7 +216,7 @@ class VersionModelMaster:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this VersionModelMaster.
+        r"""Gets the rdm_extension_type of this VersionModelMaster.
 
         **参数解释**：  扩展类型。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
 
@@ -227,7 +227,7 @@ class VersionModelMaster:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this VersionModelMaster.
+        r"""Sets the rdm_extension_type of this VersionModelMaster.
 
         **参数解释**：  扩展类型。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。 
 

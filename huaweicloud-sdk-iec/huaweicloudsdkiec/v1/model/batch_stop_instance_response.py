@@ -26,7 +26,7 @@ class BatchStopInstanceResponse(SdkResponse):
     }
 
     def __init__(self, jobs=None):
-        """BatchStopInstanceResponse
+        r"""BatchStopInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchStopInstanceResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchStopInstanceResponse.
+        r"""Gets the jobs of this BatchStopInstanceResponse.
 
         任务列表对象。
 
@@ -55,7 +55,7 @@ class BatchStopInstanceResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchStopInstanceResponse.
+        r"""Sets the jobs of this BatchStopInstanceResponse.
 
         任务列表对象。
 

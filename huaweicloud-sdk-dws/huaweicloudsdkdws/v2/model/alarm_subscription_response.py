@@ -45,7 +45,7 @@ class AlarmSubscriptionResponse:
     }
 
     def __init__(self, id=None, name=None, enable=None, alarm_level=None, project_id=None, name_space=None, notification_target=None, notification_target_name=None, notification_target_type=None, language=None, time_zone=None):
-        """AlarmSubscriptionResponse
+        r"""AlarmSubscriptionResponse
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class AlarmSubscriptionResponse:
 
     @property
     def id(self):
-        """Gets the id of this AlarmSubscriptionResponse.
+        r"""Gets the id of this AlarmSubscriptionResponse.
 
         告警订阅ID
 
@@ -124,7 +124,7 @@ class AlarmSubscriptionResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AlarmSubscriptionResponse.
+        r"""Sets the id of this AlarmSubscriptionResponse.
 
         告警订阅ID
 
@@ -135,7 +135,7 @@ class AlarmSubscriptionResponse:
 
     @property
     def name(self):
-        """Gets the name of this AlarmSubscriptionResponse.
+        r"""Gets the name of this AlarmSubscriptionResponse.
 
         告警订阅名称
 
@@ -146,7 +146,7 @@ class AlarmSubscriptionResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AlarmSubscriptionResponse.
+        r"""Sets the name of this AlarmSubscriptionResponse.
 
         告警订阅名称
 
@@ -157,7 +157,7 @@ class AlarmSubscriptionResponse:
 
     @property
     def enable(self):
-        """Gets the enable of this AlarmSubscriptionResponse.
+        r"""Gets the enable of this AlarmSubscriptionResponse.
 
         是否开启订阅
 
@@ -168,7 +168,7 @@ class AlarmSubscriptionResponse:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this AlarmSubscriptionResponse.
+        r"""Sets the enable of this AlarmSubscriptionResponse.
 
         是否开启订阅
 
@@ -179,7 +179,7 @@ class AlarmSubscriptionResponse:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this AlarmSubscriptionResponse.
+        r"""Gets the alarm_level of this AlarmSubscriptionResponse.
 
         告警级别
 
@@ -190,7 +190,7 @@ class AlarmSubscriptionResponse:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this AlarmSubscriptionResponse.
+        r"""Sets the alarm_level of this AlarmSubscriptionResponse.
 
         告警级别
 
@@ -201,7 +201,7 @@ class AlarmSubscriptionResponse:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AlarmSubscriptionResponse.
+        r"""Gets the project_id of this AlarmSubscriptionResponse.
 
         租户凭证ID
 
@@ -212,7 +212,7 @@ class AlarmSubscriptionResponse:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AlarmSubscriptionResponse.
+        r"""Sets the project_id of this AlarmSubscriptionResponse.
 
         租户凭证ID
 
@@ -223,7 +223,7 @@ class AlarmSubscriptionResponse:
 
     @property
     def name_space(self):
-        """Gets the name_space of this AlarmSubscriptionResponse.
+        r"""Gets the name_space of this AlarmSubscriptionResponse.
 
         所属服务，支持DWS,DLI,DGC,CloudTable,CDM,GES,CSS
 
@@ -234,7 +234,7 @@ class AlarmSubscriptionResponse:
 
     @name_space.setter
     def name_space(self, name_space):
-        """Sets the name_space of this AlarmSubscriptionResponse.
+        r"""Sets the name_space of this AlarmSubscriptionResponse.
 
         所属服务，支持DWS,DLI,DGC,CloudTable,CDM,GES,CSS
 
@@ -245,7 +245,7 @@ class AlarmSubscriptionResponse:
 
     @property
     def notification_target(self):
-        """Gets the notification_target of this AlarmSubscriptionResponse.
+        r"""Gets the notification_target of this AlarmSubscriptionResponse.
 
         消息主题地址
 
@@ -256,7 +256,7 @@ class AlarmSubscriptionResponse:
 
     @notification_target.setter
     def notification_target(self, notification_target):
-        """Sets the notification_target of this AlarmSubscriptionResponse.
+        r"""Sets the notification_target of this AlarmSubscriptionResponse.
 
         消息主题地址
 
@@ -267,7 +267,7 @@ class AlarmSubscriptionResponse:
 
     @property
     def notification_target_name(self):
-        """Gets the notification_target_name of this AlarmSubscriptionResponse.
+        r"""Gets the notification_target_name of this AlarmSubscriptionResponse.
 
         消息主题名称
 
@@ -278,7 +278,7 @@ class AlarmSubscriptionResponse:
 
     @notification_target_name.setter
     def notification_target_name(self, notification_target_name):
-        """Sets the notification_target_name of this AlarmSubscriptionResponse.
+        r"""Sets the notification_target_name of this AlarmSubscriptionResponse.
 
         消息主题名称
 
@@ -289,7 +289,7 @@ class AlarmSubscriptionResponse:
 
     @property
     def notification_target_type(self):
-        """Gets the notification_target_type of this AlarmSubscriptionResponse.
+        r"""Gets the notification_target_type of this AlarmSubscriptionResponse.
 
         消息主题类型
 
@@ -300,7 +300,7 @@ class AlarmSubscriptionResponse:
 
     @notification_target_type.setter
     def notification_target_type(self, notification_target_type):
-        """Sets the notification_target_type of this AlarmSubscriptionResponse.
+        r"""Sets the notification_target_type of this AlarmSubscriptionResponse.
 
         消息主题类型
 
@@ -311,7 +311,7 @@ class AlarmSubscriptionResponse:
 
     @property
     def language(self):
-        """Gets the language of this AlarmSubscriptionResponse.
+        r"""Gets the language of this AlarmSubscriptionResponse.
 
         语言
 
@@ -322,7 +322,7 @@ class AlarmSubscriptionResponse:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this AlarmSubscriptionResponse.
+        r"""Sets the language of this AlarmSubscriptionResponse.
 
         语言
 
@@ -333,7 +333,7 @@ class AlarmSubscriptionResponse:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this AlarmSubscriptionResponse.
+        r"""Gets the time_zone of this AlarmSubscriptionResponse.
 
         时区
 
@@ -344,7 +344,7 @@ class AlarmSubscriptionResponse:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this AlarmSubscriptionResponse.
+        r"""Sets the time_zone of this AlarmSubscriptionResponse.
 
         时区
 

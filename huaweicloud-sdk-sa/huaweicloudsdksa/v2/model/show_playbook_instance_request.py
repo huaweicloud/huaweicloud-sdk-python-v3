@@ -29,7 +29,7 @@ class ShowPlaybookInstanceRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, instance_id=None):
-        """ShowPlaybookInstanceRequest
+        r"""ShowPlaybookInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowPlaybookInstanceRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowPlaybookInstanceRequest.
+        r"""Gets the project_id of this ShowPlaybookInstanceRequest.
 
         ID of project
 
@@ -65,7 +65,7 @@ class ShowPlaybookInstanceRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowPlaybookInstanceRequest.
+        r"""Sets the project_id of this ShowPlaybookInstanceRequest.
 
         ID of project
 
@@ -76,7 +76,7 @@ class ShowPlaybookInstanceRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowPlaybookInstanceRequest.
+        r"""Gets the workspace_id of this ShowPlaybookInstanceRequest.
 
         ID of workspace
 
@@ -87,7 +87,7 @@ class ShowPlaybookInstanceRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowPlaybookInstanceRequest.
+        r"""Sets the workspace_id of this ShowPlaybookInstanceRequest.
 
         ID of workspace
 
@@ -98,7 +98,7 @@ class ShowPlaybookInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowPlaybookInstanceRequest.
+        r"""Gets the instance_id of this ShowPlaybookInstanceRequest.
 
         instance _id
 
@@ -109,7 +109,7 @@ class ShowPlaybookInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowPlaybookInstanceRequest.
+        r"""Sets the instance_id of this ShowPlaybookInstanceRequest.
 
         instance _id
 

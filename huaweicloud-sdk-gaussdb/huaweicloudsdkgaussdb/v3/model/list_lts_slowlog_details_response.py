@@ -26,7 +26,7 @@ class ListLtsSlowlogDetailsResponse(SdkResponse):
     }
 
     def __init__(self, slow_log_list=None):
-        """ListLtsSlowlogDetailsResponse
+        r"""ListLtsSlowlogDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListLtsSlowlogDetailsResponse(SdkResponse):
 
     @property
     def slow_log_list(self):
-        """Gets the slow_log_list of this ListLtsSlowlogDetailsResponse.
+        r"""Gets the slow_log_list of this ListLtsSlowlogDetailsResponse.
 
         慢日志列表。
 
@@ -55,7 +55,7 @@ class ListLtsSlowlogDetailsResponse(SdkResponse):
 
     @slow_log_list.setter
     def slow_log_list(self, slow_log_list):
-        """Sets the slow_log_list of this ListLtsSlowlogDetailsResponse.
+        r"""Sets the slow_log_list of this ListLtsSlowlogDetailsResponse.
 
         慢日志列表。
 

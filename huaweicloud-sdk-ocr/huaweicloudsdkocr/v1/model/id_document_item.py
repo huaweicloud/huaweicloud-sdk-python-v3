@@ -53,7 +53,7 @@ class IdDocumentItem:
     }
 
     def __init__(self, country_region=None, id_type=None, side=None, first_name=None, last_name=None, sex=None, nationality=None, birth_date=None, issue_date=None, expiry_date=None, document_number=None, address=None, issuing_authority=None, portrait_image=None, confidence=None):
-        """IdDocumentItem
+        r"""IdDocumentItem
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class IdDocumentItem:
 
     @property
     def country_region(self):
-        """Gets the country_region of this IdDocumentItem.
+        r"""Gets the country_region of this IdDocumentItem.
 
         证件签发国家或地区代码，命名遵循ISO-3166 3位代码。当前支持国家列表见表1。 
 
@@ -152,7 +152,7 @@ class IdDocumentItem:
 
     @country_region.setter
     def country_region(self, country_region):
-        """Sets the country_region of this IdDocumentItem.
+        r"""Sets the country_region of this IdDocumentItem.
 
         证件签发国家或地区代码，命名遵循ISO-3166 3位代码。当前支持国家列表见表1。 
 
@@ -163,7 +163,7 @@ class IdDocumentItem:
 
     @property
     def id_type(self):
-        """Gets the id_type of this IdDocumentItem.
+        r"""Gets the id_type of this IdDocumentItem.
 
         证件类型，可选值如下： - PP: passport，国际护照。 - DL: driving license，驾驶证。 - ID: identification card，各国颁发的身份证类型证件，比如身份证、选民卡、社保卡等。 
 
@@ -174,7 +174,7 @@ class IdDocumentItem:
 
     @id_type.setter
     def id_type(self, id_type):
-        """Sets the id_type of this IdDocumentItem.
+        r"""Sets the id_type of this IdDocumentItem.
 
         证件类型，可选值如下： - PP: passport，国际护照。 - DL: driving license，驾驶证。 - ID: identification card，各国颁发的身份证类型证件，比如身份证、选民卡、社保卡等。 
 
@@ -185,7 +185,7 @@ class IdDocumentItem:
 
     @property
     def side(self):
-        """Gets the side of this IdDocumentItem.
+        r"""Gets the side of this IdDocumentItem.
 
         证件正面或反面,可选值： - front: 正面，一般是包含人像的那面 - back: 背面 对于只有一面的卡证，返回front 
 
@@ -196,7 +196,7 @@ class IdDocumentItem:
 
     @side.setter
     def side(self, side):
-        """Sets the side of this IdDocumentItem.
+        r"""Sets the side of this IdDocumentItem.
 
         证件正面或反面,可选值： - front: 正面，一般是包含人像的那面 - back: 背面 对于只有一面的卡证，返回front 
 
@@ -207,7 +207,7 @@ class IdDocumentItem:
 
     @property
     def first_name(self):
-        """Gets the first_name of this IdDocumentItem.
+        r"""Gets the first_name of this IdDocumentItem.
 
         名 
 
@@ -218,7 +218,7 @@ class IdDocumentItem:
 
     @first_name.setter
     def first_name(self, first_name):
-        """Sets the first_name of this IdDocumentItem.
+        r"""Sets the first_name of this IdDocumentItem.
 
         名 
 
@@ -229,7 +229,7 @@ class IdDocumentItem:
 
     @property
     def last_name(self):
-        """Gets the last_name of this IdDocumentItem.
+        r"""Gets the last_name of this IdDocumentItem.
 
         姓氏 
 
@@ -240,7 +240,7 @@ class IdDocumentItem:
 
     @last_name.setter
     def last_name(self, last_name):
-        """Sets the last_name of this IdDocumentItem.
+        r"""Sets the last_name of this IdDocumentItem.
 
         姓氏 
 
@@ -251,7 +251,7 @@ class IdDocumentItem:
 
     @property
     def sex(self):
-        """Gets the sex of this IdDocumentItem.
+        r"""Gets the sex of this IdDocumentItem.
 
         性别，可选值： M:男性 F:女性 X:中性 
 
@@ -262,7 +262,7 @@ class IdDocumentItem:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this IdDocumentItem.
+        r"""Sets the sex of this IdDocumentItem.
 
         性别，可选值： M:男性 F:女性 X:中性 
 
@@ -273,7 +273,7 @@ class IdDocumentItem:
 
     @property
     def nationality(self):
-        """Gets the nationality of this IdDocumentItem.
+        r"""Gets the nationality of this IdDocumentItem.
 
         持有人国籍 
 
@@ -284,7 +284,7 @@ class IdDocumentItem:
 
     @nationality.setter
     def nationality(self, nationality):
-        """Sets the nationality of this IdDocumentItem.
+        r"""Sets the nationality of this IdDocumentItem.
 
         持有人国籍 
 
@@ -295,7 +295,7 @@ class IdDocumentItem:
 
     @property
     def birth_date(self):
-        """Gets the birth_date of this IdDocumentItem.
+        r"""Gets the birth_date of this IdDocumentItem.
 
         生日，格式为yyyy-mm-dd 
 
@@ -306,7 +306,7 @@ class IdDocumentItem:
 
     @birth_date.setter
     def birth_date(self, birth_date):
-        """Sets the birth_date of this IdDocumentItem.
+        r"""Sets the birth_date of this IdDocumentItem.
 
         生日，格式为yyyy-mm-dd 
 
@@ -317,7 +317,7 @@ class IdDocumentItem:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this IdDocumentItem.
+        r"""Gets the issue_date of this IdDocumentItem.
 
         签发日期，yyyy-mm-dd 
 
@@ -328,7 +328,7 @@ class IdDocumentItem:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this IdDocumentItem.
+        r"""Sets the issue_date of this IdDocumentItem.
 
         签发日期，yyyy-mm-dd 
 
@@ -339,7 +339,7 @@ class IdDocumentItem:
 
     @property
     def expiry_date(self):
-        """Gets the expiry_date of this IdDocumentItem.
+        r"""Gets the expiry_date of this IdDocumentItem.
 
         有效日期，yyyy-mm-dd 
 
@@ -350,7 +350,7 @@ class IdDocumentItem:
 
     @expiry_date.setter
     def expiry_date(self, expiry_date):
-        """Sets the expiry_date of this IdDocumentItem.
+        r"""Sets the expiry_date of this IdDocumentItem.
 
         有效日期，yyyy-mm-dd 
 
@@ -361,7 +361,7 @@ class IdDocumentItem:
 
     @property
     def document_number(self):
-        """Gets the document_number of this IdDocumentItem.
+        r"""Gets the document_number of this IdDocumentItem.
 
         证件号码 
 
@@ -372,7 +372,7 @@ class IdDocumentItem:
 
     @document_number.setter
     def document_number(self, document_number):
-        """Sets the document_number of this IdDocumentItem.
+        r"""Sets the document_number of this IdDocumentItem.
 
         证件号码 
 
@@ -383,7 +383,7 @@ class IdDocumentItem:
 
     @property
     def address(self):
-        """Gets the address of this IdDocumentItem.
+        r"""Gets the address of this IdDocumentItem.
 
         持有人通讯地址 
 
@@ -394,7 +394,7 @@ class IdDocumentItem:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this IdDocumentItem.
+        r"""Sets the address of this IdDocumentItem.
 
         持有人通讯地址 
 
@@ -405,7 +405,7 @@ class IdDocumentItem:
 
     @property
     def issuing_authority(self):
-        """Gets the issuing_authority of this IdDocumentItem.
+        r"""Gets the issuing_authority of this IdDocumentItem.
 
         签发机关 
 
@@ -416,7 +416,7 @@ class IdDocumentItem:
 
     @issuing_authority.setter
     def issuing_authority(self, issuing_authority):
-        """Sets the issuing_authority of this IdDocumentItem.
+        r"""Sets the issuing_authority of this IdDocumentItem.
 
         签发机关 
 
@@ -427,7 +427,7 @@ class IdDocumentItem:
 
     @property
     def portrait_image(self):
-        """Gets the portrait_image of this IdDocumentItem.
+        r"""Gets the portrait_image of this IdDocumentItem.
 
         可选返回，证件头像图像base64编码 
 
@@ -438,7 +438,7 @@ class IdDocumentItem:
 
     @portrait_image.setter
     def portrait_image(self, portrait_image):
-        """Sets the portrait_image of this IdDocumentItem.
+        r"""Sets the portrait_image of this IdDocumentItem.
 
         可选返回，证件头像图像base64编码 
 
@@ -449,7 +449,7 @@ class IdDocumentItem:
 
     @property
     def confidence(self):
-        """Gets the confidence of this IdDocumentItem.
+        r"""Gets the confidence of this IdDocumentItem.
 
         字段置信度，为0~1之间的小数，值越大，表明识别结果越可靠 
 
@@ -460,7 +460,7 @@ class IdDocumentItem:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this IdDocumentItem.
+        r"""Sets the confidence of this IdDocumentItem.
 
         字段置信度，为0~1之间的小数，值越大，表明识别结果越可靠 
 

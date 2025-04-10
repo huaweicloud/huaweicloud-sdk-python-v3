@@ -28,7 +28,7 @@ class ShowProgressDetailResponse(SdkResponse):
     }
 
     def __init__(self, task_status=None, progress=None):
-        """ShowProgressDetailResponse
+        r"""ShowProgressDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowProgressDetailResponse(SdkResponse):
 
     @property
     def task_status(self):
-        """Gets the task_status of this ShowProgressDetailResponse.
+        r"""Gets the task_status of this ShowProgressDetailResponse.
 
         任务状态,0表示检查中，1表示检查失败，2表示检查成功，3表示任务中止
 
@@ -62,7 +62,7 @@ class ShowProgressDetailResponse(SdkResponse):
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ShowProgressDetailResponse.
+        r"""Sets the task_status of this ShowProgressDetailResponse.
 
         任务状态,0表示检查中，1表示检查失败，2表示检查成功，3表示任务中止
 
@@ -73,7 +73,7 @@ class ShowProgressDetailResponse(SdkResponse):
 
     @property
     def progress(self):
-        """Gets the progress of this ShowProgressDetailResponse.
+        r"""Gets the progress of this ShowProgressDetailResponse.
 
         :return: The progress of this ShowProgressDetailResponse.
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ProgressDetailV2`
@@ -82,7 +82,7 @@ class ShowProgressDetailResponse(SdkResponse):
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ShowProgressDetailResponse.
+        r"""Sets the progress of this ShowProgressDetailResponse.
 
         :param progress: The progress of this ShowProgressDetailResponse.
         :type progress: :class:`huaweicloudsdkcodeartscheck.v2.ProgressDetailV2`

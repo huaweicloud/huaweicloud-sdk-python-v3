@@ -25,7 +25,7 @@ class UpdateSSLSwitchRequestBody:
     }
 
     def __init__(self, enabled=None):
-        """UpdateSSLSwitchRequestBody
+        r"""UpdateSSLSwitchRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateSSLSwitchRequestBody:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateSSLSwitchRequestBody.
+        r"""Gets the enabled of this UpdateSSLSwitchRequestBody.
 
         开启或关闭SSL。true：开启/false：关闭
 
@@ -53,7 +53,7 @@ class UpdateSSLSwitchRequestBody:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateSSLSwitchRequestBody.
+        r"""Sets the enabled of this UpdateSSLSwitchRequestBody.
 
         开启或关闭SSL。true：开启/false：关闭
 

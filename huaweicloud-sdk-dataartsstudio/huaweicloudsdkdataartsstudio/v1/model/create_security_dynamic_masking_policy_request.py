@@ -27,7 +27,7 @@ class CreateSecurityDynamicMaskingPolicyRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateSecurityDynamicMaskingPolicyRequest
+        r"""CreateSecurityDynamicMaskingPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSecurityDynamicMaskingPolicyRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateSecurityDynamicMaskingPolicyRequest.
+        r"""Gets the workspace of this CreateSecurityDynamicMaskingPolicyRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class CreateSecurityDynamicMaskingPolicyRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateSecurityDynamicMaskingPolicyRequest.
+        r"""Sets the workspace of this CreateSecurityDynamicMaskingPolicyRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class CreateSecurityDynamicMaskingPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSecurityDynamicMaskingPolicyRequest.
+        r"""Gets the body of this CreateSecurityDynamicMaskingPolicyRequest.
 
         :return: The body of this CreateSecurityDynamicMaskingPolicyRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DynamicMaskingPolicyCreateDTO`
@@ -80,7 +80,7 @@ class CreateSecurityDynamicMaskingPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSecurityDynamicMaskingPolicyRequest.
+        r"""Sets the body of this CreateSecurityDynamicMaskingPolicyRequest.
 
         :param body: The body of this CreateSecurityDynamicMaskingPolicyRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.DynamicMaskingPolicyCreateDTO`

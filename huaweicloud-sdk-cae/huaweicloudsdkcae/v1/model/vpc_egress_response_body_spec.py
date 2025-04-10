@@ -29,7 +29,7 @@ class VpcEgressResponseBodySpec:
     }
 
     def __init__(self, vpc_id=None, subnet_id=None, cidrs=None):
-        """VpcEgressResponseBodySpec
+        r"""VpcEgressResponseBodySpec
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VpcEgressResponseBodySpec:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this VpcEgressResponseBodySpec.
+        r"""Gets the vpc_id of this VpcEgressResponseBodySpec.
 
         CAE环境VPCID。
 
@@ -68,7 +68,7 @@ class VpcEgressResponseBodySpec:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this VpcEgressResponseBodySpec.
+        r"""Sets the vpc_id of this VpcEgressResponseBodySpec.
 
         CAE环境VPCID。
 
@@ -79,7 +79,7 @@ class VpcEgressResponseBodySpec:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this VpcEgressResponseBodySpec.
+        r"""Gets the subnet_id of this VpcEgressResponseBodySpec.
 
         CAE环境子网ID。
 
@@ -90,7 +90,7 @@ class VpcEgressResponseBodySpec:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this VpcEgressResponseBodySpec.
+        r"""Sets the subnet_id of this VpcEgressResponseBodySpec.
 
         CAE环境子网ID。
 
@@ -101,7 +101,7 @@ class VpcEgressResponseBodySpec:
 
     @property
     def cidrs(self):
-        """Gets the cidrs of this VpcEgressResponseBodySpec.
+        r"""Gets the cidrs of this VpcEgressResponseBodySpec.
 
         CAE环境访问VPC配置。
 
@@ -112,7 +112,7 @@ class VpcEgressResponseBodySpec:
 
     @cidrs.setter
     def cidrs(self, cidrs):
-        """Sets the cidrs of this VpcEgressResponseBodySpec.
+        r"""Sets the cidrs of this VpcEgressResponseBodySpec.
 
         CAE环境访问VPC配置。
 

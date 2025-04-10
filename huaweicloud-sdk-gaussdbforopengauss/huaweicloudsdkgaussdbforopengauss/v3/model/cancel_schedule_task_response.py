@@ -24,7 +24,7 @@ class CancelScheduleTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CancelScheduleTaskResponse
+        r"""CancelScheduleTaskResponse
 
         The model defined in huaweicloud sdk
 

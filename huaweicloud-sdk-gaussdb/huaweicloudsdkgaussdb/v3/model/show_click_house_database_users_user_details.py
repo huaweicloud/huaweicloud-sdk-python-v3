@@ -31,7 +31,7 @@ class ShowClickHouseDatabaseUsersUserDetails:
     }
 
     def __init__(self, user_name=None, databases=None, dml=None, ddl=None):
-        """ShowClickHouseDatabaseUsersUserDetails
+        r"""ShowClickHouseDatabaseUsersUserDetails
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowClickHouseDatabaseUsersUserDetails:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowClickHouseDatabaseUsersUserDetails.
+        r"""Gets the user_name of this ShowClickHouseDatabaseUsersUserDetails.
 
         数据库账户名。
 
@@ -71,7 +71,7 @@ class ShowClickHouseDatabaseUsersUserDetails:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowClickHouseDatabaseUsersUserDetails.
+        r"""Sets the user_name of this ShowClickHouseDatabaseUsersUserDetails.
 
         数据库账户名。
 
@@ -82,7 +82,7 @@ class ShowClickHouseDatabaseUsersUserDetails:
 
     @property
     def databases(self):
-        """Gets the databases of this ShowClickHouseDatabaseUsersUserDetails.
+        r"""Gets the databases of this ShowClickHouseDatabaseUsersUserDetails.
 
         已授权数据库。
 
@@ -93,7 +93,7 @@ class ShowClickHouseDatabaseUsersUserDetails:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ShowClickHouseDatabaseUsersUserDetails.
+        r"""Sets the databases of this ShowClickHouseDatabaseUsersUserDetails.
 
         已授权数据库。
 
@@ -104,7 +104,7 @@ class ShowClickHouseDatabaseUsersUserDetails:
 
     @property
     def dml(self):
-        """Gets the dml of this ShowClickHouseDatabaseUsersUserDetails.
+        r"""Gets the dml of this ShowClickHouseDatabaseUsersUserDetails.
 
         DML权限。 取值范围： - 1：只读权限 - 2：读取和设置权限
 
@@ -115,7 +115,7 @@ class ShowClickHouseDatabaseUsersUserDetails:
 
     @dml.setter
     def dml(self, dml):
-        """Sets the dml of this ShowClickHouseDatabaseUsersUserDetails.
+        r"""Sets the dml of this ShowClickHouseDatabaseUsersUserDetails.
 
         DML权限。 取值范围： - 1：只读权限 - 2：读取和设置权限
 
@@ -126,7 +126,7 @@ class ShowClickHouseDatabaseUsersUserDetails:
 
     @property
     def ddl(self):
-        """Gets the ddl of this ShowClickHouseDatabaseUsersUserDetails.
+        r"""Gets the ddl of this ShowClickHouseDatabaseUsersUserDetails.
 
         DDL授权。 取值范围： - 0：无DDL权限 - 1：有DDL权限
 
@@ -137,7 +137,7 @@ class ShowClickHouseDatabaseUsersUserDetails:
 
     @ddl.setter
     def ddl(self, ddl):
-        """Sets the ddl of this ShowClickHouseDatabaseUsersUserDetails.
+        r"""Sets the ddl of this ShowClickHouseDatabaseUsersUserDetails.
 
         DDL授权。 取值范围： - 0：无DDL权限 - 1：有DDL权限
 

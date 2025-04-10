@@ -27,7 +27,7 @@ class TransformationInfo:
     }
 
     def __init__(self, transformation_type=None, value=None):
-        """TransformationInfo
+        r"""TransformationInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TransformationInfo:
 
     @property
     def transformation_type(self):
-        """Gets the transformation_type of this TransformationInfo.
+        r"""Gets the transformation_type of this TransformationInfo.
 
         - 生成加工规则值为contentConditionalFilter - 生成配置规则值为configConditionalFilter
 
@@ -59,7 +59,7 @@ class TransformationInfo:
 
     @transformation_type.setter
     def transformation_type(self, transformation_type):
-        """Sets the transformation_type of this TransformationInfo.
+        r"""Sets the transformation_type of this TransformationInfo.
 
         - 生成加工规则值为contentConditionalFilter - 生成配置规则值为configConditionalFilter
 
@@ -70,7 +70,7 @@ class TransformationInfo:
 
     @property
     def value(self):
-        """Gets the value of this TransformationInfo.
+        r"""Gets the value of this TransformationInfo.
 
         过滤条件，生成加工规则值为sql条件语句，生成配置规则值为config。长度限制256。
 
@@ -81,7 +81,7 @@ class TransformationInfo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TransformationInfo.
+        r"""Sets the value of this TransformationInfo.
 
         过滤条件，生成加工规则值为sql条件语句，生成配置规则值为config。长度限制256。
 

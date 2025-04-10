@@ -39,7 +39,7 @@ class TaskProgress:
     }
 
     def __init__(self, total=None, processing=None, success=None, fail=None, waitting=None, fail_wait_retry=None, stopped=None, removed=None):
-        """TaskProgress
+        r"""TaskProgress
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class TaskProgress:
 
     @property
     def total(self):
-        """Gets the total of this TaskProgress.
+        r"""Gets the total of this TaskProgress.
 
         子任务总个数。
 
@@ -103,7 +103,7 @@ class TaskProgress:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this TaskProgress.
+        r"""Sets the total of this TaskProgress.
 
         子任务总个数。
 
@@ -114,7 +114,7 @@ class TaskProgress:
 
     @property
     def processing(self):
-        """Gets the processing of this TaskProgress.
+        r"""Gets the processing of this TaskProgress.
 
         正在执行的子任务个数。
 
@@ -125,7 +125,7 @@ class TaskProgress:
 
     @processing.setter
     def processing(self, processing):
-        """Sets the processing of this TaskProgress.
+        r"""Sets the processing of this TaskProgress.
 
         正在执行的子任务个数。
 
@@ -136,7 +136,7 @@ class TaskProgress:
 
     @property
     def success(self):
-        """Gets the success of this TaskProgress.
+        r"""Gets the success of this TaskProgress.
 
         执行成功的子任务个数。
 
@@ -147,7 +147,7 @@ class TaskProgress:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this TaskProgress.
+        r"""Sets the success of this TaskProgress.
 
         执行成功的子任务个数。
 
@@ -158,7 +158,7 @@ class TaskProgress:
 
     @property
     def fail(self):
-        """Gets the fail of this TaskProgress.
+        r"""Gets the fail of this TaskProgress.
 
         执行失败的的子任务个数。
 
@@ -169,7 +169,7 @@ class TaskProgress:
 
     @fail.setter
     def fail(self, fail):
-        """Sets the fail of this TaskProgress.
+        r"""Sets the fail of this TaskProgress.
 
         执行失败的的子任务个数。
 
@@ -180,7 +180,7 @@ class TaskProgress:
 
     @property
     def waitting(self):
-        """Gets the waitting of this TaskProgress.
+        r"""Gets the waitting of this TaskProgress.
 
         等待执行的子任务个数。
 
@@ -191,7 +191,7 @@ class TaskProgress:
 
     @waitting.setter
     def waitting(self, waitting):
-        """Sets the waitting of this TaskProgress.
+        r"""Sets the waitting of this TaskProgress.
 
         等待执行的子任务个数。
 
@@ -202,7 +202,7 @@ class TaskProgress:
 
     @property
     def fail_wait_retry(self):
-        """Gets the fail_wait_retry of this TaskProgress.
+        r"""Gets the fail_wait_retry of this TaskProgress.
 
         失败等待重试的子任务个数。
 
@@ -213,7 +213,7 @@ class TaskProgress:
 
     @fail_wait_retry.setter
     def fail_wait_retry(self, fail_wait_retry):
-        """Sets the fail_wait_retry of this TaskProgress.
+        r"""Sets the fail_wait_retry of this TaskProgress.
 
         失败等待重试的子任务个数。
 
@@ -224,7 +224,7 @@ class TaskProgress:
 
     @property
     def stopped(self):
-        """Gets the stopped of this TaskProgress.
+        r"""Gets the stopped of this TaskProgress.
 
         停止的子任务个数。
 
@@ -235,7 +235,7 @@ class TaskProgress:
 
     @stopped.setter
     def stopped(self, stopped):
-        """Sets the stopped of this TaskProgress.
+        r"""Sets the stopped of this TaskProgress.
 
         停止的子任务个数。
 
@@ -246,7 +246,7 @@ class TaskProgress:
 
     @property
     def removed(self):
-        """Gets the removed of this TaskProgress.
+        r"""Gets the removed of this TaskProgress.
 
         移除的子任务个数。
 
@@ -257,7 +257,7 @@ class TaskProgress:
 
     @removed.setter
     def removed(self, removed):
-        """Sets the removed of this TaskProgress.
+        r"""Sets the removed of this TaskProgress.
 
         移除的子任务个数。
 

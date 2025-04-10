@@ -26,7 +26,7 @@ class ListTriggersDetailsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListTriggersDetailsResponse
+        r"""ListTriggersDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTriggersDetailsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListTriggersDetailsResponse.
+        r"""Gets the body of this ListTriggersDetailsResponse.
 
         触发器列表
 
@@ -55,7 +55,7 @@ class ListTriggersDetailsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTriggersDetailsResponse.
+        r"""Sets the body of this ListTriggersDetailsResponse.
 
         触发器列表
 

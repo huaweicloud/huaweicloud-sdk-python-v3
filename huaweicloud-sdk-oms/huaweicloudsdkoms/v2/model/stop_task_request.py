@@ -25,7 +25,7 @@ class StopTaskRequest:
     }
 
     def __init__(self, task_id=None):
-        """StopTaskRequest
+        r"""StopTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this StopTaskRequest.
+        r"""Gets the task_id of this StopTaskRequest.
 
         迁移任务ID。
 
@@ -53,7 +53,7 @@ class StopTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this StopTaskRequest.
+        r"""Sets the task_id of this StopTaskRequest.
 
         迁移任务ID。
 

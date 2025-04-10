@@ -43,7 +43,7 @@ class PipelineTrigger:
     }
 
     def __init__(self, pipeline_id=None, git_url=None, git_type=None, is_auto_commit=None, events=None, hook_id=None, repo_id=None, endpoint_id=None, callback_url=None, security_token=None):
-        """PipelineTrigger
+        r"""PipelineTrigger
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class PipelineTrigger:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this PipelineTrigger.
+        r"""Gets the pipeline_id of this PipelineTrigger.
 
         流水线ID
 
@@ -117,7 +117,7 @@ class PipelineTrigger:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this PipelineTrigger.
+        r"""Sets the pipeline_id of this PipelineTrigger.
 
         流水线ID
 
@@ -128,7 +128,7 @@ class PipelineTrigger:
 
     @property
     def git_url(self):
-        """Gets the git_url of this PipelineTrigger.
+        r"""Gets the git_url of this PipelineTrigger.
 
         git链接
 
@@ -139,7 +139,7 @@ class PipelineTrigger:
 
     @git_url.setter
     def git_url(self, git_url):
-        """Sets the git_url of this PipelineTrigger.
+        r"""Sets the git_url of this PipelineTrigger.
 
         git链接
 
@@ -150,7 +150,7 @@ class PipelineTrigger:
 
     @property
     def git_type(self):
-        """Gets the git_type of this PipelineTrigger.
+        r"""Gets the git_type of this PipelineTrigger.
 
         代码仓类型
 
@@ -161,7 +161,7 @@ class PipelineTrigger:
 
     @git_type.setter
     def git_type(self, git_type):
-        """Sets the git_type of this PipelineTrigger.
+        r"""Sets the git_type of this PipelineTrigger.
 
         代码仓类型
 
@@ -172,7 +172,7 @@ class PipelineTrigger:
 
     @property
     def is_auto_commit(self):
-        """Gets the is_auto_commit of this PipelineTrigger.
+        r"""Gets the is_auto_commit of this PipelineTrigger.
 
         是否自动提交
 
@@ -183,7 +183,7 @@ class PipelineTrigger:
 
     @is_auto_commit.setter
     def is_auto_commit(self, is_auto_commit):
-        """Sets the is_auto_commit of this PipelineTrigger.
+        r"""Sets the is_auto_commit of this PipelineTrigger.
 
         是否自动提交
 
@@ -194,7 +194,7 @@ class PipelineTrigger:
 
     @property
     def events(self):
-        """Gets the events of this PipelineTrigger.
+        r"""Gets the events of this PipelineTrigger.
 
         事件
 
@@ -205,7 +205,7 @@ class PipelineTrigger:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this PipelineTrigger.
+        r"""Sets the events of this PipelineTrigger.
 
         事件
 
@@ -216,7 +216,7 @@ class PipelineTrigger:
 
     @property
     def hook_id(self):
-        """Gets the hook_id of this PipelineTrigger.
+        r"""Gets the hook_id of this PipelineTrigger.
 
         回调id
 
@@ -227,7 +227,7 @@ class PipelineTrigger:
 
     @hook_id.setter
     def hook_id(self, hook_id):
-        """Sets the hook_id of this PipelineTrigger.
+        r"""Sets the hook_id of this PipelineTrigger.
 
         回调id
 
@@ -238,7 +238,7 @@ class PipelineTrigger:
 
     @property
     def repo_id(self):
-        """Gets the repo_id of this PipelineTrigger.
+        r"""Gets the repo_id of this PipelineTrigger.
 
         仓库id
 
@@ -249,7 +249,7 @@ class PipelineTrigger:
 
     @repo_id.setter
     def repo_id(self, repo_id):
-        """Sets the repo_id of this PipelineTrigger.
+        r"""Sets the repo_id of this PipelineTrigger.
 
         仓库id
 
@@ -260,7 +260,7 @@ class PipelineTrigger:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this PipelineTrigger.
+        r"""Gets the endpoint_id of this PipelineTrigger.
 
         扩展点id
 
@@ -271,7 +271,7 @@ class PipelineTrigger:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this PipelineTrigger.
+        r"""Sets the endpoint_id of this PipelineTrigger.
 
         扩展点id
 
@@ -282,7 +282,7 @@ class PipelineTrigger:
 
     @property
     def callback_url(self):
-        """Gets the callback_url of this PipelineTrigger.
+        r"""Gets the callback_url of this PipelineTrigger.
 
         回调链接
 
@@ -293,7 +293,7 @@ class PipelineTrigger:
 
     @callback_url.setter
     def callback_url(self, callback_url):
-        """Sets the callback_url of this PipelineTrigger.
+        r"""Sets the callback_url of this PipelineTrigger.
 
         回调链接
 
@@ -304,7 +304,7 @@ class PipelineTrigger:
 
     @property
     def security_token(self):
-        """Gets the security_token of this PipelineTrigger.
+        r"""Gets the security_token of this PipelineTrigger.
 
         用户token
 
@@ -315,7 +315,7 @@ class PipelineTrigger:
 
     @security_token.setter
     def security_token(self, security_token):
-        """Sets the security_token of this PipelineTrigger.
+        r"""Sets the security_token of this PipelineTrigger.
 
         用户token
 

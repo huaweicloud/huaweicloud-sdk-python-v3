@@ -25,7 +25,7 @@ class NeutronShowFirewallRuleRequest:
     }
 
     def __init__(self, firewall_rule_id=None):
-        """NeutronShowFirewallRuleRequest
+        r"""NeutronShowFirewallRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NeutronShowFirewallRuleRequest:
 
     @property
     def firewall_rule_id(self):
-        """Gets the firewall_rule_id of this NeutronShowFirewallRuleRequest.
+        r"""Gets the firewall_rule_id of this NeutronShowFirewallRuleRequest.
 
         网络ACL规则ID
 
@@ -53,7 +53,7 @@ class NeutronShowFirewallRuleRequest:
 
     @firewall_rule_id.setter
     def firewall_rule_id(self, firewall_rule_id):
-        """Sets the firewall_rule_id of this NeutronShowFirewallRuleRequest.
+        r"""Sets the firewall_rule_id of this NeutronShowFirewallRuleRequest.
 
         网络ACL规则ID
 

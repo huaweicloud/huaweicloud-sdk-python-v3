@@ -33,7 +33,7 @@ class BandWidth:
     }
 
     def __init__(self, name=None, sharetype=None, id=None, size=None, chargemode=None):
-        """BandWidth
+        r"""BandWidth
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class BandWidth:
 
     @property
     def name(self):
-        """Gets the name of this BandWidth.
+        r"""Gets the name of this BandWidth.
 
         带宽名称
 
@@ -80,7 +80,7 @@ class BandWidth:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BandWidth.
+        r"""Sets the name of this BandWidth.
 
         带宽名称
 
@@ -91,7 +91,7 @@ class BandWidth:
 
     @property
     def sharetype(self):
-        """Gets the sharetype of this BandWidth.
+        r"""Gets the sharetype of this BandWidth.
 
         带宽的共享类型。共享类型枚举：PER，表示独享；WHOLE，表示共享
 
@@ -102,7 +102,7 @@ class BandWidth:
 
     @sharetype.setter
     def sharetype(self, sharetype):
-        """Sets the sharetype of this BandWidth.
+        r"""Sets the sharetype of this BandWidth.
 
         带宽的共享类型。共享类型枚举：PER，表示独享；WHOLE，表示共享
 
@@ -113,7 +113,7 @@ class BandWidth:
 
     @property
     def id(self):
-        """Gets the id of this BandWidth.
+        r"""Gets the id of this BandWidth.
 
         共享带宽ID。创建WHOLE类型带宽的弹性公网IP时可以指定之前的共享带宽创建。共享带宽的使用限制请参见“共享带宽简介”。 说明：当创建WHOLE类型的带宽时，该字段必选。
 
@@ -124,7 +124,7 @@ class BandWidth:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BandWidth.
+        r"""Sets the id of this BandWidth.
 
         共享带宽ID。创建WHOLE类型带宽的弹性公网IP时可以指定之前的共享带宽创建。共享带宽的使用限制请参见“共享带宽简介”。 说明：当创建WHOLE类型的带宽时，该字段必选。
 
@@ -135,7 +135,7 @@ class BandWidth:
 
     @property
     def size(self):
-        """Gets the size of this BandWidth.
+        r"""Gets the size of this BandWidth.
 
         取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各Region配置为准，请参见管理控制台对应页面显示）。功能说明：带宽大小。共享带宽的大小有最小值限制，默认为5M。 说明：如果传入的参数为小数（如10.2）或者字符类型（如10），会自动强制转换为整数。带宽小于300Mbit/s时，步长支持1Mbit/s；带宽为300Mbit/s~1000Mbit/s时，步长支持50Mbit/s；带宽为1000Mbit/s~2000Mbit/s时，步长支持1000Mbit/s。如果sharetype是PER，该参数必选；如果sharetype是WHOLE并且id有值，该参数会忽略。
 
@@ -146,7 +146,7 @@ class BandWidth:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BandWidth.
+        r"""Sets the size of this BandWidth.
 
         取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各Region配置为准，请参见管理控制台对应页面显示）。功能说明：带宽大小。共享带宽的大小有最小值限制，默认为5M。 说明：如果传入的参数为小数（如10.2）或者字符类型（如10），会自动强制转换为整数。带宽小于300Mbit/s时，步长支持1Mbit/s；带宽为300Mbit/s~1000Mbit/s时，步长支持50Mbit/s；带宽为1000Mbit/s~2000Mbit/s时，步长支持1000Mbit/s。如果sharetype是PER，该参数必选；如果sharetype是WHOLE并且id有值，该参数会忽略。
 
@@ -157,7 +157,7 @@ class BandWidth:
 
     @property
     def chargemode(self):
-        """Gets the chargemode of this BandWidth.
+        r"""Gets the chargemode of this BandWidth.
 
         带宽的计费类型。取值为：traffic（按流量计费）、bandwidth（按带宽计费）未传该字段，表示按带宽计费。字段值为空，表示按带宽计费。 说明：如果sharetype是WHOLE并且id有值，仅支持按带宽计费，该参数会忽略。
 
@@ -168,7 +168,7 @@ class BandWidth:
 
     @chargemode.setter
     def chargemode(self, chargemode):
-        """Sets the chargemode of this BandWidth.
+        r"""Sets the chargemode of this BandWidth.
 
         带宽的计费类型。取值为：traffic（按流量计费）、bandwidth（按带宽计费）未传该字段，表示按带宽计费。字段值为空，表示按带宽计费。 说明：如果sharetype是WHOLE并且id有值，仅支持按带宽计费，该参数会忽略。
 

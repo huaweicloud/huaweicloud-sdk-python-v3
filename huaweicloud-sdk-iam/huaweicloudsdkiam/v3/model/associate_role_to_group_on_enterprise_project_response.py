@@ -24,7 +24,7 @@ class AssociateRoleToGroupOnEnterpriseProjectResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AssociateRoleToGroupOnEnterpriseProjectResponse
+        r"""AssociateRoleToGroupOnEnterpriseProjectResponse
 
         The model defined in huaweicloud sdk
 

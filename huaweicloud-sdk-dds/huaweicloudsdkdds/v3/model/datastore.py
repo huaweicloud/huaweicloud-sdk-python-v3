@@ -29,7 +29,7 @@ class Datastore:
     }
 
     def __init__(self, type=None, version=None, storage_engine=None):
-        """Datastore
+        r"""Datastore
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Datastore:
 
     @property
     def type(self):
-        """Gets the type of this Datastore.
+        r"""Gets the type of this Datastore.
 
         数据库版本类型。取值“DDS-Community”。
 
@@ -65,7 +65,7 @@ class Datastore:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Datastore.
+        r"""Sets the type of this Datastore.
 
         数据库版本类型。取值“DDS-Community”。
 
@@ -76,7 +76,7 @@ class Datastore:
 
     @property
     def version(self):
-        """Gets the version of this Datastore.
+        r"""Gets the version of this Datastore.
 
         数据库版本。支持3.4及以上版本。取值为“3.4”、“4.0”、“4.2”、“4.4”、“5.0”。
 
@@ -87,7 +87,7 @@ class Datastore:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Datastore.
+        r"""Sets the version of this Datastore.
 
         数据库版本。支持3.4及以上版本。取值为“3.4”、“4.0”、“4.2”、“4.4”、“5.0”。
 
@@ -98,7 +98,7 @@ class Datastore:
 
     @property
     def storage_engine(self):
-        """Gets the storage_engine of this Datastore.
+        r"""Gets the storage_engine of this Datastore.
 
         存储引擎。支持WiredTiger存储引擎。取值为“wiredTiger”。
 
@@ -109,7 +109,7 @@ class Datastore:
 
     @storage_engine.setter
     def storage_engine(self, storage_engine):
-        """Sets the storage_engine of this Datastore.
+        r"""Sets the storage_engine of this Datastore.
 
         存储引擎。支持WiredTiger存储引擎。取值为“wiredTiger”。
 

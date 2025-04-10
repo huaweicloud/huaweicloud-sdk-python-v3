@@ -25,7 +25,7 @@ class ShowFlavorRequest:
     }
 
     def __init__(self, flavor_id=None):
-        """ShowFlavorRequest
+        r"""ShowFlavorRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowFlavorRequest:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this ShowFlavorRequest.
+        r"""Gets the flavor_id of this ShowFlavorRequest.
 
         参数解释：规格ID。
 
@@ -53,7 +53,7 @@ class ShowFlavorRequest:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this ShowFlavorRequest.
+        r"""Sets the flavor_id of this ShowFlavorRequest.
 
         参数解释：规格ID。
 

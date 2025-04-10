@@ -45,7 +45,7 @@ class ScheduleTaskExecuteDetail:
     }
 
     def __init__(self, id=None, execute_id=None, server_id=None, server_name=None, status=None, task_type=None, time_zone=None, begin_time=None, end_time=None, result_code=None, result_message=None):
-        """ScheduleTaskExecuteDetail
+        r"""ScheduleTaskExecuteDetail
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ScheduleTaskExecuteDetail:
 
     @property
     def id(self):
-        """Gets the id of this ScheduleTaskExecuteDetail.
+        r"""Gets the id of this ScheduleTaskExecuteDetail.
 
         定时任务执行记录主键id。
 
@@ -124,7 +124,7 @@ class ScheduleTaskExecuteDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScheduleTaskExecuteDetail.
+        r"""Sets the id of this ScheduleTaskExecuteDetail.
 
         定时任务执行记录主键id。
 
@@ -135,7 +135,7 @@ class ScheduleTaskExecuteDetail:
 
     @property
     def execute_id(self):
-        """Gets the execute_id of this ScheduleTaskExecuteDetail.
+        r"""Gets the execute_id of this ScheduleTaskExecuteDetail.
 
         主任务记录id。
 
@@ -146,7 +146,7 @@ class ScheduleTaskExecuteDetail:
 
     @execute_id.setter
     def execute_id(self, execute_id):
-        """Sets the execute_id of this ScheduleTaskExecuteDetail.
+        r"""Sets the execute_id of this ScheduleTaskExecuteDetail.
 
         主任务记录id。
 
@@ -157,7 +157,7 @@ class ScheduleTaskExecuteDetail:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ScheduleTaskExecuteDetail.
+        r"""Gets the server_id of this ScheduleTaskExecuteDetail.
 
         操作的server_id。
 
@@ -168,7 +168,7 @@ class ScheduleTaskExecuteDetail:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ScheduleTaskExecuteDetail.
+        r"""Sets the server_id of this ScheduleTaskExecuteDetail.
 
         操作的server_id。
 
@@ -179,7 +179,7 @@ class ScheduleTaskExecuteDetail:
 
     @property
     def server_name(self):
-        """Gets the server_name of this ScheduleTaskExecuteDetail.
+        r"""Gets the server_name of this ScheduleTaskExecuteDetail.
 
         操作的机器名称。
 
@@ -190,7 +190,7 @@ class ScheduleTaskExecuteDetail:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this ScheduleTaskExecuteDetail.
+        r"""Sets the server_name of this ScheduleTaskExecuteDetail.
 
         操作的机器名称。
 
@@ -201,7 +201,7 @@ class ScheduleTaskExecuteDetail:
 
     @property
     def status(self):
-        """Gets the status of this ScheduleTaskExecuteDetail.
+        r"""Gets the status of this ScheduleTaskExecuteDetail.
 
         :return: The status of this ScheduleTaskExecuteDetail.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskStatus`
@@ -210,7 +210,7 @@ class ScheduleTaskExecuteDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScheduleTaskExecuteDetail.
+        r"""Sets the status of this ScheduleTaskExecuteDetail.
 
         :param status: The status of this ScheduleTaskExecuteDetail.
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskStatus`
@@ -219,7 +219,7 @@ class ScheduleTaskExecuteDetail:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ScheduleTaskExecuteDetail.
+        r"""Gets the task_type of this ScheduleTaskExecuteDetail.
 
         :return: The task_type of this ScheduleTaskExecuteDetail.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
@@ -228,7 +228,7 @@ class ScheduleTaskExecuteDetail:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ScheduleTaskExecuteDetail.
+        r"""Sets the task_type of this ScheduleTaskExecuteDetail.
 
         :param task_type: The task_type of this ScheduleTaskExecuteDetail.
         :type task_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
@@ -237,7 +237,7 @@ class ScheduleTaskExecuteDetail:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ScheduleTaskExecuteDetail.
+        r"""Gets the time_zone of this ScheduleTaskExecuteDetail.
 
         时区。
 
@@ -248,7 +248,7 @@ class ScheduleTaskExecuteDetail:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ScheduleTaskExecuteDetail.
+        r"""Sets the time_zone of this ScheduleTaskExecuteDetail.
 
         时区。
 
@@ -259,7 +259,7 @@ class ScheduleTaskExecuteDetail:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ScheduleTaskExecuteDetail.
+        r"""Gets the begin_time of this ScheduleTaskExecuteDetail.
 
         子任务开始时间。
 
@@ -270,7 +270,7 @@ class ScheduleTaskExecuteDetail:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ScheduleTaskExecuteDetail.
+        r"""Sets the begin_time of this ScheduleTaskExecuteDetail.
 
         子任务开始时间。
 
@@ -281,7 +281,7 @@ class ScheduleTaskExecuteDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ScheduleTaskExecuteDetail.
+        r"""Gets the end_time of this ScheduleTaskExecuteDetail.
 
         子任务结束时间。
 
@@ -292,7 +292,7 @@ class ScheduleTaskExecuteDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ScheduleTaskExecuteDetail.
+        r"""Sets the end_time of this ScheduleTaskExecuteDetail.
 
         子任务结束时间。
 
@@ -303,7 +303,7 @@ class ScheduleTaskExecuteDetail:
 
     @property
     def result_code(self):
-        """Gets the result_code of this ScheduleTaskExecuteDetail.
+        r"""Gets the result_code of this ScheduleTaskExecuteDetail.
 
         任务执行失败时的错误码。
 
@@ -314,7 +314,7 @@ class ScheduleTaskExecuteDetail:
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this ScheduleTaskExecuteDetail.
+        r"""Sets the result_code of this ScheduleTaskExecuteDetail.
 
         任务执行失败时的错误码。
 
@@ -325,7 +325,7 @@ class ScheduleTaskExecuteDetail:
 
     @property
     def result_message(self):
-        """Gets the result_message of this ScheduleTaskExecuteDetail.
+        r"""Gets the result_message of this ScheduleTaskExecuteDetail.
 
         任务失败原因。
 
@@ -336,7 +336,7 @@ class ScheduleTaskExecuteDetail:
 
     @result_message.setter
     def result_message(self, result_message):
-        """Sets the result_message of this ScheduleTaskExecuteDetail.
+        r"""Sets the result_message of this ScheduleTaskExecuteDetail.
 
         任务失败原因。
 

@@ -53,7 +53,7 @@ class ListTemplateDetailsRequest:
     }
 
     def __init__(self, app_key=None, app_name=None, start_time=None, end_time=None, limit=None, offset=None, flow_status=None, has_variable=None, region=None, sign_name=None, sort_dir=None, sort_key=None, template_id=None, template_name=None, template_type=None):
-        """ListTemplateDetailsRequest
+        r"""ListTemplateDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ListTemplateDetailsRequest:
 
     @property
     def app_key(self):
-        """Gets the app_key of this ListTemplateDetailsRequest.
+        r"""Gets the app_key of this ListTemplateDetailsRequest.
 
         应用key
 
@@ -152,7 +152,7 @@ class ListTemplateDetailsRequest:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this ListTemplateDetailsRequest.
+        r"""Sets the app_key of this ListTemplateDetailsRequest.
 
         应用key
 
@@ -163,7 +163,7 @@ class ListTemplateDetailsRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListTemplateDetailsRequest.
+        r"""Gets the app_name of this ListTemplateDetailsRequest.
 
         应用名称
 
@@ -174,7 +174,7 @@ class ListTemplateDetailsRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListTemplateDetailsRequest.
+        r"""Sets the app_name of this ListTemplateDetailsRequest.
 
         应用名称
 
@@ -185,7 +185,7 @@ class ListTemplateDetailsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListTemplateDetailsRequest.
+        r"""Gets the start_time of this ListTemplateDetailsRequest.
 
         开始时间
 
@@ -196,7 +196,7 @@ class ListTemplateDetailsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListTemplateDetailsRequest.
+        r"""Sets the start_time of this ListTemplateDetailsRequest.
 
         开始时间
 
@@ -207,7 +207,7 @@ class ListTemplateDetailsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListTemplateDetailsRequest.
+        r"""Gets the end_time of this ListTemplateDetailsRequest.
 
         结束时间
 
@@ -218,7 +218,7 @@ class ListTemplateDetailsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListTemplateDetailsRequest.
+        r"""Sets the end_time of this ListTemplateDetailsRequest.
 
         结束时间
 
@@ -229,7 +229,7 @@ class ListTemplateDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTemplateDetailsRequest.
+        r"""Gets the limit of this ListTemplateDetailsRequest.
 
         数量
 
@@ -240,7 +240,7 @@ class ListTemplateDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTemplateDetailsRequest.
+        r"""Sets the limit of this ListTemplateDetailsRequest.
 
         数量
 
@@ -251,7 +251,7 @@ class ListTemplateDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTemplateDetailsRequest.
+        r"""Gets the offset of this ListTemplateDetailsRequest.
 
         偏移量
 
@@ -262,7 +262,7 @@ class ListTemplateDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTemplateDetailsRequest.
+        r"""Sets the offset of this ListTemplateDetailsRequest.
 
         偏移量
 
@@ -273,7 +273,7 @@ class ListTemplateDetailsRequest:
 
     @property
     def flow_status(self):
-        """Gets the flow_status of this ListTemplateDetailsRequest.
+        r"""Gets the flow_status of this ListTemplateDetailsRequest.
 
         流程状态 1. Adopted: 通过 2. Reviewing: 审核中 3. Reject: 拒绝
 
@@ -284,7 +284,7 @@ class ListTemplateDetailsRequest:
 
     @flow_status.setter
     def flow_status(self, flow_status):
-        """Sets the flow_status of this ListTemplateDetailsRequest.
+        r"""Sets the flow_status of this ListTemplateDetailsRequest.
 
         流程状态 1. Adopted: 通过 2. Reviewing: 审核中 3. Reject: 拒绝
 
@@ -295,7 +295,7 @@ class ListTemplateDetailsRequest:
 
     @property
     def has_variable(self):
-        """Gets the has_variable of this ListTemplateDetailsRequest.
+        r"""Gets the has_variable of this ListTemplateDetailsRequest.
 
         是否存在变量
 
@@ -306,7 +306,7 @@ class ListTemplateDetailsRequest:
 
     @has_variable.setter
     def has_variable(self, has_variable):
-        """Sets the has_variable of this ListTemplateDetailsRequest.
+        r"""Sets the has_variable of this ListTemplateDetailsRequest.
 
         是否存在变量
 
@@ -317,7 +317,7 @@ class ListTemplateDetailsRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListTemplateDetailsRequest.
+        r"""Gets the region of this ListTemplateDetailsRequest.
 
         地域 1. cn：国内 2. intl：国际
 
@@ -328,7 +328,7 @@ class ListTemplateDetailsRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListTemplateDetailsRequest.
+        r"""Sets the region of this ListTemplateDetailsRequest.
 
         地域 1. cn：国内 2. intl：国际
 
@@ -339,7 +339,7 @@ class ListTemplateDetailsRequest:
 
     @property
     def sign_name(self):
-        """Gets the sign_name of this ListTemplateDetailsRequest.
+        r"""Gets the sign_name of this ListTemplateDetailsRequest.
 
         签名名称
 
@@ -350,7 +350,7 @@ class ListTemplateDetailsRequest:
 
     @sign_name.setter
     def sign_name(self, sign_name):
-        """Sets the sign_name of this ListTemplateDetailsRequest.
+        r"""Sets the sign_name of this ListTemplateDetailsRequest.
 
         签名名称
 
@@ -361,7 +361,7 @@ class ListTemplateDetailsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListTemplateDetailsRequest.
+        r"""Gets the sort_dir of this ListTemplateDetailsRequest.
 
         排序方式 1. desc：降序 2. asc：升序
 
@@ -372,7 +372,7 @@ class ListTemplateDetailsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListTemplateDetailsRequest.
+        r"""Sets the sort_dir of this ListTemplateDetailsRequest.
 
         排序方式 1. desc：降序 2. asc：升序
 
@@ -383,7 +383,7 @@ class ListTemplateDetailsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListTemplateDetailsRequest.
+        r"""Gets the sort_key of this ListTemplateDetailsRequest.
 
         排序字段
 
@@ -394,7 +394,7 @@ class ListTemplateDetailsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListTemplateDetailsRequest.
+        r"""Sets the sort_key of this ListTemplateDetailsRequest.
 
         排序字段
 
@@ -405,7 +405,7 @@ class ListTemplateDetailsRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ListTemplateDetailsRequest.
+        r"""Gets the template_id of this ListTemplateDetailsRequest.
 
         模板ID
 
@@ -416,7 +416,7 @@ class ListTemplateDetailsRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ListTemplateDetailsRequest.
+        r"""Sets the template_id of this ListTemplateDetailsRequest.
 
         模板ID
 
@@ -427,7 +427,7 @@ class ListTemplateDetailsRequest:
 
     @property
     def template_name(self):
-        """Gets the template_name of this ListTemplateDetailsRequest.
+        r"""Gets the template_name of this ListTemplateDetailsRequest.
 
         模板名称
 
@@ -438,7 +438,7 @@ class ListTemplateDetailsRequest:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ListTemplateDetailsRequest.
+        r"""Sets the template_name of this ListTemplateDetailsRequest.
 
         模板名称
 
@@ -449,7 +449,7 @@ class ListTemplateDetailsRequest:
 
     @property
     def template_type(self):
-        """Gets the template_type of this ListTemplateDetailsRequest.
+        r"""Gets the template_type of this ListTemplateDetailsRequest.
 
         模板类型 1. VERIFY_CODE_TYPE: 验证码类 2. PROMOTION_TYPE: 推广类 3. NOTIFY_TYPE: 通知类
 
@@ -460,7 +460,7 @@ class ListTemplateDetailsRequest:
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this ListTemplateDetailsRequest.
+        r"""Sets the template_type of this ListTemplateDetailsRequest.
 
         模板类型 1. VERIFY_CODE_TYPE: 验证码类 2. PROMOTION_TYPE: 推广类 3. NOTIFY_TYPE: 通知类
 

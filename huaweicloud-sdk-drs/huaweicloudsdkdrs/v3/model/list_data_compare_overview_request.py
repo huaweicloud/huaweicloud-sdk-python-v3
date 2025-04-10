@@ -35,7 +35,7 @@ class ListDataCompareOverviewRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, compare_job_id=None, status=None, limit=None, offset=None):
-        """ListDataCompareOverviewRequest
+        r"""ListDataCompareOverviewRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListDataCompareOverviewRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListDataCompareOverviewRequest.
+        r"""Gets the x_language of this ListDataCompareOverviewRequest.
 
         请求语言类型。
 
@@ -87,7 +87,7 @@ class ListDataCompareOverviewRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListDataCompareOverviewRequest.
+        r"""Sets the x_language of this ListDataCompareOverviewRequest.
 
         请求语言类型。
 
@@ -98,7 +98,7 @@ class ListDataCompareOverviewRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListDataCompareOverviewRequest.
+        r"""Gets the job_id of this ListDataCompareOverviewRequest.
 
         任务ID。
 
@@ -109,7 +109,7 @@ class ListDataCompareOverviewRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListDataCompareOverviewRequest.
+        r"""Sets the job_id of this ListDataCompareOverviewRequest.
 
         任务ID。
 
@@ -120,7 +120,7 @@ class ListDataCompareOverviewRequest:
 
     @property
     def compare_job_id(self):
-        """Gets the compare_job_id of this ListDataCompareOverviewRequest.
+        r"""Gets the compare_job_id of this ListDataCompareOverviewRequest.
 
         对比任务ID。
 
@@ -131,7 +131,7 @@ class ListDataCompareOverviewRequest:
 
     @compare_job_id.setter
     def compare_job_id(self, compare_job_id):
-        """Sets the compare_job_id of this ListDataCompareOverviewRequest.
+        r"""Sets the compare_job_id of this ListDataCompareOverviewRequest.
 
         对比任务ID。
 
@@ -142,7 +142,7 @@ class ListDataCompareOverviewRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListDataCompareOverviewRequest.
+        r"""Gets the status of this ListDataCompareOverviewRequest.
 
         对比状态。 - 0：对比不一致 - 2：对比一致 - 3：目标库表不存在 - 4：对比失败 - 5：正在对比中 - 6：等待对比中 - 7：任务已取消 - 8：源库为空 - 9：目标库为空 - 10：源库和目标库都为空 - 11：源表不存在 - 12：目标表不存在 - 13：原表和目标表都不存在 - 14：源数据库连接失败 - 15：目标库数据库连接失败 - 16：源数据库执行SQL超时 - 17：目标数据库执行SQL超时 - 18：源数据库执行SQL错误 - 19：目标数据库执行SQL错误 - 20：源库和目标库都不存在 - 21：源库不存在 - 22：目标库不存在 - 23：行数为亿行，未进行对比 - 27：超时
 
@@ -153,7 +153,7 @@ class ListDataCompareOverviewRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListDataCompareOverviewRequest.
+        r"""Sets the status of this ListDataCompareOverviewRequest.
 
         对比状态。 - 0：对比不一致 - 2：对比一致 - 3：目标库表不存在 - 4：对比失败 - 5：正在对比中 - 6：等待对比中 - 7：任务已取消 - 8：源库为空 - 9：目标库为空 - 10：源库和目标库都为空 - 11：源表不存在 - 12：目标表不存在 - 13：原表和目标表都不存在 - 14：源数据库连接失败 - 15：目标库数据库连接失败 - 16：源数据库执行SQL超时 - 17：目标数据库执行SQL超时 - 18：源数据库执行SQL错误 - 19：目标数据库执行SQL错误 - 20：源库和目标库都不存在 - 21：源库不存在 - 22：目标库不存在 - 23：行数为亿行，未进行对比 - 27：超时
 
@@ -164,7 +164,7 @@ class ListDataCompareOverviewRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDataCompareOverviewRequest.
+        r"""Gets the limit of this ListDataCompareOverviewRequest.
 
         每页显示的条目数量，最大值1000。
 
@@ -175,7 +175,7 @@ class ListDataCompareOverviewRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDataCompareOverviewRequest.
+        r"""Sets the limit of this ListDataCompareOverviewRequest.
 
         每页显示的条目数量，最大值1000。
 
@@ -186,7 +186,7 @@ class ListDataCompareOverviewRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDataCompareOverviewRequest.
+        r"""Gets the offset of this ListDataCompareOverviewRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -197,7 +197,7 @@ class ListDataCompareOverviewRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDataCompareOverviewRequest.
+        r"""Sets the offset of this ListDataCompareOverviewRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 

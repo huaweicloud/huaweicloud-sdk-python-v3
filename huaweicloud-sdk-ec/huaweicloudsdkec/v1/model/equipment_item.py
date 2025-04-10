@@ -47,7 +47,7 @@ class EquipmentItem:
     }
 
     def __init__(self, id=None, ieg_id=None, esn=None, name=None, type=None, ha_type=None, version=None, active_at=None, go_live_at=None, start_up_at=None, cloud_access_status=None, status=None):
-        """EquipmentItem
+        r"""EquipmentItem
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class EquipmentItem:
 
     @property
     def id(self):
-        """Gets the id of this EquipmentItem.
+        r"""Gets the id of this EquipmentItem.
 
         智能企业网关设备ID
 
@@ -131,7 +131,7 @@ class EquipmentItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EquipmentItem.
+        r"""Sets the id of this EquipmentItem.
 
         智能企业网关设备ID
 
@@ -142,7 +142,7 @@ class EquipmentItem:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this EquipmentItem.
+        r"""Gets the ieg_id of this EquipmentItem.
 
         智能企业网关ID
 
@@ -153,7 +153,7 @@ class EquipmentItem:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this EquipmentItem.
+        r"""Sets the ieg_id of this EquipmentItem.
 
         智能企业网关ID
 
@@ -164,7 +164,7 @@ class EquipmentItem:
 
     @property
     def esn(self):
-        """Gets the esn of this EquipmentItem.
+        r"""Gets the esn of this EquipmentItem.
 
         esn
 
@@ -175,7 +175,7 @@ class EquipmentItem:
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this EquipmentItem.
+        r"""Sets the esn of this EquipmentItem.
 
         esn
 
@@ -186,7 +186,7 @@ class EquipmentItem:
 
     @property
     def name(self):
-        """Gets the name of this EquipmentItem.
+        r"""Gets the name of this EquipmentItem.
 
         设备名字
 
@@ -197,7 +197,7 @@ class EquipmentItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EquipmentItem.
+        r"""Sets the name of this EquipmentItem.
 
         设备名字
 
@@ -208,7 +208,7 @@ class EquipmentItem:
 
     @property
     def type(self):
-        """Gets the type of this EquipmentItem.
+        r"""Gets the type of this EquipmentItem.
 
         设备类型
 
@@ -219,7 +219,7 @@ class EquipmentItem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EquipmentItem.
+        r"""Sets the type of this EquipmentItem.
 
         设备类型
 
@@ -230,7 +230,7 @@ class EquipmentItem:
 
     @property
     def ha_type(self):
-        """Gets the ha_type of this EquipmentItem.
+        r"""Gets the ha_type of this EquipmentItem.
 
         高可用类型
 
@@ -241,7 +241,7 @@ class EquipmentItem:
 
     @ha_type.setter
     def ha_type(self, ha_type):
-        """Sets the ha_type of this EquipmentItem.
+        r"""Sets the ha_type of this EquipmentItem.
 
         高可用类型
 
@@ -252,7 +252,7 @@ class EquipmentItem:
 
     @property
     def version(self):
-        """Gets the version of this EquipmentItem.
+        r"""Gets the version of this EquipmentItem.
 
         设备软件版本
 
@@ -263,7 +263,7 @@ class EquipmentItem:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this EquipmentItem.
+        r"""Sets the version of this EquipmentItem.
 
         设备软件版本
 
@@ -274,7 +274,7 @@ class EquipmentItem:
 
     @property
     def active_at(self):
-        """Gets the active_at of this EquipmentItem.
+        r"""Gets the active_at of this EquipmentItem.
 
         激活时间
 
@@ -285,7 +285,7 @@ class EquipmentItem:
 
     @active_at.setter
     def active_at(self, active_at):
-        """Sets the active_at of this EquipmentItem.
+        r"""Sets the active_at of this EquipmentItem.
 
         激活时间
 
@@ -296,7 +296,7 @@ class EquipmentItem:
 
     @property
     def go_live_at(self):
-        """Gets the go_live_at of this EquipmentItem.
+        r"""Gets the go_live_at of this EquipmentItem.
 
         上线时间
 
@@ -307,7 +307,7 @@ class EquipmentItem:
 
     @go_live_at.setter
     def go_live_at(self, go_live_at):
-        """Sets the go_live_at of this EquipmentItem.
+        r"""Sets the go_live_at of this EquipmentItem.
 
         上线时间
 
@@ -318,7 +318,7 @@ class EquipmentItem:
 
     @property
     def start_up_at(self):
-        """Gets the start_up_at of this EquipmentItem.
+        r"""Gets the start_up_at of this EquipmentItem.
 
         设备启动时间
 
@@ -329,7 +329,7 @@ class EquipmentItem:
 
     @start_up_at.setter
     def start_up_at(self, start_up_at):
-        """Sets the start_up_at of this EquipmentItem.
+        r"""Sets the start_up_at of this EquipmentItem.
 
         设备启动时间
 
@@ -340,7 +340,7 @@ class EquipmentItem:
 
     @property
     def cloud_access_status(self):
-        """Gets the cloud_access_status of this EquipmentItem.
+        r"""Gets the cloud_access_status of this EquipmentItem.
 
         VPN状态
 
@@ -351,7 +351,7 @@ class EquipmentItem:
 
     @cloud_access_status.setter
     def cloud_access_status(self, cloud_access_status):
-        """Sets the cloud_access_status of this EquipmentItem.
+        r"""Sets the cloud_access_status of this EquipmentItem.
 
         VPN状态
 
@@ -362,7 +362,7 @@ class EquipmentItem:
 
     @property
     def status(self):
-        """Gets the status of this EquipmentItem.
+        r"""Gets the status of this EquipmentItem.
 
         状态
 
@@ -373,7 +373,7 @@ class EquipmentItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EquipmentItem.
+        r"""Sets the status of this EquipmentItem.
 
         状态
 

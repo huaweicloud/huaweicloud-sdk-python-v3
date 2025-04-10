@@ -25,7 +25,7 @@ class ShowVpnConnectionsLogConfigRequest:
     }
 
     def __init__(self, p2c_vgw_id=None):
-        """ShowVpnConnectionsLogConfigRequest
+        r"""ShowVpnConnectionsLogConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowVpnConnectionsLogConfigRequest:
 
     @property
     def p2c_vgw_id(self):
-        """Gets the p2c_vgw_id of this ShowVpnConnectionsLogConfigRequest.
+        r"""Gets the p2c_vgw_id of this ShowVpnConnectionsLogConfigRequest.
 
         P2C VPN网关实例ID
 
@@ -53,7 +53,7 @@ class ShowVpnConnectionsLogConfigRequest:
 
     @p2c_vgw_id.setter
     def p2c_vgw_id(self, p2c_vgw_id):
-        """Sets the p2c_vgw_id of this ShowVpnConnectionsLogConfigRequest.
+        r"""Sets the p2c_vgw_id of this ShowVpnConnectionsLogConfigRequest.
 
         P2C VPN网关实例ID
 

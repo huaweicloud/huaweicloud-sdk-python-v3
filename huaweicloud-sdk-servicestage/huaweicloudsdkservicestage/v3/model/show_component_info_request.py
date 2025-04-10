@@ -29,7 +29,7 @@ class ShowComponentInfoRequest:
     }
 
     def __init__(self, component_id=None, application_id=None, expect_fields=None):
-        """ShowComponentInfoRequest
+        r"""ShowComponentInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowComponentInfoRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ShowComponentInfoRequest.
+        r"""Gets the component_id of this ShowComponentInfoRequest.
 
         组件id
 
@@ -66,7 +66,7 @@ class ShowComponentInfoRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ShowComponentInfoRequest.
+        r"""Sets the component_id of this ShowComponentInfoRequest.
 
         组件id
 
@@ -77,7 +77,7 @@ class ShowComponentInfoRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ShowComponentInfoRequest.
+        r"""Gets the application_id of this ShowComponentInfoRequest.
 
         应用id
 
@@ -88,7 +88,7 @@ class ShowComponentInfoRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ShowComponentInfoRequest.
+        r"""Sets the application_id of this ShowComponentInfoRequest.
 
         应用id
 
@@ -99,7 +99,7 @@ class ShowComponentInfoRequest:
 
     @property
     def expect_fields(self):
-        """Gets the expect_fields of this ShowComponentInfoRequest.
+        r"""Gets the expect_fields of this ShowComponentInfoRequest.
 
         特殊字段
 
@@ -110,7 +110,7 @@ class ShowComponentInfoRequest:
 
     @expect_fields.setter
     def expect_fields(self, expect_fields):
-        """Sets the expect_fields of this ShowComponentInfoRequest.
+        r"""Sets the expect_fields of this ShowComponentInfoRequest.
 
         特殊字段
 

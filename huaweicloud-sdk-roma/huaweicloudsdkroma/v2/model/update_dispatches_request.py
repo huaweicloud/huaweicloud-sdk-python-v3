@@ -31,7 +31,7 @@ class UpdateDispatchesRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None, dispatch_id=None, body=None):
-        """UpdateDispatchesRequest
+        r"""UpdateDispatchesRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateDispatchesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDispatchesRequest.
+        r"""Gets the instance_id of this UpdateDispatchesRequest.
 
         实例ID
 
@@ -72,7 +72,7 @@ class UpdateDispatchesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDispatchesRequest.
+        r"""Sets the instance_id of this UpdateDispatchesRequest.
 
         实例ID
 
@@ -83,7 +83,7 @@ class UpdateDispatchesRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateDispatchesRequest.
+        r"""Gets the task_id of this UpdateDispatchesRequest.
 
         任务ID
 
@@ -94,7 +94,7 @@ class UpdateDispatchesRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateDispatchesRequest.
+        r"""Sets the task_id of this UpdateDispatchesRequest.
 
         任务ID
 
@@ -105,7 +105,7 @@ class UpdateDispatchesRequest:
 
     @property
     def dispatch_id(self):
-        """Gets the dispatch_id of this UpdateDispatchesRequest.
+        r"""Gets the dispatch_id of this UpdateDispatchesRequest.
 
         调度唯一标识，调度计划ID
 
@@ -116,7 +116,7 @@ class UpdateDispatchesRequest:
 
     @dispatch_id.setter
     def dispatch_id(self, dispatch_id):
-        """Sets the dispatch_id of this UpdateDispatchesRequest.
+        r"""Sets the dispatch_id of this UpdateDispatchesRequest.
 
         调度唯一标识，调度计划ID
 
@@ -127,7 +127,7 @@ class UpdateDispatchesRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDispatchesRequest.
+        r"""Gets the body of this UpdateDispatchesRequest.
 
         :return: The body of this UpdateDispatchesRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.TaskDispatch`
@@ -136,7 +136,7 @@ class UpdateDispatchesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDispatchesRequest.
+        r"""Sets the body of this UpdateDispatchesRequest.
 
         :param body: The body of this UpdateDispatchesRequest.
         :type body: :class:`huaweicloudsdkroma.v2.TaskDispatch`

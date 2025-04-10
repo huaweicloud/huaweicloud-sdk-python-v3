@@ -29,7 +29,7 @@ class PPTPageInfo:
     }
 
     def __init__(self, page_no=None, file_id=None, page_content=None):
-        """PPTPageInfo
+        r"""PPTPageInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PPTPageInfo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this PPTPageInfo.
+        r"""Gets the page_no of this PPTPageInfo.
 
         **参数解释**： 页面编号。 **约束限制**： 不涉及
 
@@ -68,7 +68,7 @@ class PPTPageInfo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this PPTPageInfo.
+        r"""Sets the page_no of this PPTPageInfo.
 
         **参数解释**： 页面编号。 **约束限制**： 不涉及
 
@@ -79,7 +79,7 @@ class PPTPageInfo:
 
     @property
     def file_id(self):
-        """Gets the file_id of this PPTPageInfo.
+        r"""Gets the file_id of this PPTPageInfo.
 
         **参数解释**： 页面对应图片文件ID。 **约束限制**： 不涉及 **取值范围**： 字符长度1-64位 **默认取值**： 不涉及
 
@@ -90,7 +90,7 @@ class PPTPageInfo:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this PPTPageInfo.
+        r"""Sets the file_id of this PPTPageInfo.
 
         **参数解释**： 页面对应图片文件ID。 **约束限制**： 不涉及 **取值范围**： 字符长度1-64位 **默认取值**： 不涉及
 
@@ -101,7 +101,7 @@ class PPTPageInfo:
 
     @property
     def page_content(self):
-        """Gets the page_content of this PPTPageInfo.
+        r"""Gets the page_content of this PPTPageInfo.
 
         **参数解释**： 页面对应图片文件ID **约束限制**： 不涉及 **取值范围**： 字符长度0-2048位 **默认取值**： 不涉及。
 
@@ -112,7 +112,7 @@ class PPTPageInfo:
 
     @page_content.setter
     def page_content(self, page_content):
-        """Sets the page_content of this PPTPageInfo.
+        r"""Sets the page_content of this PPTPageInfo.
 
         **参数解释**： 页面对应图片文件ID **约束限制**： 不涉及 **取值范围**： 字符长度0-2048位 **默认取值**： 不涉及。
 

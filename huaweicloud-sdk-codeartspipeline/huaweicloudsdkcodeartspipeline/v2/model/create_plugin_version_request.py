@@ -27,7 +27,7 @@ class CreatePluginVersionRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """CreatePluginVersionRequest
+        r"""CreatePluginVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePluginVersionRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreatePluginVersionRequest.
+        r"""Gets the domain_id of this CreatePluginVersionRequest.
 
         租户ID
 
@@ -60,7 +60,7 @@ class CreatePluginVersionRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreatePluginVersionRequest.
+        r"""Sets the domain_id of this CreatePluginVersionRequest.
 
         租户ID
 
@@ -71,7 +71,7 @@ class CreatePluginVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePluginVersionRequest.
+        r"""Gets the body of this CreatePluginVersionRequest.
 
         :return: The body of this CreatePluginVersionRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PluginDTO`
@@ -80,7 +80,7 @@ class CreatePluginVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePluginVersionRequest.
+        r"""Sets the body of this CreatePluginVersionRequest.
 
         :param body: The body of this CreatePluginVersionRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.PluginDTO`

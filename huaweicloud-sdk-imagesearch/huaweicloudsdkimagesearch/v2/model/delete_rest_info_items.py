@@ -25,7 +25,7 @@ class DeleteRestInfoItems:
     }
 
     def __init__(self, id=None):
-        """DeleteRestInfoItems
+        r"""DeleteRestInfoItems
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteRestInfoItems:
 
     @property
     def id(self):
-        """Gets the id of this DeleteRestInfoItems.
+        r"""Gets the id of this DeleteRestInfoItems.
 
         数据唯一ID。
 
@@ -54,7 +54,7 @@ class DeleteRestInfoItems:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteRestInfoItems.
+        r"""Sets the id of this DeleteRestInfoItems.
 
         数据唯一ID。
 

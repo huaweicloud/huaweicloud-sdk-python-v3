@@ -26,7 +26,7 @@ class ListCaptureResultResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListCaptureResultResponse
+        r"""ListCaptureResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListCaptureResultResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListCaptureResultResponse.
+        r"""Gets the data of this ListCaptureResultResponse.
 
         :return: The data of this ListCaptureResultResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.CaptureResultUrlVO`
@@ -53,7 +53,7 @@ class ListCaptureResultResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListCaptureResultResponse.
+        r"""Sets the data of this ListCaptureResultResponse.
 
         :param data: The data of this ListCaptureResultResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.CaptureResultUrlVO`

@@ -24,7 +24,7 @@ class SendSmsVerificationCodeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SendSmsVerificationCodeResponse
+        r"""SendSmsVerificationCodeResponse
 
         The model defined in huaweicloud sdk
 

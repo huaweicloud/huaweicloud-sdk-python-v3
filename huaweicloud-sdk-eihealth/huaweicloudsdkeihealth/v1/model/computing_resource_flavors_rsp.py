@@ -53,7 +53,7 @@ class ComputingResourceFlavorsRsp:
     }
 
     def __init__(self, code=None, name=None, ram=None, vcpus=None, max_rate=None, min_rate=None, max_pps=None, sold_out=None, az=None, cpu_detail=None, disk_detail=None, memory_detail=None, netcard_detail=None, cpu_arch=None, gpu_info=None):
-        """ComputingResourceFlavorsRsp
+        r"""ComputingResourceFlavorsRsp
 
         The model defined in huaweicloud sdk
 
@@ -136,7 +136,7 @@ class ComputingResourceFlavorsRsp:
 
     @property
     def code(self):
-        """Gets the code of this ComputingResourceFlavorsRsp.
+        r"""Gets the code of this ComputingResourceFlavorsRsp.
 
         规格编码
 
@@ -147,7 +147,7 @@ class ComputingResourceFlavorsRsp:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ComputingResourceFlavorsRsp.
+        r"""Sets the code of this ComputingResourceFlavorsRsp.
 
         规格编码
 
@@ -158,7 +158,7 @@ class ComputingResourceFlavorsRsp:
 
     @property
     def name(self):
-        """Gets the name of this ComputingResourceFlavorsRsp.
+        r"""Gets the name of this ComputingResourceFlavorsRsp.
 
         规格名称
 
@@ -169,7 +169,7 @@ class ComputingResourceFlavorsRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComputingResourceFlavorsRsp.
+        r"""Sets the name of this ComputingResourceFlavorsRsp.
 
         规格名称
 
@@ -180,7 +180,7 @@ class ComputingResourceFlavorsRsp:
 
     @property
     def ram(self):
-        """Gets the ram of this ComputingResourceFlavorsRsp.
+        r"""Gets the ram of this ComputingResourceFlavorsRsp.
 
         内存
 
@@ -191,7 +191,7 @@ class ComputingResourceFlavorsRsp:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this ComputingResourceFlavorsRsp.
+        r"""Sets the ram of this ComputingResourceFlavorsRsp.
 
         内存
 
@@ -202,7 +202,7 @@ class ComputingResourceFlavorsRsp:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this ComputingResourceFlavorsRsp.
+        r"""Gets the vcpus of this ComputingResourceFlavorsRsp.
 
         vcpus
 
@@ -213,7 +213,7 @@ class ComputingResourceFlavorsRsp:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this ComputingResourceFlavorsRsp.
+        r"""Sets the vcpus of this ComputingResourceFlavorsRsp.
 
         vcpus
 
@@ -224,7 +224,7 @@ class ComputingResourceFlavorsRsp:
 
     @property
     def max_rate(self):
-        """Gets the max_rate of this ComputingResourceFlavorsRsp.
+        r"""Gets the max_rate of this ComputingResourceFlavorsRsp.
 
         最大带宽
 
@@ -235,7 +235,7 @@ class ComputingResourceFlavorsRsp:
 
     @max_rate.setter
     def max_rate(self, max_rate):
-        """Sets the max_rate of this ComputingResourceFlavorsRsp.
+        r"""Sets the max_rate of this ComputingResourceFlavorsRsp.
 
         最大带宽
 
@@ -246,7 +246,7 @@ class ComputingResourceFlavorsRsp:
 
     @property
     def min_rate(self):
-        """Gets the min_rate of this ComputingResourceFlavorsRsp.
+        r"""Gets the min_rate of this ComputingResourceFlavorsRsp.
 
         基准带宽
 
@@ -257,7 +257,7 @@ class ComputingResourceFlavorsRsp:
 
     @min_rate.setter
     def min_rate(self, min_rate):
-        """Sets the min_rate of this ComputingResourceFlavorsRsp.
+        r"""Sets the min_rate of this ComputingResourceFlavorsRsp.
 
         基准带宽
 
@@ -268,7 +268,7 @@ class ComputingResourceFlavorsRsp:
 
     @property
     def max_pps(self):
-        """Gets the max_pps of this ComputingResourceFlavorsRsp.
+        r"""Gets the max_pps of this ComputingResourceFlavorsRsp.
 
         最大收发包能力
 
@@ -279,7 +279,7 @@ class ComputingResourceFlavorsRsp:
 
     @max_pps.setter
     def max_pps(self, max_pps):
-        """Sets the max_pps of this ComputingResourceFlavorsRsp.
+        r"""Sets the max_pps of this ComputingResourceFlavorsRsp.
 
         最大收发包能力
 
@@ -290,7 +290,7 @@ class ComputingResourceFlavorsRsp:
 
     @property
     def sold_out(self):
-        """Gets the sold_out of this ComputingResourceFlavorsRsp.
+        r"""Gets the sold_out of this ComputingResourceFlavorsRsp.
 
         是否售罄
 
@@ -301,7 +301,7 @@ class ComputingResourceFlavorsRsp:
 
     @sold_out.setter
     def sold_out(self, sold_out):
-        """Sets the sold_out of this ComputingResourceFlavorsRsp.
+        r"""Sets the sold_out of this ComputingResourceFlavorsRsp.
 
         是否售罄
 
@@ -312,7 +312,7 @@ class ComputingResourceFlavorsRsp:
 
     @property
     def az(self):
-        """Gets the az of this ComputingResourceFlavorsRsp.
+        r"""Gets the az of this ComputingResourceFlavorsRsp.
 
         可用区
 
@@ -323,7 +323,7 @@ class ComputingResourceFlavorsRsp:
 
     @az.setter
     def az(self, az):
-        """Sets the az of this ComputingResourceFlavorsRsp.
+        r"""Sets the az of this ComputingResourceFlavorsRsp.
 
         可用区
 
@@ -334,7 +334,7 @@ class ComputingResourceFlavorsRsp:
 
     @property
     def cpu_detail(self):
-        """Gets the cpu_detail of this ComputingResourceFlavorsRsp.
+        r"""Gets the cpu_detail of this ComputingResourceFlavorsRsp.
 
         CPU物理规格描述信息
 
@@ -345,7 +345,7 @@ class ComputingResourceFlavorsRsp:
 
     @cpu_detail.setter
     def cpu_detail(self, cpu_detail):
-        """Sets the cpu_detail of this ComputingResourceFlavorsRsp.
+        r"""Sets the cpu_detail of this ComputingResourceFlavorsRsp.
 
         CPU物理规格描述信息
 
@@ -356,7 +356,7 @@ class ComputingResourceFlavorsRsp:
 
     @property
     def disk_detail(self):
-        """Gets the disk_detail of this ComputingResourceFlavorsRsp.
+        r"""Gets the disk_detail of this ComputingResourceFlavorsRsp.
 
         磁盘物理规格描述信息
 
@@ -367,7 +367,7 @@ class ComputingResourceFlavorsRsp:
 
     @disk_detail.setter
     def disk_detail(self, disk_detail):
-        """Sets the disk_detail of this ComputingResourceFlavorsRsp.
+        r"""Sets the disk_detail of this ComputingResourceFlavorsRsp.
 
         磁盘物理规格描述信息
 
@@ -378,7 +378,7 @@ class ComputingResourceFlavorsRsp:
 
     @property
     def memory_detail(self):
-        """Gets the memory_detail of this ComputingResourceFlavorsRsp.
+        r"""Gets the memory_detail of this ComputingResourceFlavorsRsp.
 
         内存物理规格描述信息
 
@@ -389,7 +389,7 @@ class ComputingResourceFlavorsRsp:
 
     @memory_detail.setter
     def memory_detail(self, memory_detail):
-        """Sets the memory_detail of this ComputingResourceFlavorsRsp.
+        r"""Sets the memory_detail of this ComputingResourceFlavorsRsp.
 
         内存物理规格描述信息
 
@@ -400,7 +400,7 @@ class ComputingResourceFlavorsRsp:
 
     @property
     def netcard_detail(self):
-        """Gets the netcard_detail of this ComputingResourceFlavorsRsp.
+        r"""Gets the netcard_detail of this ComputingResourceFlavorsRsp.
 
         网卡物理规格描述信息
 
@@ -411,7 +411,7 @@ class ComputingResourceFlavorsRsp:
 
     @netcard_detail.setter
     def netcard_detail(self, netcard_detail):
-        """Sets the netcard_detail of this ComputingResourceFlavorsRsp.
+        r"""Sets the netcard_detail of this ComputingResourceFlavorsRsp.
 
         网卡物理规格描述信息
 
@@ -422,7 +422,7 @@ class ComputingResourceFlavorsRsp:
 
     @property
     def cpu_arch(self):
-        """Gets the cpu_arch of this ComputingResourceFlavorsRsp.
+        r"""Gets the cpu_arch of this ComputingResourceFlavorsRsp.
 
         裸金属服务器的CPU架构类型
 
@@ -433,7 +433,7 @@ class ComputingResourceFlavorsRsp:
 
     @cpu_arch.setter
     def cpu_arch(self, cpu_arch):
-        """Sets the cpu_arch of this ComputingResourceFlavorsRsp.
+        r"""Sets the cpu_arch of this ComputingResourceFlavorsRsp.
 
         裸金属服务器的CPU架构类型
 
@@ -444,7 +444,7 @@ class ComputingResourceFlavorsRsp:
 
     @property
     def gpu_info(self):
-        """Gets the gpu_info of this ComputingResourceFlavorsRsp.
+        r"""Gets the gpu_info of this ComputingResourceFlavorsRsp.
 
         GPU信息
 
@@ -455,7 +455,7 @@ class ComputingResourceFlavorsRsp:
 
     @gpu_info.setter
     def gpu_info(self, gpu_info):
-        """Sets the gpu_info of this ComputingResourceFlavorsRsp.
+        r"""Sets the gpu_info of this ComputingResourceFlavorsRsp.
 
         GPU信息
 

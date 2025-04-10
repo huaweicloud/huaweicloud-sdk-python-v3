@@ -28,7 +28,7 @@ class ListItaSubJobsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, jobs=None):
-        """ListItaSubJobsResponse
+        r"""ListItaSubJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListItaSubJobsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListItaSubJobsResponse.
+        r"""Gets the total_count of this ListItaSubJobsResponse.
 
         任务列表总数。
 
@@ -62,7 +62,7 @@ class ListItaSubJobsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListItaSubJobsResponse.
+        r"""Sets the total_count of this ListItaSubJobsResponse.
 
         任务列表总数。
 
@@ -73,7 +73,7 @@ class ListItaSubJobsResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ListItaSubJobsResponse.
+        r"""Gets the jobs of this ListItaSubJobsResponse.
 
         任务列表。
 
@@ -84,7 +84,7 @@ class ListItaSubJobsResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ListItaSubJobsResponse.
+        r"""Sets the jobs of this ListItaSubJobsResponse.
 
         任务列表。
 

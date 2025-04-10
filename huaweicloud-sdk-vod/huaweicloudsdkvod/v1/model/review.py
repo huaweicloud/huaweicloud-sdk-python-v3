@@ -33,7 +33,7 @@ class Review:
     }
 
     def __init__(self, template_id=None, interval=None, politics=None, terrorism=None, porn=None):
-        """Review
+        r"""Review
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Review:
 
     @property
     def template_id(self):
-        """Gets the template_id of this Review.
+        r"""Gets the template_id of this Review.
 
         审核模板ID。您可以在视频点播控制台配置审核模板后获取，具体请参见[审核设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0057.html)。
 
@@ -82,7 +82,7 @@ class Review:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this Review.
+        r"""Sets the template_id of this Review.
 
         审核模板ID。您可以在视频点播控制台配置审核模板后获取，具体请参见[审核设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0057.html)。
 
@@ -93,7 +93,7 @@ class Review:
 
     @property
     def interval(self):
-        """Gets the interval of this Review.
+        r"""Gets the interval of this Review.
 
         截图检测时间间隔，取值范围为[0,100]，该参数在请求参数中忽略。
 
@@ -104,7 +104,7 @@ class Review:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this Review.
+        r"""Sets the interval of this Review.
 
         截图检测时间间隔，取值范围为[0,100]，该参数在请求参数中忽略。
 
@@ -115,7 +115,7 @@ class Review:
 
     @property
     def politics(self):
-        """Gets the politics of this Review.
+        r"""Gets the politics of this Review.
 
         鉴政内容检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示未进行此项检测。
 
@@ -126,7 +126,7 @@ class Review:
 
     @politics.setter
     def politics(self, politics):
-        """Sets the politics of this Review.
+        r"""Sets the politics of this Review.
 
         鉴政内容检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示未进行此项检测。
 
@@ -137,7 +137,7 @@ class Review:
 
     @property
     def terrorism(self):
-        """Gets the terrorism of this Review.
+        r"""Gets the terrorism of this Review.
 
         鉴恐内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示未进行此项检测。
 
@@ -148,7 +148,7 @@ class Review:
 
     @terrorism.setter
     def terrorism(self, terrorism):
-        """Sets the terrorism of this Review.
+        r"""Sets the terrorism of this Review.
 
         鉴恐内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示未进行此项检测。
 
@@ -159,7 +159,7 @@ class Review:
 
     @property
     def porn(self):
-        """Gets the porn of this Review.
+        r"""Gets the porn of this Review.
 
         鉴黄内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示未进行此项检测。
 
@@ -170,7 +170,7 @@ class Review:
 
     @porn.setter
     def porn(self, porn):
-        """Sets the porn of this Review.
+        r"""Sets the porn of this Review.
 
         鉴黄内容的检测置信度，取值范围为[0,100]，该参数在请求参数中忽略。 置信度越高，说明审核结果越可信。未开启或设置为0时，表示未进行此项检测。
 

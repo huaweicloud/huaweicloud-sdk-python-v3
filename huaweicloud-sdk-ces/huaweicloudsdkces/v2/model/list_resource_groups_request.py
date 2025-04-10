@@ -35,7 +35,7 @@ class ListResourceGroupsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, group_name=None, group_id=None, offset=None, limit=None, type=None):
-        """ListResourceGroupsRequest
+        r"""ListResourceGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListResourceGroupsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListResourceGroupsRequest.
+        r"""Gets the enterprise_project_id of this ListResourceGroupsRequest.
 
         归属企业项目ID
 
@@ -89,7 +89,7 @@ class ListResourceGroupsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListResourceGroupsRequest.
+        r"""Sets the enterprise_project_id of this ListResourceGroupsRequest.
 
         归属企业项目ID
 
@@ -100,7 +100,7 @@ class ListResourceGroupsRequest:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ListResourceGroupsRequest.
+        r"""Gets the group_name of this ListResourceGroupsRequest.
 
         资源分组名称，支持模糊查询
 
@@ -111,7 +111,7 @@ class ListResourceGroupsRequest:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ListResourceGroupsRequest.
+        r"""Sets the group_name of this ListResourceGroupsRequest.
 
         资源分组名称，支持模糊查询
 
@@ -122,7 +122,7 @@ class ListResourceGroupsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListResourceGroupsRequest.
+        r"""Gets the group_id of this ListResourceGroupsRequest.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -133,7 +133,7 @@ class ListResourceGroupsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListResourceGroupsRequest.
+        r"""Sets the group_id of this ListResourceGroupsRequest.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -144,7 +144,7 @@ class ListResourceGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListResourceGroupsRequest.
+        r"""Gets the offset of this ListResourceGroupsRequest.
 
         分页查询时查询的起始位置，表示从第几条数据开始，默认为0
 
@@ -155,7 +155,7 @@ class ListResourceGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListResourceGroupsRequest.
+        r"""Sets the offset of this ListResourceGroupsRequest.
 
         分页查询时查询的起始位置，表示从第几条数据开始，默认为0
 
@@ -166,7 +166,7 @@ class ListResourceGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourceGroupsRequest.
+        r"""Gets the limit of this ListResourceGroupsRequest.
 
         分页查询时每页的条目数，取值[1,100]，默认值为100
 
@@ -177,7 +177,7 @@ class ListResourceGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourceGroupsRequest.
+        r"""Sets the limit of this ListResourceGroupsRequest.
 
         分页查询时每页的条目数，取值[1,100]，默认值为100
 
@@ -188,7 +188,7 @@ class ListResourceGroupsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListResourceGroupsRequest.
+        r"""Gets the type of this ListResourceGroupsRequest.
 
         资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加），不传代表查询所有资源分组类型
 
@@ -199,7 +199,7 @@ class ListResourceGroupsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListResourceGroupsRequest.
+        r"""Sets the type of this ListResourceGroupsRequest.
 
         资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加），不传代表查询所有资源分组类型
 

@@ -24,7 +24,7 @@ class DeleteListenerTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteListenerTagsResponse
+        r"""DeleteListenerTagsResponse
 
         The model defined in huaweicloud sdk
 

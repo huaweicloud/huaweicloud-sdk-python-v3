@@ -24,7 +24,7 @@ class AddAppGroupAuthorizationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddAppGroupAuthorizationResponse
+        r"""AddAppGroupAuthorizationResponse
 
         The model defined in huaweicloud sdk
 

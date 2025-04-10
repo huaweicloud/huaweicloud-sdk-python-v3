@@ -29,7 +29,7 @@ class ProductInfo:
     }
 
     def __init__(self, cloud_service_type=None, resource_type=None, resource_spec_code=None):
-        """ProductInfo
+        r"""ProductInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ProductInfo:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this ProductInfo.
+        r"""Gets the cloud_service_type of this ProductInfo.
 
         云服务类型，固定为'hws.service.type.ccm'
 
@@ -65,7 +65,7 @@ class ProductInfo:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this ProductInfo.
+        r"""Sets the cloud_service_type of this ProductInfo.
 
         云服务类型，固定为'hws.service.type.ccm'
 
@@ -76,7 +76,7 @@ class ProductInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ProductInfo.
+        r"""Gets the resource_type of this ProductInfo.
 
         资源类型，CA为\"hws.resource.type.pca.duration\"
 
@@ -87,7 +87,7 @@ class ProductInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ProductInfo.
+        r"""Sets the resource_type of this ProductInfo.
 
         资源类型，CA为\"hws.resource.type.pca.duration\"
 
@@ -98,7 +98,7 @@ class ProductInfo:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ProductInfo.
+        r"""Gets the resource_spec_code of this ProductInfo.
 
         资源规格编码，CA为\"ca.duration\"
 
@@ -109,7 +109,7 @@ class ProductInfo:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ProductInfo.
+        r"""Sets the resource_spec_code of this ProductInfo.
 
         资源规格编码，CA为\"ca.duration\"
 

@@ -51,7 +51,7 @@ class SpecificCommitInfo:
     }
 
     def __init__(self, id=None, short_id=None, title=None, author_name=None, author_email=None, committer_name=None, committer_email=None, created_at=None, message=None, parent_ids=None, committed_date=None, authored_date=None, stats=None, last_pipeline=None):
-        """SpecificCommitInfo
+        r"""SpecificCommitInfo
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class SpecificCommitInfo:
 
     @property
     def id(self):
-        """Gets the id of this SpecificCommitInfo.
+        r"""Gets the id of this SpecificCommitInfo.
 
         提交对应的SHA id
 
@@ -145,7 +145,7 @@ class SpecificCommitInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SpecificCommitInfo.
+        r"""Sets the id of this SpecificCommitInfo.
 
         提交对应的SHA id
 
@@ -156,7 +156,7 @@ class SpecificCommitInfo:
 
     @property
     def short_id(self):
-        """Gets the short_id of this SpecificCommitInfo.
+        r"""Gets the short_id of this SpecificCommitInfo.
 
         提交对应的短SHA id
 
@@ -167,7 +167,7 @@ class SpecificCommitInfo:
 
     @short_id.setter
     def short_id(self, short_id):
-        """Sets the short_id of this SpecificCommitInfo.
+        r"""Sets the short_id of this SpecificCommitInfo.
 
         提交对应的短SHA id
 
@@ -178,7 +178,7 @@ class SpecificCommitInfo:
 
     @property
     def title(self):
-        """Gets the title of this SpecificCommitInfo.
+        r"""Gets the title of this SpecificCommitInfo.
 
         提交标题
 
@@ -189,7 +189,7 @@ class SpecificCommitInfo:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this SpecificCommitInfo.
+        r"""Sets the title of this SpecificCommitInfo.
 
         提交标题
 
@@ -200,7 +200,7 @@ class SpecificCommitInfo:
 
     @property
     def author_name(self):
-        """Gets the author_name of this SpecificCommitInfo.
+        r"""Gets the author_name of this SpecificCommitInfo.
 
         作者
 
@@ -211,7 +211,7 @@ class SpecificCommitInfo:
 
     @author_name.setter
     def author_name(self, author_name):
-        """Sets the author_name of this SpecificCommitInfo.
+        r"""Sets the author_name of this SpecificCommitInfo.
 
         作者
 
@@ -222,7 +222,7 @@ class SpecificCommitInfo:
 
     @property
     def author_email(self):
-        """Gets the author_email of this SpecificCommitInfo.
+        r"""Gets the author_email of this SpecificCommitInfo.
 
         作者邮箱
 
@@ -233,7 +233,7 @@ class SpecificCommitInfo:
 
     @author_email.setter
     def author_email(self, author_email):
-        """Sets the author_email of this SpecificCommitInfo.
+        r"""Sets the author_email of this SpecificCommitInfo.
 
         作者邮箱
 
@@ -244,7 +244,7 @@ class SpecificCommitInfo:
 
     @property
     def committer_name(self):
-        """Gets the committer_name of this SpecificCommitInfo.
+        r"""Gets the committer_name of this SpecificCommitInfo.
 
         提交作者
 
@@ -255,7 +255,7 @@ class SpecificCommitInfo:
 
     @committer_name.setter
     def committer_name(self, committer_name):
-        """Sets the committer_name of this SpecificCommitInfo.
+        r"""Sets the committer_name of this SpecificCommitInfo.
 
         提交作者
 
@@ -266,7 +266,7 @@ class SpecificCommitInfo:
 
     @property
     def committer_email(self):
-        """Gets the committer_email of this SpecificCommitInfo.
+        r"""Gets the committer_email of this SpecificCommitInfo.
 
         提交作者邮箱
 
@@ -277,7 +277,7 @@ class SpecificCommitInfo:
 
     @committer_email.setter
     def committer_email(self, committer_email):
-        """Sets the committer_email of this SpecificCommitInfo.
+        r"""Sets the committer_email of this SpecificCommitInfo.
 
         提交作者邮箱
 
@@ -288,7 +288,7 @@ class SpecificCommitInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SpecificCommitInfo.
+        r"""Gets the created_at of this SpecificCommitInfo.
 
         创建时间
 
@@ -299,7 +299,7 @@ class SpecificCommitInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SpecificCommitInfo.
+        r"""Sets the created_at of this SpecificCommitInfo.
 
         创建时间
 
@@ -310,7 +310,7 @@ class SpecificCommitInfo:
 
     @property
     def message(self):
-        """Gets the message of this SpecificCommitInfo.
+        r"""Gets the message of this SpecificCommitInfo.
 
         提交信息
 
@@ -321,7 +321,7 @@ class SpecificCommitInfo:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this SpecificCommitInfo.
+        r"""Sets the message of this SpecificCommitInfo.
 
         提交信息
 
@@ -332,7 +332,7 @@ class SpecificCommitInfo:
 
     @property
     def parent_ids(self):
-        """Gets the parent_ids of this SpecificCommitInfo.
+        r"""Gets the parent_ids of this SpecificCommitInfo.
 
         父提交id
 
@@ -343,7 +343,7 @@ class SpecificCommitInfo:
 
     @parent_ids.setter
     def parent_ids(self, parent_ids):
-        """Sets the parent_ids of this SpecificCommitInfo.
+        r"""Sets the parent_ids of this SpecificCommitInfo.
 
         父提交id
 
@@ -354,7 +354,7 @@ class SpecificCommitInfo:
 
     @property
     def committed_date(self):
-        """Gets the committed_date of this SpecificCommitInfo.
+        r"""Gets the committed_date of this SpecificCommitInfo.
 
         提交时间
 
@@ -365,7 +365,7 @@ class SpecificCommitInfo:
 
     @committed_date.setter
     def committed_date(self, committed_date):
-        """Sets the committed_date of this SpecificCommitInfo.
+        r"""Sets the committed_date of this SpecificCommitInfo.
 
         提交时间
 
@@ -376,7 +376,7 @@ class SpecificCommitInfo:
 
     @property
     def authored_date(self):
-        """Gets the authored_date of this SpecificCommitInfo.
+        r"""Gets the authored_date of this SpecificCommitInfo.
 
         作者提交时间
 
@@ -387,7 +387,7 @@ class SpecificCommitInfo:
 
     @authored_date.setter
     def authored_date(self, authored_date):
-        """Sets the authored_date of this SpecificCommitInfo.
+        r"""Sets the authored_date of this SpecificCommitInfo.
 
         作者提交时间
 
@@ -398,7 +398,7 @@ class SpecificCommitInfo:
 
     @property
     def stats(self):
-        """Gets the stats of this SpecificCommitInfo.
+        r"""Gets the stats of this SpecificCommitInfo.
 
         :return: The stats of this SpecificCommitInfo.
         :rtype: :class:`huaweicloudsdkcodehub.v3.SpecificCommitInfoStats`
@@ -407,7 +407,7 @@ class SpecificCommitInfo:
 
     @stats.setter
     def stats(self, stats):
-        """Sets the stats of this SpecificCommitInfo.
+        r"""Sets the stats of this SpecificCommitInfo.
 
         :param stats: The stats of this SpecificCommitInfo.
         :type stats: :class:`huaweicloudsdkcodehub.v3.SpecificCommitInfoStats`
@@ -416,7 +416,7 @@ class SpecificCommitInfo:
 
     @property
     def last_pipeline(self):
-        """Gets the last_pipeline of this SpecificCommitInfo.
+        r"""Gets the last_pipeline of this SpecificCommitInfo.
 
         :return: The last_pipeline of this SpecificCommitInfo.
         :rtype: :class:`huaweicloudsdkcodehub.v3.SpecificCommitInfoLastPipeline`
@@ -425,7 +425,7 @@ class SpecificCommitInfo:
 
     @last_pipeline.setter
     def last_pipeline(self, last_pipeline):
-        """Sets the last_pipeline of this SpecificCommitInfo.
+        r"""Sets the last_pipeline of this SpecificCommitInfo.
 
         :param last_pipeline: The last_pipeline of this SpecificCommitInfo.
         :type last_pipeline: :class:`huaweicloudsdkcodehub.v3.SpecificCommitInfoLastPipeline`

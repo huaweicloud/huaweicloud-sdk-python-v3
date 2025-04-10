@@ -39,7 +39,7 @@ class RecordRule:
     }
 
     def __init__(self, rule_id=None, app_id=None, obs_addr=None, record_formats=None, hls_config=None, mp4_config=None, create_time=None, update_time=None):
-        """RecordRule
+        r"""RecordRule
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class RecordRule:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this RecordRule.
+        r"""Gets the rule_id of this RecordRule.
 
         规则id，由服务端返回。创建或修改规则的时候不携带
 
@@ -103,7 +103,7 @@ class RecordRule:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this RecordRule.
+        r"""Sets the rule_id of this RecordRule.
 
         规则id，由服务端返回。创建或修改规则的时候不携带
 
@@ -114,7 +114,7 @@ class RecordRule:
 
     @property
     def app_id(self):
-        """Gets the app_id of this RecordRule.
+        r"""Gets the app_id of this RecordRule.
 
         应用id
 
@@ -125,7 +125,7 @@ class RecordRule:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this RecordRule.
+        r"""Sets the app_id of this RecordRule.
 
         应用id
 
@@ -136,7 +136,7 @@ class RecordRule:
 
     @property
     def obs_addr(self):
-        """Gets the obs_addr of this RecordRule.
+        r"""Gets the obs_addr of this RecordRule.
 
         :return: The obs_addr of this RecordRule.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
@@ -145,7 +145,7 @@ class RecordRule:
 
     @obs_addr.setter
     def obs_addr(self, obs_addr):
-        """Sets the obs_addr of this RecordRule.
+        r"""Sets the obs_addr of this RecordRule.
 
         :param obs_addr: The obs_addr of this RecordRule.
         :type obs_addr: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
@@ -154,7 +154,7 @@ class RecordRule:
 
     @property
     def record_formats(self):
-        """Gets the record_formats of this RecordRule.
+        r"""Gets the record_formats of this RecordRule.
 
         录制格式：HLS格式或者MP4格式
 
@@ -165,7 +165,7 @@ class RecordRule:
 
     @record_formats.setter
     def record_formats(self, record_formats):
-        """Sets the record_formats of this RecordRule.
+        r"""Sets the record_formats of this RecordRule.
 
         录制格式：HLS格式或者MP4格式
 
@@ -176,7 +176,7 @@ class RecordRule:
 
     @property
     def hls_config(self):
-        """Gets the hls_config of this RecordRule.
+        r"""Gets the hls_config of this RecordRule.
 
         :return: The hls_config of this RecordRule.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
@@ -185,7 +185,7 @@ class RecordRule:
 
     @hls_config.setter
     def hls_config(self, hls_config):
-        """Sets the hls_config of this RecordRule.
+        r"""Sets the hls_config of this RecordRule.
 
         :param hls_config: The hls_config of this RecordRule.
         :type hls_config: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
@@ -194,7 +194,7 @@ class RecordRule:
 
     @property
     def mp4_config(self):
-        """Gets the mp4_config of this RecordRule.
+        r"""Gets the mp4_config of this RecordRule.
 
         :return: The mp4_config of this RecordRule.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
@@ -203,7 +203,7 @@ class RecordRule:
 
     @mp4_config.setter
     def mp4_config(self, mp4_config):
-        """Sets the mp4_config of this RecordRule.
+        r"""Sets the mp4_config of this RecordRule.
 
         :param mp4_config: The mp4_config of this RecordRule.
         :type mp4_config: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
@@ -212,7 +212,7 @@ class RecordRule:
 
     @property
     def create_time(self):
-        """Gets the create_time of this RecordRule.
+        r"""Gets the create_time of this RecordRule.
 
         创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -223,7 +223,7 @@ class RecordRule:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this RecordRule.
+        r"""Sets the create_time of this RecordRule.
 
         创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -234,7 +234,7 @@ class RecordRule:
 
     @property
     def update_time(self):
-        """Gets the update_time of this RecordRule.
+        r"""Gets the update_time of this RecordRule.
 
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -245,7 +245,7 @@ class RecordRule:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this RecordRule.
+        r"""Sets the update_time of this RecordRule.
 
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 

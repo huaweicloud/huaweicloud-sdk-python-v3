@@ -27,7 +27,7 @@ class ShowConnectivityTaskRequest:
     }
 
     def __init__(self, queue_name=None, task_id=None):
-        """ShowConnectivityTaskRequest
+        r"""ShowConnectivityTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowConnectivityTaskRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ShowConnectivityTaskRequest.
+        r"""Gets the queue_name of this ShowConnectivityTaskRequest.
 
         :return: The queue_name of this ShowConnectivityTaskRequest.
         :rtype: str
@@ -57,7 +57,7 @@ class ShowConnectivityTaskRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ShowConnectivityTaskRequest.
+        r"""Sets the queue_name of this ShowConnectivityTaskRequest.
 
         :param queue_name: The queue_name of this ShowConnectivityTaskRequest.
         :type queue_name: str
@@ -66,7 +66,7 @@ class ShowConnectivityTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowConnectivityTaskRequest.
+        r"""Gets the task_id of this ShowConnectivityTaskRequest.
 
         :return: The task_id of this ShowConnectivityTaskRequest.
         :rtype: str
@@ -75,7 +75,7 @@ class ShowConnectivityTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowConnectivityTaskRequest.
+        r"""Sets the task_id of this ShowConnectivityTaskRequest.
 
         :param task_id: The task_id of this ShowConnectivityTaskRequest.
         :type task_id: str

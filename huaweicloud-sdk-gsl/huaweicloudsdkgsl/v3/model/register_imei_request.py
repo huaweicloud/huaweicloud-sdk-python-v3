@@ -27,7 +27,7 @@ class RegisterImeiRequest:
     }
 
     def __init__(self, sim_card_id=None, body=None):
-        """RegisterImeiRequest
+        r"""RegisterImeiRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RegisterImeiRequest:
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this RegisterImeiRequest.
+        r"""Gets the sim_card_id of this RegisterImeiRequest.
 
         SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
 
@@ -60,7 +60,7 @@ class RegisterImeiRequest:
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this RegisterImeiRequest.
+        r"""Sets the sim_card_id of this RegisterImeiRequest.
 
         SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。可通过[查询SIM卡列表接口](https://support.huaweicloud.com/api-ocgsl/gsl_07_0008.html)获取
 
@@ -71,7 +71,7 @@ class RegisterImeiRequest:
 
     @property
     def body(self):
-        """Gets the body of this RegisterImeiRequest.
+        r"""Gets the body of this RegisterImeiRequest.
 
         :return: The body of this RegisterImeiRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.RegisterImeiReq`
@@ -80,7 +80,7 @@ class RegisterImeiRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RegisterImeiRequest.
+        r"""Sets the body of this RegisterImeiRequest.
 
         :param body: The body of this RegisterImeiRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.RegisterImeiReq`

@@ -30,7 +30,7 @@ class DeleteDeployKeyV2Response(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """DeleteDeployKeyV2Response
+        r"""DeleteDeployKeyV2Response
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteDeployKeyV2Response(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this DeleteDeployKeyV2Response.
+        r"""Gets the error of this DeleteDeployKeyV2Response.
 
         :return: The error of this DeleteDeployKeyV2Response.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class DeleteDeployKeyV2Response(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this DeleteDeployKeyV2Response.
+        r"""Sets the error of this DeleteDeployKeyV2Response.
 
         :param error: The error of this DeleteDeployKeyV2Response.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class DeleteDeployKeyV2Response(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteDeployKeyV2Response.
+        r"""Gets the result of this DeleteDeployKeyV2Response.
 
         响应结果
 
@@ -87,7 +87,7 @@ class DeleteDeployKeyV2Response(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteDeployKeyV2Response.
+        r"""Sets the result of this DeleteDeployKeyV2Response.
 
         响应结果
 
@@ -98,7 +98,7 @@ class DeleteDeployKeyV2Response(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteDeployKeyV2Response.
+        r"""Gets the status of this DeleteDeployKeyV2Response.
 
         响应状态
 
@@ -109,7 +109,7 @@ class DeleteDeployKeyV2Response(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteDeployKeyV2Response.
+        r"""Sets the status of this DeleteDeployKeyV2Response.
 
         响应状态
 

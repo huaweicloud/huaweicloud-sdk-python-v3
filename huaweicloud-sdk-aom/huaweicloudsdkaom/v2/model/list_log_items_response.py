@@ -30,7 +30,7 @@ class ListLogItemsResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_message=None, result=None):
-        """ListLogItemsResponse
+        r"""ListLogItemsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListLogItemsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListLogItemsResponse.
+        r"""Gets the error_code of this ListLogItemsResponse.
 
         响应码,SVCSTG_AMS_2000000代表正常返回。
 
@@ -69,7 +69,7 @@ class ListLogItemsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListLogItemsResponse.
+        r"""Sets the error_code of this ListLogItemsResponse.
 
         响应码,SVCSTG_AMS_2000000代表正常返回。
 
@@ -80,7 +80,7 @@ class ListLogItemsResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ListLogItemsResponse.
+        r"""Gets the error_message of this ListLogItemsResponse.
 
         响应信息描述。
 
@@ -91,7 +91,7 @@ class ListLogItemsResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ListLogItemsResponse.
+        r"""Sets the error_message of this ListLogItemsResponse.
 
         响应信息描述。
 
@@ -102,7 +102,7 @@ class ListLogItemsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListLogItemsResponse.
+        r"""Gets the result of this ListLogItemsResponse.
 
         查询结果元数据信息，包括返回总数及结果。
 
@@ -113,7 +113,7 @@ class ListLogItemsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListLogItemsResponse.
+        r"""Sets the result of this ListLogItemsResponse.
 
         查询结果元数据信息，包括返回总数及结果。
 

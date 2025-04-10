@@ -27,7 +27,7 @@ class WebImageExtractedData:
     }
 
     def __init__(self, contact_info=None, image_size=None):
-        """WebImageExtractedData
+        r"""WebImageExtractedData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WebImageExtractedData:
 
     @property
     def contact_info(self):
-        """Gets the contact_info of this WebImageExtractedData.
+        r"""Gets the contact_info of this WebImageExtractedData.
 
         :return: The contact_info of this WebImageExtractedData.
         :rtype: :class:`huaweicloudsdkocr.v1.WebImageContactInfo`
@@ -59,7 +59,7 @@ class WebImageExtractedData:
 
     @contact_info.setter
     def contact_info(self, contact_info):
-        """Sets the contact_info of this WebImageExtractedData.
+        r"""Sets the contact_info of this WebImageExtractedData.
 
         :param contact_info: The contact_info of this WebImageExtractedData.
         :type contact_info: :class:`huaweicloudsdkocr.v1.WebImageContactInfo`
@@ -68,7 +68,7 @@ class WebImageExtractedData:
 
     @property
     def image_size(self):
-        """Gets the image_size of this WebImageExtractedData.
+        r"""Gets the image_size of this WebImageExtractedData.
 
         :return: The image_size of this WebImageExtractedData.
         :rtype: :class:`huaweicloudsdkocr.v1.WebImageImageSize`
@@ -77,7 +77,7 @@ class WebImageExtractedData:
 
     @image_size.setter
     def image_size(self, image_size):
-        """Sets the image_size of this WebImageExtractedData.
+        r"""Sets the image_size of this WebImageExtractedData.
 
         :param image_size: The image_size of this WebImageExtractedData.
         :type image_size: :class:`huaweicloudsdkocr.v1.WebImageImageSize`

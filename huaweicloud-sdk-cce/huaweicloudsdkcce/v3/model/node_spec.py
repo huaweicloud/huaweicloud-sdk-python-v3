@@ -65,7 +65,7 @@ class NodeSpec:
     }
 
     def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, initialized_conditions=None, extend_param=None, hostname_config=None, server_enterprise_project_id=None):
-        """NodeSpec
+        r"""NodeSpec
 
         The model defined in huaweicloud sdk
 
@@ -178,7 +178,7 @@ class NodeSpec:
 
     @property
     def flavor(self):
-        """Gets the flavor of this NodeSpec.
+        r"""Gets the flavor of this NodeSpec.
 
         节点的规格，CCE支持的节点规格请参考[节点规格说明](https://support.huaweicloud.com/api-cce/cce_02_0368.html)获取。 
 
@@ -189,7 +189,7 @@ class NodeSpec:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this NodeSpec.
+        r"""Sets the flavor of this NodeSpec.
 
         节点的规格，CCE支持的节点规格请参考[节点规格说明](https://support.huaweicloud.com/api-cce/cce_02_0368.html)获取。 
 
@@ -200,7 +200,7 @@ class NodeSpec:
 
     @property
     def az(self):
-        """Gets the az of this NodeSpec.
+        r"""Gets the az of this NodeSpec.
 
         待创建节点所在的可用区，需要指定可用区（AZ）的名称，不填或者填random选择随机可用区。 [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk) 
 
@@ -211,7 +211,7 @@ class NodeSpec:
 
     @az.setter
     def az(self, az):
-        """Sets the az of this NodeSpec.
+        r"""Sets the az of this NodeSpec.
 
         待创建节点所在的可用区，需要指定可用区（AZ）的名称，不填或者填random选择随机可用区。 [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk) 
 
@@ -222,7 +222,7 @@ class NodeSpec:
 
     @property
     def os(self):
-        """Gets the os of this NodeSpec.
+        r"""Gets the os of this NodeSpec.
 
         [节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](https://support.huaweicloud.com/api-cce/node-os.html)。](tag:hws) [节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](https://support.huaweicloud.com/intl/zh-cn/api-cce/node-os.html)。](tag:hws_hk) > - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 > - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 > - 创建节点池时，该参数为必选。 > - 若创建节点时使用共享磁盘空间，即磁盘初始化配置管理参数使用storage，且StorageGroups中virtualSpaces的name字段指定为share，该参数为必选。 
 
@@ -233,7 +233,7 @@ class NodeSpec:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this NodeSpec.
+        r"""Sets the os of this NodeSpec.
 
         [节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](https://support.huaweicloud.com/api-cce/node-os.html)。](tag:hws) [节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](https://support.huaweicloud.com/intl/zh-cn/api-cce/node-os.html)。](tag:hws_hk) > - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 > - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 > - 创建节点池时，该参数为必选。 > - 若创建节点时使用共享磁盘空间，即磁盘初始化配置管理参数使用storage，且StorageGroups中virtualSpaces的name字段指定为share，该参数为必选。 
 
@@ -244,7 +244,7 @@ class NodeSpec:
 
     @property
     def login(self):
-        """Gets the login of this NodeSpec.
+        r"""Gets the login of this NodeSpec.
 
         :return: The login of this NodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Login`
@@ -253,7 +253,7 @@ class NodeSpec:
 
     @login.setter
     def login(self, login):
-        """Sets the login of this NodeSpec.
+        r"""Sets the login of this NodeSpec.
 
         :param login: The login of this NodeSpec.
         :type login: :class:`huaweicloudsdkcce.v3.Login`
@@ -262,7 +262,7 @@ class NodeSpec:
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this NodeSpec.
+        r"""Gets the root_volume of this NodeSpec.
 
         :return: The root_volume of this NodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Volume`
@@ -271,7 +271,7 @@ class NodeSpec:
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this NodeSpec.
+        r"""Sets the root_volume of this NodeSpec.
 
         :param root_volume: The root_volume of this NodeSpec.
         :type root_volume: :class:`huaweicloudsdkcce.v3.Volume`
@@ -280,7 +280,7 @@ class NodeSpec:
 
     @property
     def data_volumes(self):
-        """Gets the data_volumes of this NodeSpec.
+        r"""Gets the data_volumes of this NodeSpec.
 
         节点的数据盘参数（目前已支持通过控制台为CCE节点添加第二块数据盘）。 如果数据盘正供容器运行时和Kubelet组件使用，则不可被卸载，否则将导致节点不可用。 针对专属云节点，参数解释与rootVolume一致
 
@@ -291,7 +291,7 @@ class NodeSpec:
 
     @data_volumes.setter
     def data_volumes(self, data_volumes):
-        """Sets the data_volumes of this NodeSpec.
+        r"""Sets the data_volumes of this NodeSpec.
 
         节点的数据盘参数（目前已支持通过控制台为CCE节点添加第二块数据盘）。 如果数据盘正供容器运行时和Kubelet组件使用，则不可被卸载，否则将导致节点不可用。 针对专属云节点，参数解释与rootVolume一致
 
@@ -302,7 +302,7 @@ class NodeSpec:
 
     @property
     def storage(self):
-        """Gets the storage of this NodeSpec.
+        r"""Gets the storage of this NodeSpec.
 
         :return: The storage of this NodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Storage`
@@ -311,7 +311,7 @@ class NodeSpec:
 
     @storage.setter
     def storage(self, storage):
-        """Sets the storage of this NodeSpec.
+        r"""Sets the storage of this NodeSpec.
 
         :param storage: The storage of this NodeSpec.
         :type storage: :class:`huaweicloudsdkcce.v3.Storage`
@@ -320,7 +320,7 @@ class NodeSpec:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this NodeSpec.
+        r"""Gets the public_ip of this NodeSpec.
 
         :return: The public_ip of this NodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePublicIP`
@@ -329,7 +329,7 @@ class NodeSpec:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this NodeSpec.
+        r"""Sets the public_ip of this NodeSpec.
 
         :param public_ip: The public_ip of this NodeSpec.
         :type public_ip: :class:`huaweicloudsdkcce.v3.NodePublicIP`
@@ -338,7 +338,7 @@ class NodeSpec:
 
     @property
     def node_nic_spec(self):
-        """Gets the node_nic_spec of this NodeSpec.
+        r"""Gets the node_nic_spec of this NodeSpec.
 
         :return: The node_nic_spec of this NodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeNicSpec`
@@ -347,7 +347,7 @@ class NodeSpec:
 
     @node_nic_spec.setter
     def node_nic_spec(self, node_nic_spec):
-        """Sets the node_nic_spec of this NodeSpec.
+        r"""Sets the node_nic_spec of this NodeSpec.
 
         :param node_nic_spec: The node_nic_spec of this NodeSpec.
         :type node_nic_spec: :class:`huaweicloudsdkcce.v3.NodeNicSpec`
@@ -356,7 +356,7 @@ class NodeSpec:
 
     @property
     def count(self):
-        """Gets the count of this NodeSpec.
+        r"""Gets the count of this NodeSpec.
 
         批量创建时节点的个数，必须为大于等于1，小于等于最大限额的正整数。作用于节点池时该项可以不填写。
 
@@ -367,7 +367,7 @@ class NodeSpec:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this NodeSpec.
+        r"""Sets the count of this NodeSpec.
 
         批量创建时节点的个数，必须为大于等于1，小于等于最大限额的正整数。作用于节点池时该项可以不填写。
 
@@ -378,7 +378,7 @@ class NodeSpec:
 
     @property
     def billing_mode(self):
-        """Gets the billing_mode of this NodeSpec.
+        r"""Gets the billing_mode of this NodeSpec.
 
         节点的计费模式： -  0: 按需付费 [- 1: 包周期](tag:hws,hws_hk) [- 2: 已废弃：自动付费包周期](tag:hws,hws_hk) 
 
@@ -389,7 +389,7 @@ class NodeSpec:
 
     @billing_mode.setter
     def billing_mode(self, billing_mode):
-        """Sets the billing_mode of this NodeSpec.
+        r"""Sets the billing_mode of this NodeSpec.
 
         节点的计费模式： -  0: 按需付费 [- 1: 包周期](tag:hws,hws_hk) [- 2: 已废弃：自动付费包周期](tag:hws,hws_hk) 
 
@@ -400,7 +400,7 @@ class NodeSpec:
 
     @property
     def taints(self):
-        """Gets the taints of this NodeSpec.
+        r"""Gets the taints of this NodeSpec.
 
         支持给创建出来的节点加Taints来设置反亲和性，taints配置不超过20条。每条Taints包含以下3个参数：  - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀。 - Value：必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。 - Effect：只可选NoSchedule，PreferNoSchedule或NoExecute。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。  示例：  ``` \"taints\": [{   \"key\": \"status\",   \"value\": \"unavailable\",   \"effect\": \"NoSchedule\" }, {   \"key\": \"looks\",   \"value\": \"bad\",   \"effect\": \"NoSchedule\" }] ``` 
 
@@ -411,7 +411,7 @@ class NodeSpec:
 
     @taints.setter
     def taints(self, taints):
-        """Sets the taints of this NodeSpec.
+        r"""Sets the taints of this NodeSpec.
 
         支持给创建出来的节点加Taints来设置反亲和性，taints配置不超过20条。每条Taints包含以下3个参数：  - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀。 - Value：必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。 - Effect：只可选NoSchedule，PreferNoSchedule或NoExecute。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。  示例：  ``` \"taints\": [{   \"key\": \"status\",   \"value\": \"unavailable\",   \"effect\": \"NoSchedule\" }, {   \"key\": \"looks\",   \"value\": \"bad\",   \"effect\": \"NoSchedule\" }] ``` 
 
@@ -422,7 +422,7 @@ class NodeSpec:
 
     @property
     def k8s_tags(self):
-        """Gets the k8s_tags of this NodeSpec.
+        r"""Gets the k8s_tags of this NodeSpec.
 
         格式为key/value键值对。键值对个数不超过20条。 - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀，例如example.com/my-key，DNS子域最长253个字符。 - Value：可以为空或者非空字符串，非空字符串必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。   示例： ``` \"k8sTags\": {   \"key\": \"value\" } ``` 
 
@@ -433,7 +433,7 @@ class NodeSpec:
 
     @k8s_tags.setter
     def k8s_tags(self, k8s_tags):
-        """Sets the k8s_tags of this NodeSpec.
+        r"""Sets the k8s_tags of this NodeSpec.
 
         格式为key/value键值对。键值对个数不超过20条。 - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀，例如example.com/my-key，DNS子域最长253个字符。 - Value：可以为空或者非空字符串，非空字符串必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。   示例： ``` \"k8sTags\": {   \"key\": \"value\" } ``` 
 
@@ -444,7 +444,7 @@ class NodeSpec:
 
     @property
     def ecs_group_id(self):
-        """Gets the ecs_group_id of this NodeSpec.
+        r"""Gets the ecs_group_id of this NodeSpec.
 
         云服务器组ID，若指定，将节点创建在该云服务器组下 > 创建节点池时该配置不会生效，若要保持节点池中的节点都在同一个云服务器组内，请在节点池 nodeManagement 字段中配置
 
@@ -455,7 +455,7 @@ class NodeSpec:
 
     @ecs_group_id.setter
     def ecs_group_id(self, ecs_group_id):
-        """Sets the ecs_group_id of this NodeSpec.
+        r"""Sets the ecs_group_id of this NodeSpec.
 
         云服务器组ID，若指定，将节点创建在该云服务器组下 > 创建节点池时该配置不会生效，若要保持节点池中的节点都在同一个云服务器组内，请在节点池 nodeManagement 字段中配置
 
@@ -466,7 +466,7 @@ class NodeSpec:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this NodeSpec.
+        r"""Gets the dedicated_host_id of this NodeSpec.
 
         指定DeH主机的ID，将节点调度到自己的DeH上。 >创建节点池添加节点时不支持该参数。 
 
@@ -477,7 +477,7 @@ class NodeSpec:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this NodeSpec.
+        r"""Sets the dedicated_host_id of this NodeSpec.
 
         指定DeH主机的ID，将节点调度到自己的DeH上。 >创建节点池添加节点时不支持该参数。 
 
@@ -488,7 +488,7 @@ class NodeSpec:
 
     @property
     def user_tags(self):
-        """Gets the user_tags of this NodeSpec.
+        r"""Gets the user_tags of this NodeSpec.
 
         云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。 > 标签键只能包含大写字母.小写字母、数字和特殊字符(-_)以及Unicode字符，长度不超过36个字符。 
 
@@ -499,7 +499,7 @@ class NodeSpec:
 
     @user_tags.setter
     def user_tags(self, user_tags):
-        """Sets the user_tags of this NodeSpec.
+        r"""Sets the user_tags of this NodeSpec.
 
         云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。 > 标签键只能包含大写字母.小写字母、数字和特殊字符(-_)以及Unicode字符，长度不超过36个字符。 
 
@@ -510,7 +510,7 @@ class NodeSpec:
 
     @property
     def runtime(self):
-        """Gets the runtime of this NodeSpec.
+        r"""Gets the runtime of this NodeSpec.
 
         :return: The runtime of this NodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.Runtime`
@@ -519,7 +519,7 @@ class NodeSpec:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this NodeSpec.
+        r"""Sets the runtime of this NodeSpec.
 
         :param runtime: The runtime of this NodeSpec.
         :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
@@ -528,7 +528,7 @@ class NodeSpec:
 
     @property
     def initialized_conditions(self):
-        """Gets the initialized_conditions of this NodeSpec.
+        r"""Gets the initialized_conditions of this NodeSpec.
 
         自定义初始化标记。  CCE节点在初始化完成之前，会打上初始化未完成污点（node.cloudprovider.kubernetes.io/uninitialized）防止pod调度到节点上。  cce支持自定义初始化标记，在接收到initializedConditions参数后，会将参数值转换成节点标签，随节点下发，例如：cloudprovider.openvessel.io/inject-initialized-conditions=CCEInitial_CustomedInitial。  当节点上设置了此标签，会轮询节点的status.Conditions，查看conditions的type是否存在标记名，如CCEInitial、CustomedInitial标记，如果存在所有传入的标记，且状态为True，认为节点初始化完成，则移除初始化污点。  - 必须以字母、数字组成，长度范围1-20位。 - 标记数量不超过2个 
 
@@ -539,7 +539,7 @@ class NodeSpec:
 
     @initialized_conditions.setter
     def initialized_conditions(self, initialized_conditions):
-        """Sets the initialized_conditions of this NodeSpec.
+        r"""Sets the initialized_conditions of this NodeSpec.
 
         自定义初始化标记。  CCE节点在初始化完成之前，会打上初始化未完成污点（node.cloudprovider.kubernetes.io/uninitialized）防止pod调度到节点上。  cce支持自定义初始化标记，在接收到initializedConditions参数后，会将参数值转换成节点标签，随节点下发，例如：cloudprovider.openvessel.io/inject-initialized-conditions=CCEInitial_CustomedInitial。  当节点上设置了此标签，会轮询节点的status.Conditions，查看conditions的type是否存在标记名，如CCEInitial、CustomedInitial标记，如果存在所有传入的标记，且状态为True，认为节点初始化完成，则移除初始化污点。  - 必须以字母、数字组成，长度范围1-20位。 - 标记数量不超过2个 
 
@@ -550,7 +550,7 @@ class NodeSpec:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this NodeSpec.
+        r"""Gets the extend_param of this NodeSpec.
 
         :return: The extend_param of this NodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeExtendParam`
@@ -559,7 +559,7 @@ class NodeSpec:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this NodeSpec.
+        r"""Sets the extend_param of this NodeSpec.
 
         :param extend_param: The extend_param of this NodeSpec.
         :type extend_param: :class:`huaweicloudsdkcce.v3.NodeExtendParam`
@@ -568,7 +568,7 @@ class NodeSpec:
 
     @property
     def hostname_config(self):
-        """Gets the hostname_config of this NodeSpec.
+        r"""Gets the hostname_config of this NodeSpec.
 
         :return: The hostname_config of this NodeSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.HostnameConfig`
@@ -577,7 +577,7 @@ class NodeSpec:
 
     @hostname_config.setter
     def hostname_config(self, hostname_config):
-        """Sets the hostname_config of this NodeSpec.
+        r"""Sets the hostname_config of this NodeSpec.
 
         :param hostname_config: The hostname_config of this NodeSpec.
         :type hostname_config: :class:`huaweicloudsdkcce.v3.HostnameConfig`
@@ -586,7 +586,7 @@ class NodeSpec:
 
     @property
     def server_enterprise_project_id(self):
-        """Gets the server_enterprise_project_id of this NodeSpec.
+        r"""Gets the server_enterprise_project_id of this NodeSpec.
 
         服务器企业项目ID。CCE服务不实现EPS相关特性，该字段仅用于同步服务器企业项目ID。 创建节点/节点池场景：可指定已存在企业项目，当取值为空时，该字段继承集群企业项目属性。 更新节点池场景：配置修改后仅会对新增节点的服务器生效，存量节点需前往EPS界面迁移。 如果更新时不指定值，不会更新该字段。 当该字段为空时，返回集群企业项目。
 
@@ -597,7 +597,7 @@ class NodeSpec:
 
     @server_enterprise_project_id.setter
     def server_enterprise_project_id(self, server_enterprise_project_id):
-        """Sets the server_enterprise_project_id of this NodeSpec.
+        r"""Sets the server_enterprise_project_id of this NodeSpec.
 
         服务器企业项目ID。CCE服务不实现EPS相关特性，该字段仅用于同步服务器企业项目ID。 创建节点/节点池场景：可指定已存在企业项目，当取值为空时，该字段继承集群企业项目属性。 更新节点池场景：配置修改后仅会对新增节点的服务器生效，存量节点需前往EPS界面迁移。 如果更新时不指定值，不会更新该字段。 当该字段为空时，返回集群企业项目。
 

@@ -31,7 +31,7 @@ class IdpToken:
     }
 
     def __init__(self, issued_at=None, expires_at=None, methods=None, user=None):
-        """IdpToken
+        r"""IdpToken
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class IdpToken:
 
     @property
     def issued_at(self):
-        """Gets the issued_at of this IdpToken.
+        r"""Gets the issued_at of this IdpToken.
 
         token产生时间。
 
@@ -71,7 +71,7 @@ class IdpToken:
 
     @issued_at.setter
     def issued_at(self, issued_at):
-        """Sets the issued_at of this IdpToken.
+        r"""Sets the issued_at of this IdpToken.
 
         token产生时间。
 
@@ -82,7 +82,7 @@ class IdpToken:
 
     @property
     def expires_at(self):
-        """Gets the expires_at of this IdpToken.
+        r"""Gets the expires_at of this IdpToken.
 
         token到期时间。
 
@@ -93,7 +93,7 @@ class IdpToken:
 
     @expires_at.setter
     def expires_at(self, expires_at):
-        """Sets the expires_at of this IdpToken.
+        r"""Sets the expires_at of this IdpToken.
 
         token到期时间。
 
@@ -104,7 +104,7 @@ class IdpToken:
 
     @property
     def methods(self):
-        """Gets the methods of this IdpToken.
+        r"""Gets the methods of this IdpToken.
 
         获取token的方式。
 
@@ -115,7 +115,7 @@ class IdpToken:
 
     @methods.setter
     def methods(self, methods):
-        """Sets the methods of this IdpToken.
+        r"""Sets the methods of this IdpToken.
 
         获取token的方式。
 
@@ -126,7 +126,7 @@ class IdpToken:
 
     @property
     def user(self):
-        """Gets the user of this IdpToken.
+        r"""Gets the user of this IdpToken.
 
         :return: The user of this IdpToken.
         :rtype: :class:`huaweicloudsdkiam.v3.UnscopedTokenUser`
@@ -135,7 +135,7 @@ class IdpToken:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this IdpToken.
+        r"""Sets the user of this IdpToken.
 
         :param user: The user of this IdpToken.
         :type user: :class:`huaweicloudsdkiam.v3.UnscopedTokenUser`

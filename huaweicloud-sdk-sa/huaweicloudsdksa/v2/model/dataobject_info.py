@@ -39,7 +39,7 @@ class DataobjectInfo:
     }
 
     def __init__(self, id=None, create_time=None, update_time=None, project_id=None, dataclass_id=None, name=None, type=None, content=None):
-        """DataobjectInfo
+        r"""DataobjectInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class DataobjectInfo:
 
     @property
     def id(self):
-        """Gets the id of this DataobjectInfo.
+        r"""Gets the id of this DataobjectInfo.
 
         Id value
 
@@ -103,7 +103,7 @@ class DataobjectInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DataobjectInfo.
+        r"""Sets the id of this DataobjectInfo.
 
         Id value
 
@@ -114,7 +114,7 @@ class DataobjectInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DataobjectInfo.
+        r"""Gets the create_time of this DataobjectInfo.
 
         Create time
 
@@ -125,7 +125,7 @@ class DataobjectInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DataobjectInfo.
+        r"""Sets the create_time of this DataobjectInfo.
 
         Create time
 
@@ -136,7 +136,7 @@ class DataobjectInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DataobjectInfo.
+        r"""Gets the update_time of this DataobjectInfo.
 
         Update time
 
@@ -147,7 +147,7 @@ class DataobjectInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DataobjectInfo.
+        r"""Sets the update_time of this DataobjectInfo.
 
         Update time
 
@@ -158,7 +158,7 @@ class DataobjectInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DataobjectInfo.
+        r"""Gets the project_id of this DataobjectInfo.
 
         Project id value
 
@@ -169,7 +169,7 @@ class DataobjectInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DataobjectInfo.
+        r"""Sets the project_id of this DataobjectInfo.
 
         Project id value
 
@@ -180,7 +180,7 @@ class DataobjectInfo:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this DataobjectInfo.
+        r"""Gets the dataclass_id of this DataobjectInfo.
 
         dataclass id.
 
@@ -191,7 +191,7 @@ class DataobjectInfo:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this DataobjectInfo.
+        r"""Sets the dataclass_id of this DataobjectInfo.
 
         dataclass id.
 
@@ -202,7 +202,7 @@ class DataobjectInfo:
 
     @property
     def name(self):
-        """Gets the name of this DataobjectInfo.
+        r"""Gets the name of this DataobjectInfo.
 
         The name, display only
 
@@ -213,7 +213,7 @@ class DataobjectInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataobjectInfo.
+        r"""Sets the name of this DataobjectInfo.
 
         The name, display only
 
@@ -224,7 +224,7 @@ class DataobjectInfo:
 
     @property
     def type(self):
-        """Gets the type of this DataobjectInfo.
+        r"""Gets the type of this DataobjectInfo.
 
         SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE
 
@@ -235,7 +235,7 @@ class DataobjectInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DataobjectInfo.
+        r"""Sets the type of this DataobjectInfo.
 
         SIMULATION,PLAYBOOK,MANUAL,INSTANCE,DATA_SOURCE
 
@@ -246,7 +246,7 @@ class DataobjectInfo:
 
     @property
     def content(self):
-        """Gets the content of this DataobjectInfo.
+        r"""Gets the content of this DataobjectInfo.
 
         data
 
@@ -257,7 +257,7 @@ class DataobjectInfo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this DataobjectInfo.
+        r"""Sets the content of this DataobjectInfo.
 
         data
 

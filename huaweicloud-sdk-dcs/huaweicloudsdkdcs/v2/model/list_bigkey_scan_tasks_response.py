@@ -30,7 +30,7 @@ class ListBigkeyScanTasksResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, count=None, records=None):
-        """ListBigkeyScanTasksResponse
+        r"""ListBigkeyScanTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListBigkeyScanTasksResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListBigkeyScanTasksResponse.
+        r"""Gets the instance_id of this ListBigkeyScanTasksResponse.
 
         实例ID
 
@@ -69,7 +69,7 @@ class ListBigkeyScanTasksResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListBigkeyScanTasksResponse.
+        r"""Sets the instance_id of this ListBigkeyScanTasksResponse.
 
         实例ID
 
@@ -80,7 +80,7 @@ class ListBigkeyScanTasksResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListBigkeyScanTasksResponse.
+        r"""Gets the count of this ListBigkeyScanTasksResponse.
 
         总数
 
@@ -91,7 +91,7 @@ class ListBigkeyScanTasksResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListBigkeyScanTasksResponse.
+        r"""Sets the count of this ListBigkeyScanTasksResponse.
 
         总数
 
@@ -102,7 +102,7 @@ class ListBigkeyScanTasksResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListBigkeyScanTasksResponse.
+        r"""Gets the records of this ListBigkeyScanTasksResponse.
 
         大key分析记录列表
 
@@ -113,7 +113,7 @@ class ListBigkeyScanTasksResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListBigkeyScanTasksResponse.
+        r"""Sets the records of this ListBigkeyScanTasksResponse.
 
         大key分析记录列表
 

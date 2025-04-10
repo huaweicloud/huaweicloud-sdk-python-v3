@@ -28,7 +28,7 @@ class ListComponentsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, components=None):
-        """ListComponentsResponse
+        r"""ListComponentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListComponentsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListComponentsResponse.
+        r"""Gets the count of this ListComponentsResponse.
 
         组件个数。
 
@@ -62,7 +62,7 @@ class ListComponentsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListComponentsResponse.
+        r"""Sets the count of this ListComponentsResponse.
 
         组件个数。
 
@@ -73,7 +73,7 @@ class ListComponentsResponse(SdkResponse):
 
     @property
     def components(self):
-        """Gets the components of this ListComponentsResponse.
+        r"""Gets the components of this ListComponentsResponse.
 
         组件列表。
 
@@ -84,7 +84,7 @@ class ListComponentsResponse(SdkResponse):
 
     @components.setter
     def components(self, components):
-        """Sets the components of this ListComponentsResponse.
+        r"""Sets the components of this ListComponentsResponse.
 
         组件列表。
 

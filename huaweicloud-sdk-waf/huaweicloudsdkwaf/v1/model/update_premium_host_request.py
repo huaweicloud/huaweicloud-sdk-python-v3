@@ -29,7 +29,7 @@ class UpdatePremiumHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, host_id=None, body=None):
-        """UpdatePremiumHostRequest
+        r"""UpdatePremiumHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdatePremiumHostRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdatePremiumHostRequest.
+        r"""Gets the enterprise_project_id of this UpdatePremiumHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -67,7 +67,7 @@ class UpdatePremiumHostRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdatePremiumHostRequest.
+        r"""Sets the enterprise_project_id of this UpdatePremiumHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -78,7 +78,7 @@ class UpdatePremiumHostRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this UpdatePremiumHostRequest.
+        r"""Gets the host_id of this UpdatePremiumHostRequest.
 
         独享模式域名ID
 
@@ -89,7 +89,7 @@ class UpdatePremiumHostRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this UpdatePremiumHostRequest.
+        r"""Sets the host_id of this UpdatePremiumHostRequest.
 
         独享模式域名ID
 
@@ -100,7 +100,7 @@ class UpdatePremiumHostRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePremiumHostRequest.
+        r"""Gets the body of this UpdatePremiumHostRequest.
 
         :return: The body of this UpdatePremiumHostRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostRequestBody`
@@ -109,7 +109,7 @@ class UpdatePremiumHostRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePremiumHostRequest.
+        r"""Sets the body of this UpdatePremiumHostRequest.
 
         :param body: The body of this UpdatePremiumHostRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostRequestBody`

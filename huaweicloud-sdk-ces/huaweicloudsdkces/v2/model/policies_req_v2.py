@@ -25,7 +25,7 @@ class PoliciesReqV2:
     }
 
     def __init__(self, policies=None):
-        """PoliciesReqV2
+        r"""PoliciesReqV2
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PoliciesReqV2:
 
     @property
     def policies(self):
-        """Gets the policies of this PoliciesReqV2.
+        r"""Gets the policies of this PoliciesReqV2.
 
         策略信息
 
@@ -53,7 +53,7 @@ class PoliciesReqV2:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this PoliciesReqV2.
+        r"""Sets the policies of this PoliciesReqV2.
 
         策略信息
 

@@ -28,7 +28,7 @@ class UpdateL7PolicyResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, l7policy=None):
-        """UpdateL7PolicyResponse
+        r"""UpdateL7PolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateL7PolicyResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateL7PolicyResponse.
+        r"""Gets the request_id of this UpdateL7PolicyResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -62,7 +62,7 @@ class UpdateL7PolicyResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateL7PolicyResponse.
+        r"""Sets the request_id of this UpdateL7PolicyResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -73,7 +73,7 @@ class UpdateL7PolicyResponse(SdkResponse):
 
     @property
     def l7policy(self):
-        """Gets the l7policy of this UpdateL7PolicyResponse.
+        r"""Gets the l7policy of this UpdateL7PolicyResponse.
 
         :return: The l7policy of this UpdateL7PolicyResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.L7Policy`
@@ -82,7 +82,7 @@ class UpdateL7PolicyResponse(SdkResponse):
 
     @l7policy.setter
     def l7policy(self, l7policy):
-        """Sets the l7policy of this UpdateL7PolicyResponse.
+        r"""Sets the l7policy of this UpdateL7PolicyResponse.
 
         :param l7policy: The l7policy of this UpdateL7PolicyResponse.
         :type l7policy: :class:`huaweicloudsdkelb.v3.L7Policy`

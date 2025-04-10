@@ -27,7 +27,7 @@ class CreateSlowLogDownloadRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """CreateSlowLogDownloadRequest
+        r"""CreateSlowLogDownloadRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSlowLogDownloadRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateSlowLogDownloadRequest.
+        r"""Gets the x_language of this CreateSlowLogDownloadRequest.
 
         语言
 
@@ -60,7 +60,7 @@ class CreateSlowLogDownloadRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateSlowLogDownloadRequest.
+        r"""Sets the x_language of this CreateSlowLogDownloadRequest.
 
         语言
 
@@ -71,7 +71,7 @@ class CreateSlowLogDownloadRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateSlowLogDownloadRequest.
+        r"""Gets the instance_id of this CreateSlowLogDownloadRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -82,7 +82,7 @@ class CreateSlowLogDownloadRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateSlowLogDownloadRequest.
+        r"""Sets the instance_id of this CreateSlowLogDownloadRequest.
 
         实例ID，严格匹配UUID规则。
 

@@ -26,7 +26,7 @@ class ListNotifiedHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, notified_histories=None):
-        """ListNotifiedHistoriesResponse
+        r"""ListNotifiedHistoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListNotifiedHistoriesResponse(SdkResponse):
 
     @property
     def notified_histories(self):
-        """Gets the notified_histories of this ListNotifiedHistoriesResponse.
+        r"""Gets the notified_histories of this ListNotifiedHistoriesResponse.
 
         通知历史列表。
 
@@ -55,7 +55,7 @@ class ListNotifiedHistoriesResponse(SdkResponse):
 
     @notified_histories.setter
     def notified_histories(self, notified_histories):
-        """Sets the notified_histories of this ListNotifiedHistoriesResponse.
+        r"""Sets the notified_histories of this ListNotifiedHistoriesResponse.
 
         通知历史列表。
 

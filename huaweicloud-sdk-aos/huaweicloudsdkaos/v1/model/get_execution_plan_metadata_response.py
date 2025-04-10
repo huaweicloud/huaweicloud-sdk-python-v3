@@ -50,7 +50,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
     }
 
     def __init__(self, stack_id=None, stack_name=None, execution_plan_id=None, execution_plan_name=None, description=None, vars_structure=None, vars_uri_content=None, vars_body=None, status=None, status_message=None, create_time=None, apply_time=None, summary=None):
-        """GetExecutionPlanMetadataResponse
+        r"""GetExecutionPlanMetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @property
     def stack_id(self):
-        """Gets the stack_id of this GetExecutionPlanMetadataResponse.
+        r"""Gets the stack_id of this GetExecutionPlanMetadataResponse.
 
         资源栈（stack）的唯一ID。  此ID由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给予的stack_id和当前资源栈的ID不一致，则返回400
 
@@ -137,7 +137,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @stack_id.setter
     def stack_id(self, stack_id):
-        """Sets the stack_id of this GetExecutionPlanMetadataResponse.
+        r"""Sets the stack_id of this GetExecutionPlanMetadataResponse.
 
         资源栈（stack）的唯一ID。  此ID由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给予的stack_id和当前资源栈的ID不一致，则返回400
 
@@ -148,7 +148,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @property
     def stack_name(self):
-        """Gets the stack_name of this GetExecutionPlanMetadataResponse.
+        r"""Gets the stack_name of this GetExecutionPlanMetadataResponse.
 
         资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -159,7 +159,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @stack_name.setter
     def stack_name(self, stack_name):
-        """Sets the stack_name of this GetExecutionPlanMetadataResponse.
+        r"""Sets the stack_name of this GetExecutionPlanMetadataResponse.
 
         资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -170,7 +170,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @property
     def execution_plan_id(self):
-        """Gets the execution_plan_id of this GetExecutionPlanMetadataResponse.
+        r"""Gets the execution_plan_id of this GetExecutionPlanMetadataResponse.
 
         执行计划（execution_plan）的唯一Id。  此Id由资源编排服务在生成执行计划的时候生成，为UUID。  由于执行计划名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的执行计划，删除，再重新创建一个同名执行计划。  对于团队并行开发，用户可能希望确保，当前我操作的执行计划就是我认为的那个，而不是其他队友删除后创建的同名执行计划。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的执行计划所对应的ID都不相同，更新不会影响ID。如果给予的execution_plan_id和当前执行计划的ID不一致，则返回400  **注意：** * 创建执行计划后，资源编排服务持久化请求并立即返回，客户端不等待请求最终处理完成，用户无法实时感知请求处理结果 * 资源编排服务最终会将异步部署请求排队，在服务端空闲的情况下逐个处理。用户最大等待时长为1小时
 
@@ -181,7 +181,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @execution_plan_id.setter
     def execution_plan_id(self, execution_plan_id):
-        """Sets the execution_plan_id of this GetExecutionPlanMetadataResponse.
+        r"""Sets the execution_plan_id of this GetExecutionPlanMetadataResponse.
 
         执行计划（execution_plan）的唯一Id。  此Id由资源编排服务在生成执行计划的时候生成，为UUID。  由于执行计划名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的执行计划，删除，再重新创建一个同名执行计划。  对于团队并行开发，用户可能希望确保，当前我操作的执行计划就是我认为的那个，而不是其他队友删除后创建的同名执行计划。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的执行计划所对应的ID都不相同，更新不会影响ID。如果给予的execution_plan_id和当前执行计划的ID不一致，则返回400  **注意：** * 创建执行计划后，资源编排服务持久化请求并立即返回，客户端不等待请求最终处理完成，用户无法实时感知请求处理结果 * 资源编排服务最终会将异步部署请求排队，在服务端空闲的情况下逐个处理。用户最大等待时长为1小时
 
@@ -192,7 +192,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @property
     def execution_plan_name(self):
-        """Gets the execution_plan_name of this GetExecutionPlanMetadataResponse.
+        r"""Gets the execution_plan_name of this GetExecutionPlanMetadataResponse.
 
         执行计划的名称。此名字在domain_id+区域+project_id+stack_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -203,7 +203,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @execution_plan_name.setter
     def execution_plan_name(self, execution_plan_name):
-        """Sets the execution_plan_name of this GetExecutionPlanMetadataResponse.
+        r"""Sets the execution_plan_name of this GetExecutionPlanMetadataResponse.
 
         执行计划的名称。此名字在domain_id+区域+project_id+stack_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -214,7 +214,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this GetExecutionPlanMetadataResponse.
+        r"""Gets the description of this GetExecutionPlanMetadataResponse.
 
         执行计划的描述。可用于客户识别自己的执行计划。
 
@@ -225,7 +225,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this GetExecutionPlanMetadataResponse.
+        r"""Sets the description of this GetExecutionPlanMetadataResponse.
 
         执行计划的描述。可用于客户识别自己的执行计划。
 
@@ -236,7 +236,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @property
     def vars_structure(self):
-        """Gets the vars_structure of this GetExecutionPlanMetadataResponse.
+        r"""Gets the vars_structure of this GetExecutionPlanMetadataResponse.
 
         HCL参数结构。HCL模板支持参数传入，即，同一个模板可以给予不同的参数而达到不同的效果。  * var_structure可以允许客户提交最简单的字符串类型的参数  * 资源编排服务支持vars_structure，vars_body和vars_uri，如果以上三种方式中声明了同一个变量，将报错400  * vars_structure中的值只支持简单的字符串类型，如果需要使用其他类型，需要用户自己在HCL引用时转换， 或者用户可以使用vars_uri、vars_body，vars_uri和vars_body中支持HCL支持的各种类型以及复杂结构  * 如果vars_structure过大，可以使用vars_uri  * 注意：vars_structure中默认不应该含有任何敏感信息，资源编排服务会直接明文使用、log、展示、存储对应的vars。如为敏感信息，建议设置encryption字段开启加密
 
@@ -247,7 +247,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @vars_structure.setter
     def vars_structure(self, vars_structure):
-        """Sets the vars_structure of this GetExecutionPlanMetadataResponse.
+        r"""Sets the vars_structure of this GetExecutionPlanMetadataResponse.
 
         HCL参数结构。HCL模板支持参数传入，即，同一个模板可以给予不同的参数而达到不同的效果。  * var_structure可以允许客户提交最简单的字符串类型的参数  * 资源编排服务支持vars_structure，vars_body和vars_uri，如果以上三种方式中声明了同一个变量，将报错400  * vars_structure中的值只支持简单的字符串类型，如果需要使用其他类型，需要用户自己在HCL引用时转换， 或者用户可以使用vars_uri、vars_body，vars_uri和vars_body中支持HCL支持的各种类型以及复杂结构  * 如果vars_structure过大，可以使用vars_uri  * 注意：vars_structure中默认不应该含有任何敏感信息，资源编排服务会直接明文使用、log、展示、存储对应的vars。如为敏感信息，建议设置encryption字段开启加密
 
@@ -258,7 +258,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @property
     def vars_uri_content(self):
-        """Gets the vars_uri_content of this GetExecutionPlanMetadataResponse.
+        r"""Gets the vars_uri_content of this GetExecutionPlanMetadataResponse.
 
         vars_uri对应的文件内容
 
@@ -269,7 +269,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @vars_uri_content.setter
     def vars_uri_content(self, vars_uri_content):
-        """Sets the vars_uri_content of this GetExecutionPlanMetadataResponse.
+        r"""Sets the vars_uri_content of this GetExecutionPlanMetadataResponse.
 
         vars_uri对应的文件内容
 
@@ -280,7 +280,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @property
     def vars_body(self):
-        """Gets the vars_body of this GetExecutionPlanMetadataResponse.
+        r"""Gets the vars_body of this GetExecutionPlanMetadataResponse.
 
         HCL参数文件的内容。HCL模板支持参数传入，即，同一个模板可以给予不同的参数而达到不同的效果。  * vars_body使用HCL的tfvars格式，用户可以将“.tfvars”中的内容提交到vars_body中  * 资源编排服务支持vars_body和vars_uri，如果以上两种方式中声明了同一个变量，将报错400  * 如果vars_body过大，可以使用vars_uri  * 资源栈集不支持敏感数据加密，资源编排服务会直接明文使用、log、展示、存储对应的vars_body。
 
@@ -291,7 +291,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @vars_body.setter
     def vars_body(self, vars_body):
-        """Sets the vars_body of this GetExecutionPlanMetadataResponse.
+        r"""Sets the vars_body of this GetExecutionPlanMetadataResponse.
 
         HCL参数文件的内容。HCL模板支持参数传入，即，同一个模板可以给予不同的参数而达到不同的效果。  * vars_body使用HCL的tfvars格式，用户可以将“.tfvars”中的内容提交到vars_body中  * 资源编排服务支持vars_body和vars_uri，如果以上两种方式中声明了同一个变量，将报错400  * 如果vars_body过大，可以使用vars_uri  * 资源栈集不支持敏感数据加密，资源编排服务会直接明文使用、log、展示、存储对应的vars_body。
 
@@ -302,7 +302,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this GetExecutionPlanMetadataResponse.
+        r"""Gets the status of this GetExecutionPlanMetadataResponse.
 
         执行计划的状态    * `CREATION_IN_PROGRESS` - 正在创建，请等待    * `CREATION_FAILED` - 创建失败，请从status_message获取错误信息汇总    * `AVAILABLE` - 创建完成，可以调用ApplyExecutionPlan API进行执行    * `APPLY_IN_PROGRESS` - 执行中，可通过GetStackMetadata查询资源栈状态，通过ListStackEvents获取执行过程中产生的资源栈事件    * `APPLIED` - 已执行
 
@@ -313,7 +313,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetExecutionPlanMetadataResponse.
+        r"""Sets the status of this GetExecutionPlanMetadataResponse.
 
         执行计划的状态    * `CREATION_IN_PROGRESS` - 正在创建，请等待    * `CREATION_FAILED` - 创建失败，请从status_message获取错误信息汇总    * `AVAILABLE` - 创建完成，可以调用ApplyExecutionPlan API进行执行    * `APPLY_IN_PROGRESS` - 执行中，可通过GetStackMetadata查询资源栈状态，通过ListStackEvents获取执行过程中产生的资源栈事件    * `APPLIED` - 已执行
 
@@ -324,7 +324,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @property
     def status_message(self):
-        """Gets the status_message of this GetExecutionPlanMetadataResponse.
+        r"""Gets the status_message of this GetExecutionPlanMetadataResponse.
 
         当执行计划的状态为创建失败状态（即为 `CREATION_FAILED` 时），将会展示简要的错误信息总结以供debug
 
@@ -335,7 +335,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @status_message.setter
     def status_message(self, status_message):
-        """Sets the status_message of this GetExecutionPlanMetadataResponse.
+        r"""Sets the status_message of this GetExecutionPlanMetadataResponse.
 
         当执行计划的状态为创建失败状态（即为 `CREATION_FAILED` 时），将会展示简要的错误信息总结以供debug
 
@@ -346,7 +346,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this GetExecutionPlanMetadataResponse.
+        r"""Gets the create_time of this GetExecutionPlanMetadataResponse.
 
         执行计划的生成时间 格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -357,7 +357,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this GetExecutionPlanMetadataResponse.
+        r"""Sets the create_time of this GetExecutionPlanMetadataResponse.
 
         执行计划的生成时间 格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -368,7 +368,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @property
     def apply_time(self):
-        """Gets the apply_time of this GetExecutionPlanMetadataResponse.
+        r"""Gets the apply_time of this GetExecutionPlanMetadataResponse.
 
         执行计划的执行时间 格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -379,7 +379,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @apply_time.setter
     def apply_time(self, apply_time):
-        """Sets the apply_time of this GetExecutionPlanMetadataResponse.
+        r"""Sets the apply_time of this GetExecutionPlanMetadataResponse.
 
         执行计划的执行时间 格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -390,7 +390,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @property
     def summary(self):
-        """Gets the summary of this GetExecutionPlanMetadataResponse.
+        r"""Gets the summary of this GetExecutionPlanMetadataResponse.
 
         :return: The summary of this GetExecutionPlanMetadataResponse.
         :rtype: :class:`huaweicloudsdkaos.v1.ExecutionPlanSummary`
@@ -399,7 +399,7 @@ class GetExecutionPlanMetadataResponse(SdkResponse):
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this GetExecutionPlanMetadataResponse.
+        r"""Sets the summary of this GetExecutionPlanMetadataResponse.
 
         :param summary: The summary of this GetExecutionPlanMetadataResponse.
         :type summary: :class:`huaweicloudsdkaos.v1.ExecutionPlanSummary`

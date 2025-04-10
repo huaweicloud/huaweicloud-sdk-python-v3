@@ -27,7 +27,7 @@ class ShowDDosStatusRequest:
     }
 
     def __init__(self, floating_ip_id=None, ip=None):
-        """ShowDDosStatusRequest
+        r"""ShowDDosStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowDDosStatusRequest:
 
     @property
     def floating_ip_id(self):
-        """Gets the floating_ip_id of this ShowDDosStatusRequest.
+        r"""Gets the floating_ip_id of this ShowDDosStatusRequest.
 
         用户EIP对应的ID
 
@@ -60,7 +60,7 @@ class ShowDDosStatusRequest:
 
     @floating_ip_id.setter
     def floating_ip_id(self, floating_ip_id):
-        """Sets the floating_ip_id of this ShowDDosStatusRequest.
+        r"""Sets the floating_ip_id of this ShowDDosStatusRequest.
 
         用户EIP对应的ID
 
@@ -71,7 +71,7 @@ class ShowDDosStatusRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ShowDDosStatusRequest.
+        r"""Gets the ip of this ShowDDosStatusRequest.
 
         用户EIP
 
@@ -82,7 +82,7 @@ class ShowDDosStatusRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ShowDDosStatusRequest.
+        r"""Sets the ip of this ShowDDosStatusRequest.
 
         用户EIP
 

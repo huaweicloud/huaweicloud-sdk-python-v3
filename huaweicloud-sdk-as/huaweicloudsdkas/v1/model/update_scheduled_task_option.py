@@ -29,7 +29,7 @@ class UpdateScheduledTaskOption:
     }
 
     def __init__(self, name=None, scheduled_policy=None, instance_number=None):
-        """UpdateScheduledTaskOption
+        r"""UpdateScheduledTaskOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateScheduledTaskOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateScheduledTaskOption.
+        r"""Gets the name of this UpdateScheduledTaskOption.
 
         计划任务名称
 
@@ -68,7 +68,7 @@ class UpdateScheduledTaskOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateScheduledTaskOption.
+        r"""Sets the name of this UpdateScheduledTaskOption.
 
         计划任务名称
 
@@ -79,7 +79,7 @@ class UpdateScheduledTaskOption:
 
     @property
     def scheduled_policy(self):
-        """Gets the scheduled_policy of this UpdateScheduledTaskOption.
+        r"""Gets the scheduled_policy of this UpdateScheduledTaskOption.
 
         :return: The scheduled_policy of this UpdateScheduledTaskOption.
         :rtype: :class:`huaweicloudsdkas.v1.ScheduledTaskPolicy`
@@ -88,7 +88,7 @@ class UpdateScheduledTaskOption:
 
     @scheduled_policy.setter
     def scheduled_policy(self, scheduled_policy):
-        """Sets the scheduled_policy of this UpdateScheduledTaskOption.
+        r"""Sets the scheduled_policy of this UpdateScheduledTaskOption.
 
         :param scheduled_policy: The scheduled_policy of this UpdateScheduledTaskOption.
         :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledTaskPolicy`
@@ -97,7 +97,7 @@ class UpdateScheduledTaskOption:
 
     @property
     def instance_number(self):
-        """Gets the instance_number of this UpdateScheduledTaskOption.
+        r"""Gets the instance_number of this UpdateScheduledTaskOption.
 
         :return: The instance_number of this UpdateScheduledTaskOption.
         :rtype: :class:`huaweicloudsdkas.v1.IntegerRange`
@@ -106,7 +106,7 @@ class UpdateScheduledTaskOption:
 
     @instance_number.setter
     def instance_number(self, instance_number):
-        """Sets the instance_number of this UpdateScheduledTaskOption.
+        r"""Sets the instance_number of this UpdateScheduledTaskOption.
 
         :param instance_number: The instance_number of this UpdateScheduledTaskOption.
         :type instance_number: :class:`huaweicloudsdkas.v1.IntegerRange`

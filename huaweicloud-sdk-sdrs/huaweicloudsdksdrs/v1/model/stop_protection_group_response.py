@@ -26,7 +26,7 @@ class StopProtectionGroupResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """StopProtectionGroupResponse
+        r"""StopProtectionGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopProtectionGroupResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this StopProtectionGroupResponse.
+        r"""Gets the job_id of this StopProtectionGroupResponse.
 
         成功返回jobId信息
 
@@ -55,7 +55,7 @@ class StopProtectionGroupResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StopProtectionGroupResponse.
+        r"""Sets the job_id of this StopProtectionGroupResponse.
 
         成功返回jobId信息
 

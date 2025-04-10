@@ -23,7 +23,7 @@ class Description:
     }
 
     def __init__(self):
-        """Description
+        r"""Description
 
         The model defined in huaweicloud sdk
 

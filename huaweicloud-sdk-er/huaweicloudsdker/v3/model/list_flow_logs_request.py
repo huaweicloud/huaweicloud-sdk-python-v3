@@ -37,7 +37,7 @@ class ListFlowLogsRequest:
     }
 
     def __init__(self, er_id=None, resource_type=None, resource_id=None, limit=None, marker=None, sort_key=None, sort_dir=None):
-        """ListFlowLogsRequest
+        r"""ListFlowLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListFlowLogsRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this ListFlowLogsRequest.
+        r"""Gets the er_id of this ListFlowLogsRequest.
 
         企业路由器实例ID
 
@@ -95,7 +95,7 @@ class ListFlowLogsRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this ListFlowLogsRequest.
+        r"""Sets the er_id of this ListFlowLogsRequest.
 
         企业路由器实例ID
 
@@ -106,7 +106,7 @@ class ListFlowLogsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListFlowLogsRequest.
+        r"""Gets the resource_type of this ListFlowLogsRequest.
 
         采集的资源类型
 
@@ -117,7 +117,7 @@ class ListFlowLogsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListFlowLogsRequest.
+        r"""Sets the resource_type of this ListFlowLogsRequest.
 
         采集的资源类型
 
@@ -128,7 +128,7 @@ class ListFlowLogsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListFlowLogsRequest.
+        r"""Gets the resource_id of this ListFlowLogsRequest.
 
         连接对应的资源ID列表
 
@@ -139,7 +139,7 @@ class ListFlowLogsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListFlowLogsRequest.
+        r"""Sets the resource_id of this ListFlowLogsRequest.
 
         连接对应的资源ID列表
 
@@ -150,7 +150,7 @@ class ListFlowLogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFlowLogsRequest.
+        r"""Gets the limit of this ListFlowLogsRequest.
 
         每页返回的个数。 取值范围：0~2000。
 
@@ -161,7 +161,7 @@ class ListFlowLogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFlowLogsRequest.
+        r"""Sets the limit of this ListFlowLogsRequest.
 
         每页返回的个数。 取值范围：0~2000。
 
@@ -172,7 +172,7 @@ class ListFlowLogsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListFlowLogsRequest.
+        r"""Gets the marker of this ListFlowLogsRequest.
 
         上一页最后一条记录的企业路由器实例的id，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -183,7 +183,7 @@ class ListFlowLogsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListFlowLogsRequest.
+        r"""Sets the marker of this ListFlowLogsRequest.
 
         上一页最后一条记录的企业路由器实例的id，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -194,7 +194,7 @@ class ListFlowLogsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListFlowLogsRequest.
+        r"""Gets the sort_key of this ListFlowLogsRequest.
 
         按关键字排序，默认按照id排序，可选值:id|name|state
 
@@ -205,7 +205,7 @@ class ListFlowLogsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListFlowLogsRequest.
+        r"""Sets the sort_key of this ListFlowLogsRequest.
 
         按关键字排序，默认按照id排序，可选值:id|name|state
 
@@ -216,7 +216,7 @@ class ListFlowLogsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListFlowLogsRequest.
+        r"""Gets the sort_dir of this ListFlowLogsRequest.
 
         返回结果按照升序或降序排列，默认为asc,降序为desc
 
@@ -227,7 +227,7 @@ class ListFlowLogsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListFlowLogsRequest.
+        r"""Sets the sort_dir of this ListFlowLogsRequest.
 
         返回结果按照升序或降序排列，默认为asc,降序为desc
 

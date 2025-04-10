@@ -31,7 +31,7 @@ class Cost:
     }
 
     def __init__(self, time_dimension_value=None, time_measure_id=None, amount=None, official_amount=None):
-        """Cost
+        r"""Cost
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Cost:
 
     @property
     def time_dimension_value(self):
-        """Gets the time_dimension_value of this Cost.
+        r"""Gets the time_dimension_value of this Cost.
 
         时间维度值。 如按天维度，该值为yyyy-mm-dd如按月维度，该值为yyyy-mm
 
@@ -75,7 +75,7 @@ class Cost:
 
     @time_dimension_value.setter
     def time_dimension_value(self, time_dimension_value):
-        """Sets the time_dimension_value of this Cost.
+        r"""Sets the time_dimension_value of this Cost.
 
         时间维度值。 如按天维度，该值为yyyy-mm-dd如按月维度，该值为yyyy-mm
 
@@ -86,7 +86,7 @@ class Cost:
 
     @property
     def time_measure_id(self):
-        """Gets the time_measure_id of this Cost.
+        r"""Gets the time_measure_id of this Cost.
 
         时间单位。 1：天2：月
 
@@ -97,7 +97,7 @@ class Cost:
 
     @time_measure_id.setter
     def time_measure_id(self, time_measure_id):
-        """Sets the time_measure_id of this Cost.
+        r"""Sets the time_measure_id of this Cost.
 
         时间单位。 1：天2：月
 
@@ -108,7 +108,7 @@ class Cost:
 
     @property
     def amount(self):
-        """Gets the amount of this Cost.
+        r"""Gets the amount of this Cost.
 
         应付或实付的成本金额或均摊金额，具体取决于请求参数。
 
@@ -119,7 +119,7 @@ class Cost:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this Cost.
+        r"""Sets the amount of this Cost.
 
         应付或实付的成本金额或均摊金额，具体取决于请求参数。
 
@@ -130,7 +130,7 @@ class Cost:
 
     @property
     def official_amount(self):
-        """Gets the official_amount of this Cost.
+        r"""Gets the official_amount of this Cost.
 
         官网价金额。
 
@@ -141,7 +141,7 @@ class Cost:
 
     @official_amount.setter
     def official_amount(self, official_amount):
-        """Sets the official_amount of this Cost.
+        r"""Sets the official_amount of this Cost.
 
         官网价金额。
 

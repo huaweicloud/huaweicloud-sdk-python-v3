@@ -26,7 +26,7 @@ class CreateRecordingRuleResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateRecordingRuleResponse
+        r"""CreateRecordingRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateRecordingRuleResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateRecordingRuleResponse.
+        r"""Gets the body of this CreateRecordingRuleResponse.
 
         :return: The body of this CreateRecordingRuleResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CreateRecordingRuleResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRecordingRuleResponse.
+        r"""Sets the body of this CreateRecordingRuleResponse.
 
         :param body: The body of this CreateRecordingRuleResponse.
         :type body: str

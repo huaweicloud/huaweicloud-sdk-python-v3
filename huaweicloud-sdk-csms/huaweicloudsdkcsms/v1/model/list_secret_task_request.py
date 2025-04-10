@@ -33,7 +33,7 @@ class ListSecretTaskRequest:
     }
 
     def __init__(self, secret_name=None, status=None, task_id=None, limit=None, marker=None):
-        """ListSecretTaskRequest
+        r"""ListSecretTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListSecretTaskRequest:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this ListSecretTaskRequest.
+        r"""Gets the secret_name of this ListSecretTaskRequest.
 
         凭据的名称。
 
@@ -82,7 +82,7 @@ class ListSecretTaskRequest:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this ListSecretTaskRequest.
+        r"""Sets the secret_name of this ListSecretTaskRequest.
 
         凭据的名称。
 
@@ -93,7 +93,7 @@ class ListSecretTaskRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListSecretTaskRequest.
+        r"""Gets the status of this ListSecretTaskRequest.
 
         任务状态。取值 ：  - SUCCESS ：任务轮转成功。 - FAILED ：任务轮转失败。
 
@@ -104,7 +104,7 @@ class ListSecretTaskRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSecretTaskRequest.
+        r"""Sets the status of this ListSecretTaskRequest.
 
         任务状态。取值 ：  - SUCCESS ：任务轮转成功。 - FAILED ：任务轮转失败。
 
@@ -115,7 +115,7 @@ class ListSecretTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListSecretTaskRequest.
+        r"""Gets the task_id of this ListSecretTaskRequest.
 
         任务ID。 该参数与其他参数不能同时存在。
 
@@ -126,7 +126,7 @@ class ListSecretTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListSecretTaskRequest.
+        r"""Sets the task_id of this ListSecretTaskRequest.
 
         任务ID。 该参数与其他参数不能同时存在。
 
@@ -137,7 +137,7 @@ class ListSecretTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecretTaskRequest.
+        r"""Gets the limit of this ListSecretTaskRequest.
 
         每页返回的个数。 默认值：50。
 
@@ -148,7 +148,7 @@ class ListSecretTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecretTaskRequest.
+        r"""Sets the limit of this ListSecretTaskRequest.
 
         每页返回的个数。 默认值：50。
 
@@ -159,7 +159,7 @@ class ListSecretTaskRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSecretTaskRequest.
+        r"""Gets the marker of this ListSecretTaskRequest.
 
         分页查询起始的任务ID，为空时为查询第一页。
 
@@ -170,7 +170,7 @@ class ListSecretTaskRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSecretTaskRequest.
+        r"""Sets the marker of this ListSecretTaskRequest.
 
         分页查询起始的任务ID，为空时为查询第一页。
 

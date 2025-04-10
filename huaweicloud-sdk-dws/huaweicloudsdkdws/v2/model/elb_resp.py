@@ -35,7 +35,7 @@ class ElbResp:
     }
 
     def __init__(self, public_ip=None, private_ip=None, private_endpoint=None, name=None, id=None, vpc_id=None):
-        """ElbResp
+        r"""ElbResp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ElbResp:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ElbResp.
+        r"""Gets the public_ip of this ElbResp.
 
         公网ip
 
@@ -89,7 +89,7 @@ class ElbResp:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ElbResp.
+        r"""Sets the public_ip of this ElbResp.
 
         公网ip
 
@@ -100,7 +100,7 @@ class ElbResp:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ElbResp.
+        r"""Gets the private_ip of this ElbResp.
 
         内网ip
 
@@ -111,7 +111,7 @@ class ElbResp:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ElbResp.
+        r"""Sets the private_ip of this ElbResp.
 
         内网ip
 
@@ -122,7 +122,7 @@ class ElbResp:
 
     @property
     def private_endpoint(self):
-        """Gets the private_endpoint of this ElbResp.
+        r"""Gets the private_endpoint of this ElbResp.
 
         Elb终端地址
 
@@ -133,7 +133,7 @@ class ElbResp:
 
     @private_endpoint.setter
     def private_endpoint(self, private_endpoint):
-        """Sets the private_endpoint of this ElbResp.
+        r"""Sets the private_endpoint of this ElbResp.
 
         Elb终端地址
 
@@ -144,7 +144,7 @@ class ElbResp:
 
     @property
     def name(self):
-        """Gets the name of this ElbResp.
+        r"""Gets the name of this ElbResp.
 
         Elb名称
 
@@ -155,7 +155,7 @@ class ElbResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ElbResp.
+        r"""Sets the name of this ElbResp.
 
         Elb名称
 
@@ -166,7 +166,7 @@ class ElbResp:
 
     @property
     def id(self):
-        """Gets the id of this ElbResp.
+        r"""Gets the id of this ElbResp.
 
         Elb的ID
 
@@ -177,7 +177,7 @@ class ElbResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ElbResp.
+        r"""Sets the id of this ElbResp.
 
         Elb的ID
 
@@ -188,7 +188,7 @@ class ElbResp:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ElbResp.
+        r"""Gets the vpc_id of this ElbResp.
 
         Elb所属VPC的ID
 
@@ -199,7 +199,7 @@ class ElbResp:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ElbResp.
+        r"""Sets the vpc_id of this ElbResp.
 
         Elb所属VPC的ID
 

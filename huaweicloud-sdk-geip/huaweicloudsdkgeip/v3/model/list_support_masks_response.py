@@ -32,7 +32,7 @@ class ListSupportMasksResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, support_masks=None, page_info=None, x_request_id=None):
-        """ListSupportMasksResponse
+        r"""ListSupportMasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListSupportMasksResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListSupportMasksResponse.
+        r"""Gets the request_id of this ListSupportMasksResponse.
 
         本次请求的编号
 
@@ -76,7 +76,7 @@ class ListSupportMasksResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListSupportMasksResponse.
+        r"""Sets the request_id of this ListSupportMasksResponse.
 
         本次请求的编号
 
@@ -87,7 +87,7 @@ class ListSupportMasksResponse(SdkResponse):
 
     @property
     def support_masks(self):
-        """Gets the support_masks of this ListSupportMasksResponse.
+        r"""Gets the support_masks of this ListSupportMasksResponse.
 
         支持全域弹性公网IP段的掩码范围列表
 
@@ -98,7 +98,7 @@ class ListSupportMasksResponse(SdkResponse):
 
     @support_masks.setter
     def support_masks(self, support_masks):
-        """Sets the support_masks of this ListSupportMasksResponse.
+        r"""Sets the support_masks of this ListSupportMasksResponse.
 
         支持全域弹性公网IP段的掩码范围列表
 
@@ -109,7 +109,7 @@ class ListSupportMasksResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListSupportMasksResponse.
+        r"""Gets the page_info of this ListSupportMasksResponse.
 
         :return: The page_info of this ListSupportMasksResponse.
         :rtype: :class:`huaweicloudsdkgeip.v3.ListGlobalEipsResponseBodyPageInfo`
@@ -118,7 +118,7 @@ class ListSupportMasksResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListSupportMasksResponse.
+        r"""Sets the page_info of this ListSupportMasksResponse.
 
         :param page_info: The page_info of this ListSupportMasksResponse.
         :type page_info: :class:`huaweicloudsdkgeip.v3.ListGlobalEipsResponseBodyPageInfo`
@@ -127,7 +127,7 @@ class ListSupportMasksResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListSupportMasksResponse.
+        r"""Gets the x_request_id of this ListSupportMasksResponse.
 
         :return: The x_request_id of this ListSupportMasksResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class ListSupportMasksResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListSupportMasksResponse.
+        r"""Sets the x_request_id of this ListSupportMasksResponse.
 
         :param x_request_id: The x_request_id of this ListSupportMasksResponse.
         :type x_request_id: str

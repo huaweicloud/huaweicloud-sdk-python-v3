@@ -29,7 +29,7 @@ class ShowDataProcessingRulesResultRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, query_id=None):
-        """ShowDataProcessingRulesResultRequest
+        r"""ShowDataProcessingRulesResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowDataProcessingRulesResultRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowDataProcessingRulesResultRequest.
+        r"""Gets the job_id of this ShowDataProcessingRulesResultRequest.
 
         任务ID。
 
@@ -66,7 +66,7 @@ class ShowDataProcessingRulesResultRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowDataProcessingRulesResultRequest.
+        r"""Sets the job_id of this ShowDataProcessingRulesResultRequest.
 
         任务ID。
 
@@ -77,7 +77,7 @@ class ShowDataProcessingRulesResultRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowDataProcessingRulesResultRequest.
+        r"""Gets the x_language of this ShowDataProcessingRulesResultRequest.
 
         请求语言类型。
 
@@ -88,7 +88,7 @@ class ShowDataProcessingRulesResultRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowDataProcessingRulesResultRequest.
+        r"""Sets the x_language of this ShowDataProcessingRulesResultRequest.
 
         请求语言类型。
 
@@ -99,7 +99,7 @@ class ShowDataProcessingRulesResultRequest:
 
     @property
     def query_id(self):
-        """Gets the query_id of this ShowDataProcessingRulesResultRequest.
+        r"""Gets the query_id of this ShowDataProcessingRulesResultRequest.
 
         更新数据加工规则ID。
 
@@ -110,7 +110,7 @@ class ShowDataProcessingRulesResultRequest:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this ShowDataProcessingRulesResultRequest.
+        r"""Sets the query_id of this ShowDataProcessingRulesResultRequest.
 
         更新数据加工规则ID。
 

@@ -29,7 +29,7 @@ class Agency:
     }
 
     def __init__(self, provider_name=None, agency_name=None, agency_urn=None):
-        """Agency
+        r"""Agency
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class Agency:
 
     @property
     def provider_name(self):
-        """Gets the provider_name of this Agency.
+        r"""Gets the provider_name of this Agency.
 
         用户使用的provider的名字。如果用户给予的provider_name含有重复的值，则返回400
 
@@ -67,7 +67,7 @@ class Agency:
 
     @provider_name.setter
     def provider_name(self, provider_name):
-        """Sets the provider_name of this Agency.
+        r"""Sets the provider_name of this Agency.
 
         用户使用的provider的名字。如果用户给予的provider_name含有重复的值，则返回400
 
@@ -78,7 +78,7 @@ class Agency:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this Agency.
+        r"""Gets the agency_name of this Agency.
 
         对应provider所使用的IAM委托名称，资源编排服务会使用此委托的权限去访问、创建对应provider的资源。agency_name和agency_urn必须有且只有一个存在
 
@@ -89,7 +89,7 @@ class Agency:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this Agency.
+        r"""Sets the agency_name of this Agency.
 
         对应provider所使用的IAM委托名称，资源编排服务会使用此委托的权限去访问、创建对应provider的资源。agency_name和agency_urn必须有且只有一个存在
 
@@ -100,7 +100,7 @@ class Agency:
 
     @property
     def agency_urn(self):
-        """Gets the agency_urn of this Agency.
+        r"""Gets the agency_urn of this Agency.
 
         委托URN  当用户定义Agency时，agency_name和agency_urn 必须有且只有一个存在。  推荐用户在使用信任委托时给予agency_urn，agency_name只支持接收普通委托名称，如果给予了信任委托名称，则会在部署模板时失败。
 
@@ -111,7 +111,7 @@ class Agency:
 
     @agency_urn.setter
     def agency_urn(self, agency_urn):
-        """Sets the agency_urn of this Agency.
+        r"""Sets the agency_urn of this Agency.
 
         委托URN  当用户定义Agency时，agency_name和agency_urn 必须有且只有一个存在。  推荐用户在使用信任委托时给予agency_urn，agency_name只支持接收普通委托名称，如果给予了信任委托名称，则会在部署模板时失败。
 

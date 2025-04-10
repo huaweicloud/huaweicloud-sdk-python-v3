@@ -47,7 +47,7 @@ class SearchParam:
     }
 
     def __init__(self, search_type=None, limit=None, offset=None, last_item=None, min_score=None, custom_tags=None, custom_num_tags=None, image_base64=None, image_url=None, keywords=None, text=None, optional_params=None):
-        """SearchParam
+        r"""SearchParam
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class SearchParam:
 
     @property
     def search_type(self):
-        """Gets the search_type of this SearchParam.
+        r"""Gets the search_type of this SearchParam.
 
         搜索类型，必须为服务实例支持的搜索类型。服务实例的搜索类型列表可在创建服务实例时进行配置。 > 可以使用枚举名或者枚举值（例如IMAGE/0），枚举值可能会变动，建议使用枚举名。
 
@@ -130,7 +130,7 @@ class SearchParam:
 
     @search_type.setter
     def search_type(self, search_type):
-        """Sets the search_type of this SearchParam.
+        r"""Sets the search_type of this SearchParam.
 
         搜索类型，必须为服务实例支持的搜索类型。服务实例的搜索类型列表可在创建服务实例时进行配置。 > 可以使用枚举名或者枚举值（例如IMAGE/0），枚举值可能会变动，建议使用枚举名。
 
@@ -141,7 +141,7 @@ class SearchParam:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchParam.
+        r"""Gets the limit of this SearchParam.
 
         返回搜索结果的数量，默认为10，取值范围为[1, 1000]。
 
@@ -152,7 +152,7 @@ class SearchParam:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchParam.
+        r"""Sets the limit of this SearchParam.
 
         返回搜索结果的数量，默认为10，取值范围为[1, 1000]。
 
@@ -163,7 +163,7 @@ class SearchParam:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchParam.
+        r"""Gets the offset of this SearchParam.
 
         返回搜索结果的偏移量，即返回序号在[offset, offset+limit]内的搜索结果。默认为0，取值范围为[0, N]。 - 默认情况下，搜索要求offset+limit <= 1000。 - 针对支持全量召回的场景，使用全量召回时，要求offset必须为0。
 
@@ -174,7 +174,7 @@ class SearchParam:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchParam.
+        r"""Sets the offset of this SearchParam.
 
         返回搜索结果的偏移量，即返回序号在[offset, offset+limit]内的搜索结果。默认为0，取值范围为[0, N]。 - 默认情况下，搜索要求offset+limit <= 1000。 - 针对支持全量召回的场景，使用全量召回时，要求offset必须为0。
 
@@ -185,7 +185,7 @@ class SearchParam:
 
     @property
     def last_item(self):
-        """Gets the last_item of this SearchParam.
+        r"""Gets the last_item of this SearchParam.
 
         :return: The last_item of this SearchParam.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.SearchAfterParam`
@@ -194,7 +194,7 @@ class SearchParam:
 
     @last_item.setter
     def last_item(self, last_item):
-        """Sets the last_item of this SearchParam.
+        r"""Sets the last_item of this SearchParam.
 
         :param last_item: The last_item of this SearchParam.
         :type last_item: :class:`huaweicloudsdkimagesearch.v2.SearchAfterParam`
@@ -203,7 +203,7 @@ class SearchParam:
 
     @property
     def min_score(self):
-        """Gets the min_score of this SearchParam.
+        r"""Gets the min_score of this SearchParam.
 
         返回搜索结果的最小得分，用于对搜索结果进行score过滤，取值范围为[0, 1]。 - 目前仅对IMAGE/CATEGORY搜索类型生效。
 
@@ -214,7 +214,7 @@ class SearchParam:
 
     @min_score.setter
     def min_score(self, min_score):
-        """Sets the min_score of this SearchParam.
+        r"""Sets the min_score of this SearchParam.
 
         返回搜索结果的最小得分，用于对搜索结果进行score过滤，取值范围为[0, 1]。 - 目前仅对IMAGE/CATEGORY搜索类型生效。
 
@@ -225,7 +225,7 @@ class SearchParam:
 
     @property
     def custom_tags(self):
-        """Gets the custom_tags of this SearchParam.
+        r"""Gets the custom_tags of this SearchParam.
 
         自定义字符标签，用于对搜索结果进行条件过滤。格式为键值对{key:value}。 - key: 必须为服务实例custom_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。 - value: 标签值列表，列表内多个标签值为“或”关系，即满足一个即可。列表长度范围为[1, 32]，标签值类型为字符串，字符长度范围为[1, 64]。
 
@@ -236,7 +236,7 @@ class SearchParam:
 
     @custom_tags.setter
     def custom_tags(self, custom_tags):
-        """Sets the custom_tags of this SearchParam.
+        r"""Sets the custom_tags of this SearchParam.
 
         自定义字符标签，用于对搜索结果进行条件过滤。格式为键值对{key:value}。 - key: 必须为服务实例custom_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。 - value: 标签值列表，列表内多个标签值为“或”关系，即满足一个即可。列表长度范围为[1, 32]，标签值类型为字符串，字符长度范围为[1, 64]。
 
@@ -247,7 +247,7 @@ class SearchParam:
 
     @property
     def custom_num_tags(self):
-        """Gets the custom_num_tags of this SearchParam.
+        r"""Gets the custom_num_tags of this SearchParam.
 
         自定义数值标签，用于对搜索结果进行条件过滤。格式为键值对{key:value}。 - key: 必须为服务实例custom_num_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。针对没有设置该数值标签的数据，会直接过滤。 - value: 标签值的取值范围，标签值在给定的取值范围内即视为符合条件。
 
@@ -258,7 +258,7 @@ class SearchParam:
 
     @custom_num_tags.setter
     def custom_num_tags(self, custom_num_tags):
-        """Sets the custom_num_tags of this SearchParam.
+        r"""Sets the custom_num_tags of this SearchParam.
 
         自定义数值标签，用于对搜索结果进行条件过滤。格式为键值对{key:value}。 - key: 必须为服务实例custom_num_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。针对没有设置该数值标签的数据，会直接过滤。 - value: 标签值的取值范围，标签值在给定的取值范围内即视为符合条件。
 
@@ -269,7 +269,7 @@ class SearchParam:
 
     @property
     def image_base64(self):
-        """Gets the image_base64 of this SearchParam.
+        r"""Gets the image_base64 of this SearchParam.
 
         图像文件的base64字符串，基于图像搜索时，与image_url二选一。要求如下： - 格式：目前仅支持JPEG/JPG/PNG/BMP/WEBP格式的图像。 - 大小：图像文件大小要求不超过5M。 - 尺寸：默认情况下，要求图像的最短边大于64px，最长边小于4096px。部分服务类型有特殊要求，可参见服务类型说明。 - 其他：图片中不能包含旋转信息。
 
@@ -280,7 +280,7 @@ class SearchParam:
 
     @image_base64.setter
     def image_base64(self, image_base64):
-        """Sets the image_base64 of this SearchParam.
+        r"""Sets the image_base64 of this SearchParam.
 
         图像文件的base64字符串，基于图像搜索时，与image_url二选一。要求如下： - 格式：目前仅支持JPEG/JPG/PNG/BMP/WEBP格式的图像。 - 大小：图像文件大小要求不超过5M。 - 尺寸：默认情况下，要求图像的最短边大于64px，最长边小于4096px。部分服务类型有特殊要求，可参见服务类型说明。 - 其他：图片中不能包含旋转信息。
 
@@ -291,7 +291,7 @@ class SearchParam:
 
     @property
     def image_url(self):
-        """Gets the image_url of this SearchParam.
+        r"""Gets the image_url of this SearchParam.
 
         图像文件的服务可访问URL，字符长度范围为[1, 4096]。基于图像搜索时，与image_base64二选一。
 
@@ -302,7 +302,7 @@ class SearchParam:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this SearchParam.
+        r"""Sets the image_url of this SearchParam.
 
         图像文件的服务可访问URL，字符长度范围为[1, 4096]。基于图像搜索时，与image_base64二选一。
 
@@ -313,7 +313,7 @@ class SearchParam:
 
     @property
     def keywords(self):
-        """Gets the keywords of this SearchParam.
+        r"""Gets the keywords of this SearchParam.
 
         关键词列表，搜索时关键词数量范围为[1, 10]，关键词字符长度范围为[1, 64]。使用KEYWORD搜索类型进行搜索时，必须提供该参数。
 
@@ -324,7 +324,7 @@ class SearchParam:
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this SearchParam.
+        r"""Sets the keywords of this SearchParam.
 
         关键词列表，搜索时关键词数量范围为[1, 10]，关键词字符长度范围为[1, 64]。使用KEYWORD搜索类型进行搜索时，必须提供该参数。
 
@@ -335,7 +335,7 @@ class SearchParam:
 
     @property
     def text(self):
-        """Gets the text of this SearchParam.
+        r"""Gets the text of this SearchParam.
 
         文本字符串，字符长度范围为[1, 512]。
 
@@ -346,7 +346,7 @@ class SearchParam:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this SearchParam.
+        r"""Sets the text of this SearchParam.
 
         文本字符串，字符长度范围为[1, 512]。
 
@@ -357,7 +357,7 @@ class SearchParam:
 
     @property
     def optional_params(self):
-        """Gets the optional_params of this SearchParam.
+        r"""Gets the optional_params of this SearchParam.
 
         :return: The optional_params of this SearchParam.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.SearchOptionalParam`
@@ -366,7 +366,7 @@ class SearchParam:
 
     @optional_params.setter
     def optional_params(self, optional_params):
-        """Sets the optional_params of this SearchParam.
+        r"""Sets the optional_params of this SearchParam.
 
         :param optional_params: The optional_params of this SearchParam.
         :type optional_params: :class:`huaweicloudsdkimagesearch.v2.SearchOptionalParam`

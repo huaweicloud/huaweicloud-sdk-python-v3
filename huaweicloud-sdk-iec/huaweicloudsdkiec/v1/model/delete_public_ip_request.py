@@ -25,7 +25,7 @@ class DeletePublicIpRequest:
     }
 
     def __init__(self, publicip_id=None):
-        """DeletePublicIpRequest
+        r"""DeletePublicIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeletePublicIpRequest:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this DeletePublicIpRequest.
+        r"""Gets the publicip_id of this DeletePublicIpRequest.
 
         弹性公网IP ID
 
@@ -53,7 +53,7 @@ class DeletePublicIpRequest:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this DeletePublicIpRequest.
+        r"""Sets the publicip_id of this DeletePublicIpRequest.
 
         弹性公网IP ID
 

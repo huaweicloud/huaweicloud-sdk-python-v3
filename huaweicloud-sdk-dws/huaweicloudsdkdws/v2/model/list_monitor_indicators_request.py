@@ -23,7 +23,7 @@ class ListMonitorIndicatorsRequest:
     }
 
     def __init__(self):
-        """ListMonitorIndicatorsRequest
+        r"""ListMonitorIndicatorsRequest
 
         The model defined in huaweicloud sdk
 

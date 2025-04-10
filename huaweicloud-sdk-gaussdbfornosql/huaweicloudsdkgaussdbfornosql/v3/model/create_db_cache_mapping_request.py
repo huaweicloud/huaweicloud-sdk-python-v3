@@ -25,7 +25,7 @@ class CreateDbCacheMappingRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDbCacheMappingRequest
+        r"""CreateDbCacheMappingRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDbCacheMappingRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDbCacheMappingRequest.
+        r"""Gets the body of this CreateDbCacheMappingRequest.
 
         :return: The body of this CreateDbCacheMappingRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateDbCacheMappingRequestBody`
@@ -52,7 +52,7 @@ class CreateDbCacheMappingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDbCacheMappingRequest.
+        r"""Sets the body of this CreateDbCacheMappingRequest.
 
         :param body: The body of this CreateDbCacheMappingRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateDbCacheMappingRequestBody`

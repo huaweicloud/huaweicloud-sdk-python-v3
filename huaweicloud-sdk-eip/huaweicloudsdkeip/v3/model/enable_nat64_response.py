@@ -28,7 +28,7 @@ class EnableNat64Response(SdkResponse):
     }
 
     def __init__(self, publicip=None, request_id=None):
-        """EnableNat64Response
+        r"""EnableNat64Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class EnableNat64Response(SdkResponse):
 
     @property
     def publicip(self):
-        """Gets the publicip of this EnableNat64Response.
+        r"""Gets the publicip of this EnableNat64Response.
 
         :return: The publicip of this EnableNat64Response.
         :rtype: :class:`huaweicloudsdkeip.v3.PublicipResp`
@@ -60,7 +60,7 @@ class EnableNat64Response(SdkResponse):
 
     @publicip.setter
     def publicip(self, publicip):
-        """Sets the publicip of this EnableNat64Response.
+        r"""Sets the publicip of this EnableNat64Response.
 
         :param publicip: The publicip of this EnableNat64Response.
         :type publicip: :class:`huaweicloudsdkeip.v3.PublicipResp`
@@ -69,7 +69,7 @@ class EnableNat64Response(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this EnableNat64Response.
+        r"""Gets the request_id of this EnableNat64Response.
 
         本次请求编号
 
@@ -80,7 +80,7 @@ class EnableNat64Response(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this EnableNat64Response.
+        r"""Sets the request_id of this EnableNat64Response.
 
         本次请求编号
 

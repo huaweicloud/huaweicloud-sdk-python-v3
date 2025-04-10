@@ -27,7 +27,7 @@ class StatisticsSourceDTO:
     }
 
     def __init__(self, source_type=None, source_id=None):
-        """StatisticsSourceDTO
+        r"""StatisticsSourceDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StatisticsSourceDTO:
 
     @property
     def source_type(self):
-        """Gets the source_type of this StatisticsSourceDTO.
+        r"""Gets the source_type of this StatisticsSourceDTO.
 
         **参数说明**：信息来源的具体类型描述。
 
@@ -61,7 +61,7 @@ class StatisticsSourceDTO:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this StatisticsSourceDTO.
+        r"""Sets the source_type of this StatisticsSourceDTO.
 
         **参数说明**：信息来源的具体类型描述。
 
@@ -72,7 +72,7 @@ class StatisticsSourceDTO:
 
     @property
     def source_id(self):
-        """Gets the source_id of this StatisticsSourceDTO.
+        r"""Gets the source_id of this StatisticsSourceDTO.
 
         **参数说明**：信息来源的唯一标识码ID。
 
@@ -83,7 +83,7 @@ class StatisticsSourceDTO:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this StatisticsSourceDTO.
+        r"""Sets the source_id of this StatisticsSourceDTO.
 
         **参数说明**：信息来源的唯一标识码ID。
 

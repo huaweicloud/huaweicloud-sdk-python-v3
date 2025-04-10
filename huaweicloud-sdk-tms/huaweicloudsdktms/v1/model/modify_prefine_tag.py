@@ -27,7 +27,7 @@ class ModifyPrefineTag:
     }
 
     def __init__(self, new_tag=None, old_tag=None):
-        """ModifyPrefineTag
+        r"""ModifyPrefineTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ModifyPrefineTag:
 
     @property
     def new_tag(self):
-        """Gets the new_tag of this ModifyPrefineTag.
+        r"""Gets the new_tag of this ModifyPrefineTag.
 
         :return: The new_tag of this ModifyPrefineTag.
         :rtype: :class:`huaweicloudsdktms.v1.PredefineTagRequest`
@@ -57,7 +57,7 @@ class ModifyPrefineTag:
 
     @new_tag.setter
     def new_tag(self, new_tag):
-        """Sets the new_tag of this ModifyPrefineTag.
+        r"""Sets the new_tag of this ModifyPrefineTag.
 
         :param new_tag: The new_tag of this ModifyPrefineTag.
         :type new_tag: :class:`huaweicloudsdktms.v1.PredefineTagRequest`
@@ -66,7 +66,7 @@ class ModifyPrefineTag:
 
     @property
     def old_tag(self):
-        """Gets the old_tag of this ModifyPrefineTag.
+        r"""Gets the old_tag of this ModifyPrefineTag.
 
         :return: The old_tag of this ModifyPrefineTag.
         :rtype: :class:`huaweicloudsdktms.v1.PredefineTagRequest`
@@ -75,7 +75,7 @@ class ModifyPrefineTag:
 
     @old_tag.setter
     def old_tag(self, old_tag):
-        """Sets the old_tag of this ModifyPrefineTag.
+        r"""Sets the old_tag of this ModifyPrefineTag.
 
         :param old_tag: The old_tag of this ModifyPrefineTag.
         :type old_tag: :class:`huaweicloudsdktms.v1.PredefineTagRequest`

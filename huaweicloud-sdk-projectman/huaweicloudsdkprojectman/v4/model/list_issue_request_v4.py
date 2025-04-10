@@ -63,7 +63,7 @@ class ListIssueRequestV4:
     }
 
     def __init__(self, assigned_ids=None, creator_ids=None, developer_ids=None, domain_ids=None, done_ratios=None, iteration_ids=None, limit=None, offset=None, module_ids=None, priority_ids=None, query_type=None, severity_ids=None, status_ids=None, story_point_ids=None, tracker_ids=None, include_deleted=None, created_time_interval=None, updated_time_interval=None, closed_time_interval=None, custom_fields=None):
-        """ListIssueRequestV4
+        r"""ListIssueRequestV4
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class ListIssueRequestV4:
 
     @property
     def assigned_ids(self):
-        """Gets the assigned_ids of this ListIssueRequestV4.
+        r"""Gets the assigned_ids of this ListIssueRequestV4.
 
         处理人id
 
@@ -187,7 +187,7 @@ class ListIssueRequestV4:
 
     @assigned_ids.setter
     def assigned_ids(self, assigned_ids):
-        """Sets the assigned_ids of this ListIssueRequestV4.
+        r"""Sets the assigned_ids of this ListIssueRequestV4.
 
         处理人id
 
@@ -198,7 +198,7 @@ class ListIssueRequestV4:
 
     @property
     def creator_ids(self):
-        """Gets the creator_ids of this ListIssueRequestV4.
+        r"""Gets the creator_ids of this ListIssueRequestV4.
 
         创建者id
 
@@ -209,7 +209,7 @@ class ListIssueRequestV4:
 
     @creator_ids.setter
     def creator_ids(self, creator_ids):
-        """Sets the creator_ids of this ListIssueRequestV4.
+        r"""Sets the creator_ids of this ListIssueRequestV4.
 
         创建者id
 
@@ -220,7 +220,7 @@ class ListIssueRequestV4:
 
     @property
     def developer_ids(self):
-        """Gets the developer_ids of this ListIssueRequestV4.
+        r"""Gets the developer_ids of this ListIssueRequestV4.
 
         开发人id,对应用户信息的数字id
 
@@ -231,7 +231,7 @@ class ListIssueRequestV4:
 
     @developer_ids.setter
     def developer_ids(self, developer_ids):
-        """Sets the developer_ids of this ListIssueRequestV4.
+        r"""Sets the developer_ids of this ListIssueRequestV4.
 
         开发人id,对应用户信息的数字id
 
@@ -242,7 +242,7 @@ class ListIssueRequestV4:
 
     @property
     def domain_ids(self):
-        """Gets the domain_ids of this ListIssueRequestV4.
+        r"""Gets the domain_ids of this ListIssueRequestV4.
 
         id, 领域, 14 '性能', 15 '功能', 16 '可靠性', 17 '网络安全', 18 '可维护性', 19 '其他DFX', 20 '可用性',
 
@@ -253,7 +253,7 @@ class ListIssueRequestV4:
 
     @domain_ids.setter
     def domain_ids(self, domain_ids):
-        """Sets the domain_ids of this ListIssueRequestV4.
+        r"""Sets the domain_ids of this ListIssueRequestV4.
 
         id, 领域, 14 '性能', 15 '功能', 16 '可靠性', 17 '网络安全', 18 '可维护性', 19 '其他DFX', 20 '可用性',
 
@@ -264,7 +264,7 @@ class ListIssueRequestV4:
 
     @property
     def done_ratios(self):
-        """Gets the done_ratios of this ListIssueRequestV4.
+        r"""Gets the done_ratios of this ListIssueRequestV4.
 
         完成度
 
@@ -275,7 +275,7 @@ class ListIssueRequestV4:
 
     @done_ratios.setter
     def done_ratios(self, done_ratios):
-        """Sets the done_ratios of this ListIssueRequestV4.
+        r"""Sets the done_ratios of this ListIssueRequestV4.
 
         完成度
 
@@ -286,7 +286,7 @@ class ListIssueRequestV4:
 
     @property
     def iteration_ids(self):
-        """Gets the iteration_ids of this ListIssueRequestV4.
+        r"""Gets the iteration_ids of this ListIssueRequestV4.
 
         迭代id
 
@@ -297,7 +297,7 @@ class ListIssueRequestV4:
 
     @iteration_ids.setter
     def iteration_ids(self, iteration_ids):
-        """Sets the iteration_ids of this ListIssueRequestV4.
+        r"""Sets the iteration_ids of this ListIssueRequestV4.
 
         迭代id
 
@@ -308,7 +308,7 @@ class ListIssueRequestV4:
 
     @property
     def limit(self):
-        """Gets the limit of this ListIssueRequestV4.
+        r"""Gets the limit of this ListIssueRequestV4.
 
         每页显示数量
 
@@ -319,7 +319,7 @@ class ListIssueRequestV4:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListIssueRequestV4.
+        r"""Sets the limit of this ListIssueRequestV4.
 
         每页显示数量
 
@@ -330,7 +330,7 @@ class ListIssueRequestV4:
 
     @property
     def offset(self):
-        """Gets the offset of this ListIssueRequestV4.
+        r"""Gets the offset of this ListIssueRequestV4.
 
         分页索引，偏移量，offset是limit的整数倍数，limit=10,offset=0,10,20...
 
@@ -341,7 +341,7 @@ class ListIssueRequestV4:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListIssueRequestV4.
+        r"""Sets the offset of this ListIssueRequestV4.
 
         分页索引，偏移量，offset是limit的整数倍数，limit=10,offset=0,10,20...
 
@@ -352,7 +352,7 @@ class ListIssueRequestV4:
 
     @property
     def module_ids(self):
-        """Gets the module_ids of this ListIssueRequestV4.
+        r"""Gets the module_ids of this ListIssueRequestV4.
 
         模块id
 
@@ -363,7 +363,7 @@ class ListIssueRequestV4:
 
     @module_ids.setter
     def module_ids(self, module_ids):
-        """Sets the module_ids of this ListIssueRequestV4.
+        r"""Sets the module_ids of this ListIssueRequestV4.
 
         模块id
 
@@ -374,7 +374,7 @@ class ListIssueRequestV4:
 
     @property
     def priority_ids(self):
-        """Gets the priority_ids of this ListIssueRequestV4.
+        r"""Gets the priority_ids of this ListIssueRequestV4.
 
         优先级
 
@@ -385,7 +385,7 @@ class ListIssueRequestV4:
 
     @priority_ids.setter
     def priority_ids(self, priority_ids):
-        """Sets the priority_ids of this ListIssueRequestV4.
+        r"""Sets the priority_ids of this ListIssueRequestV4.
 
         优先级
 
@@ -396,7 +396,7 @@ class ListIssueRequestV4:
 
     @property
     def query_type(self):
-        """Gets the query_type of this ListIssueRequestV4.
+        r"""Gets the query_type of this ListIssueRequestV4.
 
         查询类型 backlog feature epic
 
@@ -407,7 +407,7 @@ class ListIssueRequestV4:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this ListIssueRequestV4.
+        r"""Sets the query_type of this ListIssueRequestV4.
 
         查询类型 backlog feature epic
 
@@ -418,7 +418,7 @@ class ListIssueRequestV4:
 
     @property
     def severity_ids(self):
-        """Gets the severity_ids of this ListIssueRequestV4.
+        r"""Gets the severity_ids of this ListIssueRequestV4.
 
         查询类型
 
@@ -429,7 +429,7 @@ class ListIssueRequestV4:
 
     @severity_ids.setter
     def severity_ids(self, severity_ids):
-        """Sets the severity_ids of this ListIssueRequestV4.
+        r"""Sets the severity_ids of this ListIssueRequestV4.
 
         查询类型
 
@@ -440,7 +440,7 @@ class ListIssueRequestV4:
 
     @property
     def status_ids(self):
-        """Gets the status_ids of this ListIssueRequestV4.
+        r"""Gets the status_ids of this ListIssueRequestV4.
 
         状态   id, 新建   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
 
@@ -451,7 +451,7 @@ class ListIssueRequestV4:
 
     @status_ids.setter
     def status_ids(self, status_ids):
-        """Sets the status_ids of this ListIssueRequestV4.
+        r"""Sets the status_ids of this ListIssueRequestV4.
 
         状态   id, 新建   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
 
@@ -462,7 +462,7 @@ class ListIssueRequestV4:
 
     @property
     def story_point_ids(self):
-        """Gets the story_point_ids of this ListIssueRequestV4.
+        r"""Gets the story_point_ids of this ListIssueRequestV4.
 
         故事点id
 
@@ -473,7 +473,7 @@ class ListIssueRequestV4:
 
     @story_point_ids.setter
     def story_point_ids(self, story_point_ids):
-        """Sets the story_point_ids of this ListIssueRequestV4.
+        r"""Sets the story_point_ids of this ListIssueRequestV4.
 
         故事点id
 
@@ -484,7 +484,7 @@ class ListIssueRequestV4:
 
     @property
     def tracker_ids(self):
-        """Gets the tracker_ids of this ListIssueRequestV4.
+        r"""Gets the tracker_ids of this ListIssueRequestV4.
 
         工作项类型,2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 
@@ -495,7 +495,7 @@ class ListIssueRequestV4:
 
     @tracker_ids.setter
     def tracker_ids(self, tracker_ids):
-        """Sets the tracker_ids of this ListIssueRequestV4.
+        r"""Sets the tracker_ids of this ListIssueRequestV4.
 
         工作项类型,2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 
@@ -506,7 +506,7 @@ class ListIssueRequestV4:
 
     @property
     def include_deleted(self):
-        """Gets the include_deleted of this ListIssueRequestV4.
+        r"""Gets the include_deleted of this ListIssueRequestV4.
 
         true 查询的工作项包含已经逻辑删除的，false 查询的工作项不包含已经删除的
 
@@ -517,7 +517,7 @@ class ListIssueRequestV4:
 
     @include_deleted.setter
     def include_deleted(self, include_deleted):
-        """Sets the include_deleted of this ListIssueRequestV4.
+        r"""Sets the include_deleted of this ListIssueRequestV4.
 
         true 查询的工作项包含已经逻辑删除的，false 查询的工作项不包含已经删除的
 
@@ -528,7 +528,7 @@ class ListIssueRequestV4:
 
     @property
     def created_time_interval(self):
-        """Gets the created_time_interval of this ListIssueRequestV4.
+        r"""Gets the created_time_interval of this ListIssueRequestV4.
 
         根据工作项的创建时间查询工作项，(查询的起始时间,查询的结束时间)
 
@@ -539,7 +539,7 @@ class ListIssueRequestV4:
 
     @created_time_interval.setter
     def created_time_interval(self, created_time_interval):
-        """Sets the created_time_interval of this ListIssueRequestV4.
+        r"""Sets the created_time_interval of this ListIssueRequestV4.
 
         根据工作项的创建时间查询工作项，(查询的起始时间,查询的结束时间)
 
@@ -550,7 +550,7 @@ class ListIssueRequestV4:
 
     @property
     def updated_time_interval(self):
-        """Gets the updated_time_interval of this ListIssueRequestV4.
+        r"""Gets the updated_time_interval of this ListIssueRequestV4.
 
         根据工作项的更新时间查询工作项，(查询的起始时间,查询的结束时间)
 
@@ -561,7 +561,7 @@ class ListIssueRequestV4:
 
     @updated_time_interval.setter
     def updated_time_interval(self, updated_time_interval):
-        """Sets the updated_time_interval of this ListIssueRequestV4.
+        r"""Sets the updated_time_interval of this ListIssueRequestV4.
 
         根据工作项的更新时间查询工作项，(查询的起始时间,查询的结束时间)
 
@@ -572,7 +572,7 @@ class ListIssueRequestV4:
 
     @property
     def closed_time_interval(self):
-        """Gets the closed_time_interval of this ListIssueRequestV4.
+        r"""Gets the closed_time_interval of this ListIssueRequestV4.
 
         根据工作项的结束时间查询工作项，(查询的起始时间,查询的结束时间)
 
@@ -583,7 +583,7 @@ class ListIssueRequestV4:
 
     @closed_time_interval.setter
     def closed_time_interval(self, closed_time_interval):
-        """Sets the closed_time_interval of this ListIssueRequestV4.
+        r"""Sets the closed_time_interval of this ListIssueRequestV4.
 
         根据工作项的结束时间查询工作项，(查询的起始时间,查询的结束时间)
 
@@ -594,7 +594,7 @@ class ListIssueRequestV4:
 
     @property
     def custom_fields(self):
-        """Gets the custom_fields of this ListIssueRequestV4.
+        r"""Gets the custom_fields of this ListIssueRequestV4.
 
         自定义字段
 
@@ -605,7 +605,7 @@ class ListIssueRequestV4:
 
     @custom_fields.setter
     def custom_fields(self, custom_fields):
-        """Sets the custom_fields of this ListIssueRequestV4.
+        r"""Sets the custom_fields of this ListIssueRequestV4.
 
         自定义字段
 

@@ -35,7 +35,7 @@ class BatchPublicIp:
     }
 
     def __init__(self, id=None, type=None, ip_version=None, enterprise_project_id=None, tags=None, profile=None):
-        """BatchPublicIp
+        r"""BatchPublicIp
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class BatchPublicIp:
 
     @property
     def id(self):
-        """Gets the id of this BatchPublicIp.
+        r"""Gets the id of this BatchPublicIp.
 
         指定id创建EIP
 
@@ -88,7 +88,7 @@ class BatchPublicIp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchPublicIp.
+        r"""Sets the id of this BatchPublicIp.
 
         指定id创建EIP
 
@@ -99,7 +99,7 @@ class BatchPublicIp:
 
     @property
     def type(self):
-        """Gets the type of this BatchPublicIp.
+        r"""Gets the type of this BatchPublicIp.
 
         公网ip类型
 
@@ -110,7 +110,7 @@ class BatchPublicIp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BatchPublicIp.
+        r"""Sets the type of this BatchPublicIp.
 
         公网ip类型
 
@@ -121,7 +121,7 @@ class BatchPublicIp:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this BatchPublicIp.
+        r"""Gets the ip_version of this BatchPublicIp.
 
         公网EIP的版本，例如ipv4，ipv6，默认为ipv4
 
@@ -132,7 +132,7 @@ class BatchPublicIp:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this BatchPublicIp.
+        r"""Sets the ip_version of this BatchPublicIp.
 
         公网EIP的版本，例如ipv4，ipv6，默认为ipv4
 
@@ -143,7 +143,7 @@ class BatchPublicIp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this BatchPublicIp.
+        r"""Gets the enterprise_project_id of this BatchPublicIp.
 
         企业项目id
 
@@ -154,7 +154,7 @@ class BatchPublicIp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this BatchPublicIp.
+        r"""Sets the enterprise_project_id of this BatchPublicIp.
 
         企业项目id
 
@@ -165,7 +165,7 @@ class BatchPublicIp:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchPublicIp.
+        r"""Gets the tags of this BatchPublicIp.
 
         公网EIP标签
 
@@ -176,7 +176,7 @@ class BatchPublicIp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchPublicIp.
+        r"""Sets the tags of this BatchPublicIp.
 
         公网EIP标签
 
@@ -187,7 +187,7 @@ class BatchPublicIp:
 
     @property
     def profile(self):
-        """Gets the profile of this BatchPublicIp.
+        r"""Gets the profile of this BatchPublicIp.
 
         :return: The profile of this BatchPublicIp.
         :rtype: :class:`huaweicloudsdkeip.v2.BatchProfile`
@@ -196,7 +196,7 @@ class BatchPublicIp:
 
     @profile.setter
     def profile(self, profile):
-        """Sets the profile of this BatchPublicIp.
+        r"""Sets the profile of this BatchPublicIp.
 
         :param profile: The profile of this BatchPublicIp.
         :type profile: :class:`huaweicloudsdkeip.v2.BatchProfile`

@@ -30,7 +30,7 @@ class CreateConnectionMonitorResponse(SdkResponse):
     }
 
     def __init__(self, connection_monitor=None, request_id=None, header_response_token=None):
-        """CreateConnectionMonitorResponse
+        r"""CreateConnectionMonitorResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateConnectionMonitorResponse(SdkResponse):
 
     @property
     def connection_monitor(self):
-        """Gets the connection_monitor of this CreateConnectionMonitorResponse.
+        r"""Gets the connection_monitor of this CreateConnectionMonitorResponse.
 
         :return: The connection_monitor of this CreateConnectionMonitorResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateConnectionMonitorInfo`
@@ -67,7 +67,7 @@ class CreateConnectionMonitorResponse(SdkResponse):
 
     @connection_monitor.setter
     def connection_monitor(self, connection_monitor):
-        """Sets the connection_monitor of this CreateConnectionMonitorResponse.
+        r"""Sets the connection_monitor of this CreateConnectionMonitorResponse.
 
         :param connection_monitor: The connection_monitor of this CreateConnectionMonitorResponse.
         :type connection_monitor: :class:`huaweicloudsdkvpn.v5.CreateConnectionMonitorInfo`
@@ -76,7 +76,7 @@ class CreateConnectionMonitorResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateConnectionMonitorResponse.
+        r"""Gets the request_id of this CreateConnectionMonitorResponse.
 
         请求id
 
@@ -87,7 +87,7 @@ class CreateConnectionMonitorResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateConnectionMonitorResponse.
+        r"""Sets the request_id of this CreateConnectionMonitorResponse.
 
         请求id
 
@@ -98,7 +98,7 @@ class CreateConnectionMonitorResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this CreateConnectionMonitorResponse.
+        r"""Gets the header_response_token of this CreateConnectionMonitorResponse.
 
         :return: The header_response_token of this CreateConnectionMonitorResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateConnectionMonitorResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this CreateConnectionMonitorResponse.
+        r"""Sets the header_response_token of this CreateConnectionMonitorResponse.
 
         :param header_response_token: The header_response_token of this CreateConnectionMonitorResponse.
         :type header_response_token: str

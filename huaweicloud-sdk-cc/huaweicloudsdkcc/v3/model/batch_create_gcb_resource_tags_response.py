@@ -24,7 +24,7 @@ class BatchCreateGcbResourceTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateGcbResourceTagsResponse
+        r"""BatchCreateGcbResourceTagsResponse
 
         The model defined in huaweicloud sdk
 

@@ -33,7 +33,7 @@ class PostPaidServerNic:
     }
 
     def __init__(self, subnet_id=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None, allowed_address_pairs=None):
-        """PostPaidServerNic
+        r"""PostPaidServerNic
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class PostPaidServerNic:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this PostPaidServerNic.
+        r"""Gets the subnet_id of this PostPaidServerNic.
 
         待创建云服务器所在的子网信息，需要指定vpcid对应VPC下的子网ID，UUID格式。  可以通过VPC服务 [查询子网](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VPC&api=ListSubnets) 接口查询，该接口支持通过创建云服务器填写的vpcid进行过滤查询。
 
@@ -81,7 +81,7 @@ class PostPaidServerNic:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this PostPaidServerNic.
+        r"""Sets the subnet_id of this PostPaidServerNic.
 
         待创建云服务器所在的子网信息，需要指定vpcid对应VPC下的子网ID，UUID格式。  可以通过VPC服务 [查询子网](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VPC&api=ListSubnets) 接口查询，该接口支持通过创建云服务器填写的vpcid进行过滤查询。
 
@@ -92,7 +92,7 @@ class PostPaidServerNic:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this PostPaidServerNic.
+        r"""Gets the ip_address of this PostPaidServerNic.
 
         待创建云服务器网卡的IP地址，IPv4格式。  约束：  - 不填或空字符串，默认在子网（subnet）中自动分配一个未使用的IP作网卡的IP地址。 - 若指定IP地址，该IP地址必须在子网（subnet）对应的网段内，且未被使用。
 
@@ -103,7 +103,7 @@ class PostPaidServerNic:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this PostPaidServerNic.
+        r"""Sets the ip_address of this PostPaidServerNic.
 
         待创建云服务器网卡的IP地址，IPv4格式。  约束：  - 不填或空字符串，默认在子网（subnet）中自动分配一个未使用的IP作网卡的IP地址。 - 若指定IP地址，该IP地址必须在子网（subnet）对应的网段内，且未被使用。
 
@@ -114,7 +114,7 @@ class PostPaidServerNic:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this PostPaidServerNic.
+        r"""Gets the ipv6_enable of this PostPaidServerNic.
 
         是否支持ipv6。  取值为true时，标识此网卡支持ipv6。
 
@@ -125,7 +125,7 @@ class PostPaidServerNic:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this PostPaidServerNic.
+        r"""Sets the ipv6_enable of this PostPaidServerNic.
 
         是否支持ipv6。  取值为true时，标识此网卡支持ipv6。
 
@@ -136,7 +136,7 @@ class PostPaidServerNic:
 
     @property
     def ipv6_bandwidth(self):
-        """Gets the ipv6_bandwidth of this PostPaidServerNic.
+        r"""Gets the ipv6_bandwidth of this PostPaidServerNic.
 
         :return: The ipv6_bandwidth of this PostPaidServerNic.
         :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerIpv6Bandwidth`
@@ -145,7 +145,7 @@ class PostPaidServerNic:
 
     @ipv6_bandwidth.setter
     def ipv6_bandwidth(self, ipv6_bandwidth):
-        """Sets the ipv6_bandwidth of this PostPaidServerNic.
+        r"""Sets the ipv6_bandwidth of this PostPaidServerNic.
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this PostPaidServerNic.
         :type ipv6_bandwidth: :class:`huaweicloudsdkecs.v2.PostPaidServerIpv6Bandwidth`
@@ -154,7 +154,7 @@ class PostPaidServerNic:
 
     @property
     def allowed_address_pairs(self):
-        """Gets the allowed_address_pairs of this PostPaidServerNic.
+        r"""Gets the allowed_address_pairs of this PostPaidServerNic.
 
         IP/Mac对列表， 约束：IP地址不允许为 “0.0.0.0/0” 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组 如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关 被绑定的云服务器网卡allowed_address_pairs填“1.1.1.1/0”
 
@@ -165,7 +165,7 @@ class PostPaidServerNic:
 
     @allowed_address_pairs.setter
     def allowed_address_pairs(self, allowed_address_pairs):
-        """Sets the allowed_address_pairs of this PostPaidServerNic.
+        r"""Sets the allowed_address_pairs of this PostPaidServerNic.
 
         IP/Mac对列表， 约束：IP地址不允许为 “0.0.0.0/0” 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组 如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关 被绑定的云服务器网卡allowed_address_pairs填“1.1.1.1/0”
 

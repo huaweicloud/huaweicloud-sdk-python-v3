@@ -27,7 +27,7 @@ class CancelAsyncInvocationRequestBody:
     }
 
     def __init__(self, request_id=None, type=None):
-        """CancelAsyncInvocationRequestBody
+        r"""CancelAsyncInvocationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CancelAsyncInvocationRequestBody:
 
     @property
     def request_id(self):
-        """Gets the request_id of this CancelAsyncInvocationRequestBody.
+        r"""Gets the request_id of this CancelAsyncInvocationRequestBody.
 
         被停止的请求id
 
@@ -60,7 +60,7 @@ class CancelAsyncInvocationRequestBody:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CancelAsyncInvocationRequestBody.
+        r"""Sets the request_id of this CancelAsyncInvocationRequestBody.
 
         被停止的请求id
 
@@ -71,7 +71,7 @@ class CancelAsyncInvocationRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CancelAsyncInvocationRequestBody.
+        r"""Gets the type of this CancelAsyncInvocationRequestBody.
 
         停止的类型 支持recursive, force。 recursive: 停止正在调用的子函数。 force: 直接终止runtime。
 
@@ -82,7 +82,7 @@ class CancelAsyncInvocationRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CancelAsyncInvocationRequestBody.
+        r"""Sets the type of this CancelAsyncInvocationRequestBody.
 
         停止的类型 支持recursive, force。 recursive: 停止正在调用的子函数。 force: 直接终止runtime。
 

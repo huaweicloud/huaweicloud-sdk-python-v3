@@ -25,7 +25,7 @@ class SwitchShardRequestBody:
     }
 
     def __init__(self, shards=None):
-        """SwitchShardRequestBody
+        r"""SwitchShardRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SwitchShardRequestBody:
 
     @property
     def shards(self):
-        """Gets the shards of this SwitchShardRequestBody.
+        r"""Gets the shards of this SwitchShardRequestBody.
 
         节点列表，支持对单个或者多个DN分片做主备切换。节点信息为将要升主的备DN分片对应的节点id和组件id。
 
@@ -53,7 +53,7 @@ class SwitchShardRequestBody:
 
     @shards.setter
     def shards(self, shards):
-        """Sets the shards of this SwitchShardRequestBody.
+        r"""Sets the shards of this SwitchShardRequestBody.
 
         节点列表，支持对单个或者多个DN分片做主备切换。节点信息为将要升主的备DN分片对应的节点id和组件id。
 

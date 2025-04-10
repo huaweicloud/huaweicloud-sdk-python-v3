@@ -28,7 +28,7 @@ class ListDataTablesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, tables=None):
-        """ListDataTablesResponse
+        r"""ListDataTablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDataTablesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDataTablesResponse.
+        r"""Gets the total_count of this ListDataTablesResponse.
 
         当前数据库中表的记录数
 
@@ -62,7 +62,7 @@ class ListDataTablesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDataTablesResponse.
+        r"""Sets the total_count of this ListDataTablesResponse.
 
         当前数据库中表的记录数
 
@@ -73,7 +73,7 @@ class ListDataTablesResponse(SdkResponse):
 
     @property
     def tables(self):
-        """Gets the tables of this ListDataTablesResponse.
+        r"""Gets the tables of this ListDataTablesResponse.
 
         表的列表
 
@@ -84,7 +84,7 @@ class ListDataTablesResponse(SdkResponse):
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this ListDataTablesResponse.
+        r"""Sets the tables of this ListDataTablesResponse.
 
         表的列表
 

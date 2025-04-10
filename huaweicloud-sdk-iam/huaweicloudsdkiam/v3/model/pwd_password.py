@@ -25,7 +25,7 @@ class PwdPassword:
     }
 
     def __init__(self, user=None):
-        """PwdPassword
+        r"""PwdPassword
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PwdPassword:
 
     @property
     def user(self):
-        """Gets the user of this PwdPassword.
+        r"""Gets the user of this PwdPassword.
 
         :return: The user of this PwdPassword.
         :rtype: :class:`huaweicloudsdkiam.v3.PwdPasswordUser`
@@ -51,7 +51,7 @@ class PwdPassword:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this PwdPassword.
+        r"""Sets the user of this PwdPassword.
 
         :param user: The user of this PwdPassword.
         :type user: :class:`huaweicloudsdkiam.v3.PwdPasswordUser`

@@ -25,7 +25,7 @@ class StopInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """StopInstanceRequest
+        r"""StopInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StopInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this StopInstanceRequest.
+        r"""Gets the body of this StopInstanceRequest.
 
         :return: The body of this StopInstanceRequest.
         :rtype: :class:`huaweicloudsdkcbh.v2.CommonCbhRequestBody`
@@ -52,7 +52,7 @@ class StopInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StopInstanceRequest.
+        r"""Sets the body of this StopInstanceRequest.
 
         :param body: The body of this StopInstanceRequest.
         :type body: :class:`huaweicloudsdkcbh.v2.CommonCbhRequestBody`

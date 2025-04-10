@@ -55,7 +55,7 @@ class ListRecordSetsWithLineRequest:
     }
 
     def __init__(self, zone_type=None, marker=None, limit=None, offset=None, zone_id=None, line_id=None, tags=None, status=None, type=None, name=None, id=None, records=None, sort_key=None, sort_dir=None, health_check_id=None, search_mode=None):
-        """ListRecordSetsWithLineRequest
+        r"""ListRecordSetsWithLineRequest
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def zone_type(self):
-        """Gets the zone_type of this ListRecordSetsWithLineRequest.
+        r"""Gets the zone_type of this ListRecordSetsWithLineRequest.
 
         待查询的Record Set的域名类型。  取值范围：public  搜索模式默认为模糊搜索。  默认值为public。
 
@@ -159,7 +159,7 @@ class ListRecordSetsWithLineRequest:
 
     @zone_type.setter
     def zone_type(self, zone_type):
-        """Sets the zone_type of this ListRecordSetsWithLineRequest.
+        r"""Sets the zone_type of this ListRecordSetsWithLineRequest.
 
         待查询的Record Set的域名类型。  取值范围：public  搜索模式默认为模糊搜索。  默认值为public。
 
@@ -170,7 +170,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListRecordSetsWithLineRequest.
+        r"""Gets the marker of this ListRecordSetsWithLineRequest.
 
         分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
@@ -181,7 +181,7 @@ class ListRecordSetsWithLineRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRecordSetsWithLineRequest.
+        r"""Sets the marker of this ListRecordSetsWithLineRequest.
 
         分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
@@ -192,7 +192,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRecordSetsWithLineRequest.
+        r"""Gets the limit of this ListRecordSetsWithLineRequest.
 
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
@@ -203,7 +203,7 @@ class ListRecordSetsWithLineRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRecordSetsWithLineRequest.
+        r"""Sets the limit of this ListRecordSetsWithLineRequest.
 
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
@@ -214,7 +214,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRecordSetsWithLineRequest.
+        r"""Gets the offset of this ListRecordSetsWithLineRequest.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
@@ -225,7 +225,7 @@ class ListRecordSetsWithLineRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRecordSetsWithLineRequest.
+        r"""Sets the offset of this ListRecordSetsWithLineRequest.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
@@ -236,7 +236,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this ListRecordSetsWithLineRequest.
+        r"""Gets the zone_id of this ListRecordSetsWithLineRequest.
 
         zone的ID。
 
@@ -247,7 +247,7 @@ class ListRecordSetsWithLineRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this ListRecordSetsWithLineRequest.
+        r"""Sets the zone_id of this ListRecordSetsWithLineRequest.
 
         zone的ID。
 
@@ -258,7 +258,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def line_id(self):
-        """Gets the line_id of this ListRecordSetsWithLineRequest.
+        r"""Gets the line_id of this ListRecordSetsWithLineRequest.
 
         解析线路ID。
 
@@ -269,7 +269,7 @@ class ListRecordSetsWithLineRequest:
 
     @line_id.setter
     def line_id(self, line_id):
-        """Sets the line_id of this ListRecordSetsWithLineRequest.
+        r"""Sets the line_id of this ListRecordSetsWithLineRequest.
 
         解析线路ID。
 
@@ -280,7 +280,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListRecordSetsWithLineRequest.
+        r"""Gets the tags of this ListRecordSetsWithLineRequest.
 
         资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
 
@@ -291,7 +291,7 @@ class ListRecordSetsWithLineRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListRecordSetsWithLineRequest.
+        r"""Sets the tags of this ListRecordSetsWithLineRequest.
 
         资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
 
@@ -302,7 +302,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListRecordSetsWithLineRequest.
+        r"""Gets the status of this ListRecordSetsWithLineRequest.
 
         待查询的Record Set的状态。  取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
 
@@ -313,7 +313,7 @@ class ListRecordSetsWithLineRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListRecordSetsWithLineRequest.
+        r"""Sets the status of this ListRecordSetsWithLineRequest.
 
         待查询的Record Set的状态。  取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
 
@@ -324,7 +324,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListRecordSetsWithLineRequest.
+        r"""Gets the type of this ListRecordSetsWithLineRequest.
 
         待查询的Record Set的记录集类型。  取值范围：A、CNAME、MX、AAAA、TXT、SRV、NS、CAA
 
@@ -335,7 +335,7 @@ class ListRecordSetsWithLineRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListRecordSetsWithLineRequest.
+        r"""Sets the type of this ListRecordSetsWithLineRequest.
 
         待查询的Record Set的记录集类型。  取值范围：A、CNAME、MX、AAAA、TXT、SRV、NS、CAA
 
@@ -346,7 +346,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListRecordSetsWithLineRequest.
+        r"""Gets the name of this ListRecordSetsWithLineRequest.
 
         待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
 
@@ -357,7 +357,7 @@ class ListRecordSetsWithLineRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListRecordSetsWithLineRequest.
+        r"""Sets the name of this ListRecordSetsWithLineRequest.
 
         待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
 
@@ -368,7 +368,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListRecordSetsWithLineRequest.
+        r"""Gets the id of this ListRecordSetsWithLineRequest.
 
         待查询的Record Set的id包含此id。
 
@@ -379,7 +379,7 @@ class ListRecordSetsWithLineRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListRecordSetsWithLineRequest.
+        r"""Sets the id of this ListRecordSetsWithLineRequest.
 
         待查询的Record Set的id包含此id。
 
@@ -390,7 +390,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def records(self):
-        """Gets the records of this ListRecordSetsWithLineRequest.
+        r"""Gets the records of this ListRecordSetsWithLineRequest.
 
         待查询的Record Set的值中包含此records。  搜索模式默认为模糊搜索。  默认值为空。
 
@@ -401,7 +401,7 @@ class ListRecordSetsWithLineRequest:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListRecordSetsWithLineRequest.
+        r"""Sets the records of this ListRecordSetsWithLineRequest.
 
         待查询的Record Set的值中包含此records。  搜索模式默认为模糊搜索。  默认值为空。
 
@@ -412,7 +412,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListRecordSetsWithLineRequest.
+        r"""Gets the sort_key of this ListRecordSetsWithLineRequest.
 
         查询结果中Record Set列表的排序字段。  取值范围：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
 
@@ -423,7 +423,7 @@ class ListRecordSetsWithLineRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListRecordSetsWithLineRequest.
+        r"""Sets the sort_key of this ListRecordSetsWithLineRequest.
 
         查询结果中Record Set列表的排序字段。  取值范围：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
 
@@ -434,7 +434,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListRecordSetsWithLineRequest.
+        r"""Gets the sort_dir of this ListRecordSetsWithLineRequest.
 
         查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
@@ -445,7 +445,7 @@ class ListRecordSetsWithLineRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListRecordSetsWithLineRequest.
+        r"""Sets the sort_dir of this ListRecordSetsWithLineRequest.
 
         查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
@@ -456,7 +456,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def health_check_id(self):
-        """Gets the health_check_id of this ListRecordSetsWithLineRequest.
+        r"""Gets the health_check_id of this ListRecordSetsWithLineRequest.
 
         健康检查ID。  搜索模式默认为模糊搜索。  默认值为空。
 
@@ -467,7 +467,7 @@ class ListRecordSetsWithLineRequest:
 
     @health_check_id.setter
     def health_check_id(self, health_check_id):
-        """Sets the health_check_id of this ListRecordSetsWithLineRequest.
+        r"""Sets the health_check_id of this ListRecordSetsWithLineRequest.
 
         健康检查ID。  搜索模式默认为模糊搜索。  默认值为空。
 
@@ -478,7 +478,7 @@ class ListRecordSetsWithLineRequest:
 
     @property
     def search_mode(self):
-        """Gets the search_mode of this ListRecordSetsWithLineRequest.
+        r"""Gets the search_mode of this ListRecordSetsWithLineRequest.
 
         查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 
@@ -489,7 +489,7 @@ class ListRecordSetsWithLineRequest:
 
     @search_mode.setter
     def search_mode(self, search_mode):
-        """Sets the search_mode of this ListRecordSetsWithLineRequest.
+        r"""Sets the search_mode of this ListRecordSetsWithLineRequest.
 
         查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 

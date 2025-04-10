@@ -31,7 +31,7 @@ class UpdateProductTopicRequest:
     }
 
     def __init__(self, instance_id=None, product_id=None, topic_id=None, body=None):
-        """UpdateProductTopicRequest
+        r"""UpdateProductTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateProductTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateProductTopicRequest.
+        r"""Gets the instance_id of this UpdateProductTopicRequest.
 
         实例ID
 
@@ -72,7 +72,7 @@ class UpdateProductTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateProductTopicRequest.
+        r"""Sets the instance_id of this UpdateProductTopicRequest.
 
         实例ID
 
@@ -83,7 +83,7 @@ class UpdateProductTopicRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this UpdateProductTopicRequest.
+        r"""Gets the product_id of this UpdateProductTopicRequest.
 
         产品ID
 
@@ -94,7 +94,7 @@ class UpdateProductTopicRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this UpdateProductTopicRequest.
+        r"""Sets the product_id of this UpdateProductTopicRequest.
 
         产品ID
 
@@ -105,7 +105,7 @@ class UpdateProductTopicRequest:
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this UpdateProductTopicRequest.
+        r"""Gets the topic_id of this UpdateProductTopicRequest.
 
         产品主题ID
 
@@ -116,7 +116,7 @@ class UpdateProductTopicRequest:
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this UpdateProductTopicRequest.
+        r"""Sets the topic_id of this UpdateProductTopicRequest.
 
         产品主题ID
 
@@ -127,7 +127,7 @@ class UpdateProductTopicRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateProductTopicRequest.
+        r"""Gets the body of this UpdateProductTopicRequest.
 
         :return: The body of this UpdateProductTopicRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductTopicRequestBody`
@@ -136,7 +136,7 @@ class UpdateProductTopicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateProductTopicRequest.
+        r"""Sets the body of this UpdateProductTopicRequest.
 
         :param body: The body of this UpdateProductTopicRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UpdateProductTopicRequestBody`

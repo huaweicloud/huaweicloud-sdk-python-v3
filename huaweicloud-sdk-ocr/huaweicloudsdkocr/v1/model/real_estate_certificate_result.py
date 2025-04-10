@@ -67,7 +67,7 @@ class RealEstateCertificateResult:
     }
 
     def __init__(self, issuer=None, issue_date=None, real_estate_certificate_no=None, mortgage_seals=None, canceled_mortgage_seals=None, estate_location=None, total_floors=None, floor=None, year_built=None, structure=None, area=None, revenue_stamps=None, ownership_certificate_no=None, estate_holder=None, obligee=None, ownership=None, property_unit_no=None, right_type=None, right_nature=None, usage=None, intended_usage=None, confidence=None):
-        """RealEstateCertificateResult
+        r"""RealEstateCertificateResult
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class RealEstateCertificateResult:
 
     @property
     def issuer(self):
-        """Gets the issuer of this RealEstateCertificateResult.
+        r"""Gets the issuer of this RealEstateCertificateResult.
 
         填发单位。 
 
@@ -201,7 +201,7 @@ class RealEstateCertificateResult:
 
     @issuer.setter
     def issuer(self, issuer):
-        """Sets the issuer of this RealEstateCertificateResult.
+        r"""Sets the issuer of this RealEstateCertificateResult.
 
         填发单位。 
 
@@ -212,7 +212,7 @@ class RealEstateCertificateResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this RealEstateCertificateResult.
+        r"""Gets the issue_date of this RealEstateCertificateResult.
 
         填发日期。 
 
@@ -223,7 +223,7 @@ class RealEstateCertificateResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this RealEstateCertificateResult.
+        r"""Sets the issue_date of this RealEstateCertificateResult.
 
         填发日期。 
 
@@ -234,7 +234,7 @@ class RealEstateCertificateResult:
 
     @property
     def real_estate_certificate_no(self):
-        """Gets the real_estate_certificate_no of this RealEstateCertificateResult.
+        r"""Gets the real_estate_certificate_no of this RealEstateCertificateResult.
 
         不动产证编号。 
 
@@ -245,7 +245,7 @@ class RealEstateCertificateResult:
 
     @real_estate_certificate_no.setter
     def real_estate_certificate_no(self, real_estate_certificate_no):
-        """Sets the real_estate_certificate_no of this RealEstateCertificateResult.
+        r"""Sets the real_estate_certificate_no of this RealEstateCertificateResult.
 
         不动产证编号。 
 
@@ -256,7 +256,7 @@ class RealEstateCertificateResult:
 
     @property
     def mortgage_seals(self):
-        """Gets the mortgage_seals of this RealEstateCertificateResult.
+        r"""Gets the mortgage_seals of this RealEstateCertificateResult.
 
         抵押印章个数。 
 
@@ -267,7 +267,7 @@ class RealEstateCertificateResult:
 
     @mortgage_seals.setter
     def mortgage_seals(self, mortgage_seals):
-        """Sets the mortgage_seals of this RealEstateCertificateResult.
+        r"""Sets the mortgage_seals of this RealEstateCertificateResult.
 
         抵押印章个数。 
 
@@ -278,7 +278,7 @@ class RealEstateCertificateResult:
 
     @property
     def canceled_mortgage_seals(self):
-        """Gets the canceled_mortgage_seals of this RealEstateCertificateResult.
+        r"""Gets the canceled_mortgage_seals of this RealEstateCertificateResult.
 
         注销的抵押印章个数。 
 
@@ -289,7 +289,7 @@ class RealEstateCertificateResult:
 
     @canceled_mortgage_seals.setter
     def canceled_mortgage_seals(self, canceled_mortgage_seals):
-        """Sets the canceled_mortgage_seals of this RealEstateCertificateResult.
+        r"""Sets the canceled_mortgage_seals of this RealEstateCertificateResult.
 
         注销的抵押印章个数。 
 
@@ -300,7 +300,7 @@ class RealEstateCertificateResult:
 
     @property
     def estate_location(self):
-        """Gets the estate_location of this RealEstateCertificateResult.
+        r"""Gets the estate_location of this RealEstateCertificateResult.
 
         房屋坐落。 
 
@@ -311,7 +311,7 @@ class RealEstateCertificateResult:
 
     @estate_location.setter
     def estate_location(self, estate_location):
-        """Sets the estate_location of this RealEstateCertificateResult.
+        r"""Sets the estate_location of this RealEstateCertificateResult.
 
         房屋坐落。 
 
@@ -322,7 +322,7 @@ class RealEstateCertificateResult:
 
     @property
     def total_floors(self):
-        """Gets the total_floors of this RealEstateCertificateResult.
+        r"""Gets the total_floors of this RealEstateCertificateResult.
 
         总楼层数。 
 
@@ -333,7 +333,7 @@ class RealEstateCertificateResult:
 
     @total_floors.setter
     def total_floors(self, total_floors):
-        """Sets the total_floors of this RealEstateCertificateResult.
+        r"""Sets the total_floors of this RealEstateCertificateResult.
 
         总楼层数。 
 
@@ -344,7 +344,7 @@ class RealEstateCertificateResult:
 
     @property
     def floor(self):
-        """Gets the floor of this RealEstateCertificateResult.
+        r"""Gets the floor of this RealEstateCertificateResult.
 
         所在层。 
 
@@ -355,7 +355,7 @@ class RealEstateCertificateResult:
 
     @floor.setter
     def floor(self, floor):
-        """Sets the floor of this RealEstateCertificateResult.
+        r"""Sets the floor of this RealEstateCertificateResult.
 
         所在层。 
 
@@ -366,7 +366,7 @@ class RealEstateCertificateResult:
 
     @property
     def year_built(self):
-        """Gets the year_built of this RealEstateCertificateResult.
+        r"""Gets the year_built of this RealEstateCertificateResult.
 
         建成年份。 
 
@@ -377,7 +377,7 @@ class RealEstateCertificateResult:
 
     @year_built.setter
     def year_built(self, year_built):
-        """Sets the year_built of this RealEstateCertificateResult.
+        r"""Sets the year_built of this RealEstateCertificateResult.
 
         建成年份。 
 
@@ -388,7 +388,7 @@ class RealEstateCertificateResult:
 
     @property
     def structure(self):
-        """Gets the structure of this RealEstateCertificateResult.
+        r"""Gets the structure of this RealEstateCertificateResult.
 
         结构。 
 
@@ -399,7 +399,7 @@ class RealEstateCertificateResult:
 
     @structure.setter
     def structure(self, structure):
-        """Sets the structure of this RealEstateCertificateResult.
+        r"""Sets the structure of this RealEstateCertificateResult.
 
         结构。 
 
@@ -410,7 +410,7 @@ class RealEstateCertificateResult:
 
     @property
     def area(self):
-        """Gets the area of this RealEstateCertificateResult.
+        r"""Gets the area of this RealEstateCertificateResult.
 
         建筑面积。 
 
@@ -421,7 +421,7 @@ class RealEstateCertificateResult:
 
     @area.setter
     def area(self, area):
-        """Sets the area of this RealEstateCertificateResult.
+        r"""Sets the area of this RealEstateCertificateResult.
 
         建筑面积。 
 
@@ -432,7 +432,7 @@ class RealEstateCertificateResult:
 
     @property
     def revenue_stamps(self):
-        """Gets the revenue_stamps of this RealEstateCertificateResult.
+        r"""Gets the revenue_stamps of this RealEstateCertificateResult.
 
         印花税票个数。 
 
@@ -443,7 +443,7 @@ class RealEstateCertificateResult:
 
     @revenue_stamps.setter
     def revenue_stamps(self, revenue_stamps):
-        """Sets the revenue_stamps of this RealEstateCertificateResult.
+        r"""Sets the revenue_stamps of this RealEstateCertificateResult.
 
         印花税票个数。 
 
@@ -454,7 +454,7 @@ class RealEstateCertificateResult:
 
     @property
     def ownership_certificate_no(self):
-        """Gets the ownership_certificate_no of this RealEstateCertificateResult.
+        r"""Gets the ownership_certificate_no of this RealEstateCertificateResult.
 
         产权证号。 
 
@@ -465,7 +465,7 @@ class RealEstateCertificateResult:
 
     @ownership_certificate_no.setter
     def ownership_certificate_no(self, ownership_certificate_no):
-        """Sets the ownership_certificate_no of this RealEstateCertificateResult.
+        r"""Sets the ownership_certificate_no of this RealEstateCertificateResult.
 
         产权证号。 
 
@@ -476,7 +476,7 @@ class RealEstateCertificateResult:
 
     @property
     def estate_holder(self):
-        """Gets the estate_holder of this RealEstateCertificateResult.
+        r"""Gets the estate_holder of this RealEstateCertificateResult.
 
         房屋所有权人。 
 
@@ -487,7 +487,7 @@ class RealEstateCertificateResult:
 
     @estate_holder.setter
     def estate_holder(self, estate_holder):
-        """Sets the estate_holder of this RealEstateCertificateResult.
+        r"""Sets the estate_holder of this RealEstateCertificateResult.
 
         房屋所有权人。 
 
@@ -498,7 +498,7 @@ class RealEstateCertificateResult:
 
     @property
     def obligee(self):
-        """Gets the obligee of this RealEstateCertificateResult.
+        r"""Gets the obligee of this RealEstateCertificateResult.
 
         权利人。 
 
@@ -509,7 +509,7 @@ class RealEstateCertificateResult:
 
     @obligee.setter
     def obligee(self, obligee):
-        """Sets the obligee of this RealEstateCertificateResult.
+        r"""Sets the obligee of this RealEstateCertificateResult.
 
         权利人。 
 
@@ -520,7 +520,7 @@ class RealEstateCertificateResult:
 
     @property
     def ownership(self):
-        """Gets the ownership of this RealEstateCertificateResult.
+        r"""Gets the ownership of this RealEstateCertificateResult.
 
         共有情况。 
 
@@ -531,7 +531,7 @@ class RealEstateCertificateResult:
 
     @ownership.setter
     def ownership(self, ownership):
-        """Sets the ownership of this RealEstateCertificateResult.
+        r"""Sets the ownership of this RealEstateCertificateResult.
 
         共有情况。 
 
@@ -542,7 +542,7 @@ class RealEstateCertificateResult:
 
     @property
     def property_unit_no(self):
-        """Gets the property_unit_no of this RealEstateCertificateResult.
+        r"""Gets the property_unit_no of this RealEstateCertificateResult.
 
         不动产单元号。 
 
@@ -553,7 +553,7 @@ class RealEstateCertificateResult:
 
     @property_unit_no.setter
     def property_unit_no(self, property_unit_no):
-        """Sets the property_unit_no of this RealEstateCertificateResult.
+        r"""Sets the property_unit_no of this RealEstateCertificateResult.
 
         不动产单元号。 
 
@@ -564,7 +564,7 @@ class RealEstateCertificateResult:
 
     @property
     def right_type(self):
-        """Gets the right_type of this RealEstateCertificateResult.
+        r"""Gets the right_type of this RealEstateCertificateResult.
 
         权利类型。 
 
@@ -575,7 +575,7 @@ class RealEstateCertificateResult:
 
     @right_type.setter
     def right_type(self, right_type):
-        """Sets the right_type of this RealEstateCertificateResult.
+        r"""Sets the right_type of this RealEstateCertificateResult.
 
         权利类型。 
 
@@ -586,7 +586,7 @@ class RealEstateCertificateResult:
 
     @property
     def right_nature(self):
-        """Gets the right_nature of this RealEstateCertificateResult.
+        r"""Gets the right_nature of this RealEstateCertificateResult.
 
         权利性质。 
 
@@ -597,7 +597,7 @@ class RealEstateCertificateResult:
 
     @right_nature.setter
     def right_nature(self, right_nature):
-        """Sets the right_nature of this RealEstateCertificateResult.
+        r"""Sets the right_nature of this RealEstateCertificateResult.
 
         权利性质。 
 
@@ -608,7 +608,7 @@ class RealEstateCertificateResult:
 
     @property
     def usage(self):
-        """Gets the usage of this RealEstateCertificateResult.
+        r"""Gets the usage of this RealEstateCertificateResult.
 
         使用用途。 
 
@@ -619,7 +619,7 @@ class RealEstateCertificateResult:
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this RealEstateCertificateResult.
+        r"""Sets the usage of this RealEstateCertificateResult.
 
         使用用途。 
 
@@ -630,7 +630,7 @@ class RealEstateCertificateResult:
 
     @property
     def intended_usage(self):
-        """Gets the intended_usage of this RealEstateCertificateResult.
+        r"""Gets the intended_usage of this RealEstateCertificateResult.
 
         设计、规划用途。 
 
@@ -641,7 +641,7 @@ class RealEstateCertificateResult:
 
     @intended_usage.setter
     def intended_usage(self, intended_usage):
-        """Sets the intended_usage of this RealEstateCertificateResult.
+        r"""Sets the intended_usage of this RealEstateCertificateResult.
 
         设计、规划用途。 
 
@@ -652,7 +652,7 @@ class RealEstateCertificateResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this RealEstateCertificateResult.
+        r"""Gets the confidence of this RealEstateCertificateResult.
 
         各个字段的置信度。 
 
@@ -663,7 +663,7 @@ class RealEstateCertificateResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this RealEstateCertificateResult.
+        r"""Sets the confidence of this RealEstateCertificateResult.
 
         各个字段的置信度。 
 

@@ -31,7 +31,7 @@ class ShowPlanJournalsRequest:
     }
 
     def __init__(self, project_id=None, plan_id=None, offset=None, limit=None):
-        """ShowPlanJournalsRequest
+        r"""ShowPlanJournalsRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowPlanJournalsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowPlanJournalsRequest.
+        r"""Gets the project_id of this ShowPlanJournalsRequest.
 
         项目id，项目唯一标识，固定长度32位字符
 
@@ -71,7 +71,7 @@ class ShowPlanJournalsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowPlanJournalsRequest.
+        r"""Sets the project_id of this ShowPlanJournalsRequest.
 
         项目id，项目唯一标识，固定长度32位字符
 
@@ -82,7 +82,7 @@ class ShowPlanJournalsRequest:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this ShowPlanJournalsRequest.
+        r"""Gets the plan_id of this ShowPlanJournalsRequest.
 
         测试计划id，测试计划的唯一标识，长度11-34位字符
 
@@ -93,7 +93,7 @@ class ShowPlanJournalsRequest:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this ShowPlanJournalsRequest.
+        r"""Sets the plan_id of this ShowPlanJournalsRequest.
 
         测试计划id，测试计划的唯一标识，长度11-34位字符
 
@@ -104,7 +104,7 @@ class ShowPlanJournalsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowPlanJournalsRequest.
+        r"""Gets the offset of this ShowPlanJournalsRequest.
 
         起始偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -115,7 +115,7 @@ class ShowPlanJournalsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowPlanJournalsRequest.
+        r"""Sets the offset of this ShowPlanJournalsRequest.
 
         起始偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -126,7 +126,7 @@ class ShowPlanJournalsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowPlanJournalsRequest.
+        r"""Gets the limit of this ShowPlanJournalsRequest.
 
         每页显示的条目数量,最大支持200条
 
@@ -137,7 +137,7 @@ class ShowPlanJournalsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowPlanJournalsRequest.
+        r"""Sets the limit of this ShowPlanJournalsRequest.
 
         每页显示的条目数量,最大支持200条
 

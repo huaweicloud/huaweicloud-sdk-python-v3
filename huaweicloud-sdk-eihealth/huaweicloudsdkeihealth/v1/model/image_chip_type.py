@@ -27,7 +27,7 @@ class ImageChipType:
     }
 
     def __init__(self):
-        """ImageChipType
+        r"""ImageChipType
 
         The model defined in huaweicloud sdk
 

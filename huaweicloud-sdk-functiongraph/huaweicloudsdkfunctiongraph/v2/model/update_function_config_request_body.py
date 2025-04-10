@@ -95,7 +95,7 @@ class UpdateFunctionConfigRequestBody:
     }
 
     def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, gpu_type=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, peering_cidr=None, mount_config=None, strategy_config=None, custom_image=None, extend_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, ephemeral_storage=None, enterprise_project_id=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_auth_in_header=None, domain_names=None, restore_hook_handler=None, restore_hook_timeout=None, heartbeat_handler=None, enable_class_isolation=None, enable_lts_log=None, lts_custom_tag=None):
-        """UpdateFunctionConfigRequestBody
+        r"""UpdateFunctionConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -283,7 +283,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def func_name(self):
-        """Gets the func_name of this UpdateFunctionConfigRequestBody.
+        r"""Gets the func_name of this UpdateFunctionConfigRequestBody.
 
         函数名称。
 
@@ -294,7 +294,7 @@ class UpdateFunctionConfigRequestBody:
 
     @func_name.setter
     def func_name(self, func_name):
-        """Sets the func_name of this UpdateFunctionConfigRequestBody.
+        r"""Sets the func_name of this UpdateFunctionConfigRequestBody.
 
         函数名称。
 
@@ -305,7 +305,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def runtime(self):
-        """Gets the runtime of this UpdateFunctionConfigRequestBody.
+        r"""Gets the runtime of this UpdateFunctionConfigRequestBody.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -316,7 +316,7 @@ class UpdateFunctionConfigRequestBody:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this UpdateFunctionConfigRequestBody.
+        r"""Sets the runtime of this UpdateFunctionConfigRequestBody.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -327,7 +327,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def timeout(self):
-        """Gets the timeout of this UpdateFunctionConfigRequestBody.
+        r"""Gets the timeout of this UpdateFunctionConfigRequestBody.
 
         函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
@@ -338,7 +338,7 @@ class UpdateFunctionConfigRequestBody:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this UpdateFunctionConfigRequestBody.
+        r"""Sets the timeout of this UpdateFunctionConfigRequestBody.
 
         函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
@@ -349,7 +349,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def handler(self):
-        """Gets the handler of this UpdateFunctionConfigRequestBody.
+        r"""Gets the handler of this UpdateFunctionConfigRequestBody.
 
         函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
 
@@ -360,7 +360,7 @@ class UpdateFunctionConfigRequestBody:
 
     @handler.setter
     def handler(self, handler):
-        """Sets the handler of this UpdateFunctionConfigRequestBody.
+        r"""Sets the handler of this UpdateFunctionConfigRequestBody.
 
         函数执行入口 规则：xx.xx，必须包含“. ” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
 
@@ -371,7 +371,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def memory_size(self):
-        """Gets the memory_size of this UpdateFunctionConfigRequestBody.
+        r"""Gets the memory_size of this UpdateFunctionConfigRequestBody.
 
         函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
 
@@ -382,7 +382,7 @@ class UpdateFunctionConfigRequestBody:
 
     @memory_size.setter
     def memory_size(self, memory_size):
-        """Sets the memory_size of this UpdateFunctionConfigRequestBody.
+        r"""Sets the memory_size of this UpdateFunctionConfigRequestBody.
 
         函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
 
@@ -393,7 +393,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def gpu_memory(self):
-        """Gets the gpu_memory of this UpdateFunctionConfigRequestBody.
+        r"""Gets the gpu_memory of this UpdateFunctionConfigRequestBody.
 
         函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
 
@@ -404,7 +404,7 @@ class UpdateFunctionConfigRequestBody:
 
     @gpu_memory.setter
     def gpu_memory(self, gpu_memory):
-        """Sets the gpu_memory of this UpdateFunctionConfigRequestBody.
+        r"""Sets the gpu_memory of this UpdateFunctionConfigRequestBody.
 
         函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
 
@@ -415,7 +415,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def gpu_type(self):
-        """Gets the gpu_type of this UpdateFunctionConfigRequestBody.
+        r"""Gets the gpu_type of this UpdateFunctionConfigRequestBody.
 
         显卡类型。
 
@@ -426,7 +426,7 @@ class UpdateFunctionConfigRequestBody:
 
     @gpu_type.setter
     def gpu_type(self, gpu_type):
-        """Sets the gpu_type of this UpdateFunctionConfigRequestBody.
+        r"""Sets the gpu_type of this UpdateFunctionConfigRequestBody.
 
         显卡类型。
 
@@ -437,7 +437,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def user_data(self):
-        """Gets the user_data of this UpdateFunctionConfigRequestBody.
+        r"""Gets the user_data of this UpdateFunctionConfigRequestBody.
 
         用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host={host_ip}，最多定义20个，总长度不超过4KB。
 
@@ -448,7 +448,7 @@ class UpdateFunctionConfigRequestBody:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this UpdateFunctionConfigRequestBody.
+        r"""Sets the user_data of this UpdateFunctionConfigRequestBody.
 
         用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host={host_ip}，最多定义20个，总长度不超过4KB。
 
@@ -459,7 +459,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def encrypted_user_data(self):
-        """Gets the encrypted_user_data of this UpdateFunctionConfigRequestBody.
+        r"""Gets the encrypted_user_data of this UpdateFunctionConfigRequestBody.
 
         用户自定义的name/value信息，用于需要加密的配置。
 
@@ -470,7 +470,7 @@ class UpdateFunctionConfigRequestBody:
 
     @encrypted_user_data.setter
     def encrypted_user_data(self, encrypted_user_data):
-        """Sets the encrypted_user_data of this UpdateFunctionConfigRequestBody.
+        r"""Sets the encrypted_user_data of this UpdateFunctionConfigRequestBody.
 
         用户自定义的name/value信息，用于需要加密的配置。
 
@@ -481,7 +481,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def xrole(self):
-        """Gets the xrole of this UpdateFunctionConfigRequestBody.
+        r"""Gets the xrole of this UpdateFunctionConfigRequestBody.
 
         函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
 
@@ -492,7 +492,7 @@ class UpdateFunctionConfigRequestBody:
 
     @xrole.setter
     def xrole(self, xrole):
-        """Sets the xrole of this UpdateFunctionConfigRequestBody.
+        r"""Sets the xrole of this UpdateFunctionConfigRequestBody.
 
         函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
 
@@ -503,7 +503,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def app_xrole(self):
-        """Gets the app_xrole of this UpdateFunctionConfigRequestBody.
+        r"""Gets the app_xrole of this UpdateFunctionConfigRequestBody.
 
         函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
 
@@ -514,7 +514,7 @@ class UpdateFunctionConfigRequestBody:
 
     @app_xrole.setter
     def app_xrole(self, app_xrole):
-        """Sets the app_xrole of this UpdateFunctionConfigRequestBody.
+        r"""Sets the app_xrole of this UpdateFunctionConfigRequestBody.
 
         函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
 
@@ -525,7 +525,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateFunctionConfigRequestBody.
+        r"""Gets the description of this UpdateFunctionConfigRequestBody.
 
         函数描述。
 
@@ -536,7 +536,7 @@ class UpdateFunctionConfigRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateFunctionConfigRequestBody.
+        r"""Sets the description of this UpdateFunctionConfigRequestBody.
 
         函数描述。
 
@@ -547,7 +547,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def func_vpc(self):
-        """Gets the func_vpc of this UpdateFunctionConfigRequestBody.
+        r"""Gets the func_vpc of this UpdateFunctionConfigRequestBody.
 
         :return: The func_vpc of this UpdateFunctionConfigRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
@@ -556,7 +556,7 @@ class UpdateFunctionConfigRequestBody:
 
     @func_vpc.setter
     def func_vpc(self, func_vpc):
-        """Sets the func_vpc of this UpdateFunctionConfigRequestBody.
+        r"""Sets the func_vpc of this UpdateFunctionConfigRequestBody.
 
         :param func_vpc: The func_vpc of this UpdateFunctionConfigRequestBody.
         :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
@@ -565,7 +565,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def peering_cidr(self):
-        """Gets the peering_cidr of this UpdateFunctionConfigRequestBody.
+        r"""Gets the peering_cidr of this UpdateFunctionConfigRequestBody.
 
         VPC对等连接网段。您可以声明代码中使用到的VPC网段，用以检测是否与服务使用VPC网段冲突。网段间使用分号分隔且不能超过5个。
 
@@ -576,7 +576,7 @@ class UpdateFunctionConfigRequestBody:
 
     @peering_cidr.setter
     def peering_cidr(self, peering_cidr):
-        """Sets the peering_cidr of this UpdateFunctionConfigRequestBody.
+        r"""Sets the peering_cidr of this UpdateFunctionConfigRequestBody.
 
         VPC对等连接网段。您可以声明代码中使用到的VPC网段，用以检测是否与服务使用VPC网段冲突。网段间使用分号分隔且不能超过5个。
 
@@ -587,7 +587,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def mount_config(self):
-        """Gets the mount_config of this UpdateFunctionConfigRequestBody.
+        r"""Gets the mount_config of this UpdateFunctionConfigRequestBody.
 
         :return: The mount_config of this UpdateFunctionConfigRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
@@ -596,7 +596,7 @@ class UpdateFunctionConfigRequestBody:
 
     @mount_config.setter
     def mount_config(self, mount_config):
-        """Sets the mount_config of this UpdateFunctionConfigRequestBody.
+        r"""Sets the mount_config of this UpdateFunctionConfigRequestBody.
 
         :param mount_config: The mount_config of this UpdateFunctionConfigRequestBody.
         :type mount_config: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
@@ -605,7 +605,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def strategy_config(self):
-        """Gets the strategy_config of this UpdateFunctionConfigRequestBody.
+        r"""Gets the strategy_config of this UpdateFunctionConfigRequestBody.
 
         :return: The strategy_config of this UpdateFunctionConfigRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
@@ -614,7 +614,7 @@ class UpdateFunctionConfigRequestBody:
 
     @strategy_config.setter
     def strategy_config(self, strategy_config):
-        """Sets the strategy_config of this UpdateFunctionConfigRequestBody.
+        r"""Sets the strategy_config of this UpdateFunctionConfigRequestBody.
 
         :param strategy_config: The strategy_config of this UpdateFunctionConfigRequestBody.
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
@@ -623,7 +623,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def custom_image(self):
-        """Gets the custom_image of this UpdateFunctionConfigRequestBody.
+        r"""Gets the custom_image of this UpdateFunctionConfigRequestBody.
 
         :return: The custom_image of this UpdateFunctionConfigRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
@@ -632,7 +632,7 @@ class UpdateFunctionConfigRequestBody:
 
     @custom_image.setter
     def custom_image(self, custom_image):
-        """Sets the custom_image of this UpdateFunctionConfigRequestBody.
+        r"""Sets the custom_image of this UpdateFunctionConfigRequestBody.
 
         :param custom_image: The custom_image of this UpdateFunctionConfigRequestBody.
         :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
@@ -641,7 +641,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def extend_config(self):
-        """Gets the extend_config of this UpdateFunctionConfigRequestBody.
+        r"""Gets the extend_config of this UpdateFunctionConfigRequestBody.
 
         函数扩展配置。
 
@@ -652,7 +652,7 @@ class UpdateFunctionConfigRequestBody:
 
     @extend_config.setter
     def extend_config(self, extend_config):
-        """Sets the extend_config of this UpdateFunctionConfigRequestBody.
+        r"""Sets the extend_config of this UpdateFunctionConfigRequestBody.
 
         函数扩展配置。
 
@@ -663,7 +663,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def initializer_handler(self):
-        """Gets the initializer_handler of this UpdateFunctionConfigRequestBody.
+        r"""Gets the initializer_handler of this UpdateFunctionConfigRequestBody.
 
         函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
@@ -674,7 +674,7 @@ class UpdateFunctionConfigRequestBody:
 
     @initializer_handler.setter
     def initializer_handler(self, initializer_handler):
-        """Sets the initializer_handler of this UpdateFunctionConfigRequestBody.
+        r"""Sets the initializer_handler of this UpdateFunctionConfigRequestBody.
 
         函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
@@ -685,7 +685,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def initializer_timeout(self):
-        """Gets the initializer_timeout of this UpdateFunctionConfigRequestBody.
+        r"""Gets the initializer_timeout of this UpdateFunctionConfigRequestBody.
 
         初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
@@ -696,7 +696,7 @@ class UpdateFunctionConfigRequestBody:
 
     @initializer_timeout.setter
     def initializer_timeout(self, initializer_timeout):
-        """Sets the initializer_timeout of this UpdateFunctionConfigRequestBody.
+        r"""Sets the initializer_timeout of this UpdateFunctionConfigRequestBody.
 
         初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
@@ -707,7 +707,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def pre_stop_handler(self):
-        """Gets the pre_stop_handler of this UpdateFunctionConfigRequestBody.
+        r"""Gets the pre_stop_handler of this UpdateFunctionConfigRequestBody.
 
         函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
 
@@ -718,7 +718,7 @@ class UpdateFunctionConfigRequestBody:
 
     @pre_stop_handler.setter
     def pre_stop_handler(self, pre_stop_handler):
-        """Sets the pre_stop_handler of this UpdateFunctionConfigRequestBody.
+        r"""Sets the pre_stop_handler of this UpdateFunctionConfigRequestBody.
 
         函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
 
@@ -729,7 +729,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def pre_stop_timeout(self):
-        """Gets the pre_stop_timeout of this UpdateFunctionConfigRequestBody.
+        r"""Gets the pre_stop_timeout of this UpdateFunctionConfigRequestBody.
 
         初始化超时时间，超时函数将被强行停止，范围1～90秒。
 
@@ -740,7 +740,7 @@ class UpdateFunctionConfigRequestBody:
 
     @pre_stop_timeout.setter
     def pre_stop_timeout(self, pre_stop_timeout):
-        """Sets the pre_stop_timeout of this UpdateFunctionConfigRequestBody.
+        r"""Sets the pre_stop_timeout of this UpdateFunctionConfigRequestBody.
 
         初始化超时时间，超时函数将被强行停止，范围1～90秒。
 
@@ -751,7 +751,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def ephemeral_storage(self):
-        """Gets the ephemeral_storage of this UpdateFunctionConfigRequestBody.
+        r"""Gets the ephemeral_storage of this UpdateFunctionConfigRequestBody.
 
         临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
 
@@ -762,7 +762,7 @@ class UpdateFunctionConfigRequestBody:
 
     @ephemeral_storage.setter
     def ephemeral_storage(self, ephemeral_storage):
-        """Sets the ephemeral_storage of this UpdateFunctionConfigRequestBody.
+        r"""Sets the ephemeral_storage of this UpdateFunctionConfigRequestBody.
 
         临时存储大小。默认情况下会为函数的/tmp目录分配512MB的空间。您可以通过临时存储设置将函数的/tmp目录大小调整为10G。
 
@@ -773,7 +773,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateFunctionConfigRequestBody.
+        r"""Gets the enterprise_project_id of this UpdateFunctionConfigRequestBody.
 
         企业项目ID，在企业用户创建函数时必填。
 
@@ -784,7 +784,7 @@ class UpdateFunctionConfigRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateFunctionConfigRequestBody.
+        r"""Sets the enterprise_project_id of this UpdateFunctionConfigRequestBody.
 
         企业项目ID，在企业用户创建函数时必填。
 
@@ -795,7 +795,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def log_config(self):
-        """Gets the log_config of this UpdateFunctionConfigRequestBody.
+        r"""Gets the log_config of this UpdateFunctionConfigRequestBody.
 
         :return: The log_config of this UpdateFunctionConfigRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncLogConfig`
@@ -804,7 +804,7 @@ class UpdateFunctionConfigRequestBody:
 
     @log_config.setter
     def log_config(self, log_config):
-        """Sets the log_config of this UpdateFunctionConfigRequestBody.
+        r"""Sets the log_config of this UpdateFunctionConfigRequestBody.
 
         :param log_config: The log_config of this UpdateFunctionConfigRequestBody.
         :type log_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncLogConfig`
@@ -813,7 +813,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def network_controller(self):
-        """Gets the network_controller of this UpdateFunctionConfigRequestBody.
+        r"""Gets the network_controller of this UpdateFunctionConfigRequestBody.
 
         :return: The network_controller of this UpdateFunctionConfigRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
@@ -822,7 +822,7 @@ class UpdateFunctionConfigRequestBody:
 
     @network_controller.setter
     def network_controller(self, network_controller):
-        """Sets the network_controller of this UpdateFunctionConfigRequestBody.
+        r"""Sets the network_controller of this UpdateFunctionConfigRequestBody.
 
         :param network_controller: The network_controller of this UpdateFunctionConfigRequestBody.
         :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
@@ -831,7 +831,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def is_stateful_function(self):
-        """Gets the is_stateful_function of this UpdateFunctionConfigRequestBody.
+        r"""Gets the is_stateful_function of this UpdateFunctionConfigRequestBody.
 
         是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
 
@@ -842,7 +842,7 @@ class UpdateFunctionConfigRequestBody:
 
     @is_stateful_function.setter
     def is_stateful_function(self, is_stateful_function):
-        """Sets the is_stateful_function of this UpdateFunctionConfigRequestBody.
+        r"""Sets the is_stateful_function of this UpdateFunctionConfigRequestBody.
 
         是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
 
@@ -853,7 +853,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def enable_dynamic_memory(self):
-        """Gets the enable_dynamic_memory of this UpdateFunctionConfigRequestBody.
+        r"""Gets the enable_dynamic_memory of this UpdateFunctionConfigRequestBody.
 
         是否启动动态内存配置
 
@@ -864,7 +864,7 @@ class UpdateFunctionConfigRequestBody:
 
     @enable_dynamic_memory.setter
     def enable_dynamic_memory(self, enable_dynamic_memory):
-        """Sets the enable_dynamic_memory of this UpdateFunctionConfigRequestBody.
+        r"""Sets the enable_dynamic_memory of this UpdateFunctionConfigRequestBody.
 
         是否启动动态内存配置
 
@@ -875,7 +875,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def enable_auth_in_header(self):
-        """Gets the enable_auth_in_header of this UpdateFunctionConfigRequestBody.
+        r"""Gets the enable_auth_in_header of this UpdateFunctionConfigRequestBody.
 
         是否允许在请求头中添加鉴权信息
 
@@ -886,7 +886,7 @@ class UpdateFunctionConfigRequestBody:
 
     @enable_auth_in_header.setter
     def enable_auth_in_header(self, enable_auth_in_header):
-        """Sets the enable_auth_in_header of this UpdateFunctionConfigRequestBody.
+        r"""Sets the enable_auth_in_header of this UpdateFunctionConfigRequestBody.
 
         是否允许在请求头中添加鉴权信息
 
@@ -897,7 +897,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def domain_names(self):
-        """Gets the domain_names of this UpdateFunctionConfigRequestBody.
+        r"""Gets the domain_names of this UpdateFunctionConfigRequestBody.
 
         内网域名配置。
 
@@ -908,7 +908,7 @@ class UpdateFunctionConfigRequestBody:
 
     @domain_names.setter
     def domain_names(self, domain_names):
-        """Sets the domain_names of this UpdateFunctionConfigRequestBody.
+        r"""Sets the domain_names of this UpdateFunctionConfigRequestBody.
 
         内网域名配置。
 
@@ -919,7 +919,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def restore_hook_handler(self):
-        """Gets the restore_hook_handler of this UpdateFunctionConfigRequestBody.
+        r"""Gets the restore_hook_handler of this UpdateFunctionConfigRequestBody.
 
         函数快照式冷启动Restore Hook入口，仅支持Java，规则：xx.xx，必须包含“. ”。如：com.xxx.demo.Test.restoreHook
 
@@ -930,7 +930,7 @@ class UpdateFunctionConfigRequestBody:
 
     @restore_hook_handler.setter
     def restore_hook_handler(self, restore_hook_handler):
-        """Sets the restore_hook_handler of this UpdateFunctionConfigRequestBody.
+        r"""Sets the restore_hook_handler of this UpdateFunctionConfigRequestBody.
 
         函数快照式冷启动Restore Hook入口，仅支持Java，规则：xx.xx，必须包含“. ”。如：com.xxx.demo.Test.restoreHook
 
@@ -941,7 +941,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def restore_hook_timeout(self):
-        """Gets the restore_hook_timeout of this UpdateFunctionConfigRequestBody.
+        r"""Gets the restore_hook_timeout of this UpdateFunctionConfigRequestBody.
 
         快照冷启动Restore Hook的超时时间，超时函数将被强行停止，范围1～300秒。
 
@@ -952,7 +952,7 @@ class UpdateFunctionConfigRequestBody:
 
     @restore_hook_timeout.setter
     def restore_hook_timeout(self, restore_hook_timeout):
-        """Sets the restore_hook_timeout of this UpdateFunctionConfigRequestBody.
+        r"""Sets the restore_hook_timeout of this UpdateFunctionConfigRequestBody.
 
         快照冷启动Restore Hook的超时时间，超时函数将被强行停止，范围1～300秒。
 
@@ -963,7 +963,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def heartbeat_handler(self):
-        """Gets the heartbeat_handler of this UpdateFunctionConfigRequestBody.
+        r"""Gets the heartbeat_handler of this UpdateFunctionConfigRequestBody.
 
         心跳函数函数的入口，规则：xx.xx，必须包含“. ”，只支持JAVA运行时配置。 心跳函数入口需要与函数执行入口在同一文件下。在开启心跳函数配置时，此参数必填。
 
@@ -974,7 +974,7 @@ class UpdateFunctionConfigRequestBody:
 
     @heartbeat_handler.setter
     def heartbeat_handler(self, heartbeat_handler):
-        """Sets the heartbeat_handler of this UpdateFunctionConfigRequestBody.
+        r"""Sets the heartbeat_handler of this UpdateFunctionConfigRequestBody.
 
         心跳函数函数的入口，规则：xx.xx，必须包含“. ”，只支持JAVA运行时配置。 心跳函数入口需要与函数执行入口在同一文件下。在开启心跳函数配置时，此参数必填。
 
@@ -985,7 +985,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def enable_class_isolation(self):
-        """Gets the enable_class_isolation of this UpdateFunctionConfigRequestBody.
+        r"""Gets the enable_class_isolation of this UpdateFunctionConfigRequestBody.
 
         类隔离开关，只支持JAVA运行时配置。开启类隔离后可以支持Kafka转储并提升类加载效率，但也可能会导致某些兼容性问题，请谨慎开启。
 
@@ -996,7 +996,7 @@ class UpdateFunctionConfigRequestBody:
 
     @enable_class_isolation.setter
     def enable_class_isolation(self, enable_class_isolation):
-        """Sets the enable_class_isolation of this UpdateFunctionConfigRequestBody.
+        r"""Sets the enable_class_isolation of this UpdateFunctionConfigRequestBody.
 
         类隔离开关，只支持JAVA运行时配置。开启类隔离后可以支持Kafka转储并提升类加载效率，但也可能会导致某些兼容性问题，请谨慎开启。
 
@@ -1007,7 +1007,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def enable_lts_log(self):
-        """Gets the enable_lts_log of this UpdateFunctionConfigRequestBody.
+        r"""Gets the enable_lts_log of this UpdateFunctionConfigRequestBody.
 
         是否开启日志。
 
@@ -1018,7 +1018,7 @@ class UpdateFunctionConfigRequestBody:
 
     @enable_lts_log.setter
     def enable_lts_log(self, enable_lts_log):
-        """Sets the enable_lts_log of this UpdateFunctionConfigRequestBody.
+        r"""Sets the enable_lts_log of this UpdateFunctionConfigRequestBody.
 
         是否开启日志。
 
@@ -1029,7 +1029,7 @@ class UpdateFunctionConfigRequestBody:
 
     @property
     def lts_custom_tag(self):
-        """Gets the lts_custom_tag of this UpdateFunctionConfigRequestBody.
+        r"""Gets the lts_custom_tag of this UpdateFunctionConfigRequestBody.
 
         自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
 
@@ -1040,7 +1040,7 @@ class UpdateFunctionConfigRequestBody:
 
     @lts_custom_tag.setter
     def lts_custom_tag(self, lts_custom_tag):
-        """Sets the lts_custom_tag of this UpdateFunctionConfigRequestBody.
+        r"""Sets the lts_custom_tag of this UpdateFunctionConfigRequestBody.
 
         自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
 

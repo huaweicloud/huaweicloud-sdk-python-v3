@@ -25,7 +25,7 @@ class UnbindingGeipBody:
     }
 
     def __init__(self, global_eip_id=None):
-        """UnbindingGeipBody
+        r"""UnbindingGeipBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UnbindingGeipBody:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this UnbindingGeipBody.
+        r"""Gets the global_eip_id of this UnbindingGeipBody.
 
         全局弹性公网IP的ID
 
@@ -53,7 +53,7 @@ class UnbindingGeipBody:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this UnbindingGeipBody.
+        r"""Sets the global_eip_id of this UnbindingGeipBody.
 
         全局弹性公网IP的ID
 

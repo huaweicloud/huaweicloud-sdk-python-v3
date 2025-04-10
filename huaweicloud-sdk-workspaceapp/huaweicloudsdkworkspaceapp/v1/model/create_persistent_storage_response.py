@@ -36,7 +36,7 @@ class CreatePersistentStorageResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, storage_metadata=None, create_time=None, user_claim_count=None, share_claim_count=None):
-        """CreatePersistentStorageResponse
+        r"""CreatePersistentStorageResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreatePersistentStorageResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreatePersistentStorageResponse.
+        r"""Gets the id of this CreatePersistentStorageResponse.
 
         WKS存储ID。
 
@@ -90,7 +90,7 @@ class CreatePersistentStorageResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreatePersistentStorageResponse.
+        r"""Sets the id of this CreatePersistentStorageResponse.
 
         WKS存储ID。
 
@@ -101,7 +101,7 @@ class CreatePersistentStorageResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreatePersistentStorageResponse.
+        r"""Gets the name of this CreatePersistentStorageResponse.
 
         名称。
 
@@ -112,7 +112,7 @@ class CreatePersistentStorageResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePersistentStorageResponse.
+        r"""Sets the name of this CreatePersistentStorageResponse.
 
         名称。
 
@@ -123,7 +123,7 @@ class CreatePersistentStorageResponse(SdkResponse):
 
     @property
     def storage_metadata(self):
-        """Gets the storage_metadata of this CreatePersistentStorageResponse.
+        r"""Gets the storage_metadata of this CreatePersistentStorageResponse.
 
         :return: The storage_metadata of this CreatePersistentStorageResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.StorageMetadata`
@@ -132,7 +132,7 @@ class CreatePersistentStorageResponse(SdkResponse):
 
     @storage_metadata.setter
     def storage_metadata(self, storage_metadata):
-        """Sets the storage_metadata of this CreatePersistentStorageResponse.
+        r"""Sets the storage_metadata of this CreatePersistentStorageResponse.
 
         :param storage_metadata: The storage_metadata of this CreatePersistentStorageResponse.
         :type storage_metadata: :class:`huaweicloudsdkworkspaceapp.v1.StorageMetadata`
@@ -141,7 +141,7 @@ class CreatePersistentStorageResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreatePersistentStorageResponse.
+        r"""Gets the create_time of this CreatePersistentStorageResponse.
 
         创建时间。
 
@@ -152,7 +152,7 @@ class CreatePersistentStorageResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreatePersistentStorageResponse.
+        r"""Sets the create_time of this CreatePersistentStorageResponse.
 
         创建时间。
 
@@ -163,7 +163,7 @@ class CreatePersistentStorageResponse(SdkResponse):
 
     @property
     def user_claim_count(self):
-        """Gets the user_claim_count of this CreatePersistentStorageResponse.
+        r"""Gets the user_claim_count of this CreatePersistentStorageResponse.
 
         个人目录声明数量。
 
@@ -174,7 +174,7 @@ class CreatePersistentStorageResponse(SdkResponse):
 
     @user_claim_count.setter
     def user_claim_count(self, user_claim_count):
-        """Sets the user_claim_count of this CreatePersistentStorageResponse.
+        r"""Sets the user_claim_count of this CreatePersistentStorageResponse.
 
         个人目录声明数量。
 
@@ -185,7 +185,7 @@ class CreatePersistentStorageResponse(SdkResponse):
 
     @property
     def share_claim_count(self):
-        """Gets the share_claim_count of this CreatePersistentStorageResponse.
+        r"""Gets the share_claim_count of this CreatePersistentStorageResponse.
 
         共享目录声明数量。
 
@@ -196,7 +196,7 @@ class CreatePersistentStorageResponse(SdkResponse):
 
     @share_claim_count.setter
     def share_claim_count(self, share_claim_count):
-        """Sets the share_claim_count of this CreatePersistentStorageResponse.
+        r"""Sets the share_claim_count of this CreatePersistentStorageResponse.
 
         共享目录声明数量。
 

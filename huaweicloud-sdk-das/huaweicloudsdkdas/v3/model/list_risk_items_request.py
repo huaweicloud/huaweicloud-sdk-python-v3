@@ -27,7 +27,7 @@ class ListRiskItemsRequest:
     }
 
     def __init__(self, x_language=None, datastore_type=None):
-        """ListRiskItemsRequest
+        r"""ListRiskItemsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListRiskItemsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListRiskItemsRequest.
+        r"""Gets the x_language of this ListRiskItemsRequest.
 
         语言
 
@@ -60,7 +60,7 @@ class ListRiskItemsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListRiskItemsRequest.
+        r"""Sets the x_language of this ListRiskItemsRequest.
 
         语言
 
@@ -71,7 +71,7 @@ class ListRiskItemsRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListRiskItemsRequest.
+        r"""Gets the datastore_type of this ListRiskItemsRequest.
 
         数据库类型
 
@@ -82,7 +82,7 @@ class ListRiskItemsRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListRiskItemsRequest.
+        r"""Sets the datastore_type of this ListRiskItemsRequest.
 
         数据库类型
 

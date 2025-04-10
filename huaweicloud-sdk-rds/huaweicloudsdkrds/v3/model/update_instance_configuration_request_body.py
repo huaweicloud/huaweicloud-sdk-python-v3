@@ -25,7 +25,7 @@ class UpdateInstanceConfigurationRequestBody:
     }
 
     def __init__(self, values=None):
-        """UpdateInstanceConfigurationRequestBody
+        r"""UpdateInstanceConfigurationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateInstanceConfigurationRequestBody:
 
     @property
     def values(self):
-        """Gets the values of this UpdateInstanceConfigurationRequestBody.
+        r"""Gets the values of this UpdateInstanceConfigurationRequestBody.
 
         参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。  - key：参数名称，\"max_connections\":\"10\"。为空时不修改参数值，key不为空时value也不可为空。 - value：参数值，\"max_connections\":\"10\"。
 
@@ -53,7 +53,7 @@ class UpdateInstanceConfigurationRequestBody:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this UpdateInstanceConfigurationRequestBody.
+        r"""Sets the values of this UpdateInstanceConfigurationRequestBody.
 
         参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。  - key：参数名称，\"max_connections\":\"10\"。为空时不修改参数值，key不为空时value也不可为空。 - value：参数值，\"max_connections\":\"10\"。
 

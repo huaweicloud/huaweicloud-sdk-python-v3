@@ -45,7 +45,7 @@ class QueryProgressResp:
     }
 
     def __init__(self, job_id=None, progress=None, incre_trans_delay=None, incre_trans_delay_millis=None, task_mode=None, transfer_status=None, process_time=None, remaining_time=None, progress_map=None, error_code=None, error_msg=None):
-        """QueryProgressResp
+        r"""QueryProgressResp
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class QueryProgressResp:
 
     @property
     def job_id(self):
-        """Gets the job_id of this QueryProgressResp.
+        r"""Gets the job_id of this QueryProgressResp.
 
         任务Id
 
@@ -124,7 +124,7 @@ class QueryProgressResp:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this QueryProgressResp.
+        r"""Sets the job_id of this QueryProgressResp.
 
         任务Id
 
@@ -135,7 +135,7 @@ class QueryProgressResp:
 
     @property
     def progress(self):
-        """Gets the progress of this QueryProgressResp.
+        r"""Gets the progress of this QueryProgressResp.
 
         迁移百分比
 
@@ -146,7 +146,7 @@ class QueryProgressResp:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this QueryProgressResp.
+        r"""Sets the progress of this QueryProgressResp.
 
         迁移百分比
 
@@ -157,7 +157,7 @@ class QueryProgressResp:
 
     @property
     def incre_trans_delay(self):
-        """Gets the incre_trans_delay of this QueryProgressResp.
+        r"""Gets the incre_trans_delay of this QueryProgressResp.
 
         增量迁移时延。单位：s
 
@@ -168,7 +168,7 @@ class QueryProgressResp:
 
     @incre_trans_delay.setter
     def incre_trans_delay(self, incre_trans_delay):
-        """Sets the incre_trans_delay of this QueryProgressResp.
+        r"""Sets the incre_trans_delay of this QueryProgressResp.
 
         增量迁移时延。单位：s
 
@@ -179,7 +179,7 @@ class QueryProgressResp:
 
     @property
     def incre_trans_delay_millis(self):
-        """Gets the incre_trans_delay_millis of this QueryProgressResp.
+        r"""Gets the incre_trans_delay_millis of this QueryProgressResp.
 
         增量迁移时延。单位：ms
 
@@ -190,7 +190,7 @@ class QueryProgressResp:
 
     @incre_trans_delay_millis.setter
     def incre_trans_delay_millis(self, incre_trans_delay_millis):
-        """Sets the incre_trans_delay_millis of this QueryProgressResp.
+        r"""Sets the incre_trans_delay_millis of this QueryProgressResp.
 
         增量迁移时延。单位：ms
 
@@ -201,7 +201,7 @@ class QueryProgressResp:
 
     @property
     def task_mode(self):
-        """Gets the task_mode of this QueryProgressResp.
+        r"""Gets the task_mode of this QueryProgressResp.
 
         迁移模式。 - FULL_TRANS: 全量 - INCR_TRANS: 增量 - FULL_INCR_TRANS: 全量+增量
 
@@ -212,7 +212,7 @@ class QueryProgressResp:
 
     @task_mode.setter
     def task_mode(self, task_mode):
-        """Sets the task_mode of this QueryProgressResp.
+        r"""Sets the task_mode of this QueryProgressResp.
 
         迁移模式。 - FULL_TRANS: 全量 - INCR_TRANS: 增量 - FULL_INCR_TRANS: 全量+增量
 
@@ -223,7 +223,7 @@ class QueryProgressResp:
 
     @property
     def transfer_status(self):
-        """Gets the transfer_status of this QueryProgressResp.
+        r"""Gets the transfer_status of this QueryProgressResp.
 
         任务状态
 
@@ -234,7 +234,7 @@ class QueryProgressResp:
 
     @transfer_status.setter
     def transfer_status(self, transfer_status):
-        """Sets the transfer_status of this QueryProgressResp.
+        r"""Sets the transfer_status of this QueryProgressResp.
 
         任务状态
 
@@ -245,7 +245,7 @@ class QueryProgressResp:
 
     @property
     def process_time(self):
-        """Gets the process_time of this QueryProgressResp.
+        r"""Gets the process_time of this QueryProgressResp.
 
         迁移时间，时间戳
 
@@ -256,7 +256,7 @@ class QueryProgressResp:
 
     @process_time.setter
     def process_time(self, process_time):
-        """Sets the process_time of this QueryProgressResp.
+        r"""Sets the process_time of this QueryProgressResp.
 
         迁移时间，时间戳
 
@@ -267,7 +267,7 @@ class QueryProgressResp:
 
     @property
     def remaining_time(self):
-        """Gets the remaining_time of this QueryProgressResp.
+        r"""Gets the remaining_time of this QueryProgressResp.
 
         预计剩余时间
 
@@ -278,7 +278,7 @@ class QueryProgressResp:
 
     @remaining_time.setter
     def remaining_time(self, remaining_time):
-        """Sets the remaining_time of this QueryProgressResp.
+        r"""Sets the remaining_time of this QueryProgressResp.
 
         预计剩余时间
 
@@ -289,7 +289,7 @@ class QueryProgressResp:
 
     @property
     def progress_map(self):
-        """Gets the progress_map of this QueryProgressResp.
+        r"""Gets the progress_map of this QueryProgressResp.
 
         数据，结构，索引迁移进度信息体
 
@@ -300,7 +300,7 @@ class QueryProgressResp:
 
     @progress_map.setter
     def progress_map(self, progress_map):
-        """Sets the progress_map of this QueryProgressResp.
+        r"""Sets the progress_map of this QueryProgressResp.
 
         数据，结构，索引迁移进度信息体
 
@@ -311,7 +311,7 @@ class QueryProgressResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this QueryProgressResp.
+        r"""Gets the error_code of this QueryProgressResp.
 
         错误码
 
@@ -322,7 +322,7 @@ class QueryProgressResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this QueryProgressResp.
+        r"""Sets the error_code of this QueryProgressResp.
 
         错误码
 
@@ -333,7 +333,7 @@ class QueryProgressResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this QueryProgressResp.
+        r"""Gets the error_msg of this QueryProgressResp.
 
         错误信息
 
@@ -344,7 +344,7 @@ class QueryProgressResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this QueryProgressResp.
+        r"""Sets the error_msg of this QueryProgressResp.
 
         错误信息
 

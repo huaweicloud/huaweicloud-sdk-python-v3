@@ -29,7 +29,7 @@ class StartLogsRequest:
     }
 
     def __init__(self, cluster_id=None, action=None, body=None):
-        """StartLogsRequest
+        r"""StartLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class StartLogsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StartLogsRequest.
+        r"""Gets the cluster_id of this StartLogsRequest.
 
         指定开启日志的集群ID。
 
@@ -67,7 +67,7 @@ class StartLogsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StartLogsRequest.
+        r"""Sets the cluster_id of this StartLogsRequest.
 
         指定开启日志的集群ID。
 
@@ -78,7 +78,7 @@ class StartLogsRequest:
 
     @property
     def action(self):
-        """Gets the action of this StartLogsRequest.
+        r"""Gets the action of this StartLogsRequest.
 
         action支持base_log_collect和real_time_log_collect两种，base就是之前历史的能力，real_time为实时采集能力，默认不传就是base，兼容之前的逻辑
 
@@ -89,7 +89,7 @@ class StartLogsRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this StartLogsRequest.
+        r"""Sets the action of this StartLogsRequest.
 
         action支持base_log_collect和real_time_log_collect两种，base就是之前历史的能力，real_time为实时采集能力，默认不传就是base，兼容之前的逻辑
 
@@ -100,7 +100,7 @@ class StartLogsRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartLogsRequest.
+        r"""Gets the body of this StartLogsRequest.
 
         :return: The body of this StartLogsRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.StartLogsReq`
@@ -109,7 +109,7 @@ class StartLogsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartLogsRequest.
+        r"""Sets the body of this StartLogsRequest.
 
         :param body: The body of this StartLogsRequest.
         :type body: :class:`huaweicloudsdkcss.v1.StartLogsReq`

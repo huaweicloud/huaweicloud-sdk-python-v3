@@ -27,7 +27,7 @@ class ApplicableInstanceRsp:
     }
 
     def __init__(self, id=None, name=None):
-        """ApplicableInstanceRsp
+        r"""ApplicableInstanceRsp
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ApplicableInstanceRsp:
 
     @property
     def id(self):
-        """Gets the id of this ApplicableInstanceRsp.
+        r"""Gets the id of this ApplicableInstanceRsp.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class ApplicableInstanceRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApplicableInstanceRsp.
+        r"""Sets the id of this ApplicableInstanceRsp.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class ApplicableInstanceRsp:
 
     @property
     def name(self):
-        """Gets the name of this ApplicableInstanceRsp.
+        r"""Gets the name of this ApplicableInstanceRsp.
 
         实例名称。
 
@@ -81,7 +81,7 @@ class ApplicableInstanceRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicableInstanceRsp.
+        r"""Sets the name of this ApplicableInstanceRsp.
 
         实例名称。
 

@@ -32,7 +32,7 @@ class ShowCommandResponse(SdkResponse):
     }
 
     def __init__(self, service_id=None, command_id=None, command_name=None, description=None):
-        """ShowCommandResponse
+        r"""ShowCommandResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowCommandResponse(SdkResponse):
 
     @property
     def service_id(self):
-        """Gets the service_id of this ShowCommandResponse.
+        r"""Gets the service_id of this ShowCommandResponse.
 
         命令所属服务id
 
@@ -76,7 +76,7 @@ class ShowCommandResponse(SdkResponse):
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ShowCommandResponse.
+        r"""Sets the service_id of this ShowCommandResponse.
 
         命令所属服务id
 
@@ -87,7 +87,7 @@ class ShowCommandResponse(SdkResponse):
 
     @property
     def command_id(self):
-        """Gets the command_id of this ShowCommandResponse.
+        r"""Gets the command_id of this ShowCommandResponse.
 
         命令id
 
@@ -98,7 +98,7 @@ class ShowCommandResponse(SdkResponse):
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this ShowCommandResponse.
+        r"""Sets the command_id of this ShowCommandResponse.
 
         命令id
 
@@ -109,7 +109,7 @@ class ShowCommandResponse(SdkResponse):
 
     @property
     def command_name(self):
-        """Gets the command_name of this ShowCommandResponse.
+        r"""Gets the command_name of this ShowCommandResponse.
 
         命令名称
 
@@ -120,7 +120,7 @@ class ShowCommandResponse(SdkResponse):
 
     @command_name.setter
     def command_name(self, command_name):
-        """Sets the command_name of this ShowCommandResponse.
+        r"""Sets the command_name of this ShowCommandResponse.
 
         命令名称
 
@@ -131,7 +131,7 @@ class ShowCommandResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowCommandResponse.
+        r"""Gets the description of this ShowCommandResponse.
 
         命令描述
 
@@ -142,7 +142,7 @@ class ShowCommandResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowCommandResponse.
+        r"""Sets the description of this ShowCommandResponse.
 
         命令描述
 

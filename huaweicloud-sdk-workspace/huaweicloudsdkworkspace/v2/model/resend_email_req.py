@@ -25,7 +25,7 @@ class ResendEmailReq:
     }
 
     def __init__(self, template_id=None):
-        """ResendEmailReq
+        r"""ResendEmailReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResendEmailReq:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ResendEmailReq.
+        r"""Gets the template_id of this ResendEmailReq.
 
         邮件模板ID。
 
@@ -54,7 +54,7 @@ class ResendEmailReq:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ResendEmailReq.
+        r"""Sets the template_id of this ResendEmailReq.
 
         邮件模板ID。
 

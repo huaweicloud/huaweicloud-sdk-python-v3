@@ -29,7 +29,7 @@ class JobMap:
     }
 
     def __init__(self, old_job_id=None, new_job_id=None, remark=None):
-        """JobMap
+        r"""JobMap
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class JobMap:
 
     @property
     def old_job_id(self):
-        """Gets the old_job_id of this JobMap.
+        r"""Gets the old_job_id of this JobMap.
 
         导入文件中的作业ID。
 
@@ -68,7 +68,7 @@ class JobMap:
 
     @old_job_id.setter
     def old_job_id(self, old_job_id):
-        """Sets the old_job_id of this JobMap.
+        r"""Sets the old_job_id of this JobMap.
 
         导入文件中的作业ID。
 
@@ -79,7 +79,7 @@ class JobMap:
 
     @property
     def new_job_id(self):
-        """Gets the new_job_id of this JobMap.
+        r"""Gets the new_job_id of this JobMap.
 
         导入完成后作业ID，若is_cover=false，服务中已有同名的作业，则为-1。
 
@@ -90,7 +90,7 @@ class JobMap:
 
     @new_job_id.setter
     def new_job_id(self, new_job_id):
-        """Sets the new_job_id of this JobMap.
+        r"""Sets the new_job_id of this JobMap.
 
         导入完成后作业ID，若is_cover=false，服务中已有同名的作业，则为-1。
 
@@ -101,7 +101,7 @@ class JobMap:
 
     @property
     def remark(self):
-        """Gets the remark of this JobMap.
+        r"""Gets the remark of this JobMap.
 
         导入作业结果信息。
 
@@ -112,7 +112,7 @@ class JobMap:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this JobMap.
+        r"""Sets the remark of this JobMap.
 
         导入作业结果信息。
 

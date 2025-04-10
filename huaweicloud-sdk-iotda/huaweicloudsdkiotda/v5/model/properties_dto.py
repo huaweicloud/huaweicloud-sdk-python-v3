@@ -29,7 +29,7 @@ class PropertiesDTO:
     }
 
     def __init__(self, correlation_data=None, response_topic=None, user_properties=None):
-        """PropertiesDTO
+        r"""PropertiesDTO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PropertiesDTO:
 
     @property
     def correlation_data(self):
-        """Gets the correlation_data of this PropertiesDTO.
+        r"""Gets the correlation_data of this PropertiesDTO.
 
         **参数说明**：MQTT 5.0版本请求和响应模式中的相关数据，可选。用户可以通过该参数配置MQTT协议请求和响应模式中的相关数据。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -68,7 +68,7 @@ class PropertiesDTO:
 
     @correlation_data.setter
     def correlation_data(self, correlation_data):
-        """Sets the correlation_data of this PropertiesDTO.
+        r"""Sets the correlation_data of this PropertiesDTO.
 
         **参数说明**：MQTT 5.0版本请求和响应模式中的相关数据，可选。用户可以通过该参数配置MQTT协议请求和响应模式中的相关数据。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -79,7 +79,7 @@ class PropertiesDTO:
 
     @property
     def response_topic(self):
-        """Gets the response_topic of this PropertiesDTO.
+        r"""Gets the response_topic of this PropertiesDTO.
 
         **参数说明**：MQTT 5.0版本请求和响应模式中的响应主题，可选。用户可以通过该参数配置MQTT协议请求和响应模式中的响应主题。 **取值范围**：长度不超过128, 只允许字母、数字、以及_-?=$#+/等字符的组合。
 
@@ -90,7 +90,7 @@ class PropertiesDTO:
 
     @response_topic.setter
     def response_topic(self, response_topic):
-        """Sets the response_topic of this PropertiesDTO.
+        r"""Sets the response_topic of this PropertiesDTO.
 
         **参数说明**：MQTT 5.0版本请求和响应模式中的响应主题，可选。用户可以通过该参数配置MQTT协议请求和响应模式中的响应主题。 **取值范围**：长度不超过128, 只允许字母、数字、以及_-?=$#+/等字符的组合。
 
@@ -101,7 +101,7 @@ class PropertiesDTO:
 
     @property
     def user_properties(self):
-        """Gets the user_properties of this PropertiesDTO.
+        r"""Gets the user_properties of this PropertiesDTO.
 
         **参数说明**：用户自定义属性，可选。用户可以通过该参数配置用户自定义属性。可以配置的最大自定义属性数量为20。
 
@@ -112,7 +112,7 @@ class PropertiesDTO:
 
     @user_properties.setter
     def user_properties(self, user_properties):
-        """Sets the user_properties of this PropertiesDTO.
+        r"""Sets the user_properties of this PropertiesDTO.
 
         **参数说明**：用户自定义属性，可选。用户可以通过该参数配置用户自定义属性。可以配置的最大自定义属性数量为20。
 

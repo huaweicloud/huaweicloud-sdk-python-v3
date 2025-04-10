@@ -27,7 +27,7 @@ class LogoffWebCliRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """LogoffWebCliRequest
+        r"""LogoffWebCliRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class LogoffWebCliRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this LogoffWebCliRequest.
+        r"""Gets the instance_id of this LogoffWebCliRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class LogoffWebCliRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this LogoffWebCliRequest.
+        r"""Sets the instance_id of this LogoffWebCliRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class LogoffWebCliRequest:
 
     @property
     def body(self):
-        """Gets the body of this LogoffWebCliRequest.
+        r"""Gets the body of this LogoffWebCliRequest.
 
         :return: The body of this LogoffWebCliRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.LogoutWebCliBody`
@@ -80,7 +80,7 @@ class LogoffWebCliRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this LogoffWebCliRequest.
+        r"""Sets the body of this LogoffWebCliRequest.
 
         :param body: The body of this LogoffWebCliRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.LogoutWebCliBody`

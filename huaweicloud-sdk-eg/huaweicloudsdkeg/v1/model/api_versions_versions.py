@@ -35,7 +35,7 @@ class ApiVersionsVersions:
     }
 
     def __init__(self, id=None, links=None, version=None, min_version=None, status=None, updated=None):
-        """ApiVersionsVersions
+        r"""ApiVersionsVersions
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ApiVersionsVersions:
 
     @property
     def id(self):
-        """Gets the id of this ApiVersionsVersions.
+        r"""Gets the id of this ApiVersionsVersions.
 
         版本号，如v1
 
@@ -89,7 +89,7 @@ class ApiVersionsVersions:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiVersionsVersions.
+        r"""Sets the id of this ApiVersionsVersions.
 
         版本号，如v1
 
@@ -100,7 +100,7 @@ class ApiVersionsVersions:
 
     @property
     def links(self):
-        """Gets the links of this ApiVersionsVersions.
+        r"""Gets the links of this ApiVersionsVersions.
 
         url地址
 
@@ -111,7 +111,7 @@ class ApiVersionsVersions:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ApiVersionsVersions.
+        r"""Sets the links of this ApiVersionsVersions.
 
         url地址
 
@@ -122,7 +122,7 @@ class ApiVersionsVersions:
 
     @property
     def version(self):
-        """Gets the version of this ApiVersionsVersions.
+        r"""Gets the version of this ApiVersionsVersions.
 
         若该版本API支持微版本，则为支持的最大微版本号，如果不支持微版本，则为空
 
@@ -133,7 +133,7 @@ class ApiVersionsVersions:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApiVersionsVersions.
+        r"""Sets the version of this ApiVersionsVersions.
 
         若该版本API支持微版本，则为支持的最大微版本号，如果不支持微版本，则为空
 
@@ -144,7 +144,7 @@ class ApiVersionsVersions:
 
     @property
     def min_version(self):
-        """Gets the min_version of this ApiVersionsVersions.
+        r"""Gets the min_version of this ApiVersionsVersions.
 
         若该版本API支持微版本，则为支持的最小微版本号，如果不支持微版本，则为空
 
@@ -155,7 +155,7 @@ class ApiVersionsVersions:
 
     @min_version.setter
     def min_version(self, min_version):
-        """Sets the min_version of this ApiVersionsVersions.
+        r"""Sets the min_version of this ApiVersionsVersions.
 
         若该版本API支持微版本，则为支持的最小微版本号，如果不支持微版本，则为空
 
@@ -166,7 +166,7 @@ class ApiVersionsVersions:
 
     @property
     def status(self):
-        """Gets the status of this ApiVersionsVersions.
+        r"""Gets the status of this ApiVersionsVersions.
 
         版本状态，支持CURRENT：推荐版本；SUPPORTED：老版本，仍支持使用；DEPRECATED：废弃版本，后续会删除
 
@@ -177,7 +177,7 @@ class ApiVersionsVersions:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ApiVersionsVersions.
+        r"""Sets the status of this ApiVersionsVersions.
 
         版本状态，支持CURRENT：推荐版本；SUPPORTED：老版本，仍支持使用；DEPRECATED：废弃版本，后续会删除
 
@@ -188,7 +188,7 @@ class ApiVersionsVersions:
 
     @property
     def updated(self):
-        """Gets the updated of this ApiVersionsVersions.
+        r"""Gets the updated of this ApiVersionsVersions.
 
         版本发布UTC时间
 
@@ -199,7 +199,7 @@ class ApiVersionsVersions:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ApiVersionsVersions.
+        r"""Sets the updated of this ApiVersionsVersions.
 
         版本发布UTC时间
 

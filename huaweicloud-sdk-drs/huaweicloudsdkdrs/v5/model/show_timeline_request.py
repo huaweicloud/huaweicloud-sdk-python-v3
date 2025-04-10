@@ -31,7 +31,7 @@ class ShowTimelineRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, limit=None, offset=None):
-        """ShowTimelineRequest
+        r"""ShowTimelineRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowTimelineRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowTimelineRequest.
+        r"""Gets the job_id of this ShowTimelineRequest.
 
         任务ID。
 
@@ -73,7 +73,7 @@ class ShowTimelineRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowTimelineRequest.
+        r"""Sets the job_id of this ShowTimelineRequest.
 
         任务ID。
 
@@ -84,7 +84,7 @@ class ShowTimelineRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowTimelineRequest.
+        r"""Gets the x_language of this ShowTimelineRequest.
 
         请求语言类型。
 
@@ -95,7 +95,7 @@ class ShowTimelineRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowTimelineRequest.
+        r"""Sets the x_language of this ShowTimelineRequest.
 
         请求语言类型。
 
@@ -106,7 +106,7 @@ class ShowTimelineRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowTimelineRequest.
+        r"""Gets the limit of this ShowTimelineRequest.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 
@@ -117,7 +117,7 @@ class ShowTimelineRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowTimelineRequest.
+        r"""Sets the limit of this ShowTimelineRequest.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 
@@ -128,7 +128,7 @@ class ShowTimelineRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowTimelineRequest.
+        r"""Gets the offset of this ShowTimelineRequest.
 
         偏移量，表示从此偏移量开始查询， offset 大于等于 0。默认为0
 
@@ -139,7 +139,7 @@ class ShowTimelineRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowTimelineRequest.
+        r"""Sets the offset of this ShowTimelineRequest.
 
         偏移量，表示从此偏移量开始查询， offset 大于等于 0。默认为0
 

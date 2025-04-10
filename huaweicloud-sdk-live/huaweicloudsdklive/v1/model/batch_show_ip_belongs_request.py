@@ -25,7 +25,7 @@ class BatchShowIpBelongsRequest:
     }
 
     def __init__(self, ip=None):
-        """BatchShowIpBelongsRequest
+        r"""BatchShowIpBelongsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchShowIpBelongsRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this BatchShowIpBelongsRequest.
+        r"""Gets the ip of this BatchShowIpBelongsRequest.
 
         IP地址列表，最多20个。
 
@@ -53,7 +53,7 @@ class BatchShowIpBelongsRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this BatchShowIpBelongsRequest.
+        r"""Sets the ip of this BatchShowIpBelongsRequest.
 
         IP地址列表，最多20个。
 

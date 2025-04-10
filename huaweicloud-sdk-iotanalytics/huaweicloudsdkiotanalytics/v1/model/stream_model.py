@@ -29,7 +29,7 @@ class StreamModel:
     }
 
     def __init__(self, inputs=None, job_id=None, outputs=None):
-        """StreamModel
+        r"""StreamModel
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class StreamModel:
 
     @property
     def inputs(self):
-        """Gets the inputs of this StreamModel.
+        r"""Gets the inputs of this StreamModel.
 
         输入参数，最多支持10个；流计算的输入参数名需要在接收数据类型为资产数据的实时分析作业中定义，模型中必须与其保持一致
 
@@ -65,7 +65,7 @@ class StreamModel:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this StreamModel.
+        r"""Sets the inputs of this StreamModel.
 
         输入参数，最多支持10个；流计算的输入参数名需要在接收数据类型为资产数据的实时分析作业中定义，模型中必须与其保持一致
 
@@ -76,7 +76,7 @@ class StreamModel:
 
     @property
     def job_id(self):
-        """Gets the job_id of this StreamModel.
+        r"""Gets the job_id of this StreamModel.
 
         实时分析作业ID
 
@@ -87,7 +87,7 @@ class StreamModel:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StreamModel.
+        r"""Sets the job_id of this StreamModel.
 
         实时分析作业ID
 
@@ -98,7 +98,7 @@ class StreamModel:
 
     @property
     def outputs(self):
-        """Gets the outputs of this StreamModel.
+        r"""Gets the outputs of this StreamModel.
 
         输出属性，最多支持10个
 
@@ -109,7 +109,7 @@ class StreamModel:
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this StreamModel.
+        r"""Sets the outputs of this StreamModel.
 
         输出属性，最多支持10个
 

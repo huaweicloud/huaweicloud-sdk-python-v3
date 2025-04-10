@@ -29,7 +29,7 @@ class SimpleQaPair:
     }
 
     def __init__(self, question=None, domain=None, qa_pair_id=None):
-        """SimpleQaPair
+        r"""SimpleQaPair
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SimpleQaPair:
 
     @property
     def question(self):
-        """Gets the question of this SimpleQaPair.
+        r"""Gets the question of this SimpleQaPair.
 
         问题
 
@@ -68,7 +68,7 @@ class SimpleQaPair:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this SimpleQaPair.
+        r"""Sets the question of this SimpleQaPair.
 
         问题
 
@@ -79,7 +79,7 @@ class SimpleQaPair:
 
     @property
     def domain(self):
-        """Gets the domain of this SimpleQaPair.
+        r"""Gets the domain of this SimpleQaPair.
 
         主题
 
@@ -90,7 +90,7 @@ class SimpleQaPair:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this SimpleQaPair.
+        r"""Sets the domain of this SimpleQaPair.
 
         主题
 
@@ -101,7 +101,7 @@ class SimpleQaPair:
 
     @property
     def qa_pair_id(self):
-        """Gets the qa_pair_id of this SimpleQaPair.
+        r"""Gets the qa_pair_id of this SimpleQaPair.
 
         语料Id
 
@@ -112,7 +112,7 @@ class SimpleQaPair:
 
     @qa_pair_id.setter
     def qa_pair_id(self, qa_pair_id):
-        """Sets the qa_pair_id of this SimpleQaPair.
+        r"""Sets the qa_pair_id of this SimpleQaPair.
 
         语料Id
 

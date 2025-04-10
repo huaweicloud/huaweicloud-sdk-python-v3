@@ -25,7 +25,7 @@ class NeutronCreateSecurityGroupRuleRequestBody:
     }
 
     def __init__(self, security_group_rule=None):
-        """NeutronCreateSecurityGroupRuleRequestBody
+        r"""NeutronCreateSecurityGroupRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NeutronCreateSecurityGroupRuleRequestBody:
 
     @property
     def security_group_rule(self):
-        """Gets the security_group_rule of this NeutronCreateSecurityGroupRuleRequestBody.
+        r"""Gets the security_group_rule of this NeutronCreateSecurityGroupRuleRequestBody.
 
         :return: The security_group_rule of this NeutronCreateSecurityGroupRuleRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateSecurityGroupRuleOption`
@@ -51,7 +51,7 @@ class NeutronCreateSecurityGroupRuleRequestBody:
 
     @security_group_rule.setter
     def security_group_rule(self, security_group_rule):
-        """Sets the security_group_rule of this NeutronCreateSecurityGroupRuleRequestBody.
+        r"""Sets the security_group_rule of this NeutronCreateSecurityGroupRuleRequestBody.
 
         :param security_group_rule: The security_group_rule of this NeutronCreateSecurityGroupRuleRequestBody.
         :type security_group_rule: :class:`huaweicloudsdkvpc.v2.NeutronCreateSecurityGroupRuleOption`

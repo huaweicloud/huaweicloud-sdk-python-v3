@@ -23,7 +23,7 @@ class ShowSummaryRequest:
     }
 
     def __init__(self):
-        """ShowSummaryRequest
+        r"""ShowSummaryRequest
 
         The model defined in huaweicloud sdk
 

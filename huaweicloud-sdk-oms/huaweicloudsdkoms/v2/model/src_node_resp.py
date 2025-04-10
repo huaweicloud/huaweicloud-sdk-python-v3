@@ -35,7 +35,7 @@ class SrcNodeResp:
     }
 
     def __init__(self, bucket=None, cloud_type=None, region=None, app_id=None, object_key=None, list_file=None):
-        """SrcNodeResp
+        r"""SrcNodeResp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SrcNodeResp:
 
     @property
     def bucket(self):
-        """Gets the bucket of this SrcNodeResp.
+        r"""Gets the bucket of this SrcNodeResp.
 
         源端桶的名称。
 
@@ -89,7 +89,7 @@ class SrcNodeResp:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this SrcNodeResp.
+        r"""Sets the bucket of this SrcNodeResp.
 
         源端桶的名称。
 
@@ -100,7 +100,7 @@ class SrcNodeResp:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this SrcNodeResp.
+        r"""Gets the cloud_type of this SrcNodeResp.
 
         源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Google、Qiniu、URLSource或者UCloud。默认值为Aliyun。
 
@@ -111,7 +111,7 @@ class SrcNodeResp:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this SrcNodeResp.
+        r"""Sets the cloud_type of this SrcNodeResp.
 
         源端云服务提供商。  可选值有AWS、Azure、Aliyun、Tencent、HuaweiCloud、QingCloud、KingsoftCloud、Baidu、Google、Qiniu、URLSource或者UCloud。默认值为Aliyun。
 
@@ -122,7 +122,7 @@ class SrcNodeResp:
 
     @property
     def region(self):
-        """Gets the region of this SrcNodeResp.
+        r"""Gets the region of this SrcNodeResp.
 
         源端桶所处的区域。
 
@@ -133,7 +133,7 @@ class SrcNodeResp:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this SrcNodeResp.
+        r"""Sets the region of this SrcNodeResp.
 
         源端桶所处的区域。
 
@@ -144,7 +144,7 @@ class SrcNodeResp:
 
     @property
     def app_id(self):
-        """Gets the app_id of this SrcNodeResp.
+        r"""Gets the app_id of this SrcNodeResp.
 
         当源端为腾讯云时，会返回此参数。
 
@@ -155,7 +155,7 @@ class SrcNodeResp:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this SrcNodeResp.
+        r"""Sets the app_id of this SrcNodeResp.
 
         当源端为腾讯云时，会返回此参数。
 
@@ -166,7 +166,7 @@ class SrcNodeResp:
 
     @property
     def object_key(self):
-        """Gets the object_key of this SrcNodeResp.
+        r"""Gets the object_key of this SrcNodeResp.
 
         任务类型为对象迁移任务时，表示待迁移对象名称； 任务类型为前缀迁移任务时，表示待迁移前缀。
 
@@ -177,7 +177,7 @@ class SrcNodeResp:
 
     @object_key.setter
     def object_key(self, object_key):
-        """Sets the object_key of this SrcNodeResp.
+        r"""Sets the object_key of this SrcNodeResp.
 
         任务类型为对象迁移任务时，表示待迁移对象名称； 任务类型为前缀迁移任务时，表示待迁移前缀。
 
@@ -188,7 +188,7 @@ class SrcNodeResp:
 
     @property
     def list_file(self):
-        """Gets the list_file of this SrcNodeResp.
+        r"""Gets the list_file of this SrcNodeResp.
 
         :return: The list_file of this SrcNodeResp.
         :rtype: :class:`huaweicloudsdkoms.v2.ListFile`
@@ -197,7 +197,7 @@ class SrcNodeResp:
 
     @list_file.setter
     def list_file(self, list_file):
-        """Sets the list_file of this SrcNodeResp.
+        r"""Sets the list_file of this SrcNodeResp.
 
         :param list_file: The list_file of this SrcNodeResp.
         :type list_file: :class:`huaweicloudsdkoms.v2.ListFile`

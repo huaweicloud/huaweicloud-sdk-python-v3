@@ -33,7 +33,7 @@ class SetRefererChainInfo:
     }
 
     def __init__(self, domain=None, guard_switch=None, referer_config_empty=None, referer_white_list=None, referer_auth_list=None):
-        """SetRefererChainInfo
+        r"""SetRefererChainInfo
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class SetRefererChainInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this SetRefererChainInfo.
+        r"""Gets the domain of this SetRefererChainInfo.
 
         直播域名
 
@@ -80,7 +80,7 @@ class SetRefererChainInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this SetRefererChainInfo.
+        r"""Sets the domain of this SetRefererChainInfo.
 
         直播域名
 
@@ -91,7 +91,7 @@ class SetRefererChainInfo:
 
     @property
     def guard_switch(self):
-        """Gets the guard_switch of this SetRefererChainInfo.
+        r"""Gets the guard_switch of this SetRefererChainInfo.
 
         referer防盗链开关：true表示开启；false表示关闭
 
@@ -102,7 +102,7 @@ class SetRefererChainInfo:
 
     @guard_switch.setter
     def guard_switch(self, guard_switch):
-        """Sets the guard_switch of this SetRefererChainInfo.
+        r"""Sets the guard_switch of this SetRefererChainInfo.
 
         referer防盗链开关：true表示开启；false表示关闭
 
@@ -113,7 +113,7 @@ class SetRefererChainInfo:
 
     @property
     def referer_config_empty(self):
-        """Gets the referer_config_empty of this SetRefererChainInfo.
+        r"""Gets the referer_config_empty of this SetRefererChainInfo.
 
         是否包含referer头域：true表示包含；false表示不包含；guard_switch为true则必填
 
@@ -124,7 +124,7 @@ class SetRefererChainInfo:
 
     @referer_config_empty.setter
     def referer_config_empty(self, referer_config_empty):
-        """Sets the referer_config_empty of this SetRefererChainInfo.
+        r"""Sets the referer_config_empty of this SetRefererChainInfo.
 
         是否包含referer头域：true表示包含；false表示不包含；guard_switch为true则必填
 
@@ -135,7 +135,7 @@ class SetRefererChainInfo:
 
     @property
     def referer_white_list(self):
-        """Gets the referer_white_list of this SetRefererChainInfo.
+        r"""Gets the referer_white_list of this SetRefererChainInfo.
 
         是否为referer白名单：true表示白名单；false表示黑名单；guard_switch为true则必填
 
@@ -146,7 +146,7 @@ class SetRefererChainInfo:
 
     @referer_white_list.setter
     def referer_white_list(self, referer_white_list):
-        """Sets the referer_white_list of this SetRefererChainInfo.
+        r"""Sets the referer_white_list of this SetRefererChainInfo.
 
         是否为referer白名单：true表示白名单；false表示黑名单；guard_switch为true则必填
 
@@ -157,7 +157,7 @@ class SetRefererChainInfo:
 
     @property
     def referer_auth_list(self):
-        """Gets the referer_auth_list of this SetRefererChainInfo.
+        r"""Gets the referer_auth_list of this SetRefererChainInfo.
 
         域名列表，域名为正则表达式；最多支持配置100个域名，以英文“;”进行分隔；guard_switch为true则必填
 
@@ -168,7 +168,7 @@ class SetRefererChainInfo:
 
     @referer_auth_list.setter
     def referer_auth_list(self, referer_auth_list):
-        """Sets the referer_auth_list of this SetRefererChainInfo.
+        r"""Sets the referer_auth_list of this SetRefererChainInfo.
 
         域名列表，域名为正则表达式；最多支持配置100个域名，以英文“;”进行分隔；guard_switch为true则必填
 

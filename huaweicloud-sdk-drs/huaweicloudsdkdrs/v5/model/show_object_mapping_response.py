@@ -28,7 +28,7 @@ class ShowObjectMappingResponse(SdkResponse):
     }
 
     def __init__(self, count=None, object_mapping_list=None):
-        """ShowObjectMappingResponse
+        r"""ShowObjectMappingResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowObjectMappingResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowObjectMappingResponse.
+        r"""Gets the count of this ShowObjectMappingResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ShowObjectMappingResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowObjectMappingResponse.
+        r"""Sets the count of this ShowObjectMappingResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ShowObjectMappingResponse(SdkResponse):
 
     @property
     def object_mapping_list(self):
-        """Gets the object_mapping_list of this ShowObjectMappingResponse.
+        r"""Gets the object_mapping_list of this ShowObjectMappingResponse.
 
         同步映射数据列表。
 
@@ -84,7 +84,7 @@ class ShowObjectMappingResponse(SdkResponse):
 
     @object_mapping_list.setter
     def object_mapping_list(self, object_mapping_list):
-        """Sets the object_mapping_list of this ShowObjectMappingResponse.
+        r"""Sets the object_mapping_list of this ShowObjectMappingResponse.
 
         同步映射数据列表。
 

@@ -29,7 +29,7 @@ class DeleteDatabaseSchemaRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """DeleteDatabaseSchemaRequest
+        r"""DeleteDatabaseSchemaRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteDatabaseSchemaRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteDatabaseSchemaRequest.
+        r"""Gets the x_language of this DeleteDatabaseSchemaRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class DeleteDatabaseSchemaRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteDatabaseSchemaRequest.
+        r"""Sets the x_language of this DeleteDatabaseSchemaRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class DeleteDatabaseSchemaRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteDatabaseSchemaRequest.
+        r"""Gets the instance_id of this DeleteDatabaseSchemaRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class DeleteDatabaseSchemaRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteDatabaseSchemaRequest.
+        r"""Sets the instance_id of this DeleteDatabaseSchemaRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class DeleteDatabaseSchemaRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteDatabaseSchemaRequest.
+        r"""Gets the body of this DeleteDatabaseSchemaRequest.
 
         :return: The body of this DeleteDatabaseSchemaRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteDatabaseSchemaRequestBody`
@@ -109,7 +109,7 @@ class DeleteDatabaseSchemaRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDatabaseSchemaRequest.
+        r"""Sets the body of this DeleteDatabaseSchemaRequest.
 
         :param body: The body of this DeleteDatabaseSchemaRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteDatabaseSchemaRequestBody`

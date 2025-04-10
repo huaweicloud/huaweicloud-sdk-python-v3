@@ -29,7 +29,7 @@ class DedicatedResourceCapacity:
     }
 
     def __init__(self, vcpus=None, ram=None, volume=None):
-        """DedicatedResourceCapacity
+        r"""DedicatedResourceCapacity
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DedicatedResourceCapacity:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this DedicatedResourceCapacity.
+        r"""Gets the vcpus of this DedicatedResourceCapacity.
 
         CPU核数。
 
@@ -65,7 +65,7 @@ class DedicatedResourceCapacity:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this DedicatedResourceCapacity.
+        r"""Sets the vcpus of this DedicatedResourceCapacity.
 
         CPU核数。
 
@@ -76,7 +76,7 @@ class DedicatedResourceCapacity:
 
     @property
     def ram(self):
-        """Gets the ram of this DedicatedResourceCapacity.
+        r"""Gets the ram of this DedicatedResourceCapacity.
 
         内存大小，单位GB。
 
@@ -87,7 +87,7 @@ class DedicatedResourceCapacity:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this DedicatedResourceCapacity.
+        r"""Sets the ram of this DedicatedResourceCapacity.
 
         内存大小，单位GB。
 
@@ -98,7 +98,7 @@ class DedicatedResourceCapacity:
 
     @property
     def volume(self):
-        """Gets the volume of this DedicatedResourceCapacity.
+        r"""Gets the volume of this DedicatedResourceCapacity.
 
         存储大小，单位GB
 
@@ -109,7 +109,7 @@ class DedicatedResourceCapacity:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this DedicatedResourceCapacity.
+        r"""Sets the volume of this DedicatedResourceCapacity.
 
         存储大小，单位GB
 

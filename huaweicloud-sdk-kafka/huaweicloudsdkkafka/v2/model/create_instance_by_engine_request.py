@@ -27,7 +27,7 @@ class CreateInstanceByEngineRequest:
     }
 
     def __init__(self, engine=None, body=None):
-        """CreateInstanceByEngineRequest
+        r"""CreateInstanceByEngineRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateInstanceByEngineRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this CreateInstanceByEngineRequest.
+        r"""Gets the engine of this CreateInstanceByEngineRequest.
 
         消息引擎。
 
@@ -60,7 +60,7 @@ class CreateInstanceByEngineRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this CreateInstanceByEngineRequest.
+        r"""Sets the engine of this CreateInstanceByEngineRequest.
 
         消息引擎。
 
@@ -71,7 +71,7 @@ class CreateInstanceByEngineRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateInstanceByEngineRequest.
+        r"""Gets the body of this CreateInstanceByEngineRequest.
 
         :return: The body of this CreateInstanceByEngineRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateInstanceByEngineReq`
@@ -80,7 +80,7 @@ class CreateInstanceByEngineRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInstanceByEngineRequest.
+        r"""Sets the body of this CreateInstanceByEngineRequest.
 
         :param body: The body of this CreateInstanceByEngineRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.CreateInstanceByEngineReq`

@@ -27,7 +27,7 @@ class CutNetReq:
     }
 
     def __init__(self, action=None, iccid=None):
-        """CutNetReq
+        r"""CutNetReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CutNetReq:
 
     @property
     def action(self):
-        """Gets the action of this CutNetReq.
+        r"""Gets the action of this CutNetReq.
 
         操作类型(ADD：断网，DEL:取消断网)
 
@@ -60,7 +60,7 @@ class CutNetReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CutNetReq.
+        r"""Sets the action of this CutNetReq.
 
         操作类型(ADD：断网，DEL:取消断网)
 
@@ -71,7 +71,7 @@ class CutNetReq:
 
     @property
     def iccid(self):
-        """Gets the iccid of this CutNetReq.
+        r"""Gets the iccid of this CutNetReq.
 
         iccid，传入的sim_card_id为0,则根据iccid进行处理
 
@@ -82,7 +82,7 @@ class CutNetReq:
 
     @iccid.setter
     def iccid(self, iccid):
-        """Sets the iccid of this CutNetReq.
+        r"""Sets the iccid of this CutNetReq.
 
         iccid，传入的sim_card_id为0,则根据iccid进行处理
 

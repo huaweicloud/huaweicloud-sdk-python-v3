@@ -25,7 +25,7 @@ class CreateAgenciesReq:
     }
 
     def __init__(self, scene=None):
-        """CreateAgenciesReq
+        r"""CreateAgenciesReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAgenciesReq:
 
     @property
     def scene(self):
-        """Gets the scene of this CreateAgenciesReq.
+        r"""Gets the scene of this CreateAgenciesReq.
 
         委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。
 
@@ -54,7 +54,7 @@ class CreateAgenciesReq:
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this CreateAgenciesReq.
+        r"""Sets the scene of this CreateAgenciesReq.
 
         委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。
 

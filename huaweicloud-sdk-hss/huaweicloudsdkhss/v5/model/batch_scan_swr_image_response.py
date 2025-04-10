@@ -24,7 +24,7 @@ class BatchScanSwrImageResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchScanSwrImageResponse
+        r"""BatchScanSwrImageResponse
 
         The model defined in huaweicloud sdk
 

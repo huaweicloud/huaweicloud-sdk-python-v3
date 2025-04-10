@@ -25,7 +25,7 @@ class ShowAutopilotMaintenanceWindowRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ShowAutopilotMaintenanceWindowRequest
+        r"""ShowAutopilotMaintenanceWindowRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAutopilotMaintenanceWindowRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowAutopilotMaintenanceWindowRequest.
+        r"""Gets the cluster_id of this ShowAutopilotMaintenanceWindowRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -53,7 +53,7 @@ class ShowAutopilotMaintenanceWindowRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowAutopilotMaintenanceWindowRequest.
+        r"""Sets the cluster_id of this ShowAutopilotMaintenanceWindowRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 

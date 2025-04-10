@@ -26,7 +26,7 @@ class ListCollationsResponse(SdkResponse):
     }
 
     def __init__(self, char_sets=None):
-        """ListCollationsResponse
+        r"""ListCollationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListCollationsResponse(SdkResponse):
 
     @property
     def char_sets(self):
-        """Gets the char_sets of this ListCollationsResponse.
+        r"""Gets the char_sets of this ListCollationsResponse.
 
         字符集信息列表
 
@@ -55,7 +55,7 @@ class ListCollationsResponse(SdkResponse):
 
     @char_sets.setter
     def char_sets(self, char_sets):
-        """Sets the char_sets of this ListCollationsResponse.
+        r"""Sets the char_sets of this ListCollationsResponse.
 
         字符集信息列表
 

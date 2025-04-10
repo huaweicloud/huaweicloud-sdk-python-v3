@@ -45,7 +45,7 @@ class ListSiteNetworksRequest:
     }
 
     def __init__(self, limit=None, marker=None, sort_key=None, sort_dir=None, id=None, name=None, state=None, enterprise_project_id=None, global_dc_gateway_id=None, global_connection_bandwidth_id=None, connection_id=None):
-        """ListSiteNetworksRequest
+        r"""ListSiteNetworksRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListSiteNetworksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSiteNetworksRequest.
+        r"""Gets the limit of this ListSiteNetworksRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -124,7 +124,7 @@ class ListSiteNetworksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSiteNetworksRequest.
+        r"""Sets the limit of this ListSiteNetworksRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -135,7 +135,7 @@ class ListSiteNetworksRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSiteNetworksRequest.
+        r"""Gets the marker of this ListSiteNetworksRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -146,7 +146,7 @@ class ListSiteNetworksRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSiteNetworksRequest.
+        r"""Sets the marker of this ListSiteNetworksRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -157,7 +157,7 @@ class ListSiteNetworksRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListSiteNetworksRequest.
+        r"""Gets the sort_key of this ListSiteNetworksRequest.
 
         排序字段。
 
@@ -168,7 +168,7 @@ class ListSiteNetworksRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListSiteNetworksRequest.
+        r"""Sets the sort_key of this ListSiteNetworksRequest.
 
         排序字段。
 
@@ -179,7 +179,7 @@ class ListSiteNetworksRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListSiteNetworksRequest.
+        r"""Gets the sort_dir of this ListSiteNetworksRequest.
 
         指定排序是升序还是降序(asc为升序，desc为降序)。
 
@@ -190,7 +190,7 @@ class ListSiteNetworksRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListSiteNetworksRequest.
+        r"""Sets the sort_dir of this ListSiteNetworksRequest.
 
         指定排序是升序还是降序(asc为升序，desc为降序)。
 
@@ -201,7 +201,7 @@ class ListSiteNetworksRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListSiteNetworksRequest.
+        r"""Gets the id of this ListSiteNetworksRequest.
 
         根据id查询，可查询多个id。
 
@@ -212,7 +212,7 @@ class ListSiteNetworksRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSiteNetworksRequest.
+        r"""Sets the id of this ListSiteNetworksRequest.
 
         根据id查询，可查询多个id。
 
@@ -223,7 +223,7 @@ class ListSiteNetworksRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSiteNetworksRequest.
+        r"""Gets the name of this ListSiteNetworksRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -234,7 +234,7 @@ class ListSiteNetworksRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSiteNetworksRequest.
+        r"""Sets the name of this ListSiteNetworksRequest.
 
         根据名字查询，可查询多个名字。
 
@@ -245,7 +245,7 @@ class ListSiteNetworksRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListSiteNetworksRequest.
+        r"""Gets the state of this ListSiteNetworksRequest.
 
         根据状态查询，可查询多个状态。
 
@@ -256,7 +256,7 @@ class ListSiteNetworksRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListSiteNetworksRequest.
+        r"""Sets the state of this ListSiteNetworksRequest.
 
         根据状态查询，可查询多个状态。
 
@@ -267,7 +267,7 @@ class ListSiteNetworksRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListSiteNetworksRequest.
+        r"""Gets the enterprise_project_id of this ListSiteNetworksRequest.
 
         根据企业项目ID过滤列表。
 
@@ -278,7 +278,7 @@ class ListSiteNetworksRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListSiteNetworksRequest.
+        r"""Sets the enterprise_project_id of this ListSiteNetworksRequest.
 
         根据企业项目ID过滤列表。
 
@@ -289,7 +289,7 @@ class ListSiteNetworksRequest:
 
     @property
     def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this ListSiteNetworksRequest.
+        r"""Gets the global_dc_gateway_id of this ListSiteNetworksRequest.
 
         根据GDW实例ID过滤列表。
 
@@ -300,7 +300,7 @@ class ListSiteNetworksRequest:
 
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this ListSiteNetworksRequest.
+        r"""Sets the global_dc_gateway_id of this ListSiteNetworksRequest.
 
         根据GDW实例ID过滤列表。
 
@@ -311,7 +311,7 @@ class ListSiteNetworksRequest:
 
     @property
     def global_connection_bandwidth_id(self):
-        """Gets the global_connection_bandwidth_id of this ListSiteNetworksRequest.
+        r"""Gets the global_connection_bandwidth_id of this ListSiteNetworksRequest.
 
         根据带宽包ID过滤。
 
@@ -322,7 +322,7 @@ class ListSiteNetworksRequest:
 
     @global_connection_bandwidth_id.setter
     def global_connection_bandwidth_id(self, global_connection_bandwidth_id):
-        """Sets the global_connection_bandwidth_id of this ListSiteNetworksRequest.
+        r"""Sets the global_connection_bandwidth_id of this ListSiteNetworksRequest.
 
         根据带宽包ID过滤。
 
@@ -333,7 +333,7 @@ class ListSiteNetworksRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ListSiteNetworksRequest.
+        r"""Gets the connection_id of this ListSiteNetworksRequest.
 
         分支连接的ID。
 
@@ -344,7 +344,7 @@ class ListSiteNetworksRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ListSiteNetworksRequest.
+        r"""Sets the connection_id of this ListSiteNetworksRequest.
 
         分支连接的ID。
 

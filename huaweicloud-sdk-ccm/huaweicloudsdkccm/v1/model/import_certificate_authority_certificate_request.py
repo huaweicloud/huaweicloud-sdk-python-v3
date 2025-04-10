@@ -27,7 +27,7 @@ class ImportCertificateAuthorityCertificateRequest:
     }
 
     def __init__(self, ca_id=None, body=None):
-        """ImportCertificateAuthorityCertificateRequest
+        r"""ImportCertificateAuthorityCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ImportCertificateAuthorityCertificateRequest:
 
     @property
     def ca_id(self):
-        """Gets the ca_id of this ImportCertificateAuthorityCertificateRequest.
+        r"""Gets the ca_id of this ImportCertificateAuthorityCertificateRequest.
 
         所要导入的CA证书ID。
 
@@ -60,7 +60,7 @@ class ImportCertificateAuthorityCertificateRequest:
 
     @ca_id.setter
     def ca_id(self, ca_id):
-        """Sets the ca_id of this ImportCertificateAuthorityCertificateRequest.
+        r"""Sets the ca_id of this ImportCertificateAuthorityCertificateRequest.
 
         所要导入的CA证书ID。
 
@@ -71,7 +71,7 @@ class ImportCertificateAuthorityCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportCertificateAuthorityCertificateRequest.
+        r"""Gets the body of this ImportCertificateAuthorityCertificateRequest.
 
         :return: The body of this ImportCertificateAuthorityCertificateRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.ImportCertificateAuthorityCertificateRequestBody`
@@ -80,7 +80,7 @@ class ImportCertificateAuthorityCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportCertificateAuthorityCertificateRequest.
+        r"""Sets the body of this ImportCertificateAuthorityCertificateRequest.
 
         :param body: The body of this ImportCertificateAuthorityCertificateRequest.
         :type body: :class:`huaweicloudsdkccm.v1.ImportCertificateAuthorityCertificateRequestBody`

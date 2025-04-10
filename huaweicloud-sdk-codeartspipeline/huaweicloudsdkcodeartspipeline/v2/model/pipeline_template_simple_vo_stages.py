@@ -27,7 +27,7 @@ class PipelineTemplateSimpleVOStages:
     }
 
     def __init__(self, name=None, sequence=None):
-        """PipelineTemplateSimpleVOStages
+        r"""PipelineTemplateSimpleVOStages
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PipelineTemplateSimpleVOStages:
 
     @property
     def name(self):
-        """Gets the name of this PipelineTemplateSimpleVOStages.
+        r"""Gets the name of this PipelineTemplateSimpleVOStages.
 
         阶段名称
 
@@ -61,7 +61,7 @@ class PipelineTemplateSimpleVOStages:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineTemplateSimpleVOStages.
+        r"""Sets the name of this PipelineTemplateSimpleVOStages.
 
         阶段名称
 
@@ -72,7 +72,7 @@ class PipelineTemplateSimpleVOStages:
 
     @property
     def sequence(self):
-        """Gets the sequence of this PipelineTemplateSimpleVOStages.
+        r"""Gets the sequence of this PipelineTemplateSimpleVOStages.
 
         序列号
 
@@ -83,7 +83,7 @@ class PipelineTemplateSimpleVOStages:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this PipelineTemplateSimpleVOStages.
+        r"""Sets the sequence of this PipelineTemplateSimpleVOStages.
 
         序列号
 

@@ -28,7 +28,7 @@ class DeleteDomainResponse(SdkResponse):
     }
 
     def __init__(self, domain=None, x_request_id=None):
-        """DeleteDomainResponse
+        r"""DeleteDomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteDomainResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this DeleteDomainResponse.
+        r"""Gets the domain of this DeleteDomainResponse.
 
         :return: The domain of this DeleteDomainResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.DomainsWithPort`
@@ -60,7 +60,7 @@ class DeleteDomainResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this DeleteDomainResponse.
+        r"""Sets the domain of this DeleteDomainResponse.
 
         :param domain: The domain of this DeleteDomainResponse.
         :type domain: :class:`huaweicloudsdkcdn.v1.DomainsWithPort`
@@ -69,7 +69,7 @@ class DeleteDomainResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteDomainResponse.
+        r"""Gets the x_request_id of this DeleteDomainResponse.
 
         :return: The x_request_id of this DeleteDomainResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class DeleteDomainResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteDomainResponse.
+        r"""Sets the x_request_id of this DeleteDomainResponse.
 
         :param x_request_id: The x_request_id of this DeleteDomainResponse.
         :type x_request_id: str

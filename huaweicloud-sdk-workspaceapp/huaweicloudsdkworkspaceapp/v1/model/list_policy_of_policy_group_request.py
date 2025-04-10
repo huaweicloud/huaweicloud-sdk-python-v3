@@ -27,7 +27,7 @@ class ListPolicyOfPolicyGroupRequest:
     }
 
     def __init__(self, policy_group_id=None, policy_type=None):
-        """ListPolicyOfPolicyGroupRequest
+        r"""ListPolicyOfPolicyGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListPolicyOfPolicyGroupRequest:
 
     @property
     def policy_group_id(self):
-        """Gets the policy_group_id of this ListPolicyOfPolicyGroupRequest.
+        r"""Gets the policy_group_id of this ListPolicyOfPolicyGroupRequest.
 
         策略组id。
 
@@ -60,7 +60,7 @@ class ListPolicyOfPolicyGroupRequest:
 
     @policy_group_id.setter
     def policy_group_id(self, policy_group_id):
-        """Sets the policy_group_id of this ListPolicyOfPolicyGroupRequest.
+        r"""Sets the policy_group_id of this ListPolicyOfPolicyGroupRequest.
 
         策略组id。
 
@@ -71,7 +71,7 @@ class ListPolicyOfPolicyGroupRequest:
 
     @property
     def policy_type(self):
-        """Gets the policy_type of this ListPolicyOfPolicyGroupRequest.
+        r"""Gets the policy_type of this ListPolicyOfPolicyGroupRequest.
 
         根据策略类型过滤结果，不传则查询所有策略。 可选类型: - 外设：Peripherals; - 音频：Audio; - 客户端：Client; - 显示：Display; - 文件与剪切板：FileAndClip; - 接入控制：ClientAccessControl; - 会话：SessionAutoDisconnect; - 虚拟通道：VirtualChannel - 水印：Watermark; - 键盘鼠标：KeyboardAndMouse; - 通用音视频旁路：Seamless。
 
@@ -82,7 +82,7 @@ class ListPolicyOfPolicyGroupRequest:
 
     @policy_type.setter
     def policy_type(self, policy_type):
-        """Sets the policy_type of this ListPolicyOfPolicyGroupRequest.
+        r"""Sets the policy_type of this ListPolicyOfPolicyGroupRequest.
 
         根据策略类型过滤结果，不传则查询所有策略。 可选类型: - 外设：Peripherals; - 音频：Audio; - 客户端：Client; - 显示：Display; - 文件与剪切板：FileAndClip; - 接入控制：ClientAccessControl; - 会话：SessionAutoDisconnect; - 虚拟通道：VirtualChannel - 水印：Watermark; - 键盘鼠标：KeyboardAndMouse; - 通用音视频旁路：Seamless。
 

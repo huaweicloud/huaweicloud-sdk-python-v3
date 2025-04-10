@@ -25,7 +25,7 @@ class ComponentAmbV11:
     }
 
     def __init__(self, component_name=None):
-        """ComponentAmbV11
+        r"""ComponentAmbV11
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ComponentAmbV11:
 
     @property
     def component_name(self):
-        """Gets the component_name of this ComponentAmbV11.
+        r"""Gets the component_name of this ComponentAmbV11.
 
         组件名称
 
@@ -53,7 +53,7 @@ class ComponentAmbV11:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this ComponentAmbV11.
+        r"""Sets the component_name of this ComponentAmbV11.
 
         组件名称
 

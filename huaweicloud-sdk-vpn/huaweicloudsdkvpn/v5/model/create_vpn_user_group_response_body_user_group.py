@@ -25,7 +25,7 @@ class CreateVpnUserGroupResponseBodyUserGroup:
     }
 
     def __init__(self, id=None):
-        """CreateVpnUserGroupResponseBodyUserGroup
+        r"""CreateVpnUserGroupResponseBodyUserGroup
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVpnUserGroupResponseBodyUserGroup:
 
     @property
     def id(self):
-        """Gets the id of this CreateVpnUserGroupResponseBodyUserGroup.
+        r"""Gets the id of this CreateVpnUserGroupResponseBodyUserGroup.
 
         VPN用户组ID
 
@@ -54,7 +54,7 @@ class CreateVpnUserGroupResponseBodyUserGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateVpnUserGroupResponseBodyUserGroup.
+        r"""Sets the id of this CreateVpnUserGroupResponseBodyUserGroup.
 
         VPN用户组ID
 

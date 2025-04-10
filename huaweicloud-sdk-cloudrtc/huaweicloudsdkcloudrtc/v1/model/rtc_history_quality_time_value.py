@@ -53,7 +53,7 @@ class RtcHistoryQualityTimeValue:
     }
 
     def __init__(self, date=None, join_success_rate=None, join_success_in5secs_rate=None, video_freeze_rate=None, audio_freeze_rate=None, first_video_recv_time=None, first_audio_recv_time=None, pull_stream_success_rate=None, push_stream_success_rate=None, video_upstream_excellent_trans_rate=None, audio_upstream_excellent_trans_rate=None, video_excellent_trans_rate=None, audio_excellent_trans_rate=None, video_trans_delay=None, audio_trans_delay=None):
-        """RtcHistoryQualityTimeValue
+        r"""RtcHistoryQualityTimeValue
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class RtcHistoryQualityTimeValue:
 
     @property
     def date(self):
-        """Gets the date of this RtcHistoryQualityTimeValue.
+        r"""Gets the date of this RtcHistoryQualityTimeValue.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DD
 
@@ -152,7 +152,7 @@ class RtcHistoryQualityTimeValue:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this RtcHistoryQualityTimeValue.
+        r"""Sets the date of this RtcHistoryQualityTimeValue.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DD
 
@@ -163,7 +163,7 @@ class RtcHistoryQualityTimeValue:
 
     @property
     def join_success_rate(self):
-        """Gets the join_success_rate of this RtcHistoryQualityTimeValue.
+        r"""Gets the join_success_rate of this RtcHistoryQualityTimeValue.
 
         加入房间成功率参数取值，取值为1代表成功率100%
 
@@ -174,7 +174,7 @@ class RtcHistoryQualityTimeValue:
 
     @join_success_rate.setter
     def join_success_rate(self, join_success_rate):
-        """Sets the join_success_rate of this RtcHistoryQualityTimeValue.
+        r"""Sets the join_success_rate of this RtcHistoryQualityTimeValue.
 
         加入房间成功率参数取值，取值为1代表成功率100%
 
@@ -185,7 +185,7 @@ class RtcHistoryQualityTimeValue:
 
     @property
     def join_success_in5secs_rate(self):
-        """Gets the join_success_in5secs_rate of this RtcHistoryQualityTimeValue.
+        r"""Gets the join_success_in5secs_rate of this RtcHistoryQualityTimeValue.
 
         5s内加入房间成功率参数取值，取值为1代表成功率100%
 
@@ -196,7 +196,7 @@ class RtcHistoryQualityTimeValue:
 
     @join_success_in5secs_rate.setter
     def join_success_in5secs_rate(self, join_success_in5secs_rate):
-        """Sets the join_success_in5secs_rate of this RtcHistoryQualityTimeValue.
+        r"""Sets the join_success_in5secs_rate of this RtcHistoryQualityTimeValue.
 
         5s内加入房间成功率参数取值，取值为1代表成功率100%
 
@@ -207,7 +207,7 @@ class RtcHistoryQualityTimeValue:
 
     @property
     def video_freeze_rate(self):
-        """Gets the video_freeze_rate of this RtcHistoryQualityTimeValue.
+        r"""Gets the video_freeze_rate of this RtcHistoryQualityTimeValue.
 
         视频卡顿率参数取值，取值为1代表卡顿率100%
 
@@ -218,7 +218,7 @@ class RtcHistoryQualityTimeValue:
 
     @video_freeze_rate.setter
     def video_freeze_rate(self, video_freeze_rate):
-        """Sets the video_freeze_rate of this RtcHistoryQualityTimeValue.
+        r"""Sets the video_freeze_rate of this RtcHistoryQualityTimeValue.
 
         视频卡顿率参数取值，取值为1代表卡顿率100%
 
@@ -229,7 +229,7 @@ class RtcHistoryQualityTimeValue:
 
     @property
     def audio_freeze_rate(self):
-        """Gets the audio_freeze_rate of this RtcHistoryQualityTimeValue.
+        r"""Gets the audio_freeze_rate of this RtcHistoryQualityTimeValue.
 
         音频卡顿率参数取值，取值为1代表卡顿率100%
 
@@ -240,7 +240,7 @@ class RtcHistoryQualityTimeValue:
 
     @audio_freeze_rate.setter
     def audio_freeze_rate(self, audio_freeze_rate):
-        """Sets the audio_freeze_rate of this RtcHistoryQualityTimeValue.
+        r"""Sets the audio_freeze_rate of this RtcHistoryQualityTimeValue.
 
         音频卡顿率参数取值，取值为1代表卡顿率100%
 
@@ -251,7 +251,7 @@ class RtcHistoryQualityTimeValue:
 
     @property
     def first_video_recv_time(self):
-        """Gets the first_video_recv_time of this RtcHistoryQualityTimeValue.
+        r"""Gets the first_video_recv_time of this RtcHistoryQualityTimeValue.
 
         首帧视频接收耗时，单位毫秒
 
@@ -262,7 +262,7 @@ class RtcHistoryQualityTimeValue:
 
     @first_video_recv_time.setter
     def first_video_recv_time(self, first_video_recv_time):
-        """Sets the first_video_recv_time of this RtcHistoryQualityTimeValue.
+        r"""Sets the first_video_recv_time of this RtcHistoryQualityTimeValue.
 
         首帧视频接收耗时，单位毫秒
 
@@ -273,7 +273,7 @@ class RtcHistoryQualityTimeValue:
 
     @property
     def first_audio_recv_time(self):
-        """Gets the first_audio_recv_time of this RtcHistoryQualityTimeValue.
+        r"""Gets the first_audio_recv_time of this RtcHistoryQualityTimeValue.
 
         首帧音频接收耗时，单位毫秒
 
@@ -284,7 +284,7 @@ class RtcHistoryQualityTimeValue:
 
     @first_audio_recv_time.setter
     def first_audio_recv_time(self, first_audio_recv_time):
-        """Sets the first_audio_recv_time of this RtcHistoryQualityTimeValue.
+        r"""Sets the first_audio_recv_time of this RtcHistoryQualityTimeValue.
 
         首帧音频接收耗时，单位毫秒
 
@@ -295,7 +295,7 @@ class RtcHistoryQualityTimeValue:
 
     @property
     def pull_stream_success_rate(self):
-        """Gets the pull_stream_success_rate of this RtcHistoryQualityTimeValue.
+        r"""Gets the pull_stream_success_rate of this RtcHistoryQualityTimeValue.
 
         拉流成功率参数取值，取值为1代表成功率100%
 
@@ -306,7 +306,7 @@ class RtcHistoryQualityTimeValue:
 
     @pull_stream_success_rate.setter
     def pull_stream_success_rate(self, pull_stream_success_rate):
-        """Sets the pull_stream_success_rate of this RtcHistoryQualityTimeValue.
+        r"""Sets the pull_stream_success_rate of this RtcHistoryQualityTimeValue.
 
         拉流成功率参数取值，取值为1代表成功率100%
 
@@ -317,7 +317,7 @@ class RtcHistoryQualityTimeValue:
 
     @property
     def push_stream_success_rate(self):
-        """Gets the push_stream_success_rate of this RtcHistoryQualityTimeValue.
+        r"""Gets the push_stream_success_rate of this RtcHistoryQualityTimeValue.
 
         推流成功率参数取值，取值为1代表成功率100%
 
@@ -328,7 +328,7 @@ class RtcHistoryQualityTimeValue:
 
     @push_stream_success_rate.setter
     def push_stream_success_rate(self, push_stream_success_rate):
-        """Sets the push_stream_success_rate of this RtcHistoryQualityTimeValue.
+        r"""Sets the push_stream_success_rate of this RtcHistoryQualityTimeValue.
 
         推流成功率参数取值，取值为1代表成功率100%
 
@@ -339,7 +339,7 @@ class RtcHistoryQualityTimeValue:
 
     @property
     def video_upstream_excellent_trans_rate(self):
-        """Gets the video_upstream_excellent_trans_rate of this RtcHistoryQualityTimeValue.
+        r"""Gets the video_upstream_excellent_trans_rate of this RtcHistoryQualityTimeValue.
 
         客户端视频上行优质传输率，取值为1代表传输率100%
 
@@ -350,7 +350,7 @@ class RtcHistoryQualityTimeValue:
 
     @video_upstream_excellent_trans_rate.setter
     def video_upstream_excellent_trans_rate(self, video_upstream_excellent_trans_rate):
-        """Sets the video_upstream_excellent_trans_rate of this RtcHistoryQualityTimeValue.
+        r"""Sets the video_upstream_excellent_trans_rate of this RtcHistoryQualityTimeValue.
 
         客户端视频上行优质传输率，取值为1代表传输率100%
 
@@ -361,7 +361,7 @@ class RtcHistoryQualityTimeValue:
 
     @property
     def audio_upstream_excellent_trans_rate(self):
-        """Gets the audio_upstream_excellent_trans_rate of this RtcHistoryQualityTimeValue.
+        r"""Gets the audio_upstream_excellent_trans_rate of this RtcHistoryQualityTimeValue.
 
         客户端音频上行优质传输率，取值为1代表传输率100%
 
@@ -372,7 +372,7 @@ class RtcHistoryQualityTimeValue:
 
     @audio_upstream_excellent_trans_rate.setter
     def audio_upstream_excellent_trans_rate(self, audio_upstream_excellent_trans_rate):
-        """Sets the audio_upstream_excellent_trans_rate of this RtcHistoryQualityTimeValue.
+        r"""Sets the audio_upstream_excellent_trans_rate of this RtcHistoryQualityTimeValue.
 
         客户端音频上行优质传输率，取值为1代表传输率100%
 
@@ -383,7 +383,7 @@ class RtcHistoryQualityTimeValue:
 
     @property
     def video_excellent_trans_rate(self):
-        """Gets the video_excellent_trans_rate of this RtcHistoryQualityTimeValue.
+        r"""Gets the video_excellent_trans_rate of this RtcHistoryQualityTimeValue.
 
         端到端视频优质传输率，取值为1代表传输率100%
 
@@ -394,7 +394,7 @@ class RtcHistoryQualityTimeValue:
 
     @video_excellent_trans_rate.setter
     def video_excellent_trans_rate(self, video_excellent_trans_rate):
-        """Sets the video_excellent_trans_rate of this RtcHistoryQualityTimeValue.
+        r"""Sets the video_excellent_trans_rate of this RtcHistoryQualityTimeValue.
 
         端到端视频优质传输率，取值为1代表传输率100%
 
@@ -405,7 +405,7 @@ class RtcHistoryQualityTimeValue:
 
     @property
     def audio_excellent_trans_rate(self):
-        """Gets the audio_excellent_trans_rate of this RtcHistoryQualityTimeValue.
+        r"""Gets the audio_excellent_trans_rate of this RtcHistoryQualityTimeValue.
 
         端到端音频优质传输率，取值为1代表传输率100%
 
@@ -416,7 +416,7 @@ class RtcHistoryQualityTimeValue:
 
     @audio_excellent_trans_rate.setter
     def audio_excellent_trans_rate(self, audio_excellent_trans_rate):
-        """Sets the audio_excellent_trans_rate of this RtcHistoryQualityTimeValue.
+        r"""Sets the audio_excellent_trans_rate of this RtcHistoryQualityTimeValue.
 
         端到端音频优质传输率，取值为1代表传输率100%
 
@@ -427,7 +427,7 @@ class RtcHistoryQualityTimeValue:
 
     @property
     def video_trans_delay(self):
-        """Gets the video_trans_delay of this RtcHistoryQualityTimeValue.
+        r"""Gets the video_trans_delay of this RtcHistoryQualityTimeValue.
 
         端到端视频网络时延，单位为毫秒，取当天所有用户网络延迟的中位数。
 
@@ -438,7 +438,7 @@ class RtcHistoryQualityTimeValue:
 
     @video_trans_delay.setter
     def video_trans_delay(self, video_trans_delay):
-        """Sets the video_trans_delay of this RtcHistoryQualityTimeValue.
+        r"""Sets the video_trans_delay of this RtcHistoryQualityTimeValue.
 
         端到端视频网络时延，单位为毫秒，取当天所有用户网络延迟的中位数。
 
@@ -449,7 +449,7 @@ class RtcHistoryQualityTimeValue:
 
     @property
     def audio_trans_delay(self):
-        """Gets the audio_trans_delay of this RtcHistoryQualityTimeValue.
+        r"""Gets the audio_trans_delay of this RtcHistoryQualityTimeValue.
 
         端到端音频网络时延，单位为毫秒，取当天所有用户网络延迟的中位数。
 
@@ -460,7 +460,7 @@ class RtcHistoryQualityTimeValue:
 
     @audio_trans_delay.setter
     def audio_trans_delay(self, audio_trans_delay):
-        """Sets the audio_trans_delay of this RtcHistoryQualityTimeValue.
+        r"""Sets the audio_trans_delay of this RtcHistoryQualityTimeValue.
 
         端到端音频网络时延，单位为毫秒，取当天所有用户网络延迟的中位数。
 

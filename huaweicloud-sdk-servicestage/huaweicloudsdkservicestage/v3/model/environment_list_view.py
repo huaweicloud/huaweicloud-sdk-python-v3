@@ -45,7 +45,7 @@ class EnvironmentListView:
     }
 
     def __init__(self, id=None, name=None, description=None, project_id=None, enterprise_project_id=None, vpc_id=None, creator=None, create_time=None, update_time=None, deploy_mode=None, labels=None):
-        """EnvironmentListView
+        r"""EnvironmentListView
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class EnvironmentListView:
 
     @property
     def id(self):
-        """Gets the id of this EnvironmentListView.
+        r"""Gets the id of this EnvironmentListView.
 
         :return: The id of this EnvironmentListView.
         :rtype: str
@@ -122,7 +122,7 @@ class EnvironmentListView:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EnvironmentListView.
+        r"""Sets the id of this EnvironmentListView.
 
         :param id: The id of this EnvironmentListView.
         :type id: str
@@ -131,7 +131,7 @@ class EnvironmentListView:
 
     @property
     def name(self):
-        """Gets the name of this EnvironmentListView.
+        r"""Gets the name of this EnvironmentListView.
 
         :return: The name of this EnvironmentListView.
         :rtype: str
@@ -140,7 +140,7 @@ class EnvironmentListView:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvironmentListView.
+        r"""Sets the name of this EnvironmentListView.
 
         :param name: The name of this EnvironmentListView.
         :type name: str
@@ -149,7 +149,7 @@ class EnvironmentListView:
 
     @property
     def description(self):
-        """Gets the description of this EnvironmentListView.
+        r"""Gets the description of this EnvironmentListView.
 
         :return: The description of this EnvironmentListView.
         :rtype: str
@@ -158,7 +158,7 @@ class EnvironmentListView:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EnvironmentListView.
+        r"""Sets the description of this EnvironmentListView.
 
         :param description: The description of this EnvironmentListView.
         :type description: str
@@ -167,7 +167,7 @@ class EnvironmentListView:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EnvironmentListView.
+        r"""Gets the project_id of this EnvironmentListView.
 
         :return: The project_id of this EnvironmentListView.
         :rtype: str
@@ -176,7 +176,7 @@ class EnvironmentListView:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EnvironmentListView.
+        r"""Sets the project_id of this EnvironmentListView.
 
         :param project_id: The project_id of this EnvironmentListView.
         :type project_id: str
@@ -185,7 +185,7 @@ class EnvironmentListView:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this EnvironmentListView.
+        r"""Gets the enterprise_project_id of this EnvironmentListView.
 
         :return: The enterprise_project_id of this EnvironmentListView.
         :rtype: str
@@ -194,7 +194,7 @@ class EnvironmentListView:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this EnvironmentListView.
+        r"""Sets the enterprise_project_id of this EnvironmentListView.
 
         :param enterprise_project_id: The enterprise_project_id of this EnvironmentListView.
         :type enterprise_project_id: str
@@ -203,7 +203,7 @@ class EnvironmentListView:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this EnvironmentListView.
+        r"""Gets the vpc_id of this EnvironmentListView.
 
         :return: The vpc_id of this EnvironmentListView.
         :rtype: str
@@ -212,7 +212,7 @@ class EnvironmentListView:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this EnvironmentListView.
+        r"""Sets the vpc_id of this EnvironmentListView.
 
         :param vpc_id: The vpc_id of this EnvironmentListView.
         :type vpc_id: str
@@ -221,7 +221,7 @@ class EnvironmentListView:
 
     @property
     def creator(self):
-        """Gets the creator of this EnvironmentListView.
+        r"""Gets the creator of this EnvironmentListView.
 
         :return: The creator of this EnvironmentListView.
         :rtype: str
@@ -230,7 +230,7 @@ class EnvironmentListView:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this EnvironmentListView.
+        r"""Sets the creator of this EnvironmentListView.
 
         :param creator: The creator of this EnvironmentListView.
         :type creator: str
@@ -239,7 +239,7 @@ class EnvironmentListView:
 
     @property
     def create_time(self):
-        """Gets the create_time of this EnvironmentListView.
+        r"""Gets the create_time of this EnvironmentListView.
 
         创建时间。
 
@@ -250,7 +250,7 @@ class EnvironmentListView:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this EnvironmentListView.
+        r"""Sets the create_time of this EnvironmentListView.
 
         创建时间。
 
@@ -261,7 +261,7 @@ class EnvironmentListView:
 
     @property
     def update_time(self):
-        """Gets the update_time of this EnvironmentListView.
+        r"""Gets the update_time of this EnvironmentListView.
 
         修改时间。
 
@@ -272,7 +272,7 @@ class EnvironmentListView:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this EnvironmentListView.
+        r"""Sets the update_time of this EnvironmentListView.
 
         修改时间。
 
@@ -283,7 +283,7 @@ class EnvironmentListView:
 
     @property
     def deploy_mode(self):
-        """Gets the deploy_mode of this EnvironmentListView.
+        r"""Gets the deploy_mode of this EnvironmentListView.
 
         :return: The deploy_mode of this EnvironmentListView.
         :rtype: str
@@ -292,7 +292,7 @@ class EnvironmentListView:
 
     @deploy_mode.setter
     def deploy_mode(self, deploy_mode):
-        """Sets the deploy_mode of this EnvironmentListView.
+        r"""Sets the deploy_mode of this EnvironmentListView.
 
         :param deploy_mode: The deploy_mode of this EnvironmentListView.
         :type deploy_mode: str
@@ -301,7 +301,7 @@ class EnvironmentListView:
 
     @property
     def labels(self):
-        """Gets the labels of this EnvironmentListView.
+        r"""Gets the labels of this EnvironmentListView.
 
         :return: The labels of this EnvironmentListView.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]
@@ -310,7 +310,7 @@ class EnvironmentListView:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this EnvironmentListView.
+        r"""Sets the labels of this EnvironmentListView.
 
         :param labels: The labels of this EnvironmentListView.
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]

@@ -47,7 +47,7 @@ class ModelProperty:
     }
 
     def __init__(self, property_id=None, property_name=None, description=None, data_type=None, required=None, min=None, max=None, step=None, max_length=None, unit=None, enum_list=None, enum_dict=None):
-        """ModelProperty
+        r"""ModelProperty
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ModelProperty:
 
     @property
     def property_id(self):
-        """Gets the property_id of this ModelProperty.
+        r"""Gets the property_id of this ModelProperty.
 
         属性ID
 
@@ -131,7 +131,7 @@ class ModelProperty:
 
     @property_id.setter
     def property_id(self, property_id):
-        """Sets the property_id of this ModelProperty.
+        r"""Sets the property_id of this ModelProperty.
 
         属性ID
 
@@ -142,7 +142,7 @@ class ModelProperty:
 
     @property
     def property_name(self):
-        """Gets the property_name of this ModelProperty.
+        r"""Gets the property_name of this ModelProperty.
 
         属性名称，首位必须为字母，支持大小写字母，数字，中划线及下划线，长度2-50
 
@@ -153,7 +153,7 @@ class ModelProperty:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this ModelProperty.
+        r"""Sets the property_name of this ModelProperty.
 
         属性名称，首位必须为字母，支持大小写字母，数字，中划线及下划线，长度2-50
 
@@ -164,7 +164,7 @@ class ModelProperty:
 
     @property
     def description(self):
-        """Gets the description of this ModelProperty.
+        r"""Gets the description of this ModelProperty.
 
         属性描述，长度0-200
 
@@ -175,7 +175,7 @@ class ModelProperty:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModelProperty.
+        r"""Sets the description of this ModelProperty.
 
         属性描述，长度0-200
 
@@ -186,7 +186,7 @@ class ModelProperty:
 
     @property
     def data_type(self):
-        """Gets the data_type of this ModelProperty.
+        r"""Gets the data_type of this ModelProperty.
 
         属性数据类型，boolean枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；string为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式; array为数组类型
 
@@ -197,7 +197,7 @@ class ModelProperty:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ModelProperty.
+        r"""Sets the data_type of this ModelProperty.
 
         属性数据类型，boolean枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；string为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式; array为数组类型
 
@@ -208,7 +208,7 @@ class ModelProperty:
 
     @property
     def required(self):
-        """Gets the required of this ModelProperty.
+        r"""Gets the required of this ModelProperty.
 
         是否必填 0-非必填 1-必填
 
@@ -219,7 +219,7 @@ class ModelProperty:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this ModelProperty.
+        r"""Sets the required of this ModelProperty.
 
         是否必填 0-非必填 1-必填
 
@@ -230,7 +230,7 @@ class ModelProperty:
 
     @property
     def min(self):
-        """Gets the min of this ModelProperty.
+        r"""Gets the min of this ModelProperty.
 
         最小值，当data_type为integer或number时有效
 
@@ -241,7 +241,7 @@ class ModelProperty:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this ModelProperty.
+        r"""Sets the min of this ModelProperty.
 
         最小值，当data_type为integer或number时有效
 
@@ -252,7 +252,7 @@ class ModelProperty:
 
     @property
     def max(self):
-        """Gets the max of this ModelProperty.
+        r"""Gets the max of this ModelProperty.
 
         最大值，当data_type为integer或number时有效
 
@@ -263,7 +263,7 @@ class ModelProperty:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this ModelProperty.
+        r"""Sets the max of this ModelProperty.
 
         最大值，当data_type为integer或number时有效
 
@@ -274,7 +274,7 @@ class ModelProperty:
 
     @property
     def step(self):
-        """Gets the step of this ModelProperty.
+        r"""Gets the step of this ModelProperty.
 
         步长，当data_type为integer或number时有效
 
@@ -285,7 +285,7 @@ class ModelProperty:
 
     @step.setter
     def step(self, step):
-        """Sets the step of this ModelProperty.
+        r"""Sets the step of this ModelProperty.
 
         步长，当data_type为integer或number时有效
 
@@ -296,7 +296,7 @@ class ModelProperty:
 
     @property
     def max_length(self):
-        """Gets the max_length of this ModelProperty.
+        r"""Gets the max_length of this ModelProperty.
 
         字符串最大长度，当data_type为string, datetime, json时有效
 
@@ -307,7 +307,7 @@ class ModelProperty:
 
     @max_length.setter
     def max_length(self, max_length):
-        """Sets the max_length of this ModelProperty.
+        r"""Sets the max_length of this ModelProperty.
 
         字符串最大长度，当data_type为string, datetime, json时有效
 
@@ -318,7 +318,7 @@ class ModelProperty:
 
     @property
     def unit(self):
-        """Gets the unit of this ModelProperty.
+        r"""Gets the unit of this ModelProperty.
 
         属性单位
 
@@ -329,7 +329,7 @@ class ModelProperty:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ModelProperty.
+        r"""Sets the unit of this ModelProperty.
 
         属性单位
 
@@ -340,7 +340,7 @@ class ModelProperty:
 
     @property
     def enum_list(self):
-        """Gets the enum_list of this ModelProperty.
+        r"""Gets the enum_list of this ModelProperty.
 
         string的枚举值数组，使用逗号分隔
 
@@ -351,7 +351,7 @@ class ModelProperty:
 
     @enum_list.setter
     def enum_list(self, enum_list):
-        """Sets the enum_list of this ModelProperty.
+        r"""Sets the enum_list of this ModelProperty.
 
         string的枚举值数组，使用逗号分隔
 
@@ -362,7 +362,7 @@ class ModelProperty:
 
     @property
     def enum_dict(self):
-        """Gets the enum_dict of this ModelProperty.
+        r"""Gets the enum_dict of this ModelProperty.
 
         当数据类型为boolean枚举值时填写json格式数据，形如\"enum_dict\":{\"0\":\"xxx\",\"1\":\"xxx\"}
 
@@ -373,7 +373,7 @@ class ModelProperty:
 
     @enum_dict.setter
     def enum_dict(self, enum_dict):
-        """Sets the enum_dict of this ModelProperty.
+        r"""Sets the enum_dict of this ModelProperty.
 
         当数据类型为boolean枚举值时填写json格式数据，形如\"enum_dict\":{\"0\":\"xxx\",\"1\":\"xxx\"}
 

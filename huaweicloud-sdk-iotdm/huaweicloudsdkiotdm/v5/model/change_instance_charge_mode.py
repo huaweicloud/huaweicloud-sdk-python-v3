@@ -31,7 +31,7 @@ class ChangeInstanceChargeMode:
     }
 
     def __init__(self, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None):
-        """ChangeInstanceChargeMode
+        r"""ChangeInstanceChargeMode
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ChangeInstanceChargeMode:
 
     @property
     def period_type(self):
-        """Gets the period_type of this ChangeInstanceChargeMode.
+        r"""Gets the period_type of this ChangeInstanceChargeMode.
 
         **参数说明**：订购设备接入实例的周期类型（包年、包月等）。charge_mode为prePaid时生效，且为必选值。 **取值范围**： - month：包月 - year：包年 
 
@@ -73,7 +73,7 @@ class ChangeInstanceChargeMode:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ChangeInstanceChargeMode.
+        r"""Sets the period_type of this ChangeInstanceChargeMode.
 
         **参数说明**：订购设备接入实例的周期类型（包年、包月等）。charge_mode为prePaid时生效，且为必选值。 **取值范围**： - month：包月 - year：包年 
 
@@ -84,7 +84,7 @@ class ChangeInstanceChargeMode:
 
     @property
     def period_num(self):
-        """Gets the period_num of this ChangeInstanceChargeMode.
+        r"""Gets the period_num of this ChangeInstanceChargeMode.
 
         **参数说明**：订购设备接入实例的周期数。charge_mode为prePaid时生效，且为必选值。 **取值范围**：period_type=month（周期类型为月）时，取值为[1，9]；period_type=year（周期类型为年）时，取值为[1，3]\" 
 
@@ -95,7 +95,7 @@ class ChangeInstanceChargeMode:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this ChangeInstanceChargeMode.
+        r"""Sets the period_num of this ChangeInstanceChargeMode.
 
         **参数说明**：订购设备接入实例的周期数。charge_mode为prePaid时生效，且为必选值。 **取值范围**：period_type=month（周期类型为月）时，取值为[1，9]；period_type=year（周期类型为年）时，取值为[1，3]\" 
 
@@ -106,7 +106,7 @@ class ChangeInstanceChargeMode:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this ChangeInstanceChargeMode.
+        r"""Gets the is_auto_renew of this ChangeInstanceChargeMode.
 
         **参数说明**：创建包年/包月实例时可指定，表示是否自动续订，续订的周期和原周期相同，且续订时会自动支付。 **取值范围**： - true：自动续订 - false：默认值，不自动续订 
 
@@ -117,7 +117,7 @@ class ChangeInstanceChargeMode:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this ChangeInstanceChargeMode.
+        r"""Sets the is_auto_renew of this ChangeInstanceChargeMode.
 
         **参数说明**：创建包年/包月实例时可指定，表示是否自动续订，续订的周期和原周期相同，且续订时会自动支付。 **取值范围**： - true：自动续订 - false：默认值，不自动续订 
 
@@ -128,7 +128,7 @@ class ChangeInstanceChargeMode:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ChangeInstanceChargeMode.
+        r"""Gets the is_auto_pay of this ChangeInstanceChargeMode.
 
         **参数说明**：创建包年/包月实例时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。 **取值范围**：true - 自动支付，从账户余额自动扣费; false - 默认值，只提交订单不支付。[需要客户参考[\"支付包年/包月产品订单\"](https://support.huaweicloud.com/api-bpconsole/api_order_00016.html#section0)进行支付，或者在华为云官网页面使用进行支付。](tag:hws) 
 
@@ -139,7 +139,7 @@ class ChangeInstanceChargeMode:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ChangeInstanceChargeMode.
+        r"""Sets the is_auto_pay of this ChangeInstanceChargeMode.
 
         **参数说明**：创建包年/包月实例时可指定，表示是否自动从客户的账户中支付，此字段不影响自动续订的支付方式。 **取值范围**：true - 自动支付，从账户余额自动扣费; false - 默认值，只提交订单不支付。[需要客户参考[\"支付包年/包月产品订单\"](https://support.huaweicloud.com/api-bpconsole/api_order_00016.html#section0)进行支付，或者在华为云官网页面使用进行支付。](tag:hws) 
 

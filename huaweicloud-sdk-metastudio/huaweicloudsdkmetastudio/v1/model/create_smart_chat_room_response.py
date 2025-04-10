@@ -28,7 +28,7 @@ class CreateSmartChatRoomResponse(SdkResponse):
     }
 
     def __init__(self, room_id=None, x_request_id=None):
-        """CreateSmartChatRoomResponse
+        r"""CreateSmartChatRoomResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateSmartChatRoomResponse(SdkResponse):
 
     @property
     def room_id(self):
-        """Gets the room_id of this CreateSmartChatRoomResponse.
+        r"""Gets the room_id of this CreateSmartChatRoomResponse.
 
         智能交互对话ID
 
@@ -62,7 +62,7 @@ class CreateSmartChatRoomResponse(SdkResponse):
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this CreateSmartChatRoomResponse.
+        r"""Sets the room_id of this CreateSmartChatRoomResponse.
 
         智能交互对话ID
 
@@ -73,7 +73,7 @@ class CreateSmartChatRoomResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateSmartChatRoomResponse.
+        r"""Gets the x_request_id of this CreateSmartChatRoomResponse.
 
         :return: The x_request_id of this CreateSmartChatRoomResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateSmartChatRoomResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateSmartChatRoomResponse.
+        r"""Sets the x_request_id of this CreateSmartChatRoomResponse.
 
         :param x_request_id: The x_request_id of this CreateSmartChatRoomResponse.
         :type x_request_id: str

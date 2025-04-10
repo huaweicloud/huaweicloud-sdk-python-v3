@@ -57,7 +57,7 @@ class RecycleInstanceV3:
     }
 
     def __init__(self, id=None, name=None, ha_mode=None, engine_name=None, engine_version=None, pay_model=None, create_at=None, deleted_at=None, volume_type=None, volume_size=None, data_vip=None, data_vip_ipv6=None, enterprise_project_id=None, enterprise_project_name=None, backup_level=None, recycle_backup_id=None, recycle_status=None):
-        """RecycleInstanceV3
+        r"""RecycleInstanceV3
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class RecycleInstanceV3:
 
     @property
     def id(self):
-        """Gets the id of this RecycleInstanceV3.
+        r"""Gets the id of this RecycleInstanceV3.
 
         实例ID。
 
@@ -166,7 +166,7 @@ class RecycleInstanceV3:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RecycleInstanceV3.
+        r"""Sets the id of this RecycleInstanceV3.
 
         实例ID。
 
@@ -177,7 +177,7 @@ class RecycleInstanceV3:
 
     @property
     def name(self):
-        """Gets the name of this RecycleInstanceV3.
+        r"""Gets the name of this RecycleInstanceV3.
 
         实例名称。
 
@@ -188,7 +188,7 @@ class RecycleInstanceV3:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RecycleInstanceV3.
+        r"""Sets the name of this RecycleInstanceV3.
 
         实例名称。
 
@@ -199,7 +199,7 @@ class RecycleInstanceV3:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this RecycleInstanceV3.
+        r"""Gets the ha_mode of this RecycleInstanceV3.
 
         实例类型。
 
@@ -210,7 +210,7 @@ class RecycleInstanceV3:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this RecycleInstanceV3.
+        r"""Sets the ha_mode of this RecycleInstanceV3.
 
         实例类型。
 
@@ -221,7 +221,7 @@ class RecycleInstanceV3:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this RecycleInstanceV3.
+        r"""Gets the engine_name of this RecycleInstanceV3.
 
         引擎名称。
 
@@ -232,7 +232,7 @@ class RecycleInstanceV3:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this RecycleInstanceV3.
+        r"""Sets the engine_name of this RecycleInstanceV3.
 
         引擎名称。
 
@@ -243,7 +243,7 @@ class RecycleInstanceV3:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this RecycleInstanceV3.
+        r"""Gets the engine_version of this RecycleInstanceV3.
 
         引擎版本。
 
@@ -254,7 +254,7 @@ class RecycleInstanceV3:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this RecycleInstanceV3.
+        r"""Sets the engine_version of this RecycleInstanceV3.
 
         引擎版本。
 
@@ -265,7 +265,7 @@ class RecycleInstanceV3:
 
     @property
     def pay_model(self):
-        """Gets the pay_model of this RecycleInstanceV3.
+        r"""Gets the pay_model of this RecycleInstanceV3.
 
         计费模式。
 
@@ -276,7 +276,7 @@ class RecycleInstanceV3:
 
     @pay_model.setter
     def pay_model(self, pay_model):
-        """Sets the pay_model of this RecycleInstanceV3.
+        r"""Sets the pay_model of this RecycleInstanceV3.
 
         计费模式。
 
@@ -287,7 +287,7 @@ class RecycleInstanceV3:
 
     @property
     def create_at(self):
-        """Gets the create_at of this RecycleInstanceV3.
+        r"""Gets the create_at of this RecycleInstanceV3.
 
         创建时间。
 
@@ -298,7 +298,7 @@ class RecycleInstanceV3:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this RecycleInstanceV3.
+        r"""Sets the create_at of this RecycleInstanceV3.
 
         创建时间。
 
@@ -309,7 +309,7 @@ class RecycleInstanceV3:
 
     @property
     def deleted_at(self):
-        """Gets the deleted_at of this RecycleInstanceV3.
+        r"""Gets the deleted_at of this RecycleInstanceV3.
 
         删除时间。
 
@@ -320,7 +320,7 @@ class RecycleInstanceV3:
 
     @deleted_at.setter
     def deleted_at(self, deleted_at):
-        """Sets the deleted_at of this RecycleInstanceV3.
+        r"""Sets the deleted_at of this RecycleInstanceV3.
 
         删除时间。
 
@@ -331,7 +331,7 @@ class RecycleInstanceV3:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this RecycleInstanceV3.
+        r"""Gets the volume_type of this RecycleInstanceV3.
 
         磁盘类型。
 
@@ -342,7 +342,7 @@ class RecycleInstanceV3:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this RecycleInstanceV3.
+        r"""Sets the volume_type of this RecycleInstanceV3.
 
         磁盘类型。
 
@@ -353,7 +353,7 @@ class RecycleInstanceV3:
 
     @property
     def volume_size(self):
-        """Gets the volume_size of this RecycleInstanceV3.
+        r"""Gets the volume_size of this RecycleInstanceV3.
 
         磁盘大小。
 
@@ -364,7 +364,7 @@ class RecycleInstanceV3:
 
     @volume_size.setter
     def volume_size(self, volume_size):
-        """Sets the volume_size of this RecycleInstanceV3.
+        r"""Sets the volume_size of this RecycleInstanceV3.
 
         磁盘大小。
 
@@ -375,7 +375,7 @@ class RecycleInstanceV3:
 
     @property
     def data_vip(self):
-        """Gets the data_vip of this RecycleInstanceV3.
+        r"""Gets the data_vip of this RecycleInstanceV3.
 
         数据面VIP。
 
@@ -386,7 +386,7 @@ class RecycleInstanceV3:
 
     @data_vip.setter
     def data_vip(self, data_vip):
-        """Sets the data_vip of this RecycleInstanceV3.
+        r"""Sets the data_vip of this RecycleInstanceV3.
 
         数据面VIP。
 
@@ -397,7 +397,7 @@ class RecycleInstanceV3:
 
     @property
     def data_vip_ipv6(self):
-        """Gets the data_vip_ipv6 of this RecycleInstanceV3.
+        r"""Gets the data_vip_ipv6 of this RecycleInstanceV3.
 
         数据面IPV6。
 
@@ -408,7 +408,7 @@ class RecycleInstanceV3:
 
     @data_vip_ipv6.setter
     def data_vip_ipv6(self, data_vip_ipv6):
-        """Sets the data_vip_ipv6 of this RecycleInstanceV3.
+        r"""Sets the data_vip_ipv6 of this RecycleInstanceV3.
 
         数据面IPV6。
 
@@ -419,7 +419,7 @@ class RecycleInstanceV3:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RecycleInstanceV3.
+        r"""Gets the enterprise_project_id of this RecycleInstanceV3.
 
         企业项目ID。
 
@@ -430,7 +430,7 @@ class RecycleInstanceV3:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RecycleInstanceV3.
+        r"""Sets the enterprise_project_id of this RecycleInstanceV3.
 
         企业项目ID。
 
@@ -441,7 +441,7 @@ class RecycleInstanceV3:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this RecycleInstanceV3.
+        r"""Gets the enterprise_project_name of this RecycleInstanceV3.
 
         企业项目名称。
 
@@ -452,7 +452,7 @@ class RecycleInstanceV3:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this RecycleInstanceV3.
+        r"""Sets the enterprise_project_name of this RecycleInstanceV3.
 
         企业项目名称。
 
@@ -463,7 +463,7 @@ class RecycleInstanceV3:
 
     @property
     def backup_level(self):
-        """Gets the backup_level of this RecycleInstanceV3.
+        r"""Gets the backup_level of this RecycleInstanceV3.
 
         备份级别。
 
@@ -474,7 +474,7 @@ class RecycleInstanceV3:
 
     @backup_level.setter
     def backup_level(self, backup_level):
-        """Sets the backup_level of this RecycleInstanceV3.
+        r"""Sets the backup_level of this RecycleInstanceV3.
 
         备份级别。
 
@@ -485,7 +485,7 @@ class RecycleInstanceV3:
 
     @property
     def recycle_backup_id(self):
-        """Gets the recycle_backup_id of this RecycleInstanceV3.
+        r"""Gets the recycle_backup_id of this RecycleInstanceV3.
 
         备份ID。
 
@@ -496,7 +496,7 @@ class RecycleInstanceV3:
 
     @recycle_backup_id.setter
     def recycle_backup_id(self, recycle_backup_id):
-        """Sets the recycle_backup_id of this RecycleInstanceV3.
+        r"""Sets the recycle_backup_id of this RecycleInstanceV3.
 
         备份ID。
 
@@ -507,7 +507,7 @@ class RecycleInstanceV3:
 
     @property
     def recycle_status(self):
-        """Gets the recycle_status of this RecycleInstanceV3.
+        r"""Gets the recycle_status of this RecycleInstanceV3.
 
         回收状态。
 
@@ -518,7 +518,7 @@ class RecycleInstanceV3:
 
     @recycle_status.setter
     def recycle_status(self, recycle_status):
-        """Sets the recycle_status of this RecycleInstanceV3.
+        r"""Sets the recycle_status of this RecycleInstanceV3.
 
         回收状态。
 

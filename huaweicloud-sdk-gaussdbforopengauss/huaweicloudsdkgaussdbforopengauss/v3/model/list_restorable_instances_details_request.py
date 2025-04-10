@@ -35,7 +35,7 @@ class ListRestorableInstancesDetailsRequest:
     }
 
     def __init__(self, x_language=None, source_instance_id=None, backup_id=None, restore_time=None, offset=None, limit=None):
-        """ListRestorableInstancesDetailsRequest
+        r"""ListRestorableInstancesDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListRestorableInstancesDetailsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListRestorableInstancesDetailsRequest.
+        r"""Gets the x_language of this ListRestorableInstancesDetailsRequest.
 
         语言。
 
@@ -88,7 +88,7 @@ class ListRestorableInstancesDetailsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListRestorableInstancesDetailsRequest.
+        r"""Sets the x_language of this ListRestorableInstancesDetailsRequest.
 
         语言。
 
@@ -99,7 +99,7 @@ class ListRestorableInstancesDetailsRequest:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this ListRestorableInstancesDetailsRequest.
+        r"""Gets the source_instance_id of this ListRestorableInstancesDetailsRequest.
 
         源实例id，需要恢复的实例ID。
 
@@ -110,7 +110,7 @@ class ListRestorableInstancesDetailsRequest:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this ListRestorableInstancesDetailsRequest.
+        r"""Sets the source_instance_id of this ListRestorableInstancesDetailsRequest.
 
         源实例id，需要恢复的实例ID。
 
@@ -121,7 +121,7 @@ class ListRestorableInstancesDetailsRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ListRestorableInstancesDetailsRequest.
+        r"""Gets the backup_id of this ListRestorableInstancesDetailsRequest.
 
         实例备份信息ID，根据备份ID查询实例拓扑信息，过滤查询出来的实例，包含节点数，副本数等。参数为空时，根据restore_time查询。。
 
@@ -132,7 +132,7 @@ class ListRestorableInstancesDetailsRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ListRestorableInstancesDetailsRequest.
+        r"""Sets the backup_id of this ListRestorableInstancesDetailsRequest.
 
         实例备份信息ID，根据备份ID查询实例拓扑信息，过滤查询出来的实例，包含节点数，副本数等。参数为空时，根据restore_time查询。。
 
@@ -143,7 +143,7 @@ class ListRestorableInstancesDetailsRequest:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this ListRestorableInstancesDetailsRequest.
+        r"""Gets the restore_time of this ListRestorableInstancesDetailsRequest.
 
         恢复点，当备份ID为空时，通过此参数查询实例拓扑信息，过滤实例列表。
 
@@ -154,7 +154,7 @@ class ListRestorableInstancesDetailsRequest:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this ListRestorableInstancesDetailsRequest.
+        r"""Sets the restore_time of this ListRestorableInstancesDetailsRequest.
 
         恢复点，当备份ID为空时，通过此参数查询实例拓扑信息，过滤实例列表。
 
@@ -165,7 +165,7 @@ class ListRestorableInstancesDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRestorableInstancesDetailsRequest.
+        r"""Gets the offset of this ListRestorableInstancesDetailsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -176,7 +176,7 @@ class ListRestorableInstancesDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRestorableInstancesDetailsRequest.
+        r"""Sets the offset of this ListRestorableInstancesDetailsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -187,7 +187,7 @@ class ListRestorableInstancesDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRestorableInstancesDetailsRequest.
+        r"""Gets the limit of this ListRestorableInstancesDetailsRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -198,7 +198,7 @@ class ListRestorableInstancesDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRestorableInstancesDetailsRequest.
+        r"""Sets the limit of this ListRestorableInstancesDetailsRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 

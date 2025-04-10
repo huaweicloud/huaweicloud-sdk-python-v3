@@ -43,7 +43,7 @@ class StructTemplateModel:
     }
 
     def __init__(self, project_id=None, template_name=None, template_type=None, demo_log=None, demo_fields=None, tag_fields=None, rule=None, demo_label=None, create_time=None, id=None):
-        """StructTemplateModel
+        r"""StructTemplateModel
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class StructTemplateModel:
 
     @property
     def project_id(self):
-        """Gets the project_id of this StructTemplateModel.
+        r"""Gets the project_id of this StructTemplateModel.
 
         项目id
 
@@ -110,7 +110,7 @@ class StructTemplateModel:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this StructTemplateModel.
+        r"""Sets the project_id of this StructTemplateModel.
 
         项目id
 
@@ -121,7 +121,7 @@ class StructTemplateModel:
 
     @property
     def template_name(self):
-        """Gets the template_name of this StructTemplateModel.
+        r"""Gets the template_name of this StructTemplateModel.
 
         模板名称
 
@@ -132,7 +132,7 @@ class StructTemplateModel:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this StructTemplateModel.
+        r"""Sets the template_name of this StructTemplateModel.
 
         模板名称
 
@@ -143,7 +143,7 @@ class StructTemplateModel:
 
     @property
     def template_type(self):
-        """Gets the template_type of this StructTemplateModel.
+        r"""Gets the template_type of this StructTemplateModel.
 
         模板类型，regex,json,split,nginx
 
@@ -154,7 +154,7 @@ class StructTemplateModel:
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this StructTemplateModel.
+        r"""Sets the template_type of this StructTemplateModel.
 
         模板类型，regex,json,split,nginx
 
@@ -165,7 +165,7 @@ class StructTemplateModel:
 
     @property
     def demo_log(self):
-        """Gets the demo_log of this StructTemplateModel.
+        r"""Gets the demo_log of this StructTemplateModel.
 
         示例日志
 
@@ -176,7 +176,7 @@ class StructTemplateModel:
 
     @demo_log.setter
     def demo_log(self, demo_log):
-        """Sets the demo_log of this StructTemplateModel.
+        r"""Sets the demo_log of this StructTemplateModel.
 
         示例日志
 
@@ -187,7 +187,7 @@ class StructTemplateModel:
 
     @property
     def demo_fields(self):
-        """Gets the demo_fields of this StructTemplateModel.
+        r"""Gets the demo_fields of this StructTemplateModel.
 
         示例字段数组
 
@@ -198,7 +198,7 @@ class StructTemplateModel:
 
     @demo_fields.setter
     def demo_fields(self, demo_fields):
-        """Sets the demo_fields of this StructTemplateModel.
+        r"""Sets the demo_fields of this StructTemplateModel.
 
         示例字段数组
 
@@ -209,7 +209,7 @@ class StructTemplateModel:
 
     @property
     def tag_fields(self):
-        """Gets the tag_fields of this StructTemplateModel.
+        r"""Gets the tag_fields of this StructTemplateModel.
 
         Tag字段数组
 
@@ -220,7 +220,7 @@ class StructTemplateModel:
 
     @tag_fields.setter
     def tag_fields(self, tag_fields):
-        """Sets the tag_fields of this StructTemplateModel.
+        r"""Sets the tag_fields of this StructTemplateModel.
 
         Tag字段数组
 
@@ -231,7 +231,7 @@ class StructTemplateModel:
 
     @property
     def rule(self):
-        """Gets the rule of this StructTemplateModel.
+        r"""Gets the rule of this StructTemplateModel.
 
         :return: The rule of this StructTemplateModel.
         :rtype: :class:`huaweicloudsdklts.v2.TemplateRule`
@@ -240,7 +240,7 @@ class StructTemplateModel:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this StructTemplateModel.
+        r"""Sets the rule of this StructTemplateModel.
 
         :param rule: The rule of this StructTemplateModel.
         :type rule: :class:`huaweicloudsdklts.v2.TemplateRule`
@@ -249,7 +249,7 @@ class StructTemplateModel:
 
     @property
     def demo_label(self):
-        """Gets the demo_label of this StructTemplateModel.
+        r"""Gets the demo_label of this StructTemplateModel.
 
         示例日志标签
 
@@ -260,7 +260,7 @@ class StructTemplateModel:
 
     @demo_label.setter
     def demo_label(self, demo_label):
-        """Sets the demo_label of this StructTemplateModel.
+        r"""Sets the demo_label of this StructTemplateModel.
 
         示例日志标签
 
@@ -271,7 +271,7 @@ class StructTemplateModel:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StructTemplateModel.
+        r"""Gets the create_time of this StructTemplateModel.
 
         创建时间
 
@@ -282,7 +282,7 @@ class StructTemplateModel:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StructTemplateModel.
+        r"""Sets the create_time of this StructTemplateModel.
 
         创建时间
 
@@ -293,7 +293,7 @@ class StructTemplateModel:
 
     @property
     def id(self):
-        """Gets the id of this StructTemplateModel.
+        r"""Gets the id of this StructTemplateModel.
 
         模板id
 
@@ -304,7 +304,7 @@ class StructTemplateModel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StructTemplateModel.
+        r"""Sets the id of this StructTemplateModel.
 
         模板id
 

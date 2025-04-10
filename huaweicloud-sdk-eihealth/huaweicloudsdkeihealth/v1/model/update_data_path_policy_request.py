@@ -29,7 +29,7 @@ class UpdateDataPathPolicyRequest:
     }
 
     def __init__(self, eihealth_project_id=None, path=None, body=None):
-        """UpdateDataPathPolicyRequest
+        r"""UpdateDataPathPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDataPathPolicyRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this UpdateDataPathPolicyRequest.
+        r"""Gets the eihealth_project_id of this UpdateDataPathPolicyRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -66,7 +66,7 @@ class UpdateDataPathPolicyRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this UpdateDataPathPolicyRequest.
+        r"""Sets the eihealth_project_id of this UpdateDataPathPolicyRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -77,7 +77,7 @@ class UpdateDataPathPolicyRequest:
 
     @property
     def path(self):
-        """Gets the path of this UpdateDataPathPolicyRequest.
+        r"""Gets the path of this UpdateDataPathPolicyRequest.
 
         对象全路径（项目名称:|路径）
 
@@ -88,7 +88,7 @@ class UpdateDataPathPolicyRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this UpdateDataPathPolicyRequest.
+        r"""Sets the path of this UpdateDataPathPolicyRequest.
 
         对象全路径（项目名称:|路径）
 
@@ -99,7 +99,7 @@ class UpdateDataPathPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDataPathPolicyRequest.
+        r"""Gets the body of this UpdateDataPathPolicyRequest.
 
         :return: The body of this UpdateDataPathPolicyRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DataPolicyReq`
@@ -108,7 +108,7 @@ class UpdateDataPathPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDataPathPolicyRequest.
+        r"""Sets the body of this UpdateDataPathPolicyRequest.
 
         :param body: The body of this UpdateDataPathPolicyRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.DataPolicyReq`

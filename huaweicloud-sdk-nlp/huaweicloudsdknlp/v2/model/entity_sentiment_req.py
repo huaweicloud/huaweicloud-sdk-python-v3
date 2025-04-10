@@ -29,7 +29,7 @@ class EntitySentimentReq:
     }
 
     def __init__(self, content=None, entity=None, type=None):
-        """EntitySentimentReq
+        r"""EntitySentimentReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class EntitySentimentReq:
 
     @property
     def content(self):
-        """Gets the content of this EntitySentimentReq.
+        r"""Gets the content of this EntitySentimentReq.
 
         请求文本。文本编码要求为utf-8，仅支持中文实体情感分析。 限定content+entity长度为512以内，长度超过512时，只检测前512个字符。 
 
@@ -65,7 +65,7 @@ class EntitySentimentReq:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this EntitySentimentReq.
+        r"""Sets the content of this EntitySentimentReq.
 
         请求文本。文本编码要求为utf-8，仅支持中文实体情感分析。 限定content+entity长度为512以内，长度超过512时，只检测前512个字符。 
 
@@ -76,7 +76,7 @@ class EntitySentimentReq:
 
     @property
     def entity(self):
-        """Gets the entity of this EntitySentimentReq.
+        r"""Gets the entity of this EntitySentimentReq.
 
         请求实体。文本编码要求为utf-8.仅支持中文实体情感分析。 限定content+entity长度为512以内，长度超过512时，只检测前512个字符。
 
@@ -87,7 +87,7 @@ class EntitySentimentReq:
 
     @entity.setter
     def entity(self, entity):
-        """Sets the entity of this EntitySentimentReq.
+        r"""Sets the entity of this EntitySentimentReq.
 
         请求实体。文本编码要求为utf-8.仅支持中文实体情感分析。 限定content+entity长度为512以内，长度超过512时，只检测前512个字符。
 
@@ -98,7 +98,7 @@ class EntitySentimentReq:
 
     @property
     def type(self):
-        """Gets the type of this EntitySentimentReq.
+        r"""Gets the type of this EntitySentimentReq.
 
         取值如下： 3 金融领域
 
@@ -109,7 +109,7 @@ class EntitySentimentReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EntitySentimentReq.
+        r"""Sets the type of this EntitySentimentReq.
 
         取值如下： 3 金融领域
 

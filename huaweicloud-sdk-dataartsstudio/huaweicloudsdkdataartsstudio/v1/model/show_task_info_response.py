@@ -66,7 +66,7 @@ class ShowTaskInfoResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, user_id=None, create_time=None, project_id=None, dir_id=None, schedule_config=None, parameter_config=None, update_time=None, user_name=None, path=None, last_run_time=None, start_time=None, end_time=None, next_run_time=None, duty_person=None, update_type=None, data_source_type=None, task_config=None, data_source_workspace_id=None):
-        """ShowTaskInfoResponse
+        r"""ShowTaskInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -184,7 +184,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowTaskInfoResponse.
+        r"""Gets the id of this ShowTaskInfoResponse.
 
         任务id
 
@@ -195,7 +195,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowTaskInfoResponse.
+        r"""Sets the id of this ShowTaskInfoResponse.
 
         任务id
 
@@ -206,7 +206,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowTaskInfoResponse.
+        r"""Gets the name of this ShowTaskInfoResponse.
 
         任务名称
 
@@ -217,7 +217,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowTaskInfoResponse.
+        r"""Sets the name of this ShowTaskInfoResponse.
 
         任务名称
 
@@ -228,7 +228,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowTaskInfoResponse.
+        r"""Gets the description of this ShowTaskInfoResponse.
 
         任务描述
 
@@ -239,7 +239,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowTaskInfoResponse.
+        r"""Sets the description of this ShowTaskInfoResponse.
 
         任务描述
 
@@ -250,7 +250,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowTaskInfoResponse.
+        r"""Gets the user_id of this ShowTaskInfoResponse.
 
         用户id
 
@@ -261,7 +261,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowTaskInfoResponse.
+        r"""Sets the user_id of this ShowTaskInfoResponse.
 
         用户id
 
@@ -272,7 +272,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowTaskInfoResponse.
+        r"""Gets the create_time of this ShowTaskInfoResponse.
 
         创建时间
 
@@ -283,7 +283,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowTaskInfoResponse.
+        r"""Sets the create_time of this ShowTaskInfoResponse.
 
         创建时间
 
@@ -294,7 +294,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowTaskInfoResponse.
+        r"""Gets the project_id of this ShowTaskInfoResponse.
 
         产品id
 
@@ -305,7 +305,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowTaskInfoResponse.
+        r"""Sets the project_id of this ShowTaskInfoResponse.
 
         产品id
 
@@ -316,7 +316,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def dir_id(self):
-        """Gets the dir_id of this ShowTaskInfoResponse.
+        r"""Gets the dir_id of this ShowTaskInfoResponse.
 
         目录id
 
@@ -327,7 +327,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @dir_id.setter
     def dir_id(self, dir_id):
-        """Sets the dir_id of this ShowTaskInfoResponse.
+        r"""Sets the dir_id of this ShowTaskInfoResponse.
 
         目录id
 
@@ -338,7 +338,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def schedule_config(self):
-        """Gets the schedule_config of this ShowTaskInfoResponse.
+        r"""Gets the schedule_config of this ShowTaskInfoResponse.
 
         :return: The schedule_config of this ShowTaskInfoResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SchedulerInfo`
@@ -347,7 +347,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @schedule_config.setter
     def schedule_config(self, schedule_config):
-        """Sets the schedule_config of this ShowTaskInfoResponse.
+        r"""Sets the schedule_config of this ShowTaskInfoResponse.
 
         :param schedule_config: The schedule_config of this ShowTaskInfoResponse.
         :type schedule_config: :class:`huaweicloudsdkdataartsstudio.v1.SchedulerInfo`
@@ -356,7 +356,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def parameter_config(self):
-        """Gets the parameter_config of this ShowTaskInfoResponse.
+        r"""Gets the parameter_config of this ShowTaskInfoResponse.
 
         自定义元数据信息
 
@@ -367,7 +367,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @parameter_config.setter
     def parameter_config(self, parameter_config):
-        """Sets the parameter_config of this ShowTaskInfoResponse.
+        r"""Sets the parameter_config of this ShowTaskInfoResponse.
 
         自定义元数据信息
 
@@ -378,7 +378,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowTaskInfoResponse.
+        r"""Gets the update_time of this ShowTaskInfoResponse.
 
         修改时间
 
@@ -389,7 +389,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowTaskInfoResponse.
+        r"""Sets the update_time of this ShowTaskInfoResponse.
 
         修改时间
 
@@ -400,7 +400,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowTaskInfoResponse.
+        r"""Gets the user_name of this ShowTaskInfoResponse.
 
         用户名
 
@@ -411,7 +411,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowTaskInfoResponse.
+        r"""Sets the user_name of this ShowTaskInfoResponse.
 
         用户名
 
@@ -422,7 +422,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def path(self):
-        """Gets the path of this ShowTaskInfoResponse.
+        r"""Gets the path of this ShowTaskInfoResponse.
 
         路径
 
@@ -433,7 +433,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowTaskInfoResponse.
+        r"""Sets the path of this ShowTaskInfoResponse.
 
         路径
 
@@ -444,7 +444,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def last_run_time(self):
-        """Gets the last_run_time of this ShowTaskInfoResponse.
+        r"""Gets the last_run_time of this ShowTaskInfoResponse.
 
         最后一次执行时间
 
@@ -455,7 +455,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @last_run_time.setter
     def last_run_time(self, last_run_time):
-        """Sets the last_run_time of this ShowTaskInfoResponse.
+        r"""Sets the last_run_time of this ShowTaskInfoResponse.
 
         最后一次执行时间
 
@@ -466,7 +466,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowTaskInfoResponse.
+        r"""Gets the start_time of this ShowTaskInfoResponse.
 
         开始时间
 
@@ -477,7 +477,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowTaskInfoResponse.
+        r"""Sets the start_time of this ShowTaskInfoResponse.
 
         开始时间
 
@@ -488,7 +488,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowTaskInfoResponse.
+        r"""Gets the end_time of this ShowTaskInfoResponse.
 
         结束时间
 
@@ -499,7 +499,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowTaskInfoResponse.
+        r"""Sets the end_time of this ShowTaskInfoResponse.
 
         结束时间
 
@@ -510,7 +510,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def next_run_time(self):
-        """Gets the next_run_time of this ShowTaskInfoResponse.
+        r"""Gets the next_run_time of this ShowTaskInfoResponse.
 
         下一次执行时间
 
@@ -521,7 +521,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @next_run_time.setter
     def next_run_time(self, next_run_time):
-        """Sets the next_run_time of this ShowTaskInfoResponse.
+        r"""Sets the next_run_time of this ShowTaskInfoResponse.
 
         下一次执行时间
 
@@ -532,7 +532,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def duty_person(self):
-        """Gets the duty_person of this ShowTaskInfoResponse.
+        r"""Gets the duty_person of this ShowTaskInfoResponse.
 
         责任人
 
@@ -543,7 +543,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @duty_person.setter
     def duty_person(self, duty_person):
-        """Sets the duty_person of this ShowTaskInfoResponse.
+        r"""Sets the duty_person of this ShowTaskInfoResponse.
 
         责任人
 
@@ -554,7 +554,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def update_type(self):
-        """Gets the update_type of this ShowTaskInfoResponse.
+        r"""Gets the update_type of this ShowTaskInfoResponse.
 
         修改类型
 
@@ -565,7 +565,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @update_type.setter
     def update_type(self, update_type):
-        """Sets the update_type of this ShowTaskInfoResponse.
+        r"""Sets the update_type of this ShowTaskInfoResponse.
 
         修改类型
 
@@ -576,7 +576,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def data_source_type(self):
-        """Gets the data_source_type of this ShowTaskInfoResponse.
+        r"""Gets the data_source_type of this ShowTaskInfoResponse.
 
         数据来源类型
 
@@ -587,7 +587,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @data_source_type.setter
     def data_source_type(self, data_source_type):
-        """Sets the data_source_type of this ShowTaskInfoResponse.
+        r"""Sets the data_source_type of this ShowTaskInfoResponse.
 
         数据来源类型
 
@@ -598,7 +598,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def task_config(self):
-        """Gets the task_config of this ShowTaskInfoResponse.
+        r"""Gets the task_config of this ShowTaskInfoResponse.
 
         任务信息Map<String, Object>
 
@@ -609,7 +609,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @task_config.setter
     def task_config(self, task_config):
-        """Sets the task_config of this ShowTaskInfoResponse.
+        r"""Sets the task_config of this ShowTaskInfoResponse.
 
         任务信息Map<String, Object>
 
@@ -620,7 +620,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @property
     def data_source_workspace_id(self):
-        """Gets the data_source_workspace_id of this ShowTaskInfoResponse.
+        r"""Gets the data_source_workspace_id of this ShowTaskInfoResponse.
 
         数据来源工作空间id
 
@@ -631,7 +631,7 @@ class ShowTaskInfoResponse(SdkResponse):
 
     @data_source_workspace_id.setter
     def data_source_workspace_id(self, data_source_workspace_id):
-        """Sets the data_source_workspace_id of this ShowTaskInfoResponse.
+        r"""Sets the data_source_workspace_id of this ShowTaskInfoResponse.
 
         数据来源工作空间id
 

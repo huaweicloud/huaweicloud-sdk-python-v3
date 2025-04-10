@@ -25,7 +25,7 @@ class CreateDisasterRecoveryDrillRequestBody:
     }
 
     def __init__(self, disaster_recovery_drill=None):
-        """CreateDisasterRecoveryDrillRequestBody
+        r"""CreateDisasterRecoveryDrillRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateDisasterRecoveryDrillRequestBody:
 
     @property
     def disaster_recovery_drill(self):
-        """Gets the disaster_recovery_drill of this CreateDisasterRecoveryDrillRequestBody.
+        r"""Gets the disaster_recovery_drill of this CreateDisasterRecoveryDrillRequestBody.
 
         :return: The disaster_recovery_drill of this CreateDisasterRecoveryDrillRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.CreateDisasterRecoveryDrillRequestParams`
@@ -51,7 +51,7 @@ class CreateDisasterRecoveryDrillRequestBody:
 
     @disaster_recovery_drill.setter
     def disaster_recovery_drill(self, disaster_recovery_drill):
-        """Sets the disaster_recovery_drill of this CreateDisasterRecoveryDrillRequestBody.
+        r"""Sets the disaster_recovery_drill of this CreateDisasterRecoveryDrillRequestBody.
 
         :param disaster_recovery_drill: The disaster_recovery_drill of this CreateDisasterRecoveryDrillRequestBody.
         :type disaster_recovery_drill: :class:`huaweicloudsdksdrs.v1.CreateDisasterRecoveryDrillRequestParams`

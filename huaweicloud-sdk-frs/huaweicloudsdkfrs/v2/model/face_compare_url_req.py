@@ -27,7 +27,7 @@ class FaceCompareUrlReq:
     }
 
     def __init__(self, image1_url=None, image2_url=None):
-        """FaceCompareUrlReq
+        r"""FaceCompareUrlReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FaceCompareUrlReq:
 
     @property
     def image1_url(self):
-        """Gets the image1_url of this FaceCompareUrlReq.
+        r"""Gets the image1_url of this FaceCompareUrlReq.
 
         [图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。与image1_file、image1_base64三选一](tag:hc) [图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0006.html)。与image1_file、image1_base64三选一](tag:hk)
 
@@ -59,7 +59,7 @@ class FaceCompareUrlReq:
 
     @image1_url.setter
     def image1_url(self, image1_url):
-        """Sets the image1_url of this FaceCompareUrlReq.
+        r"""Sets the image1_url of this FaceCompareUrlReq.
 
         [图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。与image1_file、image1_base64三选一](tag:hc) [图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0006.html)。与image1_file、image1_base64三选一](tag:hk)
 
@@ -70,7 +70,7 @@ class FaceCompareUrlReq:
 
     @property
     def image2_url(self):
-        """Gets the image2_url of this FaceCompareUrlReq.
+        r"""Gets the image2_url of this FaceCompareUrlReq.
 
         [图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。与image2_file、image2_base64三选一](tag:hc) [图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0006.html)。与image2_file、image2_base64三选一](tag:hk)
 
@@ -81,7 +81,7 @@ class FaceCompareUrlReq:
 
     @image2_url.setter
     def image2_url(self, image2_url):
-        """Sets the image2_url of this FaceCompareUrlReq.
+        r"""Sets the image2_url of this FaceCompareUrlReq.
 
         [图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。与image2_file、image2_base64三选一](tag:hc) [图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0006.html)。与image2_file、image2_base64三选一](tag:hk)
 

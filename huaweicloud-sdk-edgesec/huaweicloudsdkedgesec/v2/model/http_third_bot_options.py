@@ -25,7 +25,7 @@ class HttpThirdBotOptions:
     }
 
     def __init__(self, river_config=None):
-        """HttpThirdBotOptions
+        r"""HttpThirdBotOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class HttpThirdBotOptions:
 
     @property
     def river_config(self):
-        """Gets the river_config of this HttpThirdBotOptions.
+        r"""Gets the river_config of this HttpThirdBotOptions.
 
         :return: The river_config of this HttpThirdBotOptions.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpRiverConfig`
@@ -52,7 +52,7 @@ class HttpThirdBotOptions:
 
     @river_config.setter
     def river_config(self, river_config):
-        """Sets the river_config of this HttpThirdBotOptions.
+        r"""Sets the river_config of this HttpThirdBotOptions.
 
         :param river_config: The river_config of this HttpThirdBotOptions.
         :type river_config: :class:`huaweicloudsdkedgesec.v2.HttpRiverConfig`

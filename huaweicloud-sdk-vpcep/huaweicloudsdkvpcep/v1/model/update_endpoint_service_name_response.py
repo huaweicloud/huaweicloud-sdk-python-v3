@@ -26,7 +26,7 @@ class UpdateEndpointServiceNameResponse(SdkResponse):
     }
 
     def __init__(self, endpoint_service_name=None):
-        """UpdateEndpointServiceNameResponse
+        r"""UpdateEndpointServiceNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateEndpointServiceNameResponse(SdkResponse):
 
     @property
     def endpoint_service_name(self):
-        """Gets the endpoint_service_name of this UpdateEndpointServiceNameResponse.
+        r"""Gets the endpoint_service_name of this UpdateEndpointServiceNameResponse.
 
         终端节点服务名称
 
@@ -55,7 +55,7 @@ class UpdateEndpointServiceNameResponse(SdkResponse):
 
     @endpoint_service_name.setter
     def endpoint_service_name(self, endpoint_service_name):
-        """Sets the endpoint_service_name of this UpdateEndpointServiceNameResponse.
+        r"""Sets the endpoint_service_name of this UpdateEndpointServiceNameResponse.
 
         终端节点服务名称
 

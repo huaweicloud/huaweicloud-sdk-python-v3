@@ -32,7 +32,7 @@ class ListGlobalEipDomainTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, total_count=None, tags=None, x_request_id=None):
-        """ListGlobalEipDomainTagsResponse
+        r"""ListGlobalEipDomainTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListGlobalEipDomainTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGlobalEipDomainTagsResponse.
+        r"""Gets the request_id of this ListGlobalEipDomainTagsResponse.
 
         本次请求的编号
 
@@ -76,7 +76,7 @@ class ListGlobalEipDomainTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGlobalEipDomainTagsResponse.
+        r"""Sets the request_id of this ListGlobalEipDomainTagsResponse.
 
         本次请求的编号
 
@@ -87,7 +87,7 @@ class ListGlobalEipDomainTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListGlobalEipDomainTagsResponse.
+        r"""Gets the total_count of this ListGlobalEipDomainTagsResponse.
 
         当前列表中资源数量。
 
@@ -98,7 +98,7 @@ class ListGlobalEipDomainTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListGlobalEipDomainTagsResponse.
+        r"""Sets the total_count of this ListGlobalEipDomainTagsResponse.
 
         当前列表中资源数量。
 
@@ -109,7 +109,7 @@ class ListGlobalEipDomainTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListGlobalEipDomainTagsResponse.
+        r"""Gets the tags of this ListGlobalEipDomainTagsResponse.
 
         tag列表信息
 
@@ -120,7 +120,7 @@ class ListGlobalEipDomainTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListGlobalEipDomainTagsResponse.
+        r"""Sets the tags of this ListGlobalEipDomainTagsResponse.
 
         tag列表信息
 
@@ -131,7 +131,7 @@ class ListGlobalEipDomainTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListGlobalEipDomainTagsResponse.
+        r"""Gets the x_request_id of this ListGlobalEipDomainTagsResponse.
 
         :return: The x_request_id of this ListGlobalEipDomainTagsResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class ListGlobalEipDomainTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListGlobalEipDomainTagsResponse.
+        r"""Sets the x_request_id of this ListGlobalEipDomainTagsResponse.
 
         :param x_request_id: The x_request_id of this ListGlobalEipDomainTagsResponse.
         :type x_request_id: str

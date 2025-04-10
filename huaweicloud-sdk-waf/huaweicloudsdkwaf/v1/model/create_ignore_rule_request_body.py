@@ -35,7 +35,7 @@ class CreateIgnoreRuleRequestBody:
     }
 
     def __init__(self, domain=None, conditions=None, mode=None, rule=None, advanced=None, description=None):
-        """CreateIgnoreRuleRequestBody
+        r"""CreateIgnoreRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CreateIgnoreRuleRequestBody:
 
     @property
     def domain(self):
-        """Gets the domain of this CreateIgnoreRuleRequestBody.
+        r"""Gets the domain of this CreateIgnoreRuleRequestBody.
 
         防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效
 
@@ -85,7 +85,7 @@ class CreateIgnoreRuleRequestBody:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CreateIgnoreRuleRequestBody.
+        r"""Sets the domain of this CreateIgnoreRuleRequestBody.
 
         防护域名或防护网站，数组长度为0时，代表规则对全部域名或防护网站生效
 
@@ -96,7 +96,7 @@ class CreateIgnoreRuleRequestBody:
 
     @property
     def conditions(self):
-        """Gets the conditions of this CreateIgnoreRuleRequestBody.
+        r"""Gets the conditions of this CreateIgnoreRuleRequestBody.
 
         条件列表
 
@@ -107,7 +107,7 @@ class CreateIgnoreRuleRequestBody:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this CreateIgnoreRuleRequestBody.
+        r"""Sets the conditions of this CreateIgnoreRuleRequestBody.
 
         条件列表
 
@@ -118,7 +118,7 @@ class CreateIgnoreRuleRequestBody:
 
     @property
     def mode(self):
-        """Gets the mode of this CreateIgnoreRuleRequestBody.
+        r"""Gets the mode of this CreateIgnoreRuleRequestBody.
 
         固定值为1,代表v2版本误报屏蔽规则，v1版本仅用于兼容旧版本，不支持创建
 
@@ -129,7 +129,7 @@ class CreateIgnoreRuleRequestBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CreateIgnoreRuleRequestBody.
+        r"""Sets the mode of this CreateIgnoreRuleRequestBody.
 
         固定值为1,代表v2版本误报屏蔽规则，v1版本仅用于兼容旧版本，不支持创建
 
@@ -140,7 +140,7 @@ class CreateIgnoreRuleRequestBody:
 
     @property
     def rule(self):
-        """Gets the rule of this CreateIgnoreRuleRequestBody.
+        r"""Gets the rule of this CreateIgnoreRuleRequestBody.
 
         需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
@@ -151,7 +151,7 @@ class CreateIgnoreRuleRequestBody:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this CreateIgnoreRuleRequestBody.
+        r"""Sets the rule of this CreateIgnoreRuleRequestBody.
 
         需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xss攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
@@ -162,7 +162,7 @@ class CreateIgnoreRuleRequestBody:
 
     @property
     def advanced(self):
-        """Gets the advanced of this CreateIgnoreRuleRequestBody.
+        r"""Gets the advanced of this CreateIgnoreRuleRequestBody.
 
         :return: The advanced of this CreateIgnoreRuleRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.IgnoreAdvanced`
@@ -171,7 +171,7 @@ class CreateIgnoreRuleRequestBody:
 
     @advanced.setter
     def advanced(self, advanced):
-        """Sets the advanced of this CreateIgnoreRuleRequestBody.
+        r"""Sets the advanced of this CreateIgnoreRuleRequestBody.
 
         :param advanced: The advanced of this CreateIgnoreRuleRequestBody.
         :type advanced: :class:`huaweicloudsdkwaf.v1.IgnoreAdvanced`
@@ -180,7 +180,7 @@ class CreateIgnoreRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateIgnoreRuleRequestBody.
+        r"""Gets the description of this CreateIgnoreRuleRequestBody.
 
         屏蔽规则描述
 
@@ -191,7 +191,7 @@ class CreateIgnoreRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateIgnoreRuleRequestBody.
+        r"""Sets the description of this CreateIgnoreRuleRequestBody.
 
         屏蔽规则描述
 

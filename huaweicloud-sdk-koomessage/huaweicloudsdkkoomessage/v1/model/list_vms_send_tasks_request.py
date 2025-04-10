@@ -47,7 +47,7 @@ class ListVmsSendTasksRequest:
     }
 
     def __init__(self, task_name=None, task_id=None, tpl_id=None, tpl_name=None, begin_time=None, end_time=None, send_begin_time=None, send_end_time=None, operator=None, task_status=None, offset=None, limit=None):
-        """ListVmsSendTasksRequest
+        r"""ListVmsSendTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListVmsSendTasksRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ListVmsSendTasksRequest.
+        r"""Gets the task_name of this ListVmsSendTasksRequest.
 
         智能信息基础版任务名称。
 
@@ -131,7 +131,7 @@ class ListVmsSendTasksRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ListVmsSendTasksRequest.
+        r"""Sets the task_name of this ListVmsSendTasksRequest.
 
         智能信息基础版任务名称。
 
@@ -142,7 +142,7 @@ class ListVmsSendTasksRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListVmsSendTasksRequest.
+        r"""Gets the task_id of this ListVmsSendTasksRequest.
 
         智能信息基础版任务ID。
 
@@ -153,7 +153,7 @@ class ListVmsSendTasksRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListVmsSendTasksRequest.
+        r"""Sets the task_id of this ListVmsSendTasksRequest.
 
         智能信息基础版任务ID。
 
@@ -164,7 +164,7 @@ class ListVmsSendTasksRequest:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this ListVmsSendTasksRequest.
+        r"""Gets the tpl_id of this ListVmsSendTasksRequest.
 
         智能信息基础版模板ID。
 
@@ -175,7 +175,7 @@ class ListVmsSendTasksRequest:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this ListVmsSendTasksRequest.
+        r"""Sets the tpl_id of this ListVmsSendTasksRequest.
 
         智能信息基础版模板ID。
 
@@ -186,7 +186,7 @@ class ListVmsSendTasksRequest:
 
     @property
     def tpl_name(self):
-        """Gets the tpl_name of this ListVmsSendTasksRequest.
+        r"""Gets the tpl_name of this ListVmsSendTasksRequest.
 
         智能信息基础版模板名称。
 
@@ -197,7 +197,7 @@ class ListVmsSendTasksRequest:
 
     @tpl_name.setter
     def tpl_name(self, tpl_name):
-        """Sets the tpl_name of this ListVmsSendTasksRequest.
+        r"""Sets the tpl_name of this ListVmsSendTasksRequest.
 
         智能信息基础版模板名称。
 
@@ -208,7 +208,7 @@ class ListVmsSendTasksRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListVmsSendTasksRequest.
+        r"""Gets the begin_time of this ListVmsSendTasksRequest.
 
         智能信息基础版任务创建开始时间。 样例为：2019-10-12T07:20:50Z。
 
@@ -219,7 +219,7 @@ class ListVmsSendTasksRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListVmsSendTasksRequest.
+        r"""Sets the begin_time of this ListVmsSendTasksRequest.
 
         智能信息基础版任务创建开始时间。 样例为：2019-10-12T07:20:50Z。
 
@@ -230,7 +230,7 @@ class ListVmsSendTasksRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListVmsSendTasksRequest.
+        r"""Gets the end_time of this ListVmsSendTasksRequest.
 
         智能信息基础版任务创建结束时间。 样例为：2019-10-12T07:20:50Z。
 
@@ -241,7 +241,7 @@ class ListVmsSendTasksRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListVmsSendTasksRequest.
+        r"""Sets the end_time of this ListVmsSendTasksRequest.
 
         智能信息基础版任务创建结束时间。 样例为：2019-10-12T07:20:50Z。
 
@@ -252,7 +252,7 @@ class ListVmsSendTasksRequest:
 
     @property
     def send_begin_time(self):
-        """Gets the send_begin_time of this ListVmsSendTasksRequest.
+        r"""Gets the send_begin_time of this ListVmsSendTasksRequest.
 
         智能信息基础版任务发送开始时间。 样例为：2019-10-12T07:20:50Z。
 
@@ -263,7 +263,7 @@ class ListVmsSendTasksRequest:
 
     @send_begin_time.setter
     def send_begin_time(self, send_begin_time):
-        """Sets the send_begin_time of this ListVmsSendTasksRequest.
+        r"""Sets the send_begin_time of this ListVmsSendTasksRequest.
 
         智能信息基础版任务发送开始时间。 样例为：2019-10-12T07:20:50Z。
 
@@ -274,7 +274,7 @@ class ListVmsSendTasksRequest:
 
     @property
     def send_end_time(self):
-        """Gets the send_end_time of this ListVmsSendTasksRequest.
+        r"""Gets the send_end_time of this ListVmsSendTasksRequest.
 
         智能信息基础版任务发送结束时间。 样例为：2019-10-12T07:20:50Z。
 
@@ -285,7 +285,7 @@ class ListVmsSendTasksRequest:
 
     @send_end_time.setter
     def send_end_time(self, send_end_time):
-        """Sets the send_end_time of this ListVmsSendTasksRequest.
+        r"""Sets the send_end_time of this ListVmsSendTasksRequest.
 
         智能信息基础版任务发送结束时间。 样例为：2019-10-12T07:20:50Z。
 
@@ -296,7 +296,7 @@ class ListVmsSendTasksRequest:
 
     @property
     def operator(self):
-        """Gets the operator of this ListVmsSendTasksRequest.
+        r"""Gets the operator of this ListVmsSendTasksRequest.
 
         操作员。
 
@@ -307,7 +307,7 @@ class ListVmsSendTasksRequest:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this ListVmsSendTasksRequest.
+        r"""Sets the operator of this ListVmsSendTasksRequest.
 
         操作员。
 
@@ -318,7 +318,7 @@ class ListVmsSendTasksRequest:
 
     @property
     def task_status(self):
-        """Gets the task_status of this ListVmsSendTasksRequest.
+        r"""Gets the task_status of this ListVmsSendTasksRequest.
 
         发送状态类型。 - submit_success：提交成功 - submit_failed：提交失败 - processing：发送中 - sending_failed：发送失败 - re_submit_success：重试提交成功 - sending_complete：发送完成 - re_submit_failed：重试提交成功 - re_processing：重试进行中 - re_sending_complete：重试发送完成 - scheduled：定时任务
 
@@ -329,7 +329,7 @@ class ListVmsSendTasksRequest:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ListVmsSendTasksRequest.
+        r"""Sets the task_status of this ListVmsSendTasksRequest.
 
         发送状态类型。 - submit_success：提交成功 - submit_failed：提交失败 - processing：发送中 - sending_failed：发送失败 - re_submit_success：重试提交成功 - sending_complete：发送完成 - re_submit_failed：重试提交成功 - re_processing：重试进行中 - re_sending_complete：重试发送完成 - scheduled：定时任务
 
@@ -340,7 +340,7 @@ class ListVmsSendTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListVmsSendTasksRequest.
+        r"""Gets the offset of this ListVmsSendTasksRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -351,7 +351,7 @@ class ListVmsSendTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListVmsSendTasksRequest.
+        r"""Sets the offset of this ListVmsSendTasksRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -362,7 +362,7 @@ class ListVmsSendTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVmsSendTasksRequest.
+        r"""Gets the limit of this ListVmsSendTasksRequest.
 
         每页显示的条目数量。
 
@@ -373,7 +373,7 @@ class ListVmsSendTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVmsSendTasksRequest.
+        r"""Sets the limit of this ListVmsSendTasksRequest.
 
         每页显示的条目数量。
 

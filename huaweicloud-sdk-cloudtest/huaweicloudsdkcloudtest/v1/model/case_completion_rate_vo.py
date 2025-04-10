@@ -29,7 +29,7 @@ class CaseCompletionRateVo:
     }
 
     def __init__(self, total=None, completion_rate=None, status_number_list=None):
-        """CaseCompletionRateVo
+        r"""CaseCompletionRateVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CaseCompletionRateVo:
 
     @property
     def total(self):
-        """Gets the total of this CaseCompletionRateVo.
+        r"""Gets the total of this CaseCompletionRateVo.
 
         总用例数
 
@@ -68,7 +68,7 @@ class CaseCompletionRateVo:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this CaseCompletionRateVo.
+        r"""Sets the total of this CaseCompletionRateVo.
 
         总用例数
 
@@ -79,7 +79,7 @@ class CaseCompletionRateVo:
 
     @property
     def completion_rate(self):
-        """Gets the completion_rate of this CaseCompletionRateVo.
+        r"""Gets the completion_rate of this CaseCompletionRateVo.
 
         用例完成率
 
@@ -90,7 +90,7 @@ class CaseCompletionRateVo:
 
     @completion_rate.setter
     def completion_rate(self, completion_rate):
-        """Sets the completion_rate of this CaseCompletionRateVo.
+        r"""Sets the completion_rate of this CaseCompletionRateVo.
 
         用例完成率
 
@@ -101,7 +101,7 @@ class CaseCompletionRateVo:
 
     @property
     def status_number_list(self):
-        """Gets the status_number_list of this CaseCompletionRateVo.
+        r"""Gets the status_number_list of this CaseCompletionRateVo.
 
         用户自定义状态对应的用例数目
 
@@ -112,7 +112,7 @@ class CaseCompletionRateVo:
 
     @status_number_list.setter
     def status_number_list(self, status_number_list):
-        """Sets the status_number_list of this CaseCompletionRateVo.
+        r"""Sets the status_number_list of this CaseCompletionRateVo.
 
         用户自定义状态对应的用例数目
 

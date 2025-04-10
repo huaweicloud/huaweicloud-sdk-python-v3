@@ -26,7 +26,7 @@ class PublicTemplateRegisterType:
     }
 
     def __init__(self):
-        """PublicTemplateRegisterType
+        r"""PublicTemplateRegisterType
 
         The model defined in huaweicloud sdk
 

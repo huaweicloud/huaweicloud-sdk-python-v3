@@ -25,7 +25,7 @@ class BatchCreatePublicipsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchCreatePublicipsRequest
+        r"""BatchCreatePublicipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchCreatePublicipsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreatePublicipsRequest.
+        r"""Gets the body of this BatchCreatePublicipsRequest.
 
         :return: The body of this BatchCreatePublicipsRequest.
         :rtype: :class:`huaweicloudsdkeip.v2.BatchCreatePublicipsV2RequestBody`
@@ -52,7 +52,7 @@ class BatchCreatePublicipsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreatePublicipsRequest.
+        r"""Sets the body of this BatchCreatePublicipsRequest.
 
         :param body: The body of this BatchCreatePublicipsRequest.
         :type body: :class:`huaweicloudsdkeip.v2.BatchCreatePublicipsV2RequestBody`

@@ -45,7 +45,7 @@ class PeriodProductInfo:
     }
 
     def __init__(self, id=None, cloud_service_type=None, resource_type=None, resource_spec=None, region=None, available_zone=None, resource_size=None, size_measure_id=None, period_type=None, period_num=None, subscription_num=None):
-        """PeriodProductInfo
+        r"""PeriodProductInfo
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class PeriodProductInfo:
 
     @property
     def id(self):
-        """Gets the id of this PeriodProductInfo.
+        r"""Gets the id of this PeriodProductInfo.
 
         ID标识，同一次询价中不能重复，用于标识返回询价结果和请求的映射关系。
 
@@ -116,7 +116,7 @@ class PeriodProductInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PeriodProductInfo.
+        r"""Sets the id of this PeriodProductInfo.
 
         ID标识，同一次询价中不能重复，用于标识返回询价结果和请求的映射关系。
 
@@ -127,7 +127,7 @@ class PeriodProductInfo:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this PeriodProductInfo.
+        r"""Gets the cloud_service_type of this PeriodProductInfo.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -138,7 +138,7 @@ class PeriodProductInfo:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this PeriodProductInfo.
+        r"""Sets the cloud_service_type of this PeriodProductInfo.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -149,7 +149,7 @@ class PeriodProductInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this PeriodProductInfo.
+        r"""Gets the resource_type of this PeriodProductInfo.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。 ResourceType是CloudServiceType中的一种资源，CloudServiceType由多种ResourceType组合提供。
 
@@ -160,7 +160,7 @@ class PeriodProductInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this PeriodProductInfo.
+        r"""Sets the resource_type of this PeriodProductInfo.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。 ResourceType是CloudServiceType中的一种资源，CloudServiceType由多种ResourceType组合提供。
 
@@ -171,7 +171,7 @@ class PeriodProductInfo:
 
     @property
     def resource_spec(self):
-        """Gets the resource_spec of this PeriodProductInfo.
+        r"""Gets the resource_spec of this PeriodProductInfo.
 
         云服务类型的资源规格，部分云服务类型和资源规格举例如下： 弹性云服务器：根据操作系统类型在云服务器规格的ID后添加“.win”或“.linux”，例如“s2.small.1.linux”。云服务器规格的ID字段，您可以调用查询规格详情和规格扩展信息列表接口获取。 带宽：12_bgp：动态BGP按流量计费带宽12_sbgp：静态BGP按流量计费带宽19_bgp：动态BGP按带宽计费带宽19_sbgp：静态BGP按带宽计费带宽19_share：按带宽计费共享带宽 IP：5_bgp：动态BGP公网IP5_sbgp：静态BGP公网IP 云数据库：云数据库的资源规格信息，您可以调用查询数据库规格接口获取。 分布式缓存服务：分布式缓存服务的资源规格信息，您可以调用查询产品规格列表接口获取。
 
@@ -182,7 +182,7 @@ class PeriodProductInfo:
 
     @resource_spec.setter
     def resource_spec(self, resource_spec):
-        """Sets the resource_spec of this PeriodProductInfo.
+        r"""Sets the resource_spec of this PeriodProductInfo.
 
         云服务类型的资源规格，部分云服务类型和资源规格举例如下： 弹性云服务器：根据操作系统类型在云服务器规格的ID后添加“.win”或“.linux”，例如“s2.small.1.linux”。云服务器规格的ID字段，您可以调用查询规格详情和规格扩展信息列表接口获取。 带宽：12_bgp：动态BGP按流量计费带宽12_sbgp：静态BGP按流量计费带宽19_bgp：动态BGP按带宽计费带宽19_sbgp：静态BGP按带宽计费带宽19_share：按带宽计费共享带宽 IP：5_bgp：动态BGP公网IP5_sbgp：静态BGP公网IP 云数据库：云数据库的资源规格信息，您可以调用查询数据库规格接口获取。 分布式缓存服务：分布式缓存服务的资源规格信息，您可以调用查询产品规格列表接口获取。
 
@@ -193,7 +193,7 @@ class PeriodProductInfo:
 
     @property
     def region(self):
-        """Gets the region of this PeriodProductInfo.
+        r"""Gets the region of this PeriodProductInfo.
 
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -204,7 +204,7 @@ class PeriodProductInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this PeriodProductInfo.
+        r"""Sets the region of this PeriodProductInfo.
 
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -215,7 +215,7 @@ class PeriodProductInfo:
 
     @property
     def available_zone(self):
-        """Gets the available_zone of this PeriodProductInfo.
+        r"""Gets the available_zone of this PeriodProductInfo.
 
         可用区标识，例如：“cn-north-1a”。具体请参见地区和终端节点可用分区的“可用分区名称”列的值。
 
@@ -226,7 +226,7 @@ class PeriodProductInfo:
 
     @available_zone.setter
     def available_zone(self, available_zone):
-        """Sets the available_zone of this PeriodProductInfo.
+        r"""Sets the available_zone of this PeriodProductInfo.
 
         可用区标识，例如：“cn-north-1a”。具体请参见地区和终端节点可用分区的“可用分区名称”列的值。
 
@@ -237,7 +237,7 @@ class PeriodProductInfo:
 
     @property
     def resource_size(self):
-        """Gets the resource_size of this PeriodProductInfo.
+        r"""Gets the resource_size of this PeriodProductInfo.
 
         资源容量大小，例如购买的卷大小或带宽大小。 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
 
@@ -248,7 +248,7 @@ class PeriodProductInfo:
 
     @resource_size.setter
     def resource_size(self, resource_size):
-        """Sets the resource_size of this PeriodProductInfo.
+        r"""Sets the resource_size of this PeriodProductInfo.
 
         资源容量大小，例如购买的卷大小或带宽大小。 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
 
@@ -259,7 +259,7 @@ class PeriodProductInfo:
 
     @property
     def size_measure_id(self):
-        """Gets the size_measure_id of this PeriodProductInfo.
+        r"""Gets the size_measure_id of this PeriodProductInfo.
 
         资源容量度量标识。 15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
 
@@ -270,7 +270,7 @@ class PeriodProductInfo:
 
     @size_measure_id.setter
     def size_measure_id(self, size_measure_id):
-        """Sets the size_measure_id of this PeriodProductInfo.
+        r"""Sets the size_measure_id of this PeriodProductInfo.
 
         资源容量度量标识。 15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
 
@@ -281,7 +281,7 @@ class PeriodProductInfo:
 
     @property
     def period_type(self):
-        """Gets the period_type of this PeriodProductInfo.
+        r"""Gets the period_type of this PeriodProductInfo.
 
         订购包年/包月产品的周期类型。 0：天2：月3：年4：小时
 
@@ -292,7 +292,7 @@ class PeriodProductInfo:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this PeriodProductInfo.
+        r"""Sets the period_type of this PeriodProductInfo.
 
         订购包年/包月产品的周期类型。 0：天2：月3：年4：小时
 
@@ -303,7 +303,7 @@ class PeriodProductInfo:
 
     @property
     def period_num(self):
-        """Gets the period_num of this PeriodProductInfo.
+        r"""Gets the period_num of this PeriodProductInfo.
 
         订购包年/包月产品的周期数。
 
@@ -314,7 +314,7 @@ class PeriodProductInfo:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this PeriodProductInfo.
+        r"""Sets the period_num of this PeriodProductInfo.
 
         订购包年/包月产品的周期数。
 
@@ -325,7 +325,7 @@ class PeriodProductInfo:
 
     @property
     def subscription_num(self):
-        """Gets the subscription_num of this PeriodProductInfo.
+        r"""Gets the subscription_num of this PeriodProductInfo.
 
         订购包年/包月产品的数量。
 
@@ -336,7 +336,7 @@ class PeriodProductInfo:
 
     @subscription_num.setter
     def subscription_num(self, subscription_num):
-        """Sets the subscription_num of this PeriodProductInfo.
+        r"""Sets the subscription_num of this PeriodProductInfo.
 
         订购包年/包月产品的数量。
 

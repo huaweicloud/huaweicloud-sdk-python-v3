@@ -27,7 +27,7 @@ class KibanaElbWhiteListResp:
     }
 
     def __init__(self, enable_white_list=None, white_list=None):
-        """KibanaElbWhiteListResp
+        r"""KibanaElbWhiteListResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class KibanaElbWhiteListResp:
 
     @property
     def enable_white_list(self):
-        """Gets the enable_white_list of this KibanaElbWhiteListResp.
+        r"""Gets the enable_white_list of this KibanaElbWhiteListResp.
 
         是否开启kibana访问控制。 - true: 开启访问控制。 - false: 关闭访问控制
 
@@ -61,7 +61,7 @@ class KibanaElbWhiteListResp:
 
     @enable_white_list.setter
     def enable_white_list(self, enable_white_list):
-        """Sets the enable_white_list of this KibanaElbWhiteListResp.
+        r"""Sets the enable_white_list of this KibanaElbWhiteListResp.
 
         是否开启kibana访问控制。 - true: 开启访问控制。 - false: 关闭访问控制
 
@@ -72,7 +72,7 @@ class KibanaElbWhiteListResp:
 
     @property
     def white_list(self):
-        """Gets the white_list of this KibanaElbWhiteListResp.
+        r"""Gets the white_list of this KibanaElbWhiteListResp.
 
         kibana公网访问白名单。
 
@@ -83,7 +83,7 @@ class KibanaElbWhiteListResp:
 
     @white_list.setter
     def white_list(self, white_list):
-        """Sets the white_list of this KibanaElbWhiteListResp.
+        r"""Sets the white_list of this KibanaElbWhiteListResp.
 
         kibana公网访问白名单。
 

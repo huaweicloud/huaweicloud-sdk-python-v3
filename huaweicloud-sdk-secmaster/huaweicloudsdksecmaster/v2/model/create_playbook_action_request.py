@@ -31,7 +31,7 @@ class CreatePlaybookActionRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, version_id=None, body=None):
-        """CreatePlaybookActionRequest
+        r"""CreatePlaybookActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreatePlaybookActionRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreatePlaybookActionRequest.
+        r"""Gets the project_id of this CreatePlaybookActionRequest.
 
         项目ID
 
@@ -72,7 +72,7 @@ class CreatePlaybookActionRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreatePlaybookActionRequest.
+        r"""Sets the project_id of this CreatePlaybookActionRequest.
 
         项目ID
 
@@ -83,7 +83,7 @@ class CreatePlaybookActionRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreatePlaybookActionRequest.
+        r"""Gets the workspace_id of this CreatePlaybookActionRequest.
 
         工作空间ID
 
@@ -94,7 +94,7 @@ class CreatePlaybookActionRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreatePlaybookActionRequest.
+        r"""Sets the workspace_id of this CreatePlaybookActionRequest.
 
         工作空间ID
 
@@ -105,7 +105,7 @@ class CreatePlaybookActionRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this CreatePlaybookActionRequest.
+        r"""Gets the version_id of this CreatePlaybookActionRequest.
 
         剧本版本ID
 
@@ -116,7 +116,7 @@ class CreatePlaybookActionRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this CreatePlaybookActionRequest.
+        r"""Sets the version_id of this CreatePlaybookActionRequest.
 
         剧本版本ID
 
@@ -127,7 +127,7 @@ class CreatePlaybookActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePlaybookActionRequest.
+        r"""Gets the body of this CreatePlaybookActionRequest.
 
         Create actions
 
@@ -138,7 +138,7 @@ class CreatePlaybookActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePlaybookActionRequest.
+        r"""Sets the body of this CreatePlaybookActionRequest.
 
         Create actions
 

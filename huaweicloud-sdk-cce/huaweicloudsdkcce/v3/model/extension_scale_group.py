@@ -27,7 +27,7 @@ class ExtensionScaleGroup:
     }
 
     def __init__(self, metadata=None, spec=None):
-        """ExtensionScaleGroup
+        r"""ExtensionScaleGroup
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExtensionScaleGroup:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ExtensionScaleGroup.
+        r"""Gets the metadata of this ExtensionScaleGroup.
 
         :return: The metadata of this ExtensionScaleGroup.
         :rtype: :class:`huaweicloudsdkcce.v3.ExtensionScaleGroupMetadata`
@@ -59,7 +59,7 @@ class ExtensionScaleGroup:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ExtensionScaleGroup.
+        r"""Sets the metadata of this ExtensionScaleGroup.
 
         :param metadata: The metadata of this ExtensionScaleGroup.
         :type metadata: :class:`huaweicloudsdkcce.v3.ExtensionScaleGroupMetadata`
@@ -68,7 +68,7 @@ class ExtensionScaleGroup:
 
     @property
     def spec(self):
-        """Gets the spec of this ExtensionScaleGroup.
+        r"""Gets the spec of this ExtensionScaleGroup.
 
         :return: The spec of this ExtensionScaleGroup.
         :rtype: :class:`huaweicloudsdkcce.v3.ExtensionScaleGroupSpec`
@@ -77,7 +77,7 @@ class ExtensionScaleGroup:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ExtensionScaleGroup.
+        r"""Sets the spec of this ExtensionScaleGroup.
 
         :param spec: The spec of this ExtensionScaleGroup.
         :type spec: :class:`huaweicloudsdkcce.v3.ExtensionScaleGroupSpec`

@@ -25,7 +25,7 @@ class PathMap:
     }
 
     def __init__(self, path=None):
-        """PathMap
+        r"""PathMap
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PathMap:
 
     @property
     def path(self):
-        """Gets the path of this PathMap.
+        r"""Gets the path of this PathMap.
 
         文件路径
 
@@ -53,7 +53,7 @@ class PathMap:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this PathMap.
+        r"""Sets the path of this PathMap.
 
         文件路径
 

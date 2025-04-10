@@ -37,7 +37,7 @@ class ListConfigMapsRequest:
     }
 
     def __init__(self, provider=None, name=None, workspace_id=None, limit=None, offset=None, sort=None, tag_key=None):
-        """ListConfigMapsRequest
+        r"""ListConfigMapsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListConfigMapsRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this ListConfigMapsRequest.
+        r"""Gets the provider of this ListConfigMapsRequest.
 
         服务提供者：ief或hilens，默认为hilens。
 
@@ -96,7 +96,7 @@ class ListConfigMapsRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ListConfigMapsRequest.
+        r"""Sets the provider of this ListConfigMapsRequest.
 
         服务提供者：ief或hilens，默认为hilens。
 
@@ -107,7 +107,7 @@ class ListConfigMapsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListConfigMapsRequest.
+        r"""Gets the name of this ListConfigMapsRequest.
 
         配置项名称，模糊匹配。
 
@@ -118,7 +118,7 @@ class ListConfigMapsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListConfigMapsRequest.
+        r"""Sets the name of this ListConfigMapsRequest.
 
         配置项名称，模糊匹配。
 
@@ -129,7 +129,7 @@ class ListConfigMapsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListConfigMapsRequest.
+        r"""Gets the workspace_id of this ListConfigMapsRequest.
 
         工作空间ID，默认为注册账号/子账号的default工作空间，可通过专业版HiLens控制台展开工作空间列表获取到工作空间ID
 
@@ -140,7 +140,7 @@ class ListConfigMapsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListConfigMapsRequest.
+        r"""Sets the workspace_id of this ListConfigMapsRequest.
 
         工作空间ID，默认为注册账号/子账号的default工作空间，可通过专业版HiLens控制台展开工作空间列表获取到工作空间ID
 
@@ -151,7 +151,7 @@ class ListConfigMapsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConfigMapsRequest.
+        r"""Gets the limit of this ListConfigMapsRequest.
 
         每页显示的条目数量，取值范围1~1000，默认值为1000。
 
@@ -162,7 +162,7 @@ class ListConfigMapsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConfigMapsRequest.
+        r"""Sets the limit of this ListConfigMapsRequest.
 
         每页显示的条目数量，取值范围1~1000，默认值为1000。
 
@@ -173,7 +173,7 @@ class ListConfigMapsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListConfigMapsRequest.
+        r"""Gets the offset of this ListConfigMapsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0。
 
@@ -184,7 +184,7 @@ class ListConfigMapsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListConfigMapsRequest.
+        r"""Sets the offset of this ListConfigMapsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0。
 
@@ -195,7 +195,7 @@ class ListConfigMapsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListConfigMapsRequest.
+        r"""Gets the sort of this ListConfigMapsRequest.
 
         排序方式，可根据名称、创建时间、更新时间排序枚举值：name，created_at，updated_at。sort默认升序，如sort=name，降序：sort=name%3Adesc。不填默认为sort=created_at%3Adesc。
 
@@ -206,7 +206,7 @@ class ListConfigMapsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListConfigMapsRequest.
+        r"""Sets the sort of this ListConfigMapsRequest.
 
         排序方式，可根据名称、创建时间、更新时间排序枚举值：name，created_at，updated_at。sort默认升序，如sort=name，降序：sort=name%3Adesc。不填默认为sort=created_at%3Adesc。
 
@@ -217,7 +217,7 @@ class ListConfigMapsRequest:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this ListConfigMapsRequest.
+        r"""Gets the tag_key of this ListConfigMapsRequest.
 
         格式为{tag_key}={tag_value}，支持多对tag或查询。
 
@@ -228,7 +228,7 @@ class ListConfigMapsRequest:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this ListConfigMapsRequest.
+        r"""Sets the tag_key of this ListConfigMapsRequest.
 
         格式为{tag_key}={tag_value}，支持多对tag或查询。
 

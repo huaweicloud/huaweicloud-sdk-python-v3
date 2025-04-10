@@ -25,7 +25,7 @@ class UpdateNodeLabelReq:
     }
 
     def __init__(self, name=None):
-        """UpdateNodeLabelReq
+        r"""UpdateNodeLabelReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateNodeLabelReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateNodeLabelReq.
+        r"""Gets the name of this UpdateNodeLabelReq.
 
         标签名称
 
@@ -53,7 +53,7 @@ class UpdateNodeLabelReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateNodeLabelReq.
+        r"""Sets the name of this UpdateNodeLabelReq.
 
         标签名称
 

@@ -26,7 +26,7 @@ class ListRouteTablesResponse(SdkResponse):
     }
 
     def __init__(self, routetables=None):
-        """ListRouteTablesResponse
+        r"""ListRouteTablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListRouteTablesResponse(SdkResponse):
 
     @property
     def routetables(self):
-        """Gets the routetables of this ListRouteTablesResponse.
+        r"""Gets the routetables of this ListRouteTablesResponse.
 
         路由表对象列表
 
@@ -55,7 +55,7 @@ class ListRouteTablesResponse(SdkResponse):
 
     @routetables.setter
     def routetables(self, routetables):
-        """Sets the routetables of this ListRouteTablesResponse.
+        r"""Sets the routetables of this ListRouteTablesResponse.
 
         路由表对象列表
 

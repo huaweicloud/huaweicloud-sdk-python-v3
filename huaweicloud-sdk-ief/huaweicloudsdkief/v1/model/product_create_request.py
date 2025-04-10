@@ -25,7 +25,7 @@ class ProductCreateRequest:
     }
 
     def __init__(self, product=None):
-        """ProductCreateRequest
+        r"""ProductCreateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ProductCreateRequest:
 
     @property
     def product(self):
-        """Gets the product of this ProductCreateRequest.
+        r"""Gets the product of this ProductCreateRequest.
 
         :return: The product of this ProductCreateRequest.
         :rtype: :class:`huaweicloudsdkief.v1.ProductRequest`
@@ -51,7 +51,7 @@ class ProductCreateRequest:
 
     @product.setter
     def product(self, product):
-        """Sets the product of this ProductCreateRequest.
+        r"""Sets the product of this ProductCreateRequest.
 
         :param product: The product of this ProductCreateRequest.
         :type product: :class:`huaweicloudsdkief.v1.ProductRequest`

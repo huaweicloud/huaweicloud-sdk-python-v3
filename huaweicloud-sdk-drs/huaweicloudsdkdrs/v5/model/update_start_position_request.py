@@ -29,7 +29,7 @@ class UpdateStartPositionRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """UpdateStartPositionRequest
+        r"""UpdateStartPositionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateStartPositionRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateStartPositionRequest.
+        r"""Gets the job_id of this UpdateStartPositionRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class UpdateStartPositionRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateStartPositionRequest.
+        r"""Sets the job_id of this UpdateStartPositionRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class UpdateStartPositionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateStartPositionRequest.
+        r"""Gets the x_language of this UpdateStartPositionRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class UpdateStartPositionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateStartPositionRequest.
+        r"""Sets the x_language of this UpdateStartPositionRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class UpdateStartPositionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateStartPositionRequest.
+        r"""Gets the body of this UpdateStartPositionRequest.
 
         :return: The body of this UpdateStartPositionRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.ModifyStartPositionReq`
@@ -109,7 +109,7 @@ class UpdateStartPositionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateStartPositionRequest.
+        r"""Sets the body of this UpdateStartPositionRequest.
 
         :param body: The body of this UpdateStartPositionRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.ModifyStartPositionReq`

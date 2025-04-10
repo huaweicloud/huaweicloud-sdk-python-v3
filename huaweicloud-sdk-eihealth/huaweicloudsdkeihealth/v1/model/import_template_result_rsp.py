@@ -35,7 +35,7 @@ class ImportTemplateResultRsp:
     }
 
     def __init__(self, source_project_id=None, source_template_id=None, destination_template_id=None, destination_template_name=None, failed_reason=None, status=None):
-        """ImportTemplateResultRsp
+        r"""ImportTemplateResultRsp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ImportTemplateResultRsp:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this ImportTemplateResultRsp.
+        r"""Gets the source_project_id of this ImportTemplateResultRsp.
 
         源项目id
 
@@ -89,7 +89,7 @@ class ImportTemplateResultRsp:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this ImportTemplateResultRsp.
+        r"""Sets the source_project_id of this ImportTemplateResultRsp.
 
         源项目id
 
@@ -100,7 +100,7 @@ class ImportTemplateResultRsp:
 
     @property
     def source_template_id(self):
-        """Gets the source_template_id of this ImportTemplateResultRsp.
+        r"""Gets the source_template_id of this ImportTemplateResultRsp.
 
         源模板id
 
@@ -111,7 +111,7 @@ class ImportTemplateResultRsp:
 
     @source_template_id.setter
     def source_template_id(self, source_template_id):
-        """Sets the source_template_id of this ImportTemplateResultRsp.
+        r"""Sets the source_template_id of this ImportTemplateResultRsp.
 
         源模板id
 
@@ -122,7 +122,7 @@ class ImportTemplateResultRsp:
 
     @property
     def destination_template_id(self):
-        """Gets the destination_template_id of this ImportTemplateResultRsp.
+        r"""Gets the destination_template_id of this ImportTemplateResultRsp.
 
         导入后的模板id
 
@@ -133,7 +133,7 @@ class ImportTemplateResultRsp:
 
     @destination_template_id.setter
     def destination_template_id(self, destination_template_id):
-        """Sets the destination_template_id of this ImportTemplateResultRsp.
+        r"""Sets the destination_template_id of this ImportTemplateResultRsp.
 
         导入后的模板id
 
@@ -144,7 +144,7 @@ class ImportTemplateResultRsp:
 
     @property
     def destination_template_name(self):
-        """Gets the destination_template_name of this ImportTemplateResultRsp.
+        r"""Gets the destination_template_name of this ImportTemplateResultRsp.
 
         导入后的模板名称
 
@@ -155,7 +155,7 @@ class ImportTemplateResultRsp:
 
     @destination_template_name.setter
     def destination_template_name(self, destination_template_name):
-        """Sets the destination_template_name of this ImportTemplateResultRsp.
+        r"""Sets the destination_template_name of this ImportTemplateResultRsp.
 
         导入后的模板名称
 
@@ -166,7 +166,7 @@ class ImportTemplateResultRsp:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this ImportTemplateResultRsp.
+        r"""Gets the failed_reason of this ImportTemplateResultRsp.
 
         失败原因，导入失败会返回
 
@@ -177,7 +177,7 @@ class ImportTemplateResultRsp:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this ImportTemplateResultRsp.
+        r"""Sets the failed_reason of this ImportTemplateResultRsp.
 
         失败原因，导入失败会返回
 
@@ -188,7 +188,7 @@ class ImportTemplateResultRsp:
 
     @property
     def status(self):
-        """Gets the status of this ImportTemplateResultRsp.
+        r"""Gets the status of this ImportTemplateResultRsp.
 
         导入结果
 
@@ -199,7 +199,7 @@ class ImportTemplateResultRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ImportTemplateResultRsp.
+        r"""Sets the status of this ImportTemplateResultRsp.
 
         导入结果
 

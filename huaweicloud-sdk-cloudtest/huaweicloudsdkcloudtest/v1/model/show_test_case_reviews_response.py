@@ -30,7 +30,7 @@ class ShowTestCaseReviewsResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None, error=None):
-        """ShowTestCaseReviewsResponse
+        r"""ShowTestCaseReviewsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTestCaseReviewsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowTestCaseReviewsResponse.
+        r"""Gets the status of this ShowTestCaseReviewsResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -69,7 +69,7 @@ class ShowTestCaseReviewsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowTestCaseReviewsResponse.
+        r"""Sets the status of this ShowTestCaseReviewsResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -80,7 +80,7 @@ class ShowTestCaseReviewsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowTestCaseReviewsResponse.
+        r"""Gets the result of this ShowTestCaseReviewsResponse.
 
         :return: The result of this ShowTestCaseReviewsResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueListTestCaseReviewVo`
@@ -89,7 +89,7 @@ class ShowTestCaseReviewsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowTestCaseReviewsResponse.
+        r"""Sets the result of this ShowTestCaseReviewsResponse.
 
         :param result: The result of this ShowTestCaseReviewsResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueListTestCaseReviewVo`
@@ -98,7 +98,7 @@ class ShowTestCaseReviewsResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowTestCaseReviewsResponse.
+        r"""Gets the error of this ShowTestCaseReviewsResponse.
 
         :return: The error of this ShowTestCaseReviewsResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -107,7 +107,7 @@ class ShowTestCaseReviewsResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowTestCaseReviewsResponse.
+        r"""Sets the error of this ShowTestCaseReviewsResponse.
 
         :param error: The error of this ShowTestCaseReviewsResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`

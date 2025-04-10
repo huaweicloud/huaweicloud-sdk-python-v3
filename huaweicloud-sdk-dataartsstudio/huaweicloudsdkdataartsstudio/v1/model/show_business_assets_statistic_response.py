@@ -28,7 +28,7 @@ class ShowBusinessAssetsStatisticResponse(SdkResponse):
     }
 
     def __init__(self, count=None, subject_area_group_statistics=None):
-        """ShowBusinessAssetsStatisticResponse
+        r"""ShowBusinessAssetsStatisticResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowBusinessAssetsStatisticResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowBusinessAssetsStatisticResponse.
+        r"""Gets the count of this ShowBusinessAssetsStatisticResponse.
 
         主题域分组的总数
 
@@ -62,7 +62,7 @@ class ShowBusinessAssetsStatisticResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowBusinessAssetsStatisticResponse.
+        r"""Sets the count of this ShowBusinessAssetsStatisticResponse.
 
         主题域分组的总数
 
@@ -73,7 +73,7 @@ class ShowBusinessAssetsStatisticResponse(SdkResponse):
 
     @property
     def subject_area_group_statistics(self):
-        """Gets the subject_area_group_statistics of this ShowBusinessAssetsStatisticResponse.
+        r"""Gets the subject_area_group_statistics of this ShowBusinessAssetsStatisticResponse.
 
         主题域分组的统计信息
 
@@ -84,7 +84,7 @@ class ShowBusinessAssetsStatisticResponse(SdkResponse):
 
     @subject_area_group_statistics.setter
     def subject_area_group_statistics(self, subject_area_group_statistics):
-        """Sets the subject_area_group_statistics of this ShowBusinessAssetsStatisticResponse.
+        r"""Sets the subject_area_group_statistics of this ShowBusinessAssetsStatisticResponse.
 
         主题域分组的统计信息
 

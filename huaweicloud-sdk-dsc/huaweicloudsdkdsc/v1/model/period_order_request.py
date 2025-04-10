@@ -47,7 +47,7 @@ class PeriodOrderRequest:
     }
 
     def __init__(self, charging_mode=None, cloud_service_type=None, composite_product_id=None, discount_id=None, is_auto_renew=None, period_num=None, period_type=None, product_infos=None, promotion_activity_id=None, promotion_info=None, region_id=None, zone=None):
-        """PeriodOrderRequest
+        r"""PeriodOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class PeriodOrderRequest:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this PeriodOrderRequest.
+        r"""Gets the charging_mode of this PeriodOrderRequest.
 
         计费模式，0：包周期计费，1：按需计费，2：一次性计费
 
@@ -124,7 +124,7 @@ class PeriodOrderRequest:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this PeriodOrderRequest.
+        r"""Sets the charging_mode of this PeriodOrderRequest.
 
         计费模式，0：包周期计费，1：按需计费，2：一次性计费
 
@@ -135,7 +135,7 @@ class PeriodOrderRequest:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this PeriodOrderRequest.
+        r"""Gets the cloud_service_type of this PeriodOrderRequest.
 
         云服务类型
 
@@ -146,7 +146,7 @@ class PeriodOrderRequest:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this PeriodOrderRequest.
+        r"""Sets the cloud_service_type of this PeriodOrderRequest.
 
         云服务类型
 
@@ -157,7 +157,7 @@ class PeriodOrderRequest:
 
     @property
     def composite_product_id(self):
-        """Gets the composite_product_id of this PeriodOrderRequest.
+        r"""Gets the composite_product_id of this PeriodOrderRequest.
 
         组合套餐ID
 
@@ -168,7 +168,7 @@ class PeriodOrderRequest:
 
     @composite_product_id.setter
     def composite_product_id(self, composite_product_id):
-        """Sets the composite_product_id of this PeriodOrderRequest.
+        r"""Sets the composite_product_id of this PeriodOrderRequest.
 
         组合套餐ID
 
@@ -179,7 +179,7 @@ class PeriodOrderRequest:
 
     @property
     def discount_id(self):
-        """Gets the discount_id of this PeriodOrderRequest.
+        r"""Gets the discount_id of this PeriodOrderRequest.
 
         折扣ID
 
@@ -190,7 +190,7 @@ class PeriodOrderRequest:
 
     @discount_id.setter
     def discount_id(self, discount_id):
-        """Sets the discount_id of this PeriodOrderRequest.
+        r"""Sets the discount_id of this PeriodOrderRequest.
 
         折扣ID
 
@@ -201,7 +201,7 @@ class PeriodOrderRequest:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this PeriodOrderRequest.
+        r"""Gets the is_auto_renew of this PeriodOrderRequest.
 
         是否自动续费
 
@@ -212,7 +212,7 @@ class PeriodOrderRequest:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this PeriodOrderRequest.
+        r"""Sets the is_auto_renew of this PeriodOrderRequest.
 
         是否自动续费
 
@@ -223,7 +223,7 @@ class PeriodOrderRequest:
 
     @property
     def period_num(self):
-        """Gets the period_num of this PeriodOrderRequest.
+        r"""Gets the period_num of this PeriodOrderRequest.
 
         订购周期数目
 
@@ -234,7 +234,7 @@ class PeriodOrderRequest:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this PeriodOrderRequest.
+        r"""Sets the period_num of this PeriodOrderRequest.
 
         订购周期数目
 
@@ -245,7 +245,7 @@ class PeriodOrderRequest:
 
     @property
     def period_type(self):
-        """Gets the period_type of this PeriodOrderRequest.
+        r"""Gets the period_type of this PeriodOrderRequest.
 
         订购周期类型，2：月，3：年
 
@@ -256,7 +256,7 @@ class PeriodOrderRequest:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this PeriodOrderRequest.
+        r"""Sets the period_type of this PeriodOrderRequest.
 
         订购周期类型，2：月，3：年
 
@@ -267,7 +267,7 @@ class PeriodOrderRequest:
 
     @property
     def product_infos(self):
-        """Gets the product_infos of this PeriodOrderRequest.
+        r"""Gets the product_infos of this PeriodOrderRequest.
 
         产品信息列表
 
@@ -278,7 +278,7 @@ class PeriodOrderRequest:
 
     @product_infos.setter
     def product_infos(self, product_infos):
-        """Sets the product_infos of this PeriodOrderRequest.
+        r"""Sets the product_infos of this PeriodOrderRequest.
 
         产品信息列表
 
@@ -289,7 +289,7 @@ class PeriodOrderRequest:
 
     @property
     def promotion_activity_id(self):
-        """Gets the promotion_activity_id of this PeriodOrderRequest.
+        r"""Gets the promotion_activity_id of this PeriodOrderRequest.
 
         促销ID
 
@@ -300,7 +300,7 @@ class PeriodOrderRequest:
 
     @promotion_activity_id.setter
     def promotion_activity_id(self, promotion_activity_id):
-        """Sets the promotion_activity_id of this PeriodOrderRequest.
+        r"""Sets the promotion_activity_id of this PeriodOrderRequest.
 
         促销ID
 
@@ -311,7 +311,7 @@ class PeriodOrderRequest:
 
     @property
     def promotion_info(self):
-        """Gets the promotion_info of this PeriodOrderRequest.
+        r"""Gets the promotion_info of this PeriodOrderRequest.
 
         促销信息
 
@@ -322,7 +322,7 @@ class PeriodOrderRequest:
 
     @promotion_info.setter
     def promotion_info(self, promotion_info):
-        """Sets the promotion_info of this PeriodOrderRequest.
+        r"""Sets the promotion_info of this PeriodOrderRequest.
 
         促销信息
 
@@ -333,7 +333,7 @@ class PeriodOrderRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this PeriodOrderRequest.
+        r"""Gets the region_id of this PeriodOrderRequest.
 
         当前项目所在region的id，如：xx-xx-1。
 
@@ -344,7 +344,7 @@ class PeriodOrderRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this PeriodOrderRequest.
+        r"""Sets the region_id of this PeriodOrderRequest.
 
         当前项目所在region的id，如：xx-xx-1。
 
@@ -355,7 +355,7 @@ class PeriodOrderRequest:
 
     @property
     def zone(self):
-        """Gets the zone of this PeriodOrderRequest.
+        r"""Gets the zone of this PeriodOrderRequest.
 
         所属国家区域
 
@@ -366,7 +366,7 @@ class PeriodOrderRequest:
 
     @zone.setter
     def zone(self, zone):
-        """Sets the zone of this PeriodOrderRequest.
+        r"""Sets the zone of this PeriodOrderRequest.
 
         所属国家区域
 

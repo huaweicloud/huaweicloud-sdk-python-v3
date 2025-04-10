@@ -26,7 +26,7 @@ class ListBandwidthsResponse(SdkResponse):
     }
 
     def __init__(self, bandwidths=None):
-        """ListBandwidthsResponse
+        r"""ListBandwidthsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBandwidthsResponse(SdkResponse):
 
     @property
     def bandwidths(self):
-        """Gets the bandwidths of this ListBandwidthsResponse.
+        r"""Gets the bandwidths of this ListBandwidthsResponse.
 
         带宽列表对象
 
@@ -55,7 +55,7 @@ class ListBandwidthsResponse(SdkResponse):
 
     @bandwidths.setter
     def bandwidths(self, bandwidths):
-        """Sets the bandwidths of this ListBandwidthsResponse.
+        r"""Sets the bandwidths of this ListBandwidthsResponse.
 
         带宽列表对象
 

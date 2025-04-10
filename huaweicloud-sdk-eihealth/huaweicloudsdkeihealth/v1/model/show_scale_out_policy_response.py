@@ -58,7 +58,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, status=None, create_time=None, node_spec=None, availability_zone=None, nodes=None, max_nodes=None, min_nodes=None, scaling_times=None, scaling_enable=None, cpu_rule_enable=None, cpu_percent=None, add_nodes_for_cpu_rule=None, mem_rule_enable=None, mem_percent=None, add_nodes_for_mem_rule=None):
-        """ShowScaleOutPolicyResponse
+        r"""ShowScaleOutPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -156,7 +156,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowScaleOutPolicyResponse.
+        r"""Gets the id of this ShowScaleOutPolicyResponse.
 
         策略ID
 
@@ -167,7 +167,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowScaleOutPolicyResponse.
+        r"""Sets the id of this ShowScaleOutPolicyResponse.
 
         策略ID
 
@@ -178,7 +178,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowScaleOutPolicyResponse.
+        r"""Gets the name of this ShowScaleOutPolicyResponse.
 
         策略名称
 
@@ -189,7 +189,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowScaleOutPolicyResponse.
+        r"""Sets the name of this ShowScaleOutPolicyResponse.
 
         策略名称
 
@@ -200,7 +200,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowScaleOutPolicyResponse.
+        r"""Gets the status of this ShowScaleOutPolicyResponse.
 
         状态
 
@@ -211,7 +211,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowScaleOutPolicyResponse.
+        r"""Sets the status of this ShowScaleOutPolicyResponse.
 
         状态
 
@@ -222,7 +222,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowScaleOutPolicyResponse.
+        r"""Gets the create_time of this ShowScaleOutPolicyResponse.
 
         创建时间
 
@@ -233,7 +233,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowScaleOutPolicyResponse.
+        r"""Sets the create_time of this ShowScaleOutPolicyResponse.
 
         创建时间
 
@@ -244,7 +244,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def node_spec(self):
-        """Gets the node_spec of this ShowScaleOutPolicyResponse.
+        r"""Gets the node_spec of this ShowScaleOutPolicyResponse.
 
         :return: The node_spec of this ShowScaleOutPolicyResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NodeSpecDto`
@@ -253,7 +253,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @node_spec.setter
     def node_spec(self, node_spec):
-        """Sets the node_spec of this ShowScaleOutPolicyResponse.
+        r"""Sets the node_spec of this ShowScaleOutPolicyResponse.
 
         :param node_spec: The node_spec of this ShowScaleOutPolicyResponse.
         :type node_spec: :class:`huaweicloudsdkeihealth.v1.NodeSpecDto`
@@ -262,7 +262,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ShowScaleOutPolicyResponse.
+        r"""Gets the availability_zone of this ShowScaleOutPolicyResponse.
 
         可用区
 
@@ -273,7 +273,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ShowScaleOutPolicyResponse.
+        r"""Sets the availability_zone of this ShowScaleOutPolicyResponse.
 
         可用区
 
@@ -284,7 +284,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this ShowScaleOutPolicyResponse.
+        r"""Gets the nodes of this ShowScaleOutPolicyResponse.
 
         节点数量
 
@@ -295,7 +295,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ShowScaleOutPolicyResponse.
+        r"""Sets the nodes of this ShowScaleOutPolicyResponse.
 
         节点数量
 
@@ -306,7 +306,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def max_nodes(self):
-        """Gets the max_nodes of this ShowScaleOutPolicyResponse.
+        r"""Gets the max_nodes of this ShowScaleOutPolicyResponse.
 
         扩容节点数上限
 
@@ -317,7 +317,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @max_nodes.setter
     def max_nodes(self, max_nodes):
-        """Sets the max_nodes of this ShowScaleOutPolicyResponse.
+        r"""Sets the max_nodes of this ShowScaleOutPolicyResponse.
 
         扩容节点数上限
 
@@ -328,7 +328,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def min_nodes(self):
-        """Gets the min_nodes of this ShowScaleOutPolicyResponse.
+        r"""Gets the min_nodes of this ShowScaleOutPolicyResponse.
 
         扩容节点数下限
 
@@ -339,7 +339,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @min_nodes.setter
     def min_nodes(self, min_nodes):
-        """Sets the min_nodes of this ShowScaleOutPolicyResponse.
+        r"""Sets the min_nodes of this ShowScaleOutPolicyResponse.
 
         扩容节点数下限
 
@@ -350,7 +350,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def scaling_times(self):
-        """Gets the scaling_times of this ShowScaleOutPolicyResponse.
+        r"""Gets the scaling_times of this ShowScaleOutPolicyResponse.
 
         伸缩次数
 
@@ -361,7 +361,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @scaling_times.setter
     def scaling_times(self, scaling_times):
-        """Sets the scaling_times of this ShowScaleOutPolicyResponse.
+        r"""Sets the scaling_times of this ShowScaleOutPolicyResponse.
 
         伸缩次数
 
@@ -372,7 +372,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def scaling_enable(self):
-        """Gets the scaling_enable of this ShowScaleOutPolicyResponse.
+        r"""Gets the scaling_enable of this ShowScaleOutPolicyResponse.
 
         是否开启自动扩容
 
@@ -383,7 +383,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @scaling_enable.setter
     def scaling_enable(self, scaling_enable):
-        """Sets the scaling_enable of this ShowScaleOutPolicyResponse.
+        r"""Sets the scaling_enable of this ShowScaleOutPolicyResponse.
 
         是否开启自动扩容
 
@@ -394,7 +394,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def cpu_rule_enable(self):
-        """Gets the cpu_rule_enable of this ShowScaleOutPolicyResponse.
+        r"""Gets the cpu_rule_enable of this ShowScaleOutPolicyResponse.
 
         是否开启cpu执行策略
 
@@ -405,7 +405,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @cpu_rule_enable.setter
     def cpu_rule_enable(self, cpu_rule_enable):
-        """Sets the cpu_rule_enable of this ShowScaleOutPolicyResponse.
+        r"""Sets the cpu_rule_enable of this ShowScaleOutPolicyResponse.
 
         是否开启cpu执行策略
 
@@ -416,7 +416,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def cpu_percent(self):
-        """Gets the cpu_percent of this ShowScaleOutPolicyResponse.
+        r"""Gets the cpu_percent of this ShowScaleOutPolicyResponse.
 
         cpu分配率百分比
 
@@ -427,7 +427,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @cpu_percent.setter
     def cpu_percent(self, cpu_percent):
-        """Sets the cpu_percent of this ShowScaleOutPolicyResponse.
+        r"""Sets the cpu_percent of this ShowScaleOutPolicyResponse.
 
         cpu分配率百分比
 
@@ -438,7 +438,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def add_nodes_for_cpu_rule(self):
-        """Gets the add_nodes_for_cpu_rule of this ShowScaleOutPolicyResponse.
+        r"""Gets the add_nodes_for_cpu_rule of this ShowScaleOutPolicyResponse.
 
         满足扩容策略中cpu分配率时增加的节点数
 
@@ -449,7 +449,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @add_nodes_for_cpu_rule.setter
     def add_nodes_for_cpu_rule(self, add_nodes_for_cpu_rule):
-        """Sets the add_nodes_for_cpu_rule of this ShowScaleOutPolicyResponse.
+        r"""Sets the add_nodes_for_cpu_rule of this ShowScaleOutPolicyResponse.
 
         满足扩容策略中cpu分配率时增加的节点数
 
@@ -460,7 +460,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def mem_rule_enable(self):
-        """Gets the mem_rule_enable of this ShowScaleOutPolicyResponse.
+        r"""Gets the mem_rule_enable of this ShowScaleOutPolicyResponse.
 
         是否开启mem执行策略
 
@@ -471,7 +471,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @mem_rule_enable.setter
     def mem_rule_enable(self, mem_rule_enable):
-        """Sets the mem_rule_enable of this ShowScaleOutPolicyResponse.
+        r"""Sets the mem_rule_enable of this ShowScaleOutPolicyResponse.
 
         是否开启mem执行策略
 
@@ -482,7 +482,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def mem_percent(self):
-        """Gets the mem_percent of this ShowScaleOutPolicyResponse.
+        r"""Gets the mem_percent of this ShowScaleOutPolicyResponse.
 
         mem分配率百分比
 
@@ -493,7 +493,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @mem_percent.setter
     def mem_percent(self, mem_percent):
-        """Sets the mem_percent of this ShowScaleOutPolicyResponse.
+        r"""Sets the mem_percent of this ShowScaleOutPolicyResponse.
 
         mem分配率百分比
 
@@ -504,7 +504,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @property
     def add_nodes_for_mem_rule(self):
-        """Gets the add_nodes_for_mem_rule of this ShowScaleOutPolicyResponse.
+        r"""Gets the add_nodes_for_mem_rule of this ShowScaleOutPolicyResponse.
 
         满足扩容策略中mem分配率时增加的节点数
 
@@ -515,7 +515,7 @@ class ShowScaleOutPolicyResponse(SdkResponse):
 
     @add_nodes_for_mem_rule.setter
     def add_nodes_for_mem_rule(self, add_nodes_for_mem_rule):
-        """Sets the add_nodes_for_mem_rule of this ShowScaleOutPolicyResponse.
+        r"""Sets the add_nodes_for_mem_rule of this ShowScaleOutPolicyResponse.
 
         满足扩容策略中mem分配率时增加的节点数
 

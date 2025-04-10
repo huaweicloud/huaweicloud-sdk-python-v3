@@ -30,7 +30,7 @@ class ListAuthorisationsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, authorisations=None):
-        """ListAuthorisationsResponse
+        r"""ListAuthorisationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAuthorisationsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListAuthorisationsResponse.
+        r"""Gets the request_id of this ListAuthorisationsResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListAuthorisationsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListAuthorisationsResponse.
+        r"""Sets the request_id of this ListAuthorisationsResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListAuthorisationsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAuthorisationsResponse.
+        r"""Gets the page_info of this ListAuthorisationsResponse.
 
         :return: The page_info of this ListAuthorisationsResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListAuthorisationsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAuthorisationsResponse.
+        r"""Sets the page_info of this ListAuthorisationsResponse.
 
         :param page_info: The page_info of this ListAuthorisationsResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListAuthorisationsResponse(SdkResponse):
 
     @property
     def authorisations(self):
-        """Gets the authorisations of this ListAuthorisationsResponse.
+        r"""Gets the authorisations of this ListAuthorisationsResponse.
 
         授权实例列表。
 
@@ -107,7 +107,7 @@ class ListAuthorisationsResponse(SdkResponse):
 
     @authorisations.setter
     def authorisations(self, authorisations):
-        """Sets the authorisations of this ListAuthorisationsResponse.
+        r"""Sets the authorisations of this ListAuthorisationsResponse.
 
         授权实例列表。
 

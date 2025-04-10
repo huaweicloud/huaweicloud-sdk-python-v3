@@ -27,7 +27,7 @@ class ExecuteDatabaseOmUserActionRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """ExecuteDatabaseOmUserActionRequest
+        r"""ExecuteDatabaseOmUserActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteDatabaseOmUserActionRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ExecuteDatabaseOmUserActionRequest.
+        r"""Gets the cluster_id of this ExecuteDatabaseOmUserActionRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class ExecuteDatabaseOmUserActionRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ExecuteDatabaseOmUserActionRequest.
+        r"""Sets the cluster_id of this ExecuteDatabaseOmUserActionRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class ExecuteDatabaseOmUserActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteDatabaseOmUserActionRequest.
+        r"""Gets the body of this ExecuteDatabaseOmUserActionRequest.
 
         :return: The body of this ExecuteDatabaseOmUserActionRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.DatabaseOmUserActionReq`
@@ -80,7 +80,7 @@ class ExecuteDatabaseOmUserActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteDatabaseOmUserActionRequest.
+        r"""Sets the body of this ExecuteDatabaseOmUserActionRequest.
 
         :param body: The body of this ExecuteDatabaseOmUserActionRequest.
         :type body: :class:`huaweicloudsdkdws.v2.DatabaseOmUserActionReq`

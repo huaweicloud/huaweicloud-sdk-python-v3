@@ -31,7 +31,7 @@ class TicsAgentNatCommonInfo:
     }
 
     def __init__(self, nat_id=None, project_id=None, subnet_id=None, vpc_id=None):
-        """TicsAgentNatCommonInfo
+        r"""TicsAgentNatCommonInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TicsAgentNatCommonInfo:
 
     @property
     def nat_id(self):
-        """Gets the nat_id of this TicsAgentNatCommonInfo.
+        r"""Gets the nat_id of this TicsAgentNatCommonInfo.
 
         可信节点绑定的网关id
 
@@ -75,7 +75,7 @@ class TicsAgentNatCommonInfo:
 
     @nat_id.setter
     def nat_id(self, nat_id):
-        """Sets the nat_id of this TicsAgentNatCommonInfo.
+        r"""Sets the nat_id of this TicsAgentNatCommonInfo.
 
         可信节点绑定的网关id
 
@@ -86,7 +86,7 @@ class TicsAgentNatCommonInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TicsAgentNatCommonInfo.
+        r"""Gets the project_id of this TicsAgentNatCommonInfo.
 
         项目id
 
@@ -97,7 +97,7 @@ class TicsAgentNatCommonInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TicsAgentNatCommonInfo.
+        r"""Sets the project_id of this TicsAgentNatCommonInfo.
 
         项目id
 
@@ -108,7 +108,7 @@ class TicsAgentNatCommonInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this TicsAgentNatCommonInfo.
+        r"""Gets the subnet_id of this TicsAgentNatCommonInfo.
 
         可信节点绑定的CCE集群所在子网id
 
@@ -119,7 +119,7 @@ class TicsAgentNatCommonInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this TicsAgentNatCommonInfo.
+        r"""Sets the subnet_id of this TicsAgentNatCommonInfo.
 
         可信节点绑定的CCE集群所在子网id
 
@@ -130,7 +130,7 @@ class TicsAgentNatCommonInfo:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this TicsAgentNatCommonInfo.
+        r"""Gets the vpc_id of this TicsAgentNatCommonInfo.
 
         可信节点绑定的CCE集群所在虚拟私有云id
 
@@ -141,7 +141,7 @@ class TicsAgentNatCommonInfo:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this TicsAgentNatCommonInfo.
+        r"""Sets the vpc_id of this TicsAgentNatCommonInfo.
 
         可信节点绑定的CCE集群所在虚拟私有云id
 

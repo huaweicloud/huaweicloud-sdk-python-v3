@@ -27,7 +27,7 @@ class ListObsBucketsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListObsBucketsRequest
+        r"""ListObsBucketsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListObsBucketsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListObsBucketsRequest.
+        r"""Gets the offset of this ListObsBucketsRequest.
 
         分页查询时的偏移量
 
@@ -61,7 +61,7 @@ class ListObsBucketsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListObsBucketsRequest.
+        r"""Sets the offset of this ListObsBucketsRequest.
 
         分页查询时的偏移量
 
@@ -72,7 +72,7 @@ class ListObsBucketsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListObsBucketsRequest.
+        r"""Gets the limit of this ListObsBucketsRequest.
 
         分页一页显示数
 
@@ -83,7 +83,7 @@ class ListObsBucketsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListObsBucketsRequest.
+        r"""Sets the limit of this ListObsBucketsRequest.
 
         分页一页显示数
 

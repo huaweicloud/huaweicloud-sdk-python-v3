@@ -57,7 +57,7 @@ class ListDimensionLogicTablesRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, name=None, create_by=None, approver=None, owner=None, status=None, sync_status=None, sync_key=None, l2_id=None, dimension_id=None, begin_time=None, end_time=None, limit=None, offset=None, biz_catalog_id=None, dimension_type=None):
-        """ListDimensionLogicTablesRequest
+        r"""ListDimensionLogicTablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -154,7 +154,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListDimensionLogicTablesRequest.
+        r"""Gets the workspace of this ListDimensionLogicTablesRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -165,7 +165,7 @@ class ListDimensionLogicTablesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListDimensionLogicTablesRequest.
+        r"""Sets the workspace of this ListDimensionLogicTablesRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -176,7 +176,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListDimensionLogicTablesRequest.
+        r"""Gets the x_project_id of this ListDimensionLogicTablesRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -187,7 +187,7 @@ class ListDimensionLogicTablesRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListDimensionLogicTablesRequest.
+        r"""Sets the x_project_id of this ListDimensionLogicTablesRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -198,7 +198,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDimensionLogicTablesRequest.
+        r"""Gets the name of this ListDimensionLogicTablesRequest.
 
         按名称或编码模糊查询。
 
@@ -209,7 +209,7 @@ class ListDimensionLogicTablesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDimensionLogicTablesRequest.
+        r"""Sets the name of this ListDimensionLogicTablesRequest.
 
         按名称或编码模糊查询。
 
@@ -220,7 +220,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def create_by(self):
-        """Gets the create_by of this ListDimensionLogicTablesRequest.
+        r"""Gets the create_by of this ListDimensionLogicTablesRequest.
 
         按创建者查询。
 
@@ -231,7 +231,7 @@ class ListDimensionLogicTablesRequest:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this ListDimensionLogicTablesRequest.
+        r"""Sets the create_by of this ListDimensionLogicTablesRequest.
 
         按创建者查询。
 
@@ -242,7 +242,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def approver(self):
-        """Gets the approver of this ListDimensionLogicTablesRequest.
+        r"""Gets the approver of this ListDimensionLogicTablesRequest.
 
         按审核人查询。
 
@@ -253,7 +253,7 @@ class ListDimensionLogicTablesRequest:
 
     @approver.setter
     def approver(self, approver):
-        """Sets the approver of this ListDimensionLogicTablesRequest.
+        r"""Sets the approver of this ListDimensionLogicTablesRequest.
 
         按审核人查询。
 
@@ -264,7 +264,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def owner(self):
-        """Gets the owner of this ListDimensionLogicTablesRequest.
+        r"""Gets the owner of this ListDimensionLogicTablesRequest.
 
         按负责人查询。
 
@@ -275,7 +275,7 @@ class ListDimensionLogicTablesRequest:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ListDimensionLogicTablesRequest.
+        r"""Sets the owner of this ListDimensionLogicTablesRequest.
 
         按负责人查询。
 
@@ -286,7 +286,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListDimensionLogicTablesRequest.
+        r"""Gets the status of this ListDimensionLogicTablesRequest.
 
         业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
@@ -297,7 +297,7 @@ class ListDimensionLogicTablesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListDimensionLogicTablesRequest.
+        r"""Sets the status of this ListDimensionLogicTablesRequest.
 
         业务状态。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审批   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审批   - OFFLINE: 已下线   - REJECT: 已驳回 
 
@@ -308,7 +308,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def sync_status(self):
-        """Gets the sync_status of this ListDimensionLogicTablesRequest.
+        r"""Gets the sync_status of this ListDimensionLogicTablesRequest.
 
         同步状态枚举。 枚举值：   - RUNNING: 同步中   - NO_NEED: 未同步   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败 
 
@@ -319,7 +319,7 @@ class ListDimensionLogicTablesRequest:
 
     @sync_status.setter
     def sync_status(self, sync_status):
-        """Sets the sync_status of this ListDimensionLogicTablesRequest.
+        r"""Sets the sync_status of this ListDimensionLogicTablesRequest.
 
         同步状态枚举。 枚举值：   - RUNNING: 同步中   - NO_NEED: 未同步   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败 
 
@@ -330,7 +330,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def sync_key(self):
-        """Gets the sync_key of this ListDimensionLogicTablesRequest.
+        r"""Gets the sync_key of this ListDimensionLogicTablesRequest.
 
         同步任务类型枚举。 枚举值：   - BUSINESS_ASSET: 同步业务资产   - DATA_QUALITY: 创建质量作业   - TECHNICAL_ASSET: 同步技术资产   - META_DATA_LINK: 资产关联   - PHYSICAL_TABLE: 创建表（生产环境）   - DEV_PHYSICAL_TABLE: 创建表（开发环境）   - DLF_TASK: 创建数据开发作业   - MATERIALIZATION: 数值落库（码表）   - PUBLISH_TO_DLM: 发布数据服务API   - SUMMARY_STATUS: 整体状态 
 
@@ -341,7 +341,7 @@ class ListDimensionLogicTablesRequest:
 
     @sync_key.setter
     def sync_key(self, sync_key):
-        """Sets the sync_key of this ListDimensionLogicTablesRequest.
+        r"""Sets the sync_key of this ListDimensionLogicTablesRequest.
 
         同步任务类型枚举。 枚举值：   - BUSINESS_ASSET: 同步业务资产   - DATA_QUALITY: 创建质量作业   - TECHNICAL_ASSET: 同步技术资产   - META_DATA_LINK: 资产关联   - PHYSICAL_TABLE: 创建表（生产环境）   - DEV_PHYSICAL_TABLE: 创建表（开发环境）   - DLF_TASK: 创建数据开发作业   - MATERIALIZATION: 数值落库（码表）   - PUBLISH_TO_DLM: 发布数据服务API   - SUMMARY_STATUS: 整体状态 
 
@@ -352,7 +352,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def l2_id(self):
-        """Gets the l2_id of this ListDimensionLogicTablesRequest.
+        r"""Gets the l2_id of this ListDimensionLogicTablesRequest.
 
         主题域l2的ID，ID字符串。
 
@@ -363,7 +363,7 @@ class ListDimensionLogicTablesRequest:
 
     @l2_id.setter
     def l2_id(self, l2_id):
-        """Sets the l2_id of this ListDimensionLogicTablesRequest.
+        r"""Sets the l2_id of this ListDimensionLogicTablesRequest.
 
         主题域l2的ID，ID字符串。
 
@@ -374,7 +374,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def dimension_id(self):
-        """Gets the dimension_id of this ListDimensionLogicTablesRequest.
+        r"""Gets the dimension_id of this ListDimensionLogicTablesRequest.
 
         依据维度ID查维度属性，ID字符串。
 
@@ -385,7 +385,7 @@ class ListDimensionLogicTablesRequest:
 
     @dimension_id.setter
     def dimension_id(self, dimension_id):
-        """Sets the dimension_id of this ListDimensionLogicTablesRequest.
+        r"""Sets the dimension_id of this ListDimensionLogicTablesRequest.
 
         依据维度ID查维度属性，ID字符串。
 
@@ -396,7 +396,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListDimensionLogicTablesRequest.
+        r"""Gets the begin_time of this ListDimensionLogicTablesRequest.
 
         时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -407,7 +407,7 @@ class ListDimensionLogicTablesRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListDimensionLogicTablesRequest.
+        r"""Sets the begin_time of this ListDimensionLogicTablesRequest.
 
         时间过滤左边界，与end_time一起使用，只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -418,7 +418,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListDimensionLogicTablesRequest.
+        r"""Gets the end_time of this ListDimensionLogicTablesRequest.
 
         时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -429,7 +429,7 @@ class ListDimensionLogicTablesRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListDimensionLogicTablesRequest.
+        r"""Sets the end_time of this ListDimensionLogicTablesRequest.
 
         时间过滤右边界，与begin_time一起使用只支持时间范围过滤，单边过滤无效。格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -440,7 +440,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDimensionLogicTablesRequest.
+        r"""Gets the limit of this ListDimensionLogicTablesRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -451,7 +451,7 @@ class ListDimensionLogicTablesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDimensionLogicTablesRequest.
+        r"""Sets the limit of this ListDimensionLogicTablesRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -462,7 +462,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDimensionLogicTablesRequest.
+        r"""Gets the offset of this ListDimensionLogicTablesRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -473,7 +473,7 @@ class ListDimensionLogicTablesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDimensionLogicTablesRequest.
+        r"""Sets the offset of this ListDimensionLogicTablesRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -484,7 +484,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def biz_catalog_id(self):
-        """Gets the biz_catalog_id of this ListDimensionLogicTablesRequest.
+        r"""Gets the biz_catalog_id of this ListDimensionLogicTablesRequest.
 
         所属的业务分层的ID。
 
@@ -495,7 +495,7 @@ class ListDimensionLogicTablesRequest:
 
     @biz_catalog_id.setter
     def biz_catalog_id(self, biz_catalog_id):
-        """Sets the biz_catalog_id of this ListDimensionLogicTablesRequest.
+        r"""Sets the biz_catalog_id of this ListDimensionLogicTablesRequest.
 
         所属的业务分层的ID。
 
@@ -506,7 +506,7 @@ class ListDimensionLogicTablesRequest:
 
     @property
     def dimension_type(self):
-        """Gets the dimension_type of this ListDimensionLogicTablesRequest.
+        r"""Gets the dimension_type of this ListDimensionLogicTablesRequest.
 
         维度类型。 枚举值：   - COMMON: 普通维度   - LOOKUP: 码表维度   - HIERARCHIES: 层级维度 
 
@@ -517,7 +517,7 @@ class ListDimensionLogicTablesRequest:
 
     @dimension_type.setter
     def dimension_type(self, dimension_type):
-        """Sets the dimension_type of this ListDimensionLogicTablesRequest.
+        r"""Sets the dimension_type of this ListDimensionLogicTablesRequest.
 
         维度类型。 枚举值：   - COMMON: 普通维度   - LOOKUP: 码表维度   - HIERARCHIES: 层级维度 
 

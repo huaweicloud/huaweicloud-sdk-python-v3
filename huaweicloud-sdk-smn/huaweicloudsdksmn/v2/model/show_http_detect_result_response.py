@@ -30,7 +30,7 @@ class ShowHttpDetectResultResponse(SdkResponse):
     }
 
     def __init__(self, detail=None, status=None, request_id=None):
-        """ShowHttpDetectResultResponse
+        r"""ShowHttpDetectResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowHttpDetectResultResponse(SdkResponse):
 
     @property
     def detail(self):
-        """Gets the detail of this ShowHttpDetectResultResponse.
+        r"""Gets the detail of this ShowHttpDetectResultResponse.
 
         :return: The detail of this ShowHttpDetectResultResponse.
         :rtype: :class:`huaweicloudsdksmn.v2.GetHttpDetectResponseBodyDetail`
@@ -67,7 +67,7 @@ class ShowHttpDetectResultResponse(SdkResponse):
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ShowHttpDetectResultResponse.
+        r"""Sets the detail of this ShowHttpDetectResultResponse.
 
         :param detail: The detail of this ShowHttpDetectResultResponse.
         :type detail: :class:`huaweicloudsdksmn.v2.GetHttpDetectResponseBodyDetail`
@@ -76,7 +76,7 @@ class ShowHttpDetectResultResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowHttpDetectResultResponse.
+        r"""Gets the status of this ShowHttpDetectResultResponse.
 
         http探测任务状态，0代表执行成功，终端可用，1代表未执行，2代表执行失败，终端不可用
 
@@ -87,7 +87,7 @@ class ShowHttpDetectResultResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowHttpDetectResultResponse.
+        r"""Sets the status of this ShowHttpDetectResultResponse.
 
         http探测任务状态，0代表执行成功，终端可用，1代表未执行，2代表执行失败，终端不可用
 
@@ -98,7 +98,7 @@ class ShowHttpDetectResultResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowHttpDetectResultResponse.
+        r"""Gets the request_id of this ShowHttpDetectResultResponse.
 
         请求ID
 
@@ -109,7 +109,7 @@ class ShowHttpDetectResultResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowHttpDetectResultResponse.
+        r"""Sets the request_id of this ShowHttpDetectResultResponse.
 
         请求ID
 

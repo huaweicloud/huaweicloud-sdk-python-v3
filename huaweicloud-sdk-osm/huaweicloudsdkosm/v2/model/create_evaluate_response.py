@@ -30,7 +30,7 @@ class CreateEvaluateResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, request_id=None):
-        """CreateEvaluateResponse
+        r"""CreateEvaluateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateEvaluateResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateEvaluateResponse.
+        r"""Gets the error_code of this CreateEvaluateResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class CreateEvaluateResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateEvaluateResponse.
+        r"""Sets the error_code of this CreateEvaluateResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class CreateEvaluateResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateEvaluateResponse.
+        r"""Gets the error_msg of this CreateEvaluateResponse.
 
         错误描述
 
@@ -91,7 +91,7 @@ class CreateEvaluateResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateEvaluateResponse.
+        r"""Sets the error_msg of this CreateEvaluateResponse.
 
         错误描述
 
@@ -102,7 +102,7 @@ class CreateEvaluateResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateEvaluateResponse.
+        r"""Gets the request_id of this CreateEvaluateResponse.
 
         请求Id
 
@@ -113,7 +113,7 @@ class CreateEvaluateResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateEvaluateResponse.
+        r"""Sets the request_id of this CreateEvaluateResponse.
 
         请求Id
 

@@ -27,7 +27,7 @@ class RecreateServerImageRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """RecreateServerImageRequest
+        r"""RecreateServerImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RecreateServerImageRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this RecreateServerImageRequest.
+        r"""Gets the server_id of this RecreateServerImageRequest.
 
         镜像实例唯一标识。
 
@@ -60,7 +60,7 @@ class RecreateServerImageRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this RecreateServerImageRequest.
+        r"""Sets the server_id of this RecreateServerImageRequest.
 
         镜像实例唯一标识。
 
@@ -71,7 +71,7 @@ class RecreateServerImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this RecreateServerImageRequest.
+        r"""Gets the body of this RecreateServerImageRequest.
 
         :return: The body of this RecreateServerImageRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateServerImageReq`
@@ -80,7 +80,7 @@ class RecreateServerImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RecreateServerImageRequest.
+        r"""Sets the body of this RecreateServerImageRequest.
 
         :param body: The body of this RecreateServerImageRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.CreateServerImageReq`

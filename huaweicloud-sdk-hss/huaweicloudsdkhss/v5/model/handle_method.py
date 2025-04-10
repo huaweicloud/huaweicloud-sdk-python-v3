@@ -23,7 +23,7 @@ class HandleMethod:
     }
 
     def __init__(self):
-        """HandleMethod
+        r"""HandleMethod
 
         The model defined in huaweicloud sdk
 

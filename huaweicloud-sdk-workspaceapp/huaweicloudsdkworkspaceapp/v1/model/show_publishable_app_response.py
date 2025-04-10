@@ -30,7 +30,7 @@ class ShowPublishableAppResponse(SdkResponse):
     }
 
     def __init__(self, count=None, group_images=None, items=None):
-        """ShowPublishableAppResponse
+        r"""ShowPublishableAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowPublishableAppResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowPublishableAppResponse.
+        r"""Gets the count of this ShowPublishableAppResponse.
 
         总数。
 
@@ -69,7 +69,7 @@ class ShowPublishableAppResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowPublishableAppResponse.
+        r"""Sets the count of this ShowPublishableAppResponse.
 
         总数。
 
@@ -80,7 +80,7 @@ class ShowPublishableAppResponse(SdkResponse):
 
     @property
     def group_images(self):
-        """Gets the group_images of this ShowPublishableAppResponse.
+        r"""Gets the group_images of this ShowPublishableAppResponse.
 
         组下面的镜像ID列表。
 
@@ -91,7 +91,7 @@ class ShowPublishableAppResponse(SdkResponse):
 
     @group_images.setter
     def group_images(self, group_images):
-        """Sets the group_images of this ShowPublishableAppResponse.
+        r"""Sets the group_images of this ShowPublishableAppResponse.
 
         组下面的镜像ID列表。
 
@@ -102,7 +102,7 @@ class ShowPublishableAppResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ShowPublishableAppResponse.
+        r"""Gets the items of this ShowPublishableAppResponse.
 
         查询到的应用列表。
 
@@ -113,7 +113,7 @@ class ShowPublishableAppResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ShowPublishableAppResponse.
+        r"""Sets the items of this ShowPublishableAppResponse.
 
         查询到的应用列表。
 

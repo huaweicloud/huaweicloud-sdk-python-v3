@@ -23,7 +23,7 @@ class VoidBody:
     }
 
     def __init__(self):
-        """VoidBody
+        r"""VoidBody
 
         The model defined in huaweicloud sdk
 

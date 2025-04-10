@@ -30,7 +30,7 @@ class ListRtcAbnormalEventsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, events=None, x_request_id=None):
-        """ListRtcAbnormalEventsResponse
+        r"""ListRtcAbnormalEventsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRtcAbnormalEventsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListRtcAbnormalEventsResponse.
+        r"""Gets the total of this ListRtcAbnormalEventsResponse.
 
         异常总数
 
@@ -69,7 +69,7 @@ class ListRtcAbnormalEventsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListRtcAbnormalEventsResponse.
+        r"""Sets the total of this ListRtcAbnormalEventsResponse.
 
         异常总数
 
@@ -80,7 +80,7 @@ class ListRtcAbnormalEventsResponse(SdkResponse):
 
     @property
     def events(self):
-        """Gets the events of this ListRtcAbnormalEventsResponse.
+        r"""Gets the events of this ListRtcAbnormalEventsResponse.
 
         异常体验列表
 
@@ -91,7 +91,7 @@ class ListRtcAbnormalEventsResponse(SdkResponse):
 
     @events.setter
     def events(self, events):
-        """Sets the events of this ListRtcAbnormalEventsResponse.
+        r"""Sets the events of this ListRtcAbnormalEventsResponse.
 
         异常体验列表
 
@@ -102,7 +102,7 @@ class ListRtcAbnormalEventsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListRtcAbnormalEventsResponse.
+        r"""Gets the x_request_id of this ListRtcAbnormalEventsResponse.
 
         :return: The x_request_id of this ListRtcAbnormalEventsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListRtcAbnormalEventsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListRtcAbnormalEventsResponse.
+        r"""Sets the x_request_id of this ListRtcAbnormalEventsResponse.
 
         :param x_request_id: The x_request_id of this ListRtcAbnormalEventsResponse.
         :type x_request_id: str

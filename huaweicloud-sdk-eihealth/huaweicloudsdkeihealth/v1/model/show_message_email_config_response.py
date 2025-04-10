@@ -34,7 +34,7 @@ class ShowMessageEmailConfigResponse(SdkResponse):
     }
 
     def __init__(self, server=None, subject_prefix=None, user_name=None, email=None, language=None):
-        """ShowMessageEmailConfigResponse
+        r"""ShowMessageEmailConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowMessageEmailConfigResponse(SdkResponse):
 
     @property
     def server(self):
-        """Gets the server of this ShowMessageEmailConfigResponse.
+        r"""Gets the server of this ShowMessageEmailConfigResponse.
 
         服务器地址
 
@@ -83,7 +83,7 @@ class ShowMessageEmailConfigResponse(SdkResponse):
 
     @server.setter
     def server(self, server):
-        """Sets the server of this ShowMessageEmailConfigResponse.
+        r"""Sets the server of this ShowMessageEmailConfigResponse.
 
         服务器地址
 
@@ -94,7 +94,7 @@ class ShowMessageEmailConfigResponse(SdkResponse):
 
     @property
     def subject_prefix(self):
-        """Gets the subject_prefix of this ShowMessageEmailConfigResponse.
+        r"""Gets the subject_prefix of this ShowMessageEmailConfigResponse.
 
         展示名
 
@@ -105,7 +105,7 @@ class ShowMessageEmailConfigResponse(SdkResponse):
 
     @subject_prefix.setter
     def subject_prefix(self, subject_prefix):
-        """Sets the subject_prefix of this ShowMessageEmailConfigResponse.
+        r"""Sets the subject_prefix of this ShowMessageEmailConfigResponse.
 
         展示名
 
@@ -116,7 +116,7 @@ class ShowMessageEmailConfigResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowMessageEmailConfigResponse.
+        r"""Gets the user_name of this ShowMessageEmailConfigResponse.
 
         用户名
 
@@ -127,7 +127,7 @@ class ShowMessageEmailConfigResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowMessageEmailConfigResponse.
+        r"""Sets the user_name of this ShowMessageEmailConfigResponse.
 
         用户名
 
@@ -138,7 +138,7 @@ class ShowMessageEmailConfigResponse(SdkResponse):
 
     @property
     def email(self):
-        """Gets the email of this ShowMessageEmailConfigResponse.
+        r"""Gets the email of this ShowMessageEmailConfigResponse.
 
         邮箱
 
@@ -149,7 +149,7 @@ class ShowMessageEmailConfigResponse(SdkResponse):
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ShowMessageEmailConfigResponse.
+        r"""Sets the email of this ShowMessageEmailConfigResponse.
 
         邮箱
 
@@ -160,7 +160,7 @@ class ShowMessageEmailConfigResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this ShowMessageEmailConfigResponse.
+        r"""Gets the language of this ShowMessageEmailConfigResponse.
 
         :return: The language of this ShowMessageEmailConfigResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`
@@ -169,7 +169,7 @@ class ShowMessageEmailConfigResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ShowMessageEmailConfigResponse.
+        r"""Sets the language of this ShowMessageEmailConfigResponse.
 
         :param language: The language of this ShowMessageEmailConfigResponse.
         :type language: :class:`huaweicloudsdkeihealth.v1.LanguageEnum`

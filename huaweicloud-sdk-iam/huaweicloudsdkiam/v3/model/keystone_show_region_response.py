@@ -26,7 +26,7 @@ class KeystoneShowRegionResponse(SdkResponse):
     }
 
     def __init__(self, region=None):
-        """KeystoneShowRegionResponse
+        r"""KeystoneShowRegionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class KeystoneShowRegionResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this KeystoneShowRegionResponse.
+        r"""Gets the region of this KeystoneShowRegionResponse.
 
         :return: The region of this KeystoneShowRegionResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Region`
@@ -53,7 +53,7 @@ class KeystoneShowRegionResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this KeystoneShowRegionResponse.
+        r"""Sets the region of this KeystoneShowRegionResponse.
 
         :param region: The region of this KeystoneShowRegionResponse.
         :type region: :class:`huaweicloudsdkiam.v3.Region`

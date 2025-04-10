@@ -25,7 +25,7 @@ class MappingOption:
     }
 
     def __init__(self, rules=None):
-        """MappingOption
+        r"""MappingOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MappingOption:
 
     @property
     def rules(self):
-        """Gets the rules of this MappingOption.
+        r"""Gets the rules of this MappingOption.
 
         将联邦用户映射为本地用户的规则列表。
 
@@ -53,7 +53,7 @@ class MappingOption:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this MappingOption.
+        r"""Sets the rules of this MappingOption.
 
         将联邦用户映射为本地用户的规则列表。
 

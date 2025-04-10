@@ -33,7 +33,7 @@ class StringColumnStatisticsData:
     }
 
     def __init__(self, average_length=None, maximum_length=None, number_of_null=None, number_of_distinct_value=None, bit_vector=None):
-        """StringColumnStatisticsData
+        r"""StringColumnStatisticsData
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class StringColumnStatisticsData:
 
     @property
     def average_length(self):
-        """Gets the average_length of this StringColumnStatisticsData.
+        r"""Gets the average_length of this StringColumnStatisticsData.
 
         列中字符串平均长度
 
@@ -78,7 +78,7 @@ class StringColumnStatisticsData:
 
     @average_length.setter
     def average_length(self, average_length):
-        """Sets the average_length of this StringColumnStatisticsData.
+        r"""Sets the average_length of this StringColumnStatisticsData.
 
         列中字符串平均长度
 
@@ -89,7 +89,7 @@ class StringColumnStatisticsData:
 
     @property
     def maximum_length(self):
-        """Gets the maximum_length of this StringColumnStatisticsData.
+        r"""Gets the maximum_length of this StringColumnStatisticsData.
 
         列中字符串最长长度
 
@@ -100,7 +100,7 @@ class StringColumnStatisticsData:
 
     @maximum_length.setter
     def maximum_length(self, maximum_length):
-        """Sets the maximum_length of this StringColumnStatisticsData.
+        r"""Sets the maximum_length of this StringColumnStatisticsData.
 
         列中字符串最长长度
 
@@ -111,7 +111,7 @@ class StringColumnStatisticsData:
 
     @property
     def number_of_null(self):
-        """Gets the number_of_null of this StringColumnStatisticsData.
+        r"""Gets the number_of_null of this StringColumnStatisticsData.
 
         列中空值个数
 
@@ -122,7 +122,7 @@ class StringColumnStatisticsData:
 
     @number_of_null.setter
     def number_of_null(self, number_of_null):
-        """Sets the number_of_null of this StringColumnStatisticsData.
+        r"""Sets the number_of_null of this StringColumnStatisticsData.
 
         列中空值个数
 
@@ -133,7 +133,7 @@ class StringColumnStatisticsData:
 
     @property
     def number_of_distinct_value(self):
-        """Gets the number_of_distinct_value of this StringColumnStatisticsData.
+        r"""Gets the number_of_distinct_value of this StringColumnStatisticsData.
 
         列中去重后字符串个数
 
@@ -144,7 +144,7 @@ class StringColumnStatisticsData:
 
     @number_of_distinct_value.setter
     def number_of_distinct_value(self, number_of_distinct_value):
-        """Sets the number_of_distinct_value of this StringColumnStatisticsData.
+        r"""Sets the number_of_distinct_value of this StringColumnStatisticsData.
 
         列中去重后字符串个数
 
@@ -155,7 +155,7 @@ class StringColumnStatisticsData:
 
     @property
     def bit_vector(self):
-        """Gets the bit_vector of this StringColumnStatisticsData.
+        r"""Gets the bit_vector of this StringColumnStatisticsData.
 
         估算唯一值使用的位图
 
@@ -166,7 +166,7 @@ class StringColumnStatisticsData:
 
     @bit_vector.setter
     def bit_vector(self, bit_vector):
-        """Sets the bit_vector of this StringColumnStatisticsData.
+        r"""Sets the bit_vector of this StringColumnStatisticsData.
 
         估算唯一值使用的位图
 

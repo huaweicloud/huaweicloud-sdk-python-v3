@@ -27,7 +27,7 @@ class ShowRulesRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ShowRulesRequest
+        r"""ShowRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowRulesRequest.
+        r"""Gets the offset of this ShowRulesRequest.
 
         页码
 
@@ -61,7 +61,7 @@ class ShowRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowRulesRequest.
+        r"""Sets the offset of this ShowRulesRequest.
 
         页码
 
@@ -72,7 +72,7 @@ class ShowRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowRulesRequest.
+        r"""Gets the limit of this ShowRulesRequest.
 
         分页大小
 
@@ -83,7 +83,7 @@ class ShowRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowRulesRequest.
+        r"""Sets the limit of this ShowRulesRequest.
 
         分页大小
 

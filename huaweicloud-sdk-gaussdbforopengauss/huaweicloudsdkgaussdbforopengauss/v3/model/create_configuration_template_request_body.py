@@ -31,7 +31,7 @@ class CreateConfigurationTemplateRequestBody:
     }
 
     def __init__(self, name=None, description=None, parameter_values=None, datastore=None):
-        """CreateConfigurationTemplateRequestBody
+        r"""CreateConfigurationTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateConfigurationTemplateRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateConfigurationTemplateRequestBody.
+        r"""Gets the name of this CreateConfigurationTemplateRequestBody.
 
         参数模板名称，不可与已有参数模板名称重复。 取值范围：长度1到64位之间，区分大小写字母，可包含字母、数字、中划线、下划线或句点，不能包含其他特殊字符。
 
@@ -73,7 +73,7 @@ class CreateConfigurationTemplateRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateConfigurationTemplateRequestBody.
+        r"""Sets the name of this CreateConfigurationTemplateRequestBody.
 
         参数模板名称，不可与已有参数模板名称重复。 取值范围：长度1到64位之间，区分大小写字母，可包含字母、数字、中划线、下划线或句点，不能包含其他特殊字符。
 
@@ -84,7 +84,7 @@ class CreateConfigurationTemplateRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateConfigurationTemplateRequestBody.
+        r"""Gets the description of this CreateConfigurationTemplateRequestBody.
 
         参数模板描述，默认为空。 取值范围：长度不超过256，不能包含回车<>!&等特殊字符。
 
@@ -95,7 +95,7 @@ class CreateConfigurationTemplateRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateConfigurationTemplateRequestBody.
+        r"""Sets the description of this CreateConfigurationTemplateRequestBody.
 
         参数模板描述，默认为空。 取值范围：长度不超过256，不能包含回车<>!&等特殊字符。
 
@@ -106,7 +106,7 @@ class CreateConfigurationTemplateRequestBody:
 
     @property
     def parameter_values(self):
-        """Gets the parameter_values of this CreateConfigurationTemplateRequestBody.
+        r"""Gets the parameter_values of this CreateConfigurationTemplateRequestBody.
 
         参数名和参数值映射关系。用户可以基于默认参数模板的参数，自定义参数值。
 
@@ -117,7 +117,7 @@ class CreateConfigurationTemplateRequestBody:
 
     @parameter_values.setter
     def parameter_values(self, parameter_values):
-        """Sets the parameter_values of this CreateConfigurationTemplateRequestBody.
+        r"""Sets the parameter_values of this CreateConfigurationTemplateRequestBody.
 
         参数名和参数值映射关系。用户可以基于默认参数模板的参数，自定义参数值。
 
@@ -128,7 +128,7 @@ class CreateConfigurationTemplateRequestBody:
 
     @property
     def datastore(self):
-        """Gets the datastore of this CreateConfigurationTemplateRequestBody.
+        r"""Gets the datastore of this CreateConfigurationTemplateRequestBody.
 
         :return: The datastore of this CreateConfigurationTemplateRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.DatastoreOption`
@@ -137,7 +137,7 @@ class CreateConfigurationTemplateRequestBody:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this CreateConfigurationTemplateRequestBody.
+        r"""Sets the datastore of this CreateConfigurationTemplateRequestBody.
 
         :param datastore: The datastore of this CreateConfigurationTemplateRequestBody.
         :type datastore: :class:`huaweicloudsdkgaussdbforopengauss.v3.DatastoreOption`

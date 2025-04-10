@@ -25,7 +25,7 @@ class ListElbCertsRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ListElbCertsRequest
+        r"""ListElbCertsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListElbCertsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListElbCertsRequest.
+        r"""Gets the cluster_id of this ListElbCertsRequest.
 
         指定待查询的集群ID。
 
@@ -53,7 +53,7 @@ class ListElbCertsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListElbCertsRequest.
+        r"""Sets the cluster_id of this ListElbCertsRequest.
 
         指定待查询的集群ID。
 

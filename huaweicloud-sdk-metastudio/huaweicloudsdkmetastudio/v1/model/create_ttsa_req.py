@@ -45,7 +45,7 @@ class CreateTTSAReq:
     }
 
     def __init__(self, voice_asset_id=None, script_type=None, text=None, audio_file_download_url=None, speed=None, pitch=None, volume=None, emotion=None, style_id=None, camera_position=None, job_type=None):
-        """CreateTTSAReq
+        r"""CreateTTSAReq
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class CreateTTSAReq:
 
     @property
     def voice_asset_id(self):
-        """Gets the voice_asset_id of this CreateTTSAReq.
+        r"""Gets the voice_asset_id of this CreateTTSAReq.
 
         音色模型ID。需要使用MetaStudio的数字资产管理相关接口从资产库查出。
 
@@ -122,7 +122,7 @@ class CreateTTSAReq:
 
     @voice_asset_id.setter
     def voice_asset_id(self, voice_asset_id):
-        """Sets the voice_asset_id of this CreateTTSAReq.
+        r"""Sets the voice_asset_id of this CreateTTSAReq.
 
         音色模型ID。需要使用MetaStudio的数字资产管理相关接口从资产库查出。
 
@@ -133,7 +133,7 @@ class CreateTTSAReq:
 
     @property
     def script_type(self):
-        """Gets the script_type of this CreateTTSAReq.
+        r"""Gets the script_type of this CreateTTSAReq.
 
         脚本类型，即视频制作的驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
 
@@ -144,7 +144,7 @@ class CreateTTSAReq:
 
     @script_type.setter
     def script_type(self, script_type):
-        """Sets the script_type of this CreateTTSAReq.
+        r"""Sets the script_type of this CreateTTSAReq.
 
         脚本类型，即视频制作的驱动方式。默认TEXT * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
 
@@ -155,7 +155,7 @@ class CreateTTSAReq:
 
     @property
     def text(self):
-        """Gets the text of this CreateTTSAReq.
+        r"""Gets the text of this CreateTTSAReq.
 
         HTML格式的台词，可包含动作。最多2048个字符。 > * HTML格式举例：\\<speak>大家好<insert-action id=\\\"14cc7bbcde4982aab82f9d9af9e0f743\\\"/>，非常高兴给大家介绍MetaStudio。\\</speak> > * insert-action id通过查询资产列表接口获取，查询时asset_type=ANIMATION > * 多音字标签：\\<phoneme ph=\\\"拼音\\\">汉字\\</phoneme>，南京\\<phoneme ph=\\\"shi4 zhang3\\\">市长\\</phoneme>江大桥。 > * 停顿标签：\\<break/>，中方一贯主张\\<break/>维护国家主权平等，不干涉他国内政\\<break time=\\\"300ms\\\"/>是联合国宪章\\<break time=\\\"500ms\\\"/>最重要的原则。
 
@@ -166,7 +166,7 @@ class CreateTTSAReq:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this CreateTTSAReq.
+        r"""Sets the text of this CreateTTSAReq.
 
         HTML格式的台词，可包含动作。最多2048个字符。 > * HTML格式举例：\\<speak>大家好<insert-action id=\\\"14cc7bbcde4982aab82f9d9af9e0f743\\\"/>，非常高兴给大家介绍MetaStudio。\\</speak> > * insert-action id通过查询资产列表接口获取，查询时asset_type=ANIMATION > * 多音字标签：\\<phoneme ph=\\\"拼音\\\">汉字\\</phoneme>，南京\\<phoneme ph=\\\"shi4 zhang3\\\">市长\\</phoneme>江大桥。 > * 停顿标签：\\<break/>，中方一贯主张\\<break/>维护国家主权平等，不干涉他国内政\\<break time=\\\"300ms\\\"/>是联合国宪章\\<break time=\\\"500ms\\\"/>最重要的原则。
 
@@ -177,7 +177,7 @@ class CreateTTSAReq:
 
     @property
     def audio_file_download_url(self):
-        """Gets the audio_file_download_url of this CreateTTSAReq.
+        r"""Gets the audio_file_download_url of this CreateTTSAReq.
 
         语音驱动音频文件下载URL。
 
@@ -188,7 +188,7 @@ class CreateTTSAReq:
 
     @audio_file_download_url.setter
     def audio_file_download_url(self, audio_file_download_url):
-        """Sets the audio_file_download_url of this CreateTTSAReq.
+        r"""Sets the audio_file_download_url of this CreateTTSAReq.
 
         语音驱动音频文件下载URL。
 
@@ -199,7 +199,7 @@ class CreateTTSAReq:
 
     @property
     def speed(self):
-        """Gets the speed of this CreateTTSAReq.
+        r"""Gets the speed of this CreateTTSAReq.
 
         语速。  取值范围[50,200]   默认值：100
 
@@ -210,7 +210,7 @@ class CreateTTSAReq:
 
     @speed.setter
     def speed(self, speed):
-        """Sets the speed of this CreateTTSAReq.
+        r"""Sets the speed of this CreateTTSAReq.
 
         语速。  取值范围[50,200]   默认值：100
 
@@ -221,7 +221,7 @@ class CreateTTSAReq:
 
     @property
     def pitch(self):
-        """Gets the pitch of this CreateTTSAReq.
+        r"""Gets the pitch of this CreateTTSAReq.
 
         基频。  取值范围[50,200]  默认值：100
 
@@ -232,7 +232,7 @@ class CreateTTSAReq:
 
     @pitch.setter
     def pitch(self, pitch):
-        """Sets the pitch of this CreateTTSAReq.
+        r"""Sets the pitch of this CreateTTSAReq.
 
         基频。  取值范围[50,200]  默认值：100
 
@@ -243,7 +243,7 @@ class CreateTTSAReq:
 
     @property
     def volume(self):
-        """Gets the volume of this CreateTTSAReq.
+        r"""Gets the volume of this CreateTTSAReq.
 
         音量。  取值范围[90,240]   默认值：100
 
@@ -254,7 +254,7 @@ class CreateTTSAReq:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this CreateTTSAReq.
+        r"""Sets the volume of this CreateTTSAReq.
 
         音量。  取值范围[90,240]   默认值：100
 
@@ -265,7 +265,7 @@ class CreateTTSAReq:
 
     @property
     def emotion(self):
-        """Gets the emotion of this CreateTTSAReq.
+        r"""Gets the emotion of this CreateTTSAReq.
 
         情感标签。 * ANGER：愤怒 * HAPPY：开心 * SAD：悲伤 * CALM：平静
 
@@ -276,7 +276,7 @@ class CreateTTSAReq:
 
     @emotion.setter
     def emotion(self, emotion):
-        """Sets the emotion of this CreateTTSAReq.
+        r"""Sets the emotion of this CreateTTSAReq.
 
         情感标签。 * ANGER：愤怒 * HAPPY：开心 * SAD：悲伤 * CALM：平静
 
@@ -287,7 +287,7 @@ class CreateTTSAReq:
 
     @property
     def style_id(self):
-        """Gets the style_id of this CreateTTSAReq.
+        r"""Gets the style_id of this CreateTTSAReq.
 
         风格化ID。需要调用数字人风格管理相关接口，从系统中查得。
 
@@ -298,7 +298,7 @@ class CreateTTSAReq:
 
     @style_id.setter
     def style_id(self, style_id):
-        """Sets the style_id of this CreateTTSAReq.
+        r"""Sets the style_id of this CreateTTSAReq.
 
         风格化ID。需要调用数字人风格管理相关接口，从系统中查得。
 
@@ -309,7 +309,7 @@ class CreateTTSAReq:
 
     @property
     def camera_position(self):
-        """Gets the camera_position of this CreateTTSAReq.
+        r"""Gets the camera_position of this CreateTTSAReq.
 
         人位置及相机位置。由如下4组浮点数组成的字符：人位置的X/Y/Z值，人角度的Pitch/Yaw/Roll值；相机位置的X/Y/Z值，相机角度的Pitch/Yaw/Roll值。
 
@@ -320,7 +320,7 @@ class CreateTTSAReq:
 
     @camera_position.setter
     def camera_position(self, camera_position):
-        """Sets the camera_position of this CreateTTSAReq.
+        r"""Sets the camera_position of this CreateTTSAReq.
 
         人位置及相机位置。由如下4组浮点数组成的字符：人位置的X/Y/Z值，人角度的Pitch/Yaw/Roll值；相机位置的X/Y/Z值，相机角度的Pitch/Yaw/Roll值。
 
@@ -331,7 +331,7 @@ class CreateTTSAReq:
 
     @property
     def job_type(self):
-        """Gets the job_type of this CreateTTSAReq.
+        r"""Gets the job_type of this CreateTTSAReq.
 
         任务类型。 * REAL_JOB：实时任务。如数字人交互。 * UNREAL_JOB：非实时任务。如数字人视频制作
 
@@ -342,7 +342,7 @@ class CreateTTSAReq:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this CreateTTSAReq.
+        r"""Sets the job_type of this CreateTTSAReq.
 
         任务类型。 * REAL_JOB：实时任务。如数字人交互。 * UNREAL_JOB：非实时任务。如数字人视频制作
 

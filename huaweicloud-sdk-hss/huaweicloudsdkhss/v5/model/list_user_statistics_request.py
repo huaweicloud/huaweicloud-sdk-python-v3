@@ -33,13 +33,13 @@ class ListUserStatisticsRequest:
     }
 
     def __init__(self, user_name=None, enterprise_project_id=None, limit=None, offset=None, category=None):
-        """ListUserStatisticsRequest
+        r"""ListUserStatisticsRequest
 
         The model defined in huaweicloud sdk
 
         :param user_name: 账号名称，参考windows文件命名规则，支持字母、数字、下划线、中文，特殊字符!@.-等，不包括中文标点符号
         :type user_name: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param limit: 每页显示数量
         :type limit: int
@@ -71,7 +71,7 @@ class ListUserStatisticsRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListUserStatisticsRequest.
+        r"""Gets the user_name of this ListUserStatisticsRequest.
 
         账号名称，参考windows文件命名规则，支持字母、数字、下划线、中文，特殊字符!@.-等，不包括中文标点符号
 
@@ -82,7 +82,7 @@ class ListUserStatisticsRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListUserStatisticsRequest.
+        r"""Sets the user_name of this ListUserStatisticsRequest.
 
         账号名称，参考windows文件命名规则，支持字母、数字、下划线、中文，特殊字符!@.-等，不包括中文标点符号
 
@@ -93,9 +93,9 @@ class ListUserStatisticsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListUserStatisticsRequest.
+        r"""Gets the enterprise_project_id of this ListUserStatisticsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListUserStatisticsRequest.
         :rtype: str
@@ -104,9 +104,9 @@ class ListUserStatisticsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListUserStatisticsRequest.
+        r"""Sets the enterprise_project_id of this ListUserStatisticsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListUserStatisticsRequest.
         :type enterprise_project_id: str
@@ -115,7 +115,7 @@ class ListUserStatisticsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUserStatisticsRequest.
+        r"""Gets the limit of this ListUserStatisticsRequest.
 
         每页显示数量
 
@@ -126,7 +126,7 @@ class ListUserStatisticsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUserStatisticsRequest.
+        r"""Sets the limit of this ListUserStatisticsRequest.
 
         每页显示数量
 
@@ -137,7 +137,7 @@ class ListUserStatisticsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUserStatisticsRequest.
+        r"""Gets the offset of this ListUserStatisticsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -148,7 +148,7 @@ class ListUserStatisticsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUserStatisticsRequest.
+        r"""Sets the offset of this ListUserStatisticsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -159,7 +159,7 @@ class ListUserStatisticsRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListUserStatisticsRequest.
+        r"""Gets the category of this ListUserStatisticsRequest.
 
         类别，默认为host，包含如下： - host：主机 - container：容器
 
@@ -170,7 +170,7 @@ class ListUserStatisticsRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListUserStatisticsRequest.
+        r"""Sets the category of this ListUserStatisticsRequest.
 
         类别，默认为host，包含如下： - host：主机 - container：容器
 

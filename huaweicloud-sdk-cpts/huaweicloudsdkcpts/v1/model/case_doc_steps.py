@@ -27,7 +27,7 @@ class CaseDocSteps:
     }
 
     def __init__(self, expect_result=None, test_step=None):
-        """CaseDocSteps
+        r"""CaseDocSteps
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CaseDocSteps:
 
     @property
     def expect_result(self):
-        """Gets the expect_result of this CaseDocSteps.
+        r"""Gets the expect_result of this CaseDocSteps.
 
         步骤描述
 
@@ -61,7 +61,7 @@ class CaseDocSteps:
 
     @expect_result.setter
     def expect_result(self, expect_result):
-        """Sets the expect_result of this CaseDocSteps.
+        r"""Sets the expect_result of this CaseDocSteps.
 
         步骤描述
 
@@ -72,7 +72,7 @@ class CaseDocSteps:
 
     @property
     def test_step(self):
-        """Gets the test_step of this CaseDocSteps.
+        r"""Gets the test_step of this CaseDocSteps.
 
         预期结果
 
@@ -83,7 +83,7 @@ class CaseDocSteps:
 
     @test_step.setter
     def test_step(self, test_step):
-        """Sets the test_step of this CaseDocSteps.
+        r"""Sets the test_step of this CaseDocSteps.
 
         预期结果
 

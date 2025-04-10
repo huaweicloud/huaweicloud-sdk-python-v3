@@ -30,7 +30,7 @@ class AddIngressEipV2Response(SdkResponse):
     }
 
     def __init__(self, instance_id=None, message=None, job_id=None):
-        """AddIngressEipV2Response
+        r"""AddIngressEipV2Response
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class AddIngressEipV2Response(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddIngressEipV2Response.
+        r"""Gets the instance_id of this AddIngressEipV2Response.
 
         实例ID
 
@@ -69,7 +69,7 @@ class AddIngressEipV2Response(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddIngressEipV2Response.
+        r"""Sets the instance_id of this AddIngressEipV2Response.
 
         实例ID
 
@@ -80,7 +80,7 @@ class AddIngressEipV2Response(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this AddIngressEipV2Response.
+        r"""Gets the message of this AddIngressEipV2Response.
 
         公网入口变更的任务信息
 
@@ -91,7 +91,7 @@ class AddIngressEipV2Response(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this AddIngressEipV2Response.
+        r"""Sets the message of this AddIngressEipV2Response.
 
         公网入口变更的任务信息
 
@@ -102,7 +102,7 @@ class AddIngressEipV2Response(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this AddIngressEipV2Response.
+        r"""Gets the job_id of this AddIngressEipV2Response.
 
         任务编号
 
@@ -113,7 +113,7 @@ class AddIngressEipV2Response(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AddIngressEipV2Response.
+        r"""Sets the job_id of this AddIngressEipV2Response.
 
         任务编号
 

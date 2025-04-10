@@ -31,7 +31,7 @@ class Operator:
     }
 
     def __init__(self, id=None, name=None, i18n_name=None, sa=None):
-        """Operator
+        r"""Operator
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Operator:
 
     @property
     def id(self):
-        """Gets the id of this Operator.
+        r"""Gets the id of this Operator.
 
         运营商ID。
 
@@ -75,7 +75,7 @@ class Operator:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Operator.
+        r"""Sets the id of this Operator.
 
         运营商ID。
 
@@ -86,7 +86,7 @@ class Operator:
 
     @property
     def name(self):
-        """Gets the name of this Operator.
+        r"""Gets the name of this Operator.
 
         运营商名称。  取值范围： - chinamobile：中国移动； - chinaunicom：中国联通； - chinatelecom：中国电信。
 
@@ -97,7 +97,7 @@ class Operator:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Operator.
+        r"""Sets the name of this Operator.
 
         运营商名称。  取值范围： - chinamobile：中国移动； - chinaunicom：中国联通； - chinatelecom：中国电信。
 
@@ -108,7 +108,7 @@ class Operator:
 
     @property
     def i18n_name(self):
-        """Gets the i18n_name of this Operator.
+        r"""Gets the i18n_name of this Operator.
 
         运营商国际化名称。
 
@@ -119,7 +119,7 @@ class Operator:
 
     @i18n_name.setter
     def i18n_name(self, i18n_name):
-        """Sets the i18n_name of this Operator.
+        r"""Sets the i18n_name of this Operator.
 
         运营商国际化名称。
 
@@ -130,7 +130,7 @@ class Operator:
 
     @property
     def sa(self):
-        """Gets the sa of this Operator.
+        r"""Gets the sa of this Operator.
 
         运营商的简写。
 
@@ -141,7 +141,7 @@ class Operator:
 
     @sa.setter
     def sa(self, sa):
-        """Sets the sa of this Operator.
+        r"""Sets the sa of this Operator.
 
         运营商的简写。
 

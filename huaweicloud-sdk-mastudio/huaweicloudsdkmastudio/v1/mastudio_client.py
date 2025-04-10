@@ -34,7 +34,7 @@ class MaStudioClient(Client):
         return client_builder
 
     def execute_chat_completion(self, request):
-        """对话问答
+        r"""对话问答
 
         基于对话问答功能，用户可以与模型进行自然而流畅的对话和交流。
         
@@ -101,7 +101,7 @@ class MaStudioClient(Client):
         return http_info
 
     def execute_text_completion(self, request):
-        """通用文本
+        r"""通用文本
 
         给定一个提示和一些参数，模型会根据这些信息生成一个或多个预测的补全，还可以返回每个位置上不同词语的概率。它可以用来做文本生成、自动写作、代码补全等任务。
         

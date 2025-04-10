@@ -27,7 +27,7 @@ class QueryRiskTrendMetric:
     }
 
     def __init__(self, series=None, timestamps=None):
-        """QueryRiskTrendMetric
+        r"""QueryRiskTrendMetric
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QueryRiskTrendMetric:
 
     @property
     def series(self):
-        """Gets the series of this QueryRiskTrendMetric.
+        r"""Gets the series of this QueryRiskTrendMetric.
 
         数值
 
@@ -61,7 +61,7 @@ class QueryRiskTrendMetric:
 
     @series.setter
     def series(self, series):
-        """Sets the series of this QueryRiskTrendMetric.
+        r"""Sets the series of this QueryRiskTrendMetric.
 
         数值
 
@@ -72,7 +72,7 @@ class QueryRiskTrendMetric:
 
     @property
     def timestamps(self):
-        """Gets the timestamps of this QueryRiskTrendMetric.
+        r"""Gets the timestamps of this QueryRiskTrendMetric.
 
         时间戳
 
@@ -83,7 +83,7 @@ class QueryRiskTrendMetric:
 
     @timestamps.setter
     def timestamps(self, timestamps):
-        """Sets the timestamps of this QueryRiskTrendMetric.
+        r"""Sets the timestamps of this QueryRiskTrendMetric.
 
         时间戳
 

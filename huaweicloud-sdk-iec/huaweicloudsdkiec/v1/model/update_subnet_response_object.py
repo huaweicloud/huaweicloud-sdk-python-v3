@@ -31,7 +31,7 @@ class UpdateSubnetResponseObject:
     }
 
     def __init__(self, id=None, status=None, ipv6_enable=None, neutron_subnet_id_v6=None):
-        """UpdateSubnetResponseObject
+        r"""UpdateSubnetResponseObject
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateSubnetResponseObject:
 
     @property
     def id(self):
-        """Gets the id of this UpdateSubnetResponseObject.
+        r"""Gets the id of this UpdateSubnetResponseObject.
 
         子网ID
 
@@ -75,7 +75,7 @@ class UpdateSubnetResponseObject:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateSubnetResponseObject.
+        r"""Sets the id of this UpdateSubnetResponseObject.
 
         子网ID
 
@@ -86,7 +86,7 @@ class UpdateSubnetResponseObject:
 
     @property
     def status(self):
-        """Gets the status of this UpdateSubnetResponseObject.
+        r"""Gets the status of this UpdateSubnetResponseObject.
 
         子网的状态  取值范围： - ACTIVE：表示子网已挂载到ROUTER上 - UNKNOWN：表示子网还未挂载到ROUTER上 - ERROR：表示子网状态故障
 
@@ -97,7 +97,7 @@ class UpdateSubnetResponseObject:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateSubnetResponseObject.
+        r"""Sets the status of this UpdateSubnetResponseObject.
 
         子网的状态  取值范围： - ACTIVE：表示子网已挂载到ROUTER上 - UNKNOWN：表示子网还未挂载到ROUTER上 - ERROR：表示子网状态故障
 
@@ -108,7 +108,7 @@ class UpdateSubnetResponseObject:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this UpdateSubnetResponseObject.
+        r"""Gets the ipv6_enable of this UpdateSubnetResponseObject.
 
         是否开启IPv6
 
@@ -119,7 +119,7 @@ class UpdateSubnetResponseObject:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this UpdateSubnetResponseObject.
+        r"""Sets the ipv6_enable of this UpdateSubnetResponseObject.
 
         是否开启IPv6
 
@@ -130,7 +130,7 @@ class UpdateSubnetResponseObject:
 
     @property
     def neutron_subnet_id_v6(self):
-        """Gets the neutron_subnet_id_v6 of this UpdateSubnetResponseObject.
+        r"""Gets the neutron_subnet_id_v6 of this UpdateSubnetResponseObject.
 
         对应IPv6子网（OpenStack Neutron接口）id，如果子网为IPv4子网，则不返回此参数。 
 
@@ -141,7 +141,7 @@ class UpdateSubnetResponseObject:
 
     @neutron_subnet_id_v6.setter
     def neutron_subnet_id_v6(self, neutron_subnet_id_v6):
-        """Sets the neutron_subnet_id_v6 of this UpdateSubnetResponseObject.
+        r"""Sets the neutron_subnet_id_v6 of this UpdateSubnetResponseObject.
 
         对应IPv6子网（OpenStack Neutron接口）id，如果子网为IPv4子网，则不返回此参数。 
 

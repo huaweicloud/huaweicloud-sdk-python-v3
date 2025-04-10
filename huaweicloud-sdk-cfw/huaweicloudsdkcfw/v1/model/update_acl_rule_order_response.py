@@ -26,7 +26,7 @@ class UpdateAclRuleOrderResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UpdateAclRuleOrderResponse
+        r"""UpdateAclRuleOrderResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAclRuleOrderResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateAclRuleOrderResponse.
+        r"""Gets the data of this UpdateAclRuleOrderResponse.
 
         :return: The data of this UpdateAclRuleOrderResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.OrderRuleId`
@@ -53,7 +53,7 @@ class UpdateAclRuleOrderResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateAclRuleOrderResponse.
+        r"""Sets the data of this UpdateAclRuleOrderResponse.
 
         :param data: The data of this UpdateAclRuleOrderResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.OrderRuleId`

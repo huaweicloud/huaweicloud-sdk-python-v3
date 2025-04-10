@@ -23,7 +23,7 @@ class OneClickAlarmDescription:
     }
 
     def __init__(self):
-        """OneClickAlarmDescription
+        r"""OneClickAlarmDescription
 
         The model defined in huaweicloud sdk
 

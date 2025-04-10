@@ -39,7 +39,7 @@ class UpdatePasswordPolicyReqBody:
     }
 
     def __init__(self, maximum_consecutive_identical_chars=None, minimum_password_age=None, minimum_password_length=None, password_reuse_prevention=None, password_not_username_or_invert=None, password_validity_period=None, password_char_combination=None, allow_user_to_change_password=None):
-        """UpdatePasswordPolicyReqBody
+        r"""UpdatePasswordPolicyReqBody
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class UpdatePasswordPolicyReqBody:
 
     @property
     def maximum_consecutive_identical_chars(self):
-        """Gets the maximum_consecutive_identical_chars of this UpdatePasswordPolicyReqBody.
+        r"""Gets the maximum_consecutive_identical_chars of this UpdatePasswordPolicyReqBody.
 
         同一字符连续出现的最大次数。
 
@@ -103,7 +103,7 @@ class UpdatePasswordPolicyReqBody:
 
     @maximum_consecutive_identical_chars.setter
     def maximum_consecutive_identical_chars(self, maximum_consecutive_identical_chars):
-        """Sets the maximum_consecutive_identical_chars of this UpdatePasswordPolicyReqBody.
+        r"""Sets the maximum_consecutive_identical_chars of this UpdatePasswordPolicyReqBody.
 
         同一字符连续出现的最大次数。
 
@@ -114,7 +114,7 @@ class UpdatePasswordPolicyReqBody:
 
     @property
     def minimum_password_age(self):
-        """Gets the minimum_password_age of this UpdatePasswordPolicyReqBody.
+        r"""Gets the minimum_password_age of this UpdatePasswordPolicyReqBody.
 
         密码最短使用时间（分钟）。
 
@@ -125,7 +125,7 @@ class UpdatePasswordPolicyReqBody:
 
     @minimum_password_age.setter
     def minimum_password_age(self, minimum_password_age):
-        """Sets the minimum_password_age of this UpdatePasswordPolicyReqBody.
+        r"""Sets the minimum_password_age of this UpdatePasswordPolicyReqBody.
 
         密码最短使用时间（分钟）。
 
@@ -136,7 +136,7 @@ class UpdatePasswordPolicyReqBody:
 
     @property
     def minimum_password_length(self):
-        """Gets the minimum_password_length of this UpdatePasswordPolicyReqBody.
+        r"""Gets the minimum_password_length of this UpdatePasswordPolicyReqBody.
 
         密码最小字符数。
 
@@ -147,7 +147,7 @@ class UpdatePasswordPolicyReqBody:
 
     @minimum_password_length.setter
     def minimum_password_length(self, minimum_password_length):
-        """Sets the minimum_password_length of this UpdatePasswordPolicyReqBody.
+        r"""Sets the minimum_password_length of this UpdatePasswordPolicyReqBody.
 
         密码最小字符数。
 
@@ -158,7 +158,7 @@ class UpdatePasswordPolicyReqBody:
 
     @property
     def password_reuse_prevention(self):
-        """Gets the password_reuse_prevention of this UpdatePasswordPolicyReqBody.
+        r"""Gets the password_reuse_prevention of this UpdatePasswordPolicyReqBody.
 
         密码不能与历史密码重复次数。
 
@@ -169,7 +169,7 @@ class UpdatePasswordPolicyReqBody:
 
     @password_reuse_prevention.setter
     def password_reuse_prevention(self, password_reuse_prevention):
-        """Sets the password_reuse_prevention of this UpdatePasswordPolicyReqBody.
+        r"""Sets the password_reuse_prevention of this UpdatePasswordPolicyReqBody.
 
         密码不能与历史密码重复次数。
 
@@ -180,7 +180,7 @@ class UpdatePasswordPolicyReqBody:
 
     @property
     def password_not_username_or_invert(self):
-        """Gets the password_not_username_or_invert of this UpdatePasswordPolicyReqBody.
+        r"""Gets the password_not_username_or_invert of this UpdatePasswordPolicyReqBody.
 
         密码是否可以是用户名或用户名的反序。
 
@@ -191,7 +191,7 @@ class UpdatePasswordPolicyReqBody:
 
     @password_not_username_or_invert.setter
     def password_not_username_or_invert(self, password_not_username_or_invert):
-        """Sets the password_not_username_or_invert of this UpdatePasswordPolicyReqBody.
+        r"""Sets the password_not_username_or_invert of this UpdatePasswordPolicyReqBody.
 
         密码是否可以是用户名或用户名的反序。
 
@@ -202,7 +202,7 @@ class UpdatePasswordPolicyReqBody:
 
     @property
     def password_validity_period(self):
-        """Gets the password_validity_period of this UpdatePasswordPolicyReqBody.
+        r"""Gets the password_validity_period of this UpdatePasswordPolicyReqBody.
 
         密码有效期（天）。
 
@@ -213,7 +213,7 @@ class UpdatePasswordPolicyReqBody:
 
     @password_validity_period.setter
     def password_validity_period(self, password_validity_period):
-        """Sets the password_validity_period of this UpdatePasswordPolicyReqBody.
+        r"""Sets the password_validity_period of this UpdatePasswordPolicyReqBody.
 
         密码有效期（天）。
 
@@ -224,7 +224,7 @@ class UpdatePasswordPolicyReqBody:
 
     @property
     def password_char_combination(self):
-        """Gets the password_char_combination of this UpdatePasswordPolicyReqBody.
+        r"""Gets the password_char_combination of this UpdatePasswordPolicyReqBody.
 
         至少包含字符种类的个数。
 
@@ -235,7 +235,7 @@ class UpdatePasswordPolicyReqBody:
 
     @password_char_combination.setter
     def password_char_combination(self, password_char_combination):
-        """Sets the password_char_combination of this UpdatePasswordPolicyReqBody.
+        r"""Sets the password_char_combination of this UpdatePasswordPolicyReqBody.
 
         至少包含字符种类的个数。
 
@@ -246,7 +246,7 @@ class UpdatePasswordPolicyReqBody:
 
     @property
     def allow_user_to_change_password(self):
-        """Gets the allow_user_to_change_password of this UpdatePasswordPolicyReqBody.
+        r"""Gets the allow_user_to_change_password of this UpdatePasswordPolicyReqBody.
 
         是否允许IAM用户修改自己的密码，不适用于根用户。
 
@@ -257,7 +257,7 @@ class UpdatePasswordPolicyReqBody:
 
     @allow_user_to_change_password.setter
     def allow_user_to_change_password(self, allow_user_to_change_password):
-        """Sets the allow_user_to_change_password of this UpdatePasswordPolicyReqBody.
+        r"""Sets the allow_user_to_change_password of this UpdatePasswordPolicyReqBody.
 
         是否允许IAM用户修改自己的密码，不适用于根用户。
 

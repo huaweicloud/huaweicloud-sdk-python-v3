@@ -60,7 +60,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, name=None, description=None, enterprise_project_id=None, shared=None, default_instance=None, create_time=None, update_time=None, status=None, resource_progress=None, resource_expected_duration=None, scale_progress=None, scale_expected_duration=None, in_recycle_bin=None, tags=None, specs=None, charge_mode=None, x_request_id=None):
-        """ShowLakeFormationInstanceResponse
+        r"""ShowLakeFormationInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowLakeFormationInstanceResponse.
+        r"""Gets the instance_id of this ShowLakeFormationInstanceResponse.
 
         LakeFormation实例ID。
 
@@ -174,7 +174,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowLakeFormationInstanceResponse.
+        r"""Sets the instance_id of this ShowLakeFormationInstanceResponse.
 
         LakeFormation实例ID。
 
@@ -185,7 +185,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowLakeFormationInstanceResponse.
+        r"""Gets the name of this ShowLakeFormationInstanceResponse.
 
         实例名称。
 
@@ -196,7 +196,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowLakeFormationInstanceResponse.
+        r"""Sets the name of this ShowLakeFormationInstanceResponse.
 
         实例名称。
 
@@ -207,7 +207,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowLakeFormationInstanceResponse.
+        r"""Gets the description of this ShowLakeFormationInstanceResponse.
 
         描述。
 
@@ -218,7 +218,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowLakeFormationInstanceResponse.
+        r"""Sets the description of this ShowLakeFormationInstanceResponse.
 
         描述。
 
@@ -229,7 +229,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowLakeFormationInstanceResponse.
+        r"""Gets the enterprise_project_id of this ShowLakeFormationInstanceResponse.
 
         企业项目ID。
 
@@ -240,7 +240,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowLakeFormationInstanceResponse.
+        r"""Sets the enterprise_project_id of this ShowLakeFormationInstanceResponse.
 
         企业项目ID。
 
@@ -251,7 +251,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def shared(self):
-        """Gets the shared of this ShowLakeFormationInstanceResponse.
+        r"""Gets the shared of this ShowLakeFormationInstanceResponse.
 
         逻辑多租和物理多租的判断。false为物理多租；true为逻辑多租。
 
@@ -262,7 +262,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @shared.setter
     def shared(self, shared):
-        """Sets the shared of this ShowLakeFormationInstanceResponse.
+        r"""Sets the shared of this ShowLakeFormationInstanceResponse.
 
         逻辑多租和物理多租的判断。false为物理多租；true为逻辑多租。
 
@@ -273,7 +273,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def default_instance(self):
-        """Gets the default_instance of this ShowLakeFormationInstanceResponse.
+        r"""Gets the default_instance of this ShowLakeFormationInstanceResponse.
 
         是否为默认实例
 
@@ -284,7 +284,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @default_instance.setter
     def default_instance(self, default_instance):
-        """Sets the default_instance of this ShowLakeFormationInstanceResponse.
+        r"""Sets the default_instance of this ShowLakeFormationInstanceResponse.
 
         是否为默认实例
 
@@ -295,7 +295,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowLakeFormationInstanceResponse.
+        r"""Gets the create_time of this ShowLakeFormationInstanceResponse.
 
         实例创建时间戳
 
@@ -306,7 +306,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowLakeFormationInstanceResponse.
+        r"""Sets the create_time of this ShowLakeFormationInstanceResponse.
 
         实例创建时间戳
 
@@ -317,7 +317,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowLakeFormationInstanceResponse.
+        r"""Gets the update_time of this ShowLakeFormationInstanceResponse.
 
         实例更新时间戳
 
@@ -328,7 +328,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowLakeFormationInstanceResponse.
+        r"""Sets the update_time of this ShowLakeFormationInstanceResponse.
 
         实例更新时间戳
 
@@ -339,7 +339,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowLakeFormationInstanceResponse.
+        r"""Gets the status of this ShowLakeFormationInstanceResponse.
 
         实例状态,RESOURCE_PREPARATION-实例资源准备中,RUNNING-实例运行中,RESOURCE_RELEASE-实例资源释放中,DELETED-实例已释放,RESOURCE_PREPARATION_FAIL-实例资源准备失败,FROZEN_RELEASABLE-可恢复冻结,FROZEN_UNRELEASABLE-不可恢复冻结,RECOVERING-恢复中,DELETING-删除中,SCALING-扩容中,SCALE_FAIL-扩容失败
 
@@ -350,7 +350,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowLakeFormationInstanceResponse.
+        r"""Sets the status of this ShowLakeFormationInstanceResponse.
 
         实例状态,RESOURCE_PREPARATION-实例资源准备中,RUNNING-实例运行中,RESOURCE_RELEASE-实例资源释放中,DELETED-实例已释放,RESOURCE_PREPARATION_FAIL-实例资源准备失败,FROZEN_RELEASABLE-可恢复冻结,FROZEN_UNRELEASABLE-不可恢复冻结,RECOVERING-恢复中,DELETING-删除中,SCALING-扩容中,SCALE_FAIL-扩容失败
 
@@ -361,7 +361,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def resource_progress(self):
-        """Gets the resource_progress of this ShowLakeFormationInstanceResponse.
+        r"""Gets the resource_progress of this ShowLakeFormationInstanceResponse.
 
         资源准备进度百分比，只有当实例处于资源准备中状态时才会计算并返回该值
 
@@ -372,7 +372,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @resource_progress.setter
     def resource_progress(self, resource_progress):
-        """Sets the resource_progress of this ShowLakeFormationInstanceResponse.
+        r"""Sets the resource_progress of this ShowLakeFormationInstanceResponse.
 
         资源准备进度百分比，只有当实例处于资源准备中状态时才会计算并返回该值
 
@@ -383,7 +383,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def resource_expected_duration(self):
-        """Gets the resource_expected_duration of this ShowLakeFormationInstanceResponse.
+        r"""Gets the resource_expected_duration of this ShowLakeFormationInstanceResponse.
 
         资源准备预计时长，单位分钟
 
@@ -394,7 +394,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @resource_expected_duration.setter
     def resource_expected_duration(self, resource_expected_duration):
-        """Sets the resource_expected_duration of this ShowLakeFormationInstanceResponse.
+        r"""Sets the resource_expected_duration of this ShowLakeFormationInstanceResponse.
 
         资源准备预计时长，单位分钟
 
@@ -405,7 +405,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def scale_progress(self):
-        """Gets the scale_progress of this ShowLakeFormationInstanceResponse.
+        r"""Gets the scale_progress of this ShowLakeFormationInstanceResponse.
 
         规格变更进度百分比，只有当实例处于规格变更中状态时才会计算并返回该值
 
@@ -416,7 +416,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @scale_progress.setter
     def scale_progress(self, scale_progress):
-        """Sets the scale_progress of this ShowLakeFormationInstanceResponse.
+        r"""Sets the scale_progress of this ShowLakeFormationInstanceResponse.
 
         规格变更进度百分比，只有当实例处于规格变更中状态时才会计算并返回该值
 
@@ -427,7 +427,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def scale_expected_duration(self):
-        """Gets the scale_expected_duration of this ShowLakeFormationInstanceResponse.
+        r"""Gets the scale_expected_duration of this ShowLakeFormationInstanceResponse.
 
         规格变更预计时长，单位分钟
 
@@ -438,7 +438,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @scale_expected_duration.setter
     def scale_expected_duration(self, scale_expected_duration):
-        """Sets the scale_expected_duration of this ShowLakeFormationInstanceResponse.
+        r"""Sets the scale_expected_duration of this ShowLakeFormationInstanceResponse.
 
         规格变更预计时长，单位分钟
 
@@ -449,7 +449,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def in_recycle_bin(self):
-        """Gets the in_recycle_bin of this ShowLakeFormationInstanceResponse.
+        r"""Gets the in_recycle_bin of this ShowLakeFormationInstanceResponse.
 
         是否在回收站
 
@@ -460,7 +460,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @in_recycle_bin.setter
     def in_recycle_bin(self, in_recycle_bin):
-        """Sets the in_recycle_bin of this ShowLakeFormationInstanceResponse.
+        r"""Sets the in_recycle_bin of this ShowLakeFormationInstanceResponse.
 
         是否在回收站
 
@@ -471,7 +471,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowLakeFormationInstanceResponse.
+        r"""Gets the tags of this ShowLakeFormationInstanceResponse.
 
         标签列表
 
@@ -482,7 +482,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowLakeFormationInstanceResponse.
+        r"""Sets the tags of this ShowLakeFormationInstanceResponse.
 
         标签列表
 
@@ -493,7 +493,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def specs(self):
-        """Gets the specs of this ShowLakeFormationInstanceResponse.
+        r"""Gets the specs of this ShowLakeFormationInstanceResponse.
 
         规格信息
 
@@ -504,7 +504,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @specs.setter
     def specs(self, specs):
-        """Sets the specs of this ShowLakeFormationInstanceResponse.
+        r"""Sets the specs of this ShowLakeFormationInstanceResponse.
 
         规格信息
 
@@ -515,7 +515,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ShowLakeFormationInstanceResponse.
+        r"""Gets the charge_mode of this ShowLakeFormationInstanceResponse.
 
         计费模式,postPaid=按需计费,prePaid=包周期计费
 
@@ -526,7 +526,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ShowLakeFormationInstanceResponse.
+        r"""Sets the charge_mode of this ShowLakeFormationInstanceResponse.
 
         计费模式,postPaid=按需计费,prePaid=包周期计费
 
@@ -537,7 +537,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowLakeFormationInstanceResponse.
+        r"""Gets the x_request_id of this ShowLakeFormationInstanceResponse.
 
         :return: The x_request_id of this ShowLakeFormationInstanceResponse.
         :rtype: str
@@ -546,7 +546,7 @@ class ShowLakeFormationInstanceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowLakeFormationInstanceResponse.
+        r"""Sets the x_request_id of this ShowLakeFormationInstanceResponse.
 
         :param x_request_id: The x_request_id of this ShowLakeFormationInstanceResponse.
         :type x_request_id: str

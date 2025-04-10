@@ -39,7 +39,7 @@ class UserEx:
     }
 
     def __init__(self, description=None, user_name=None, is_root_user=None, created_at=None, user_id=None, urn=None, enabled=None, tags=None):
-        """UserEx
+        r"""UserEx
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class UserEx:
 
     @property
     def description(self):
-        """Gets the description of this UserEx.
+        r"""Gets the description of this UserEx.
 
         IAM用户描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -96,7 +96,7 @@ class UserEx:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UserEx.
+        r"""Sets the description of this UserEx.
 
         IAM用户描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -107,7 +107,7 @@ class UserEx:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UserEx.
+        r"""Gets the user_name of this UserEx.
 
         IAM用户名，长度为1到64个字符，只包含字母、数字、\"_\"、\"-\"、\".\"和空格的字符串，且首位不能为数字。
 
@@ -118,7 +118,7 @@ class UserEx:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UserEx.
+        r"""Sets the user_name of this UserEx.
 
         IAM用户名，长度为1到64个字符，只包含字母、数字、\"_\"、\"-\"、\".\"和空格的字符串，且首位不能为数字。
 
@@ -129,7 +129,7 @@ class UserEx:
 
     @property
     def is_root_user(self):
-        """Gets the is_root_user of this UserEx.
+        r"""Gets the is_root_user of this UserEx.
 
         IAM用户是否为根用户。
 
@@ -140,7 +140,7 @@ class UserEx:
 
     @is_root_user.setter
     def is_root_user(self, is_root_user):
-        """Sets the is_root_user of this UserEx.
+        r"""Sets the is_root_user of this UserEx.
 
         IAM用户是否为根用户。
 
@@ -151,7 +151,7 @@ class UserEx:
 
     @property
     def created_at(self):
-        """Gets the created_at of this UserEx.
+        r"""Gets the created_at of this UserEx.
 
         IAM用户创建时间。
 
@@ -162,7 +162,7 @@ class UserEx:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UserEx.
+        r"""Sets the created_at of this UserEx.
 
         IAM用户创建时间。
 
@@ -173,7 +173,7 @@ class UserEx:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UserEx.
+        r"""Gets the user_id of this UserEx.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -184,7 +184,7 @@ class UserEx:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UserEx.
+        r"""Sets the user_id of this UserEx.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -195,7 +195,7 @@ class UserEx:
 
     @property
     def urn(self):
-        """Gets the urn of this UserEx.
+        r"""Gets the urn of this UserEx.
 
         统一资源名称。
 
@@ -206,7 +206,7 @@ class UserEx:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this UserEx.
+        r"""Sets the urn of this UserEx.
 
         统一资源名称。
 
@@ -217,7 +217,7 @@ class UserEx:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UserEx.
+        r"""Gets the enabled of this UserEx.
 
         IAM用户是否启用。
 
@@ -228,7 +228,7 @@ class UserEx:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UserEx.
+        r"""Sets the enabled of this UserEx.
 
         IAM用户是否启用。
 
@@ -239,7 +239,7 @@ class UserEx:
 
     @property
     def tags(self):
-        """Gets the tags of this UserEx.
+        r"""Gets the tags of this UserEx.
 
         自定义标签列表。
 
@@ -250,7 +250,7 @@ class UserEx:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UserEx.
+        r"""Sets the tags of this UserEx.
 
         自定义标签列表。
 

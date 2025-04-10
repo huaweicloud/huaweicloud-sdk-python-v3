@@ -35,7 +35,7 @@ class VideoModerationVideoDetail:
     }
 
     def __init__(self, suggestion=None, label=None, audio_text=None, end_time=None, start_time=None, detail=None):
-        """VideoModerationVideoDetail
+        r"""VideoModerationVideoDetail
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class VideoModerationVideoDetail:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this VideoModerationVideoDetail.
+        r"""Gets the suggestion of this VideoModerationVideoDetail.
 
         音频片段审核结果是否通过。 block：包含敏感信息，不通过  review：需要人工复检
 
@@ -89,7 +89,7 @@ class VideoModerationVideoDetail:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this VideoModerationVideoDetail.
+        r"""Sets the suggestion of this VideoModerationVideoDetail.
 
         音频片段审核结果是否通过。 block：包含敏感信息，不通过  review：需要人工复检
 
@@ -100,7 +100,7 @@ class VideoModerationVideoDetail:
 
     @property
     def label(self):
-        """Gets the label of this VideoModerationVideoDetail.
+        r"""Gets the label of this VideoModerationVideoDetail.
 
         音频片段检测标签，选取detail中置信度最大的标签，可取值如下： politics: 涉政  terrorism: 暴恐  porn: 色情  ad: 广告 ad_law: 广告法 abuse: 辱骂 ban: 违禁 meaningless: 无意义 moan: 娇喘
 
@@ -111,7 +111,7 @@ class VideoModerationVideoDetail:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this VideoModerationVideoDetail.
+        r"""Sets the label of this VideoModerationVideoDetail.
 
         音频片段检测标签，选取detail中置信度最大的标签，可取值如下： politics: 涉政  terrorism: 暴恐  porn: 色情  ad: 广告 ad_law: 广告法 abuse: 辱骂 ban: 违禁 meaningless: 无意义 moan: 娇喘
 
@@ -122,7 +122,7 @@ class VideoModerationVideoDetail:
 
     @property
     def audio_text(self):
-        """Gets the audio_text of this VideoModerationVideoDetail.
+        r"""Gets the audio_text of this VideoModerationVideoDetail.
 
         音频片段文本内容
 
@@ -133,7 +133,7 @@ class VideoModerationVideoDetail:
 
     @audio_text.setter
     def audio_text(self, audio_text):
-        """Sets the audio_text of this VideoModerationVideoDetail.
+        r"""Sets the audio_text of this VideoModerationVideoDetail.
 
         音频片段文本内容
 
@@ -144,7 +144,7 @@ class VideoModerationVideoDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this VideoModerationVideoDetail.
+        r"""Gets the end_time of this VideoModerationVideoDetail.
 
         音频片段结束时间
 
@@ -155,7 +155,7 @@ class VideoModerationVideoDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this VideoModerationVideoDetail.
+        r"""Sets the end_time of this VideoModerationVideoDetail.
 
         音频片段结束时间
 
@@ -166,7 +166,7 @@ class VideoModerationVideoDetail:
 
     @property
     def start_time(self):
-        """Gets the start_time of this VideoModerationVideoDetail.
+        r"""Gets the start_time of this VideoModerationVideoDetail.
 
         音频片段开始时间
 
@@ -177,7 +177,7 @@ class VideoModerationVideoDetail:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this VideoModerationVideoDetail.
+        r"""Sets the start_time of this VideoModerationVideoDetail.
 
         音频片段开始时间
 
@@ -188,7 +188,7 @@ class VideoModerationVideoDetail:
 
     @property
     def detail(self):
-        """Gets the detail of this VideoModerationVideoDetail.
+        r"""Gets the detail of this VideoModerationVideoDetail.
 
         音频片段审核详情
 
@@ -199,7 +199,7 @@ class VideoModerationVideoDetail:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this VideoModerationVideoDetail.
+        r"""Sets the detail of this VideoModerationVideoDetail.
 
         音频片段审核详情
 

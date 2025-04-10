@@ -27,7 +27,7 @@ class BindRulesTags:
     }
 
     def __init__(self, key=None, value=None):
-        """BindRulesTags
+        r"""BindRulesTags
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BindRulesTags:
 
     @property
     def key(self):
-        """Gets the key of this BindRulesTags.
+        r"""Gets the key of this BindRulesTags.
 
         key不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\\\”,“,”,“|”,“/”。 [key只能由中文，字母，数字，“-”，“_”组成。](tag:hws,hws_hk,fcs_vm,ctc)   [key只能由字母，数字，“_”，“-”组成。](tag:dt,ocb,tlf,sbc,g42,hcso_dt)
 
@@ -59,7 +59,7 @@ class BindRulesTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this BindRulesTags.
+        r"""Sets the key of this BindRulesTags.
 
         key不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\\\”,“,”,“|”,“/”。 [key只能由中文，字母，数字，“-”，“_”组成。](tag:hws,hws_hk,fcs_vm,ctc)   [key只能由字母，数字，“_”，“-”组成。](tag:dt,ocb,tlf,sbc,g42,hcso_dt)
 
@@ -70,7 +70,7 @@ class BindRulesTags:
 
     @property
     def value(self):
-        """Gets the value of this BindRulesTags.
+        r"""Gets the value of this BindRulesTags.
 
         value不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。  [value只能由中文，字母，数字，“-”，“_”，“.”组成。](tag:hws,hws_hk,fcs_vm,ctc) [value只能由字母，数字，“_”，“-”组成。](tag:dt,ocb,tlf,sbc,g42,hcso_dt)
 
@@ -81,7 +81,7 @@ class BindRulesTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this BindRulesTags.
+        r"""Sets the value of this BindRulesTags.
 
         value不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。  [value只能由中文，字母，数字，“-”，“_”，“.”组成。](tag:hws,hws_hk,fcs_vm,ctc) [value只能由字母，数字，“_”，“-”组成。](tag:dt,ocb,tlf,sbc,g42,hcso_dt)
 

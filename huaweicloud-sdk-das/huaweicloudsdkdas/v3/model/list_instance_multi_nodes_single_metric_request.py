@@ -27,7 +27,7 @@ class ListInstanceMultiNodesSingleMetricRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListInstanceMultiNodesSingleMetricRequest
+        r"""ListInstanceMultiNodesSingleMetricRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListInstanceMultiNodesSingleMetricRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListInstanceMultiNodesSingleMetricRequest.
+        r"""Gets the x_language of this ListInstanceMultiNodesSingleMetricRequest.
 
         语言
 
@@ -61,7 +61,7 @@ class ListInstanceMultiNodesSingleMetricRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListInstanceMultiNodesSingleMetricRequest.
+        r"""Sets the x_language of this ListInstanceMultiNodesSingleMetricRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class ListInstanceMultiNodesSingleMetricRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListInstanceMultiNodesSingleMetricRequest.
+        r"""Gets the body of this ListInstanceMultiNodesSingleMetricRequest.
 
         :return: The body of this ListInstanceMultiNodesSingleMetricRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.ListInstanceMultiNodesSingleMetric`
@@ -81,7 +81,7 @@ class ListInstanceMultiNodesSingleMetricRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListInstanceMultiNodesSingleMetricRequest.
+        r"""Sets the body of this ListInstanceMultiNodesSingleMetricRequest.
 
         :param body: The body of this ListInstanceMultiNodesSingleMetricRequest.
         :type body: :class:`huaweicloudsdkdas.v3.ListInstanceMultiNodesSingleMetric`

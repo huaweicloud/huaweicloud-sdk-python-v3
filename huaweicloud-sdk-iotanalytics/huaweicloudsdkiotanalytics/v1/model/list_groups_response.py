@@ -28,7 +28,7 @@ class ListGroupsResponse(SdkResponse):
     }
 
     def __init__(self, groups=None, count=None):
-        """ListGroupsResponse
+        r"""ListGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListGroupsResponse(SdkResponse):
 
     @property
     def groups(self):
-        """Gets the groups of this ListGroupsResponse.
+        r"""Gets the groups of this ListGroupsResponse.
 
         存储组列表
 
@@ -62,7 +62,7 @@ class ListGroupsResponse(SdkResponse):
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this ListGroupsResponse.
+        r"""Sets the groups of this ListGroupsResponse.
 
         存储组列表
 
@@ -73,7 +73,7 @@ class ListGroupsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListGroupsResponse.
+        r"""Gets the count of this ListGroupsResponse.
 
         返回的 data-store-group 数量
 
@@ -84,7 +84,7 @@ class ListGroupsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListGroupsResponse.
+        r"""Sets the count of this ListGroupsResponse.
 
         返回的 data-store-group 数量
 

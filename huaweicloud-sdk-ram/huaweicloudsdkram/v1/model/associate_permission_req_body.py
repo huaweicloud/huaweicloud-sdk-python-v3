@@ -27,7 +27,7 @@ class AssociatePermissionReqBody:
     }
 
     def __init__(self, replace=None, permission_id=None):
-        """AssociatePermissionReqBody
+        r"""AssociatePermissionReqBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociatePermissionReqBody:
 
     @property
     def replace(self):
-        """Gets the replace of this AssociatePermissionReqBody.
+        r"""Gets the replace of this AssociatePermissionReqBody.
 
         指定特定的权限替换或绑定到与资源共享实例关联的现有资源类型。设置为\"true\"可将相同的资源类型的权限替换为当前权限。设置为\"false\"将权限绑定到当前资源类型。默认值为\"false\"。资源共享实例中的每个资源类型只能绑定一个权限。如果资源共享实例中已具有指定资源类型的权限，并且将\"replace\"设置为\"false\"，则操作返回错误。这有助于防止意外覆盖权限。
 
@@ -60,7 +60,7 @@ class AssociatePermissionReqBody:
 
     @replace.setter
     def replace(self, replace):
-        """Sets the replace of this AssociatePermissionReqBody.
+        r"""Sets the replace of this AssociatePermissionReqBody.
 
         指定特定的权限替换或绑定到与资源共享实例关联的现有资源类型。设置为\"true\"可将相同的资源类型的权限替换为当前权限。设置为\"false\"将权限绑定到当前资源类型。默认值为\"false\"。资源共享实例中的每个资源类型只能绑定一个权限。如果资源共享实例中已具有指定资源类型的权限，并且将\"replace\"设置为\"false\"，则操作返回错误。这有助于防止意外覆盖权限。
 
@@ -71,7 +71,7 @@ class AssociatePermissionReqBody:
 
     @property
     def permission_id(self):
-        """Gets the permission_id of this AssociatePermissionReqBody.
+        r"""Gets the permission_id of this AssociatePermissionReqBody.
 
         共享资源权限的ID。
 
@@ -82,7 +82,7 @@ class AssociatePermissionReqBody:
 
     @permission_id.setter
     def permission_id(self, permission_id):
-        """Sets the permission_id of this AssociatePermissionReqBody.
+        r"""Sets the permission_id of this AssociatePermissionReqBody.
 
         共享资源权限的ID。
 

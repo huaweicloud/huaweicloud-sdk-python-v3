@@ -29,7 +29,7 @@ class DiffDetails:
     }
 
     def __init__(self, parameter_name=None, source_value=None, target_value=None):
-        """DiffDetails
+        r"""DiffDetails
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DiffDetails:
 
     @property
     def parameter_name(self):
-        """Gets the parameter_name of this DiffDetails.
+        r"""Gets the parameter_name of this DiffDetails.
 
         参数名称
 
@@ -65,7 +65,7 @@ class DiffDetails:
 
     @parameter_name.setter
     def parameter_name(self, parameter_name):
-        """Sets the parameter_name of this DiffDetails.
+        r"""Sets the parameter_name of this DiffDetails.
 
         参数名称
 
@@ -76,7 +76,7 @@ class DiffDetails:
 
     @property
     def source_value(self):
-        """Gets the source_value of this DiffDetails.
+        r"""Gets the source_value of this DiffDetails.
 
         比较参数模板的参数值。
 
@@ -87,7 +87,7 @@ class DiffDetails:
 
     @source_value.setter
     def source_value(self, source_value):
-        """Sets the source_value of this DiffDetails.
+        r"""Sets the source_value of this DiffDetails.
 
         比较参数模板的参数值。
 
@@ -98,7 +98,7 @@ class DiffDetails:
 
     @property
     def target_value(self):
-        """Gets the target_value of this DiffDetails.
+        r"""Gets the target_value of this DiffDetails.
 
         目标参数模板的参数值。
 
@@ -109,7 +109,7 @@ class DiffDetails:
 
     @target_value.setter
     def target_value(self, target_value):
-        """Sets the target_value of this DiffDetails.
+        r"""Sets the target_value of this DiffDetails.
 
         目标参数模板的参数值。
 

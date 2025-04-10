@@ -27,7 +27,7 @@ class ExecuteUnblockIpRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """ExecuteUnblockIpRequest
+        r"""ExecuteUnblockIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteUnblockIpRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ExecuteUnblockIpRequest.
+        r"""Gets the domain_id of this ExecuteUnblockIpRequest.
 
         租户id
 
@@ -60,7 +60,7 @@ class ExecuteUnblockIpRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ExecuteUnblockIpRequest.
+        r"""Sets the domain_id of this ExecuteUnblockIpRequest.
 
         租户id
 
@@ -71,7 +71,7 @@ class ExecuteUnblockIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteUnblockIpRequest.
+        r"""Gets the body of this ExecuteUnblockIpRequest.
 
         :return: The body of this ExecuteUnblockIpRequest.
         :rtype: :class:`huaweicloudsdkaad.v1.ExecuteUnblockIpRequestBody`
@@ -80,7 +80,7 @@ class ExecuteUnblockIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteUnblockIpRequest.
+        r"""Sets the body of this ExecuteUnblockIpRequest.
 
         :param body: The body of this ExecuteUnblockIpRequest.
         :type body: :class:`huaweicloudsdkaad.v1.ExecuteUnblockIpRequestBody`

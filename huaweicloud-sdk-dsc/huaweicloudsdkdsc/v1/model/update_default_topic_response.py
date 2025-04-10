@@ -28,7 +28,7 @@ class UpdateDefaultTopicResponse(SdkResponse):
     }
 
     def __init__(self, msg=None, status=None):
-        """UpdateDefaultTopicResponse
+        r"""UpdateDefaultTopicResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateDefaultTopicResponse(SdkResponse):
 
     @property
     def msg(self):
-        """Gets the msg of this UpdateDefaultTopicResponse.
+        r"""Gets the msg of this UpdateDefaultTopicResponse.
 
         返回消息
 
@@ -62,7 +62,7 @@ class UpdateDefaultTopicResponse(SdkResponse):
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this UpdateDefaultTopicResponse.
+        r"""Sets the msg of this UpdateDefaultTopicResponse.
 
         返回消息
 
@@ -73,7 +73,7 @@ class UpdateDefaultTopicResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateDefaultTopicResponse.
+        r"""Gets the status of this UpdateDefaultTopicResponse.
 
         返回状态，如'200','400'
 
@@ -84,7 +84,7 @@ class UpdateDefaultTopicResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateDefaultTopicResponse.
+        r"""Sets the status of this UpdateDefaultTopicResponse.
 
         返回状态，如'200','400'
 

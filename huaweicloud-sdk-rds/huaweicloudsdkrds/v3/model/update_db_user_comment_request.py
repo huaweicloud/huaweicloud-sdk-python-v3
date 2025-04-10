@@ -29,7 +29,7 @@ class UpdateDbUserCommentRequest:
     }
 
     def __init__(self, instance_id=None, user_name=None, body=None):
-        """UpdateDbUserCommentRequest
+        r"""UpdateDbUserCommentRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDbUserCommentRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDbUserCommentRequest.
+        r"""Gets the instance_id of this UpdateDbUserCommentRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class UpdateDbUserCommentRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDbUserCommentRequest.
+        r"""Sets the instance_id of this UpdateDbUserCommentRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class UpdateDbUserCommentRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UpdateDbUserCommentRequest.
+        r"""Gets the user_name of this UpdateDbUserCommentRequest.
 
         数据库用户名。
 
@@ -88,7 +88,7 @@ class UpdateDbUserCommentRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UpdateDbUserCommentRequest.
+        r"""Sets the user_name of this UpdateDbUserCommentRequest.
 
         数据库用户名。
 
@@ -99,7 +99,7 @@ class UpdateDbUserCommentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDbUserCommentRequest.
+        r"""Gets the body of this UpdateDbUserCommentRequest.
 
         :return: The body of this UpdateDbUserCommentRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateDbUserReq`
@@ -108,7 +108,7 @@ class UpdateDbUserCommentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDbUserCommentRequest.
+        r"""Sets the body of this UpdateDbUserCommentRequest.
 
         :param body: The body of this UpdateDbUserCommentRequest.
         :type body: :class:`huaweicloudsdkrds.v3.UpdateDbUserReq`

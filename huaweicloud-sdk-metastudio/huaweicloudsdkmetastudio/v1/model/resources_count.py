@@ -31,7 +31,7 @@ class ResourcesCount:
     }
 
     def __init__(self, business_type=None, count=None, charging_mode=None, resource_source=None):
-        """ResourcesCount
+        r"""ResourcesCount
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ResourcesCount:
 
     @property
     def business_type(self):
-        """Gets the business_type of this ResourcesCount.
+        r"""Gets the business_type of this ResourcesCount.
 
         业务类型。
 
@@ -75,7 +75,7 @@ class ResourcesCount:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this ResourcesCount.
+        r"""Sets the business_type of this ResourcesCount.
 
         业务类型。
 
@@ -86,7 +86,7 @@ class ResourcesCount:
 
     @property
     def count(self):
-        """Gets the count of this ResourcesCount.
+        r"""Gets the count of this ResourcesCount.
 
         资源总数。
 
@@ -97,7 +97,7 @@ class ResourcesCount:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ResourcesCount.
+        r"""Sets the count of this ResourcesCount.
 
         资源总数。
 
@@ -108,7 +108,7 @@ class ResourcesCount:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ResourcesCount.
+        r"""Gets the charging_mode of this ResourcesCount.
 
         计费类型。 * PERIODIC: 包周期 * ONE_TIME：一次性 * ON_DEMAND：按需
 
@@ -119,7 +119,7 @@ class ResourcesCount:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ResourcesCount.
+        r"""Sets the charging_mode of this ResourcesCount.
 
         计费类型。 * PERIODIC: 包周期 * ONE_TIME：一次性 * ON_DEMAND：按需
 
@@ -130,7 +130,7 @@ class ResourcesCount:
 
     @property
     def resource_source(self):
-        """Gets the resource_source of this ResourcesCount.
+        r"""Gets the resource_source of this ResourcesCount.
 
         资源来源。 * PURCHASED: 购买 * SP_ALLOCATED：SP分配 * ADMIN_ALLOCATED：系统管理员分配
 
@@ -141,7 +141,7 @@ class ResourcesCount:
 
     @resource_source.setter
     def resource_source(self, resource_source):
-        """Sets the resource_source of this ResourcesCount.
+        r"""Sets the resource_source of this ResourcesCount.
 
         资源来源。 * PURCHASED: 购买 * SP_ALLOCATED：SP分配 * ADMIN_ALLOCATED：系统管理员分配
 

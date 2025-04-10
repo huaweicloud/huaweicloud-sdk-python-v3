@@ -33,7 +33,7 @@ class CustomBaselineRule:
     }
 
     def __init__(self, id=None, rule_name=None, product=None, compliance_level=None, patch_items=None):
-        """CustomBaselineRule
+        r"""CustomBaselineRule
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CustomBaselineRule:
 
     @property
     def id(self):
-        """Gets the id of this CustomBaselineRule.
+        r"""Gets the id of this CustomBaselineRule.
 
         id
 
@@ -80,7 +80,7 @@ class CustomBaselineRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CustomBaselineRule.
+        r"""Sets the id of this CustomBaselineRule.
 
         id
 
@@ -91,7 +91,7 @@ class CustomBaselineRule:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this CustomBaselineRule.
+        r"""Gets the rule_name of this CustomBaselineRule.
 
         规则名称
 
@@ -102,7 +102,7 @@ class CustomBaselineRule:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this CustomBaselineRule.
+        r"""Sets the rule_name of this CustomBaselineRule.
 
         规则名称
 
@@ -113,7 +113,7 @@ class CustomBaselineRule:
 
     @property
     def product(self):
-        """Gets the product of this CustomBaselineRule.
+        r"""Gets the product of this CustomBaselineRule.
 
         产品
 
@@ -124,7 +124,7 @@ class CustomBaselineRule:
 
     @product.setter
     def product(self, product):
-        """Sets the product of this CustomBaselineRule.
+        r"""Sets the product of this CustomBaselineRule.
 
         产品
 
@@ -135,7 +135,7 @@ class CustomBaselineRule:
 
     @property
     def compliance_level(self):
-        """Gets the compliance_level of this CustomBaselineRule.
+        r"""Gets the compliance_level of this CustomBaselineRule.
 
         合规性报告等级
 
@@ -146,7 +146,7 @@ class CustomBaselineRule:
 
     @compliance_level.setter
     def compliance_level(self, compliance_level):
-        """Sets the compliance_level of this CustomBaselineRule.
+        r"""Sets the compliance_level of this CustomBaselineRule.
 
         合规性报告等级
 
@@ -157,7 +157,7 @@ class CustomBaselineRule:
 
     @property
     def patch_items(self):
-        """Gets the patch_items of this CustomBaselineRule.
+        r"""Gets the patch_items of this CustomBaselineRule.
 
         基线补丁信息
 
@@ -168,7 +168,7 @@ class CustomBaselineRule:
 
     @patch_items.setter
     def patch_items(self, patch_items):
-        """Sets the patch_items of this CustomBaselineRule.
+        r"""Sets the patch_items of this CustomBaselineRule.
 
         基线补丁信息
 

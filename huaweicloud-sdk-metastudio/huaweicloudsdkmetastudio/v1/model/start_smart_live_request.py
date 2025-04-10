@@ -29,7 +29,7 @@ class StartSmartLiveRequest:
     }
 
     def __init__(self, room_id=None, x_app_user_id=None, body=None):
-        """StartSmartLiveRequest
+        r"""StartSmartLiveRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class StartSmartLiveRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this StartSmartLiveRequest.
+        r"""Gets the room_id of this StartSmartLiveRequest.
 
         直播间ID。
 
@@ -67,7 +67,7 @@ class StartSmartLiveRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this StartSmartLiveRequest.
+        r"""Sets the room_id of this StartSmartLiveRequest.
 
         直播间ID。
 
@@ -78,7 +78,7 @@ class StartSmartLiveRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this StartSmartLiveRequest.
+        r"""Gets the x_app_user_id of this StartSmartLiveRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -89,7 +89,7 @@ class StartSmartLiveRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this StartSmartLiveRequest.
+        r"""Sets the x_app_user_id of this StartSmartLiveRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -100,7 +100,7 @@ class StartSmartLiveRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartSmartLiveRequest.
+        r"""Gets the body of this StartSmartLiveRequest.
 
         :return: The body of this StartSmartLiveRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.StartSmartLiveReq`
@@ -109,7 +109,7 @@ class StartSmartLiveRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartSmartLiveRequest.
+        r"""Sets the body of this StartSmartLiveRequest.
 
         :param body: The body of this StartSmartLiveRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.StartSmartLiveReq`

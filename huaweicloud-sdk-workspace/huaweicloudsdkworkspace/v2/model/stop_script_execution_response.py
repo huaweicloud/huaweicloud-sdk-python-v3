@@ -24,7 +24,7 @@ class StopScriptExecutionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StopScriptExecutionResponse
+        r"""StopScriptExecutionResponse
 
         The model defined in huaweicloud sdk
 

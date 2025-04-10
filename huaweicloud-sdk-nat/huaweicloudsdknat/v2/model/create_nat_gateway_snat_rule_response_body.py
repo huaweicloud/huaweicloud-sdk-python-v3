@@ -51,7 +51,7 @@ class CreateNatGatewaySnatRuleResponseBody:
     }
 
     def __init__(self, id=None, tenant_id=None, nat_gateway_id=None, cidr=None, source_type=None, floating_ip_id=None, description=None, status=None, created_at=None, network_id=None, admin_state_up=None, floating_ip_address=None, global_eip_id=None, global_eip_address=None):
-        """CreateNatGatewaySnatRuleResponseBody
+        r"""CreateNatGatewaySnatRuleResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Gets the id of this CreateNatGatewaySnatRuleResponseBody.
 
         SNAT规则的ID。
 
@@ -131,7 +131,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Sets the id of this CreateNatGatewaySnatRuleResponseBody.
 
         SNAT规则的ID。
 
@@ -142,7 +142,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Gets the tenant_id of this CreateNatGatewaySnatRuleResponseBody.
 
         项目的ID。
 
@@ -153,7 +153,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Sets the tenant_id of this CreateNatGatewaySnatRuleResponseBody.
 
         项目的ID。
 
@@ -164,7 +164,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @property
     def nat_gateway_id(self):
-        """Gets the nat_gateway_id of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Gets the nat_gateway_id of this CreateNatGatewaySnatRuleResponseBody.
 
         公网NAT网关实例的ID。
 
@@ -175,7 +175,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @nat_gateway_id.setter
     def nat_gateway_id(self, nat_gateway_id):
-        """Sets the nat_gateway_id of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Sets the nat_gateway_id of this CreateNatGatewaySnatRuleResponseBody.
 
         公网NAT网关实例的ID。
 
@@ -186,7 +186,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @property
     def cidr(self):
-        """Gets the cidr of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Gets the cidr of this CreateNatGatewaySnatRuleResponseBody.
 
         cidr，可以是网段或者主机格式，与network_id参数二选一。 Source_type=0时，cidr必须是vpc 子网网段的子集(不能相等）; Source_type=1时，cidr必须指定专线侧网段。
 
@@ -197,7 +197,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Sets the cidr of this CreateNatGatewaySnatRuleResponseBody.
 
         cidr，可以是网段或者主机格式，与network_id参数二选一。 Source_type=0时，cidr必须是vpc 子网网段的子集(不能相等）; Source_type=1时，cidr必须指定专线侧网段。
 
@@ -208,7 +208,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @property
     def source_type(self):
-        """Gets the source_type of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Gets the source_type of this CreateNatGatewaySnatRuleResponseBody.
 
         0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
 
@@ -219,7 +219,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Sets the source_type of this CreateNatGatewaySnatRuleResponseBody.
 
         0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
 
@@ -230,7 +230,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @property
     def floating_ip_id(self):
-        """Gets the floating_ip_id of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Gets the floating_ip_id of this CreateNatGatewaySnatRuleResponseBody.
 
         功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
 
@@ -241,7 +241,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @floating_ip_id.setter
     def floating_ip_id(self, floating_ip_id):
-        """Sets the floating_ip_id of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Sets the floating_ip_id of this CreateNatGatewaySnatRuleResponseBody.
 
         功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
 
@@ -252,7 +252,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Gets the description of this CreateNatGatewaySnatRuleResponseBody.
 
         SNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -263,7 +263,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Sets the description of this CreateNatGatewaySnatRuleResponseBody.
 
         SNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -274,7 +274,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Gets the status of this CreateNatGatewaySnatRuleResponseBody.
 
         SNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
@@ -285,7 +285,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Sets the status of this CreateNatGatewaySnatRuleResponseBody.
 
         SNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
@@ -296,7 +296,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Gets the created_at of this CreateNatGatewaySnatRuleResponseBody.
 
         SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
@@ -307,7 +307,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Sets the created_at of this CreateNatGatewaySnatRuleResponseBody.
 
         SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
@@ -318,7 +318,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @property
     def network_id(self):
-        """Gets the network_id of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Gets the network_id of this CreateNatGatewaySnatRuleResponseBody.
 
         规则使用的网络id。与cidr参数二选一。
 
@@ -329,7 +329,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Sets the network_id of this CreateNatGatewaySnatRuleResponseBody.
 
         规则使用的网络id。与cidr参数二选一。
 
@@ -340,7 +340,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Gets the admin_state_up of this CreateNatGatewaySnatRuleResponseBody.
 
         解冻/冻结状态。 取值范围： - \"true\"：解冻 - \"false\"：冻结
 
@@ -351,7 +351,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Sets the admin_state_up of this CreateNatGatewaySnatRuleResponseBody.
 
         解冻/冻结状态。 取值范围： - \"true\"：解冻 - \"false\"：冻结
 
@@ -362,7 +362,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @property
     def floating_ip_address(self):
-        """Gets the floating_ip_address of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Gets the floating_ip_address of this CreateNatGatewaySnatRuleResponseBody.
 
         功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。
 
@@ -373,7 +373,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @floating_ip_address.setter
     def floating_ip_address(self, floating_ip_address):
-        """Sets the floating_ip_address of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Sets the floating_ip_address of this CreateNatGatewaySnatRuleResponseBody.
 
         功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。
 
@@ -384,7 +384,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Gets the global_eip_id of this CreateNatGatewaySnatRuleResponseBody.
 
         全域弹性公网IP的id。
 
@@ -395,7 +395,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Sets the global_eip_id of this CreateNatGatewaySnatRuleResponseBody.
 
         全域弹性公网IP的id。
 
@@ -406,7 +406,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @property
     def global_eip_address(self):
-        """Gets the global_eip_address of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Gets the global_eip_address of this CreateNatGatewaySnatRuleResponseBody.
 
         全域弹性公网IP的地址。
 
@@ -417,7 +417,7 @@ class CreateNatGatewaySnatRuleResponseBody:
 
     @global_eip_address.setter
     def global_eip_address(self, global_eip_address):
-        """Sets the global_eip_address of this CreateNatGatewaySnatRuleResponseBody.
+        r"""Sets the global_eip_address of this CreateNatGatewaySnatRuleResponseBody.
 
         全域弹性公网IP的地址。
 

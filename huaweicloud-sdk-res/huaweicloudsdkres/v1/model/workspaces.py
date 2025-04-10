@@ -45,7 +45,7 @@ class Workspaces:
     }
 
     def __init__(self, created_at=None, description=None, enterprise_project_id=None, enterprise_project_name=None, id=None, name=None, owner=None, status=None, update_at=None, user_id=None, project_id=None):
-        """Workspaces
+        r"""Workspaces
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class Workspaces:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Workspaces.
+        r"""Gets the created_at of this Workspaces.
 
         创建时间。
 
@@ -114,7 +114,7 @@ class Workspaces:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Workspaces.
+        r"""Sets the created_at of this Workspaces.
 
         创建时间。
 
@@ -125,7 +125,7 @@ class Workspaces:
 
     @property
     def description(self):
-        """Gets the description of this Workspaces.
+        r"""Gets the description of this Workspaces.
 
         描述。
 
@@ -136,7 +136,7 @@ class Workspaces:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Workspaces.
+        r"""Sets the description of this Workspaces.
 
         描述。
 
@@ -147,7 +147,7 @@ class Workspaces:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Workspaces.
+        r"""Gets the enterprise_project_id of this Workspaces.
 
         企业项目id。
 
@@ -158,7 +158,7 @@ class Workspaces:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Workspaces.
+        r"""Sets the enterprise_project_id of this Workspaces.
 
         企业项目id。
 
@@ -169,7 +169,7 @@ class Workspaces:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this Workspaces.
+        r"""Gets the enterprise_project_name of this Workspaces.
 
         企业项目名称。
 
@@ -180,7 +180,7 @@ class Workspaces:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this Workspaces.
+        r"""Sets the enterprise_project_name of this Workspaces.
 
         企业项目名称。
 
@@ -191,7 +191,7 @@ class Workspaces:
 
     @property
     def id(self):
-        """Gets the id of this Workspaces.
+        r"""Gets the id of this Workspaces.
 
         工作空间id。
 
@@ -202,7 +202,7 @@ class Workspaces:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Workspaces.
+        r"""Sets the id of this Workspaces.
 
         工作空间id。
 
@@ -213,7 +213,7 @@ class Workspaces:
 
     @property
     def name(self):
-        """Gets the name of this Workspaces.
+        r"""Gets the name of this Workspaces.
 
         工作空间名称。
 
@@ -224,7 +224,7 @@ class Workspaces:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Workspaces.
+        r"""Sets the name of this Workspaces.
 
         工作空间名称。
 
@@ -235,7 +235,7 @@ class Workspaces:
 
     @property
     def owner(self):
-        """Gets the owner of this Workspaces.
+        r"""Gets the owner of this Workspaces.
 
         创建者。
 
@@ -246,7 +246,7 @@ class Workspaces:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this Workspaces.
+        r"""Sets the owner of this Workspaces.
 
         创建者。
 
@@ -257,7 +257,7 @@ class Workspaces:
 
     @property
     def status(self):
-        """Gets the status of this Workspaces.
+        r"""Gets the status of this Workspaces.
 
         状态。
 
@@ -268,7 +268,7 @@ class Workspaces:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Workspaces.
+        r"""Sets the status of this Workspaces.
 
         状态。
 
@@ -279,7 +279,7 @@ class Workspaces:
 
     @property
     def update_at(self):
-        """Gets the update_at of this Workspaces.
+        r"""Gets the update_at of this Workspaces.
 
         更新时间。
 
@@ -290,7 +290,7 @@ class Workspaces:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this Workspaces.
+        r"""Sets the update_at of this Workspaces.
 
         更新时间。
 
@@ -301,7 +301,7 @@ class Workspaces:
 
     @property
     def user_id(self):
-        """Gets the user_id of this Workspaces.
+        r"""Gets the user_id of this Workspaces.
 
         用户id。
 
@@ -312,7 +312,7 @@ class Workspaces:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this Workspaces.
+        r"""Sets the user_id of this Workspaces.
 
         用户id。
 
@@ -323,7 +323,7 @@ class Workspaces:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Workspaces.
+        r"""Gets the project_id of this Workspaces.
 
         调用账户的项目Id
 
@@ -334,7 +334,7 @@ class Workspaces:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Workspaces.
+        r"""Sets the project_id of this Workspaces.
 
         调用账户的项目Id
 

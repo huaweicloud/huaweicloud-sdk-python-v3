@@ -27,7 +27,7 @@ class NodeSqlFilterRuleInfo:
     }
 
     def __init__(self, node_id=None, rules=None):
-        """NodeSqlFilterRuleInfo
+        r"""NodeSqlFilterRuleInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NodeSqlFilterRuleInfo:
 
     @property
     def node_id(self):
-        """Gets the node_id of this NodeSqlFilterRuleInfo.
+        r"""Gets the node_id of this NodeSqlFilterRuleInfo.
 
         节点ID
 
@@ -59,7 +59,7 @@ class NodeSqlFilterRuleInfo:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this NodeSqlFilterRuleInfo.
+        r"""Sets the node_id of this NodeSqlFilterRuleInfo.
 
         节点ID
 
@@ -70,7 +70,7 @@ class NodeSqlFilterRuleInfo:
 
     @property
     def rules(self):
-        """Gets the rules of this NodeSqlFilterRuleInfo.
+        r"""Gets the rules of this NodeSqlFilterRuleInfo.
 
         SQL限流规则。集合的sql_type值不能重复。
 
@@ -81,7 +81,7 @@ class NodeSqlFilterRuleInfo:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this NodeSqlFilterRuleInfo.
+        r"""Sets the rules of this NodeSqlFilterRuleInfo.
 
         SQL限流规则。集合的sql_type值不能重复。
 

@@ -30,7 +30,7 @@ class ListInstancesInfoDiagnosisResponse(SdkResponse):
     }
 
     def __init__(self, diagnosis=None, total_count=None, instances=None):
-        """ListInstancesInfoDiagnosisResponse
+        r"""ListInstancesInfoDiagnosisResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListInstancesInfoDiagnosisResponse(SdkResponse):
 
     @property
     def diagnosis(self):
-        """Gets the diagnosis of this ListInstancesInfoDiagnosisResponse.
+        r"""Gets the diagnosis of this ListInstancesInfoDiagnosisResponse.
 
         诊断项
 
@@ -69,7 +69,7 @@ class ListInstancesInfoDiagnosisResponse(SdkResponse):
 
     @diagnosis.setter
     def diagnosis(self, diagnosis):
-        """Sets the diagnosis of this ListInstancesInfoDiagnosisResponse.
+        r"""Sets the diagnosis of this ListInstancesInfoDiagnosisResponse.
 
         诊断项
 
@@ -80,7 +80,7 @@ class ListInstancesInfoDiagnosisResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListInstancesInfoDiagnosisResponse.
+        r"""Gets the total_count of this ListInstancesInfoDiagnosisResponse.
 
         实例数量
 
@@ -91,7 +91,7 @@ class ListInstancesInfoDiagnosisResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListInstancesInfoDiagnosisResponse.
+        r"""Sets the total_count of this ListInstancesInfoDiagnosisResponse.
 
         实例数量
 
@@ -102,7 +102,7 @@ class ListInstancesInfoDiagnosisResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListInstancesInfoDiagnosisResponse.
+        r"""Gets the instances of this ListInstancesInfoDiagnosisResponse.
 
         实例信息
 
@@ -113,7 +113,7 @@ class ListInstancesInfoDiagnosisResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListInstancesInfoDiagnosisResponse.
+        r"""Sets the instances of this ListInstancesInfoDiagnosisResponse.
 
         实例信息
 

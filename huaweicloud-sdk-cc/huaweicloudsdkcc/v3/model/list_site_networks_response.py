@@ -30,7 +30,7 @@ class ListSiteNetworksResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, site_networks=None):
-        """ListSiteNetworksResponse
+        r"""ListSiteNetworksResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListSiteNetworksResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListSiteNetworksResponse.
+        r"""Gets the request_id of this ListSiteNetworksResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListSiteNetworksResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListSiteNetworksResponse.
+        r"""Sets the request_id of this ListSiteNetworksResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListSiteNetworksResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListSiteNetworksResponse.
+        r"""Gets the page_info of this ListSiteNetworksResponse.
 
         :return: The page_info of this ListSiteNetworksResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListSiteNetworksResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListSiteNetworksResponse.
+        r"""Sets the page_info of this ListSiteNetworksResponse.
 
         :param page_info: The page_info of this ListSiteNetworksResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListSiteNetworksResponse(SdkResponse):
 
     @property
     def site_networks(self):
-        """Gets the site_networks of this ListSiteNetworksResponse.
+        r"""Gets the site_networks of this ListSiteNetworksResponse.
 
         分支网络列表。
 
@@ -107,7 +107,7 @@ class ListSiteNetworksResponse(SdkResponse):
 
     @site_networks.setter
     def site_networks(self, site_networks):
-        """Sets the site_networks of this ListSiteNetworksResponse.
+        r"""Sets the site_networks of this ListSiteNetworksResponse.
 
         分支网络列表。
 

@@ -34,7 +34,7 @@ class IefAsyncClient(Client):
         return client_builder
 
     def batch_add_delete_tags_async(self, request):
-        """批量添加删除资源标签
+        r"""批量添加删除资源标签
 
         为指定实例批量添加或删除标签。
         一个资源上最多有20个标签。
@@ -111,7 +111,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_app_async(self, request):
-        """创建应用模板
+        r"""创建应用模板
 
         该API用于创建一个应用模板。
         
@@ -178,7 +178,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_app_versions_async(self, request):
-        """创建应用模板版本
+        r"""创建应用模板版本
 
         创建一个应用模板版本
         
@@ -247,7 +247,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_batch_job_async(self, request):
-        """创建批量处理任务
+        r"""创建批量处理任务
 
         创建批量处理作业。该API用于创建批量处理作业，当前支持：批量节点升级、批量应用部署、批量应用升级
         
@@ -314,7 +314,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_config_map_async(self, request):
-        """创建配置项
+        r"""创建配置项
 
         创建配置项
         
@@ -381,7 +381,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_deployments_async(self, request):
-        """创建部署
+        r"""创建部署
 
         创建部署
         
@@ -448,7 +448,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_device_async(self, request):
-        """注册终端设备
+        r"""注册终端设备
 
         注册终端设备。
         
@@ -515,7 +515,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_device_template_async(self, request):
-        """创建终端设备模板
+        r"""创建终端设备模板
 
         创建一个终端设备模板
         
@@ -582,7 +582,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_edge_group_async(self, request):
-        """边缘节点组管理
+        r"""边缘节点组管理
 
         创建边缘节点组。该API只能在铂金版实例中使用
         
@@ -649,7 +649,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_edge_group_cert_async(self, request):
-        """创建边缘节点组证书
+        r"""创建边缘节点组证书
 
         创建边缘节点组证书。边缘节点组证书.tar.gz文件仅在调用该API时提供压缩包下载，请及时下载证书文件
         
@@ -718,7 +718,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_edge_node_async(self, request):
-        """注册边缘节点
+        r"""注册边缘节点
 
         该API用于注册一个边缘节点。接口调用成功后，您可以将响应消息体中node.package字段使用base64解码成tar.gz文件，并在控制台下载边缘核心软件，然后纳管边缘节点。
         
@@ -785,7 +785,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_edge_node_certs_async(self, request):
-        """创建节点证书
+        r"""创建节点证书
 
         创建边缘节点上的应用证书和设备证书。
         
@@ -854,7 +854,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_encryptdatas_async(self, request):
-        """新增加密数据
+        r"""新增加密数据
 
         新增加密数据
         
@@ -921,7 +921,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_endpoint_async(self, request):
-        """创建端点
+        r"""创建端点
 
         创建一个端点
         
@@ -988,7 +988,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_node_encryptdatas_async(self, request):
-        """加密数据绑定边缘节点
+        r"""加密数据绑定边缘节点
 
         加密数据绑定边缘节点
         
@@ -1057,7 +1057,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_product_async(self, request):
-        """创建批量节点注册作业
+        r"""创建批量节点注册作业
 
         创建批量节点注册作业。接口调用成功后，您可以将响应消息体中product.package字段使用base64解码成tar.gz产品证书文件，并在控制台下载边缘注册软件edge-register和edge-installer，使用该产品证书批量纳管边缘节点。
         
@@ -1124,7 +1124,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_rule_async(self, request):
-        """创建规则
+        r"""创建规则
 
         创建一条规则
         
@@ -1191,7 +1191,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_secret_async(self, request):
-        """创建密钥
+        r"""创建密钥
 
         创建密钥
         
@@ -1258,7 +1258,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_service_async(self, request):
-        """创建服务
+        r"""创建服务
 
         创建一个服务
         
@@ -1325,7 +1325,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_system_event_async(self, request):
-        """创建系统订阅
+        r"""创建系统订阅
 
         创建系统订阅
         
@@ -1392,7 +1392,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def create_tag_async(self, request):
-        """添加资源标签
+        r"""添加资源标签
 
         为资源添加标签。
         一个资源上最多有20个标签。
@@ -1465,7 +1465,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_app_async(self, request):
-        """删除应用模板
+        r"""删除应用模板
 
         删除应用模板
         
@@ -1532,7 +1532,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_app_version_async(self, request):
-        """删除应用版本
+        r"""删除应用版本
 
         删除应用版本
         
@@ -1601,7 +1601,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_batch_job_async(self, request):
-        """删除批量处理作业
+        r"""删除批量处理作业
 
         删除批量处理作业
         
@@ -1668,7 +1668,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_config_map_async(self, request):
-        """删除配置项
+        r"""删除配置项
 
         删除配置项
         
@@ -1735,7 +1735,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_deployment_async(self, request):
-        """删除部署
+        r"""删除部署
 
         删除应用部署
         
@@ -1804,7 +1804,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_device_async(self, request):
-        """删除终端设备
+        r"""删除终端设备
 
         该API用于删除终端设备。
         
@@ -1871,7 +1871,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_device_template_async(self, request):
-        """删除终端设备模板
+        r"""删除终端设备模板
 
         删除终端设备模板
         
@@ -1938,7 +1938,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_edge_group_async(self, request):
-        """删除边缘节点组
+        r"""删除边缘节点组
 
         删除边缘节点组。该API只能在铂金版实例中使用
         
@@ -2005,7 +2005,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_edge_group_cert_async(self, request):
-        """删除边缘节点组证书
+        r"""删除边缘节点组证书
 
         删除边缘节点组证书
         
@@ -2074,7 +2074,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_edge_node_async(self, request):
-        """删除边缘节点
+        r"""删除边缘节点
 
         删除边缘节点
         
@@ -2141,7 +2141,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_edge_node_certs_async(self, request):
-        """删除节点证书
+        r"""删除节点证书
 
         删除边缘节点上的证书（目前只支持删除应用证书和设备证书）
         
@@ -2210,7 +2210,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_encryptdatas_async(self, request):
-        """删除加密数据
+        r"""删除加密数据
 
         删除加密数据
         
@@ -2277,7 +2277,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_end_point_async(self, request):
-        """删除一个端点
+        r"""删除一个端点
 
         删除一个端点
         
@@ -2344,7 +2344,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_node_encryptdatas_async(self, request):
-        """解绑边缘节点的加密数据
+        r"""解绑边缘节点的加密数据
 
         解绑边缘节点的加密数据
         
@@ -2413,7 +2413,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_product_async(self, request):
-        """删除批量节点注册作业
+        r"""删除批量节点注册作业
 
         删除批量节点注册作业。接口调用成功后，与该批量注册任务关联的批量注册凭证将会失效
         
@@ -2480,7 +2480,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_resource_tag_async(self, request):
-        """删除资源标签
+        r"""删除资源标签
 
         删除资源标签。删除时不对标签字符集做校验，调用前必须要做encodeURI，服务端需要对接口uri做decodeURI。删除的key不存在报404，Key不能为空或者空字符串。
         
@@ -2551,7 +2551,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_rule_async(self, request):
-        """删除规则
+        r"""删除规则
 
         删除一条规则
         
@@ -2618,7 +2618,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_secret_async(self, request):
-        """删除密钥
+        r"""删除密钥
 
         删除密钥
         
@@ -2685,7 +2685,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_service_async(self, request):
-        """删除服务
+        r"""删除服务
 
         删除一个服务
         
@@ -2752,7 +2752,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def delete_system_event_async(self, request):
-        """删除系统订阅列表
+        r"""删除系统订阅列表
 
         删除系统订阅列表
         
@@ -2819,7 +2819,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def enable_disable_edge_nodes_async(self, request):
-        """启用停用边缘节点
+        r"""启用停用边缘节点
 
         启用停用边缘节点。被停用的边缘节点将无法连接到云端服务，可用该URI启用边缘节点恢复连接。
         
@@ -2888,7 +2888,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_app_versions_async(self, request):
-        """查询应用模板版本列表
+        r"""查询应用模板版本列表
 
         查询应用模板版本列表
         
@@ -2959,7 +2959,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_apps_async(self, request):
-        """查询应用模板列表
+        r"""查询应用模板列表
 
         查询应用模板列表
         
@@ -3034,7 +3034,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_batch_job_async(self, request):
-        """查询批量处理作业列表
+        r"""查询批量处理作业列表
 
         查询批量处理作业列表
         
@@ -3107,7 +3107,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_config_maps_async(self, request):
-        """查询配置项列表
+        r"""查询配置项列表
 
         查询配置项列表
         
@@ -3178,7 +3178,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_deployments_async(self, request):
-        """查询部署列表
+        r"""查询部署列表
 
         查询部署列表
         
@@ -3255,7 +3255,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_device_templates_async(self, request):
-        """查询终端设备模板列表
+        r"""查询终端设备模板列表
 
         查询终端设备模板列表
         
@@ -3326,7 +3326,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_devices_async(self, request):
-        """查询终端设备列表
+        r"""查询终端设备列表
 
         该API用于查询终端设备列表。
         
@@ -3403,7 +3403,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_edge_group_certs_async(self, request):
-        """查询边缘节点组证书列表
+        r"""查询边缘节点组证书列表
 
         查询边缘节点组证书列表
         
@@ -3474,7 +3474,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_edge_groups_async(self, request):
-        """查询边缘节点组列表
+        r"""查询边缘节点组列表
 
         查询边缘节点组列表。该API只能在铂金版实例中使用
         
@@ -3547,7 +3547,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_edge_node_certs_async(self, request):
-        """查询节点证书
+        r"""查询节点证书
 
         查询边缘节点上的应用证书和设备证书。
         
@@ -3618,7 +3618,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_edge_nodes_async(self, request):
-        """查询边缘节点列表
+        r"""查询边缘节点列表
 
         该API用于查询边缘节点。
         - 如果不携带任何检索参数，将返回该租户的所有边缘节点信息。
@@ -3705,7 +3705,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_encryptdata_nodes_async(self, request):
-        """获取加密数据绑定的边缘节点
+        r"""获取加密数据绑定的边缘节点
 
         获取加密数据绑定的边缘节点
         
@@ -3776,7 +3776,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_encryptdatas_async(self, request):
-        """获取加密数据列表
+        r"""获取加密数据列表
 
         获取加密数据列表
         
@@ -3847,7 +3847,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_endpoints_async(self, request):
-        """查询端点列表
+        r"""查询端点列表
 
         获取所有的端点详情。
         如果不携带任何检索参数，将返回该租户的所有端点信息和系统中所有的共享端点。
@@ -3924,7 +3924,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_node_encryptdatas_async(self, request):
-        """获取边缘节点绑定的加密数据
+        r"""获取边缘节点绑定的加密数据
 
         获取边缘节点绑定的加密数据
         
@@ -3995,7 +3995,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_pods_async(self, request):
-        """查询应用实例列表
+        r"""查询应用实例列表
 
         查询应用实例列表
         
@@ -4074,7 +4074,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_products_async(self, request):
-        """查询批量节点注册作业列表
+        r"""查询批量节点注册作业列表
 
         查询批量节点注册作业列表
         
@@ -4145,7 +4145,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_resource_by_tags_async(self, request):
-        """查询资源实例
+        r"""查询资源实例
 
         使用标签过滤实例
         
@@ -4214,7 +4214,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_rule_errors_async(self, request):
-        """查询规则错误列表
+        r"""查询规则错误列表
 
         查询特定规则下的所有错误列表
         
@@ -4285,7 +4285,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_rules_async(self, request):
-        """查询规则列表
+        r"""查询规则列表
 
         查询到所有的规则
         
@@ -4356,7 +4356,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_secrets_async(self, request):
-        """查询密钥列表
+        r"""查询密钥列表
 
         查询密钥列表
         
@@ -4429,7 +4429,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_services_async(self, request):
-        """查询服务列表
+        r"""查询服务列表
 
         获取所有的服务详情
         
@@ -4504,7 +4504,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_system_events_async(self, request):
-        """查询系统订阅列表
+        r"""查询系统订阅列表
 
         查询系统订阅列表
         
@@ -4575,7 +4575,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_tags_async(self, request):
-        """查询资源标签
+        r"""查询资源标签
 
         查询指定实例的标签信息
         
@@ -4644,7 +4644,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def list_tags_by_resource_type_async(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询指定项目中实例类型的所有资源标签集合
         
@@ -4711,7 +4711,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def restart_deployments_pod_async(self, request):
-        """容器应用实例重启
+        r"""容器应用实例重启
 
         重启部署下的应用实例
         
@@ -4780,7 +4780,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def restore_batch_job_async(self, request):
-        """继续批量处理作业
+        r"""继续批量处理作业
 
         继续执行批量处理作业。该API只对停止的批量处理作业生效
         
@@ -4847,7 +4847,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def retry_batch_job_async(self, request):
-        """重试批量处理作业
+        r"""重试批量处理作业
 
         重试批量处理作业。该API仅对执行状态失败的批量处理作业生效
         
@@ -4914,7 +4914,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_app_detail_async(self, request):
-        """查询应用模板详情
+        r"""查询应用模板详情
 
         查询应用模板详情。
         
@@ -4981,7 +4981,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_app_version_detail_async(self, request):
-        """查询应用模板版本详情
+        r"""查询应用模板版本详情
 
         查询应用模板版本详情
         
@@ -5050,7 +5050,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_batch_job_async(self, request):
-        """查询批量处理作业详情
+        r"""查询批量处理作业详情
 
         查询批量处理作业详情
         
@@ -5117,7 +5117,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_config_map_async(self, request):
-        """查询配置项详情
+        r"""查询配置项详情
 
         查询一个配置项详情
         
@@ -5184,7 +5184,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_deployment_async(self, request):
-        """查询应用部署
+        r"""查询应用部署
 
         查询应用部署
         
@@ -5251,7 +5251,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_device_async(self, request):
-        """查询终端设备详情
+        r"""查询终端设备详情
 
         该API用于查询终端设备详情。
         
@@ -5318,7 +5318,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_device_template_async(self, request):
-        """查询终端设备模板
+        r"""查询终端设备模板
 
         查询一个终端设备模板
         
@@ -5385,7 +5385,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_device_twin_async(self, request):
-        """查询终端设备孪生
+        r"""查询终端设备孪生
 
         该API用于查询终端设备孪生。
         
@@ -5452,7 +5452,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_edge_group_cert_detail_async(self, request):
-        """查询边缘节点组证书详情
+        r"""查询边缘节点组证书详情
 
         查询边缘节点组证书详情
         
@@ -5521,7 +5521,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_edge_group_detail_async(self, request):
-        """查询边缘节点组详情
+        r"""查询边缘节点组详情
 
         查询边缘节点组详情。该API只能在铂金版实例中使用
         
@@ -5588,7 +5588,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_edge_node_detail_async(self, request):
-        """查询边缘节点详情
+        r"""查询边缘节点详情
 
         查询边缘节点详情。
         
@@ -5655,7 +5655,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_encryptdatas_async(self, request):
-        """查询加密数据详情
+        r"""查询加密数据详情
 
         查询加密数据详情
         
@@ -5722,7 +5722,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_end_point_detail_async(self, request):
-        """查询端点详情
+        r"""查询端点详情
 
         查询一个端点的详情
         
@@ -5789,7 +5789,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_product_detail_async(self, request):
-        """查询批量节点注册作业详情
+        r"""查询批量节点注册作业详情
 
         查询批量节点注册作业详情。该接口无法查询产品证书文件
         
@@ -5856,7 +5856,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_quota_async(self, request):
-        """查询IEF服务下的资源配额
+        r"""查询IEF服务下的资源配额
 
         查询IEF服务下的资源配额
         
@@ -5921,7 +5921,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_rule_detail_async(self, request):
-        """查询规则详情
+        r"""查询规则详情
 
         获取一条规则的详情
         
@@ -5988,7 +5988,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_secret_async(self, request):
-        """查询密钥详情
+        r"""查询密钥详情
 
         查询一个密钥详情
         
@@ -6055,7 +6055,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_service_detail_async(self, request):
-        """查询服务详情
+        r"""查询服务详情
 
         查询一个服务的详情
         
@@ -6122,7 +6122,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def show_system_event_detail_async(self, request):
-        """查询系统订阅列表
+        r"""查询系统订阅列表
 
         查询系统订阅列表
         
@@ -6189,7 +6189,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def start_rule_async(self, request):
-        """启用规则
+        r"""启用规则
 
         启用一条规则
         
@@ -6256,7 +6256,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def start_system_event_async(self, request):
-        """启用系统订阅
+        r"""启用系统订阅
 
         启用系统订阅
         
@@ -6323,7 +6323,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def stop_batch_job_async(self, request):
-        """停止批量处理作业
+        r"""停止批量处理作业
 
         停止批量处理作业。该API仅对运行中的批量处理作业生效
         
@@ -6390,7 +6390,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def stop_rule_async(self, request):
-        """停用规则
+        r"""停用规则
 
         停用一条规则
         
@@ -6457,7 +6457,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def stop_system_event_async(self, request):
-        """停用系统订阅
+        r"""停用系统订阅
 
         停用系统订阅
         
@@ -6524,7 +6524,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def update_app_async(self, request):
-        """更新应用模板
+        r"""更新应用模板
 
         更新一个应用模板。
         
@@ -6593,7 +6593,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def update_app_version_async(self, request):
-        """更新应用模板版本
+        r"""更新应用模板版本
 
         更新一个应用模板版本
         
@@ -6664,7 +6664,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def update_config_map_async(self, request):
-        """更新配置项
+        r"""更新配置项
 
         更新一个配置项
         
@@ -6733,7 +6733,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def update_deployment_async(self, request):
-        """更新应用部署
+        r"""更新应用部署
 
         修改应用部署
         
@@ -6802,7 +6802,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def update_device_async(self, request):
-        """更新终端设备
+        r"""更新终端设备
 
         更新一个终端设备。
         
@@ -6871,7 +6871,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def update_device_template_by_id_async(self, request):
-        """更新终端设备模板
+        r"""更新终端设备模板
 
         更新一个终端设备模板。
         
@@ -6940,7 +6940,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def update_device_twin_async(self, request):
-        """更新终端设备孪生
+        r"""更新终端设备孪生
 
         该API用于更新终端设备孪生。
         
@@ -7009,7 +7009,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def update_edge_group_async(self, request):
-        """更新边缘节点组
+        r"""更新边缘节点组
 
         更新边缘节点组描述。该API只能在铂金版实例中使用
         
@@ -7078,7 +7078,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def update_edge_group_node_binding_async(self, request):
-        """绑定或解绑边缘节点
+        r"""绑定或解绑边缘节点
 
         边缘节点组绑定或解绑边缘节点。该API只能在铂金版实例中使用
         
@@ -7147,7 +7147,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def update_edge_node_async(self, request):
-        """更新边缘节点
+        r"""更新边缘节点
 
         该API用于更新边缘节点。
         
@@ -7216,7 +7216,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def update_edge_node_device_async(self, request):
-        """更新边缘节点的终端设备
+        r"""更新边缘节点的终端设备
 
         添加或删除边缘节点的终端设备
         
@@ -7285,7 +7285,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def update_encryptdatas_async(self, request):
-        """更新加密数据
+        r"""更新加密数据
 
         更新加密数据
         
@@ -7354,7 +7354,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def update_node_by_device_id_async(self, request):
-        """更新终端设备的边缘节点
+        r"""更新终端设备的边缘节点
 
         该API用于更新终端设备的边缘节点。功能与更新边缘节点的终端设备相同，推荐使用更新边缘节点的终端设备。
         
@@ -7423,7 +7423,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def update_secret_async(self, request):
-        """更新密钥
+        r"""更新密钥
 
         更新一个密钥
         
@@ -7492,7 +7492,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def update_service_async(self, request):
-        """更新服务
+        r"""更新服务
 
         更新一个服务
         
@@ -7561,7 +7561,7 @@ class IefAsyncClient(Client):
         return http_info
 
     def upgrade_edge_node_async(self, request):
-        """升级边缘节点
+        r"""升级边缘节点
 
         该API用于升级边缘节点。边缘节点将自动升级到最新的可用版本
         

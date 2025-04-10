@@ -47,7 +47,7 @@ class CreateFlinkSqlJobGraphRequestBody:
     }
 
     def __init__(self, sql_body=None, flink_version=None, cu_number=None, manager_cu_number=None, parallel_number=None, tm_cus=None, tm_slot_num=None, operator_config=None, static_estimator=None, job_type=None, graph_type=None, static_estimator_config=None):
-        """CreateFlinkSqlJobGraphRequestBody
+        r"""CreateFlinkSqlJobGraphRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @property
     def sql_body(self):
-        """Gets the sql_body of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Gets the sql_body of this CreateFlinkSqlJobGraphRequestBody.
 
         SQL
 
@@ -130,7 +130,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @sql_body.setter
     def sql_body(self, sql_body):
-        """Sets the sql_body of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Sets the sql_body of this CreateFlinkSqlJobGraphRequestBody.
 
         SQL
 
@@ -141,7 +141,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @property
     def flink_version(self):
-        """Gets the flink_version of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Gets the flink_version of this CreateFlinkSqlJobGraphRequestBody.
 
         Flink版本。当前只支持1.10和1.12。
 
@@ -152,7 +152,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @flink_version.setter
     def flink_version(self, flink_version):
-        """Sets the flink_version of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Sets the flink_version of this CreateFlinkSqlJobGraphRequestBody.
 
         Flink版本。当前只支持1.10和1.12。
 
@@ -163,7 +163,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @property
     def cu_number(self):
-        """Gets the cu_number of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Gets the cu_number of this CreateFlinkSqlJobGraphRequestBody.
 
         CU总数
 
@@ -174,7 +174,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @cu_number.setter
     def cu_number(self, cu_number):
-        """Sets the cu_number of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Sets the cu_number of this CreateFlinkSqlJobGraphRequestBody.
 
         CU总数
 
@@ -185,7 +185,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @property
     def manager_cu_number(self):
-        """Gets the manager_cu_number of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Gets the manager_cu_number of this CreateFlinkSqlJobGraphRequestBody.
 
         管理单元CU数量
 
@@ -196,7 +196,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @manager_cu_number.setter
     def manager_cu_number(self, manager_cu_number):
-        """Sets the manager_cu_number of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Sets the manager_cu_number of this CreateFlinkSqlJobGraphRequestBody.
 
         管理单元CU数量
 
@@ -207,7 +207,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @property
     def parallel_number(self):
-        """Gets the parallel_number of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Gets the parallel_number of this CreateFlinkSqlJobGraphRequestBody.
 
         最大并行度
 
@@ -218,7 +218,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @parallel_number.setter
     def parallel_number(self, parallel_number):
-        """Sets the parallel_number of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Sets the parallel_number of this CreateFlinkSqlJobGraphRequestBody.
 
         最大并行度
 
@@ -229,7 +229,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @property
     def tm_cus(self):
-        """Gets the tm_cus of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Gets the tm_cus of this CreateFlinkSqlJobGraphRequestBody.
 
         单个taskManagerCU数量
 
@@ -240,7 +240,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @tm_cus.setter
     def tm_cus(self, tm_cus):
-        """Sets the tm_cus of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Sets the tm_cus of this CreateFlinkSqlJobGraphRequestBody.
 
         单个taskManagerCU数量
 
@@ -251,7 +251,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @property
     def tm_slot_num(self):
-        """Gets the tm_slot_num of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Gets the tm_slot_num of this CreateFlinkSqlJobGraphRequestBody.
 
         单个taskManager Slot数量
 
@@ -262,7 +262,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @tm_slot_num.setter
     def tm_slot_num(self, tm_slot_num):
-        """Sets the tm_slot_num of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Sets the tm_slot_num of this CreateFlinkSqlJobGraphRequestBody.
 
         单个taskManager Slot数量
 
@@ -273,7 +273,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @property
     def operator_config(self):
-        """Gets the operator_config of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Gets the operator_config of this CreateFlinkSqlJobGraphRequestBody.
 
         算子的配置
 
@@ -284,7 +284,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @operator_config.setter
     def operator_config(self, operator_config):
-        """Sets the operator_config of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Sets the operator_config of this CreateFlinkSqlJobGraphRequestBody.
 
         算子的配置
 
@@ -295,7 +295,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @property
     def static_estimator(self):
-        """Gets the static_estimator of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Gets the static_estimator of this CreateFlinkSqlJobGraphRequestBody.
 
         是否静态资源预估
 
@@ -306,7 +306,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @static_estimator.setter
     def static_estimator(self, static_estimator):
-        """Sets the static_estimator of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Sets the static_estimator of this CreateFlinkSqlJobGraphRequestBody.
 
         是否静态资源预估
 
@@ -317,7 +317,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @property
     def job_type(self):
-        """Gets the job_type of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Gets the job_type of this CreateFlinkSqlJobGraphRequestBody.
 
         作业类型
 
@@ -328,7 +328,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Sets the job_type of this CreateFlinkSqlJobGraphRequestBody.
 
         作业类型
 
@@ -339,7 +339,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @property
     def graph_type(self):
-        """Gets the graph_type of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Gets the graph_type of this CreateFlinkSqlJobGraphRequestBody.
 
         流图类型。当前支持以下两种流图类型。 简化流图：simple_graph 静态流图：job_graph。
 
@@ -350,7 +350,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @graph_type.setter
     def graph_type(self, graph_type):
-        """Sets the graph_type of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Sets the graph_type of this CreateFlinkSqlJobGraphRequestBody.
 
         流图类型。当前支持以下两种流图类型。 简化流图：simple_graph 静态流图：job_graph。
 
@@ -361,7 +361,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @property
     def static_estimator_config(self):
-        """Gets the static_estimator_config of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Gets the static_estimator_config of this CreateFlinkSqlJobGraphRequestBody.
 
         每个算子的流量/命中率配置，json格式的字符串。
 
@@ -372,7 +372,7 @@ class CreateFlinkSqlJobGraphRequestBody:
 
     @static_estimator_config.setter
     def static_estimator_config(self, static_estimator_config):
-        """Sets the static_estimator_config of this CreateFlinkSqlJobGraphRequestBody.
+        r"""Sets the static_estimator_config of this CreateFlinkSqlJobGraphRequestBody.
 
         每个算子的流量/命中率配置，json格式的字符串。
 

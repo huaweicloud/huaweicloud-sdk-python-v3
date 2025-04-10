@@ -33,7 +33,7 @@ class ListStarRocksDataBasesRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, limit=None, offset=None, database_name=None):
-        """ListStarRocksDataBasesRequest
+        r"""ListStarRocksDataBasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListStarRocksDataBasesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListStarRocksDataBasesRequest.
+        r"""Gets the x_language of this ListStarRocksDataBasesRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -80,7 +80,7 @@ class ListStarRocksDataBasesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListStarRocksDataBasesRequest.
+        r"""Sets the x_language of this ListStarRocksDataBasesRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -91,7 +91,7 @@ class ListStarRocksDataBasesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListStarRocksDataBasesRequest.
+        r"""Gets the instance_id of this ListStarRocksDataBasesRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -102,7 +102,7 @@ class ListStarRocksDataBasesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListStarRocksDataBasesRequest.
+        r"""Sets the instance_id of this ListStarRocksDataBasesRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -113,7 +113,7 @@ class ListStarRocksDataBasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListStarRocksDataBasesRequest.
+        r"""Gets the limit of this ListStarRocksDataBasesRequest.
 
         查询记录数
 
@@ -124,7 +124,7 @@ class ListStarRocksDataBasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListStarRocksDataBasesRequest.
+        r"""Sets the limit of this ListStarRocksDataBasesRequest.
 
         查询记录数
 
@@ -135,7 +135,7 @@ class ListStarRocksDataBasesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListStarRocksDataBasesRequest.
+        r"""Gets the offset of this ListStarRocksDataBasesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -146,7 +146,7 @@ class ListStarRocksDataBasesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListStarRocksDataBasesRequest.
+        r"""Sets the offset of this ListStarRocksDataBasesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -157,7 +157,7 @@ class ListStarRocksDataBasesRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListStarRocksDataBasesRequest.
+        r"""Gets the database_name of this ListStarRocksDataBasesRequest.
 
         查询的数据库名称，支持模糊搜索。
 
@@ -168,7 +168,7 @@ class ListStarRocksDataBasesRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListStarRocksDataBasesRequest.
+        r"""Sets the database_name of this ListStarRocksDataBasesRequest.
 
         查询的数据库名称，支持模糊搜索。
 

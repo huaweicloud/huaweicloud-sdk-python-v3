@@ -69,7 +69,7 @@ class GlobalConnectionBandwidth:
     }
 
     def __init__(self, id=None, name=None, description=None, domain_id=None, bordercross=None, type=None, binding_service=None, enterprise_project_id=None, charge_mode=None, size=None, sla_level=None, local_area=None, remote_area=None, local_site_code=None, remote_site_code=None, admin_state=None, frozen=None, spec_code_id=None, tags=None, created_at=None, updated_at=None, enable_share=None, instances=None):
-        """GlobalConnectionBandwidth
+        r"""GlobalConnectionBandwidth
 
         The model defined in huaweicloud sdk
 
@@ -188,7 +188,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def id(self):
-        """Gets the id of this GlobalConnectionBandwidth.
+        r"""Gets the id of this GlobalConnectionBandwidth.
 
         实例ID。
 
@@ -199,7 +199,7 @@ class GlobalConnectionBandwidth:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GlobalConnectionBandwidth.
+        r"""Sets the id of this GlobalConnectionBandwidth.
 
         实例ID。
 
@@ -210,7 +210,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def name(self):
-        """Gets the name of this GlobalConnectionBandwidth.
+        r"""Gets the name of this GlobalConnectionBandwidth.
 
         实例名字。
 
@@ -221,7 +221,7 @@ class GlobalConnectionBandwidth:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GlobalConnectionBandwidth.
+        r"""Sets the name of this GlobalConnectionBandwidth.
 
         实例名字。
 
@@ -232,7 +232,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def description(self):
-        """Gets the description of this GlobalConnectionBandwidth.
+        r"""Gets the description of this GlobalConnectionBandwidth.
 
         实例描述。不支持 <>。
 
@@ -243,7 +243,7 @@ class GlobalConnectionBandwidth:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this GlobalConnectionBandwidth.
+        r"""Sets the description of this GlobalConnectionBandwidth.
 
         实例描述。不支持 <>。
 
@@ -254,7 +254,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this GlobalConnectionBandwidth.
+        r"""Gets the domain_id of this GlobalConnectionBandwidth.
 
         实例所属账号ID。
 
@@ -265,7 +265,7 @@ class GlobalConnectionBandwidth:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this GlobalConnectionBandwidth.
+        r"""Sets the domain_id of this GlobalConnectionBandwidth.
 
         实例所属账号ID。
 
@@ -276,7 +276,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def bordercross(self):
-        """Gets the bordercross of this GlobalConnectionBandwidth.
+        r"""Gets the bordercross of this GlobalConnectionBandwidth.
 
         功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
 
@@ -287,7 +287,7 @@ class GlobalConnectionBandwidth:
 
     @bordercross.setter
     def bordercross(self, bordercross):
-        """Sets the bordercross of this GlobalConnectionBandwidth.
+        r"""Sets the bordercross of this GlobalConnectionBandwidth.
 
         功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
 
@@ -298,7 +298,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def type(self):
-        """Gets the type of this GlobalConnectionBandwidth.
+        r"""Gets the type of this GlobalConnectionBandwidth.
 
         功能说明：描述带宽类型，对应地理区间的城域、区域、大区、跨区四级： - TrsArea: 跨区带宽 - Area: 大区带宽 - SubArea: 区域带宽 - Region: 城域带宽
 
@@ -309,7 +309,7 @@ class GlobalConnectionBandwidth:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GlobalConnectionBandwidth.
+        r"""Sets the type of this GlobalConnectionBandwidth.
 
         功能说明：描述带宽类型，对应地理区间的城域、区域、大区、跨区四级： - TrsArea: 跨区带宽 - Area: 大区带宽 - SubArea: 区域带宽 - Region: 城域带宽
 
@@ -320,7 +320,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def binding_service(self):
-        """Gets the binding_service of this GlobalConnectionBandwidth.
+        r"""Gets the binding_service of this GlobalConnectionBandwidth.
 
         功能说明：绑定的服务类型。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络 - ALL: 所有实例类型
 
@@ -331,7 +331,7 @@ class GlobalConnectionBandwidth:
 
     @binding_service.setter
     def binding_service(self, binding_service):
-        """Sets the binding_service of this GlobalConnectionBandwidth.
+        r"""Sets the binding_service of this GlobalConnectionBandwidth.
 
         功能说明：绑定的服务类型。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络 - ALL: 所有实例类型
 
@@ -342,7 +342,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this GlobalConnectionBandwidth.
+        r"""Gets the enterprise_project_id of this GlobalConnectionBandwidth.
 
         实例所属企业项目ID。
 
@@ -353,7 +353,7 @@ class GlobalConnectionBandwidth:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this GlobalConnectionBandwidth.
+        r"""Sets the enterprise_project_id of this GlobalConnectionBandwidth.
 
         实例所属企业项目ID。
 
@@ -364,7 +364,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this GlobalConnectionBandwidth.
+        r"""Gets the charge_mode of this GlobalConnectionBandwidth.
 
         功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
 
@@ -375,7 +375,7 @@ class GlobalConnectionBandwidth:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this GlobalConnectionBandwidth.
+        r"""Sets the charge_mode of this GlobalConnectionBandwidth.
 
         功能说明：描述计费类型，描述可选计费类型。默认开放按带宽计费，传统95计费租户白名单控制。 取值范围：     bwd: 按带宽计费     95: 按传统型95计费     95avr: 按传统型日95计费
 
@@ -386,7 +386,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def size(self):
-        """Gets the size of this GlobalConnectionBandwidth.
+        r"""Gets the size of this GlobalConnectionBandwidth.
 
         功能说明：全域互联带宽实例中的带宽值大小，单位Mbit/s。 取值范围：2-300Mbit/s
 
@@ -397,7 +397,7 @@ class GlobalConnectionBandwidth:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this GlobalConnectionBandwidth.
+        r"""Sets the size of this GlobalConnectionBandwidth.
 
         功能说明：全域互联带宽实例中的带宽值大小，单位Mbit/s。 取值范围：2-300Mbit/s
 
@@ -408,7 +408,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def sla_level(self):
-        """Gets the sla_level of this GlobalConnectionBandwidth.
+        r"""Gets the sla_level of this GlobalConnectionBandwidth.
 
         功能说明：描述网络等级，从高到低分为铂金、金、银。默认金，其余租户白名单控制。 - Pt: 铂金 - Au: 金 - Ag: 银
 
@@ -419,7 +419,7 @@ class GlobalConnectionBandwidth:
 
     @sla_level.setter
     def sla_level(self, sla_level):
-        """Sets the sla_level of this GlobalConnectionBandwidth.
+        r"""Sets the sla_level of this GlobalConnectionBandwidth.
 
         功能说明：描述网络等级，从高到低分为铂金、金、银。默认金，其余租户白名单控制。 - Pt: 铂金 - Au: 金 - Ag: 银
 
@@ -430,7 +430,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def local_area(self):
-        """Gets the local_area of this GlobalConnectionBandwidth.
+        r"""Gets the local_area of this GlobalConnectionBandwidth.
 
         功能说明：本端接入点的中英文名。通过HEADER里面的x-language控制，默认英文，zh-cn返回中文。
 
@@ -441,7 +441,7 @@ class GlobalConnectionBandwidth:
 
     @local_area.setter
     def local_area(self, local_area):
-        """Sets the local_area of this GlobalConnectionBandwidth.
+        r"""Sets the local_area of this GlobalConnectionBandwidth.
 
         功能说明：本端接入点的中英文名。通过HEADER里面的x-language控制，默认英文，zh-cn返回中文。
 
@@ -452,7 +452,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def remote_area(self):
-        """Gets the remote_area of this GlobalConnectionBandwidth.
+        r"""Gets the remote_area of this GlobalConnectionBandwidth.
 
         功能说明：远端接入点的中英文名。通过HEADER里面的x-language控制，默认英文，zh-cn返回中文。
 
@@ -463,7 +463,7 @@ class GlobalConnectionBandwidth:
 
     @remote_area.setter
     def remote_area(self, remote_area):
-        """Sets the remote_area of this GlobalConnectionBandwidth.
+        r"""Sets the remote_area of this GlobalConnectionBandwidth.
 
         功能说明：远端接入点的中英文名。通过HEADER里面的x-language控制，默认英文，zh-cn返回中文。
 
@@ -474,7 +474,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def local_site_code(self):
-        """Gets the local_site_code of this GlobalConnectionBandwidth.
+        r"""Gets the local_site_code of this GlobalConnectionBandwidth.
 
         功能说明：本端接入点的编码。
 
@@ -485,7 +485,7 @@ class GlobalConnectionBandwidth:
 
     @local_site_code.setter
     def local_site_code(self, local_site_code):
-        """Sets the local_site_code of this GlobalConnectionBandwidth.
+        r"""Sets the local_site_code of this GlobalConnectionBandwidth.
 
         功能说明：本端接入点的编码。
 
@@ -496,7 +496,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def remote_site_code(self):
-        """Gets the remote_site_code of this GlobalConnectionBandwidth.
+        r"""Gets the remote_site_code of this GlobalConnectionBandwidth.
 
         功能说明：远端接入点的编码。
 
@@ -507,7 +507,7 @@ class GlobalConnectionBandwidth:
 
     @remote_site_code.setter
     def remote_site_code(self, remote_site_code):
-        """Sets the remote_site_code of this GlobalConnectionBandwidth.
+        r"""Sets the remote_site_code of this GlobalConnectionBandwidth.
 
         功能说明：远端接入点的编码。
 
@@ -518,7 +518,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def admin_state(self):
-        """Gets the admin_state of this GlobalConnectionBandwidth.
+        r"""Gets the admin_state of this GlobalConnectionBandwidth.
 
         功能说明: 全域互联带宽状态。 取值范围：     NORMAL-正常     FREEZED-冻结状态
 
@@ -529,7 +529,7 @@ class GlobalConnectionBandwidth:
 
     @admin_state.setter
     def admin_state(self, admin_state):
-        """Sets the admin_state of this GlobalConnectionBandwidth.
+        r"""Sets the admin_state of this GlobalConnectionBandwidth.
 
         功能说明: 全域互联带宽状态。 取值范围：     NORMAL-正常     FREEZED-冻结状态
 
@@ -540,7 +540,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def frozen(self):
-        """Gets the frozen of this GlobalConnectionBandwidth.
+        r"""Gets the frozen of this GlobalConnectionBandwidth.
 
         功能说明: 全域互联带宽是否冻结。 取值范围：     true-冻结     false-非冻结
 
@@ -551,7 +551,7 @@ class GlobalConnectionBandwidth:
 
     @frozen.setter
     def frozen(self, frozen):
-        """Sets the frozen of this GlobalConnectionBandwidth.
+        r"""Sets the frozen of this GlobalConnectionBandwidth.
 
         功能说明: 全域互联带宽是否冻结。 取值范围：     true-冻结     false-非冻结
 
@@ -562,7 +562,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def spec_code_id(self):
-        """Gets the spec_code_id of this GlobalConnectionBandwidth.
+        r"""Gets the spec_code_id of this GlobalConnectionBandwidth.
 
         功能说明：线路规格编码UUID。
 
@@ -573,7 +573,7 @@ class GlobalConnectionBandwidth:
 
     @spec_code_id.setter
     def spec_code_id(self, spec_code_id):
-        """Sets the spec_code_id of this GlobalConnectionBandwidth.
+        r"""Sets the spec_code_id of this GlobalConnectionBandwidth.
 
         功能说明：线路规格编码UUID。
 
@@ -584,7 +584,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def tags(self):
-        """Gets the tags of this GlobalConnectionBandwidth.
+        r"""Gets the tags of this GlobalConnectionBandwidth.
 
         实例标签。
 
@@ -595,7 +595,7 @@ class GlobalConnectionBandwidth:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this GlobalConnectionBandwidth.
+        r"""Sets the tags of this GlobalConnectionBandwidth.
 
         实例标签。
 
@@ -606,7 +606,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def created_at(self):
-        """Gets the created_at of this GlobalConnectionBandwidth.
+        r"""Gets the created_at of this GlobalConnectionBandwidth.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -617,7 +617,7 @@ class GlobalConnectionBandwidth:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this GlobalConnectionBandwidth.
+        r"""Sets the created_at of this GlobalConnectionBandwidth.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -628,7 +628,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this GlobalConnectionBandwidth.
+        r"""Gets the updated_at of this GlobalConnectionBandwidth.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -639,7 +639,7 @@ class GlobalConnectionBandwidth:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this GlobalConnectionBandwidth.
+        r"""Sets the updated_at of this GlobalConnectionBandwidth.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -650,7 +650,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def enable_share(self):
-        """Gets the enable_share of this GlobalConnectionBandwidth.
+        r"""Gets the enable_share of this GlobalConnectionBandwidth.
 
         功能说明: 全域互联带宽是否支持绑定多实例。 取值范围：     true-支持     false-不支持
 
@@ -661,7 +661,7 @@ class GlobalConnectionBandwidth:
 
     @enable_share.setter
     def enable_share(self, enable_share):
-        """Sets the enable_share of this GlobalConnectionBandwidth.
+        r"""Sets the enable_share of this GlobalConnectionBandwidth.
 
         功能说明: 全域互联带宽是否支持绑定多实例。 取值范围：     true-支持     false-不支持
 
@@ -672,7 +672,7 @@ class GlobalConnectionBandwidth:
 
     @property
     def instances(self):
-        """Gets the instances of this GlobalConnectionBandwidth.
+        r"""Gets the instances of this GlobalConnectionBandwidth.
 
         功能说明: 全域互联带宽绑定实例列表。
 
@@ -683,7 +683,7 @@ class GlobalConnectionBandwidth:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this GlobalConnectionBandwidth.
+        r"""Sets the instances of this GlobalConnectionBandwidth.
 
         功能说明: 全域互联带宽绑定实例列表。
 

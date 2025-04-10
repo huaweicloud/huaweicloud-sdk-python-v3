@@ -31,7 +31,7 @@ class UpdateAgencyOption:
     }
 
     def __init__(self, trust_domain_id=None, trust_domain_name=None, description=None, duration=None):
-        """UpdateAgencyOption
+        r"""UpdateAgencyOption
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateAgencyOption:
 
     @property
     def trust_domain_id(self):
-        """Gets the trust_domain_id of this UpdateAgencyOption.
+        r"""Gets the trust_domain_id of this UpdateAgencyOption.
 
         被委托方账号ID。如果trust_domain_id和trust_domain_name都填写，则优先校验trust_domain_name。四个参数至少填写一个。
 
@@ -75,7 +75,7 @@ class UpdateAgencyOption:
 
     @trust_domain_id.setter
     def trust_domain_id(self, trust_domain_id):
-        """Sets the trust_domain_id of this UpdateAgencyOption.
+        r"""Sets the trust_domain_id of this UpdateAgencyOption.
 
         被委托方账号ID。如果trust_domain_id和trust_domain_name都填写，则优先校验trust_domain_name。四个参数至少填写一个。
 
@@ -86,7 +86,7 @@ class UpdateAgencyOption:
 
     @property
     def trust_domain_name(self):
-        """Gets the trust_domain_name of this UpdateAgencyOption.
+        r"""Gets the trust_domain_name of this UpdateAgencyOption.
 
         被委托方账号名。如果trust_domain_id和trust_domain_name都填写，则优先校验trust_domain_name。四个参数至少填写一个。
 
@@ -97,7 +97,7 @@ class UpdateAgencyOption:
 
     @trust_domain_name.setter
     def trust_domain_name(self, trust_domain_name):
-        """Sets the trust_domain_name of this UpdateAgencyOption.
+        r"""Sets the trust_domain_name of this UpdateAgencyOption.
 
         被委托方账号名。如果trust_domain_id和trust_domain_name都填写，则优先校验trust_domain_name。四个参数至少填写一个。
 
@@ -108,7 +108,7 @@ class UpdateAgencyOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAgencyOption.
+        r"""Gets the description of this UpdateAgencyOption.
 
         委托描述信息，长度不大于255位。四个参数至少填写一个。
 
@@ -119,7 +119,7 @@ class UpdateAgencyOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAgencyOption.
+        r"""Sets the description of this UpdateAgencyOption.
 
         委托描述信息，长度不大于255位。四个参数至少填写一个。
 
@@ -130,7 +130,7 @@ class UpdateAgencyOption:
 
     @property
     def duration(self):
-        """Gets the duration of this UpdateAgencyOption.
+        r"""Gets the duration of this UpdateAgencyOption.
 
         委托的期限，单位为“天”。默认为FOREVER。取值为“FOREVER\"表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天,取值为自定义天数表示委托的期限为有限天数，如20。四个参数至少填写一个。
 
@@ -141,7 +141,7 @@ class UpdateAgencyOption:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this UpdateAgencyOption.
+        r"""Sets the duration of this UpdateAgencyOption.
 
         委托的期限，单位为“天”。默认为FOREVER。取值为“FOREVER\"表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天,取值为自定义天数表示委托的期限为有限天数，如20。四个参数至少填写一个。
 

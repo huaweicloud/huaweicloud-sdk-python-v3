@@ -24,7 +24,7 @@ class AddCorpAdminResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddCorpAdminResponse
+        r"""AddCorpAdminResponse
 
         The model defined in huaweicloud sdk
 

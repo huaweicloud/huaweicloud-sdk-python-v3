@@ -27,7 +27,7 @@ class ShowDatabaseUserRequest:
     }
 
     def __init__(self, cluster_id=None, name=None):
-        """ShowDatabaseUserRequest
+        r"""ShowDatabaseUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDatabaseUserRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowDatabaseUserRequest.
+        r"""Gets the cluster_id of this ShowDatabaseUserRequest.
 
         cluster_id
 
@@ -59,7 +59,7 @@ class ShowDatabaseUserRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowDatabaseUserRequest.
+        r"""Sets the cluster_id of this ShowDatabaseUserRequest.
 
         cluster_id
 
@@ -70,7 +70,7 @@ class ShowDatabaseUserRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowDatabaseUserRequest.
+        r"""Gets the name of this ShowDatabaseUserRequest.
 
         name
 
@@ -81,7 +81,7 @@ class ShowDatabaseUserRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDatabaseUserRequest.
+        r"""Sets the name of this ShowDatabaseUserRequest.
 
         name
 

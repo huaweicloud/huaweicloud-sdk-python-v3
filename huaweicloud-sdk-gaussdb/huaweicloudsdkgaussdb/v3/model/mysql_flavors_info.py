@@ -39,7 +39,7 @@ class MysqlFlavorsInfo:
     }
 
     def __init__(self, vcpus=None, ram=None, type=None, id=None, spec_code=None, version_name=None, instance_mode=None, az_status=None):
-        """MysqlFlavorsInfo
+        r"""MysqlFlavorsInfo
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class MysqlFlavorsInfo:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this MysqlFlavorsInfo.
+        r"""Gets the vcpus of this MysqlFlavorsInfo.
 
         CPU大小。例如：1表示1U。
 
@@ -95,7 +95,7 @@ class MysqlFlavorsInfo:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this MysqlFlavorsInfo.
+        r"""Sets the vcpus of this MysqlFlavorsInfo.
 
         CPU大小。例如：1表示1U。
 
@@ -106,7 +106,7 @@ class MysqlFlavorsInfo:
 
     @property
     def ram(self):
-        """Gets the ram of this MysqlFlavorsInfo.
+        r"""Gets the ram of this MysqlFlavorsInfo.
 
         内存大小，单位为GB。
 
@@ -117,7 +117,7 @@ class MysqlFlavorsInfo:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this MysqlFlavorsInfo.
+        r"""Sets the ram of this MysqlFlavorsInfo.
 
         内存大小，单位为GB。
 
@@ -128,7 +128,7 @@ class MysqlFlavorsInfo:
 
     @property
     def type(self):
-        """Gets the type of this MysqlFlavorsInfo.
+        r"""Gets the type of this MysqlFlavorsInfo.
 
         规格类型，取值为arm、x86和generalX86。  - arm：独享型arm规格。 - x86：独享型x86规格。 - generalX86：通用型X86规格。
 
@@ -139,7 +139,7 @@ class MysqlFlavorsInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MysqlFlavorsInfo.
+        r"""Sets the type of this MysqlFlavorsInfo.
 
         规格类型，取值为arm、x86和generalX86。  - arm：独享型arm规格。 - x86：独享型x86规格。 - generalX86：通用型X86规格。
 
@@ -150,7 +150,7 @@ class MysqlFlavorsInfo:
 
     @property
     def id(self):
-        """Gets the id of this MysqlFlavorsInfo.
+        r"""Gets the id of this MysqlFlavorsInfo.
 
         规格ID，该字段唯一
 
@@ -161,7 +161,7 @@ class MysqlFlavorsInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MysqlFlavorsInfo.
+        r"""Sets the id of this MysqlFlavorsInfo.
 
         规格ID，该字段唯一
 
@@ -172,7 +172,7 @@ class MysqlFlavorsInfo:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this MysqlFlavorsInfo.
+        r"""Gets the spec_code of this MysqlFlavorsInfo.
 
         资源规格编码，同创建指定的flavor_ref。例如：gaussdb.mysql.xlarge.x86.4。
 
@@ -183,7 +183,7 @@ class MysqlFlavorsInfo:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this MysqlFlavorsInfo.
+        r"""Sets the spec_code of this MysqlFlavorsInfo.
 
         资源规格编码，同创建指定的flavor_ref。例如：gaussdb.mysql.xlarge.x86.4。
 
@@ -194,7 +194,7 @@ class MysqlFlavorsInfo:
 
     @property
     def version_name(self):
-        """Gets the version_name of this MysqlFlavorsInfo.
+        r"""Gets the version_name of this MysqlFlavorsInfo.
 
         数据库版本号。
 
@@ -205,7 +205,7 @@ class MysqlFlavorsInfo:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this MysqlFlavorsInfo.
+        r"""Sets the version_name of this MysqlFlavorsInfo.
 
         数据库版本号。
 
@@ -216,7 +216,7 @@ class MysqlFlavorsInfo:
 
     @property
     def instance_mode(self):
-        """Gets the instance_mode of this MysqlFlavorsInfo.
+        r"""Gets the instance_mode of this MysqlFlavorsInfo.
 
         实例类型。目前仅支持Cluster。
 
@@ -227,7 +227,7 @@ class MysqlFlavorsInfo:
 
     @instance_mode.setter
     def instance_mode(self, instance_mode):
-        """Sets the instance_mode of this MysqlFlavorsInfo.
+        r"""Sets the instance_mode of this MysqlFlavorsInfo.
 
         实例类型。目前仅支持Cluster。
 
@@ -238,7 +238,7 @@ class MysqlFlavorsInfo:
 
     @property
     def az_status(self):
-        """Gets the az_status of this MysqlFlavorsInfo.
+        r"""Gets the az_status of this MysqlFlavorsInfo.
 
         规格所在az的状态，包含以下状态：  - normal，在售 - unsupported，暂不支持该规格 - sellout，售罄。
 
@@ -249,7 +249,7 @@ class MysqlFlavorsInfo:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this MysqlFlavorsInfo.
+        r"""Sets the az_status of this MysqlFlavorsInfo.
 
         规格所在az的状态，包含以下状态：  - normal，在售 - unsupported，暂不支持该规格 - sellout，售罄。
 

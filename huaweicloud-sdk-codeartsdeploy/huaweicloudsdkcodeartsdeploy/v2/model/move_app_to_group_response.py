@@ -28,7 +28,7 @@ class MoveAppToGroupResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """MoveAppToGroupResponse
+        r"""MoveAppToGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class MoveAppToGroupResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this MoveAppToGroupResponse.
+        r"""Gets the result of this MoveAppToGroupResponse.
 
         移动应用至指定分组结果，仅返回移动失败的列表
 
@@ -62,7 +62,7 @@ class MoveAppToGroupResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this MoveAppToGroupResponse.
+        r"""Sets the result of this MoveAppToGroupResponse.
 
         移动应用至指定分组结果，仅返回移动失败的列表
 
@@ -73,7 +73,7 @@ class MoveAppToGroupResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this MoveAppToGroupResponse.
+        r"""Gets the status of this MoveAppToGroupResponse.
 
         请求成功失败状态
 
@@ -84,7 +84,7 @@ class MoveAppToGroupResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MoveAppToGroupResponse.
+        r"""Sets the status of this MoveAppToGroupResponse.
 
         请求成功失败状态
 

@@ -59,7 +59,7 @@ class ScalingActivityLogV2:
     }
 
     def __init__(self, status=None, start_time=None, end_time=None, id=None, instance_removed_list=None, instance_deleted_list=None, instance_added_list=None, instance_failed_list=None, instance_standby_list=None, scaling_value=None, description=None, instance_value=None, desire_value=None, lb_bind_success_list=None, lb_bind_failed_list=None, lb_unbind_success_list=None, lb_unbind_failed_list=None, type=None):
-        """ScalingActivityLogV2
+        r"""ScalingActivityLogV2
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class ScalingActivityLogV2:
 
     @property
     def status(self):
-        """Gets the status of this ScalingActivityLogV2.
+        r"""Gets the status of this ScalingActivityLogV2.
 
         伸缩活动状态：SUCCESS：成功。FAIL：失败。DOING：伸缩过程中。
 
@@ -173,7 +173,7 @@ class ScalingActivityLogV2:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScalingActivityLogV2.
+        r"""Sets the status of this ScalingActivityLogV2.
 
         伸缩活动状态：SUCCESS：成功。FAIL：失败。DOING：伸缩过程中。
 
@@ -184,7 +184,7 @@ class ScalingActivityLogV2:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScalingActivityLogV2.
+        r"""Gets the start_time of this ScalingActivityLogV2.
 
         伸缩活动触发时间，遵循UTC时间。
 
@@ -195,7 +195,7 @@ class ScalingActivityLogV2:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScalingActivityLogV2.
+        r"""Sets the start_time of this ScalingActivityLogV2.
 
         伸缩活动触发时间，遵循UTC时间。
 
@@ -206,7 +206,7 @@ class ScalingActivityLogV2:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ScalingActivityLogV2.
+        r"""Gets the end_time of this ScalingActivityLogV2.
 
         伸缩活动结束时间，遵循UTC时间。
 
@@ -217,7 +217,7 @@ class ScalingActivityLogV2:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ScalingActivityLogV2.
+        r"""Sets the end_time of this ScalingActivityLogV2.
 
         伸缩活动结束时间，遵循UTC时间。
 
@@ -228,7 +228,7 @@ class ScalingActivityLogV2:
 
     @property
     def id(self):
-        """Gets the id of this ScalingActivityLogV2.
+        r"""Gets the id of this ScalingActivityLogV2.
 
         伸缩活动日志ID。
 
@@ -239,7 +239,7 @@ class ScalingActivityLogV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScalingActivityLogV2.
+        r"""Sets the id of this ScalingActivityLogV2.
 
         伸缩活动日志ID。
 
@@ -250,7 +250,7 @@ class ScalingActivityLogV2:
 
     @property
     def instance_removed_list(self):
-        """Gets the instance_removed_list of this ScalingActivityLogV2.
+        r"""Gets the instance_removed_list of this ScalingActivityLogV2.
 
         完成伸缩活动且只被移出弹性伸缩组的云服务器名称列表，云服务信息之间以逗号分隔。
 
@@ -261,7 +261,7 @@ class ScalingActivityLogV2:
 
     @instance_removed_list.setter
     def instance_removed_list(self, instance_removed_list):
-        """Sets the instance_removed_list of this ScalingActivityLogV2.
+        r"""Sets the instance_removed_list of this ScalingActivityLogV2.
 
         完成伸缩活动且只被移出弹性伸缩组的云服务器名称列表，云服务信息之间以逗号分隔。
 
@@ -272,7 +272,7 @@ class ScalingActivityLogV2:
 
     @property
     def instance_deleted_list(self):
-        """Gets the instance_deleted_list of this ScalingActivityLogV2.
+        r"""Gets the instance_deleted_list of this ScalingActivityLogV2.
 
         完成伸缩活动且被移出弹性伸缩组并删除的云服务器名称列表，云服务器信息之间以逗号分隔。
 
@@ -283,7 +283,7 @@ class ScalingActivityLogV2:
 
     @instance_deleted_list.setter
     def instance_deleted_list(self, instance_deleted_list):
-        """Sets the instance_deleted_list of this ScalingActivityLogV2.
+        r"""Sets the instance_deleted_list of this ScalingActivityLogV2.
 
         完成伸缩活动且被移出弹性伸缩组并删除的云服务器名称列表，云服务器信息之间以逗号分隔。
 
@@ -294,7 +294,7 @@ class ScalingActivityLogV2:
 
     @property
     def instance_added_list(self):
-        """Gets the instance_added_list of this ScalingActivityLogV2.
+        r"""Gets the instance_added_list of this ScalingActivityLogV2.
 
         完成伸缩活动且被加入弹性伸缩组的云服务器名称列表，云服务器信息之间以逗号分割。
 
@@ -305,7 +305,7 @@ class ScalingActivityLogV2:
 
     @instance_added_list.setter
     def instance_added_list(self, instance_added_list):
-        """Sets the instance_added_list of this ScalingActivityLogV2.
+        r"""Sets the instance_added_list of this ScalingActivityLogV2.
 
         完成伸缩活动且被加入弹性伸缩组的云服务器名称列表，云服务器信息之间以逗号分割。
 
@@ -316,7 +316,7 @@ class ScalingActivityLogV2:
 
     @property
     def instance_failed_list(self):
-        """Gets the instance_failed_list of this ScalingActivityLogV2.
+        r"""Gets the instance_failed_list of this ScalingActivityLogV2.
 
         弹性伸缩组中伸缩活动失败的云服务器列表。
 
@@ -327,7 +327,7 @@ class ScalingActivityLogV2:
 
     @instance_failed_list.setter
     def instance_failed_list(self, instance_failed_list):
-        """Sets the instance_failed_list of this ScalingActivityLogV2.
+        r"""Sets the instance_failed_list of this ScalingActivityLogV2.
 
         弹性伸缩组中伸缩活动失败的云服务器列表。
 
@@ -338,7 +338,7 @@ class ScalingActivityLogV2:
 
     @property
     def instance_standby_list(self):
-        """Gets the instance_standby_list of this ScalingActivityLogV2.
+        r"""Gets the instance_standby_list of this ScalingActivityLogV2.
 
         完成伸缩活动且被转入/移出备用状态的云服务器列表
 
@@ -349,7 +349,7 @@ class ScalingActivityLogV2:
 
     @instance_standby_list.setter
     def instance_standby_list(self, instance_standby_list):
-        """Sets the instance_standby_list of this ScalingActivityLogV2.
+        r"""Sets the instance_standby_list of this ScalingActivityLogV2.
 
         完成伸缩活动且被转入/移出备用状态的云服务器列表
 
@@ -360,7 +360,7 @@ class ScalingActivityLogV2:
 
     @property
     def scaling_value(self):
-        """Gets the scaling_value of this ScalingActivityLogV2.
+        r"""Gets the scaling_value of this ScalingActivityLogV2.
 
         伸缩活动中变化（增加或减少）的云服务器数量。
 
@@ -371,7 +371,7 @@ class ScalingActivityLogV2:
 
     @scaling_value.setter
     def scaling_value(self, scaling_value):
-        """Sets the scaling_value of this ScalingActivityLogV2.
+        r"""Sets the scaling_value of this ScalingActivityLogV2.
 
         伸缩活动中变化（增加或减少）的云服务器数量。
 
@@ -382,7 +382,7 @@ class ScalingActivityLogV2:
 
     @property
     def description(self):
-        """Gets the description of this ScalingActivityLogV2.
+        r"""Gets the description of this ScalingActivityLogV2.
 
         伸缩活动的描述信息。
 
@@ -393,7 +393,7 @@ class ScalingActivityLogV2:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ScalingActivityLogV2.
+        r"""Sets the description of this ScalingActivityLogV2.
 
         伸缩活动的描述信息。
 
@@ -404,7 +404,7 @@ class ScalingActivityLogV2:
 
     @property
     def instance_value(self):
-        """Gets the instance_value of this ScalingActivityLogV2.
+        r"""Gets the instance_value of this ScalingActivityLogV2.
 
         伸缩组当前instance值。
 
@@ -415,7 +415,7 @@ class ScalingActivityLogV2:
 
     @instance_value.setter
     def instance_value(self, instance_value):
-        """Sets the instance_value of this ScalingActivityLogV2.
+        r"""Sets the instance_value of this ScalingActivityLogV2.
 
         伸缩组当前instance值。
 
@@ -426,7 +426,7 @@ class ScalingActivityLogV2:
 
     @property
     def desire_value(self):
-        """Gets the desire_value of this ScalingActivityLogV2.
+        r"""Gets the desire_value of this ScalingActivityLogV2.
 
         伸缩活动最终desire值。
 
@@ -437,7 +437,7 @@ class ScalingActivityLogV2:
 
     @desire_value.setter
     def desire_value(self, desire_value):
-        """Sets the desire_value of this ScalingActivityLogV2.
+        r"""Sets the desire_value of this ScalingActivityLogV2.
 
         伸缩活动最终desire值。
 
@@ -448,7 +448,7 @@ class ScalingActivityLogV2:
 
     @property
     def lb_bind_success_list(self):
-        """Gets the lb_bind_success_list of this ScalingActivityLogV2.
+        r"""Gets the lb_bind_success_list of this ScalingActivityLogV2.
 
         绑定成功的负载均衡器列表。
 
@@ -459,7 +459,7 @@ class ScalingActivityLogV2:
 
     @lb_bind_success_list.setter
     def lb_bind_success_list(self, lb_bind_success_list):
-        """Sets the lb_bind_success_list of this ScalingActivityLogV2.
+        r"""Sets the lb_bind_success_list of this ScalingActivityLogV2.
 
         绑定成功的负载均衡器列表。
 
@@ -470,7 +470,7 @@ class ScalingActivityLogV2:
 
     @property
     def lb_bind_failed_list(self):
-        """Gets the lb_bind_failed_list of this ScalingActivityLogV2.
+        r"""Gets the lb_bind_failed_list of this ScalingActivityLogV2.
 
         绑定失败的负载均衡器列表。
 
@@ -481,7 +481,7 @@ class ScalingActivityLogV2:
 
     @lb_bind_failed_list.setter
     def lb_bind_failed_list(self, lb_bind_failed_list):
-        """Sets the lb_bind_failed_list of this ScalingActivityLogV2.
+        r"""Sets the lb_bind_failed_list of this ScalingActivityLogV2.
 
         绑定失败的负载均衡器列表。
 
@@ -492,7 +492,7 @@ class ScalingActivityLogV2:
 
     @property
     def lb_unbind_success_list(self):
-        """Gets the lb_unbind_success_list of this ScalingActivityLogV2.
+        r"""Gets the lb_unbind_success_list of this ScalingActivityLogV2.
 
         解绑成功的负载均衡器列表。
 
@@ -503,7 +503,7 @@ class ScalingActivityLogV2:
 
     @lb_unbind_success_list.setter
     def lb_unbind_success_list(self, lb_unbind_success_list):
-        """Sets the lb_unbind_success_list of this ScalingActivityLogV2.
+        r"""Sets the lb_unbind_success_list of this ScalingActivityLogV2.
 
         解绑成功的负载均衡器列表。
 
@@ -514,7 +514,7 @@ class ScalingActivityLogV2:
 
     @property
     def lb_unbind_failed_list(self):
-        """Gets the lb_unbind_failed_list of this ScalingActivityLogV2.
+        r"""Gets the lb_unbind_failed_list of this ScalingActivityLogV2.
 
         解绑失败的负载均衡器列表。
 
@@ -525,7 +525,7 @@ class ScalingActivityLogV2:
 
     @lb_unbind_failed_list.setter
     def lb_unbind_failed_list(self, lb_unbind_failed_list):
-        """Sets the lb_unbind_failed_list of this ScalingActivityLogV2.
+        r"""Sets the lb_unbind_failed_list of this ScalingActivityLogV2.
 
         解绑失败的负载均衡器列表。
 
@@ -536,7 +536,7 @@ class ScalingActivityLogV2:
 
     @property
     def type(self):
-        """Gets the type of this ScalingActivityLogV2.
+        r"""Gets the type of this ScalingActivityLogV2.
 
         伸缩组活动类型
 
@@ -547,7 +547,7 @@ class ScalingActivityLogV2:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ScalingActivityLogV2.
+        r"""Sets the type of this ScalingActivityLogV2.
 
         伸缩组活动类型
 

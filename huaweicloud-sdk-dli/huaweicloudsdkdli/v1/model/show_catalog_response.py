@@ -32,7 +32,7 @@ class ShowCatalogResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, name=None, create_time=None, parameters=None):
-        """ShowCatalogResponse
+        r"""ShowCatalogResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowCatalogResponse.
+        r"""Gets the is_success of this ShowCatalogResponse.
 
         是否成功。
 
@@ -76,7 +76,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowCatalogResponse.
+        r"""Sets the is_success of this ShowCatalogResponse.
 
         是否成功。
 
@@ -87,7 +87,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowCatalogResponse.
+        r"""Gets the name of this ShowCatalogResponse.
 
         DLI侧catalog映射名称。
 
@@ -98,7 +98,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCatalogResponse.
+        r"""Sets the name of this ShowCatalogResponse.
 
         DLI侧catalog映射名称。
 
@@ -109,7 +109,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowCatalogResponse.
+        r"""Gets the create_time of this ShowCatalogResponse.
 
         创建时间
 
@@ -120,7 +120,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowCatalogResponse.
+        r"""Sets the create_time of this ShowCatalogResponse.
 
         创建时间
 
@@ -131,7 +131,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @property
     def parameters(self):
-        """Gets the parameters of this ShowCatalogResponse.
+        r"""Gets the parameters of this ShowCatalogResponse.
 
         :return: The parameters of this ShowCatalogResponse.
         :rtype: dict(str, str)
@@ -140,7 +140,7 @@ class ShowCatalogResponse(SdkResponse):
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ShowCatalogResponse.
+        r"""Sets the parameters of this ShowCatalogResponse.
 
         :param parameters: The parameters of this ShowCatalogResponse.
         :type parameters: dict(str, str)

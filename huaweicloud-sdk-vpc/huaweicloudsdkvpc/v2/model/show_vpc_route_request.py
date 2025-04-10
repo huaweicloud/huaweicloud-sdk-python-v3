@@ -25,7 +25,7 @@ class ShowVpcRouteRequest:
     }
 
     def __init__(self, route_id=None):
-        """ShowVpcRouteRequest
+        r"""ShowVpcRouteRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowVpcRouteRequest:
 
     @property
     def route_id(self):
-        """Gets the route_id of this ShowVpcRouteRequest.
+        r"""Gets the route_id of this ShowVpcRouteRequest.
 
         路由ID
 
@@ -53,7 +53,7 @@ class ShowVpcRouteRequest:
 
     @route_id.setter
     def route_id(self, route_id):
-        """Sets the route_id of this ShowVpcRouteRequest.
+        r"""Sets the route_id of this ShowVpcRouteRequest.
 
         路由ID
 

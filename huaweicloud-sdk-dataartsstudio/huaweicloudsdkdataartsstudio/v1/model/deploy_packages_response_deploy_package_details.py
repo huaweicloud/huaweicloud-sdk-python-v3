@@ -29,7 +29,7 @@ class DeployPackagesResponseDeployPackageDetails:
     }
 
     def __init__(self, asy_subtask_num=None, asy_task_id=None, package_id=None):
-        """DeployPackagesResponseDeployPackageDetails
+        r"""DeployPackagesResponseDeployPackageDetails
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DeployPackagesResponseDeployPackageDetails:
 
     @property
     def asy_subtask_num(self):
-        """Gets the asy_subtask_num of this DeployPackagesResponseDeployPackageDetails.
+        r"""Gets the asy_subtask_num of this DeployPackagesResponseDeployPackageDetails.
 
         总的异步执行的子任务个数
 
@@ -68,7 +68,7 @@ class DeployPackagesResponseDeployPackageDetails:
 
     @asy_subtask_num.setter
     def asy_subtask_num(self, asy_subtask_num):
-        """Sets the asy_subtask_num of this DeployPackagesResponseDeployPackageDetails.
+        r"""Sets the asy_subtask_num of this DeployPackagesResponseDeployPackageDetails.
 
         总的异步执行的子任务个数
 
@@ -79,7 +79,7 @@ class DeployPackagesResponseDeployPackageDetails:
 
     @property
     def asy_task_id(self):
-        """Gets the asy_task_id of this DeployPackagesResponseDeployPackageDetails.
+        r"""Gets the asy_task_id of this DeployPackagesResponseDeployPackageDetails.
 
         异步作业id，返回给前台轮询结果
 
@@ -90,7 +90,7 @@ class DeployPackagesResponseDeployPackageDetails:
 
     @asy_task_id.setter
     def asy_task_id(self, asy_task_id):
-        """Sets the asy_task_id of this DeployPackagesResponseDeployPackageDetails.
+        r"""Sets the asy_task_id of this DeployPackagesResponseDeployPackageDetails.
 
         异步作业id，返回给前台轮询结果
 
@@ -101,7 +101,7 @@ class DeployPackagesResponseDeployPackageDetails:
 
     @property
     def package_id(self):
-        """Gets the package_id of this DeployPackagesResponseDeployPackageDetails.
+        r"""Gets the package_id of this DeployPackagesResponseDeployPackageDetails.
 
         发布包ID
 
@@ -112,7 +112,7 @@ class DeployPackagesResponseDeployPackageDetails:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this DeployPackagesResponseDeployPackageDetails.
+        r"""Sets the package_id of this DeployPackagesResponseDeployPackageDetails.
 
         发布包ID
 

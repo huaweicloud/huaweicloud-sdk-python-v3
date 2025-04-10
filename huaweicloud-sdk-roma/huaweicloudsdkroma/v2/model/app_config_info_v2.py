@@ -37,7 +37,7 @@ class AppConfigInfoV2:
     }
 
     def __init__(self, id=None, app_id=None, config_type=None, config_name=None, config_value=None, update_time=None, description=None):
-        """AppConfigInfoV2
+        r"""AppConfigInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AppConfigInfoV2:
 
     @property
     def id(self):
-        """Gets the id of this AppConfigInfoV2.
+        r"""Gets the id of this AppConfigInfoV2.
 
         应用配置编号
 
@@ -96,7 +96,7 @@ class AppConfigInfoV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppConfigInfoV2.
+        r"""Sets the id of this AppConfigInfoV2.
 
         应用配置编号
 
@@ -107,7 +107,7 @@ class AppConfigInfoV2:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AppConfigInfoV2.
+        r"""Gets the app_id of this AppConfigInfoV2.
 
         应用编号
 
@@ -118,7 +118,7 @@ class AppConfigInfoV2:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AppConfigInfoV2.
+        r"""Sets the app_id of this AppConfigInfoV2.
 
         应用编号
 
@@ -129,7 +129,7 @@ class AppConfigInfoV2:
 
     @property
     def config_type(self):
-        """Gets the config_type of this AppConfigInfoV2.
+        r"""Gets the config_type of this AppConfigInfoV2.
 
         应用配置类型
 
@@ -140,7 +140,7 @@ class AppConfigInfoV2:
 
     @config_type.setter
     def config_type(self, config_type):
-        """Sets the config_type of this AppConfigInfoV2.
+        r"""Sets the config_type of this AppConfigInfoV2.
 
         应用配置类型
 
@@ -151,7 +151,7 @@ class AppConfigInfoV2:
 
     @property
     def config_name(self):
-        """Gets the config_name of this AppConfigInfoV2.
+        r"""Gets the config_name of this AppConfigInfoV2.
 
         应用配置名称
 
@@ -162,7 +162,7 @@ class AppConfigInfoV2:
 
     @config_name.setter
     def config_name(self, config_name):
-        """Sets the config_name of this AppConfigInfoV2.
+        r"""Sets the config_name of this AppConfigInfoV2.
 
         应用配置名称
 
@@ -173,7 +173,7 @@ class AppConfigInfoV2:
 
     @property
     def config_value(self):
-        """Gets the config_value of this AppConfigInfoV2.
+        r"""Gets the config_value of this AppConfigInfoV2.
 
         应用配置值
 
@@ -184,7 +184,7 @@ class AppConfigInfoV2:
 
     @config_value.setter
     def config_value(self, config_value):
-        """Sets the config_value of this AppConfigInfoV2.
+        r"""Sets the config_value of this AppConfigInfoV2.
 
         应用配置值
 
@@ -195,7 +195,7 @@ class AppConfigInfoV2:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppConfigInfoV2.
+        r"""Gets the update_time of this AppConfigInfoV2.
 
         应用配置更新时间
 
@@ -206,7 +206,7 @@ class AppConfigInfoV2:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppConfigInfoV2.
+        r"""Sets the update_time of this AppConfigInfoV2.
 
         应用配置更新时间
 
@@ -217,7 +217,7 @@ class AppConfigInfoV2:
 
     @property
     def description(self):
-        """Gets the description of this AppConfigInfoV2.
+        r"""Gets the description of this AppConfigInfoV2.
 
         应用配置描述
 
@@ -228,7 +228,7 @@ class AppConfigInfoV2:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppConfigInfoV2.
+        r"""Sets the description of this AppConfigInfoV2.
 
         应用配置描述
 

@@ -29,7 +29,7 @@ class ImportResultRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, uuid=None):
-        """ImportResultRequest
+        r"""ImportResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ImportResultRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ImportResultRequest.
+        r"""Gets the workspace of this ImportResultRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -66,7 +66,7 @@ class ImportResultRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ImportResultRequest.
+        r"""Sets the workspace of this ImportResultRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -77,7 +77,7 @@ class ImportResultRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ImportResultRequest.
+        r"""Gets the x_project_id of this ImportResultRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -88,7 +88,7 @@ class ImportResultRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ImportResultRequest.
+        r"""Sets the x_project_id of this ImportResultRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -99,7 +99,7 @@ class ImportResultRequest:
 
     @property
     def uuid(self):
-        """Gets the uuid of this ImportResultRequest.
+        r"""Gets the uuid of this ImportResultRequest.
 
         需要查询的某次导入的处理结果。
 
@@ -110,7 +110,7 @@ class ImportResultRequest:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this ImportResultRequest.
+        r"""Sets the uuid of this ImportResultRequest.
 
         需要查询的某次导入的处理结果。
 

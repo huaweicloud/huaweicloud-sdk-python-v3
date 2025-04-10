@@ -25,7 +25,7 @@ class BatchDeleteRecordSetWithLineRequestBody:
     }
 
     def __init__(self, recordset_ids=None):
-        """BatchDeleteRecordSetWithLineRequestBody
+        r"""BatchDeleteRecordSetWithLineRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteRecordSetWithLineRequestBody:
 
     @property
     def recordset_ids(self):
-        """Gets the recordset_ids of this BatchDeleteRecordSetWithLineRequestBody.
+        r"""Gets the recordset_ids of this BatchDeleteRecordSetWithLineRequestBody.
 
         Record Set ID列表。最多支持100个。
 
@@ -53,7 +53,7 @@ class BatchDeleteRecordSetWithLineRequestBody:
 
     @recordset_ids.setter
     def recordset_ids(self, recordset_ids):
-        """Sets the recordset_ids of this BatchDeleteRecordSetWithLineRequestBody.
+        r"""Sets the recordset_ids of this BatchDeleteRecordSetWithLineRequestBody.
 
         Record Set ID列表。最多支持100个。
 

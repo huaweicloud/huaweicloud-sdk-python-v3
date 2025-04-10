@@ -25,7 +25,7 @@ class RunSentimentRequest:
     }
 
     def __init__(self, body=None):
-        """RunSentimentRequest
+        r"""RunSentimentRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunSentimentRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunSentimentRequest.
+        r"""Gets the body of this RunSentimentRequest.
 
         :return: The body of this RunSentimentRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.HWCloudSentimentReq`
@@ -52,7 +52,7 @@ class RunSentimentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunSentimentRequest.
+        r"""Sets the body of this RunSentimentRequest.
 
         :param body: The body of this RunSentimentRequest.
         :type body: :class:`huaweicloudsdknlp.v2.HWCloudSentimentReq`

@@ -28,7 +28,7 @@ class ListNotificationMaskResourcesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, count=None):
-        """ListNotificationMaskResourcesResponse
+        r"""ListNotificationMaskResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListNotificationMaskResourcesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListNotificationMaskResourcesResponse.
+        r"""Gets the resources of this ListNotificationMaskResourcesResponse.
 
         通知屏蔽资源列表
 
@@ -62,7 +62,7 @@ class ListNotificationMaskResourcesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListNotificationMaskResourcesResponse.
+        r"""Sets the resources of this ListNotificationMaskResourcesResponse.
 
         通知屏蔽资源列表
 
@@ -73,7 +73,7 @@ class ListNotificationMaskResourcesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListNotificationMaskResourcesResponse.
+        r"""Gets the count of this ListNotificationMaskResourcesResponse.
 
         资源总数
 
@@ -84,7 +84,7 @@ class ListNotificationMaskResourcesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListNotificationMaskResourcesResponse.
+        r"""Sets the count of this ListNotificationMaskResourcesResponse.
 
         资源总数
 

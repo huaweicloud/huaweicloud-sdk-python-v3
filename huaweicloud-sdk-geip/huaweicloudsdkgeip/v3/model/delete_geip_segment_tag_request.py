@@ -27,7 +27,7 @@ class DeleteGeipSegmentTagRequest:
     }
 
     def __init__(self, resource_id=None, tag_key=None):
-        """DeleteGeipSegmentTagRequest
+        r"""DeleteGeipSegmentTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteGeipSegmentTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteGeipSegmentTagRequest.
+        r"""Gets the resource_id of this DeleteGeipSegmentTagRequest.
 
         :return: The resource_id of this DeleteGeipSegmentTagRequest.
         :rtype: str
@@ -57,7 +57,7 @@ class DeleteGeipSegmentTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteGeipSegmentTagRequest.
+        r"""Sets the resource_id of this DeleteGeipSegmentTagRequest.
 
         :param resource_id: The resource_id of this DeleteGeipSegmentTagRequest.
         :type resource_id: str
@@ -66,7 +66,7 @@ class DeleteGeipSegmentTagRequest:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this DeleteGeipSegmentTagRequest.
+        r"""Gets the tag_key of this DeleteGeipSegmentTagRequest.
 
         :return: The tag_key of this DeleteGeipSegmentTagRequest.
         :rtype: str
@@ -75,7 +75,7 @@ class DeleteGeipSegmentTagRequest:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this DeleteGeipSegmentTagRequest.
+        r"""Sets the tag_key of this DeleteGeipSegmentTagRequest.
 
         :param tag_key: The tag_key of this DeleteGeipSegmentTagRequest.
         :type tag_key: str

@@ -27,7 +27,7 @@ class RebuildImageRequest:
     }
 
     def __init__(self, job_id=None, body=None):
-        """RebuildImageRequest
+        r"""RebuildImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RebuildImageRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this RebuildImageRequest.
+        r"""Gets the job_id of this RebuildImageRequest.
 
         任务ID。
 
@@ -60,7 +60,7 @@ class RebuildImageRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RebuildImageRequest.
+        r"""Sets the job_id of this RebuildImageRequest.
 
         任务ID。
 
@@ -71,7 +71,7 @@ class RebuildImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this RebuildImageRequest.
+        r"""Gets the body of this RebuildImageRequest.
 
         :return: The body of this RebuildImageRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.RebuildImageRequestBody`
@@ -80,7 +80,7 @@ class RebuildImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RebuildImageRequest.
+        r"""Sets the body of this RebuildImageRequest.
 
         :param body: The body of this RebuildImageRequest.
         :type body: :class:`huaweicloudsdkiec.v1.RebuildImageRequestBody`

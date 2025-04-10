@@ -37,7 +37,7 @@ class AnalysisModelResponse:
     }
 
     def __init__(self, name=None, display_name=None, type=None, transform=None, aggregate=None, stream=None, analysis_id=None):
-        """AnalysisModelResponse
+        r"""AnalysisModelResponse
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class AnalysisModelResponse:
 
     @property
     def name(self):
-        """Gets the name of this AnalysisModelResponse.
+        r"""Gets the name of this AnalysisModelResponse.
 
         分析任务名称，正则：\"^[a-zA-Z][a-zA-Z0-9_]{0,63}$\"
 
@@ -94,7 +94,7 @@ class AnalysisModelResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AnalysisModelResponse.
+        r"""Sets the name of this AnalysisModelResponse.
 
         分析任务名称，正则：\"^[a-zA-Z][a-zA-Z0-9_]{0,63}$\"
 
@@ -105,7 +105,7 @@ class AnalysisModelResponse:
 
     @property
     def display_name(self):
-        """Gets the display_name of this AnalysisModelResponse.
+        r"""Gets the display_name of this AnalysisModelResponse.
 
         分析任务显示名称，正则：\"^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{1,64}$\"
 
@@ -116,7 +116,7 @@ class AnalysisModelResponse:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this AnalysisModelResponse.
+        r"""Sets the display_name of this AnalysisModelResponse.
 
         分析任务显示名称，正则：\"^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{1,64}$\"
 
@@ -127,7 +127,7 @@ class AnalysisModelResponse:
 
     @property
     def type(self):
-        """Gets the type of this AnalysisModelResponse.
+        r"""Gets the type of this AnalysisModelResponse.
 
         分析任务类型，转换计算（transform）、聚合计算（aggregate）、流计算（stream）
 
@@ -138,7 +138,7 @@ class AnalysisModelResponse:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AnalysisModelResponse.
+        r"""Sets the type of this AnalysisModelResponse.
 
         分析任务类型，转换计算（transform）、聚合计算（aggregate）、流计算（stream）
 
@@ -149,7 +149,7 @@ class AnalysisModelResponse:
 
     @property
     def transform(self):
-        """Gets the transform of this AnalysisModelResponse.
+        r"""Gets the transform of this AnalysisModelResponse.
 
         :return: The transform of this AnalysisModelResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TransformModel`
@@ -158,7 +158,7 @@ class AnalysisModelResponse:
 
     @transform.setter
     def transform(self, transform):
-        """Sets the transform of this AnalysisModelResponse.
+        r"""Sets the transform of this AnalysisModelResponse.
 
         :param transform: The transform of this AnalysisModelResponse.
         :type transform: :class:`huaweicloudsdkiotanalytics.v1.TransformModel`
@@ -167,7 +167,7 @@ class AnalysisModelResponse:
 
     @property
     def aggregate(self):
-        """Gets the aggregate of this AnalysisModelResponse.
+        r"""Gets the aggregate of this AnalysisModelResponse.
 
         :return: The aggregate of this AnalysisModelResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.AggregateModel`
@@ -176,7 +176,7 @@ class AnalysisModelResponse:
 
     @aggregate.setter
     def aggregate(self, aggregate):
-        """Sets the aggregate of this AnalysisModelResponse.
+        r"""Sets the aggregate of this AnalysisModelResponse.
 
         :param aggregate: The aggregate of this AnalysisModelResponse.
         :type aggregate: :class:`huaweicloudsdkiotanalytics.v1.AggregateModel`
@@ -185,7 +185,7 @@ class AnalysisModelResponse:
 
     @property
     def stream(self):
-        """Gets the stream of this AnalysisModelResponse.
+        r"""Gets the stream of this AnalysisModelResponse.
 
         :return: The stream of this AnalysisModelResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.StreamModel`
@@ -194,7 +194,7 @@ class AnalysisModelResponse:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this AnalysisModelResponse.
+        r"""Sets the stream of this AnalysisModelResponse.
 
         :param stream: The stream of this AnalysisModelResponse.
         :type stream: :class:`huaweicloudsdkiotanalytics.v1.StreamModel`
@@ -203,7 +203,7 @@ class AnalysisModelResponse:
 
     @property
     def analysis_id(self):
-        """Gets the analysis_id of this AnalysisModelResponse.
+        r"""Gets the analysis_id of this AnalysisModelResponse.
 
         分析任务ID
 
@@ -214,7 +214,7 @@ class AnalysisModelResponse:
 
     @analysis_id.setter
     def analysis_id(self, analysis_id):
-        """Sets the analysis_id of this AnalysisModelResponse.
+        r"""Sets the analysis_id of this AnalysisModelResponse.
 
         分析任务ID
 

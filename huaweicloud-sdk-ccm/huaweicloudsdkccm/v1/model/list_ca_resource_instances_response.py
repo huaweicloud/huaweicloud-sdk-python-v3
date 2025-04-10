@@ -28,7 +28,7 @@ class ListCaResourceInstancesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, resources=None):
-        """ListCaResourceInstancesResponse
+        r"""ListCaResourceInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCaResourceInstancesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListCaResourceInstancesResponse.
+        r"""Gets the total_count of this ListCaResourceInstancesResponse.
 
         总记录数。
 
@@ -62,7 +62,7 @@ class ListCaResourceInstancesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListCaResourceInstancesResponse.
+        r"""Sets the total_count of this ListCaResourceInstancesResponse.
 
         总记录数。
 
@@ -73,7 +73,7 @@ class ListCaResourceInstancesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListCaResourceInstancesResponse.
+        r"""Gets the resources of this ListCaResourceInstancesResponse.
 
         资源实例列表，详情请参见TagResource字段数据结构说明。
 
@@ -84,7 +84,7 @@ class ListCaResourceInstancesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListCaResourceInstancesResponse.
+        r"""Sets the resources of this ListCaResourceInstancesResponse.
 
         资源实例列表，详情请参见TagResource字段数据结构说明。
 

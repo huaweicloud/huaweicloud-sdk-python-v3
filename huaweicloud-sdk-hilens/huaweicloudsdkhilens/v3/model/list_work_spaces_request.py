@@ -29,7 +29,7 @@ class ListWorkSpacesRequest:
     }
 
     def __init__(self, iam_user_id=None, offset=None, limit=None):
-        """ListWorkSpacesRequest
+        r"""ListWorkSpacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListWorkSpacesRequest:
 
     @property
     def iam_user_id(self):
-        """Gets the iam_user_id of this ListWorkSpacesRequest.
+        r"""Gets the iam_user_id of this ListWorkSpacesRequest.
 
         用户的userId，用于查询指定的的子工作空间
 
@@ -68,7 +68,7 @@ class ListWorkSpacesRequest:
 
     @iam_user_id.setter
     def iam_user_id(self, iam_user_id):
-        """Sets the iam_user_id of this ListWorkSpacesRequest.
+        r"""Sets the iam_user_id of this ListWorkSpacesRequest.
 
         用户的userId，用于查询指定的的子工作空间
 
@@ -79,7 +79,7 @@ class ListWorkSpacesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkSpacesRequest.
+        r"""Gets the offset of this ListWorkSpacesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -90,7 +90,7 @@ class ListWorkSpacesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkSpacesRequest.
+        r"""Sets the offset of this ListWorkSpacesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -101,7 +101,7 @@ class ListWorkSpacesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkSpacesRequest.
+        r"""Gets the limit of this ListWorkSpacesRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 
@@ -112,7 +112,7 @@ class ListWorkSpacesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkSpacesRequest.
+        r"""Sets the limit of this ListWorkSpacesRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 

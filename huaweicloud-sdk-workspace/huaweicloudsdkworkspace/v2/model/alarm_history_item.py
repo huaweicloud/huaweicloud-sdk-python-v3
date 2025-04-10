@@ -45,7 +45,7 @@ class AlarmHistoryItem:
     }
 
     def __init__(self, record_id=None, alarm_id=None, name=None, status=None, type=None, level=None, begin_time=None, metric=None, condition=None, additional_info=None, data_points=None):
-        """AlarmHistoryItem
+        r"""AlarmHistoryItem
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class AlarmHistoryItem:
 
     @property
     def record_id(self):
-        """Gets the record_id of this AlarmHistoryItem.
+        r"""Gets the record_id of this AlarmHistoryItem.
 
         告警记录
 
@@ -124,7 +124,7 @@ class AlarmHistoryItem:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this AlarmHistoryItem.
+        r"""Sets the record_id of this AlarmHistoryItem.
 
         告警记录
 
@@ -135,7 +135,7 @@ class AlarmHistoryItem:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this AlarmHistoryItem.
+        r"""Gets the alarm_id of this AlarmHistoryItem.
 
         告警规则ID
 
@@ -146,7 +146,7 @@ class AlarmHistoryItem:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this AlarmHistoryItem.
+        r"""Sets the alarm_id of this AlarmHistoryItem.
 
         告警规则ID
 
@@ -157,7 +157,7 @@ class AlarmHistoryItem:
 
     @property
     def name(self):
-        """Gets the name of this AlarmHistoryItem.
+        r"""Gets the name of this AlarmHistoryItem.
 
         告警规则的名称
 
@@ -168,7 +168,7 @@ class AlarmHistoryItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AlarmHistoryItem.
+        r"""Sets the name of this AlarmHistoryItem.
 
         告警规则的名称
 
@@ -179,7 +179,7 @@ class AlarmHistoryItem:
 
     @property
     def status(self):
-        """Gets the status of this AlarmHistoryItem.
+        r"""Gets the status of this AlarmHistoryItem.
 
         告警记录的状态，取值为ok，alarm，invalid； ok为正常，alarm为告警，invalid为已失效。
 
@@ -190,7 +190,7 @@ class AlarmHistoryItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AlarmHistoryItem.
+        r"""Sets the status of this AlarmHistoryItem.
 
         告警记录的状态，取值为ok，alarm，invalid； ok为正常，alarm为告警，invalid为已失效。
 
@@ -201,7 +201,7 @@ class AlarmHistoryItem:
 
     @property
     def type(self):
-        """Gets the type of this AlarmHistoryItem.
+        r"""Gets the type of this AlarmHistoryItem.
 
         告警规则类型 | ALL_INSTANCE为全部资源指标告警， RESOURCE_GROUP为资源分组指标告警， MULTI_INSTANCE为指定资源指标告警， EVENT.SYS为系统事件告警， EVENT.CUSTOM自定义事件告警， DNSHealthCheck为健康检查告警；
 
@@ -212,7 +212,7 @@ class AlarmHistoryItem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AlarmHistoryItem.
+        r"""Sets the type of this AlarmHistoryItem.
 
         告警规则类型 | ALL_INSTANCE为全部资源指标告警， RESOURCE_GROUP为资源分组指标告警， MULTI_INSTANCE为指定资源指标告警， EVENT.SYS为系统事件告警， EVENT.CUSTOM自定义事件告警， DNSHealthCheck为健康检查告警；
 
@@ -223,7 +223,7 @@ class AlarmHistoryItem:
 
     @property
     def level(self):
-        """Gets the level of this AlarmHistoryItem.
+        r"""Gets the level of this AlarmHistoryItem.
 
         告警记录的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
 
@@ -234,7 +234,7 @@ class AlarmHistoryItem:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this AlarmHistoryItem.
+        r"""Sets the level of this AlarmHistoryItem.
 
         告警记录的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
 
@@ -245,7 +245,7 @@ class AlarmHistoryItem:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this AlarmHistoryItem.
+        r"""Gets the begin_time of this AlarmHistoryItem.
 
         产生时间,UTC时间
 
@@ -256,7 +256,7 @@ class AlarmHistoryItem:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this AlarmHistoryItem.
+        r"""Sets the begin_time of this AlarmHistoryItem.
 
         产生时间,UTC时间
 
@@ -267,7 +267,7 @@ class AlarmHistoryItem:
 
     @property
     def metric(self):
-        """Gets the metric of this AlarmHistoryItem.
+        r"""Gets the metric of this AlarmHistoryItem.
 
         :return: The metric of this AlarmHistoryItem.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AlarmMetric`
@@ -276,7 +276,7 @@ class AlarmHistoryItem:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this AlarmHistoryItem.
+        r"""Sets the metric of this AlarmHistoryItem.
 
         :param metric: The metric of this AlarmHistoryItem.
         :type metric: :class:`huaweicloudsdkworkspace.v2.AlarmMetric`
@@ -285,7 +285,7 @@ class AlarmHistoryItem:
 
     @property
     def condition(self):
-        """Gets the condition of this AlarmHistoryItem.
+        r"""Gets the condition of this AlarmHistoryItem.
 
         :return: The condition of this AlarmHistoryItem.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AlarmCondition`
@@ -294,7 +294,7 @@ class AlarmHistoryItem:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this AlarmHistoryItem.
+        r"""Sets the condition of this AlarmHistoryItem.
 
         :param condition: The condition of this AlarmHistoryItem.
         :type condition: :class:`huaweicloudsdkworkspace.v2.AlarmCondition`
@@ -303,7 +303,7 @@ class AlarmHistoryItem:
 
     @property
     def additional_info(self):
-        """Gets the additional_info of this AlarmHistoryItem.
+        r"""Gets the additional_info of this AlarmHistoryItem.
 
         :return: The additional_info of this AlarmHistoryItem.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AdditionalInfo`
@@ -312,7 +312,7 @@ class AlarmHistoryItem:
 
     @additional_info.setter
     def additional_info(self, additional_info):
-        """Sets the additional_info of this AlarmHistoryItem.
+        r"""Sets the additional_info of this AlarmHistoryItem.
 
         :param additional_info: The additional_info of this AlarmHistoryItem.
         :type additional_info: :class:`huaweicloudsdkworkspace.v2.AdditionalInfo`
@@ -321,7 +321,7 @@ class AlarmHistoryItem:
 
     @property
     def data_points(self):
-        """Gets the data_points of this AlarmHistoryItem.
+        r"""Gets the data_points of this AlarmHistoryItem.
 
         计算出该条告警记录的资源监控数据上报时间和监控数值。
 
@@ -332,7 +332,7 @@ class AlarmHistoryItem:
 
     @data_points.setter
     def data_points(self, data_points):
-        """Sets the data_points of this AlarmHistoryItem.
+        r"""Sets the data_points of this AlarmHistoryItem.
 
         计算出该条告警记录的资源监控数据上报时间和监控数值。
 

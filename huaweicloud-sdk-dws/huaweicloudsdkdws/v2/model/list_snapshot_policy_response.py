@@ -36,7 +36,7 @@ class ListSnapshotPolicyResponse(SdkResponse):
     }
 
     def __init__(self, keep_day=None, backup_strategies=None, device_name=None, server_ips=None, server_port=None, backup_param=None):
-        """ListSnapshotPolicyResponse
+        r"""ListSnapshotPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListSnapshotPolicyResponse(SdkResponse):
 
     @property
     def keep_day(self):
-        """Gets the keep_day of this ListSnapshotPolicyResponse.
+        r"""Gets the keep_day of this ListSnapshotPolicyResponse.
 
         保留天数。
 
@@ -90,7 +90,7 @@ class ListSnapshotPolicyResponse(SdkResponse):
 
     @keep_day.setter
     def keep_day(self, keep_day):
-        """Sets the keep_day of this ListSnapshotPolicyResponse.
+        r"""Sets the keep_day of this ListSnapshotPolicyResponse.
 
         保留天数。
 
@@ -101,7 +101,7 @@ class ListSnapshotPolicyResponse(SdkResponse):
 
     @property
     def backup_strategies(self):
-        """Gets the backup_strategies of this ListSnapshotPolicyResponse.
+        r"""Gets the backup_strategies of this ListSnapshotPolicyResponse.
 
         备份策略。
 
@@ -112,7 +112,7 @@ class ListSnapshotPolicyResponse(SdkResponse):
 
     @backup_strategies.setter
     def backup_strategies(self, backup_strategies):
-        """Sets the backup_strategies of this ListSnapshotPolicyResponse.
+        r"""Sets the backup_strategies of this ListSnapshotPolicyResponse.
 
         备份策略。
 
@@ -123,7 +123,7 @@ class ListSnapshotPolicyResponse(SdkResponse):
 
     @property
     def device_name(self):
-        """Gets the device_name of this ListSnapshotPolicyResponse.
+        r"""Gets the device_name of this ListSnapshotPolicyResponse.
 
         备份设备。
 
@@ -134,7 +134,7 @@ class ListSnapshotPolicyResponse(SdkResponse):
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this ListSnapshotPolicyResponse.
+        r"""Sets the device_name of this ListSnapshotPolicyResponse.
 
         备份设备。
 
@@ -145,7 +145,7 @@ class ListSnapshotPolicyResponse(SdkResponse):
 
     @property
     def server_ips(self):
-        """Gets the server_ips of this ListSnapshotPolicyResponse.
+        r"""Gets the server_ips of this ListSnapshotPolicyResponse.
 
         服务IP。
 
@@ -156,7 +156,7 @@ class ListSnapshotPolicyResponse(SdkResponse):
 
     @server_ips.setter
     def server_ips(self, server_ips):
-        """Sets the server_ips of this ListSnapshotPolicyResponse.
+        r"""Sets the server_ips of this ListSnapshotPolicyResponse.
 
         服务IP。
 
@@ -167,7 +167,7 @@ class ListSnapshotPolicyResponse(SdkResponse):
 
     @property
     def server_port(self):
-        """Gets the server_port of this ListSnapshotPolicyResponse.
+        r"""Gets the server_port of this ListSnapshotPolicyResponse.
 
         服务端口。
 
@@ -178,7 +178,7 @@ class ListSnapshotPolicyResponse(SdkResponse):
 
     @server_port.setter
     def server_port(self, server_port):
-        """Sets the server_port of this ListSnapshotPolicyResponse.
+        r"""Sets the server_port of this ListSnapshotPolicyResponse.
 
         服务端口。
 
@@ -189,7 +189,7 @@ class ListSnapshotPolicyResponse(SdkResponse):
 
     @property
     def backup_param(self):
-        """Gets the backup_param of this ListSnapshotPolicyResponse.
+        r"""Gets the backup_param of this ListSnapshotPolicyResponse.
 
         参数。
 
@@ -200,7 +200,7 @@ class ListSnapshotPolicyResponse(SdkResponse):
 
     @backup_param.setter
     def backup_param(self, backup_param):
-        """Sets the backup_param of this ListSnapshotPolicyResponse.
+        r"""Sets the backup_param of this ListSnapshotPolicyResponse.
 
         参数。
 

@@ -26,7 +26,7 @@ class ListAccessAddressBackupConfigResponse(SdkResponse):
     }
 
     def __init__(self, access_config=None):
-        """ListAccessAddressBackupConfigResponse
+        r"""ListAccessAddressBackupConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAccessAddressBackupConfigResponse(SdkResponse):
 
     @property
     def access_config(self):
-        """Gets the access_config of this ListAccessAddressBackupConfigResponse.
+        r"""Gets the access_config of this ListAccessAddressBackupConfigResponse.
 
         接入配置列表信息。
 
@@ -55,7 +55,7 @@ class ListAccessAddressBackupConfigResponse(SdkResponse):
 
     @access_config.setter
     def access_config(self, access_config):
-        """Sets the access_config of this ListAccessAddressBackupConfigResponse.
+        r"""Sets the access_config of this ListAccessAddressBackupConfigResponse.
 
         接入配置列表信息。
 

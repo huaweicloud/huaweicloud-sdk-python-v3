@@ -25,7 +25,7 @@ class BaseResp:
     }
 
     def __init__(self, total_count=None):
-        """BaseResp
+        r"""BaseResp
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BaseResp:
 
     @property
     def total_count(self):
-        """Gets the total_count of this BaseResp.
+        r"""Gets the total_count of this BaseResp.
 
         列表中的项目总数，与分页无关。
 
@@ -53,7 +53,7 @@ class BaseResp:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this BaseResp.
+        r"""Sets the total_count of this BaseResp.
 
         列表中的项目总数，与分页无关。
 

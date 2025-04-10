@@ -36,7 +36,7 @@ class ShowReplayDelayStatusResponse(SdkResponse):
     }
 
     def __init__(self, cur_delay_time_mills=None, delay_time_value_range=None, real_delay_time_mills=None, cur_log_replay_paused=None, latest_receive_log=None, latest_replay_log=None):
-        """ShowReplayDelayStatusResponse
+        r"""ShowReplayDelayStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowReplayDelayStatusResponse(SdkResponse):
 
     @property
     def cur_delay_time_mills(self):
-        """Gets the cur_delay_time_mills of this ShowReplayDelayStatusResponse.
+        r"""Gets the cur_delay_time_mills of this ShowReplayDelayStatusResponse.
 
         当前配置的延迟时间，单位ms
 
@@ -90,7 +90,7 @@ class ShowReplayDelayStatusResponse(SdkResponse):
 
     @cur_delay_time_mills.setter
     def cur_delay_time_mills(self, cur_delay_time_mills):
-        """Sets the cur_delay_time_mills of this ShowReplayDelayStatusResponse.
+        r"""Sets the cur_delay_time_mills of this ShowReplayDelayStatusResponse.
 
         当前配置的延迟时间，单位ms
 
@@ -101,7 +101,7 @@ class ShowReplayDelayStatusResponse(SdkResponse):
 
     @property
     def delay_time_value_range(self):
-        """Gets the delay_time_value_range of this ShowReplayDelayStatusResponse.
+        r"""Gets the delay_time_value_range of this ShowReplayDelayStatusResponse.
 
         延迟时间参数取值范围
 
@@ -112,7 +112,7 @@ class ShowReplayDelayStatusResponse(SdkResponse):
 
     @delay_time_value_range.setter
     def delay_time_value_range(self, delay_time_value_range):
-        """Sets the delay_time_value_range of this ShowReplayDelayStatusResponse.
+        r"""Sets the delay_time_value_range of this ShowReplayDelayStatusResponse.
 
         延迟时间参数取值范围
 
@@ -123,7 +123,7 @@ class ShowReplayDelayStatusResponse(SdkResponse):
 
     @property
     def real_delay_time_mills(self):
-        """Gets the real_delay_time_mills of this ShowReplayDelayStatusResponse.
+        r"""Gets the real_delay_time_mills of this ShowReplayDelayStatusResponse.
 
         真实延迟时间，单位ms
 
@@ -134,7 +134,7 @@ class ShowReplayDelayStatusResponse(SdkResponse):
 
     @real_delay_time_mills.setter
     def real_delay_time_mills(self, real_delay_time_mills):
-        """Sets the real_delay_time_mills of this ShowReplayDelayStatusResponse.
+        r"""Sets the real_delay_time_mills of this ShowReplayDelayStatusResponse.
 
         真实延迟时间，单位ms
 
@@ -145,7 +145,7 @@ class ShowReplayDelayStatusResponse(SdkResponse):
 
     @property
     def cur_log_replay_paused(self):
-        """Gets the cur_log_replay_paused of this ShowReplayDelayStatusResponse.
+        r"""Gets the cur_log_replay_paused of this ShowReplayDelayStatusResponse.
 
         当前日志回放状态。true表示回放暂停，false表示回放正常
 
@@ -156,7 +156,7 @@ class ShowReplayDelayStatusResponse(SdkResponse):
 
     @cur_log_replay_paused.setter
     def cur_log_replay_paused(self, cur_log_replay_paused):
-        """Sets the cur_log_replay_paused of this ShowReplayDelayStatusResponse.
+        r"""Sets the cur_log_replay_paused of this ShowReplayDelayStatusResponse.
 
         当前日志回放状态。true表示回放暂停，false表示回放正常
 
@@ -167,7 +167,7 @@ class ShowReplayDelayStatusResponse(SdkResponse):
 
     @property
     def latest_receive_log(self):
-        """Gets the latest_receive_log of this ShowReplayDelayStatusResponse.
+        r"""Gets the latest_receive_log of this ShowReplayDelayStatusResponse.
 
         最新接收的日志
 
@@ -178,7 +178,7 @@ class ShowReplayDelayStatusResponse(SdkResponse):
 
     @latest_receive_log.setter
     def latest_receive_log(self, latest_receive_log):
-        """Sets the latest_receive_log of this ShowReplayDelayStatusResponse.
+        r"""Sets the latest_receive_log of this ShowReplayDelayStatusResponse.
 
         最新接收的日志
 
@@ -189,7 +189,7 @@ class ShowReplayDelayStatusResponse(SdkResponse):
 
     @property
     def latest_replay_log(self):
-        """Gets the latest_replay_log of this ShowReplayDelayStatusResponse.
+        r"""Gets the latest_replay_log of this ShowReplayDelayStatusResponse.
 
         最新回放的日志位点
 
@@ -200,7 +200,7 @@ class ShowReplayDelayStatusResponse(SdkResponse):
 
     @latest_replay_log.setter
     def latest_replay_log(self, latest_replay_log):
-        """Sets the latest_replay_log of this ShowReplayDelayStatusResponse.
+        r"""Sets the latest_replay_log of this ShowReplayDelayStatusResponse.
 
         最新回放的日志位点
 

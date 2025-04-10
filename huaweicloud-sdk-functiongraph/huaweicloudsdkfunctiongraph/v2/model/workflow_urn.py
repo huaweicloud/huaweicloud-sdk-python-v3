@@ -23,7 +23,7 @@ class WorkflowUrn:
     }
 
     def __init__(self):
-        """WorkflowUrn
+        r"""WorkflowUrn
 
         The model defined in huaweicloud sdk
 

@@ -30,7 +30,7 @@ class CreateCloudTableClusterResponse(SdkResponse):
     }
 
     def __init__(self, cluster_id=None, job_id=None, get_job_endpoint=None):
-        """CreateCloudTableClusterResponse
+        r"""CreateCloudTableClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateCloudTableClusterResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateCloudTableClusterResponse.
+        r"""Gets the cluster_id of this CreateCloudTableClusterResponse.
 
         集群ID
 
@@ -69,7 +69,7 @@ class CreateCloudTableClusterResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateCloudTableClusterResponse.
+        r"""Sets the cluster_id of this CreateCloudTableClusterResponse.
 
         集群ID
 
@@ -80,7 +80,7 @@ class CreateCloudTableClusterResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateCloudTableClusterResponse.
+        r"""Gets the job_id of this CreateCloudTableClusterResponse.
 
         :return: The job_id of this CreateCloudTableClusterResponse.
         :rtype: str
@@ -89,7 +89,7 @@ class CreateCloudTableClusterResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateCloudTableClusterResponse.
+        r"""Sets the job_id of this CreateCloudTableClusterResponse.
 
         :param job_id: The job_id of this CreateCloudTableClusterResponse.
         :type job_id: str
@@ -98,7 +98,7 @@ class CreateCloudTableClusterResponse(SdkResponse):
 
     @property
     def get_job_endpoint(self):
-        """Gets the get_job_endpoint of this CreateCloudTableClusterResponse.
+        r"""Gets the get_job_endpoint of this CreateCloudTableClusterResponse.
 
         :return: The get_job_endpoint of this CreateCloudTableClusterResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateCloudTableClusterResponse(SdkResponse):
 
     @get_job_endpoint.setter
     def get_job_endpoint(self, get_job_endpoint):
-        """Sets the get_job_endpoint of this CreateCloudTableClusterResponse.
+        r"""Sets the get_job_endpoint of this CreateCloudTableClusterResponse.
 
         :param get_job_endpoint: The get_job_endpoint of this CreateCloudTableClusterResponse.
         :type get_job_endpoint: str

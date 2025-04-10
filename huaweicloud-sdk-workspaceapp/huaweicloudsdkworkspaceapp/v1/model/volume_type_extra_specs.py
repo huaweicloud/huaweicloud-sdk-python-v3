@@ -27,7 +27,7 @@ class VolumeTypeExtraSpecs:
     }
 
     def __init__(self, availability_zone=None, sold_out_availability_zone=None):
-        """VolumeTypeExtraSpecs
+        r"""VolumeTypeExtraSpecs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VolumeTypeExtraSpecs:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this VolumeTypeExtraSpecs.
+        r"""Gets the availability_zone of this VolumeTypeExtraSpecs.
 
         该类型磁盘对应的可用分区。
 
@@ -61,7 +61,7 @@ class VolumeTypeExtraSpecs:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this VolumeTypeExtraSpecs.
+        r"""Sets the availability_zone of this VolumeTypeExtraSpecs.
 
         该类型磁盘对应的可用分区。
 
@@ -72,7 +72,7 @@ class VolumeTypeExtraSpecs:
 
     @property
     def sold_out_availability_zone(self):
-        """Gets the sold_out_availability_zone of this VolumeTypeExtraSpecs.
+        r"""Gets the sold_out_availability_zone of this VolumeTypeExtraSpecs.
 
         已售罄的磁盘可用区。
 
@@ -83,7 +83,7 @@ class VolumeTypeExtraSpecs:
 
     @sold_out_availability_zone.setter
     def sold_out_availability_zone(self, sold_out_availability_zone):
-        """Sets the sold_out_availability_zone of this VolumeTypeExtraSpecs.
+        r"""Sets the sold_out_availability_zone of this VolumeTypeExtraSpecs.
 
         已售罄的磁盘可用区。
 

@@ -28,7 +28,7 @@ class ListSecurityResourcePermissionsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, policies=None):
-        """ListSecurityResourcePermissionsResponse
+        r"""ListSecurityResourcePermissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecurityResourcePermissionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSecurityResourcePermissionsResponse.
+        r"""Gets the total of this ListSecurityResourcePermissionsResponse.
 
         空间资源权限策略总条数
 
@@ -62,7 +62,7 @@ class ListSecurityResourcePermissionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSecurityResourcePermissionsResponse.
+        r"""Sets the total of this ListSecurityResourcePermissionsResponse.
 
         空间资源权限策略总条数
 
@@ -73,7 +73,7 @@ class ListSecurityResourcePermissionsResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ListSecurityResourcePermissionsResponse.
+        r"""Gets the policies of this ListSecurityResourcePermissionsResponse.
 
         空间资源权限策略列表
 
@@ -84,7 +84,7 @@ class ListSecurityResourcePermissionsResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListSecurityResourcePermissionsResponse.
+        r"""Sets the policies of this ListSecurityResourcePermissionsResponse.
 
         空间资源权限策略列表
 

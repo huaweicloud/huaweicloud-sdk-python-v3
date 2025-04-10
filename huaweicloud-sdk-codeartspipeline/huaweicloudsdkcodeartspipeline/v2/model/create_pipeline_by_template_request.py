@@ -25,7 +25,7 @@ class CreatePipelineByTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePipelineByTemplateRequest
+        r"""CreatePipelineByTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreatePipelineByTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePipelineByTemplateRequest.
+        r"""Gets the body of this CreatePipelineByTemplateRequest.
 
         :return: The body of this CreatePipelineByTemplateRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.TemplateCddl`
@@ -52,7 +52,7 @@ class CreatePipelineByTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePipelineByTemplateRequest.
+        r"""Sets the body of this CreatePipelineByTemplateRequest.
 
         :param body: The body of this CreatePipelineByTemplateRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.TemplateCddl`

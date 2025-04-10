@@ -31,7 +31,7 @@ class ListTakeOverTaskRequest:
     }
 
     def __init__(self, status=None, task_id=None, page=None, size=None):
-        """ListTakeOverTaskRequest
+        r"""ListTakeOverTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListTakeOverTaskRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListTakeOverTaskRequest.
+        r"""Gets the status of this ListTakeOverTaskRequest.
 
         任务状态。
 
@@ -75,7 +75,7 @@ class ListTakeOverTaskRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListTakeOverTaskRequest.
+        r"""Sets the status of this ListTakeOverTaskRequest.
 
         任务状态。
 
@@ -86,7 +86,7 @@ class ListTakeOverTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListTakeOverTaskRequest.
+        r"""Gets the task_id of this ListTakeOverTaskRequest.
 
         任务ID。
 
@@ -97,7 +97,7 @@ class ListTakeOverTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListTakeOverTaskRequest.
+        r"""Sets the task_id of this ListTakeOverTaskRequest.
 
         任务ID。
 
@@ -108,7 +108,7 @@ class ListTakeOverTaskRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListTakeOverTaskRequest.
+        r"""Gets the page of this ListTakeOverTaskRequest.
 
         分页编号，默认为0。
 
@@ -119,7 +119,7 @@ class ListTakeOverTaskRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListTakeOverTaskRequest.
+        r"""Sets the page of this ListTakeOverTaskRequest.
 
         分页编号，默认为0。
 
@@ -130,7 +130,7 @@ class ListTakeOverTaskRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListTakeOverTaskRequest.
+        r"""Gets the size of this ListTakeOverTaskRequest.
 
         每页记录数。  默认10，范围[1,100]，指定task_id时该参数无效。
 
@@ -141,7 +141,7 @@ class ListTakeOverTaskRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListTakeOverTaskRequest.
+        r"""Sets the size of this ListTakeOverTaskRequest.
 
         每页记录数。  默认10，范围[1,100]，指定task_id时该参数无效。
 

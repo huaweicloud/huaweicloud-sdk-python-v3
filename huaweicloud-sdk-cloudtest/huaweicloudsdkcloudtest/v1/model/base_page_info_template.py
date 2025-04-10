@@ -35,7 +35,7 @@ class BasePageInfoTemplate:
     }
 
     def __init__(self, total=None, list=None, limit=None, offset=None, pages=None, size=None):
-        """BasePageInfoTemplate
+        r"""BasePageInfoTemplate
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BasePageInfoTemplate:
 
     @property
     def total(self):
-        """Gets the total of this BasePageInfoTemplate.
+        r"""Gets the total of this BasePageInfoTemplate.
 
         总条数
 
@@ -89,7 +89,7 @@ class BasePageInfoTemplate:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BasePageInfoTemplate.
+        r"""Sets the total of this BasePageInfoTemplate.
 
         总条数
 
@@ -100,7 +100,7 @@ class BasePageInfoTemplate:
 
     @property
     def list(self):
-        """Gets the list of this BasePageInfoTemplate.
+        r"""Gets the list of this BasePageInfoTemplate.
 
         入参集合
 
@@ -111,7 +111,7 @@ class BasePageInfoTemplate:
 
     @list.setter
     def list(self, list):
-        """Sets the list of this BasePageInfoTemplate.
+        r"""Sets the list of this BasePageInfoTemplate.
 
         入参集合
 
@@ -122,7 +122,7 @@ class BasePageInfoTemplate:
 
     @property
     def limit(self):
-        """Gets the limit of this BasePageInfoTemplate.
+        r"""Gets the limit of this BasePageInfoTemplate.
 
         每页显示的条目数量，最大支持200条
 
@@ -133,7 +133,7 @@ class BasePageInfoTemplate:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BasePageInfoTemplate.
+        r"""Sets the limit of this BasePageInfoTemplate.
 
         每页显示的条目数量，最大支持200条
 
@@ -144,7 +144,7 @@ class BasePageInfoTemplate:
 
     @property
     def offset(self):
-        """Gets the offset of this BasePageInfoTemplate.
+        r"""Gets the offset of this BasePageInfoTemplate.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -155,7 +155,7 @@ class BasePageInfoTemplate:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BasePageInfoTemplate.
+        r"""Sets the offset of this BasePageInfoTemplate.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -166,7 +166,7 @@ class BasePageInfoTemplate:
 
     @property
     def pages(self):
-        """Gets the pages of this BasePageInfoTemplate.
+        r"""Gets the pages of this BasePageInfoTemplate.
 
         总页数
 
@@ -177,7 +177,7 @@ class BasePageInfoTemplate:
 
     @pages.setter
     def pages(self, pages):
-        """Sets the pages of this BasePageInfoTemplate.
+        r"""Sets the pages of this BasePageInfoTemplate.
 
         总页数
 
@@ -188,7 +188,7 @@ class BasePageInfoTemplate:
 
     @property
     def size(self):
-        """Gets the size of this BasePageInfoTemplate.
+        r"""Gets the size of this BasePageInfoTemplate.
 
         每页条数
 
@@ -199,7 +199,7 @@ class BasePageInfoTemplate:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BasePageInfoTemplate.
+        r"""Sets the size of this BasePageInfoTemplate.
 
         每页条数
 

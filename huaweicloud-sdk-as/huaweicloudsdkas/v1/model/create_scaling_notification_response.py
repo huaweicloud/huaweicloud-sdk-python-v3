@@ -30,7 +30,7 @@ class CreateScalingNotificationResponse(SdkResponse):
     }
 
     def __init__(self, topic_urn=None, topic_scene=None, topic_name=None):
-        """CreateScalingNotificationResponse
+        r"""CreateScalingNotificationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateScalingNotificationResponse(SdkResponse):
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this CreateScalingNotificationResponse.
+        r"""Gets the topic_urn of this CreateScalingNotificationResponse.
 
         SMN服务中Topic的唯一的资源标识。
 
@@ -69,7 +69,7 @@ class CreateScalingNotificationResponse(SdkResponse):
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this CreateScalingNotificationResponse.
+        r"""Sets the topic_urn of this CreateScalingNotificationResponse.
 
         SMN服务中Topic的唯一的资源标识。
 
@@ -80,7 +80,7 @@ class CreateScalingNotificationResponse(SdkResponse):
 
     @property
     def topic_scene(self):
-        """Gets the topic_scene of this CreateScalingNotificationResponse.
+        r"""Gets the topic_scene of this CreateScalingNotificationResponse.
 
         通知场景，有以下五种类型。SCALING_UP：扩容成功。SCALING_UP_FAIL：扩容失败。SCALING_DOWN：减容成功。SCALING_DOWN_FAIL：减容失败。SCALING_GROUP_ABNORMAL：伸缩组发生异常
 
@@ -91,7 +91,7 @@ class CreateScalingNotificationResponse(SdkResponse):
 
     @topic_scene.setter
     def topic_scene(self, topic_scene):
-        """Sets the topic_scene of this CreateScalingNotificationResponse.
+        r"""Sets the topic_scene of this CreateScalingNotificationResponse.
 
         通知场景，有以下五种类型。SCALING_UP：扩容成功。SCALING_UP_FAIL：扩容失败。SCALING_DOWN：减容成功。SCALING_DOWN_FAIL：减容失败。SCALING_GROUP_ABNORMAL：伸缩组发生异常
 
@@ -102,7 +102,7 @@ class CreateScalingNotificationResponse(SdkResponse):
 
     @property
     def topic_name(self):
-        """Gets the topic_name of this CreateScalingNotificationResponse.
+        r"""Gets the topic_name of this CreateScalingNotificationResponse.
 
         SMN服务中Topic的资源名称。
 
@@ -113,7 +113,7 @@ class CreateScalingNotificationResponse(SdkResponse):
 
     @topic_name.setter
     def topic_name(self, topic_name):
-        """Sets the topic_name of this CreateScalingNotificationResponse.
+        r"""Sets the topic_name of this CreateScalingNotificationResponse.
 
         SMN服务中Topic的资源名称。
 

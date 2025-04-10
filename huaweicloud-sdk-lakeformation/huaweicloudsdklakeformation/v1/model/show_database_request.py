@@ -29,7 +29,7 @@ class ShowDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None):
-        """ShowDatabaseRequest
+        r"""ShowDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDatabaseRequest.
+        r"""Gets the instance_id of this ShowDatabaseRequest.
 
         实例Id
 
@@ -65,7 +65,7 @@ class ShowDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDatabaseRequest.
+        r"""Sets the instance_id of this ShowDatabaseRequest.
 
         实例Id
 
@@ -76,7 +76,7 @@ class ShowDatabaseRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ShowDatabaseRequest.
+        r"""Gets the catalog_name of this ShowDatabaseRequest.
 
         catalog名字
 
@@ -87,7 +87,7 @@ class ShowDatabaseRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ShowDatabaseRequest.
+        r"""Sets the catalog_name of this ShowDatabaseRequest.
 
         catalog名字
 
@@ -98,7 +98,7 @@ class ShowDatabaseRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ShowDatabaseRequest.
+        r"""Gets the database_name of this ShowDatabaseRequest.
 
         数据库名字
 
@@ -109,7 +109,7 @@ class ShowDatabaseRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ShowDatabaseRequest.
+        r"""Sets the database_name of this ShowDatabaseRequest.
 
         数据库名字
 

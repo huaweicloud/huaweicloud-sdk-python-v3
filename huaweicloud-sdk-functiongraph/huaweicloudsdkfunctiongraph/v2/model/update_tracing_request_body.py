@@ -27,7 +27,7 @@ class UpdateTracingRequestBody:
     }
 
     def __init__(self, tracing_ak=None, tracing_sk=None):
-        """UpdateTracingRequestBody
+        r"""UpdateTracingRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateTracingRequestBody:
 
     @property
     def tracing_ak(self):
-        """Gets the tracing_ak of this UpdateTracingRequestBody.
+        r"""Gets the tracing_ak of this UpdateTracingRequestBody.
 
         apm的ak
 
@@ -61,7 +61,7 @@ class UpdateTracingRequestBody:
 
     @tracing_ak.setter
     def tracing_ak(self, tracing_ak):
-        """Sets the tracing_ak of this UpdateTracingRequestBody.
+        r"""Sets the tracing_ak of this UpdateTracingRequestBody.
 
         apm的ak
 
@@ -72,7 +72,7 @@ class UpdateTracingRequestBody:
 
     @property
     def tracing_sk(self):
-        """Gets the tracing_sk of this UpdateTracingRequestBody.
+        r"""Gets the tracing_sk of this UpdateTracingRequestBody.
 
         apm的sk
 
@@ -83,7 +83,7 @@ class UpdateTracingRequestBody:
 
     @tracing_sk.setter
     def tracing_sk(self, tracing_sk):
-        """Sets the tracing_sk of this UpdateTracingRequestBody.
+        r"""Sets the tracing_sk of this UpdateTracingRequestBody.
 
         apm的sk
 

@@ -39,7 +39,7 @@ class BrokenList:
     }
 
     def __init__(self, brand_brokens=None, common_timestamps=None, performance_load=None, respcode_brokens=None, rtmp_brokens=None, streaming_error_brokens=None, tps_brokens=None, vusers_brokens=None):
-        """BrokenList
+        r"""BrokenList
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class BrokenList:
 
     @property
     def brand_brokens(self):
-        """Gets the brand_brokens of this BrokenList.
+        r"""Gets the brand_brokens of this BrokenList.
 
         :return: The brand_brokens of this BrokenList.
         :rtype: :class:`huaweicloudsdkcpts.v1.BrandBrokens`
@@ -101,7 +101,7 @@ class BrokenList:
 
     @brand_brokens.setter
     def brand_brokens(self, brand_brokens):
-        """Sets the brand_brokens of this BrokenList.
+        r"""Sets the brand_brokens of this BrokenList.
 
         :param brand_brokens: The brand_brokens of this BrokenList.
         :type brand_brokens: :class:`huaweicloudsdkcpts.v1.BrandBrokens`
@@ -110,7 +110,7 @@ class BrokenList:
 
     @property
     def common_timestamps(self):
-        """Gets the common_timestamps of this BrokenList.
+        r"""Gets the common_timestamps of this BrokenList.
 
         时间戳
 
@@ -121,7 +121,7 @@ class BrokenList:
 
     @common_timestamps.setter
     def common_timestamps(self, common_timestamps):
-        """Sets the common_timestamps of this BrokenList.
+        r"""Sets the common_timestamps of this BrokenList.
 
         时间戳
 
@@ -132,7 +132,7 @@ class BrokenList:
 
     @property
     def performance_load(self):
-        """Gets the performance_load of this BrokenList.
+        r"""Gets the performance_load of this BrokenList.
 
         摸高数据
 
@@ -143,7 +143,7 @@ class BrokenList:
 
     @performance_load.setter
     def performance_load(self, performance_load):
-        """Sets the performance_load of this BrokenList.
+        r"""Sets the performance_load of this BrokenList.
 
         摸高数据
 
@@ -154,7 +154,7 @@ class BrokenList:
 
     @property
     def respcode_brokens(self):
-        """Gets the respcode_brokens of this BrokenList.
+        r"""Gets the respcode_brokens of this BrokenList.
 
         :return: The respcode_brokens of this BrokenList.
         :rtype: :class:`huaweicloudsdkcpts.v1.RespcodeBrokens`
@@ -163,7 +163,7 @@ class BrokenList:
 
     @respcode_brokens.setter
     def respcode_brokens(self, respcode_brokens):
-        """Sets the respcode_brokens of this BrokenList.
+        r"""Sets the respcode_brokens of this BrokenList.
 
         :param respcode_brokens: The respcode_brokens of this BrokenList.
         :type respcode_brokens: :class:`huaweicloudsdkcpts.v1.RespcodeBrokens`
@@ -172,7 +172,7 @@ class BrokenList:
 
     @property
     def rtmp_brokens(self):
-        """Gets the rtmp_brokens of this BrokenList.
+        r"""Gets the rtmp_brokens of this BrokenList.
 
         :return: The rtmp_brokens of this BrokenList.
         :rtype: :class:`huaweicloudsdkcpts.v1.RtmpBrokens`
@@ -181,7 +181,7 @@ class BrokenList:
 
     @rtmp_brokens.setter
     def rtmp_brokens(self, rtmp_brokens):
-        """Sets the rtmp_brokens of this BrokenList.
+        r"""Sets the rtmp_brokens of this BrokenList.
 
         :param rtmp_brokens: The rtmp_brokens of this BrokenList.
         :type rtmp_brokens: :class:`huaweicloudsdkcpts.v1.RtmpBrokens`
@@ -190,7 +190,7 @@ class BrokenList:
 
     @property
     def streaming_error_brokens(self):
-        """Gets the streaming_error_brokens of this BrokenList.
+        r"""Gets the streaming_error_brokens of this BrokenList.
 
         :return: The streaming_error_brokens of this BrokenList.
         :rtype: :class:`huaweicloudsdkcpts.v1.StreamingErrorBrokens`
@@ -199,7 +199,7 @@ class BrokenList:
 
     @streaming_error_brokens.setter
     def streaming_error_brokens(self, streaming_error_brokens):
-        """Sets the streaming_error_brokens of this BrokenList.
+        r"""Sets the streaming_error_brokens of this BrokenList.
 
         :param streaming_error_brokens: The streaming_error_brokens of this BrokenList.
         :type streaming_error_brokens: :class:`huaweicloudsdkcpts.v1.StreamingErrorBrokens`
@@ -208,7 +208,7 @@ class BrokenList:
 
     @property
     def tps_brokens(self):
-        """Gets the tps_brokens of this BrokenList.
+        r"""Gets the tps_brokens of this BrokenList.
 
         :return: The tps_brokens of this BrokenList.
         :rtype: :class:`huaweicloudsdkcpts.v1.TpsBrokens`
@@ -217,7 +217,7 @@ class BrokenList:
 
     @tps_brokens.setter
     def tps_brokens(self, tps_brokens):
-        """Sets the tps_brokens of this BrokenList.
+        r"""Sets the tps_brokens of this BrokenList.
 
         :param tps_brokens: The tps_brokens of this BrokenList.
         :type tps_brokens: :class:`huaweicloudsdkcpts.v1.TpsBrokens`
@@ -226,7 +226,7 @@ class BrokenList:
 
     @property
     def vusers_brokens(self):
-        """Gets the vusers_brokens of this BrokenList.
+        r"""Gets the vusers_brokens of this BrokenList.
 
         :return: The vusers_brokens of this BrokenList.
         :rtype: :class:`huaweicloudsdkcpts.v1.VusersBrokens`
@@ -235,7 +235,7 @@ class BrokenList:
 
     @vusers_brokens.setter
     def vusers_brokens(self, vusers_brokens):
-        """Sets the vusers_brokens of this BrokenList.
+        r"""Sets the vusers_brokens of this BrokenList.
 
         :param vusers_brokens: The vusers_brokens of this BrokenList.
         :type vusers_brokens: :class:`huaweicloudsdkcpts.v1.VusersBrokens`

@@ -27,7 +27,7 @@ class MultiOracleAddress:
     }
 
     def __init__(self, oracle_address=None, oracle_port=None):
-        """MultiOracleAddress
+        r"""MultiOracleAddress
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MultiOracleAddress:
 
     @property
     def oracle_address(self):
-        """Gets the oracle_address of this MultiOracleAddress.
+        r"""Gets the oracle_address of this MultiOracleAddress.
 
         ORACLE地址
 
@@ -61,7 +61,7 @@ class MultiOracleAddress:
 
     @oracle_address.setter
     def oracle_address(self, oracle_address):
-        """Sets the oracle_address of this MultiOracleAddress.
+        r"""Sets the oracle_address of this MultiOracleAddress.
 
         ORACLE地址
 
@@ -72,7 +72,7 @@ class MultiOracleAddress:
 
     @property
     def oracle_port(self):
-        """Gets the oracle_port of this MultiOracleAddress.
+        r"""Gets the oracle_port of this MultiOracleAddress.
 
         ORACLE端口
 
@@ -83,7 +83,7 @@ class MultiOracleAddress:
 
     @oracle_port.setter
     def oracle_port(self, oracle_port):
-        """Sets the oracle_port of this MultiOracleAddress.
+        r"""Sets the oracle_port of this MultiOracleAddress.
 
         ORACLE端口
 

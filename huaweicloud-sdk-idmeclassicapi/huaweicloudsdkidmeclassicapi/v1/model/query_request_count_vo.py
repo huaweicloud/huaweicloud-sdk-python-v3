@@ -51,7 +51,7 @@ class QueryRequestCountVo:
     }
 
     def __init__(self, character_set=None, conditions=None, decrypt=None, entity_type=None, filter=None, is_need_total=None, is_present_all=None, max_count=None, need_present_detail=None, order_by=None, order_by_table_alias=None, public_data=None, sort=None, sorts=None):
-        """QueryRequestCountVo
+        r"""QueryRequestCountVo
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class QueryRequestCountVo:
 
     @property
     def character_set(self):
-        """Gets the character_set of this QueryRequestCountVo.
+        r"""Gets the character_set of this QueryRequestCountVo.
 
         :return: The character_set of this QueryRequestCountVo.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
@@ -143,7 +143,7 @@ class QueryRequestCountVo:
 
     @character_set.setter
     def character_set(self, character_set):
-        """Sets the character_set of this QueryRequestCountVo.
+        r"""Sets the character_set of this QueryRequestCountVo.
 
         :param character_set: The character_set of this QueryRequestCountVo.
         :type character_set: :class:`huaweicloudsdkidmeclassicapi.v1.CharacterSetEnum`
@@ -152,7 +152,7 @@ class QueryRequestCountVo:
 
     @property
     def conditions(self):
-        """Gets the conditions of this QueryRequestCountVo.
+        r"""Gets the conditions of this QueryRequestCountVo.
 
         **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -163,7 +163,7 @@ class QueryRequestCountVo:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this QueryRequestCountVo.
+        r"""Sets the conditions of this QueryRequestCountVo.
 
         **参数解释：**  查询条件。  此参数已废弃，不建议继续使用，建议使用替代参数filter。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -174,7 +174,7 @@ class QueryRequestCountVo:
 
     @property
     def decrypt(self):
-        """Gets the decrypt of this QueryRequestCountVo.
+        r"""Gets the decrypt of this QueryRequestCountVo.
 
         **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
@@ -185,7 +185,7 @@ class QueryRequestCountVo:
 
     @decrypt.setter
     def decrypt(self, decrypt):
-        """Sets the decrypt of this QueryRequestCountVo.
+        r"""Sets the decrypt of this QueryRequestCountVo.
 
         **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
@@ -196,7 +196,7 @@ class QueryRequestCountVo:
 
     @property
     def entity_type(self):
-        """Gets the entity_type of this QueryRequestCountVo.
+        r"""Gets the entity_type of this QueryRequestCountVo.
 
         **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -207,7 +207,7 @@ class QueryRequestCountVo:
 
     @entity_type.setter
     def entity_type(self, entity_type):
-        """Sets the entity_type of this QueryRequestCountVo.
+        r"""Sets the entity_type of this QueryRequestCountVo.
 
         **参数解释：**  实体类型。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -218,7 +218,7 @@ class QueryRequestCountVo:
 
     @property
     def filter(self):
-        """Gets the filter of this QueryRequestCountVo.
+        r"""Gets the filter of this QueryRequestCountVo.
 
         :return: The filter of this QueryRequestCountVo.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`
@@ -227,7 +227,7 @@ class QueryRequestCountVo:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this QueryRequestCountVo.
+        r"""Sets the filter of this QueryRequestCountVo.
 
         :param filter: The filter of this QueryRequestCountVo.
         :type filter: :class:`huaweicloudsdkidmeclassicapi.v1.QueryCondition`
@@ -236,7 +236,7 @@ class QueryRequestCountVo:
 
     @property
     def is_need_total(self):
-        """Gets the is_need_total of this QueryRequestCountVo.
+        r"""Gets the is_need_total of this QueryRequestCountVo.
 
         **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
 
@@ -247,7 +247,7 @@ class QueryRequestCountVo:
 
     @is_need_total.setter
     def is_need_total(self, is_need_total):
-        """Sets the is_need_total of this QueryRequestCountVo.
+        r"""Sets the is_need_total of this QueryRequestCountVo.
 
         **参数解释：**  是否需要查询总记录数。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
 
@@ -258,7 +258,7 @@ class QueryRequestCountVo:
 
     @property
     def is_present_all(self):
-        """Gets the is_present_all of this QueryRequestCountVo.
+        r"""Gets the is_present_all of this QueryRequestCountVo.
 
         **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
 
@@ -269,7 +269,7 @@ class QueryRequestCountVo:
 
     @is_present_all.setter
     def is_present_all(self, is_present_all):
-        """Sets the is_present_all of this QueryRequestCountVo.
+        r"""Sets the is_present_all of this QueryRequestCountVo.
 
         **参数解释：**  是否需要展示所有参考对象信息。  **约束限制：**  不涉及。  **取值范围：**  - true：需要。 - false：不需要。  **默认取值：**  false。 
 
@@ -280,7 +280,7 @@ class QueryRequestCountVo:
 
     @property
     def max_count(self):
-        """Gets the max_count of this QueryRequestCountVo.
+        r"""Gets the max_count of this QueryRequestCountVo.
 
         **参数解释：**  指定数量上限，如果超过统计总数超过上限则返回上限。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -291,7 +291,7 @@ class QueryRequestCountVo:
 
     @max_count.setter
     def max_count(self, max_count):
-        """Sets the max_count of this QueryRequestCountVo.
+        r"""Sets the max_count of this QueryRequestCountVo.
 
         **参数解释：**  指定数量上限，如果超过统计总数超过上限则返回上限。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -302,7 +302,7 @@ class QueryRequestCountVo:
 
     @property
     def need_present_detail(self):
-        """Gets the need_present_detail of this QueryRequestCountVo.
+        r"""Gets the need_present_detail of this QueryRequestCountVo.
 
         **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -313,7 +313,7 @@ class QueryRequestCountVo:
 
     @need_present_detail.setter
     def need_present_detail(self, need_present_detail):
-        """Sets the need_present_detail of this QueryRequestCountVo.
+        r"""Sets the need_present_detail of this QueryRequestCountVo.
 
         **参数解释：**  需要展示详细信息的参考对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -324,7 +324,7 @@ class QueryRequestCountVo:
 
     @property
     def order_by(self):
-        """Gets the order_by of this QueryRequestCountVo.
+        r"""Gets the order_by of this QueryRequestCountVo.
 
         **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -335,7 +335,7 @@ class QueryRequestCountVo:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this QueryRequestCountVo.
+        r"""Sets the order_by of this QueryRequestCountVo.
 
         **参数解释：**  按某个字段进行排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -346,7 +346,7 @@ class QueryRequestCountVo:
 
     @property
     def order_by_table_alias(self):
-        """Gets the order_by_table_alias of this QueryRequestCountVo.
+        r"""Gets the order_by_table_alias of this QueryRequestCountVo.
 
         **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -357,7 +357,7 @@ class QueryRequestCountVo:
 
     @order_by_table_alias.setter
     def order_by_table_alias(self, order_by_table_alias):
-        """Sets the order_by_table_alias of this QueryRequestCountVo.
+        r"""Sets the order_by_table_alias of this QueryRequestCountVo.
 
         **参数解释：**  排序字段的表别名。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -368,7 +368,7 @@ class QueryRequestCountVo:
 
     @property
     def public_data(self):
-        """Gets the public_data of this QueryRequestCountVo.
+        r"""Gets the public_data of this QueryRequestCountVo.
 
         **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。 
 
@@ -379,7 +379,7 @@ class QueryRequestCountVo:
 
     @public_data.setter
     def public_data(self, public_data):
-        """Sets the public_data of this QueryRequestCountVo.
+        r"""Sets the public_data of this QueryRequestCountVo.
 
         **参数解释：**  多租查询参数。  **约束限制：**  不涉及。  **取值范围：**  - EXCLUDE_PUBLIC_DATA：不包括公共数据。 - INCLUDE_PUBLIC_DATA：包括公共数据。 - ONLY_NEED_PUBLIC_DATA：只有公共数据。  **默认取值：**  不涉及。 
 
@@ -390,7 +390,7 @@ class QueryRequestCountVo:
 
     @property
     def sort(self):
-        """Gets the sort of this QueryRequestCountVo.
+        r"""Gets the sort of this QueryRequestCountVo.
 
         **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
 
@@ -401,7 +401,7 @@ class QueryRequestCountVo:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this QueryRequestCountVo.
+        r"""Sets the sort of this QueryRequestCountVo.
 
         **参数解释：**  排序方向。  **约束限制：**  不涉及。  **取值范围：**  - ASC：表示升序。 - DESC：表示降序。  **默认取值：**  ASC。 
 
@@ -412,7 +412,7 @@ class QueryRequestCountVo:
 
     @property
     def sorts(self):
-        """Gets the sorts of this QueryRequestCountVo.
+        r"""Gets the sorts of this QueryRequestCountVo.
 
         **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -423,7 +423,7 @@ class QueryRequestCountVo:
 
     @sorts.setter
     def sorts(self, sorts):
-        """Sets the sorts of this QueryRequestCountVo.
+        r"""Sets the sorts of this QueryRequestCountVo.
 
         **参数解释：**  排序。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

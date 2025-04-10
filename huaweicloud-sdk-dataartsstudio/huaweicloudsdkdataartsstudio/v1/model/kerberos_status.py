@@ -29,7 +29,7 @@ class KerberosStatus:
     }
 
     def __init__(self, cluster_id=None, cluster_name=None, status=None):
-        """KerberosStatus
+        r"""KerberosStatus
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class KerberosStatus:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this KerberosStatus.
+        r"""Gets the cluster_id of this KerberosStatus.
 
         集群id
 
@@ -68,7 +68,7 @@ class KerberosStatus:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this KerberosStatus.
+        r"""Sets the cluster_id of this KerberosStatus.
 
         集群id
 
@@ -79,7 +79,7 @@ class KerberosStatus:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this KerberosStatus.
+        r"""Gets the cluster_name of this KerberosStatus.
 
         集群名称
 
@@ -90,7 +90,7 @@ class KerberosStatus:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this KerberosStatus.
+        r"""Sets the cluster_name of this KerberosStatus.
 
         集群名称
 
@@ -101,7 +101,7 @@ class KerberosStatus:
 
     @property
     def status(self):
-        """Gets the status of this KerberosStatus.
+        r"""Gets the status of this KerberosStatus.
 
         是否开启了kerberos认证,true:开启，false:未开启
 
@@ -112,7 +112,7 @@ class KerberosStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this KerberosStatus.
+        r"""Sets the status of this KerberosStatus.
 
         是否开启了kerberos认证,true:开启，false:未开启
 

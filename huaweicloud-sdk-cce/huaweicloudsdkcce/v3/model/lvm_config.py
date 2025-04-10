@@ -27,7 +27,7 @@ class LVMConfig:
     }
 
     def __init__(self, lv_type=None, path=None):
-        """LVMConfig
+        r"""LVMConfig
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class LVMConfig:
 
     @property
     def lv_type(self):
-        """Gets the lv_type of this LVMConfig.
+        r"""Gets the lv_type of this LVMConfig.
 
         LVM写入模式：linear、striped。linear：线性模式；striped：条带模式，使用多块磁盘组成条带模式，能够提升磁盘性能。
 
@@ -60,7 +60,7 @@ class LVMConfig:
 
     @lv_type.setter
     def lv_type(self, lv_type):
-        """Sets the lv_type of this LVMConfig.
+        r"""Sets the lv_type of this LVMConfig.
 
         LVM写入模式：linear、striped。linear：线性模式；striped：条带模式，使用多块磁盘组成条带模式，能够提升磁盘性能。
 
@@ -71,7 +71,7 @@ class LVMConfig:
 
     @property
     def path(self):
-        """Gets the path of this LVMConfig.
+        r"""Gets the path of this LVMConfig.
 
         磁盘挂载路径。仅在用户配置中生效。支持包含：数字、大小写字母、点、中划线、下划线的绝对路径。
 
@@ -82,7 +82,7 @@ class LVMConfig:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this LVMConfig.
+        r"""Sets the path of this LVMConfig.
 
         磁盘挂载路径。仅在用户配置中生效。支持包含：数字、大小写字母、点、中划线、下划线的绝对路径。
 

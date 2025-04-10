@@ -32,7 +32,7 @@ class CreateResDatasourceResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, datasource=None, message=None, error_code=None):
-        """CreateResDatasourceResponse
+        r"""CreateResDatasourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateResDatasourceResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CreateResDatasourceResponse.
+        r"""Gets the is_success of this CreateResDatasourceResponse.
 
         是否成功。
 
@@ -76,7 +76,7 @@ class CreateResDatasourceResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CreateResDatasourceResponse.
+        r"""Sets the is_success of this CreateResDatasourceResponse.
 
         是否成功。
 
@@ -87,7 +87,7 @@ class CreateResDatasourceResponse(SdkResponse):
 
     @property
     def datasource(self):
-        """Gets the datasource of this CreateResDatasourceResponse.
+        r"""Gets the datasource of this CreateResDatasourceResponse.
 
         :return: The datasource of this CreateResDatasourceResponse.
         :rtype: :class:`huaweicloudsdkres.v1.Datasource`
@@ -96,7 +96,7 @@ class CreateResDatasourceResponse(SdkResponse):
 
     @datasource.setter
     def datasource(self, datasource):
-        """Sets the datasource of this CreateResDatasourceResponse.
+        r"""Sets the datasource of this CreateResDatasourceResponse.
 
         :param datasource: The datasource of this CreateResDatasourceResponse.
         :type datasource: :class:`huaweicloudsdkres.v1.Datasource`
@@ -105,7 +105,7 @@ class CreateResDatasourceResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateResDatasourceResponse.
+        r"""Gets the message of this CreateResDatasourceResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -116,7 +116,7 @@ class CreateResDatasourceResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateResDatasourceResponse.
+        r"""Sets the message of this CreateResDatasourceResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -127,7 +127,7 @@ class CreateResDatasourceResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateResDatasourceResponse.
+        r"""Gets the error_code of this CreateResDatasourceResponse.
 
         错误码（请求成功时，不返回此字段）。
 
@@ -138,7 +138,7 @@ class CreateResDatasourceResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateResDatasourceResponse.
+        r"""Sets the error_code of this CreateResDatasourceResponse.
 
         错误码（请求成功时，不返回此字段）。
 

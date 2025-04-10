@@ -29,7 +29,7 @@ class CreateLigandSimilarityGraphLigandDto:
     }
 
     def __init__(self, name=None, smiles=None, main=None):
-        """CreateLigandSimilarityGraphLigandDto
+        r"""CreateLigandSimilarityGraphLigandDto
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateLigandSimilarityGraphLigandDto:
 
     @property
     def name(self):
-        """Gets the name of this CreateLigandSimilarityGraphLigandDto.
+        r"""Gets the name of this CreateLigandSimilarityGraphLigandDto.
 
         配体分子唯一名字，受体中的建议使用\"{氨基酸}:{链}:{编号}\"
 
@@ -66,7 +66,7 @@ class CreateLigandSimilarityGraphLigandDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateLigandSimilarityGraphLigandDto.
+        r"""Sets the name of this CreateLigandSimilarityGraphLigandDto.
 
         配体分子唯一名字，受体中的建议使用\"{氨基酸}:{链}:{编号}\"
 
@@ -77,7 +77,7 @@ class CreateLigandSimilarityGraphLigandDto:
 
     @property
     def smiles(self):
-        """Gets the smiles of this CreateLigandSimilarityGraphLigandDto.
+        r"""Gets the smiles of this CreateLigandSimilarityGraphLigandDto.
 
         分子SMILES表达式
 
@@ -88,7 +88,7 @@ class CreateLigandSimilarityGraphLigandDto:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this CreateLigandSimilarityGraphLigandDto.
+        r"""Sets the smiles of this CreateLigandSimilarityGraphLigandDto.
 
         分子SMILES表达式
 
@@ -99,7 +99,7 @@ class CreateLigandSimilarityGraphLigandDto:
 
     @property
     def main(self):
-        """Gets the main of this CreateLigandSimilarityGraphLigandDto.
+        r"""Gets the main of this CreateLigandSimilarityGraphLigandDto.
 
         配体是否为主要配体，在中心模式下，必须指定1个主要配体
 
@@ -110,7 +110,7 @@ class CreateLigandSimilarityGraphLigandDto:
 
     @main.setter
     def main(self, main):
-        """Sets the main of this CreateLigandSimilarityGraphLigandDto.
+        r"""Sets the main of this CreateLigandSimilarityGraphLigandDto.
 
         配体是否为主要配体，在中心模式下，必须指定1个主要配体
 

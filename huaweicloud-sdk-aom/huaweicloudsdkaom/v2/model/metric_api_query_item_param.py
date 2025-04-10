@@ -27,7 +27,7 @@ class MetricAPIQueryItemParam:
     }
 
     def __init__(self, inventory_id=None, metric_items=None):
-        """MetricAPIQueryItemParam
+        r"""MetricAPIQueryItemParam
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MetricAPIQueryItemParam:
 
     @property
     def inventory_id(self):
-        """Gets the inventory_id of this MetricAPIQueryItemParam.
+        r"""Gets the inventory_id of this MetricAPIQueryItemParam.
 
         资源编号，格式为resType_resId。其中resType部分的枚举值为：host，application，instance， container，process，network，storage， volume。当URI参数中的type取值为“inventory”时，通过该参数查询关联的指标，不再使用metricItems数组中的信息。
 
@@ -61,7 +61,7 @@ class MetricAPIQueryItemParam:
 
     @inventory_id.setter
     def inventory_id(self, inventory_id):
-        """Sets the inventory_id of this MetricAPIQueryItemParam.
+        r"""Sets the inventory_id of this MetricAPIQueryItemParam.
 
         资源编号，格式为resType_resId。其中resType部分的枚举值为：host，application，instance， container，process，network，storage， volume。当URI参数中的type取值为“inventory”时，通过该参数查询关联的指标，不再使用metricItems数组中的信息。
 
@@ -72,7 +72,7 @@ class MetricAPIQueryItemParam:
 
     @property
     def metric_items(self):
-        """Gets the metric_items of this MetricAPIQueryItemParam.
+        r"""Gets the metric_items of this MetricAPIQueryItemParam.
 
         当URI参数中的type取值不为“inventory”时，就通过该数组传递的参数信息进行指标查询。
 
@@ -83,7 +83,7 @@ class MetricAPIQueryItemParam:
 
     @metric_items.setter
     def metric_items(self, metric_items):
-        """Sets the metric_items of this MetricAPIQueryItemParam.
+        r"""Sets the metric_items of this MetricAPIQueryItemParam.
 
         当URI参数中的type取值不为“inventory”时，就通过该数组传递的参数信息进行指标查询。
 

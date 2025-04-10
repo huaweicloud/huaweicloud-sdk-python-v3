@@ -27,7 +27,7 @@ class DataPoints:
     }
 
     def __init__(self, average=None, timestamp=None):
-        """DataPoints
+        r"""DataPoints
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DataPoints:
 
     @property
     def average(self):
-        """Gets the average of this DataPoints.
+        r"""Gets the average of this DataPoints.
 
         平均数值。
 
@@ -61,7 +61,7 @@ class DataPoints:
 
     @average.setter
     def average(self, average):
-        """Sets the average of this DataPoints.
+        r"""Sets the average of this DataPoints.
 
         平均数值。
 
@@ -72,7 +72,7 @@ class DataPoints:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this DataPoints.
+        r"""Gets the timestamp of this DataPoints.
 
         时间戳。
 
@@ -83,7 +83,7 @@ class DataPoints:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this DataPoints.
+        r"""Sets the timestamp of this DataPoints.
 
         时间戳。
 

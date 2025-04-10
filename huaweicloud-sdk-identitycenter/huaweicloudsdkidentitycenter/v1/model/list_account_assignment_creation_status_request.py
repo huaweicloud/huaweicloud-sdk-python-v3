@@ -34,7 +34,7 @@ class ListAccountAssignmentCreationStatusRequest:
     }
 
     def __init__(self, x_security_token=None, instance_id=None, status=None, limit=None, marker=None):
-        """ListAccountAssignmentCreationStatusRequest
+        r"""ListAccountAssignmentCreationStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListAccountAssignmentCreationStatusRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListAccountAssignmentCreationStatusRequest.
+        r"""Gets the x_security_token of this ListAccountAssignmentCreationStatusRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -82,7 +82,7 @@ class ListAccountAssignmentCreationStatusRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListAccountAssignmentCreationStatusRequest.
+        r"""Sets the x_security_token of this ListAccountAssignmentCreationStatusRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -93,7 +93,7 @@ class ListAccountAssignmentCreationStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAccountAssignmentCreationStatusRequest.
+        r"""Gets the instance_id of this ListAccountAssignmentCreationStatusRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -104,7 +104,7 @@ class ListAccountAssignmentCreationStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAccountAssignmentCreationStatusRequest.
+        r"""Sets the instance_id of this ListAccountAssignmentCreationStatusRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -115,7 +115,7 @@ class ListAccountAssignmentCreationStatusRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAccountAssignmentCreationStatusRequest.
+        r"""Gets the status of this ListAccountAssignmentCreationStatusRequest.
 
         根据传递的属性值过滤操作状态列表
 
@@ -126,7 +126,7 @@ class ListAccountAssignmentCreationStatusRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAccountAssignmentCreationStatusRequest.
+        r"""Sets the status of this ListAccountAssignmentCreationStatusRequest.
 
         根据传递的属性值过滤操作状态列表
 
@@ -137,7 +137,7 @@ class ListAccountAssignmentCreationStatusRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAccountAssignmentCreationStatusRequest.
+        r"""Gets the limit of this ListAccountAssignmentCreationStatusRequest.
 
         每个请求返回的最大结果数
 
@@ -148,7 +148,7 @@ class ListAccountAssignmentCreationStatusRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAccountAssignmentCreationStatusRequest.
+        r"""Sets the limit of this ListAccountAssignmentCreationStatusRequest.
 
         每个请求返回的最大结果数
 
@@ -159,7 +159,7 @@ class ListAccountAssignmentCreationStatusRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAccountAssignmentCreationStatusRequest.
+        r"""Gets the marker of this ListAccountAssignmentCreationStatusRequest.
 
         分页标记
 
@@ -170,7 +170,7 @@ class ListAccountAssignmentCreationStatusRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAccountAssignmentCreationStatusRequest.
+        r"""Sets the marker of this ListAccountAssignmentCreationStatusRequest.
 
         分页标记
 

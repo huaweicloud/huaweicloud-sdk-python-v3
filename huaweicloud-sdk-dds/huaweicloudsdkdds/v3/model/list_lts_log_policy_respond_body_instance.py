@@ -37,7 +37,7 @@ class ListLtsLogPolicyRespondBodyInstance:
     }
 
     def __init__(self, id=None, name=None, mode=None, datastore=None, status=None, enterprise_project_id=None, actions=None):
-        """ListLtsLogPolicyRespondBodyInstance
+        r"""ListLtsLogPolicyRespondBodyInstance
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListLtsLogPolicyRespondBodyInstance:
 
     @property
     def id(self):
-        """Gets the id of this ListLtsLogPolicyRespondBodyInstance.
+        r"""Gets the id of this ListLtsLogPolicyRespondBodyInstance.
 
         实例ID。
 
@@ -96,7 +96,7 @@ class ListLtsLogPolicyRespondBodyInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListLtsLogPolicyRespondBodyInstance.
+        r"""Sets the id of this ListLtsLogPolicyRespondBodyInstance.
 
         实例ID。
 
@@ -107,7 +107,7 @@ class ListLtsLogPolicyRespondBodyInstance:
 
     @property
     def name(self):
-        """Gets the name of this ListLtsLogPolicyRespondBodyInstance.
+        r"""Gets the name of this ListLtsLogPolicyRespondBodyInstance.
 
         实例名字。
 
@@ -118,7 +118,7 @@ class ListLtsLogPolicyRespondBodyInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListLtsLogPolicyRespondBodyInstance.
+        r"""Sets the name of this ListLtsLogPolicyRespondBodyInstance.
 
         实例名字。
 
@@ -129,7 +129,7 @@ class ListLtsLogPolicyRespondBodyInstance:
 
     @property
     def mode(self):
-        """Gets the mode of this ListLtsLogPolicyRespondBodyInstance.
+        r"""Gets the mode of this ListLtsLogPolicyRespondBodyInstance.
 
         实例类型，对应单节点，副本集，集群三种。
 
@@ -140,7 +140,7 @@ class ListLtsLogPolicyRespondBodyInstance:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ListLtsLogPolicyRespondBodyInstance.
+        r"""Sets the mode of this ListLtsLogPolicyRespondBodyInstance.
 
         实例类型，对应单节点，副本集，集群三种。
 
@@ -151,7 +151,7 @@ class ListLtsLogPolicyRespondBodyInstance:
 
     @property
     def datastore(self):
-        """Gets the datastore of this ListLtsLogPolicyRespondBodyInstance.
+        r"""Gets the datastore of this ListLtsLogPolicyRespondBodyInstance.
 
         :return: The datastore of this ListLtsLogPolicyRespondBodyInstance.
         :rtype: :class:`huaweicloudsdkdds.v3.ListLtsLogPolicyRespondBodyInstanceDatastore`
@@ -160,7 +160,7 @@ class ListLtsLogPolicyRespondBodyInstance:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this ListLtsLogPolicyRespondBodyInstance.
+        r"""Sets the datastore of this ListLtsLogPolicyRespondBodyInstance.
 
         :param datastore: The datastore of this ListLtsLogPolicyRespondBodyInstance.
         :type datastore: :class:`huaweicloudsdkdds.v3.ListLtsLogPolicyRespondBodyInstanceDatastore`
@@ -169,7 +169,7 @@ class ListLtsLogPolicyRespondBodyInstance:
 
     @property
     def status(self):
-        """Gets the status of this ListLtsLogPolicyRespondBodyInstance.
+        r"""Gets the status of this ListLtsLogPolicyRespondBodyInstance.
 
         实例状态。
 
@@ -180,7 +180,7 @@ class ListLtsLogPolicyRespondBodyInstance:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListLtsLogPolicyRespondBodyInstance.
+        r"""Sets the status of this ListLtsLogPolicyRespondBodyInstance.
 
         实例状态。
 
@@ -191,7 +191,7 @@ class ListLtsLogPolicyRespondBodyInstance:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListLtsLogPolicyRespondBodyInstance.
+        r"""Gets the enterprise_project_id of this ListLtsLogPolicyRespondBodyInstance.
 
         实例归属的企业项目ID，如果是default企业项目，值为0，如果是其他企业项目，请参考企业项目相关内容。
 
@@ -202,7 +202,7 @@ class ListLtsLogPolicyRespondBodyInstance:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListLtsLogPolicyRespondBodyInstance.
+        r"""Sets the enterprise_project_id of this ListLtsLogPolicyRespondBodyInstance.
 
         实例归属的企业项目ID，如果是default企业项目，值为0，如果是其他企业项目，请参考企业项目相关内容。
 
@@ -213,7 +213,7 @@ class ListLtsLogPolicyRespondBodyInstance:
 
     @property
     def actions(self):
-        """Gets the actions of this ListLtsLogPolicyRespondBodyInstance.
+        r"""Gets the actions of this ListLtsLogPolicyRespondBodyInstance.
 
         实例所有正在执行的动作。
 
@@ -224,7 +224,7 @@ class ListLtsLogPolicyRespondBodyInstance:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this ListLtsLogPolicyRespondBodyInstance.
+        r"""Sets the actions of this ListLtsLogPolicyRespondBodyInstance.
 
         实例所有正在执行的动作。
 

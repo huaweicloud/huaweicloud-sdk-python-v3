@@ -27,7 +27,7 @@ class ShowCeshierarchyRespQueues:
     }
 
     def __init__(self, name=None, vhost=None):
-        """ShowCeshierarchyRespQueues
+        r"""ShowCeshierarchyRespQueues
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowCeshierarchyRespQueues:
 
     @property
     def name(self):
-        """Gets the name of this ShowCeshierarchyRespQueues.
+        r"""Gets the name of this ShowCeshierarchyRespQueues.
 
         Queue名称。
 
@@ -61,7 +61,7 @@ class ShowCeshierarchyRespQueues:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCeshierarchyRespQueues.
+        r"""Sets the name of this ShowCeshierarchyRespQueues.
 
         Queue名称。
 
@@ -72,7 +72,7 @@ class ShowCeshierarchyRespQueues:
 
     @property
     def vhost(self):
-        """Gets the vhost of this ShowCeshierarchyRespQueues.
+        r"""Gets the vhost of this ShowCeshierarchyRespQueues.
 
         对应的Vhost。
 
@@ -83,7 +83,7 @@ class ShowCeshierarchyRespQueues:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this ShowCeshierarchyRespQueues.
+        r"""Sets the vhost of this ShowCeshierarchyRespQueues.
 
         对应的Vhost。
 

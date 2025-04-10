@@ -37,7 +37,7 @@ class SubnetInfo:
     }
 
     def __init__(self, availability_zone=None, cidr=None, name=None, id=None, gateway_ip=None, vpc_id=None, ipv6_enable=None):
-        """SubnetInfo
+        r"""SubnetInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SubnetInfo:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this SubnetInfo.
+        r"""Gets the availability_zone of this SubnetInfo.
 
         子网所在的可用区标识，从终端节点获取，参考[终端节点](cfw_02_0000.xml)
 
@@ -96,7 +96,7 @@ class SubnetInfo:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this SubnetInfo.
+        r"""Sets the availability_zone of this SubnetInfo.
 
         子网所在的可用区标识，从终端节点获取，参考[终端节点](cfw_02_0000.xml)
 
@@ -107,7 +107,7 @@ class SubnetInfo:
 
     @property
     def cidr(self):
-        """Gets the cidr of this SubnetInfo.
+        r"""Gets the cidr of this SubnetInfo.
 
         功能说明：虚拟私有云下可用子网的范围 取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24 不指定cidr时，默认值为空 约束：必须是cidr格式，例如:192.168.0.0/16
 
@@ -118,7 +118,7 @@ class SubnetInfo:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this SubnetInfo.
+        r"""Sets the cidr of this SubnetInfo.
 
         功能说明：虚拟私有云下可用子网的范围 取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24 不指定cidr时，默认值为空 约束：必须是cidr格式，例如:192.168.0.0/16
 
@@ -129,7 +129,7 @@ class SubnetInfo:
 
     @property
     def name(self):
-        """Gets the name of this SubnetInfo.
+        r"""Gets the name of this SubnetInfo.
 
         子网名称
 
@@ -140,7 +140,7 @@ class SubnetInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubnetInfo.
+        r"""Sets the name of this SubnetInfo.
 
         子网名称
 
@@ -151,7 +151,7 @@ class SubnetInfo:
 
     @property
     def id(self):
-        """Gets the id of this SubnetInfo.
+        r"""Gets the id of this SubnetInfo.
 
         子网id
 
@@ -162,7 +162,7 @@ class SubnetInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubnetInfo.
+        r"""Sets the id of this SubnetInfo.
 
         子网id
 
@@ -173,7 +173,7 @@ class SubnetInfo:
 
     @property
     def gateway_ip(self):
-        """Gets the gateway_ip of this SubnetInfo.
+        r"""Gets the gateway_ip of this SubnetInfo.
 
         子网的网关，取值范围为子网网段cidr中的ip地址
 
@@ -184,7 +184,7 @@ class SubnetInfo:
 
     @gateway_ip.setter
     def gateway_ip(self, gateway_ip):
-        """Sets the gateway_ip of this SubnetInfo.
+        r"""Sets the gateway_ip of this SubnetInfo.
 
         子网的网关，取值范围为子网网段cidr中的ip地址
 
@@ -195,7 +195,7 @@ class SubnetInfo:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this SubnetInfo.
+        r"""Gets the vpc_id of this SubnetInfo.
 
         创建vpc产生的uuid
 
@@ -206,7 +206,7 @@ class SubnetInfo:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this SubnetInfo.
+        r"""Sets the vpc_id of this SubnetInfo.
 
         创建vpc产生的uuid
 
@@ -217,7 +217,7 @@ class SubnetInfo:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this SubnetInfo.
+        r"""Gets the ipv6_enable of this SubnetInfo.
 
         是否支持ipv6，boolean值为true表示是，false表示否
 
@@ -228,7 +228,7 @@ class SubnetInfo:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this SubnetInfo.
+        r"""Sets the ipv6_enable of this SubnetInfo.
 
         是否支持ipv6，boolean值为true表示是，false表示否
 

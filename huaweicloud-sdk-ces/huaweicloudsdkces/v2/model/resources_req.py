@@ -25,7 +25,7 @@ class ResourcesReq:
     }
 
     def __init__(self, resources=None):
-        """ResourcesReq
+        r"""ResourcesReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResourcesReq:
 
     @property
     def resources(self):
-        """Gets the resources of this ResourcesReq.
+        r"""Gets the resources of this ResourcesReq.
 
         资源信息
 
@@ -53,7 +53,7 @@ class ResourcesReq:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ResourcesReq.
+        r"""Sets the resources of this ResourcesReq.
 
         资源信息
 

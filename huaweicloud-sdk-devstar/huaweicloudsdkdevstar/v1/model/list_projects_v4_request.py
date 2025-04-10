@@ -31,7 +31,7 @@ class ListProjectsV4Request:
     }
 
     def __init__(self, x_language=None, keyword=None, limit=None, offset=None):
-        """ListProjectsV4Request
+        r"""ListProjectsV4Request
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListProjectsV4Request:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListProjectsV4Request.
+        r"""Gets the x_language of this ListProjectsV4Request.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -75,7 +75,7 @@ class ListProjectsV4Request:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListProjectsV4Request.
+        r"""Sets the x_language of this ListProjectsV4Request.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -86,7 +86,7 @@ class ListProjectsV4Request:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ListProjectsV4Request.
+        r"""Gets the keyword of this ListProjectsV4Request.
 
         搜索关键字,支持按名称和描述搜索，默认null
 
@@ -97,7 +97,7 @@ class ListProjectsV4Request:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ListProjectsV4Request.
+        r"""Sets the keyword of this ListProjectsV4Request.
 
         搜索关键字,支持按名称和描述搜索，默认null
 
@@ -108,7 +108,7 @@ class ListProjectsV4Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProjectsV4Request.
+        r"""Gets the limit of this ListProjectsV4Request.
 
         每页显示的条目数量,默认100
 
@@ -119,7 +119,7 @@ class ListProjectsV4Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProjectsV4Request.
+        r"""Sets the limit of this ListProjectsV4Request.
 
         每页显示的条目数量,默认100
 
@@ -130,7 +130,7 @@ class ListProjectsV4Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProjectsV4Request.
+        r"""Gets the offset of this ListProjectsV4Request.
 
         偏移量，表示从此偏移量开始查询,默认0
 
@@ -141,7 +141,7 @@ class ListProjectsV4Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProjectsV4Request.
+        r"""Sets the offset of this ListProjectsV4Request.
 
         偏移量，表示从此偏移量开始查询,默认0
 

@@ -37,7 +37,7 @@ class Execution:
     }
 
     def __init__(self, graph_urn=None, execution_urn=None, started_at=None, execution_type=None, stopped_at=None, execution_state=None, execution_name=None):
-        """Execution
+        r"""Execution
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Execution:
 
     @property
     def graph_urn(self):
-        """Gets the graph_urn of this Execution.
+        r"""Gets the graph_urn of this Execution.
 
         工作流URN
 
@@ -96,7 +96,7 @@ class Execution:
 
     @graph_urn.setter
     def graph_urn(self, graph_urn):
-        """Sets the graph_urn of this Execution.
+        r"""Sets the graph_urn of this Execution.
 
         工作流URN
 
@@ -107,7 +107,7 @@ class Execution:
 
     @property
     def execution_urn(self):
-        """Gets the execution_urn of this Execution.
+        r"""Gets the execution_urn of this Execution.
 
         工作流实例URN
 
@@ -118,7 +118,7 @@ class Execution:
 
     @execution_urn.setter
     def execution_urn(self, execution_urn):
-        """Sets the execution_urn of this Execution.
+        r"""Sets the execution_urn of this Execution.
 
         工作流实例URN
 
@@ -129,7 +129,7 @@ class Execution:
 
     @property
     def started_at(self):
-        """Gets the started_at of this Execution.
+        r"""Gets the started_at of this Execution.
 
         工作流实例启动时间
 
@@ -140,7 +140,7 @@ class Execution:
 
     @started_at.setter
     def started_at(self, started_at):
-        """Sets the started_at of this Execution.
+        r"""Sets the started_at of this Execution.
 
         工作流实例启动时间
 
@@ -151,7 +151,7 @@ class Execution:
 
     @property
     def execution_type(self):
-        """Gets the execution_type of this Execution.
+        r"""Gets the execution_type of this Execution.
 
         工作流执行方式。APICALL代表为通过API方式触发。
 
@@ -162,7 +162,7 @@ class Execution:
 
     @execution_type.setter
     def execution_type(self, execution_type):
-        """Sets the execution_type of this Execution.
+        r"""Sets the execution_type of this Execution.
 
         工作流执行方式。APICALL代表为通过API方式触发。
 
@@ -173,7 +173,7 @@ class Execution:
 
     @property
     def stopped_at(self):
-        """Gets the stopped_at of this Execution.
+        r"""Gets the stopped_at of this Execution.
 
         工作流停止时间。
 
@@ -184,7 +184,7 @@ class Execution:
 
     @stopped_at.setter
     def stopped_at(self, stopped_at):
-        """Sets the stopped_at of this Execution.
+        r"""Sets the stopped_at of this Execution.
 
         工作流停止时间。
 
@@ -195,7 +195,7 @@ class Execution:
 
     @property
     def execution_state(self):
-        """Gets the execution_state of this Execution.
+        r"""Gets the execution_state of this Execution.
 
         工作流运行状态。success,fail,running,timeout,cancel
 
@@ -206,7 +206,7 @@ class Execution:
 
     @execution_state.setter
     def execution_state(self, execution_state):
-        """Sets the execution_state of this Execution.
+        r"""Sets the execution_state of this Execution.
 
         工作流运行状态。success,fail,running,timeout,cancel
 
@@ -217,7 +217,7 @@ class Execution:
 
     @property
     def execution_name(self):
-        """Gets the execution_name of this Execution.
+        r"""Gets the execution_name of this Execution.
 
         工作流名称。
 
@@ -228,7 +228,7 @@ class Execution:
 
     @execution_name.setter
     def execution_name(self, execution_name):
-        """Sets the execution_name of this Execution.
+        r"""Sets the execution_name of this Execution.
 
         工作流名称。
 

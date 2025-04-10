@@ -25,7 +25,7 @@ class CreatePhotoDetectionReq:
     }
 
     def __init__(self, human_image=None):
-        """CreatePhotoDetectionReq
+        r"""CreatePhotoDetectionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreatePhotoDetectionReq:
 
     @property
     def human_image(self):
-        """Gets the human_image of this CreatePhotoDetectionReq.
+        r"""Gets the human_image of this CreatePhotoDetectionReq.
 
         人物照片，需要Base64编码。照片分辨率不超过1080P。
 
@@ -53,7 +53,7 @@ class CreatePhotoDetectionReq:
 
     @human_image.setter
     def human_image(self, human_image):
-        """Sets the human_image of this CreatePhotoDetectionReq.
+        r"""Sets the human_image of this CreatePhotoDetectionReq.
 
         人物照片，需要Base64编码。照片分辨率不超过1080P。
 

@@ -24,7 +24,7 @@ class DeleteAlarmRuleResourcesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteAlarmRuleResourcesResponse
+        r"""DeleteAlarmRuleResourcesResponse
 
         The model defined in huaweicloud sdk
 

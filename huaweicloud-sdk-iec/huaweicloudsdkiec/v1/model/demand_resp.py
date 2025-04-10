@@ -29,7 +29,7 @@ class DemandResp:
     }
 
     def __init__(self, demand_count=None, pool_id_v6=None, ipv6_bandwidth_enable=None):
-        """DemandResp
+        r"""DemandResp
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DemandResp:
 
     @property
     def demand_count(self):
-        """Gets the demand_count of this DemandResp.
+        r"""Gets the demand_count of this DemandResp.
 
         站点需要发放的资源(组)总数。  > 实际发放实例数量为count*demand_count。
 
@@ -67,7 +67,7 @@ class DemandResp:
 
     @demand_count.setter
     def demand_count(self, demand_count):
-        """Sets the demand_count of this DemandResp.
+        r"""Sets the demand_count of this DemandResp.
 
         站点需要发放的资源(组)总数。  > 实际发放实例数量为count*demand_count。
 
@@ -78,7 +78,7 @@ class DemandResp:
 
     @property
     def pool_id_v6(self):
-        """Gets the pool_id_v6 of this DemandResp.
+        r"""Gets the pool_id_v6 of this DemandResp.
 
         指定IPv6线路，使用该线路下的子网分配IPv6端口。 如果该线路下没有关联启用IPv6的子网，则创建新的子网。
 
@@ -89,7 +89,7 @@ class DemandResp:
 
     @pool_id_v6.setter
     def pool_id_v6(self, pool_id_v6):
-        """Sets the pool_id_v6 of this DemandResp.
+        r"""Sets the pool_id_v6 of this DemandResp.
 
         指定IPv6线路，使用该线路下的子网分配IPv6端口。 如果该线路下没有关联启用IPv6的子网，则创建新的子网。
 
@@ -100,7 +100,7 @@ class DemandResp:
 
     @property
     def ipv6_bandwidth_enable(self):
-        """Gets the ipv6_bandwidth_enable of this DemandResp.
+        r"""Gets the ipv6_bandwidth_enable of this DemandResp.
 
         使用IPv6带宽。 边缘实例是否开启IPv6公网访问能力。如果该IPv6线路下没有带宽，则创建新的带宽。  
 
@@ -111,7 +111,7 @@ class DemandResp:
 
     @ipv6_bandwidth_enable.setter
     def ipv6_bandwidth_enable(self, ipv6_bandwidth_enable):
-        """Sets the ipv6_bandwidth_enable of this DemandResp.
+        r"""Sets the ipv6_bandwidth_enable of this DemandResp.
 
         使用IPv6带宽。 边缘实例是否开启IPv6公网访问能力。如果该IPv6线路下没有带宽，则创建新的带宽。  
 

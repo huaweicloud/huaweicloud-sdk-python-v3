@@ -34,7 +34,7 @@ class ListUnblockQuotaStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, type=None, total_unblocking_quota=None, remaining_unblocking_quota=None, unblocking_quota_today=None, remaining_unblocking_quota_today=None):
-        """ListUnblockQuotaStatisticsResponse
+        r"""ListUnblockQuotaStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListUnblockQuotaStatisticsResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ListUnblockQuotaStatisticsResponse.
+        r"""Gets the type of this ListUnblockQuotaStatisticsResponse.
 
         用户类型：common_user , native_protection_user
 
@@ -83,7 +83,7 @@ class ListUnblockQuotaStatisticsResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListUnblockQuotaStatisticsResponse.
+        r"""Sets the type of this ListUnblockQuotaStatisticsResponse.
 
         用户类型：common_user , native_protection_user
 
@@ -94,7 +94,7 @@ class ListUnblockQuotaStatisticsResponse(SdkResponse):
 
     @property
     def total_unblocking_quota(self):
-        """Gets the total_unblocking_quota of this ListUnblockQuotaStatisticsResponse.
+        r"""Gets the total_unblocking_quota of this ListUnblockQuotaStatisticsResponse.
 
         解封总配额
 
@@ -105,7 +105,7 @@ class ListUnblockQuotaStatisticsResponse(SdkResponse):
 
     @total_unblocking_quota.setter
     def total_unblocking_quota(self, total_unblocking_quota):
-        """Sets the total_unblocking_quota of this ListUnblockQuotaStatisticsResponse.
+        r"""Sets the total_unblocking_quota of this ListUnblockQuotaStatisticsResponse.
 
         解封总配额
 
@@ -116,7 +116,7 @@ class ListUnblockQuotaStatisticsResponse(SdkResponse):
 
     @property
     def remaining_unblocking_quota(self):
-        """Gets the remaining_unblocking_quota of this ListUnblockQuotaStatisticsResponse.
+        r"""Gets the remaining_unblocking_quota of this ListUnblockQuotaStatisticsResponse.
 
         剩余解封配额
 
@@ -127,7 +127,7 @@ class ListUnblockQuotaStatisticsResponse(SdkResponse):
 
     @remaining_unblocking_quota.setter
     def remaining_unblocking_quota(self, remaining_unblocking_quota):
-        """Sets the remaining_unblocking_quota of this ListUnblockQuotaStatisticsResponse.
+        r"""Sets the remaining_unblocking_quota of this ListUnblockQuotaStatisticsResponse.
 
         剩余解封配额
 
@@ -138,7 +138,7 @@ class ListUnblockQuotaStatisticsResponse(SdkResponse):
 
     @property
     def unblocking_quota_today(self):
-        """Gets the unblocking_quota_today of this ListUnblockQuotaStatisticsResponse.
+        r"""Gets the unblocking_quota_today of this ListUnblockQuotaStatisticsResponse.
 
         今日解封配额
 
@@ -149,7 +149,7 @@ class ListUnblockQuotaStatisticsResponse(SdkResponse):
 
     @unblocking_quota_today.setter
     def unblocking_quota_today(self, unblocking_quota_today):
-        """Sets the unblocking_quota_today of this ListUnblockQuotaStatisticsResponse.
+        r"""Sets the unblocking_quota_today of this ListUnblockQuotaStatisticsResponse.
 
         今日解封配额
 
@@ -160,7 +160,7 @@ class ListUnblockQuotaStatisticsResponse(SdkResponse):
 
     @property
     def remaining_unblocking_quota_today(self):
-        """Gets the remaining_unblocking_quota_today of this ListUnblockQuotaStatisticsResponse.
+        r"""Gets the remaining_unblocking_quota_today of this ListUnblockQuotaStatisticsResponse.
 
         今日剩余解封配额
 
@@ -171,7 +171,7 @@ class ListUnblockQuotaStatisticsResponse(SdkResponse):
 
     @remaining_unblocking_quota_today.setter
     def remaining_unblocking_quota_today(self, remaining_unblocking_quota_today):
-        """Sets the remaining_unblocking_quota_today of this ListUnblockQuotaStatisticsResponse.
+        r"""Sets the remaining_unblocking_quota_today of this ListUnblockQuotaStatisticsResponse.
 
         今日剩余解封配额
 

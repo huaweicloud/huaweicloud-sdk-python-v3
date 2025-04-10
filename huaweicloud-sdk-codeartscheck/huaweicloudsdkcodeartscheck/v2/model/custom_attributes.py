@@ -27,7 +27,7 @@ class CustomAttributes:
     }
 
     def __init__(self, attribute=None, rules=None):
-        """CustomAttributes
+        r"""CustomAttributes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CustomAttributes:
 
     @property
     def attribute(self):
-        """Gets the attribute of this CustomAttributes.
+        r"""Gets the attribute of this CustomAttributes.
 
         配置项属性，severity：为问题级别
 
@@ -61,7 +61,7 @@ class CustomAttributes:
 
     @attribute.setter
     def attribute(self, attribute):
-        """Sets the attribute of this CustomAttributes.
+        r"""Sets the attribute of this CustomAttributes.
 
         配置项属性，severity：为问题级别
 
@@ -72,7 +72,7 @@ class CustomAttributes:
 
     @property
     def rules(self):
-        """Gets the rules of this CustomAttributes.
+        r"""Gets the rules of this CustomAttributes.
 
         规则详细
 
@@ -83,7 +83,7 @@ class CustomAttributes:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this CustomAttributes.
+        r"""Sets the rules of this CustomAttributes.
 
         规则详细
 

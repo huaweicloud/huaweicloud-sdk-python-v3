@@ -43,7 +43,7 @@ class CreateSubNetworkInterfaceOption:
     }
 
     def __init__(self, virsubnet_id=None, vlan_id=None, parent_id=None, description=None, ipv6_enable=None, private_ip_address=None, ipv6_ip_address=None, security_groups=None, project_id=None, allowed_address_pairs=None):
-        """CreateSubNetworkInterfaceOption
+        r"""CreateSubNetworkInterfaceOption
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class CreateSubNetworkInterfaceOption:
 
     @property
     def virsubnet_id(self):
-        """Gets the virsubnet_id of this CreateSubNetworkInterfaceOption.
+        r"""Gets the virsubnet_id of this CreateSubNetworkInterfaceOption.
 
         功能说明：虚拟子网ID 取值范围：标准UUID
 
@@ -115,7 +115,7 @@ class CreateSubNetworkInterfaceOption:
 
     @virsubnet_id.setter
     def virsubnet_id(self, virsubnet_id):
-        """Sets the virsubnet_id of this CreateSubNetworkInterfaceOption.
+        r"""Sets the virsubnet_id of this CreateSubNetworkInterfaceOption.
 
         功能说明：虚拟子网ID 取值范围：标准UUID
 
@@ -126,7 +126,7 @@ class CreateSubNetworkInterfaceOption:
 
     @property
     def vlan_id(self):
-        """Gets the vlan_id of this CreateSubNetworkInterfaceOption.
+        r"""Gets the vlan_id of this CreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡的VLAN ID 取值范围：1-4094 约束：同一个宿主网络接口下唯一
 
@@ -137,7 +137,7 @@ class CreateSubNetworkInterfaceOption:
 
     @vlan_id.setter
     def vlan_id(self, vlan_id):
-        """Sets the vlan_id of this CreateSubNetworkInterfaceOption.
+        r"""Sets the vlan_id of this CreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡的VLAN ID 取值范围：1-4094 约束：同一个宿主网络接口下唯一
 
@@ -148,7 +148,7 @@ class CreateSubNetworkInterfaceOption:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this CreateSubNetworkInterfaceOption.
+        r"""Gets the parent_id of this CreateSubNetworkInterfaceOption.
 
         功能说明：宿主网络接口的ID 取值范围：标准UUID 约束：必须是实际存在的端口ID
 
@@ -159,7 +159,7 @@ class CreateSubNetworkInterfaceOption:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this CreateSubNetworkInterfaceOption.
+        r"""Sets the parent_id of this CreateSubNetworkInterfaceOption.
 
         功能说明：宿主网络接口的ID 取值范围：标准UUID 约束：必须是实际存在的端口ID
 
@@ -170,7 +170,7 @@ class CreateSubNetworkInterfaceOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateSubNetworkInterfaceOption.
+        r"""Gets the description of this CreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡的描述信息 取值范围：0-255个字符，不能包含“<”和“>” 
 
@@ -181,7 +181,7 @@ class CreateSubNetworkInterfaceOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateSubNetworkInterfaceOption.
+        r"""Sets the description of this CreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡的描述信息 取值范围：0-255个字符，不能包含“<”和“>” 
 
@@ -192,7 +192,7 @@ class CreateSubNetworkInterfaceOption:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this CreateSubNetworkInterfaceOption.
+        r"""Gets the ipv6_enable of this CreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡是否启用ipv6地址 取值范围：true（开启)，false（关闭） 默认值：false
 
@@ -203,7 +203,7 @@ class CreateSubNetworkInterfaceOption:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this CreateSubNetworkInterfaceOption.
+        r"""Sets the ipv6_enable of this CreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡是否启用ipv6地址 取值范围：true（开启)，false（关闭） 默认值：false
 
@@ -214,7 +214,7 @@ class CreateSubNetworkInterfaceOption:
 
     @property
     def private_ip_address(self):
-        """Gets the private_ip_address of this CreateSubNetworkInterfaceOption.
+        r"""Gets the private_ip_address of this CreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡的私有IPv4地址 取值范围：必须在虚拟子网的网段内，不填则随机在虚拟子网网段内随机分配
 
@@ -225,7 +225,7 @@ class CreateSubNetworkInterfaceOption:
 
     @private_ip_address.setter
     def private_ip_address(self, private_ip_address):
-        """Sets the private_ip_address of this CreateSubNetworkInterfaceOption.
+        r"""Sets the private_ip_address of this CreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡的私有IPv4地址 取值范围：必须在虚拟子网的网段内，不填则随机在虚拟子网网段内随机分配
 
@@ -236,7 +236,7 @@ class CreateSubNetworkInterfaceOption:
 
     @property
     def ipv6_ip_address(self):
-        """Gets the ipv6_ip_address of this CreateSubNetworkInterfaceOption.
+        r"""Gets the ipv6_ip_address of this CreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡的IPv6地址 取值范围：不填则随机分配
 
@@ -247,7 +247,7 @@ class CreateSubNetworkInterfaceOption:
 
     @ipv6_ip_address.setter
     def ipv6_ip_address(self, ipv6_ip_address):
-        """Sets the ipv6_ip_address of this CreateSubNetworkInterfaceOption.
+        r"""Sets the ipv6_ip_address of this CreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡的IPv6地址 取值范围：不填则随机分配
 
@@ -258,7 +258,7 @@ class CreateSubNetworkInterfaceOption:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this CreateSubNetworkInterfaceOption.
+        r"""Gets the security_groups of this CreateSubNetworkInterfaceOption.
 
         功能说明：安全组的ID列表；例如：\"security_groups\": [\"a0608cbf-d047-4f54-8b28-cd7b59853fff\"] 取值范围：默认值为系统默认安全组
 
@@ -269,7 +269,7 @@ class CreateSubNetworkInterfaceOption:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this CreateSubNetworkInterfaceOption.
+        r"""Sets the security_groups of this CreateSubNetworkInterfaceOption.
 
         功能说明：安全组的ID列表；例如：\"security_groups\": [\"a0608cbf-d047-4f54-8b28-cd7b59853fff\"] 取值范围：默认值为系统默认安全组
 
@@ -280,7 +280,7 @@ class CreateSubNetworkInterfaceOption:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateSubNetworkInterfaceOption.
+        r"""Gets the project_id of this CreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡所属的项目ID 取值范围：标准UUID 约束：只有管理员有权限指定
 
@@ -291,7 +291,7 @@ class CreateSubNetworkInterfaceOption:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateSubNetworkInterfaceOption.
+        r"""Sets the project_id of this CreateSubNetworkInterfaceOption.
 
         功能说明：辅助弹性网卡所属的项目ID 取值范围：标准UUID 约束：只有管理员有权限指定
 
@@ -302,7 +302,7 @@ class CreateSubNetworkInterfaceOption:
 
     @property
     def allowed_address_pairs(self):
-        """Gets the allowed_address_pairs of this CreateSubNetworkInterfaceOption.
+        r"""Gets the allowed_address_pairs of this CreateSubNetworkInterfaceOption.
 
         1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR格式。
 
@@ -313,7 +313,7 @@ class CreateSubNetworkInterfaceOption:
 
     @allowed_address_pairs.setter
     def allowed_address_pairs(self, allowed_address_pairs):
-        """Sets the allowed_address_pairs of this CreateSubNetworkInterfaceOption.
+        r"""Sets the allowed_address_pairs of this CreateSubNetworkInterfaceOption.
 
         1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR格式。
 

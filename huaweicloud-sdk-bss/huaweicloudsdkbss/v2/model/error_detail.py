@@ -29,7 +29,7 @@ class ErrorDetail:
     }
 
     def __init__(self, error_code=None, error_msg=None, id=None):
-        """ErrorDetail
+        r"""ErrorDetail
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ErrorDetail:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ErrorDetail.
+        r"""Gets the error_code of this ErrorDetail.
 
         状态码。
 
@@ -68,7 +68,7 @@ class ErrorDetail:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ErrorDetail.
+        r"""Sets the error_code of this ErrorDetail.
 
         状态码。
 
@@ -79,7 +79,7 @@ class ErrorDetail:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ErrorDetail.
+        r"""Gets the error_msg of this ErrorDetail.
 
         错误描述信息。
 
@@ -90,7 +90,7 @@ class ErrorDetail:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ErrorDetail.
+        r"""Sets the error_msg of this ErrorDetail.
 
         错误描述信息。
 
@@ -101,7 +101,7 @@ class ErrorDetail:
 
     @property
     def id(self):
-        """Gets the id of this ErrorDetail.
+        r"""Gets the id of this ErrorDetail.
 
         出现错误的客户ID或批量处理消息的ID。
 
@@ -112,7 +112,7 @@ class ErrorDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ErrorDetail.
+        r"""Sets the id of this ErrorDetail.
 
         出现错误的客户ID或批量处理消息的ID。
 

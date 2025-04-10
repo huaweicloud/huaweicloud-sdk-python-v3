@@ -50,7 +50,7 @@ class ShowPluginVersionResponse(SdkResponse):
     }
 
     def __init__(self, plugin_name=None, display_name=None, op_user=None, op_time=None, version=None, unique_id=None, version_description=None, version_attribution=None, plugin_composition_type=None, plugin_attribution=None, input_info=None, plugin_execution=None, runtime_attribution=None):
-        """ShowPluginVersionResponse
+        r"""ShowPluginVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this ShowPluginVersionResponse.
+        r"""Gets the plugin_name of this ShowPluginVersionResponse.
 
         插件名
 
@@ -139,7 +139,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this ShowPluginVersionResponse.
+        r"""Sets the plugin_name of this ShowPluginVersionResponse.
 
         插件名
 
@@ -150,7 +150,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @property
     def display_name(self):
-        """Gets the display_name of this ShowPluginVersionResponse.
+        r"""Gets the display_name of this ShowPluginVersionResponse.
 
         展示名
 
@@ -161,7 +161,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ShowPluginVersionResponse.
+        r"""Sets the display_name of this ShowPluginVersionResponse.
 
         展示名
 
@@ -172,7 +172,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @property
     def op_user(self):
-        """Gets the op_user of this ShowPluginVersionResponse.
+        r"""Gets the op_user of this ShowPluginVersionResponse.
 
         操作人
 
@@ -183,7 +183,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @op_user.setter
     def op_user(self, op_user):
-        """Sets the op_user of this ShowPluginVersionResponse.
+        r"""Sets the op_user of this ShowPluginVersionResponse.
 
         操作人
 
@@ -194,7 +194,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @property
     def op_time(self):
-        """Gets the op_time of this ShowPluginVersionResponse.
+        r"""Gets the op_time of this ShowPluginVersionResponse.
 
         操作时间
 
@@ -205,7 +205,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @op_time.setter
     def op_time(self, op_time):
-        """Sets the op_time of this ShowPluginVersionResponse.
+        r"""Sets the op_time of this ShowPluginVersionResponse.
 
         操作时间
 
@@ -216,7 +216,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowPluginVersionResponse.
+        r"""Gets the version of this ShowPluginVersionResponse.
 
         版本
 
@@ -227,7 +227,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowPluginVersionResponse.
+        r"""Sets the version of this ShowPluginVersionResponse.
 
         版本
 
@@ -238,7 +238,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @property
     def unique_id(self):
-        """Gets the unique_id of this ShowPluginVersionResponse.
+        r"""Gets the unique_id of this ShowPluginVersionResponse.
 
         唯一ID
 
@@ -249,7 +249,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @unique_id.setter
     def unique_id(self, unique_id):
-        """Sets the unique_id of this ShowPluginVersionResponse.
+        r"""Sets the unique_id of this ShowPluginVersionResponse.
 
         唯一ID
 
@@ -260,7 +260,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @property
     def version_description(self):
-        """Gets the version_description of this ShowPluginVersionResponse.
+        r"""Gets the version_description of this ShowPluginVersionResponse.
 
         版本说明
 
@@ -271,7 +271,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @version_description.setter
     def version_description(self, version_description):
-        """Sets the version_description of this ShowPluginVersionResponse.
+        r"""Sets the version_description of this ShowPluginVersionResponse.
 
         版本说明
 
@@ -282,7 +282,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @property
     def version_attribution(self):
-        """Gets the version_attribution of this ShowPluginVersionResponse.
+        r"""Gets the version_attribution of this ShowPluginVersionResponse.
 
         版本属性
 
@@ -293,7 +293,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @version_attribution.setter
     def version_attribution(self, version_attribution):
-        """Sets the version_attribution of this ShowPluginVersionResponse.
+        r"""Sets the version_attribution of this ShowPluginVersionResponse.
 
         版本属性
 
@@ -304,7 +304,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @property
     def plugin_composition_type(self):
-        """Gets the plugin_composition_type of this ShowPluginVersionResponse.
+        r"""Gets the plugin_composition_type of this ShowPluginVersionResponse.
 
         组合插件类型
 
@@ -315,7 +315,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @plugin_composition_type.setter
     def plugin_composition_type(self, plugin_composition_type):
-        """Sets the plugin_composition_type of this ShowPluginVersionResponse.
+        r"""Sets the plugin_composition_type of this ShowPluginVersionResponse.
 
         组合插件类型
 
@@ -326,7 +326,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @property
     def plugin_attribution(self):
-        """Gets the plugin_attribution of this ShowPluginVersionResponse.
+        r"""Gets the plugin_attribution of this ShowPluginVersionResponse.
 
         插件属性
 
@@ -337,7 +337,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @plugin_attribution.setter
     def plugin_attribution(self, plugin_attribution):
-        """Sets the plugin_attribution of this ShowPluginVersionResponse.
+        r"""Sets the plugin_attribution of this ShowPluginVersionResponse.
 
         插件属性
 
@@ -348,7 +348,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @property
     def input_info(self):
-        """Gets the input_info of this ShowPluginVersionResponse.
+        r"""Gets the input_info of this ShowPluginVersionResponse.
 
         输入信息
 
@@ -359,7 +359,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @input_info.setter
     def input_info(self, input_info):
-        """Sets the input_info of this ShowPluginVersionResponse.
+        r"""Sets the input_info of this ShowPluginVersionResponse.
 
         输入信息
 
@@ -370,7 +370,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @property
     def plugin_execution(self):
-        """Gets the plugin_execution of this ShowPluginVersionResponse.
+        r"""Gets the plugin_execution of this ShowPluginVersionResponse.
 
         执行信息
 
@@ -381,7 +381,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @plugin_execution.setter
     def plugin_execution(self, plugin_execution):
-        """Sets the plugin_execution of this ShowPluginVersionResponse.
+        r"""Sets the plugin_execution of this ShowPluginVersionResponse.
 
         执行信息
 
@@ -392,7 +392,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @property
     def runtime_attribution(self):
-        """Gets the runtime_attribution of this ShowPluginVersionResponse.
+        r"""Gets the runtime_attribution of this ShowPluginVersionResponse.
 
         运行属性
 
@@ -403,7 +403,7 @@ class ShowPluginVersionResponse(SdkResponse):
 
     @runtime_attribution.setter
     def runtime_attribution(self, runtime_attribution):
-        """Sets the runtime_attribution of this ShowPluginVersionResponse.
+        r"""Sets the runtime_attribution of this ShowPluginVersionResponse.
 
         运行属性
 

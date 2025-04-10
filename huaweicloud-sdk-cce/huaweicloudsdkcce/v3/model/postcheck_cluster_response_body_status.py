@@ -25,7 +25,7 @@ class PostcheckClusterResponseBodyStatus:
     }
 
     def __init__(self, phase=None):
-        """PostcheckClusterResponseBodyStatus
+        r"""PostcheckClusterResponseBodyStatus
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PostcheckClusterResponseBodyStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this PostcheckClusterResponseBodyStatus.
+        r"""Gets the phase of this PostcheckClusterResponseBodyStatus.
 
         状态，取值如下 - Success 成功 - Failed 失败 - Error 错误
 
@@ -54,7 +54,7 @@ class PostcheckClusterResponseBodyStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this PostcheckClusterResponseBodyStatus.
+        r"""Sets the phase of this PostcheckClusterResponseBodyStatus.
 
         状态，取值如下 - Success 成功 - Failed 失败 - Error 错误
 

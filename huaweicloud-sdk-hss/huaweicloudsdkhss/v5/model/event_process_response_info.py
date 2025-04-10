@@ -107,7 +107,7 @@ class EventProcessResponseInfo:
     }
 
     def __init__(self, process_name=None, process_path=None, process_pid=None, process_uid=None, process_username=None, process_cmdline=None, process_filename=None, process_start_time=None, process_gid=None, process_egid=None, process_euid=None, ancestor_process_path=None, ancestor_process_pid=None, ancestor_process_cmdline=None, parent_process_name=None, parent_process_path=None, parent_process_pid=None, parent_process_uid=None, parent_process_cmdline=None, parent_process_filename=None, parent_process_start_time=None, parent_process_gid=None, parent_process_egid=None, parent_process_euid=None, child_process_name=None, child_process_path=None, child_process_pid=None, child_process_uid=None, child_process_cmdline=None, child_process_filename=None, child_process_start_time=None, child_process_gid=None, child_process_egid=None, child_process_euid=None, virt_cmd=None, virt_process_name=None, escape_mode=None, escape_cmd=None, process_hash=None, process_file_hash=None, parent_process_file_hash=None, block=None):
-        """EventProcessResponseInfo
+        r"""EventProcessResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -330,7 +330,7 @@ class EventProcessResponseInfo:
 
     @property
     def process_name(self):
-        """Gets the process_name of this EventProcessResponseInfo.
+        r"""Gets the process_name of this EventProcessResponseInfo.
 
         进程名称
 
@@ -341,7 +341,7 @@ class EventProcessResponseInfo:
 
     @process_name.setter
     def process_name(self, process_name):
-        """Sets the process_name of this EventProcessResponseInfo.
+        r"""Sets the process_name of this EventProcessResponseInfo.
 
         进程名称
 
@@ -352,7 +352,7 @@ class EventProcessResponseInfo:
 
     @property
     def process_path(self):
-        """Gets the process_path of this EventProcessResponseInfo.
+        r"""Gets the process_path of this EventProcessResponseInfo.
 
         进程文件路径
 
@@ -363,7 +363,7 @@ class EventProcessResponseInfo:
 
     @process_path.setter
     def process_path(self, process_path):
-        """Sets the process_path of this EventProcessResponseInfo.
+        r"""Sets the process_path of this EventProcessResponseInfo.
 
         进程文件路径
 
@@ -374,7 +374,7 @@ class EventProcessResponseInfo:
 
     @property
     def process_pid(self):
-        """Gets the process_pid of this EventProcessResponseInfo.
+        r"""Gets the process_pid of this EventProcessResponseInfo.
 
         进程id
 
@@ -385,7 +385,7 @@ class EventProcessResponseInfo:
 
     @process_pid.setter
     def process_pid(self, process_pid):
-        """Sets the process_pid of this EventProcessResponseInfo.
+        r"""Sets the process_pid of this EventProcessResponseInfo.
 
         进程id
 
@@ -396,7 +396,7 @@ class EventProcessResponseInfo:
 
     @property
     def process_uid(self):
-        """Gets the process_uid of this EventProcessResponseInfo.
+        r"""Gets the process_uid of this EventProcessResponseInfo.
 
         进程用户id
 
@@ -407,7 +407,7 @@ class EventProcessResponseInfo:
 
     @process_uid.setter
     def process_uid(self, process_uid):
-        """Sets the process_uid of this EventProcessResponseInfo.
+        r"""Sets the process_uid of this EventProcessResponseInfo.
 
         进程用户id
 
@@ -418,7 +418,7 @@ class EventProcessResponseInfo:
 
     @property
     def process_username(self):
-        """Gets the process_username of this EventProcessResponseInfo.
+        r"""Gets the process_username of this EventProcessResponseInfo.
 
         运行进程的用户名
 
@@ -429,7 +429,7 @@ class EventProcessResponseInfo:
 
     @process_username.setter
     def process_username(self, process_username):
-        """Sets the process_username of this EventProcessResponseInfo.
+        r"""Sets the process_username of this EventProcessResponseInfo.
 
         运行进程的用户名
 
@@ -440,7 +440,7 @@ class EventProcessResponseInfo:
 
     @property
     def process_cmdline(self):
-        """Gets the process_cmdline of this EventProcessResponseInfo.
+        r"""Gets the process_cmdline of this EventProcessResponseInfo.
 
         进程文件命令行
 
@@ -451,7 +451,7 @@ class EventProcessResponseInfo:
 
     @process_cmdline.setter
     def process_cmdline(self, process_cmdline):
-        """Sets the process_cmdline of this EventProcessResponseInfo.
+        r"""Sets the process_cmdline of this EventProcessResponseInfo.
 
         进程文件命令行
 
@@ -462,7 +462,7 @@ class EventProcessResponseInfo:
 
     @property
     def process_filename(self):
-        """Gets the process_filename of this EventProcessResponseInfo.
+        r"""Gets the process_filename of this EventProcessResponseInfo.
 
         进程文件名
 
@@ -473,7 +473,7 @@ class EventProcessResponseInfo:
 
     @process_filename.setter
     def process_filename(self, process_filename):
-        """Sets the process_filename of this EventProcessResponseInfo.
+        r"""Sets the process_filename of this EventProcessResponseInfo.
 
         进程文件名
 
@@ -484,7 +484,7 @@ class EventProcessResponseInfo:
 
     @property
     def process_start_time(self):
-        """Gets the process_start_time of this EventProcessResponseInfo.
+        r"""Gets the process_start_time of this EventProcessResponseInfo.
 
         进程启动时间
 
@@ -495,7 +495,7 @@ class EventProcessResponseInfo:
 
     @process_start_time.setter
     def process_start_time(self, process_start_time):
-        """Sets the process_start_time of this EventProcessResponseInfo.
+        r"""Sets the process_start_time of this EventProcessResponseInfo.
 
         进程启动时间
 
@@ -506,7 +506,7 @@ class EventProcessResponseInfo:
 
     @property
     def process_gid(self):
-        """Gets the process_gid of this EventProcessResponseInfo.
+        r"""Gets the process_gid of this EventProcessResponseInfo.
 
         进程组ID
 
@@ -517,7 +517,7 @@ class EventProcessResponseInfo:
 
     @process_gid.setter
     def process_gid(self, process_gid):
-        """Sets the process_gid of this EventProcessResponseInfo.
+        r"""Sets the process_gid of this EventProcessResponseInfo.
 
         进程组ID
 
@@ -528,7 +528,7 @@ class EventProcessResponseInfo:
 
     @property
     def process_egid(self):
-        """Gets the process_egid of this EventProcessResponseInfo.
+        r"""Gets the process_egid of this EventProcessResponseInfo.
 
         进程有效组ID
 
@@ -539,7 +539,7 @@ class EventProcessResponseInfo:
 
     @process_egid.setter
     def process_egid(self, process_egid):
-        """Sets the process_egid of this EventProcessResponseInfo.
+        r"""Sets the process_egid of this EventProcessResponseInfo.
 
         进程有效组ID
 
@@ -550,7 +550,7 @@ class EventProcessResponseInfo:
 
     @property
     def process_euid(self):
-        """Gets the process_euid of this EventProcessResponseInfo.
+        r"""Gets the process_euid of this EventProcessResponseInfo.
 
         进程有效用户ID
 
@@ -561,7 +561,7 @@ class EventProcessResponseInfo:
 
     @process_euid.setter
     def process_euid(self, process_euid):
-        """Sets the process_euid of this EventProcessResponseInfo.
+        r"""Sets the process_euid of this EventProcessResponseInfo.
 
         进程有效用户ID
 
@@ -572,7 +572,7 @@ class EventProcessResponseInfo:
 
     @property
     def ancestor_process_path(self):
-        """Gets the ancestor_process_path of this EventProcessResponseInfo.
+        r"""Gets the ancestor_process_path of this EventProcessResponseInfo.
 
         祖父进程文件路径
 
@@ -583,7 +583,7 @@ class EventProcessResponseInfo:
 
     @ancestor_process_path.setter
     def ancestor_process_path(self, ancestor_process_path):
-        """Sets the ancestor_process_path of this EventProcessResponseInfo.
+        r"""Sets the ancestor_process_path of this EventProcessResponseInfo.
 
         祖父进程文件路径
 
@@ -594,7 +594,7 @@ class EventProcessResponseInfo:
 
     @property
     def ancestor_process_pid(self):
-        """Gets the ancestor_process_pid of this EventProcessResponseInfo.
+        r"""Gets the ancestor_process_pid of this EventProcessResponseInfo.
 
         祖父进程id
 
@@ -605,7 +605,7 @@ class EventProcessResponseInfo:
 
     @ancestor_process_pid.setter
     def ancestor_process_pid(self, ancestor_process_pid):
-        """Sets the ancestor_process_pid of this EventProcessResponseInfo.
+        r"""Sets the ancestor_process_pid of this EventProcessResponseInfo.
 
         祖父进程id
 
@@ -616,7 +616,7 @@ class EventProcessResponseInfo:
 
     @property
     def ancestor_process_cmdline(self):
-        """Gets the ancestor_process_cmdline of this EventProcessResponseInfo.
+        r"""Gets the ancestor_process_cmdline of this EventProcessResponseInfo.
 
         祖父进程文件命令行
 
@@ -627,7 +627,7 @@ class EventProcessResponseInfo:
 
     @ancestor_process_cmdline.setter
     def ancestor_process_cmdline(self, ancestor_process_cmdline):
-        """Sets the ancestor_process_cmdline of this EventProcessResponseInfo.
+        r"""Sets the ancestor_process_cmdline of this EventProcessResponseInfo.
 
         祖父进程文件命令行
 
@@ -638,7 +638,7 @@ class EventProcessResponseInfo:
 
     @property
     def parent_process_name(self):
-        """Gets the parent_process_name of this EventProcessResponseInfo.
+        r"""Gets the parent_process_name of this EventProcessResponseInfo.
 
         父进程名称
 
@@ -649,7 +649,7 @@ class EventProcessResponseInfo:
 
     @parent_process_name.setter
     def parent_process_name(self, parent_process_name):
-        """Sets the parent_process_name of this EventProcessResponseInfo.
+        r"""Sets the parent_process_name of this EventProcessResponseInfo.
 
         父进程名称
 
@@ -660,7 +660,7 @@ class EventProcessResponseInfo:
 
     @property
     def parent_process_path(self):
-        """Gets the parent_process_path of this EventProcessResponseInfo.
+        r"""Gets the parent_process_path of this EventProcessResponseInfo.
 
         父进程文件路径
 
@@ -671,7 +671,7 @@ class EventProcessResponseInfo:
 
     @parent_process_path.setter
     def parent_process_path(self, parent_process_path):
-        """Sets the parent_process_path of this EventProcessResponseInfo.
+        r"""Sets the parent_process_path of this EventProcessResponseInfo.
 
         父进程文件路径
 
@@ -682,7 +682,7 @@ class EventProcessResponseInfo:
 
     @property
     def parent_process_pid(self):
-        """Gets the parent_process_pid of this EventProcessResponseInfo.
+        r"""Gets the parent_process_pid of this EventProcessResponseInfo.
 
         父进程id
 
@@ -693,7 +693,7 @@ class EventProcessResponseInfo:
 
     @parent_process_pid.setter
     def parent_process_pid(self, parent_process_pid):
-        """Sets the parent_process_pid of this EventProcessResponseInfo.
+        r"""Sets the parent_process_pid of this EventProcessResponseInfo.
 
         父进程id
 
@@ -704,7 +704,7 @@ class EventProcessResponseInfo:
 
     @property
     def parent_process_uid(self):
-        """Gets the parent_process_uid of this EventProcessResponseInfo.
+        r"""Gets the parent_process_uid of this EventProcessResponseInfo.
 
         父进程用户id
 
@@ -715,7 +715,7 @@ class EventProcessResponseInfo:
 
     @parent_process_uid.setter
     def parent_process_uid(self, parent_process_uid):
-        """Sets the parent_process_uid of this EventProcessResponseInfo.
+        r"""Sets the parent_process_uid of this EventProcessResponseInfo.
 
         父进程用户id
 
@@ -726,7 +726,7 @@ class EventProcessResponseInfo:
 
     @property
     def parent_process_cmdline(self):
-        """Gets the parent_process_cmdline of this EventProcessResponseInfo.
+        r"""Gets the parent_process_cmdline of this EventProcessResponseInfo.
 
         父进程文件命令行
 
@@ -737,7 +737,7 @@ class EventProcessResponseInfo:
 
     @parent_process_cmdline.setter
     def parent_process_cmdline(self, parent_process_cmdline):
-        """Sets the parent_process_cmdline of this EventProcessResponseInfo.
+        r"""Sets the parent_process_cmdline of this EventProcessResponseInfo.
 
         父进程文件命令行
 
@@ -748,7 +748,7 @@ class EventProcessResponseInfo:
 
     @property
     def parent_process_filename(self):
-        """Gets the parent_process_filename of this EventProcessResponseInfo.
+        r"""Gets the parent_process_filename of this EventProcessResponseInfo.
 
         父进程文件名
 
@@ -759,7 +759,7 @@ class EventProcessResponseInfo:
 
     @parent_process_filename.setter
     def parent_process_filename(self, parent_process_filename):
-        """Sets the parent_process_filename of this EventProcessResponseInfo.
+        r"""Sets the parent_process_filename of this EventProcessResponseInfo.
 
         父进程文件名
 
@@ -770,7 +770,7 @@ class EventProcessResponseInfo:
 
     @property
     def parent_process_start_time(self):
-        """Gets the parent_process_start_time of this EventProcessResponseInfo.
+        r"""Gets the parent_process_start_time of this EventProcessResponseInfo.
 
         父进程启动时间
 
@@ -781,7 +781,7 @@ class EventProcessResponseInfo:
 
     @parent_process_start_time.setter
     def parent_process_start_time(self, parent_process_start_time):
-        """Sets the parent_process_start_time of this EventProcessResponseInfo.
+        r"""Sets the parent_process_start_time of this EventProcessResponseInfo.
 
         父进程启动时间
 
@@ -792,7 +792,7 @@ class EventProcessResponseInfo:
 
     @property
     def parent_process_gid(self):
-        """Gets the parent_process_gid of this EventProcessResponseInfo.
+        r"""Gets the parent_process_gid of this EventProcessResponseInfo.
 
         父进程组ID
 
@@ -803,7 +803,7 @@ class EventProcessResponseInfo:
 
     @parent_process_gid.setter
     def parent_process_gid(self, parent_process_gid):
-        """Sets the parent_process_gid of this EventProcessResponseInfo.
+        r"""Sets the parent_process_gid of this EventProcessResponseInfo.
 
         父进程组ID
 
@@ -814,7 +814,7 @@ class EventProcessResponseInfo:
 
     @property
     def parent_process_egid(self):
-        """Gets the parent_process_egid of this EventProcessResponseInfo.
+        r"""Gets the parent_process_egid of this EventProcessResponseInfo.
 
         父进程有效组ID
 
@@ -825,7 +825,7 @@ class EventProcessResponseInfo:
 
     @parent_process_egid.setter
     def parent_process_egid(self, parent_process_egid):
-        """Sets the parent_process_egid of this EventProcessResponseInfo.
+        r"""Sets the parent_process_egid of this EventProcessResponseInfo.
 
         父进程有效组ID
 
@@ -836,7 +836,7 @@ class EventProcessResponseInfo:
 
     @property
     def parent_process_euid(self):
-        """Gets the parent_process_euid of this EventProcessResponseInfo.
+        r"""Gets the parent_process_euid of this EventProcessResponseInfo.
 
         父进程有效用户ID
 
@@ -847,7 +847,7 @@ class EventProcessResponseInfo:
 
     @parent_process_euid.setter
     def parent_process_euid(self, parent_process_euid):
-        """Sets the parent_process_euid of this EventProcessResponseInfo.
+        r"""Sets the parent_process_euid of this EventProcessResponseInfo.
 
         父进程有效用户ID
 
@@ -858,7 +858,7 @@ class EventProcessResponseInfo:
 
     @property
     def child_process_name(self):
-        """Gets the child_process_name of this EventProcessResponseInfo.
+        r"""Gets the child_process_name of this EventProcessResponseInfo.
 
         子进程名称
 
@@ -869,7 +869,7 @@ class EventProcessResponseInfo:
 
     @child_process_name.setter
     def child_process_name(self, child_process_name):
-        """Sets the child_process_name of this EventProcessResponseInfo.
+        r"""Sets the child_process_name of this EventProcessResponseInfo.
 
         子进程名称
 
@@ -880,7 +880,7 @@ class EventProcessResponseInfo:
 
     @property
     def child_process_path(self):
-        """Gets the child_process_path of this EventProcessResponseInfo.
+        r"""Gets the child_process_path of this EventProcessResponseInfo.
 
         子进程文件路径
 
@@ -891,7 +891,7 @@ class EventProcessResponseInfo:
 
     @child_process_path.setter
     def child_process_path(self, child_process_path):
-        """Sets the child_process_path of this EventProcessResponseInfo.
+        r"""Sets the child_process_path of this EventProcessResponseInfo.
 
         子进程文件路径
 
@@ -902,7 +902,7 @@ class EventProcessResponseInfo:
 
     @property
     def child_process_pid(self):
-        """Gets the child_process_pid of this EventProcessResponseInfo.
+        r"""Gets the child_process_pid of this EventProcessResponseInfo.
 
         子进程id
 
@@ -913,7 +913,7 @@ class EventProcessResponseInfo:
 
     @child_process_pid.setter
     def child_process_pid(self, child_process_pid):
-        """Sets the child_process_pid of this EventProcessResponseInfo.
+        r"""Sets the child_process_pid of this EventProcessResponseInfo.
 
         子进程id
 
@@ -924,7 +924,7 @@ class EventProcessResponseInfo:
 
     @property
     def child_process_uid(self):
-        """Gets the child_process_uid of this EventProcessResponseInfo.
+        r"""Gets the child_process_uid of this EventProcessResponseInfo.
 
         子进程用户id
 
@@ -935,7 +935,7 @@ class EventProcessResponseInfo:
 
     @child_process_uid.setter
     def child_process_uid(self, child_process_uid):
-        """Sets the child_process_uid of this EventProcessResponseInfo.
+        r"""Sets the child_process_uid of this EventProcessResponseInfo.
 
         子进程用户id
 
@@ -946,7 +946,7 @@ class EventProcessResponseInfo:
 
     @property
     def child_process_cmdline(self):
-        """Gets the child_process_cmdline of this EventProcessResponseInfo.
+        r"""Gets the child_process_cmdline of this EventProcessResponseInfo.
 
         子进程文件命令行
 
@@ -957,7 +957,7 @@ class EventProcessResponseInfo:
 
     @child_process_cmdline.setter
     def child_process_cmdline(self, child_process_cmdline):
-        """Sets the child_process_cmdline of this EventProcessResponseInfo.
+        r"""Sets the child_process_cmdline of this EventProcessResponseInfo.
 
         子进程文件命令行
 
@@ -968,7 +968,7 @@ class EventProcessResponseInfo:
 
     @property
     def child_process_filename(self):
-        """Gets the child_process_filename of this EventProcessResponseInfo.
+        r"""Gets the child_process_filename of this EventProcessResponseInfo.
 
         子进程文件名
 
@@ -979,7 +979,7 @@ class EventProcessResponseInfo:
 
     @child_process_filename.setter
     def child_process_filename(self, child_process_filename):
-        """Sets the child_process_filename of this EventProcessResponseInfo.
+        r"""Sets the child_process_filename of this EventProcessResponseInfo.
 
         子进程文件名
 
@@ -990,7 +990,7 @@ class EventProcessResponseInfo:
 
     @property
     def child_process_start_time(self):
-        """Gets the child_process_start_time of this EventProcessResponseInfo.
+        r"""Gets the child_process_start_time of this EventProcessResponseInfo.
 
         子进程启动时间
 
@@ -1001,7 +1001,7 @@ class EventProcessResponseInfo:
 
     @child_process_start_time.setter
     def child_process_start_time(self, child_process_start_time):
-        """Sets the child_process_start_time of this EventProcessResponseInfo.
+        r"""Sets the child_process_start_time of this EventProcessResponseInfo.
 
         子进程启动时间
 
@@ -1012,7 +1012,7 @@ class EventProcessResponseInfo:
 
     @property
     def child_process_gid(self):
-        """Gets the child_process_gid of this EventProcessResponseInfo.
+        r"""Gets the child_process_gid of this EventProcessResponseInfo.
 
         子进程组ID
 
@@ -1023,7 +1023,7 @@ class EventProcessResponseInfo:
 
     @child_process_gid.setter
     def child_process_gid(self, child_process_gid):
-        """Sets the child_process_gid of this EventProcessResponseInfo.
+        r"""Sets the child_process_gid of this EventProcessResponseInfo.
 
         子进程组ID
 
@@ -1034,7 +1034,7 @@ class EventProcessResponseInfo:
 
     @property
     def child_process_egid(self):
-        """Gets the child_process_egid of this EventProcessResponseInfo.
+        r"""Gets the child_process_egid of this EventProcessResponseInfo.
 
         子进程有效组ID
 
@@ -1045,7 +1045,7 @@ class EventProcessResponseInfo:
 
     @child_process_egid.setter
     def child_process_egid(self, child_process_egid):
-        """Sets the child_process_egid of this EventProcessResponseInfo.
+        r"""Sets the child_process_egid of this EventProcessResponseInfo.
 
         子进程有效组ID
 
@@ -1056,7 +1056,7 @@ class EventProcessResponseInfo:
 
     @property
     def child_process_euid(self):
-        """Gets the child_process_euid of this EventProcessResponseInfo.
+        r"""Gets the child_process_euid of this EventProcessResponseInfo.
 
         子进程有效用户ID
 
@@ -1067,7 +1067,7 @@ class EventProcessResponseInfo:
 
     @child_process_euid.setter
     def child_process_euid(self, child_process_euid):
-        """Sets the child_process_euid of this EventProcessResponseInfo.
+        r"""Sets the child_process_euid of this EventProcessResponseInfo.
 
         子进程有效用户ID
 
@@ -1078,7 +1078,7 @@ class EventProcessResponseInfo:
 
     @property
     def virt_cmd(self):
-        """Gets the virt_cmd of this EventProcessResponseInfo.
+        r"""Gets the virt_cmd of this EventProcessResponseInfo.
 
         虚拟化命令
 
@@ -1089,7 +1089,7 @@ class EventProcessResponseInfo:
 
     @virt_cmd.setter
     def virt_cmd(self, virt_cmd):
-        """Sets the virt_cmd of this EventProcessResponseInfo.
+        r"""Sets the virt_cmd of this EventProcessResponseInfo.
 
         虚拟化命令
 
@@ -1100,7 +1100,7 @@ class EventProcessResponseInfo:
 
     @property
     def virt_process_name(self):
-        """Gets the virt_process_name of this EventProcessResponseInfo.
+        r"""Gets the virt_process_name of this EventProcessResponseInfo.
 
         虚拟化进程名称
 
@@ -1111,7 +1111,7 @@ class EventProcessResponseInfo:
 
     @virt_process_name.setter
     def virt_process_name(self, virt_process_name):
-        """Sets the virt_process_name of this EventProcessResponseInfo.
+        r"""Sets the virt_process_name of this EventProcessResponseInfo.
 
         虚拟化进程名称
 
@@ -1122,7 +1122,7 @@ class EventProcessResponseInfo:
 
     @property
     def escape_mode(self):
-        """Gets the escape_mode of this EventProcessResponseInfo.
+        r"""Gets the escape_mode of this EventProcessResponseInfo.
 
         逃逸方式
 
@@ -1133,7 +1133,7 @@ class EventProcessResponseInfo:
 
     @escape_mode.setter
     def escape_mode(self, escape_mode):
-        """Sets the escape_mode of this EventProcessResponseInfo.
+        r"""Sets the escape_mode of this EventProcessResponseInfo.
 
         逃逸方式
 
@@ -1144,7 +1144,7 @@ class EventProcessResponseInfo:
 
     @property
     def escape_cmd(self):
-        """Gets the escape_cmd of this EventProcessResponseInfo.
+        r"""Gets the escape_cmd of this EventProcessResponseInfo.
 
         逃逸后后执行的命令
 
@@ -1155,7 +1155,7 @@ class EventProcessResponseInfo:
 
     @escape_cmd.setter
     def escape_cmd(self, escape_cmd):
-        """Sets the escape_cmd of this EventProcessResponseInfo.
+        r"""Sets the escape_cmd of this EventProcessResponseInfo.
 
         逃逸后后执行的命令
 
@@ -1166,7 +1166,7 @@ class EventProcessResponseInfo:
 
     @property
     def process_hash(self):
-        """Gets the process_hash of this EventProcessResponseInfo.
+        r"""Gets the process_hash of this EventProcessResponseInfo.
 
         进程启动文件hash
 
@@ -1177,7 +1177,7 @@ class EventProcessResponseInfo:
 
     @process_hash.setter
     def process_hash(self, process_hash):
-        """Sets the process_hash of this EventProcessResponseInfo.
+        r"""Sets the process_hash of this EventProcessResponseInfo.
 
         进程启动文件hash
 
@@ -1188,7 +1188,7 @@ class EventProcessResponseInfo:
 
     @property
     def process_file_hash(self):
-        """Gets the process_file_hash of this EventProcessResponseInfo.
+        r"""Gets the process_file_hash of this EventProcessResponseInfo.
 
         进程文件hash
 
@@ -1199,7 +1199,7 @@ class EventProcessResponseInfo:
 
     @process_file_hash.setter
     def process_file_hash(self, process_file_hash):
-        """Sets the process_file_hash of this EventProcessResponseInfo.
+        r"""Sets the process_file_hash of this EventProcessResponseInfo.
 
         进程文件hash
 
@@ -1210,7 +1210,7 @@ class EventProcessResponseInfo:
 
     @property
     def parent_process_file_hash(self):
-        """Gets the parent_process_file_hash of this EventProcessResponseInfo.
+        r"""Gets the parent_process_file_hash of this EventProcessResponseInfo.
 
         父进程文件hash
 
@@ -1221,7 +1221,7 @@ class EventProcessResponseInfo:
 
     @parent_process_file_hash.setter
     def parent_process_file_hash(self, parent_process_file_hash):
-        """Sets the parent_process_file_hash of this EventProcessResponseInfo.
+        r"""Sets the parent_process_file_hash of this EventProcessResponseInfo.
 
         父进程文件hash
 
@@ -1232,7 +1232,7 @@ class EventProcessResponseInfo:
 
     @property
     def block(self):
-        """Gets the block of this EventProcessResponseInfo.
+        r"""Gets the block of this EventProcessResponseInfo.
 
         是否阻断成功，1阻断成功 0阻断失败
 
@@ -1243,7 +1243,7 @@ class EventProcessResponseInfo:
 
     @block.setter
     def block(self, block):
-        """Sets the block of this EventProcessResponseInfo.
+        r"""Sets the block of this EventProcessResponseInfo.
 
         是否阻断成功，1阻断成功 0阻断失败
 

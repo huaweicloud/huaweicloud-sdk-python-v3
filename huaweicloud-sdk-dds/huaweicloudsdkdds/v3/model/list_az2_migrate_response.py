@@ -26,7 +26,7 @@ class ListAz2MigrateResponse(SdkResponse):
     }
 
     def __init__(self, az_list=None):
-        """ListAz2MigrateResponse
+        r"""ListAz2MigrateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAz2MigrateResponse(SdkResponse):
 
     @property
     def az_list(self):
-        """Gets the az_list of this ListAz2MigrateResponse.
+        r"""Gets the az_list of this ListAz2MigrateResponse.
 
         可用区具体信息。
 
@@ -55,7 +55,7 @@ class ListAz2MigrateResponse(SdkResponse):
 
     @az_list.setter
     def az_list(self, az_list):
-        """Sets the az_list of this ListAz2MigrateResponse.
+        r"""Sets the az_list of this ListAz2MigrateResponse.
 
         可用区具体信息。
 

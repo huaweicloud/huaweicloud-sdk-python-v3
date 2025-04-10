@@ -28,7 +28,7 @@ class ShowReplicationStatusResponse(SdkResponse):
     }
 
     def __init__(self, replication_status=None, abnormal_reason=None):
-        """ShowReplicationStatusResponse
+        r"""ShowReplicationStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowReplicationStatusResponse(SdkResponse):
 
     @property
     def replication_status(self):
-        """Gets the replication_status of this ShowReplicationStatusResponse.
+        r"""Gets the replication_status of this ShowReplicationStatusResponse.
 
         复制状态。
 
@@ -62,7 +62,7 @@ class ShowReplicationStatusResponse(SdkResponse):
 
     @replication_status.setter
     def replication_status(self, replication_status):
-        """Sets the replication_status of this ShowReplicationStatusResponse.
+        r"""Sets the replication_status of this ShowReplicationStatusResponse.
 
         复制状态。
 
@@ -73,7 +73,7 @@ class ShowReplicationStatusResponse(SdkResponse):
 
     @property
     def abnormal_reason(self):
-        """Gets the abnormal_reason of this ShowReplicationStatusResponse.
+        r"""Gets the abnormal_reason of this ShowReplicationStatusResponse.
 
         复制异常原因。
 
@@ -84,7 +84,7 @@ class ShowReplicationStatusResponse(SdkResponse):
 
     @abnormal_reason.setter
     def abnormal_reason(self, abnormal_reason):
-        """Sets the abnormal_reason of this ShowReplicationStatusResponse.
+        r"""Sets the abnormal_reason of this ShowReplicationStatusResponse.
 
         复制异常原因。
 

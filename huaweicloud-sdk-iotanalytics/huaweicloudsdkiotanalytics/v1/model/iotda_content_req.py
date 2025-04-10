@@ -27,7 +27,7 @@ class IotdaContentReq:
     }
 
     def __init__(self, iotda_instance_id=None, rules=None):
-        """IotdaContentReq
+        r"""IotdaContentReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IotdaContentReq:
 
     @property
     def iotda_instance_id(self):
-        """Gets the iotda_instance_id of this IotdaContentReq.
+        r"""Gets the iotda_instance_id of this IotdaContentReq.
 
         IoTDA实例Id
 
@@ -59,7 +59,7 @@ class IotdaContentReq:
 
     @iotda_instance_id.setter
     def iotda_instance_id(self, iotda_instance_id):
-        """Sets the iotda_instance_id of this IotdaContentReq.
+        r"""Sets the iotda_instance_id of this IotdaContentReq.
 
         IoTDA实例Id
 
@@ -70,7 +70,7 @@ class IotdaContentReq:
 
     @property
     def rules(self):
-        """Gets the rules of this IotdaContentReq.
+        r"""Gets the rules of this IotdaContentReq.
 
         在IoTDA实例中要配置转发规则推送数据的资源空间和产品列表
 
@@ -81,7 +81,7 @@ class IotdaContentReq:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this IotdaContentReq.
+        r"""Sets the rules of this IotdaContentReq.
 
         在IoTDA实例中要配置转发规则推送数据的资源空间和产品列表
 

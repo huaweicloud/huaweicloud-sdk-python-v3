@@ -25,7 +25,7 @@ class ProtectedInstanceAddTagsRequestBody:
     }
 
     def __init__(self, tag=None):
-        """ProtectedInstanceAddTagsRequestBody
+        r"""ProtectedInstanceAddTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ProtectedInstanceAddTagsRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this ProtectedInstanceAddTagsRequestBody.
+        r"""Gets the tag of this ProtectedInstanceAddTagsRequestBody.
 
         :return: The tag of this ProtectedInstanceAddTagsRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.ResourceTag`
@@ -51,7 +51,7 @@ class ProtectedInstanceAddTagsRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ProtectedInstanceAddTagsRequestBody.
+        r"""Sets the tag of this ProtectedInstanceAddTagsRequestBody.
 
         :param tag: The tag of this ProtectedInstanceAddTagsRequestBody.
         :type tag: :class:`huaweicloudsdksdrs.v1.ResourceTag`

@@ -27,7 +27,7 @@ class SwitchHaTypeBody:
     }
 
     def __init__(self, active_equipment_id=None, standby_equipment_id=None):
-        """SwitchHaTypeBody
+        r"""SwitchHaTypeBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SwitchHaTypeBody:
 
     @property
     def active_equipment_id(self):
-        """Gets the active_equipment_id of this SwitchHaTypeBody.
+        r"""Gets the active_equipment_id of this SwitchHaTypeBody.
 
         主设备ID
 
@@ -59,7 +59,7 @@ class SwitchHaTypeBody:
 
     @active_equipment_id.setter
     def active_equipment_id(self, active_equipment_id):
-        """Sets the active_equipment_id of this SwitchHaTypeBody.
+        r"""Sets the active_equipment_id of this SwitchHaTypeBody.
 
         主设备ID
 
@@ -70,7 +70,7 @@ class SwitchHaTypeBody:
 
     @property
     def standby_equipment_id(self):
-        """Gets the standby_equipment_id of this SwitchHaTypeBody.
+        r"""Gets the standby_equipment_id of this SwitchHaTypeBody.
 
         备设备ID
 
@@ -81,7 +81,7 @@ class SwitchHaTypeBody:
 
     @standby_equipment_id.setter
     def standby_equipment_id(self, standby_equipment_id):
-        """Sets the standby_equipment_id of this SwitchHaTypeBody.
+        r"""Sets the standby_equipment_id of this SwitchHaTypeBody.
 
         备设备ID
 

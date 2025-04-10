@@ -29,7 +29,7 @@ class SearchQosOnlineMeetingsRequest:
     }
 
     def __init__(self, offset=None, limit=None, search_key=None):
-        """SearchQosOnlineMeetingsRequest
+        r"""SearchQosOnlineMeetingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SearchQosOnlineMeetingsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchQosOnlineMeetingsRequest.
+        r"""Gets the offset of this SearchQosOnlineMeetingsRequest.
 
         查询偏移量。 * 取值：大于等于0，默认值为0 * 大于等于最大条目数量，则返回最后一页的数据
 
@@ -68,7 +68,7 @@ class SearchQosOnlineMeetingsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchQosOnlineMeetingsRequest.
+        r"""Sets the offset of this SearchQosOnlineMeetingsRequest.
 
         查询偏移量。 * 取值：大于等于0，默认值为0 * 大于等于最大条目数量，则返回最后一页的数据
 
@@ -79,7 +79,7 @@ class SearchQosOnlineMeetingsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchQosOnlineMeetingsRequest.
+        r"""Gets the limit of this SearchQosOnlineMeetingsRequest.
 
         查询的条目数量。 * 取值：1-500，默认值为20
 
@@ -90,7 +90,7 @@ class SearchQosOnlineMeetingsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchQosOnlineMeetingsRequest.
+        r"""Sets the limit of this SearchQosOnlineMeetingsRequest.
 
         查询的条目数量。 * 取值：1-500，默认值为20
 
@@ -101,7 +101,7 @@ class SearchQosOnlineMeetingsRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchQosOnlineMeetingsRequest.
+        r"""Gets the search_key of this SearchQosOnlineMeetingsRequest.
 
         查询条件。会议主题、会议预约人和会议ID等可作为搜索内容。长度限制为1-512个字符。
 
@@ -112,7 +112,7 @@ class SearchQosOnlineMeetingsRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchQosOnlineMeetingsRequest.
+        r"""Sets the search_key of this SearchQosOnlineMeetingsRequest.
 
         查询条件。会议主题、会议预约人和会议ID等可作为搜索内容。长度限制为1-512个字符。
 

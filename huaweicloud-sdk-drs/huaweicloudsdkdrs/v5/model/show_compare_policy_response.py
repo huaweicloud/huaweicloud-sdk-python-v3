@@ -40,7 +40,7 @@ class ShowComparePolicyResponse(SdkResponse):
     }
 
     def __init__(self, period=None, status=None, begin_time=None, end_time=None, compare_type=None, next_compare_time=None, compare_policy=None, interval_hour=None):
-        """ShowComparePolicyResponse
+        r"""ShowComparePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @property
     def period(self):
-        """Gets the period of this ShowComparePolicyResponse.
+        r"""Gets the period of this ShowComparePolicyResponse.
 
         对比时间。
 
@@ -104,7 +104,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ShowComparePolicyResponse.
+        r"""Sets the period of this ShowComparePolicyResponse.
 
         对比时间。
 
@@ -115,7 +115,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowComparePolicyResponse.
+        r"""Gets the status of this ShowComparePolicyResponse.
 
         对比策略状态。 - OPEN：开启 - CLOSED：关闭 - NO_SUPPORT：不支持
 
@@ -126,7 +126,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowComparePolicyResponse.
+        r"""Sets the status of this ShowComparePolicyResponse.
 
         对比策略状态。 - OPEN：开启 - CLOSED：关闭 - NO_SUPPORT：不支持
 
@@ -137,7 +137,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowComparePolicyResponse.
+        r"""Gets the begin_time of this ShowComparePolicyResponse.
 
         对比开始时间。
 
@@ -148,7 +148,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowComparePolicyResponse.
+        r"""Sets the begin_time of this ShowComparePolicyResponse.
 
         对比开始时间。
 
@@ -159,7 +159,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowComparePolicyResponse.
+        r"""Gets the end_time of this ShowComparePolicyResponse.
 
         对比结束时间。
 
@@ -170,7 +170,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowComparePolicyResponse.
+        r"""Sets the end_time of this ShowComparePolicyResponse.
 
         对比结束时间。
 
@@ -181,7 +181,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @property
     def compare_type(self):
-        """Gets the compare_type of this ShowComparePolicyResponse.
+        r"""Gets the compare_type of this ShowComparePolicyResponse.
 
         对比类型： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。
 
@@ -192,7 +192,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @compare_type.setter
     def compare_type(self, compare_type):
-        """Sets the compare_type of this ShowComparePolicyResponse.
+        r"""Sets the compare_type of this ShowComparePolicyResponse.
 
         对比类型： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。
 
@@ -203,7 +203,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @property
     def next_compare_time(self):
-        """Gets the next_compare_time of this ShowComparePolicyResponse.
+        r"""Gets the next_compare_time of this ShowComparePolicyResponse.
 
         下次对比时间，UTC时间，例如：2023-06-12T08:00:00Z
 
@@ -214,7 +214,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @next_compare_time.setter
     def next_compare_time(self, next_compare_time):
-        """Sets the next_compare_time of this ShowComparePolicyResponse.
+        r"""Sets the next_compare_time of this ShowComparePolicyResponse.
 
         下次对比时间，UTC时间，例如：2023-06-12T08:00:00Z
 
@@ -225,7 +225,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @property
     def compare_policy(self):
-        """Gets the compare_policy of this ShowComparePolicyResponse.
+        r"""Gets the compare_policy of this ShowComparePolicyResponse.
 
         对比策略。 - normal：普通对比 - manyToOne：多对一对比
 
@@ -236,7 +236,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @compare_policy.setter
     def compare_policy(self, compare_policy):
-        """Sets the compare_policy of this ShowComparePolicyResponse.
+        r"""Sets the compare_policy of this ShowComparePolicyResponse.
 
         对比策略。 - normal：普通对比 - manyToOne：多对一对比
 
@@ -247,7 +247,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @property
     def interval_hour(self):
-        """Gets the interval_hour of this ShowComparePolicyResponse.
+        r"""Gets the interval_hour of this ShowComparePolicyResponse.
 
         间隔时间。
 
@@ -258,7 +258,7 @@ class ShowComparePolicyResponse(SdkResponse):
 
     @interval_hour.setter
     def interval_hour(self, interval_hour):
-        """Sets the interval_hour of this ShowComparePolicyResponse.
+        r"""Sets the interval_hour of this ShowComparePolicyResponse.
 
         间隔时间。
 

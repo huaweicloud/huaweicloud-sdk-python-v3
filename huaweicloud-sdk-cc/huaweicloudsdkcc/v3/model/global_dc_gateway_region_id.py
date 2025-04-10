@@ -25,7 +25,7 @@ class GlobalDcGatewayRegionId:
     }
 
     def __init__(self, global_dc_gateway_region_id=None):
-        """GlobalDcGatewayRegionId
+        r"""GlobalDcGatewayRegionId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GlobalDcGatewayRegionId:
 
     @property
     def global_dc_gateway_region_id(self):
-        """Gets the global_dc_gateway_region_id of this GlobalDcGatewayRegionId.
+        r"""Gets the global_dc_gateway_region_id of this GlobalDcGatewayRegionId.
 
         Gdgw的RegionID。
 
@@ -53,7 +53,7 @@ class GlobalDcGatewayRegionId:
 
     @global_dc_gateway_region_id.setter
     def global_dc_gateway_region_id(self, global_dc_gateway_region_id):
-        """Sets the global_dc_gateway_region_id of this GlobalDcGatewayRegionId.
+        r"""Sets the global_dc_gateway_region_id of this GlobalDcGatewayRegionId.
 
         Gdgw的RegionID。
 

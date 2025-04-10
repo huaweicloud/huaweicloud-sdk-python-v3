@@ -39,7 +39,7 @@ class UpStreamDetail:
     }
 
     def __init__(self, time=None, fps=None, rate=None, delay=None, gop_duration=None, last_video_pts=None, last_audio_pts=None, last_video_audio_pts_diff=None):
-        """UpStreamDetail
+        r"""UpStreamDetail
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class UpStreamDetail:
 
     @property
     def time(self):
-        """Gets the time of this UpStreamDetail.
+        r"""Gets the time of this UpStreamDetail.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -103,7 +103,7 @@ class UpStreamDetail:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this UpStreamDetail.
+        r"""Sets the time of this UpStreamDetail.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -114,7 +114,7 @@ class UpStreamDetail:
 
     @property
     def fps(self):
-        """Gets the fps of this UpStreamDetail.
+        r"""Gets the fps of this UpStreamDetail.
 
         帧率，单位为fps
 
@@ -125,7 +125,7 @@ class UpStreamDetail:
 
     @fps.setter
     def fps(self, fps):
-        """Sets the fps of this UpStreamDetail.
+        r"""Sets the fps of this UpStreamDetail.
 
         帧率，单位为fps
 
@@ -136,7 +136,7 @@ class UpStreamDetail:
 
     @property
     def rate(self):
-        """Gets the rate of this UpStreamDetail.
+        r"""Gets the rate of this UpStreamDetail.
 
         码率，单位为Kbps
 
@@ -147,7 +147,7 @@ class UpStreamDetail:
 
     @rate.setter
     def rate(self, rate):
-        """Sets the rate of this UpStreamDetail.
+        r"""Sets the rate of this UpStreamDetail.
 
         码率，单位为Kbps
 
@@ -158,7 +158,7 @@ class UpStreamDetail:
 
     @property
     def delay(self):
-        """Gets the delay of this UpStreamDetail.
+        r"""Gets the delay of this UpStreamDetail.
 
         时延 单位ms
 
@@ -169,7 +169,7 @@ class UpStreamDetail:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this UpStreamDetail.
+        r"""Sets the delay of this UpStreamDetail.
 
         时延 单位ms
 
@@ -180,7 +180,7 @@ class UpStreamDetail:
 
     @property
     def gop_duration(self):
-        """Gets the gop_duration of this UpStreamDetail.
+        r"""Gets the gop_duration of this UpStreamDetail.
 
         最近一次gop的时长 单位ms
 
@@ -191,7 +191,7 @@ class UpStreamDetail:
 
     @gop_duration.setter
     def gop_duration(self, gop_duration):
-        """Sets the gop_duration of this UpStreamDetail.
+        r"""Sets the gop_duration of this UpStreamDetail.
 
         最近一次gop的时长 单位ms
 
@@ -202,7 +202,7 @@ class UpStreamDetail:
 
     @property
     def last_video_pts(self):
-        """Gets the last_video_pts of this UpStreamDetail.
+        r"""Gets the last_video_pts of this UpStreamDetail.
 
         视频DTS 单位ms
 
@@ -213,7 +213,7 @@ class UpStreamDetail:
 
     @last_video_pts.setter
     def last_video_pts(self, last_video_pts):
-        """Sets the last_video_pts of this UpStreamDetail.
+        r"""Sets the last_video_pts of this UpStreamDetail.
 
         视频DTS 单位ms
 
@@ -224,7 +224,7 @@ class UpStreamDetail:
 
     @property
     def last_audio_pts(self):
-        """Gets the last_audio_pts of this UpStreamDetail.
+        r"""Gets the last_audio_pts of this UpStreamDetail.
 
         音频DTS 单位ms
 
@@ -235,7 +235,7 @@ class UpStreamDetail:
 
     @last_audio_pts.setter
     def last_audio_pts(self, last_audio_pts):
-        """Sets the last_audio_pts of this UpStreamDetail.
+        r"""Sets the last_audio_pts of this UpStreamDetail.
 
         音频DTS 单位ms
 
@@ -246,7 +246,7 @@ class UpStreamDetail:
 
     @property
     def last_video_audio_pts_diff(self):
-        """Gets the last_video_audio_pts_diff of this UpStreamDetail.
+        r"""Gets the last_video_audio_pts_diff of this UpStreamDetail.
 
         音视频DTS差值 单位ms
 
@@ -257,7 +257,7 @@ class UpStreamDetail:
 
     @last_video_audio_pts_diff.setter
     def last_video_audio_pts_diff(self, last_video_audio_pts_diff):
-        """Sets the last_video_audio_pts_diff of this UpStreamDetail.
+        r"""Sets the last_video_audio_pts_diff of this UpStreamDetail.
 
         音视频DTS差值 单位ms
 

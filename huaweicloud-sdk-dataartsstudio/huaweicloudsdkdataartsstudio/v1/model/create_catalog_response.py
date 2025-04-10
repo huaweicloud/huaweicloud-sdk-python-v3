@@ -26,7 +26,7 @@ class CreateCatalogResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """CreateCatalogResponse
+        r"""CreateCatalogResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateCatalogResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateCatalogResponse.
+        r"""Gets the data of this CreateCatalogResponse.
 
         :return: The data of this CreateCatalogResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateCatalogResultData`
@@ -53,7 +53,7 @@ class CreateCatalogResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateCatalogResponse.
+        r"""Sets the data of this CreateCatalogResponse.
 
         :param data: The data of this CreateCatalogResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateCatalogResultData`

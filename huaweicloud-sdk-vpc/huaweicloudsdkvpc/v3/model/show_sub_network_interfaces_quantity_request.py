@@ -23,7 +23,7 @@ class ShowSubNetworkInterfacesQuantityRequest:
     }
 
     def __init__(self):
-        """ShowSubNetworkInterfacesQuantityRequest
+        r"""ShowSubNetworkInterfacesQuantityRequest
 
         The model defined in huaweicloud sdk
 

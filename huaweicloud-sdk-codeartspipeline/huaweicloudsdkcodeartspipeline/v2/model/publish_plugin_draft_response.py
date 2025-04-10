@@ -26,7 +26,7 @@ class PublishPluginDraftResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """PublishPluginDraftResponse
+        r"""PublishPluginDraftResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class PublishPluginDraftResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this PublishPluginDraftResponse.
+        r"""Gets the body of this PublishPluginDraftResponse.
 
         :return: The body of this PublishPluginDraftResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class PublishPluginDraftResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PublishPluginDraftResponse.
+        r"""Sets the body of this PublishPluginDraftResponse.
 
         :param body: The body of this PublishPluginDraftResponse.
         :type body: str

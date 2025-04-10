@@ -26,7 +26,7 @@ class CreateObjectLevelCompareJobResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateObjectLevelCompareJobResponse
+        r"""CreateObjectLevelCompareJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateObjectLevelCompareJobResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateObjectLevelCompareJobResponse.
+        r"""Gets the body of this CreateObjectLevelCompareJobResponse.
 
         空响应体。
 
@@ -55,7 +55,7 @@ class CreateObjectLevelCompareJobResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateObjectLevelCompareJobResponse.
+        r"""Sets the body of this CreateObjectLevelCompareJobResponse.
 
         空响应体。
 

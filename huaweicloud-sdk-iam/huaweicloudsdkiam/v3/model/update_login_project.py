@@ -27,7 +27,7 @@ class UpdateLoginProject:
     }
 
     def __init__(self, enabled=None, verification_method=None):
-        """UpdateLoginProject
+        r"""UpdateLoginProject
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateLoginProject:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateLoginProject.
+        r"""Gets the enabled of this UpdateLoginProject.
 
         IAM用户是否开启登录保护，开启为\"true\"，未开启为\"false\"。
 
@@ -59,7 +59,7 @@ class UpdateLoginProject:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateLoginProject.
+        r"""Sets the enabled of this UpdateLoginProject.
 
         IAM用户是否开启登录保护，开启为\"true\"，未开启为\"false\"。
 
@@ -70,7 +70,7 @@ class UpdateLoginProject:
 
     @property
     def verification_method(self):
-        """Gets the verification_method of this UpdateLoginProject.
+        r"""Gets the verification_method of this UpdateLoginProject.
 
         IAM用户登录验证方式。手机验证为“sms”,邮箱验证为“email”,MFA验证为“vmfa”。
 
@@ -81,7 +81,7 @@ class UpdateLoginProject:
 
     @verification_method.setter
     def verification_method(self, verification_method):
-        """Sets the verification_method of this UpdateLoginProject.
+        r"""Sets the verification_method of this UpdateLoginProject.
 
         IAM用户登录验证方式。手机验证为“sms”,邮箱验证为“email”,MFA验证为“vmfa”。
 

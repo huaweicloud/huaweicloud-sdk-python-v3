@@ -25,7 +25,7 @@ class ApiCatalogDeleteParaDTO:
     }
 
     def __init__(self, ids=None):
-        """ApiCatalogDeleteParaDTO
+        r"""ApiCatalogDeleteParaDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ApiCatalogDeleteParaDTO:
 
     @property
     def ids(self):
-        """Gets the ids of this ApiCatalogDeleteParaDTO.
+        r"""Gets the ids of this ApiCatalogDeleteParaDTO.
 
         :return: The ids of this ApiCatalogDeleteParaDTO.
         :rtype: list[str]
@@ -52,7 +52,7 @@ class ApiCatalogDeleteParaDTO:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this ApiCatalogDeleteParaDTO.
+        r"""Sets the ids of this ApiCatalogDeleteParaDTO.
 
         :param ids: The ids of this ApiCatalogDeleteParaDTO.
         :type ids: list[str]

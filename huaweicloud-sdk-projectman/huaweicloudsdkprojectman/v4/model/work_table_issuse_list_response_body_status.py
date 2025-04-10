@@ -27,7 +27,7 @@ class WorkTableIssuseListResponseBodyStatus:
     }
 
     def __init__(self, id=None, name=None):
-        """WorkTableIssuseListResponseBodyStatus
+        r"""WorkTableIssuseListResponseBodyStatus
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WorkTableIssuseListResponseBodyStatus:
 
     @property
     def id(self):
-        """Gets the id of this WorkTableIssuseListResponseBodyStatus.
+        r"""Gets the id of this WorkTableIssuseListResponseBodyStatus.
 
         工作项状态id
 
@@ -61,7 +61,7 @@ class WorkTableIssuseListResponseBodyStatus:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkTableIssuseListResponseBodyStatus.
+        r"""Sets the id of this WorkTableIssuseListResponseBodyStatus.
 
         工作项状态id
 
@@ -72,7 +72,7 @@ class WorkTableIssuseListResponseBodyStatus:
 
     @property
     def name(self):
-        """Gets the name of this WorkTableIssuseListResponseBodyStatus.
+        r"""Gets the name of this WorkTableIssuseListResponseBodyStatus.
 
         工作项优先级名称
 
@@ -83,7 +83,7 @@ class WorkTableIssuseListResponseBodyStatus:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkTableIssuseListResponseBodyStatus.
+        r"""Sets the name of this WorkTableIssuseListResponseBodyStatus.
 
         工作项优先级名称
 

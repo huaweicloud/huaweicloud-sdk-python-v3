@@ -25,7 +25,7 @@ class GcbType:
     }
 
     def __init__(self, type=None):
-        """GcbType
+        r"""GcbType
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GcbType:
 
     @property
     def type(self):
-        """Gets the type of this GcbType.
+        r"""Gets the type of this GcbType.
 
         功能说明：描述带宽类型，对应地理区间的城域、区域、大区、跨区四级： - TrsArea: 跨区带宽 - Area: 大区带宽 - SubArea: 区域带宽 - Region: 城域带宽
 
@@ -53,7 +53,7 @@ class GcbType:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GcbType.
+        r"""Sets the type of this GcbType.
 
         功能说明：描述带宽类型，对应地理区间的城域、区域、大区、跨区四级： - TrsArea: 跨区带宽 - Area: 大区带宽 - SubArea: 区域带宽 - Region: 城域带宽
 

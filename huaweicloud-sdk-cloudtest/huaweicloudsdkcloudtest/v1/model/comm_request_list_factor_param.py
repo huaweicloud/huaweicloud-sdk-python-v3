@@ -25,7 +25,7 @@ class CommRequestListFactorParam:
     }
 
     def __init__(self, params=None):
-        """CommRequestListFactorParam
+        r"""CommRequestListFactorParam
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CommRequestListFactorParam:
 
     @property
     def params(self):
-        """Gets the params of this CommRequestListFactorParam.
+        r"""Gets the params of this CommRequestListFactorParam.
 
         :return: The params of this CommRequestListFactorParam.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ListFactorParam`
@@ -51,7 +51,7 @@ class CommRequestListFactorParam:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CommRequestListFactorParam.
+        r"""Sets the params of this CommRequestListFactorParam.
 
         :param params: The params of this CommRequestListFactorParam.
         :type params: :class:`huaweicloudsdkcloudtest.v1.ListFactorParam`

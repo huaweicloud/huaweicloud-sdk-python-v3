@@ -29,7 +29,7 @@ class QueryInstanceByTagReq:
     }
 
     def __init__(self, without_any_tag=None, tags=None, matches=None):
-        """QueryInstanceByTagReq
+        r"""QueryInstanceByTagReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QueryInstanceByTagReq:
 
     @property
     def without_any_tag(self):
-        """Gets the without_any_tag of this QueryInstanceByTagReq.
+        r"""Gets the without_any_tag of this QueryInstanceByTagReq.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”字段。该字段为false或者未提供该参数时，该条件不生效，即返回所有资源或按\"tags\"，\"matches\"等条件过滤。
 
@@ -68,7 +68,7 @@ class QueryInstanceByTagReq:
 
     @without_any_tag.setter
     def without_any_tag(self, without_any_tag):
-        """Sets the without_any_tag of this QueryInstanceByTagReq.
+        r"""Sets the without_any_tag of this QueryInstanceByTagReq.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”字段。该字段为false或者未提供该参数时，该条件不生效，即返回所有资源或按\"tags\"，\"matches\"等条件过滤。
 
@@ -79,7 +79,7 @@ class QueryInstanceByTagReq:
 
     @property
     def tags(self):
-        """Gets the tags of this QueryInstanceByTagReq.
+        r"""Gets the tags of this QueryInstanceByTagReq.
 
         包含标签，最多包含20个key，每个key下面的value最多20个。
 
@@ -90,7 +90,7 @@ class QueryInstanceByTagReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this QueryInstanceByTagReq.
+        r"""Sets the tags of this QueryInstanceByTagReq.
 
         包含标签，最多包含20个key，每个key下面的value最多20个。
 
@@ -101,7 +101,7 @@ class QueryInstanceByTagReq:
 
     @property
     def matches(self):
-        """Gets the matches of this QueryInstanceByTagReq.
+        r"""Gets the matches of this QueryInstanceByTagReq.
 
         搜索字段,key为要匹配的字段，如resource_name等。value为匹配的值。
 
@@ -112,7 +112,7 @@ class QueryInstanceByTagReq:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this QueryInstanceByTagReq.
+        r"""Sets the matches of this QueryInstanceByTagReq.
 
         搜索字段,key为要匹配的字段，如resource_name等。value为匹配的值。
 

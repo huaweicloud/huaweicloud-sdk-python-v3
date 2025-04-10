@@ -25,7 +25,7 @@ class ShowAcceleratorRequest:
     }
 
     def __init__(self, accelerator_id=None):
-        """ShowAcceleratorRequest
+        r"""ShowAcceleratorRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAcceleratorRequest:
 
     @property
     def accelerator_id(self):
-        """Gets the accelerator_id of this ShowAcceleratorRequest.
+        r"""Gets the accelerator_id of this ShowAcceleratorRequest.
 
         全球加速器ID。
 
@@ -53,7 +53,7 @@ class ShowAcceleratorRequest:
 
     @accelerator_id.setter
     def accelerator_id(self, accelerator_id):
-        """Sets the accelerator_id of this ShowAcceleratorRequest.
+        r"""Sets the accelerator_id of this ShowAcceleratorRequest.
 
         全球加速器ID。
 

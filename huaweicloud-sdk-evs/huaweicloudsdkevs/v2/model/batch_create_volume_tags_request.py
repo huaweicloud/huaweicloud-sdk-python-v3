@@ -27,7 +27,7 @@ class BatchCreateVolumeTagsRequest:
     }
 
     def __init__(self, volume_id=None, body=None):
-        """BatchCreateVolumeTagsRequest
+        r"""BatchCreateVolumeTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateVolumeTagsRequest:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this BatchCreateVolumeTagsRequest.
+        r"""Gets the volume_id of this BatchCreateVolumeTagsRequest.
 
         云硬盘ID。
 
@@ -60,7 +60,7 @@ class BatchCreateVolumeTagsRequest:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this BatchCreateVolumeTagsRequest.
+        r"""Sets the volume_id of this BatchCreateVolumeTagsRequest.
 
         云硬盘ID。
 
@@ -71,7 +71,7 @@ class BatchCreateVolumeTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateVolumeTagsRequest.
+        r"""Gets the body of this BatchCreateVolumeTagsRequest.
 
         :return: The body of this BatchCreateVolumeTagsRequest.
         :rtype: :class:`huaweicloudsdkevs.v2.BatchCreateVolumeTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateVolumeTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateVolumeTagsRequest.
+        r"""Sets the body of this BatchCreateVolumeTagsRequest.
 
         :param body: The body of this BatchCreateVolumeTagsRequest.
         :type body: :class:`huaweicloudsdkevs.v2.BatchCreateVolumeTagsRequestBody`

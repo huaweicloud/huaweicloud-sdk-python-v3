@@ -27,7 +27,7 @@ class TacticsConfig:
     }
 
     def __init__(self, cron_configs=None, metric_configs=None):
-        """TacticsConfig
+        r"""TacticsConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TacticsConfig:
 
     @property
     def cron_configs(self):
-        """Gets the cron_configs of this TacticsConfig.
+        r"""Gets the cron_configs of this TacticsConfig.
 
         定时配置列表
 
@@ -61,7 +61,7 @@ class TacticsConfig:
 
     @cron_configs.setter
     def cron_configs(self, cron_configs):
-        """Sets the cron_configs of this TacticsConfig.
+        r"""Sets the cron_configs of this TacticsConfig.
 
         定时配置列表
 
@@ -72,7 +72,7 @@ class TacticsConfig:
 
     @property
     def metric_configs(self):
-        """Gets the metric_configs of this TacticsConfig.
+        r"""Gets the metric_configs of this TacticsConfig.
 
         流量配置列表
 
@@ -83,7 +83,7 @@ class TacticsConfig:
 
     @metric_configs.setter
     def metric_configs(self, metric_configs):
-        """Sets the metric_configs of this TacticsConfig.
+        r"""Sets the metric_configs of this TacticsConfig.
 
         流量配置列表
 

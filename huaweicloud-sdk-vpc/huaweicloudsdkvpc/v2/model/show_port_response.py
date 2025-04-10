@@ -26,7 +26,7 @@ class ShowPortResponse(SdkResponse):
     }
 
     def __init__(self, port=None):
-        """ShowPortResponse
+        r"""ShowPortResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPortResponse(SdkResponse):
 
     @property
     def port(self):
-        """Gets the port of this ShowPortResponse.
+        r"""Gets the port of this ShowPortResponse.
 
         :return: The port of this ShowPortResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.Port`
@@ -53,7 +53,7 @@ class ShowPortResponse(SdkResponse):
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ShowPortResponse.
+        r"""Sets the port of this ShowPortResponse.
 
         :param port: The port of this ShowPortResponse.
         :type port: :class:`huaweicloudsdkvpc.v2.Port`

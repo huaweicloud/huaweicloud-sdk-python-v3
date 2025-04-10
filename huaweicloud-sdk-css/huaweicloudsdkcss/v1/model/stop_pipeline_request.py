@@ -25,7 +25,7 @@ class StopPipelineRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """StopPipelineRequest
+        r"""StopPipelineRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopPipelineRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StopPipelineRequest.
+        r"""Gets the cluster_id of this StopPipelineRequest.
 
         指定停止pipeline的集群ID。
 
@@ -53,7 +53,7 @@ class StopPipelineRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StopPipelineRequest.
+        r"""Sets the cluster_id of this StopPipelineRequest.
 
         指定停止pipeline的集群ID。
 

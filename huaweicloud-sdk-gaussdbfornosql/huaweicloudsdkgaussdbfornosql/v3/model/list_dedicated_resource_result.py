@@ -37,7 +37,7 @@ class ListDedicatedResourceResult:
     }
 
     def __init__(self, id=None, resource_name=None, engine_name=None, availability_zone=None, architecture=None, capacity=None, status=None):
-        """ListDedicatedResourceResult
+        r"""ListDedicatedResourceResult
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListDedicatedResourceResult:
 
     @property
     def id(self):
-        """Gets the id of this ListDedicatedResourceResult.
+        r"""Gets the id of this ListDedicatedResourceResult.
 
         专属资源ID。
 
@@ -89,7 +89,7 @@ class ListDedicatedResourceResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListDedicatedResourceResult.
+        r"""Sets the id of this ListDedicatedResourceResult.
 
         专属资源ID。
 
@@ -100,7 +100,7 @@ class ListDedicatedResourceResult:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ListDedicatedResourceResult.
+        r"""Gets the resource_name of this ListDedicatedResourceResult.
 
         专属资源的名称。
 
@@ -111,7 +111,7 @@ class ListDedicatedResourceResult:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ListDedicatedResourceResult.
+        r"""Sets the resource_name of this ListDedicatedResourceResult.
 
         专属资源的名称。
 
@@ -122,7 +122,7 @@ class ListDedicatedResourceResult:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this ListDedicatedResourceResult.
+        r"""Gets the engine_name of this ListDedicatedResourceResult.
 
         引擎名称。
 
@@ -133,7 +133,7 @@ class ListDedicatedResourceResult:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this ListDedicatedResourceResult.
+        r"""Sets the engine_name of this ListDedicatedResourceResult.
 
         引擎名称。
 
@@ -144,7 +144,7 @@ class ListDedicatedResourceResult:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListDedicatedResourceResult.
+        r"""Gets the availability_zone of this ListDedicatedResourceResult.
 
         可用区信息。
 
@@ -155,7 +155,7 @@ class ListDedicatedResourceResult:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListDedicatedResourceResult.
+        r"""Sets the availability_zone of this ListDedicatedResourceResult.
 
         可用区信息。
 
@@ -166,7 +166,7 @@ class ListDedicatedResourceResult:
 
     @property
     def architecture(self):
-        """Gets the architecture of this ListDedicatedResourceResult.
+        r"""Gets the architecture of this ListDedicatedResourceResult.
 
         专属资源的计算架构。
 
@@ -177,7 +177,7 @@ class ListDedicatedResourceResult:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this ListDedicatedResourceResult.
+        r"""Sets the architecture of this ListDedicatedResourceResult.
 
         专属资源的计算架构。
 
@@ -188,7 +188,7 @@ class ListDedicatedResourceResult:
 
     @property
     def capacity(self):
-        """Gets the capacity of this ListDedicatedResourceResult.
+        r"""Gets the capacity of this ListDedicatedResourceResult.
 
         :return: The capacity of this ListDedicatedResourceResult.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DedicatedResourceCapacity`
@@ -197,7 +197,7 @@ class ListDedicatedResourceResult:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this ListDedicatedResourceResult.
+        r"""Sets the capacity of this ListDedicatedResourceResult.
 
         :param capacity: The capacity of this ListDedicatedResourceResult.
         :type capacity: :class:`huaweicloudsdkgaussdbfornosql.v3.DedicatedResourceCapacity`
@@ -206,7 +206,7 @@ class ListDedicatedResourceResult:
 
     @property
     def status(self):
-        """Gets the status of this ListDedicatedResourceResult.
+        r"""Gets the status of this ListDedicatedResourceResult.
 
         专属资源的状态信息。
 
@@ -217,7 +217,7 @@ class ListDedicatedResourceResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListDedicatedResourceResult.
+        r"""Sets the status of this ListDedicatedResourceResult.
 
         专属资源的状态信息。
 

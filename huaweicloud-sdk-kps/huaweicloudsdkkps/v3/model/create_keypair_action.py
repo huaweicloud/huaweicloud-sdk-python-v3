@@ -35,7 +35,7 @@ class CreateKeypairAction:
     }
 
     def __init__(self, name=None, type=None, public_key=None, scope=None, user_id=None, key_protection=None):
-        """CreateKeypairAction
+        r"""CreateKeypairAction
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class CreateKeypairAction:
 
     @property
     def name(self):
-        """Gets the name of this CreateKeypairAction.
+        r"""Gets the name of this CreateKeypairAction.
 
         SSH密钥对的名称。 - 新创建的密钥对名称不能和已有密钥对的名称相同。 - SSH密钥对名称由英文字母、数字、下划线、中划线组成，长度不能超过255个字节
 
@@ -88,7 +88,7 @@ class CreateKeypairAction:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateKeypairAction.
+        r"""Sets the name of this CreateKeypairAction.
 
         SSH密钥对的名称。 - 新创建的密钥对名称不能和已有密钥对的名称相同。 - SSH密钥对名称由英文字母、数字、下划线、中划线组成，长度不能超过255个字节
 
@@ -99,7 +99,7 @@ class CreateKeypairAction:
 
     @property
     def type(self):
-        """Gets the type of this CreateKeypairAction.
+        r"""Gets the type of this CreateKeypairAction.
 
         SSH密钥对的类型。ssh或x509。
 
@@ -110,7 +110,7 @@ class CreateKeypairAction:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateKeypairAction.
+        r"""Sets the type of this CreateKeypairAction.
 
         SSH密钥对的类型。ssh或x509。
 
@@ -121,7 +121,7 @@ class CreateKeypairAction:
 
     @property
     def public_key(self):
-        """Gets the public_key of this CreateKeypairAction.
+        r"""Gets the public_key of this CreateKeypairAction.
 
         导入公钥的字符串信息。
 
@@ -132,7 +132,7 @@ class CreateKeypairAction:
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this CreateKeypairAction.
+        r"""Sets the public_key of this CreateKeypairAction.
 
         导入公钥的字符串信息。
 
@@ -143,7 +143,7 @@ class CreateKeypairAction:
 
     @property
     def scope(self):
-        """Gets the scope of this CreateKeypairAction.
+        r"""Gets the scope of this CreateKeypairAction.
 
         租户级或者用户级。domain或user。
 
@@ -154,7 +154,7 @@ class CreateKeypairAction:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this CreateKeypairAction.
+        r"""Sets the scope of this CreateKeypairAction.
 
         租户级或者用户级。domain或user。
 
@@ -165,7 +165,7 @@ class CreateKeypairAction:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateKeypairAction.
+        r"""Gets the user_id of this CreateKeypairAction.
 
         SSH密钥对所属的用户信息
 
@@ -176,7 +176,7 @@ class CreateKeypairAction:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateKeypairAction.
+        r"""Sets the user_id of this CreateKeypairAction.
 
         SSH密钥对所属的用户信息
 
@@ -187,7 +187,7 @@ class CreateKeypairAction:
 
     @property
     def key_protection(self):
-        """Gets the key_protection of this CreateKeypairAction.
+        r"""Gets the key_protection of this CreateKeypairAction.
 
         :return: The key_protection of this CreateKeypairAction.
         :rtype: :class:`huaweicloudsdkkps.v3.KeyProtection`
@@ -196,7 +196,7 @@ class CreateKeypairAction:
 
     @key_protection.setter
     def key_protection(self, key_protection):
-        """Sets the key_protection of this CreateKeypairAction.
+        r"""Sets the key_protection of this CreateKeypairAction.
 
         :param key_protection: The key_protection of this CreateKeypairAction.
         :type key_protection: :class:`huaweicloudsdkkps.v3.KeyProtection`

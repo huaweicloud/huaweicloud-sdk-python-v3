@@ -25,7 +25,7 @@ class CreateEnvRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEnvRequest
+        r"""CreateEnvRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateEnvRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEnvRequest.
+        r"""Gets the body of this CreateEnvRequest.
 
         :return: The body of this CreateEnvRequest.
         :rtype: :class:`huaweicloudsdkaom.v3.EnvParam`
@@ -52,7 +52,7 @@ class CreateEnvRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEnvRequest.
+        r"""Sets the body of this CreateEnvRequest.
 
         :param body: The body of this CreateEnvRequest.
         :type body: :class:`huaweicloudsdkaom.v3.EnvParam`

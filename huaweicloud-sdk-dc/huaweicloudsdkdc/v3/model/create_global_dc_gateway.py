@@ -37,7 +37,7 @@ class CreateGlobalDcGateway:
     }
 
     def __init__(self, tenant_id=None, name=None, description=None, bgp_asn=None, enterprise_project_id=None, address_family=None, tags=None):
-        """CreateGlobalDcGateway
+        r"""CreateGlobalDcGateway
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class CreateGlobalDcGateway:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CreateGlobalDcGateway.
+        r"""Gets the tenant_id of this CreateGlobalDcGateway.
 
         项目ID。
 
@@ -95,7 +95,7 @@ class CreateGlobalDcGateway:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CreateGlobalDcGateway.
+        r"""Sets the tenant_id of this CreateGlobalDcGateway.
 
         项目ID。
 
@@ -106,7 +106,7 @@ class CreateGlobalDcGateway:
 
     @property
     def name(self):
-        """Gets the name of this CreateGlobalDcGateway.
+        r"""Gets the name of this CreateGlobalDcGateway.
 
         global-dc-gateway名字。
 
@@ -117,7 +117,7 @@ class CreateGlobalDcGateway:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGlobalDcGateway.
+        r"""Sets the name of this CreateGlobalDcGateway.
 
         global-dc-gateway名字。
 
@@ -128,7 +128,7 @@ class CreateGlobalDcGateway:
 
     @property
     def description(self):
-        """Gets the description of this CreateGlobalDcGateway.
+        r"""Gets the description of this CreateGlobalDcGateway.
 
         描述信息。
 
@@ -139,7 +139,7 @@ class CreateGlobalDcGateway:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateGlobalDcGateway.
+        r"""Sets the description of this CreateGlobalDcGateway.
 
         描述信息。
 
@@ -150,7 +150,7 @@ class CreateGlobalDcGateway:
 
     @property
     def bgp_asn(self):
-        """Gets the bgp_asn of this CreateGlobalDcGateway.
+        r"""Gets the bgp_asn of this CreateGlobalDcGateway.
 
         global-dc-gateway对应的ASN号
 
@@ -161,7 +161,7 @@ class CreateGlobalDcGateway:
 
     @bgp_asn.setter
     def bgp_asn(self, bgp_asn):
-        """Sets the bgp_asn of this CreateGlobalDcGateway.
+        r"""Sets the bgp_asn of this CreateGlobalDcGateway.
 
         global-dc-gateway对应的ASN号
 
@@ -172,7 +172,7 @@ class CreateGlobalDcGateway:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateGlobalDcGateway.
+        r"""Gets the enterprise_project_id of this CreateGlobalDcGateway.
 
         global-dc-gateway所属的企业项目ID。
 
@@ -183,7 +183,7 @@ class CreateGlobalDcGateway:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateGlobalDcGateway.
+        r"""Sets the enterprise_project_id of this CreateGlobalDcGateway.
 
         global-dc-gateway所属的企业项目ID。
 
@@ -194,7 +194,7 @@ class CreateGlobalDcGateway:
 
     @property
     def address_family(self):
-        """Gets the address_family of this CreateGlobalDcGateway.
+        r"""Gets the address_family of this CreateGlobalDcGateway.
 
         网关的地址簇，IPv4或者ipv6和IPv4双栈 - ipv4 - dual
 
@@ -205,7 +205,7 @@ class CreateGlobalDcGateway:
 
     @address_family.setter
     def address_family(self, address_family):
-        """Sets the address_family of this CreateGlobalDcGateway.
+        r"""Sets the address_family of this CreateGlobalDcGateway.
 
         网关的地址簇，IPv4或者ipv6和IPv4双栈 - ipv4 - dual
 
@@ -216,7 +216,7 @@ class CreateGlobalDcGateway:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateGlobalDcGateway.
+        r"""Gets the tags of this CreateGlobalDcGateway.
 
         global-dc-gateway关联TAG。
 
@@ -227,7 +227,7 @@ class CreateGlobalDcGateway:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateGlobalDcGateway.
+        r"""Sets the tags of this CreateGlobalDcGateway.
 
         global-dc-gateway关联TAG。
 

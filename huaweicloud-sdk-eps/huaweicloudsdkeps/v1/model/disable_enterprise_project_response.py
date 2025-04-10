@@ -24,7 +24,7 @@ class DisableEnterpriseProjectResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DisableEnterpriseProjectResponse
+        r"""DisableEnterpriseProjectResponse
 
         The model defined in huaweicloud sdk
 

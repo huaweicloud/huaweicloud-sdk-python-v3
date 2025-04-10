@@ -31,7 +31,7 @@ class FuncMount:
     }
 
     def __init__(self, mount_type=None, mount_resource=None, mount_share_path=None, local_mount_path=None):
-        """FuncMount
+        r"""FuncMount
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class FuncMount:
 
     @property
     def mount_type(self):
-        """Gets the mount_type of this FuncMount.
+        r"""Gets the mount_type of this FuncMount.
 
         挂载类型(sfs/sfsTurbo/ecs)，func_mounts非空时必选。
 
@@ -72,7 +72,7 @@ class FuncMount:
 
     @mount_type.setter
     def mount_type(self, mount_type):
-        """Sets the mount_type of this FuncMount.
+        r"""Sets the mount_type of this FuncMount.
 
         挂载类型(sfs/sfsTurbo/ecs)，func_mounts非空时必选。
 
@@ -83,7 +83,7 @@ class FuncMount:
 
     @property
     def mount_resource(self):
-        """Gets the mount_resource of this FuncMount.
+        r"""Gets the mount_resource of this FuncMount.
 
         挂载资源ID（对应云服务ID），func_mounts非空时必选。
 
@@ -94,7 +94,7 @@ class FuncMount:
 
     @mount_resource.setter
     def mount_resource(self, mount_resource):
-        """Sets the mount_resource of this FuncMount.
+        r"""Sets the mount_resource of this FuncMount.
 
         挂载资源ID（对应云服务ID），func_mounts非空时必选。
 
@@ -105,7 +105,7 @@ class FuncMount:
 
     @property
     def mount_share_path(self):
-        """Gets the mount_share_path of this FuncMount.
+        r"""Gets the mount_share_path of this FuncMount.
 
         远端挂载路径（例如192.168.0.12:/data），如果mount_type为ecs，必选。
 
@@ -116,7 +116,7 @@ class FuncMount:
 
     @mount_share_path.setter
     def mount_share_path(self, mount_share_path):
-        """Sets the mount_share_path of this FuncMount.
+        r"""Sets the mount_share_path of this FuncMount.
 
         远端挂载路径（例如192.168.0.12:/data），如果mount_type为ecs，必选。
 
@@ -127,7 +127,7 @@ class FuncMount:
 
     @property
     def local_mount_path(self):
-        """Gets the local_mount_path of this FuncMount.
+        r"""Gets the local_mount_path of this FuncMount.
 
         函数访问路径，func_mounts非空时必选。
 
@@ -138,7 +138,7 @@ class FuncMount:
 
     @local_mount_path.setter
     def local_mount_path(self, local_mount_path):
-        """Sets the local_mount_path of this FuncMount.
+        r"""Sets the local_mount_path of this FuncMount.
 
         函数访问路径，func_mounts非空时必选。
 

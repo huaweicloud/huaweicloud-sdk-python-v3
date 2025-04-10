@@ -32,7 +32,7 @@ class DebugCaseResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, extend=None, result=None):
-        """DebugCaseResponse
+        r"""DebugCaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class DebugCaseResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DebugCaseResponse.
+        r"""Gets the code of this DebugCaseResponse.
 
         响应码
 
@@ -76,7 +76,7 @@ class DebugCaseResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DebugCaseResponse.
+        r"""Sets the code of this DebugCaseResponse.
 
         响应码
 
@@ -87,7 +87,7 @@ class DebugCaseResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DebugCaseResponse.
+        r"""Gets the message of this DebugCaseResponse.
 
         响应消息
 
@@ -98,7 +98,7 @@ class DebugCaseResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DebugCaseResponse.
+        r"""Sets the message of this DebugCaseResponse.
 
         响应消息
 
@@ -109,7 +109,7 @@ class DebugCaseResponse(SdkResponse):
 
     @property
     def extend(self):
-        """Gets the extend of this DebugCaseResponse.
+        r"""Gets the extend of this DebugCaseResponse.
 
         扩展信息
 
@@ -120,7 +120,7 @@ class DebugCaseResponse(SdkResponse):
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this DebugCaseResponse.
+        r"""Sets the extend of this DebugCaseResponse.
 
         扩展信息
 
@@ -131,7 +131,7 @@ class DebugCaseResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DebugCaseResponse.
+        r"""Gets the result of this DebugCaseResponse.
 
         结果
 
@@ -142,7 +142,7 @@ class DebugCaseResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DebugCaseResponse.
+        r"""Sets the result of this DebugCaseResponse.
 
         结果
 

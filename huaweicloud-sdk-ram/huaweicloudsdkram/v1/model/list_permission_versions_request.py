@@ -32,7 +32,7 @@ class ListPermissionVersionsRequest:
     }
 
     def __init__(self, x_security_token=None, limit=None, marker=None, permission_id=None):
-        """ListPermissionVersionsRequest
+        r"""ListPermissionVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListPermissionVersionsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListPermissionVersionsRequest.
+        r"""Gets the x_security_token of this ListPermissionVersionsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -75,7 +75,7 @@ class ListPermissionVersionsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListPermissionVersionsRequest.
+        r"""Sets the x_security_token of this ListPermissionVersionsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -86,7 +86,7 @@ class ListPermissionVersionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPermissionVersionsRequest.
+        r"""Gets the limit of this ListPermissionVersionsRequest.
 
         分页页面的最大值。
 
@@ -97,7 +97,7 @@ class ListPermissionVersionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPermissionVersionsRequest.
+        r"""Sets the limit of this ListPermissionVersionsRequest.
 
         分页页面的最大值。
 
@@ -108,7 +108,7 @@ class ListPermissionVersionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPermissionVersionsRequest.
+        r"""Gets the marker of this ListPermissionVersionsRequest.
 
         页面标记。
 
@@ -119,7 +119,7 @@ class ListPermissionVersionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPermissionVersionsRequest.
+        r"""Sets the marker of this ListPermissionVersionsRequest.
 
         页面标记。
 
@@ -130,7 +130,7 @@ class ListPermissionVersionsRequest:
 
     @property
     def permission_id(self):
-        """Gets the permission_id of this ListPermissionVersionsRequest.
+        r"""Gets the permission_id of this ListPermissionVersionsRequest.
 
         共享资源权限的ID。
 
@@ -141,7 +141,7 @@ class ListPermissionVersionsRequest:
 
     @permission_id.setter
     def permission_id(self, permission_id):
-        """Sets the permission_id of this ListPermissionVersionsRequest.
+        r"""Sets the permission_id of this ListPermissionVersionsRequest.
 
         共享资源权限的ID。
 

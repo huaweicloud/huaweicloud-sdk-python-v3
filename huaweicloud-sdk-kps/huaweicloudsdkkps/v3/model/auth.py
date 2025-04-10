@@ -27,7 +27,7 @@ class Auth:
     }
 
     def __init__(self, type=None, key=None):
-        """Auth
+        r"""Auth
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Auth:
 
     @property
     def type(self):
-        """Gets the type of this Auth.
+        r"""Gets the type of this Auth.
 
         取值为枚举类型。password或keypair。
 
@@ -61,7 +61,7 @@ class Auth:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Auth.
+        r"""Sets the type of this Auth.
 
         取值为枚举类型。password或keypair。
 
@@ -72,7 +72,7 @@ class Auth:
 
     @property
     def key(self):
-        """Gets the key of this Auth.
+        r"""Gets the key of this Auth.
 
         - type为枚举值password时，key表示密码； - type为枚举值keypair时，key表示私钥；
 
@@ -83,7 +83,7 @@ class Auth:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Auth.
+        r"""Sets the key of this Auth.
 
         - type为枚举值password时，key表示密码； - type为枚举值keypair时，key表示私钥；
 

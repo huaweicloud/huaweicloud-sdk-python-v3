@@ -27,7 +27,7 @@ class ListScattersUsingRequest:
     }
 
     def __init__(self, service_id=None, body=None):
-        """ListScattersUsingRequest
+        r"""ListScattersUsingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListScattersUsingRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ListScattersUsingRequest.
+        r"""Gets the service_id of this ListScattersUsingRequest.
 
         服务id
 
@@ -60,7 +60,7 @@ class ListScattersUsingRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ListScattersUsingRequest.
+        r"""Sets the service_id of this ListScattersUsingRequest.
 
         服务id
 
@@ -71,7 +71,7 @@ class ListScattersUsingRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListScattersUsingRequest.
+        r"""Gets the body of this ListScattersUsingRequest.
 
         :return: The body of this ListScattersUsingRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.DashboardDataQuery`
@@ -80,7 +80,7 @@ class ListScattersUsingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListScattersUsingRequest.
+        r"""Sets the body of this ListScattersUsingRequest.
 
         :param body: The body of this ListScattersUsingRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.DashboardDataQuery`

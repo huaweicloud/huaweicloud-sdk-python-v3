@@ -83,7 +83,7 @@ class SmsTemplateResp:
     }
 
     def __init__(self, id=None, create_time=None, update_time=None, customer_id=None, tenant=None, template_name=None, template_id=None, template_type=None, app_name=None, app_key=None, sign_id=None, template_content=None, has_variable=None, template_desc=None, review_desc=None, review_order=None, flow_status=None, universal_template=None, status=None, region=None, brackets=None, site=None, urge_status=None, urge_time=None, urge_desc=None, send_country1=None, send_country2=None, send_country3=None, is_support_multiomp=None, country_name=None):
-        """SmsTemplateResp
+        r"""SmsTemplateResp
 
         The model defined in huaweicloud sdk
 
@@ -246,7 +246,7 @@ class SmsTemplateResp:
 
     @property
     def id(self):
-        """Gets the id of this SmsTemplateResp.
+        r"""Gets the id of this SmsTemplateResp.
 
         模板主键ID，用于获取、修改、删除模板以及查询模板变量的唯一标识
 
@@ -257,7 +257,7 @@ class SmsTemplateResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SmsTemplateResp.
+        r"""Sets the id of this SmsTemplateResp.
 
         模板主键ID，用于获取、修改、删除模板以及查询模板变量的唯一标识
 
@@ -268,7 +268,7 @@ class SmsTemplateResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SmsTemplateResp.
+        r"""Gets the create_time of this SmsTemplateResp.
 
         创建时间[yyyy-MM-dd HH:mm:ss]
 
@@ -279,7 +279,7 @@ class SmsTemplateResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SmsTemplateResp.
+        r"""Sets the create_time of this SmsTemplateResp.
 
         创建时间[yyyy-MM-dd HH:mm:ss]
 
@@ -290,7 +290,7 @@ class SmsTemplateResp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this SmsTemplateResp.
+        r"""Gets the update_time of this SmsTemplateResp.
 
         更新时间[yyyy-MM-dd HH:mm:ss]
 
@@ -301,7 +301,7 @@ class SmsTemplateResp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this SmsTemplateResp.
+        r"""Sets the update_time of this SmsTemplateResp.
 
         更新时间[yyyy-MM-dd HH:mm:ss]
 
@@ -312,7 +312,7 @@ class SmsTemplateResp:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this SmsTemplateResp.
+        r"""Gets the customer_id of this SmsTemplateResp.
 
         租户customer id
 
@@ -323,7 +323,7 @@ class SmsTemplateResp:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this SmsTemplateResp.
+        r"""Sets the customer_id of this SmsTemplateResp.
 
         租户customer id
 
@@ -334,7 +334,7 @@ class SmsTemplateResp:
 
     @property
     def tenant(self):
-        """Gets the tenant of this SmsTemplateResp.
+        r"""Gets the tenant of this SmsTemplateResp.
 
         :return: The tenant of this SmsTemplateResp.
         :rtype: :class:`huaweicloudsdkmsgsms.v2.TenantBasic`
@@ -343,7 +343,7 @@ class SmsTemplateResp:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this SmsTemplateResp.
+        r"""Sets the tenant of this SmsTemplateResp.
 
         :param tenant: The tenant of this SmsTemplateResp.
         :type tenant: :class:`huaweicloudsdkmsgsms.v2.TenantBasic`
@@ -352,7 +352,7 @@ class SmsTemplateResp:
 
     @property
     def template_name(self):
-        """Gets the template_name of this SmsTemplateResp.
+        r"""Gets the template_name of this SmsTemplateResp.
 
         模板名称
 
@@ -363,7 +363,7 @@ class SmsTemplateResp:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this SmsTemplateResp.
+        r"""Sets the template_name of this SmsTemplateResp.
 
         模板名称
 
@@ -374,7 +374,7 @@ class SmsTemplateResp:
 
     @property
     def template_id(self):
-        """Gets the template_id of this SmsTemplateResp.
+        r"""Gets the template_id of this SmsTemplateResp.
 
         模板ID
 
@@ -385,7 +385,7 @@ class SmsTemplateResp:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this SmsTemplateResp.
+        r"""Sets the template_id of this SmsTemplateResp.
 
         模板ID
 
@@ -396,7 +396,7 @@ class SmsTemplateResp:
 
     @property
     def template_type(self):
-        """Gets the template_type of this SmsTemplateResp.
+        r"""Gets the template_type of this SmsTemplateResp.
 
         模板类型
 
@@ -407,7 +407,7 @@ class SmsTemplateResp:
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this SmsTemplateResp.
+        r"""Sets the template_type of this SmsTemplateResp.
 
         模板类型
 
@@ -418,7 +418,7 @@ class SmsTemplateResp:
 
     @property
     def app_name(self):
-        """Gets the app_name of this SmsTemplateResp.
+        r"""Gets the app_name of this SmsTemplateResp.
 
         应用名称
 
@@ -429,7 +429,7 @@ class SmsTemplateResp:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this SmsTemplateResp.
+        r"""Sets the app_name of this SmsTemplateResp.
 
         应用名称
 
@@ -440,7 +440,7 @@ class SmsTemplateResp:
 
     @property
     def app_key(self):
-        """Gets the app_key of this SmsTemplateResp.
+        r"""Gets the app_key of this SmsTemplateResp.
 
         应用key
 
@@ -451,7 +451,7 @@ class SmsTemplateResp:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this SmsTemplateResp.
+        r"""Sets the app_key of this SmsTemplateResp.
 
         应用key
 
@@ -462,7 +462,7 @@ class SmsTemplateResp:
 
     @property
     def sign_id(self):
-        """Gets the sign_id of this SmsTemplateResp.
+        r"""Gets the sign_id of this SmsTemplateResp.
 
         签名主键id
 
@@ -473,7 +473,7 @@ class SmsTemplateResp:
 
     @sign_id.setter
     def sign_id(self, sign_id):
-        """Sets the sign_id of this SmsTemplateResp.
+        r"""Sets the sign_id of this SmsTemplateResp.
 
         签名主键id
 
@@ -484,7 +484,7 @@ class SmsTemplateResp:
 
     @property
     def template_content(self):
-        """Gets the template_content of this SmsTemplateResp.
+        r"""Gets the template_content of this SmsTemplateResp.
 
         模板内容
 
@@ -495,7 +495,7 @@ class SmsTemplateResp:
 
     @template_content.setter
     def template_content(self, template_content):
-        """Sets the template_content of this SmsTemplateResp.
+        r"""Sets the template_content of this SmsTemplateResp.
 
         模板内容
 
@@ -506,7 +506,7 @@ class SmsTemplateResp:
 
     @property
     def has_variable(self):
-        """Gets the has_variable of this SmsTemplateResp.
+        r"""Gets the has_variable of this SmsTemplateResp.
 
         是否有变量
 
@@ -517,7 +517,7 @@ class SmsTemplateResp:
 
     @has_variable.setter
     def has_variable(self, has_variable):
-        """Sets the has_variable of this SmsTemplateResp.
+        r"""Sets the has_variable of this SmsTemplateResp.
 
         是否有变量
 
@@ -528,7 +528,7 @@ class SmsTemplateResp:
 
     @property
     def template_desc(self):
-        """Gets the template_desc of this SmsTemplateResp.
+        r"""Gets the template_desc of this SmsTemplateResp.
 
         申请描述
 
@@ -539,7 +539,7 @@ class SmsTemplateResp:
 
     @template_desc.setter
     def template_desc(self, template_desc):
-        """Sets the template_desc of this SmsTemplateResp.
+        r"""Sets the template_desc of this SmsTemplateResp.
 
         申请描述
 
@@ -550,7 +550,7 @@ class SmsTemplateResp:
 
     @property
     def review_desc(self):
-        """Gets the review_desc of this SmsTemplateResp.
+        r"""Gets the review_desc of this SmsTemplateResp.
 
         审核意见
 
@@ -561,7 +561,7 @@ class SmsTemplateResp:
 
     @review_desc.setter
     def review_desc(self, review_desc):
-        """Sets the review_desc of this SmsTemplateResp.
+        r"""Sets the review_desc of this SmsTemplateResp.
 
         审核意见
 
@@ -572,7 +572,7 @@ class SmsTemplateResp:
 
     @property
     def review_order(self):
-        """Gets the review_order of this SmsTemplateResp.
+        r"""Gets the review_order of this SmsTemplateResp.
 
         审核人账号
 
@@ -583,7 +583,7 @@ class SmsTemplateResp:
 
     @review_order.setter
     def review_order(self, review_order):
-        """Sets the review_order of this SmsTemplateResp.
+        r"""Sets the review_order of this SmsTemplateResp.
 
         审核人账号
 
@@ -594,7 +594,7 @@ class SmsTemplateResp:
 
     @property
     def flow_status(self):
-        """Gets the flow_status of this SmsTemplateResp.
+        r"""Gets the flow_status of this SmsTemplateResp.
 
         流程状态
 
@@ -605,7 +605,7 @@ class SmsTemplateResp:
 
     @flow_status.setter
     def flow_status(self, flow_status):
-        """Sets the flow_status of this SmsTemplateResp.
+        r"""Sets the flow_status of this SmsTemplateResp.
 
         流程状态
 
@@ -616,7 +616,7 @@ class SmsTemplateResp:
 
     @property
     def universal_template(self):
-        """Gets the universal_template of this SmsTemplateResp.
+        r"""Gets the universal_template of this SmsTemplateResp.
 
         是否是通用模板
 
@@ -627,7 +627,7 @@ class SmsTemplateResp:
 
     @universal_template.setter
     def universal_template(self, universal_template):
-        """Sets the universal_template of this SmsTemplateResp.
+        r"""Sets the universal_template of this SmsTemplateResp.
 
         是否是通用模板
 
@@ -638,7 +638,7 @@ class SmsTemplateResp:
 
     @property
     def status(self):
-        """Gets the status of this SmsTemplateResp.
+        r"""Gets the status of this SmsTemplateResp.
 
         模板状态
 
@@ -649,7 +649,7 @@ class SmsTemplateResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SmsTemplateResp.
+        r"""Sets the status of this SmsTemplateResp.
 
         模板状态
 
@@ -660,7 +660,7 @@ class SmsTemplateResp:
 
     @property
     def region(self):
-        """Gets the region of this SmsTemplateResp.
+        r"""Gets the region of this SmsTemplateResp.
 
         地域 1. cn：国内 2. intl：国际
 
@@ -671,7 +671,7 @@ class SmsTemplateResp:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this SmsTemplateResp.
+        r"""Sets the region of this SmsTemplateResp.
 
         地域 1. cn：国内 2. intl：国际
 
@@ -682,7 +682,7 @@ class SmsTemplateResp:
 
     @property
     def brackets(self):
-        """Gets the brackets of this SmsTemplateResp.
+        r"""Gets the brackets of this SmsTemplateResp.
 
         中括号类型 支持枚举值：  CN: 中文类型  GB: 英文类型
 
@@ -693,7 +693,7 @@ class SmsTemplateResp:
 
     @brackets.setter
     def brackets(self, brackets):
-        """Sets the brackets of this SmsTemplateResp.
+        r"""Sets the brackets of this SmsTemplateResp.
 
         中括号类型 支持枚举值：  CN: 中文类型  GB: 英文类型
 
@@ -704,7 +704,7 @@ class SmsTemplateResp:
 
     @property
     def site(self):
-        """Gets the site of this SmsTemplateResp.
+        r"""Gets the site of this SmsTemplateResp.
 
         站点
 
@@ -715,7 +715,7 @@ class SmsTemplateResp:
 
     @site.setter
     def site(self, site):
-        """Sets the site of this SmsTemplateResp.
+        r"""Sets the site of this SmsTemplateResp.
 
         站点
 
@@ -726,7 +726,7 @@ class SmsTemplateResp:
 
     @property
     def urge_status(self):
-        """Gets the urge_status of this SmsTemplateResp.
+        r"""Gets the urge_status of this SmsTemplateResp.
 
         催审状态
 
@@ -737,7 +737,7 @@ class SmsTemplateResp:
 
     @urge_status.setter
     def urge_status(self, urge_status):
-        """Sets the urge_status of this SmsTemplateResp.
+        r"""Sets the urge_status of this SmsTemplateResp.
 
         催审状态
 
@@ -748,7 +748,7 @@ class SmsTemplateResp:
 
     @property
     def urge_time(self):
-        """Gets the urge_time of this SmsTemplateResp.
+        r"""Gets the urge_time of this SmsTemplateResp.
 
         催审时间
 
@@ -759,7 +759,7 @@ class SmsTemplateResp:
 
     @urge_time.setter
     def urge_time(self, urge_time):
-        """Sets the urge_time of this SmsTemplateResp.
+        r"""Sets the urge_time of this SmsTemplateResp.
 
         催审时间
 
@@ -770,7 +770,7 @@ class SmsTemplateResp:
 
     @property
     def urge_desc(self):
-        """Gets the urge_desc of this SmsTemplateResp.
+        r"""Gets the urge_desc of this SmsTemplateResp.
 
         催审描述
 
@@ -781,7 +781,7 @@ class SmsTemplateResp:
 
     @urge_desc.setter
     def urge_desc(self, urge_desc):
-        """Sets the urge_desc of this SmsTemplateResp.
+        r"""Sets the urge_desc of this SmsTemplateResp.
 
         催审描述
 
@@ -792,7 +792,7 @@ class SmsTemplateResp:
 
     @property
     def send_country1(self):
-        """Gets the send_country1 of this SmsTemplateResp.
+        r"""Gets the send_country1 of this SmsTemplateResp.
 
         发送国家1
 
@@ -803,7 +803,7 @@ class SmsTemplateResp:
 
     @send_country1.setter
     def send_country1(self, send_country1):
-        """Sets the send_country1 of this SmsTemplateResp.
+        r"""Sets the send_country1 of this SmsTemplateResp.
 
         发送国家1
 
@@ -814,7 +814,7 @@ class SmsTemplateResp:
 
     @property
     def send_country2(self):
-        """Gets the send_country2 of this SmsTemplateResp.
+        r"""Gets the send_country2 of this SmsTemplateResp.
 
         发送国家2
 
@@ -825,7 +825,7 @@ class SmsTemplateResp:
 
     @send_country2.setter
     def send_country2(self, send_country2):
-        """Sets the send_country2 of this SmsTemplateResp.
+        r"""Sets the send_country2 of this SmsTemplateResp.
 
         发送国家2
 
@@ -836,7 +836,7 @@ class SmsTemplateResp:
 
     @property
     def send_country3(self):
-        """Gets the send_country3 of this SmsTemplateResp.
+        r"""Gets the send_country3 of this SmsTemplateResp.
 
         发送国家3
 
@@ -847,7 +847,7 @@ class SmsTemplateResp:
 
     @send_country3.setter
     def send_country3(self, send_country3):
-        """Sets the send_country3 of this SmsTemplateResp.
+        r"""Sets the send_country3 of this SmsTemplateResp.
 
         发送国家3
 
@@ -858,7 +858,7 @@ class SmsTemplateResp:
 
     @property
     def is_support_multiomp(self):
-        """Gets the is_support_multiomp of this SmsTemplateResp.
+        r"""Gets the is_support_multiomp of this SmsTemplateResp.
 
         是否支持多OMP
 
@@ -869,7 +869,7 @@ class SmsTemplateResp:
 
     @is_support_multiomp.setter
     def is_support_multiomp(self, is_support_multiomp):
-        """Sets the is_support_multiomp of this SmsTemplateResp.
+        r"""Sets the is_support_multiomp of this SmsTemplateResp.
 
         是否支持多OMP
 
@@ -880,7 +880,7 @@ class SmsTemplateResp:
 
     @property
     def country_name(self):
-        """Gets the country_name of this SmsTemplateResp.
+        r"""Gets the country_name of this SmsTemplateResp.
 
         国家名称列表，返回发送国家前三名的国家名称，国家名称间以\"~\"分隔
 
@@ -891,7 +891,7 @@ class SmsTemplateResp:
 
     @country_name.setter
     def country_name(self, country_name):
-        """Sets the country_name of this SmsTemplateResp.
+        r"""Sets the country_name of this SmsTemplateResp.
 
         国家名称列表，返回发送国家前三名的国家名称，国家名称间以\"~\"分隔
 

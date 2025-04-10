@@ -31,7 +31,7 @@ class DatabaseStatusEnum:
     }
 
     def __init__(self):
-        """DatabaseStatusEnum
+        r"""DatabaseStatusEnum
 
         The model defined in huaweicloud sdk
 

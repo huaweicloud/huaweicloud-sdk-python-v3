@@ -27,7 +27,7 @@ class UpdateEipRequestBodySpec:
     }
 
     def __init__(self, egress=None, ingress=None):
-        """UpdateEipRequestBodySpec
+        r"""UpdateEipRequestBodySpec
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateEipRequestBodySpec:
 
     @property
     def egress(self):
-        """Gets the egress of this UpdateEipRequestBodySpec.
+        r"""Gets the egress of this UpdateEipRequestBodySpec.
 
         :return: The egress of this UpdateEipRequestBodySpec.
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateEipRequestBodySpecEgress`
@@ -59,7 +59,7 @@ class UpdateEipRequestBodySpec:
 
     @egress.setter
     def egress(self, egress):
-        """Sets the egress of this UpdateEipRequestBodySpec.
+        r"""Sets the egress of this UpdateEipRequestBodySpec.
 
         :param egress: The egress of this UpdateEipRequestBodySpec.
         :type egress: :class:`huaweicloudsdkcae.v1.UpdateEipRequestBodySpecEgress`
@@ -68,7 +68,7 @@ class UpdateEipRequestBodySpec:
 
     @property
     def ingress(self):
-        """Gets the ingress of this UpdateEipRequestBodySpec.
+        r"""Gets the ingress of this UpdateEipRequestBodySpec.
 
         :return: The ingress of this UpdateEipRequestBodySpec.
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateEipRequestBodySpecIngress`
@@ -77,7 +77,7 @@ class UpdateEipRequestBodySpec:
 
     @ingress.setter
     def ingress(self, ingress):
-        """Sets the ingress of this UpdateEipRequestBodySpec.
+        r"""Sets the ingress of this UpdateEipRequestBodySpec.
 
         :param ingress: The ingress of this UpdateEipRequestBodySpec.
         :type ingress: :class:`huaweicloudsdkcae.v1.UpdateEipRequestBodySpecIngress`

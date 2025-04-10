@@ -30,7 +30,7 @@ class ListLiveDataDataSourcesV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, data_sources=None):
-        """ListLiveDataDataSourcesV2Response
+        r"""ListLiveDataDataSourcesV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListLiveDataDataSourcesV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListLiveDataDataSourcesV2Response.
+        r"""Gets the size of this ListLiveDataDataSourcesV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListLiveDataDataSourcesV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListLiveDataDataSourcesV2Response.
+        r"""Sets the size of this ListLiveDataDataSourcesV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListLiveDataDataSourcesV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListLiveDataDataSourcesV2Response.
+        r"""Gets the total of this ListLiveDataDataSourcesV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListLiveDataDataSourcesV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListLiveDataDataSourcesV2Response.
+        r"""Sets the total of this ListLiveDataDataSourcesV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListLiveDataDataSourcesV2Response(SdkResponse):
 
     @property
     def data_sources(self):
-        """Gets the data_sources of this ListLiveDataDataSourcesV2Response.
+        r"""Gets the data_sources of this ListLiveDataDataSourcesV2Response.
 
         数据源列表
 
@@ -111,7 +111,7 @@ class ListLiveDataDataSourcesV2Response(SdkResponse):
 
     @data_sources.setter
     def data_sources(self, data_sources):
-        """Sets the data_sources of this ListLiveDataDataSourcesV2Response.
+        r"""Sets the data_sources of this ListLiveDataDataSourcesV2Response.
 
         数据源列表
 

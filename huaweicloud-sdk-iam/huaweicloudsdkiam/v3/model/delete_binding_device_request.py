@@ -25,7 +25,7 @@ class DeleteBindingDeviceRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteBindingDeviceRequest
+        r"""DeleteBindingDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteBindingDeviceRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteBindingDeviceRequest.
+        r"""Gets the body of this DeleteBindingDeviceRequest.
 
         :return: The body of this DeleteBindingDeviceRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.UnbindMfaDevice`
@@ -52,7 +52,7 @@ class DeleteBindingDeviceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteBindingDeviceRequest.
+        r"""Sets the body of this DeleteBindingDeviceRequest.
 
         :param body: The body of this DeleteBindingDeviceRequest.
         :type body: :class:`huaweicloudsdkiam.v3.UnbindMfaDevice`

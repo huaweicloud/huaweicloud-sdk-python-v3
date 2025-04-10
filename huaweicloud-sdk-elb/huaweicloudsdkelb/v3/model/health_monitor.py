@@ -57,7 +57,7 @@ class HealthMonitor:
     }
 
     def __init__(self, admin_state_up=None, delay=None, domain_name=None, expected_codes=None, http_method=None, id=None, max_retries=None, max_retries_down=None, monitor_port=None, name=None, pools=None, project_id=None, timeout=None, type=None, url_path=None, created_at=None, updated_at=None):
-        """HealthMonitor
+        r"""HealthMonitor
 
         The model defined in huaweicloud sdk
 
@@ -140,7 +140,7 @@ class HealthMonitor:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this HealthMonitor.
+        r"""Gets the admin_state_up of this HealthMonitor.
 
         健康检查的管理状态。  取值范围： - true：表示开启健康检查。 - false表示关闭健康检查。  默认取值：true。
 
@@ -151,7 +151,7 @@ class HealthMonitor:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this HealthMonitor.
+        r"""Sets the admin_state_up of this HealthMonitor.
 
         健康检查的管理状态。  取值范围： - true：表示开启健康检查。 - false表示关闭健康检查。  默认取值：true。
 
@@ -162,7 +162,7 @@ class HealthMonitor:
 
     @property
     def delay(self):
-        """Gets the delay of this HealthMonitor.
+        r"""Gets the delay of this HealthMonitor.
 
         健康检查间隔。取值：1-50s。
 
@@ -173,7 +173,7 @@ class HealthMonitor:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this HealthMonitor.
+        r"""Sets the delay of this HealthMonitor.
 
         健康检查间隔。取值：1-50s。
 
@@ -184,7 +184,7 @@ class HealthMonitor:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this HealthMonitor.
+        r"""Gets the domain_name of this HealthMonitor.
 
         发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。 默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -195,7 +195,7 @@ class HealthMonitor:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this HealthMonitor.
+        r"""Sets the domain_name of this HealthMonitor.
 
         发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。 默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -206,7 +206,7 @@ class HealthMonitor:
 
     @property
     def expected_codes(self):
-        """Gets the expected_codes of this HealthMonitor.
+        r"""Gets the expected_codes of this HealthMonitor.
 
         期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：若健康检查type为GRPC，则默认值为0,；其他为200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。
 
@@ -217,7 +217,7 @@ class HealthMonitor:
 
     @expected_codes.setter
     def expected_codes(self, expected_codes):
-        """Sets the expected_codes of this HealthMonitor.
+        r"""Sets the expected_codes of this HealthMonitor.
 
         期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：若健康检查type为GRPC，则默认值为0,；其他为200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。
 
@@ -228,7 +228,7 @@ class HealthMonitor:
 
     @property
     def http_method(self):
-        """Gets the http_method of this HealthMonitor.
+        r"""Gets the http_method of this HealthMonitor.
 
         HTTP请求方法。  取值：GET、HEAD、POST，默认GET。  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -239,7 +239,7 @@ class HealthMonitor:
 
     @http_method.setter
     def http_method(self, http_method):
-        """Sets the http_method of this HealthMonitor.
+        r"""Sets the http_method of this HealthMonitor.
 
         HTTP请求方法。  取值：GET、HEAD、POST，默认GET。  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -250,7 +250,7 @@ class HealthMonitor:
 
     @property
     def id(self):
-        """Gets the id of this HealthMonitor.
+        r"""Gets the id of this HealthMonitor.
 
         健康检查ID
 
@@ -261,7 +261,7 @@ class HealthMonitor:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HealthMonitor.
+        r"""Sets the id of this HealthMonitor.
 
         健康检查ID
 
@@ -272,7 +272,7 @@ class HealthMonitor:
 
     @property
     def max_retries(self):
-        """Gets the max_retries of this HealthMonitor.
+        r"""Gets the max_retries of this HealthMonitor.
 
         健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。
 
@@ -283,7 +283,7 @@ class HealthMonitor:
 
     @max_retries.setter
     def max_retries(self, max_retries):
-        """Sets the max_retries of this HealthMonitor.
+        r"""Sets the max_retries of this HealthMonitor.
 
         健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。
 
@@ -294,7 +294,7 @@ class HealthMonitor:
 
     @property
     def max_retries_down(self):
-        """Gets the max_retries_down of this HealthMonitor.
+        r"""Gets the max_retries_down of this HealthMonitor.
 
         健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10，默认3。
 
@@ -305,7 +305,7 @@ class HealthMonitor:
 
     @max_retries_down.setter
     def max_retries_down(self, max_retries_down):
-        """Sets the max_retries_down of this HealthMonitor.
+        r"""Sets the max_retries_down of this HealthMonitor.
 
         健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10，默认3。
 
@@ -316,7 +316,7 @@ class HealthMonitor:
 
     @property
     def monitor_port(self):
-        """Gets the monitor_port of this HealthMonitor.
+        r"""Gets the monitor_port of this HealthMonitor.
 
         参数解释：健康检查端口号。 [约束限制：当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu) 取值范围：1-65535和null，传null表示使用后端服务器端口号。 默认取值：null
 
@@ -327,7 +327,7 @@ class HealthMonitor:
 
     @monitor_port.setter
     def monitor_port(self, monitor_port):
-        """Sets the monitor_port of this HealthMonitor.
+        r"""Sets the monitor_port of this HealthMonitor.
 
         参数解释：健康检查端口号。 [约束限制：当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu) 取值范围：1-65535和null，传null表示使用后端服务器端口号。 默认取值：null
 
@@ -338,7 +338,7 @@ class HealthMonitor:
 
     @property
     def name(self):
-        """Gets the name of this HealthMonitor.
+        r"""Gets the name of this HealthMonitor.
 
         健康检查名称。
 
@@ -349,7 +349,7 @@ class HealthMonitor:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HealthMonitor.
+        r"""Sets the name of this HealthMonitor.
 
         健康检查名称。
 
@@ -360,7 +360,7 @@ class HealthMonitor:
 
     @property
     def pools(self):
-        """Gets the pools of this HealthMonitor.
+        r"""Gets the pools of this HealthMonitor.
 
         健康检查所在的后端服务器组ID列表。实际只会有一个后端服务器组ID。
 
@@ -371,7 +371,7 @@ class HealthMonitor:
 
     @pools.setter
     def pools(self, pools):
-        """Sets the pools of this HealthMonitor.
+        r"""Sets the pools of this HealthMonitor.
 
         健康检查所在的后端服务器组ID列表。实际只会有一个后端服务器组ID。
 
@@ -382,7 +382,7 @@ class HealthMonitor:
 
     @property
     def project_id(self):
-        """Gets the project_id of this HealthMonitor.
+        r"""Gets the project_id of this HealthMonitor.
 
         健康检查所在的项目ID。
 
@@ -393,7 +393,7 @@ class HealthMonitor:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this HealthMonitor.
+        r"""Sets the project_id of this HealthMonitor.
 
         健康检查所在的项目ID。
 
@@ -404,7 +404,7 @@ class HealthMonitor:
 
     @property
     def timeout(self):
-        """Gets the timeout of this HealthMonitor.
+        r"""Gets the timeout of this HealthMonitor.
 
         一次健康检查请求的超时时间。  建议该值小于delay的值。
 
@@ -415,7 +415,7 @@ class HealthMonitor:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this HealthMonitor.
+        r"""Sets the timeout of this HealthMonitor.
 
         一次健康检查请求的超时时间。  建议该值小于delay的值。
 
@@ -426,7 +426,7 @@ class HealthMonitor:
 
     @property
     def type(self):
-        """Gets the type of this HealthMonitor.
+        r"""Gets the type of this HealthMonitor.
 
         健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS、TLS和GRPC。  使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 [- 若pool的protocol为IP，则type可以是TCP、HTTP、HTTPS。](tag:hws_eu) - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为GRPC，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为TLS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
@@ -437,7 +437,7 @@ class HealthMonitor:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HealthMonitor.
+        r"""Sets the type of this HealthMonitor.
 
         健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS、TLS和GRPC。  使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 [- 若pool的protocol为IP，则type可以是TCP、HTTP、HTTPS。](tag:hws_eu) - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为GRPC，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为TLS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
@@ -448,7 +448,7 @@ class HealthMonitor:
 
     @property
     def url_path(self):
-        """Gets the url_path of this HealthMonitor.
+        r"""Gets the url_path of this HealthMonitor.
 
         健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。  支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+   使用说明：当type为HTTP/HTTPS时生效。
 
@@ -459,7 +459,7 @@ class HealthMonitor:
 
     @url_path.setter
     def url_path(self, url_path):
-        """Sets the url_path of this HealthMonitor.
+        r"""Sets the url_path of this HealthMonitor.
 
         健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。  支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+   使用说明：当type为HTTP/HTTPS时生效。
 
@@ -470,7 +470,7 @@ class HealthMonitor:
 
     @property
     def created_at(self):
-        """Gets the created_at of this HealthMonitor.
+        r"""Gets the created_at of this HealthMonitor.
 
         创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,srg,fcs,dt,hk_tm)
 
@@ -481,7 +481,7 @@ class HealthMonitor:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this HealthMonitor.
+        r"""Sets the created_at of this HealthMonitor.
 
         创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,srg,fcs,dt,hk_tm)
 
@@ -492,7 +492,7 @@ class HealthMonitor:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this HealthMonitor.
+        r"""Gets the updated_at of this HealthMonitor.
 
         更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,srg,fcs,dt,hk_tm)
 
@@ -503,7 +503,7 @@ class HealthMonitor:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this HealthMonitor.
+        r"""Sets the updated_at of this HealthMonitor.
 
         更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,srg,fcs,dt,hk_tm)
 

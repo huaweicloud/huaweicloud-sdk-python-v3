@@ -27,7 +27,7 @@ class UserPassword:
     }
 
     def __init__(self, username=None, password=None):
-        """UserPassword
+        r"""UserPassword
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UserPassword:
 
     @property
     def username(self):
-        """Gets the username of this UserPassword.
+        r"""Gets the username of this UserPassword.
 
         登录帐号，默认为“root”
 
@@ -60,7 +60,7 @@ class UserPassword:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this UserPassword.
+        r"""Sets the username of this UserPassword.
 
         登录帐号，默认为“root”
 
@@ -71,7 +71,7 @@ class UserPassword:
 
     @property
     def password(self):
-        """Gets the password of this UserPassword.
+        r"""Gets the password of this UserPassword.
 
         登录密码，若创建节点通过用户名密码方式，即使用该字段，则响应体中该字段作屏蔽展示。 密码复杂度要求： - 长度为8-26位。 - 密码至少必须包含大写字母、小写字母、数字和特殊字符（!@$%^-_=+[{}]:,./?~#*）中的三种。 - 密码不能包含用户名或用户名的逆序。 创建节点时password字段需要加盐加密，具体方法请参见[创建节点时password字段加盐加密](add-salt.xml)。 
 
@@ -82,7 +82,7 @@ class UserPassword:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this UserPassword.
+        r"""Sets the password of this UserPassword.
 
         登录密码，若创建节点通过用户名密码方式，即使用该字段，则响应体中该字段作屏蔽展示。 密码复杂度要求： - 长度为8-26位。 - 密码至少必须包含大写字母、小写字母、数字和特殊字符（!@$%^-_=+[{}]:,./?~#*）中的三种。 - 密码不能包含用户名或用户名的逆序。 创建节点时password字段需要加盐加密，具体方法请参见[创建节点时password字段加盐加密](add-salt.xml)。 
 

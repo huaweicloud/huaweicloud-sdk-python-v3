@@ -31,7 +31,7 @@ class DeviceShadowData:
     }
 
     def __init__(self, service_id=None, desired=None, reported=None, version=None):
-        """DeviceShadowData
+        r"""DeviceShadowData
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class DeviceShadowData:
 
     @property
     def service_id(self):
-        """Gets the service_id of this DeviceShadowData.
+        r"""Gets the service_id of this DeviceShadowData.
 
         设备的服务ID，在设备关联的产品模型中定义。
 
@@ -74,7 +74,7 @@ class DeviceShadowData:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this DeviceShadowData.
+        r"""Sets the service_id of this DeviceShadowData.
 
         设备的服务ID，在设备关联的产品模型中定义。
 
@@ -85,7 +85,7 @@ class DeviceShadowData:
 
     @property
     def desired(self):
-        """Gets the desired of this DeviceShadowData.
+        r"""Gets the desired of this DeviceShadowData.
 
         :return: The desired of this DeviceShadowData.
         :rtype: :class:`huaweicloudsdkiotda.v5.DeviceShadowProperties`
@@ -94,7 +94,7 @@ class DeviceShadowData:
 
     @desired.setter
     def desired(self, desired):
-        """Sets the desired of this DeviceShadowData.
+        r"""Sets the desired of this DeviceShadowData.
 
         :param desired: The desired of this DeviceShadowData.
         :type desired: :class:`huaweicloudsdkiotda.v5.DeviceShadowProperties`
@@ -103,7 +103,7 @@ class DeviceShadowData:
 
     @property
     def reported(self):
-        """Gets the reported of this DeviceShadowData.
+        r"""Gets the reported of this DeviceShadowData.
 
         :return: The reported of this DeviceShadowData.
         :rtype: :class:`huaweicloudsdkiotda.v5.DeviceShadowProperties`
@@ -112,7 +112,7 @@ class DeviceShadowData:
 
     @reported.setter
     def reported(self, reported):
-        """Sets the reported of this DeviceShadowData.
+        r"""Sets the reported of this DeviceShadowData.
 
         :param reported: The reported of this DeviceShadowData.
         :type reported: :class:`huaweicloudsdkiotda.v5.DeviceShadowProperties`
@@ -121,7 +121,7 @@ class DeviceShadowData:
 
     @property
     def version(self):
-        """Gets the version of this DeviceShadowData.
+        r"""Gets the version of this DeviceShadowData.
 
         设备影子的版本，携带该参数时平台会校验值必须等于当前影子版本，初始从0开始。
 
@@ -132,7 +132,7 @@ class DeviceShadowData:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DeviceShadowData.
+        r"""Sets the version of this DeviceShadowData.
 
         设备影子的版本，携带该参数时平台会校验值必须等于当前影子版本，初始从0开始。
 

@@ -55,7 +55,7 @@ class SubCustomerOrderV2:
     }
 
     def __init__(self, order_id=None, customer_id=None, service_type_code=None, service_type_name=None, source_type=None, status=None, order_type=None, amount_after_discount=None, official_amount=None, measure_id=None, create_time=None, payment_time=None, currency=None, contract_id=None, amount_info=None, enterprise_projects=None):
-        """SubCustomerOrderV2
+        r"""SubCustomerOrderV2
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class SubCustomerOrderV2:
 
     @property
     def order_id(self):
-        """Gets the order_id of this SubCustomerOrderV2.
+        r"""Gets the order_id of this SubCustomerOrderV2.
 
         订单ID。
 
@@ -159,7 +159,7 @@ class SubCustomerOrderV2:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this SubCustomerOrderV2.
+        r"""Sets the order_id of this SubCustomerOrderV2.
 
         订单ID。
 
@@ -170,7 +170,7 @@ class SubCustomerOrderV2:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this SubCustomerOrderV2.
+        r"""Gets the customer_id of this SubCustomerOrderV2.
 
         客户账号ID。
 
@@ -181,7 +181,7 @@ class SubCustomerOrderV2:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this SubCustomerOrderV2.
+        r"""Sets the customer_id of this SubCustomerOrderV2.
 
         客户账号ID。
 
@@ -192,7 +192,7 @@ class SubCustomerOrderV2:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this SubCustomerOrderV2.
+        r"""Gets the service_type_code of this SubCustomerOrderV2.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -203,7 +203,7 @@ class SubCustomerOrderV2:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this SubCustomerOrderV2.
+        r"""Sets the service_type_code of this SubCustomerOrderV2.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -214,7 +214,7 @@ class SubCustomerOrderV2:
 
     @property
     def service_type_name(self):
-        """Gets the service_type_name of this SubCustomerOrderV2.
+        r"""Gets the service_type_name of this SubCustomerOrderV2.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -225,7 +225,7 @@ class SubCustomerOrderV2:
 
     @service_type_name.setter
     def service_type_name(self, service_type_name):
-        """Sets the service_type_name of this SubCustomerOrderV2.
+        r"""Sets the service_type_name of this SubCustomerOrderV2.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -236,7 +236,7 @@ class SubCustomerOrderV2:
 
     @property
     def source_type(self):
-        """Gets the source_type of this SubCustomerOrderV2.
+        r"""Gets the source_type of this SubCustomerOrderV2.
 
         客户订单订单来源类型： 1：客户2：代理3：合同4：分销商
 
@@ -247,7 +247,7 @@ class SubCustomerOrderV2:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this SubCustomerOrderV2.
+        r"""Sets the source_type of this SubCustomerOrderV2.
 
         客户订单订单来源类型： 1：客户2：代理3：合同4：分销商
 
@@ -258,7 +258,7 @@ class SubCustomerOrderV2:
 
     @property
     def status(self):
-        """Gets the status of this SubCustomerOrderV2.
+        r"""Gets the status of this SubCustomerOrderV2.
 
         订单状态： 1：待审核2：待退款3：处理中4：已取消5：已完成6：待支付9：待确认10：待发货11：待收货12：待上门取货13：换新中
 
@@ -269,7 +269,7 @@ class SubCustomerOrderV2:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SubCustomerOrderV2.
+        r"""Sets the status of this SubCustomerOrderV2.
 
         订单状态： 1：待审核2：待退款3：处理中4：已取消5：已完成6：待支付9：待确认10：待发货11：待收货12：待上门取货13：换新中
 
@@ -280,7 +280,7 @@ class SubCustomerOrderV2:
 
     @property
     def order_type(self):
-        """Gets the order_type of this SubCustomerOrderV2.
+        r"""Gets the order_type of this SubCustomerOrderV2.
 
         订单类型： 1：开通2：续订3：变更4：退订11：按需转包年/包月13：试用14：转商用15：费用调整
 
@@ -291,7 +291,7 @@ class SubCustomerOrderV2:
 
     @order_type.setter
     def order_type(self, order_type):
-        """Sets the order_type of this SubCustomerOrderV2.
+        r"""Sets the order_type of this SubCustomerOrderV2.
 
         订单类型： 1：开通2：续订3：变更4：退订11：按需转包年/包月13：试用14：转商用15：费用调整
 
@@ -302,7 +302,7 @@ class SubCustomerOrderV2:
 
     @property
     def amount_after_discount(self):
-        """Gets the amount_after_discount of this SubCustomerOrderV2.
+        r"""Gets the amount_after_discount of this SubCustomerOrderV2.
 
         订单优惠后金额（不含券不含卡的实付价格）。
 
@@ -313,7 +313,7 @@ class SubCustomerOrderV2:
 
     @amount_after_discount.setter
     def amount_after_discount(self, amount_after_discount):
-        """Sets the amount_after_discount of this SubCustomerOrderV2.
+        r"""Sets the amount_after_discount of this SubCustomerOrderV2.
 
         订单优惠后金额（不含券不含卡的实付价格）。
 
@@ -324,7 +324,7 @@ class SubCustomerOrderV2:
 
     @property
     def official_amount(self):
-        """Gets the official_amount of this SubCustomerOrderV2.
+        r"""Gets the official_amount of this SubCustomerOrderV2.
 
         订单金额（官网价）。 退订订单中，该金额等于amount_after_discount。
 
@@ -335,7 +335,7 @@ class SubCustomerOrderV2:
 
     @official_amount.setter
     def official_amount(self, official_amount):
-        """Sets the official_amount of this SubCustomerOrderV2.
+        r"""Sets the official_amount of this SubCustomerOrderV2.
 
         订单金额（官网价）。 退订订单中，该金额等于amount_after_discount。
 
@@ -346,7 +346,7 @@ class SubCustomerOrderV2:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this SubCustomerOrderV2.
+        r"""Gets the measure_id of this SubCustomerOrderV2.
 
         订单金额度量单位： 1：元
 
@@ -357,7 +357,7 @@ class SubCustomerOrderV2:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this SubCustomerOrderV2.
+        r"""Sets the measure_id of this SubCustomerOrderV2.
 
         订单金额度量单位： 1：元
 
@@ -368,7 +368,7 @@ class SubCustomerOrderV2:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SubCustomerOrderV2.
+        r"""Gets the create_time of this SubCustomerOrderV2.
 
         创建时间 。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -379,7 +379,7 @@ class SubCustomerOrderV2:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SubCustomerOrderV2.
+        r"""Sets the create_time of this SubCustomerOrderV2.
 
         创建时间 。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -390,7 +390,7 @@ class SubCustomerOrderV2:
 
     @property
     def payment_time(self):
-        """Gets the payment_time of this SubCustomerOrderV2.
+        r"""Gets the payment_time of this SubCustomerOrderV2.
 
         支付时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -401,7 +401,7 @@ class SubCustomerOrderV2:
 
     @payment_time.setter
     def payment_time(self, payment_time):
-        """Sets the payment_time of this SubCustomerOrderV2.
+        r"""Sets the payment_time of this SubCustomerOrderV2.
 
         支付时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -412,7 +412,7 @@ class SubCustomerOrderV2:
 
     @property
     def currency(self):
-        """Gets the currency of this SubCustomerOrderV2.
+        r"""Gets the currency of this SubCustomerOrderV2.
 
         货币编码。
 
@@ -423,7 +423,7 @@ class SubCustomerOrderV2:
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this SubCustomerOrderV2.
+        r"""Sets the currency of this SubCustomerOrderV2.
 
         货币编码。
 
@@ -434,7 +434,7 @@ class SubCustomerOrderV2:
 
     @property
     def contract_id(self):
-        """Gets the contract_id of this SubCustomerOrderV2.
+        r"""Gets the contract_id of this SubCustomerOrderV2.
 
         合同ID。
 
@@ -445,7 +445,7 @@ class SubCustomerOrderV2:
 
     @contract_id.setter
     def contract_id(self, contract_id):
-        """Sets the contract_id of this SubCustomerOrderV2.
+        r"""Sets the contract_id of this SubCustomerOrderV2.
 
         合同ID。
 
@@ -456,7 +456,7 @@ class SubCustomerOrderV2:
 
     @property
     def amount_info(self):
-        """Gets the amount_info of this SubCustomerOrderV2.
+        r"""Gets the amount_info of this SubCustomerOrderV2.
 
         :return: The amount_info of this SubCustomerOrderV2.
         :rtype: :class:`huaweicloudsdkbss.v2.AmountInfomationV2`
@@ -465,7 +465,7 @@ class SubCustomerOrderV2:
 
     @amount_info.setter
     def amount_info(self, amount_info):
-        """Sets the amount_info of this SubCustomerOrderV2.
+        r"""Sets the amount_info of this SubCustomerOrderV2.
 
         :param amount_info: The amount_info of this SubCustomerOrderV2.
         :type amount_info: :class:`huaweicloudsdkbss.v2.AmountInfomationV2`
@@ -474,7 +474,7 @@ class SubCustomerOrderV2:
 
     @property
     def enterprise_projects(self):
-        """Gets the enterprise_projects of this SubCustomerOrderV2.
+        r"""Gets the enterprise_projects of this SubCustomerOrderV2.
 
         客户订单企业项目信息。具体请参见表 EnterpriseProject。
 
@@ -485,7 +485,7 @@ class SubCustomerOrderV2:
 
     @enterprise_projects.setter
     def enterprise_projects(self, enterprise_projects):
-        """Sets the enterprise_projects of this SubCustomerOrderV2.
+        r"""Sets the enterprise_projects of this SubCustomerOrderV2.
 
         客户订单企业项目信息。具体请参见表 EnterpriseProject。
 

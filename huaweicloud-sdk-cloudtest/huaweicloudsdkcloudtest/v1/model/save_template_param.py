@@ -29,7 +29,7 @@ class SaveTemplateParam:
     }
 
     def __init__(self, description=None, mindmap_id=None, name=None):
-        """SaveTemplateParam
+        r"""SaveTemplateParam
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SaveTemplateParam:
 
     @property
     def description(self):
-        """Gets the description of this SaveTemplateParam.
+        r"""Gets the description of this SaveTemplateParam.
 
         描述
 
@@ -68,7 +68,7 @@ class SaveTemplateParam:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SaveTemplateParam.
+        r"""Sets the description of this SaveTemplateParam.
 
         描述
 
@@ -79,7 +79,7 @@ class SaveTemplateParam:
 
     @property
     def mindmap_id(self):
-        """Gets the mindmap_id of this SaveTemplateParam.
+        r"""Gets the mindmap_id of this SaveTemplateParam.
 
         脑图ID
 
@@ -90,7 +90,7 @@ class SaveTemplateParam:
 
     @mindmap_id.setter
     def mindmap_id(self, mindmap_id):
-        """Sets the mindmap_id of this SaveTemplateParam.
+        r"""Sets the mindmap_id of this SaveTemplateParam.
 
         脑图ID
 
@@ -101,7 +101,7 @@ class SaveTemplateParam:
 
     @property
     def name(self):
-        """Gets the name of this SaveTemplateParam.
+        r"""Gets the name of this SaveTemplateParam.
 
         脑图名称
 
@@ -112,7 +112,7 @@ class SaveTemplateParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SaveTemplateParam.
+        r"""Sets the name of this SaveTemplateParam.
 
         脑图名称
 

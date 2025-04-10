@@ -30,7 +30,7 @@ class ListTenantResourcesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, count=None, x_request_id=None):
-        """ListTenantResourcesResponse
+        r"""ListTenantResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTenantResourcesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListTenantResourcesResponse.
+        r"""Gets the resources of this ListTenantResourcesResponse.
 
         资源用量列表
 
@@ -69,7 +69,7 @@ class ListTenantResourcesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListTenantResourcesResponse.
+        r"""Sets the resources of this ListTenantResourcesResponse.
 
         资源用量列表
 
@@ -80,7 +80,7 @@ class ListTenantResourcesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListTenantResourcesResponse.
+        r"""Gets the count of this ListTenantResourcesResponse.
 
         资源总数。
 
@@ -91,7 +91,7 @@ class ListTenantResourcesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListTenantResourcesResponse.
+        r"""Sets the count of this ListTenantResourcesResponse.
 
         资源总数。
 
@@ -102,7 +102,7 @@ class ListTenantResourcesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListTenantResourcesResponse.
+        r"""Gets the x_request_id of this ListTenantResourcesResponse.
 
         :return: The x_request_id of this ListTenantResourcesResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListTenantResourcesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListTenantResourcesResponse.
+        r"""Sets the x_request_id of this ListTenantResourcesResponse.
 
         :param x_request_id: The x_request_id of this ListTenantResourcesResponse.
         :type x_request_id: str

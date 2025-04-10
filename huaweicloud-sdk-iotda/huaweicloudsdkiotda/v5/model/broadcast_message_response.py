@@ -32,7 +32,7 @@ class BroadcastMessageResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, topic_full_name=None, message_id=None, created_time=None):
-        """BroadcastMessageResponse
+        r"""BroadcastMessageResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class BroadcastMessageResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this BroadcastMessageResponse.
+        r"""Gets the app_id of this BroadcastMessageResponse.
 
         **参数说明**：资源空间ID。
 
@@ -76,7 +76,7 @@ class BroadcastMessageResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this BroadcastMessageResponse.
+        r"""Sets the app_id of this BroadcastMessageResponse.
 
         **参数说明**：资源空间ID。
 
@@ -87,7 +87,7 @@ class BroadcastMessageResponse(SdkResponse):
 
     @property
     def topic_full_name(self):
-        """Gets the topic_full_name of this BroadcastMessageResponse.
+        r"""Gets the topic_full_name of this BroadcastMessageResponse.
 
         **参数说明**：接收广播消息的完整Topic名称
 
@@ -98,7 +98,7 @@ class BroadcastMessageResponse(SdkResponse):
 
     @topic_full_name.setter
     def topic_full_name(self, topic_full_name):
-        """Sets the topic_full_name of this BroadcastMessageResponse.
+        r"""Sets the topic_full_name of this BroadcastMessageResponse.
 
         **参数说明**：接收广播消息的完整Topic名称
 
@@ -109,7 +109,7 @@ class BroadcastMessageResponse(SdkResponse):
 
     @property
     def message_id(self):
-        """Gets the message_id of this BroadcastMessageResponse.
+        r"""Gets the message_id of this BroadcastMessageResponse.
 
         消息id，由物联网平台生成，用于标识该消息。
 
@@ -120,7 +120,7 @@ class BroadcastMessageResponse(SdkResponse):
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this BroadcastMessageResponse.
+        r"""Sets the message_id of this BroadcastMessageResponse.
 
         消息id，由物联网平台生成，用于标识该消息。
 
@@ -131,7 +131,7 @@ class BroadcastMessageResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this BroadcastMessageResponse.
+        r"""Gets the created_time of this BroadcastMessageResponse.
 
         消息的创建时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
@@ -142,7 +142,7 @@ class BroadcastMessageResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this BroadcastMessageResponse.
+        r"""Sets the created_time of this BroadcastMessageResponse.
 
         消息的创建时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 

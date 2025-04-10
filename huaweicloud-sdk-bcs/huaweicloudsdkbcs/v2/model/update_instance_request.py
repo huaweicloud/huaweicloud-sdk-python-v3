@@ -27,7 +27,7 @@ class UpdateInstanceRequest:
     }
 
     def __init__(self, blockchain_id=None, body=None):
-        """UpdateInstanceRequest
+        r"""UpdateInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateInstanceRequest:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this UpdateInstanceRequest.
+        r"""Gets the blockchain_id of this UpdateInstanceRequest.
 
         bcs 服务id
 
@@ -60,7 +60,7 @@ class UpdateInstanceRequest:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this UpdateInstanceRequest.
+        r"""Sets the blockchain_id of this UpdateInstanceRequest.
 
         bcs 服务id
 
@@ -71,7 +71,7 @@ class UpdateInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceRequest.
+        r"""Gets the body of this UpdateInstanceRequest.
 
         :return: The body of this UpdateInstanceRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.UpdateInstanceRequestBody`
@@ -80,7 +80,7 @@ class UpdateInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceRequest.
+        r"""Sets the body of this UpdateInstanceRequest.
 
         :param body: The body of this UpdateInstanceRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.UpdateInstanceRequestBody`

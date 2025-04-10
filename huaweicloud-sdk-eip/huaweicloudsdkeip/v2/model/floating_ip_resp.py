@@ -49,7 +49,7 @@ class FloatingIpResp:
     }
 
     def __init__(self, fixed_ip_address=None, floating_ip_address=None, floating_network_id=None, id=None, port_id=None, router_id=None, status=None, tenant_id=None, project_id=None, dns_name=None, dns_domain=None, created_at=None, updated_at=None):
-        """FloatingIpResp
+        r"""FloatingIpResp
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class FloatingIpResp:
 
     @property
     def fixed_ip_address(self):
-        """Gets the fixed_ip_address of this FloatingIpResp.
+        r"""Gets the fixed_ip_address of this FloatingIpResp.
 
         关联端口的私有IP地址。
 
@@ -138,7 +138,7 @@ class FloatingIpResp:
 
     @fixed_ip_address.setter
     def fixed_ip_address(self, fixed_ip_address):
-        """Sets the fixed_ip_address of this FloatingIpResp.
+        r"""Sets the fixed_ip_address of this FloatingIpResp.
 
         关联端口的私有IP地址。
 
@@ -149,7 +149,7 @@ class FloatingIpResp:
 
     @property
     def floating_ip_address(self):
-        """Gets the floating_ip_address of this FloatingIpResp.
+        r"""Gets the floating_ip_address of this FloatingIpResp.
 
         浮动IP地址。
 
@@ -160,7 +160,7 @@ class FloatingIpResp:
 
     @floating_ip_address.setter
     def floating_ip_address(self, floating_ip_address):
-        """Sets the floating_ip_address of this FloatingIpResp.
+        r"""Sets the floating_ip_address of this FloatingIpResp.
 
         浮动IP地址。
 
@@ -171,7 +171,7 @@ class FloatingIpResp:
 
     @property
     def floating_network_id(self):
-        """Gets the floating_network_id of this FloatingIpResp.
+        r"""Gets the floating_network_id of this FloatingIpResp.
 
         外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external=True或GET /v2.0/networks?name={floating_network}或neutron net-external-list方式查询。
 
@@ -182,7 +182,7 @@ class FloatingIpResp:
 
     @floating_network_id.setter
     def floating_network_id(self, floating_network_id):
-        """Sets the floating_network_id of this FloatingIpResp.
+        r"""Sets the floating_network_id of this FloatingIpResp.
 
         外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external=True或GET /v2.0/networks?name={floating_network}或neutron net-external-list方式查询。
 
@@ -193,7 +193,7 @@ class FloatingIpResp:
 
     @property
     def id(self):
-        """Gets the id of this FloatingIpResp.
+        r"""Gets the id of this FloatingIpResp.
 
         浮动IP地址的id。
 
@@ -204,7 +204,7 @@ class FloatingIpResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FloatingIpResp.
+        r"""Sets the id of this FloatingIpResp.
 
         浮动IP地址的id。
 
@@ -215,7 +215,7 @@ class FloatingIpResp:
 
     @property
     def port_id(self):
-        """Gets the port_id of this FloatingIpResp.
+        r"""Gets the port_id of this FloatingIpResp.
 
         端口id。
 
@@ -226,7 +226,7 @@ class FloatingIpResp:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this FloatingIpResp.
+        r"""Sets the port_id of this FloatingIpResp.
 
         端口id。
 
@@ -237,7 +237,7 @@ class FloatingIpResp:
 
     @property
     def router_id(self):
-        """Gets the router_id of this FloatingIpResp.
+        r"""Gets the router_id of this FloatingIpResp.
 
         所属路由器id。
 
@@ -248,7 +248,7 @@ class FloatingIpResp:
 
     @router_id.setter
     def router_id(self, router_id):
-        """Sets the router_id of this FloatingIpResp.
+        r"""Sets the router_id of this FloatingIpResp.
 
         所属路由器id。
 
@@ -259,7 +259,7 @@ class FloatingIpResp:
 
     @property
     def status(self):
-        """Gets the status of this FloatingIpResp.
+        r"""Gets the status of this FloatingIpResp.
 
         网络状态，可以为ACTIVE， DOWN或ERROR。  DOWN：未绑定  ACTIVE：绑定  ERROR：异常
 
@@ -270,7 +270,7 @@ class FloatingIpResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FloatingIpResp.
+        r"""Sets the status of this FloatingIpResp.
 
         网络状态，可以为ACTIVE， DOWN或ERROR。  DOWN：未绑定  ACTIVE：绑定  ERROR：异常
 
@@ -281,7 +281,7 @@ class FloatingIpResp:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this FloatingIpResp.
+        r"""Gets the tenant_id of this FloatingIpResp.
 
         项目id。
 
@@ -292,7 +292,7 @@ class FloatingIpResp:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this FloatingIpResp.
+        r"""Sets the tenant_id of this FloatingIpResp.
 
         项目id。
 
@@ -303,7 +303,7 @@ class FloatingIpResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this FloatingIpResp.
+        r"""Gets the project_id of this FloatingIpResp.
 
         项目id。
 
@@ -314,7 +314,7 @@ class FloatingIpResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this FloatingIpResp.
+        r"""Sets the project_id of this FloatingIpResp.
 
         项目id。
 
@@ -325,7 +325,7 @@ class FloatingIpResp:
 
     @property
     def dns_name(self):
-        """Gets the dns_name of this FloatingIpResp.
+        r"""Gets the dns_name of this FloatingIpResp.
 
         DNS名称(目前仅广州局点支持)
 
@@ -336,7 +336,7 @@ class FloatingIpResp:
 
     @dns_name.setter
     def dns_name(self, dns_name):
-        """Sets the dns_name of this FloatingIpResp.
+        r"""Sets the dns_name of this FloatingIpResp.
 
         DNS名称(目前仅广州局点支持)
 
@@ -347,7 +347,7 @@ class FloatingIpResp:
 
     @property
     def dns_domain(self):
-        """Gets the dns_domain of this FloatingIpResp.
+        r"""Gets the dns_domain of this FloatingIpResp.
 
         DNS域地址(目前仅广州局点支持)
 
@@ -358,7 +358,7 @@ class FloatingIpResp:
 
     @dns_domain.setter
     def dns_domain(self, dns_domain):
-        """Sets the dns_domain of this FloatingIpResp.
+        r"""Sets the dns_domain of this FloatingIpResp.
 
         DNS域地址(目前仅广州局点支持)
 
@@ -369,7 +369,7 @@ class FloatingIpResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this FloatingIpResp.
+        r"""Gets the created_at of this FloatingIpResp.
 
         资源创建时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
 
@@ -380,7 +380,7 @@ class FloatingIpResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this FloatingIpResp.
+        r"""Sets the created_at of this FloatingIpResp.
 
         资源创建时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
 
@@ -391,7 +391,7 @@ class FloatingIpResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this FloatingIpResp.
+        r"""Gets the updated_at of this FloatingIpResp.
 
         资源更新时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
 
@@ -402,7 +402,7 @@ class FloatingIpResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this FloatingIpResp.
+        r"""Sets the updated_at of this FloatingIpResp.
 
         资源更新时间  采用UTC时间  格式：YYYY-MM-DDTHH:MM:SS
 

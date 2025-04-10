@@ -31,7 +31,7 @@ class ListCloudDbaInstancesRequest:
     }
 
     def __init__(self, datastore_type=None, offset=None, limit=None, x_language=None):
-        """ListCloudDbaInstancesRequest
+        r"""ListCloudDbaInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListCloudDbaInstancesRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListCloudDbaInstancesRequest.
+        r"""Gets the datastore_type of this ListCloudDbaInstancesRequest.
 
         数据库类型。
 
@@ -74,7 +74,7 @@ class ListCloudDbaInstancesRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListCloudDbaInstancesRequest.
+        r"""Sets the datastore_type of this ListCloudDbaInstancesRequest.
 
         数据库类型。
 
@@ -85,7 +85,7 @@ class ListCloudDbaInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCloudDbaInstancesRequest.
+        r"""Gets the offset of this ListCloudDbaInstancesRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -96,7 +96,7 @@ class ListCloudDbaInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCloudDbaInstancesRequest.
+        r"""Sets the offset of this ListCloudDbaInstancesRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -107,7 +107,7 @@ class ListCloudDbaInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCloudDbaInstancesRequest.
+        r"""Gets the limit of this ListCloudDbaInstancesRequest.
 
         每页记录数，默认为20，最大取值200。
 
@@ -118,7 +118,7 @@ class ListCloudDbaInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCloudDbaInstancesRequest.
+        r"""Sets the limit of this ListCloudDbaInstancesRequest.
 
         每页记录数，默认为20，最大取值200。
 
@@ -129,7 +129,7 @@ class ListCloudDbaInstancesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListCloudDbaInstancesRequest.
+        r"""Gets the x_language of this ListCloudDbaInstancesRequest.
 
         请求语言类型。
 
@@ -140,7 +140,7 @@ class ListCloudDbaInstancesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListCloudDbaInstancesRequest.
+        r"""Sets the x_language of this ListCloudDbaInstancesRequest.
 
         请求语言类型。
 

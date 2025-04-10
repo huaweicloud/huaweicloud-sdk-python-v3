@@ -28,7 +28,7 @@ class ListAccessKeysV5Response(SdkResponse):
     }
 
     def __init__(self, access_keys=None, page_info=None):
-        """ListAccessKeysV5Response
+        r"""ListAccessKeysV5Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAccessKeysV5Response(SdkResponse):
 
     @property
     def access_keys(self):
-        """Gets the access_keys of this ListAccessKeysV5Response.
+        r"""Gets the access_keys of this ListAccessKeysV5Response.
 
         永久访问密钥列表。
 
@@ -62,7 +62,7 @@ class ListAccessKeysV5Response(SdkResponse):
 
     @access_keys.setter
     def access_keys(self, access_keys):
-        """Sets the access_keys of this ListAccessKeysV5Response.
+        r"""Sets the access_keys of this ListAccessKeysV5Response.
 
         永久访问密钥列表。
 
@@ -73,7 +73,7 @@ class ListAccessKeysV5Response(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAccessKeysV5Response.
+        r"""Gets the page_info of this ListAccessKeysV5Response.
 
         :return: The page_info of this ListAccessKeysV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.PageInfo`
@@ -82,7 +82,7 @@ class ListAccessKeysV5Response(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAccessKeysV5Response.
+        r"""Sets the page_info of this ListAccessKeysV5Response.
 
         :param page_info: The page_info of this ListAccessKeysV5Response.
         :type page_info: :class:`huaweicloudsdkiam.v5.PageInfo`

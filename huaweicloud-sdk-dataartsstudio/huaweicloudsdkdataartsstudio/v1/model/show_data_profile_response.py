@@ -30,7 +30,7 @@ class ShowDataProfileResponse(SdkResponse):
     }
 
     def __init__(self, data=None, rowkey=None, status=None):
-        """ShowDataProfileResponse
+        r"""ShowDataProfileResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowDataProfileResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowDataProfileResponse.
+        r"""Gets the data of this ShowDataProfileResponse.
 
         :return: The data of this ShowDataProfileResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ProfileInfo`
@@ -67,7 +67,7 @@ class ShowDataProfileResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowDataProfileResponse.
+        r"""Sets the data of this ShowDataProfileResponse.
 
         :param data: The data of this ShowDataProfileResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ProfileInfo`
@@ -76,7 +76,7 @@ class ShowDataProfileResponse(SdkResponse):
 
     @property
     def rowkey(self):
-        """Gets the rowkey of this ShowDataProfileResponse.
+        r"""Gets the rowkey of this ShowDataProfileResponse.
 
         行键
 
@@ -87,7 +87,7 @@ class ShowDataProfileResponse(SdkResponse):
 
     @rowkey.setter
     def rowkey(self, rowkey):
-        """Sets the rowkey of this ShowDataProfileResponse.
+        r"""Sets the rowkey of this ShowDataProfileResponse.
 
         行键
 
@@ -98,7 +98,7 @@ class ShowDataProfileResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDataProfileResponse.
+        r"""Gets the status of this ShowDataProfileResponse.
 
         状态
 
@@ -109,7 +109,7 @@ class ShowDataProfileResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDataProfileResponse.
+        r"""Sets the status of this ShowDataProfileResponse.
 
         状态
 

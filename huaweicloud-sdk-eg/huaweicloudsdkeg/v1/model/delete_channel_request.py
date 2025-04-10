@@ -27,7 +27,7 @@ class DeleteChannelRequest:
     }
 
     def __init__(self, channel_id=None, enterprise_project_id=None):
-        """DeleteChannelRequest
+        r"""DeleteChannelRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteChannelRequest:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this DeleteChannelRequest.
+        r"""Gets the channel_id of this DeleteChannelRequest.
 
         指定查询的事件通道ID
 
@@ -60,7 +60,7 @@ class DeleteChannelRequest:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this DeleteChannelRequest.
+        r"""Sets the channel_id of this DeleteChannelRequest.
 
         指定查询的事件通道ID
 
@@ -71,7 +71,7 @@ class DeleteChannelRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeleteChannelRequest.
+        r"""Gets the enterprise_project_id of this DeleteChannelRequest.
 
         企业项目id
 
@@ -82,7 +82,7 @@ class DeleteChannelRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeleteChannelRequest.
+        r"""Sets the enterprise_project_id of this DeleteChannelRequest.
 
         企业项目id
 

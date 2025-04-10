@@ -29,7 +29,7 @@ class UpdateParamsRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """UpdateParamsRequest
+        r"""UpdateParamsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateParamsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateParamsRequest.
+        r"""Gets the job_id of this UpdateParamsRequest.
 
         任务ID
 
@@ -67,7 +67,7 @@ class UpdateParamsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateParamsRequest.
+        r"""Sets the job_id of this UpdateParamsRequest.
 
         任务ID
 
@@ -78,7 +78,7 @@ class UpdateParamsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateParamsRequest.
+        r"""Gets the x_language of this UpdateParamsRequest.
 
         请求语言类型
 
@@ -89,7 +89,7 @@ class UpdateParamsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateParamsRequest.
+        r"""Sets the x_language of this UpdateParamsRequest.
 
         请求语言类型
 
@@ -100,7 +100,7 @@ class UpdateParamsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateParamsRequest.
+        r"""Gets the body of this UpdateParamsRequest.
 
         :return: The body of this UpdateParamsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.ModifyTargetParamsReq`
@@ -109,7 +109,7 @@ class UpdateParamsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateParamsRequest.
+        r"""Sets the body of this UpdateParamsRequest.
 
         :param body: The body of this UpdateParamsRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.ModifyTargetParamsReq`

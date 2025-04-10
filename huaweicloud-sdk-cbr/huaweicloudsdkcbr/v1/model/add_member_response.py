@@ -28,7 +28,7 @@ class AddMemberResponse(SdkResponse):
     }
 
     def __init__(self, members=None, count=None):
-        """AddMemberResponse
+        r"""AddMemberResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddMemberResponse(SdkResponse):
 
     @property
     def members(self):
-        """Gets the members of this AddMemberResponse.
+        r"""Gets the members of this AddMemberResponse.
 
         添加备份共享成员响应信息
 
@@ -62,7 +62,7 @@ class AddMemberResponse(SdkResponse):
 
     @members.setter
     def members(self, members):
-        """Sets the members of this AddMemberResponse.
+        r"""Sets the members of this AddMemberResponse.
 
         添加备份共享成员响应信息
 
@@ -73,7 +73,7 @@ class AddMemberResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this AddMemberResponse.
+        r"""Gets the count of this AddMemberResponse.
 
         备份共享成员数量
 
@@ -84,7 +84,7 @@ class AddMemberResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this AddMemberResponse.
+        r"""Sets the count of this AddMemberResponse.
 
         备份共享成员数量
 

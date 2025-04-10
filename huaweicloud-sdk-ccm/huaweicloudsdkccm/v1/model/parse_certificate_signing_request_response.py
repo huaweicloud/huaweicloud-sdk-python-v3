@@ -34,7 +34,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
     }
 
     def __init__(self, key_algorithm=None, key_algorithm_length=None, signature_algorithm=None, public_key=None, distinguished_name=None):
-        """ParseCertificateSigningRequestResponse
+        r"""ParseCertificateSigningRequestResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
 
     @property
     def key_algorithm(self):
-        """Gets the key_algorithm of this ParseCertificateSigningRequestResponse.
+        r"""Gets the key_algorithm of this ParseCertificateSigningRequestResponse.
 
         密钥算法。
 
@@ -83,7 +83,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
 
     @key_algorithm.setter
     def key_algorithm(self, key_algorithm):
-        """Sets the key_algorithm of this ParseCertificateSigningRequestResponse.
+        r"""Sets the key_algorithm of this ParseCertificateSigningRequestResponse.
 
         密钥算法。
 
@@ -94,7 +94,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
 
     @property
     def key_algorithm_length(self):
-        """Gets the key_algorithm_length of this ParseCertificateSigningRequestResponse.
+        r"""Gets the key_algorithm_length of this ParseCertificateSigningRequestResponse.
 
         密钥算法长度，单位为bit。
 
@@ -105,7 +105,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
 
     @key_algorithm_length.setter
     def key_algorithm_length(self, key_algorithm_length):
-        """Sets the key_algorithm_length of this ParseCertificateSigningRequestResponse.
+        r"""Sets the key_algorithm_length of this ParseCertificateSigningRequestResponse.
 
         密钥算法长度，单位为bit。
 
@@ -116,7 +116,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this ParseCertificateSigningRequestResponse.
+        r"""Gets the signature_algorithm of this ParseCertificateSigningRequestResponse.
 
         签名算法，带具体的签名与哈希算法，如\"SHA256withRSA\"。
 
@@ -127,7 +127,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this ParseCertificateSigningRequestResponse.
+        r"""Sets the signature_algorithm of this ParseCertificateSigningRequestResponse.
 
         签名算法，带具体的签名与哈希算法，如\"SHA256withRSA\"。
 
@@ -138,7 +138,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
 
     @property
     def public_key(self):
-        """Gets the public_key of this ParseCertificateSigningRequestResponse.
+        r"""Gets the public_key of this ParseCertificateSigningRequestResponse.
 
         公钥内容。 > 其中，换行符已被“\\r\\n”替代；
 
@@ -149,7 +149,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this ParseCertificateSigningRequestResponse.
+        r"""Sets the public_key of this ParseCertificateSigningRequestResponse.
 
         公钥内容。 > 其中，换行符已被“\\r\\n”替代；
 
@@ -160,7 +160,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
 
     @property
     def distinguished_name(self):
-        """Gets the distinguished_name of this ParseCertificateSigningRequestResponse.
+        r"""Gets the distinguished_name of this ParseCertificateSigningRequestResponse.
 
         :return: The distinguished_name of this ParseCertificateSigningRequestResponse.
         :rtype: :class:`huaweicloudsdkccm.v1.DistinguishedName`
@@ -169,7 +169,7 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
 
     @distinguished_name.setter
     def distinguished_name(self, distinguished_name):
-        """Sets the distinguished_name of this ParseCertificateSigningRequestResponse.
+        r"""Sets the distinguished_name of this ParseCertificateSigningRequestResponse.
 
         :param distinguished_name: The distinguished_name of this ParseCertificateSigningRequestResponse.
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`

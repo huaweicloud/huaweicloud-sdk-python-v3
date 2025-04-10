@@ -35,7 +35,7 @@ class CreateAudioJobRequestBody:
     }
 
     def __init__(self, name=None, description=None, input=None, output=None, service_config=None, service_version=None):
-        """CreateAudioJobRequestBody
+        r"""CreateAudioJobRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CreateAudioJobRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateAudioJobRequestBody.
+        r"""Gets the name of this CreateAudioJobRequestBody.
 
         作业名称，只能由字母（a～zA～Z）、数字（0～9）、中划线（-）、下划线（_）组成，长度范围为[1，100]。
 
@@ -85,7 +85,7 @@ class CreateAudioJobRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAudioJobRequestBody.
+        r"""Sets the name of this CreateAudioJobRequestBody.
 
         作业名称，只能由字母（a～zA～Z）、数字（0～9）、中划线（-）、下划线（_）组成，长度范围为[1，100]。
 
@@ -96,7 +96,7 @@ class CreateAudioJobRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateAudioJobRequestBody.
+        r"""Gets the description of this CreateAudioJobRequestBody.
 
         作业描述信息，最大长度为500字符长度。
 
@@ -107,7 +107,7 @@ class CreateAudioJobRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAudioJobRequestBody.
+        r"""Sets the description of this CreateAudioJobRequestBody.
 
         作业描述信息，最大长度为500字符长度。
 
@@ -118,7 +118,7 @@ class CreateAudioJobRequestBody:
 
     @property
     def input(self):
-        """Gets the input of this CreateAudioJobRequestBody.
+        r"""Gets the input of this CreateAudioJobRequestBody.
 
         :return: The input of this CreateAudioJobRequestBody.
         :rtype: :class:`huaweicloudsdkvcm.v2.CreateAudioJobRequestBodyInput`
@@ -127,7 +127,7 @@ class CreateAudioJobRequestBody:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CreateAudioJobRequestBody.
+        r"""Sets the input of this CreateAudioJobRequestBody.
 
         :param input: The input of this CreateAudioJobRequestBody.
         :type input: :class:`huaweicloudsdkvcm.v2.CreateAudioJobRequestBodyInput`
@@ -136,7 +136,7 @@ class CreateAudioJobRequestBody:
 
     @property
     def output(self):
-        """Gets the output of this CreateAudioJobRequestBody.
+        r"""Gets the output of this CreateAudioJobRequestBody.
 
         :return: The output of this CreateAudioJobRequestBody.
         :rtype: :class:`huaweicloudsdkvcm.v2.AudioOutput`
@@ -145,7 +145,7 @@ class CreateAudioJobRequestBody:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CreateAudioJobRequestBody.
+        r"""Sets the output of this CreateAudioJobRequestBody.
 
         :param output: The output of this CreateAudioJobRequestBody.
         :type output: :class:`huaweicloudsdkvcm.v2.AudioOutput`
@@ -154,7 +154,7 @@ class CreateAudioJobRequestBody:
 
     @property
     def service_config(self):
-        """Gets the service_config of this CreateAudioJobRequestBody.
+        r"""Gets the service_config of this CreateAudioJobRequestBody.
 
         :return: The service_config of this CreateAudioJobRequestBody.
         :rtype: :class:`huaweicloudsdkvcm.v2.AudioServiceConfig`
@@ -163,7 +163,7 @@ class CreateAudioJobRequestBody:
 
     @service_config.setter
     def service_config(self, service_config):
-        """Sets the service_config of this CreateAudioJobRequestBody.
+        r"""Sets the service_config of this CreateAudioJobRequestBody.
 
         :param service_config: The service_config of this CreateAudioJobRequestBody.
         :type service_config: :class:`huaweicloudsdkvcm.v2.AudioServiceConfig`
@@ -172,7 +172,7 @@ class CreateAudioJobRequestBody:
 
     @property
     def service_version(self):
-        """Gets the service_version of this CreateAudioJobRequestBody.
+        r"""Gets the service_version of this CreateAudioJobRequestBody.
 
         功能版本为“1.0”。
 
@@ -183,7 +183,7 @@ class CreateAudioJobRequestBody:
 
     @service_version.setter
     def service_version(self, service_version):
-        """Sets the service_version of this CreateAudioJobRequestBody.
+        r"""Sets the service_version of this CreateAudioJobRequestBody.
 
         功能版本为“1.0”。
 

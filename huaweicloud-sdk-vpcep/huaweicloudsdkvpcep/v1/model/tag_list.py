@@ -27,7 +27,7 @@ class TagList:
     }
 
     def __init__(self, key=None, value=None):
-        """TagList
+        r"""TagList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TagList:
 
     @property
     def key(self):
-        """Gets the key of this TagList.
+        r"""Gets the key of this TagList.
 
         键。 key不能为空，长度1~128个字符（中文也可以输入128个字符）。  可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @。 _sys_开头属于系统标签，租户不能输入。 key两头不能有空格字符。
 
@@ -61,7 +61,7 @@ class TagList:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagList.
+        r"""Sets the key of this TagList.
 
         键。 key不能为空，长度1~128个字符（中文也可以输入128个字符）。  可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @。 _sys_开头属于系统标签，租户不能输入。 key两头不能有空格字符。
 
@@ -72,7 +72,7 @@ class TagList:
 
     @property
     def value(self):
-        """Gets the value of this TagList.
+        r"""Gets the value of this TagList.
 
         值。 长度0~255个字符（中文也可以输入255个字符）。  可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : / = + - @。 资源标签值可以为空字符串。
 
@@ -83,7 +83,7 @@ class TagList:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagList.
+        r"""Sets the value of this TagList.
 
         值。 长度0~255个字符（中文也可以输入255个字符）。  可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : / = + - @。 资源标签值可以为空字符串。
 

@@ -28,7 +28,7 @@ class ListProtectionGroupsResponse(SdkResponse):
     }
 
     def __init__(self, server_groups=None, count=None):
-        """ListProtectionGroupsResponse
+        r"""ListProtectionGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProtectionGroupsResponse(SdkResponse):
 
     @property
     def server_groups(self):
-        """Gets the server_groups of this ListProtectionGroupsResponse.
+        r"""Gets the server_groups of this ListProtectionGroupsResponse.
 
         保护组的信息列表。
 
@@ -62,7 +62,7 @@ class ListProtectionGroupsResponse(SdkResponse):
 
     @server_groups.setter
     def server_groups(self, server_groups):
-        """Sets the server_groups of this ListProtectionGroupsResponse.
+        r"""Sets the server_groups of this ListProtectionGroupsResponse.
 
         保护组的信息列表。
 
@@ -73,7 +73,7 @@ class ListProtectionGroupsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListProtectionGroupsResponse.
+        r"""Gets the count of this ListProtectionGroupsResponse.
 
         此参数为满足过滤条件的列表中包含的保护组个数。
 
@@ -84,7 +84,7 @@ class ListProtectionGroupsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListProtectionGroupsResponse.
+        r"""Sets the count of this ListProtectionGroupsResponse.
 
         此参数为满足过滤条件的列表中包含的保护组个数。
 

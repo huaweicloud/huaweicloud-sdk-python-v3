@@ -29,7 +29,7 @@ class ListSlowLogStatisticsForLtsRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """ListSlowLogStatisticsForLtsRequest
+        r"""ListSlowLogStatisticsForLtsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListSlowLogStatisticsForLtsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSlowLogStatisticsForLtsRequest.
+        r"""Gets the instance_id of this ListSlowLogStatisticsForLtsRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class ListSlowLogStatisticsForLtsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSlowLogStatisticsForLtsRequest.
+        r"""Sets the instance_id of this ListSlowLogStatisticsForLtsRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class ListSlowLogStatisticsForLtsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListSlowLogStatisticsForLtsRequest.
+        r"""Gets the x_language of this ListSlowLogStatisticsForLtsRequest.
 
         语言。默认en-us。
 
@@ -89,7 +89,7 @@ class ListSlowLogStatisticsForLtsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListSlowLogStatisticsForLtsRequest.
+        r"""Sets the x_language of this ListSlowLogStatisticsForLtsRequest.
 
         语言。默认en-us。
 
@@ -100,7 +100,7 @@ class ListSlowLogStatisticsForLtsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListSlowLogStatisticsForLtsRequest.
+        r"""Gets the body of this ListSlowLogStatisticsForLtsRequest.
 
         :return: The body of this ListSlowLogStatisticsForLtsRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SlowLogStatisticsForLtsRequest`
@@ -109,7 +109,7 @@ class ListSlowLogStatisticsForLtsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSlowLogStatisticsForLtsRequest.
+        r"""Sets the body of this ListSlowLogStatisticsForLtsRequest.
 
         :param body: The body of this ListSlowLogStatisticsForLtsRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SlowLogStatisticsForLtsRequest`

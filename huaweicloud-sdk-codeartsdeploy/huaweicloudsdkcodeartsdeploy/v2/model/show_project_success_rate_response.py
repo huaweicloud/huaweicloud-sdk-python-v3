@@ -40,7 +40,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
     }
 
     def __init__(self, success_rate=None, project_id=None, project_name=None, start_date=None, end_date=None, task_count=None, record_count=None, success_record_count=None):
-        """ShowProjectSuccessRateResponse
+        r"""ShowProjectSuccessRateResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @property
     def success_rate(self):
-        """Gets the success_rate of this ShowProjectSuccessRateResponse.
+        r"""Gets the success_rate of this ShowProjectSuccessRateResponse.
 
         成功率
 
@@ -104,7 +104,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @success_rate.setter
     def success_rate(self, success_rate):
-        """Sets the success_rate of this ShowProjectSuccessRateResponse.
+        r"""Sets the success_rate of this ShowProjectSuccessRateResponse.
 
         成功率
 
@@ -115,7 +115,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowProjectSuccessRateResponse.
+        r"""Gets the project_id of this ShowProjectSuccessRateResponse.
 
         项目id
 
@@ -126,7 +126,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowProjectSuccessRateResponse.
+        r"""Sets the project_id of this ShowProjectSuccessRateResponse.
 
         项目id
 
@@ -137,7 +137,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @property
     def project_name(self):
-        """Gets the project_name of this ShowProjectSuccessRateResponse.
+        r"""Gets the project_name of this ShowProjectSuccessRateResponse.
 
         项目名称
 
@@ -148,7 +148,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ShowProjectSuccessRateResponse.
+        r"""Sets the project_name of this ShowProjectSuccessRateResponse.
 
         项目名称
 
@@ -159,7 +159,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @property
     def start_date(self):
-        """Gets the start_date of this ShowProjectSuccessRateResponse.
+        r"""Gets the start_date of this ShowProjectSuccessRateResponse.
 
         应用部署开始时间范围的左边界（包含），格式yyyy-MM-dd
 
@@ -170,7 +170,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ShowProjectSuccessRateResponse.
+        r"""Sets the start_date of this ShowProjectSuccessRateResponse.
 
         应用部署开始时间范围的左边界（包含），格式yyyy-MM-dd
 
@@ -181,7 +181,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @property
     def end_date(self):
-        """Gets the end_date of this ShowProjectSuccessRateResponse.
+        r"""Gets the end_date of this ShowProjectSuccessRateResponse.
 
         应用部署开始时间范围的右边界（包含），格式yyyy-MM-dd
 
@@ -192,7 +192,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ShowProjectSuccessRateResponse.
+        r"""Sets the end_date of this ShowProjectSuccessRateResponse.
 
         应用部署开始时间范围的右边界（包含），格式yyyy-MM-dd
 
@@ -203,7 +203,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @property
     def task_count(self):
-        """Gets the task_count of this ShowProjectSuccessRateResponse.
+        r"""Gets the task_count of this ShowProjectSuccessRateResponse.
 
         查询到的应用数
 
@@ -214,7 +214,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @task_count.setter
     def task_count(self, task_count):
-        """Sets the task_count of this ShowProjectSuccessRateResponse.
+        r"""Sets the task_count of this ShowProjectSuccessRateResponse.
 
         查询到的应用数
 
@@ -225,7 +225,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @property
     def record_count(self):
-        """Gets the record_count of this ShowProjectSuccessRateResponse.
+        r"""Gets the record_count of this ShowProjectSuccessRateResponse.
 
         查询到的应用部署记录数
 
@@ -236,7 +236,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @record_count.setter
     def record_count(self, record_count):
-        """Sets the record_count of this ShowProjectSuccessRateResponse.
+        r"""Sets the record_count of this ShowProjectSuccessRateResponse.
 
         查询到的应用部署记录数
 
@@ -247,7 +247,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @property
     def success_record_count(self):
-        """Gets the success_record_count of this ShowProjectSuccessRateResponse.
+        r"""Gets the success_record_count of this ShowProjectSuccessRateResponse.
 
         成功的应用部署记录数
 
@@ -258,7 +258,7 @@ class ShowProjectSuccessRateResponse(SdkResponse):
 
     @success_record_count.setter
     def success_record_count(self, success_record_count):
-        """Sets the success_record_count of this ShowProjectSuccessRateResponse.
+        r"""Sets the success_record_count of this ShowProjectSuccessRateResponse.
 
         成功的应用部署记录数
 

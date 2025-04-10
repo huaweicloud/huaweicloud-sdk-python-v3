@@ -33,7 +33,7 @@ class BatchQueryStatReq:
     }
 
     def __init__(self, from_time=None, to_time=None, period=None, method=None, resource_ids=None):
-        """BatchQueryStatReq
+        r"""BatchQueryStatReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class BatchQueryStatReq:
 
     @property
     def from_time(self):
-        """Gets the from_time of this BatchQueryStatReq.
+        r"""Gets the from_time of this BatchQueryStatReq.
 
         查询监控数据起始时间，UNIX时间戳，单位毫秒，不填时默认为当前时间
 
@@ -81,7 +81,7 @@ class BatchQueryStatReq:
 
     @from_time.setter
     def from_time(self, from_time):
-        """Sets the from_time of this BatchQueryStatReq.
+        r"""Sets the from_time of this BatchQueryStatReq.
 
         查询监控数据起始时间，UNIX时间戳，单位毫秒，不填时默认为当前时间
 
@@ -92,7 +92,7 @@ class BatchQueryStatReq:
 
     @property
     def to_time(self):
-        """Gets the to_time of this BatchQueryStatReq.
+        r"""Gets the to_time of this BatchQueryStatReq.
 
         查询数据截止时间，UNIX时间戳，单位毫秒，不填时默认为当前时间
 
@@ -103,7 +103,7 @@ class BatchQueryStatReq:
 
     @to_time.setter
     def to_time(self, to_time):
-        """Sets the to_time of this BatchQueryStatReq.
+        r"""Sets the to_time of this BatchQueryStatReq.
 
         查询数据截止时间，UNIX时间戳，单位毫秒，不填时默认为当前时间
 
@@ -114,7 +114,7 @@ class BatchQueryStatReq:
 
     @property
     def period(self):
-        """Gets the period of this BatchQueryStatReq.
+        r"""Gets the period of this BatchQueryStatReq.
 
         :return: The period of this BatchQueryStatReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.MonitorPeriod`
@@ -123,7 +123,7 @@ class BatchQueryStatReq:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this BatchQueryStatReq.
+        r"""Sets the period of this BatchQueryStatReq.
 
         :param period: The period of this BatchQueryStatReq.
         :type period: :class:`huaweicloudsdkeihealth.v1.MonitorPeriod`
@@ -132,7 +132,7 @@ class BatchQueryStatReq:
 
     @property
     def method(self):
-        """Gets the method of this BatchQueryStatReq.
+        r"""Gets the method of this BatchQueryStatReq.
 
         :return: The method of this BatchQueryStatReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.MonitorMethod`
@@ -141,7 +141,7 @@ class BatchQueryStatReq:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this BatchQueryStatReq.
+        r"""Sets the method of this BatchQueryStatReq.
 
         :param method: The method of this BatchQueryStatReq.
         :type method: :class:`huaweicloudsdkeihealth.v1.MonitorMethod`
@@ -150,7 +150,7 @@ class BatchQueryStatReq:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this BatchQueryStatReq.
+        r"""Gets the resource_ids of this BatchQueryStatReq.
 
         查询的监控资源对象id集合
 
@@ -161,7 +161,7 @@ class BatchQueryStatReq:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this BatchQueryStatReq.
+        r"""Sets the resource_ids of this BatchQueryStatReq.
 
         查询的监控资源对象id集合
 

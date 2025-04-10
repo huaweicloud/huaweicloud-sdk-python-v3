@@ -27,7 +27,7 @@ class PolicyRule:
     }
 
     def __init__(self, source=None, destination=None):
-        """PolicyRule
+        r"""PolicyRule
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PolicyRule:
 
     @property
     def source(self):
-        """Gets the source of this PolicyRule.
+        r"""Gets the source of this PolicyRule.
 
         源地址网段
 
@@ -61,7 +61,7 @@ class PolicyRule:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this PolicyRule.
+        r"""Sets the source of this PolicyRule.
 
         源地址网段
 
@@ -72,7 +72,7 @@ class PolicyRule:
 
     @property
     def destination(self):
-        """Gets the destination of this PolicyRule.
+        r"""Gets the destination of this PolicyRule.
 
         目的地址网段
 
@@ -83,7 +83,7 @@ class PolicyRule:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this PolicyRule.
+        r"""Sets the destination of this PolicyRule.
 
         目的地址网段
 

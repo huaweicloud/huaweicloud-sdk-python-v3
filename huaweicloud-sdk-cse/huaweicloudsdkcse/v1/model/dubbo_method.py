@@ -33,7 +33,7 @@ class DubboMethod:
     }
 
     def __init__(self, service_method=None, headers_attach=None, http_methods=None, http_path=None, params=None):
-        """DubboMethod
+        r"""DubboMethod
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DubboMethod:
 
     @property
     def service_method(self):
-        """Gets the service_method of this DubboMethod.
+        r"""Gets the service_method of this DubboMethod.
 
         服务方法。
 
@@ -82,7 +82,7 @@ class DubboMethod:
 
     @service_method.setter
     def service_method(self, service_method):
-        """Sets the service_method of this DubboMethod.
+        r"""Sets the service_method of this DubboMethod.
 
         服务方法。
 
@@ -93,7 +93,7 @@ class DubboMethod:
 
     @property
     def headers_attach(self):
-        """Gets the headers_attach of this DubboMethod.
+        r"""Gets the headers_attach of this DubboMethod.
 
         附加请求头。
 
@@ -104,7 +104,7 @@ class DubboMethod:
 
     @headers_attach.setter
     def headers_attach(self, headers_attach):
-        """Sets the headers_attach of this DubboMethod.
+        r"""Sets the headers_attach of this DubboMethod.
 
         附加请求头。
 
@@ -115,7 +115,7 @@ class DubboMethod:
 
     @property
     def http_methods(self):
-        """Gets the http_methods of this DubboMethod.
+        r"""Gets the http_methods of this DubboMethod.
 
         http 方法。
 
@@ -126,7 +126,7 @@ class DubboMethod:
 
     @http_methods.setter
     def http_methods(self, http_methods):
-        """Sets the http_methods of this DubboMethod.
+        r"""Sets the http_methods of this DubboMethod.
 
         http 方法。
 
@@ -137,7 +137,7 @@ class DubboMethod:
 
     @property
     def http_path(self):
-        """Gets the http_path of this DubboMethod.
+        r"""Gets the http_path of this DubboMethod.
 
         http 路径。
 
@@ -148,7 +148,7 @@ class DubboMethod:
 
     @http_path.setter
     def http_path(self, http_path):
-        """Sets the http_path of this DubboMethod.
+        r"""Sets the http_path of this DubboMethod.
 
         http 路径。
 
@@ -159,7 +159,7 @@ class DubboMethod:
 
     @property
     def params(self):
-        """Gets the params of this DubboMethod.
+        r"""Gets the params of this DubboMethod.
 
         dubbo 方法参数。
 
@@ -170,7 +170,7 @@ class DubboMethod:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this DubboMethod.
+        r"""Sets the params of this DubboMethod.
 
         dubbo 方法参数。
 

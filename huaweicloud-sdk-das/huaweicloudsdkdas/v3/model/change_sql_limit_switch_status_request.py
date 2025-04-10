@@ -29,7 +29,7 @@ class ChangeSqlLimitSwitchStatusRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """ChangeSqlLimitSwitchStatusRequest
+        r"""ChangeSqlLimitSwitchStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ChangeSqlLimitSwitchStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeSqlLimitSwitchStatusRequest.
+        r"""Gets the instance_id of this ChangeSqlLimitSwitchStatusRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class ChangeSqlLimitSwitchStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeSqlLimitSwitchStatusRequest.
+        r"""Sets the instance_id of this ChangeSqlLimitSwitchStatusRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class ChangeSqlLimitSwitchStatusRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ChangeSqlLimitSwitchStatusRequest.
+        r"""Gets the x_language of this ChangeSqlLimitSwitchStatusRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class ChangeSqlLimitSwitchStatusRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ChangeSqlLimitSwitchStatusRequest.
+        r"""Sets the x_language of this ChangeSqlLimitSwitchStatusRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class ChangeSqlLimitSwitchStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeSqlLimitSwitchStatusRequest.
+        r"""Gets the body of this ChangeSqlLimitSwitchStatusRequest.
 
         :return: The body of this ChangeSqlLimitSwitchStatusRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.ChangeSqlLimitSwitchStatusBody`
@@ -109,7 +109,7 @@ class ChangeSqlLimitSwitchStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeSqlLimitSwitchStatusRequest.
+        r"""Sets the body of this ChangeSqlLimitSwitchStatusRequest.
 
         :param body: The body of this ChangeSqlLimitSwitchStatusRequest.
         :type body: :class:`huaweicloudsdkdas.v3.ChangeSqlLimitSwitchStatusBody`

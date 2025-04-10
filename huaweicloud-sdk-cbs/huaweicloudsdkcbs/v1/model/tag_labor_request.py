@@ -27,7 +27,7 @@ class TagLaborRequest:
     }
 
     def __init__(self, qabot_id=None, request_id=None):
-        """TagLaborRequest
+        r"""TagLaborRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TagLaborRequest:
 
     @property
     def qabot_id(self):
-        """Gets the qabot_id of this TagLaborRequest.
+        r"""Gets the qabot_id of this TagLaborRequest.
 
         qabot编号，UUID格式。
 
@@ -59,7 +59,7 @@ class TagLaborRequest:
 
     @qabot_id.setter
     def qabot_id(self, qabot_id):
-        """Sets the qabot_id of this TagLaborRequest.
+        r"""Sets the qabot_id of this TagLaborRequest.
 
         qabot编号，UUID格式。
 
@@ -70,7 +70,7 @@ class TagLaborRequest:
 
     @property
     def request_id(self):
-        """Gets the request_id of this TagLaborRequest.
+        r"""Gets the request_id of this TagLaborRequest.
 
         请求ID，由问答机器人会话生成。
 
@@ -81,7 +81,7 @@ class TagLaborRequest:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this TagLaborRequest.
+        r"""Sets the request_id of this TagLaborRequest.
 
         请求ID，由问答机器人会话生成。
 

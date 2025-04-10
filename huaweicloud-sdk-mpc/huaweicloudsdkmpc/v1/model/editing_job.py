@@ -49,7 +49,7 @@ class EditingJob:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, error_code=None, description=None, user_data=None, job_id=None, edit_type=None, output=None, edit_task_req=None, output_file_info=None):
-        """EditingJob
+        r"""EditingJob
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class EditingJob:
 
     @property
     def task_id(self):
-        """Gets the task_id of this EditingJob.
+        r"""Gets the task_id of this EditingJob.
 
         任务ID 
 
@@ -138,7 +138,7 @@ class EditingJob:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this EditingJob.
+        r"""Sets the task_id of this EditingJob.
 
         任务ID 
 
@@ -149,7 +149,7 @@ class EditingJob:
 
     @property
     def status(self):
-        """Gets the status of this EditingJob.
+        r"""Gets the status of this EditingJob.
 
         任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
 
@@ -160,7 +160,7 @@ class EditingJob:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EditingJob.
+        r"""Sets the status of this EditingJob.
 
         任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
 
@@ -171,7 +171,7 @@ class EditingJob:
 
     @property
     def create_time(self):
-        """Gets the create_time of this EditingJob.
+        r"""Gets the create_time of this EditingJob.
 
         任务创建时间 
 
@@ -182,7 +182,7 @@ class EditingJob:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this EditingJob.
+        r"""Sets the create_time of this EditingJob.
 
         任务创建时间 
 
@@ -193,7 +193,7 @@ class EditingJob:
 
     @property
     def start_time(self):
-        """Gets the start_time of this EditingJob.
+        r"""Gets the start_time of this EditingJob.
 
         任务启动时间 
 
@@ -204,7 +204,7 @@ class EditingJob:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this EditingJob.
+        r"""Sets the start_time of this EditingJob.
 
         任务启动时间 
 
@@ -215,7 +215,7 @@ class EditingJob:
 
     @property
     def end_time(self):
-        """Gets the end_time of this EditingJob.
+        r"""Gets the end_time of this EditingJob.
 
         任务结束时间 
 
@@ -226,7 +226,7 @@ class EditingJob:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this EditingJob.
+        r"""Sets the end_time of this EditingJob.
 
         任务结束时间 
 
@@ -237,7 +237,7 @@ class EditingJob:
 
     @property
     def error_code(self):
-        """Gets the error_code of this EditingJob.
+        r"""Gets the error_code of this EditingJob.
 
         任务的返回码。 
 
@@ -248,7 +248,7 @@ class EditingJob:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this EditingJob.
+        r"""Sets the error_code of this EditingJob.
 
         任务的返回码。 
 
@@ -259,7 +259,7 @@ class EditingJob:
 
     @property
     def description(self):
-        """Gets the description of this EditingJob.
+        r"""Gets the description of this EditingJob.
 
         错误描述 
 
@@ -270,7 +270,7 @@ class EditingJob:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EditingJob.
+        r"""Sets the description of this EditingJob.
 
         错误描述 
 
@@ -281,7 +281,7 @@ class EditingJob:
 
     @property
     def user_data(self):
-        """Gets the user_data of this EditingJob.
+        r"""Gets the user_data of this EditingJob.
 
         用户数据。 
 
@@ -292,7 +292,7 @@ class EditingJob:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this EditingJob.
+        r"""Sets the user_data of this EditingJob.
 
         用户数据。 
 
@@ -303,7 +303,7 @@ class EditingJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this EditingJob.
+        r"""Gets the job_id of this EditingJob.
 
         任务ID 
 
@@ -314,7 +314,7 @@ class EditingJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this EditingJob.
+        r"""Sets the job_id of this EditingJob.
 
         任务ID 
 
@@ -325,7 +325,7 @@ class EditingJob:
 
     @property
     def edit_type(self):
-        """Gets the edit_type of this EditingJob.
+        r"""Gets the edit_type of this EditingJob.
 
         剪辑任务类型。取值如下：\"CLIP\",\"CONCAT\",\"CONCATS\",\"MIX\"。
 
@@ -336,7 +336,7 @@ class EditingJob:
 
     @edit_type.setter
     def edit_type(self, edit_type):
-        """Sets the edit_type of this EditingJob.
+        r"""Sets the edit_type of this EditingJob.
 
         剪辑任务类型。取值如下：\"CLIP\",\"CONCAT\",\"CONCATS\",\"MIX\"。
 
@@ -347,7 +347,7 @@ class EditingJob:
 
     @property
     def output(self):
-        """Gets the output of this EditingJob.
+        r"""Gets the output of this EditingJob.
 
         :return: The output of this EditingJob.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -356,7 +356,7 @@ class EditingJob:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this EditingJob.
+        r"""Sets the output of this EditingJob.
 
         :param output: The output of this EditingJob.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -365,7 +365,7 @@ class EditingJob:
 
     @property
     def edit_task_req(self):
-        """Gets the edit_task_req of this EditingJob.
+        r"""Gets the edit_task_req of this EditingJob.
 
         :return: The edit_task_req of this EditingJob.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateEditingJobReq`
@@ -374,7 +374,7 @@ class EditingJob:
 
     @edit_task_req.setter
     def edit_task_req(self, edit_task_req):
-        """Sets the edit_task_req of this EditingJob.
+        r"""Sets the edit_task_req of this EditingJob.
 
         :param edit_task_req: The edit_task_req of this EditingJob.
         :type edit_task_req: :class:`huaweicloudsdkmpc.v1.CreateEditingJobReq`
@@ -383,7 +383,7 @@ class EditingJob:
 
     @property
     def output_file_info(self):
-        """Gets the output_file_info of this EditingJob.
+        r"""Gets the output_file_info of this EditingJob.
 
         剪辑输出meta信息
 
@@ -394,7 +394,7 @@ class EditingJob:
 
     @output_file_info.setter
     def output_file_info(self, output_file_info):
-        """Sets the output_file_info of this EditingJob.
+        r"""Sets the output_file_info of this EditingJob.
 
         剪辑输出meta信息
 

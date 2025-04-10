@@ -27,7 +27,7 @@ class CreateMessageDiagnosisTaskReq:
     }
 
     def __init__(self, group_name=None, topic_name=None):
-        """CreateMessageDiagnosisTaskReq
+        r"""CreateMessageDiagnosisTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateMessageDiagnosisTaskReq:
 
     @property
     def group_name(self):
-        """Gets the group_name of this CreateMessageDiagnosisTaskReq.
+        r"""Gets the group_name of this CreateMessageDiagnosisTaskReq.
 
         消费组名称
 
@@ -59,7 +59,7 @@ class CreateMessageDiagnosisTaskReq:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this CreateMessageDiagnosisTaskReq.
+        r"""Sets the group_name of this CreateMessageDiagnosisTaskReq.
 
         消费组名称
 
@@ -70,7 +70,7 @@ class CreateMessageDiagnosisTaskReq:
 
     @property
     def topic_name(self):
-        """Gets the topic_name of this CreateMessageDiagnosisTaskReq.
+        r"""Gets the topic_name of this CreateMessageDiagnosisTaskReq.
 
         topic名称
 
@@ -81,7 +81,7 @@ class CreateMessageDiagnosisTaskReq:
 
     @topic_name.setter
     def topic_name(self, topic_name):
-        """Sets the topic_name of this CreateMessageDiagnosisTaskReq.
+        r"""Sets the topic_name of this CreateMessageDiagnosisTaskReq.
 
         topic名称
 

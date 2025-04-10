@@ -26,7 +26,7 @@ class SwitchAuditDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """SwitchAuditDatabaseResponse
+        r"""SwitchAuditDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchAuditDatabaseResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this SwitchAuditDatabaseResponse.
+        r"""Gets the status of this SwitchAuditDatabaseResponse.
 
         响应状态
 
@@ -55,7 +55,7 @@ class SwitchAuditDatabaseResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SwitchAuditDatabaseResponse.
+        r"""Sets the status of this SwitchAuditDatabaseResponse.
 
         响应状态
 

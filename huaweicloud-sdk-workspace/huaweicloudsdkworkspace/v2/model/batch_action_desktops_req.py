@@ -33,7 +33,7 @@ class BatchActionDesktopsReq:
     }
 
     def __init__(self, desktop_ids=None, op_type=None, type=None, host_id=None, project_id=None):
-        """BatchActionDesktopsReq
+        r"""BatchActionDesktopsReq
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class BatchActionDesktopsReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this BatchActionDesktopsReq.
+        r"""Gets the desktop_ids of this BatchActionDesktopsReq.
 
         操作的桌面ID列表。
 
@@ -80,7 +80,7 @@ class BatchActionDesktopsReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this BatchActionDesktopsReq.
+        r"""Sets the desktop_ids of this BatchActionDesktopsReq.
 
         操作的桌面ID列表。
 
@@ -91,7 +91,7 @@ class BatchActionDesktopsReq:
 
     @property
     def op_type(self):
-        """Gets the op_type of this BatchActionDesktopsReq.
+        r"""Gets the op_type of this BatchActionDesktopsReq.
 
         操作类型。 -os-start 启动。 -reboot 重启。 -os-stop 关机。 -os-hibernate 休眠。
 
@@ -102,7 +102,7 @@ class BatchActionDesktopsReq:
 
     @op_type.setter
     def op_type(self, op_type):
-        """Sets the op_type of this BatchActionDesktopsReq.
+        r"""Sets the op_type of this BatchActionDesktopsReq.
 
         操作类型。 -os-start 启动。 -reboot 重启。 -os-stop 关机。 -os-hibernate 休眠。
 
@@ -113,7 +113,7 @@ class BatchActionDesktopsReq:
 
     @property
     def type(self):
-        """Gets the type of this BatchActionDesktopsReq.
+        r"""Gets the type of this BatchActionDesktopsReq.
 
         SOFT：普通操作；HARD：强制操作。例如type为HARD，op_type为os-stop代表强制关机。
 
@@ -124,7 +124,7 @@ class BatchActionDesktopsReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BatchActionDesktopsReq.
+        r"""Sets the type of this BatchActionDesktopsReq.
 
         SOFT：普通操作；HARD：强制操作。例如type为HARD，op_type为os-stop代表强制关机。
 
@@ -135,7 +135,7 @@ class BatchActionDesktopsReq:
 
     @property
     def host_id(self):
-        """Gets the host_id of this BatchActionDesktopsReq.
+        r"""Gets the host_id of this BatchActionDesktopsReq.
 
         专属主机id，op_type值为os-start时本参数才生效，仅支持单个桌面操作，实现将关机的桌面先迁移到指定专属主机再开机，迁移过程耗时较长，需要等待一段时间。
 
@@ -146,7 +146,7 @@ class BatchActionDesktopsReq:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this BatchActionDesktopsReq.
+        r"""Sets the host_id of this BatchActionDesktopsReq.
 
         专属主机id，op_type值为os-start时本参数才生效，仅支持单个桌面操作，实现将关机的桌面先迁移到指定专属主机再开机，迁移过程耗时较长，需要等待一段时间。
 
@@ -157,7 +157,7 @@ class BatchActionDesktopsReq:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchActionDesktopsReq.
+        r"""Gets the project_id of this BatchActionDesktopsReq.
 
         项目ID。
 
@@ -168,7 +168,7 @@ class BatchActionDesktopsReq:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchActionDesktopsReq.
+        r"""Sets the project_id of this BatchActionDesktopsReq.
 
         项目ID。
 

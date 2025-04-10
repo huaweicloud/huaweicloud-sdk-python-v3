@@ -25,7 +25,7 @@ class MultimediaBandwidthControlOptions:
     }
 
     def __init__(self, multimedia_bandwidth_control_value=None):
-        """MultimediaBandwidthControlOptions
+        r"""MultimediaBandwidthControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MultimediaBandwidthControlOptions:
 
     @property
     def multimedia_bandwidth_control_value(self):
-        """Gets the multimedia_bandwidth_control_value of this MultimediaBandwidthControlOptions.
+        r"""Gets the multimedia_bandwidth_control_value of this MultimediaBandwidthControlOptions.
 
         多媒体带宽控制量（Kbps）。取值范围为[5000-20000]。默认：15000。
 
@@ -54,7 +54,7 @@ class MultimediaBandwidthControlOptions:
 
     @multimedia_bandwidth_control_value.setter
     def multimedia_bandwidth_control_value(self, multimedia_bandwidth_control_value):
-        """Sets the multimedia_bandwidth_control_value of this MultimediaBandwidthControlOptions.
+        r"""Sets the multimedia_bandwidth_control_value of this MultimediaBandwidthControlOptions.
 
         多媒体带宽控制量（Kbps）。取值范围为[5000-20000]。默认：15000。
 

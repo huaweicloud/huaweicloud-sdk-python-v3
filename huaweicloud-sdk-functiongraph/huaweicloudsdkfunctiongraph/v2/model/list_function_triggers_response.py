@@ -26,7 +26,7 @@ class ListFunctionTriggersResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListFunctionTriggersResponse
+        r"""ListFunctionTriggersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListFunctionTriggersResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListFunctionTriggersResponse.
+        r"""Gets the body of this ListFunctionTriggersResponse.
 
         :return: The body of this ListFunctionTriggersResponse.
         :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionTriggerResult`]
@@ -53,7 +53,7 @@ class ListFunctionTriggersResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListFunctionTriggersResponse.
+        r"""Sets the body of this ListFunctionTriggersResponse.
 
         :param body: The body of this ListFunctionTriggersResponse.
         :type body: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionTriggerResult`]

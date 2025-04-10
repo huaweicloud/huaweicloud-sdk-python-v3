@@ -25,7 +25,7 @@ class ShowQueueRequest:
     }
 
     def __init__(self, queue_name=None):
-        """ShowQueueRequest
+        r"""ShowQueueRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowQueueRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ShowQueueRequest.
+        r"""Gets the queue_name of this ShowQueueRequest.
 
         指定查询的队列名称。
 
@@ -53,7 +53,7 @@ class ShowQueueRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ShowQueueRequest.
+        r"""Sets the queue_name of this ShowQueueRequest.
 
         指定查询的队列名称。
 

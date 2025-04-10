@@ -31,7 +31,7 @@ class ListDomainsRequest:
     }
 
     def __init__(self, domain_id=None, auth_status=None, offset=None, limit=None):
-        """ListDomainsRequest
+        r"""ListDomainsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListDomainsRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListDomainsRequest.
+        r"""Gets the domain_id of this ListDomainsRequest.
 
         网站域名ID
 
@@ -75,7 +75,7 @@ class ListDomainsRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListDomainsRequest.
+        r"""Sets the domain_id of this ListDomainsRequest.
 
         网站域名ID
 
@@ -86,7 +86,7 @@ class ListDomainsRequest:
 
     @property
     def auth_status(self):
-        """Gets the auth_status of this ListDomainsRequest.
+        r"""Gets the auth_status of this ListDomainsRequest.
 
         网站域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
 
@@ -97,7 +97,7 @@ class ListDomainsRequest:
 
     @auth_status.setter
     def auth_status(self, auth_status):
-        """Sets the auth_status of this ListDomainsRequest.
+        r"""Sets the auth_status of this ListDomainsRequest.
 
         网站域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
 
@@ -108,7 +108,7 @@ class ListDomainsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDomainsRequest.
+        r"""Gets the offset of this ListDomainsRequest.
 
         分页查询，偏移量，表示从此偏移量开始查询
 
@@ -119,7 +119,7 @@ class ListDomainsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDomainsRequest.
+        r"""Sets the offset of this ListDomainsRequest.
 
         分页查询，偏移量，表示从此偏移量开始查询
 
@@ -130,7 +130,7 @@ class ListDomainsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDomainsRequest.
+        r"""Gets the limit of this ListDomainsRequest.
 
         分页查询，每页显示的条目数量
 
@@ -141,7 +141,7 @@ class ListDomainsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDomainsRequest.
+        r"""Sets the limit of this ListDomainsRequest.
 
         分页查询，每页显示的条目数量
 

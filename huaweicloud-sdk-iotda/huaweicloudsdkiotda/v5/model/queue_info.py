@@ -25,7 +25,7 @@ class QueueInfo:
     }
 
     def __init__(self, queue_name=None):
-        """QueueInfo
+        r"""QueueInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class QueueInfo:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this QueueInfo.
+        r"""Gets the queue_name of this QueueInfo.
 
         **参数说明**：队列名称，同一租户不允许重复。 **取值范围**：长度不低于8不超过128，只允许字母、数字、下划线（_）、连接符（-）、间隔号（.）、冒号（:）的组合。
 
@@ -53,7 +53,7 @@ class QueueInfo:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this QueueInfo.
+        r"""Sets the queue_name of this QueueInfo.
 
         **参数说明**：队列名称，同一租户不允许重复。 **取值范围**：长度不低于8不超过128，只允许字母、数字、下划线（_）、连接符（-）、间隔号（.）、冒号（:）的组合。
 

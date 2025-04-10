@@ -33,7 +33,7 @@ class StartWorkflowExecutionRequest:
     }
 
     def __init__(self, workflow_id=None, x_create_time=None, x_workflow_run_id=None, x_workflow_run_merge_fn_parameters=None, body=None):
-        """StartWorkflowExecutionRequest
+        r"""StartWorkflowExecutionRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class StartWorkflowExecutionRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this StartWorkflowExecutionRequest.
+        r"""Gets the workflow_id of this StartWorkflowExecutionRequest.
 
         函数流定义ID
 
@@ -81,7 +81,7 @@ class StartWorkflowExecutionRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this StartWorkflowExecutionRequest.
+        r"""Sets the workflow_id of this StartWorkflowExecutionRequest.
 
         函数流定义ID
 
@@ -92,7 +92,7 @@ class StartWorkflowExecutionRequest:
 
     @property
     def x_create_time(self):
-        """Gets the x_create_time of this StartWorkflowExecutionRequest.
+        r"""Gets the x_create_time of this StartWorkflowExecutionRequest.
 
         workflowRun task create time
 
@@ -103,7 +103,7 @@ class StartWorkflowExecutionRequest:
 
     @x_create_time.setter
     def x_create_time(self, x_create_time):
-        """Sets the x_create_time of this StartWorkflowExecutionRequest.
+        r"""Sets the x_create_time of this StartWorkflowExecutionRequest.
 
         workflowRun task create time
 
@@ -114,7 +114,7 @@ class StartWorkflowExecutionRequest:
 
     @property
     def x_workflow_run_id(self):
-        """Gets the x_workflow_run_id of this StartWorkflowExecutionRequest.
+        r"""Gets the x_workflow_run_id of this StartWorkflowExecutionRequest.
 
         workflowRun id
 
@@ -125,7 +125,7 @@ class StartWorkflowExecutionRequest:
 
     @x_workflow_run_id.setter
     def x_workflow_run_id(self, x_workflow_run_id):
-        """Sets the x_workflow_run_id of this StartWorkflowExecutionRequest.
+        r"""Sets the x_workflow_run_id of this StartWorkflowExecutionRequest.
 
         workflowRun id
 
@@ -136,7 +136,7 @@ class StartWorkflowExecutionRequest:
 
     @property
     def x_workflow_run_merge_fn_parameters(self):
-        """Gets the x_workflow_run_merge_fn_parameters of this StartWorkflowExecutionRequest.
+        r"""Gets the x_workflow_run_merge_fn_parameters of this StartWorkflowExecutionRequest.
 
         Combines the output of the previous node with the input of the next node into an input.
 
@@ -147,7 +147,7 @@ class StartWorkflowExecutionRequest:
 
     @x_workflow_run_merge_fn_parameters.setter
     def x_workflow_run_merge_fn_parameters(self, x_workflow_run_merge_fn_parameters):
-        """Sets the x_workflow_run_merge_fn_parameters of this StartWorkflowExecutionRequest.
+        r"""Sets the x_workflow_run_merge_fn_parameters of this StartWorkflowExecutionRequest.
 
         Combines the output of the previous node with the input of the next node into an input.
 
@@ -158,7 +158,7 @@ class StartWorkflowExecutionRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartWorkflowExecutionRequest.
+        r"""Gets the body of this StartWorkflowExecutionRequest.
 
         :return: The body of this StartWorkflowExecutionRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecuteBody`
@@ -167,7 +167,7 @@ class StartWorkflowExecutionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartWorkflowExecutionRequest.
+        r"""Sets the body of this StartWorkflowExecutionRequest.
 
         :param body: The body of this StartWorkflowExecutionRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecuteBody`

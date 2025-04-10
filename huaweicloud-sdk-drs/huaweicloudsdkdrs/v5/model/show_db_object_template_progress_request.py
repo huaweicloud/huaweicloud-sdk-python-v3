@@ -33,7 +33,7 @@ class ShowDbObjectTemplateProgressRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, offset=None, limit=None, type=None):
-        """ShowDbObjectTemplateProgressRequest
+        r"""ShowDbObjectTemplateProgressRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ShowDbObjectTemplateProgressRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowDbObjectTemplateProgressRequest.
+        r"""Gets the job_id of this ShowDbObjectTemplateProgressRequest.
 
         任务ID。
 
@@ -81,7 +81,7 @@ class ShowDbObjectTemplateProgressRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowDbObjectTemplateProgressRequest.
+        r"""Sets the job_id of this ShowDbObjectTemplateProgressRequest.
 
         任务ID。
 
@@ -92,7 +92,7 @@ class ShowDbObjectTemplateProgressRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowDbObjectTemplateProgressRequest.
+        r"""Gets the x_language of this ShowDbObjectTemplateProgressRequest.
 
         请求语言类型。
 
@@ -103,7 +103,7 @@ class ShowDbObjectTemplateProgressRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowDbObjectTemplateProgressRequest.
+        r"""Sets the x_language of this ShowDbObjectTemplateProgressRequest.
 
         请求语言类型。
 
@@ -114,7 +114,7 @@ class ShowDbObjectTemplateProgressRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowDbObjectTemplateProgressRequest.
+        r"""Gets the offset of this ShowDbObjectTemplateProgressRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -125,7 +125,7 @@ class ShowDbObjectTemplateProgressRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowDbObjectTemplateProgressRequest.
+        r"""Sets the offset of this ShowDbObjectTemplateProgressRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -136,7 +136,7 @@ class ShowDbObjectTemplateProgressRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowDbObjectTemplateProgressRequest.
+        r"""Gets the limit of this ShowDbObjectTemplateProgressRequest.
 
         查询返回记录的数量限制。
 
@@ -147,7 +147,7 @@ class ShowDbObjectTemplateProgressRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowDbObjectTemplateProgressRequest.
+        r"""Sets the limit of this ShowDbObjectTemplateProgressRequest.
 
         查询返回记录的数量限制。
 
@@ -158,7 +158,7 @@ class ShowDbObjectTemplateProgressRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowDbObjectTemplateProgressRequest.
+        r"""Gets the type of this ShowDbObjectTemplateProgressRequest.
 
         默认为空。 - column：当进行列加工导入时，查询列加工导入进度。
 
@@ -169,7 +169,7 @@ class ShowDbObjectTemplateProgressRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDbObjectTemplateProgressRequest.
+        r"""Sets the type of this ShowDbObjectTemplateProgressRequest.
 
         默认为空。 - column：当进行列加工导入时，查询列加工导入进度。
 

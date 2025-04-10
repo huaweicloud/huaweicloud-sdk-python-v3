@@ -33,7 +33,7 @@ class EnvironmentPermissionDetail:
     }
 
     def __init__(self, can_delete=None, can_deploy=None, can_edit=None, can_manage=None, can_view=None):
-        """EnvironmentPermissionDetail
+        r"""EnvironmentPermissionDetail
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class EnvironmentPermissionDetail:
 
     @property
     def can_delete(self):
-        """Gets the can_delete of this EnvironmentPermissionDetail.
+        r"""Gets the can_delete of this EnvironmentPermissionDetail.
 
         是否有删除环境权限
 
@@ -82,7 +82,7 @@ class EnvironmentPermissionDetail:
 
     @can_delete.setter
     def can_delete(self, can_delete):
-        """Sets the can_delete of this EnvironmentPermissionDetail.
+        r"""Sets the can_delete of this EnvironmentPermissionDetail.
 
         是否有删除环境权限
 
@@ -93,7 +93,7 @@ class EnvironmentPermissionDetail:
 
     @property
     def can_deploy(self):
-        """Gets the can_deploy of this EnvironmentPermissionDetail.
+        r"""Gets the can_deploy of this EnvironmentPermissionDetail.
 
         是否有部署权限
 
@@ -104,7 +104,7 @@ class EnvironmentPermissionDetail:
 
     @can_deploy.setter
     def can_deploy(self, can_deploy):
-        """Sets the can_deploy of this EnvironmentPermissionDetail.
+        r"""Sets the can_deploy of this EnvironmentPermissionDetail.
 
         是否有部署权限
 
@@ -115,7 +115,7 @@ class EnvironmentPermissionDetail:
 
     @property
     def can_edit(self):
-        """Gets the can_edit of this EnvironmentPermissionDetail.
+        r"""Gets the can_edit of this EnvironmentPermissionDetail.
 
         是否有编辑环境权限
 
@@ -126,7 +126,7 @@ class EnvironmentPermissionDetail:
 
     @can_edit.setter
     def can_edit(self, can_edit):
-        """Sets the can_edit of this EnvironmentPermissionDetail.
+        r"""Sets the can_edit of this EnvironmentPermissionDetail.
 
         是否有编辑环境权限
 
@@ -137,7 +137,7 @@ class EnvironmentPermissionDetail:
 
     @property
     def can_manage(self):
-        """Gets the can_manage of this EnvironmentPermissionDetail.
+        r"""Gets the can_manage of this EnvironmentPermissionDetail.
 
         是否有编辑环境权限矩阵的权限
 
@@ -148,7 +148,7 @@ class EnvironmentPermissionDetail:
 
     @can_manage.setter
     def can_manage(self, can_manage):
-        """Sets the can_manage of this EnvironmentPermissionDetail.
+        r"""Sets the can_manage of this EnvironmentPermissionDetail.
 
         是否有编辑环境权限矩阵的权限
 
@@ -159,7 +159,7 @@ class EnvironmentPermissionDetail:
 
     @property
     def can_view(self):
-        """Gets the can_view of this EnvironmentPermissionDetail.
+        r"""Gets the can_view of this EnvironmentPermissionDetail.
 
         是否有环境的查看权限
 
@@ -170,7 +170,7 @@ class EnvironmentPermissionDetail:
 
     @can_view.setter
     def can_view(self, can_view):
-        """Sets the can_view of this EnvironmentPermissionDetail.
+        r"""Sets the can_view of this EnvironmentPermissionDetail.
 
         是否有环境的查看权限
 

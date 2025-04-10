@@ -35,7 +35,7 @@ class ListDatabasesRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name_pattern=None, limit=None, marker=None, reverse_page=None):
-        """ListDatabasesRequest
+        r"""ListDatabasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListDatabasesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDatabasesRequest.
+        r"""Gets the instance_id of this ListDatabasesRequest.
 
         实例Id
 
@@ -87,7 +87,7 @@ class ListDatabasesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDatabasesRequest.
+        r"""Sets the instance_id of this ListDatabasesRequest.
 
         实例Id
 
@@ -98,7 +98,7 @@ class ListDatabasesRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ListDatabasesRequest.
+        r"""Gets the catalog_name of this ListDatabasesRequest.
 
         catalog名字
 
@@ -109,7 +109,7 @@ class ListDatabasesRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ListDatabasesRequest.
+        r"""Sets the catalog_name of this ListDatabasesRequest.
 
         catalog名字
 
@@ -120,7 +120,7 @@ class ListDatabasesRequest:
 
     @property
     def database_name_pattern(self):
-        """Gets the database_name_pattern of this ListDatabasesRequest.
+        r"""Gets the database_name_pattern of this ListDatabasesRequest.
 
         数据库名字通配符
 
@@ -131,7 +131,7 @@ class ListDatabasesRequest:
 
     @database_name_pattern.setter
     def database_name_pattern(self, database_name_pattern):
-        """Sets the database_name_pattern of this ListDatabasesRequest.
+        r"""Sets the database_name_pattern of this ListDatabasesRequest.
 
         数据库名字通配符
 
@@ -142,7 +142,7 @@ class ListDatabasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDatabasesRequest.
+        r"""Gets the limit of this ListDatabasesRequest.
 
         返回的条目数量
 
@@ -153,7 +153,7 @@ class ListDatabasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDatabasesRequest.
+        r"""Sets the limit of this ListDatabasesRequest.
 
         返回的条目数量
 
@@ -164,7 +164,7 @@ class ListDatabasesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListDatabasesRequest.
+        r"""Gets the marker of this ListDatabasesRequest.
 
         查询的起始记录ID
 
@@ -175,7 +175,7 @@ class ListDatabasesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListDatabasesRequest.
+        r"""Sets the marker of this ListDatabasesRequest.
 
         查询的起始记录ID
 
@@ -186,7 +186,7 @@ class ListDatabasesRequest:
 
     @property
     def reverse_page(self):
-        """Gets the reverse_page of this ListDatabasesRequest.
+        r"""Gets the reverse_page of this ListDatabasesRequest.
 
         是否查询上一页
 
@@ -197,7 +197,7 @@ class ListDatabasesRequest:
 
     @reverse_page.setter
     def reverse_page(self, reverse_page):
-        """Sets the reverse_page of this ListDatabasesRequest.
+        r"""Sets the reverse_page of this ListDatabasesRequest.
 
         是否查询上一页
 

@@ -25,7 +25,7 @@ class BatchEnableAlarmRulesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchEnableAlarmRulesRequest
+        r"""BatchEnableAlarmRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchEnableAlarmRulesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchEnableAlarmRulesRequest.
+        r"""Gets the body of this BatchEnableAlarmRulesRequest.
 
         :return: The body of this BatchEnableAlarmRulesRequest.
         :rtype: :class:`huaweicloudsdkces.v2.BatchEnableAlarmsRequestBody`
@@ -52,7 +52,7 @@ class BatchEnableAlarmRulesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchEnableAlarmRulesRequest.
+        r"""Sets the body of this BatchEnableAlarmRulesRequest.
 
         :param body: The body of this BatchEnableAlarmRulesRequest.
         :type body: :class:`huaweicloudsdkces.v2.BatchEnableAlarmsRequestBody`

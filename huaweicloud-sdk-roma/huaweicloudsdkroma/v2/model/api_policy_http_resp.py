@@ -53,7 +53,7 @@ class ApiPolicyHttpResp:
     }
 
     def __init__(self, id=None, name=None, conditions=None, backend_params=None, effect_mode=None, authorizer_id=None, url_domain=None, req_protocol=None, req_method=None, req_uri=None, timeout=None, enable_client_ssl=None, retry_count=None, vpc_channel_info=None, vpc_channel_status=None):
-        """ApiPolicyHttpResp
+        r"""ApiPolicyHttpResp
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ApiPolicyHttpResp:
 
     @property
     def id(self):
-        """Gets the id of this ApiPolicyHttpResp.
+        r"""Gets the id of this ApiPolicyHttpResp.
 
         编号
 
@@ -146,7 +146,7 @@ class ApiPolicyHttpResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiPolicyHttpResp.
+        r"""Sets the id of this ApiPolicyHttpResp.
 
         编号
 
@@ -157,7 +157,7 @@ class ApiPolicyHttpResp:
 
     @property
     def name(self):
-        """Gets the name of this ApiPolicyHttpResp.
+        r"""Gets the name of this ApiPolicyHttpResp.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -168,7 +168,7 @@ class ApiPolicyHttpResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiPolicyHttpResp.
+        r"""Sets the name of this ApiPolicyHttpResp.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -179,7 +179,7 @@ class ApiPolicyHttpResp:
 
     @property
     def conditions(self):
-        """Gets the conditions of this ApiPolicyHttpResp.
+        r"""Gets the conditions of this ApiPolicyHttpResp.
 
         策略条件列表
 
@@ -190,7 +190,7 @@ class ApiPolicyHttpResp:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ApiPolicyHttpResp.
+        r"""Sets the conditions of this ApiPolicyHttpResp.
 
         策略条件列表
 
@@ -201,7 +201,7 @@ class ApiPolicyHttpResp:
 
     @property
     def backend_params(self):
-        """Gets the backend_params of this ApiPolicyHttpResp.
+        r"""Gets the backend_params of this ApiPolicyHttpResp.
 
         后端参数列表
 
@@ -212,7 +212,7 @@ class ApiPolicyHttpResp:
 
     @backend_params.setter
     def backend_params(self, backend_params):
-        """Sets the backend_params of this ApiPolicyHttpResp.
+        r"""Sets the backend_params of this ApiPolicyHttpResp.
 
         后端参数列表
 
@@ -223,7 +223,7 @@ class ApiPolicyHttpResp:
 
     @property
     def effect_mode(self):
-        """Gets the effect_mode of this ApiPolicyHttpResp.
+        r"""Gets the effect_mode of this ApiPolicyHttpResp.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -234,7 +234,7 @@ class ApiPolicyHttpResp:
 
     @effect_mode.setter
     def effect_mode(self, effect_mode):
-        """Sets the effect_mode of this ApiPolicyHttpResp.
+        r"""Sets the effect_mode of this ApiPolicyHttpResp.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -245,7 +245,7 @@ class ApiPolicyHttpResp:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ApiPolicyHttpResp.
+        r"""Gets the authorizer_id of this ApiPolicyHttpResp.
 
         后端自定义认证对象的ID
 
@@ -256,7 +256,7 @@ class ApiPolicyHttpResp:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ApiPolicyHttpResp.
+        r"""Sets the authorizer_id of this ApiPolicyHttpResp.
 
         后端自定义认证对象的ID
 
@@ -267,7 +267,7 @@ class ApiPolicyHttpResp:
 
     @property
     def url_domain(self):
-        """Gets the url_domain of this ApiPolicyHttpResp.
+        r"""Gets the url_domain of this ApiPolicyHttpResp.
 
         策略后端的Endpoint。 由域名（或IP地址）和端口号组成，总长度不超过255。格式为域名:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443， HTTP默认端口号为80。 支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、“_”、“-”组成，且只能以英文开头。 
 
@@ -278,7 +278,7 @@ class ApiPolicyHttpResp:
 
     @url_domain.setter
     def url_domain(self, url_domain):
-        """Sets the url_domain of this ApiPolicyHttpResp.
+        r"""Sets the url_domain of this ApiPolicyHttpResp.
 
         策略后端的Endpoint。 由域名（或IP地址）和端口号组成，总长度不超过255。格式为域名:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443， HTTP默认端口号为80。 支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、“_”、“-”组成，且只能以英文开头。 
 
@@ -289,7 +289,7 @@ class ApiPolicyHttpResp:
 
     @property
     def req_protocol(self):
-        """Gets the req_protocol of this ApiPolicyHttpResp.
+        r"""Gets the req_protocol of this ApiPolicyHttpResp.
 
         请求协议：HTTP、HTTPS
 
@@ -300,7 +300,7 @@ class ApiPolicyHttpResp:
 
     @req_protocol.setter
     def req_protocol(self, req_protocol):
-        """Sets the req_protocol of this ApiPolicyHttpResp.
+        r"""Sets the req_protocol of this ApiPolicyHttpResp.
 
         请求协议：HTTP、HTTPS
 
@@ -311,7 +311,7 @@ class ApiPolicyHttpResp:
 
     @property
     def req_method(self):
-        """Gets the req_method of this ApiPolicyHttpResp.
+        r"""Gets the req_method of this ApiPolicyHttpResp.
 
         请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY
 
@@ -322,7 +322,7 @@ class ApiPolicyHttpResp:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this ApiPolicyHttpResp.
+        r"""Sets the req_method of this ApiPolicyHttpResp.
 
         请求方式：GET、POST、PUT、DELETE、HEAD、PATCH、OPTIONS、ANY
 
@@ -333,7 +333,7 @@ class ApiPolicyHttpResp:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this ApiPolicyHttpResp.
+        r"""Gets the req_uri of this ApiPolicyHttpResp.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
 
@@ -344,7 +344,7 @@ class ApiPolicyHttpResp:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this ApiPolicyHttpResp.
+        r"""Sets the req_uri of this ApiPolicyHttpResp.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
 
@@ -355,7 +355,7 @@ class ApiPolicyHttpResp:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ApiPolicyHttpResp.
+        r"""Gets the timeout of this ApiPolicyHttpResp.
 
         服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
@@ -366,7 +366,7 @@ class ApiPolicyHttpResp:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ApiPolicyHttpResp.
+        r"""Sets the timeout of this ApiPolicyHttpResp.
 
         服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
@@ -377,7 +377,7 @@ class ApiPolicyHttpResp:
 
     @property
     def enable_client_ssl(self):
-        """Gets the enable_client_ssl of this ApiPolicyHttpResp.
+        r"""Gets the enable_client_ssl of this ApiPolicyHttpResp.
 
         是否开启双向认证
 
@@ -388,7 +388,7 @@ class ApiPolicyHttpResp:
 
     @enable_client_ssl.setter
     def enable_client_ssl(self, enable_client_ssl):
-        """Sets the enable_client_ssl of this ApiPolicyHttpResp.
+        r"""Sets the enable_client_ssl of this ApiPolicyHttpResp.
 
         是否开启双向认证
 
@@ -399,7 +399,7 @@ class ApiPolicyHttpResp:
 
     @property
     def retry_count(self):
-        """Gets the retry_count of this ApiPolicyHttpResp.
+        r"""Gets the retry_count of this ApiPolicyHttpResp.
 
         服务集成请求后端服务的重试次数，默认为-1，范围[-1,10]
 
@@ -410,7 +410,7 @@ class ApiPolicyHttpResp:
 
     @retry_count.setter
     def retry_count(self, retry_count):
-        """Sets the retry_count of this ApiPolicyHttpResp.
+        r"""Sets the retry_count of this ApiPolicyHttpResp.
 
         服务集成请求后端服务的重试次数，默认为-1，范围[-1,10]
 
@@ -421,7 +421,7 @@ class ApiPolicyHttpResp:
 
     @property
     def vpc_channel_info(self):
-        """Gets the vpc_channel_info of this ApiPolicyHttpResp.
+        r"""Gets the vpc_channel_info of this ApiPolicyHttpResp.
 
         :return: The vpc_channel_info of this ApiPolicyHttpResp.
         :rtype: :class:`huaweicloudsdkroma.v2.VpcInfo`
@@ -430,7 +430,7 @@ class ApiPolicyHttpResp:
 
     @vpc_channel_info.setter
     def vpc_channel_info(self, vpc_channel_info):
-        """Sets the vpc_channel_info of this ApiPolicyHttpResp.
+        r"""Sets the vpc_channel_info of this ApiPolicyHttpResp.
 
         :param vpc_channel_info: The vpc_channel_info of this ApiPolicyHttpResp.
         :type vpc_channel_info: :class:`huaweicloudsdkroma.v2.VpcInfo`
@@ -439,7 +439,7 @@ class ApiPolicyHttpResp:
 
     @property
     def vpc_channel_status(self):
-        """Gets the vpc_channel_status of this ApiPolicyHttpResp.
+        r"""Gets the vpc_channel_status of this ApiPolicyHttpResp.
 
         是否使用VPC通道： - 1： 使用VPC通道 - 2：不使用VPC通道
 
@@ -450,7 +450,7 @@ class ApiPolicyHttpResp:
 
     @vpc_channel_status.setter
     def vpc_channel_status(self, vpc_channel_status):
-        """Sets the vpc_channel_status of this ApiPolicyHttpResp.
+        r"""Sets the vpc_channel_status of this ApiPolicyHttpResp.
 
         是否使用VPC通道： - 1： 使用VPC通道 - 2：不使用VPC通道
 

@@ -27,7 +27,7 @@ class KeystoneUpdateUserByAdminRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """KeystoneUpdateUserByAdminRequest
+        r"""KeystoneUpdateUserByAdminRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class KeystoneUpdateUserByAdminRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this KeystoneUpdateUserByAdminRequest.
+        r"""Gets the user_id of this KeystoneUpdateUserByAdminRequest.
 
         待修改信息的IAM用户ID，获取方式请参见：[获取用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -60,7 +60,7 @@ class KeystoneUpdateUserByAdminRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this KeystoneUpdateUserByAdminRequest.
+        r"""Sets the user_id of this KeystoneUpdateUserByAdminRequest.
 
         待修改信息的IAM用户ID，获取方式请参见：[获取用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -71,7 +71,7 @@ class KeystoneUpdateUserByAdminRequest:
 
     @property
     def body(self):
-        """Gets the body of this KeystoneUpdateUserByAdminRequest.
+        r"""Gets the body of this KeystoneUpdateUserByAdminRequest.
 
         :return: The body of this KeystoneUpdateUserByAdminRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserByAdminRequestBody`
@@ -80,7 +80,7 @@ class KeystoneUpdateUserByAdminRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this KeystoneUpdateUserByAdminRequest.
+        r"""Sets the body of this KeystoneUpdateUserByAdminRequest.
 
         :param body: The body of this KeystoneUpdateUserByAdminRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserByAdminRequestBody`

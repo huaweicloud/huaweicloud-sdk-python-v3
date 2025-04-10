@@ -37,7 +37,7 @@ class ProductRule:
     }
 
     def __init__(self, identify_condition=None, publisher=None, product_name=None, process_name=None, support_os=None, version=None, product_version=None):
-        """ProductRule
+        r"""ProductRule
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ProductRule:
 
     @property
     def identify_condition(self):
-        """Gets the identify_condition of this ProductRule.
+        r"""Gets the identify_condition of this ProductRule.
 
         识别条件。
 
@@ -96,7 +96,7 @@ class ProductRule:
 
     @identify_condition.setter
     def identify_condition(self, identify_condition):
-        """Sets the identify_condition of this ProductRule.
+        r"""Sets the identify_condition of this ProductRule.
 
         识别条件。
 
@@ -107,7 +107,7 @@ class ProductRule:
 
     @property
     def publisher(self):
-        """Gets the publisher of this ProductRule.
+        r"""Gets the publisher of this ProductRule.
 
         发布者名称： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~1024个字符。 3. 为空或者*号表示任意匹配。
 
@@ -118,7 +118,7 @@ class ProductRule:
 
     @publisher.setter
     def publisher(self, publisher):
-        """Sets the publisher of this ProductRule.
+        r"""Sets the publisher of this ProductRule.
 
         发布者名称： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~1024个字符。 3. 为空或者*号表示任意匹配。
 
@@ -129,7 +129,7 @@ class ProductRule:
 
     @property
     def product_name(self):
-        """Gets the product_name of this ProductRule.
+        r"""Gets the product_name of this ProductRule.
 
         产品名称： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~128个字符。 3. 为空或者*号表示任意匹配。
 
@@ -140,7 +140,7 @@ class ProductRule:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this ProductRule.
+        r"""Sets the product_name of this ProductRule.
 
         产品名称： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~128个字符。 3. 为空或者*号表示任意匹配。
 
@@ -151,7 +151,7 @@ class ProductRule:
 
     @property
     def process_name(self):
-        """Gets the process_name of this ProductRule.
+        r"""Gets the process_name of this ProductRule.
 
         进程名称： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~128个字符。 3. 为空或者*号表示任意匹配。
 
@@ -162,7 +162,7 @@ class ProductRule:
 
     @process_name.setter
     def process_name(self, process_name):
-        """Sets the process_name of this ProductRule.
+        r"""Sets the process_name of this ProductRule.
 
         进程名称： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~128个字符。 3. 为空或者*号表示任意匹配。
 
@@ -173,7 +173,7 @@ class ProductRule:
 
     @property
     def support_os(self):
-        """Gets the support_os of this ProductRule.
+        r"""Gets the support_os of this ProductRule.
 
         操作系统类型，仅内置规则存在该字段。 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~128个字符。
 
@@ -184,7 +184,7 @@ class ProductRule:
 
     @support_os.setter
     def support_os(self, support_os):
-        """Sets the support_os of this ProductRule.
+        r"""Sets the support_os of this ProductRule.
 
         操作系统类型，仅内置规则存在该字段。 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~128个字符。
 
@@ -195,7 +195,7 @@ class ProductRule:
 
     @property
     def version(self):
-        """Gets the version of this ProductRule.
+        r"""Gets the version of this ProductRule.
 
         版本号： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~128个字符。 3. 为空或者*号表示任意匹配。
 
@@ -206,7 +206,7 @@ class ProductRule:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ProductRule.
+        r"""Sets the version of this ProductRule.
 
         版本号： 1. 名称允许可见字符或空格，不可为全空格。 2. 长度0~128个字符。 3. 为空或者*号表示任意匹配。
 
@@ -217,7 +217,7 @@ class ProductRule:
 
     @property
     def product_version(self):
-        """Gets the product_version of this ProductRule.
+        r"""Gets the product_version of this ProductRule.
 
         产品版本号： 1. 允许可见字符。 2. 长度0~128个字符。
 
@@ -228,7 +228,7 @@ class ProductRule:
 
     @product_version.setter
     def product_version(self, product_version):
-        """Sets the product_version of this ProductRule.
+        r"""Sets the product_version of this ProductRule.
 
         产品版本号： 1. 允许可见字符。 2. 长度0~128个字符。
 

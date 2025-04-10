@@ -24,7 +24,7 @@ class BatchUnsetScalingInstancesStantbyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchUnsetScalingInstancesStantbyResponse
+        r"""BatchUnsetScalingInstancesStantbyResponse
 
         The model defined in huaweicloud sdk
 

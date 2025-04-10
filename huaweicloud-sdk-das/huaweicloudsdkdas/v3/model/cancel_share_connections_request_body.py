@@ -27,7 +27,7 @@ class CancelShareConnectionsRequestBody:
     }
 
     def __init__(self, shared_conn_id=None, users=None):
-        """CancelShareConnectionsRequestBody
+        r"""CancelShareConnectionsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CancelShareConnectionsRequestBody:
 
     @property
     def shared_conn_id(self):
-        """Gets the shared_conn_id of this CancelShareConnectionsRequestBody.
+        r"""Gets the shared_conn_id of this CancelShareConnectionsRequestBody.
 
         共享链接ID
 
@@ -59,7 +59,7 @@ class CancelShareConnectionsRequestBody:
 
     @shared_conn_id.setter
     def shared_conn_id(self, shared_conn_id):
-        """Sets the shared_conn_id of this CancelShareConnectionsRequestBody.
+        r"""Sets the shared_conn_id of this CancelShareConnectionsRequestBody.
 
         共享链接ID
 
@@ -70,7 +70,7 @@ class CancelShareConnectionsRequestBody:
 
     @property
     def users(self):
-        """Gets the users of this CancelShareConnectionsRequestBody.
+        r"""Gets the users of this CancelShareConnectionsRequestBody.
 
         用户
 
@@ -81,7 +81,7 @@ class CancelShareConnectionsRequestBody:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this CancelShareConnectionsRequestBody.
+        r"""Sets the users of this CancelShareConnectionsRequestBody.
 
         用户
 

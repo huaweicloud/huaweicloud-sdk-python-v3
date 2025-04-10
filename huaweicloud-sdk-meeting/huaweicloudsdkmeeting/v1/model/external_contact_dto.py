@@ -53,7 +53,7 @@ class ExternalContactDTO:
     }
 
     def __init__(self, other_number=None, other_number_country=None, country=None, phone=None, email=None, corp_name=None, dept_name=None, position=None, address=None, remarks=None, id=None, name=None, custom_number=None, update_time=None, type=None):
-        """ExternalContactDTO
+        r"""ExternalContactDTO
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ExternalContactDTO:
 
     @property
     def other_number(self):
-        """Gets the other_number of this ExternalContactDTO.
+        r"""Gets the other_number of this ExternalContactDTO.
 
         其他号码。 > * 其他号码必须以国家码作为前缀 > * otherNumber填写时，otherNumberCountry也必须填写 > * 如果要清空手机号配置，则otherNumberCountry和otherNumber都要置为\"\" 
 
@@ -152,7 +152,7 @@ class ExternalContactDTO:
 
     @other_number.setter
     def other_number(self, other_number):
-        """Sets the other_number of this ExternalContactDTO.
+        r"""Sets the other_number of this ExternalContactDTO.
 
         其他号码。 > * 其他号码必须以国家码作为前缀 > * otherNumber填写时，otherNumberCountry也必须填写 > * 如果要清空手机号配置，则otherNumberCountry和otherNumber都要置为\"\" 
 
@@ -163,7 +163,7 @@ class ExternalContactDTO:
 
     @property
     def other_number_country(self):
-        """Gets the other_number_country of this ExternalContactDTO.
+        r"""Gets the other_number_country of this ExternalContactDTO.
 
         [[其他号码所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -174,7 +174,7 @@ class ExternalContactDTO:
 
     @other_number_country.setter
     def other_number_country(self, other_number_country):
-        """Sets the other_number_country of this ExternalContactDTO.
+        r"""Sets the other_number_country of this ExternalContactDTO.
 
         [[其他号码所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -185,7 +185,7 @@ class ExternalContactDTO:
 
     @property
     def country(self):
-        """Gets the country of this ExternalContactDTO.
+        r"""Gets the country of this ExternalContactDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -196,7 +196,7 @@ class ExternalContactDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this ExternalContactDTO.
+        r"""Sets the country of this ExternalContactDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -207,7 +207,7 @@ class ExternalContactDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this ExternalContactDTO.
+        r"""Gets the phone of this ExternalContactDTO.
 
         手机号。 > * 手机号必须以国家码作为前缀 > * phone填写时，country也必须填写 > * 如果要清空手机号配置，则country和phone都要置为\"\" 
 
@@ -218,7 +218,7 @@ class ExternalContactDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this ExternalContactDTO.
+        r"""Sets the phone of this ExternalContactDTO.
 
         手机号。 > * 手机号必须以国家码作为前缀 > * phone填写时，country也必须填写 > * 如果要清空手机号配置，则country和phone都要置为\"\" 
 
@@ -229,7 +229,7 @@ class ExternalContactDTO:
 
     @property
     def email(self):
-        """Gets the email of this ExternalContactDTO.
+        r"""Gets the email of this ExternalContactDTO.
 
         邮箱。
 
@@ -240,7 +240,7 @@ class ExternalContactDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ExternalContactDTO.
+        r"""Sets the email of this ExternalContactDTO.
 
         邮箱。
 
@@ -251,7 +251,7 @@ class ExternalContactDTO:
 
     @property
     def corp_name(self):
-        """Gets the corp_name of this ExternalContactDTO.
+        r"""Gets the corp_name of this ExternalContactDTO.
 
         公司名称。
 
@@ -262,7 +262,7 @@ class ExternalContactDTO:
 
     @corp_name.setter
     def corp_name(self, corp_name):
-        """Sets the corp_name of this ExternalContactDTO.
+        r"""Sets the corp_name of this ExternalContactDTO.
 
         公司名称。
 
@@ -273,7 +273,7 @@ class ExternalContactDTO:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this ExternalContactDTO.
+        r"""Gets the dept_name of this ExternalContactDTO.
 
         部门。
 
@@ -284,7 +284,7 @@ class ExternalContactDTO:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this ExternalContactDTO.
+        r"""Sets the dept_name of this ExternalContactDTO.
 
         部门。
 
@@ -295,7 +295,7 @@ class ExternalContactDTO:
 
     @property
     def position(self):
-        """Gets the position of this ExternalContactDTO.
+        r"""Gets the position of this ExternalContactDTO.
 
         职务。
 
@@ -306,7 +306,7 @@ class ExternalContactDTO:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this ExternalContactDTO.
+        r"""Sets the position of this ExternalContactDTO.
 
         职务。
 
@@ -317,7 +317,7 @@ class ExternalContactDTO:
 
     @property
     def address(self):
-        """Gets the address of this ExternalContactDTO.
+        r"""Gets the address of this ExternalContactDTO.
 
         个人地址。
 
@@ -328,7 +328,7 @@ class ExternalContactDTO:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ExternalContactDTO.
+        r"""Sets the address of this ExternalContactDTO.
 
         个人地址。
 
@@ -339,7 +339,7 @@ class ExternalContactDTO:
 
     @property
     def remarks(self):
-        """Gets the remarks of this ExternalContactDTO.
+        r"""Gets the remarks of this ExternalContactDTO.
 
         备注。
 
@@ -350,7 +350,7 @@ class ExternalContactDTO:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this ExternalContactDTO.
+        r"""Sets the remarks of this ExternalContactDTO.
 
         备注。
 
@@ -361,7 +361,7 @@ class ExternalContactDTO:
 
     @property
     def id(self):
-        """Gets the id of this ExternalContactDTO.
+        r"""Gets the id of this ExternalContactDTO.
 
         外部联系人UUID。
 
@@ -372,7 +372,7 @@ class ExternalContactDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExternalContactDTO.
+        r"""Sets the id of this ExternalContactDTO.
 
         外部联系人UUID。
 
@@ -383,7 +383,7 @@ class ExternalContactDTO:
 
     @property
     def name(self):
-        """Gets the name of this ExternalContactDTO.
+        r"""Gets the name of this ExternalContactDTO.
 
         姓名。
 
@@ -394,7 +394,7 @@ class ExternalContactDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExternalContactDTO.
+        r"""Sets the name of this ExternalContactDTO.
 
         姓名。
 
@@ -405,7 +405,7 @@ class ExternalContactDTO:
 
     @property
     def custom_number(self):
-        """Gets the custom_number of this ExternalContactDTO.
+        r"""Gets the custom_number of this ExternalContactDTO.
 
         外部联系人自定义号码。 > 仅VDC场景下使用。 
 
@@ -416,7 +416,7 @@ class ExternalContactDTO:
 
     @custom_number.setter
     def custom_number(self, custom_number):
-        """Sets the custom_number of this ExternalContactDTO.
+        r"""Sets the custom_number of this ExternalContactDTO.
 
         外部联系人自定义号码。 > 仅VDC场景下使用。 
 
@@ -427,7 +427,7 @@ class ExternalContactDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ExternalContactDTO.
+        r"""Gets the update_time of this ExternalContactDTO.
 
         用户信息最后更新时间戳。
 
@@ -438,7 +438,7 @@ class ExternalContactDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ExternalContactDTO.
+        r"""Sets the update_time of this ExternalContactDTO.
 
         用户信息最后更新时间戳。
 
@@ -449,7 +449,7 @@ class ExternalContactDTO:
 
     @property
     def type(self):
-        """Gets the type of this ExternalContactDTO.
+        r"""Gets the type of this ExternalContactDTO.
 
         外部联系人类型。 * PERSONAL：个人外部联系人 * CORP：企业外部联系人 
 
@@ -460,7 +460,7 @@ class ExternalContactDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExternalContactDTO.
+        r"""Sets the type of this ExternalContactDTO.
 
         外部联系人类型。 * PERSONAL：个人外部联系人 * CORP：企业外部联系人 
 

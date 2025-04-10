@@ -29,7 +29,7 @@ class UpdateEdgeGroupNodeBindingRequest:
     }
 
     def __init__(self, ief_instance_id=None, group_id=None, body=None):
-        """UpdateEdgeGroupNodeBindingRequest
+        r"""UpdateEdgeGroupNodeBindingRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateEdgeGroupNodeBindingRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this UpdateEdgeGroupNodeBindingRequest.
+        r"""Gets the ief_instance_id of this UpdateEdgeGroupNodeBindingRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -67,7 +67,7 @@ class UpdateEdgeGroupNodeBindingRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this UpdateEdgeGroupNodeBindingRequest.
+        r"""Sets the ief_instance_id of this UpdateEdgeGroupNodeBindingRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -78,7 +78,7 @@ class UpdateEdgeGroupNodeBindingRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateEdgeGroupNodeBindingRequest.
+        r"""Gets the group_id of this UpdateEdgeGroupNodeBindingRequest.
 
         边缘节点组ID
 
@@ -89,7 +89,7 @@ class UpdateEdgeGroupNodeBindingRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateEdgeGroupNodeBindingRequest.
+        r"""Sets the group_id of this UpdateEdgeGroupNodeBindingRequest.
 
         边缘节点组ID
 
@@ -100,7 +100,7 @@ class UpdateEdgeGroupNodeBindingRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEdgeGroupNodeBindingRequest.
+        r"""Gets the body of this UpdateEdgeGroupNodeBindingRequest.
 
         :return: The body of this UpdateEdgeGroupNodeBindingRequest.
         :rtype: :class:`huaweicloudsdkief.v1.UpdateGroupNodeBindingRequest`
@@ -109,7 +109,7 @@ class UpdateEdgeGroupNodeBindingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEdgeGroupNodeBindingRequest.
+        r"""Sets the body of this UpdateEdgeGroupNodeBindingRequest.
 
         :param body: The body of this UpdateEdgeGroupNodeBindingRequest.
         :type body: :class:`huaweicloudsdkief.v1.UpdateGroupNodeBindingRequest`

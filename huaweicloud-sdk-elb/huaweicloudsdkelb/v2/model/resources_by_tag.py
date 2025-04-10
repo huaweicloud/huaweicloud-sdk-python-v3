@@ -33,7 +33,7 @@ class ResourcesByTag:
     }
 
     def __init__(self, resource_id=None, resource_name=None, resource_detail=None, tags=None, super_resource_id=None):
-        """ResourcesByTag
+        r"""ResourcesByTag
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ResourcesByTag:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourcesByTag.
+        r"""Gets the resource_id of this ResourcesByTag.
 
         资源ID.
 
@@ -78,7 +78,7 @@ class ResourcesByTag:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourcesByTag.
+        r"""Sets the resource_id of this ResourcesByTag.
 
         资源ID.
 
@@ -89,7 +89,7 @@ class ResourcesByTag:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ResourcesByTag.
+        r"""Gets the resource_name of this ResourcesByTag.
 
         资源名称。
 
@@ -100,7 +100,7 @@ class ResourcesByTag:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ResourcesByTag.
+        r"""Sets the resource_name of this ResourcesByTag.
 
         资源名称。
 
@@ -111,7 +111,7 @@ class ResourcesByTag:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this ResourcesByTag.
+        r"""Gets the resource_detail of this ResourcesByTag.
 
         资源描述。
 
@@ -122,7 +122,7 @@ class ResourcesByTag:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this ResourcesByTag.
+        r"""Sets the resource_detail of this ResourcesByTag.
 
         资源描述。
 
@@ -133,7 +133,7 @@ class ResourcesByTag:
 
     @property
     def tags(self):
-        """Gets the tags of this ResourcesByTag.
+        r"""Gets the tags of this ResourcesByTag.
 
         资源标签。
 
@@ -144,7 +144,7 @@ class ResourcesByTag:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ResourcesByTag.
+        r"""Sets the tags of this ResourcesByTag.
 
         资源标签。
 
@@ -155,7 +155,7 @@ class ResourcesByTag:
 
     @property
     def super_resource_id(self):
-        """Gets the super_resource_id of this ResourcesByTag.
+        r"""Gets the super_resource_id of this ResourcesByTag.
 
         父级资源ID。
 
@@ -166,7 +166,7 @@ class ResourcesByTag:
 
     @super_resource_id.setter
     def super_resource_id(self, super_resource_id):
-        """Sets the super_resource_id of this ResourcesByTag.
+        r"""Sets the super_resource_id of this ResourcesByTag.
 
         父级资源ID。
 

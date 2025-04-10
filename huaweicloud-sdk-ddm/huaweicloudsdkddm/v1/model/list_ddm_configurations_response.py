@@ -32,7 +32,7 @@ class ListDdmConfigurationsResponse(SdkResponse):
     }
 
     def __init__(self, configurations=None, total=None, offset=None, limit=None):
-        """ListDdmConfigurationsResponse
+        r"""ListDdmConfigurationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListDdmConfigurationsResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this ListDdmConfigurationsResponse.
+        r"""Gets the configurations of this ListDdmConfigurationsResponse.
 
         参数配置列表
 
@@ -76,7 +76,7 @@ class ListDdmConfigurationsResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ListDdmConfigurationsResponse.
+        r"""Sets the configurations of this ListDdmConfigurationsResponse.
 
         参数配置列表
 
@@ -87,7 +87,7 @@ class ListDdmConfigurationsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDdmConfigurationsResponse.
+        r"""Gets the total of this ListDdmConfigurationsResponse.
 
         参数模板总数。
 
@@ -98,7 +98,7 @@ class ListDdmConfigurationsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDdmConfigurationsResponse.
+        r"""Sets the total of this ListDdmConfigurationsResponse.
 
         参数模板总数。
 
@@ -109,7 +109,7 @@ class ListDdmConfigurationsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListDdmConfigurationsResponse.
+        r"""Gets the offset of this ListDdmConfigurationsResponse.
 
         分页参数: 起始值。
 
@@ -120,7 +120,7 @@ class ListDdmConfigurationsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDdmConfigurationsResponse.
+        r"""Sets the offset of this ListDdmConfigurationsResponse.
 
         分页参数: 起始值。
 
@@ -131,7 +131,7 @@ class ListDdmConfigurationsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListDdmConfigurationsResponse.
+        r"""Gets the limit of this ListDdmConfigurationsResponse.
 
         分页参数：每页多少条。
 
@@ -142,7 +142,7 @@ class ListDdmConfigurationsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDdmConfigurationsResponse.
+        r"""Sets the limit of this ListDdmConfigurationsResponse.
 
         分页参数：每页多少条。
 

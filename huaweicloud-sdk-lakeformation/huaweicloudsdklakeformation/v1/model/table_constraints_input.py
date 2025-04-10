@@ -37,7 +37,7 @@ class TableConstraintsInput:
     }
 
     def __init__(self, constraint_type=None, foreign_keys=None, primary_keys=None, not_null_constraints=None, check_constraints=None, unique_constraints=None, default_constraints=None):
-        """TableConstraintsInput
+        r"""TableConstraintsInput
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class TableConstraintsInput:
 
     @property
     def constraint_type(self):
-        """Gets the constraint_type of this TableConstraintsInput.
+        r"""Gets the constraint_type of this TableConstraintsInput.
 
         限制类型
 
@@ -96,7 +96,7 @@ class TableConstraintsInput:
 
     @constraint_type.setter
     def constraint_type(self, constraint_type):
-        """Sets the constraint_type of this TableConstraintsInput.
+        r"""Sets the constraint_type of this TableConstraintsInput.
 
         限制类型
 
@@ -107,7 +107,7 @@ class TableConstraintsInput:
 
     @property
     def foreign_keys(self):
-        """Gets the foreign_keys of this TableConstraintsInput.
+        r"""Gets the foreign_keys of this TableConstraintsInput.
 
         外键列表
 
@@ -118,7 +118,7 @@ class TableConstraintsInput:
 
     @foreign_keys.setter
     def foreign_keys(self, foreign_keys):
-        """Sets the foreign_keys of this TableConstraintsInput.
+        r"""Sets the foreign_keys of this TableConstraintsInput.
 
         外键列表
 
@@ -129,7 +129,7 @@ class TableConstraintsInput:
 
     @property
     def primary_keys(self):
-        """Gets the primary_keys of this TableConstraintsInput.
+        r"""Gets the primary_keys of this TableConstraintsInput.
 
         主键列表
 
@@ -140,7 +140,7 @@ class TableConstraintsInput:
 
     @primary_keys.setter
     def primary_keys(self, primary_keys):
-        """Sets the primary_keys of this TableConstraintsInput.
+        r"""Sets the primary_keys of this TableConstraintsInput.
 
         主键列表
 
@@ -151,7 +151,7 @@ class TableConstraintsInput:
 
     @property
     def not_null_constraints(self):
-        """Gets the not_null_constraints of this TableConstraintsInput.
+        r"""Gets the not_null_constraints of this TableConstraintsInput.
 
         非空限制列表
 
@@ -162,7 +162,7 @@ class TableConstraintsInput:
 
     @not_null_constraints.setter
     def not_null_constraints(self, not_null_constraints):
-        """Sets the not_null_constraints of this TableConstraintsInput.
+        r"""Sets the not_null_constraints of this TableConstraintsInput.
 
         非空限制列表
 
@@ -173,7 +173,7 @@ class TableConstraintsInput:
 
     @property
     def check_constraints(self):
-        """Gets the check_constraints of this TableConstraintsInput.
+        r"""Gets the check_constraints of this TableConstraintsInput.
 
         检查限制列表
 
@@ -184,7 +184,7 @@ class TableConstraintsInput:
 
     @check_constraints.setter
     def check_constraints(self, check_constraints):
-        """Sets the check_constraints of this TableConstraintsInput.
+        r"""Sets the check_constraints of this TableConstraintsInput.
 
         检查限制列表
 
@@ -195,7 +195,7 @@ class TableConstraintsInput:
 
     @property
     def unique_constraints(self):
-        """Gets the unique_constraints of this TableConstraintsInput.
+        r"""Gets the unique_constraints of this TableConstraintsInput.
 
         唯一值限制列表
 
@@ -206,7 +206,7 @@ class TableConstraintsInput:
 
     @unique_constraints.setter
     def unique_constraints(self, unique_constraints):
-        """Sets the unique_constraints of this TableConstraintsInput.
+        r"""Sets the unique_constraints of this TableConstraintsInput.
 
         唯一值限制列表
 
@@ -217,7 +217,7 @@ class TableConstraintsInput:
 
     @property
     def default_constraints(self):
-        """Gets the default_constraints of this TableConstraintsInput.
+        r"""Gets the default_constraints of this TableConstraintsInput.
 
         默认限制列表
 
@@ -228,7 +228,7 @@ class TableConstraintsInput:
 
     @default_constraints.setter
     def default_constraints(self, default_constraints):
-        """Sets the default_constraints of this TableConstraintsInput.
+        r"""Sets the default_constraints of this TableConstraintsInput.
 
         默认限制列表
 

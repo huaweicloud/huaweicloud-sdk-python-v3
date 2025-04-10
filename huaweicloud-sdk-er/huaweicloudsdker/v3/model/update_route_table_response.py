@@ -28,7 +28,7 @@ class UpdateRouteTableResponse(SdkResponse):
     }
 
     def __init__(self, route_table=None, request_id=None):
-        """UpdateRouteTableResponse
+        r"""UpdateRouteTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateRouteTableResponse(SdkResponse):
 
     @property
     def route_table(self):
-        """Gets the route_table of this UpdateRouteTableResponse.
+        r"""Gets the route_table of this UpdateRouteTableResponse.
 
         :return: The route_table of this UpdateRouteTableResponse.
         :rtype: :class:`huaweicloudsdker.v3.RouteTable`
@@ -60,7 +60,7 @@ class UpdateRouteTableResponse(SdkResponse):
 
     @route_table.setter
     def route_table(self, route_table):
-        """Sets the route_table of this UpdateRouteTableResponse.
+        r"""Sets the route_table of this UpdateRouteTableResponse.
 
         :param route_table: The route_table of this UpdateRouteTableResponse.
         :type route_table: :class:`huaweicloudsdker.v3.RouteTable`
@@ -69,7 +69,7 @@ class UpdateRouteTableResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateRouteTableResponse.
+        r"""Gets the request_id of this UpdateRouteTableResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class UpdateRouteTableResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateRouteTableResponse.
+        r"""Sets the request_id of this UpdateRouteTableResponse.
 
         请求ID
 

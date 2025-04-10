@@ -43,7 +43,7 @@ class Create2DDigitalHumanVideoReq:
     }
 
     def __init__(self, script_id=None, model_asset_id=None, voice_config=None, video_config=None, shoot_scripts=None, output_asset_config=None, background_music_config=None, review_config=None, callback_config=None, action_config=None):
-        """Create2DDigitalHumanVideoReq
+        r"""Create2DDigitalHumanVideoReq
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class Create2DDigitalHumanVideoReq:
 
     @property
     def script_id(self):
-        """Gets the script_id of this Create2DDigitalHumanVideoReq.
+        r"""Gets the script_id of this Create2DDigitalHumanVideoReq.
 
         剧本ID。 > * 如果填写了script_id，model_asset_id、voice_config、scene_asset_id、video_config、shoot_scripts可以不填，以脚本中的配置为准。 > * 如果填写了script_id，并且同时也填写了model_asset_id、voice_config、scene_asset_id、video_config、shoot_scripts则以本接口中的配置为准。
 
@@ -117,7 +117,7 @@ class Create2DDigitalHumanVideoReq:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this Create2DDigitalHumanVideoReq.
+        r"""Sets the script_id of this Create2DDigitalHumanVideoReq.
 
         剧本ID。 > * 如果填写了script_id，model_asset_id、voice_config、scene_asset_id、video_config、shoot_scripts可以不填，以脚本中的配置为准。 > * 如果填写了script_id，并且同时也填写了model_asset_id、voice_config、scene_asset_id、video_config、shoot_scripts则以本接口中的配置为准。
 
@@ -128,7 +128,7 @@ class Create2DDigitalHumanVideoReq:
 
     @property
     def model_asset_id(self):
-        """Gets the model_asset_id of this Create2DDigitalHumanVideoReq.
+        r"""Gets the model_asset_id of this Create2DDigitalHumanVideoReq.
 
         分身数字人模型资产ID，可以从资产库中查询。
 
@@ -139,7 +139,7 @@ class Create2DDigitalHumanVideoReq:
 
     @model_asset_id.setter
     def model_asset_id(self, model_asset_id):
-        """Sets the model_asset_id of this Create2DDigitalHumanVideoReq.
+        r"""Sets the model_asset_id of this Create2DDigitalHumanVideoReq.
 
         分身数字人模型资产ID，可以从资产库中查询。
 
@@ -150,7 +150,7 @@ class Create2DDigitalHumanVideoReq:
 
     @property
     def voice_config(self):
-        """Gets the voice_config of this Create2DDigitalHumanVideoReq.
+        r"""Gets the voice_config of this Create2DDigitalHumanVideoReq.
 
         :return: The voice_config of this Create2DDigitalHumanVideoReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -159,7 +159,7 @@ class Create2DDigitalHumanVideoReq:
 
     @voice_config.setter
     def voice_config(self, voice_config):
-        """Sets the voice_config of this Create2DDigitalHumanVideoReq.
+        r"""Sets the voice_config of this Create2DDigitalHumanVideoReq.
 
         :param voice_config: The voice_config of this Create2DDigitalHumanVideoReq.
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -168,7 +168,7 @@ class Create2DDigitalHumanVideoReq:
 
     @property
     def video_config(self):
-        """Gets the video_config of this Create2DDigitalHumanVideoReq.
+        r"""Gets the video_config of this Create2DDigitalHumanVideoReq.
 
         :return: The video_config of this Create2DDigitalHumanVideoReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -177,7 +177,7 @@ class Create2DDigitalHumanVideoReq:
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this Create2DDigitalHumanVideoReq.
+        r"""Sets the video_config of this Create2DDigitalHumanVideoReq.
 
         :param video_config: The video_config of this Create2DDigitalHumanVideoReq.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -186,7 +186,7 @@ class Create2DDigitalHumanVideoReq:
 
     @property
     def shoot_scripts(self):
-        """Gets the shoot_scripts of this Create2DDigitalHumanVideoReq.
+        r"""Gets the shoot_scripts of this Create2DDigitalHumanVideoReq.
 
         拍摄脚本列表。
 
@@ -197,7 +197,7 @@ class Create2DDigitalHumanVideoReq:
 
     @shoot_scripts.setter
     def shoot_scripts(self, shoot_scripts):
-        """Sets the shoot_scripts of this Create2DDigitalHumanVideoReq.
+        r"""Sets the shoot_scripts of this Create2DDigitalHumanVideoReq.
 
         拍摄脚本列表。
 
@@ -208,7 +208,7 @@ class Create2DDigitalHumanVideoReq:
 
     @property
     def output_asset_config(self):
-        """Gets the output_asset_config of this Create2DDigitalHumanVideoReq.
+        r"""Gets the output_asset_config of this Create2DDigitalHumanVideoReq.
 
         :return: The output_asset_config of this Create2DDigitalHumanVideoReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.OutputAssetConfig`
@@ -217,7 +217,7 @@ class Create2DDigitalHumanVideoReq:
 
     @output_asset_config.setter
     def output_asset_config(self, output_asset_config):
-        """Sets the output_asset_config of this Create2DDigitalHumanVideoReq.
+        r"""Sets the output_asset_config of this Create2DDigitalHumanVideoReq.
 
         :param output_asset_config: The output_asset_config of this Create2DDigitalHumanVideoReq.
         :type output_asset_config: :class:`huaweicloudsdkmetastudio.v1.OutputAssetConfig`
@@ -226,7 +226,7 @@ class Create2DDigitalHumanVideoReq:
 
     @property
     def background_music_config(self):
-        """Gets the background_music_config of this Create2DDigitalHumanVideoReq.
+        r"""Gets the background_music_config of this Create2DDigitalHumanVideoReq.
 
         :return: The background_music_config of this Create2DDigitalHumanVideoReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
@@ -235,7 +235,7 @@ class Create2DDigitalHumanVideoReq:
 
     @background_music_config.setter
     def background_music_config(self, background_music_config):
-        """Sets the background_music_config of this Create2DDigitalHumanVideoReq.
+        r"""Sets the background_music_config of this Create2DDigitalHumanVideoReq.
 
         :param background_music_config: The background_music_config of this Create2DDigitalHumanVideoReq.
         :type background_music_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
@@ -244,7 +244,7 @@ class Create2DDigitalHumanVideoReq:
 
     @property
     def review_config(self):
-        """Gets the review_config of this Create2DDigitalHumanVideoReq.
+        r"""Gets the review_config of this Create2DDigitalHumanVideoReq.
 
         :return: The review_config of this Create2DDigitalHumanVideoReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -253,7 +253,7 @@ class Create2DDigitalHumanVideoReq:
 
     @review_config.setter
     def review_config(self, review_config):
-        """Sets the review_config of this Create2DDigitalHumanVideoReq.
+        r"""Sets the review_config of this Create2DDigitalHumanVideoReq.
 
         :param review_config: The review_config of this Create2DDigitalHumanVideoReq.
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -262,7 +262,7 @@ class Create2DDigitalHumanVideoReq:
 
     @property
     def callback_config(self):
-        """Gets the callback_config of this Create2DDigitalHumanVideoReq.
+        r"""Gets the callback_config of this Create2DDigitalHumanVideoReq.
 
         :return: The callback_config of this Create2DDigitalHumanVideoReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
@@ -271,7 +271,7 @@ class Create2DDigitalHumanVideoReq:
 
     @callback_config.setter
     def callback_config(self, callback_config):
-        """Sets the callback_config of this Create2DDigitalHumanVideoReq.
+        r"""Sets the callback_config of this Create2DDigitalHumanVideoReq.
 
         :param callback_config: The callback_config of this Create2DDigitalHumanVideoReq.
         :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
@@ -280,7 +280,7 @@ class Create2DDigitalHumanVideoReq:
 
     @property
     def action_config(self):
-        """Gets the action_config of this Create2DDigitalHumanVideoReq.
+        r"""Gets the action_config of this Create2DDigitalHumanVideoReq.
 
         :return: The action_config of this Create2DDigitalHumanVideoReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
@@ -289,7 +289,7 @@ class Create2DDigitalHumanVideoReq:
 
     @action_config.setter
     def action_config(self, action_config):
-        """Sets the action_config of this Create2DDigitalHumanVideoReq.
+        r"""Sets the action_config of this Create2DDigitalHumanVideoReq.
 
         :param action_config: The action_config of this Create2DDigitalHumanVideoReq.
         :type action_config: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`

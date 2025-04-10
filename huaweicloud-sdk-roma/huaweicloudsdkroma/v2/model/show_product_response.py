@@ -62,7 +62,7 @@ class ShowProductResponse(SdkResponse):
     }
 
     def __init__(self, permissions=None, id=None, product_serial=None, app_id=None, name=None, manufacturer_id=None, manufacturer_name=None, model=None, product_type=None, description=None, protocol_type=None, device_type=None, version=None, created_user=None, last_updated_user=None, authentication=None, created_datetime=None, app_name=None, data_format=None):
-        """ShowProductResponse
+        r"""ShowProductResponse
 
         The model defined in huaweicloud sdk
 
@@ -170,7 +170,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def permissions(self):
-        """Gets the permissions of this ShowProductResponse.
+        r"""Gets the permissions of this ShowProductResponse.
 
         权限
 
@@ -181,7 +181,7 @@ class ShowProductResponse(SdkResponse):
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this ShowProductResponse.
+        r"""Sets the permissions of this ShowProductResponse.
 
         权限
 
@@ -192,7 +192,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowProductResponse.
+        r"""Gets the id of this ShowProductResponse.
 
         产品ID
 
@@ -203,7 +203,7 @@ class ShowProductResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowProductResponse.
+        r"""Sets the id of this ShowProductResponse.
 
         产品ID
 
@@ -214,7 +214,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def product_serial(self):
-        """Gets the product_serial of this ShowProductResponse.
+        r"""Gets the product_serial of this ShowProductResponse.
 
         产品唯一序列（系统唯一值，用于MQS的TOPIC中标记产品）
 
@@ -225,7 +225,7 @@ class ShowProductResponse(SdkResponse):
 
     @product_serial.setter
     def product_serial(self, product_serial):
-        """Sets the product_serial of this ShowProductResponse.
+        r"""Sets the product_serial of this ShowProductResponse.
 
         产品唯一序列（系统唯一值，用于MQS的TOPIC中标记产品）
 
@@ -236,7 +236,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowProductResponse.
+        r"""Gets the app_id of this ShowProductResponse.
 
         应用ID
 
@@ -247,7 +247,7 @@ class ShowProductResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowProductResponse.
+        r"""Sets the app_id of this ShowProductResponse.
 
         应用ID
 
@@ -258,7 +258,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowProductResponse.
+        r"""Gets the name of this ShowProductResponse.
 
         产品名称，创建产品时租户内唯一，长度最大64，仅支持中文，英文字母，数字，下划线和中划线
 
@@ -269,7 +269,7 @@ class ShowProductResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowProductResponse.
+        r"""Sets the name of this ShowProductResponse.
 
         产品名称，创建产品时租户内唯一，长度最大64，仅支持中文，英文字母，数字，下划线和中划线
 
@@ -280,7 +280,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def manufacturer_id(self):
-        """Gets the manufacturer_id of this ShowProductResponse.
+        r"""Gets the manufacturer_id of this ShowProductResponse.
 
         产品供应商ID
 
@@ -291,7 +291,7 @@ class ShowProductResponse(SdkResponse):
 
     @manufacturer_id.setter
     def manufacturer_id(self, manufacturer_id):
-        """Sets the manufacturer_id of this ShowProductResponse.
+        r"""Sets the manufacturer_id of this ShowProductResponse.
 
         产品供应商ID
 
@@ -302,7 +302,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def manufacturer_name(self):
-        """Gets the manufacturer_name of this ShowProductResponse.
+        r"""Gets the manufacturer_name of this ShowProductResponse.
 
         厂商名称
 
@@ -313,7 +313,7 @@ class ShowProductResponse(SdkResponse):
 
     @manufacturer_name.setter
     def manufacturer_name(self, manufacturer_name):
-        """Sets the manufacturer_name of this ShowProductResponse.
+        r"""Sets the manufacturer_name of this ShowProductResponse.
 
         厂商名称
 
@@ -324,7 +324,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def model(self):
-        """Gets the model of this ShowProductResponse.
+        r"""Gets the model of this ShowProductResponse.
 
         产品型号
 
@@ -335,7 +335,7 @@ class ShowProductResponse(SdkResponse):
 
     @model.setter
     def model(self, model):
-        """Sets the model of this ShowProductResponse.
+        r"""Sets the model of this ShowProductResponse.
 
         产品型号
 
@@ -346,7 +346,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def product_type(self):
-        """Gets the product_type of this ShowProductResponse.
+        r"""Gets the product_type of this ShowProductResponse.
 
         产品类型，0-普通产品(不支持子设备) 1-网关产品
 
@@ -357,7 +357,7 @@ class ShowProductResponse(SdkResponse):
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this ShowProductResponse.
+        r"""Sets the product_type of this ShowProductResponse.
 
         产品类型，0-普通产品(不支持子设备) 1-网关产品
 
@@ -368,7 +368,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowProductResponse.
+        r"""Gets the description of this ShowProductResponse.
 
         产品描述，长度0-200
 
@@ -379,7 +379,7 @@ class ShowProductResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowProductResponse.
+        r"""Sets the description of this ShowProductResponse.
 
         产品描述，长度0-200
 
@@ -390,7 +390,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this ShowProductResponse.
+        r"""Gets the protocol_type of this ShowProductResponse.
 
         产品的协议类型 0-mqtt 2-modbus 4-opcua
 
@@ -401,7 +401,7 @@ class ShowProductResponse(SdkResponse):
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this ShowProductResponse.
+        r"""Sets the protocol_type of this ShowProductResponse.
 
         产品的协议类型 0-mqtt 2-modbus 4-opcua
 
@@ -412,7 +412,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def device_type(self):
-        """Gets the device_type of this ShowProductResponse.
+        r"""Gets the device_type of this ShowProductResponse.
 
         产品的设备类型（默认Default）
 
@@ -423,7 +423,7 @@ class ShowProductResponse(SdkResponse):
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this ShowProductResponse.
+        r"""Sets the device_type of this ShowProductResponse.
 
         产品的设备类型（默认Default）
 
@@ -434,7 +434,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowProductResponse.
+        r"""Gets the version of this ShowProductResponse.
 
         产品版本
 
@@ -445,7 +445,7 @@ class ShowProductResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowProductResponse.
+        r"""Sets the version of this ShowProductResponse.
 
         产品版本
 
@@ -456,7 +456,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def created_user(self):
-        """Gets the created_user of this ShowProductResponse.
+        r"""Gets the created_user of this ShowProductResponse.
 
         :return: The created_user of this ShowProductResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -465,7 +465,7 @@ class ShowProductResponse(SdkResponse):
 
     @created_user.setter
     def created_user(self, created_user):
-        """Sets the created_user of this ShowProductResponse.
+        r"""Sets the created_user of this ShowProductResponse.
 
         :param created_user: The created_user of this ShowProductResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -474,7 +474,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def last_updated_user(self):
-        """Gets the last_updated_user of this ShowProductResponse.
+        r"""Gets the last_updated_user of this ShowProductResponse.
 
         :return: The last_updated_user of this ShowProductResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -483,7 +483,7 @@ class ShowProductResponse(SdkResponse):
 
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
-        """Sets the last_updated_user of this ShowProductResponse.
+        r"""Sets the last_updated_user of this ShowProductResponse.
 
         :param last_updated_user: The last_updated_user of this ShowProductResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -492,7 +492,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def authentication(self):
-        """Gets the authentication of this ShowProductResponse.
+        r"""Gets the authentication of this ShowProductResponse.
 
         :return: The authentication of this ShowProductResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.Authentication`
@@ -501,7 +501,7 @@ class ShowProductResponse(SdkResponse):
 
     @authentication.setter
     def authentication(self, authentication):
-        """Sets the authentication of this ShowProductResponse.
+        r"""Sets the authentication of this ShowProductResponse.
 
         :param authentication: The authentication of this ShowProductResponse.
         :type authentication: :class:`huaweicloudsdkroma.v2.Authentication`
@@ -510,7 +510,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def created_datetime(self):
-        """Gets the created_datetime of this ShowProductResponse.
+        r"""Gets the created_datetime of this ShowProductResponse.
 
         创建时间，timestamp(ms)，使用UTC时区
 
@@ -521,7 +521,7 @@ class ShowProductResponse(SdkResponse):
 
     @created_datetime.setter
     def created_datetime(self, created_datetime):
-        """Sets the created_datetime of this ShowProductResponse.
+        r"""Sets the created_datetime of this ShowProductResponse.
 
         创建时间，timestamp(ms)，使用UTC时区
 
@@ -532,7 +532,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this ShowProductResponse.
+        r"""Gets the app_name of this ShowProductResponse.
 
         应用名称
 
@@ -543,7 +543,7 @@ class ShowProductResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ShowProductResponse.
+        r"""Sets the app_name of this ShowProductResponse.
 
         应用名称
 
@@ -554,7 +554,7 @@ class ShowProductResponse(SdkResponse):
 
     @property
     def data_format(self):
-        """Gets the data_format of this ShowProductResponse.
+        r"""Gets the data_format of this ShowProductResponse.
 
         data_format 0-JSON 1-USER_DEFINED
 
@@ -565,7 +565,7 @@ class ShowProductResponse(SdkResponse):
 
     @data_format.setter
     def data_format(self, data_format):
-        """Sets the data_format of this ShowProductResponse.
+        r"""Sets the data_format of this ShowProductResponse.
 
         data_format 0-JSON 1-USER_DEFINED
 

@@ -26,7 +26,7 @@ class RestoreClusterResponse(SdkResponse):
     }
 
     def __init__(self, cluster=None):
-        """RestoreClusterResponse
+        r"""RestoreClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RestoreClusterResponse(SdkResponse):
 
     @property
     def cluster(self):
-        """Gets the cluster of this RestoreClusterResponse.
+        r"""Gets the cluster of this RestoreClusterResponse.
 
         :return: The cluster of this RestoreClusterResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.Cluster`
@@ -53,7 +53,7 @@ class RestoreClusterResponse(SdkResponse):
 
     @cluster.setter
     def cluster(self, cluster):
-        """Sets the cluster of this RestoreClusterResponse.
+        r"""Sets the cluster of this RestoreClusterResponse.
 
         :param cluster: The cluster of this RestoreClusterResponse.
         :type cluster: :class:`huaweicloudsdkdws.v2.Cluster`

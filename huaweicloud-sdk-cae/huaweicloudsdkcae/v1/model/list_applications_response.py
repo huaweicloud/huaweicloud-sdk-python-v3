@@ -30,7 +30,7 @@ class ListApplicationsResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, items=None):
-        """ListApplicationsResponse
+        r"""ListApplicationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListApplicationsResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListApplicationsResponse.
+        r"""Gets the api_version of this ListApplicationsResponse.
 
         :return: The api_version of this ListApplicationsResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class ListApplicationsResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListApplicationsResponse.
+        r"""Sets the api_version of this ListApplicationsResponse.
 
         :param api_version: The api_version of this ListApplicationsResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class ListApplicationsResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListApplicationsResponse.
+        r"""Gets the kind of this ListApplicationsResponse.
 
         :return: The kind of this ListApplicationsResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApplicationKindObj`
@@ -85,7 +85,7 @@ class ListApplicationsResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListApplicationsResponse.
+        r"""Sets the kind of this ListApplicationsResponse.
 
         :param kind: The kind of this ListApplicationsResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.ApplicationKindObj`
@@ -94,7 +94,7 @@ class ListApplicationsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListApplicationsResponse.
+        r"""Gets the items of this ListApplicationsResponse.
 
         应用列表。
 
@@ -105,7 +105,7 @@ class ListApplicationsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListApplicationsResponse.
+        r"""Sets the items of this ListApplicationsResponse.
 
         应用列表。
 

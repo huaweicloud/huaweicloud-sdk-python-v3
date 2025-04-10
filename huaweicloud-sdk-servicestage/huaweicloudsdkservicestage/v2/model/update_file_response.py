@@ -26,7 +26,7 @@ class UpdateFileResponse(SdkResponse):
     }
 
     def __init__(self, path=None):
-        """UpdateFileResponse
+        r"""UpdateFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateFileResponse(SdkResponse):
 
     @property
     def path(self):
-        """Gets the path of this UpdateFileResponse.
+        r"""Gets the path of this UpdateFileResponse.
 
         文件路径。
 
@@ -55,7 +55,7 @@ class UpdateFileResponse(SdkResponse):
 
     @path.setter
     def path(self, path):
-        """Sets the path of this UpdateFileResponse.
+        r"""Sets the path of this UpdateFileResponse.
 
         文件路径。
 

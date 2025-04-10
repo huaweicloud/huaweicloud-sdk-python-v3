@@ -25,7 +25,7 @@ class UpgradeDatabaseRequest:
     }
 
     def __init__(self, delay=None):
-        """UpgradeDatabaseRequest
+        r"""UpgradeDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpgradeDatabaseRequest:
 
     @property
     def delay(self):
-        """Gets the delay of this UpgradeDatabaseRequest.
+        r"""Gets the delay of this UpgradeDatabaseRequest.
 
         实例是否延迟升级，默认false，立即升级。  - true: 延迟升级，实例将在运维时间窗内自动升级。 - false: 立即升级。
 
@@ -54,7 +54,7 @@ class UpgradeDatabaseRequest:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this UpgradeDatabaseRequest.
+        r"""Sets the delay of this UpgradeDatabaseRequest.
 
         实例是否延迟升级，默认false，立即升级。  - true: 延迟升级，实例将在运维时间窗内自动升级。 - false: 立即升级。
 

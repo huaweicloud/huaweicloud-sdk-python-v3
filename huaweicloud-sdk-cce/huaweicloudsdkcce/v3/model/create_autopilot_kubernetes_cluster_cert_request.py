@@ -27,7 +27,7 @@ class CreateAutopilotKubernetesClusterCertRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateAutopilotKubernetesClusterCertRequest
+        r"""CreateAutopilotKubernetesClusterCertRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAutopilotKubernetesClusterCertRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateAutopilotKubernetesClusterCertRequest.
+        r"""Gets the cluster_id of this CreateAutopilotKubernetesClusterCertRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class CreateAutopilotKubernetesClusterCertRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateAutopilotKubernetesClusterCertRequest.
+        r"""Sets the cluster_id of this CreateAutopilotKubernetesClusterCertRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class CreateAutopilotKubernetesClusterCertRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAutopilotKubernetesClusterCertRequest.
+        r"""Gets the body of this CreateAutopilotKubernetesClusterCertRequest.
 
         :return: The body of this CreateAutopilotKubernetesClusterCertRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.CertDuration`
@@ -80,7 +80,7 @@ class CreateAutopilotKubernetesClusterCertRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAutopilotKubernetesClusterCertRequest.
+        r"""Sets the body of this CreateAutopilotKubernetesClusterCertRequest.
 
         :param body: The body of this CreateAutopilotKubernetesClusterCertRequest.
         :type body: :class:`huaweicloudsdkcce.v3.CertDuration`

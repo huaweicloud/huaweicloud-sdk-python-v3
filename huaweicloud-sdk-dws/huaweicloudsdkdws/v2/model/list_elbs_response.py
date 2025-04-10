@@ -26,7 +26,7 @@ class ListElbsResponse(SdkResponse):
     }
 
     def __init__(self, elbs=None):
-        """ListElbsResponse
+        r"""ListElbsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListElbsResponse(SdkResponse):
 
     @property
     def elbs(self):
-        """Gets the elbs of this ListElbsResponse.
+        r"""Gets the elbs of this ListElbsResponse.
 
         弹性负载均衡列表
 
@@ -55,7 +55,7 @@ class ListElbsResponse(SdkResponse):
 
     @elbs.setter
     def elbs(self, elbs):
-        """Sets the elbs of this ListElbsResponse.
+        r"""Sets the elbs of this ListElbsResponse.
 
         弹性负载均衡列表
 

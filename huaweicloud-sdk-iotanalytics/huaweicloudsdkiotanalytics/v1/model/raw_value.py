@@ -27,7 +27,7 @@ class RawValue:
     }
 
     def __init__(self, property_name=None, values=None):
-        """RawValue
+        r"""RawValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RawValue:
 
     @property
     def property_name(self):
-        """Gets the property_name of this RawValue.
+        r"""Gets the property_name of this RawValue.
 
         属性名称
 
@@ -61,7 +61,7 @@ class RawValue:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this RawValue.
+        r"""Sets the property_name of this RawValue.
 
         属性名称
 
@@ -72,7 +72,7 @@ class RawValue:
 
     @property
     def values(self):
-        """Gets the values of this RawValue.
+        r"""Gets the values of this RawValue.
 
         资产属性的历史值序列，示例：[1,2]
 
@@ -83,7 +83,7 @@ class RawValue:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this RawValue.
+        r"""Sets the values of this RawValue.
 
         资产属性的历史值序列，示例：[1,2]
 

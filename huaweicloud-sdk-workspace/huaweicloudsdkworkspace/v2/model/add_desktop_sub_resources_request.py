@@ -27,7 +27,7 @@ class AddDesktopSubResourcesRequest:
     }
 
     def __init__(self, service_transaction_id=None, body=None):
-        """AddDesktopSubResourcesRequest
+        r"""AddDesktopSubResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddDesktopSubResourcesRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this AddDesktopSubResourcesRequest.
+        r"""Gets the service_transaction_id of this AddDesktopSubResourcesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -61,7 +61,7 @@ class AddDesktopSubResourcesRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this AddDesktopSubResourcesRequest.
+        r"""Sets the service_transaction_id of this AddDesktopSubResourcesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -72,7 +72,7 @@ class AddDesktopSubResourcesRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddDesktopSubResourcesRequest.
+        r"""Gets the body of this AddDesktopSubResourcesRequest.
 
         :return: The body of this AddDesktopSubResourcesRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AddDesktopSubResourcesReq`
@@ -81,7 +81,7 @@ class AddDesktopSubResourcesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddDesktopSubResourcesRequest.
+        r"""Sets the body of this AddDesktopSubResourcesRequest.
 
         :param body: The body of this AddDesktopSubResourcesRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.AddDesktopSubResourcesReq`

@@ -25,7 +25,7 @@ class ShowRemoteConsoleAddressRequest:
     }
 
     def __init__(self, desktop_id=None):
-        """ShowRemoteConsoleAddressRequest
+        r"""ShowRemoteConsoleAddressRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowRemoteConsoleAddressRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ShowRemoteConsoleAddressRequest.
+        r"""Gets the desktop_id of this ShowRemoteConsoleAddressRequest.
 
         桌面ID。
 
@@ -53,7 +53,7 @@ class ShowRemoteConsoleAddressRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ShowRemoteConsoleAddressRequest.
+        r"""Sets the desktop_id of this ShowRemoteConsoleAddressRequest.
 
         桌面ID。
 

@@ -52,7 +52,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, automatic=None, target_type=None, target_id=None, target_region_id=None, target_project_id=None, static_parameter=None, resource_parameter=None, maximum_attempts=None, retry_attempt_seconds=None, auth_type=None, auth_value=None, created_at=None, updated_at=None, created_by=None):
-        """CreateOrUpdateRemediationConfigurationResponse
+        r"""CreateOrUpdateRemediationConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @property
     def automatic(self):
-        """Gets the automatic of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Gets the automatic of this CreateOrUpdateRemediationConfigurationResponse.
 
         是否为自动修正。
 
@@ -146,7 +146,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @automatic.setter
     def automatic(self, automatic):
-        """Sets the automatic of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Sets the automatic of this CreateOrUpdateRemediationConfigurationResponse.
 
         是否为自动修正。
 
@@ -157,7 +157,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @property
     def target_type(self):
-        """Gets the target_type of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Gets the target_type of this CreateOrUpdateRemediationConfigurationResponse.
 
         合规规则修正执行的方式。
 
@@ -168,7 +168,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Sets the target_type of this CreateOrUpdateRemediationConfigurationResponse.
 
         合规规则修正执行的方式。
 
@@ -179,7 +179,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @property
     def target_id(self):
-        """Gets the target_id of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Gets the target_id of this CreateOrUpdateRemediationConfigurationResponse.
 
         修正执行的目标ID。如果修正方式为fgs，则该值为函数工作流的函数urn；如果修正方式为rfs，则该值为资源编排服务的模板name与版本号，两者以/分割，如果没有指定默认V1。
 
@@ -190,7 +190,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Sets the target_id of this CreateOrUpdateRemediationConfigurationResponse.
 
         修正执行的目标ID。如果修正方式为fgs，则该值为函数工作流的函数urn；如果修正方式为rfs，则该值为资源编排服务的模板name与版本号，两者以/分割，如果没有指定默认V1。
 
@@ -201,7 +201,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @property
     def target_region_id(self):
-        """Gets the target_region_id of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Gets the target_region_id of this CreateOrUpdateRemediationConfigurationResponse.
 
         修正执行的目标的regionId。如果修正方式为RFS，该字段为空则Config服务会默认配置北京四（中国站）或香港一（国际站）的regionId；如果修正方式为FGS，该字段为空则Config服务会根据实例urn自动配置。指定target_project_id字段则该字段必选。
 
@@ -212,7 +212,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @target_region_id.setter
     def target_region_id(self, target_region_id):
-        """Sets the target_region_id of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Sets the target_region_id of this CreateOrUpdateRemediationConfigurationResponse.
 
         修正执行的目标的regionId。如果修正方式为RFS，该字段为空则Config服务会默认配置北京四（中国站）或香港一（国际站）的regionId；如果修正方式为FGS，该字段为空则Config服务会根据实例urn自动配置。指定target_project_id字段则该字段必选。
 
@@ -223,7 +223,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @property
     def target_project_id(self):
-        """Gets the target_project_id of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Gets the target_project_id of this CreateOrUpdateRemediationConfigurationResponse.
 
         修正执行的目标的projectId。如果修正方式为RFS，该字段为空则Config服务会默认配置北京四（中国站）或香港一（国际站）的主projectId；如果修正方式为FGS，该字段为空则Config服务会根据实例urn自动配置。指定target_region_id字段则该字段必选。
 
@@ -234,7 +234,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @target_project_id.setter
     def target_project_id(self, target_project_id):
-        """Sets the target_project_id of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Sets the target_project_id of this CreateOrUpdateRemediationConfigurationResponse.
 
         修正执行的目标的projectId。如果修正方式为RFS，该字段为空则Config服务会默认配置北京四（中国站）或香港一（国际站）的主projectId；如果修正方式为FGS，该字段为空则Config服务会根据实例urn自动配置。指定target_region_id字段则该字段必选。
 
@@ -245,7 +245,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @property
     def static_parameter(self):
-        """Gets the static_parameter of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Gets the static_parameter of this CreateOrUpdateRemediationConfigurationResponse.
 
         修正执行的参数。
 
@@ -256,7 +256,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @static_parameter.setter
     def static_parameter(self, static_parameter):
-        """Sets the static_parameter of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Sets the static_parameter of this CreateOrUpdateRemediationConfigurationResponse.
 
         修正执行的参数。
 
@@ -267,7 +267,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @property
     def resource_parameter(self):
-        """Gets the resource_parameter of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Gets the resource_parameter of this CreateOrUpdateRemediationConfigurationResponse.
 
         :return: The resource_parameter of this CreateOrUpdateRemediationConfigurationResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.RemediationResourceParameter`
@@ -276,7 +276,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @resource_parameter.setter
     def resource_parameter(self, resource_parameter):
-        """Sets the resource_parameter of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Sets the resource_parameter of this CreateOrUpdateRemediationConfigurationResponse.
 
         :param resource_parameter: The resource_parameter of this CreateOrUpdateRemediationConfigurationResponse.
         :type resource_parameter: :class:`huaweicloudsdkconfig.v1.RemediationResourceParameter`
@@ -285,7 +285,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @property
     def maximum_attempts(self):
-        """Gets the maximum_attempts of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Gets the maximum_attempts of this CreateOrUpdateRemediationConfigurationResponse.
 
         指定时间内修正的最大尝试次数。
 
@@ -296,7 +296,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @maximum_attempts.setter
     def maximum_attempts(self, maximum_attempts):
-        """Sets the maximum_attempts of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Sets the maximum_attempts of this CreateOrUpdateRemediationConfigurationResponse.
 
         指定时间内修正的最大尝试次数。
 
@@ -307,7 +307,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @property
     def retry_attempt_seconds(self):
-        """Gets the retry_attempt_seconds of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Gets the retry_attempt_seconds of this CreateOrUpdateRemediationConfigurationResponse.
 
         用于防止循环修正的时间窗口，如果在指定时间内进行了自动修正的最大尝试次数，则将资源添加至修正例外。
 
@@ -318,7 +318,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @retry_attempt_seconds.setter
     def retry_attempt_seconds(self, retry_attempt_seconds):
-        """Sets the retry_attempt_seconds of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Sets the retry_attempt_seconds of this CreateOrUpdateRemediationConfigurationResponse.
 
         用于防止循环修正的时间窗口，如果在指定时间内进行了自动修正的最大尝试次数，则将资源添加至修正例外。
 
@@ -329,7 +329,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Gets the auth_type of this CreateOrUpdateRemediationConfigurationResponse.
 
         合规规则修正配置的权限方式。
 
@@ -340,7 +340,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Sets the auth_type of this CreateOrUpdateRemediationConfigurationResponse.
 
         合规规则修正配置的权限方式。
 
@@ -351,7 +351,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @property
     def auth_value(self):
-        """Gets the auth_value of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Gets the auth_value of this CreateOrUpdateRemediationConfigurationResponse.
 
         合规规则修正配置的权限信息。
 
@@ -362,7 +362,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @auth_value.setter
     def auth_value(self, auth_value):
-        """Sets the auth_value of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Sets the auth_value of this CreateOrUpdateRemediationConfigurationResponse.
 
         合规规则修正配置的权限信息。
 
@@ -373,7 +373,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Gets the created_at of this CreateOrUpdateRemediationConfigurationResponse.
 
         修正配置的创建时间。
 
@@ -384,7 +384,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Sets the created_at of this CreateOrUpdateRemediationConfigurationResponse.
 
         修正配置的创建时间。
 
@@ -395,7 +395,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Gets the updated_at of this CreateOrUpdateRemediationConfigurationResponse.
 
         修正配置的更新时间。
 
@@ -406,7 +406,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Sets the updated_at of this CreateOrUpdateRemediationConfigurationResponse.
 
         修正配置的更新时间。
 
@@ -417,7 +417,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @property
     def created_by(self):
-        """Gets the created_by of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Gets the created_by of this CreateOrUpdateRemediationConfigurationResponse.
 
         创建者。
 
@@ -428,7 +428,7 @@ class CreateOrUpdateRemediationConfigurationResponse(SdkResponse):
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this CreateOrUpdateRemediationConfigurationResponse.
+        r"""Sets the created_by of this CreateOrUpdateRemediationConfigurationResponse.
 
         创建者。
 

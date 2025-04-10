@@ -25,7 +25,7 @@ class UpdateMessageReceiveConfigRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateMessageReceiveConfigRequest
+        r"""UpdateMessageReceiveConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateMessageReceiveConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMessageReceiveConfigRequest.
+        r"""Gets the body of this UpdateMessageReceiveConfigRequest.
 
         :return: The body of this UpdateMessageReceiveConfigRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SetMessageReceiveConfigReq`
@@ -52,7 +52,7 @@ class UpdateMessageReceiveConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMessageReceiveConfigRequest.
+        r"""Sets the body of this UpdateMessageReceiveConfigRequest.
 
         :param body: The body of this UpdateMessageReceiveConfigRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.SetMessageReceiveConfigReq`

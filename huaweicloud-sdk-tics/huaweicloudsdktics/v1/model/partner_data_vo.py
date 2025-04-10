@@ -37,7 +37,7 @@ class PartnerDataVo:
     }
 
     def __init__(self, column_list=None, create_time=None, data_type=None, description=None, id=None, name=None, partner_domain_name=None):
-        """PartnerDataVo
+        r"""PartnerDataVo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PartnerDataVo:
 
     @property
     def column_list(self):
-        """Gets the column_list of this PartnerDataVo.
+        r"""Gets the column_list of this PartnerDataVo.
 
         字段信息集合
 
@@ -96,7 +96,7 @@ class PartnerDataVo:
 
     @column_list.setter
     def column_list(self, column_list):
-        """Sets the column_list of this PartnerDataVo.
+        r"""Sets the column_list of this PartnerDataVo.
 
         字段信息集合
 
@@ -107,7 +107,7 @@ class PartnerDataVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PartnerDataVo.
+        r"""Gets the create_time of this PartnerDataVo.
 
         创建时间
 
@@ -118,7 +118,7 @@ class PartnerDataVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PartnerDataVo.
+        r"""Sets the create_time of this PartnerDataVo.
 
         创建时间
 
@@ -129,7 +129,7 @@ class PartnerDataVo:
 
     @property
     def data_type(self):
-        """Gets the data_type of this PartnerDataVo.
+        r"""Gets the data_type of this PartnerDataVo.
 
         数据类型，DWS.DWS类型数据集，LOCAL_CSV.本地文件类型数集据，MRS.HIVE类型数据集，MYSQL.MySql类型数据集，ORACLE.Oracle类型数据集，RDS.RDS类型数据集
 
@@ -140,7 +140,7 @@ class PartnerDataVo:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this PartnerDataVo.
+        r"""Sets the data_type of this PartnerDataVo.
 
         数据类型，DWS.DWS类型数据集，LOCAL_CSV.本地文件类型数集据，MRS.HIVE类型数据集，MYSQL.MySql类型数据集，ORACLE.Oracle类型数据集，RDS.RDS类型数据集
 
@@ -151,7 +151,7 @@ class PartnerDataVo:
 
     @property
     def description(self):
-        """Gets the description of this PartnerDataVo.
+        r"""Gets the description of this PartnerDataVo.
 
         描述
 
@@ -162,7 +162,7 @@ class PartnerDataVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PartnerDataVo.
+        r"""Sets the description of this PartnerDataVo.
 
         描述
 
@@ -173,7 +173,7 @@ class PartnerDataVo:
 
     @property
     def id(self):
-        """Gets the id of this PartnerDataVo.
+        r"""Gets the id of this PartnerDataVo.
 
         数据集id
 
@@ -184,7 +184,7 @@ class PartnerDataVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PartnerDataVo.
+        r"""Sets the id of this PartnerDataVo.
 
         数据集id
 
@@ -195,7 +195,7 @@ class PartnerDataVo:
 
     @property
     def name(self):
-        """Gets the name of this PartnerDataVo.
+        r"""Gets the name of this PartnerDataVo.
 
         数据集名称
 
@@ -206,7 +206,7 @@ class PartnerDataVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PartnerDataVo.
+        r"""Sets the name of this PartnerDataVo.
 
         数据集名称
 
@@ -217,7 +217,7 @@ class PartnerDataVo:
 
     @property
     def partner_domain_name(self):
-        """Gets the partner_domain_name of this PartnerDataVo.
+        r"""Gets the partner_domain_name of this PartnerDataVo.
 
         参与方租户名称
 
@@ -228,7 +228,7 @@ class PartnerDataVo:
 
     @partner_domain_name.setter
     def partner_domain_name(self, partner_domain_name):
-        """Sets the partner_domain_name of this PartnerDataVo.
+        r"""Sets the partner_domain_name of this PartnerDataVo.
 
         参与方租户名称
 

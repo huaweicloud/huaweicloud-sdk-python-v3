@@ -25,7 +25,7 @@ class DeleteAssetCategoryRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteAssetCategoryRequest
+        r"""DeleteAssetCategoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAssetCategoryRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteAssetCategoryRequest.
+        r"""Gets the id of this DeleteAssetCategoryRequest.
 
         视频分类ID
 
@@ -53,7 +53,7 @@ class DeleteAssetCategoryRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteAssetCategoryRequest.
+        r"""Sets the id of this DeleteAssetCategoryRequest.
 
         视频分类ID
 

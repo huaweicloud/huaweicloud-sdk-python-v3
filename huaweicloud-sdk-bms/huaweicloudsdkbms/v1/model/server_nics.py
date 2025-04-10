@@ -25,7 +25,7 @@ class ServerNics:
     }
 
     def __init__(self, id=None):
-        """ServerNics
+        r"""ServerNics
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ServerNics:
 
     @property
     def id(self):
-        """Gets the id of this ServerNics.
+        r"""Gets the id of this ServerNics.
 
         :return: The id of this ServerNics.
         :rtype: str
@@ -51,7 +51,7 @@ class ServerNics:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServerNics.
+        r"""Sets the id of this ServerNics.
 
         :param id: The id of this ServerNics.
         :type id: str

@@ -41,7 +41,7 @@ class SlowlogResult:
     }
 
     def __init__(self, node_name=None, query_sample=None, type=None, time=None, lock_time=None, rows_sent=None, rows_examined=None, database=None, start_time=None):
-        """SlowlogResult
+        r"""SlowlogResult
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class SlowlogResult:
 
     @property
     def node_name(self):
-        """Gets the node_name of this SlowlogResult.
+        r"""Gets the node_name of this SlowlogResult.
 
         节点名称。
 
@@ -101,7 +101,7 @@ class SlowlogResult:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this SlowlogResult.
+        r"""Sets the node_name of this SlowlogResult.
 
         节点名称。
 
@@ -112,7 +112,7 @@ class SlowlogResult:
 
     @property
     def query_sample(self):
-        """Gets the query_sample of this SlowlogResult.
+        r"""Gets the query_sample of this SlowlogResult.
 
         执行语法。
 
@@ -123,7 +123,7 @@ class SlowlogResult:
 
     @query_sample.setter
     def query_sample(self, query_sample):
-        """Sets the query_sample of this SlowlogResult.
+        r"""Sets the query_sample of this SlowlogResult.
 
         执行语法。
 
@@ -134,7 +134,7 @@ class SlowlogResult:
 
     @property
     def type(self):
-        """Gets the type of this SlowlogResult.
+        r"""Gets the type of this SlowlogResult.
 
         语句类型。
 
@@ -145,7 +145,7 @@ class SlowlogResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SlowlogResult.
+        r"""Sets the type of this SlowlogResult.
 
         语句类型。
 
@@ -156,7 +156,7 @@ class SlowlogResult:
 
     @property
     def time(self):
-        """Gets the time of this SlowlogResult.
+        r"""Gets the time of this SlowlogResult.
 
         执行时间。
 
@@ -167,7 +167,7 @@ class SlowlogResult:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this SlowlogResult.
+        r"""Sets the time of this SlowlogResult.
 
         执行时间。
 
@@ -178,7 +178,7 @@ class SlowlogResult:
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this SlowlogResult.
+        r"""Gets the lock_time of this SlowlogResult.
 
         等待锁时间。
 
@@ -189,7 +189,7 @@ class SlowlogResult:
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this SlowlogResult.
+        r"""Sets the lock_time of this SlowlogResult.
 
         等待锁时间。
 
@@ -200,7 +200,7 @@ class SlowlogResult:
 
     @property
     def rows_sent(self):
-        """Gets the rows_sent of this SlowlogResult.
+        r"""Gets the rows_sent of this SlowlogResult.
 
         角色所在数据库名称。
 
@@ -211,7 +211,7 @@ class SlowlogResult:
 
     @rows_sent.setter
     def rows_sent(self, rows_sent):
-        """Sets the rows_sent of this SlowlogResult.
+        r"""Sets the rows_sent of this SlowlogResult.
 
         角色所在数据库名称。
 
@@ -222,7 +222,7 @@ class SlowlogResult:
 
     @property
     def rows_examined(self):
-        """Gets the rows_examined of this SlowlogResult.
+        r"""Gets the rows_examined of this SlowlogResult.
 
         扫描的行数量。
 
@@ -233,7 +233,7 @@ class SlowlogResult:
 
     @rows_examined.setter
     def rows_examined(self, rows_examined):
-        """Sets the rows_examined of this SlowlogResult.
+        r"""Sets the rows_examined of this SlowlogResult.
 
         扫描的行数量。
 
@@ -244,7 +244,7 @@ class SlowlogResult:
 
     @property
     def database(self):
-        """Gets the database of this SlowlogResult.
+        r"""Gets the database of this SlowlogResult.
 
         所属数据库。
 
@@ -255,7 +255,7 @@ class SlowlogResult:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this SlowlogResult.
+        r"""Sets the database of this SlowlogResult.
 
         所属数据库。
 
@@ -266,7 +266,7 @@ class SlowlogResult:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SlowlogResult.
+        r"""Gets the start_time of this SlowlogResult.
 
         发生时间，UTC时间。
 
@@ -277,7 +277,7 @@ class SlowlogResult:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SlowlogResult.
+        r"""Sets the start_time of this SlowlogResult.
 
         发生时间，UTC时间。
 

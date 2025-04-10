@@ -27,7 +27,7 @@ class ValidateServiceRequest:
     }
 
     def __init__(self, service=None, ticket=None):
-        """ValidateServiceRequest
+        r"""ValidateServiceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ValidateServiceRequest:
 
     @property
     def service(self):
-        """Gets the service of this ValidateServiceRequest.
+        r"""Gets the service of this ValidateServiceRequest.
 
         登录时携带的回调地址
 
@@ -59,7 +59,7 @@ class ValidateServiceRequest:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this ValidateServiceRequest.
+        r"""Sets the service of this ValidateServiceRequest.
 
         登录时携带的回调地址
 
@@ -70,7 +70,7 @@ class ValidateServiceRequest:
 
     @property
     def ticket(self):
-        """Gets the ticket of this ValidateServiceRequest.
+        r"""Gets the ticket of this ValidateServiceRequest.
 
         登录时系统返回的ticket
 
@@ -81,7 +81,7 @@ class ValidateServiceRequest:
 
     @ticket.setter
     def ticket(self, ticket):
-        """Sets the ticket of this ValidateServiceRequest.
+        r"""Sets the ticket of this ValidateServiceRequest.
 
         登录时系统返回的ticket
 

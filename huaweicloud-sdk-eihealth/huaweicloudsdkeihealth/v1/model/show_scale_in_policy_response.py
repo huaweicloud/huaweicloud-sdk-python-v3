@@ -38,7 +38,7 @@ class ShowScaleInPolicyResponse(SdkResponse):
     }
 
     def __init__(self, idle_time=None, threshold=None, delay_after_add=None, delay_after_delete=None, delay_after_failure=None, max_nodes_batch_deletion=None, check_interval=None):
-        """ShowScaleInPolicyResponse
+        r"""ShowScaleInPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowScaleInPolicyResponse(SdkResponse):
 
     @property
     def idle_time(self):
-        """Gets the idle_time of this ShowScaleInPolicyResponse.
+        r"""Gets the idle_time of this ShowScaleInPolicyResponse.
 
         空置时间
 
@@ -97,7 +97,7 @@ class ShowScaleInPolicyResponse(SdkResponse):
 
     @idle_time.setter
     def idle_time(self, idle_time):
-        """Sets the idle_time of this ShowScaleInPolicyResponse.
+        r"""Sets the idle_time of this ShowScaleInPolicyResponse.
 
         空置时间
 
@@ -108,7 +108,7 @@ class ShowScaleInPolicyResponse(SdkResponse):
 
     @property
     def threshold(self):
-        """Gets the threshold of this ShowScaleInPolicyResponse.
+        r"""Gets the threshold of this ShowScaleInPolicyResponse.
 
         缩容阈值
 
@@ -119,7 +119,7 @@ class ShowScaleInPolicyResponse(SdkResponse):
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this ShowScaleInPolicyResponse.
+        r"""Sets the threshold of this ShowScaleInPolicyResponse.
 
         缩容阈值
 
@@ -130,7 +130,7 @@ class ShowScaleInPolicyResponse(SdkResponse):
 
     @property
     def delay_after_add(self):
-        """Gets the delay_after_add of this ShowScaleInPolicyResponse.
+        r"""Gets the delay_after_add of this ShowScaleInPolicyResponse.
 
         扩容后多久再次判断缩容
 
@@ -141,7 +141,7 @@ class ShowScaleInPolicyResponse(SdkResponse):
 
     @delay_after_add.setter
     def delay_after_add(self, delay_after_add):
-        """Sets the delay_after_add of this ShowScaleInPolicyResponse.
+        r"""Sets the delay_after_add of this ShowScaleInPolicyResponse.
 
         扩容后多久再次判断缩容
 
@@ -152,7 +152,7 @@ class ShowScaleInPolicyResponse(SdkResponse):
 
     @property
     def delay_after_delete(self):
-        """Gets the delay_after_delete of this ShowScaleInPolicyResponse.
+        r"""Gets the delay_after_delete of this ShowScaleInPolicyResponse.
 
         节点删除后多久再次判断缩容
 
@@ -163,7 +163,7 @@ class ShowScaleInPolicyResponse(SdkResponse):
 
     @delay_after_delete.setter
     def delay_after_delete(self, delay_after_delete):
-        """Sets the delay_after_delete of this ShowScaleInPolicyResponse.
+        r"""Sets the delay_after_delete of this ShowScaleInPolicyResponse.
 
         节点删除后多久再次判断缩容
 
@@ -174,7 +174,7 @@ class ShowScaleInPolicyResponse(SdkResponse):
 
     @property
     def delay_after_failure(self):
-        """Gets the delay_after_failure of this ShowScaleInPolicyResponse.
+        r"""Gets the delay_after_failure of this ShowScaleInPolicyResponse.
 
         缩容失败后多久再次判断缩容
 
@@ -185,7 +185,7 @@ class ShowScaleInPolicyResponse(SdkResponse):
 
     @delay_after_failure.setter
     def delay_after_failure(self, delay_after_failure):
-        """Sets the delay_after_failure of this ShowScaleInPolicyResponse.
+        r"""Sets the delay_after_failure of this ShowScaleInPolicyResponse.
 
         缩容失败后多久再次判断缩容
 
@@ -196,7 +196,7 @@ class ShowScaleInPolicyResponse(SdkResponse):
 
     @property
     def max_nodes_batch_deletion(self):
-        """Gets the max_nodes_batch_deletion of this ShowScaleInPolicyResponse.
+        r"""Gets the max_nodes_batch_deletion of this ShowScaleInPolicyResponse.
 
         缩容并发数
 
@@ -207,7 +207,7 @@ class ShowScaleInPolicyResponse(SdkResponse):
 
     @max_nodes_batch_deletion.setter
     def max_nodes_batch_deletion(self, max_nodes_batch_deletion):
-        """Sets the max_nodes_batch_deletion of this ShowScaleInPolicyResponse.
+        r"""Sets the max_nodes_batch_deletion of this ShowScaleInPolicyResponse.
 
         缩容并发数
 
@@ -218,7 +218,7 @@ class ShowScaleInPolicyResponse(SdkResponse):
 
     @property
     def check_interval(self):
-        """Gets the check_interval of this ShowScaleInPolicyResponse.
+        r"""Gets the check_interval of this ShowScaleInPolicyResponse.
 
         检查间隔
 
@@ -229,7 +229,7 @@ class ShowScaleInPolicyResponse(SdkResponse):
 
     @check_interval.setter
     def check_interval(self, check_interval):
-        """Sets the check_interval of this ShowScaleInPolicyResponse.
+        r"""Sets the check_interval of this ShowScaleInPolicyResponse.
 
         检查间隔
 

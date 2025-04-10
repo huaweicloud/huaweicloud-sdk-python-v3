@@ -31,7 +31,7 @@ class Sfs3Storage:
     }
 
     def __init__(self, name=None, location=None, usage=None, create_time=None):
-        """Sfs3Storage
+        r"""Sfs3Storage
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Sfs3Storage:
 
     @property
     def name(self):
-        """Gets the name of this Sfs3Storage.
+        r"""Gets the name of this Sfs3Storage.
 
         文件系统名称。
 
@@ -75,7 +75,7 @@ class Sfs3Storage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Sfs3Storage.
+        r"""Sets the name of this Sfs3Storage.
 
         文件系统名称。
 
@@ -86,7 +86,7 @@ class Sfs3Storage:
 
     @property
     def location(self):
-        """Gets the location of this Sfs3Storage.
+        r"""Gets the location of this Sfs3Storage.
 
         挂载地址。
 
@@ -97,7 +97,7 @@ class Sfs3Storage:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this Sfs3Storage.
+        r"""Sets the location of this Sfs3Storage.
 
         挂载地址。
 
@@ -108,7 +108,7 @@ class Sfs3Storage:
 
     @property
     def usage(self):
-        """Gets the usage of this Sfs3Storage.
+        r"""Gets the usage of this Sfs3Storage.
 
         存储使用量(Byte)。
 
@@ -119,7 +119,7 @@ class Sfs3Storage:
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this Sfs3Storage.
+        r"""Sets the usage of this Sfs3Storage.
 
         存储使用量(Byte)。
 
@@ -130,7 +130,7 @@ class Sfs3Storage:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Sfs3Storage.
+        r"""Gets the create_time of this Sfs3Storage.
 
         创建时间。
 
@@ -141,7 +141,7 @@ class Sfs3Storage:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Sfs3Storage.
+        r"""Sets the create_time of this Sfs3Storage.
 
         创建时间。
 

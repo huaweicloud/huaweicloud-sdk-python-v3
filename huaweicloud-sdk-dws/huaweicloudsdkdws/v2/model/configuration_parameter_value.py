@@ -29,7 +29,7 @@ class ConfigurationParameterValue:
     }
 
     def __init__(self, type=None, name=None, value=None):
-        """ConfigurationParameterValue
+        r"""ConfigurationParameterValue
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ConfigurationParameterValue:
 
     @property
     def type(self):
-        """Gets the type of this ConfigurationParameterValue.
+        r"""Gets the type of this ConfigurationParameterValue.
 
         参数类型，包括：cn、dn。
 
@@ -65,7 +65,7 @@ class ConfigurationParameterValue:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConfigurationParameterValue.
+        r"""Sets the type of this ConfigurationParameterValue.
 
         参数类型，包括：cn、dn。
 
@@ -76,7 +76,7 @@ class ConfigurationParameterValue:
 
     @property
     def name(self):
-        """Gets the name of this ConfigurationParameterValue.
+        r"""Gets the name of this ConfigurationParameterValue.
 
         参数名称。
 
@@ -87,7 +87,7 @@ class ConfigurationParameterValue:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigurationParameterValue.
+        r"""Sets the name of this ConfigurationParameterValue.
 
         参数名称。
 
@@ -98,7 +98,7 @@ class ConfigurationParameterValue:
 
     @property
     def value(self):
-        """Gets the value of this ConfigurationParameterValue.
+        r"""Gets the value of this ConfigurationParameterValue.
 
         参数值。
 
@@ -109,7 +109,7 @@ class ConfigurationParameterValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ConfigurationParameterValue.
+        r"""Sets the value of this ConfigurationParameterValue.
 
         参数值。
 

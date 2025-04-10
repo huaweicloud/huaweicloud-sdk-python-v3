@@ -25,7 +25,7 @@ class ManagementEventSelector:
     }
 
     def __init__(self, exclude_service=None):
-        """ManagementEventSelector
+        r"""ManagementEventSelector
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ManagementEventSelector:
 
     @property
     def exclude_service(self):
-        """Gets the exclude_service of this ManagementEventSelector.
+        r"""Gets the exclude_service of this ManagementEventSelector.
 
         标识不转储的云服务名称。 目前只支持设置为KMS，表示屏蔽KMS服务的createDatakey事件。
 
@@ -54,7 +54,7 @@ class ManagementEventSelector:
 
     @exclude_service.setter
     def exclude_service(self, exclude_service):
-        """Sets the exclude_service of this ManagementEventSelector.
+        r"""Sets the exclude_service of this ManagementEventSelector.
 
         标识不转储的云服务名称。 目前只支持设置为KMS，表示屏蔽KMS服务的createDatakey事件。
 

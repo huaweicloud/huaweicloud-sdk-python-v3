@@ -27,7 +27,7 @@ class ParameterItem:
     }
 
     def __init__(self, name=None, value=None):
-        """ParameterItem
+        r"""ParameterItem
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ParameterItem:
 
     @property
     def name(self):
-        """Gets the name of this ParameterItem.
+        r"""Gets the name of this ParameterItem.
 
         参数名称
 
@@ -59,7 +59,7 @@ class ParameterItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ParameterItem.
+        r"""Sets the name of this ParameterItem.
 
         参数名称
 
@@ -70,7 +70,7 @@ class ParameterItem:
 
     @property
     def value(self):
-        """Gets the value of this ParameterItem.
+        r"""Gets the value of this ParameterItem.
 
         参数值
 
@@ -81,7 +81,7 @@ class ParameterItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ParameterItem.
+        r"""Sets the value of this ParameterItem.
 
         参数值
 

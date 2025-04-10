@@ -47,7 +47,7 @@ class ListUsersRequest:
     }
 
     def __init__(self, host_id=None, user_name=None, host_name=None, private_ip=None, login_permission=None, root_permission=None, user_group=None, enterprise_project_id=None, limit=None, offset=None, category=None, part_match=None):
-        """ListUsersRequest
+        r"""ListUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListUsersRequest:
         :type root_permission: bool
         :param user_group: 主机用户组
         :type user_group: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param limit: 每页显示数量
         :type limit: int
@@ -120,7 +120,7 @@ class ListUsersRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListUsersRequest.
+        r"""Gets the host_id of this ListUsersRequest.
 
         主机ID
 
@@ -131,7 +131,7 @@ class ListUsersRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListUsersRequest.
+        r"""Sets the host_id of this ListUsersRequest.
 
         主机ID
 
@@ -142,7 +142,7 @@ class ListUsersRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListUsersRequest.
+        r"""Gets the user_name of this ListUsersRequest.
 
         账号名称
 
@@ -153,7 +153,7 @@ class ListUsersRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListUsersRequest.
+        r"""Sets the user_name of this ListUsersRequest.
 
         账号名称
 
@@ -164,7 +164,7 @@ class ListUsersRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListUsersRequest.
+        r"""Gets the host_name of this ListUsersRequest.
 
         主机名称
 
@@ -175,7 +175,7 @@ class ListUsersRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListUsersRequest.
+        r"""Sets the host_name of this ListUsersRequest.
 
         主机名称
 
@@ -186,7 +186,7 @@ class ListUsersRequest:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ListUsersRequest.
+        r"""Gets the private_ip of this ListUsersRequest.
 
         服务器私有IP
 
@@ -197,7 +197,7 @@ class ListUsersRequest:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ListUsersRequest.
+        r"""Sets the private_ip of this ListUsersRequest.
 
         服务器私有IP
 
@@ -208,7 +208,7 @@ class ListUsersRequest:
 
     @property
     def login_permission(self):
-        """Gets the login_permission of this ListUsersRequest.
+        r"""Gets the login_permission of this ListUsersRequest.
 
         是否允许登录
 
@@ -219,7 +219,7 @@ class ListUsersRequest:
 
     @login_permission.setter
     def login_permission(self, login_permission):
-        """Sets the login_permission of this ListUsersRequest.
+        r"""Sets the login_permission of this ListUsersRequest.
 
         是否允许登录
 
@@ -230,7 +230,7 @@ class ListUsersRequest:
 
     @property
     def root_permission(self):
-        """Gets the root_permission of this ListUsersRequest.
+        r"""Gets the root_permission of this ListUsersRequest.
 
         是否有root权限
 
@@ -241,7 +241,7 @@ class ListUsersRequest:
 
     @root_permission.setter
     def root_permission(self, root_permission):
-        """Sets the root_permission of this ListUsersRequest.
+        r"""Sets the root_permission of this ListUsersRequest.
 
         是否有root权限
 
@@ -252,7 +252,7 @@ class ListUsersRequest:
 
     @property
     def user_group(self):
-        """Gets the user_group of this ListUsersRequest.
+        r"""Gets the user_group of this ListUsersRequest.
 
         主机用户组
 
@@ -263,7 +263,7 @@ class ListUsersRequest:
 
     @user_group.setter
     def user_group(self, user_group):
-        """Sets the user_group of this ListUsersRequest.
+        r"""Sets the user_group of this ListUsersRequest.
 
         主机用户组
 
@@ -274,9 +274,9 @@ class ListUsersRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListUsersRequest.
+        r"""Gets the enterprise_project_id of this ListUsersRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListUsersRequest.
         :rtype: str
@@ -285,9 +285,9 @@ class ListUsersRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListUsersRequest.
+        r"""Sets the enterprise_project_id of this ListUsersRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListUsersRequest.
         :type enterprise_project_id: str
@@ -296,7 +296,7 @@ class ListUsersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUsersRequest.
+        r"""Gets the limit of this ListUsersRequest.
 
         每页显示数量
 
@@ -307,7 +307,7 @@ class ListUsersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUsersRequest.
+        r"""Sets the limit of this ListUsersRequest.
 
         每页显示数量
 
@@ -318,7 +318,7 @@ class ListUsersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUsersRequest.
+        r"""Gets the offset of this ListUsersRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -329,7 +329,7 @@ class ListUsersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUsersRequest.
+        r"""Sets the offset of this ListUsersRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -340,7 +340,7 @@ class ListUsersRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListUsersRequest.
+        r"""Gets the category of this ListUsersRequest.
 
         类别，默认为host，包含如下： - host：主机 - container：容器
 
@@ -351,7 +351,7 @@ class ListUsersRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListUsersRequest.
+        r"""Sets the category of this ListUsersRequest.
 
         类别，默认为host，包含如下： - host：主机 - container：容器
 
@@ -362,7 +362,7 @@ class ListUsersRequest:
 
     @property
     def part_match(self):
-        """Gets the part_match of this ListUsersRequest.
+        r"""Gets the part_match of this ListUsersRequest.
 
         是否模糊匹配，默认false表示精确匹配
 
@@ -373,7 +373,7 @@ class ListUsersRequest:
 
     @part_match.setter
     def part_match(self, part_match):
-        """Sets the part_match of this ListUsersRequest.
+        r"""Sets the part_match of this ListUsersRequest.
 
         是否模糊匹配，默认false表示精确匹配
 

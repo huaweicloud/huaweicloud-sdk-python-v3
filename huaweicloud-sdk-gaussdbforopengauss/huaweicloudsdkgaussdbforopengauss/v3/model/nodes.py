@@ -35,7 +35,7 @@ class Nodes:
     }
 
     def __init__(self, id=None, name=None, availability_zone_id=None, description=None, status=None, components=None):
-        """Nodes
+        r"""Nodes
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class Nodes:
 
     @property
     def id(self):
-        """Gets the id of this Nodes.
+        r"""Gets the id of this Nodes.
 
         节点ID。
 
@@ -87,7 +87,7 @@ class Nodes:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Nodes.
+        r"""Sets the id of this Nodes.
 
         节点ID。
 
@@ -98,7 +98,7 @@ class Nodes:
 
     @property
     def name(self):
-        """Gets the name of this Nodes.
+        r"""Gets the name of this Nodes.
 
         节点名字。
 
@@ -109,7 +109,7 @@ class Nodes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Nodes.
+        r"""Sets the name of this Nodes.
 
         节点名字。
 
@@ -120,7 +120,7 @@ class Nodes:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this Nodes.
+        r"""Gets the availability_zone_id of this Nodes.
 
         节点所在可用区编码。
 
@@ -131,7 +131,7 @@ class Nodes:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this Nodes.
+        r"""Sets the availability_zone_id of this Nodes.
 
         节点所在可用区编码。
 
@@ -142,7 +142,7 @@ class Nodes:
 
     @property
     def description(self):
-        """Gets the description of this Nodes.
+        r"""Gets the description of this Nodes.
 
         可用区描述信息。
 
@@ -153,7 +153,7 @@ class Nodes:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Nodes.
+        r"""Sets the description of this Nodes.
 
         可用区描述信息。
 
@@ -164,7 +164,7 @@ class Nodes:
 
     @property
     def status(self):
-        """Gets the status of this Nodes.
+        r"""Gets the status of this Nodes.
 
         节点状态。
 
@@ -175,7 +175,7 @@ class Nodes:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Nodes.
+        r"""Sets the status of this Nodes.
 
         节点状态。
 
@@ -186,7 +186,7 @@ class Nodes:
 
     @property
     def components(self):
-        """Gets the components of this Nodes.
+        r"""Gets the components of this Nodes.
 
         组件列表。
 
@@ -197,7 +197,7 @@ class Nodes:
 
     @components.setter
     def components(self, components):
-        """Sets the components of this Nodes.
+        r"""Sets the components of this Nodes.
 
         组件列表。
 

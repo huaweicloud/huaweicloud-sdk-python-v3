@@ -28,7 +28,7 @@ class ListResourceSharePermissionsResponse(SdkResponse):
     }
 
     def __init__(self, associated_permissions=None, page_info=None):
-        """ListResourceSharePermissionsResponse
+        r"""ListResourceSharePermissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListResourceSharePermissionsResponse(SdkResponse):
 
     @property
     def associated_permissions(self):
-        """Gets the associated_permissions of this ListResourceSharePermissionsResponse.
+        r"""Gets the associated_permissions of this ListResourceSharePermissionsResponse.
 
         资源共享实例关联的共享资源权限信息列表。
 
@@ -62,7 +62,7 @@ class ListResourceSharePermissionsResponse(SdkResponse):
 
     @associated_permissions.setter
     def associated_permissions(self, associated_permissions):
-        """Sets the associated_permissions of this ListResourceSharePermissionsResponse.
+        r"""Sets the associated_permissions of this ListResourceSharePermissionsResponse.
 
         资源共享实例关联的共享资源权限信息列表。
 
@@ -73,7 +73,7 @@ class ListResourceSharePermissionsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListResourceSharePermissionsResponse.
+        r"""Gets the page_info of this ListResourceSharePermissionsResponse.
 
         :return: The page_info of this ListResourceSharePermissionsResponse.
         :rtype: :class:`huaweicloudsdkram.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListResourceSharePermissionsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListResourceSharePermissionsResponse.
+        r"""Sets the page_info of this ListResourceSharePermissionsResponse.
 
         :param page_info: The page_info of this ListResourceSharePermissionsResponse.
         :type page_info: :class:`huaweicloudsdkram.v1.PageInfo`

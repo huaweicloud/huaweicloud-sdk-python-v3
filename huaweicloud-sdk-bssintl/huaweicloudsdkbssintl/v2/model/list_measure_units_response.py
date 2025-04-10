@@ -26,7 +26,7 @@ class ListMeasureUnitsResponse(SdkResponse):
     }
 
     def __init__(self, measure_units=None):
-        """ListMeasureUnitsResponse
+        r"""ListMeasureUnitsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListMeasureUnitsResponse(SdkResponse):
 
     @property
     def measure_units(self):
-        """Gets the measure_units of this ListMeasureUnitsResponse.
+        r"""Gets the measure_units of this ListMeasureUnitsResponse.
 
         度量单位信息，具体参见表2。
 
@@ -55,7 +55,7 @@ class ListMeasureUnitsResponse(SdkResponse):
 
     @measure_units.setter
     def measure_units(self, measure_units):
-        """Sets the measure_units of this ListMeasureUnitsResponse.
+        r"""Sets the measure_units of this ListMeasureUnitsResponse.
 
         度量单位信息，具体参见表2。
 

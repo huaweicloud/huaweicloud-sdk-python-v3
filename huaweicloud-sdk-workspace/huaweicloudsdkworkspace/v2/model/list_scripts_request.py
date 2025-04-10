@@ -33,7 +33,7 @@ class ListScriptsRequest:
     }
 
     def __init__(self, offset=None, limit=None, id=None, name=None, type=None):
-        """ListScriptsRequest
+        r"""ListScriptsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListScriptsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListScriptsRequest.
+        r"""Gets the offset of this ListScriptsRequest.
 
         查询的偏移量。
 
@@ -82,7 +82,7 @@ class ListScriptsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListScriptsRequest.
+        r"""Sets the offset of this ListScriptsRequest.
 
         查询的偏移量。
 
@@ -93,7 +93,7 @@ class ListScriptsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScriptsRequest.
+        r"""Gets the limit of this ListScriptsRequest.
 
         单次查询的大小[1-100]。
 
@@ -104,7 +104,7 @@ class ListScriptsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScriptsRequest.
+        r"""Sets the limit of this ListScriptsRequest.
 
         单次查询的大小[1-100]。
 
@@ -115,7 +115,7 @@ class ListScriptsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListScriptsRequest.
+        r"""Gets the id of this ListScriptsRequest.
 
         脚本ID
 
@@ -126,7 +126,7 @@ class ListScriptsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListScriptsRequest.
+        r"""Sets the id of this ListScriptsRequest.
 
         脚本ID
 
@@ -137,7 +137,7 @@ class ListScriptsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListScriptsRequest.
+        r"""Gets the name of this ListScriptsRequest.
 
         脚本名称。
 
@@ -148,7 +148,7 @@ class ListScriptsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListScriptsRequest.
+        r"""Sets the name of this ListScriptsRequest.
 
         脚本名称。
 
@@ -159,7 +159,7 @@ class ListScriptsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListScriptsRequest.
+        r"""Gets the type of this ListScriptsRequest.
 
         脚本类型。
 
@@ -170,7 +170,7 @@ class ListScriptsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListScriptsRequest.
+        r"""Sets the type of this ListScriptsRequest.
 
         脚本类型。
 

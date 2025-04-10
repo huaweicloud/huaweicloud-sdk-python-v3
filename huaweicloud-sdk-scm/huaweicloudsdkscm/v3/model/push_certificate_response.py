@@ -24,7 +24,7 @@ class PushCertificateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """PushCertificateResponse
+        r"""PushCertificateResponse
 
         The model defined in huaweicloud sdk
 

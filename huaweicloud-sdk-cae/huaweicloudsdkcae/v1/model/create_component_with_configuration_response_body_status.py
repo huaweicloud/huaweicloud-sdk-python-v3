@@ -25,7 +25,7 @@ class CreateComponentWithConfigurationResponseBodyStatus:
     }
 
     def __init__(self, job_id=None):
-        """CreateComponentWithConfigurationResponseBodyStatus
+        r"""CreateComponentWithConfigurationResponseBodyStatus
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateComponentWithConfigurationResponseBodyStatus:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateComponentWithConfigurationResponseBodyStatus.
+        r"""Gets the job_id of this CreateComponentWithConfigurationResponseBodyStatus.
 
         任务ID。
 
@@ -54,7 +54,7 @@ class CreateComponentWithConfigurationResponseBodyStatus:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateComponentWithConfigurationResponseBodyStatus.
+        r"""Sets the job_id of this CreateComponentWithConfigurationResponseBodyStatus.
 
         任务ID。
 

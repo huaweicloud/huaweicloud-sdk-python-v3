@@ -27,7 +27,7 @@ class DownloadBlockchainSdkConfigRequest:
     }
 
     def __init__(self, blockchain_id=None, body=None):
-        """DownloadBlockchainSdkConfigRequest
+        r"""DownloadBlockchainSdkConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DownloadBlockchainSdkConfigRequest:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this DownloadBlockchainSdkConfigRequest.
+        r"""Gets the blockchain_id of this DownloadBlockchainSdkConfigRequest.
 
         blockchainID
 
@@ -60,7 +60,7 @@ class DownloadBlockchainSdkConfigRequest:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this DownloadBlockchainSdkConfigRequest.
+        r"""Sets the blockchain_id of this DownloadBlockchainSdkConfigRequest.
 
         blockchainID
 
@@ -71,7 +71,7 @@ class DownloadBlockchainSdkConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this DownloadBlockchainSdkConfigRequest.
+        r"""Gets the body of this DownloadBlockchainSdkConfigRequest.
 
         :return: The body of this DownloadBlockchainSdkConfigRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.CfgRequestBody`
@@ -80,7 +80,7 @@ class DownloadBlockchainSdkConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DownloadBlockchainSdkConfigRequest.
+        r"""Sets the body of this DownloadBlockchainSdkConfigRequest.
 
         :param body: The body of this DownloadBlockchainSdkConfigRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.CfgRequestBody`

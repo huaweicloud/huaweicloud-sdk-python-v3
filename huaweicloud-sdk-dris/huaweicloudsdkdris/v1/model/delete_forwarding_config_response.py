@@ -26,7 +26,7 @@ class DeleteForwardingConfigResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteForwardingConfigResponse
+        r"""DeleteForwardingConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteForwardingConfigResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteForwardingConfigResponse.
+        r"""Gets the body of this DeleteForwardingConfigResponse.
 
         :return: The body of this DeleteForwardingConfigResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteForwardingConfigResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteForwardingConfigResponse.
+        r"""Sets the body of this DeleteForwardingConfigResponse.
 
         :param body: The body of this DeleteForwardingConfigResponse.
         :type body: str

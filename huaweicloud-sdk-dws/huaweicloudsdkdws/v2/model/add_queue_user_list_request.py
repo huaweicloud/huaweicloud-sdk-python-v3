@@ -29,7 +29,7 @@ class AddQueueUserListRequest:
     }
 
     def __init__(self, cluster_id=None, queue_name=None, body=None):
-        """AddQueueUserListRequest
+        r"""AddQueueUserListRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AddQueueUserListRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this AddQueueUserListRequest.
+        r"""Gets the cluster_id of this AddQueueUserListRequest.
 
         集群ID
 
@@ -66,7 +66,7 @@ class AddQueueUserListRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this AddQueueUserListRequest.
+        r"""Sets the cluster_id of this AddQueueUserListRequest.
 
         集群ID
 
@@ -77,7 +77,7 @@ class AddQueueUserListRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this AddQueueUserListRequest.
+        r"""Gets the queue_name of this AddQueueUserListRequest.
 
         队列名称
 
@@ -88,7 +88,7 @@ class AddQueueUserListRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this AddQueueUserListRequest.
+        r"""Sets the queue_name of this AddQueueUserListRequest.
 
         队列名称
 
@@ -99,7 +99,7 @@ class AddQueueUserListRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddQueueUserListRequest.
+        r"""Gets the body of this AddQueueUserListRequest.
 
         :return: The body of this AddQueueUserListRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.WorkloadQueueUserReq`
@@ -108,7 +108,7 @@ class AddQueueUserListRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddQueueUserListRequest.
+        r"""Sets the body of this AddQueueUserListRequest.
 
         :param body: The body of this AddQueueUserListRequest.
         :type body: :class:`huaweicloudsdkdws.v2.WorkloadQueueUserReq`

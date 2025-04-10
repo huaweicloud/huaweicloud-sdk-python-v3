@@ -35,7 +35,7 @@ class CloseAccountStatusDto:
     }
 
     def __init__(self, account_id=None, created_at=None, updated_at=None, organization_id=None, state=None, failure_reason=None):
-        """CloseAccountStatusDto
+        r"""CloseAccountStatusDto
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class CloseAccountStatusDto:
 
     @property
     def account_id(self):
-        """Gets the account_id of this CloseAccountStatusDto.
+        r"""Gets the account_id of this CloseAccountStatusDto.
 
         账号的唯一标识符（ID）。
 
@@ -84,7 +84,7 @@ class CloseAccountStatusDto:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this CloseAccountStatusDto.
+        r"""Sets the account_id of this CloseAccountStatusDto.
 
         账号的唯一标识符（ID）。
 
@@ -95,7 +95,7 @@ class CloseAccountStatusDto:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CloseAccountStatusDto.
+        r"""Gets the created_at of this CloseAccountStatusDto.
 
         请求关闭账号的日期和时间。
 
@@ -106,7 +106,7 @@ class CloseAccountStatusDto:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CloseAccountStatusDto.
+        r"""Sets the created_at of this CloseAccountStatusDto.
 
         请求关闭账号的日期和时间。
 
@@ -117,7 +117,7 @@ class CloseAccountStatusDto:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CloseAccountStatusDto.
+        r"""Gets the updated_at of this CloseAccountStatusDto.
 
         请求关闭账号状态更新的日期和时间。
 
@@ -128,7 +128,7 @@ class CloseAccountStatusDto:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CloseAccountStatusDto.
+        r"""Sets the updated_at of this CloseAccountStatusDto.
 
         请求关闭账号状态更新的日期和时间。
 
@@ -139,7 +139,7 @@ class CloseAccountStatusDto:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this CloseAccountStatusDto.
+        r"""Gets the organization_id of this CloseAccountStatusDto.
 
         组织的唯一标识符（ID）。
 
@@ -150,7 +150,7 @@ class CloseAccountStatusDto:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this CloseAccountStatusDto.
+        r"""Sets the organization_id of this CloseAccountStatusDto.
 
         组织的唯一标识符（ID）。
 
@@ -161,7 +161,7 @@ class CloseAccountStatusDto:
 
     @property
     def state(self):
-        """Gets the state of this CloseAccountStatusDto.
+        r"""Gets the state of this CloseAccountStatusDto.
 
         关闭账号的状态，pending_closure：关闭中，suspended：已关闭
 
@@ -172,7 +172,7 @@ class CloseAccountStatusDto:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CloseAccountStatusDto.
+        r"""Sets the state of this CloseAccountStatusDto.
 
         关闭账号的状态，pending_closure：关闭中，suspended：已关闭
 
@@ -183,7 +183,7 @@ class CloseAccountStatusDto:
 
     @property
     def failure_reason(self):
-        """Gets the failure_reason of this CloseAccountStatusDto.
+        r"""Gets the failure_reason of this CloseAccountStatusDto.
 
         如果请求失败，则说明失败原因。
 
@@ -194,7 +194,7 @@ class CloseAccountStatusDto:
 
     @failure_reason.setter
     def failure_reason(self, failure_reason):
-        """Sets the failure_reason of this CloseAccountStatusDto.
+        r"""Sets the failure_reason of this CloseAccountStatusDto.
 
         如果请求失败，则说明失败原因。
 

@@ -25,7 +25,7 @@ class CreateDatabaseUserRequest:
     }
 
     def __init__(self, users=None):
-        """CreateDatabaseUserRequest
+        r"""CreateDatabaseUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateDatabaseUserRequest:
 
     @property
     def users(self):
-        """Gets the users of this CreateDatabaseUserRequest.
+        r"""Gets the users of this CreateDatabaseUserRequest.
 
         :return: The users of this CreateDatabaseUserRequest.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.CreateDatabaseUserList`]
@@ -51,7 +51,7 @@ class CreateDatabaseUserRequest:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this CreateDatabaseUserRequest.
+        r"""Sets the users of this CreateDatabaseUserRequest.
 
         :param users: The users of this CreateDatabaseUserRequest.
         :type users: list[:class:`huaweicloudsdkgaussdb.v3.CreateDatabaseUserList`]

@@ -35,7 +35,7 @@ class AutoScalingPolicyInfo:
     }
 
     def __init__(self, auto_scaling_enable=None, min_capacity=None, max_capacity=None, resources_plans=None, rules=None, tags=None):
-        """AutoScalingPolicyInfo
+        r"""AutoScalingPolicyInfo
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class AutoScalingPolicyInfo:
 
     @property
     def auto_scaling_enable(self):
-        """Gets the auto_scaling_enable of this AutoScalingPolicyInfo.
+        r"""Gets the auto_scaling_enable of this AutoScalingPolicyInfo.
 
         当前自动伸缩规则是否开启。
 
@@ -86,7 +86,7 @@ class AutoScalingPolicyInfo:
 
     @auto_scaling_enable.setter
     def auto_scaling_enable(self, auto_scaling_enable):
-        """Sets the auto_scaling_enable of this AutoScalingPolicyInfo.
+        r"""Sets the auto_scaling_enable of this AutoScalingPolicyInfo.
 
         当前自动伸缩规则是否开启。
 
@@ -97,7 +97,7 @@ class AutoScalingPolicyInfo:
 
     @property
     def min_capacity(self):
-        """Gets the min_capacity of this AutoScalingPolicyInfo.
+        r"""Gets the min_capacity of this AutoScalingPolicyInfo.
 
         指定该节点组的最小保留节点数。 取值范围：[0～500]
 
@@ -108,7 +108,7 @@ class AutoScalingPolicyInfo:
 
     @min_capacity.setter
     def min_capacity(self, min_capacity):
-        """Sets the min_capacity of this AutoScalingPolicyInfo.
+        r"""Sets the min_capacity of this AutoScalingPolicyInfo.
 
         指定该节点组的最小保留节点数。 取值范围：[0～500]
 
@@ -119,7 +119,7 @@ class AutoScalingPolicyInfo:
 
     @property
     def max_capacity(self):
-        """Gets the max_capacity of this AutoScalingPolicyInfo.
+        r"""Gets the max_capacity of this AutoScalingPolicyInfo.
 
         指定该节点组的最大节点数。 取值范围：[0～500]
 
@@ -130,7 +130,7 @@ class AutoScalingPolicyInfo:
 
     @max_capacity.setter
     def max_capacity(self, max_capacity):
-        """Sets the max_capacity of this AutoScalingPolicyInfo.
+        r"""Sets the max_capacity of this AutoScalingPolicyInfo.
 
         指定该节点组的最大节点数。 取值范围：[0～500]
 
@@ -141,7 +141,7 @@ class AutoScalingPolicyInfo:
 
     @property
     def resources_plans(self):
-        """Gets the resources_plans of this AutoScalingPolicyInfo.
+        r"""Gets the resources_plans of this AutoScalingPolicyInfo.
 
         资源计划列表。若该参数为空表示不启用资源计划。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
@@ -152,7 +152,7 @@ class AutoScalingPolicyInfo:
 
     @resources_plans.setter
     def resources_plans(self, resources_plans):
-        """Sets the resources_plans of this AutoScalingPolicyInfo.
+        r"""Sets the resources_plans of this AutoScalingPolicyInfo.
 
         资源计划列表。若该参数为空表示不启用资源计划。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
@@ -163,7 +163,7 @@ class AutoScalingPolicyInfo:
 
     @property
     def rules(self):
-        """Gets the rules of this AutoScalingPolicyInfo.
+        r"""Gets the rules of this AutoScalingPolicyInfo.
 
         自动伸缩的规则列表。 当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
@@ -174,7 +174,7 @@ class AutoScalingPolicyInfo:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this AutoScalingPolicyInfo.
+        r"""Sets the rules of this AutoScalingPolicyInfo.
 
         自动伸缩的规则列表。 当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
@@ -185,7 +185,7 @@ class AutoScalingPolicyInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this AutoScalingPolicyInfo.
+        r"""Gets the tags of this AutoScalingPolicyInfo.
 
         弹性伸缩标签列表
 
@@ -196,7 +196,7 @@ class AutoScalingPolicyInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this AutoScalingPolicyInfo.
+        r"""Sets the tags of this AutoScalingPolicyInfo.
 
         弹性伸缩标签列表
 

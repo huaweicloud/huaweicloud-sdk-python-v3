@@ -31,7 +31,7 @@ class CreateSiteInformation:
     }
 
     def __init__(self, region_id=None, project_id=None, gateway_type=None, gateway_id=None):
-        """CreateSiteInformation
+        r"""CreateSiteInformation
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateSiteInformation:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateSiteInformation.
+        r"""Gets the region_id of this CreateSiteInformation.
 
         RegionID。
 
@@ -71,7 +71,7 @@ class CreateSiteInformation:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateSiteInformation.
+        r"""Sets the region_id of this CreateSiteInformation.
 
         RegionID。
 
@@ -82,7 +82,7 @@ class CreateSiteInformation:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateSiteInformation.
+        r"""Gets the project_id of this CreateSiteInformation.
 
         实例所属项目ID。
 
@@ -93,7 +93,7 @@ class CreateSiteInformation:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateSiteInformation.
+        r"""Sets the project_id of this CreateSiteInformation.
 
         实例所属项目ID。
 
@@ -104,7 +104,7 @@ class CreateSiteInformation:
 
     @property
     def gateway_type(self):
-        """Gets the gateway_type of this CreateSiteInformation.
+        r"""Gets the gateway_type of this CreateSiteInformation.
 
         :return: The gateway_type of this CreateSiteInformation.
         :rtype: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
@@ -113,7 +113,7 @@ class CreateSiteInformation:
 
     @gateway_type.setter
     def gateway_type(self, gateway_type):
-        """Sets the gateway_type of this CreateSiteInformation.
+        r"""Sets the gateway_type of this CreateSiteInformation.
 
         :param gateway_type: The gateway_type of this CreateSiteInformation.
         :type gateway_type: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
@@ -122,7 +122,7 @@ class CreateSiteInformation:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this CreateSiteInformation.
+        r"""Gets the gateway_id of this CreateSiteInformation.
 
         实例ID。
 
@@ -133,7 +133,7 @@ class CreateSiteInformation:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this CreateSiteInformation.
+        r"""Sets the gateway_id of this CreateSiteInformation.
 
         实例ID。
 

@@ -25,7 +25,7 @@ class HostnameConfig:
     }
 
     def __init__(self, type=None):
-        """HostnameConfig
+        r"""HostnameConfig
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class HostnameConfig:
 
     @property
     def type(self):
-        """Gets the type of this HostnameConfig.
+        r"""Gets the type of this HostnameConfig.
 
         K8S节点名称配置类型, 默认为“privateIp”。  -  privateIp: 将节点私有IP作为K8S节点名称 -  cceNodeName: 将CCE节点名称作为K8S节点名称  > - 配置为cceNodeName的节点, 其节点名称、K8S节点名称以及虚机名称相同。节点名称不支持修改, 并且在ECS侧修改了虚机名称，同步云服务器时，不会将修改后的虚机名称同步到节点。 > - 配置为cceNodeName的节点，为了避免K8S节点名称冲突，系统会自动在节点名称后添加后缀，后缀的格式为中划线(-)+五位随机字符，随机字符的取值为[a-z0-9]。 
 
@@ -53,7 +53,7 @@ class HostnameConfig:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HostnameConfig.
+        r"""Sets the type of this HostnameConfig.
 
         K8S节点名称配置类型, 默认为“privateIp”。  -  privateIp: 将节点私有IP作为K8S节点名称 -  cceNodeName: 将CCE节点名称作为K8S节点名称  > - 配置为cceNodeName的节点, 其节点名称、K8S节点名称以及虚机名称相同。节点名称不支持修改, 并且在ECS侧修改了虚机名称，同步云服务器时，不会将修改后的虚机名称同步到节点。 > - 配置为cceNodeName的节点，为了避免K8S节点名称冲突，系统会自动在节点名称后添加后缀，后缀的格式为中划线(-)+五位随机字符，随机字符的取值为[a-z0-9]。 
 

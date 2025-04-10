@@ -28,7 +28,7 @@ class SearchResourceShareCountByTagsRequest:
     }
 
     def __init__(self, x_security_token=None, body=None):
-        """SearchResourceShareCountByTagsRequest
+        r"""SearchResourceShareCountByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SearchResourceShareCountByTagsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this SearchResourceShareCountByTagsRequest.
+        r"""Gets the x_security_token of this SearchResourceShareCountByTagsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -62,7 +62,7 @@ class SearchResourceShareCountByTagsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this SearchResourceShareCountByTagsRequest.
+        r"""Sets the x_security_token of this SearchResourceShareCountByTagsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -73,7 +73,7 @@ class SearchResourceShareCountByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this SearchResourceShareCountByTagsRequest.
+        r"""Gets the body of this SearchResourceShareCountByTagsRequest.
 
         :return: The body of this SearchResourceShareCountByTagsRequest.
         :rtype: :class:`huaweicloudsdkram.v1.ResourceSharesByTagsReqBody`
@@ -82,7 +82,7 @@ class SearchResourceShareCountByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SearchResourceShareCountByTagsRequest.
+        r"""Sets the body of this SearchResourceShareCountByTagsRequest.
 
         :param body: The body of this SearchResourceShareCountByTagsRequest.
         :type body: :class:`huaweicloudsdkram.v1.ResourceSharesByTagsReqBody`

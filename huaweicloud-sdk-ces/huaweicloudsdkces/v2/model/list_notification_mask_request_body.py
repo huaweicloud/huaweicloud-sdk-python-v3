@@ -39,7 +39,7 @@ class ListNotificationMaskRequestBody:
     }
 
     def __init__(self, relation_type=None, relation_ids=None, mask_id=None, mask_name=None, mask_status=None, resource_id=None, namespace=None, dimensions=None):
-        """ListNotificationMaskRequestBody
+        r"""ListNotificationMaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ListNotificationMaskRequestBody:
 
     @property
     def relation_type(self):
-        """Gets the relation_type of this ListNotificationMaskRequestBody.
+        r"""Gets the relation_type of this ListNotificationMaskRequestBody.
 
         :return: The relation_type of this ListNotificationMaskRequestBody.
         :rtype: :class:`huaweicloudsdkces.v2.ListRelationType`
@@ -99,7 +99,7 @@ class ListNotificationMaskRequestBody:
 
     @relation_type.setter
     def relation_type(self, relation_type):
-        """Sets the relation_type of this ListNotificationMaskRequestBody.
+        r"""Sets the relation_type of this ListNotificationMaskRequestBody.
 
         :param relation_type: The relation_type of this ListNotificationMaskRequestBody.
         :type relation_type: :class:`huaweicloudsdkces.v2.ListRelationType`
@@ -108,7 +108,7 @@ class ListNotificationMaskRequestBody:
 
     @property
     def relation_ids(self):
-        """Gets the relation_ids of this ListNotificationMaskRequestBody.
+        r"""Gets the relation_ids of this ListNotificationMaskRequestBody.
 
         关联编号（目前是告警规则ID）
 
@@ -119,7 +119,7 @@ class ListNotificationMaskRequestBody:
 
     @relation_ids.setter
     def relation_ids(self, relation_ids):
-        """Sets the relation_ids of this ListNotificationMaskRequestBody.
+        r"""Sets the relation_ids of this ListNotificationMaskRequestBody.
 
         关联编号（目前是告警规则ID）
 
@@ -130,7 +130,7 @@ class ListNotificationMaskRequestBody:
 
     @property
     def mask_id(self):
-        """Gets the mask_id of this ListNotificationMaskRequestBody.
+        r"""Gets the mask_id of this ListNotificationMaskRequestBody.
 
         屏蔽规则ID,可选
 
@@ -141,7 +141,7 @@ class ListNotificationMaskRequestBody:
 
     @mask_id.setter
     def mask_id(self, mask_id):
-        """Sets the mask_id of this ListNotificationMaskRequestBody.
+        r"""Sets the mask_id of this ListNotificationMaskRequestBody.
 
         屏蔽规则ID,可选
 
@@ -152,7 +152,7 @@ class ListNotificationMaskRequestBody:
 
     @property
     def mask_name(self):
-        """Gets the mask_name of this ListNotificationMaskRequestBody.
+        r"""Gets the mask_name of this ListNotificationMaskRequestBody.
 
         屏蔽规则名称,可选，只能为字母、数字、汉字、-、_，最大长度为64
 
@@ -163,7 +163,7 @@ class ListNotificationMaskRequestBody:
 
     @mask_name.setter
     def mask_name(self, mask_name):
-        """Sets the mask_name of this ListNotificationMaskRequestBody.
+        r"""Sets the mask_name of this ListNotificationMaskRequestBody.
 
         屏蔽规则名称,可选，只能为字母、数字、汉字、-、_，最大长度为64
 
@@ -174,7 +174,7 @@ class ListNotificationMaskRequestBody:
 
     @property
     def mask_status(self):
-        """Gets the mask_status of this ListNotificationMaskRequestBody.
+        r"""Gets the mask_status of this ListNotificationMaskRequestBody.
 
         屏蔽状态,可选。MASK_EFFECTIVE：已生效，MASK_INEFFECTIVE：未生效。
 
@@ -185,7 +185,7 @@ class ListNotificationMaskRequestBody:
 
     @mask_status.setter
     def mask_status(self, mask_status):
-        """Sets the mask_status of this ListNotificationMaskRequestBody.
+        r"""Sets the mask_status of this ListNotificationMaskRequestBody.
 
         屏蔽状态,可选。MASK_EFFECTIVE：已生效，MASK_INEFFECTIVE：未生效。
 
@@ -196,7 +196,7 @@ class ListNotificationMaskRequestBody:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListNotificationMaskRequestBody.
+        r"""Gets the resource_id of this ListNotificationMaskRequestBody.
 
         资源维度值,提供一个维度的资源ID即可,可选
 
@@ -207,7 +207,7 @@ class ListNotificationMaskRequestBody:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListNotificationMaskRequestBody.
+        r"""Sets the resource_id of this ListNotificationMaskRequestBody.
 
         资源维度值,提供一个维度的资源ID即可,可选
 
@@ -218,7 +218,7 @@ class ListNotificationMaskRequestBody:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListNotificationMaskRequestBody.
+        r"""Gets the namespace of this ListNotificationMaskRequestBody.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -229,7 +229,7 @@ class ListNotificationMaskRequestBody:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListNotificationMaskRequestBody.
+        r"""Sets the namespace of this ListNotificationMaskRequestBody.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -240,7 +240,7 @@ class ListNotificationMaskRequestBody:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this ListNotificationMaskRequestBody.
+        r"""Gets the dimensions of this ListNotificationMaskRequestBody.
 
         资源的维度信息
 
@@ -251,7 +251,7 @@ class ListNotificationMaskRequestBody:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this ListNotificationMaskRequestBody.
+        r"""Sets the dimensions of this ListNotificationMaskRequestBody.
 
         资源的维度信息
 

@@ -25,7 +25,7 @@ class StartServersInfo:
     }
 
     def __init__(self, servers=None):
-        """StartServersInfo
+        r"""StartServersInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StartServersInfo:
 
     @property
     def servers(self):
-        """Gets the servers of this StartServersInfo.
+        r"""Gets the servers of this StartServersInfo.
 
         裸金属服务器ID列表，详情请参见表3 servers字段数据结构说明
 
@@ -53,7 +53,7 @@ class StartServersInfo:
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this StartServersInfo.
+        r"""Sets the servers of this StartServersInfo.
 
         裸金属服务器ID列表，详情请参见表3 servers字段数据结构说明
 

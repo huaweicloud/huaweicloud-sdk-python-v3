@@ -28,7 +28,7 @@ class StartInstanceResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """StartInstanceResponse
+        r"""StartInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class StartInstanceResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this StartInstanceResponse.
+        r"""Gets the result of this StartInstanceResponse.
 
         返回值
 
@@ -62,7 +62,7 @@ class StartInstanceResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this StartInstanceResponse.
+        r"""Sets the result of this StartInstanceResponse.
 
         返回值
 
@@ -73,7 +73,7 @@ class StartInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this StartInstanceResponse.
+        r"""Gets the status of this StartInstanceResponse.
 
         状态
 
@@ -84,7 +84,7 @@ class StartInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StartInstanceResponse.
+        r"""Sets the status of this StartInstanceResponse.
 
         状态
 

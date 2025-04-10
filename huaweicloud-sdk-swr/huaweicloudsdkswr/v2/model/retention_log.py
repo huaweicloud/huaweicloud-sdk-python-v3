@@ -37,7 +37,7 @@ class RetentionLog:
     }
 
     def __init__(self, created_at=None, id=None, namespace=None, repo=None, retention_id=None, rule_type=None, tag=None):
-        """RetentionLog
+        r"""RetentionLog
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RetentionLog:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RetentionLog.
+        r"""Gets the created_at of this RetentionLog.
 
         创建时间
 
@@ -89,7 +89,7 @@ class RetentionLog:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RetentionLog.
+        r"""Sets the created_at of this RetentionLog.
 
         创建时间
 
@@ -100,7 +100,7 @@ class RetentionLog:
 
     @property
     def id(self):
-        """Gets the id of this RetentionLog.
+        r"""Gets the id of this RetentionLog.
 
         ID
 
@@ -111,7 +111,7 @@ class RetentionLog:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RetentionLog.
+        r"""Sets the id of this RetentionLog.
 
         ID
 
@@ -122,7 +122,7 @@ class RetentionLog:
 
     @property
     def namespace(self):
-        """Gets the namespace of this RetentionLog.
+        r"""Gets the namespace of this RetentionLog.
 
         组织名
 
@@ -133,7 +133,7 @@ class RetentionLog:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this RetentionLog.
+        r"""Sets the namespace of this RetentionLog.
 
         组织名
 
@@ -144,7 +144,7 @@ class RetentionLog:
 
     @property
     def repo(self):
-        """Gets the repo of this RetentionLog.
+        r"""Gets the repo of this RetentionLog.
 
         镜像仓库名
 
@@ -155,7 +155,7 @@ class RetentionLog:
 
     @repo.setter
     def repo(self, repo):
-        """Sets the repo of this RetentionLog.
+        r"""Sets the repo of this RetentionLog.
 
         镜像仓库名
 
@@ -166,7 +166,7 @@ class RetentionLog:
 
     @property
     def retention_id(self):
-        """Gets the retention_id of this RetentionLog.
+        r"""Gets the retention_id of this RetentionLog.
 
         老化规则ID
 
@@ -177,7 +177,7 @@ class RetentionLog:
 
     @retention_id.setter
     def retention_id(self, retention_id):
-        """Sets the retention_id of this RetentionLog.
+        r"""Sets the retention_id of this RetentionLog.
 
         老化规则ID
 
@@ -188,7 +188,7 @@ class RetentionLog:
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this RetentionLog.
+        r"""Gets the rule_type of this RetentionLog.
 
         规则
 
@@ -199,7 +199,7 @@ class RetentionLog:
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this RetentionLog.
+        r"""Sets the rule_type of this RetentionLog.
 
         规则
 
@@ -210,7 +210,7 @@ class RetentionLog:
 
     @property
     def tag(self):
-        """Gets the tag of this RetentionLog.
+        r"""Gets the tag of this RetentionLog.
 
         镜像版本
 
@@ -221,7 +221,7 @@ class RetentionLog:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this RetentionLog.
+        r"""Sets the tag of this RetentionLog.
 
         镜像版本
 

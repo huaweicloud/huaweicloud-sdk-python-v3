@@ -26,7 +26,7 @@ class SynchronizeDcConfigsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """SynchronizeDcConfigsResponse
+        r"""SynchronizeDcConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SynchronizeDcConfigsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this SynchronizeDcConfigsResponse.
+        r"""Gets the body of this SynchronizeDcConfigsResponse.
 
         :return: The body of this SynchronizeDcConfigsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class SynchronizeDcConfigsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SynchronizeDcConfigsResponse.
+        r"""Sets the body of this SynchronizeDcConfigsResponse.
 
         :param body: The body of this SynchronizeDcConfigsResponse.
         :type body: str

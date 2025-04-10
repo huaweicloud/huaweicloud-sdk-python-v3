@@ -31,7 +31,7 @@ class NpuInfo:
     }
 
     def __init__(self, name=None, type=None, capacity=None, driver_version=None):
-        """NpuInfo
+        r"""NpuInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class NpuInfo:
 
     @property
     def name(self):
-        """Gets the name of this NpuInfo.
+        r"""Gets the name of this NpuInfo.
 
         NPU名称
 
@@ -75,7 +75,7 @@ class NpuInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NpuInfo.
+        r"""Sets the name of this NpuInfo.
 
         NPU名称
 
@@ -86,7 +86,7 @@ class NpuInfo:
 
     @property
     def type(self):
-        """Gets the type of this NpuInfo.
+        r"""Gets the type of this NpuInfo.
 
         NPU类型
 
@@ -97,7 +97,7 @@ class NpuInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NpuInfo.
+        r"""Sets the type of this NpuInfo.
 
         NPU类型
 
@@ -108,7 +108,7 @@ class NpuInfo:
 
     @property
     def capacity(self):
-        """Gets the capacity of this NpuInfo.
+        r"""Gets the capacity of this NpuInfo.
 
         NPU memory大小
 
@@ -119,7 +119,7 @@ class NpuInfo:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this NpuInfo.
+        r"""Sets the capacity of this NpuInfo.
 
         NPU memory大小
 
@@ -130,7 +130,7 @@ class NpuInfo:
 
     @property
     def driver_version(self):
-        """Gets the driver_version of this NpuInfo.
+        r"""Gets the driver_version of this NpuInfo.
 
         NPU驱动版本
 
@@ -141,7 +141,7 @@ class NpuInfo:
 
     @driver_version.setter
     def driver_version(self, driver_version):
-        """Sets the driver_version of this NpuInfo.
+        r"""Sets the driver_version of this NpuInfo.
 
         NPU驱动版本
 

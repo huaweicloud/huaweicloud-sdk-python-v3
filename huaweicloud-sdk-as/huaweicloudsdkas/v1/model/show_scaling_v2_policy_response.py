@@ -26,7 +26,7 @@ class ShowScalingV2PolicyResponse(SdkResponse):
     }
 
     def __init__(self, scaling_policy=None):
-        """ShowScalingV2PolicyResponse
+        r"""ShowScalingV2PolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowScalingV2PolicyResponse(SdkResponse):
 
     @property
     def scaling_policy(self):
-        """Gets the scaling_policy of this ShowScalingV2PolicyResponse.
+        r"""Gets the scaling_policy of this ShowScalingV2PolicyResponse.
 
         :return: The scaling_policy of this ShowScalingV2PolicyResponse.
         :rtype: :class:`huaweicloudsdkas.v1.ScalingV2PolicyDetail`
@@ -53,7 +53,7 @@ class ShowScalingV2PolicyResponse(SdkResponse):
 
     @scaling_policy.setter
     def scaling_policy(self, scaling_policy):
-        """Sets the scaling_policy of this ShowScalingV2PolicyResponse.
+        r"""Sets the scaling_policy of this ShowScalingV2PolicyResponse.
 
         :param scaling_policy: The scaling_policy of this ShowScalingV2PolicyResponse.
         :type scaling_policy: :class:`huaweicloudsdkas.v1.ScalingV2PolicyDetail`

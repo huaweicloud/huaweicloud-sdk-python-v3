@@ -31,7 +31,7 @@ class MotionItem:
     }
 
     def __init__(self, timestamp=None, root=None, joints=None, eyes=None):
-        """MotionItem
+        r"""MotionItem
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MotionItem:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this MotionItem.
+        r"""Gets the timestamp of this MotionItem.
 
         时间戳，相对时间戳。  单位秒。  保留3位小数。
 
@@ -75,7 +75,7 @@ class MotionItem:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this MotionItem.
+        r"""Sets the timestamp of this MotionItem.
 
         时间戳，相对时间戳。  单位秒。  保留3位小数。
 
@@ -86,7 +86,7 @@ class MotionItem:
 
     @property
     def root(self):
-        """Gets the root of this MotionItem.
+        r"""Gets the root of this MotionItem.
 
         root 3维坐标。
 
@@ -97,7 +97,7 @@ class MotionItem:
 
     @root.setter
     def root(self, root):
-        """Sets the root of this MotionItem.
+        r"""Sets the root of this MotionItem.
 
         root 3维坐标。
 
@@ -108,7 +108,7 @@ class MotionItem:
 
     @property
     def joints(self):
-        """Gets the joints of this MotionItem.
+        r"""Gets the joints of this MotionItem.
 
         75个关节点，四元数。
 
@@ -119,7 +119,7 @@ class MotionItem:
 
     @joints.setter
     def joints(self, joints):
-        """Sets the joints of this MotionItem.
+        r"""Sets the joints of this MotionItem.
 
         75个关节点，四元数。
 
@@ -130,7 +130,7 @@ class MotionItem:
 
     @property
     def eyes(self):
-        """Gets the eyes of this MotionItem.
+        r"""Gets the eyes of this MotionItem.
 
         眼动数据
 
@@ -141,7 +141,7 @@ class MotionItem:
 
     @eyes.setter
     def eyes(self, eyes):
-        """Sets the eyes of this MotionItem.
+        r"""Sets the eyes of this MotionItem.
 
         眼动数据
 

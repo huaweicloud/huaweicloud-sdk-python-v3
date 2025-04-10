@@ -28,7 +28,7 @@ class ListServerGroupsResponse(SdkResponse):
     }
 
     def __init__(self, server_groups=None, page_info=None):
-        """ListServerGroupsResponse
+        r"""ListServerGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListServerGroupsResponse(SdkResponse):
 
     @property
     def server_groups(self):
-        """Gets the server_groups of this ListServerGroupsResponse.
+        r"""Gets the server_groups of this ListServerGroupsResponse.
 
         弹性云服务器组信息
 
@@ -62,7 +62,7 @@ class ListServerGroupsResponse(SdkResponse):
 
     @server_groups.setter
     def server_groups(self, server_groups):
-        """Sets the server_groups of this ListServerGroupsResponse.
+        r"""Sets the server_groups of this ListServerGroupsResponse.
 
         弹性云服务器组信息
 
@@ -73,7 +73,7 @@ class ListServerGroupsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListServerGroupsResponse.
+        r"""Gets the page_info of this ListServerGroupsResponse.
 
         :return: The page_info of this ListServerGroupsResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.ListServerGroupsPageInfoResult`
@@ -82,7 +82,7 @@ class ListServerGroupsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListServerGroupsResponse.
+        r"""Sets the page_info of this ListServerGroupsResponse.
 
         :param page_info: The page_info of this ListServerGroupsResponse.
         :type page_info: :class:`huaweicloudsdkecs.v2.ListServerGroupsPageInfoResult`

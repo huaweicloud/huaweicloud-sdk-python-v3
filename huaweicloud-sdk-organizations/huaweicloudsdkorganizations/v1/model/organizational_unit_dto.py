@@ -31,7 +31,7 @@ class OrganizationalUnitDto:
     }
 
     def __init__(self, id=None, urn=None, name=None, created_at=None):
-        """OrganizationalUnitDto
+        r"""OrganizationalUnitDto
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class OrganizationalUnitDto:
 
     @property
     def id(self):
-        """Gets the id of this OrganizationalUnitDto.
+        r"""Gets the id of this OrganizationalUnitDto.
 
         与组织单元关联的唯一标识符（ID）。
 
@@ -71,7 +71,7 @@ class OrganizationalUnitDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OrganizationalUnitDto.
+        r"""Sets the id of this OrganizationalUnitDto.
 
         与组织单元关联的唯一标识符（ID）。
 
@@ -82,7 +82,7 @@ class OrganizationalUnitDto:
 
     @property
     def urn(self):
-        """Gets the urn of this OrganizationalUnitDto.
+        r"""Gets the urn of this OrganizationalUnitDto.
 
         组织单元的统一资源名称。
 
@@ -93,7 +93,7 @@ class OrganizationalUnitDto:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this OrganizationalUnitDto.
+        r"""Sets the urn of this OrganizationalUnitDto.
 
         组织单元的统一资源名称。
 
@@ -104,7 +104,7 @@ class OrganizationalUnitDto:
 
     @property
     def name(self):
-        """Gets the name of this OrganizationalUnitDto.
+        r"""Gets the name of this OrganizationalUnitDto.
 
         组织单元的名称。
 
@@ -115,7 +115,7 @@ class OrganizationalUnitDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OrganizationalUnitDto.
+        r"""Sets the name of this OrganizationalUnitDto.
 
         组织单元的名称。
 
@@ -126,7 +126,7 @@ class OrganizationalUnitDto:
 
     @property
     def created_at(self):
-        """Gets the created_at of this OrganizationalUnitDto.
+        r"""Gets the created_at of this OrganizationalUnitDto.
 
         组织单元的创建时间。
 
@@ -137,7 +137,7 @@ class OrganizationalUnitDto:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this OrganizationalUnitDto.
+        r"""Sets the created_at of this OrganizationalUnitDto.
 
         组织单元的创建时间。
 

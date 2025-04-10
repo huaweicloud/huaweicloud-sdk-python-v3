@@ -35,7 +35,7 @@ class MysqlProxyNodes:
     }
 
     def __init__(self, id=None, status=None, name=None, role=None, az_code=None, frozen_flag=None):
-        """MysqlProxyNodes
+        r"""MysqlProxyNodes
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class MysqlProxyNodes:
 
     @property
     def id(self):
-        """Gets the id of this MysqlProxyNodes.
+        r"""Gets the id of this MysqlProxyNodes.
 
         Proxy节点ID。
 
@@ -89,7 +89,7 @@ class MysqlProxyNodes:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MysqlProxyNodes.
+        r"""Sets the id of this MysqlProxyNodes.
 
         Proxy节点ID。
 
@@ -100,7 +100,7 @@ class MysqlProxyNodes:
 
     @property
     def status(self):
-        """Gets the status of this MysqlProxyNodes.
+        r"""Gets the status of this MysqlProxyNodes.
 
         Proxy节点状态。  取值范围： - ACTIVE，表示节点正常 - ABNORMAL，表示节点异常 - FAILED，表示节点失败 - DELETED，表示节点已删除
 
@@ -111,7 +111,7 @@ class MysqlProxyNodes:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MysqlProxyNodes.
+        r"""Sets the status of this MysqlProxyNodes.
 
         Proxy节点状态。  取值范围： - ACTIVE，表示节点正常 - ABNORMAL，表示节点异常 - FAILED，表示节点失败 - DELETED，表示节点已删除
 
@@ -122,7 +122,7 @@ class MysqlProxyNodes:
 
     @property
     def name(self):
-        """Gets the name of this MysqlProxyNodes.
+        r"""Gets the name of this MysqlProxyNodes.
 
         Proxy节点名称。
 
@@ -133,7 +133,7 @@ class MysqlProxyNodes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MysqlProxyNodes.
+        r"""Sets the name of this MysqlProxyNodes.
 
         Proxy节点名称。
 
@@ -144,7 +144,7 @@ class MysqlProxyNodes:
 
     @property
     def role(self):
-        """Gets the role of this MysqlProxyNodes.
+        r"""Gets the role of this MysqlProxyNodes.
 
         Proxy节点角色：master和slave。
 
@@ -155,7 +155,7 @@ class MysqlProxyNodes:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this MysqlProxyNodes.
+        r"""Sets the role of this MysqlProxyNodes.
 
         Proxy节点角色：master和slave。
 
@@ -166,7 +166,7 @@ class MysqlProxyNodes:
 
     @property
     def az_code(self):
-        """Gets the az_code of this MysqlProxyNodes.
+        r"""Gets the az_code of this MysqlProxyNodes.
 
         可用区。
 
@@ -177,7 +177,7 @@ class MysqlProxyNodes:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this MysqlProxyNodes.
+        r"""Sets the az_code of this MysqlProxyNodes.
 
         可用区。
 
@@ -188,7 +188,7 @@ class MysqlProxyNodes:
 
     @property
     def frozen_flag(self):
-        """Gets the frozen_flag of this MysqlProxyNodes.
+        r"""Gets the frozen_flag of this MysqlProxyNodes.
 
         Proxy节点是否被冻结。  取值范围： - 0-未冻结 - 1-冻结 - 2-冻结删除
 
@@ -199,7 +199,7 @@ class MysqlProxyNodes:
 
     @frozen_flag.setter
     def frozen_flag(self, frozen_flag):
-        """Sets the frozen_flag of this MysqlProxyNodes.
+        r"""Sets the frozen_flag of this MysqlProxyNodes.
 
         Proxy节点是否被冻结。  取值范围： - 0-未冻结 - 1-冻结 - 2-冻结删除
 

@@ -31,7 +31,7 @@ class QosDataElement:
     }
 
     def __init__(self, time=None, value=None, alarm=None, threshold=None):
-        """QosDataElement
+        r"""QosDataElement
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class QosDataElement:
 
     @property
     def time(self):
-        """Gets the time of this QosDataElement.
+        r"""Gets the time of this QosDataElement.
 
         QoS时间点, UTC时间，格式：yyyy-MM-ddTHH:mm:ss.SSSZ。
 
@@ -75,7 +75,7 @@ class QosDataElement:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this QosDataElement.
+        r"""Sets the time of this QosDataElement.
 
         QoS时间点, UTC时间，格式：yyyy-MM-ddTHH:mm:ss.SSSZ。
 
@@ -86,7 +86,7 @@ class QosDataElement:
 
     @property
     def value(self):
-        """Gets the value of this QosDataElement.
+        r"""Gets the value of this QosDataElement.
 
         QoS值。
 
@@ -97,7 +97,7 @@ class QosDataElement:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this QosDataElement.
+        r"""Sets the value of this QosDataElement.
 
         QoS值。
 
@@ -108,7 +108,7 @@ class QosDataElement:
 
     @property
     def alarm(self):
-        """Gets the alarm of this QosDataElement.
+        r"""Gets the alarm of this QosDataElement.
 
         该时间点是否有阈值告警。 * true: 阈值告警 * false: 无阈值告警 
 
@@ -119,7 +119,7 @@ class QosDataElement:
 
     @alarm.setter
     def alarm(self, alarm):
-        """Sets the alarm of this QosDataElement.
+        r"""Sets the alarm of this QosDataElement.
 
         该时间点是否有阈值告警。 * true: 阈值告警 * false: 无阈值告警 
 
@@ -130,7 +130,7 @@ class QosDataElement:
 
     @property
     def threshold(self):
-        """Gets the threshold of this QosDataElement.
+        r"""Gets the threshold of this QosDataElement.
 
         该时间点的阈值。
 
@@ -141,7 +141,7 @@ class QosDataElement:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this QosDataElement.
+        r"""Sets the threshold of this QosDataElement.
 
         该时间点的阈值。
 

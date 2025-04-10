@@ -24,7 +24,7 @@ class ShowDbObjectTemplateResultResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """ShowDbObjectTemplateResultResponse
+        r"""ShowDbObjectTemplateResultResponse
 
         The model defined in huaweicloud sdk
 

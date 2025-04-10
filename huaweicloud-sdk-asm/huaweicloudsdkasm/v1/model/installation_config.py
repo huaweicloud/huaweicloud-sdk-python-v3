@@ -25,7 +25,7 @@ class InstallationConfig:
     }
 
     def __init__(self, nodes=None):
-        """InstallationConfig
+        r"""InstallationConfig
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class InstallationConfig:
 
     @property
     def nodes(self):
-        """Gets the nodes of this InstallationConfig.
+        r"""Gets the nodes of this InstallationConfig.
 
         :return: The nodes of this InstallationConfig.
         :rtype: :class:`huaweicloudsdkasm.v1.Selector`
@@ -52,7 +52,7 @@ class InstallationConfig:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this InstallationConfig.
+        r"""Sets the nodes of this InstallationConfig.
 
         :param nodes: The nodes of this InstallationConfig.
         :type nodes: :class:`huaweicloudsdkasm.v1.Selector`

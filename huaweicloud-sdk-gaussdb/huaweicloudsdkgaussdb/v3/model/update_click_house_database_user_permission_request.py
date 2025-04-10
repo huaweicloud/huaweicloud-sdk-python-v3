@@ -29,7 +29,7 @@ class UpdateClickHouseDatabaseUserPermissionRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """UpdateClickHouseDatabaseUserPermissionRequest
+        r"""UpdateClickHouseDatabaseUserPermissionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateClickHouseDatabaseUserPermissionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateClickHouseDatabaseUserPermissionRequest.
+        r"""Gets the instance_id of this UpdateClickHouseDatabaseUserPermissionRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -67,7 +67,7 @@ class UpdateClickHouseDatabaseUserPermissionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateClickHouseDatabaseUserPermissionRequest.
+        r"""Sets the instance_id of this UpdateClickHouseDatabaseUserPermissionRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -78,7 +78,7 @@ class UpdateClickHouseDatabaseUserPermissionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateClickHouseDatabaseUserPermissionRequest.
+        r"""Gets the x_language of this UpdateClickHouseDatabaseUserPermissionRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -89,7 +89,7 @@ class UpdateClickHouseDatabaseUserPermissionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateClickHouseDatabaseUserPermissionRequest.
+        r"""Sets the x_language of this UpdateClickHouseDatabaseUserPermissionRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -100,7 +100,7 @@ class UpdateClickHouseDatabaseUserPermissionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateClickHouseDatabaseUserPermissionRequest.
+        r"""Gets the body of this UpdateClickHouseDatabaseUserPermissionRequest.
 
         :return: The body of this UpdateClickHouseDatabaseUserPermissionRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ClickHouseDatabaseUserPSinfo`
@@ -109,7 +109,7 @@ class UpdateClickHouseDatabaseUserPermissionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateClickHouseDatabaseUserPermissionRequest.
+        r"""Sets the body of this UpdateClickHouseDatabaseUserPermissionRequest.
 
         :param body: The body of this UpdateClickHouseDatabaseUserPermissionRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ClickHouseDatabaseUserPSinfo`

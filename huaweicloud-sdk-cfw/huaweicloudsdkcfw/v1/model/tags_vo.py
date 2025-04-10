@@ -29,7 +29,7 @@ class TagsVO:
     }
 
     def __init__(self, tag_id=None, tag_key=None, tag_value=None):
-        """TagsVO
+        r"""TagsVO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TagsVO:
 
     @property
     def tag_id(self):
-        """Gets the tag_id of this TagsVO.
+        r"""Gets the tag_id of this TagsVO.
 
         规则id
 
@@ -68,7 +68,7 @@ class TagsVO:
 
     @tag_id.setter
     def tag_id(self, tag_id):
-        """Sets the tag_id of this TagsVO.
+        r"""Sets the tag_id of this TagsVO.
 
         规则id
 
@@ -79,7 +79,7 @@ class TagsVO:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this TagsVO.
+        r"""Gets the tag_key of this TagsVO.
 
         规则标签键
 
@@ -90,7 +90,7 @@ class TagsVO:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this TagsVO.
+        r"""Sets the tag_key of this TagsVO.
 
         规则标签键
 
@@ -101,7 +101,7 @@ class TagsVO:
 
     @property
     def tag_value(self):
-        """Gets the tag_value of this TagsVO.
+        r"""Gets the tag_value of this TagsVO.
 
         规则标签值
 
@@ -112,7 +112,7 @@ class TagsVO:
 
     @tag_value.setter
     def tag_value(self, tag_value):
-        """Sets the tag_value of this TagsVO.
+        r"""Sets the tag_value of this TagsVO.
 
         规则标签值
 

@@ -25,7 +25,7 @@ class LiveWarningItem:
     }
 
     def __init__(self, warning_type=None):
-        """LiveWarningItem
+        r"""LiveWarningItem
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class LiveWarningItem:
 
     @property
     def warning_type(self):
-        """Gets the warning_type of this LiveWarningItem.
+        r"""Gets the warning_type of this LiveWarningItem.
 
         告警类型。 - TOO_LESSS_SCRIPT_ITEMS：段落（话术）数量太少。 - TOO_SHORT_SCRIPT_TIME：段落（话术）总时长太短。 - TOO_LESS_DANMAKU_RULES： 弹幕互动规则太少。 - RANDOM_PLAY_CLOSED: 随机播放开关关闭。 - ROTATION_MODEL_CLOSED: 主播轮转未配置。
 
@@ -54,7 +54,7 @@ class LiveWarningItem:
 
     @warning_type.setter
     def warning_type(self, warning_type):
-        """Sets the warning_type of this LiveWarningItem.
+        r"""Sets the warning_type of this LiveWarningItem.
 
         告警类型。 - TOO_LESSS_SCRIPT_ITEMS：段落（话术）数量太少。 - TOO_SHORT_SCRIPT_TIME：段落（话术）总时长太短。 - TOO_LESS_DANMAKU_RULES： 弹幕互动规则太少。 - RANDOM_PLAY_CLOSED: 随机播放开关关闭。 - ROTATION_MODEL_CLOSED: 主播轮转未配置。
 

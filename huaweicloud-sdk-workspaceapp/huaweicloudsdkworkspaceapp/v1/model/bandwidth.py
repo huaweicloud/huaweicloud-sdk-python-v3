@@ -77,7 +77,7 @@ class Bandwidth:
     }
 
     def __init__(self, intelligent_data_transport_flag=None, total_bandwidth_control_enable=None, options=None, display_bandwidth_control_enable=None, display_bandwidth_control_options=None, multimedia_bandwidth_control_enable=None, multimedia_bandwidth_control_options=None, usb_bandwidth_control_enable=None, usb_bandwidth_control_options=None, pcsc_bandwidth_control_enable=None, pcsc_bandwidth_control_options=None, twain_bandwidth_control_enable=None, twain_bandwidth_control_options=None, printer_bandwidth_control_enable=None, printer_bandwidth_control_options=None, com_bandwidth_control_enable=None, com_bandwidth_control_options=None, file_redirection_bandwidth_control_enable=None, file_redirection_bandwidth_control_options=None, clipboard_bandwidth_control_enable=None, clipboard_bandwidth_control_options=None, secure_channel_bandwidth_control_enable=None, secure_channel_bandwidth_control_options=None, camera_bandwidth_control_enable=None, camera_bandwidth_control_options=None, virtual_channel_bandwidth_control_enable=None, virtual_channel_bandwidth_control_options=None):
-        """Bandwidth
+        r"""Bandwidth
 
         The model defined in huaweicloud sdk
 
@@ -225,7 +225,7 @@ class Bandwidth:
 
     @property
     def intelligent_data_transport_flag(self):
-        """Gets the intelligent_data_transport_flag of this Bandwidth.
+        r"""Gets the intelligent_data_transport_flag of this Bandwidth.
 
         智能显示传输。取值为：DISABLE：表示关闭。ENABLE：表示开启。DIAGNOSTIC：诊断模式。
 
@@ -236,7 +236,7 @@ class Bandwidth:
 
     @intelligent_data_transport_flag.setter
     def intelligent_data_transport_flag(self, intelligent_data_transport_flag):
-        """Sets the intelligent_data_transport_flag of this Bandwidth.
+        r"""Sets the intelligent_data_transport_flag of this Bandwidth.
 
         智能显示传输。取值为：DISABLE：表示关闭。ENABLE：表示开启。DIAGNOSTIC：诊断模式。
 
@@ -247,7 +247,7 @@ class Bandwidth:
 
     @property
     def total_bandwidth_control_enable(self):
-        """Gets the total_bandwidth_control_enable of this Bandwidth.
+        r"""Gets the total_bandwidth_control_enable of this Bandwidth.
 
         是否开启总带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -258,7 +258,7 @@ class Bandwidth:
 
     @total_bandwidth_control_enable.setter
     def total_bandwidth_control_enable(self, total_bandwidth_control_enable):
-        """Sets the total_bandwidth_control_enable of this Bandwidth.
+        r"""Sets the total_bandwidth_control_enable of this Bandwidth.
 
         是否开启总带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -269,7 +269,7 @@ class Bandwidth:
 
     @property
     def options(self):
-        """Gets the options of this Bandwidth.
+        r"""Gets the options of this Bandwidth.
 
         :return: The options of this Bandwidth.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.TotalBandwidthControlOptions`
@@ -278,7 +278,7 @@ class Bandwidth:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this Bandwidth.
+        r"""Sets the options of this Bandwidth.
 
         :param options: The options of this Bandwidth.
         :type options: :class:`huaweicloudsdkworkspaceapp.v1.TotalBandwidthControlOptions`
@@ -287,7 +287,7 @@ class Bandwidth:
 
     @property
     def display_bandwidth_control_enable(self):
-        """Gets the display_bandwidth_control_enable of this Bandwidth.
+        r"""Gets the display_bandwidth_control_enable of this Bandwidth.
 
         是否开启显示带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -298,7 +298,7 @@ class Bandwidth:
 
     @display_bandwidth_control_enable.setter
     def display_bandwidth_control_enable(self, display_bandwidth_control_enable):
-        """Sets the display_bandwidth_control_enable of this Bandwidth.
+        r"""Sets the display_bandwidth_control_enable of this Bandwidth.
 
         是否开启显示带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -309,7 +309,7 @@ class Bandwidth:
 
     @property
     def display_bandwidth_control_options(self):
-        """Gets the display_bandwidth_control_options of this Bandwidth.
+        r"""Gets the display_bandwidth_control_options of this Bandwidth.
 
         :return: The display_bandwidth_control_options of this Bandwidth.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.DisplayBandwidthControlOptions`
@@ -318,7 +318,7 @@ class Bandwidth:
 
     @display_bandwidth_control_options.setter
     def display_bandwidth_control_options(self, display_bandwidth_control_options):
-        """Sets the display_bandwidth_control_options of this Bandwidth.
+        r"""Sets the display_bandwidth_control_options of this Bandwidth.
 
         :param display_bandwidth_control_options: The display_bandwidth_control_options of this Bandwidth.
         :type display_bandwidth_control_options: :class:`huaweicloudsdkworkspaceapp.v1.DisplayBandwidthControlOptions`
@@ -327,7 +327,7 @@ class Bandwidth:
 
     @property
     def multimedia_bandwidth_control_enable(self):
-        """Gets the multimedia_bandwidth_control_enable of this Bandwidth.
+        r"""Gets the multimedia_bandwidth_control_enable of this Bandwidth.
 
         是否开启多媒体带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -338,7 +338,7 @@ class Bandwidth:
 
     @multimedia_bandwidth_control_enable.setter
     def multimedia_bandwidth_control_enable(self, multimedia_bandwidth_control_enable):
-        """Sets the multimedia_bandwidth_control_enable of this Bandwidth.
+        r"""Sets the multimedia_bandwidth_control_enable of this Bandwidth.
 
         是否开启多媒体带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -349,7 +349,7 @@ class Bandwidth:
 
     @property
     def multimedia_bandwidth_control_options(self):
-        """Gets the multimedia_bandwidth_control_options of this Bandwidth.
+        r"""Gets the multimedia_bandwidth_control_options of this Bandwidth.
 
         :return: The multimedia_bandwidth_control_options of this Bandwidth.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.MultimediaBandwidthControlOptions`
@@ -358,7 +358,7 @@ class Bandwidth:
 
     @multimedia_bandwidth_control_options.setter
     def multimedia_bandwidth_control_options(self, multimedia_bandwidth_control_options):
-        """Sets the multimedia_bandwidth_control_options of this Bandwidth.
+        r"""Sets the multimedia_bandwidth_control_options of this Bandwidth.
 
         :param multimedia_bandwidth_control_options: The multimedia_bandwidth_control_options of this Bandwidth.
         :type multimedia_bandwidth_control_options: :class:`huaweicloudsdkworkspaceapp.v1.MultimediaBandwidthControlOptions`
@@ -367,7 +367,7 @@ class Bandwidth:
 
     @property
     def usb_bandwidth_control_enable(self):
-        """Gets the usb_bandwidth_control_enable of this Bandwidth.
+        r"""Gets the usb_bandwidth_control_enable of this Bandwidth.
 
         是否开启USB带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -378,7 +378,7 @@ class Bandwidth:
 
     @usb_bandwidth_control_enable.setter
     def usb_bandwidth_control_enable(self, usb_bandwidth_control_enable):
-        """Sets the usb_bandwidth_control_enable of this Bandwidth.
+        r"""Sets the usb_bandwidth_control_enable of this Bandwidth.
 
         是否开启USB带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -389,7 +389,7 @@ class Bandwidth:
 
     @property
     def usb_bandwidth_control_options(self):
-        """Gets the usb_bandwidth_control_options of this Bandwidth.
+        r"""Gets the usb_bandwidth_control_options of this Bandwidth.
 
         :return: The usb_bandwidth_control_options of this Bandwidth.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UsbBandwidthControlOptions`
@@ -398,7 +398,7 @@ class Bandwidth:
 
     @usb_bandwidth_control_options.setter
     def usb_bandwidth_control_options(self, usb_bandwidth_control_options):
-        """Sets the usb_bandwidth_control_options of this Bandwidth.
+        r"""Sets the usb_bandwidth_control_options of this Bandwidth.
 
         :param usb_bandwidth_control_options: The usb_bandwidth_control_options of this Bandwidth.
         :type usb_bandwidth_control_options: :class:`huaweicloudsdkworkspaceapp.v1.UsbBandwidthControlOptions`
@@ -407,7 +407,7 @@ class Bandwidth:
 
     @property
     def pcsc_bandwidth_control_enable(self):
-        """Gets the pcsc_bandwidth_control_enable of this Bandwidth.
+        r"""Gets the pcsc_bandwidth_control_enable of this Bandwidth.
 
         是否开启PCSC控制。取值为：false：表示关闭。true：表示开启。
 
@@ -418,7 +418,7 @@ class Bandwidth:
 
     @pcsc_bandwidth_control_enable.setter
     def pcsc_bandwidth_control_enable(self, pcsc_bandwidth_control_enable):
-        """Sets the pcsc_bandwidth_control_enable of this Bandwidth.
+        r"""Sets the pcsc_bandwidth_control_enable of this Bandwidth.
 
         是否开启PCSC控制。取值为：false：表示关闭。true：表示开启。
 
@@ -429,7 +429,7 @@ class Bandwidth:
 
     @property
     def pcsc_bandwidth_control_options(self):
-        """Gets the pcsc_bandwidth_control_options of this Bandwidth.
+        r"""Gets the pcsc_bandwidth_control_options of this Bandwidth.
 
         :return: The pcsc_bandwidth_control_options of this Bandwidth.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PcscBandwidthControlOptions`
@@ -438,7 +438,7 @@ class Bandwidth:
 
     @pcsc_bandwidth_control_options.setter
     def pcsc_bandwidth_control_options(self, pcsc_bandwidth_control_options):
-        """Sets the pcsc_bandwidth_control_options of this Bandwidth.
+        r"""Sets the pcsc_bandwidth_control_options of this Bandwidth.
 
         :param pcsc_bandwidth_control_options: The pcsc_bandwidth_control_options of this Bandwidth.
         :type pcsc_bandwidth_control_options: :class:`huaweicloudsdkworkspaceapp.v1.PcscBandwidthControlOptions`
@@ -447,7 +447,7 @@ class Bandwidth:
 
     @property
     def twain_bandwidth_control_enable(self):
-        """Gets the twain_bandwidth_control_enable of this Bandwidth.
+        r"""Gets the twain_bandwidth_control_enable of this Bandwidth.
 
         是否开启TWAIN带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -458,7 +458,7 @@ class Bandwidth:
 
     @twain_bandwidth_control_enable.setter
     def twain_bandwidth_control_enable(self, twain_bandwidth_control_enable):
-        """Sets the twain_bandwidth_control_enable of this Bandwidth.
+        r"""Sets the twain_bandwidth_control_enable of this Bandwidth.
 
         是否开启TWAIN带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -469,7 +469,7 @@ class Bandwidth:
 
     @property
     def twain_bandwidth_control_options(self):
-        """Gets the twain_bandwidth_control_options of this Bandwidth.
+        r"""Gets the twain_bandwidth_control_options of this Bandwidth.
 
         :return: The twain_bandwidth_control_options of this Bandwidth.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.TwainBandwidthControlOptions`
@@ -478,7 +478,7 @@ class Bandwidth:
 
     @twain_bandwidth_control_options.setter
     def twain_bandwidth_control_options(self, twain_bandwidth_control_options):
-        """Sets the twain_bandwidth_control_options of this Bandwidth.
+        r"""Sets the twain_bandwidth_control_options of this Bandwidth.
 
         :param twain_bandwidth_control_options: The twain_bandwidth_control_options of this Bandwidth.
         :type twain_bandwidth_control_options: :class:`huaweicloudsdkworkspaceapp.v1.TwainBandwidthControlOptions`
@@ -487,7 +487,7 @@ class Bandwidth:
 
     @property
     def printer_bandwidth_control_enable(self):
-        """Gets the printer_bandwidth_control_enable of this Bandwidth.
+        r"""Gets the printer_bandwidth_control_enable of this Bandwidth.
 
         是否开启打印机带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -498,7 +498,7 @@ class Bandwidth:
 
     @printer_bandwidth_control_enable.setter
     def printer_bandwidth_control_enable(self, printer_bandwidth_control_enable):
-        """Sets the printer_bandwidth_control_enable of this Bandwidth.
+        r"""Sets the printer_bandwidth_control_enable of this Bandwidth.
 
         是否开启打印机带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -509,7 +509,7 @@ class Bandwidth:
 
     @property
     def printer_bandwidth_control_options(self):
-        """Gets the printer_bandwidth_control_options of this Bandwidth.
+        r"""Gets the printer_bandwidth_control_options of this Bandwidth.
 
         :return: The printer_bandwidth_control_options of this Bandwidth.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PrinterBandwidthControlOptions`
@@ -518,7 +518,7 @@ class Bandwidth:
 
     @printer_bandwidth_control_options.setter
     def printer_bandwidth_control_options(self, printer_bandwidth_control_options):
-        """Sets the printer_bandwidth_control_options of this Bandwidth.
+        r"""Sets the printer_bandwidth_control_options of this Bandwidth.
 
         :param printer_bandwidth_control_options: The printer_bandwidth_control_options of this Bandwidth.
         :type printer_bandwidth_control_options: :class:`huaweicloudsdkworkspaceapp.v1.PrinterBandwidthControlOptions`
@@ -527,7 +527,7 @@ class Bandwidth:
 
     @property
     def com_bandwidth_control_enable(self):
-        """Gets the com_bandwidth_control_enable of this Bandwidth.
+        r"""Gets the com_bandwidth_control_enable of this Bandwidth.
 
         是否开启串口带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -538,7 +538,7 @@ class Bandwidth:
 
     @com_bandwidth_control_enable.setter
     def com_bandwidth_control_enable(self, com_bandwidth_control_enable):
-        """Sets the com_bandwidth_control_enable of this Bandwidth.
+        r"""Sets the com_bandwidth_control_enable of this Bandwidth.
 
         是否开启串口带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -549,7 +549,7 @@ class Bandwidth:
 
     @property
     def com_bandwidth_control_options(self):
-        """Gets the com_bandwidth_control_options of this Bandwidth.
+        r"""Gets the com_bandwidth_control_options of this Bandwidth.
 
         :return: The com_bandwidth_control_options of this Bandwidth.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ComBandwidthControlOptions`
@@ -558,7 +558,7 @@ class Bandwidth:
 
     @com_bandwidth_control_options.setter
     def com_bandwidth_control_options(self, com_bandwidth_control_options):
-        """Sets the com_bandwidth_control_options of this Bandwidth.
+        r"""Sets the com_bandwidth_control_options of this Bandwidth.
 
         :param com_bandwidth_control_options: The com_bandwidth_control_options of this Bandwidth.
         :type com_bandwidth_control_options: :class:`huaweicloudsdkworkspaceapp.v1.ComBandwidthControlOptions`
@@ -567,7 +567,7 @@ class Bandwidth:
 
     @property
     def file_redirection_bandwidth_control_enable(self):
-        """Gets the file_redirection_bandwidth_control_enable of this Bandwidth.
+        r"""Gets the file_redirection_bandwidth_control_enable of this Bandwidth.
 
         是否开启文件重定向带宽控制。取值为：false：表示关闭。true：表示开启
 
@@ -578,7 +578,7 @@ class Bandwidth:
 
     @file_redirection_bandwidth_control_enable.setter
     def file_redirection_bandwidth_control_enable(self, file_redirection_bandwidth_control_enable):
-        """Sets the file_redirection_bandwidth_control_enable of this Bandwidth.
+        r"""Sets the file_redirection_bandwidth_control_enable of this Bandwidth.
 
         是否开启文件重定向带宽控制。取值为：false：表示关闭。true：表示开启
 
@@ -589,7 +589,7 @@ class Bandwidth:
 
     @property
     def file_redirection_bandwidth_control_options(self):
-        """Gets the file_redirection_bandwidth_control_options of this Bandwidth.
+        r"""Gets the file_redirection_bandwidth_control_options of this Bandwidth.
 
         :return: The file_redirection_bandwidth_control_options of this Bandwidth.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.FileRedirectionBandwidthControlOptions`
@@ -598,7 +598,7 @@ class Bandwidth:
 
     @file_redirection_bandwidth_control_options.setter
     def file_redirection_bandwidth_control_options(self, file_redirection_bandwidth_control_options):
-        """Sets the file_redirection_bandwidth_control_options of this Bandwidth.
+        r"""Sets the file_redirection_bandwidth_control_options of this Bandwidth.
 
         :param file_redirection_bandwidth_control_options: The file_redirection_bandwidth_control_options of this Bandwidth.
         :type file_redirection_bandwidth_control_options: :class:`huaweicloudsdkworkspaceapp.v1.FileRedirectionBandwidthControlOptions`
@@ -607,7 +607,7 @@ class Bandwidth:
 
     @property
     def clipboard_bandwidth_control_enable(self):
-        """Gets the clipboard_bandwidth_control_enable of this Bandwidth.
+        r"""Gets the clipboard_bandwidth_control_enable of this Bandwidth.
 
         是否开启剪切板带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -618,7 +618,7 @@ class Bandwidth:
 
     @clipboard_bandwidth_control_enable.setter
     def clipboard_bandwidth_control_enable(self, clipboard_bandwidth_control_enable):
-        """Sets the clipboard_bandwidth_control_enable of this Bandwidth.
+        r"""Sets the clipboard_bandwidth_control_enable of this Bandwidth.
 
         是否开启剪切板带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -629,7 +629,7 @@ class Bandwidth:
 
     @property
     def clipboard_bandwidth_control_options(self):
-        """Gets the clipboard_bandwidth_control_options of this Bandwidth.
+        r"""Gets the clipboard_bandwidth_control_options of this Bandwidth.
 
         :return: The clipboard_bandwidth_control_options of this Bandwidth.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ClipboardBandwidthControlOptions`
@@ -638,7 +638,7 @@ class Bandwidth:
 
     @clipboard_bandwidth_control_options.setter
     def clipboard_bandwidth_control_options(self, clipboard_bandwidth_control_options):
-        """Sets the clipboard_bandwidth_control_options of this Bandwidth.
+        r"""Sets the clipboard_bandwidth_control_options of this Bandwidth.
 
         :param clipboard_bandwidth_control_options: The clipboard_bandwidth_control_options of this Bandwidth.
         :type clipboard_bandwidth_control_options: :class:`huaweicloudsdkworkspaceapp.v1.ClipboardBandwidthControlOptions`
@@ -647,7 +647,7 @@ class Bandwidth:
 
     @property
     def secure_channel_bandwidth_control_enable(self):
-        """Gets the secure_channel_bandwidth_control_enable of this Bandwidth.
+        r"""Gets the secure_channel_bandwidth_control_enable of this Bandwidth.
 
         是否开启安全通道带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -658,7 +658,7 @@ class Bandwidth:
 
     @secure_channel_bandwidth_control_enable.setter
     def secure_channel_bandwidth_control_enable(self, secure_channel_bandwidth_control_enable):
-        """Sets the secure_channel_bandwidth_control_enable of this Bandwidth.
+        r"""Sets the secure_channel_bandwidth_control_enable of this Bandwidth.
 
         是否开启安全通道带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -669,7 +669,7 @@ class Bandwidth:
 
     @property
     def secure_channel_bandwidth_control_options(self):
-        """Gets the secure_channel_bandwidth_control_options of this Bandwidth.
+        r"""Gets the secure_channel_bandwidth_control_options of this Bandwidth.
 
         :return: The secure_channel_bandwidth_control_options of this Bandwidth.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.SecureChannelBandwidthControlOptions`
@@ -678,7 +678,7 @@ class Bandwidth:
 
     @secure_channel_bandwidth_control_options.setter
     def secure_channel_bandwidth_control_options(self, secure_channel_bandwidth_control_options):
-        """Sets the secure_channel_bandwidth_control_options of this Bandwidth.
+        r"""Sets the secure_channel_bandwidth_control_options of this Bandwidth.
 
         :param secure_channel_bandwidth_control_options: The secure_channel_bandwidth_control_options of this Bandwidth.
         :type secure_channel_bandwidth_control_options: :class:`huaweicloudsdkworkspaceapp.v1.SecureChannelBandwidthControlOptions`
@@ -687,7 +687,7 @@ class Bandwidth:
 
     @property
     def camera_bandwidth_control_enable(self):
-        """Gets the camera_bandwidth_control_enable of this Bandwidth.
+        r"""Gets the camera_bandwidth_control_enable of this Bandwidth.
 
         是否开启摄像头带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -698,7 +698,7 @@ class Bandwidth:
 
     @camera_bandwidth_control_enable.setter
     def camera_bandwidth_control_enable(self, camera_bandwidth_control_enable):
-        """Sets the camera_bandwidth_control_enable of this Bandwidth.
+        r"""Sets the camera_bandwidth_control_enable of this Bandwidth.
 
         是否开启摄像头带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -709,7 +709,7 @@ class Bandwidth:
 
     @property
     def camera_bandwidth_control_options(self):
-        """Gets the camera_bandwidth_control_options of this Bandwidth.
+        r"""Gets the camera_bandwidth_control_options of this Bandwidth.
 
         :return: The camera_bandwidth_control_options of this Bandwidth.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CameraBandwidthControlOptions`
@@ -718,7 +718,7 @@ class Bandwidth:
 
     @camera_bandwidth_control_options.setter
     def camera_bandwidth_control_options(self, camera_bandwidth_control_options):
-        """Sets the camera_bandwidth_control_options of this Bandwidth.
+        r"""Sets the camera_bandwidth_control_options of this Bandwidth.
 
         :param camera_bandwidth_control_options: The camera_bandwidth_control_options of this Bandwidth.
         :type camera_bandwidth_control_options: :class:`huaweicloudsdkworkspaceapp.v1.CameraBandwidthControlOptions`
@@ -727,7 +727,7 @@ class Bandwidth:
 
     @property
     def virtual_channel_bandwidth_control_enable(self):
-        """Gets the virtual_channel_bandwidth_control_enable of this Bandwidth.
+        r"""Gets the virtual_channel_bandwidth_control_enable of this Bandwidth.
 
         是否开启虚拟通道带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -738,7 +738,7 @@ class Bandwidth:
 
     @virtual_channel_bandwidth_control_enable.setter
     def virtual_channel_bandwidth_control_enable(self, virtual_channel_bandwidth_control_enable):
-        """Sets the virtual_channel_bandwidth_control_enable of this Bandwidth.
+        r"""Sets the virtual_channel_bandwidth_control_enable of this Bandwidth.
 
         是否开启虚拟通道带宽控制。取值为：false：表示关闭。true：表示开启。
 
@@ -749,7 +749,7 @@ class Bandwidth:
 
     @property
     def virtual_channel_bandwidth_control_options(self):
-        """Gets the virtual_channel_bandwidth_control_options of this Bandwidth.
+        r"""Gets the virtual_channel_bandwidth_control_options of this Bandwidth.
 
         :return: The virtual_channel_bandwidth_control_options of this Bandwidth.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VirtualChannelBandwidthControlOptions`
@@ -758,7 +758,7 @@ class Bandwidth:
 
     @virtual_channel_bandwidth_control_options.setter
     def virtual_channel_bandwidth_control_options(self, virtual_channel_bandwidth_control_options):
-        """Sets the virtual_channel_bandwidth_control_options of this Bandwidth.
+        r"""Sets the virtual_channel_bandwidth_control_options of this Bandwidth.
 
         :param virtual_channel_bandwidth_control_options: The virtual_channel_bandwidth_control_options of this Bandwidth.
         :type virtual_channel_bandwidth_control_options: :class:`huaweicloudsdkworkspaceapp.v1.VirtualChannelBandwidthControlOptions`

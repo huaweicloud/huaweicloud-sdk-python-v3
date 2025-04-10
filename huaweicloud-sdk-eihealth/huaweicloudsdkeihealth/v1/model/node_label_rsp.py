@@ -25,7 +25,7 @@ class NodeLabelRsp:
     }
 
     def __init__(self, name=None):
-        """NodeLabelRsp
+        r"""NodeLabelRsp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NodeLabelRsp:
 
     @property
     def name(self):
-        """Gets the name of this NodeLabelRsp.
+        r"""Gets the name of this NodeLabelRsp.
 
         标签名称
 
@@ -54,7 +54,7 @@ class NodeLabelRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NodeLabelRsp.
+        r"""Sets the name of this NodeLabelRsp.
 
         标签名称
 

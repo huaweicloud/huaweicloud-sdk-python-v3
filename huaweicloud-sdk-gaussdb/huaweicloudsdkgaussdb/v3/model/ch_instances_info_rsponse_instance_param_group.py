@@ -27,7 +27,7 @@ class ChInstancesInfoRsponseInstanceParamGroup:
     }
 
     def __init__(self, id=None, name=None):
-        """ChInstancesInfoRsponseInstanceParamGroup
+        r"""ChInstancesInfoRsponseInstanceParamGroup
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ChInstancesInfoRsponseInstanceParamGroup:
 
     @property
     def id(self):
-        """Gets the id of this ChInstancesInfoRsponseInstanceParamGroup.
+        r"""Gets the id of this ChInstancesInfoRsponseInstanceParamGroup.
 
         参数ID。
 
@@ -61,7 +61,7 @@ class ChInstancesInfoRsponseInstanceParamGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ChInstancesInfoRsponseInstanceParamGroup.
+        r"""Sets the id of this ChInstancesInfoRsponseInstanceParamGroup.
 
         参数ID。
 
@@ -72,7 +72,7 @@ class ChInstancesInfoRsponseInstanceParamGroup:
 
     @property
     def name(self):
-        """Gets the name of this ChInstancesInfoRsponseInstanceParamGroup.
+        r"""Gets the name of this ChInstancesInfoRsponseInstanceParamGroup.
 
         参数名。
 
@@ -83,7 +83,7 @@ class ChInstancesInfoRsponseInstanceParamGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ChInstancesInfoRsponseInstanceParamGroup.
+        r"""Sets the name of this ChInstancesInfoRsponseInstanceParamGroup.
 
         参数名。
 

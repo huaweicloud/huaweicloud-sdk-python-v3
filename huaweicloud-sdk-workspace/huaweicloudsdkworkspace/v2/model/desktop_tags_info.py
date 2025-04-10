@@ -27,7 +27,7 @@ class DesktopTagsInfo:
     }
 
     def __init__(self, desktop_id=None, tags=None):
-        """DesktopTagsInfo
+        r"""DesktopTagsInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DesktopTagsInfo:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this DesktopTagsInfo.
+        r"""Gets the desktop_id of this DesktopTagsInfo.
 
         桌面ID
 
@@ -59,7 +59,7 @@ class DesktopTagsInfo:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this DesktopTagsInfo.
+        r"""Sets the desktop_id of this DesktopTagsInfo.
 
         桌面ID
 
@@ -70,7 +70,7 @@ class DesktopTagsInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this DesktopTagsInfo.
+        r"""Gets the tags of this DesktopTagsInfo.
 
         携带标签列表
 
@@ -81,7 +81,7 @@ class DesktopTagsInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this DesktopTagsInfo.
+        r"""Sets the tags of this DesktopTagsInfo.
 
         携带标签列表
 

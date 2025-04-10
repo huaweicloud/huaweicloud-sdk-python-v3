@@ -33,7 +33,7 @@ class ResourceStatDataRsp:
     }
 
     def __init__(self, statistic=None, unit=None, metric_name=None, resource_id=None, device_id=None):
-        """ResourceStatDataRsp
+        r"""ResourceStatDataRsp
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ResourceStatDataRsp:
 
     @property
     def statistic(self):
-        """Gets the statistic of this ResourceStatDataRsp.
+        r"""Gets the statistic of this ResourceStatDataRsp.
 
         统计值
 
@@ -82,7 +82,7 @@ class ResourceStatDataRsp:
 
     @statistic.setter
     def statistic(self, statistic):
-        """Sets the statistic of this ResourceStatDataRsp.
+        r"""Sets the statistic of this ResourceStatDataRsp.
 
         统计值
 
@@ -93,7 +93,7 @@ class ResourceStatDataRsp:
 
     @property
     def unit(self):
-        """Gets the unit of this ResourceStatDataRsp.
+        r"""Gets the unit of this ResourceStatDataRsp.
 
         数据单位
 
@@ -104,7 +104,7 @@ class ResourceStatDataRsp:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ResourceStatDataRsp.
+        r"""Sets the unit of this ResourceStatDataRsp.
 
         数据单位
 
@@ -115,7 +115,7 @@ class ResourceStatDataRsp:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ResourceStatDataRsp.
+        r"""Gets the metric_name of this ResourceStatDataRsp.
 
         监控指标名称
 
@@ -126,7 +126,7 @@ class ResourceStatDataRsp:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ResourceStatDataRsp.
+        r"""Sets the metric_name of this ResourceStatDataRsp.
 
         监控指标名称
 
@@ -137,7 +137,7 @@ class ResourceStatDataRsp:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourceStatDataRsp.
+        r"""Gets the resource_id of this ResourceStatDataRsp.
 
         监控资源id
 
@@ -148,7 +148,7 @@ class ResourceStatDataRsp:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourceStatDataRsp.
+        r"""Sets the resource_id of this ResourceStatDataRsp.
 
         监控资源id
 
@@ -159,7 +159,7 @@ class ResourceStatDataRsp:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ResourceStatDataRsp.
+        r"""Gets the device_id of this ResourceStatDataRsp.
 
         显卡id
 
@@ -170,7 +170,7 @@ class ResourceStatDataRsp:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ResourceStatDataRsp.
+        r"""Sets the device_id of this ResourceStatDataRsp.
 
         显卡id
 

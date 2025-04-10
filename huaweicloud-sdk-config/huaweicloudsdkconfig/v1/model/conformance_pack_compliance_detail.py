@@ -33,7 +33,7 @@ class ConformancePackComplianceDetail:
     }
 
     def __init__(self, policy_assignment_id=None, policy_assignment_name=None, resource_id=None, compliance_state=None, evaluation_time=None):
-        """ConformancePackComplianceDetail
+        r"""ConformancePackComplianceDetail
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ConformancePackComplianceDetail:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this ConformancePackComplianceDetail.
+        r"""Gets the policy_assignment_id of this ConformancePackComplianceDetail.
 
         合规规则ID。
 
@@ -82,7 +82,7 @@ class ConformancePackComplianceDetail:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this ConformancePackComplianceDetail.
+        r"""Sets the policy_assignment_id of this ConformancePackComplianceDetail.
 
         合规规则ID。
 
@@ -93,7 +93,7 @@ class ConformancePackComplianceDetail:
 
     @property
     def policy_assignment_name(self):
-        """Gets the policy_assignment_name of this ConformancePackComplianceDetail.
+        r"""Gets the policy_assignment_name of this ConformancePackComplianceDetail.
 
         合规规则名称。
 
@@ -104,7 +104,7 @@ class ConformancePackComplianceDetail:
 
     @policy_assignment_name.setter
     def policy_assignment_name(self, policy_assignment_name):
-        """Sets the policy_assignment_name of this ConformancePackComplianceDetail.
+        r"""Sets the policy_assignment_name of this ConformancePackComplianceDetail.
 
         合规规则名称。
 
@@ -115,7 +115,7 @@ class ConformancePackComplianceDetail:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ConformancePackComplianceDetail.
+        r"""Gets the resource_id of this ConformancePackComplianceDetail.
 
         评估资源ID。
 
@@ -126,7 +126,7 @@ class ConformancePackComplianceDetail:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ConformancePackComplianceDetail.
+        r"""Sets the resource_id of this ConformancePackComplianceDetail.
 
         评估资源ID。
 
@@ -137,7 +137,7 @@ class ConformancePackComplianceDetail:
 
     @property
     def compliance_state(self):
-        """Gets the compliance_state of this ConformancePackComplianceDetail.
+        r"""Gets the compliance_state of this ConformancePackComplianceDetail.
 
         合规规则合规结果。
 
@@ -148,7 +148,7 @@ class ConformancePackComplianceDetail:
 
     @compliance_state.setter
     def compliance_state(self, compliance_state):
-        """Sets the compliance_state of this ConformancePackComplianceDetail.
+        r"""Sets the compliance_state of this ConformancePackComplianceDetail.
 
         合规规则合规结果。
 
@@ -159,7 +159,7 @@ class ConformancePackComplianceDetail:
 
     @property
     def evaluation_time(self):
-        """Gets the evaluation_time of this ConformancePackComplianceDetail.
+        r"""Gets the evaluation_time of this ConformancePackComplianceDetail.
 
         资源评估时间。
 
@@ -170,7 +170,7 @@ class ConformancePackComplianceDetail:
 
     @evaluation_time.setter
     def evaluation_time(self, evaluation_time):
-        """Sets the evaluation_time of this ConformancePackComplianceDetail.
+        r"""Sets the evaluation_time of this ConformancePackComplianceDetail.
 
         资源评估时间。
 

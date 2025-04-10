@@ -27,7 +27,7 @@ class FieldModel:
     }
 
     def __init__(self, field_name=None, is_analysis=None):
-        """FieldModel
+        r"""FieldModel
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class FieldModel:
 
     @property
     def field_name(self):
-        """Gets the field_name of this FieldModel.
+        r"""Gets the field_name of this FieldModel.
 
         字段名称
 
@@ -60,7 +60,7 @@ class FieldModel:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this FieldModel.
+        r"""Sets the field_name of this FieldModel.
 
         字段名称
 
@@ -71,7 +71,7 @@ class FieldModel:
 
     @property
     def is_analysis(self):
-        """Gets the is_analysis of this FieldModel.
+        r"""Gets the is_analysis of this FieldModel.
 
         是否开启快速分析。
 
@@ -82,7 +82,7 @@ class FieldModel:
 
     @is_analysis.setter
     def is_analysis(self, is_analysis):
-        """Sets the is_analysis of this FieldModel.
+        r"""Sets the is_analysis of this FieldModel.
 
         是否开启快速分析。
 

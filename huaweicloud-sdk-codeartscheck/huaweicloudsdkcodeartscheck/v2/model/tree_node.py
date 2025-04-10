@@ -31,7 +31,7 @@ class TreeNode:
     }
 
     def __init__(self, file_name=None, file_path=None, is_leaf=None, checkbox_status=None):
-        """TreeNode
+        r"""TreeNode
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TreeNode:
 
     @property
     def file_name(self):
-        """Gets the file_name of this TreeNode.
+        r"""Gets the file_name of this TreeNode.
 
         目录或文件名
 
@@ -75,7 +75,7 @@ class TreeNode:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this TreeNode.
+        r"""Sets the file_name of this TreeNode.
 
         目录或文件名
 
@@ -86,7 +86,7 @@ class TreeNode:
 
     @property
     def file_path(self):
-        """Gets the file_path of this TreeNode.
+        r"""Gets the file_path of this TreeNode.
 
         目录或文件路径
 
@@ -97,7 +97,7 @@ class TreeNode:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this TreeNode.
+        r"""Sets the file_path of this TreeNode.
 
         目录或文件路径
 
@@ -108,7 +108,7 @@ class TreeNode:
 
     @property
     def is_leaf(self):
-        """Gets the is_leaf of this TreeNode.
+        r"""Gets the is_leaf of this TreeNode.
 
         是否为叶子节点，true是，false不是
 
@@ -119,7 +119,7 @@ class TreeNode:
 
     @is_leaf.setter
     def is_leaf(self, is_leaf):
-        """Sets the is_leaf of this TreeNode.
+        r"""Sets the is_leaf of this TreeNode.
 
         是否为叶子节点，true是，false不是
 
@@ -130,7 +130,7 @@ class TreeNode:
 
     @property
     def checkbox_status(self):
-        """Gets the checkbox_status of this TreeNode.
+        r"""Gets the checkbox_status of this TreeNode.
 
         屏蔽状态，包括unchecked(不屏蔽)、all(全屏蔽)、half(半屏蔽)
 
@@ -141,7 +141,7 @@ class TreeNode:
 
     @checkbox_status.setter
     def checkbox_status(self, checkbox_status):
-        """Sets the checkbox_status of this TreeNode.
+        r"""Sets the checkbox_status of this TreeNode.
 
         屏蔽状态，包括unchecked(不屏蔽)、all(全屏蔽)、half(半屏蔽)
 

@@ -31,7 +31,7 @@ class TopoNode:
     }
 
     def __init__(self, node_type=None, node_name=None, node_id=None, env_id=None):
-        """TopoNode
+        r"""TopoNode
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TopoNode:
 
     @property
     def node_type(self):
-        """Gets the node_type of this TopoNode.
+        r"""Gets the node_type of this TopoNode.
 
         节点类型。
 
@@ -75,7 +75,7 @@ class TopoNode:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this TopoNode.
+        r"""Sets the node_type of this TopoNode.
 
         节点类型。
 
@@ -86,7 +86,7 @@ class TopoNode:
 
     @property
     def node_name(self):
-        """Gets the node_name of this TopoNode.
+        r"""Gets the node_name of this TopoNode.
 
         节点名称。
 
@@ -97,7 +97,7 @@ class TopoNode:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this TopoNode.
+        r"""Sets the node_name of this TopoNode.
 
         节点名称。
 
@@ -108,7 +108,7 @@ class TopoNode:
 
     @property
     def node_id(self):
-        """Gets the node_id of this TopoNode.
+        r"""Gets the node_id of this TopoNode.
 
         节点id。
 
@@ -119,7 +119,7 @@ class TopoNode:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this TopoNode.
+        r"""Sets the node_id of this TopoNode.
 
         节点id。
 
@@ -130,7 +130,7 @@ class TopoNode:
 
     @property
     def env_id(self):
-        """Gets the env_id of this TopoNode.
+        r"""Gets the env_id of this TopoNode.
 
         环境id。
 
@@ -141,7 +141,7 @@ class TopoNode:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this TopoNode.
+        r"""Sets the env_id of this TopoNode.
 
         环境id。
 

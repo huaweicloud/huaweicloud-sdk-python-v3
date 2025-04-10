@@ -29,7 +29,7 @@ class ShowResInstanceInfoRequest:
     }
 
     def __init__(self, resource_type=None, action=None, body=None):
-        """ShowResInstanceInfoRequest
+        r"""ShowResInstanceInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowResInstanceInfoRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ShowResInstanceInfoRequest.
+        r"""Gets the resource_type of this ShowResInstanceInfoRequest.
 
         资源类型，此处请填写functions
 
@@ -66,7 +66,7 @@ class ShowResInstanceInfoRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ShowResInstanceInfoRequest.
+        r"""Sets the resource_type of this ShowResInstanceInfoRequest.
 
         资源类型，此处请填写functions
 
@@ -77,7 +77,7 @@ class ShowResInstanceInfoRequest:
 
     @property
     def action(self):
-        """Gets the action of this ShowResInstanceInfoRequest.
+        r"""Gets the action of this ShowResInstanceInfoRequest.
 
         禁用/启用
 
@@ -88,7 +88,7 @@ class ShowResInstanceInfoRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ShowResInstanceInfoRequest.
+        r"""Sets the action of this ShowResInstanceInfoRequest.
 
         禁用/启用
 
@@ -99,7 +99,7 @@ class ShowResInstanceInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowResInstanceInfoRequest.
+        r"""Gets the body of this ShowResInstanceInfoRequest.
 
         :return: The body of this ShowResInstanceInfoRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListEnterpriseResourceRequestBody`
@@ -108,7 +108,7 @@ class ShowResInstanceInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowResInstanceInfoRequest.
+        r"""Sets the body of this ShowResInstanceInfoRequest.
 
         :param body: The body of this ShowResInstanceInfoRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.ListEnterpriseResourceRequestBody`

@@ -41,7 +41,7 @@ class AddRsuDTO:
     }
 
     def __init__(self, name=None, description=None, esn=None, ip=None, position_description=None, related_edge_num=None, rsu_model_id=None, intersection_id=None, secret=None):
-        """AddRsuDTO
+        r"""AddRsuDTO
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class AddRsuDTO:
 
     @property
     def name(self):
-        """Gets the name of this AddRsuDTO.
+        r"""Gets the name of this AddRsuDTO.
 
         **参数说明**：RSU的名字。  **取值范围**：长度不低于1不超过128，只允许中文、字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -107,7 +107,7 @@ class AddRsuDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddRsuDTO.
+        r"""Sets the name of this AddRsuDTO.
 
         **参数说明**：RSU的名字。  **取值范围**：长度不低于1不超过128，只允许中文、字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -118,7 +118,7 @@ class AddRsuDTO:
 
     @property
     def description(self):
-        """Gets the description of this AddRsuDTO.
+        r"""Gets the description of this AddRsuDTO.
 
         **参数说明**：RSU的描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文分号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -129,7 +129,7 @@ class AddRsuDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddRsuDTO.
+        r"""Sets the description of this AddRsuDTO.
 
         **参数说明**：RSU的描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文分号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -140,7 +140,7 @@ class AddRsuDTO:
 
     @property
     def esn(self):
-        """Gets the esn of this AddRsuDTO.
+        r"""Gets the esn of this AddRsuDTO.
 
         **参数说明**：RSU的设备序列号。  **取值范围**：只允许字母、数字、下划线（_）的组合。
 
@@ -151,7 +151,7 @@ class AddRsuDTO:
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this AddRsuDTO.
+        r"""Sets the esn of this AddRsuDTO.
 
         **参数说明**：RSU的设备序列号。  **取值范围**：只允许字母、数字、下划线（_）的组合。
 
@@ -162,7 +162,7 @@ class AddRsuDTO:
 
     @property
     def ip(self):
-        """Gets the ip of this AddRsuDTO.
+        r"""Gets the ip of this AddRsuDTO.
 
         **参数说明**：RSU的IP。满足IP的格式，例如127.0.0.1。
 
@@ -173,7 +173,7 @@ class AddRsuDTO:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this AddRsuDTO.
+        r"""Sets the ip of this AddRsuDTO.
 
         **参数说明**：RSU的IP。满足IP的格式，例如127.0.0.1。
 
@@ -184,7 +184,7 @@ class AddRsuDTO:
 
     @property
     def position_description(self):
-        """Gets the position_description of this AddRsuDTO.
+        r"""Gets the position_description of this AddRsuDTO.
 
         **参数说明**：安装位置编码，由用户自定义。  **取值范围**：长度不低于1不超过128，只允许字母、数字、下划线（_）的组合。
 
@@ -195,7 +195,7 @@ class AddRsuDTO:
 
     @position_description.setter
     def position_description(self, position_description):
-        """Sets the position_description of this AddRsuDTO.
+        r"""Sets the position_description of this AddRsuDTO.
 
         **参数说明**：安装位置编码，由用户自定义。  **取值范围**：长度不低于1不超过128，只允许字母、数字、下划线（_）的组合。
 
@@ -206,7 +206,7 @@ class AddRsuDTO:
 
     @property
     def related_edge_num(self):
-        """Gets the related_edge_num of this AddRsuDTO.
+        r"""Gets the related_edge_num of this AddRsuDTO.
 
         **参数说明**：RSU可关联的Edge的数量。
 
@@ -217,7 +217,7 @@ class AddRsuDTO:
 
     @related_edge_num.setter
     def related_edge_num(self, related_edge_num):
-        """Sets the related_edge_num of this AddRsuDTO.
+        r"""Sets the related_edge_num of this AddRsuDTO.
 
         **参数说明**：RSU可关联的Edge的数量。
 
@@ -228,7 +228,7 @@ class AddRsuDTO:
 
     @property
     def rsu_model_id(self):
-        """Gets the rsu_model_id of this AddRsuDTO.
+        r"""Gets the rsu_model_id of this AddRsuDTO.
 
         **参数说明**：RSU型号ID，用于唯一标识一个RSU型号，在平台创建RSU型号后由平台分配获得，获取方法可参见 [创建RSU型号](https://support.huaweicloud.com/api-v2x/v2x_04_0020.html)。  **取值范围**：长度不低于1不超过36，只允许字母、数字、连接符（-）的组合。  **该字段仅供使用MQTT协议RSU设备的用户输入。使用websocket协议RSU设备的用户需忽略此字段。**
 
@@ -239,7 +239,7 @@ class AddRsuDTO:
 
     @rsu_model_id.setter
     def rsu_model_id(self, rsu_model_id):
-        """Sets the rsu_model_id of this AddRsuDTO.
+        r"""Sets the rsu_model_id of this AddRsuDTO.
 
         **参数说明**：RSU型号ID，用于唯一标识一个RSU型号，在平台创建RSU型号后由平台分配获得，获取方法可参见 [创建RSU型号](https://support.huaweicloud.com/api-v2x/v2x_04_0020.html)。  **取值范围**：长度不低于1不超过36，只允许字母、数字、连接符（-）的组合。  **该字段仅供使用MQTT协议RSU设备的用户输入。使用websocket协议RSU设备的用户需忽略此字段。**
 
@@ -250,7 +250,7 @@ class AddRsuDTO:
 
     @property
     def intersection_id(self):
-        """Gets the intersection_id of this AddRsuDTO.
+        r"""Gets the intersection_id of this AddRsuDTO.
 
         **参数说明**：在地图中，rsu所在区域对应的路口ID，也即区域ID拼接路口ID，格式为：region-node_id。其中路网最基本的构成即节点和节点之间连接的路段。节点可以是路口，也可以是一条 路的端点。一个节点的ID在同一个区域内是唯一的。
 
@@ -261,7 +261,7 @@ class AddRsuDTO:
 
     @intersection_id.setter
     def intersection_id(self, intersection_id):
-        """Sets the intersection_id of this AddRsuDTO.
+        r"""Sets the intersection_id of this AddRsuDTO.
 
         **参数说明**：在地图中，rsu所在区域对应的路口ID，也即区域ID拼接路口ID，格式为：region-node_id。其中路网最基本的构成即节点和节点之间连接的路段。节点可以是路口，也可以是一条 路的端点。一个节点的ID在同一个区域内是唯一的。
 
@@ -272,7 +272,7 @@ class AddRsuDTO:
 
     @property
     def secret(self):
-        """Gets the secret of this AddRsuDTO.
+        r"""Gets the secret of this AddRsuDTO.
 
         **参数说明**：MQTT协议RSU密钥，若携带了rsu_model_id参数，则该字段必填。RSU创建后该字段无法修改，查询RSU及查询RSU列表时该字段均不返回。  **取值范围**：只允许数字、小写字母a-f、大写字母A-F的组合。
 
@@ -283,7 +283,7 @@ class AddRsuDTO:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this AddRsuDTO.
+        r"""Sets the secret of this AddRsuDTO.
 
         **参数说明**：MQTT协议RSU密钥，若携带了rsu_model_id参数，则该字段必填。RSU创建后该字段无法修改，查询RSU及查询RSU列表时该字段均不返回。  **取值范围**：只允许数字、小写字母a-f、大写字母A-F的组合。
 

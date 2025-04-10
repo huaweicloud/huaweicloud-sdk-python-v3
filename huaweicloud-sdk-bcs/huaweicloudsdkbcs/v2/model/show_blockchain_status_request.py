@@ -25,7 +25,7 @@ class ShowBlockchainStatusRequest:
     }
 
     def __init__(self, blockchain_id=None):
-        """ShowBlockchainStatusRequest
+        r"""ShowBlockchainStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowBlockchainStatusRequest:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this ShowBlockchainStatusRequest.
+        r"""Gets the blockchain_id of this ShowBlockchainStatusRequest.
 
         blockchainID
 
@@ -53,7 +53,7 @@ class ShowBlockchainStatusRequest:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this ShowBlockchainStatusRequest.
+        r"""Sets the blockchain_id of this ShowBlockchainStatusRequest.
 
         blockchainID
 

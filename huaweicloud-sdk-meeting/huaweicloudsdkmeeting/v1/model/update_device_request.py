@@ -31,7 +31,7 @@ class UpdateDeviceRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, sn=None, body=None):
-        """UpdateDeviceRequest
+        r"""UpdateDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateDeviceRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateDeviceRequest.
+        r"""Gets the x_request_id of this UpdateDeviceRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -74,7 +74,7 @@ class UpdateDeviceRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateDeviceRequest.
+        r"""Sets the x_request_id of this UpdateDeviceRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -85,7 +85,7 @@ class UpdateDeviceRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this UpdateDeviceRequest.
+        r"""Gets the accept_language of this UpdateDeviceRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -96,7 +96,7 @@ class UpdateDeviceRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this UpdateDeviceRequest.
+        r"""Sets the accept_language of this UpdateDeviceRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -107,7 +107,7 @@ class UpdateDeviceRequest:
 
     @property
     def sn(self):
-        """Gets the sn of this UpdateDeviceRequest.
+        r"""Gets the sn of this UpdateDeviceRequest.
 
         终端SN号，仅可包含数字、字母和下划线。
 
@@ -118,7 +118,7 @@ class UpdateDeviceRequest:
 
     @sn.setter
     def sn(self, sn):
-        """Sets the sn of this UpdateDeviceRequest.
+        r"""Sets the sn of this UpdateDeviceRequest.
 
         终端SN号，仅可包含数字、字母和下划线。
 
@@ -129,7 +129,7 @@ class UpdateDeviceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDeviceRequest.
+        r"""Gets the body of this UpdateDeviceRequest.
 
         :return: The body of this UpdateDeviceRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ModDeviceDTO`
@@ -138,7 +138,7 @@ class UpdateDeviceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDeviceRequest.
+        r"""Sets the body of this UpdateDeviceRequest.
 
         :param body: The body of this UpdateDeviceRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.ModDeviceDTO`

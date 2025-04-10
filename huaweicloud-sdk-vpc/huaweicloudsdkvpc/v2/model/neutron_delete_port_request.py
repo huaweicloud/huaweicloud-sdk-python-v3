@@ -25,7 +25,7 @@ class NeutronDeletePortRequest:
     }
 
     def __init__(self, port_id=None):
-        """NeutronDeletePortRequest
+        r"""NeutronDeletePortRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NeutronDeletePortRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this NeutronDeletePortRequest.
+        r"""Gets the port_id of this NeutronDeletePortRequest.
 
         端口ID
 
@@ -53,7 +53,7 @@ class NeutronDeletePortRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this NeutronDeletePortRequest.
+        r"""Sets the port_id of this NeutronDeletePortRequest.
 
         端口ID
 

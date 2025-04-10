@@ -30,7 +30,7 @@ class ValidateHttpsInfoResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ValidateHttpsInfoResponse
+        r"""ValidateHttpsInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ValidateHttpsInfoResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ValidateHttpsInfoResponse.
+        r"""Gets the error of this ValidateHttpsInfoResponse.
 
         :return: The error of this ValidateHttpsInfoResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ValidateHttpsInfoResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ValidateHttpsInfoResponse.
+        r"""Sets the error of this ValidateHttpsInfoResponse.
 
         :param error: The error of this ValidateHttpsInfoResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ValidateHttpsInfoResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ValidateHttpsInfoResponse.
+        r"""Gets the result of this ValidateHttpsInfoResponse.
 
         响应结果
 
@@ -87,7 +87,7 @@ class ValidateHttpsInfoResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ValidateHttpsInfoResponse.
+        r"""Sets the result of this ValidateHttpsInfoResponse.
 
         响应结果
 
@@ -98,7 +98,7 @@ class ValidateHttpsInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ValidateHttpsInfoResponse.
+        r"""Gets the status of this ValidateHttpsInfoResponse.
 
         响应状态
 
@@ -109,7 +109,7 @@ class ValidateHttpsInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ValidateHttpsInfoResponse.
+        r"""Sets the status of this ValidateHttpsInfoResponse.
 
         响应状态
 

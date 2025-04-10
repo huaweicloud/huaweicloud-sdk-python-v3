@@ -28,7 +28,7 @@ class KeystoneListProtocolsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, protocols=None):
-        """KeystoneListProtocolsResponse
+        r"""KeystoneListProtocolsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class KeystoneListProtocolsResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this KeystoneListProtocolsResponse.
+        r"""Gets the links of this KeystoneListProtocolsResponse.
 
         :return: The links of this KeystoneListProtocolsResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -60,7 +60,7 @@ class KeystoneListProtocolsResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneListProtocolsResponse.
+        r"""Sets the links of this KeystoneListProtocolsResponse.
 
         :param links: The links of this KeystoneListProtocolsResponse.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -69,7 +69,7 @@ class KeystoneListProtocolsResponse(SdkResponse):
 
     @property
     def protocols(self):
-        """Gets the protocols of this KeystoneListProtocolsResponse.
+        r"""Gets the protocols of this KeystoneListProtocolsResponse.
 
         协议信息列表。
 
@@ -80,7 +80,7 @@ class KeystoneListProtocolsResponse(SdkResponse):
 
     @protocols.setter
     def protocols(self, protocols):
-        """Sets the protocols of this KeystoneListProtocolsResponse.
+        r"""Sets the protocols of this KeystoneListProtocolsResponse.
 
         协议信息列表。
 

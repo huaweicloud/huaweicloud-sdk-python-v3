@@ -26,7 +26,7 @@ class CreateKeywordsAlarmRuleResponse(SdkResponse):
     }
 
     def __init__(self, keywords_alarm_rule_id=None):
-        """CreateKeywordsAlarmRuleResponse
+        r"""CreateKeywordsAlarmRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def keywords_alarm_rule_id(self):
-        """Gets the keywords_alarm_rule_id of this CreateKeywordsAlarmRuleResponse.
+        r"""Gets the keywords_alarm_rule_id of this CreateKeywordsAlarmRuleResponse.
 
         告警规则id
 
@@ -55,7 +55,7 @@ class CreateKeywordsAlarmRuleResponse(SdkResponse):
 
     @keywords_alarm_rule_id.setter
     def keywords_alarm_rule_id(self, keywords_alarm_rule_id):
-        """Sets the keywords_alarm_rule_id of this CreateKeywordsAlarmRuleResponse.
+        r"""Sets the keywords_alarm_rule_id of this CreateKeywordsAlarmRuleResponse.
 
         告警规则id
 

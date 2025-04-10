@@ -30,7 +30,7 @@ class CreateBatchJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, job_name=None, created_at=None):
-        """CreateBatchJobResponse
+        r"""CreateBatchJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateBatchJobResponse.
+        r"""Gets the job_id of this CreateBatchJobResponse.
 
         批量处理作业ID
 
@@ -69,7 +69,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateBatchJobResponse.
+        r"""Sets the job_id of this CreateBatchJobResponse.
 
         批量处理作业ID
 
@@ -80,7 +80,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @property
     def job_name(self):
-        """Gets the job_name of this CreateBatchJobResponse.
+        r"""Gets the job_name of this CreateBatchJobResponse.
 
         批量处理作业名称
 
@@ -91,7 +91,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this CreateBatchJobResponse.
+        r"""Sets the job_name of this CreateBatchJobResponse.
 
         批量处理作业名称
 
@@ -102,7 +102,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateBatchJobResponse.
+        r"""Gets the created_at of this CreateBatchJobResponse.
 
         批量处理作业创建时间戳
 
@@ -113,7 +113,7 @@ class CreateBatchJobResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateBatchJobResponse.
+        r"""Sets the created_at of this CreateBatchJobResponse.
 
         批量处理作业创建时间戳
 

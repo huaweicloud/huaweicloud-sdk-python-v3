@@ -39,7 +39,7 @@ class ImportCertificateRequestBody:
     }
 
     def __init__(self, name=None, certificate=None, certificate_chain=None, private_key=None, duplicate_check=None, enterprise_project_id=None, enc_certificate=None, enc_private_key=None):
-        """ImportCertificateRequestBody
+        r"""ImportCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ImportCertificateRequestBody:
         :type certificate_chain: str
         :param private_key: 证书私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。
         :type private_key: str
-        :param duplicate_check: 是否允许上传相同证书。 - true：同意上传相同证书议。 - false：不同意上传相同证书。
+        :param duplicate_check: 是否允许上传相同证书。 - true：同意上传相同证书。 - false：不同意上传相同证书。
         :type duplicate_check: bool
         :param enterprise_project_id: 企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件。 - 取值为“all” - 取值为“0” - 满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
         :type enterprise_project_id: str
@@ -89,7 +89,7 @@ class ImportCertificateRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this ImportCertificateRequestBody.
+        r"""Gets the name of this ImportCertificateRequestBody.
 
         证书名称。字符长度为3~63位, 请输入英文字符，数字，下划线，中划线，英文句点。
 
@@ -100,7 +100,7 @@ class ImportCertificateRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImportCertificateRequestBody.
+        r"""Sets the name of this ImportCertificateRequestBody.
 
         证书名称。字符长度为3~63位, 请输入英文字符，数字，下划线，中划线，英文句点。
 
@@ -111,7 +111,7 @@ class ImportCertificateRequestBody:
 
     @property
     def certificate(self):
-        """Gets the certificate of this ImportCertificateRequestBody.
+        r"""Gets the certificate of this ImportCertificateRequestBody.
 
         证书内容，可包含中间证书及根证书。若certificate_chain字段传入证书链，则该字段只取证书本身。回车换行需要使用转义字符\\n或者\\r\\n替换。
 
@@ -122,7 +122,7 @@ class ImportCertificateRequestBody:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this ImportCertificateRequestBody.
+        r"""Sets the certificate of this ImportCertificateRequestBody.
 
         证书内容，可包含中间证书及根证书。若certificate_chain字段传入证书链，则该字段只取证书本身。回车换行需要使用转义字符\\n或者\\r\\n替换。
 
@@ -133,7 +133,7 @@ class ImportCertificateRequestBody:
 
     @property
     def certificate_chain(self):
-        """Gets the certificate_chain of this ImportCertificateRequestBody.
+        r"""Gets the certificate_chain of this ImportCertificateRequestBody.
 
         证书链，非必填，可通过certificate字段传入。回车换行需要使用转义字符\\n或者\\r\\n替换。
 
@@ -144,7 +144,7 @@ class ImportCertificateRequestBody:
 
     @certificate_chain.setter
     def certificate_chain(self, certificate_chain):
-        """Sets the certificate_chain of this ImportCertificateRequestBody.
+        r"""Sets the certificate_chain of this ImportCertificateRequestBody.
 
         证书链，非必填，可通过certificate字段传入。回车换行需要使用转义字符\\n或者\\r\\n替换。
 
@@ -155,7 +155,7 @@ class ImportCertificateRequestBody:
 
     @property
     def private_key(self):
-        """Gets the private_key of this ImportCertificateRequestBody.
+        r"""Gets the private_key of this ImportCertificateRequestBody.
 
         证书私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。
 
@@ -166,7 +166,7 @@ class ImportCertificateRequestBody:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this ImportCertificateRequestBody.
+        r"""Sets the private_key of this ImportCertificateRequestBody.
 
         证书私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。
 
@@ -177,9 +177,9 @@ class ImportCertificateRequestBody:
 
     @property
     def duplicate_check(self):
-        """Gets the duplicate_check of this ImportCertificateRequestBody.
+        r"""Gets the duplicate_check of this ImportCertificateRequestBody.
 
-        是否允许上传相同证书。 - true：同意上传相同证书议。 - false：不同意上传相同证书。
+        是否允许上传相同证书。 - true：同意上传相同证书。 - false：不同意上传相同证书。
 
         :return: The duplicate_check of this ImportCertificateRequestBody.
         :rtype: bool
@@ -188,9 +188,9 @@ class ImportCertificateRequestBody:
 
     @duplicate_check.setter
     def duplicate_check(self, duplicate_check):
-        """Sets the duplicate_check of this ImportCertificateRequestBody.
+        r"""Sets the duplicate_check of this ImportCertificateRequestBody.
 
-        是否允许上传相同证书。 - true：同意上传相同证书议。 - false：不同意上传相同证书。
+        是否允许上传相同证书。 - true：同意上传相同证书。 - false：不同意上传相同证书。
 
         :param duplicate_check: The duplicate_check of this ImportCertificateRequestBody.
         :type duplicate_check: bool
@@ -199,7 +199,7 @@ class ImportCertificateRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ImportCertificateRequestBody.
+        r"""Gets the enterprise_project_id of this ImportCertificateRequestBody.
 
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件。 - 取值为“all” - 取值为“0” - 满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
@@ -210,7 +210,7 @@ class ImportCertificateRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ImportCertificateRequestBody.
+        r"""Sets the enterprise_project_id of this ImportCertificateRequestBody.
 
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件。 - 取值为“all” - 取值为“0” - 满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
@@ -221,7 +221,7 @@ class ImportCertificateRequestBody:
 
     @property
     def enc_certificate(self):
-        """Gets the enc_certificate of this ImportCertificateRequestBody.
+        r"""Gets the enc_certificate of this ImportCertificateRequestBody.
 
         可选参数，国密证书的加密证书内容。回车换行需要使用转义字符\\n或者\\r\\n替换。
 
@@ -232,7 +232,7 @@ class ImportCertificateRequestBody:
 
     @enc_certificate.setter
     def enc_certificate(self, enc_certificate):
-        """Sets the enc_certificate of this ImportCertificateRequestBody.
+        r"""Sets the enc_certificate of this ImportCertificateRequestBody.
 
         可选参数，国密证书的加密证书内容。回车换行需要使用转义字符\\n或者\\r\\n替换。
 
@@ -243,7 +243,7 @@ class ImportCertificateRequestBody:
 
     @property
     def enc_private_key(self):
-        """Gets the enc_private_key of this ImportCertificateRequestBody.
+        r"""Gets the enc_private_key of this ImportCertificateRequestBody.
 
         可选参数，国密证书的加密私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。
 
@@ -254,7 +254,7 @@ class ImportCertificateRequestBody:
 
     @enc_private_key.setter
     def enc_private_key(self, enc_private_key):
-        """Sets the enc_private_key of this ImportCertificateRequestBody.
+        r"""Sets the enc_private_key of this ImportCertificateRequestBody.
 
         可选参数，国密证书的加密私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。
 

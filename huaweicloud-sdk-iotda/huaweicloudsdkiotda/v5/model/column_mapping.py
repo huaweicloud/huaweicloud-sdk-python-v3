@@ -27,7 +27,7 @@ class ColumnMapping:
     }
 
     def __init__(self, column_name=None, json_key=None):
-        """ColumnMapping
+        r"""ColumnMapping
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ColumnMapping:
 
     @property
     def column_name(self):
-        """Gets the column_name of this ColumnMapping.
+        r"""Gets the column_name of this ColumnMapping.
 
         **参数说明**：数据库的列名
 
@@ -59,7 +59,7 @@ class ColumnMapping:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this ColumnMapping.
+        r"""Sets the column_name of this ColumnMapping.
 
         **参数说明**：数据库的列名
 
@@ -70,7 +70,7 @@ class ColumnMapping:
 
     @property
     def json_key(self):
-        """Gets the json_key of this ColumnMapping.
+        r"""Gets the json_key of this ColumnMapping.
 
         **参数说明**：流转数据的属性名
 
@@ -81,7 +81,7 @@ class ColumnMapping:
 
     @json_key.setter
     def json_key(self, json_key):
-        """Sets the json_key of this ColumnMapping.
+        r"""Sets the json_key of this ColumnMapping.
 
         **参数说明**：流转数据的属性名
 

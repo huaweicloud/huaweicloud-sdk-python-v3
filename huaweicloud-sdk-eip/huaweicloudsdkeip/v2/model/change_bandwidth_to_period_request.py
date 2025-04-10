@@ -25,7 +25,7 @@ class ChangeBandwidthToPeriodRequest:
     }
 
     def __init__(self, body=None):
-        """ChangeBandwidthToPeriodRequest
+        r"""ChangeBandwidthToPeriodRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeBandwidthToPeriodRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeBandwidthToPeriodRequest.
+        r"""Gets the body of this ChangeBandwidthToPeriodRequest.
 
         :return: The body of this ChangeBandwidthToPeriodRequest.
         :rtype: :class:`huaweicloudsdkeip.v2.BwChangeToPeriodReq`
@@ -52,7 +52,7 @@ class ChangeBandwidthToPeriodRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeBandwidthToPeriodRequest.
+        r"""Sets the body of this ChangeBandwidthToPeriodRequest.
 
         :param body: The body of this ChangeBandwidthToPeriodRequest.
         :type body: :class:`huaweicloudsdkeip.v2.BwChangeToPeriodReq`

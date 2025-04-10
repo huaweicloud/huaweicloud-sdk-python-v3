@@ -31,7 +31,7 @@ class BatchSetTagsReq:
     }
 
     def __init__(self, file_temp_id=None, sim_card_ids=None, iccids=None, tag_ids=None):
-        """BatchSetTagsReq
+        r"""BatchSetTagsReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BatchSetTagsReq:
 
     @property
     def file_temp_id(self):
-        """Gets the file_temp_id of this BatchSetTagsReq.
+        r"""Gets the file_temp_id of this BatchSetTagsReq.
 
         临时文件ID
 
@@ -75,7 +75,7 @@ class BatchSetTagsReq:
 
     @file_temp_id.setter
     def file_temp_id(self, file_temp_id):
-        """Sets the file_temp_id of this BatchSetTagsReq.
+        r"""Sets the file_temp_id of this BatchSetTagsReq.
 
         临时文件ID
 
@@ -86,7 +86,7 @@ class BatchSetTagsReq:
 
     @property
     def sim_card_ids(self):
-        """Gets the sim_card_ids of this BatchSetTagsReq.
+        r"""Gets the sim_card_ids of this BatchSetTagsReq.
 
         SIM卡id列表，最多500.sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
 
@@ -97,7 +97,7 @@ class BatchSetTagsReq:
 
     @sim_card_ids.setter
     def sim_card_ids(self, sim_card_ids):
-        """Sets the sim_card_ids of this BatchSetTagsReq.
+        r"""Sets the sim_card_ids of this BatchSetTagsReq.
 
         SIM卡id列表，最多500.sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
 
@@ -108,7 +108,7 @@ class BatchSetTagsReq:
 
     @property
     def iccids(self):
-        """Gets the iccids of this BatchSetTagsReq.
+        r"""Gets the iccids of this BatchSetTagsReq.
 
         iccid列表，最多支持传入500个iccid。sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
 
@@ -119,7 +119,7 @@ class BatchSetTagsReq:
 
     @iccids.setter
     def iccids(self, iccids):
-        """Sets the iccids of this BatchSetTagsReq.
+        r"""Sets the iccids of this BatchSetTagsReq.
 
         iccid列表，最多支持传入500个iccid。sim_card_ids与iccids不能同时为空，sim_card_ids参数为空则根据iccids参数处理
 
@@ -130,7 +130,7 @@ class BatchSetTagsReq:
 
     @property
     def tag_ids(self):
-        """Gets the tag_ids of this BatchSetTagsReq.
+        r"""Gets the tag_ids of this BatchSetTagsReq.
 
         绑定的标签id列表，最多10
 
@@ -141,7 +141,7 @@ class BatchSetTagsReq:
 
     @tag_ids.setter
     def tag_ids(self, tag_ids):
-        """Sets the tag_ids of this BatchSetTagsReq.
+        r"""Sets the tag_ids of this BatchSetTagsReq.
 
         绑定的标签id列表，最多10
 

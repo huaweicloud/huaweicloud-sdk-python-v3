@@ -38,7 +38,7 @@ class ShowOperationalDataCurrentMonthUsingResponse(SdkResponse):
     }
 
     def __init__(self, alert_success_rate=None, running_tasks=None, total_alerts=None, total_days=None, total_runs=None, total_tasks=None, work_item_count=None):
-        """ShowOperationalDataCurrentMonthUsingResponse
+        r"""ShowOperationalDataCurrentMonthUsingResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowOperationalDataCurrentMonthUsingResponse(SdkResponse):
 
     @property
     def alert_success_rate(self):
-        """Gets the alert_success_rate of this ShowOperationalDataCurrentMonthUsingResponse.
+        r"""Gets the alert_success_rate of this ShowOperationalDataCurrentMonthUsingResponse.
 
         告警成功比率，恒为1
 
@@ -97,7 +97,7 @@ class ShowOperationalDataCurrentMonthUsingResponse(SdkResponse):
 
     @alert_success_rate.setter
     def alert_success_rate(self, alert_success_rate):
-        """Sets the alert_success_rate of this ShowOperationalDataCurrentMonthUsingResponse.
+        r"""Sets the alert_success_rate of this ShowOperationalDataCurrentMonthUsingResponse.
 
         告警成功比率，恒为1
 
@@ -108,7 +108,7 @@ class ShowOperationalDataCurrentMonthUsingResponse(SdkResponse):
 
     @property
     def running_tasks(self):
-        """Gets the running_tasks of this ShowOperationalDataCurrentMonthUsingResponse.
+        r"""Gets the running_tasks of this ShowOperationalDataCurrentMonthUsingResponse.
 
         正在运行的任务个数
 
@@ -119,7 +119,7 @@ class ShowOperationalDataCurrentMonthUsingResponse(SdkResponse):
 
     @running_tasks.setter
     def running_tasks(self, running_tasks):
-        """Sets the running_tasks of this ShowOperationalDataCurrentMonthUsingResponse.
+        r"""Sets the running_tasks of this ShowOperationalDataCurrentMonthUsingResponse.
 
         正在运行的任务个数
 
@@ -130,7 +130,7 @@ class ShowOperationalDataCurrentMonthUsingResponse(SdkResponse):
 
     @property
     def total_alerts(self):
-        """Gets the total_alerts of this ShowOperationalDataCurrentMonthUsingResponse.
+        r"""Gets the total_alerts of this ShowOperationalDataCurrentMonthUsingResponse.
 
         总告警数
 
@@ -141,7 +141,7 @@ class ShowOperationalDataCurrentMonthUsingResponse(SdkResponse):
 
     @total_alerts.setter
     def total_alerts(self, total_alerts):
-        """Sets the total_alerts of this ShowOperationalDataCurrentMonthUsingResponse.
+        r"""Sets the total_alerts of this ShowOperationalDataCurrentMonthUsingResponse.
 
         总告警数
 
@@ -152,7 +152,7 @@ class ShowOperationalDataCurrentMonthUsingResponse(SdkResponse):
 
     @property
     def total_days(self):
-        """Gets the total_days of this ShowOperationalDataCurrentMonthUsingResponse.
+        r"""Gets the total_days of this ShowOperationalDataCurrentMonthUsingResponse.
 
         总运行天数
 
@@ -163,7 +163,7 @@ class ShowOperationalDataCurrentMonthUsingResponse(SdkResponse):
 
     @total_days.setter
     def total_days(self, total_days):
-        """Sets the total_days of this ShowOperationalDataCurrentMonthUsingResponse.
+        r"""Sets the total_days of this ShowOperationalDataCurrentMonthUsingResponse.
 
         总运行天数
 
@@ -174,7 +174,7 @@ class ShowOperationalDataCurrentMonthUsingResponse(SdkResponse):
 
     @property
     def total_runs(self):
-        """Gets the total_runs of this ShowOperationalDataCurrentMonthUsingResponse.
+        r"""Gets the total_runs of this ShowOperationalDataCurrentMonthUsingResponse.
 
         总运行个数
 
@@ -185,7 +185,7 @@ class ShowOperationalDataCurrentMonthUsingResponse(SdkResponse):
 
     @total_runs.setter
     def total_runs(self, total_runs):
-        """Sets the total_runs of this ShowOperationalDataCurrentMonthUsingResponse.
+        r"""Sets the total_runs of this ShowOperationalDataCurrentMonthUsingResponse.
 
         总运行个数
 
@@ -196,7 +196,7 @@ class ShowOperationalDataCurrentMonthUsingResponse(SdkResponse):
 
     @property
     def total_tasks(self):
-        """Gets the total_tasks of this ShowOperationalDataCurrentMonthUsingResponse.
+        r"""Gets the total_tasks of this ShowOperationalDataCurrentMonthUsingResponse.
 
         总任务个数
 
@@ -207,7 +207,7 @@ class ShowOperationalDataCurrentMonthUsingResponse(SdkResponse):
 
     @total_tasks.setter
     def total_tasks(self, total_tasks):
-        """Sets the total_tasks of this ShowOperationalDataCurrentMonthUsingResponse.
+        r"""Sets the total_tasks of this ShowOperationalDataCurrentMonthUsingResponse.
 
         总任务个数
 
@@ -218,7 +218,7 @@ class ShowOperationalDataCurrentMonthUsingResponse(SdkResponse):
 
     @property
     def work_item_count(self):
-        """Gets the work_item_count of this ShowOperationalDataCurrentMonthUsingResponse.
+        r"""Gets the work_item_count of this ShowOperationalDataCurrentMonthUsingResponse.
 
         工作项个数
 
@@ -229,7 +229,7 @@ class ShowOperationalDataCurrentMonthUsingResponse(SdkResponse):
 
     @work_item_count.setter
     def work_item_count(self, work_item_count):
-        """Sets the work_item_count of this ShowOperationalDataCurrentMonthUsingResponse.
+        r"""Sets the work_item_count of this ShowOperationalDataCurrentMonthUsingResponse.
 
         工作项个数
 

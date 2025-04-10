@@ -32,7 +32,7 @@ class ShowResWrokspaceResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, workspaces=None, message=None, error_code=None):
-        """ShowResWrokspaceResponse
+        r"""ShowResWrokspaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowResWrokspaceResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowResWrokspaceResponse.
+        r"""Gets the is_success of this ShowResWrokspaceResponse.
 
         是否成功。
 
@@ -76,7 +76,7 @@ class ShowResWrokspaceResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowResWrokspaceResponse.
+        r"""Sets the is_success of this ShowResWrokspaceResponse.
 
         是否成功。
 
@@ -87,7 +87,7 @@ class ShowResWrokspaceResponse(SdkResponse):
 
     @property
     def workspaces(self):
-        """Gets the workspaces of this ShowResWrokspaceResponse.
+        r"""Gets the workspaces of this ShowResWrokspaceResponse.
 
         工作空间详情。
 
@@ -98,7 +98,7 @@ class ShowResWrokspaceResponse(SdkResponse):
 
     @workspaces.setter
     def workspaces(self, workspaces):
-        """Sets the workspaces of this ShowResWrokspaceResponse.
+        r"""Sets the workspaces of this ShowResWrokspaceResponse.
 
         工作空间详情。
 
@@ -109,7 +109,7 @@ class ShowResWrokspaceResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowResWrokspaceResponse.
+        r"""Gets the message of this ShowResWrokspaceResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -120,7 +120,7 @@ class ShowResWrokspaceResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowResWrokspaceResponse.
+        r"""Sets the message of this ShowResWrokspaceResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -131,7 +131,7 @@ class ShowResWrokspaceResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowResWrokspaceResponse.
+        r"""Gets the error_code of this ShowResWrokspaceResponse.
 
         错误码（请求成功时，不返回此字段）。
 
@@ -142,7 +142,7 @@ class ShowResWrokspaceResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowResWrokspaceResponse.
+        r"""Sets the error_code of this ShowResWrokspaceResponse.
 
         错误码（请求成功时，不返回此字段）。
 

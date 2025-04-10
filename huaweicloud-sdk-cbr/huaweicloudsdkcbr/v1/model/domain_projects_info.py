@@ -27,7 +27,7 @@ class DomainProjectsInfo:
     }
 
     def __init__(self, project_id=None, project_name=None):
-        """DomainProjectsInfo
+        r"""DomainProjectsInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DomainProjectsInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DomainProjectsInfo.
+        r"""Gets the project_id of this DomainProjectsInfo.
 
         
 
@@ -59,7 +59,7 @@ class DomainProjectsInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DomainProjectsInfo.
+        r"""Sets the project_id of this DomainProjectsInfo.
 
         
 
@@ -70,7 +70,7 @@ class DomainProjectsInfo:
 
     @property
     def project_name(self):
-        """Gets the project_name of this DomainProjectsInfo.
+        r"""Gets the project_name of this DomainProjectsInfo.
 
         
 
@@ -81,7 +81,7 @@ class DomainProjectsInfo:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this DomainProjectsInfo.
+        r"""Sets the project_name of this DomainProjectsInfo.
 
         
 

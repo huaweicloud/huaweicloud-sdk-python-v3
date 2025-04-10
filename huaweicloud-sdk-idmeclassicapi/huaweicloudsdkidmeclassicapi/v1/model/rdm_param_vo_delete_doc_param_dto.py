@@ -27,7 +27,7 @@ class RDMParamVODeleteDocParamDto:
     }
 
     def __init__(self, application_id=None, params=None):
-        """RDMParamVODeleteDocParamDto
+        r"""RDMParamVODeleteDocParamDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RDMParamVODeleteDocParamDto:
 
     @property
     def application_id(self):
-        """Gets the application_id of this RDMParamVODeleteDocParamDto.
+        r"""Gets the application_id of this RDMParamVODeleteDocParamDto.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
 
@@ -61,7 +61,7 @@ class RDMParamVODeleteDocParamDto:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this RDMParamVODeleteDocParamDto.
+        r"""Sets the application_id of this RDMParamVODeleteDocParamDto.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。
 
@@ -72,7 +72,7 @@ class RDMParamVODeleteDocParamDto:
 
     @property
     def params(self):
-        """Gets the params of this RDMParamVODeleteDocParamDto.
+        r"""Gets the params of this RDMParamVODeleteDocParamDto.
 
         :return: The params of this RDMParamVODeleteDocParamDto.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.PersistObjectIdsDTO`
@@ -81,7 +81,7 @@ class RDMParamVODeleteDocParamDto:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RDMParamVODeleteDocParamDto.
+        r"""Sets the params of this RDMParamVODeleteDocParamDto.
 
         :param params: The params of this RDMParamVODeleteDocParamDto.
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.PersistObjectIdsDTO`

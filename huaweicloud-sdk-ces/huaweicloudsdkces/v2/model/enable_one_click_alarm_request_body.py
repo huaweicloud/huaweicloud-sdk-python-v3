@@ -37,7 +37,7 @@ class EnableOneClickAlarmRequestBody:
     }
 
     def __init__(self, one_click_alarm_id=None, dimension_names=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None):
-        """EnableOneClickAlarmRequestBody
+        r"""EnableOneClickAlarmRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class EnableOneClickAlarmRequestBody:
 
     @property
     def one_click_alarm_id(self):
-        """Gets the one_click_alarm_id of this EnableOneClickAlarmRequestBody.
+        r"""Gets the one_click_alarm_id of this EnableOneClickAlarmRequestBody.
 
         一键告警ID
 
@@ -93,7 +93,7 @@ class EnableOneClickAlarmRequestBody:
 
     @one_click_alarm_id.setter
     def one_click_alarm_id(self, one_click_alarm_id):
-        """Sets the one_click_alarm_id of this EnableOneClickAlarmRequestBody.
+        r"""Sets the one_click_alarm_id of this EnableOneClickAlarmRequestBody.
 
         一键告警ID
 
@@ -104,7 +104,7 @@ class EnableOneClickAlarmRequestBody:
 
     @property
     def dimension_names(self):
-        """Gets the dimension_names of this EnableOneClickAlarmRequestBody.
+        r"""Gets the dimension_names of this EnableOneClickAlarmRequestBody.
 
         :return: The dimension_names of this EnableOneClickAlarmRequestBody.
         :rtype: :class:`huaweicloudsdkces.v2.DimensionNames`
@@ -113,7 +113,7 @@ class EnableOneClickAlarmRequestBody:
 
     @dimension_names.setter
     def dimension_names(self, dimension_names):
-        """Sets the dimension_names of this EnableOneClickAlarmRequestBody.
+        r"""Sets the dimension_names of this EnableOneClickAlarmRequestBody.
 
         :param dimension_names: The dimension_names of this EnableOneClickAlarmRequestBody.
         :type dimension_names: :class:`huaweicloudsdkces.v2.DimensionNames`
@@ -122,7 +122,7 @@ class EnableOneClickAlarmRequestBody:
 
     @property
     def notification_enabled(self):
-        """Gets the notification_enabled of this EnableOneClickAlarmRequestBody.
+        r"""Gets the notification_enabled of this EnableOneClickAlarmRequestBody.
 
         是否开启告警通知
 
@@ -133,7 +133,7 @@ class EnableOneClickAlarmRequestBody:
 
     @notification_enabled.setter
     def notification_enabled(self, notification_enabled):
-        """Sets the notification_enabled of this EnableOneClickAlarmRequestBody.
+        r"""Sets the notification_enabled of this EnableOneClickAlarmRequestBody.
 
         是否开启告警通知
 
@@ -144,7 +144,7 @@ class EnableOneClickAlarmRequestBody:
 
     @property
     def alarm_notifications(self):
-        """Gets the alarm_notifications of this EnableOneClickAlarmRequestBody.
+        r"""Gets the alarm_notifications of this EnableOneClickAlarmRequestBody.
 
         告警触发的动作
 
@@ -155,7 +155,7 @@ class EnableOneClickAlarmRequestBody:
 
     @alarm_notifications.setter
     def alarm_notifications(self, alarm_notifications):
-        """Sets the alarm_notifications of this EnableOneClickAlarmRequestBody.
+        r"""Sets the alarm_notifications of this EnableOneClickAlarmRequestBody.
 
         告警触发的动作
 
@@ -166,7 +166,7 @@ class EnableOneClickAlarmRequestBody:
 
     @property
     def ok_notifications(self):
-        """Gets the ok_notifications of this EnableOneClickAlarmRequestBody.
+        r"""Gets the ok_notifications of this EnableOneClickAlarmRequestBody.
 
         告警恢复触发的动作
 
@@ -177,7 +177,7 @@ class EnableOneClickAlarmRequestBody:
 
     @ok_notifications.setter
     def ok_notifications(self, ok_notifications):
-        """Sets the ok_notifications of this EnableOneClickAlarmRequestBody.
+        r"""Sets the ok_notifications of this EnableOneClickAlarmRequestBody.
 
         告警恢复触发的动作
 
@@ -188,7 +188,7 @@ class EnableOneClickAlarmRequestBody:
 
     @property
     def notification_begin_time(self):
-        """Gets the notification_begin_time of this EnableOneClickAlarmRequestBody.
+        r"""Gets the notification_begin_time of this EnableOneClickAlarmRequestBody.
 
         告警通知开启时间
 
@@ -199,7 +199,7 @@ class EnableOneClickAlarmRequestBody:
 
     @notification_begin_time.setter
     def notification_begin_time(self, notification_begin_time):
-        """Sets the notification_begin_time of this EnableOneClickAlarmRequestBody.
+        r"""Sets the notification_begin_time of this EnableOneClickAlarmRequestBody.
 
         告警通知开启时间
 
@@ -210,7 +210,7 @@ class EnableOneClickAlarmRequestBody:
 
     @property
     def notification_end_time(self):
-        """Gets the notification_end_time of this EnableOneClickAlarmRequestBody.
+        r"""Gets the notification_end_time of this EnableOneClickAlarmRequestBody.
 
         告警通知关闭时间
 
@@ -221,7 +221,7 @@ class EnableOneClickAlarmRequestBody:
 
     @notification_end_time.setter
     def notification_end_time(self, notification_end_time):
-        """Sets the notification_end_time of this EnableOneClickAlarmRequestBody.
+        r"""Sets the notification_end_time of this EnableOneClickAlarmRequestBody.
 
         告警通知关闭时间
 

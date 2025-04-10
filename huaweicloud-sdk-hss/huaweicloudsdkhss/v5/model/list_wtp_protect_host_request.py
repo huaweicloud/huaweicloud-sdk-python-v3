@@ -26,6 +26,7 @@ class ListWtpProtectHostRequest:
         'group_name': 'str',
         'os_type': 'str',
         'protect_status': 'str',
+        'wtp_status': 'str',
         'agent_status': 'str',
         'limit': 'int',
         'offset': 'int'
@@ -41,19 +42,20 @@ class ListWtpProtectHostRequest:
         'group_name': 'group_name',
         'os_type': 'os_type',
         'protect_status': 'protect_status',
+        'wtp_status': 'wtp_status',
         'agent_status': 'agent_status',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, host_name=None, host_id=None, public_ip=None, private_ip=None, group_name=None, os_type=None, protect_status=None, agent_status=None, limit=None, offset=None):
-        """ListWtpProtectHostRequest
+    def __init__(self, region=None, enterprise_project_id=None, host_name=None, host_id=None, public_ip=None, private_ip=None, group_name=None, os_type=None, protect_status=None, wtp_status=None, agent_status=None, limit=None, offset=None):
+        r"""ListWtpProtectHostRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region Id
         :type region: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param host_name: 服务器名称
         :type host_name: str
@@ -67,8 +69,10 @@ class ListWtpProtectHostRequest:
         :type group_name: str
         :param os_type: 操作系统类别（linux，windows）   - linux : linux操作系统   - windows : windows操作系统
         :type os_type: str
-        :param protect_status: 防护状态   - closed : 未开启   - opened : 防护中
+        :param protect_status: 配额状态   - opened : 已绑定网页防篡改配额
         :type protect_status: str
+        :param wtp_status: 网页防篡改防护状态   - opened : 防护汇总   - opening : 正在开启   - open_failed : 防护失败   - partial_protection : 部分防护   - protection_interruption : 防护中断
+        :type wtp_status: str
         :param agent_status: 客户端状态   - not_installed : agent未安装   - online : agent在线   - offline : agent不在线
         :type agent_status: str
         :param limit: 默认10
@@ -88,6 +92,7 @@ class ListWtpProtectHostRequest:
         self._group_name = None
         self._os_type = None
         self._protect_status = None
+        self._wtp_status = None
         self._agent_status = None
         self._limit = None
         self._offset = None
@@ -110,6 +115,8 @@ class ListWtpProtectHostRequest:
             self.os_type = os_type
         if protect_status is not None:
             self.protect_status = protect_status
+        if wtp_status is not None:
+            self.wtp_status = wtp_status
         if agent_status is not None:
             self.agent_status = agent_status
         if limit is not None:
@@ -119,7 +126,7 @@ class ListWtpProtectHostRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListWtpProtectHostRequest.
+        r"""Gets the region of this ListWtpProtectHostRequest.
 
         Region Id
 
@@ -130,7 +137,7 @@ class ListWtpProtectHostRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListWtpProtectHostRequest.
+        r"""Sets the region of this ListWtpProtectHostRequest.
 
         Region Id
 
@@ -141,9 +148,9 @@ class ListWtpProtectHostRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListWtpProtectHostRequest.
+        r"""Gets the enterprise_project_id of this ListWtpProtectHostRequest.
 
-        企业项目ID
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListWtpProtectHostRequest.
         :rtype: str
@@ -152,9 +159,9 @@ class ListWtpProtectHostRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListWtpProtectHostRequest.
+        r"""Sets the enterprise_project_id of this ListWtpProtectHostRequest.
 
-        企业项目ID
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListWtpProtectHostRequest.
         :type enterprise_project_id: str
@@ -163,7 +170,7 @@ class ListWtpProtectHostRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListWtpProtectHostRequest.
+        r"""Gets the host_name of this ListWtpProtectHostRequest.
 
         服务器名称
 
@@ -174,7 +181,7 @@ class ListWtpProtectHostRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListWtpProtectHostRequest.
+        r"""Sets the host_name of this ListWtpProtectHostRequest.
 
         服务器名称
 
@@ -185,7 +192,7 @@ class ListWtpProtectHostRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListWtpProtectHostRequest.
+        r"""Gets the host_id of this ListWtpProtectHostRequest.
 
         主机ID
 
@@ -196,7 +203,7 @@ class ListWtpProtectHostRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListWtpProtectHostRequest.
+        r"""Sets the host_id of this ListWtpProtectHostRequest.
 
         主机ID
 
@@ -207,7 +214,7 @@ class ListWtpProtectHostRequest:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ListWtpProtectHostRequest.
+        r"""Gets the public_ip of this ListWtpProtectHostRequest.
 
         弹性公网IP
 
@@ -218,7 +225,7 @@ class ListWtpProtectHostRequest:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ListWtpProtectHostRequest.
+        r"""Sets the public_ip of this ListWtpProtectHostRequest.
 
         弹性公网IP
 
@@ -229,7 +236,7 @@ class ListWtpProtectHostRequest:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ListWtpProtectHostRequest.
+        r"""Gets the private_ip of this ListWtpProtectHostRequest.
 
         私有IP
 
@@ -240,7 +247,7 @@ class ListWtpProtectHostRequest:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ListWtpProtectHostRequest.
+        r"""Sets the private_ip of this ListWtpProtectHostRequest.
 
         私有IP
 
@@ -251,7 +258,7 @@ class ListWtpProtectHostRequest:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ListWtpProtectHostRequest.
+        r"""Gets the group_name of this ListWtpProtectHostRequest.
 
         服务器组名称
 
@@ -262,7 +269,7 @@ class ListWtpProtectHostRequest:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ListWtpProtectHostRequest.
+        r"""Sets the group_name of this ListWtpProtectHostRequest.
 
         服务器组名称
 
@@ -273,7 +280,7 @@ class ListWtpProtectHostRequest:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ListWtpProtectHostRequest.
+        r"""Gets the os_type of this ListWtpProtectHostRequest.
 
         操作系统类别（linux，windows）   - linux : linux操作系统   - windows : windows操作系统
 
@@ -284,7 +291,7 @@ class ListWtpProtectHostRequest:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ListWtpProtectHostRequest.
+        r"""Sets the os_type of this ListWtpProtectHostRequest.
 
         操作系统类别（linux，windows）   - linux : linux操作系统   - windows : windows操作系统
 
@@ -295,9 +302,9 @@ class ListWtpProtectHostRequest:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this ListWtpProtectHostRequest.
+        r"""Gets the protect_status of this ListWtpProtectHostRequest.
 
-        防护状态   - closed : 未开启   - opened : 防护中
+        配额状态   - opened : 已绑定网页防篡改配额
 
         :return: The protect_status of this ListWtpProtectHostRequest.
         :rtype: str
@@ -306,9 +313,9 @@ class ListWtpProtectHostRequest:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this ListWtpProtectHostRequest.
+        r"""Sets the protect_status of this ListWtpProtectHostRequest.
 
-        防护状态   - closed : 未开启   - opened : 防护中
+        配额状态   - opened : 已绑定网页防篡改配额
 
         :param protect_status: The protect_status of this ListWtpProtectHostRequest.
         :type protect_status: str
@@ -316,8 +323,30 @@ class ListWtpProtectHostRequest:
         self._protect_status = protect_status
 
     @property
+    def wtp_status(self):
+        r"""Gets the wtp_status of this ListWtpProtectHostRequest.
+
+        网页防篡改防护状态   - opened : 防护汇总   - opening : 正在开启   - open_failed : 防护失败   - partial_protection : 部分防护   - protection_interruption : 防护中断
+
+        :return: The wtp_status of this ListWtpProtectHostRequest.
+        :rtype: str
+        """
+        return self._wtp_status
+
+    @wtp_status.setter
+    def wtp_status(self, wtp_status):
+        r"""Sets the wtp_status of this ListWtpProtectHostRequest.
+
+        网页防篡改防护状态   - opened : 防护汇总   - opening : 正在开启   - open_failed : 防护失败   - partial_protection : 部分防护   - protection_interruption : 防护中断
+
+        :param wtp_status: The wtp_status of this ListWtpProtectHostRequest.
+        :type wtp_status: str
+        """
+        self._wtp_status = wtp_status
+
+    @property
     def agent_status(self):
-        """Gets the agent_status of this ListWtpProtectHostRequest.
+        r"""Gets the agent_status of this ListWtpProtectHostRequest.
 
         客户端状态   - not_installed : agent未安装   - online : agent在线   - offline : agent不在线
 
@@ -328,7 +357,7 @@ class ListWtpProtectHostRequest:
 
     @agent_status.setter
     def agent_status(self, agent_status):
-        """Sets the agent_status of this ListWtpProtectHostRequest.
+        r"""Sets the agent_status of this ListWtpProtectHostRequest.
 
         客户端状态   - not_installed : agent未安装   - online : agent在线   - offline : agent不在线
 
@@ -339,7 +368,7 @@ class ListWtpProtectHostRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWtpProtectHostRequest.
+        r"""Gets the limit of this ListWtpProtectHostRequest.
 
         默认10
 
@@ -350,7 +379,7 @@ class ListWtpProtectHostRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWtpProtectHostRequest.
+        r"""Sets the limit of this ListWtpProtectHostRequest.
 
         默认10
 
@@ -361,7 +390,7 @@ class ListWtpProtectHostRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWtpProtectHostRequest.
+        r"""Gets the offset of this ListWtpProtectHostRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -372,7 +401,7 @@ class ListWtpProtectHostRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWtpProtectHostRequest.
+        r"""Sets the offset of this ListWtpProtectHostRequest.
 
         偏移量：指定返回记录的开始位置
 

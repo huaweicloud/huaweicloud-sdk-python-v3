@@ -24,7 +24,7 @@ class DeleteEnterpriseRouterResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteEnterpriseRouterResponse
+        r"""DeleteEnterpriseRouterResponse
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class ProjectVpcSync:
     }
 
     def __init__(self, vpc_channel_id=None, instance_ids=None, force_sync=None):
-        """ProjectVpcSync
+        r"""ProjectVpcSync
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ProjectVpcSync:
 
     @property
     def vpc_channel_id(self):
-        """Gets the vpc_channel_id of this ProjectVpcSync.
+        r"""Gets the vpc_channel_id of this ProjectVpcSync.
 
         VPC通道编号
 
@@ -68,7 +68,7 @@ class ProjectVpcSync:
 
     @vpc_channel_id.setter
     def vpc_channel_id(self, vpc_channel_id):
-        """Sets the vpc_channel_id of this ProjectVpcSync.
+        r"""Sets the vpc_channel_id of this ProjectVpcSync.
 
         VPC通道编号
 
@@ -79,7 +79,7 @@ class ProjectVpcSync:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this ProjectVpcSync.
+        r"""Gets the instance_ids of this ProjectVpcSync.
 
         新增关联的实例列表
 
@@ -90,7 +90,7 @@ class ProjectVpcSync:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this ProjectVpcSync.
+        r"""Sets the instance_ids of this ProjectVpcSync.
 
         新增关联的实例列表
 
@@ -101,7 +101,7 @@ class ProjectVpcSync:
 
     @property
     def force_sync(self):
-        """Gets the force_sync of this ProjectVpcSync.
+        r"""Gets the force_sync of this ProjectVpcSync.
 
         是否强制同步，默认不强制同步
 
@@ -112,7 +112,7 @@ class ProjectVpcSync:
 
     @force_sync.setter
     def force_sync(self, force_sync):
-        """Sets the force_sync of this ProjectVpcSync.
+        r"""Sets the force_sync of this ProjectVpcSync.
 
         是否强制同步，默认不强制同步
 

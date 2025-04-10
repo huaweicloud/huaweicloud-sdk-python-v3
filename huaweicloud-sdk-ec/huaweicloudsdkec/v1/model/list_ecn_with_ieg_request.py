@@ -27,7 +27,7 @@ class ListEcnWithIegRequest:
     }
 
     def __init__(self, ecn_id=None, ieg_id=None):
-        """ListEcnWithIegRequest
+        r"""ListEcnWithIegRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListEcnWithIegRequest:
 
     @property
     def ecn_id(self):
-        """Gets the ecn_id of this ListEcnWithIegRequest.
+        r"""Gets the ecn_id of this ListEcnWithIegRequest.
 
         企业连接网络ID
 
@@ -60,7 +60,7 @@ class ListEcnWithIegRequest:
 
     @ecn_id.setter
     def ecn_id(self, ecn_id):
-        """Sets the ecn_id of this ListEcnWithIegRequest.
+        r"""Sets the ecn_id of this ListEcnWithIegRequest.
 
         企业连接网络ID
 
@@ -71,7 +71,7 @@ class ListEcnWithIegRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this ListEcnWithIegRequest.
+        r"""Gets the ieg_id of this ListEcnWithIegRequest.
 
         智能企业网关ID
 
@@ -82,7 +82,7 @@ class ListEcnWithIegRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this ListEcnWithIegRequest.
+        r"""Sets the ieg_id of this ListEcnWithIegRequest.
 
         智能企业网关ID
 

@@ -27,11 +27,11 @@ class ChangeVulScanPolicyRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """ChangeVulScanPolicyRequest
+        r"""ChangeVulScanPolicyRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业租户ID，注：修改漏洞扫描策略将影响租户账号下所有主机的漏洞扫描行为，因此开通了多企业项目的用户，该参数须填写“all_granted_eps”才能执行漏洞策略修改。
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param body: Body of the ChangeVulScanPolicyRequest
         :type body: :class:`huaweicloudsdkhss.v5.ChangeVulScanPolicyRequestInfo`
@@ -50,9 +50,9 @@ class ChangeVulScanPolicyRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ChangeVulScanPolicyRequest.
+        r"""Gets the enterprise_project_id of this ChangeVulScanPolicyRequest.
 
-        企业租户ID，注：修改漏洞扫描策略将影响租户账号下所有主机的漏洞扫描行为，因此开通了多企业项目的用户，该参数须填写“all_granted_eps”才能执行漏洞策略修改。
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ChangeVulScanPolicyRequest.
         :rtype: str
@@ -61,9 +61,9 @@ class ChangeVulScanPolicyRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ChangeVulScanPolicyRequest.
+        r"""Sets the enterprise_project_id of this ChangeVulScanPolicyRequest.
 
-        企业租户ID，注：修改漏洞扫描策略将影响租户账号下所有主机的漏洞扫描行为，因此开通了多企业项目的用户，该参数须填写“all_granted_eps”才能执行漏洞策略修改。
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ChangeVulScanPolicyRequest.
         :type enterprise_project_id: str
@@ -72,7 +72,7 @@ class ChangeVulScanPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeVulScanPolicyRequest.
+        r"""Gets the body of this ChangeVulScanPolicyRequest.
 
         :return: The body of this ChangeVulScanPolicyRequest.
         :rtype: :class:`huaweicloudsdkhss.v5.ChangeVulScanPolicyRequestInfo`
@@ -81,7 +81,7 @@ class ChangeVulScanPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeVulScanPolicyRequest.
+        r"""Sets the body of this ChangeVulScanPolicyRequest.
 
         :param body: The body of this ChangeVulScanPolicyRequest.
         :type body: :class:`huaweicloudsdkhss.v5.ChangeVulScanPolicyRequestInfo`

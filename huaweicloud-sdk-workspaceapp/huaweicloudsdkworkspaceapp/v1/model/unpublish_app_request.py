@@ -27,7 +27,7 @@ class UnpublishAppRequest:
     }
 
     def __init__(self, app_group_id=None, body=None):
-        """UnpublishAppRequest
+        r"""UnpublishAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UnpublishAppRequest:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this UnpublishAppRequest.
+        r"""Gets the app_group_id of this UnpublishAppRequest.
 
         应用组ID。
 
@@ -60,7 +60,7 @@ class UnpublishAppRequest:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this UnpublishAppRequest.
+        r"""Sets the app_group_id of this UnpublishAppRequest.
 
         应用组ID。
 
@@ -71,7 +71,7 @@ class UnpublishAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this UnpublishAppRequest.
+        r"""Gets the body of this UnpublishAppRequest.
 
         :return: The body of this UnpublishAppRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UnpublishAppReq`
@@ -80,7 +80,7 @@ class UnpublishAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UnpublishAppRequest.
+        r"""Sets the body of this UnpublishAppRequest.
 
         :param body: The body of this UnpublishAppRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.UnpublishAppReq`

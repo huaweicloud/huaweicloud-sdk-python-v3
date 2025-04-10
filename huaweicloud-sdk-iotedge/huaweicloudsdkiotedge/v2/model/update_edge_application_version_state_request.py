@@ -29,7 +29,7 @@ class UpdateEdgeApplicationVersionStateRequest:
     }
 
     def __init__(self, edge_app_id=None, version=None, body=None):
-        """UpdateEdgeApplicationVersionStateRequest
+        r"""UpdateEdgeApplicationVersionStateRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEdgeApplicationVersionStateRequest:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this UpdateEdgeApplicationVersionStateRequest.
+        r"""Gets the edge_app_id of this UpdateEdgeApplicationVersionStateRequest.
 
         应用ID，应用唯一标识。
 
@@ -66,7 +66,7 @@ class UpdateEdgeApplicationVersionStateRequest:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this UpdateEdgeApplicationVersionStateRequest.
+        r"""Sets the edge_app_id of this UpdateEdgeApplicationVersionStateRequest.
 
         应用ID，应用唯一标识。
 
@@ -77,7 +77,7 @@ class UpdateEdgeApplicationVersionStateRequest:
 
     @property
     def version(self):
-        """Gets the version of this UpdateEdgeApplicationVersionStateRequest.
+        r"""Gets the version of this UpdateEdgeApplicationVersionStateRequest.
 
         应用版本,应用内版本唯一。
 
@@ -88,7 +88,7 @@ class UpdateEdgeApplicationVersionStateRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateEdgeApplicationVersionStateRequest.
+        r"""Sets the version of this UpdateEdgeApplicationVersionStateRequest.
 
         应用版本,应用内版本唯一。
 
@@ -99,7 +99,7 @@ class UpdateEdgeApplicationVersionStateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEdgeApplicationVersionStateRequest.
+        r"""Gets the body of this UpdateEdgeApplicationVersionStateRequest.
 
         :return: The body of this UpdateEdgeApplicationVersionStateRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeAppVersionStateDTO`
@@ -108,7 +108,7 @@ class UpdateEdgeApplicationVersionStateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEdgeApplicationVersionStateRequest.
+        r"""Sets the body of this UpdateEdgeApplicationVersionStateRequest.
 
         :param body: The body of this UpdateEdgeApplicationVersionStateRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeAppVersionStateDTO`

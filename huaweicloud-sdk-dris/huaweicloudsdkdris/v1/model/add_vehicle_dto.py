@@ -51,7 +51,7 @@ class AddVehicleDTO:
     }
 
     def __init__(self, vehicle_id=None, plate_no=None, vin=None, obu_id=None, imei=None, brand=None, model=None, style=None, fuel_type=None, color=None, plate_color=None, access_type=None, secret=None, description=None):
-        """AddVehicleDTO
+        r"""AddVehicleDTO
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class AddVehicleDTO:
 
     @property
     def vehicle_id(self):
-        """Gets the vehicle_id of this AddVehicleDTO.
+        r"""Gets the vehicle_id of this AddVehicleDTO.
 
         **参数说明**：车辆唯一标识符。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -143,7 +143,7 @@ class AddVehicleDTO:
 
     @vehicle_id.setter
     def vehicle_id(self, vehicle_id):
-        """Sets the vehicle_id of this AddVehicleDTO.
+        r"""Sets the vehicle_id of this AddVehicleDTO.
 
         **参数说明**：车辆唯一标识符。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -154,7 +154,7 @@ class AddVehicleDTO:
 
     @property
     def plate_no(self):
-        """Gets the plate_no of this AddVehicleDTO.
+        r"""Gets the plate_no of this AddVehicleDTO.
 
         **参数说明**：车牌号。  **取值范围**：长度最小1最大64，支持中文、字母、数字、下划线（_）、横杠（-）的组合。 
 
@@ -165,7 +165,7 @@ class AddVehicleDTO:
 
     @plate_no.setter
     def plate_no(self, plate_no):
-        """Sets the plate_no of this AddVehicleDTO.
+        r"""Sets the plate_no of this AddVehicleDTO.
 
         **参数说明**：车牌号。  **取值范围**：长度最小1最大64，支持中文、字母、数字、下划线（_）、横杠（-）的组合。 
 
@@ -176,7 +176,7 @@ class AddVehicleDTO:
 
     @property
     def vin(self):
-        """Gets the vin of this AddVehicleDTO.
+        r"""Gets the vin of this AddVehicleDTO.
 
         **参数说明**：VIN码，车辆的17位VIN码。  **取值范围**：长度不超过17，只允许字母、数字字符的组合。 
 
@@ -187,7 +187,7 @@ class AddVehicleDTO:
 
     @vin.setter
     def vin(self, vin):
-        """Sets the vin of this AddVehicleDTO.
+        r"""Sets the vin of this AddVehicleDTO.
 
         **参数说明**：VIN码，车辆的17位VIN码。  **取值范围**：长度不超过17，只允许字母、数字字符的组合。 
 
@@ -198,7 +198,7 @@ class AddVehicleDTO:
 
     @property
     def obu_id(self):
-        """Gets the obu_id of this AddVehicleDTO.
+        r"""Gets the obu_id of this AddVehicleDTO.
 
         **参数说明**：车载OBU的唯一标识。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -209,7 +209,7 @@ class AddVehicleDTO:
 
     @obu_id.setter
     def obu_id(self, obu_id):
-        """Sets the obu_id of this AddVehicleDTO.
+        r"""Sets the obu_id of this AddVehicleDTO.
 
         **参数说明**：车载OBU的唯一标识。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -220,7 +220,7 @@ class AddVehicleDTO:
 
     @property
     def imei(self):
-        """Gets the imei of this AddVehicleDTO.
+        r"""Gets the imei of this AddVehicleDTO.
 
         **参数说明**：IMEI，OBU上电子序列号。  **取值范围**：长度最小1最大255，支持纯数字的组合。 
 
@@ -231,7 +231,7 @@ class AddVehicleDTO:
 
     @imei.setter
     def imei(self, imei):
-        """Sets the imei of this AddVehicleDTO.
+        r"""Sets the imei of this AddVehicleDTO.
 
         **参数说明**：IMEI，OBU上电子序列号。  **取值范围**：长度最小1最大255，支持纯数字的组合。 
 
@@ -242,7 +242,7 @@ class AddVehicleDTO:
 
     @property
     def brand(self):
-        """Gets the brand of this AddVehicleDTO.
+        r"""Gets the brand of this AddVehicleDTO.
 
         **参数说明**：车俩品牌。  **取值范围**：长度最小1最大64，支持中文、字母、数字、下划线（_）、横杠（-）的组合。 
 
@@ -253,7 +253,7 @@ class AddVehicleDTO:
 
     @brand.setter
     def brand(self, brand):
-        """Sets the brand of this AddVehicleDTO.
+        r"""Sets the brand of this AddVehicleDTO.
 
         **参数说明**：车俩品牌。  **取值范围**：长度最小1最大64，支持中文、字母、数字、下划线（_）、横杠（-）的组合。 
 
@@ -264,7 +264,7 @@ class AddVehicleDTO:
 
     @property
     def model(self):
-        """Gets the model of this AddVehicleDTO.
+        r"""Gets the model of this AddVehicleDTO.
 
         **参数说明**：车牌型号。  **取值范围**：长度最小1最大64，支持字母、数字、下划线（_）、横杠（-）的组合。 
 
@@ -275,7 +275,7 @@ class AddVehicleDTO:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this AddVehicleDTO.
+        r"""Sets the model of this AddVehicleDTO.
 
         **参数说明**：车牌型号。  **取值范围**：长度最小1最大64，支持字母、数字、下划线（_）、横杠（-）的组合。 
 
@@ -286,7 +286,7 @@ class AddVehicleDTO:
 
     @property
     def style(self):
-        """Gets the style of this AddVehicleDTO.
+        r"""Gets the style of this AddVehicleDTO.
 
         **参数说明**：车辆年款。  **取值范围**：长度最小1最大64，支持纯数字的组合。 
 
@@ -297,7 +297,7 @@ class AddVehicleDTO:
 
     @style.setter
     def style(self, style):
-        """Sets the style of this AddVehicleDTO.
+        r"""Sets the style of this AddVehicleDTO.
 
         **参数说明**：车辆年款。  **取值范围**：长度最小1最大64，支持纯数字的组合。 
 
@@ -308,7 +308,7 @@ class AddVehicleDTO:
 
     @property
     def fuel_type(self):
-        """Gets the fuel_type of this AddVehicleDTO.
+        r"""Gets the fuel_type of this AddVehicleDTO.
 
         **参数说明**：定义车辆的燃料动力类。  **取值范围**： - unknownFuel：未知 - gasoline：汽油 - ethanol：乙醇 - diesel：柴油 - electric：电动 - hybrid：混合燃料类型 - hydrogen：氢气 - natGasLiquid：液化天然气 - natGasComp：压缩天然气 - propane：丙烷 
 
@@ -319,7 +319,7 @@ class AddVehicleDTO:
 
     @fuel_type.setter
     def fuel_type(self, fuel_type):
-        """Sets the fuel_type of this AddVehicleDTO.
+        r"""Sets the fuel_type of this AddVehicleDTO.
 
         **参数说明**：定义车辆的燃料动力类。  **取值范围**： - unknownFuel：未知 - gasoline：汽油 - ethanol：乙醇 - diesel：柴油 - electric：电动 - hybrid：混合燃料类型 - hydrogen：氢气 - natGasLiquid：液化天然气 - natGasComp：压缩天然气 - propane：丙烷 
 
@@ -330,7 +330,7 @@ class AddVehicleDTO:
 
     @property
     def color(self):
-        """Gets the color of this AddVehicleDTO.
+        r"""Gets the color of this AddVehicleDTO.
 
         **参数说明**：车辆颜色。  **取值范围**： - black：黑色 - white：白色 - gray：灰色 - red：红色 - blue：蓝色 - yellow：黄色 - orange：橙色 - brown：棕色 - green：绿色 - purple：紫色 - cyan：青色 - pink：粉红色 - transparent：透明色 - other：其他 
 
@@ -341,7 +341,7 @@ class AddVehicleDTO:
 
     @color.setter
     def color(self, color):
-        """Sets the color of this AddVehicleDTO.
+        r"""Sets the color of this AddVehicleDTO.
 
         **参数说明**：车辆颜色。  **取值范围**： - black：黑色 - white：白色 - gray：灰色 - red：红色 - blue：蓝色 - yellow：黄色 - orange：橙色 - brown：棕色 - green：绿色 - purple：紫色 - cyan：青色 - pink：粉红色 - transparent：透明色 - other：其他 
 
@@ -352,7 +352,7 @@ class AddVehicleDTO:
 
     @property
     def plate_color(self):
-        """Gets the plate_color of this AddVehicleDTO.
+        r"""Gets the plate_color of this AddVehicleDTO.
 
         **参数说明**：车辆颜色。  **取值范围**： - black：黑色 - white：白色 - blue：蓝色 - yellow：黄色 - green：绿色\" 
 
@@ -363,7 +363,7 @@ class AddVehicleDTO:
 
     @plate_color.setter
     def plate_color(self, plate_color):
-        """Sets the plate_color of this AddVehicleDTO.
+        r"""Sets the plate_color of this AddVehicleDTO.
 
         **参数说明**：车辆颜色。  **取值范围**： - black：黑色 - white：白色 - blue：蓝色 - yellow：黄色 - green：绿色\" 
 
@@ -374,7 +374,7 @@ class AddVehicleDTO:
 
     @property
     def access_type(self):
-        """Gets the access_type of this AddVehicleDTO.
+        r"""Gets the access_type of this AddVehicleDTO.
 
         **参数说明**：车辆接入网络的方式。  **取值范围**： - 5g - 4g - 3g - 2g - pc5Only - pc5And5g - pc5And4g - pc5And3g - pc5And2g 
 
@@ -385,7 +385,7 @@ class AddVehicleDTO:
 
     @access_type.setter
     def access_type(self, access_type):
-        """Sets the access_type of this AddVehicleDTO.
+        r"""Sets the access_type of this AddVehicleDTO.
 
         **参数说明**：车辆接入网络的方式。  **取值范围**： - 5g - 4g - 3g - 2g - pc5Only - pc5And5g - pc5And4g - pc5And3g - pc5And2g 
 
@@ -396,7 +396,7 @@ class AddVehicleDTO:
 
     @property
     def secret(self):
-        """Gets the secret of this AddVehicleDTO.
+        r"""Gets the secret of this AddVehicleDTO.
 
         **参数说明**：第三方车辆密钥，输入车辆型号ID后方可填写该字段以设置方车辆密码。
 
@@ -407,7 +407,7 @@ class AddVehicleDTO:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this AddVehicleDTO.
+        r"""Sets the secret of this AddVehicleDTO.
 
         **参数说明**：第三方车辆密钥，输入车辆型号ID后方可填写该字段以设置方车辆密码。
 
@@ -418,7 +418,7 @@ class AddVehicleDTO:
 
     @property
     def description(self):
-        """Gets the description of this AddVehicleDTO.
+        r"""Gets the description of this AddVehicleDTO.
 
         **参数说明**：描述。  **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合 
 
@@ -429,7 +429,7 @@ class AddVehicleDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddVehicleDTO.
+        r"""Sets the description of this AddVehicleDTO.
 
         **参数说明**：描述。  **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合 
 

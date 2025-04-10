@@ -27,7 +27,7 @@ class BatchDeleteCaTagsRequest:
     }
 
     def __init__(self, ca_id=None, body=None):
-        """BatchDeleteCaTagsRequest
+        r"""BatchDeleteCaTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteCaTagsRequest:
 
     @property
     def ca_id(self):
-        """Gets the ca_id of this BatchDeleteCaTagsRequest.
+        r"""Gets the ca_id of this BatchDeleteCaTagsRequest.
 
         所需要批量删除标签的CA证书ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteCaTagsRequest:
 
     @ca_id.setter
     def ca_id(self, ca_id):
-        """Sets the ca_id of this BatchDeleteCaTagsRequest.
+        r"""Sets the ca_id of this BatchDeleteCaTagsRequest.
 
         所需要批量删除标签的CA证书ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteCaTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteCaTagsRequest.
+        r"""Gets the body of this BatchDeleteCaTagsRequest.
 
         :return: The body of this BatchDeleteCaTagsRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.BatchOperateTagRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteCaTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteCaTagsRequest.
+        r"""Sets the body of this BatchDeleteCaTagsRequest.
 
         :param body: The body of this BatchDeleteCaTagsRequest.
         :type body: :class:`huaweicloudsdkccm.v1.BatchOperateTagRequestBody`

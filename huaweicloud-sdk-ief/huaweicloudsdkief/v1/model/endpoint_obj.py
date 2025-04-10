@@ -33,7 +33,7 @@ class EndpointObj:
     }
 
     def __init__(self, description=None, ief_instance_id=None, name=None, properties=None, type=None):
-        """EndpointObj
+        r"""EndpointObj
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class EndpointObj:
 
     @property
     def description(self):
-        """Gets the description of this EndpointObj.
+        r"""Gets the description of this EndpointObj.
 
         端点描述，最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
@@ -79,7 +79,7 @@ class EndpointObj:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EndpointObj.
+        r"""Sets the description of this EndpointObj.
 
         端点描述，最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
@@ -90,7 +90,7 @@ class EndpointObj:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this EndpointObj.
+        r"""Gets the ief_instance_id of this EndpointObj.
 
         [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
@@ -101,7 +101,7 @@ class EndpointObj:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this EndpointObj.
+        r"""Sets the ief_instance_id of this EndpointObj.
 
         [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
@@ -112,7 +112,7 @@ class EndpointObj:
 
     @property
     def name(self):
-        """Gets the name of this EndpointObj.
+        r"""Gets the name of this EndpointObj.
 
         端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的端点名唯一
 
@@ -123,7 +123,7 @@ class EndpointObj:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EndpointObj.
+        r"""Sets the name of this EndpointObj.
 
         端点名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的端点名唯一
 
@@ -134,7 +134,7 @@ class EndpointObj:
 
     @property
     def properties(self):
-        """Gets the properties of this EndpointObj.
+        r"""Gets the properties of this EndpointObj.
 
         端点的属性，端点需要对外展示的属性，示例： - dis: {\"domain_id\":\"user's domain id\"} - servicebus: {\"service_port\":8080} - apigw: {\"domain_id\":\"user's domain id\"}
 
@@ -145,7 +145,7 @@ class EndpointObj:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this EndpointObj.
+        r"""Sets the properties of this EndpointObj.
 
         端点的属性，端点需要对外展示的属性，示例： - dis: {\"domain_id\":\"user's domain id\"} - servicebus: {\"service_port\":8080} - apigw: {\"domain_id\":\"user's domain id\"}
 
@@ -156,7 +156,7 @@ class EndpointObj:
 
     @property
     def type(self):
-        """Gets the type of this EndpointObj.
+        r"""Gets the type of this EndpointObj.
 
         端点类型 枚举值： - dis - servicebus - apigw
 
@@ -167,7 +167,7 @@ class EndpointObj:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EndpointObj.
+        r"""Sets the type of this EndpointObj.
 
         端点类型 枚举值： - dis - servicebus - apigw
 

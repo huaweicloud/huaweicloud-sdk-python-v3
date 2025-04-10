@@ -35,7 +35,7 @@ class ListTopicsItem:
     }
 
     def __init__(self, topic_urn=None, name=None, display_name=None, push_policy=None, enterprise_project_id=None, topic_id=None):
-        """ListTopicsItem
+        r"""ListTopicsItem
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListTopicsItem:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this ListTopicsItem.
+        r"""Gets the topic_urn of this ListTopicsItem.
 
         Topic的唯一的资源标识。
 
@@ -83,7 +83,7 @@ class ListTopicsItem:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this ListTopicsItem.
+        r"""Sets the topic_urn of this ListTopicsItem.
 
         Topic的唯一的资源标识。
 
@@ -94,7 +94,7 @@ class ListTopicsItem:
 
     @property
     def name(self):
-        """Gets the name of this ListTopicsItem.
+        r"""Gets the name of this ListTopicsItem.
 
         创建topic的名字。
 
@@ -105,7 +105,7 @@ class ListTopicsItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTopicsItem.
+        r"""Sets the name of this ListTopicsItem.
 
         创建topic的名字。
 
@@ -116,7 +116,7 @@ class ListTopicsItem:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ListTopicsItem.
+        r"""Gets the display_name of this ListTopicsItem.
 
         Topic的显示名，推送邮件消息时，作为邮件发件人显示。
 
@@ -127,7 +127,7 @@ class ListTopicsItem:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ListTopicsItem.
+        r"""Sets the display_name of this ListTopicsItem.
 
         Topic的显示名，推送邮件消息时，作为邮件发件人显示。
 
@@ -138,7 +138,7 @@ class ListTopicsItem:
 
     @property
     def push_policy(self):
-        """Gets the push_policy of this ListTopicsItem.
+        r"""Gets the push_policy of this ListTopicsItem.
 
         消息推送的策略，该属性目前不支持修改，后续将支持修改。0表示发送失败，保留到失败队列，1表示直接丢弃发送失败的消息。
 
@@ -149,7 +149,7 @@ class ListTopicsItem:
 
     @push_policy.setter
     def push_policy(self, push_policy):
-        """Sets the push_policy of this ListTopicsItem.
+        r"""Sets the push_policy of this ListTopicsItem.
 
         消息推送的策略，该属性目前不支持修改，后续将支持修改。0表示发送失败，保留到失败队列，1表示直接丢弃发送失败的消息。
 
@@ -160,7 +160,7 @@ class ListTopicsItem:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListTopicsItem.
+        r"""Gets the enterprise_project_id of this ListTopicsItem.
 
         企业项目ID。
 
@@ -171,7 +171,7 @@ class ListTopicsItem:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListTopicsItem.
+        r"""Sets the enterprise_project_id of this ListTopicsItem.
 
         企业项目ID。
 
@@ -182,7 +182,7 @@ class ListTopicsItem:
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this ListTopicsItem.
+        r"""Gets the topic_id of this ListTopicsItem.
 
         主题ID。
 
@@ -193,7 +193,7 @@ class ListTopicsItem:
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this ListTopicsItem.
+        r"""Sets the topic_id of this ListTopicsItem.
 
         主题ID。
 

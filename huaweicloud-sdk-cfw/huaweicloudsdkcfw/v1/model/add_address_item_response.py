@@ -26,7 +26,7 @@ class AddAddressItemResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """AddAddressItemResponse
+        r"""AddAddressItemResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddAddressItemResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this AddAddressItemResponse.
+        r"""Gets the data of this AddAddressItemResponse.
 
         :return: The data of this AddAddressItemResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.AddressItems`
@@ -53,7 +53,7 @@ class AddAddressItemResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this AddAddressItemResponse.
+        r"""Sets the data of this AddAddressItemResponse.
 
         :param data: The data of this AddAddressItemResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.AddressItems`

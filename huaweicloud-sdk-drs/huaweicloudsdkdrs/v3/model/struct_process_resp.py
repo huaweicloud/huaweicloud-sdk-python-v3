@@ -27,7 +27,7 @@ class StructProcessResp:
     }
 
     def __init__(self, create_time=None, result=None):
-        """StructProcessResp
+        r"""StructProcessResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StructProcessResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StructProcessResp.
+        r"""Gets the create_time of this StructProcessResp.
 
         数据生成时间
 
@@ -61,7 +61,7 @@ class StructProcessResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StructProcessResp.
+        r"""Sets the create_time of this StructProcessResp.
 
         数据生成时间
 
@@ -72,7 +72,7 @@ class StructProcessResp:
 
     @property
     def result(self):
-        """Gets the result of this StructProcessResp.
+        r"""Gets the result of this StructProcessResp.
 
         对比结果
 
@@ -83,7 +83,7 @@ class StructProcessResp:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this StructProcessResp.
+        r"""Sets the result of this StructProcessResp.
 
         对比结果
 

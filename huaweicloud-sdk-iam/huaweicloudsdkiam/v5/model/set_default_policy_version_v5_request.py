@@ -27,7 +27,7 @@ class SetDefaultPolicyVersionV5Request:
     }
 
     def __init__(self, policy_id=None, version_id=None):
-        """SetDefaultPolicyVersionV5Request
+        r"""SetDefaultPolicyVersionV5Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SetDefaultPolicyVersionV5Request:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this SetDefaultPolicyVersionV5Request.
+        r"""Gets the policy_id of this SetDefaultPolicyVersionV5Request.
 
         身份策略ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -59,7 +59,7 @@ class SetDefaultPolicyVersionV5Request:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this SetDefaultPolicyVersionV5Request.
+        r"""Sets the policy_id of this SetDefaultPolicyVersionV5Request.
 
         身份策略ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -70,7 +70,7 @@ class SetDefaultPolicyVersionV5Request:
 
     @property
     def version_id(self):
-        """Gets the version_id of this SetDefaultPolicyVersionV5Request.
+        r"""Gets the version_id of this SetDefaultPolicyVersionV5Request.
 
         身份策略版本号，以\"v\"开头后跟数字的字符串，例如\"v5\"。
 
@@ -81,7 +81,7 @@ class SetDefaultPolicyVersionV5Request:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this SetDefaultPolicyVersionV5Request.
+        r"""Sets the version_id of this SetDefaultPolicyVersionV5Request.
 
         身份策略版本号，以\"v\"开头后跟数字的字符串，例如\"v5\"。
 

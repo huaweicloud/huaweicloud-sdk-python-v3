@@ -31,7 +31,7 @@ class UpgradeVersionInfo:
     }
 
     def __init__(self, release=None, patch=None, suggest_patch=None, target_versions=None):
-        """UpgradeVersionInfo
+        r"""UpgradeVersionInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpgradeVersionInfo:
 
     @property
     def release(self):
-        """Gets the release of this UpgradeVersionInfo.
+        r"""Gets the release of this UpgradeVersionInfo.
 
         正式版本号，如：v1.19.10
 
@@ -75,7 +75,7 @@ class UpgradeVersionInfo:
 
     @release.setter
     def release(self, release):
-        """Sets the release of this UpgradeVersionInfo.
+        r"""Sets the release of this UpgradeVersionInfo.
 
         正式版本号，如：v1.19.10
 
@@ -86,7 +86,7 @@ class UpgradeVersionInfo:
 
     @property
     def patch(self):
-        """Gets the patch of this UpgradeVersionInfo.
+        r"""Gets the patch of this UpgradeVersionInfo.
 
         补丁版本号，如r0
 
@@ -97,7 +97,7 @@ class UpgradeVersionInfo:
 
     @patch.setter
     def patch(self, patch):
-        """Sets the patch of this UpgradeVersionInfo.
+        r"""Sets the patch of this UpgradeVersionInfo.
 
         补丁版本号，如r0
 
@@ -108,7 +108,7 @@ class UpgradeVersionInfo:
 
     @property
     def suggest_patch(self):
-        """Gets the suggest_patch of this UpgradeVersionInfo.
+        r"""Gets the suggest_patch of this UpgradeVersionInfo.
 
         推荐升级的目标补丁版本号，如r0
 
@@ -119,7 +119,7 @@ class UpgradeVersionInfo:
 
     @suggest_patch.setter
     def suggest_patch(self, suggest_patch):
-        """Sets the suggest_patch of this UpgradeVersionInfo.
+        r"""Sets the suggest_patch of this UpgradeVersionInfo.
 
         推荐升级的目标补丁版本号，如r0
 
@@ -130,7 +130,7 @@ class UpgradeVersionInfo:
 
     @property
     def target_versions(self):
-        """Gets the target_versions of this UpgradeVersionInfo.
+        r"""Gets the target_versions of this UpgradeVersionInfo.
 
         升级目标版本集合
 
@@ -141,7 +141,7 @@ class UpgradeVersionInfo:
 
     @target_versions.setter
     def target_versions(self, target_versions):
-        """Sets the target_versions of this UpgradeVersionInfo.
+        r"""Sets the target_versions of this UpgradeVersionInfo.
 
         升级目标版本集合
 

@@ -75,7 +75,7 @@ class HtapInstanceListInstances:
     }
 
     def __init__(self, id=None, name=None, engine_name=None, engine_version=None, project_id=None, instance_state=None, create_at=None, is_frozen=None, ha_mode=None, pay_model=None, order_id=None, alter_order_id=None, data_vip=None, readable_node_infos=None, proxy_ips=None, data_vip_v6=None, port=None, available_zones=None, current_actions=None, volume_type=None, server_type=None, enterprise_project_id=None, dedicated_resource_id=None, network=None, ch_master_node_id=None, node_num=None):
-        """HtapInstanceListInstances
+        r"""HtapInstanceListInstances
 
         The model defined in huaweicloud sdk
 
@@ -218,7 +218,7 @@ class HtapInstanceListInstances:
 
     @property
     def id(self):
-        """Gets the id of this HtapInstanceListInstances.
+        r"""Gets the id of this HtapInstanceListInstances.
 
         HTAP实例ID，严格匹配UUID规则。
 
@@ -229,7 +229,7 @@ class HtapInstanceListInstances:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HtapInstanceListInstances.
+        r"""Sets the id of this HtapInstanceListInstances.
 
         HTAP实例ID，严格匹配UUID规则。
 
@@ -240,7 +240,7 @@ class HtapInstanceListInstances:
 
     @property
     def name(self):
-        """Gets the name of this HtapInstanceListInstances.
+        r"""Gets the name of this HtapInstanceListInstances.
 
         HTAP实例名。
 
@@ -251,7 +251,7 @@ class HtapInstanceListInstances:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HtapInstanceListInstances.
+        r"""Sets the name of this HtapInstanceListInstances.
 
         HTAP实例名。
 
@@ -262,7 +262,7 @@ class HtapInstanceListInstances:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this HtapInstanceListInstances.
+        r"""Gets the engine_name of this HtapInstanceListInstances.
 
         HTAP数据库引擎名。
 
@@ -273,7 +273,7 @@ class HtapInstanceListInstances:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this HtapInstanceListInstances.
+        r"""Sets the engine_name of this HtapInstanceListInstances.
 
         HTAP数据库引擎名。
 
@@ -284,7 +284,7 @@ class HtapInstanceListInstances:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this HtapInstanceListInstances.
+        r"""Gets the engine_version of this HtapInstanceListInstances.
 
         HTAP数据库引擎版本。
 
@@ -295,7 +295,7 @@ class HtapInstanceListInstances:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this HtapInstanceListInstances.
+        r"""Sets the engine_version of this HtapInstanceListInstances.
 
         HTAP数据库引擎版本。
 
@@ -306,7 +306,7 @@ class HtapInstanceListInstances:
 
     @property
     def project_id(self):
-        """Gets the project_id of this HtapInstanceListInstances.
+        r"""Gets the project_id of this HtapInstanceListInstances.
 
         租户在某一region下的project ID
 
@@ -317,7 +317,7 @@ class HtapInstanceListInstances:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this HtapInstanceListInstances.
+        r"""Sets the project_id of this HtapInstanceListInstances.
 
         租户在某一region下的project ID
 
@@ -328,7 +328,7 @@ class HtapInstanceListInstances:
 
     @property
     def instance_state(self):
-        """Gets the instance_state of this HtapInstanceListInstances.
+        r"""Gets the instance_state of this HtapInstanceListInstances.
 
         :return: The instance_state of this HtapInstanceListInstances.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.HtapInstanceListInstanceState`
@@ -337,7 +337,7 @@ class HtapInstanceListInstances:
 
     @instance_state.setter
     def instance_state(self, instance_state):
-        """Sets the instance_state of this HtapInstanceListInstances.
+        r"""Sets the instance_state of this HtapInstanceListInstances.
 
         :param instance_state: The instance_state of this HtapInstanceListInstances.
         :type instance_state: :class:`huaweicloudsdkgaussdb.v3.HtapInstanceListInstanceState`
@@ -346,7 +346,7 @@ class HtapInstanceListInstances:
 
     @property
     def create_at(self):
-        """Gets the create_at of this HtapInstanceListInstances.
+        r"""Gets the create_at of this HtapInstanceListInstances.
 
         HTAP实例创建时间。
 
@@ -357,7 +357,7 @@ class HtapInstanceListInstances:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this HtapInstanceListInstances.
+        r"""Sets the create_at of this HtapInstanceListInstances.
 
         HTAP实例创建时间。
 
@@ -368,7 +368,7 @@ class HtapInstanceListInstances:
 
     @property
     def is_frozen(self):
-        """Gets the is_frozen of this HtapInstanceListInstances.
+        r"""Gets the is_frozen of this HtapInstanceListInstances.
 
         HTAP实例是否冻结。
 
@@ -379,7 +379,7 @@ class HtapInstanceListInstances:
 
     @is_frozen.setter
     def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this HtapInstanceListInstances.
+        r"""Sets the is_frozen of this HtapInstanceListInstances.
 
         HTAP实例是否冻结。
 
@@ -390,7 +390,7 @@ class HtapInstanceListInstances:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this HtapInstanceListInstances.
+        r"""Gets the ha_mode of this HtapInstanceListInstances.
 
         HTAP实例部署模式。
 
@@ -401,7 +401,7 @@ class HtapInstanceListInstances:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this HtapInstanceListInstances.
+        r"""Sets the ha_mode of this HtapInstanceListInstances.
 
         HTAP实例部署模式。
 
@@ -412,7 +412,7 @@ class HtapInstanceListInstances:
 
     @property
     def pay_model(self):
-        """Gets the pay_model of this HtapInstanceListInstances.
+        r"""Gets the pay_model of this HtapInstanceListInstances.
 
         计费模式。当前仅支持按需计费。 0：按需计费 1：包周期
 
@@ -423,7 +423,7 @@ class HtapInstanceListInstances:
 
     @pay_model.setter
     def pay_model(self, pay_model):
-        """Sets the pay_model of this HtapInstanceListInstances.
+        r"""Sets the pay_model of this HtapInstanceListInstances.
 
         计费模式。当前仅支持按需计费。 0：按需计费 1：包周期
 
@@ -434,7 +434,7 @@ class HtapInstanceListInstances:
 
     @property
     def order_id(self):
-        """Gets the order_id of this HtapInstanceListInstances.
+        r"""Gets the order_id of this HtapInstanceListInstances.
 
         包周期计费订单ID。
 
@@ -445,7 +445,7 @@ class HtapInstanceListInstances:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this HtapInstanceListInstances.
+        r"""Sets the order_id of this HtapInstanceListInstances.
 
         包周期计费订单ID。
 
@@ -456,7 +456,7 @@ class HtapInstanceListInstances:
 
     @property
     def alter_order_id(self):
-        """Gets the alter_order_id of this HtapInstanceListInstances.
+        r"""Gets the alter_order_id of this HtapInstanceListInstances.
 
         包周期计费备用订单ID。
 
@@ -467,7 +467,7 @@ class HtapInstanceListInstances:
 
     @alter_order_id.setter
     def alter_order_id(self, alter_order_id):
-        """Sets the alter_order_id of this HtapInstanceListInstances.
+        r"""Sets the alter_order_id of this HtapInstanceListInstances.
 
         包周期计费备用订单ID。
 
@@ -478,7 +478,7 @@ class HtapInstanceListInstances:
 
     @property
     def data_vip(self):
-        """Gets the data_vip of this HtapInstanceListInstances.
+        r"""Gets the data_vip of this HtapInstanceListInstances.
 
         读写内网地址。
 
@@ -489,7 +489,7 @@ class HtapInstanceListInstances:
 
     @data_vip.setter
     def data_vip(self, data_vip):
-        """Sets the data_vip of this HtapInstanceListInstances.
+        r"""Sets the data_vip of this HtapInstanceListInstances.
 
         读写内网地址。
 
@@ -500,7 +500,7 @@ class HtapInstanceListInstances:
 
     @property
     def readable_node_infos(self):
-        """Gets the readable_node_infos of this HtapInstanceListInstances.
+        r"""Gets the readable_node_infos of this HtapInstanceListInstances.
 
         可读节点信息
 
@@ -511,7 +511,7 @@ class HtapInstanceListInstances:
 
     @readable_node_infos.setter
     def readable_node_infos(self, readable_node_infos):
-        """Sets the readable_node_infos of this HtapInstanceListInstances.
+        r"""Sets the readable_node_infos of this HtapInstanceListInstances.
 
         可读节点信息
 
@@ -522,7 +522,7 @@ class HtapInstanceListInstances:
 
     @property
     def proxy_ips(self):
-        """Gets the proxy_ips of this HtapInstanceListInstances.
+        r"""Gets the proxy_ips of this HtapInstanceListInstances.
 
         代理IP。
 
@@ -533,7 +533,7 @@ class HtapInstanceListInstances:
 
     @proxy_ips.setter
     def proxy_ips(self, proxy_ips):
-        """Sets the proxy_ips of this HtapInstanceListInstances.
+        r"""Sets the proxy_ips of this HtapInstanceListInstances.
 
         代理IP。
 
@@ -544,7 +544,7 @@ class HtapInstanceListInstances:
 
     @property
     def data_vip_v6(self):
-        """Gets the data_vip_v6 of this HtapInstanceListInstances.
+        r"""Gets the data_vip_v6 of this HtapInstanceListInstances.
 
         读写内网地址IPV6。
 
@@ -555,7 +555,7 @@ class HtapInstanceListInstances:
 
     @data_vip_v6.setter
     def data_vip_v6(self, data_vip_v6):
-        """Sets the data_vip_v6 of this HtapInstanceListInstances.
+        r"""Sets the data_vip_v6 of this HtapInstanceListInstances.
 
         读写内网地址IPV6。
 
@@ -566,7 +566,7 @@ class HtapInstanceListInstances:
 
     @property
     def port(self):
-        """Gets the port of this HtapInstanceListInstances.
+        r"""Gets the port of this HtapInstanceListInstances.
 
         数据库访问端口。
 
@@ -577,7 +577,7 @@ class HtapInstanceListInstances:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this HtapInstanceListInstances.
+        r"""Sets the port of this HtapInstanceListInstances.
 
         数据库访问端口。
 
@@ -588,7 +588,7 @@ class HtapInstanceListInstances:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this HtapInstanceListInstances.
+        r"""Gets the available_zones of this HtapInstanceListInstances.
 
         可用区信息。
 
@@ -599,7 +599,7 @@ class HtapInstanceListInstances:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this HtapInstanceListInstances.
+        r"""Sets the available_zones of this HtapInstanceListInstances.
 
         可用区信息。
 
@@ -610,7 +610,7 @@ class HtapInstanceListInstances:
 
     @property
     def current_actions(self):
-        """Gets the current_actions of this HtapInstanceListInstances.
+        r"""Gets the current_actions of this HtapInstanceListInstances.
 
         实例动作。
 
@@ -621,7 +621,7 @@ class HtapInstanceListInstances:
 
     @current_actions.setter
     def current_actions(self, current_actions):
-        """Sets the current_actions of this HtapInstanceListInstances.
+        r"""Sets the current_actions of this HtapInstanceListInstances.
 
         实例动作。
 
@@ -632,7 +632,7 @@ class HtapInstanceListInstances:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this HtapInstanceListInstances.
+        r"""Gets the volume_type of this HtapInstanceListInstances.
 
         存储类型。
 
@@ -643,7 +643,7 @@ class HtapInstanceListInstances:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this HtapInstanceListInstances.
+        r"""Sets the volume_type of this HtapInstanceListInstances.
 
         存储类型。
 
@@ -654,7 +654,7 @@ class HtapInstanceListInstances:
 
     @property
     def server_type(self):
-        """Gets the server_type of this HtapInstanceListInstances.
+        r"""Gets the server_type of this HtapInstanceListInstances.
 
         服务器类型。
 
@@ -665,7 +665,7 @@ class HtapInstanceListInstances:
 
     @server_type.setter
     def server_type(self, server_type):
-        """Sets the server_type of this HtapInstanceListInstances.
+        r"""Sets the server_type of this HtapInstanceListInstances.
 
         服务器类型。
 
@@ -676,7 +676,7 @@ class HtapInstanceListInstances:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this HtapInstanceListInstances.
+        r"""Gets the enterprise_project_id of this HtapInstanceListInstances.
 
         企业项目ID。如果帐户开通企业项目服务则该参数必选，未开启该参数不可选。
 
@@ -687,7 +687,7 @@ class HtapInstanceListInstances:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this HtapInstanceListInstances.
+        r"""Sets the enterprise_project_id of this HtapInstanceListInstances.
 
         企业项目ID。如果帐户开通企业项目服务则该参数必选，未开启该参数不可选。
 
@@ -698,7 +698,7 @@ class HtapInstanceListInstances:
 
     @property
     def dedicated_resource_id(self):
-        """Gets the dedicated_resource_id of this HtapInstanceListInstances.
+        r"""Gets the dedicated_resource_id of this HtapInstanceListInstances.
 
         专属资源池ID，只有开通专属资源池后才支持此参数。
 
@@ -709,7 +709,7 @@ class HtapInstanceListInstances:
 
     @dedicated_resource_id.setter
     def dedicated_resource_id(self, dedicated_resource_id):
-        """Sets the dedicated_resource_id of this HtapInstanceListInstances.
+        r"""Sets the dedicated_resource_id of this HtapInstanceListInstances.
 
         专属资源池ID，只有开通专属资源池后才支持此参数。
 
@@ -720,7 +720,7 @@ class HtapInstanceListInstances:
 
     @property
     def network(self):
-        """Gets the network of this HtapInstanceListInstances.
+        r"""Gets the network of this HtapInstanceListInstances.
 
         :return: The network of this HtapInstanceListInstances.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.HtapInstanceListNetwork`
@@ -729,7 +729,7 @@ class HtapInstanceListInstances:
 
     @network.setter
     def network(self, network):
-        """Sets the network of this HtapInstanceListInstances.
+        r"""Sets the network of this HtapInstanceListInstances.
 
         :param network: The network of this HtapInstanceListInstances.
         :type network: :class:`huaweicloudsdkgaussdb.v3.HtapInstanceListNetwork`
@@ -738,7 +738,7 @@ class HtapInstanceListInstances:
 
     @property
     def ch_master_node_id(self):
-        """Gets the ch_master_node_id of this HtapInstanceListInstances.
+        r"""Gets the ch_master_node_id of this HtapInstanceListInstances.
 
         ClickHouse主节点ID。
 
@@ -749,7 +749,7 @@ class HtapInstanceListInstances:
 
     @ch_master_node_id.setter
     def ch_master_node_id(self, ch_master_node_id):
-        """Sets the ch_master_node_id of this HtapInstanceListInstances.
+        r"""Sets the ch_master_node_id of this HtapInstanceListInstances.
 
         ClickHouse主节点ID。
 
@@ -760,7 +760,7 @@ class HtapInstanceListInstances:
 
     @property
     def node_num(self):
-        """Gets the node_num of this HtapInstanceListInstances.
+        r"""Gets the node_num of this HtapInstanceListInstances.
 
         节点个数。
 
@@ -771,7 +771,7 @@ class HtapInstanceListInstances:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this HtapInstanceListInstances.
+        r"""Sets the node_num of this HtapInstanceListInstances.
 
         节点个数。
 

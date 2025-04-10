@@ -25,7 +25,7 @@ class UpdateEndpointRoutetableRequestBody:
     }
 
     def __init__(self, routetables=None):
-        """UpdateEndpointRoutetableRequestBody
+        r"""UpdateEndpointRoutetableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateEndpointRoutetableRequestBody:
 
     @property
     def routetables(self):
-        """Gets the routetables of this UpdateEndpointRoutetableRequestBody.
+        r"""Gets the routetables of this UpdateEndpointRoutetableRequestBody.
 
         路由表ID列表。
 
@@ -53,7 +53,7 @@ class UpdateEndpointRoutetableRequestBody:
 
     @routetables.setter
     def routetables(self, routetables):
-        """Sets the routetables of this UpdateEndpointRoutetableRequestBody.
+        r"""Sets the routetables of this UpdateEndpointRoutetableRequestBody.
 
         路由表ID列表。
 

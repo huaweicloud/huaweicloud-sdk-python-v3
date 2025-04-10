@@ -29,7 +29,7 @@ class UpdateConfigurationRequest:
     }
 
     def __init__(self, cluster_id=None, configuration_id=None, body=None):
-        """UpdateConfigurationRequest
+        r"""UpdateConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateConfigurationRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateConfigurationRequest.
+        r"""Gets the cluster_id of this UpdateConfigurationRequest.
 
         集群的ID。
 
@@ -66,7 +66,7 @@ class UpdateConfigurationRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateConfigurationRequest.
+        r"""Sets the cluster_id of this UpdateConfigurationRequest.
 
         集群的ID。
 
@@ -77,7 +77,7 @@ class UpdateConfigurationRequest:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this UpdateConfigurationRequest.
+        r"""Gets the configuration_id of this UpdateConfigurationRequest.
 
         参数组ID。
 
@@ -88,7 +88,7 @@ class UpdateConfigurationRequest:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this UpdateConfigurationRequest.
+        r"""Sets the configuration_id of this UpdateConfigurationRequest.
 
         参数组ID。
 
@@ -99,7 +99,7 @@ class UpdateConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateConfigurationRequest.
+        r"""Gets the body of this UpdateConfigurationRequest.
 
         :return: The body of this UpdateConfigurationRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.ConfigurationParameterValues`
@@ -108,7 +108,7 @@ class UpdateConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateConfigurationRequest.
+        r"""Sets the body of this UpdateConfigurationRequest.
 
         :param body: The body of this UpdateConfigurationRequest.
         :type body: :class:`huaweicloudsdkdws.v2.ConfigurationParameterValues`

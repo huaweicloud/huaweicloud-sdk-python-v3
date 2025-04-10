@@ -31,7 +31,7 @@ class ReplayErrorClassification:
     }
 
     def __init__(self, target_name=None, error_type=None, error_cnt=None, error_template_cnt=None):
-        """ReplayErrorClassification
+        r"""ReplayErrorClassification
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ReplayErrorClassification:
 
     @property
     def target_name(self):
-        """Gets the target_name of this ReplayErrorClassification.
+        r"""Gets the target_name of this ReplayErrorClassification.
 
         目标库标识
 
@@ -74,7 +74,7 @@ class ReplayErrorClassification:
 
     @target_name.setter
     def target_name(self, target_name):
-        """Sets the target_name of this ReplayErrorClassification.
+        r"""Sets the target_name of this ReplayErrorClassification.
 
         目标库标识
 
@@ -85,7 +85,7 @@ class ReplayErrorClassification:
 
     @property
     def error_type(self):
-        """Gets the error_type of this ReplayErrorClassification.
+        r"""Gets the error_type of this ReplayErrorClassification.
 
         异常SQL分类
 
@@ -96,7 +96,7 @@ class ReplayErrorClassification:
 
     @error_type.setter
     def error_type(self, error_type):
-        """Sets the error_type of this ReplayErrorClassification.
+        r"""Sets the error_type of this ReplayErrorClassification.
 
         异常SQL分类
 
@@ -107,7 +107,7 @@ class ReplayErrorClassification:
 
     @property
     def error_cnt(self):
-        """Gets the error_cnt of this ReplayErrorClassification.
+        r"""Gets the error_cnt of this ReplayErrorClassification.
 
         异常SQL数量
 
@@ -118,7 +118,7 @@ class ReplayErrorClassification:
 
     @error_cnt.setter
     def error_cnt(self, error_cnt):
-        """Sets the error_cnt of this ReplayErrorClassification.
+        r"""Sets the error_cnt of this ReplayErrorClassification.
 
         异常SQL数量
 
@@ -129,7 +129,7 @@ class ReplayErrorClassification:
 
     @property
     def error_template_cnt(self):
-        """Gets the error_template_cnt of this ReplayErrorClassification.
+        r"""Gets the error_template_cnt of this ReplayErrorClassification.
 
         异常SQL模板数量
 
@@ -140,7 +140,7 @@ class ReplayErrorClassification:
 
     @error_template_cnt.setter
     def error_template_cnt(self, error_template_cnt):
-        """Sets the error_template_cnt of this ReplayErrorClassification.
+        r"""Sets the error_template_cnt of this ReplayErrorClassification.
 
         异常SQL模板数量
 

@@ -28,7 +28,7 @@ class ListConfigHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, history_num=None, histories=None):
-        """ListConfigHistoriesResponse
+        r"""ListConfigHistoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListConfigHistoriesResponse(SdkResponse):
 
     @property
     def history_num(self):
-        """Gets the history_num of this ListConfigHistoriesResponse.
+        r"""Gets the history_num of this ListConfigHistoriesResponse.
 
         实例参数修改记录个数
 
@@ -62,7 +62,7 @@ class ListConfigHistoriesResponse(SdkResponse):
 
     @history_num.setter
     def history_num(self, history_num):
-        """Sets the history_num of this ListConfigHistoriesResponse.
+        r"""Sets the history_num of this ListConfigHistoriesResponse.
 
         实例参数修改记录个数
 
@@ -73,7 +73,7 @@ class ListConfigHistoriesResponse(SdkResponse):
 
     @property
     def histories(self):
-        """Gets the histories of this ListConfigHistoriesResponse.
+        r"""Gets the histories of this ListConfigHistoriesResponse.
 
         实力参数修改记录详情
 
@@ -84,7 +84,7 @@ class ListConfigHistoriesResponse(SdkResponse):
 
     @histories.setter
     def histories(self, histories):
-        """Sets the histories of this ListConfigHistoriesResponse.
+        r"""Sets the histories of this ListConfigHistoriesResponse.
 
         实力参数修改记录详情
 

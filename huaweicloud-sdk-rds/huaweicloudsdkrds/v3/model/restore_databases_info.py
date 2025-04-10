@@ -27,7 +27,7 @@ class RestoreDatabasesInfo:
     }
 
     def __init__(self, database=None, tables=None):
-        """RestoreDatabasesInfo
+        r"""RestoreDatabasesInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RestoreDatabasesInfo:
 
     @property
     def database(self):
-        """Gets the database of this RestoreDatabasesInfo.
+        r"""Gets the database of this RestoreDatabasesInfo.
 
         库名
 
@@ -59,7 +59,7 @@ class RestoreDatabasesInfo:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this RestoreDatabasesInfo.
+        r"""Sets the database of this RestoreDatabasesInfo.
 
         库名
 
@@ -70,7 +70,7 @@ class RestoreDatabasesInfo:
 
     @property
     def tables(self):
-        """Gets the tables of this RestoreDatabasesInfo.
+        r"""Gets the tables of this RestoreDatabasesInfo.
 
         表信息
 
@@ -81,7 +81,7 @@ class RestoreDatabasesInfo:
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this RestoreDatabasesInfo.
+        r"""Sets the tables of this RestoreDatabasesInfo.
 
         表信息
 

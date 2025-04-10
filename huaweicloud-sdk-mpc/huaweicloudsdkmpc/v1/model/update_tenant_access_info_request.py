@@ -27,7 +27,7 @@ class UpdateTenantAccessInfoRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """UpdateTenantAccessInfoRequest
+        r"""UpdateTenantAccessInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateTenantAccessInfoRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateTenantAccessInfoRequest.
+        r"""Gets the x_language of this UpdateTenantAccessInfoRequest.
 
         客户端语言
 
@@ -61,7 +61,7 @@ class UpdateTenantAccessInfoRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateTenantAccessInfoRequest.
+        r"""Sets the x_language of this UpdateTenantAccessInfoRequest.
 
         客户端语言
 
@@ -72,7 +72,7 @@ class UpdateTenantAccessInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTenantAccessInfoRequest.
+        r"""Gets the body of this UpdateTenantAccessInfoRequest.
 
         :return: The body of this UpdateTenantAccessInfoRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.UpdateTenantAccessInfoReq`
@@ -81,7 +81,7 @@ class UpdateTenantAccessInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTenantAccessInfoRequest.
+        r"""Sets the body of this UpdateTenantAccessInfoRequest.
 
         :param body: The body of this UpdateTenantAccessInfoRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.UpdateTenantAccessInfoReq`

@@ -29,7 +29,7 @@ class AddProtectBranchV2Request:
     }
 
     def __init__(self, repository_id=None, branch_name=None, body=None):
-        """AddProtectBranchV2Request
+        r"""AddProtectBranchV2Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AddProtectBranchV2Request:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this AddProtectBranchV2Request.
+        r"""Gets the repository_id of this AddProtectBranchV2Request.
 
         仓库主键id
 
@@ -66,7 +66,7 @@ class AddProtectBranchV2Request:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this AddProtectBranchV2Request.
+        r"""Sets the repository_id of this AddProtectBranchV2Request.
 
         仓库主键id
 
@@ -77,7 +77,7 @@ class AddProtectBranchV2Request:
 
     @property
     def branch_name(self):
-        """Gets the branch_name of this AddProtectBranchV2Request.
+        r"""Gets the branch_name of this AddProtectBranchV2Request.
 
         分支名称
 
@@ -88,7 +88,7 @@ class AddProtectBranchV2Request:
 
     @branch_name.setter
     def branch_name(self, branch_name):
-        """Sets the branch_name of this AddProtectBranchV2Request.
+        r"""Sets the branch_name of this AddProtectBranchV2Request.
 
         分支名称
 
@@ -99,7 +99,7 @@ class AddProtectBranchV2Request:
 
     @property
     def body(self):
-        """Gets the body of this AddProtectBranchV2Request.
+        r"""Gets the body of this AddProtectBranchV2Request.
 
         :return: The body of this AddProtectBranchV2Request.
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddProtectRequest`
@@ -108,7 +108,7 @@ class AddProtectBranchV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddProtectBranchV2Request.
+        r"""Sets the body of this AddProtectBranchV2Request.
 
         :param body: The body of this AddProtectBranchV2Request.
         :type body: :class:`huaweicloudsdkcodehub.v3.AddProtectRequest`

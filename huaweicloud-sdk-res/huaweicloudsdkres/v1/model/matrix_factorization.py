@@ -29,7 +29,7 @@ class MatrixFactorization:
     }
 
     def __init__(self, implicit_vector_rank=None, regular_param=None, max_iterator_num=None):
-        """MatrixFactorization
+        r"""MatrixFactorization
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class MatrixFactorization:
 
     @property
     def implicit_vector_rank(self):
-        """Gets the implicit_vector_rank of this MatrixFactorization.
+        r"""Gets the implicit_vector_rank of this MatrixFactorization.
 
         隐向量维度。
 
@@ -65,7 +65,7 @@ class MatrixFactorization:
 
     @implicit_vector_rank.setter
     def implicit_vector_rank(self, implicit_vector_rank):
-        """Sets the implicit_vector_rank of this MatrixFactorization.
+        r"""Sets the implicit_vector_rank of this MatrixFactorization.
 
         隐向量维度。
 
@@ -76,7 +76,7 @@ class MatrixFactorization:
 
     @property
     def regular_param(self):
-        """Gets the regular_param of this MatrixFactorization.
+        r"""Gets the regular_param of this MatrixFactorization.
 
         优化正则化系数。
 
@@ -87,7 +87,7 @@ class MatrixFactorization:
 
     @regular_param.setter
     def regular_param(self, regular_param):
-        """Sets the regular_param of this MatrixFactorization.
+        r"""Sets the regular_param of this MatrixFactorization.
 
         优化正则化系数。
 
@@ -98,7 +98,7 @@ class MatrixFactorization:
 
     @property
     def max_iterator_num(self):
-        """Gets the max_iterator_num of this MatrixFactorization.
+        r"""Gets the max_iterator_num of this MatrixFactorization.
 
         迭代次数。
 
@@ -109,7 +109,7 @@ class MatrixFactorization:
 
     @max_iterator_num.setter
     def max_iterator_num(self, max_iterator_num):
-        """Sets the max_iterator_num of this MatrixFactorization.
+        r"""Sets the max_iterator_num of this MatrixFactorization.
 
         迭代次数。
 

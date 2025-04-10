@@ -28,7 +28,7 @@ class ListSubnetBandwidthsResponse(SdkResponse):
     }
 
     def __init__(self, bandwidths=None, total_count=None):
-        """ListSubnetBandwidthsResponse
+        r"""ListSubnetBandwidthsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSubnetBandwidthsResponse(SdkResponse):
 
     @property
     def bandwidths(self):
-        """Gets the bandwidths of this ListSubnetBandwidthsResponse.
+        r"""Gets the bandwidths of this ListSubnetBandwidthsResponse.
 
         云办公带宽信息。
 
@@ -62,7 +62,7 @@ class ListSubnetBandwidthsResponse(SdkResponse):
 
     @bandwidths.setter
     def bandwidths(self, bandwidths):
-        """Sets the bandwidths of this ListSubnetBandwidthsResponse.
+        r"""Sets the bandwidths of this ListSubnetBandwidthsResponse.
 
         云办公带宽信息。
 
@@ -73,7 +73,7 @@ class ListSubnetBandwidthsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListSubnetBandwidthsResponse.
+        r"""Gets the total_count of this ListSubnetBandwidthsResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ListSubnetBandwidthsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListSubnetBandwidthsResponse.
+        r"""Sets the total_count of this ListSubnetBandwidthsResponse.
 
         总数。
 

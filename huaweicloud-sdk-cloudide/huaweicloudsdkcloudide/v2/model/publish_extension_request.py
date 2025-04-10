@@ -30,7 +30,7 @@ class PublishExtensionRequest:
     }
 
     def __init__(self, x_publisher_token=None, task_id=None, body=None):
-        """PublishExtensionRequest
+        r"""PublishExtensionRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PublishExtensionRequest:
 
     @property
     def x_publisher_token(self):
-        """Gets the x_publisher_token of this PublishExtensionRequest.
+        r"""Gets the x_publisher_token of this PublishExtensionRequest.
 
         发布商凭证,x-publisher-token和X-Auth-Token必传一个
 
@@ -68,7 +68,7 @@ class PublishExtensionRequest:
 
     @x_publisher_token.setter
     def x_publisher_token(self, x_publisher_token):
-        """Sets the x_publisher_token of this PublishExtensionRequest.
+        r"""Sets the x_publisher_token of this PublishExtensionRequest.
 
         发布商凭证,x-publisher-token和X-Auth-Token必传一个
 
@@ -79,7 +79,7 @@ class PublishExtensionRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this PublishExtensionRequest.
+        r"""Gets the task_id of this PublishExtensionRequest.
 
         任务id
 
@@ -90,7 +90,7 @@ class PublishExtensionRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this PublishExtensionRequest.
+        r"""Sets the task_id of this PublishExtensionRequest.
 
         任务id
 
@@ -101,7 +101,7 @@ class PublishExtensionRequest:
 
     @property
     def body(self):
-        """Gets the body of this PublishExtensionRequest.
+        r"""Gets the body of this PublishExtensionRequest.
 
         :return: The body of this PublishExtensionRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.TaskModelMarketPlace`
@@ -110,7 +110,7 @@ class PublishExtensionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PublishExtensionRequest.
+        r"""Sets the body of this PublishExtensionRequest.
 
         :param body: The body of this PublishExtensionRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.TaskModelMarketPlace`

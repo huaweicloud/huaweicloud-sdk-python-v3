@@ -29,7 +29,7 @@ class Result:
     }
 
     def __init__(self, address=None, port=None, status=None):
-        """Result
+        r"""Result
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Result:
 
     @property
     def address(self):
-        """Gets the address of this Result.
+        r"""Gets the address of this Result.
 
         IP地址或域名。
 
@@ -68,7 +68,7 @@ class Result:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this Result.
+        r"""Sets the address of this Result.
 
         IP地址或域名。
 
@@ -79,7 +79,7 @@ class Result:
 
     @property
     def port(self):
-        """Gets the port of this Result.
+        r"""Gets the port of this Result.
 
         端口号。
 
@@ -90,7 +90,7 @@ class Result:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this Result.
+        r"""Sets the port of this Result.
 
         端口号。
 
@@ -101,7 +101,7 @@ class Result:
 
     @property
     def status(self):
-        """Gets the status of this Result.
+        r"""Gets the status of this Result.
 
         测试结果。 - 1：表示连接成功。 - 0：表示地址不可达。 - 2：表示端口不可达。 - 3：表示域名无法解析。 - -2：表示位置错误。
 
@@ -112,7 +112,7 @@ class Result:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Result.
+        r"""Sets the status of this Result.
 
         测试结果。 - 1：表示连接成功。 - 0：表示地址不可达。 - 2：表示端口不可达。 - 3：表示域名无法解析。 - -2：表示位置错误。
 

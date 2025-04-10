@@ -61,7 +61,7 @@ class ApplyCertificateRequestBody:
     }
 
     def __init__(self, domain=None, sans=None, csr=None, company_name=None, company_unit=None, company_province=None, company_city=None, country=None, applicant_name=None, applicant_phone=None, applicant_email=None, contact_name=None, contact_phone=None, contact_email=None, auto_dns_auth=None, agree_privacy_protection=None, domain_method=None, key_algorithm=None, ca_hash_algorithm=None):
-        """ApplyCertificateRequestBody
+        r"""ApplyCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def domain(self):
-        """Gets the domain of this ApplyCertificateRequestBody.
+        r"""Gets the domain of this ApplyCertificateRequestBody.
 
         该证书绑定的域名。 - 当购买的证书为“单域名”或“泛域名”类型的证书时，请直接填写单域名或泛域名即可。 - 当购买的证书为“多域名”类型的证书时，需要选择1个域名作为主域名。 示例：www.example.com
 
@@ -174,7 +174,7 @@ class ApplyCertificateRequestBody:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ApplyCertificateRequestBody.
+        r"""Sets the domain of this ApplyCertificateRequestBody.
 
         该证书绑定的域名。 - 当购买的证书为“单域名”或“泛域名”类型的证书时，请直接填写单域名或泛域名即可。 - 当购买的证书为“多域名”类型的证书时，需要选择1个域名作为主域名。 示例：www.example.com
 
@@ -185,7 +185,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def sans(self):
-        """Gets the sans of this ApplyCertificateRequestBody.
+        r"""Gets the sans of this ApplyCertificateRequestBody.
 
         绑定多域名类型证书的附加域名。 当购买的证书为“多域名”类型的证书，且有可增加附加域名的额度时，才需要设置该值。 多个域名需要以“;”隔开。 示例：www.example.com;www.example1.com;www.example2.com
 
@@ -196,7 +196,7 @@ class ApplyCertificateRequestBody:
 
     @sans.setter
     def sans(self, sans):
-        """Sets the sans of this ApplyCertificateRequestBody.
+        r"""Sets the sans of this ApplyCertificateRequestBody.
 
         绑定多域名类型证书的附加域名。 当购买的证书为“多域名”类型的证书，且有可增加附加域名的额度时，才需要设置该值。 多个域名需要以“;”隔开。 示例：www.example.com;www.example1.com;www.example2.com
 
@@ -207,7 +207,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def csr(self):
-        """Gets the csr of this ApplyCertificateRequestBody.
+        r"""Gets the csr of this ApplyCertificateRequestBody.
 
         证书CSR串，与域名必须匹配。
 
@@ -218,7 +218,7 @@ class ApplyCertificateRequestBody:
 
     @csr.setter
     def csr(self, csr):
-        """Sets the csr of this ApplyCertificateRequestBody.
+        r"""Sets the csr of this ApplyCertificateRequestBody.
 
         证书CSR串，与域名必须匹配。
 
@@ -229,7 +229,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def company_name(self):
-        """Gets the company_name of this ApplyCertificateRequestBody.
+        r"""Gets the company_name of this ApplyCertificateRequestBody.
 
         公司名称，OV和EV型证书必填。字符长度为0~63位。
 
@@ -240,7 +240,7 @@ class ApplyCertificateRequestBody:
 
     @company_name.setter
     def company_name(self, company_name):
-        """Sets the company_name of this ApplyCertificateRequestBody.
+        r"""Sets the company_name of this ApplyCertificateRequestBody.
 
         公司名称，OV和EV型证书必填。字符长度为0~63位。
 
@@ -251,7 +251,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def company_unit(self):
-        """Gets the company_unit of this ApplyCertificateRequestBody.
+        r"""Gets the company_unit of this ApplyCertificateRequestBody.
 
         部门名称。字符长度为0~63位。
 
@@ -262,7 +262,7 @@ class ApplyCertificateRequestBody:
 
     @company_unit.setter
     def company_unit(self, company_unit):
-        """Sets the company_unit of this ApplyCertificateRequestBody.
+        r"""Sets the company_unit of this ApplyCertificateRequestBody.
 
         部门名称。字符长度为0~63位。
 
@@ -273,7 +273,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def company_province(self):
-        """Gets the company_province of this ApplyCertificateRequestBody.
+        r"""Gets the company_province of this ApplyCertificateRequestBody.
 
         公司所在省份，OV和EV型证书必填。字符长度为0~63位。
 
@@ -284,7 +284,7 @@ class ApplyCertificateRequestBody:
 
     @company_province.setter
     def company_province(self, company_province):
-        """Sets the company_province of this ApplyCertificateRequestBody.
+        r"""Sets the company_province of this ApplyCertificateRequestBody.
 
         公司所在省份，OV和EV型证书必填。字符长度为0~63位。
 
@@ -295,7 +295,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def company_city(self):
-        """Gets the company_city of this ApplyCertificateRequestBody.
+        r"""Gets the company_city of this ApplyCertificateRequestBody.
 
         公司所在市区，OV和EV型证书必填。字符长度为0~63位。
 
@@ -306,7 +306,7 @@ class ApplyCertificateRequestBody:
 
     @company_city.setter
     def company_city(self, company_city):
-        """Sets the company_city of this ApplyCertificateRequestBody.
+        r"""Sets the company_city of this ApplyCertificateRequestBody.
 
         公司所在市区，OV和EV型证书必填。字符长度为0~63位。
 
@@ -317,7 +317,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def country(self):
-        """Gets the country of this ApplyCertificateRequestBody.
+        r"""Gets the country of this ApplyCertificateRequestBody.
 
         OV和EV型证书必填,国家编码，需符合正则\"**[A-Za-z]{2}**\"。
 
@@ -328,7 +328,7 @@ class ApplyCertificateRequestBody:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this ApplyCertificateRequestBody.
+        r"""Sets the country of this ApplyCertificateRequestBody.
 
         OV和EV型证书必填,国家编码，需符合正则\"**[A-Za-z]{2}**\"。
 
@@ -339,7 +339,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def applicant_name(self):
-        """Gets the applicant_name of this ApplyCertificateRequestBody.
+        r"""Gets the applicant_name of this ApplyCertificateRequestBody.
 
         申请人的姓名。请输入中文、英文字符，下划线，中划线，英文逗号，英文句点，且长度为4到100字节。
 
@@ -350,7 +350,7 @@ class ApplyCertificateRequestBody:
 
     @applicant_name.setter
     def applicant_name(self, applicant_name):
-        """Sets the applicant_name of this ApplyCertificateRequestBody.
+        r"""Sets the applicant_name of this ApplyCertificateRequestBody.
 
         申请人的姓名。请输入中文、英文字符，下划线，中划线，英文逗号，英文句点，且长度为4到100字节。
 
@@ -361,7 +361,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def applicant_phone(self):
-        """Gets the applicant_phone of this ApplyCertificateRequestBody.
+        r"""Gets the applicant_phone of this ApplyCertificateRequestBody.
 
         申请人的电话号码。示例：13212345678
 
@@ -372,7 +372,7 @@ class ApplyCertificateRequestBody:
 
     @applicant_phone.setter
     def applicant_phone(self, applicant_phone):
-        """Sets the applicant_phone of this ApplyCertificateRequestBody.
+        r"""Sets the applicant_phone of this ApplyCertificateRequestBody.
 
         申请人的电话号码。示例：13212345678
 
@@ -383,7 +383,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def applicant_email(self):
-        """Gets the applicant_email of this ApplyCertificateRequestBody.
+        r"""Gets the applicant_email of this ApplyCertificateRequestBody.
 
         申请人的邮箱。示例：example@huawei.com
 
@@ -394,7 +394,7 @@ class ApplyCertificateRequestBody:
 
     @applicant_email.setter
     def applicant_email(self, applicant_email):
-        """Sets the applicant_email of this ApplyCertificateRequestBody.
+        r"""Sets the applicant_email of this ApplyCertificateRequestBody.
 
         申请人的邮箱。示例：example@huawei.com
 
@@ -405,7 +405,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def contact_name(self):
-        """Gets the contact_name of this ApplyCertificateRequestBody.
+        r"""Gets the contact_name of this ApplyCertificateRequestBody.
 
         技术联系人的姓名。字符长度为0~63位。
 
@@ -416,7 +416,7 @@ class ApplyCertificateRequestBody:
 
     @contact_name.setter
     def contact_name(self, contact_name):
-        """Sets the contact_name of this ApplyCertificateRequestBody.
+        r"""Sets the contact_name of this ApplyCertificateRequestBody.
 
         技术联系人的姓名。字符长度为0~63位。
 
@@ -427,7 +427,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def contact_phone(self):
-        """Gets the contact_phone of this ApplyCertificateRequestBody.
+        r"""Gets the contact_phone of this ApplyCertificateRequestBody.
 
         技术联系人的电话号码。示例：13212345678
 
@@ -438,7 +438,7 @@ class ApplyCertificateRequestBody:
 
     @contact_phone.setter
     def contact_phone(self, contact_phone):
-        """Sets the contact_phone of this ApplyCertificateRequestBody.
+        r"""Sets the contact_phone of this ApplyCertificateRequestBody.
 
         技术联系人的电话号码。示例：13212345678
 
@@ -449,7 +449,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def contact_email(self):
-        """Gets the contact_email of this ApplyCertificateRequestBody.
+        r"""Gets the contact_email of this ApplyCertificateRequestBody.
 
         技术联系人的邮箱。示例：example@huawei.com
 
@@ -460,7 +460,7 @@ class ApplyCertificateRequestBody:
 
     @contact_email.setter
     def contact_email(self, contact_email):
-        """Sets the contact_email of this ApplyCertificateRequestBody.
+        r"""Sets the contact_email of this ApplyCertificateRequestBody.
 
         技术联系人的邮箱。示例：example@huawei.com
 
@@ -471,7 +471,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def auto_dns_auth(self):
-        """Gets the auto_dns_auth of this ApplyCertificateRequestBody.
+        r"""Gets the auto_dns_auth of this ApplyCertificateRequestBody.
 
         是否将DNS验证信息推送到华为云解析服务。 - true：推送。 - false：不推送。
 
@@ -482,7 +482,7 @@ class ApplyCertificateRequestBody:
 
     @auto_dns_auth.setter
     def auto_dns_auth(self, auto_dns_auth):
-        """Sets the auto_dns_auth of this ApplyCertificateRequestBody.
+        r"""Sets the auto_dns_auth of this ApplyCertificateRequestBody.
 
         是否将DNS验证信息推送到华为云解析服务。 - true：推送。 - false：不推送。
 
@@ -493,7 +493,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def agree_privacy_protection(self):
-        """Gets the agree_privacy_protection of this ApplyCertificateRequestBody.
+        r"""Gets the agree_privacy_protection of this ApplyCertificateRequestBody.
 
         是否同意授权隐私协议。此处仅能设置为true才能成功申请证书。 - true：同意隐私协议。 - false：不同意隐私协议。
 
@@ -504,7 +504,7 @@ class ApplyCertificateRequestBody:
 
     @agree_privacy_protection.setter
     def agree_privacy_protection(self, agree_privacy_protection):
-        """Sets the agree_privacy_protection of this ApplyCertificateRequestBody.
+        r"""Sets the agree_privacy_protection of this ApplyCertificateRequestBody.
 
         是否同意授权隐私协议。此处仅能设置为true才能成功申请证书。 - true：同意隐私协议。 - false：不同意隐私协议。
 
@@ -515,7 +515,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def domain_method(self):
-        """Gets the domain_method of this ApplyCertificateRequestBody.
+        r"""Gets the domain_method of this ApplyCertificateRequestBody.
 
         域名验证方式。 - DNS：DNS验证，指在域名管理平台通过解析指定的DNS记录，验证域名所有权。 - FILE：文件验证，指通过在服务器上创建指定文件的方式来验证域名所有权。 - EMAIL：邮箱验证，指登录域名管理员邮箱，接收域名确认邮件并根据提示进行操作来验证域名所有权。 DV域名型和DV基础版证书（GeoTrust入门级SSL证书和DigiCert免费SSL证书）默认通过“DNS验证”方式进行验证。 纯IP（公网IP）的证书仅支持通过“文件验证”方式进行验证，且仅纯IP证书支持“文件验证”方式验证。
 
@@ -526,7 +526,7 @@ class ApplyCertificateRequestBody:
 
     @domain_method.setter
     def domain_method(self, domain_method):
-        """Sets the domain_method of this ApplyCertificateRequestBody.
+        r"""Sets the domain_method of this ApplyCertificateRequestBody.
 
         域名验证方式。 - DNS：DNS验证，指在域名管理平台通过解析指定的DNS记录，验证域名所有权。 - FILE：文件验证，指通过在服务器上创建指定文件的方式来验证域名所有权。 - EMAIL：邮箱验证，指登录域名管理员邮箱，接收域名确认邮件并根据提示进行操作来验证域名所有权。 DV域名型和DV基础版证书（GeoTrust入门级SSL证书和DigiCert免费SSL证书）默认通过“DNS验证”方式进行验证。 纯IP（公网IP）的证书仅支持通过“文件验证”方式进行验证，且仅纯IP证书支持“文件验证”方式验证。
 
@@ -537,7 +537,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def key_algorithm(self):
-        """Gets the key_algorithm of this ApplyCertificateRequestBody.
+        r"""Gets the key_algorithm of this ApplyCertificateRequestBody.
 
         密钥算法。默认RSA_2048
 
@@ -548,7 +548,7 @@ class ApplyCertificateRequestBody:
 
     @key_algorithm.setter
     def key_algorithm(self, key_algorithm):
-        """Sets the key_algorithm of this ApplyCertificateRequestBody.
+        r"""Sets the key_algorithm of this ApplyCertificateRequestBody.
 
         密钥算法。默认RSA_2048
 
@@ -559,7 +559,7 @@ class ApplyCertificateRequestBody:
 
     @property
     def ca_hash_algorithm(self):
-        """Gets the ca_hash_algorithm of this ApplyCertificateRequestBody.
+        r"""Gets the ca_hash_algorithm of this ApplyCertificateRequestBody.
 
         签名算法。Geo OV证书必填。 - DEFAULT - SHA-256
 
@@ -570,7 +570,7 @@ class ApplyCertificateRequestBody:
 
     @ca_hash_algorithm.setter
     def ca_hash_algorithm(self, ca_hash_algorithm):
-        """Sets the ca_hash_algorithm of this ApplyCertificateRequestBody.
+        r"""Sets the ca_hash_algorithm of this ApplyCertificateRequestBody.
 
         签名算法。Geo OV证书必填。 - DEFAULT - SHA-256
 

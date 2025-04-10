@@ -31,7 +31,7 @@ class MuteConfig:
     }
 
     def __init__(self, ends_at=None, scope=None, starts_at=None, type=None):
-        """MuteConfig
+        r"""MuteConfig
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class MuteConfig:
 
     @property
     def ends_at(self):
-        """Gets the ends_at of this MuteConfig.
+        r"""Gets the ends_at of this MuteConfig.
 
         静默规则结束时间
 
@@ -73,7 +73,7 @@ class MuteConfig:
 
     @ends_at.setter
     def ends_at(self, ends_at):
-        """Sets the ends_at of this MuteConfig.
+        r"""Sets the ends_at of this MuteConfig.
 
         静默规则结束时间
 
@@ -84,7 +84,7 @@ class MuteConfig:
 
     @property
     def scope(self):
-        """Gets the scope of this MuteConfig.
+        r"""Gets the scope of this MuteConfig.
 
         当type为每周或者每月时，scope不能为空
 
@@ -95,7 +95,7 @@ class MuteConfig:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this MuteConfig.
+        r"""Sets the scope of this MuteConfig.
 
         当type为每周或者每月时，scope不能为空
 
@@ -106,7 +106,7 @@ class MuteConfig:
 
     @property
     def starts_at(self):
-        """Gets the starts_at of this MuteConfig.
+        r"""Gets the starts_at of this MuteConfig.
 
         静默规则开始时间
 
@@ -117,7 +117,7 @@ class MuteConfig:
 
     @starts_at.setter
     def starts_at(self, starts_at):
-        """Sets the starts_at of this MuteConfig.
+        r"""Sets the starts_at of this MuteConfig.
 
         静默规则开始时间
 
@@ -128,7 +128,7 @@ class MuteConfig:
 
     @property
     def type(self):
-        """Gets the type of this MuteConfig.
+        r"""Gets the type of this MuteConfig.
 
         静默规则生效时间种类。FIXED：固定方式统计，DAILY：按日合计，WEEKLY：按周统计，MONTHLY：按月统计
 
@@ -139,7 +139,7 @@ class MuteConfig:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MuteConfig.
+        r"""Sets the type of this MuteConfig.
 
         静默规则生效时间种类。FIXED：固定方式统计，DAILY：按日合计，WEEKLY：按周统计，MONTHLY：按月统计
 

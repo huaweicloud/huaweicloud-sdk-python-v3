@@ -27,7 +27,7 @@ class InstanceEngineDistributionListInstanceInfos:
     }
 
     def __init__(self, status=None, num=None):
-        """InstanceEngineDistributionListInstanceInfos
+        r"""InstanceEngineDistributionListInstanceInfos
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InstanceEngineDistributionListInstanceInfos:
 
     @property
     def status(self):
-        """Gets the status of this InstanceEngineDistributionListInstanceInfos.
+        r"""Gets the status of this InstanceEngineDistributionListInstanceInfos.
 
         实例状态
 
@@ -61,7 +61,7 @@ class InstanceEngineDistributionListInstanceInfos:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceEngineDistributionListInstanceInfos.
+        r"""Sets the status of this InstanceEngineDistributionListInstanceInfos.
 
         实例状态
 
@@ -72,7 +72,7 @@ class InstanceEngineDistributionListInstanceInfos:
 
     @property
     def num(self):
-        """Gets the num of this InstanceEngineDistributionListInstanceInfos.
+        r"""Gets the num of this InstanceEngineDistributionListInstanceInfos.
 
         实例数量
 
@@ -83,7 +83,7 @@ class InstanceEngineDistributionListInstanceInfos:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this InstanceEngineDistributionListInstanceInfos.
+        r"""Sets the num of this InstanceEngineDistributionListInstanceInfos.
 
         实例数量
 

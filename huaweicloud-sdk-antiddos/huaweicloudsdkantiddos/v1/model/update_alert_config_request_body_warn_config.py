@@ -39,7 +39,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
     }
 
     def __init__(self, anti_d_do_s=None, back_doors=None, bruce_force=None, high_privilege=None, remote_login=None, send_frequency=None, waf=None, weak_password=None):
-        """UpdateAlertConfigRequestBodyWarnConfig
+        r"""UpdateAlertConfigRequestBodyWarnConfig
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @property
     def anti_d_do_s(self):
-        """Gets the anti_d_do_s of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Gets the anti_d_do_s of this UpdateAlertConfigRequestBodyWarnConfig.
 
         DDoS攻击
 
@@ -102,7 +102,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @anti_d_do_s.setter
     def anti_d_do_s(self, anti_d_do_s):
-        """Sets the anti_d_do_s of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Sets the anti_d_do_s of this UpdateAlertConfigRequestBodyWarnConfig.
 
         DDoS攻击
 
@@ -113,7 +113,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @property
     def back_doors(self):
-        """Gets the back_doors of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Gets the back_doors of this UpdateAlertConfigRequestBodyWarnConfig.
 
         网页后门
 
@@ -124,7 +124,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @back_doors.setter
     def back_doors(self, back_doors):
-        """Sets the back_doors of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Sets the back_doors of this UpdateAlertConfigRequestBodyWarnConfig.
 
         网页后门
 
@@ -135,7 +135,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @property
     def bruce_force(self):
-        """Gets the bruce_force of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Gets the bruce_force of this UpdateAlertConfigRequestBodyWarnConfig.
 
         暴力破解（系统登录，FTP，DB）
 
@@ -146,7 +146,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @bruce_force.setter
     def bruce_force(self, bruce_force):
-        """Sets the bruce_force of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Sets the bruce_force of this UpdateAlertConfigRequestBodyWarnConfig.
 
         暴力破解（系统登录，FTP，DB）
 
@@ -157,7 +157,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @property
     def high_privilege(self):
-        """Gets the high_privilege of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Gets the high_privilege of this UpdateAlertConfigRequestBodyWarnConfig.
 
         数据库进程权限过高
 
@@ -168,7 +168,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @high_privilege.setter
     def high_privilege(self, high_privilege):
-        """Sets the high_privilege of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Sets the high_privilege of this UpdateAlertConfigRequestBodyWarnConfig.
 
         数据库进程权限过高
 
@@ -179,7 +179,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @property
     def remote_login(self):
-        """Gets the remote_login of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Gets the remote_login of this UpdateAlertConfigRequestBodyWarnConfig.
 
         异地登录提醒
 
@@ -190,7 +190,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @remote_login.setter
     def remote_login(self, remote_login):
-        """Sets the remote_login of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Sets the remote_login of this UpdateAlertConfigRequestBodyWarnConfig.
 
         异地登录提醒
 
@@ -201,7 +201,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @property
     def send_frequency(self):
-        """Gets the send_frequency of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Gets the send_frequency of this UpdateAlertConfigRequestBodyWarnConfig.
 
         取值范围： - 0：表示每天一次 - 1：表示半小时一次  对于HID必选。
 
@@ -212,7 +212,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @send_frequency.setter
     def send_frequency(self, send_frequency):
-        """Sets the send_frequency of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Sets the send_frequency of this UpdateAlertConfigRequestBodyWarnConfig.
 
         取值范围： - 0：表示每天一次 - 1：表示半小时一次  对于HID必选。
 
@@ -223,7 +223,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @property
     def waf(self):
-        """Gets the waf of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Gets the waf of this UpdateAlertConfigRequestBodyWarnConfig.
 
         保留字段
 
@@ -234,7 +234,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @waf.setter
     def waf(self, waf):
-        """Sets the waf of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Sets the waf of this UpdateAlertConfigRequestBodyWarnConfig.
 
         保留字段
 
@@ -245,7 +245,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @property
     def weak_password(self):
-        """Gets the weak_password of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Gets the weak_password of this UpdateAlertConfigRequestBodyWarnConfig.
 
         弱口令（系统，数据库）
 
@@ -256,7 +256,7 @@ class UpdateAlertConfigRequestBodyWarnConfig:
 
     @weak_password.setter
     def weak_password(self, weak_password):
-        """Sets the weak_password of this UpdateAlertConfigRequestBodyWarnConfig.
+        r"""Sets the weak_password of this UpdateAlertConfigRequestBodyWarnConfig.
 
         弱口令（系统，数据库）
 

@@ -27,7 +27,7 @@ class ExecuteActionRequestBodyMetadata:
     }
 
     def __init__(self, annotations=None, name=None):
-        """ExecuteActionRequestBodyMetadata
+        r"""ExecuteActionRequestBodyMetadata
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteActionRequestBodyMetadata:
 
     @property
     def annotations(self):
-        """Gets the annotations of this ExecuteActionRequestBodyMetadata.
+        r"""Gets the annotations of this ExecuteActionRequestBodyMetadata.
 
         资源信息。
 
@@ -60,7 +60,7 @@ class ExecuteActionRequestBodyMetadata:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this ExecuteActionRequestBodyMetadata.
+        r"""Sets the annotations of this ExecuteActionRequestBodyMetadata.
 
         资源信息。
 
@@ -71,7 +71,7 @@ class ExecuteActionRequestBodyMetadata:
 
     @property
     def name(self):
-        """Gets the name of this ExecuteActionRequestBodyMetadata.
+        r"""Gets the name of this ExecuteActionRequestBodyMetadata.
 
         action名称。
 
@@ -82,7 +82,7 @@ class ExecuteActionRequestBodyMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExecuteActionRequestBodyMetadata.
+        r"""Sets the name of this ExecuteActionRequestBodyMetadata.
 
         action名称。
 

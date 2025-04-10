@@ -41,7 +41,7 @@ class ServerModelExtendSpec:
     }
 
     def __init__(self, cpu=None, memory=None, disk=None, network_interface=None, gpu=None, bms_flavor=None, gpu_count=None, numa_count=None, os_volume=None):
-        """ServerModelExtendSpec
+        r"""ServerModelExtendSpec
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ServerModelExtendSpec:
 
     @property
     def cpu(self):
-        """Gets the cpu of this ServerModelExtendSpec.
+        r"""Gets the cpu of this ServerModelExtendSpec.
 
         云手机服务器cpu类型。
 
@@ -110,7 +110,7 @@ class ServerModelExtendSpec:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this ServerModelExtendSpec.
+        r"""Sets the cpu of this ServerModelExtendSpec.
 
         云手机服务器cpu类型。
 
@@ -121,7 +121,7 @@ class ServerModelExtendSpec:
 
     @property
     def memory(self):
-        """Gets the memory of this ServerModelExtendSpec.
+        r"""Gets the memory of this ServerModelExtendSpec.
 
         云手机服务器内存类型。
 
@@ -132,7 +132,7 @@ class ServerModelExtendSpec:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this ServerModelExtendSpec.
+        r"""Sets the memory of this ServerModelExtendSpec.
 
         云手机服务器内存类型。
 
@@ -143,7 +143,7 @@ class ServerModelExtendSpec:
 
     @property
     def disk(self):
-        """Gets the disk of this ServerModelExtendSpec.
+        r"""Gets the disk of this ServerModelExtendSpec.
 
         云手机服务器磁盘类型。
 
@@ -154,7 +154,7 @@ class ServerModelExtendSpec:
 
     @disk.setter
     def disk(self, disk):
-        """Sets the disk of this ServerModelExtendSpec.
+        r"""Sets the disk of this ServerModelExtendSpec.
 
         云手机服务器磁盘类型。
 
@@ -165,7 +165,7 @@ class ServerModelExtendSpec:
 
     @property
     def network_interface(self):
-        """Gets the network_interface of this ServerModelExtendSpec.
+        r"""Gets the network_interface of this ServerModelExtendSpec.
 
         云手机服务器网络类型。
 
@@ -176,7 +176,7 @@ class ServerModelExtendSpec:
 
     @network_interface.setter
     def network_interface(self, network_interface):
-        """Sets the network_interface of this ServerModelExtendSpec.
+        r"""Sets the network_interface of this ServerModelExtendSpec.
 
         云手机服务器网络类型。
 
@@ -187,7 +187,7 @@ class ServerModelExtendSpec:
 
     @property
     def gpu(self):
-        """Gets the gpu of this ServerModelExtendSpec.
+        r"""Gets the gpu of this ServerModelExtendSpec.
 
         云手机服务器gpu类型。
 
@@ -198,7 +198,7 @@ class ServerModelExtendSpec:
 
     @gpu.setter
     def gpu(self, gpu):
-        """Sets the gpu of this ServerModelExtendSpec.
+        r"""Sets the gpu of this ServerModelExtendSpec.
 
         云手机服务器gpu类型。
 
@@ -209,7 +209,7 @@ class ServerModelExtendSpec:
 
     @property
     def bms_flavor(self):
-        """Gets the bms_flavor of this ServerModelExtendSpec.
+        r"""Gets the bms_flavor of this ServerModelExtendSpec.
 
         云手机服务器bms规格。
 
@@ -220,7 +220,7 @@ class ServerModelExtendSpec:
 
     @bms_flavor.setter
     def bms_flavor(self, bms_flavor):
-        """Sets the bms_flavor of this ServerModelExtendSpec.
+        r"""Sets the bms_flavor of this ServerModelExtendSpec.
 
         云手机服务器bms规格。
 
@@ -231,7 +231,7 @@ class ServerModelExtendSpec:
 
     @property
     def gpu_count(self):
-        """Gets the gpu_count of this ServerModelExtendSpec.
+        r"""Gets the gpu_count of this ServerModelExtendSpec.
 
         云手机服务器gpu数量。
 
@@ -242,7 +242,7 @@ class ServerModelExtendSpec:
 
     @gpu_count.setter
     def gpu_count(self, gpu_count):
-        """Sets the gpu_count of this ServerModelExtendSpec.
+        r"""Sets the gpu_count of this ServerModelExtendSpec.
 
         云手机服务器gpu数量。
 
@@ -253,7 +253,7 @@ class ServerModelExtendSpec:
 
     @property
     def numa_count(self):
-        """Gets the numa_count of this ServerModelExtendSpec.
+        r"""Gets the numa_count of this ServerModelExtendSpec.
 
         云手机服务器numa数量。
 
@@ -264,7 +264,7 @@ class ServerModelExtendSpec:
 
     @numa_count.setter
     def numa_count(self, numa_count):
-        """Sets the numa_count of this ServerModelExtendSpec.
+        r"""Sets the numa_count of this ServerModelExtendSpec.
 
         云手机服务器numa数量。
 
@@ -275,7 +275,7 @@ class ServerModelExtendSpec:
 
     @property
     def os_volume(self):
-        """Gets the os_volume of this ServerModelExtendSpec.
+        r"""Gets the os_volume of this ServerModelExtendSpec.
 
         :return: The os_volume of this ServerModelExtendSpec.
         :rtype: :class:`huaweicloudsdkcph.v1.ServerModelExtendSpecOsVolume`
@@ -284,7 +284,7 @@ class ServerModelExtendSpec:
 
     @os_volume.setter
     def os_volume(self, os_volume):
-        """Sets the os_volume of this ServerModelExtendSpec.
+        r"""Sets the os_volume of this ServerModelExtendSpec.
 
         :param os_volume: The os_volume of this ServerModelExtendSpec.
         :type os_volume: :class:`huaweicloudsdkcph.v1.ServerModelExtendSpecOsVolume`

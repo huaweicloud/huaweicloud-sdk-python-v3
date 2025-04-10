@@ -33,7 +33,7 @@ class ListRobotRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None, room_id=None, robot_type=None):
-        """ListRobotRequest
+        r"""ListRobotRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListRobotRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListRobotRequest.
+        r"""Gets the x_app_user_id of this ListRobotRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -82,7 +82,7 @@ class ListRobotRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListRobotRequest.
+        r"""Sets the x_app_user_id of this ListRobotRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -93,7 +93,7 @@ class ListRobotRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRobotRequest.
+        r"""Gets the offset of this ListRobotRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -104,7 +104,7 @@ class ListRobotRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRobotRequest.
+        r"""Sets the offset of this ListRobotRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -115,7 +115,7 @@ class ListRobotRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRobotRequest.
+        r"""Gets the limit of this ListRobotRequest.
 
         每页显示的条目数量。
 
@@ -126,7 +126,7 @@ class ListRobotRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRobotRequest.
+        r"""Sets the limit of this ListRobotRequest.
 
         每页显示的条目数量。
 
@@ -137,7 +137,7 @@ class ListRobotRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this ListRobotRequest.
+        r"""Gets the room_id of this ListRobotRequest.
 
         智能交互对话房间ID。
 
@@ -148,7 +148,7 @@ class ListRobotRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ListRobotRequest.
+        r"""Sets the room_id of this ListRobotRequest.
 
         智能交互对话房间ID。
 
@@ -159,7 +159,7 @@ class ListRobotRequest:
 
     @property
     def robot_type(self):
-        """Gets the robot_type of this ListRobotRequest.
+        r"""Gets the robot_type of this ListRobotRequest.
 
         交互对接类型  * LIVE:直播交互  * CHAT:智能交互
 
@@ -170,7 +170,7 @@ class ListRobotRequest:
 
     @robot_type.setter
     def robot_type(self, robot_type):
-        """Sets the robot_type of this ListRobotRequest.
+        r"""Sets the robot_type of this ListRobotRequest.
 
         交互对接类型  * LIVE:直播交互  * CHAT:智能交互
 

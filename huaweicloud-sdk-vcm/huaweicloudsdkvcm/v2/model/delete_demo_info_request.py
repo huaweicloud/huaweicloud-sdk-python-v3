@@ -25,7 +25,7 @@ class DeleteDemoInfoRequest:
     }
 
     def __init__(self, task_id=None):
-        """DeleteDemoInfoRequest
+        r"""DeleteDemoInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDemoInfoRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteDemoInfoRequest.
+        r"""Gets the task_id of this DeleteDemoInfoRequest.
 
         作业ID
 
@@ -53,7 +53,7 @@ class DeleteDemoInfoRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteDemoInfoRequest.
+        r"""Sets the task_id of this DeleteDemoInfoRequest.
 
         作业ID
 

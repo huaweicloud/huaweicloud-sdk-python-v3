@@ -36,7 +36,7 @@ class ShowHealthCompareJobDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, type=None, start_time=None, end_time=None, status=None, job_name=None):
-        """ShowHealthCompareJobDetailResponse
+        r"""ShowHealthCompareJobDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowHealthCompareJobDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowHealthCompareJobDetailResponse.
+        r"""Gets the id of this ShowHealthCompareJobDetailResponse.
 
         对比任务ID。
 
@@ -90,7 +90,7 @@ class ShowHealthCompareJobDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowHealthCompareJobDetailResponse.
+        r"""Sets the id of this ShowHealthCompareJobDetailResponse.
 
         对比任务ID。
 
@@ -101,7 +101,7 @@ class ShowHealthCompareJobDetailResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowHealthCompareJobDetailResponse.
+        r"""Gets the type of this ShowHealthCompareJobDetailResponse.
 
         对比类型： object_comparison：对象对比。 lines：行对比。 account：用户对比。
 
@@ -112,7 +112,7 @@ class ShowHealthCompareJobDetailResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowHealthCompareJobDetailResponse.
+        r"""Sets the type of this ShowHealthCompareJobDetailResponse.
 
         对比类型： object_comparison：对象对比。 lines：行对比。 account：用户对比。
 
@@ -123,7 +123,7 @@ class ShowHealthCompareJobDetailResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowHealthCompareJobDetailResponse.
+        r"""Gets the start_time of this ShowHealthCompareJobDetailResponse.
 
         开始时间，UTC时间，例如：2024-04-03T08:00:01Z。
 
@@ -134,7 +134,7 @@ class ShowHealthCompareJobDetailResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowHealthCompareJobDetailResponse.
+        r"""Sets the start_time of this ShowHealthCompareJobDetailResponse.
 
         开始时间，UTC时间，例如：2024-04-03T08:00:01Z。
 
@@ -145,7 +145,7 @@ class ShowHealthCompareJobDetailResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowHealthCompareJobDetailResponse.
+        r"""Gets the end_time of this ShowHealthCompareJobDetailResponse.
 
         结束时间，UTC时间，例如：2024-04-03T08:00:01Z。
 
@@ -156,7 +156,7 @@ class ShowHealthCompareJobDetailResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowHealthCompareJobDetailResponse.
+        r"""Sets the end_time of this ShowHealthCompareJobDetailResponse.
 
         结束时间，UTC时间，例如：2024-04-03T08:00:01Z。
 
@@ -167,7 +167,7 @@ class ShowHealthCompareJobDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowHealthCompareJobDetailResponse.
+        r"""Gets the status of this ShowHealthCompareJobDetailResponse.
 
         对比任务的状态。取值： - RUNNING：运行中。 - WAITING_FOR_RUNNING：等待启动中。 - SUCCESSFUL：完成。 - FAILED：失败。 - CANCELLED：已取消。 - TIMEOUT_INTERRUPT：超时中断。 - FULL_DOING：全量校验中。 - INCRE_DOING：增量校验中。
 
@@ -178,7 +178,7 @@ class ShowHealthCompareJobDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowHealthCompareJobDetailResponse.
+        r"""Sets the status of this ShowHealthCompareJobDetailResponse.
 
         对比任务的状态。取值： - RUNNING：运行中。 - WAITING_FOR_RUNNING：等待启动中。 - SUCCESSFUL：完成。 - FAILED：失败。 - CANCELLED：已取消。 - TIMEOUT_INTERRUPT：超时中断。 - FULL_DOING：全量校验中。 - INCRE_DOING：增量校验中。
 
@@ -189,7 +189,7 @@ class ShowHealthCompareJobDetailResponse(SdkResponse):
 
     @property
     def job_name(self):
-        """Gets the job_name of this ShowHealthCompareJobDetailResponse.
+        r"""Gets the job_name of this ShowHealthCompareJobDetailResponse.
 
         任务名称。
 
@@ -200,7 +200,7 @@ class ShowHealthCompareJobDetailResponse(SdkResponse):
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ShowHealthCompareJobDetailResponse.
+        r"""Sets the job_name of this ShowHealthCompareJobDetailResponse.
 
         任务名称。
 

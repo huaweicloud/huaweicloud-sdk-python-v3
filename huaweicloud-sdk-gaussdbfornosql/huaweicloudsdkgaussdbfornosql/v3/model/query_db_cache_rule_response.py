@@ -49,7 +49,7 @@ class QueryDBCacheRuleResponse:
     }
 
     def __init__(self, id=None, name=None, status=None, source_db_schema=None, source_db_table=None, storage_type=None, target_database=None, key_columns=None, value_columns=None, ttl=None, key_separator=None, value_separator=None, key_prefix=None):
-        """QueryDBCacheRuleResponse
+        r"""QueryDBCacheRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class QueryDBCacheRuleResponse:
 
     @property
     def id(self):
-        """Gets the id of this QueryDBCacheRuleResponse.
+        r"""Gets the id of this QueryDBCacheRuleResponse.
 
         内存加速规则ID。
 
@@ -137,7 +137,7 @@ class QueryDBCacheRuleResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryDBCacheRuleResponse.
+        r"""Sets the id of this QueryDBCacheRuleResponse.
 
         内存加速规则ID。
 
@@ -148,7 +148,7 @@ class QueryDBCacheRuleResponse:
 
     @property
     def name(self):
-        """Gets the name of this QueryDBCacheRuleResponse.
+        r"""Gets the name of this QueryDBCacheRuleResponse.
 
         内存加速规则名称。
 
@@ -159,7 +159,7 @@ class QueryDBCacheRuleResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryDBCacheRuleResponse.
+        r"""Sets the name of this QueryDBCacheRuleResponse.
 
         内存加速规则名称。
 
@@ -170,7 +170,7 @@ class QueryDBCacheRuleResponse:
 
     @property
     def status(self):
-        """Gets the status of this QueryDBCacheRuleResponse.
+        r"""Gets the status of this QueryDBCacheRuleResponse.
 
         内存加速规则状态。 - normal,正常;  - createfail, 创建失败;
 
@@ -181,7 +181,7 @@ class QueryDBCacheRuleResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryDBCacheRuleResponse.
+        r"""Sets the status of this QueryDBCacheRuleResponse.
 
         内存加速规则状态。 - normal,正常;  - createfail, 创建失败;
 
@@ -192,7 +192,7 @@ class QueryDBCacheRuleResponse:
 
     @property
     def source_db_schema(self):
-        """Gets the source_db_schema of this QueryDBCacheRuleResponse.
+        r"""Gets the source_db_schema of this QueryDBCacheRuleResponse.
 
         源端数据库。
 
@@ -203,7 +203,7 @@ class QueryDBCacheRuleResponse:
 
     @source_db_schema.setter
     def source_db_schema(self, source_db_schema):
-        """Sets the source_db_schema of this QueryDBCacheRuleResponse.
+        r"""Sets the source_db_schema of this QueryDBCacheRuleResponse.
 
         源端数据库。
 
@@ -214,7 +214,7 @@ class QueryDBCacheRuleResponse:
 
     @property
     def source_db_table(self):
-        """Gets the source_db_table of this QueryDBCacheRuleResponse.
+        r"""Gets the source_db_table of this QueryDBCacheRuleResponse.
 
         源端数据表。
 
@@ -225,7 +225,7 @@ class QueryDBCacheRuleResponse:
 
     @source_db_table.setter
     def source_db_table(self, source_db_table):
-        """Sets the source_db_table of this QueryDBCacheRuleResponse.
+        r"""Sets the source_db_table of this QueryDBCacheRuleResponse.
 
         源端数据表。
 
@@ -236,7 +236,7 @@ class QueryDBCacheRuleResponse:
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this QueryDBCacheRuleResponse.
+        r"""Gets the storage_type of this QueryDBCacheRuleResponse.
 
         目标数据存储类型。取值为： hash。
 
@@ -247,7 +247,7 @@ class QueryDBCacheRuleResponse:
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this QueryDBCacheRuleResponse.
+        r"""Sets the storage_type of this QueryDBCacheRuleResponse.
 
         目标数据存储类型。取值为： hash。
 
@@ -258,7 +258,7 @@ class QueryDBCacheRuleResponse:
 
     @property
     def target_database(self):
-        """Gets the target_database of this QueryDBCacheRuleResponse.
+        r"""Gets the target_database of this QueryDBCacheRuleResponse.
 
         目标数据库。
 
@@ -269,7 +269,7 @@ class QueryDBCacheRuleResponse:
 
     @target_database.setter
     def target_database(self, target_database):
-        """Sets the target_database of this QueryDBCacheRuleResponse.
+        r"""Sets the target_database of this QueryDBCacheRuleResponse.
 
         目标数据库。
 
@@ -280,7 +280,7 @@ class QueryDBCacheRuleResponse:
 
     @property
     def key_columns(self):
-        """Gets the key_columns of this QueryDBCacheRuleResponse.
+        r"""Gets the key_columns of this QueryDBCacheRuleResponse.
 
         映射的key使用的column列表。
 
@@ -291,7 +291,7 @@ class QueryDBCacheRuleResponse:
 
     @key_columns.setter
     def key_columns(self, key_columns):
-        """Sets the key_columns of this QueryDBCacheRuleResponse.
+        r"""Sets the key_columns of this QueryDBCacheRuleResponse.
 
         映射的key使用的column列表。
 
@@ -302,7 +302,7 @@ class QueryDBCacheRuleResponse:
 
     @property
     def value_columns(self):
-        """Gets the value_columns of this QueryDBCacheRuleResponse.
+        r"""Gets the value_columns of this QueryDBCacheRuleResponse.
 
         映射的value使用的column列表。
 
@@ -313,7 +313,7 @@ class QueryDBCacheRuleResponse:
 
     @value_columns.setter
     def value_columns(self, value_columns):
-        """Sets the value_columns of this QueryDBCacheRuleResponse.
+        r"""Sets the value_columns of this QueryDBCacheRuleResponse.
 
         映射的value使用的column列表。
 
@@ -324,7 +324,7 @@ class QueryDBCacheRuleResponse:
 
     @property
     def ttl(self):
-        """Gets the ttl of this QueryDBCacheRuleResponse.
+        r"""Gets the ttl of this QueryDBCacheRuleResponse.
 
         key的生存时间。单位:ms。不传该值，默认取-1，表示永久存储。
 
@@ -335,7 +335,7 @@ class QueryDBCacheRuleResponse:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this QueryDBCacheRuleResponse.
+        r"""Sets the ttl of this QueryDBCacheRuleResponse.
 
         key的生存时间。单位:ms。不传该值，默认取-1，表示永久存储。
 
@@ -346,7 +346,7 @@ class QueryDBCacheRuleResponse:
 
     @property
     def key_separator(self):
-        """Gets the key_separator of this QueryDBCacheRuleResponse.
+        r"""Gets the key_separator of this QueryDBCacheRuleResponse.
 
         映射的key分隔符。
 
@@ -357,7 +357,7 @@ class QueryDBCacheRuleResponse:
 
     @key_separator.setter
     def key_separator(self, key_separator):
-        """Sets the key_separator of this QueryDBCacheRuleResponse.
+        r"""Sets the key_separator of this QueryDBCacheRuleResponse.
 
         映射的key分隔符。
 
@@ -368,7 +368,7 @@ class QueryDBCacheRuleResponse:
 
     @property
     def value_separator(self):
-        """Gets the value_separator of this QueryDBCacheRuleResponse.
+        r"""Gets the value_separator of this QueryDBCacheRuleResponse.
 
         映射的value分隔符。
 
@@ -379,7 +379,7 @@ class QueryDBCacheRuleResponse:
 
     @value_separator.setter
     def value_separator(self, value_separator):
-        """Sets the value_separator of this QueryDBCacheRuleResponse.
+        r"""Sets the value_separator of this QueryDBCacheRuleResponse.
 
         映射的value分隔符。
 
@@ -390,7 +390,7 @@ class QueryDBCacheRuleResponse:
 
     @property
     def key_prefix(self):
-        """Gets the key_prefix of this QueryDBCacheRuleResponse.
+        r"""Gets the key_prefix of this QueryDBCacheRuleResponse.
 
         键前缀。
 
@@ -401,7 +401,7 @@ class QueryDBCacheRuleResponse:
 
     @key_prefix.setter
     def key_prefix(self, key_prefix):
-        """Sets the key_prefix of this QueryDBCacheRuleResponse.
+        r"""Sets the key_prefix of this QueryDBCacheRuleResponse.
 
         键前缀。
 

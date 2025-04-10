@@ -24,7 +24,7 @@ class AddSnapshotCrossRegionPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddSnapshotCrossRegionPolicyResponse
+        r"""AddSnapshotCrossRegionPolicyResponse
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class UploadAimTemplateMaterialResponseMode:
     }
 
     def __init__(self, material_id=None, aim_resource_id=None):
-        """UploadAimTemplateMaterialResponseMode
+        r"""UploadAimTemplateMaterialResponseMode
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UploadAimTemplateMaterialResponseMode:
 
     @property
     def material_id(self):
-        """Gets the material_id of this UploadAimTemplateMaterialResponseMode.
+        r"""Gets the material_id of this UploadAimTemplateMaterialResponseMode.
 
         模板素材ID。
 
@@ -61,7 +61,7 @@ class UploadAimTemplateMaterialResponseMode:
 
     @material_id.setter
     def material_id(self, material_id):
-        """Sets the material_id of this UploadAimTemplateMaterialResponseMode.
+        r"""Sets the material_id of this UploadAimTemplateMaterialResponseMode.
 
         模板素材ID。
 
@@ -72,7 +72,7 @@ class UploadAimTemplateMaterialResponseMode:
 
     @property
     def aim_resource_id(self):
-        """Gets the aim_resource_id of this UploadAimTemplateMaterialResponseMode.
+        r"""Gets the aim_resource_id of this UploadAimTemplateMaterialResponseMode.
 
         资源ID。
 
@@ -83,7 +83,7 @@ class UploadAimTemplateMaterialResponseMode:
 
     @aim_resource_id.setter
     def aim_resource_id(self, aim_resource_id):
-        """Sets the aim_resource_id of this UploadAimTemplateMaterialResponseMode.
+        r"""Sets the aim_resource_id of this UploadAimTemplateMaterialResponseMode.
 
         资源ID。
 

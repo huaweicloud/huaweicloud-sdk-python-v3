@@ -45,7 +45,7 @@ class UpdateBuildJobRequestBody:
     }
 
     def __init__(self, arch=None, project_id=None, job_name=None, job_id=None, auto_update_sub_module=None, flavor=None, parameters=None, scms=None, steps=None, host_type=None, build_config_type=None):
-        """UpdateBuildJobRequestBody
+        r"""UpdateBuildJobRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class UpdateBuildJobRequestBody:
 
     @property
     def arch(self):
-        """Gets the arch of this UpdateBuildJobRequestBody.
+        r"""Gets the arch of this UpdateBuildJobRequestBody.
 
         使用机器的架构
 
@@ -119,7 +119,7 @@ class UpdateBuildJobRequestBody:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this UpdateBuildJobRequestBody.
+        r"""Sets the arch of this UpdateBuildJobRequestBody.
 
         使用机器的架构
 
@@ -130,7 +130,7 @@ class UpdateBuildJobRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateBuildJobRequestBody.
+        r"""Gets the project_id of this UpdateBuildJobRequestBody.
 
         构建任务所在项目的ID
 
@@ -141,7 +141,7 @@ class UpdateBuildJobRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateBuildJobRequestBody.
+        r"""Sets the project_id of this UpdateBuildJobRequestBody.
 
         构建任务所在项目的ID
 
@@ -152,7 +152,7 @@ class UpdateBuildJobRequestBody:
 
     @property
     def job_name(self):
-        """Gets the job_name of this UpdateBuildJobRequestBody.
+        r"""Gets the job_name of this UpdateBuildJobRequestBody.
 
         任务名称
 
@@ -163,7 +163,7 @@ class UpdateBuildJobRequestBody:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this UpdateBuildJobRequestBody.
+        r"""Sets the job_name of this UpdateBuildJobRequestBody.
 
         任务名称
 
@@ -174,7 +174,7 @@ class UpdateBuildJobRequestBody:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateBuildJobRequestBody.
+        r"""Gets the job_id of this UpdateBuildJobRequestBody.
 
         构建任务ID
 
@@ -185,7 +185,7 @@ class UpdateBuildJobRequestBody:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateBuildJobRequestBody.
+        r"""Sets the job_id of this UpdateBuildJobRequestBody.
 
         构建任务ID
 
@@ -196,7 +196,7 @@ class UpdateBuildJobRequestBody:
 
     @property
     def auto_update_sub_module(self):
-        """Gets the auto_update_sub_module of this UpdateBuildJobRequestBody.
+        r"""Gets the auto_update_sub_module of this UpdateBuildJobRequestBody.
 
         是否自动更新子模块
 
@@ -207,7 +207,7 @@ class UpdateBuildJobRequestBody:
 
     @auto_update_sub_module.setter
     def auto_update_sub_module(self, auto_update_sub_module):
-        """Sets the auto_update_sub_module of this UpdateBuildJobRequestBody.
+        r"""Sets the auto_update_sub_module of this UpdateBuildJobRequestBody.
 
         是否自动更新子模块
 
@@ -218,7 +218,7 @@ class UpdateBuildJobRequestBody:
 
     @property
     def flavor(self):
-        """Gets the flavor of this UpdateBuildJobRequestBody.
+        r"""Gets the flavor of this UpdateBuildJobRequestBody.
 
         执行机规格
 
@@ -229,7 +229,7 @@ class UpdateBuildJobRequestBody:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this UpdateBuildJobRequestBody.
+        r"""Sets the flavor of this UpdateBuildJobRequestBody.
 
         执行机规格
 
@@ -240,7 +240,7 @@ class UpdateBuildJobRequestBody:
 
     @property
     def parameters(self):
-        """Gets the parameters of this UpdateBuildJobRequestBody.
+        r"""Gets the parameters of this UpdateBuildJobRequestBody.
 
         构建执行参数列表
 
@@ -251,7 +251,7 @@ class UpdateBuildJobRequestBody:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this UpdateBuildJobRequestBody.
+        r"""Sets the parameters of this UpdateBuildJobRequestBody.
 
         构建执行参数列表
 
@@ -262,7 +262,7 @@ class UpdateBuildJobRequestBody:
 
     @property
     def scms(self):
-        """Gets the scms of this UpdateBuildJobRequestBody.
+        r"""Gets the scms of this UpdateBuildJobRequestBody.
 
         构建执行SCM
 
@@ -273,7 +273,7 @@ class UpdateBuildJobRequestBody:
 
     @scms.setter
     def scms(self, scms):
-        """Sets the scms of this UpdateBuildJobRequestBody.
+        r"""Sets the scms of this UpdateBuildJobRequestBody.
 
         构建执行SCM
 
@@ -284,7 +284,7 @@ class UpdateBuildJobRequestBody:
 
     @property
     def steps(self):
-        """Gets the steps of this UpdateBuildJobRequestBody.
+        r"""Gets the steps of this UpdateBuildJobRequestBody.
 
         构建执行的步骤
 
@@ -295,7 +295,7 @@ class UpdateBuildJobRequestBody:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this UpdateBuildJobRequestBody.
+        r"""Sets the steps of this UpdateBuildJobRequestBody.
 
         构建执行的步骤
 
@@ -306,7 +306,7 @@ class UpdateBuildJobRequestBody:
 
     @property
     def host_type(self):
-        """Gets the host_type of this UpdateBuildJobRequestBody.
+        r"""Gets the host_type of this UpdateBuildJobRequestBody.
 
         host类型
 
@@ -317,7 +317,7 @@ class UpdateBuildJobRequestBody:
 
     @host_type.setter
     def host_type(self, host_type):
-        """Sets the host_type of this UpdateBuildJobRequestBody.
+        r"""Sets the host_type of this UpdateBuildJobRequestBody.
 
         host类型
 
@@ -328,7 +328,7 @@ class UpdateBuildJobRequestBody:
 
     @property
     def build_config_type(self):
-        """Gets the build_config_type of this UpdateBuildJobRequestBody.
+        r"""Gets the build_config_type of this UpdateBuildJobRequestBody.
 
         构建的配置类型
 
@@ -339,7 +339,7 @@ class UpdateBuildJobRequestBody:
 
     @build_config_type.setter
     def build_config_type(self, build_config_type):
-        """Sets the build_config_type of this UpdateBuildJobRequestBody.
+        r"""Sets the build_config_type of this UpdateBuildJobRequestBody.
 
         构建的配置类型
 

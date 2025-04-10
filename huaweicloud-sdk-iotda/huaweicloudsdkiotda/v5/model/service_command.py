@@ -29,7 +29,7 @@ class ServiceCommand:
     }
 
     def __init__(self, command_name=None, paras=None, responses=None):
-        """ServiceCommand
+        r"""ServiceCommand
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ServiceCommand:
 
     @property
     def command_name(self):
-        """Gets the command_name of this ServiceCommand.
+        r"""Gets the command_name of this ServiceCommand.
 
         **参数说明**：设备命令名称。注：设备服务内不允许重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -67,7 +67,7 @@ class ServiceCommand:
 
     @command_name.setter
     def command_name(self, command_name):
-        """Sets the command_name of this ServiceCommand.
+        r"""Sets the command_name of this ServiceCommand.
 
         **参数说明**：设备命令名称。注：设备服务内不允许重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -78,7 +78,7 @@ class ServiceCommand:
 
     @property
     def paras(self):
-        """Gets the paras of this ServiceCommand.
+        r"""Gets the paras of this ServiceCommand.
 
         **参数说明**：设备命令的参数列表。
 
@@ -89,7 +89,7 @@ class ServiceCommand:
 
     @paras.setter
     def paras(self, paras):
-        """Sets the paras of this ServiceCommand.
+        r"""Sets the paras of this ServiceCommand.
 
         **参数说明**：设备命令的参数列表。
 
@@ -100,7 +100,7 @@ class ServiceCommand:
 
     @property
     def responses(self):
-        """Gets the responses of this ServiceCommand.
+        r"""Gets the responses of this ServiceCommand.
 
         **参数说明**：设备命令的响应列表。
 
@@ -111,7 +111,7 @@ class ServiceCommand:
 
     @responses.setter
     def responses(self, responses):
-        """Sets the responses of this ServiceCommand.
+        r"""Sets the responses of this ServiceCommand.
 
         **参数说明**：设备命令的响应列表。
 

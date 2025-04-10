@@ -24,7 +24,7 @@ class SetCustomMultiPictureResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetCustomMultiPictureResponse
+        r"""SetCustomMultiPictureResponse
 
         The model defined in huaweicloud sdk
 

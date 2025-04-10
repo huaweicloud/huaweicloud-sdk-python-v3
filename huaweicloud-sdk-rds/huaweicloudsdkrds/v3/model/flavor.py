@@ -41,7 +41,7 @@ class Flavor:
     }
 
     def __init__(self, id=None, vcpus=None, ram=None, spec_code=None, instance_mode=None, az_status=None, az_desc=None, version_name=None, group_type=None):
-        """Flavor
+        r"""Flavor
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class Flavor:
 
     @property
     def id(self):
-        """Gets the id of this Flavor.
+        r"""Gets the id of this Flavor.
 
         规格id
 
@@ -101,7 +101,7 @@ class Flavor:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Flavor.
+        r"""Sets the id of this Flavor.
 
         规格id
 
@@ -112,7 +112,7 @@ class Flavor:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this Flavor.
+        r"""Gets the vcpus of this Flavor.
 
         CPU个数。
 
@@ -123,7 +123,7 @@ class Flavor:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this Flavor.
+        r"""Sets the vcpus of this Flavor.
 
         CPU个数。
 
@@ -134,7 +134,7 @@ class Flavor:
 
     @property
     def ram(self):
-        """Gets the ram of this Flavor.
+        r"""Gets the ram of this Flavor.
 
         内存大小，单位为GB。
 
@@ -145,7 +145,7 @@ class Flavor:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this Flavor.
+        r"""Sets the ram of this Flavor.
 
         内存大小，单位为GB。
 
@@ -156,7 +156,7 @@ class Flavor:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this Flavor.
+        r"""Gets the spec_code of this Flavor.
 
         资源规格编码。例如：rds.mysql.m1.xlarge.rr。  其中形如“xxx.xxx.mcs.i3.xxx.xxx.xxx”是超高性能型（尊享版），需要申请一定权限才可使用，更多规格说明请参考数据库实例规格。 - “rds”代表RDS产品。 - “mysql”代表数据库引擎。 - “m1.xlarge”代表性能规格，为高内存类型。
 
@@ -167,7 +167,7 @@ class Flavor:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this Flavor.
+        r"""Sets the spec_code of this Flavor.
 
         资源规格编码。例如：rds.mysql.m1.xlarge.rr。  其中形如“xxx.xxx.mcs.i3.xxx.xxx.xxx”是超高性能型（尊享版），需要申请一定权限才可使用，更多规格说明请参考数据库实例规格。 - “rds”代表RDS产品。 - “mysql”代表数据库引擎。 - “m1.xlarge”代表性能规格，为高内存类型。
 
@@ -178,7 +178,7 @@ class Flavor:
 
     @property
     def instance_mode(self):
-        """Gets the instance_mode of this Flavor.
+        r"""Gets the instance_mode of this Flavor.
 
         实例模型，包括如下类型： - ha，主备实例。 - replica，只读实例。 - single，单实例。
 
@@ -189,7 +189,7 @@ class Flavor:
 
     @instance_mode.setter
     def instance_mode(self, instance_mode):
-        """Sets the instance_mode of this Flavor.
+        r"""Sets the instance_mode of this Flavor.
 
         实例模型，包括如下类型： - ha，主备实例。 - replica，只读实例。 - single，单实例。
 
@@ -200,7 +200,7 @@ class Flavor:
 
     @property
     def az_status(self):
-        """Gets the az_status of this Flavor.
+        r"""Gets the az_status of this Flavor.
 
         其中key是可用区编号，value是规格所在az的状态，包含以下状态： - normal，在售。 - unsupported，暂不支持该规格。 - sellout，售罄。
 
@@ -211,7 +211,7 @@ class Flavor:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this Flavor.
+        r"""Sets the az_status of this Flavor.
 
         其中key是可用区编号，value是规格所在az的状态，包含以下状态： - normal，在售。 - unsupported，暂不支持该规格。 - sellout，售罄。
 
@@ -222,7 +222,7 @@ class Flavor:
 
     @property
     def az_desc(self):
-        """Gets the az_desc of this Flavor.
+        r"""Gets the az_desc of this Flavor.
 
         规格所在az的描述。
 
@@ -233,7 +233,7 @@ class Flavor:
 
     @az_desc.setter
     def az_desc(self, az_desc):
-        """Sets the az_desc of this Flavor.
+        r"""Sets the az_desc of this Flavor.
 
         规格所在az的描述。
 
@@ -244,7 +244,7 @@ class Flavor:
 
     @property
     def version_name(self):
-        """Gets the version_name of this Flavor.
+        r"""Gets the version_name of this Flavor.
 
         数组形式版本号
 
@@ -255,7 +255,7 @@ class Flavor:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this Flavor.
+        r"""Sets the version_name of this Flavor.
 
         数组形式版本号
 
@@ -266,7 +266,7 @@ class Flavor:
 
     @property
     def group_type(self):
-        """Gets the group_type of this Flavor.
+        r"""Gets the group_type of this Flavor.
 
         性能规格，包含以下状态： - normal：通用增强型。 - normal2：通用增强Ⅱ型。 - armFlavors：鲲鹏通用增强型。 - dedicicatenormal ：x86独享型。 - armlocalssd：鲲鹏通用型。 - normallocalssd：x86通用型。 - general：通用型。 - dedicated：独享型，仅云盘SSD支持。 - rapid：独享型，仅极速型SSD支持。 - bigmen：超大内存型。
 
@@ -277,7 +277,7 @@ class Flavor:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this Flavor.
+        r"""Sets the group_type of this Flavor.
 
         性能规格，包含以下状态： - normal：通用增强型。 - normal2：通用增强Ⅱ型。 - armFlavors：鲲鹏通用增强型。 - dedicicatenormal ：x86独享型。 - armlocalssd：鲲鹏通用型。 - normallocalssd：x86通用型。 - general：通用型。 - dedicated：独享型，仅云盘SSD支持。 - rapid：独享型，仅极速型SSD支持。 - bigmen：超大内存型。
 

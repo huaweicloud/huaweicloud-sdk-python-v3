@@ -29,7 +29,7 @@ class ListManagerWorkSpacesRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, offset=None):
-        """ListManagerWorkSpacesRequest
+        r"""ListManagerWorkSpacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListManagerWorkSpacesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListManagerWorkSpacesRequest.
+        r"""Gets the instance_id of this ListManagerWorkSpacesRequest.
 
         DataArtsStudio实例id
 
@@ -67,7 +67,7 @@ class ListManagerWorkSpacesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListManagerWorkSpacesRequest.
+        r"""Sets the instance_id of this ListManagerWorkSpacesRequest.
 
         DataArtsStudio实例id
 
@@ -78,7 +78,7 @@ class ListManagerWorkSpacesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListManagerWorkSpacesRequest.
+        r"""Gets the limit of this ListManagerWorkSpacesRequest.
 
         分页记录数，默认20
 
@@ -89,7 +89,7 @@ class ListManagerWorkSpacesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListManagerWorkSpacesRequest.
+        r"""Sets the limit of this ListManagerWorkSpacesRequest.
 
         分页记录数，默认20
 
@@ -100,7 +100,7 @@ class ListManagerWorkSpacesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListManagerWorkSpacesRequest.
+        r"""Gets the offset of this ListManagerWorkSpacesRequest.
 
         数据偏移量。默认0
 
@@ -111,7 +111,7 @@ class ListManagerWorkSpacesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListManagerWorkSpacesRequest.
+        r"""Sets the offset of this ListManagerWorkSpacesRequest.
 
         数据偏移量。默认0
 

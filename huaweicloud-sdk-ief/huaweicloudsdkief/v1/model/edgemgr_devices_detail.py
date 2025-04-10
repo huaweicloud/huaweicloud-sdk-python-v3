@@ -41,7 +41,7 @@ class EdgemgrDevicesDetail:
     }
 
     def __init__(self, id=None, name=None, description=None, attributes=None, connection_type=None, access_protocol=None, twin=None, access_config=None, property_visitors=None):
-        """EdgemgrDevicesDetail
+        r"""EdgemgrDevicesDetail
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class EdgemgrDevicesDetail:
 
     @property
     def id(self):
-        """Gets the id of this EdgemgrDevicesDetail.
+        r"""Gets the id of this EdgemgrDevicesDetail.
 
         终端设备ID，只允许英文字母、数字、下划线、中划线，必须以英文字母和数字开头，长度限制为24~64之间
 
@@ -109,7 +109,7 @@ class EdgemgrDevicesDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EdgemgrDevicesDetail.
+        r"""Sets the id of this EdgemgrDevicesDetail.
 
         终端设备ID，只允许英文字母、数字、下划线、中划线，必须以英文字母和数字开头，长度限制为24~64之间
 
@@ -120,7 +120,7 @@ class EdgemgrDevicesDetail:
 
     @property
     def name(self):
-        """Gets the name of this EdgemgrDevicesDetail.
+        r"""Gets the name of this EdgemgrDevicesDetail.
 
         终端设备名称，只允许中文字符、英文字母、数字、下划线、中划线，长度限制为1~64
 
@@ -131,7 +131,7 @@ class EdgemgrDevicesDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EdgemgrDevicesDetail.
+        r"""Sets the name of this EdgemgrDevicesDetail.
 
         终端设备名称，只允许中文字符、英文字母、数字、下划线、中划线，长度限制为1~64
 
@@ -142,7 +142,7 @@ class EdgemgrDevicesDetail:
 
     @property
     def description(self):
-        """Gets the description of this EdgemgrDevicesDetail.
+        r"""Gets the description of this EdgemgrDevicesDetail.
 
         终端设备描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -153,7 +153,7 @@ class EdgemgrDevicesDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EdgemgrDevicesDetail.
+        r"""Sets the description of this EdgemgrDevicesDetail.
 
         终端设备描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -164,7 +164,7 @@ class EdgemgrDevicesDetail:
 
     @property
     def attributes(self):
-        """Gets the attributes of this EdgemgrDevicesDetail.
+        r"""Gets the attributes of this EdgemgrDevicesDetail.
 
         终端设备静态属性
 
@@ -175,7 +175,7 @@ class EdgemgrDevicesDetail:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this EdgemgrDevicesDetail.
+        r"""Sets the attributes of this EdgemgrDevicesDetail.
 
         终端设备静态属性
 
@@ -186,7 +186,7 @@ class EdgemgrDevicesDetail:
 
     @property
     def connection_type(self):
-        """Gets the connection_type of this EdgemgrDevicesDetail.
+        r"""Gets the connection_type of this EdgemgrDevicesDetail.
 
         连接类型，默认为edge
 
@@ -197,7 +197,7 @@ class EdgemgrDevicesDetail:
 
     @connection_type.setter
     def connection_type(self, connection_type):
-        """Sets the connection_type of this EdgemgrDevicesDetail.
+        r"""Sets the connection_type of this EdgemgrDevicesDetail.
 
         连接类型，默认为edge
 
@@ -208,7 +208,7 @@ class EdgemgrDevicesDetail:
 
     @property
     def access_protocol(self):
-        """Gets the access_protocol of this EdgemgrDevicesDetail.
+        r"""Gets the access_protocol of this EdgemgrDevicesDetail.
 
         访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议 默认为userdefine
 
@@ -219,7 +219,7 @@ class EdgemgrDevicesDetail:
 
     @access_protocol.setter
     def access_protocol(self, access_protocol):
-        """Sets the access_protocol of this EdgemgrDevicesDetail.
+        r"""Sets the access_protocol of this EdgemgrDevicesDetail.
 
         访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议 默认为userdefine
 
@@ -230,7 +230,7 @@ class EdgemgrDevicesDetail:
 
     @property
     def twin(self):
-        """Gets the twin of this EdgemgrDevicesDetail.
+        r"""Gets the twin of this EdgemgrDevicesDetail.
 
         终端设备动态属性
 
@@ -241,7 +241,7 @@ class EdgemgrDevicesDetail:
 
     @twin.setter
     def twin(self, twin):
-        """Sets the twin of this EdgemgrDevicesDetail.
+        r"""Sets the twin of this EdgemgrDevicesDetail.
 
         终端设备动态属性
 
@@ -252,7 +252,7 @@ class EdgemgrDevicesDetail:
 
     @property
     def access_config(self):
-        """Gets the access_config of this EdgemgrDevicesDetail.
+        r"""Gets the access_config of this EdgemgrDevicesDetail.
 
         :return: The access_config of this EdgemgrDevicesDetail.
         :rtype: :class:`huaweicloudsdkief.v1.AccessConfig`
@@ -261,7 +261,7 @@ class EdgemgrDevicesDetail:
 
     @access_config.setter
     def access_config(self, access_config):
-        """Sets the access_config of this EdgemgrDevicesDetail.
+        r"""Sets the access_config of this EdgemgrDevicesDetail.
 
         :param access_config: The access_config of this EdgemgrDevicesDetail.
         :type access_config: :class:`huaweicloudsdkief.v1.AccessConfig`
@@ -270,7 +270,7 @@ class EdgemgrDevicesDetail:
 
     @property
     def property_visitors(self):
-        """Gets the property_visitors of this EdgemgrDevicesDetail.
+        r"""Gets the property_visitors of this EdgemgrDevicesDetail.
 
         孪生属性配置
 
@@ -281,7 +281,7 @@ class EdgemgrDevicesDetail:
 
     @property_visitors.setter
     def property_visitors(self, property_visitors):
-        """Sets the property_visitors of this EdgemgrDevicesDetail.
+        r"""Sets the property_visitors of this EdgemgrDevicesDetail.
 
         孪生属性配置
 

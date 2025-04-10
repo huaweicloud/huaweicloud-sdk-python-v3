@@ -29,7 +29,7 @@ class CreateMetadataRequest:
     }
 
     def __init__(self, idp_id=None, protocol_id=None, body=None):
-        """CreateMetadataRequest
+        r"""CreateMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateMetadataRequest:
 
     @property
     def idp_id(self):
-        """Gets the idp_id of this CreateMetadataRequest.
+        r"""Gets the idp_id of this CreateMetadataRequest.
 
         身份提供商ID。
 
@@ -66,7 +66,7 @@ class CreateMetadataRequest:
 
     @idp_id.setter
     def idp_id(self, idp_id):
-        """Sets the idp_id of this CreateMetadataRequest.
+        r"""Sets the idp_id of this CreateMetadataRequest.
 
         身份提供商ID。
 
@@ -77,7 +77,7 @@ class CreateMetadataRequest:
 
     @property
     def protocol_id(self):
-        """Gets the protocol_id of this CreateMetadataRequest.
+        r"""Gets the protocol_id of this CreateMetadataRequest.
 
         协议ID。
 
@@ -88,7 +88,7 @@ class CreateMetadataRequest:
 
     @protocol_id.setter
     def protocol_id(self, protocol_id):
-        """Sets the protocol_id of this CreateMetadataRequest.
+        r"""Sets the protocol_id of this CreateMetadataRequest.
 
         协议ID。
 
@@ -99,7 +99,7 @@ class CreateMetadataRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMetadataRequest.
+        r"""Gets the body of this CreateMetadataRequest.
 
         :return: The body of this CreateMetadataRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateMetadataRequestBody`
@@ -108,7 +108,7 @@ class CreateMetadataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMetadataRequest.
+        r"""Sets the body of this CreateMetadataRequest.
 
         :param body: The body of this CreateMetadataRequest.
         :type body: :class:`huaweicloudsdkiam.v3.CreateMetadataRequestBody`

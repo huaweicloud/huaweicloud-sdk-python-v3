@@ -45,7 +45,7 @@ class InstanceOrderReq:
     }
 
     def __init__(self, product_id=None, charging_mode=None, payment_mode=None, period_type=None, period_num=None, is_auto_renew=None, promotion_id=None, promotion_plan_id=None, promotion_info=None, composite_product_id=None, instance_info=None):
-        """InstanceOrderReq
+        r"""InstanceOrderReq
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class InstanceOrderReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this InstanceOrderReq.
+        r"""Gets the product_id of this InstanceOrderReq.
 
         产品编号
 
@@ -124,7 +124,7 @@ class InstanceOrderReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this InstanceOrderReq.
+        r"""Sets the product_id of this InstanceOrderReq.
 
         产品编号
 
@@ -135,7 +135,7 @@ class InstanceOrderReq:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this InstanceOrderReq.
+        r"""Gets the charging_mode of this InstanceOrderReq.
 
         计费模式： - 0：按需 - 1：包周期 
 
@@ -146,7 +146,7 @@ class InstanceOrderReq:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this InstanceOrderReq.
+        r"""Sets the charging_mode of this InstanceOrderReq.
 
         计费模式： - 0：按需 - 1：包周期 
 
@@ -157,7 +157,7 @@ class InstanceOrderReq:
 
     @property
     def payment_mode(self):
-        """Gets the payment_mode of this InstanceOrderReq.
+        r"""Gets the payment_mode of this InstanceOrderReq.
 
         支付模式： - ALL_UPFRONT：全预付 
 
@@ -168,7 +168,7 @@ class InstanceOrderReq:
 
     @payment_mode.setter
     def payment_mode(self, payment_mode):
-        """Sets the payment_mode of this InstanceOrderReq.
+        r"""Sets the payment_mode of this InstanceOrderReq.
 
         支付模式： - ALL_UPFRONT：全预付 
 
@@ -179,7 +179,7 @@ class InstanceOrderReq:
 
     @property
     def period_type(self):
-        """Gets the period_type of this InstanceOrderReq.
+        r"""Gets the period_type of this InstanceOrderReq.
 
         订购周期类型： - 2：月 - 3：年 
 
@@ -190,7 +190,7 @@ class InstanceOrderReq:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this InstanceOrderReq.
+        r"""Sets the period_type of this InstanceOrderReq.
 
         订购周期类型： - 2：月 - 3：年 
 
@@ -201,7 +201,7 @@ class InstanceOrderReq:
 
     @property
     def period_num(self):
-        """Gets the period_num of this InstanceOrderReq.
+        r"""Gets the period_num of this InstanceOrderReq.
 
         订购周期数：1-9 
 
@@ -212,7 +212,7 @@ class InstanceOrderReq:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this InstanceOrderReq.
+        r"""Sets the period_num of this InstanceOrderReq.
 
         订购周期数：1-9 
 
@@ -223,7 +223,7 @@ class InstanceOrderReq:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this InstanceOrderReq.
+        r"""Gets the is_auto_renew of this InstanceOrderReq.
 
         是否支持自动续费： - 0：不自动续费 - 1：自动续费 
 
@@ -234,7 +234,7 @@ class InstanceOrderReq:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this InstanceOrderReq.
+        r"""Sets the is_auto_renew of this InstanceOrderReq.
 
         是否支持自动续费： - 0：不自动续费 - 1：自动续费 
 
@@ -245,7 +245,7 @@ class InstanceOrderReq:
 
     @property
     def promotion_id(self):
-        """Gets the promotion_id of this InstanceOrderReq.
+        r"""Gets the promotion_id of this InstanceOrderReq.
 
         促销产品编号
 
@@ -256,7 +256,7 @@ class InstanceOrderReq:
 
     @promotion_id.setter
     def promotion_id(self, promotion_id):
-        """Sets the promotion_id of this InstanceOrderReq.
+        r"""Sets the promotion_id of this InstanceOrderReq.
 
         促销产品编号
 
@@ -267,7 +267,7 @@ class InstanceOrderReq:
 
     @property
     def promotion_plan_id(self):
-        """Gets the promotion_plan_id of this InstanceOrderReq.
+        r"""Gets the promotion_plan_id of this InstanceOrderReq.
 
         促销计划编号
 
@@ -278,7 +278,7 @@ class InstanceOrderReq:
 
     @promotion_plan_id.setter
     def promotion_plan_id(self, promotion_plan_id):
-        """Sets the promotion_plan_id of this InstanceOrderReq.
+        r"""Sets the promotion_plan_id of this InstanceOrderReq.
 
         促销计划编号
 
@@ -289,7 +289,7 @@ class InstanceOrderReq:
 
     @property
     def promotion_info(self):
-        """Gets the promotion_info of this InstanceOrderReq.
+        r"""Gets the promotion_info of this InstanceOrderReq.
 
         促销信息
 
@@ -300,7 +300,7 @@ class InstanceOrderReq:
 
     @promotion_info.setter
     def promotion_info(self, promotion_info):
-        """Sets the promotion_info of this InstanceOrderReq.
+        r"""Sets the promotion_info of this InstanceOrderReq.
 
         促销信息
 
@@ -311,7 +311,7 @@ class InstanceOrderReq:
 
     @property
     def composite_product_id(self):
-        """Gets the composite_product_id of this InstanceOrderReq.
+        r"""Gets the composite_product_id of this InstanceOrderReq.
 
         组合产品编号
 
@@ -322,7 +322,7 @@ class InstanceOrderReq:
 
     @composite_product_id.setter
     def composite_product_id(self, composite_product_id):
-        """Sets the composite_product_id of this InstanceOrderReq.
+        r"""Sets the composite_product_id of this InstanceOrderReq.
 
         组合产品编号
 
@@ -333,7 +333,7 @@ class InstanceOrderReq:
 
     @property
     def instance_info(self):
-        """Gets the instance_info of this InstanceOrderReq.
+        r"""Gets the instance_info of this InstanceOrderReq.
 
         :return: The instance_info of this InstanceOrderReq.
         :rtype: :class:`huaweicloudsdkapig.v2.InstanceCreateReqV2`
@@ -342,7 +342,7 @@ class InstanceOrderReq:
 
     @instance_info.setter
     def instance_info(self, instance_info):
-        """Sets the instance_info of this InstanceOrderReq.
+        r"""Sets the instance_info of this InstanceOrderReq.
 
         :param instance_info: The instance_info of this InstanceOrderReq.
         :type instance_info: :class:`huaweicloudsdkapig.v2.InstanceCreateReqV2`

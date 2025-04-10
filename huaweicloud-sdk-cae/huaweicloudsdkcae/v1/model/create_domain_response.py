@@ -30,7 +30,7 @@ class CreateDomainResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, items=None, kind=None):
-        """CreateDomainResponse
+        r"""CreateDomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateDomainResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateDomainResponse.
+        r"""Gets the api_version of this CreateDomainResponse.
 
         :return: The api_version of this CreateDomainResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class CreateDomainResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateDomainResponse.
+        r"""Sets the api_version of this CreateDomainResponse.
 
         :param api_version: The api_version of this CreateDomainResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class CreateDomainResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this CreateDomainResponse.
+        r"""Gets the items of this CreateDomainResponse.
 
         域名列表。
 
@@ -87,7 +87,7 @@ class CreateDomainResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this CreateDomainResponse.
+        r"""Sets the items of this CreateDomainResponse.
 
         域名列表。
 
@@ -98,7 +98,7 @@ class CreateDomainResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this CreateDomainResponse.
+        r"""Gets the kind of this CreateDomainResponse.
 
         API类型，固定值“Domain”，该值不可修改。
 
@@ -109,7 +109,7 @@ class CreateDomainResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateDomainResponse.
+        r"""Sets the kind of this CreateDomainResponse.
 
         API类型，固定值“Domain”，该值不可修改。
 

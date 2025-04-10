@@ -33,7 +33,7 @@ class ApkComponentItem:
     }
 
     def __init__(self, name=None, action_list=None, category_list=None, is_main_activity=None, exported=None):
-        """ApkComponentItem
+        r"""ApkComponentItem
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ApkComponentItem:
 
     @property
     def name(self):
-        """Gets the name of this ApkComponentItem.
+        r"""Gets the name of this ApkComponentItem.
 
         组件名称
 
@@ -82,7 +82,7 @@ class ApkComponentItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApkComponentItem.
+        r"""Sets the name of this ApkComponentItem.
 
         组件名称
 
@@ -93,7 +93,7 @@ class ApkComponentItem:
 
     @property
     def action_list(self):
-        """Gets the action_list of this ApkComponentItem.
+        r"""Gets the action_list of this ApkComponentItem.
 
         动作列表
 
@@ -104,7 +104,7 @@ class ApkComponentItem:
 
     @action_list.setter
     def action_list(self, action_list):
-        """Sets the action_list of this ApkComponentItem.
+        r"""Sets the action_list of this ApkComponentItem.
 
         动作列表
 
@@ -115,7 +115,7 @@ class ApkComponentItem:
 
     @property
     def category_list(self):
-        """Gets the category_list of this ApkComponentItem.
+        r"""Gets the category_list of this ApkComponentItem.
 
         类别列表
 
@@ -126,7 +126,7 @@ class ApkComponentItem:
 
     @category_list.setter
     def category_list(self, category_list):
-        """Sets the category_list of this ApkComponentItem.
+        r"""Sets the category_list of this ApkComponentItem.
 
         类别列表
 
@@ -137,7 +137,7 @@ class ApkComponentItem:
 
     @property
     def is_main_activity(self):
-        """Gets the is_main_activity of this ApkComponentItem.
+        r"""Gets the is_main_activity of this ApkComponentItem.
 
         主要活动
 
@@ -148,7 +148,7 @@ class ApkComponentItem:
 
     @is_main_activity.setter
     def is_main_activity(self, is_main_activity):
-        """Sets the is_main_activity of this ApkComponentItem.
+        r"""Sets the is_main_activity of this ApkComponentItem.
 
         主要活动
 
@@ -159,7 +159,7 @@ class ApkComponentItem:
 
     @property
     def exported(self):
-        """Gets the exported of this ApkComponentItem.
+        r"""Gets the exported of this ApkComponentItem.
 
         导出
 
@@ -170,7 +170,7 @@ class ApkComponentItem:
 
     @exported.setter
     def exported(self, exported):
-        """Sets the exported of this ApkComponentItem.
+        r"""Sets the exported of this ApkComponentItem.
 
         导出
 

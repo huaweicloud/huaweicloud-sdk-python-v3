@@ -33,7 +33,7 @@ class ListMetricsRequest:
     }
 
     def __init__(self, cluster_id=None, offset=None, limit=None, order_by=None, sort_by=None):
-        """ListMetricsRequest
+        r"""ListMetricsRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListMetricsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListMetricsRequest.
+        r"""Gets the cluster_id of this ListMetricsRequest.
 
         集群ID
 
@@ -79,7 +79,7 @@ class ListMetricsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListMetricsRequest.
+        r"""Sets the cluster_id of this ListMetricsRequest.
 
         集群ID
 
@@ -90,7 +90,7 @@ class ListMetricsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMetricsRequest.
+        r"""Gets the offset of this ListMetricsRequest.
 
         偏移量，表示从此偏移量开始查询，offset>=0。
 
@@ -101,7 +101,7 @@ class ListMetricsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMetricsRequest.
+        r"""Sets the offset of this ListMetricsRequest.
 
         偏移量，表示从此偏移量开始查询，offset>=0。
 
@@ -112,7 +112,7 @@ class ListMetricsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMetricsRequest.
+        r"""Gets the limit of this ListMetricsRequest.
 
         每页显示的条目数量，最大1000。
 
@@ -123,7 +123,7 @@ class ListMetricsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMetricsRequest.
+        r"""Sets the limit of this ListMetricsRequest.
 
         每页显示的条目数量，最大1000。
 
@@ -134,7 +134,7 @@ class ListMetricsRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListMetricsRequest.
+        r"""Gets the order_by of this ListMetricsRequest.
 
         排序字段。固定取值。 create_time：创建时间。
 
@@ -145,7 +145,7 @@ class ListMetricsRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListMetricsRequest.
+        r"""Sets the order_by of this ListMetricsRequest.
 
         排序字段。固定取值。 create_time：创建时间。
 
@@ -156,7 +156,7 @@ class ListMetricsRequest:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this ListMetricsRequest.
+        r"""Gets the sort_by of this ListMetricsRequest.
 
         正序还是倒叙。固定取值。 asc：正序。 desc：倒序。
 
@@ -167,7 +167,7 @@ class ListMetricsRequest:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this ListMetricsRequest.
+        r"""Sets the sort_by of this ListMetricsRequest.
 
         正序还是倒叙。固定取值。 asc：正序。 desc：倒序。
 

@@ -28,7 +28,7 @@ class CheckQuotaResponse(SdkResponse):
     }
 
     def __init__(self, is_enough=None, quota_remainder=None):
-        """CheckQuotaResponse
+        r"""CheckQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CheckQuotaResponse(SdkResponse):
 
     @property
     def is_enough(self):
-        """Gets the is_enough of this CheckQuotaResponse.
+        r"""Gets the is_enough of this CheckQuotaResponse.
 
         配额是否足够true：足够 false：不足。
 
@@ -62,7 +62,7 @@ class CheckQuotaResponse(SdkResponse):
 
     @is_enough.setter
     def is_enough(self, is_enough):
-        """Sets the is_enough of this CheckQuotaResponse.
+        r"""Sets the is_enough of this CheckQuotaResponse.
 
         配额是否足够true：足够 false：不足。
 
@@ -73,7 +73,7 @@ class CheckQuotaResponse(SdkResponse):
 
     @property
     def quota_remainder(self):
-        """Gets the quota_remainder of this CheckQuotaResponse.
+        r"""Gets the quota_remainder of this CheckQuotaResponse.
 
         配额剩余数量信息。
 
@@ -84,7 +84,7 @@ class CheckQuotaResponse(SdkResponse):
 
     @quota_remainder.setter
     def quota_remainder(self, quota_remainder):
-        """Sets the quota_remainder of this CheckQuotaResponse.
+        r"""Sets the quota_remainder of this CheckQuotaResponse.
 
         配额剩余数量信息。
 

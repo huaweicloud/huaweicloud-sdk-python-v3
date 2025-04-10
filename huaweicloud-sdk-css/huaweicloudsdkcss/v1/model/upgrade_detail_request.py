@@ -31,7 +31,7 @@ class UpgradeDetailRequest:
     }
 
     def __init__(self, cluster_id=None, start=None, limit=None, action_mode=None):
-        """UpgradeDetailRequest
+        r"""UpgradeDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpgradeDetailRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpgradeDetailRequest.
+        r"""Gets the cluster_id of this UpgradeDetailRequest.
 
         待升级的集群的ID。
 
@@ -74,7 +74,7 @@ class UpgradeDetailRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpgradeDetailRequest.
+        r"""Sets the cluster_id of this UpgradeDetailRequest.
 
         待升级的集群的ID。
 
@@ -85,7 +85,7 @@ class UpgradeDetailRequest:
 
     @property
     def start(self):
-        """Gets the start of this UpgradeDetailRequest.
+        r"""Gets the start of this UpgradeDetailRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
@@ -96,7 +96,7 @@ class UpgradeDetailRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this UpgradeDetailRequest.
+        r"""Sets the start of this UpgradeDetailRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
@@ -107,7 +107,7 @@ class UpgradeDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this UpgradeDetailRequest.
+        r"""Gets the limit of this UpgradeDetailRequest.
 
         查询返回终端节点服务的连接列表限制每页个数，即每页返回的个数。
 
@@ -118,7 +118,7 @@ class UpgradeDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this UpgradeDetailRequest.
+        r"""Sets the limit of this UpgradeDetailRequest.
 
         查询返回终端节点服务的连接列表限制每页个数，即每页返回的个数。
 
@@ -129,7 +129,7 @@ class UpgradeDetailRequest:
 
     @property
     def action_mode(self):
-        """Gets the action_mode of this UpgradeDetailRequest.
+        r"""Gets the action_mode of this UpgradeDetailRequest.
 
         查询升级行为。 - 查询集群版本升级详情：不填写该参数。 - 查询切换AZ详情：当前仅支持AZ_MIGRATION。
 
@@ -140,7 +140,7 @@ class UpgradeDetailRequest:
 
     @action_mode.setter
     def action_mode(self, action_mode):
-        """Sets the action_mode of this UpgradeDetailRequest.
+        r"""Sets the action_mode of this UpgradeDetailRequest.
 
         查询升级行为。 - 查询集群版本升级详情：不填写该参数。 - 查询切换AZ详情：当前仅支持AZ_MIGRATION。
 

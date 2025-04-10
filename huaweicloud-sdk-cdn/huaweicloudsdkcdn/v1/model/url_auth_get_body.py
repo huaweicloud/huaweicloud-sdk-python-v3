@@ -43,7 +43,7 @@ class UrlAuthGetBody:
     }
 
     def __init__(self, status=None, type=None, expire_time=None, sign_method=None, match_type=None, inherit_config=None, key=None, backup_key=None, sign_arg=None, time_format=None):
-        """UrlAuthGetBody
+        r"""UrlAuthGetBody
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class UrlAuthGetBody:
 
     @property
     def status(self):
-        """Gets the status of this UrlAuthGetBody.
+        r"""Gets the status of this UrlAuthGetBody.
 
         是否开启URL鉴权，on：开启,off：关闭。
 
@@ -116,7 +116,7 @@ class UrlAuthGetBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UrlAuthGetBody.
+        r"""Sets the status of this UrlAuthGetBody.
 
         是否开启URL鉴权，on：开启,off：关闭。
 
@@ -127,7 +127,7 @@ class UrlAuthGetBody:
 
     @property
     def type(self):
-        """Gets the type of this UrlAuthGetBody.
+        r"""Gets the type of this UrlAuthGetBody.
 
         鉴权方式， type_a：鉴权方式A， type_b：鉴权方式B， type_c1：鉴权方式C1， type_c2：鉴权方式C2。
 
@@ -138,7 +138,7 @@ class UrlAuthGetBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UrlAuthGetBody.
+        r"""Sets the type of this UrlAuthGetBody.
 
         鉴权方式， type_a：鉴权方式A， type_b：鉴权方式B， type_c1：鉴权方式C1， type_c2：鉴权方式C2。
 
@@ -149,7 +149,7 @@ class UrlAuthGetBody:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this UrlAuthGetBody.
+        r"""Gets the expire_time of this UrlAuthGetBody.
 
         过期时间，单位：秒。
 
@@ -160,7 +160,7 @@ class UrlAuthGetBody:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this UrlAuthGetBody.
+        r"""Sets the expire_time of this UrlAuthGetBody.
 
         过期时间，单位：秒。
 
@@ -171,7 +171,7 @@ class UrlAuthGetBody:
 
     @property
     def sign_method(self):
-        """Gets the sign_method of this UrlAuthGetBody.
+        r"""Gets the sign_method of this UrlAuthGetBody.
 
         加密算法。
 
@@ -182,7 +182,7 @@ class UrlAuthGetBody:
 
     @sign_method.setter
     def sign_method(self, sign_method):
-        """Sets the sign_method of this UrlAuthGetBody.
+        r"""Sets the sign_method of this UrlAuthGetBody.
 
         加密算法。
 
@@ -193,7 +193,7 @@ class UrlAuthGetBody:
 
     @property
     def match_type(self):
-        """Gets the match_type of this UrlAuthGetBody.
+        r"""Gets the match_type of this UrlAuthGetBody.
 
         鉴权范围。
 
@@ -204,7 +204,7 @@ class UrlAuthGetBody:
 
     @match_type.setter
     def match_type(self, match_type):
-        """Sets the match_type of this UrlAuthGetBody.
+        r"""Sets the match_type of this UrlAuthGetBody.
 
         鉴权范围。
 
@@ -215,7 +215,7 @@ class UrlAuthGetBody:
 
     @property
     def inherit_config(self):
-        """Gets the inherit_config of this UrlAuthGetBody.
+        r"""Gets the inherit_config of this UrlAuthGetBody.
 
         :return: The inherit_config of this UrlAuthGetBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.InheritConfigQuery`
@@ -224,7 +224,7 @@ class UrlAuthGetBody:
 
     @inherit_config.setter
     def inherit_config(self, inherit_config):
-        """Sets the inherit_config of this UrlAuthGetBody.
+        r"""Sets the inherit_config of this UrlAuthGetBody.
 
         :param inherit_config: The inherit_config of this UrlAuthGetBody.
         :type inherit_config: :class:`huaweicloudsdkcdn.v1.InheritConfigQuery`
@@ -233,7 +233,7 @@ class UrlAuthGetBody:
 
     @property
     def key(self):
-        """Gets the key of this UrlAuthGetBody.
+        r"""Gets the key of this UrlAuthGetBody.
 
         鉴权KEY。
 
@@ -244,7 +244,7 @@ class UrlAuthGetBody:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this UrlAuthGetBody.
+        r"""Sets the key of this UrlAuthGetBody.
 
         鉴权KEY。
 
@@ -255,7 +255,7 @@ class UrlAuthGetBody:
 
     @property
     def backup_key(self):
-        """Gets the backup_key of this UrlAuthGetBody.
+        r"""Gets the backup_key of this UrlAuthGetBody.
 
         鉴权KEY（备）。
 
@@ -266,7 +266,7 @@ class UrlAuthGetBody:
 
     @backup_key.setter
     def backup_key(self, backup_key):
-        """Sets the backup_key of this UrlAuthGetBody.
+        r"""Sets the backup_key of this UrlAuthGetBody.
 
         鉴权KEY（备）。
 
@@ -277,7 +277,7 @@ class UrlAuthGetBody:
 
     @property
     def sign_arg(self):
-        """Gets the sign_arg of this UrlAuthGetBody.
+        r"""Gets the sign_arg of this UrlAuthGetBody.
 
         鉴权参数。
 
@@ -288,7 +288,7 @@ class UrlAuthGetBody:
 
     @sign_arg.setter
     def sign_arg(self, sign_arg):
-        """Sets the sign_arg of this UrlAuthGetBody.
+        r"""Sets the sign_arg of this UrlAuthGetBody.
 
         鉴权参数。
 
@@ -299,7 +299,7 @@ class UrlAuthGetBody:
 
     @property
     def time_format(self):
-        """Gets the time_format of this UrlAuthGetBody.
+        r"""Gets the time_format of this UrlAuthGetBody.
 
         时间格式， dec：十进制, hex：十六进制。
 
@@ -310,7 +310,7 @@ class UrlAuthGetBody:
 
     @time_format.setter
     def time_format(self, time_format):
-        """Sets the time_format of this UrlAuthGetBody.
+        r"""Sets the time_format of this UrlAuthGetBody.
 
         时间格式， dec：十进制, hex：十六进制。
 

@@ -28,7 +28,7 @@ class ShowApplicationResDeleteStatusResponse(SdkResponse):
     }
 
     def __init__(self, repo_status=None, pipeline_status=None):
-        """ShowApplicationResDeleteStatusResponse
+        r"""ShowApplicationResDeleteStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowApplicationResDeleteStatusResponse(SdkResponse):
 
     @property
     def repo_status(self):
-        """Gets the repo_status of this ShowApplicationResDeleteStatusResponse.
+        r"""Gets the repo_status of this ShowApplicationResDeleteStatusResponse.
 
         代码仓删除状态,deleted:删除成功,failed:删除失败,going:正在删除中
 
@@ -62,7 +62,7 @@ class ShowApplicationResDeleteStatusResponse(SdkResponse):
 
     @repo_status.setter
     def repo_status(self, repo_status):
-        """Sets the repo_status of this ShowApplicationResDeleteStatusResponse.
+        r"""Sets the repo_status of this ShowApplicationResDeleteStatusResponse.
 
         代码仓删除状态,deleted:删除成功,failed:删除失败,going:正在删除中
 
@@ -73,7 +73,7 @@ class ShowApplicationResDeleteStatusResponse(SdkResponse):
 
     @property
     def pipeline_status(self):
-        """Gets the pipeline_status of this ShowApplicationResDeleteStatusResponse.
+        r"""Gets the pipeline_status of this ShowApplicationResDeleteStatusResponse.
 
         流水线删除状态
 
@@ -84,7 +84,7 @@ class ShowApplicationResDeleteStatusResponse(SdkResponse):
 
     @pipeline_status.setter
     def pipeline_status(self, pipeline_status):
-        """Sets the pipeline_status of this ShowApplicationResDeleteStatusResponse.
+        r"""Sets the pipeline_status of this ShowApplicationResDeleteStatusResponse.
 
         流水线删除状态
 

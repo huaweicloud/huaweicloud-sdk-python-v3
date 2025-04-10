@@ -34,7 +34,7 @@ class ShowFeatureChildrenResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
-        """ShowFeatureChildrenResponse
+        r"""ShowFeatureChildrenResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowFeatureChildrenResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowFeatureChildrenResponse.
+        r"""Gets the status of this ShowFeatureChildrenResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -83,7 +83,7 @@ class ShowFeatureChildrenResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowFeatureChildrenResponse.
+        r"""Sets the status of this ShowFeatureChildrenResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -94,7 +94,7 @@ class ShowFeatureChildrenResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowFeatureChildrenResponse.
+        r"""Gets the result of this ShowFeatureChildrenResponse.
 
         :return: The result of this ShowFeatureChildrenResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueListTestItemVo`
@@ -103,7 +103,7 @@ class ShowFeatureChildrenResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowFeatureChildrenResponse.
+        r"""Sets the result of this ShowFeatureChildrenResponse.
 
         :param result: The result of this ShowFeatureChildrenResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueListTestItemVo`
@@ -112,7 +112,7 @@ class ShowFeatureChildrenResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowFeatureChildrenResponse.
+        r"""Gets the error of this ShowFeatureChildrenResponse.
 
         :return: The error of this ShowFeatureChildrenResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -121,7 +121,7 @@ class ShowFeatureChildrenResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowFeatureChildrenResponse.
+        r"""Sets the error of this ShowFeatureChildrenResponse.
 
         :param error: The error of this ShowFeatureChildrenResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -130,7 +130,7 @@ class ShowFeatureChildrenResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowFeatureChildrenResponse.
+        r"""Gets the request_id of this ShowFeatureChildrenResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -141,7 +141,7 @@ class ShowFeatureChildrenResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowFeatureChildrenResponse.
+        r"""Sets the request_id of this ShowFeatureChildrenResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -152,7 +152,7 @@ class ShowFeatureChildrenResponse(SdkResponse):
 
     @property
     def server_address(self):
-        """Gets the server_address of this ShowFeatureChildrenResponse.
+        r"""Gets the server_address of this ShowFeatureChildrenResponse.
 
         对内接口才有此属性
 
@@ -163,7 +163,7 @@ class ShowFeatureChildrenResponse(SdkResponse):
 
     @server_address.setter
     def server_address(self, server_address):
-        """Sets the server_address of this ShowFeatureChildrenResponse.
+        r"""Sets the server_address of this ShowFeatureChildrenResponse.
 
         对内接口才有此属性
 

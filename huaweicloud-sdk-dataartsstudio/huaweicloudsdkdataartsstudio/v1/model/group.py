@@ -27,7 +27,7 @@ class Group:
     }
 
     def __init__(self, id=None, name=None):
-        """Group
+        r"""Group
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Group:
 
     @property
     def id(self):
-        """Gets the id of this Group.
+        r"""Gets the id of this Group.
 
         用户组id
 
@@ -61,7 +61,7 @@ class Group:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Group.
+        r"""Sets the id of this Group.
 
         用户组id
 
@@ -72,7 +72,7 @@ class Group:
 
     @property
     def name(self):
-        """Gets the name of this Group.
+        r"""Gets the name of this Group.
 
         用户组名
 
@@ -83,7 +83,7 @@ class Group:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Group.
+        r"""Sets the name of this Group.
 
         用户组名
 

@@ -24,7 +24,7 @@ class AddTagToAssetResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddTagToAssetResponse
+        r"""AddTagToAssetResponse
 
         The model defined in huaweicloud sdk
 

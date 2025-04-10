@@ -30,7 +30,7 @@ class GenerateMacResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, mac_algorithm=None, mac=None):
-        """GenerateMacResponse
+        r"""GenerateMacResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class GenerateMacResponse(SdkResponse):
 
     @property
     def key_id(self):
-        """Gets the key_id of this GenerateMacResponse.
+        r"""Gets the key_id of this GenerateMacResponse.
 
         密钥ID
 
@@ -69,7 +69,7 @@ class GenerateMacResponse(SdkResponse):
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this GenerateMacResponse.
+        r"""Sets the key_id of this GenerateMacResponse.
 
         密钥ID
 
@@ -80,7 +80,7 @@ class GenerateMacResponse(SdkResponse):
 
     @property
     def mac_algorithm(self):
-        """Gets the mac_algorithm of this GenerateMacResponse.
+        r"""Gets the mac_algorithm of this GenerateMacResponse.
 
         Mac算法
 
@@ -91,7 +91,7 @@ class GenerateMacResponse(SdkResponse):
 
     @mac_algorithm.setter
     def mac_algorithm(self, mac_algorithm):
-        """Sets the mac_algorithm of this GenerateMacResponse.
+        r"""Sets the mac_algorithm of this GenerateMacResponse.
 
         Mac算法
 
@@ -102,7 +102,7 @@ class GenerateMacResponse(SdkResponse):
 
     @property
     def mac(self):
-        """Gets the mac of this GenerateMacResponse.
+        r"""Gets the mac of this GenerateMacResponse.
 
         生成的消息验证码
 
@@ -113,7 +113,7 @@ class GenerateMacResponse(SdkResponse):
 
     @mac.setter
     def mac(self, mac):
-        """Sets the mac of this GenerateMacResponse.
+        r"""Sets the mac of this GenerateMacResponse.
 
         生成的消息验证码
 

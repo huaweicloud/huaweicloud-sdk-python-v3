@@ -35,7 +35,7 @@ class DbParameter:
     }
 
     def __init__(self, param_name=None, data_type=None, default_value=None, value_range=None, description=None, is_modifiable=None):
-        """DbParameter
+        r"""DbParameter
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DbParameter:
 
     @property
     def param_name(self):
-        """Gets the param_name of this DbParameter.
+        r"""Gets the param_name of this DbParameter.
 
         参数名称。
 
@@ -89,7 +89,7 @@ class DbParameter:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this DbParameter.
+        r"""Sets the param_name of this DbParameter.
 
         参数名称。
 
@@ -100,7 +100,7 @@ class DbParameter:
 
     @property
     def data_type(self):
-        """Gets the data_type of this DbParameter.
+        r"""Gets the data_type of this DbParameter.
 
         参数类型。
 
@@ -111,7 +111,7 @@ class DbParameter:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this DbParameter.
+        r"""Sets the data_type of this DbParameter.
 
         参数类型。
 
@@ -122,7 +122,7 @@ class DbParameter:
 
     @property
     def default_value(self):
-        """Gets the default_value of this DbParameter.
+        r"""Gets the default_value of this DbParameter.
 
         参数默认值。
 
@@ -133,7 +133,7 @@ class DbParameter:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this DbParameter.
+        r"""Sets the default_value of this DbParameter.
 
         参数默认值。
 
@@ -144,7 +144,7 @@ class DbParameter:
 
     @property
     def value_range(self):
-        """Gets the value_range of this DbParameter.
+        r"""Gets the value_range of this DbParameter.
 
         参数取值范围。
 
@@ -155,7 +155,7 @@ class DbParameter:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this DbParameter.
+        r"""Sets the value_range of this DbParameter.
 
         参数取值范围。
 
@@ -166,7 +166,7 @@ class DbParameter:
 
     @property
     def description(self):
-        """Gets the description of this DbParameter.
+        r"""Gets the description of this DbParameter.
 
         参数描述。
 
@@ -177,7 +177,7 @@ class DbParameter:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DbParameter.
+        r"""Sets the description of this DbParameter.
 
         参数描述。
 
@@ -188,7 +188,7 @@ class DbParameter:
 
     @property
     def is_modifiable(self):
-        """Gets the is_modifiable of this DbParameter.
+        r"""Gets the is_modifiable of this DbParameter.
 
         **参数解释**：  新增子任务的场景，用于区分库参数是否支持修改。  **取值范围**：  不涉及。
 
@@ -199,7 +199,7 @@ class DbParameter:
 
     @is_modifiable.setter
     def is_modifiable(self, is_modifiable):
-        """Sets the is_modifiable of this DbParameter.
+        r"""Sets the is_modifiable of this DbParameter.
 
         **参数解释**：  新增子任务的场景，用于区分库参数是否支持修改。  **取值范围**：  不涉及。
 

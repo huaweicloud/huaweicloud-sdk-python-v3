@@ -26,7 +26,7 @@ class RegisterDbUserResponse(SdkResponse):
     }
 
     def __init__(self, db_user_id=None):
-        """RegisterDbUserResponse
+        r"""RegisterDbUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RegisterDbUserResponse(SdkResponse):
 
     @property
     def db_user_id(self):
-        """Gets the db_user_id of this RegisterDbUserResponse.
+        r"""Gets the db_user_id of this RegisterDbUserResponse.
 
         数据库用户ID
 
@@ -55,7 +55,7 @@ class RegisterDbUserResponse(SdkResponse):
 
     @db_user_id.setter
     def db_user_id(self, db_user_id):
-        """Sets the db_user_id of this RegisterDbUserResponse.
+        r"""Sets the db_user_id of this RegisterDbUserResponse.
 
         数据库用户ID
 

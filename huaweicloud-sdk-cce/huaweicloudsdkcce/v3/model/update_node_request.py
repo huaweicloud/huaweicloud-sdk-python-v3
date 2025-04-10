@@ -29,7 +29,7 @@ class UpdateNodeRequest:
     }
 
     def __init__(self, cluster_id=None, node_id=None, body=None):
-        """UpdateNodeRequest
+        r"""UpdateNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateNodeRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateNodeRequest.
+        r"""Gets the cluster_id of this UpdateNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -66,7 +66,7 @@ class UpdateNodeRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateNodeRequest.
+        r"""Sets the cluster_id of this UpdateNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -77,7 +77,7 @@ class UpdateNodeRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this UpdateNodeRequest.
+        r"""Gets the node_id of this UpdateNodeRequest.
 
         节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -88,7 +88,7 @@ class UpdateNodeRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this UpdateNodeRequest.
+        r"""Sets the node_id of this UpdateNodeRequest.
 
         节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -99,7 +99,7 @@ class UpdateNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNodeRequest.
+        r"""Gets the body of this UpdateNodeRequest.
 
         :return: The body of this UpdateNodeRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterNodeInformation`
@@ -108,7 +108,7 @@ class UpdateNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNodeRequest.
+        r"""Sets the body of this UpdateNodeRequest.
 
         :param body: The body of this UpdateNodeRequest.
         :type body: :class:`huaweicloudsdkcce.v3.ClusterNodeInformation`

@@ -27,7 +27,7 @@ class AddTrustedIpAddressRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """AddTrustedIpAddressRequest
+        r"""AddTrustedIpAddressRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddTrustedIpAddressRequest:
 
     @property
     def id(self):
-        """Gets the id of this AddTrustedIpAddressRequest.
+        r"""Gets the id of this AddTrustedIpAddressRequest.
 
         仓库id
 
@@ -60,7 +60,7 @@ class AddTrustedIpAddressRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AddTrustedIpAddressRequest.
+        r"""Sets the id of this AddTrustedIpAddressRequest.
 
         仓库id
 
@@ -71,7 +71,7 @@ class AddTrustedIpAddressRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddTrustedIpAddressRequest.
+        r"""Gets the body of this AddTrustedIpAddressRequest.
 
         :return: The body of this AddTrustedIpAddressRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v4.AddTrustedIpAddressRequestBody`
@@ -80,7 +80,7 @@ class AddTrustedIpAddressRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddTrustedIpAddressRequest.
+        r"""Sets the body of this AddTrustedIpAddressRequest.
 
         :param body: The body of this AddTrustedIpAddressRequest.
         :type body: :class:`huaweicloudsdkcodehub.v4.AddTrustedIpAddressRequestBody`

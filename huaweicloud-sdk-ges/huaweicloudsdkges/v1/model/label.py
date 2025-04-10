@@ -27,7 +27,7 @@ class Label:
     }
 
     def __init__(self, name=None, properties=None):
-        """Label
+        r"""Label
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Label:
 
     @property
     def name(self):
-        """Gets the name of this Label.
+        r"""Gets the name of this Label.
 
         Label名称。
 
@@ -61,7 +61,7 @@ class Label:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Label.
+        r"""Sets the name of this Label.
 
         Label名称。
 
@@ -72,7 +72,7 @@ class Label:
 
     @property
     def properties(self):
-        """Gets the properties of this Label.
+        r"""Gets the properties of this Label.
 
         属性Map
 
@@ -83,7 +83,7 @@ class Label:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this Label.
+        r"""Sets the properties of this Label.
 
         属性Map
 

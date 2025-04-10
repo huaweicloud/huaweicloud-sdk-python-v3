@@ -41,7 +41,7 @@ class QueryTagsOption:
     }
 
     def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, limit=None, marker=None, action=None, offset=None, matches=None):
-        """QueryTagsOption
+        r"""QueryTagsOption
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class QueryTagsOption:
 
     @property
     def tags(self):
-        """Gets the tags of this QueryTagsOption.
+        r"""Gets the tags of this QueryTagsOption.
 
         过滤条件，包含标签，最多包含10个Tag，结构体不能缺失。
 
@@ -109,7 +109,7 @@ class QueryTagsOption:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this QueryTagsOption.
+        r"""Sets the tags of this QueryTagsOption.
 
         过滤条件，包含标签，最多包含10个Tag，结构体不能缺失。
 
@@ -120,7 +120,7 @@ class QueryTagsOption:
 
     @property
     def tags_any(self):
-        """Gets the tags_any of this QueryTagsOption.
+        r"""Gets the tags_any of this QueryTagsOption.
 
         过滤条件，包含任意标签，最多包含10个Tag。
 
@@ -131,7 +131,7 @@ class QueryTagsOption:
 
     @tags_any.setter
     def tags_any(self, tags_any):
-        """Sets the tags_any of this QueryTagsOption.
+        r"""Sets the tags_any of this QueryTagsOption.
 
         过滤条件，包含任意标签，最多包含10个Tag。
 
@@ -142,7 +142,7 @@ class QueryTagsOption:
 
     @property
     def not_tags(self):
-        """Gets the not_tags of this QueryTagsOption.
+        r"""Gets the not_tags of this QueryTagsOption.
 
         过滤条件，不包含标签，最多包含10个Tag。
 
@@ -153,7 +153,7 @@ class QueryTagsOption:
 
     @not_tags.setter
     def not_tags(self, not_tags):
-        """Sets the not_tags of this QueryTagsOption.
+        r"""Sets the not_tags of this QueryTagsOption.
 
         过滤条件，不包含标签，最多包含10个Tag。
 
@@ -164,7 +164,7 @@ class QueryTagsOption:
 
     @property
     def not_tags_any(self):
-        """Gets the not_tags_any of this QueryTagsOption.
+        r"""Gets the not_tags_any of this QueryTagsOption.
 
         过滤条件，不包含任意标签，最多包含10个Tag。
 
@@ -175,7 +175,7 @@ class QueryTagsOption:
 
     @not_tags_any.setter
     def not_tags_any(self, not_tags_any):
-        """Sets the not_tags_any of this QueryTagsOption.
+        r"""Sets the not_tags_any of this QueryTagsOption.
 
         过滤条件，不包含任意标签，最多包含10个Tag。
 
@@ -186,7 +186,7 @@ class QueryTagsOption:
 
     @property
     def limit(self):
-        """Gets the limit of this QueryTagsOption.
+        r"""Gets the limit of this QueryTagsOption.
 
         查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000，不能为负数，最小值为1。
 
@@ -197,7 +197,7 @@ class QueryTagsOption:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QueryTagsOption.
+        r"""Sets the limit of this QueryTagsOption.
 
         查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000，不能为负数，最小值为1。
 
@@ -208,7 +208,7 @@ class QueryTagsOption:
 
     @property
     def marker(self):
-        """Gets the marker of this QueryTagsOption.
+        r"""Gets the marker of this QueryTagsOption.
 
         分页位置标识（资源ID或索引位置）。
 
@@ -219,7 +219,7 @@ class QueryTagsOption:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this QueryTagsOption.
+        r"""Sets the marker of this QueryTagsOption.
 
         分页位置标识（资源ID或索引位置）。
 
@@ -230,7 +230,7 @@ class QueryTagsOption:
 
     @property
     def action(self):
-        """Gets the action of this QueryTagsOption.
+        r"""Gets the action of this QueryTagsOption.
 
         操作标识（仅限filter，count）：filter（过滤）：即分页查询。count（查询总条数）：按照条件将总条数返回即可。
 
@@ -241,7 +241,7 @@ class QueryTagsOption:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this QueryTagsOption.
+        r"""Sets the action of this QueryTagsOption.
 
         操作标识（仅限filter，count）：filter（过滤）：即分页查询。count（查询总条数）：按照条件将总条数返回即可。
 
@@ -252,7 +252,7 @@ class QueryTagsOption:
 
     @property
     def offset(self):
-        """Gets the offset of this QueryTagsOption.
+        r"""Gets the offset of this QueryTagsOption.
 
         （索引位置），从offset指定的下一条数据开始查询。查询第一页数据时，不需要传入此参数。查询后续页码数据时，将查询前一页数据时，不需要传入此参数。查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数。必须为数字，不能为负数。action：count时，无此参数。action：filter时，默认为0
 
@@ -263,7 +263,7 @@ class QueryTagsOption:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this QueryTagsOption.
+        r"""Sets the offset of this QueryTagsOption.
 
         （索引位置），从offset指定的下一条数据开始查询。查询第一页数据时，不需要传入此参数。查询后续页码数据时，将查询前一页数据时，不需要传入此参数。查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数。必须为数字，不能为负数。action：count时，无此参数。action：filter时，默认为0
 
@@ -274,7 +274,7 @@ class QueryTagsOption:
 
     @property
     def matches(self):
-        """Gets the matches of this QueryTagsOption.
+        r"""Gets the matches of this QueryTagsOption.
 
         模糊搜索字段。
 
@@ -285,7 +285,7 @@ class QueryTagsOption:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this QueryTagsOption.
+        r"""Sets the matches of this QueryTagsOption.
 
         模糊搜索字段。
 

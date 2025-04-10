@@ -27,7 +27,7 @@ class TenantAgreement:
     }
 
     def __init__(self, agreement_name=None, agreement_version=None):
-        """TenantAgreement
+        r"""TenantAgreement
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TenantAgreement:
 
     @property
     def agreement_name(self):
-        """Gets the agreement_name of this TenantAgreement.
+        r"""Gets the agreement_name of this TenantAgreement.
 
         协议名称。只能包含字母、数字、下划线和中划线，且长度为1到64个字符
 
@@ -61,7 +61,7 @@ class TenantAgreement:
 
     @agreement_name.setter
     def agreement_name(self, agreement_name):
-        """Sets the agreement_name of this TenantAgreement.
+        r"""Sets the agreement_name of this TenantAgreement.
 
         协议名称。只能包含字母、数字、下划线和中划线，且长度为1到64个字符
 
@@ -72,7 +72,7 @@ class TenantAgreement:
 
     @property
     def agreement_version(self):
-        """Gets the agreement_version of this TenantAgreement.
+        r"""Gets the agreement_version of this TenantAgreement.
 
         协议版本号。只能包含字母和数字，且长度为1到32个字符
 
@@ -83,7 +83,7 @@ class TenantAgreement:
 
     @agreement_version.setter
     def agreement_version(self, agreement_version):
-        """Sets the agreement_version of this TenantAgreement.
+        r"""Sets the agreement_version of this TenantAgreement.
 
         协议版本号。只能包含字母和数字，且长度为1到32个字符
 

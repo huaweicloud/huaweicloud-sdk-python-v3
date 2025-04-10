@@ -31,7 +31,7 @@ class ReportChartDataVo:
     }
 
     def __init__(self, id=None, name=None, analyze_dim=None, compare_dim=None):
-        """ReportChartDataVo
+        r"""ReportChartDataVo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ReportChartDataVo:
 
     @property
     def id(self):
-        """Gets the id of this ReportChartDataVo.
+        r"""Gets the id of this ReportChartDataVo.
 
         报表id
 
@@ -75,7 +75,7 @@ class ReportChartDataVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ReportChartDataVo.
+        r"""Sets the id of this ReportChartDataVo.
 
         报表id
 
@@ -86,7 +86,7 @@ class ReportChartDataVo:
 
     @property
     def name(self):
-        """Gets the name of this ReportChartDataVo.
+        r"""Gets the name of this ReportChartDataVo.
 
         报表名称
 
@@ -97,7 +97,7 @@ class ReportChartDataVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ReportChartDataVo.
+        r"""Sets the name of this ReportChartDataVo.
 
         报表名称
 
@@ -108,7 +108,7 @@ class ReportChartDataVo:
 
     @property
     def analyze_dim(self):
-        """Gets the analyze_dim of this ReportChartDataVo.
+        r"""Gets the analyze_dim of this ReportChartDataVo.
 
         :return: The analyze_dim of this ReportChartDataVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ReportDimVo`
@@ -117,7 +117,7 @@ class ReportChartDataVo:
 
     @analyze_dim.setter
     def analyze_dim(self, analyze_dim):
-        """Sets the analyze_dim of this ReportChartDataVo.
+        r"""Sets the analyze_dim of this ReportChartDataVo.
 
         :param analyze_dim: The analyze_dim of this ReportChartDataVo.
         :type analyze_dim: :class:`huaweicloudsdkcloudtest.v1.ReportDimVo`
@@ -126,7 +126,7 @@ class ReportChartDataVo:
 
     @property
     def compare_dim(self):
-        """Gets the compare_dim of this ReportChartDataVo.
+        r"""Gets the compare_dim of this ReportChartDataVo.
 
         对比维度数据
 
@@ -137,7 +137,7 @@ class ReportChartDataVo:
 
     @compare_dim.setter
     def compare_dim(self, compare_dim):
-        """Sets the compare_dim of this ReportChartDataVo.
+        r"""Sets the compare_dim of this ReportChartDataVo.
 
         对比维度数据
 

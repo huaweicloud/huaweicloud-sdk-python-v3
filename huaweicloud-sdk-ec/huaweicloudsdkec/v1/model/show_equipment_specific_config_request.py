@@ -25,7 +25,7 @@ class ShowEquipmentSpecificConfigRequest:
     }
 
     def __init__(self, equipment_id=None):
-        """ShowEquipmentSpecificConfigRequest
+        r"""ShowEquipmentSpecificConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowEquipmentSpecificConfigRequest:
 
     @property
     def equipment_id(self):
-        """Gets the equipment_id of this ShowEquipmentSpecificConfigRequest.
+        r"""Gets the equipment_id of this ShowEquipmentSpecificConfigRequest.
 
         智能企业网关设备ID
 
@@ -53,7 +53,7 @@ class ShowEquipmentSpecificConfigRequest:
 
     @equipment_id.setter
     def equipment_id(self, equipment_id):
-        """Sets the equipment_id of this ShowEquipmentSpecificConfigRequest.
+        r"""Sets the equipment_id of this ShowEquipmentSpecificConfigRequest.
 
         智能企业网关设备ID
 

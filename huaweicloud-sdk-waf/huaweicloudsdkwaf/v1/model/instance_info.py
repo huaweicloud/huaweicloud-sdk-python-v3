@@ -27,7 +27,7 @@ class InstanceInfo:
     }
 
     def __init__(self, id=None, name=None):
-        """InstanceInfo
+        r"""InstanceInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class InstanceInfo:
 
     @property
     def id(self):
-        """Gets the id of this InstanceInfo.
+        r"""Gets the id of this InstanceInfo.
 
         引擎实例ID
 
@@ -59,7 +59,7 @@ class InstanceInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstanceInfo.
+        r"""Sets the id of this InstanceInfo.
 
         引擎实例ID
 
@@ -70,7 +70,7 @@ class InstanceInfo:
 
     @property
     def name(self):
-        """Gets the name of this InstanceInfo.
+        r"""Gets the name of this InstanceInfo.
 
         引擎实例名称
 
@@ -81,7 +81,7 @@ class InstanceInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceInfo.
+        r"""Sets the name of this InstanceInfo.
 
         引擎实例名称
 

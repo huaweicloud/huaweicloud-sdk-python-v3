@@ -27,7 +27,7 @@ class BatchDeleteTestReportRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """BatchDeleteTestReportRequest
+        r"""BatchDeleteTestReportRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteTestReportRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchDeleteTestReportRequest.
+        r"""Gets the project_id of this BatchDeleteTestReportRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class BatchDeleteTestReportRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchDeleteTestReportRequest.
+        r"""Sets the project_id of this BatchDeleteTestReportRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class BatchDeleteTestReportRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteTestReportRequest.
+        r"""Gets the body of this BatchDeleteTestReportRequest.
 
         :return: The body of this BatchDeleteTestReportRequest.
         :rtype: list[str]
@@ -80,7 +80,7 @@ class BatchDeleteTestReportRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteTestReportRequest.
+        r"""Sets the body of this BatchDeleteTestReportRequest.
 
         :param body: The body of this BatchDeleteTestReportRequest.
         :type body: list[str]

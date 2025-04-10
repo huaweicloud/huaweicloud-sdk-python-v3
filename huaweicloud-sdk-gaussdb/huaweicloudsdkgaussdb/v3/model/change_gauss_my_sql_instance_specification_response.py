@@ -28,7 +28,7 @@ class ChangeGaussMySqlInstanceSpecificationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None):
-        """ChangeGaussMySqlInstanceSpecificationResponse
+        r"""ChangeGaussMySqlInstanceSpecificationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ChangeGaussMySqlInstanceSpecificationResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ChangeGaussMySqlInstanceSpecificationResponse.
+        r"""Gets the job_id of this ChangeGaussMySqlInstanceSpecificationResponse.
 
         规格变更的任务ID，仅变更按需实例时会返回该参数
 
@@ -62,7 +62,7 @@ class ChangeGaussMySqlInstanceSpecificationResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ChangeGaussMySqlInstanceSpecificationResponse.
+        r"""Sets the job_id of this ChangeGaussMySqlInstanceSpecificationResponse.
 
         规格变更的任务ID，仅变更按需实例时会返回该参数
 
@@ -73,7 +73,7 @@ class ChangeGaussMySqlInstanceSpecificationResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ChangeGaussMySqlInstanceSpecificationResponse.
+        r"""Gets the order_id of this ChangeGaussMySqlInstanceSpecificationResponse.
 
         订单ID，仅变更包周期实例时会返回该参数
 
@@ -84,7 +84,7 @@ class ChangeGaussMySqlInstanceSpecificationResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ChangeGaussMySqlInstanceSpecificationResponse.
+        r"""Sets the order_id of this ChangeGaussMySqlInstanceSpecificationResponse.
 
         订单ID，仅变更包周期实例时会返回该参数
 

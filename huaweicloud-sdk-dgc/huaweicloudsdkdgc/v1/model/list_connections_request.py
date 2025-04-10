@@ -31,7 +31,7 @@ class ListConnectionsRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, connection_name=None):
-        """ListConnectionsRequest
+        r"""ListConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListConnectionsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListConnectionsRequest.
+        r"""Gets the workspace of this ListConnectionsRequest.
 
         工作空间id
 
@@ -75,7 +75,7 @@ class ListConnectionsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListConnectionsRequest.
+        r"""Sets the workspace of this ListConnectionsRequest.
 
         工作空间id
 
@@ -86,7 +86,7 @@ class ListConnectionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConnectionsRequest.
+        r"""Gets the limit of this ListConnectionsRequest.
 
         分页参数：每页限定数量。范围[1,100]
 
@@ -97,7 +97,7 @@ class ListConnectionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConnectionsRequest.
+        r"""Sets the limit of this ListConnectionsRequest.
 
         分页参数：每页限定数量。范围[1,100]
 
@@ -108,7 +108,7 @@ class ListConnectionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListConnectionsRequest.
+        r"""Gets the offset of this ListConnectionsRequest.
 
         分页参数：页数
 
@@ -119,7 +119,7 @@ class ListConnectionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListConnectionsRequest.
+        r"""Sets the offset of this ListConnectionsRequest.
 
         分页参数：页数
 
@@ -130,7 +130,7 @@ class ListConnectionsRequest:
 
     @property
     def connection_name(self):
-        """Gets the connection_name of this ListConnectionsRequest.
+        r"""Gets the connection_name of this ListConnectionsRequest.
 
         连接名称.
 
@@ -141,7 +141,7 @@ class ListConnectionsRequest:
 
     @connection_name.setter
     def connection_name(self, connection_name):
-        """Sets the connection_name of this ListConnectionsRequest.
+        r"""Sets the connection_name of this ListConnectionsRequest.
 
         连接名称.
 

@@ -25,7 +25,7 @@ class ShowPrivateNatRequest:
     }
 
     def __init__(self, gateway_id=None):
-        """ShowPrivateNatRequest
+        r"""ShowPrivateNatRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPrivateNatRequest:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this ShowPrivateNatRequest.
+        r"""Gets the gateway_id of this ShowPrivateNatRequest.
 
         私网NAT网关实例的ID。
 
@@ -53,7 +53,7 @@ class ShowPrivateNatRequest:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this ShowPrivateNatRequest.
+        r"""Sets the gateway_id of this ShowPrivateNatRequest.
 
         私网NAT网关实例的ID。
 

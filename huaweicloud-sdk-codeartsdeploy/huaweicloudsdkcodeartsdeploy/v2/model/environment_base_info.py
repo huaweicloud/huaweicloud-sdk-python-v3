@@ -33,7 +33,7 @@ class EnvironmentBaseInfo:
     }
 
     def __init__(self, name=None, os=None, uuid=None, group_id=None, host_count=None):
-        """EnvironmentBaseInfo
+        r"""EnvironmentBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class EnvironmentBaseInfo:
 
     @property
     def name(self):
-        """Gets the name of this EnvironmentBaseInfo.
+        r"""Gets the name of this EnvironmentBaseInfo.
 
         环境名称
 
@@ -82,7 +82,7 @@ class EnvironmentBaseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvironmentBaseInfo.
+        r"""Sets the name of this EnvironmentBaseInfo.
 
         环境名称
 
@@ -93,7 +93,7 @@ class EnvironmentBaseInfo:
 
     @property
     def os(self):
-        """Gets the os of this EnvironmentBaseInfo.
+        r"""Gets the os of this EnvironmentBaseInfo.
 
         操作系统：windows|linux
 
@@ -104,7 +104,7 @@ class EnvironmentBaseInfo:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this EnvironmentBaseInfo.
+        r"""Sets the os of this EnvironmentBaseInfo.
 
         操作系统：windows|linux
 
@@ -115,7 +115,7 @@ class EnvironmentBaseInfo:
 
     @property
     def uuid(self):
-        """Gets the uuid of this EnvironmentBaseInfo.
+        r"""Gets the uuid of this EnvironmentBaseInfo.
 
         环境id
 
@@ -126,7 +126,7 @@ class EnvironmentBaseInfo:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this EnvironmentBaseInfo.
+        r"""Sets the uuid of this EnvironmentBaseInfo.
 
         环境id
 
@@ -137,7 +137,7 @@ class EnvironmentBaseInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this EnvironmentBaseInfo.
+        r"""Gets the group_id of this EnvironmentBaseInfo.
 
         主机集群id
 
@@ -148,7 +148,7 @@ class EnvironmentBaseInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this EnvironmentBaseInfo.
+        r"""Sets the group_id of this EnvironmentBaseInfo.
 
         主机集群id
 
@@ -159,7 +159,7 @@ class EnvironmentBaseInfo:
 
     @property
     def host_count(self):
-        """Gets the host_count of this EnvironmentBaseInfo.
+        r"""Gets the host_count of this EnvironmentBaseInfo.
 
         环境下主机数量
 
@@ -170,7 +170,7 @@ class EnvironmentBaseInfo:
 
     @host_count.setter
     def host_count(self, host_count):
-        """Sets the host_count of this EnvironmentBaseInfo.
+        r"""Sets the host_count of this EnvironmentBaseInfo.
 
         环境下主机数量
 

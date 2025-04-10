@@ -26,7 +26,7 @@ class AssociateVaultPolicyResponse(SdkResponse):
     }
 
     def __init__(self, associate_policy=None):
-        """AssociateVaultPolicyResponse
+        r"""AssociateVaultPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AssociateVaultPolicyResponse(SdkResponse):
 
     @property
     def associate_policy(self):
-        """Gets the associate_policy of this AssociateVaultPolicyResponse.
+        r"""Gets the associate_policy of this AssociateVaultPolicyResponse.
 
         :return: The associate_policy of this AssociateVaultPolicyResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultPolicyResp`
@@ -53,7 +53,7 @@ class AssociateVaultPolicyResponse(SdkResponse):
 
     @associate_policy.setter
     def associate_policy(self, associate_policy):
-        """Sets the associate_policy of this AssociateVaultPolicyResponse.
+        r"""Sets the associate_policy of this AssociateVaultPolicyResponse.
 
         :param associate_policy: The associate_policy of this AssociateVaultPolicyResponse.
         :type associate_policy: :class:`huaweicloudsdkcbr.v1.VaultPolicyResp`

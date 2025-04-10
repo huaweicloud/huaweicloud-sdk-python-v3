@@ -25,7 +25,7 @@ class CreatePubInfoRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePubInfoRequest
+        r"""CreatePubInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreatePubInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePubInfoRequest.
+        r"""Gets the body of this CreatePubInfoRequest.
 
         :return: The body of this CreatePubInfoRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreatePubInfoRequestBody`
@@ -52,7 +52,7 @@ class CreatePubInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePubInfoRequest.
+        r"""Sets the body of this CreatePubInfoRequest.
 
         :param body: The body of this CreatePubInfoRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.CreatePubInfoRequestBody`

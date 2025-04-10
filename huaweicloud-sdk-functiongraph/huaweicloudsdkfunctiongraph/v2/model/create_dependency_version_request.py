@@ -25,7 +25,7 @@ class CreateDependencyVersionRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDependencyVersionRequest
+        r"""CreateDependencyVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDependencyVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDependencyVersionRequest.
+        r"""Gets the body of this CreateDependencyVersionRequest.
 
         :return: The body of this CreateDependencyVersionRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyRequestBody`
@@ -52,7 +52,7 @@ class CreateDependencyVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDependencyVersionRequest.
+        r"""Sets the body of this CreateDependencyVersionRequest.
 
         :param body: The body of this CreateDependencyVersionRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateDependencyRequestBody`

@@ -63,7 +63,7 @@ class UpdateParametersReqValues:
     }
 
     def __init__(self, bind_table=None, character_set_server=None, collation_server=None, concurrent_execution_level=None, connection_idle_timeout=None, enable_table_recycle=None, insert_to_load_data=None, live_transaction_timeout_on_shutdown=None, long_query_time=None, max_allowed_packet=None, max_backend_connections=None, max_connections=None, min_backend_connections=None, not_from_pushdown=None, seconds_behind_master=None, sql_audit=None, sql_execute_timeout=None, support_ddl_binlog_hint=None, transaction_policy=None, ultimate_optimize=None):
-        """UpdateParametersReqValues
+        r"""UpdateParametersReqValues
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class UpdateParametersReqValues:
 
     @property
     def bind_table(self):
-        """Gets the bind_table of this UpdateParametersReqValues.
+        r"""Gets the bind_table of this UpdateParametersReqValues.
 
         用于描述多个拆分表的内在数据关联性，用于告知优化器在处理join时，把join下推到MySQL层执行。格式为:[{tb.col1,tb2.col2},{tb.col2,tb3.col1},...]。
 
@@ -187,7 +187,7 @@ class UpdateParametersReqValues:
 
     @bind_table.setter
     def bind_table(self, bind_table):
-        """Sets the bind_table of this UpdateParametersReqValues.
+        r"""Sets the bind_table of this UpdateParametersReqValues.
 
         用于描述多个拆分表的内在数据关联性，用于告知优化器在处理join时，把join下推到MySQL层执行。格式为:[{tb.col1,tb2.col2},{tb.col2,tb3.col1},...]。
 
@@ -198,7 +198,7 @@ class UpdateParametersReqValues:
 
     @property
     def character_set_server(self):
-        """Gets the character_set_server of this UpdateParametersReqValues.
+        r"""Gets the character_set_server of this UpdateParametersReqValues.
 
         DDM服务端字符集，如果需要存储emoji表情符号，请选择utf8mb4,并设置RDS字符集也为utf8mb4。修改DDM服务端字符集时，DDM服务端字符序必须同步修改为对应类型的值。
 
@@ -209,7 +209,7 @@ class UpdateParametersReqValues:
 
     @character_set_server.setter
     def character_set_server(self, character_set_server):
-        """Sets the character_set_server of this UpdateParametersReqValues.
+        r"""Sets the character_set_server of this UpdateParametersReqValues.
 
         DDM服务端字符集，如果需要存储emoji表情符号，请选择utf8mb4,并设置RDS字符集也为utf8mb4。修改DDM服务端字符集时，DDM服务端字符序必须同步修改为对应类型的值。
 
@@ -220,7 +220,7 @@ class UpdateParametersReqValues:
 
     @property
     def collation_server(self):
-        """Gets the collation_server of this UpdateParametersReqValues.
+        r"""Gets the collation_server of this UpdateParametersReqValues.
 
         DDM服务端字符序。修改DDM服务端字符序时，DDM服务端字符集必须同步修改为对应类型的值。
 
@@ -231,7 +231,7 @@ class UpdateParametersReqValues:
 
     @collation_server.setter
     def collation_server(self, collation_server):
-        """Sets the collation_server of this UpdateParametersReqValues.
+        r"""Sets the collation_server of this UpdateParametersReqValues.
 
         DDM服务端字符序。修改DDM服务端字符序时，DDM服务端字符集必须同步修改为对应类型的值。
 
@@ -242,7 +242,7 @@ class UpdateParametersReqValues:
 
     @property
     def concurrent_execution_level(self):
-        """Gets the concurrent_execution_level of this UpdateParametersReqValues.
+        r"""Gets the concurrent_execution_level of this UpdateParametersReqValues.
 
         逻辑表扫描时的分片并发执行级别: DATA_NODE: 分库间并行扫描，同一分库内各分片串行扫描;RDS_INSTANCE: RDS实例间并行扫描，同一RDS实例内各分片串行扫描;PHY_TABLE: 各物理分片全部并行扫描。
 
@@ -253,7 +253,7 @@ class UpdateParametersReqValues:
 
     @concurrent_execution_level.setter
     def concurrent_execution_level(self, concurrent_execution_level):
-        """Sets the concurrent_execution_level of this UpdateParametersReqValues.
+        r"""Sets the concurrent_execution_level of this UpdateParametersReqValues.
 
         逻辑表扫描时的分片并发执行级别: DATA_NODE: 分库间并行扫描，同一分库内各分片串行扫描;RDS_INSTANCE: RDS实例间并行扫描，同一RDS实例内各分片串行扫描;PHY_TABLE: 各物理分片全部并行扫描。
 
@@ -264,7 +264,7 @@ class UpdateParametersReqValues:
 
     @property
     def connection_idle_timeout(self):
-        """Gets the connection_idle_timeout of this UpdateParametersReqValues.
+        r"""Gets the connection_idle_timeout of this UpdateParametersReqValues.
 
         服务器关闭连接之前等待连接活动的秒数，以秒为单位，取值范围为60-28800，默认值28800，表示服务器关闭连接之前等待28800秒后，关闭连接。
 
@@ -275,7 +275,7 @@ class UpdateParametersReqValues:
 
     @connection_idle_timeout.setter
     def connection_idle_timeout(self, connection_idle_timeout):
-        """Sets the connection_idle_timeout of this UpdateParametersReqValues.
+        r"""Sets the connection_idle_timeout of this UpdateParametersReqValues.
 
         服务器关闭连接之前等待连接活动的秒数，以秒为单位，取值范围为60-28800，默认值28800，表示服务器关闭连接之前等待28800秒后，关闭连接。
 
@@ -286,7 +286,7 @@ class UpdateParametersReqValues:
 
     @property
     def enable_table_recycle(self):
-        """Gets the enable_table_recycle of this UpdateParametersReqValues.
+        r"""Gets the enable_table_recycle of this UpdateParametersReqValues.
 
         是否开启表回收站。
 
@@ -297,7 +297,7 @@ class UpdateParametersReqValues:
 
     @enable_table_recycle.setter
     def enable_table_recycle(self, enable_table_recycle):
-        """Sets the enable_table_recycle of this UpdateParametersReqValues.
+        r"""Sets the enable_table_recycle of this UpdateParametersReqValues.
 
         是否开启表回收站。
 
@@ -308,7 +308,7 @@ class UpdateParametersReqValues:
 
     @property
     def insert_to_load_data(self):
-        """Gets the insert_to_load_data of this UpdateParametersReqValues.
+        r"""Gets the insert_to_load_data of this UpdateParametersReqValues.
 
         insert 常量值使用load data执行。
 
@@ -319,7 +319,7 @@ class UpdateParametersReqValues:
 
     @insert_to_load_data.setter
     def insert_to_load_data(self, insert_to_load_data):
-        """Sets the insert_to_load_data of this UpdateParametersReqValues.
+        r"""Sets the insert_to_load_data of this UpdateParametersReqValues.
 
         insert 常量值使用load data执行。
 
@@ -330,7 +330,7 @@ class UpdateParametersReqValues:
 
     @property
     def live_transaction_timeout_on_shutdown(self):
-        """Gets the live_transaction_timeout_on_shutdown of this UpdateParametersReqValues.
+        r"""Gets the live_transaction_timeout_on_shutdown of this UpdateParametersReqValues.
 
         在途事务等待时间窗口，以秒为单位，取值范围为0-100，默认值为1，表示服务器关闭前端连接之前等待1秒后关闭连接。
 
@@ -341,7 +341,7 @@ class UpdateParametersReqValues:
 
     @live_transaction_timeout_on_shutdown.setter
     def live_transaction_timeout_on_shutdown(self, live_transaction_timeout_on_shutdown):
-        """Sets the live_transaction_timeout_on_shutdown of this UpdateParametersReqValues.
+        r"""Sets the live_transaction_timeout_on_shutdown of this UpdateParametersReqValues.
 
         在途事务等待时间窗口，以秒为单位，取值范围为0-100，默认值为1，表示服务器关闭前端连接之前等待1秒后关闭连接。
 
@@ -352,7 +352,7 @@ class UpdateParametersReqValues:
 
     @property
     def long_query_time(self):
-        """Gets the long_query_time of this UpdateParametersReqValues.
+        r"""Gets the long_query_time of this UpdateParametersReqValues.
 
         记录慢查询的最小秒数,以秒为单位，取值范围为0.01-10，默认值为1，表示如果sql执行大于等于1秒就定义为慢sql。
 
@@ -363,7 +363,7 @@ class UpdateParametersReqValues:
 
     @long_query_time.setter
     def long_query_time(self, long_query_time):
-        """Sets the long_query_time of this UpdateParametersReqValues.
+        r"""Sets the long_query_time of this UpdateParametersReqValues.
 
         记录慢查询的最小秒数,以秒为单位，取值范围为0.01-10，默认值为1，表示如果sql执行大于等于1秒就定义为慢sql。
 
@@ -374,7 +374,7 @@ class UpdateParametersReqValues:
 
     @property
     def max_allowed_packet(self):
-        """Gets the max_allowed_packet of this UpdateParametersReqValues.
+        r"""Gets the max_allowed_packet of this UpdateParametersReqValues.
 
         包或任何生成的中间字符串的最大值。包缓冲区初始化为net_buffer_length字节，但需要时可以增长到max_allowed_packet字节。该值默认很小，以捕获大的（可能是错误的）数据包。该值必须设置为1024的倍数。取值范围为1024~1073741824，默认值为16777216。
 
@@ -385,7 +385,7 @@ class UpdateParametersReqValues:
 
     @max_allowed_packet.setter
     def max_allowed_packet(self, max_allowed_packet):
-        """Sets the max_allowed_packet of this UpdateParametersReqValues.
+        r"""Sets the max_allowed_packet of this UpdateParametersReqValues.
 
         包或任何生成的中间字符串的最大值。包缓冲区初始化为net_buffer_length字节，但需要时可以增长到max_allowed_packet字节。该值默认很小，以捕获大的（可能是错误的）数据包。该值必须设置为1024的倍数。取值范围为1024~1073741824，默认值为16777216。
 
@@ -396,7 +396,7 @@ class UpdateParametersReqValues:
 
     @property
     def max_backend_connections(self):
-        """Gets the max_backend_connections of this UpdateParametersReqValues.
+        r"""Gets the max_backend_connections of this UpdateParametersReqValues.
 
         允许每个DDM节点同时连接RDS的最大客户端总数。0为默认值标识符,实际值等于(RDS的最大连接数-20)/DDM节点数。取值范围为0-10000000。
 
@@ -407,7 +407,7 @@ class UpdateParametersReqValues:
 
     @max_backend_connections.setter
     def max_backend_connections(self, max_backend_connections):
-        """Sets the max_backend_connections of this UpdateParametersReqValues.
+        r"""Sets the max_backend_connections of this UpdateParametersReqValues.
 
         允许每个DDM节点同时连接RDS的最大客户端总数。0为默认值标识符,实际值等于(RDS的最大连接数-20)/DDM节点数。取值范围为0-10000000。
 
@@ -418,7 +418,7 @@ class UpdateParametersReqValues:
 
     @property
     def max_connections(self):
-        """Gets the max_connections of this UpdateParametersReqValues.
+        r"""Gets the max_connections of this UpdateParametersReqValues.
 
         允许同时连接的客户端总数。与后端RDS规格及数量有关。以个数为单位，取值范围为10-40000，默认值为20000，表示允许同时连接的客户端总数不能超过40000。
 
@@ -429,7 +429,7 @@ class UpdateParametersReqValues:
 
     @max_connections.setter
     def max_connections(self, max_connections):
-        """Sets the max_connections of this UpdateParametersReqValues.
+        r"""Sets the max_connections of this UpdateParametersReqValues.
 
         允许同时连接的客户端总数。与后端RDS规格及数量有关。以个数为单位，取值范围为10-40000，默认值为20000，表示允许同时连接的客户端总数不能超过40000。
 
@@ -440,7 +440,7 @@ class UpdateParametersReqValues:
 
     @property
     def min_backend_connections(self):
-        """Gets the min_backend_connections of this UpdateParametersReqValues.
+        r"""Gets the min_backend_connections of this UpdateParametersReqValues.
 
         允许每个DDM节点同时连接RDS的最小客户端总数。默认值为10。取值范围为0-10000000。
 
@@ -451,7 +451,7 @@ class UpdateParametersReqValues:
 
     @min_backend_connections.setter
     def min_backend_connections(self, min_backend_connections):
-        """Sets the min_backend_connections of this UpdateParametersReqValues.
+        r"""Sets the min_backend_connections of this UpdateParametersReqValues.
 
         允许每个DDM节点同时连接RDS的最小客户端总数。默认值为10。取值范围为0-10000000。
 
@@ -462,7 +462,7 @@ class UpdateParametersReqValues:
 
     @property
     def not_from_pushdown(self):
-        """Gets the not_from_pushdown of this UpdateParametersReqValues.
+        r"""Gets the not_from_pushdown of this UpdateParametersReqValues.
 
         是否强制下推查询语句中不含from的语句。
 
@@ -473,7 +473,7 @@ class UpdateParametersReqValues:
 
     @not_from_pushdown.setter
     def not_from_pushdown(self, not_from_pushdown):
-        """Sets the not_from_pushdown of this UpdateParametersReqValues.
+        r"""Sets the not_from_pushdown of this UpdateParametersReqValues.
 
         是否强制下推查询语句中不含from的语句。
 
@@ -484,7 +484,7 @@ class UpdateParametersReqValues:
 
     @property
     def seconds_behind_master(self):
-        """Gets the seconds_behind_master of this UpdateParametersReqValues.
+        r"""Gets the seconds_behind_master of this UpdateParametersReqValues.
 
         主从rds节点延迟时间阈值，以秒为单位，取值范围为0-7200，默认值为30，表示主rds与从rds之间的数据同步时间值不能超过30秒，如果超过30s，读数据指令就不走当前读节点。
 
@@ -495,7 +495,7 @@ class UpdateParametersReqValues:
 
     @seconds_behind_master.setter
     def seconds_behind_master(self, seconds_behind_master):
-        """Sets the seconds_behind_master of this UpdateParametersReqValues.
+        r"""Sets the seconds_behind_master of this UpdateParametersReqValues.
 
         主从rds节点延迟时间阈值，以秒为单位，取值范围为0-7200，默认值为30，表示主rds与从rds之间的数据同步时间值不能超过30秒，如果超过30s，读数据指令就不走当前读节点。
 
@@ -506,7 +506,7 @@ class UpdateParametersReqValues:
 
     @property
     def sql_audit(self):
-        """Gets the sql_audit of this UpdateParametersReqValues.
+        r"""Gets the sql_audit of this UpdateParametersReqValues.
 
         开启或关闭SQL审计。
 
@@ -517,7 +517,7 @@ class UpdateParametersReqValues:
 
     @sql_audit.setter
     def sql_audit(self, sql_audit):
-        """Sets the sql_audit of this UpdateParametersReqValues.
+        r"""Sets the sql_audit of this UpdateParametersReqValues.
 
         开启或关闭SQL审计。
 
@@ -528,7 +528,7 @@ class UpdateParametersReqValues:
 
     @property
     def sql_execute_timeout(self):
-        """Gets the sql_execute_timeout of this UpdateParametersReqValues.
+        r"""Gets the sql_execute_timeout of this UpdateParametersReqValues.
 
         SQL执行超时秒数，以秒为单位，取值范围为100-28800，默认值28800，表示sql执行大于等于28800秒超时。
 
@@ -539,7 +539,7 @@ class UpdateParametersReqValues:
 
     @sql_execute_timeout.setter
     def sql_execute_timeout(self, sql_execute_timeout):
-        """Sets the sql_execute_timeout of this UpdateParametersReqValues.
+        r"""Sets the sql_execute_timeout of this UpdateParametersReqValues.
 
         SQL执行超时秒数，以秒为单位，取值范围为100-28800，默认值28800，表示sql执行大于等于28800秒超时。
 
@@ -550,7 +550,7 @@ class UpdateParametersReqValues:
 
     @property
     def support_ddl_binlog_hint(self):
-        """Gets the support_ddl_binlog_hint of this UpdateParametersReqValues.
+        r"""Gets the support_ddl_binlog_hint of this UpdateParametersReqValues.
 
         DDL语句添加binlog hint。
 
@@ -561,7 +561,7 @@ class UpdateParametersReqValues:
 
     @support_ddl_binlog_hint.setter
     def support_ddl_binlog_hint(self, support_ddl_binlog_hint):
-        """Sets the support_ddl_binlog_hint of this UpdateParametersReqValues.
+        r"""Sets the support_ddl_binlog_hint of this UpdateParametersReqValues.
 
         DDL语句添加binlog hint。
 
@@ -572,7 +572,7 @@ class UpdateParametersReqValues:
 
     @property
     def transaction_policy(self):
-        """Gets the transaction_policy of this UpdateParametersReqValues.
+        r"""Gets the transaction_policy of this UpdateParametersReqValues.
 
         XA：XA 事务，保证原子性，保证可见性；FREE：允许多写，不保证原子性，无性能损耗；NO_DTX：单分片事务。
 
@@ -583,7 +583,7 @@ class UpdateParametersReqValues:
 
     @transaction_policy.setter
     def transaction_policy(self, transaction_policy):
-        """Sets the transaction_policy of this UpdateParametersReqValues.
+        r"""Sets the transaction_policy of this UpdateParametersReqValues.
 
         XA：XA 事务，保证原子性，保证可见性；FREE：允许多写，不保证原子性，无性能损耗；NO_DTX：单分片事务。
 
@@ -594,7 +594,7 @@ class UpdateParametersReqValues:
 
     @property
     def ultimate_optimize(self):
-        """Gets the ultimate_optimize of this UpdateParametersReqValues.
+        r"""Gets the ultimate_optimize of this UpdateParametersReqValues.
 
         开启或关闭优化器中的极致下推优化功能。
 
@@ -605,7 +605,7 @@ class UpdateParametersReqValues:
 
     @ultimate_optimize.setter
     def ultimate_optimize(self, ultimate_optimize):
-        """Sets the ultimate_optimize of this UpdateParametersReqValues.
+        r"""Sets the ultimate_optimize of this UpdateParametersReqValues.
 
         开启或关闭优化器中的极致下推优化功能。
 

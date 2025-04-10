@@ -25,7 +25,7 @@ class DeleteNetworkInstanceRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteNetworkInstanceRequest
+        r"""DeleteNetworkInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteNetworkInstanceRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteNetworkInstanceRequest.
+        r"""Gets the id of this DeleteNetworkInstanceRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class DeleteNetworkInstanceRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteNetworkInstanceRequest.
+        r"""Sets the id of this DeleteNetworkInstanceRequest.
 
         实例ID。
 

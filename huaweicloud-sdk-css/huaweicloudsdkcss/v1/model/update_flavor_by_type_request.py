@@ -29,7 +29,7 @@ class UpdateFlavorByTypeRequest:
     }
 
     def __init__(self, cluster_id=None, types=None, body=None):
-        """UpdateFlavorByTypeRequest
+        r"""UpdateFlavorByTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateFlavorByTypeRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateFlavorByTypeRequest.
+        r"""Gets the cluster_id of this UpdateFlavorByTypeRequest.
 
         指定待更改规格的集群ID。
 
@@ -66,7 +66,7 @@ class UpdateFlavorByTypeRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateFlavorByTypeRequest.
+        r"""Sets the cluster_id of this UpdateFlavorByTypeRequest.
 
         指定待更改规格的集群ID。
 
@@ -77,7 +77,7 @@ class UpdateFlavorByTypeRequest:
 
     @property
     def types(self):
-        """Gets the types of this UpdateFlavorByTypeRequest.
+        r"""Gets the types of this UpdateFlavorByTypeRequest.
 
         指定待更改的集群节点类型。 - ess：数据节点。 - ess-cold：冷数据节点。 - ess-client：Client节点。 - ess-master：Master节点。
 
@@ -88,7 +88,7 @@ class UpdateFlavorByTypeRequest:
 
     @types.setter
     def types(self, types):
-        """Sets the types of this UpdateFlavorByTypeRequest.
+        r"""Sets the types of this UpdateFlavorByTypeRequest.
 
         指定待更改的集群节点类型。 - ess：数据节点。 - ess-cold：冷数据节点。 - ess-client：Client节点。 - ess-master：Master节点。
 
@@ -99,7 +99,7 @@ class UpdateFlavorByTypeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFlavorByTypeRequest.
+        r"""Gets the body of this UpdateFlavorByTypeRequest.
 
         :return: The body of this UpdateFlavorByTypeRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateFlavorByTypeReq`
@@ -108,7 +108,7 @@ class UpdateFlavorByTypeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFlavorByTypeRequest.
+        r"""Sets the body of this UpdateFlavorByTypeRequest.
 
         :param body: The body of this UpdateFlavorByTypeRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UpdateFlavorByTypeReq`

@@ -34,7 +34,7 @@ class IdmeClient(Client):
         return client_builder
 
     def create_xdm_application(self, request):
-        """创建应用
+        r"""创建应用
 
         本接口用于创建工业数字模型驱动引擎（Industrial Digital Model Engine，简称iDME）的应用。
         
@@ -99,7 +99,7 @@ class IdmeClient(Client):
         return http_info
 
     def delete_cloud_service(self, request):
-        """删除iDME实例
+        r"""删除iDME实例
 
         本接口用于删除工业数字模型驱动引擎（Industrial Digital Model Engine，简称iDME）实例。
         
@@ -166,7 +166,7 @@ class IdmeClient(Client):
         return http_info
 
     def delete_xdm_application(self, request):
-        """删除应用
+        r"""删除应用
 
         本接口用于删除工业数字模型驱动引擎（Industrial Digital Model Engine，简称iDME）的应用。
         
@@ -231,7 +231,7 @@ class IdmeClient(Client):
         return http_info
 
     def deploy_application(self, request):
-        """部署应用
+        r"""部署应用
 
         本接口用于部署工业数字模型驱动引擎（Industrial Digital Model Engine，简称iDME）的应用。
         
@@ -300,7 +300,7 @@ class IdmeClient(Client):
         return http_info
 
     def list_apps(self, request):
-        """获取租户下的应用清单
+        r"""获取租户下的应用清单
 
         本接口用于获取租户在工业数字模型驱动引擎（Industrial Digital Model Engine，简称iDME）的应用清单。
         
@@ -367,7 +367,7 @@ class IdmeClient(Client):
         return http_info
 
     def list_envs(self, request):
-        """获取运行服务清单
+        r"""获取运行服务清单
 
         本接口用于获取租户在工业数字模型驱动引擎（Industrial Digital Model Engine，简称iDME）的运行服务清单。
         
@@ -436,7 +436,7 @@ class IdmeClient(Client):
         return http_info
 
     def modify_application(self, request):
-        """编辑应用
+        r"""编辑应用
 
         本接口用于修改工业数字模型驱动引擎（Industrial Digital Model Engine，简称iDME）的应用。
         
@@ -503,7 +503,7 @@ class IdmeClient(Client):
         return http_info
 
     def subscribe_cloud_service(self, request):
-        """开通iDME实例
+        r"""开通iDME实例
 
         本接口用于开通工业数字模型驱动引擎（Industrial Digital Model Engine，简称iDME）实例。
         
@@ -568,7 +568,7 @@ class IdmeClient(Client):
         return http_info
 
     def uninstall(self, request):
-        """卸载应用
+        r"""卸载应用
 
         本接口用于卸载指定运行服务下的工业数字模型驱动引擎（Industrial Digital Model Engine，简称iDME）应用。
         

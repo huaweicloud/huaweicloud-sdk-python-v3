@@ -26,7 +26,7 @@ class UpgradeGraph2Response(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpgradeGraph2Response
+        r"""UpgradeGraph2Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpgradeGraph2Response(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpgradeGraph2Response.
+        r"""Gets the job_id of this UpgradeGraph2Response.
 
         执行该异步任务的jobId。
 
@@ -55,7 +55,7 @@ class UpgradeGraph2Response(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpgradeGraph2Response.
+        r"""Sets the job_id of this UpgradeGraph2Response.
 
         执行该异步任务的jobId。
 

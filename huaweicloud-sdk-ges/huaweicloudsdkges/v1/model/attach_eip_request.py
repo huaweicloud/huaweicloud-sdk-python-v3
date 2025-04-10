@@ -29,7 +29,7 @@ class AttachEipRequest:
     }
 
     def __init__(self, graph_id=None, action_id=None, body=None):
-        """AttachEipRequest
+        r"""AttachEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AttachEipRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this AttachEipRequest.
+        r"""Gets the graph_id of this AttachEipRequest.
 
         图ID。
 
@@ -66,7 +66,7 @@ class AttachEipRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this AttachEipRequest.
+        r"""Sets the graph_id of this AttachEipRequest.
 
         图ID。
 
@@ -77,7 +77,7 @@ class AttachEipRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this AttachEipRequest.
+        r"""Gets the action_id of this AttachEipRequest.
 
         图actionId
 
@@ -88,7 +88,7 @@ class AttachEipRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this AttachEipRequest.
+        r"""Sets the action_id of this AttachEipRequest.
 
         图actionId
 
@@ -99,7 +99,7 @@ class AttachEipRequest:
 
     @property
     def body(self):
-        """Gets the body of this AttachEipRequest.
+        r"""Gets the body of this AttachEipRequest.
 
         :return: The body of this AttachEipRequest.
         :rtype: :class:`huaweicloudsdkges.v1.BindEipReq`
@@ -108,7 +108,7 @@ class AttachEipRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachEipRequest.
+        r"""Sets the body of this AttachEipRequest.
 
         :param body: The body of this AttachEipRequest.
         :type body: :class:`huaweicloudsdkges.v1.BindEipReq`

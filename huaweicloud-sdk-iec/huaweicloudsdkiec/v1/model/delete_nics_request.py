@@ -27,7 +27,7 @@ class DeleteNicsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """DeleteNicsRequest
+        r"""DeleteNicsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteNicsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteNicsRequest.
+        r"""Gets the instance_id of this DeleteNicsRequest.
 
         边缘实例ID。
 
@@ -60,7 +60,7 @@ class DeleteNicsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteNicsRequest.
+        r"""Sets the instance_id of this DeleteNicsRequest.
 
         边缘实例ID。
 
@@ -71,7 +71,7 @@ class DeleteNicsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteNicsRequest.
+        r"""Gets the body of this DeleteNicsRequest.
 
         :return: The body of this DeleteNicsRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteNicsRequestBody`
@@ -80,7 +80,7 @@ class DeleteNicsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteNicsRequest.
+        r"""Sets the body of this DeleteNicsRequest.
 
         :param body: The body of this DeleteNicsRequest.
         :type body: :class:`huaweicloudsdkiec.v1.DeleteNicsRequestBody`

@@ -39,7 +39,7 @@ class ShowCdnInfoReq:
     }
 
     def __init__(self, ak=None, sk=None, cloud_type=None, region=None, app_id=None, bucket=None, prefix=None, source_cdn=None):
-        """ShowCdnInfoReq
+        r"""ShowCdnInfoReq
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowCdnInfoReq:
 
     @property
     def ak(self):
-        """Gets the ak of this ShowCdnInfoReq.
+        r"""Gets the ak of this ShowCdnInfoReq.
 
         源端桶的AK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -97,7 +97,7 @@ class ShowCdnInfoReq:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this ShowCdnInfoReq.
+        r"""Sets the ak of this ShowCdnInfoReq.
 
         源端桶的AK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -108,7 +108,7 @@ class ShowCdnInfoReq:
 
     @property
     def sk(self):
-        """Gets the sk of this ShowCdnInfoReq.
+        r"""Gets the sk of this ShowCdnInfoReq.
 
         源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -119,7 +119,7 @@ class ShowCdnInfoReq:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this ShowCdnInfoReq.
+        r"""Sets the sk of this ShowCdnInfoReq.
 
         源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -130,7 +130,7 @@ class ShowCdnInfoReq:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this ShowCdnInfoReq.
+        r"""Gets the cloud_type of this ShowCdnInfoReq.
 
         云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 URLSource：URL HEC：HEC
 
@@ -141,7 +141,7 @@ class ShowCdnInfoReq:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this ShowCdnInfoReq.
+        r"""Sets the cloud_type of this ShowCdnInfoReq.
 
         云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 URLSource：URL HEC：HEC
 
@@ -152,7 +152,7 @@ class ShowCdnInfoReq:
 
     @property
     def region(self):
-        """Gets the region of this ShowCdnInfoReq.
+        r"""Gets the region of this ShowCdnInfoReq.
 
         区域
 
@@ -163,7 +163,7 @@ class ShowCdnInfoReq:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowCdnInfoReq.
+        r"""Sets the region of this ShowCdnInfoReq.
 
         区域
 
@@ -174,7 +174,7 @@ class ShowCdnInfoReq:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowCdnInfoReq.
+        r"""Gets the app_id of this ShowCdnInfoReq.
 
         当源端为腾讯云时，会返回此参数。
 
@@ -185,7 +185,7 @@ class ShowCdnInfoReq:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowCdnInfoReq.
+        r"""Sets the app_id of this ShowCdnInfoReq.
 
         当源端为腾讯云时，会返回此参数。
 
@@ -196,7 +196,7 @@ class ShowCdnInfoReq:
 
     @property
     def bucket(self):
-        """Gets the bucket of this ShowCdnInfoReq.
+        r"""Gets the bucket of this ShowCdnInfoReq.
 
         桶名
 
@@ -207,7 +207,7 @@ class ShowCdnInfoReq:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ShowCdnInfoReq.
+        r"""Sets the bucket of this ShowCdnInfoReq.
 
         桶名
 
@@ -218,7 +218,7 @@ class ShowCdnInfoReq:
 
     @property
     def prefix(self):
-        """Gets the prefix of this ShowCdnInfoReq.
+        r"""Gets the prefix of this ShowCdnInfoReq.
 
         :return: The prefix of this ShowCdnInfoReq.
         :rtype: :class:`huaweicloudsdkoms.v2.PrefixKeyInfo`
@@ -227,7 +227,7 @@ class ShowCdnInfoReq:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this ShowCdnInfoReq.
+        r"""Sets the prefix of this ShowCdnInfoReq.
 
         :param prefix: The prefix of this ShowCdnInfoReq.
         :type prefix: :class:`huaweicloudsdkoms.v2.PrefixKeyInfo`
@@ -236,7 +236,7 @@ class ShowCdnInfoReq:
 
     @property
     def source_cdn(self):
-        """Gets the source_cdn of this ShowCdnInfoReq.
+        r"""Gets the source_cdn of this ShowCdnInfoReq.
 
         :return: The source_cdn of this ShowCdnInfoReq.
         :rtype: :class:`huaweicloudsdkoms.v2.SourceCdnReq`
@@ -245,7 +245,7 @@ class ShowCdnInfoReq:
 
     @source_cdn.setter
     def source_cdn(self, source_cdn):
-        """Sets the source_cdn of this ShowCdnInfoReq.
+        r"""Sets the source_cdn of this ShowCdnInfoReq.
 
         :param source_cdn: The source_cdn of this ShowCdnInfoReq.
         :type source_cdn: :class:`huaweicloudsdkoms.v2.SourceCdnReq`

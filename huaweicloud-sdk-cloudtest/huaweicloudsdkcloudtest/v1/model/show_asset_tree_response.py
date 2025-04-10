@@ -30,7 +30,7 @@ class ShowAssetTreeResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowAssetTreeResponse
+        r"""ShowAssetTreeResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowAssetTreeResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowAssetTreeResponse.
+        r"""Gets the code of this ShowAssetTreeResponse.
 
         :return: The code of this ShowAssetTreeResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowAssetTreeResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowAssetTreeResponse.
+        r"""Sets the code of this ShowAssetTreeResponse.
 
         :param code: The code of this ShowAssetTreeResponse.
         :type code: str
@@ -76,7 +76,7 @@ class ShowAssetTreeResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowAssetTreeResponse.
+        r"""Gets the data of this ShowAssetTreeResponse.
 
         :return: The data of this ShowAssetTreeResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class ShowAssetTreeResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowAssetTreeResponse.
+        r"""Sets the data of this ShowAssetTreeResponse.
 
         :param data: The data of this ShowAssetTreeResponse.
         :type data: object
@@ -94,7 +94,7 @@ class ShowAssetTreeResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowAssetTreeResponse.
+        r"""Gets the message of this ShowAssetTreeResponse.
 
         :return: The message of this ShowAssetTreeResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ShowAssetTreeResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowAssetTreeResponse.
+        r"""Sets the message of this ShowAssetTreeResponse.
 
         :param message: The message of this ShowAssetTreeResponse.
         :type message: str

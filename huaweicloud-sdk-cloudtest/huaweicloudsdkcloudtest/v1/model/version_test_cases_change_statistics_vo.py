@@ -33,7 +33,7 @@ class VersionTestCasesChangeStatisticsVo:
     }
 
     def __init__(self, add_testcases_number=None, reuse_testcases_number=None, modifying_testcases_number=None, update_date_timestamp=None, update_date=None):
-        """VersionTestCasesChangeStatisticsVo
+        r"""VersionTestCasesChangeStatisticsVo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class VersionTestCasesChangeStatisticsVo:
 
     @property
     def add_testcases_number(self):
-        """Gets the add_testcases_number of this VersionTestCasesChangeStatisticsVo.
+        r"""Gets the add_testcases_number of this VersionTestCasesChangeStatisticsVo.
 
         新增用例数
 
@@ -82,7 +82,7 @@ class VersionTestCasesChangeStatisticsVo:
 
     @add_testcases_number.setter
     def add_testcases_number(self, add_testcases_number):
-        """Sets the add_testcases_number of this VersionTestCasesChangeStatisticsVo.
+        r"""Sets the add_testcases_number of this VersionTestCasesChangeStatisticsVo.
 
         新增用例数
 
@@ -93,7 +93,7 @@ class VersionTestCasesChangeStatisticsVo:
 
     @property
     def reuse_testcases_number(self):
-        """Gets the reuse_testcases_number of this VersionTestCasesChangeStatisticsVo.
+        r"""Gets the reuse_testcases_number of this VersionTestCasesChangeStatisticsVo.
 
         复用用例数
 
@@ -104,7 +104,7 @@ class VersionTestCasesChangeStatisticsVo:
 
     @reuse_testcases_number.setter
     def reuse_testcases_number(self, reuse_testcases_number):
-        """Sets the reuse_testcases_number of this VersionTestCasesChangeStatisticsVo.
+        r"""Sets the reuse_testcases_number of this VersionTestCasesChangeStatisticsVo.
 
         复用用例数
 
@@ -115,7 +115,7 @@ class VersionTestCasesChangeStatisticsVo:
 
     @property
     def modifying_testcases_number(self):
-        """Gets the modifying_testcases_number of this VersionTestCasesChangeStatisticsVo.
+        r"""Gets the modifying_testcases_number of this VersionTestCasesChangeStatisticsVo.
 
         修改用例数
 
@@ -126,7 +126,7 @@ class VersionTestCasesChangeStatisticsVo:
 
     @modifying_testcases_number.setter
     def modifying_testcases_number(self, modifying_testcases_number):
-        """Sets the modifying_testcases_number of this VersionTestCasesChangeStatisticsVo.
+        r"""Sets the modifying_testcases_number of this VersionTestCasesChangeStatisticsVo.
 
         修改用例数
 
@@ -137,7 +137,7 @@ class VersionTestCasesChangeStatisticsVo:
 
     @property
     def update_date_timestamp(self):
-        """Gets the update_date_timestamp of this VersionTestCasesChangeStatisticsVo.
+        r"""Gets the update_date_timestamp of this VersionTestCasesChangeStatisticsVo.
 
         修改时间时间戳
 
@@ -148,7 +148,7 @@ class VersionTestCasesChangeStatisticsVo:
 
     @update_date_timestamp.setter
     def update_date_timestamp(self, update_date_timestamp):
-        """Sets the update_date_timestamp of this VersionTestCasesChangeStatisticsVo.
+        r"""Sets the update_date_timestamp of this VersionTestCasesChangeStatisticsVo.
 
         修改时间时间戳
 
@@ -159,7 +159,7 @@ class VersionTestCasesChangeStatisticsVo:
 
     @property
     def update_date(self):
-        """Gets the update_date of this VersionTestCasesChangeStatisticsVo.
+        r"""Gets the update_date of this VersionTestCasesChangeStatisticsVo.
 
         修改时间
 
@@ -170,7 +170,7 @@ class VersionTestCasesChangeStatisticsVo:
 
     @update_date.setter
     def update_date(self, update_date):
-        """Sets the update_date of this VersionTestCasesChangeStatisticsVo.
+        r"""Sets the update_date of this VersionTestCasesChangeStatisticsVo.
 
         修改时间
 

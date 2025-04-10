@@ -29,7 +29,7 @@ class CreatePostgresqlDatabaseSchemaRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CreatePostgresqlDatabaseSchemaRequest
+        r"""CreatePostgresqlDatabaseSchemaRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreatePostgresqlDatabaseSchemaRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreatePostgresqlDatabaseSchemaRequest.
+        r"""Gets the x_language of this CreatePostgresqlDatabaseSchemaRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class CreatePostgresqlDatabaseSchemaRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreatePostgresqlDatabaseSchemaRequest.
+        r"""Sets the x_language of this CreatePostgresqlDatabaseSchemaRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class CreatePostgresqlDatabaseSchemaRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreatePostgresqlDatabaseSchemaRequest.
+        r"""Gets the instance_id of this CreatePostgresqlDatabaseSchemaRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class CreatePostgresqlDatabaseSchemaRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreatePostgresqlDatabaseSchemaRequest.
+        r"""Sets the instance_id of this CreatePostgresqlDatabaseSchemaRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class CreatePostgresqlDatabaseSchemaRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePostgresqlDatabaseSchemaRequest.
+        r"""Gets the body of this CreatePostgresqlDatabaseSchemaRequest.
 
         :return: The body of this CreatePostgresqlDatabaseSchemaRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.PostgresqlDatabaseSchemaReq`
@@ -109,7 +109,7 @@ class CreatePostgresqlDatabaseSchemaRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePostgresqlDatabaseSchemaRequest.
+        r"""Sets the body of this CreatePostgresqlDatabaseSchemaRequest.
 
         :param body: The body of this CreatePostgresqlDatabaseSchemaRequest.
         :type body: :class:`huaweicloudsdkrds.v3.PostgresqlDatabaseSchemaReq`

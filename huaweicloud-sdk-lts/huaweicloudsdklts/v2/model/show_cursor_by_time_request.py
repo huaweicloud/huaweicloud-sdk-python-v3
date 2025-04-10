@@ -31,7 +31,7 @@ class ShowCursorByTimeRequest:
     }
 
     def __init__(self, group_id=None, stream_id=None, shard_id=None, _from=None):
-        """ShowCursorByTimeRequest
+        r"""ShowCursorByTimeRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowCursorByTimeRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowCursorByTimeRequest.
+        r"""Gets the group_id of this ShowCursorByTimeRequest.
 
         日志组ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID。 缺省值：None 最小长度：36 最大长度：36
 
@@ -71,7 +71,7 @@ class ShowCursorByTimeRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowCursorByTimeRequest.
+        r"""Sets the group_id of this ShowCursorByTimeRequest.
 
         日志组ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID。 缺省值：None 最小长度：36 最大长度：36
 
@@ -82,7 +82,7 @@ class ShowCursorByTimeRequest:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this ShowCursorByTimeRequest.
+        r"""Gets the stream_id of this ShowCursorByTimeRequest.
 
         日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID 缺省值：None 最小长度：36 最大长度：36
 
@@ -93,7 +93,7 @@ class ShowCursorByTimeRequest:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this ShowCursorByTimeRequest.
+        r"""Sets the stream_id of this ShowCursorByTimeRequest.
 
         日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID 缺省值：None 最小长度：36 最大长度：36
 
@@ -104,7 +104,7 @@ class ShowCursorByTimeRequest:
 
     @property
     def shard_id(self):
-        """Gets the shard_id of this ShowCursorByTimeRequest.
+        r"""Gets the shard_id of this ShowCursorByTimeRequest.
 
         Shrad ID
 
@@ -115,7 +115,7 @@ class ShowCursorByTimeRequest:
 
     @shard_id.setter
     def shard_id(self, shard_id):
-        """Sets the shard_id of this ShowCursorByTimeRequest.
+        r"""Sets the shard_id of this ShowCursorByTimeRequest.
 
         Shrad ID
 
@@ -126,7 +126,7 @@ class ShowCursorByTimeRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ShowCursorByTimeRequest.
+        r"""Gets the _from of this ShowCursorByTimeRequest.
 
         起始时间戳，时间单位为纳秒
 
@@ -137,7 +137,7 @@ class ShowCursorByTimeRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ShowCursorByTimeRequest.
+        r"""Sets the _from of this ShowCursorByTimeRequest.
 
         起始时间戳，时间单位为纳秒
 

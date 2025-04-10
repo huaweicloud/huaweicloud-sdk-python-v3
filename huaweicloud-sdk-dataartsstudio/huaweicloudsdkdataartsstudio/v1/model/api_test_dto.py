@@ -27,7 +27,7 @@ class ApiTestDTO:
     }
 
     def __init__(self, body=None, paras=None):
-        """ApiTestDTO
+        r"""ApiTestDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApiTestDTO:
 
     @property
     def body(self):
-        """Gets the body of this ApiTestDTO.
+        r"""Gets the body of this ApiTestDTO.
 
         请求体
 
@@ -61,7 +61,7 @@ class ApiTestDTO:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ApiTestDTO.
+        r"""Sets the body of this ApiTestDTO.
 
         请求体
 
@@ -72,7 +72,7 @@ class ApiTestDTO:
 
     @property
     def paras(self):
-        """Gets the paras of this ApiTestDTO.
+        r"""Gets the paras of this ApiTestDTO.
 
         :return: The paras of this ApiTestDTO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApiTestParas`
@@ -81,7 +81,7 @@ class ApiTestDTO:
 
     @paras.setter
     def paras(self, paras):
-        """Sets the paras of this ApiTestDTO.
+        r"""Sets the paras of this ApiTestDTO.
 
         :param paras: The paras of this ApiTestDTO.
         :type paras: :class:`huaweicloudsdkdataartsstudio.v1.ApiTestParas`

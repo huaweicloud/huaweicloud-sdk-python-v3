@@ -25,7 +25,7 @@ class CreateDataConnectorRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDataConnectorRequest
+        r"""CreateDataConnectorRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDataConnectorRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDataConnectorRequest.
+        r"""Gets the body of this CreateDataConnectorRequest.
 
         :return: The body of this CreateDataConnectorRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.DataConnectorReq`
@@ -52,7 +52,7 @@ class CreateDataConnectorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDataConnectorRequest.
+        r"""Sets the body of this CreateDataConnectorRequest.
 
         :param body: The body of this CreateDataConnectorRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.DataConnectorReq`

@@ -65,7 +65,7 @@ class SqlJob:
     }
 
     def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, with_column_header=None, detail=None, statement=None, tags=None, message=None, end_time=None, cpu_cost=None, output_byte=None):
-        """SqlJob
+        r"""SqlJob
 
         The model defined in huaweicloud sdk
 
@@ -173,7 +173,7 @@ class SqlJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this SqlJob.
+        r"""Gets the job_id of this SqlJob.
 
         作业ID。
 
@@ -184,7 +184,7 @@ class SqlJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SqlJob.
+        r"""Sets the job_id of this SqlJob.
 
         作业ID。
 
@@ -195,7 +195,7 @@ class SqlJob:
 
     @property
     def job_type(self):
-        """Gets the job_type of this SqlJob.
+        r"""Gets the job_type of this SqlJob.
 
         作业类型。
 
@@ -206,7 +206,7 @@ class SqlJob:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this SqlJob.
+        r"""Sets the job_type of this SqlJob.
 
         作业类型。
 
@@ -217,7 +217,7 @@ class SqlJob:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this SqlJob.
+        r"""Gets the queue_name of this SqlJob.
 
         作业提交的队列。
 
@@ -228,7 +228,7 @@ class SqlJob:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this SqlJob.
+        r"""Sets the queue_name of this SqlJob.
 
         作业提交的队列。
 
@@ -239,7 +239,7 @@ class SqlJob:
 
     @property
     def owner(self):
-        """Gets the owner of this SqlJob.
+        r"""Gets the owner of this SqlJob.
 
         提交作业的用户。
 
@@ -250,7 +250,7 @@ class SqlJob:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this SqlJob.
+        r"""Sets the owner of this SqlJob.
 
         提交作业的用户。
 
@@ -261,7 +261,7 @@ class SqlJob:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SqlJob.
+        r"""Gets the start_time of this SqlJob.
 
         作业开始的时间。是单位为“毫秒”的时间戳。
 
@@ -272,7 +272,7 @@ class SqlJob:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SqlJob.
+        r"""Sets the start_time of this SqlJob.
 
         作业开始的时间。是单位为“毫秒”的时间戳。
 
@@ -283,7 +283,7 @@ class SqlJob:
 
     @property
     def duration(self):
-        """Gets the duration of this SqlJob.
+        r"""Gets the duration of this SqlJob.
 
         作业运行时长，单位毫秒。
 
@@ -294,7 +294,7 @@ class SqlJob:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this SqlJob.
+        r"""Sets the duration of this SqlJob.
 
         作业运行时长，单位毫秒。
 
@@ -305,7 +305,7 @@ class SqlJob:
 
     @property
     def status(self):
-        """Gets the status of this SqlJob.
+        r"""Gets the status of this SqlJob.
 
         此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
 
@@ -316,7 +316,7 @@ class SqlJob:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SqlJob.
+        r"""Sets the status of this SqlJob.
 
         此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
 
@@ -327,7 +327,7 @@ class SqlJob:
 
     @property
     def input_row_count(self):
-        """Gets the input_row_count of this SqlJob.
+        r"""Gets the input_row_count of this SqlJob.
 
         Insert作业执行过程中扫描的记录条数。
 
@@ -338,7 +338,7 @@ class SqlJob:
 
     @input_row_count.setter
     def input_row_count(self, input_row_count):
-        """Sets the input_row_count of this SqlJob.
+        r"""Sets the input_row_count of this SqlJob.
 
         Insert作业执行过程中扫描的记录条数。
 
@@ -349,7 +349,7 @@ class SqlJob:
 
     @property
     def bad_row_count(self):
-        """Gets the bad_row_count of this SqlJob.
+        r"""Gets the bad_row_count of this SqlJob.
 
         Insert作业执行过程中扫描到的错误记录数。
 
@@ -360,7 +360,7 @@ class SqlJob:
 
     @bad_row_count.setter
     def bad_row_count(self, bad_row_count):
-        """Sets the bad_row_count of this SqlJob.
+        r"""Sets the bad_row_count of this SqlJob.
 
         Insert作业执行过程中扫描到的错误记录数。
 
@@ -371,7 +371,7 @@ class SqlJob:
 
     @property
     def input_size(self):
-        """Gets the input_size of this SqlJob.
+        r"""Gets the input_size of this SqlJob.
 
         作业执行过程中扫描文件的大小。
 
@@ -382,7 +382,7 @@ class SqlJob:
 
     @input_size.setter
     def input_size(self, input_size):
-        """Sets the input_size of this SqlJob.
+        r"""Sets the input_size of this SqlJob.
 
         作业执行过程中扫描文件的大小。
 
@@ -393,7 +393,7 @@ class SqlJob:
 
     @property
     def result_count(self):
-        """Gets the result_count of this SqlJob.
+        r"""Gets the result_count of this SqlJob.
 
         当前作业返回的结果总条数或insert作业插入的总条数。
 
@@ -404,7 +404,7 @@ class SqlJob:
 
     @result_count.setter
     def result_count(self, result_count):
-        """Sets the result_count of this SqlJob.
+        r"""Sets the result_count of this SqlJob.
 
         当前作业返回的结果总条数或insert作业插入的总条数。
 
@@ -415,7 +415,7 @@ class SqlJob:
 
     @property
     def database_name(self):
-        """Gets the database_name of this SqlJob.
+        r"""Gets the database_name of this SqlJob.
 
         记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性。
 
@@ -426,7 +426,7 @@ class SqlJob:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this SqlJob.
+        r"""Sets the database_name of this SqlJob.
 
         记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性。
 
@@ -437,7 +437,7 @@ class SqlJob:
 
     @property
     def table_name(self):
-        """Gets the table_name of this SqlJob.
+        r"""Gets the table_name of this SqlJob.
 
         记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
 
@@ -448,7 +448,7 @@ class SqlJob:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this SqlJob.
+        r"""Sets the table_name of this SqlJob.
 
         记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
 
@@ -459,7 +459,7 @@ class SqlJob:
 
     @property
     def with_column_header(self):
-        """Gets the with_column_header of this SqlJob.
+        r"""Gets the with_column_header of this SqlJob.
 
         Import类型的作业，记录其导入的数据是否包括列名。
 
@@ -470,7 +470,7 @@ class SqlJob:
 
     @with_column_header.setter
     def with_column_header(self, with_column_header):
-        """Sets the with_column_header of this SqlJob.
+        r"""Sets the with_column_header of this SqlJob.
 
         Import类型的作业，记录其导入的数据是否包括列名。
 
@@ -481,7 +481,7 @@ class SqlJob:
 
     @property
     def detail(self):
-        """Gets the detail of this SqlJob.
+        r"""Gets the detail of this SqlJob.
 
         SQL查询的相关列信息的Json字符串。
 
@@ -492,7 +492,7 @@ class SqlJob:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this SqlJob.
+        r"""Sets the detail of this SqlJob.
 
         SQL查询的相关列信息的Json字符串。
 
@@ -503,7 +503,7 @@ class SqlJob:
 
     @property
     def statement(self):
-        """Gets the statement of this SqlJob.
+        r"""Gets the statement of this SqlJob.
 
         作业执行的SQL语句。
 
@@ -514,7 +514,7 @@ class SqlJob:
 
     @statement.setter
     def statement(self, statement):
-        """Sets the statement of this SqlJob.
+        r"""Sets the statement of this SqlJob.
 
         作业执行的SQL语句。
 
@@ -525,7 +525,7 @@ class SqlJob:
 
     @property
     def tags(self):
-        """Gets the tags of this SqlJob.
+        r"""Gets the tags of this SqlJob.
 
         作业标签
 
@@ -536,7 +536,7 @@ class SqlJob:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this SqlJob.
+        r"""Sets the tags of this SqlJob.
 
         作业标签
 
@@ -547,7 +547,7 @@ class SqlJob:
 
     @property
     def message(self):
-        """Gets the message of this SqlJob.
+        r"""Gets the message of this SqlJob.
 
         系统提示信息。
 
@@ -558,7 +558,7 @@ class SqlJob:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this SqlJob.
+        r"""Sets the message of this SqlJob.
 
         系统提示信息。
 
@@ -569,7 +569,7 @@ class SqlJob:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SqlJob.
+        r"""Gets the end_time of this SqlJob.
 
         作业结束的时间。是单位为“毫秒”的时间戳。
 
@@ -580,7 +580,7 @@ class SqlJob:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SqlJob.
+        r"""Sets the end_time of this SqlJob.
 
         作业结束的时间。是单位为“毫秒”的时间戳。
 
@@ -591,7 +591,7 @@ class SqlJob:
 
     @property
     def cpu_cost(self):
-        """Gets the cpu_cost of this SqlJob.
+        r"""Gets the cpu_cost of this SqlJob.
 
         作业的CPU累计使用量
 
@@ -602,7 +602,7 @@ class SqlJob:
 
     @cpu_cost.setter
     def cpu_cost(self, cpu_cost):
-        """Sets the cpu_cost of this SqlJob.
+        r"""Sets the cpu_cost of this SqlJob.
 
         作业的CPU累计使用量
 
@@ -613,7 +613,7 @@ class SqlJob:
 
     @property
     def output_byte(self):
-        """Gets the output_byte of this SqlJob.
+        r"""Gets the output_byte of this SqlJob.
 
         作业的输出字节数
 
@@ -624,7 +624,7 @@ class SqlJob:
 
     @output_byte.setter
     def output_byte(self, output_byte):
-        """Sets the output_byte of this SqlJob.
+        r"""Sets the output_byte of this SqlJob.
 
         作业的输出字节数
 

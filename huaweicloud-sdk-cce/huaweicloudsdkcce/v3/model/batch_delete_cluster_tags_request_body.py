@@ -25,7 +25,7 @@ class BatchDeleteClusterTagsRequestBody:
     }
 
     def __init__(self, tags=None):
-        """BatchDeleteClusterTagsRequestBody
+        r"""BatchDeleteClusterTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteClusterTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchDeleteClusterTagsRequestBody.
+        r"""Gets the tags of this BatchDeleteClusterTagsRequestBody.
 
         待删除的集群资源标签列表。
 
@@ -53,7 +53,7 @@ class BatchDeleteClusterTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchDeleteClusterTagsRequestBody.
+        r"""Sets the tags of this BatchDeleteClusterTagsRequestBody.
 
         待删除的集群资源标签列表。
 

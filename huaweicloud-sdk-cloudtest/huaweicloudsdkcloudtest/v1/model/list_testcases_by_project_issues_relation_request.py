@@ -27,7 +27,7 @@ class ListTestcasesByProjectIssuesRelationRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ListTestcasesByProjectIssuesRelationRequest
+        r"""ListTestcasesByProjectIssuesRelationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListTestcasesByProjectIssuesRelationRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListTestcasesByProjectIssuesRelationRequest.
+        r"""Gets the project_id of this ListTestcasesByProjectIssuesRelationRequest.
 
         项目唯一标识，固定长度32位字符
 
@@ -60,7 +60,7 @@ class ListTestcasesByProjectIssuesRelationRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListTestcasesByProjectIssuesRelationRequest.
+        r"""Sets the project_id of this ListTestcasesByProjectIssuesRelationRequest.
 
         项目唯一标识，固定长度32位字符
 
@@ -71,7 +71,7 @@ class ListTestcasesByProjectIssuesRelationRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTestcasesByProjectIssuesRelationRequest.
+        r"""Gets the body of this ListTestcasesByProjectIssuesRelationRequest.
 
         :return: The body of this ListTestcasesByProjectIssuesRelationRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.QueryProjectIssuesRelationTestCasesInfo`
@@ -80,7 +80,7 @@ class ListTestcasesByProjectIssuesRelationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTestcasesByProjectIssuesRelationRequest.
+        r"""Sets the body of this ListTestcasesByProjectIssuesRelationRequest.
 
         :param body: The body of this ListTestcasesByProjectIssuesRelationRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.QueryProjectIssuesRelationTestCasesInfo`

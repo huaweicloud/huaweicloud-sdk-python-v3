@@ -27,7 +27,7 @@ class CreateNodeRequest:
     }
 
     def __init__(self, provider=None, body=None):
-        """CreateNodeRequest
+        r"""CreateNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateNodeRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this CreateNodeRequest.
+        r"""Gets the provider of this CreateNodeRequest.
 
         服务提供者：ief或hilens，选择设备纳管到不同的平台。不填默认为hilens平台
 
@@ -61,7 +61,7 @@ class CreateNodeRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this CreateNodeRequest.
+        r"""Sets the provider of this CreateNodeRequest.
 
         服务提供者：ief或hilens，选择设备纳管到不同的平台。不填默认为hilens平台
 
@@ -72,7 +72,7 @@ class CreateNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateNodeRequest.
+        r"""Gets the body of this CreateNodeRequest.
 
         :return: The body of this CreateNodeRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.NodeRequest`
@@ -81,7 +81,7 @@ class CreateNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateNodeRequest.
+        r"""Sets the body of this CreateNodeRequest.
 
         :param body: The body of this CreateNodeRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.NodeRequest`

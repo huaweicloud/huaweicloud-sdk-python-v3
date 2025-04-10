@@ -31,7 +31,7 @@ class InstanceRequestSpec:
     }
 
     def __init__(self, version=None, cluster_id=None, values=None, addon_template_name=None):
-        """InstanceRequestSpec
+        r"""InstanceRequestSpec
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class InstanceRequestSpec:
 
     @property
     def version(self):
-        """Gets the version of this InstanceRequestSpec.
+        r"""Gets the version of this InstanceRequestSpec.
 
         待安装、升级插件的版本号，例如1.0.0 - 安装：该参数非必传，如果不传，匹配集群支持的最新版本 - 升级：该参数必传，需指定版本号 
 
@@ -72,7 +72,7 @@ class InstanceRequestSpec:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this InstanceRequestSpec.
+        r"""Sets the version of this InstanceRequestSpec.
 
         待安装、升级插件的版本号，例如1.0.0 - 安装：该参数非必传，如果不传，匹配集群支持的最新版本 - 升级：该参数必传，需指定版本号 
 
@@ -83,7 +83,7 @@ class InstanceRequestSpec:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this InstanceRequestSpec.
+        r"""Gets the cluster_id of this InstanceRequestSpec.
 
         集群id
 
@@ -94,7 +94,7 @@ class InstanceRequestSpec:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this InstanceRequestSpec.
+        r"""Sets the cluster_id of this InstanceRequestSpec.
 
         集群id
 
@@ -105,7 +105,7 @@ class InstanceRequestSpec:
 
     @property
     def values(self):
-        """Gets the values of this InstanceRequestSpec.
+        r"""Gets the values of this InstanceRequestSpec.
 
         插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。 
 
@@ -116,7 +116,7 @@ class InstanceRequestSpec:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this InstanceRequestSpec.
+        r"""Sets the values of this InstanceRequestSpec.
 
         插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。 
 
@@ -127,7 +127,7 @@ class InstanceRequestSpec:
 
     @property
     def addon_template_name(self):
-        """Gets the addon_template_name of this InstanceRequestSpec.
+        r"""Gets the addon_template_name of this InstanceRequestSpec.
 
         待安装插件模板名称，如coredns
 
@@ -138,7 +138,7 @@ class InstanceRequestSpec:
 
     @addon_template_name.setter
     def addon_template_name(self, addon_template_name):
-        """Sets the addon_template_name of this InstanceRequestSpec.
+        r"""Sets the addon_template_name of this InstanceRequestSpec.
 
         待安装插件模板名称，如coredns
 

@@ -31,7 +31,7 @@ class DeleteResourceRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, corp_id=None, body=None):
-        """DeleteResourceRequest
+        r"""DeleteResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class DeleteResourceRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteResourceRequest.
+        r"""Gets the x_request_id of this DeleteResourceRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -74,7 +74,7 @@ class DeleteResourceRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteResourceRequest.
+        r"""Sets the x_request_id of this DeleteResourceRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -85,7 +85,7 @@ class DeleteResourceRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this DeleteResourceRequest.
+        r"""Gets the accept_language of this DeleteResourceRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -96,7 +96,7 @@ class DeleteResourceRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this DeleteResourceRequest.
+        r"""Sets the accept_language of this DeleteResourceRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -107,7 +107,7 @@ class DeleteResourceRequest:
 
     @property
     def corp_id(self):
-        """Gets the corp_id of this DeleteResourceRequest.
+        r"""Gets the corp_id of this DeleteResourceRequest.
 
         企业id。
 
@@ -118,7 +118,7 @@ class DeleteResourceRequest:
 
     @corp_id.setter
     def corp_id(self, corp_id):
-        """Sets the corp_id of this DeleteResourceRequest.
+        r"""Sets the corp_id of this DeleteResourceRequest.
 
         企业id。
 
@@ -129,7 +129,7 @@ class DeleteResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteResourceRequest.
+        r"""Gets the body of this DeleteResourceRequest.
 
         :return: The body of this DeleteResourceRequest.
         :rtype: list[str]
@@ -138,7 +138,7 @@ class DeleteResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteResourceRequest.
+        r"""Sets the body of this DeleteResourceRequest.
 
         :param body: The body of this DeleteResourceRequest.
         :type body: list[str]

@@ -27,7 +27,7 @@ class BatchReboot:
     }
 
     def __init__(self, servers=None, type=None):
-        """BatchReboot
+        r"""BatchReboot
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchReboot:
 
     @property
     def servers(self):
-        """Gets the servers of this BatchReboot.
+        r"""Gets the servers of this BatchReboot.
 
         待重启的边缘实例列表。
 
@@ -61,7 +61,7 @@ class BatchReboot:
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this BatchReboot.
+        r"""Sets the servers of this BatchReboot.
 
         待重启的边缘实例列表。
 
@@ -72,7 +72,7 @@ class BatchReboot:
 
     @property
     def type(self):
-        """Gets the type of this BatchReboot.
+        r"""Gets the type of this BatchReboot.
 
         重启类型：   - SOFT：普通重启。  - HARD：强制重启。  > 重启必须指定重启类型。
 
@@ -83,7 +83,7 @@ class BatchReboot:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BatchReboot.
+        r"""Sets the type of this BatchReboot.
 
         重启类型：   - SOFT：普通重启。  - HARD：强制重启。  > 重启必须指定重启类型。
 

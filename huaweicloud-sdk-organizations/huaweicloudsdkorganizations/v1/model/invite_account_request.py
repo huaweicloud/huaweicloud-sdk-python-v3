@@ -28,7 +28,7 @@ class InviteAccountRequest:
     }
 
     def __init__(self, x_security_token=None, body=None):
-        """InviteAccountRequest
+        r"""InviteAccountRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class InviteAccountRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this InviteAccountRequest.
+        r"""Gets the x_security_token of this InviteAccountRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -62,7 +62,7 @@ class InviteAccountRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this InviteAccountRequest.
+        r"""Sets the x_security_token of this InviteAccountRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -73,7 +73,7 @@ class InviteAccountRequest:
 
     @property
     def body(self):
-        """Gets the body of this InviteAccountRequest.
+        r"""Gets the body of this InviteAccountRequest.
 
         :return: The body of this InviteAccountRequest.
         :rtype: :class:`huaweicloudsdkorganizations.v1.InviteAccountReqBody`
@@ -82,7 +82,7 @@ class InviteAccountRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this InviteAccountRequest.
+        r"""Sets the body of this InviteAccountRequest.
 
         :param body: The body of this InviteAccountRequest.
         :type body: :class:`huaweicloudsdkorganizations.v1.InviteAccountReqBody`

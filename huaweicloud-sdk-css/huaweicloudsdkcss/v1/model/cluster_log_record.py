@@ -41,7 +41,7 @@ class ClusterLogRecord:
     }
 
     def __init__(self, id=None, cluster_id=None, create_at=None, log_path=None, status=None, finished_at=None, job_types=None, failed_msg=None, job_id=None):
-        """ClusterLogRecord
+        r"""ClusterLogRecord
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ClusterLogRecord:
 
     @property
     def id(self):
-        """Gets the id of this ClusterLogRecord.
+        r"""Gets the id of this ClusterLogRecord.
 
         日志任务ID，通过系统UUID生成。
 
@@ -110,7 +110,7 @@ class ClusterLogRecord:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClusterLogRecord.
+        r"""Sets the id of this ClusterLogRecord.
 
         日志任务ID，通过系统UUID生成。
 
@@ -121,7 +121,7 @@ class ClusterLogRecord:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ClusterLogRecord.
+        r"""Gets the cluster_id of this ClusterLogRecord.
 
         集群ID。
 
@@ -132,7 +132,7 @@ class ClusterLogRecord:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ClusterLogRecord.
+        r"""Sets the cluster_id of this ClusterLogRecord.
 
         集群ID。
 
@@ -143,7 +143,7 @@ class ClusterLogRecord:
 
     @property
     def create_at(self):
-        """Gets the create_at of this ClusterLogRecord.
+        r"""Gets the create_at of this ClusterLogRecord.
 
         创建时间。格式：Unix时间戳格式。
 
@@ -154,7 +154,7 @@ class ClusterLogRecord:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this ClusterLogRecord.
+        r"""Sets the create_at of this ClusterLogRecord.
 
         创建时间。格式：Unix时间戳格式。
 
@@ -165,7 +165,7 @@ class ClusterLogRecord:
 
     @property
     def log_path(self):
-        """Gets the log_path of this ClusterLogRecord.
+        r"""Gets the log_path of this ClusterLogRecord.
 
         日志在OBS桶中的备份路径。
 
@@ -176,7 +176,7 @@ class ClusterLogRecord:
 
     @log_path.setter
     def log_path(self, log_path):
-        """Sets the log_path of this ClusterLogRecord.
+        r"""Sets the log_path of this ClusterLogRecord.
 
         日志在OBS桶中的备份路径。
 
@@ -187,7 +187,7 @@ class ClusterLogRecord:
 
     @property
     def status(self):
-        """Gets the status of this ClusterLogRecord.
+        r"""Gets the status of this ClusterLogRecord.
 
         任务状态。 - RUNNING: 备份行中。 - SUCCESS: 备份成功。 - FAIL: 备份失败。
 
@@ -198,7 +198,7 @@ class ClusterLogRecord:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClusterLogRecord.
+        r"""Sets the status of this ClusterLogRecord.
 
         任务状态。 - RUNNING: 备份行中。 - SUCCESS: 备份成功。 - FAIL: 备份失败。
 
@@ -209,7 +209,7 @@ class ClusterLogRecord:
 
     @property
     def finished_at(self):
-        """Gets the finished_at of this ClusterLogRecord.
+        r"""Gets the finished_at of this ClusterLogRecord.
 
         结束时间，当创建未结束时结束时间为null。格式：Unix时间戳格式。
 
@@ -220,7 +220,7 @@ class ClusterLogRecord:
 
     @finished_at.setter
     def finished_at(self, finished_at):
-        """Sets the finished_at of this ClusterLogRecord.
+        r"""Sets the finished_at of this ClusterLogRecord.
 
         结束时间，当创建未结束时结束时间为null。格式：Unix时间戳格式。
 
@@ -231,7 +231,7 @@ class ClusterLogRecord:
 
     @property
     def job_types(self):
-        """Gets the job_types of this ClusterLogRecord.
+        r"""Gets the job_types of this ClusterLogRecord.
 
         任务类型。 - Manual: 手动备份。 - Auto： 自动备份。
 
@@ -242,7 +242,7 @@ class ClusterLogRecord:
 
     @job_types.setter
     def job_types(self, job_types):
-        """Sets the job_types of this ClusterLogRecord.
+        r"""Sets the job_types of this ClusterLogRecord.
 
         任务类型。 - Manual: 手动备份。 - Auto： 自动备份。
 
@@ -253,7 +253,7 @@ class ClusterLogRecord:
 
     @property
     def failed_msg(self):
-        """Gets the failed_msg of this ClusterLogRecord.
+        r"""Gets the failed_msg of this ClusterLogRecord.
 
         错误信息。当任务状态没有处于失败状态时该字段为null。
 
@@ -264,7 +264,7 @@ class ClusterLogRecord:
 
     @failed_msg.setter
     def failed_msg(self, failed_msg):
-        """Sets the failed_msg of this ClusterLogRecord.
+        r"""Sets the failed_msg of this ClusterLogRecord.
 
         错误信息。当任务状态没有处于失败状态时该字段为null。
 
@@ -275,7 +275,7 @@ class ClusterLogRecord:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ClusterLogRecord.
+        r"""Gets the job_id of this ClusterLogRecord.
 
         任务ID。
 
@@ -286,7 +286,7 @@ class ClusterLogRecord:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ClusterLogRecord.
+        r"""Sets the job_id of this ClusterLogRecord.
 
         任务ID。
 

@@ -39,7 +39,7 @@ class PeriodOrderResp:
     }
 
     def __init__(self, status=None, order_id=None, charging_mode=None, period_type=None, period_num=None, is_auto_renew=None, eff_time=None, exp_time=None):
-        """PeriodOrderResp
+        r"""PeriodOrderResp
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class PeriodOrderResp:
 
     @property
     def status(self):
-        """Gets the status of this PeriodOrderResp.
+        r"""Gets the status of this PeriodOrderResp.
 
         订单状态
 
@@ -103,7 +103,7 @@ class PeriodOrderResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PeriodOrderResp.
+        r"""Sets the status of this PeriodOrderResp.
 
         订单状态
 
@@ -114,7 +114,7 @@ class PeriodOrderResp:
 
     @property
     def order_id(self):
-        """Gets the order_id of this PeriodOrderResp.
+        r"""Gets the order_id of this PeriodOrderResp.
 
         订单ID
 
@@ -125,7 +125,7 @@ class PeriodOrderResp:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this PeriodOrderResp.
+        r"""Sets the order_id of this PeriodOrderResp.
 
         订单ID
 
@@ -136,7 +136,7 @@ class PeriodOrderResp:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this PeriodOrderResp.
+        r"""Gets the charging_mode of this PeriodOrderResp.
 
         计费模式
 
@@ -147,7 +147,7 @@ class PeriodOrderResp:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this PeriodOrderResp.
+        r"""Sets the charging_mode of this PeriodOrderResp.
 
         计费模式
 
@@ -158,7 +158,7 @@ class PeriodOrderResp:
 
     @property
     def period_type(self):
-        """Gets the period_type of this PeriodOrderResp.
+        r"""Gets the period_type of this PeriodOrderResp.
 
         订购包周期类型
 
@@ -169,7 +169,7 @@ class PeriodOrderResp:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this PeriodOrderResp.
+        r"""Sets the period_type of this PeriodOrderResp.
 
         订购包周期类型
 
@@ -180,7 +180,7 @@ class PeriodOrderResp:
 
     @property
     def period_num(self):
-        """Gets the period_num of this PeriodOrderResp.
+        r"""Gets the period_num of this PeriodOrderResp.
 
         订购周期数
 
@@ -191,7 +191,7 @@ class PeriodOrderResp:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this PeriodOrderResp.
+        r"""Sets the period_num of this PeriodOrderResp.
 
         订购周期数
 
@@ -202,7 +202,7 @@ class PeriodOrderResp:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this PeriodOrderResp.
+        r"""Gets the is_auto_renew of this PeriodOrderResp.
 
         是否自动续费
 
@@ -213,7 +213,7 @@ class PeriodOrderResp:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this PeriodOrderResp.
+        r"""Sets the is_auto_renew of this PeriodOrderResp.
 
         是否自动续费
 
@@ -224,7 +224,7 @@ class PeriodOrderResp:
 
     @property
     def eff_time(self):
-        """Gets the eff_time of this PeriodOrderResp.
+        r"""Gets the eff_time of this PeriodOrderResp.
 
         资源生效时间（即资源创建时间）
 
@@ -235,7 +235,7 @@ class PeriodOrderResp:
 
     @eff_time.setter
     def eff_time(self, eff_time):
-        """Sets the eff_time of this PeriodOrderResp.
+        r"""Sets the eff_time of this PeriodOrderResp.
 
         资源生效时间（即资源创建时间）
 
@@ -246,7 +246,7 @@ class PeriodOrderResp:
 
     @property
     def exp_time(self):
-        """Gets the exp_time of this PeriodOrderResp.
+        r"""Gets the exp_time of this PeriodOrderResp.
 
         到期时间
 
@@ -257,7 +257,7 @@ class PeriodOrderResp:
 
     @exp_time.setter
     def exp_time(self, exp_time):
-        """Sets the exp_time of this PeriodOrderResp.
+        r"""Sets the exp_time of this PeriodOrderResp.
 
         到期时间
 

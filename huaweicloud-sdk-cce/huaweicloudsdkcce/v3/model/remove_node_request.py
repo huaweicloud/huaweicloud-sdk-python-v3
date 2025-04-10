@@ -27,7 +27,7 @@ class RemoveNodeRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """RemoveNodeRequest
+        r"""RemoveNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RemoveNodeRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this RemoveNodeRequest.
+        r"""Gets the cluster_id of this RemoveNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class RemoveNodeRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this RemoveNodeRequest.
+        r"""Sets the cluster_id of this RemoveNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class RemoveNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this RemoveNodeRequest.
+        r"""Gets the body of this RemoveNodeRequest.
 
         :return: The body of this RemoveNodeRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.RemoveNodesTask`
@@ -80,7 +80,7 @@ class RemoveNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RemoveNodeRequest.
+        r"""Sets the body of this RemoveNodeRequest.
 
         :param body: The body of this RemoveNodeRequest.
         :type body: :class:`huaweicloudsdkcce.v3.RemoveNodesTask`

@@ -39,7 +39,7 @@ class LogInstanceInfo:
     }
 
     def __init__(self, id=None, name=None, status=None, mode=None, datastore=None, actions=None, enterprise_project_id=None, supported_log_types=None):
-        """LogInstanceInfo
+        r"""LogInstanceInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class LogInstanceInfo:
         :type name: str
         :param status: 实例状态。 取值： - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点失败。
         :type status: str
-        :param mode: 实例类型。 -  取值为“Cluster”，表示GeminiDB Redis经典部署模式集群实例类型。 -  取值为“CloudNativeCluster”，表示GeminiDB Redis云原生部署模式集群实例类型。
+        :param mode: 实例类型。   -  取值为“Cluster”，表示GeminiDB Redis经典部署模式集群实例类型。   -  取值为“CloudNativeCluster”，表示GeminiDB Redis云原生部署模式集群实例类型。
         :type mode: str
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.InstancesDatastoreResult`
@@ -92,7 +92,7 @@ class LogInstanceInfo:
 
     @property
     def id(self):
-        """Gets the id of this LogInstanceInfo.
+        r"""Gets the id of this LogInstanceInfo.
 
         实例ID。
 
@@ -103,7 +103,7 @@ class LogInstanceInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LogInstanceInfo.
+        r"""Sets the id of this LogInstanceInfo.
 
         实例ID。
 
@@ -114,7 +114,7 @@ class LogInstanceInfo:
 
     @property
     def name(self):
-        """Gets the name of this LogInstanceInfo.
+        r"""Gets the name of this LogInstanceInfo.
 
         实例名称。
 
@@ -125,7 +125,7 @@ class LogInstanceInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LogInstanceInfo.
+        r"""Sets the name of this LogInstanceInfo.
 
         实例名称。
 
@@ -136,7 +136,7 @@ class LogInstanceInfo:
 
     @property
     def status(self):
-        """Gets the status of this LogInstanceInfo.
+        r"""Gets the status of this LogInstanceInfo.
 
         实例状态。 取值： - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点失败。
 
@@ -147,7 +147,7 @@ class LogInstanceInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this LogInstanceInfo.
+        r"""Sets the status of this LogInstanceInfo.
 
         实例状态。 取值： - normal，表示实例正常。 - abnormal，表示实例异常。 - creating，表示实例创建中。 - frozen，表示实例被冻结。 - data_disk_full，表示实例磁盘已满。 - createfail，表示实例创建失败。 - enlargefail，表示实例扩容节点失败。
 
@@ -158,9 +158,9 @@ class LogInstanceInfo:
 
     @property
     def mode(self):
-        """Gets the mode of this LogInstanceInfo.
+        r"""Gets the mode of this LogInstanceInfo.
 
-        实例类型。 -  取值为“Cluster”，表示GeminiDB Redis经典部署模式集群实例类型。 -  取值为“CloudNativeCluster”，表示GeminiDB Redis云原生部署模式集群实例类型。
+        实例类型。   -  取值为“Cluster”，表示GeminiDB Redis经典部署模式集群实例类型。   -  取值为“CloudNativeCluster”，表示GeminiDB Redis云原生部署模式集群实例类型。
 
         :return: The mode of this LogInstanceInfo.
         :rtype: str
@@ -169,9 +169,9 @@ class LogInstanceInfo:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this LogInstanceInfo.
+        r"""Sets the mode of this LogInstanceInfo.
 
-        实例类型。 -  取值为“Cluster”，表示GeminiDB Redis经典部署模式集群实例类型。 -  取值为“CloudNativeCluster”，表示GeminiDB Redis云原生部署模式集群实例类型。
+        实例类型。   -  取值为“Cluster”，表示GeminiDB Redis经典部署模式集群实例类型。   -  取值为“CloudNativeCluster”，表示GeminiDB Redis云原生部署模式集群实例类型。
 
         :param mode: The mode of this LogInstanceInfo.
         :type mode: str
@@ -180,7 +180,7 @@ class LogInstanceInfo:
 
     @property
     def datastore(self):
-        """Gets the datastore of this LogInstanceInfo.
+        r"""Gets the datastore of this LogInstanceInfo.
 
         :return: The datastore of this LogInstanceInfo.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.InstancesDatastoreResult`
@@ -189,7 +189,7 @@ class LogInstanceInfo:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this LogInstanceInfo.
+        r"""Sets the datastore of this LogInstanceInfo.
 
         :param datastore: The datastore of this LogInstanceInfo.
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.InstancesDatastoreResult`
@@ -198,7 +198,7 @@ class LogInstanceInfo:
 
     @property
     def actions(self):
-        """Gets the actions of this LogInstanceInfo.
+        r"""Gets the actions of this LogInstanceInfo.
 
         实例正在执行的动作。
 
@@ -209,7 +209,7 @@ class LogInstanceInfo:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this LogInstanceInfo.
+        r"""Sets the actions of this LogInstanceInfo.
 
         实例正在执行的动作。
 
@@ -220,7 +220,7 @@ class LogInstanceInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this LogInstanceInfo.
+        r"""Gets the enterprise_project_id of this LogInstanceInfo.
 
         企业项目ID。
 
@@ -231,7 +231,7 @@ class LogInstanceInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this LogInstanceInfo.
+        r"""Sets the enterprise_project_id of this LogInstanceInfo.
 
         企业项目ID。
 
@@ -242,7 +242,7 @@ class LogInstanceInfo:
 
     @property
     def supported_log_types(self):
-        """Gets the supported_log_types of this LogInstanceInfo.
+        r"""Gets the supported_log_types of this LogInstanceInfo.
 
         日志类型。slow_log表示慢日志，audit_log表示审计日志。
 
@@ -253,7 +253,7 @@ class LogInstanceInfo:
 
     @supported_log_types.setter
     def supported_log_types(self, supported_log_types):
-        """Sets the supported_log_types of this LogInstanceInfo.
+        r"""Sets the supported_log_types of this LogInstanceInfo.
 
         日志类型。slow_log表示慢日志，audit_log表示审计日志。
 

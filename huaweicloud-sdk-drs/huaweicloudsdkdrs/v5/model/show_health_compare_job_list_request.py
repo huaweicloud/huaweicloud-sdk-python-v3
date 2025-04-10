@@ -33,7 +33,7 @@ class ShowHealthCompareJobListRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, status=None, offset=None, limit=None):
-        """ShowHealthCompareJobListRequest
+        r"""ShowHealthCompareJobListRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ShowHealthCompareJobListRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowHealthCompareJobListRequest.
+        r"""Gets the x_language of this ShowHealthCompareJobListRequest.
 
         请求语言类型。
 
@@ -81,7 +81,7 @@ class ShowHealthCompareJobListRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowHealthCompareJobListRequest.
+        r"""Sets the x_language of this ShowHealthCompareJobListRequest.
 
         请求语言类型。
 
@@ -92,7 +92,7 @@ class ShowHealthCompareJobListRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowHealthCompareJobListRequest.
+        r"""Gets the job_id of this ShowHealthCompareJobListRequest.
 
         任务ID。
 
@@ -103,7 +103,7 @@ class ShowHealthCompareJobListRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowHealthCompareJobListRequest.
+        r"""Sets the job_id of this ShowHealthCompareJobListRequest.
 
         任务ID。
 
@@ -114,7 +114,7 @@ class ShowHealthCompareJobListRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowHealthCompareJobListRequest.
+        r"""Gets the status of this ShowHealthCompareJobListRequest.
 
         状态，不传查询所有状态。 - WAITING_FOR_RUNNING：等待启动中 - RUNNING：运行中 - SUCCESSFUL：完成 - FAILED：失败 - CANCELLED：已取消 - TIMEOUT_INTERRUPT：超时中断 - FULL_DOING：全量校验中 - INCRE_DOING：增量校验中
 
@@ -125,7 +125,7 @@ class ShowHealthCompareJobListRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowHealthCompareJobListRequest.
+        r"""Sets the status of this ShowHealthCompareJobListRequest.
 
         状态，不传查询所有状态。 - WAITING_FOR_RUNNING：等待启动中 - RUNNING：运行中 - SUCCESSFUL：完成 - FAILED：失败 - CANCELLED：已取消 - TIMEOUT_INTERRUPT：超时中断 - FULL_DOING：全量校验中 - INCRE_DOING：增量校验中
 
@@ -136,7 +136,7 @@ class ShowHealthCompareJobListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowHealthCompareJobListRequest.
+        r"""Gets the offset of this ShowHealthCompareJobListRequest.
 
         偏移量，表示从此偏移量开始查询， offset 大于等于 0。默认为0
 
@@ -147,7 +147,7 @@ class ShowHealthCompareJobListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowHealthCompareJobListRequest.
+        r"""Sets the offset of this ShowHealthCompareJobListRequest.
 
         偏移量，表示从此偏移量开始查询， offset 大于等于 0。默认为0
 
@@ -158,7 +158,7 @@ class ShowHealthCompareJobListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowHealthCompareJobListRequest.
+        r"""Gets the limit of this ShowHealthCompareJobListRequest.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 
@@ -169,7 +169,7 @@ class ShowHealthCompareJobListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowHealthCompareJobListRequest.
+        r"""Sets the limit of this ShowHealthCompareJobListRequest.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 

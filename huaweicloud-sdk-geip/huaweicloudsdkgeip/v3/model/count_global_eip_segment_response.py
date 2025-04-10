@@ -30,7 +30,7 @@ class CountGlobalEipSegmentResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, global_eip_segment=None, x_request_id=None):
-        """CountGlobalEipSegmentResponse
+        r"""CountGlobalEipSegmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CountGlobalEipSegmentResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CountGlobalEipSegmentResponse.
+        r"""Gets the request_id of this CountGlobalEipSegmentResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class CountGlobalEipSegmentResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CountGlobalEipSegmentResponse.
+        r"""Sets the request_id of this CountGlobalEipSegmentResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class CountGlobalEipSegmentResponse(SdkResponse):
 
     @property
     def global_eip_segment(self):
-        """Gets the global_eip_segment of this CountGlobalEipSegmentResponse.
+        r"""Gets the global_eip_segment of this CountGlobalEipSegmentResponse.
 
         :return: The global_eip_segment of this CountGlobalEipSegmentResponse.
         :rtype: CountGeipSegments
@@ -89,7 +89,7 @@ class CountGlobalEipSegmentResponse(SdkResponse):
 
     @global_eip_segment.setter
     def global_eip_segment(self, global_eip_segment):
-        """Sets the global_eip_segment of this CountGlobalEipSegmentResponse.
+        r"""Sets the global_eip_segment of this CountGlobalEipSegmentResponse.
 
         :param global_eip_segment: The global_eip_segment of this CountGlobalEipSegmentResponse.
         :type global_eip_segment: CountGeipSegments
@@ -98,7 +98,7 @@ class CountGlobalEipSegmentResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CountGlobalEipSegmentResponse.
+        r"""Gets the x_request_id of this CountGlobalEipSegmentResponse.
 
         :return: The x_request_id of this CountGlobalEipSegmentResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CountGlobalEipSegmentResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CountGlobalEipSegmentResponse.
+        r"""Sets the x_request_id of this CountGlobalEipSegmentResponse.
 
         :param x_request_id: The x_request_id of this CountGlobalEipSegmentResponse.
         :type x_request_id: str

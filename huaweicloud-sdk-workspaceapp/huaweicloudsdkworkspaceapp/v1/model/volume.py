@@ -29,7 +29,7 @@ class Volume:
     }
 
     def __init__(self, type=None, size=None, cluster_id=None):
-        """Volume
+        r"""Volume
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Volume:
 
     @property
     def type(self):
-        """Gets the type of this Volume.
+        r"""Gets the type of this Volume.
 
         :return: The type of this Volume.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -64,7 +64,7 @@ class Volume:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Volume.
+        r"""Sets the type of this Volume.
 
         :param type: The type of this Volume.
         :type type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -73,7 +73,7 @@ class Volume:
 
     @property
     def size(self):
-        """Gets the size of this Volume.
+        r"""Gets the size of this Volume.
 
         磁盘容量，单位GB，数值约束为10的倍数。 * `系统盘` minLength: 10，maxLength: 1024 * `数据盘` minLength: 10，maxLength: 32768
 
@@ -84,7 +84,7 @@ class Volume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Volume.
+        r"""Sets the size of this Volume.
 
         磁盘容量，单位GB，数值约束为10的倍数。 * `系统盘` minLength: 10，maxLength: 1024 * `数据盘` minLength: 10，maxLength: 32768
 
@@ -95,7 +95,7 @@ class Volume:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this Volume.
+        r"""Gets the cluster_id of this Volume.
 
         云服务器系统盘对应的存储池的ID。
 
@@ -106,7 +106,7 @@ class Volume:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this Volume.
+        r"""Sets the cluster_id of this Volume.
 
         云服务器系统盘对应的存储池的ID。
 

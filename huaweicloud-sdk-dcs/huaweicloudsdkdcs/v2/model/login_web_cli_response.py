@@ -28,7 +28,7 @@ class LoginWebCliResponse(SdkResponse):
     }
 
     def __init__(self, client_id=None, databases=None):
-        """LoginWebCliResponse
+        r"""LoginWebCliResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class LoginWebCliResponse(SdkResponse):
 
     @property
     def client_id(self):
-        """Gets the client_id of this LoginWebCliResponse.
+        r"""Gets the client_id of this LoginWebCliResponse.
 
         客户端ID
 
@@ -62,7 +62,7 @@ class LoginWebCliResponse(SdkResponse):
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this LoginWebCliResponse.
+        r"""Sets the client_id of this LoginWebCliResponse.
 
         客户端ID
 
@@ -73,7 +73,7 @@ class LoginWebCliResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this LoginWebCliResponse.
+        r"""Gets the databases of this LoginWebCliResponse.
 
         DB数量
 
@@ -84,7 +84,7 @@ class LoginWebCliResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this LoginWebCliResponse.
+        r"""Sets the databases of this LoginWebCliResponse.
 
         DB数量
 

@@ -25,7 +25,7 @@ class CreateThumbnailsTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateThumbnailsTaskRequest
+        r"""CreateThumbnailsTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateThumbnailsTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateThumbnailsTaskRequest.
+        r"""Gets the body of this CreateThumbnailsTaskRequest.
 
         :return: The body of this CreateThumbnailsTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateThumbReq`
@@ -52,7 +52,7 @@ class CreateThumbnailsTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateThumbnailsTaskRequest.
+        r"""Sets the body of this CreateThumbnailsTaskRequest.
 
         :param body: The body of this CreateThumbnailsTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateThumbReq`

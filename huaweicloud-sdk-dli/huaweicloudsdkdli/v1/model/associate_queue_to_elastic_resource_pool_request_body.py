@@ -25,7 +25,7 @@ class AssociateQueueToElasticResourcePoolRequestBody:
     }
 
     def __init__(self, queue_name=None):
-        """AssociateQueueToElasticResourcePoolRequestBody
+        r"""AssociateQueueToElasticResourcePoolRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AssociateQueueToElasticResourcePoolRequestBody:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this AssociateQueueToElasticResourcePoolRequestBody.
+        r"""Gets the queue_name of this AssociateQueueToElasticResourcePoolRequestBody.
 
         队列名称
 
@@ -53,7 +53,7 @@ class AssociateQueueToElasticResourcePoolRequestBody:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this AssociateQueueToElasticResourcePoolRequestBody.
+        r"""Sets the queue_name of this AssociateQueueToElasticResourcePoolRequestBody.
 
         队列名称
 

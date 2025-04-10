@@ -37,7 +37,7 @@ class SubStepDetail:
     }
 
     def __init__(self, sub_step_id=None, sub_step_name=None, sub_step_status=None, begin_time=None, end_time=None, detail=None, error_code=None):
-        """SubStepDetail
+        r"""SubStepDetail
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SubStepDetail:
 
     @property
     def sub_step_id(self):
-        """Gets the sub_step_id of this SubStepDetail.
+        r"""Gets the sub_step_id of this SubStepDetail.
 
         任务id
 
@@ -96,7 +96,7 @@ class SubStepDetail:
 
     @sub_step_id.setter
     def sub_step_id(self, sub_step_id):
-        """Sets the sub_step_id of this SubStepDetail.
+        r"""Sets the sub_step_id of this SubStepDetail.
 
         任务id
 
@@ -107,7 +107,7 @@ class SubStepDetail:
 
     @property
     def sub_step_name(self):
-        """Gets the sub_step_name of this SubStepDetail.
+        r"""Gets the sub_step_name of this SubStepDetail.
 
         任务名
 
@@ -118,7 +118,7 @@ class SubStepDetail:
 
     @sub_step_name.setter
     def sub_step_name(self, sub_step_name):
-        """Sets the sub_step_name of this SubStepDetail.
+        r"""Sets the sub_step_name of this SubStepDetail.
 
         任务名
 
@@ -129,7 +129,7 @@ class SubStepDetail:
 
     @property
     def sub_step_status(self):
-        """Gets the sub_step_status of this SubStepDetail.
+        r"""Gets the sub_step_status of this SubStepDetail.
 
         任务状态
 
@@ -140,7 +140,7 @@ class SubStepDetail:
 
     @sub_step_status.setter
     def sub_step_status(self, sub_step_status):
-        """Sets the sub_step_status of this SubStepDetail.
+        r"""Sets the sub_step_status of this SubStepDetail.
 
         任务状态
 
@@ -151,7 +151,7 @@ class SubStepDetail:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this SubStepDetail.
+        r"""Gets the begin_time of this SubStepDetail.
 
         任务启动时间，格式为2020-06-17T07:38:42.503Z
 
@@ -162,7 +162,7 @@ class SubStepDetail:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this SubStepDetail.
+        r"""Sets the begin_time of this SubStepDetail.
 
         任务启动时间，格式为2020-06-17T07:38:42.503Z
 
@@ -173,7 +173,7 @@ class SubStepDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SubStepDetail.
+        r"""Gets the end_time of this SubStepDetail.
 
         任务结束时间，格式为2020-06-17T07:38:42.503Z
 
@@ -184,7 +184,7 @@ class SubStepDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SubStepDetail.
+        r"""Sets the end_time of this SubStepDetail.
 
         任务结束时间，格式为2020-06-17T07:38:42.503Z
 
@@ -195,7 +195,7 @@ class SubStepDetail:
 
     @property
     def detail(self):
-        """Gets the detail of this SubStepDetail.
+        r"""Gets the detail of this SubStepDetail.
 
         子任务的附加属性详情
 
@@ -206,7 +206,7 @@ class SubStepDetail:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this SubStepDetail.
+        r"""Sets the detail of this SubStepDetail.
 
         子任务的附加属性详情
 
@@ -217,7 +217,7 @@ class SubStepDetail:
 
     @property
     def error_code(self):
-        """Gets the error_code of this SubStepDetail.
+        r"""Gets the error_code of this SubStepDetail.
 
         错误码
 
@@ -228,7 +228,7 @@ class SubStepDetail:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this SubStepDetail.
+        r"""Sets the error_code of this SubStepDetail.
 
         错误码
 

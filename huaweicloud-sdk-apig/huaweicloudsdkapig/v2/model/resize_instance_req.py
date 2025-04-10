@@ -25,7 +25,7 @@ class ResizeInstanceReq:
     }
 
     def __init__(self, spec_id=None):
-        """ResizeInstanceReq
+        r"""ResizeInstanceReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResizeInstanceReq:
 
     @property
     def spec_id(self):
-        """Gets the spec_id of this ResizeInstanceReq.
+        r"""Gets the spec_id of this ResizeInstanceReq.
 
         目标实例规格
 
@@ -54,7 +54,7 @@ class ResizeInstanceReq:
 
     @spec_id.setter
     def spec_id(self, spec_id):
-        """Sets the spec_id of this ResizeInstanceReq.
+        r"""Sets the spec_id of this ResizeInstanceReq.
 
         目标实例规格
 

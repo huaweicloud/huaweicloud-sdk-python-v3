@@ -32,7 +32,7 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
     }
 
     def __init__(self, face_number=None, face_set_id=None, face_set_name=None, x_request_id=None):
-        """DeleteFaceByFaceIdResponse
+        r"""DeleteFaceByFaceIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
 
     @property
     def face_number(self):
-        """Gets the face_number of this DeleteFaceByFaceIdResponse.
+        r"""Gets the face_number of this DeleteFaceByFaceIdResponse.
 
         删除的人脸数量。 调用失败时无此字段。
 
@@ -76,7 +76,7 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
 
     @face_number.setter
     def face_number(self, face_number):
-        """Sets the face_number of this DeleteFaceByFaceIdResponse.
+        r"""Sets the face_number of this DeleteFaceByFaceIdResponse.
 
         删除的人脸数量。 调用失败时无此字段。
 
@@ -87,7 +87,7 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
 
     @property
     def face_set_id(self):
-        """Gets the face_set_id of this DeleteFaceByFaceIdResponse.
+        r"""Gets the face_set_id of this DeleteFaceByFaceIdResponse.
 
         人脸库ID。 调用失败时无此字段。
 
@@ -98,7 +98,7 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
 
     @face_set_id.setter
     def face_set_id(self, face_set_id):
-        """Sets the face_set_id of this DeleteFaceByFaceIdResponse.
+        r"""Sets the face_set_id of this DeleteFaceByFaceIdResponse.
 
         人脸库ID。 调用失败时无此字段。
 
@@ -109,7 +109,7 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
 
     @property
     def face_set_name(self):
-        """Gets the face_set_name of this DeleteFaceByFaceIdResponse.
+        r"""Gets the face_set_name of this DeleteFaceByFaceIdResponse.
 
         人脸库名称。 调用失败时无此字段。
 
@@ -120,7 +120,7 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
 
     @face_set_name.setter
     def face_set_name(self, face_set_name):
-        """Sets the face_set_name of this DeleteFaceByFaceIdResponse.
+        r"""Sets the face_set_name of this DeleteFaceByFaceIdResponse.
 
         人脸库名称。 调用失败时无此字段。
 
@@ -131,7 +131,7 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteFaceByFaceIdResponse.
+        r"""Gets the x_request_id of this DeleteFaceByFaceIdResponse.
 
         :return: The x_request_id of this DeleteFaceByFaceIdResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class DeleteFaceByFaceIdResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteFaceByFaceIdResponse.
+        r"""Sets the x_request_id of this DeleteFaceByFaceIdResponse.
 
         :param x_request_id: The x_request_id of this DeleteFaceByFaceIdResponse.
         :type x_request_id: str

@@ -27,7 +27,7 @@ class CreateResourceGroup:
     }
 
     def __init__(self, namespace=None, dimensions=None):
-        """CreateResourceGroup
+        r"""CreateResourceGroup
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateResourceGroup:
 
     @property
     def namespace(self):
-        """Gets the namespace of this CreateResourceGroup.
+        r"""Gets the namespace of this CreateResourceGroup.
 
         资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -59,7 +59,7 @@ class CreateResourceGroup:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this CreateResourceGroup.
+        r"""Sets the namespace of this CreateResourceGroup.
 
         资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -70,7 +70,7 @@ class CreateResourceGroup:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this CreateResourceGroup.
+        r"""Gets the dimensions of this CreateResourceGroup.
 
         一个或者多个资源维度。
 
@@ -81,7 +81,7 @@ class CreateResourceGroup:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this CreateResourceGroup.
+        r"""Sets the dimensions of this CreateResourceGroup.
 
         一个或者多个资源维度。
 

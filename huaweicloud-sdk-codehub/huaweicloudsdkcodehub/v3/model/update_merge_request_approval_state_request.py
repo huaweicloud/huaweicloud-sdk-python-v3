@@ -29,7 +29,7 @@ class UpdateMergeRequestApprovalStateRequest:
     }
 
     def __init__(self, repository_id=None, merge_request_iid=None, body=None):
-        """UpdateMergeRequestApprovalStateRequest
+        r"""UpdateMergeRequestApprovalStateRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateMergeRequestApprovalStateRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this UpdateMergeRequestApprovalStateRequest.
+        r"""Gets the repository_id of this UpdateMergeRequestApprovalStateRequest.
 
         仓库的主键id
 
@@ -66,7 +66,7 @@ class UpdateMergeRequestApprovalStateRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this UpdateMergeRequestApprovalStateRequest.
+        r"""Sets the repository_id of this UpdateMergeRequestApprovalStateRequest.
 
         仓库的主键id
 
@@ -77,7 +77,7 @@ class UpdateMergeRequestApprovalStateRequest:
 
     @property
     def merge_request_iid(self):
-        """Gets the merge_request_iid of this UpdateMergeRequestApprovalStateRequest.
+        r"""Gets the merge_request_iid of this UpdateMergeRequestApprovalStateRequest.
 
         合并请求的短id
 
@@ -88,7 +88,7 @@ class UpdateMergeRequestApprovalStateRequest:
 
     @merge_request_iid.setter
     def merge_request_iid(self, merge_request_iid):
-        """Sets the merge_request_iid of this UpdateMergeRequestApprovalStateRequest.
+        r"""Sets the merge_request_iid of this UpdateMergeRequestApprovalStateRequest.
 
         合并请求的短id
 
@@ -99,7 +99,7 @@ class UpdateMergeRequestApprovalStateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMergeRequestApprovalStateRequest.
+        r"""Gets the body of this UpdateMergeRequestApprovalStateRequest.
 
         :return: The body of this UpdateMergeRequestApprovalStateRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.ApprovalActionTypeDto`
@@ -108,7 +108,7 @@ class UpdateMergeRequestApprovalStateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMergeRequestApprovalStateRequest.
+        r"""Sets the body of this UpdateMergeRequestApprovalStateRequest.
 
         :param body: The body of this UpdateMergeRequestApprovalStateRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.ApprovalActionTypeDto`

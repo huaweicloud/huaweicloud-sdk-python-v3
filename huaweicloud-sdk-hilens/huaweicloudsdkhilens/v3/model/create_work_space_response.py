@@ -26,7 +26,7 @@ class CreateWorkSpaceResponse(SdkResponse):
     }
 
     def __init__(self, workspace_id=None):
-        """CreateWorkSpaceResponse
+        r"""CreateWorkSpaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateWorkSpaceResponse(SdkResponse):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateWorkSpaceResponse.
+        r"""Gets the workspace_id of this CreateWorkSpaceResponse.
 
         工作空间id
 
@@ -55,7 +55,7 @@ class CreateWorkSpaceResponse(SdkResponse):
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateWorkSpaceResponse.
+        r"""Sets the workspace_id of this CreateWorkSpaceResponse.
 
         工作空间id
 

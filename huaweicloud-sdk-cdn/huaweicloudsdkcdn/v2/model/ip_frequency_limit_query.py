@@ -27,7 +27,7 @@ class IpFrequencyLimitQuery:
     }
 
     def __init__(self, status=None, qps=None):
-        """IpFrequencyLimitQuery
+        r"""IpFrequencyLimitQuery
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class IpFrequencyLimitQuery:
 
     @property
     def status(self):
-        """Gets the status of this IpFrequencyLimitQuery.
+        r"""Gets the status of this IpFrequencyLimitQuery.
 
         状态，on：打开，off：关闭。
 
@@ -60,7 +60,7 @@ class IpFrequencyLimitQuery:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IpFrequencyLimitQuery.
+        r"""Sets the status of this IpFrequencyLimitQuery.
 
         状态，on：打开，off：关闭。
 
@@ -71,7 +71,7 @@ class IpFrequencyLimitQuery:
 
     @property
     def qps(self):
-        """Gets the qps of this IpFrequencyLimitQuery.
+        r"""Gets the qps of this IpFrequencyLimitQuery.
 
         访问阈值，单位：次/秒。
 
@@ -82,7 +82,7 @@ class IpFrequencyLimitQuery:
 
     @qps.setter
     def qps(self, qps):
-        """Sets the qps of this IpFrequencyLimitQuery.
+        r"""Sets the qps of this IpFrequencyLimitQuery.
 
         访问阈值，单位：次/秒。
 

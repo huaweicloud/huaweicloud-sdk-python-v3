@@ -27,7 +27,7 @@ class BackupStrategyForResponse:
     }
 
     def __init__(self, start_time=None, keep_days=None):
-        """BackupStrategyForResponse
+        r"""BackupStrategyForResponse
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BackupStrategyForResponse:
 
     @property
     def start_time(self):
-        """Gets the start_time of this BackupStrategyForResponse.
+        r"""Gets the start_time of this BackupStrategyForResponse.
 
         备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  HH取值必须比hh大1。 mm和MM取值必须相同，且取值必须为00、15、30或45。
 
@@ -59,7 +59,7 @@ class BackupStrategyForResponse:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this BackupStrategyForResponse.
+        r"""Sets the start_time of this BackupStrategyForResponse.
 
         备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  HH取值必须比hh大1。 mm和MM取值必须相同，且取值必须为00、15、30或45。
 
@@ -70,7 +70,7 @@ class BackupStrategyForResponse:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this BackupStrategyForResponse.
+        r"""Gets the keep_days of this BackupStrategyForResponse.
 
         指定备份文件的可保存天数。  取值范围：0～732。该参数缺省，或取值为0，表示关闭自动备份策略。如果需要延长保留时间请联系客服人员申请，自动备份最长可以保留2562天。  说明：SQL Server的HA实例不支持关闭自动备份策略。
 
@@ -81,7 +81,7 @@ class BackupStrategyForResponse:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this BackupStrategyForResponse.
+        r"""Sets the keep_days of this BackupStrategyForResponse.
 
         指定备份文件的可保存天数。  取值范围：0～732。该参数缺省，或取值为0，表示关闭自动备份策略。如果需要延长保留时间请联系客服人员申请，自动备份最长可以保留2562天。  说明：SQL Server的HA实例不支持关闭自动备份策略。
 

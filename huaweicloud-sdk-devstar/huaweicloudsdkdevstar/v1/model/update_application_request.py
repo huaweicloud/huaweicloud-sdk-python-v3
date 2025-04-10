@@ -29,7 +29,7 @@ class UpdateApplicationRequest:
     }
 
     def __init__(self, x_language=None, application_id=None, body=None):
-        """UpdateApplicationRequest
+        r"""UpdateApplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateApplicationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateApplicationRequest.
+        r"""Gets the x_language of this UpdateApplicationRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -67,7 +67,7 @@ class UpdateApplicationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateApplicationRequest.
+        r"""Sets the x_language of this UpdateApplicationRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -78,7 +78,7 @@ class UpdateApplicationRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this UpdateApplicationRequest.
+        r"""Gets the application_id of this UpdateApplicationRequest.
 
         应用id
 
@@ -89,7 +89,7 @@ class UpdateApplicationRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this UpdateApplicationRequest.
+        r"""Sets the application_id of this UpdateApplicationRequest.
 
         应用id
 
@@ -100,7 +100,7 @@ class UpdateApplicationRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateApplicationRequest.
+        r"""Gets the body of this UpdateApplicationRequest.
 
         :return: The body of this UpdateApplicationRequest.
         :rtype: :class:`huaweicloudsdkdevstar.v1.ApplicationModifyInfo`
@@ -109,7 +109,7 @@ class UpdateApplicationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateApplicationRequest.
+        r"""Sets the body of this UpdateApplicationRequest.
 
         :param body: The body of this UpdateApplicationRequest.
         :type body: :class:`huaweicloudsdkdevstar.v1.ApplicationModifyInfo`

@@ -27,7 +27,7 @@ class RestoreRequestBody:
     }
 
     def __init__(self, backup_id=None, password=None):
-        """RestoreRequestBody
+        r"""RestoreRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RestoreRequestBody:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this RestoreRequestBody.
+        r"""Gets the backup_id of this RestoreRequestBody.
 
         备份文件名称。根据备份文件恢复到已有的实例。
 
@@ -60,7 +60,7 @@ class RestoreRequestBody:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this RestoreRequestBody.
+        r"""Sets the backup_id of this RestoreRequestBody.
 
         备份文件名称。根据备份文件恢复到已有的实例。
 
@@ -71,7 +71,7 @@ class RestoreRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this RestoreRequestBody.
+        r"""Gets the password of this RestoreRequestBody.
 
         实例密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。   - 不传入密码时，恢复后，备份文件中保留的密码将覆盖原有实例的密码。   - 传入密码时，恢复后，将使用该密码覆盖原有实例的密码。
 
@@ -82,7 +82,7 @@ class RestoreRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this RestoreRequestBody.
+        r"""Sets the password of this RestoreRequestBody.
 
         实例密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。   - 不传入密码时，恢复后，备份文件中保留的密码将覆盖原有实例的密码。   - 传入密码时，恢复后，将使用该密码覆盖原有实例的密码。
 

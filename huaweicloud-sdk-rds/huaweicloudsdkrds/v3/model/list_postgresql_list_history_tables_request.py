@@ -29,7 +29,7 @@ class ListPostgresqlListHistoryTablesRequest:
     }
 
     def __init__(self, x_language=None, database_name=None, body=None):
-        """ListPostgresqlListHistoryTablesRequest
+        r"""ListPostgresqlListHistoryTablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListPostgresqlListHistoryTablesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListPostgresqlListHistoryTablesRequest.
+        r"""Gets the x_language of this ListPostgresqlListHistoryTablesRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class ListPostgresqlListHistoryTablesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListPostgresqlListHistoryTablesRequest.
+        r"""Sets the x_language of this ListPostgresqlListHistoryTablesRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class ListPostgresqlListHistoryTablesRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListPostgresqlListHistoryTablesRequest.
+        r"""Gets the database_name of this ListPostgresqlListHistoryTablesRequest.
 
         数据库引擎。支持的引擎如下，不区分大小写：postgresql
 
@@ -89,7 +89,7 @@ class ListPostgresqlListHistoryTablesRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListPostgresqlListHistoryTablesRequest.
+        r"""Sets the database_name of this ListPostgresqlListHistoryTablesRequest.
 
         数据库引擎。支持的引擎如下，不区分大小写：postgresql
 
@@ -100,7 +100,7 @@ class ListPostgresqlListHistoryTablesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListPostgresqlListHistoryTablesRequest.
+        r"""Gets the body of this ListPostgresqlListHistoryTablesRequest.
 
         :return: The body of this ListPostgresqlListHistoryTablesRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.PostgreSQLHistoryTableRequest`
@@ -109,7 +109,7 @@ class ListPostgresqlListHistoryTablesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPostgresqlListHistoryTablesRequest.
+        r"""Sets the body of this ListPostgresqlListHistoryTablesRequest.
 
         :param body: The body of this ListPostgresqlListHistoryTablesRequest.
         :type body: :class:`huaweicloudsdkrds.v3.PostgreSQLHistoryTableRequest`

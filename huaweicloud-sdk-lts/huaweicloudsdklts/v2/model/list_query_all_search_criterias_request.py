@@ -25,7 +25,7 @@ class ListQueryAllSearchCriteriasRequest:
     }
 
     def __init__(self, group_id=None):
-        """ListQueryAllSearchCriteriasRequest
+        r"""ListQueryAllSearchCriteriasRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListQueryAllSearchCriteriasRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListQueryAllSearchCriteriasRequest.
+        r"""Gets the group_id of this ListQueryAllSearchCriteriasRequest.
 
         租户想查询的日志流所在的日志组的groupid，一般为36位字符串。  缺省值：None  最小长度：36  最大长度：36
 
@@ -53,7 +53,7 @@ class ListQueryAllSearchCriteriasRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListQueryAllSearchCriteriasRequest.
+        r"""Sets the group_id of this ListQueryAllSearchCriteriasRequest.
 
         租户想查询的日志流所在的日志组的groupid，一般为36位字符串。  缺省值：None  最小长度：36  最大长度：36
 

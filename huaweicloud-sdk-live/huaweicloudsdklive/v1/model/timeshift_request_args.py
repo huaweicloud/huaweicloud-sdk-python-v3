@@ -27,7 +27,7 @@ class TimeshiftRequestArgs:
     }
 
     def __init__(self, back_time=None, unit=None):
-        """TimeshiftRequestArgs
+        r"""TimeshiftRequestArgs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TimeshiftRequestArgs:
 
     @property
     def back_time(self):
-        """Gets the back_time of this TimeshiftRequestArgs.
+        r"""Gets the back_time of this TimeshiftRequestArgs.
 
         时移时长字段名
 
@@ -61,7 +61,7 @@ class TimeshiftRequestArgs:
 
     @back_time.setter
     def back_time(self, back_time):
-        """Sets the back_time of this TimeshiftRequestArgs.
+        r"""Sets the back_time of this TimeshiftRequestArgs.
 
         时移时长字段名
 
@@ -72,7 +72,7 @@ class TimeshiftRequestArgs:
 
     @property
     def unit(self):
-        """Gets the unit of this TimeshiftRequestArgs.
+        r"""Gets the unit of this TimeshiftRequestArgs.
 
         单位
 
@@ -83,7 +83,7 @@ class TimeshiftRequestArgs:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this TimeshiftRequestArgs.
+        r"""Sets the unit of this TimeshiftRequestArgs.
 
         单位
 

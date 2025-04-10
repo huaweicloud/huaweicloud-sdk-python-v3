@@ -31,7 +31,7 @@ class ListEdgeCloudRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None, id=None):
-        """ListEdgeCloudRequest
+        r"""ListEdgeCloudRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListEdgeCloudRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEdgeCloudRequest.
+        r"""Gets the offset of this ListEdgeCloudRequest.
 
         偏移量。 当前偏移量，默认为0。
 
@@ -75,7 +75,7 @@ class ListEdgeCloudRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEdgeCloudRequest.
+        r"""Sets the offset of this ListEdgeCloudRequest.
 
         偏移量。 当前偏移量，默认为0。
 
@@ -86,7 +86,7 @@ class ListEdgeCloudRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEdgeCloudRequest.
+        r"""Gets the limit of this ListEdgeCloudRequest.
 
         查询返回边缘业务列表当前页面的数量。 取值范围：0~1000。
 
@@ -97,7 +97,7 @@ class ListEdgeCloudRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEdgeCloudRequest.
+        r"""Sets the limit of this ListEdgeCloudRequest.
 
         查询返回边缘业务列表当前页面的数量。 取值范围：0~1000。
 
@@ -108,7 +108,7 @@ class ListEdgeCloudRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListEdgeCloudRequest.
+        r"""Gets the name of this ListEdgeCloudRequest.
 
         边缘业务名称。
 
@@ -119,7 +119,7 @@ class ListEdgeCloudRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListEdgeCloudRequest.
+        r"""Sets the name of this ListEdgeCloudRequest.
 
         边缘业务名称。
 
@@ -130,7 +130,7 @@ class ListEdgeCloudRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListEdgeCloudRequest.
+        r"""Gets the id of this ListEdgeCloudRequest.
 
         边缘业务ID。
 
@@ -141,7 +141,7 @@ class ListEdgeCloudRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListEdgeCloudRequest.
+        r"""Sets the id of this ListEdgeCloudRequest.
 
         边缘业务ID。
 

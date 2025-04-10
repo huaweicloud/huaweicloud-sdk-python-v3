@@ -25,7 +25,7 @@ class UpdateUsersDatabases:
     }
 
     def __init__(self, name=None):
-        """UpdateUsersDatabases
+        r"""UpdateUsersDatabases
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateUsersDatabases:
 
     @property
     def name(self):
-        """Gets the name of this UpdateUsersDatabases.
+        r"""Gets the name of this UpdateUsersDatabases.
 
         逻辑库名称，不区分大小写，databases和name字段必须同时缺失或者同时存在。  默认值为空
 
@@ -54,7 +54,7 @@ class UpdateUsersDatabases:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateUsersDatabases.
+        r"""Sets the name of this UpdateUsersDatabases.
 
         逻辑库名称，不区分大小写，databases和name字段必须同时缺失或者同时存在。  默认值为空
 

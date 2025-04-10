@@ -27,7 +27,7 @@ class ExpandDesktopsVolumesReq:
     }
 
     def __init__(self, desktop_type=None, desktop_volumes_expansion=None):
-        """ExpandDesktopsVolumesReq
+        r"""ExpandDesktopsVolumesReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExpandDesktopsVolumesReq:
 
     @property
     def desktop_type(self):
-        """Gets the desktop_type of this ExpandDesktopsVolumesReq.
+        r"""Gets the desktop_type of this ExpandDesktopsVolumesReq.
 
         桌面类别  - DESKTOP：普通桌面。 - RENDER-DESKTOP：渲染桌面。
 
@@ -61,7 +61,7 @@ class ExpandDesktopsVolumesReq:
 
     @desktop_type.setter
     def desktop_type(self, desktop_type):
-        """Sets the desktop_type of this ExpandDesktopsVolumesReq.
+        r"""Sets the desktop_type of this ExpandDesktopsVolumesReq.
 
         桌面类别  - DESKTOP：普通桌面。 - RENDER-DESKTOP：渲染桌面。
 
@@ -72,7 +72,7 @@ class ExpandDesktopsVolumesReq:
 
     @property
     def desktop_volumes_expansion(self):
-        """Gets the desktop_volumes_expansion of this ExpandDesktopsVolumesReq.
+        r"""Gets the desktop_volumes_expansion of this ExpandDesktopsVolumesReq.
 
         扩容磁盘参数。
 
@@ -83,7 +83,7 @@ class ExpandDesktopsVolumesReq:
 
     @desktop_volumes_expansion.setter
     def desktop_volumes_expansion(self, desktop_volumes_expansion):
-        """Sets the desktop_volumes_expansion of this ExpandDesktopsVolumesReq.
+        r"""Sets the desktop_volumes_expansion of this ExpandDesktopsVolumesReq.
 
         扩容磁盘参数。
 

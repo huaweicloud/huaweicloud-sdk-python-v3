@@ -35,7 +35,7 @@ class ProductInfo:
     }
 
     def __init__(self, cloud_service_type=None, product_id=None, resource_speccode=None, resource_type=None, resouce_size_measure_id=None, resource_size=None):
-        """ProductInfo
+        r"""ProductInfo
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class ProductInfo:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this ProductInfo.
+        r"""Gets the cloud_service_type of this ProductInfo.
 
         用户购买的云服务的主云服务类型
 
@@ -85,7 +85,7 @@ class ProductInfo:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this ProductInfo.
+        r"""Sets the cloud_service_type of this ProductInfo.
 
         用户购买的云服务的主云服务类型
 
@@ -96,7 +96,7 @@ class ProductInfo:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ProductInfo.
+        r"""Gets the product_id of this ProductInfo.
 
         产品标识，通过订购询价接口获得
 
@@ -107,7 +107,7 @@ class ProductInfo:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ProductInfo.
+        r"""Sets the product_id of this ProductInfo.
 
         产品标识，通过订购询价接口获得
 
@@ -118,7 +118,7 @@ class ProductInfo:
 
     @property
     def resource_speccode(self):
-        """Gets the resource_speccode of this ProductInfo.
+        r"""Gets the resource_speccode of this ProductInfo.
 
         用户购买云服务产品的资源规格
 
@@ -129,7 +129,7 @@ class ProductInfo:
 
     @resource_speccode.setter
     def resource_speccode(self, resource_speccode):
-        """Sets the resource_speccode of this ProductInfo.
+        r"""Sets the resource_speccode of this ProductInfo.
 
         用户购买云服务产品的资源规格
 
@@ -140,7 +140,7 @@ class ProductInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ProductInfo.
+        r"""Gets the resource_type of this ProductInfo.
 
         用户购买云服务产品的资源类型
 
@@ -151,7 +151,7 @@ class ProductInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ProductInfo.
+        r"""Sets the resource_type of this ProductInfo.
 
         用户购买云服务产品的资源类型
 
@@ -162,7 +162,7 @@ class ProductInfo:
 
     @property
     def resouce_size_measure_id(self):
-        """Gets the resouce_size_measure_id of this ProductInfo.
+        r"""Gets the resouce_size_measure_id of this ProductInfo.
 
         资源容量度量标识，购买vss服务时使用14： 15：Mbps（购买带宽时使用） 17：GB（购买云硬盘时使用） 14：个/次
 
@@ -173,7 +173,7 @@ class ProductInfo:
 
     @resouce_size_measure_id.setter
     def resouce_size_measure_id(self, resouce_size_measure_id):
-        """Sets the resouce_size_measure_id of this ProductInfo.
+        r"""Sets the resouce_size_measure_id of this ProductInfo.
 
         资源容量度量标识，购买vss服务时使用14： 15：Mbps（购买带宽时使用） 17：GB（购买云硬盘时使用） 14：个/次
 
@@ -184,7 +184,7 @@ class ProductInfo:
 
     @property
     def resource_size(self):
-        """Gets the resource_size of this ProductInfo.
+        r"""Gets the resource_size of this ProductInfo.
 
         资源容量大小
 
@@ -195,7 +195,7 @@ class ProductInfo:
 
     @resource_size.setter
     def resource_size(self, resource_size):
-        """Sets the resource_size of this ProductInfo.
+        r"""Sets the resource_size of this ProductInfo.
 
         资源容量大小
 

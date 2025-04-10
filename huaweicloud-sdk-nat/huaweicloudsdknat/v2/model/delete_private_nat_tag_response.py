@@ -26,7 +26,7 @@ class DeletePrivateNatTagResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeletePrivateNatTagResponse
+        r"""DeletePrivateNatTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeletePrivateNatTagResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeletePrivateNatTagResponse.
+        r"""Gets the body of this DeletePrivateNatTagResponse.
 
         :return: The body of this DeletePrivateNatTagResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeletePrivateNatTagResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeletePrivateNatTagResponse.
+        r"""Sets the body of this DeletePrivateNatTagResponse.
 
         :param body: The body of this DeletePrivateNatTagResponse.
         :type body: str

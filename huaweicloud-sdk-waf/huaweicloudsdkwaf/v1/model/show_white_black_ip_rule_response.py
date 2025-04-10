@@ -48,7 +48,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, policyid=None, addr=None, white=None, time_mode=None, start=None, terminal=None, ip_group=None, status=None, description=None, timestamp=None):
-        """ShowWhiteBlackIpRuleResponse
+        r"""ShowWhiteBlackIpRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowWhiteBlackIpRuleResponse.
+        r"""Gets the id of this ShowWhiteBlackIpRuleResponse.
 
         规则id
 
@@ -132,7 +132,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowWhiteBlackIpRuleResponse.
+        r"""Sets the id of this ShowWhiteBlackIpRuleResponse.
 
         规则id
 
@@ -143,7 +143,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowWhiteBlackIpRuleResponse.
+        r"""Gets the name of this ShowWhiteBlackIpRuleResponse.
 
         黑白名单规则名称
 
@@ -154,7 +154,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowWhiteBlackIpRuleResponse.
+        r"""Sets the name of this ShowWhiteBlackIpRuleResponse.
 
         黑白名单规则名称
 
@@ -165,7 +165,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this ShowWhiteBlackIpRuleResponse.
+        r"""Gets the policyid of this ShowWhiteBlackIpRuleResponse.
 
         策略id
 
@@ -176,7 +176,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this ShowWhiteBlackIpRuleResponse.
+        r"""Sets the policyid of this ShowWhiteBlackIpRuleResponse.
 
         策略id
 
@@ -187,7 +187,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @property
     def addr(self):
-        """Gets the addr of this ShowWhiteBlackIpRuleResponse.
+        r"""Gets the addr of this ShowWhiteBlackIpRuleResponse.
 
         黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
 
@@ -198,7 +198,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this ShowWhiteBlackIpRuleResponse.
+        r"""Sets the addr of this ShowWhiteBlackIpRuleResponse.
 
         黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
 
@@ -209,7 +209,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @property
     def white(self):
-        """Gets the white of this ShowWhiteBlackIpRuleResponse.
+        r"""Gets the white of this ShowWhiteBlackIpRuleResponse.
 
         防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
@@ -220,7 +220,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @white.setter
     def white(self, white):
-        """Sets the white of this ShowWhiteBlackIpRuleResponse.
+        r"""Sets the white of this ShowWhiteBlackIpRuleResponse.
 
         防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
@@ -231,7 +231,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @property
     def time_mode(self):
-        """Gets the time_mode of this ShowWhiteBlackIpRuleResponse.
+        r"""Gets the time_mode of this ShowWhiteBlackIpRuleResponse.
 
         生效模式，默认为permanent（立即生效）
 
@@ -242,7 +242,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @time_mode.setter
     def time_mode(self, time_mode):
-        """Sets the time_mode of this ShowWhiteBlackIpRuleResponse.
+        r"""Sets the time_mode of this ShowWhiteBlackIpRuleResponse.
 
         生效模式，默认为permanent（立即生效）
 
@@ -253,7 +253,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @property
     def start(self):
-        """Gets the start of this ShowWhiteBlackIpRuleResponse.
+        r"""Gets the start of this ShowWhiteBlackIpRuleResponse.
 
         规则生效开始时间，生效模式为自定义时，此字段才有效
 
@@ -264,7 +264,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ShowWhiteBlackIpRuleResponse.
+        r"""Sets the start of this ShowWhiteBlackIpRuleResponse.
 
         规则生效开始时间，生效模式为自定义时，此字段才有效
 
@@ -275,7 +275,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @property
     def terminal(self):
-        """Gets the terminal of this ShowWhiteBlackIpRuleResponse.
+        r"""Gets the terminal of this ShowWhiteBlackIpRuleResponse.
 
         规则生效结束时间，生效模式为自定义时，此字段才有效
 
@@ -286,7 +286,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this ShowWhiteBlackIpRuleResponse.
+        r"""Sets the terminal of this ShowWhiteBlackIpRuleResponse.
 
         规则生效结束时间，生效模式为自定义时，此字段才有效
 
@@ -297,7 +297,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @property
     def ip_group(self):
-        """Gets the ip_group of this ShowWhiteBlackIpRuleResponse.
+        r"""Gets the ip_group of this ShowWhiteBlackIpRuleResponse.
 
         :return: The ip_group of this ShowWhiteBlackIpRuleResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.IpGroup`
@@ -306,7 +306,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @ip_group.setter
     def ip_group(self, ip_group):
-        """Sets the ip_group of this ShowWhiteBlackIpRuleResponse.
+        r"""Sets the ip_group of this ShowWhiteBlackIpRuleResponse.
 
         :param ip_group: The ip_group of this ShowWhiteBlackIpRuleResponse.
         :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
@@ -315,7 +315,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowWhiteBlackIpRuleResponse.
+        r"""Gets the status of this ShowWhiteBlackIpRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -326,7 +326,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowWhiteBlackIpRuleResponse.
+        r"""Sets the status of this ShowWhiteBlackIpRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -337,7 +337,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowWhiteBlackIpRuleResponse.
+        r"""Gets the description of this ShowWhiteBlackIpRuleResponse.
 
         规则描述
 
@@ -348,7 +348,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowWhiteBlackIpRuleResponse.
+        r"""Sets the description of this ShowWhiteBlackIpRuleResponse.
 
         规则描述
 
@@ -359,7 +359,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ShowWhiteBlackIpRuleResponse.
+        r"""Gets the timestamp of this ShowWhiteBlackIpRuleResponse.
 
         创建规则的时间戳,13位毫秒时间戳
 
@@ -370,7 +370,7 @@ class ShowWhiteBlackIpRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowWhiteBlackIpRuleResponse.
+        r"""Sets the timestamp of this ShowWhiteBlackIpRuleResponse.
 
         创建规则的时间戳,13位毫秒时间戳
 

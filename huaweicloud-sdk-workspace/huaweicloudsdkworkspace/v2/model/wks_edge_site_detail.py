@@ -47,7 +47,7 @@ class WksEdgeSiteDetail:
     }
 
     def __init__(self, id=None, name=None, description=None, availability_zone_id=None, address=None, status=None, created_at=None, updated_at=None, cpu_usage_rate=None, memory_usage_rate=None, capacity_usage_rate=None, site_info=None):
-        """WksEdgeSiteDetail
+        r"""WksEdgeSiteDetail
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class WksEdgeSiteDetail:
 
     @property
     def id(self):
-        """Gets the id of this WksEdgeSiteDetail.
+        r"""Gets the id of this WksEdgeSiteDetail.
 
         边缘小站id。
 
@@ -131,7 +131,7 @@ class WksEdgeSiteDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WksEdgeSiteDetail.
+        r"""Sets the id of this WksEdgeSiteDetail.
 
         边缘小站id。
 
@@ -142,7 +142,7 @@ class WksEdgeSiteDetail:
 
     @property
     def name(self):
-        """Gets the name of this WksEdgeSiteDetail.
+        r"""Gets the name of this WksEdgeSiteDetail.
 
         边缘小站名称。
 
@@ -153,7 +153,7 @@ class WksEdgeSiteDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WksEdgeSiteDetail.
+        r"""Sets the name of this WksEdgeSiteDetail.
 
         边缘小站名称。
 
@@ -164,7 +164,7 @@ class WksEdgeSiteDetail:
 
     @property
     def description(self):
-        """Gets the description of this WksEdgeSiteDetail.
+        r"""Gets the description of this WksEdgeSiteDetail.
 
         边缘小站描述。
 
@@ -175,7 +175,7 @@ class WksEdgeSiteDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this WksEdgeSiteDetail.
+        r"""Sets the description of this WksEdgeSiteDetail.
 
         边缘小站描述。
 
@@ -186,7 +186,7 @@ class WksEdgeSiteDetail:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this WksEdgeSiteDetail.
+        r"""Gets the availability_zone_id of this WksEdgeSiteDetail.
 
         边缘小站的可用区ID。
 
@@ -197,7 +197,7 @@ class WksEdgeSiteDetail:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this WksEdgeSiteDetail.
+        r"""Sets the availability_zone_id of this WksEdgeSiteDetail.
 
         边缘小站的可用区ID。
 
@@ -208,7 +208,7 @@ class WksEdgeSiteDetail:
 
     @property
     def address(self):
-        """Gets the address of this WksEdgeSiteDetail.
+        r"""Gets the address of this WksEdgeSiteDetail.
 
         部署位置。
 
@@ -219,7 +219,7 @@ class WksEdgeSiteDetail:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this WksEdgeSiteDetail.
+        r"""Sets the address of this WksEdgeSiteDetail.
 
         部署位置。
 
@@ -230,7 +230,7 @@ class WksEdgeSiteDetail:
 
     @property
     def status(self):
-        """Gets the status of this WksEdgeSiteDetail.
+        r"""Gets the status of this WksEdgeSiteDetail.
 
         边缘小站的部署状态。 - initial：待部署。 - deploying：部署中。 - available：可用。 - unavailable：不可用。
 
@@ -241,7 +241,7 @@ class WksEdgeSiteDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this WksEdgeSiteDetail.
+        r"""Sets the status of this WksEdgeSiteDetail.
 
         边缘小站的部署状态。 - initial：待部署。 - deploying：部署中。 - available：可用。 - unavailable：不可用。
 
@@ -252,7 +252,7 @@ class WksEdgeSiteDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this WksEdgeSiteDetail.
+        r"""Gets the created_at of this WksEdgeSiteDetail.
 
         边缘小站创建时间。
 
@@ -263,7 +263,7 @@ class WksEdgeSiteDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this WksEdgeSiteDetail.
+        r"""Sets the created_at of this WksEdgeSiteDetail.
 
         边缘小站创建时间。
 
@@ -274,7 +274,7 @@ class WksEdgeSiteDetail:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this WksEdgeSiteDetail.
+        r"""Gets the updated_at of this WksEdgeSiteDetail.
 
         边缘小站更新时间。
 
@@ -285,7 +285,7 @@ class WksEdgeSiteDetail:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this WksEdgeSiteDetail.
+        r"""Sets the updated_at of this WksEdgeSiteDetail.
 
         边缘小站更新时间。
 
@@ -296,7 +296,7 @@ class WksEdgeSiteDetail:
 
     @property
     def cpu_usage_rate(self):
-        """Gets the cpu_usage_rate of this WksEdgeSiteDetail.
+        r"""Gets the cpu_usage_rate of this WksEdgeSiteDetail.
 
         cpu使用率。
 
@@ -307,7 +307,7 @@ class WksEdgeSiteDetail:
 
     @cpu_usage_rate.setter
     def cpu_usage_rate(self, cpu_usage_rate):
-        """Sets the cpu_usage_rate of this WksEdgeSiteDetail.
+        r"""Sets the cpu_usage_rate of this WksEdgeSiteDetail.
 
         cpu使用率。
 
@@ -318,7 +318,7 @@ class WksEdgeSiteDetail:
 
     @property
     def memory_usage_rate(self):
-        """Gets the memory_usage_rate of this WksEdgeSiteDetail.
+        r"""Gets the memory_usage_rate of this WksEdgeSiteDetail.
 
         内存使用率。
 
@@ -329,7 +329,7 @@ class WksEdgeSiteDetail:
 
     @memory_usage_rate.setter
     def memory_usage_rate(self, memory_usage_rate):
-        """Sets the memory_usage_rate of this WksEdgeSiteDetail.
+        r"""Sets the memory_usage_rate of this WksEdgeSiteDetail.
 
         内存使用率。
 
@@ -340,7 +340,7 @@ class WksEdgeSiteDetail:
 
     @property
     def capacity_usage_rate(self):
-        """Gets the capacity_usage_rate of this WksEdgeSiteDetail.
+        r"""Gets the capacity_usage_rate of this WksEdgeSiteDetail.
 
         存储使用率。
 
@@ -351,7 +351,7 @@ class WksEdgeSiteDetail:
 
     @capacity_usage_rate.setter
     def capacity_usage_rate(self, capacity_usage_rate):
-        """Sets the capacity_usage_rate of this WksEdgeSiteDetail.
+        r"""Sets the capacity_usage_rate of this WksEdgeSiteDetail.
 
         存储使用率。
 
@@ -362,7 +362,7 @@ class WksEdgeSiteDetail:
 
     @property
     def site_info(self):
-        """Gets the site_info of this WksEdgeSiteDetail.
+        r"""Gets the site_info of this WksEdgeSiteDetail.
 
         :return: The site_info of this WksEdgeSiteDetail.
         :rtype: :class:`huaweicloudsdkworkspace.v2.SimpleSiteInfo`
@@ -371,7 +371,7 @@ class WksEdgeSiteDetail:
 
     @site_info.setter
     def site_info(self, site_info):
-        """Sets the site_info of this WksEdgeSiteDetail.
+        r"""Sets the site_info of this WksEdgeSiteDetail.
 
         :param site_info: The site_info of this WksEdgeSiteDetail.
         :type site_info: :class:`huaweicloudsdkworkspace.v2.SimpleSiteInfo`

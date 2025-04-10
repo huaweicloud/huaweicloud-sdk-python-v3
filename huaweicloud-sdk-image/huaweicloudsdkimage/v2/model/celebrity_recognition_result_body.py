@@ -29,7 +29,7 @@ class CelebrityRecognitionResultBody:
     }
 
     def __init__(self, confidence=None, face_detail=None, label=None):
-        """CelebrityRecognitionResultBody
+        r"""CelebrityRecognitionResultBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CelebrityRecognitionResultBody:
 
     @property
     def confidence(self):
-        """Gets the confidence of this CelebrityRecognitionResultBody.
+        r"""Gets the confidence of this CelebrityRecognitionResultBody.
 
         置信度，取值范围 0-1。
 
@@ -68,7 +68,7 @@ class CelebrityRecognitionResultBody:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this CelebrityRecognitionResultBody.
+        r"""Sets the confidence of this CelebrityRecognitionResultBody.
 
         置信度，取值范围 0-1。
 
@@ -79,7 +79,7 @@ class CelebrityRecognitionResultBody:
 
     @property
     def face_detail(self):
-        """Gets the face_detail of this CelebrityRecognitionResultBody.
+        r"""Gets the face_detail of this CelebrityRecognitionResultBody.
 
         名人的面部信息，包括4个值：  h：人脸区域高度  w：人脸区域宽度  x：人脸区域左上角到y轴距离  y：人脸区域左上角到x轴距离 
 
@@ -90,7 +90,7 @@ class CelebrityRecognitionResultBody:
 
     @face_detail.setter
     def face_detail(self, face_detail):
-        """Sets the face_detail of this CelebrityRecognitionResultBody.
+        r"""Sets the face_detail of this CelebrityRecognitionResultBody.
 
         名人的面部信息，包括4个值：  h：人脸区域高度  w：人脸区域宽度  x：人脸区域左上角到y轴距离  y：人脸区域左上角到x轴距离 
 
@@ -101,7 +101,7 @@ class CelebrityRecognitionResultBody:
 
     @property
     def label(self):
-        """Gets the label of this CelebrityRecognitionResultBody.
+        r"""Gets the label of this CelebrityRecognitionResultBody.
 
         label为对应的名人信息。
 
@@ -112,7 +112,7 @@ class CelebrityRecognitionResultBody:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this CelebrityRecognitionResultBody.
+        r"""Sets the label of this CelebrityRecognitionResultBody.
 
         label为对应的名人信息。
 

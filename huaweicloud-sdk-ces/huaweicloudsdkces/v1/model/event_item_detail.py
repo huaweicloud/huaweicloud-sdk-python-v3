@@ -41,7 +41,7 @@ class EventItemDetail:
     }
 
     def __init__(self, content=None, group_id=None, resource_id=None, resource_name=None, event_state=None, event_level=None, event_user=None, event_type=None, dimensions=None):
-        """EventItemDetail
+        r"""EventItemDetail
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class EventItemDetail:
 
     @property
     def content(self):
-        """Gets the content of this EventItemDetail.
+        r"""Gets the content of this EventItemDetail.
 
         事件内容，最大长度4096。
 
@@ -110,7 +110,7 @@ class EventItemDetail:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this EventItemDetail.
+        r"""Sets the content of this EventItemDetail.
 
         事件内容，最大长度4096。
 
@@ -121,7 +121,7 @@ class EventItemDetail:
 
     @property
     def group_id(self):
-        """Gets the group_id of this EventItemDetail.
+        r"""Gets the group_id of this EventItemDetail.
 
         所属分组。  资源分组对应的ID，必须传存在的分组ID。
 
@@ -132,7 +132,7 @@ class EventItemDetail:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this EventItemDetail.
+        r"""Sets the group_id of this EventItemDetail.
 
         所属分组。  资源分组对应的ID，必须传存在的分组ID。
 
@@ -143,7 +143,7 @@ class EventItemDetail:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this EventItemDetail.
+        r"""Gets the resource_id of this EventItemDetail.
 
         资源ID，支持字母、数字_ -：，最大长度128。
 
@@ -154,7 +154,7 @@ class EventItemDetail:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this EventItemDetail.
+        r"""Sets the resource_id of this EventItemDetail.
 
         资源ID，支持字母、数字_ -：，最大长度128。
 
@@ -165,7 +165,7 @@ class EventItemDetail:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this EventItemDetail.
+        r"""Gets the resource_name of this EventItemDetail.
 
         资源名称，支持字母 中文 数字_ -. ，最大长度128。
 
@@ -176,7 +176,7 @@ class EventItemDetail:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this EventItemDetail.
+        r"""Sets the resource_name of this EventItemDetail.
 
         资源名称，支持字母 中文 数字_ -. ，最大长度128。
 
@@ -187,7 +187,7 @@ class EventItemDetail:
 
     @property
     def event_state(self):
-        """Gets the event_state of this EventItemDetail.
+        r"""Gets the event_state of this EventItemDetail.
 
         事件状态。  枚举类型：normal\\warning\\incident
 
@@ -198,7 +198,7 @@ class EventItemDetail:
 
     @event_state.setter
     def event_state(self, event_state):
-        """Sets the event_state of this EventItemDetail.
+        r"""Sets the event_state of this EventItemDetail.
 
         事件状态。  枚举类型：normal\\warning\\incident
 
@@ -209,7 +209,7 @@ class EventItemDetail:
 
     @property
     def event_level(self):
-        """Gets the event_level of this EventItemDetail.
+        r"""Gets the event_level of this EventItemDetail.
 
         事件级别。  枚举类型：Critical, Major, Minor, Info
 
@@ -220,7 +220,7 @@ class EventItemDetail:
 
     @event_level.setter
     def event_level(self, event_level):
-        """Sets the event_level of this EventItemDetail.
+        r"""Sets the event_level of this EventItemDetail.
 
         事件级别。  枚举类型：Critical, Major, Minor, Info
 
@@ -231,7 +231,7 @@ class EventItemDetail:
 
     @property
     def event_user(self):
-        """Gets the event_user of this EventItemDetail.
+        r"""Gets the event_user of this EventItemDetail.
 
         事件用户。  支持字母 数字_ -/空格 ，最大长度64。
 
@@ -242,7 +242,7 @@ class EventItemDetail:
 
     @event_user.setter
     def event_user(self, event_user):
-        """Sets the event_user of this EventItemDetail.
+        r"""Sets the event_user of this EventItemDetail.
 
         事件用户。  支持字母 数字_ -/空格 ，最大长度64。
 
@@ -253,7 +253,7 @@ class EventItemDetail:
 
     @property
     def event_type(self):
-        """Gets the event_type of this EventItemDetail.
+        r"""Gets the event_type of this EventItemDetail.
 
         事件类型。 枚举类型，EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，用户自已不能上报，只能传EVENT.CUSTOM。
 
@@ -264,7 +264,7 @@ class EventItemDetail:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this EventItemDetail.
+        r"""Sets the event_type of this EventItemDetail.
 
         事件类型。 枚举类型，EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，用户自已不能上报，只能传EVENT.CUSTOM。
 
@@ -275,7 +275,7 @@ class EventItemDetail:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this EventItemDetail.
+        r"""Gets the dimensions of this EventItemDetail.
 
         一个或者多个资源维度。
 
@@ -286,7 +286,7 @@ class EventItemDetail:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this EventItemDetail.
+        r"""Sets the dimensions of this EventItemDetail.
 
         一个或者多个资源维度。
 

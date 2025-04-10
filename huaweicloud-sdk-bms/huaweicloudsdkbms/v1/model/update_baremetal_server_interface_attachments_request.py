@@ -29,7 +29,7 @@ class UpdateBaremetalServerInterfaceAttachmentsRequest:
     }
 
     def __init__(self, port_id=None, server_id=None, body=None):
-        """UpdateBaremetalServerInterfaceAttachmentsRequest
+        r"""UpdateBaremetalServerInterfaceAttachmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateBaremetalServerInterfaceAttachmentsRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this UpdateBaremetalServerInterfaceAttachmentsRequest.
+        r"""Gets the port_id of this UpdateBaremetalServerInterfaceAttachmentsRequest.
 
         :return: The port_id of this UpdateBaremetalServerInterfaceAttachmentsRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class UpdateBaremetalServerInterfaceAttachmentsRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this UpdateBaremetalServerInterfaceAttachmentsRequest.
+        r"""Sets the port_id of this UpdateBaremetalServerInterfaceAttachmentsRequest.
 
         :param port_id: The port_id of this UpdateBaremetalServerInterfaceAttachmentsRequest.
         :type port_id: str
@@ -73,7 +73,7 @@ class UpdateBaremetalServerInterfaceAttachmentsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this UpdateBaremetalServerInterfaceAttachmentsRequest.
+        r"""Gets the server_id of this UpdateBaremetalServerInterfaceAttachmentsRequest.
 
         :return: The server_id of this UpdateBaremetalServerInterfaceAttachmentsRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class UpdateBaremetalServerInterfaceAttachmentsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this UpdateBaremetalServerInterfaceAttachmentsRequest.
+        r"""Sets the server_id of this UpdateBaremetalServerInterfaceAttachmentsRequest.
 
         :param server_id: The server_id of this UpdateBaremetalServerInterfaceAttachmentsRequest.
         :type server_id: str
@@ -91,7 +91,7 @@ class UpdateBaremetalServerInterfaceAttachmentsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateBaremetalServerInterfaceAttachmentsRequest.
+        r"""Gets the body of this UpdateBaremetalServerInterfaceAttachmentsRequest.
 
         :return: The body of this UpdateBaremetalServerInterfaceAttachmentsRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerInterfaceAttachmentsReq`
@@ -100,7 +100,7 @@ class UpdateBaremetalServerInterfaceAttachmentsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBaremetalServerInterfaceAttachmentsRequest.
+        r"""Sets the body of this UpdateBaremetalServerInterfaceAttachmentsRequest.
 
         :param body: The body of this UpdateBaremetalServerInterfaceAttachmentsRequest.
         :type body: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerInterfaceAttachmentsReq`

@@ -29,7 +29,7 @@ class VideoCreateRequestData:
     }
 
     def __init__(self, url=None, frame_interval=None, language=None):
-        """VideoCreateRequestData
+        r"""VideoCreateRequestData
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class VideoCreateRequestData:
 
     @property
     def url(self):
-        """Gets the url of this VideoCreateRequestData.
+        r"""Gets the url of this VideoCreateRequestData.
 
         视频url地址
 
@@ -67,7 +67,7 @@ class VideoCreateRequestData:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this VideoCreateRequestData.
+        r"""Sets the url of this VideoCreateRequestData.
 
         视频url地址
 
@@ -78,7 +78,7 @@ class VideoCreateRequestData:
 
     @property
     def frame_interval(self):
-        """Gets the frame_interval of this VideoCreateRequestData.
+        r"""Gets the frame_interval of this VideoCreateRequestData.
 
         截帧频率间隔，单位为秒，取值范围为1~60s；若不传递默认5s截帧一次
 
@@ -89,7 +89,7 @@ class VideoCreateRequestData:
 
     @frame_interval.setter
     def frame_interval(self, frame_interval):
-        """Sets the frame_interval of this VideoCreateRequestData.
+        r"""Sets the frame_interval of this VideoCreateRequestData.
 
         截帧频率间隔，单位为秒，取值范围为1~60s；若不传递默认5s截帧一次
 
@@ -100,7 +100,7 @@ class VideoCreateRequestData:
 
     @property
     def language(self):
-        """Gets the language of this VideoCreateRequestData.
+        r"""Gets the language of this VideoCreateRequestData.
 
         支持的语言，默认为zh zh：中文
 
@@ -111,7 +111,7 @@ class VideoCreateRequestData:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this VideoCreateRequestData.
+        r"""Sets the language of this VideoCreateRequestData.
 
         支持的语言，默认为zh zh：中文
 

@@ -29,7 +29,7 @@ class UpdateAlertConfigRequestBody:
     }
 
     def __init__(self, display_name=None, topic_urn=None, warn_config=None):
-        """UpdateAlertConfigRequestBody
+        r"""UpdateAlertConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateAlertConfigRequestBody:
 
     @property
     def display_name(self):
-        """Gets the display_name of this UpdateAlertConfigRequestBody.
+        r"""Gets the display_name of this UpdateAlertConfigRequestBody.
 
         告警群组描述。
 
@@ -65,7 +65,7 @@ class UpdateAlertConfigRequestBody:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this UpdateAlertConfigRequestBody.
+        r"""Sets the display_name of this UpdateAlertConfigRequestBody.
 
         告警群组描述。
 
@@ -76,7 +76,7 @@ class UpdateAlertConfigRequestBody:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this UpdateAlertConfigRequestBody.
+        r"""Gets the topic_urn of this UpdateAlertConfigRequestBody.
 
         告警群组的唯一标识。
 
@@ -87,7 +87,7 @@ class UpdateAlertConfigRequestBody:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this UpdateAlertConfigRequestBody.
+        r"""Sets the topic_urn of this UpdateAlertConfigRequestBody.
 
         告警群组的唯一标识。
 
@@ -98,7 +98,7 @@ class UpdateAlertConfigRequestBody:
 
     @property
     def warn_config(self):
-        """Gets the warn_config of this UpdateAlertConfigRequestBody.
+        r"""Gets the warn_config of this UpdateAlertConfigRequestBody.
 
         :return: The warn_config of this UpdateAlertConfigRequestBody.
         :rtype: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigRequestBodyWarnConfig`
@@ -107,7 +107,7 @@ class UpdateAlertConfigRequestBody:
 
     @warn_config.setter
     def warn_config(self, warn_config):
-        """Sets the warn_config of this UpdateAlertConfigRequestBody.
+        r"""Sets the warn_config of this UpdateAlertConfigRequestBody.
 
         :param warn_config: The warn_config of this UpdateAlertConfigRequestBody.
         :type warn_config: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigRequestBodyWarnConfig`

@@ -31,7 +31,7 @@ class DocFailedOfUpload:
     }
 
     def __init__(self, key=None, labels=None, error_code=None, error_message=None):
-        """DocFailedOfUpload
+        r"""DocFailedOfUpload
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DocFailedOfUpload:
 
     @property
     def key(self):
-        """Gets the key of this DocFailedOfUpload.
+        r"""Gets the key of this DocFailedOfUpload.
 
         配置项的key值
 
@@ -75,7 +75,7 @@ class DocFailedOfUpload:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DocFailedOfUpload.
+        r"""Sets the key of this DocFailedOfUpload.
 
         配置项的key值
 
@@ -86,7 +86,7 @@ class DocFailedOfUpload:
 
     @property
     def labels(self):
-        """Gets the labels of this DocFailedOfUpload.
+        r"""Gets the labels of this DocFailedOfUpload.
 
         配置项的labels值
 
@@ -97,7 +97,7 @@ class DocFailedOfUpload:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this DocFailedOfUpload.
+        r"""Sets the labels of this DocFailedOfUpload.
 
         配置项的labels值
 
@@ -108,7 +108,7 @@ class DocFailedOfUpload:
 
     @property
     def error_code(self):
-        """Gets the error_code of this DocFailedOfUpload.
+        r"""Gets the error_code of this DocFailedOfUpload.
 
         导入失败的错误码
 
@@ -119,7 +119,7 @@ class DocFailedOfUpload:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DocFailedOfUpload.
+        r"""Sets the error_code of this DocFailedOfUpload.
 
         导入失败的错误码
 
@@ -130,7 +130,7 @@ class DocFailedOfUpload:
 
     @property
     def error_message(self):
-        """Gets the error_message of this DocFailedOfUpload.
+        r"""Gets the error_message of this DocFailedOfUpload.
 
         导入失败的原因
 
@@ -141,7 +141,7 @@ class DocFailedOfUpload:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this DocFailedOfUpload.
+        r"""Sets the error_message of this DocFailedOfUpload.
 
         导入失败的原因
 

@@ -32,7 +32,7 @@ class AssociateRouteTableRequest:
     }
 
     def __init__(self, x_client_token=None, er_id=None, route_table_id=None, body=None):
-        """AssociateRouteTableRequest
+        r"""AssociateRouteTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class AssociateRouteTableRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this AssociateRouteTableRequest.
+        r"""Gets the x_client_token of this AssociateRouteTableRequest.
 
         幂等性标识
 
@@ -74,7 +74,7 @@ class AssociateRouteTableRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this AssociateRouteTableRequest.
+        r"""Sets the x_client_token of this AssociateRouteTableRequest.
 
         幂等性标识
 
@@ -85,7 +85,7 @@ class AssociateRouteTableRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this AssociateRouteTableRequest.
+        r"""Gets the er_id of this AssociateRouteTableRequest.
 
         企业路由器实例ID
 
@@ -96,7 +96,7 @@ class AssociateRouteTableRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this AssociateRouteTableRequest.
+        r"""Sets the er_id of this AssociateRouteTableRequest.
 
         企业路由器实例ID
 
@@ -107,7 +107,7 @@ class AssociateRouteTableRequest:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this AssociateRouteTableRequest.
+        r"""Gets the route_table_id of this AssociateRouteTableRequest.
 
         路由表ID
 
@@ -118,7 +118,7 @@ class AssociateRouteTableRequest:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this AssociateRouteTableRequest.
+        r"""Sets the route_table_id of this AssociateRouteTableRequest.
 
         路由表ID
 
@@ -129,7 +129,7 @@ class AssociateRouteTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateRouteTableRequest.
+        r"""Gets the body of this AssociateRouteTableRequest.
 
         :return: The body of this AssociateRouteTableRequest.
         :rtype: :class:`huaweicloudsdker.v3.AssociationRequestBody`
@@ -138,7 +138,7 @@ class AssociateRouteTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateRouteTableRequest.
+        r"""Sets the body of this AssociateRouteTableRequest.
 
         :param body: The body of this AssociateRouteTableRequest.
         :type body: :class:`huaweicloudsdker.v3.AssociationRequestBody`

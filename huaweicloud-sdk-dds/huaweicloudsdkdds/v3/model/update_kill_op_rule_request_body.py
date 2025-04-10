@@ -27,7 +27,7 @@ class UpdateKillOpRuleRequestBody:
     }
 
     def __init__(self, ids=None, action=None):
-        """UpdateKillOpRuleRequestBody
+        r"""UpdateKillOpRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateKillOpRuleRequestBody:
 
     @property
     def ids(self):
-        """Gets the ids of this UpdateKillOpRuleRequestBody.
+        r"""Gets the ids of this UpdateKillOpRuleRequestBody.
 
         killOp规则ID列表。
 
@@ -59,7 +59,7 @@ class UpdateKillOpRuleRequestBody:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this UpdateKillOpRuleRequestBody.
+        r"""Sets the ids of this UpdateKillOpRuleRequestBody.
 
         killOp规则ID列表。
 
@@ -70,7 +70,7 @@ class UpdateKillOpRuleRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this UpdateKillOpRuleRequestBody.
+        r"""Gets the action of this UpdateKillOpRuleRequestBody.
 
         启用/禁用 killOp规则。  - enable，启用killOp规则。 - disable，禁用killOp规则。
 
@@ -81,7 +81,7 @@ class UpdateKillOpRuleRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateKillOpRuleRequestBody.
+        r"""Sets the action of this UpdateKillOpRuleRequestBody.
 
         启用/禁用 killOp规则。  - enable，启用killOp规则。 - disable，禁用killOp规则。
 

@@ -49,7 +49,7 @@ class ImportDataClassificationRuleDto:
     }
 
     def __init__(self, uuid=None, classification_type=None, secrecy_level=None, name=None, enable=None, method=None, description=None, category_id=None, builtin_rule_id=None, updated_by=None, update_at=None, created_by=None, create_at=None):
-        """ImportDataClassificationRuleDto
+        r"""ImportDataClassificationRuleDto
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ImportDataClassificationRuleDto:
 
     @property
     def uuid(self):
-        """Gets the uuid of this ImportDataClassificationRuleDto.
+        r"""Gets the uuid of this ImportDataClassificationRuleDto.
 
         数据识别规则id。
 
@@ -138,7 +138,7 @@ class ImportDataClassificationRuleDto:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this ImportDataClassificationRuleDto.
+        r"""Sets the uuid of this ImportDataClassificationRuleDto.
 
         数据识别规则id。
 
@@ -149,7 +149,7 @@ class ImportDataClassificationRuleDto:
 
     @property
     def classification_type(self):
-        """Gets the classification_type of this ImportDataClassificationRuleDto.
+        r"""Gets the classification_type of this ImportDataClassificationRuleDto.
 
         识别规则类型 * BUILTIN 内置 * CUSTOM 自定义
 
@@ -160,7 +160,7 @@ class ImportDataClassificationRuleDto:
 
     @classification_type.setter
     def classification_type(self, classification_type):
-        """Sets the classification_type of this ImportDataClassificationRuleDto.
+        r"""Sets the classification_type of this ImportDataClassificationRuleDto.
 
         识别规则类型 * BUILTIN 内置 * CUSTOM 自定义
 
@@ -171,7 +171,7 @@ class ImportDataClassificationRuleDto:
 
     @property
     def secrecy_level(self):
-        """Gets the secrecy_level of this ImportDataClassificationRuleDto.
+        r"""Gets the secrecy_level of this ImportDataClassificationRuleDto.
 
         数据密级id。
 
@@ -182,7 +182,7 @@ class ImportDataClassificationRuleDto:
 
     @secrecy_level.setter
     def secrecy_level(self, secrecy_level):
-        """Sets the secrecy_level of this ImportDataClassificationRuleDto.
+        r"""Sets the secrecy_level of this ImportDataClassificationRuleDto.
 
         数据密级id。
 
@@ -193,7 +193,7 @@ class ImportDataClassificationRuleDto:
 
     @property
     def name(self):
-        """Gets the name of this ImportDataClassificationRuleDto.
+        r"""Gets the name of this ImportDataClassificationRuleDto.
 
         数据识别规则名称。
 
@@ -204,7 +204,7 @@ class ImportDataClassificationRuleDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImportDataClassificationRuleDto.
+        r"""Sets the name of this ImportDataClassificationRuleDto.
 
         数据识别规则名称。
 
@@ -215,7 +215,7 @@ class ImportDataClassificationRuleDto:
 
     @property
     def enable(self):
-        """Gets the enable of this ImportDataClassificationRuleDto.
+        r"""Gets the enable of this ImportDataClassificationRuleDto.
 
         是否启用。
 
@@ -226,7 +226,7 @@ class ImportDataClassificationRuleDto:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this ImportDataClassificationRuleDto.
+        r"""Sets the enable of this ImportDataClassificationRuleDto.
 
         是否启用。
 
@@ -237,7 +237,7 @@ class ImportDataClassificationRuleDto:
 
     @property
     def method(self):
-        """Gets the method of this ImportDataClassificationRuleDto.
+        r"""Gets the method of this ImportDataClassificationRuleDto.
 
         识别规则类型 * NONE 无 * REGULAR 正则表达式 * DEFAULT 默认
 
@@ -248,7 +248,7 @@ class ImportDataClassificationRuleDto:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this ImportDataClassificationRuleDto.
+        r"""Sets the method of this ImportDataClassificationRuleDto.
 
         识别规则类型 * NONE 无 * REGULAR 正则表达式 * DEFAULT 默认
 
@@ -259,7 +259,7 @@ class ImportDataClassificationRuleDto:
 
     @property
     def description(self):
-        """Gets the description of this ImportDataClassificationRuleDto.
+        r"""Gets the description of this ImportDataClassificationRuleDto.
 
         描述。
 
@@ -270,7 +270,7 @@ class ImportDataClassificationRuleDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ImportDataClassificationRuleDto.
+        r"""Sets the description of this ImportDataClassificationRuleDto.
 
         描述。
 
@@ -281,7 +281,7 @@ class ImportDataClassificationRuleDto:
 
     @property
     def category_id(self):
-        """Gets the category_id of this ImportDataClassificationRuleDto.
+        r"""Gets the category_id of this ImportDataClassificationRuleDto.
 
         数据分类id。
 
@@ -292,7 +292,7 @@ class ImportDataClassificationRuleDto:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this ImportDataClassificationRuleDto.
+        r"""Sets the category_id of this ImportDataClassificationRuleDto.
 
         数据分类id。
 
@@ -303,7 +303,7 @@ class ImportDataClassificationRuleDto:
 
     @property
     def builtin_rule_id(self):
-        """Gets the builtin_rule_id of this ImportDataClassificationRuleDto.
+        r"""Gets the builtin_rule_id of this ImportDataClassificationRuleDto.
 
         预置规则id。
 
@@ -314,7 +314,7 @@ class ImportDataClassificationRuleDto:
 
     @builtin_rule_id.setter
     def builtin_rule_id(self, builtin_rule_id):
-        """Sets the builtin_rule_id of this ImportDataClassificationRuleDto.
+        r"""Sets the builtin_rule_id of this ImportDataClassificationRuleDto.
 
         预置规则id。
 
@@ -325,7 +325,7 @@ class ImportDataClassificationRuleDto:
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this ImportDataClassificationRuleDto.
+        r"""Gets the updated_by of this ImportDataClassificationRuleDto.
 
         更新人。
 
@@ -336,7 +336,7 @@ class ImportDataClassificationRuleDto:
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this ImportDataClassificationRuleDto.
+        r"""Sets the updated_by of this ImportDataClassificationRuleDto.
 
         更新人。
 
@@ -347,7 +347,7 @@ class ImportDataClassificationRuleDto:
 
     @property
     def update_at(self):
-        """Gets the update_at of this ImportDataClassificationRuleDto.
+        r"""Gets the update_at of this ImportDataClassificationRuleDto.
 
         更新时间。
 
@@ -358,7 +358,7 @@ class ImportDataClassificationRuleDto:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this ImportDataClassificationRuleDto.
+        r"""Sets the update_at of this ImportDataClassificationRuleDto.
 
         更新时间。
 
@@ -369,7 +369,7 @@ class ImportDataClassificationRuleDto:
 
     @property
     def created_by(self):
-        """Gets the created_by of this ImportDataClassificationRuleDto.
+        r"""Gets the created_by of this ImportDataClassificationRuleDto.
 
         创建人。
 
@@ -380,7 +380,7 @@ class ImportDataClassificationRuleDto:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this ImportDataClassificationRuleDto.
+        r"""Sets the created_by of this ImportDataClassificationRuleDto.
 
         创建人。
 
@@ -391,7 +391,7 @@ class ImportDataClassificationRuleDto:
 
     @property
     def create_at(self):
-        """Gets the create_at of this ImportDataClassificationRuleDto.
+        r"""Gets the create_at of this ImportDataClassificationRuleDto.
 
         创建时间。
 
@@ -402,7 +402,7 @@ class ImportDataClassificationRuleDto:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this ImportDataClassificationRuleDto.
+        r"""Sets the create_at of this ImportDataClassificationRuleDto.
 
         创建时间。
 

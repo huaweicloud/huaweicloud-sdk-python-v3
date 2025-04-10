@@ -27,7 +27,7 @@ class TagWithMultiValue:
     }
 
     def __init__(self, key=None, values=None):
-        """TagWithMultiValue
+        r"""TagWithMultiValue
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TagWithMultiValue:
 
     @property
     def key(self):
-        """Gets the key of this TagWithMultiValue.
+        r"""Gets the key of this TagWithMultiValue.
 
         键。标签的key值不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
 
@@ -60,7 +60,7 @@ class TagWithMultiValue:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagWithMultiValue.
+        r"""Sets the key of this TagWithMultiValue.
 
         键。标签的key值不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
 
@@ -71,7 +71,7 @@ class TagWithMultiValue:
 
     @property
     def values(self):
-        """Gets the values of this TagWithMultiValue.
+        r"""Gets the values of this TagWithMultiValue.
 
         值。标签的value值不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
 
@@ -82,7 +82,7 @@ class TagWithMultiValue:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this TagWithMultiValue.
+        r"""Sets the values of this TagWithMultiValue.
 
         值。标签的value值不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
 

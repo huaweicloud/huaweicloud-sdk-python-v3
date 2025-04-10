@@ -26,7 +26,7 @@ class ListStackEventsResponse(SdkResponse):
     }
 
     def __init__(self, stack_events=None):
-        """ListStackEventsResponse
+        r"""ListStackEventsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListStackEventsResponse(SdkResponse):
 
     @property
     def stack_events(self):
-        """Gets the stack_events of this ListStackEventsResponse.
+        r"""Gets the stack_events of this ListStackEventsResponse.
 
         资源栈事件列表
 
@@ -55,7 +55,7 @@ class ListStackEventsResponse(SdkResponse):
 
     @stack_events.setter
     def stack_events(self, stack_events):
-        """Sets the stack_events of this ListStackEventsResponse.
+        r"""Sets the stack_events of this ListStackEventsResponse.
 
         资源栈事件列表
 

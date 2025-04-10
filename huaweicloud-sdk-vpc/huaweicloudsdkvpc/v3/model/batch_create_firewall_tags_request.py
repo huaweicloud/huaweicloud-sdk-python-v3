@@ -27,7 +27,7 @@ class BatchCreateFirewallTagsRequest:
     }
 
     def __init__(self, firewall_id=None, body=None):
-        """BatchCreateFirewallTagsRequest
+        r"""BatchCreateFirewallTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateFirewallTagsRequest:
 
     @property
     def firewall_id(self):
-        """Gets the firewall_id of this BatchCreateFirewallTagsRequest.
+        r"""Gets the firewall_id of this BatchCreateFirewallTagsRequest.
 
         功能说明：ACL唯一标识 取值范围：合法UUID 约束：ID对应的ACL必须存在
 
@@ -60,7 +60,7 @@ class BatchCreateFirewallTagsRequest:
 
     @firewall_id.setter
     def firewall_id(self, firewall_id):
-        """Sets the firewall_id of this BatchCreateFirewallTagsRequest.
+        r"""Sets the firewall_id of this BatchCreateFirewallTagsRequest.
 
         功能说明：ACL唯一标识 取值范围：合法UUID 约束：ID对应的ACL必须存在
 
@@ -71,7 +71,7 @@ class BatchCreateFirewallTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateFirewallTagsRequest.
+        r"""Gets the body of this BatchCreateFirewallTagsRequest.
 
         :return: The body of this BatchCreateFirewallTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreateFirewallTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateFirewallTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateFirewallTagsRequest.
+        r"""Sets the body of this BatchCreateFirewallTagsRequest.
 
         :param body: The body of this BatchCreateFirewallTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.BatchCreateFirewallTagsRequestBody`

@@ -43,7 +43,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     }
 
     def __init__(self, plugins_list=None, display_name=None, business_type=None, unique_id=None, conditions=None, addables=None, editable=None, removable=None, cloneable=None, disabled=None):
-        """FullStagePluginsRelationVOFullStagePluginsItemList
+        r"""FullStagePluginsRelationVOFullStagePluginsItemList
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @property
     def plugins_list(self):
-        """Gets the plugins_list of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Gets the plugins_list of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         插件列表
 
@@ -117,7 +117,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @plugins_list.setter
     def plugins_list(self, plugins_list):
-        """Sets the plugins_list of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Sets the plugins_list of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         插件列表
 
@@ -128,7 +128,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @property
     def display_name(self):
-        """Gets the display_name of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Gets the display_name of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         展示名
 
@@ -139,7 +139,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Sets the display_name of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         展示名
 
@@ -150,7 +150,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @property
     def business_type(self):
-        """Gets the business_type of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Gets the business_type of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         业务类型
 
@@ -161,7 +161,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Sets the business_type of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         业务类型
 
@@ -172,7 +172,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @property
     def unique_id(self):
-        """Gets the unique_id of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Gets the unique_id of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         唯一ID
 
@@ -183,7 +183,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @unique_id.setter
     def unique_id(self, unique_id):
-        """Sets the unique_id of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Sets the unique_id of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         唯一ID
 
@@ -194,7 +194,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @property
     def conditions(self):
-        """Gets the conditions of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Gets the conditions of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         条件
 
@@ -205,7 +205,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Sets the conditions of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         条件
 
@@ -216,7 +216,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @property
     def addables(self):
-        """Gets the addables of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Gets the addables of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         额外属性
 
@@ -227,7 +227,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @addables.setter
     def addables(self, addables):
-        """Sets the addables of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Sets the addables of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         额外属性
 
@@ -238,7 +238,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @property
     def editable(self):
-        """Gets the editable of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Gets the editable of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         是否可编辑
 
@@ -249,7 +249,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @editable.setter
     def editable(self, editable):
-        """Sets the editable of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Sets the editable of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         是否可编辑
 
@@ -260,7 +260,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @property
     def removable(self):
-        """Gets the removable of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Gets the removable of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         是否可移除
 
@@ -271,7 +271,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @removable.setter
     def removable(self, removable):
-        """Sets the removable of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Sets the removable of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         是否可移除
 
@@ -282,7 +282,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @property
     def cloneable(self):
-        """Gets the cloneable of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Gets the cloneable of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         是否可复制
 
@@ -293,7 +293,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @cloneable.setter
     def cloneable(self, cloneable):
-        """Sets the cloneable of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Sets the cloneable of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         是否可复制
 
@@ -304,7 +304,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @property
     def disabled(self):
-        """Gets the disabled of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Gets the disabled of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         禁用
 
@@ -315,7 +315,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this FullStagePluginsRelationVOFullStagePluginsItemList.
+        r"""Sets the disabled of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
         禁用
 

@@ -41,7 +41,7 @@ class FileRedirectionOptionsFluidControlOptions:
     }
 
     def __init__(self, good_network_latency=None, normal_network_latency=None, poor_network_latency=None, reducing_step=None, slow_increasing_step=None, quick_increasing_step=None, start_speed=None, test_block_size=None, test_time_gap=None):
-        """FileRedirectionOptionsFluidControlOptions
+        r"""FileRedirectionOptionsFluidControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @property
     def good_network_latency(self):
-        """Gets the good_network_latency of this FileRedirectionOptionsFluidControlOptions.
+        r"""Gets the good_network_latency of this FileRedirectionOptionsFluidControlOptions.
 
         网络优的延时阈值（ms）。取值范围为[1-1000]。默认：30。
 
@@ -110,7 +110,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @good_network_latency.setter
     def good_network_latency(self, good_network_latency):
-        """Sets the good_network_latency of this FileRedirectionOptionsFluidControlOptions.
+        r"""Sets the good_network_latency of this FileRedirectionOptionsFluidControlOptions.
 
         网络优的延时阈值（ms）。取值范围为[1-1000]。默认：30。
 
@@ -121,7 +121,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @property
     def normal_network_latency(self):
-        """Gets the normal_network_latency of this FileRedirectionOptionsFluidControlOptions.
+        r"""Gets the normal_network_latency of this FileRedirectionOptionsFluidControlOptions.
 
         网络一般的延时阈值（ms）。取值范围为[1-1000]。默认：70。
 
@@ -132,7 +132,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @normal_network_latency.setter
     def normal_network_latency(self, normal_network_latency):
-        """Sets the normal_network_latency of this FileRedirectionOptionsFluidControlOptions.
+        r"""Sets the normal_network_latency of this FileRedirectionOptionsFluidControlOptions.
 
         网络一般的延时阈值（ms）。取值范围为[1-1000]。默认：70。
 
@@ -143,7 +143,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @property
     def poor_network_latency(self):
-        """Gets the poor_network_latency of this FileRedirectionOptionsFluidControlOptions.
+        r"""Gets the poor_network_latency of this FileRedirectionOptionsFluidControlOptions.
 
         网络差的延时阈值（ms）。取值范围为[1-1000]。默认：100。
 
@@ -154,7 +154,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @poor_network_latency.setter
     def poor_network_latency(self, poor_network_latency):
-        """Sets the poor_network_latency of this FileRedirectionOptionsFluidControlOptions.
+        r"""Sets the poor_network_latency of this FileRedirectionOptionsFluidControlOptions.
 
         网络差的延时阈值（ms）。取值范围为[1-1000]。默认：100。
 
@@ -165,7 +165,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @property
     def reducing_step(self):
-        """Gets the reducing_step of this FileRedirectionOptionsFluidControlOptions.
+        r"""Gets the reducing_step of this FileRedirectionOptionsFluidControlOptions.
 
         降速步伐（KB）。取值范围为[1-100]。默认：20。
 
@@ -176,7 +176,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @reducing_step.setter
     def reducing_step(self, reducing_step):
-        """Sets the reducing_step of this FileRedirectionOptionsFluidControlOptions.
+        r"""Sets the reducing_step of this FileRedirectionOptionsFluidControlOptions.
 
         降速步伐（KB）。取值范围为[1-100]。默认：20。
 
@@ -187,7 +187,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @property
     def slow_increasing_step(self):
-        """Gets the slow_increasing_step of this FileRedirectionOptionsFluidControlOptions.
+        r"""Gets the slow_increasing_step of this FileRedirectionOptionsFluidControlOptions.
 
         慢增速步伐（KB）。取值范围为[1-100]。默认：10。
 
@@ -198,7 +198,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @slow_increasing_step.setter
     def slow_increasing_step(self, slow_increasing_step):
-        """Sets the slow_increasing_step of this FileRedirectionOptionsFluidControlOptions.
+        r"""Sets the slow_increasing_step of this FileRedirectionOptionsFluidControlOptions.
 
         慢增速步伐（KB）。取值范围为[1-100]。默认：10。
 
@@ -209,7 +209,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @property
     def quick_increasing_step(self):
-        """Gets the quick_increasing_step of this FileRedirectionOptionsFluidControlOptions.
+        r"""Gets the quick_increasing_step of this FileRedirectionOptionsFluidControlOptions.
 
         快增速步伐（KB）。取值范围为[1-100]。默认：20。
 
@@ -220,7 +220,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @quick_increasing_step.setter
     def quick_increasing_step(self, quick_increasing_step):
-        """Sets the quick_increasing_step of this FileRedirectionOptionsFluidControlOptions.
+        r"""Sets the quick_increasing_step of this FileRedirectionOptionsFluidControlOptions.
 
         快增速步伐（KB）。取值范围为[1-100]。默认：20。
 
@@ -231,7 +231,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @property
     def start_speed(self):
-        """Gets the start_speed of this FileRedirectionOptionsFluidControlOptions.
+        r"""Gets the start_speed of this FileRedirectionOptionsFluidControlOptions.
 
         传输初始速度（KB/s）。取值范围为[1-10240]。默认：1024。
 
@@ -242,7 +242,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @start_speed.setter
     def start_speed(self, start_speed):
-        """Sets the start_speed of this FileRedirectionOptionsFluidControlOptions.
+        r"""Sets the start_speed of this FileRedirectionOptionsFluidControlOptions.
 
         传输初始速度（KB/s）。取值范围为[1-10240]。默认：1024。
 
@@ -253,7 +253,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @property
     def test_block_size(self):
-        """Gets the test_block_size of this FileRedirectionOptionsFluidControlOptions.
+        r"""Gets the test_block_size of this FileRedirectionOptionsFluidControlOptions.
 
         测速块大小（KB）。取值范围为[64-1024]。默认：64。
 
@@ -264,7 +264,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @test_block_size.setter
     def test_block_size(self, test_block_size):
-        """Sets the test_block_size of this FileRedirectionOptionsFluidControlOptions.
+        r"""Sets the test_block_size of this FileRedirectionOptionsFluidControlOptions.
 
         测速块大小（KB）。取值范围为[64-1024]。默认：64。
 
@@ -275,7 +275,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @property
     def test_time_gap(self):
-        """Gets the test_time_gap of this FileRedirectionOptionsFluidControlOptions.
+        r"""Gets the test_time_gap of this FileRedirectionOptionsFluidControlOptions.
 
         测速块时间间隔（ms）。取值范围为[1000-100000]。默认：10000。
 
@@ -286,7 +286,7 @@ class FileRedirectionOptionsFluidControlOptions:
 
     @test_time_gap.setter
     def test_time_gap(self, test_time_gap):
-        """Sets the test_time_gap of this FileRedirectionOptionsFluidControlOptions.
+        r"""Sets the test_time_gap of this FileRedirectionOptionsFluidControlOptions.
 
         测速块时间间隔（ms）。取值范围为[1000-100000]。默认：10000。
 

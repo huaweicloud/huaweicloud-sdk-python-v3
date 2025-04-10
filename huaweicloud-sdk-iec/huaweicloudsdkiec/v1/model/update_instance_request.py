@@ -27,7 +27,7 @@ class UpdateInstanceRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """UpdateInstanceRequest
+        r"""UpdateInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateInstanceRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this UpdateInstanceRequest.
+        r"""Gets the server_id of this UpdateInstanceRequest.
 
         边缘实例ID。
 
@@ -60,7 +60,7 @@ class UpdateInstanceRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this UpdateInstanceRequest.
+        r"""Sets the server_id of this UpdateInstanceRequest.
 
         边缘实例ID。
 
@@ -71,7 +71,7 @@ class UpdateInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceRequest.
+        r"""Gets the body of this UpdateInstanceRequest.
 
         :return: The body of this UpdateInstanceRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateInstanceRequestBody`
@@ -80,7 +80,7 @@ class UpdateInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceRequest.
+        r"""Sets the body of this UpdateInstanceRequest.
 
         :param body: The body of this UpdateInstanceRequest.
         :type body: :class:`huaweicloudsdkiec.v1.UpdateInstanceRequestBody`

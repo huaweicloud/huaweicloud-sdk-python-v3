@@ -35,7 +35,7 @@ class CreateResizeOrderRequestBody:
     }
 
     def __init__(self, desktop_pool_id=None, desktop_ids=None, promotion_plan_id=None, product_id=None, mode=None, extend_param=None):
-        """CreateResizeOrderRequestBody
+        r"""CreateResizeOrderRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateResizeOrderRequestBody:
 
     @property
     def desktop_pool_id(self):
-        """Gets the desktop_pool_id of this CreateResizeOrderRequestBody.
+        r"""Gets the desktop_pool_id of this CreateResizeOrderRequestBody.
 
         桌面池ID。当desktop_pool_id与desktop_ids同时存在时，取desktop_ids的值，两者不可同时为空。
 
@@ -89,7 +89,7 @@ class CreateResizeOrderRequestBody:
 
     @desktop_pool_id.setter
     def desktop_pool_id(self, desktop_pool_id):
-        """Sets the desktop_pool_id of this CreateResizeOrderRequestBody.
+        r"""Sets the desktop_pool_id of this CreateResizeOrderRequestBody.
 
         桌面池ID。当desktop_pool_id与desktop_ids同时存在时，取desktop_ids的值，两者不可同时为空。
 
@@ -100,7 +100,7 @@ class CreateResizeOrderRequestBody:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this CreateResizeOrderRequestBody.
+        r"""Gets the desktop_ids of this CreateResizeOrderRequestBody.
 
         包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
 
@@ -111,7 +111,7 @@ class CreateResizeOrderRequestBody:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this CreateResizeOrderRequestBody.
+        r"""Sets the desktop_ids of this CreateResizeOrderRequestBody.
 
         包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
 
@@ -122,7 +122,7 @@ class CreateResizeOrderRequestBody:
 
     @property
     def promotion_plan_id(self):
-        """Gets the promotion_plan_id of this CreateResizeOrderRequestBody.
+        r"""Gets the promotion_plan_id of this CreateResizeOrderRequestBody.
 
         促销计划ID
 
@@ -133,7 +133,7 @@ class CreateResizeOrderRequestBody:
 
     @promotion_plan_id.setter
     def promotion_plan_id(self, promotion_plan_id):
-        """Sets the promotion_plan_id of this CreateResizeOrderRequestBody.
+        r"""Sets the promotion_plan_id of this CreateResizeOrderRequestBody.
 
         促销计划ID
 
@@ -144,7 +144,7 @@ class CreateResizeOrderRequestBody:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateResizeOrderRequestBody.
+        r"""Gets the product_id of this CreateResizeOrderRequestBody.
 
         目标规格产品ID。
 
@@ -155,7 +155,7 @@ class CreateResizeOrderRequestBody:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateResizeOrderRequestBody.
+        r"""Sets the product_id of this CreateResizeOrderRequestBody.
 
         目标规格产品ID。
 
@@ -166,7 +166,7 @@ class CreateResizeOrderRequestBody:
 
     @property
     def mode(self):
-        """Gets the mode of this CreateResizeOrderRequestBody.
+        r"""Gets the mode of this CreateResizeOrderRequestBody.
 
         是否支持开机状态下执行变更规格操作。固定传值STOP_DESKTOP，如果桌面处于开机状态，会先关机再变更规格。
 
@@ -177,7 +177,7 @@ class CreateResizeOrderRequestBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CreateResizeOrderRequestBody.
+        r"""Sets the mode of this CreateResizeOrderRequestBody.
 
         是否支持开机状态下执行变更规格操作。固定传值STOP_DESKTOP，如果桌面处于开机状态，会先关机再变更规格。
 
@@ -188,7 +188,7 @@ class CreateResizeOrderRequestBody:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this CreateResizeOrderRequestBody.
+        r"""Gets the extend_param of this CreateResizeOrderRequestBody.
 
         :return: The extend_param of this CreateResizeOrderRequestBody.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopExtendParam`
@@ -197,7 +197,7 @@ class CreateResizeOrderRequestBody:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this CreateResizeOrderRequestBody.
+        r"""Sets the extend_param of this CreateResizeOrderRequestBody.
 
         :param extend_param: The extend_param of this CreateResizeOrderRequestBody.
         :type extend_param: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopExtendParam`

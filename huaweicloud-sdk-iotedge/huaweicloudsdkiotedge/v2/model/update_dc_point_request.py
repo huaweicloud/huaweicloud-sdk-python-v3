@@ -31,7 +31,7 @@ class UpdateDcPointRequest:
     }
 
     def __init__(self, edge_node_id=None, ds_id=None, point_id=None, body=None):
-        """UpdateDcPointRequest
+        r"""UpdateDcPointRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateDcPointRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this UpdateDcPointRequest.
+        r"""Gets the edge_node_id of this UpdateDcPointRequest.
 
         边缘节点ID
 
@@ -72,7 +72,7 @@ class UpdateDcPointRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this UpdateDcPointRequest.
+        r"""Sets the edge_node_id of this UpdateDcPointRequest.
 
         边缘节点ID
 
@@ -83,7 +83,7 @@ class UpdateDcPointRequest:
 
     @property
     def ds_id(self):
-        """Gets the ds_id of this UpdateDcPointRequest.
+        r"""Gets the ds_id of this UpdateDcPointRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -94,7 +94,7 @@ class UpdateDcPointRequest:
 
     @ds_id.setter
     def ds_id(self, ds_id):
-        """Sets the ds_id of this UpdateDcPointRequest.
+        r"""Sets the ds_id of this UpdateDcPointRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -105,7 +105,7 @@ class UpdateDcPointRequest:
 
     @property
     def point_id(self):
-        """Gets the point_id of this UpdateDcPointRequest.
+        r"""Gets the point_id of this UpdateDcPointRequest.
 
         采集点位表id，创建点位表时设置，数据源下唯一。
 
@@ -116,7 +116,7 @@ class UpdateDcPointRequest:
 
     @point_id.setter
     def point_id(self, point_id):
-        """Sets the point_id of this UpdateDcPointRequest.
+        r"""Sets the point_id of this UpdateDcPointRequest.
 
         采集点位表id，创建点位表时设置，数据源下唯一。
 
@@ -127,7 +127,7 @@ class UpdateDcPointRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDcPointRequest.
+        r"""Gets the body of this UpdateDcPointRequest.
 
         :return: The body of this UpdateDcPointRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateDcPointReqDTO`
@@ -136,7 +136,7 @@ class UpdateDcPointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDcPointRequest.
+        r"""Sets the body of this UpdateDcPointRequest.
 
         :param body: The body of this UpdateDcPointRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.UpdateDcPointReqDTO`

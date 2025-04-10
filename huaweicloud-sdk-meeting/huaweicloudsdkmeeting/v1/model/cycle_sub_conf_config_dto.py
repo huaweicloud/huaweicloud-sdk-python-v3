@@ -33,7 +33,7 @@ class CycleSubConfConfigDTO:
     }
 
     def __init__(self, call_in_restriction=None, audience_call_in_restriction=None, allow_guest_start_conf=None, enable_waiting_room=None, show_audience_count_info=None):
-        """CycleSubConfConfigDTO
+        r"""CycleSubConfConfigDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CycleSubConfConfigDTO:
 
     @property
     def call_in_restriction(self):
-        """Gets the call_in_restriction of this CycleSubConfConfigDTO.
+        r"""Gets the call_in_restriction of this CycleSubConfConfigDTO.
 
         允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户 
 
@@ -82,7 +82,7 @@ class CycleSubConfConfigDTO:
 
     @call_in_restriction.setter
     def call_in_restriction(self, call_in_restriction):
-        """Sets the call_in_restriction of this CycleSubConfConfigDTO.
+        r"""Sets the call_in_restriction of this CycleSubConfConfigDTO.
 
         允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户 
 
@@ -93,7 +93,7 @@ class CycleSubConfConfigDTO:
 
     @property
     def audience_call_in_restriction(self):
-        """Gets the audience_call_in_restriction of this CycleSubConfConfigDTO.
+        r"""Gets the audience_call_in_restriction of this CycleSubConfConfigDTO.
 
         允许加入网络研讨会的观众范围。 - 0：所有用户 - 2：企业内用户和被邀请用户 
 
@@ -104,7 +104,7 @@ class CycleSubConfConfigDTO:
 
     @audience_call_in_restriction.setter
     def audience_call_in_restriction(self, audience_call_in_restriction):
-        """Sets the audience_call_in_restriction of this CycleSubConfConfigDTO.
+        r"""Sets the audience_call_in_restriction of this CycleSubConfConfigDTO.
 
         允许加入网络研讨会的观众范围。 - 0：所有用户 - 2：企业内用户和被邀请用户 
 
@@ -115,7 +115,7 @@ class CycleSubConfConfigDTO:
 
     @property
     def allow_guest_start_conf(self):
-        """Gets the allow_guest_start_conf of this CycleSubConfConfigDTO.
+        r"""Gets the allow_guest_start_conf of this CycleSubConfConfigDTO.
 
         是否允许来宾启动会议。 - false:禁止来宾启动会议 - true：允许来宾启动会议 > 仅随机会议ID的会议生效。 
 
@@ -126,7 +126,7 @@ class CycleSubConfConfigDTO:
 
     @allow_guest_start_conf.setter
     def allow_guest_start_conf(self, allow_guest_start_conf):
-        """Sets the allow_guest_start_conf of this CycleSubConfConfigDTO.
+        r"""Sets the allow_guest_start_conf of this CycleSubConfConfigDTO.
 
         是否允许来宾启动会议。 - false:禁止来宾启动会议 - true：允许来宾启动会议 > 仅随机会议ID的会议生效。 
 
@@ -137,7 +137,7 @@ class CycleSubConfConfigDTO:
 
     @property
     def enable_waiting_room(self):
-        """Gets the enable_waiting_room of this CycleSubConfConfigDTO.
+        r"""Gets the enable_waiting_room of this CycleSubConfConfigDTO.
 
         是否启用等候室。
 
@@ -148,7 +148,7 @@ class CycleSubConfConfigDTO:
 
     @enable_waiting_room.setter
     def enable_waiting_room(self, enable_waiting_room):
-        """Sets the enable_waiting_room of this CycleSubConfConfigDTO.
+        r"""Sets the enable_waiting_room of this CycleSubConfConfigDTO.
 
         是否启用等候室。
 
@@ -159,7 +159,7 @@ class CycleSubConfConfigDTO:
 
     @property
     def show_audience_count_info(self):
-        """Gets the show_audience_count_info of this CycleSubConfConfigDTO.
+        r"""Gets the show_audience_count_info of this CycleSubConfConfigDTO.
 
         :return: The show_audience_count_info of this CycleSubConfConfigDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowAudienceCountInfo`
@@ -168,7 +168,7 @@ class CycleSubConfConfigDTO:
 
     @show_audience_count_info.setter
     def show_audience_count_info(self, show_audience_count_info):
-        """Sets the show_audience_count_info of this CycleSubConfConfigDTO.
+        r"""Sets the show_audience_count_info of this CycleSubConfConfigDTO.
 
         :param show_audience_count_info: The show_audience_count_info of this CycleSubConfConfigDTO.
         :type show_audience_count_info: :class:`huaweicloudsdkmeeting.v1.ShowAudienceCountInfo`

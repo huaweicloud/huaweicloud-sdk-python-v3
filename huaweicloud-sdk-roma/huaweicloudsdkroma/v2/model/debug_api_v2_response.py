@@ -32,7 +32,7 @@ class DebugApiV2Response(SdkResponse):
     }
 
     def __init__(self, request=None, response=None, latency=None, log=None):
-        """DebugApiV2Response
+        r"""DebugApiV2Response
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class DebugApiV2Response(SdkResponse):
 
     @property
     def request(self):
-        """Gets the request of this DebugApiV2Response.
+        r"""Gets the request of this DebugApiV2Response.
 
         调试请求报文内容
 
@@ -76,7 +76,7 @@ class DebugApiV2Response(SdkResponse):
 
     @request.setter
     def request(self, request):
-        """Sets the request of this DebugApiV2Response.
+        r"""Sets the request of this DebugApiV2Response.
 
         调试请求报文内容
 
@@ -87,7 +87,7 @@ class DebugApiV2Response(SdkResponse):
 
     @property
     def response(self):
-        """Gets the response of this DebugApiV2Response.
+        r"""Gets the response of this DebugApiV2Response.
 
         调试响应报文内容，响应消息体最大支持2097152字节，超过部分会被截断 > 响应消息体超过限制长度时，超过部分会被截断，并追加\"[TRUNCATED]\"信息。
 
@@ -98,7 +98,7 @@ class DebugApiV2Response(SdkResponse):
 
     @response.setter
     def response(self, response):
-        """Sets the response of this DebugApiV2Response.
+        r"""Sets the response of this DebugApiV2Response.
 
         调试响应报文内容，响应消息体最大支持2097152字节，超过部分会被截断 > 响应消息体超过限制长度时，超过部分会被截断，并追加\"[TRUNCATED]\"信息。
 
@@ -109,7 +109,7 @@ class DebugApiV2Response(SdkResponse):
 
     @property
     def latency(self):
-        """Gets the latency of this DebugApiV2Response.
+        r"""Gets the latency of this DebugApiV2Response.
 
         调试耗时，单位：毫秒
 
@@ -120,7 +120,7 @@ class DebugApiV2Response(SdkResponse):
 
     @latency.setter
     def latency(self, latency):
-        """Sets the latency of this DebugApiV2Response.
+        r"""Sets the latency of this DebugApiV2Response.
 
         调试耗时，单位：毫秒
 
@@ -131,7 +131,7 @@ class DebugApiV2Response(SdkResponse):
 
     @property
     def log(self):
-        """Gets the log of this DebugApiV2Response.
+        r"""Gets the log of this DebugApiV2Response.
 
         调试过程日志
 
@@ -142,7 +142,7 @@ class DebugApiV2Response(SdkResponse):
 
     @log.setter
     def log(self, log):
-        """Sets the log of this DebugApiV2Response.
+        r"""Sets the log of this DebugApiV2Response.
 
         调试过程日志
 

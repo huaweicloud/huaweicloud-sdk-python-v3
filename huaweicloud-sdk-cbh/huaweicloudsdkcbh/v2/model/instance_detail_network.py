@@ -39,7 +39,7 @@ class InstanceDetailNetwork:
     }
 
     def __init__(self, vip=None, web_port=None, public_ip=None, public_id=None, private_ip=None, vpc_id=None, subnet_id=None, security_group_id=None):
-        """InstanceDetailNetwork
+        r"""InstanceDetailNetwork
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class InstanceDetailNetwork:
 
     @property
     def vip(self):
-        """Gets the vip of this InstanceDetailNetwork.
+        r"""Gets the vip of this InstanceDetailNetwork.
 
         云堡垒机实例浮动ip。(实例为主备模式时返回对应的值)
 
@@ -96,7 +96,7 @@ class InstanceDetailNetwork:
 
     @vip.setter
     def vip(self, vip):
-        """Sets the vip of this InstanceDetailNetwork.
+        r"""Sets the vip of this InstanceDetailNetwork.
 
         云堡垒机实例浮动ip。(实例为主备模式时返回对应的值)
 
@@ -107,7 +107,7 @@ class InstanceDetailNetwork:
 
     @property
     def web_port(self):
-        """Gets the web_port of this InstanceDetailNetwork.
+        r"""Gets the web_port of this InstanceDetailNetwork.
 
         云堡垒机实例WEB界面访问的端口号。
 
@@ -118,7 +118,7 @@ class InstanceDetailNetwork:
 
     @web_port.setter
     def web_port(self, web_port):
-        """Sets the web_port of this InstanceDetailNetwork.
+        r"""Sets the web_port of this InstanceDetailNetwork.
 
         云堡垒机实例WEB界面访问的端口号。
 
@@ -129,7 +129,7 @@ class InstanceDetailNetwork:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this InstanceDetailNetwork.
+        r"""Gets the public_ip of this InstanceDetailNetwork.
 
         云堡垒机实例弹性公网IP。
 
@@ -140,7 +140,7 @@ class InstanceDetailNetwork:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this InstanceDetailNetwork.
+        r"""Sets the public_ip of this InstanceDetailNetwork.
 
         云堡垒机实例弹性公网IP。
 
@@ -151,7 +151,7 @@ class InstanceDetailNetwork:
 
     @property
     def public_id(self):
-        """Gets the public_id of this InstanceDetailNetwork.
+        r"""Gets the public_id of this InstanceDetailNetwork.
 
         云堡垒机实例绑定公网的弹性IP的ID，UUID格式表示。
 
@@ -162,7 +162,7 @@ class InstanceDetailNetwork:
 
     @public_id.setter
     def public_id(self, public_id):
-        """Sets the public_id of this InstanceDetailNetwork.
+        r"""Sets the public_id of this InstanceDetailNetwork.
 
         云堡垒机实例绑定公网的弹性IP的ID，UUID格式表示。
 
@@ -173,7 +173,7 @@ class InstanceDetailNetwork:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this InstanceDetailNetwork.
+        r"""Gets the private_ip of this InstanceDetailNetwork.
 
         云堡垒机实例私有ip。
 
@@ -184,7 +184,7 @@ class InstanceDetailNetwork:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this InstanceDetailNetwork.
+        r"""Sets the private_ip of this InstanceDetailNetwork.
 
         云堡垒机实例私有ip。
 
@@ -195,7 +195,7 @@ class InstanceDetailNetwork:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this InstanceDetailNetwork.
+        r"""Gets the vpc_id of this InstanceDetailNetwork.
 
         云堡垒机实例所在虚拟私有云ID。
 
@@ -206,7 +206,7 @@ class InstanceDetailNetwork:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this InstanceDetailNetwork.
+        r"""Sets the vpc_id of this InstanceDetailNetwork.
 
         云堡垒机实例所在虚拟私有云ID。
 
@@ -217,7 +217,7 @@ class InstanceDetailNetwork:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this InstanceDetailNetwork.
+        r"""Gets the subnet_id of this InstanceDetailNetwork.
 
         云堡垒机实例所在子网ID。
 
@@ -228,7 +228,7 @@ class InstanceDetailNetwork:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this InstanceDetailNetwork.
+        r"""Sets the subnet_id of this InstanceDetailNetwork.
 
         云堡垒机实例所在子网ID。
 
@@ -239,7 +239,7 @@ class InstanceDetailNetwork:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this InstanceDetailNetwork.
+        r"""Gets the security_group_id of this InstanceDetailNetwork.
 
         云堡垒机实例所属的安全组ID。
 
@@ -250,7 +250,7 @@ class InstanceDetailNetwork:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this InstanceDetailNetwork.
+        r"""Sets the security_group_id of this InstanceDetailNetwork.
 
         云堡垒机实例所属的安全组ID。
 

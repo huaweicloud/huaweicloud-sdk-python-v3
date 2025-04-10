@@ -28,7 +28,7 @@ class ShowDomainLocationStatsResponse(SdkResponse):
     }
 
     def __init__(self, group_by=None, result=None):
-        """ShowDomainLocationStatsResponse
+        r"""ShowDomainLocationStatsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDomainLocationStatsResponse(SdkResponse):
 
     @property
     def group_by(self):
-        """Gets the group_by of this ShowDomainLocationStatsResponse.
+        r"""Gets the group_by of this ShowDomainLocationStatsResponse.
 
         数据分组方式
 
@@ -62,7 +62,7 @@ class ShowDomainLocationStatsResponse(SdkResponse):
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this ShowDomainLocationStatsResponse.
+        r"""Sets the group_by of this ShowDomainLocationStatsResponse.
 
         数据分组方式
 
@@ -73,7 +73,7 @@ class ShowDomainLocationStatsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowDomainLocationStatsResponse.
+        r"""Gets the result of this ShowDomainLocationStatsResponse.
 
         按指定的分组方式组织的数据
 
@@ -84,7 +84,7 @@ class ShowDomainLocationStatsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowDomainLocationStatsResponse.
+        r"""Sets the result of this ShowDomainLocationStatsResponse.
 
         按指定的分组方式组织的数据
 

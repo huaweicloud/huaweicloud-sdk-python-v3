@@ -24,7 +24,7 @@ class DeleteWatermarkTemplateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteWatermarkTemplateResponse
+        r"""DeleteWatermarkTemplateResponse
 
         The model defined in huaweicloud sdk
 

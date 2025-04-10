@@ -34,7 +34,7 @@ class CreateNodeResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """CreateNodeResponse
+        r"""CreateNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateNodeResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this CreateNodeResponse.
+        r"""Gets the kind of this CreateNodeResponse.
 
         API类型，固定值“Node”，该值不可修改。  
 
@@ -83,7 +83,7 @@ class CreateNodeResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateNodeResponse.
+        r"""Sets the kind of this CreateNodeResponse.
 
         API类型，固定值“Node”，该值不可修改。  
 
@@ -94,7 +94,7 @@ class CreateNodeResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateNodeResponse.
+        r"""Gets the api_version of this CreateNodeResponse.
 
         API版本，固定值“v3”，该值不可修改。  
 
@@ -105,7 +105,7 @@ class CreateNodeResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateNodeResponse.
+        r"""Sets the api_version of this CreateNodeResponse.
 
         API版本，固定值“v3”，该值不可修改。  
 
@@ -116,7 +116,7 @@ class CreateNodeResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateNodeResponse.
+        r"""Gets the metadata of this CreateNodeResponse.
 
         :return: The metadata of this CreateNodeResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeMetadata`
@@ -125,7 +125,7 @@ class CreateNodeResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateNodeResponse.
+        r"""Sets the metadata of this CreateNodeResponse.
 
         :param metadata: The metadata of this CreateNodeResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.NodeMetadata`
@@ -134,7 +134,7 @@ class CreateNodeResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this CreateNodeResponse.
+        r"""Gets the spec of this CreateNodeResponse.
 
         :return: The spec of this CreateNodeResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeSpec`
@@ -143,7 +143,7 @@ class CreateNodeResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CreateNodeResponse.
+        r"""Sets the spec of this CreateNodeResponse.
 
         :param spec: The spec of this CreateNodeResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.NodeSpec`
@@ -152,7 +152,7 @@ class CreateNodeResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateNodeResponse.
+        r"""Gets the status of this CreateNodeResponse.
 
         :return: The status of this CreateNodeResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeStatus`
@@ -161,7 +161,7 @@ class CreateNodeResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateNodeResponse.
+        r"""Sets the status of this CreateNodeResponse.
 
         :param status: The status of this CreateNodeResponse.
         :type status: :class:`huaweicloudsdkcce.v3.NodeStatus`

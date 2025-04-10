@@ -41,7 +41,7 @@ class BatchUpdateTaskStatusRequestBody:
     }
 
     def __init__(self, type=None, project_id=None, task_id_list=None, cluster_id=None, cluster_type=None, without_package=None, network_info=None, status=None, enterprise_project_id=None):
-        """BatchUpdateTaskStatusRequestBody
+        r"""BatchUpdateTaskStatusRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this BatchUpdateTaskStatusRequestBody.
+        r"""Gets the type of this BatchUpdateTaskStatusRequestBody.
 
         类型（0-旧版本任务；1-新版本任务）
 
@@ -105,7 +105,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BatchUpdateTaskStatusRequestBody.
+        r"""Sets the type of this BatchUpdateTaskStatusRequestBody.
 
         类型（0-旧版本任务；1-新版本任务）
 
@@ -116,7 +116,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchUpdateTaskStatusRequestBody.
+        r"""Gets the project_id of this BatchUpdateTaskStatusRequestBody.
 
         所属工程id
 
@@ -127,7 +127,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchUpdateTaskStatusRequestBody.
+        r"""Sets the project_id of this BatchUpdateTaskStatusRequestBody.
 
         所属工程id
 
@@ -138,7 +138,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @property
     def task_id_list(self):
-        """Gets the task_id_list of this BatchUpdateTaskStatusRequestBody.
+        r"""Gets the task_id_list of this BatchUpdateTaskStatusRequestBody.
 
         任务id列表
 
@@ -149,7 +149,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @task_id_list.setter
     def task_id_list(self, task_id_list):
-        """Sets the task_id_list of this BatchUpdateTaskStatusRequestBody.
+        r"""Sets the task_id_list of this BatchUpdateTaskStatusRequestBody.
 
         任务id列表
 
@@ -160,7 +160,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this BatchUpdateTaskStatusRequestBody.
+        r"""Gets the cluster_id of this BatchUpdateTaskStatusRequestBody.
 
         资源组id
 
@@ -171,7 +171,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this BatchUpdateTaskStatusRequestBody.
+        r"""Sets the cluster_id of this BatchUpdateTaskStatusRequestBody.
 
         资源组id
 
@@ -182,7 +182,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this BatchUpdateTaskStatusRequestBody.
+        r"""Gets the cluster_type of this BatchUpdateTaskStatusRequestBody.
 
         资源组类型（共享资源组：shared-cluster-internet；私有资源组：private-cluster）
 
@@ -193,7 +193,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this BatchUpdateTaskStatusRequestBody.
+        r"""Sets the cluster_type of this BatchUpdateTaskStatusRequestBody.
 
         资源组类型（共享资源组：shared-cluster-internet；私有资源组：private-cluster）
 
@@ -204,7 +204,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @property
     def without_package(self):
-        """Gets the without_package of this BatchUpdateTaskStatusRequestBody.
+        r"""Gets the without_package of this BatchUpdateTaskStatusRequestBody.
 
         套餐包VUM不足的情况下用户选择是不是要走按需计费模式（当前版本固定值：0）
 
@@ -215,7 +215,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @without_package.setter
     def without_package(self, without_package):
-        """Sets the without_package of this BatchUpdateTaskStatusRequestBody.
+        r"""Sets the without_package of this BatchUpdateTaskStatusRequestBody.
 
         套餐包VUM不足的情况下用户选择是不是要走按需计费模式（当前版本固定值：0）
 
@@ -226,7 +226,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @property
     def network_info(self):
-        """Gets the network_info of this BatchUpdateTaskStatusRequestBody.
+        r"""Gets the network_info of this BatchUpdateTaskStatusRequestBody.
 
         :return: The network_info of this BatchUpdateTaskStatusRequestBody.
         :rtype: :class:`huaweicloudsdkcpts.v1.NetworkInfo`
@@ -235,7 +235,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @network_info.setter
     def network_info(self, network_info):
-        """Sets the network_info of this BatchUpdateTaskStatusRequestBody.
+        r"""Sets the network_info of this BatchUpdateTaskStatusRequestBody.
 
         :param network_info: The network_info of this BatchUpdateTaskStatusRequestBody.
         :type network_info: :class:`huaweicloudsdkcpts.v1.NetworkInfo`
@@ -244,7 +244,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this BatchUpdateTaskStatusRequestBody.
+        r"""Gets the status of this BatchUpdateTaskStatusRequestBody.
 
         状态（9：启动任务；2：停止任务）
 
@@ -255,7 +255,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchUpdateTaskStatusRequestBody.
+        r"""Sets the status of this BatchUpdateTaskStatusRequestBody.
 
         状态（9：启动任务；2：停止任务）
 
@@ -266,7 +266,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this BatchUpdateTaskStatusRequestBody.
+        r"""Gets the enterprise_project_id of this BatchUpdateTaskStatusRequestBody.
 
         企业项目id
 
@@ -277,7 +277,7 @@ class BatchUpdateTaskStatusRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this BatchUpdateTaskStatusRequestBody.
+        r"""Sets the enterprise_project_id of this BatchUpdateTaskStatusRequestBody.
 
         企业项目id
 

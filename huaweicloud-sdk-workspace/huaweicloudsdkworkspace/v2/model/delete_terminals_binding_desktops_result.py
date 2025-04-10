@@ -29,7 +29,7 @@ class DeleteTerminalsBindingDesktopsResult:
     }
 
     def __init__(self, id=None, delete_result_code=None, delete_result_msg=None):
-        """DeleteTerminalsBindingDesktopsResult
+        r"""DeleteTerminalsBindingDesktopsResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DeleteTerminalsBindingDesktopsResult:
 
     @property
     def id(self):
-        """Gets the id of this DeleteTerminalsBindingDesktopsResult.
+        r"""Gets the id of this DeleteTerminalsBindingDesktopsResult.
 
         需删除的策略ID
 
@@ -68,7 +68,7 @@ class DeleteTerminalsBindingDesktopsResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteTerminalsBindingDesktopsResult.
+        r"""Sets the id of this DeleteTerminalsBindingDesktopsResult.
 
         需删除的策略ID
 
@@ -79,7 +79,7 @@ class DeleteTerminalsBindingDesktopsResult:
 
     @property
     def delete_result_code(self):
-        """Gets the delete_result_code of this DeleteTerminalsBindingDesktopsResult.
+        r"""Gets the delete_result_code of this DeleteTerminalsBindingDesktopsResult.
 
         删除操作的结果码
 
@@ -90,7 +90,7 @@ class DeleteTerminalsBindingDesktopsResult:
 
     @delete_result_code.setter
     def delete_result_code(self, delete_result_code):
-        """Sets the delete_result_code of this DeleteTerminalsBindingDesktopsResult.
+        r"""Sets the delete_result_code of this DeleteTerminalsBindingDesktopsResult.
 
         删除操作的结果码
 
@@ -101,7 +101,7 @@ class DeleteTerminalsBindingDesktopsResult:
 
     @property
     def delete_result_msg(self):
-        """Gets the delete_result_msg of this DeleteTerminalsBindingDesktopsResult.
+        r"""Gets the delete_result_msg of this DeleteTerminalsBindingDesktopsResult.
 
         删除操作的结果信息
 
@@ -112,7 +112,7 @@ class DeleteTerminalsBindingDesktopsResult:
 
     @delete_result_msg.setter
     def delete_result_msg(self, delete_result_msg):
-        """Sets the delete_result_msg of this DeleteTerminalsBindingDesktopsResult.
+        r"""Sets the delete_result_msg of this DeleteTerminalsBindingDesktopsResult.
 
         删除操作的结果信息
 

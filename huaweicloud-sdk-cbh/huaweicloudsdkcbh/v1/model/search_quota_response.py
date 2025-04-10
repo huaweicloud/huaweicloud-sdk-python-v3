@@ -32,7 +32,7 @@ class SearchQuotaResponse(SdkResponse):
     }
 
     def __init__(self, quota=None, eip_quota=None, status_v6=None, status=None):
-        """SearchQuotaResponse
+        r"""SearchQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchQuotaResponse(SdkResponse):
 
     @property
     def quota(self):
-        """Gets the quota of this SearchQuotaResponse.
+        r"""Gets the quota of this SearchQuotaResponse.
 
         剩余可创建云堡垒机实例个数。
 
@@ -76,7 +76,7 @@ class SearchQuotaResponse(SdkResponse):
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this SearchQuotaResponse.
+        r"""Sets the quota of this SearchQuotaResponse.
 
         剩余可创建云堡垒机实例个数。
 
@@ -87,7 +87,7 @@ class SearchQuotaResponse(SdkResponse):
 
     @property
     def eip_quota(self):
-        """Gets the eip_quota of this SearchQuotaResponse.
+        r"""Gets the eip_quota of this SearchQuotaResponse.
 
         弹性公网IP个数，返回默认值1。
 
@@ -98,7 +98,7 @@ class SearchQuotaResponse(SdkResponse):
 
     @eip_quota.setter
     def eip_quota(self, eip_quota):
-        """Sets the eip_quota of this SearchQuotaResponse.
+        r"""Sets the eip_quota of this SearchQuotaResponse.
 
         弹性公网IP个数，返回默认值1。
 
@@ -109,7 +109,7 @@ class SearchQuotaResponse(SdkResponse):
 
     @property
     def status_v6(self):
-        """Gets the status_v6 of this SearchQuotaResponse.
+        r"""Gets the status_v6 of this SearchQuotaResponse.
 
         IPV6ECS资源状态信息，返回默认值null。
 
@@ -120,7 +120,7 @@ class SearchQuotaResponse(SdkResponse):
 
     @status_v6.setter
     def status_v6(self, status_v6):
-        """Sets the status_v6 of this SearchQuotaResponse.
+        r"""Sets the status_v6 of this SearchQuotaResponse.
 
         IPV6ECS资源状态信息，返回默认值null。
 
@@ -131,7 +131,7 @@ class SearchQuotaResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this SearchQuotaResponse.
+        r"""Gets the status of this SearchQuotaResponse.
 
         ECS资源状态信息，返回默认值null。
 
@@ -142,7 +142,7 @@ class SearchQuotaResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SearchQuotaResponse.
+        r"""Sets the status of this SearchQuotaResponse.
 
         ECS资源状态信息，返回默认值null。
 

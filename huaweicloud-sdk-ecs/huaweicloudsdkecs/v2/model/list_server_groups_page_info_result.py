@@ -25,7 +25,7 @@ class ListServerGroupsPageInfoResult:
     }
 
     def __init__(self, next_marker=None):
-        """ListServerGroupsPageInfoResult
+        r"""ListServerGroupsPageInfoResult
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListServerGroupsPageInfoResult:
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListServerGroupsPageInfoResult.
+        r"""Gets the next_marker of this ListServerGroupsPageInfoResult.
 
         
 
@@ -54,7 +54,7 @@ class ListServerGroupsPageInfoResult:
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListServerGroupsPageInfoResult.
+        r"""Sets the next_marker of this ListServerGroupsPageInfoResult.
 
         
 

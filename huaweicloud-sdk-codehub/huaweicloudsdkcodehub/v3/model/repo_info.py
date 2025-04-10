@@ -45,7 +45,7 @@ class RepoInfo:
     }
 
     def __init__(self, create_at=None, group_name=None, http_url=None, id=None, name=None, project_id=None, project_is_delete=None, repo_id=None, ssh_url=None, visibility_level=None, web_url=None):
-        """RepoInfo
+        r"""RepoInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class RepoInfo:
 
     @property
     def create_at(self):
-        """Gets the create_at of this RepoInfo.
+        r"""Gets the create_at of this RepoInfo.
 
         创建时间
 
@@ -124,7 +124,7 @@ class RepoInfo:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this RepoInfo.
+        r"""Sets the create_at of this RepoInfo.
 
         创建时间
 
@@ -135,7 +135,7 @@ class RepoInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this RepoInfo.
+        r"""Gets the group_name of this RepoInfo.
 
         仓库组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228)
 
@@ -146,7 +146,7 @@ class RepoInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this RepoInfo.
+        r"""Sets the group_name of this RepoInfo.
 
         仓库组名(克隆地址中域名后面仓库名前的一段 示例：git@repo.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228)
 
@@ -157,7 +157,7 @@ class RepoInfo:
 
     @property
     def http_url(self):
-        """Gets the http_url of this RepoInfo.
+        r"""Gets the http_url of this RepoInfo.
 
         https url
 
@@ -168,7 +168,7 @@ class RepoInfo:
 
     @http_url.setter
     def http_url(self, http_url):
-        """Sets the http_url of this RepoInfo.
+        r"""Sets the http_url of this RepoInfo.
 
         https url
 
@@ -179,7 +179,7 @@ class RepoInfo:
 
     @property
     def id(self):
-        """Gets the id of this RepoInfo.
+        r"""Gets the id of this RepoInfo.
 
         仓库uuid(由CreateRepository接口返回)
 
@@ -190,7 +190,7 @@ class RepoInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RepoInfo.
+        r"""Sets the id of this RepoInfo.
 
         仓库uuid(由CreateRepository接口返回)
 
@@ -201,7 +201,7 @@ class RepoInfo:
 
     @property
     def name(self):
-        """Gets the name of this RepoInfo.
+        r"""Gets the name of this RepoInfo.
 
         仓库名
 
@@ -212,7 +212,7 @@ class RepoInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RepoInfo.
+        r"""Sets the name of this RepoInfo.
 
         仓库名
 
@@ -223,7 +223,7 @@ class RepoInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RepoInfo.
+        r"""Gets the project_id of this RepoInfo.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -234,7 +234,7 @@ class RepoInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RepoInfo.
+        r"""Sets the project_id of this RepoInfo.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -245,7 +245,7 @@ class RepoInfo:
 
     @property
     def project_is_delete(self):
-        """Gets the project_is_delete of this RepoInfo.
+        r"""Gets the project_is_delete of this RepoInfo.
 
         项目是否被删除
 
@@ -256,7 +256,7 @@ class RepoInfo:
 
     @project_is_delete.setter
     def project_is_delete(self, project_is_delete):
-        """Sets the project_is_delete of this RepoInfo.
+        r"""Sets the project_is_delete of this RepoInfo.
 
         项目是否被删除
 
@@ -267,7 +267,7 @@ class RepoInfo:
 
     @property
     def repo_id(self):
-        """Gets the repo_id of this RepoInfo.
+        r"""Gets the repo_id of this RepoInfo.
 
         仓库主键id
 
@@ -278,7 +278,7 @@ class RepoInfo:
 
     @repo_id.setter
     def repo_id(self, repo_id):
-        """Sets the repo_id of this RepoInfo.
+        r"""Sets the repo_id of this RepoInfo.
 
         仓库主键id
 
@@ -289,7 +289,7 @@ class RepoInfo:
 
     @property
     def ssh_url(self):
-        """Gets the ssh_url of this RepoInfo.
+        r"""Gets the ssh_url of this RepoInfo.
 
         ssh url
 
@@ -300,7 +300,7 @@ class RepoInfo:
 
     @ssh_url.setter
     def ssh_url(self, ssh_url):
-        """Sets the ssh_url of this RepoInfo.
+        r"""Sets the ssh_url of this RepoInfo.
 
         ssh url
 
@@ -311,7 +311,7 @@ class RepoInfo:
 
     @property
     def visibility_level(self):
-        """Gets the visibility_level of this RepoInfo.
+        r"""Gets the visibility_level of this RepoInfo.
 
         是否可见：0私有仓库，20公有仓库
 
@@ -322,7 +322,7 @@ class RepoInfo:
 
     @visibility_level.setter
     def visibility_level(self, visibility_level):
-        """Sets the visibility_level of this RepoInfo.
+        r"""Sets the visibility_level of this RepoInfo.
 
         是否可见：0私有仓库，20公有仓库
 
@@ -333,7 +333,7 @@ class RepoInfo:
 
     @property
     def web_url(self):
-        """Gets the web_url of this RepoInfo.
+        r"""Gets the web_url of this RepoInfo.
 
         web url 访问路径
 
@@ -344,7 +344,7 @@ class RepoInfo:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this RepoInfo.
+        r"""Sets the web_url of this RepoInfo.
 
         web url 访问路径
 

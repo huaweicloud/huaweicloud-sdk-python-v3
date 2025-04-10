@@ -27,7 +27,7 @@ class MapObject:
     }
 
     def __init__(self, key=None, value=None):
-        """MapObject
+        r"""MapObject
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MapObject:
 
     @property
     def key(self):
-        """Gets the key of this MapObject.
+        r"""Gets the key of this MapObject.
 
         配置项的键
 
@@ -61,7 +61,7 @@ class MapObject:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this MapObject.
+        r"""Sets the key of this MapObject.
 
         配置项的键
 
@@ -72,7 +72,7 @@ class MapObject:
 
     @property
     def value(self):
-        """Gets the value of this MapObject.
+        r"""Gets the value of this MapObject.
 
         配置项对应的值
 
@@ -83,7 +83,7 @@ class MapObject:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this MapObject.
+        r"""Sets the value of this MapObject.
 
         配置项对应的值
 

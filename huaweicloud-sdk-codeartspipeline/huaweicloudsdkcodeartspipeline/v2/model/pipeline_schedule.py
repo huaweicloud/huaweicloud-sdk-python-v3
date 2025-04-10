@@ -35,7 +35,7 @@ class PipelineSchedule:
     }
 
     def __init__(self, uuid=None, type=None, name=None, enable=None, days_of_week=None, time_zone=None):
-        """PipelineSchedule
+        r"""PipelineSchedule
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PipelineSchedule:
 
     @property
     def uuid(self):
-        """Gets the uuid of this PipelineSchedule.
+        r"""Gets the uuid of this PipelineSchedule.
 
         任务ID
 
@@ -89,7 +89,7 @@ class PipelineSchedule:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this PipelineSchedule.
+        r"""Sets the uuid of this PipelineSchedule.
 
         任务ID
 
@@ -100,7 +100,7 @@ class PipelineSchedule:
 
     @property
     def type(self):
-        """Gets the type of this PipelineSchedule.
+        r"""Gets the type of this PipelineSchedule.
 
         任务类型
 
@@ -111,7 +111,7 @@ class PipelineSchedule:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PipelineSchedule.
+        r"""Sets the type of this PipelineSchedule.
 
         任务类型
 
@@ -122,7 +122,7 @@ class PipelineSchedule:
 
     @property
     def name(self):
-        """Gets the name of this PipelineSchedule.
+        r"""Gets the name of this PipelineSchedule.
 
         任务名称
 
@@ -133,7 +133,7 @@ class PipelineSchedule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineSchedule.
+        r"""Sets the name of this PipelineSchedule.
 
         任务名称
 
@@ -144,7 +144,7 @@ class PipelineSchedule:
 
     @property
     def enable(self):
-        """Gets the enable of this PipelineSchedule.
+        r"""Gets the enable of this PipelineSchedule.
 
         是否可用
 
@@ -155,7 +155,7 @@ class PipelineSchedule:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this PipelineSchedule.
+        r"""Sets the enable of this PipelineSchedule.
 
         是否可用
 
@@ -166,7 +166,7 @@ class PipelineSchedule:
 
     @property
     def days_of_week(self):
-        """Gets the days_of_week of this PipelineSchedule.
+        r"""Gets the days_of_week of this PipelineSchedule.
 
         一周内具体时间
 
@@ -177,7 +177,7 @@ class PipelineSchedule:
 
     @days_of_week.setter
     def days_of_week(self, days_of_week):
-        """Sets the days_of_week of this PipelineSchedule.
+        r"""Sets the days_of_week of this PipelineSchedule.
 
         一周内具体时间
 
@@ -188,7 +188,7 @@ class PipelineSchedule:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this PipelineSchedule.
+        r"""Gets the time_zone of this PipelineSchedule.
 
         时区
 
@@ -199,7 +199,7 @@ class PipelineSchedule:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this PipelineSchedule.
+        r"""Sets the time_zone of this PipelineSchedule.
 
         时区
 

@@ -27,7 +27,7 @@ class ListTemplateByJobIdRequest:
     }
 
     def __init__(self, job_id=None, body=None):
-        """ListTemplateByJobIdRequest
+        r"""ListTemplateByJobIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListTemplateByJobIdRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListTemplateByJobIdRequest.
+        r"""Gets the job_id of this ListTemplateByJobIdRequest.
 
         作业id。
 
@@ -60,7 +60,7 @@ class ListTemplateByJobIdRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListTemplateByJobIdRequest.
+        r"""Sets the job_id of this ListTemplateByJobIdRequest.
 
         作业id。
 
@@ -71,7 +71,7 @@ class ListTemplateByJobIdRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTemplateByJobIdRequest.
+        r"""Gets the body of this ListTemplateByJobIdRequest.
 
         :return: The body of this ListTemplateByJobIdRequest.
         :rtype: :class:`huaweicloudsdkaom.v1.ListTemplateByJobIdRequestBody`
@@ -80,7 +80,7 @@ class ListTemplateByJobIdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTemplateByJobIdRequest.
+        r"""Sets the body of this ListTemplateByJobIdRequest.
 
         :param body: The body of this ListTemplateByJobIdRequest.
         :type body: :class:`huaweicloudsdkaom.v1.ListTemplateByJobIdRequestBody`

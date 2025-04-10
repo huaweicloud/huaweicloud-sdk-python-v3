@@ -29,7 +29,7 @@ class ListDatabasesRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ListDatabasesRequest
+        r"""ListDatabasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListDatabasesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDatabasesRequest.
+        r"""Gets the instance_id of this ListDatabasesRequest.
 
         DDM实例ID
 
@@ -67,7 +67,7 @@ class ListDatabasesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDatabasesRequest.
+        r"""Sets the instance_id of this ListDatabasesRequest.
 
         DDM实例ID
 
@@ -78,7 +78,7 @@ class ListDatabasesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDatabasesRequest.
+        r"""Gets the offset of this ListDatabasesRequest.
 
         分页参数：起始值 [大于等于0] 。默认值是0。
 
@@ -89,7 +89,7 @@ class ListDatabasesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDatabasesRequest.
+        r"""Sets the offset of this ListDatabasesRequest.
 
         分页参数：起始值 [大于等于0] 。默认值是0。
 
@@ -100,7 +100,7 @@ class ListDatabasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDatabasesRequest.
+        r"""Gets the limit of this ListDatabasesRequest.
 
         分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
 
@@ -111,7 +111,7 @@ class ListDatabasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDatabasesRequest.
+        r"""Sets the limit of this ListDatabasesRequest.
 
         分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
 

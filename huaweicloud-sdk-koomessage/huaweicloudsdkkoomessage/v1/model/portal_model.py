@@ -55,7 +55,7 @@ class PortalModel:
     }
 
     def __init__(self, portal_id=None, company_id=None, company_name=None, pub_id=None, pub_name=None, background_img=None, background_img_url=None, summary=None, tels=None, fastapps=None, state=None, approve_state=None, online_time=None, creator=None, create_time=None, change_reason=None):
-        """PortalModel
+        r"""PortalModel
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class PortalModel:
 
     @property
     def portal_id(self):
-        """Gets the portal_id of this PortalModel.
+        r"""Gets the portal_id of this PortalModel.
 
         主页ID。
 
@@ -145,7 +145,7 @@ class PortalModel:
 
     @portal_id.setter
     def portal_id(self, portal_id):
-        """Sets the portal_id of this PortalModel.
+        r"""Sets the portal_id of this PortalModel.
 
         主页ID。
 
@@ -156,7 +156,7 @@ class PortalModel:
 
     @property
     def company_id(self):
-        """Gets the company_id of this PortalModel.
+        r"""Gets the company_id of this PortalModel.
 
         企业ID。
 
@@ -167,7 +167,7 @@ class PortalModel:
 
     @company_id.setter
     def company_id(self, company_id):
-        """Sets the company_id of this PortalModel.
+        r"""Sets the company_id of this PortalModel.
 
         企业ID。
 
@@ -178,7 +178,7 @@ class PortalModel:
 
     @property
     def company_name(self):
-        """Gets the company_name of this PortalModel.
+        r"""Gets the company_name of this PortalModel.
 
         企业名称。
 
@@ -189,7 +189,7 @@ class PortalModel:
 
     @company_name.setter
     def company_name(self, company_name):
-        """Sets the company_name of this PortalModel.
+        r"""Sets the company_name of this PortalModel.
 
         企业名称。
 
@@ -200,7 +200,7 @@ class PortalModel:
 
     @property
     def pub_id(self):
-        """Gets the pub_id of this PortalModel.
+        r"""Gets the pub_id of this PortalModel.
 
         服务号ID。
 
@@ -211,7 +211,7 @@ class PortalModel:
 
     @pub_id.setter
     def pub_id(self, pub_id):
-        """Sets the pub_id of this PortalModel.
+        r"""Sets the pub_id of this PortalModel.
 
         服务号ID。
 
@@ -222,7 +222,7 @@ class PortalModel:
 
     @property
     def pub_name(self):
-        """Gets the pub_name of this PortalModel.
+        r"""Gets the pub_name of this PortalModel.
 
         服务号名称。
 
@@ -233,7 +233,7 @@ class PortalModel:
 
     @pub_name.setter
     def pub_name(self, pub_name):
-        """Sets the pub_name of this PortalModel.
+        r"""Sets the pub_name of this PortalModel.
 
         服务号名称。
 
@@ -244,7 +244,7 @@ class PortalModel:
 
     @property
     def background_img(self):
-        """Gets the background_img of this PortalModel.
+        r"""Gets the background_img of this PortalModel.
 
         主页背景图片资源ID。
 
@@ -255,7 +255,7 @@ class PortalModel:
 
     @background_img.setter
     def background_img(self, background_img):
-        """Sets the background_img of this PortalModel.
+        r"""Sets the background_img of this PortalModel.
 
         主页背景图片资源ID。
 
@@ -266,7 +266,7 @@ class PortalModel:
 
     @property
     def background_img_url(self):
-        """Gets the background_img_url of this PortalModel.
+        r"""Gets the background_img_url of this PortalModel.
 
         背景图片URL。
 
@@ -277,7 +277,7 @@ class PortalModel:
 
     @background_img_url.setter
     def background_img_url(self, background_img_url):
-        """Sets the background_img_url of this PortalModel.
+        r"""Sets the background_img_url of this PortalModel.
 
         背景图片URL。
 
@@ -288,7 +288,7 @@ class PortalModel:
 
     @property
     def summary(self):
-        """Gets the summary of this PortalModel.
+        r"""Gets the summary of this PortalModel.
 
         简介。
 
@@ -299,7 +299,7 @@ class PortalModel:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this PortalModel.
+        r"""Sets the summary of this PortalModel.
 
         简介。
 
@@ -310,7 +310,7 @@ class PortalModel:
 
     @property
     def tels(self):
-        """Gets the tels of this PortalModel.
+        r"""Gets the tels of this PortalModel.
 
         热线号列表。  > 以JSON列表返回，格式： > {\"tel\": \"400-800-8800\", \"usage\": \"官方服务电话\"}。 
 
@@ -321,7 +321,7 @@ class PortalModel:
 
     @tels.setter
     def tels(self, tels):
-        """Sets the tels of this PortalModel.
+        r"""Sets the tels of this PortalModel.
 
         热线号列表。  > 以JSON列表返回，格式： > {\"tel\": \"400-800-8800\", \"usage\": \"官方服务电话\"}。 
 
@@ -332,7 +332,7 @@ class PortalModel:
 
     @property
     def fastapps(self):
-        """Gets the fastapps of this PortalModel.
+        r"""Gets the fastapps of this PortalModel.
 
         快应用列表。  > 以JSON列表返回，格式： > {\"name\": \"快应用名称\",\"logo_img\": \"快应用LOGO图片资源ID\", \"logo_img_url\": \"快应用LOGO图片资源URL\", \"description\": \"快应用描述\",\"deeplink\": \"hap://app/fastapp\",\"depend_engine_version\": \"1040\"}。 
 
@@ -343,7 +343,7 @@ class PortalModel:
 
     @fastapps.setter
     def fastapps(self, fastapps):
-        """Sets the fastapps of this PortalModel.
+        r"""Sets the fastapps of this PortalModel.
 
         快应用列表。  > 以JSON列表返回，格式： > {\"name\": \"快应用名称\",\"logo_img\": \"快应用LOGO图片资源ID\", \"logo_img_url\": \"快应用LOGO图片资源URL\", \"description\": \"快应用描述\",\"deeplink\": \"hap://app/fastapp\",\"depend_engine_version\": \"1040\"}。 
 
@@ -354,7 +354,7 @@ class PortalModel:
 
     @property
     def state(self):
-        """Gets the state of this PortalModel.
+        r"""Gets the state of this PortalModel.
 
         资源状态。  - 1：未生效  - 2：已生效  - 3：已失效  - 4：已冻结 
 
@@ -365,7 +365,7 @@ class PortalModel:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this PortalModel.
+        r"""Sets the state of this PortalModel.
 
         资源状态。  - 1：未生效  - 2：已生效  - 3：已失效  - 4：已冻结 
 
@@ -376,7 +376,7 @@ class PortalModel:
 
     @property
     def approve_state(self):
-        """Gets the approve_state of this PortalModel.
+        r"""Gets the approve_state of this PortalModel.
 
         审核状态。  - 1：待审核  - 2：通过  - 3：驳回 
 
@@ -387,7 +387,7 @@ class PortalModel:
 
     @approve_state.setter
     def approve_state(self, approve_state):
-        """Sets the approve_state of this PortalModel.
+        r"""Sets the approve_state of this PortalModel.
 
         审核状态。  - 1：待审核  - 2：通过  - 3：驳回 
 
@@ -398,7 +398,7 @@ class PortalModel:
 
     @property
     def online_time(self):
-        """Gets the online_time of this PortalModel.
+        r"""Gets the online_time of this PortalModel.
 
         上线时间。
 
@@ -409,7 +409,7 @@ class PortalModel:
 
     @online_time.setter
     def online_time(self, online_time):
-        """Sets the online_time of this PortalModel.
+        r"""Sets the online_time of this PortalModel.
 
         上线时间。
 
@@ -420,7 +420,7 @@ class PortalModel:
 
     @property
     def creator(self):
-        """Gets the creator of this PortalModel.
+        r"""Gets the creator of this PortalModel.
 
         创建人。
 
@@ -431,7 +431,7 @@ class PortalModel:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this PortalModel.
+        r"""Sets the creator of this PortalModel.
 
         创建人。
 
@@ -442,7 +442,7 @@ class PortalModel:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PortalModel.
+        r"""Gets the create_time of this PortalModel.
 
         创建时间。
 
@@ -453,7 +453,7 @@ class PortalModel:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PortalModel.
+        r"""Sets the create_time of this PortalModel.
 
         创建时间。
 
@@ -464,7 +464,7 @@ class PortalModel:
 
     @property
     def change_reason(self):
-        """Gets the change_reason of this PortalModel.
+        r"""Gets the change_reason of this PortalModel.
 
         修改原因。
 
@@ -475,7 +475,7 @@ class PortalModel:
 
     @change_reason.setter
     def change_reason(self, change_reason):
-        """Sets the change_reason of this PortalModel.
+        r"""Sets the change_reason of this PortalModel.
 
         修改原因。
 

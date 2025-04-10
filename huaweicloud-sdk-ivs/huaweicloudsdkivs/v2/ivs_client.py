@@ -34,7 +34,7 @@ class IvsClient(Client):
         return client_builder
 
     def detect_extention_by_id_card_image(self, request):
-        """人证核身证件版（二要素）
+        r"""人证核身证件版（二要素）
 
         使用姓名、身份证号码二要素进行身份审核。身份验证时，传入的数据为身份证信息。提取身份证信息时，可以使用身份证正反面图片，也可以直接输入姓名、身份证号文本。
         
@@ -101,7 +101,7 @@ class IvsClient(Client):
         return http_info
 
     def detect_extention_by_name_and_id(self, request):
-        """人证核身证件版（二要素）
+        r"""人证核身证件版（二要素）
 
         使用姓名、身份证号码二要素进行身份审核。身份验证时，传入的数据为身份证信息。提取身份证信息时，可以使用身份证正反面图片，也可以直接输入姓名、身份证号文本。
         
@@ -168,7 +168,7 @@ class IvsClient(Client):
         return http_info
 
     def detect_standard_by_id_card_image(self, request):
-        """人证核身标准版（三要素）
+        r"""人证核身标准版（三要素）
 
         使用身份证正反面图片提取姓名和身份证号码，与人脸图片进行三要素身份审核。
         
@@ -235,7 +235,7 @@ class IvsClient(Client):
         return http_info
 
     def detect_standard_by_name_and_id(self, request):
-        """人证核身标准版（三要素）
+        r"""人证核身标准版（三要素）
 
         使用姓名、身份证号文本和人脸图片进行三要素身份审核。
         
@@ -302,7 +302,7 @@ class IvsClient(Client):
         return http_info
 
     def detect_standard_by_video_and_id_card_image(self, request):
-        """人证核身标准版（三要素）
+        r"""人证核身标准版（三要素）
 
         从身份证正反面图片中提取姓名和身份证号码，并对视频做活体检测后提取人脸图片，以此进行三要素身份审核。
         
@@ -369,7 +369,7 @@ class IvsClient(Client):
         return http_info
 
     def detect_standard_by_video_and_name_and_id(self, request):
-        """人证核身标准版（三要素）
+        r"""人证核身标准版（三要素）
 
         使用姓名、身份证号文本，并对视频做活体检测后提取人脸图片，以此进行三要素身份审核。
         

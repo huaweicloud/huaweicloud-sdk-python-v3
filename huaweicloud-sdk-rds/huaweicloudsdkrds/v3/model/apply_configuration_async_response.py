@@ -32,7 +32,7 @@ class ApplyConfigurationAsyncResponse(SdkResponse):
     }
 
     def __init__(self, configuration_id=None, configuration_name=None, success=None, job_id=None):
-        """ApplyConfigurationAsyncResponse
+        r"""ApplyConfigurationAsyncResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ApplyConfigurationAsyncResponse(SdkResponse):
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this ApplyConfigurationAsyncResponse.
+        r"""Gets the configuration_id of this ApplyConfigurationAsyncResponse.
 
         参数组ID。
 
@@ -76,7 +76,7 @@ class ApplyConfigurationAsyncResponse(SdkResponse):
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this ApplyConfigurationAsyncResponse.
+        r"""Sets the configuration_id of this ApplyConfigurationAsyncResponse.
 
         参数组ID。
 
@@ -87,7 +87,7 @@ class ApplyConfigurationAsyncResponse(SdkResponse):
 
     @property
     def configuration_name(self):
-        """Gets the configuration_name of this ApplyConfigurationAsyncResponse.
+        r"""Gets the configuration_name of this ApplyConfigurationAsyncResponse.
 
         参数组名称。
 
@@ -98,7 +98,7 @@ class ApplyConfigurationAsyncResponse(SdkResponse):
 
     @configuration_name.setter
     def configuration_name(self, configuration_name):
-        """Sets the configuration_name of this ApplyConfigurationAsyncResponse.
+        r"""Sets the configuration_name of this ApplyConfigurationAsyncResponse.
 
         参数组名称。
 
@@ -109,7 +109,7 @@ class ApplyConfigurationAsyncResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this ApplyConfigurationAsyncResponse.
+        r"""Gets the success of this ApplyConfigurationAsyncResponse.
 
         参数模板是否都应用成功。 - “true”表示参数模板都应用成功。 - “false”表示存在应用失败的参数模板。
 
@@ -120,7 +120,7 @@ class ApplyConfigurationAsyncResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ApplyConfigurationAsyncResponse.
+        r"""Sets the success of this ApplyConfigurationAsyncResponse.
 
         参数模板是否都应用成功。 - “true”表示参数模板都应用成功。 - “false”表示存在应用失败的参数模板。
 
@@ -131,7 +131,7 @@ class ApplyConfigurationAsyncResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ApplyConfigurationAsyncResponse.
+        r"""Gets the job_id of this ApplyConfigurationAsyncResponse.
 
         任务流id
 
@@ -142,7 +142,7 @@ class ApplyConfigurationAsyncResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ApplyConfigurationAsyncResponse.
+        r"""Sets the job_id of this ApplyConfigurationAsyncResponse.
 
         任务流id
 

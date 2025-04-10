@@ -31,7 +31,7 @@ class ListStorageTypesRequest:
     }
 
     def __init__(self, x_language=None, database_name=None, version_name=None, ha_mode=None):
-        """ListStorageTypesRequest
+        r"""ListStorageTypesRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListStorageTypesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListStorageTypesRequest.
+        r"""Gets the x_language of this ListStorageTypesRequest.
 
         语言
 
@@ -73,7 +73,7 @@ class ListStorageTypesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListStorageTypesRequest.
+        r"""Sets the x_language of this ListStorageTypesRequest.
 
         语言
 
@@ -84,7 +84,7 @@ class ListStorageTypesRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListStorageTypesRequest.
+        r"""Gets the database_name of this ListStorageTypesRequest.
 
         数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
 
@@ -95,7 +95,7 @@ class ListStorageTypesRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListStorageTypesRequest.
+        r"""Sets the database_name of this ListStorageTypesRequest.
 
         数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
 
@@ -106,7 +106,7 @@ class ListStorageTypesRequest:
 
     @property
     def version_name(self):
-        """Gets the version_name of this ListStorageTypesRequest.
+        r"""Gets the version_name of this ListStorageTypesRequest.
 
         数据库版本号。
 
@@ -117,7 +117,7 @@ class ListStorageTypesRequest:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this ListStorageTypesRequest.
+        r"""Sets the version_name of this ListStorageTypesRequest.
 
         数据库版本号。
 
@@ -128,7 +128,7 @@ class ListStorageTypesRequest:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this ListStorageTypesRequest.
+        r"""Gets the ha_mode of this ListStorageTypesRequest.
 
         主备模式： single：单机模式。 ha：主备模式。 replica：只读模式。
 
@@ -139,7 +139,7 @@ class ListStorageTypesRequest:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this ListStorageTypesRequest.
+        r"""Sets the ha_mode of this ListStorageTypesRequest.
 
         主备模式： single：单机模式。 ha：主备模式。 replica：只读模式。
 

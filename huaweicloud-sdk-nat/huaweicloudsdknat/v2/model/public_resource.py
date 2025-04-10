@@ -31,7 +31,7 @@ class PublicResource:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
-        """PublicResource
+        r"""PublicResource
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class PublicResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this PublicResource.
+        r"""Gets the resource_id of this PublicResource.
 
         资源ID
 
@@ -71,7 +71,7 @@ class PublicResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this PublicResource.
+        r"""Sets the resource_id of this PublicResource.
 
         资源ID
 
@@ -82,7 +82,7 @@ class PublicResource:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this PublicResource.
+        r"""Gets the resource_detail of this PublicResource.
 
         资源详情。资源对象，用于扩展。默认为空
 
@@ -93,7 +93,7 @@ class PublicResource:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this PublicResource.
+        r"""Sets the resource_detail of this PublicResource.
 
         资源详情。资源对象，用于扩展。默认为空
 
@@ -104,7 +104,7 @@ class PublicResource:
 
     @property
     def tags(self):
-        """Gets the tags of this PublicResource.
+        r"""Gets the tags of this PublicResource.
 
         标签列表，没有标签默认为空数组。请参考表ResourceTag字段数据结构说明。
 
@@ -115,7 +115,7 @@ class PublicResource:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this PublicResource.
+        r"""Sets the tags of this PublicResource.
 
         标签列表，没有标签默认为空数组。请参考表ResourceTag字段数据结构说明。
 
@@ -126,7 +126,7 @@ class PublicResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this PublicResource.
+        r"""Gets the resource_name of this PublicResource.
 
         资源名称，没有默认为空字符串
 
@@ -137,7 +137,7 @@ class PublicResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this PublicResource.
+        r"""Sets the resource_name of this PublicResource.
 
         资源名称，没有默认为空字符串
 

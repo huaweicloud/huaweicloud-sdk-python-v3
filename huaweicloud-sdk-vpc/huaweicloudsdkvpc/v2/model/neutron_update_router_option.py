@@ -31,7 +31,7 @@ class NeutronUpdateRouterOption:
     }
 
     def __init__(self, name=None, admin_state_up=None, external_gateway_info=None, routes=None):
-        """NeutronUpdateRouterOption
+        r"""NeutronUpdateRouterOption
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class NeutronUpdateRouterOption:
 
     @property
     def name(self):
-        """Gets the name of this NeutronUpdateRouterOption.
+        r"""Gets the name of this NeutronUpdateRouterOption.
 
         功能说明：路由器的名称。 取值范围：0-64个字符，仅支持数字、字母、中文、_(下划线)、-（中划线）、.（点）。 约束：如果name非空，则name不能重复。
 
@@ -75,7 +75,7 @@ class NeutronUpdateRouterOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronUpdateRouterOption.
+        r"""Sets the name of this NeutronUpdateRouterOption.
 
         功能说明：路由器的名称。 取值范围：0-64个字符，仅支持数字、字母、中文、_(下划线)、-（中划线）、.（点）。 约束：如果name非空，则name不能重复。
 
@@ -86,7 +86,7 @@ class NeutronUpdateRouterOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this NeutronUpdateRouterOption.
+        r"""Gets the admin_state_up of this NeutronUpdateRouterOption.
 
         功能说明：资源的管理状态。 取值范围：true、false 约束：只支持true
 
@@ -97,7 +97,7 @@ class NeutronUpdateRouterOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this NeutronUpdateRouterOption.
+        r"""Sets the admin_state_up of this NeutronUpdateRouterOption.
 
         功能说明：资源的管理状态。 取值范围：true、false 约束：只支持true
 
@@ -108,7 +108,7 @@ class NeutronUpdateRouterOption:
 
     @property
     def external_gateway_info(self):
-        """Gets the external_gateway_info of this NeutronUpdateRouterOption.
+        r"""Gets the external_gateway_info of this NeutronUpdateRouterOption.
 
         :return: The external_gateway_info of this NeutronUpdateRouterOption.
         :rtype: :class:`huaweicloudsdkvpc.v2.ExternalGatewayInfoOption`
@@ -117,7 +117,7 @@ class NeutronUpdateRouterOption:
 
     @external_gateway_info.setter
     def external_gateway_info(self, external_gateway_info):
-        """Sets the external_gateway_info of this NeutronUpdateRouterOption.
+        r"""Sets the external_gateway_info of this NeutronUpdateRouterOption.
 
         :param external_gateway_info: The external_gateway_info of this NeutronUpdateRouterOption.
         :type external_gateway_info: :class:`huaweicloudsdkvpc.v2.ExternalGatewayInfoOption`
@@ -126,7 +126,7 @@ class NeutronUpdateRouterOption:
 
     @property
     def routes(self):
-        """Gets the routes of this NeutronUpdateRouterOption.
+        r"""Gets the routes of this NeutronUpdateRouterOption.
 
         功能说明：路由信息，见ListRoute详细说明
 
@@ -137,7 +137,7 @@ class NeutronUpdateRouterOption:
 
     @routes.setter
     def routes(self, routes):
-        """Sets the routes of this NeutronUpdateRouterOption.
+        r"""Sets the routes of this NeutronUpdateRouterOption.
 
         功能说明：路由信息，见ListRoute详细说明
 

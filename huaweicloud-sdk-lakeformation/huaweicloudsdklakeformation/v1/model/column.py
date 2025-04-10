@@ -29,7 +29,7 @@ class Column:
     }
 
     def __init__(self, column_type=None, column_name=None, comment=None):
-        """Column
+        r"""Column
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Column:
 
     @property
     def column_type(self):
-        """Gets the column_type of this Column.
+        r"""Gets the column_type of this Column.
 
         列类型，包括array bigint binary boolean char date decimal double float int interval map set smallint string struct timestamp tinyint union varchar
 
@@ -66,7 +66,7 @@ class Column:
 
     @column_type.setter
     def column_type(self, column_type):
-        """Sets the column_type of this Column.
+        r"""Sets the column_type of this Column.
 
         列类型，包括array bigint binary boolean char date decimal double float int interval map set smallint string struct timestamp tinyint union varchar
 
@@ -77,7 +77,7 @@ class Column:
 
     @property
     def column_name(self):
-        """Gets the column_name of this Column.
+        r"""Gets the column_name of this Column.
 
         列名
 
@@ -88,7 +88,7 @@ class Column:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this Column.
+        r"""Sets the column_name of this Column.
 
         列名
 
@@ -99,7 +99,7 @@ class Column:
 
     @property
     def comment(self):
-        """Gets the comment of this Column.
+        r"""Gets the comment of this Column.
 
         列描述信息
 
@@ -110,7 +110,7 @@ class Column:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this Column.
+        r"""Sets the comment of this Column.
 
         列描述信息
 

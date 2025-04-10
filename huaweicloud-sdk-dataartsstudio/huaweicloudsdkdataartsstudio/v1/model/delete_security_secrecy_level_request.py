@@ -27,7 +27,7 @@ class DeleteSecuritySecrecyLevelRequest:
     }
 
     def __init__(self, workspace=None, id=None):
-        """DeleteSecuritySecrecyLevelRequest
+        r"""DeleteSecuritySecrecyLevelRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteSecuritySecrecyLevelRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteSecuritySecrecyLevelRequest.
+        r"""Gets the workspace of this DeleteSecuritySecrecyLevelRequest.
 
         DataArts Studio工作空间ID
 
@@ -59,7 +59,7 @@ class DeleteSecuritySecrecyLevelRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteSecuritySecrecyLevelRequest.
+        r"""Sets the workspace of this DeleteSecuritySecrecyLevelRequest.
 
         DataArts Studio工作空间ID
 
@@ -70,7 +70,7 @@ class DeleteSecuritySecrecyLevelRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteSecuritySecrecyLevelRequest.
+        r"""Gets the id of this DeleteSecuritySecrecyLevelRequest.
 
         密级id
 
@@ -81,7 +81,7 @@ class DeleteSecuritySecrecyLevelRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteSecuritySecrecyLevelRequest.
+        r"""Sets the id of this DeleteSecuritySecrecyLevelRequest.
 
         密级id
 

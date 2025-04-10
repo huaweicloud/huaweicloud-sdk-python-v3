@@ -27,7 +27,7 @@ class UpdateScriptRequest:
     }
 
     def __init__(self, script_id=None, body=None):
-        """UpdateScriptRequest
+        r"""UpdateScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateScriptRequest:
 
     @property
     def script_id(self):
-        """Gets the script_id of this UpdateScriptRequest.
+        r"""Gets the script_id of this UpdateScriptRequest.
 
         脚本ID。
 
@@ -60,7 +60,7 @@ class UpdateScriptRequest:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this UpdateScriptRequest.
+        r"""Sets the script_id of this UpdateScriptRequest.
 
         脚本ID。
 
@@ -71,7 +71,7 @@ class UpdateScriptRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateScriptRequest.
+        r"""Gets the body of this UpdateScriptRequest.
 
         :return: The body of this UpdateScriptRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateScriptReq`
@@ -80,7 +80,7 @@ class UpdateScriptRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateScriptRequest.
+        r"""Sets the body of this UpdateScriptRequest.
 
         :param body: The body of this UpdateScriptRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateScriptReq`

@@ -27,7 +27,7 @@ class BatchDeleteHostsRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """BatchDeleteHostsRequest
+        r"""BatchDeleteHostsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteHostsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this BatchDeleteHostsRequest.
+        r"""Gets the group_id of this BatchDeleteHostsRequest.
 
         主机集群id
 
@@ -60,7 +60,7 @@ class BatchDeleteHostsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this BatchDeleteHostsRequest.
+        r"""Sets the group_id of this BatchDeleteHostsRequest.
 
         主机集群id
 
@@ -71,7 +71,7 @@ class BatchDeleteHostsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteHostsRequest.
+        r"""Gets the body of this BatchDeleteHostsRequest.
 
         :return: The body of this BatchDeleteHostsRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostListEntity`
@@ -80,7 +80,7 @@ class BatchDeleteHostsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteHostsRequest.
+        r"""Sets the body of this BatchDeleteHostsRequest.
 
         :param body: The body of this BatchDeleteHostsRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostListEntity`

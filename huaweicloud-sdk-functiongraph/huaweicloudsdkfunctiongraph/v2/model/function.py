@@ -29,7 +29,7 @@ class Function:
     }
 
     def __init__(self, name=None, operation=None, metadata=None):
-        """Function
+        r"""Function
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Function:
 
     @property
     def name(self):
-        """Gets the name of this Function.
+        r"""Gets the name of this Function.
 
         函数名称，在单个流程中，名称需要唯一
 
@@ -66,7 +66,7 @@ class Function:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Function.
+        r"""Sets the name of this Function.
 
         函数名称，在单个流程中，名称需要唯一
 
@@ -77,7 +77,7 @@ class Function:
 
     @property
     def operation(self):
-        """Gets the operation of this Function.
+        r"""Gets the operation of this Function.
 
         函数调用URN
 
@@ -88,7 +88,7 @@ class Function:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this Function.
+        r"""Sets the operation of this Function.
 
         函数调用URN
 
@@ -99,7 +99,7 @@ class Function:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Function.
+        r"""Gets the metadata of this Function.
 
         函数扩展属性，由用户自己定制
 
@@ -110,7 +110,7 @@ class Function:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Function.
+        r"""Sets the metadata of this Function.
 
         函数扩展属性，由用户自己定制
 

@@ -25,7 +25,7 @@ class ListDatasourceConnectionsRequest:
     }
 
     def __init__(self, tags=None):
-        """ListDatasourceConnectionsRequest
+        r"""ListDatasourceConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListDatasourceConnectionsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListDatasourceConnectionsRequest.
+        r"""Gets the tags of this ListDatasourceConnectionsRequest.
 
         标签
 
@@ -54,7 +54,7 @@ class ListDatasourceConnectionsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListDatasourceConnectionsRequest.
+        r"""Sets the tags of this ListDatasourceConnectionsRequest.
 
         标签
 

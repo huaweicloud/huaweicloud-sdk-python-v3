@@ -29,7 +29,7 @@ class ShowQuotasRequest:
     }
 
     def __init__(self, datastore_type=None, mode=None, product_type=None):
-        """ShowQuotasRequest
+        r"""ShowQuotasRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowQuotasRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ShowQuotasRequest.
+        r"""Gets the datastore_type of this ShowQuotasRequest.
 
         数据库类型。 取值为“cassandra”，表示查询GeminiDB Cassandra数据库实例配额。 取值为“mongodb”，表示GeminiDB Mongo查询数据库实例配额。 取值为“influxdb”，表示查询GeminiDB Influx数据库实例配额。 取值为“redis”，表示查询GeminiDB Redis数据库实例配额。 如果不传该参数，表示查询所有数据库实例配额。
 
@@ -68,7 +68,7 @@ class ShowQuotasRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ShowQuotasRequest.
+        r"""Sets the datastore_type of this ShowQuotasRequest.
 
         数据库类型。 取值为“cassandra”，表示查询GeminiDB Cassandra数据库实例配额。 取值为“mongodb”，表示GeminiDB Mongo查询数据库实例配额。 取值为“influxdb”，表示查询GeminiDB Influx数据库实例配额。 取值为“redis”，表示查询GeminiDB Redis数据库实例配额。 如果不传该参数，表示查询所有数据库实例配额。
 
@@ -79,7 +79,7 @@ class ShowQuotasRequest:
 
     @property
     def mode(self):
-        """Gets the mode of this ShowQuotasRequest.
+        r"""Gets the mode of this ShowQuotasRequest.
 
         实例类型。   - 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。   - 取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。   - 取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。   - 取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。   - 取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。   - 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。   - 如果不传datastore_type参数，自动忽略该参数设置。
 
@@ -90,7 +90,7 @@ class ShowQuotasRequest:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ShowQuotasRequest.
+        r"""Sets the mode of this ShowQuotasRequest.
 
         实例类型。   - 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis Proxy经典部署模式集群实例类型。   - 取值为“CloudNativeCluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis云原生部署模式集群实例类型。   - 取值为“RedisCluster”，表示GeminiDB Redis Cluster经典部署模式集群实例类型。   - 取值为“Replication”，表示GeminiDB Redis经典部署模式主备实例类型。   - 取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点实例类型。   - 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。   - 如果不传datastore_type参数，自动忽略该参数设置。
 
@@ -101,7 +101,7 @@ class ShowQuotasRequest:
 
     @property
     def product_type(self):
-        """Gets the product_type of this ShowQuotasRequest.
+        r"""Gets the product_type of this ShowQuotasRequest.
 
         产品类型。   -  Capacity 容量型   -  Standard 标准型 当查询GeminiDB redis云原生部署模式集群类型配额必传此参数。
 
@@ -112,7 +112,7 @@ class ShowQuotasRequest:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this ShowQuotasRequest.
+        r"""Sets the product_type of this ShowQuotasRequest.
 
         产品类型。   -  Capacity 容量型   -  Standard 标准型 当查询GeminiDB redis云原生部署模式集群类型配额必传此参数。
 

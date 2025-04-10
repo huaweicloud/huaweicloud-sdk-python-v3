@@ -34,7 +34,7 @@ class IoTAnalyticsClient(Client):
         return client_builder
 
     def create_asset_model(self, request):
-        """创建资产模型
+        r"""创建资产模型
 
         创建资产模型
         
@@ -99,7 +99,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def delete_asset_model(self, request):
-        """删除资产模型
+        r"""删除资产模型
 
         删除资产模型
         
@@ -164,7 +164,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def list_asset_models(self, request):
-        """获取资产模型列表
+        r"""获取资产模型列表
 
         获取资产模型列表
         
@@ -233,7 +233,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_asset_model(self, request):
-        """获取资产模型详情
+        r"""获取资产模型详情
 
         获取资产模型详情
         
@@ -298,7 +298,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def update_asset_model(self, request):
-        """修改资产模型
+        r"""修改资产模型
 
         修改资产模型
         
@@ -365,7 +365,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def create_asset_new(self, request):
-        """创建资产
+        r"""创建资产
 
         创建资产
         
@@ -430,7 +430,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def delete_asset_new(self, request):
-        """删除资产
+        r"""删除资产
 
         删除资产
         
@@ -495,7 +495,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def list_assets_new(self, request):
-        """获取资产列表
+        r"""获取资产列表
 
         获取资产列表
         
@@ -566,7 +566,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def publish_root_asset(self, request):
-        """发布资产
+        r"""发布资产
 
         发布资产
         
@@ -631,7 +631,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_asset_new(self, request):
-        """获取资产详情
+        r"""获取资产详情
 
         获取资产详情
         
@@ -698,7 +698,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def update_asset_new(self, request):
-        """修改资产
+        r"""修改资产
 
         修改资产
         
@@ -765,7 +765,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_last_property_value(self, request):
-        """获取资产属性最新值
+        r"""获取资产属性最新值
 
         获取资产属性最新值
         
@@ -832,7 +832,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_metric_value(self, request):
-        """获取资产属性聚合值
+        r"""获取资产属性聚合值
 
         获取资产属性聚合值
         
@@ -899,7 +899,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_property_raw_value(self, request):
-        """获取资产属性历史值
+        r"""获取资产属性历史值
 
         获取资产属性历史值
         
@@ -966,7 +966,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def create_datasource(self, request):
-        """创建数据源
+        r"""创建数据源
 
         创建数据源
         
@@ -1031,7 +1031,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def delete_datasource(self, request):
-        """删除数据源
+        r"""删除数据源
 
         删除数据源
         
@@ -1096,7 +1096,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_all_data_source(self, request):
-        """查询数据源列表
+        r"""查询数据源列表
 
         查询数据源列表
         
@@ -1167,7 +1167,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_data_source(self, request):
-        """查询数据源详情
+        r"""查询数据源详情
 
         查询数据源详情
         
@@ -1232,7 +1232,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def update_data_source(self, request):
-        """修改数据源
+        r"""修改数据源
 
         修改数据源
         
@@ -1299,7 +1299,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def create_group(self, request):
-        """创建存储组
+        r"""创建存储组
 
         创建存储组
         
@@ -1364,7 +1364,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def delete_group(self, request):
-        """删除存储组
+        r"""删除存储组
 
         删除存储组
         
@@ -1429,7 +1429,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def list_groups(self, request):
-        """查询存储组列表
+        r"""查询存储组列表
 
         查询存储组列表
         
@@ -1504,7 +1504,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def update_group(self, request):
-        """更新存储组
+        r"""更新存储组
 
         更新存储组
         
@@ -1571,7 +1571,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def delete_data_store(self, request):
-        """删除存储
+        r"""删除存储
 
         删除存储
         
@@ -1636,7 +1636,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def list_data_stores(self, request):
-        """查询存储列表
+        r"""查询存储列表
 
         查询存储列表
         
@@ -1709,7 +1709,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def update_data_store(self, request):
-        """更新存储
+        r"""更新存储
 
         更新存储
         
@@ -1776,7 +1776,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def list_history(self, request):
-        """根据标签查询设备历史值
+        r"""根据标签查询设备历史值
 
         根据标签查询设备历史值
         
@@ -1843,7 +1843,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def list_metrics(self, request):
-        """根据标签聚合、查询指标数据
+        r"""根据标签聚合、查询指标数据
 
         根据标签聚合、查询数据
         
@@ -1910,7 +1910,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_property_values(self, request):
-        """查询设备属性最新状态值
+        r"""查询设备属性最新状态值
 
         查询设备属性最新状态值
         
@@ -1977,7 +1977,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def list_tag_values(self, request):
-        """查询标签的值列表
+        r"""查询标签的值列表
 
         查询标签的值列表
         
@@ -2050,7 +2050,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def add_dev_data(self, request):
-        """通过API数据源上报设备数据
+        r"""通过API数据源上报设备数据
 
         通过API数据源上报设备数据
         
@@ -2117,7 +2117,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def add_pipeline_job(self, request):
-        """新建管道作业
+        r"""新建管道作业
 
         新建管道作业时，需要在URL中指定是更新哪一个作业，将在body中附带完整的作业信息。（作业中各算子的详细配置请参考算子配置章节。） check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查。当检查不通过时，将作业状态修改为草稿；检查通过时，将作业状态修改为就绪，并返回成功。
         
@@ -2184,7 +2184,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def delete_pipeline_job(self, request):
-        """删除管道作业
+        r"""删除管道作业
 
         删除用户指定的管道作业
         
@@ -2249,7 +2249,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def list_pipeline_jobs(self, request):
-        """获取管道作业列表
+        r"""获取管道作业列表
 
         获取用户下的所有管道作业，支持分页。
         
@@ -2328,7 +2328,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_pipeline_job(self, request):
-        """获取管道作业详情
+        r"""获取管道作业详情
 
         获取指定管道作业的详情
         
@@ -2393,7 +2393,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def start_pipeline_job(self, request):
-        """启动管道作业
+        r"""启动管道作业
 
         提交管道作业到运行环境，实时接收数据源的数据并按用户定义的数据清洗逻辑对数据进行处理。
         
@@ -2464,7 +2464,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def stop_pipeline_job(self, request):
-        """停止管道作业
+        r"""停止管道作业
 
         停止一个正在运行中的管道作业
         
@@ -2531,7 +2531,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def update_pipeline_job(self, request):
-        """更新管道作业
+        r"""更新管道作业
 
         更新管道作业时，需要在URL中指定是更新哪一个作业，将在body中附带完整的作业信息。（管道作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：数据管道算子配置指南。） check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查。当检查不通过时，将作业状态修改为草稿；检查通过时，将作业状态修改为就绪，并返回成功。
         
@@ -2600,7 +2600,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def create_streaming_job(self, request):
-        """新建实时作业
+        r"""新建实时作业
 
         除名称和描述外，可先不提供作业的详细配置信息。 check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查，无论检查是否通过，都将作业及配置信息保存为草稿，当检查不通过时，返回失败及错误信息，检查通过时，将作业状态修改为就绪，并返回成功。
         
@@ -2667,7 +2667,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def delete_streaming_job_by_id(self, request):
-        """删除实时作业
+        r"""删除实时作业
 
         删除用户指定的作业
         
@@ -2732,7 +2732,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_job_by_id(self, request):
-        """获取实时作业详情
+        r"""获取实时作业详情
 
         获取指定作业的详情
         
@@ -2797,7 +2797,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_jobs(self, request):
-        """获取实时作业列表
+        r"""获取实时作业列表
 
         获取用户下的所有实时分析作业，支持分页。
         
@@ -2868,7 +2868,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def update_streaming_job(self, request):
-        """更新实时作业
+        r"""更新实时作业
 
         更新作业时，需要在URL中指定是更新哪一个作业，将在body中附带完整的作业信息。 check参数表示是否需要对作业配置进行检查，若为false，则不检查，将作业保存为草稿；若为true，则对作业配置进行检查，无论检查是否通过，都将作业及配置信息保存为草稿，当检查不通过时，返回失败及错误信息，检查通过时，将作业状态修改为就绪，并返回成功。
         
@@ -2937,7 +2937,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def start_job(self, request):
-        """启动实时作业
+        r"""启动实时作业
 
         提交作业到运行环境，实时接收数据并按用户定义的业务逻辑对数据进行处理。
         
@@ -3008,7 +3008,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def stop_job(self, request):
-        """停止实时作业
+        r"""停止实时作业
 
         停止一个正在运行中的作业
         
@@ -3075,7 +3075,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def create_computing_resource(self, request):
-        """创建批计算资源
+        r"""创建批计算资源
 
         创建批计算资源。
         
@@ -3140,7 +3140,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def delete_computing_resource(self, request):
-        """删除批计算资源
+        r"""删除批计算资源
 
         删除批计算资源。
         
@@ -3205,7 +3205,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def list_computing_resources(self, request):
-        """查询批计算资源列表
+        r"""查询批计算资源列表
 
         查询批计算资源列表。
         
@@ -3274,7 +3274,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def export_dataset(self, request):
-        """下载离线作业结果
+        r"""下载离线作业结果
 
         将SQL语句的查询结果下载到本地，只支持下载“QUERY”类型作业的查询结果。
         
@@ -3341,7 +3341,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def import_data(self, request):
-        """执行导入数据离线作业
+        r"""执行导入数据离线作业
 
         将数据从文件导入OBS表。
         
@@ -3406,7 +3406,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_dataset(self, request):
-        """查询离线作业结果
+        r"""查询离线作业结果
 
         在执行SQL查询语句的作业完成后，查看该作业执行的结果。目前仅支持查看“QUERY”类型作业的执行结果。该API只能查看前1000条的结果记录，若要查看全部的结果记录，需要先导出查询结果再进行查看。
         
@@ -3477,7 +3477,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def validate_sql(self, request):
-        """检查离线作业SQL语法
+        r"""检查离线作业SQL语法
 
         检查离线作业SQL语法。
         
@@ -3542,7 +3542,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def create_batch_job(self, request):
-        """创建离线作业
+        r"""创建离线作业
 
         创建离线作业。
         
@@ -3607,7 +3607,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def delete_batch_job(self, request):
-        """删除离线作业
+        r"""删除离线作业
 
         删除离线作业。
         
@@ -3672,7 +3672,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def list_batch_jobs(self, request):
-        """查询离线作业列表
+        r"""查询离线作业列表
 
         查询离线作业列表。
         
@@ -3749,7 +3749,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_batch_job(self, request):
-        """查询离线作业详情
+        r"""查询离线作业详情
 
         查询离线作业详情。
         
@@ -3814,7 +3814,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def update_batch_job(self, request):
-        """修改离线作业
+        r"""修改离线作业
 
         修改离线作业。
         
@@ -3881,7 +3881,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def create_run(self, request):
-        """执行离线作业
+        r"""执行离线作业
 
         执行离线作业。
         
@@ -3948,7 +3948,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def delete_run(self, request):
-        """停止离线作业
+        r"""停止离线作业
 
         停止提交中或运行中的离线作业，若作业已经执行结束或失败则无法停止。
         
@@ -4015,7 +4015,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def list_runs(self, request):
-        """查询离线作业运行列表
+        r"""查询离线作业运行列表
 
         查询离线作业运行列表。
         
@@ -4100,7 +4100,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_run(self, request):
-        """查询离线作业运行详情
+        r"""查询离线作业运行详情
 
         查询离线作业运行详情。
         
@@ -4169,7 +4169,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def create_table(self, request):
-        """创建离线数据表
+        r"""创建离线数据表
 
         创建离线数据表。
         
@@ -4234,7 +4234,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def delete_table(self, request):
-        """删除离线数据表
+        r"""删除离线数据表
 
         删除离线数据表。
         
@@ -4299,7 +4299,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def list_tables(self, request):
-        """查询离线数据表列表
+        r"""查询离线数据表列表
 
         查询离线数据表列表。
         
@@ -4374,7 +4374,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_table_preview(self, request):
-        """预览离线数据表内容
+        r"""预览离线数据表内容
 
         预览离线数据表内容。
         
@@ -4439,7 +4439,7 @@ class IoTAnalyticsClient(Client):
         return http_info
 
     def show_table_schema(self, request):
-        """查询离线数据表结构
+        r"""查询离线数据表结构
 
         查询离线数据表结构。
         

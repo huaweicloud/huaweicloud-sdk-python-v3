@@ -35,7 +35,7 @@ class ListMediaProcessTaskRequest:
     }
 
     def __init__(self, task_id=None, status=None, start_time=None, end_time=None, page=None, size=None):
-        """ListMediaProcessTaskRequest
+        r"""ListMediaProcessTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListMediaProcessTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListMediaProcessTaskRequest.
+        r"""Gets the task_id of this ListMediaProcessTaskRequest.
 
         独立加密任务ID。一次最多10个 
 
@@ -89,7 +89,7 @@ class ListMediaProcessTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListMediaProcessTaskRequest.
+        r"""Sets the task_id of this ListMediaProcessTaskRequest.
 
         独立加密任务ID。一次最多10个 
 
@@ -100,7 +100,7 @@ class ListMediaProcessTaskRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListMediaProcessTaskRequest.
+        r"""Gets the status of this ListMediaProcessTaskRequest.
 
         任务状态。  取值如下： - WAITING：等待启动 - PROCESSING：处理中 - SUCCEEDED：处理成功 - FAILED：处理失败 - CANCELED：已取消 
 
@@ -111,7 +111,7 @@ class ListMediaProcessTaskRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListMediaProcessTaskRequest.
+        r"""Sets the status of this ListMediaProcessTaskRequest.
 
         任务状态。  取值如下： - WAITING：等待启动 - PROCESSING：处理中 - SUCCEEDED：处理成功 - FAILED：处理失败 - CANCELED：已取消 
 
@@ -122,7 +122,7 @@ class ListMediaProcessTaskRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListMediaProcessTaskRequest.
+        r"""Gets the start_time of this ListMediaProcessTaskRequest.
 
         起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
@@ -133,7 +133,7 @@ class ListMediaProcessTaskRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListMediaProcessTaskRequest.
+        r"""Sets the start_time of this ListMediaProcessTaskRequest.
 
         起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
@@ -144,7 +144,7 @@ class ListMediaProcessTaskRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListMediaProcessTaskRequest.
+        r"""Gets the end_time of this ListMediaProcessTaskRequest.
 
         结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
@@ -155,7 +155,7 @@ class ListMediaProcessTaskRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListMediaProcessTaskRequest.
+        r"""Sets the end_time of this ListMediaProcessTaskRequest.
 
         结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
@@ -166,7 +166,7 @@ class ListMediaProcessTaskRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListMediaProcessTaskRequest.
+        r"""Gets the page of this ListMediaProcessTaskRequest.
 
         分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
@@ -177,7 +177,7 @@ class ListMediaProcessTaskRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListMediaProcessTaskRequest.
+        r"""Sets the page of this ListMediaProcessTaskRequest.
 
         分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
@@ -188,7 +188,7 @@ class ListMediaProcessTaskRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListMediaProcessTaskRequest.
+        r"""Gets the size of this ListMediaProcessTaskRequest.
 
         每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 
@@ -199,7 +199,7 @@ class ListMediaProcessTaskRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListMediaProcessTaskRequest.
+        r"""Sets the size of this ListMediaProcessTaskRequest.
 
         每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 

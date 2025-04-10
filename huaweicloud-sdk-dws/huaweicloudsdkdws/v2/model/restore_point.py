@@ -29,7 +29,7 @@ class RestorePoint:
     }
 
     def __init__(self, back_ref=None, restore_time=None, cluster_id=None):
-        """RestorePoint
+        r"""RestorePoint
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RestorePoint:
 
     @property
     def back_ref(self):
-        """Gets the back_ref of this RestorePoint.
+        r"""Gets the back_ref of this RestorePoint.
 
         快照ID
 
@@ -68,7 +68,7 @@ class RestorePoint:
 
     @back_ref.setter
     def back_ref(self, back_ref):
-        """Sets the back_ref of this RestorePoint.
+        r"""Sets the back_ref of this RestorePoint.
 
         快照ID
 
@@ -79,7 +79,7 @@ class RestorePoint:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this RestorePoint.
+        r"""Gets the restore_time of this RestorePoint.
 
         恢复时间
 
@@ -90,7 +90,7 @@ class RestorePoint:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this RestorePoint.
+        r"""Sets the restore_time of this RestorePoint.
 
         恢复时间
 
@@ -101,7 +101,7 @@ class RestorePoint:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this RestorePoint.
+        r"""Gets the cluster_id of this RestorePoint.
 
         集群ID
 
@@ -112,7 +112,7 @@ class RestorePoint:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this RestorePoint.
+        r"""Sets the cluster_id of this RestorePoint.
 
         集群ID
 

@@ -29,7 +29,7 @@ class ListCriteriasRequest:
     }
 
     def __init__(self, group_id=None, topic_id=None, search_type=None):
-        """ListCriteriasRequest
+        r"""ListCriteriasRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListCriteriasRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListCriteriasRequest.
+        r"""Gets the group_id of this ListCriteriasRequest.
 
         租户想查询的日志流所在的日志组的groupid，一般为36位字符串。  缺省值：None  最小长度：36  最大长度：36
 
@@ -66,7 +66,7 @@ class ListCriteriasRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListCriteriasRequest.
+        r"""Sets the group_id of this ListCriteriasRequest.
 
         租户想查询的日志流所在的日志组的groupid，一般为36位字符串。  缺省值：None  最小长度：36  最大长度：36
 
@@ -77,7 +77,7 @@ class ListCriteriasRequest:
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this ListCriteriasRequest.
+        r"""Gets the topic_id of this ListCriteriasRequest.
 
         日志流id
 
@@ -88,7 +88,7 @@ class ListCriteriasRequest:
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this ListCriteriasRequest.
+        r"""Sets the topic_id of this ListCriteriasRequest.
 
         日志流id
 
@@ -99,7 +99,7 @@ class ListCriteriasRequest:
 
     @property
     def search_type(self):
-        """Gets the search_type of this ListCriteriasRequest.
+        r"""Gets the search_type of this ListCriteriasRequest.
 
         原始日志：ORIGINALLOG 可视化日志: VISUALIZATION
 
@@ -110,7 +110,7 @@ class ListCriteriasRequest:
 
     @search_type.setter
     def search_type(self, search_type):
-        """Sets the search_type of this ListCriteriasRequest.
+        r"""Sets the search_type of this ListCriteriasRequest.
 
         原始日志：ORIGINALLOG 可视化日志: VISUALIZATION
 

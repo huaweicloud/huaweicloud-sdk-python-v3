@@ -24,7 +24,7 @@ class UpdateNextflowWorkflowResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateNextflowWorkflowResponse
+        r"""UpdateNextflowWorkflowResponse
 
         The model defined in huaweicloud sdk
 

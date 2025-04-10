@@ -28,7 +28,7 @@ class ListApiCatalogListResponse(SdkResponse):
     }
 
     def __init__(self, total=None, apis=None):
-        """ListApiCatalogListResponse
+        r"""ListApiCatalogListResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListApiCatalogListResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListApiCatalogListResponse.
+        r"""Gets the total of this ListApiCatalogListResponse.
 
         API总数量
 
@@ -62,7 +62,7 @@ class ListApiCatalogListResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListApiCatalogListResponse.
+        r"""Sets the total of this ListApiCatalogListResponse.
 
         API总数量
 
@@ -73,7 +73,7 @@ class ListApiCatalogListResponse(SdkResponse):
 
     @property
     def apis(self):
-        """Gets the apis of this ListApiCatalogListResponse.
+        r"""Gets the apis of this ListApiCatalogListResponse.
 
         API列表
 
@@ -84,7 +84,7 @@ class ListApiCatalogListResponse(SdkResponse):
 
     @apis.setter
     def apis(self, apis):
-        """Sets the apis of this ListApiCatalogListResponse.
+        r"""Sets the apis of this ListApiCatalogListResponse.
 
         API列表
 

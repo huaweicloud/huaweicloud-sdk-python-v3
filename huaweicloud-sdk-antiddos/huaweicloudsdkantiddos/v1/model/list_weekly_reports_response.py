@@ -30,7 +30,7 @@ class ListWeeklyReportsResponse(SdkResponse):
     }
 
     def __init__(self, ddos_intercept_times=None, weekdata=None, top10=None):
-        """ListWeeklyReportsResponse
+        r"""ListWeeklyReportsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListWeeklyReportsResponse(SdkResponse):
 
     @property
     def ddos_intercept_times(self):
-        """Gets the ddos_intercept_times of this ListWeeklyReportsResponse.
+        r"""Gets the ddos_intercept_times of this ListWeeklyReportsResponse.
 
         一周内DDoS拦截次数
 
@@ -69,7 +69,7 @@ class ListWeeklyReportsResponse(SdkResponse):
 
     @ddos_intercept_times.setter
     def ddos_intercept_times(self, ddos_intercept_times):
-        """Sets the ddos_intercept_times of this ListWeeklyReportsResponse.
+        r"""Sets the ddos_intercept_times of this ListWeeklyReportsResponse.
 
         一周内DDoS拦截次数
 
@@ -80,7 +80,7 @@ class ListWeeklyReportsResponse(SdkResponse):
 
     @property
     def weekdata(self):
-        """Gets the weekdata of this ListWeeklyReportsResponse.
+        r"""Gets the weekdata of this ListWeeklyReportsResponse.
 
         一周的攻击次数统计数据
 
@@ -91,7 +91,7 @@ class ListWeeklyReportsResponse(SdkResponse):
 
     @weekdata.setter
     def weekdata(self, weekdata):
-        """Sets the weekdata of this ListWeeklyReportsResponse.
+        r"""Sets the weekdata of this ListWeeklyReportsResponse.
 
         一周的攻击次数统计数据
 
@@ -102,7 +102,7 @@ class ListWeeklyReportsResponse(SdkResponse):
 
     @property
     def top10(self):
-        """Gets the top10 of this ListWeeklyReportsResponse.
+        r"""Gets the top10 of this ListWeeklyReportsResponse.
 
         被攻击次数排名前10的IP地址
 
@@ -113,7 +113,7 @@ class ListWeeklyReportsResponse(SdkResponse):
 
     @top10.setter
     def top10(self, top10):
-        """Sets the top10 of this ListWeeklyReportsResponse.
+        r"""Sets the top10 of this ListWeeklyReportsResponse.
 
         被攻击次数排名前10的IP地址
 

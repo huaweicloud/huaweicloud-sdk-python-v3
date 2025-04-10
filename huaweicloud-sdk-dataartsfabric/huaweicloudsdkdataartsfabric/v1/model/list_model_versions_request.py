@@ -35,7 +35,7 @@ class ListModelVersionsRequest:
     }
 
     def __init__(self, workspace_id=None, model_id=None, offset=None, limit=None, version_id=None, name=None):
-        """ListModelVersionsRequest
+        r"""ListModelVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListModelVersionsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListModelVersionsRequest.
+        r"""Gets the workspace_id of this ListModelVersionsRequest.
 
         工作空间ID
 
@@ -87,7 +87,7 @@ class ListModelVersionsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListModelVersionsRequest.
+        r"""Sets the workspace_id of this ListModelVersionsRequest.
 
         工作空间ID
 
@@ -98,7 +98,7 @@ class ListModelVersionsRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this ListModelVersionsRequest.
+        r"""Gets the model_id of this ListModelVersionsRequest.
 
         Service ID
 
@@ -109,7 +109,7 @@ class ListModelVersionsRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this ListModelVersionsRequest.
+        r"""Sets the model_id of this ListModelVersionsRequest.
 
         Service ID
 
@@ -120,7 +120,7 @@ class ListModelVersionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListModelVersionsRequest.
+        r"""Gets the offset of this ListModelVersionsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -131,7 +131,7 @@ class ListModelVersionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListModelVersionsRequest.
+        r"""Sets the offset of this ListModelVersionsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -142,7 +142,7 @@ class ListModelVersionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListModelVersionsRequest.
+        r"""Gets the limit of this ListModelVersionsRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -153,7 +153,7 @@ class ListModelVersionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListModelVersionsRequest.
+        r"""Sets the limit of this ListModelVersionsRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -164,7 +164,7 @@ class ListModelVersionsRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ListModelVersionsRequest.
+        r"""Gets the version_id of this ListModelVersionsRequest.
 
         模型版本ID
 
@@ -175,7 +175,7 @@ class ListModelVersionsRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ListModelVersionsRequest.
+        r"""Sets the version_id of this ListModelVersionsRequest.
 
         模型版本ID
 
@@ -186,7 +186,7 @@ class ListModelVersionsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListModelVersionsRequest.
+        r"""Gets the name of this ListModelVersionsRequest.
 
         模型版本名称，支持模糊查询
 
@@ -197,7 +197,7 @@ class ListModelVersionsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListModelVersionsRequest.
+        r"""Sets the name of this ListModelVersionsRequest.
 
         模型版本名称，支持模糊查询
 

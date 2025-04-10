@@ -30,7 +30,7 @@ class ResetFingerprintResponse(SdkResponse):
     }
 
     def __init__(self, device_id=None, fingerprint=None, fingerprint_type=None):
-        """ResetFingerprintResponse
+        r"""ResetFingerprintResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ResetFingerprintResponse(SdkResponse):
 
     @property
     def device_id(self):
-        """Gets the device_id of this ResetFingerprintResponse.
+        r"""Gets the device_id of this ResetFingerprintResponse.
 
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
@@ -69,7 +69,7 @@ class ResetFingerprintResponse(SdkResponse):
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ResetFingerprintResponse.
+        r"""Sets the device_id of this ResetFingerprintResponse.
 
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
@@ -80,7 +80,7 @@ class ResetFingerprintResponse(SdkResponse):
 
     @property
     def fingerprint(self):
-        """Gets the fingerprint of this ResetFingerprintResponse.
+        r"""Gets the fingerprint of this ResetFingerprintResponse.
 
         设备指纹。
 
@@ -91,7 +91,7 @@ class ResetFingerprintResponse(SdkResponse):
 
     @fingerprint.setter
     def fingerprint(self, fingerprint):
-        """Sets the fingerprint of this ResetFingerprintResponse.
+        r"""Sets the fingerprint of this ResetFingerprintResponse.
 
         设备指纹。
 
@@ -102,7 +102,7 @@ class ResetFingerprintResponse(SdkResponse):
 
     @property
     def fingerprint_type(self):
-        """Gets the fingerprint_type of this ResetFingerprintResponse.
+        r"""Gets the fingerprint_type of this ResetFingerprintResponse.
 
         **参数说明**：重置设备证书指纹的的类型。 **取值范围**： - PRIMARY：重置主指纹。 - SECONDARY：重置辅指纹。
 
@@ -113,7 +113,7 @@ class ResetFingerprintResponse(SdkResponse):
 
     @fingerprint_type.setter
     def fingerprint_type(self, fingerprint_type):
-        """Sets the fingerprint_type of this ResetFingerprintResponse.
+        r"""Sets the fingerprint_type of this ResetFingerprintResponse.
 
         **参数说明**：重置设备证书指纹的的类型。 **取值范围**： - PRIMARY：重置主指纹。 - SECONDARY：重置辅指纹。
 

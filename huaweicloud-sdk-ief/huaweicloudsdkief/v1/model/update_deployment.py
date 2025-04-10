@@ -27,7 +27,7 @@ class UpdateDeployment:
     }
 
     def __init__(self, deployment=None, description=None):
-        """UpdateDeployment
+        r"""UpdateDeployment
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateDeployment:
 
     @property
     def deployment(self):
-        """Gets the deployment of this UpdateDeployment.
+        r"""Gets the deployment of this UpdateDeployment.
 
         :return: The deployment of this UpdateDeployment.
         :rtype: :class:`huaweicloudsdkief.v1.UpdatePodDeployment`
@@ -59,7 +59,7 @@ class UpdateDeployment:
 
     @deployment.setter
     def deployment(self, deployment):
-        """Sets the deployment of this UpdateDeployment.
+        r"""Sets the deployment of this UpdateDeployment.
 
         :param deployment: The deployment of this UpdateDeployment.
         :type deployment: :class:`huaweicloudsdkief.v1.UpdatePodDeployment`
@@ -68,7 +68,7 @@ class UpdateDeployment:
 
     @property
     def description(self):
-        """Gets the description of this UpdateDeployment.
+        r"""Gets the description of this UpdateDeployment.
 
         应用部署描述修改，只修改描述不需要传入deployment参数
 
@@ -79,7 +79,7 @@ class UpdateDeployment:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateDeployment.
+        r"""Sets the description of this UpdateDeployment.
 
         应用部署描述修改，只修改描述不需要传入deployment参数
 

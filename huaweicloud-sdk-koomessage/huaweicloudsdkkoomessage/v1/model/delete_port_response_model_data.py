@@ -27,7 +27,7 @@ class DeletePortResponseModelData:
     }
 
     def __init__(self, port=None, port_type=None):
-        """DeletePortResponseModelData
+        r"""DeletePortResponseModelData
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeletePortResponseModelData:
 
     @property
     def port(self):
-        """Gets the port of this DeletePortResponseModelData.
+        r"""Gets the port of this DeletePortResponseModelData.
 
         通道号。  
 
@@ -59,7 +59,7 @@ class DeletePortResponseModelData:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this DeletePortResponseModelData.
+        r"""Sets the port of this DeletePortResponseModelData.
 
         通道号。  
 
@@ -70,7 +70,7 @@ class DeletePortResponseModelData:
 
     @property
     def port_type(self):
-        """Gets the port_type of this DeletePortResponseModelData.
+        r"""Gets the port_type of this DeletePortResponseModelData.
 
         通道号类型。 - 1：普通 - 3：前缀号段 - 5：后缀号段  
 
@@ -81,7 +81,7 @@ class DeletePortResponseModelData:
 
     @port_type.setter
     def port_type(self, port_type):
-        """Sets the port_type of this DeletePortResponseModelData.
+        r"""Sets the port_type of this DeletePortResponseModelData.
 
         通道号类型。 - 1：普通 - 3：前缀号段 - 5：后缀号段  
 

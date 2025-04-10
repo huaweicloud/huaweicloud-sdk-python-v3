@@ -28,7 +28,7 @@ class ListAutoLaunchsResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        """ListAutoLaunchsResponse
+        r"""ListAutoLaunchsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAutoLaunchsResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListAutoLaunchsResponse.
+        r"""Gets the total_num of this ListAutoLaunchsResponse.
 
         自启动项总数
 
@@ -62,7 +62,7 @@ class ListAutoLaunchsResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListAutoLaunchsResponse.
+        r"""Sets the total_num of this ListAutoLaunchsResponse.
 
         自启动项总数
 
@@ -73,7 +73,7 @@ class ListAutoLaunchsResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListAutoLaunchsResponse.
+        r"""Gets the data_list of this ListAutoLaunchsResponse.
 
         自启动项列表
 
@@ -84,7 +84,7 @@ class ListAutoLaunchsResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListAutoLaunchsResponse.
+        r"""Sets the data_list of this ListAutoLaunchsResponse.
 
         自启动项列表
 

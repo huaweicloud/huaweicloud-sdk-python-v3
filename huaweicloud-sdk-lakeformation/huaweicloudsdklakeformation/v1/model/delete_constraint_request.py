@@ -33,7 +33,7 @@ class DeleteConstraintRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name=None, constraint_name=None):
-        """DeleteConstraintRequest
+        r"""DeleteConstraintRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class DeleteConstraintRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteConstraintRequest.
+        r"""Gets the instance_id of this DeleteConstraintRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class DeleteConstraintRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteConstraintRequest.
+        r"""Sets the instance_id of this DeleteConstraintRequest.
 
         实例ID
 
@@ -88,7 +88,7 @@ class DeleteConstraintRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this DeleteConstraintRequest.
+        r"""Gets the catalog_name of this DeleteConstraintRequest.
 
         catalog名字
 
@@ -99,7 +99,7 @@ class DeleteConstraintRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this DeleteConstraintRequest.
+        r"""Sets the catalog_name of this DeleteConstraintRequest.
 
         catalog名字
 
@@ -110,7 +110,7 @@ class DeleteConstraintRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DeleteConstraintRequest.
+        r"""Gets the database_name of this DeleteConstraintRequest.
 
         数据库名字
 
@@ -121,7 +121,7 @@ class DeleteConstraintRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DeleteConstraintRequest.
+        r"""Sets the database_name of this DeleteConstraintRequest.
 
         数据库名字
 
@@ -132,7 +132,7 @@ class DeleteConstraintRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DeleteConstraintRequest.
+        r"""Gets the table_name of this DeleteConstraintRequest.
 
         表名称
 
@@ -143,7 +143,7 @@ class DeleteConstraintRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DeleteConstraintRequest.
+        r"""Sets the table_name of this DeleteConstraintRequest.
 
         表名称
 
@@ -154,7 +154,7 @@ class DeleteConstraintRequest:
 
     @property
     def constraint_name(self):
-        """Gets the constraint_name of this DeleteConstraintRequest.
+        r"""Gets the constraint_name of this DeleteConstraintRequest.
 
         列限制信息名字; 外键填写外键限制名
 
@@ -165,7 +165,7 @@ class DeleteConstraintRequest:
 
     @constraint_name.setter
     def constraint_name(self, constraint_name):
-        """Sets the constraint_name of this DeleteConstraintRequest.
+        r"""Sets the constraint_name of this DeleteConstraintRequest.
 
         列限制信息名字; 外键填写外键限制名
 

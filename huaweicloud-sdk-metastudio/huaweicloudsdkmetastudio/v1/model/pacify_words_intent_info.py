@@ -29,7 +29,7 @@ class PacifyWordsIntentInfo:
     }
 
     def __init__(self, intent=None, desc_cn=None, desc_en=None):
-        """PacifyWordsIntentInfo
+        r"""PacifyWordsIntentInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PacifyWordsIntentInfo:
 
     @property
     def intent(self):
-        """Gets the intent of this PacifyWordsIntentInfo.
+        r"""Gets the intent of this PacifyWordsIntentInfo.
 
         意图名称
 
@@ -68,7 +68,7 @@ class PacifyWordsIntentInfo:
 
     @intent.setter
     def intent(self, intent):
-        """Sets the intent of this PacifyWordsIntentInfo.
+        r"""Sets the intent of this PacifyWordsIntentInfo.
 
         意图名称
 
@@ -79,7 +79,7 @@ class PacifyWordsIntentInfo:
 
     @property
     def desc_cn(self):
-        """Gets the desc_cn of this PacifyWordsIntentInfo.
+        r"""Gets the desc_cn of this PacifyWordsIntentInfo.
 
         意图中文描述
 
@@ -90,7 +90,7 @@ class PacifyWordsIntentInfo:
 
     @desc_cn.setter
     def desc_cn(self, desc_cn):
-        """Sets the desc_cn of this PacifyWordsIntentInfo.
+        r"""Sets the desc_cn of this PacifyWordsIntentInfo.
 
         意图中文描述
 
@@ -101,7 +101,7 @@ class PacifyWordsIntentInfo:
 
     @property
     def desc_en(self):
-        """Gets the desc_en of this PacifyWordsIntentInfo.
+        r"""Gets the desc_en of this PacifyWordsIntentInfo.
 
         意图英文描述
 
@@ -112,7 +112,7 @@ class PacifyWordsIntentInfo:
 
     @desc_en.setter
     def desc_en(self, desc_en):
-        """Sets the desc_en of this PacifyWordsIntentInfo.
+        r"""Sets the desc_en of this PacifyWordsIntentInfo.
 
         意图英文描述
 

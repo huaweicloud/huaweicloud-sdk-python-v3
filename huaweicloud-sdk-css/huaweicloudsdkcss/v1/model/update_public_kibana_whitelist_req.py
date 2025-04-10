@@ -25,7 +25,7 @@ class UpdatePublicKibanaWhitelistReq:
     }
 
     def __init__(self, white_list=None):
-        """UpdatePublicKibanaWhitelistReq
+        r"""UpdatePublicKibanaWhitelistReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdatePublicKibanaWhitelistReq:
 
     @property
     def white_list(self):
-        """Gets the white_list of this UpdatePublicKibanaWhitelistReq.
+        r"""Gets the white_list of this UpdatePublicKibanaWhitelistReq.
 
         允许kibana公网访问的白名单ip或网段，以逗号隔开，不可重复。
 
@@ -53,7 +53,7 @@ class UpdatePublicKibanaWhitelistReq:
 
     @white_list.setter
     def white_list(self, white_list):
-        """Sets the white_list of this UpdatePublicKibanaWhitelistReq.
+        r"""Sets the white_list of this UpdatePublicKibanaWhitelistReq.
 
         允许kibana公网访问的白名单ip或网段，以逗号隔开，不可重复。
 

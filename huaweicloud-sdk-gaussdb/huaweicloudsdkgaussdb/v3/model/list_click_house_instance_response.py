@@ -26,7 +26,7 @@ class ListClickHouseInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance=None):
-        """ListClickHouseInstanceResponse
+        r"""ListClickHouseInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListClickHouseInstanceResponse(SdkResponse):
 
     @property
     def instance(self):
-        """Gets the instance of this ListClickHouseInstanceResponse.
+        r"""Gets the instance of this ListClickHouseInstanceResponse.
 
         :return: The instance of this ListClickHouseInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChInstancesInfoRsponseInstance`
@@ -53,7 +53,7 @@ class ListClickHouseInstanceResponse(SdkResponse):
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ListClickHouseInstanceResponse.
+        r"""Sets the instance of this ListClickHouseInstanceResponse.
 
         :param instance: The instance of this ListClickHouseInstanceResponse.
         :type instance: :class:`huaweicloudsdkgaussdb.v3.ChInstancesInfoRsponseInstance`

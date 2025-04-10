@@ -25,7 +25,7 @@ class CreateEvaluationProjectRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEvaluationProjectRequest
+        r"""CreateEvaluationProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateEvaluationProjectRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEvaluationProjectRequest.
+        r"""Gets the body of this CreateEvaluationProjectRequest.
 
         :return: The body of this CreateEvaluationProjectRequest.
         :rtype: :class:`huaweicloudsdkugo.v1.CreateEvaluationProjectReq`
@@ -52,7 +52,7 @@ class CreateEvaluationProjectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEvaluationProjectRequest.
+        r"""Sets the body of this CreateEvaluationProjectRequest.
 
         :param body: The body of this CreateEvaluationProjectRequest.
         :type body: :class:`huaweicloudsdkugo.v1.CreateEvaluationProjectReq`

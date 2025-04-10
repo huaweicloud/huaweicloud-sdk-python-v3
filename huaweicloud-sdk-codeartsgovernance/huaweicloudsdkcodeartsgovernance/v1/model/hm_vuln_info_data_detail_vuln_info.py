@@ -67,7 +67,7 @@ class HmVulnInfoDataDetailVulnInfo:
     }
 
     def __init__(self, problem_file_path=None, identity_info=None, risk_level=None, app_name=None, category_id=None, type_cn=None, type_en=None, problem_cn=None, problem_en=None, solution_cn=None, solution_en=None, detection_scenario_cn=None, detection_scenario_en=None, wiki_url=None, standard_info=None, confirm_state=None, confirm_result=None, confirmer=None, confirm_description=None, confirm_time=None, dts_id=None, standard_no=None):
-        """HmVulnInfoDataDetailVulnInfo
+        r"""HmVulnInfoDataDetailVulnInfo
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def problem_file_path(self):
-        """Gets the problem_file_path of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the problem_file_path of this HmVulnInfoDataDetailVulnInfo.
 
         问题文件路径
 
@@ -201,7 +201,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @problem_file_path.setter
     def problem_file_path(self, problem_file_path):
-        """Sets the problem_file_path of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the problem_file_path of this HmVulnInfoDataDetailVulnInfo.
 
         问题文件路径
 
@@ -212,7 +212,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def identity_info(self):
-        """Gets the identity_info of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the identity_info of this HmVulnInfoDataDetailVulnInfo.
 
         问题特征信息
 
@@ -223,7 +223,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @identity_info.setter
     def identity_info(self, identity_info):
-        """Sets the identity_info of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the identity_info of this HmVulnInfoDataDetailVulnInfo.
 
         问题特征信息
 
@@ -234,7 +234,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the risk_level of this HmVulnInfoDataDetailVulnInfo.
 
         问题等级
 
@@ -245,7 +245,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the risk_level of this HmVulnInfoDataDetailVulnInfo.
 
         问题等级
 
@@ -256,7 +256,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the app_name of this HmVulnInfoDataDetailVulnInfo.
 
         应用名称
 
@@ -267,7 +267,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the app_name of this HmVulnInfoDataDetailVulnInfo.
 
         应用名称
 
@@ -278,7 +278,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def category_id(self):
-        """Gets the category_id of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the category_id of this HmVulnInfoDataDetailVulnInfo.
 
         问题项大类id
 
@@ -289,7 +289,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the category_id of this HmVulnInfoDataDetailVulnInfo.
 
         问题项大类id
 
@@ -300,7 +300,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def type_cn(self):
-        """Gets the type_cn of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the type_cn of this HmVulnInfoDataDetailVulnInfo.
 
         问题项大类中文名
 
@@ -311,7 +311,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @type_cn.setter
     def type_cn(self, type_cn):
-        """Sets the type_cn of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the type_cn of this HmVulnInfoDataDetailVulnInfo.
 
         问题项大类中文名
 
@@ -322,7 +322,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def type_en(self):
-        """Gets the type_en of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the type_en of this HmVulnInfoDataDetailVulnInfo.
 
         问题项大类英文名
 
@@ -333,7 +333,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @type_en.setter
     def type_en(self, type_en):
-        """Sets the type_en of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the type_en of this HmVulnInfoDataDetailVulnInfo.
 
         问题项大类英文名
 
@@ -344,7 +344,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def problem_cn(self):
-        """Gets the problem_cn of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the problem_cn of this HmVulnInfoDataDetailVulnInfo.
 
         问题描述中文
 
@@ -355,7 +355,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @problem_cn.setter
     def problem_cn(self, problem_cn):
-        """Sets the problem_cn of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the problem_cn of this HmVulnInfoDataDetailVulnInfo.
 
         问题描述中文
 
@@ -366,7 +366,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def problem_en(self):
-        """Gets the problem_en of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the problem_en of this HmVulnInfoDataDetailVulnInfo.
 
         问题描述英文
 
@@ -377,7 +377,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @problem_en.setter
     def problem_en(self, problem_en):
-        """Sets the problem_en of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the problem_en of this HmVulnInfoDataDetailVulnInfo.
 
         问题描述英文
 
@@ -388,7 +388,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def solution_cn(self):
-        """Gets the solution_cn of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the solution_cn of this HmVulnInfoDataDetailVulnInfo.
 
         解决办法中文
 
@@ -399,7 +399,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @solution_cn.setter
     def solution_cn(self, solution_cn):
-        """Sets the solution_cn of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the solution_cn of this HmVulnInfoDataDetailVulnInfo.
 
         解决办法中文
 
@@ -410,7 +410,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def solution_en(self):
-        """Gets the solution_en of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the solution_en of this HmVulnInfoDataDetailVulnInfo.
 
         解决办法英文
 
@@ -421,7 +421,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @solution_en.setter
     def solution_en(self, solution_en):
-        """Sets the solution_en of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the solution_en of this HmVulnInfoDataDetailVulnInfo.
 
         解决办法英文
 
@@ -432,7 +432,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def detection_scenario_cn(self):
-        """Gets the detection_scenario_cn of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the detection_scenario_cn of this HmVulnInfoDataDetailVulnInfo.
 
         问题详细描述中文
 
@@ -443,7 +443,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @detection_scenario_cn.setter
     def detection_scenario_cn(self, detection_scenario_cn):
-        """Sets the detection_scenario_cn of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the detection_scenario_cn of this HmVulnInfoDataDetailVulnInfo.
 
         问题详细描述中文
 
@@ -454,7 +454,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def detection_scenario_en(self):
-        """Gets the detection_scenario_en of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the detection_scenario_en of this HmVulnInfoDataDetailVulnInfo.
 
         问题详细描述英文
 
@@ -465,7 +465,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @detection_scenario_en.setter
     def detection_scenario_en(self, detection_scenario_en):
-        """Sets the detection_scenario_en of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the detection_scenario_en of this HmVulnInfoDataDetailVulnInfo.
 
         问题详细描述英文
 
@@ -476,7 +476,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def wiki_url(self):
-        """Gets the wiki_url of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the wiki_url of this HmVulnInfoDataDetailVulnInfo.
 
         问题wiki
 
@@ -487,7 +487,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @wiki_url.setter
     def wiki_url(self, wiki_url):
-        """Sets the wiki_url of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the wiki_url of this HmVulnInfoDataDetailVulnInfo.
 
         问题wiki
 
@@ -498,7 +498,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def standard_info(self):
-        """Gets the standard_info of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the standard_info of this HmVulnInfoDataDetailVulnInfo.
 
         问题来源规范
 
@@ -509,7 +509,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @standard_info.setter
     def standard_info(self, standard_info):
-        """Sets the standard_info of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the standard_info of this HmVulnInfoDataDetailVulnInfo.
 
         问题来源规范
 
@@ -520,7 +520,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def confirm_state(self):
-        """Gets the confirm_state of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the confirm_state of this HmVulnInfoDataDetailVulnInfo.
 
         漏洞确认: 0 - 未确认 1 - 已确认
 
@@ -531,7 +531,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @confirm_state.setter
     def confirm_state(self, confirm_state):
-        """Sets the confirm_state of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the confirm_state of this HmVulnInfoDataDetailVulnInfo.
 
         漏洞确认: 0 - 未确认 1 - 已确认
 
@@ -542,7 +542,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def confirm_result(self):
-        """Gets the confirm_result of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the confirm_result of this HmVulnInfoDataDetailVulnInfo.
 
         漏洞确认结果: 0 - 未误报 1 - 误报
 
@@ -553,7 +553,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @confirm_result.setter
     def confirm_result(self, confirm_result):
-        """Sets the confirm_result of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the confirm_result of this HmVulnInfoDataDetailVulnInfo.
 
         漏洞确认结果: 0 - 未误报 1 - 误报
 
@@ -564,7 +564,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def confirmer(self):
-        """Gets the confirmer of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the confirmer of this HmVulnInfoDataDetailVulnInfo.
 
         确认人
 
@@ -575,7 +575,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @confirmer.setter
     def confirmer(self, confirmer):
-        """Sets the confirmer of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the confirmer of this HmVulnInfoDataDetailVulnInfo.
 
         确认人
 
@@ -586,7 +586,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def confirm_description(self):
-        """Gets the confirm_description of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the confirm_description of this HmVulnInfoDataDetailVulnInfo.
 
         确认描述
 
@@ -597,7 +597,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @confirm_description.setter
     def confirm_description(self, confirm_description):
-        """Sets the confirm_description of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the confirm_description of this HmVulnInfoDataDetailVulnInfo.
 
         确认描述
 
@@ -608,7 +608,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def confirm_time(self):
-        """Gets the confirm_time of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the confirm_time of this HmVulnInfoDataDetailVulnInfo.
 
         确认时间
 
@@ -619,7 +619,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @confirm_time.setter
     def confirm_time(self, confirm_time):
-        """Sets the confirm_time of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the confirm_time of this HmVulnInfoDataDetailVulnInfo.
 
         确认时间
 
@@ -630,7 +630,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def dts_id(self):
-        """Gets the dts_id of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the dts_id of this HmVulnInfoDataDetailVulnInfo.
 
         问题单编号
 
@@ -641,7 +641,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @dts_id.setter
     def dts_id(self, dts_id):
-        """Sets the dts_id of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the dts_id of this HmVulnInfoDataDetailVulnInfo.
 
         问题单编号
 
@@ -652,7 +652,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @property
     def standard_no(self):
-        """Gets the standard_no of this HmVulnInfoDataDetailVulnInfo.
+        r"""Gets the standard_no of this HmVulnInfoDataDetailVulnInfo.
 
         标准标号
 
@@ -663,7 +663,7 @@ class HmVulnInfoDataDetailVulnInfo:
 
     @standard_no.setter
     def standard_no(self, standard_no):
-        """Sets the standard_no of this HmVulnInfoDataDetailVulnInfo.
+        r"""Sets the standard_no of this HmVulnInfoDataDetailVulnInfo.
 
         标准标号
 

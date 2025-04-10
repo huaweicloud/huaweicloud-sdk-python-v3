@@ -33,7 +33,7 @@ class DeptBasicDTO:
     }
 
     def __init__(self, dept_code=None, corp_id=None, dept_name=None, dept_name_path=None, parent_dept_code=None):
-        """DeptBasicDTO
+        r"""DeptBasicDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DeptBasicDTO:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this DeptBasicDTO.
+        r"""Gets the dept_code of this DeptBasicDTO.
 
         部门编码。
 
@@ -82,7 +82,7 @@ class DeptBasicDTO:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this DeptBasicDTO.
+        r"""Sets the dept_code of this DeptBasicDTO.
 
         部门编码。
 
@@ -93,7 +93,7 @@ class DeptBasicDTO:
 
     @property
     def corp_id(self):
-        """Gets the corp_id of this DeptBasicDTO.
+        r"""Gets the corp_id of this DeptBasicDTO.
 
         企业id。
 
@@ -104,7 +104,7 @@ class DeptBasicDTO:
 
     @corp_id.setter
     def corp_id(self, corp_id):
-        """Sets the corp_id of this DeptBasicDTO.
+        r"""Sets the corp_id of this DeptBasicDTO.
 
         企业id。
 
@@ -115,7 +115,7 @@ class DeptBasicDTO:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this DeptBasicDTO.
+        r"""Gets the dept_name of this DeptBasicDTO.
 
         部门名称。
 
@@ -126,7 +126,7 @@ class DeptBasicDTO:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this DeptBasicDTO.
+        r"""Sets the dept_name of this DeptBasicDTO.
 
         部门名称。
 
@@ -137,7 +137,7 @@ class DeptBasicDTO:
 
     @property
     def dept_name_path(self):
-        """Gets the dept_name_path of this DeptBasicDTO.
+        r"""Gets the dept_name_path of this DeptBasicDTO.
 
         部门名称路径。
 
@@ -148,7 +148,7 @@ class DeptBasicDTO:
 
     @dept_name_path.setter
     def dept_name_path(self, dept_name_path):
-        """Sets the dept_name_path of this DeptBasicDTO.
+        r"""Sets the dept_name_path of this DeptBasicDTO.
 
         部门名称路径。
 
@@ -159,7 +159,7 @@ class DeptBasicDTO:
 
     @property
     def parent_dept_code(self):
-        """Gets the parent_dept_code of this DeptBasicDTO.
+        r"""Gets the parent_dept_code of this DeptBasicDTO.
 
         父部门编码。
 
@@ -170,7 +170,7 @@ class DeptBasicDTO:
 
     @parent_dept_code.setter
     def parent_dept_code(self, parent_dept_code):
-        """Sets the parent_dept_code of this DeptBasicDTO.
+        r"""Sets the parent_dept_code of this DeptBasicDTO.
 
         父部门编码。
 

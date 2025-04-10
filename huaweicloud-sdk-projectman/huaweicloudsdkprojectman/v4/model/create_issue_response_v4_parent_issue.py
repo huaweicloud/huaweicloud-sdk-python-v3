@@ -27,7 +27,7 @@ class CreateIssueResponseV4ParentIssue:
     }
 
     def __init__(self, id=None, name=None):
-        """CreateIssueResponseV4ParentIssue
+        r"""CreateIssueResponseV4ParentIssue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateIssueResponseV4ParentIssue:
 
     @property
     def id(self):
-        """Gets the id of this CreateIssueResponseV4ParentIssue.
+        r"""Gets the id of this CreateIssueResponseV4ParentIssue.
 
         父工作项id
 
@@ -61,7 +61,7 @@ class CreateIssueResponseV4ParentIssue:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateIssueResponseV4ParentIssue.
+        r"""Sets the id of this CreateIssueResponseV4ParentIssue.
 
         父工作项id
 
@@ -72,7 +72,7 @@ class CreateIssueResponseV4ParentIssue:
 
     @property
     def name(self):
-        """Gets the name of this CreateIssueResponseV4ParentIssue.
+        r"""Gets the name of this CreateIssueResponseV4ParentIssue.
 
         父工作项
 
@@ -83,7 +83,7 @@ class CreateIssueResponseV4ParentIssue:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateIssueResponseV4ParentIssue.
+        r"""Sets the name of this CreateIssueResponseV4ParentIssue.
 
         父工作项
 

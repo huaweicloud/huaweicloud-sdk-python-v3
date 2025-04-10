@@ -23,7 +23,7 @@ class Severity:
     }
 
     def __init__(self):
-        """Severity
+        r"""Severity
 
         The model defined in huaweicloud sdk
 

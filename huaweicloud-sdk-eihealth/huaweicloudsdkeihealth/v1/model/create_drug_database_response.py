@@ -26,7 +26,7 @@ class CreateDrugDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateDrugDatabaseResponse
+        r"""CreateDrugDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDrugDatabaseResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateDrugDatabaseResponse.
+        r"""Gets the id of this CreateDrugDatabaseResponse.
 
         数据库id
 
@@ -55,7 +55,7 @@ class CreateDrugDatabaseResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDrugDatabaseResponse.
+        r"""Sets the id of this CreateDrugDatabaseResponse.
 
         数据库id
 

@@ -28,7 +28,7 @@ class ListDesktopPoolsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, desktop_pools=None):
-        """ListDesktopPoolsResponse
+        r"""ListDesktopPoolsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDesktopPoolsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDesktopPoolsResponse.
+        r"""Gets the total_count of this ListDesktopPoolsResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListDesktopPoolsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDesktopPoolsResponse.
+        r"""Sets the total_count of this ListDesktopPoolsResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListDesktopPoolsResponse(SdkResponse):
 
     @property
     def desktop_pools(self):
-        """Gets the desktop_pools of this ListDesktopPoolsResponse.
+        r"""Gets the desktop_pools of this ListDesktopPoolsResponse.
 
         桌面池信息。
 
@@ -84,7 +84,7 @@ class ListDesktopPoolsResponse(SdkResponse):
 
     @desktop_pools.setter
     def desktop_pools(self, desktop_pools):
-        """Sets the desktop_pools of this ListDesktopPoolsResponse.
+        r"""Sets the desktop_pools of this ListDesktopPoolsResponse.
 
         桌面池信息。
 

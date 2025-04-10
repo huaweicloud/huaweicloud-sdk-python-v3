@@ -59,7 +59,7 @@ class ReqParam:
     }
 
     def __init__(self, name=None, type=None, location=None, default_value=None, sample_value=None, required=None, valid_enable=None, remark=None, enumerations=None, min_num=None, max_num=None, min_size=None, max_size=None, regular=None, json_schema=None, pass_through=None, orchestrations=None, id=None):
-        """ReqParam
+        r"""ReqParam
 
         The model defined in huaweicloud sdk
 
@@ -159,7 +159,7 @@ class ReqParam:
 
     @property
     def name(self):
-        """Gets the name of this ReqParam.
+        r"""Gets the name of this ReqParam.
 
         参数名称。 长度为1 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线、英文句号组成，且只能以英文开头。 
 
@@ -170,7 +170,7 @@ class ReqParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ReqParam.
+        r"""Sets the name of this ReqParam.
 
         参数名称。 长度为1 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线、英文句号组成，且只能以英文开头。 
 
@@ -181,7 +181,7 @@ class ReqParam:
 
     @property
     def type(self):
-        """Gets the type of this ReqParam.
+        r"""Gets the type of this ReqParam.
 
         参数类型
 
@@ -192,7 +192,7 @@ class ReqParam:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ReqParam.
+        r"""Sets the type of this ReqParam.
 
         参数类型
 
@@ -203,7 +203,7 @@ class ReqParam:
 
     @property
     def location(self):
-        """Gets the location of this ReqParam.
+        r"""Gets the location of this ReqParam.
 
         参数位置
 
@@ -214,7 +214,7 @@ class ReqParam:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ReqParam.
+        r"""Sets the location of this ReqParam.
 
         参数位置
 
@@ -225,7 +225,7 @@ class ReqParam:
 
     @property
     def default_value(self):
-        """Gets the default_value of this ReqParam.
+        r"""Gets the default_value of this ReqParam.
 
         参数默认值
 
@@ -236,7 +236,7 @@ class ReqParam:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this ReqParam.
+        r"""Sets the default_value of this ReqParam.
 
         参数默认值
 
@@ -247,7 +247,7 @@ class ReqParam:
 
     @property
     def sample_value(self):
-        """Gets the sample_value of this ReqParam.
+        r"""Gets the sample_value of this ReqParam.
 
         参数示例值
 
@@ -258,7 +258,7 @@ class ReqParam:
 
     @sample_value.setter
     def sample_value(self, sample_value):
-        """Sets the sample_value of this ReqParam.
+        r"""Sets the sample_value of this ReqParam.
 
         参数示例值
 
@@ -269,7 +269,7 @@ class ReqParam:
 
     @property
     def required(self):
-        """Gets the required of this ReqParam.
+        r"""Gets the required of this ReqParam.
 
         是否必须 - 1：是 - 2：否  location为PATH时，required默认为1，其他场景required默认为2
 
@@ -280,7 +280,7 @@ class ReqParam:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this ReqParam.
+        r"""Sets the required of this ReqParam.
 
         是否必须 - 1：是 - 2：否  location为PATH时，required默认为1，其他场景required默认为2
 
@@ -291,7 +291,7 @@ class ReqParam:
 
     @property
     def valid_enable(self):
-        """Gets the valid_enable of this ReqParam.
+        r"""Gets the valid_enable of this ReqParam.
 
         是否开启校验 - 1：开启校验 - 2：不开启校验
 
@@ -302,7 +302,7 @@ class ReqParam:
 
     @valid_enable.setter
     def valid_enable(self, valid_enable):
-        """Sets the valid_enable of this ReqParam.
+        r"""Sets the valid_enable of this ReqParam.
 
         是否开启校验 - 1：开启校验 - 2：不开启校验
 
@@ -313,7 +313,7 @@ class ReqParam:
 
     @property
     def remark(self):
-        """Gets the remark of this ReqParam.
+        r"""Gets the remark of this ReqParam.
 
         描述信息。长度不超过255个字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -324,7 +324,7 @@ class ReqParam:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ReqParam.
+        r"""Sets the remark of this ReqParam.
 
         描述信息。长度不超过255个字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -335,7 +335,7 @@ class ReqParam:
 
     @property
     def enumerations(self):
-        """Gets the enumerations of this ReqParam.
+        r"""Gets the enumerations of this ReqParam.
 
         参数枚举值
 
@@ -346,7 +346,7 @@ class ReqParam:
 
     @enumerations.setter
     def enumerations(self, enumerations):
-        """Sets the enumerations of this ReqParam.
+        r"""Sets the enumerations of this ReqParam.
 
         参数枚举值
 
@@ -357,7 +357,7 @@ class ReqParam:
 
     @property
     def min_num(self):
-        """Gets the min_num of this ReqParam.
+        r"""Gets the min_num of this ReqParam.
 
         参数最小值  参数类型为NUMBER时有效
 
@@ -368,7 +368,7 @@ class ReqParam:
 
     @min_num.setter
     def min_num(self, min_num):
-        """Sets the min_num of this ReqParam.
+        r"""Sets the min_num of this ReqParam.
 
         参数最小值  参数类型为NUMBER时有效
 
@@ -379,7 +379,7 @@ class ReqParam:
 
     @property
     def max_num(self):
-        """Gets the max_num of this ReqParam.
+        r"""Gets the max_num of this ReqParam.
 
         参数最大值  参数类型为NUMBER时有效
 
@@ -390,7 +390,7 @@ class ReqParam:
 
     @max_num.setter
     def max_num(self, max_num):
-        """Sets the max_num of this ReqParam.
+        r"""Sets the max_num of this ReqParam.
 
         参数最大值  参数类型为NUMBER时有效
 
@@ -401,7 +401,7 @@ class ReqParam:
 
     @property
     def min_size(self):
-        """Gets the min_size of this ReqParam.
+        r"""Gets the min_size of this ReqParam.
 
         参数最小长度  参数类型为STRING时有效
 
@@ -412,7 +412,7 @@ class ReqParam:
 
     @min_size.setter
     def min_size(self, min_size):
-        """Sets the min_size of this ReqParam.
+        r"""Sets the min_size of this ReqParam.
 
         参数最小长度  参数类型为STRING时有效
 
@@ -423,7 +423,7 @@ class ReqParam:
 
     @property
     def max_size(self):
-        """Gets the max_size of this ReqParam.
+        r"""Gets the max_size of this ReqParam.
 
         参数最大长度  参数类型为STRING时有效
 
@@ -434,7 +434,7 @@ class ReqParam:
 
     @max_size.setter
     def max_size(self, max_size):
-        """Sets the max_size of this ReqParam.
+        r"""Sets the max_size of this ReqParam.
 
         参数最大长度  参数类型为STRING时有效
 
@@ -445,7 +445,7 @@ class ReqParam:
 
     @property
     def regular(self):
-        """Gets the regular of this ReqParam.
+        r"""Gets the regular of this ReqParam.
 
         正则校验规则  暂不支持
 
@@ -456,7 +456,7 @@ class ReqParam:
 
     @regular.setter
     def regular(self, regular):
-        """Sets the regular of this ReqParam.
+        r"""Sets the regular of this ReqParam.
 
         正则校验规则  暂不支持
 
@@ -467,7 +467,7 @@ class ReqParam:
 
     @property
     def json_schema(self):
-        """Gets the json_schema of this ReqParam.
+        r"""Gets the json_schema of this ReqParam.
 
         JSON校验规则  暂不支持
 
@@ -478,7 +478,7 @@ class ReqParam:
 
     @json_schema.setter
     def json_schema(self, json_schema):
-        """Sets the json_schema of this ReqParam.
+        r"""Sets the json_schema of this ReqParam.
 
         JSON校验规则  暂不支持
 
@@ -489,7 +489,7 @@ class ReqParam:
 
     @property
     def pass_through(self):
-        """Gets the pass_through of this ReqParam.
+        r"""Gets the pass_through of this ReqParam.
 
         是否透传 - 1：是 - 2：否
 
@@ -500,7 +500,7 @@ class ReqParam:
 
     @pass_through.setter
     def pass_through(self, pass_through):
-        """Sets the pass_through of this ReqParam.
+        r"""Sets the pass_through of this ReqParam.
 
         是否透传 - 1：是 - 2：否
 
@@ -511,7 +511,7 @@ class ReqParam:
 
     @property
     def orchestrations(self):
-        """Gets the orchestrations of this ReqParam.
+        r"""Gets the orchestrations of this ReqParam.
 
         请求参数匹配编排规则的生效优先级与列表顺序保持一致，列表中靠前的配置匹配优先级较高； 如果编配规则列表中包含none_value类型的规则，则none_value类型的规则优先级最高，至多绑定一个none_value类型的规则； 如果编排规则列表中包含default类型的规则，则default类型的规则优先级最低，至多绑定一个default类型的规则； 当编排规则为预处理策略时，该规则不能作为除default以外的最后一个编排规则； 每个API仅允许选择一个参数绑定编排规则，且编排规则不能重复，支持绑定的编排规则数量有配额限制，具体请参见产品介绍的“配额说明”章节。
 
@@ -522,7 +522,7 @@ class ReqParam:
 
     @orchestrations.setter
     def orchestrations(self, orchestrations):
-        """Sets the orchestrations of this ReqParam.
+        r"""Sets the orchestrations of this ReqParam.
 
         请求参数匹配编排规则的生效优先级与列表顺序保持一致，列表中靠前的配置匹配优先级较高； 如果编配规则列表中包含none_value类型的规则，则none_value类型的规则优先级最高，至多绑定一个none_value类型的规则； 如果编排规则列表中包含default类型的规则，则default类型的规则优先级最低，至多绑定一个default类型的规则； 当编排规则为预处理策略时，该规则不能作为除default以外的最后一个编排规则； 每个API仅允许选择一个参数绑定编排规则，且编排规则不能重复，支持绑定的编排规则数量有配额限制，具体请参见产品介绍的“配额说明”章节。
 
@@ -533,7 +533,7 @@ class ReqParam:
 
     @property
     def id(self):
-        """Gets the id of this ReqParam.
+        r"""Gets the id of this ReqParam.
 
         参数编号
 
@@ -544,7 +544,7 @@ class ReqParam:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ReqParam.
+        r"""Sets the id of this ReqParam.
 
         参数编号
 

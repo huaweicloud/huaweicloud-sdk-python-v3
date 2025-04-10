@@ -24,7 +24,7 @@ class NeutronDeleteSecurityGroupRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """NeutronDeleteSecurityGroupRuleResponse
+        r"""NeutronDeleteSecurityGroupRuleResponse
 
         The model defined in huaweicloud sdk
 

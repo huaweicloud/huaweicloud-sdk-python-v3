@@ -25,7 +25,7 @@ class ImportPointsRequestBody:
     }
 
     def __init__(self, file=None):
-        """ImportPointsRequestBody
+        r"""ImportPointsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ImportPointsRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this ImportPointsRequestBody.
+        r"""Gets the file of this ImportPointsRequestBody.
 
         上传点位映射文件。当前仅支持xlsx/xls文件格式，且文件最大行数为10000行。
 
@@ -53,7 +53,7 @@ class ImportPointsRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this ImportPointsRequestBody.
+        r"""Sets the file of this ImportPointsRequestBody.
 
         上传点位映射文件。当前仅支持xlsx/xls文件格式，且文件最大行数为10000行。
 

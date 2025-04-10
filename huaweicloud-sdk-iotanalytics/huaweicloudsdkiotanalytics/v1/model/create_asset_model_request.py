@@ -25,7 +25,7 @@ class CreateAssetModelRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAssetModelRequest
+        r"""CreateAssetModelRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAssetModelRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAssetModelRequest.
+        r"""Gets the body of this CreateAssetModelRequest.
 
         :return: The body of this CreateAssetModelRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.AssetModelAddRequest`
@@ -52,7 +52,7 @@ class CreateAssetModelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAssetModelRequest.
+        r"""Sets the body of this CreateAssetModelRequest.
 
         :param body: The body of this CreateAssetModelRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.AssetModelAddRequest`

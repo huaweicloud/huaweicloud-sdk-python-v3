@@ -25,7 +25,7 @@ class SetDisasterRecoverySettingsRequestBody:
     }
 
     def __init__(self, disaster_recovery_settings=None):
-        """SetDisasterRecoverySettingsRequestBody
+        r"""SetDisasterRecoverySettingsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SetDisasterRecoverySettingsRequestBody:
 
     @property
     def disaster_recovery_settings(self):
-        """Gets the disaster_recovery_settings of this SetDisasterRecoverySettingsRequestBody.
+        r"""Gets the disaster_recovery_settings of this SetDisasterRecoverySettingsRequestBody.
 
         容灾切换的故障节点比例列表。
 
@@ -54,7 +54,7 @@ class SetDisasterRecoverySettingsRequestBody:
 
     @disaster_recovery_settings.setter
     def disaster_recovery_settings(self, disaster_recovery_settings):
-        """Sets the disaster_recovery_settings of this SetDisasterRecoverySettingsRequestBody.
+        r"""Sets the disaster_recovery_settings of this SetDisasterRecoverySettingsRequestBody.
 
         容灾切换的故障节点比例列表。
 

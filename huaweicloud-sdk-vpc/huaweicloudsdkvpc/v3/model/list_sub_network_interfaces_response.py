@@ -30,7 +30,7 @@ class ListSubNetworkInterfacesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, sub_network_interfaces=None, page_info=None):
-        """ListSubNetworkInterfacesResponse
+        r"""ListSubNetworkInterfacesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSubNetworkInterfacesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListSubNetworkInterfacesResponse.
+        r"""Gets the request_id of this ListSubNetworkInterfacesResponse.
 
         1、功能说明：请求ID 2、取值范围：标准UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -69,7 +69,7 @@ class ListSubNetworkInterfacesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListSubNetworkInterfacesResponse.
+        r"""Sets the request_id of this ListSubNetworkInterfacesResponse.
 
         1、功能说明：请求ID 2、取值范围：标准UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -80,7 +80,7 @@ class ListSubNetworkInterfacesResponse(SdkResponse):
 
     @property
     def sub_network_interfaces(self):
-        """Gets the sub_network_interfaces of this ListSubNetworkInterfacesResponse.
+        r"""Gets the sub_network_interfaces of this ListSubNetworkInterfacesResponse.
 
         1、功能说明：辅助弹性网卡查询对象 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -91,7 +91,7 @@ class ListSubNetworkInterfacesResponse(SdkResponse):
 
     @sub_network_interfaces.setter
     def sub_network_interfaces(self, sub_network_interfaces):
-        """Sets the sub_network_interfaces of this ListSubNetworkInterfacesResponse.
+        r"""Sets the sub_network_interfaces of this ListSubNetworkInterfacesResponse.
 
         1、功能说明：辅助弹性网卡查询对象 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -102,7 +102,7 @@ class ListSubNetworkInterfacesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListSubNetworkInterfacesResponse.
+        r"""Gets the page_info of this ListSubNetworkInterfacesResponse.
 
         :return: The page_info of this ListSubNetworkInterfacesResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.PageInfo`
@@ -111,7 +111,7 @@ class ListSubNetworkInterfacesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListSubNetworkInterfacesResponse.
+        r"""Sets the page_info of this ListSubNetworkInterfacesResponse.
 
         :param page_info: The page_info of this ListSubNetworkInterfacesResponse.
         :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`

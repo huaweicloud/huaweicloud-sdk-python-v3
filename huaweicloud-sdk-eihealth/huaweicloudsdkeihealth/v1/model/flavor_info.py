@@ -29,7 +29,7 @@ class FlavorInfo:
     }
 
     def __init__(self, cpu=None, gpu=None, memory=None):
-        """FlavorInfo
+        r"""FlavorInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class FlavorInfo:
 
     @property
     def cpu(self):
-        """Gets the cpu of this FlavorInfo.
+        r"""Gets the cpu of this FlavorInfo.
 
         notebook占用的cpu,0.1核为100m,单位为\"C\"
 
@@ -65,7 +65,7 @@ class FlavorInfo:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this FlavorInfo.
+        r"""Sets the cpu of this FlavorInfo.
 
         notebook占用的cpu,0.1核为100m,单位为\"C\"
 
@@ -76,7 +76,7 @@ class FlavorInfo:
 
     @property
     def gpu(self):
-        """Gets the gpu of this FlavorInfo.
+        r"""Gets the gpu of this FlavorInfo.
 
         notebook占用的gpu，0.1为使用单卡10%，1为占满单个显卡，1+为使用多个显卡
 
@@ -87,7 +87,7 @@ class FlavorInfo:
 
     @gpu.setter
     def gpu(self, gpu):
-        """Sets the gpu of this FlavorInfo.
+        r"""Sets the gpu of this FlavorInfo.
 
         notebook占用的gpu，0.1为使用单卡10%，1为占满单个显卡，1+为使用多个显卡
 
@@ -98,7 +98,7 @@ class FlavorInfo:
 
     @property
     def memory(self):
-        """Gets the memory of this FlavorInfo.
+        r"""Gets the memory of this FlavorInfo.
 
         notebook占用的内存,单位为\"G\"
 
@@ -109,7 +109,7 @@ class FlavorInfo:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this FlavorInfo.
+        r"""Sets the memory of this FlavorInfo.
 
         notebook占用的内存,单位为\"G\"
 

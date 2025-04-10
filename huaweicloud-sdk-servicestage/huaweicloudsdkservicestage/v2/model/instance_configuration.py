@@ -37,7 +37,7 @@ class InstanceConfiguration:
     }
 
     def __init__(self, env=None, storage=None, strategy=None, lifecycle=None, scheduler=None, probes=None, container_spec=None):
-        """InstanceConfiguration
+        r"""InstanceConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class InstanceConfiguration:
 
     @property
     def env(self):
-        """Gets the env of this InstanceConfiguration.
+        r"""Gets the env of this InstanceConfiguration.
 
         应用环境变量。
 
@@ -96,7 +96,7 @@ class InstanceConfiguration:
 
     @env.setter
     def env(self, env):
-        """Sets the env of this InstanceConfiguration.
+        r"""Sets the env of this InstanceConfiguration.
 
         应用环境变量。
 
@@ -107,7 +107,7 @@ class InstanceConfiguration:
 
     @property
     def storage(self):
-        """Gets the storage of this InstanceConfiguration.
+        r"""Gets the storage of this InstanceConfiguration.
 
         :return: The storage of this InstanceConfiguration.
         :rtype: list[:class:`huaweicloudsdkservicestage.v2.ComponentStorage`]
@@ -116,7 +116,7 @@ class InstanceConfiguration:
 
     @storage.setter
     def storage(self, storage):
-        """Sets the storage of this InstanceConfiguration.
+        r"""Sets the storage of this InstanceConfiguration.
 
         :param storage: The storage of this InstanceConfiguration.
         :type storage: list[:class:`huaweicloudsdkservicestage.v2.ComponentStorage`]
@@ -125,7 +125,7 @@ class InstanceConfiguration:
 
     @property
     def strategy(self):
-        """Gets the strategy of this InstanceConfiguration.
+        r"""Gets the strategy of this InstanceConfiguration.
 
         :return: The strategy of this InstanceConfiguration.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ConfigurationStrategy`
@@ -134,7 +134,7 @@ class InstanceConfiguration:
 
     @strategy.setter
     def strategy(self, strategy):
-        """Sets the strategy of this InstanceConfiguration.
+        r"""Sets the strategy of this InstanceConfiguration.
 
         :param strategy: The strategy of this InstanceConfiguration.
         :type strategy: :class:`huaweicloudsdkservicestage.v2.ConfigurationStrategy`
@@ -143,7 +143,7 @@ class InstanceConfiguration:
 
     @property
     def lifecycle(self):
-        """Gets the lifecycle of this InstanceConfiguration.
+        r"""Gets the lifecycle of this InstanceConfiguration.
 
         :return: The lifecycle of this InstanceConfiguration.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ConfigurationLifecycle`
@@ -152,7 +152,7 @@ class InstanceConfiguration:
 
     @lifecycle.setter
     def lifecycle(self, lifecycle):
-        """Sets the lifecycle of this InstanceConfiguration.
+        r"""Sets the lifecycle of this InstanceConfiguration.
 
         :param lifecycle: The lifecycle of this InstanceConfiguration.
         :type lifecycle: :class:`huaweicloudsdkservicestage.v2.ConfigurationLifecycle`
@@ -161,7 +161,7 @@ class InstanceConfiguration:
 
     @property
     def scheduler(self):
-        """Gets the scheduler of this InstanceConfiguration.
+        r"""Gets the scheduler of this InstanceConfiguration.
 
         :return: The scheduler of this InstanceConfiguration.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ConfigurationScheduler`
@@ -170,7 +170,7 @@ class InstanceConfiguration:
 
     @scheduler.setter
     def scheduler(self, scheduler):
-        """Sets the scheduler of this InstanceConfiguration.
+        r"""Sets the scheduler of this InstanceConfiguration.
 
         :param scheduler: The scheduler of this InstanceConfiguration.
         :type scheduler: :class:`huaweicloudsdkservicestage.v2.ConfigurationScheduler`
@@ -179,7 +179,7 @@ class InstanceConfiguration:
 
     @property
     def probes(self):
-        """Gets the probes of this InstanceConfiguration.
+        r"""Gets the probes of this InstanceConfiguration.
 
         :return: The probes of this InstanceConfiguration.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ConfigurationProbes`
@@ -188,7 +188,7 @@ class InstanceConfiguration:
 
     @probes.setter
     def probes(self, probes):
-        """Sets the probes of this InstanceConfiguration.
+        r"""Sets the probes of this InstanceConfiguration.
 
         :param probes: The probes of this InstanceConfiguration.
         :type probes: :class:`huaweicloudsdkservicestage.v2.ConfigurationProbes`
@@ -197,7 +197,7 @@ class InstanceConfiguration:
 
     @property
     def container_spec(self):
-        """Gets the container_spec of this InstanceConfiguration.
+        r"""Gets the container_spec of this InstanceConfiguration.
 
         :return: The container_spec of this InstanceConfiguration.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ConfigurationContainerSpec`
@@ -206,7 +206,7 @@ class InstanceConfiguration:
 
     @container_spec.setter
     def container_spec(self, container_spec):
-        """Sets the container_spec of this InstanceConfiguration.
+        r"""Sets the container_spec of this InstanceConfiguration.
 
         :param container_spec: The container_spec of this InstanceConfiguration.
         :type container_spec: :class:`huaweicloudsdkservicestage.v2.ConfigurationContainerSpec`

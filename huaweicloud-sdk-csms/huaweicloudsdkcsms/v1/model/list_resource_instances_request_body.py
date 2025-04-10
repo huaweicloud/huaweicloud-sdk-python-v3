@@ -35,7 +35,7 @@ class ListResourceInstancesRequestBody:
     }
 
     def __init__(self, limit=None, offset=None, action=None, tags=None, matches=None, sequence=None):
-        """ListResourceInstancesRequestBody
+        r"""ListResourceInstancesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListResourceInstancesRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourceInstancesRequestBody.
+        r"""Gets the limit of this ListResourceInstancesRequestBody.
 
         查询记录数（“action”为“count”时，无需设置此参数），如果“action”为“filter”，默认为“10”。 limit的取值范围为“1-1000”。
 
@@ -88,7 +88,7 @@ class ListResourceInstancesRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourceInstancesRequestBody.
+        r"""Sets the limit of this ListResourceInstancesRequestBody.
 
         查询记录数（“action”为“count”时，无需设置此参数），如果“action”为“filter”，默认为“10”。 limit的取值范围为“1-1000”。
 
@@ -99,7 +99,7 @@ class ListResourceInstancesRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListResourceInstancesRequestBody.
+        r"""Gets the offset of this ListResourceInstancesRequestBody.
 
         索引位置。从offset指定的下一条数据开始查询。查询第一页数据时，将查询前一页数据时响应体中的值带入此参数（“action”为“count”时，无需设置此参数）。如果“action”为“filter”，offset默认为“0”。 offset必须为数字，不能为负数。
 
@@ -110,7 +110,7 @@ class ListResourceInstancesRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListResourceInstancesRequestBody.
+        r"""Sets the offset of this ListResourceInstancesRequestBody.
 
         索引位置。从offset指定的下一条数据开始查询。查询第一页数据时，将查询前一页数据时响应体中的值带入此参数（“action”为“count”时，无需设置此参数）。如果“action”为“filter”，offset默认为“0”。 offset必须为数字，不能为负数。
 
@@ -121,7 +121,7 @@ class ListResourceInstancesRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this ListResourceInstancesRequestBody.
+        r"""Gets the action of this ListResourceInstancesRequestBody.
 
         操作标识（可设置为“filter”或者“count”）。  - filter：表示过滤。  - count：表示查询总条数。
 
@@ -132,7 +132,7 @@ class ListResourceInstancesRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListResourceInstancesRequestBody.
+        r"""Sets the action of this ListResourceInstancesRequestBody.
 
         操作标识（可设置为“filter”或者“count”）。  - filter：表示过滤。  - count：表示查询总条数。
 
@@ -143,7 +143,7 @@ class ListResourceInstancesRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListResourceInstancesRequestBody.
+        r"""Gets the tags of this ListResourceInstancesRequestBody.
 
         标签列表，key和value键值对的集合。最多不超过10个。
 
@@ -154,7 +154,7 @@ class ListResourceInstancesRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListResourceInstancesRequestBody.
+        r"""Sets the tags of this ListResourceInstancesRequestBody.
 
         标签列表，key和value键值对的集合。最多不超过10个。
 
@@ -165,7 +165,7 @@ class ListResourceInstancesRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this ListResourceInstancesRequestBody.
+        r"""Gets the matches of this ListResourceInstancesRequestBody.
 
         搜索字段。  - key为搜索的字段，目前仅支持搜索凭据名称，值为“resource_name”。  - value为模糊匹配的值，最大长度为255个字符。为空返回空值。
 
@@ -176,7 +176,7 @@ class ListResourceInstancesRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ListResourceInstancesRequestBody.
+        r"""Sets the matches of this ListResourceInstancesRequestBody.
 
         搜索字段。  - key为搜索的字段，目前仅支持搜索凭据名称，值为“resource_name”。  - value为模糊匹配的值，最大长度为255个字符。为空返回空值。
 
@@ -187,7 +187,7 @@ class ListResourceInstancesRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this ListResourceInstancesRequestBody.
+        r"""Gets the sequence of this ListResourceInstancesRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -198,7 +198,7 @@ class ListResourceInstancesRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this ListResourceInstancesRequestBody.
+        r"""Sets the sequence of this ListResourceInstancesRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

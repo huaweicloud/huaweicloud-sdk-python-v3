@@ -28,7 +28,7 @@ class CreateReassignmentTaskResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, reassignment_time=None):
-        """CreateReassignmentTaskResponse
+        r"""CreateReassignmentTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateReassignmentTaskResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateReassignmentTaskResponse.
+        r"""Gets the job_id of this CreateReassignmentTaskResponse.
 
         任务ID（当执行重平衡任务时仅返回job_id）。
 
@@ -62,7 +62,7 @@ class CreateReassignmentTaskResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateReassignmentTaskResponse.
+        r"""Sets the job_id of this CreateReassignmentTaskResponse.
 
         任务ID（当执行重平衡任务时仅返回job_id）。
 
@@ -73,7 +73,7 @@ class CreateReassignmentTaskResponse(SdkResponse):
 
     @property
     def reassignment_time(self):
-        """Gets the reassignment_time of this CreateReassignmentTaskResponse.
+        r"""Gets the reassignment_time of this CreateReassignmentTaskResponse.
 
         预估时间，单位为秒（当执行预估时间任务时仅返回reassignment_time）。
 
@@ -84,7 +84,7 @@ class CreateReassignmentTaskResponse(SdkResponse):
 
     @reassignment_time.setter
     def reassignment_time(self, reassignment_time):
-        """Sets the reassignment_time of this CreateReassignmentTaskResponse.
+        r"""Sets the reassignment_time of this CreateReassignmentTaskResponse.
 
         预估时间，单位为秒（当执行预估时间任务时仅返回reassignment_time）。
 

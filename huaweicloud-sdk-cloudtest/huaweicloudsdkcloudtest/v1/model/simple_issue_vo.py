@@ -31,7 +31,7 @@ class SimpleIssueVo:
     }
 
     def __init__(self, id=None, name=None, path=None, tracker_name=None):
-        """SimpleIssueVo
+        r"""SimpleIssueVo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SimpleIssueVo:
 
     @property
     def id(self):
-        """Gets the id of this SimpleIssueVo.
+        r"""Gets the id of this SimpleIssueVo.
 
         ID
 
@@ -75,7 +75,7 @@ class SimpleIssueVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SimpleIssueVo.
+        r"""Sets the id of this SimpleIssueVo.
 
         ID
 
@@ -86,7 +86,7 @@ class SimpleIssueVo:
 
     @property
     def name(self):
-        """Gets the name of this SimpleIssueVo.
+        r"""Gets the name of this SimpleIssueVo.
 
         名称
 
@@ -97,7 +97,7 @@ class SimpleIssueVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SimpleIssueVo.
+        r"""Sets the name of this SimpleIssueVo.
 
         名称
 
@@ -108,7 +108,7 @@ class SimpleIssueVo:
 
     @property
     def path(self):
-        """Gets the path of this SimpleIssueVo.
+        r"""Gets the path of this SimpleIssueVo.
 
         层级路径
 
@@ -119,7 +119,7 @@ class SimpleIssueVo:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this SimpleIssueVo.
+        r"""Sets the path of this SimpleIssueVo.
 
         层级路径
 
@@ -130,7 +130,7 @@ class SimpleIssueVo:
 
     @property
     def tracker_name(self):
-        """Gets the tracker_name of this SimpleIssueVo.
+        r"""Gets the tracker_name of this SimpleIssueVo.
 
         类型
 
@@ -141,7 +141,7 @@ class SimpleIssueVo:
 
     @tracker_name.setter
     def tracker_name(self, tracker_name):
-        """Sets the tracker_name of this SimpleIssueVo.
+        r"""Sets the tracker_name of this SimpleIssueVo.
 
         类型
 

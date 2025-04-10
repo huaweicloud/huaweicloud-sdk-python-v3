@@ -25,7 +25,7 @@ class PolicyItemRowFilterInfo:
     }
 
     def __init__(self, filter_expr=None):
-        """PolicyItemRowFilterInfo
+        r"""PolicyItemRowFilterInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PolicyItemRowFilterInfo:
 
     @property
     def filter_expr(self):
-        """Gets the filter_expr of this PolicyItemRowFilterInfo.
+        r"""Gets the filter_expr of this PolicyItemRowFilterInfo.
 
         行过滤表达式
 
@@ -54,7 +54,7 @@ class PolicyItemRowFilterInfo:
 
     @filter_expr.setter
     def filter_expr(self, filter_expr):
-        """Sets the filter_expr of this PolicyItemRowFilterInfo.
+        r"""Sets the filter_expr of this PolicyItemRowFilterInfo.
 
         行过滤表达式
 

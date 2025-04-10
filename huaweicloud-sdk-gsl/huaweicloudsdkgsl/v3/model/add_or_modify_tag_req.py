@@ -25,7 +25,7 @@ class AddOrModifyTagReq:
     }
 
     def __init__(self, tag_name=None):
-        """AddOrModifyTagReq
+        r"""AddOrModifyTagReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddOrModifyTagReq:
 
     @property
     def tag_name(self):
-        """Gets the tag_name of this AddOrModifyTagReq.
+        r"""Gets the tag_name of this AddOrModifyTagReq.
 
         标签名称
 
@@ -53,7 +53,7 @@ class AddOrModifyTagReq:
 
     @tag_name.setter
     def tag_name(self, tag_name):
-        """Sets the tag_name of this AddOrModifyTagReq.
+        r"""Sets the tag_name of this AddOrModifyTagReq.
 
         标签名称
 

@@ -27,7 +27,7 @@ class UpdateConfigMap:
     }
 
     def __init__(self, description=None, configs=None):
-        """UpdateConfigMap
+        r"""UpdateConfigMap
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateConfigMap:
 
     @property
     def description(self):
-        """Gets the description of this UpdateConfigMap.
+        r"""Gets the description of this UpdateConfigMap.
 
         配置项描述,最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -61,7 +61,7 @@ class UpdateConfigMap:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateConfigMap.
+        r"""Sets the description of this UpdateConfigMap.
 
         配置项描述,最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -72,7 +72,7 @@ class UpdateConfigMap:
 
     @property
     def configs(self):
-        """Gets the configs of this UpdateConfigMap.
+        r"""Gets the configs of this UpdateConfigMap.
 
         configs是一个字典，由多个键值对组成，json化后最大总长度为1048576，key和value均为字符串。键值对中key由大小写字母或中划线开头，由数字、大小写字母、点号（.）、中划线（-）、下划线（_）组成，最小长度为1，最大长度63个字符， 键值对中的value无其它限制。 注：configs字典的长度即字典转为标准的字符串后的长度，例如字典{\"a\": \"b\"}转为标准字符串后为'{\"a\": \"b\"}'，长度为10
 
@@ -83,7 +83,7 @@ class UpdateConfigMap:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this UpdateConfigMap.
+        r"""Sets the configs of this UpdateConfigMap.
 
         configs是一个字典，由多个键值对组成，json化后最大总长度为1048576，key和value均为字符串。键值对中key由大小写字母或中划线开头，由数字、大小写字母、点号（.）、中划线（-）、下划线（_）组成，最小长度为1，最大长度63个字符， 键值对中的value无其它限制。 注：configs字典的长度即字典转为标准的字符串后的长度，例如字典{\"a\": \"b\"}转为标准字符串后为'{\"a\": \"b\"}'，长度为10
 

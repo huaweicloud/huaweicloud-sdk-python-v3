@@ -25,7 +25,7 @@ class CreateAppGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAppGroupRequest
+        r"""CreateAppGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAppGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAppGroupRequest.
+        r"""Gets the body of this CreateAppGroupRequest.
 
         :return: The body of this CreateAppGroupRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateAppGroupReq`
@@ -52,7 +52,7 @@ class CreateAppGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAppGroupRequest.
+        r"""Sets the body of this CreateAppGroupRequest.
 
         :param body: The body of this CreateAppGroupRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.CreateAppGroupReq`

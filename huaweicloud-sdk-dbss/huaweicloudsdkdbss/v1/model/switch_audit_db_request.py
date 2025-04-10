@@ -29,7 +29,7 @@ class SwitchAuditDbRequest:
     }
 
     def __init__(self, id=None, status=None, lts_audit_switch=None):
-        """SwitchAuditDbRequest
+        r"""SwitchAuditDbRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SwitchAuditDbRequest:
 
     @property
     def id(self):
-        """Gets the id of this SwitchAuditDbRequest.
+        r"""Gets the id of this SwitchAuditDbRequest.
 
         数据库ID,可在查询数据库列表接口的ID字段获取。
 
@@ -66,7 +66,7 @@ class SwitchAuditDbRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SwitchAuditDbRequest.
+        r"""Sets the id of this SwitchAuditDbRequest.
 
         数据库ID,可在查询数据库列表接口的ID字段获取。
 
@@ -77,7 +77,7 @@ class SwitchAuditDbRequest:
 
     @property
     def status(self):
-        """Gets the status of this SwitchAuditDbRequest.
+        r"""Gets the status of this SwitchAuditDbRequest.
 
         开关状态 - ON:开启 - OFF:关闭
 
@@ -88,7 +88,7 @@ class SwitchAuditDbRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SwitchAuditDbRequest.
+        r"""Sets the status of this SwitchAuditDbRequest.
 
         开关状态 - ON:开启 - OFF:关闭
 
@@ -99,7 +99,7 @@ class SwitchAuditDbRequest:
 
     @property
     def lts_audit_switch(self):
-        """Gets the lts_audit_switch of this SwitchAuditDbRequest.
+        r"""Gets the lts_audit_switch of this SwitchAuditDbRequest.
 
         是否关闭LTS审计,DWS数据库场景使用。若用户未选择关闭LTS审计,则不做操作。 - 1 :是 - 0 或 其它:保持原状
 
@@ -110,7 +110,7 @@ class SwitchAuditDbRequest:
 
     @lts_audit_switch.setter
     def lts_audit_switch(self, lts_audit_switch):
-        """Sets the lts_audit_switch of this SwitchAuditDbRequest.
+        r"""Sets the lts_audit_switch of this SwitchAuditDbRequest.
 
         是否关闭LTS审计,DWS数据库场景使用。若用户未选择关闭LTS审计,则不做操作。 - 1 :是 - 0 或 其它:保持原状
 

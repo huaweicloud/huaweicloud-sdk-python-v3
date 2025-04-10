@@ -24,7 +24,7 @@ class UpdateCloseKibanaResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateCloseKibanaResponse
+        r"""UpdateCloseKibanaResponse
 
         The model defined in huaweicloud sdk
 

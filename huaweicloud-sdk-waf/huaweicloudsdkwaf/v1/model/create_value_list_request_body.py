@@ -31,7 +31,7 @@ class CreateValueListRequestBody:
     }
 
     def __init__(self, name=None, type=None, values=None, description=None):
-        """CreateValueListRequestBody
+        r"""CreateValueListRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateValueListRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateValueListRequestBody.
+        r"""Gets the name of this CreateValueListRequestBody.
 
         引用表名称，只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64
 
@@ -72,7 +72,7 @@ class CreateValueListRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateValueListRequestBody.
+        r"""Sets the name of this CreateValueListRequestBody.
 
         引用表名称，只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64
 
@@ -83,7 +83,7 @@ class CreateValueListRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateValueListRequestBody.
+        r"""Gets the type of this CreateValueListRequestBody.
 
         引用表类型，参见枚举列表
 
@@ -94,7 +94,7 @@ class CreateValueListRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateValueListRequestBody.
+        r"""Sets the type of this CreateValueListRequestBody.
 
         引用表类型，参见枚举列表
 
@@ -105,7 +105,7 @@ class CreateValueListRequestBody:
 
     @property
     def values(self):
-        """Gets the values of this CreateValueListRequestBody.
+        r"""Gets the values of this CreateValueListRequestBody.
 
         引用表的值
 
@@ -116,7 +116,7 @@ class CreateValueListRequestBody:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this CreateValueListRequestBody.
+        r"""Sets the values of this CreateValueListRequestBody.
 
         引用表的值
 
@@ -127,7 +127,7 @@ class CreateValueListRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateValueListRequestBody.
+        r"""Gets the description of this CreateValueListRequestBody.
 
         引用表描述，最长128字符
 
@@ -138,7 +138,7 @@ class CreateValueListRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateValueListRequestBody.
+        r"""Sets the description of this CreateValueListRequestBody.
 
         引用表描述，最长128字符
 

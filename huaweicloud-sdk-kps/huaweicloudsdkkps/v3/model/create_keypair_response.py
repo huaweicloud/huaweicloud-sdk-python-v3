@@ -26,7 +26,7 @@ class CreateKeypairResponse(SdkResponse):
     }
 
     def __init__(self, keypair=None):
-        """CreateKeypairResponse
+        r"""CreateKeypairResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateKeypairResponse(SdkResponse):
 
     @property
     def keypair(self):
-        """Gets the keypair of this CreateKeypairResponse.
+        r"""Gets the keypair of this CreateKeypairResponse.
 
         :return: The keypair of this CreateKeypairResponse.
         :rtype: :class:`huaweicloudsdkkps.v3.CreateKeypairResp`
@@ -53,7 +53,7 @@ class CreateKeypairResponse(SdkResponse):
 
     @keypair.setter
     def keypair(self, keypair):
-        """Sets the keypair of this CreateKeypairResponse.
+        r"""Sets the keypair of this CreateKeypairResponse.
 
         :param keypair: The keypair of this CreateKeypairResponse.
         :type keypair: :class:`huaweicloudsdkkps.v3.CreateKeypairResp`

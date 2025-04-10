@@ -24,7 +24,7 @@ class UpdateNamespaceAuthResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateNamespaceAuthResponse
+        r"""UpdateNamespaceAuthResponse
 
         The model defined in huaweicloud sdk
 

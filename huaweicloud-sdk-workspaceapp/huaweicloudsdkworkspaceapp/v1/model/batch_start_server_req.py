@@ -25,7 +25,7 @@ class BatchStartServerReq:
     }
 
     def __init__(self, items=None):
-        """BatchStartServerReq
+        r"""BatchStartServerReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchStartServerReq:
 
     @property
     def items(self):
-        """Gets the items of this BatchStartServerReq.
+        r"""Gets the items of this BatchStartServerReq.
 
         批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
 
@@ -53,7 +53,7 @@ class BatchStartServerReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this BatchStartServerReq.
+        r"""Sets the items of this BatchStartServerReq.
 
         批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
 

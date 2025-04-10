@@ -27,7 +27,7 @@ class ShrinkInstanceNodeRequestBody:
     }
 
     def __init__(self, num=None, node_list=None):
-        """ShrinkInstanceNodeRequestBody
+        r"""ShrinkInstanceNodeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShrinkInstanceNodeRequestBody:
 
     @property
     def num(self):
-        """Gets the num of this ShrinkInstanceNodeRequestBody.
+        r"""Gets the num of this ShrinkInstanceNodeRequestBody.
 
         随机缩减的节点数量。 - GeminiDB Cassandra实例该字段取值为1~10。 - GeminiDB Redis该字段取值为1。 说明： 如果客户端采用直连节点方式，不推荐使用随机节点缩容。
 
@@ -61,7 +61,7 @@ class ShrinkInstanceNodeRequestBody:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this ShrinkInstanceNodeRequestBody.
+        r"""Sets the num of this ShrinkInstanceNodeRequestBody.
 
         随机缩减的节点数量。 - GeminiDB Cassandra实例该字段取值为1~10。 - GeminiDB Redis该字段取值为1。 说明： 如果客户端采用直连节点方式，不推荐使用随机节点缩容。
 
@@ -72,7 +72,7 @@ class ShrinkInstanceNodeRequestBody:
 
     @property
     def node_list(self):
-        """Gets the node_list of this ShrinkInstanceNodeRequestBody.
+        r"""Gets the node_list of this ShrinkInstanceNodeRequestBody.
 
         指定缩容节点的ID，且该节点必须支持节点缩容。如果该字段不传指定缩减的节点ID，将根据系统内部策略缩减指定个数的节点。说明： - num与node_list必须有一个字段传值。   - 如果node_list传值时，GeminiDB Cassandra长度必须为1~10，GeminiDB Redis 长度必须为1。   - 如果num与node_list同时传值时，则以node_list的值为主。 - 如果node_list取值为空时，缩容以随机节点缩容进行；node_list字段取值不为空，缩容以指定节点ID进行。 - 节点缩容前，请避免直连节点，以防该节点缩容导致业务中断。
 
@@ -83,7 +83,7 @@ class ShrinkInstanceNodeRequestBody:
 
     @node_list.setter
     def node_list(self, node_list):
-        """Sets the node_list of this ShrinkInstanceNodeRequestBody.
+        r"""Sets the node_list of this ShrinkInstanceNodeRequestBody.
 
         指定缩容节点的ID，且该节点必须支持节点缩容。如果该字段不传指定缩减的节点ID，将根据系统内部策略缩减指定个数的节点。说明： - num与node_list必须有一个字段传值。   - 如果node_list传值时，GeminiDB Cassandra长度必须为1~10，GeminiDB Redis 长度必须为1。   - 如果num与node_list同时传值时，则以node_list的值为主。 - 如果node_list取值为空时，缩容以随机节点缩容进行；node_list字段取值不为空，缩容以指定节点ID进行。 - 节点缩容前，请避免直连节点，以防该节点缩容导致业务中断。
 

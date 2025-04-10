@@ -33,7 +33,7 @@ class TemplateApplyHistory:
     }
 
     def __init__(self, target_id=None, target_name=None, apply_result=None, applied_at=None, error_code=None):
-        """TemplateApplyHistory
+        r"""TemplateApplyHistory
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TemplateApplyHistory:
 
     @property
     def target_id(self):
-        """Gets the target_id of this TemplateApplyHistory.
+        r"""Gets the target_id of this TemplateApplyHistory.
 
         应用实例ID。
 
@@ -82,7 +82,7 @@ class TemplateApplyHistory:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this TemplateApplyHistory.
+        r"""Sets the target_id of this TemplateApplyHistory.
 
         应用实例ID。
 
@@ -93,7 +93,7 @@ class TemplateApplyHistory:
 
     @property
     def target_name(self):
-        """Gets the target_name of this TemplateApplyHistory.
+        r"""Gets the target_name of this TemplateApplyHistory.
 
         应用实例名称。
 
@@ -104,7 +104,7 @@ class TemplateApplyHistory:
 
     @target_name.setter
     def target_name(self, target_name):
-        """Sets the target_name of this TemplateApplyHistory.
+        r"""Sets the target_name of this TemplateApplyHistory.
 
         应用实例名称。
 
@@ -115,7 +115,7 @@ class TemplateApplyHistory:
 
     @property
     def apply_result(self):
-        """Gets the apply_result of this TemplateApplyHistory.
+        r"""Gets the apply_result of this TemplateApplyHistory.
 
         应用结果。
 
@@ -126,7 +126,7 @@ class TemplateApplyHistory:
 
     @apply_result.setter
     def apply_result(self, apply_result):
-        """Sets the apply_result of this TemplateApplyHistory.
+        r"""Sets the apply_result of this TemplateApplyHistory.
 
         应用结果。
 
@@ -137,7 +137,7 @@ class TemplateApplyHistory:
 
     @property
     def applied_at(self):
-        """Gets the applied_at of this TemplateApplyHistory.
+        r"""Gets the applied_at of this TemplateApplyHistory.
 
         应用时间。
 
@@ -148,7 +148,7 @@ class TemplateApplyHistory:
 
     @applied_at.setter
     def applied_at(self, applied_at):
-        """Sets the applied_at of this TemplateApplyHistory.
+        r"""Sets the applied_at of this TemplateApplyHistory.
 
         应用时间。
 
@@ -159,7 +159,7 @@ class TemplateApplyHistory:
 
     @property
     def error_code(self):
-        """Gets the error_code of this TemplateApplyHistory.
+        r"""Gets the error_code of this TemplateApplyHistory.
 
         错误码。
 
@@ -170,7 +170,7 @@ class TemplateApplyHistory:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this TemplateApplyHistory.
+        r"""Sets the error_code of this TemplateApplyHistory.
 
         错误码。
 

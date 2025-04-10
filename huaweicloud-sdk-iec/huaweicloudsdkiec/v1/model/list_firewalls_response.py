@@ -28,7 +28,7 @@ class ListFirewallsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, firewalls=None):
-        """ListFirewallsResponse
+        r"""ListFirewallsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFirewallsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListFirewallsResponse.
+        r"""Gets the count of this ListFirewallsResponse.
 
         网络ACL数量。
 
@@ -62,7 +62,7 @@ class ListFirewallsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListFirewallsResponse.
+        r"""Sets the count of this ListFirewallsResponse.
 
         网络ACL数量。
 
@@ -73,7 +73,7 @@ class ListFirewallsResponse(SdkResponse):
 
     @property
     def firewalls(self):
-        """Gets the firewalls of this ListFirewallsResponse.
+        r"""Gets the firewalls of this ListFirewallsResponse.
 
         网络ACL列表。
 
@@ -84,7 +84,7 @@ class ListFirewallsResponse(SdkResponse):
 
     @firewalls.setter
     def firewalls(self, firewalls):
-        """Sets the firewalls of this ListFirewallsResponse.
+        r"""Sets the firewalls of this ListFirewallsResponse.
 
         网络ACL列表。
 

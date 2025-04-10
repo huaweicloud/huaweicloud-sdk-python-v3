@@ -29,7 +29,7 @@ class IntegerRange:
     }
 
     def __init__(self, max=None, min=None, desire=None):
-        """IntegerRange
+        r"""IntegerRange
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IntegerRange:
 
     @property
     def max(self):
-        """Gets the max of this IntegerRange.
+        r"""Gets the max of this IntegerRange.
 
         伸缩组最大实例数
 
@@ -68,7 +68,7 @@ class IntegerRange:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this IntegerRange.
+        r"""Sets the max of this IntegerRange.
 
         伸缩组最大实例数
 
@@ -79,7 +79,7 @@ class IntegerRange:
 
     @property
     def min(self):
-        """Gets the min of this IntegerRange.
+        r"""Gets the min of this IntegerRange.
 
         伸缩组最小实例数
 
@@ -90,7 +90,7 @@ class IntegerRange:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this IntegerRange.
+        r"""Sets the min of this IntegerRange.
 
         伸缩组最小实例数
 
@@ -101,7 +101,7 @@ class IntegerRange:
 
     @property
     def desire(self):
-        """Gets the desire of this IntegerRange.
+        r"""Gets the desire of this IntegerRange.
 
         伸缩组期望实例数
 
@@ -112,7 +112,7 @@ class IntegerRange:
 
     @desire.setter
     def desire(self, desire):
-        """Sets the desire of this IntegerRange.
+        r"""Sets the desire of this IntegerRange.
 
         伸缩组期望实例数
 

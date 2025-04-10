@@ -60,7 +60,7 @@ class ShowRepositoryResponse(SdkResponse):
     }
 
     def __init__(self, id=None, ns_id=None, name=None, category=None, description=None, creator_id=None, creator_name=None, size=None, is_public=None, num_images=None, num_download=None, url=None, path=None, internal_path=None, created=None, updated=None, domain_id=None, priority=None):
-        """ShowRepositoryResponse
+        r"""ShowRepositoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowRepositoryResponse.
+        r"""Gets the id of this ShowRepositoryResponse.
 
         仓库编号
 
@@ -174,7 +174,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowRepositoryResponse.
+        r"""Sets the id of this ShowRepositoryResponse.
 
         仓库编号
 
@@ -185,7 +185,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def ns_id(self):
-        """Gets the ns_id of this ShowRepositoryResponse.
+        r"""Gets the ns_id of this ShowRepositoryResponse.
 
         组织编号
 
@@ -196,7 +196,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @ns_id.setter
     def ns_id(self, ns_id):
-        """Sets the ns_id of this ShowRepositoryResponse.
+        r"""Sets the ns_id of this ShowRepositoryResponse.
 
         组织编号
 
@@ -207,7 +207,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowRepositoryResponse.
+        r"""Gets the name of this ShowRepositoryResponse.
 
         仓库名称
 
@@ -218,7 +218,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowRepositoryResponse.
+        r"""Sets the name of this ShowRepositoryResponse.
 
         仓库名称
 
@@ -229,7 +229,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this ShowRepositoryResponse.
+        r"""Gets the category of this ShowRepositoryResponse.
 
         仓库类型（计划改造，每个镜像会有多个lable标示）
 
@@ -240,7 +240,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ShowRepositoryResponse.
+        r"""Sets the category of this ShowRepositoryResponse.
 
         仓库类型（计划改造，每个镜像会有多个lable标示）
 
@@ -251,7 +251,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowRepositoryResponse.
+        r"""Gets the description of this ShowRepositoryResponse.
 
         仓库描述信息
 
@@ -262,7 +262,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowRepositoryResponse.
+        r"""Sets the description of this ShowRepositoryResponse.
 
         仓库描述信息
 
@@ -273,7 +273,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this ShowRepositoryResponse.
+        r"""Gets the creator_id of this ShowRepositoryResponse.
 
         仓库创建者id
 
@@ -284,7 +284,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this ShowRepositoryResponse.
+        r"""Sets the creator_id of this ShowRepositoryResponse.
 
         仓库创建者id
 
@@ -295,7 +295,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this ShowRepositoryResponse.
+        r"""Gets the creator_name of this ShowRepositoryResponse.
 
         仓库创建者
 
@@ -306,7 +306,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this ShowRepositoryResponse.
+        r"""Sets the creator_name of this ShowRepositoryResponse.
 
         仓库创建者
 
@@ -317,7 +317,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowRepositoryResponse.
+        r"""Gets the size of this ShowRepositoryResponse.
 
         仓库大小 
 
@@ -328,7 +328,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowRepositoryResponse.
+        r"""Sets the size of this ShowRepositoryResponse.
 
         仓库大小 
 
@@ -339,7 +339,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def is_public(self):
-        """Gets the is_public of this ShowRepositoryResponse.
+        r"""Gets the is_public of this ShowRepositoryResponse.
 
         仓库是否为公共仓库，值为true或false
 
@@ -350,7 +350,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @is_public.setter
     def is_public(self, is_public):
-        """Sets the is_public of this ShowRepositoryResponse.
+        r"""Sets the is_public of this ShowRepositoryResponse.
 
         仓库是否为公共仓库，值为true或false
 
@@ -361,7 +361,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def num_images(self):
-        """Gets the num_images of this ShowRepositoryResponse.
+        r"""Gets the num_images of this ShowRepositoryResponse.
 
         仓库中镜像个数，0 ~ 9223372036854775807
 
@@ -372,7 +372,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @num_images.setter
     def num_images(self, num_images):
-        """Sets the num_images of this ShowRepositoryResponse.
+        r"""Sets the num_images of this ShowRepositoryResponse.
 
         仓库中镜像个数，0 ~ 9223372036854775807
 
@@ -383,7 +383,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def num_download(self):
-        """Gets the num_download of this ShowRepositoryResponse.
+        r"""Gets the num_download of this ShowRepositoryResponse.
 
         仓库下载次数
 
@@ -394,7 +394,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @num_download.setter
     def num_download(self, num_download):
-        """Sets the num_download of this ShowRepositoryResponse.
+        r"""Sets the num_download of this ShowRepositoryResponse.
 
         仓库下载次数
 
@@ -405,7 +405,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this ShowRepositoryResponse.
+        r"""Gets the url of this ShowRepositoryResponse.
 
         仓库logo图片的URL，URL格式。（暂时未用）
 
@@ -416,7 +416,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowRepositoryResponse.
+        r"""Sets the url of this ShowRepositoryResponse.
 
         仓库logo图片的URL，URL格式。（暂时未用）
 
@@ -427,7 +427,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def path(self):
-        """Gets the path of this ShowRepositoryResponse.
+        r"""Gets the path of this ShowRepositoryResponse.
 
         镜像pull路径，格式为 swr.cn-north-1.myhuaweicloud.com/namespace/repository
 
@@ -438,7 +438,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowRepositoryResponse.
+        r"""Sets the path of this ShowRepositoryResponse.
 
         镜像pull路径，格式为 swr.cn-north-1.myhuaweicloud.com/namespace/repository
 
@@ -449,7 +449,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def internal_path(self):
-        """Gets the internal_path of this ShowRepositoryResponse.
+        r"""Gets the internal_path of this ShowRepositoryResponse.
 
         镜像pull路径，格式为 10.125.0.198:20202/namespace/repository
 
@@ -460,7 +460,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @internal_path.setter
     def internal_path(self, internal_path):
-        """Sets the internal_path of this ShowRepositoryResponse.
+        r"""Sets the internal_path of this ShowRepositoryResponse.
 
         镜像pull路径，格式为 10.125.0.198:20202/namespace/repository
 
@@ -471,7 +471,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this ShowRepositoryResponse.
+        r"""Gets the created of this ShowRepositoryResponse.
 
         仓库创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -482,7 +482,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowRepositoryResponse.
+        r"""Sets the created of this ShowRepositoryResponse.
 
         仓库创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -493,7 +493,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowRepositoryResponse.
+        r"""Gets the updated of this ShowRepositoryResponse.
 
         仓库更新时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -504,7 +504,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowRepositoryResponse.
+        r"""Sets the updated of this ShowRepositoryResponse.
 
         仓库更新时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -515,7 +515,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowRepositoryResponse.
+        r"""Gets the domain_id of this ShowRepositoryResponse.
 
         帐号ID
 
@@ -526,7 +526,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowRepositoryResponse.
+        r"""Sets the domain_id of this ShowRepositoryResponse.
 
         帐号ID
 
@@ -537,7 +537,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @property
     def priority(self):
-        """Gets the priority of this ShowRepositoryResponse.
+        r"""Gets the priority of this ShowRepositoryResponse.
 
         镜像排序优先级
 
@@ -548,7 +548,7 @@ class ShowRepositoryResponse(SdkResponse):
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ShowRepositoryResponse.
+        r"""Sets the priority of this ShowRepositoryResponse.
 
         镜像排序优先级
 

@@ -33,7 +33,7 @@ class CreateMetadataReq:
     }
 
     def __init__(self, metadata_path=None, name=None, description=None, is_overwrite=None, ges_metadata=None):
-        """CreateMetadataReq
+        r"""CreateMetadataReq
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class CreateMetadataReq:
 
     @property
     def metadata_path(self):
-        """Gets the metadata_path of this CreateMetadataReq.
+        r"""Gets the metadata_path of this CreateMetadataReq.
 
         元数据存储地址。
 
@@ -77,7 +77,7 @@ class CreateMetadataReq:
 
     @metadata_path.setter
     def metadata_path(self, metadata_path):
-        """Sets the metadata_path of this CreateMetadataReq.
+        r"""Sets the metadata_path of this CreateMetadataReq.
 
         元数据存储地址。
 
@@ -88,7 +88,7 @@ class CreateMetadataReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateMetadataReq.
+        r"""Gets the name of this CreateMetadataReq.
 
         元数据的名字，限制为1-64个字符，且只能包含字母，数字或下划线。
 
@@ -99,7 +99,7 @@ class CreateMetadataReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateMetadataReq.
+        r"""Sets the name of this CreateMetadataReq.
 
         元数据的名字，限制为1-64个字符，且只能包含字母，数字或下划线。
 
@@ -110,7 +110,7 @@ class CreateMetadataReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateMetadataReq.
+        r"""Gets the description of this CreateMetadataReq.
 
         对元数据的描述。
 
@@ -121,7 +121,7 @@ class CreateMetadataReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateMetadataReq.
+        r"""Sets the description of this CreateMetadataReq.
 
         对元数据的描述。
 
@@ -132,7 +132,7 @@ class CreateMetadataReq:
 
     @property
     def is_overwrite(self):
-        """Gets the is_overwrite of this CreateMetadataReq.
+        r"""Gets the is_overwrite of this CreateMetadataReq.
 
         是否覆盖文件。
 
@@ -143,7 +143,7 @@ class CreateMetadataReq:
 
     @is_overwrite.setter
     def is_overwrite(self, is_overwrite):
-        """Sets the is_overwrite of this CreateMetadataReq.
+        r"""Sets the is_overwrite of this CreateMetadataReq.
 
         是否覆盖文件。
 
@@ -154,7 +154,7 @@ class CreateMetadataReq:
 
     @property
     def ges_metadata(self):
-        """Gets the ges_metadata of this CreateMetadataReq.
+        r"""Gets the ges_metadata of this CreateMetadataReq.
 
         :return: The ges_metadata of this CreateMetadataReq.
         :rtype: :class:`huaweicloudsdkges.v2.CreateMetadataReqGesMetadata`
@@ -163,7 +163,7 @@ class CreateMetadataReq:
 
     @ges_metadata.setter
     def ges_metadata(self, ges_metadata):
-        """Sets the ges_metadata of this CreateMetadataReq.
+        r"""Sets the ges_metadata of this CreateMetadataReq.
 
         :param ges_metadata: The ges_metadata of this CreateMetadataReq.
         :type ges_metadata: :class:`huaweicloudsdkges.v2.CreateMetadataReqGesMetadata`

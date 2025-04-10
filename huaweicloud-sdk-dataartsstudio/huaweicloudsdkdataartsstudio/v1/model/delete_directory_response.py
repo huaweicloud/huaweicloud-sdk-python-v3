@@ -26,7 +26,7 @@ class DeleteDirectoryResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """DeleteDirectoryResponse
+        r"""DeleteDirectoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDirectoryResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteDirectoryResponse.
+        r"""Gets the data of this DeleteDirectoryResponse.
 
         :return: The data of this DeleteDirectoryResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`
@@ -53,7 +53,7 @@ class DeleteDirectoryResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteDirectoryResponse.
+        r"""Sets the data of this DeleteDirectoryResponse.
 
         :param data: The data of this DeleteDirectoryResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`

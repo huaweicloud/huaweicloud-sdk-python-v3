@@ -27,7 +27,7 @@ class DeleteGlobalEipTagRequest:
     }
 
     def __init__(self, resource_id=None, tag_key=None):
-        """DeleteGlobalEipTagRequest
+        r"""DeleteGlobalEipTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteGlobalEipTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteGlobalEipTagRequest.
+        r"""Gets the resource_id of this DeleteGlobalEipTagRequest.
 
         :return: The resource_id of this DeleteGlobalEipTagRequest.
         :rtype: str
@@ -57,7 +57,7 @@ class DeleteGlobalEipTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteGlobalEipTagRequest.
+        r"""Sets the resource_id of this DeleteGlobalEipTagRequest.
 
         :param resource_id: The resource_id of this DeleteGlobalEipTagRequest.
         :type resource_id: str
@@ -66,7 +66,7 @@ class DeleteGlobalEipTagRequest:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this DeleteGlobalEipTagRequest.
+        r"""Gets the tag_key of this DeleteGlobalEipTagRequest.
 
         :return: The tag_key of this DeleteGlobalEipTagRequest.
         :rtype: str
@@ -75,7 +75,7 @@ class DeleteGlobalEipTagRequest:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this DeleteGlobalEipTagRequest.
+        r"""Sets the tag_key of this DeleteGlobalEipTagRequest.
 
         :param tag_key: The tag_key of this DeleteGlobalEipTagRequest.
         :type tag_key: str

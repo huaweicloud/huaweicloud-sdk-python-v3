@@ -30,7 +30,7 @@ class ListEipBandwidthsResponse(SdkResponse):
     }
 
     def __init__(self, eip_bandwidths=None, page_info=None, request_id=None):
-        """ListEipBandwidthsResponse
+        r"""ListEipBandwidthsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEipBandwidthsResponse(SdkResponse):
 
     @property
     def eip_bandwidths(self):
-        """Gets the eip_bandwidths of this ListEipBandwidthsResponse.
+        r"""Gets the eip_bandwidths of this ListEipBandwidthsResponse.
 
         带宽列表对象
 
@@ -69,7 +69,7 @@ class ListEipBandwidthsResponse(SdkResponse):
 
     @eip_bandwidths.setter
     def eip_bandwidths(self, eip_bandwidths):
-        """Sets the eip_bandwidths of this ListEipBandwidthsResponse.
+        r"""Sets the eip_bandwidths of this ListEipBandwidthsResponse.
 
         带宽列表对象
 
@@ -80,7 +80,7 @@ class ListEipBandwidthsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListEipBandwidthsResponse.
+        r"""Gets the page_info of this ListEipBandwidthsResponse.
 
         :return: The page_info of this ListEipBandwidthsResponse.
         :rtype: :class:`huaweicloudsdkeip.v3.PageInfoDict`
@@ -89,7 +89,7 @@ class ListEipBandwidthsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListEipBandwidthsResponse.
+        r"""Sets the page_info of this ListEipBandwidthsResponse.
 
         :param page_info: The page_info of this ListEipBandwidthsResponse.
         :type page_info: :class:`huaweicloudsdkeip.v3.PageInfoDict`
@@ -98,7 +98,7 @@ class ListEipBandwidthsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListEipBandwidthsResponse.
+        r"""Gets the request_id of this ListEipBandwidthsResponse.
 
         本次请求的编号
 
@@ -109,7 +109,7 @@ class ListEipBandwidthsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListEipBandwidthsResponse.
+        r"""Sets the request_id of this ListEipBandwidthsResponse.
 
         本次请求的编号
 

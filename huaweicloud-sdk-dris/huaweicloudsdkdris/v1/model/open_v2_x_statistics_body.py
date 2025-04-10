@@ -47,7 +47,7 @@ class OpenV2XStatisticsBody:
     }
 
     def __init__(self, source=None, time=None, period=None, direction=None, flow=None, average_speed=None, esn=None, cross_id=None, traffic_direction=None, road_kind=None, vehicle_class_flow=None, occupancy=None):
-        """OpenV2XStatisticsBody
+        r"""OpenV2XStatisticsBody
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class OpenV2XStatisticsBody:
 
     @property
     def source(self):
-        """Gets the source of this OpenV2XStatisticsBody.
+        r"""Gets the source of this OpenV2XStatisticsBody.
 
         :return: The source of this OpenV2XStatisticsBody.
         :rtype: :class:`huaweicloudsdkdris.v1.StatisticsSourceDTO`
@@ -129,7 +129,7 @@ class OpenV2XStatisticsBody:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this OpenV2XStatisticsBody.
+        r"""Sets the source of this OpenV2XStatisticsBody.
 
         :param source: The source of this OpenV2XStatisticsBody.
         :type source: :class:`huaweicloudsdkdris.v1.StatisticsSourceDTO`
@@ -138,7 +138,7 @@ class OpenV2XStatisticsBody:
 
     @property
     def time(self):
-        """Gets the time of this OpenV2XStatisticsBody.
+        r"""Gets the time of this OpenV2XStatisticsBody.
 
         **参数说明**：数据上报的时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'。 例如：2021-01-08T02:03:41Z。 
 
@@ -149,7 +149,7 @@ class OpenV2XStatisticsBody:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this OpenV2XStatisticsBody.
+        r"""Sets the time of this OpenV2XStatisticsBody.
 
         **参数说明**：数据上报的时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'。 例如：2021-01-08T02:03:41Z。 
 
@@ -160,7 +160,7 @@ class OpenV2XStatisticsBody:
 
     @property
     def period(self):
-        """Gets the period of this OpenV2XStatisticsBody.
+        r"""Gets the period of this OpenV2XStatisticsBody.
 
         **参数说明**：统计周期，单位秒。
 
@@ -171,7 +171,7 @@ class OpenV2XStatisticsBody:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this OpenV2XStatisticsBody.
+        r"""Sets the period of this OpenV2XStatisticsBody.
 
         **参数说明**：统计周期，单位秒。
 
@@ -182,7 +182,7 @@ class OpenV2XStatisticsBody:
 
     @property
     def direction(self):
-        """Gets the direction of this OpenV2XStatisticsBody.
+        r"""Gets the direction of this OpenV2XStatisticsBody.
 
         **参数说明**：道路路的角度，区分道路方向，向东为0度，逆时针增加。
 
@@ -193,7 +193,7 @@ class OpenV2XStatisticsBody:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this OpenV2XStatisticsBody.
+        r"""Sets the direction of this OpenV2XStatisticsBody.
 
         **参数说明**：道路路的角度，区分道路方向，向东为0度，逆时针增加。
 
@@ -204,7 +204,7 @@ class OpenV2XStatisticsBody:
 
     @property
     def flow(self):
-        """Gets the flow of this OpenV2XStatisticsBody.
+        r"""Gets the flow of this OpenV2XStatisticsBody.
 
         **参数说明**：统计周期内的车辆数。
 
@@ -215,7 +215,7 @@ class OpenV2XStatisticsBody:
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this OpenV2XStatisticsBody.
+        r"""Sets the flow of this OpenV2XStatisticsBody.
 
         **参数说明**：统计周期内的车辆数。
 
@@ -226,7 +226,7 @@ class OpenV2XStatisticsBody:
 
     @property
     def average_speed(self):
-        """Gets the average_speed of this OpenV2XStatisticsBody.
+        r"""Gets the average_speed of this OpenV2XStatisticsBody.
 
         **参数说明**：车辆平均速度，单位km/h。
 
@@ -237,7 +237,7 @@ class OpenV2XStatisticsBody:
 
     @average_speed.setter
     def average_speed(self, average_speed):
-        """Sets the average_speed of this OpenV2XStatisticsBody.
+        r"""Sets the average_speed of this OpenV2XStatisticsBody.
 
         **参数说明**：车辆平均速度，单位km/h。
 
@@ -248,7 +248,7 @@ class OpenV2XStatisticsBody:
 
     @property
     def esn(self):
-        """Gets the esn of this OpenV2XStatisticsBody.
+        r"""Gets the esn of this OpenV2XStatisticsBody.
 
         **参数说明**：设备编码。 **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。 
 
@@ -259,7 +259,7 @@ class OpenV2XStatisticsBody:
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this OpenV2XStatisticsBody.
+        r"""Sets the esn of this OpenV2XStatisticsBody.
 
         **参数说明**：设备编码。 **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。 
 
@@ -270,7 +270,7 @@ class OpenV2XStatisticsBody:
 
     @property
     def cross_id(self):
-        """Gets the cross_id of this OpenV2XStatisticsBody.
+        r"""Gets the cross_id of this OpenV2XStatisticsBody.
 
         **参数说明**：路口id，对应到一组雷视拟合设备，检测一个特定的路口或者路段。
 
@@ -281,7 +281,7 @@ class OpenV2XStatisticsBody:
 
     @cross_id.setter
     def cross_id(self, cross_id):
-        """Sets the cross_id of this OpenV2XStatisticsBody.
+        r"""Sets the cross_id of this OpenV2XStatisticsBody.
 
         **参数说明**：路口id，对应到一组雷视拟合设备，检测一个特定的路口或者路段。
 
@@ -292,7 +292,7 @@ class OpenV2XStatisticsBody:
 
     @property
     def traffic_direction(self):
-        """Gets the traffic_direction of this OpenV2XStatisticsBody.
+        r"""Gets the traffic_direction of this OpenV2XStatisticsBody.
 
         **参数说明**：路段的交通流方向，交通流方向按照“西北规则”进行定义，即尽量选择西北的点作为正向起点，先西后北。西北规则具体说明请参见 [“西北规则”说明](此处添加support文档的url)。 0：正向 1：逆向 2：正向转逆向的连接线 3：逆向转正向的连接线 9：为方向未确定 
 
@@ -303,7 +303,7 @@ class OpenV2XStatisticsBody:
 
     @traffic_direction.setter
     def traffic_direction(self, traffic_direction):
-        """Sets the traffic_direction of this OpenV2XStatisticsBody.
+        r"""Sets the traffic_direction of this OpenV2XStatisticsBody.
 
         **参数说明**：路段的交通流方向，交通流方向按照“西北规则”进行定义，即尽量选择西北的点作为正向起点，先西后北。西北规则具体说明请参见 [“西北规则”说明](此处添加support文档的url)。 0：正向 1：逆向 2：正向转逆向的连接线 3：逆向转正向的连接线 9：为方向未确定 
 
@@ -314,7 +314,7 @@ class OpenV2XStatisticsBody:
 
     @property
     def road_kind(self):
-        """Gets the road_kind of this OpenV2XStatisticsBody.
+        r"""Gets the road_kind of this OpenV2XStatisticsBody.
 
         **参数说明**：道路特征，0为主路，1为汇入匝道，2为汇出匝道，3为辅道
 
@@ -325,7 +325,7 @@ class OpenV2XStatisticsBody:
 
     @road_kind.setter
     def road_kind(self, road_kind):
-        """Sets the road_kind of this OpenV2XStatisticsBody.
+        r"""Sets the road_kind of this OpenV2XStatisticsBody.
 
         **参数说明**：道路特征，0为主路，1为汇入匝道，2为汇出匝道，3为辅道
 
@@ -336,7 +336,7 @@ class OpenV2XStatisticsBody:
 
     @property
     def vehicle_class_flow(self):
-        """Gets the vehicle_class_flow of this OpenV2XStatisticsBody.
+        r"""Gets the vehicle_class_flow of this OpenV2XStatisticsBody.
 
         **参数说明**：不同车辆类型的流量统计。
 
@@ -347,7 +347,7 @@ class OpenV2XStatisticsBody:
 
     @vehicle_class_flow.setter
     def vehicle_class_flow(self, vehicle_class_flow):
-        """Sets the vehicle_class_flow of this OpenV2XStatisticsBody.
+        r"""Sets the vehicle_class_flow of this OpenV2XStatisticsBody.
 
         **参数说明**：不同车辆类型的流量统计。
 
@@ -358,7 +358,7 @@ class OpenV2XStatisticsBody:
 
     @property
     def occupancy(self):
-        """Gets the occupancy of this OpenV2XStatisticsBody.
+        r"""Gets the occupancy of this OpenV2XStatisticsBody.
 
         **参数说明**：分车道统计的占有率列表。
 
@@ -369,7 +369,7 @@ class OpenV2XStatisticsBody:
 
     @occupancy.setter
     def occupancy(self, occupancy):
-        """Sets the occupancy of this OpenV2XStatisticsBody.
+        r"""Sets the occupancy of this OpenV2XStatisticsBody.
 
         **参数说明**：分车道统计的占有率列表。
 

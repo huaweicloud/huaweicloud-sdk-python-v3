@@ -49,7 +49,7 @@ class CreatePremiumHostRequestBody:
     }
 
     def __init__(self, certificateid=None, certificatename=None, hostname=None, proxy=None, policyid=None, server=None, block_page=None, forward_header_map=None, mode=None, loadbalancer_id=None, listener_id=None, protocol_port=None, description=None):
-        """CreatePremiumHostRequestBody
+        r"""CreatePremiumHostRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -124,7 +124,7 @@ class CreatePremiumHostRequestBody:
 
     @property
     def certificateid(self):
-        """Gets the certificateid of this CreatePremiumHostRequestBody.
+        r"""Gets the certificateid of this CreatePremiumHostRequestBody.
 
         证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -135,7 +135,7 @@ class CreatePremiumHostRequestBody:
 
     @certificateid.setter
     def certificateid(self, certificateid):
-        """Sets the certificateid of this CreatePremiumHostRequestBody.
+        r"""Sets the certificateid of this CreatePremiumHostRequestBody.
 
         证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -146,7 +146,7 @@ class CreatePremiumHostRequestBody:
 
     @property
     def certificatename(self):
-        """Gets the certificatename of this CreatePremiumHostRequestBody.
+        r"""Gets the certificatename of this CreatePremiumHostRequestBody.
 
         证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -157,7 +157,7 @@ class CreatePremiumHostRequestBody:
 
     @certificatename.setter
     def certificatename(self, certificatename):
-        """Sets the certificatename of this CreatePremiumHostRequestBody.
+        r"""Sets the certificatename of this CreatePremiumHostRequestBody.
 
         证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -168,7 +168,7 @@ class CreatePremiumHostRequestBody:
 
     @property
     def hostname(self):
-        """Gets the hostname of this CreatePremiumHostRequestBody.
+        r"""Gets the hostname of this CreatePremiumHostRequestBody.
 
         防护域名或IP（可带端口）
 
@@ -179,7 +179,7 @@ class CreatePremiumHostRequestBody:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this CreatePremiumHostRequestBody.
+        r"""Sets the hostname of this CreatePremiumHostRequestBody.
 
         防护域名或IP（可带端口）
 
@@ -190,7 +190,7 @@ class CreatePremiumHostRequestBody:
 
     @property
     def proxy(self):
-        """Gets the proxy of this CreatePremiumHostRequestBody.
+        r"""Gets the proxy of this CreatePremiumHostRequestBody.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -201,7 +201,7 @@ class CreatePremiumHostRequestBody:
 
     @proxy.setter
     def proxy(self, proxy):
-        """Sets the proxy of this CreatePremiumHostRequestBody.
+        r"""Sets the proxy of this CreatePremiumHostRequestBody.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -212,7 +212,7 @@ class CreatePremiumHostRequestBody:
 
     @property
     def policyid(self):
-        """Gets the policyid of this CreatePremiumHostRequestBody.
+        r"""Gets the policyid of this CreatePremiumHostRequestBody.
 
         防护域名初始绑定的防护策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
@@ -223,7 +223,7 @@ class CreatePremiumHostRequestBody:
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this CreatePremiumHostRequestBody.
+        r"""Sets the policyid of this CreatePremiumHostRequestBody.
 
         防护域名初始绑定的防护策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
@@ -234,7 +234,7 @@ class CreatePremiumHostRequestBody:
 
     @property
     def server(self):
-        """Gets the server of this CreatePremiumHostRequestBody.
+        r"""Gets the server of this CreatePremiumHostRequestBody.
 
         防护域名的源站服务器配置信息
 
@@ -245,7 +245,7 @@ class CreatePremiumHostRequestBody:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this CreatePremiumHostRequestBody.
+        r"""Sets the server of this CreatePremiumHostRequestBody.
 
         防护域名的源站服务器配置信息
 
@@ -256,7 +256,7 @@ class CreatePremiumHostRequestBody:
 
     @property
     def block_page(self):
-        """Gets the block_page of this CreatePremiumHostRequestBody.
+        r"""Gets the block_page of this CreatePremiumHostRequestBody.
 
         :return: The block_page of this CreatePremiumHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -265,7 +265,7 @@ class CreatePremiumHostRequestBody:
 
     @block_page.setter
     def block_page(self, block_page):
-        """Sets the block_page of this CreatePremiumHostRequestBody.
+        r"""Sets the block_page of this CreatePremiumHostRequestBody.
 
         :param block_page: The block_page of this CreatePremiumHostRequestBody.
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -274,7 +274,7 @@ class CreatePremiumHostRequestBody:
 
     @property
     def forward_header_map(self):
-        """Gets the forward_header_map of this CreatePremiumHostRequestBody.
+        r"""Gets the forward_header_map of this CreatePremiumHostRequestBody.
 
         字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
 
@@ -285,7 +285,7 @@ class CreatePremiumHostRequestBody:
 
     @forward_header_map.setter
     def forward_header_map(self, forward_header_map):
-        """Sets the forward_header_map of this CreatePremiumHostRequestBody.
+        r"""Sets the forward_header_map of this CreatePremiumHostRequestBody.
 
         字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
 
@@ -296,7 +296,7 @@ class CreatePremiumHostRequestBody:
 
     @property
     def mode(self):
-        """Gets the mode of this CreatePremiumHostRequestBody.
+        r"""Gets the mode of this CreatePremiumHostRequestBody.
 
         添加云模式elb接入域名时，请输入elb-shared，否则不输入
 
@@ -307,7 +307,7 @@ class CreatePremiumHostRequestBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CreatePremiumHostRequestBody.
+        r"""Sets the mode of this CreatePremiumHostRequestBody.
 
         添加云模式elb接入域名时，请输入elb-shared，否则不输入
 
@@ -318,7 +318,7 @@ class CreatePremiumHostRequestBody:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this CreatePremiumHostRequestBody.
+        r"""Gets the loadbalancer_id of this CreatePremiumHostRequestBody.
 
         负载均衡器（ELB）id,可以在ELB侧查询其id，添加云模式elb接入域名时，此为必须输入的值
 
@@ -329,7 +329,7 @@ class CreatePremiumHostRequestBody:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this CreatePremiumHostRequestBody.
+        r"""Sets the loadbalancer_id of this CreatePremiumHostRequestBody.
 
         负载均衡器（ELB）id,可以在ELB侧查询其id，添加云模式elb接入域名时，此为必须输入的值
 
@@ -340,7 +340,7 @@ class CreatePremiumHostRequestBody:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this CreatePremiumHostRequestBody.
+        r"""Gets the listener_id of this CreatePremiumHostRequestBody.
 
         监听器id，可在ELB侧监听器页签下查询其id；不输入时，负载均衡器（ELB）下的所有监听器都将接入WAF防护，包括该ELB下未来新增的符合条件的监听器，添加云模式elb接入域名时，可考虑输入此项id
 
@@ -351,7 +351,7 @@ class CreatePremiumHostRequestBody:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this CreatePremiumHostRequestBody.
+        r"""Sets the listener_id of this CreatePremiumHostRequestBody.
 
         监听器id，可在ELB侧监听器页签下查询其id；不输入时，负载均衡器（ELB）下的所有监听器都将接入WAF防护，包括该ELB下未来新增的符合条件的监听器，添加云模式elb接入域名时，可考虑输入此项id
 
@@ -362,7 +362,7 @@ class CreatePremiumHostRequestBody:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this CreatePremiumHostRequestBody.
+        r"""Gets the protocol_port of this CreatePremiumHostRequestBody.
 
         业务端口，添加云模式elb接入域名时，此为必须输入的值（0 - 65535）
 
@@ -373,7 +373,7 @@ class CreatePremiumHostRequestBody:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this CreatePremiumHostRequestBody.
+        r"""Sets the protocol_port of this CreatePremiumHostRequestBody.
 
         业务端口，添加云模式elb接入域名时，此为必须输入的值（0 - 65535）
 
@@ -384,7 +384,7 @@ class CreatePremiumHostRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreatePremiumHostRequestBody.
+        r"""Gets the description of this CreatePremiumHostRequestBody.
 
         防护域名备注
 
@@ -395,7 +395,7 @@ class CreatePremiumHostRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePremiumHostRequestBody.
+        r"""Sets the description of this CreatePremiumHostRequestBody.
 
         防护域名备注
 

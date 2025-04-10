@@ -25,7 +25,7 @@ class ShowDdmJobResultRequest:
     }
 
     def __init__(self, job_id=None):
-        """ShowDdmJobResultRequest
+        r"""ShowDdmJobResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDdmJobResultRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowDdmJobResultRequest.
+        r"""Gets the job_id of this ShowDdmJobResultRequest.
 
         任务ID。
 
@@ -53,7 +53,7 @@ class ShowDdmJobResultRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowDdmJobResultRequest.
+        r"""Sets the job_id of this ShowDdmJobResultRequest.
 
         任务ID。
 

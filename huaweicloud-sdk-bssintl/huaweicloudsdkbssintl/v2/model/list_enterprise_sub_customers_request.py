@@ -35,7 +35,7 @@ class ListEnterpriseSubCustomersRequest:
     }
 
     def __init__(self, sub_customer_account_name=None, sub_customer_display_name=None, fuzzy_query=None, offset=None, limit=None, org_id=None):
-        """ListEnterpriseSubCustomersRequest
+        r"""ListEnterpriseSubCustomersRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListEnterpriseSubCustomersRequest:
 
     @property
     def sub_customer_account_name(self):
-        """Gets the sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
+        r"""Gets the sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
 
         企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。仅支持前缀匹配、后缀匹配、中间匹配；不支持携带空格查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
@@ -89,7 +89,7 @@ class ListEnterpriseSubCustomersRequest:
 
     @sub_customer_account_name.setter
     def sub_customer_account_name(self, sub_customer_account_name):
-        """Sets the sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
+        r"""Sets the sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
 
         企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。仅支持前缀匹配、后缀匹配、中间匹配；不支持携带空格查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
@@ -100,7 +100,7 @@ class ListEnterpriseSubCustomersRequest:
 
     @property
     def sub_customer_display_name(self):
-        """Gets the sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
+        r"""Gets the sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
 
         企业子账号的显示名称。根据fuzzy_query取值决定是否按模糊查询。仅支持前缀匹配、后缀匹配、中间匹配；不支持携带空格查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
@@ -111,7 +111,7 @@ class ListEnterpriseSubCustomersRequest:
 
     @sub_customer_display_name.setter
     def sub_customer_display_name(self, sub_customer_display_name):
-        """Sets the sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
+        r"""Sets the sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
 
         企业子账号的显示名称。根据fuzzy_query取值决定是否按模糊查询。仅支持前缀匹配、后缀匹配、中间匹配；不支持携带空格查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
@@ -122,7 +122,7 @@ class ListEnterpriseSubCustomersRequest:
 
     @property
     def fuzzy_query(self):
-        """Gets the fuzzy_query of this ListEnterpriseSubCustomersRequest.
+        r"""Gets the fuzzy_query of this ListEnterpriseSubCustomersRequest.
 
         企业子账号的显示名称、用户名是否按模糊查询。默认值为“0：不按模糊查询”。0：不按模糊查询1：按模糊查询
 
@@ -133,7 +133,7 @@ class ListEnterpriseSubCustomersRequest:
 
     @fuzzy_query.setter
     def fuzzy_query(self, fuzzy_query):
-        """Sets the fuzzy_query of this ListEnterpriseSubCustomersRequest.
+        r"""Sets the fuzzy_query of this ListEnterpriseSubCustomersRequest.
 
         企业子账号的显示名称、用户名是否按模糊查询。默认值为“0：不按模糊查询”。0：不按模糊查询1：按模糊查询
 
@@ -144,7 +144,7 @@ class ListEnterpriseSubCustomersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEnterpriseSubCustomersRequest.
+        r"""Gets the offset of this ListEnterpriseSubCustomersRequest.
 
         偏移量，从0开始，默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -155,7 +155,7 @@ class ListEnterpriseSubCustomersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEnterpriseSubCustomersRequest.
+        r"""Sets the offset of this ListEnterpriseSubCustomersRequest.
 
         偏移量，从0开始，默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -166,7 +166,7 @@ class ListEnterpriseSubCustomersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEnterpriseSubCustomersRequest.
+        r"""Gets the limit of this ListEnterpriseSubCustomersRequest.
 
         每次查询记录数，默认值为10。
 
@@ -177,7 +177,7 @@ class ListEnterpriseSubCustomersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEnterpriseSubCustomersRequest.
+        r"""Sets the limit of this ListEnterpriseSubCustomersRequest.
 
         每次查询记录数，默认值为10。
 
@@ -188,7 +188,7 @@ class ListEnterpriseSubCustomersRequest:
 
     @property
     def org_id(self):
-        """Gets the org_id of this ListEnterpriseSubCustomersRequest.
+        r"""Gets the org_id of this ListEnterpriseSubCustomersRequest.
 
         子账号归属的组织单元ID。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -199,7 +199,7 @@ class ListEnterpriseSubCustomersRequest:
 
     @org_id.setter
     def org_id(self, org_id):
-        """Sets the org_id of this ListEnterpriseSubCustomersRequest.
+        r"""Sets the org_id of this ListEnterpriseSubCustomersRequest.
 
         子账号归属的组织单元ID。此参数不携带或携带值为空时，不作为筛选条件。
 

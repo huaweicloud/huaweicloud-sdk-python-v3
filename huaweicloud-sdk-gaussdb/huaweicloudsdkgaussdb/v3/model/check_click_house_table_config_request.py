@@ -29,7 +29,7 @@ class CheckClickHouseTableConfigRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """CheckClickHouseTableConfigRequest
+        r"""CheckClickHouseTableConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CheckClickHouseTableConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CheckClickHouseTableConfigRequest.
+        r"""Gets the instance_id of this CheckClickHouseTableConfigRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -67,7 +67,7 @@ class CheckClickHouseTableConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CheckClickHouseTableConfigRequest.
+        r"""Sets the instance_id of this CheckClickHouseTableConfigRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -78,7 +78,7 @@ class CheckClickHouseTableConfigRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CheckClickHouseTableConfigRequest.
+        r"""Gets the x_language of this CheckClickHouseTableConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -89,7 +89,7 @@ class CheckClickHouseTableConfigRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CheckClickHouseTableConfigRequest.
+        r"""Sets the x_language of this CheckClickHouseTableConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -100,7 +100,7 @@ class CheckClickHouseTableConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckClickHouseTableConfigRequest.
+        r"""Gets the body of this CheckClickHouseTableConfigRequest.
 
         :return: The body of this CheckClickHouseTableConfigRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CheckChDatabaseTableConfigRequestBody`
@@ -109,7 +109,7 @@ class CheckClickHouseTableConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckClickHouseTableConfigRequest.
+        r"""Sets the body of this CheckClickHouseTableConfigRequest.
 
         :param body: The body of this CheckClickHouseTableConfigRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.CheckChDatabaseTableConfigRequestBody`

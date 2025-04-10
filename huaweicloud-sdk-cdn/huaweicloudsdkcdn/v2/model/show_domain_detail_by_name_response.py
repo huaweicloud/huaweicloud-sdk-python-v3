@@ -28,7 +28,7 @@ class ShowDomainDetailByNameResponse(SdkResponse):
     }
 
     def __init__(self, domain=None, x_request_id=None):
-        """ShowDomainDetailByNameResponse
+        r"""ShowDomainDetailByNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDomainDetailByNameResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this ShowDomainDetailByNameResponse.
+        r"""Gets the domain of this ShowDomainDetailByNameResponse.
 
         :return: The domain of this ShowDomainDetailByNameResponse.
         :rtype: :class:`huaweicloudsdkcdn.v2.DomainsDetail`
@@ -60,7 +60,7 @@ class ShowDomainDetailByNameResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ShowDomainDetailByNameResponse.
+        r"""Sets the domain of this ShowDomainDetailByNameResponse.
 
         :param domain: The domain of this ShowDomainDetailByNameResponse.
         :type domain: :class:`huaweicloudsdkcdn.v2.DomainsDetail`
@@ -69,7 +69,7 @@ class ShowDomainDetailByNameResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowDomainDetailByNameResponse.
+        r"""Gets the x_request_id of this ShowDomainDetailByNameResponse.
 
         :return: The x_request_id of this ShowDomainDetailByNameResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowDomainDetailByNameResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowDomainDetailByNameResponse.
+        r"""Sets the x_request_id of this ShowDomainDetailByNameResponse.
 
         :param x_request_id: The x_request_id of this ShowDomainDetailByNameResponse.
         :type x_request_id: str

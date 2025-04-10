@@ -35,7 +35,7 @@ class UpdateDisasterRecoveryReq:
     }
 
     def __init__(self, dr_sync_period=None, send_request=None, primary_to_role=None, reset_action=None, standby_to_role=None, dr_status=None):
-        """UpdateDisasterRecoveryReq
+        r"""UpdateDisasterRecoveryReq
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpdateDisasterRecoveryReq:
 
     @property
     def dr_sync_period(self):
-        """Gets the dr_sync_period of this UpdateDisasterRecoveryReq.
+        r"""Gets the dr_sync_period of this UpdateDisasterRecoveryReq.
 
         容灾同步周期
 
@@ -89,7 +89,7 @@ class UpdateDisasterRecoveryReq:
 
     @dr_sync_period.setter
     def dr_sync_period(self, dr_sync_period):
-        """Sets the dr_sync_period of this UpdateDisasterRecoveryReq.
+        r"""Sets the dr_sync_period of this UpdateDisasterRecoveryReq.
 
         容灾同步周期
 
@@ -100,7 +100,7 @@ class UpdateDisasterRecoveryReq:
 
     @property
     def send_request(self):
-        """Gets the send_request of this UpdateDisasterRecoveryReq.
+        r"""Gets the send_request of this UpdateDisasterRecoveryReq.
 
         是否发送请求
 
@@ -111,7 +111,7 @@ class UpdateDisasterRecoveryReq:
 
     @send_request.setter
     def send_request(self, send_request):
-        """Sets the send_request of this UpdateDisasterRecoveryReq.
+        r"""Sets the send_request of this UpdateDisasterRecoveryReq.
 
         是否发送请求
 
@@ -122,7 +122,7 @@ class UpdateDisasterRecoveryReq:
 
     @property
     def primary_to_role(self):
-        """Gets the primary_to_role of this UpdateDisasterRecoveryReq.
+        r"""Gets the primary_to_role of this UpdateDisasterRecoveryReq.
 
         主集群角色
 
@@ -133,7 +133,7 @@ class UpdateDisasterRecoveryReq:
 
     @primary_to_role.setter
     def primary_to_role(self, primary_to_role):
-        """Sets the primary_to_role of this UpdateDisasterRecoveryReq.
+        r"""Sets the primary_to_role of this UpdateDisasterRecoveryReq.
 
         主集群角色
 
@@ -144,7 +144,7 @@ class UpdateDisasterRecoveryReq:
 
     @property
     def reset_action(self):
-        """Gets the reset_action of this UpdateDisasterRecoveryReq.
+        r"""Gets the reset_action of this UpdateDisasterRecoveryReq.
 
         设置容灾动作
 
@@ -155,7 +155,7 @@ class UpdateDisasterRecoveryReq:
 
     @reset_action.setter
     def reset_action(self, reset_action):
-        """Sets the reset_action of this UpdateDisasterRecoveryReq.
+        r"""Sets the reset_action of this UpdateDisasterRecoveryReq.
 
         设置容灾动作
 
@@ -166,7 +166,7 @@ class UpdateDisasterRecoveryReq:
 
     @property
     def standby_to_role(self):
-        """Gets the standby_to_role of this UpdateDisasterRecoveryReq.
+        r"""Gets the standby_to_role of this UpdateDisasterRecoveryReq.
 
         备集群角色
 
@@ -177,7 +177,7 @@ class UpdateDisasterRecoveryReq:
 
     @standby_to_role.setter
     def standby_to_role(self, standby_to_role):
-        """Sets the standby_to_role of this UpdateDisasterRecoveryReq.
+        r"""Sets the standby_to_role of this UpdateDisasterRecoveryReq.
 
         备集群角色
 
@@ -188,7 +188,7 @@ class UpdateDisasterRecoveryReq:
 
     @property
     def dr_status(self):
-        """Gets the dr_status of this UpdateDisasterRecoveryReq.
+        r"""Gets the dr_status of this UpdateDisasterRecoveryReq.
 
         容灾状态
 
@@ -199,7 +199,7 @@ class UpdateDisasterRecoveryReq:
 
     @dr_status.setter
     def dr_status(self, dr_status):
-        """Sets the dr_status of this UpdateDisasterRecoveryReq.
+        r"""Sets the dr_status of this UpdateDisasterRecoveryReq.
 
         容灾状态
 

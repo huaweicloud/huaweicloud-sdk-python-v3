@@ -27,7 +27,7 @@ class AddressAndPorts:
     }
 
     def __init__(self, address=None, port=None):
-        """AddressAndPorts
+        r"""AddressAndPorts
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddressAndPorts:
 
     @property
     def address(self):
-        """Gets the address of this AddressAndPorts.
+        r"""Gets the address of this AddressAndPorts.
 
         IP地址或域名。
 
@@ -60,7 +60,7 @@ class AddressAndPorts:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this AddressAndPorts.
+        r"""Sets the address of this AddressAndPorts.
 
         IP地址或域名。
 
@@ -71,7 +71,7 @@ class AddressAndPorts:
 
     @property
     def port(self):
-        """Gets the port of this AddressAndPorts.
+        r"""Gets the port of this AddressAndPorts.
 
         端口号。
 
@@ -82,7 +82,7 @@ class AddressAndPorts:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this AddressAndPorts.
+        r"""Sets the port of this AddressAndPorts.
 
         端口号。
 

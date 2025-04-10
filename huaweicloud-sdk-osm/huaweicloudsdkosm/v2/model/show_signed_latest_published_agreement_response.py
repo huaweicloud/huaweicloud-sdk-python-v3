@@ -26,7 +26,7 @@ class ShowSignedLatestPublishedAgreementResponse(SdkResponse):
     }
 
     def __init__(self, is_signed_latest=None):
-        """ShowSignedLatestPublishedAgreementResponse
+        r"""ShowSignedLatestPublishedAgreementResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSignedLatestPublishedAgreementResponse(SdkResponse):
 
     @property
     def is_signed_latest(self):
-        """Gets the is_signed_latest of this ShowSignedLatestPublishedAgreementResponse.
+        r"""Gets the is_signed_latest of this ShowSignedLatestPublishedAgreementResponse.
 
         是否签署
 
@@ -55,7 +55,7 @@ class ShowSignedLatestPublishedAgreementResponse(SdkResponse):
 
     @is_signed_latest.setter
     def is_signed_latest(self, is_signed_latest):
-        """Sets the is_signed_latest of this ShowSignedLatestPublishedAgreementResponse.
+        r"""Sets the is_signed_latest of this ShowSignedLatestPublishedAgreementResponse.
 
         是否签署
 

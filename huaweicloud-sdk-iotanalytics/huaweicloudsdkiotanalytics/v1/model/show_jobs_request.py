@@ -31,7 +31,7 @@ class ShowJobsRequest:
     }
 
     def __init__(self, job_input_type=None, offset=None, limit=None, sync_status=None):
-        """ShowJobsRequest
+        r"""ShowJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowJobsRequest:
 
     @property
     def job_input_type(self):
-        """Gets the job_input_type of this ShowJobsRequest.
+        r"""Gets the job_input_type of this ShowJobsRequest.
 
         接收数据类型，支持两种接收数据类型：“管道数据”、“资产数据”。管道数据：“实时分析”使用来自“数据管道”的数据进行分析，并可将数据输出到其他云服务。资产数据：“实时分析”使用来自“资产模型”的数据进行分析，并将分析后的结果返回给“资产模型”，丰富资产模型。
 
@@ -75,7 +75,7 @@ class ShowJobsRequest:
 
     @job_input_type.setter
     def job_input_type(self, job_input_type):
-        """Sets the job_input_type of this ShowJobsRequest.
+        r"""Sets the job_input_type of this ShowJobsRequest.
 
         接收数据类型，支持两种接收数据类型：“管道数据”、“资产数据”。管道数据：“实时分析”使用来自“数据管道”的数据进行分析，并可将数据输出到其他云服务。资产数据：“实时分析”使用来自“资产模型”的数据进行分析，并将分析后的结果返回给“资产模型”，丰富资产模型。
 
@@ -86,7 +86,7 @@ class ShowJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowJobsRequest.
+        r"""Gets the offset of this ShowJobsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -97,7 +97,7 @@ class ShowJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowJobsRequest.
+        r"""Sets the offset of this ShowJobsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -108,7 +108,7 @@ class ShowJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowJobsRequest.
+        r"""Gets the limit of this ShowJobsRequest.
 
         每页显示的条目数量
 
@@ -119,7 +119,7 @@ class ShowJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowJobsRequest.
+        r"""Sets the limit of this ShowJobsRequest.
 
         每页显示的条目数量
 
@@ -130,7 +130,7 @@ class ShowJobsRequest:
 
     @property
     def sync_status(self):
-        """Gets the sync_status of this ShowJobsRequest.
+        r"""Gets the sync_status of this ShowJobsRequest.
 
         立即同步作业状态，默认是false
 
@@ -141,7 +141,7 @@ class ShowJobsRequest:
 
     @sync_status.setter
     def sync_status(self, sync_status):
-        """Sets the sync_status of this ShowJobsRequest.
+        r"""Sets the sync_status of this ShowJobsRequest.
 
         立即同步作业状态，默认是false
 

@@ -29,7 +29,7 @@ class ListFlJobRequest:
     }
 
     def __init__(self, league_id=None, limit=None, offset=None):
-        """ListFlJobRequest
+        r"""ListFlJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListFlJobRequest:
 
     @property
     def league_id(self):
-        """Gets the league_id of this ListFlJobRequest.
+        r"""Gets the league_id of this ListFlJobRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -65,7 +65,7 @@ class ListFlJobRequest:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this ListFlJobRequest.
+        r"""Sets the league_id of this ListFlJobRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -76,7 +76,7 @@ class ListFlJobRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFlJobRequest.
+        r"""Gets the limit of this ListFlJobRequest.
 
         每页记录数，取值0-100
 
@@ -87,7 +87,7 @@ class ListFlJobRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFlJobRequest.
+        r"""Sets the limit of this ListFlJobRequest.
 
         每页记录数，取值0-100
 
@@ -98,7 +98,7 @@ class ListFlJobRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFlJobRequest.
+        r"""Gets the offset of this ListFlJobRequest.
 
         记录数偏移量 
 
@@ -109,7 +109,7 @@ class ListFlJobRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFlJobRequest.
+        r"""Sets the offset of this ListFlJobRequest.
 
         记录数偏移量 
 

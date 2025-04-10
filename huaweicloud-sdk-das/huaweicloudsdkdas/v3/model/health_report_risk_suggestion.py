@@ -27,7 +27,7 @@ class HealthReportRiskSuggestion:
     }
 
     def __init__(self, suggestion_code=None, suggestion_content=None):
-        """HealthReportRiskSuggestion
+        r"""HealthReportRiskSuggestion
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class HealthReportRiskSuggestion:
 
     @property
     def suggestion_code(self):
-        """Gets the suggestion_code of this HealthReportRiskSuggestion.
+        r"""Gets the suggestion_code of this HealthReportRiskSuggestion.
 
         建议优化措施编码。
 
@@ -59,7 +59,7 @@ class HealthReportRiskSuggestion:
 
     @suggestion_code.setter
     def suggestion_code(self, suggestion_code):
-        """Sets the suggestion_code of this HealthReportRiskSuggestion.
+        r"""Sets the suggestion_code of this HealthReportRiskSuggestion.
 
         建议优化措施编码。
 
@@ -70,7 +70,7 @@ class HealthReportRiskSuggestion:
 
     @property
     def suggestion_content(self):
-        """Gets the suggestion_content of this HealthReportRiskSuggestion.
+        r"""Gets the suggestion_content of this HealthReportRiskSuggestion.
 
         建议优化措施。
 
@@ -81,7 +81,7 @@ class HealthReportRiskSuggestion:
 
     @suggestion_content.setter
     def suggestion_content(self, suggestion_content):
-        """Sets the suggestion_content of this HealthReportRiskSuggestion.
+        r"""Sets the suggestion_content of this HealthReportRiskSuggestion.
 
         建议优化措施。
 

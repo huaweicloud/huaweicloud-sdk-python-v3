@@ -29,7 +29,7 @@ class UpdateBlackWhiteListRequest:
     }
 
     def __init__(self, domain_id=None, enterprise_project_id=None, body=None):
-        """UpdateBlackWhiteListRequest
+        r"""UpdateBlackWhiteListRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateBlackWhiteListRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateBlackWhiteListRequest.
+        r"""Gets the domain_id of this UpdateBlackWhiteListRequest.
 
         需要设置IP黑白名单的域名id。获取方法请参见查询加速域名。
 
@@ -67,7 +67,7 @@ class UpdateBlackWhiteListRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateBlackWhiteListRequest.
+        r"""Sets the domain_id of this UpdateBlackWhiteListRequest.
 
         需要设置IP黑白名单的域名id。获取方法请参见查询加速域名。
 
@@ -78,7 +78,7 @@ class UpdateBlackWhiteListRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateBlackWhiteListRequest.
+        r"""Gets the enterprise_project_id of this UpdateBlackWhiteListRequest.
 
         当用户开启企业项目功能时，该参数生效，表示修改当前企业项目下加速域名的配置，\"all\"代表所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -89,7 +89,7 @@ class UpdateBlackWhiteListRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateBlackWhiteListRequest.
+        r"""Sets the enterprise_project_id of this UpdateBlackWhiteListRequest.
 
         当用户开启企业项目功能时，该参数生效，表示修改当前企业项目下加速域名的配置，\"all\"代表所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -100,7 +100,7 @@ class UpdateBlackWhiteListRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateBlackWhiteListRequest.
+        r"""Gets the body of this UpdateBlackWhiteListRequest.
 
         :return: The body of this UpdateBlackWhiteListRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.BlackWhiteListBody`
@@ -109,7 +109,7 @@ class UpdateBlackWhiteListRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBlackWhiteListRequest.
+        r"""Sets the body of this UpdateBlackWhiteListRequest.
 
         :param body: The body of this UpdateBlackWhiteListRequest.
         :type body: :class:`huaweicloudsdkcdn.v1.BlackWhiteListBody`

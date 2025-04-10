@@ -27,7 +27,7 @@ class UpdateEndpointPolicyRequestBody:
     }
 
     def __init__(self, policy_statement=None, policy_document=None):
-        """UpdateEndpointPolicyRequestBody
+        r"""UpdateEndpointPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateEndpointPolicyRequestBody:
 
     @property
     def policy_statement(self):
-        """Gets the policy_statement of this UpdateEndpointPolicyRequestBody.
+        r"""Gets the policy_statement of this UpdateEndpointPolicyRequestBody.
 
         Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
 
@@ -61,7 +61,7 @@ class UpdateEndpointPolicyRequestBody:
 
     @policy_statement.setter
     def policy_statement(self, policy_statement):
-        """Sets the policy_statement of this UpdateEndpointPolicyRequestBody.
+        r"""Sets the policy_statement of this UpdateEndpointPolicyRequestBody.
 
         Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
 
@@ -72,7 +72,7 @@ class UpdateEndpointPolicyRequestBody:
 
     @property
     def policy_document(self):
-        """Gets the policy_document of this UpdateEndpointPolicyRequestBody.
+        r"""Gets the policy_document of this UpdateEndpointPolicyRequestBody.
 
         终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
@@ -83,7 +83,7 @@ class UpdateEndpointPolicyRequestBody:
 
     @policy_document.setter
     def policy_document(self, policy_document):
-        """Sets the policy_document of this UpdateEndpointPolicyRequestBody.
+        r"""Sets the policy_document of this UpdateEndpointPolicyRequestBody.
 
         终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 

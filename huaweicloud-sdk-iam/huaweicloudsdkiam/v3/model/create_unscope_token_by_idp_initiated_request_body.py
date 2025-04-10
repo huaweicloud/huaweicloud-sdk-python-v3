@@ -25,7 +25,7 @@ class CreateUnscopeTokenByIdpInitiatedRequestBody:
     }
 
     def __init__(self, saml_response=None):
-        """CreateUnscopeTokenByIdpInitiatedRequestBody
+        r"""CreateUnscopeTokenByIdpInitiatedRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateUnscopeTokenByIdpInitiatedRequestBody:
 
     @property
     def saml_response(self):
-        """Gets the saml_response of this CreateUnscopeTokenByIdpInitiatedRequestBody.
+        r"""Gets the saml_response of this CreateUnscopeTokenByIdpInitiatedRequestBody.
 
         在IdP认证成功后返回的响应体。详情请参见：[获取联邦认证unscoped token(IdP initiated)](https://support.huaweicloud.com/api-iam/iam_02_0003.html)。
 
@@ -53,7 +53,7 @@ class CreateUnscopeTokenByIdpInitiatedRequestBody:
 
     @saml_response.setter
     def saml_response(self, saml_response):
-        """Sets the saml_response of this CreateUnscopeTokenByIdpInitiatedRequestBody.
+        r"""Sets the saml_response of this CreateUnscopeTokenByIdpInitiatedRequestBody.
 
         在IdP认证成功后返回的响应体。详情请参见：[获取联邦认证unscoped token(IdP initiated)](https://support.huaweicloud.com/api-iam/iam_02_0003.html)。
 

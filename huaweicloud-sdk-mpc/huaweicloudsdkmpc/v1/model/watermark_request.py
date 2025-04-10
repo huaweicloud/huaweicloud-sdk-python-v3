@@ -33,7 +33,7 @@ class WatermarkRequest:
     }
 
     def __init__(self, input=None, template_id=None, text_context=None, image_watermark=None, text_watermark=None):
-        """WatermarkRequest
+        r"""WatermarkRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class WatermarkRequest:
 
     @property
     def input(self):
-        """Gets the input of this WatermarkRequest.
+        r"""Gets the input of this WatermarkRequest.
 
         :return: The input of this WatermarkRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -80,7 +80,7 @@ class WatermarkRequest:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this WatermarkRequest.
+        r"""Sets the input of this WatermarkRequest.
 
         :param input: The input of this WatermarkRequest.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -89,7 +89,7 @@ class WatermarkRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this WatermarkRequest.
+        r"""Gets the template_id of this WatermarkRequest.
 
         水印模板。可通过新建水印模板接口创建水印模板。
 
@@ -100,7 +100,7 @@ class WatermarkRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this WatermarkRequest.
+        r"""Sets the template_id of this WatermarkRequest.
 
         水印模板。可通过新建水印模板接口创建水印模板。
 
@@ -111,7 +111,7 @@ class WatermarkRequest:
 
     @property
     def text_context(self):
-        """Gets the text_context of this WatermarkRequest.
+        r"""Gets the text_context of this WatermarkRequest.
 
         文字水印内容，内容需做Base64编码，若类型为文字水印 (type字段为Text)，则此配置项不能为空  示例：若想添加文字水印“测试文字水印”，那么Content的值为：5rWL6K+V5paH5a2X5rC05Y2w 
 
@@ -122,7 +122,7 @@ class WatermarkRequest:
 
     @text_context.setter
     def text_context(self, text_context):
-        """Sets the text_context of this WatermarkRequest.
+        r"""Sets the text_context of this WatermarkRequest.
 
         文字水印内容，内容需做Base64编码，若类型为文字水印 (type字段为Text)，则此配置项不能为空  示例：若想添加文字水印“测试文字水印”，那么Content的值为：5rWL6K+V5paH5a2X5rC05Y2w 
 
@@ -133,7 +133,7 @@ class WatermarkRequest:
 
     @property
     def image_watermark(self):
-        """Gets the image_watermark of this WatermarkRequest.
+        r"""Gets the image_watermark of this WatermarkRequest.
 
         :return: The image_watermark of this WatermarkRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.ImageWatermark`
@@ -142,7 +142,7 @@ class WatermarkRequest:
 
     @image_watermark.setter
     def image_watermark(self, image_watermark):
-        """Sets the image_watermark of this WatermarkRequest.
+        r"""Sets the image_watermark of this WatermarkRequest.
 
         :param image_watermark: The image_watermark of this WatermarkRequest.
         :type image_watermark: :class:`huaweicloudsdkmpc.v1.ImageWatermark`
@@ -151,7 +151,7 @@ class WatermarkRequest:
 
     @property
     def text_watermark(self):
-        """Gets the text_watermark of this WatermarkRequest.
+        r"""Gets the text_watermark of this WatermarkRequest.
 
         :return: The text_watermark of this WatermarkRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.TextWatermark`
@@ -160,7 +160,7 @@ class WatermarkRequest:
 
     @text_watermark.setter
     def text_watermark(self, text_watermark):
-        """Sets the text_watermark of this WatermarkRequest.
+        r"""Sets the text_watermark of this WatermarkRequest.
 
         :param text_watermark: The text_watermark of this WatermarkRequest.
         :type text_watermark: :class:`huaweicloudsdkmpc.v1.TextWatermark`

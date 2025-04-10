@@ -25,7 +25,7 @@ class CreatePersonalRealnameAuthRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePersonalRealnameAuthRequest
+        r"""CreatePersonalRealnameAuthRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreatePersonalRealnameAuthRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePersonalRealnameAuthRequest.
+        r"""Gets the body of this CreatePersonalRealnameAuthRequest.
 
         :return: The body of this CreatePersonalRealnameAuthRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.ApplyIndividualRealnameAuthsReq`
@@ -52,7 +52,7 @@ class CreatePersonalRealnameAuthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePersonalRealnameAuthRequest.
+        r"""Sets the body of this CreatePersonalRealnameAuthRequest.
 
         :param body: The body of this CreatePersonalRealnameAuthRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.ApplyIndividualRealnameAuthsReq`

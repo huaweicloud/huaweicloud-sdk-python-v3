@@ -29,7 +29,7 @@ class CreatePlaybookRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """CreatePlaybookRequest
+        r"""CreatePlaybookRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreatePlaybookRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreatePlaybookRequest.
+        r"""Gets the project_id of this CreatePlaybookRequest.
 
         ID of project
 
@@ -66,7 +66,7 @@ class CreatePlaybookRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreatePlaybookRequest.
+        r"""Sets the project_id of this CreatePlaybookRequest.
 
         ID of project
 
@@ -77,7 +77,7 @@ class CreatePlaybookRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreatePlaybookRequest.
+        r"""Gets the workspace_id of this CreatePlaybookRequest.
 
         ID of workspace
 
@@ -88,7 +88,7 @@ class CreatePlaybookRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreatePlaybookRequest.
+        r"""Sets the workspace_id of this CreatePlaybookRequest.
 
         ID of workspace
 
@@ -99,7 +99,7 @@ class CreatePlaybookRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePlaybookRequest.
+        r"""Gets the body of this CreatePlaybookRequest.
 
         :return: The body of this CreatePlaybookRequest.
         :rtype: :class:`huaweicloudsdksa.v2.CreatePlaybookInfo`
@@ -108,7 +108,7 @@ class CreatePlaybookRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePlaybookRequest.
+        r"""Sets the body of this CreatePlaybookRequest.
 
         :param body: The body of this CreatePlaybookRequest.
         :type body: :class:`huaweicloudsdksa.v2.CreatePlaybookInfo`

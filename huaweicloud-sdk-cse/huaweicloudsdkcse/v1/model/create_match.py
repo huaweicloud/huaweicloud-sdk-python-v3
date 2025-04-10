@@ -25,7 +25,7 @@ class CreateMatch:
     }
 
     def __init__(self, headers=None):
-        """CreateMatch
+        r"""CreateMatch
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateMatch:
 
     @property
     def headers(self):
-        """Gets the headers of this CreateMatch.
+        r"""Gets the headers of this CreateMatch.
 
         :return: The headers of this CreateMatch.
         :rtype: :class:`huaweicloudsdkcse.v1.CreateMatchHeaders`
@@ -52,7 +52,7 @@ class CreateMatch:
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this CreateMatch.
+        r"""Sets the headers of this CreateMatch.
 
         :param headers: The headers of this CreateMatch.
         :type headers: :class:`huaweicloudsdkcse.v1.CreateMatchHeaders`

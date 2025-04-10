@@ -29,7 +29,7 @@ class TaskPolicy:
     }
 
     def __init__(self, schedule_time=None, retry_count=None, retry_interval=None):
-        """TaskPolicy
+        r"""TaskPolicy
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TaskPolicy:
 
     @property
     def schedule_time(self):
-        """Gets the schedule_time of this TaskPolicy.
+        r"""Gets the schedule_time of this TaskPolicy.
 
         **参数说明**：批量任务指定执行时间。 **取值范围**：7天内，不传入此参数表示立即执行，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -68,7 +68,7 @@ class TaskPolicy:
 
     @schedule_time.setter
     def schedule_time(self, schedule_time):
-        """Sets the schedule_time of this TaskPolicy.
+        r"""Sets the schedule_time of this TaskPolicy.
 
         **参数说明**：批量任务指定执行时间。 **取值范围**：7天内，不传入此参数表示立即执行，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -79,7 +79,7 @@ class TaskPolicy:
 
     @property
     def retry_count(self):
-        """Gets the retry_count of this TaskPolicy.
+        r"""Gets the retry_count of this TaskPolicy.
 
         **参数说明**：批量任务子任务自动重试次数。 **取值范围**：如果传入retry_interval参数，则需传入该参数，最大支持重试5次。
 
@@ -90,7 +90,7 @@ class TaskPolicy:
 
     @retry_count.setter
     def retry_count(self, retry_count):
-        """Sets the retry_count of this TaskPolicy.
+        r"""Sets the retry_count of this TaskPolicy.
 
         **参数说明**：批量任务子任务自动重试次数。 **取值范围**：如果传入retry_interval参数，则需传入该参数，最大支持重试5次。
 
@@ -101,7 +101,7 @@ class TaskPolicy:
 
     @property
     def retry_interval(self):
-        """Gets the retry_interval of this TaskPolicy.
+        r"""Gets the retry_interval of this TaskPolicy.
 
         **参数说明**：批量任务子任务失败后，自动重试时间间隔，单位：分钟。 **取值范围**：最大1440(24小时)，不传入此参数表示不重试，如果传入retry_count参数则需要传入该参数。
 
@@ -112,7 +112,7 @@ class TaskPolicy:
 
     @retry_interval.setter
     def retry_interval(self, retry_interval):
-        """Sets the retry_interval of this TaskPolicy.
+        r"""Sets the retry_interval of this TaskPolicy.
 
         **参数说明**：批量任务子任务失败后，自动重试时间间隔，单位：分钟。 **取值范围**：最大1440(24小时)，不传入此参数表示不重试，如果传入retry_count参数则需要传入该参数。
 

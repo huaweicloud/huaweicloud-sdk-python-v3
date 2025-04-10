@@ -25,7 +25,7 @@ class DeletePortResponseModel:
     }
 
     def __init__(self, data=None):
-        """DeletePortResponseModel
+        r"""DeletePortResponseModel
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeletePortResponseModel:
 
     @property
     def data(self):
-        """Gets the data of this DeletePortResponseModel.
+        r"""Gets the data of this DeletePortResponseModel.
 
         :return: The data of this DeletePortResponseModel.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.DeletePortResponseModelData`
@@ -52,7 +52,7 @@ class DeletePortResponseModel:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeletePortResponseModel.
+        r"""Sets the data of this DeletePortResponseModel.
 
         :param data: The data of this DeletePortResponseModel.
         :type data: :class:`huaweicloudsdkkoomessage.v1.DeletePortResponseModelData`

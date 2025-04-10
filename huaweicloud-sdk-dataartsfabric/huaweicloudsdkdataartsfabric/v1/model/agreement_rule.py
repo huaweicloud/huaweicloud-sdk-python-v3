@@ -31,7 +31,7 @@ class AgreementRule:
     }
 
     def __init__(self, agreement_name=None, agreement_display_name=None, agreement_version=None, agreement_url=None):
-        """AgreementRule
+        r"""AgreementRule
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AgreementRule:
 
     @property
     def agreement_name(self):
-        """Gets the agreement_name of this AgreementRule.
+        r"""Gets the agreement_name of this AgreementRule.
 
         协议名称
 
@@ -75,7 +75,7 @@ class AgreementRule:
 
     @agreement_name.setter
     def agreement_name(self, agreement_name):
-        """Sets the agreement_name of this AgreementRule.
+        r"""Sets the agreement_name of this AgreementRule.
 
         协议名称
 
@@ -86,7 +86,7 @@ class AgreementRule:
 
     @property
     def agreement_display_name(self):
-        """Gets the agreement_display_name of this AgreementRule.
+        r"""Gets the agreement_display_name of this AgreementRule.
 
         协议展示名称
 
@@ -97,7 +97,7 @@ class AgreementRule:
 
     @agreement_display_name.setter
     def agreement_display_name(self, agreement_display_name):
-        """Sets the agreement_display_name of this AgreementRule.
+        r"""Sets the agreement_display_name of this AgreementRule.
 
         协议展示名称
 
@@ -108,7 +108,7 @@ class AgreementRule:
 
     @property
     def agreement_version(self):
-        """Gets the agreement_version of this AgreementRule.
+        r"""Gets the agreement_version of this AgreementRule.
 
         协议版本
 
@@ -119,7 +119,7 @@ class AgreementRule:
 
     @agreement_version.setter
     def agreement_version(self, agreement_version):
-        """Sets the agreement_version of this AgreementRule.
+        r"""Sets the agreement_version of this AgreementRule.
 
         协议版本
 
@@ -130,7 +130,7 @@ class AgreementRule:
 
     @property
     def agreement_url(self):
-        """Gets the agreement_url of this AgreementRule.
+        r"""Gets the agreement_url of this AgreementRule.
 
         协议链接
 
@@ -141,7 +141,7 @@ class AgreementRule:
 
     @agreement_url.setter
     def agreement_url(self, agreement_url):
-        """Sets the agreement_url of this AgreementRule.
+        r"""Sets the agreement_url of this AgreementRule.
 
         协议链接
 

@@ -26,7 +26,7 @@ class AddDepartmentResponse(SdkResponse):
     }
 
     def __init__(self, value=None):
-        """AddDepartmentResponse
+        r"""AddDepartmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddDepartmentResponse(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this AddDepartmentResponse.
+        r"""Gets the value of this AddDepartmentResponse.
 
         返回结果。
 
@@ -55,7 +55,7 @@ class AddDepartmentResponse(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AddDepartmentResponse.
+        r"""Sets the value of this AddDepartmentResponse.
 
         返回结果。
 

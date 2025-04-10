@@ -26,7 +26,7 @@ class ChangeGateway:
     }
 
     def __init__(self, gateway_id=None):
-        """ChangeGateway
+        r"""ChangeGateway
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeGateway:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this ChangeGateway.
+        r"""Gets the gateway_id of this ChangeGateway.
 
         网关ID，用于标识设备所属的父设备，即父设备的设备ID。
 
@@ -54,7 +54,7 @@ class ChangeGateway:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this ChangeGateway.
+        r"""Sets the gateway_id of this ChangeGateway.
 
         网关ID，用于标识设备所属的父设备，即父设备的设备ID。
 

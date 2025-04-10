@@ -27,7 +27,7 @@ class ShowEngineRequest:
     }
 
     def __init__(self, x_enterprise_project_id=None, engine_id=None):
-        """ShowEngineRequest
+        r"""ShowEngineRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowEngineRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this ShowEngineRequest.
+        r"""Gets the x_enterprise_project_id of this ShowEngineRequest.
 
         如果不带则默认企业项目为\"default\"，ID为\"0\"。
 
@@ -60,7 +60,7 @@ class ShowEngineRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this ShowEngineRequest.
+        r"""Sets the x_enterprise_project_id of this ShowEngineRequest.
 
         如果不带则默认企业项目为\"default\"，ID为\"0\"。
 
@@ -71,7 +71,7 @@ class ShowEngineRequest:
 
     @property
     def engine_id(self):
-        """Gets the engine_id of this ShowEngineRequest.
+        r"""Gets the engine_id of this ShowEngineRequest.
 
         微服务引擎ID。
 
@@ -82,7 +82,7 @@ class ShowEngineRequest:
 
     @engine_id.setter
     def engine_id(self, engine_id):
-        """Sets the engine_id of this ShowEngineRequest.
+        r"""Sets the engine_id of this ShowEngineRequest.
 
         微服务引擎ID。
 

@@ -28,7 +28,7 @@ class ShowTrendResponse(SdkResponse):
     }
 
     def __init__(self, line_list=None, latest_data_time=None):
-        """ShowTrendResponse
+        r"""ShowTrendResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTrendResponse(SdkResponse):
 
     @property
     def line_list(self):
-        """Gets the line_list of this ShowTrendResponse.
+        r"""Gets the line_list of this ShowTrendResponse.
 
         趋势图数据列表。
 
@@ -62,7 +62,7 @@ class ShowTrendResponse(SdkResponse):
 
     @line_list.setter
     def line_list(self, line_list):
-        """Sets the line_list of this ShowTrendResponse.
+        r"""Sets the line_list of this ShowTrendResponse.
 
         趋势图数据列表。
 
@@ -73,7 +73,7 @@ class ShowTrendResponse(SdkResponse):
 
     @property
     def latest_data_time(self):
-        """Gets the latest_data_time of this ShowTrendResponse.
+        r"""Gets the latest_data_time of this ShowTrendResponse.
 
         最后日期时间。
 
@@ -84,7 +84,7 @@ class ShowTrendResponse(SdkResponse):
 
     @latest_data_time.setter
     def latest_data_time(self, latest_data_time):
-        """Sets the latest_data_time of this ShowTrendResponse.
+        r"""Sets the latest_data_time of this ShowTrendResponse.
 
         最后日期时间。
 

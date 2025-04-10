@@ -33,7 +33,7 @@ class ListRtcAbnormalEventDimensionRequest:
     }
 
     def __init__(self, app=None, room_id=None, dimension=None, start_time=None, end_time=None):
-        """ListRtcAbnormalEventDimensionRequest
+        r"""ListRtcAbnormalEventDimensionRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListRtcAbnormalEventDimensionRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListRtcAbnormalEventDimensionRequest.
+        r"""Gets the app of this ListRtcAbnormalEventDimensionRequest.
 
         应用ID 
 
@@ -81,7 +81,7 @@ class ListRtcAbnormalEventDimensionRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListRtcAbnormalEventDimensionRequest.
+        r"""Sets the app of this ListRtcAbnormalEventDimensionRequest.
 
         应用ID 
 
@@ -92,7 +92,7 @@ class ListRtcAbnormalEventDimensionRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this ListRtcAbnormalEventDimensionRequest.
+        r"""Gets the room_id of this ListRtcAbnormalEventDimensionRequest.
 
         房间ID 
 
@@ -103,7 +103,7 @@ class ListRtcAbnormalEventDimensionRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ListRtcAbnormalEventDimensionRequest.
+        r"""Sets the room_id of this ListRtcAbnormalEventDimensionRequest.
 
         房间ID 
 
@@ -114,7 +114,7 @@ class ListRtcAbnormalEventDimensionRequest:
 
     @property
     def dimension(self):
-        """Gets the dimension of this ListRtcAbnormalEventDimensionRequest.
+        r"""Gets the dimension of this ListRtcAbnormalEventDimensionRequest.
 
         分组类型，支持同时指定两种类型 - abnormal_type：异常类型 - abnormal_factor：异常因素 
 
@@ -125,7 +125,7 @@ class ListRtcAbnormalEventDimensionRequest:
 
     @dimension.setter
     def dimension(self, dimension):
-        """Sets the dimension of this ListRtcAbnormalEventDimensionRequest.
+        r"""Sets the dimension of this ListRtcAbnormalEventDimensionRequest.
 
         分组类型，支持同时指定两种类型 - abnormal_type：异常类型 - abnormal_factor：异常因素 
 
@@ -136,7 +136,7 @@ class ListRtcAbnormalEventDimensionRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListRtcAbnormalEventDimensionRequest.
+        r"""Gets the start_time of this ListRtcAbnormalEventDimensionRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不填写则默认读取过去1小时数据数据。 
 
@@ -147,7 +147,7 @@ class ListRtcAbnormalEventDimensionRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListRtcAbnormalEventDimensionRequest.
+        r"""Sets the start_time of this ListRtcAbnormalEventDimensionRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不填写则默认读取过去1小时数据数据。 
 
@@ -158,7 +158,7 @@ class ListRtcAbnormalEventDimensionRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListRtcAbnormalEventDimensionRequest.
+        r"""Gets the end_time of this ListRtcAbnormalEventDimensionRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，不填写则默认为当前时间。 
 
@@ -169,7 +169,7 @@ class ListRtcAbnormalEventDimensionRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListRtcAbnormalEventDimensionRequest.
+        r"""Sets the end_time of this ListRtcAbnormalEventDimensionRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，不填写则默认为当前时间。 
 

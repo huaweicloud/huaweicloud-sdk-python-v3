@@ -31,7 +31,7 @@ class UploadProcessJsonDetail:
     }
 
     def __init__(self, id=None, name=None, status=None, cause=None):
-        """UploadProcessJsonDetail
+        r"""UploadProcessJsonDetail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UploadProcessJsonDetail:
 
     @property
     def id(self):
-        """Gets the id of this UploadProcessJsonDetail.
+        r"""Gets the id of this UploadProcessJsonDetail.
 
         导入进度Id
 
@@ -75,7 +75,7 @@ class UploadProcessJsonDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UploadProcessJsonDetail.
+        r"""Sets the id of this UploadProcessJsonDetail.
 
         导入进度Id
 
@@ -86,7 +86,7 @@ class UploadProcessJsonDetail:
 
     @property
     def name(self):
-        """Gets the name of this UploadProcessJsonDetail.
+        r"""Gets the name of this UploadProcessJsonDetail.
 
         工程名称
 
@@ -97,7 +97,7 @@ class UploadProcessJsonDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UploadProcessJsonDetail.
+        r"""Sets the name of this UploadProcessJsonDetail.
 
         工程名称
 
@@ -108,7 +108,7 @@ class UploadProcessJsonDetail:
 
     @property
     def status(self):
-        """Gets the status of this UploadProcessJsonDetail.
+        r"""Gets the status of this UploadProcessJsonDetail.
 
         导入状态（0：导入中；1：成功；2：失败）
 
@@ -119,7 +119,7 @@ class UploadProcessJsonDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UploadProcessJsonDetail.
+        r"""Sets the status of this UploadProcessJsonDetail.
 
         导入状态（0：导入中；1：成功；2：失败）
 
@@ -130,7 +130,7 @@ class UploadProcessJsonDetail:
 
     @property
     def cause(self):
-        """Gets the cause of this UploadProcessJsonDetail.
+        r"""Gets the cause of this UploadProcessJsonDetail.
 
         失败原因
 
@@ -141,7 +141,7 @@ class UploadProcessJsonDetail:
 
     @cause.setter
     def cause(self, cause):
-        """Sets the cause of this UploadProcessJsonDetail.
+        r"""Sets the cause of this UploadProcessJsonDetail.
 
         失败原因
 

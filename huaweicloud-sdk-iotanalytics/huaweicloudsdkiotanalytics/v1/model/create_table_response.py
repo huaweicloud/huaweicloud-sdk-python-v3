@@ -50,7 +50,7 @@ class CreateTableResponse(SdkResponse):
     }
 
     def __init__(self, table_id=None, table_name=None, table_alias=None, created_time=None, modified_time=None, data_location=None, data_type=None, data_source=None, table_type=None, description=None, partition_columns=None, data_store_id=None, tags=None):
-        """CreateTableResponse
+        r"""CreateTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def table_id(self):
-        """Gets the table_id of this CreateTableResponse.
+        r"""Gets the table_id of this CreateTableResponse.
 
         表ID。
 
@@ -139,7 +139,7 @@ class CreateTableResponse(SdkResponse):
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this CreateTableResponse.
+        r"""Sets the table_id of this CreateTableResponse.
 
         表ID。
 
@@ -150,7 +150,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def table_name(self):
-        """Gets the table_name of this CreateTableResponse.
+        r"""Gets the table_name of this CreateTableResponse.
 
         表名称。
 
@@ -161,7 +161,7 @@ class CreateTableResponse(SdkResponse):
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this CreateTableResponse.
+        r"""Sets the table_name of this CreateTableResponse.
 
         表名称。
 
@@ -172,7 +172,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def table_alias(self):
-        """Gets the table_alias of this CreateTableResponse.
+        r"""Gets the table_alias of this CreateTableResponse.
 
         表别名。
 
@@ -183,7 +183,7 @@ class CreateTableResponse(SdkResponse):
 
     @table_alias.setter
     def table_alias(self, table_alias):
-        """Sets the table_alias of this CreateTableResponse.
+        r"""Sets the table_alias of this CreateTableResponse.
 
         表别名。
 
@@ -194,7 +194,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this CreateTableResponse.
+        r"""Gets the created_time of this CreateTableResponse.
 
         表创建时间。
 
@@ -205,7 +205,7 @@ class CreateTableResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CreateTableResponse.
+        r"""Sets the created_time of this CreateTableResponse.
 
         表创建时间。
 
@@ -216,7 +216,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this CreateTableResponse.
+        r"""Gets the modified_time of this CreateTableResponse.
 
         表更新时间。
 
@@ -227,7 +227,7 @@ class CreateTableResponse(SdkResponse):
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this CreateTableResponse.
+        r"""Sets the modified_time of this CreateTableResponse.
 
         表更新时间。
 
@@ -238,7 +238,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def data_location(self):
-        """Gets the data_location of this CreateTableResponse.
+        r"""Gets the data_location of this CreateTableResponse.
 
         数据存储位置，分为IoTA和VIEW
 
@@ -249,7 +249,7 @@ class CreateTableResponse(SdkResponse):
 
     @data_location.setter
     def data_location(self, data_location):
-        """Sets the data_location of this CreateTableResponse.
+        r"""Sets the data_location of this CreateTableResponse.
 
         数据存储位置，分为IoTA和VIEW
 
@@ -260,7 +260,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def data_type(self):
-        """Gets the data_type of this CreateTableResponse.
+        r"""Gets the data_type of this CreateTableResponse.
 
         数据类型，包括“csv”，“parquet”。
 
@@ -271,7 +271,7 @@ class CreateTableResponse(SdkResponse):
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this CreateTableResponse.
+        r"""Sets the data_type of this CreateTableResponse.
 
         数据类型，包括“csv”，“parquet”。
 
@@ -282,7 +282,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def data_source(self):
-        """Gets the data_source of this CreateTableResponse.
+        r"""Gets the data_source of this CreateTableResponse.
 
         数据来源。来源类型有：pipeline, default. 默认为default.
 
@@ -293,7 +293,7 @@ class CreateTableResponse(SdkResponse):
 
     @data_source.setter
     def data_source(self, data_source):
-        """Sets the data_source of this CreateTableResponse.
+        r"""Sets the data_source of this CreateTableResponse.
 
         数据来源。来源类型有：pipeline, default. 默认为default.
 
@@ -304,7 +304,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def table_type(self):
-        """Gets the table_type of this CreateTableResponse.
+        r"""Gets the table_type of this CreateTableResponse.
 
         表类型:IoTA表为MANAGED, View为VIEW
 
@@ -315,7 +315,7 @@ class CreateTableResponse(SdkResponse):
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this CreateTableResponse.
+        r"""Sets the table_type of this CreateTableResponse.
 
         表类型:IoTA表为MANAGED, View为VIEW
 
@@ -326,7 +326,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateTableResponse.
+        r"""Gets the description of this CreateTableResponse.
 
         表的描述信息。
 
@@ -337,7 +337,7 @@ class CreateTableResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateTableResponse.
+        r"""Sets the description of this CreateTableResponse.
 
         表的描述信息。
 
@@ -348,7 +348,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def partition_columns(self):
-        """Gets the partition_columns of this CreateTableResponse.
+        r"""Gets the partition_columns of this CreateTableResponse.
 
         分区字段。只有OBS分区表有该参数，其他表没有该参数。
 
@@ -359,7 +359,7 @@ class CreateTableResponse(SdkResponse):
 
     @partition_columns.setter
     def partition_columns(self, partition_columns):
-        """Sets the partition_columns of this CreateTableResponse.
+        r"""Sets the partition_columns of this CreateTableResponse.
 
         分区字段。只有OBS分区表有该参数，其他表没有该参数。
 
@@ -370,7 +370,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def data_store_id(self):
-        """Gets the data_store_id of this CreateTableResponse.
+        r"""Gets the data_store_id of this CreateTableResponse.
 
         仅当数据来源为pipeline时返回。Data Store ID.
 
@@ -381,7 +381,7 @@ class CreateTableResponse(SdkResponse):
 
     @data_store_id.setter
     def data_store_id(self, data_store_id):
-        """Sets the data_store_id of this CreateTableResponse.
+        r"""Sets the data_store_id of this CreateTableResponse.
 
         仅当数据来源为pipeline时返回。Data Store ID.
 
@@ -392,7 +392,7 @@ class CreateTableResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this CreateTableResponse.
+        r"""Gets the tags of this CreateTableResponse.
 
         标签。
 
@@ -403,7 +403,7 @@ class CreateTableResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateTableResponse.
+        r"""Sets the tags of this CreateTableResponse.
 
         标签。
 

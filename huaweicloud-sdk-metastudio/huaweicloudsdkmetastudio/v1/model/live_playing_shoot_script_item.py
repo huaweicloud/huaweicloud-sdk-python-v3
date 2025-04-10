@@ -29,7 +29,7 @@ class LivePlayingShootScriptItem:
     }
 
     def __init__(self, sequence_no=None, title=None, text=None):
-        """LivePlayingShootScriptItem
+        r"""LivePlayingShootScriptItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LivePlayingShootScriptItem:
 
     @property
     def sequence_no(self):
-        """Gets the sequence_no of this LivePlayingShootScriptItem.
+        r"""Gets the sequence_no of this LivePlayingShootScriptItem.
 
         剧本序号。
 
@@ -68,7 +68,7 @@ class LivePlayingShootScriptItem:
 
     @sequence_no.setter
     def sequence_no(self, sequence_no):
-        """Sets the sequence_no of this LivePlayingShootScriptItem.
+        r"""Sets the sequence_no of this LivePlayingShootScriptItem.
 
         剧本序号。
 
@@ -79,7 +79,7 @@ class LivePlayingShootScriptItem:
 
     @property
     def title(self):
-        """Gets the title of this LivePlayingShootScriptItem.
+        r"""Gets the title of this LivePlayingShootScriptItem.
 
         段落标题。
 
@@ -90,7 +90,7 @@ class LivePlayingShootScriptItem:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this LivePlayingShootScriptItem.
+        r"""Sets the title of this LivePlayingShootScriptItem.
 
         段落标题。
 
@@ -101,7 +101,7 @@ class LivePlayingShootScriptItem:
 
     @property
     def text(self):
-        """Gets the text of this LivePlayingShootScriptItem.
+        r"""Gets the text of this LivePlayingShootScriptItem.
 
         段落话术内容。
 
@@ -112,7 +112,7 @@ class LivePlayingShootScriptItem:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this LivePlayingShootScriptItem.
+        r"""Sets the text of this LivePlayingShootScriptItem.
 
         段落话术内容。
 

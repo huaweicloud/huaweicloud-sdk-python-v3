@@ -24,7 +24,7 @@ class SendCommandResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SendCommandResponse
+        r"""SendCommandResponse
 
         The model defined in huaweicloud sdk
 

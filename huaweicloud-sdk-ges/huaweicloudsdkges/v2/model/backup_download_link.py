@@ -31,7 +31,7 @@ class BackupDownloadLink:
     }
 
     def __init__(self, name=None, size=None, download_link=None, link_expired_time=None):
-        """BackupDownloadLink
+        r"""BackupDownloadLink
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class BackupDownloadLink:
 
     @property
     def name(self):
-        """Gets the name of this BackupDownloadLink.
+        r"""Gets the name of this BackupDownloadLink.
 
         文件名
 
@@ -71,7 +71,7 @@ class BackupDownloadLink:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BackupDownloadLink.
+        r"""Sets the name of this BackupDownloadLink.
 
         文件名
 
@@ -82,7 +82,7 @@ class BackupDownloadLink:
 
     @property
     def size(self):
-        """Gets the size of this BackupDownloadLink.
+        r"""Gets the size of this BackupDownloadLink.
 
         文件大小，单位：KB。
 
@@ -93,7 +93,7 @@ class BackupDownloadLink:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BackupDownloadLink.
+        r"""Sets the size of this BackupDownloadLink.
 
         文件大小，单位：KB。
 
@@ -104,7 +104,7 @@ class BackupDownloadLink:
 
     @property
     def download_link(self):
-        """Gets the download_link of this BackupDownloadLink.
+        r"""Gets the download_link of this BackupDownloadLink.
 
         文件下载链接。
 
@@ -115,7 +115,7 @@ class BackupDownloadLink:
 
     @download_link.setter
     def download_link(self, download_link):
-        """Sets the download_link of this BackupDownloadLink.
+        r"""Sets the download_link of this BackupDownloadLink.
 
         文件下载链接。
 
@@ -126,7 +126,7 @@ class BackupDownloadLink:
 
     @property
     def link_expired_time(self):
-        """Gets the link_expired_time of this BackupDownloadLink.
+        r"""Gets the link_expired_time of this BackupDownloadLink.
 
         下载链接过期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -137,7 +137,7 @@ class BackupDownloadLink:
 
     @link_expired_time.setter
     def link_expired_time(self, link_expired_time):
-        """Sets the link_expired_time of this BackupDownloadLink.
+        r"""Sets the link_expired_time of this BackupDownloadLink.
 
         下载链接过期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 

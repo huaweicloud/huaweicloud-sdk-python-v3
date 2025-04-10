@@ -55,7 +55,7 @@ class Task:
     }
 
     def __init__(self, job_id=None, id=None, type=None, assigned=None, task_name=None, engine_name=None, task_order=None, status=None, start_time=None, end_time=None, create_time=None, update_time=None, timeout=None, log=None, output=None, task_executor_brief=None):
-        """Task
+        r"""Task
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class Task:
 
     @property
     def job_id(self):
-        """Gets the job_id of this Task.
+        r"""Gets the job_id of this Task.
 
         子任务所属任务ID
 
@@ -159,7 +159,7 @@ class Task:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this Task.
+        r"""Sets the job_id of this Task.
 
         子任务所属任务ID
 
@@ -170,7 +170,7 @@ class Task:
 
     @property
     def id(self):
-        """Gets the id of this Task.
+        r"""Gets the id of this Task.
 
         子任务ID，使用uuid
 
@@ -181,7 +181,7 @@ class Task:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Task.
+        r"""Sets the id of this Task.
 
         子任务ID，使用uuid
 
@@ -192,7 +192,7 @@ class Task:
 
     @property
     def type(self):
-        """Gets the type of this Task.
+        r"""Gets the type of this Task.
 
         子任务的类型
 
@@ -203,7 +203,7 @@ class Task:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Task.
+        r"""Sets the type of this Task.
 
         子任务的类型
 
@@ -214,7 +214,7 @@ class Task:
 
     @property
     def assigned(self):
-        """Gets the assigned of this Task.
+        r"""Gets the assigned of this Task.
 
         子任务的执行者
 
@@ -225,7 +225,7 @@ class Task:
 
     @assigned.setter
     def assigned(self, assigned):
-        """Sets the assigned of this Task.
+        r"""Sets the assigned of this Task.
 
         子任务的执行者
 
@@ -236,7 +236,7 @@ class Task:
 
     @property
     def task_name(self):
-        """Gets the task_name of this Task.
+        r"""Gets the task_name of this Task.
 
         子任务名称
 
@@ -247,7 +247,7 @@ class Task:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this Task.
+        r"""Sets the task_name of this Task.
 
         子任务名称
 
@@ -258,7 +258,7 @@ class Task:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this Task.
+        r"""Gets the engine_name of this Task.
 
         子任务所属引擎名称
 
@@ -269,7 +269,7 @@ class Task:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this Task.
+        r"""Sets the engine_name of this Task.
 
         子任务所属引擎名称
 
@@ -280,7 +280,7 @@ class Task:
 
     @property
     def task_order(self):
-        """Gets the task_order of this Task.
+        r"""Gets the task_order of this Task.
 
         子任务执行的顺序, 从小到大
 
@@ -291,7 +291,7 @@ class Task:
 
     @task_order.setter
     def task_order(self, task_order):
-        """Sets the task_order of this Task.
+        r"""Sets the task_order of this Task.
 
         子任务执行的顺序, 从小到大
 
@@ -302,7 +302,7 @@ class Task:
 
     @property
     def status(self):
-        """Gets the status of this Task.
+        r"""Gets the status of this Task.
 
         子任务状态
 
@@ -313,7 +313,7 @@ class Task:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Task.
+        r"""Sets the status of this Task.
 
         子任务状态
 
@@ -324,7 +324,7 @@ class Task:
 
     @property
     def start_time(self):
-        """Gets the start_time of this Task.
+        r"""Gets the start_time of this Task.
 
         子任务开始时间
 
@@ -335,7 +335,7 @@ class Task:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this Task.
+        r"""Sets the start_time of this Task.
 
         子任务开始时间
 
@@ -346,7 +346,7 @@ class Task:
 
     @property
     def end_time(self):
-        """Gets the end_time of this Task.
+        r"""Gets the end_time of this Task.
 
         子任务结束时间
 
@@ -357,7 +357,7 @@ class Task:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this Task.
+        r"""Sets the end_time of this Task.
 
         子任务结束时间
 
@@ -368,7 +368,7 @@ class Task:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Task.
+        r"""Gets the create_time of this Task.
 
         子任务创建时间
 
@@ -379,7 +379,7 @@ class Task:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Task.
+        r"""Sets the create_time of this Task.
 
         子任务创建时间
 
@@ -390,7 +390,7 @@ class Task:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Task.
+        r"""Gets the update_time of this Task.
 
         子任务更新时间
 
@@ -401,7 +401,7 @@ class Task:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Task.
+        r"""Sets the update_time of this Task.
 
         子任务更新时间
 
@@ -412,7 +412,7 @@ class Task:
 
     @property
     def timeout(self):
-        """Gets the timeout of this Task.
+        r"""Gets the timeout of this Task.
 
         子任务是否超时
 
@@ -423,7 +423,7 @@ class Task:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this Task.
+        r"""Sets the timeout of this Task.
 
         子任务是否超时
 
@@ -434,7 +434,7 @@ class Task:
 
     @property
     def log(self):
-        """Gets the log of this Task.
+        r"""Gets the log of this Task.
 
         子任务详细信息，执行过程中产生的辅助信息
 
@@ -445,7 +445,7 @@ class Task:
 
     @log.setter
     def log(self, log):
-        """Sets the log of this Task.
+        r"""Sets the log of this Task.
 
         子任务详细信息，执行过程中产生的辅助信息
 
@@ -456,7 +456,7 @@ class Task:
 
     @property
     def output(self):
-        """Gets the output of this Task.
+        r"""Gets the output of this Task.
 
         子任务输出信息
 
@@ -467,7 +467,7 @@ class Task:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this Task.
+        r"""Sets the output of this Task.
 
         子任务输出信息
 
@@ -478,7 +478,7 @@ class Task:
 
     @property
     def task_executor_brief(self):
-        """Gets the task_executor_brief of this Task.
+        r"""Gets the task_executor_brief of this Task.
 
         :return: The task_executor_brief of this Task.
         :rtype: :class:`huaweicloudsdkcse.v1.TaskExecutorBrief`
@@ -487,7 +487,7 @@ class Task:
 
     @task_executor_brief.setter
     def task_executor_brief(self, task_executor_brief):
-        """Sets the task_executor_brief of this Task.
+        r"""Sets the task_executor_brief of this Task.
 
         :param task_executor_brief: The task_executor_brief of this Task.
         :type task_executor_brief: :class:`huaweicloudsdkcse.v1.TaskExecutorBrief`

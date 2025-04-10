@@ -35,7 +35,7 @@ class ListPolicyStatesByAssignmentIdRequest:
     }
 
     def __init__(self, policy_assignment_id=None, compliance_state=None, resource_id=None, resource_name=None, limit=None, marker=None):
-        """ListPolicyStatesByAssignmentIdRequest
+        r"""ListPolicyStatesByAssignmentIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListPolicyStatesByAssignmentIdRequest:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this ListPolicyStatesByAssignmentIdRequest.
+        r"""Gets the policy_assignment_id of this ListPolicyStatesByAssignmentIdRequest.
 
         规则ID
 
@@ -88,7 +88,7 @@ class ListPolicyStatesByAssignmentIdRequest:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this ListPolicyStatesByAssignmentIdRequest.
+        r"""Sets the policy_assignment_id of this ListPolicyStatesByAssignmentIdRequest.
 
         规则ID
 
@@ -99,7 +99,7 @@ class ListPolicyStatesByAssignmentIdRequest:
 
     @property
     def compliance_state(self):
-        """Gets the compliance_state of this ListPolicyStatesByAssignmentIdRequest.
+        r"""Gets the compliance_state of this ListPolicyStatesByAssignmentIdRequest.
 
         合规状态
 
@@ -110,7 +110,7 @@ class ListPolicyStatesByAssignmentIdRequest:
 
     @compliance_state.setter
     def compliance_state(self, compliance_state):
-        """Sets the compliance_state of this ListPolicyStatesByAssignmentIdRequest.
+        r"""Sets the compliance_state of this ListPolicyStatesByAssignmentIdRequest.
 
         合规状态
 
@@ -121,7 +121,7 @@ class ListPolicyStatesByAssignmentIdRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListPolicyStatesByAssignmentIdRequest.
+        r"""Gets the resource_id of this ListPolicyStatesByAssignmentIdRequest.
 
         资源ID
 
@@ -132,7 +132,7 @@ class ListPolicyStatesByAssignmentIdRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListPolicyStatesByAssignmentIdRequest.
+        r"""Sets the resource_id of this ListPolicyStatesByAssignmentIdRequest.
 
         资源ID
 
@@ -143,7 +143,7 @@ class ListPolicyStatesByAssignmentIdRequest:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ListPolicyStatesByAssignmentIdRequest.
+        r"""Gets the resource_name of this ListPolicyStatesByAssignmentIdRequest.
 
         资源名称
 
@@ -154,7 +154,7 @@ class ListPolicyStatesByAssignmentIdRequest:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ListPolicyStatesByAssignmentIdRequest.
+        r"""Sets the resource_name of this ListPolicyStatesByAssignmentIdRequest.
 
         资源名称
 
@@ -165,7 +165,7 @@ class ListPolicyStatesByAssignmentIdRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPolicyStatesByAssignmentIdRequest.
+        r"""Gets the limit of this ListPolicyStatesByAssignmentIdRequest.
 
         最大的返回数量
 
@@ -176,7 +176,7 @@ class ListPolicyStatesByAssignmentIdRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPolicyStatesByAssignmentIdRequest.
+        r"""Sets the limit of this ListPolicyStatesByAssignmentIdRequest.
 
         最大的返回数量
 
@@ -187,7 +187,7 @@ class ListPolicyStatesByAssignmentIdRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPolicyStatesByAssignmentIdRequest.
+        r"""Gets the marker of this ListPolicyStatesByAssignmentIdRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -198,7 +198,7 @@ class ListPolicyStatesByAssignmentIdRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPolicyStatesByAssignmentIdRequest.
+        r"""Sets the marker of this ListPolicyStatesByAssignmentIdRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 

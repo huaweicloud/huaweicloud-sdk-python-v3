@@ -27,7 +27,7 @@ class UpdateFuncSnapshotRequest:
     }
 
     def __init__(self, function_urn=None, action=None):
-        """UpdateFuncSnapshotRequest
+        r"""UpdateFuncSnapshotRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateFuncSnapshotRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this UpdateFuncSnapshotRequest.
+        r"""Gets the function_urn of this UpdateFuncSnapshotRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -59,7 +59,7 @@ class UpdateFuncSnapshotRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this UpdateFuncSnapshotRequest.
+        r"""Sets the function_urn of this UpdateFuncSnapshotRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -70,7 +70,7 @@ class UpdateFuncSnapshotRequest:
 
     @property
     def action(self):
-        """Gets the action of this UpdateFuncSnapshotRequest.
+        r"""Gets the action of this UpdateFuncSnapshotRequest.
 
         禁用/启用
 
@@ -81,7 +81,7 @@ class UpdateFuncSnapshotRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateFuncSnapshotRequest.
+        r"""Sets the action of this UpdateFuncSnapshotRequest.
 
         禁用/启用
 

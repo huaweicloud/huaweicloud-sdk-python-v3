@@ -31,7 +31,7 @@ class InspectResult:
     }
 
     def __init__(self, type=None, count_num=None, multiplicity=None, legal_rate=None):
-        """InspectResult
+        r"""InspectResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class InspectResult:
 
     @property
     def type(self):
-        """Gets the type of this InspectResult.
+        r"""Gets the type of this InspectResult.
 
         数据类型。
 
@@ -75,7 +75,7 @@ class InspectResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this InspectResult.
+        r"""Sets the type of this InspectResult.
 
         数据类型。
 
@@ -86,7 +86,7 @@ class InspectResult:
 
     @property
     def count_num(self):
-        """Gets the count_num of this InspectResult.
+        r"""Gets the count_num of this InspectResult.
 
         条目数。
 
@@ -97,7 +97,7 @@ class InspectResult:
 
     @count_num.setter
     def count_num(self, count_num):
-        """Sets the count_num of this InspectResult.
+        r"""Sets the count_num of this InspectResult.
 
         条目数。
 
@@ -108,7 +108,7 @@ class InspectResult:
 
     @property
     def multiplicity(self):
-        """Gets the multiplicity of this InspectResult.
+        r"""Gets the multiplicity of this InspectResult.
 
         重复读。
 
@@ -119,7 +119,7 @@ class InspectResult:
 
     @multiplicity.setter
     def multiplicity(self, multiplicity):
-        """Sets the multiplicity of this InspectResult.
+        r"""Sets the multiplicity of this InspectResult.
 
         重复读。
 
@@ -130,7 +130,7 @@ class InspectResult:
 
     @property
     def legal_rate(self):
-        """Gets the legal_rate of this InspectResult.
+        r"""Gets the legal_rate of this InspectResult.
 
         合法率。
 
@@ -141,7 +141,7 @@ class InspectResult:
 
     @legal_rate.setter
     def legal_rate(self, legal_rate):
-        """Sets the legal_rate of this InspectResult.
+        r"""Sets the legal_rate of this InspectResult.
 
         合法率。
 

@@ -25,7 +25,7 @@ class ShowVpnGatewayCertificateRequest:
     }
 
     def __init__(self, vgw_id=None):
-        """ShowVpnGatewayCertificateRequest
+        r"""ShowVpnGatewayCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowVpnGatewayCertificateRequest:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this ShowVpnGatewayCertificateRequest.
+        r"""Gets the vgw_id of this ShowVpnGatewayCertificateRequest.
 
         VPN网关实例ID
 
@@ -53,7 +53,7 @@ class ShowVpnGatewayCertificateRequest:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this ShowVpnGatewayCertificateRequest.
+        r"""Sets the vgw_id of this ShowVpnGatewayCertificateRequest.
 
         VPN网关实例ID
 

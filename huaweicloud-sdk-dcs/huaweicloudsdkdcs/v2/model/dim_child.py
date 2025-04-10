@@ -27,7 +27,7 @@ class DimChild:
     }
 
     def __init__(self, dim_name=None, dim_route=None):
-        """DimChild
+        r"""DimChild
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DimChild:
 
     @property
     def dim_name(self):
-        """Gets the dim_name of this DimChild.
+        r"""Gets the dim_name of this DimChild.
 
         维度名称，当前支持维度有dcs_instance_id、dcs_cluster_redis_node、 dcs_cluster_proxy_node和dcs_memcached_instance_id。
 
@@ -61,7 +61,7 @@ class DimChild:
 
     @dim_name.setter
     def dim_name(self, dim_name):
-        """Sets the dim_name of this DimChild.
+        r"""Sets the dim_name of this DimChild.
 
         维度名称，当前支持维度有dcs_instance_id、dcs_cluster_redis_node、 dcs_cluster_proxy_node和dcs_memcached_instance_id。
 
@@ -72,7 +72,7 @@ class DimChild:
 
     @property
     def dim_route(self):
-        """Gets the dim_route of this DimChild.
+        r"""Gets the dim_route of this DimChild.
 
         维度的路由，结构为主维度名称,当前维度名称，比如： dim_name字段为dcs_cluster_redis_node时，这个字段的值为dcs_instance_id,dcs_cluster_redis_node。
 
@@ -83,7 +83,7 @@ class DimChild:
 
     @dim_route.setter
     def dim_route(self, dim_route):
-        """Sets the dim_route of this DimChild.
+        r"""Sets the dim_route of this DimChild.
 
         维度的路由，结构为主维度名称,当前维度名称，比如： dim_name字段为dcs_cluster_redis_node时，这个字段的值为dcs_instance_id,dcs_cluster_redis_node。
 

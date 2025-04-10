@@ -26,7 +26,7 @@ class ShowOrganizationShareResponse(SdkResponse):
     }
 
     def __init__(self, enabled=None):
-        """ShowOrganizationShareResponse
+        r"""ShowOrganizationShareResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowOrganizationShareResponse(SdkResponse):
 
     @property
     def enabled(self):
-        """Gets the enabled of this ShowOrganizationShareResponse.
+        r"""Gets the enabled of this ShowOrganizationShareResponse.
 
         如果为\"true\"，则表示启用与组织的共享。默认为\"false\"。
 
@@ -55,7 +55,7 @@ class ShowOrganizationShareResponse(SdkResponse):
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ShowOrganizationShareResponse.
+        r"""Sets the enabled of this ShowOrganizationShareResponse.
 
         如果为\"true\"，则表示启用与组织的共享。默认为\"false\"。
 

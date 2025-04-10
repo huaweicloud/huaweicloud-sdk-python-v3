@@ -35,7 +35,7 @@ class ListVersionAliasResult:
     }
 
     def __init__(self, name=None, version=None, description=None, last_modified=None, alias_urn=None, additional_version_weights=None):
-        """ListVersionAliasResult
+        r"""ListVersionAliasResult
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class ListVersionAliasResult:
 
     @property
     def name(self):
-        """Gets the name of this ListVersionAliasResult.
+        r"""Gets the name of this ListVersionAliasResult.
 
         要获取的别名名称。
 
@@ -85,7 +85,7 @@ class ListVersionAliasResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListVersionAliasResult.
+        r"""Sets the name of this ListVersionAliasResult.
 
         要获取的别名名称。
 
@@ -96,7 +96,7 @@ class ListVersionAliasResult:
 
     @property
     def version(self):
-        """Gets the version of this ListVersionAliasResult.
+        r"""Gets the version of this ListVersionAliasResult.
 
         别名对应的版本名称。
 
@@ -107,7 +107,7 @@ class ListVersionAliasResult:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListVersionAliasResult.
+        r"""Sets the version of this ListVersionAliasResult.
 
         别名对应的版本名称。
 
@@ -118,7 +118,7 @@ class ListVersionAliasResult:
 
     @property
     def description(self):
-        """Gets the description of this ListVersionAliasResult.
+        r"""Gets the description of this ListVersionAliasResult.
 
         别名描述信息。
 
@@ -129,7 +129,7 @@ class ListVersionAliasResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListVersionAliasResult.
+        r"""Sets the description of this ListVersionAliasResult.
 
         别名描述信息。
 
@@ -140,7 +140,7 @@ class ListVersionAliasResult:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this ListVersionAliasResult.
+        r"""Gets the last_modified of this ListVersionAliasResult.
 
         别名最后修改时间。
 
@@ -151,7 +151,7 @@ class ListVersionAliasResult:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this ListVersionAliasResult.
+        r"""Sets the last_modified of this ListVersionAliasResult.
 
         别名最后修改时间。
 
@@ -162,7 +162,7 @@ class ListVersionAliasResult:
 
     @property
     def alias_urn(self):
-        """Gets the alias_urn of this ListVersionAliasResult.
+        r"""Gets the alias_urn of this ListVersionAliasResult.
 
         版本别名唯一标识。
 
@@ -173,7 +173,7 @@ class ListVersionAliasResult:
 
     @alias_urn.setter
     def alias_urn(self, alias_urn):
-        """Sets the alias_urn of this ListVersionAliasResult.
+        r"""Sets the alias_urn of this ListVersionAliasResult.
 
         版本别名唯一标识。
 
@@ -184,7 +184,7 @@ class ListVersionAliasResult:
 
     @property
     def additional_version_weights(self):
-        """Gets the additional_version_weights of this ListVersionAliasResult.
+        r"""Gets the additional_version_weights of this ListVersionAliasResult.
 
         灰度版本信息
 
@@ -195,7 +195,7 @@ class ListVersionAliasResult:
 
     @additional_version_weights.setter
     def additional_version_weights(self, additional_version_weights):
-        """Sets the additional_version_weights of this ListVersionAliasResult.
+        r"""Sets the additional_version_weights of this ListVersionAliasResult.
 
         灰度版本信息
 

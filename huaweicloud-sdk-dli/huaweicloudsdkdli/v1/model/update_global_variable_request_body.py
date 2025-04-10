@@ -25,7 +25,7 @@ class UpdateGlobalVariableRequestBody:
     }
 
     def __init__(self, var_value=None):
-        """UpdateGlobalVariableRequestBody
+        r"""UpdateGlobalVariableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateGlobalVariableRequestBody:
 
     @property
     def var_value(self):
-        """Gets the var_value of this UpdateGlobalVariableRequestBody.
+        r"""Gets the var_value of this UpdateGlobalVariableRequestBody.
 
         变量值
 
@@ -53,7 +53,7 @@ class UpdateGlobalVariableRequestBody:
 
     @var_value.setter
     def var_value(self, var_value):
-        """Sets the var_value of this UpdateGlobalVariableRequestBody.
+        r"""Sets the var_value of this UpdateGlobalVariableRequestBody.
 
         变量值
 

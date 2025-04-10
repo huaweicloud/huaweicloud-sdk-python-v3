@@ -27,7 +27,7 @@ class InputAudioSelector:
     }
 
     def __init__(self, name=None, selector_settings=None):
-        """InputAudioSelector
+        r"""InputAudioSelector
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class InputAudioSelector:
 
     @property
     def name(self):
-        """Gets the name of this InputAudioSelector.
+        r"""Gets the name of this InputAudioSelector.
 
         音频选择器的名称。仅支持大小写字母、数字、中划线和下划线。  同一个频道中每个选择器的名称需要唯一。
 
@@ -60,7 +60,7 @@ class InputAudioSelector:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InputAudioSelector.
+        r"""Sets the name of this InputAudioSelector.
 
         音频选择器的名称。仅支持大小写字母、数字、中划线和下划线。  同一个频道中每个选择器的名称需要唯一。
 
@@ -71,7 +71,7 @@ class InputAudioSelector:
 
     @property
     def selector_settings(self):
-        """Gets the selector_settings of this InputAudioSelector.
+        r"""Gets the selector_settings of this InputAudioSelector.
 
         :return: The selector_settings of this InputAudioSelector.
         :rtype: :class:`huaweicloudsdklive.v1.AudioSelectorSettings`
@@ -80,7 +80,7 @@ class InputAudioSelector:
 
     @selector_settings.setter
     def selector_settings(self, selector_settings):
-        """Sets the selector_settings of this InputAudioSelector.
+        r"""Sets the selector_settings of this InputAudioSelector.
 
         :param selector_settings: The selector_settings of this InputAudioSelector.
         :type selector_settings: :class:`huaweicloudsdklive.v1.AudioSelectorSettings`

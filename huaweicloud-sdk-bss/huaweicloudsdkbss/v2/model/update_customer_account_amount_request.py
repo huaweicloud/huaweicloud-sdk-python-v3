@@ -25,7 +25,7 @@ class UpdateCustomerAccountAmountRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateCustomerAccountAmountRequest
+        r"""UpdateCustomerAccountAmountRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateCustomerAccountAmountRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCustomerAccountAmountRequest.
+        r"""Gets the body of this UpdateCustomerAccountAmountRequest.
 
         :return: The body of this UpdateCustomerAccountAmountRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.AdjustAccountReq`
@@ -52,7 +52,7 @@ class UpdateCustomerAccountAmountRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCustomerAccountAmountRequest.
+        r"""Sets the body of this UpdateCustomerAccountAmountRequest.
 
         :param body: The body of this UpdateCustomerAccountAmountRequest.
         :type body: :class:`huaweicloudsdkbss.v2.AdjustAccountReq`

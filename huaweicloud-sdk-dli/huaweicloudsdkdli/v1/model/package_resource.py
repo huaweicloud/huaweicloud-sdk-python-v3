@@ -37,7 +37,7 @@ class PackageResource:
     }
 
     def __init__(self, create_time=None, update_time=None, resource_type=None, resource_name=None, status=None, underlying_name=None, owner=None):
-        """PackageResource
+        r"""PackageResource
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PackageResource:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PackageResource.
+        r"""Gets the create_time of this PackageResource.
 
         资源包上传的unix时间戳。
 
@@ -96,7 +96,7 @@ class PackageResource:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PackageResource.
+        r"""Sets the create_time of this PackageResource.
 
         资源包上传的unix时间戳。
 
@@ -107,7 +107,7 @@ class PackageResource:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PackageResource.
+        r"""Gets the update_time of this PackageResource.
 
         更新已上传资源包的unix时间戳。
 
@@ -118,7 +118,7 @@ class PackageResource:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PackageResource.
+        r"""Sets the update_time of this PackageResource.
 
         更新已上传资源包的unix时间戳。
 
@@ -129,7 +129,7 @@ class PackageResource:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this PackageResource.
+        r"""Gets the resource_type of this PackageResource.
 
         资源类型。
 
@@ -140,7 +140,7 @@ class PackageResource:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this PackageResource.
+        r"""Sets the resource_type of this PackageResource.
 
         资源类型。
 
@@ -151,7 +151,7 @@ class PackageResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this PackageResource.
+        r"""Gets the resource_name of this PackageResource.
 
         资源名。
 
@@ -162,7 +162,7 @@ class PackageResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this PackageResource.
+        r"""Sets the resource_name of this PackageResource.
 
         资源名。
 
@@ -173,7 +173,7 @@ class PackageResource:
 
     @property
     def status(self):
-        """Gets the status of this PackageResource.
+        r"""Gets the status of this PackageResource.
 
         \"UPLOADING\"表示正在上传。 \"READY\"表示资源包已上传 。 \"FAILED\"表示资源包上传失败。
 
@@ -184,7 +184,7 @@ class PackageResource:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PackageResource.
+        r"""Sets the status of this PackageResource.
 
         \"UPLOADING\"表示正在上传。 \"READY\"表示资源包已上传 。 \"FAILED\"表示资源包上传失败。
 
@@ -195,7 +195,7 @@ class PackageResource:
 
     @property
     def underlying_name(self):
-        """Gets the underlying_name of this PackageResource.
+        r"""Gets the underlying_name of this PackageResource.
 
         资源包在队列中的名字。
 
@@ -206,7 +206,7 @@ class PackageResource:
 
     @underlying_name.setter
     def underlying_name(self, underlying_name):
-        """Sets the underlying_name of this PackageResource.
+        r"""Sets the underlying_name of this PackageResource.
 
         资源包在队列中的名字。
 
@@ -217,7 +217,7 @@ class PackageResource:
 
     @property
     def owner(self):
-        """Gets the owner of this PackageResource.
+        r"""Gets the owner of this PackageResource.
 
         资源包拥有者。
 
@@ -228,7 +228,7 @@ class PackageResource:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this PackageResource.
+        r"""Sets the owner of this PackageResource.
 
         资源包拥有者。
 

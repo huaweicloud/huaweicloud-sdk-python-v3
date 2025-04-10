@@ -30,7 +30,7 @@ class CreateStaticRouteResponse(SdkResponse):
     }
 
     def __init__(self, route=None, request_id=None, x_client_token=None):
-        """CreateStaticRouteResponse
+        r"""CreateStaticRouteResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateStaticRouteResponse(SdkResponse):
 
     @property
     def route(self):
-        """Gets the route of this CreateStaticRouteResponse.
+        r"""Gets the route of this CreateStaticRouteResponse.
 
         :return: The route of this CreateStaticRouteResponse.
         :rtype: :class:`huaweicloudsdker.v3.Route`
@@ -67,7 +67,7 @@ class CreateStaticRouteResponse(SdkResponse):
 
     @route.setter
     def route(self, route):
-        """Sets the route of this CreateStaticRouteResponse.
+        r"""Sets the route of this CreateStaticRouteResponse.
 
         :param route: The route of this CreateStaticRouteResponse.
         :type route: :class:`huaweicloudsdker.v3.Route`
@@ -76,7 +76,7 @@ class CreateStaticRouteResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateStaticRouteResponse.
+        r"""Gets the request_id of this CreateStaticRouteResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class CreateStaticRouteResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateStaticRouteResponse.
+        r"""Sets the request_id of this CreateStaticRouteResponse.
 
         请求ID
 
@@ -98,7 +98,7 @@ class CreateStaticRouteResponse(SdkResponse):
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateStaticRouteResponse.
+        r"""Gets the x_client_token of this CreateStaticRouteResponse.
 
         :return: The x_client_token of this CreateStaticRouteResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateStaticRouteResponse(SdkResponse):
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateStaticRouteResponse.
+        r"""Sets the x_client_token of this CreateStaticRouteResponse.
 
         :param x_client_token: The x_client_token of this CreateStaticRouteResponse.
         :type x_client_token: str

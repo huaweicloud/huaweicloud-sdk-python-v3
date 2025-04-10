@@ -31,7 +31,7 @@ class TranscodeInfo:
     }
 
     def __init__(self, template_group_name=None, output=None, exec_desc=None, transcode_status=None):
-        """TranscodeInfo
+        r"""TranscodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class TranscodeInfo:
 
     @property
     def template_group_name(self):
-        """Gets the template_group_name of this TranscodeInfo.
+        r"""Gets the template_group_name of this TranscodeInfo.
 
         转码模板组名称。
 
@@ -73,7 +73,7 @@ class TranscodeInfo:
 
     @template_group_name.setter
     def template_group_name(self, template_group_name):
-        """Sets the template_group_name of this TranscodeInfo.
+        r"""Sets the template_group_name of this TranscodeInfo.
 
         转码模板组名称。
 
@@ -84,7 +84,7 @@ class TranscodeInfo:
 
     @property
     def output(self):
-        """Gets the output of this TranscodeInfo.
+        r"""Gets the output of this TranscodeInfo.
 
         转码输出数组。 - HLS或DASH格式：此数组的成员个数为n+1，n为转码输出路数。 - MP4格式：此数组的成员个数为n，n为转码输出路数。
 
@@ -95,7 +95,7 @@ class TranscodeInfo:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this TranscodeInfo.
+        r"""Sets the output of this TranscodeInfo.
 
         转码输出数组。 - HLS或DASH格式：此数组的成员个数为n+1，n为转码输出路数。 - MP4格式：此数组的成员个数为n，n为转码输出路数。
 
@@ -106,7 +106,7 @@ class TranscodeInfo:
 
     @property
     def exec_desc(self):
-        """Gets the exec_desc of this TranscodeInfo.
+        r"""Gets the exec_desc of this TranscodeInfo.
 
         执行情况描述。
 
@@ -117,7 +117,7 @@ class TranscodeInfo:
 
     @exec_desc.setter
     def exec_desc(self, exec_desc):
-        """Sets the exec_desc of this TranscodeInfo.
+        r"""Sets the exec_desc of this TranscodeInfo.
 
         执行情况描述。
 
@@ -128,7 +128,7 @@ class TranscodeInfo:
 
     @property
     def transcode_status(self):
-        """Gets the transcode_status of this TranscodeInfo.
+        r"""Gets the transcode_status of this TranscodeInfo.
 
         转码状态。  取值如下： - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败
 
@@ -139,7 +139,7 @@ class TranscodeInfo:
 
     @transcode_status.setter
     def transcode_status(self, transcode_status):
-        """Sets the transcode_status of this TranscodeInfo.
+        r"""Sets the transcode_status of this TranscodeInfo.
 
         转码状态。  取值如下： - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败
 

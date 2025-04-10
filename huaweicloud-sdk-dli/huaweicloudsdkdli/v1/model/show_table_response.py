@@ -44,7 +44,7 @@ class ShowTableResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, column_count=None, columns=None, table_type=None, data_type=None, data_location=None, storage_properties=None, table_comment=None, create_table_sql=None):
-        """ShowTableResponse
+        r"""ShowTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowTableResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowTableResponse.
+        r"""Gets the is_success of this ShowTableResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -118,7 +118,7 @@ class ShowTableResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowTableResponse.
+        r"""Sets the is_success of this ShowTableResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -129,7 +129,7 @@ class ShowTableResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowTableResponse.
+        r"""Gets the message of this ShowTableResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -140,7 +140,7 @@ class ShowTableResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowTableResponse.
+        r"""Sets the message of this ShowTableResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -151,7 +151,7 @@ class ShowTableResponse(SdkResponse):
 
     @property
     def column_count(self):
-        """Gets the column_count of this ShowTableResponse.
+        r"""Gets the column_count of this ShowTableResponse.
 
         表的总列数。
 
@@ -162,7 +162,7 @@ class ShowTableResponse(SdkResponse):
 
     @column_count.setter
     def column_count(self, column_count):
-        """Sets the column_count of this ShowTableResponse.
+        r"""Sets the column_count of this ShowTableResponse.
 
         表的总列数。
 
@@ -173,7 +173,7 @@ class ShowTableResponse(SdkResponse):
 
     @property
     def columns(self):
-        """Gets the columns of this ShowTableResponse.
+        r"""Gets the columns of this ShowTableResponse.
 
         表的列信息，包含列名称、类型和描述信息。
 
@@ -184,7 +184,7 @@ class ShowTableResponse(SdkResponse):
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this ShowTableResponse.
+        r"""Sets the columns of this ShowTableResponse.
 
         表的列信息，包含列名称、类型和描述信息。
 
@@ -195,7 +195,7 @@ class ShowTableResponse(SdkResponse):
 
     @property
     def table_type(self):
-        """Gets the table_type of this ShowTableResponse.
+        r"""Gets the table_type of this ShowTableResponse.
 
         表类型，包括“MANAGED”，“EXTERNAL”和“VIEW”。
 
@@ -206,7 +206,7 @@ class ShowTableResponse(SdkResponse):
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this ShowTableResponse.
+        r"""Sets the table_type of this ShowTableResponse.
 
         表类型，包括“MANAGED”，“EXTERNAL”和“VIEW”。
 
@@ -217,7 +217,7 @@ class ShowTableResponse(SdkResponse):
 
     @property
     def data_type(self):
-        """Gets the data_type of this ShowTableResponse.
+        r"""Gets the data_type of this ShowTableResponse.
 
         数据类型，包括“csv”，“parquet”，“orc”，“json”，“carbon”和“avro”。
 
@@ -228,7 +228,7 @@ class ShowTableResponse(SdkResponse):
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ShowTableResponse.
+        r"""Sets the data_type of this ShowTableResponse.
 
         数据类型，包括“csv”，“parquet”，“orc”，“json”，“carbon”和“avro”。
 
@@ -239,7 +239,7 @@ class ShowTableResponse(SdkResponse):
 
     @property
     def data_location(self):
-        """Gets the data_location of this ShowTableResponse.
+        r"""Gets the data_location of this ShowTableResponse.
 
         数据存储的路径，以“s3a”开头。
 
@@ -250,7 +250,7 @@ class ShowTableResponse(SdkResponse):
 
     @data_location.setter
     def data_location(self, data_location):
-        """Sets the data_location of this ShowTableResponse.
+        r"""Sets the data_location of this ShowTableResponse.
 
         数据存储的路径，以“s3a”开头。
 
@@ -261,7 +261,7 @@ class ShowTableResponse(SdkResponse):
 
     @property
     def storage_properties(self):
-        """Gets the storage_properties of this ShowTableResponse.
+        r"""Gets the storage_properties of this ShowTableResponse.
 
         存储属性，以“key/value”的格式出现，包含delimiter，escape，quote，header，dateformat，timestampformat参数。
 
@@ -272,7 +272,7 @@ class ShowTableResponse(SdkResponse):
 
     @storage_properties.setter
     def storage_properties(self, storage_properties):
-        """Sets the storage_properties of this ShowTableResponse.
+        r"""Sets the storage_properties of this ShowTableResponse.
 
         存储属性，以“key/value”的格式出现，包含delimiter，escape，quote，header，dateformat，timestampformat参数。
 
@@ -283,7 +283,7 @@ class ShowTableResponse(SdkResponse):
 
     @property
     def table_comment(self):
-        """Gets the table_comment of this ShowTableResponse.
+        r"""Gets the table_comment of this ShowTableResponse.
 
         表的注释。
 
@@ -294,7 +294,7 @@ class ShowTableResponse(SdkResponse):
 
     @table_comment.setter
     def table_comment(self, table_comment):
-        """Sets the table_comment of this ShowTableResponse.
+        r"""Sets the table_comment of this ShowTableResponse.
 
         表的注释。
 
@@ -305,7 +305,7 @@ class ShowTableResponse(SdkResponse):
 
     @property
     def create_table_sql(self):
-        """Gets the create_table_sql of this ShowTableResponse.
+        r"""Gets the create_table_sql of this ShowTableResponse.
 
         建表的语句
 
@@ -316,7 +316,7 @@ class ShowTableResponse(SdkResponse):
 
     @create_table_sql.setter
     def create_table_sql(self, create_table_sql):
-        """Sets the create_table_sql of this ShowTableResponse.
+        r"""Sets the create_table_sql of this ShowTableResponse.
 
         建表的语句
 

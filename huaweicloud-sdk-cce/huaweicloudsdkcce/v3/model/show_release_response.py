@@ -56,7 +56,7 @@ class ShowReleaseResponse(SdkResponse):
     }
 
     def __init__(self, chart_name=None, chart_public=None, chart_version=None, cluster_id=None, cluster_name=None, create_at=None, description=None, name=None, namespace=None, parameters=None, resources=None, status=None, status_description=None, update_at=None, values=None, version=None):
-        """ShowReleaseResponse
+        r"""ShowReleaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -149,7 +149,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def chart_name(self):
-        """Gets the chart_name of this ShowReleaseResponse.
+        r"""Gets the chart_name of this ShowReleaseResponse.
 
         模板名称
 
@@ -160,7 +160,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @chart_name.setter
     def chart_name(self, chart_name):
-        """Sets the chart_name of this ShowReleaseResponse.
+        r"""Sets the chart_name of this ShowReleaseResponse.
 
         模板名称
 
@@ -171,7 +171,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def chart_public(self):
-        """Gets the chart_public of this ShowReleaseResponse.
+        r"""Gets the chart_public of this ShowReleaseResponse.
 
         是否公开模板
 
@@ -182,7 +182,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @chart_public.setter
     def chart_public(self, chart_public):
-        """Sets the chart_public of this ShowReleaseResponse.
+        r"""Sets the chart_public of this ShowReleaseResponse.
 
         是否公开模板
 
@@ -193,7 +193,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def chart_version(self):
-        """Gets the chart_version of this ShowReleaseResponse.
+        r"""Gets the chart_version of this ShowReleaseResponse.
 
         模板版本
 
@@ -204,7 +204,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @chart_version.setter
     def chart_version(self, chart_version):
-        """Sets the chart_version of this ShowReleaseResponse.
+        r"""Sets the chart_version of this ShowReleaseResponse.
 
         模板版本
 
@@ -215,7 +215,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowReleaseResponse.
+        r"""Gets the cluster_id of this ShowReleaseResponse.
 
         集群ID
 
@@ -226,7 +226,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowReleaseResponse.
+        r"""Sets the cluster_id of this ShowReleaseResponse.
 
         集群ID
 
@@ -237,7 +237,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ShowReleaseResponse.
+        r"""Gets the cluster_name of this ShowReleaseResponse.
 
         集群名称
 
@@ -248,7 +248,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ShowReleaseResponse.
+        r"""Sets the cluster_name of this ShowReleaseResponse.
 
         集群名称
 
@@ -259,7 +259,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def create_at(self):
-        """Gets the create_at of this ShowReleaseResponse.
+        r"""Gets the create_at of this ShowReleaseResponse.
 
         创建时间
 
@@ -270,7 +270,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this ShowReleaseResponse.
+        r"""Sets the create_at of this ShowReleaseResponse.
 
         创建时间
 
@@ -281,7 +281,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowReleaseResponse.
+        r"""Gets the description of this ShowReleaseResponse.
 
         模板实例描述
 
@@ -292,7 +292,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowReleaseResponse.
+        r"""Sets the description of this ShowReleaseResponse.
 
         模板实例描述
 
@@ -303,7 +303,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowReleaseResponse.
+        r"""Gets the name of this ShowReleaseResponse.
 
         模板实例名称
 
@@ -314,7 +314,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowReleaseResponse.
+        r"""Sets the name of this ShowReleaseResponse.
 
         模板实例名称
 
@@ -325,7 +325,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def namespace(self):
-        """Gets the namespace of this ShowReleaseResponse.
+        r"""Gets the namespace of this ShowReleaseResponse.
 
         模板实例所在的命名空间
 
@@ -336,7 +336,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ShowReleaseResponse.
+        r"""Sets the namespace of this ShowReleaseResponse.
 
         模板实例所在的命名空间
 
@@ -347,7 +347,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def parameters(self):
-        """Gets the parameters of this ShowReleaseResponse.
+        r"""Gets the parameters of this ShowReleaseResponse.
 
         模板实例参数
 
@@ -358,7 +358,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ShowReleaseResponse.
+        r"""Sets the parameters of this ShowReleaseResponse.
 
         模板实例参数
 
@@ -369,7 +369,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ShowReleaseResponse.
+        r"""Gets the resources of this ShowReleaseResponse.
 
         模板实例需要的资源
 
@@ -380,7 +380,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowReleaseResponse.
+        r"""Sets the resources of this ShowReleaseResponse.
 
         模板实例需要的资源
 
@@ -391,7 +391,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowReleaseResponse.
+        r"""Gets the status of this ShowReleaseResponse.
 
         模板实例状态
 
@@ -402,7 +402,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowReleaseResponse.
+        r"""Sets the status of this ShowReleaseResponse.
 
         模板实例状态
 
@@ -413,7 +413,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def status_description(self):
-        """Gets the status_description of this ShowReleaseResponse.
+        r"""Gets the status_description of this ShowReleaseResponse.
 
         模板实例状态描述
 
@@ -424,7 +424,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @status_description.setter
     def status_description(self, status_description):
-        """Sets the status_description of this ShowReleaseResponse.
+        r"""Sets the status_description of this ShowReleaseResponse.
 
         模板实例状态描述
 
@@ -435,7 +435,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def update_at(self):
-        """Gets the update_at of this ShowReleaseResponse.
+        r"""Gets the update_at of this ShowReleaseResponse.
 
         更新时间
 
@@ -446,7 +446,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this ShowReleaseResponse.
+        r"""Sets the update_at of this ShowReleaseResponse.
 
         更新时间
 
@@ -457,7 +457,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this ShowReleaseResponse.
+        r"""Gets the values of this ShowReleaseResponse.
 
         模板实例的值
 
@@ -468,7 +468,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ShowReleaseResponse.
+        r"""Sets the values of this ShowReleaseResponse.
 
         模板实例的值
 
@@ -479,7 +479,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowReleaseResponse.
+        r"""Gets the version of this ShowReleaseResponse.
 
         模板实例版本
 
@@ -490,7 +490,7 @@ class ShowReleaseResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowReleaseResponse.
+        r"""Sets the version of this ShowReleaseResponse.
 
         模板实例版本
 

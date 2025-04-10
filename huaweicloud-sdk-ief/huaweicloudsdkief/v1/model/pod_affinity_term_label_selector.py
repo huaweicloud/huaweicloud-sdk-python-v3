@@ -27,7 +27,7 @@ class PodAffinityTermLabelSelector:
     }
 
     def __init__(self, match_expressions=None, match_labels=None):
-        """PodAffinityTermLabelSelector
+        r"""PodAffinityTermLabelSelector
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PodAffinityTermLabelSelector:
 
     @property
     def match_expressions(self):
-        """Gets the match_expressions of this PodAffinityTermLabelSelector.
+        r"""Gets the match_expressions of this PodAffinityTermLabelSelector.
 
         匹配规则表达式
 
@@ -61,7 +61,7 @@ class PodAffinityTermLabelSelector:
 
     @match_expressions.setter
     def match_expressions(self, match_expressions):
-        """Sets the match_expressions of this PodAffinityTermLabelSelector.
+        r"""Sets the match_expressions of this PodAffinityTermLabelSelector.
 
         匹配规则表达式
 
@@ -72,7 +72,7 @@ class PodAffinityTermLabelSelector:
 
     @property
     def match_labels(self):
-        """Gets the match_labels of this PodAffinityTermLabelSelector.
+        r"""Gets the match_labels of this PodAffinityTermLabelSelector.
 
         匹配的标签，格式为key:value键值对。 单个键值对相当于matchExpressions的一个元素，key字段为key，操作符为In，values数组中只有value。
 
@@ -83,7 +83,7 @@ class PodAffinityTermLabelSelector:
 
     @match_labels.setter
     def match_labels(self, match_labels):
-        """Sets the match_labels of this PodAffinityTermLabelSelector.
+        r"""Sets the match_labels of this PodAffinityTermLabelSelector.
 
         匹配的标签，格式为key:value键值对。 单个键值对相当于matchExpressions的一个元素，key字段为key，操作符为In，values数组中只有value。
 

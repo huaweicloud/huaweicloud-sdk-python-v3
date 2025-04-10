@@ -27,7 +27,7 @@ class CrossRegionTypeEnum:
     }
 
     def __init__(self):
-        """CrossRegionTypeEnum
+        r"""CrossRegionTypeEnum
 
         The model defined in huaweicloud sdk
 

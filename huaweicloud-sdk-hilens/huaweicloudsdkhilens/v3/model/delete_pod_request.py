@@ -29,7 +29,7 @@ class DeletePodRequest:
     }
 
     def __init__(self, deployment_id=None, force_delete=None, pod_id=None):
-        """DeletePodRequest
+        r"""DeletePodRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeletePodRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this DeletePodRequest.
+        r"""Gets the deployment_id of this DeletePodRequest.
 
         应用部署ID
 
@@ -66,7 +66,7 @@ class DeletePodRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this DeletePodRequest.
+        r"""Sets the deployment_id of this DeletePodRequest.
 
         应用部署ID
 
@@ -77,7 +77,7 @@ class DeletePodRequest:
 
     @property
     def force_delete(self):
-        """Gets the force_delete of this DeletePodRequest.
+        r"""Gets the force_delete of this DeletePodRequest.
 
         是否强制删除，为true的时候为强制删除
 
@@ -88,7 +88,7 @@ class DeletePodRequest:
 
     @force_delete.setter
     def force_delete(self, force_delete):
-        """Sets the force_delete of this DeletePodRequest.
+        r"""Sets the force_delete of this DeletePodRequest.
 
         是否强制删除，为true的时候为强制删除
 
@@ -99,7 +99,7 @@ class DeletePodRequest:
 
     @property
     def pod_id(self):
-        """Gets the pod_id of this DeletePodRequest.
+        r"""Gets the pod_id of this DeletePodRequest.
 
         实例ID
 
@@ -110,7 +110,7 @@ class DeletePodRequest:
 
     @pod_id.setter
     def pod_id(self, pod_id):
-        """Sets the pod_id of this DeletePodRequest.
+        r"""Sets the pod_id of this DeletePodRequest.
 
         实例ID
 

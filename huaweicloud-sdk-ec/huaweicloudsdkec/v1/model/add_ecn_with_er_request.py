@@ -27,7 +27,7 @@ class AddEcnWithErRequest:
     }
 
     def __init__(self, ecn_id=None, body=None):
-        """AddEcnWithErRequest
+        r"""AddEcnWithErRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddEcnWithErRequest:
 
     @property
     def ecn_id(self):
-        """Gets the ecn_id of this AddEcnWithErRequest.
+        r"""Gets the ecn_id of this AddEcnWithErRequest.
 
         企业连接网络ID
 
@@ -60,7 +60,7 @@ class AddEcnWithErRequest:
 
     @ecn_id.setter
     def ecn_id(self, ecn_id):
-        """Sets the ecn_id of this AddEcnWithErRequest.
+        r"""Sets the ecn_id of this AddEcnWithErRequest.
 
         企业连接网络ID
 
@@ -71,7 +71,7 @@ class AddEcnWithErRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddEcnWithErRequest.
+        r"""Gets the body of this AddEcnWithErRequest.
 
         :return: The body of this AddEcnWithErRequest.
         :rtype: :class:`huaweicloudsdkec.v1.EcnWithErRequest`
@@ -80,7 +80,7 @@ class AddEcnWithErRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddEcnWithErRequest.
+        r"""Sets the body of this AddEcnWithErRequest.
 
         :param body: The body of this AddEcnWithErRequest.
         :type body: :class:`huaweicloudsdkec.v1.EcnWithErRequest`

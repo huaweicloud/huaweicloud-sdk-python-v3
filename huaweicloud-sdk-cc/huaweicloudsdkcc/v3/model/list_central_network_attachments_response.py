@@ -30,7 +30,7 @@ class ListCentralNetworkAttachmentsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, central_network_attachments=None):
-        """ListCentralNetworkAttachmentsResponse
+        r"""ListCentralNetworkAttachmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListCentralNetworkAttachmentsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCentralNetworkAttachmentsResponse.
+        r"""Gets the request_id of this ListCentralNetworkAttachmentsResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListCentralNetworkAttachmentsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCentralNetworkAttachmentsResponse.
+        r"""Sets the request_id of this ListCentralNetworkAttachmentsResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListCentralNetworkAttachmentsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListCentralNetworkAttachmentsResponse.
+        r"""Gets the page_info of this ListCentralNetworkAttachmentsResponse.
 
         :return: The page_info of this ListCentralNetworkAttachmentsResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListCentralNetworkAttachmentsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListCentralNetworkAttachmentsResponse.
+        r"""Sets the page_info of this ListCentralNetworkAttachmentsResponse.
 
         :param page_info: The page_info of this ListCentralNetworkAttachmentsResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListCentralNetworkAttachmentsResponse(SdkResponse):
 
     @property
     def central_network_attachments(self):
-        """Gets the central_network_attachments of this ListCentralNetworkAttachmentsResponse.
+        r"""Gets the central_network_attachments of this ListCentralNetworkAttachmentsResponse.
 
         接入网络实例连接列表。
 
@@ -107,7 +107,7 @@ class ListCentralNetworkAttachmentsResponse(SdkResponse):
 
     @central_network_attachments.setter
     def central_network_attachments(self, central_network_attachments):
-        """Sets the central_network_attachments of this ListCentralNetworkAttachmentsResponse.
+        r"""Sets the central_network_attachments of this ListCentralNetworkAttachmentsResponse.
 
         接入网络实例连接列表。
 

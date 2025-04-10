@@ -50,7 +50,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
     }
 
     def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, type=None, dict_code=None, create_time=None, id=None, status=None, member_groups=None, microservice_info=None, members=None, vpc_health_config=None):
-        """ShowDetailsOfVpcChannelV2Response
+        r"""ShowDetailsOfVpcChannelV2Response
 
         The model defined in huaweicloud sdk
 
@@ -124,7 +124,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDetailsOfVpcChannelV2Response.
+        r"""Gets the name of this ShowDetailsOfVpcChannelV2Response.
 
         VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -135,7 +135,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDetailsOfVpcChannelV2Response.
+        r"""Sets the name of this ShowDetailsOfVpcChannelV2Response.
 
         VPC通道的名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、中划线、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -146,7 +146,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @property
     def port(self):
-        """Gets the port of this ShowDetailsOfVpcChannelV2Response.
+        r"""Gets the port of this ShowDetailsOfVpcChannelV2Response.
 
         VPC通道中主机的端口号。  取值范围1 ~ 65535。
 
@@ -157,7 +157,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ShowDetailsOfVpcChannelV2Response.
+        r"""Sets the port of this ShowDetailsOfVpcChannelV2Response.
 
         VPC通道中主机的端口号。  取值范围1 ~ 65535。
 
@@ -168,7 +168,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @property
     def balance_strategy(self):
-        """Gets the balance_strategy of this ShowDetailsOfVpcChannelV2Response.
+        r"""Gets the balance_strategy of this ShowDetailsOfVpcChannelV2Response.
 
         分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）
 
@@ -179,7 +179,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @balance_strategy.setter
     def balance_strategy(self, balance_strategy):
-        """Sets the balance_strategy of this ShowDetailsOfVpcChannelV2Response.
+        r"""Sets the balance_strategy of this ShowDetailsOfVpcChannelV2Response.
 
         分发算法。 - 1：加权轮询（wrr） - 2：加权最少连接（wleastconn） - 3：源地址哈希（source） - 4：URI哈希（uri）
 
@@ -190,7 +190,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @property
     def member_type(self):
-        """Gets the member_type of this ShowDetailsOfVpcChannelV2Response.
+        r"""Gets the member_type of this ShowDetailsOfVpcChannelV2Response.
 
         VPC通道的成员类型。[site场景必须修改成IP类型](tag:Site) - ip - ecs
 
@@ -201,7 +201,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @member_type.setter
     def member_type(self, member_type):
-        """Sets the member_type of this ShowDetailsOfVpcChannelV2Response.
+        r"""Sets the member_type of this ShowDetailsOfVpcChannelV2Response.
 
         VPC通道的成员类型。[site场景必须修改成IP类型](tag:Site) - ip - ecs
 
@@ -212,7 +212,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowDetailsOfVpcChannelV2Response.
+        r"""Gets the type of this ShowDetailsOfVpcChannelV2Response.
 
         vpc通道类型：[暂不支持](tag:Site)  [2：BUILTIN通道类型](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [3：微服务类型](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)
 
@@ -223,7 +223,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDetailsOfVpcChannelV2Response.
+        r"""Sets the type of this ShowDetailsOfVpcChannelV2Response.
 
         vpc通道类型：[暂不支持](tag:Site)  [2：BUILTIN通道类型](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [3：微服务类型](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)
 
@@ -234,7 +234,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @property
     def dict_code(self):
-        """Gets the dict_code of this ShowDetailsOfVpcChannelV2Response.
+        r"""Gets the dict_code of this ShowDetailsOfVpcChannelV2Response.
 
         VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
 
@@ -245,7 +245,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @dict_code.setter
     def dict_code(self, dict_code):
-        """Sets the dict_code of this ShowDetailsOfVpcChannelV2Response.
+        r"""Sets the dict_code of this ShowDetailsOfVpcChannelV2Response.
 
         VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
 
@@ -256,7 +256,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowDetailsOfVpcChannelV2Response.
+        r"""Gets the create_time of this ShowDetailsOfVpcChannelV2Response.
 
         VPC通道的创建时间
 
@@ -267,7 +267,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowDetailsOfVpcChannelV2Response.
+        r"""Sets the create_time of this ShowDetailsOfVpcChannelV2Response.
 
         VPC通道的创建时间
 
@@ -278,7 +278,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDetailsOfVpcChannelV2Response.
+        r"""Gets the id of this ShowDetailsOfVpcChannelV2Response.
 
         VPC通道的编号
 
@@ -289,7 +289,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDetailsOfVpcChannelV2Response.
+        r"""Sets the id of this ShowDetailsOfVpcChannelV2Response.
 
         VPC通道的编号
 
@@ -300,7 +300,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDetailsOfVpcChannelV2Response.
+        r"""Gets the status of this ShowDetailsOfVpcChannelV2Response.
 
         VPC通道的状态。 - 1：正常 - 2：异常
 
@@ -311,7 +311,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDetailsOfVpcChannelV2Response.
+        r"""Sets the status of this ShowDetailsOfVpcChannelV2Response.
 
         VPC通道的状态。 - 1：正常 - 2：异常
 
@@ -322,7 +322,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @property
     def member_groups(self):
-        """Gets the member_groups of this ShowDetailsOfVpcChannelV2Response.
+        r"""Gets the member_groups of this ShowDetailsOfVpcChannelV2Response.
 
         后端云服务器组列表。[暂不支持。](tag:Site)
 
@@ -333,7 +333,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @member_groups.setter
     def member_groups(self, member_groups):
-        """Sets the member_groups of this ShowDetailsOfVpcChannelV2Response.
+        r"""Sets the member_groups of this ShowDetailsOfVpcChannelV2Response.
 
         后端云服务器组列表。[暂不支持。](tag:Site)
 
@@ -344,7 +344,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @property
     def microservice_info(self):
-        """Gets the microservice_info of this ShowDetailsOfVpcChannelV2Response.
+        r"""Gets the microservice_info of this ShowDetailsOfVpcChannelV2Response.
 
         :return: The microservice_info of this ShowDetailsOfVpcChannelV2Response.
         :rtype: :class:`huaweicloudsdkroma.v2.MicroServiceInfo`
@@ -353,7 +353,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @microservice_info.setter
     def microservice_info(self, microservice_info):
-        """Sets the microservice_info of this ShowDetailsOfVpcChannelV2Response.
+        r"""Sets the microservice_info of this ShowDetailsOfVpcChannelV2Response.
 
         :param microservice_info: The microservice_info of this ShowDetailsOfVpcChannelV2Response.
         :type microservice_info: :class:`huaweicloudsdkroma.v2.MicroServiceInfo`
@@ -362,7 +362,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @property
     def members(self):
-        """Gets the members of this ShowDetailsOfVpcChannelV2Response.
+        r"""Gets the members of this ShowDetailsOfVpcChannelV2Response.
 
         后端实例列表。
 
@@ -373,7 +373,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @members.setter
     def members(self, members):
-        """Sets the members of this ShowDetailsOfVpcChannelV2Response.
+        r"""Sets the members of this ShowDetailsOfVpcChannelV2Response.
 
         后端实例列表。
 
@@ -384,7 +384,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @property
     def vpc_health_config(self):
-        """Gets the vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
+        r"""Gets the vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
 
         :return: The vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
         :rtype: :class:`huaweicloudsdkroma.v2.VpcHealthConfigInfo`
@@ -393,7 +393,7 @@ class ShowDetailsOfVpcChannelV2Response(SdkResponse):
 
     @vpc_health_config.setter
     def vpc_health_config(self, vpc_health_config):
-        """Sets the vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
+        r"""Sets the vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
 
         :param vpc_health_config: The vpc_health_config of this ShowDetailsOfVpcChannelV2Response.
         :type vpc_health_config: :class:`huaweicloudsdkroma.v2.VpcHealthConfigInfo`

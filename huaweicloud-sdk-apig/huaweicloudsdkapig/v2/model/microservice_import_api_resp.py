@@ -33,7 +33,7 @@ class MicroserviceImportApiResp:
     }
 
     def __init__(self, name=None, req_uri=None, req_method=None, id=None, match_mode=None):
-        """MicroserviceImportApiResp
+        r"""MicroserviceImportApiResp
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MicroserviceImportApiResp:
 
     @property
     def name(self):
-        """Gets the name of this MicroserviceImportApiResp.
+        r"""Gets the name of this MicroserviceImportApiResp.
 
         API名称
 
@@ -82,7 +82,7 @@ class MicroserviceImportApiResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MicroserviceImportApiResp.
+        r"""Sets the name of this MicroserviceImportApiResp.
 
         API名称
 
@@ -93,7 +93,7 @@ class MicroserviceImportApiResp:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this MicroserviceImportApiResp.
+        r"""Gets the req_uri of this MicroserviceImportApiResp.
 
         API请求路径
 
@@ -104,7 +104,7 @@ class MicroserviceImportApiResp:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this MicroserviceImportApiResp.
+        r"""Sets the req_uri of this MicroserviceImportApiResp.
 
         API请求路径
 
@@ -115,7 +115,7 @@ class MicroserviceImportApiResp:
 
     @property
     def req_method(self):
-        """Gets the req_method of this MicroserviceImportApiResp.
+        r"""Gets the req_method of this MicroserviceImportApiResp.
 
         API请求方法
 
@@ -126,7 +126,7 @@ class MicroserviceImportApiResp:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this MicroserviceImportApiResp.
+        r"""Sets the req_method of this MicroserviceImportApiResp.
 
         API请求方法
 
@@ -137,7 +137,7 @@ class MicroserviceImportApiResp:
 
     @property
     def id(self):
-        """Gets the id of this MicroserviceImportApiResp.
+        r"""Gets the id of this MicroserviceImportApiResp.
 
         API编号
 
@@ -148,7 +148,7 @@ class MicroserviceImportApiResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MicroserviceImportApiResp.
+        r"""Sets the id of this MicroserviceImportApiResp.
 
         API编号
 
@@ -159,7 +159,7 @@ class MicroserviceImportApiResp:
 
     @property
     def match_mode(self):
-        """Gets the match_mode of this MicroserviceImportApiResp.
+        r"""Gets the match_mode of this MicroserviceImportApiResp.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：SWA
 
@@ -170,7 +170,7 @@ class MicroserviceImportApiResp:
 
     @match_mode.setter
     def match_mode(self, match_mode):
-        """Sets the match_mode of this MicroserviceImportApiResp.
+        r"""Sets the match_mode of this MicroserviceImportApiResp.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：SWA
 

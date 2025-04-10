@@ -25,7 +25,7 @@ class StopJobRequest:
     }
 
     def __init__(self, body=None):
-        """StopJobRequest
+        r"""StopJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StopJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this StopJobRequest.
+        r"""Gets the body of this StopJobRequest.
 
         :return: The body of this StopJobRequest.
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.StopJobRequestBody`
@@ -52,7 +52,7 @@ class StopJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StopJobRequest.
+        r"""Sets the body of this StopJobRequest.
 
         :param body: The body of this StopJobRequest.
         :type body: :class:`huaweicloudsdkcodeartsbuild.v3.StopJobRequestBody`

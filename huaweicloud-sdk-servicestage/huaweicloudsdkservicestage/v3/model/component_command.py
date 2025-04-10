@@ -27,7 +27,7 @@ class ComponentCommand:
     }
 
     def __init__(self, command=None, args=None):
-        """ComponentCommand
+        r"""ComponentCommand
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ComponentCommand:
 
     @property
     def command(self):
-        """Gets the command of this ComponentCommand.
+        r"""Gets the command of this ComponentCommand.
 
         :return: The command of this ComponentCommand.
         :rtype: list[str]
@@ -59,7 +59,7 @@ class ComponentCommand:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ComponentCommand.
+        r"""Sets the command of this ComponentCommand.
 
         :param command: The command of this ComponentCommand.
         :type command: list[str]
@@ -68,7 +68,7 @@ class ComponentCommand:
 
     @property
     def args(self):
-        """Gets the args of this ComponentCommand.
+        r"""Gets the args of this ComponentCommand.
 
         :return: The args of this ComponentCommand.
         :rtype: list[str]
@@ -77,7 +77,7 @@ class ComponentCommand:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this ComponentCommand.
+        r"""Sets the args of this ComponentCommand.
 
         :param args: The args of this ComponentCommand.
         :type args: list[str]

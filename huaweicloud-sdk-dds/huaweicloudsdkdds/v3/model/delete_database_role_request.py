@@ -27,7 +27,7 @@ class DeleteDatabaseRoleRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """DeleteDatabaseRoleRequest
+        r"""DeleteDatabaseRoleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteDatabaseRoleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteDatabaseRoleRequest.
+        r"""Gets the instance_id of this DeleteDatabaseRoleRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -60,7 +60,7 @@ class DeleteDatabaseRoleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteDatabaseRoleRequest.
+        r"""Sets the instance_id of this DeleteDatabaseRoleRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -71,7 +71,7 @@ class DeleteDatabaseRoleRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteDatabaseRoleRequest.
+        r"""Gets the body of this DeleteDatabaseRoleRequest.
 
         :return: The body of this DeleteDatabaseRoleRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteDatabaseRoleRequestBody`
@@ -80,7 +80,7 @@ class DeleteDatabaseRoleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDatabaseRoleRequest.
+        r"""Sets the body of this DeleteDatabaseRoleRequest.
 
         :param body: The body of this DeleteDatabaseRoleRequest.
         :type body: :class:`huaweicloudsdkdds.v3.DeleteDatabaseRoleRequestBody`

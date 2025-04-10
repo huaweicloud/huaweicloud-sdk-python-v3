@@ -38,7 +38,7 @@ class ListDiagnoseJobResponse(SdkResponse):
     }
 
     def __init__(self, status=None, error_code=None, error_msg=None, job_id=None, domain_id=None, items_result=None, create_time=None):
-        """ListDiagnoseJobResponse
+        r"""ListDiagnoseJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ListDiagnoseJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListDiagnoseJobResponse.
+        r"""Gets the status of this ListDiagnoseJobResponse.
 
          任务执行的状态 0：准备中，2：执行中，3：完成，4：失败，7：未执行，8：不可用；用于判断任务的是否执行结束，3就是结束了，4,7,8说明是TSC诊断脚本有问题，OSM这边无法处理
 
@@ -97,7 +97,7 @@ class ListDiagnoseJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListDiagnoseJobResponse.
+        r"""Sets the status of this ListDiagnoseJobResponse.
 
          任务执行的状态 0：准备中，2：执行中，3：完成，4：失败，7：未执行，8：不可用；用于判断任务的是否执行结束，3就是结束了，4,7,8说明是TSC诊断脚本有问题，OSM这边无法处理
 
@@ -108,7 +108,7 @@ class ListDiagnoseJobResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListDiagnoseJobResponse.
+        r"""Gets the error_code of this ListDiagnoseJobResponse.
 
         错误码
 
@@ -119,7 +119,7 @@ class ListDiagnoseJobResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListDiagnoseJobResponse.
+        r"""Sets the error_code of this ListDiagnoseJobResponse.
 
         错误码
 
@@ -130,7 +130,7 @@ class ListDiagnoseJobResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListDiagnoseJobResponse.
+        r"""Gets the error_msg of this ListDiagnoseJobResponse.
 
         错误描述
 
@@ -141,7 +141,7 @@ class ListDiagnoseJobResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListDiagnoseJobResponse.
+        r"""Sets the error_msg of this ListDiagnoseJobResponse.
 
         错误描述
 
@@ -152,7 +152,7 @@ class ListDiagnoseJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListDiagnoseJobResponse.
+        r"""Gets the job_id of this ListDiagnoseJobResponse.
 
         任务ID
 
@@ -163,7 +163,7 @@ class ListDiagnoseJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListDiagnoseJobResponse.
+        r"""Sets the job_id of this ListDiagnoseJobResponse.
 
         任务ID
 
@@ -174,7 +174,7 @@ class ListDiagnoseJobResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListDiagnoseJobResponse.
+        r"""Gets the domain_id of this ListDiagnoseJobResponse.
 
         租户ID
 
@@ -185,7 +185,7 @@ class ListDiagnoseJobResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListDiagnoseJobResponse.
+        r"""Sets the domain_id of this ListDiagnoseJobResponse.
 
         租户ID
 
@@ -196,7 +196,7 @@ class ListDiagnoseJobResponse(SdkResponse):
 
     @property
     def items_result(self):
-        """Gets the items_result of this ListDiagnoseJobResponse.
+        r"""Gets the items_result of this ListDiagnoseJobResponse.
 
         任务的检查项结果
 
@@ -207,7 +207,7 @@ class ListDiagnoseJobResponse(SdkResponse):
 
     @items_result.setter
     def items_result(self, items_result):
-        """Sets the items_result of this ListDiagnoseJobResponse.
+        r"""Sets the items_result of this ListDiagnoseJobResponse.
 
         任务的检查项结果
 
@@ -218,7 +218,7 @@ class ListDiagnoseJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListDiagnoseJobResponse.
+        r"""Gets the create_time of this ListDiagnoseJobResponse.
 
         任务创建时间
 
@@ -229,7 +229,7 @@ class ListDiagnoseJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListDiagnoseJobResponse.
+        r"""Sets the create_time of this ListDiagnoseJobResponse.
 
         任务创建时间
 

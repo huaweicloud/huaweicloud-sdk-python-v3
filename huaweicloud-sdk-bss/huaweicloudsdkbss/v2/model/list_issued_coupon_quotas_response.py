@@ -28,7 +28,7 @@ class ListIssuedCouponQuotasResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, quotas=None):
-        """ListIssuedCouponQuotasResponse
+        r"""ListIssuedCouponQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListIssuedCouponQuotasResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListIssuedCouponQuotasResponse.
+        r"""Gets the total_count of this ListIssuedCouponQuotasResponse.
 
         查询的记录总数。
 
@@ -62,7 +62,7 @@ class ListIssuedCouponQuotasResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListIssuedCouponQuotasResponse.
+        r"""Sets the total_count of this ListIssuedCouponQuotasResponse.
 
         查询的记录总数。
 
@@ -73,7 +73,7 @@ class ListIssuedCouponQuotasResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ListIssuedCouponQuotasResponse.
+        r"""Gets the quotas of this ListIssuedCouponQuotasResponse.
 
         额度记录列表。 具体请参见表2。
 
@@ -84,7 +84,7 @@ class ListIssuedCouponQuotasResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ListIssuedCouponQuotasResponse.
+        r"""Sets the quotas of this ListIssuedCouponQuotasResponse.
 
         额度记录列表。 具体请参见表2。
 

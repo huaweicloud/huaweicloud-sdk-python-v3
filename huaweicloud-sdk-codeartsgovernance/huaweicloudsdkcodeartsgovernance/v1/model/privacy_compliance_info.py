@@ -27,7 +27,7 @@ class PrivacyComplianceInfo:
     }
 
     def __init__(self, category=None, subtype_list=None):
-        """PrivacyComplianceInfo
+        r"""PrivacyComplianceInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PrivacyComplianceInfo:
 
     @property
     def category(self):
-        """Gets the category of this PrivacyComplianceInfo.
+        r"""Gets the category of this PrivacyComplianceInfo.
 
         隐私合规类型
 
@@ -61,7 +61,7 @@ class PrivacyComplianceInfo:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this PrivacyComplianceInfo.
+        r"""Sets the category of this PrivacyComplianceInfo.
 
         隐私合规类型
 
@@ -72,7 +72,7 @@ class PrivacyComplianceInfo:
 
     @property
     def subtype_list(self):
-        """Gets the subtype_list of this PrivacyComplianceInfo.
+        r"""Gets the subtype_list of this PrivacyComplianceInfo.
 
         隐私合规子类型列表
 
@@ -83,7 +83,7 @@ class PrivacyComplianceInfo:
 
     @subtype_list.setter
     def subtype_list(self, subtype_list):
-        """Sets the subtype_list of this PrivacyComplianceInfo.
+        r"""Sets the subtype_list of this PrivacyComplianceInfo.
 
         隐私合规子类型列表
 

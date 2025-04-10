@@ -25,7 +25,7 @@ class StopSyncTaskRequest:
     }
 
     def __init__(self, sync_task_id=None):
-        """StopSyncTaskRequest
+        r"""StopSyncTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopSyncTaskRequest:
 
     @property
     def sync_task_id(self):
-        """Gets the sync_task_id of this StopSyncTaskRequest.
+        r"""Gets the sync_task_id of this StopSyncTaskRequest.
 
         同步任务ID。
 
@@ -53,7 +53,7 @@ class StopSyncTaskRequest:
 
     @sync_task_id.setter
     def sync_task_id(self, sync_task_id):
-        """Sets the sync_task_id of this StopSyncTaskRequest.
+        r"""Sets the sync_task_id of this StopSyncTaskRequest.
 
         同步任务ID。
 

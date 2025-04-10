@@ -25,7 +25,7 @@ class SwitchSSLRequest:
     }
 
     def __init__(self, ssl_option=None):
-        """SwitchSSLRequest
+        r"""SwitchSSLRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SwitchSSLRequest:
 
     @property
     def ssl_option(self):
-        """Gets the ssl_option of this SwitchSSLRequest.
+        r"""Gets the ssl_option of this SwitchSSLRequest.
 
         SSL数据加密开关设置。  - true: 开启SSL数据加密。 - false: 关闭SSL数据加密。
 
@@ -53,7 +53,7 @@ class SwitchSSLRequest:
 
     @ssl_option.setter
     def ssl_option(self, ssl_option):
-        """Sets the ssl_option of this SwitchSSLRequest.
+        r"""Sets the ssl_option of this SwitchSSLRequest.
 
         SSL数据加密开关设置。  - true: 开启SSL数据加密。 - false: 关闭SSL数据加密。
 

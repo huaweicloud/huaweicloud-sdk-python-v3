@@ -33,7 +33,7 @@ class ShowGlobalDcGatewayRequest:
     }
 
     def __init__(self, limit=None, fields=None, ext_fields=None, enterprise_project_id=None, global_dc_gateway_id=None):
-        """ShowGlobalDcGatewayRequest
+        r"""ShowGlobalDcGatewayRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ShowGlobalDcGatewayRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowGlobalDcGatewayRequest.
+        r"""Gets the limit of this ShowGlobalDcGatewayRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -81,7 +81,7 @@ class ShowGlobalDcGatewayRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowGlobalDcGatewayRequest.
+        r"""Sets the limit of this ShowGlobalDcGatewayRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -92,7 +92,7 @@ class ShowGlobalDcGatewayRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ShowGlobalDcGatewayRequest.
+        r"""Gets the fields of this ShowGlobalDcGatewayRequest.
 
         显示字段列表
 
@@ -103,7 +103,7 @@ class ShowGlobalDcGatewayRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ShowGlobalDcGatewayRequest.
+        r"""Sets the fields of this ShowGlobalDcGatewayRequest.
 
         显示字段列表
 
@@ -114,7 +114,7 @@ class ShowGlobalDcGatewayRequest:
 
     @property
     def ext_fields(self):
-        """Gets the ext_fields of this ShowGlobalDcGatewayRequest.
+        r"""Gets the ext_fields of this ShowGlobalDcGatewayRequest.
 
         show response ext-fields
 
@@ -125,7 +125,7 @@ class ShowGlobalDcGatewayRequest:
 
     @ext_fields.setter
     def ext_fields(self, ext_fields):
-        """Sets the ext_fields of this ShowGlobalDcGatewayRequest.
+        r"""Sets the ext_fields of this ShowGlobalDcGatewayRequest.
 
         show response ext-fields
 
@@ -136,7 +136,7 @@ class ShowGlobalDcGatewayRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowGlobalDcGatewayRequest.
+        r"""Gets the enterprise_project_id of this ShowGlobalDcGatewayRequest.
 
         根据企业项目ID过滤资源实例
 
@@ -147,7 +147,7 @@ class ShowGlobalDcGatewayRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowGlobalDcGatewayRequest.
+        r"""Sets the enterprise_project_id of this ShowGlobalDcGatewayRequest.
 
         根据企业项目ID过滤资源实例
 
@@ -158,7 +158,7 @@ class ShowGlobalDcGatewayRequest:
 
     @property
     def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this ShowGlobalDcGatewayRequest.
+        r"""Gets the global_dc_gateway_id of this ShowGlobalDcGatewayRequest.
 
         全域接入网关ID
 
@@ -169,7 +169,7 @@ class ShowGlobalDcGatewayRequest:
 
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this ShowGlobalDcGatewayRequest.
+        r"""Sets the global_dc_gateway_id of this ShowGlobalDcGatewayRequest.
 
         全域接入网关ID
 

@@ -25,7 +25,7 @@ class PublishAssetsRequest:
     }
 
     def __init__(self, body=None):
-        """PublishAssetsRequest
+        r"""PublishAssetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PublishAssetsRequest:
 
     @property
     def body(self):
-        """Gets the body of this PublishAssetsRequest.
+        r"""Gets the body of this PublishAssetsRequest.
 
         :return: The body of this PublishAssetsRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.PublishAssetReq`
@@ -52,7 +52,7 @@ class PublishAssetsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PublishAssetsRequest.
+        r"""Sets the body of this PublishAssetsRequest.
 
         :param body: The body of this PublishAssetsRequest.
         :type body: :class:`huaweicloudsdkvod.v1.PublishAssetReq`

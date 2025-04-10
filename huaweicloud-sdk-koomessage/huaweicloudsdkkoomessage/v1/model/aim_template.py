@@ -59,7 +59,7 @@ class AIMTemplate:
     }
 
     def __init__(self, tpl_id=None, tpl_name=None, scene=None, tpl_state=None, disable_desc=None, disable_time=None, audit_state=None, audit_desc=None, description=None, creation_time=None, update_time=None, pages=None, params=None, factory_info=None, match_type=None, card_id=None, sub_type=None, preview_url=None):
-        """AIMTemplate
+        r"""AIMTemplate
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class AIMTemplate:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this AIMTemplate.
+        r"""Gets the tpl_id of this AIMTemplate.
 
         智能信息模板ID。  > 智能信息平台生成的模板ID，由9位数字组成。 
 
@@ -173,7 +173,7 @@ class AIMTemplate:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this AIMTemplate.
+        r"""Sets the tpl_id of this AIMTemplate.
 
         智能信息模板ID。  > 智能信息平台生成的模板ID，由9位数字组成。 
 
@@ -184,7 +184,7 @@ class AIMTemplate:
 
     @property
     def tpl_name(self):
-        """Gets the tpl_name of this AIMTemplate.
+        r"""Gets the tpl_name of this AIMTemplate.
 
         智能信息模板名称。
 
@@ -195,7 +195,7 @@ class AIMTemplate:
 
     @tpl_name.setter
     def tpl_name(self, tpl_name):
-        """Sets the tpl_name of this AIMTemplate.
+        r"""Sets the tpl_name of this AIMTemplate.
 
         智能信息模板名称。
 
@@ -206,7 +206,7 @@ class AIMTemplate:
 
     @property
     def scene(self):
-        """Gets the scene of this AIMTemplate.
+        r"""Gets the scene of this AIMTemplate.
 
         场景类型。 
 
@@ -217,7 +217,7 @@ class AIMTemplate:
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this AIMTemplate.
+        r"""Sets the scene of this AIMTemplate.
 
         场景类型。 
 
@@ -228,7 +228,7 @@ class AIMTemplate:
 
     @property
     def tpl_state(self):
-        """Gets the tpl_state of this AIMTemplate.
+        r"""Gets the tpl_state of this AIMTemplate.
 
         模板状态。  - 0：禁用 - 1：启用 
 
@@ -239,7 +239,7 @@ class AIMTemplate:
 
     @tpl_state.setter
     def tpl_state(self, tpl_state):
-        """Sets the tpl_state of this AIMTemplate.
+        r"""Sets the tpl_state of this AIMTemplate.
 
         模板状态。  - 0：禁用 - 1：启用 
 
@@ -250,7 +250,7 @@ class AIMTemplate:
 
     @property
     def disable_desc(self):
-        """Gets the disable_desc of this AIMTemplate.
+        r"""Gets the disable_desc of this AIMTemplate.
 
         禁用原因。
 
@@ -261,7 +261,7 @@ class AIMTemplate:
 
     @disable_desc.setter
     def disable_desc(self, disable_desc):
-        """Sets the disable_desc of this AIMTemplate.
+        r"""Sets the disable_desc of this AIMTemplate.
 
         禁用原因。
 
@@ -272,7 +272,7 @@ class AIMTemplate:
 
     @property
     def disable_time(self):
-        """Gets the disable_time of this AIMTemplate.
+        r"""Gets the disable_time of this AIMTemplate.
 
         禁用时间。样例：1970-01-01T00:00 :00Z。
 
@@ -283,7 +283,7 @@ class AIMTemplate:
 
     @disable_time.setter
     def disable_time(self, disable_time):
-        """Sets the disable_time of this AIMTemplate.
+        r"""Sets the disable_time of this AIMTemplate.
 
         禁用时间。样例：1970-01-01T00:00 :00Z。
 
@@ -294,7 +294,7 @@ class AIMTemplate:
 
     @property
     def audit_state(self):
-        """Gets the audit_state of this AIMTemplate.
+        r"""Gets the audit_state of this AIMTemplate.
 
         审核状态。 - 0：未提交  - 1：审核中  - 2：审核通过  - 3：审核失败 
 
@@ -305,7 +305,7 @@ class AIMTemplate:
 
     @audit_state.setter
     def audit_state(self, audit_state):
-        """Sets the audit_state of this AIMTemplate.
+        r"""Sets the audit_state of this AIMTemplate.
 
         审核状态。 - 0：未提交  - 1：审核中  - 2：审核通过  - 3：审核失败 
 
@@ -316,7 +316,7 @@ class AIMTemplate:
 
     @property
     def audit_desc(self):
-        """Gets the audit_desc of this AIMTemplate.
+        r"""Gets the audit_desc of this AIMTemplate.
 
         审批信息。
 
@@ -327,7 +327,7 @@ class AIMTemplate:
 
     @audit_desc.setter
     def audit_desc(self, audit_desc):
-        """Sets the audit_desc of this AIMTemplate.
+        r"""Sets the audit_desc of this AIMTemplate.
 
         审批信息。
 
@@ -338,7 +338,7 @@ class AIMTemplate:
 
     @property
     def description(self):
-        """Gets the description of this AIMTemplate.
+        r"""Gets the description of this AIMTemplate.
 
         短信示例。  >对应创建个人模板API中的入参sms_example。 
 
@@ -349,7 +349,7 @@ class AIMTemplate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AIMTemplate.
+        r"""Sets the description of this AIMTemplate.
 
         短信示例。  >对应创建个人模板API中的入参sms_example。 
 
@@ -360,7 +360,7 @@ class AIMTemplate:
 
     @property
     def creation_time(self):
-        """Gets the creation_time of this AIMTemplate.
+        r"""Gets the creation_time of this AIMTemplate.
 
         创建时间。样例为：1970-01-01T00:00:00Z。
 
@@ -371,7 +371,7 @@ class AIMTemplate:
 
     @creation_time.setter
     def creation_time(self, creation_time):
-        """Sets the creation_time of this AIMTemplate.
+        r"""Sets the creation_time of this AIMTemplate.
 
         创建时间。样例为：1970-01-01T00:00:00Z。
 
@@ -382,7 +382,7 @@ class AIMTemplate:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AIMTemplate.
+        r"""Gets the update_time of this AIMTemplate.
 
         更新时间。样例为：1970-01-01T00:00:00Z。
 
@@ -393,7 +393,7 @@ class AIMTemplate:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AIMTemplate.
+        r"""Sets the update_time of this AIMTemplate.
 
         更新时间。样例为：1970-01-01T00:00:00Z。
 
@@ -404,7 +404,7 @@ class AIMTemplate:
 
     @property
     def pages(self):
-        """Gets the pages of this AIMTemplate.
+        r"""Gets the pages of this AIMTemplate.
 
         模板页面HTML，JSON格式。
 
@@ -415,7 +415,7 @@ class AIMTemplate:
 
     @pages.setter
     def pages(self, pages):
-        """Sets the pages of this AIMTemplate.
+        r"""Sets the pages of this AIMTemplate.
 
         模板页面HTML，JSON格式。
 
@@ -426,7 +426,7 @@ class AIMTemplate:
 
     @property
     def params(self):
-        """Gets the params of this AIMTemplate.
+        r"""Gets the params of this AIMTemplate.
 
         模板动态参数列表。
 
@@ -437,7 +437,7 @@ class AIMTemplate:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this AIMTemplate.
+        r"""Sets the params of this AIMTemplate.
 
         模板动态参数列表。
 
@@ -448,7 +448,7 @@ class AIMTemplate:
 
     @property
     def factory_info(self):
-        """Gets the factory_info of this AIMTemplate.
+        r"""Gets the factory_info of this AIMTemplate.
 
         支持厂商列表。
 
@@ -459,7 +459,7 @@ class AIMTemplate:
 
     @factory_info.setter
     def factory_info(self, factory_info):
-        """Sets the factory_info of this AIMTemplate.
+        r"""Sets the factory_info of this AIMTemplate.
 
         支持厂商列表。
 
@@ -470,7 +470,7 @@ class AIMTemplate:
 
     @property
     def match_type(self):
-        """Gets the match_type of this AIMTemplate.
+        r"""Gets the match_type of this AIMTemplate.
 
         审核状态。 - 1：短链解析模板 - 2：文本识别模板 - 4：一体化模板 
 
@@ -481,7 +481,7 @@ class AIMTemplate:
 
     @match_type.setter
     def match_type(self, match_type):
-        """Sets the match_type of this AIMTemplate.
+        r"""Sets the match_type of this AIMTemplate.
 
         审核状态。 - 1：短链解析模板 - 2：文本识别模板 - 4：一体化模板 
 
@@ -492,7 +492,7 @@ class AIMTemplate:
 
     @property
     def card_id(self):
-        """Gets the card_id of this AIMTemplate.
+        r"""Gets the card_id of this AIMTemplate.
 
         布局类型。
 
@@ -503,7 +503,7 @@ class AIMTemplate:
 
     @card_id.setter
     def card_id(self, card_id):
-        """Sets the card_id of this AIMTemplate.
+        r"""Sets the card_id of this AIMTemplate.
 
         布局类型。
 
@@ -514,7 +514,7 @@ class AIMTemplate:
 
     @property
     def sub_type(self):
-        """Gets the sub_type of this AIMTemplate.
+        r"""Gets the sub_type of this AIMTemplate.
 
         sub_type。
 
@@ -525,7 +525,7 @@ class AIMTemplate:
 
     @sub_type.setter
     def sub_type(self, sub_type):
-        """Sets the sub_type of this AIMTemplate.
+        r"""Sets the sub_type of this AIMTemplate.
 
         sub_type。
 
@@ -536,7 +536,7 @@ class AIMTemplate:
 
     @property
     def preview_url(self):
-        """Gets the preview_url of this AIMTemplate.
+        r"""Gets the preview_url of this AIMTemplate.
 
         模板二维码预览地址。
 
@@ -547,7 +547,7 @@ class AIMTemplate:
 
     @preview_url.setter
     def preview_url(self, preview_url):
-        """Sets the preview_url of this AIMTemplate.
+        r"""Sets the preview_url of this AIMTemplate.
 
         模板二维码预览地址。
 

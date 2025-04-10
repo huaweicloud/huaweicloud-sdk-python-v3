@@ -57,7 +57,7 @@ class RelatedCommitVo:
     }
 
     def __init__(self, id=None, iam_id=None, user_name=None, repository_id=None, type=None, user_id=None, branch_name=None, commit_id=None, commit_short_id=None, commit_msg=None, commit_url=None, commit_type=None, related_id=None, create_at=None, update_at=None, related_url=None, message=None):
-        """RelatedCommitVo
+        r"""RelatedCommitVo
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class RelatedCommitVo:
 
     @property
     def id(self):
-        """Gets the id of this RelatedCommitVo.
+        r"""Gets the id of this RelatedCommitVo.
 
         主键ID
 
@@ -166,7 +166,7 @@ class RelatedCommitVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RelatedCommitVo.
+        r"""Sets the id of this RelatedCommitVo.
 
         主键ID
 
@@ -177,7 +177,7 @@ class RelatedCommitVo:
 
     @property
     def iam_id(self):
-        """Gets the iam_id of this RelatedCommitVo.
+        r"""Gets the iam_id of this RelatedCommitVo.
 
         用户ID
 
@@ -188,7 +188,7 @@ class RelatedCommitVo:
 
     @iam_id.setter
     def iam_id(self, iam_id):
-        """Sets the iam_id of this RelatedCommitVo.
+        r"""Sets the iam_id of this RelatedCommitVo.
 
         用户ID
 
@@ -199,7 +199,7 @@ class RelatedCommitVo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this RelatedCommitVo.
+        r"""Gets the user_name of this RelatedCommitVo.
 
         用户名称
 
@@ -210,7 +210,7 @@ class RelatedCommitVo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this RelatedCommitVo.
+        r"""Sets the user_name of this RelatedCommitVo.
 
         用户名称
 
@@ -221,7 +221,7 @@ class RelatedCommitVo:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this RelatedCommitVo.
+        r"""Gets the repository_id of this RelatedCommitVo.
 
         仓库ID
 
@@ -232,7 +232,7 @@ class RelatedCommitVo:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this RelatedCommitVo.
+        r"""Sets the repository_id of this RelatedCommitVo.
 
         仓库ID
 
@@ -243,7 +243,7 @@ class RelatedCommitVo:
 
     @property
     def type(self):
-        """Gets the type of this RelatedCommitVo.
+        r"""Gets the type of this RelatedCommitVo.
 
         类型
 
@@ -254,7 +254,7 @@ class RelatedCommitVo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RelatedCommitVo.
+        r"""Sets the type of this RelatedCommitVo.
 
         类型
 
@@ -265,7 +265,7 @@ class RelatedCommitVo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this RelatedCommitVo.
+        r"""Gets the user_id of this RelatedCommitVo.
 
         用户ID
 
@@ -276,7 +276,7 @@ class RelatedCommitVo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this RelatedCommitVo.
+        r"""Sets the user_id of this RelatedCommitVo.
 
         用户ID
 
@@ -287,7 +287,7 @@ class RelatedCommitVo:
 
     @property
     def branch_name(self):
-        """Gets the branch_name of this RelatedCommitVo.
+        r"""Gets the branch_name of this RelatedCommitVo.
 
         分支名称
 
@@ -298,7 +298,7 @@ class RelatedCommitVo:
 
     @branch_name.setter
     def branch_name(self, branch_name):
-        """Sets the branch_name of this RelatedCommitVo.
+        r"""Sets the branch_name of this RelatedCommitVo.
 
         分支名称
 
@@ -309,7 +309,7 @@ class RelatedCommitVo:
 
     @property
     def commit_id(self):
-        """Gets the commit_id of this RelatedCommitVo.
+        r"""Gets the commit_id of this RelatedCommitVo.
 
         Commit ID
 
@@ -320,7 +320,7 @@ class RelatedCommitVo:
 
     @commit_id.setter
     def commit_id(self, commit_id):
-        """Sets the commit_id of this RelatedCommitVo.
+        r"""Sets the commit_id of this RelatedCommitVo.
 
         Commit ID
 
@@ -331,7 +331,7 @@ class RelatedCommitVo:
 
     @property
     def commit_short_id(self):
-        """Gets the commit_short_id of this RelatedCommitVo.
+        r"""Gets the commit_short_id of this RelatedCommitVo.
 
         Commit 短ID
 
@@ -342,7 +342,7 @@ class RelatedCommitVo:
 
     @commit_short_id.setter
     def commit_short_id(self, commit_short_id):
-        """Sets the commit_short_id of this RelatedCommitVo.
+        r"""Sets the commit_short_id of this RelatedCommitVo.
 
         Commit 短ID
 
@@ -353,7 +353,7 @@ class RelatedCommitVo:
 
     @property
     def commit_msg(self):
-        """Gets the commit_msg of this RelatedCommitVo.
+        r"""Gets the commit_msg of this RelatedCommitVo.
 
         提交信息
 
@@ -364,7 +364,7 @@ class RelatedCommitVo:
 
     @commit_msg.setter
     def commit_msg(self, commit_msg):
-        """Sets the commit_msg of this RelatedCommitVo.
+        r"""Sets the commit_msg of this RelatedCommitVo.
 
         提交信息
 
@@ -375,7 +375,7 @@ class RelatedCommitVo:
 
     @property
     def commit_url(self):
-        """Gets the commit_url of this RelatedCommitVo.
+        r"""Gets the commit_url of this RelatedCommitVo.
 
         提交URL
 
@@ -386,7 +386,7 @@ class RelatedCommitVo:
 
     @commit_url.setter
     def commit_url(self, commit_url):
-        """Sets the commit_url of this RelatedCommitVo.
+        r"""Sets the commit_url of this RelatedCommitVo.
 
         提交URL
 
@@ -397,7 +397,7 @@ class RelatedCommitVo:
 
     @property
     def commit_type(self):
-        """Gets the commit_type of this RelatedCommitVo.
+        r"""Gets the commit_type of this RelatedCommitVo.
 
         提交类型
 
@@ -408,7 +408,7 @@ class RelatedCommitVo:
 
     @commit_type.setter
     def commit_type(self, commit_type):
-        """Sets the commit_type of this RelatedCommitVo.
+        r"""Sets the commit_type of this RelatedCommitVo.
 
         提交类型
 
@@ -419,7 +419,7 @@ class RelatedCommitVo:
 
     @property
     def related_id(self):
-        """Gets the related_id of this RelatedCommitVo.
+        r"""Gets the related_id of this RelatedCommitVo.
 
         :return: The related_id of this RelatedCommitVo.
         :rtype: str
@@ -428,7 +428,7 @@ class RelatedCommitVo:
 
     @related_id.setter
     def related_id(self, related_id):
-        """Sets the related_id of this RelatedCommitVo.
+        r"""Sets the related_id of this RelatedCommitVo.
 
         :param related_id: The related_id of this RelatedCommitVo.
         :type related_id: str
@@ -437,7 +437,7 @@ class RelatedCommitVo:
 
     @property
     def create_at(self):
-        """Gets the create_at of this RelatedCommitVo.
+        r"""Gets the create_at of this RelatedCommitVo.
 
         创建时间
 
@@ -448,7 +448,7 @@ class RelatedCommitVo:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this RelatedCommitVo.
+        r"""Sets the create_at of this RelatedCommitVo.
 
         创建时间
 
@@ -459,7 +459,7 @@ class RelatedCommitVo:
 
     @property
     def update_at(self):
-        """Gets the update_at of this RelatedCommitVo.
+        r"""Gets the update_at of this RelatedCommitVo.
 
         更新时间
 
@@ -470,7 +470,7 @@ class RelatedCommitVo:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this RelatedCommitVo.
+        r"""Sets the update_at of this RelatedCommitVo.
 
         更新时间
 
@@ -481,7 +481,7 @@ class RelatedCommitVo:
 
     @property
     def related_url(self):
-        """Gets the related_url of this RelatedCommitVo.
+        r"""Gets the related_url of this RelatedCommitVo.
 
         :return: The related_url of this RelatedCommitVo.
         :rtype: str
@@ -490,7 +490,7 @@ class RelatedCommitVo:
 
     @related_url.setter
     def related_url(self, related_url):
-        """Sets the related_url of this RelatedCommitVo.
+        r"""Sets the related_url of this RelatedCommitVo.
 
         :param related_url: The related_url of this RelatedCommitVo.
         :type related_url: str
@@ -499,7 +499,7 @@ class RelatedCommitVo:
 
     @property
     def message(self):
-        """Gets the message of this RelatedCommitVo.
+        r"""Gets the message of this RelatedCommitVo.
 
         描述
 
@@ -510,7 +510,7 @@ class RelatedCommitVo:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this RelatedCommitVo.
+        r"""Sets the message of this RelatedCommitVo.
 
         描述
 

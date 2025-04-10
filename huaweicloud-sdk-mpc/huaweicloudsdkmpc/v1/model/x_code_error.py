@@ -27,7 +27,7 @@ class XCodeError:
     }
 
     def __init__(self, code=None, msg=None):
-        """XCodeError
+        r"""XCodeError
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class XCodeError:
 
     @property
     def code(self):
-        """Gets the code of this XCodeError.
+        r"""Gets the code of this XCodeError.
 
         错误码
 
@@ -61,7 +61,7 @@ class XCodeError:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this XCodeError.
+        r"""Sets the code of this XCodeError.
 
         错误码
 
@@ -72,7 +72,7 @@ class XCodeError:
 
     @property
     def msg(self):
-        """Gets the msg of this XCodeError.
+        r"""Gets the msg of this XCodeError.
 
         错误信息
 
@@ -83,7 +83,7 @@ class XCodeError:
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this XCodeError.
+        r"""Sets the msg of this XCodeError.
 
         错误信息
 

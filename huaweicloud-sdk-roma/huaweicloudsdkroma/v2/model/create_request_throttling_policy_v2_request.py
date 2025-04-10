@@ -27,7 +27,7 @@ class CreateRequestThrottlingPolicyV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateRequestThrottlingPolicyV2Request
+        r"""CreateRequestThrottlingPolicyV2Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateRequestThrottlingPolicyV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateRequestThrottlingPolicyV2Request.
+        r"""Gets the instance_id of this CreateRequestThrottlingPolicyV2Request.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateRequestThrottlingPolicyV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateRequestThrottlingPolicyV2Request.
+        r"""Sets the instance_id of this CreateRequestThrottlingPolicyV2Request.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateRequestThrottlingPolicyV2Request:
 
     @property
     def body(self):
-        """Gets the body of this CreateRequestThrottlingPolicyV2Request.
+        r"""Gets the body of this CreateRequestThrottlingPolicyV2Request.
 
         :return: The body of this CreateRequestThrottlingPolicyV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.ThrottleBaseInfo`
@@ -80,7 +80,7 @@ class CreateRequestThrottlingPolicyV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRequestThrottlingPolicyV2Request.
+        r"""Sets the body of this CreateRequestThrottlingPolicyV2Request.
 
         :param body: The body of this CreateRequestThrottlingPolicyV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.ThrottleBaseInfo`

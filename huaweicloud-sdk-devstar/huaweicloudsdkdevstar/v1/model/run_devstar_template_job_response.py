@@ -28,7 +28,7 @@ class RunDevstarTemplateJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, file_list=None):
-        """RunDevstarTemplateJobResponse
+        r"""RunDevstarTemplateJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RunDevstarTemplateJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RunDevstarTemplateJobResponse.
+        r"""Gets the job_id of this RunDevstarTemplateJobResponse.
 
         任务id。
 
@@ -62,7 +62,7 @@ class RunDevstarTemplateJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RunDevstarTemplateJobResponse.
+        r"""Sets the job_id of this RunDevstarTemplateJobResponse.
 
         任务id。
 
@@ -73,7 +73,7 @@ class RunDevstarTemplateJobResponse(SdkResponse):
 
     @property
     def file_list(self):
-        """Gets the file_list of this RunDevstarTemplateJobResponse.
+        r"""Gets the file_list of this RunDevstarTemplateJobResponse.
 
         文件列表。
 
@@ -84,7 +84,7 @@ class RunDevstarTemplateJobResponse(SdkResponse):
 
     @file_list.setter
     def file_list(self, file_list):
-        """Sets the file_list of this RunDevstarTemplateJobResponse.
+        r"""Sets the file_list of this RunDevstarTemplateJobResponse.
 
         文件列表。
 

@@ -29,7 +29,7 @@ class ObsBucket:
     }
 
     def __init__(self, bucket=None, creation_date=None, is_authorized=None):
-        """ObsBucket
+        r"""ObsBucket
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ObsBucket:
 
     @property
     def bucket(self):
-        """Gets the bucket of this ObsBucket.
+        r"""Gets the bucket of this ObsBucket.
 
         桶名称 
 
@@ -68,7 +68,7 @@ class ObsBucket:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ObsBucket.
+        r"""Sets the bucket of this ObsBucket.
 
         桶名称 
 
@@ -79,7 +79,7 @@ class ObsBucket:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this ObsBucket.
+        r"""Gets the creation_date of this ObsBucket.
 
         桶的创建时间 
 
@@ -90,7 +90,7 @@ class ObsBucket:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this ObsBucket.
+        r"""Sets the creation_date of this ObsBucket.
 
         桶的创建时间 
 
@@ -101,7 +101,7 @@ class ObsBucket:
 
     @property
     def is_authorized(self):
-        """Gets the is_authorized of this ObsBucket.
+        r"""Gets the is_authorized of this ObsBucket.
 
         授权结果，取值[0,1]，0表示未授权给转码服务，1表示已授权转码服务 
 
@@ -112,7 +112,7 @@ class ObsBucket:
 
     @is_authorized.setter
     def is_authorized(self, is_authorized):
-        """Sets the is_authorized of this ObsBucket.
+        r"""Sets the is_authorized of this ObsBucket.
 
         授权结果，取值[0,1]，0表示未授权给转码服务，1表示已授权转码服务 
 

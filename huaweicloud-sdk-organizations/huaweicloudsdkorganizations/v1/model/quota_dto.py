@@ -33,7 +33,7 @@ class QuotaDto:
     }
 
     def __init__(self, type=None, quota=None, min=None, max=None, used=None):
-        """QuotaDto
+        r"""QuotaDto
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class QuotaDto:
 
     @property
     def type(self):
-        """Gets the type of this QuotaDto.
+        r"""Gets the type of this QuotaDto.
 
         配额类型。account：账号；organizational_unit：组织单元；policy：策略。
 
@@ -77,7 +77,7 @@ class QuotaDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuotaDto.
+        r"""Sets the type of this QuotaDto.
 
         配额类型。account：账号；organizational_unit：组织单元；policy：策略。
 
@@ -88,7 +88,7 @@ class QuotaDto:
 
     @property
     def quota(self):
-        """Gets the quota of this QuotaDto.
+        r"""Gets the quota of this QuotaDto.
 
         配额数量。
 
@@ -99,7 +99,7 @@ class QuotaDto:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this QuotaDto.
+        r"""Sets the quota of this QuotaDto.
 
         配额数量。
 
@@ -110,7 +110,7 @@ class QuotaDto:
 
     @property
     def min(self):
-        """Gets the min of this QuotaDto.
+        r"""Gets the min of this QuotaDto.
 
         最小配额。
 
@@ -121,7 +121,7 @@ class QuotaDto:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this QuotaDto.
+        r"""Sets the min of this QuotaDto.
 
         最小配额。
 
@@ -132,7 +132,7 @@ class QuotaDto:
 
     @property
     def max(self):
-        """Gets the max of this QuotaDto.
+        r"""Gets the max of this QuotaDto.
 
         最大配额。
 
@@ -143,7 +143,7 @@ class QuotaDto:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this QuotaDto.
+        r"""Sets the max of this QuotaDto.
 
         最大配额。
 
@@ -154,7 +154,7 @@ class QuotaDto:
 
     @property
     def used(self):
-        """Gets the used of this QuotaDto.
+        r"""Gets the used of this QuotaDto.
 
         已使用数量。
 
@@ -165,7 +165,7 @@ class QuotaDto:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this QuotaDto.
+        r"""Sets the used of this QuotaDto.
 
         已使用数量。
 

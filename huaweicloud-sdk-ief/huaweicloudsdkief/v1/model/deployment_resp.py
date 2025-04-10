@@ -57,7 +57,7 @@ class DeploymentResp:
     }
 
     def __init__(self, id=None, name=None, replicas=None, ready_replicas=None, description=None, group_id=None, node_ids=None, tags=None, api_version=None, source=None, project_id=None, created_at=None, updated_at=None, template=None, state=None, source_id=None, annotations=None):
-        """DeploymentResp
+        r"""DeploymentResp
 
         The model defined in huaweicloud sdk
 
@@ -151,7 +151,7 @@ class DeploymentResp:
 
     @property
     def id(self):
-        """Gets the id of this DeploymentResp.
+        r"""Gets the id of this DeploymentResp.
 
         应用部署uuid
 
@@ -162,7 +162,7 @@ class DeploymentResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeploymentResp.
+        r"""Sets the id of this DeploymentResp.
 
         应用部署uuid
 
@@ -173,7 +173,7 @@ class DeploymentResp:
 
     @property
     def name(self):
-        """Gets the name of this DeploymentResp.
+        r"""Gets the name of this DeploymentResp.
 
         应用部署名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
@@ -184,7 +184,7 @@ class DeploymentResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeploymentResp.
+        r"""Sets the name of this DeploymentResp.
 
         应用部署名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
@@ -195,7 +195,7 @@ class DeploymentResp:
 
     @property
     def replicas(self):
-        """Gets the replicas of this DeploymentResp.
+        r"""Gets the replicas of this DeploymentResp.
 
         应用部署总副本数
 
@@ -206,7 +206,7 @@ class DeploymentResp:
 
     @replicas.setter
     def replicas(self, replicas):
-        """Sets the replicas of this DeploymentResp.
+        r"""Sets the replicas of this DeploymentResp.
 
         应用部署总副本数
 
@@ -217,7 +217,7 @@ class DeploymentResp:
 
     @property
     def ready_replicas(self):
-        """Gets the ready_replicas of this DeploymentResp.
+        r"""Gets the ready_replicas of this DeploymentResp.
 
         应用部署正常副本数
 
@@ -228,7 +228,7 @@ class DeploymentResp:
 
     @ready_replicas.setter
     def ready_replicas(self, ready_replicas):
-        """Sets the ready_replicas of this DeploymentResp.
+        r"""Sets the ready_replicas of this DeploymentResp.
 
         应用部署正常副本数
 
@@ -239,7 +239,7 @@ class DeploymentResp:
 
     @property
     def description(self):
-        """Gets the description of this DeploymentResp.
+        r"""Gets the description of this DeploymentResp.
 
         应用部署描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -250,7 +250,7 @@ class DeploymentResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeploymentResp.
+        r"""Sets the description of this DeploymentResp.
 
         应用部署描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -261,7 +261,7 @@ class DeploymentResp:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeploymentResp.
+        r"""Gets the group_id of this DeploymentResp.
 
         应用部署到指定节点组，与node_ids二选一
 
@@ -272,7 +272,7 @@ class DeploymentResp:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeploymentResp.
+        r"""Sets the group_id of this DeploymentResp.
 
         应用部署到指定节点组，与node_ids二选一
 
@@ -283,7 +283,7 @@ class DeploymentResp:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this DeploymentResp.
+        r"""Gets the node_ids of this DeploymentResp.
 
         应用部署到指定节点，当前只支持一个边缘节点
 
@@ -294,7 +294,7 @@ class DeploymentResp:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this DeploymentResp.
+        r"""Sets the node_ids of this DeploymentResp.
 
         应用部署到指定节点，当前只支持一个边缘节点
 
@@ -305,7 +305,7 @@ class DeploymentResp:
 
     @property
     def tags(self):
-        """Gets the tags of this DeploymentResp.
+        r"""Gets the tags of this DeploymentResp.
 
         节点属性
 
@@ -316,7 +316,7 @@ class DeploymentResp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this DeploymentResp.
+        r"""Sets the tags of this DeploymentResp.
 
         节点属性
 
@@ -327,7 +327,7 @@ class DeploymentResp:
 
     @property
     def api_version(self):
-        """Gets the api_version of this DeploymentResp.
+        r"""Gets the api_version of this DeploymentResp.
 
         应用部署版本
 
@@ -338,7 +338,7 @@ class DeploymentResp:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this DeploymentResp.
+        r"""Sets the api_version of this DeploymentResp.
 
         应用部署版本
 
@@ -349,7 +349,7 @@ class DeploymentResp:
 
     @property
     def source(self):
-        """Gets the source of this DeploymentResp.
+        r"""Gets the source of this DeploymentResp.
 
         应用部署来源：边缘市场（iem）或自定义（userdefined）
 
@@ -360,7 +360,7 @@ class DeploymentResp:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this DeploymentResp.
+        r"""Sets the source of this DeploymentResp.
 
         应用部署来源：边缘市场（iem）或自定义（userdefined）
 
@@ -371,7 +371,7 @@ class DeploymentResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeploymentResp.
+        r"""Gets the project_id of this DeploymentResp.
 
         项目ID
 
@@ -382,7 +382,7 @@ class DeploymentResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeploymentResp.
+        r"""Sets the project_id of this DeploymentResp.
 
         项目ID
 
@@ -393,7 +393,7 @@ class DeploymentResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this DeploymentResp.
+        r"""Gets the created_at of this DeploymentResp.
 
         应用部署创建时间
 
@@ -404,7 +404,7 @@ class DeploymentResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this DeploymentResp.
+        r"""Sets the created_at of this DeploymentResp.
 
         应用部署创建时间
 
@@ -415,7 +415,7 @@ class DeploymentResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this DeploymentResp.
+        r"""Gets the updated_at of this DeploymentResp.
 
         应用部署更新时间
 
@@ -426,7 +426,7 @@ class DeploymentResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this DeploymentResp.
+        r"""Sets the updated_at of this DeploymentResp.
 
         应用部署更新时间
 
@@ -437,7 +437,7 @@ class DeploymentResp:
 
     @property
     def template(self):
-        """Gets the template of this DeploymentResp.
+        r"""Gets the template of this DeploymentResp.
 
         :return: The template of this DeploymentResp.
         :rtype: :class:`huaweicloudsdkief.v1.PodRequest`
@@ -446,7 +446,7 @@ class DeploymentResp:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this DeploymentResp.
+        r"""Sets the template of this DeploymentResp.
 
         :param template: The template of this DeploymentResp.
         :type template: :class:`huaweicloudsdkief.v1.PodRequest`
@@ -455,7 +455,7 @@ class DeploymentResp:
 
     @property
     def state(self):
-        """Gets the state of this DeploymentResp.
+        r"""Gets the state of this DeploymentResp.
 
         应用状态，仅包括冻结（FREEZE）、删除中（PENDING_DELETE）、删除失败（DELETE_FAILED），保留字段
 
@@ -466,7 +466,7 @@ class DeploymentResp:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this DeploymentResp.
+        r"""Sets the state of this DeploymentResp.
 
         应用状态，仅包括冻结（FREEZE）、删除中（PENDING_DELETE）、删除失败（DELETE_FAILED），保留字段
 
@@ -477,7 +477,7 @@ class DeploymentResp:
 
     @property
     def source_id(self):
-        """Gets the source_id of this DeploymentResp.
+        r"""Gets the source_id of this DeploymentResp.
 
         预留字段
 
@@ -488,7 +488,7 @@ class DeploymentResp:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this DeploymentResp.
+        r"""Sets the source_id of this DeploymentResp.
 
         预留字段
 
@@ -499,7 +499,7 @@ class DeploymentResp:
 
     @property
     def annotations(self):
-        """Gets the annotations of this DeploymentResp.
+        r"""Gets the annotations of this DeploymentResp.
 
         :return: The annotations of this DeploymentResp.
         :rtype: :class:`huaweicloudsdkief.v1.Annotations`
@@ -508,7 +508,7 @@ class DeploymentResp:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this DeploymentResp.
+        r"""Sets the annotations of this DeploymentResp.
 
         :param annotations: The annotations of this DeploymentResp.
         :type annotations: :class:`huaweicloudsdkief.v1.Annotations`

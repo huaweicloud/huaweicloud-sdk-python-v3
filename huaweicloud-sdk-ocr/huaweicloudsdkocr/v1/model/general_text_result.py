@@ -29,7 +29,7 @@ class GeneralTextResult:
     }
 
     def __init__(self, direction=None, words_block_count=None, words_block_list=None):
-        """GeneralTextResult
+        r"""GeneralTextResult
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class GeneralTextResult:
 
     @property
     def direction(self):
-        """Gets the direction of this GeneralTextResult.
+        r"""Gets the direction of this GeneralTextResult.
 
         图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 359],保留四位小数。 当detect_direction为false时，该字段值为 -1。 
 
@@ -65,7 +65,7 @@ class GeneralTextResult:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this GeneralTextResult.
+        r"""Sets the direction of this GeneralTextResult.
 
         图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 359],保留四位小数。 当detect_direction为false时，该字段值为 -1。 
 
@@ -76,7 +76,7 @@ class GeneralTextResult:
 
     @property
     def words_block_count(self):
-        """Gets the words_block_count of this GeneralTextResult.
+        r"""Gets the words_block_count of this GeneralTextResult.
 
         识别文字块数目。 
 
@@ -87,7 +87,7 @@ class GeneralTextResult:
 
     @words_block_count.setter
     def words_block_count(self, words_block_count):
-        """Sets the words_block_count of this GeneralTextResult.
+        r"""Sets the words_block_count of this GeneralTextResult.
 
         识别文字块数目。 
 
@@ -98,7 +98,7 @@ class GeneralTextResult:
 
     @property
     def words_block_list(self):
-        """Gets the words_block_list of this GeneralTextResult.
+        r"""Gets the words_block_list of this GeneralTextResult.
 
         识别文字块列表，输出顺序从左到右，先上后下。 
 
@@ -109,7 +109,7 @@ class GeneralTextResult:
 
     @words_block_list.setter
     def words_block_list(self, words_block_list):
-        """Sets the words_block_list of this GeneralTextResult.
+        r"""Sets the words_block_list of this GeneralTextResult.
 
         识别文字块列表，输出顺序从左到右，先上后下。 
 

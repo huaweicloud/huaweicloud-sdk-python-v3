@@ -27,7 +27,7 @@ class RecordDownloadInfoBO:
     }
 
     def __init__(self, conf_uuid=None, urls=None):
-        """RecordDownloadInfoBO
+        r"""RecordDownloadInfoBO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RecordDownloadInfoBO:
 
     @property
     def conf_uuid(self):
-        """Gets the conf_uuid of this RecordDownloadInfoBO.
+        r"""Gets the conf_uuid of this RecordDownloadInfoBO.
 
         会议UUID。
 
@@ -61,7 +61,7 @@ class RecordDownloadInfoBO:
 
     @conf_uuid.setter
     def conf_uuid(self, conf_uuid):
-        """Sets the conf_uuid of this RecordDownloadInfoBO.
+        r"""Sets the conf_uuid of this RecordDownloadInfoBO.
 
         会议UUID。
 
@@ -72,7 +72,7 @@ class RecordDownloadInfoBO:
 
     @property
     def urls(self):
-        """Gets the urls of this RecordDownloadInfoBO.
+        r"""Gets the urls of this RecordDownloadInfoBO.
 
         下载链接信息。
 
@@ -83,7 +83,7 @@ class RecordDownloadInfoBO:
 
     @urls.setter
     def urls(self, urls):
-        """Sets the urls of this RecordDownloadInfoBO.
+        r"""Sets the urls of this RecordDownloadInfoBO.
 
         下载链接信息。
 

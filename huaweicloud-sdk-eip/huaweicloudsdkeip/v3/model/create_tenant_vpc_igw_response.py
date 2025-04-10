@@ -28,7 +28,7 @@ class CreateTenantVpcIgwResponse(SdkResponse):
     }
 
     def __init__(self, vpc_igw=None, request_id=None):
-        """CreateTenantVpcIgwResponse
+        r"""CreateTenantVpcIgwResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateTenantVpcIgwResponse(SdkResponse):
 
     @property
     def vpc_igw(self):
-        """Gets the vpc_igw of this CreateTenantVpcIgwResponse.
+        r"""Gets the vpc_igw of this CreateTenantVpcIgwResponse.
 
         :return: The vpc_igw of this CreateTenantVpcIgwResponse.
         :rtype: :class:`huaweicloudsdkeip.v3.VpcIgwsTenantResp`
@@ -60,7 +60,7 @@ class CreateTenantVpcIgwResponse(SdkResponse):
 
     @vpc_igw.setter
     def vpc_igw(self, vpc_igw):
-        """Sets the vpc_igw of this CreateTenantVpcIgwResponse.
+        r"""Sets the vpc_igw of this CreateTenantVpcIgwResponse.
 
         :param vpc_igw: The vpc_igw of this CreateTenantVpcIgwResponse.
         :type vpc_igw: :class:`huaweicloudsdkeip.v3.VpcIgwsTenantResp`
@@ -69,7 +69,7 @@ class CreateTenantVpcIgwResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateTenantVpcIgwResponse.
+        r"""Gets the request_id of this CreateTenantVpcIgwResponse.
 
         本次请求编号
 
@@ -80,7 +80,7 @@ class CreateTenantVpcIgwResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateTenantVpcIgwResponse.
+        r"""Sets the request_id of this CreateTenantVpcIgwResponse.
 
         本次请求编号
 

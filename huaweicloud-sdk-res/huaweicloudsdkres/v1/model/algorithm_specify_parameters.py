@@ -49,7 +49,7 @@ class AlgorithmSpecifyParameters:
     }
 
     def __init__(self, latent_vector_length=None, architecture=None, active_function=None, value_keep_probability=None, embed_size=None, mlp_architecture=None, max_order=None, hash_sizes=None, hash_compensation=None, use_wide_part=None, structure_optimizer=None, merge_multi_hot=None, fix_structure=None):
-        """AlgorithmSpecifyParameters
+        r"""AlgorithmSpecifyParameters
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class AlgorithmSpecifyParameters:
 
     @property
     def latent_vector_length(self):
-        """Gets the latent_vector_length of this AlgorithmSpecifyParameters.
+        r"""Gets the latent_vector_length of this AlgorithmSpecifyParameters.
 
         隐向量长度(DEEPFM需要提供此参数)。
 
@@ -138,7 +138,7 @@ class AlgorithmSpecifyParameters:
 
     @latent_vector_length.setter
     def latent_vector_length(self, latent_vector_length):
-        """Sets the latent_vector_length of this AlgorithmSpecifyParameters.
+        r"""Sets the latent_vector_length of this AlgorithmSpecifyParameters.
 
         隐向量长度(DEEPFM需要提供此参数)。
 
@@ -149,7 +149,7 @@ class AlgorithmSpecifyParameters:
 
     @property
     def architecture(self):
-        """Gets the architecture of this AlgorithmSpecifyParameters.
+        r"""Gets the architecture of this AlgorithmSpecifyParameters.
 
         神经网络结构(DEEPFM需要提供此参数)。
 
@@ -160,7 +160,7 @@ class AlgorithmSpecifyParameters:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this AlgorithmSpecifyParameters.
+        r"""Sets the architecture of this AlgorithmSpecifyParameters.
 
         神经网络结构(DEEPFM需要提供此参数)。
 
@@ -171,7 +171,7 @@ class AlgorithmSpecifyParameters:
 
     @property
     def active_function(self):
-        """Gets the active_function of this AlgorithmSpecifyParameters.
+        r"""Gets the active_function of this AlgorithmSpecifyParameters.
 
         激活函数(DEEPFM需要提供此参数,AutoGroup需要提供此参数)。
 
@@ -182,7 +182,7 @@ class AlgorithmSpecifyParameters:
 
     @active_function.setter
     def active_function(self, active_function):
-        """Sets the active_function of this AlgorithmSpecifyParameters.
+        r"""Sets the active_function of this AlgorithmSpecifyParameters.
 
         激活函数(DEEPFM需要提供此参数,AutoGroup需要提供此参数)。
 
@@ -193,7 +193,7 @@ class AlgorithmSpecifyParameters:
 
     @property
     def value_keep_probability(self):
-        """Gets the value_keep_probability of this AlgorithmSpecifyParameters.
+        r"""Gets the value_keep_probability of this AlgorithmSpecifyParameters.
 
         神经元值保留概率(DEEPFM需要提供此参数,AutoGroup需要提供此参数)。
 
@@ -204,7 +204,7 @@ class AlgorithmSpecifyParameters:
 
     @value_keep_probability.setter
     def value_keep_probability(self, value_keep_probability):
-        """Sets the value_keep_probability of this AlgorithmSpecifyParameters.
+        r"""Sets the value_keep_probability of this AlgorithmSpecifyParameters.
 
         神经元值保留概率(DEEPFM需要提供此参数,AutoGroup需要提供此参数)。
 
@@ -215,7 +215,7 @@ class AlgorithmSpecifyParameters:
 
     @property
     def embed_size(self):
-        """Gets the embed_size of this AlgorithmSpecifyParameters.
+        r"""Gets the embed_size of this AlgorithmSpecifyParameters.
 
         各阶隐向量长度(AutoGroup需要提供此参数)。
 
@@ -226,7 +226,7 @@ class AlgorithmSpecifyParameters:
 
     @embed_size.setter
     def embed_size(self, embed_size):
-        """Sets the embed_size of this AlgorithmSpecifyParameters.
+        r"""Sets the embed_size of this AlgorithmSpecifyParameters.
 
         各阶隐向量长度(AutoGroup需要提供此参数)。
 
@@ -237,7 +237,7 @@ class AlgorithmSpecifyParameters:
 
     @property
     def mlp_architecture(self):
-        """Gets the mlp_architecture of this AlgorithmSpecifyParameters.
+        r"""Gets the mlp_architecture of this AlgorithmSpecifyParameters.
 
         神经网络结构(AutoGroup需要提供此参数)。
 
@@ -248,7 +248,7 @@ class AlgorithmSpecifyParameters:
 
     @mlp_architecture.setter
     def mlp_architecture(self, mlp_architecture):
-        """Sets the mlp_architecture of this AlgorithmSpecifyParameters.
+        r"""Sets the mlp_architecture of this AlgorithmSpecifyParameters.
 
         神经网络结构(AutoGroup需要提供此参数)。
 
@@ -259,7 +259,7 @@ class AlgorithmSpecifyParameters:
 
     @property
     def max_order(self):
-        """Gets the max_order of this AlgorithmSpecifyParameters.
+        r"""Gets the max_order of this AlgorithmSpecifyParameters.
 
         最大交互阶数(AutoGroup需要提供此参数)。
 
@@ -270,7 +270,7 @@ class AlgorithmSpecifyParameters:
 
     @max_order.setter
     def max_order(self, max_order):
-        """Sets the max_order of this AlgorithmSpecifyParameters.
+        r"""Sets the max_order of this AlgorithmSpecifyParameters.
 
         最大交互阶数(AutoGroup需要提供此参数)。
 
@@ -281,7 +281,7 @@ class AlgorithmSpecifyParameters:
 
     @property
     def hash_sizes(self):
-        """Gets the hash_sizes of this AlgorithmSpecifyParameters.
+        r"""Gets the hash_sizes of this AlgorithmSpecifyParameters.
 
         哈希长度(AutoGroup需要提供此参数)。
 
@@ -292,7 +292,7 @@ class AlgorithmSpecifyParameters:
 
     @hash_sizes.setter
     def hash_sizes(self, hash_sizes):
-        """Sets the hash_sizes of this AlgorithmSpecifyParameters.
+        r"""Sets the hash_sizes of this AlgorithmSpecifyParameters.
 
         哈希长度(AutoGroup需要提供此参数)。
 
@@ -303,7 +303,7 @@ class AlgorithmSpecifyParameters:
 
     @property
     def hash_compensation(self):
-        """Gets the hash_compensation of this AlgorithmSpecifyParameters.
+        r"""Gets the hash_compensation of this AlgorithmSpecifyParameters.
 
         特征交互层惩罚项系数(AutoGroup需要提供此参数)。
 
@@ -314,7 +314,7 @@ class AlgorithmSpecifyParameters:
 
     @hash_compensation.setter
     def hash_compensation(self, hash_compensation):
-        """Sets the hash_compensation of this AlgorithmSpecifyParameters.
+        r"""Sets the hash_compensation of this AlgorithmSpecifyParameters.
 
         特征交互层惩罚项系数(AutoGroup需要提供此参数)。
 
@@ -325,7 +325,7 @@ class AlgorithmSpecifyParameters:
 
     @property
     def use_wide_part(self):
-        """Gets the use_wide_part of this AlgorithmSpecifyParameters.
+        r"""Gets the use_wide_part of this AlgorithmSpecifyParameters.
 
         使用线性部分(AutoGroup需要提供此参数)。
 
@@ -336,7 +336,7 @@ class AlgorithmSpecifyParameters:
 
     @use_wide_part.setter
     def use_wide_part(self, use_wide_part):
-        """Sets the use_wide_part of this AlgorithmSpecifyParameters.
+        r"""Sets the use_wide_part of this AlgorithmSpecifyParameters.
 
         使用线性部分(AutoGroup需要提供此参数)。
 
@@ -347,7 +347,7 @@ class AlgorithmSpecifyParameters:
 
     @property
     def structure_optimizer(self):
-        """Gets the structure_optimizer of this AlgorithmSpecifyParameters.
+        r"""Gets the structure_optimizer of this AlgorithmSpecifyParameters.
 
         :return: The structure_optimizer of this AlgorithmSpecifyParameters.
         :rtype: :class:`huaweicloudsdkres.v1.Optimizer`
@@ -356,7 +356,7 @@ class AlgorithmSpecifyParameters:
 
     @structure_optimizer.setter
     def structure_optimizer(self, structure_optimizer):
-        """Sets the structure_optimizer of this AlgorithmSpecifyParameters.
+        r"""Sets the structure_optimizer of this AlgorithmSpecifyParameters.
 
         :param structure_optimizer: The structure_optimizer of this AlgorithmSpecifyParameters.
         :type structure_optimizer: :class:`huaweicloudsdkres.v1.Optimizer`
@@ -365,7 +365,7 @@ class AlgorithmSpecifyParameters:
 
     @property
     def merge_multi_hot(self):
-        """Gets the merge_multi_hot of this AlgorithmSpecifyParameters.
+        r"""Gets the merge_multi_hot of this AlgorithmSpecifyParameters.
 
         融合多值特征(AutoGroup需要提供此参数)。
 
@@ -376,7 +376,7 @@ class AlgorithmSpecifyParameters:
 
     @merge_multi_hot.setter
     def merge_multi_hot(self, merge_multi_hot):
-        """Sets the merge_multi_hot of this AlgorithmSpecifyParameters.
+        r"""Sets the merge_multi_hot of this AlgorithmSpecifyParameters.
 
         融合多值特征(AutoGroup需要提供此参数)。
 
@@ -387,7 +387,7 @@ class AlgorithmSpecifyParameters:
 
     @property
     def fix_structure(self):
-        """Gets the fix_structure of this AlgorithmSpecifyParameters.
+        r"""Gets the fix_structure of this AlgorithmSpecifyParameters.
 
         固定哈希结构(AutoGroup需要提供此参数)。
 
@@ -398,7 +398,7 @@ class AlgorithmSpecifyParameters:
 
     @fix_structure.setter
     def fix_structure(self, fix_structure):
-        """Sets the fix_structure of this AlgorithmSpecifyParameters.
+        r"""Sets the fix_structure of this AlgorithmSpecifyParameters.
 
         固定哈希结构(AutoGroup需要提供此参数)。
 

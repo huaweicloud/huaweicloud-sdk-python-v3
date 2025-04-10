@@ -30,7 +30,7 @@ class ListInstanceDomainsResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, instance_name=None, domains=None):
-        """ListInstanceDomainsResponse
+        r"""ListInstanceDomainsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListInstanceDomainsResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceDomainsResponse.
+        r"""Gets the instance_id of this ListInstanceDomainsResponse.
 
         实例id
 
@@ -69,7 +69,7 @@ class ListInstanceDomainsResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceDomainsResponse.
+        r"""Sets the instance_id of this ListInstanceDomainsResponse.
 
         实例id
 
@@ -80,7 +80,7 @@ class ListInstanceDomainsResponse(SdkResponse):
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ListInstanceDomainsResponse.
+        r"""Gets the instance_name of this ListInstanceDomainsResponse.
 
         实例名称
 
@@ -91,7 +91,7 @@ class ListInstanceDomainsResponse(SdkResponse):
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ListInstanceDomainsResponse.
+        r"""Sets the instance_name of this ListInstanceDomainsResponse.
 
         实例名称
 
@@ -102,7 +102,7 @@ class ListInstanceDomainsResponse(SdkResponse):
 
     @property
     def domains(self):
-        """Gets the domains of this ListInstanceDomainsResponse.
+        r"""Gets the domains of this ListInstanceDomainsResponse.
 
         域名信息
 
@@ -113,7 +113,7 @@ class ListInstanceDomainsResponse(SdkResponse):
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this ListInstanceDomainsResponse.
+        r"""Sets the domains of this ListInstanceDomainsResponse.
 
         域名信息
 

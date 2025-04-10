@@ -31,7 +31,7 @@ class SecretDetail:
     }
 
     def __init__(self, name=None, type=None, description=None, secrets=None):
-        """SecretDetail
+        r"""SecretDetail
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class SecretDetail:
 
     @property
     def name(self):
-        """Gets the name of this SecretDetail.
+        r"""Gets the name of this SecretDetail.
 
         密钥名称，以小写英文字母开头，4-64位，可以使用小写英文、数字、中划线（-），不能以中划线结尾
 
@@ -73,7 +73,7 @@ class SecretDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SecretDetail.
+        r"""Sets the name of this SecretDetail.
 
         密钥名称，以小写英文字母开头，4-64位，可以使用小写英文、数字、中划线（-），不能以中划线结尾
 
@@ -84,7 +84,7 @@ class SecretDetail:
 
     @property
     def type(self):
-        """Gets the type of this SecretDetail.
+        r"""Gets the type of this SecretDetail.
 
         密钥类型，目前只支持“Opaque”类型
 
@@ -95,7 +95,7 @@ class SecretDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SecretDetail.
+        r"""Sets the type of this SecretDetail.
 
         密钥类型，目前只支持“Opaque”类型
 
@@ -106,7 +106,7 @@ class SecretDetail:
 
     @property
     def description(self):
-        """Gets the description of this SecretDetail.
+        r"""Gets the description of this SecretDetail.
 
         密钥描述,最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -117,7 +117,7 @@ class SecretDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SecretDetail.
+        r"""Sets the description of this SecretDetail.
 
         密钥描述,最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -128,7 +128,7 @@ class SecretDetail:
 
     @property
     def secrets(self):
-        """Gets the secrets of this SecretDetail.
+        r"""Gets the secrets of this SecretDetail.
 
         secrets是一个字典，由多个键值对组成，json化后最大总长度为1048576，key和value均为字符串。键值对中key由大小写字母或中划线开头，由数字、大小写字母、点号（.）、中划线（-）、下划线（_）组成，最小长度为1，最大长度63个字符， 键值对中的value必须为base64字符。 注：secrets字典的长度即字典转为标准的字符串后的长度，例如字典{\"a\": \"b\"}转为标准字符串后为'{\"a\": \"b\"}'，长度为10
 
@@ -139,7 +139,7 @@ class SecretDetail:
 
     @secrets.setter
     def secrets(self, secrets):
-        """Sets the secrets of this SecretDetail.
+        r"""Sets the secrets of this SecretDetail.
 
         secrets是一个字典，由多个键值对组成，json化后最大总长度为1048576，key和value均为字符串。键值对中key由大小写字母或中划线开头，由数字、大小写字母、点号（.）、中划线（-）、下划线（_）组成，最小长度为1，最大长度63个字符， 键值对中的value必须为base64字符。 注：secrets字典的长度即字典转为标准的字符串后的长度，例如字典{\"a\": \"b\"}转为标准字符串后为'{\"a\": \"b\"}'，长度为10
 

@@ -27,7 +27,7 @@ class ListHaResult:
     }
 
     def __init__(self, consistency=None, replication_mode=None):
-        """ListHaResult
+        r"""ListHaResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListHaResult:
 
     @property
     def consistency(self):
-        """Gets the consistency of this ListHaResult.
+        r"""Gets the consistency of this ListHaResult.
 
         数据库一致性类型，分布式模式实例仅有。取值为“strong”、“eventual”，分别表示强一致性、最终一致性。
 
@@ -59,7 +59,7 @@ class ListHaResult:
 
     @consistency.setter
     def consistency(self, consistency):
-        """Sets the consistency of this ListHaResult.
+        r"""Sets the consistency of this ListHaResult.
 
         数据库一致性类型，分布式模式实例仅有。取值为“strong”、“eventual”，分别表示强一致性、最终一致性。
 
@@ -70,7 +70,7 @@ class ListHaResult:
 
     @property
     def replication_mode(self):
-        """Gets the replication_mode of this ListHaResult.
+        r"""Gets the replication_mode of this ListHaResult.
 
         备机同步参数。  取值：非空。  GaussDB为 “sync” 说明： “sync”为同步模式。
 
@@ -81,7 +81,7 @@ class ListHaResult:
 
     @replication_mode.setter
     def replication_mode(self, replication_mode):
-        """Sets the replication_mode of this ListHaResult.
+        r"""Sets the replication_mode of this ListHaResult.
 
         备机同步参数。  取值：非空。  GaussDB为 “sync” 说明： “sync”为同步模式。
 

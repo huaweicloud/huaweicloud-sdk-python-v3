@@ -29,7 +29,7 @@ class CompatibleInstanceVolumeResp:
     }
 
     def __init__(self, type=None, used=None, size=None):
-        """CompatibleInstanceVolumeResp
+        r"""CompatibleInstanceVolumeResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CompatibleInstanceVolumeResp:
 
     @property
     def type(self):
-        """Gets the type of this CompatibleInstanceVolumeResp.
+        r"""Gets the type of this CompatibleInstanceVolumeResp.
 
         类型
 
@@ -68,7 +68,7 @@ class CompatibleInstanceVolumeResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CompatibleInstanceVolumeResp.
+        r"""Sets the type of this CompatibleInstanceVolumeResp.
 
         类型
 
@@ -79,7 +79,7 @@ class CompatibleInstanceVolumeResp:
 
     @property
     def used(self):
-        """Gets the used of this CompatibleInstanceVolumeResp.
+        r"""Gets the used of this CompatibleInstanceVolumeResp.
 
         连接
 
@@ -90,7 +90,7 @@ class CompatibleInstanceVolumeResp:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this CompatibleInstanceVolumeResp.
+        r"""Sets the used of this CompatibleInstanceVolumeResp.
 
         连接
 
@@ -101,7 +101,7 @@ class CompatibleInstanceVolumeResp:
 
     @property
     def size(self):
-        """Gets the size of this CompatibleInstanceVolumeResp.
+        r"""Gets the size of this CompatibleInstanceVolumeResp.
 
         大小
 
@@ -112,7 +112,7 @@ class CompatibleInstanceVolumeResp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CompatibleInstanceVolumeResp.
+        r"""Sets the size of this CompatibleInstanceVolumeResp.
 
         大小
 

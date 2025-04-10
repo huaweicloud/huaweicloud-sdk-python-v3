@@ -31,7 +31,7 @@ class ShowTargetsInDevicePolicyRequestBody:
     }
 
     def __init__(self, target_type=None, limit=None, marker=None, offset=None):
-        """ShowTargetsInDevicePolicyRequestBody
+        r"""ShowTargetsInDevicePolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowTargetsInDevicePolicyRequestBody:
 
     @property
     def target_type(self):
-        """Gets the target_type of this ShowTargetsInDevicePolicyRequestBody.
+        r"""Gets the target_type of this ShowTargetsInDevicePolicyRequestBody.
 
         **参数说明**：策略绑定的目标类型。 **取值范围**：device|product|app，device表示设备，product表示产品，app表示整个资源空间。
 
@@ -75,7 +75,7 @@ class ShowTargetsInDevicePolicyRequestBody:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this ShowTargetsInDevicePolicyRequestBody.
+        r"""Sets the target_type of this ShowTargetsInDevicePolicyRequestBody.
 
         **参数说明**：策略绑定的目标类型。 **取值范围**：device|product|app，device表示设备，product表示产品，app表示整个资源空间。
 
@@ -86,7 +86,7 @@ class ShowTargetsInDevicePolicyRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowTargetsInDevicePolicyRequestBody.
+        r"""Gets the limit of this ShowTargetsInDevicePolicyRequestBody.
 
         **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-50的整数，默认值为10。
 
@@ -97,7 +97,7 @@ class ShowTargetsInDevicePolicyRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowTargetsInDevicePolicyRequestBody.
+        r"""Sets the limit of this ShowTargetsInDevicePolicyRequestBody.
 
         **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-50的整数，默认值为10。
 
@@ -108,7 +108,7 @@ class ShowTargetsInDevicePolicyRequestBody:
 
     @property
     def marker(self):
-        """Gets the marker of this ShowTargetsInDevicePolicyRequestBody.
+        r"""Gets the marker of this ShowTargetsInDevicePolicyRequestBody.
 
         **参数说明**：上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。 **取值范围**：长度为24的十六进制字符串，默认值为ffffffffffffffffffffffff。
 
@@ -119,7 +119,7 @@ class ShowTargetsInDevicePolicyRequestBody:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ShowTargetsInDevicePolicyRequestBody.
+        r"""Sets the marker of this ShowTargetsInDevicePolicyRequestBody.
 
         **参数说明**：上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。 **取值范围**：长度为24的十六进制字符串，默认值为ffffffffffffffffffffffff。
 
@@ -130,7 +130,7 @@ class ShowTargetsInDevicePolicyRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowTargetsInDevicePolicyRequestBody.
+        r"""Gets the offset of this ShowTargetsInDevicePolicyRequestBody.
 
         **参数说明**：表示从marker后偏移offset条记录开始查询。默认为0，取值范围为0-500的整数。当offset为0时，表示从marker后第一条记录开始输出。限制offset最大值是出于API性能考虑，您可以搭配marker使用该参数实现翻页，例如每页50条记录，1-11页内都可以直接使用offset跳转到指定页，但到11页后，由于offset限制为500，您需要使用第11页返回的marker作为下次查询的marker，以实现翻页到12-22页。 **取值范围**：0-500的整数，默认为0。
 
@@ -141,7 +141,7 @@ class ShowTargetsInDevicePolicyRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowTargetsInDevicePolicyRequestBody.
+        r"""Sets the offset of this ShowTargetsInDevicePolicyRequestBody.
 
         **参数说明**：表示从marker后偏移offset条记录开始查询。默认为0，取值范围为0-500的整数。当offset为0时，表示从marker后第一条记录开始输出。限制offset最大值是出于API性能考虑，您可以搭配marker使用该参数实现翻页，例如每页50条记录，1-11页内都可以直接使用offset跳转到指定页，但到11页后，由于offset限制为500，您需要使用第11页返回的marker作为下次查询的marker，以实现翻页到12-22页。 **取值范围**：0-500的整数，默认为0。
 

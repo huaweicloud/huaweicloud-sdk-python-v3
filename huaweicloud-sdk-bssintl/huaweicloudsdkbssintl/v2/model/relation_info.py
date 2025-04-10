@@ -27,7 +27,7 @@ class RelationInfo:
     }
 
     def __init__(self, relative_resource_id=None, relative_type=None):
-        """RelationInfo
+        r"""RelationInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RelationInfo:
 
     @property
     def relative_resource_id(self):
-        """Gets the relative_resource_id of this RelationInfo.
+        r"""Gets the relative_resource_id of this RelationInfo.
 
         |参数名称：关联资源ID。| |参数约束及描述：关联资源ID。|
 
@@ -61,7 +61,7 @@ class RelationInfo:
 
     @relative_resource_id.setter
     def relative_resource_id(self, relative_resource_id):
-        """Sets the relative_resource_id of this RelationInfo.
+        r"""Sets the relative_resource_id of this RelationInfo.
 
         |参数名称：关联资源ID。| |参数约束及描述：关联资源ID。|
 
@@ -72,7 +72,7 @@ class RelationInfo:
 
     @property
     def relative_type(self):
-        """Gets the relative_type of this RelationInfo.
+        r"""Gets the relative_type of this RelationInfo.
 
         |参数名称：关联资源类型。| |参数约束及描述：关联资源类型，父资源：PARENT；根资源：ROOT|
 
@@ -83,7 +83,7 @@ class RelationInfo:
 
     @relative_type.setter
     def relative_type(self, relative_type):
-        """Sets the relative_type of this RelationInfo.
+        r"""Sets the relative_type of this RelationInfo.
 
         |参数名称：关联资源类型。| |参数约束及描述：关联资源类型，父资源：PARENT；根资源：ROOT|
 

@@ -26,7 +26,7 @@ class CreateDesignDimensionResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """CreateDesignDimensionResponse
+        r"""CreateDesignDimensionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDesignDimensionResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateDesignDimensionResponse.
+        r"""Gets the data of this CreateDesignDimensionResponse.
 
         :return: The data of this CreateDesignDimensionResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowDimensionByIdResultData`
@@ -53,7 +53,7 @@ class CreateDesignDimensionResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateDesignDimensionResponse.
+        r"""Sets the data of this CreateDesignDimensionResponse.
 
         :param data: The data of this CreateDesignDimensionResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ShowDimensionByIdResultData`

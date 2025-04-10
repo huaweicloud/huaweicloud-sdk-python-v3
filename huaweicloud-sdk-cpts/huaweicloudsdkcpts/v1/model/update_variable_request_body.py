@@ -31,7 +31,7 @@ class UpdateVariableRequestBody:
     }
 
     def __init__(self, id=None, name=None, variable_type=None, variable=None):
-        """UpdateVariableRequestBody
+        r"""UpdateVariableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class UpdateVariableRequestBody:
 
     @property
     def id(self):
-        """Gets the id of this UpdateVariableRequestBody.
+        r"""Gets the id of this UpdateVariableRequestBody.
 
         变量id
 
@@ -71,7 +71,7 @@ class UpdateVariableRequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateVariableRequestBody.
+        r"""Sets the id of this UpdateVariableRequestBody.
 
         变量id
 
@@ -82,7 +82,7 @@ class UpdateVariableRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateVariableRequestBody.
+        r"""Gets the name of this UpdateVariableRequestBody.
 
         变量名称
 
@@ -93,7 +93,7 @@ class UpdateVariableRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVariableRequestBody.
+        r"""Sets the name of this UpdateVariableRequestBody.
 
         变量名称
 
@@ -104,7 +104,7 @@ class UpdateVariableRequestBody:
 
     @property
     def variable_type(self):
-        """Gets the variable_type of this UpdateVariableRequestBody.
+        r"""Gets the variable_type of this UpdateVariableRequestBody.
 
         变量类型（1：整数；2：枚举；3：文件[；5：文本](tag:hws,hws_hk)
 
@@ -115,7 +115,7 @@ class UpdateVariableRequestBody:
 
     @variable_type.setter
     def variable_type(self, variable_type):
-        """Sets the variable_type of this UpdateVariableRequestBody.
+        r"""Sets the variable_type of this UpdateVariableRequestBody.
 
         变量类型（1：整数；2：枚举；3：文件[；5：文本](tag:hws,hws_hk)
 
@@ -126,7 +126,7 @@ class UpdateVariableRequestBody:
 
     @property
     def variable(self):
-        """Gets the variable of this UpdateVariableRequestBody.
+        r"""Gets the variable of this UpdateVariableRequestBody.
 
         变量值
 
@@ -137,7 +137,7 @@ class UpdateVariableRequestBody:
 
     @variable.setter
     def variable(self, variable):
-        """Sets the variable of this UpdateVariableRequestBody.
+        r"""Sets the variable of this UpdateVariableRequestBody.
 
         变量值
 

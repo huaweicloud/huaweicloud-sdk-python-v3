@@ -28,7 +28,7 @@ class StartInstanceEnlargeVolumeActionResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None):
-        """StartInstanceEnlargeVolumeActionResponse
+        r"""StartInstanceEnlargeVolumeActionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class StartInstanceEnlargeVolumeActionResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this StartInstanceEnlargeVolumeActionResponse.
+        r"""Gets the job_id of this StartInstanceEnlargeVolumeActionResponse.
 
         扩容数据库磁盘空间的任务id。 仅磁盘扩容按需实例时会返回该参数。
 
@@ -62,7 +62,7 @@ class StartInstanceEnlargeVolumeActionResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StartInstanceEnlargeVolumeActionResponse.
+        r"""Sets the job_id of this StartInstanceEnlargeVolumeActionResponse.
 
         扩容数据库磁盘空间的任务id。 仅磁盘扩容按需实例时会返回该参数。
 
@@ -73,7 +73,7 @@ class StartInstanceEnlargeVolumeActionResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this StartInstanceEnlargeVolumeActionResponse.
+        r"""Gets the order_id of this StartInstanceEnlargeVolumeActionResponse.
 
         订单号，磁盘扩容包年包月时返回该参数。
 
@@ -84,7 +84,7 @@ class StartInstanceEnlargeVolumeActionResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this StartInstanceEnlargeVolumeActionResponse.
+        r"""Sets the order_id of this StartInstanceEnlargeVolumeActionResponse.
 
         订单号，磁盘扩容包年包月时返回该参数。
 

@@ -25,7 +25,7 @@ class SchedulerHints:
     }
 
     def __init__(self, dec_baremetal=None):
-        """SchedulerHints
+        r"""SchedulerHints
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SchedulerHints:
 
     @property
     def dec_baremetal(self):
-        """Gets the dec_baremetal of this SchedulerHints.
+        r"""Gets the dec_baremetal of this SchedulerHints.
 
         是否在专属云中创建裸金属服务器，参数值为share或dedicate。约束：该值不传时默认为share。在专属云中创建裸金属服务器时，必须指定该字段为dedicate。
 
@@ -54,7 +54,7 @@ class SchedulerHints:
 
     @dec_baremetal.setter
     def dec_baremetal(self, dec_baremetal):
-        """Sets the dec_baremetal of this SchedulerHints.
+        r"""Sets the dec_baremetal of this SchedulerHints.
 
         是否在专属云中创建裸金属服务器，参数值为share或dedicate。约束：该值不传时默认为share。在专属云中创建裸金属服务器时，必须指定该字段为dedicate。
 

@@ -29,7 +29,7 @@ class ResourceTag:
     }
 
     def __init__(self, key=None, value=None, update_time=None):
-        """ResourceTag
+        r"""ResourceTag
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ResourceTag:
 
     @property
     def key(self):
-        """Gets the key of this ResourceTag.
+        r"""Gets the key of this ResourceTag.
 
         标签键
 
@@ -68,7 +68,7 @@ class ResourceTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceTag.
+        r"""Sets the key of this ResourceTag.
 
         标签键
 
@@ -79,7 +79,7 @@ class ResourceTag:
 
     @property
     def value(self):
-        """Gets the value of this ResourceTag.
+        r"""Gets the value of this ResourceTag.
 
         标签值
 
@@ -90,7 +90,7 @@ class ResourceTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResourceTag.
+        r"""Sets the value of this ResourceTag.
 
         标签值
 
@@ -101,7 +101,7 @@ class ResourceTag:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ResourceTag.
+        r"""Gets the update_time of this ResourceTag.
 
         标签更新时间
 
@@ -112,7 +112,7 @@ class ResourceTag:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ResourceTag.
+        r"""Sets the update_time of this ResourceTag.
 
         标签更新时间
 

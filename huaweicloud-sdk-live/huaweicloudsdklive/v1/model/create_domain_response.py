@@ -44,7 +44,7 @@ class CreateDomainResponse(SdkResponse):
     }
 
     def __init__(self, domain=None, domain_type=None, domain_cname=None, region=None, status=None, create_time=None, status_describe=None, service_area=None, enterprise_project_id=None, pull_protocol=None):
-        """CreateDomainResponse
+        r"""CreateDomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class CreateDomainResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this CreateDomainResponse.
+        r"""Gets the domain of this CreateDomainResponse.
 
         直播域名
 
@@ -118,7 +118,7 @@ class CreateDomainResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CreateDomainResponse.
+        r"""Sets the domain of this CreateDomainResponse.
 
         直播域名
 
@@ -129,7 +129,7 @@ class CreateDomainResponse(SdkResponse):
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this CreateDomainResponse.
+        r"""Gets the domain_type of this CreateDomainResponse.
 
         域名类型 - pull表示播放域名 - push表示推流域名 
 
@@ -140,7 +140,7 @@ class CreateDomainResponse(SdkResponse):
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this CreateDomainResponse.
+        r"""Sets the domain_type of this CreateDomainResponse.
 
         域名类型 - pull表示播放域名 - push表示推流域名 
 
@@ -151,7 +151,7 @@ class CreateDomainResponse(SdkResponse):
 
     @property
     def domain_cname(self):
-        """Gets the domain_cname of this CreateDomainResponse.
+        r"""Gets the domain_cname of this CreateDomainResponse.
 
         直播域名的CNAME
 
@@ -162,7 +162,7 @@ class CreateDomainResponse(SdkResponse):
 
     @domain_cname.setter
     def domain_cname(self, domain_cname):
-        """Sets the domain_cname of this CreateDomainResponse.
+        r"""Sets the domain_cname of this CreateDomainResponse.
 
         直播域名的CNAME
 
@@ -173,7 +173,7 @@ class CreateDomainResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this CreateDomainResponse.
+        r"""Gets the region of this CreateDomainResponse.
 
         直播所属直播中心
 
@@ -184,7 +184,7 @@ class CreateDomainResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreateDomainResponse.
+        r"""Sets the region of this CreateDomainResponse.
 
         直播所属直播中心
 
@@ -195,7 +195,7 @@ class CreateDomainResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateDomainResponse.
+        r"""Gets the status of this CreateDomainResponse.
 
         直播域名的状态
 
@@ -206,7 +206,7 @@ class CreateDomainResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateDomainResponse.
+        r"""Sets the status of this CreateDomainResponse.
 
         直播域名的状态
 
@@ -217,7 +217,7 @@ class CreateDomainResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateDomainResponse.
+        r"""Gets the create_time of this CreateDomainResponse.
 
         域名创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间
 
@@ -228,7 +228,7 @@ class CreateDomainResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateDomainResponse.
+        r"""Sets the create_time of this CreateDomainResponse.
 
         域名创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间
 
@@ -239,7 +239,7 @@ class CreateDomainResponse(SdkResponse):
 
     @property
     def status_describe(self):
-        """Gets the status_describe of this CreateDomainResponse.
+        r"""Gets the status_describe of this CreateDomainResponse.
 
         状态描述
 
@@ -250,7 +250,7 @@ class CreateDomainResponse(SdkResponse):
 
     @status_describe.setter
     def status_describe(self, status_describe):
-        """Sets the status_describe of this CreateDomainResponse.
+        r"""Sets the status_describe of this CreateDomainResponse.
 
         状态描述
 
@@ -261,7 +261,7 @@ class CreateDomainResponse(SdkResponse):
 
     @property
     def service_area(self):
-        """Gets the service_area of this CreateDomainResponse.
+        r"""Gets the service_area of this CreateDomainResponse.
 
         域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球加速区域 
 
@@ -272,7 +272,7 @@ class CreateDomainResponse(SdkResponse):
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this CreateDomainResponse.
+        r"""Sets the service_area of this CreateDomainResponse.
 
         域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球加速区域 
 
@@ -283,7 +283,7 @@ class CreateDomainResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateDomainResponse.
+        r"""Gets the enterprise_project_id of this CreateDomainResponse.
 
         企业项目ID
 
@@ -294,7 +294,7 @@ class CreateDomainResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateDomainResponse.
+        r"""Sets the enterprise_project_id of this CreateDomainResponse.
 
         企业项目ID
 
@@ -305,7 +305,7 @@ class CreateDomainResponse(SdkResponse):
 
     @property
     def pull_protocol(self):
-        """Gets the pull_protocol of this CreateDomainResponse.
+        r"""Gets the pull_protocol of this CreateDomainResponse.
 
         域名支持的拉流协议；仅domain_type为pull时生效。若不填写此字段，视为默认支持FLV、RTMP拉流协议 - flv_rtmp表示支持FLV、RTMP协议 - hls表示支持HLS协议 
 
@@ -316,7 +316,7 @@ class CreateDomainResponse(SdkResponse):
 
     @pull_protocol.setter
     def pull_protocol(self, pull_protocol):
-        """Sets the pull_protocol of this CreateDomainResponse.
+        r"""Sets the pull_protocol of this CreateDomainResponse.
 
         域名支持的拉流协议；仅domain_type为pull时生效。若不填写此字段，视为默认支持FLV、RTMP拉流协议 - flv_rtmp表示支持FLV、RTMP协议 - hls表示支持HLS协议 
 

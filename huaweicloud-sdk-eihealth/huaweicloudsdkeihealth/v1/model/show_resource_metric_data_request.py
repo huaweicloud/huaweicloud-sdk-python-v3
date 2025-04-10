@@ -37,7 +37,7 @@ class ShowResourceMetricDataRequest:
     }
 
     def __init__(self, from_time=None, to_time=None, period=None, method=None, metric_name=None, resource_id=None, device_id=None):
-        """ShowResourceMetricDataRequest
+        r"""ShowResourceMetricDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ShowResourceMetricDataRequest:
 
     @property
     def from_time(self):
-        """Gets the from_time of this ShowResourceMetricDataRequest.
+        r"""Gets the from_time of this ShowResourceMetricDataRequest.
 
         查询监控数据起始时间，UNIX时间戳，单位毫秒，不填时默认为当前时间
 
@@ -95,7 +95,7 @@ class ShowResourceMetricDataRequest:
 
     @from_time.setter
     def from_time(self, from_time):
-        """Sets the from_time of this ShowResourceMetricDataRequest.
+        r"""Sets the from_time of this ShowResourceMetricDataRequest.
 
         查询监控数据起始时间，UNIX时间戳，单位毫秒，不填时默认为当前时间
 
@@ -106,7 +106,7 @@ class ShowResourceMetricDataRequest:
 
     @property
     def to_time(self):
-        """Gets the to_time of this ShowResourceMetricDataRequest.
+        r"""Gets the to_time of this ShowResourceMetricDataRequest.
 
         查询数据截止时间，UNIX时间戳，单位毫秒，不填时默认为当前时间
 
@@ -117,7 +117,7 @@ class ShowResourceMetricDataRequest:
 
     @to_time.setter
     def to_time(self, to_time):
-        """Sets the to_time of this ShowResourceMetricDataRequest.
+        r"""Sets the to_time of this ShowResourceMetricDataRequest.
 
         查询数据截止时间，UNIX时间戳，单位毫秒，不填时默认为当前时间
 
@@ -128,7 +128,7 @@ class ShowResourceMetricDataRequest:
 
     @property
     def period(self):
-        """Gets the period of this ShowResourceMetricDataRequest.
+        r"""Gets the period of this ShowResourceMetricDataRequest.
 
         监控数据周期。枚举值，取值范围：real_time（实时数据）、five_minutes（5分钟粒度）、fifteen_to_twenty_minutes（15-20分钟粒度）、one_hour（1小时粒度），不填时默认为real_time
 
@@ -139,7 +139,7 @@ class ShowResourceMetricDataRequest:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ShowResourceMetricDataRequest.
+        r"""Sets the period of this ShowResourceMetricDataRequest.
 
         监控数据周期。枚举值，取值范围：real_time（实时数据）、five_minutes（5分钟粒度）、fifteen_to_twenty_minutes（15-20分钟粒度）、one_hour（1小时粒度），不填时默认为real_time
 
@@ -150,7 +150,7 @@ class ShowResourceMetricDataRequest:
 
     @property
     def method(self):
-        """Gets the method of this ShowResourceMetricDataRequest.
+        r"""Gets the method of this ShowResourceMetricDataRequest.
 
         统计方法。枚举值，取值范围：max（最大值）、min（最小值）、average（平均值），不填时默认为max
 
@@ -161,7 +161,7 @@ class ShowResourceMetricDataRequest:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this ShowResourceMetricDataRequest.
+        r"""Sets the method of this ShowResourceMetricDataRequest.
 
         统计方法。枚举值，取值范围：max（最大值）、min（最小值）、average（平均值），不填时默认为max
 
@@ -172,7 +172,7 @@ class ShowResourceMetricDataRequest:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ShowResourceMetricDataRequest.
+        r"""Gets the metric_name of this ShowResourceMetricDataRequest.
 
         查询的监控指标名称
 
@@ -183,7 +183,7 @@ class ShowResourceMetricDataRequest:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ShowResourceMetricDataRequest.
+        r"""Sets the metric_name of this ShowResourceMetricDataRequest.
 
         查询的监控指标名称
 
@@ -194,7 +194,7 @@ class ShowResourceMetricDataRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowResourceMetricDataRequest.
+        r"""Gets the resource_id of this ShowResourceMetricDataRequest.
 
         查询的监控资源对象id，当查询存储资源和计算节点资源中的集群监控数据时，不需要填写资源id
 
@@ -205,7 +205,7 @@ class ShowResourceMetricDataRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowResourceMetricDataRequest.
+        r"""Sets the resource_id of this ShowResourceMetricDataRequest.
 
         查询的监控资源对象id，当查询存储资源和计算节点资源中的集群监控数据时，不需要填写资源id
 
@@ -216,7 +216,7 @@ class ShowResourceMetricDataRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ShowResourceMetricDataRequest.
+        r"""Gets the device_id of this ShowResourceMetricDataRequest.
 
         显卡id，仅查询裸金属节点的gpu监控时，需要指定
 
@@ -227,7 +227,7 @@ class ShowResourceMetricDataRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ShowResourceMetricDataRequest.
+        r"""Sets the device_id of this ShowResourceMetricDataRequest.
 
         显卡id，仅查询裸金属节点的gpu监控时，需要指定
 

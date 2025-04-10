@@ -26,7 +26,7 @@ class SwitchAutoProtectStatusResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """SwitchAutoProtectStatusResponse
+        r"""SwitchAutoProtectStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchAutoProtectStatusResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SwitchAutoProtectStatusResponse.
+        r"""Gets the data of this SwitchAutoProtectStatusResponse.
 
         :return: The data of this SwitchAutoProtectStatusResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class SwitchAutoProtectStatusResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SwitchAutoProtectStatusResponse.
+        r"""Sets the data of this SwitchAutoProtectStatusResponse.
 
         :param data: The data of this SwitchAutoProtectStatusResponse.
         :type data: str

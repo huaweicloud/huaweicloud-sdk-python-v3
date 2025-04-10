@@ -49,7 +49,7 @@ class ListDigitalHumanVideoRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None, state=None, sort_key=None, sort_dir=None, create_until=None, create_since=None, fuzzy_query_field=None, script_id=None, asset_name=None, job_type=None, job_id=None):
-        """ListDigitalHumanVideoRequest
+        r"""ListDigitalHumanVideoRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListDigitalHumanVideoRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListDigitalHumanVideoRequest.
+        r"""Gets the x_app_user_id of this ListDigitalHumanVideoRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -138,7 +138,7 @@ class ListDigitalHumanVideoRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListDigitalHumanVideoRequest.
+        r"""Sets the x_app_user_id of this ListDigitalHumanVideoRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -149,7 +149,7 @@ class ListDigitalHumanVideoRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDigitalHumanVideoRequest.
+        r"""Gets the offset of this ListDigitalHumanVideoRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -160,7 +160,7 @@ class ListDigitalHumanVideoRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDigitalHumanVideoRequest.
+        r"""Sets the offset of this ListDigitalHumanVideoRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -171,7 +171,7 @@ class ListDigitalHumanVideoRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDigitalHumanVideoRequest.
+        r"""Gets the limit of this ListDigitalHumanVideoRequest.
 
         每页显示的条目数量。
 
@@ -182,7 +182,7 @@ class ListDigitalHumanVideoRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDigitalHumanVideoRequest.
+        r"""Sets the limit of this ListDigitalHumanVideoRequest.
 
         每页显示的条目数量。
 
@@ -193,7 +193,7 @@ class ListDigitalHumanVideoRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListDigitalHumanVideoRequest.
+        r"""Gets the state of this ListDigitalHumanVideoRequest.
 
         任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
 
@@ -204,7 +204,7 @@ class ListDigitalHumanVideoRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListDigitalHumanVideoRequest.
+        r"""Sets the state of this ListDigitalHumanVideoRequest.
 
         任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
 
@@ -215,7 +215,7 @@ class ListDigitalHumanVideoRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListDigitalHumanVideoRequest.
+        r"""Gets the sort_key of this ListDigitalHumanVideoRequest.
 
         排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
@@ -226,7 +226,7 @@ class ListDigitalHumanVideoRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListDigitalHumanVideoRequest.
+        r"""Sets the sort_key of this ListDigitalHumanVideoRequest.
 
         排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
@@ -237,7 +237,7 @@ class ListDigitalHumanVideoRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListDigitalHumanVideoRequest.
+        r"""Gets the sort_dir of this ListDigitalHumanVideoRequest.
 
         排序方式。 * asc：升序 * desc：降序  默认asc升序。
 
@@ -248,7 +248,7 @@ class ListDigitalHumanVideoRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListDigitalHumanVideoRequest.
+        r"""Sets the sort_dir of this ListDigitalHumanVideoRequest.
 
         排序方式。 * asc：升序 * desc：降序  默认asc升序。
 
@@ -259,7 +259,7 @@ class ListDigitalHumanVideoRequest:
 
     @property
     def create_until(self):
-        """Gets the create_until of this ListDigitalHumanVideoRequest.
+        r"""Gets the create_until of this ListDigitalHumanVideoRequest.
 
         过滤创建时间<=输入时间的记录。
 
@@ -270,7 +270,7 @@ class ListDigitalHumanVideoRequest:
 
     @create_until.setter
     def create_until(self, create_until):
-        """Sets the create_until of this ListDigitalHumanVideoRequest.
+        r"""Sets the create_until of this ListDigitalHumanVideoRequest.
 
         过滤创建时间<=输入时间的记录。
 
@@ -281,7 +281,7 @@ class ListDigitalHumanVideoRequest:
 
     @property
     def create_since(self):
-        """Gets the create_since of this ListDigitalHumanVideoRequest.
+        r"""Gets the create_since of this ListDigitalHumanVideoRequest.
 
         过滤创建时间>=输入时间的记录。
 
@@ -292,7 +292,7 @@ class ListDigitalHumanVideoRequest:
 
     @create_since.setter
     def create_since(self, create_since):
-        """Sets the create_since of this ListDigitalHumanVideoRequest.
+        r"""Sets the create_since of this ListDigitalHumanVideoRequest.
 
         过滤创建时间>=输入时间的记录。
 
@@ -303,7 +303,7 @@ class ListDigitalHumanVideoRequest:
 
     @property
     def fuzzy_query_field(self):
-        """Gets the fuzzy_query_field of this ListDigitalHumanVideoRequest.
+        r"""Gets the fuzzy_query_field of this ListDigitalHumanVideoRequest.
 
         使用模糊查询的字段
 
@@ -314,7 +314,7 @@ class ListDigitalHumanVideoRequest:
 
     @fuzzy_query_field.setter
     def fuzzy_query_field(self, fuzzy_query_field):
-        """Sets the fuzzy_query_field of this ListDigitalHumanVideoRequest.
+        r"""Sets the fuzzy_query_field of this ListDigitalHumanVideoRequest.
 
         使用模糊查询的字段
 
@@ -325,7 +325,7 @@ class ListDigitalHumanVideoRequest:
 
     @property
     def script_id(self):
-        """Gets the script_id of this ListDigitalHumanVideoRequest.
+        r"""Gets the script_id of this ListDigitalHumanVideoRequest.
 
         剧本ID。
 
@@ -336,7 +336,7 @@ class ListDigitalHumanVideoRequest:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this ListDigitalHumanVideoRequest.
+        r"""Sets the script_id of this ListDigitalHumanVideoRequest.
 
         剧本ID。
 
@@ -347,7 +347,7 @@ class ListDigitalHumanVideoRequest:
 
     @property
     def asset_name(self):
-        """Gets the asset_name of this ListDigitalHumanVideoRequest.
+        r"""Gets the asset_name of this ListDigitalHumanVideoRequest.
 
         输出视频资产名称。
 
@@ -358,7 +358,7 @@ class ListDigitalHumanVideoRequest:
 
     @asset_name.setter
     def asset_name(self, asset_name):
-        """Sets the asset_name of this ListDigitalHumanVideoRequest.
+        r"""Sets the asset_name of this ListDigitalHumanVideoRequest.
 
         输出视频资产名称。
 
@@ -369,7 +369,7 @@ class ListDigitalHumanVideoRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ListDigitalHumanVideoRequest.
+        r"""Gets the job_type of this ListDigitalHumanVideoRequest.
 
         任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * PHOTO_DIGITAL_HUMAN_VIDEO: 照片数字人视频制作任务
 
@@ -380,7 +380,7 @@ class ListDigitalHumanVideoRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ListDigitalHumanVideoRequest.
+        r"""Sets the job_type of this ListDigitalHumanVideoRequest.
 
         任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * PHOTO_DIGITAL_HUMAN_VIDEO: 照片数字人视频制作任务
 
@@ -391,7 +391,7 @@ class ListDigitalHumanVideoRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListDigitalHumanVideoRequest.
+        r"""Gets the job_id of this ListDigitalHumanVideoRequest.
 
         任务ID。
 
@@ -402,7 +402,7 @@ class ListDigitalHumanVideoRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListDigitalHumanVideoRequest.
+        r"""Sets the job_id of this ListDigitalHumanVideoRequest.
 
         任务ID。
 

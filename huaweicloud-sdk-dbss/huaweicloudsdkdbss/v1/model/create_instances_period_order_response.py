@@ -30,7 +30,7 @@ class CreateInstancesPeriodOrderResponse(SdkResponse):
     }
 
     def __init__(self, description=None, code=None, order_id=None):
-        """CreateInstancesPeriodOrderResponse
+        r"""CreateInstancesPeriodOrderResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateInstancesPeriodOrderResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateInstancesPeriodOrderResponse.
+        r"""Gets the description of this CreateInstancesPeriodOrderResponse.
 
         描述
 
@@ -69,7 +69,7 @@ class CreateInstancesPeriodOrderResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateInstancesPeriodOrderResponse.
+        r"""Sets the description of this CreateInstancesPeriodOrderResponse.
 
         描述
 
@@ -80,7 +80,7 @@ class CreateInstancesPeriodOrderResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateInstancesPeriodOrderResponse.
+        r"""Gets the code of this CreateInstancesPeriodOrderResponse.
 
         返回码
 
@@ -91,7 +91,7 @@ class CreateInstancesPeriodOrderResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateInstancesPeriodOrderResponse.
+        r"""Sets the code of this CreateInstancesPeriodOrderResponse.
 
         返回码
 
@@ -102,7 +102,7 @@ class CreateInstancesPeriodOrderResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateInstancesPeriodOrderResponse.
+        r"""Gets the order_id of this CreateInstancesPeriodOrderResponse.
 
         订单ID
 
@@ -113,7 +113,7 @@ class CreateInstancesPeriodOrderResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateInstancesPeriodOrderResponse.
+        r"""Sets the order_id of this CreateInstancesPeriodOrderResponse.
 
         订单ID
 

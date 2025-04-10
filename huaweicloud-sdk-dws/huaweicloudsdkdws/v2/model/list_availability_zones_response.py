@@ -28,7 +28,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     }
 
     def __init__(self, availability_zones=None, count=None):
-        """ListAvailabilityZonesResponse
+        r"""ListAvailabilityZonesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
 
     @property
     def availability_zones(self):
-        """Gets the availability_zones of this ListAvailabilityZonesResponse.
+        r"""Gets the availability_zones of this ListAvailabilityZonesResponse.
 
         可用区列表对象。
 
@@ -62,7 +62,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
 
     @availability_zones.setter
     def availability_zones(self, availability_zones):
-        """Sets the availability_zones of this ListAvailabilityZonesResponse.
+        r"""Sets the availability_zones of this ListAvailabilityZonesResponse.
 
         可用区列表对象。
 
@@ -73,7 +73,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAvailabilityZonesResponse.
+        r"""Gets the count of this ListAvailabilityZonesResponse.
 
         可用区数量。
 
@@ -84,7 +84,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAvailabilityZonesResponse.
+        r"""Sets the count of this ListAvailabilityZonesResponse.
 
         可用区数量。
 

@@ -27,7 +27,7 @@ class UpdateRsuModel:
     }
 
     def __init__(self, manufacturer_name=None, description=None):
-        """UpdateRsuModel
+        r"""UpdateRsuModel
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateRsuModel:
 
     @property
     def manufacturer_name(self):
-        """Gets the manufacturer_name of this UpdateRsuModel.
+        r"""Gets the manufacturer_name of this UpdateRsuModel.
 
         **参数说明**: RSU的厂商名称。  **取值范围**：长度不低于1不超过32，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 
@@ -61,7 +61,7 @@ class UpdateRsuModel:
 
     @manufacturer_name.setter
     def manufacturer_name(self, manufacturer_name):
-        """Sets the manufacturer_name of this UpdateRsuModel.
+        r"""Sets the manufacturer_name of this UpdateRsuModel.
 
         **参数说明**: RSU的厂商名称。  **取值范围**：长度不低于1不超过32，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 
@@ -72,7 +72,7 @@ class UpdateRsuModel:
 
     @property
     def description(self):
-        """Gets the description of this UpdateRsuModel.
+        r"""Gets the description of this UpdateRsuModel.
 
         **参数说明**: RSU型号的描述信息。  **取值范围**：长度不低于1不超过128，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 
@@ -83,7 +83,7 @@ class UpdateRsuModel:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateRsuModel.
+        r"""Sets the description of this UpdateRsuModel.
 
         **参数说明**: RSU型号的描述信息。  **取值范围**：长度不低于1不超过128，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 

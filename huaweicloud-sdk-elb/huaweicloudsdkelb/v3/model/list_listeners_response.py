@@ -30,7 +30,7 @@ class ListListenersResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, listeners=None):
-        """ListListenersResponse
+        r"""ListListenersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListListenersResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListListenersResponse.
+        r"""Gets the request_id of this ListListenersResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -69,7 +69,7 @@ class ListListenersResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListListenersResponse.
+        r"""Sets the request_id of this ListListenersResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -80,7 +80,7 @@ class ListListenersResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListListenersResponse.
+        r"""Gets the page_info of this ListListenersResponse.
 
         :return: The page_info of this ListListenersResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListListenersResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListListenersResponse.
+        r"""Sets the page_info of this ListListenersResponse.
 
         :param page_info: The page_info of this ListListenersResponse.
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListListenersResponse(SdkResponse):
 
     @property
     def listeners(self):
-        """Gets the listeners of this ListListenersResponse.
+        r"""Gets the listeners of this ListListenersResponse.
 
         参数解释：Listener的列表。
 
@@ -109,7 +109,7 @@ class ListListenersResponse(SdkResponse):
 
     @listeners.setter
     def listeners(self, listeners):
-        """Sets the listeners of this ListListenersResponse.
+        r"""Sets the listeners of this ListListenersResponse.
 
         参数解释：Listener的列表。
 

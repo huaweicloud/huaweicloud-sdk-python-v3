@@ -37,7 +37,7 @@ class SlaRuleInfo:
     }
 
     def __init__(self, status_type=None, triggering_rule_enable=None, pre_warning_rule_enable=None, escalate_rule_enable=None, triggering_rule=None, pre_warning_rule=None, escalate_rules=None):
-        """SlaRuleInfo
+        r"""SlaRuleInfo
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class SlaRuleInfo:
 
     @property
     def status_type(self):
-        """Gets the status_type of this SlaRuleInfo.
+        r"""Gets the status_type of this SlaRuleInfo.
 
         状态类型: EVENT_TICKET_NOT_ACCEPTED EVENT_TICKET_PROCESSING EVENT_TICKET_RESOLVED ALARM_TICKET_ALARMING CHANGE_REVIEW CHANGE_IMPLEMENTATION CHANGE_VERIFICATION TO_DO_TASKS_TO_BE_HANDLED TO_DO_TASKS_PROCESSING ISSUE_TICKET_NOT_ACCEPTED ISSUE_TICKET_POSITIONING ISSUE_TICKET_WAITING_IMPLEMENT ISSUE_TICKET_RESOLVED
 
@@ -93,7 +93,7 @@ class SlaRuleInfo:
 
     @status_type.setter
     def status_type(self, status_type):
-        """Sets the status_type of this SlaRuleInfo.
+        r"""Sets the status_type of this SlaRuleInfo.
 
         状态类型: EVENT_TICKET_NOT_ACCEPTED EVENT_TICKET_PROCESSING EVENT_TICKET_RESOLVED ALARM_TICKET_ALARMING CHANGE_REVIEW CHANGE_IMPLEMENTATION CHANGE_VERIFICATION TO_DO_TASKS_TO_BE_HANDLED TO_DO_TASKS_PROCESSING ISSUE_TICKET_NOT_ACCEPTED ISSUE_TICKET_POSITIONING ISSUE_TICKET_WAITING_IMPLEMENT ISSUE_TICKET_RESOLVED
 
@@ -104,7 +104,7 @@ class SlaRuleInfo:
 
     @property
     def triggering_rule_enable(self):
-        """Gets the triggering_rule_enable of this SlaRuleInfo.
+        r"""Gets the triggering_rule_enable of this SlaRuleInfo.
 
         触发规则是否生效
 
@@ -115,7 +115,7 @@ class SlaRuleInfo:
 
     @triggering_rule_enable.setter
     def triggering_rule_enable(self, triggering_rule_enable):
-        """Sets the triggering_rule_enable of this SlaRuleInfo.
+        r"""Sets the triggering_rule_enable of this SlaRuleInfo.
 
         触发规则是否生效
 
@@ -126,7 +126,7 @@ class SlaRuleInfo:
 
     @property
     def pre_warning_rule_enable(self):
-        """Gets the pre_warning_rule_enable of this SlaRuleInfo.
+        r"""Gets the pre_warning_rule_enable of this SlaRuleInfo.
 
         预警规则是否生效
 
@@ -137,7 +137,7 @@ class SlaRuleInfo:
 
     @pre_warning_rule_enable.setter
     def pre_warning_rule_enable(self, pre_warning_rule_enable):
-        """Sets the pre_warning_rule_enable of this SlaRuleInfo.
+        r"""Sets the pre_warning_rule_enable of this SlaRuleInfo.
 
         预警规则是否生效
 
@@ -148,7 +148,7 @@ class SlaRuleInfo:
 
     @property
     def escalate_rule_enable(self):
-        """Gets the escalate_rule_enable of this SlaRuleInfo.
+        r"""Gets the escalate_rule_enable of this SlaRuleInfo.
 
         上升规则是否生效
 
@@ -159,7 +159,7 @@ class SlaRuleInfo:
 
     @escalate_rule_enable.setter
     def escalate_rule_enable(self, escalate_rule_enable):
-        """Sets the escalate_rule_enable of this SlaRuleInfo.
+        r"""Sets the escalate_rule_enable of this SlaRuleInfo.
 
         上升规则是否生效
 
@@ -170,7 +170,7 @@ class SlaRuleInfo:
 
     @property
     def triggering_rule(self):
-        """Gets the triggering_rule of this SlaRuleInfo.
+        r"""Gets the triggering_rule of this SlaRuleInfo.
 
         :return: The triggering_rule of this SlaRuleInfo.
         :rtype: :class:`huaweicloudsdkcoc.v1.SlaTriggeringRuleInfo`
@@ -179,7 +179,7 @@ class SlaRuleInfo:
 
     @triggering_rule.setter
     def triggering_rule(self, triggering_rule):
-        """Sets the triggering_rule of this SlaRuleInfo.
+        r"""Sets the triggering_rule of this SlaRuleInfo.
 
         :param triggering_rule: The triggering_rule of this SlaRuleInfo.
         :type triggering_rule: :class:`huaweicloudsdkcoc.v1.SlaTriggeringRuleInfo`
@@ -188,7 +188,7 @@ class SlaRuleInfo:
 
     @property
     def pre_warning_rule(self):
-        """Gets the pre_warning_rule of this SlaRuleInfo.
+        r"""Gets the pre_warning_rule of this SlaRuleInfo.
 
         :return: The pre_warning_rule of this SlaRuleInfo.
         :rtype: :class:`huaweicloudsdkcoc.v1.SlaPreWarningRuleInfo`
@@ -197,7 +197,7 @@ class SlaRuleInfo:
 
     @pre_warning_rule.setter
     def pre_warning_rule(self, pre_warning_rule):
-        """Sets the pre_warning_rule of this SlaRuleInfo.
+        r"""Sets the pre_warning_rule of this SlaRuleInfo.
 
         :param pre_warning_rule: The pre_warning_rule of this SlaRuleInfo.
         :type pre_warning_rule: :class:`huaweicloudsdkcoc.v1.SlaPreWarningRuleInfo`
@@ -206,7 +206,7 @@ class SlaRuleInfo:
 
     @property
     def escalate_rules(self):
-        """Gets the escalate_rules of this SlaRuleInfo.
+        r"""Gets the escalate_rules of this SlaRuleInfo.
 
         通知配置
 
@@ -217,7 +217,7 @@ class SlaRuleInfo:
 
     @escalate_rules.setter
     def escalate_rules(self, escalate_rules):
-        """Sets the escalate_rules of this SlaRuleInfo.
+        r"""Sets the escalate_rules of this SlaRuleInfo.
 
         通知配置
 

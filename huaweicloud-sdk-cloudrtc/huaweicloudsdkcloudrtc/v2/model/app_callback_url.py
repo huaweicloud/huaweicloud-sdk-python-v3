@@ -31,7 +31,7 @@ class AppCallbackUrl:
     }
 
     def __init__(self, url=None, auth_key=None, notify_event_subscription=None, update_time=None):
-        """AppCallbackUrl
+        r"""AppCallbackUrl
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AppCallbackUrl:
 
     @property
     def url(self):
-        """Gets the url of this AppCallbackUrl.
+        r"""Gets the url of this AppCallbackUrl.
 
         回调通知url地址，url必须以http://或https://开头，需要支持POST调用。
 
@@ -75,7 +75,7 @@ class AppCallbackUrl:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this AppCallbackUrl.
+        r"""Sets the url of this AppCallbackUrl.
 
         回调通知url地址，url必须以http://或https://开头，需要支持POST调用。
 
@@ -86,7 +86,7 @@ class AppCallbackUrl:
 
     @property
     def auth_key(self):
-        """Gets the auth_key of this AppCallbackUrl.
+        r"""Gets the auth_key of this AppCallbackUrl.
 
         回调秘钥，主要用于鉴权。如果不设置或者为空，则回调不会增加鉴权头域字段。 
 
@@ -97,7 +97,7 @@ class AppCallbackUrl:
 
     @auth_key.setter
     def auth_key(self, auth_key):
-        """Sets the auth_key of this AppCallbackUrl.
+        r"""Sets the auth_key of this AppCallbackUrl.
 
         回调秘钥，主要用于鉴权。如果不设置或者为空，则回调不会增加鉴权头域字段。 
 
@@ -108,7 +108,7 @@ class AppCallbackUrl:
 
     @property
     def notify_event_subscription(self):
-        """Gets the notify_event_subscription of this AppCallbackUrl.
+        r"""Gets the notify_event_subscription of this AppCallbackUrl.
 
         订阅云端录制通知消息。  取值如下：  - RECORD_NEW_FILE_START：开始创建新的录制文件。  - RECORD_FILE_COMPLETE：录制文件生成完成。 
 
@@ -119,7 +119,7 @@ class AppCallbackUrl:
 
     @notify_event_subscription.setter
     def notify_event_subscription(self, notify_event_subscription):
-        """Sets the notify_event_subscription of this AppCallbackUrl.
+        r"""Sets the notify_event_subscription of this AppCallbackUrl.
 
         订阅云端录制通知消息。  取值如下：  - RECORD_NEW_FILE_START：开始创建新的录制文件。  - RECORD_FILE_COMPLETE：录制文件生成完成。 
 
@@ -130,7 +130,7 @@ class AppCallbackUrl:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppCallbackUrl.
+        r"""Gets the update_time of this AppCallbackUrl.
 
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC。 
 
@@ -141,7 +141,7 @@ class AppCallbackUrl:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppCallbackUrl.
+        r"""Sets the update_time of this AppCallbackUrl.
 
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC。 
 

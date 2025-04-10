@@ -35,7 +35,7 @@ class ShowGroupsRespGroup:
     }
 
     def __init__(self, group_id=None, state=None, coordinator_id=None, members=None, group_message_offsets=None, assignment_strategy=None):
-        """ShowGroupsRespGroup
+        r"""ShowGroupsRespGroup
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ShowGroupsRespGroup:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowGroupsRespGroup.
+        r"""Gets the group_id of this ShowGroupsRespGroup.
 
         消费组名称。
 
@@ -89,7 +89,7 @@ class ShowGroupsRespGroup:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowGroupsRespGroup.
+        r"""Sets the group_id of this ShowGroupsRespGroup.
 
         消费组名称。
 
@@ -100,7 +100,7 @@ class ShowGroupsRespGroup:
 
     @property
     def state(self):
-        """Gets the state of this ShowGroupsRespGroup.
+        r"""Gets the state of this ShowGroupsRespGroup.
 
         消费组状态。包含以下状态： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
 
@@ -111,7 +111,7 @@ class ShowGroupsRespGroup:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowGroupsRespGroup.
+        r"""Sets the state of this ShowGroupsRespGroup.
 
         消费组状态。包含以下状态： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
 
@@ -122,7 +122,7 @@ class ShowGroupsRespGroup:
 
     @property
     def coordinator_id(self):
-        """Gets the coordinator_id of this ShowGroupsRespGroup.
+        r"""Gets the coordinator_id of this ShowGroupsRespGroup.
 
         协调器编号。
 
@@ -133,7 +133,7 @@ class ShowGroupsRespGroup:
 
     @coordinator_id.setter
     def coordinator_id(self, coordinator_id):
-        """Sets the coordinator_id of this ShowGroupsRespGroup.
+        r"""Sets the coordinator_id of this ShowGroupsRespGroup.
 
         协调器编号。
 
@@ -144,7 +144,7 @@ class ShowGroupsRespGroup:
 
     @property
     def members(self):
-        """Gets the members of this ShowGroupsRespGroup.
+        r"""Gets the members of this ShowGroupsRespGroup.
 
         消费者列表。
 
@@ -155,7 +155,7 @@ class ShowGroupsRespGroup:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this ShowGroupsRespGroup.
+        r"""Sets the members of this ShowGroupsRespGroup.
 
         消费者列表。
 
@@ -166,7 +166,7 @@ class ShowGroupsRespGroup:
 
     @property
     def group_message_offsets(self):
-        """Gets the group_message_offsets of this ShowGroupsRespGroup.
+        r"""Gets the group_message_offsets of this ShowGroupsRespGroup.
 
         消费进度。
 
@@ -177,7 +177,7 @@ class ShowGroupsRespGroup:
 
     @group_message_offsets.setter
     def group_message_offsets(self, group_message_offsets):
-        """Sets the group_message_offsets of this ShowGroupsRespGroup.
+        r"""Sets the group_message_offsets of this ShowGroupsRespGroup.
 
         消费进度。
 
@@ -188,7 +188,7 @@ class ShowGroupsRespGroup:
 
     @property
     def assignment_strategy(self):
-        """Gets the assignment_strategy of this ShowGroupsRespGroup.
+        r"""Gets the assignment_strategy of this ShowGroupsRespGroup.
 
         分区分配策略。
 
@@ -199,7 +199,7 @@ class ShowGroupsRespGroup:
 
     @assignment_strategy.setter
     def assignment_strategy(self, assignment_strategy):
-        """Sets the assignment_strategy of this ShowGroupsRespGroup.
+        r"""Sets the assignment_strategy of this ShowGroupsRespGroup.
 
         分区分配策略。
 

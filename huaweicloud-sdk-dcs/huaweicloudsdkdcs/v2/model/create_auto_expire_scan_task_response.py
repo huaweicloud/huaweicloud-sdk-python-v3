@@ -38,7 +38,7 @@ class CreateAutoExpireScanTaskResponse(SdkResponse):
     }
 
     def __init__(self, id=None, instance_id=None, status=None, scan_type=None, created_at=None, started_at=None, finished_at=None):
-        """CreateAutoExpireScanTaskResponse
+        r"""CreateAutoExpireScanTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateAutoExpireScanTaskResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateAutoExpireScanTaskResponse.
+        r"""Gets the id of this CreateAutoExpireScanTaskResponse.
 
         过期key扫描记录ID
 
@@ -97,7 +97,7 @@ class CreateAutoExpireScanTaskResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateAutoExpireScanTaskResponse.
+        r"""Sets the id of this CreateAutoExpireScanTaskResponse.
 
         过期key扫描记录ID
 
@@ -108,7 +108,7 @@ class CreateAutoExpireScanTaskResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateAutoExpireScanTaskResponse.
+        r"""Gets the instance_id of this CreateAutoExpireScanTaskResponse.
 
         实例ID
 
@@ -119,7 +119,7 @@ class CreateAutoExpireScanTaskResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateAutoExpireScanTaskResponse.
+        r"""Sets the instance_id of this CreateAutoExpireScanTaskResponse.
 
         实例ID
 
@@ -130,7 +130,7 @@ class CreateAutoExpireScanTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateAutoExpireScanTaskResponse.
+        r"""Gets the status of this CreateAutoExpireScanTaskResponse.
 
         扫描任务状态
 
@@ -141,7 +141,7 @@ class CreateAutoExpireScanTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateAutoExpireScanTaskResponse.
+        r"""Sets the status of this CreateAutoExpireScanTaskResponse.
 
         扫描任务状态
 
@@ -152,7 +152,7 @@ class CreateAutoExpireScanTaskResponse(SdkResponse):
 
     @property
     def scan_type(self):
-        """Gets the scan_type of this CreateAutoExpireScanTaskResponse.
+        r"""Gets the scan_type of this CreateAutoExpireScanTaskResponse.
 
         扫描方式
 
@@ -163,7 +163,7 @@ class CreateAutoExpireScanTaskResponse(SdkResponse):
 
     @scan_type.setter
     def scan_type(self, scan_type):
-        """Sets the scan_type of this CreateAutoExpireScanTaskResponse.
+        r"""Sets the scan_type of this CreateAutoExpireScanTaskResponse.
 
         扫描方式
 
@@ -174,7 +174,7 @@ class CreateAutoExpireScanTaskResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateAutoExpireScanTaskResponse.
+        r"""Gets the created_at of this CreateAutoExpireScanTaskResponse.
 
         扫描任务创建时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -185,7 +185,7 @@ class CreateAutoExpireScanTaskResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateAutoExpireScanTaskResponse.
+        r"""Sets the created_at of this CreateAutoExpireScanTaskResponse.
 
         扫描任务创建时间,格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -196,7 +196,7 @@ class CreateAutoExpireScanTaskResponse(SdkResponse):
 
     @property
     def started_at(self):
-        """Gets the started_at of this CreateAutoExpireScanTaskResponse.
+        r"""Gets the started_at of this CreateAutoExpireScanTaskResponse.
 
         扫描任务开始时间,格式为：\"2020-06-15T02:21:18.669Z\"（创建扫描任务时此值为null，不返回）
 
@@ -207,7 +207,7 @@ class CreateAutoExpireScanTaskResponse(SdkResponse):
 
     @started_at.setter
     def started_at(self, started_at):
-        """Sets the started_at of this CreateAutoExpireScanTaskResponse.
+        r"""Sets the started_at of this CreateAutoExpireScanTaskResponse.
 
         扫描任务开始时间,格式为：\"2020-06-15T02:21:18.669Z\"（创建扫描任务时此值为null，不返回）
 
@@ -218,7 +218,7 @@ class CreateAutoExpireScanTaskResponse(SdkResponse):
 
     @property
     def finished_at(self):
-        """Gets the finished_at of this CreateAutoExpireScanTaskResponse.
+        r"""Gets the finished_at of this CreateAutoExpireScanTaskResponse.
 
         扫描任务结束时间,格式为：\"2020-06-15T02:21:18.669Z\"（创建扫描任务时此值为null，不返回）
 
@@ -229,7 +229,7 @@ class CreateAutoExpireScanTaskResponse(SdkResponse):
 
     @finished_at.setter
     def finished_at(self, finished_at):
-        """Sets the finished_at of this CreateAutoExpireScanTaskResponse.
+        r"""Sets the finished_at of this CreateAutoExpireScanTaskResponse.
 
         扫描任务结束时间,格式为：\"2020-06-15T02:21:18.669Z\"（创建扫描任务时此值为null，不返回）
 

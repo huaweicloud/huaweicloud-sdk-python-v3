@@ -41,7 +41,7 @@ class BatchListMultiCloudResourceResponseData:
     }
 
     def __init__(self, id=None, resource_id=None, name=None, vendor=None, type=None, datasource=None, region_id=None, properties=None, create_time=None):
-        """BatchListMultiCloudResourceResponseData
+        r"""BatchListMultiCloudResourceResponseData
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @property
     def id(self):
-        """Gets the id of this BatchListMultiCloudResourceResponseData.
+        r"""Gets the id of this BatchListMultiCloudResourceResponseData.
 
         CMDB生成uuid
 
@@ -110,7 +110,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchListMultiCloudResourceResponseData.
+        r"""Sets the id of this BatchListMultiCloudResourceResponseData.
 
         CMDB生成uuid
 
@@ -121,7 +121,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchListMultiCloudResourceResponseData.
+        r"""Gets the resource_id of this BatchListMultiCloudResourceResponseData.
 
         在云厂商上存的资源id
 
@@ -132,7 +132,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchListMultiCloudResourceResponseData.
+        r"""Sets the resource_id of this BatchListMultiCloudResourceResponseData.
 
         在云厂商上存的资源id
 
@@ -143,7 +143,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @property
     def name(self):
-        """Gets the name of this BatchListMultiCloudResourceResponseData.
+        r"""Gets the name of this BatchListMultiCloudResourceResponseData.
 
         资源名称
 
@@ -154,7 +154,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchListMultiCloudResourceResponseData.
+        r"""Sets the name of this BatchListMultiCloudResourceResponseData.
 
         资源名称
 
@@ -165,7 +165,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @property
     def vendor(self):
-        """Gets the vendor of this BatchListMultiCloudResourceResponseData.
+        r"""Gets the vendor of this BatchListMultiCloudResourceResponseData.
 
         云厂商
 
@@ -176,7 +176,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @vendor.setter
     def vendor(self, vendor):
-        """Sets the vendor of this BatchListMultiCloudResourceResponseData.
+        r"""Sets the vendor of this BatchListMultiCloudResourceResponseData.
 
         云厂商
 
@@ -187,7 +187,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @property
     def type(self):
-        """Gets the type of this BatchListMultiCloudResourceResponseData.
+        r"""Gets the type of this BatchListMultiCloudResourceResponseData.
 
         资源类型
 
@@ -198,7 +198,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BatchListMultiCloudResourceResponseData.
+        r"""Sets the type of this BatchListMultiCloudResourceResponseData.
 
         资源类型
 
@@ -209,7 +209,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @property
     def datasource(self):
-        """Gets the datasource of this BatchListMultiCloudResourceResponseData.
+        r"""Gets the datasource of this BatchListMultiCloudResourceResponseData.
 
         云厂商账户id
 
@@ -220,7 +220,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @datasource.setter
     def datasource(self, datasource):
-        """Sets the datasource of this BatchListMultiCloudResourceResponseData.
+        r"""Sets the datasource of this BatchListMultiCloudResourceResponseData.
 
         云厂商账户id
 
@@ -231,7 +231,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @property
     def region_id(self):
-        """Gets the region_id of this BatchListMultiCloudResourceResponseData.
+        r"""Gets the region_id of this BatchListMultiCloudResourceResponseData.
 
         regionId
 
@@ -242,7 +242,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this BatchListMultiCloudResourceResponseData.
+        r"""Sets the region_id of this BatchListMultiCloudResourceResponseData.
 
         regionId
 
@@ -253,7 +253,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @property
     def properties(self):
-        """Gets the properties of this BatchListMultiCloudResourceResponseData.
+        r"""Gets the properties of this BatchListMultiCloudResourceResponseData.
 
         资源详细属性
 
@@ -264,7 +264,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this BatchListMultiCloudResourceResponseData.
+        r"""Sets the properties of this BatchListMultiCloudResourceResponseData.
 
         资源详细属性
 
@@ -275,7 +275,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @property
     def create_time(self):
-        """Gets the create_time of this BatchListMultiCloudResourceResponseData.
+        r"""Gets the create_time of this BatchListMultiCloudResourceResponseData.
 
         资源创建时间
 
@@ -286,7 +286,7 @@ class BatchListMultiCloudResourceResponseData:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this BatchListMultiCloudResourceResponseData.
+        r"""Sets the create_time of this BatchListMultiCloudResourceResponseData.
 
         资源创建时间
 

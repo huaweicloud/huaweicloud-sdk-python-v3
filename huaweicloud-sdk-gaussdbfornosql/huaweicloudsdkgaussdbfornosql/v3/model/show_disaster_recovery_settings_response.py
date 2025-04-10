@@ -28,7 +28,7 @@ class ShowDisasterRecoverySettingsResponse(SdkResponse):
     }
 
     def __init__(self, disaster_recovery_settings=None, total_count=None):
-        """ShowDisasterRecoverySettingsResponse
+        r"""ShowDisasterRecoverySettingsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDisasterRecoverySettingsResponse(SdkResponse):
 
     @property
     def disaster_recovery_settings(self):
-        """Gets the disaster_recovery_settings of this ShowDisasterRecoverySettingsResponse.
+        r"""Gets the disaster_recovery_settings of this ShowDisasterRecoverySettingsResponse.
 
         容灾切换的故障节点比例列表。
 
@@ -62,7 +62,7 @@ class ShowDisasterRecoverySettingsResponse(SdkResponse):
 
     @disaster_recovery_settings.setter
     def disaster_recovery_settings(self, disaster_recovery_settings):
-        """Sets the disaster_recovery_settings of this ShowDisasterRecoverySettingsResponse.
+        r"""Sets the disaster_recovery_settings of this ShowDisasterRecoverySettingsResponse.
 
         容灾切换的故障节点比例列表。
 
@@ -73,7 +73,7 @@ class ShowDisasterRecoverySettingsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowDisasterRecoverySettingsResponse.
+        r"""Gets the total_count of this ShowDisasterRecoverySettingsResponse.
 
         总记录数。
 
@@ -84,7 +84,7 @@ class ShowDisasterRecoverySettingsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowDisasterRecoverySettingsResponse.
+        r"""Sets the total_count of this ShowDisasterRecoverySettingsResponse.
 
         总记录数。
 

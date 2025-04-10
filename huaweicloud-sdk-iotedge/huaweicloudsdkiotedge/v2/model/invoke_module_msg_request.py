@@ -29,7 +29,7 @@ class InvokeModuleMsgRequest:
     }
 
     def __init__(self, edge_node_id=None, module_id=None, body=None):
-        """InvokeModuleMsgRequest
+        r"""InvokeModuleMsgRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class InvokeModuleMsgRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this InvokeModuleMsgRequest.
+        r"""Gets the edge_node_id of this InvokeModuleMsgRequest.
 
         边缘节点ID
 
@@ -66,7 +66,7 @@ class InvokeModuleMsgRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this InvokeModuleMsgRequest.
+        r"""Sets the edge_node_id of this InvokeModuleMsgRequest.
 
         边缘节点ID
 
@@ -77,7 +77,7 @@ class InvokeModuleMsgRequest:
 
     @property
     def module_id(self):
-        """Gets the module_id of this InvokeModuleMsgRequest.
+        r"""Gets the module_id of this InvokeModuleMsgRequest.
 
         边缘模块ID
 
@@ -88,7 +88,7 @@ class InvokeModuleMsgRequest:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this InvokeModuleMsgRequest.
+        r"""Sets the module_id of this InvokeModuleMsgRequest.
 
         边缘模块ID
 
@@ -99,7 +99,7 @@ class InvokeModuleMsgRequest:
 
     @property
     def body(self):
-        """Gets the body of this InvokeModuleMsgRequest.
+        r"""Gets the body of this InvokeModuleMsgRequest.
 
         :return: The body of this InvokeModuleMsgRequest.
         :rtype: object
@@ -108,7 +108,7 @@ class InvokeModuleMsgRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this InvokeModuleMsgRequest.
+        r"""Sets the body of this InvokeModuleMsgRequest.
 
         :param body: The body of this InvokeModuleMsgRequest.
         :type body: object

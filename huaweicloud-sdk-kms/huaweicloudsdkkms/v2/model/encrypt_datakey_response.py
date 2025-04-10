@@ -30,7 +30,7 @@ class EncryptDatakeyResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, cipher_text=None, datakey_length=None):
-        """EncryptDatakeyResponse
+        r"""EncryptDatakeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class EncryptDatakeyResponse(SdkResponse):
 
     @property
     def key_id(self):
-        """Gets the key_id of this EncryptDatakeyResponse.
+        r"""Gets the key_id of this EncryptDatakeyResponse.
 
         密钥ID
 
@@ -69,7 +69,7 @@ class EncryptDatakeyResponse(SdkResponse):
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this EncryptDatakeyResponse.
+        r"""Sets the key_id of this EncryptDatakeyResponse.
 
         密钥ID
 
@@ -80,7 +80,7 @@ class EncryptDatakeyResponse(SdkResponse):
 
     @property
     def cipher_text(self):
-        """Gets the cipher_text of this EncryptDatakeyResponse.
+        r"""Gets the cipher_text of this EncryptDatakeyResponse.
 
         DEK密文16进制，两位表示1byte。
 
@@ -91,7 +91,7 @@ class EncryptDatakeyResponse(SdkResponse):
 
     @cipher_text.setter
     def cipher_text(self, cipher_text):
-        """Sets the cipher_text of this EncryptDatakeyResponse.
+        r"""Sets the cipher_text of this EncryptDatakeyResponse.
 
         DEK密文16进制，两位表示1byte。
 
@@ -102,7 +102,7 @@ class EncryptDatakeyResponse(SdkResponse):
 
     @property
     def datakey_length(self):
-        """Gets the datakey_length of this EncryptDatakeyResponse.
+        r"""Gets the datakey_length of this EncryptDatakeyResponse.
 
         DEK字节长度。
 
@@ -113,7 +113,7 @@ class EncryptDatakeyResponse(SdkResponse):
 
     @datakey_length.setter
     def datakey_length(self, datakey_length):
-        """Sets the datakey_length of this EncryptDatakeyResponse.
+        r"""Sets the datakey_length of this EncryptDatakeyResponse.
 
         DEK字节长度。
 

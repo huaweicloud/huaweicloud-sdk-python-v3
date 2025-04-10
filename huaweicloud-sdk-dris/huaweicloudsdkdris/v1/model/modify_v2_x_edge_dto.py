@@ -47,7 +47,7 @@ class ModifyV2XEdgeDTO:
     }
 
     def __init__(self, name=None, description=None, esn=None, ip=None, port=None, position_description=None, location=None, camera_ids=None, radar_ids=None, local_rsus=None, edge_general_config=None, edge_advance_config=None):
-        """ModifyV2XEdgeDTO
+        r"""ModifyV2XEdgeDTO
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ModifyV2XEdgeDTO:
 
     @property
     def name(self):
-        """Gets the name of this ModifyV2XEdgeDTO.
+        r"""Gets the name of this ModifyV2XEdgeDTO.
 
         **参数说明**：名称。  **取值范围**：长度不超过128，只允许中文、字母、数字、以及_.-等字符的组合。
 
@@ -131,7 +131,7 @@ class ModifyV2XEdgeDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyV2XEdgeDTO.
+        r"""Sets the name of this ModifyV2XEdgeDTO.
 
         **参数说明**：名称。  **取值范围**：长度不超过128，只允许中文、字母、数字、以及_.-等字符的组合。
 
@@ -142,7 +142,7 @@ class ModifyV2XEdgeDTO:
 
     @property
     def description(self):
-        """Gets the description of this ModifyV2XEdgeDTO.
+        r"""Gets the description of this ModifyV2XEdgeDTO.
 
         **参数说明**：Edge描述。  **取值范围**：长度不超过255，只允许中文、字母、数字、以及_.-等字符的组合。
 
@@ -153,7 +153,7 @@ class ModifyV2XEdgeDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModifyV2XEdgeDTO.
+        r"""Sets the description of this ModifyV2XEdgeDTO.
 
         **参数说明**：Edge描述。  **取值范围**：长度不超过255，只允许中文、字母、数字、以及_.-等字符的组合。
 
@@ -164,7 +164,7 @@ class ModifyV2XEdgeDTO:
 
     @property
     def esn(self):
-        """Gets the esn of this ModifyV2XEdgeDTO.
+        r"""Gets the esn of this ModifyV2XEdgeDTO.
 
         **参数说明**：设备编码。仅用于一致性检查，不可修改。  **取值范围**：长度不超过64，只允许中文、字母、数字、以及_等字符的组合。
 
@@ -175,7 +175,7 @@ class ModifyV2XEdgeDTO:
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this ModifyV2XEdgeDTO.
+        r"""Sets the esn of this ModifyV2XEdgeDTO.
 
         **参数说明**：设备编码。仅用于一致性检查，不可修改。  **取值范围**：长度不超过64，只允许中文、字母、数字、以及_等字符的组合。
 
@@ -186,7 +186,7 @@ class ModifyV2XEdgeDTO:
 
     @property
     def ip(self):
-        """Gets the ip of this ModifyV2XEdgeDTO.
+        r"""Gets the ip of this ModifyV2XEdgeDTO.
 
         **参数说明**：网络IP，例如：127.0.0.1。
 
@@ -197,7 +197,7 @@ class ModifyV2XEdgeDTO:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ModifyV2XEdgeDTO.
+        r"""Sets the ip of this ModifyV2XEdgeDTO.
 
         **参数说明**：网络IP，例如：127.0.0.1。
 
@@ -208,7 +208,7 @@ class ModifyV2XEdgeDTO:
 
     @property
     def port(self):
-        """Gets the port of this ModifyV2XEdgeDTO.
+        r"""Gets the port of this ModifyV2XEdgeDTO.
 
         **参数说明**：ITS800,ATLAS 端口号。
 
@@ -219,7 +219,7 @@ class ModifyV2XEdgeDTO:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ModifyV2XEdgeDTO.
+        r"""Sets the port of this ModifyV2XEdgeDTO.
 
         **参数说明**：ITS800,ATLAS 端口号。
 
@@ -230,7 +230,7 @@ class ModifyV2XEdgeDTO:
 
     @property
     def position_description(self):
-        """Gets the position_description of this ModifyV2XEdgeDTO.
+        r"""Gets the position_description of this ModifyV2XEdgeDTO.
 
         **参数说明**：安装位置编码，由用户自定义。  **取值范围**：长度不低于1不超过128，只允许字母、数字、下划线（_）的组合。
 
@@ -241,7 +241,7 @@ class ModifyV2XEdgeDTO:
 
     @position_description.setter
     def position_description(self, position_description):
-        """Sets the position_description of this ModifyV2XEdgeDTO.
+        r"""Sets the position_description of this ModifyV2XEdgeDTO.
 
         **参数说明**：安装位置编码，由用户自定义。  **取值范围**：长度不低于1不超过128，只允许字母、数字、下划线（_）的组合。
 
@@ -252,7 +252,7 @@ class ModifyV2XEdgeDTO:
 
     @property
     def location(self):
-        """Gets the location of this ModifyV2XEdgeDTO.
+        r"""Gets the location of this ModifyV2XEdgeDTO.
 
         :return: The location of this ModifyV2XEdgeDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.Location`
@@ -261,7 +261,7 @@ class ModifyV2XEdgeDTO:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ModifyV2XEdgeDTO.
+        r"""Sets the location of this ModifyV2XEdgeDTO.
 
         :param location: The location of this ModifyV2XEdgeDTO.
         :type location: :class:`huaweicloudsdkdris.v1.Location`
@@ -270,7 +270,7 @@ class ModifyV2XEdgeDTO:
 
     @property
     def camera_ids(self):
-        """Gets the camera_ids of this ModifyV2XEdgeDTO.
+        r"""Gets the camera_ids of this ModifyV2XEdgeDTO.
 
         **参数说明**：摄像头ID列表。
 
@@ -281,7 +281,7 @@ class ModifyV2XEdgeDTO:
 
     @camera_ids.setter
     def camera_ids(self, camera_ids):
-        """Sets the camera_ids of this ModifyV2XEdgeDTO.
+        r"""Sets the camera_ids of this ModifyV2XEdgeDTO.
 
         **参数说明**：摄像头ID列表。
 
@@ -292,7 +292,7 @@ class ModifyV2XEdgeDTO:
 
     @property
     def radar_ids(self):
-        """Gets the radar_ids of this ModifyV2XEdgeDTO.
+        r"""Gets the radar_ids of this ModifyV2XEdgeDTO.
 
         **参数说明**：雷达ID列表。
 
@@ -303,7 +303,7 @@ class ModifyV2XEdgeDTO:
 
     @radar_ids.setter
     def radar_ids(self, radar_ids):
-        """Sets the radar_ids of this ModifyV2XEdgeDTO.
+        r"""Sets the radar_ids of this ModifyV2XEdgeDTO.
 
         **参数说明**：雷达ID列表。
 
@@ -314,7 +314,7 @@ class ModifyV2XEdgeDTO:
 
     @property
     def local_rsus(self):
-        """Gets the local_rsus of this ModifyV2XEdgeDTO.
+        r"""Gets the local_rsus of this ModifyV2XEdgeDTO.
 
         **参数说明**：Edge关联的本地RSU列表。
 
@@ -325,7 +325,7 @@ class ModifyV2XEdgeDTO:
 
     @local_rsus.setter
     def local_rsus(self, local_rsus):
-        """Sets the local_rsus of this ModifyV2XEdgeDTO.
+        r"""Sets the local_rsus of this ModifyV2XEdgeDTO.
 
         **参数说明**：Edge关联的本地RSU列表。
 
@@ -336,7 +336,7 @@ class ModifyV2XEdgeDTO:
 
     @property
     def edge_general_config(self):
-        """Gets the edge_general_config of this ModifyV2XEdgeDTO.
+        r"""Gets the edge_general_config of this ModifyV2XEdgeDTO.
 
         :return: The edge_general_config of this ModifyV2XEdgeDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.EdgeGeneralConfig`
@@ -345,7 +345,7 @@ class ModifyV2XEdgeDTO:
 
     @edge_general_config.setter
     def edge_general_config(self, edge_general_config):
-        """Sets the edge_general_config of this ModifyV2XEdgeDTO.
+        r"""Sets the edge_general_config of this ModifyV2XEdgeDTO.
 
         :param edge_general_config: The edge_general_config of this ModifyV2XEdgeDTO.
         :type edge_general_config: :class:`huaweicloudsdkdris.v1.EdgeGeneralConfig`
@@ -354,7 +354,7 @@ class ModifyV2XEdgeDTO:
 
     @property
     def edge_advance_config(self):
-        """Gets the edge_advance_config of this ModifyV2XEdgeDTO.
+        r"""Gets the edge_advance_config of this ModifyV2XEdgeDTO.
 
         **参数说明**：Edge高级配置（请谨慎修改，错误的配置将导致edge不可用），Json格式；如果想要删除整个edge_advance_config可以填写空Object（例如:{}）。如果想移除某个配置项，直接从配置数据中移除相应的属性即可。
 
@@ -365,7 +365,7 @@ class ModifyV2XEdgeDTO:
 
     @edge_advance_config.setter
     def edge_advance_config(self, edge_advance_config):
-        """Sets the edge_advance_config of this ModifyV2XEdgeDTO.
+        r"""Sets the edge_advance_config of this ModifyV2XEdgeDTO.
 
         **参数说明**：Edge高级配置（请谨慎修改，错误的配置将导致edge不可用），Json格式；如果想要删除整个edge_advance_config可以填写空Object（例如:{}）。如果想移除某个配置项，直接从配置数据中移除相应的属性即可。
 

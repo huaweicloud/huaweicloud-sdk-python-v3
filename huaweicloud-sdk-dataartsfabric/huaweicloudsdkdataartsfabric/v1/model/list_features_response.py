@@ -28,7 +28,7 @@ class ListFeaturesResponse(SdkResponse):
     }
 
     def __init__(self, configs=None, total=None):
-        """ListFeaturesResponse
+        r"""ListFeaturesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFeaturesResponse(SdkResponse):
 
     @property
     def configs(self):
-        """Gets the configs of this ListFeaturesResponse.
+        r"""Gets the configs of this ListFeaturesResponse.
 
         配置列表。
 
@@ -62,7 +62,7 @@ class ListFeaturesResponse(SdkResponse):
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ListFeaturesResponse.
+        r"""Sets the configs of this ListFeaturesResponse.
 
         配置列表。
 
@@ -73,7 +73,7 @@ class ListFeaturesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListFeaturesResponse.
+        r"""Gets the total of this ListFeaturesResponse.
 
         配置项总数。
 
@@ -84,7 +84,7 @@ class ListFeaturesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListFeaturesResponse.
+        r"""Sets the total of this ListFeaturesResponse.
 
         配置项总数。
 

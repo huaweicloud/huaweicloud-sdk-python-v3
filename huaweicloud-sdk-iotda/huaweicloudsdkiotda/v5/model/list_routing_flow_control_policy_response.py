@@ -30,7 +30,7 @@ class ListRoutingFlowControlPolicyResponse(SdkResponse):
     }
 
     def __init__(self, flowcontrol_policies=None, count=None, marker=None):
-        """ListRoutingFlowControlPolicyResponse
+        r"""ListRoutingFlowControlPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRoutingFlowControlPolicyResponse(SdkResponse):
 
     @property
     def flowcontrol_policies(self):
-        """Gets the flowcontrol_policies of this ListRoutingFlowControlPolicyResponse.
+        r"""Gets the flowcontrol_policies of this ListRoutingFlowControlPolicyResponse.
 
         数据流转流控策略列表。
 
@@ -69,7 +69,7 @@ class ListRoutingFlowControlPolicyResponse(SdkResponse):
 
     @flowcontrol_policies.setter
     def flowcontrol_policies(self, flowcontrol_policies):
-        """Sets the flowcontrol_policies of this ListRoutingFlowControlPolicyResponse.
+        r"""Sets the flowcontrol_policies of this ListRoutingFlowControlPolicyResponse.
 
         数据流转流控策略列表。
 
@@ -80,7 +80,7 @@ class ListRoutingFlowControlPolicyResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListRoutingFlowControlPolicyResponse.
+        r"""Gets the count of this ListRoutingFlowControlPolicyResponse.
 
         满足查询条件的记录总数。
 
@@ -91,7 +91,7 @@ class ListRoutingFlowControlPolicyResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListRoutingFlowControlPolicyResponse.
+        r"""Sets the count of this ListRoutingFlowControlPolicyResponse.
 
         满足查询条件的记录总数。
 
@@ -102,7 +102,7 @@ class ListRoutingFlowControlPolicyResponse(SdkResponse):
 
     @property
     def marker(self):
-        """Gets the marker of this ListRoutingFlowControlPolicyResponse.
+        r"""Gets the marker of this ListRoutingFlowControlPolicyResponse.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 
@@ -113,7 +113,7 @@ class ListRoutingFlowControlPolicyResponse(SdkResponse):
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRoutingFlowControlPolicyResponse.
+        r"""Sets the marker of this ListRoutingFlowControlPolicyResponse.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 

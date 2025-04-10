@@ -29,7 +29,7 @@ class CreateInstanceRequest:
     }
 
     def __init__(self, application_id=None, component_id=None, body=None):
-        """CreateInstanceRequest
+        r"""CreateInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateInstanceRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this CreateInstanceRequest.
+        r"""Gets the application_id of this CreateInstanceRequest.
 
         应用ID。
 
@@ -66,7 +66,7 @@ class CreateInstanceRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this CreateInstanceRequest.
+        r"""Sets the application_id of this CreateInstanceRequest.
 
         应用ID。
 
@@ -77,7 +77,7 @@ class CreateInstanceRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this CreateInstanceRequest.
+        r"""Gets the component_id of this CreateInstanceRequest.
 
         组件ID。
 
@@ -88,7 +88,7 @@ class CreateInstanceRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this CreateInstanceRequest.
+        r"""Sets the component_id of this CreateInstanceRequest.
 
         组件ID。
 
@@ -99,7 +99,7 @@ class CreateInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateInstanceRequest.
+        r"""Gets the body of this CreateInstanceRequest.
 
         :return: The body of this CreateInstanceRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceCreate`
@@ -108,7 +108,7 @@ class CreateInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInstanceRequest.
+        r"""Sets the body of this CreateInstanceRequest.
 
         :param body: The body of this CreateInstanceRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.InstanceCreate`

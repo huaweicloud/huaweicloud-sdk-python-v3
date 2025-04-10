@@ -39,7 +39,7 @@ class ListHostGroupsRequest:
     }
 
     def __init__(self, project_id=None, region_name=None, os=None, offset=None, limit=None, name=None, sort_key=None, sort_dir=None):
-        """ListHostGroupsRequest
+        r"""ListHostGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ListHostGroupsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListHostGroupsRequest.
+        r"""Gets the project_id of this ListHostGroupsRequest.
 
         项目id
 
@@ -101,7 +101,7 @@ class ListHostGroupsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListHostGroupsRequest.
+        r"""Sets the project_id of this ListHostGroupsRequest.
 
         项目id
 
@@ -112,7 +112,7 @@ class ListHostGroupsRequest:
 
     @property
     def region_name(self):
-        """Gets the region_name of this ListHostGroupsRequest.
+        r"""Gets the region_name of this ListHostGroupsRequest.
 
         局点信息
 
@@ -123,7 +123,7 @@ class ListHostGroupsRequest:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this ListHostGroupsRequest.
+        r"""Sets the region_name of this ListHostGroupsRequest.
 
         局点信息
 
@@ -134,7 +134,7 @@ class ListHostGroupsRequest:
 
     @property
     def os(self):
-        """Gets the os of this ListHostGroupsRequest.
+        r"""Gets the os of this ListHostGroupsRequest.
 
         操作系统：windows|linux
 
@@ -145,7 +145,7 @@ class ListHostGroupsRequest:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this ListHostGroupsRequest.
+        r"""Sets the os of this ListHostGroupsRequest.
 
         操作系统：windows|linux
 
@@ -156,7 +156,7 @@ class ListHostGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHostGroupsRequest.
+        r"""Gets the offset of this ListHostGroupsRequest.
 
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
@@ -167,7 +167,7 @@ class ListHostGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHostGroupsRequest.
+        r"""Sets the offset of this ListHostGroupsRequest.
 
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
@@ -178,7 +178,7 @@ class ListHostGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHostGroupsRequest.
+        r"""Gets the limit of this ListHostGroupsRequest.
 
         每页显示的条目数量，默认为1000
 
@@ -189,7 +189,7 @@ class ListHostGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHostGroupsRequest.
+        r"""Sets the limit of this ListHostGroupsRequest.
 
         每页显示的条目数量，默认为1000
 
@@ -200,7 +200,7 @@ class ListHostGroupsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListHostGroupsRequest.
+        r"""Gets the name of this ListHostGroupsRequest.
 
         主机集群名
 
@@ -211,7 +211,7 @@ class ListHostGroupsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListHostGroupsRequest.
+        r"""Sets the name of this ListHostGroupsRequest.
 
         主机集群名
 
@@ -222,7 +222,7 @@ class ListHostGroupsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListHostGroupsRequest.
+        r"""Gets the sort_key of this ListHostGroupsRequest.
 
         排序字段：nickName|NAME|OWNER_NAME|CREATE_TIME|name|owner_name|create_time，不传使用默认排序
 
@@ -233,7 +233,7 @@ class ListHostGroupsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListHostGroupsRequest.
+        r"""Sets the sort_key of this ListHostGroupsRequest.
 
         排序字段：nickName|NAME|OWNER_NAME|CREATE_TIME|name|owner_name|create_time，不传使用默认排序
 
@@ -244,7 +244,7 @@ class ListHostGroupsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListHostGroupsRequest.
+        r"""Gets the sort_dir of this ListHostGroupsRequest.
 
         排序方式：DESC、ASC，默认为DESC
 
@@ -255,7 +255,7 @@ class ListHostGroupsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListHostGroupsRequest.
+        r"""Sets the sort_dir of this ListHostGroupsRequest.
 
         排序方式：DESC、ASC，默认为DESC
 

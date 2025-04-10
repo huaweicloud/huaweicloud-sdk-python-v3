@@ -33,7 +33,7 @@ class ListBackupRequest:
     }
 
     def __init__(self, eihealth_project_id=None, limit=None, offset=None, sort_dir=None, sort_key=None):
-        """ListBackupRequest
+        r"""ListBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListBackupRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListBackupRequest.
+        r"""Gets the eihealth_project_id of this ListBackupRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -81,7 +81,7 @@ class ListBackupRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListBackupRequest.
+        r"""Sets the eihealth_project_id of this ListBackupRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -92,7 +92,7 @@ class ListBackupRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBackupRequest.
+        r"""Gets the limit of this ListBackupRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -103,7 +103,7 @@ class ListBackupRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBackupRequest.
+        r"""Sets the limit of this ListBackupRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -114,7 +114,7 @@ class ListBackupRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBackupRequest.
+        r"""Gets the offset of this ListBackupRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -125,7 +125,7 @@ class ListBackupRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBackupRequest.
+        r"""Sets the offset of this ListBackupRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -136,7 +136,7 @@ class ListBackupRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListBackupRequest.
+        r"""Gets the sort_dir of this ListBackupRequest.
 
         降序或升序（分别对应desc和asc，默认为desc）
 
@@ -147,7 +147,7 @@ class ListBackupRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListBackupRequest.
+        r"""Sets the sort_dir of this ListBackupRequest.
 
         降序或升序（分别对应desc和asc，默认为desc）
 
@@ -158,7 +158,7 @@ class ListBackupRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListBackupRequest.
+        r"""Gets the sort_key of this ListBackupRequest.
 
         排序字段（支持type, end_time）
 
@@ -169,7 +169,7 @@ class ListBackupRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListBackupRequest.
+        r"""Sets the sort_key of this ListBackupRequest.
 
         排序字段（支持type, end_time）
 

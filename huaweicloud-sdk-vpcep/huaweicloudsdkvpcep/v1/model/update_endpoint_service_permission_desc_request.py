@@ -29,7 +29,7 @@ class UpdateEndpointServicePermissionDescRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None, permission_id=None, body=None):
-        """UpdateEndpointServicePermissionDescRequest
+        r"""UpdateEndpointServicePermissionDescRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEndpointServicePermissionDescRequest:
 
     @property
     def vpc_endpoint_service_id(self):
-        """Gets the vpc_endpoint_service_id of this UpdateEndpointServicePermissionDescRequest.
+        r"""Gets the vpc_endpoint_service_id of this UpdateEndpointServicePermissionDescRequest.
 
         终端节点服务的ID。
 
@@ -66,7 +66,7 @@ class UpdateEndpointServicePermissionDescRequest:
 
     @vpc_endpoint_service_id.setter
     def vpc_endpoint_service_id(self, vpc_endpoint_service_id):
-        """Sets the vpc_endpoint_service_id of this UpdateEndpointServicePermissionDescRequest.
+        r"""Sets the vpc_endpoint_service_id of this UpdateEndpointServicePermissionDescRequest.
 
         终端节点服务的ID。
 
@@ -77,7 +77,7 @@ class UpdateEndpointServicePermissionDescRequest:
 
     @property
     def permission_id(self):
-        """Gets the permission_id of this UpdateEndpointServicePermissionDescRequest.
+        r"""Gets the permission_id of this UpdateEndpointServicePermissionDescRequest.
 
         白名单的ID。
 
@@ -88,7 +88,7 @@ class UpdateEndpointServicePermissionDescRequest:
 
     @permission_id.setter
     def permission_id(self, permission_id):
-        """Sets the permission_id of this UpdateEndpointServicePermissionDescRequest.
+        r"""Sets the permission_id of this UpdateEndpointServicePermissionDescRequest.
 
         白名单的ID。
 
@@ -99,7 +99,7 @@ class UpdateEndpointServicePermissionDescRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEndpointServicePermissionDescRequest.
+        r"""Gets the body of this UpdateEndpointServicePermissionDescRequest.
 
         :return: The body of this UpdateEndpointServicePermissionDescRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServicePermissionDescRequestBody`
@@ -108,7 +108,7 @@ class UpdateEndpointServicePermissionDescRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEndpointServicePermissionDescRequest.
+        r"""Sets the body of this UpdateEndpointServicePermissionDescRequest.
 
         :param body: The body of this UpdateEndpointServicePermissionDescRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServicePermissionDescRequestBody`

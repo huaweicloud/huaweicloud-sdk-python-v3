@@ -29,7 +29,7 @@ class PageInfo:
     }
 
     def __init__(self, next_marker=None, previous_marker=None, current_count=None):
-        """PageInfo
+        r"""PageInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PageInfo:
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this PageInfo.
+        r"""Gets the next_marker of this PageInfo.
 
         返回下一页的查询地址
 
@@ -68,7 +68,7 @@ class PageInfo:
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this PageInfo.
+        r"""Sets the next_marker of this PageInfo.
 
         返回下一页的查询地址
 
@@ -79,7 +79,7 @@ class PageInfo:
 
     @property
     def previous_marker(self):
-        """Gets the previous_marker of this PageInfo.
+        r"""Gets the previous_marker of this PageInfo.
 
         返回上一页的查询地址
 
@@ -90,7 +90,7 @@ class PageInfo:
 
     @previous_marker.setter
     def previous_marker(self, previous_marker):
-        """Sets the previous_marker of this PageInfo.
+        r"""Sets the previous_marker of this PageInfo.
 
         返回上一页的查询地址
 
@@ -101,7 +101,7 @@ class PageInfo:
 
     @property
     def current_count(self):
-        """Gets the current_count of this PageInfo.
+        r"""Gets the current_count of this PageInfo.
 
         返回条目数量
 
@@ -112,7 +112,7 @@ class PageInfo:
 
     @current_count.setter
     def current_count(self, current_count):
-        """Sets the current_count of this PageInfo.
+        r"""Sets the current_count of this PageInfo.
 
         返回条目数量
 

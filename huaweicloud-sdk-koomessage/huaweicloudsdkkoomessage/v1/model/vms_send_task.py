@@ -49,7 +49,7 @@ class VmsSendTask:
     }
 
     def __init__(self, task_id=None, task_name=None, task_state=None, tpl_id=None, tpl_name=None, operator=None, create_time=None, send_time=None, total_count=None, success_count=None, failed_count=None, timeout_count=None, exdata=None):
-        """VmsSendTask
+        r"""VmsSendTask
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class VmsSendTask:
 
     @property
     def task_id(self):
-        """Gets the task_id of this VmsSendTask.
+        r"""Gets the task_id of this VmsSendTask.
 
         智能信息基础版任务ID。
 
@@ -138,7 +138,7 @@ class VmsSendTask:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this VmsSendTask.
+        r"""Sets the task_id of this VmsSendTask.
 
         智能信息基础版任务ID。
 
@@ -149,7 +149,7 @@ class VmsSendTask:
 
     @property
     def task_name(self):
-        """Gets the task_name of this VmsSendTask.
+        r"""Gets the task_name of this VmsSendTask.
 
         智能信息基础版任务名称。
 
@@ -160,7 +160,7 @@ class VmsSendTask:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this VmsSendTask.
+        r"""Sets the task_name of this VmsSendTask.
 
         智能信息基础版任务名称。
 
@@ -171,7 +171,7 @@ class VmsSendTask:
 
     @property
     def task_state(self):
-        """Gets the task_state of this VmsSendTask.
+        r"""Gets the task_state of this VmsSendTask.
 
         智能信息基础版任务状态。
 
@@ -182,7 +182,7 @@ class VmsSendTask:
 
     @task_state.setter
     def task_state(self, task_state):
-        """Sets the task_state of this VmsSendTask.
+        r"""Sets the task_state of this VmsSendTask.
 
         智能信息基础版任务状态。
 
@@ -193,7 +193,7 @@ class VmsSendTask:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this VmsSendTask.
+        r"""Gets the tpl_id of this VmsSendTask.
 
         智能信息基础版模板ID。
 
@@ -204,7 +204,7 @@ class VmsSendTask:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this VmsSendTask.
+        r"""Sets the tpl_id of this VmsSendTask.
 
         智能信息基础版模板ID。
 
@@ -215,7 +215,7 @@ class VmsSendTask:
 
     @property
     def tpl_name(self):
-        """Gets the tpl_name of this VmsSendTask.
+        r"""Gets the tpl_name of this VmsSendTask.
 
         智能信息基础版模板名称。
 
@@ -226,7 +226,7 @@ class VmsSendTask:
 
     @tpl_name.setter
     def tpl_name(self, tpl_name):
-        """Sets the tpl_name of this VmsSendTask.
+        r"""Sets the tpl_name of this VmsSendTask.
 
         智能信息基础版模板名称。
 
@@ -237,7 +237,7 @@ class VmsSendTask:
 
     @property
     def operator(self):
-        """Gets the operator of this VmsSendTask.
+        r"""Gets the operator of this VmsSendTask.
 
         操作员。
 
@@ -248,7 +248,7 @@ class VmsSendTask:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this VmsSendTask.
+        r"""Sets the operator of this VmsSendTask.
 
         操作员。
 
@@ -259,7 +259,7 @@ class VmsSendTask:
 
     @property
     def create_time(self):
-        """Gets the create_time of this VmsSendTask.
+        r"""Gets the create_time of this VmsSendTask.
 
         智能信息基础版任务创建时间。
 
@@ -270,7 +270,7 @@ class VmsSendTask:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this VmsSendTask.
+        r"""Sets the create_time of this VmsSendTask.
 
         智能信息基础版任务创建时间。
 
@@ -281,7 +281,7 @@ class VmsSendTask:
 
     @property
     def send_time(self):
-        """Gets the send_time of this VmsSendTask.
+        r"""Gets the send_time of this VmsSendTask.
 
         智能信息基础版任务发送时间。
 
@@ -292,7 +292,7 @@ class VmsSendTask:
 
     @send_time.setter
     def send_time(self, send_time):
-        """Sets the send_time of this VmsSendTask.
+        r"""Sets the send_time of this VmsSendTask.
 
         智能信息基础版任务发送时间。
 
@@ -303,7 +303,7 @@ class VmsSendTask:
 
     @property
     def total_count(self):
-        """Gets the total_count of this VmsSendTask.
+        r"""Gets the total_count of this VmsSendTask.
 
         需要发送的手机号码总数（有效号码总数）。
 
@@ -314,7 +314,7 @@ class VmsSendTask:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this VmsSendTask.
+        r"""Sets the total_count of this VmsSendTask.
 
         需要发送的手机号码总数（有效号码总数）。
 
@@ -325,7 +325,7 @@ class VmsSendTask:
 
     @property
     def success_count(self):
-        """Gets the success_count of this VmsSendTask.
+        r"""Gets the success_count of this VmsSendTask.
 
         已经发送成功的手机号码总数。
 
@@ -336,7 +336,7 @@ class VmsSendTask:
 
     @success_count.setter
     def success_count(self, success_count):
-        """Sets the success_count of this VmsSendTask.
+        r"""Sets the success_count of this VmsSendTask.
 
         已经发送成功的手机号码总数。
 
@@ -347,7 +347,7 @@ class VmsSendTask:
 
     @property
     def failed_count(self):
-        """Gets the failed_count of this VmsSendTask.
+        r"""Gets the failed_count of this VmsSendTask.
 
         已经发送失败的手机号码总数。
 
@@ -358,7 +358,7 @@ class VmsSendTask:
 
     @failed_count.setter
     def failed_count(self, failed_count):
-        """Sets the failed_count of this VmsSendTask.
+        r"""Sets the failed_count of this VmsSendTask.
 
         已经发送失败的手机号码总数。
 
@@ -369,7 +369,7 @@ class VmsSendTask:
 
     @property
     def timeout_count(self):
-        """Gets the timeout_count of this VmsSendTask.
+        r"""Gets the timeout_count of this VmsSendTask.
 
         已经发送超时失败的手机号码总数（72小时没接收到状态认定为超时失败）。
 
@@ -380,7 +380,7 @@ class VmsSendTask:
 
     @timeout_count.setter
     def timeout_count(self, timeout_count):
-        """Sets the timeout_count of this VmsSendTask.
+        r"""Sets the timeout_count of this VmsSendTask.
 
         已经发送超时失败的手机号码总数（72小时没接收到状态认定为超时失败）。
 
@@ -391,7 +391,7 @@ class VmsSendTask:
 
     @property
     def exdata(self):
-        """Gets the exdata of this VmsSendTask.
+        r"""Gets the exdata of this VmsSendTask.
 
         扩展字段。  > 预留字段。 
 
@@ -402,7 +402,7 @@ class VmsSendTask:
 
     @exdata.setter
     def exdata(self, exdata):
-        """Sets the exdata of this VmsSendTask.
+        r"""Sets the exdata of this VmsSendTask.
 
         扩展字段。  > 预留字段。 
 

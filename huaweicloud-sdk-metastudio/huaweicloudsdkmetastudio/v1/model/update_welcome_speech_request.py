@@ -29,7 +29,7 @@ class UpdateWelcomeSpeechRequest:
     }
 
     def __init__(self, x_app_user_id=None, welcome_speech_id=None, body=None):
-        """UpdateWelcomeSpeechRequest
+        r"""UpdateWelcomeSpeechRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateWelcomeSpeechRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this UpdateWelcomeSpeechRequest.
+        r"""Gets the x_app_user_id of this UpdateWelcomeSpeechRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -67,7 +67,7 @@ class UpdateWelcomeSpeechRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this UpdateWelcomeSpeechRequest.
+        r"""Sets the x_app_user_id of this UpdateWelcomeSpeechRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -78,7 +78,7 @@ class UpdateWelcomeSpeechRequest:
 
     @property
     def welcome_speech_id(self):
-        """Gets the welcome_speech_id of this UpdateWelcomeSpeechRequest.
+        r"""Gets the welcome_speech_id of this UpdateWelcomeSpeechRequest.
 
         欢迎词ID。
 
@@ -89,7 +89,7 @@ class UpdateWelcomeSpeechRequest:
 
     @welcome_speech_id.setter
     def welcome_speech_id(self, welcome_speech_id):
-        """Sets the welcome_speech_id of this UpdateWelcomeSpeechRequest.
+        r"""Sets the welcome_speech_id of this UpdateWelcomeSpeechRequest.
 
         欢迎词ID。
 
@@ -100,7 +100,7 @@ class UpdateWelcomeSpeechRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateWelcomeSpeechRequest.
+        r"""Gets the body of this UpdateWelcomeSpeechRequest.
 
         :return: The body of this UpdateWelcomeSpeechRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateWelcomeSpeechReq`
@@ -109,7 +109,7 @@ class UpdateWelcomeSpeechRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateWelcomeSpeechRequest.
+        r"""Sets the body of this UpdateWelcomeSpeechRequest.
 
         :param body: The body of this UpdateWelcomeSpeechRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.UpdateWelcomeSpeechReq`

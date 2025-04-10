@@ -26,7 +26,7 @@ class BatchDeleteGlobalEipTagsResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """BatchDeleteGlobalEipTagsResponse
+        r"""BatchDeleteGlobalEipTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteGlobalEipTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchDeleteGlobalEipTagsResponse.
+        r"""Gets the x_request_id of this BatchDeleteGlobalEipTagsResponse.
 
         :return: The x_request_id of this BatchDeleteGlobalEipTagsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class BatchDeleteGlobalEipTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchDeleteGlobalEipTagsResponse.
+        r"""Sets the x_request_id of this BatchDeleteGlobalEipTagsResponse.
 
         :param x_request_id: The x_request_id of this BatchDeleteGlobalEipTagsResponse.
         :type x_request_id: str

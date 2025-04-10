@@ -37,7 +37,7 @@ class ActionInfo:
     }
 
     def __init__(self, action_name=None, progress=None, completed=None, start_time=None, end_time=None, result=None, logs=None):
-        """ActionInfo
+        r"""ActionInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ActionInfo:
 
     @property
     def action_name(self):
-        """Gets the action_name of this ActionInfo.
+        r"""Gets the action_name of this ActionInfo.
 
         操作名称。当前只允许Create,Expand,Restart,Delete,Shrink
 
@@ -96,7 +96,7 @@ class ActionInfo:
 
     @action_name.setter
     def action_name(self, action_name):
-        """Sets the action_name of this ActionInfo.
+        r"""Sets the action_name of this ActionInfo.
 
         操作名称。当前只允许Create,Expand,Restart,Delete,Shrink
 
@@ -107,7 +107,7 @@ class ActionInfo:
 
     @property
     def progress(self):
-        """Gets the progress of this ActionInfo.
+        r"""Gets the progress of this ActionInfo.
 
         操作进度，默认10
 
@@ -118,7 +118,7 @@ class ActionInfo:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ActionInfo.
+        r"""Sets the progress of this ActionInfo.
 
         操作进度，默认10
 
@@ -129,7 +129,7 @@ class ActionInfo:
 
     @property
     def completed(self):
-        """Gets the completed of this ActionInfo.
+        r"""Gets the completed of this ActionInfo.
 
         是否完成操作
 
@@ -140,7 +140,7 @@ class ActionInfo:
 
     @completed.setter
     def completed(self, completed):
-        """Sets the completed of this ActionInfo.
+        r"""Sets the completed of this ActionInfo.
 
         是否完成操作
 
@@ -151,7 +151,7 @@ class ActionInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ActionInfo.
+        r"""Gets the start_time of this ActionInfo.
 
         操作开始时间
 
@@ -162,7 +162,7 @@ class ActionInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ActionInfo.
+        r"""Sets the start_time of this ActionInfo.
 
         操作开始时间
 
@@ -173,7 +173,7 @@ class ActionInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ActionInfo.
+        r"""Gets the end_time of this ActionInfo.
 
         操作结束时间
 
@@ -184,7 +184,7 @@ class ActionInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ActionInfo.
+        r"""Sets the end_time of this ActionInfo.
 
         操作结束时间
 
@@ -195,7 +195,7 @@ class ActionInfo:
 
     @property
     def result(self):
-        """Gets the result of this ActionInfo.
+        r"""Gets the result of this ActionInfo.
 
         操作结果。success或者failed，默认空字符串
 
@@ -206,7 +206,7 @@ class ActionInfo:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ActionInfo.
+        r"""Sets the result of this ActionInfo.
 
         操作结果。success或者failed，默认空字符串
 
@@ -217,7 +217,7 @@ class ActionInfo:
 
     @property
     def logs(self):
-        """Gets the logs of this ActionInfo.
+        r"""Gets the logs of this ActionInfo.
 
         操作日志
 
@@ -228,7 +228,7 @@ class ActionInfo:
 
     @logs.setter
     def logs(self, logs):
-        """Sets the logs of this ActionInfo.
+        r"""Sets the logs of this ActionInfo.
 
         操作日志
 

@@ -33,7 +33,7 @@ class OptimizationResultItem:
     }
 
     def __init__(self, smiles=None, props=None, similarity=None, num_fulfilled_weak_constraints=None, score=None):
-        """OptimizationResultItem
+        r"""OptimizationResultItem
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class OptimizationResultItem:
 
     @property
     def smiles(self):
-        """Gets the smiles of this OptimizationResultItem.
+        r"""Gets the smiles of this OptimizationResultItem.
 
         分子SMILES表达式
 
@@ -77,7 +77,7 @@ class OptimizationResultItem:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this OptimizationResultItem.
+        r"""Sets the smiles of this OptimizationResultItem.
 
         分子SMILES表达式
 
@@ -88,7 +88,7 @@ class OptimizationResultItem:
 
     @property
     def props(self):
-        """Gets the props of this OptimizationResultItem.
+        r"""Gets the props of this OptimizationResultItem.
 
         分子ADMET属性值列表
 
@@ -99,7 +99,7 @@ class OptimizationResultItem:
 
     @props.setter
     def props(self, props):
-        """Sets the props of this OptimizationResultItem.
+        r"""Sets the props of this OptimizationResultItem.
 
         分子ADMET属性值列表
 
@@ -110,7 +110,7 @@ class OptimizationResultItem:
 
     @property
     def similarity(self):
-        """Gets the similarity of this OptimizationResultItem.
+        r"""Gets the similarity of this OptimizationResultItem.
 
         分子与初始分子的相似度
 
@@ -121,7 +121,7 @@ class OptimizationResultItem:
 
     @similarity.setter
     def similarity(self, similarity):
-        """Sets the similarity of this OptimizationResultItem.
+        r"""Sets the similarity of this OptimizationResultItem.
 
         分子与初始分子的相似度
 
@@ -132,7 +132,7 @@ class OptimizationResultItem:
 
     @property
     def num_fulfilled_weak_constraints(self):
-        """Gets the num_fulfilled_weak_constraints of this OptimizationResultItem.
+        r"""Gets the num_fulfilled_weak_constraints of this OptimizationResultItem.
 
         分子所满足的弱约束数量
 
@@ -143,7 +143,7 @@ class OptimizationResultItem:
 
     @num_fulfilled_weak_constraints.setter
     def num_fulfilled_weak_constraints(self, num_fulfilled_weak_constraints):
-        """Sets the num_fulfilled_weak_constraints of this OptimizationResultItem.
+        r"""Sets the num_fulfilled_weak_constraints of this OptimizationResultItem.
 
         分子所满足的弱约束数量
 
@@ -154,7 +154,7 @@ class OptimizationResultItem:
 
     @property
     def score(self):
-        """Gets the score of this OptimizationResultItem.
+        r"""Gets the score of this OptimizationResultItem.
 
         分子的打分
 
@@ -165,7 +165,7 @@ class OptimizationResultItem:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this OptimizationResultItem.
+        r"""Sets the score of this OptimizationResultItem.
 
         分子的打分
 

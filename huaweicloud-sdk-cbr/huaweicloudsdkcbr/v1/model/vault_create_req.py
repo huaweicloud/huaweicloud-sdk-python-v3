@@ -25,7 +25,7 @@ class VaultCreateReq:
     }
 
     def __init__(self, vault=None):
-        """VaultCreateReq
+        r"""VaultCreateReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class VaultCreateReq:
 
     @property
     def vault(self):
-        """Gets the vault of this VaultCreateReq.
+        r"""Gets the vault of this VaultCreateReq.
 
         :return: The vault of this VaultCreateReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultCreate`
@@ -51,7 +51,7 @@ class VaultCreateReq:
 
     @vault.setter
     def vault(self, vault):
-        """Sets the vault of this VaultCreateReq.
+        r"""Sets the vault of this VaultCreateReq.
 
         :param vault: The vault of this VaultCreateReq.
         :type vault: :class:`huaweicloudsdkcbr.v1.VaultCreate`

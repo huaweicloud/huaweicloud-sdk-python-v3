@@ -26,7 +26,7 @@ class UpdateGaussMySqlQuotasResponse(SdkResponse):
     }
 
     def __init__(self, quota_list=None):
-        """UpdateGaussMySqlQuotasResponse
+        r"""UpdateGaussMySqlQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateGaussMySqlQuotasResponse(SdkResponse):
 
     @property
     def quota_list(self):
-        """Gets the quota_list of this UpdateGaussMySqlQuotasResponse.
+        r"""Gets the quota_list of this UpdateGaussMySqlQuotasResponse.
 
         资源列表对象。
 
@@ -55,7 +55,7 @@ class UpdateGaussMySqlQuotasResponse(SdkResponse):
 
     @quota_list.setter
     def quota_list(self, quota_list):
-        """Sets the quota_list of this UpdateGaussMySqlQuotasResponse.
+        r"""Sets the quota_list of this UpdateGaussMySqlQuotasResponse.
 
         资源列表对象。
 

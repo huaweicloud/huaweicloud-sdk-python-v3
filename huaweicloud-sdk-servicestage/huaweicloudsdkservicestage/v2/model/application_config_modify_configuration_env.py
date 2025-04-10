@@ -27,7 +27,7 @@ class ApplicationConfigModifyConfigurationEnv:
     }
 
     def __init__(self, name=None, value=None):
-        """ApplicationConfigModifyConfigurationEnv
+        r"""ApplicationConfigModifyConfigurationEnv
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ApplicationConfigModifyConfigurationEnv:
 
     @property
     def name(self):
-        """Gets the name of this ApplicationConfigModifyConfigurationEnv.
+        r"""Gets the name of this ApplicationConfigModifyConfigurationEnv.
 
         环境变量名称。
 
@@ -59,7 +59,7 @@ class ApplicationConfigModifyConfigurationEnv:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicationConfigModifyConfigurationEnv.
+        r"""Sets the name of this ApplicationConfigModifyConfigurationEnv.
 
         环境变量名称。
 
@@ -70,7 +70,7 @@ class ApplicationConfigModifyConfigurationEnv:
 
     @property
     def value(self):
-        """Gets the value of this ApplicationConfigModifyConfigurationEnv.
+        r"""Gets the value of this ApplicationConfigModifyConfigurationEnv.
 
         环境变量取值。
 
@@ -81,7 +81,7 @@ class ApplicationConfigModifyConfigurationEnv:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ApplicationConfigModifyConfigurationEnv.
+        r"""Sets the value of this ApplicationConfigModifyConfigurationEnv.
 
         环境变量取值。
 

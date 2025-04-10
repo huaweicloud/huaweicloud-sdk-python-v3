@@ -25,7 +25,7 @@ class CheckNoNewAccessRequest:
     }
 
     def __init__(self, body=None):
-        """CheckNoNewAccessRequest
+        r"""CheckNoNewAccessRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckNoNewAccessRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckNoNewAccessRequest.
+        r"""Gets the body of this CheckNoNewAccessRequest.
 
         :return: The body of this CheckNoNewAccessRequest.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.CheckNoNewAccessReqBody`
@@ -52,7 +52,7 @@ class CheckNoNewAccessRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckNoNewAccessRequest.
+        r"""Sets the body of this CheckNoNewAccessRequest.
 
         :param body: The body of this CheckNoNewAccessRequest.
         :type body: :class:`huaweicloudsdkiamaccessanalyzer.v1.CheckNoNewAccessReqBody`

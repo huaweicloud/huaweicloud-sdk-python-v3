@@ -31,7 +31,7 @@ class ListIaConfigsRequest:
     }
 
     def __init__(self, node_id=None, ia_id=None, offset=None, limit=None):
-        """ListIaConfigsRequest
+        r"""ListIaConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListIaConfigsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListIaConfigsRequest.
+        r"""Gets the node_id of this ListIaConfigsRequest.
 
         边缘节点ID
 
@@ -73,7 +73,7 @@ class ListIaConfigsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListIaConfigsRequest.
+        r"""Sets the node_id of this ListIaConfigsRequest.
 
         边缘节点ID
 
@@ -84,7 +84,7 @@ class ListIaConfigsRequest:
 
     @property
     def ia_id(self):
-        """Gets the ia_id of this ListIaConfigsRequest.
+        r"""Gets the ia_id of this ListIaConfigsRequest.
 
         边侧第三方应用的模块ID
 
@@ -95,7 +95,7 @@ class ListIaConfigsRequest:
 
     @ia_id.setter
     def ia_id(self, ia_id):
-        """Sets the ia_id of this ListIaConfigsRequest.
+        r"""Sets the ia_id of this ListIaConfigsRequest.
 
         边侧第三方应用的模块ID
 
@@ -106,7 +106,7 @@ class ListIaConfigsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListIaConfigsRequest.
+        r"""Gets the offset of this ListIaConfigsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -117,7 +117,7 @@ class ListIaConfigsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListIaConfigsRequest.
+        r"""Sets the offset of this ListIaConfigsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -128,7 +128,7 @@ class ListIaConfigsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListIaConfigsRequest.
+        r"""Gets the limit of this ListIaConfigsRequest.
 
         每页记录数，取值范围为非负整数，默认值为10
 
@@ -139,7 +139,7 @@ class ListIaConfigsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListIaConfigsRequest.
+        r"""Sets the limit of this ListIaConfigsRequest.
 
         每页记录数，取值范围为非负整数，默认值为10
 

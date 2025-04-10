@@ -49,7 +49,7 @@ class ListAlarmsRespAlarms:
     }
 
     def __init__(self, alarm_id=None, name=None, description=None, namespace=None, policies=None, resources=None, type=None, enabled=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None):
-        """ListAlarmsRespAlarms
+        r"""ListAlarmsRespAlarms
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListAlarmsRespAlarms:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this ListAlarmsRespAlarms.
+        r"""Gets the alarm_id of this ListAlarmsRespAlarms.
 
         告警规则id，以al开头，包含22个数字或字母
 
@@ -138,7 +138,7 @@ class ListAlarmsRespAlarms:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this ListAlarmsRespAlarms.
+        r"""Sets the alarm_id of this ListAlarmsRespAlarms.
 
         告警规则id，以al开头，包含22个数字或字母
 
@@ -149,7 +149,7 @@ class ListAlarmsRespAlarms:
 
     @property
     def name(self):
-        """Gets the name of this ListAlarmsRespAlarms.
+        r"""Gets the name of this ListAlarmsRespAlarms.
 
         告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
 
@@ -160,7 +160,7 @@ class ListAlarmsRespAlarms:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAlarmsRespAlarms.
+        r"""Sets the name of this ListAlarmsRespAlarms.
 
         告警名称, 只能包含0-9/a-z/A-Z/_/-或汉字，长度1-128
 
@@ -171,7 +171,7 @@ class ListAlarmsRespAlarms:
 
     @property
     def description(self):
-        """Gets the description of this ListAlarmsRespAlarms.
+        r"""Gets the description of this ListAlarmsRespAlarms.
 
         告警描述，长度0-256
 
@@ -182,7 +182,7 @@ class ListAlarmsRespAlarms:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListAlarmsRespAlarms.
+        r"""Sets the description of this ListAlarmsRespAlarms.
 
         告警描述，长度0-256
 
@@ -193,7 +193,7 @@ class ListAlarmsRespAlarms:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListAlarmsRespAlarms.
+        r"""Gets the namespace of this ListAlarmsRespAlarms.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -204,7 +204,7 @@ class ListAlarmsRespAlarms:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListAlarmsRespAlarms.
+        r"""Sets the namespace of this ListAlarmsRespAlarms.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -215,7 +215,7 @@ class ListAlarmsRespAlarms:
 
     @property
     def policies(self):
-        """Gets the policies of this ListAlarmsRespAlarms.
+        r"""Gets the policies of this ListAlarmsRespAlarms.
 
         告警策略
 
@@ -226,7 +226,7 @@ class ListAlarmsRespAlarms:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListAlarmsRespAlarms.
+        r"""Sets the policies of this ListAlarmsRespAlarms.
 
         告警策略
 
@@ -237,7 +237,7 @@ class ListAlarmsRespAlarms:
 
     @property
     def resources(self):
-        """Gets the resources of this ListAlarmsRespAlarms.
+        r"""Gets the resources of this ListAlarmsRespAlarms.
 
         资源列表，关联资源需要使用查询告警规则资源接口获取
 
@@ -248,7 +248,7 @@ class ListAlarmsRespAlarms:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListAlarmsRespAlarms.
+        r"""Sets the resources of this ListAlarmsRespAlarms.
 
         资源列表，关联资源需要使用查询告警规则资源接口获取
 
@@ -259,7 +259,7 @@ class ListAlarmsRespAlarms:
 
     @property
     def type(self):
-        """Gets the type of this ListAlarmsRespAlarms.
+        r"""Gets the type of this ListAlarmsRespAlarms.
 
         :return: The type of this ListAlarmsRespAlarms.
         :rtype: :class:`huaweicloudsdkces.v2.AlarmType`
@@ -268,7 +268,7 @@ class ListAlarmsRespAlarms:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListAlarmsRespAlarms.
+        r"""Sets the type of this ListAlarmsRespAlarms.
 
         :param type: The type of this ListAlarmsRespAlarms.
         :type type: :class:`huaweicloudsdkces.v2.AlarmType`
@@ -277,7 +277,7 @@ class ListAlarmsRespAlarms:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListAlarmsRespAlarms.
+        r"""Gets the enabled of this ListAlarmsRespAlarms.
 
         告警开关
 
@@ -288,7 +288,7 @@ class ListAlarmsRespAlarms:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListAlarmsRespAlarms.
+        r"""Sets the enabled of this ListAlarmsRespAlarms.
 
         告警开关
 
@@ -299,7 +299,7 @@ class ListAlarmsRespAlarms:
 
     @property
     def notification_enabled(self):
-        """Gets the notification_enabled of this ListAlarmsRespAlarms.
+        r"""Gets the notification_enabled of this ListAlarmsRespAlarms.
 
         是否开启告警通知
 
@@ -310,7 +310,7 @@ class ListAlarmsRespAlarms:
 
     @notification_enabled.setter
     def notification_enabled(self, notification_enabled):
-        """Sets the notification_enabled of this ListAlarmsRespAlarms.
+        r"""Sets the notification_enabled of this ListAlarmsRespAlarms.
 
         是否开启告警通知
 
@@ -321,7 +321,7 @@ class ListAlarmsRespAlarms:
 
     @property
     def alarm_notifications(self):
-        """Gets the alarm_notifications of this ListAlarmsRespAlarms.
+        r"""Gets the alarm_notifications of this ListAlarmsRespAlarms.
 
         告警触发的动作
 
@@ -332,7 +332,7 @@ class ListAlarmsRespAlarms:
 
     @alarm_notifications.setter
     def alarm_notifications(self, alarm_notifications):
-        """Sets the alarm_notifications of this ListAlarmsRespAlarms.
+        r"""Sets the alarm_notifications of this ListAlarmsRespAlarms.
 
         告警触发的动作
 
@@ -343,7 +343,7 @@ class ListAlarmsRespAlarms:
 
     @property
     def ok_notifications(self):
-        """Gets the ok_notifications of this ListAlarmsRespAlarms.
+        r"""Gets the ok_notifications of this ListAlarmsRespAlarms.
 
         告警恢复触发的动作
 
@@ -354,7 +354,7 @@ class ListAlarmsRespAlarms:
 
     @ok_notifications.setter
     def ok_notifications(self, ok_notifications):
-        """Sets the ok_notifications of this ListAlarmsRespAlarms.
+        r"""Sets the ok_notifications of this ListAlarmsRespAlarms.
 
         告警恢复触发的动作
 
@@ -365,7 +365,7 @@ class ListAlarmsRespAlarms:
 
     @property
     def notification_begin_time(self):
-        """Gets the notification_begin_time of this ListAlarmsRespAlarms.
+        r"""Gets the notification_begin_time of this ListAlarmsRespAlarms.
 
         告警通知开启时间
 
@@ -376,7 +376,7 @@ class ListAlarmsRespAlarms:
 
     @notification_begin_time.setter
     def notification_begin_time(self, notification_begin_time):
-        """Sets the notification_begin_time of this ListAlarmsRespAlarms.
+        r"""Sets the notification_begin_time of this ListAlarmsRespAlarms.
 
         告警通知开启时间
 
@@ -387,7 +387,7 @@ class ListAlarmsRespAlarms:
 
     @property
     def notification_end_time(self):
-        """Gets the notification_end_time of this ListAlarmsRespAlarms.
+        r"""Gets the notification_end_time of this ListAlarmsRespAlarms.
 
         告警通知关闭时间
 
@@ -398,7 +398,7 @@ class ListAlarmsRespAlarms:
 
     @notification_end_time.setter
     def notification_end_time(self, notification_end_time):
-        """Sets the notification_end_time of this ListAlarmsRespAlarms.
+        r"""Sets the notification_end_time of this ListAlarmsRespAlarms.
 
         告警通知关闭时间
 

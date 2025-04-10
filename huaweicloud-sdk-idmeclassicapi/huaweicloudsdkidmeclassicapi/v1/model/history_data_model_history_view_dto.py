@@ -45,7 +45,7 @@ class HistoryDataModelHistoryViewDTO:
     }
 
     def __init__(self, id=None, creator=None, create_time=None, modifier=None, last_update_time=None, rdm_version=None, rdm_operation_type=None, rdm_extension_type=None, rdm_delete_flag=None, tenant=None, class_name=None):
-        """HistoryDataModelHistoryViewDTO
+        r"""HistoryDataModelHistoryViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this HistoryDataModelHistoryViewDTO.
+        r"""Gets the id of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -124,7 +124,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HistoryDataModelHistoryViewDTO.
+        r"""Sets the id of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -135,7 +135,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this HistoryDataModelHistoryViewDTO.
+        r"""Gets the creator of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -146,7 +146,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this HistoryDataModelHistoryViewDTO.
+        r"""Sets the creator of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -157,7 +157,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this HistoryDataModelHistoryViewDTO.
+        r"""Gets the create_time of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -168,7 +168,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this HistoryDataModelHistoryViewDTO.
+        r"""Sets the create_time of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -179,7 +179,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this HistoryDataModelHistoryViewDTO.
+        r"""Gets the modifier of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -190,7 +190,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this HistoryDataModelHistoryViewDTO.
+        r"""Sets the modifier of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -201,7 +201,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this HistoryDataModelHistoryViewDTO.
+        r"""Gets the last_update_time of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  修改时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -212,7 +212,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this HistoryDataModelHistoryViewDTO.
+        r"""Sets the last_update_time of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  修改时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -223,7 +223,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @property
     def rdm_version(self):
-        """Gets the rdm_version of this HistoryDataModelHistoryViewDTO.
+        r"""Gets the rdm_version of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -234,7 +234,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @rdm_version.setter
     def rdm_version(self, rdm_version):
-        """Sets the rdm_version of this HistoryDataModelHistoryViewDTO.
+        r"""Sets the rdm_version of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -245,7 +245,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @property
     def rdm_operation_type(self):
-        """Gets the rdm_operation_type of this HistoryDataModelHistoryViewDTO.
+        r"""Gets the rdm_operation_type of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  操作类型。  **取值范围：**  - CREATE：创建操作。 - UPDATE：更新操作。 - LOGICALDELETE：软删除操作。 - DELETE：删除操作。 - CASCADE：级联操作。  **默认取值：**  不涉及。 
 
@@ -256,7 +256,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @rdm_operation_type.setter
     def rdm_operation_type(self, rdm_operation_type):
-        """Sets the rdm_operation_type of this HistoryDataModelHistoryViewDTO.
+        r"""Sets the rdm_operation_type of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  操作类型。  **取值范围：**  - CREATE：创建操作。 - UPDATE：更新操作。 - LOGICALDELETE：软删除操作。 - DELETE：删除操作。 - CASCADE：级联操作。  **默认取值：**  不涉及。 
 
@@ -267,7 +267,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this HistoryDataModelHistoryViewDTO.
+        r"""Gets the rdm_extension_type of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -278,7 +278,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this HistoryDataModelHistoryViewDTO.
+        r"""Sets the rdm_extension_type of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -289,7 +289,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @property
     def rdm_delete_flag(self):
-        """Gets the rdm_delete_flag of this HistoryDataModelHistoryViewDTO.
+        r"""Gets the rdm_delete_flag of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  删除标志。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -300,7 +300,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @rdm_delete_flag.setter
     def rdm_delete_flag(self, rdm_delete_flag):
-        """Sets the rdm_delete_flag of this HistoryDataModelHistoryViewDTO.
+        r"""Sets the rdm_delete_flag of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  删除标志。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -311,7 +311,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this HistoryDataModelHistoryViewDTO.
+        r"""Gets the tenant of this HistoryDataModelHistoryViewDTO.
 
         :return: The tenant of this HistoryDataModelHistoryViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantHistoryViewDTO`
@@ -320,7 +320,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this HistoryDataModelHistoryViewDTO.
+        r"""Sets the tenant of this HistoryDataModelHistoryViewDTO.
 
         :param tenant: The tenant of this HistoryDataModelHistoryViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantHistoryViewDTO`
@@ -329,7 +329,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this HistoryDataModelHistoryViewDTO.
+        r"""Gets the class_name of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  类名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -340,7 +340,7 @@ class HistoryDataModelHistoryViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this HistoryDataModelHistoryViewDTO.
+        r"""Sets the class_name of this HistoryDataModelHistoryViewDTO.
 
         **参数解释：**  类名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

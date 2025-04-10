@@ -27,7 +27,7 @@ class AddInternetBandwidthTagsRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """AddInternetBandwidthTagsRequest
+        r"""AddInternetBandwidthTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddInternetBandwidthTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this AddInternetBandwidthTagsRequest.
+        r"""Gets the resource_id of this AddInternetBandwidthTagsRequest.
 
         :return: The resource_id of this AddInternetBandwidthTagsRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class AddInternetBandwidthTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this AddInternetBandwidthTagsRequest.
+        r"""Sets the resource_id of this AddInternetBandwidthTagsRequest.
 
         :param resource_id: The resource_id of this AddInternetBandwidthTagsRequest.
         :type resource_id: str
@@ -67,7 +67,7 @@ class AddInternetBandwidthTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddInternetBandwidthTagsRequest.
+        r"""Gets the body of this AddInternetBandwidthTagsRequest.
 
         :return: The body of this AddInternetBandwidthTagsRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.CreateV2TagRequestBody`
@@ -76,7 +76,7 @@ class AddInternetBandwidthTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddInternetBandwidthTagsRequest.
+        r"""Sets the body of this AddInternetBandwidthTagsRequest.
 
         :param body: The body of this AddInternetBandwidthTagsRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.CreateV2TagRequestBody`

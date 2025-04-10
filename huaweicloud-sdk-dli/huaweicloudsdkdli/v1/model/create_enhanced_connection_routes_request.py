@@ -27,7 +27,7 @@ class CreateEnhancedConnectionRoutesRequest:
     }
 
     def __init__(self, connection_id=None, body=None):
-        """CreateEnhancedConnectionRoutesRequest
+        r"""CreateEnhancedConnectionRoutesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateEnhancedConnectionRoutesRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this CreateEnhancedConnectionRoutesRequest.
+        r"""Gets the connection_id of this CreateEnhancedConnectionRoutesRequest.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -60,7 +60,7 @@ class CreateEnhancedConnectionRoutesRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this CreateEnhancedConnectionRoutesRequest.
+        r"""Sets the connection_id of this CreateEnhancedConnectionRoutesRequest.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -71,7 +71,7 @@ class CreateEnhancedConnectionRoutesRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEnhancedConnectionRoutesRequest.
+        r"""Gets the body of this CreateEnhancedConnectionRoutesRequest.
 
         :return: The body of this CreateEnhancedConnectionRoutesRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRoutesRequestBody`
@@ -80,7 +80,7 @@ class CreateEnhancedConnectionRoutesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEnhancedConnectionRoutesRequest.
+        r"""Sets the body of this CreateEnhancedConnectionRoutesRequest.
 
         :param body: The body of this CreateEnhancedConnectionRoutesRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRoutesRequestBody`

@@ -27,7 +27,7 @@ class GovPolicyDetail:
     }
 
     def __init__(self, match_group=None, policies=None):
-        """GovPolicyDetail
+        r"""GovPolicyDetail
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class GovPolicyDetail:
 
     @property
     def match_group(self):
-        """Gets the match_group of this GovPolicyDetail.
+        r"""Gets the match_group of this GovPolicyDetail.
 
         :return: The match_group of this GovPolicyDetail.
         :rtype: :class:`huaweicloudsdkcse.v1.CreateBussinessScene`
@@ -59,7 +59,7 @@ class GovPolicyDetail:
 
     @match_group.setter
     def match_group(self, match_group):
-        """Sets the match_group of this GovPolicyDetail.
+        r"""Sets the match_group of this GovPolicyDetail.
 
         :param match_group: The match_group of this GovPolicyDetail.
         :type match_group: :class:`huaweicloudsdkcse.v1.CreateBussinessScene`
@@ -68,7 +68,7 @@ class GovPolicyDetail:
 
     @property
     def policies(self):
-        """Gets the policies of this GovPolicyDetail.
+        r"""Gets the policies of this GovPolicyDetail.
 
         治理策略定义。
 
@@ -79,7 +79,7 @@ class GovPolicyDetail:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this GovPolicyDetail.
+        r"""Sets the policies of this GovPolicyDetail.
 
         治理策略定义。
 

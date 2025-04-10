@@ -35,7 +35,7 @@ class DatasourceOrderPara:
     }
 
     def __init__(self, name=None, field=None, optional=None, sort=None, order=None, description=None):
-        """DatasourceOrderPara
+        r"""DatasourceOrderPara
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DatasourceOrderPara:
 
     @property
     def name(self):
-        """Gets the name of this DatasourceOrderPara.
+        r"""Gets the name of this DatasourceOrderPara.
 
         排序参数名称
 
@@ -89,7 +89,7 @@ class DatasourceOrderPara:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatasourceOrderPara.
+        r"""Sets the name of this DatasourceOrderPara.
 
         排序参数名称
 
@@ -100,7 +100,7 @@ class DatasourceOrderPara:
 
     @property
     def field(self):
-        """Gets the field of this DatasourceOrderPara.
+        r"""Gets the field of this DatasourceOrderPara.
 
         对应的参数字段
 
@@ -111,7 +111,7 @@ class DatasourceOrderPara:
 
     @field.setter
     def field(self, field):
-        """Sets the field of this DatasourceOrderPara.
+        r"""Sets the field of this DatasourceOrderPara.
 
         对应的参数字段
 
@@ -122,7 +122,7 @@ class DatasourceOrderPara:
 
     @property
     def optional(self):
-        """Gets the optional of this DatasourceOrderPara.
+        r"""Gets the optional of this DatasourceOrderPara.
 
         是否可选
 
@@ -133,7 +133,7 @@ class DatasourceOrderPara:
 
     @optional.setter
     def optional(self, optional):
-        """Sets the optional of this DatasourceOrderPara.
+        r"""Sets the optional of this DatasourceOrderPara.
 
         是否可选
 
@@ -144,7 +144,7 @@ class DatasourceOrderPara:
 
     @property
     def sort(self):
-        """Gets the sort of this DatasourceOrderPara.
+        r"""Gets the sort of this DatasourceOrderPara.
 
         排序方式
 
@@ -155,7 +155,7 @@ class DatasourceOrderPara:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this DatasourceOrderPara.
+        r"""Sets the sort of this DatasourceOrderPara.
 
         排序方式
 
@@ -166,7 +166,7 @@ class DatasourceOrderPara:
 
     @property
     def order(self):
-        """Gets the order of this DatasourceOrderPara.
+        r"""Gets the order of this DatasourceOrderPara.
 
         排序参数顺序
 
@@ -177,7 +177,7 @@ class DatasourceOrderPara:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this DatasourceOrderPara.
+        r"""Sets the order of this DatasourceOrderPara.
 
         排序参数顺序
 
@@ -188,7 +188,7 @@ class DatasourceOrderPara:
 
     @property
     def description(self):
-        """Gets the description of this DatasourceOrderPara.
+        r"""Gets the description of this DatasourceOrderPara.
 
         排序参数描述信息。
 
@@ -199,7 +199,7 @@ class DatasourceOrderPara:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DatasourceOrderPara.
+        r"""Sets the description of this DatasourceOrderPara.
 
         排序参数描述信息。
 

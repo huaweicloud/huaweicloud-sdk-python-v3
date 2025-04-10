@@ -23,7 +23,7 @@ class ErrorMsg:
     }
 
     def __init__(self):
-        """ErrorMsg
+        r"""ErrorMsg
 
         The model defined in huaweicloud sdk
 

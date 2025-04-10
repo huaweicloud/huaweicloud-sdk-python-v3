@@ -27,7 +27,7 @@ class BatchShowPipelinesLatestStatusRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """BatchShowPipelinesLatestStatusRequest
+        r"""BatchShowPipelinesLatestStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchShowPipelinesLatestStatusRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchShowPipelinesLatestStatusRequest.
+        r"""Gets the project_id of this BatchShowPipelinesLatestStatusRequest.
 
         项目ID
 
@@ -60,7 +60,7 @@ class BatchShowPipelinesLatestStatusRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchShowPipelinesLatestStatusRequest.
+        r"""Sets the project_id of this BatchShowPipelinesLatestStatusRequest.
 
         项目ID
 
@@ -71,7 +71,7 @@ class BatchShowPipelinesLatestStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchShowPipelinesLatestStatusRequest.
+        r"""Gets the body of this BatchShowPipelinesLatestStatusRequest.
 
         :return: The body of this BatchShowPipelinesLatestStatusRequest.
         :rtype: list[str]
@@ -80,7 +80,7 @@ class BatchShowPipelinesLatestStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchShowPipelinesLatestStatusRequest.
+        r"""Sets the body of this BatchShowPipelinesLatestStatusRequest.
 
         :param body: The body of this BatchShowPipelinesLatestStatusRequest.
         :type body: list[str]

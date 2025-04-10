@@ -27,7 +27,7 @@ class CopySnapshotRequest:
     }
 
     def __init__(self, snapshot_id=None, body=None):
-        """CopySnapshotRequest
+        r"""CopySnapshotRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CopySnapshotRequest:
 
     @property
     def snapshot_id(self):
-        """Gets the snapshot_id of this CopySnapshotRequest.
+        r"""Gets the snapshot_id of this CopySnapshotRequest.
 
         快照ID
 
@@ -60,7 +60,7 @@ class CopySnapshotRequest:
 
     @snapshot_id.setter
     def snapshot_id(self, snapshot_id):
-        """Sets the snapshot_id of this CopySnapshotRequest.
+        r"""Sets the snapshot_id of this CopySnapshotRequest.
 
         快照ID
 
@@ -71,7 +71,7 @@ class CopySnapshotRequest:
 
     @property
     def body(self):
-        """Gets the body of this CopySnapshotRequest.
+        r"""Gets the body of this CopySnapshotRequest.
 
         :return: The body of this CopySnapshotRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.LinkCopyReq`
@@ -80,7 +80,7 @@ class CopySnapshotRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CopySnapshotRequest.
+        r"""Sets the body of this CopySnapshotRequest.
 
         :param body: The body of this CopySnapshotRequest.
         :type body: :class:`huaweicloudsdkdws.v2.LinkCopyReq`

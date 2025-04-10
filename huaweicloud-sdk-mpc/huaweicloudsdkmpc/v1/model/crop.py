@@ -25,7 +25,7 @@ class Crop:
     }
 
     def __init__(self, duration=None):
-        """Crop
+        r"""Crop
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Crop:
 
     @property
     def duration(self):
-        """Gets the duration of this Crop.
+        r"""Gets the duration of this Crop.
 
         截取的视频时长。  单位：秒  从0秒开始算起 
 
@@ -54,7 +54,7 @@ class Crop:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this Crop.
+        r"""Sets the duration of this Crop.
 
         截取的视频时长。  单位：秒  从0秒开始算起 
 

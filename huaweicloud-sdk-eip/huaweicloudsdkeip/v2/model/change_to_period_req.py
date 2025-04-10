@@ -27,7 +27,7 @@ class ChangeToPeriodReq:
     }
 
     def __init__(self, publicip_ids=None, extend_param=None):
-        """ChangeToPeriodReq
+        r"""ChangeToPeriodReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ChangeToPeriodReq:
 
     @property
     def publicip_ids(self):
-        """Gets the publicip_ids of this ChangeToPeriodReq.
+        r"""Gets the publicip_ids of this ChangeToPeriodReq.
 
         待按需转包IP列表 
 
@@ -59,7 +59,7 @@ class ChangeToPeriodReq:
 
     @publicip_ids.setter
     def publicip_ids(self, publicip_ids):
-        """Sets the publicip_ids of this ChangeToPeriodReq.
+        r"""Sets the publicip_ids of this ChangeToPeriodReq.
 
         待按需转包IP列表 
 
@@ -70,7 +70,7 @@ class ChangeToPeriodReq:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this ChangeToPeriodReq.
+        r"""Gets the extend_param of this ChangeToPeriodReq.
 
         :return: The extend_param of this ChangeToPeriodReq.
         :rtype: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipExtendParamOption`
@@ -79,7 +79,7 @@ class ChangeToPeriodReq:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this ChangeToPeriodReq.
+        r"""Sets the extend_param of this ChangeToPeriodReq.
 
         :param extend_param: The extend_param of this ChangeToPeriodReq.
         :type extend_param: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipExtendParamOption`

@@ -29,7 +29,7 @@ class ResourceDef:
     }
 
     def __init__(self, spec_code=None, warm_up_num=None, max_num=None):
-        """ResourceDef
+        r"""ResourceDef
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResourceDef:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ResourceDef.
+        r"""Gets the spec_code of this ResourceDef.
 
         资源规格编码,从查询规格列表ListSpecs接口获取
 
@@ -66,7 +66,7 @@ class ResourceDef:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ResourceDef.
+        r"""Sets the spec_code of this ResourceDef.
 
         资源规格编码,从查询规格列表ListSpecs接口获取
 
@@ -77,7 +77,7 @@ class ResourceDef:
 
     @property
     def warm_up_num(self):
-        """Gets the warm_up_num of this ResourceDef.
+        r"""Gets the warm_up_num of this ResourceDef.
 
         预热资源量
 
@@ -88,7 +88,7 @@ class ResourceDef:
 
     @warm_up_num.setter
     def warm_up_num(self, warm_up_num):
-        """Sets the warm_up_num of this ResourceDef.
+        r"""Sets the warm_up_num of this ResourceDef.
 
         预热资源量
 
@@ -99,7 +99,7 @@ class ResourceDef:
 
     @property
     def max_num(self):
-        """Gets the max_num of this ResourceDef.
+        r"""Gets the max_num of this ResourceDef.
 
         最大资源量，不填默认为预热资源量，即不使用弹性资源
 
@@ -110,7 +110,7 @@ class ResourceDef:
 
     @max_num.setter
     def max_num(self, max_num):
-        """Sets the max_num of this ResourceDef.
+        r"""Sets the max_num of this ResourceDef.
 
         最大资源量，不填默认为预热资源量，即不使用弹性资源
 

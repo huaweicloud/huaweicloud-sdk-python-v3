@@ -25,7 +25,7 @@ class LanguageDetectionReq:
     }
 
     def __init__(self, text=None):
-        """LanguageDetectionReq
+        r"""LanguageDetectionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class LanguageDetectionReq:
 
     @property
     def text(self):
-        """Gets the text of this LanguageDetectionReq.
+        r"""Gets the text of this LanguageDetectionReq.
 
         需要识别语种的文本。仅支持utf-8编码，长度不超过2000字符。
 
@@ -53,7 +53,7 @@ class LanguageDetectionReq:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this LanguageDetectionReq.
+        r"""Sets the text of this LanguageDetectionReq.
 
         需要识别语种的文本。仅支持utf-8编码，长度不超过2000字符。
 

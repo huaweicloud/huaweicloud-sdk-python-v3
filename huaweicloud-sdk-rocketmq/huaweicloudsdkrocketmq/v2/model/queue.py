@@ -33,7 +33,7 @@ class Queue:
     }
 
     def __init__(self, id=None, lag=None, broker_offset=None, consumer_offset=None, last_message_time=None):
-        """Queue
+        r"""Queue
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Queue:
 
     @property
     def id(self):
-        """Gets the id of this Queue.
+        r"""Gets the id of this Queue.
 
         队列ID。
 
@@ -82,7 +82,7 @@ class Queue:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Queue.
+        r"""Sets the id of this Queue.
 
         队列ID。
 
@@ -93,7 +93,7 @@ class Queue:
 
     @property
     def lag(self):
-        """Gets the lag of this Queue.
+        r"""Gets the lag of this Queue.
 
         队列消费堆积总数。
 
@@ -104,7 +104,7 @@ class Queue:
 
     @lag.setter
     def lag(self, lag):
-        """Sets the lag of this Queue.
+        r"""Sets the lag of this Queue.
 
         队列消费堆积总数。
 
@@ -115,7 +115,7 @@ class Queue:
 
     @property
     def broker_offset(self):
-        """Gets the broker_offset of this Queue.
+        r"""Gets the broker_offset of this Queue.
 
         队列消息总数。
 
@@ -126,7 +126,7 @@ class Queue:
 
     @broker_offset.setter
     def broker_offset(self, broker_offset):
-        """Sets the broker_offset of this Queue.
+        r"""Sets the broker_offset of this Queue.
 
         队列消息总数。
 
@@ -137,7 +137,7 @@ class Queue:
 
     @property
     def consumer_offset(self):
-        """Gets the consumer_offset of this Queue.
+        r"""Gets the consumer_offset of this Queue.
 
         已消费消息数。
 
@@ -148,7 +148,7 @@ class Queue:
 
     @consumer_offset.setter
     def consumer_offset(self, consumer_offset):
-        """Sets the consumer_offset of this Queue.
+        r"""Sets the consumer_offset of this Queue.
 
         已消费消息数。
 
@@ -159,7 +159,7 @@ class Queue:
 
     @property
     def last_message_time(self):
-        """Gets the last_message_time of this Queue.
+        r"""Gets the last_message_time of this Queue.
 
         最新消费消息的存储时间，unix毫秒时间戳格式。
 
@@ -170,7 +170,7 @@ class Queue:
 
     @last_message_time.setter
     def last_message_time(self, last_message_time):
-        """Sets the last_message_time of this Queue.
+        r"""Sets the last_message_time of this Queue.
 
         最新消费消息的存储时间，unix毫秒时间戳格式。
 

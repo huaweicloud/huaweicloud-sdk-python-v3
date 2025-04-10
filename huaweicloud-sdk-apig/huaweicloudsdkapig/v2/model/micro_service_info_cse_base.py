@@ -27,7 +27,7 @@ class MicroServiceInfoCSEBase:
     }
 
     def __init__(self, engine_id=None, service_id=None):
-        """MicroServiceInfoCSEBase
+        r"""MicroServiceInfoCSEBase
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MicroServiceInfoCSEBase:
 
     @property
     def engine_id(self):
-        """Gets the engine_id of this MicroServiceInfoCSEBase.
+        r"""Gets the engine_id of this MicroServiceInfoCSEBase.
 
         微服务引擎编号
 
@@ -59,7 +59,7 @@ class MicroServiceInfoCSEBase:
 
     @engine_id.setter
     def engine_id(self, engine_id):
-        """Sets the engine_id of this MicroServiceInfoCSEBase.
+        r"""Sets the engine_id of this MicroServiceInfoCSEBase.
 
         微服务引擎编号
 
@@ -70,7 +70,7 @@ class MicroServiceInfoCSEBase:
 
     @property
     def service_id(self):
-        """Gets the service_id of this MicroServiceInfoCSEBase.
+        r"""Gets the service_id of this MicroServiceInfoCSEBase.
 
         微服务编号
 
@@ -81,7 +81,7 @@ class MicroServiceInfoCSEBase:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this MicroServiceInfoCSEBase.
+        r"""Sets the service_id of this MicroServiceInfoCSEBase.
 
         微服务编号
 

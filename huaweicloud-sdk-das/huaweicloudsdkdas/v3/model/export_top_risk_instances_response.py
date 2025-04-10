@@ -28,7 +28,7 @@ class ExportTopRiskInstancesResponse(SdkResponse):
     }
 
     def __init__(self, top_risk_info=None, total_count=None):
-        """ExportTopRiskInstancesResponse
+        r"""ExportTopRiskInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExportTopRiskInstancesResponse(SdkResponse):
 
     @property
     def top_risk_info(self):
-        """Gets the top_risk_info of this ExportTopRiskInstancesResponse.
+        r"""Gets the top_risk_info of this ExportTopRiskInstancesResponse.
 
         风险实例列表。
 
@@ -62,7 +62,7 @@ class ExportTopRiskInstancesResponse(SdkResponse):
 
     @top_risk_info.setter
     def top_risk_info(self, top_risk_info):
-        """Sets the top_risk_info of this ExportTopRiskInstancesResponse.
+        r"""Sets the top_risk_info of this ExportTopRiskInstancesResponse.
 
         风险实例列表。
 
@@ -73,7 +73,7 @@ class ExportTopRiskInstancesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ExportTopRiskInstancesResponse.
+        r"""Gets the total_count of this ExportTopRiskInstancesResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ExportTopRiskInstancesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ExportTopRiskInstancesResponse.
+        r"""Sets the total_count of this ExportTopRiskInstancesResponse.
 
         总数。
 

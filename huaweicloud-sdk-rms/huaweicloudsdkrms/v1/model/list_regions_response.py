@@ -26,7 +26,7 @@ class ListRegionsResponse(SdkResponse):
     }
 
     def __init__(self, value=None):
-        """ListRegionsResponse
+        r"""ListRegionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListRegionsResponse(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this ListRegionsResponse.
+        r"""Gets the value of this ListRegionsResponse.
 
         区域信息项列表
 
@@ -55,7 +55,7 @@ class ListRegionsResponse(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListRegionsResponse.
+        r"""Sets the value of this ListRegionsResponse.
 
         区域信息项列表
 

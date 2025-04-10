@@ -25,7 +25,7 @@ class DeleteSingleInstanceRequest:
     }
 
     def __init__(self, instance_id=None):
-        """DeleteSingleInstanceRequest
+        r"""DeleteSingleInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSingleInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteSingleInstanceRequest.
+        r"""Gets the instance_id of this DeleteSingleInstanceRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class DeleteSingleInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteSingleInstanceRequest.
+        r"""Sets the instance_id of this DeleteSingleInstanceRequest.
 
         实例ID。
 

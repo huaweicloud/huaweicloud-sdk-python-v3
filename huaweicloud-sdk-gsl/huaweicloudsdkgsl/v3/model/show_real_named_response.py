@@ -28,7 +28,7 @@ class ShowRealNamedResponse(SdkResponse):
     }
 
     def __init__(self, iccid=None, real_named=None):
-        """ShowRealNamedResponse
+        r"""ShowRealNamedResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowRealNamedResponse(SdkResponse):
 
     @property
     def iccid(self):
-        """Gets the iccid of this ShowRealNamedResponse.
+        r"""Gets the iccid of this ShowRealNamedResponse.
 
         ICCID
 
@@ -62,7 +62,7 @@ class ShowRealNamedResponse(SdkResponse):
 
     @iccid.setter
     def iccid(self, iccid):
-        """Sets the iccid of this ShowRealNamedResponse.
+        r"""Sets the iccid of this ShowRealNamedResponse.
 
         ICCID
 
@@ -73,7 +73,7 @@ class ShowRealNamedResponse(SdkResponse):
 
     @property
     def real_named(self):
-        """Gets the real_named of this ShowRealNamedResponse.
+        r"""Gets the real_named of this ShowRealNamedResponse.
 
         是否已实名认证: true表示是，false表示否。
 
@@ -84,7 +84,7 @@ class ShowRealNamedResponse(SdkResponse):
 
     @real_named.setter
     def real_named(self, real_named):
-        """Sets the real_named of this ShowRealNamedResponse.
+        r"""Sets the real_named of this ShowRealNamedResponse.
 
         是否已实名认证: true表示是，false表示否。
 

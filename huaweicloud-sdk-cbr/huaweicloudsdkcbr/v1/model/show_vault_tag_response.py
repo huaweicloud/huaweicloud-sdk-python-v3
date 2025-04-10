@@ -28,7 +28,7 @@ class ShowVaultTagResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, sys_tags=None):
-        """ShowVaultTagResponse
+        r"""ShowVaultTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowVaultTagResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowVaultTagResponse.
+        r"""Gets the tags of this ShowVaultTagResponse.
 
         标签列表 tags中key不重复
 
@@ -62,7 +62,7 @@ class ShowVaultTagResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowVaultTagResponse.
+        r"""Sets the tags of this ShowVaultTagResponse.
 
         标签列表 tags中key不重复
 
@@ -73,7 +73,7 @@ class ShowVaultTagResponse(SdkResponse):
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ShowVaultTagResponse.
+        r"""Gets the sys_tags of this ShowVaultTagResponse.
 
         仅op_service权限才可以获取此字段： 目前只包含一个resource_tag结构体  key：_sys_enterprise_project_id value：企业项目id。0表示默认企业项目 非op_service场景不能返回此字段。
 
@@ -84,7 +84,7 @@ class ShowVaultTagResponse(SdkResponse):
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ShowVaultTagResponse.
+        r"""Sets the sys_tags of this ShowVaultTagResponse.
 
         仅op_service权限才可以获取此字段： 目前只包含一个resource_tag结构体  key：_sys_enterprise_project_id value：企业项目id。0表示默认企业项目 非op_service场景不能返回此字段。
 

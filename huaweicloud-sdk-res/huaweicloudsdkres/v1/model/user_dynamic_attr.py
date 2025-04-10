@@ -27,7 +27,7 @@ class UserDynamicAttr:
     }
 
     def __init__(self, user_interested_attrs=None, user_interested_action_type=None):
-        """UserDynamicAttr
+        r"""UserDynamicAttr
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UserDynamicAttr:
 
     @property
     def user_interested_attrs(self):
-        """Gets the user_interested_attrs of this UserDynamicAttr.
+        r"""Gets the user_interested_attrs of this UserDynamicAttr.
 
         :return: The user_interested_attrs of this UserDynamicAttr.
         :rtype: :class:`huaweicloudsdkres.v1.Attribute`
@@ -59,7 +59,7 @@ class UserDynamicAttr:
 
     @user_interested_attrs.setter
     def user_interested_attrs(self, user_interested_attrs):
-        """Sets the user_interested_attrs of this UserDynamicAttr.
+        r"""Sets the user_interested_attrs of this UserDynamicAttr.
 
         :param user_interested_attrs: The user_interested_attrs of this UserDynamicAttr.
         :type user_interested_attrs: :class:`huaweicloudsdkres.v1.Attribute`
@@ -68,7 +68,7 @@ class UserDynamicAttr:
 
     @property
     def user_interested_action_type(self):
-        """Gets the user_interested_action_type of this UserDynamicAttr.
+        r"""Gets the user_interested_action_type of this UserDynamicAttr.
 
         :return: The user_interested_action_type of this UserDynamicAttr.
         :rtype: :class:`huaweicloudsdkres.v1.Attribute`
@@ -77,7 +77,7 @@ class UserDynamicAttr:
 
     @user_interested_action_type.setter
     def user_interested_action_type(self, user_interested_action_type):
-        """Sets the user_interested_action_type of this UserDynamicAttr.
+        r"""Sets the user_interested_action_type of this UserDynamicAttr.
 
         :param user_interested_action_type: The user_interested_action_type of this UserDynamicAttr.
         :type user_interested_action_type: :class:`huaweicloudsdkres.v1.Attribute`

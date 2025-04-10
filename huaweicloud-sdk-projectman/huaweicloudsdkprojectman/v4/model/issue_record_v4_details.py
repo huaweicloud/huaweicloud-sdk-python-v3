@@ -35,7 +35,7 @@ class IssueRecordV4Details:
     }
 
     def __init__(self, _property=None, old_value=None, new_value=None, operation=None, id=None, name=None):
-        """IssueRecordV4Details
+        r"""IssueRecordV4Details
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class IssueRecordV4Details:
 
     @property
     def _property(self):
-        """Gets the _property of this IssueRecordV4Details.
+        r"""Gets the _property of this IssueRecordV4Details.
 
         操作属性
 
@@ -89,7 +89,7 @@ class IssueRecordV4Details:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this IssueRecordV4Details.
+        r"""Sets the _property of this IssueRecordV4Details.
 
         操作属性
 
@@ -100,7 +100,7 @@ class IssueRecordV4Details:
 
     @property
     def old_value(self):
-        """Gets the old_value of this IssueRecordV4Details.
+        r"""Gets the old_value of this IssueRecordV4Details.
 
         上次的记录
 
@@ -111,7 +111,7 @@ class IssueRecordV4Details:
 
     @old_value.setter
     def old_value(self, old_value):
-        """Sets the old_value of this IssueRecordV4Details.
+        r"""Sets the old_value of this IssueRecordV4Details.
 
         上次的记录
 
@@ -122,7 +122,7 @@ class IssueRecordV4Details:
 
     @property
     def new_value(self):
-        """Gets the new_value of this IssueRecordV4Details.
+        r"""Gets the new_value of this IssueRecordV4Details.
 
         当前值
 
@@ -133,7 +133,7 @@ class IssueRecordV4Details:
 
     @new_value.setter
     def new_value(self, new_value):
-        """Sets the new_value of this IssueRecordV4Details.
+        r"""Sets the new_value of this IssueRecordV4Details.
 
         当前值
 
@@ -144,7 +144,7 @@ class IssueRecordV4Details:
 
     @property
     def operation(self):
-        """Gets the operation of this IssueRecordV4Details.
+        r"""Gets the operation of this IssueRecordV4Details.
 
         操作
 
@@ -155,7 +155,7 @@ class IssueRecordV4Details:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this IssueRecordV4Details.
+        r"""Sets the operation of this IssueRecordV4Details.
 
         操作
 
@@ -166,7 +166,7 @@ class IssueRecordV4Details:
 
     @property
     def id(self):
-        """Gets the id of this IssueRecordV4Details.
+        r"""Gets the id of this IssueRecordV4Details.
 
         操作记录的id
 
@@ -177,7 +177,7 @@ class IssueRecordV4Details:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IssueRecordV4Details.
+        r"""Sets the id of this IssueRecordV4Details.
 
         操作记录的id
 
@@ -188,7 +188,7 @@ class IssueRecordV4Details:
 
     @property
     def name(self):
-        """Gets the name of this IssueRecordV4Details.
+        r"""Gets the name of this IssueRecordV4Details.
 
         操作的字段
 
@@ -199,7 +199,7 @@ class IssueRecordV4Details:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IssueRecordV4Details.
+        r"""Sets the name of this IssueRecordV4Details.
 
         操作的字段
 

@@ -29,7 +29,7 @@ class OpenApiParaForCheckMessage:
     }
 
     def __init__(self, message_id=None, action=None, time=None):
-        """OpenApiParaForCheckMessage
+        r"""OpenApiParaForCheckMessage
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class OpenApiParaForCheckMessage:
 
     @property
     def message_id(self):
-        """Gets the message_id of this OpenApiParaForCheckMessage.
+        r"""Gets the message_id of this OpenApiParaForCheckMessage.
 
         消息编号
 
@@ -68,7 +68,7 @@ class OpenApiParaForCheckMessage:
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this OpenApiParaForCheckMessage.
+        r"""Sets the message_id of this OpenApiParaForCheckMessage.
 
         消息编号
 
@@ -79,7 +79,7 @@ class OpenApiParaForCheckMessage:
 
     @property
     def action(self):
-        """Gets the action of this OpenApiParaForCheckMessage.
+        r"""Gets the action of this OpenApiParaForCheckMessage.
 
         执行动作。0=立刻执行, 1=定期执行。
 
@@ -90,7 +90,7 @@ class OpenApiParaForCheckMessage:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this OpenApiParaForCheckMessage.
+        r"""Sets the action of this OpenApiParaForCheckMessage.
 
         执行动作。0=立刻执行, 1=定期执行。
 
@@ -101,7 +101,7 @@ class OpenApiParaForCheckMessage:
 
     @property
     def time(self):
-        """Gets the time of this OpenApiParaForCheckMessage.
+        r"""Gets the time of this OpenApiParaForCheckMessage.
 
         使用截止时间。仅定期执行需要此参数，默认服务器当前时间三天后。
 
@@ -112,7 +112,7 @@ class OpenApiParaForCheckMessage:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this OpenApiParaForCheckMessage.
+        r"""Sets the time of this OpenApiParaForCheckMessage.
 
         使用截止时间。仅定期执行需要此参数，默认服务器当前时间三天后。
 

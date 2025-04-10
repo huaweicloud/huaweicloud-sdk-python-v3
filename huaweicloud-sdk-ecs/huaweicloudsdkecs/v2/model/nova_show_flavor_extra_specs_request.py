@@ -25,7 +25,7 @@ class NovaShowFlavorExtraSpecsRequest:
     }
 
     def __init__(self, flavor_id=None):
-        """NovaShowFlavorExtraSpecsRequest
+        r"""NovaShowFlavorExtraSpecsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NovaShowFlavorExtraSpecsRequest:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this NovaShowFlavorExtraSpecsRequest.
+        r"""Gets the flavor_id of this NovaShowFlavorExtraSpecsRequest.
 
         规格id。
 
@@ -53,7 +53,7 @@ class NovaShowFlavorExtraSpecsRequest:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this NovaShowFlavorExtraSpecsRequest.
+        r"""Sets the flavor_id of this NovaShowFlavorExtraSpecsRequest.
 
         规格id。
 

@@ -31,7 +31,7 @@ class CallbackLifeCycleHookOption:
     }
 
     def __init__(self, lifecycle_action_key=None, instance_id=None, lifecycle_hook_name=None, lifecycle_action_result=None):
-        """CallbackLifeCycleHookOption
+        r"""CallbackLifeCycleHookOption
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CallbackLifeCycleHookOption:
 
     @property
     def lifecycle_action_key(self):
-        """Gets the lifecycle_action_key of this CallbackLifeCycleHookOption.
+        r"""Gets the lifecycle_action_key of this CallbackLifeCycleHookOption.
 
         生命周期操作令牌，通过查询伸缩实例挂起信息接口获取。指定生命周期回调对象，当不传入instance_id字段时，该字段为必选。当该字段与instance_id字段都传入，优先使用该字段进行回调。
 
@@ -74,7 +74,7 @@ class CallbackLifeCycleHookOption:
 
     @lifecycle_action_key.setter
     def lifecycle_action_key(self, lifecycle_action_key):
-        """Sets the lifecycle_action_key of this CallbackLifeCycleHookOption.
+        r"""Sets the lifecycle_action_key of this CallbackLifeCycleHookOption.
 
         生命周期操作令牌，通过查询伸缩实例挂起信息接口获取。指定生命周期回调对象，当不传入instance_id字段时，该字段为必选。当该字段与instance_id字段都传入，优先使用该字段进行回调。
 
@@ -85,7 +85,7 @@ class CallbackLifeCycleHookOption:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CallbackLifeCycleHookOption.
+        r"""Gets the instance_id of this CallbackLifeCycleHookOption.
 
         实例ID。指定生命周期回调对象，当不传入lifecycle_action_key字段时，该字段为必选。
 
@@ -96,7 +96,7 @@ class CallbackLifeCycleHookOption:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CallbackLifeCycleHookOption.
+        r"""Sets the instance_id of this CallbackLifeCycleHookOption.
 
         实例ID。指定生命周期回调对象，当不传入lifecycle_action_key字段时，该字段为必选。
 
@@ -107,7 +107,7 @@ class CallbackLifeCycleHookOption:
 
     @property
     def lifecycle_hook_name(self):
-        """Gets the lifecycle_hook_name of this CallbackLifeCycleHookOption.
+        r"""Gets the lifecycle_hook_name of this CallbackLifeCycleHookOption.
 
         生命周期挂钩名称。指定生命周期回调对象，当不传入lifecycle_action_key字段时，该字段为必选。
 
@@ -118,7 +118,7 @@ class CallbackLifeCycleHookOption:
 
     @lifecycle_hook_name.setter
     def lifecycle_hook_name(self, lifecycle_hook_name):
-        """Sets the lifecycle_hook_name of this CallbackLifeCycleHookOption.
+        r"""Sets the lifecycle_hook_name of this CallbackLifeCycleHookOption.
 
         生命周期挂钩名称。指定生命周期回调对象，当不传入lifecycle_action_key字段时，该字段为必选。
 
@@ -129,7 +129,7 @@ class CallbackLifeCycleHookOption:
 
     @property
     def lifecycle_action_result(self):
-        """Gets the lifecycle_action_result of this CallbackLifeCycleHookOption.
+        r"""Gets the lifecycle_action_result of this CallbackLifeCycleHookOption.
 
         生命周期回调操作。ABANDON：终止。CONTINUE：继续。EXTEND：延长超时时间，每次延长1小时。
 
@@ -140,7 +140,7 @@ class CallbackLifeCycleHookOption:
 
     @lifecycle_action_result.setter
     def lifecycle_action_result(self, lifecycle_action_result):
-        """Sets the lifecycle_action_result of this CallbackLifeCycleHookOption.
+        r"""Sets the lifecycle_action_result of this CallbackLifeCycleHookOption.
 
         生命周期回调操作。ABANDON：终止。CONTINUE：继续。EXTEND：延长超时时间，每次延长1小时。
 

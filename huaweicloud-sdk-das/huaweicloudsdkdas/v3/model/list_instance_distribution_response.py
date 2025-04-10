@@ -28,7 +28,7 @@ class ListInstanceDistributionResponse(SdkResponse):
     }
 
     def __init__(self, total=None, engine_distribution=None):
-        """ListInstanceDistributionResponse
+        r"""ListInstanceDistributionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInstanceDistributionResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListInstanceDistributionResponse.
+        r"""Gets the total of this ListInstanceDistributionResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListInstanceDistributionResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListInstanceDistributionResponse.
+        r"""Sets the total of this ListInstanceDistributionResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListInstanceDistributionResponse(SdkResponse):
 
     @property
     def engine_distribution(self):
-        """Gets the engine_distribution of this ListInstanceDistributionResponse.
+        r"""Gets the engine_distribution of this ListInstanceDistributionResponse.
 
         引擎分布
 
@@ -84,7 +84,7 @@ class ListInstanceDistributionResponse(SdkResponse):
 
     @engine_distribution.setter
     def engine_distribution(self, engine_distribution):
-        """Sets the engine_distribution of this ListInstanceDistributionResponse.
+        r"""Sets the engine_distribution of this ListInstanceDistributionResponse.
 
         引擎分布
 

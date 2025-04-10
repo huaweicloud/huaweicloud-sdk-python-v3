@@ -33,7 +33,7 @@ class CentralNetworkAttachmentSpecificationValueInfo:
     }
 
     def __init__(self, enterprise_router_table_id=None, attachment_parent_instance_id=None, hosted_cloud=None, approved_state=None, reason=None):
-        """CentralNetworkAttachmentSpecificationValueInfo
+        r"""CentralNetworkAttachmentSpecificationValueInfo
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CentralNetworkAttachmentSpecificationValueInfo:
 
     @property
     def enterprise_router_table_id(self):
-        """Gets the enterprise_router_table_id of this CentralNetworkAttachmentSpecificationValueInfo.
+        r"""Gets the enterprise_router_table_id of this CentralNetworkAttachmentSpecificationValueInfo.
 
         企业路由器的路由表ID。
 
@@ -81,7 +81,7 @@ class CentralNetworkAttachmentSpecificationValueInfo:
 
     @enterprise_router_table_id.setter
     def enterprise_router_table_id(self, enterprise_router_table_id):
-        """Sets the enterprise_router_table_id of this CentralNetworkAttachmentSpecificationValueInfo.
+        r"""Sets the enterprise_router_table_id of this CentralNetworkAttachmentSpecificationValueInfo.
 
         企业路由器的路由表ID。
 
@@ -92,7 +92,7 @@ class CentralNetworkAttachmentSpecificationValueInfo:
 
     @property
     def attachment_parent_instance_id(self):
-        """Gets the attachment_parent_instance_id of this CentralNetworkAttachmentSpecificationValueInfo.
+        r"""Gets the attachment_parent_instance_id of this CentralNetworkAttachmentSpecificationValueInfo.
 
         连接的父资源ID，这里表示企业路由器ID。
 
@@ -103,7 +103,7 @@ class CentralNetworkAttachmentSpecificationValueInfo:
 
     @attachment_parent_instance_id.setter
     def attachment_parent_instance_id(self, attachment_parent_instance_id):
-        """Sets the attachment_parent_instance_id of this CentralNetworkAttachmentSpecificationValueInfo.
+        r"""Sets the attachment_parent_instance_id of this CentralNetworkAttachmentSpecificationValueInfo.
 
         连接的父资源ID，这里表示企业路由器ID。
 
@@ -114,7 +114,7 @@ class CentralNetworkAttachmentSpecificationValueInfo:
 
     @property
     def hosted_cloud(self):
-        """Gets the hosted_cloud of this CentralNetworkAttachmentSpecificationValueInfo.
+        r"""Gets the hosted_cloud of this CentralNetworkAttachmentSpecificationValueInfo.
 
         :return: The hosted_cloud of this CentralNetworkAttachmentSpecificationValueInfo.
         :rtype: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
@@ -123,7 +123,7 @@ class CentralNetworkAttachmentSpecificationValueInfo:
 
     @hosted_cloud.setter
     def hosted_cloud(self, hosted_cloud):
-        """Sets the hosted_cloud of this CentralNetworkAttachmentSpecificationValueInfo.
+        r"""Sets the hosted_cloud of this CentralNetworkAttachmentSpecificationValueInfo.
 
         :param hosted_cloud: The hosted_cloud of this CentralNetworkAttachmentSpecificationValueInfo.
         :type hosted_cloud: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
@@ -132,7 +132,7 @@ class CentralNetworkAttachmentSpecificationValueInfo:
 
     @property
     def approved_state(self):
-        """Gets the approved_state of this CentralNetworkAttachmentSpecificationValueInfo.
+        r"""Gets the approved_state of this CentralNetworkAttachmentSpecificationValueInfo.
 
         :return: The approved_state of this CentralNetworkAttachmentSpecificationValueInfo.
         :rtype: :class:`huaweicloudsdkcc.v3.ApprovedStateEnum`
@@ -141,7 +141,7 @@ class CentralNetworkAttachmentSpecificationValueInfo:
 
     @approved_state.setter
     def approved_state(self, approved_state):
-        """Sets the approved_state of this CentralNetworkAttachmentSpecificationValueInfo.
+        r"""Sets the approved_state of this CentralNetworkAttachmentSpecificationValueInfo.
 
         :param approved_state: The approved_state of this CentralNetworkAttachmentSpecificationValueInfo.
         :type approved_state: :class:`huaweicloudsdkcc.v3.ApprovedStateEnum`
@@ -150,7 +150,7 @@ class CentralNetworkAttachmentSpecificationValueInfo:
 
     @property
     def reason(self):
-        """Gets the reason of this CentralNetworkAttachmentSpecificationValueInfo.
+        r"""Gets the reason of this CentralNetworkAttachmentSpecificationValueInfo.
 
         审批拒绝创建附件的原因。
 
@@ -161,7 +161,7 @@ class CentralNetworkAttachmentSpecificationValueInfo:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this CentralNetworkAttachmentSpecificationValueInfo.
+        r"""Sets the reason of this CentralNetworkAttachmentSpecificationValueInfo.
 
         审批拒绝创建附件的原因。
 

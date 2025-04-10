@@ -30,7 +30,7 @@ class AddOrUpdateMetricOrEventAlarmRuleResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_message=None, alarm_rules=None):
-        """AddOrUpdateMetricOrEventAlarmRuleResponse
+        r"""AddOrUpdateMetricOrEventAlarmRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class AddOrUpdateMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this AddOrUpdateMetricOrEventAlarmRuleResponse.
+        r"""Gets the error_code of this AddOrUpdateMetricOrEventAlarmRuleResponse.
 
         错误码。
 
@@ -69,7 +69,7 @@ class AddOrUpdateMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AddOrUpdateMetricOrEventAlarmRuleResponse.
+        r"""Sets the error_code of this AddOrUpdateMetricOrEventAlarmRuleResponse.
 
         错误码。
 
@@ -80,7 +80,7 @@ class AddOrUpdateMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this AddOrUpdateMetricOrEventAlarmRuleResponse.
+        r"""Gets the error_message of this AddOrUpdateMetricOrEventAlarmRuleResponse.
 
         错误信息。
 
@@ -91,7 +91,7 @@ class AddOrUpdateMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this AddOrUpdateMetricOrEventAlarmRuleResponse.
+        r"""Sets the error_message of this AddOrUpdateMetricOrEventAlarmRuleResponse.
 
         错误信息。
 
@@ -102,7 +102,7 @@ class AddOrUpdateMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @property
     def alarm_rules(self):
-        """Gets the alarm_rules of this AddOrUpdateMetricOrEventAlarmRuleResponse.
+        r"""Gets the alarm_rules of this AddOrUpdateMetricOrEventAlarmRuleResponse.
 
         告警规则列表。
 
@@ -113,7 +113,7 @@ class AddOrUpdateMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @alarm_rules.setter
     def alarm_rules(self, alarm_rules):
-        """Sets the alarm_rules of this AddOrUpdateMetricOrEventAlarmRuleResponse.
+        r"""Sets the alarm_rules of this AddOrUpdateMetricOrEventAlarmRuleResponse.
 
         告警规则列表。
 

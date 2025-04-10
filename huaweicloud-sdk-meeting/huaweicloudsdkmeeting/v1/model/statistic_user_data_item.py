@@ -37,7 +37,7 @@ class StatisticUserDataItem:
     }
 
     def __init__(self, time=None, user_login_count=None, user_pc_login_count=None, user_mobile_login_count=None, user_activated_count=None, user_login_devices_name=None, user_login_devices_count=None):
-        """StatisticUserDataItem
+        r"""StatisticUserDataItem
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class StatisticUserDataItem:
 
     @property
     def time(self):
-        """Gets the time of this StatisticUserDataItem.
+        r"""Gets the time of this StatisticUserDataItem.
 
         日期/月份。
 
@@ -96,7 +96,7 @@ class StatisticUserDataItem:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this StatisticUserDataItem.
+        r"""Sets the time of this StatisticUserDataItem.
 
         日期/月份。
 
@@ -107,7 +107,7 @@ class StatisticUserDataItem:
 
     @property
     def user_login_count(self):
-        """Gets the user_login_count of this StatisticUserDataItem.
+        r"""Gets the user_login_count of this StatisticUserDataItem.
 
         登录用户数。 category = user_login_info时有效。
 
@@ -118,7 +118,7 @@ class StatisticUserDataItem:
 
     @user_login_count.setter
     def user_login_count(self, user_login_count):
-        """Sets the user_login_count of this StatisticUserDataItem.
+        r"""Sets the user_login_count of this StatisticUserDataItem.
 
         登录用户数。 category = user_login_info时有效。
 
@@ -129,7 +129,7 @@ class StatisticUserDataItem:
 
     @property
     def user_pc_login_count(self):
-        """Gets the user_pc_login_count of this StatisticUserDataItem.
+        r"""Gets the user_pc_login_count of this StatisticUserDataItem.
 
         PC端登录用户数。 category = user_login_info时有效。
 
@@ -140,7 +140,7 @@ class StatisticUserDataItem:
 
     @user_pc_login_count.setter
     def user_pc_login_count(self, user_pc_login_count):
-        """Sets the user_pc_login_count of this StatisticUserDataItem.
+        r"""Sets the user_pc_login_count of this StatisticUserDataItem.
 
         PC端登录用户数。 category = user_login_info时有效。
 
@@ -151,7 +151,7 @@ class StatisticUserDataItem:
 
     @property
     def user_mobile_login_count(self):
-        """Gets the user_mobile_login_count of this StatisticUserDataItem.
+        r"""Gets the user_mobile_login_count of this StatisticUserDataItem.
 
         移动端登录用户数。 category = user_login_info时有效。
 
@@ -162,7 +162,7 @@ class StatisticUserDataItem:
 
     @user_mobile_login_count.setter
     def user_mobile_login_count(self, user_mobile_login_count):
-        """Sets the user_mobile_login_count of this StatisticUserDataItem.
+        r"""Sets the user_mobile_login_count of this StatisticUserDataItem.
 
         移动端登录用户数。 category = user_login_info时有效。
 
@@ -173,7 +173,7 @@ class StatisticUserDataItem:
 
     @property
     def user_activated_count(self):
-        """Gets the user_activated_count of this StatisticUserDataItem.
+        r"""Gets the user_activated_count of this StatisticUserDataItem.
 
         激活用户数。 category = user_activate_info时有效。
 
@@ -184,7 +184,7 @@ class StatisticUserDataItem:
 
     @user_activated_count.setter
     def user_activated_count(self, user_activated_count):
-        """Sets the user_activated_count of this StatisticUserDataItem.
+        r"""Sets the user_activated_count of this StatisticUserDataItem.
 
         激活用户数。 category = user_activate_info时有效。
 
@@ -195,7 +195,7 @@ class StatisticUserDataItem:
 
     @property
     def user_login_devices_name(self):
-        """Gets the user_login_devices_name of this StatisticUserDataItem.
+        r"""Gets the user_login_devices_name of this StatisticUserDataItem.
 
         用户登录设备名称。 category = user_login_device_info时有效。
 
@@ -206,7 +206,7 @@ class StatisticUserDataItem:
 
     @user_login_devices_name.setter
     def user_login_devices_name(self, user_login_devices_name):
-        """Sets the user_login_devices_name of this StatisticUserDataItem.
+        r"""Sets the user_login_devices_name of this StatisticUserDataItem.
 
         用户登录设备名称。 category = user_login_device_info时有效。
 
@@ -217,7 +217,7 @@ class StatisticUserDataItem:
 
     @property
     def user_login_devices_count(self):
-        """Gets the user_login_devices_count of this StatisticUserDataItem.
+        r"""Gets the user_login_devices_count of this StatisticUserDataItem.
 
         用户登录设备数。 category = user_login_device_info时有效。
 
@@ -228,7 +228,7 @@ class StatisticUserDataItem:
 
     @user_login_devices_count.setter
     def user_login_devices_count(self, user_login_devices_count):
-        """Sets the user_login_devices_count of this StatisticUserDataItem.
+        r"""Sets the user_login_devices_count of this StatisticUserDataItem.
 
         用户登录设备数。 category = user_login_device_info时有效。
 

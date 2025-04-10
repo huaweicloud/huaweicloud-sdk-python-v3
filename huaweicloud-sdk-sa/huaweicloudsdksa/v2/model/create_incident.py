@@ -107,7 +107,7 @@ class CreateIncident:
     }
 
     def __init__(self, version=None, severity=None, environment=None, data_source=None, first_observed_time=None, last_observed_time=None, create_time=None, arrive_time=None, title=None, labels=None, description=None, source_url=None, count=None, confidence=None, serverity=None, criticality=None, incident_type=None, network_list=None, resource_list=None, remediation=None, verification_state=None, handle_status=None, sla=None, update_time=None, close_time=None, chop_phase=None, ipdrr_phase=None, ppdr_phase=None, simulation=None, actor=None, owner=None, cteator=None, close_reason=None, close_comment=None, malware=None, system_info=None, process=None, user_info=None, file_info=None, system_incident_table=None, id=None, workspace_id=None):
-        """CreateIncident
+        r"""CreateIncident
 
         The model defined in huaweicloud sdk
 
@@ -330,7 +330,7 @@ class CreateIncident:
 
     @property
     def version(self):
-        """Gets the version of this CreateIncident.
+        r"""Gets the version of this CreateIncident.
 
         版本
 
@@ -341,7 +341,7 @@ class CreateIncident:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateIncident.
+        r"""Sets the version of this CreateIncident.
 
         版本
 
@@ -352,7 +352,7 @@ class CreateIncident:
 
     @property
     def severity(self):
-        """Gets the severity of this CreateIncident.
+        r"""Gets the severity of this CreateIncident.
 
         严重性等级
 
@@ -363,7 +363,7 @@ class CreateIncident:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this CreateIncident.
+        r"""Sets the severity of this CreateIncident.
 
         严重性等级
 
@@ -374,7 +374,7 @@ class CreateIncident:
 
     @property
     def environment(self):
-        """Gets the environment of this CreateIncident.
+        r"""Gets the environment of this CreateIncident.
 
         :return: The environment of this CreateIncident.
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertRspEnvironment`
@@ -383,7 +383,7 @@ class CreateIncident:
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this CreateIncident.
+        r"""Sets the environment of this CreateIncident.
 
         :param environment: The environment of this CreateIncident.
         :type environment: :class:`huaweicloudsdksa.v2.ShowAlertRspEnvironment`
@@ -392,7 +392,7 @@ class CreateIncident:
 
     @property
     def data_source(self):
-        """Gets the data_source of this CreateIncident.
+        r"""Gets the data_source of this CreateIncident.
 
         :return: The data_source of this CreateIncident.
         :rtype: :class:`huaweicloudsdksa.v2.CreateAlertDataSource`
@@ -401,7 +401,7 @@ class CreateIncident:
 
     @data_source.setter
     def data_source(self, data_source):
-        """Sets the data_source of this CreateIncident.
+        r"""Sets the data_source of this CreateIncident.
 
         :param data_source: The data_source of this CreateIncident.
         :type data_source: :class:`huaweicloudsdksa.v2.CreateAlertDataSource`
@@ -410,7 +410,7 @@ class CreateIncident:
 
     @property
     def first_observed_time(self):
-        """Gets the first_observed_time of this CreateIncident.
+        r"""Gets the first_observed_time of this CreateIncident.
 
         Update time
 
@@ -421,7 +421,7 @@ class CreateIncident:
 
     @first_observed_time.setter
     def first_observed_time(self, first_observed_time):
-        """Sets the first_observed_time of this CreateIncident.
+        r"""Sets the first_observed_time of this CreateIncident.
 
         Update time
 
@@ -432,7 +432,7 @@ class CreateIncident:
 
     @property
     def last_observed_time(self):
-        """Gets the last_observed_time of this CreateIncident.
+        r"""Gets the last_observed_time of this CreateIncident.
 
         Update time
 
@@ -443,7 +443,7 @@ class CreateIncident:
 
     @last_observed_time.setter
     def last_observed_time(self, last_observed_time):
-        """Sets the last_observed_time of this CreateIncident.
+        r"""Sets the last_observed_time of this CreateIncident.
 
         Update time
 
@@ -454,7 +454,7 @@ class CreateIncident:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateIncident.
+        r"""Gets the create_time of this CreateIncident.
 
         Create time
 
@@ -465,7 +465,7 @@ class CreateIncident:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateIncident.
+        r"""Sets the create_time of this CreateIncident.
 
         Create time
 
@@ -476,7 +476,7 @@ class CreateIncident:
 
     @property
     def arrive_time(self):
-        """Gets the arrive_time of this CreateIncident.
+        r"""Gets the arrive_time of this CreateIncident.
 
         Update time
 
@@ -487,7 +487,7 @@ class CreateIncident:
 
     @arrive_time.setter
     def arrive_time(self, arrive_time):
-        """Sets the arrive_time of this CreateIncident.
+        r"""Sets the arrive_time of this CreateIncident.
 
         Update time
 
@@ -498,7 +498,7 @@ class CreateIncident:
 
     @property
     def title(self):
-        """Gets the title of this CreateIncident.
+        r"""Gets the title of this CreateIncident.
 
         The name, display only
 
@@ -509,7 +509,7 @@ class CreateIncident:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this CreateIncident.
+        r"""Sets the title of this CreateIncident.
 
         The name, display only
 
@@ -520,7 +520,7 @@ class CreateIncident:
 
     @property
     def labels(self):
-        """Gets the labels of this CreateIncident.
+        r"""Gets the labels of this CreateIncident.
 
         The label, display only
 
@@ -531,7 +531,7 @@ class CreateIncident:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this CreateIncident.
+        r"""Sets the labels of this CreateIncident.
 
         The label, display only
 
@@ -542,7 +542,7 @@ class CreateIncident:
 
     @property
     def description(self):
-        """Gets the description of this CreateIncident.
+        r"""Gets the description of this CreateIncident.
 
         The description, display only
 
@@ -553,7 +553,7 @@ class CreateIncident:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateIncident.
+        r"""Sets the description of this CreateIncident.
 
         The description, display only
 
@@ -564,7 +564,7 @@ class CreateIncident:
 
     @property
     def source_url(self):
-        """Gets the source_url of this CreateIncident.
+        r"""Gets the source_url of this CreateIncident.
 
         事件URL链接
 
@@ -575,7 +575,7 @@ class CreateIncident:
 
     @source_url.setter
     def source_url(self, source_url):
-        """Sets the source_url of this CreateIncident.
+        r"""Sets the source_url of this CreateIncident.
 
         事件URL链接
 
@@ -586,7 +586,7 @@ class CreateIncident:
 
     @property
     def count(self):
-        """Gets the count of this CreateIncident.
+        r"""Gets the count of this CreateIncident.
 
         事件发生次数
 
@@ -597,7 +597,7 @@ class CreateIncident:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CreateIncident.
+        r"""Sets the count of this CreateIncident.
 
         事件发生次数
 
@@ -608,7 +608,7 @@ class CreateIncident:
 
     @property
     def confidence(self):
-        """Gets the confidence of this CreateIncident.
+        r"""Gets the confidence of this CreateIncident.
 
         置信度
 
@@ -619,7 +619,7 @@ class CreateIncident:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this CreateIncident.
+        r"""Sets the confidence of this CreateIncident.
 
         置信度
 
@@ -630,7 +630,7 @@ class CreateIncident:
 
     @property
     def serverity(self):
-        """Gets the serverity of this CreateIncident.
+        r"""Gets the serverity of this CreateIncident.
 
         严重性等级
 
@@ -641,7 +641,7 @@ class CreateIncident:
 
     @serverity.setter
     def serverity(self, serverity):
-        """Sets the serverity of this CreateIncident.
+        r"""Sets the serverity of this CreateIncident.
 
         严重性等级
 
@@ -652,7 +652,7 @@ class CreateIncident:
 
     @property
     def criticality(self):
-        """Gets the criticality of this CreateIncident.
+        r"""Gets the criticality of this CreateIncident.
 
         关键性，是指事件涉及的资源的重要性级别。
 
@@ -663,7 +663,7 @@ class CreateIncident:
 
     @criticality.setter
     def criticality(self, criticality):
-        """Sets the criticality of this CreateIncident.
+        r"""Sets the criticality of this CreateIncident.
 
         关键性，是指事件涉及的资源的重要性级别。
 
@@ -674,7 +674,7 @@ class CreateIncident:
 
     @property
     def incident_type(self):
-        """Gets the incident_type of this CreateIncident.
+        r"""Gets the incident_type of this CreateIncident.
 
         :return: The incident_type of this CreateIncident.
         :rtype: :class:`huaweicloudsdksa.v2.CreateIncidentIncidentType`
@@ -683,7 +683,7 @@ class CreateIncident:
 
     @incident_type.setter
     def incident_type(self, incident_type):
-        """Sets the incident_type of this CreateIncident.
+        r"""Sets the incident_type of this CreateIncident.
 
         :param incident_type: The incident_type of this CreateIncident.
         :type incident_type: :class:`huaweicloudsdksa.v2.CreateIncidentIncidentType`
@@ -692,7 +692,7 @@ class CreateIncident:
 
     @property
     def network_list(self):
-        """Gets the network_list of this CreateIncident.
+        r"""Gets the network_list of this CreateIncident.
 
         network_list
 
@@ -703,7 +703,7 @@ class CreateIncident:
 
     @network_list.setter
     def network_list(self, network_list):
-        """Sets the network_list of this CreateIncident.
+        r"""Sets the network_list of this CreateIncident.
 
         network_list
 
@@ -714,7 +714,7 @@ class CreateIncident:
 
     @property
     def resource_list(self):
-        """Gets the resource_list of this CreateIncident.
+        r"""Gets the resource_list of this CreateIncident.
 
         network_list
 
@@ -725,7 +725,7 @@ class CreateIncident:
 
     @resource_list.setter
     def resource_list(self, resource_list):
-        """Sets the resource_list of this CreateIncident.
+        r"""Sets the resource_list of this CreateIncident.
 
         network_list
 
@@ -736,7 +736,7 @@ class CreateIncident:
 
     @property
     def remediation(self):
-        """Gets the remediation of this CreateIncident.
+        r"""Gets the remediation of this CreateIncident.
 
         :return: The remediation of this CreateIncident.
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertRspRemediation`
@@ -745,7 +745,7 @@ class CreateIncident:
 
     @remediation.setter
     def remediation(self, remediation):
-        """Sets the remediation of this CreateIncident.
+        r"""Sets the remediation of this CreateIncident.
 
         :param remediation: The remediation of this CreateIncident.
         :type remediation: :class:`huaweicloudsdksa.v2.ShowAlertRspRemediation`
@@ -754,7 +754,7 @@ class CreateIncident:
 
     @property
     def verification_state(self):
-        """Gets the verification_state of this CreateIncident.
+        r"""Gets the verification_state of this CreateIncident.
 
         验证状态
 
@@ -765,7 +765,7 @@ class CreateIncident:
 
     @verification_state.setter
     def verification_state(self, verification_state):
-        """Sets the verification_state of this CreateIncident.
+        r"""Sets the verification_state of this CreateIncident.
 
         验证状态
 
@@ -776,7 +776,7 @@ class CreateIncident:
 
     @property
     def handle_status(self):
-        """Gets the handle_status of this CreateIncident.
+        r"""Gets the handle_status of this CreateIncident.
 
         事件处理状态
 
@@ -787,7 +787,7 @@ class CreateIncident:
 
     @handle_status.setter
     def handle_status(self, handle_status):
-        """Sets the handle_status of this CreateIncident.
+        r"""Sets the handle_status of this CreateIncident.
 
         事件处理状态
 
@@ -798,7 +798,7 @@ class CreateIncident:
 
     @property
     def sla(self):
-        """Gets the sla of this CreateIncident.
+        r"""Gets the sla of this CreateIncident.
 
         sla
 
@@ -809,7 +809,7 @@ class CreateIncident:
 
     @sla.setter
     def sla(self, sla):
-        """Sets the sla of this CreateIncident.
+        r"""Sets the sla of this CreateIncident.
 
         sla
 
@@ -820,7 +820,7 @@ class CreateIncident:
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateIncident.
+        r"""Gets the update_time of this CreateIncident.
 
         Create time
 
@@ -831,7 +831,7 @@ class CreateIncident:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateIncident.
+        r"""Sets the update_time of this CreateIncident.
 
         Create time
 
@@ -842,7 +842,7 @@ class CreateIncident:
 
     @property
     def close_time(self):
-        """Gets the close_time of this CreateIncident.
+        r"""Gets the close_time of this CreateIncident.
 
         Create time
 
@@ -853,7 +853,7 @@ class CreateIncident:
 
     @close_time.setter
     def close_time(self, close_time):
-        """Sets the close_time of this CreateIncident.
+        r"""Sets the close_time of this CreateIncident.
 
         Create time
 
@@ -864,7 +864,7 @@ class CreateIncident:
 
     @property
     def chop_phase(self):
-        """Gets the chop_phase of this CreateIncident.
+        r"""Gets the chop_phase of this CreateIncident.
 
         周期/处置阶段编号
 
@@ -875,7 +875,7 @@ class CreateIncident:
 
     @chop_phase.setter
     def chop_phase(self, chop_phase):
-        """Sets the chop_phase of this CreateIncident.
+        r"""Sets the chop_phase of this CreateIncident.
 
         周期/处置阶段编号
 
@@ -886,7 +886,7 @@ class CreateIncident:
 
     @property
     def ipdrr_phase(self):
-        """Gets the ipdrr_phase of this CreateIncident.
+        r"""Gets the ipdrr_phase of this CreateIncident.
 
         周期/处置阶段编号
 
@@ -897,7 +897,7 @@ class CreateIncident:
 
     @ipdrr_phase.setter
     def ipdrr_phase(self, ipdrr_phase):
-        """Sets the ipdrr_phase of this CreateIncident.
+        r"""Sets the ipdrr_phase of this CreateIncident.
 
         周期/处置阶段编号
 
@@ -908,7 +908,7 @@ class CreateIncident:
 
     @property
     def ppdr_phase(self):
-        """Gets the ppdr_phase of this CreateIncident.
+        r"""Gets the ppdr_phase of this CreateIncident.
 
         周期/处置阶段编号
 
@@ -919,7 +919,7 @@ class CreateIncident:
 
     @ppdr_phase.setter
     def ppdr_phase(self, ppdr_phase):
-        """Sets the ppdr_phase of this CreateIncident.
+        r"""Sets the ppdr_phase of this CreateIncident.
 
         周期/处置阶段编号
 
@@ -930,7 +930,7 @@ class CreateIncident:
 
     @property
     def simulation(self):
-        """Gets the simulation of this CreateIncident.
+        r"""Gets the simulation of this CreateIncident.
 
         是否为调试事件.
 
@@ -941,7 +941,7 @@ class CreateIncident:
 
     @simulation.setter
     def simulation(self, simulation):
-        """Sets the simulation of this CreateIncident.
+        r"""Sets the simulation of this CreateIncident.
 
         是否为调试事件.
 
@@ -952,7 +952,7 @@ class CreateIncident:
 
     @property
     def actor(self):
-        """Gets the actor of this CreateIncident.
+        r"""Gets the actor of this CreateIncident.
 
         委托人
 
@@ -963,7 +963,7 @@ class CreateIncident:
 
     @actor.setter
     def actor(self, actor):
-        """Sets the actor of this CreateIncident.
+        r"""Sets the actor of this CreateIncident.
 
         委托人
 
@@ -974,7 +974,7 @@ class CreateIncident:
 
     @property
     def owner(self):
-        """Gets the owner of this CreateIncident.
+        r"""Gets the owner of this CreateIncident.
 
         The name, display only
 
@@ -985,7 +985,7 @@ class CreateIncident:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this CreateIncident.
+        r"""Sets the owner of this CreateIncident.
 
         The name, display only
 
@@ -996,7 +996,7 @@ class CreateIncident:
 
     @property
     def cteator(self):
-        """Gets the cteator of this CreateIncident.
+        r"""Gets the cteator of this CreateIncident.
 
         The name, display only
 
@@ -1007,7 +1007,7 @@ class CreateIncident:
 
     @cteator.setter
     def cteator(self, cteator):
-        """Sets the cteator of this CreateIncident.
+        r"""Sets the cteator of this CreateIncident.
 
         The name, display only
 
@@ -1018,7 +1018,7 @@ class CreateIncident:
 
     @property
     def close_reason(self):
-        """Gets the close_reason of this CreateIncident.
+        r"""Gets the close_reason of this CreateIncident.
 
         关闭原因
 
@@ -1029,7 +1029,7 @@ class CreateIncident:
 
     @close_reason.setter
     def close_reason(self, close_reason):
-        """Sets the close_reason of this CreateIncident.
+        r"""Sets the close_reason of this CreateIncident.
 
         关闭原因
 
@@ -1040,7 +1040,7 @@ class CreateIncident:
 
     @property
     def close_comment(self):
-        """Gets the close_comment of this CreateIncident.
+        r"""Gets the close_comment of this CreateIncident.
 
         关闭原因
 
@@ -1051,7 +1051,7 @@ class CreateIncident:
 
     @close_comment.setter
     def close_comment(self, close_comment):
-        """Sets the close_comment of this CreateIncident.
+        r"""Sets the close_comment of this CreateIncident.
 
         关闭原因
 
@@ -1062,7 +1062,7 @@ class CreateIncident:
 
     @property
     def malware(self):
-        """Gets the malware of this CreateIncident.
+        r"""Gets the malware of this CreateIncident.
 
         :return: The malware of this CreateIncident.
         :rtype: :class:`huaweicloudsdksa.v2.CreateIncidentMalware`
@@ -1071,7 +1071,7 @@ class CreateIncident:
 
     @malware.setter
     def malware(self, malware):
-        """Sets the malware of this CreateIncident.
+        r"""Sets the malware of this CreateIncident.
 
         :param malware: The malware of this CreateIncident.
         :type malware: :class:`huaweicloudsdksa.v2.CreateIncidentMalware`
@@ -1080,7 +1080,7 @@ class CreateIncident:
 
     @property
     def system_info(self):
-        """Gets the system_info of this CreateIncident.
+        r"""Gets the system_info of this CreateIncident.
 
         系统信息
 
@@ -1091,7 +1091,7 @@ class CreateIncident:
 
     @system_info.setter
     def system_info(self, system_info):
-        """Sets the system_info of this CreateIncident.
+        r"""Sets the system_info of this CreateIncident.
 
         系统信息
 
@@ -1102,7 +1102,7 @@ class CreateIncident:
 
     @property
     def process(self):
-        """Gets the process of this CreateIncident.
+        r"""Gets the process of this CreateIncident.
 
         进程信息
 
@@ -1113,7 +1113,7 @@ class CreateIncident:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this CreateIncident.
+        r"""Sets the process of this CreateIncident.
 
         进程信息
 
@@ -1124,7 +1124,7 @@ class CreateIncident:
 
     @property
     def user_info(self):
-        """Gets the user_info of this CreateIncident.
+        r"""Gets the user_info of this CreateIncident.
 
         用户信息
 
@@ -1135,7 +1135,7 @@ class CreateIncident:
 
     @user_info.setter
     def user_info(self, user_info):
-        """Sets the user_info of this CreateIncident.
+        r"""Sets the user_info of this CreateIncident.
 
         用户信息
 
@@ -1146,7 +1146,7 @@ class CreateIncident:
 
     @property
     def file_info(self):
-        """Gets the file_info of this CreateIncident.
+        r"""Gets the file_info of this CreateIncident.
 
         文件信息
 
@@ -1157,7 +1157,7 @@ class CreateIncident:
 
     @file_info.setter
     def file_info(self, file_info):
-        """Sets the file_info of this CreateIncident.
+        r"""Sets the file_info of this CreateIncident.
 
         文件信息
 
@@ -1168,7 +1168,7 @@ class CreateIncident:
 
     @property
     def system_incident_table(self):
-        """Gets the system_incident_table of this CreateIncident.
+        r"""Gets the system_incident_table of this CreateIncident.
 
         系统信息
 
@@ -1179,7 +1179,7 @@ class CreateIncident:
 
     @system_incident_table.setter
     def system_incident_table(self, system_incident_table):
-        """Sets the system_incident_table of this CreateIncident.
+        r"""Sets the system_incident_table of this CreateIncident.
 
         系统信息
 
@@ -1190,7 +1190,7 @@ class CreateIncident:
 
     @property
     def id(self):
-        """Gets the id of this CreateIncident.
+        r"""Gets the id of this CreateIncident.
 
         Id value
 
@@ -1201,7 +1201,7 @@ class CreateIncident:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateIncident.
+        r"""Sets the id of this CreateIncident.
 
         Id value
 
@@ -1212,7 +1212,7 @@ class CreateIncident:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateIncident.
+        r"""Gets the workspace_id of this CreateIncident.
 
         workspace id
 
@@ -1223,7 +1223,7 @@ class CreateIncident:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateIncident.
+        r"""Sets the workspace_id of this CreateIncident.
 
         workspace id
 

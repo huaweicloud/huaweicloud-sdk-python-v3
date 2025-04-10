@@ -45,7 +45,7 @@ class EdgeGeneralConfig:
     }
 
     def __init__(self, avp_enabled=None, rsm_enabled=None, time_compensate=None, rsi_positioning_enabled=None, log_level=None, road_detection_length=None, ramp_detection_length=None, gat1400_username=None, gat1400_password=None, user_name=None, password=None):
-        """EdgeGeneralConfig
+        r"""EdgeGeneralConfig
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class EdgeGeneralConfig:
 
     @property
     def avp_enabled(self):
-        """Gets the avp_enabled of this EdgeGeneralConfig.
+        r"""Gets the avp_enabled of this EdgeGeneralConfig.
 
         **参数说明**：AVP场景。
 
@@ -124,7 +124,7 @@ class EdgeGeneralConfig:
 
     @avp_enabled.setter
     def avp_enabled(self, avp_enabled):
-        """Sets the avp_enabled of this EdgeGeneralConfig.
+        r"""Sets the avp_enabled of this EdgeGeneralConfig.
 
         **参数说明**：AVP场景。
 
@@ -135,7 +135,7 @@ class EdgeGeneralConfig:
 
     @property
     def rsm_enabled(self):
-        """Gets the rsm_enabled of this EdgeGeneralConfig.
+        r"""Gets the rsm_enabled of this EdgeGeneralConfig.
 
         **参数说明**：RSM上报：默认不上报。
 
@@ -146,7 +146,7 @@ class EdgeGeneralConfig:
 
     @rsm_enabled.setter
     def rsm_enabled(self, rsm_enabled):
-        """Sets the rsm_enabled of this EdgeGeneralConfig.
+        r"""Sets the rsm_enabled of this EdgeGeneralConfig.
 
         **参数说明**：RSM上报：默认不上报。
 
@@ -157,7 +157,7 @@ class EdgeGeneralConfig:
 
     @property
     def time_compensate(self):
-        """Gets the time_compensate of this EdgeGeneralConfig.
+        r"""Gets the time_compensate of this EdgeGeneralConfig.
 
         **参数说明**：时延补偿：是否启动Edge时延补偿功能。
 
@@ -168,7 +168,7 @@ class EdgeGeneralConfig:
 
     @time_compensate.setter
     def time_compensate(self, time_compensate):
-        """Sets the time_compensate of this EdgeGeneralConfig.
+        r"""Sets the time_compensate of this EdgeGeneralConfig.
 
         **参数说明**：时延补偿：是否启动Edge时延补偿功能。
 
@@ -179,7 +179,7 @@ class EdgeGeneralConfig:
 
     @property
     def rsi_positioning_enabled(self):
-        """Gets the rsi_positioning_enabled of this EdgeGeneralConfig.
+        r"""Gets the rsi_positioning_enabled of this EdgeGeneralConfig.
 
         **参数说明**：RSI事件定位功能。
 
@@ -190,7 +190,7 @@ class EdgeGeneralConfig:
 
     @rsi_positioning_enabled.setter
     def rsi_positioning_enabled(self, rsi_positioning_enabled):
-        """Sets the rsi_positioning_enabled of this EdgeGeneralConfig.
+        r"""Sets the rsi_positioning_enabled of this EdgeGeneralConfig.
 
         **参数说明**：RSI事件定位功能。
 
@@ -201,7 +201,7 @@ class EdgeGeneralConfig:
 
     @property
     def log_level(self):
-        """Gets the log_level of this EdgeGeneralConfig.
+        r"""Gets the log_level of this EdgeGeneralConfig.
 
         **参数说明**：应用日志级别，可选项：on/off，默认关闭。
 
@@ -212,7 +212,7 @@ class EdgeGeneralConfig:
 
     @log_level.setter
     def log_level(self, log_level):
-        """Sets the log_level of this EdgeGeneralConfig.
+        r"""Sets the log_level of this EdgeGeneralConfig.
 
         **参数说明**：应用日志级别，可选项：on/off，默认关闭。
 
@@ -223,7 +223,7 @@ class EdgeGeneralConfig:
 
     @property
     def road_detection_length(self):
-        """Gets the road_detection_length of this EdgeGeneralConfig.
+        r"""Gets the road_detection_length of this EdgeGeneralConfig.
 
         **参数说明**：道路检测长度，单位：米。
 
@@ -234,7 +234,7 @@ class EdgeGeneralConfig:
 
     @road_detection_length.setter
     def road_detection_length(self, road_detection_length):
-        """Sets the road_detection_length of this EdgeGeneralConfig.
+        r"""Sets the road_detection_length of this EdgeGeneralConfig.
 
         **参数说明**：道路检测长度，单位：米。
 
@@ -245,7 +245,7 @@ class EdgeGeneralConfig:
 
     @property
     def ramp_detection_length(self):
-        """Gets the ramp_detection_length of this EdgeGeneralConfig.
+        r"""Gets the ramp_detection_length of this EdgeGeneralConfig.
 
         **参数说明**：匝道检测长度，单位：米。
 
@@ -256,7 +256,7 @@ class EdgeGeneralConfig:
 
     @ramp_detection_length.setter
     def ramp_detection_length(self, ramp_detection_length):
-        """Sets the ramp_detection_length of this EdgeGeneralConfig.
+        r"""Sets the ramp_detection_length of this EdgeGeneralConfig.
 
         **参数说明**：匝道检测长度，单位：米。
 
@@ -267,7 +267,7 @@ class EdgeGeneralConfig:
 
     @property
     def gat1400_username(self):
-        """Gets the gat1400_username of this EdgeGeneralConfig.
+        r"""Gets the gat1400_username of this EdgeGeneralConfig.
 
         **参数说明**：1400接口用户名。  **取值范围**：长度不小于8，不大于32，只允许数字字母下划线组合，且不能以数字下划线开头，不能有中文和特殊字符，gat1400用户名不能与gat1400密码相同。
 
@@ -278,7 +278,7 @@ class EdgeGeneralConfig:
 
     @gat1400_username.setter
     def gat1400_username(self, gat1400_username):
-        """Sets the gat1400_username of this EdgeGeneralConfig.
+        r"""Sets the gat1400_username of this EdgeGeneralConfig.
 
         **参数说明**：1400接口用户名。  **取值范围**：长度不小于8，不大于32，只允许数字字母下划线组合，且不能以数字下划线开头，不能有中文和特殊字符，gat1400用户名不能与gat1400密码相同。
 
@@ -289,7 +289,7 @@ class EdgeGeneralConfig:
 
     @property
     def gat1400_password(self):
-        """Gets the gat1400_password of this EdgeGeneralConfig.
+        r"""Gets the gat1400_password of this EdgeGeneralConfig.
 
         **参数说明**：1400接口密码。  **取值范围**：   1.密码必须包含如下至少两种字符的组合:     －一个小写字母；     －一个大写字母；     －一个数字；     －一个特殊字符：`~!@#$%^&*()-_=+\\|[{}];:'\",<.>/?  和空格   2.gat1400密码不能与gat1400用户名相同
 
@@ -300,7 +300,7 @@ class EdgeGeneralConfig:
 
     @gat1400_password.setter
     def gat1400_password(self, gat1400_password):
-        """Sets the gat1400_password of this EdgeGeneralConfig.
+        r"""Sets the gat1400_password of this EdgeGeneralConfig.
 
         **参数说明**：1400接口密码。  **取值范围**：   1.密码必须包含如下至少两种字符的组合:     －一个小写字母；     －一个大写字母；     －一个数字；     －一个特殊字符：`~!@#$%^&*()-_=+\\|[{}];:'\",<.>/?  和空格   2.gat1400密码不能与gat1400用户名相同
 
@@ -311,7 +311,7 @@ class EdgeGeneralConfig:
 
     @property
     def user_name(self):
-        """Gets the user_name of this EdgeGeneralConfig.
+        r"""Gets the user_name of this EdgeGeneralConfig.
 
         **参数说明**：ITS800鉴权用的用户名和密码。
 
@@ -322,7 +322,7 @@ class EdgeGeneralConfig:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this EdgeGeneralConfig.
+        r"""Sets the user_name of this EdgeGeneralConfig.
 
         **参数说明**：ITS800鉴权用的用户名和密码。
 
@@ -333,7 +333,7 @@ class EdgeGeneralConfig:
 
     @property
     def password(self):
-        """Gets the password of this EdgeGeneralConfig.
+        r"""Gets the password of this EdgeGeneralConfig.
 
         **参数说明**：密码。
 
@@ -344,7 +344,7 @@ class EdgeGeneralConfig:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this EdgeGeneralConfig.
+        r"""Sets the password of this EdgeGeneralConfig.
 
         **参数说明**：密码。
 

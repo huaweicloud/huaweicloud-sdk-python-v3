@@ -33,7 +33,7 @@ class ScopedTokenUser:
     }
 
     def __init__(self, domain=None, os_federation=None, id=None, name=None, password_expires_at=None):
-        """ScopedTokenUser
+        r"""ScopedTokenUser
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ScopedTokenUser:
 
     @property
     def domain(self):
-        """Gets the domain of this ScopedTokenUser.
+        r"""Gets the domain of this ScopedTokenUser.
 
         :return: The domain of this ScopedTokenUser.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
@@ -75,7 +75,7 @@ class ScopedTokenUser:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ScopedTokenUser.
+        r"""Sets the domain of this ScopedTokenUser.
 
         :param domain: The domain of this ScopedTokenUser.
         :type domain: :class:`huaweicloudsdkiam.v3.TokenDomainResult`
@@ -84,7 +84,7 @@ class ScopedTokenUser:
 
     @property
     def os_federation(self):
-        """Gets the os_federation of this ScopedTokenUser.
+        r"""Gets the os_federation of this ScopedTokenUser.
 
         :return: The os_federation of this ScopedTokenUser.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenUserOsfederation`
@@ -93,7 +93,7 @@ class ScopedTokenUser:
 
     @os_federation.setter
     def os_federation(self, os_federation):
-        """Sets the os_federation of this ScopedTokenUser.
+        r"""Sets the os_federation of this ScopedTokenUser.
 
         :param os_federation: The os_federation of this ScopedTokenUser.
         :type os_federation: :class:`huaweicloudsdkiam.v3.TokenUserOsfederation`
@@ -102,7 +102,7 @@ class ScopedTokenUser:
 
     @property
     def id(self):
-        """Gets the id of this ScopedTokenUser.
+        r"""Gets the id of this ScopedTokenUser.
 
         用户ID。
 
@@ -113,7 +113,7 @@ class ScopedTokenUser:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScopedTokenUser.
+        r"""Sets the id of this ScopedTokenUser.
 
         用户ID。
 
@@ -124,7 +124,7 @@ class ScopedTokenUser:
 
     @property
     def name(self):
-        """Gets the name of this ScopedTokenUser.
+        r"""Gets the name of this ScopedTokenUser.
 
         用户名。
 
@@ -135,7 +135,7 @@ class ScopedTokenUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScopedTokenUser.
+        r"""Sets the name of this ScopedTokenUser.
 
         用户名。
 
@@ -146,7 +146,7 @@ class ScopedTokenUser:
 
     @property
     def password_expires_at(self):
-        """Gets the password_expires_at of this ScopedTokenUser.
+        r"""Gets the password_expires_at of this ScopedTokenUser.
 
         密码过期时间（UTC时间），“”表示密码不过期。
 
@@ -157,7 +157,7 @@ class ScopedTokenUser:
 
     @password_expires_at.setter
     def password_expires_at(self, password_expires_at):
-        """Sets the password_expires_at of this ScopedTokenUser.
+        r"""Sets the password_expires_at of this ScopedTokenUser.
 
         密码过期时间（UTC时间），“”表示密码不过期。
 

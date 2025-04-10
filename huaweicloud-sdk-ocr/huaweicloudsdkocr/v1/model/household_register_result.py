@@ -31,7 +31,7 @@ class HouseholdRegisterResult:
     }
 
     def __init__(self, type=None, location=None, content=None, confidence=None):
-        """HouseholdRegisterResult
+        r"""HouseholdRegisterResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class HouseholdRegisterResult:
 
     @property
     def type(self):
-        """Gets the type of this HouseholdRegisterResult.
+        r"""Gets the type of this HouseholdRegisterResult.
 
         类型。参数为“首页”或“登记页”。 
 
@@ -75,7 +75,7 @@ class HouseholdRegisterResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HouseholdRegisterResult.
+        r"""Sets the type of this HouseholdRegisterResult.
 
         类型。参数为“首页”或“登记页”。 
 
@@ -86,7 +86,7 @@ class HouseholdRegisterResult:
 
     @property
     def location(self):
-        """Gets the location of this HouseholdRegisterResult.
+        r"""Gets the location of this HouseholdRegisterResult.
 
         户口本证件位置信息，列表形式，包含证件位置四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -97,7 +97,7 @@ class HouseholdRegisterResult:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this HouseholdRegisterResult.
+        r"""Sets the location of this HouseholdRegisterResult.
 
         户口本证件位置信息，列表形式，包含证件位置四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -108,7 +108,7 @@ class HouseholdRegisterResult:
 
     @property
     def content(self):
-        """Gets the content of this HouseholdRegisterResult.
+        r"""Gets the content of this HouseholdRegisterResult.
 
         :return: The content of this HouseholdRegisterResult.
         :rtype: :class:`huaweicloudsdkocr.v1.HouseholdRegisterContent`
@@ -117,7 +117,7 @@ class HouseholdRegisterResult:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this HouseholdRegisterResult.
+        r"""Sets the content of this HouseholdRegisterResult.
 
         :param content: The content of this HouseholdRegisterResult.
         :type content: :class:`huaweicloudsdkocr.v1.HouseholdRegisterContent`
@@ -126,7 +126,7 @@ class HouseholdRegisterResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this HouseholdRegisterResult.
+        r"""Gets the confidence of this HouseholdRegisterResult.
 
         content中各个字段的置信度，取值范围0~1。置信度越大，本次识别的字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于字段的准确率。 
 
@@ -137,7 +137,7 @@ class HouseholdRegisterResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this HouseholdRegisterResult.
+        r"""Sets the confidence of this HouseholdRegisterResult.
 
         content中各个字段的置信度，取值范围0~1。置信度越大，本次识别的字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于字段的准确率。 
 

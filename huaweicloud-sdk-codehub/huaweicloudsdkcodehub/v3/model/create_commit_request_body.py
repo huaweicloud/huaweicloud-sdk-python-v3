@@ -39,7 +39,7 @@ class CreateCommitRequestBody:
     }
 
     def __init__(self, branch=None, commit_message=None, start_branch=None, actions=None, author_email=None, author_name=None, stats=None, force=None):
-        """CreateCommitRequestBody
+        r"""CreateCommitRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class CreateCommitRequestBody:
 
     @property
     def branch(self):
-        """Gets the branch of this CreateCommitRequestBody.
+        r"""Gets the branch of this CreateCommitRequestBody.
 
         目标分支
 
@@ -100,7 +100,7 @@ class CreateCommitRequestBody:
 
     @branch.setter
     def branch(self, branch):
-        """Sets the branch of this CreateCommitRequestBody.
+        r"""Sets the branch of this CreateCommitRequestBody.
 
         目标分支
 
@@ -111,7 +111,7 @@ class CreateCommitRequestBody:
 
     @property
     def commit_message(self):
-        """Gets the commit_message of this CreateCommitRequestBody.
+        r"""Gets the commit_message of this CreateCommitRequestBody.
 
         提交信息
 
@@ -122,7 +122,7 @@ class CreateCommitRequestBody:
 
     @commit_message.setter
     def commit_message(self, commit_message):
-        """Sets the commit_message of this CreateCommitRequestBody.
+        r"""Sets the commit_message of this CreateCommitRequestBody.
 
         提交信息
 
@@ -133,7 +133,7 @@ class CreateCommitRequestBody:
 
     @property
     def start_branch(self):
-        """Gets the start_branch of this CreateCommitRequestBody.
+        r"""Gets the start_branch of this CreateCommitRequestBody.
 
         创建分支时，新的分支名
 
@@ -144,7 +144,7 @@ class CreateCommitRequestBody:
 
     @start_branch.setter
     def start_branch(self, start_branch):
-        """Sets the start_branch of this CreateCommitRequestBody.
+        r"""Sets the start_branch of this CreateCommitRequestBody.
 
         创建分支时，新的分支名
 
@@ -155,7 +155,7 @@ class CreateCommitRequestBody:
 
     @property
     def actions(self):
-        """Gets the actions of this CreateCommitRequestBody.
+        r"""Gets the actions of this CreateCommitRequestBody.
 
         提交处理列表
 
@@ -166,7 +166,7 @@ class CreateCommitRequestBody:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this CreateCommitRequestBody.
+        r"""Sets the actions of this CreateCommitRequestBody.
 
         提交处理列表
 
@@ -177,7 +177,7 @@ class CreateCommitRequestBody:
 
     @property
     def author_email(self):
-        """Gets the author_email of this CreateCommitRequestBody.
+        r"""Gets the author_email of this CreateCommitRequestBody.
 
         提交作者的电子邮件地址
 
@@ -188,7 +188,7 @@ class CreateCommitRequestBody:
 
     @author_email.setter
     def author_email(self, author_email):
-        """Sets the author_email of this CreateCommitRequestBody.
+        r"""Sets the author_email of this CreateCommitRequestBody.
 
         提交作者的电子邮件地址
 
@@ -199,7 +199,7 @@ class CreateCommitRequestBody:
 
     @property
     def author_name(self):
-        """Gets the author_name of this CreateCommitRequestBody.
+        r"""Gets the author_name of this CreateCommitRequestBody.
 
         提交作者的名称
 
@@ -210,7 +210,7 @@ class CreateCommitRequestBody:
 
     @author_name.setter
     def author_name(self, author_name):
-        """Sets the author_name of this CreateCommitRequestBody.
+        r"""Sets the author_name of this CreateCommitRequestBody.
 
         提交作者的名称
 
@@ -221,7 +221,7 @@ class CreateCommitRequestBody:
 
     @property
     def stats(self):
-        """Gets the stats of this CreateCommitRequestBody.
+        r"""Gets the stats of this CreateCommitRequestBody.
 
         是否包括提交统计信息。默认值为true
 
@@ -232,7 +232,7 @@ class CreateCommitRequestBody:
 
     @stats.setter
     def stats(self, stats):
-        """Sets the stats of this CreateCommitRequestBody.
+        r"""Sets the stats of this CreateCommitRequestBody.
 
         是否包括提交统计信息。默认值为true
 
@@ -243,7 +243,7 @@ class CreateCommitRequestBody:
 
     @property
     def force(self):
-        """Gets the force of this CreateCommitRequestBody.
+        r"""Gets the force of this CreateCommitRequestBody.
 
         是否覆盖目标分支。当true时，使用基于start_branch的新提交覆盖目标分支
 
@@ -254,7 +254,7 @@ class CreateCommitRequestBody:
 
     @force.setter
     def force(self, force):
-        """Sets the force of this CreateCommitRequestBody.
+        r"""Sets the force of this CreateCommitRequestBody.
 
         是否覆盖目标分支。当true时，使用基于start_branch的新提交覆盖目标分支
 

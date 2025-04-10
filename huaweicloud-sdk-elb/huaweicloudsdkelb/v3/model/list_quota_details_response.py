@@ -28,7 +28,7 @@ class ListQuotaDetailsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, quotas=None):
-        """ListQuotaDetailsResponse
+        r"""ListQuotaDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListQuotaDetailsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListQuotaDetailsResponse.
+        r"""Gets the request_id of this ListQuotaDetailsResponse.
 
         请求ID。  注：自动生成 。
 
@@ -62,7 +62,7 @@ class ListQuotaDetailsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListQuotaDetailsResponse.
+        r"""Sets the request_id of this ListQuotaDetailsResponse.
 
         请求ID。  注：自动生成 。
 
@@ -73,7 +73,7 @@ class ListQuotaDetailsResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ListQuotaDetailsResponse.
+        r"""Gets the quotas of this ListQuotaDetailsResponse.
 
         资源配额信息列表。
 
@@ -84,7 +84,7 @@ class ListQuotaDetailsResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ListQuotaDetailsResponse.
+        r"""Sets the quotas of this ListQuotaDetailsResponse.
 
         资源配额信息列表。
 

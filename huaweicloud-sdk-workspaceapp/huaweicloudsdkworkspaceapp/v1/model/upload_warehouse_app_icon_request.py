@@ -25,7 +25,7 @@ class UploadWarehouseAppIconRequest:
     }
 
     def __init__(self, body=None):
-        """UploadWarehouseAppIconRequest
+        r"""UploadWarehouseAppIconRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UploadWarehouseAppIconRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadWarehouseAppIconRequest.
+        r"""Gets the body of this UploadWarehouseAppIconRequest.
 
         :return: The body of this UploadWarehouseAppIconRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UploadWarehouseAppIconRequestBody`
@@ -52,7 +52,7 @@ class UploadWarehouseAppIconRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadWarehouseAppIconRequest.
+        r"""Sets the body of this UploadWarehouseAppIconRequest.
 
         :param body: The body of this UploadWarehouseAppIconRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.UploadWarehouseAppIconRequestBody`

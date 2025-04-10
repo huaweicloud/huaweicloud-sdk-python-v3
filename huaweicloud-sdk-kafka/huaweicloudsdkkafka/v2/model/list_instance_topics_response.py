@@ -36,7 +36,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, remain_partitions=None, max_partitions=None, topic_max_partitions=None, topics=None):
-        """ListInstanceTopicsResponse
+        r"""ListInstanceTopicsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListInstanceTopicsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListInstanceTopicsResponse.
+        r"""Gets the total of this ListInstanceTopicsResponse.
 
         topic总数。
 
@@ -90,7 +90,7 @@ class ListInstanceTopicsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListInstanceTopicsResponse.
+        r"""Sets the total of this ListInstanceTopicsResponse.
 
         topic总数。
 
@@ -101,7 +101,7 @@ class ListInstanceTopicsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListInstanceTopicsResponse.
+        r"""Gets the size of this ListInstanceTopicsResponse.
 
         分页查询的大小。
 
@@ -112,7 +112,7 @@ class ListInstanceTopicsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListInstanceTopicsResponse.
+        r"""Sets the size of this ListInstanceTopicsResponse.
 
         分页查询的大小。
 
@@ -123,7 +123,7 @@ class ListInstanceTopicsResponse(SdkResponse):
 
     @property
     def remain_partitions(self):
-        """Gets the remain_partitions of this ListInstanceTopicsResponse.
+        r"""Gets the remain_partitions of this ListInstanceTopicsResponse.
 
         剩余分区数。
 
@@ -134,7 +134,7 @@ class ListInstanceTopicsResponse(SdkResponse):
 
     @remain_partitions.setter
     def remain_partitions(self, remain_partitions):
-        """Sets the remain_partitions of this ListInstanceTopicsResponse.
+        r"""Sets the remain_partitions of this ListInstanceTopicsResponse.
 
         剩余分区数。
 
@@ -145,7 +145,7 @@ class ListInstanceTopicsResponse(SdkResponse):
 
     @property
     def max_partitions(self):
-        """Gets the max_partitions of this ListInstanceTopicsResponse.
+        r"""Gets the max_partitions of this ListInstanceTopicsResponse.
 
         分区总数。
 
@@ -156,7 +156,7 @@ class ListInstanceTopicsResponse(SdkResponse):
 
     @max_partitions.setter
     def max_partitions(self, max_partitions):
-        """Sets the max_partitions of this ListInstanceTopicsResponse.
+        r"""Sets the max_partitions of this ListInstanceTopicsResponse.
 
         分区总数。
 
@@ -167,7 +167,7 @@ class ListInstanceTopicsResponse(SdkResponse):
 
     @property
     def topic_max_partitions(self):
-        """Gets the topic_max_partitions of this ListInstanceTopicsResponse.
+        r"""Gets the topic_max_partitions of this ListInstanceTopicsResponse.
 
         单个topic最大占用分区数。
 
@@ -178,7 +178,7 @@ class ListInstanceTopicsResponse(SdkResponse):
 
     @topic_max_partitions.setter
     def topic_max_partitions(self, topic_max_partitions):
-        """Sets the topic_max_partitions of this ListInstanceTopicsResponse.
+        r"""Sets the topic_max_partitions of this ListInstanceTopicsResponse.
 
         单个topic最大占用分区数。
 
@@ -189,7 +189,7 @@ class ListInstanceTopicsResponse(SdkResponse):
 
     @property
     def topics(self):
-        """Gets the topics of this ListInstanceTopicsResponse.
+        r"""Gets the topics of this ListInstanceTopicsResponse.
 
         topic列表。
 
@@ -200,7 +200,7 @@ class ListInstanceTopicsResponse(SdkResponse):
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this ListInstanceTopicsResponse.
+        r"""Sets the topics of this ListInstanceTopicsResponse.
 
         topic列表。
 

@@ -29,7 +29,7 @@ class IncidentSubTypeV2Do:
     }
 
     def __init__(self, incident_sub_type_id=None, incident_sub_type_name=None, incident_product_category_list=None):
-        """IncidentSubTypeV2Do
+        r"""IncidentSubTypeV2Do
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IncidentSubTypeV2Do:
 
     @property
     def incident_sub_type_id(self):
-        """Gets the incident_sub_type_id of this IncidentSubTypeV2Do.
+        r"""Gets the incident_sub_type_id of this IncidentSubTypeV2Do.
 
         工单子类型id
 
@@ -68,7 +68,7 @@ class IncidentSubTypeV2Do:
 
     @incident_sub_type_id.setter
     def incident_sub_type_id(self, incident_sub_type_id):
-        """Sets the incident_sub_type_id of this IncidentSubTypeV2Do.
+        r"""Sets the incident_sub_type_id of this IncidentSubTypeV2Do.
 
         工单子类型id
 
@@ -79,7 +79,7 @@ class IncidentSubTypeV2Do:
 
     @property
     def incident_sub_type_name(self):
-        """Gets the incident_sub_type_name of this IncidentSubTypeV2Do.
+        r"""Gets the incident_sub_type_name of this IncidentSubTypeV2Do.
 
         工单子类型名称
 
@@ -90,7 +90,7 @@ class IncidentSubTypeV2Do:
 
     @incident_sub_type_name.setter
     def incident_sub_type_name(self, incident_sub_type_name):
-        """Sets the incident_sub_type_name of this IncidentSubTypeV2Do.
+        r"""Sets the incident_sub_type_name of this IncidentSubTypeV2Do.
 
         工单子类型名称
 
@@ -101,7 +101,7 @@ class IncidentSubTypeV2Do:
 
     @property
     def incident_product_category_list(self):
-        """Gets the incident_product_category_list of this IncidentSubTypeV2Do.
+        r"""Gets the incident_product_category_list of this IncidentSubTypeV2Do.
 
         产品类型列表
 
@@ -112,7 +112,7 @@ class IncidentSubTypeV2Do:
 
     @incident_product_category_list.setter
     def incident_product_category_list(self, incident_product_category_list):
-        """Sets the incident_product_category_list of this IncidentSubTypeV2Do.
+        r"""Sets the incident_product_category_list of this IncidentSubTypeV2Do.
 
         产品类型列表
 

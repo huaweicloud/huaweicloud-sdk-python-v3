@@ -37,7 +37,7 @@ class ReadConfig:
     }
 
     def __init__(self, image_read_configs=None, read_type=None, read_content=None, character_position=None, read_content_paragraph_interval=None, image_frame_id=None, audio_url=None):
-        """ReadConfig
+        r"""ReadConfig
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ReadConfig:
 
     @property
     def image_read_configs(self):
-        """Gets the image_read_configs of this ReadConfig.
+        r"""Gets the image_read_configs of this ReadConfig.
 
         插图播报配置
 
@@ -95,7 +95,7 @@ class ReadConfig:
 
     @image_read_configs.setter
     def image_read_configs(self, image_read_configs):
-        """Sets the image_read_configs of this ReadConfig.
+        r"""Sets the image_read_configs of this ReadConfig.
 
         插图播报配置
 
@@ -106,7 +106,7 @@ class ReadConfig:
 
     @property
     def read_type(self):
-        """Gets the read_type of this ReadConfig.
+        r"""Gets the read_type of this ReadConfig.
 
         播报选项： 0：纯文本播报（使用read_content 字段） 1：插图播报（使用image_read_configs字段） 3：自定义音频播报（使用audio字段） 会根据选项进行具体的字段校验
 
@@ -117,7 +117,7 @@ class ReadConfig:
 
     @read_type.setter
     def read_type(self, read_type):
-        """Sets the read_type of this ReadConfig.
+        r"""Sets the read_type of this ReadConfig.
 
         播报选项： 0：纯文本播报（使用read_content 字段） 1：插图播报（使用image_read_configs字段） 3：自定义音频播报（使用audio字段） 会根据选项进行具体的字段校验
 
@@ -128,7 +128,7 @@ class ReadConfig:
 
     @property
     def read_content(self):
-        """Gets the read_content of this ReadConfig.
+        r"""Gets the read_content of this ReadConfig.
 
         纯文本播报内容
 
@@ -139,7 +139,7 @@ class ReadConfig:
 
     @read_content.setter
     def read_content(self, read_content):
-        """Sets the read_content of this ReadConfig.
+        r"""Sets the read_content of this ReadConfig.
 
         纯文本播报内容
 
@@ -150,7 +150,7 @@ class ReadConfig:
 
     @property
     def character_position(self):
-        """Gets the character_position of this ReadConfig.
+        r"""Gets the character_position of this ReadConfig.
 
         0：左 1：中 2：右 默认：1
 
@@ -161,7 +161,7 @@ class ReadConfig:
 
     @character_position.setter
     def character_position(self, character_position):
-        """Sets the character_position of this ReadConfig.
+        r"""Sets the character_position of this ReadConfig.
 
         0：左 1：中 2：右 默认：1
 
@@ -172,7 +172,7 @@ class ReadConfig:
 
     @property
     def read_content_paragraph_interval(self):
-        """Gets the read_content_paragraph_interval of this ReadConfig.
+        r"""Gets the read_content_paragraph_interval of this ReadConfig.
 
         段落播报间隔 单位：ms 范围：0~5000 默认：400
 
@@ -183,7 +183,7 @@ class ReadConfig:
 
     @read_content_paragraph_interval.setter
     def read_content_paragraph_interval(self, read_content_paragraph_interval):
-        """Sets the read_content_paragraph_interval of this ReadConfig.
+        r"""Sets the read_content_paragraph_interval of this ReadConfig.
 
         段落播报间隔 单位：ms 范围：0~5000 默认：400
 
@@ -194,7 +194,7 @@ class ReadConfig:
 
     @property
     def image_frame_id(self):
-        """Gets the image_frame_id of this ReadConfig.
+        r"""Gets the image_frame_id of this ReadConfig.
 
         播报框id
 
@@ -205,7 +205,7 @@ class ReadConfig:
 
     @image_frame_id.setter
     def image_frame_id(self, image_frame_id):
-        """Sets the image_frame_id of this ReadConfig.
+        r"""Sets the image_frame_id of this ReadConfig.
 
         播报框id
 
@@ -216,7 +216,7 @@ class ReadConfig:
 
     @property
     def audio_url(self):
-        """Gets the audio_url of this ReadConfig.
+        r"""Gets the audio_url of this ReadConfig.
 
         用户的音频文件obs地址，为https格式（如：https://cbs-digital-human-cn-north-4.obs.myhuaweicloud.com:443/audio.wav），当字段不为空时，表示将使用用户自己的音频文件。  不支持PPT和图片播报，不支持字幕。音频格式文件格式为wav 音频最长支持20分钟，支持100m大小 注意：该功能的使用需要用户启动OBS授权
 
@@ -227,7 +227,7 @@ class ReadConfig:
 
     @audio_url.setter
     def audio_url(self, audio_url):
-        """Sets the audio_url of this ReadConfig.
+        r"""Sets the audio_url of this ReadConfig.
 
         用户的音频文件obs地址，为https格式（如：https://cbs-digital-human-cn-north-4.obs.myhuaweicloud.com:443/audio.wav），当字段不为空时，表示将使用用户自己的音频文件。  不支持PPT和图片播报，不支持字幕。音频格式文件格式为wav 音频最长支持20分钟，支持100m大小 注意：该功能的使用需要用户启动OBS授权
 

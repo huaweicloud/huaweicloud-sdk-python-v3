@@ -23,7 +23,7 @@ class ListKeywordsAlarmRulesRequest:
     }
 
     def __init__(self):
-        """ListKeywordsAlarmRulesRequest
+        r"""ListKeywordsAlarmRulesRequest
 
         The model defined in huaweicloud sdk
 

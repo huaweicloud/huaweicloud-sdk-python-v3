@@ -27,7 +27,7 @@ class DeletePacifyWordsRequest:
     }
 
     def __init__(self, x_app_user_id=None, pacify_words_id=None):
-        """DeletePacifyWordsRequest
+        r"""DeletePacifyWordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeletePacifyWordsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this DeletePacifyWordsRequest.
+        r"""Gets the x_app_user_id of this DeletePacifyWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -60,7 +60,7 @@ class DeletePacifyWordsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this DeletePacifyWordsRequest.
+        r"""Sets the x_app_user_id of this DeletePacifyWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -71,7 +71,7 @@ class DeletePacifyWordsRequest:
 
     @property
     def pacify_words_id(self):
-        """Gets the pacify_words_id of this DeletePacifyWordsRequest.
+        r"""Gets the pacify_words_id of this DeletePacifyWordsRequest.
 
         安抚话术ID。
 
@@ -82,7 +82,7 @@ class DeletePacifyWordsRequest:
 
     @pacify_words_id.setter
     def pacify_words_id(self, pacify_words_id):
-        """Sets the pacify_words_id of this DeletePacifyWordsRequest.
+        r"""Sets the pacify_words_id of this DeletePacifyWordsRequest.
 
         安抚话术ID。
 

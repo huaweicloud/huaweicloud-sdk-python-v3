@@ -30,7 +30,7 @@ class DeletePlaybookRuleResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, x_request_id=None):
-        """DeletePlaybookRuleResponse
+        r"""DeletePlaybookRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeletePlaybookRuleResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DeletePlaybookRuleResponse.
+        r"""Gets the code of this DeletePlaybookRuleResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class DeletePlaybookRuleResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeletePlaybookRuleResponse.
+        r"""Sets the code of this DeletePlaybookRuleResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class DeletePlaybookRuleResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeletePlaybookRuleResponse.
+        r"""Gets the message of this DeletePlaybookRuleResponse.
 
         响应消息
 
@@ -91,7 +91,7 @@ class DeletePlaybookRuleResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeletePlaybookRuleResponse.
+        r"""Sets the message of this DeletePlaybookRuleResponse.
 
         响应消息
 
@@ -102,7 +102,7 @@ class DeletePlaybookRuleResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeletePlaybookRuleResponse.
+        r"""Gets the x_request_id of this DeletePlaybookRuleResponse.
 
         :return: The x_request_id of this DeletePlaybookRuleResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class DeletePlaybookRuleResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeletePlaybookRuleResponse.
+        r"""Sets the x_request_id of this DeletePlaybookRuleResponse.
 
         :param x_request_id: The x_request_id of this DeletePlaybookRuleResponse.
         :type x_request_id: str

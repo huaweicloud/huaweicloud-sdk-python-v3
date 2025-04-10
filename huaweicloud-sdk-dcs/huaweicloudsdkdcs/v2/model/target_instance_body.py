@@ -41,7 +41,7 @@ class TargetInstanceBody:
     }
 
     def __init__(self, id=None, name=None, password=None, task_status=None, ip=None, port=None, addrs=None, proxy_multi_db=None, db=None):
-        """TargetInstanceBody
+        r"""TargetInstanceBody
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class TargetInstanceBody:
 
     @property
     def id(self):
-        """Gets the id of this TargetInstanceBody.
+        r"""Gets the id of this TargetInstanceBody.
 
         Redis实例ID（target_instance信息中必须填写）。
 
@@ -109,7 +109,7 @@ class TargetInstanceBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TargetInstanceBody.
+        r"""Sets the id of this TargetInstanceBody.
 
         Redis实例ID（target_instance信息中必须填写）。
 
@@ -120,7 +120,7 @@ class TargetInstanceBody:
 
     @property
     def name(self):
-        """Gets the name of this TargetInstanceBody.
+        r"""Gets the name of this TargetInstanceBody.
 
         Redis实例名称(target_instance信息中填写)。
 
@@ -131,7 +131,7 @@ class TargetInstanceBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TargetInstanceBody.
+        r"""Sets the name of this TargetInstanceBody.
 
         Redis实例名称(target_instance信息中填写)。
 
@@ -142,7 +142,7 @@ class TargetInstanceBody:
 
     @property
     def password(self):
-        """Gets the password of this TargetInstanceBody.
+        r"""Gets the password of this TargetInstanceBody.
 
         Redis密码，如果设置了密码，则必须填写。
 
@@ -153,7 +153,7 @@ class TargetInstanceBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this TargetInstanceBody.
+        r"""Sets the password of this TargetInstanceBody.
 
         Redis密码，如果设置了密码，则必须填写。
 
@@ -164,7 +164,7 @@ class TargetInstanceBody:
 
     @property
     def task_status(self):
-        """Gets the task_status of this TargetInstanceBody.
+        r"""Gets the task_status of this TargetInstanceBody.
 
         任务状态。
 
@@ -175,7 +175,7 @@ class TargetInstanceBody:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this TargetInstanceBody.
+        r"""Sets the task_status of this TargetInstanceBody.
 
         任务状态。
 
@@ -186,7 +186,7 @@ class TargetInstanceBody:
 
     @property
     def ip(self):
-        """Gets the ip of this TargetInstanceBody.
+        r"""Gets the ip of this TargetInstanceBody.
 
         Redis IP地址。
 
@@ -197,7 +197,7 @@ class TargetInstanceBody:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this TargetInstanceBody.
+        r"""Sets the ip of this TargetInstanceBody.
 
         Redis IP地址。
 
@@ -208,7 +208,7 @@ class TargetInstanceBody:
 
     @property
     def port(self):
-        """Gets the port of this TargetInstanceBody.
+        r"""Gets the port of this TargetInstanceBody.
 
         Redis端口。
 
@@ -219,7 +219,7 @@ class TargetInstanceBody:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this TargetInstanceBody.
+        r"""Sets the port of this TargetInstanceBody.
 
         Redis端口。
 
@@ -230,7 +230,7 @@ class TargetInstanceBody:
 
     @property
     def addrs(self):
-        """Gets the addrs of this TargetInstanceBody.
+        r"""Gets the addrs of this TargetInstanceBody.
 
         Redis实例地址。
 
@@ -241,7 +241,7 @@ class TargetInstanceBody:
 
     @addrs.setter
     def addrs(self, addrs):
-        """Sets the addrs of this TargetInstanceBody.
+        r"""Sets the addrs of this TargetInstanceBody.
 
         Redis实例地址。
 
@@ -252,7 +252,7 @@ class TargetInstanceBody:
 
     @property
     def proxy_multi_db(self):
-        """Gets the proxy_multi_db of this TargetInstanceBody.
+        r"""Gets the proxy_multi_db of this TargetInstanceBody.
 
         proxy实例是否开启了多DB。
 
@@ -263,7 +263,7 @@ class TargetInstanceBody:
 
     @proxy_multi_db.setter
     def proxy_multi_db(self, proxy_multi_db):
-        """Sets the proxy_multi_db of this TargetInstanceBody.
+        r"""Sets the proxy_multi_db of this TargetInstanceBody.
 
         proxy实例是否开启了多DB。
 
@@ -274,7 +274,7 @@ class TargetInstanceBody:
 
     @property
     def db(self):
-        """Gets the db of this TargetInstanceBody.
+        r"""Gets the db of this TargetInstanceBody.
 
         Redis数据库。
 
@@ -285,7 +285,7 @@ class TargetInstanceBody:
 
     @db.setter
     def db(self, db):
-        """Sets the db of this TargetInstanceBody.
+        r"""Sets the db of this TargetInstanceBody.
 
         Redis数据库。
 

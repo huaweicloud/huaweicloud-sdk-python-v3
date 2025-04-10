@@ -29,7 +29,7 @@ class SwitchConfigurationRequest:
     }
 
     def __init__(self, x_language=None, config_id=None, body=None):
-        """SwitchConfigurationRequest
+        r"""SwitchConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SwitchConfigurationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SwitchConfigurationRequest.
+        r"""Gets the x_language of this SwitchConfigurationRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class SwitchConfigurationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SwitchConfigurationRequest.
+        r"""Sets the x_language of this SwitchConfigurationRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class SwitchConfigurationRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this SwitchConfigurationRequest.
+        r"""Gets the config_id of this SwitchConfigurationRequest.
 
         参数模板ID。
 
@@ -89,7 +89,7 @@ class SwitchConfigurationRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this SwitchConfigurationRequest.
+        r"""Sets the config_id of this SwitchConfigurationRequest.
 
         参数模板ID。
 
@@ -100,7 +100,7 @@ class SwitchConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchConfigurationRequest.
+        r"""Gets the body of this SwitchConfigurationRequest.
 
         :return: The body of this SwitchConfigurationRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ApplyConfigurationRequestBody`
@@ -109,7 +109,7 @@ class SwitchConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchConfigurationRequest.
+        r"""Sets the body of this SwitchConfigurationRequest.
 
         :param body: The body of this SwitchConfigurationRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.ApplyConfigurationRequestBody`

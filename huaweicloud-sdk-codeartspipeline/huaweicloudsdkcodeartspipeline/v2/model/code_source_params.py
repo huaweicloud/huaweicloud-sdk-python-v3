@@ -41,7 +41,7 @@ class CodeSourceParams:
     }
 
     def __init__(self, git_type=None, codehub_id=None, endpoint_id=None, default_branch=None, git_url=None, ssh_git_url=None, web_url=None, repo_name=None, alias=None):
-        """CodeSourceParams
+        r"""CodeSourceParams
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class CodeSourceParams:
 
     @property
     def git_type(self):
-        """Gets the git_type of this CodeSourceParams.
+        r"""Gets the git_type of this CodeSourceParams.
 
         代码仓类型
 
@@ -110,7 +110,7 @@ class CodeSourceParams:
 
     @git_type.setter
     def git_type(self, git_type):
-        """Sets the git_type of this CodeSourceParams.
+        r"""Sets the git_type of this CodeSourceParams.
 
         代码仓类型
 
@@ -121,7 +121,7 @@ class CodeSourceParams:
 
     @property
     def codehub_id(self):
-        """Gets the codehub_id of this CodeSourceParams.
+        r"""Gets the codehub_id of this CodeSourceParams.
 
         codehub代码仓ID
 
@@ -132,7 +132,7 @@ class CodeSourceParams:
 
     @codehub_id.setter
     def codehub_id(self, codehub_id):
-        """Sets the codehub_id of this CodeSourceParams.
+        r"""Sets the codehub_id of this CodeSourceParams.
 
         codehub代码仓ID
 
@@ -143,7 +143,7 @@ class CodeSourceParams:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this CodeSourceParams.
+        r"""Gets the endpoint_id of this CodeSourceParams.
 
         扩展点ID
 
@@ -154,7 +154,7 @@ class CodeSourceParams:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this CodeSourceParams.
+        r"""Sets the endpoint_id of this CodeSourceParams.
 
         扩展点ID
 
@@ -165,7 +165,7 @@ class CodeSourceParams:
 
     @property
     def default_branch(self):
-        """Gets the default_branch of this CodeSourceParams.
+        r"""Gets the default_branch of this CodeSourceParams.
 
         默认分支
 
@@ -176,7 +176,7 @@ class CodeSourceParams:
 
     @default_branch.setter
     def default_branch(self, default_branch):
-        """Sets the default_branch of this CodeSourceParams.
+        r"""Sets the default_branch of this CodeSourceParams.
 
         默认分支
 
@@ -187,7 +187,7 @@ class CodeSourceParams:
 
     @property
     def git_url(self):
-        """Gets the git_url of this CodeSourceParams.
+        r"""Gets the git_url of this CodeSourceParams.
 
         代码仓https地址
 
@@ -198,7 +198,7 @@ class CodeSourceParams:
 
     @git_url.setter
     def git_url(self, git_url):
-        """Sets the git_url of this CodeSourceParams.
+        r"""Sets the git_url of this CodeSourceParams.
 
         代码仓https地址
 
@@ -209,7 +209,7 @@ class CodeSourceParams:
 
     @property
     def ssh_git_url(self):
-        """Gets the ssh_git_url of this CodeSourceParams.
+        r"""Gets the ssh_git_url of this CodeSourceParams.
 
         代码仓ssh地址
 
@@ -220,7 +220,7 @@ class CodeSourceParams:
 
     @ssh_git_url.setter
     def ssh_git_url(self, ssh_git_url):
-        """Sets the ssh_git_url of this CodeSourceParams.
+        r"""Sets the ssh_git_url of this CodeSourceParams.
 
         代码仓ssh地址
 
@@ -231,7 +231,7 @@ class CodeSourceParams:
 
     @property
     def web_url(self):
-        """Gets the web_url of this CodeSourceParams.
+        r"""Gets the web_url of this CodeSourceParams.
 
         代码仓页面地址
 
@@ -242,7 +242,7 @@ class CodeSourceParams:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this CodeSourceParams.
+        r"""Sets the web_url of this CodeSourceParams.
 
         代码仓页面地址
 
@@ -253,7 +253,7 @@ class CodeSourceParams:
 
     @property
     def repo_name(self):
-        """Gets the repo_name of this CodeSourceParams.
+        r"""Gets the repo_name of this CodeSourceParams.
 
         代码仓名称
 
@@ -264,7 +264,7 @@ class CodeSourceParams:
 
     @repo_name.setter
     def repo_name(self, repo_name):
-        """Sets the repo_name of this CodeSourceParams.
+        r"""Sets the repo_name of this CodeSourceParams.
 
         代码仓名称
 
@@ -275,7 +275,7 @@ class CodeSourceParams:
 
     @property
     def alias(self):
-        """Gets the alias of this CodeSourceParams.
+        r"""Gets the alias of this CodeSourceParams.
 
         代码仓别名
 
@@ -286,7 +286,7 @@ class CodeSourceParams:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this CodeSourceParams.
+        r"""Sets the alias of this CodeSourceParams.
 
         代码仓别名
 

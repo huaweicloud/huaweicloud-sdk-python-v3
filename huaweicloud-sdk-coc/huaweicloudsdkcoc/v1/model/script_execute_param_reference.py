@@ -29,7 +29,7 @@ class ScriptExecuteParamReference:
     }
 
     def __init__(self, refer_type=None, param_id=None, param_version=None):
-        """ScriptExecuteParamReference
+        r"""ScriptExecuteParamReference
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ScriptExecuteParamReference:
 
     @property
     def refer_type(self):
-        """Gets the refer_type of this ScriptExecuteParamReference.
+        r"""Gets the refer_type of this ScriptExecuteParamReference.
 
         参数引用类型：PARAM_STORE
 
@@ -66,7 +66,7 @@ class ScriptExecuteParamReference:
 
     @refer_type.setter
     def refer_type(self, refer_type):
-        """Sets the refer_type of this ScriptExecuteParamReference.
+        r"""Sets the refer_type of this ScriptExecuteParamReference.
 
         参数引用类型：PARAM_STORE
 
@@ -77,7 +77,7 @@ class ScriptExecuteParamReference:
 
     @property
     def param_id(self):
-        """Gets the param_id of this ScriptExecuteParamReference.
+        r"""Gets the param_id of this ScriptExecuteParamReference.
 
         引用参数的唯一主键id
 
@@ -88,7 +88,7 @@ class ScriptExecuteParamReference:
 
     @param_id.setter
     def param_id(self, param_id):
-        """Sets the param_id of this ScriptExecuteParamReference.
+        r"""Sets the param_id of this ScriptExecuteParamReference.
 
         引用参数的唯一主键id
 
@@ -99,7 +99,7 @@ class ScriptExecuteParamReference:
 
     @property
     def param_version(self):
-        """Gets the param_version of this ScriptExecuteParamReference.
+        r"""Gets the param_version of this ScriptExecuteParamReference.
 
         引用参数的版本号
 
@@ -110,7 +110,7 @@ class ScriptExecuteParamReference:
 
     @param_version.setter
     def param_version(self, param_version):
-        """Sets the param_version of this ScriptExecuteParamReference.
+        r"""Sets the param_version of this ScriptExecuteParamReference.
 
         引用参数的版本号
 

@@ -24,7 +24,7 @@ class ExportFunctionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ExportFunctionResponse
+        r"""ExportFunctionResponse
 
         The model defined in huaweicloud sdk
 

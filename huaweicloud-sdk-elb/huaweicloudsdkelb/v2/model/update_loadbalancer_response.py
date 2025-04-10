@@ -26,7 +26,7 @@ class UpdateLoadbalancerResponse(SdkResponse):
     }
 
     def __init__(self, loadbalancer=None):
-        """UpdateLoadbalancerResponse
+        r"""UpdateLoadbalancerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateLoadbalancerResponse(SdkResponse):
 
     @property
     def loadbalancer(self):
-        """Gets the loadbalancer of this UpdateLoadbalancerResponse.
+        r"""Gets the loadbalancer of this UpdateLoadbalancerResponse.
 
         :return: The loadbalancer of this UpdateLoadbalancerResponse.
         :rtype: :class:`huaweicloudsdkelb.v2.LoadbalancerResp`
@@ -53,7 +53,7 @@ class UpdateLoadbalancerResponse(SdkResponse):
 
     @loadbalancer.setter
     def loadbalancer(self, loadbalancer):
-        """Sets the loadbalancer of this UpdateLoadbalancerResponse.
+        r"""Sets the loadbalancer of this UpdateLoadbalancerResponse.
 
         :param loadbalancer: The loadbalancer of this UpdateLoadbalancerResponse.
         :type loadbalancer: :class:`huaweicloudsdkelb.v2.LoadbalancerResp`

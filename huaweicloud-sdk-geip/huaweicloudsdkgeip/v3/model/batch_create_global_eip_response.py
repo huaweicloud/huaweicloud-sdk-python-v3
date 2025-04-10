@@ -30,7 +30,7 @@ class BatchCreateGlobalEipResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, global_eips=None, x_request_id=None):
-        """BatchCreateGlobalEipResponse
+        r"""BatchCreateGlobalEipResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchCreateGlobalEipResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BatchCreateGlobalEipResponse.
+        r"""Gets the request_id of this BatchCreateGlobalEipResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class BatchCreateGlobalEipResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BatchCreateGlobalEipResponse.
+        r"""Sets the request_id of this BatchCreateGlobalEipResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class BatchCreateGlobalEipResponse(SdkResponse):
 
     @property
     def global_eips(self):
-        """Gets the global_eips of this BatchCreateGlobalEipResponse.
+        r"""Gets the global_eips of this BatchCreateGlobalEipResponse.
 
         响应对象
 
@@ -91,7 +91,7 @@ class BatchCreateGlobalEipResponse(SdkResponse):
 
     @global_eips.setter
     def global_eips(self, global_eips):
-        """Sets the global_eips of this BatchCreateGlobalEipResponse.
+        r"""Sets the global_eips of this BatchCreateGlobalEipResponse.
 
         响应对象
 
@@ -102,7 +102,7 @@ class BatchCreateGlobalEipResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchCreateGlobalEipResponse.
+        r"""Gets the x_request_id of this BatchCreateGlobalEipResponse.
 
         :return: The x_request_id of this BatchCreateGlobalEipResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class BatchCreateGlobalEipResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchCreateGlobalEipResponse.
+        r"""Sets the x_request_id of this BatchCreateGlobalEipResponse.
 
         :param x_request_id: The x_request_id of this BatchCreateGlobalEipResponse.
         :type x_request_id: str

@@ -31,7 +31,7 @@ class LigandSimilarityGraphTaskResultPairDto:
     }
 
     def __init__(self, ligands=None, success=None, similarity=None, reason=None):
-        """LigandSimilarityGraphTaskResultPairDto
+        r"""LigandSimilarityGraphTaskResultPairDto
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class LigandSimilarityGraphTaskResultPairDto:
 
     @property
     def ligands(self):
-        """Gets the ligands of this LigandSimilarityGraphTaskResultPairDto.
+        r"""Gets the ligands of this LigandSimilarityGraphTaskResultPairDto.
 
         两个配体名称
 
@@ -74,7 +74,7 @@ class LigandSimilarityGraphTaskResultPairDto:
 
     @ligands.setter
     def ligands(self, ligands):
-        """Sets the ligands of this LigandSimilarityGraphTaskResultPairDto.
+        r"""Sets the ligands of this LigandSimilarityGraphTaskResultPairDto.
 
         两个配体名称
 
@@ -85,7 +85,7 @@ class LigandSimilarityGraphTaskResultPairDto:
 
     @property
     def success(self):
-        """Gets the success of this LigandSimilarityGraphTaskResultPairDto.
+        r"""Gets the success of this LigandSimilarityGraphTaskResultPairDto.
 
         相似度计算是否成功
 
@@ -96,7 +96,7 @@ class LigandSimilarityGraphTaskResultPairDto:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this LigandSimilarityGraphTaskResultPairDto.
+        r"""Sets the success of this LigandSimilarityGraphTaskResultPairDto.
 
         相似度计算是否成功
 
@@ -107,7 +107,7 @@ class LigandSimilarityGraphTaskResultPairDto:
 
     @property
     def similarity(self):
-        """Gets the similarity of this LigandSimilarityGraphTaskResultPairDto.
+        r"""Gets the similarity of this LigandSimilarityGraphTaskResultPairDto.
 
         配体对之间的相似度
 
@@ -118,7 +118,7 @@ class LigandSimilarityGraphTaskResultPairDto:
 
     @similarity.setter
     def similarity(self, similarity):
-        """Sets the similarity of this LigandSimilarityGraphTaskResultPairDto.
+        r"""Sets the similarity of this LigandSimilarityGraphTaskResultPairDto.
 
         配体对之间的相似度
 
@@ -129,7 +129,7 @@ class LigandSimilarityGraphTaskResultPairDto:
 
     @property
     def reason(self):
-        """Gets the reason of this LigandSimilarityGraphTaskResultPairDto.
+        r"""Gets the reason of this LigandSimilarityGraphTaskResultPairDto.
 
         相似度计算失败的理由
 
@@ -140,7 +140,7 @@ class LigandSimilarityGraphTaskResultPairDto:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this LigandSimilarityGraphTaskResultPairDto.
+        r"""Sets the reason of this LigandSimilarityGraphTaskResultPairDto.
 
         相似度计算失败的理由
 

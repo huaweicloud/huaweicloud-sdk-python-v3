@@ -50,7 +50,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
     }
 
     def __init__(self, device_id=None, command_id=None, service_id=None, command_name=None, paras=None, expire_time=None, status=None, result=None, created_time=None, sent_time=None, delivered_time=None, send_strategy=None, response_time=None):
-        """ShowAsyncDeviceCommandResponse
+        r"""ShowAsyncDeviceCommandResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @property
     def device_id(self):
-        """Gets the device_id of this ShowAsyncDeviceCommandResponse.
+        r"""Gets the device_id of this ShowAsyncDeviceCommandResponse.
 
         设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
 
@@ -139,7 +139,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ShowAsyncDeviceCommandResponse.
+        r"""Sets the device_id of this ShowAsyncDeviceCommandResponse.
 
         设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
 
@@ -150,7 +150,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @property
     def command_id(self):
-        """Gets the command_id of this ShowAsyncDeviceCommandResponse.
+        r"""Gets the command_id of this ShowAsyncDeviceCommandResponse.
 
         设备命令ID，用于唯一标识一条命令，在下发设备命令时由物联网平台分配获得。
 
@@ -161,7 +161,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this ShowAsyncDeviceCommandResponse.
+        r"""Sets the command_id of this ShowAsyncDeviceCommandResponse.
 
         设备命令ID，用于唯一标识一条命令，在下发设备命令时由物联网平台分配获得。
 
@@ -172,7 +172,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @property
     def service_id(self):
-        """Gets the service_id of this ShowAsyncDeviceCommandResponse.
+        r"""Gets the service_id of this ShowAsyncDeviceCommandResponse.
 
         设备命令所属的设备服务ID，在设备关联的产品模型中定义。
 
@@ -183,7 +183,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ShowAsyncDeviceCommandResponse.
+        r"""Sets the service_id of this ShowAsyncDeviceCommandResponse.
 
         设备命令所属的设备服务ID，在设备关联的产品模型中定义。
 
@@ -194,7 +194,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @property
     def command_name(self):
-        """Gets the command_name of this ShowAsyncDeviceCommandResponse.
+        r"""Gets the command_name of this ShowAsyncDeviceCommandResponse.
 
         设备命令名称，在设备关联的产品模型中定义。
 
@@ -205,7 +205,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @command_name.setter
     def command_name(self, command_name):
-        """Sets the command_name of this ShowAsyncDeviceCommandResponse.
+        r"""Sets the command_name of this ShowAsyncDeviceCommandResponse.
 
         设备命令名称，在设备关联的产品模型中定义。
 
@@ -216,7 +216,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @property
     def paras(self):
-        """Gets the paras of this ShowAsyncDeviceCommandResponse.
+        r"""Gets the paras of this ShowAsyncDeviceCommandResponse.
 
         设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。 
 
@@ -227,7 +227,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @paras.setter
     def paras(self, paras):
-        """Sets the paras of this ShowAsyncDeviceCommandResponse.
+        r"""Sets the paras of this ShowAsyncDeviceCommandResponse.
 
         设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。 
 
@@ -238,7 +238,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ShowAsyncDeviceCommandResponse.
+        r"""Gets the expire_time of this ShowAsyncDeviceCommandResponse.
 
         物联网平台缓存命令的时长， 单位秒。
 
@@ -249,7 +249,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ShowAsyncDeviceCommandResponse.
+        r"""Sets the expire_time of this ShowAsyncDeviceCommandResponse.
 
         物联网平台缓存命令的时长， 单位秒。
 
@@ -260,7 +260,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowAsyncDeviceCommandResponse.
+        r"""Gets the status of this ShowAsyncDeviceCommandResponse.
 
         下发命令的状态。 ·PENDING表示未下发,在物联网平台缓存着 ·EXPIRED表示命令已经过期，即缓存的时间超过设定的expire_time ·SENT表示命令正在下发 ·DELIVERED表示命令已送达设备 ·SUCCESSFUL表示命令已经成功执行 ·FAILED表示命令执行失败 ·TIMEOUT表示命令下发之后，没有收到设备确认或者响应结果一定时间后超时 
 
@@ -271,7 +271,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAsyncDeviceCommandResponse.
+        r"""Sets the status of this ShowAsyncDeviceCommandResponse.
 
         下发命令的状态。 ·PENDING表示未下发,在物联网平台缓存着 ·EXPIRED表示命令已经过期，即缓存的时间超过设定的expire_time ·SENT表示命令正在下发 ·DELIVERED表示命令已送达设备 ·SUCCESSFUL表示命令已经成功执行 ·FAILED表示命令执行失败 ·TIMEOUT表示命令下发之后，没有收到设备确认或者响应结果一定时间后超时 
 
@@ -282,7 +282,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowAsyncDeviceCommandResponse.
+        r"""Gets the result of this ShowAsyncDeviceCommandResponse.
 
         设备命令执行的详细结果，由设备返回，Json格式。 
 
@@ -293,7 +293,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowAsyncDeviceCommandResponse.
+        r"""Sets the result of this ShowAsyncDeviceCommandResponse.
 
         设备命令执行的详细结果，由设备返回，Json格式。 
 
@@ -304,7 +304,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowAsyncDeviceCommandResponse.
+        r"""Gets the created_time of this ShowAsyncDeviceCommandResponse.
 
         命令的创建时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
@@ -315,7 +315,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowAsyncDeviceCommandResponse.
+        r"""Sets the created_time of this ShowAsyncDeviceCommandResponse.
 
         命令的创建时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
@@ -326,7 +326,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @property
     def sent_time(self):
-        """Gets the sent_time of this ShowAsyncDeviceCommandResponse.
+        r"""Gets the sent_time of this ShowAsyncDeviceCommandResponse.
 
         物联网平台发送命令的时间，如果命令是立即下发， 则该时间与命令创建时间一致， 如果是缓存命令， 则是命令实际下发的时间。\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
@@ -337,7 +337,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @sent_time.setter
     def sent_time(self, sent_time):
-        """Sets the sent_time of this ShowAsyncDeviceCommandResponse.
+        r"""Sets the sent_time of this ShowAsyncDeviceCommandResponse.
 
         物联网平台发送命令的时间，如果命令是立即下发， 则该时间与命令创建时间一致， 如果是缓存命令， 则是命令实际下发的时间。\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
@@ -348,7 +348,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @property
     def delivered_time(self):
-        """Gets the delivered_time of this ShowAsyncDeviceCommandResponse.
+        r"""Gets the delivered_time of this ShowAsyncDeviceCommandResponse.
 
         物联网平台将命令送达到设备的时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
@@ -359,7 +359,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @delivered_time.setter
     def delivered_time(self, delivered_time):
-        """Sets the delivered_time of this ShowAsyncDeviceCommandResponse.
+        r"""Sets the delivered_time of this ShowAsyncDeviceCommandResponse.
 
         物联网平台将命令送达到设备的时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
@@ -370,7 +370,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @property
     def send_strategy(self):
-        """Gets the send_strategy of this ShowAsyncDeviceCommandResponse.
+        r"""Gets the send_strategy of this ShowAsyncDeviceCommandResponse.
 
         下发策略， immediately表示立即下发，delay表示缓存起来，等数据上报或者设备上线之后下发。
 
@@ -381,7 +381,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @send_strategy.setter
     def send_strategy(self, send_strategy):
-        """Sets the send_strategy of this ShowAsyncDeviceCommandResponse.
+        r"""Sets the send_strategy of this ShowAsyncDeviceCommandResponse.
 
         下发策略， immediately表示立即下发，delay表示缓存起来，等数据上报或者设备上线之后下发。
 
@@ -392,7 +392,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @property
     def response_time(self):
-        """Gets the response_time of this ShowAsyncDeviceCommandResponse.
+        r"""Gets the response_time of this ShowAsyncDeviceCommandResponse.
 
         设备响应命令的时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 
@@ -403,7 +403,7 @@ class ShowAsyncDeviceCommandResponse(SdkResponse):
 
     @response_time.setter
     def response_time(self, response_time):
-        """Sets the response_time of this ShowAsyncDeviceCommandResponse.
+        r"""Sets the response_time of this ShowAsyncDeviceCommandResponse.
 
         设备响应命令的时间，\"yyyyMMdd'T'HHmmss'Z'\"格式的UTC字符串。
 

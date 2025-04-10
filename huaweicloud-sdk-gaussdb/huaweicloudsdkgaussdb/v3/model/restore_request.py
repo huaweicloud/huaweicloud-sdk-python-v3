@@ -33,7 +33,7 @@ class RestoreRequest:
     }
 
     def __init__(self, target_instance_id=None, source_instance_id=None, backup_id=None, restore_time=None, type=None):
-        """RestoreRequest
+        r"""RestoreRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class RestoreRequest:
 
     @property
     def target_instance_id(self):
-        """Gets the target_instance_id of this RestoreRequest.
+        r"""Gets the target_instance_id of this RestoreRequest.
 
         目标实例ID。
 
@@ -79,7 +79,7 @@ class RestoreRequest:
 
     @target_instance_id.setter
     def target_instance_id(self, target_instance_id):
-        """Sets the target_instance_id of this RestoreRequest.
+        r"""Sets the target_instance_id of this RestoreRequest.
 
         目标实例ID。
 
@@ -90,7 +90,7 @@ class RestoreRequest:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this RestoreRequest.
+        r"""Gets the source_instance_id of this RestoreRequest.
 
         源实例ID。
 
@@ -101,7 +101,7 @@ class RestoreRequest:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this RestoreRequest.
+        r"""Sets the source_instance_id of this RestoreRequest.
 
         源实例ID。
 
@@ -112,7 +112,7 @@ class RestoreRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this RestoreRequest.
+        r"""Gets the backup_id of this RestoreRequest.
 
         用于恢复的备份ID。当使用备份文件恢复时需要指定该参数。
 
@@ -123,7 +123,7 @@ class RestoreRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this RestoreRequest.
+        r"""Sets the backup_id of this RestoreRequest.
 
         用于恢复的备份ID。当使用备份文件恢复时需要指定该参数。
 
@@ -134,7 +134,7 @@ class RestoreRequest:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this RestoreRequest.
+        r"""Gets the restore_time of this RestoreRequest.
 
         恢复数据的时间点，格式为UNIX时间戳，单位是毫秒，时区为UTC。
 
@@ -145,7 +145,7 @@ class RestoreRequest:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this RestoreRequest.
+        r"""Sets the restore_time of this RestoreRequest.
 
         恢复数据的时间点，格式为UNIX时间戳，单位是毫秒，时区为UTC。
 
@@ -156,7 +156,7 @@ class RestoreRequest:
 
     @property
     def type(self):
-        """Gets the type of this RestoreRequest.
+        r"""Gets the type of this RestoreRequest.
 
         表示恢复方式，枚举值： - backup：表示使用备份文件恢复，按照此方式恢复时，当\"type\"字段为非必选时，\"backup_id\"必选。 - timestamp：表示按时间点恢复，按照此方式恢复时，当\"type\"字段必选时，\"restore_time\"必选。
 
@@ -167,7 +167,7 @@ class RestoreRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RestoreRequest.
+        r"""Sets the type of this RestoreRequest.
 
         表示恢复方式，枚举值： - backup：表示使用备份文件恢复，按照此方式恢复时，当\"type\"字段为非必选时，\"backup_id\"必选。 - timestamp：表示按时间点恢复，按照此方式恢复时，当\"type\"字段必选时，\"restore_time\"必选。
 

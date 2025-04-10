@@ -28,7 +28,7 @@ class ShowTransactionDetailResponse(SdkResponse):
     }
 
     def __init__(self, tx_node_list=None, tx_line_list=None):
-        """ShowTransactionDetailResponse
+        r"""ShowTransactionDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTransactionDetailResponse(SdkResponse):
 
     @property
     def tx_node_list(self):
-        """Gets the tx_node_list of this ShowTransactionDetailResponse.
+        r"""Gets the tx_node_list of this ShowTransactionDetailResponse.
 
         组件节点列表。
 
@@ -62,7 +62,7 @@ class ShowTransactionDetailResponse(SdkResponse):
 
     @tx_node_list.setter
     def tx_node_list(self, tx_node_list):
-        """Sets the tx_node_list of this ShowTransactionDetailResponse.
+        r"""Sets the tx_node_list of this ShowTransactionDetailResponse.
 
         组件节点列表。
 
@@ -73,7 +73,7 @@ class ShowTransactionDetailResponse(SdkResponse):
 
     @property
     def tx_line_list(self):
-        """Gets the tx_line_list of this ShowTransactionDetailResponse.
+        r"""Gets the tx_line_list of this ShowTransactionDetailResponse.
 
         组件之间调用指向线列表。
 
@@ -84,7 +84,7 @@ class ShowTransactionDetailResponse(SdkResponse):
 
     @tx_line_list.setter
     def tx_line_list(self, tx_line_list):
-        """Sets the tx_line_list of this ShowTransactionDetailResponse.
+        r"""Sets the tx_line_list of this ShowTransactionDetailResponse.
 
         组件之间调用指向线列表。
 

@@ -37,7 +37,7 @@ class CasAuthenticationSuccessAttributes:
     }
 
     def __init__(self, authentication_date=None, long_term_authentication_request_token_used=None, is_from_new_login=None, token=None, logo=None, display_name=None, uid=None):
-        """CasAuthenticationSuccessAttributes
+        r"""CasAuthenticationSuccessAttributes
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CasAuthenticationSuccessAttributes:
 
     @property
     def authentication_date(self):
-        """Gets the authentication_date of this CasAuthenticationSuccessAttributes.
+        r"""Gets the authentication_date of this CasAuthenticationSuccessAttributes.
 
         认证时间
 
@@ -96,7 +96,7 @@ class CasAuthenticationSuccessAttributes:
 
     @authentication_date.setter
     def authentication_date(self, authentication_date):
-        """Sets the authentication_date of this CasAuthenticationSuccessAttributes.
+        r"""Sets the authentication_date of this CasAuthenticationSuccessAttributes.
 
         认证时间
 
@@ -107,7 +107,7 @@ class CasAuthenticationSuccessAttributes:
 
     @property
     def long_term_authentication_request_token_used(self):
-        """Gets the long_term_authentication_request_token_used of this CasAuthenticationSuccessAttributes.
+        r"""Gets the long_term_authentication_request_token_used of this CasAuthenticationSuccessAttributes.
 
         longTermAuthenticationRequestTokenUsed
 
@@ -118,7 +118,7 @@ class CasAuthenticationSuccessAttributes:
 
     @long_term_authentication_request_token_used.setter
     def long_term_authentication_request_token_used(self, long_term_authentication_request_token_used):
-        """Sets the long_term_authentication_request_token_used of this CasAuthenticationSuccessAttributes.
+        r"""Sets the long_term_authentication_request_token_used of this CasAuthenticationSuccessAttributes.
 
         longTermAuthenticationRequestTokenUsed
 
@@ -129,7 +129,7 @@ class CasAuthenticationSuccessAttributes:
 
     @property
     def is_from_new_login(self):
-        """Gets the is_from_new_login of this CasAuthenticationSuccessAttributes.
+        r"""Gets the is_from_new_login of this CasAuthenticationSuccessAttributes.
 
         isFromNewLogin
 
@@ -140,7 +140,7 @@ class CasAuthenticationSuccessAttributes:
 
     @is_from_new_login.setter
     def is_from_new_login(self, is_from_new_login):
-        """Sets the is_from_new_login of this CasAuthenticationSuccessAttributes.
+        r"""Sets the is_from_new_login of this CasAuthenticationSuccessAttributes.
 
         isFromNewLogin
 
@@ -151,7 +151,7 @@ class CasAuthenticationSuccessAttributes:
 
     @property
     def token(self):
-        """Gets the token of this CasAuthenticationSuccessAttributes.
+        r"""Gets the token of this CasAuthenticationSuccessAttributes.
 
         用户获取用户信息的token
 
@@ -162,7 +162,7 @@ class CasAuthenticationSuccessAttributes:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this CasAuthenticationSuccessAttributes.
+        r"""Sets the token of this CasAuthenticationSuccessAttributes.
 
         用户获取用户信息的token
 
@@ -173,7 +173,7 @@ class CasAuthenticationSuccessAttributes:
 
     @property
     def logo(self):
-        """Gets the logo of this CasAuthenticationSuccessAttributes.
+        r"""Gets the logo of this CasAuthenticationSuccessAttributes.
 
         用户头像URL
 
@@ -184,7 +184,7 @@ class CasAuthenticationSuccessAttributes:
 
     @logo.setter
     def logo(self, logo):
-        """Sets the logo of this CasAuthenticationSuccessAttributes.
+        r"""Sets the logo of this CasAuthenticationSuccessAttributes.
 
         用户头像URL
 
@@ -195,7 +195,7 @@ class CasAuthenticationSuccessAttributes:
 
     @property
     def display_name(self):
-        """Gets the display_name of this CasAuthenticationSuccessAttributes.
+        r"""Gets the display_name of this CasAuthenticationSuccessAttributes.
 
         用户显示名
 
@@ -206,7 +206,7 @@ class CasAuthenticationSuccessAttributes:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this CasAuthenticationSuccessAttributes.
+        r"""Sets the display_name of this CasAuthenticationSuccessAttributes.
 
         用户显示名
 
@@ -217,7 +217,7 @@ class CasAuthenticationSuccessAttributes:
 
     @property
     def uid(self):
-        """Gets the uid of this CasAuthenticationSuccessAttributes.
+        r"""Gets the uid of this CasAuthenticationSuccessAttributes.
 
         华为账号uid
 
@@ -228,7 +228,7 @@ class CasAuthenticationSuccessAttributes:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this CasAuthenticationSuccessAttributes.
+        r"""Sets the uid of this CasAuthenticationSuccessAttributes.
 
         华为账号uid
 

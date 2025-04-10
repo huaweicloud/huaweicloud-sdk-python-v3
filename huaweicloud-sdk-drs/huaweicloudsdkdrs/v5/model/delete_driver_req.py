@@ -25,7 +25,7 @@ class DeleteDriverReq:
     }
 
     def __init__(self, driver_names=None):
-        """DeleteDriverReq
+        r"""DeleteDriverReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDriverReq:
 
     @property
     def driver_names(self):
-        """Gets the driver_names of this DeleteDriverReq.
+        r"""Gets the driver_names of this DeleteDriverReq.
 
         jdbc驱动文件列表，列表长度1-20，driver_name的长度5-64，结尾以.jar结尾。
 
@@ -53,7 +53,7 @@ class DeleteDriverReq:
 
     @driver_names.setter
     def driver_names(self, driver_names):
-        """Sets the driver_names of this DeleteDriverReq.
+        r"""Sets the driver_names of this DeleteDriverReq.
 
         jdbc驱动文件列表，列表长度1-20，driver_name的长度5-64，结尾以.jar结尾。
 

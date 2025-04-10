@@ -17,6 +17,8 @@ class ProtectionServerInfo:
     sensitive_list = []
 
     openapi_types = {
+        'project_id': 'str',
+        'enterprise_project_id': 'str',
         'host_id': 'str',
         'agent_id': 'str',
         'host_name': 'str',
@@ -53,6 +55,8 @@ class ProtectionServerInfo:
     }
 
     attribute_map = {
+        'project_id': 'project_id',
+        'enterprise_project_id': 'enterprise_project_id',
         'host_id': 'host_id',
         'agent_id': 'agent_id',
         'host_name': 'host_name',
@@ -88,11 +92,15 @@ class ProtectionServerInfo:
         'resources_num': 'resources_num'
     }
 
-    def __init__(self, host_id=None, agent_id=None, host_name=None, host_ip=None, private_ip=None, os_type=None, os_name=None, host_status=None, ransom_protection_status=None, agent_version=None, protect_status=None, group_id=None, group_name=None, protect_policy_id=None, protect_policy_name=None, backup_error=None, backup_protection_status=None, count_protect_event=None, count_backuped=None, agent_status=None, version=None, host_source=None, vault_id=None, vault_name=None, vault_size=None, vault_used=None, vault_allocated=None, vault_charging_mode=None, vault_status=None, backup_policy_id=None, backup_policy_name=None, backup_policy_enabled=None, resources_num=None):
-        """ProtectionServerInfo
+    def __init__(self, project_id=None, enterprise_project_id=None, host_id=None, agent_id=None, host_name=None, host_ip=None, private_ip=None, os_type=None, os_name=None, host_status=None, ransom_protection_status=None, agent_version=None, protect_status=None, group_id=None, group_name=None, protect_policy_id=None, protect_policy_name=None, backup_error=None, backup_protection_status=None, count_protect_event=None, count_backuped=None, agent_status=None, version=None, host_source=None, vault_id=None, vault_name=None, vault_size=None, vault_used=None, vault_allocated=None, vault_charging_mode=None, vault_status=None, backup_policy_id=None, backup_policy_name=None, backup_policy_enabled=None, resources_num=None):
+        r"""ProtectionServerInfo
 
         The model defined in huaweicloud sdk
 
+        :param project_id: 项目ID
+        :type project_id: str
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
         :param host_id: 服务器ID
         :type host_id: str
         :param agent_id: Agent ID
@@ -163,6 +171,8 @@ class ProtectionServerInfo:
         
         
 
+        self._project_id = None
+        self._enterprise_project_id = None
         self._host_id = None
         self._agent_id = None
         self._host_name = None
@@ -198,6 +208,10 @@ class ProtectionServerInfo:
         self._resources_num = None
         self.discriminator = None
 
+        if project_id is not None:
+            self.project_id = project_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if host_id is not None:
             self.host_id = host_id
         if agent_id is not None:
@@ -266,8 +280,52 @@ class ProtectionServerInfo:
             self.resources_num = resources_num
 
     @property
+    def project_id(self):
+        r"""Gets the project_id of this ProtectionServerInfo.
+
+        项目ID
+
+        :return: The project_id of this ProtectionServerInfo.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        r"""Sets the project_id of this ProtectionServerInfo.
+
+        项目ID
+
+        :param project_id: The project_id of this ProtectionServerInfo.
+        :type project_id: str
+        """
+        self._project_id = project_id
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this ProtectionServerInfo.
+
+        企业项目ID
+
+        :return: The enterprise_project_id of this ProtectionServerInfo.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this ProtectionServerInfo.
+
+        企业项目ID
+
+        :param enterprise_project_id: The enterprise_project_id of this ProtectionServerInfo.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
     def host_id(self):
-        """Gets the host_id of this ProtectionServerInfo.
+        r"""Gets the host_id of this ProtectionServerInfo.
 
         服务器ID
 
@@ -278,7 +336,7 @@ class ProtectionServerInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ProtectionServerInfo.
+        r"""Sets the host_id of this ProtectionServerInfo.
 
         服务器ID
 
@@ -289,7 +347,7 @@ class ProtectionServerInfo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this ProtectionServerInfo.
+        r"""Gets the agent_id of this ProtectionServerInfo.
 
         Agent ID
 
@@ -300,7 +358,7 @@ class ProtectionServerInfo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this ProtectionServerInfo.
+        r"""Sets the agent_id of this ProtectionServerInfo.
 
         Agent ID
 
@@ -311,7 +369,7 @@ class ProtectionServerInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ProtectionServerInfo.
+        r"""Gets the host_name of this ProtectionServerInfo.
 
         服务器名称
 
@@ -322,7 +380,7 @@ class ProtectionServerInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ProtectionServerInfo.
+        r"""Sets the host_name of this ProtectionServerInfo.
 
         服务器名称
 
@@ -333,7 +391,7 @@ class ProtectionServerInfo:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this ProtectionServerInfo.
+        r"""Gets the host_ip of this ProtectionServerInfo.
 
         弹性公网IP地址
 
@@ -344,7 +402,7 @@ class ProtectionServerInfo:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this ProtectionServerInfo.
+        r"""Sets the host_ip of this ProtectionServerInfo.
 
         弹性公网IP地址
 
@@ -355,7 +413,7 @@ class ProtectionServerInfo:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ProtectionServerInfo.
+        r"""Gets the private_ip of this ProtectionServerInfo.
 
         私有IP地址
 
@@ -366,7 +424,7 @@ class ProtectionServerInfo:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ProtectionServerInfo.
+        r"""Sets the private_ip of this ProtectionServerInfo.
 
         私有IP地址
 
@@ -377,7 +435,7 @@ class ProtectionServerInfo:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ProtectionServerInfo.
+        r"""Gets the os_type of this ProtectionServerInfo.
 
         操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
 
@@ -388,7 +446,7 @@ class ProtectionServerInfo:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ProtectionServerInfo.
+        r"""Sets the os_type of this ProtectionServerInfo.
 
         操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
 
@@ -399,7 +457,7 @@ class ProtectionServerInfo:
 
     @property
     def os_name(self):
-        """Gets the os_name of this ProtectionServerInfo.
+        r"""Gets the os_name of this ProtectionServerInfo.
 
         系统名称
 
@@ -410,7 +468,7 @@ class ProtectionServerInfo:
 
     @os_name.setter
     def os_name(self, os_name):
-        """Sets the os_name of this ProtectionServerInfo.
+        r"""Sets the os_name of this ProtectionServerInfo.
 
         系统名称
 
@@ -421,7 +479,7 @@ class ProtectionServerInfo:
 
     @property
     def host_status(self):
-        """Gets the host_status of this ProtectionServerInfo.
+        r"""Gets the host_status of this ProtectionServerInfo.
 
         服务器状态，包含如下2种。   - ACTIVE ：运行中。   - SHUTOFF ：关机。
 
@@ -432,7 +490,7 @@ class ProtectionServerInfo:
 
     @host_status.setter
     def host_status(self, host_status):
-        """Sets the host_status of this ProtectionServerInfo.
+        r"""Sets the host_status of this ProtectionServerInfo.
 
         服务器状态，包含如下2种。   - ACTIVE ：运行中。   - SHUTOFF ：关机。
 
@@ -443,7 +501,7 @@ class ProtectionServerInfo:
 
     @property
     def ransom_protection_status(self):
-        """Gets the ransom_protection_status of this ProtectionServerInfo.
+        r"""Gets the ransom_protection_status of this ProtectionServerInfo.
 
         勒索防护状态，包含如下4种。   - closed ：关闭。   - opened ：开启。   - opening ：开启中。   - closing ：关闭中。
 
@@ -454,7 +512,7 @@ class ProtectionServerInfo:
 
     @ransom_protection_status.setter
     def ransom_protection_status(self, ransom_protection_status):
-        """Sets the ransom_protection_status of this ProtectionServerInfo.
+        r"""Sets the ransom_protection_status of this ProtectionServerInfo.
 
         勒索防护状态，包含如下4种。   - closed ：关闭。   - opened ：开启。   - opening ：开启中。   - closing ：关闭中。
 
@@ -465,7 +523,7 @@ class ProtectionServerInfo:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this ProtectionServerInfo.
+        r"""Gets the agent_version of this ProtectionServerInfo.
 
         agent版本
 
@@ -476,7 +534,7 @@ class ProtectionServerInfo:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this ProtectionServerInfo.
+        r"""Sets the agent_version of this ProtectionServerInfo.
 
         agent版本
 
@@ -487,7 +545,7 @@ class ProtectionServerInfo:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this ProtectionServerInfo.
+        r"""Gets the protect_status of this ProtectionServerInfo.
 
         防护状态，包含如下2种。 - closed ：未防护。 - opened ：防护中。
 
@@ -498,7 +556,7 @@ class ProtectionServerInfo:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this ProtectionServerInfo.
+        r"""Sets the protect_status of this ProtectionServerInfo.
 
         防护状态，包含如下2种。 - closed ：未防护。 - opened ：防护中。
 
@@ -509,7 +567,7 @@ class ProtectionServerInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ProtectionServerInfo.
+        r"""Gets the group_id of this ProtectionServerInfo.
 
         服务器组ID
 
@@ -520,7 +578,7 @@ class ProtectionServerInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ProtectionServerInfo.
+        r"""Sets the group_id of this ProtectionServerInfo.
 
         服务器组ID
 
@@ -531,7 +589,7 @@ class ProtectionServerInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ProtectionServerInfo.
+        r"""Gets the group_name of this ProtectionServerInfo.
 
         服务器组名称
 
@@ -542,7 +600,7 @@ class ProtectionServerInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ProtectionServerInfo.
+        r"""Sets the group_name of this ProtectionServerInfo.
 
         服务器组名称
 
@@ -553,7 +611,7 @@ class ProtectionServerInfo:
 
     @property
     def protect_policy_id(self):
-        """Gets the protect_policy_id of this ProtectionServerInfo.
+        r"""Gets the protect_policy_id of this ProtectionServerInfo.
 
         防护策略ID
 
@@ -564,7 +622,7 @@ class ProtectionServerInfo:
 
     @protect_policy_id.setter
     def protect_policy_id(self, protect_policy_id):
-        """Sets the protect_policy_id of this ProtectionServerInfo.
+        r"""Sets the protect_policy_id of this ProtectionServerInfo.
 
         防护策略ID
 
@@ -575,7 +633,7 @@ class ProtectionServerInfo:
 
     @property
     def protect_policy_name(self):
-        """Gets the protect_policy_name of this ProtectionServerInfo.
+        r"""Gets the protect_policy_name of this ProtectionServerInfo.
 
         防护策略名称
 
@@ -586,7 +644,7 @@ class ProtectionServerInfo:
 
     @protect_policy_name.setter
     def protect_policy_name(self, protect_policy_name):
-        """Sets the protect_policy_name of this ProtectionServerInfo.
+        r"""Sets the protect_policy_name of this ProtectionServerInfo.
 
         防护策略名称
 
@@ -597,7 +655,7 @@ class ProtectionServerInfo:
 
     @property
     def backup_error(self):
-        """Gets the backup_error of this ProtectionServerInfo.
+        r"""Gets the backup_error of this ProtectionServerInfo.
 
         :return: The backup_error of this ProtectionServerInfo.
         :rtype: :class:`huaweicloudsdkhss.v5.ProtectionServerInfoBackupError`
@@ -606,7 +664,7 @@ class ProtectionServerInfo:
 
     @backup_error.setter
     def backup_error(self, backup_error):
-        """Sets the backup_error of this ProtectionServerInfo.
+        r"""Sets the backup_error of this ProtectionServerInfo.
 
         :param backup_error: The backup_error of this ProtectionServerInfo.
         :type backup_error: :class:`huaweicloudsdkhss.v5.ProtectionServerInfoBackupError`
@@ -615,7 +673,7 @@ class ProtectionServerInfo:
 
     @property
     def backup_protection_status(self):
-        """Gets the backup_protection_status of this ProtectionServerInfo.
+        r"""Gets the backup_protection_status of this ProtectionServerInfo.
 
         是否开启备份，包含如下3种。   - failed_to_turn_on_backup: 无法开启备份   - closed ：关闭。   - opened ：开启。
 
@@ -626,7 +684,7 @@ class ProtectionServerInfo:
 
     @backup_protection_status.setter
     def backup_protection_status(self, backup_protection_status):
-        """Sets the backup_protection_status of this ProtectionServerInfo.
+        r"""Sets the backup_protection_status of this ProtectionServerInfo.
 
         是否开启备份，包含如下3种。   - failed_to_turn_on_backup: 无法开启备份   - closed ：关闭。   - opened ：开启。
 
@@ -637,7 +695,7 @@ class ProtectionServerInfo:
 
     @property
     def count_protect_event(self):
-        """Gets the count_protect_event of this ProtectionServerInfo.
+        r"""Gets the count_protect_event of this ProtectionServerInfo.
 
         防护事件数
 
@@ -648,7 +706,7 @@ class ProtectionServerInfo:
 
     @count_protect_event.setter
     def count_protect_event(self, count_protect_event):
-        """Sets the count_protect_event of this ProtectionServerInfo.
+        r"""Sets the count_protect_event of this ProtectionServerInfo.
 
         防护事件数
 
@@ -659,7 +717,7 @@ class ProtectionServerInfo:
 
     @property
     def count_backuped(self):
-        """Gets the count_backuped of this ProtectionServerInfo.
+        r"""Gets the count_backuped of this ProtectionServerInfo.
 
         已有备份数
 
@@ -670,7 +728,7 @@ class ProtectionServerInfo:
 
     @count_backuped.setter
     def count_backuped(self, count_backuped):
-        """Sets the count_backuped of this ProtectionServerInfo.
+        r"""Sets the count_backuped of this ProtectionServerInfo.
 
         已有备份数
 
@@ -681,7 +739,7 @@ class ProtectionServerInfo:
 
     @property
     def agent_status(self):
-        """Gets the agent_status of this ProtectionServerInfo.
+        r"""Gets the agent_status of this ProtectionServerInfo.
 
         Agent状态
 
@@ -692,7 +750,7 @@ class ProtectionServerInfo:
 
     @agent_status.setter
     def agent_status(self, agent_status):
-        """Sets the agent_status of this ProtectionServerInfo.
+        r"""Sets the agent_status of this ProtectionServerInfo.
 
         Agent状态
 
@@ -703,7 +761,7 @@ class ProtectionServerInfo:
 
     @property
     def version(self):
-        """Gets the version of this ProtectionServerInfo.
+        r"""Gets the version of this ProtectionServerInfo.
 
         主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
 
@@ -714,7 +772,7 @@ class ProtectionServerInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ProtectionServerInfo.
+        r"""Sets the version of this ProtectionServerInfo.
 
         主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
 
@@ -725,7 +783,7 @@ class ProtectionServerInfo:
 
     @property
     def host_source(self):
-        """Gets the host_source of this ProtectionServerInfo.
+        r"""Gets the host_source of this ProtectionServerInfo.
 
         服务器类型，包含如下3种输入。   - ecs ：ecs。   - outside ：线下主机。   - workspace ：云桌面。
 
@@ -736,7 +794,7 @@ class ProtectionServerInfo:
 
     @host_source.setter
     def host_source(self, host_source):
-        """Sets the host_source of this ProtectionServerInfo.
+        r"""Sets the host_source of this ProtectionServerInfo.
 
         服务器类型，包含如下3种输入。   - ecs ：ecs。   - outside ：线下主机。   - workspace ：云桌面。
 
@@ -747,7 +805,7 @@ class ProtectionServerInfo:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this ProtectionServerInfo.
+        r"""Gets the vault_id of this ProtectionServerInfo.
 
         存储库ID
 
@@ -758,7 +816,7 @@ class ProtectionServerInfo:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this ProtectionServerInfo.
+        r"""Sets the vault_id of this ProtectionServerInfo.
 
         存储库ID
 
@@ -769,7 +827,7 @@ class ProtectionServerInfo:
 
     @property
     def vault_name(self):
-        """Gets the vault_name of this ProtectionServerInfo.
+        r"""Gets the vault_name of this ProtectionServerInfo.
 
         存储库名称
 
@@ -780,7 +838,7 @@ class ProtectionServerInfo:
 
     @vault_name.setter
     def vault_name(self, vault_name):
-        """Sets the vault_name of this ProtectionServerInfo.
+        r"""Sets the vault_name of this ProtectionServerInfo.
 
         存储库名称
 
@@ -791,7 +849,7 @@ class ProtectionServerInfo:
 
     @property
     def vault_size(self):
-        """Gets the vault_size of this ProtectionServerInfo.
+        r"""Gets the vault_size of this ProtectionServerInfo.
 
         总容量，单位GB
 
@@ -802,7 +860,7 @@ class ProtectionServerInfo:
 
     @vault_size.setter
     def vault_size(self, vault_size):
-        """Sets the vault_size of this ProtectionServerInfo.
+        r"""Sets the vault_size of this ProtectionServerInfo.
 
         总容量，单位GB
 
@@ -813,7 +871,7 @@ class ProtectionServerInfo:
 
     @property
     def vault_used(self):
-        """Gets the vault_used of this ProtectionServerInfo.
+        r"""Gets the vault_used of this ProtectionServerInfo.
 
         已使用容量，单位MB
 
@@ -824,7 +882,7 @@ class ProtectionServerInfo:
 
     @vault_used.setter
     def vault_used(self, vault_used):
-        """Sets the vault_used of this ProtectionServerInfo.
+        r"""Sets the vault_used of this ProtectionServerInfo.
 
         已使用容量，单位MB
 
@@ -835,7 +893,7 @@ class ProtectionServerInfo:
 
     @property
     def vault_allocated(self):
-        """Gets the vault_allocated of this ProtectionServerInfo.
+        r"""Gets the vault_allocated of this ProtectionServerInfo.
 
         已分配容量，单位GB，指绑定的服务器大小
 
@@ -846,7 +904,7 @@ class ProtectionServerInfo:
 
     @vault_allocated.setter
     def vault_allocated(self, vault_allocated):
-        """Sets the vault_allocated of this ProtectionServerInfo.
+        r"""Sets the vault_allocated of this ProtectionServerInfo.
 
         已分配容量，单位GB，指绑定的服务器大小
 
@@ -857,7 +915,7 @@ class ProtectionServerInfo:
 
     @property
     def vault_charging_mode(self):
-        """Gets the vault_charging_mode of this ProtectionServerInfo.
+        r"""Gets the vault_charging_mode of this ProtectionServerInfo.
 
         存储库创建模式，按需：post_paid，包周期：pre_paid
 
@@ -868,7 +926,7 @@ class ProtectionServerInfo:
 
     @vault_charging_mode.setter
     def vault_charging_mode(self, vault_charging_mode):
-        """Sets the vault_charging_mode of this ProtectionServerInfo.
+        r"""Sets the vault_charging_mode of this ProtectionServerInfo.
 
         存储库创建模式，按需：post_paid，包周期：pre_paid
 
@@ -879,7 +937,7 @@ class ProtectionServerInfo:
 
     @property
     def vault_status(self):
-        """Gets the vault_status of this ProtectionServerInfo.
+        r"""Gets the vault_status of this ProtectionServerInfo.
 
         存储库状态。   - available ：可用。   - lock ：被锁定。   - frozen：冻结。   - deleting：删除中。   - error：错误。
 
@@ -890,7 +948,7 @@ class ProtectionServerInfo:
 
     @vault_status.setter
     def vault_status(self, vault_status):
-        """Sets the vault_status of this ProtectionServerInfo.
+        r"""Sets the vault_status of this ProtectionServerInfo.
 
         存储库状态。   - available ：可用。   - lock ：被锁定。   - frozen：冻结。   - deleting：删除中。   - error：错误。
 
@@ -901,7 +959,7 @@ class ProtectionServerInfo:
 
     @property
     def backup_policy_id(self):
-        """Gets the backup_policy_id of this ProtectionServerInfo.
+        r"""Gets the backup_policy_id of this ProtectionServerInfo.
 
         备份策略ID，若为空，则为未绑定状态，若不为空，通过backup_policy_enabled字段判断策略是否启用
 
@@ -912,7 +970,7 @@ class ProtectionServerInfo:
 
     @backup_policy_id.setter
     def backup_policy_id(self, backup_policy_id):
-        """Sets the backup_policy_id of this ProtectionServerInfo.
+        r"""Sets the backup_policy_id of this ProtectionServerInfo.
 
         备份策略ID，若为空，则为未绑定状态，若不为空，通过backup_policy_enabled字段判断策略是否启用
 
@@ -923,7 +981,7 @@ class ProtectionServerInfo:
 
     @property
     def backup_policy_name(self):
-        """Gets the backup_policy_name of this ProtectionServerInfo.
+        r"""Gets the backup_policy_name of this ProtectionServerInfo.
 
         备份策略名称
 
@@ -934,7 +992,7 @@ class ProtectionServerInfo:
 
     @backup_policy_name.setter
     def backup_policy_name(self, backup_policy_name):
-        """Sets the backup_policy_name of this ProtectionServerInfo.
+        r"""Sets the backup_policy_name of this ProtectionServerInfo.
 
         备份策略名称
 
@@ -945,7 +1003,7 @@ class ProtectionServerInfo:
 
     @property
     def backup_policy_enabled(self):
-        """Gets the backup_policy_enabled of this ProtectionServerInfo.
+        r"""Gets the backup_policy_enabled of this ProtectionServerInfo.
 
         策略是否启用
 
@@ -956,7 +1014,7 @@ class ProtectionServerInfo:
 
     @backup_policy_enabled.setter
     def backup_policy_enabled(self, backup_policy_enabled):
-        """Sets the backup_policy_enabled of this ProtectionServerInfo.
+        r"""Sets the backup_policy_enabled of this ProtectionServerInfo.
 
         策略是否启用
 
@@ -967,7 +1025,7 @@ class ProtectionServerInfo:
 
     @property
     def resources_num(self):
-        """Gets the resources_num of this ProtectionServerInfo.
+        r"""Gets the resources_num of this ProtectionServerInfo.
 
         已绑定服务器（个）
 
@@ -978,7 +1036,7 @@ class ProtectionServerInfo:
 
     @resources_num.setter
     def resources_num(self, resources_num):
-        """Sets the resources_num of this ProtectionServerInfo.
+        r"""Sets the resources_num of this ProtectionServerInfo.
 
         已绑定服务器（个）
 

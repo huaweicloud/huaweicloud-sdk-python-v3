@@ -26,7 +26,7 @@ class ListSendCountryDetailsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListSendCountryDetailsResponse
+        r"""ListSendCountryDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSendCountryDetailsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListSendCountryDetailsResponse.
+        r"""Gets the body of this ListSendCountryDetailsResponse.
 
         :return: The body of this ListSendCountryDetailsResponse.
         :rtype: list[:class:`huaweicloudsdkmsgsms.v2.SmsCountryResp`]
@@ -53,7 +53,7 @@ class ListSendCountryDetailsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSendCountryDetailsResponse.
+        r"""Sets the body of this ListSendCountryDetailsResponse.
 
         :param body: The body of this ListSendCountryDetailsResponse.
         :type body: list[:class:`huaweicloudsdkmsgsms.v2.SmsCountryResp`]

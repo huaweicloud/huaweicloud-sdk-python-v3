@@ -33,7 +33,7 @@ class WarRoomIncident:
     }
 
     def __init__(self, id=None, incident_id=None, is_change_event=None, failure_level=None, incident_url=None):
-        """WarRoomIncident
+        r"""WarRoomIncident
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class WarRoomIncident:
 
     @property
     def id(self):
-        """Gets the id of this WarRoomIncident.
+        r"""Gets the id of this WarRoomIncident.
 
         主键
 
@@ -81,7 +81,7 @@ class WarRoomIncident:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WarRoomIncident.
+        r"""Sets the id of this WarRoomIncident.
 
         主键
 
@@ -92,7 +92,7 @@ class WarRoomIncident:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this WarRoomIncident.
+        r"""Gets the incident_id of this WarRoomIncident.
 
         事件id
 
@@ -103,7 +103,7 @@ class WarRoomIncident:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this WarRoomIncident.
+        r"""Sets the incident_id of this WarRoomIncident.
 
         事件id
 
@@ -114,7 +114,7 @@ class WarRoomIncident:
 
     @property
     def is_change_event(self):
-        """Gets the is_change_event of this WarRoomIncident.
+        r"""Gets the is_change_event of this WarRoomIncident.
 
         是否变更事件
 
@@ -125,7 +125,7 @@ class WarRoomIncident:
 
     @is_change_event.setter
     def is_change_event(self, is_change_event):
-        """Sets the is_change_event of this WarRoomIncident.
+        r"""Sets the is_change_event of this WarRoomIncident.
 
         是否变更事件
 
@@ -136,7 +136,7 @@ class WarRoomIncident:
 
     @property
     def failure_level(self):
-        """Gets the failure_level of this WarRoomIncident.
+        r"""Gets the failure_level of this WarRoomIncident.
 
         事件级别
 
@@ -147,7 +147,7 @@ class WarRoomIncident:
 
     @failure_level.setter
     def failure_level(self, failure_level):
-        """Sets the failure_level of this WarRoomIncident.
+        r"""Sets the failure_level of this WarRoomIncident.
 
         事件级别
 
@@ -158,7 +158,7 @@ class WarRoomIncident:
 
     @property
     def incident_url(self):
-        """Gets the incident_url of this WarRoomIncident.
+        r"""Gets the incident_url of this WarRoomIncident.
 
         事件单号链接
 
@@ -169,7 +169,7 @@ class WarRoomIncident:
 
     @incident_url.setter
     def incident_url(self, incident_url):
-        """Sets the incident_url of this WarRoomIncident.
+        r"""Sets the incident_url of this WarRoomIncident.
 
         事件单号链接
 

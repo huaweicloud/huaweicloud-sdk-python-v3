@@ -39,7 +39,7 @@ class ImageDetectionResultDetail:
     }
 
     def __init__(self, suggestion=None, category=None, confidence=None, face_location=None, qr_location=None, qr_content=None, segments=None, label=None):
-        """ImageDetectionResultDetail
+        r"""ImageDetectionResultDetail
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class ImageDetectionResultDetail:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this ImageDetectionResultDetail.
+        r"""Gets the suggestion of this ImageDetectionResultDetail.
 
         审核结果是否通过。 block：包含敏感信息，不通过 review：需要人工复检
 
@@ -100,7 +100,7 @@ class ImageDetectionResultDetail:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this ImageDetectionResultDetail.
+        r"""Sets the suggestion of this ImageDetectionResultDetail.
 
         审核结果是否通过。 block：包含敏感信息，不通过 review：需要人工复检
 
@@ -111,7 +111,7 @@ class ImageDetectionResultDetail:
 
     @property
     def category(self):
-        """Gets the category of this ImageDetectionResultDetail.
+        r"""Gets the category of this ImageDetectionResultDetail.
 
         检测结果的一级标签。 支持category列表如下： terrorism: 暴恐 porn: 色情 image_text: 图文审核
 
@@ -122,7 +122,7 @@ class ImageDetectionResultDetail:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ImageDetectionResultDetail.
+        r"""Sets the category of this ImageDetectionResultDetail.
 
         检测结果的一级标签。 支持category列表如下： terrorism: 暴恐 porn: 色情 image_text: 图文审核
 
@@ -133,7 +133,7 @@ class ImageDetectionResultDetail:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ImageDetectionResultDetail.
+        r"""Gets the confidence of this ImageDetectionResultDetail.
 
         置信度，可选值在0-1之间，值越大，可信度越高。
 
@@ -144,7 +144,7 @@ class ImageDetectionResultDetail:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ImageDetectionResultDetail.
+        r"""Sets the confidence of this ImageDetectionResultDetail.
 
         置信度，可选值在0-1之间，值越大，可信度越高。
 
@@ -155,7 +155,7 @@ class ImageDetectionResultDetail:
 
     @property
     def face_location(self):
-        """Gets the face_location of this ImageDetectionResultDetail.
+        r"""Gets the face_location of this ImageDetectionResultDetail.
 
         :return: The face_location of this ImageDetectionResultDetail.
         :rtype: :class:`huaweicloudsdkmoderation.v3.FaceLocationDetail`
@@ -164,7 +164,7 @@ class ImageDetectionResultDetail:
 
     @face_location.setter
     def face_location(self, face_location):
-        """Sets the face_location of this ImageDetectionResultDetail.
+        r"""Sets the face_location of this ImageDetectionResultDetail.
 
         :param face_location: The face_location of this ImageDetectionResultDetail.
         :type face_location: :class:`huaweicloudsdkmoderation.v3.FaceLocationDetail`
@@ -173,7 +173,7 @@ class ImageDetectionResultDetail:
 
     @property
     def qr_location(self):
-        """Gets the qr_location of this ImageDetectionResultDetail.
+        r"""Gets the qr_location of this ImageDetectionResultDetail.
 
         :return: The qr_location of this ImageDetectionResultDetail.
         :rtype: :class:`huaweicloudsdkmoderation.v3.QRLocationDetail`
@@ -182,7 +182,7 @@ class ImageDetectionResultDetail:
 
     @qr_location.setter
     def qr_location(self, qr_location):
-        """Sets the qr_location of this ImageDetectionResultDetail.
+        r"""Sets the qr_location of this ImageDetectionResultDetail.
 
         :param qr_location: The qr_location of this ImageDetectionResultDetail.
         :type qr_location: :class:`huaweicloudsdkmoderation.v3.QRLocationDetail`
@@ -191,7 +191,7 @@ class ImageDetectionResultDetail:
 
     @property
     def qr_content(self):
-        """Gets the qr_content of this ImageDetectionResultDetail.
+        r"""Gets the qr_content of this ImageDetectionResultDetail.
 
         图片中二维码指向的链接，当请求参数categories中包含image_text时存在。
 
@@ -202,7 +202,7 @@ class ImageDetectionResultDetail:
 
     @qr_content.setter
     def qr_content(self, qr_content):
-        """Sets the qr_content of this ImageDetectionResultDetail.
+        r"""Sets the qr_content of this ImageDetectionResultDetail.
 
         图片中二维码指向的链接，当请求参数categories中包含image_text时存在。
 
@@ -213,7 +213,7 @@ class ImageDetectionResultDetail:
 
     @property
     def segments(self):
-        """Gets the segments of this ImageDetectionResultDetail.
+        r"""Gets the segments of this ImageDetectionResultDetail.
 
         image_text场景下命中的文本片段。
 
@@ -224,7 +224,7 @@ class ImageDetectionResultDetail:
 
     @segments.setter
     def segments(self, segments):
-        """Sets the segments of this ImageDetectionResultDetail.
+        r"""Sets the segments of this ImageDetectionResultDetail.
 
         image_text场景下命中的文本片段。
 
@@ -235,7 +235,7 @@ class ImageDetectionResultDetail:
 
     @property
     def label(self):
-        """Gets the label of this ImageDetectionResultDetail.
+        r"""Gets the label of this ImageDetectionResultDetail.
 
         识别的详细标签。
 
@@ -246,7 +246,7 @@ class ImageDetectionResultDetail:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this ImageDetectionResultDetail.
+        r"""Sets the label of this ImageDetectionResultDetail.
 
         识别的详细标签。
 

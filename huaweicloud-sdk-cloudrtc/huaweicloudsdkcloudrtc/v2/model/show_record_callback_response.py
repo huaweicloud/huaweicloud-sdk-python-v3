@@ -30,7 +30,7 @@ class ShowRecordCallbackResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, record_callback=None, x_request_id=None):
-        """ShowRecordCallbackResponse
+        r"""ShowRecordCallbackResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowRecordCallbackResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowRecordCallbackResponse.
+        r"""Gets the app_id of this ShowRecordCallbackResponse.
 
         应用id
 
@@ -69,7 +69,7 @@ class ShowRecordCallbackResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowRecordCallbackResponse.
+        r"""Sets the app_id of this ShowRecordCallbackResponse.
 
         应用id
 
@@ -80,7 +80,7 @@ class ShowRecordCallbackResponse(SdkResponse):
 
     @property
     def record_callback(self):
-        """Gets the record_callback of this ShowRecordCallbackResponse.
+        r"""Gets the record_callback of this ShowRecordCallbackResponse.
 
         :return: The record_callback of this ShowRecordCallbackResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
@@ -89,7 +89,7 @@ class ShowRecordCallbackResponse(SdkResponse):
 
     @record_callback.setter
     def record_callback(self, record_callback):
-        """Sets the record_callback of this ShowRecordCallbackResponse.
+        r"""Sets the record_callback of this ShowRecordCallbackResponse.
 
         :param record_callback: The record_callback of this ShowRecordCallbackResponse.
         :type record_callback: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
@@ -98,7 +98,7 @@ class ShowRecordCallbackResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowRecordCallbackResponse.
+        r"""Gets the x_request_id of this ShowRecordCallbackResponse.
 
         :return: The x_request_id of this ShowRecordCallbackResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ShowRecordCallbackResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowRecordCallbackResponse.
+        r"""Sets the x_request_id of this ShowRecordCallbackResponse.
 
         :param x_request_id: The x_request_id of this ShowRecordCallbackResponse.
         :type x_request_id: str

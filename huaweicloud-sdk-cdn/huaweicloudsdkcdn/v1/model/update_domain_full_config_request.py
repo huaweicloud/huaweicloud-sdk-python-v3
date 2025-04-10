@@ -29,7 +29,7 @@ class UpdateDomainFullConfigRequest:
     }
 
     def __init__(self, domain_name=None, enterprise_project_id=None, body=None):
-        """UpdateDomainFullConfigRequest
+        r"""UpdateDomainFullConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateDomainFullConfigRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this UpdateDomainFullConfigRequest.
+        r"""Gets the domain_name of this UpdateDomainFullConfigRequest.
 
         加速域名
 
@@ -67,7 +67,7 @@ class UpdateDomainFullConfigRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this UpdateDomainFullConfigRequest.
+        r"""Sets the domain_name of this UpdateDomainFullConfigRequest.
 
         加速域名
 
@@ -78,7 +78,7 @@ class UpdateDomainFullConfigRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateDomainFullConfigRequest.
+        r"""Gets the enterprise_project_id of this UpdateDomainFullConfigRequest.
 
         当用户开启企业项目功能时，该参数生效，表示修改当前企业项目下加速域名的配置，\"all\"代表所有项目。  > 当使用子帐号调用接口时，该参数必传。 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -89,7 +89,7 @@ class UpdateDomainFullConfigRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateDomainFullConfigRequest.
+        r"""Sets the enterprise_project_id of this UpdateDomainFullConfigRequest.
 
         当用户开启企业项目功能时，该参数生效，表示修改当前企业项目下加速域名的配置，\"all\"代表所有项目。  > 当使用子帐号调用接口时，该参数必传。 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -100,7 +100,7 @@ class UpdateDomainFullConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDomainFullConfigRequest.
+        r"""Gets the body of this UpdateDomainFullConfigRequest.
 
         :return: The body of this UpdateDomainFullConfigRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.ModifyDomainConfigRequestBody`
@@ -109,7 +109,7 @@ class UpdateDomainFullConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDomainFullConfigRequest.
+        r"""Sets the body of this UpdateDomainFullConfigRequest.
 
         :param body: The body of this UpdateDomainFullConfigRequest.
         :type body: :class:`huaweicloudsdkcdn.v1.ModifyDomainConfigRequestBody`

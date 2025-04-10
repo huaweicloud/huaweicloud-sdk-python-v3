@@ -25,7 +25,7 @@ class BatchImportConfigsRequestBody:
     }
 
     def __init__(self, configs=None):
-        """BatchImportConfigsRequestBody
+        r"""BatchImportConfigsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchImportConfigsRequestBody:
 
     @property
     def configs(self):
-        """Gets the configs of this BatchImportConfigsRequestBody.
+        r"""Gets the configs of this BatchImportConfigsRequestBody.
 
         南向IA配置项列表
 
@@ -54,7 +54,7 @@ class BatchImportConfigsRequestBody:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this BatchImportConfigsRequestBody.
+        r"""Sets the configs of this BatchImportConfigsRequestBody.
 
         南向IA配置项列表
 

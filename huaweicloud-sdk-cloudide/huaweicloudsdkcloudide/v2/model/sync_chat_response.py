@@ -30,7 +30,7 @@ class SyncChatResponse(SdkResponse):
     }
 
     def __init__(self, result_id=None, status=None, error_message=None):
-        """SyncChatResponse
+        r"""SyncChatResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class SyncChatResponse(SdkResponse):
 
     @property
     def result_id(self):
-        """Gets the result_id of this SyncChatResponse.
+        r"""Gets the result_id of this SyncChatResponse.
 
         result_id
 
@@ -69,7 +69,7 @@ class SyncChatResponse(SdkResponse):
 
     @result_id.setter
     def result_id(self, result_id):
-        """Sets the result_id of this SyncChatResponse.
+        r"""Sets the result_id of this SyncChatResponse.
 
         result_id
 
@@ -80,7 +80,7 @@ class SyncChatResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this SyncChatResponse.
+        r"""Gets the status of this SyncChatResponse.
 
         status
 
@@ -91,7 +91,7 @@ class SyncChatResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SyncChatResponse.
+        r"""Sets the status of this SyncChatResponse.
 
         status
 
@@ -102,7 +102,7 @@ class SyncChatResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this SyncChatResponse.
+        r"""Gets the error_message of this SyncChatResponse.
 
         error message
 
@@ -113,7 +113,7 @@ class SyncChatResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this SyncChatResponse.
+        r"""Sets the error_message of this SyncChatResponse.
 
         error message
 

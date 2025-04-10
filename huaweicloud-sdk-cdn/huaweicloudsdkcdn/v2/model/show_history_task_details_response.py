@@ -46,7 +46,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, task_type=None, status=None, urls=None, create_time=None, processing=None, succeed=None, failed=None, total=None, file_type=None, x_request_id=None):
-        """ShowHistoryTaskDetailsResponse
+        r"""ShowHistoryTaskDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowHistoryTaskDetailsResponse.
+        r"""Gets the id of this ShowHistoryTaskDetailsResponse.
 
         任务id。
 
@@ -125,7 +125,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowHistoryTaskDetailsResponse.
+        r"""Sets the id of this ShowHistoryTaskDetailsResponse.
 
         任务id。
 
@@ -136,7 +136,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @property
     def task_type(self):
-        """Gets the task_type of this ShowHistoryTaskDetailsResponse.
+        r"""Gets the task_type of this ShowHistoryTaskDetailsResponse.
 
         任务类型，refresh：刷新任务；preheating：预热任务。
 
@@ -147,7 +147,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ShowHistoryTaskDetailsResponse.
+        r"""Sets the task_type of this ShowHistoryTaskDetailsResponse.
 
         任务类型，refresh：刷新任务；preheating：预热任务。
 
@@ -158,7 +158,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowHistoryTaskDetailsResponse.
+        r"""Gets the status of this ShowHistoryTaskDetailsResponse.
 
         任务执行结果,task_done:成功，task_inprocess:处理中。
 
@@ -169,7 +169,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowHistoryTaskDetailsResponse.
+        r"""Sets the status of this ShowHistoryTaskDetailsResponse.
 
         任务执行结果,task_done:成功，task_inprocess:处理中。
 
@@ -180,7 +180,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @property
     def urls(self):
-        """Gets the urls of this ShowHistoryTaskDetailsResponse.
+        r"""Gets the urls of this ShowHistoryTaskDetailsResponse.
 
         本次提交的url列表。
 
@@ -191,7 +191,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @urls.setter
     def urls(self, urls):
-        """Sets the urls of this ShowHistoryTaskDetailsResponse.
+        r"""Sets the urls of this ShowHistoryTaskDetailsResponse.
 
         本次提交的url列表。
 
@@ -202,7 +202,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowHistoryTaskDetailsResponse.
+        r"""Gets the create_time of this ShowHistoryTaskDetailsResponse.
 
         创建时间。
 
@@ -213,7 +213,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowHistoryTaskDetailsResponse.
+        r"""Sets the create_time of this ShowHistoryTaskDetailsResponse.
 
         创建时间。
 
@@ -224,7 +224,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @property
     def processing(self):
-        """Gets the processing of this ShowHistoryTaskDetailsResponse.
+        r"""Gets the processing of this ShowHistoryTaskDetailsResponse.
 
         处理中的url个数。
 
@@ -235,7 +235,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @processing.setter
     def processing(self, processing):
-        """Sets the processing of this ShowHistoryTaskDetailsResponse.
+        r"""Sets the processing of this ShowHistoryTaskDetailsResponse.
 
         处理中的url个数。
 
@@ -246,7 +246,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @property
     def succeed(self):
-        """Gets the succeed of this ShowHistoryTaskDetailsResponse.
+        r"""Gets the succeed of this ShowHistoryTaskDetailsResponse.
 
         成功处理的url个数。
 
@@ -257,7 +257,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @succeed.setter
     def succeed(self, succeed):
-        """Sets the succeed of this ShowHistoryTaskDetailsResponse.
+        r"""Sets the succeed of this ShowHistoryTaskDetailsResponse.
 
         成功处理的url个数。
 
@@ -268,7 +268,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @property
     def failed(self):
-        """Gets the failed of this ShowHistoryTaskDetailsResponse.
+        r"""Gets the failed of this ShowHistoryTaskDetailsResponse.
 
         处理失败的url个数。
 
@@ -279,7 +279,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @failed.setter
     def failed(self, failed):
-        """Sets the failed of this ShowHistoryTaskDetailsResponse.
+        r"""Sets the failed of this ShowHistoryTaskDetailsResponse.
 
         处理失败的url个数。
 
@@ -290,7 +290,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowHistoryTaskDetailsResponse.
+        r"""Gets the total of this ShowHistoryTaskDetailsResponse.
 
         历史任务的url个数。
 
@@ -301,7 +301,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowHistoryTaskDetailsResponse.
+        r"""Sets the total of this ShowHistoryTaskDetailsResponse.
 
         历史任务的url个数。
 
@@ -312,7 +312,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @property
     def file_type(self):
-        """Gets the file_type of this ShowHistoryTaskDetailsResponse.
+        r"""Gets the file_type of this ShowHistoryTaskDetailsResponse.
 
         文件类型，file：文件；directory：目录，默认是文件file。
 
@@ -323,7 +323,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this ShowHistoryTaskDetailsResponse.
+        r"""Sets the file_type of this ShowHistoryTaskDetailsResponse.
 
         文件类型，file：文件；directory：目录，默认是文件file。
 
@@ -334,7 +334,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowHistoryTaskDetailsResponse.
+        r"""Gets the x_request_id of this ShowHistoryTaskDetailsResponse.
 
         :return: The x_request_id of this ShowHistoryTaskDetailsResponse.
         :rtype: str
@@ -343,7 +343,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowHistoryTaskDetailsResponse.
+        r"""Sets the x_request_id of this ShowHistoryTaskDetailsResponse.
 
         :param x_request_id: The x_request_id of this ShowHistoryTaskDetailsResponse.
         :type x_request_id: str

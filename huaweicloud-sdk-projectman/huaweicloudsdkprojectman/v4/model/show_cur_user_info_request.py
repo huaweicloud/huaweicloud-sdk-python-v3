@@ -23,7 +23,7 @@ class ShowCurUserInfoRequest:
     }
 
     def __init__(self):
-        """ShowCurUserInfoRequest
+        r"""ShowCurUserInfoRequest
 
         The model defined in huaweicloud sdk
 

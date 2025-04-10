@@ -29,7 +29,7 @@ class QuotaResourceEntity:
     }
 
     def __init__(self, type=None, quota=None, used=None):
-        """QuotaResourceEntity
+        r"""QuotaResourceEntity
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QuotaResourceEntity:
 
     @property
     def type(self):
-        """Gets the type of this QuotaResourceEntity.
+        r"""Gets the type of this QuotaResourceEntity.
 
         支持rabbitmqInstance、kafkaInstance、rocketmqInstance、tags四种。   - rabbitmqInstance表示RabbitMQ实例配额。   - kafkaInstance表示Kafka实例配额。   - rocketmqInstance表示RocketMQ实例配额。   - tags表示标签的配额。
 
@@ -68,7 +68,7 @@ class QuotaResourceEntity:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuotaResourceEntity.
+        r"""Sets the type of this QuotaResourceEntity.
 
         支持rabbitmqInstance、kafkaInstance、rocketmqInstance、tags四种。   - rabbitmqInstance表示RabbitMQ实例配额。   - kafkaInstance表示Kafka实例配额。   - rocketmqInstance表示RocketMQ实例配额。   - tags表示标签的配额。
 
@@ -79,7 +79,7 @@ class QuotaResourceEntity:
 
     @property
     def quota(self):
-        """Gets the quota of this QuotaResourceEntity.
+        r"""Gets the quota of this QuotaResourceEntity.
 
         租户最大可以创建的实例个数，或者每个实例最大可以创建的标签个数。
 
@@ -90,7 +90,7 @@ class QuotaResourceEntity:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this QuotaResourceEntity.
+        r"""Sets the quota of this QuotaResourceEntity.
 
         租户最大可以创建的实例个数，或者每个实例最大可以创建的标签个数。
 
@@ -101,7 +101,7 @@ class QuotaResourceEntity:
 
     @property
     def used(self):
-        """Gets the used of this QuotaResourceEntity.
+        r"""Gets the used of this QuotaResourceEntity.
 
         已创建的实例个数。
 
@@ -112,7 +112,7 @@ class QuotaResourceEntity:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this QuotaResourceEntity.
+        r"""Sets the used of this QuotaResourceEntity.
 
         已创建的实例个数。
 

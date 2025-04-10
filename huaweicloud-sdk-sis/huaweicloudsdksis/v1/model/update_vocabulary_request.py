@@ -27,7 +27,7 @@ class UpdateVocabularyRequest:
     }
 
     def __init__(self, vocabulary_id=None, body=None):
-        """UpdateVocabularyRequest
+        r"""UpdateVocabularyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateVocabularyRequest:
 
     @property
     def vocabulary_id(self):
-        """Gets the vocabulary_id of this UpdateVocabularyRequest.
+        r"""Gets the vocabulary_id of this UpdateVocabularyRequest.
 
         被更新的热词表id。
 
@@ -60,7 +60,7 @@ class UpdateVocabularyRequest:
 
     @vocabulary_id.setter
     def vocabulary_id(self, vocabulary_id):
-        """Sets the vocabulary_id of this UpdateVocabularyRequest.
+        r"""Sets the vocabulary_id of this UpdateVocabularyRequest.
 
         被更新的热词表id。
 
@@ -71,7 +71,7 @@ class UpdateVocabularyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVocabularyRequest.
+        r"""Gets the body of this UpdateVocabularyRequest.
 
         :return: The body of this UpdateVocabularyRequest.
         :rtype: :class:`huaweicloudsdksis.v1.PutUpdateVocabReq`
@@ -80,7 +80,7 @@ class UpdateVocabularyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVocabularyRequest.
+        r"""Sets the body of this UpdateVocabularyRequest.
 
         :param body: The body of this UpdateVocabularyRequest.
         :type body: :class:`huaweicloudsdksis.v1.PutUpdateVocabReq`

@@ -31,7 +31,7 @@ class EditAudioInfo:
     }
 
     def __init__(self, codec=None, bitrate=None, sample=None, channels=None):
-        """EditAudioInfo
+        r"""EditAudioInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class EditAudioInfo:
 
     @property
     def codec(self):
-        """Gets the codec of this EditAudioInfo.
+        r"""Gets the codec of this EditAudioInfo.
 
         音频编码格式,取值有：[AAC, HEAAC, MP3]。
 
@@ -75,7 +75,7 @@ class EditAudioInfo:
 
     @codec.setter
     def codec(self, codec):
-        """Sets the codec of this EditAudioInfo.
+        r"""Sets the codec of this EditAudioInfo.
 
         音频编码格式,取值有：[AAC, HEAAC, MP3]。
 
@@ -86,7 +86,7 @@ class EditAudioInfo:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this EditAudioInfo.
+        r"""Gets the bitrate of this EditAudioInfo.
 
         视频码率，单位: bit/s 
 
@@ -97,7 +97,7 @@ class EditAudioInfo:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this EditAudioInfo.
+        r"""Sets the bitrate of this EditAudioInfo.
 
         视频码率，单位: bit/s 
 
@@ -108,7 +108,7 @@ class EditAudioInfo:
 
     @property
     def sample(self):
-        """Gets the sample of this EditAudioInfo.
+        r"""Gets the sample of this EditAudioInfo.
 
         采样率, 单位: HZ 
 
@@ -119,7 +119,7 @@ class EditAudioInfo:
 
     @sample.setter
     def sample(self, sample):
-        """Sets the sample of this EditAudioInfo.
+        r"""Sets the sample of this EditAudioInfo.
 
         采样率, 单位: HZ 
 
@@ -130,7 +130,7 @@ class EditAudioInfo:
 
     @property
     def channels(self):
-        """Gets the channels of this EditAudioInfo.
+        r"""Gets the channels of this EditAudioInfo.
 
         声道数。
 
@@ -141,7 +141,7 @@ class EditAudioInfo:
 
     @channels.setter
     def channels(self, channels):
-        """Sets the channels of this EditAudioInfo.
+        r"""Sets the channels of this EditAudioInfo.
 
         声道数。
 

@@ -24,7 +24,7 @@ class UnpublishSecurityApplicationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UnpublishSecurityApplicationResponse
+        r"""UnpublishSecurityApplicationResponse
 
         The model defined in huaweicloud sdk
 

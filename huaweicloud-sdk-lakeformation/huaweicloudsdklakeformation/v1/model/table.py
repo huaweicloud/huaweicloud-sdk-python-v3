@@ -57,7 +57,7 @@ class Table:
     }
 
     def __init__(self, catalog_name=None, database_name=None, table_name=None, create_time=None, last_access_time=None, update_time=None, last_analyzed_time=None, owner=None, owner_type=None, parameters=None, partition_keys=None, retention=None, storage_descriptor=None, table_type=None, comments=None, view_expanded_text=None, view_original_text=None):
-        """Table
+        r"""Table
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class Table:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this Table.
+        r"""Gets the catalog_name of this Table.
 
         catalog名字
 
@@ -152,7 +152,7 @@ class Table:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this Table.
+        r"""Sets the catalog_name of this Table.
 
         catalog名字
 
@@ -163,7 +163,7 @@ class Table:
 
     @property
     def database_name(self):
-        """Gets the database_name of this Table.
+        r"""Gets the database_name of this Table.
 
         数据库名字
 
@@ -174,7 +174,7 @@ class Table:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this Table.
+        r"""Sets the database_name of this Table.
 
         数据库名字
 
@@ -185,7 +185,7 @@ class Table:
 
     @property
     def table_name(self):
-        """Gets the table_name of this Table.
+        r"""Gets the table_name of this Table.
 
         表名字
 
@@ -196,7 +196,7 @@ class Table:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this Table.
+        r"""Sets the table_name of this Table.
 
         表名字
 
@@ -207,7 +207,7 @@ class Table:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Table.
+        r"""Gets the create_time of this Table.
 
         表创建时间
 
@@ -218,7 +218,7 @@ class Table:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Table.
+        r"""Sets the create_time of this Table.
 
         表创建时间
 
@@ -229,7 +229,7 @@ class Table:
 
     @property
     def last_access_time(self):
-        """Gets the last_access_time of this Table.
+        r"""Gets the last_access_time of this Table.
 
         最后访问时间
 
@@ -240,7 +240,7 @@ class Table:
 
     @last_access_time.setter
     def last_access_time(self, last_access_time):
-        """Sets the last_access_time of this Table.
+        r"""Sets the last_access_time of this Table.
 
         最后访问时间
 
@@ -251,7 +251,7 @@ class Table:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Table.
+        r"""Gets the update_time of this Table.
 
         表元数据最后一次修改时间
 
@@ -262,7 +262,7 @@ class Table:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Table.
+        r"""Sets the update_time of this Table.
 
         表元数据最后一次修改时间
 
@@ -273,7 +273,7 @@ class Table:
 
     @property
     def last_analyzed_time(self):
-        """Gets the last_analyzed_time of this Table.
+        r"""Gets the last_analyzed_time of this Table.
 
         上一次做列级别的统计信息计算的时间
 
@@ -284,7 +284,7 @@ class Table:
 
     @last_analyzed_time.setter
     def last_analyzed_time(self, last_analyzed_time):
-        """Sets the last_analyzed_time of this Table.
+        r"""Sets the last_analyzed_time of this Table.
 
         上一次做列级别的统计信息计算的时间
 
@@ -295,7 +295,7 @@ class Table:
 
     @property
     def owner(self):
-        """Gets the owner of this Table.
+        r"""Gets the owner of this Table.
 
         用户信息
 
@@ -306,7 +306,7 @@ class Table:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this Table.
+        r"""Sets the owner of this Table.
 
         用户信息
 
@@ -317,7 +317,7 @@ class Table:
 
     @property
     def owner_type(self):
-        """Gets the owner_type of this Table.
+        r"""Gets the owner_type of this Table.
 
         用户类型
 
@@ -328,7 +328,7 @@ class Table:
 
     @owner_type.setter
     def owner_type(self, owner_type):
-        """Sets the owner_type of this Table.
+        r"""Sets the owner_type of this Table.
 
         用户类型
 
@@ -339,7 +339,7 @@ class Table:
 
     @property
     def parameters(self):
-        """Gets the parameters of this Table.
+        r"""Gets the parameters of this Table.
 
         参数
 
@@ -350,7 +350,7 @@ class Table:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this Table.
+        r"""Sets the parameters of this Table.
 
         参数
 
@@ -361,7 +361,7 @@ class Table:
 
     @property
     def partition_keys(self):
-        """Gets the partition_keys of this Table.
+        r"""Gets the partition_keys of this Table.
 
         表分区列的列表
 
@@ -372,7 +372,7 @@ class Table:
 
     @partition_keys.setter
     def partition_keys(self, partition_keys):
-        """Sets the partition_keys of this Table.
+        r"""Sets the partition_keys of this Table.
 
         表分区列的列表
 
@@ -383,7 +383,7 @@ class Table:
 
     @property
     def retention(self):
-        """Gets the retention of this Table.
+        r"""Gets the retention of this Table.
 
         表保留时间
 
@@ -394,7 +394,7 @@ class Table:
 
     @retention.setter
     def retention(self, retention):
-        """Sets the retention of this Table.
+        r"""Sets the retention of this Table.
 
         表保留时间
 
@@ -405,7 +405,7 @@ class Table:
 
     @property
     def storage_descriptor(self):
-        """Gets the storage_descriptor of this Table.
+        r"""Gets the storage_descriptor of this Table.
 
         :return: The storage_descriptor of this Table.
         :rtype: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`
@@ -414,7 +414,7 @@ class Table:
 
     @storage_descriptor.setter
     def storage_descriptor(self, storage_descriptor):
-        """Sets the storage_descriptor of this Table.
+        r"""Sets the storage_descriptor of this Table.
 
         :param storage_descriptor: The storage_descriptor of this Table.
         :type storage_descriptor: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`
@@ -423,7 +423,7 @@ class Table:
 
     @property
     def table_type(self):
-        """Gets the table_type of this Table.
+        r"""Gets the table_type of this Table.
 
         表类型
 
@@ -434,7 +434,7 @@ class Table:
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this Table.
+        r"""Sets the table_type of this Table.
 
         表类型
 
@@ -445,7 +445,7 @@ class Table:
 
     @property
     def comments(self):
-        """Gets the comments of this Table.
+        r"""Gets the comments of this Table.
 
         表描述信息
 
@@ -456,7 +456,7 @@ class Table:
 
     @comments.setter
     def comments(self, comments):
-        """Sets the comments of this Table.
+        r"""Sets the comments of this Table.
 
         表描述信息
 
@@ -467,7 +467,7 @@ class Table:
 
     @property
     def view_expanded_text(self):
-        """Gets the view_expanded_text of this Table.
+        r"""Gets the view_expanded_text of this Table.
 
         如果表是视图，则为视图的扩展文本；否则为 null
 
@@ -478,7 +478,7 @@ class Table:
 
     @view_expanded_text.setter
     def view_expanded_text(self, view_expanded_text):
-        """Sets the view_expanded_text of this Table.
+        r"""Sets the view_expanded_text of this Table.
 
         如果表是视图，则为视图的扩展文本；否则为 null
 
@@ -489,7 +489,7 @@ class Table:
 
     @property
     def view_original_text(self):
-        """Gets the view_original_text of this Table.
+        r"""Gets the view_original_text of this Table.
 
         如果表是视图，则为视图的原始文本；否则为 null
 
@@ -500,7 +500,7 @@ class Table:
 
     @view_original_text.setter
     def view_original_text(self, view_original_text):
-        """Sets the view_original_text of this Table.
+        r"""Sets the view_original_text of this Table.
 
         如果表是视图，则为视图的原始文本；否则为 null
 

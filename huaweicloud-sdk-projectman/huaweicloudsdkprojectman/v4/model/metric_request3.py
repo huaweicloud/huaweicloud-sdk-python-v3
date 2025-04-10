@@ -33,7 +33,7 @@ class MetricRequest3:
     }
 
     def __init__(self, date_range=None, metric_type=None, sprint_id=None, dividend=None, divisor=None):
-        """MetricRequest3
+        r"""MetricRequest3
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MetricRequest3:
 
     @property
     def date_range(self):
-        """Gets the date_range of this MetricRequest3.
+        r"""Gets the date_range of this MetricRequest3.
 
         统计周期
 
@@ -82,7 +82,7 @@ class MetricRequest3:
 
     @date_range.setter
     def date_range(self, date_range):
-        """Sets the date_range of this MetricRequest3.
+        r"""Sets the date_range of this MetricRequest3.
 
         统计周期
 
@@ -93,7 +93,7 @@ class MetricRequest3:
 
     @property
     def metric_type(self):
-        """Gets the metric_type of this MetricRequest3.
+        r"""Gets the metric_type of this MetricRequest3.
 
         指标类型
 
@@ -104,7 +104,7 @@ class MetricRequest3:
 
     @metric_type.setter
     def metric_type(self, metric_type):
-        """Sets the metric_type of this MetricRequest3.
+        r"""Sets the metric_type of this MetricRequest3.
 
         指标类型
 
@@ -115,7 +115,7 @@ class MetricRequest3:
 
     @property
     def sprint_id(self):
-        """Gets the sprint_id of this MetricRequest3.
+        r"""Gets the sprint_id of this MetricRequest3.
 
         迭代ID
 
@@ -126,7 +126,7 @@ class MetricRequest3:
 
     @sprint_id.setter
     def sprint_id(self, sprint_id):
-        """Sets the sprint_id of this MetricRequest3.
+        r"""Sets the sprint_id of this MetricRequest3.
 
         迭代ID
 
@@ -137,7 +137,7 @@ class MetricRequest3:
 
     @property
     def dividend(self):
-        """Gets the dividend of this MetricRequest3.
+        r"""Gets the dividend of this MetricRequest3.
 
         :return: The dividend of this MetricRequest3.
         :rtype: :class:`huaweicloudsdkprojectman.v4.MetricRequest3Dividend`
@@ -146,7 +146,7 @@ class MetricRequest3:
 
     @dividend.setter
     def dividend(self, dividend):
-        """Sets the dividend of this MetricRequest3.
+        r"""Sets the dividend of this MetricRequest3.
 
         :param dividend: The dividend of this MetricRequest3.
         :type dividend: :class:`huaweicloudsdkprojectman.v4.MetricRequest3Dividend`
@@ -155,7 +155,7 @@ class MetricRequest3:
 
     @property
     def divisor(self):
-        """Gets the divisor of this MetricRequest3.
+        r"""Gets the divisor of this MetricRequest3.
 
         指标分母过滤条件
 
@@ -166,7 +166,7 @@ class MetricRequest3:
 
     @divisor.setter
     def divisor(self, divisor):
-        """Sets the divisor of this MetricRequest3.
+        r"""Sets the divisor of this MetricRequest3.
 
         指标分母过滤条件
 

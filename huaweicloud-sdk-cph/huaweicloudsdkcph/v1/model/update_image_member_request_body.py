@@ -25,7 +25,7 @@ class UpdateImageMemberRequestBody:
     }
 
     def __init__(self, status=None):
-        """UpdateImageMemberRequestBody
+        r"""UpdateImageMemberRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateImageMemberRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateImageMemberRequestBody.
+        r"""Gets the status of this UpdateImageMemberRequestBody.
 
         接受状态。   - accepted: 接受 - rejected: 拒绝
 
@@ -53,7 +53,7 @@ class UpdateImageMemberRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateImageMemberRequestBody.
+        r"""Sets the status of this UpdateImageMemberRequestBody.
 
         接受状态。   - accepted: 接受 - rejected: 拒绝
 

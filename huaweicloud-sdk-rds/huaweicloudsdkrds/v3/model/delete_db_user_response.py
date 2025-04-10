@@ -26,7 +26,7 @@ class DeleteDbUserResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """DeleteDbUserResponse
+        r"""DeleteDbUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDbUserResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this DeleteDbUserResponse.
+        r"""Gets the resp of this DeleteDbUserResponse.
 
         操作结果。
 
@@ -55,7 +55,7 @@ class DeleteDbUserResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this DeleteDbUserResponse.
+        r"""Sets the resp of this DeleteDbUserResponse.
 
         操作结果。
 

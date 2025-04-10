@@ -30,7 +30,7 @@ class ShowCpiTaskResultResponse(SdkResponse):
     }
 
     def __init__(self, status=None, task_data=None, result=None):
-        """ShowCpiTaskResultResponse
+        r"""ShowCpiTaskResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowCpiTaskResultResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowCpiTaskResultResponse.
+        r"""Gets the status of this ShowCpiTaskResultResponse.
 
         :return: The status of this ShowCpiTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.AsyncTaskStatus`
@@ -67,7 +67,7 @@ class ShowCpiTaskResultResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowCpiTaskResultResponse.
+        r"""Sets the status of this ShowCpiTaskResultResponse.
 
         :param status: The status of this ShowCpiTaskResultResponse.
         :type status: :class:`huaweicloudsdkeihealth.v1.AsyncTaskStatus`
@@ -76,7 +76,7 @@ class ShowCpiTaskResultResponse(SdkResponse):
 
     @property
     def task_data(self):
-        """Gets the task_data of this ShowCpiTaskResultResponse.
+        r"""Gets the task_data of this ShowCpiTaskResultResponse.
 
         :return: The task_data of this ShowCpiTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CpiTaskData`
@@ -85,7 +85,7 @@ class ShowCpiTaskResultResponse(SdkResponse):
 
     @task_data.setter
     def task_data(self, task_data):
-        """Sets the task_data of this ShowCpiTaskResultResponse.
+        r"""Sets the task_data of this ShowCpiTaskResultResponse.
 
         :param task_data: The task_data of this ShowCpiTaskResultResponse.
         :type task_data: :class:`huaweicloudsdkeihealth.v1.CpiTaskData`
@@ -94,7 +94,7 @@ class ShowCpiTaskResultResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowCpiTaskResultResponse.
+        r"""Gets the result of this ShowCpiTaskResultResponse.
 
         :return: The result of this ShowCpiTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CpiResult`
@@ -103,7 +103,7 @@ class ShowCpiTaskResultResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowCpiTaskResultResponse.
+        r"""Sets the result of this ShowCpiTaskResultResponse.
 
         :param result: The result of this ShowCpiTaskResultResponse.
         :type result: :class:`huaweicloudsdkeihealth.v1.CpiResult`

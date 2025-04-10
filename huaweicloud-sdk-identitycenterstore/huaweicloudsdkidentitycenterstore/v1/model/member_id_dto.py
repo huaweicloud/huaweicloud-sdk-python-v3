@@ -25,7 +25,7 @@ class MemberIdDto:
     }
 
     def __init__(self, user_id=None):
-        """MemberIdDto
+        r"""MemberIdDto
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MemberIdDto:
 
     @property
     def user_id(self):
-        """Gets the user_id of this MemberIdDto.
+        r"""Gets the user_id of this MemberIdDto.
 
         身份源中IAM身份中心用户的全局唯一标识符（ID）
 
@@ -53,7 +53,7 @@ class MemberIdDto:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this MemberIdDto.
+        r"""Sets the user_id of this MemberIdDto.
 
         身份源中IAM身份中心用户的全局唯一标识符（ID）
 

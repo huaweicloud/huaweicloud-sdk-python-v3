@@ -25,7 +25,7 @@ class ListSubnetsByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListSubnetsByTagsRequest
+        r"""ListSubnetsByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListSubnetsByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListSubnetsByTagsRequest.
+        r"""Gets the body of this ListSubnetsByTagsRequest.
 
         :return: The body of this ListSubnetsByTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.ListSubnetsByTagsRequestBody`
@@ -52,7 +52,7 @@ class ListSubnetsByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSubnetsByTagsRequest.
+        r"""Sets the body of this ListSubnetsByTagsRequest.
 
         :param body: The body of this ListSubnetsByTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.ListSubnetsByTagsRequestBody`

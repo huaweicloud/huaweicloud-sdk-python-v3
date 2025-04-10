@@ -25,7 +25,7 @@ class ExpandInstanceStorage:
     }
 
     def __init__(self, new_size=None):
-        """ExpandInstanceStorage
+        r"""ExpandInstanceStorage
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExpandInstanceStorage:
 
     @property
     def new_size(self):
-        """Gets the new_size of this ExpandInstanceStorage.
+        r"""Gets the new_size of this ExpandInstanceStorage.
 
         磁盘扩容后单节点有效存储容量（GB / 节点）。该容量必须大于当前单节点有效容量，小于等于集群规格支持的单节点最大容量，扩容容量为规格支持的步长倍数。集群规格配置详情可根据“查询节点类型”查询。
 
@@ -53,7 +53,7 @@ class ExpandInstanceStorage:
 
     @new_size.setter
     def new_size(self, new_size):
-        """Sets the new_size of this ExpandInstanceStorage.
+        r"""Sets the new_size of this ExpandInstanceStorage.
 
         磁盘扩容后单节点有效存储容量（GB / 节点）。该容量必须大于当前单节点有效容量，小于等于集群规格支持的单节点最大容量，扩容容量为规格支持的步长倍数。集群规格配置详情可根据“查询节点类型”查询。
 

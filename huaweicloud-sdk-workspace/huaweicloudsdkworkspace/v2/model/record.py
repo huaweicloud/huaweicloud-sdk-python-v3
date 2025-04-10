@@ -61,7 +61,7 @@ class Record:
     }
 
     def __init__(self, tenant_id=None, sid=None, transaction_id=None, computer_name=None, user_name=None, terminal_mac=None, terminal_name=None, terminal_ip=None, client_version=None, terminal_type=None, agent_version=None, desktop_ip=None, connection_start_time=None, connection_setup_time=None, connection_end_time=None, is_reconnect=None, connection_failure_reason=None, network_rtt=None, e2e_rtt=None):
-        """Record
+        r"""Record
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class Record:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this Record.
+        r"""Gets the tenant_id of this Record.
 
         租户id，不对外展示
 
@@ -180,7 +180,7 @@ class Record:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this Record.
+        r"""Sets the tenant_id of this Record.
 
         租户id，不对外展示
 
@@ -191,7 +191,7 @@ class Record:
 
     @property
     def sid(self):
-        """Gets the sid of this Record.
+        r"""Gets the sid of this Record.
 
         桌面sid
 
@@ -202,7 +202,7 @@ class Record:
 
     @sid.setter
     def sid(self, sid):
-        """Sets the sid of this Record.
+        r"""Sets the sid of this Record.
 
         桌面sid
 
@@ -213,7 +213,7 @@ class Record:
 
     @property
     def transaction_id(self):
-        """Gets the transaction_id of this Record.
+        r"""Gets the transaction_id of this Record.
 
         事务id
 
@@ -224,7 +224,7 @@ class Record:
 
     @transaction_id.setter
     def transaction_id(self, transaction_id):
-        """Sets the transaction_id of this Record.
+        r"""Sets the transaction_id of this Record.
 
         事务id
 
@@ -235,7 +235,7 @@ class Record:
 
     @property
     def computer_name(self):
-        """Gets the computer_name of this Record.
+        r"""Gets the computer_name of this Record.
 
         计算机名。
 
@@ -246,7 +246,7 @@ class Record:
 
     @computer_name.setter
     def computer_name(self, computer_name):
-        """Sets the computer_name of this Record.
+        r"""Sets the computer_name of this Record.
 
         计算机名。
 
@@ -257,7 +257,7 @@ class Record:
 
     @property
     def user_name(self):
-        """Gets the user_name of this Record.
+        r"""Gets the user_name of this Record.
 
         用户名。
 
@@ -268,7 +268,7 @@ class Record:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this Record.
+        r"""Sets the user_name of this Record.
 
         用户名。
 
@@ -279,7 +279,7 @@ class Record:
 
     @property
     def terminal_mac(self):
-        """Gets the terminal_mac of this Record.
+        r"""Gets the terminal_mac of this Record.
 
         终端MAC地址。
 
@@ -290,7 +290,7 @@ class Record:
 
     @terminal_mac.setter
     def terminal_mac(self, terminal_mac):
-        """Sets the terminal_mac of this Record.
+        r"""Sets the terminal_mac of this Record.
 
         终端MAC地址。
 
@@ -301,7 +301,7 @@ class Record:
 
     @property
     def terminal_name(self):
-        """Gets the terminal_name of this Record.
+        r"""Gets the terminal_name of this Record.
 
         终端名称。
 
@@ -312,7 +312,7 @@ class Record:
 
     @terminal_name.setter
     def terminal_name(self, terminal_name):
-        """Sets the terminal_name of this Record.
+        r"""Sets the terminal_name of this Record.
 
         终端名称。
 
@@ -323,7 +323,7 @@ class Record:
 
     @property
     def terminal_ip(self):
-        """Gets the terminal_ip of this Record.
+        r"""Gets the terminal_ip of this Record.
 
         终端IP。
 
@@ -334,7 +334,7 @@ class Record:
 
     @terminal_ip.setter
     def terminal_ip(self, terminal_ip):
-        """Sets the terminal_ip of this Record.
+        r"""Sets the terminal_ip of this Record.
 
         终端IP。
 
@@ -345,7 +345,7 @@ class Record:
 
     @property
     def client_version(self):
-        """Gets the client_version of this Record.
+        r"""Gets the client_version of this Record.
 
         AccessClient版本。
 
@@ -356,7 +356,7 @@ class Record:
 
     @client_version.setter
     def client_version(self, client_version):
-        """Sets the client_version of this Record.
+        r"""Sets the client_version of this Record.
 
         AccessClient版本。
 
@@ -367,7 +367,7 @@ class Record:
 
     @property
     def terminal_type(self):
-        """Gets the terminal_type of this Record.
+        r"""Gets the terminal_type of this Record.
 
         终端系统类型。
 
@@ -378,7 +378,7 @@ class Record:
 
     @terminal_type.setter
     def terminal_type(self, terminal_type):
-        """Sets the terminal_type of this Record.
+        r"""Sets the terminal_type of this Record.
 
         终端系统类型。
 
@@ -389,7 +389,7 @@ class Record:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this Record.
+        r"""Gets the agent_version of this Record.
 
         AccessAgent版本。
 
@@ -400,7 +400,7 @@ class Record:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this Record.
+        r"""Sets the agent_version of this Record.
 
         AccessAgent版本。
 
@@ -411,7 +411,7 @@ class Record:
 
     @property
     def desktop_ip(self):
-        """Gets the desktop_ip of this Record.
+        r"""Gets the desktop_ip of this Record.
 
         桌面IP。
 
@@ -422,7 +422,7 @@ class Record:
 
     @desktop_ip.setter
     def desktop_ip(self, desktop_ip):
-        """Sets the desktop_ip of this Record.
+        r"""Sets the desktop_ip of this Record.
 
         桌面IP。
 
@@ -433,7 +433,7 @@ class Record:
 
     @property
     def connection_start_time(self):
-        """Gets the connection_start_time of this Record.
+        r"""Gets the connection_start_time of this Record.
 
         开始连接时间。
 
@@ -444,7 +444,7 @@ class Record:
 
     @connection_start_time.setter
     def connection_start_time(self, connection_start_time):
-        """Sets the connection_start_time of this Record.
+        r"""Sets the connection_start_time of this Record.
 
         开始连接时间。
 
@@ -455,7 +455,7 @@ class Record:
 
     @property
     def connection_setup_time(self):
-        """Gets the connection_setup_time of this Record.
+        r"""Gets the connection_setup_time of this Record.
 
         建立连接时间。
 
@@ -466,7 +466,7 @@ class Record:
 
     @connection_setup_time.setter
     def connection_setup_time(self, connection_setup_time):
-        """Sets the connection_setup_time of this Record.
+        r"""Sets the connection_setup_time of this Record.
 
         建立连接时间。
 
@@ -477,7 +477,7 @@ class Record:
 
     @property
     def connection_end_time(self):
-        """Gets the connection_end_time of this Record.
+        r"""Gets the connection_end_time of this Record.
 
         结束连接时间。
 
@@ -488,7 +488,7 @@ class Record:
 
     @connection_end_time.setter
     def connection_end_time(self, connection_end_time):
-        """Sets the connection_end_time of this Record.
+        r"""Sets the connection_end_time of this Record.
 
         结束连接时间。
 
@@ -499,7 +499,7 @@ class Record:
 
     @property
     def is_reconnect(self):
-        """Gets the is_reconnect of this Record.
+        r"""Gets the is_reconnect of this Record.
 
         是否重连。
 
@@ -510,7 +510,7 @@ class Record:
 
     @is_reconnect.setter
     def is_reconnect(self, is_reconnect):
-        """Sets the is_reconnect of this Record.
+        r"""Sets the is_reconnect of this Record.
 
         是否重连。
 
@@ -521,7 +521,7 @@ class Record:
 
     @property
     def connection_failure_reason(self):
-        """Gets the connection_failure_reason of this Record.
+        r"""Gets the connection_failure_reason of this Record.
 
         连接失败原因。
 
@@ -532,7 +532,7 @@ class Record:
 
     @connection_failure_reason.setter
     def connection_failure_reason(self, connection_failure_reason):
-        """Sets the connection_failure_reason of this Record.
+        r"""Sets the connection_failure_reason of this Record.
 
         连接失败原因。
 
@@ -543,7 +543,7 @@ class Record:
 
     @property
     def network_rtt(self):
-        """Gets the network_rtt of this Record.
+        r"""Gets the network_rtt of this Record.
 
         网络时延ms
 
@@ -554,7 +554,7 @@ class Record:
 
     @network_rtt.setter
     def network_rtt(self, network_rtt):
-        """Sets the network_rtt of this Record.
+        r"""Sets the network_rtt of this Record.
 
         网络时延ms
 
@@ -565,7 +565,7 @@ class Record:
 
     @property
     def e2e_rtt(self):
-        """Gets the e2e_rtt of this Record.
+        r"""Gets the e2e_rtt of this Record.
 
         端到端时延 ms
 
@@ -576,7 +576,7 @@ class Record:
 
     @e2e_rtt.setter
     def e2e_rtt(self, e2e_rtt):
-        """Sets the e2e_rtt of this Record.
+        r"""Sets the e2e_rtt of this Record.
 
         端到端时延 ms
 

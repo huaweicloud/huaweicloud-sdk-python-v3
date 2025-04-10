@@ -27,7 +27,7 @@ class CloseKibanaPublicReq:
     }
 
     def __init__(self, eip_size=None, elb_white_list=None):
-        """CloseKibanaPublicReq
+        r"""CloseKibanaPublicReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CloseKibanaPublicReq:
 
     @property
     def eip_size(self):
-        """Gets the eip_size of this CloseKibanaPublicReq.
+        r"""Gets the eip_size of this CloseKibanaPublicReq.
 
         带宽。单位：Mbit/s
 
@@ -61,7 +61,7 @@ class CloseKibanaPublicReq:
 
     @eip_size.setter
     def eip_size(self, eip_size):
-        """Sets the eip_size of this CloseKibanaPublicReq.
+        r"""Sets the eip_size of this CloseKibanaPublicReq.
 
         带宽。单位：Mbit/s
 
@@ -72,7 +72,7 @@ class CloseKibanaPublicReq:
 
     @property
     def elb_white_list(self):
-        """Gets the elb_white_list of this CloseKibanaPublicReq.
+        r"""Gets the elb_white_list of this CloseKibanaPublicReq.
 
         :return: The elb_white_list of this CloseKibanaPublicReq.
         :rtype: :class:`huaweicloudsdkcss.v1.StartKibanaPublicReqElbWhitelist`
@@ -81,7 +81,7 @@ class CloseKibanaPublicReq:
 
     @elb_white_list.setter
     def elb_white_list(self, elb_white_list):
-        """Sets the elb_white_list of this CloseKibanaPublicReq.
+        r"""Sets the elb_white_list of this CloseKibanaPublicReq.
 
         :param elb_white_list: The elb_white_list of this CloseKibanaPublicReq.
         :type elb_white_list: :class:`huaweicloudsdkcss.v1.StartKibanaPublicReqElbWhitelist`

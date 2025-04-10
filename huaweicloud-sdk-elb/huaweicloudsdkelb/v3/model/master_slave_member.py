@@ -53,7 +53,7 @@ class MasterSlaveMember:
     }
 
     def __init__(self, id=None, name=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, address=None, ip_version=None, device_owner=None, device_id=None, operating_status=None, reason=None, member_type=None, instance_id=None, role=None, status=None):
-        """MasterSlaveMember
+        r"""MasterSlaveMember
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class MasterSlaveMember:
 
     @property
     def id(self):
-        """Gets the id of this MasterSlaveMember.
+        r"""Gets the id of this MasterSlaveMember.
 
         后端服务器ID。
 
@@ -138,7 +138,7 @@ class MasterSlaveMember:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MasterSlaveMember.
+        r"""Sets the id of this MasterSlaveMember.
 
         后端服务器ID。
 
@@ -149,7 +149,7 @@ class MasterSlaveMember:
 
     @property
     def name(self):
-        """Gets the name of this MasterSlaveMember.
+        r"""Gets the name of this MasterSlaveMember.
 
         后端服务器名称。
 
@@ -160,7 +160,7 @@ class MasterSlaveMember:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MasterSlaveMember.
+        r"""Sets the name of this MasterSlaveMember.
 
         后端服务器名称。
 
@@ -171,7 +171,7 @@ class MasterSlaveMember:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this MasterSlaveMember.
+        r"""Gets the admin_state_up of this MasterSlaveMember.
 
         后端服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
@@ -182,7 +182,7 @@ class MasterSlaveMember:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this MasterSlaveMember.
+        r"""Sets the admin_state_up of this MasterSlaveMember.
 
         后端服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
@@ -193,7 +193,7 @@ class MasterSlaveMember:
 
     @property
     def subnet_cidr_id(self):
-        """Gets the subnet_cidr_id of this MasterSlaveMember.
+        r"""Gets the subnet_cidr_id of this MasterSlaveMember.
 
         后端服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  使用说明：该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
 
@@ -204,7 +204,7 @@ class MasterSlaveMember:
 
     @subnet_cidr_id.setter
     def subnet_cidr_id(self, subnet_cidr_id):
-        """Sets the subnet_cidr_id of this MasterSlaveMember.
+        r"""Sets the subnet_cidr_id of this MasterSlaveMember.
 
         后端服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  使用说明：该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
 
@@ -215,7 +215,7 @@ class MasterSlaveMember:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this MasterSlaveMember.
+        r"""Gets the protocol_port of this MasterSlaveMember.
 
         后端服务器业务端口。 >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
@@ -226,7 +226,7 @@ class MasterSlaveMember:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this MasterSlaveMember.
+        r"""Sets the protocol_port of this MasterSlaveMember.
 
         后端服务器业务端口。 >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
@@ -237,7 +237,7 @@ class MasterSlaveMember:
 
     @property
     def address(self):
-        """Gets the address of this MasterSlaveMember.
+        r"""Gets the address of this MasterSlaveMember.
 
         后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是私网IPv4或IPv6。 但必须在subnet_cidr_id对应的子网网段中。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
@@ -248,7 +248,7 @@ class MasterSlaveMember:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this MasterSlaveMember.
+        r"""Sets the address of this MasterSlaveMember.
 
         后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是私网IPv4或IPv6。 但必须在subnet_cidr_id对应的子网网段中。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
@@ -259,7 +259,7 @@ class MasterSlaveMember:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this MasterSlaveMember.
+        r"""Gets the ip_version of this MasterSlaveMember.
 
         当前后端服务器的IP地址版本，由后端系统自动根据传入的address字段确定。取值：v4、v6。
 
@@ -270,7 +270,7 @@ class MasterSlaveMember:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this MasterSlaveMember.
+        r"""Sets the ip_version of this MasterSlaveMember.
 
         当前后端服务器的IP地址版本，由后端系统自动根据传入的address字段确定。取值：v4、v6。
 
@@ -281,7 +281,7 @@ class MasterSlaveMember:
 
     @property
     def device_owner(self):
-        """Gets the device_owner of this MasterSlaveMember.
+        r"""Gets the device_owner of this MasterSlaveMember.
 
         设备所有者。  取值： - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  不支持该字段，请勿使用。
 
@@ -292,7 +292,7 @@ class MasterSlaveMember:
 
     @device_owner.setter
     def device_owner(self, device_owner):
-        """Sets the device_owner of this MasterSlaveMember.
+        r"""Sets the device_owner of this MasterSlaveMember.
 
         设备所有者。  取值： - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  不支持该字段，请勿使用。
 
@@ -303,7 +303,7 @@ class MasterSlaveMember:
 
     @property
     def device_id(self):
-        """Gets the device_id of this MasterSlaveMember.
+        r"""Gets the device_id of this MasterSlaveMember.
 
         关联的ECS ID，为空表示后端服务器未关联到ECS。  不支持该字段，请勿使用。
 
@@ -314,7 +314,7 @@ class MasterSlaveMember:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this MasterSlaveMember.
+        r"""Sets the device_id of this MasterSlaveMember.
 
         关联的ECS ID，为空表示后端服务器未关联到ECS。  不支持该字段，请勿使用。
 
@@ -325,7 +325,7 @@ class MasterSlaveMember:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this MasterSlaveMember.
+        r"""Gets the operating_status of this MasterSlaveMember.
 
         后端服务器的健康状态。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
 
@@ -336,7 +336,7 @@ class MasterSlaveMember:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this MasterSlaveMember.
+        r"""Sets the operating_status of this MasterSlaveMember.
 
         后端服务器的健康状态。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
 
@@ -347,7 +347,7 @@ class MasterSlaveMember:
 
     @property
     def reason(self):
-        """Gets the reason of this MasterSlaveMember.
+        r"""Gets the reason of this MasterSlaveMember.
 
         :return: The reason of this MasterSlaveMember.
         :rtype: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
@@ -356,7 +356,7 @@ class MasterSlaveMember:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this MasterSlaveMember.
+        r"""Sets the reason of this MasterSlaveMember.
 
         :param reason: The reason of this MasterSlaveMember.
         :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
@@ -365,7 +365,7 @@ class MasterSlaveMember:
 
     @property
     def member_type(self):
-        """Gets the member_type of this MasterSlaveMember.
+        r"""Gets the member_type of this MasterSlaveMember.
 
         后端服务器的类型。  取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
 
@@ -376,7 +376,7 @@ class MasterSlaveMember:
 
     @member_type.setter
     def member_type(self, member_type):
-        """Sets the member_type of this MasterSlaveMember.
+        r"""Sets the member_type of this MasterSlaveMember.
 
         后端服务器的类型。  取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
 
@@ -387,7 +387,7 @@ class MasterSlaveMember:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this MasterSlaveMember.
+        r"""Gets the instance_id of this MasterSlaveMember.
 
         member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）
 
@@ -398,7 +398,7 @@ class MasterSlaveMember:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this MasterSlaveMember.
+        r"""Sets the instance_id of this MasterSlaveMember.
 
         member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）
 
@@ -409,7 +409,7 @@ class MasterSlaveMember:
 
     @property
     def role(self):
-        """Gets the role of this MasterSlaveMember.
+        r"""Gets the role of this MasterSlaveMember.
 
         后端服务器的主备状态。
 
@@ -420,7 +420,7 @@ class MasterSlaveMember:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this MasterSlaveMember.
+        r"""Sets the role of this MasterSlaveMember.
 
         后端服务器的主备状态。
 
@@ -431,7 +431,7 @@ class MasterSlaveMember:
 
     @property
     def status(self):
-        """Gets the status of this MasterSlaveMember.
+        r"""Gets the status of this MasterSlaveMember.
 
         后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
 
@@ -442,7 +442,7 @@ class MasterSlaveMember:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MasterSlaveMember.
+        r"""Sets the status of this MasterSlaveMember.
 
         后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
 

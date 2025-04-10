@@ -31,7 +31,7 @@ class RestoreTableRequestBody:
     }
 
     def __init__(self, case_sensitive=None, database=None, restore_table_list=None, target_table_list=None):
-        """RestoreTableRequestBody
+        r"""RestoreTableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class RestoreTableRequestBody:
 
     @property
     def case_sensitive(self):
-        """Gets the case_sensitive of this RestoreTableRequestBody.
+        r"""Gets the case_sensitive of this RestoreTableRequestBody.
 
         名称是否区分大小写
 
@@ -71,7 +71,7 @@ class RestoreTableRequestBody:
 
     @case_sensitive.setter
     def case_sensitive(self, case_sensitive):
-        """Sets the case_sensitive of this RestoreTableRequestBody.
+        r"""Sets the case_sensitive of this RestoreTableRequestBody.
 
         名称是否区分大小写
 
@@ -82,7 +82,7 @@ class RestoreTableRequestBody:
 
     @property
     def database(self):
-        """Gets the database of this RestoreTableRequestBody.
+        r"""Gets the database of this RestoreTableRequestBody.
 
         数据库名称
 
@@ -93,7 +93,7 @@ class RestoreTableRequestBody:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this RestoreTableRequestBody.
+        r"""Sets the database of this RestoreTableRequestBody.
 
         数据库名称
 
@@ -104,7 +104,7 @@ class RestoreTableRequestBody:
 
     @property
     def restore_table_list(self):
-        """Gets the restore_table_list of this RestoreTableRequestBody.
+        r"""Gets the restore_table_list of this RestoreTableRequestBody.
 
         源表信息
 
@@ -115,7 +115,7 @@ class RestoreTableRequestBody:
 
     @restore_table_list.setter
     def restore_table_list(self, restore_table_list):
-        """Sets the restore_table_list of this RestoreTableRequestBody.
+        r"""Sets the restore_table_list of this RestoreTableRequestBody.
 
         源表信息
 
@@ -126,7 +126,7 @@ class RestoreTableRequestBody:
 
     @property
     def target_table_list(self):
-        """Gets the target_table_list of this RestoreTableRequestBody.
+        r"""Gets the target_table_list of this RestoreTableRequestBody.
 
         目的表信息
 
@@ -137,7 +137,7 @@ class RestoreTableRequestBody:
 
     @target_table_list.setter
     def target_table_list(self, target_table_list):
-        """Sets the target_table_list of this RestoreTableRequestBody.
+        r"""Sets the target_table_list of this RestoreTableRequestBody.
 
         目的表信息
 

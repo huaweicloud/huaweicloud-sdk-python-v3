@@ -33,7 +33,7 @@ class LoadBalancerStatusPolicy:
     }
 
     def __init__(self, action=None, id=None, provisioning_status=None, name=None, rules=None):
-        """LoadBalancerStatusPolicy
+        r"""LoadBalancerStatusPolicy
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class LoadBalancerStatusPolicy:
 
     @property
     def action(self):
-        """Gets the action of this LoadBalancerStatusPolicy.
+        r"""Gets the action of this LoadBalancerStatusPolicy.
 
         匹配后动作。  取值： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
 
@@ -82,7 +82,7 @@ class LoadBalancerStatusPolicy:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this LoadBalancerStatusPolicy.
+        r"""Sets the action of this LoadBalancerStatusPolicy.
 
         匹配后动作。  取值： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
 
@@ -93,7 +93,7 @@ class LoadBalancerStatusPolicy:
 
     @property
     def id(self):
-        """Gets the id of this LoadBalancerStatusPolicy.
+        r"""Gets the id of this LoadBalancerStatusPolicy.
 
         转发策略ID。
 
@@ -104,7 +104,7 @@ class LoadBalancerStatusPolicy:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LoadBalancerStatusPolicy.
+        r"""Sets the id of this LoadBalancerStatusPolicy.
 
         转发策略ID。
 
@@ -115,7 +115,7 @@ class LoadBalancerStatusPolicy:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this LoadBalancerStatusPolicy.
+        r"""Gets the provisioning_status of this LoadBalancerStatusPolicy.
 
         转发策略的配置状态。  取值范围： - ACTIVE: 默认值，表示正常。 [- ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)
 
@@ -126,7 +126,7 @@ class LoadBalancerStatusPolicy:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this LoadBalancerStatusPolicy.
+        r"""Sets the provisioning_status of this LoadBalancerStatusPolicy.
 
         转发策略的配置状态。  取值范围： - ACTIVE: 默认值，表示正常。 [- ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)
 
@@ -137,7 +137,7 @@ class LoadBalancerStatusPolicy:
 
     @property
     def name(self):
-        """Gets the name of this LoadBalancerStatusPolicy.
+        r"""Gets the name of this LoadBalancerStatusPolicy.
 
         转发策略名称。
 
@@ -148,7 +148,7 @@ class LoadBalancerStatusPolicy:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LoadBalancerStatusPolicy.
+        r"""Sets the name of this LoadBalancerStatusPolicy.
 
         转发策略名称。
 
@@ -159,7 +159,7 @@ class LoadBalancerStatusPolicy:
 
     @property
     def rules(self):
-        """Gets the rules of this LoadBalancerStatusPolicy.
+        r"""Gets the rules of this LoadBalancerStatusPolicy.
 
         转发规则状态信息。
 
@@ -170,7 +170,7 @@ class LoadBalancerStatusPolicy:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this LoadBalancerStatusPolicy.
+        r"""Sets the rules of this LoadBalancerStatusPolicy.
 
         转发规则状态信息。
 

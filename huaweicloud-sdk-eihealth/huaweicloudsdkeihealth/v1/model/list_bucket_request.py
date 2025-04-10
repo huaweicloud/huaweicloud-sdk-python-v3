@@ -25,7 +25,7 @@ class ListBucketRequest:
     }
 
     def __init__(self, eihealth_project_id=None):
-        """ListBucketRequest
+        r"""ListBucketRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListBucketRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListBucketRequest.
+        r"""Gets the eihealth_project_id of this ListBucketRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -53,7 +53,7 @@ class ListBucketRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListBucketRequest.
+        r"""Sets the eihealth_project_id of this ListBucketRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 

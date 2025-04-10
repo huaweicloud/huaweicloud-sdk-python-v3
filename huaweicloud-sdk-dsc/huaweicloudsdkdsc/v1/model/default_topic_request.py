@@ -31,7 +31,7 @@ class DefaultTopicRequest:
     }
 
     def __init__(self, id=None, project_id=None, status=None, topic_urn=None):
-        """DefaultTopicRequest
+        r"""DefaultTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class DefaultTopicRequest:
 
     @property
     def id(self):
-        """Gets the id of this DefaultTopicRequest.
+        r"""Gets the id of this DefaultTopicRequest.
 
         DSC告警主题ID（非消息通知服务主题ID）
 
@@ -73,7 +73,7 @@ class DefaultTopicRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DefaultTopicRequest.
+        r"""Sets the id of this DefaultTopicRequest.
 
         DSC告警主题ID（非消息通知服务主题ID）
 
@@ -84,7 +84,7 @@ class DefaultTopicRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DefaultTopicRequest.
+        r"""Gets the project_id of this DefaultTopicRequest.
 
         项目ID
 
@@ -95,7 +95,7 @@ class DefaultTopicRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DefaultTopicRequest.
+        r"""Sets the project_id of this DefaultTopicRequest.
 
         项目ID
 
@@ -106,7 +106,7 @@ class DefaultTopicRequest:
 
     @property
     def status(self):
-        """Gets the status of this DefaultTopicRequest.
+        r"""Gets the status of this DefaultTopicRequest.
 
         告警通知状态
 
@@ -117,7 +117,7 @@ class DefaultTopicRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DefaultTopicRequest.
+        r"""Sets the status of this DefaultTopicRequest.
 
         告警通知状态
 
@@ -128,7 +128,7 @@ class DefaultTopicRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this DefaultTopicRequest.
+        r"""Gets the topic_urn of this DefaultTopicRequest.
 
         消息通知主题的唯一资源标识符
 
@@ -139,7 +139,7 @@ class DefaultTopicRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this DefaultTopicRequest.
+        r"""Sets the topic_urn of this DefaultTopicRequest.
 
         消息通知主题的唯一资源标识符
 

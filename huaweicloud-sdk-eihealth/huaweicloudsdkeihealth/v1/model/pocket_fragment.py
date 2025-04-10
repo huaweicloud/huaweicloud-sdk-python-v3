@@ -37,7 +37,7 @@ class PocketFragment:
     }
 
     def __init__(self, source=None, url=None, format=None, name=None, data=None, edited=None, label_sites=None):
-        """PocketFragment
+        r"""PocketFragment
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PocketFragment:
 
     @property
     def source(self):
-        """Gets the source of this PocketFragment.
+        r"""Gets the source of this PocketFragment.
 
         :return: The source of this PocketFragment.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
@@ -94,7 +94,7 @@ class PocketFragment:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this PocketFragment.
+        r"""Sets the source of this PocketFragment.
 
         :param source: The source of this PocketFragment.
         :type source: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
@@ -103,7 +103,7 @@ class PocketFragment:
 
     @property
     def url(self):
-        """Gets the url of this PocketFragment.
+        r"""Gets the url of this PocketFragment.
 
         文件URL，当数据源为外部网络数据时为https地址；用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -114,7 +114,7 @@ class PocketFragment:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this PocketFragment.
+        r"""Sets the url of this PocketFragment.
 
         文件URL，当数据源为外部网络数据时为https地址；用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -125,7 +125,7 @@ class PocketFragment:
 
     @property
     def format(self):
-        """Gets the format of this PocketFragment.
+        r"""Gets the format of this PocketFragment.
 
         文件格式，支持PDB、SDF、MOL2、SMI，仅数据源为RAW时提供
 
@@ -136,7 +136,7 @@ class PocketFragment:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this PocketFragment.
+        r"""Sets the format of this PocketFragment.
 
         文件格式，支持PDB、SDF、MOL2、SMI，仅数据源为RAW时提供
 
@@ -147,7 +147,7 @@ class PocketFragment:
 
     @property
     def name(self):
-        """Gets the name of this PocketFragment.
+        r"""Gets the name of this PocketFragment.
 
         原始配体名称，仅RAW类型时用于配体名称标识
 
@@ -158,7 +158,7 @@ class PocketFragment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PocketFragment.
+        r"""Sets the name of this PocketFragment.
 
         原始配体名称，仅RAW类型时用于配体名称标识
 
@@ -169,7 +169,7 @@ class PocketFragment:
 
     @property
     def data(self):
-        """Gets the data of this PocketFragment.
+        r"""Gets the data of this PocketFragment.
 
         文件原始数据，仅数据源为RAW时提供
 
@@ -180,7 +180,7 @@ class PocketFragment:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this PocketFragment.
+        r"""Sets the data of this PocketFragment.
 
         文件原始数据，仅数据源为RAW时提供
 
@@ -191,7 +191,7 @@ class PocketFragment:
 
     @property
     def edited(self):
-        """Gets the edited of this PocketFragment.
+        r"""Gets the edited of this PocketFragment.
 
         :return: The edited of this PocketFragment.
         :rtype: :class:`huaweicloudsdkeihealth.v1.EditedLigand`
@@ -200,7 +200,7 @@ class PocketFragment:
 
     @edited.setter
     def edited(self, edited):
-        """Sets the edited of this PocketFragment.
+        r"""Sets the edited of this PocketFragment.
 
         :param edited: The edited of this PocketFragment.
         :type edited: :class:`huaweicloudsdkeihealth.v1.EditedLigand`
@@ -209,7 +209,7 @@ class PocketFragment:
 
     @property
     def label_sites(self):
-        """Gets the label_sites of this PocketFragment.
+        r"""Gets the label_sites of this PocketFragment.
 
         :return: The label_sites of this PocketFragment.
         :rtype: :class:`huaweicloudsdkeihealth.v1.LabelSite`
@@ -218,7 +218,7 @@ class PocketFragment:
 
     @label_sites.setter
     def label_sites(self, label_sites):
-        """Sets the label_sites of this PocketFragment.
+        r"""Sets the label_sites of this PocketFragment.
 
         :param label_sites: The label_sites of this PocketFragment.
         :type label_sites: :class:`huaweicloudsdkeihealth.v1.LabelSite`

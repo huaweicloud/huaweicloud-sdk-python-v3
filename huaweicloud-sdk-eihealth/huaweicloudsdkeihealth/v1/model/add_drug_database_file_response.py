@@ -24,7 +24,7 @@ class AddDrugDatabaseFileResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddDrugDatabaseFileResponse
+        r"""AddDrugDatabaseFileResponse
 
         The model defined in huaweicloud sdk
 

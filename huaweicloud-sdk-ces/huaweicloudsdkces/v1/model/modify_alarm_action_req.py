@@ -25,7 +25,7 @@ class ModifyAlarmActionReq:
     }
 
     def __init__(self, alarm_enabled=None):
-        """ModifyAlarmActionReq
+        r"""ModifyAlarmActionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyAlarmActionReq:
 
     @property
     def alarm_enabled(self):
-        """Gets the alarm_enabled of this ModifyAlarmActionReq.
+        r"""Gets the alarm_enabled of this ModifyAlarmActionReq.
 
         告警是否启用。true：启动。false：停止
 
@@ -53,7 +53,7 @@ class ModifyAlarmActionReq:
 
     @alarm_enabled.setter
     def alarm_enabled(self, alarm_enabled):
-        """Sets the alarm_enabled of this ModifyAlarmActionReq.
+        r"""Sets the alarm_enabled of this ModifyAlarmActionReq.
 
         告警是否启用。true：启动。false：停止
 

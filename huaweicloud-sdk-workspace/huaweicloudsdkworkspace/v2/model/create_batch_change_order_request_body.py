@@ -37,7 +37,7 @@ class CreateBatchChangeOrderRequestBody:
     }
 
     def __init__(self, type=None, add_volume_param=None, extend_volume_param=None, resize_param=None, change_image_param=None, add_sub_resources_param=None, delete_sub_resources_param=None):
-        """CreateBatchChangeOrderRequestBody
+        r"""CreateBatchChangeOrderRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CreateBatchChangeOrderRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateBatchChangeOrderRequestBody.
+        r"""Gets the type of this CreateBatchChangeOrderRequestBody.
 
         下单类型。  - ADD_VOLUME：增加磁盘  - EXTEND_VOLUME：扩容磁盘  - RESIZE：变更规格  - CHANGE_IMAGE：切换镜像  - ADD_SUB_RESOURCES：购买桌面协同资源  - DELETE_SUB_RESOURCES：退订桌面协同资源
 
@@ -96,7 +96,7 @@ class CreateBatchChangeOrderRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateBatchChangeOrderRequestBody.
+        r"""Sets the type of this CreateBatchChangeOrderRequestBody.
 
         下单类型。  - ADD_VOLUME：增加磁盘  - EXTEND_VOLUME：扩容磁盘  - RESIZE：变更规格  - CHANGE_IMAGE：切换镜像  - ADD_SUB_RESOURCES：购买桌面协同资源  - DELETE_SUB_RESOURCES：退订桌面协同资源
 
@@ -107,7 +107,7 @@ class CreateBatchChangeOrderRequestBody:
 
     @property
     def add_volume_param(self):
-        """Gets the add_volume_param of this CreateBatchChangeOrderRequestBody.
+        r"""Gets the add_volume_param of this CreateBatchChangeOrderRequestBody.
 
         :return: The add_volume_param of this CreateBatchChangeOrderRequestBody.
         :rtype: :class:`huaweicloudsdkworkspace.v2.EstimateAddVolumeRequestBody`
@@ -116,7 +116,7 @@ class CreateBatchChangeOrderRequestBody:
 
     @add_volume_param.setter
     def add_volume_param(self, add_volume_param):
-        """Sets the add_volume_param of this CreateBatchChangeOrderRequestBody.
+        r"""Sets the add_volume_param of this CreateBatchChangeOrderRequestBody.
 
         :param add_volume_param: The add_volume_param of this CreateBatchChangeOrderRequestBody.
         :type add_volume_param: :class:`huaweicloudsdkworkspace.v2.EstimateAddVolumeRequestBody`
@@ -125,7 +125,7 @@ class CreateBatchChangeOrderRequestBody:
 
     @property
     def extend_volume_param(self):
-        """Gets the extend_volume_param of this CreateBatchChangeOrderRequestBody.
+        r"""Gets the extend_volume_param of this CreateBatchChangeOrderRequestBody.
 
         :return: The extend_volume_param of this CreateBatchChangeOrderRequestBody.
         :rtype: :class:`huaweicloudsdkworkspace.v2.EstimateExtendVolumeRequestBody`
@@ -134,7 +134,7 @@ class CreateBatchChangeOrderRequestBody:
 
     @extend_volume_param.setter
     def extend_volume_param(self, extend_volume_param):
-        """Sets the extend_volume_param of this CreateBatchChangeOrderRequestBody.
+        r"""Sets the extend_volume_param of this CreateBatchChangeOrderRequestBody.
 
         :param extend_volume_param: The extend_volume_param of this CreateBatchChangeOrderRequestBody.
         :type extend_volume_param: :class:`huaweicloudsdkworkspace.v2.EstimateExtendVolumeRequestBody`
@@ -143,7 +143,7 @@ class CreateBatchChangeOrderRequestBody:
 
     @property
     def resize_param(self):
-        """Gets the resize_param of this CreateBatchChangeOrderRequestBody.
+        r"""Gets the resize_param of this CreateBatchChangeOrderRequestBody.
 
         :return: The resize_param of this CreateBatchChangeOrderRequestBody.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateResizeOrderRequestBody`
@@ -152,7 +152,7 @@ class CreateBatchChangeOrderRequestBody:
 
     @resize_param.setter
     def resize_param(self, resize_param):
-        """Sets the resize_param of this CreateBatchChangeOrderRequestBody.
+        r"""Sets the resize_param of this CreateBatchChangeOrderRequestBody.
 
         :param resize_param: The resize_param of this CreateBatchChangeOrderRequestBody.
         :type resize_param: :class:`huaweicloudsdkworkspace.v2.CreateResizeOrderRequestBody`
@@ -161,7 +161,7 @@ class CreateBatchChangeOrderRequestBody:
 
     @property
     def change_image_param(self):
-        """Gets the change_image_param of this CreateBatchChangeOrderRequestBody.
+        r"""Gets the change_image_param of this CreateBatchChangeOrderRequestBody.
 
         :return: The change_image_param of this CreateBatchChangeOrderRequestBody.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateChangeImageOrderRequestBody`
@@ -170,7 +170,7 @@ class CreateBatchChangeOrderRequestBody:
 
     @change_image_param.setter
     def change_image_param(self, change_image_param):
-        """Sets the change_image_param of this CreateBatchChangeOrderRequestBody.
+        r"""Sets the change_image_param of this CreateBatchChangeOrderRequestBody.
 
         :param change_image_param: The change_image_param of this CreateBatchChangeOrderRequestBody.
         :type change_image_param: :class:`huaweicloudsdkworkspace.v2.CreateChangeImageOrderRequestBody`
@@ -179,7 +179,7 @@ class CreateBatchChangeOrderRequestBody:
 
     @property
     def add_sub_resources_param(self):
-        """Gets the add_sub_resources_param of this CreateBatchChangeOrderRequestBody.
+        r"""Gets the add_sub_resources_param of this CreateBatchChangeOrderRequestBody.
 
         :return: The add_sub_resources_param of this CreateBatchChangeOrderRequestBody.
         :rtype: :class:`huaweicloudsdkworkspace.v2.EstimateAddSubResourcesRequestBody`
@@ -188,7 +188,7 @@ class CreateBatchChangeOrderRequestBody:
 
     @add_sub_resources_param.setter
     def add_sub_resources_param(self, add_sub_resources_param):
-        """Sets the add_sub_resources_param of this CreateBatchChangeOrderRequestBody.
+        r"""Sets the add_sub_resources_param of this CreateBatchChangeOrderRequestBody.
 
         :param add_sub_resources_param: The add_sub_resources_param of this CreateBatchChangeOrderRequestBody.
         :type add_sub_resources_param: :class:`huaweicloudsdkworkspace.v2.EstimateAddSubResourcesRequestBody`
@@ -197,7 +197,7 @@ class CreateBatchChangeOrderRequestBody:
 
     @property
     def delete_sub_resources_param(self):
-        """Gets the delete_sub_resources_param of this CreateBatchChangeOrderRequestBody.
+        r"""Gets the delete_sub_resources_param of this CreateBatchChangeOrderRequestBody.
 
         :return: The delete_sub_resources_param of this CreateBatchChangeOrderRequestBody.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDeleteSubResourcesOrderRequestBody`
@@ -206,7 +206,7 @@ class CreateBatchChangeOrderRequestBody:
 
     @delete_sub_resources_param.setter
     def delete_sub_resources_param(self, delete_sub_resources_param):
-        """Sets the delete_sub_resources_param of this CreateBatchChangeOrderRequestBody.
+        r"""Sets the delete_sub_resources_param of this CreateBatchChangeOrderRequestBody.
 
         :param delete_sub_resources_param: The delete_sub_resources_param of this CreateBatchChangeOrderRequestBody.
         :type delete_sub_resources_param: :class:`huaweicloudsdkworkspace.v2.CreateDeleteSubResourcesOrderRequestBody`

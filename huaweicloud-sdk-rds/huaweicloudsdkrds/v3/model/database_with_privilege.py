@@ -27,7 +27,7 @@ class DatabaseWithPrivilege:
     }
 
     def __init__(self, name=None, readonly=None):
-        """DatabaseWithPrivilege
+        r"""DatabaseWithPrivilege
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DatabaseWithPrivilege:
 
     @property
     def name(self):
-        """Gets the name of this DatabaseWithPrivilege.
+        r"""Gets the name of this DatabaseWithPrivilege.
 
         数据库名称。
 
@@ -59,7 +59,7 @@ class DatabaseWithPrivilege:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatabaseWithPrivilege.
+        r"""Sets the name of this DatabaseWithPrivilege.
 
         数据库名称。
 
@@ -70,7 +70,7 @@ class DatabaseWithPrivilege:
 
     @property
     def readonly(self):
-        """Gets the readonly of this DatabaseWithPrivilege.
+        r"""Gets the readonly of this DatabaseWithPrivilege.
 
         是否为只读权限。
 
@@ -81,7 +81,7 @@ class DatabaseWithPrivilege:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this DatabaseWithPrivilege.
+        r"""Sets the readonly of this DatabaseWithPrivilege.
 
         是否为只读权限。
 

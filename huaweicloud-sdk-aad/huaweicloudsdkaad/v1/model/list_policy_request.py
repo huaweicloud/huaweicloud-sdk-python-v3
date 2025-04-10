@@ -29,7 +29,7 @@ class ListPolicyRequest:
     }
 
     def __init__(self, offset=None, limit=None, policy_name=None):
-        """ListPolicyRequest
+        r"""ListPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListPolicyRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPolicyRequest.
+        r"""Gets the offset of this ListPolicyRequest.
 
         开始查询的偏移量,默认值:0
 
@@ -68,7 +68,7 @@ class ListPolicyRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPolicyRequest.
+        r"""Sets the offset of this ListPolicyRequest.
 
         开始查询的偏移量,默认值:0
 
@@ -79,7 +79,7 @@ class ListPolicyRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPolicyRequest.
+        r"""Gets the limit of this ListPolicyRequest.
 
         每页显示的条目数量,默认值:2000
 
@@ -90,7 +90,7 @@ class ListPolicyRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPolicyRequest.
+        r"""Sets the limit of this ListPolicyRequest.
 
         每页显示的条目数量,默认值:2000
 
@@ -101,7 +101,7 @@ class ListPolicyRequest:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this ListPolicyRequest.
+        r"""Gets the policy_name of this ListPolicyRequest.
 
         策略名
 
@@ -112,7 +112,7 @@ class ListPolicyRequest:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this ListPolicyRequest.
+        r"""Sets the policy_name of this ListPolicyRequest.
 
         策略名
 

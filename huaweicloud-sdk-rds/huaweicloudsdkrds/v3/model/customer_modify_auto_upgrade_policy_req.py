@@ -25,7 +25,7 @@ class CustomerModifyAutoUpgradePolicyReq:
     }
 
     def __init__(self, switch_option=None):
-        """CustomerModifyAutoUpgradePolicyReq
+        r"""CustomerModifyAutoUpgradePolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CustomerModifyAutoUpgradePolicyReq:
 
     @property
     def switch_option(self):
-        """Gets the switch_option of this CustomerModifyAutoUpgradePolicyReq.
+        r"""Gets the switch_option of this CustomerModifyAutoUpgradePolicyReq.
 
         自动小版本升级开关选项 true：打开自动小版本升级 false：关闭自动小版本升级
 
@@ -53,7 +53,7 @@ class CustomerModifyAutoUpgradePolicyReq:
 
     @switch_option.setter
     def switch_option(self, switch_option):
-        """Sets the switch_option of this CustomerModifyAutoUpgradePolicyReq.
+        r"""Sets the switch_option of this CustomerModifyAutoUpgradePolicyReq.
 
         自动小版本升级开关选项 true：打开自动小版本升级 false：关闭自动小版本升级
 

@@ -25,7 +25,7 @@ class ListAgentStatusRequest:
     }
 
     def __init__(self, body=None):
-        """ListAgentStatusRequest
+        r"""ListAgentStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListAgentStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAgentStatusRequest.
+        r"""Gets the body of this ListAgentStatusRequest.
 
         :return: The body of this ListAgentStatusRequest.
         :rtype: :class:`huaweicloudsdkces.v3.ListAgentStatusRequestBody`
@@ -52,7 +52,7 @@ class ListAgentStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAgentStatusRequest.
+        r"""Sets the body of this ListAgentStatusRequest.
 
         :param body: The body of this ListAgentStatusRequest.
         :type body: :class:`huaweicloudsdkces.v3.ListAgentStatusRequestBody`

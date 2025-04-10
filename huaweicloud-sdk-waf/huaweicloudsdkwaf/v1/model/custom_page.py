@@ -29,7 +29,7 @@ class CustomPage:
     }
 
     def __init__(self, status_code=None, content_type=None, content=None):
-        """CustomPage
+        r"""CustomPage
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CustomPage:
 
     @property
     def status_code(self):
-        """Gets the status_code of this CustomPage.
+        r"""Gets the status_code of this CustomPage.
 
         返回状态码
 
@@ -65,7 +65,7 @@ class CustomPage:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this CustomPage.
+        r"""Sets the status_code of this CustomPage.
 
         返回状态码
 
@@ -76,7 +76,7 @@ class CustomPage:
 
     @property
     def content_type(self):
-        """Gets the content_type of this CustomPage.
+        r"""Gets the content_type of this CustomPage.
 
         “自定义”告警页面内容类型，可选择text/html、text/xml和application/json三种类型
 
@@ -87,7 +87,7 @@ class CustomPage:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this CustomPage.
+        r"""Sets the content_type of this CustomPage.
 
         “自定义”告警页面内容类型，可选择text/html、text/xml和application/json三种类型
 
@@ -98,7 +98,7 @@ class CustomPage:
 
     @property
     def content(self):
-        """Gets the content of this CustomPage.
+        r"""Gets the content of this CustomPage.
 
         根据选择的“页面类型”配置对应的页面内容，具体示例可以参考“Web应用防火墙 WAF”用户手册
 
@@ -109,7 +109,7 @@ class CustomPage:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CustomPage.
+        r"""Sets the content of this CustomPage.
 
         根据选择的“页面类型”配置对应的页面内容，具体示例可以参考“Web应用防火墙 WAF”用户手册
 

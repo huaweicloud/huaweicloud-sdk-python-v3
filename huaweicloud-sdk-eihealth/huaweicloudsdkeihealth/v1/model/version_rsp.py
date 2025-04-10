@@ -45,7 +45,7 @@ class VersionRsp:
     }
 
     def __init__(self, version=None, publisher=None, description=None, summary=None, license=None, status=None, failed_reason=None, labels=None, picture=None, create_time=None, update_time=None):
-        """VersionRsp
+        r"""VersionRsp
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class VersionRsp:
 
     @property
     def version(self):
-        """Gets the version of this VersionRsp.
+        r"""Gets the version of this VersionRsp.
 
         资产版本号
 
@@ -124,7 +124,7 @@ class VersionRsp:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this VersionRsp.
+        r"""Sets the version of this VersionRsp.
 
         资产版本号
 
@@ -135,7 +135,7 @@ class VersionRsp:
 
     @property
     def publisher(self):
-        """Gets the publisher of this VersionRsp.
+        r"""Gets the publisher of this VersionRsp.
 
         发布者
 
@@ -146,7 +146,7 @@ class VersionRsp:
 
     @publisher.setter
     def publisher(self, publisher):
-        """Sets the publisher of this VersionRsp.
+        r"""Sets the publisher of this VersionRsp.
 
         发布者
 
@@ -157,7 +157,7 @@ class VersionRsp:
 
     @property
     def description(self):
-        """Gets the description of this VersionRsp.
+        r"""Gets the description of this VersionRsp.
 
         资产长描述
 
@@ -168,7 +168,7 @@ class VersionRsp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VersionRsp.
+        r"""Sets the description of this VersionRsp.
 
         资产长描述
 
@@ -179,7 +179,7 @@ class VersionRsp:
 
     @property
     def summary(self):
-        """Gets the summary of this VersionRsp.
+        r"""Gets the summary of this VersionRsp.
 
         资产短描述
 
@@ -190,7 +190,7 @@ class VersionRsp:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this VersionRsp.
+        r"""Sets the summary of this VersionRsp.
 
         资产短描述
 
@@ -201,7 +201,7 @@ class VersionRsp:
 
     @property
     def license(self):
-        """Gets the license of this VersionRsp.
+        r"""Gets the license of this VersionRsp.
 
         许可证
 
@@ -212,7 +212,7 @@ class VersionRsp:
 
     @license.setter
     def license(self, license):
-        """Sets the license of this VersionRsp.
+        r"""Sets the license of this VersionRsp.
 
         许可证
 
@@ -223,7 +223,7 @@ class VersionRsp:
 
     @property
     def status(self):
-        """Gets the status of this VersionRsp.
+        r"""Gets the status of this VersionRsp.
 
         资产状态
 
@@ -234,7 +234,7 @@ class VersionRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VersionRsp.
+        r"""Sets the status of this VersionRsp.
 
         资产状态
 
@@ -245,7 +245,7 @@ class VersionRsp:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this VersionRsp.
+        r"""Gets the failed_reason of this VersionRsp.
 
         资产发布失败原因
 
@@ -256,7 +256,7 @@ class VersionRsp:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this VersionRsp.
+        r"""Sets the failed_reason of this VersionRsp.
 
         资产发布失败原因
 
@@ -267,7 +267,7 @@ class VersionRsp:
 
     @property
     def labels(self):
-        """Gets the labels of this VersionRsp.
+        r"""Gets the labels of this VersionRsp.
 
         资产标签列表
 
@@ -278,7 +278,7 @@ class VersionRsp:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this VersionRsp.
+        r"""Sets the labels of this VersionRsp.
 
         资产标签列表
 
@@ -289,7 +289,7 @@ class VersionRsp:
 
     @property
     def picture(self):
-        """Gets the picture of this VersionRsp.
+        r"""Gets the picture of this VersionRsp.
 
         资产封面图访问链接
 
@@ -300,7 +300,7 @@ class VersionRsp:
 
     @picture.setter
     def picture(self, picture):
-        """Sets the picture of this VersionRsp.
+        r"""Sets the picture of this VersionRsp.
 
         资产封面图访问链接
 
@@ -311,7 +311,7 @@ class VersionRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this VersionRsp.
+        r"""Gets the create_time of this VersionRsp.
 
         创建时间
 
@@ -322,7 +322,7 @@ class VersionRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this VersionRsp.
+        r"""Sets the create_time of this VersionRsp.
 
         创建时间
 
@@ -333,7 +333,7 @@ class VersionRsp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this VersionRsp.
+        r"""Gets the update_time of this VersionRsp.
 
         更新时间
 
@@ -344,7 +344,7 @@ class VersionRsp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this VersionRsp.
+        r"""Sets the update_time of this VersionRsp.
 
         更新时间
 

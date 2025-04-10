@@ -117,7 +117,7 @@ class DirectConnect:
     }
 
     def __init__(self, id=None, tenant_id=None, name=None, description=None, port_type=None, bandwidth=None, location=None, peer_location=None, device_id=None, type=None, hosting_id=None, charge_mode=None, provider=None, admin_state_up=None, vlan=None, status=None, apply_time=None, create_time=None, provider_status=None, peer_port_type=None, peer_provider=None, order_id=None, product_id=None, spec_code=None, period_type=None, period_num=None, vgw_type=None, lag_id=None, signed_agreement_status=None, signed_agreement_time=None, enterprise_project_id=None, tags=None, locales=None, support_feature=None, ies_id=None, reason=None, email=None, onestop_product_id=None, building_line_product_id=None, last_onestop_product_id=None, last_building_line_product_id=None, modified_bandwidth=None, change_mode=None, onestopdc_status=None, public_border_group=None, auto_renew=None, ratio_95peak=None):
-        """DirectConnect
+        r"""DirectConnect
 
         The model defined in huaweicloud sdk
 
@@ -365,7 +365,7 @@ class DirectConnect:
 
     @property
     def id(self):
-        """Gets the id of this DirectConnect.
+        r"""Gets the id of this DirectConnect.
 
         物理专线标识符ID
 
@@ -376,7 +376,7 @@ class DirectConnect:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DirectConnect.
+        r"""Sets the id of this DirectConnect.
 
         物理专线标识符ID
 
@@ -387,7 +387,7 @@ class DirectConnect:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this DirectConnect.
+        r"""Gets the tenant_id of this DirectConnect.
 
         实例所属项目ID。
 
@@ -398,7 +398,7 @@ class DirectConnect:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this DirectConnect.
+        r"""Sets the tenant_id of this DirectConnect.
 
         实例所属项目ID。
 
@@ -409,7 +409,7 @@ class DirectConnect:
 
     @property
     def name(self):
-        """Gets the name of this DirectConnect.
+        r"""Gets the name of this DirectConnect.
 
         物理专线名字
 
@@ -420,7 +420,7 @@ class DirectConnect:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DirectConnect.
+        r"""Sets the name of this DirectConnect.
 
         物理专线名字
 
@@ -431,7 +431,7 @@ class DirectConnect:
 
     @property
     def description(self):
-        """Gets the description of this DirectConnect.
+        r"""Gets the description of this DirectConnect.
 
         物理专线描述信息
 
@@ -442,7 +442,7 @@ class DirectConnect:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DirectConnect.
+        r"""Sets the description of this DirectConnect.
 
         物理专线描述信息
 
@@ -453,7 +453,7 @@ class DirectConnect:
 
     @property
     def port_type(self):
-        """Gets the port_type of this DirectConnect.
+        r"""Gets the port_type of this DirectConnect.
 
         物理专线接入接口的类型，支持1G 10G 40G 100G
 
@@ -464,7 +464,7 @@ class DirectConnect:
 
     @port_type.setter
     def port_type(self, port_type):
-        """Sets the port_type of this DirectConnect.
+        r"""Sets the port_type of this DirectConnect.
 
         物理专线接入接口的类型，支持1G 10G 40G 100G
 
@@ -475,7 +475,7 @@ class DirectConnect:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this DirectConnect.
+        r"""Gets the bandwidth of this DirectConnect.
 
         物理专线接入带宽，单位Mbps。
 
@@ -486,7 +486,7 @@ class DirectConnect:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this DirectConnect.
+        r"""Sets the bandwidth of this DirectConnect.
 
         物理专线接入带宽，单位Mbps。
 
@@ -497,7 +497,7 @@ class DirectConnect:
 
     @property
     def location(self):
-        """Gets the location of this DirectConnect.
+        r"""Gets the location of this DirectConnect.
 
         专线的接入位置信息
 
@@ -508,7 +508,7 @@ class DirectConnect:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this DirectConnect.
+        r"""Sets the location of this DirectConnect.
 
         专线的接入位置信息
 
@@ -519,7 +519,7 @@ class DirectConnect:
 
     @property
     def peer_location(self):
-        """Gets the peer_location of this DirectConnect.
+        r"""Gets the peer_location of this DirectConnect.
 
         物理专线对端所在的物理位置，省/市/街道或IDC名字。
 
@@ -530,7 +530,7 @@ class DirectConnect:
 
     @peer_location.setter
     def peer_location(self, peer_location):
-        """Sets the peer_location of this DirectConnect.
+        r"""Sets the peer_location of this DirectConnect.
 
         物理专线对端所在的物理位置，省/市/街道或IDC名字。
 
@@ -541,7 +541,7 @@ class DirectConnect:
 
     @property
     def device_id(self):
-        """Gets the device_id of this DirectConnect.
+        r"""Gets the device_id of this DirectConnect.
 
         物理专线连接的设备的标识ID
 
@@ -552,7 +552,7 @@ class DirectConnect:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this DirectConnect.
+        r"""Sets the device_id of this DirectConnect.
 
         物理专线连接的设备的标识ID
 
@@ -563,7 +563,7 @@ class DirectConnect:
 
     @property
     def type(self):
-        """Gets the type of this DirectConnect.
+        r"""Gets the type of this DirectConnect.
 
         物理专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
 
@@ -574,7 +574,7 @@ class DirectConnect:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DirectConnect.
+        r"""Sets the type of this DirectConnect.
 
         物理专线的类型，类型包括标准(standard)，运营专线(hosting)，托管专线（hosted）[，一站式标准（onestop_standard），一站式托管（onestop_hosted）](tag:hws)。
 
@@ -585,7 +585,7 @@ class DirectConnect:
 
     @property
     def hosting_id(self):
-        """Gets the hosting_id of this DirectConnect.
+        r"""Gets the hosting_id of this DirectConnect.
 
         hosted物理专线对应的hosting物理专线的ID
 
@@ -596,7 +596,7 @@ class DirectConnect:
 
     @hosting_id.setter
     def hosting_id(self, hosting_id):
-        """Sets the hosting_id of this DirectConnect.
+        r"""Sets the hosting_id of this DirectConnect.
 
         hosted物理专线对应的hosting物理专线的ID
 
@@ -607,7 +607,7 @@ class DirectConnect:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this DirectConnect.
+        r"""Gets the charge_mode of this DirectConnect.
 
         计费模式：prepayment/bandwidth/traffic
 
@@ -618,7 +618,7 @@ class DirectConnect:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this DirectConnect.
+        r"""Sets the charge_mode of this DirectConnect.
 
         计费模式：prepayment/bandwidth/traffic
 
@@ -629,7 +629,7 @@ class DirectConnect:
 
     @property
     def provider(self):
-        """Gets the provider of this DirectConnect.
+        r"""Gets the provider of this DirectConnect.
 
         物理专线连接的线路运营商 [如：中国电信 中国联通 中国移动 中国其他 境外其他专线归属的运营商](tag:hws,hws_hk)
 
@@ -640,7 +640,7 @@ class DirectConnect:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this DirectConnect.
+        r"""Sets the provider of this DirectConnect.
 
         物理专线连接的线路运营商 [如：中国电信 中国联通 中国移动 中国其他 境外其他专线归属的运营商](tag:hws,hws_hk)
 
@@ -651,7 +651,7 @@ class DirectConnect:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this DirectConnect.
+        r"""Gets the admin_state_up of this DirectConnect.
 
         管理状态：true或false
 
@@ -662,7 +662,7 @@ class DirectConnect:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this DirectConnect.
+        r"""Sets the admin_state_up of this DirectConnect.
 
         管理状态：true或false
 
@@ -673,7 +673,7 @@ class DirectConnect:
 
     @property
     def vlan(self):
-        """Gets the vlan of this DirectConnect.
+        r"""Gets the vlan of this DirectConnect.
 
         为托管hosted物理专线分配的vlan。
 
@@ -684,7 +684,7 @@ class DirectConnect:
 
     @vlan.setter
     def vlan(self, vlan):
-        """Sets the vlan of this DirectConnect.
+        r"""Sets the vlan of this DirectConnect.
 
         为托管hosted物理专线分配的vlan。
 
@@ -695,7 +695,7 @@ class DirectConnect:
 
     @property
     def status(self):
-        """Gets the status of this DirectConnect.
+        r"""Gets the status of this DirectConnect.
 
         资源状态，合法值是： ACTIVE：专线已经开通完成且线路处于正常状态 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 BUILD：申请专线正在施工建设中 ERROR：专线配置异常，请联系客服解决相关问题。 PENDING_DELETE：正在删除 DELETED：已删除 APPLY：申请开通 DENY：客户需求无法满足，拒绝工勘。 PENDING_PAY：待支付 PAID：已支付 PENDING_SURVEY：待工勘 LEASED_LINE_DELIVERY：运营商施工
 
@@ -706,7 +706,7 @@ class DirectConnect:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DirectConnect.
+        r"""Sets the status of this DirectConnect.
 
         资源状态，合法值是： ACTIVE：专线已经开通完成且线路处于正常状态 DOWN：专线对应的端口处于down的状态，可能存在线路故障等异常。 BUILD：申请专线正在施工建设中 ERROR：专线配置异常，请联系客服解决相关问题。 PENDING_DELETE：正在删除 DELETED：已删除 APPLY：申请开通 DENY：客户需求无法满足，拒绝工勘。 PENDING_PAY：待支付 PAID：已支付 PENDING_SURVEY：待工勘 LEASED_LINE_DELIVERY：运营商施工
 
@@ -717,7 +717,7 @@ class DirectConnect:
 
     @property
     def apply_time(self):
-        """Gets the apply_time of this DirectConnect.
+        r"""Gets the apply_time of this DirectConnect.
 
         物理专线的申请时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -728,7 +728,7 @@ class DirectConnect:
 
     @apply_time.setter
     def apply_time(self, apply_time):
-        """Sets the apply_time of this DirectConnect.
+        r"""Sets the apply_time of this DirectConnect.
 
         物理专线的申请时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -739,7 +739,7 @@ class DirectConnect:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DirectConnect.
+        r"""Gets the create_time of this DirectConnect.
 
         物理专线的创建时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -750,7 +750,7 @@ class DirectConnect:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DirectConnect.
+        r"""Sets the create_time of this DirectConnect.
 
         物理专线的创建时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -761,7 +761,7 @@ class DirectConnect:
 
     @property
     def provider_status(self):
-        """Gets the provider_status of this DirectConnect.
+        r"""Gets the provider_status of this DirectConnect.
 
         物理专线的运营商操作状态，合法值是：ACTIVE， DOWN
 
@@ -772,7 +772,7 @@ class DirectConnect:
 
     @provider_status.setter
     def provider_status(self, provider_status):
-        """Sets the provider_status of this DirectConnect.
+        r"""Sets the provider_status of this DirectConnect.
 
         物理专线的运营商操作状态，合法值是：ACTIVE， DOWN
 
@@ -783,7 +783,7 @@ class DirectConnect:
 
     @property
     def peer_port_type(self):
-        """Gets the peer_port_type of this DirectConnect.
+        r"""Gets the peer_port_type of this DirectConnect.
 
         连接对端的端口类型
 
@@ -794,7 +794,7 @@ class DirectConnect:
 
     @peer_port_type.setter
     def peer_port_type(self, peer_port_type):
-        """Sets the peer_port_type of this DirectConnect.
+        r"""Sets the peer_port_type of this DirectConnect.
 
         连接对端的端口类型
 
@@ -805,7 +805,7 @@ class DirectConnect:
 
     @property
     def peer_provider(self):
-        """Gets the peer_provider of this DirectConnect.
+        r"""Gets the peer_provider of this DirectConnect.
 
         专线连接对接的运营商
 
@@ -816,7 +816,7 @@ class DirectConnect:
 
     @peer_provider.setter
     def peer_provider(self, peer_provider):
-        """Sets the peer_provider of this DirectConnect.
+        r"""Sets the peer_provider of this DirectConnect.
 
         专线连接对接的运营商
 
@@ -827,7 +827,7 @@ class DirectConnect:
 
     @property
     def order_id(self):
-        """Gets the order_id of this DirectConnect.
+        r"""Gets the order_id of this DirectConnect.
 
         物理专线对应订单号，用于支持包周期计费，识别用户订单
 
@@ -838,7 +838,7 @@ class DirectConnect:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this DirectConnect.
+        r"""Sets the order_id of this DirectConnect.
 
         物理专线对应订单号，用于支持包周期计费，识别用户订单
 
@@ -849,7 +849,7 @@ class DirectConnect:
 
     @property
     def product_id(self):
-        """Gets the product_id of this DirectConnect.
+        r"""Gets the product_id of this DirectConnect.
 
         物理专线订单对应产品标识，用于订制包周期套餐等计费策略
 
@@ -860,7 +860,7 @@ class DirectConnect:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this DirectConnect.
+        r"""Sets the product_id of this DirectConnect.
 
         物理专线订单对应产品标识，用于订制包周期套餐等计费策略
 
@@ -871,7 +871,7 @@ class DirectConnect:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this DirectConnect.
+        r"""Gets the spec_code of this DirectConnect.
 
         物理专线订单对应产品规格，用于订制包周期套餐等计费策略
 
@@ -882,7 +882,7 @@ class DirectConnect:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this DirectConnect.
+        r"""Sets the spec_code of this DirectConnect.
 
         物理专线订单对应产品规格，用于订制包周期套餐等计费策略
 
@@ -893,7 +893,7 @@ class DirectConnect:
 
     @property
     def period_type(self):
-        """Gets the period_type of this DirectConnect.
+        r"""Gets the period_type of this DirectConnect.
 
         物理专线对应订单号对应包周期的类型
 
@@ -904,7 +904,7 @@ class DirectConnect:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this DirectConnect.
+        r"""Sets the period_type of this DirectConnect.
 
         物理专线对应订单号对应包周期的类型
 
@@ -915,7 +915,7 @@ class DirectConnect:
 
     @property
     def period_num(self):
-        """Gets the period_num of this DirectConnect.
+        r"""Gets the period_num of this DirectConnect.
 
         物理专线对应的包周期时间
 
@@ -926,7 +926,7 @@ class DirectConnect:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this DirectConnect.
+        r"""Sets the period_num of this DirectConnect.
 
         物理专线对应的包周期时间
 
@@ -937,7 +937,7 @@ class DirectConnect:
 
     @property
     def vgw_type(self):
-        """Gets the vgw_type of this DirectConnect.
+        r"""Gets the vgw_type of this DirectConnect.
 
         专线要求的网关类型
 
@@ -948,7 +948,7 @@ class DirectConnect:
 
     @vgw_type.setter
     def vgw_type(self, vgw_type):
-        """Sets the vgw_type of this DirectConnect.
+        r"""Sets the vgw_type of this DirectConnect.
 
         专线要求的网关类型
 
@@ -959,7 +959,7 @@ class DirectConnect:
 
     @property
     def lag_id(self):
-        """Gets the lag_id of this DirectConnect.
+        r"""Gets the lag_id of this DirectConnect.
 
         物理专线归属的链路聚合组（lag）的ID
 
@@ -970,7 +970,7 @@ class DirectConnect:
 
     @lag_id.setter
     def lag_id(self, lag_id):
-        """Sets the lag_id of this DirectConnect.
+        r"""Sets the lag_id of this DirectConnect.
 
         物理专线归属的链路聚合组（lag）的ID
 
@@ -981,7 +981,7 @@ class DirectConnect:
 
     @property
     def signed_agreement_status(self):
-        """Gets the signed_agreement_status of this DirectConnect.
+        r"""Gets the signed_agreement_status of this DirectConnect.
 
         专线协议的签署状态
 
@@ -992,7 +992,7 @@ class DirectConnect:
 
     @signed_agreement_status.setter
     def signed_agreement_status(self, signed_agreement_status):
-        """Sets the signed_agreement_status of this DirectConnect.
+        r"""Sets the signed_agreement_status of this DirectConnect.
 
         专线协议的签署状态
 
@@ -1003,7 +1003,7 @@ class DirectConnect:
 
     @property
     def signed_agreement_time(self):
-        """Gets the signed_agreement_time of this DirectConnect.
+        r"""Gets the signed_agreement_time of this DirectConnect.
 
         专线协议的签署时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -1014,7 +1014,7 @@ class DirectConnect:
 
     @signed_agreement_time.setter
     def signed_agreement_time(self, signed_agreement_time):
-        """Sets the signed_agreement_time of this DirectConnect.
+        r"""Sets the signed_agreement_time of this DirectConnect.
 
         专线协议的签署时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -1025,7 +1025,7 @@ class DirectConnect:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DirectConnect.
+        r"""Gets the enterprise_project_id of this DirectConnect.
 
         实例所属企业项目ID
 
@@ -1036,7 +1036,7 @@ class DirectConnect:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DirectConnect.
+        r"""Sets the enterprise_project_id of this DirectConnect.
 
         实例所属企业项目ID
 
@@ -1047,7 +1047,7 @@ class DirectConnect:
 
     @property
     def tags(self):
-        """Gets the tags of this DirectConnect.
+        r"""Gets the tags of this DirectConnect.
 
         标签信息
 
@@ -1058,7 +1058,7 @@ class DirectConnect:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this DirectConnect.
+        r"""Sets the tags of this DirectConnect.
 
         标签信息
 
@@ -1069,7 +1069,7 @@ class DirectConnect:
 
     @property
     def locales(self):
-        """Gets the locales of this DirectConnect.
+        r"""Gets the locales of this DirectConnect.
 
         :return: The locales of this DirectConnect.
         :rtype: :class:`huaweicloudsdkdc.v3.LocalesBody`
@@ -1078,7 +1078,7 @@ class DirectConnect:
 
     @locales.setter
     def locales(self, locales):
-        """Sets the locales of this DirectConnect.
+        r"""Sets the locales of this DirectConnect.
 
         :param locales: The locales of this DirectConnect.
         :type locales: :class:`huaweicloudsdkdc.v3.LocalesBody`
@@ -1087,7 +1087,7 @@ class DirectConnect:
 
     @property
     def support_feature(self):
-        """Gets the support_feature of this DirectConnect.
+        r"""Gets the support_feature of this DirectConnect.
 
         用户专线可支持的特性列表[（功能暂不支持）](tag:dt)
 
@@ -1098,7 +1098,7 @@ class DirectConnect:
 
     @support_feature.setter
     def support_feature(self, support_feature):
-        """Sets the support_feature of this DirectConnect.
+        r"""Sets the support_feature of this DirectConnect.
 
         用户专线可支持的特性列表[（功能暂不支持）](tag:dt)
 
@@ -1109,7 +1109,7 @@ class DirectConnect:
 
     @property
     def ies_id(self):
-        """Gets the ies_id of this DirectConnect.
+        r"""Gets the ies_id of this DirectConnect.
 
         归属的CloudPond站点的ID[（功能暂不支持）](tag:dt)
 
@@ -1120,7 +1120,7 @@ class DirectConnect:
 
     @ies_id.setter
     def ies_id(self, ies_id):
-        """Sets the ies_id of this DirectConnect.
+        r"""Sets the ies_id of this DirectConnect.
 
         归属的CloudPond站点的ID[（功能暂不支持）](tag:dt)
 
@@ -1131,7 +1131,7 @@ class DirectConnect:
 
     @property
     def reason(self):
-        """Gets the reason of this DirectConnect.
+        r"""Gets the reason of this DirectConnect.
 
         如果专线资源的状态是Error的情况下，该参数会显示相关错误信息。[（功能暂不支持）](tag:dt)
 
@@ -1142,7 +1142,7 @@ class DirectConnect:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this DirectConnect.
+        r"""Sets the reason of this DirectConnect.
 
         如果专线资源的状态是Error的情况下，该参数会显示相关错误信息。[（功能暂不支持）](tag:dt)
 
@@ -1153,7 +1153,7 @@ class DirectConnect:
 
     @property
     def email(self):
-        """Gets the email of this DirectConnect.
+        r"""Gets the email of this DirectConnect.
 
         客户邮箱信息[（功能暂不支持）](tag:dt)
 
@@ -1164,7 +1164,7 @@ class DirectConnect:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this DirectConnect.
+        r"""Sets the email of this DirectConnect.
 
         客户邮箱信息[（功能暂不支持）](tag:dt)
 
@@ -1175,7 +1175,7 @@ class DirectConnect:
 
     @property
     def onestop_product_id(self):
-        """Gets the onestop_product_id of this DirectConnect.
+        r"""Gets the onestop_product_id of this DirectConnect.
 
         该参数用于销售线路场景，标识一站式专线产品ID[（功能暂不支持）](tag:dt)
 
@@ -1186,7 +1186,7 @@ class DirectConnect:
 
     @onestop_product_id.setter
     def onestop_product_id(self, onestop_product_id):
-        """Sets the onestop_product_id of this DirectConnect.
+        r"""Sets the onestop_product_id of this DirectConnect.
 
         该参数用于销售线路场景，标识一站式专线产品ID[（功能暂不支持）](tag:dt)
 
@@ -1197,7 +1197,7 @@ class DirectConnect:
 
     @property
     def building_line_product_id(self):
-        """Gets the building_line_product_id of this DirectConnect.
+        r"""Gets the building_line_product_id of this DirectConnect.
 
         该参数用于销售线路场景，标识机房内部线路资源产品ID[（功能暂不支持）](tag:dt)
 
@@ -1208,7 +1208,7 @@ class DirectConnect:
 
     @building_line_product_id.setter
     def building_line_product_id(self, building_line_product_id):
-        """Sets the building_line_product_id of this DirectConnect.
+        r"""Sets the building_line_product_id of this DirectConnect.
 
         该参数用于销售线路场景，标识机房内部线路资源产品ID[（功能暂不支持）](tag:dt)
 
@@ -1219,7 +1219,7 @@ class DirectConnect:
 
     @property
     def last_onestop_product_id(self):
-        """Gets the last_onestop_product_id of this DirectConnect.
+        r"""Gets the last_onestop_product_id of this DirectConnect.
 
         该参数用于销售线路场景，标识变更前的一站式专线产品ID，用于在做线路带宽变更时保存上一次的记录。[（功能暂不支持）](tag:dt)
 
@@ -1230,7 +1230,7 @@ class DirectConnect:
 
     @last_onestop_product_id.setter
     def last_onestop_product_id(self, last_onestop_product_id):
-        """Sets the last_onestop_product_id of this DirectConnect.
+        r"""Sets the last_onestop_product_id of this DirectConnect.
 
         该参数用于销售线路场景，标识变更前的一站式专线产品ID，用于在做线路带宽变更时保存上一次的记录。[（功能暂不支持）](tag:dt)
 
@@ -1241,7 +1241,7 @@ class DirectConnect:
 
     @property
     def last_building_line_product_id(self):
-        """Gets the last_building_line_product_id of this DirectConnect.
+        r"""Gets the last_building_line_product_id of this DirectConnect.
 
         该参数用于销售线路场景，标识变更前机房内部线路资源产品ID，用于在做线路带宽变更时保存上一次的记录。[（功能暂不支持）](tag:dt)
 
@@ -1252,7 +1252,7 @@ class DirectConnect:
 
     @last_building_line_product_id.setter
     def last_building_line_product_id(self, last_building_line_product_id):
-        """Sets the last_building_line_product_id of this DirectConnect.
+        r"""Sets the last_building_line_product_id of this DirectConnect.
 
         该参数用于销售线路场景，标识变更前机房内部线路资源产品ID，用于在做线路带宽变更时保存上一次的记录。[（功能暂不支持）](tag:dt)
 
@@ -1263,7 +1263,7 @@ class DirectConnect:
 
     @property
     def modified_bandwidth(self):
-        """Gets the modified_bandwidth of this DirectConnect.
+        r"""Gets the modified_bandwidth of this DirectConnect.
 
         线路带宽变更后的带宽值[（功能暂不支持）](tag:dt)
 
@@ -1274,7 +1274,7 @@ class DirectConnect:
 
     @modified_bandwidth.setter
     def modified_bandwidth(self, modified_bandwidth):
-        """Sets the modified_bandwidth of this DirectConnect.
+        r"""Sets the modified_bandwidth of this DirectConnect.
 
         线路带宽变更后的带宽值[（功能暂不支持）](tag:dt)
 
@@ -1285,7 +1285,7 @@ class DirectConnect:
 
     @property
     def change_mode(self):
-        """Gets the change_mode of this DirectConnect.
+        r"""Gets the change_mode of this DirectConnect.
 
         标识续费变更的一种状态[（功能暂不支持）](tag:dt)
 
@@ -1296,7 +1296,7 @@ class DirectConnect:
 
     @change_mode.setter
     def change_mode(self, change_mode):
-        """Sets the change_mode of this DirectConnect.
+        r"""Sets the change_mode of this DirectConnect.
 
         标识续费变更的一种状态[（功能暂不支持）](tag:dt)
 
@@ -1307,7 +1307,7 @@ class DirectConnect:
 
     @property
     def onestopdc_status(self):
-        """Gets the onestopdc_status of this DirectConnect.
+        r"""Gets the onestopdc_status of this DirectConnect.
 
         一站式专线状态[（功能暂不支持）](tag:dt)
 
@@ -1318,7 +1318,7 @@ class DirectConnect:
 
     @onestopdc_status.setter
     def onestopdc_status(self, onestopdc_status):
-        """Sets the onestopdc_status of this DirectConnect.
+        r"""Sets the onestopdc_status of this DirectConnect.
 
         一站式专线状态[（功能暂不支持）](tag:dt)
 
@@ -1329,7 +1329,7 @@ class DirectConnect:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this DirectConnect.
+        r"""Gets the public_border_group of this DirectConnect.
 
         归属的可用区对应的边界组(public border group)，标识是否homezone局点。[（功能暂不支持）](tag:dt)
 
@@ -1340,7 +1340,7 @@ class DirectConnect:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this DirectConnect.
+        r"""Sets the public_border_group of this DirectConnect.
 
         归属的可用区对应的边界组(public border group)，标识是否homezone局点。[（功能暂不支持）](tag:dt)
 
@@ -1351,7 +1351,7 @@ class DirectConnect:
 
     @property
     def auto_renew(self):
-        """Gets the auto_renew of this DirectConnect.
+        r"""Gets the auto_renew of this DirectConnect.
 
         用于标识包周期产品是否自动续订[（功能暂不支持）](tag:dt)
 
@@ -1362,7 +1362,7 @@ class DirectConnect:
 
     @auto_renew.setter
     def auto_renew(self, auto_renew):
-        """Sets the auto_renew of this DirectConnect.
+        r"""Sets the auto_renew of this DirectConnect.
 
         用于标识包周期产品是否自动续订[（功能暂不支持）](tag:dt)
 
@@ -1373,7 +1373,7 @@ class DirectConnect:
 
     @property
     def ratio_95peak(self):
-        """Gets the ratio_95peak of this DirectConnect.
+        r"""Gets the ratio_95peak of this DirectConnect.
 
         95计费保底带宽率[（功能暂不支持）](tag:dt)
 
@@ -1384,7 +1384,7 @@ class DirectConnect:
 
     @ratio_95peak.setter
     def ratio_95peak(self, ratio_95peak):
-        """Sets the ratio_95peak of this DirectConnect.
+        r"""Sets the ratio_95peak of this DirectConnect.
 
         95计费保底带宽率[（功能暂不支持）](tag:dt)
 

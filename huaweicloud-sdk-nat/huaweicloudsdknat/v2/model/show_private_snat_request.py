@@ -25,7 +25,7 @@ class ShowPrivateSnatRequest:
     }
 
     def __init__(self, snat_rule_id=None):
-        """ShowPrivateSnatRequest
+        r"""ShowPrivateSnatRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPrivateSnatRequest:
 
     @property
     def snat_rule_id(self):
-        """Gets the snat_rule_id of this ShowPrivateSnatRequest.
+        r"""Gets the snat_rule_id of this ShowPrivateSnatRequest.
 
         SNAT规则的ID。
 
@@ -53,7 +53,7 @@ class ShowPrivateSnatRequest:
 
     @snat_rule_id.setter
     def snat_rule_id(self, snat_rule_id):
-        """Sets the snat_rule_id of this ShowPrivateSnatRequest.
+        r"""Sets the snat_rule_id of this ShowPrivateSnatRequest.
 
         SNAT规则的ID。
 

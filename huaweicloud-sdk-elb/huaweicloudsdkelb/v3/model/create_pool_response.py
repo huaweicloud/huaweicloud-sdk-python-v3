@@ -28,7 +28,7 @@ class CreatePoolResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, pool=None):
-        """CreatePoolResponse
+        r"""CreatePoolResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreatePoolResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreatePoolResponse.
+        r"""Gets the request_id of this CreatePoolResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -62,7 +62,7 @@ class CreatePoolResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreatePoolResponse.
+        r"""Sets the request_id of this CreatePoolResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -73,7 +73,7 @@ class CreatePoolResponse(SdkResponse):
 
     @property
     def pool(self):
-        """Gets the pool of this CreatePoolResponse.
+        r"""Gets the pool of this CreatePoolResponse.
 
         :return: The pool of this CreatePoolResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.Pool`
@@ -82,7 +82,7 @@ class CreatePoolResponse(SdkResponse):
 
     @pool.setter
     def pool(self, pool):
-        """Sets the pool of this CreatePoolResponse.
+        r"""Sets the pool of this CreatePoolResponse.
 
         :param pool: The pool of this CreatePoolResponse.
         :type pool: :class:`huaweicloudsdkelb.v3.Pool`

@@ -27,7 +27,7 @@ class UpdateDiskInfoRequest:
     }
 
     def __init__(self, source_id=None, body=None):
-        """UpdateDiskInfoRequest
+        r"""UpdateDiskInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDiskInfoRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this UpdateDiskInfoRequest.
+        r"""Gets the source_id of this UpdateDiskInfoRequest.
 
         源端服务器ID
 
@@ -60,7 +60,7 @@ class UpdateDiskInfoRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this UpdateDiskInfoRequest.
+        r"""Sets the source_id of this UpdateDiskInfoRequest.
 
         源端服务器ID
 
@@ -71,7 +71,7 @@ class UpdateDiskInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDiskInfoRequest.
+        r"""Gets the body of this UpdateDiskInfoRequest.
 
         :return: The body of this UpdateDiskInfoRequest.
         :rtype: :class:`huaweicloudsdksms.v3.PutDiskInfoReq`
@@ -80,7 +80,7 @@ class UpdateDiskInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDiskInfoRequest.
+        r"""Sets the body of this UpdateDiskInfoRequest.
 
         :param body: The body of this UpdateDiskInfoRequest.
         :type body: :class:`huaweicloudsdksms.v3.PutDiskInfoReq`

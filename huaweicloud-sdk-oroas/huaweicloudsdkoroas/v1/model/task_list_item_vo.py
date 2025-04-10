@@ -33,7 +33,7 @@ class TaskListItemVo:
     }
 
     def __init__(self, id=None, status=None, start_time=None, end_time=None, create_time=None):
-        """TaskListItemVo
+        r"""TaskListItemVo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TaskListItemVo:
 
     @property
     def id(self):
-        """Gets the id of this TaskListItemVo.
+        r"""Gets the id of this TaskListItemVo.
 
         任务编号
 
@@ -82,7 +82,7 @@ class TaskListItemVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TaskListItemVo.
+        r"""Sets the id of this TaskListItemVo.
 
         任务编号
 
@@ -93,7 +93,7 @@ class TaskListItemVo:
 
     @property
     def status(self):
-        """Gets the status of this TaskListItemVo.
+        r"""Gets the status of this TaskListItemVo.
 
         状态
 
@@ -104,7 +104,7 @@ class TaskListItemVo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskListItemVo.
+        r"""Sets the status of this TaskListItemVo.
 
         状态
 
@@ -115,7 +115,7 @@ class TaskListItemVo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TaskListItemVo.
+        r"""Gets the start_time of this TaskListItemVo.
 
         开始时间（UTC）
 
@@ -126,7 +126,7 @@ class TaskListItemVo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TaskListItemVo.
+        r"""Sets the start_time of this TaskListItemVo.
 
         开始时间（UTC）
 
@@ -137,7 +137,7 @@ class TaskListItemVo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TaskListItemVo.
+        r"""Gets the end_time of this TaskListItemVo.
 
         结束时间（UTC）
 
@@ -148,7 +148,7 @@ class TaskListItemVo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TaskListItemVo.
+        r"""Sets the end_time of this TaskListItemVo.
 
         结束时间（UTC）
 
@@ -159,7 +159,7 @@ class TaskListItemVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TaskListItemVo.
+        r"""Gets the create_time of this TaskListItemVo.
 
         创建时间（UTC）
 
@@ -170,7 +170,7 @@ class TaskListItemVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TaskListItemVo.
+        r"""Sets the create_time of this TaskListItemVo.
 
         创建时间（UTC）
 

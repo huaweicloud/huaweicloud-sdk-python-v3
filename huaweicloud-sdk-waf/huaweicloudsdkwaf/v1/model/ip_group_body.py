@@ -37,7 +37,7 @@ class IpGroupBody:
     }
 
     def __init__(self, id=None, name=None, ips=None, size=None, rules=None, share_info=None, description=None):
-        """IpGroupBody
+        r"""IpGroupBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class IpGroupBody:
 
     @property
     def id(self):
-        """Gets the id of this IpGroupBody.
+        r"""Gets the id of this IpGroupBody.
 
         地址组id
 
@@ -96,7 +96,7 @@ class IpGroupBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IpGroupBody.
+        r"""Sets the id of this IpGroupBody.
 
         地址组id
 
@@ -107,7 +107,7 @@ class IpGroupBody:
 
     @property
     def name(self):
-        """Gets the name of this IpGroupBody.
+        r"""Gets the name of this IpGroupBody.
 
         地址组名称
 
@@ -118,7 +118,7 @@ class IpGroupBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IpGroupBody.
+        r"""Sets the name of this IpGroupBody.
 
         地址组名称
 
@@ -129,7 +129,7 @@ class IpGroupBody:
 
     @property
     def ips(self):
-        """Gets the ips of this IpGroupBody.
+        r"""Gets the ips of this IpGroupBody.
 
         地址组ip（以逗号分隔的ip或ip段）
 
@@ -140,7 +140,7 @@ class IpGroupBody:
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this IpGroupBody.
+        r"""Sets the ips of this IpGroupBody.
 
         地址组ip（以逗号分隔的ip或ip段）
 
@@ -151,7 +151,7 @@ class IpGroupBody:
 
     @property
     def size(self):
-        """Gets the size of this IpGroupBody.
+        r"""Gets the size of this IpGroupBody.
 
         地址组长度
 
@@ -162,7 +162,7 @@ class IpGroupBody:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this IpGroupBody.
+        r"""Sets the size of this IpGroupBody.
 
         地址组长度
 
@@ -173,7 +173,7 @@ class IpGroupBody:
 
     @property
     def rules(self):
-        """Gets the rules of this IpGroupBody.
+        r"""Gets the rules of this IpGroupBody.
 
         ip地址组绑定的规则列表
 
@@ -184,7 +184,7 @@ class IpGroupBody:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this IpGroupBody.
+        r"""Sets the rules of this IpGroupBody.
 
         ip地址组绑定的规则列表
 
@@ -195,7 +195,7 @@ class IpGroupBody:
 
     @property
     def share_info(self):
-        """Gets the share_info of this IpGroupBody.
+        r"""Gets the share_info of this IpGroupBody.
 
         :return: The share_info of this IpGroupBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.ShareInfo`
@@ -204,7 +204,7 @@ class IpGroupBody:
 
     @share_info.setter
     def share_info(self, share_info):
-        """Sets the share_info of this IpGroupBody.
+        r"""Sets the share_info of this IpGroupBody.
 
         :param share_info: The share_info of this IpGroupBody.
         :type share_info: :class:`huaweicloudsdkwaf.v1.ShareInfo`
@@ -213,7 +213,7 @@ class IpGroupBody:
 
     @property
     def description(self):
-        """Gets the description of this IpGroupBody.
+        r"""Gets the description of this IpGroupBody.
 
         地址组描述
 
@@ -224,7 +224,7 @@ class IpGroupBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IpGroupBody.
+        r"""Sets the description of this IpGroupBody.
 
         地址组描述
 

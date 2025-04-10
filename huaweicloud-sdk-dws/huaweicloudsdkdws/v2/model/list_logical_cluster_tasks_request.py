@@ -37,7 +37,7 @@ class ListLogicalClusterTasksRequest:
     }
 
     def __init__(self, cluster_id=None, offset=None, limit=None, logical_cluster_name=None, type=None, order_by=None, order=None):
-        """ListLogicalClusterTasksRequest
+        r"""ListLogicalClusterTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListLogicalClusterTasksRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListLogicalClusterTasksRequest.
+        r"""Gets the cluster_id of this ListLogicalClusterTasksRequest.
 
         集群ID
 
@@ -95,7 +95,7 @@ class ListLogicalClusterTasksRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListLogicalClusterTasksRequest.
+        r"""Sets the cluster_id of this ListLogicalClusterTasksRequest.
 
         集群ID
 
@@ -106,7 +106,7 @@ class ListLogicalClusterTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLogicalClusterTasksRequest.
+        r"""Gets the offset of this ListLogicalClusterTasksRequest.
 
         分页查询，偏移
 
@@ -117,7 +117,7 @@ class ListLogicalClusterTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLogicalClusterTasksRequest.
+        r"""Sets the offset of this ListLogicalClusterTasksRequest.
 
         分页查询，偏移
 
@@ -128,7 +128,7 @@ class ListLogicalClusterTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLogicalClusterTasksRequest.
+        r"""Gets the limit of this ListLogicalClusterTasksRequest.
 
         分页查询，每页显示的条目数量
 
@@ -139,7 +139,7 @@ class ListLogicalClusterTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLogicalClusterTasksRequest.
+        r"""Sets the limit of this ListLogicalClusterTasksRequest.
 
         分页查询，每页显示的条目数量
 
@@ -150,7 +150,7 @@ class ListLogicalClusterTasksRequest:
 
     @property
     def logical_cluster_name(self):
-        """Gets the logical_cluster_name of this ListLogicalClusterTasksRequest.
+        r"""Gets the logical_cluster_name of this ListLogicalClusterTasksRequest.
 
         集群名称
 
@@ -161,7 +161,7 @@ class ListLogicalClusterTasksRequest:
 
     @logical_cluster_name.setter
     def logical_cluster_name(self, logical_cluster_name):
-        """Sets the logical_cluster_name of this ListLogicalClusterTasksRequest.
+        r"""Sets the logical_cluster_name of this ListLogicalClusterTasksRequest.
 
         集群名称
 
@@ -172,7 +172,7 @@ class ListLogicalClusterTasksRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListLogicalClusterTasksRequest.
+        r"""Gets the type of this ListLogicalClusterTasksRequest.
 
         类型
 
@@ -183,7 +183,7 @@ class ListLogicalClusterTasksRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListLogicalClusterTasksRequest.
+        r"""Sets the type of this ListLogicalClusterTasksRequest.
 
         类型
 
@@ -194,7 +194,7 @@ class ListLogicalClusterTasksRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListLogicalClusterTasksRequest.
+        r"""Gets the order_by of this ListLogicalClusterTasksRequest.
 
         排序字段
 
@@ -205,7 +205,7 @@ class ListLogicalClusterTasksRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListLogicalClusterTasksRequest.
+        r"""Sets the order_by of this ListLogicalClusterTasksRequest.
 
         排序字段
 
@@ -216,7 +216,7 @@ class ListLogicalClusterTasksRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListLogicalClusterTasksRequest.
+        r"""Gets the order of this ListLogicalClusterTasksRequest.
 
         排序：升序/降序
 
@@ -227,7 +227,7 @@ class ListLogicalClusterTasksRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListLogicalClusterTasksRequest.
+        r"""Sets the order of this ListLogicalClusterTasksRequest.
 
         排序：升序/降序
 

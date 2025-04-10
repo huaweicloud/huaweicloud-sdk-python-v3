@@ -27,7 +27,7 @@ class AllowIpRangesResult:
     }
 
     def __init__(self, description=None, ip_range=None):
-        """AllowIpRangesResult
+        r"""AllowIpRangesResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AllowIpRangesResult:
 
     @property
     def description(self):
-        """Gets the description of this AllowIpRangesResult.
+        r"""Gets the description of this AllowIpRangesResult.
 
         描述信息。
 
@@ -59,7 +59,7 @@ class AllowIpRangesResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AllowIpRangesResult.
+        r"""Sets the description of this AllowIpRangesResult.
 
         描述信息。
 
@@ -70,7 +70,7 @@ class AllowIpRangesResult:
 
     @property
     def ip_range(self):
-        """Gets the ip_range of this AllowIpRangesResult.
+        r"""Gets the ip_range of this AllowIpRangesResult.
 
         IP地址区间，例如：0.0.0.0-255.255.255.255。
 
@@ -81,7 +81,7 @@ class AllowIpRangesResult:
 
     @ip_range.setter
     def ip_range(self, ip_range):
-        """Sets the ip_range of this AllowIpRangesResult.
+        r"""Sets the ip_range of this AllowIpRangesResult.
 
         IP地址区间，例如：0.0.0.0-255.255.255.255。
 

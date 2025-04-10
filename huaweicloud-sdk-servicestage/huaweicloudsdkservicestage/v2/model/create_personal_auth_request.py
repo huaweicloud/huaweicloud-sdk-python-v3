@@ -27,7 +27,7 @@ class CreatePersonalAuthRequest:
     }
 
     def __init__(self, repo_type=None, body=None):
-        """CreatePersonalAuthRequest
+        r"""CreatePersonalAuthRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePersonalAuthRequest:
 
     @property
     def repo_type(self):
-        """Gets the repo_type of this CreatePersonalAuthRequest.
+        r"""Gets the repo_type of this CreatePersonalAuthRequest.
 
         仓库类型。 支持私人令牌授权的仓库类型有：github、gitlab、gitee。
 
@@ -60,7 +60,7 @@ class CreatePersonalAuthRequest:
 
     @repo_type.setter
     def repo_type(self, repo_type):
-        """Sets the repo_type of this CreatePersonalAuthRequest.
+        r"""Sets the repo_type of this CreatePersonalAuthRequest.
 
         仓库类型。 支持私人令牌授权的仓库类型有：github、gitlab、gitee。
 
@@ -71,7 +71,7 @@ class CreatePersonalAuthRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePersonalAuthRequest.
+        r"""Gets the body of this CreatePersonalAuthRequest.
 
         :return: The body of this CreatePersonalAuthRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.AccessToken`
@@ -80,7 +80,7 @@ class CreatePersonalAuthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePersonalAuthRequest.
+        r"""Sets the body of this CreatePersonalAuthRequest.
 
         :param body: The body of this CreatePersonalAuthRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.AccessToken`

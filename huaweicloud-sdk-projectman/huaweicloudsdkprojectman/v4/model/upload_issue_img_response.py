@@ -28,7 +28,7 @@ class UploadIssueImgResponse(SdkResponse):
     }
 
     def __init__(self, img_id=None, img_url=None):
-        """UploadIssueImgResponse
+        r"""UploadIssueImgResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UploadIssueImgResponse(SdkResponse):
 
     @property
     def img_id(self):
-        """Gets the img_id of this UploadIssueImgResponse.
+        r"""Gets the img_id of this UploadIssueImgResponse.
 
         图片id
 
@@ -62,7 +62,7 @@ class UploadIssueImgResponse(SdkResponse):
 
     @img_id.setter
     def img_id(self, img_id):
-        """Sets the img_id of this UploadIssueImgResponse.
+        r"""Sets the img_id of this UploadIssueImgResponse.
 
         图片id
 
@@ -73,7 +73,7 @@ class UploadIssueImgResponse(SdkResponse):
 
     @property
     def img_url(self):
-        """Gets the img_url of this UploadIssueImgResponse.
+        r"""Gets the img_url of this UploadIssueImgResponse.
 
         图片url v1改成v3作为下载图片请求
 
@@ -84,7 +84,7 @@ class UploadIssueImgResponse(SdkResponse):
 
     @img_url.setter
     def img_url(self, img_url):
-        """Sets the img_url of this UploadIssueImgResponse.
+        r"""Sets the img_url of this UploadIssueImgResponse.
 
         图片url v1改成v3作为下载图片请求
 

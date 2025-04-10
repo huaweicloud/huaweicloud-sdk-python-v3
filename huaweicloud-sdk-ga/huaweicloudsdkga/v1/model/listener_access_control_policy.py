@@ -27,7 +27,7 @@ class ListenerAccessControlPolicy:
     }
 
     def __init__(self, listener_id=None, type=None):
-        """ListenerAccessControlPolicy
+        r"""ListenerAccessControlPolicy
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListenerAccessControlPolicy:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this ListenerAccessControlPolicy.
+        r"""Gets the listener_id of this ListenerAccessControlPolicy.
 
         监听器ID。
 
@@ -61,7 +61,7 @@ class ListenerAccessControlPolicy:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this ListenerAccessControlPolicy.
+        r"""Sets the listener_id of this ListenerAccessControlPolicy.
 
         监听器ID。
 
@@ -72,7 +72,7 @@ class ListenerAccessControlPolicy:
 
     @property
     def type(self):
-        """Gets the type of this ListenerAccessControlPolicy.
+        r"""Gets the type of this ListenerAccessControlPolicy.
 
         :return: The type of this ListenerAccessControlPolicy.
         :rtype: :class:`huaweicloudsdkga.v1.ListenerAccessControlType`
@@ -81,7 +81,7 @@ class ListenerAccessControlPolicy:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListenerAccessControlPolicy.
+        r"""Sets the type of this ListenerAccessControlPolicy.
 
         :param type: The type of this ListenerAccessControlPolicy.
         :type type: :class:`huaweicloudsdkga.v1.ListenerAccessControlType`

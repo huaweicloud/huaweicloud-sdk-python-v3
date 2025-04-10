@@ -27,7 +27,7 @@ class AssignedNodeGroup:
     }
 
     def __init__(self, name=None, assigned_roles=None):
-        """AssignedNodeGroup
+        r"""AssignedNodeGroup
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AssignedNodeGroup:
 
     @property
     def name(self):
-        """Gets the name of this AssignedNodeGroup.
+        r"""Gets the name of this AssignedNodeGroup.
 
         节点组名称
 
@@ -59,7 +59,7 @@ class AssignedNodeGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AssignedNodeGroup.
+        r"""Sets the name of this AssignedNodeGroup.
 
         节点组名称
 
@@ -70,7 +70,7 @@ class AssignedNodeGroup:
 
     @property
     def assigned_roles(self):
-        """Gets the assigned_roles of this AssignedNodeGroup.
+        r"""Gets the assigned_roles of this AssignedNodeGroup.
 
         角色部署信息。 可以指定节点组中部署的角色，该参数是一个字符串数组，每个字符串表示一个角色表达式。 角色表达式定义： - 当该角色在节点组所有节点部署时： {role name}，如“DataNode”。 - 当该角色在节点组指定下标节点部署时：{role name}:{index1},{index2}…,{indexN}，如“NameNode:1,2”，下标从1开始计数。 - 部分角色支持多实例部署（即在一个节点部署多个同角色的实例）：{role name}[{instance count}]，如“EsNode[9]”，多实例部署不需要指定角色位置，默认在节点组所有节点部署多个实例 可选的角色请参考[MRS支持的角色与组件对应表](https://support.huaweicloud.com/api-mrs/mrs_02_0106.html)。
 
@@ -81,7 +81,7 @@ class AssignedNodeGroup:
 
     @assigned_roles.setter
     def assigned_roles(self, assigned_roles):
-        """Sets the assigned_roles of this AssignedNodeGroup.
+        r"""Sets the assigned_roles of this AssignedNodeGroup.
 
         角色部署信息。 可以指定节点组中部署的角色，该参数是一个字符串数组，每个字符串表示一个角色表达式。 角色表达式定义： - 当该角色在节点组所有节点部署时： {role name}，如“DataNode”。 - 当该角色在节点组指定下标节点部署时：{role name}:{index1},{index2}…,{indexN}，如“NameNode:1,2”，下标从1开始计数。 - 部分角色支持多实例部署（即在一个节点部署多个同角色的实例）：{role name}[{instance count}]，如“EsNode[9]”，多实例部署不需要指定角色位置，默认在节点组所有节点部署多个实例 可选的角色请参考[MRS支持的角色与组件对应表](https://support.huaweicloud.com/api-mrs/mrs_02_0106.html)。
 

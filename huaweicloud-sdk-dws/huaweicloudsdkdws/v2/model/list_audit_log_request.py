@@ -25,7 +25,7 @@ class ListAuditLogRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ListAuditLogRequest
+        r"""ListAuditLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListAuditLogRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListAuditLogRequest.
+        r"""Gets the cluster_id of this ListAuditLogRequest.
 
         集群ID
 
@@ -53,7 +53,7 @@ class ListAuditLogRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListAuditLogRequest.
+        r"""Sets the cluster_id of this ListAuditLogRequest.
 
         集群ID
 

@@ -29,7 +29,7 @@ class JobNodeInfo:
     }
 
     def __init__(self, spec=None, vpc=None, base_info=None):
-        """JobNodeInfo
+        r"""JobNodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class JobNodeInfo:
 
     @property
     def spec(self):
-        """Gets the spec of this JobNodeInfo.
+        r"""Gets the spec of this JobNodeInfo.
 
         :return: The spec of this JobNodeInfo.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobNodeSpecInfo`
@@ -65,7 +65,7 @@ class JobNodeInfo:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this JobNodeInfo.
+        r"""Sets the spec of this JobNodeInfo.
 
         :param spec: The spec of this JobNodeInfo.
         :type spec: :class:`huaweicloudsdkdrs.v5.JobNodeSpecInfo`
@@ -74,7 +74,7 @@ class JobNodeInfo:
 
     @property
     def vpc(self):
-        """Gets the vpc of this JobNodeInfo.
+        r"""Gets the vpc of this JobNodeInfo.
 
         :return: The vpc of this JobNodeInfo.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobNodeVpcInfo`
@@ -83,7 +83,7 @@ class JobNodeInfo:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this JobNodeInfo.
+        r"""Sets the vpc of this JobNodeInfo.
 
         :param vpc: The vpc of this JobNodeInfo.
         :type vpc: :class:`huaweicloudsdkdrs.v5.JobNodeVpcInfo`
@@ -92,7 +92,7 @@ class JobNodeInfo:
 
     @property
     def base_info(self):
-        """Gets the base_info of this JobNodeInfo.
+        r"""Gets the base_info of this JobNodeInfo.
 
         :return: The base_info of this JobNodeInfo.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobNodeBaseInfo`
@@ -101,7 +101,7 @@ class JobNodeInfo:
 
     @base_info.setter
     def base_info(self, base_info):
-        """Sets the base_info of this JobNodeInfo.
+        r"""Sets the base_info of this JobNodeInfo.
 
         :param base_info: The base_info of this JobNodeInfo.
         :type base_info: :class:`huaweicloudsdkdrs.v5.JobNodeBaseInfo`

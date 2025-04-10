@@ -25,7 +25,7 @@ class ApiConfig:
     }
 
     def __init__(self, name=None):
-        """ApiConfig
+        r"""ApiConfig
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ApiConfig:
 
     @property
     def name(self):
-        """Gets the name of this ApiConfig.
+        r"""Gets the name of this ApiConfig.
 
         资产名称
 
@@ -54,7 +54,7 @@ class ApiConfig:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiConfig.
+        r"""Sets the name of this ApiConfig.
 
         资产名称
 

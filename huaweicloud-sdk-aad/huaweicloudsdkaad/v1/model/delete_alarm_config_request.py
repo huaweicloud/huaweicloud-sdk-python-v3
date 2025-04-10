@@ -23,7 +23,7 @@ class DeleteAlarmConfigRequest:
     }
 
     def __init__(self):
-        """DeleteAlarmConfigRequest
+        r"""DeleteAlarmConfigRequest
 
         The model defined in huaweicloud sdk
 

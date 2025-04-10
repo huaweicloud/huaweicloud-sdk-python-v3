@@ -25,7 +25,7 @@ class ShowDetailOfConnectionRequest:
     }
 
     def __init__(self, connection_id=None):
-        """ShowDetailOfConnectionRequest
+        r"""ShowDetailOfConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDetailOfConnectionRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ShowDetailOfConnectionRequest.
+        r"""Gets the connection_id of this ShowDetailOfConnectionRequest.
 
         指定查询的目标连接ID
 
@@ -53,7 +53,7 @@ class ShowDetailOfConnectionRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ShowDetailOfConnectionRequest.
+        r"""Sets the connection_id of this ShowDetailOfConnectionRequest.
 
         指定查询的目标连接ID
 

@@ -25,7 +25,7 @@ class PrivateProviderDescriptionPrimitiveTypeHolder:
     }
 
     def __init__(self, provider_description=None):
-        """PrivateProviderDescriptionPrimitiveTypeHolder
+        r"""PrivateProviderDescriptionPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PrivateProviderDescriptionPrimitiveTypeHolder:
 
     @property
     def provider_description(self):
-        """Gets the provider_description of this PrivateProviderDescriptionPrimitiveTypeHolder.
+        r"""Gets the provider_description of this PrivateProviderDescriptionPrimitiveTypeHolder.
 
         私有provider（private-provider）的描述。可用于客户识别被管理的私有provider。
 
@@ -54,7 +54,7 @@ class PrivateProviderDescriptionPrimitiveTypeHolder:
 
     @provider_description.setter
     def provider_description(self, provider_description):
-        """Sets the provider_description of this PrivateProviderDescriptionPrimitiveTypeHolder.
+        r"""Sets the provider_description of this PrivateProviderDescriptionPrimitiveTypeHolder.
 
         私有provider（private-provider）的描述。可用于客户识别被管理的私有provider。
 

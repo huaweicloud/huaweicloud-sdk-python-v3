@@ -29,7 +29,7 @@ class DevicesCalculation:
     }
 
     def __init__(self, normal_devices=None, gateway_devices=None, subsets_devices=None):
-        """DevicesCalculation
+        r"""DevicesCalculation
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DevicesCalculation:
 
     @property
     def normal_devices(self):
-        """Gets the normal_devices of this DevicesCalculation.
+        r"""Gets the normal_devices of this DevicesCalculation.
 
         :return: The normal_devices of this DevicesCalculation.
         :rtype: :class:`huaweicloudsdkroma.v2.Calculation`
@@ -66,7 +66,7 @@ class DevicesCalculation:
 
     @normal_devices.setter
     def normal_devices(self, normal_devices):
-        """Sets the normal_devices of this DevicesCalculation.
+        r"""Sets the normal_devices of this DevicesCalculation.
 
         :param normal_devices: The normal_devices of this DevicesCalculation.
         :type normal_devices: :class:`huaweicloudsdkroma.v2.Calculation`
@@ -75,7 +75,7 @@ class DevicesCalculation:
 
     @property
     def gateway_devices(self):
-        """Gets the gateway_devices of this DevicesCalculation.
+        r"""Gets the gateway_devices of this DevicesCalculation.
 
         :return: The gateway_devices of this DevicesCalculation.
         :rtype: :class:`huaweicloudsdkroma.v2.Calculation`
@@ -84,7 +84,7 @@ class DevicesCalculation:
 
     @gateway_devices.setter
     def gateway_devices(self, gateway_devices):
-        """Sets the gateway_devices of this DevicesCalculation.
+        r"""Sets the gateway_devices of this DevicesCalculation.
 
         :param gateway_devices: The gateway_devices of this DevicesCalculation.
         :type gateway_devices: :class:`huaweicloudsdkroma.v2.Calculation`
@@ -93,7 +93,7 @@ class DevicesCalculation:
 
     @property
     def subsets_devices(self):
-        """Gets the subsets_devices of this DevicesCalculation.
+        r"""Gets the subsets_devices of this DevicesCalculation.
 
         :return: The subsets_devices of this DevicesCalculation.
         :rtype: :class:`huaweicloudsdkroma.v2.Calculation`
@@ -102,7 +102,7 @@ class DevicesCalculation:
 
     @subsets_devices.setter
     def subsets_devices(self, subsets_devices):
-        """Sets the subsets_devices of this DevicesCalculation.
+        r"""Sets the subsets_devices of this DevicesCalculation.
 
         :param subsets_devices: The subsets_devices of this DevicesCalculation.
         :type subsets_devices: :class:`huaweicloudsdkroma.v2.Calculation`

@@ -25,7 +25,7 @@ class ListEcnWithErRequest:
     }
 
     def __init__(self, ecn_id=None):
-        """ListEcnWithErRequest
+        r"""ListEcnWithErRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListEcnWithErRequest:
 
     @property
     def ecn_id(self):
-        """Gets the ecn_id of this ListEcnWithErRequest.
+        r"""Gets the ecn_id of this ListEcnWithErRequest.
 
         企业连接网络ID
 
@@ -53,7 +53,7 @@ class ListEcnWithErRequest:
 
     @ecn_id.setter
     def ecn_id(self, ecn_id):
-        """Sets the ecn_id of this ListEcnWithErRequest.
+        r"""Sets the ecn_id of this ListEcnWithErRequest.
 
         企业连接网络ID
 

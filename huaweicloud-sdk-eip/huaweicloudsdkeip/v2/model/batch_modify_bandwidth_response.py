@@ -28,7 +28,7 @@ class BatchModifyBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, success_resources=None, failure_resources=None):
-        """BatchModifyBandwidthResponse
+        r"""BatchModifyBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchModifyBandwidthResponse(SdkResponse):
 
     @property
     def success_resources(self):
-        """Gets the success_resources of this BatchModifyBandwidthResponse.
+        r"""Gets the success_resources of this BatchModifyBandwidthResponse.
 
         成功资源
 
@@ -62,7 +62,7 @@ class BatchModifyBandwidthResponse(SdkResponse):
 
     @success_resources.setter
     def success_resources(self, success_resources):
-        """Sets the success_resources of this BatchModifyBandwidthResponse.
+        r"""Sets the success_resources of this BatchModifyBandwidthResponse.
 
         成功资源
 
@@ -73,7 +73,7 @@ class BatchModifyBandwidthResponse(SdkResponse):
 
     @property
     def failure_resources(self):
-        """Gets the failure_resources of this BatchModifyBandwidthResponse.
+        r"""Gets the failure_resources of this BatchModifyBandwidthResponse.
 
         失败资源
 
@@ -84,7 +84,7 @@ class BatchModifyBandwidthResponse(SdkResponse):
 
     @failure_resources.setter
     def failure_resources(self, failure_resources):
-        """Sets the failure_resources of this BatchModifyBandwidthResponse.
+        r"""Sets the failure_resources of this BatchModifyBandwidthResponse.
 
         失败资源
 

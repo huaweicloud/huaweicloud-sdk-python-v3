@@ -35,7 +35,7 @@ class OrgConformancePackRequestBody:
     }
 
     def __init__(self, name=None, excluded_accounts=None, template_key=None, template_body=None, template_uri=None, vars_structure=None):
-        """OrgConformancePackRequestBody
+        r"""OrgConformancePackRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class OrgConformancePackRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this OrgConformancePackRequestBody.
+        r"""Gets the name of this OrgConformancePackRequestBody.
 
         组织合规规则包名称。
 
@@ -88,7 +88,7 @@ class OrgConformancePackRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OrgConformancePackRequestBody.
+        r"""Sets the name of this OrgConformancePackRequestBody.
 
         组织合规规则包名称。
 
@@ -99,7 +99,7 @@ class OrgConformancePackRequestBody:
 
     @property
     def excluded_accounts(self):
-        """Gets the excluded_accounts of this OrgConformancePackRequestBody.
+        r"""Gets the excluded_accounts of this OrgConformancePackRequestBody.
 
         排除配置合规包的帐号。
 
@@ -110,7 +110,7 @@ class OrgConformancePackRequestBody:
 
     @excluded_accounts.setter
     def excluded_accounts(self, excluded_accounts):
-        """Sets the excluded_accounts of this OrgConformancePackRequestBody.
+        r"""Sets the excluded_accounts of this OrgConformancePackRequestBody.
 
         排除配置合规包的帐号。
 
@@ -121,7 +121,7 @@ class OrgConformancePackRequestBody:
 
     @property
     def template_key(self):
-        """Gets the template_key of this OrgConformancePackRequestBody.
+        r"""Gets the template_key of this OrgConformancePackRequestBody.
 
         预定义合规规则包模板名称。
 
@@ -132,7 +132,7 @@ class OrgConformancePackRequestBody:
 
     @template_key.setter
     def template_key(self, template_key):
-        """Sets the template_key of this OrgConformancePackRequestBody.
+        r"""Sets the template_key of this OrgConformancePackRequestBody.
 
         预定义合规规则包模板名称。
 
@@ -143,7 +143,7 @@ class OrgConformancePackRequestBody:
 
     @property
     def template_body(self):
-        """Gets the template_body of this OrgConformancePackRequestBody.
+        r"""Gets the template_body of this OrgConformancePackRequestBody.
 
         自定义合规规则包内容。
 
@@ -154,7 +154,7 @@ class OrgConformancePackRequestBody:
 
     @template_body.setter
     def template_body(self, template_body):
-        """Sets the template_body of this OrgConformancePackRequestBody.
+        r"""Sets the template_body of this OrgConformancePackRequestBody.
 
         自定义合规规则包内容。
 
@@ -165,7 +165,7 @@ class OrgConformancePackRequestBody:
 
     @property
     def template_uri(self):
-        """Gets the template_uri of this OrgConformancePackRequestBody.
+        r"""Gets the template_uri of this OrgConformancePackRequestBody.
 
         合规规则包模板OBS地址。
 
@@ -176,7 +176,7 @@ class OrgConformancePackRequestBody:
 
     @template_uri.setter
     def template_uri(self, template_uri):
-        """Sets the template_uri of this OrgConformancePackRequestBody.
+        r"""Sets the template_uri of this OrgConformancePackRequestBody.
 
         合规规则包模板OBS地址。
 
@@ -187,7 +187,7 @@ class OrgConformancePackRequestBody:
 
     @property
     def vars_structure(self):
-        """Gets the vars_structure of this OrgConformancePackRequestBody.
+        r"""Gets the vars_structure of this OrgConformancePackRequestBody.
 
         合规规则包参数。
 
@@ -198,7 +198,7 @@ class OrgConformancePackRequestBody:
 
     @vars_structure.setter
     def vars_structure(self, vars_structure):
-        """Sets the vars_structure of this OrgConformancePackRequestBody.
+        r"""Sets the vars_structure of this OrgConformancePackRequestBody.
 
         合规规则包参数。
 

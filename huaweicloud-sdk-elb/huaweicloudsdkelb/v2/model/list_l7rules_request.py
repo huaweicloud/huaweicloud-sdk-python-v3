@@ -47,7 +47,7 @@ class ListL7rulesRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, l7policy_id=None, id=None, admin_state_up=None, type=None, compare_type=None, invert=None, key=None, value=None, provisioning_status=None):
-        """ListL7rulesRequest
+        r"""ListL7rulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class ListL7rulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListL7rulesRequest.
+        r"""Gets the limit of this ListL7rulesRequest.
 
         分页查询中每页的转发规则个数
 
@@ -130,7 +130,7 @@ class ListL7rulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListL7rulesRequest.
+        r"""Sets the limit of this ListL7rulesRequest.
 
         分页查询中每页的转发规则个数
 
@@ -141,7 +141,7 @@ class ListL7rulesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListL7rulesRequest.
+        r"""Gets the marker of this ListL7rulesRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的转发规则的id。不指定时表示查询第一页。
 
@@ -152,7 +152,7 @@ class ListL7rulesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListL7rulesRequest.
+        r"""Sets the marker of this ListL7rulesRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的转发规则的id。不指定时表示查询第一页。
 
@@ -163,7 +163,7 @@ class ListL7rulesRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListL7rulesRequest.
+        r"""Gets the page_reverse of this ListL7rulesRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -174,7 +174,7 @@ class ListL7rulesRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListL7rulesRequest.
+        r"""Sets the page_reverse of this ListL7rulesRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -185,7 +185,7 @@ class ListL7rulesRequest:
 
     @property
     def l7policy_id(self):
-        """Gets the l7policy_id of this ListL7rulesRequest.
+        r"""Gets the l7policy_id of this ListL7rulesRequest.
 
         转发策略id
 
@@ -196,7 +196,7 @@ class ListL7rulesRequest:
 
     @l7policy_id.setter
     def l7policy_id(self, l7policy_id):
-        """Sets the l7policy_id of this ListL7rulesRequest.
+        r"""Sets the l7policy_id of this ListL7rulesRequest.
 
         转发策略id
 
@@ -207,7 +207,7 @@ class ListL7rulesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListL7rulesRequest.
+        r"""Gets the id of this ListL7rulesRequest.
 
         转发规则ID。
 
@@ -218,7 +218,7 @@ class ListL7rulesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListL7rulesRequest.
+        r"""Sets the id of this ListL7rulesRequest.
 
         转发规则ID。
 
@@ -229,7 +229,7 @@ class ListL7rulesRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListL7rulesRequest.
+        r"""Gets the admin_state_up of this ListL7rulesRequest.
 
         转发规则的管理状态；取值范围： true/false。该字段为预留字段，暂未启用。默认为true。
 
@@ -240,7 +240,7 @@ class ListL7rulesRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListL7rulesRequest.
+        r"""Sets the admin_state_up of this ListL7rulesRequest.
 
         转发规则的管理状态；取值范围： true/false。该字段为预留字段，暂未启用。默认为true。
 
@@ -251,7 +251,7 @@ class ListL7rulesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListL7rulesRequest.
+        r"""Gets the type of this ListL7rulesRequest.
 
         转发规则的匹配类型。取值范围：HOST_NAME：匹配请求中的域名；PATH：匹配请求中的路径；同一个转发策略下转发规则的type不能重复。
 
@@ -262,7 +262,7 @@ class ListL7rulesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListL7rulesRequest.
+        r"""Sets the type of this ListL7rulesRequest.
 
         转发规则的匹配类型。取值范围：HOST_NAME：匹配请求中的域名；PATH：匹配请求中的路径；同一个转发策略下转发规则的type不能重复。
 
@@ -273,7 +273,7 @@ class ListL7rulesRequest:
 
     @property
     def compare_type(self):
-        """Gets the compare_type of this ListL7rulesRequest.
+        r"""Gets the compare_type of this ListL7rulesRequest.
 
         转发匹配方式： type为HOST_NAME时，取值范围：EQUAL_TO：精确匹配； type为PATH时，取值范围：REGEX：正则匹配；STARTS_WITH：前缀匹配；EQUAL_TO：精确匹配。
 
@@ -284,7 +284,7 @@ class ListL7rulesRequest:
 
     @compare_type.setter
     def compare_type(self, compare_type):
-        """Sets the compare_type of this ListL7rulesRequest.
+        r"""Sets the compare_type of this ListL7rulesRequest.
 
         转发匹配方式： type为HOST_NAME时，取值范围：EQUAL_TO：精确匹配； type为PATH时，取值范围：REGEX：正则匹配；STARTS_WITH：前缀匹配；EQUAL_TO：精确匹配。
 
@@ -295,7 +295,7 @@ class ListL7rulesRequest:
 
     @property
     def invert(self):
-        """Gets the invert of this ListL7rulesRequest.
+        r"""Gets the invert of this ListL7rulesRequest.
 
         是否反向匹配；取值范围：true/false。默认值：false；该字段为预留字段，暂未启用。
 
@@ -306,7 +306,7 @@ class ListL7rulesRequest:
 
     @invert.setter
     def invert(self, invert):
-        """Sets the invert of this ListL7rulesRequest.
+        r"""Sets the invert of this ListL7rulesRequest.
 
         是否反向匹配；取值范围：true/false。默认值：false；该字段为预留字段，暂未启用。
 
@@ -317,7 +317,7 @@ class ListL7rulesRequest:
 
     @property
     def key(self):
-        """Gets the key of this ListL7rulesRequest.
+        r"""Gets the key of this ListL7rulesRequest.
 
         匹配内容的键值。默认为null。该字段为预留字段，暂未启用。
 
@@ -328,7 +328,7 @@ class ListL7rulesRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ListL7rulesRequest.
+        r"""Sets the key of this ListL7rulesRequest.
 
         匹配内容的键值。默认为null。该字段为预留字段，暂未启用。
 
@@ -339,7 +339,7 @@ class ListL7rulesRequest:
 
     @property
     def value(self):
-        """Gets the value of this ListL7rulesRequest.
+        r"""Gets the value of this ListL7rulesRequest.
 
         匹配内容的值。 当type为HOST_NAME时，取值范围：String (100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。 当type为PATH时，取值范围：String (128)。当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:| /()[]{}，且必须以\"/\"开头。
 
@@ -350,7 +350,7 @@ class ListL7rulesRequest:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListL7rulesRequest.
+        r"""Sets the value of this ListL7rulesRequest.
 
         匹配内容的值。 当type为HOST_NAME时，取值范围：String (100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。 当type为PATH时，取值范围：String (128)。当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:| /()[]{}，且必须以\"/\"开头。
 
@@ -361,7 +361,7 @@ class ListL7rulesRequest:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this ListL7rulesRequest.
+        r"""Gets the provisioning_status of this ListL7rulesRequest.
 
         转发规则的配置状态，可以为ACTIVE、PENDING_CREATE 或者ERROR。默认值：ACTIVE；该字段为预留字段，暂未启用。
 
@@ -372,7 +372,7 @@ class ListL7rulesRequest:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this ListL7rulesRequest.
+        r"""Sets the provisioning_status of this ListL7rulesRequest.
 
         转发规则的配置状态，可以为ACTIVE、PENDING_CREATE 或者ERROR。默认值：ACTIVE；该字段为预留字段，暂未启用。
 

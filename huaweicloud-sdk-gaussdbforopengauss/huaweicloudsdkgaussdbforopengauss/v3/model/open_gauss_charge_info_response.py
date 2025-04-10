@@ -33,7 +33,7 @@ class OpenGaussChargeInfoResponse:
     }
 
     def __init__(self, charge_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None):
-        """OpenGaussChargeInfoResponse
+        r"""OpenGaussChargeInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class OpenGaussChargeInfoResponse:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this OpenGaussChargeInfoResponse.
+        r"""Gets the charge_mode of this OpenGaussChargeInfoResponse.
 
         计费模式。postPaid：后付费，即按需付费。prePaid：预付费，即包年/包月。
 
@@ -81,7 +81,7 @@ class OpenGaussChargeInfoResponse:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this OpenGaussChargeInfoResponse.
+        r"""Sets the charge_mode of this OpenGaussChargeInfoResponse.
 
         计费模式。postPaid：后付费，即按需付费。prePaid：预付费，即包年/包月。
 
@@ -92,7 +92,7 @@ class OpenGaussChargeInfoResponse:
 
     @property
     def period_type(self):
-        """Gets the period_type of this OpenGaussChargeInfoResponse.
+        r"""Gets the period_type of this OpenGaussChargeInfoResponse.
 
         订购周期类型。month：包月。year：包年。 说明： “charge_mode”为“prePaid”时生效，且为必选值。
 
@@ -103,7 +103,7 @@ class OpenGaussChargeInfoResponse:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this OpenGaussChargeInfoResponse.
+        r"""Sets the period_type of this OpenGaussChargeInfoResponse.
 
         订购周期类型。month：包月。year：包年。 说明： “charge_mode”为“prePaid”时生效，且为必选值。
 
@@ -114,7 +114,7 @@ class OpenGaussChargeInfoResponse:
 
     @property
     def period_num(self):
-        """Gets the period_num of this OpenGaussChargeInfoResponse.
+        r"""Gets the period_num of this OpenGaussChargeInfoResponse.
 
         “charge_mode”为“prePaid”时生效，且为必选值，指定订购的时间。  取值范围：  当“period_type”为“month”时，取值为1~9。 当“period_type”为“year”时，取值为1~3。
 
@@ -125,7 +125,7 @@ class OpenGaussChargeInfoResponse:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this OpenGaussChargeInfoResponse.
+        r"""Sets the period_num of this OpenGaussChargeInfoResponse.
 
         “charge_mode”为“prePaid”时生效，且为必选值，指定订购的时间。  取值范围：  当“period_type”为“month”时，取值为1~9。 当“period_type”为“year”时，取值为1~3。
 
@@ -136,7 +136,7 @@ class OpenGaussChargeInfoResponse:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this OpenGaussChargeInfoResponse.
+        r"""Gets the is_auto_renew of this OpenGaussChargeInfoResponse.
 
         创建包周期实例时可指定，表示是否自动续订，续订的周期和原周期相同，且续订时会自动支付。  true，表示自动续订。 false，表示不自动续订，默认为该方式。
 
@@ -147,7 +147,7 @@ class OpenGaussChargeInfoResponse:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this OpenGaussChargeInfoResponse.
+        r"""Sets the is_auto_renew of this OpenGaussChargeInfoResponse.
 
         创建包周期实例时可指定，表示是否自动续订，续订的周期和原周期相同，且续订时会自动支付。  true，表示自动续订。 false，表示不自动续订，默认为该方式。
 
@@ -158,7 +158,7 @@ class OpenGaussChargeInfoResponse:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this OpenGaussChargeInfoResponse.
+        r"""Gets the is_auto_pay of this OpenGaussChargeInfoResponse.
 
         创建包周期实例时可指定，表示是否自动从账户中支付，该字段不影响自动续订的支付方式。  true，表示自动从账户中支付。 false，表示手动从账户中支付，默认为该支付方式。
 
@@ -169,7 +169,7 @@ class OpenGaussChargeInfoResponse:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this OpenGaussChargeInfoResponse.
+        r"""Sets the is_auto_pay of this OpenGaussChargeInfoResponse.
 
         创建包周期实例时可指定，表示是否自动从账户中支付，该字段不影响自动续订的支付方式。  true，表示自动从账户中支付。 false，表示手动从账户中支付，默认为该支付方式。
 

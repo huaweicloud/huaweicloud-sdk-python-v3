@@ -27,7 +27,7 @@ class DeleteAccessKeyV5Request:
     }
 
     def __init__(self, user_id=None, access_key_id=None):
-        """DeleteAccessKeyV5Request
+        r"""DeleteAccessKeyV5Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteAccessKeyV5Request:
 
     @property
     def user_id(self):
-        """Gets the user_id of this DeleteAccessKeyV5Request.
+        r"""Gets the user_id of this DeleteAccessKeyV5Request.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -59,7 +59,7 @@ class DeleteAccessKeyV5Request:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this DeleteAccessKeyV5Request.
+        r"""Sets the user_id of this DeleteAccessKeyV5Request.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -70,7 +70,7 @@ class DeleteAccessKeyV5Request:
 
     @property
     def access_key_id(self):
-        """Gets the access_key_id of this DeleteAccessKeyV5Request.
+        r"""Gets the access_key_id of this DeleteAccessKeyV5Request.
 
         永久访问密钥ID，即AK。
 
@@ -81,7 +81,7 @@ class DeleteAccessKeyV5Request:
 
     @access_key_id.setter
     def access_key_id(self, access_key_id):
-        """Sets the access_key_id of this DeleteAccessKeyV5Request.
+        r"""Sets the access_key_id of this DeleteAccessKeyV5Request.
 
         永久访问密钥ID，即AK。
 

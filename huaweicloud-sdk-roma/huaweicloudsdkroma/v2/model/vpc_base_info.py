@@ -29,7 +29,7 @@ class VpcBaseInfo:
     }
 
     def __init__(self, ecs_id=None, ecs_name=None, cascade_flag=None):
-        """VpcBaseInfo
+        r"""VpcBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VpcBaseInfo:
 
     @property
     def ecs_id(self):
-        """Gets the ecs_id of this VpcBaseInfo.
+        r"""Gets the ecs_id of this VpcBaseInfo.
 
         云服务器ID
 
@@ -68,7 +68,7 @@ class VpcBaseInfo:
 
     @ecs_id.setter
     def ecs_id(self, ecs_id):
-        """Sets the ecs_id of this VpcBaseInfo.
+        r"""Sets the ecs_id of this VpcBaseInfo.
 
         云服务器ID
 
@@ -79,7 +79,7 @@ class VpcBaseInfo:
 
     @property
     def ecs_name(self):
-        """Gets the ecs_name of this VpcBaseInfo.
+        r"""Gets the ecs_name of this VpcBaseInfo.
 
         云服务器名称
 
@@ -90,7 +90,7 @@ class VpcBaseInfo:
 
     @ecs_name.setter
     def ecs_name(self, ecs_name):
-        """Sets the ecs_name of this VpcBaseInfo.
+        r"""Sets the ecs_name of this VpcBaseInfo.
 
         云服务器名称
 
@@ -101,7 +101,7 @@ class VpcBaseInfo:
 
     @property
     def cascade_flag(self):
-        """Gets the cascade_flag of this VpcBaseInfo.
+        r"""Gets the cascade_flag of this VpcBaseInfo.
 
         是否使用级联方式  暂不支持
 
@@ -112,7 +112,7 @@ class VpcBaseInfo:
 
     @cascade_flag.setter
     def cascade_flag(self, cascade_flag):
-        """Sets the cascade_flag of this VpcBaseInfo.
+        r"""Sets the cascade_flag of this VpcBaseInfo.
 
         是否使用级联方式  暂不支持
 

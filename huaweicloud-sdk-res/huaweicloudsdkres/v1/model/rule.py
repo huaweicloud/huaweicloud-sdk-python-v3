@@ -29,7 +29,7 @@ class Rule:
     }
 
     def __init__(self, table_name=None, rule_ratio=None, priority=None):
-        """Rule
+        r"""Rule
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Rule:
 
     @property
     def table_name(self):
-        """Gets the table_name of this Rule.
+        r"""Gets the table_name of this Rule.
 
         候选集表名。
 
@@ -65,7 +65,7 @@ class Rule:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this Rule.
+        r"""Sets the table_name of this Rule.
 
         候选集表名。
 
@@ -76,7 +76,7 @@ class Rule:
 
     @property
     def rule_ratio(self):
-        """Gets the rule_ratio of this Rule.
+        r"""Gets the rule_ratio of this Rule.
 
         规则占比。
 
@@ -87,7 +87,7 @@ class Rule:
 
     @rule_ratio.setter
     def rule_ratio(self, rule_ratio):
-        """Sets the rule_ratio of this Rule.
+        r"""Sets the rule_ratio of this Rule.
 
         规则占比。
 
@@ -98,7 +98,7 @@ class Rule:
 
     @property
     def priority(self):
-        """Gets the priority of this Rule.
+        r"""Gets the priority of this Rule.
 
         优先级。
 
@@ -109,7 +109,7 @@ class Rule:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this Rule.
+        r"""Sets the priority of this Rule.
 
         优先级。
 

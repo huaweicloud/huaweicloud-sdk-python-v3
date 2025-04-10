@@ -37,7 +37,7 @@ class PoliciesClient:
     }
 
     def __init__(self, automatic_reconnection_interval=None, session_persistence_time=None, autoclose_monitor_after_locked=None, autoclose_monitor_options=None, forbid_screen_capture=None, client_machine_join_domain=None, client_type=None):
-        """PoliciesClient
+        r"""PoliciesClient
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PoliciesClient:
 
     @property
     def automatic_reconnection_interval(self):
-        """Gets the automatic_reconnection_interval of this PoliciesClient.
+        r"""Gets the automatic_reconnection_interval of this PoliciesClient.
 
         自动重连间隔（秒）。取值范围为[1-50]。默认：5。
 
@@ -96,7 +96,7 @@ class PoliciesClient:
 
     @automatic_reconnection_interval.setter
     def automatic_reconnection_interval(self, automatic_reconnection_interval):
-        """Sets the automatic_reconnection_interval of this PoliciesClient.
+        r"""Sets the automatic_reconnection_interval of this PoliciesClient.
 
         自动重连间隔（秒）。取值范围为[1-50]。默认：5。
 
@@ -107,7 +107,7 @@ class PoliciesClient:
 
     @property
     def session_persistence_time(self):
-        """Gets the session_persistence_time of this PoliciesClient.
+        r"""Gets the session_persistence_time of this PoliciesClient.
 
         自动重连会话保持时长（秒）。取值范围为[0-180]。默认：180。
 
@@ -118,7 +118,7 @@ class PoliciesClient:
 
     @session_persistence_time.setter
     def session_persistence_time(self, session_persistence_time):
-        """Sets the session_persistence_time of this PoliciesClient.
+        r"""Sets the session_persistence_time of this PoliciesClient.
 
         自动重连会话保持时长（秒）。取值范围为[0-180]。默认：180。
 
@@ -129,7 +129,7 @@ class PoliciesClient:
 
     @property
     def autoclose_monitor_after_locked(self):
-        """Gets the autoclose_monitor_after_locked of this PoliciesClient.
+        r"""Gets the autoclose_monitor_after_locked of this PoliciesClient.
 
         锁屏后自动关闭本地显示器。取值为： false：表示关闭。 true：表示开启。
 
@@ -140,7 +140,7 @@ class PoliciesClient:
 
     @autoclose_monitor_after_locked.setter
     def autoclose_monitor_after_locked(self, autoclose_monitor_after_locked):
-        """Sets the autoclose_monitor_after_locked of this PoliciesClient.
+        r"""Sets the autoclose_monitor_after_locked of this PoliciesClient.
 
         锁屏后自动关闭本地显示器。取值为： false：表示关闭。 true：表示开启。
 
@@ -151,7 +151,7 @@ class PoliciesClient:
 
     @property
     def autoclose_monitor_options(self):
-        """Gets the autoclose_monitor_options of this PoliciesClient.
+        r"""Gets the autoclose_monitor_options of this PoliciesClient.
 
         :return: The autoclose_monitor_options of this PoliciesClient.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesClientAutocloseMonitorOptions`
@@ -160,7 +160,7 @@ class PoliciesClient:
 
     @autoclose_monitor_options.setter
     def autoclose_monitor_options(self, autoclose_monitor_options):
-        """Sets the autoclose_monitor_options of this PoliciesClient.
+        r"""Sets the autoclose_monitor_options of this PoliciesClient.
 
         :param autoclose_monitor_options: The autoclose_monitor_options of this PoliciesClient.
         :type autoclose_monitor_options: :class:`huaweicloudsdkworkspace.v2.PoliciesClientAutocloseMonitorOptions`
@@ -169,7 +169,7 @@ class PoliciesClient:
 
     @property
     def forbid_screen_capture(self):
-        """Gets the forbid_screen_capture of this PoliciesClient.
+        r"""Gets the forbid_screen_capture of this PoliciesClient.
 
         防截屏策略开关。 false：表示关闭。 true：表示开启。
 
@@ -180,7 +180,7 @@ class PoliciesClient:
 
     @forbid_screen_capture.setter
     def forbid_screen_capture(self, forbid_screen_capture):
-        """Sets the forbid_screen_capture of this PoliciesClient.
+        r"""Sets the forbid_screen_capture of this PoliciesClient.
 
         防截屏策略开关。 false：表示关闭。 true：表示开启。
 
@@ -191,7 +191,7 @@ class PoliciesClient:
 
     @property
     def client_machine_join_domain(self):
-        """Gets the client_machine_join_domain of this PoliciesClient.
+        r"""Gets the client_machine_join_domain of this PoliciesClient.
 
         终端机器加域校验开关。 false：表示关闭。 true：表示开启。
 
@@ -202,7 +202,7 @@ class PoliciesClient:
 
     @client_machine_join_domain.setter
     def client_machine_join_domain(self, client_machine_join_domain):
-        """Sets the client_machine_join_domain of this PoliciesClient.
+        r"""Sets the client_machine_join_domain of this PoliciesClient.
 
         终端机器加域校验开关。 false：表示关闭。 true：表示开启。
 
@@ -213,7 +213,7 @@ class PoliciesClient:
 
     @property
     def client_type(self):
-        """Gets the client_type of this PoliciesClient.
+        r"""Gets the client_type of this PoliciesClient.
 
         :return: The client_type of this PoliciesClient.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesClientClientType`
@@ -222,7 +222,7 @@ class PoliciesClient:
 
     @client_type.setter
     def client_type(self, client_type):
-        """Sets the client_type of this PoliciesClient.
+        r"""Sets the client_type of this PoliciesClient.
 
         :param client_type: The client_type of this PoliciesClient.
         :type client_type: :class:`huaweicloudsdkworkspace.v2.PoliciesClientClientType`

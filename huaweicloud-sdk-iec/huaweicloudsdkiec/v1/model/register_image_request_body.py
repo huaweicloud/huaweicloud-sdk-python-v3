@@ -27,7 +27,7 @@ class RegisterImageRequestBody:
     }
 
     def __init__(self, image_id=None, region_id=None):
-        """RegisterImageRequestBody
+        r"""RegisterImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RegisterImageRequestBody:
 
     @property
     def image_id(self):
-        """Gets the image_id of this RegisterImageRequestBody.
+        r"""Gets the image_id of this RegisterImageRequestBody.
 
         注册到边缘云上的公有云IMS的私有镜像id。
 
@@ -61,7 +61,7 @@ class RegisterImageRequestBody:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this RegisterImageRequestBody.
+        r"""Sets the image_id of this RegisterImageRequestBody.
 
         注册到边缘云上的公有云IMS的私有镜像id。
 
@@ -72,7 +72,7 @@ class RegisterImageRequestBody:
 
     @property
     def region_id(self):
-        """Gets the region_id of this RegisterImageRequestBody.
+        r"""Gets the region_id of this RegisterImageRequestBody.
 
         原私有镜像所在公有云的region。
 
@@ -83,7 +83,7 @@ class RegisterImageRequestBody:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this RegisterImageRequestBody.
+        r"""Sets the region_id of this RegisterImageRequestBody.
 
         原私有镜像所在公有云的region。
 

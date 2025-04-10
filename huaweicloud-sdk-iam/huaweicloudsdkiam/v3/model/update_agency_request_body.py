@@ -25,7 +25,7 @@ class UpdateAgencyRequestBody:
     }
 
     def __init__(self, agency=None):
-        """UpdateAgencyRequestBody
+        r"""UpdateAgencyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateAgencyRequestBody:
 
     @property
     def agency(self):
-        """Gets the agency of this UpdateAgencyRequestBody.
+        r"""Gets the agency of this UpdateAgencyRequestBody.
 
         :return: The agency of this UpdateAgencyRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateAgencyOption`
@@ -51,7 +51,7 @@ class UpdateAgencyRequestBody:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this UpdateAgencyRequestBody.
+        r"""Sets the agency of this UpdateAgencyRequestBody.
 
         :param agency: The agency of this UpdateAgencyRequestBody.
         :type agency: :class:`huaweicloudsdkiam.v3.UpdateAgencyOption`

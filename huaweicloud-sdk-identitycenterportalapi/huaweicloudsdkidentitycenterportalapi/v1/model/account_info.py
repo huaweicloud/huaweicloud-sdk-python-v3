@@ -29,7 +29,7 @@ class AccountInfo:
     }
 
     def __init__(self, account_id=None, account_name=None, email_address=None):
-        """AccountInfo
+        r"""AccountInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AccountInfo:
 
     @property
     def account_id(self):
-        """Gets the account_id of this AccountInfo.
+        r"""Gets the account_id of this AccountInfo.
 
         分配给用户的账号的全局唯一标识符（ID）
 
@@ -68,7 +68,7 @@ class AccountInfo:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this AccountInfo.
+        r"""Sets the account_id of this AccountInfo.
 
         分配给用户的账号的全局唯一标识符（ID）
 
@@ -79,7 +79,7 @@ class AccountInfo:
 
     @property
     def account_name(self):
-        """Gets the account_name of this AccountInfo.
+        r"""Gets the account_name of this AccountInfo.
 
         分配给用户的账号的名称
 
@@ -90,7 +90,7 @@ class AccountInfo:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this AccountInfo.
+        r"""Sets the account_name of this AccountInfo.
 
         分配给用户的账号的名称
 
@@ -101,7 +101,7 @@ class AccountInfo:
 
     @property
     def email_address(self):
-        """Gets the email_address of this AccountInfo.
+        r"""Gets the email_address of this AccountInfo.
 
         分配给用户的账号的电子邮箱地址
 
@@ -112,7 +112,7 @@ class AccountInfo:
 
     @email_address.setter
     def email_address(self, email_address):
-        """Sets the email_address of this AccountInfo.
+        r"""Sets the email_address of this AccountInfo.
 
         分配给用户的账号的电子邮箱地址
 

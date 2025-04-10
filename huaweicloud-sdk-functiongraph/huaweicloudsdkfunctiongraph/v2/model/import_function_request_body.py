@@ -33,7 +33,7 @@ class ImportFunctionRequestBody:
     }
 
     def __init__(self, func_name=None, file_name=None, file_type=None, file_code=None, package=None):
-        """ImportFunctionRequestBody
+        r"""ImportFunctionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ImportFunctionRequestBody:
 
     @property
     def func_name(self):
-        """Gets the func_name of this ImportFunctionRequestBody.
+        r"""Gets the func_name of this ImportFunctionRequestBody.
 
         函数名
 
@@ -78,7 +78,7 @@ class ImportFunctionRequestBody:
 
     @func_name.setter
     def func_name(self, func_name):
-        """Sets the func_name of this ImportFunctionRequestBody.
+        r"""Sets the func_name of this ImportFunctionRequestBody.
 
         函数名
 
@@ -89,7 +89,7 @@ class ImportFunctionRequestBody:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ImportFunctionRequestBody.
+        r"""Gets the file_name of this ImportFunctionRequestBody.
 
         文件名
 
@@ -100,7 +100,7 @@ class ImportFunctionRequestBody:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ImportFunctionRequestBody.
+        r"""Sets the file_name of this ImportFunctionRequestBody.
 
         文件名
 
@@ -111,7 +111,7 @@ class ImportFunctionRequestBody:
 
     @property
     def file_type(self):
-        """Gets the file_type of this ImportFunctionRequestBody.
+        r"""Gets the file_type of this ImportFunctionRequestBody.
 
         文件类型
 
@@ -122,7 +122,7 @@ class ImportFunctionRequestBody:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this ImportFunctionRequestBody.
+        r"""Sets the file_type of this ImportFunctionRequestBody.
 
         文件类型
 
@@ -133,7 +133,7 @@ class ImportFunctionRequestBody:
 
     @property
     def file_code(self):
-        """Gets the file_code of this ImportFunctionRequestBody.
+        r"""Gets the file_code of this ImportFunctionRequestBody.
 
         函数代码。代码必须要进行base64编码
 
@@ -144,7 +144,7 @@ class ImportFunctionRequestBody:
 
     @file_code.setter
     def file_code(self, file_code):
-        """Sets the file_code of this ImportFunctionRequestBody.
+        r"""Sets the file_code of this ImportFunctionRequestBody.
 
         函数代码。代码必须要进行base64编码
 
@@ -155,7 +155,7 @@ class ImportFunctionRequestBody:
 
     @property
     def package(self):
-        """Gets the package of this ImportFunctionRequestBody.
+        r"""Gets the package of this ImportFunctionRequestBody.
 
         应用名称，默认为default
 
@@ -166,7 +166,7 @@ class ImportFunctionRequestBody:
 
     @package.setter
     def package(self, package):
-        """Sets the package of this ImportFunctionRequestBody.
+        r"""Sets the package of this ImportFunctionRequestBody.
 
         应用名称，默认为default
 

@@ -28,7 +28,7 @@ class UpdateQueueResourcesResponse(SdkResponse):
     }
 
     def __init__(self, workload_res_code=None, workload_res_str=None):
-        """UpdateQueueResourcesResponse
+        r"""UpdateQueueResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateQueueResourcesResponse(SdkResponse):
 
     @property
     def workload_res_code(self):
-        """Gets the workload_res_code of this UpdateQueueResourcesResponse.
+        r"""Gets the workload_res_code of this UpdateQueueResourcesResponse.
 
         响应编码。
 
@@ -62,7 +62,7 @@ class UpdateQueueResourcesResponse(SdkResponse):
 
     @workload_res_code.setter
     def workload_res_code(self, workload_res_code):
-        """Sets the workload_res_code of this UpdateQueueResourcesResponse.
+        r"""Sets the workload_res_code of this UpdateQueueResourcesResponse.
 
         响应编码。
 
@@ -73,7 +73,7 @@ class UpdateQueueResourcesResponse(SdkResponse):
 
     @property
     def workload_res_str(self):
-        """Gets the workload_res_str of this UpdateQueueResourcesResponse.
+        r"""Gets the workload_res_str of this UpdateQueueResourcesResponse.
 
         响应信息。
 
@@ -84,7 +84,7 @@ class UpdateQueueResourcesResponse(SdkResponse):
 
     @workload_res_str.setter
     def workload_res_str(self, workload_res_str):
-        """Sets the workload_res_str of this UpdateQueueResourcesResponse.
+        r"""Sets the workload_res_str of this UpdateQueueResourcesResponse.
 
         响应信息。
 

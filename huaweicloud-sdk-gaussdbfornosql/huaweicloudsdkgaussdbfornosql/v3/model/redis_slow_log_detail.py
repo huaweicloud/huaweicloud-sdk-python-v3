@@ -37,7 +37,7 @@ class RedisSlowLogDetail:
     }
 
     def __init__(self, node_name=None, node_id=None, whole_message=None, operate_type=None, cost_time=None, log_time=None, line_num=None):
-        """RedisSlowLogDetail
+        r"""RedisSlowLogDetail
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RedisSlowLogDetail:
 
     @property
     def node_name(self):
-        """Gets the node_name of this RedisSlowLogDetail.
+        r"""Gets the node_name of this RedisSlowLogDetail.
 
         节点名称。
 
@@ -89,7 +89,7 @@ class RedisSlowLogDetail:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this RedisSlowLogDetail.
+        r"""Sets the node_name of this RedisSlowLogDetail.
 
         节点名称。
 
@@ -100,7 +100,7 @@ class RedisSlowLogDetail:
 
     @property
     def node_id(self):
-        """Gets the node_id of this RedisSlowLogDetail.
+        r"""Gets the node_id of this RedisSlowLogDetail.
 
         节点ID。
 
@@ -111,7 +111,7 @@ class RedisSlowLogDetail:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this RedisSlowLogDetail.
+        r"""Sets the node_id of this RedisSlowLogDetail.
 
         节点ID。
 
@@ -122,7 +122,7 @@ class RedisSlowLogDetail:
 
     @property
     def whole_message(self):
-        """Gets the whole_message of this RedisSlowLogDetail.
+        r"""Gets the whole_message of this RedisSlowLogDetail.
 
         执行语句。
 
@@ -133,7 +133,7 @@ class RedisSlowLogDetail:
 
     @whole_message.setter
     def whole_message(self, whole_message):
-        """Sets the whole_message of this RedisSlowLogDetail.
+        r"""Sets the whole_message of this RedisSlowLogDetail.
 
         执行语句。
 
@@ -144,7 +144,7 @@ class RedisSlowLogDetail:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this RedisSlowLogDetail.
+        r"""Gets the operate_type of this RedisSlowLogDetail.
 
         语句类型。
 
@@ -155,7 +155,7 @@ class RedisSlowLogDetail:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this RedisSlowLogDetail.
+        r"""Sets the operate_type of this RedisSlowLogDetail.
 
         语句类型。
 
@@ -166,7 +166,7 @@ class RedisSlowLogDetail:
 
     @property
     def cost_time(self):
-        """Gets the cost_time of this RedisSlowLogDetail.
+        r"""Gets the cost_time of this RedisSlowLogDetail.
 
         执行时间。单位：ms
 
@@ -177,7 +177,7 @@ class RedisSlowLogDetail:
 
     @cost_time.setter
     def cost_time(self, cost_time):
-        """Sets the cost_time of this RedisSlowLogDetail.
+        r"""Sets the cost_time of this RedisSlowLogDetail.
 
         执行时间。单位：ms
 
@@ -188,7 +188,7 @@ class RedisSlowLogDetail:
 
     @property
     def log_time(self):
-        """Gets the log_time of this RedisSlowLogDetail.
+        r"""Gets the log_time of this RedisSlowLogDetail.
 
         日志产生时间，UTC时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -199,7 +199,7 @@ class RedisSlowLogDetail:
 
     @log_time.setter
     def log_time(self, log_time):
-        """Sets the log_time of this RedisSlowLogDetail.
+        r"""Sets the log_time of this RedisSlowLogDetail.
 
         日志产生时间，UTC时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -210,7 +210,7 @@ class RedisSlowLogDetail:
 
     @property
     def line_num(self):
-        """Gets the line_num of this RedisSlowLogDetail.
+        r"""Gets the line_num of this RedisSlowLogDetail.
 
         日志单行序列号
 
@@ -221,7 +221,7 @@ class RedisSlowLogDetail:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this RedisSlowLogDetail.
+        r"""Sets the line_num of this RedisSlowLogDetail.
 
         日志单行序列号
 

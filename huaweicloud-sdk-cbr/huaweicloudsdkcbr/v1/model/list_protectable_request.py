@@ -39,7 +39,7 @@ class ListProtectableRequest:
     }
 
     def __init__(self, limit=None, marker=None, name=None, offset=None, protectable_type=None, status=None, id=None, server_id=None):
-        """ListProtectableRequest
+        r"""ListProtectableRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListProtectableRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProtectableRequest.
+        r"""Gets the limit of this ListProtectableRequest.
 
         每页显示的条目数量，每页最多支持50条
 
@@ -102,7 +102,7 @@ class ListProtectableRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProtectableRequest.
+        r"""Sets the limit of this ListProtectableRequest.
 
         每页显示的条目数量，每页最多支持50条
 
@@ -113,7 +113,7 @@ class ListProtectableRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListProtectableRequest.
+        r"""Gets the marker of this ListProtectableRequest.
 
         上一次查询最后一条的ID
 
@@ -124,7 +124,7 @@ class ListProtectableRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListProtectableRequest.
+        r"""Sets the marker of this ListProtectableRequest.
 
         上一次查询最后一条的ID
 
@@ -135,7 +135,7 @@ class ListProtectableRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListProtectableRequest.
+        r"""Gets the name of this ListProtectableRequest.
 
         按名称过滤
 
@@ -146,7 +146,7 @@ class ListProtectableRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListProtectableRequest.
+        r"""Sets the name of this ListProtectableRequest.
 
         按名称过滤
 
@@ -157,7 +157,7 @@ class ListProtectableRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProtectableRequest.
+        r"""Gets the offset of this ListProtectableRequest.
 
         偏移值
 
@@ -168,7 +168,7 @@ class ListProtectableRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProtectableRequest.
+        r"""Sets the offset of this ListProtectableRequest.
 
         偏移值
 
@@ -179,7 +179,7 @@ class ListProtectableRequest:
 
     @property
     def protectable_type(self):
-        """Gets the protectable_type of this ListProtectableRequest.
+        r"""Gets the protectable_type of this ListProtectableRequest.
 
         对象类型
 
@@ -190,7 +190,7 @@ class ListProtectableRequest:
 
     @protectable_type.setter
     def protectable_type(self, protectable_type):
-        """Sets the protectable_type of this ListProtectableRequest.
+        r"""Sets the protectable_type of this ListProtectableRequest.
 
         对象类型
 
@@ -201,7 +201,7 @@ class ListProtectableRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListProtectableRequest.
+        r"""Gets the status of this ListProtectableRequest.
 
         资源的状态，如available，error 等
 
@@ -212,7 +212,7 @@ class ListProtectableRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListProtectableRequest.
+        r"""Sets the status of this ListProtectableRequest.
 
         资源的状态，如available，error 等
 
@@ -223,7 +223,7 @@ class ListProtectableRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListProtectableRequest.
+        r"""Gets the id of this ListProtectableRequest.
 
         根据资源id过滤
 
@@ -234,7 +234,7 @@ class ListProtectableRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListProtectableRequest.
+        r"""Sets the id of this ListProtectableRequest.
 
         根据资源id过滤
 
@@ -245,7 +245,7 @@ class ListProtectableRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListProtectableRequest.
+        r"""Gets the server_id of this ListProtectableRequest.
 
         根据该id过滤属于该服务器的所有磁盘，支持企业多项目的用户才能传入此参数
 
@@ -256,7 +256,7 @@ class ListProtectableRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListProtectableRequest.
+        r"""Sets the server_id of this ListProtectableRequest.
 
         根据该id过滤属于该服务器的所有磁盘，支持企业多项目的用户才能传入此参数
 

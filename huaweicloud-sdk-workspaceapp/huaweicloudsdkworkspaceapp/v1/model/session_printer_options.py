@@ -25,7 +25,7 @@ class SessionPrinterOptions:
     }
 
     def __init__(self, session_printer_customization_policy=None):
-        """SessionPrinterOptions
+        r"""SessionPrinterOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SessionPrinterOptions:
 
     @property
     def session_printer_customization_policy(self):
-        """Gets the session_printer_customization_policy of this SessionPrinterOptions.
+        r"""Gets the session_printer_customization_policy of this SessionPrinterOptions.
 
         会话打印机自定义策略。
 
@@ -54,7 +54,7 @@ class SessionPrinterOptions:
 
     @session_printer_customization_policy.setter
     def session_printer_customization_policy(self, session_printer_customization_policy):
-        """Sets the session_printer_customization_policy of this SessionPrinterOptions.
+        r"""Sets the session_printer_customization_policy of this SessionPrinterOptions.
 
         会话打印机自定义策略。
 

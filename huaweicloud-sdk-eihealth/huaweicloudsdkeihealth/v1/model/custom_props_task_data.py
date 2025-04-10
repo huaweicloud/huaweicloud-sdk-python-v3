@@ -33,7 +33,7 @@ class CustomPropsTaskData:
     }
 
     def __init__(self, name=None, description=None, type=None, smiles=None, values=None):
-        """CustomPropsTaskData
+        r"""CustomPropsTaskData
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class CustomPropsTaskData:
 
     @property
     def name(self):
-        """Gets the name of this CustomPropsTaskData.
+        r"""Gets the name of this CustomPropsTaskData.
 
         自定义属性名称
 
@@ -78,7 +78,7 @@ class CustomPropsTaskData:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CustomPropsTaskData.
+        r"""Sets the name of this CustomPropsTaskData.
 
         自定义属性名称
 
@@ -89,7 +89,7 @@ class CustomPropsTaskData:
 
     @property
     def description(self):
-        """Gets the description of this CustomPropsTaskData.
+        r"""Gets the description of this CustomPropsTaskData.
 
         自定义属性描述信息
 
@@ -100,7 +100,7 @@ class CustomPropsTaskData:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CustomPropsTaskData.
+        r"""Sets the description of this CustomPropsTaskData.
 
         自定义属性描述信息
 
@@ -111,7 +111,7 @@ class CustomPropsTaskData:
 
     @property
     def type(self):
-        """Gets the type of this CustomPropsTaskData.
+        r"""Gets the type of this CustomPropsTaskData.
 
         属性预测类型
 
@@ -122,7 +122,7 @@ class CustomPropsTaskData:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CustomPropsTaskData.
+        r"""Sets the type of this CustomPropsTaskData.
 
         属性预测类型
 
@@ -133,7 +133,7 @@ class CustomPropsTaskData:
 
     @property
     def smiles(self):
-        """Gets the smiles of this CustomPropsTaskData.
+        r"""Gets the smiles of this CustomPropsTaskData.
 
         用于建模的smiles列表
 
@@ -144,7 +144,7 @@ class CustomPropsTaskData:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this CustomPropsTaskData.
+        r"""Sets the smiles of this CustomPropsTaskData.
 
         用于建模的smiles列表
 
@@ -155,7 +155,7 @@ class CustomPropsTaskData:
 
     @property
     def values(self):
-        """Gets the values of this CustomPropsTaskData.
+        r"""Gets the values of this CustomPropsTaskData.
 
         用于建模的属性值列表
 
@@ -166,7 +166,7 @@ class CustomPropsTaskData:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this CustomPropsTaskData.
+        r"""Sets the values of this CustomPropsTaskData.
 
         用于建模的属性值列表
 

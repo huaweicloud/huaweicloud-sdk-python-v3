@@ -45,7 +45,7 @@ class PhoneAccessInfo:
     }
 
     def __init__(self, type=None, device_ip=None, phone_ip=None, listen_port=None, access_ip=None, public_ip=None, intranet_ip=None, server_ip=None, access_port=None, phone_ipv6=None, server_ipv6=None):
-        """PhoneAccessInfo
+        r"""PhoneAccessInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class PhoneAccessInfo:
 
     @property
     def type(self):
-        """Gets the type of this PhoneAccessInfo.
+        r"""Gets the type of this PhoneAccessInfo.
 
         自定义端口类型，不超过16个字节。
 
@@ -124,7 +124,7 @@ class PhoneAccessInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PhoneAccessInfo.
+        r"""Sets the type of this PhoneAccessInfo.
 
         自定义端口类型，不超过16个字节。
 
@@ -135,7 +135,7 @@ class PhoneAccessInfo:
 
     @property
     def device_ip(self):
-        """Gets the device_ip of this PhoneAccessInfo.
+        r"""Gets the device_ip of this PhoneAccessInfo.
 
         云手机IP（过期）。
 
@@ -146,7 +146,7 @@ class PhoneAccessInfo:
 
     @device_ip.setter
     def device_ip(self, device_ip):
-        """Sets the device_ip of this PhoneAccessInfo.
+        r"""Sets the device_ip of this PhoneAccessInfo.
 
         云手机IP（过期）。
 
@@ -157,7 +157,7 @@ class PhoneAccessInfo:
 
     @property
     def phone_ip(self):
-        """Gets the phone_ip of this PhoneAccessInfo.
+        r"""Gets the phone_ip of this PhoneAccessInfo.
 
         云手机IP。
 
@@ -168,7 +168,7 @@ class PhoneAccessInfo:
 
     @phone_ip.setter
     def phone_ip(self, phone_ip):
-        """Sets the phone_ip of this PhoneAccessInfo.
+        r"""Sets the phone_ip of this PhoneAccessInfo.
 
         云手机IP。
 
@@ -179,7 +179,7 @@ class PhoneAccessInfo:
 
     @property
     def listen_port(self):
-        """Gets the listen_port of this PhoneAccessInfo.
+        r"""Gets the listen_port of this PhoneAccessInfo.
 
         服务监听端口。
 
@@ -190,7 +190,7 @@ class PhoneAccessInfo:
 
     @listen_port.setter
     def listen_port(self, listen_port):
-        """Sets the listen_port of this PhoneAccessInfo.
+        r"""Sets the listen_port of this PhoneAccessInfo.
 
         服务监听端口。
 
@@ -201,7 +201,7 @@ class PhoneAccessInfo:
 
     @property
     def access_ip(self):
-        """Gets the access_ip of this PhoneAccessInfo.
+        r"""Gets the access_ip of this PhoneAccessInfo.
 
         云手机服务器的访问IP（过期）。
 
@@ -212,7 +212,7 @@ class PhoneAccessInfo:
 
     @access_ip.setter
     def access_ip(self, access_ip):
-        """Sets the access_ip of this PhoneAccessInfo.
+        r"""Sets the access_ip of this PhoneAccessInfo.
 
         云手机服务器的访问IP（过期）。
 
@@ -223,7 +223,7 @@ class PhoneAccessInfo:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this PhoneAccessInfo.
+        r"""Gets the public_ip of this PhoneAccessInfo.
 
         云手机服务器的公网IP，如果端口设置了非公网访问，该字段返回空字符串。
 
@@ -234,7 +234,7 @@ class PhoneAccessInfo:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this PhoneAccessInfo.
+        r"""Sets the public_ip of this PhoneAccessInfo.
 
         云手机服务器的公网IP，如果端口设置了非公网访问，该字段返回空字符串。
 
@@ -245,7 +245,7 @@ class PhoneAccessInfo:
 
     @property
     def intranet_ip(self):
-        """Gets the intranet_ip of this PhoneAccessInfo.
+        r"""Gets the intranet_ip of this PhoneAccessInfo.
 
         云手机服务器的内网IP（过期）。
 
@@ -256,7 +256,7 @@ class PhoneAccessInfo:
 
     @intranet_ip.setter
     def intranet_ip(self, intranet_ip):
-        """Sets the intranet_ip of this PhoneAccessInfo.
+        r"""Sets the intranet_ip of this PhoneAccessInfo.
 
         云手机服务器的内网IP（过期）。
 
@@ -267,7 +267,7 @@ class PhoneAccessInfo:
 
     @property
     def server_ip(self):
-        """Gets the server_ip of this PhoneAccessInfo.
+        r"""Gets the server_ip of this PhoneAccessInfo.
 
         云手机服务器的内网IP。
 
@@ -278,7 +278,7 @@ class PhoneAccessInfo:
 
     @server_ip.setter
     def server_ip(self, server_ip):
-        """Sets the server_ip of this PhoneAccessInfo.
+        r"""Sets the server_ip of this PhoneAccessInfo.
 
         云手机服务器的内网IP。
 
@@ -289,7 +289,7 @@ class PhoneAccessInfo:
 
     @property
     def access_port(self):
-        """Gets the access_port of this PhoneAccessInfo.
+        r"""Gets the access_port of this PhoneAccessInfo.
 
         服务映射到公网的访问端口。
 
@@ -300,7 +300,7 @@ class PhoneAccessInfo:
 
     @access_port.setter
     def access_port(self, access_port):
-        """Sets the access_port of this PhoneAccessInfo.
+        r"""Sets the access_port of this PhoneAccessInfo.
 
         服务映射到公网的访问端口。
 
@@ -311,7 +311,7 @@ class PhoneAccessInfo:
 
     @property
     def phone_ipv6(self):
-        """Gets the phone_ipv6 of this PhoneAccessInfo.
+        r"""Gets the phone_ipv6 of this PhoneAccessInfo.
 
         云手机IPv6 IP，新增字段。
 
@@ -322,7 +322,7 @@ class PhoneAccessInfo:
 
     @phone_ipv6.setter
     def phone_ipv6(self, phone_ipv6):
-        """Sets the phone_ipv6 of this PhoneAccessInfo.
+        r"""Sets the phone_ipv6 of this PhoneAccessInfo.
 
         云手机IPv6 IP，新增字段。
 
@@ -333,7 +333,7 @@ class PhoneAccessInfo:
 
     @property
     def server_ipv6(self):
-        """Gets the server_ipv6 of this PhoneAccessInfo.
+        r"""Gets the server_ipv6 of this PhoneAccessInfo.
 
         云手机服务器IPv6 IP，新增字段。
 
@@ -344,7 +344,7 @@ class PhoneAccessInfo:
 
     @server_ipv6.setter
     def server_ipv6(self, server_ipv6):
-        """Sets the server_ipv6 of this PhoneAccessInfo.
+        r"""Sets the server_ipv6 of this PhoneAccessInfo.
 
         云手机服务器IPv6 IP，新增字段。
 

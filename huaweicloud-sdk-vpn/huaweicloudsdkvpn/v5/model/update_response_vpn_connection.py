@@ -67,7 +67,7 @@ class UpdateResponseVpnConnection:
     }
 
     def __init__(self, id=None, name=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, enable_hub=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, created_at=None, updated_at=None, enterprise_project_id=None, connection_monitor_id=None, ha_role=None, tags=None, peer_subnets_v6=None, policy_rules_v6=None):
-        """UpdateResponseVpnConnection
+        r"""UpdateResponseVpnConnection
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def id(self):
-        """Gets the id of this UpdateResponseVpnConnection.
+        r"""Gets the id of this UpdateResponseVpnConnection.
 
         VPN连接ID
 
@@ -201,7 +201,7 @@ class UpdateResponseVpnConnection:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateResponseVpnConnection.
+        r"""Sets the id of this UpdateResponseVpnConnection.
 
         VPN连接ID
 
@@ -212,7 +212,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def name(self):
-        """Gets the name of this UpdateResponseVpnConnection.
+        r"""Gets the name of this UpdateResponseVpnConnection.
 
         VPN连接名称
 
@@ -223,7 +223,7 @@ class UpdateResponseVpnConnection:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateResponseVpnConnection.
+        r"""Sets the name of this UpdateResponseVpnConnection.
 
         VPN连接名称
 
@@ -234,7 +234,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this UpdateResponseVpnConnection.
+        r"""Gets the vgw_id of this UpdateResponseVpnConnection.
 
         VPN网关ID
 
@@ -245,7 +245,7 @@ class UpdateResponseVpnConnection:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this UpdateResponseVpnConnection.
+        r"""Sets the vgw_id of this UpdateResponseVpnConnection.
 
         VPN网关ID
 
@@ -256,7 +256,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def vgw_ip(self):
-        """Gets the vgw_ip of this UpdateResponseVpnConnection.
+        r"""Gets the vgw_ip of this UpdateResponseVpnConnection.
 
         VGW IP
 
@@ -267,7 +267,7 @@ class UpdateResponseVpnConnection:
 
     @vgw_ip.setter
     def vgw_ip(self, vgw_ip):
-        """Sets the vgw_ip of this UpdateResponseVpnConnection.
+        r"""Sets the vgw_ip of this UpdateResponseVpnConnection.
 
         VGW IP
 
@@ -278,7 +278,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def style(self):
-        """Gets the style of this UpdateResponseVpnConnection.
+        r"""Gets the style of this UpdateResponseVpnConnection.
 
         连接模式 允许范围[POLICY, STATIC, BGP] POLICY: 策略模式 STATIC: 静态路由模式 BGP: bgp路由模式
 
@@ -289,7 +289,7 @@ class UpdateResponseVpnConnection:
 
     @style.setter
     def style(self, style):
-        """Sets the style of this UpdateResponseVpnConnection.
+        r"""Sets the style of this UpdateResponseVpnConnection.
 
         连接模式 允许范围[POLICY, STATIC, BGP] POLICY: 策略模式 STATIC: 静态路由模式 BGP: bgp路由模式
 
@@ -300,7 +300,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def cgw_id(self):
-        """Gets the cgw_id of this UpdateResponseVpnConnection.
+        r"""Gets the cgw_id of this UpdateResponseVpnConnection.
 
         对端网关ID
 
@@ -311,7 +311,7 @@ class UpdateResponseVpnConnection:
 
     @cgw_id.setter
     def cgw_id(self, cgw_id):
-        """Sets the cgw_id of this UpdateResponseVpnConnection.
+        r"""Sets the cgw_id of this UpdateResponseVpnConnection.
 
         对端网关ID
 
@@ -322,7 +322,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def peer_subnets(self):
-        """Gets the peer_subnets of this UpdateResponseVpnConnection.
+        r"""Gets the peer_subnets of this UpdateResponseVpnConnection.
 
         对端网段
 
@@ -333,7 +333,7 @@ class UpdateResponseVpnConnection:
 
     @peer_subnets.setter
     def peer_subnets(self, peer_subnets):
-        """Sets the peer_subnets of this UpdateResponseVpnConnection.
+        r"""Sets the peer_subnets of this UpdateResponseVpnConnection.
 
         对端网段
 
@@ -344,7 +344,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def tunnel_local_address(self):
-        """Gets the tunnel_local_address of this UpdateResponseVpnConnection.
+        r"""Gets the tunnel_local_address of this UpdateResponseVpnConnection.
 
         本端隧道口地址
 
@@ -355,7 +355,7 @@ class UpdateResponseVpnConnection:
 
     @tunnel_local_address.setter
     def tunnel_local_address(self, tunnel_local_address):
-        """Sets the tunnel_local_address of this UpdateResponseVpnConnection.
+        r"""Sets the tunnel_local_address of this UpdateResponseVpnConnection.
 
         本端隧道口地址
 
@@ -366,7 +366,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def tunnel_peer_address(self):
-        """Gets the tunnel_peer_address of this UpdateResponseVpnConnection.
+        r"""Gets the tunnel_peer_address of this UpdateResponseVpnConnection.
 
         对端隧道口地址
 
@@ -377,7 +377,7 @@ class UpdateResponseVpnConnection:
 
     @tunnel_peer_address.setter
     def tunnel_peer_address(self, tunnel_peer_address):
-        """Sets the tunnel_peer_address of this UpdateResponseVpnConnection.
+        r"""Sets the tunnel_peer_address of this UpdateResponseVpnConnection.
 
         对端隧道口地址
 
@@ -388,7 +388,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def enable_nqa(self):
-        """Gets the enable_nqa of this UpdateResponseVpnConnection.
+        r"""Gets the enable_nqa of this UpdateResponseVpnConnection.
 
         开启NQA检测
 
@@ -399,7 +399,7 @@ class UpdateResponseVpnConnection:
 
     @enable_nqa.setter
     def enable_nqa(self, enable_nqa):
-        """Sets the enable_nqa of this UpdateResponseVpnConnection.
+        r"""Sets the enable_nqa of this UpdateResponseVpnConnection.
 
         开启NQA检测
 
@@ -410,7 +410,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def enable_hub(self):
-        """Gets the enable_hub of this UpdateResponseVpnConnection.
+        r"""Gets the enable_hub of this UpdateResponseVpnConnection.
 
         开启分支互联
 
@@ -421,7 +421,7 @@ class UpdateResponseVpnConnection:
 
     @enable_hub.setter
     def enable_hub(self, enable_hub):
-        """Sets the enable_hub of this UpdateResponseVpnConnection.
+        r"""Sets the enable_hub of this UpdateResponseVpnConnection.
 
         开启分支互联
 
@@ -432,7 +432,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def policy_rules(self):
-        """Gets the policy_rules of this UpdateResponseVpnConnection.
+        r"""Gets the policy_rules of this UpdateResponseVpnConnection.
 
         策略模式的策略规则组
 
@@ -443,7 +443,7 @@ class UpdateResponseVpnConnection:
 
     @policy_rules.setter
     def policy_rules(self, policy_rules):
-        """Sets the policy_rules of this UpdateResponseVpnConnection.
+        r"""Sets the policy_rules of this UpdateResponseVpnConnection.
 
         策略模式的策略规则组
 
@@ -454,7 +454,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def ikepolicy(self):
-        """Gets the ikepolicy of this UpdateResponseVpnConnection.
+        r"""Gets the ikepolicy of this UpdateResponseVpnConnection.
 
         :return: The ikepolicy of this UpdateResponseVpnConnection.
         :rtype: :class:`huaweicloudsdkvpn.v5.IkePolicy`
@@ -463,7 +463,7 @@ class UpdateResponseVpnConnection:
 
     @ikepolicy.setter
     def ikepolicy(self, ikepolicy):
-        """Sets the ikepolicy of this UpdateResponseVpnConnection.
+        r"""Sets the ikepolicy of this UpdateResponseVpnConnection.
 
         :param ikepolicy: The ikepolicy of this UpdateResponseVpnConnection.
         :type ikepolicy: :class:`huaweicloudsdkvpn.v5.IkePolicy`
@@ -472,7 +472,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def ipsecpolicy(self):
-        """Gets the ipsecpolicy of this UpdateResponseVpnConnection.
+        r"""Gets the ipsecpolicy of this UpdateResponseVpnConnection.
 
         :return: The ipsecpolicy of this UpdateResponseVpnConnection.
         :rtype: :class:`huaweicloudsdkvpn.v5.IpsecPolicy`
@@ -481,7 +481,7 @@ class UpdateResponseVpnConnection:
 
     @ipsecpolicy.setter
     def ipsecpolicy(self, ipsecpolicy):
-        """Sets the ipsecpolicy of this UpdateResponseVpnConnection.
+        r"""Sets the ipsecpolicy of this UpdateResponseVpnConnection.
 
         :param ipsecpolicy: The ipsecpolicy of this UpdateResponseVpnConnection.
         :type ipsecpolicy: :class:`huaweicloudsdkvpn.v5.IpsecPolicy`
@@ -490,7 +490,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateResponseVpnConnection.
+        r"""Gets the created_at of this UpdateResponseVpnConnection.
 
         创建时间
 
@@ -501,7 +501,7 @@ class UpdateResponseVpnConnection:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateResponseVpnConnection.
+        r"""Sets the created_at of this UpdateResponseVpnConnection.
 
         创建时间
 
@@ -512,7 +512,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateResponseVpnConnection.
+        r"""Gets the updated_at of this UpdateResponseVpnConnection.
 
         更新时间
 
@@ -523,7 +523,7 @@ class UpdateResponseVpnConnection:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateResponseVpnConnection.
+        r"""Sets the updated_at of this UpdateResponseVpnConnection.
 
         更新时间
 
@@ -534,7 +534,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateResponseVpnConnection.
+        r"""Gets the enterprise_project_id of this UpdateResponseVpnConnection.
 
         企业项目ID
 
@@ -545,7 +545,7 @@ class UpdateResponseVpnConnection:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateResponseVpnConnection.
+        r"""Sets the enterprise_project_id of this UpdateResponseVpnConnection.
 
         企业项目ID
 
@@ -556,7 +556,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def connection_monitor_id(self):
-        """Gets the connection_monitor_id of this UpdateResponseVpnConnection.
+        r"""Gets the connection_monitor_id of this UpdateResponseVpnConnection.
 
         连接监控ID
 
@@ -567,7 +567,7 @@ class UpdateResponseVpnConnection:
 
     @connection_monitor_id.setter
     def connection_monitor_id(self, connection_monitor_id):
-        """Sets the connection_monitor_id of this UpdateResponseVpnConnection.
+        r"""Sets the connection_monitor_id of this UpdateResponseVpnConnection.
 
         连接监控ID
 
@@ -578,7 +578,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def ha_role(self):
-        """Gets the ha_role of this UpdateResponseVpnConnection.
+        r"""Gets the ha_role of this UpdateResponseVpnConnection.
 
         连接的HA角色
 
@@ -589,7 +589,7 @@ class UpdateResponseVpnConnection:
 
     @ha_role.setter
     def ha_role(self, ha_role):
-        """Sets the ha_role of this UpdateResponseVpnConnection.
+        r"""Sets the ha_role of this UpdateResponseVpnConnection.
 
         连接的HA角色
 
@@ -600,7 +600,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateResponseVpnConnection.
+        r"""Gets the tags of this UpdateResponseVpnConnection.
 
         标签
 
@@ -611,7 +611,7 @@ class UpdateResponseVpnConnection:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateResponseVpnConnection.
+        r"""Sets the tags of this UpdateResponseVpnConnection.
 
         标签
 
@@ -622,7 +622,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def peer_subnets_v6(self):
-        """Gets the peer_subnets_v6 of this UpdateResponseVpnConnection.
+        r"""Gets the peer_subnets_v6 of this UpdateResponseVpnConnection.
 
         使能ipv6的对端子网
 
@@ -633,7 +633,7 @@ class UpdateResponseVpnConnection:
 
     @peer_subnets_v6.setter
     def peer_subnets_v6(self, peer_subnets_v6):
-        """Sets the peer_subnets_v6 of this UpdateResponseVpnConnection.
+        r"""Sets the peer_subnets_v6 of this UpdateResponseVpnConnection.
 
         使能ipv6的对端子网
 
@@ -644,7 +644,7 @@ class UpdateResponseVpnConnection:
 
     @property
     def policy_rules_v6(self):
-        """Gets the policy_rules_v6 of this UpdateResponseVpnConnection.
+        r"""Gets the policy_rules_v6 of this UpdateResponseVpnConnection.
 
         策略模式的ipv6策略规则组
 
@@ -655,7 +655,7 @@ class UpdateResponseVpnConnection:
 
     @policy_rules_v6.setter
     def policy_rules_v6(self, policy_rules_v6):
-        """Sets the policy_rules_v6 of this UpdateResponseVpnConnection.
+        r"""Sets the policy_rules_v6 of this UpdateResponseVpnConnection.
 
         策略模式的ipv6策略规则组
 

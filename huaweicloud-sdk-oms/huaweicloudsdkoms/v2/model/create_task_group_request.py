@@ -25,7 +25,7 @@ class CreateTaskGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTaskGroupRequest
+        r"""CreateTaskGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTaskGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTaskGroupRequest.
+        r"""Gets the body of this CreateTaskGroupRequest.
 
         :return: The body of this CreateTaskGroupRequest.
         :rtype: :class:`huaweicloudsdkoms.v2.CreateTaskGroupReq`
@@ -52,7 +52,7 @@ class CreateTaskGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTaskGroupRequest.
+        r"""Sets the body of this CreateTaskGroupRequest.
 
         :param body: The body of this CreateTaskGroupRequest.
         :type body: :class:`huaweicloudsdkoms.v2.CreateTaskGroupReq`

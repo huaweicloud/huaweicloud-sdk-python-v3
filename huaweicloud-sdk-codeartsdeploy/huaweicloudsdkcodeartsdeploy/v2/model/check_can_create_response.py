@@ -28,7 +28,7 @@ class CheckCanCreateResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """CheckCanCreateResponse
+        r"""CheckCanCreateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CheckCanCreateResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CheckCanCreateResponse.
+        r"""Gets the result of this CheckCanCreateResponse.
 
         :return: The result of this CheckCanCreateResponse.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.CheckCanCreateResponseBodyResult`
@@ -60,7 +60,7 @@ class CheckCanCreateResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CheckCanCreateResponse.
+        r"""Sets the result of this CheckCanCreateResponse.
 
         :param result: The result of this CheckCanCreateResponse.
         :type result: :class:`huaweicloudsdkcodeartsdeploy.v2.CheckCanCreateResponseBodyResult`
@@ -69,7 +69,7 @@ class CheckCanCreateResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CheckCanCreateResponse.
+        r"""Gets the status of this CheckCanCreateResponse.
 
         请求成功失败状态
 
@@ -80,7 +80,7 @@ class CheckCanCreateResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CheckCanCreateResponse.
+        r"""Sets the status of this CheckCanCreateResponse.
 
         请求成功失败状态
 

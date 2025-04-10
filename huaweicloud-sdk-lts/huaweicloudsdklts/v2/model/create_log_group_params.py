@@ -31,7 +31,7 @@ class CreateLogGroupParams:
     }
 
     def __init__(self, log_group_name=None, ttl_in_days=None, tags=None, log_group_name_alias=None):
-        """CreateLogGroupParams
+        r"""CreateLogGroupParams
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateLogGroupParams:
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this CreateLogGroupParams.
+        r"""Gets the log_group_name of this CreateLogGroupParams.
 
         需要创建的日志组名称。
 
@@ -73,7 +73,7 @@ class CreateLogGroupParams:
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this CreateLogGroupParams.
+        r"""Sets the log_group_name of this CreateLogGroupParams.
 
         需要创建的日志组名称。
 
@@ -84,7 +84,7 @@ class CreateLogGroupParams:
 
     @property
     def ttl_in_days(self):
-        """Gets the ttl_in_days of this CreateLogGroupParams.
+        r"""Gets the ttl_in_days of this CreateLogGroupParams.
 
         日志存储时间（天），取值范围：1-30。
 
@@ -95,7 +95,7 @@ class CreateLogGroupParams:
 
     @ttl_in_days.setter
     def ttl_in_days(self, ttl_in_days):
-        """Sets the ttl_in_days of this CreateLogGroupParams.
+        r"""Sets the ttl_in_days of this CreateLogGroupParams.
 
         日志存储时间（天），取值范围：1-30。
 
@@ -106,7 +106,7 @@ class CreateLogGroupParams:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateLogGroupParams.
+        r"""Gets the tags of this CreateLogGroupParams.
 
         标签字段信息
 
@@ -117,7 +117,7 @@ class CreateLogGroupParams:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateLogGroupParams.
+        r"""Sets the tags of this CreateLogGroupParams.
 
         标签字段信息
 
@@ -128,7 +128,7 @@ class CreateLogGroupParams:
 
     @property
     def log_group_name_alias(self):
-        """Gets the log_group_name_alias of this CreateLogGroupParams.
+        r"""Gets the log_group_name_alias of this CreateLogGroupParams.
 
         日志组别名
 
@@ -139,7 +139,7 @@ class CreateLogGroupParams:
 
     @log_group_name_alias.setter
     def log_group_name_alias(self, log_group_name_alias):
-        """Sets the log_group_name_alias of this CreateLogGroupParams.
+        r"""Sets the log_group_name_alias of this CreateLogGroupParams.
 
         日志组别名
 

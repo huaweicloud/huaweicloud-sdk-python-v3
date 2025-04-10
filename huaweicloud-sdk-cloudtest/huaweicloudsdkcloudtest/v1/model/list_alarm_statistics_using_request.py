@@ -27,7 +27,7 @@ class ListAlarmStatisticsUsingRequest:
     }
 
     def __init__(self, service_id=None, body=None):
-        """ListAlarmStatisticsUsingRequest
+        r"""ListAlarmStatisticsUsingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListAlarmStatisticsUsingRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ListAlarmStatisticsUsingRequest.
+        r"""Gets the service_id of this ListAlarmStatisticsUsingRequest.
 
         服务id
 
@@ -60,7 +60,7 @@ class ListAlarmStatisticsUsingRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ListAlarmStatisticsUsingRequest.
+        r"""Sets the service_id of this ListAlarmStatisticsUsingRequest.
 
         服务id
 
@@ -71,7 +71,7 @@ class ListAlarmStatisticsUsingRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAlarmStatisticsUsingRequest.
+        r"""Gets the body of this ListAlarmStatisticsUsingRequest.
 
         :return: The body of this ListAlarmStatisticsUsingRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AlarmStatisticsQuery`
@@ -80,7 +80,7 @@ class ListAlarmStatisticsUsingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAlarmStatisticsUsingRequest.
+        r"""Sets the body of this ListAlarmStatisticsUsingRequest.
 
         :param body: The body of this ListAlarmStatisticsUsingRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.AlarmStatisticsQuery`

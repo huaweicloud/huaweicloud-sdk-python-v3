@@ -26,7 +26,7 @@ class ShowApplicationsResponse(SdkResponse):
     }
 
     def __init__(self, applications=None):
-        """ShowApplicationsResponse
+        r"""ShowApplicationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowApplicationsResponse(SdkResponse):
 
     @property
     def applications(self):
-        """Gets the applications of this ShowApplicationsResponse.
+        r"""Gets the applications of this ShowApplicationsResponse.
 
         资源空间信息列表。
 
@@ -55,7 +55,7 @@ class ShowApplicationsResponse(SdkResponse):
 
     @applications.setter
     def applications(self, applications):
-        """Sets the applications of this ShowApplicationsResponse.
+        r"""Sets the applications of this ShowApplicationsResponse.
 
         资源空间信息列表。
 

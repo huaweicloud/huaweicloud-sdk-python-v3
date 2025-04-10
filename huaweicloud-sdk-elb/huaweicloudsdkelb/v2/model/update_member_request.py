@@ -29,7 +29,7 @@ class UpdateMemberRequest:
     }
 
     def __init__(self, member_id=None, pool_id=None, body=None):
-        """UpdateMemberRequest
+        r"""UpdateMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateMemberRequest:
 
     @property
     def member_id(self):
-        """Gets the member_id of this UpdateMemberRequest.
+        r"""Gets the member_id of this UpdateMemberRequest.
 
         后端云服务器id
 
@@ -66,7 +66,7 @@ class UpdateMemberRequest:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this UpdateMemberRequest.
+        r"""Sets the member_id of this UpdateMemberRequest.
 
         后端云服务器id
 
@@ -77,7 +77,7 @@ class UpdateMemberRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this UpdateMemberRequest.
+        r"""Gets the pool_id of this UpdateMemberRequest.
 
         后端云服务器组id
 
@@ -88,7 +88,7 @@ class UpdateMemberRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this UpdateMemberRequest.
+        r"""Sets the pool_id of this UpdateMemberRequest.
 
         后端云服务器组id
 
@@ -99,7 +99,7 @@ class UpdateMemberRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMemberRequest.
+        r"""Gets the body of this UpdateMemberRequest.
 
         :return: The body of this UpdateMemberRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.UpdateMemberRequestBody`
@@ -108,7 +108,7 @@ class UpdateMemberRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMemberRequest.
+        r"""Sets the body of this UpdateMemberRequest.
 
         :param body: The body of this UpdateMemberRequest.
         :type body: :class:`huaweicloudsdkelb.v2.UpdateMemberRequestBody`

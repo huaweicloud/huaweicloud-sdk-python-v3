@@ -25,7 +25,7 @@ class PrivateModuleSourcePrimitiveTypeHolder:
     }
 
     def __init__(self, module_source=None):
-        """PrivateModuleSourcePrimitiveTypeHolder
+        r"""PrivateModuleSourcePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PrivateModuleSourcePrimitiveTypeHolder:
 
     @property
     def module_source(self):
-        """Gets the module_source of this PrivateModuleSourcePrimitiveTypeHolder.
+        r"""Gets the module_source of this PrivateModuleSourcePrimitiveTypeHolder.
 
         在模板中使用模块需要定义如下格式：   module \"my_hello_word_module\" {     source = {module_source}   }  其中{module_source}为本参数
 
@@ -54,7 +54,7 @@ class PrivateModuleSourcePrimitiveTypeHolder:
 
     @module_source.setter
     def module_source(self, module_source):
-        """Sets the module_source of this PrivateModuleSourcePrimitiveTypeHolder.
+        r"""Sets the module_source of this PrivateModuleSourcePrimitiveTypeHolder.
 
         在模板中使用模块需要定义如下格式：   module \"my_hello_word_module\" {     source = {module_source}   }  其中{module_source}为本参数
 

@@ -27,7 +27,7 @@ class TemplateListInfo:
     }
 
     def __init__(self, repos=None, total_count=None):
-        """TemplateListInfo
+        r"""TemplateListInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TemplateListInfo:
 
     @property
     def repos(self):
-        """Gets the repos of this TemplateListInfo.
+        r"""Gets the repos of this TemplateListInfo.
 
         仓库列表
 
@@ -61,7 +61,7 @@ class TemplateListInfo:
 
     @repos.setter
     def repos(self, repos):
-        """Sets the repos of this TemplateListInfo.
+        r"""Sets the repos of this TemplateListInfo.
 
         仓库列表
 
@@ -72,7 +72,7 @@ class TemplateListInfo:
 
     @property
     def total_count(self):
-        """Gets the total_count of this TemplateListInfo.
+        r"""Gets the total_count of this TemplateListInfo.
 
         仓库总数
 
@@ -83,7 +83,7 @@ class TemplateListInfo:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this TemplateListInfo.
+        r"""Sets the total_count of this TemplateListInfo.
 
         仓库总数
 

@@ -26,7 +26,7 @@ class RunCloseAudioStreamModerationJobResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RunCloseAudioStreamModerationJobResponse
+        r"""RunCloseAudioStreamModerationJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RunCloseAudioStreamModerationJobResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunCloseAudioStreamModerationJobResponse.
+        r"""Gets the result of this RunCloseAudioStreamModerationJobResponse.
 
         关闭音频流审核作业响应结果
 
@@ -55,7 +55,7 @@ class RunCloseAudioStreamModerationJobResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunCloseAudioStreamModerationJobResponse.
+        r"""Sets the result of this RunCloseAudioStreamModerationJobResponse.
 
         关闭音频流审核作业响应结果
 

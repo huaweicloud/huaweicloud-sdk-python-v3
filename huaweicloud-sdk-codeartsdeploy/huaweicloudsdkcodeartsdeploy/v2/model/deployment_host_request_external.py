@@ -39,7 +39,7 @@ class DeploymentHostRequestExternal:
     }
 
     def __init__(self, as_proxy=None, authorization=None, host_name=None, ip=None, port=None, proxy_host_id=None, sync=None, install_icagent=None):
-        """DeploymentHostRequestExternal
+        r"""DeploymentHostRequestExternal
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class DeploymentHostRequestExternal:
 
     @property
     def as_proxy(self):
-        """Gets the as_proxy of this DeploymentHostRequestExternal.
+        r"""Gets the as_proxy of this DeploymentHostRequestExternal.
 
         是否为代理主机
 
@@ -100,7 +100,7 @@ class DeploymentHostRequestExternal:
 
     @as_proxy.setter
     def as_proxy(self, as_proxy):
-        """Sets the as_proxy of this DeploymentHostRequestExternal.
+        r"""Sets the as_proxy of this DeploymentHostRequestExternal.
 
         是否为代理主机
 
@@ -111,7 +111,7 @@ class DeploymentHostRequestExternal:
 
     @property
     def authorization(self):
-        """Gets the authorization of this DeploymentHostRequestExternal.
+        r"""Gets the authorization of this DeploymentHostRequestExternal.
 
         :return: The authorization of this DeploymentHostRequestExternal.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostAuthorizationBody`
@@ -120,7 +120,7 @@ class DeploymentHostRequestExternal:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this DeploymentHostRequestExternal.
+        r"""Sets the authorization of this DeploymentHostRequestExternal.
 
         :param authorization: The authorization of this DeploymentHostRequestExternal.
         :type authorization: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostAuthorizationBody`
@@ -129,7 +129,7 @@ class DeploymentHostRequestExternal:
 
     @property
     def host_name(self):
-        """Gets the host_name of this DeploymentHostRequestExternal.
+        r"""Gets the host_name of this DeploymentHostRequestExternal.
 
         主机名称
 
@@ -140,7 +140,7 @@ class DeploymentHostRequestExternal:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this DeploymentHostRequestExternal.
+        r"""Sets the host_name of this DeploymentHostRequestExternal.
 
         主机名称
 
@@ -151,7 +151,7 @@ class DeploymentHostRequestExternal:
 
     @property
     def ip(self):
-        """Gets the ip of this DeploymentHostRequestExternal.
+        r"""Gets the ip of this DeploymentHostRequestExternal.
 
         主机ip，如：161.17.101.12
 
@@ -162,7 +162,7 @@ class DeploymentHostRequestExternal:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this DeploymentHostRequestExternal.
+        r"""Sets the ip of this DeploymentHostRequestExternal.
 
         主机ip，如：161.17.101.12
 
@@ -173,7 +173,7 @@ class DeploymentHostRequestExternal:
 
     @property
     def port(self):
-        """Gets the port of this DeploymentHostRequestExternal.
+        r"""Gets the port of this DeploymentHostRequestExternal.
 
         ssh端口，如：22
 
@@ -184,7 +184,7 @@ class DeploymentHostRequestExternal:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this DeploymentHostRequestExternal.
+        r"""Sets the port of this DeploymentHostRequestExternal.
 
         ssh端口，如：22
 
@@ -195,7 +195,7 @@ class DeploymentHostRequestExternal:
 
     @property
     def proxy_host_id(self):
-        """Gets the proxy_host_id of this DeploymentHostRequestExternal.
+        r"""Gets the proxy_host_id of this DeploymentHostRequestExternal.
 
         代理主机id
 
@@ -206,7 +206,7 @@ class DeploymentHostRequestExternal:
 
     @proxy_host_id.setter
     def proxy_host_id(self, proxy_host_id):
-        """Sets the proxy_host_id of this DeploymentHostRequestExternal.
+        r"""Sets the proxy_host_id of this DeploymentHostRequestExternal.
 
         代理主机id
 
@@ -217,7 +217,7 @@ class DeploymentHostRequestExternal:
 
     @property
     def sync(self):
-        """Gets the sync of this DeploymentHostRequestExternal.
+        r"""Gets the sync of this DeploymentHostRequestExternal.
 
         是否同步主机信息
 
@@ -228,7 +228,7 @@ class DeploymentHostRequestExternal:
 
     @sync.setter
     def sync(self, sync):
-        """Sets the sync of this DeploymentHostRequestExternal.
+        r"""Sets the sync of this DeploymentHostRequestExternal.
 
         是否同步主机信息
 
@@ -239,7 +239,7 @@ class DeploymentHostRequestExternal:
 
     @property
     def install_icagent(self):
-        """Gets the install_icagent of this DeploymentHostRequestExternal.
+        r"""Gets the install_icagent of this DeploymentHostRequestExternal.
 
         是否安装icAgent
 
@@ -250,7 +250,7 @@ class DeploymentHostRequestExternal:
 
     @install_icagent.setter
     def install_icagent(self, install_icagent):
-        """Sets the install_icagent of this DeploymentHostRequestExternal.
+        r"""Sets the install_icagent of this DeploymentHostRequestExternal.
 
         是否安装icAgent
 

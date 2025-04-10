@@ -37,7 +37,7 @@ class ListAlertRuleTemplatesRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, severity=None):
-        """ListAlertRuleTemplatesRequest
+        r"""ListAlertRuleTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class ListAlertRuleTemplatesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListAlertRuleTemplatesRequest.
+        r"""Gets the project_id of this ListAlertRuleTemplatesRequest.
 
         项目 ID。Project ID.
 
@@ -92,7 +92,7 @@ class ListAlertRuleTemplatesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListAlertRuleTemplatesRequest.
+        r"""Sets the project_id of this ListAlertRuleTemplatesRequest.
 
         项目 ID。Project ID.
 
@@ -103,7 +103,7 @@ class ListAlertRuleTemplatesRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListAlertRuleTemplatesRequest.
+        r"""Gets the workspace_id of this ListAlertRuleTemplatesRequest.
 
         工作空间 ID。Workspace ID.
 
@@ -114,7 +114,7 @@ class ListAlertRuleTemplatesRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListAlertRuleTemplatesRequest.
+        r"""Sets the workspace_id of this ListAlertRuleTemplatesRequest.
 
         工作空间 ID。Workspace ID.
 
@@ -125,7 +125,7 @@ class ListAlertRuleTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAlertRuleTemplatesRequest.
+        r"""Gets the offset of this ListAlertRuleTemplatesRequest.
 
         偏移量。Offset.
 
@@ -136,7 +136,7 @@ class ListAlertRuleTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAlertRuleTemplatesRequest.
+        r"""Sets the offset of this ListAlertRuleTemplatesRequest.
 
         偏移量。Offset.
 
@@ -147,7 +147,7 @@ class ListAlertRuleTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlertRuleTemplatesRequest.
+        r"""Gets the limit of this ListAlertRuleTemplatesRequest.
 
         条数。Limit.
 
@@ -158,7 +158,7 @@ class ListAlertRuleTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlertRuleTemplatesRequest.
+        r"""Sets the limit of this ListAlertRuleTemplatesRequest.
 
         条数。Limit.
 
@@ -169,7 +169,7 @@ class ListAlertRuleTemplatesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListAlertRuleTemplatesRequest.
+        r"""Gets the sort_key of this ListAlertRuleTemplatesRequest.
 
         排序字段。Sort key
 
@@ -180,7 +180,7 @@ class ListAlertRuleTemplatesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListAlertRuleTemplatesRequest.
+        r"""Sets the sort_key of this ListAlertRuleTemplatesRequest.
 
         排序字段。Sort key
 
@@ -191,7 +191,7 @@ class ListAlertRuleTemplatesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListAlertRuleTemplatesRequest.
+        r"""Gets the sort_dir of this ListAlertRuleTemplatesRequest.
 
         排序顺序，顺序、逆序。Sort direction, asc, desc。
 
@@ -202,7 +202,7 @@ class ListAlertRuleTemplatesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListAlertRuleTemplatesRequest.
+        r"""Sets the sort_dir of this ListAlertRuleTemplatesRequest.
 
         排序顺序，顺序、逆序。Sort direction, asc, desc。
 
@@ -213,7 +213,7 @@ class ListAlertRuleTemplatesRequest:
 
     @property
     def severity(self):
-        """Gets the severity of this ListAlertRuleTemplatesRequest.
+        r"""Gets the severity of this ListAlertRuleTemplatesRequest.
 
         严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -224,7 +224,7 @@ class ListAlertRuleTemplatesRequest:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ListAlertRuleTemplatesRequest.
+        r"""Sets the severity of this ListAlertRuleTemplatesRequest.
 
         严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 

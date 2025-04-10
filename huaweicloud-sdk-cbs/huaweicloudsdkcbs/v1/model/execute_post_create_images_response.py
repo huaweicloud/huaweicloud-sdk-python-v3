@@ -30,7 +30,7 @@ class ExecutePostCreateImagesResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, url=None):
-        """ExecutePostCreateImagesResponse
+        r"""ExecutePostCreateImagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ExecutePostCreateImagesResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ExecutePostCreateImagesResponse.
+        r"""Gets the id of this ExecutePostCreateImagesResponse.
 
         图片id
 
@@ -67,7 +67,7 @@ class ExecutePostCreateImagesResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExecutePostCreateImagesResponse.
+        r"""Sets the id of this ExecutePostCreateImagesResponse.
 
         图片id
 
@@ -78,7 +78,7 @@ class ExecutePostCreateImagesResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ExecutePostCreateImagesResponse.
+        r"""Gets the name of this ExecutePostCreateImagesResponse.
 
         
 
@@ -89,7 +89,7 @@ class ExecutePostCreateImagesResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExecutePostCreateImagesResponse.
+        r"""Sets the name of this ExecutePostCreateImagesResponse.
 
         
 
@@ -100,7 +100,7 @@ class ExecutePostCreateImagesResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this ExecutePostCreateImagesResponse.
+        r"""Gets the url of this ExecutePostCreateImagesResponse.
 
         访问地址
 
@@ -111,7 +111,7 @@ class ExecutePostCreateImagesResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ExecutePostCreateImagesResponse.
+        r"""Sets the url of this ExecutePostCreateImagesResponse.
 
         访问地址
 

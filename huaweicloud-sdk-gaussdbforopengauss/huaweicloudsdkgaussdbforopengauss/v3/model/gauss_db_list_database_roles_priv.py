@@ -41,7 +41,7 @@ class GaussDBListDatabaseRolesPriv:
     }
 
     def __init__(self, rolsuper=None, rolinherit=None, rolcreaterole=None, rolcreatedb=None, rolcanlogin=None, rolconnlimit=None, rolreplication=None, rolbypassrls=None, rolpassworddeadline=None):
-        """GaussDBListDatabaseRolesPriv
+        r"""GaussDBListDatabaseRolesPriv
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @property
     def rolsuper(self):
-        """Gets the rolsuper of this GaussDBListDatabaseRolesPriv.
+        r"""Gets the rolsuper of this GaussDBListDatabaseRolesPriv.
 
         用户/角色是否具有管理员权限。
 
@@ -110,7 +110,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @rolsuper.setter
     def rolsuper(self, rolsuper):
-        """Sets the rolsuper of this GaussDBListDatabaseRolesPriv.
+        r"""Sets the rolsuper of this GaussDBListDatabaseRolesPriv.
 
         用户/角色是否具有管理员权限。
 
@@ -121,7 +121,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @property
     def rolinherit(self):
-        """Gets the rolinherit of this GaussDBListDatabaseRolesPriv.
+        r"""Gets the rolinherit of this GaussDBListDatabaseRolesPriv.
 
         用户/角色是否自动继承其所属角色的权限。
 
@@ -132,7 +132,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @rolinherit.setter
     def rolinherit(self, rolinherit):
-        """Sets the rolinherit of this GaussDBListDatabaseRolesPriv.
+        r"""Sets the rolinherit of this GaussDBListDatabaseRolesPriv.
 
         用户/角色是否自动继承其所属角色的权限。
 
@@ -143,7 +143,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @property
     def rolcreaterole(self):
-        """Gets the rolcreaterole of this GaussDBListDatabaseRolesPriv.
+        r"""Gets the rolcreaterole of this GaussDBListDatabaseRolesPriv.
 
         用户/角色是否支持创建其他子用户。
 
@@ -154,7 +154,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @rolcreaterole.setter
     def rolcreaterole(self, rolcreaterole):
-        """Sets the rolcreaterole of this GaussDBListDatabaseRolesPriv.
+        r"""Sets the rolcreaterole of this GaussDBListDatabaseRolesPriv.
 
         用户/角色是否支持创建其他子用户。
 
@@ -165,7 +165,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @property
     def rolcreatedb(self):
-        """Gets the rolcreatedb of this GaussDBListDatabaseRolesPriv.
+        r"""Gets the rolcreatedb of this GaussDBListDatabaseRolesPriv.
 
         用户/角色是否可以创建数据库。
 
@@ -176,7 +176,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @rolcreatedb.setter
     def rolcreatedb(self, rolcreatedb):
-        """Sets the rolcreatedb of this GaussDBListDatabaseRolesPriv.
+        r"""Sets the rolcreatedb of this GaussDBListDatabaseRolesPriv.
 
         用户/角色是否可以创建数据库。
 
@@ -187,7 +187,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @property
     def rolcanlogin(self):
-        """Gets the rolcanlogin of this GaussDBListDatabaseRolesPriv.
+        r"""Gets the rolcanlogin of this GaussDBListDatabaseRolesPriv.
 
         用户/角色是否可以登录数据库。
 
@@ -198,7 +198,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @rolcanlogin.setter
     def rolcanlogin(self, rolcanlogin):
-        """Sets the rolcanlogin of this GaussDBListDatabaseRolesPriv.
+        r"""Sets the rolcanlogin of this GaussDBListDatabaseRolesPriv.
 
         用户/角色是否可以登录数据库。
 
@@ -209,7 +209,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @property
     def rolconnlimit(self):
-        """Gets the rolconnlimit of this GaussDBListDatabaseRolesPriv.
+        r"""Gets the rolconnlimit of this GaussDBListDatabaseRolesPriv.
 
         用户/角色连接实例的最大并发连接数。-1表示没有限制。
 
@@ -220,7 +220,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @rolconnlimit.setter
     def rolconnlimit(self, rolconnlimit):
-        """Sets the rolconnlimit of this GaussDBListDatabaseRolesPriv.
+        r"""Sets the rolconnlimit of this GaussDBListDatabaseRolesPriv.
 
         用户/角色连接实例的最大并发连接数。-1表示没有限制。
 
@@ -231,7 +231,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @property
     def rolreplication(self):
-        """Gets the rolreplication of this GaussDBListDatabaseRolesPriv.
+        r"""Gets the rolreplication of this GaussDBListDatabaseRolesPriv.
 
         用户/角色是否属于复制角色。
 
@@ -242,7 +242,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @rolreplication.setter
     def rolreplication(self, rolreplication):
-        """Sets the rolreplication of this GaussDBListDatabaseRolesPriv.
+        r"""Sets the rolreplication of this GaussDBListDatabaseRolesPriv.
 
         用户/角色是否属于复制角色。
 
@@ -253,7 +253,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @property
     def rolbypassrls(self):
-        """Gets the rolbypassrls of this GaussDBListDatabaseRolesPriv.
+        r"""Gets the rolbypassrls of this GaussDBListDatabaseRolesPriv.
 
         用户/角色是否绕过每个行级安全策略。
 
@@ -264,7 +264,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @rolbypassrls.setter
     def rolbypassrls(self, rolbypassrls):
-        """Sets the rolbypassrls of this GaussDBListDatabaseRolesPriv.
+        r"""Sets the rolbypassrls of this GaussDBListDatabaseRolesPriv.
 
         用户/角色是否绕过每个行级安全策略。
 
@@ -275,7 +275,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @property
     def rolpassworddeadline(self):
-        """Gets the rolpassworddeadline of this GaussDBListDatabaseRolesPriv.
+        r"""Gets the rolpassworddeadline of this GaussDBListDatabaseRolesPriv.
 
         用户/角色密码过期时间。
 
@@ -286,7 +286,7 @@ class GaussDBListDatabaseRolesPriv:
 
     @rolpassworddeadline.setter
     def rolpassworddeadline(self, rolpassworddeadline):
-        """Sets the rolpassworddeadline of this GaussDBListDatabaseRolesPriv.
+        r"""Sets the rolpassworddeadline of this GaussDBListDatabaseRolesPriv.
 
         用户/角色密码过期时间。
 

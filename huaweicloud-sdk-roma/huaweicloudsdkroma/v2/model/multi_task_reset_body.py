@@ -25,7 +25,7 @@ class MultiTaskResetBody:
     }
 
     def __init__(self, date_from=None):
-        """MultiTaskResetBody
+        r"""MultiTaskResetBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MultiTaskResetBody:
 
     @property
     def date_from(self):
-        """Gets the date_from of this MultiTaskResetBody.
+        r"""Gets the date_from of this MultiTaskResetBody.
 
         任务重置开始时间，UTC时间戳，允许为空
 
@@ -54,7 +54,7 @@ class MultiTaskResetBody:
 
     @date_from.setter
     def date_from(self, date_from):
-        """Sets the date_from of this MultiTaskResetBody.
+        r"""Sets the date_from of this MultiTaskResetBody.
 
         任务重置开始时间，UTC时间戳，允许为空
 

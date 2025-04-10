@@ -31,7 +31,7 @@ class ApplicationItem:
     }
 
     def __init__(self, id=None, name=None, created_at=None, updated_at=None):
-        """ApplicationItem
+        r"""ApplicationItem
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ApplicationItem:
 
     @property
     def id(self):
-        """Gets the id of this ApplicationItem.
+        r"""Gets the id of this ApplicationItem.
 
         应用ID。
 
@@ -75,7 +75,7 @@ class ApplicationItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApplicationItem.
+        r"""Sets the id of this ApplicationItem.
 
         应用ID。
 
@@ -86,7 +86,7 @@ class ApplicationItem:
 
     @property
     def name(self):
-        """Gets the name of this ApplicationItem.
+        r"""Gets the name of this ApplicationItem.
 
         应用名称。
 
@@ -97,7 +97,7 @@ class ApplicationItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicationItem.
+        r"""Sets the name of this ApplicationItem.
 
         应用名称。
 
@@ -108,7 +108,7 @@ class ApplicationItem:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ApplicationItem.
+        r"""Gets the created_at of this ApplicationItem.
 
         创建时间。
 
@@ -119,7 +119,7 @@ class ApplicationItem:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ApplicationItem.
+        r"""Sets the created_at of this ApplicationItem.
 
         创建时间。
 
@@ -130,7 +130,7 @@ class ApplicationItem:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ApplicationItem.
+        r"""Gets the updated_at of this ApplicationItem.
 
         更新时间。
 
@@ -141,7 +141,7 @@ class ApplicationItem:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ApplicationItem.
+        r"""Sets the updated_at of this ApplicationItem.
 
         更新时间。
 

@@ -26,7 +26,7 @@ class StopJobResponse(SdkResponse):
     }
 
     def __init__(self, validation_result=None):
-        """StopJobResponse
+        r"""StopJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopJobResponse(SdkResponse):
 
     @property
     def validation_result(self):
-        """Gets the validation_result of this StopJobResponse.
+        r"""Gets the validation_result of this StopJobResponse.
 
         校验结构：如果停止作业接失败，返回失败原因，请参见validation-result参数说明。如果停止成功，返回空列表。
 
@@ -55,7 +55,7 @@ class StopJobResponse(SdkResponse):
 
     @validation_result.setter
     def validation_result(self, validation_result):
-        """Sets the validation_result of this StopJobResponse.
+        r"""Sets the validation_result of this StopJobResponse.
 
         校验结构：如果停止作业接失败，返回失败原因，请参见validation-result参数说明。如果停止成功，返回空列表。
 

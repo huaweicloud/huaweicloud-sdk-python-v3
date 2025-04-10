@@ -29,7 +29,7 @@ class RegisterDmsKafkaInstanceRequestBody:
     }
 
     def __init__(self, instance_id=None, kafka_name=None, connect_info=None):
-        """RegisterDmsKafkaInstanceRequestBody
+        r"""RegisterDmsKafkaInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RegisterDmsKafkaInstanceRequestBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RegisterDmsKafkaInstanceRequestBody.
+        r"""Gets the instance_id of this RegisterDmsKafkaInstanceRequestBody.
 
         kafka ID
 
@@ -65,7 +65,7 @@ class RegisterDmsKafkaInstanceRequestBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RegisterDmsKafkaInstanceRequestBody.
+        r"""Sets the instance_id of this RegisterDmsKafkaInstanceRequestBody.
 
         kafka ID
 
@@ -76,7 +76,7 @@ class RegisterDmsKafkaInstanceRequestBody:
 
     @property
     def kafka_name(self):
-        """Gets the kafka_name of this RegisterDmsKafkaInstanceRequestBody.
+        r"""Gets the kafka_name of this RegisterDmsKafkaInstanceRequestBody.
 
         kafka 名称
 
@@ -87,7 +87,7 @@ class RegisterDmsKafkaInstanceRequestBody:
 
     @kafka_name.setter
     def kafka_name(self, kafka_name):
-        """Sets the kafka_name of this RegisterDmsKafkaInstanceRequestBody.
+        r"""Sets the kafka_name of this RegisterDmsKafkaInstanceRequestBody.
 
         kafka 名称
 
@@ -98,7 +98,7 @@ class RegisterDmsKafkaInstanceRequestBody:
 
     @property
     def connect_info(self):
-        """Gets the connect_info of this RegisterDmsKafkaInstanceRequestBody.
+        r"""Gets the connect_info of this RegisterDmsKafkaInstanceRequestBody.
 
         :return: The connect_info of this RegisterDmsKafkaInstanceRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.RegisterDmsKafkaInstanceRequestBodyConnectInfo`
@@ -107,7 +107,7 @@ class RegisterDmsKafkaInstanceRequestBody:
 
     @connect_info.setter
     def connect_info(self, connect_info):
-        """Sets the connect_info of this RegisterDmsKafkaInstanceRequestBody.
+        r"""Sets the connect_info of this RegisterDmsKafkaInstanceRequestBody.
 
         :param connect_info: The connect_info of this RegisterDmsKafkaInstanceRequestBody.
         :type connect_info: :class:`huaweicloudsdklts.v2.RegisterDmsKafkaInstanceRequestBodyConnectInfo`

@@ -26,7 +26,7 @@ class ShowAccessoryLimitsResponse(SdkResponse):
     }
 
     def __init__(self, accessory_limit=None):
-        """ShowAccessoryLimitsResponse
+        r"""ShowAccessoryLimitsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAccessoryLimitsResponse(SdkResponse):
 
     @property
     def accessory_limit(self):
-        """Gets the accessory_limit of this ShowAccessoryLimitsResponse.
+        r"""Gets the accessory_limit of this ShowAccessoryLimitsResponse.
 
         :return: The accessory_limit of this ShowAccessoryLimitsResponse.
         :rtype: :class:`huaweicloudsdkosm.v2.AccessoryLimitVo`
@@ -53,7 +53,7 @@ class ShowAccessoryLimitsResponse(SdkResponse):
 
     @accessory_limit.setter
     def accessory_limit(self, accessory_limit):
-        """Sets the accessory_limit of this ShowAccessoryLimitsResponse.
+        r"""Sets the accessory_limit of this ShowAccessoryLimitsResponse.
 
         :param accessory_limit: The accessory_limit of this ShowAccessoryLimitsResponse.
         :type accessory_limit: :class:`huaweicloudsdkosm.v2.AccessoryLimitVo`

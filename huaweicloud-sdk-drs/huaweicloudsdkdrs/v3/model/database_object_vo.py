@@ -27,7 +27,7 @@ class DatabaseObjectVO:
     }
 
     def __init__(self, id=None, select=None):
-        """DatabaseObjectVO
+        r"""DatabaseObjectVO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DatabaseObjectVO:
 
     @property
     def id(self):
-        """Gets the id of this DatabaseObjectVO.
+        r"""Gets the id of this DatabaseObjectVO.
 
         数据库对象和数据库表名称，例如格式为hec-*-*-drs_test1。
 
@@ -61,7 +61,7 @@ class DatabaseObjectVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DatabaseObjectVO.
+        r"""Sets the id of this DatabaseObjectVO.
 
         数据库对象和数据库表名称，例如格式为hec-*-*-drs_test1。
 
@@ -72,7 +72,7 @@ class DatabaseObjectVO:
 
     @property
     def select(self):
-        """Gets the select of this DatabaseObjectVO.
+        r"""Gets the select of this DatabaseObjectVO.
 
         是否选择高级配置，值为true。
 
@@ -83,7 +83,7 @@ class DatabaseObjectVO:
 
     @select.setter
     def select(self, select):
-        """Sets the select of this DatabaseObjectVO.
+        r"""Sets the select of this DatabaseObjectVO.
 
         是否选择高级配置，值为true。
 

@@ -33,7 +33,7 @@ class InvalidVpnUser:
     }
 
     def __init__(self, name=None, description=None, user_group_name=None, static_ip=None, cause=None):
-        """InvalidVpnUser
+        r"""InvalidVpnUser
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class InvalidVpnUser:
 
     @property
     def name(self):
-        """Gets the name of this InvalidVpnUser.
+        r"""Gets the name of this InvalidVpnUser.
 
         用户名
 
@@ -82,7 +82,7 @@ class InvalidVpnUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InvalidVpnUser.
+        r"""Sets the name of this InvalidVpnUser.
 
         用户名
 
@@ -93,7 +93,7 @@ class InvalidVpnUser:
 
     @property
     def description(self):
-        """Gets the description of this InvalidVpnUser.
+        r"""Gets the description of this InvalidVpnUser.
 
         用户描述，0-64字符，中文、英文、数字包含下划线
 
@@ -104,7 +104,7 @@ class InvalidVpnUser:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InvalidVpnUser.
+        r"""Sets the description of this InvalidVpnUser.
 
         用户描述，0-64字符，中文、英文、数字包含下划线
 
@@ -115,7 +115,7 @@ class InvalidVpnUser:
 
     @property
     def user_group_name(self):
-        """Gets the user_group_name of this InvalidVpnUser.
+        r"""Gets the user_group_name of this InvalidVpnUser.
 
         所属用户组名称
 
@@ -126,7 +126,7 @@ class InvalidVpnUser:
 
     @user_group_name.setter
     def user_group_name(self, user_group_name):
-        """Sets the user_group_name of this InvalidVpnUser.
+        r"""Sets the user_group_name of this InvalidVpnUser.
 
         所属用户组名称
 
@@ -137,7 +137,7 @@ class InvalidVpnUser:
 
     @property
     def static_ip(self):
-        """Gets the static_ip of this InvalidVpnUser.
+        r"""Gets the static_ip of this InvalidVpnUser.
 
         静态客户端IP地址，默认值disable，表示随机分配客户端IP
 
@@ -148,7 +148,7 @@ class InvalidVpnUser:
 
     @static_ip.setter
     def static_ip(self, static_ip):
-        """Sets the static_ip of this InvalidVpnUser.
+        r"""Sets the static_ip of this InvalidVpnUser.
 
         静态客户端IP地址，默认值disable，表示随机分配客户端IP
 
@@ -159,7 +159,7 @@ class InvalidVpnUser:
 
     @property
     def cause(self):
-        """Gets the cause of this InvalidVpnUser.
+        r"""Gets the cause of this InvalidVpnUser.
 
         失败原因
 
@@ -170,7 +170,7 @@ class InvalidVpnUser:
 
     @cause.setter
     def cause(self, cause):
-        """Sets the cause of this InvalidVpnUser.
+        r"""Sets the cause of this InvalidVpnUser.
 
         失败原因
 

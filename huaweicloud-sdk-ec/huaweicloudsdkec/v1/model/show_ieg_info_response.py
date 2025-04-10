@@ -56,7 +56,7 @@ class ShowIegInfoResponse(SdkResponse):
     }
 
     def __init__(self, id=None, project_id=None, domain_id=None, name=None, area_id=None, equipment_type=None, high_availability=None, frozen_effect=None, created_at=None, updated_at=None, status=None, bind_ecn=None, enterprise_project_id=None, order_id=None, product_id=None, equipment_infos=None):
-        """ShowIegInfoResponse
+        r"""ShowIegInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -149,7 +149,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowIegInfoResponse.
+        r"""Gets the id of this ShowIegInfoResponse.
 
         智能企业网关ID
 
@@ -160,7 +160,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowIegInfoResponse.
+        r"""Sets the id of this ShowIegInfoResponse.
 
         智能企业网关ID
 
@@ -171,7 +171,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowIegInfoResponse.
+        r"""Gets the project_id of this ShowIegInfoResponse.
 
         项目ID
 
@@ -182,7 +182,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowIegInfoResponse.
+        r"""Sets the project_id of this ShowIegInfoResponse.
 
         项目ID
 
@@ -193,7 +193,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowIegInfoResponse.
+        r"""Gets the domain_id of this ShowIegInfoResponse.
 
         租户账号ID
 
@@ -204,7 +204,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowIegInfoResponse.
+        r"""Sets the domain_id of this ShowIegInfoResponse.
 
         租户账号ID
 
@@ -215,7 +215,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowIegInfoResponse.
+        r"""Gets the name of this ShowIegInfoResponse.
 
         智能企业网关名字
 
@@ -226,7 +226,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowIegInfoResponse.
+        r"""Sets the name of this ShowIegInfoResponse.
 
         智能企业网关名字
 
@@ -237,7 +237,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def area_id(self):
-        """Gets the area_id of this ShowIegInfoResponse.
+        r"""Gets the area_id of this ShowIegInfoResponse.
 
         大区ID
 
@@ -248,7 +248,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @area_id.setter
     def area_id(self, area_id):
-        """Sets the area_id of this ShowIegInfoResponse.
+        r"""Sets the area_id of this ShowIegInfoResponse.
 
         大区ID
 
@@ -259,7 +259,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def equipment_type(self):
-        """Gets the equipment_type of this ShowIegInfoResponse.
+        r"""Gets the equipment_type of this ShowIegInfoResponse.
 
         设备类型
 
@@ -270,7 +270,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @equipment_type.setter
     def equipment_type(self, equipment_type):
-        """Sets the equipment_type of this ShowIegInfoResponse.
+        r"""Sets the equipment_type of this ShowIegInfoResponse.
 
         设备类型
 
@@ -281,7 +281,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def high_availability(self):
-        """Gets the high_availability of this ShowIegInfoResponse.
+        r"""Gets the high_availability of this ShowIegInfoResponse.
 
         高可用性
 
@@ -292,7 +292,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @high_availability.setter
     def high_availability(self, high_availability):
-        """Sets the high_availability of this ShowIegInfoResponse.
+        r"""Sets the high_availability of this ShowIegInfoResponse.
 
         高可用性
 
@@ -303,7 +303,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def frozen_effect(self):
-        """Gets the frozen_effect of this ShowIegInfoResponse.
+        r"""Gets the frozen_effect of this ShowIegInfoResponse.
 
         冻结效果
 
@@ -314,7 +314,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @frozen_effect.setter
     def frozen_effect(self, frozen_effect):
-        """Sets the frozen_effect of this ShowIegInfoResponse.
+        r"""Sets the frozen_effect of this ShowIegInfoResponse.
 
         冻结效果
 
@@ -325,7 +325,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowIegInfoResponse.
+        r"""Gets the created_at of this ShowIegInfoResponse.
 
         创建时间
 
@@ -336,7 +336,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowIegInfoResponse.
+        r"""Sets the created_at of this ShowIegInfoResponse.
 
         创建时间
 
@@ -347,7 +347,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowIegInfoResponse.
+        r"""Gets the updated_at of this ShowIegInfoResponse.
 
         更新时间
 
@@ -358,7 +358,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowIegInfoResponse.
+        r"""Sets the updated_at of this ShowIegInfoResponse.
 
         更新时间
 
@@ -369,7 +369,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowIegInfoResponse.
+        r"""Gets the status of this ShowIegInfoResponse.
 
         状态
 
@@ -380,7 +380,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowIegInfoResponse.
+        r"""Sets the status of this ShowIegInfoResponse.
 
         状态
 
@@ -391,7 +391,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def bind_ecn(self):
-        """Gets the bind_ecn of this ShowIegInfoResponse.
+        r"""Gets the bind_ecn of this ShowIegInfoResponse.
 
         绑定的企业连接网络ID
 
@@ -402,7 +402,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @bind_ecn.setter
     def bind_ecn(self, bind_ecn):
-        """Sets the bind_ecn of this ShowIegInfoResponse.
+        r"""Sets the bind_ecn of this ShowIegInfoResponse.
 
         绑定的企业连接网络ID
 
@@ -413,7 +413,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowIegInfoResponse.
+        r"""Gets the enterprise_project_id of this ShowIegInfoResponse.
 
         企业项目ID
 
@@ -424,7 +424,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowIegInfoResponse.
+        r"""Sets the enterprise_project_id of this ShowIegInfoResponse.
 
         企业项目ID
 
@@ -435,7 +435,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowIegInfoResponse.
+        r"""Gets the order_id of this ShowIegInfoResponse.
 
         包周期场景下购买的订单号，按需场景下为空
 
@@ -446,7 +446,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowIegInfoResponse.
+        r"""Sets the order_id of this ShowIegInfoResponse.
 
         包周期场景下购买的订单号，按需场景下为空
 
@@ -457,7 +457,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this ShowIegInfoResponse.
+        r"""Gets the product_id of this ShowIegInfoResponse.
 
         包周期场景下购买的订单号，按需场景下为空
 
@@ -468,7 +468,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ShowIegInfoResponse.
+        r"""Sets the product_id of this ShowIegInfoResponse.
 
         包周期场景下购买的订单号，按需场景下为空
 
@@ -479,7 +479,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @property
     def equipment_infos(self):
-        """Gets the equipment_infos of this ShowIegInfoResponse.
+        r"""Gets the equipment_infos of this ShowIegInfoResponse.
 
         ieg设备信息
 
@@ -490,7 +490,7 @@ class ShowIegInfoResponse(SdkResponse):
 
     @equipment_infos.setter
     def equipment_infos(self, equipment_infos):
-        """Sets the equipment_infos of this ShowIegInfoResponse.
+        r"""Sets the equipment_infos of this ShowIegInfoResponse.
 
         ieg设备信息
 

@@ -30,7 +30,7 @@ class ListDataArtsStudioInstancesResponse(SdkResponse):
     }
 
     def __init__(self, billing_check=None, count=None, commodity_order_lists=None):
-        """ListDataArtsStudioInstancesResponse
+        r"""ListDataArtsStudioInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDataArtsStudioInstancesResponse(SdkResponse):
 
     @property
     def billing_check(self):
-        """Gets the billing_check of this ListDataArtsStudioInstancesResponse.
+        r"""Gets the billing_check of this ListDataArtsStudioInstancesResponse.
 
         是否需要账单
 
@@ -69,7 +69,7 @@ class ListDataArtsStudioInstancesResponse(SdkResponse):
 
     @billing_check.setter
     def billing_check(self, billing_check):
-        """Sets the billing_check of this ListDataArtsStudioInstancesResponse.
+        r"""Sets the billing_check of this ListDataArtsStudioInstancesResponse.
 
         是否需要账单
 
@@ -80,7 +80,7 @@ class ListDataArtsStudioInstancesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDataArtsStudioInstancesResponse.
+        r"""Gets the count of this ListDataArtsStudioInstancesResponse.
 
         返回记录总数
 
@@ -91,7 +91,7 @@ class ListDataArtsStudioInstancesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDataArtsStudioInstancesResponse.
+        r"""Sets the count of this ListDataArtsStudioInstancesResponse.
 
         返回记录总数
 
@@ -102,7 +102,7 @@ class ListDataArtsStudioInstancesResponse(SdkResponse):
 
     @property
     def commodity_order_lists(self):
-        """Gets the commodity_order_lists of this ListDataArtsStudioInstancesResponse.
+        r"""Gets the commodity_order_lists of this ListDataArtsStudioInstancesResponse.
 
         返回实例列表
 
@@ -113,7 +113,7 @@ class ListDataArtsStudioInstancesResponse(SdkResponse):
 
     @commodity_order_lists.setter
     def commodity_order_lists(self, commodity_order_lists):
-        """Sets the commodity_order_lists of this ListDataArtsStudioInstancesResponse.
+        r"""Sets the commodity_order_lists of this ListDataArtsStudioInstancesResponse.
 
         返回实例列表
 

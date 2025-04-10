@@ -56,7 +56,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     }
 
     def __init__(self, name=None, login=None, createrole=None, createdb=None, systemadmin=None, auditadmin=None, inherit=None, useft=None, conn_limit=None, replication=None, valid_begin=None, valid_until=None, lock=None, desc=None, user_type=None, logical_cluster=None):
-        """ShowDatabaseUserResponse
+        r"""ShowDatabaseUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -149,7 +149,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDatabaseUserResponse.
+        r"""Gets the name of this ShowDatabaseUserResponse.
 
         用户名称
 
@@ -160,7 +160,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDatabaseUserResponse.
+        r"""Sets the name of this ShowDatabaseUserResponse.
 
         用户名称
 
@@ -171,7 +171,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def login(self):
-        """Gets the login of this ShowDatabaseUserResponse.
+        r"""Gets the login of this ShowDatabaseUserResponse.
 
         是否可以登陆
 
@@ -182,7 +182,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @login.setter
     def login(self, login):
-        """Sets the login of this ShowDatabaseUserResponse.
+        r"""Sets the login of this ShowDatabaseUserResponse.
 
         是否可以登陆
 
@@ -193,7 +193,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def createrole(self):
-        """Gets the createrole of this ShowDatabaseUserResponse.
+        r"""Gets the createrole of this ShowDatabaseUserResponse.
 
         创建角色权限
 
@@ -204,7 +204,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @createrole.setter
     def createrole(self, createrole):
-        """Sets the createrole of this ShowDatabaseUserResponse.
+        r"""Sets the createrole of this ShowDatabaseUserResponse.
 
         创建角色权限
 
@@ -215,7 +215,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def createdb(self):
-        """Gets the createdb of this ShowDatabaseUserResponse.
+        r"""Gets the createdb of this ShowDatabaseUserResponse.
 
         创建数据库权限
 
@@ -226,7 +226,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @createdb.setter
     def createdb(self, createdb):
-        """Sets the createdb of this ShowDatabaseUserResponse.
+        r"""Sets the createdb of this ShowDatabaseUserResponse.
 
         创建数据库权限
 
@@ -237,7 +237,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def systemadmin(self):
-        """Gets the systemadmin of this ShowDatabaseUserResponse.
+        r"""Gets the systemadmin of this ShowDatabaseUserResponse.
 
         系统管理员
 
@@ -248,7 +248,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @systemadmin.setter
     def systemadmin(self, systemadmin):
-        """Sets the systemadmin of this ShowDatabaseUserResponse.
+        r"""Sets the systemadmin of this ShowDatabaseUserResponse.
 
         系统管理员
 
@@ -259,7 +259,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def auditadmin(self):
-        """Gets the auditadmin of this ShowDatabaseUserResponse.
+        r"""Gets the auditadmin of this ShowDatabaseUserResponse.
 
         审计管理员
 
@@ -270,7 +270,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @auditadmin.setter
     def auditadmin(self, auditadmin):
-        """Sets the auditadmin of this ShowDatabaseUserResponse.
+        r"""Sets the auditadmin of this ShowDatabaseUserResponse.
 
         审计管理员
 
@@ -281,7 +281,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def inherit(self):
-        """Gets the inherit of this ShowDatabaseUserResponse.
+        r"""Gets the inherit of this ShowDatabaseUserResponse.
 
         继承所在组权限
 
@@ -292,7 +292,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @inherit.setter
     def inherit(self, inherit):
-        """Sets the inherit of this ShowDatabaseUserResponse.
+        r"""Sets the inherit of this ShowDatabaseUserResponse.
 
         继承所在组权限
 
@@ -303,7 +303,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def useft(self):
-        """Gets the useft of this ShowDatabaseUserResponse.
+        r"""Gets the useft of this ShowDatabaseUserResponse.
 
         访问外表权限
 
@@ -314,7 +314,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @useft.setter
     def useft(self, useft):
-        """Sets the useft of this ShowDatabaseUserResponse.
+        r"""Sets the useft of this ShowDatabaseUserResponse.
 
         访问外表权限
 
@@ -325,7 +325,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def conn_limit(self):
-        """Gets the conn_limit of this ShowDatabaseUserResponse.
+        r"""Gets the conn_limit of this ShowDatabaseUserResponse.
 
         连接数限制
 
@@ -336,7 +336,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @conn_limit.setter
     def conn_limit(self, conn_limit):
-        """Sets the conn_limit of this ShowDatabaseUserResponse.
+        r"""Sets the conn_limit of this ShowDatabaseUserResponse.
 
         连接数限制
 
@@ -347,7 +347,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def replication(self):
-        """Gets the replication of this ShowDatabaseUserResponse.
+        r"""Gets the replication of this ShowDatabaseUserResponse.
 
         是否允许流复制
 
@@ -358,7 +358,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this ShowDatabaseUserResponse.
+        r"""Sets the replication of this ShowDatabaseUserResponse.
 
         是否允许流复制
 
@@ -369,7 +369,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def valid_begin(self):
-        """Gets the valid_begin of this ShowDatabaseUserResponse.
+        r"""Gets the valid_begin of this ShowDatabaseUserResponse.
 
         角色生效时间
 
@@ -380,7 +380,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @valid_begin.setter
     def valid_begin(self, valid_begin):
-        """Sets the valid_begin of this ShowDatabaseUserResponse.
+        r"""Sets the valid_begin of this ShowDatabaseUserResponse.
 
         角色生效时间
 
@@ -391,7 +391,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def valid_until(self):
-        """Gets the valid_until of this ShowDatabaseUserResponse.
+        r"""Gets the valid_until of this ShowDatabaseUserResponse.
 
         角色过期时间
 
@@ -402,7 +402,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @valid_until.setter
     def valid_until(self, valid_until):
-        """Sets the valid_until of this ShowDatabaseUserResponse.
+        r"""Sets the valid_until of this ShowDatabaseUserResponse.
 
         角色过期时间
 
@@ -413,7 +413,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def lock(self):
-        """Gets the lock of this ShowDatabaseUserResponse.
+        r"""Gets the lock of this ShowDatabaseUserResponse.
 
         是否锁定
 
@@ -424,7 +424,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @lock.setter
     def lock(self, lock):
-        """Sets the lock of this ShowDatabaseUserResponse.
+        r"""Sets the lock of this ShowDatabaseUserResponse.
 
         是否锁定
 
@@ -435,7 +435,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def desc(self):
-        """Gets the desc of this ShowDatabaseUserResponse.
+        r"""Gets the desc of this ShowDatabaseUserResponse.
 
         描述
 
@@ -446,7 +446,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this ShowDatabaseUserResponse.
+        r"""Sets the desc of this ShowDatabaseUserResponse.
 
         描述
 
@@ -457,7 +457,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def user_type(self):
-        """Gets the user_type of this ShowDatabaseUserResponse.
+        r"""Gets the user_type of this ShowDatabaseUserResponse.
 
         用户类型
 
@@ -468,7 +468,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this ShowDatabaseUserResponse.
+        r"""Sets the user_type of this ShowDatabaseUserResponse.
 
         用户类型
 
@@ -479,7 +479,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @property
     def logical_cluster(self):
-        """Gets the logical_cluster of this ShowDatabaseUserResponse.
+        r"""Gets the logical_cluster of this ShowDatabaseUserResponse.
 
         所属逻辑集群
 
@@ -490,7 +490,7 @@ class ShowDatabaseUserResponse(SdkResponse):
 
     @logical_cluster.setter
     def logical_cluster(self, logical_cluster):
-        """Sets the logical_cluster of this ShowDatabaseUserResponse.
+        r"""Sets the logical_cluster of this ShowDatabaseUserResponse.
 
         所属逻辑集群
 

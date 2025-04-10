@@ -27,7 +27,7 @@ class DisassociateIpFromPolicyAndPackageRequest:
     }
 
     def __init__(self, policy_id=None, body=None):
-        """DisassociateIpFromPolicyAndPackageRequest
+        r"""DisassociateIpFromPolicyAndPackageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DisassociateIpFromPolicyAndPackageRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DisassociateIpFromPolicyAndPackageRequest.
+        r"""Gets the policy_id of this DisassociateIpFromPolicyAndPackageRequest.
 
         策略id
 
@@ -60,7 +60,7 @@ class DisassociateIpFromPolicyAndPackageRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DisassociateIpFromPolicyAndPackageRequest.
+        r"""Sets the policy_id of this DisassociateIpFromPolicyAndPackageRequest.
 
         策略id
 
@@ -71,7 +71,7 @@ class DisassociateIpFromPolicyAndPackageRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisassociateIpFromPolicyAndPackageRequest.
+        r"""Gets the body of this DisassociateIpFromPolicyAndPackageRequest.
 
         :return: The body of this DisassociateIpFromPolicyAndPackageRequest.
         :rtype: :class:`huaweicloudsdkaad.v1.IpBindingV3Body`
@@ -80,7 +80,7 @@ class DisassociateIpFromPolicyAndPackageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisassociateIpFromPolicyAndPackageRequest.
+        r"""Sets the body of this DisassociateIpFromPolicyAndPackageRequest.
 
         :param body: The body of this DisassociateIpFromPolicyAndPackageRequest.
         :type body: :class:`huaweicloudsdkaad.v1.IpBindingV3Body`

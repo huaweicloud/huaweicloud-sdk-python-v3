@@ -28,7 +28,7 @@ class CreateManualBackupResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, backup_id=None):
-        """CreateManualBackupResponse
+        r"""CreateManualBackupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateManualBackupResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateManualBackupResponse.
+        r"""Gets the job_id of this CreateManualBackupResponse.
 
         手动备份的异步任务ID。
 
@@ -62,7 +62,7 @@ class CreateManualBackupResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateManualBackupResponse.
+        r"""Sets the job_id of this CreateManualBackupResponse.
 
         手动备份的异步任务ID。
 
@@ -73,7 +73,7 @@ class CreateManualBackupResponse(SdkResponse):
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this CreateManualBackupResponse.
+        r"""Gets the backup_id of this CreateManualBackupResponse.
 
         手动备份ID。
 
@@ -84,7 +84,7 @@ class CreateManualBackupResponse(SdkResponse):
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this CreateManualBackupResponse.
+        r"""Sets the backup_id of this CreateManualBackupResponse.
 
         手动备份ID。
 

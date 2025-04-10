@@ -25,7 +25,7 @@ class UpdateConfigMaps:
     }
 
     def __init__(self, configmap=None):
-        """UpdateConfigMaps
+        r"""UpdateConfigMaps
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateConfigMaps:
 
     @property
     def configmap(self):
-        """Gets the configmap of this UpdateConfigMaps.
+        r"""Gets the configmap of this UpdateConfigMaps.
 
         :return: The configmap of this UpdateConfigMaps.
         :rtype: :class:`huaweicloudsdkief.v1.UpdateConfigMap`
@@ -51,7 +51,7 @@ class UpdateConfigMaps:
 
     @configmap.setter
     def configmap(self, configmap):
-        """Sets the configmap of this UpdateConfigMaps.
+        r"""Sets the configmap of this UpdateConfigMaps.
 
         :param configmap: The configmap of this UpdateConfigMaps.
         :type configmap: :class:`huaweicloudsdkief.v1.UpdateConfigMap`

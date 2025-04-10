@@ -25,7 +25,7 @@ class CreateOttChannelInfoReqRecordSettings:
     }
 
     def __init__(self, rollingbuffer_duration=None):
-        """CreateOttChannelInfoReqRecordSettings
+        r"""CreateOttChannelInfoReqRecordSettings
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateOttChannelInfoReqRecordSettings:
 
     @property
     def rollingbuffer_duration(self):
-        """Gets the rollingbuffer_duration of this CreateOttChannelInfoReqRecordSettings.
+        r"""Gets the rollingbuffer_duration of this CreateOttChannelInfoReqRecordSettings.
 
         最大回看录制时长。在此时间段内会连续不断的录制，为必选项  单位：秒。取值为“0”时，表示不支持录制；最大支持录制14天
 
@@ -53,7 +53,7 @@ class CreateOttChannelInfoReqRecordSettings:
 
     @rollingbuffer_duration.setter
     def rollingbuffer_duration(self, rollingbuffer_duration):
-        """Sets the rollingbuffer_duration of this CreateOttChannelInfoReqRecordSettings.
+        r"""Sets the rollingbuffer_duration of this CreateOttChannelInfoReqRecordSettings.
 
         最大回看录制时长。在此时间段内会连续不断的录制，为必选项  单位：秒。取值为“0”时，表示不支持录制；最大支持录制14天
 

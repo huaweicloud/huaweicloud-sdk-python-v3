@@ -25,7 +25,7 @@ class NonRequiredGcbSize:
     }
 
     def __init__(self, size=None):
-        """NonRequiredGcbSize
+        r"""NonRequiredGcbSize
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NonRequiredGcbSize:
 
     @property
     def size(self):
-        """Gets the size of this NonRequiredGcbSize.
+        r"""Gets the size of this NonRequiredGcbSize.
 
         功能说明：全域互联带宽实例中的带宽值大小，单位Mbit/s。 取值范围：2-300Mbit/s
 
@@ -54,7 +54,7 @@ class NonRequiredGcbSize:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this NonRequiredGcbSize.
+        r"""Sets the size of this NonRequiredGcbSize.
 
         功能说明：全域互联带宽实例中的带宽值大小，单位Mbit/s。 取值范围：2-300Mbit/s
 

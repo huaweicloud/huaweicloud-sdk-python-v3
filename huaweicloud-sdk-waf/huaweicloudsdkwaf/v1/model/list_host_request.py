@@ -33,7 +33,7 @@ class ListHostRequest:
     }
 
     def __init__(self, enterprise_project_id=None, page=None, pagesize=None, hostname=None, policyname=None):
-        """ListHostRequest
+        r"""ListHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListHostRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListHostRequest.
+        r"""Gets the enterprise_project_id of this ListHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -82,7 +82,7 @@ class ListHostRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListHostRequest.
+        r"""Sets the enterprise_project_id of this ListHostRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -93,7 +93,7 @@ class ListHostRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListHostRequest.
+        r"""Gets the page of this ListHostRequest.
 
         分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
 
@@ -104,7 +104,7 @@ class ListHostRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListHostRequest.
+        r"""Sets the page of this ListHostRequest.
 
         分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
 
@@ -115,7 +115,7 @@ class ListHostRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ListHostRequest.
+        r"""Gets the pagesize of this ListHostRequest.
 
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。如果需要一次查全部域名，该参数值填-1。
 
@@ -126,7 +126,7 @@ class ListHostRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ListHostRequest.
+        r"""Sets the pagesize of this ListHostRequest.
 
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。如果需要一次查全部域名，该参数值填-1。
 
@@ -137,7 +137,7 @@ class ListHostRequest:
 
     @property
     def hostname(self):
-        """Gets the hostname of this ListHostRequest.
+        r"""Gets the hostname of this ListHostRequest.
 
         要查询的防护域名，用于查询指定防护域名信息；可不传，查询用户云模式下所有防护域名
 
@@ -148,7 +148,7 @@ class ListHostRequest:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this ListHostRequest.
+        r"""Sets the hostname of this ListHostRequest.
 
         要查询的防护域名，用于查询指定防护域名信息；可不传，查询用户云模式下所有防护域名
 
@@ -159,7 +159,7 @@ class ListHostRequest:
 
     @property
     def policyname(self):
-        """Gets the policyname of this ListHostRequest.
+        r"""Gets the policyname of this ListHostRequest.
 
         防护策略名，用于查询指定防护策略下的域名，可不传
 
@@ -170,7 +170,7 @@ class ListHostRequest:
 
     @policyname.setter
     def policyname(self, policyname):
-        """Sets the policyname of this ListHostRequest.
+        r"""Sets the policyname of this ListHostRequest.
 
         防护策略名，用于查询指定防护策略下的域名，可不传
 

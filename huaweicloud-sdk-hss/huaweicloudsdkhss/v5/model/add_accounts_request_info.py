@@ -29,7 +29,7 @@ class AddAccountsRequestInfo:
     }
 
     def __init__(self, organization_id=None, account_id=None, account_name=None):
-        """AddAccountsRequestInfo
+        r"""AddAccountsRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AddAccountsRequestInfo:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this AddAccountsRequestInfo.
+        r"""Gets the organization_id of this AddAccountsRequestInfo.
 
         组织Id
 
@@ -65,7 +65,7 @@ class AddAccountsRequestInfo:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this AddAccountsRequestInfo.
+        r"""Sets the organization_id of this AddAccountsRequestInfo.
 
         组织Id
 
@@ -76,7 +76,7 @@ class AddAccountsRequestInfo:
 
     @property
     def account_id(self):
-        """Gets the account_id of this AddAccountsRequestInfo.
+        r"""Gets the account_id of this AddAccountsRequestInfo.
 
         账号ID
 
@@ -87,7 +87,7 @@ class AddAccountsRequestInfo:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this AddAccountsRequestInfo.
+        r"""Sets the account_id of this AddAccountsRequestInfo.
 
         账号ID
 
@@ -98,7 +98,7 @@ class AddAccountsRequestInfo:
 
     @property
     def account_name(self):
-        """Gets the account_name of this AddAccountsRequestInfo.
+        r"""Gets the account_name of this AddAccountsRequestInfo.
 
         账号名称
 
@@ -109,7 +109,7 @@ class AddAccountsRequestInfo:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this AddAccountsRequestInfo.
+        r"""Sets the account_name of this AddAccountsRequestInfo.
 
         账号名称
 

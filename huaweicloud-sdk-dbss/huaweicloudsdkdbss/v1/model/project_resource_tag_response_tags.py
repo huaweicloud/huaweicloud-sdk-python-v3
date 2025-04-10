@@ -27,7 +27,7 @@ class ProjectResourceTagResponseTags:
     }
 
     def __init__(self, key=None, values=None):
-        """ProjectResourceTagResponseTags
+        r"""ProjectResourceTagResponseTags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProjectResourceTagResponseTags:
 
     @property
     def key(self):
-        """Gets the key of this ProjectResourceTagResponseTags.
+        r"""Gets the key of this ProjectResourceTagResponseTags.
 
         键。最大长度128个字符。
 
@@ -61,7 +61,7 @@ class ProjectResourceTagResponseTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ProjectResourceTagResponseTags.
+        r"""Sets the key of this ProjectResourceTagResponseTags.
 
         键。最大长度128个字符。
 
@@ -72,7 +72,7 @@ class ProjectResourceTagResponseTags:
 
     @property
     def values(self):
-        """Gets the values of this ProjectResourceTagResponseTags.
+        r"""Gets the values of this ProjectResourceTagResponseTags.
 
         值列表。每个值最大长度255个字符。
 
@@ -83,7 +83,7 @@ class ProjectResourceTagResponseTags:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ProjectResourceTagResponseTags.
+        r"""Sets the values of this ProjectResourceTagResponseTags.
 
         值列表。每个值最大长度255个字符。
 

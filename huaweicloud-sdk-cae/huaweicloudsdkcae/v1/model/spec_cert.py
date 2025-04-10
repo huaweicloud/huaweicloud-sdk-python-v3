@@ -29,7 +29,7 @@ class SpecCert:
     }
 
     def __init__(self, crt=None, key=None, created_at=None):
-        """SpecCert
+        r"""SpecCert
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SpecCert:
 
     @property
     def crt(self):
-        """Gets the crt of this SpecCert.
+        r"""Gets the crt of this SpecCert.
 
         证书内容。
 
@@ -68,7 +68,7 @@ class SpecCert:
 
     @crt.setter
     def crt(self, crt):
-        """Sets the crt of this SpecCert.
+        r"""Sets the crt of this SpecCert.
 
         证书内容。
 
@@ -79,7 +79,7 @@ class SpecCert:
 
     @property
     def key(self):
-        """Gets the key of this SpecCert.
+        r"""Gets the key of this SpecCert.
 
         私钥内容。
 
@@ -90,7 +90,7 @@ class SpecCert:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this SpecCert.
+        r"""Sets the key of this SpecCert.
 
         私钥内容。
 
@@ -101,7 +101,7 @@ class SpecCert:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SpecCert.
+        r"""Gets the created_at of this SpecCert.
 
         创建时间。
 
@@ -112,7 +112,7 @@ class SpecCert:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SpecCert.
+        r"""Sets the created_at of this SpecCert.
 
         创建时间。
 

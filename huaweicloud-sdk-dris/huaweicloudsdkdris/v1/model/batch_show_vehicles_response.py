@@ -28,7 +28,7 @@ class BatchShowVehiclesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, vehicles=None):
-        """BatchShowVehiclesResponse
+        r"""BatchShowVehiclesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchShowVehiclesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchShowVehiclesResponse.
+        r"""Gets the count of this BatchShowVehiclesResponse.
 
         **参数说明**：返回车辆的总体数量。
 
@@ -62,7 +62,7 @@ class BatchShowVehiclesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchShowVehiclesResponse.
+        r"""Sets the count of this BatchShowVehiclesResponse.
 
         **参数说明**：返回车辆的总体数量。
 
@@ -73,7 +73,7 @@ class BatchShowVehiclesResponse(SdkResponse):
 
     @property
     def vehicles(self):
-        """Gets the vehicles of this BatchShowVehiclesResponse.
+        r"""Gets the vehicles of this BatchShowVehiclesResponse.
 
         **参数说明**：数据列表。
 
@@ -84,7 +84,7 @@ class BatchShowVehiclesResponse(SdkResponse):
 
     @vehicles.setter
     def vehicles(self, vehicles):
-        """Sets the vehicles of this BatchShowVehiclesResponse.
+        r"""Sets the vehicles of this BatchShowVehiclesResponse.
 
         **参数说明**：数据列表。
 

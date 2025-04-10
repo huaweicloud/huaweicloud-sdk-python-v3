@@ -25,7 +25,7 @@ class CreateHealthCheckRequestBody:
     }
 
     def __init__(self, health_check=None):
-        """CreateHealthCheckRequestBody
+        r"""CreateHealthCheckRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateHealthCheckRequestBody:
 
     @property
     def health_check(self):
-        """Gets the health_check of this CreateHealthCheckRequestBody.
+        r"""Gets the health_check of this CreateHealthCheckRequestBody.
 
         :return: The health_check of this CreateHealthCheckRequestBody.
         :rtype: :class:`huaweicloudsdkga.v1.CreateHealthCheckOption`
@@ -51,7 +51,7 @@ class CreateHealthCheckRequestBody:
 
     @health_check.setter
     def health_check(self, health_check):
-        """Sets the health_check of this CreateHealthCheckRequestBody.
+        r"""Sets the health_check of this CreateHealthCheckRequestBody.
 
         :param health_check: The health_check of this CreateHealthCheckRequestBody.
         :type health_check: :class:`huaweicloudsdkga.v1.CreateHealthCheckOption`

@@ -29,7 +29,7 @@ class ResidueDto:
     }
 
     def __init__(self, chain=None, name=None, id=None):
-        """ResidueDto
+        r"""ResidueDto
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ResidueDto:
 
     @property
     def chain(self):
-        """Gets the chain of this ResidueDto.
+        r"""Gets the chain of this ResidueDto.
 
         氨基酸残基或者配体链的名称
 
@@ -67,7 +67,7 @@ class ResidueDto:
 
     @chain.setter
     def chain(self, chain):
-        """Sets the chain of this ResidueDto.
+        r"""Sets the chain of this ResidueDto.
 
         氨基酸残基或者配体链的名称
 
@@ -78,7 +78,7 @@ class ResidueDto:
 
     @property
     def name(self):
-        """Gets the name of this ResidueDto.
+        r"""Gets the name of this ResidueDto.
 
         氨基酸残基或者配体名称
 
@@ -89,7 +89,7 @@ class ResidueDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ResidueDto.
+        r"""Sets the name of this ResidueDto.
 
         氨基酸残基或者配体名称
 
@@ -100,7 +100,7 @@ class ResidueDto:
 
     @property
     def id(self):
-        """Gets the id of this ResidueDto.
+        r"""Gets the id of this ResidueDto.
 
         氨基酸残基或者配体的序列ID
 
@@ -111,7 +111,7 @@ class ResidueDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResidueDto.
+        r"""Sets the id of this ResidueDto.
 
         氨基酸残基或者配体的序列ID
 

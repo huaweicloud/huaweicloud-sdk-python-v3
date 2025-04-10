@@ -49,7 +49,7 @@ class AppInstallJob:
     }
 
     def __init__(self, id=None, app_id=None, app_name=None, app_version=None, instance_id=None, instance_sid=None, instance_name=None, operator=None, target=None, job_status=None, error_message=None, create_time=None, update_time=None):
-        """AppInstallJob
+        r"""AppInstallJob
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class AppInstallJob:
 
     @property
     def id(self):
-        """Gets the id of this AppInstallJob.
+        r"""Gets the id of this AppInstallJob.
 
         任务ID。
 
@@ -138,7 +138,7 @@ class AppInstallJob:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppInstallJob.
+        r"""Sets the id of this AppInstallJob.
 
         任务ID。
 
@@ -149,7 +149,7 @@ class AppInstallJob:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AppInstallJob.
+        r"""Gets the app_id of this AppInstallJob.
 
         应用ID。
 
@@ -160,7 +160,7 @@ class AppInstallJob:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AppInstallJob.
+        r"""Sets the app_id of this AppInstallJob.
 
         应用ID。
 
@@ -171,7 +171,7 @@ class AppInstallJob:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AppInstallJob.
+        r"""Gets the app_name of this AppInstallJob.
 
         应用名称。
 
@@ -182,7 +182,7 @@ class AppInstallJob:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AppInstallJob.
+        r"""Sets the app_name of this AppInstallJob.
 
         应用名称。
 
@@ -193,7 +193,7 @@ class AppInstallJob:
 
     @property
     def app_version(self):
-        """Gets the app_version of this AppInstallJob.
+        r"""Gets the app_version of this AppInstallJob.
 
         应用版本。
 
@@ -204,7 +204,7 @@ class AppInstallJob:
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this AppInstallJob.
+        r"""Sets the app_version of this AppInstallJob.
 
         应用版本。
 
@@ -215,7 +215,7 @@ class AppInstallJob:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AppInstallJob.
+        r"""Gets the instance_id of this AppInstallJob.
 
         实例ID(桌面或者云应用实例的资源ID)。
 
@@ -226,7 +226,7 @@ class AppInstallJob:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AppInstallJob.
+        r"""Sets the instance_id of this AppInstallJob.
 
         实例ID(桌面或者云应用实例的资源ID)。
 
@@ -237,7 +237,7 @@ class AppInstallJob:
 
     @property
     def instance_sid(self):
-        """Gets the instance_sid of this AppInstallJob.
+        r"""Gets the instance_sid of this AppInstallJob.
 
         实例的sid。
 
@@ -248,7 +248,7 @@ class AppInstallJob:
 
     @instance_sid.setter
     def instance_sid(self, instance_sid):
-        """Sets the instance_sid of this AppInstallJob.
+        r"""Sets the instance_sid of this AppInstallJob.
 
         实例的sid。
 
@@ -259,7 +259,7 @@ class AppInstallJob:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this AppInstallJob.
+        r"""Gets the instance_name of this AppInstallJob.
 
         实例名称。
 
@@ -270,7 +270,7 @@ class AppInstallJob:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this AppInstallJob.
+        r"""Sets the instance_name of this AppInstallJob.
 
         实例名称。
 
@@ -281,7 +281,7 @@ class AppInstallJob:
 
     @property
     def operator(self):
-        """Gets the operator of this AppInstallJob.
+        r"""Gets the operator of this AppInstallJob.
 
         操作用户。
 
@@ -292,7 +292,7 @@ class AppInstallJob:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this AppInstallJob.
+        r"""Sets the operator of this AppInstallJob.
 
         操作用户。
 
@@ -303,7 +303,7 @@ class AppInstallJob:
 
     @property
     def target(self):
-        """Gets the target of this AppInstallJob.
+        r"""Gets the target of this AppInstallJob.
 
         目标用户。
 
@@ -314,7 +314,7 @@ class AppInstallJob:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this AppInstallJob.
+        r"""Sets the target of this AppInstallJob.
 
         目标用户。
 
@@ -325,7 +325,7 @@ class AppInstallJob:
 
     @property
     def job_status(self):
-        """Gets the job_status of this AppInstallJob.
+        r"""Gets the job_status of this AppInstallJob.
 
         :return: The job_status of this AppInstallJob.
         :rtype: :class:`huaweicloudsdkworkspace.v2.JobStatus`
@@ -334,7 +334,7 @@ class AppInstallJob:
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this AppInstallJob.
+        r"""Sets the job_status of this AppInstallJob.
 
         :param job_status: The job_status of this AppInstallJob.
         :type job_status: :class:`huaweicloudsdkworkspace.v2.JobStatus`
@@ -343,7 +343,7 @@ class AppInstallJob:
 
     @property
     def error_message(self):
-        """Gets the error_message of this AppInstallJob.
+        r"""Gets the error_message of this AppInstallJob.
 
         任务失败时的原因。
 
@@ -354,7 +354,7 @@ class AppInstallJob:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this AppInstallJob.
+        r"""Sets the error_message of this AppInstallJob.
 
         任务失败时的原因。
 
@@ -365,7 +365,7 @@ class AppInstallJob:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AppInstallJob.
+        r"""Gets the create_time of this AppInstallJob.
 
         创建时间。
 
@@ -376,7 +376,7 @@ class AppInstallJob:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AppInstallJob.
+        r"""Sets the create_time of this AppInstallJob.
 
         创建时间。
 
@@ -387,7 +387,7 @@ class AppInstallJob:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppInstallJob.
+        r"""Gets the update_time of this AppInstallJob.
 
         更新时间。
 
@@ -398,7 +398,7 @@ class AppInstallJob:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppInstallJob.
+        r"""Sets the update_time of this AppInstallJob.
 
         更新时间。
 

@@ -27,7 +27,7 @@ class IDERepoRevisionModel:
     }
 
     def __init__(self, repository_ids=None, format=None):
-        """IDERepoRevisionModel
+        r"""IDERepoRevisionModel
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IDERepoRevisionModel:
 
     @property
     def repository_ids(self):
-        """Gets the repository_ids of this IDERepoRevisionModel.
+        r"""Gets the repository_ids of this IDERepoRevisionModel.
 
         仓库id集合
 
@@ -61,7 +61,7 @@ class IDERepoRevisionModel:
 
     @repository_ids.setter
     def repository_ids(self, repository_ids):
-        """Sets the repository_ids of this IDERepoRevisionModel.
+        r"""Sets the repository_ids of this IDERepoRevisionModel.
 
         仓库id集合
 
@@ -72,7 +72,7 @@ class IDERepoRevisionModel:
 
     @property
     def format(self):
-        """Gets the format of this IDERepoRevisionModel.
+        r"""Gets the format of this IDERepoRevisionModel.
 
         类型
 
@@ -83,7 +83,7 @@ class IDERepoRevisionModel:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this IDERepoRevisionModel.
+        r"""Sets the format of this IDERepoRevisionModel.
 
         类型
 

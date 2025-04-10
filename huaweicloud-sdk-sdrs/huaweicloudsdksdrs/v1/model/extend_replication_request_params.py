@@ -25,7 +25,7 @@ class ExtendReplicationRequestParams:
     }
 
     def __init__(self, new_size=None):
-        """ExtendReplicationRequestParams
+        r"""ExtendReplicationRequestParams
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExtendReplicationRequestParams:
 
     @property
     def new_size(self):
-        """Gets the new_size of this ExtendReplicationRequestParams.
+        r"""Gets the new_size of this ExtendReplicationRequestParams.
 
         复制对内的磁盘扩容后的最终容量。单位：GB 说明:该参数的取值为小数时，系统默认取小数点前的整数值。
 
@@ -53,7 +53,7 @@ class ExtendReplicationRequestParams:
 
     @new_size.setter
     def new_size(self, new_size):
-        """Sets the new_size of this ExtendReplicationRequestParams.
+        r"""Sets the new_size of this ExtendReplicationRequestParams.
 
         复制对内的磁盘扩容后的最终容量。单位：GB 说明:该参数的取值为小数时，系统默认取小数点前的整数值。
 

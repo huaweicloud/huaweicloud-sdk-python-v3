@@ -25,7 +25,7 @@ class ReverseProtectionGroupRequestBody:
     }
 
     def __init__(self, reverse_server_group=None):
-        """ReverseProtectionGroupRequestBody
+        r"""ReverseProtectionGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ReverseProtectionGroupRequestBody:
 
     @property
     def reverse_server_group(self):
-        """Gets the reverse_server_group of this ReverseProtectionGroupRequestBody.
+        r"""Gets the reverse_server_group of this ReverseProtectionGroupRequestBody.
 
         :return: The reverse_server_group of this ReverseProtectionGroupRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.ReverseProtectionGroupRequestParams`
@@ -51,7 +51,7 @@ class ReverseProtectionGroupRequestBody:
 
     @reverse_server_group.setter
     def reverse_server_group(self, reverse_server_group):
-        """Sets the reverse_server_group of this ReverseProtectionGroupRequestBody.
+        r"""Sets the reverse_server_group of this ReverseProtectionGroupRequestBody.
 
         :param reverse_server_group: The reverse_server_group of this ReverseProtectionGroupRequestBody.
         :type reverse_server_group: :class:`huaweicloudsdksdrs.v1.ReverseProtectionGroupRequestParams`

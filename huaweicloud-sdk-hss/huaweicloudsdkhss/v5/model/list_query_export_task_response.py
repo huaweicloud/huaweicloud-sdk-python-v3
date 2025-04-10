@@ -34,7 +34,7 @@ class ListQueryExportTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, task_name=None, task_status=None, file_id=None, file_name=None):
-        """ListQueryExportTaskResponse
+        r"""ListQueryExportTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListQueryExportTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListQueryExportTaskResponse.
+        r"""Gets the task_id of this ListQueryExportTaskResponse.
 
         任务ID
 
@@ -83,7 +83,7 @@ class ListQueryExportTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListQueryExportTaskResponse.
+        r"""Sets the task_id of this ListQueryExportTaskResponse.
 
         任务ID
 
@@ -94,7 +94,7 @@ class ListQueryExportTaskResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this ListQueryExportTaskResponse.
+        r"""Gets the task_name of this ListQueryExportTaskResponse.
 
         任务ID
 
@@ -105,7 +105,7 @@ class ListQueryExportTaskResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ListQueryExportTaskResponse.
+        r"""Sets the task_name of this ListQueryExportTaskResponse.
 
         任务ID
 
@@ -116,7 +116,7 @@ class ListQueryExportTaskResponse(SdkResponse):
 
     @property
     def task_status(self):
-        """Gets the task_status of this ListQueryExportTaskResponse.
+        r"""Gets the task_status of this ListQueryExportTaskResponse.
 
         导出任务状态，success:成功，failure:失败，running:运行中
 
@@ -127,7 +127,7 @@ class ListQueryExportTaskResponse(SdkResponse):
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ListQueryExportTaskResponse.
+        r"""Sets the task_status of this ListQueryExportTaskResponse.
 
         导出任务状态，success:成功，failure:失败，running:运行中
 
@@ -138,7 +138,7 @@ class ListQueryExportTaskResponse(SdkResponse):
 
     @property
     def file_id(self):
-        """Gets the file_id of this ListQueryExportTaskResponse.
+        r"""Gets the file_id of this ListQueryExportTaskResponse.
 
         文件ID
 
@@ -149,7 +149,7 @@ class ListQueryExportTaskResponse(SdkResponse):
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this ListQueryExportTaskResponse.
+        r"""Sets the file_id of this ListQueryExportTaskResponse.
 
         文件ID
 
@@ -160,7 +160,7 @@ class ListQueryExportTaskResponse(SdkResponse):
 
     @property
     def file_name(self):
-        """Gets the file_name of this ListQueryExportTaskResponse.
+        r"""Gets the file_name of this ListQueryExportTaskResponse.
 
         文件名
 
@@ -171,7 +171,7 @@ class ListQueryExportTaskResponse(SdkResponse):
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ListQueryExportTaskResponse.
+        r"""Sets the file_name of this ListQueryExportTaskResponse.
 
         文件名
 

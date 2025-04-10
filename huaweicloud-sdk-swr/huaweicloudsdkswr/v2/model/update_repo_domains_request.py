@@ -31,7 +31,7 @@ class UpdateRepoDomainsRequest:
     }
 
     def __init__(self, namespace=None, repository=None, access_domain=None, body=None):
-        """UpdateRepoDomainsRequest
+        r"""UpdateRepoDomainsRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateRepoDomainsRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this UpdateRepoDomainsRequest.
+        r"""Gets the namespace of this UpdateRepoDomainsRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -72,7 +72,7 @@ class UpdateRepoDomainsRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this UpdateRepoDomainsRequest.
+        r"""Sets the namespace of this UpdateRepoDomainsRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -83,7 +83,7 @@ class UpdateRepoDomainsRequest:
 
     @property
     def repository(self):
-        """Gets the repository of this UpdateRepoDomainsRequest.
+        r"""Gets the repository of this UpdateRepoDomainsRequest.
 
         镜像仓库名称
 
@@ -94,7 +94,7 @@ class UpdateRepoDomainsRequest:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this UpdateRepoDomainsRequest.
+        r"""Sets the repository of this UpdateRepoDomainsRequest.
 
         镜像仓库名称
 
@@ -105,7 +105,7 @@ class UpdateRepoDomainsRequest:
 
     @property
     def access_domain(self):
-        """Gets the access_domain of this UpdateRepoDomainsRequest.
+        r"""Gets the access_domain of this UpdateRepoDomainsRequest.
 
         共享帐号
 
@@ -116,7 +116,7 @@ class UpdateRepoDomainsRequest:
 
     @access_domain.setter
     def access_domain(self, access_domain):
-        """Sets the access_domain of this UpdateRepoDomainsRequest.
+        r"""Sets the access_domain of this UpdateRepoDomainsRequest.
 
         共享帐号
 
@@ -127,7 +127,7 @@ class UpdateRepoDomainsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRepoDomainsRequest.
+        r"""Gets the body of this UpdateRepoDomainsRequest.
 
         :return: The body of this UpdateRepoDomainsRequest.
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateRepoDomainsRequestBody`
@@ -136,7 +136,7 @@ class UpdateRepoDomainsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRepoDomainsRequest.
+        r"""Sets the body of this UpdateRepoDomainsRequest.
 
         :param body: The body of this UpdateRepoDomainsRequest.
         :type body: :class:`huaweicloudsdkswr.v2.UpdateRepoDomainsRequestBody`

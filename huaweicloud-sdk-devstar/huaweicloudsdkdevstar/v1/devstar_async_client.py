@@ -34,7 +34,7 @@ class DevStarAsyncClient(Client):
         return client_builder
 
     def show_application_release_repositories_async(self, request):
-        """通过应用Id获取软件发布仓库列表 
+        r"""通过应用Id获取软件发布仓库列表 
 
         通过应用Id获取软件发布仓库列表 
         
@@ -109,7 +109,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def show_application_res_delete_status_async(self, request):
-        """查询应用关联资源删除状态
+        r"""查询应用关联资源删除状态
 
         根据应用Id查询应用关联的代码仓、流水线删除状态 使用场景：用户删除应用关联的资源（如代码仓、流水线...）后，通过该接口实时查询代码仓、流水线删除状态
         
@@ -176,7 +176,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def show_application_dependent_resources_async(self, request):
-        """获取应用依赖元数据资源
+        r"""获取应用依赖元数据资源
 
         根据应用Id获取依赖元数据资源
         
@@ -247,7 +247,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def show_application_v3_async(self, request):
-        """获取应用详情
+        r"""获取应用详情
 
         根据应用Id获取应用详情
         
@@ -314,7 +314,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def update_application_async(self, request):
-        """更新应用信息
+        r"""更新应用信息
 
         根据应用Id更新对应有权限的应用信息
         - 允许更新信息的信息包含
@@ -385,7 +385,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def delete_application_v4_async(self, request):
-        """删除应用信息
+        r"""删除应用信息
 
         根据应用Id删除应用，并可以选择删除其关联的代码仓、流水线资源
         
@@ -454,7 +454,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def list_applications_v6_async(self, request):
-        """获取应用列表
+        r"""获取应用列表
 
         获取我创建的应用列表
         当前只支持查询我创建的应用，其中请求参数is_created_by_self需为true
@@ -542,7 +542,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def download_application_code_async(self, request):
-        """下载模板产物
+        r"""下载模板产物
 
         下载模板产物。
         
@@ -609,7 +609,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def confirm_deployment_job_async(self, request):
-        """部署任务执行变更人工审核
+        r"""部署任务执行变更人工审核
 
         部署任务执行变更人工审核，终止或者继续部署任务
         
@@ -680,7 +680,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def create_deployment_jobs_async(self, request):
-        """创建部署任务
+        r"""创建部署任务
 
         创建部署任务，并触发任务执行，当前只支持函数部署。
         其中，报文中file_id为查询软件版本包接口返回版本包id;
@@ -754,7 +754,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def show_deployment_jobs_async(self, request):
-        """查询应用环境部署任务详情
+        r"""查询应用环境部署任务详情
 
         查询应用环境部署任务详情
         
@@ -823,7 +823,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def run_codehub_template_job_async(self, request):
-        """CodeHub 模板生成代码
+        r"""CodeHub 模板生成代码
 
         使用CodeHub模板创建应用代码。
         
@@ -898,7 +898,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def run_devstar_template_job_async(self, request):
-        """Devstar 模板生成代码
+        r"""Devstar 模板生成代码
 
         使用DevStar的模板创建应用代码。
         
@@ -973,7 +973,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def show_job_detail_async(self, request):
-        """查询任务详情
+        r"""查询任务详情
 
         查询任务的详情。
         
@@ -1049,7 +1049,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def list_pipeline_templates_async(self, request):
-        """流水线模板列表查询
+        r"""流水线模板列表查询
 
         流水线模板列表查询
         
@@ -1120,7 +1120,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def show_pipeline_last_status_v2_async(self, request):
-        """查询流水线最近一次运行状态查询接口
+        r"""查询流水线最近一次运行状态查询接口
 
         查询应用流水线最近一次运行状态查询接口
         
@@ -1187,7 +1187,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def start_pipeline_async(self, request):
-        """根据流水线Id操作流水线启动
+        r"""根据流水线Id操作流水线启动
 
         根据流水线Id操作流水线启动
         
@@ -1254,7 +1254,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def list_projects_v4_async(self, request):
-        """获取用户有权限的DevStar存量DevCloud项目列表
+        r"""获取用户有权限的DevStar存量DevCloud项目列表
 
         获取用户有权限的DevStar存量DevCloud项目列表。
         来源包括：1.DevStar创建的DevCloud项目；2.DevStar应用有关联DevCloud项目。
@@ -1326,7 +1326,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def check_repository_duplicate_name_async(self, request):
-        """检查仓库名称是否重名
+        r"""检查仓库名称是否重名
 
         检查仓库名称是否重名
         - 校验规则
@@ -1401,7 +1401,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def show_repository_by_cloud_ide_async(self, request):
-        """使用 CloudIDE 实例打开应用代码
+        r"""使用 CloudIDE 实例打开应用代码
 
         使用 CloudIDE 实例打开应用代码。CloudIDE会保存用户项目数据，相同用户使用同一个CloudIDE，使用要求：
         - 用户需为登录状态。
@@ -1480,7 +1480,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def show_repository_statistical_data_v2_async(self, request):
-        """应用代码仓库统计信息
+        r"""应用代码仓库统计信息
 
         查询代码仓库的统计信息,包括代码仓的名称,代码行数等信息
         
@@ -1547,7 +1547,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def show_template_file_async(self, request):
-        """读取模板文件
+        r"""读取模板文件
 
         该接口可以用于模板作者或模板维护人读取模板文件内容。
         
@@ -1618,7 +1618,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def create_template_view_histories_async(self, request):
-        """同步模板浏览记录
+        r"""同步模板浏览记录
 
         未登录状态下，将用户浏览过的模板缓存在浏览器中，登录时，调用该接口同步模板浏览记录。
         
@@ -1685,7 +1685,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def list_published_templates_async(self, request):
-        """查询模板列表（V1）
+        r"""查询模板列表（V1）
 
         查询模板列表，推荐使用/v1/templates/query接口。
         
@@ -1758,7 +1758,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def list_template_view_histories_async(self, request):
-        """我浏览的模板记录
+        r"""我浏览的模板记录
 
         查询DevStar或者CodeLabs登录用户浏览过的模板（只返回最近浏览的5个模板）。
         
@@ -1825,7 +1825,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def list_templates_async(self, request):
-        """查询模板列表
+        r"""查询模板列表
 
         查询模板列表。
         
@@ -1892,7 +1892,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def list_templates_v2_async(self, request):
-        """查询模板列表（V2）
+        r"""查询模板列表（V2）
 
         查询模板列表。
         
@@ -1963,7 +1963,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def show_template_v3_async(self, request):
-        """查询模板详情（V3）
+        r"""查询模板详情（V3）
 
         获取指定模板详情，包括模板id、名称、描述、作者、标签、上架时间等信息。
         
@@ -2030,7 +2030,7 @@ class DevStarAsyncClient(Client):
         return http_info
 
     def show_template_detail_async(self, request):
-        """查询模板详情（V1）
+        r"""查询模板详情（V1）
 
         查询模板详情，推荐使用V3版本接口。
         

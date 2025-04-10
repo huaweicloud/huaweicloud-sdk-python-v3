@@ -26,7 +26,7 @@ class ListHtapStorageTypeResponse(SdkResponse):
     }
 
     def __init__(self, storage_type=None):
-        """ListHtapStorageTypeResponse
+        r"""ListHtapStorageTypeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListHtapStorageTypeResponse(SdkResponse):
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this ListHtapStorageTypeResponse.
+        r"""Gets the storage_type of this ListHtapStorageTypeResponse.
 
         存储类型。
 
@@ -55,7 +55,7 @@ class ListHtapStorageTypeResponse(SdkResponse):
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this ListHtapStorageTypeResponse.
+        r"""Sets the storage_type of this ListHtapStorageTypeResponse.
 
         存储类型。
 

@@ -24,7 +24,7 @@ class UpdateInstanceBandwidthResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateInstanceBandwidthResponse
+        r"""UpdateInstanceBandwidthResponse
 
         The model defined in huaweicloud sdk
 

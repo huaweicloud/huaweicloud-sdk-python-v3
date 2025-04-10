@@ -26,7 +26,7 @@ class CreateCompareResultFileResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateCompareResultFileResponse
+        r"""CreateCompareResultFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateCompareResultFileResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateCompareResultFileResponse.
+        r"""Gets the body of this CreateCompareResultFileResponse.
 
         空响应体。
 
@@ -55,7 +55,7 @@ class CreateCompareResultFileResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCompareResultFileResponse.
+        r"""Sets the body of this CreateCompareResultFileResponse.
 
         空响应体。
 

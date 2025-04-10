@@ -34,7 +34,7 @@ class CssClient(Client):
         return client_builder
 
     def create_cluster(self, request):
-        """创建集群V2
+        r"""创建集群V2
 
         该接口用于创建拥有多种不同节点类型（ess，ess-cold，ess-client，ess-master）组合的集群。
         
@@ -99,7 +99,7 @@ class CssClient(Client):
         return http_info
 
     def restart_cluster(self, request):
-        """重启集群V2
+        r"""重启集群V2
 
         该接口可以用于重启当前集群拥有的全部节点类型，或部分节点类型组合的节点。
         
@@ -166,7 +166,7 @@ class CssClient(Client):
         return http_info
 
     def rolling_restart(self, request):
-        """滚动重启
+        r"""滚动重启
 
         该接口会一个一个重启节点，在索引数量比较多的情况下耗时较长
         
@@ -235,7 +235,7 @@ class CssClient(Client):
         return http_info
 
     def start_auto_create_snapshots(self, request):
-        """开启自动创建快照功能
+        r"""开启自动创建快照功能
 
         该接口用于打开自动备份功能
         
@@ -302,7 +302,7 @@ class CssClient(Client):
         return http_info
 
     def stop_auto_create_snapshots(self, request):
-        """关闭自动创建快照功能
+        r"""关闭自动创建快照功能
 
         该接口用于关闭自动备份功能。
         

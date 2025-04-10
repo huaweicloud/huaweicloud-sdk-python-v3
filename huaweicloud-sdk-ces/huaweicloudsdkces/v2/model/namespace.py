@@ -23,7 +23,7 @@ class Namespace:
     }
 
     def __init__(self):
-        """Namespace
+        r"""Namespace
 
         The model defined in huaweicloud sdk
 

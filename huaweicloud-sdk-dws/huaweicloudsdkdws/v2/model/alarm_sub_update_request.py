@@ -35,7 +35,7 @@ class AlarmSubUpdateRequest:
     }
 
     def __init__(self, name=None, enable=None, alarm_level=None, notification_target=None, notification_target_name=None, notification_target_type=None):
-        """AlarmSubUpdateRequest
+        r"""AlarmSubUpdateRequest
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class AlarmSubUpdateRequest:
 
     @property
     def name(self):
-        """Gets the name of this AlarmSubUpdateRequest.
+        r"""Gets the name of this AlarmSubUpdateRequest.
 
         告警订阅名称
 
@@ -85,7 +85,7 @@ class AlarmSubUpdateRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AlarmSubUpdateRequest.
+        r"""Sets the name of this AlarmSubUpdateRequest.
 
         告警订阅名称
 
@@ -96,7 +96,7 @@ class AlarmSubUpdateRequest:
 
     @property
     def enable(self):
-        """Gets the enable of this AlarmSubUpdateRequest.
+        r"""Gets the enable of this AlarmSubUpdateRequest.
 
         是否开启订阅
 
@@ -107,7 +107,7 @@ class AlarmSubUpdateRequest:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this AlarmSubUpdateRequest.
+        r"""Sets the enable of this AlarmSubUpdateRequest.
 
         是否开启订阅
 
@@ -118,7 +118,7 @@ class AlarmSubUpdateRequest:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this AlarmSubUpdateRequest.
+        r"""Gets the alarm_level of this AlarmSubUpdateRequest.
 
         告警级别
 
@@ -129,7 +129,7 @@ class AlarmSubUpdateRequest:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this AlarmSubUpdateRequest.
+        r"""Sets the alarm_level of this AlarmSubUpdateRequest.
 
         告警级别
 
@@ -140,7 +140,7 @@ class AlarmSubUpdateRequest:
 
     @property
     def notification_target(self):
-        """Gets the notification_target of this AlarmSubUpdateRequest.
+        r"""Gets the notification_target of this AlarmSubUpdateRequest.
 
         消息主题地址
 
@@ -151,7 +151,7 @@ class AlarmSubUpdateRequest:
 
     @notification_target.setter
     def notification_target(self, notification_target):
-        """Sets the notification_target of this AlarmSubUpdateRequest.
+        r"""Sets the notification_target of this AlarmSubUpdateRequest.
 
         消息主题地址
 
@@ -162,7 +162,7 @@ class AlarmSubUpdateRequest:
 
     @property
     def notification_target_name(self):
-        """Gets the notification_target_name of this AlarmSubUpdateRequest.
+        r"""Gets the notification_target_name of this AlarmSubUpdateRequest.
 
         消息主题名称
 
@@ -173,7 +173,7 @@ class AlarmSubUpdateRequest:
 
     @notification_target_name.setter
     def notification_target_name(self, notification_target_name):
-        """Sets the notification_target_name of this AlarmSubUpdateRequest.
+        r"""Sets the notification_target_name of this AlarmSubUpdateRequest.
 
         消息主题名称
 
@@ -184,7 +184,7 @@ class AlarmSubUpdateRequest:
 
     @property
     def notification_target_type(self):
-        """Gets the notification_target_type of this AlarmSubUpdateRequest.
+        r"""Gets the notification_target_type of this AlarmSubUpdateRequest.
 
         消息主题类型，支持SMN
 
@@ -195,7 +195,7 @@ class AlarmSubUpdateRequest:
 
     @notification_target_type.setter
     def notification_target_type(self, notification_target_type):
-        """Sets the notification_target_type of this AlarmSubUpdateRequest.
+        r"""Sets the notification_target_type of this AlarmSubUpdateRequest.
 
         消息主题类型，支持SMN
 

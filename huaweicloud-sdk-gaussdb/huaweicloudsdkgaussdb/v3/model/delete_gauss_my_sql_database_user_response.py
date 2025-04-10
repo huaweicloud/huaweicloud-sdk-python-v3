@@ -26,7 +26,7 @@ class DeleteGaussMySqlDatabaseUserResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteGaussMySqlDatabaseUserResponse
+        r"""DeleteGaussMySqlDatabaseUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteGaussMySqlDatabaseUserResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteGaussMySqlDatabaseUserResponse.
+        r"""Gets the job_id of this DeleteGaussMySqlDatabaseUserResponse.
 
         删除数据库用户的任务ID。
 
@@ -55,7 +55,7 @@ class DeleteGaussMySqlDatabaseUserResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteGaussMySqlDatabaseUserResponse.
+        r"""Sets the job_id of this DeleteGaussMySqlDatabaseUserResponse.
 
         删除数据库用户的任务ID。
 

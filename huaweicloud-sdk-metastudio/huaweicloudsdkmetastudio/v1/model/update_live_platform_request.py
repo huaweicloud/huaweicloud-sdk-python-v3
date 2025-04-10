@@ -29,7 +29,7 @@ class UpdateLivePlatformRequest:
     }
 
     def __init__(self, x_app_user_id=None, platform_id=None, body=None):
-        """UpdateLivePlatformRequest
+        r"""UpdateLivePlatformRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateLivePlatformRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this UpdateLivePlatformRequest.
+        r"""Gets the x_app_user_id of this UpdateLivePlatformRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -67,7 +67,7 @@ class UpdateLivePlatformRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this UpdateLivePlatformRequest.
+        r"""Sets the x_app_user_id of this UpdateLivePlatformRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -78,7 +78,7 @@ class UpdateLivePlatformRequest:
 
     @property
     def platform_id(self):
-        """Gets the platform_id of this UpdateLivePlatformRequest.
+        r"""Gets the platform_id of this UpdateLivePlatformRequest.
 
         直播平台ID。
 
@@ -89,7 +89,7 @@ class UpdateLivePlatformRequest:
 
     @platform_id.setter
     def platform_id(self, platform_id):
-        """Sets the platform_id of this UpdateLivePlatformRequest.
+        r"""Sets the platform_id of this UpdateLivePlatformRequest.
 
         直播平台ID。
 
@@ -100,7 +100,7 @@ class UpdateLivePlatformRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLivePlatformRequest.
+        r"""Gets the body of this UpdateLivePlatformRequest.
 
         :return: The body of this UpdateLivePlatformRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateLivePlatformReq`
@@ -109,7 +109,7 @@ class UpdateLivePlatformRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLivePlatformRequest.
+        r"""Sets the body of this UpdateLivePlatformRequest.
 
         :param body: The body of this UpdateLivePlatformRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.UpdateLivePlatformReq`

@@ -29,7 +29,7 @@ class PhoneNumberItemDto:
     }
 
     def __init__(self, value=None, type=None, primary=None):
-        """PhoneNumberItemDto
+        r"""PhoneNumberItemDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PhoneNumberItemDto:
 
     @property
     def value(self):
-        """Gets the value of this PhoneNumberItemDto.
+        r"""Gets the value of this PhoneNumberItemDto.
 
         包含电话号码的字符串
 
@@ -68,7 +68,7 @@ class PhoneNumberItemDto:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PhoneNumberItemDto.
+        r"""Sets the value of this PhoneNumberItemDto.
 
         包含电话号码的字符串
 
@@ -79,7 +79,7 @@ class PhoneNumberItemDto:
 
     @property
     def type(self):
-        """Gets the type of this PhoneNumberItemDto.
+        r"""Gets the type of this PhoneNumberItemDto.
 
         表示电话号码类型的字符串
 
@@ -90,7 +90,7 @@ class PhoneNumberItemDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PhoneNumberItemDto.
+        r"""Sets the type of this PhoneNumberItemDto.
 
         表示电话号码类型的字符串
 
@@ -101,7 +101,7 @@ class PhoneNumberItemDto:
 
     @property
     def primary(self):
-        """Gets the primary of this PhoneNumberItemDto.
+        r"""Gets the primary of this PhoneNumberItemDto.
 
         一个布尔值，表示这是否是用户的主电话号码
 
@@ -112,7 +112,7 @@ class PhoneNumberItemDto:
 
     @primary.setter
     def primary(self, primary):
-        """Sets the primary of this PhoneNumberItemDto.
+        r"""Sets the primary of this PhoneNumberItemDto.
 
         一个布尔值，表示这是否是用户的主电话号码
 

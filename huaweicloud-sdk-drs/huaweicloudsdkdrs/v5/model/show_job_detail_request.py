@@ -49,7 +49,7 @@ class ShowJobDetailRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, type=None, query_id=None, offset=None, limit=None, compare_type=None, query_type=None, object_type=None, compare_task_id=None, source_db_name=None, target_db_name=None, compare_detail_type=None):
-        """ShowJobDetailRequest
+        r"""ShowJobDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -125,7 +125,7 @@ class ShowJobDetailRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobDetailRequest.
+        r"""Gets the job_id of this ShowJobDetailRequest.
 
         任务ID。
 
@@ -136,7 +136,7 @@ class ShowJobDetailRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobDetailRequest.
+        r"""Sets the job_id of this ShowJobDetailRequest.
 
         任务ID。
 
@@ -147,7 +147,7 @@ class ShowJobDetailRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowJobDetailRequest.
+        r"""Gets the x_language of this ShowJobDetailRequest.
 
         请求语言类型。
 
@@ -158,7 +158,7 @@ class ShowJobDetailRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowJobDetailRequest.
+        r"""Sets the x_language of this ShowJobDetailRequest.
 
         请求语言类型。
 
@@ -169,7 +169,7 @@ class ShowJobDetailRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowJobDetailRequest.
+        r"""Gets the type of this ShowJobDetailRequest.
 
         任务详情类型。取值： - overview：任务概览信息。 - detail：任务基本信息。 - network：测试连接结果信息，需配合query_id参数一起查询。 - precheck：预检查结果信息，需配合query_id参数一起查询。 - progress：任务进度信息。 - log：任务日志信息，支持分页查询参数offset与limit。 - compare：查询对比任务。 - file：对象导入信息。 - is_writable：目标库解除只读结果。 - cloud_connection：录制回放他云连通性测试，需配合query_id参数一起查询。 - diagnosis：查询一键诊断结果，需配合query_id参数一起查询。 - diagnosis_history：查询一键诊断结果历史，需配合query_id参数一起查询。 - repair_progress：数据修复进度，需配合query_id参数一起查询。 - repair_detail：数据修复详情，需配合query_id参数一起查询。 - repair_export_status：查询数据修复SQL导出状态，需配合compare_task_id参数一起查询。
 
@@ -180,7 +180,7 @@ class ShowJobDetailRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowJobDetailRequest.
+        r"""Sets the type of this ShowJobDetailRequest.
 
         任务详情类型。取值： - overview：任务概览信息。 - detail：任务基本信息。 - network：测试连接结果信息，需配合query_id参数一起查询。 - precheck：预检查结果信息，需配合query_id参数一起查询。 - progress：任务进度信息。 - log：任务日志信息，支持分页查询参数offset与limit。 - compare：查询对比任务。 - file：对象导入信息。 - is_writable：目标库解除只读结果。 - cloud_connection：录制回放他云连通性测试，需配合query_id参数一起查询。 - diagnosis：查询一键诊断结果，需配合query_id参数一起查询。 - diagnosis_history：查询一键诊断结果历史，需配合query_id参数一起查询。 - repair_progress：数据修复进度，需配合query_id参数一起查询。 - repair_detail：数据修复详情，需配合query_id参数一起查询。 - repair_export_status：查询数据修复SQL导出状态，需配合compare_task_id参数一起查询。
 
@@ -191,7 +191,7 @@ class ShowJobDetailRequest:
 
     @property
     def query_id(self):
-        """Gets the query_id of this ShowJobDetailRequest.
+        r"""Gets the query_id of this ShowJobDetailRequest.
 
         通过指定Query ID查询任务详情。  说明：部分type类型的任务详情，需要通过触发该操作的请求返回的query_id进行操作结果查询。
 
@@ -202,7 +202,7 @@ class ShowJobDetailRequest:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this ShowJobDetailRequest.
+        r"""Sets the query_id of this ShowJobDetailRequest.
 
         通过指定Query ID查询任务详情。  说明：部分type类型的任务详情，需要通过触发该操作的请求返回的query_id进行操作结果查询。
 
@@ -213,7 +213,7 @@ class ShowJobDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowJobDetailRequest.
+        r"""Gets the offset of this ShowJobDetailRequest.
 
         偏移量，表示查询该偏移量后面的记录。  说明：部分type类型的任务详情支持分页查询，可以通过传递该参数进行分页控制。
 
@@ -224,7 +224,7 @@ class ShowJobDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowJobDetailRequest.
+        r"""Sets the offset of this ShowJobDetailRequest.
 
         偏移量，表示查询该偏移量后面的记录。  说明：部分type类型的任务详情支持分页查询，可以通过传递该参数进行分页控制。
 
@@ -235,7 +235,7 @@ class ShowJobDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowJobDetailRequest.
+        r"""Gets the limit of this ShowJobDetailRequest.
 
         查询返回记录的数量限制。  说明：部分type类型的任务详情支持分页查询，可以通过传递该参数进行分页控制。
 
@@ -246,7 +246,7 @@ class ShowJobDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowJobDetailRequest.
+        r"""Sets the limit of this ShowJobDetailRequest.
 
         查询返回记录的数量限制。  说明：部分type类型的任务详情支持分页查询，可以通过传递该参数进行分页控制。
 
@@ -257,7 +257,7 @@ class ShowJobDetailRequest:
 
     @property
     def compare_type(self):
-        """Gets the compare_type of this ShowJobDetailRequest.
+        r"""Gets the compare_type of this ShowJobDetailRequest.
 
         对比任务类型 - object_compare：对象对比。 - line_compare：行对比。 - content_compare：内容对比。 - data_compare：数据对比。
 
@@ -268,7 +268,7 @@ class ShowJobDetailRequest:
 
     @compare_type.setter
     def compare_type(self, compare_type):
-        """Sets the compare_type of this ShowJobDetailRequest.
+        r"""Sets the compare_type of this ShowJobDetailRequest.
 
         对比任务类型 - object_compare：对象对比。 - line_compare：行对比。 - content_compare：内容对比。 - data_compare：数据对比。
 
@@ -279,7 +279,7 @@ class ShowJobDetailRequest:
 
     @property
     def query_type(self):
-        """Gets the query_type of this ShowJobDetailRequest.
+        r"""Gets the query_type of this ShowJobDetailRequest.
 
         查询对比内容。取值： - overview：对比任务概览。 - list：数据对比任务列表。 - detail：对比详情。 - diff：不一致详情。
 
@@ -290,7 +290,7 @@ class ShowJobDetailRequest:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this ShowJobDetailRequest.
+        r"""Sets the query_type of this ShowJobDetailRequest.
 
         查询对比内容。取值： - overview：对比任务概览。 - list：数据对比任务列表。 - detail：对比详情。 - diff：不一致详情。
 
@@ -301,7 +301,7 @@ class ShowJobDetailRequest:
 
     @property
     def object_type(self):
-        """Gets the object_type of this ShowJobDetailRequest.
+        r"""Gets the object_type of this ShowJobDetailRequest.
 
         查询对象对比详情类型。取值： - DB：库级对比详情。 - TABLE：表级对比详情。 - INDEX：索引对比详情。
 
@@ -312,7 +312,7 @@ class ShowJobDetailRequest:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this ShowJobDetailRequest.
+        r"""Sets the object_type of this ShowJobDetailRequest.
 
         查询对象对比详情类型。取值： - DB：库级对比详情。 - TABLE：表级对比详情。 - INDEX：索引对比详情。
 
@@ -323,7 +323,7 @@ class ShowJobDetailRequest:
 
     @property
     def compare_task_id(self):
-        """Gets the compare_task_id of this ShowJobDetailRequest.
+        r"""Gets the compare_task_id of this ShowJobDetailRequest.
 
         对比任务ID。
 
@@ -334,7 +334,7 @@ class ShowJobDetailRequest:
 
     @compare_task_id.setter
     def compare_task_id(self, compare_task_id):
-        """Sets the compare_task_id of this ShowJobDetailRequest.
+        r"""Sets the compare_task_id of this ShowJobDetailRequest.
 
         对比任务ID。
 
@@ -345,7 +345,7 @@ class ShowJobDetailRequest:
 
     @property
     def source_db_name(self):
-        """Gets the source_db_name of this ShowJobDetailRequest.
+        r"""Gets the source_db_name of this ShowJobDetailRequest.
 
         数据对比源库名称。
 
@@ -356,7 +356,7 @@ class ShowJobDetailRequest:
 
     @source_db_name.setter
     def source_db_name(self, source_db_name):
-        """Sets the source_db_name of this ShowJobDetailRequest.
+        r"""Sets the source_db_name of this ShowJobDetailRequest.
 
         数据对比源库名称。
 
@@ -367,7 +367,7 @@ class ShowJobDetailRequest:
 
     @property
     def target_db_name(self):
-        """Gets the target_db_name of this ShowJobDetailRequest.
+        r"""Gets the target_db_name of this ShowJobDetailRequest.
 
         数据对比目标库名称。
 
@@ -378,7 +378,7 @@ class ShowJobDetailRequest:
 
     @target_db_name.setter
     def target_db_name(self, target_db_name):
-        """Sets the target_db_name of this ShowJobDetailRequest.
+        r"""Sets the target_db_name of this ShowJobDetailRequest.
 
         数据对比目标库名称。
 
@@ -389,7 +389,7 @@ class ShowJobDetailRequest:
 
     @property
     def compare_detail_type(self):
-        """Gets the compare_detail_type of this ShowJobDetailRequest.
+        r"""Gets the compare_detail_type of this ShowJobDetailRequest.
 
         对比结果类型。取值： - compare：对比完成。 - uncompare：无法对比。
 
@@ -400,7 +400,7 @@ class ShowJobDetailRequest:
 
     @compare_detail_type.setter
     def compare_detail_type(self, compare_detail_type):
-        """Sets the compare_detail_type of this ShowJobDetailRequest.
+        r"""Sets the compare_detail_type of this ShowJobDetailRequest.
 
         对比结果类型。取值： - compare：对比完成。 - uncompare：无法对比。
 

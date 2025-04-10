@@ -25,7 +25,7 @@ class ListMyKnowledgePointsRequest:
     }
 
     def __init__(self, body=None):
-        """ListMyKnowledgePointsRequest
+        r"""ListMyKnowledgePointsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListMyKnowledgePointsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListMyKnowledgePointsRequest.
+        r"""Gets the body of this ListMyKnowledgePointsRequest.
 
         :return: The body of this ListMyKnowledgePointsRequest.
         :rtype: :class:`huaweicloudsdkclassroom.v3.KnowledgePointsListRequestBody`
@@ -52,7 +52,7 @@ class ListMyKnowledgePointsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListMyKnowledgePointsRequest.
+        r"""Sets the body of this ListMyKnowledgePointsRequest.
 
         :param body: The body of this ListMyKnowledgePointsRequest.
         :type body: :class:`huaweicloudsdkclassroom.v3.KnowledgePointsListRequestBody`

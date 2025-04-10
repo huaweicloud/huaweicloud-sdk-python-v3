@@ -27,7 +27,7 @@ class UpdateLogSettingRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateLogSettingRequest
+        r"""UpdateLogSettingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateLogSettingRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateLogSettingRequest.
+        r"""Gets the cluster_id of this UpdateLogSettingRequest.
 
         指定更改日志基础配置的集群ID。
 
@@ -60,7 +60,7 @@ class UpdateLogSettingRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateLogSettingRequest.
+        r"""Sets the cluster_id of this UpdateLogSettingRequest.
 
         指定更改日志基础配置的集群ID。
 
@@ -71,7 +71,7 @@ class UpdateLogSettingRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLogSettingRequest.
+        r"""Gets the body of this UpdateLogSettingRequest.
 
         :return: The body of this UpdateLogSettingRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateLogSettingReq`
@@ -80,7 +80,7 @@ class UpdateLogSettingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLogSettingRequest.
+        r"""Sets the body of this UpdateLogSettingRequest.
 
         :param body: The body of this UpdateLogSettingRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UpdateLogSettingReq`

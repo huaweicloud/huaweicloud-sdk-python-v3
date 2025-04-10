@@ -33,7 +33,7 @@ class SourceDBInfo:
     }
 
     def __init__(self, connection_string=None, user_name=None, password=None, source_db_type=None, source_db_version=None):
-        """SourceDBInfo
+        r"""SourceDBInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class SourceDBInfo:
 
     @property
     def connection_string(self):
-        """Gets the connection_string of this SourceDBInfo.
+        r"""Gets the connection_string of this SourceDBInfo.
 
         连接字符串。
 
@@ -77,7 +77,7 @@ class SourceDBInfo:
 
     @connection_string.setter
     def connection_string(self, connection_string):
-        """Sets the connection_string of this SourceDBInfo.
+        r"""Sets the connection_string of this SourceDBInfo.
 
         连接字符串。
 
@@ -88,7 +88,7 @@ class SourceDBInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this SourceDBInfo.
+        r"""Gets the user_name of this SourceDBInfo.
 
         用户名。
 
@@ -99,7 +99,7 @@ class SourceDBInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this SourceDBInfo.
+        r"""Sets the user_name of this SourceDBInfo.
 
         用户名。
 
@@ -110,7 +110,7 @@ class SourceDBInfo:
 
     @property
     def password(self):
-        """Gets the password of this SourceDBInfo.
+        r"""Gets the password of this SourceDBInfo.
 
         用户密码。
 
@@ -121,7 +121,7 @@ class SourceDBInfo:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this SourceDBInfo.
+        r"""Sets the password of this SourceDBInfo.
 
         用户密码。
 
@@ -132,7 +132,7 @@ class SourceDBInfo:
 
     @property
     def source_db_type(self):
-        """Gets the source_db_type of this SourceDBInfo.
+        r"""Gets the source_db_type of this SourceDBInfo.
 
         数据库类型。
 
@@ -143,7 +143,7 @@ class SourceDBInfo:
 
     @source_db_type.setter
     def source_db_type(self, source_db_type):
-        """Sets the source_db_type of this SourceDBInfo.
+        r"""Sets the source_db_type of this SourceDBInfo.
 
         数据库类型。
 
@@ -154,7 +154,7 @@ class SourceDBInfo:
 
     @property
     def source_db_version(self):
-        """Gets the source_db_version of this SourceDBInfo.
+        r"""Gets the source_db_version of this SourceDBInfo.
 
         数据库版本。 （注意：该字段的值是数据库类型source_db_type对应的版本，当前支持以下组合： ORACLE-11g； ORACLE-12c； ORACLE-18c； ORACLE-19c。）
 
@@ -165,7 +165,7 @@ class SourceDBInfo:
 
     @source_db_version.setter
     def source_db_version(self, source_db_version):
-        """Sets the source_db_version of this SourceDBInfo.
+        r"""Sets the source_db_version of this SourceDBInfo.
 
         数据库版本。 （注意：该字段的值是数据库类型source_db_type对应的版本，当前支持以下组合： ORACLE-11g； ORACLE-12c； ORACLE-18c； ORACLE-19c。）
 

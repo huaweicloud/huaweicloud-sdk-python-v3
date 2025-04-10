@@ -27,7 +27,7 @@ class JobEntities:
     }
 
     def __init__(self, resource_id=None, resource_type=None):
-        """JobEntities
+        r"""JobEntities
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class JobEntities:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this JobEntities.
+        r"""Gets the resource_id of this JobEntities.
 
         子任务关联的资源ID
 
@@ -61,7 +61,7 @@ class JobEntities:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this JobEntities.
+        r"""Sets the resource_id of this JobEntities.
 
         子任务关联的资源ID
 
@@ -72,7 +72,7 @@ class JobEntities:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this JobEntities.
+        r"""Gets the resource_type of this JobEntities.
 
         子任务关联的资源类型
 
@@ -83,7 +83,7 @@ class JobEntities:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this JobEntities.
+        r"""Sets the resource_type of this JobEntities.
 
         子任务关联的资源类型
 

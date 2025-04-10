@@ -31,7 +31,7 @@ class UpdateVpcOption:
     }
 
     def __init__(self, name=None, description=None, cidr=None, routes=None):
-        """UpdateVpcOption
+        r"""UpdateVpcOption
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateVpcOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateVpcOption.
+        r"""Gets the name of this UpdateVpcOption.
 
         功能说明：虚拟私有云名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  约束：如果名称不为空，则同一个租户下的VPC不允许重名。
 
@@ -75,7 +75,7 @@ class UpdateVpcOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVpcOption.
+        r"""Sets the name of this UpdateVpcOption.
 
         功能说明：虚拟私有云名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  约束：如果名称不为空，则同一个租户下的VPC不允许重名。
 
@@ -86,7 +86,7 @@ class UpdateVpcOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateVpcOption.
+        r"""Gets the description of this UpdateVpcOption.
 
         功能说明：虚拟私有云的描述  取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -97,7 +97,7 @@ class UpdateVpcOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateVpcOption.
+        r"""Sets the description of this UpdateVpcOption.
 
         功能说明：虚拟私有云的描述  取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -108,7 +108,7 @@ class UpdateVpcOption:
 
     @property
     def cidr(self):
-        """Gets the cidr of this UpdateVpcOption.
+        r"""Gets the cidr of this UpdateVpcOption.
 
         功能说明：虚拟私有云下可用子网的范围  取值范围：  - 10.0.0.0/8 ~ 10.255.255.240/28 - 172.16.0.0/12 ~ 172.31.255.240/28 - 192.168.0.0/16 ~ 192.168.255.240/28  约束：必须是ipv4 cidr格式，例如：192.168.0.0/16
 
@@ -119,7 +119,7 @@ class UpdateVpcOption:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this UpdateVpcOption.
+        r"""Sets the cidr of this UpdateVpcOption.
 
         功能说明：虚拟私有云下可用子网的范围  取值范围：  - 10.0.0.0/8 ~ 10.255.255.240/28 - 172.16.0.0/12 ~ 172.31.255.240/28 - 192.168.0.0/16 ~ 192.168.255.240/28  约束：必须是ipv4 cidr格式，例如：192.168.0.0/16
 
@@ -130,7 +130,7 @@ class UpdateVpcOption:
 
     @property
     def routes(self):
-        """Gets the routes of this UpdateVpcOption.
+        r"""Gets the routes of this UpdateVpcOption.
 
         功能说明：路由信息列表，详情参见route对象
 
@@ -141,7 +141,7 @@ class UpdateVpcOption:
 
     @routes.setter
     def routes(self, routes):
-        """Sets the routes of this UpdateVpcOption.
+        r"""Sets the routes of this UpdateVpcOption.
 
         功能说明：路由信息列表，详情参见route对象
 

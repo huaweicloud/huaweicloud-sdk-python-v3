@@ -31,7 +31,7 @@ class PortItem:
     }
 
     def __init__(self, port=None, service=None, protocol=None, status=None):
-        """PortItem
+        r"""PortItem
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PortItem:
 
     @property
     def port(self):
-        """Gets the port of this PortItem.
+        r"""Gets the port of this PortItem.
 
         端口号
 
@@ -75,7 +75,7 @@ class PortItem:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this PortItem.
+        r"""Sets the port of this PortItem.
 
         端口号
 
@@ -86,7 +86,7 @@ class PortItem:
 
     @property
     def service(self):
-        """Gets the service of this PortItem.
+        r"""Gets the service of this PortItem.
 
         服务
 
@@ -97,7 +97,7 @@ class PortItem:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this PortItem.
+        r"""Sets the service of this PortItem.
 
         服务
 
@@ -108,7 +108,7 @@ class PortItem:
 
     @property
     def protocol(self):
-        """Gets the protocol of this PortItem.
+        r"""Gets the protocol of this PortItem.
 
         端口协议:   * TCP   * UDP 
 
@@ -119,7 +119,7 @@ class PortItem:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this PortItem.
+        r"""Sets the protocol of this PortItem.
 
         端口协议:   * TCP   * UDP 
 
@@ -130,7 +130,7 @@ class PortItem:
 
     @property
     def status(self):
-        """Gets the status of this PortItem.
+        r"""Gets the status of this PortItem.
 
         端口状态:   * filtered - 过滤的   * open - 开放 
 
@@ -141,7 +141,7 @@ class PortItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PortItem.
+        r"""Sets the status of this PortItem.
 
         端口状态:   * filtered - 过滤的   * open - 开放 
 

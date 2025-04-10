@@ -31,7 +31,7 @@ class TbPosInfo:
     }
 
     def __init__(self, origin_name=None, name=None, start=None, end=None):
-        """TbPosInfo
+        r"""TbPosInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TbPosInfo:
 
     @property
     def origin_name(self):
-        """Gets the origin_name of this TbPosInfo.
+        r"""Gets the origin_name of this TbPosInfo.
 
         原始名称
 
@@ -75,7 +75,7 @@ class TbPosInfo:
 
     @origin_name.setter
     def origin_name(self, origin_name):
-        """Sets the origin_name of this TbPosInfo.
+        r"""Sets the origin_name of this TbPosInfo.
 
         原始名称
 
@@ -86,7 +86,7 @@ class TbPosInfo:
 
     @property
     def name(self):
-        """Gets the name of this TbPosInfo.
+        r"""Gets the name of this TbPosInfo.
 
         名称
 
@@ -97,7 +97,7 @@ class TbPosInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TbPosInfo.
+        r"""Sets the name of this TbPosInfo.
 
         名称
 
@@ -108,7 +108,7 @@ class TbPosInfo:
 
     @property
     def start(self):
-        """Gets the start of this TbPosInfo.
+        r"""Gets the start of this TbPosInfo.
 
         开始
 
@@ -119,7 +119,7 @@ class TbPosInfo:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this TbPosInfo.
+        r"""Sets the start of this TbPosInfo.
 
         开始
 
@@ -130,7 +130,7 @@ class TbPosInfo:
 
     @property
     def end(self):
-        """Gets the end of this TbPosInfo.
+        r"""Gets the end of this TbPosInfo.
 
         结束
 
@@ -141,7 +141,7 @@ class TbPosInfo:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this TbPosInfo.
+        r"""Sets the end of this TbPosInfo.
 
         结束
 

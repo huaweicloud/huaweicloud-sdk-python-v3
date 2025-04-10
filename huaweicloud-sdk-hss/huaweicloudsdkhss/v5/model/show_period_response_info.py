@@ -27,7 +27,7 @@ class ShowPeriodResponseInfo:
     }
 
     def __init__(self, period_vals=None, period_unit=None):
-        """ShowPeriodResponseInfo
+        r"""ShowPeriodResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowPeriodResponseInfo:
 
     @property
     def period_vals(self):
-        """Gets the period_vals of this ShowPeriodResponseInfo.
+        r"""Gets the period_vals of this ShowPeriodResponseInfo.
 
         购买时长数值串，多个用逗号分隔，如1,2,3,4,5,6,7,8,9
 
@@ -61,7 +61,7 @@ class ShowPeriodResponseInfo:
 
     @period_vals.setter
     def period_vals(self, period_vals):
-        """Sets the period_vals of this ShowPeriodResponseInfo.
+        r"""Sets the period_vals of this ShowPeriodResponseInfo.
 
         购买时长数值串，多个用逗号分隔，如1,2,3,4,5,6,7,8,9
 
@@ -72,7 +72,7 @@ class ShowPeriodResponseInfo:
 
     @property
     def period_unit(self):
-        """Gets the period_unit of this ShowPeriodResponseInfo.
+        r"""Gets the period_unit of this ShowPeriodResponseInfo.
 
         购买时长单位   - year ：年   - month ：月   - day ：日
 
@@ -83,7 +83,7 @@ class ShowPeriodResponseInfo:
 
     @period_unit.setter
     def period_unit(self, period_unit):
-        """Sets the period_unit of this ShowPeriodResponseInfo.
+        r"""Sets the period_unit of this ShowPeriodResponseInfo.
 
         购买时长单位   - year ：年   - month ：月   - day ：日
 

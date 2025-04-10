@@ -37,7 +37,7 @@ class ParamGroupInfoResult:
     }
 
     def __init__(self, id=None, name=None, description=None, datastore_version=None, datastore_name=None, created=None, updated=None):
-        """ParamGroupInfoResult
+        r"""ParamGroupInfoResult
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ParamGroupInfoResult:
 
     @property
     def id(self):
-        """Gets the id of this ParamGroupInfoResult.
+        r"""Gets the id of this ParamGroupInfoResult.
 
         参数模板ID。
 
@@ -89,7 +89,7 @@ class ParamGroupInfoResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ParamGroupInfoResult.
+        r"""Sets the id of this ParamGroupInfoResult.
 
         参数模板ID。
 
@@ -100,7 +100,7 @@ class ParamGroupInfoResult:
 
     @property
     def name(self):
-        """Gets the name of this ParamGroupInfoResult.
+        r"""Gets the name of this ParamGroupInfoResult.
 
         参数模板名称。
 
@@ -111,7 +111,7 @@ class ParamGroupInfoResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ParamGroupInfoResult.
+        r"""Sets the name of this ParamGroupInfoResult.
 
         参数模板名称。
 
@@ -122,7 +122,7 @@ class ParamGroupInfoResult:
 
     @property
     def description(self):
-        """Gets the description of this ParamGroupInfoResult.
+        r"""Gets the description of this ParamGroupInfoResult.
 
         参数模板描述。
 
@@ -133,7 +133,7 @@ class ParamGroupInfoResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ParamGroupInfoResult.
+        r"""Sets the description of this ParamGroupInfoResult.
 
         参数模板描述。
 
@@ -144,7 +144,7 @@ class ParamGroupInfoResult:
 
     @property
     def datastore_version(self):
-        """Gets the datastore_version of this ParamGroupInfoResult.
+        r"""Gets the datastore_version of this ParamGroupInfoResult.
 
         数据库版本。
 
@@ -155,7 +155,7 @@ class ParamGroupInfoResult:
 
     @datastore_version.setter
     def datastore_version(self, datastore_version):
-        """Sets the datastore_version of this ParamGroupInfoResult.
+        r"""Sets the datastore_version of this ParamGroupInfoResult.
 
         数据库版本。
 
@@ -166,7 +166,7 @@ class ParamGroupInfoResult:
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this ParamGroupInfoResult.
+        r"""Gets the datastore_name of this ParamGroupInfoResult.
 
         数据库类型。
 
@@ -177,7 +177,7 @@ class ParamGroupInfoResult:
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this ParamGroupInfoResult.
+        r"""Sets the datastore_name of this ParamGroupInfoResult.
 
         数据库类型。
 
@@ -188,7 +188,7 @@ class ParamGroupInfoResult:
 
     @property
     def created(self):
-        """Gets the created of this ParamGroupInfoResult.
+        r"""Gets the created of this ParamGroupInfoResult.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -199,7 +199,7 @@ class ParamGroupInfoResult:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ParamGroupInfoResult.
+        r"""Sets the created of this ParamGroupInfoResult.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -210,7 +210,7 @@ class ParamGroupInfoResult:
 
     @property
     def updated(self):
-        """Gets the updated of this ParamGroupInfoResult.
+        r"""Gets the updated of this ParamGroupInfoResult.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -221,7 +221,7 @@ class ParamGroupInfoResult:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ParamGroupInfoResult.
+        r"""Sets the updated of this ParamGroupInfoResult.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 

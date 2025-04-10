@@ -26,7 +26,7 @@ class FreezeCertResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """FreezeCertResponse
+        r"""FreezeCertResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class FreezeCertResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this FreezeCertResponse.
+        r"""Gets the result of this FreezeCertResponse.
 
         操作结果
 
@@ -55,7 +55,7 @@ class FreezeCertResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this FreezeCertResponse.
+        r"""Sets the result of this FreezeCertResponse.
 
         操作结果
 

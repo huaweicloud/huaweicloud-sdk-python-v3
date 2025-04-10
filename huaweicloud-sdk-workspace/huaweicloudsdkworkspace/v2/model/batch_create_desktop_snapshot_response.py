@@ -26,7 +26,7 @@ class BatchCreateDesktopSnapshotResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """BatchCreateDesktopSnapshotResponse
+        r"""BatchCreateDesktopSnapshotResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchCreateDesktopSnapshotResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchCreateDesktopSnapshotResponse.
+        r"""Gets the job_id of this BatchCreateDesktopSnapshotResponse.
 
         任务ID
 
@@ -55,7 +55,7 @@ class BatchCreateDesktopSnapshotResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchCreateDesktopSnapshotResponse.
+        r"""Sets the job_id of this BatchCreateDesktopSnapshotResponse.
 
         任务ID
 

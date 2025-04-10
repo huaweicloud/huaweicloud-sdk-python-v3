@@ -65,7 +65,7 @@ class KeywordsAlarmRuleRespList:
     }
 
     def __init__(self, project_id=None, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, condition_expression=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None, template_name=None, status=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None):
-        """KeywordsAlarmRuleRespList
+        r"""KeywordsAlarmRuleRespList
 
         The model defined in huaweicloud sdk
 
@@ -170,7 +170,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def project_id(self):
-        """Gets the project_id of this KeywordsAlarmRuleRespList.
+        r"""Gets the project_id of this KeywordsAlarmRuleRespList.
 
         项目id
 
@@ -181,7 +181,7 @@ class KeywordsAlarmRuleRespList:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this KeywordsAlarmRuleRespList.
+        r"""Sets the project_id of this KeywordsAlarmRuleRespList.
 
         项目id
 
@@ -192,7 +192,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def keywords_alarm_rule_id(self):
-        """Gets the keywords_alarm_rule_id of this KeywordsAlarmRuleRespList.
+        r"""Gets the keywords_alarm_rule_id of this KeywordsAlarmRuleRespList.
 
         关键词告警id
 
@@ -203,7 +203,7 @@ class KeywordsAlarmRuleRespList:
 
     @keywords_alarm_rule_id.setter
     def keywords_alarm_rule_id(self, keywords_alarm_rule_id):
-        """Sets the keywords_alarm_rule_id of this KeywordsAlarmRuleRespList.
+        r"""Sets the keywords_alarm_rule_id of this KeywordsAlarmRuleRespList.
 
         关键词告警id
 
@@ -214,7 +214,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def keywords_alarm_rule_name(self):
-        """Gets the keywords_alarm_rule_name of this KeywordsAlarmRuleRespList.
+        r"""Gets the keywords_alarm_rule_name of this KeywordsAlarmRuleRespList.
 
         关键词告警名称
 
@@ -225,7 +225,7 @@ class KeywordsAlarmRuleRespList:
 
     @keywords_alarm_rule_name.setter
     def keywords_alarm_rule_name(self, keywords_alarm_rule_name):
-        """Sets the keywords_alarm_rule_name of this KeywordsAlarmRuleRespList.
+        r"""Sets the keywords_alarm_rule_name of this KeywordsAlarmRuleRespList.
 
         关键词告警名称
 
@@ -236,7 +236,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def keywords_alarm_rule_description(self):
-        """Gets the keywords_alarm_rule_description of this KeywordsAlarmRuleRespList.
+        r"""Gets the keywords_alarm_rule_description of this KeywordsAlarmRuleRespList.
 
         关键词告警信息描述
 
@@ -247,7 +247,7 @@ class KeywordsAlarmRuleRespList:
 
     @keywords_alarm_rule_description.setter
     def keywords_alarm_rule_description(self, keywords_alarm_rule_description):
-        """Sets the keywords_alarm_rule_description of this KeywordsAlarmRuleRespList.
+        r"""Sets the keywords_alarm_rule_description of this KeywordsAlarmRuleRespList.
 
         关键词告警信息描述
 
@@ -258,7 +258,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def condition_expression(self):
-        """Gets the condition_expression of this KeywordsAlarmRuleRespList.
+        r"""Gets the condition_expression of this KeywordsAlarmRuleRespList.
 
         条件
 
@@ -269,7 +269,7 @@ class KeywordsAlarmRuleRespList:
 
     @condition_expression.setter
     def condition_expression(self, condition_expression):
-        """Sets the condition_expression of this KeywordsAlarmRuleRespList.
+        r"""Sets the condition_expression of this KeywordsAlarmRuleRespList.
 
         条件
 
@@ -280,7 +280,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def keywords_requests(self):
-        """Gets the keywords_requests of this KeywordsAlarmRuleRespList.
+        r"""Gets the keywords_requests of this KeywordsAlarmRuleRespList.
 
         关键词详细信息
 
@@ -291,7 +291,7 @@ class KeywordsAlarmRuleRespList:
 
     @keywords_requests.setter
     def keywords_requests(self, keywords_requests):
-        """Sets the keywords_requests of this KeywordsAlarmRuleRespList.
+        r"""Sets the keywords_requests of this KeywordsAlarmRuleRespList.
 
         关键词详细信息
 
@@ -302,7 +302,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def frequency(self):
-        """Gets the frequency of this KeywordsAlarmRuleRespList.
+        r"""Gets the frequency of this KeywordsAlarmRuleRespList.
 
         :return: The frequency of this KeywordsAlarmRuleRespList.
         :rtype: :class:`huaweicloudsdklts.v2.Frequency`
@@ -311,7 +311,7 @@ class KeywordsAlarmRuleRespList:
 
     @frequency.setter
     def frequency(self, frequency):
-        """Sets the frequency of this KeywordsAlarmRuleRespList.
+        r"""Sets the frequency of this KeywordsAlarmRuleRespList.
 
         :param frequency: The frequency of this KeywordsAlarmRuleRespList.
         :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
@@ -320,7 +320,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def keywords_alarm_level(self):
-        """Gets the keywords_alarm_level of this KeywordsAlarmRuleRespList.
+        r"""Gets the keywords_alarm_level of this KeywordsAlarmRuleRespList.
 
         告警级别
 
@@ -331,7 +331,7 @@ class KeywordsAlarmRuleRespList:
 
     @keywords_alarm_level.setter
     def keywords_alarm_level(self, keywords_alarm_level):
-        """Sets the keywords_alarm_level of this KeywordsAlarmRuleRespList.
+        r"""Sets the keywords_alarm_level of this KeywordsAlarmRuleRespList.
 
         告警级别
 
@@ -342,7 +342,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def keywords_alarm_send(self):
-        """Gets the keywords_alarm_send of this KeywordsAlarmRuleRespList.
+        r"""Gets the keywords_alarm_send of this KeywordsAlarmRuleRespList.
 
         是否发送
 
@@ -353,7 +353,7 @@ class KeywordsAlarmRuleRespList:
 
     @keywords_alarm_send.setter
     def keywords_alarm_send(self, keywords_alarm_send):
-        """Sets the keywords_alarm_send of this KeywordsAlarmRuleRespList.
+        r"""Sets the keywords_alarm_send of this KeywordsAlarmRuleRespList.
 
         是否发送
 
@@ -364,7 +364,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeywordsAlarmRuleRespList.
+        r"""Gets the domain_id of this KeywordsAlarmRuleRespList.
 
         domainId
 
@@ -375,7 +375,7 @@ class KeywordsAlarmRuleRespList:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeywordsAlarmRuleRespList.
+        r"""Sets the domain_id of this KeywordsAlarmRuleRespList.
 
         domainId
 
@@ -386,7 +386,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def create_time(self):
-        """Gets the create_time of this KeywordsAlarmRuleRespList.
+        r"""Gets the create_time of this KeywordsAlarmRuleRespList.
 
         创建时间（毫秒时间戳）
 
@@ -397,7 +397,7 @@ class KeywordsAlarmRuleRespList:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this KeywordsAlarmRuleRespList.
+        r"""Sets the create_time of this KeywordsAlarmRuleRespList.
 
         创建时间（毫秒时间戳）
 
@@ -408,7 +408,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def update_time(self):
-        """Gets the update_time of this KeywordsAlarmRuleRespList.
+        r"""Gets the update_time of this KeywordsAlarmRuleRespList.
 
         更新时间（毫秒时间戳）
 
@@ -419,7 +419,7 @@ class KeywordsAlarmRuleRespList:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this KeywordsAlarmRuleRespList.
+        r"""Sets the update_time of this KeywordsAlarmRuleRespList.
 
         更新时间（毫秒时间戳）
 
@@ -430,7 +430,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def topics(self):
-        """Gets the topics of this KeywordsAlarmRuleRespList.
+        r"""Gets the topics of this KeywordsAlarmRuleRespList.
 
         通知主题
 
@@ -441,7 +441,7 @@ class KeywordsAlarmRuleRespList:
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this KeywordsAlarmRuleRespList.
+        r"""Sets the topics of this KeywordsAlarmRuleRespList.
 
         通知主题
 
@@ -452,7 +452,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def template_name(self):
-        """Gets the template_name of this KeywordsAlarmRuleRespList.
+        r"""Gets the template_name of this KeywordsAlarmRuleRespList.
 
         消息模板名称
 
@@ -463,7 +463,7 @@ class KeywordsAlarmRuleRespList:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this KeywordsAlarmRuleRespList.
+        r"""Sets the template_name of this KeywordsAlarmRuleRespList.
 
         消息模板名称
 
@@ -474,7 +474,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def status(self):
-        """Gets the status of this KeywordsAlarmRuleRespList.
+        r"""Gets the status of this KeywordsAlarmRuleRespList.
 
         告警状态
 
@@ -485,7 +485,7 @@ class KeywordsAlarmRuleRespList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this KeywordsAlarmRuleRespList.
+        r"""Sets the status of this KeywordsAlarmRuleRespList.
 
         告警状态
 
@@ -496,7 +496,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def trigger_condition_count(self):
-        """Gets the trigger_condition_count of this KeywordsAlarmRuleRespList.
+        r"""Gets the trigger_condition_count of this KeywordsAlarmRuleRespList.
 
         触发条件：触发周期;默认为1
 
@@ -507,7 +507,7 @@ class KeywordsAlarmRuleRespList:
 
     @trigger_condition_count.setter
     def trigger_condition_count(self, trigger_condition_count):
-        """Sets the trigger_condition_count of this KeywordsAlarmRuleRespList.
+        r"""Sets the trigger_condition_count of this KeywordsAlarmRuleRespList.
 
         触发条件：触发周期;默认为1
 
@@ -518,7 +518,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def trigger_condition_frequency(self):
-        """Gets the trigger_condition_frequency of this KeywordsAlarmRuleRespList.
+        r"""Gets the trigger_condition_frequency of this KeywordsAlarmRuleRespList.
 
         触发条件：触发次数;默认为1
 
@@ -529,7 +529,7 @@ class KeywordsAlarmRuleRespList:
 
     @trigger_condition_frequency.setter
     def trigger_condition_frequency(self, trigger_condition_frequency):
-        """Sets the trigger_condition_frequency of this KeywordsAlarmRuleRespList.
+        r"""Sets the trigger_condition_frequency of this KeywordsAlarmRuleRespList.
 
         触发条件：触发次数;默认为1
 
@@ -540,7 +540,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def whether_recovery_policy(self):
-        """Gets the whether_recovery_policy of this KeywordsAlarmRuleRespList.
+        r"""Gets the whether_recovery_policy of this KeywordsAlarmRuleRespList.
 
         是否打开恢复通知;默认false
 
@@ -551,7 +551,7 @@ class KeywordsAlarmRuleRespList:
 
     @whether_recovery_policy.setter
     def whether_recovery_policy(self, whether_recovery_policy):
-        """Sets the whether_recovery_policy of this KeywordsAlarmRuleRespList.
+        r"""Sets the whether_recovery_policy of this KeywordsAlarmRuleRespList.
 
         是否打开恢复通知;默认false
 
@@ -562,7 +562,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def recovery_policy(self):
-        """Gets the recovery_policy of this KeywordsAlarmRuleRespList.
+        r"""Gets the recovery_policy of this KeywordsAlarmRuleRespList.
 
         恢复策略周期;默认为3
 
@@ -573,7 +573,7 @@ class KeywordsAlarmRuleRespList:
 
     @recovery_policy.setter
     def recovery_policy(self, recovery_policy):
-        """Sets the recovery_policy of this KeywordsAlarmRuleRespList.
+        r"""Sets the recovery_policy of this KeywordsAlarmRuleRespList.
 
         恢复策略周期;默认为3
 
@@ -584,7 +584,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def notification_frequency(self):
-        """Gets the notification_frequency of this KeywordsAlarmRuleRespList.
+        r"""Gets the notification_frequency of this KeywordsAlarmRuleRespList.
 
         通知频率,单位(分钟)
 
@@ -595,7 +595,7 @@ class KeywordsAlarmRuleRespList:
 
     @notification_frequency.setter
     def notification_frequency(self, notification_frequency):
-        """Sets the notification_frequency of this KeywordsAlarmRuleRespList.
+        r"""Sets the notification_frequency of this KeywordsAlarmRuleRespList.
 
         通知频率,单位(分钟)
 
@@ -606,7 +606,7 @@ class KeywordsAlarmRuleRespList:
 
     @property
     def alarm_action_rule_name(self):
-        """Gets the alarm_action_rule_name of this KeywordsAlarmRuleRespList.
+        r"""Gets the alarm_action_rule_name of this KeywordsAlarmRuleRespList.
 
         告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
 
@@ -617,7 +617,7 @@ class KeywordsAlarmRuleRespList:
 
     @alarm_action_rule_name.setter
     def alarm_action_rule_name(self, alarm_action_rule_name):
-        """Sets the alarm_action_rule_name of this KeywordsAlarmRuleRespList.
+        r"""Sets the alarm_action_rule_name of this KeywordsAlarmRuleRespList.
 
         告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
 

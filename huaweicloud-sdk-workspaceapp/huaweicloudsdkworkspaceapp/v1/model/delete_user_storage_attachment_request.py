@@ -27,7 +27,7 @@ class DeleteUserStorageAttachmentRequest:
     }
 
     def __init__(self, storage_id=None, body=None):
-        """DeleteUserStorageAttachmentRequest
+        r"""DeleteUserStorageAttachmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteUserStorageAttachmentRequest:
 
     @property
     def storage_id(self):
-        """Gets the storage_id of this DeleteUserStorageAttachmentRequest.
+        r"""Gets the storage_id of this DeleteUserStorageAttachmentRequest.
 
         WKS存储ID。
 
@@ -60,7 +60,7 @@ class DeleteUserStorageAttachmentRequest:
 
     @storage_id.setter
     def storage_id(self, storage_id):
-        """Sets the storage_id of this DeleteUserStorageAttachmentRequest.
+        r"""Sets the storage_id of this DeleteUserStorageAttachmentRequest.
 
         WKS存储ID。
 
@@ -71,7 +71,7 @@ class DeleteUserStorageAttachmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteUserStorageAttachmentRequest.
+        r"""Gets the body of this DeleteUserStorageAttachmentRequest.
 
         :return: The body of this DeleteUserStorageAttachmentRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.DeleteUserStorageAttachmentReq`
@@ -80,7 +80,7 @@ class DeleteUserStorageAttachmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteUserStorageAttachmentRequest.
+        r"""Sets the body of this DeleteUserStorageAttachmentRequest.
 
         :param body: The body of this DeleteUserStorageAttachmentRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.DeleteUserStorageAttachmentReq`

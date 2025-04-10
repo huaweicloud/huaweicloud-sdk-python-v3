@@ -87,7 +87,7 @@ class TestItemVo:
     }
 
     def __init__(self, uri=None, type=None, author=None, name=None, rank=None, owner=None, frequence=None, region=None, last_modifier=None, last_modified=None, last_modified_timestamp=None, last_change_time=None, version_uri=None, origin_uri=None, parent_uri=None, parent_path=None, creation_version_uri=None, creation_date=None, creation_date_timestamp=None, author_name=None, comment=None, number=None, is_feature=None, relate_htsm=None, aw_unique_id=None, test_mind_id=None, test_mind_url=None, project_uuid=None, case_total=None, execd_total=None, is_direct_relation=None, has_child=None):
-        """TestItemVo
+        r"""TestItemVo
 
         The model defined in huaweicloud sdk
 
@@ -260,7 +260,7 @@ class TestItemVo:
 
     @property
     def uri(self):
-        """Gets the uri of this TestItemVo.
+        r"""Gets the uri of this TestItemVo.
 
         资源URI
 
@@ -271,7 +271,7 @@ class TestItemVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this TestItemVo.
+        r"""Sets the uri of this TestItemVo.
 
         资源URI
 
@@ -282,7 +282,7 @@ class TestItemVo:
 
     @property
     def type(self):
-        """Gets the type of this TestItemVo.
+        r"""Gets the type of this TestItemVo.
 
         资源类型
 
@@ -293,7 +293,7 @@ class TestItemVo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TestItemVo.
+        r"""Sets the type of this TestItemVo.
 
         资源类型
 
@@ -304,7 +304,7 @@ class TestItemVo:
 
     @property
     def author(self):
-        """Gets the author of this TestItemVo.
+        r"""Gets the author of this TestItemVo.
 
         创建人
 
@@ -315,7 +315,7 @@ class TestItemVo:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this TestItemVo.
+        r"""Sets the author of this TestItemVo.
 
         创建人
 
@@ -326,7 +326,7 @@ class TestItemVo:
 
     @property
     def name(self):
-        """Gets the name of this TestItemVo.
+        r"""Gets the name of this TestItemVo.
 
         名称
 
@@ -337,7 +337,7 @@ class TestItemVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TestItemVo.
+        r"""Sets the name of this TestItemVo.
 
         名称
 
@@ -348,7 +348,7 @@ class TestItemVo:
 
     @property
     def rank(self):
-        """Gets the rank of this TestItemVo.
+        r"""Gets the rank of this TestItemVo.
 
         级别
 
@@ -359,7 +359,7 @@ class TestItemVo:
 
     @rank.setter
     def rank(self, rank):
-        """Sets the rank of this TestItemVo.
+        r"""Sets the rank of this TestItemVo.
 
         级别
 
@@ -370,7 +370,7 @@ class TestItemVo:
 
     @property
     def owner(self):
-        """Gets the owner of this TestItemVo.
+        r"""Gets the owner of this TestItemVo.
 
         责任人
 
@@ -381,7 +381,7 @@ class TestItemVo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TestItemVo.
+        r"""Sets the owner of this TestItemVo.
 
         责任人
 
@@ -392,7 +392,7 @@ class TestItemVo:
 
     @property
     def frequence(self):
-        """Gets the frequence of this TestItemVo.
+        r"""Gets the frequence of this TestItemVo.
 
         frequence值
 
@@ -403,7 +403,7 @@ class TestItemVo:
 
     @frequence.setter
     def frequence(self, frequence):
-        """Sets the frequence of this TestItemVo.
+        r"""Sets the frequence of this TestItemVo.
 
         frequence值
 
@@ -414,7 +414,7 @@ class TestItemVo:
 
     @property
     def region(self):
-        """Gets the region of this TestItemVo.
+        r"""Gets the region of this TestItemVo.
 
         区域
 
@@ -425,7 +425,7 @@ class TestItemVo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TestItemVo.
+        r"""Sets the region of this TestItemVo.
 
         区域
 
@@ -436,7 +436,7 @@ class TestItemVo:
 
     @property
     def last_modifier(self):
-        """Gets the last_modifier of this TestItemVo.
+        r"""Gets the last_modifier of this TestItemVo.
 
         最后修改人
 
@@ -447,7 +447,7 @@ class TestItemVo:
 
     @last_modifier.setter
     def last_modifier(self, last_modifier):
-        """Sets the last_modifier of this TestItemVo.
+        r"""Sets the last_modifier of this TestItemVo.
 
         最后修改人
 
@@ -458,7 +458,7 @@ class TestItemVo:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this TestItemVo.
+        r"""Gets the last_modified of this TestItemVo.
 
         最后修改时间
 
@@ -469,7 +469,7 @@ class TestItemVo:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this TestItemVo.
+        r"""Sets the last_modified of this TestItemVo.
 
         最后修改时间
 
@@ -480,7 +480,7 @@ class TestItemVo:
 
     @property
     def last_modified_timestamp(self):
-        """Gets the last_modified_timestamp of this TestItemVo.
+        r"""Gets the last_modified_timestamp of this TestItemVo.
 
         修改时间时间戳
 
@@ -491,7 +491,7 @@ class TestItemVo:
 
     @last_modified_timestamp.setter
     def last_modified_timestamp(self, last_modified_timestamp):
-        """Sets the last_modified_timestamp of this TestItemVo.
+        r"""Sets the last_modified_timestamp of this TestItemVo.
 
         修改时间时间戳
 
@@ -502,7 +502,7 @@ class TestItemVo:
 
     @property
     def last_change_time(self):
-        """Gets the last_change_time of this TestItemVo.
+        r"""Gets the last_change_time of this TestItemVo.
 
         最后变更时间
 
@@ -513,7 +513,7 @@ class TestItemVo:
 
     @last_change_time.setter
     def last_change_time(self, last_change_time):
-        """Sets the last_change_time of this TestItemVo.
+        r"""Sets the last_change_time of this TestItemVo.
 
         最后变更时间
 
@@ -524,7 +524,7 @@ class TestItemVo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this TestItemVo.
+        r"""Gets the version_uri of this TestItemVo.
 
         版本URI
 
@@ -535,7 +535,7 @@ class TestItemVo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this TestItemVo.
+        r"""Sets the version_uri of this TestItemVo.
 
         版本URI
 
@@ -546,7 +546,7 @@ class TestItemVo:
 
     @property
     def origin_uri(self):
-        """Gets the origin_uri of this TestItemVo.
+        r"""Gets the origin_uri of this TestItemVo.
 
         源资源URI
 
@@ -557,7 +557,7 @@ class TestItemVo:
 
     @origin_uri.setter
     def origin_uri(self, origin_uri):
-        """Sets the origin_uri of this TestItemVo.
+        r"""Sets the origin_uri of this TestItemVo.
 
         源资源URI
 
@@ -568,7 +568,7 @@ class TestItemVo:
 
     @property
     def parent_uri(self):
-        """Gets the parent_uri of this TestItemVo.
+        r"""Gets the parent_uri of this TestItemVo.
 
         父资源URI
 
@@ -579,7 +579,7 @@ class TestItemVo:
 
     @parent_uri.setter
     def parent_uri(self, parent_uri):
-        """Sets the parent_uri of this TestItemVo.
+        r"""Sets the parent_uri of this TestItemVo.
 
         父资源URI
 
@@ -590,7 +590,7 @@ class TestItemVo:
 
     @property
     def parent_path(self):
-        """Gets the parent_path of this TestItemVo.
+        r"""Gets the parent_path of this TestItemVo.
 
         父资源路径
 
@@ -601,7 +601,7 @@ class TestItemVo:
 
     @parent_path.setter
     def parent_path(self, parent_path):
-        """Sets the parent_path of this TestItemVo.
+        r"""Sets the parent_path of this TestItemVo.
 
         父资源路径
 
@@ -612,7 +612,7 @@ class TestItemVo:
 
     @property
     def creation_version_uri(self):
-        """Gets the creation_version_uri of this TestItemVo.
+        r"""Gets the creation_version_uri of this TestItemVo.
 
         创建版本URI
 
@@ -623,7 +623,7 @@ class TestItemVo:
 
     @creation_version_uri.setter
     def creation_version_uri(self, creation_version_uri):
-        """Sets the creation_version_uri of this TestItemVo.
+        r"""Sets the creation_version_uri of this TestItemVo.
 
         创建版本URI
 
@@ -634,7 +634,7 @@ class TestItemVo:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this TestItemVo.
+        r"""Gets the creation_date of this TestItemVo.
 
         创建时间
 
@@ -645,7 +645,7 @@ class TestItemVo:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this TestItemVo.
+        r"""Sets the creation_date of this TestItemVo.
 
         创建时间
 
@@ -656,7 +656,7 @@ class TestItemVo:
 
     @property
     def creation_date_timestamp(self):
-        """Gets the creation_date_timestamp of this TestItemVo.
+        r"""Gets the creation_date_timestamp of this TestItemVo.
 
         创建时间时间戳
 
@@ -667,7 +667,7 @@ class TestItemVo:
 
     @creation_date_timestamp.setter
     def creation_date_timestamp(self, creation_date_timestamp):
-        """Sets the creation_date_timestamp of this TestItemVo.
+        r"""Sets the creation_date_timestamp of this TestItemVo.
 
         创建时间时间戳
 
@@ -678,7 +678,7 @@ class TestItemVo:
 
     @property
     def author_name(self):
-        """Gets the author_name of this TestItemVo.
+        r"""Gets the author_name of this TestItemVo.
 
         创建人名称
 
@@ -689,7 +689,7 @@ class TestItemVo:
 
     @author_name.setter
     def author_name(self, author_name):
-        """Sets the author_name of this TestItemVo.
+        r"""Sets the author_name of this TestItemVo.
 
         创建人名称
 
@@ -700,7 +700,7 @@ class TestItemVo:
 
     @property
     def comment(self):
-        """Gets the comment of this TestItemVo.
+        r"""Gets the comment of this TestItemVo.
 
         备注
 
@@ -711,7 +711,7 @@ class TestItemVo:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this TestItemVo.
+        r"""Sets the comment of this TestItemVo.
 
         备注
 
@@ -722,7 +722,7 @@ class TestItemVo:
 
     @property
     def number(self):
-        """Gets the number of this TestItemVo.
+        r"""Gets the number of this TestItemVo.
 
         编号
 
@@ -733,7 +733,7 @@ class TestItemVo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this TestItemVo.
+        r"""Sets the number of this TestItemVo.
 
         编号
 
@@ -744,7 +744,7 @@ class TestItemVo:
 
     @property
     def is_feature(self):
-        """Gets the is_feature of this TestItemVo.
+        r"""Gets the is_feature of this TestItemVo.
 
         是否特性
 
@@ -755,7 +755,7 @@ class TestItemVo:
 
     @is_feature.setter
     def is_feature(self, is_feature):
-        """Sets the is_feature of this TestItemVo.
+        r"""Sets the is_feature of this TestItemVo.
 
         是否特性
 
@@ -766,7 +766,7 @@ class TestItemVo:
 
     @property
     def relate_htsm(self):
-        """Gets the relate_htsm of this TestItemVo.
+        r"""Gets the relate_htsm of this TestItemVo.
 
         是否关联特性
 
@@ -777,7 +777,7 @@ class TestItemVo:
 
     @relate_htsm.setter
     def relate_htsm(self, relate_htsm):
-        """Sets the relate_htsm of this TestItemVo.
+        r"""Sets the relate_htsm of this TestItemVo.
 
         是否关联特性
 
@@ -788,7 +788,7 @@ class TestItemVo:
 
     @property
     def aw_unique_id(self):
-        """Gets the aw_unique_id of this TestItemVo.
+        r"""Gets the aw_unique_id of this TestItemVo.
 
         aw id
 
@@ -799,7 +799,7 @@ class TestItemVo:
 
     @aw_unique_id.setter
     def aw_unique_id(self, aw_unique_id):
-        """Sets the aw_unique_id of this TestItemVo.
+        r"""Sets the aw_unique_id of this TestItemVo.
 
         aw id
 
@@ -810,7 +810,7 @@ class TestItemVo:
 
     @property
     def test_mind_id(self):
-        """Gets the test_mind_id of this TestItemVo.
+        r"""Gets the test_mind_id of this TestItemVo.
 
         脑图id
 
@@ -821,7 +821,7 @@ class TestItemVo:
 
     @test_mind_id.setter
     def test_mind_id(self, test_mind_id):
-        """Sets the test_mind_id of this TestItemVo.
+        r"""Sets the test_mind_id of this TestItemVo.
 
         脑图id
 
@@ -832,7 +832,7 @@ class TestItemVo:
 
     @property
     def test_mind_url(self):
-        """Gets the test_mind_url of this TestItemVo.
+        r"""Gets the test_mind_url of this TestItemVo.
 
         脑图url
 
@@ -843,7 +843,7 @@ class TestItemVo:
 
     @test_mind_url.setter
     def test_mind_url(self, test_mind_url):
-        """Sets the test_mind_url of this TestItemVo.
+        r"""Sets the test_mind_url of this TestItemVo.
 
         脑图url
 
@@ -854,7 +854,7 @@ class TestItemVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this TestItemVo.
+        r"""Gets the project_uuid of this TestItemVo.
 
         项目id
 
@@ -865,7 +865,7 @@ class TestItemVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this TestItemVo.
+        r"""Sets the project_uuid of this TestItemVo.
 
         项目id
 
@@ -876,7 +876,7 @@ class TestItemVo:
 
     @property
     def case_total(self):
-        """Gets the case_total of this TestItemVo.
+        r"""Gets the case_total of this TestItemVo.
 
         用例总数
 
@@ -887,7 +887,7 @@ class TestItemVo:
 
     @case_total.setter
     def case_total(self, case_total):
-        """Sets the case_total of this TestItemVo.
+        r"""Sets the case_total of this TestItemVo.
 
         用例总数
 
@@ -898,7 +898,7 @@ class TestItemVo:
 
     @property
     def execd_total(self):
-        """Gets the execd_total of this TestItemVo.
+        r"""Gets the execd_total of this TestItemVo.
 
         执行总数
 
@@ -909,7 +909,7 @@ class TestItemVo:
 
     @execd_total.setter
     def execd_total(self, execd_total):
-        """Sets the execd_total of this TestItemVo.
+        r"""Sets the execd_total of this TestItemVo.
 
         执行总数
 
@@ -920,7 +920,7 @@ class TestItemVo:
 
     @property
     def is_direct_relation(self):
-        """Gets the is_direct_relation of this TestItemVo.
+        r"""Gets the is_direct_relation of this TestItemVo.
 
         is_direct_relation
 
@@ -931,7 +931,7 @@ class TestItemVo:
 
     @is_direct_relation.setter
     def is_direct_relation(self, is_direct_relation):
-        """Sets the is_direct_relation of this TestItemVo.
+        r"""Sets the is_direct_relation of this TestItemVo.
 
         is_direct_relation
 
@@ -942,7 +942,7 @@ class TestItemVo:
 
     @property
     def has_child(self):
-        """Gets the has_child of this TestItemVo.
+        r"""Gets the has_child of this TestItemVo.
 
         是否有子特性
 
@@ -953,7 +953,7 @@ class TestItemVo:
 
     @has_child.setter
     def has_child(self, has_child):
-        """Sets the has_child of this TestItemVo.
+        r"""Sets the has_child of this TestItemVo.
 
         是否有子特性
 

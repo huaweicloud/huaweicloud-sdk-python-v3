@@ -47,7 +47,7 @@ class TrendView:
     }
 
     def __init__(self, view_type=None, collector_name=None, metric_set=None, title=None, table_direction=None, group_by=None, filter=None, field_item_list=None, span=None, span_field=None, order_by=None, latest=None):
-        """TrendView
+        r"""TrendView
 
         The model defined in huaweicloud sdk
 
@@ -117,7 +117,7 @@ class TrendView:
 
     @property
     def view_type(self):
-        """Gets the view_type of this TrendView.
+        r"""Gets the view_type of this TrendView.
 
         视图类型。
 
@@ -128,7 +128,7 @@ class TrendView:
 
     @view_type.setter
     def view_type(self, view_type):
-        """Sets the view_type of this TrendView.
+        r"""Sets the view_type of this TrendView.
 
         视图类型。
 
@@ -139,7 +139,7 @@ class TrendView:
 
     @property
     def collector_name(self):
-        """Gets the collector_name of this TrendView.
+        r"""Gets the collector_name of this TrendView.
 
         采集器名称。
 
@@ -150,7 +150,7 @@ class TrendView:
 
     @collector_name.setter
     def collector_name(self, collector_name):
-        """Sets the collector_name of this TrendView.
+        r"""Sets the collector_name of this TrendView.
 
         采集器名称。
 
@@ -161,7 +161,7 @@ class TrendView:
 
     @property
     def metric_set(self):
-        """Gets the metric_set of this TrendView.
+        r"""Gets the metric_set of this TrendView.
 
         视图对应的指标集名称。
 
@@ -172,7 +172,7 @@ class TrendView:
 
     @metric_set.setter
     def metric_set(self, metric_set):
-        """Sets the metric_set of this TrendView.
+        r"""Sets the metric_set of this TrendView.
 
         视图对应的指标集名称。
 
@@ -183,7 +183,7 @@ class TrendView:
 
     @property
     def title(self):
-        """Gets the title of this TrendView.
+        r"""Gets the title of this TrendView.
 
         图标所需展示的标题。
 
@@ -194,7 +194,7 @@ class TrendView:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this TrendView.
+        r"""Sets the title of this TrendView.
 
         图标所需展示的标题。
 
@@ -205,7 +205,7 @@ class TrendView:
 
     @property
     def table_direction(self):
-        """Gets the table_direction of this TrendView.
+        r"""Gets the table_direction of this TrendView.
 
         表格的方向，H：默认，表头横向，V：表头纵向。
 
@@ -216,7 +216,7 @@ class TrendView:
 
     @table_direction.setter
     def table_direction(self, table_direction):
-        """Sets the table_direction of this TrendView.
+        r"""Sets the table_direction of this TrendView.
 
         表格的方向，H：默认，表头横向，V：表头纵向。
 
@@ -227,7 +227,7 @@ class TrendView:
 
     @property
     def group_by(self):
-        """Gets the group_by of this TrendView.
+        r"""Gets the group_by of this TrendView.
 
         分组。
 
@@ -238,7 +238,7 @@ class TrendView:
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this TrendView.
+        r"""Sets the group_by of this TrendView.
 
         分组。
 
@@ -249,7 +249,7 @@ class TrendView:
 
     @property
     def filter(self):
-        """Gets the filter of this TrendView.
+        r"""Gets the filter of this TrendView.
 
         过滤列表模型。
 
@@ -260,7 +260,7 @@ class TrendView:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this TrendView.
+        r"""Sets the filter of this TrendView.
 
         过滤列表模型。
 
@@ -271,7 +271,7 @@ class TrendView:
 
     @property
     def field_item_list(self):
-        """Gets the field_item_list of this TrendView.
+        r"""Gets the field_item_list of this TrendView.
 
         所需展示的字段列表模型列表。
 
@@ -282,7 +282,7 @@ class TrendView:
 
     @field_item_list.setter
     def field_item_list(self, field_item_list):
-        """Sets the field_item_list of this TrendView.
+        r"""Sets the field_item_list of this TrendView.
 
         所需展示的字段列表模型列表。
 
@@ -293,7 +293,7 @@ class TrendView:
 
     @property
     def span(self):
-        """Gets the span of this TrendView.
+        r"""Gets the span of this TrendView.
 
         跨度。
 
@@ -304,7 +304,7 @@ class TrendView:
 
     @span.setter
     def span(self, span):
-        """Sets the span of this TrendView.
+        r"""Sets the span of this TrendView.
 
         跨度。
 
@@ -315,7 +315,7 @@ class TrendView:
 
     @property
     def span_field(self):
-        """Gets the span_field of this TrendView.
+        r"""Gets the span_field of this TrendView.
 
         span字段属性。
 
@@ -326,7 +326,7 @@ class TrendView:
 
     @span_field.setter
     def span_field(self, span_field):
-        """Sets the span_field of this TrendView.
+        r"""Sets the span_field of this TrendView.
 
         span字段属性。
 
@@ -337,7 +337,7 @@ class TrendView:
 
     @property
     def order_by(self):
-        """Gets the order_by of this TrendView.
+        r"""Gets the order_by of this TrendView.
 
         排序。
 
@@ -348,7 +348,7 @@ class TrendView:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this TrendView.
+        r"""Sets the order_by of this TrendView.
 
         排序。
 
@@ -359,7 +359,7 @@ class TrendView:
 
     @property
     def latest(self):
-        """Gets the latest of this TrendView.
+        r"""Gets the latest of this TrendView.
 
         是否只展示最近一笔数据。
 
@@ -370,7 +370,7 @@ class TrendView:
 
     @latest.setter
     def latest(self, latest):
-        """Sets the latest of this TrendView.
+        r"""Sets the latest of this TrendView.
 
         是否只展示最近一笔数据。
 

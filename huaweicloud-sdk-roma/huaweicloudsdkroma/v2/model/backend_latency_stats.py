@@ -27,7 +27,7 @@ class BackendLatencyStats:
     }
 
     def __init__(self, max_backend_latency=None, avg_backend_latency=None):
-        """BackendLatencyStats
+        r"""BackendLatencyStats
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BackendLatencyStats:
 
     @property
     def max_backend_latency(self):
-        """Gets the max_backend_latency of this BackendLatencyStats.
+        r"""Gets the max_backend_latency of this BackendLatencyStats.
 
         最大后端延时
 
@@ -61,7 +61,7 @@ class BackendLatencyStats:
 
     @max_backend_latency.setter
     def max_backend_latency(self, max_backend_latency):
-        """Sets the max_backend_latency of this BackendLatencyStats.
+        r"""Sets the max_backend_latency of this BackendLatencyStats.
 
         最大后端延时
 
@@ -72,7 +72,7 @@ class BackendLatencyStats:
 
     @property
     def avg_backend_latency(self):
-        """Gets the avg_backend_latency of this BackendLatencyStats.
+        r"""Gets the avg_backend_latency of this BackendLatencyStats.
 
         平均后端延时
 
@@ -83,7 +83,7 @@ class BackendLatencyStats:
 
     @avg_backend_latency.setter
     def avg_backend_latency(self, avg_backend_latency):
-        """Sets the avg_backend_latency of this BackendLatencyStats.
+        r"""Sets the avg_backend_latency of this BackendLatencyStats.
 
         平均后端延时
 

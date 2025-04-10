@@ -59,7 +59,7 @@ class UpdateAlarmRuleParam:
     }
 
     def __init__(self, action_enabled=None, alarm_actions=None, alarm_advice=None, alarm_description=None, alarm_level=None, alarm_rule_name=None, comparison_operator=None, dimensions=None, evaluation_periods=None, is_turn_on=None, insufficient_data_actions=None, metric_name=None, namespace=None, ok_actions=None, period=None, statistic=None, threshold=None, unit=None):
-        """UpdateAlarmRuleParam
+        r"""UpdateAlarmRuleParam
 
         The model defined in huaweicloud sdk
 
@@ -151,7 +151,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def action_enabled(self):
-        """Gets the action_enabled of this UpdateAlarmRuleParam.
+        r"""Gets the action_enabled of this UpdateAlarmRuleParam.
 
         是否启用通知。
 
@@ -162,7 +162,7 @@ class UpdateAlarmRuleParam:
 
     @action_enabled.setter
     def action_enabled(self, action_enabled):
-        """Sets the action_enabled of this UpdateAlarmRuleParam.
+        r"""Sets the action_enabled of this UpdateAlarmRuleParam.
 
         是否启用通知。
 
@@ -173,7 +173,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def alarm_actions(self):
-        """Gets the alarm_actions of this UpdateAlarmRuleParam.
+        r"""Gets the alarm_actions of this UpdateAlarmRuleParam.
 
         告警状态通知列表。
 
@@ -184,7 +184,7 @@ class UpdateAlarmRuleParam:
 
     @alarm_actions.setter
     def alarm_actions(self, alarm_actions):
-        """Sets the alarm_actions of this UpdateAlarmRuleParam.
+        r"""Sets the alarm_actions of this UpdateAlarmRuleParam.
 
         告警状态通知列表。
 
@@ -195,7 +195,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def alarm_advice(self):
-        """Gets the alarm_advice of this UpdateAlarmRuleParam.
+        r"""Gets the alarm_advice of this UpdateAlarmRuleParam.
 
         告警清除建议。字符长度为0-255。
 
@@ -206,7 +206,7 @@ class UpdateAlarmRuleParam:
 
     @alarm_advice.setter
     def alarm_advice(self, alarm_advice):
-        """Sets the alarm_advice of this UpdateAlarmRuleParam.
+        r"""Sets the alarm_advice of this UpdateAlarmRuleParam.
 
         告警清除建议。字符长度为0-255。
 
@@ -217,7 +217,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def alarm_description(self):
-        """Gets the alarm_description of this UpdateAlarmRuleParam.
+        r"""Gets the alarm_description of this UpdateAlarmRuleParam.
 
         阈值规则描述。字符长度为0-1024。
 
@@ -228,7 +228,7 @@ class UpdateAlarmRuleParam:
 
     @alarm_description.setter
     def alarm_description(self, alarm_description):
-        """Sets the alarm_description of this UpdateAlarmRuleParam.
+        r"""Sets the alarm_description of this UpdateAlarmRuleParam.
 
         阈值规则描述。字符长度为0-1024。
 
@@ -239,7 +239,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this UpdateAlarmRuleParam.
+        r"""Gets the alarm_level of this UpdateAlarmRuleParam.
 
         告警级别。1：紧急，2：重要，3：一般，4：提示。
 
@@ -250,7 +250,7 @@ class UpdateAlarmRuleParam:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this UpdateAlarmRuleParam.
+        r"""Sets the alarm_level of this UpdateAlarmRuleParam.
 
         告警级别。1：紧急，2：重要，3：一般，4：提示。
 
@@ -261,7 +261,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def alarm_rule_name(self):
-        """Gets the alarm_rule_name of this UpdateAlarmRuleParam.
+        r"""Gets the alarm_rule_name of this UpdateAlarmRuleParam.
 
         阈值规则名称。规则名称包含大小写字母、数字、特殊字符（-_）和汉字组成，不能以特殊字符开头或结尾，最大长度为100。
 
@@ -272,7 +272,7 @@ class UpdateAlarmRuleParam:
 
     @alarm_rule_name.setter
     def alarm_rule_name(self, alarm_rule_name):
-        """Sets the alarm_rule_name of this UpdateAlarmRuleParam.
+        r"""Sets the alarm_rule_name of this UpdateAlarmRuleParam.
 
         阈值规则名称。规则名称包含大小写字母、数字、特殊字符（-_）和汉字组成，不能以特殊字符开头或结尾，最大长度为100。
 
@@ -283,7 +283,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def comparison_operator(self):
-        """Gets the comparison_operator of this UpdateAlarmRuleParam.
+        r"""Gets the comparison_operator of this UpdateAlarmRuleParam.
 
         超限条件。<：小于阈值。>：大于阈值。<=：小于等于阈值。>=：大于等于阈值。
 
@@ -294,7 +294,7 @@ class UpdateAlarmRuleParam:
 
     @comparison_operator.setter
     def comparison_operator(self, comparison_operator):
-        """Sets the comparison_operator of this UpdateAlarmRuleParam.
+        r"""Sets the comparison_operator of this UpdateAlarmRuleParam.
 
         超限条件。<：小于阈值。>：大于阈值。<=：小于等于阈值。>=：大于等于阈值。
 
@@ -305,7 +305,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this UpdateAlarmRuleParam.
+        r"""Gets the dimensions of this UpdateAlarmRuleParam.
 
         时间序列维度。
 
@@ -316,7 +316,7 @@ class UpdateAlarmRuleParam:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this UpdateAlarmRuleParam.
+        r"""Sets the dimensions of this UpdateAlarmRuleParam.
 
         时间序列维度。
 
@@ -327,7 +327,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def evaluation_periods(self):
-        """Gets the evaluation_periods of this UpdateAlarmRuleParam.
+        r"""Gets the evaluation_periods of this UpdateAlarmRuleParam.
 
         间隔周期。
 
@@ -338,7 +338,7 @@ class UpdateAlarmRuleParam:
 
     @evaluation_periods.setter
     def evaluation_periods(self, evaluation_periods):
-        """Sets the evaluation_periods of this UpdateAlarmRuleParam.
+        r"""Sets the evaluation_periods of this UpdateAlarmRuleParam.
 
         间隔周期。
 
@@ -349,7 +349,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def is_turn_on(self):
-        """Gets the is_turn_on of this UpdateAlarmRuleParam.
+        r"""Gets the is_turn_on of this UpdateAlarmRuleParam.
 
         阈值规则是否启用。
 
@@ -360,7 +360,7 @@ class UpdateAlarmRuleParam:
 
     @is_turn_on.setter
     def is_turn_on(self, is_turn_on):
-        """Sets the is_turn_on of this UpdateAlarmRuleParam.
+        r"""Sets the is_turn_on of this UpdateAlarmRuleParam.
 
         阈值规则是否启用。
 
@@ -371,7 +371,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def insufficient_data_actions(self):
-        """Gets the insufficient_data_actions of this UpdateAlarmRuleParam.
+        r"""Gets the insufficient_data_actions of this UpdateAlarmRuleParam.
 
         数据不足通知列表。
 
@@ -382,7 +382,7 @@ class UpdateAlarmRuleParam:
 
     @insufficient_data_actions.setter
     def insufficient_data_actions(self, insufficient_data_actions):
-        """Sets the insufficient_data_actions of this UpdateAlarmRuleParam.
+        r"""Sets the insufficient_data_actions of this UpdateAlarmRuleParam.
 
         数据不足通知列表。
 
@@ -393,7 +393,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this UpdateAlarmRuleParam.
+        r"""Gets the metric_name of this UpdateAlarmRuleParam.
 
         时间序列名称。名称长度取值范围为1~255个字符。
 
@@ -404,7 +404,7 @@ class UpdateAlarmRuleParam:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this UpdateAlarmRuleParam.
+        r"""Sets the metric_name of this UpdateAlarmRuleParam.
 
         时间序列名称。名称长度取值范围为1~255个字符。
 
@@ -415,7 +415,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def namespace(self):
-        """Gets the namespace of this UpdateAlarmRuleParam.
+        r"""Gets the namespace of this UpdateAlarmRuleParam.
 
         时间序列命名空间。
 
@@ -426,7 +426,7 @@ class UpdateAlarmRuleParam:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this UpdateAlarmRuleParam.
+        r"""Sets the namespace of this UpdateAlarmRuleParam.
 
         时间序列命名空间。
 
@@ -437,7 +437,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def ok_actions(self):
-        """Gets the ok_actions of this UpdateAlarmRuleParam.
+        r"""Gets the ok_actions of this UpdateAlarmRuleParam.
 
         正常状态通知列表。
 
@@ -448,7 +448,7 @@ class UpdateAlarmRuleParam:
 
     @ok_actions.setter
     def ok_actions(self, ok_actions):
-        """Sets the ok_actions of this UpdateAlarmRuleParam.
+        r"""Sets the ok_actions of this UpdateAlarmRuleParam.
 
         正常状态通知列表。
 
@@ -459,7 +459,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def period(self):
-        """Gets the period of this UpdateAlarmRuleParam.
+        r"""Gets the period of this UpdateAlarmRuleParam.
 
         统计周期。60000：一分钟。300000：五分钟。900000：十五分钟。3600000：一小时。
 
@@ -470,7 +470,7 @@ class UpdateAlarmRuleParam:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this UpdateAlarmRuleParam.
+        r"""Sets the period of this UpdateAlarmRuleParam.
 
         统计周期。60000：一分钟。300000：五分钟。900000：十五分钟。3600000：一小时。
 
@@ -481,7 +481,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def statistic(self):
-        """Gets the statistic of this UpdateAlarmRuleParam.
+        r"""Gets the statistic of this UpdateAlarmRuleParam.
 
         统计方式。
 
@@ -492,7 +492,7 @@ class UpdateAlarmRuleParam:
 
     @statistic.setter
     def statistic(self, statistic):
-        """Sets the statistic of this UpdateAlarmRuleParam.
+        r"""Sets the statistic of this UpdateAlarmRuleParam.
 
         统计方式。
 
@@ -503,7 +503,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def threshold(self):
-        """Gets the threshold of this UpdateAlarmRuleParam.
+        r"""Gets the threshold of this UpdateAlarmRuleParam.
 
         超限值。
 
@@ -514,7 +514,7 @@ class UpdateAlarmRuleParam:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this UpdateAlarmRuleParam.
+        r"""Sets the threshold of this UpdateAlarmRuleParam.
 
         超限值。
 
@@ -525,7 +525,7 @@ class UpdateAlarmRuleParam:
 
     @property
     def unit(self):
-        """Gets the unit of this UpdateAlarmRuleParam.
+        r"""Gets the unit of this UpdateAlarmRuleParam.
 
         时间序列单位
 
@@ -536,7 +536,7 @@ class UpdateAlarmRuleParam:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this UpdateAlarmRuleParam.
+        r"""Sets the unit of this UpdateAlarmRuleParam.
 
         时间序列单位
 

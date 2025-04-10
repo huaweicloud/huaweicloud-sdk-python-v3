@@ -23,7 +23,7 @@ class ListRegionsRequest:
     }
 
     def __init__(self):
-        """ListRegionsRequest
+        r"""ListRegionsRequest
 
         The model defined in huaweicloud sdk
 

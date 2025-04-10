@@ -24,7 +24,7 @@ class SwitchHostsProtectStatusResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SwitchHostsProtectStatusResponse
+        r"""SwitchHostsProtectStatusResponse
 
         The model defined in huaweicloud sdk
 

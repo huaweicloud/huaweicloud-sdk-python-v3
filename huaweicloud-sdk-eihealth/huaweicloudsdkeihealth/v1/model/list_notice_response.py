@@ -30,7 +30,7 @@ class ListNoticeResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, unread_count=None, notices=None):
-        """ListNoticeResponse
+        r"""ListNoticeResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListNoticeResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListNoticeResponse.
+        r"""Gets the total_count of this ListNoticeResponse.
 
         通知消息总数
 
@@ -69,7 +69,7 @@ class ListNoticeResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListNoticeResponse.
+        r"""Sets the total_count of this ListNoticeResponse.
 
         通知消息总数
 
@@ -80,7 +80,7 @@ class ListNoticeResponse(SdkResponse):
 
     @property
     def unread_count(self):
-        """Gets the unread_count of this ListNoticeResponse.
+        r"""Gets the unread_count of this ListNoticeResponse.
 
         通知消息未读总数
 
@@ -91,7 +91,7 @@ class ListNoticeResponse(SdkResponse):
 
     @unread_count.setter
     def unread_count(self, unread_count):
-        """Sets the unread_count of this ListNoticeResponse.
+        r"""Sets the unread_count of this ListNoticeResponse.
 
         通知消息未读总数
 
@@ -102,7 +102,7 @@ class ListNoticeResponse(SdkResponse):
 
     @property
     def notices(self):
-        """Gets the notices of this ListNoticeResponse.
+        r"""Gets the notices of this ListNoticeResponse.
 
         通知消息列表
 
@@ -113,7 +113,7 @@ class ListNoticeResponse(SdkResponse):
 
     @notices.setter
     def notices(self, notices):
-        """Sets the notices of this ListNoticeResponse.
+        r"""Sets the notices of this ListNoticeResponse.
 
         通知消息列表
 

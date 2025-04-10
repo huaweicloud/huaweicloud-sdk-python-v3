@@ -35,7 +35,7 @@ class ConnectionCreateReq:
     }
 
     def __init__(self, name=None, description=None, vpc_id=None, subnet_id=None, type=None, kafka_detail=None):
-        """ConnectionCreateReq
+        r"""ConnectionCreateReq
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ConnectionCreateReq:
 
     @property
     def name(self):
-        """Gets the name of this ConnectionCreateReq.
+        r"""Gets the name of this ConnectionCreateReq.
 
         目标连接名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须以字母或数字开头，不能为default
 
@@ -86,7 +86,7 @@ class ConnectionCreateReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConnectionCreateReq.
+        r"""Sets the name of this ConnectionCreateReq.
 
         目标连接名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须以字母或数字开头，不能为default
 
@@ -97,7 +97,7 @@ class ConnectionCreateReq:
 
     @property
     def description(self):
-        """Gets the description of this ConnectionCreateReq.
+        r"""Gets the description of this ConnectionCreateReq.
 
         目标连接描述
 
@@ -108,7 +108,7 @@ class ConnectionCreateReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConnectionCreateReq.
+        r"""Sets the description of this ConnectionCreateReq.
 
         目标连接描述
 
@@ -119,7 +119,7 @@ class ConnectionCreateReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ConnectionCreateReq.
+        r"""Gets the vpc_id of this ConnectionCreateReq.
 
         待连接的VPC ID
 
@@ -130,7 +130,7 @@ class ConnectionCreateReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ConnectionCreateReq.
+        r"""Sets the vpc_id of this ConnectionCreateReq.
 
         待连接的VPC ID
 
@@ -141,7 +141,7 @@ class ConnectionCreateReq:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ConnectionCreateReq.
+        r"""Gets the subnet_id of this ConnectionCreateReq.
 
         待连接的子网ID
 
@@ -152,7 +152,7 @@ class ConnectionCreateReq:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ConnectionCreateReq.
+        r"""Sets the subnet_id of this ConnectionCreateReq.
 
         待连接的子网ID
 
@@ -163,7 +163,7 @@ class ConnectionCreateReq:
 
     @property
     def type(self):
-        """Gets the type of this ConnectionCreateReq.
+        r"""Gets the type of this ConnectionCreateReq.
 
         :return: The type of this ConnectionCreateReq.
         :rtype: :class:`huaweicloudsdkeg.v1.ConnectionType`
@@ -172,7 +172,7 @@ class ConnectionCreateReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConnectionCreateReq.
+        r"""Sets the type of this ConnectionCreateReq.
 
         :param type: The type of this ConnectionCreateReq.
         :type type: :class:`huaweicloudsdkeg.v1.ConnectionType`
@@ -181,7 +181,7 @@ class ConnectionCreateReq:
 
     @property
     def kafka_detail(self):
-        """Gets the kafka_detail of this ConnectionCreateReq.
+        r"""Gets the kafka_detail of this ConnectionCreateReq.
 
         :return: The kafka_detail of this ConnectionCreateReq.
         :rtype: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`
@@ -190,7 +190,7 @@ class ConnectionCreateReq:
 
     @kafka_detail.setter
     def kafka_detail(self, kafka_detail):
-        """Sets the kafka_detail of this ConnectionCreateReq.
+        r"""Sets the kafka_detail of this ConnectionCreateReq.
 
         :param kafka_detail: The kafka_detail of this ConnectionCreateReq.
         :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`

@@ -27,7 +27,7 @@ class BindGlobalEipsRequest:
     }
 
     def __init__(self, connect_gateway_id=None, body=None):
-        """BindGlobalEipsRequest
+        r"""BindGlobalEipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BindGlobalEipsRequest:
 
     @property
     def connect_gateway_id(self):
-        """Gets the connect_gateway_id of this BindGlobalEipsRequest.
+        r"""Gets the connect_gateway_id of this BindGlobalEipsRequest.
 
         互联网关ID
 
@@ -60,7 +60,7 @@ class BindGlobalEipsRequest:
 
     @connect_gateway_id.setter
     def connect_gateway_id(self, connect_gateway_id):
-        """Sets the connect_gateway_id of this BindGlobalEipsRequest.
+        r"""Sets the connect_gateway_id of this BindGlobalEipsRequest.
 
         互联网关ID
 
@@ -71,7 +71,7 @@ class BindGlobalEipsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BindGlobalEipsRequest.
+        r"""Gets the body of this BindGlobalEipsRequest.
 
         :return: The body of this BindGlobalEipsRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.CreateBindingGeipRequestBody`
@@ -80,7 +80,7 @@ class BindGlobalEipsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BindGlobalEipsRequest.
+        r"""Sets the body of this BindGlobalEipsRequest.
 
         :param body: The body of this BindGlobalEipsRequest.
         :type body: :class:`huaweicloudsdkdc.v3.CreateBindingGeipRequestBody`

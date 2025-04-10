@@ -25,7 +25,7 @@ class KeystoneUpdateIdentityProviderRequestBody:
     }
 
     def __init__(self, identity_provider=None):
-        """KeystoneUpdateIdentityProviderRequestBody
+        r"""KeystoneUpdateIdentityProviderRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneUpdateIdentityProviderRequestBody:
 
     @property
     def identity_provider(self):
-        """Gets the identity_provider of this KeystoneUpdateIdentityProviderRequestBody.
+        r"""Gets the identity_provider of this KeystoneUpdateIdentityProviderRequestBody.
 
         :return: The identity_provider of this KeystoneUpdateIdentityProviderRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateIdentityproviderOption`
@@ -51,7 +51,7 @@ class KeystoneUpdateIdentityProviderRequestBody:
 
     @identity_provider.setter
     def identity_provider(self, identity_provider):
-        """Sets the identity_provider of this KeystoneUpdateIdentityProviderRequestBody.
+        r"""Sets the identity_provider of this KeystoneUpdateIdentityProviderRequestBody.
 
         :param identity_provider: The identity_provider of this KeystoneUpdateIdentityProviderRequestBody.
         :type identity_provider: :class:`huaweicloudsdkiam.v3.UpdateIdentityproviderOption`

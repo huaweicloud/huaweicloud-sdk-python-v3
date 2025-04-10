@@ -29,7 +29,7 @@ class ConditionGroup:
     }
 
     def __init__(self, conditions=None, logic=None, time_range=None):
-        """ConditionGroup
+        r"""ConditionGroup
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ConditionGroup:
 
     @property
     def conditions(self):
-        """Gets the conditions of this ConditionGroup.
+        r"""Gets the conditions of this ConditionGroup.
 
         **参数说明**：规则的条件列表，单个规则最多支持设置10个条件。
 
@@ -68,7 +68,7 @@ class ConditionGroup:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ConditionGroup.
+        r"""Sets the conditions of this ConditionGroup.
 
         **参数说明**：规则的条件列表，单个规则最多支持设置10个条件。
 
@@ -79,7 +79,7 @@ class ConditionGroup:
 
     @property
     def logic(self):
-        """Gets the logic of this ConditionGroup.
+        r"""Gets the logic of this ConditionGroup.
 
         **参数说明**：规则条件列表中多个条件之间的逻辑关系，默认值：and。 **取值范围**： - and：逻辑且。 - or：逻辑或。
 
@@ -90,7 +90,7 @@ class ConditionGroup:
 
     @logic.setter
     def logic(self, logic):
-        """Sets the logic of this ConditionGroup.
+        r"""Sets the logic of this ConditionGroup.
 
         **参数说明**：规则条件列表中多个条件之间的逻辑关系，默认值：and。 **取值范围**： - and：逻辑且。 - or：逻辑或。
 
@@ -101,7 +101,7 @@ class ConditionGroup:
 
     @property
     def time_range(self):
-        """Gets the time_range of this ConditionGroup.
+        r"""Gets the time_range of this ConditionGroup.
 
         :return: The time_range of this ConditionGroup.
         :rtype: :class:`huaweicloudsdkiotda.v5.TimeRange`
@@ -110,7 +110,7 @@ class ConditionGroup:
 
     @time_range.setter
     def time_range(self, time_range):
-        """Sets the time_range of this ConditionGroup.
+        r"""Sets the time_range of this ConditionGroup.
 
         :param time_range: The time_range of this ConditionGroup.
         :type time_range: :class:`huaweicloudsdkiotda.v5.TimeRange`

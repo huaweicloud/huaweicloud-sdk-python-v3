@@ -25,7 +25,7 @@ class CreateCustomPropsTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCustomPropsTaskRequest
+        r"""CreateCustomPropsTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCustomPropsTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCustomPropsTaskRequest.
+        r"""Gets the body of this CreateCustomPropsTaskRequest.
 
         :return: The body of this CreateCustomPropsTaskRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CustomPropsTaskData`
@@ -52,7 +52,7 @@ class CreateCustomPropsTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCustomPropsTaskRequest.
+        r"""Sets the body of this CreateCustomPropsTaskRequest.
 
         :param body: The body of this CreateCustomPropsTaskRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CustomPropsTaskData`

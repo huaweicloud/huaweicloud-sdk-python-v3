@@ -28,7 +28,7 @@ class ListResourcesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, resources=None):
-        """ListResourcesResponse
+        r"""ListResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListResourcesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListResourcesResponse.
+        r"""Gets the total of this ListResourcesResponse.
 
         :return: The total of this ListResourcesResponse.
         :rtype: int
@@ -60,7 +60,7 @@ class ListResourcesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListResourcesResponse.
+        r"""Sets the total of this ListResourcesResponse.
 
         :param total: The total of this ListResourcesResponse.
         :type total: int
@@ -69,7 +69,7 @@ class ListResourcesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListResourcesResponse.
+        r"""Gets the resources of this ListResourcesResponse.
 
         :return: The resources of this ListResourcesResponse.
         :rtype: list[:class:`huaweicloudsdkdlf.v1.ResourceInfo`]
@@ -78,7 +78,7 @@ class ListResourcesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListResourcesResponse.
+        r"""Sets the resources of this ListResourcesResponse.
 
         :param resources: The resources of this ListResourcesResponse.
         :type resources: list[:class:`huaweicloudsdkdlf.v1.ResourceInfo`]

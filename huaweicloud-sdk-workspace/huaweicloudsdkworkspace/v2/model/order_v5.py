@@ -33,7 +33,7 @@ class OrderV5:
     }
 
     def __init__(self, order_id=None, order_status=None, result=None, result_code=None, result_msg=None):
-        """OrderV5
+        r"""OrderV5
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class OrderV5:
 
     @property
     def order_id(self):
-        """Gets the order_id of this OrderV5.
+        r"""Gets the order_id of this OrderV5.
 
         订单id
 
@@ -82,7 +82,7 @@ class OrderV5:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this OrderV5.
+        r"""Sets the order_id of this OrderV5.
 
         订单id
 
@@ -93,7 +93,7 @@ class OrderV5:
 
     @property
     def order_status(self):
-        """Gets the order_status of this OrderV5.
+        r"""Gets the order_status of this OrderV5.
 
         订单状态:0:初始化; 1:待审核; 2:待退款; 3:处理中; 4:已取消; 5:已完成; 6:待支付; 7:补偿中; 8:待审批; 9:待确认; 10:待发货; 11:待收货; 12:待上门取货; 13:换新中; 14:待商家收货
 
@@ -104,7 +104,7 @@ class OrderV5:
 
     @order_status.setter
     def order_status(self, order_status):
-        """Sets the order_status of this OrderV5.
+        r"""Sets the order_status of this OrderV5.
 
         订单状态:0:初始化; 1:待审核; 2:待退款; 3:处理中; 4:已取消; 5:已完成; 6:待支付; 7:补偿中; 8:待审批; 9:待确认; 10:待发货; 11:待收货; 12:待上门取货; 13:换新中; 14:待商家收货
 
@@ -115,7 +115,7 @@ class OrderV5:
 
     @property
     def result(self):
-        """Gets the result of this OrderV5.
+        r"""Gets the result of this OrderV5.
 
         结果，SUCCESS:成功； FAIL：失败
 
@@ -126,7 +126,7 @@ class OrderV5:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this OrderV5.
+        r"""Sets the result of this OrderV5.
 
         结果，SUCCESS:成功； FAIL：失败
 
@@ -137,7 +137,7 @@ class OrderV5:
 
     @property
     def result_code(self):
-        """Gets the result_code of this OrderV5.
+        r"""Gets the result_code of this OrderV5.
 
         result=FAIL时，必填，标识该订单失败原因
 
@@ -148,7 +148,7 @@ class OrderV5:
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this OrderV5.
+        r"""Sets the result_code of this OrderV5.
 
         result=FAIL时，必填，标识该订单失败原因
 
@@ -159,7 +159,7 @@ class OrderV5:
 
     @property
     def result_msg(self):
-        """Gets the result_msg of this OrderV5.
+        r"""Gets the result_msg of this OrderV5.
 
         失败信息，和result_code结对出现
 
@@ -170,7 +170,7 @@ class OrderV5:
 
     @result_msg.setter
     def result_msg(self, result_msg):
-        """Sets the result_msg of this OrderV5.
+        r"""Sets the result_msg of this OrderV5.
 
         失败信息，和result_code结对出现
 

@@ -27,7 +27,7 @@ class RequestRuleInstance:
     }
 
     def __init__(self, id=None, is_valid=None):
-        """RequestRuleInstance
+        r"""RequestRuleInstance
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RequestRuleInstance:
 
     @property
     def id(self):
-        """Gets the id of this RequestRuleInstance.
+        r"""Gets the id of this RequestRuleInstance.
 
         规则实例ID
 
@@ -61,7 +61,7 @@ class RequestRuleInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RequestRuleInstance.
+        r"""Sets the id of this RequestRuleInstance.
 
         规则实例ID
 
@@ -72,7 +72,7 @@ class RequestRuleInstance:
 
     @property
     def is_valid(self):
-        """Gets the is_valid of this RequestRuleInstance.
+        r"""Gets the is_valid of this RequestRuleInstance.
 
         规则实例状态
 
@@ -83,7 +83,7 @@ class RequestRuleInstance:
 
     @is_valid.setter
     def is_valid(self, is_valid):
-        """Sets the is_valid of this RequestRuleInstance.
+        r"""Sets the is_valid of this RequestRuleInstance.
 
         规则实例状态
 

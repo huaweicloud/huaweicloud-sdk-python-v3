@@ -33,7 +33,7 @@ class ListApproversRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, approver_name=None, limit=None, offset=None):
-        """ListApproversRequest
+        r"""ListApproversRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListApproversRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListApproversRequest.
+        r"""Gets the workspace of this ListApproversRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -81,7 +81,7 @@ class ListApproversRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListApproversRequest.
+        r"""Sets the workspace of this ListApproversRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -92,7 +92,7 @@ class ListApproversRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListApproversRequest.
+        r"""Gets the x_project_id of this ListApproversRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -103,7 +103,7 @@ class ListApproversRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListApproversRequest.
+        r"""Sets the x_project_id of this ListApproversRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -114,7 +114,7 @@ class ListApproversRequest:
 
     @property
     def approver_name(self):
-        """Gets the approver_name of this ListApproversRequest.
+        r"""Gets the approver_name of this ListApproversRequest.
 
         审核人姓名。
 
@@ -125,7 +125,7 @@ class ListApproversRequest:
 
     @approver_name.setter
     def approver_name(self, approver_name):
-        """Sets the approver_name of this ListApproversRequest.
+        r"""Sets the approver_name of this ListApproversRequest.
 
         审核人姓名。
 
@@ -136,7 +136,7 @@ class ListApproversRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApproversRequest.
+        r"""Gets the limit of this ListApproversRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -147,7 +147,7 @@ class ListApproversRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApproversRequest.
+        r"""Sets the limit of this ListApproversRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -158,7 +158,7 @@ class ListApproversRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListApproversRequest.
+        r"""Gets the offset of this ListApproversRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -169,7 +169,7 @@ class ListApproversRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListApproversRequest.
+        r"""Sets the offset of this ListApproversRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 

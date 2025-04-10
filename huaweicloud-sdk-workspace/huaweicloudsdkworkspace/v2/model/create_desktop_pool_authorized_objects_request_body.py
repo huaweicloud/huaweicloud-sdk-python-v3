@@ -27,7 +27,7 @@ class CreateDesktopPoolAuthorizedObjectsRequestBody:
     }
 
     def __init__(self, objects=None, action=None):
-        """CreateDesktopPoolAuthorizedObjectsRequestBody
+        r"""CreateDesktopPoolAuthorizedObjectsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDesktopPoolAuthorizedObjectsRequestBody:
 
     @property
     def objects(self):
-        """Gets the objects of this CreateDesktopPoolAuthorizedObjectsRequestBody.
+        r"""Gets the objects of this CreateDesktopPoolAuthorizedObjectsRequestBody.
 
         要授权的用户/用户组。
 
@@ -60,7 +60,7 @@ class CreateDesktopPoolAuthorizedObjectsRequestBody:
 
     @objects.setter
     def objects(self, objects):
-        """Sets the objects of this CreateDesktopPoolAuthorizedObjectsRequestBody.
+        r"""Sets the objects of this CreateDesktopPoolAuthorizedObjectsRequestBody.
 
         要授权的用户/用户组。
 
@@ -71,7 +71,7 @@ class CreateDesktopPoolAuthorizedObjectsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this CreateDesktopPoolAuthorizedObjectsRequestBody.
+        r"""Gets the action of this CreateDesktopPoolAuthorizedObjectsRequestBody.
 
         执行动作，ADD：增加授权用户/用户组，REMOVE：移除已授权用户/用户组
 
@@ -82,7 +82,7 @@ class CreateDesktopPoolAuthorizedObjectsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CreateDesktopPoolAuthorizedObjectsRequestBody.
+        r"""Sets the action of this CreateDesktopPoolAuthorizedObjectsRequestBody.
 
         执行动作，ADD：增加授权用户/用户组，REMOVE：移除已授权用户/用户组
 

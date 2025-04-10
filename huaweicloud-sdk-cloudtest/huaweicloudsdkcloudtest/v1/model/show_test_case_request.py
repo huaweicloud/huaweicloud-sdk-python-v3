@@ -35,7 +35,7 @@ class ShowTestCaseRequest:
     }
 
     def __init__(self, testcase_id=None, version_uri=None, project_uuid=None, task_uri=None, refresh=None, is_recycle=None):
-        """ShowTestCaseRequest
+        r"""ShowTestCaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ShowTestCaseRequest:
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this ShowTestCaseRequest.
+        r"""Gets the testcase_id of this ShowTestCaseRequest.
 
         用例id
 
@@ -88,7 +88,7 @@ class ShowTestCaseRequest:
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this ShowTestCaseRequest.
+        r"""Sets the testcase_id of this ShowTestCaseRequest.
 
         用例id
 
@@ -99,7 +99,7 @@ class ShowTestCaseRequest:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this ShowTestCaseRequest.
+        r"""Gets the version_uri of this ShowTestCaseRequest.
 
         分支uri
 
@@ -110,7 +110,7 @@ class ShowTestCaseRequest:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this ShowTestCaseRequest.
+        r"""Sets the version_uri of this ShowTestCaseRequest.
 
         分支uri
 
@@ -121,7 +121,7 @@ class ShowTestCaseRequest:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this ShowTestCaseRequest.
+        r"""Gets the project_uuid of this ShowTestCaseRequest.
 
         项目id
 
@@ -132,7 +132,7 @@ class ShowTestCaseRequest:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ShowTestCaseRequest.
+        r"""Sets the project_uuid of this ShowTestCaseRequest.
 
         项目id
 
@@ -143,7 +143,7 @@ class ShowTestCaseRequest:
 
     @property
     def task_uri(self):
-        """Gets the task_uri of this ShowTestCaseRequest.
+        r"""Gets the task_uri of this ShowTestCaseRequest.
 
         任务
 
@@ -154,7 +154,7 @@ class ShowTestCaseRequest:
 
     @task_uri.setter
     def task_uri(self, task_uri):
-        """Sets the task_uri of this ShowTestCaseRequest.
+        r"""Sets the task_uri of this ShowTestCaseRequest.
 
         任务
 
@@ -165,7 +165,7 @@ class ShowTestCaseRequest:
 
     @property
     def refresh(self):
-        """Gets the refresh of this ShowTestCaseRequest.
+        r"""Gets the refresh of this ShowTestCaseRequest.
 
         是否刷新缓存
 
@@ -176,7 +176,7 @@ class ShowTestCaseRequest:
 
     @refresh.setter
     def refresh(self, refresh):
-        """Sets the refresh of this ShowTestCaseRequest.
+        r"""Sets the refresh of this ShowTestCaseRequest.
 
         是否刷新缓存
 
@@ -187,7 +187,7 @@ class ShowTestCaseRequest:
 
     @property
     def is_recycle(self):
-        """Gets the is_recycle of this ShowTestCaseRequest.
+        r"""Gets the is_recycle of this ShowTestCaseRequest.
 
         是否回收站资源
 
@@ -198,7 +198,7 @@ class ShowTestCaseRequest:
 
     @is_recycle.setter
     def is_recycle(self, is_recycle):
-        """Sets the is_recycle of this ShowTestCaseRequest.
+        r"""Sets the is_recycle of this ShowTestCaseRequest.
 
         是否回收站资源
 

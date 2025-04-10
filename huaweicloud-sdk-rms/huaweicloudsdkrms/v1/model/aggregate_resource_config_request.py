@@ -27,7 +27,7 @@ class AggregateResourceConfigRequest:
     }
 
     def __init__(self, aggregator_id=None, resource_identifier=None):
-        """AggregateResourceConfigRequest
+        r"""AggregateResourceConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AggregateResourceConfigRequest:
 
     @property
     def aggregator_id(self):
-        """Gets the aggregator_id of this AggregateResourceConfigRequest.
+        r"""Gets the aggregator_id of this AggregateResourceConfigRequest.
 
         资源聚合器ID。
 
@@ -59,7 +59,7 @@ class AggregateResourceConfigRequest:
 
     @aggregator_id.setter
     def aggregator_id(self, aggregator_id):
-        """Sets the aggregator_id of this AggregateResourceConfigRequest.
+        r"""Sets the aggregator_id of this AggregateResourceConfigRequest.
 
         资源聚合器ID。
 
@@ -70,7 +70,7 @@ class AggregateResourceConfigRequest:
 
     @property
     def resource_identifier(self):
-        """Gets the resource_identifier of this AggregateResourceConfigRequest.
+        r"""Gets the resource_identifier of this AggregateResourceConfigRequest.
 
         :return: The resource_identifier of this AggregateResourceConfigRequest.
         :rtype: :class:`huaweicloudsdkrms.v1.ResourceIdentifier`
@@ -79,7 +79,7 @@ class AggregateResourceConfigRequest:
 
     @resource_identifier.setter
     def resource_identifier(self, resource_identifier):
-        """Sets the resource_identifier of this AggregateResourceConfigRequest.
+        r"""Sets the resource_identifier of this AggregateResourceConfigRequest.
 
         :param resource_identifier: The resource_identifier of this AggregateResourceConfigRequest.
         :type resource_identifier: :class:`huaweicloudsdkrms.v1.ResourceIdentifier`

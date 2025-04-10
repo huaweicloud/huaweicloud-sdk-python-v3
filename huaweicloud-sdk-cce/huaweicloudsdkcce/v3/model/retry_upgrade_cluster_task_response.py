@@ -24,7 +24,7 @@ class RetryUpgradeClusterTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RetryUpgradeClusterTaskResponse
+        r"""RetryUpgradeClusterTaskResponse
 
         The model defined in huaweicloud sdk
 

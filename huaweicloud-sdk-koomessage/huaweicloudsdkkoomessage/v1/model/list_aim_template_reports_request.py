@@ -25,7 +25,7 @@ class ListAimTemplateReportsRequest:
     }
 
     def __init__(self, body=None):
-        """ListAimTemplateReportsRequest
+        r"""ListAimTemplateReportsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListAimTemplateReportsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAimTemplateReportsRequest.
+        r"""Gets the body of this ListAimTemplateReportsRequest.
 
         :return: The body of this ListAimTemplateReportsRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimTemplateReportsRequestBody`
@@ -52,7 +52,7 @@ class ListAimTemplateReportsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAimTemplateReportsRequest.
+        r"""Sets the body of this ListAimTemplateReportsRequest.
 
         :param body: The body of this ListAimTemplateReportsRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.ListAimTemplateReportsRequestBody`

@@ -27,7 +27,7 @@ class MqttConfigs:
     }
 
     def __init__(self, enable_mqtt=None, mqtts=None):
-        """MqttConfigs
+        r"""MqttConfigs
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MqttConfigs:
 
     @property
     def enable_mqtt(self):
-        """Gets the enable_mqtt of this MqttConfigs.
+        r"""Gets the enable_mqtt of this MqttConfigs.
 
         是否启用MQTT
 
@@ -59,7 +59,7 @@ class MqttConfigs:
 
     @enable_mqtt.setter
     def enable_mqtt(self, enable_mqtt):
-        """Sets the enable_mqtt of this MqttConfigs.
+        r"""Sets the enable_mqtt of this MqttConfigs.
 
         是否启用MQTT
 
@@ -70,7 +70,7 @@ class MqttConfigs:
 
     @property
     def mqtts(self):
-        """Gets the mqtts of this MqttConfigs.
+        r"""Gets the mqtts of this MqttConfigs.
 
         MQTT配置 当enable_mqtt取值为false时，mqtts需要为空数组
 
@@ -81,7 +81,7 @@ class MqttConfigs:
 
     @mqtts.setter
     def mqtts(self, mqtts):
-        """Sets the mqtts of this MqttConfigs.
+        r"""Sets the mqtts of this MqttConfigs.
 
         MQTT配置 当enable_mqtt取值为false时，mqtts需要为空数组
 

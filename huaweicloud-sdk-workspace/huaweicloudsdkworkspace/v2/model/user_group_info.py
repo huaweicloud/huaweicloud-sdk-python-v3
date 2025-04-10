@@ -47,7 +47,7 @@ class UserGroupInfo:
     }
 
     def __init__(self, name=None, id=None, create_time=None, description=None, user_quantity=None, parent=None, realm_id=None, platform_type=None, group_dn=None, domain=None, sid=None, total_desktops=None):
-        """UserGroupInfo
+        r"""UserGroupInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class UserGroupInfo:
 
     @property
     def name(self):
-        """Gets the name of this UserGroupInfo.
+        r"""Gets the name of this UserGroupInfo.
 
         用户组名。
 
@@ -131,7 +131,7 @@ class UserGroupInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UserGroupInfo.
+        r"""Sets the name of this UserGroupInfo.
 
         用户组名。
 
@@ -142,7 +142,7 @@ class UserGroupInfo:
 
     @property
     def id(self):
-        """Gets the id of this UserGroupInfo.
+        r"""Gets the id of this UserGroupInfo.
 
         用户组ID。
 
@@ -153,7 +153,7 @@ class UserGroupInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UserGroupInfo.
+        r"""Sets the id of this UserGroupInfo.
 
         用户组ID。
 
@@ -164,7 +164,7 @@ class UserGroupInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this UserGroupInfo.
+        r"""Gets the create_time of this UserGroupInfo.
 
         用户组对应的创建时间，UTC时间：yyyy-MM-ddTHH:mm:ss.SSSZ。
 
@@ -175,7 +175,7 @@ class UserGroupInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UserGroupInfo.
+        r"""Sets the create_time of this UserGroupInfo.
 
         用户组对应的创建时间，UTC时间：yyyy-MM-ddTHH:mm:ss.SSSZ。
 
@@ -186,7 +186,7 @@ class UserGroupInfo:
 
     @property
     def description(self):
-        """Gets the description of this UserGroupInfo.
+        r"""Gets the description of this UserGroupInfo.
 
         用户组描述。
 
@@ -197,7 +197,7 @@ class UserGroupInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UserGroupInfo.
+        r"""Sets the description of this UserGroupInfo.
 
         用户组描述。
 
@@ -208,7 +208,7 @@ class UserGroupInfo:
 
     @property
     def user_quantity(self):
-        """Gets the user_quantity of this UserGroupInfo.
+        r"""Gets the user_quantity of this UserGroupInfo.
 
         用户列表中用户数。
 
@@ -219,7 +219,7 @@ class UserGroupInfo:
 
     @user_quantity.setter
     def user_quantity(self, user_quantity):
-        """Sets the user_quantity of this UserGroupInfo.
+        r"""Sets the user_quantity of this UserGroupInfo.
 
         用户列表中用户数。
 
@@ -230,7 +230,7 @@ class UserGroupInfo:
 
     @property
     def parent(self):
-        """Gets the parent of this UserGroupInfo.
+        r"""Gets the parent of this UserGroupInfo.
 
         :return: The parent of this UserGroupInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UserGroupInfo`
@@ -239,7 +239,7 @@ class UserGroupInfo:
 
     @parent.setter
     def parent(self, parent):
-        """Sets the parent of this UserGroupInfo.
+        r"""Sets the parent of this UserGroupInfo.
 
         :param parent: The parent of this UserGroupInfo.
         :type parent: :class:`huaweicloudsdkworkspace.v2.UserGroupInfo`
@@ -248,7 +248,7 @@ class UserGroupInfo:
 
     @property
     def realm_id(self):
-        """Gets the realm_id of this UserGroupInfo.
+        r"""Gets the realm_id of this UserGroupInfo.
 
         用户组域Id。
 
@@ -259,7 +259,7 @@ class UserGroupInfo:
 
     @realm_id.setter
     def realm_id(self, realm_id):
-        """Sets the realm_id of this UserGroupInfo.
+        r"""Sets the realm_id of this UserGroupInfo.
 
         用户组域Id。
 
@@ -270,7 +270,7 @@ class UserGroupInfo:
 
     @property
     def platform_type(self):
-        """Gets the platform_type of this UserGroupInfo.
+        r"""Gets the platform_type of this UserGroupInfo.
 
         用户组类型。 * AD： AD域用户组 * LOCAL： 本地liteAs用户组
 
@@ -281,7 +281,7 @@ class UserGroupInfo:
 
     @platform_type.setter
     def platform_type(self, platform_type):
-        """Sets the platform_type of this UserGroupInfo.
+        r"""Sets the platform_type of this UserGroupInfo.
 
         用户组类型。 * AD： AD域用户组 * LOCAL： 本地liteAs用户组
 
@@ -292,7 +292,7 @@ class UserGroupInfo:
 
     @property
     def group_dn(self):
-        """Gets the group_dn of this UserGroupInfo.
+        r"""Gets the group_dn of this UserGroupInfo.
 
         用户组专有名。
 
@@ -303,7 +303,7 @@ class UserGroupInfo:
 
     @group_dn.setter
     def group_dn(self, group_dn):
-        """Sets the group_dn of this UserGroupInfo.
+        r"""Sets the group_dn of this UserGroupInfo.
 
         用户组专有名。
 
@@ -314,7 +314,7 @@ class UserGroupInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this UserGroupInfo.
+        r"""Gets the domain of this UserGroupInfo.
 
         用户组域名。
 
@@ -325,7 +325,7 @@ class UserGroupInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this UserGroupInfo.
+        r"""Sets the domain of this UserGroupInfo.
 
         用户组域名。
 
@@ -336,7 +336,7 @@ class UserGroupInfo:
 
     @property
     def sid(self):
-        """Gets the sid of this UserGroupInfo.
+        r"""Gets the sid of this UserGroupInfo.
 
         用户组sid。
 
@@ -347,7 +347,7 @@ class UserGroupInfo:
 
     @sid.setter
     def sid(self, sid):
-        """Sets the sid of this UserGroupInfo.
+        r"""Sets the sid of this UserGroupInfo.
 
         用户组sid。
 
@@ -358,7 +358,7 @@ class UserGroupInfo:
 
     @property
     def total_desktops(self):
-        """Gets the total_desktops of this UserGroupInfo.
+        r"""Gets the total_desktops of this UserGroupInfo.
 
         用户列表中用户数。
 
@@ -369,7 +369,7 @@ class UserGroupInfo:
 
     @total_desktops.setter
     def total_desktops(self, total_desktops):
-        """Sets the total_desktops of this UserGroupInfo.
+        r"""Sets the total_desktops of this UserGroupInfo.
 
         用户列表中用户数。
 

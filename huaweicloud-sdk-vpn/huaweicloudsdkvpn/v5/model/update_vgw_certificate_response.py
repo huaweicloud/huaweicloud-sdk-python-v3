@@ -30,7 +30,7 @@ class UpdateVgwCertificateResponse(SdkResponse):
     }
 
     def __init__(self, certificate=None, request_id=None, header_response_token=None):
-        """UpdateVgwCertificateResponse
+        r"""UpdateVgwCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateVgwCertificateResponse(SdkResponse):
 
     @property
     def certificate(self):
-        """Gets the certificate of this UpdateVgwCertificateResponse.
+        r"""Gets the certificate of this UpdateVgwCertificateResponse.
 
         :return: The certificate of this UpdateVgwCertificateResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.VpnGatewayCertificateConfig`
@@ -67,7 +67,7 @@ class UpdateVgwCertificateResponse(SdkResponse):
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this UpdateVgwCertificateResponse.
+        r"""Sets the certificate of this UpdateVgwCertificateResponse.
 
         :param certificate: The certificate of this UpdateVgwCertificateResponse.
         :type certificate: :class:`huaweicloudsdkvpn.v5.VpnGatewayCertificateConfig`
@@ -76,7 +76,7 @@ class UpdateVgwCertificateResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateVgwCertificateResponse.
+        r"""Gets the request_id of this UpdateVgwCertificateResponse.
 
         请求id
 
@@ -87,7 +87,7 @@ class UpdateVgwCertificateResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateVgwCertificateResponse.
+        r"""Sets the request_id of this UpdateVgwCertificateResponse.
 
         请求id
 
@@ -98,7 +98,7 @@ class UpdateVgwCertificateResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this UpdateVgwCertificateResponse.
+        r"""Gets the header_response_token of this UpdateVgwCertificateResponse.
 
         :return: The header_response_token of this UpdateVgwCertificateResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class UpdateVgwCertificateResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this UpdateVgwCertificateResponse.
+        r"""Sets the header_response_token of this UpdateVgwCertificateResponse.
 
         :param header_response_token: The header_response_token of this UpdateVgwCertificateResponse.
         :type header_response_token: str

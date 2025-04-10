@@ -40,7 +40,7 @@ class UpdatePtrRecordResponse(SdkResponse):
     }
 
     def __init__(self, id=None, ptrdname=None, description=None, ttl=None, address=None, status=None, action=None, links=None):
-        """UpdatePtrRecordResponse
+        r"""UpdatePtrRecordResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdatePtrRecordResponse.
+        r"""Gets the id of this UpdatePtrRecordResponse.
 
         PTR记录的ID，格式形如{region}:{floatingip_id}。
 
@@ -104,7 +104,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdatePtrRecordResponse.
+        r"""Sets the id of this UpdatePtrRecordResponse.
 
         PTR记录的ID，格式形如{region}:{floatingip_id}。
 
@@ -115,7 +115,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @property
     def ptrdname(self):
-        """Gets the ptrdname of this UpdatePtrRecordResponse.
+        r"""Gets the ptrdname of this UpdatePtrRecordResponse.
 
         PTR记录对应的域名。
 
@@ -126,7 +126,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @ptrdname.setter
     def ptrdname(self, ptrdname):
-        """Sets the ptrdname of this UpdatePtrRecordResponse.
+        r"""Sets the ptrdname of this UpdatePtrRecordResponse.
 
         PTR记录对应的域名。
 
@@ -137,7 +137,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdatePtrRecordResponse.
+        r"""Gets the description of this UpdatePtrRecordResponse.
 
         对PTR记录的描述。
 
@@ -148,7 +148,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePtrRecordResponse.
+        r"""Sets the description of this UpdatePtrRecordResponse.
 
         对PTR记录的描述。
 
@@ -159,7 +159,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @property
     def ttl(self):
-        """Gets the ttl of this UpdatePtrRecordResponse.
+        r"""Gets the ttl of this UpdatePtrRecordResponse.
 
         PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -170,7 +170,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this UpdatePtrRecordResponse.
+        r"""Sets the ttl of this UpdatePtrRecordResponse.
 
         PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -181,7 +181,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @property
     def address(self):
-        """Gets the address of this UpdatePtrRecordResponse.
+        r"""Gets the address of this UpdatePtrRecordResponse.
 
         弹性公网IP的IP地址。
 
@@ -192,7 +192,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @address.setter
     def address(self, address):
-        """Sets the address of this UpdatePtrRecordResponse.
+        r"""Sets the address of this UpdatePtrRecordResponse.
 
         弹性公网IP的IP地址。
 
@@ -203,7 +203,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdatePtrRecordResponse.
+        r"""Gets the status of this UpdatePtrRecordResponse.
 
         资源状态。
 
@@ -214,7 +214,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdatePtrRecordResponse.
+        r"""Sets the status of this UpdatePtrRecordResponse.
 
         资源状态。
 
@@ -225,7 +225,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @property
     def action(self):
-        """Gets the action of this UpdatePtrRecordResponse.
+        r"""Gets the action of this UpdatePtrRecordResponse.
 
         对该资源的当前操作。  取值范围：  CREATE：表示创建 UPDATE：表示更新 DELETE：表示删除 NONE：表示无操作
 
@@ -236,7 +236,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdatePtrRecordResponse.
+        r"""Sets the action of this UpdatePtrRecordResponse.
 
         对该资源的当前操作。  取值范围：  CREATE：表示创建 UPDATE：表示更新 DELETE：表示删除 NONE：表示无操作
 
@@ -247,7 +247,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this UpdatePtrRecordResponse.
+        r"""Gets the links of this UpdatePtrRecordResponse.
 
         :return: The links of this UpdatePtrRecordResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -256,7 +256,7 @@ class UpdatePtrRecordResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this UpdatePtrRecordResponse.
+        r"""Sets the links of this UpdatePtrRecordResponse.
 
         :param links: The links of this UpdatePtrRecordResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`

@@ -27,7 +27,7 @@ class CreateAppRequest:
     }
 
     def __init__(self, ief_instance_id=None, body=None):
-        """CreateAppRequest
+        r"""CreateAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateAppRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateAppRequest.
+        r"""Gets the ief_instance_id of this CreateAppRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -61,7 +61,7 @@ class CreateAppRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateAppRequest.
+        r"""Sets the ief_instance_id of this CreateAppRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -72,7 +72,7 @@ class CreateAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAppRequest.
+        r"""Gets the body of this CreateAppRequest.
 
         :return: The body of this CreateAppRequest.
         :rtype: :class:`huaweicloudsdkief.v1.App`
@@ -81,7 +81,7 @@ class CreateAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAppRequest.
+        r"""Sets the body of this CreateAppRequest.
 
         :param body: The body of this CreateAppRequest.
         :type body: :class:`huaweicloudsdkief.v1.App`

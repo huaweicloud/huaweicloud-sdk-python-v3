@@ -29,7 +29,7 @@ class ListOrganizationPoliciesRequest:
     }
 
     def __init__(self, operation_type=None, limit=None, offset=None):
-        """ListOrganizationPoliciesRequest
+        r"""ListOrganizationPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListOrganizationPoliciesRequest:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this ListOrganizationPoliciesRequest.
+        r"""Gets the operation_type of this ListOrganizationPoliciesRequest.
 
         组织策略类型
 
@@ -67,7 +67,7 @@ class ListOrganizationPoliciesRequest:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this ListOrganizationPoliciesRequest.
+        r"""Sets the operation_type of this ListOrganizationPoliciesRequest.
 
         组织策略类型
 
@@ -78,7 +78,7 @@ class ListOrganizationPoliciesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListOrganizationPoliciesRequest.
+        r"""Gets the limit of this ListOrganizationPoliciesRequest.
 
         每页显示的条目数量，正整数
 
@@ -89,7 +89,7 @@ class ListOrganizationPoliciesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListOrganizationPoliciesRequest.
+        r"""Sets the limit of this ListOrganizationPoliciesRequest.
 
         每页显示的条目数量，正整数
 
@@ -100,7 +100,7 @@ class ListOrganizationPoliciesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListOrganizationPoliciesRequest.
+        r"""Gets the offset of this ListOrganizationPoliciesRequest.
 
         偏移值，正整数
 
@@ -111,7 +111,7 @@ class ListOrganizationPoliciesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListOrganizationPoliciesRequest.
+        r"""Sets the offset of this ListOrganizationPoliciesRequest.
 
         偏移值，正整数
 

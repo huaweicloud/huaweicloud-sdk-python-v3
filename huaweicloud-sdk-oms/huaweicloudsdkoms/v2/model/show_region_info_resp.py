@@ -27,7 +27,7 @@ class ShowRegionInfoResp:
     }
 
     def __init__(self, service_name=None, region_list=None):
-        """ShowRegionInfoResp
+        r"""ShowRegionInfoResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowRegionInfoResp:
 
     @property
     def service_name(self):
-        """Gets the service_name of this ShowRegionInfoResp.
+        r"""Gets the service_name of this ShowRegionInfoResp.
 
         服务名称
 
@@ -61,7 +61,7 @@ class ShowRegionInfoResp:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this ShowRegionInfoResp.
+        r"""Sets the service_name of this ShowRegionInfoResp.
 
         服务名称
 
@@ -72,7 +72,7 @@ class ShowRegionInfoResp:
 
     @property
     def region_list(self):
-        """Gets the region_list of this ShowRegionInfoResp.
+        r"""Gets the region_list of this ShowRegionInfoResp.
 
         Region列表
 
@@ -83,7 +83,7 @@ class ShowRegionInfoResp:
 
     @region_list.setter
     def region_list(self, region_list):
-        """Sets the region_list of this ShowRegionInfoResp.
+        r"""Sets the region_list of this ShowRegionInfoResp.
 
         Region列表
 

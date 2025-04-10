@@ -39,7 +39,7 @@ class EdgeCloud:
     }
 
     def __init__(self, id=None, name=None, description=None, coverage=None, failed_num=None, status=None, success_num=None, edge_regions=None):
-        """EdgeCloud
+        r"""EdgeCloud
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class EdgeCloud:
 
     @property
     def id(self):
-        """Gets the id of this EdgeCloud.
+        r"""Gets the id of this EdgeCloud.
 
         边缘业务ID。
 
@@ -103,7 +103,7 @@ class EdgeCloud:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EdgeCloud.
+        r"""Sets the id of this EdgeCloud.
 
         边缘业务ID。
 
@@ -114,7 +114,7 @@ class EdgeCloud:
 
     @property
     def name(self):
-        """Gets the name of this EdgeCloud.
+        r"""Gets the name of this EdgeCloud.
 
         边缘业务名称。 取值范围：只能由中文字符、大小写英文字母、数字及中划线、下划线组成，且长度为[1-32]个字符。
 
@@ -125,7 +125,7 @@ class EdgeCloud:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EdgeCloud.
+        r"""Sets the name of this EdgeCloud.
 
         边缘业务名称。 取值范围：只能由中文字符、大小写英文字母、数字及中划线、下划线组成，且长度为[1-32]个字符。
 
@@ -136,7 +136,7 @@ class EdgeCloud:
 
     @property
     def description(self):
-        """Gets the description of this EdgeCloud.
+        r"""Gets the description of this EdgeCloud.
 
         边缘业务描述。最大支持255字节。
 
@@ -147,7 +147,7 @@ class EdgeCloud:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EdgeCloud.
+        r"""Sets the description of this EdgeCloud.
 
         边缘业务描述。最大支持255字节。
 
@@ -158,7 +158,7 @@ class EdgeCloud:
 
     @property
     def coverage(self):
-        """Gets the coverage of this EdgeCloud.
+        r"""Gets the coverage of this EdgeCloud.
 
         :return: The coverage of this EdgeCloud.
         :rtype: :class:`huaweicloudsdkiec.v1.CoverageResp`
@@ -167,7 +167,7 @@ class EdgeCloud:
 
     @coverage.setter
     def coverage(self, coverage):
-        """Sets the coverage of this EdgeCloud.
+        r"""Sets the coverage of this EdgeCloud.
 
         :param coverage: The coverage of this EdgeCloud.
         :type coverage: :class:`huaweicloudsdkiec.v1.CoverageResp`
@@ -176,7 +176,7 @@ class EdgeCloud:
 
     @property
     def failed_num(self):
-        """Gets the failed_num of this EdgeCloud.
+        r"""Gets the failed_num of this EdgeCloud.
 
         创建失败的虚拟机
 
@@ -187,7 +187,7 @@ class EdgeCloud:
 
     @failed_num.setter
     def failed_num(self, failed_num):
-        """Sets the failed_num of this EdgeCloud.
+        r"""Sets the failed_num of this EdgeCloud.
 
         创建失败的虚拟机
 
@@ -198,7 +198,7 @@ class EdgeCloud:
 
     @property
     def status(self):
-        """Gets the status of this EdgeCloud.
+        r"""Gets the status of this EdgeCloud.
 
         边缘业务状态，现存状态有： - creating/scheduling/updating：部署中 - inService：运行中 - failed：创建失败 - deleting：删除中 - delFailed：删除失败
 
@@ -209,7 +209,7 @@ class EdgeCloud:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EdgeCloud.
+        r"""Sets the status of this EdgeCloud.
 
         边缘业务状态，现存状态有： - creating/scheduling/updating：部署中 - inService：运行中 - failed：创建失败 - deleting：删除中 - delFailed：删除失败
 
@@ -220,7 +220,7 @@ class EdgeCloud:
 
     @property
     def success_num(self):
-        """Gets the success_num of this EdgeCloud.
+        r"""Gets the success_num of this EdgeCloud.
 
         成功创建的虚拟机
 
@@ -231,7 +231,7 @@ class EdgeCloud:
 
     @success_num.setter
     def success_num(self, success_num):
-        """Sets the success_num of this EdgeCloud.
+        r"""Sets the success_num of this EdgeCloud.
 
         成功创建的虚拟机
 
@@ -242,7 +242,7 @@ class EdgeCloud:
 
     @property
     def edge_regions(self):
-        """Gets the edge_regions of this EdgeCloud.
+        r"""Gets the edge_regions of this EdgeCloud.
 
         边缘业务支持的边缘区域数目。
 
@@ -253,7 +253,7 @@ class EdgeCloud:
 
     @edge_regions.setter
     def edge_regions(self, edge_regions):
-        """Sets the edge_regions of this EdgeCloud.
+        r"""Sets the edge_regions of this EdgeCloud.
 
         边缘业务支持的边缘区域数目。
 

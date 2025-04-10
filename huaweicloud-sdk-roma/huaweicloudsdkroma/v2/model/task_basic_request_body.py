@@ -35,7 +35,7 @@ class TaskBasicRequestBody:
     }
 
     def __init__(self, task_name=None, task_type=None, source_datasource_id=None, target_datasource_id=None, description=None, task_tag=None):
-        """TaskBasicRequestBody
+        r"""TaskBasicRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class TaskBasicRequestBody:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TaskBasicRequestBody.
+        r"""Gets the task_name of this TaskBasicRequestBody.
 
         任务名称，只能以字母、数字为开头，包含字母、数字和 . _ -  3~100个字符
 
@@ -85,7 +85,7 @@ class TaskBasicRequestBody:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TaskBasicRequestBody.
+        r"""Sets the task_name of this TaskBasicRequestBody.
 
         任务名称，只能以字母、数字为开头，包含字母、数字和 . _ -  3~100个字符
 
@@ -96,7 +96,7 @@ class TaskBasicRequestBody:
 
     @property
     def task_type(self):
-        """Gets the task_type of this TaskBasicRequestBody.
+        r"""Gets the task_type of this TaskBasicRequestBody.
 
         任务类型 - REALTIME (实时) - TIMING (定时)
 
@@ -107,7 +107,7 @@ class TaskBasicRequestBody:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this TaskBasicRequestBody.
+        r"""Sets the task_type of this TaskBasicRequestBody.
 
         任务类型 - REALTIME (实时) - TIMING (定时)
 
@@ -118,7 +118,7 @@ class TaskBasicRequestBody:
 
     @property
     def source_datasource_id(self):
-        """Gets the source_datasource_id of this TaskBasicRequestBody.
+        r"""Gets the source_datasource_id of this TaskBasicRequestBody.
 
         源端数据源ID
 
@@ -129,7 +129,7 @@ class TaskBasicRequestBody:
 
     @source_datasource_id.setter
     def source_datasource_id(self, source_datasource_id):
-        """Sets the source_datasource_id of this TaskBasicRequestBody.
+        r"""Sets the source_datasource_id of this TaskBasicRequestBody.
 
         源端数据源ID
 
@@ -140,7 +140,7 @@ class TaskBasicRequestBody:
 
     @property
     def target_datasource_id(self):
-        """Gets the target_datasource_id of this TaskBasicRequestBody.
+        r"""Gets the target_datasource_id of this TaskBasicRequestBody.
 
         目标端数据源ID
 
@@ -151,7 +151,7 @@ class TaskBasicRequestBody:
 
     @target_datasource_id.setter
     def target_datasource_id(self, target_datasource_id):
-        """Sets the target_datasource_id of this TaskBasicRequestBody.
+        r"""Sets the target_datasource_id of this TaskBasicRequestBody.
 
         目标端数据源ID
 
@@ -162,7 +162,7 @@ class TaskBasicRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this TaskBasicRequestBody.
+        r"""Gets the description of this TaskBasicRequestBody.
 
         描述信息
 
@@ -173,7 +173,7 @@ class TaskBasicRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TaskBasicRequestBody.
+        r"""Sets the description of this TaskBasicRequestBody.
 
         描述信息
 
@@ -184,7 +184,7 @@ class TaskBasicRequestBody:
 
     @property
     def task_tag(self):
-        """Gets the task_tag of this TaskBasicRequestBody.
+        r"""Gets the task_tag of this TaskBasicRequestBody.
 
         任务标签,只能包含字母、数字、中划线、下划线
 
@@ -195,7 +195,7 @@ class TaskBasicRequestBody:
 
     @task_tag.setter
     def task_tag(self, task_tag):
-        """Sets the task_tag of this TaskBasicRequestBody.
+        r"""Sets the task_tag of this TaskBasicRequestBody.
 
         任务标签,只能包含字母、数字、中划线、下划线
 

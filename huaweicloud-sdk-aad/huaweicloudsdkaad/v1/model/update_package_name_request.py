@@ -27,7 +27,7 @@ class UpdatePackageNameRequest:
     }
 
     def __init__(self, package_id=None, body=None):
-        """UpdatePackageNameRequest
+        r"""UpdatePackageNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePackageNameRequest:
 
     @property
     def package_id(self):
-        """Gets the package_id of this UpdatePackageNameRequest.
+        r"""Gets the package_id of this UpdatePackageNameRequest.
 
         防护包id
 
@@ -60,7 +60,7 @@ class UpdatePackageNameRequest:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this UpdatePackageNameRequest.
+        r"""Sets the package_id of this UpdatePackageNameRequest.
 
         防护包id
 
@@ -71,7 +71,7 @@ class UpdatePackageNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePackageNameRequest.
+        r"""Gets the body of this UpdatePackageNameRequest.
 
         :return: The body of this UpdatePackageNameRequest.
         :rtype: :class:`huaweicloudsdkaad.v1.UpdatePackageNameRequestBody`
@@ -80,7 +80,7 @@ class UpdatePackageNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePackageNameRequest.
+        r"""Sets the body of this UpdatePackageNameRequest.
 
         :param body: The body of this UpdatePackageNameRequest.
         :type body: :class:`huaweicloudsdkaad.v1.UpdatePackageNameRequestBody`

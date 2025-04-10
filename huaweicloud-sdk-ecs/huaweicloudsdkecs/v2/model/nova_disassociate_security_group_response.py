@@ -24,7 +24,7 @@ class NovaDisassociateSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """NovaDisassociateSecurityGroupResponse
+        r"""NovaDisassociateSecurityGroupResponse
 
         The model defined in huaweicloud sdk
 

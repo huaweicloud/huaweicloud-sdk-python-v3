@@ -28,7 +28,7 @@ class ListPrivacyRuleResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListPrivacyRuleResponse
+        r"""ListPrivacyRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPrivacyRuleResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPrivacyRuleResponse.
+        r"""Gets the total of this ListPrivacyRuleResponse.
 
         规则条数
 
@@ -62,7 +62,7 @@ class ListPrivacyRuleResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPrivacyRuleResponse.
+        r"""Sets the total of this ListPrivacyRuleResponse.
 
         规则条数
 
@@ -73,7 +73,7 @@ class ListPrivacyRuleResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListPrivacyRuleResponse.
+        r"""Gets the items of this ListPrivacyRuleResponse.
 
         规则详情数组
 
@@ -84,7 +84,7 @@ class ListPrivacyRuleResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListPrivacyRuleResponse.
+        r"""Sets the items of this ListPrivacyRuleResponse.
 
         规则详情数组
 

@@ -35,7 +35,7 @@ class UpdateProjectRequestBody:
     }
 
     def __init__(self, id=None, name=None, description=None, variables_no_file=None, source=None, external_params=None):
-        """UpdateProjectRequestBody
+        r"""UpdateProjectRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class UpdateProjectRequestBody:
 
     @property
     def id(self):
-        """Gets the id of this UpdateProjectRequestBody.
+        r"""Gets the id of this UpdateProjectRequestBody.
 
         工程id
 
@@ -87,7 +87,7 @@ class UpdateProjectRequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateProjectRequestBody.
+        r"""Sets the id of this UpdateProjectRequestBody.
 
         工程id
 
@@ -98,7 +98,7 @@ class UpdateProjectRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateProjectRequestBody.
+        r"""Gets the name of this UpdateProjectRequestBody.
 
         工程名称
 
@@ -109,7 +109,7 @@ class UpdateProjectRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateProjectRequestBody.
+        r"""Sets the name of this UpdateProjectRequestBody.
 
         工程名称
 
@@ -120,7 +120,7 @@ class UpdateProjectRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateProjectRequestBody.
+        r"""Gets the description of this UpdateProjectRequestBody.
 
         工程描述
 
@@ -131,7 +131,7 @@ class UpdateProjectRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateProjectRequestBody.
+        r"""Sets the description of this UpdateProjectRequestBody.
 
         工程描述
 
@@ -142,7 +142,7 @@ class UpdateProjectRequestBody:
 
     @property
     def variables_no_file(self):
-        """Gets the variables_no_file of this UpdateProjectRequestBody.
+        r"""Gets the variables_no_file of this UpdateProjectRequestBody.
 
         导入工程时，缺失的存在于变量文件中的变量
 
@@ -153,7 +153,7 @@ class UpdateProjectRequestBody:
 
     @variables_no_file.setter
     def variables_no_file(self, variables_no_file):
-        """Sets the variables_no_file of this UpdateProjectRequestBody.
+        r"""Sets the variables_no_file of this UpdateProjectRequestBody.
 
         导入工程时，缺失的存在于变量文件中的变量
 
@@ -164,7 +164,7 @@ class UpdateProjectRequestBody:
 
     @property
     def source(self):
-        """Gets the source of this UpdateProjectRequestBody.
+        r"""Gets the source of this UpdateProjectRequestBody.
 
         来源（0-PerfTest；2-CloudTest）
 
@@ -175,7 +175,7 @@ class UpdateProjectRequestBody:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this UpdateProjectRequestBody.
+        r"""Sets the source of this UpdateProjectRequestBody.
 
         来源（0-PerfTest；2-CloudTest）
 
@@ -186,7 +186,7 @@ class UpdateProjectRequestBody:
 
     @property
     def external_params(self):
-        """Gets the external_params of this UpdateProjectRequestBody.
+        r"""Gets the external_params of this UpdateProjectRequestBody.
 
         扩展参数
 
@@ -197,7 +197,7 @@ class UpdateProjectRequestBody:
 
     @external_params.setter
     def external_params(self, external_params):
-        """Sets the external_params of this UpdateProjectRequestBody.
+        r"""Sets the external_params of this UpdateProjectRequestBody.
 
         扩展参数
 

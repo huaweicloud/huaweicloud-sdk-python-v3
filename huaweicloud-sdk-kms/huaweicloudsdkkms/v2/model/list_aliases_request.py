@@ -29,7 +29,7 @@ class ListAliasesRequest:
     }
 
     def __init__(self, key_id=None, limit=None, marker=None):
-        """ListAliasesRequest
+        r"""ListAliasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAliasesRequest:
 
     @property
     def key_id(self):
-        """Gets the key_id of this ListAliasesRequest.
+        r"""Gets the key_id of this ListAliasesRequest.
 
         密钥ID
 
@@ -68,7 +68,7 @@ class ListAliasesRequest:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this ListAliasesRequest.
+        r"""Sets the key_id of this ListAliasesRequest.
 
         密钥ID
 
@@ -79,7 +79,7 @@ class ListAliasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAliasesRequest.
+        r"""Gets the limit of this ListAliasesRequest.
 
         指定查询返回记录条数
 
@@ -90,7 +90,7 @@ class ListAliasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAliasesRequest.
+        r"""Sets the limit of this ListAliasesRequest.
 
         指定查询返回记录条数
 
@@ -101,7 +101,7 @@ class ListAliasesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAliasesRequest.
+        r"""Gets the marker of this ListAliasesRequest.
 
         分页查询起始位置标识
 
@@ -112,7 +112,7 @@ class ListAliasesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAliasesRequest.
+        r"""Sets the marker of this ListAliasesRequest.
 
         分页查询起始位置标识
 

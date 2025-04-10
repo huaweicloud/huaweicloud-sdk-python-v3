@@ -27,7 +27,7 @@ class CreateFunctionVersionRequest:
     }
 
     def __init__(self, function_urn=None, body=None):
-        """CreateFunctionVersionRequest
+        r"""CreateFunctionVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateFunctionVersionRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this CreateFunctionVersionRequest.
+        r"""Gets the function_urn of this CreateFunctionVersionRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -60,7 +60,7 @@ class CreateFunctionVersionRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this CreateFunctionVersionRequest.
+        r"""Sets the function_urn of this CreateFunctionVersionRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -71,7 +71,7 @@ class CreateFunctionVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFunctionVersionRequest.
+        r"""Gets the body of this CreateFunctionVersionRequest.
 
         :return: The body of this CreateFunctionVersionRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionVersionRequestBody`
@@ -80,7 +80,7 @@ class CreateFunctionVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFunctionVersionRequest.
+        r"""Sets the body of this CreateFunctionVersionRequest.
 
         :param body: The body of this CreateFunctionVersionRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionVersionRequestBody`

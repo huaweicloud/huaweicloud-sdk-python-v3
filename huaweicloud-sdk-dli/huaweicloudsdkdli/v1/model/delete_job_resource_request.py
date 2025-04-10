@@ -27,7 +27,7 @@ class DeleteJobResourceRequest:
     }
 
     def __init__(self, resource_name=None, group=None):
-        """DeleteJobResourceRequest
+        r"""DeleteJobResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteJobResourceRequest:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this DeleteJobResourceRequest.
+        r"""Gets the resource_name of this DeleteJobResourceRequest.
 
         资源名。
 
@@ -60,7 +60,7 @@ class DeleteJobResourceRequest:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this DeleteJobResourceRequest.
+        r"""Sets the resource_name of this DeleteJobResourceRequest.
 
         资源名。
 
@@ -71,7 +71,7 @@ class DeleteJobResourceRequest:
 
     @property
     def group(self):
-        """Gets the group of this DeleteJobResourceRequest.
+        r"""Gets the group of this DeleteJobResourceRequest.
 
         资源所在分组
 
@@ -82,7 +82,7 @@ class DeleteJobResourceRequest:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this DeleteJobResourceRequest.
+        r"""Sets the group of this DeleteJobResourceRequest.
 
         资源所在分组
 

@@ -33,7 +33,7 @@ class CreatePolicyReqBody:
     }
 
     def __init__(self, content=None, description=None, name=None, type=None, tags=None):
-        """CreatePolicyReqBody
+        r"""CreatePolicyReqBody
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class CreatePolicyReqBody:
 
     @property
     def content(self):
-        """Gets the content of this CreatePolicyReqBody.
+        r"""Gets the content of this CreatePolicyReqBody.
 
         要添加到新策略的策略文本内容。
 
@@ -78,7 +78,7 @@ class CreatePolicyReqBody:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CreatePolicyReqBody.
+        r"""Sets the content of this CreatePolicyReqBody.
 
         要添加到新策略的策略文本内容。
 
@@ -89,7 +89,7 @@ class CreatePolicyReqBody:
 
     @property
     def description(self):
-        """Gets the description of this CreatePolicyReqBody.
+        r"""Gets the description of this CreatePolicyReqBody.
 
         要分配给策略的可选说明。
 
@@ -100,7 +100,7 @@ class CreatePolicyReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePolicyReqBody.
+        r"""Sets the description of this CreatePolicyReqBody.
 
         要分配给策略的可选说明。
 
@@ -111,7 +111,7 @@ class CreatePolicyReqBody:
 
     @property
     def name(self):
-        """Gets the name of this CreatePolicyReqBody.
+        r"""Gets the name of this CreatePolicyReqBody.
 
         要分配给策略的名称。
 
@@ -122,7 +122,7 @@ class CreatePolicyReqBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePolicyReqBody.
+        r"""Sets the name of this CreatePolicyReqBody.
 
         要分配给策略的名称。
 
@@ -133,7 +133,7 @@ class CreatePolicyReqBody:
 
     @property
     def type(self):
-        """Gets the type of this CreatePolicyReqBody.
+        r"""Gets the type of this CreatePolicyReqBody.
 
         要创建的策略类型,service_control_policy服务控制策略；tag_policy：标签策略。
 
@@ -144,7 +144,7 @@ class CreatePolicyReqBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreatePolicyReqBody.
+        r"""Sets the type of this CreatePolicyReqBody.
 
         要创建的策略类型,service_control_policy服务控制策略；tag_policy：标签策略。
 
@@ -155,7 +155,7 @@ class CreatePolicyReqBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreatePolicyReqBody.
+        r"""Gets the tags of this CreatePolicyReqBody.
 
         要附加到新创建的策略的标签列表。
 
@@ -166,7 +166,7 @@ class CreatePolicyReqBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreatePolicyReqBody.
+        r"""Sets the tags of this CreatePolicyReqBody.
 
         要附加到新创建的策略的标签列表。
 

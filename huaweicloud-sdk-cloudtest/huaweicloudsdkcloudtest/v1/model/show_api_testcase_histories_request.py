@@ -33,7 +33,7 @@ class ShowApiTestcaseHistoriesRequest:
     }
 
     def __init__(self, testcase_id=None, offset=None, limit=None, plan_id=None, project_id=None):
-        """ShowApiTestcaseHistoriesRequest
+        r"""ShowApiTestcaseHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ShowApiTestcaseHistoriesRequest:
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this ShowApiTestcaseHistoriesRequest.
+        r"""Gets the testcase_id of this ShowApiTestcaseHistoriesRequest.
 
         测试用例id
 
@@ -80,7 +80,7 @@ class ShowApiTestcaseHistoriesRequest:
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this ShowApiTestcaseHistoriesRequest.
+        r"""Sets the testcase_id of this ShowApiTestcaseHistoriesRequest.
 
         测试用例id
 
@@ -91,7 +91,7 @@ class ShowApiTestcaseHistoriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowApiTestcaseHistoriesRequest.
+        r"""Gets the offset of this ShowApiTestcaseHistoriesRequest.
 
         起始偏移量，表示从此偏移量开始查询， offset大于等于1
 
@@ -102,7 +102,7 @@ class ShowApiTestcaseHistoriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowApiTestcaseHistoriesRequest.
+        r"""Sets the offset of this ShowApiTestcaseHistoriesRequest.
 
         起始偏移量，表示从此偏移量开始查询， offset大于等于1
 
@@ -113,7 +113,7 @@ class ShowApiTestcaseHistoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowApiTestcaseHistoriesRequest.
+        r"""Gets the limit of this ShowApiTestcaseHistoriesRequest.
 
         每页显示的条目数量,最大支持200条
 
@@ -124,7 +124,7 @@ class ShowApiTestcaseHistoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowApiTestcaseHistoriesRequest.
+        r"""Sets the limit of this ShowApiTestcaseHistoriesRequest.
 
         每页显示的条目数量,最大支持200条
 
@@ -135,7 +135,7 @@ class ShowApiTestcaseHistoriesRequest:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this ShowApiTestcaseHistoriesRequest.
+        r"""Gets the plan_id of this ShowApiTestcaseHistoriesRequest.
 
         测试计划id
 
@@ -146,7 +146,7 @@ class ShowApiTestcaseHistoriesRequest:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this ShowApiTestcaseHistoriesRequest.
+        r"""Sets the plan_id of this ShowApiTestcaseHistoriesRequest.
 
         测试计划id
 
@@ -157,7 +157,7 @@ class ShowApiTestcaseHistoriesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowApiTestcaseHistoriesRequest.
+        r"""Gets the project_id of this ShowApiTestcaseHistoriesRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -168,7 +168,7 @@ class ShowApiTestcaseHistoriesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowApiTestcaseHistoriesRequest.
+        r"""Sets the project_id of this ShowApiTestcaseHistoriesRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 

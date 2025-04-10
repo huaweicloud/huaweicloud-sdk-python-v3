@@ -25,7 +25,7 @@ class DeleteRepositoryRequest:
     }
 
     def __init__(self, repository_uuid=None):
-        """DeleteRepositoryRequest
+        r"""DeleteRepositoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteRepositoryRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this DeleteRepositoryRequest.
+        r"""Gets the repository_uuid of this DeleteRepositoryRequest.
 
         仓库uuid(由CreateRepository接口返回)，用来指定删除的仓库
 
@@ -53,7 +53,7 @@ class DeleteRepositoryRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this DeleteRepositoryRequest.
+        r"""Sets the repository_uuid of this DeleteRepositoryRequest.
 
         仓库uuid(由CreateRepository接口返回)，用来指定删除的仓库
 

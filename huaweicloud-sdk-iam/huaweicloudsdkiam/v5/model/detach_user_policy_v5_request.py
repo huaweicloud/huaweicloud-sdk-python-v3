@@ -27,7 +27,7 @@ class DetachUserPolicyV5Request:
     }
 
     def __init__(self, policy_id=None, body=None):
-        """DetachUserPolicyV5Request
+        r"""DetachUserPolicyV5Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DetachUserPolicyV5Request:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DetachUserPolicyV5Request.
+        r"""Gets the policy_id of this DetachUserPolicyV5Request.
 
         身份策略ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -60,7 +60,7 @@ class DetachUserPolicyV5Request:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DetachUserPolicyV5Request.
+        r"""Sets the policy_id of this DetachUserPolicyV5Request.
 
         身份策略ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -71,7 +71,7 @@ class DetachUserPolicyV5Request:
 
     @property
     def body(self):
-        """Gets the body of this DetachUserPolicyV5Request.
+        r"""Gets the body of this DetachUserPolicyV5Request.
 
         :return: The body of this DetachUserPolicyV5Request.
         :rtype: :class:`huaweicloudsdkiam.v5.DetachUserPolicyReqBody`
@@ -80,7 +80,7 @@ class DetachUserPolicyV5Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DetachUserPolicyV5Request.
+        r"""Sets the body of this DetachUserPolicyV5Request.
 
         :param body: The body of this DetachUserPolicyV5Request.
         :type body: :class:`huaweicloudsdkiam.v5.DetachUserPolicyReqBody`

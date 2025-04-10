@@ -23,7 +23,7 @@ class ListLogGroupsRequest:
     }
 
     def __init__(self):
-        """ListLogGroupsRequest
+        r"""ListLogGroupsRequest
 
         The model defined in huaweicloud sdk
 

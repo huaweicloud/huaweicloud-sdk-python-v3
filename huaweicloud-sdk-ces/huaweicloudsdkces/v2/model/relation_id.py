@@ -23,7 +23,7 @@ class RelationID:
     }
 
     def __init__(self):
-        """RelationID
+        r"""RelationID
 
         The model defined in huaweicloud sdk
 

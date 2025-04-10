@@ -29,7 +29,7 @@ class TemplateItem:
     }
 
     def __init__(self, metric_name=None, condition=None, alarm_level=None):
-        """TemplateItem
+        r"""TemplateItem
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TemplateItem:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this TemplateItem.
+        r"""Gets the metric_name of this TemplateItem.
 
         告警模板添加的监控指标，如弹性云服务器可添加的监控指标为cpu_util等；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -66,7 +66,7 @@ class TemplateItem:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this TemplateItem.
+        r"""Sets the metric_name of this TemplateItem.
 
         告警模板添加的监控指标，如弹性云服务器可添加的监控指标为cpu_util等；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -77,7 +77,7 @@ class TemplateItem:
 
     @property
     def condition(self):
-        """Gets the condition of this TemplateItem.
+        r"""Gets the condition of this TemplateItem.
 
         :return: The condition of this TemplateItem.
         :rtype: :class:`huaweicloudsdkces.v1.AlarmTemplateCondition`
@@ -86,7 +86,7 @@ class TemplateItem:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this TemplateItem.
+        r"""Sets the condition of this TemplateItem.
 
         :param condition: The condition of this TemplateItem.
         :type condition: :class:`huaweicloudsdkces.v1.AlarmTemplateCondition`
@@ -95,7 +95,7 @@ class TemplateItem:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this TemplateItem.
+        r"""Gets the alarm_level of this TemplateItem.
 
         设置告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
 
@@ -106,7 +106,7 @@ class TemplateItem:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this TemplateItem.
+        r"""Sets the alarm_level of this TemplateItem.
 
         设置告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
 

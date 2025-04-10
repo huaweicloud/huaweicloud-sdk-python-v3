@@ -28,7 +28,7 @@ class ListDomainNotAddedProjectsV4Response(SdkResponse):
     }
 
     def __init__(self, projects=None, total=None):
-        """ListDomainNotAddedProjectsV4Response
+        r"""ListDomainNotAddedProjectsV4Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDomainNotAddedProjectsV4Response(SdkResponse):
 
     @property
     def projects(self):
-        """Gets the projects of this ListDomainNotAddedProjectsV4Response.
+        r"""Gets the projects of this ListDomainNotAddedProjectsV4Response.
 
         项目信息列表
 
@@ -62,7 +62,7 @@ class ListDomainNotAddedProjectsV4Response(SdkResponse):
 
     @projects.setter
     def projects(self, projects):
-        """Sets the projects of this ListDomainNotAddedProjectsV4Response.
+        r"""Sets the projects of this ListDomainNotAddedProjectsV4Response.
 
         项目信息列表
 
@@ -73,7 +73,7 @@ class ListDomainNotAddedProjectsV4Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDomainNotAddedProjectsV4Response.
+        r"""Gets the total of this ListDomainNotAddedProjectsV4Response.
 
         总数
 
@@ -84,7 +84,7 @@ class ListDomainNotAddedProjectsV4Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDomainNotAddedProjectsV4Response.
+        r"""Sets the total of this ListDomainNotAddedProjectsV4Response.
 
         总数
 

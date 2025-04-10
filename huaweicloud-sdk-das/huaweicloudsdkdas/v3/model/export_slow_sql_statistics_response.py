@@ -28,7 +28,7 @@ class ExportSlowSqlStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, statistics_list=None, total_count=None):
-        """ExportSlowSqlStatisticsResponse
+        r"""ExportSlowSqlStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExportSlowSqlStatisticsResponse(SdkResponse):
 
     @property
     def statistics_list(self):
-        """Gets the statistics_list of this ExportSlowSqlStatisticsResponse.
+        r"""Gets the statistics_list of this ExportSlowSqlStatisticsResponse.
 
         慢SQL统计列表。
 
@@ -62,7 +62,7 @@ class ExportSlowSqlStatisticsResponse(SdkResponse):
 
     @statistics_list.setter
     def statistics_list(self, statistics_list):
-        """Sets the statistics_list of this ExportSlowSqlStatisticsResponse.
+        r"""Sets the statistics_list of this ExportSlowSqlStatisticsResponse.
 
         慢SQL统计列表。
 
@@ -73,7 +73,7 @@ class ExportSlowSqlStatisticsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ExportSlowSqlStatisticsResponse.
+        r"""Gets the total_count of this ExportSlowSqlStatisticsResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ExportSlowSqlStatisticsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ExportSlowSqlStatisticsResponse.
+        r"""Sets the total_count of this ExportSlowSqlStatisticsResponse.
 
         总数。
 

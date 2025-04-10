@@ -25,7 +25,7 @@ class ApprovalActionTypeDto:
     }
 
     def __init__(self, action_type=None):
-        """ApprovalActionTypeDto
+        r"""ApprovalActionTypeDto
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ApprovalActionTypeDto:
 
     @property
     def action_type(self):
-        """Gets the action_type of this ApprovalActionTypeDto.
+        r"""Gets the action_type of this ApprovalActionTypeDto.
 
         操作类型,取值,通过:approve; 拒绝:reject; 撤销:reset
 
@@ -54,7 +54,7 @@ class ApprovalActionTypeDto:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this ApprovalActionTypeDto.
+        r"""Sets the action_type of this ApprovalActionTypeDto.
 
         操作类型,取值,通过:approve; 拒绝:reject; 撤销:reset
 

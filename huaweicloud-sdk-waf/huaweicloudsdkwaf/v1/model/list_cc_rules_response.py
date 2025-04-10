@@ -28,7 +28,7 @@ class ListCcRulesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListCcRulesResponse
+        r"""ListCcRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCcRulesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListCcRulesResponse.
+        r"""Gets the total of this ListCcRulesResponse.
 
         Number of rules in the policy
 
@@ -62,7 +62,7 @@ class ListCcRulesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListCcRulesResponse.
+        r"""Sets the total of this ListCcRulesResponse.
 
         Number of rules in the policy
 
@@ -73,7 +73,7 @@ class ListCcRulesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListCcRulesResponse.
+        r"""Gets the items of this ListCcRulesResponse.
 
         Array of Cc rules
 
@@ -84,7 +84,7 @@ class ListCcRulesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListCcRulesResponse.
+        r"""Sets the items of this ListCcRulesResponse.
 
         Array of Cc rules
 

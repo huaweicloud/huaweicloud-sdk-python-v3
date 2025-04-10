@@ -41,7 +41,7 @@ class CreateClusterReqBody:
     }
 
     def __init__(self, cluster_name=None, datastore=None, availability_zone=None, nics=None, cluster_info=None, enterprise_project_id=None, vpc_id=None, dbuser=None, dbuserpwd=None):
-        """CreateClusterReqBody
+        r"""CreateClusterReqBody
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class CreateClusterReqBody:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this CreateClusterReqBody.
+        r"""Gets the cluster_name of this CreateClusterReqBody.
 
         集群名字
 
@@ -104,7 +104,7 @@ class CreateClusterReqBody:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this CreateClusterReqBody.
+        r"""Sets the cluster_name of this CreateClusterReqBody.
 
         集群名字
 
@@ -115,7 +115,7 @@ class CreateClusterReqBody:
 
     @property
     def datastore(self):
-        """Gets the datastore of this CreateClusterReqBody.
+        r"""Gets the datastore of this CreateClusterReqBody.
 
         :return: The datastore of this CreateClusterReqBody.
         :rtype: :class:`huaweicloudsdkcloudtable.v2.Datastore`
@@ -124,7 +124,7 @@ class CreateClusterReqBody:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this CreateClusterReqBody.
+        r"""Sets the datastore of this CreateClusterReqBody.
 
         :param datastore: The datastore of this CreateClusterReqBody.
         :type datastore: :class:`huaweicloudsdkcloudtable.v2.Datastore`
@@ -133,7 +133,7 @@ class CreateClusterReqBody:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateClusterReqBody.
+        r"""Gets the availability_zone of this CreateClusterReqBody.
 
         可用区
 
@@ -144,7 +144,7 @@ class CreateClusterReqBody:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateClusterReqBody.
+        r"""Sets the availability_zone of this CreateClusterReqBody.
 
         可用区
 
@@ -155,7 +155,7 @@ class CreateClusterReqBody:
 
     @property
     def nics(self):
-        """Gets the nics of this CreateClusterReqBody.
+        r"""Gets the nics of this CreateClusterReqBody.
 
         集群所在的网络信息以及安全组信息。
 
@@ -166,7 +166,7 @@ class CreateClusterReqBody:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this CreateClusterReqBody.
+        r"""Sets the nics of this CreateClusterReqBody.
 
         集群所在的网络信息以及安全组信息。
 
@@ -177,7 +177,7 @@ class CreateClusterReqBody:
 
     @property
     def cluster_info(self):
-        """Gets the cluster_info of this CreateClusterReqBody.
+        r"""Gets the cluster_info of this CreateClusterReqBody.
 
         :return: The cluster_info of this CreateClusterReqBody.
         :rtype: :class:`huaweicloudsdkcloudtable.v2.CreateClusterReqBodyClusterInfo`
@@ -186,7 +186,7 @@ class CreateClusterReqBody:
 
     @cluster_info.setter
     def cluster_info(self, cluster_info):
-        """Sets the cluster_info of this CreateClusterReqBody.
+        r"""Sets the cluster_info of this CreateClusterReqBody.
 
         :param cluster_info: The cluster_info of this CreateClusterReqBody.
         :type cluster_info: :class:`huaweicloudsdkcloudtable.v2.CreateClusterReqBodyClusterInfo`
@@ -195,7 +195,7 @@ class CreateClusterReqBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateClusterReqBody.
+        r"""Gets the enterprise_project_id of this CreateClusterReqBody.
 
         企业项目ID
 
@@ -206,7 +206,7 @@ class CreateClusterReqBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateClusterReqBody.
+        r"""Sets the enterprise_project_id of this CreateClusterReqBody.
 
         企业项目ID
 
@@ -217,7 +217,7 @@ class CreateClusterReqBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateClusterReqBody.
+        r"""Gets the vpc_id of this CreateClusterReqBody.
 
         虚拟私有云ID
 
@@ -228,7 +228,7 @@ class CreateClusterReqBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateClusterReqBody.
+        r"""Sets the vpc_id of this CreateClusterReqBody.
 
         虚拟私有云ID
 
@@ -239,7 +239,7 @@ class CreateClusterReqBody:
 
     @property
     def dbuser(self):
-        """Gets the dbuser of this CreateClusterReqBody.
+        r"""Gets the dbuser of this CreateClusterReqBody.
 
         type为doris时，必填项，管理账号：admin
 
@@ -250,7 +250,7 @@ class CreateClusterReqBody:
 
     @dbuser.setter
     def dbuser(self, dbuser):
-        """Sets the dbuser of this CreateClusterReqBody.
+        r"""Sets the dbuser of this CreateClusterReqBody.
 
         type为doris时，必填项，管理账号：admin
 
@@ -261,7 +261,7 @@ class CreateClusterReqBody:
 
     @property
     def dbuserpwd(self):
-        """Gets the dbuserpwd of this CreateClusterReqBody.
+        r"""Gets the dbuserpwd of this CreateClusterReqBody.
 
         type为doris时，必填项，管理账号密码
 
@@ -272,7 +272,7 @@ class CreateClusterReqBody:
 
     @dbuserpwd.setter
     def dbuserpwd(self, dbuserpwd):
-        """Sets the dbuserpwd of this CreateClusterReqBody.
+        r"""Sets the dbuserpwd of this CreateClusterReqBody.
 
         type为doris时，必填项，管理账号密码
 

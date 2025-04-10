@@ -27,7 +27,7 @@ class ConfirmAssetUploadReq:
     }
 
     def __init__(self, asset_id=None, status=None):
-        """ConfirmAssetUploadReq
+        r"""ConfirmAssetUploadReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ConfirmAssetUploadReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ConfirmAssetUploadReq.
+        r"""Gets the asset_id of this ConfirmAssetUploadReq.
 
         媒资ID。
 
@@ -59,7 +59,7 @@ class ConfirmAssetUploadReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ConfirmAssetUploadReq.
+        r"""Sets the asset_id of this ConfirmAssetUploadReq.
 
         媒资ID。
 
@@ -70,7 +70,7 @@ class ConfirmAssetUploadReq:
 
     @property
     def status(self):
-        """Gets the status of this ConfirmAssetUploadReq.
+        r"""Gets the status of this ConfirmAssetUploadReq.
 
         上传状态。  取值如下： - CREATED：创建成功。 - FAILED：创建失败。 - CANCELLED：创建取消。
 
@@ -81,7 +81,7 @@ class ConfirmAssetUploadReq:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ConfirmAssetUploadReq.
+        r"""Sets the status of this ConfirmAssetUploadReq.
 
         上传状态。  取值如下： - CREATED：创建成功。 - FAILED：创建失败。 - CANCELLED：创建取消。
 

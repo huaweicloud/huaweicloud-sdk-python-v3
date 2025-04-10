@@ -27,7 +27,7 @@ class ShowProductDetailRequest:
     }
 
     def __init__(self, product_id=None, ief_instance_id=None):
-        """ShowProductDetailRequest
+        r"""ShowProductDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowProductDetailRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ShowProductDetailRequest.
+        r"""Gets the product_id of this ShowProductDetailRequest.
 
         批量节点注册作业ID
 
@@ -60,7 +60,7 @@ class ShowProductDetailRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ShowProductDetailRequest.
+        r"""Sets the product_id of this ShowProductDetailRequest.
 
         批量节点注册作业ID
 
@@ -71,7 +71,7 @@ class ShowProductDetailRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ShowProductDetailRequest.
+        r"""Gets the ief_instance_id of this ShowProductDetailRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -82,7 +82,7 @@ class ShowProductDetailRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ShowProductDetailRequest.
+        r"""Sets the ief_instance_id of this ShowProductDetailRequest.
 
         铂金版实例ID，专业版实例为空值
 

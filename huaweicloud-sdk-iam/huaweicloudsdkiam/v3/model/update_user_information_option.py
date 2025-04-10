@@ -27,7 +27,7 @@ class UpdateUserInformationOption:
     }
 
     def __init__(self, email=None, mobile=None):
-        """UpdateUserInformationOption
+        r"""UpdateUserInformationOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateUserInformationOption:
 
     @property
     def email(self):
-        """Gets the email of this UpdateUserInformationOption.
+        r"""Gets the email of this UpdateUserInformationOption.
 
         IAM用户的新邮箱，符合邮箱格式，长度小于等于255字符。
 
@@ -61,7 +61,7 @@ class UpdateUserInformationOption:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this UpdateUserInformationOption.
+        r"""Sets the email of this UpdateUserInformationOption.
 
         IAM用户的新邮箱，符合邮箱格式，长度小于等于255字符。
 
@@ -72,7 +72,7 @@ class UpdateUserInformationOption:
 
     @property
     def mobile(self):
-        """Gets the mobile of this UpdateUserInformationOption.
+        r"""Gets the mobile of this UpdateUserInformationOption.
 
         IAM用户的国家码+新手机号，手机号为纯数字，长度小于等于32字符。
 
@@ -83,7 +83,7 @@ class UpdateUserInformationOption:
 
     @mobile.setter
     def mobile(self, mobile):
-        """Sets the mobile of this UpdateUserInformationOption.
+        r"""Sets the mobile of this UpdateUserInformationOption.
 
         IAM用户的国家码+新手机号，手机号为纯数字，长度小于等于32字符。
 

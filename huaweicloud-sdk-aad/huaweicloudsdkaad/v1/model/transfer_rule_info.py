@@ -37,7 +37,7 @@ class TransferRuleInfo:
     }
 
     def __init__(self, rule_id=None, forward_protocol=None, forward_port=None, source_port=None, lb_method=None, source_ip=None, status=None):
-        """TransferRuleInfo
+        r"""TransferRuleInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class TransferRuleInfo:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this TransferRuleInfo.
+        r"""Gets the rule_id of this TransferRuleInfo.
 
         转发规则名ID
 
@@ -96,7 +96,7 @@ class TransferRuleInfo:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this TransferRuleInfo.
+        r"""Sets the rule_id of this TransferRuleInfo.
 
         转发规则名ID
 
@@ -107,7 +107,7 @@ class TransferRuleInfo:
 
     @property
     def forward_protocol(self):
-        """Gets the forward_protocol of this TransferRuleInfo.
+        r"""Gets the forward_protocol of this TransferRuleInfo.
 
         转发协议，tcp或udp
 
@@ -118,7 +118,7 @@ class TransferRuleInfo:
 
     @forward_protocol.setter
     def forward_protocol(self, forward_protocol):
-        """Sets the forward_protocol of this TransferRuleInfo.
+        r"""Sets the forward_protocol of this TransferRuleInfo.
 
         转发协议，tcp或udp
 
@@ -129,7 +129,7 @@ class TransferRuleInfo:
 
     @property
     def forward_port(self):
-        """Gets the forward_port of this TransferRuleInfo.
+        r"""Gets the forward_port of this TransferRuleInfo.
 
         转发端口
 
@@ -140,7 +140,7 @@ class TransferRuleInfo:
 
     @forward_port.setter
     def forward_port(self, forward_port):
-        """Sets the forward_port of this TransferRuleInfo.
+        r"""Sets the forward_port of this TransferRuleInfo.
 
         转发端口
 
@@ -151,7 +151,7 @@ class TransferRuleInfo:
 
     @property
     def source_port(self):
-        """Gets the source_port of this TransferRuleInfo.
+        r"""Gets the source_port of this TransferRuleInfo.
 
         源站端口
 
@@ -162,7 +162,7 @@ class TransferRuleInfo:
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this TransferRuleInfo.
+        r"""Sets the source_port of this TransferRuleInfo.
 
         源站端口
 
@@ -173,7 +173,7 @@ class TransferRuleInfo:
 
     @property
     def lb_method(self):
-        """Gets the lb_method of this TransferRuleInfo.
+        r"""Gets the lb_method of this TransferRuleInfo.
 
         LVS转发规则
 
@@ -184,7 +184,7 @@ class TransferRuleInfo:
 
     @lb_method.setter
     def lb_method(self, lb_method):
-        """Sets the lb_method of this TransferRuleInfo.
+        r"""Sets the lb_method of this TransferRuleInfo.
 
         LVS转发规则
 
@@ -195,7 +195,7 @@ class TransferRuleInfo:
 
     @property
     def source_ip(self):
-        """Gets the source_ip of this TransferRuleInfo.
+        r"""Gets the source_ip of this TransferRuleInfo.
 
         源站IP，多个IP用逗号隔开，限制20个IP
 
@@ -206,7 +206,7 @@ class TransferRuleInfo:
 
     @source_ip.setter
     def source_ip(self, source_ip):
-        """Sets the source_ip of this TransferRuleInfo.
+        r"""Sets the source_ip of this TransferRuleInfo.
 
         源站IP，多个IP用逗号隔开，限制20个IP
 
@@ -217,7 +217,7 @@ class TransferRuleInfo:
 
     @property
     def status(self):
-        """Gets the status of this TransferRuleInfo.
+        r"""Gets the status of this TransferRuleInfo.
 
         源站状态 1 正常，2 异常
 
@@ -228,7 +228,7 @@ class TransferRuleInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TransferRuleInfo.
+        r"""Sets the status of this TransferRuleInfo.
 
         源站状态 1 正常，2 异常
 

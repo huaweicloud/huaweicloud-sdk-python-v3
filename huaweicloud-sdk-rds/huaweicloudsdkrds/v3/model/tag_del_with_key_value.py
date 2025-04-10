@@ -27,7 +27,7 @@ class TagDelWithKeyValue:
     }
 
     def __init__(self, key=None, value=None):
-        """TagDelWithKeyValue
+        r"""TagDelWithKeyValue
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TagDelWithKeyValue:
 
     @property
     def key(self):
-        """Gets the key of this TagDelWithKeyValue.
+        r"""Gets the key of this TagDelWithKeyValue.
 
         标签键。最大长度127个unicode字符。 key不能为空，不能为空字符串。
 
@@ -60,7 +60,7 @@ class TagDelWithKeyValue:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagDelWithKeyValue.
+        r"""Sets the key of this TagDelWithKeyValue.
 
         标签键。最大长度127个unicode字符。 key不能为空，不能为空字符串。
 
@@ -71,7 +71,7 @@ class TagDelWithKeyValue:
 
     @property
     def value(self):
-        """Gets the value of this TagDelWithKeyValue.
+        r"""Gets the value of this TagDelWithKeyValue.
 
         标签值。每个值最大长度255个unicode字符。 删除说明如下： - 如果“value”有值，按照“key”/“value”删除。 - 如果“value”没值，则按照“key”删除。
 
@@ -82,7 +82,7 @@ class TagDelWithKeyValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagDelWithKeyValue.
+        r"""Sets the value of this TagDelWithKeyValue.
 
         标签值。每个值最大长度255个unicode字符。 删除说明如下： - 如果“value”有值，按照“key”/“value”删除。 - 如果“value”没值，则按照“key”删除。
 

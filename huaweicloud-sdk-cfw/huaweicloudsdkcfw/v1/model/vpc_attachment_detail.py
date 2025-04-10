@@ -25,7 +25,7 @@ class VpcAttachmentDetail:
     }
 
     def __init__(self, vpc_id=None):
-        """VpcAttachmentDetail
+        r"""VpcAttachmentDetail
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class VpcAttachmentDetail:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this VpcAttachmentDetail.
+        r"""Gets the vpc_id of this VpcAttachmentDetail.
 
         东西向防护添加的防护vpc的id
 
@@ -54,7 +54,7 @@ class VpcAttachmentDetail:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this VpcAttachmentDetail.
+        r"""Sets the vpc_id of this VpcAttachmentDetail.
 
         东西向防护添加的防护vpc的id
 

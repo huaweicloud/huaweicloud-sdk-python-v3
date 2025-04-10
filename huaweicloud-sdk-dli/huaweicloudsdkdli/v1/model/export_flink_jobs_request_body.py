@@ -29,7 +29,7 @@ class ExportFlinkJobsRequestBody:
     }
 
     def __init__(self, obs_dir=None, is_selected=None, job_selected=None):
-        """ExportFlinkJobsRequestBody
+        r"""ExportFlinkJobsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ExportFlinkJobsRequestBody:
 
     @property
     def obs_dir(self):
-        """Gets the obs_dir of this ExportFlinkJobsRequestBody.
+        r"""Gets the obs_dir of this ExportFlinkJobsRequestBody.
 
         导出作业文件的OBS保存路径。
 
@@ -66,7 +66,7 @@ class ExportFlinkJobsRequestBody:
 
     @obs_dir.setter
     def obs_dir(self, obs_dir):
-        """Sets the obs_dir of this ExportFlinkJobsRequestBody.
+        r"""Sets the obs_dir of this ExportFlinkJobsRequestBody.
 
         导出作业文件的OBS保存路径。
 
@@ -77,7 +77,7 @@ class ExportFlinkJobsRequestBody:
 
     @property
     def is_selected(self):
-        """Gets the is_selected of this ExportFlinkJobsRequestBody.
+        r"""Gets the is_selected of this ExportFlinkJobsRequestBody.
 
         是否导出指定的作业。
 
@@ -88,7 +88,7 @@ class ExportFlinkJobsRequestBody:
 
     @is_selected.setter
     def is_selected(self, is_selected):
-        """Sets the is_selected of this ExportFlinkJobsRequestBody.
+        r"""Sets the is_selected of this ExportFlinkJobsRequestBody.
 
         是否导出指定的作业。
 
@@ -99,7 +99,7 @@ class ExportFlinkJobsRequestBody:
 
     @property
     def job_selected(self):
-        """Gets the job_selected of this ExportFlinkJobsRequestBody.
+        r"""Gets the job_selected of this ExportFlinkJobsRequestBody.
 
         当is_selected=true时，该参数是待导出作业的作业ID集合。当is_selected=true时，此参数必填。
 
@@ -110,7 +110,7 @@ class ExportFlinkJobsRequestBody:
 
     @job_selected.setter
     def job_selected(self, job_selected):
-        """Sets the job_selected of this ExportFlinkJobsRequestBody.
+        r"""Sets the job_selected of this ExportFlinkJobsRequestBody.
 
         当is_selected=true时，该参数是待导出作业的作业ID集合。当is_selected=true时，此参数必填。
 

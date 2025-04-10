@@ -27,7 +27,7 @@ class UpdateFlinkSqlJobTemplateRequest:
     }
 
     def __init__(self, template_id=None, body=None):
-        """UpdateFlinkSqlJobTemplateRequest
+        r"""UpdateFlinkSqlJobTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateFlinkSqlJobTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this UpdateFlinkSqlJobTemplateRequest.
+        r"""Gets the template_id of this UpdateFlinkSqlJobTemplateRequest.
 
         :return: The template_id of this UpdateFlinkSqlJobTemplateRequest.
         :rtype: int
@@ -58,7 +58,7 @@ class UpdateFlinkSqlJobTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this UpdateFlinkSqlJobTemplateRequest.
+        r"""Sets the template_id of this UpdateFlinkSqlJobTemplateRequest.
 
         :param template_id: The template_id of this UpdateFlinkSqlJobTemplateRequest.
         :type template_id: int
@@ -67,7 +67,7 @@ class UpdateFlinkSqlJobTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFlinkSqlJobTemplateRequest.
+        r"""Gets the body of this UpdateFlinkSqlJobTemplateRequest.
 
         :return: The body of this UpdateFlinkSqlJobTemplateRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateFlinkSqlJobTemplateRequestBody`
@@ -76,7 +76,7 @@ class UpdateFlinkSqlJobTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFlinkSqlJobTemplateRequest.
+        r"""Sets the body of this UpdateFlinkSqlJobTemplateRequest.
 
         :param body: The body of this UpdateFlinkSqlJobTemplateRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateFlinkSqlJobTemplateRequestBody`

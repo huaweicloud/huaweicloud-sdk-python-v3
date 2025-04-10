@@ -29,7 +29,7 @@ class UpdateRepoRequestBody:
     }
 
     def __init__(self, is_public=None, category=None, description=None):
-        """UpdateRepoRequestBody
+        r"""UpdateRepoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateRepoRequestBody:
 
     @property
     def is_public(self):
-        """Gets the is_public of this UpdateRepoRequestBody.
+        r"""Gets the is_public of this UpdateRepoRequestBody.
 
         是否为公共仓库，可选值为true或false。
 
@@ -67,7 +67,7 @@ class UpdateRepoRequestBody:
 
     @is_public.setter
     def is_public(self, is_public):
-        """Sets the is_public of this UpdateRepoRequestBody.
+        r"""Sets the is_public of this UpdateRepoRequestBody.
 
         是否为公共仓库，可选值为true或false。
 
@@ -78,7 +78,7 @@ class UpdateRepoRequestBody:
 
     @property
     def category(self):
-        """Gets the category of this UpdateRepoRequestBody.
+        r"""Gets the category of this UpdateRepoRequestBody.
 
         仓库类型，可设置为app_server, linux, framework_app, database, lang, other, windows, arm。
 
@@ -89,7 +89,7 @@ class UpdateRepoRequestBody:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this UpdateRepoRequestBody.
+        r"""Sets the category of this UpdateRepoRequestBody.
 
         仓库类型，可设置为app_server, linux, framework_app, database, lang, other, windows, arm。
 
@@ -100,7 +100,7 @@ class UpdateRepoRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateRepoRequestBody.
+        r"""Gets the description of this UpdateRepoRequestBody.
 
         镜像仓库的描述信息。
 
@@ -111,7 +111,7 @@ class UpdateRepoRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateRepoRequestBody.
+        r"""Sets the description of this UpdateRepoRequestBody.
 
         镜像仓库的描述信息。
 

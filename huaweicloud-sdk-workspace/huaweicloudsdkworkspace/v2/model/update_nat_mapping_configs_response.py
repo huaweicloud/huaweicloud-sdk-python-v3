@@ -24,7 +24,7 @@ class UpdateNatMappingConfigsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateNatMappingConfigsResponse
+        r"""UpdateNatMappingConfigsResponse
 
         The model defined in huaweicloud sdk
 

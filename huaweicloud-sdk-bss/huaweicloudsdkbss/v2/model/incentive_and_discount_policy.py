@@ -31,7 +31,7 @@ class IncentiveAndDiscountPolicy:
     }
 
     def __init__(self, service_type_code=None, service_type_name=None, incentive_policy=None, allow_discount=None):
-        """IncentiveAndDiscountPolicy
+        r"""IncentiveAndDiscountPolicy
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class IncentiveAndDiscountPolicy:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this IncentiveAndDiscountPolicy.
+        r"""Gets the service_type_code of this IncentiveAndDiscountPolicy.
 
         云服务类型列表。
 
@@ -75,7 +75,7 @@ class IncentiveAndDiscountPolicy:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this IncentiveAndDiscountPolicy.
+        r"""Sets the service_type_code of this IncentiveAndDiscountPolicy.
 
         云服务类型列表。
 
@@ -86,7 +86,7 @@ class IncentiveAndDiscountPolicy:
 
     @property
     def service_type_name(self):
-        """Gets the service_type_name of this IncentiveAndDiscountPolicy.
+        r"""Gets the service_type_name of this IncentiveAndDiscountPolicy.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -97,7 +97,7 @@ class IncentiveAndDiscountPolicy:
 
     @service_type_name.setter
     def service_type_name(self, service_type_name):
-        """Sets the service_type_name of this IncentiveAndDiscountPolicy.
+        r"""Sets the service_type_name of this IncentiveAndDiscountPolicy.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -108,7 +108,7 @@ class IncentiveAndDiscountPolicy:
 
     @property
     def incentive_policy(self):
-        """Gets the incentive_policy of this IncentiveAndDiscountPolicy.
+        r"""Gets the incentive_policy of this IncentiveAndDiscountPolicy.
 
         激励策略。 0：非特定产品1：特定产品2：无业绩无返点13：有业绩无返点
 
@@ -119,7 +119,7 @@ class IncentiveAndDiscountPolicy:
 
     @incentive_policy.setter
     def incentive_policy(self, incentive_policy):
-        """Sets the incentive_policy of this IncentiveAndDiscountPolicy.
+        r"""Sets the incentive_policy of this IncentiveAndDiscountPolicy.
 
         激励策略。 0：非特定产品1：特定产品2：无业绩无返点13：有业绩无返点
 
@@ -130,7 +130,7 @@ class IncentiveAndDiscountPolicy:
 
     @property
     def allow_discount(self):
-        """Gets the allow_discount of this IncentiveAndDiscountPolicy.
+        r"""Gets the allow_discount of this IncentiveAndDiscountPolicy.
 
         是否允许应用伙伴授予折扣。 YES：允许应用NO：不许应用
 
@@ -141,7 +141,7 @@ class IncentiveAndDiscountPolicy:
 
     @allow_discount.setter
     def allow_discount(self, allow_discount):
-        """Sets the allow_discount of this IncentiveAndDiscountPolicy.
+        r"""Sets the allow_discount of this IncentiveAndDiscountPolicy.
 
         是否允许应用伙伴授予折扣。 YES：允许应用NO：不许应用
 

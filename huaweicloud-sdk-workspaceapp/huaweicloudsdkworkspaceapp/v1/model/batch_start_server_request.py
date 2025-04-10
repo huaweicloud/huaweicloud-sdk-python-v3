@@ -25,7 +25,7 @@ class BatchStartServerRequest:
     }
 
     def __init__(self, body=None):
-        """BatchStartServerRequest
+        r"""BatchStartServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchStartServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchStartServerRequest.
+        r"""Gets the body of this BatchStartServerRequest.
 
         :return: The body of this BatchStartServerRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchStartServerReq`
@@ -52,7 +52,7 @@ class BatchStartServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchStartServerRequest.
+        r"""Sets the body of this BatchStartServerRequest.
 
         :param body: The body of this BatchStartServerRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.BatchStartServerReq`

@@ -31,7 +31,7 @@ class CheckParametersRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, ruleset_id=None, language=None):
-        """CheckParametersRequest
+        r"""CheckParametersRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CheckParametersRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CheckParametersRequest.
+        r"""Gets the project_id of this CheckParametersRequest.
 
         项目ID
 
@@ -71,7 +71,7 @@ class CheckParametersRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CheckParametersRequest.
+        r"""Sets the project_id of this CheckParametersRequest.
 
         项目ID
 
@@ -82,7 +82,7 @@ class CheckParametersRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CheckParametersRequest.
+        r"""Gets the task_id of this CheckParametersRequest.
 
         任务ID
 
@@ -93,7 +93,7 @@ class CheckParametersRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CheckParametersRequest.
+        r"""Sets the task_id of this CheckParametersRequest.
 
         任务ID
 
@@ -104,7 +104,7 @@ class CheckParametersRequest:
 
     @property
     def ruleset_id(self):
-        """Gets the ruleset_id of this CheckParametersRequest.
+        r"""Gets the ruleset_id of this CheckParametersRequest.
 
         规则集ID
 
@@ -115,7 +115,7 @@ class CheckParametersRequest:
 
     @ruleset_id.setter
     def ruleset_id(self, ruleset_id):
-        """Sets the ruleset_id of this CheckParametersRequest.
+        r"""Sets the ruleset_id of this CheckParametersRequest.
 
         规则集ID
 
@@ -126,7 +126,7 @@ class CheckParametersRequest:
 
     @property
     def language(self):
-        """Gets the language of this CheckParametersRequest.
+        r"""Gets the language of this CheckParametersRequest.
 
         规则集语言
 
@@ -137,7 +137,7 @@ class CheckParametersRequest:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this CheckParametersRequest.
+        r"""Sets the language of this CheckParametersRequest.
 
         规则集语言
 

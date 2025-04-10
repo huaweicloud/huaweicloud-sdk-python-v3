@@ -31,7 +31,7 @@ class MicroServiceInfoCCEServiceCreate:
     }
 
     def __init__(self, cluster_id=None, namespace=None, service_name=None, port=None):
-        """MicroServiceInfoCCEServiceCreate
+        r"""MicroServiceInfoCCEServiceCreate
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class MicroServiceInfoCCEServiceCreate:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this MicroServiceInfoCCEServiceCreate.
+        r"""Gets the cluster_id of this MicroServiceInfoCCEServiceCreate.
 
         云容器引擎集群编号
 
@@ -72,7 +72,7 @@ class MicroServiceInfoCCEServiceCreate:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this MicroServiceInfoCCEServiceCreate.
+        r"""Sets the cluster_id of this MicroServiceInfoCCEServiceCreate.
 
         云容器引擎集群编号
 
@@ -83,7 +83,7 @@ class MicroServiceInfoCCEServiceCreate:
 
     @property
     def namespace(self):
-        """Gets the namespace of this MicroServiceInfoCCEServiceCreate.
+        r"""Gets the namespace of this MicroServiceInfoCCEServiceCreate.
 
         命名空间。1-63字符。只能包含小写字母、数字，以及 '-'，必须以字母开头，必须以字母数字结尾。
 
@@ -94,7 +94,7 @@ class MicroServiceInfoCCEServiceCreate:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this MicroServiceInfoCCEServiceCreate.
+        r"""Sets the namespace of this MicroServiceInfoCCEServiceCreate.
 
         命名空间。1-63字符。只能包含小写字母、数字，以及 '-'，必须以字母开头，必须以字母数字结尾。
 
@@ -105,7 +105,7 @@ class MicroServiceInfoCCEServiceCreate:
 
     @property
     def service_name(self):
-        """Gets the service_name of this MicroServiceInfoCCEServiceCreate.
+        r"""Gets the service_name of this MicroServiceInfoCCEServiceCreate.
 
         Service名称。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -116,7 +116,7 @@ class MicroServiceInfoCCEServiceCreate:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this MicroServiceInfoCCEServiceCreate.
+        r"""Sets the service_name of this MicroServiceInfoCCEServiceCreate.
 
         Service名称。支持汉字，英文，数字，点，中划线，下划线，且只能以英文和汉字开头，1-64字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -127,7 +127,7 @@ class MicroServiceInfoCCEServiceCreate:
 
     @property
     def port(self):
-        """Gets the port of this MicroServiceInfoCCEServiceCreate.
+        r"""Gets the port of this MicroServiceInfoCCEServiceCreate.
 
         Service的监听端口号。如果是多端口Service，用户需填写一个端口。
 
@@ -138,7 +138,7 @@ class MicroServiceInfoCCEServiceCreate:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this MicroServiceInfoCCEServiceCreate.
+        r"""Sets the port of this MicroServiceInfoCCEServiceCreate.
 
         Service的监听端口号。如果是多端口Service，用户需填写一个端口。
 

@@ -31,7 +31,7 @@ class ListMergeChangesTreesRequest:
     }
 
     def __init__(self, repository_id=None, merge_request_iid=None, view=None, commit_id=None):
-        """ListMergeChangesTreesRequest
+        r"""ListMergeChangesTreesRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListMergeChangesTreesRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this ListMergeChangesTreesRequest.
+        r"""Gets the repository_id of this ListMergeChangesTreesRequest.
 
         仓库主键id
 
@@ -73,7 +73,7 @@ class ListMergeChangesTreesRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this ListMergeChangesTreesRequest.
+        r"""Sets the repository_id of this ListMergeChangesTreesRequest.
 
         仓库主键id
 
@@ -84,7 +84,7 @@ class ListMergeChangesTreesRequest:
 
     @property
     def merge_request_iid(self):
-        """Gets the merge_request_iid of this ListMergeChangesTreesRequest.
+        r"""Gets the merge_request_iid of this ListMergeChangesTreesRequest.
 
         MR长id
 
@@ -95,7 +95,7 @@ class ListMergeChangesTreesRequest:
 
     @merge_request_iid.setter
     def merge_request_iid(self, merge_request_iid):
-        """Sets the merge_request_iid of this ListMergeChangesTreesRequest.
+        r"""Sets the merge_request_iid of this ListMergeChangesTreesRequest.
 
         MR长id
 
@@ -106,7 +106,7 @@ class ListMergeChangesTreesRequest:
 
     @property
     def view(self):
-        """Gets the view of this ListMergeChangesTreesRequest.
+        r"""Gets the view of this ListMergeChangesTreesRequest.
 
         是否为简易视图
 
@@ -117,7 +117,7 @@ class ListMergeChangesTreesRequest:
 
     @view.setter
     def view(self, view):
-        """Sets the view of this ListMergeChangesTreesRequest.
+        r"""Sets the view of this ListMergeChangesTreesRequest.
 
         是否为简易视图
 
@@ -128,7 +128,7 @@ class ListMergeChangesTreesRequest:
 
     @property
     def commit_id(self):
-        """Gets the commit_id of this ListMergeChangesTreesRequest.
+        r"""Gets the commit_id of this ListMergeChangesTreesRequest.
 
         commit的id
 
@@ -139,7 +139,7 @@ class ListMergeChangesTreesRequest:
 
     @commit_id.setter
     def commit_id(self, commit_id):
-        """Sets the commit_id of this ListMergeChangesTreesRequest.
+        r"""Sets the commit_id of this ListMergeChangesTreesRequest.
 
         commit的id
 

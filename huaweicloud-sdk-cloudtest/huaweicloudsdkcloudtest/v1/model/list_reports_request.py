@@ -33,7 +33,7 @@ class ListReportsRequest:
     }
 
     def __init__(self, project_id=None, page_size=None, offset=None, version_id=None, type=None):
-        """ListReportsRequest
+        r"""ListReportsRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ListReportsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListReportsRequest.
+        r"""Gets the project_id of this ListReportsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -77,7 +77,7 @@ class ListReportsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListReportsRequest.
+        r"""Sets the project_id of this ListReportsRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -88,7 +88,7 @@ class ListReportsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListReportsRequest.
+        r"""Gets the page_size of this ListReportsRequest.
 
         每页显示的条目数量,最大支持200条
 
@@ -99,7 +99,7 @@ class ListReportsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListReportsRequest.
+        r"""Sets the page_size of this ListReportsRequest.
 
         每页显示的条目数量,最大支持200条
 
@@ -110,7 +110,7 @@ class ListReportsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListReportsRequest.
+        r"""Gets the offset of this ListReportsRequest.
 
         页数，page_no大于等于1
 
@@ -121,7 +121,7 @@ class ListReportsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListReportsRequest.
+        r"""Sets the offset of this ListReportsRequest.
 
         页数，page_no大于等于1
 
@@ -132,7 +132,7 @@ class ListReportsRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ListReportsRequest.
+        r"""Gets the version_id of this ListReportsRequest.
 
         版本id
 
@@ -143,7 +143,7 @@ class ListReportsRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ListReportsRequest.
+        r"""Sets the version_id of this ListReportsRequest.
 
         版本id
 
@@ -154,7 +154,7 @@ class ListReportsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListReportsRequest.
+        r"""Gets the type of this ListReportsRequest.
 
         报表类型 1：首页用例库， 2：质量报告
 
@@ -165,7 +165,7 @@ class ListReportsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListReportsRequest.
+        r"""Sets the type of this ListReportsRequest.
 
         报表类型 1：首页用例库， 2：质量报告
 

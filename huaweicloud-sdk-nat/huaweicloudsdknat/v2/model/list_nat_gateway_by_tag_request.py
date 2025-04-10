@@ -25,7 +25,7 @@ class ListNatGatewayByTagRequest:
     }
 
     def __init__(self, body=None):
-        """ListNatGatewayByTagRequest
+        r"""ListNatGatewayByTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListNatGatewayByTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListNatGatewayByTagRequest.
+        r"""Gets the body of this ListNatGatewayByTagRequest.
 
         :return: The body of this ListNatGatewayByTagRequest.
         :rtype: :class:`huaweicloudsdknat.v2.ListNatsByTagsRequestBody`
@@ -52,7 +52,7 @@ class ListNatGatewayByTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListNatGatewayByTagRequest.
+        r"""Sets the body of this ListNatGatewayByTagRequest.
 
         :param body: The body of this ListNatGatewayByTagRequest.
         :type body: :class:`huaweicloudsdknat.v2.ListNatsByTagsRequestBody`

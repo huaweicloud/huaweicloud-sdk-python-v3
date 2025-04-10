@@ -25,7 +25,7 @@ class DeleteProtectionGroupRequest:
     }
 
     def __init__(self, server_group_id=None):
-        """DeleteProtectionGroupRequest
+        r"""DeleteProtectionGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteProtectionGroupRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this DeleteProtectionGroupRequest.
+        r"""Gets the server_group_id of this DeleteProtectionGroupRequest.
 
         保护组ID。
 
@@ -53,7 +53,7 @@ class DeleteProtectionGroupRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this DeleteProtectionGroupRequest.
+        r"""Sets the server_group_id of this DeleteProtectionGroupRequest.
 
         保护组ID。
 

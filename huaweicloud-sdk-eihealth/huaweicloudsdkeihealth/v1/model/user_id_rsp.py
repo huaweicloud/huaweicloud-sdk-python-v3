@@ -25,7 +25,7 @@ class UserIdRsp:
     }
 
     def __init__(self, id=None):
-        """UserIdRsp
+        r"""UserIdRsp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UserIdRsp:
 
     @property
     def id(self):
-        """Gets the id of this UserIdRsp.
+        r"""Gets the id of this UserIdRsp.
 
         用户id
 
@@ -54,7 +54,7 @@ class UserIdRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UserIdRsp.
+        r"""Sets the id of this UserIdRsp.
 
         用户id
 

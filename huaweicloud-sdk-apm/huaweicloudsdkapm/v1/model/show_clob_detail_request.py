@@ -27,7 +27,7 @@ class ShowClobDetailRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """ShowClobDetailRequest
+        r"""ShowClobDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowClobDetailRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ShowClobDetailRequest.
+        r"""Gets the x_business_id of this ShowClobDetailRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class ShowClobDetailRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ShowClobDetailRequest.
+        r"""Sets the x_business_id of this ShowClobDetailRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class ShowClobDetailRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowClobDetailRequest.
+        r"""Gets the body of this ShowClobDetailRequest.
 
         :return: The body of this ShowClobDetailRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.GetClobDetailParam`
@@ -80,7 +80,7 @@ class ShowClobDetailRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowClobDetailRequest.
+        r"""Sets the body of this ShowClobDetailRequest.
 
         :param body: The body of this ShowClobDetailRequest.
         :type body: :class:`huaweicloudsdkapm.v1.GetClobDetailParam`

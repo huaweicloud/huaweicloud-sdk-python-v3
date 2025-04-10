@@ -41,7 +41,7 @@ class ExternalTestCaseHistoryVo:
     }
 
     def __init__(self, author=None, region=None, changes=None, id=None, testcase_id=None, creation_date=None, create_date_timestamp=None, author_name=None, project_id=None):
-        """ExternalTestCaseHistoryVo
+        r"""ExternalTestCaseHistoryVo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ExternalTestCaseHistoryVo:
 
     @property
     def author(self):
-        """Gets the author of this ExternalTestCaseHistoryVo.
+        r"""Gets the author of this ExternalTestCaseHistoryVo.
 
         资源历史记录创建人ID
 
@@ -110,7 +110,7 @@ class ExternalTestCaseHistoryVo:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this ExternalTestCaseHistoryVo.
+        r"""Sets the author of this ExternalTestCaseHistoryVo.
 
         资源历史记录创建人ID
 
@@ -121,7 +121,7 @@ class ExternalTestCaseHistoryVo:
 
     @property
     def region(self):
-        """Gets the region of this ExternalTestCaseHistoryVo.
+        r"""Gets the region of this ExternalTestCaseHistoryVo.
 
         逻辑region
 
@@ -132,7 +132,7 @@ class ExternalTestCaseHistoryVo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ExternalTestCaseHistoryVo.
+        r"""Sets the region of this ExternalTestCaseHistoryVo.
 
         逻辑region
 
@@ -143,7 +143,7 @@ class ExternalTestCaseHistoryVo:
 
     @property
     def changes(self):
-        """Gets the changes of this ExternalTestCaseHistoryVo.
+        r"""Gets the changes of this ExternalTestCaseHistoryVo.
 
         历史记录字段变更列表
 
@@ -154,7 +154,7 @@ class ExternalTestCaseHistoryVo:
 
     @changes.setter
     def changes(self, changes):
-        """Sets the changes of this ExternalTestCaseHistoryVo.
+        r"""Sets the changes of this ExternalTestCaseHistoryVo.
 
         历史记录字段变更列表
 
@@ -165,7 +165,7 @@ class ExternalTestCaseHistoryVo:
 
     @property
     def id(self):
-        """Gets the id of this ExternalTestCaseHistoryVo.
+        r"""Gets the id of this ExternalTestCaseHistoryVo.
 
         历史记录id
 
@@ -176,7 +176,7 @@ class ExternalTestCaseHistoryVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExternalTestCaseHistoryVo.
+        r"""Sets the id of this ExternalTestCaseHistoryVo.
 
         历史记录id
 
@@ -187,7 +187,7 @@ class ExternalTestCaseHistoryVo:
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this ExternalTestCaseHistoryVo.
+        r"""Gets the testcase_id of this ExternalTestCaseHistoryVo.
 
         用例id
 
@@ -198,7 +198,7 @@ class ExternalTestCaseHistoryVo:
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this ExternalTestCaseHistoryVo.
+        r"""Sets the testcase_id of this ExternalTestCaseHistoryVo.
 
         用例id
 
@@ -209,7 +209,7 @@ class ExternalTestCaseHistoryVo:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this ExternalTestCaseHistoryVo.
+        r"""Gets the creation_date of this ExternalTestCaseHistoryVo.
 
         创建时间
 
@@ -220,7 +220,7 @@ class ExternalTestCaseHistoryVo:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this ExternalTestCaseHistoryVo.
+        r"""Sets the creation_date of this ExternalTestCaseHistoryVo.
 
         创建时间
 
@@ -231,7 +231,7 @@ class ExternalTestCaseHistoryVo:
 
     @property
     def create_date_timestamp(self):
-        """Gets the create_date_timestamp of this ExternalTestCaseHistoryVo.
+        r"""Gets the create_date_timestamp of this ExternalTestCaseHistoryVo.
 
         创建时间时间戳
 
@@ -242,7 +242,7 @@ class ExternalTestCaseHistoryVo:
 
     @create_date_timestamp.setter
     def create_date_timestamp(self, create_date_timestamp):
-        """Sets the create_date_timestamp of this ExternalTestCaseHistoryVo.
+        r"""Sets the create_date_timestamp of this ExternalTestCaseHistoryVo.
 
         创建时间时间戳
 
@@ -253,7 +253,7 @@ class ExternalTestCaseHistoryVo:
 
     @property
     def author_name(self):
-        """Gets the author_name of this ExternalTestCaseHistoryVo.
+        r"""Gets the author_name of this ExternalTestCaseHistoryVo.
 
         创建人名称
 
@@ -264,7 +264,7 @@ class ExternalTestCaseHistoryVo:
 
     @author_name.setter
     def author_name(self, author_name):
-        """Sets the author_name of this ExternalTestCaseHistoryVo.
+        r"""Sets the author_name of this ExternalTestCaseHistoryVo.
 
         创建人名称
 
@@ -275,7 +275,7 @@ class ExternalTestCaseHistoryVo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ExternalTestCaseHistoryVo.
+        r"""Gets the project_id of this ExternalTestCaseHistoryVo.
 
         项目id
 
@@ -286,7 +286,7 @@ class ExternalTestCaseHistoryVo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ExternalTestCaseHistoryVo.
+        r"""Sets the project_id of this ExternalTestCaseHistoryVo.
 
         项目id
 

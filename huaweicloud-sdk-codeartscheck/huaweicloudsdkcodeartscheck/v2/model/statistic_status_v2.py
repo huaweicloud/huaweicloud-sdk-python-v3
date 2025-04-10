@@ -29,7 +29,7 @@ class StatisticStatusV2:
     }
 
     def __init__(self, unresolved=None, resolved=None, dismissed=None):
-        """StatisticStatusV2
+        r"""StatisticStatusV2
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class StatisticStatusV2:
 
     @property
     def unresolved(self):
-        """Gets the unresolved of this StatisticStatusV2.
+        r"""Gets the unresolved of this StatisticStatusV2.
 
         未解决
 
@@ -68,7 +68,7 @@ class StatisticStatusV2:
 
     @unresolved.setter
     def unresolved(self, unresolved):
-        """Sets the unresolved of this StatisticStatusV2.
+        r"""Sets the unresolved of this StatisticStatusV2.
 
         未解决
 
@@ -79,7 +79,7 @@ class StatisticStatusV2:
 
     @property
     def resolved(self):
-        """Gets the resolved of this StatisticStatusV2.
+        r"""Gets the resolved of this StatisticStatusV2.
 
         已解决
 
@@ -90,7 +90,7 @@ class StatisticStatusV2:
 
     @resolved.setter
     def resolved(self, resolved):
-        """Sets the resolved of this StatisticStatusV2.
+        r"""Sets the resolved of this StatisticStatusV2.
 
         已解决
 
@@ -101,7 +101,7 @@ class StatisticStatusV2:
 
     @property
     def dismissed(self):
-        """Gets the dismissed of this StatisticStatusV2.
+        r"""Gets the dismissed of this StatisticStatusV2.
 
         已忽略
 
@@ -112,7 +112,7 @@ class StatisticStatusV2:
 
     @dismissed.setter
     def dismissed(self, dismissed):
-        """Sets the dismissed of this StatisticStatusV2.
+        r"""Sets the dismissed of this StatisticStatusV2.
 
         已忽略
 

@@ -27,7 +27,7 @@ class UpdateIpGroupRequest:
     }
 
     def __init__(self, ipgroup_id=None, body=None):
-        """UpdateIpGroupRequest
+        r"""UpdateIpGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateIpGroupRequest:
 
     @property
     def ipgroup_id(self):
-        """Gets the ipgroup_id of this UpdateIpGroupRequest.
+        r"""Gets the ipgroup_id of this UpdateIpGroupRequest.
 
         参数解释：待更新的IP地址组的ID。
 
@@ -60,7 +60,7 @@ class UpdateIpGroupRequest:
 
     @ipgroup_id.setter
     def ipgroup_id(self, ipgroup_id):
-        """Sets the ipgroup_id of this UpdateIpGroupRequest.
+        r"""Sets the ipgroup_id of this UpdateIpGroupRequest.
 
         参数解释：待更新的IP地址组的ID。
 
@@ -71,7 +71,7 @@ class UpdateIpGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateIpGroupRequest.
+        r"""Gets the body of this UpdateIpGroupRequest.
 
         :return: The body of this UpdateIpGroupRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateIpGroupRequestBody`
@@ -80,7 +80,7 @@ class UpdateIpGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateIpGroupRequest.
+        r"""Sets the body of this UpdateIpGroupRequest.
 
         :param body: The body of this UpdateIpGroupRequest.
         :type body: :class:`huaweicloudsdkelb.v3.UpdateIpGroupRequestBody`

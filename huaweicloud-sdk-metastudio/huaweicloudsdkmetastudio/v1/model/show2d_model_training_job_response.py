@@ -116,7 +116,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, name=None, state=None, asset_id=None, project_id=None, cover_download_url=None, last_update_time=None, create_time=None, contact=None, batch_name=None, tags=None, model_version=None, matting_type=None, model_resolution=None, app_user_id=None, is_flexus=None, is_only_human_model=None, training_video_download_url=None, id_card_image1_download_url=None, id_card_image2_download_url=None, grant_file_download_url=None, pre_beauty_image_download_url=None, action_video_download_url=None, post_beauty_image_download_url=None, audio_file_download_url=None, operation_logs=None, verify_video_matting_info=None, comment_logs=None, samples=None, is_mask_file_uploaded=None, mask_file_download_url=None, verify_video_download_url=None, markable_video_download_url=None, traning_video_mark_info=None, inference_data_process_video_mark_info=None, inference_data_process_action_mark_info=None, inference_data_process_chat_action_mark_info=None, inference_data_process_eye_correction_mark_info=None, is_background_replacement=None, worker_type=None, voice_train_job_id=None, flexus_retry_count=None, audio_source_type=None, supported_service=None, allocated_resource=None, x_request_id=None):
-        """Show2dModelTrainingJobResponse
+        r"""Show2dModelTrainingJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -356,7 +356,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this Show2dModelTrainingJobResponse.
+        r"""Gets the job_id of this Show2dModelTrainingJobResponse.
 
         任务ID。
 
@@ -367,7 +367,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this Show2dModelTrainingJobResponse.
+        r"""Sets the job_id of this Show2dModelTrainingJobResponse.
 
         任务ID。
 
@@ -378,7 +378,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this Show2dModelTrainingJobResponse.
+        r"""Gets the name of this Show2dModelTrainingJobResponse.
 
         分身数字人模型名称。该名称会作为资产库中分身数字人模型资产名称。
 
@@ -389,7 +389,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Show2dModelTrainingJobResponse.
+        r"""Sets the name of this Show2dModelTrainingJobResponse.
 
         分身数字人模型名称。该名称会作为资产库中分身数字人模型资产名称。
 
@@ -400,7 +400,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this Show2dModelTrainingJobResponse.
+        r"""Gets the state of this Show2dModelTrainingJobResponse.
 
         任务的状态。  与MetaStudio Console上用户看到的状态映射关系如下：  - 待提交   * WAIT_FILE_UPLOAD: 待上传文件  - 系统审核中   * AUTO_VERIFYING: 自动审核中   * MANUAL_VERIFYING: 人工审核中  - 系统审核未通过   * AUTO_VERIFY_FAILED: 自动审核失败   * MANUAL_VERIFY_FAILED: 人工审核失败  - 算法训练中   > 算法训练中的状态仅管理员需要处理，普通用户仅需要显示“算法训练中”即可。   * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源   * WAIT_TRAINING_DATA_PREPROCESS: 等待训练数据预处理   * TRAINING_DATA_PREPROCESSING: 训练数据预处理中   * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败   * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中   * TRAINING: 训练中   * TRAIN_FAILED: 训练失败   * TRAIN_SUCCESS: 训练完成，等待预处理资源   * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中   * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败   * WAIT_MAIN_FILE_UPLOAD: 等待主文件上传   * MANUAL_STOP_INFERENCE_DATA_PREPROCESS: 人工中止推理预处理   * MANUAL_STOP_TRAIN: 人工中止训练   * MANUAL_STOP_TRAINING_DATA_PREPROCESS: 人工中止训练预处理   * WAIT_ADMIN_CONFIRM: 等待管理员审核   * WAIT_COMPILE: 等待转编译   * COMPILING: 转编译中   * COMPILE_FAILED: 转编译失败   * WAIT_GENERATE_ACTION: 等待原子动作生成   * WAIT_ARRANGE: 等待编排   * ACTION_GENERATE_DATA_PROCESSING: 原子动作生成中   * MANUAL_STOP_ACTION_GENERATE_DATA_PROCESSING: 人工中止动作生成   * MANUAL_STOP_ACTION_GENERATE_ORI_PROCESSING: 人工中止动作编排   * ACTION_GENERATE_ORI_PROCESSING: 动作编排中   * ACTION_GENERATE_DATA_FAILED: 动作生成失败   * ACTION_GENERATE_ORI_FAILED: 生成动作编排资产失败   * ACTION_GENERATE_ORI_SUCCESS: 动作编排成功   * GENERATE_ACTION_PREPROCESS_FAILED: 生成动作编排原子动作失败   * WAIT_ADMIN_CALIBRATION: 等待管理员确认动作信息   * WAIT_ASSET_SYNC: 等待资产同步  - 待用户审核，仅NA白名单用户有该状态   * WAIT_USER_CONFIRM: 等待用户确认训练效果  - 用户驳回，仅NA白名单用户有该状态   * JOB_REJECT: 驳回任务  - 已完成   * JOB_SUCCESS: 训练任务完成（普通用户任务的完成状态，此时用户已经可以使用模型）   * JOB_FINISH: 任务结束，是最终状态，不支持修改此状态(NA用户任务的完成状态，并且此状态表明模型效果已通过用户的验收)  - 挂起，仅NA白名单用户有该状态   * JOB_PENDING: 挂起任务
 
@@ -411,7 +411,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this Show2dModelTrainingJobResponse.
+        r"""Sets the state of this Show2dModelTrainingJobResponse.
 
         任务的状态。  与MetaStudio Console上用户看到的状态映射关系如下：  - 待提交   * WAIT_FILE_UPLOAD: 待上传文件  - 系统审核中   * AUTO_VERIFYING: 自动审核中   * MANUAL_VERIFYING: 人工审核中  - 系统审核未通过   * AUTO_VERIFY_FAILED: 自动审核失败   * MANUAL_VERIFY_FAILED: 人工审核失败  - 算法训练中   > 算法训练中的状态仅管理员需要处理，普通用户仅需要显示“算法训练中”即可。   * MANUAL_VERIFY_SUCCESS: 审核通过，等待预处理资源   * WAIT_TRAINING_DATA_PREPROCESS: 等待训练数据预处理   * TRAINING_DATA_PREPROCESSING: 训练数据预处理中   * TRAINING_DATA_PREPROCESS_FAILED: 训练数据预处理失败   * TRAINING_DATA_PREPROCESS_SUCCESS: 训练数据预处理完成，等待训练资源中   * TRAINING: 训练中   * TRAIN_FAILED: 训练失败   * TRAIN_SUCCESS: 训练完成，等待预处理资源   * INFERENCE_DATA_PREPROCESSING: 推理数据预处理中   * INFERENCE_DATA_PREPROCESS_FAILED: 推理数据预处理失败   * WAIT_MAIN_FILE_UPLOAD: 等待主文件上传   * MANUAL_STOP_INFERENCE_DATA_PREPROCESS: 人工中止推理预处理   * MANUAL_STOP_TRAIN: 人工中止训练   * MANUAL_STOP_TRAINING_DATA_PREPROCESS: 人工中止训练预处理   * WAIT_ADMIN_CONFIRM: 等待管理员审核   * WAIT_COMPILE: 等待转编译   * COMPILING: 转编译中   * COMPILE_FAILED: 转编译失败   * WAIT_GENERATE_ACTION: 等待原子动作生成   * WAIT_ARRANGE: 等待编排   * ACTION_GENERATE_DATA_PROCESSING: 原子动作生成中   * MANUAL_STOP_ACTION_GENERATE_DATA_PROCESSING: 人工中止动作生成   * MANUAL_STOP_ACTION_GENERATE_ORI_PROCESSING: 人工中止动作编排   * ACTION_GENERATE_ORI_PROCESSING: 动作编排中   * ACTION_GENERATE_DATA_FAILED: 动作生成失败   * ACTION_GENERATE_ORI_FAILED: 生成动作编排资产失败   * ACTION_GENERATE_ORI_SUCCESS: 动作编排成功   * GENERATE_ACTION_PREPROCESS_FAILED: 生成动作编排原子动作失败   * WAIT_ADMIN_CALIBRATION: 等待管理员确认动作信息   * WAIT_ASSET_SYNC: 等待资产同步  - 待用户审核，仅NA白名单用户有该状态   * WAIT_USER_CONFIRM: 等待用户确认训练效果  - 用户驳回，仅NA白名单用户有该状态   * JOB_REJECT: 驳回任务  - 已完成   * JOB_SUCCESS: 训练任务完成（普通用户任务的完成状态，此时用户已经可以使用模型）   * JOB_FINISH: 任务结束，是最终状态，不支持修改此状态(NA用户任务的完成状态，并且此状态表明模型效果已通过用户的验收)  - 挂起，仅NA白名单用户有该状态   * JOB_PENDING: 挂起任务
 
@@ -422,7 +422,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this Show2dModelTrainingJobResponse.
+        r"""Gets the asset_id of this Show2dModelTrainingJobResponse.
 
         模型资产ID。
 
@@ -433,7 +433,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this Show2dModelTrainingJobResponse.
+        r"""Sets the asset_id of this Show2dModelTrainingJobResponse.
 
         模型资产ID。
 
@@ -444,7 +444,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this Show2dModelTrainingJobResponse.
+        r"""Gets the project_id of this Show2dModelTrainingJobResponse.
 
         模型资产所属项目ID。
 
@@ -455,7 +455,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Show2dModelTrainingJobResponse.
+        r"""Sets the project_id of this Show2dModelTrainingJobResponse.
 
         模型资产所属项目ID。
 
@@ -466,7 +466,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def cover_download_url(self):
-        """Gets the cover_download_url of this Show2dModelTrainingJobResponse.
+        r"""Gets the cover_download_url of this Show2dModelTrainingJobResponse.
 
         分身数字人模型封面下载URL。URL有效期24小时。
 
@@ -477,7 +477,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @cover_download_url.setter
     def cover_download_url(self, cover_download_url):
-        """Sets the cover_download_url of this Show2dModelTrainingJobResponse.
+        r"""Sets the cover_download_url of this Show2dModelTrainingJobResponse.
 
         分身数字人模型封面下载URL。URL有效期24小时。
 
@@ -488,7 +488,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this Show2dModelTrainingJobResponse.
+        r"""Gets the last_update_time of this Show2dModelTrainingJobResponse.
 
         用户最近一次更新任务的时间（包括租户创建或者重新提交），格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”
 
@@ -499,7 +499,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this Show2dModelTrainingJobResponse.
+        r"""Sets the last_update_time of this Show2dModelTrainingJobResponse.
 
         用户最近一次更新任务的时间（包括租户创建或者重新提交），格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”
 
@@ -510,7 +510,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this Show2dModelTrainingJobResponse.
+        r"""Gets the create_time of this Show2dModelTrainingJobResponse.
 
         创建时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”
 
@@ -521,7 +521,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Show2dModelTrainingJobResponse.
+        r"""Sets the create_time of this Show2dModelTrainingJobResponse.
 
         创建时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”
 
@@ -532,7 +532,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def contact(self):
-        """Gets the contact of this Show2dModelTrainingJobResponse.
+        r"""Gets the contact of this Show2dModelTrainingJobResponse.
 
         分身数字人训练任务创建者的手机号。
 
@@ -543,7 +543,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @contact.setter
     def contact(self, contact):
-        """Sets the contact of this Show2dModelTrainingJobResponse.
+        r"""Sets the contact of this Show2dModelTrainingJobResponse.
 
         分身数字人训练任务创建者的手机号。
 
@@ -554,7 +554,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def batch_name(self):
-        """Gets the batch_name of this Show2dModelTrainingJobResponse.
+        r"""Gets the batch_name of this Show2dModelTrainingJobResponse.
 
         分身数字人训练任务的批次名称。
 
@@ -565,7 +565,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @batch_name.setter
     def batch_name(self, batch_name):
-        """Sets the batch_name of this Show2dModelTrainingJobResponse.
+        r"""Sets the batch_name of this Show2dModelTrainingJobResponse.
 
         分身数字人训练任务的批次名称。
 
@@ -576,7 +576,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this Show2dModelTrainingJobResponse.
+        r"""Gets the tags of this Show2dModelTrainingJobResponse.
 
         分身数字人训练任务标签。
 
@@ -587,7 +587,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Show2dModelTrainingJobResponse.
+        r"""Sets the tags of this Show2dModelTrainingJobResponse.
 
         分身数字人训练任务标签。
 
@@ -598,7 +598,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def model_version(self):
-        """Gets the model_version of this Show2dModelTrainingJobResponse.
+        r"""Gets the model_version of this Show2dModelTrainingJobResponse.
 
         分身数字人模型版本。默认是V3.2版本模型。 * V3.2：V3.2版本模型 > * V3和V2版本已废弃不用
 
@@ -609,7 +609,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @model_version.setter
     def model_version(self, model_version):
-        """Sets the model_version of this Show2dModelTrainingJobResponse.
+        r"""Sets the model_version of this Show2dModelTrainingJobResponse.
 
         分身数字人模型版本。默认是V3.2版本模型。 * V3.2：V3.2版本模型 > * V3和V2版本已废弃不用
 
@@ -620,7 +620,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def matting_type(self):
-        """Gets the matting_type of this Show2dModelTrainingJobResponse.
+        r"""Gets the matting_type of this Show2dModelTrainingJobResponse.
 
         抠图类型。默认是AI。 * AI：AI抠图 * MANUAL：人工抠图
 
@@ -631,7 +631,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @matting_type.setter
     def matting_type(self, matting_type):
-        """Sets the matting_type of this Show2dModelTrainingJobResponse.
+        r"""Sets the matting_type of this Show2dModelTrainingJobResponse.
 
         抠图类型。默认是AI。 * AI：AI抠图 * MANUAL：人工抠图
 
@@ -642,7 +642,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def model_resolution(self):
-        """Gets the model_resolution of this Show2dModelTrainingJobResponse.
+        r"""Gets the model_resolution of this Show2dModelTrainingJobResponse.
 
         分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
 
@@ -653,7 +653,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @model_resolution.setter
     def model_resolution(self, model_resolution):
-        """Sets the model_resolution of this Show2dModelTrainingJobResponse.
+        r"""Sets the model_resolution of this Show2dModelTrainingJobResponse.
 
         分身数字人模型分辨率。默认是1080P。 * 1080P：1080P。支持1080P及720P的视频输出。 * 4K：4K。支持4K、1080P及720P的视频输出。
 
@@ -664,7 +664,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def app_user_id(self):
-        """Gets the app_user_id of this Show2dModelTrainingJobResponse.
+        r"""Gets the app_user_id of this Show2dModelTrainingJobResponse.
 
         自定义用户id（如创建任务时设置了X-App-UserId则会携带）。
 
@@ -675,7 +675,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @app_user_id.setter
     def app_user_id(self, app_user_id):
-        """Sets the app_user_id of this Show2dModelTrainingJobResponse.
+        r"""Sets the app_user_id of this Show2dModelTrainingJobResponse.
 
         自定义用户id（如创建任务时设置了X-App-UserId则会携带）。
 
@@ -686,7 +686,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def is_flexus(self):
-        """Gets the is_flexus of this Show2dModelTrainingJobResponse.
+        r"""Gets the is_flexus of this Show2dModelTrainingJobResponse.
 
         是否是基础版的形象训练
 
@@ -697,7 +697,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @is_flexus.setter
     def is_flexus(self, is_flexus):
-        """Sets the is_flexus of this Show2dModelTrainingJobResponse.
+        r"""Sets the is_flexus of this Show2dModelTrainingJobResponse.
 
         是否是基础版的形象训练
 
@@ -708,7 +708,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def is_only_human_model(self):
-        """Gets the is_only_human_model of this Show2dModelTrainingJobResponse.
+        r"""Gets the is_only_human_model of this Show2dModelTrainingJobResponse.
 
         是否只训练形象模型，不训练声音模型。仅Flexus版本时有效，默认false。
 
@@ -719,7 +719,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @is_only_human_model.setter
     def is_only_human_model(self, is_only_human_model):
-        """Sets the is_only_human_model of this Show2dModelTrainingJobResponse.
+        r"""Sets the is_only_human_model of this Show2dModelTrainingJobResponse.
 
         是否只训练形象模型，不训练声音模型。仅Flexus版本时有效，默认false。
 
@@ -730,7 +730,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def training_video_download_url(self):
-        """Gets the training_video_download_url of this Show2dModelTrainingJobResponse.
+        r"""Gets the training_video_download_url of this Show2dModelTrainingJobResponse.
 
         分身数字人训练视频下载URL。24小时内有效。
 
@@ -741,7 +741,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @training_video_download_url.setter
     def training_video_download_url(self, training_video_download_url):
-        """Sets the training_video_download_url of this Show2dModelTrainingJobResponse.
+        r"""Sets the training_video_download_url of this Show2dModelTrainingJobResponse.
 
         分身数字人训练视频下载URL。24小时内有效。
 
@@ -752,7 +752,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def id_card_image1_download_url(self):
-        """Gets the id_card_image1_download_url of this Show2dModelTrainingJobResponse.
+        r"""Gets the id_card_image1_download_url of this Show2dModelTrainingJobResponse.
 
         身份证正面照片下载URL。24小时内有效。
 
@@ -763,7 +763,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @id_card_image1_download_url.setter
     def id_card_image1_download_url(self, id_card_image1_download_url):
-        """Sets the id_card_image1_download_url of this Show2dModelTrainingJobResponse.
+        r"""Sets the id_card_image1_download_url of this Show2dModelTrainingJobResponse.
 
         身份证正面照片下载URL。24小时内有效。
 
@@ -774,7 +774,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def id_card_image2_download_url(self):
-        """Gets the id_card_image2_download_url of this Show2dModelTrainingJobResponse.
+        r"""Gets the id_card_image2_download_url of this Show2dModelTrainingJobResponse.
 
         身份证反面照片下载URL。24小时内有效。
 
@@ -785,7 +785,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @id_card_image2_download_url.setter
     def id_card_image2_download_url(self, id_card_image2_download_url):
-        """Sets the id_card_image2_download_url of this Show2dModelTrainingJobResponse.
+        r"""Sets the id_card_image2_download_url of this Show2dModelTrainingJobResponse.
 
         身份证反面照片下载URL。24小时内有效。
 
@@ -796,7 +796,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def grant_file_download_url(self):
-        """Gets the grant_file_download_url of this Show2dModelTrainingJobResponse.
+        r"""Gets the grant_file_download_url of this Show2dModelTrainingJobResponse.
 
         授权书下载URL。24小时内有效。
 
@@ -807,7 +807,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @grant_file_download_url.setter
     def grant_file_download_url(self, grant_file_download_url):
-        """Sets the grant_file_download_url of this Show2dModelTrainingJobResponse.
+        r"""Sets the grant_file_download_url of this Show2dModelTrainingJobResponse.
 
         授权书下载URL。24小时内有效。
 
@@ -818,7 +818,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def pre_beauty_image_download_url(self):
-        """Gets the pre_beauty_image_download_url of this Show2dModelTrainingJobResponse.
+        r"""Gets the pre_beauty_image_download_url of this Show2dModelTrainingJobResponse.
 
         美白前图片下载url。
 
@@ -829,7 +829,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @pre_beauty_image_download_url.setter
     def pre_beauty_image_download_url(self, pre_beauty_image_download_url):
-        """Sets the pre_beauty_image_download_url of this Show2dModelTrainingJobResponse.
+        r"""Sets the pre_beauty_image_download_url of this Show2dModelTrainingJobResponse.
 
         美白前图片下载url。
 
@@ -840,7 +840,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def action_video_download_url(self):
-        """Gets the action_video_download_url of this Show2dModelTrainingJobResponse.
+        r"""Gets the action_video_download_url of this Show2dModelTrainingJobResponse.
 
         动作视频
 
@@ -851,7 +851,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @action_video_download_url.setter
     def action_video_download_url(self, action_video_download_url):
-        """Sets the action_video_download_url of this Show2dModelTrainingJobResponse.
+        r"""Sets the action_video_download_url of this Show2dModelTrainingJobResponse.
 
         动作视频
 
@@ -862,7 +862,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def post_beauty_image_download_url(self):
-        """Gets the post_beauty_image_download_url of this Show2dModelTrainingJobResponse.
+        r"""Gets the post_beauty_image_download_url of this Show2dModelTrainingJobResponse.
 
         美白后图片下载url。
 
@@ -873,7 +873,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @post_beauty_image_download_url.setter
     def post_beauty_image_download_url(self, post_beauty_image_download_url):
-        """Sets the post_beauty_image_download_url of this Show2dModelTrainingJobResponse.
+        r"""Sets the post_beauty_image_download_url of this Show2dModelTrainingJobResponse.
 
         美白后图片下载url。
 
@@ -884,7 +884,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def audio_file_download_url(self):
-        """Gets the audio_file_download_url of this Show2dModelTrainingJobResponse.
+        r"""Gets the audio_file_download_url of this Show2dModelTrainingJobResponse.
 
         音频文件下载url。
 
@@ -895,7 +895,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @audio_file_download_url.setter
     def audio_file_download_url(self, audio_file_download_url):
-        """Sets the audio_file_download_url of this Show2dModelTrainingJobResponse.
+        r"""Sets the audio_file_download_url of this Show2dModelTrainingJobResponse.
 
         音频文件下载url。
 
@@ -906,7 +906,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def operation_logs(self):
-        """Gets the operation_logs of this Show2dModelTrainingJobResponse.
+        r"""Gets the operation_logs of this Show2dModelTrainingJobResponse.
 
         操作日志列表。
 
@@ -917,7 +917,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @operation_logs.setter
     def operation_logs(self, operation_logs):
-        """Sets the operation_logs of this Show2dModelTrainingJobResponse.
+        r"""Sets the operation_logs of this Show2dModelTrainingJobResponse.
 
         操作日志列表。
 
@@ -928,7 +928,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def verify_video_matting_info(self):
-        """Gets the verify_video_matting_info of this Show2dModelTrainingJobResponse.
+        r"""Gets the verify_video_matting_info of this Show2dModelTrainingJobResponse.
 
         生成抠图验证视频时不抠图区域。
 
@@ -939,7 +939,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @verify_video_matting_info.setter
     def verify_video_matting_info(self, verify_video_matting_info):
-        """Sets the verify_video_matting_info of this Show2dModelTrainingJobResponse.
+        r"""Sets the verify_video_matting_info of this Show2dModelTrainingJobResponse.
 
         生成抠图验证视频时不抠图区域。
 
@@ -950,7 +950,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def comment_logs(self):
-        """Gets the comment_logs of this Show2dModelTrainingJobResponse.
+        r"""Gets the comment_logs of this Show2dModelTrainingJobResponse.
 
         评论记录列表。
 
@@ -961,7 +961,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @comment_logs.setter
     def comment_logs(self, comment_logs):
-        """Sets the comment_logs of this Show2dModelTrainingJobResponse.
+        r"""Sets the comment_logs of this Show2dModelTrainingJobResponse.
 
         评论记录列表。
 
@@ -972,7 +972,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def samples(self):
-        """Gets the samples of this Show2dModelTrainingJobResponse.
+        r"""Gets the samples of this Show2dModelTrainingJobResponse.
 
         动作视频样例。
 
@@ -983,7 +983,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @samples.setter
     def samples(self, samples):
-        """Sets the samples of this Show2dModelTrainingJobResponse.
+        r"""Sets the samples of this Show2dModelTrainingJobResponse.
 
         动作视频样例。
 
@@ -994,7 +994,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def is_mask_file_uploaded(self):
-        """Gets the is_mask_file_uploaded of this Show2dModelTrainingJobResponse.
+        r"""Gets the is_mask_file_uploaded of this Show2dModelTrainingJobResponse.
 
         遮罩文件是否已上传。
 
@@ -1005,7 +1005,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @is_mask_file_uploaded.setter
     def is_mask_file_uploaded(self, is_mask_file_uploaded):
-        """Sets the is_mask_file_uploaded of this Show2dModelTrainingJobResponse.
+        r"""Sets the is_mask_file_uploaded of this Show2dModelTrainingJobResponse.
 
         遮罩文件是否已上传。
 
@@ -1016,7 +1016,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def mask_file_download_url(self):
-        """Gets the mask_file_download_url of this Show2dModelTrainingJobResponse.
+        r"""Gets the mask_file_download_url of this Show2dModelTrainingJobResponse.
 
         遮罩下载URL。24小时内有效。
 
@@ -1027,7 +1027,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @mask_file_download_url.setter
     def mask_file_download_url(self, mask_file_download_url):
-        """Sets the mask_file_download_url of this Show2dModelTrainingJobResponse.
+        r"""Sets the mask_file_download_url of this Show2dModelTrainingJobResponse.
 
         遮罩下载URL。24小时内有效。
 
@@ -1038,7 +1038,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def verify_video_download_url(self):
-        """Gets the verify_video_download_url of this Show2dModelTrainingJobResponse.
+        r"""Gets the verify_video_download_url of this Show2dModelTrainingJobResponse.
 
         制作审核视频
 
@@ -1049,7 +1049,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @verify_video_download_url.setter
     def verify_video_download_url(self, verify_video_download_url):
-        """Sets the verify_video_download_url of this Show2dModelTrainingJobResponse.
+        r"""Sets the verify_video_download_url of this Show2dModelTrainingJobResponse.
 
         制作审核视频
 
@@ -1060,7 +1060,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def markable_video_download_url(self):
-        """Gets the markable_video_download_url of this Show2dModelTrainingJobResponse.
+        r"""Gets the markable_video_download_url of this Show2dModelTrainingJobResponse.
 
         标注视频url下载链接。24小时内有效。
 
@@ -1071,7 +1071,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @markable_video_download_url.setter
     def markable_video_download_url(self, markable_video_download_url):
-        """Sets the markable_video_download_url of this Show2dModelTrainingJobResponse.
+        r"""Sets the markable_video_download_url of this Show2dModelTrainingJobResponse.
 
         标注视频url下载链接。24小时内有效。
 
@@ -1082,7 +1082,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def traning_video_mark_info(self):
-        """Gets the traning_video_mark_info of this Show2dModelTrainingJobResponse.
+        r"""Gets the traning_video_mark_info of this Show2dModelTrainingJobResponse.
 
         :return: The traning_video_mark_info of this Show2dModelTrainingJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.TrainingVideoMarkInfo`
@@ -1091,7 +1091,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @traning_video_mark_info.setter
     def traning_video_mark_info(self, traning_video_mark_info):
-        """Sets the traning_video_mark_info of this Show2dModelTrainingJobResponse.
+        r"""Sets the traning_video_mark_info of this Show2dModelTrainingJobResponse.
 
         :param traning_video_mark_info: The traning_video_mark_info of this Show2dModelTrainingJobResponse.
         :type traning_video_mark_info: :class:`huaweicloudsdkmetastudio.v1.TrainingVideoMarkInfo`
@@ -1100,7 +1100,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def inference_data_process_video_mark_info(self):
-        """Gets the inference_data_process_video_mark_info of this Show2dModelTrainingJobResponse.
+        r"""Gets the inference_data_process_video_mark_info of this Show2dModelTrainingJobResponse.
 
         :return: The inference_data_process_video_mark_info of this Show2dModelTrainingJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.InferenceVideoMarkInfo`
@@ -1109,7 +1109,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @inference_data_process_video_mark_info.setter
     def inference_data_process_video_mark_info(self, inference_data_process_video_mark_info):
-        """Sets the inference_data_process_video_mark_info of this Show2dModelTrainingJobResponse.
+        r"""Sets the inference_data_process_video_mark_info of this Show2dModelTrainingJobResponse.
 
         :param inference_data_process_video_mark_info: The inference_data_process_video_mark_info of this Show2dModelTrainingJobResponse.
         :type inference_data_process_video_mark_info: :class:`huaweicloudsdkmetastudio.v1.InferenceVideoMarkInfo`
@@ -1118,7 +1118,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def inference_data_process_action_mark_info(self):
-        """Gets the inference_data_process_action_mark_info of this Show2dModelTrainingJobResponse.
+        r"""Gets the inference_data_process_action_mark_info of this Show2dModelTrainingJobResponse.
 
         :return: The inference_data_process_action_mark_info of this Show2dModelTrainingJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.InferenceActionMarkInfo`
@@ -1127,7 +1127,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @inference_data_process_action_mark_info.setter
     def inference_data_process_action_mark_info(self, inference_data_process_action_mark_info):
-        """Sets the inference_data_process_action_mark_info of this Show2dModelTrainingJobResponse.
+        r"""Sets the inference_data_process_action_mark_info of this Show2dModelTrainingJobResponse.
 
         :param inference_data_process_action_mark_info: The inference_data_process_action_mark_info of this Show2dModelTrainingJobResponse.
         :type inference_data_process_action_mark_info: :class:`huaweicloudsdkmetastudio.v1.InferenceActionMarkInfo`
@@ -1136,7 +1136,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def inference_data_process_chat_action_mark_info(self):
-        """Gets the inference_data_process_chat_action_mark_info of this Show2dModelTrainingJobResponse.
+        r"""Gets the inference_data_process_chat_action_mark_info of this Show2dModelTrainingJobResponse.
 
         :return: The inference_data_process_chat_action_mark_info of this Show2dModelTrainingJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.InferenceActionMarkInfo`
@@ -1145,7 +1145,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @inference_data_process_chat_action_mark_info.setter
     def inference_data_process_chat_action_mark_info(self, inference_data_process_chat_action_mark_info):
-        """Sets the inference_data_process_chat_action_mark_info of this Show2dModelTrainingJobResponse.
+        r"""Sets the inference_data_process_chat_action_mark_info of this Show2dModelTrainingJobResponse.
 
         :param inference_data_process_chat_action_mark_info: The inference_data_process_chat_action_mark_info of this Show2dModelTrainingJobResponse.
         :type inference_data_process_chat_action_mark_info: :class:`huaweicloudsdkmetastudio.v1.InferenceActionMarkInfo`
@@ -1154,7 +1154,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def inference_data_process_eye_correction_mark_info(self):
-        """Gets the inference_data_process_eye_correction_mark_info of this Show2dModelTrainingJobResponse.
+        r"""Gets the inference_data_process_eye_correction_mark_info of this Show2dModelTrainingJobResponse.
 
         :return: The inference_data_process_eye_correction_mark_info of this Show2dModelTrainingJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.InferenceEyeCorrectionMarkInfo`
@@ -1163,7 +1163,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @inference_data_process_eye_correction_mark_info.setter
     def inference_data_process_eye_correction_mark_info(self, inference_data_process_eye_correction_mark_info):
-        """Sets the inference_data_process_eye_correction_mark_info of this Show2dModelTrainingJobResponse.
+        r"""Sets the inference_data_process_eye_correction_mark_info of this Show2dModelTrainingJobResponse.
 
         :param inference_data_process_eye_correction_mark_info: The inference_data_process_eye_correction_mark_info of this Show2dModelTrainingJobResponse.
         :type inference_data_process_eye_correction_mark_info: :class:`huaweicloudsdkmetastudio.v1.InferenceEyeCorrectionMarkInfo`
@@ -1172,7 +1172,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def is_background_replacement(self):
-        """Gets the is_background_replacement of this Show2dModelTrainingJobResponse.
+        r"""Gets the is_background_replacement of this Show2dModelTrainingJobResponse.
 
         分身数字人是否需要背景替换。需要背景替换的分身数字人训练视频需要绿幕拍摄。
 
@@ -1183,7 +1183,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @is_background_replacement.setter
     def is_background_replacement(self, is_background_replacement):
-        """Sets the is_background_replacement of this Show2dModelTrainingJobResponse.
+        r"""Sets the is_background_replacement of this Show2dModelTrainingJobResponse.
 
         分身数字人是否需要背景替换。需要背景替换的分身数字人训练视频需要绿幕拍摄。
 
@@ -1194,7 +1194,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def worker_type(self):
-        """Gets the worker_type of this Show2dModelTrainingJobResponse.
+        r"""Gets the worker_type of this Show2dModelTrainingJobResponse.
 
         转编译任务机型
 
@@ -1205,7 +1205,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @worker_type.setter
     def worker_type(self, worker_type):
-        """Sets the worker_type of this Show2dModelTrainingJobResponse.
+        r"""Sets the worker_type of this Show2dModelTrainingJobResponse.
 
         转编译任务机型
 
@@ -1216,7 +1216,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def voice_train_job_id(self):
-        """Gets the voice_train_job_id of this Show2dModelTrainingJobResponse.
+        r"""Gets the voice_train_job_id of this Show2dModelTrainingJobResponse.
 
         声音训练任务id。
 
@@ -1227,7 +1227,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @voice_train_job_id.setter
     def voice_train_job_id(self, voice_train_job_id):
-        """Sets the voice_train_job_id of this Show2dModelTrainingJobResponse.
+        r"""Sets the voice_train_job_id of this Show2dModelTrainingJobResponse.
 
         声音训练任务id。
 
@@ -1238,7 +1238,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def flexus_retry_count(self):
-        """Gets the flexus_retry_count of this Show2dModelTrainingJobResponse.
+        r"""Gets the flexus_retry_count of this Show2dModelTrainingJobResponse.
 
         flexus版本任务剩余可以重训的次数，每重训一次减1，减到0时不可再重训。
 
@@ -1249,7 +1249,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @flexus_retry_count.setter
     def flexus_retry_count(self, flexus_retry_count):
-        """Sets the flexus_retry_count of this Show2dModelTrainingJobResponse.
+        r"""Sets the flexus_retry_count of this Show2dModelTrainingJobResponse.
 
         flexus版本任务剩余可以重训的次数，每重训一次减1，减到0时不可再重训。
 
@@ -1260,7 +1260,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def audio_source_type(self):
-        """Gets the audio_source_type of this Show2dModelTrainingJobResponse.
+        r"""Gets the audio_source_type of this Show2dModelTrainingJobResponse.
 
         声音来源类型 * VIDEO：视频中抽取音频 * AUDIO：单独上传的音频
 
@@ -1271,7 +1271,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @audio_source_type.setter
     def audio_source_type(self, audio_source_type):
-        """Sets the audio_source_type of this Show2dModelTrainingJobResponse.
+        r"""Sets the audio_source_type of this Show2dModelTrainingJobResponse.
 
         声音来源类型 * VIDEO：视频中抽取音频 * AUDIO：单独上传的音频
 
@@ -1282,7 +1282,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def supported_service(self):
-        """Gets the supported_service of this Show2dModelTrainingJobResponse.
+        r"""Gets the supported_service of this Show2dModelTrainingJobResponse.
 
         该任务所生成的模型支持的业务类型，可多选。  Flexus版数字人仅支持选择“VIDEO_2D”。
 
@@ -1293,7 +1293,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @supported_service.setter
     def supported_service(self, supported_service):
-        """Sets the supported_service of this Show2dModelTrainingJobResponse.
+        r"""Sets the supported_service of this Show2dModelTrainingJobResponse.
 
         该任务所生成的模型支持的业务类型，可多选。  Flexus版数字人仅支持选择“VIDEO_2D”。
 
@@ -1304,7 +1304,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def allocated_resource(self):
-        """Gets the allocated_resource of this Show2dModelTrainingJobResponse.
+        r"""Gets the allocated_resource of this Show2dModelTrainingJobResponse.
 
         :return: The allocated_resource of this Show2dModelTrainingJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.TrainingAllocatedResource`
@@ -1313,7 +1313,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @allocated_resource.setter
     def allocated_resource(self, allocated_resource):
-        """Sets the allocated_resource of this Show2dModelTrainingJobResponse.
+        r"""Sets the allocated_resource of this Show2dModelTrainingJobResponse.
 
         :param allocated_resource: The allocated_resource of this Show2dModelTrainingJobResponse.
         :type allocated_resource: :class:`huaweicloudsdkmetastudio.v1.TrainingAllocatedResource`
@@ -1322,7 +1322,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this Show2dModelTrainingJobResponse.
+        r"""Gets the x_request_id of this Show2dModelTrainingJobResponse.
 
         :return: The x_request_id of this Show2dModelTrainingJobResponse.
         :rtype: str
@@ -1331,7 +1331,7 @@ class Show2dModelTrainingJobResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this Show2dModelTrainingJobResponse.
+        r"""Sets the x_request_id of this Show2dModelTrainingJobResponse.
 
         :param x_request_id: The x_request_id of this Show2dModelTrainingJobResponse.
         :type x_request_id: str

@@ -27,7 +27,7 @@ class ChangeBaremetalServerNameRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ChangeBaremetalServerNameRequest
+        r"""ChangeBaremetalServerNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeBaremetalServerNameRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ChangeBaremetalServerNameRequest.
+        r"""Gets the server_id of this ChangeBaremetalServerNameRequest.
 
         裸金属服务器ID
 
@@ -60,7 +60,7 @@ class ChangeBaremetalServerNameRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ChangeBaremetalServerNameRequest.
+        r"""Sets the server_id of this ChangeBaremetalServerNameRequest.
 
         裸金属服务器ID
 
@@ -71,7 +71,7 @@ class ChangeBaremetalServerNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeBaremetalServerNameRequest.
+        r"""Gets the body of this ChangeBaremetalServerNameRequest.
 
         :return: The body of this ChangeBaremetalServerNameRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.ChangeBaremetalNameBody`
@@ -80,7 +80,7 @@ class ChangeBaremetalServerNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeBaremetalServerNameRequest.
+        r"""Sets the body of this ChangeBaremetalServerNameRequest.
 
         :param body: The body of this ChangeBaremetalServerNameRequest.
         :type body: :class:`huaweicloudsdkbms.v1.ChangeBaremetalNameBody`

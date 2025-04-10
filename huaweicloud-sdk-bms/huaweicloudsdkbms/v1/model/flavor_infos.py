@@ -37,7 +37,7 @@ class FlavorInfos:
     }
 
     def __init__(self, id=None, name=None, disk=None, vcpus=None, ram=None, gpus=None, asic_accelerators=None):
-        """FlavorInfos
+        r"""FlavorInfos
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class FlavorInfos:
 
     @property
     def id(self):
-        """Gets the id of this FlavorInfos.
+        r"""Gets the id of this FlavorInfos.
 
         裸金属服务器规格ID
 
@@ -96,7 +96,7 @@ class FlavorInfos:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FlavorInfos.
+        r"""Sets the id of this FlavorInfos.
 
         裸金属服务器规格ID
 
@@ -107,7 +107,7 @@ class FlavorInfos:
 
     @property
     def name(self):
-        """Gets the name of this FlavorInfos.
+        r"""Gets the name of this FlavorInfos.
 
         裸金属服务器规格名称
 
@@ -118,7 +118,7 @@ class FlavorInfos:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlavorInfos.
+        r"""Sets the name of this FlavorInfos.
 
         裸金属服务器规格名称
 
@@ -129,7 +129,7 @@ class FlavorInfos:
 
     @property
     def disk(self):
-        """Gets the disk of this FlavorInfos.
+        r"""Gets the disk of this FlavorInfos.
 
         该裸金属服务器规格对应要求系统盘大小，0为不限制。
 
@@ -140,7 +140,7 @@ class FlavorInfos:
 
     @disk.setter
     def disk(self, disk):
-        """Sets the disk of this FlavorInfos.
+        r"""Sets the disk of this FlavorInfos.
 
         该裸金属服务器规格对应要求系统盘大小，0为不限制。
 
@@ -151,7 +151,7 @@ class FlavorInfos:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this FlavorInfos.
+        r"""Gets the vcpus of this FlavorInfos.
 
         该裸金属服务器规格对应的CPU核数
 
@@ -162,7 +162,7 @@ class FlavorInfos:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this FlavorInfos.
+        r"""Sets the vcpus of this FlavorInfos.
 
         该裸金属服务器规格对应的CPU核数
 
@@ -173,7 +173,7 @@ class FlavorInfos:
 
     @property
     def ram(self):
-        """Gets the ram of this FlavorInfos.
+        r"""Gets the ram of this FlavorInfos.
 
         该裸金属服务器规格对应的内存大小，单位为MB
 
@@ -184,7 +184,7 @@ class FlavorInfos:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this FlavorInfos.
+        r"""Sets the ram of this FlavorInfos.
 
         该裸金属服务器规格对应的内存大小，单位为MB
 
@@ -195,7 +195,7 @@ class FlavorInfos:
 
     @property
     def gpus(self):
-        """Gets the gpus of this FlavorInfos.
+        r"""Gets the gpus of this FlavorInfos.
 
         该裸金属服务器规格对应的GPU设备。
 
@@ -206,7 +206,7 @@ class FlavorInfos:
 
     @gpus.setter
     def gpus(self, gpus):
-        """Sets the gpus of this FlavorInfos.
+        r"""Sets the gpus of this FlavorInfos.
 
         该裸金属服务器规格对应的GPU设备。
 
@@ -217,7 +217,7 @@ class FlavorInfos:
 
     @property
     def asic_accelerators(self):
-        """Gets the asic_accelerators of this FlavorInfos.
+        r"""Gets the asic_accelerators of this FlavorInfos.
 
         该裸金属服务器规格对应的ASIC设备。
 
@@ -228,7 +228,7 @@ class FlavorInfos:
 
     @asic_accelerators.setter
     def asic_accelerators(self, asic_accelerators):
-        """Sets the asic_accelerators of this FlavorInfos.
+        r"""Sets the asic_accelerators of this FlavorInfos.
 
         该裸金属服务器规格对应的ASIC设备。
 

@@ -29,7 +29,7 @@ class VpcDetail:
     }
 
     def __init__(self, id=None, name=None, cidr=None):
-        """VpcDetail
+        r"""VpcDetail
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VpcDetail:
 
     @property
     def id(self):
-        """Gets the id of this VpcDetail.
+        r"""Gets the id of this VpcDetail.
 
         创建引流VPC产生的随机UUID
 
@@ -68,7 +68,7 @@ class VpcDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VpcDetail.
+        r"""Sets the id of this VpcDetail.
 
         创建引流VPC产生的随机UUID
 
@@ -79,7 +79,7 @@ class VpcDetail:
 
     @property
     def name(self):
-        """Gets the name of this VpcDetail.
+        r"""Gets the name of this VpcDetail.
 
         引流VPC名称
 
@@ -90,7 +90,7 @@ class VpcDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VpcDetail.
+        r"""Sets the name of this VpcDetail.
 
         引流VPC名称
 
@@ -101,7 +101,7 @@ class VpcDetail:
 
     @property
     def cidr(self):
-        """Gets the cidr of this VpcDetail.
+        r"""Gets the cidr of this VpcDetail.
 
         功能说明：虚拟私有云下可用子网的范围 取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24 不指定cidr时，默认值为空 约束：必须是cidr格式，例如:192.168.0.0/16
 
@@ -112,7 +112,7 @@ class VpcDetail:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this VpcDetail.
+        r"""Sets the cidr of this VpcDetail.
 
         功能说明：虚拟私有云下可用子网的范围 取值范围： 10.0.0.0/8~24 172.16.0.0/12~24 192.168.0.0/16~24 不指定cidr时，默认值为空 约束：必须是cidr格式，例如:192.168.0.0/16
 

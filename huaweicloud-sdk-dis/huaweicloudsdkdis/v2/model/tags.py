@@ -27,7 +27,7 @@ class Tags:
     }
 
     def __init__(self, key=None, values=None):
-        """Tags
+        r"""Tags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Tags:
 
     @property
     def key(self):
-        """Gets the key of this Tags.
+        r"""Gets the key of this Tags.
 
         键。  - 不能为空。  - 对于同一资源键值唯一。  - 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -61,7 +61,7 @@ class Tags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Tags.
+        r"""Sets the key of this Tags.
 
         键。  - 不能为空。  - 对于同一资源键值唯一。  - 字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -72,7 +72,7 @@ class Tags:
 
     @property
     def values(self):
-        """Gets the values of this Tags.
+        r"""Gets the values of this Tags.
 
         标签值列表。  如果values为空列表，则表示any_value。value之间为或的关系。
 
@@ -83,7 +83,7 @@ class Tags:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this Tags.
+        r"""Sets the values of this Tags.
 
         标签值列表。  如果values为空列表，则表示any_value。value之间为或的关系。
 

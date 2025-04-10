@@ -24,7 +24,7 @@ class DeleteApiAclBindingV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteApiAclBindingV2Response
+        r"""DeleteApiAclBindingV2Response
 
         The model defined in huaweicloud sdk
 

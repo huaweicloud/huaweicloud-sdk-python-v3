@@ -25,7 +25,7 @@ class CreateScriptRequest:
     }
 
     def __init__(self, body=None):
-        """CreateScriptRequest
+        r"""CreateScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateScriptRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateScriptRequest.
+        r"""Gets the body of this CreateScriptRequest.
 
         :return: The body of this CreateScriptRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateScriptReq`
@@ -52,7 +52,7 @@ class CreateScriptRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateScriptRequest.
+        r"""Sets the body of this CreateScriptRequest.
 
         :param body: The body of this CreateScriptRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateScriptReq`

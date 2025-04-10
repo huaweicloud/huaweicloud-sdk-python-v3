@@ -25,7 +25,7 @@ class HandleUnionMemberQuitListRequest:
     }
 
     def __init__(self, body=None):
-        """HandleUnionMemberQuitListRequest
+        r"""HandleUnionMemberQuitListRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class HandleUnionMemberQuitListRequest:
 
     @property
     def body(self):
-        """Gets the body of this HandleUnionMemberQuitListRequest.
+        r"""Gets the body of this HandleUnionMemberQuitListRequest.
 
         :return: The body of this HandleUnionMemberQuitListRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.QuitUnionFromMemberListRequestBody`
@@ -52,7 +52,7 @@ class HandleUnionMemberQuitListRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this HandleUnionMemberQuitListRequest.
+        r"""Sets the body of this HandleUnionMemberQuitListRequest.
 
         :param body: The body of this HandleUnionMemberQuitListRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.QuitUnionFromMemberListRequestBody`

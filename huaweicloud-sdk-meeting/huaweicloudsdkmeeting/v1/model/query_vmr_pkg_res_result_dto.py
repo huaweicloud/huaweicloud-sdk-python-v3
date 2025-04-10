@@ -33,7 +33,7 @@ class QueryVmrPkgResResultDTO:
     }
 
     def __init__(self, vmr_pkg_id=None, vmr_name=None, vmr_pkg_parties=None, vmr_pkg_count=None, vmr_pkg_used_count=None):
-        """QueryVmrPkgResResultDTO
+        r"""QueryVmrPkgResResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class QueryVmrPkgResResultDTO:
 
     @property
     def vmr_pkg_id(self):
-        """Gets the vmr_pkg_id of this QueryVmrPkgResResultDTO.
+        r"""Gets the vmr_pkg_id of this QueryVmrPkgResResultDTO.
 
         云会议室套餐包id。
 
@@ -82,7 +82,7 @@ class QueryVmrPkgResResultDTO:
 
     @vmr_pkg_id.setter
     def vmr_pkg_id(self, vmr_pkg_id):
-        """Sets the vmr_pkg_id of this QueryVmrPkgResResultDTO.
+        r"""Sets the vmr_pkg_id of this QueryVmrPkgResResultDTO.
 
         云会议室套餐包id。
 
@@ -93,7 +93,7 @@ class QueryVmrPkgResResultDTO:
 
     @property
     def vmr_name(self):
-        """Gets the vmr_name of this QueryVmrPkgResResultDTO.
+        r"""Gets the vmr_name of this QueryVmrPkgResResultDTO.
 
         云会议室套餐包名称。
 
@@ -104,7 +104,7 @@ class QueryVmrPkgResResultDTO:
 
     @vmr_name.setter
     def vmr_name(self, vmr_name):
-        """Sets the vmr_name of this QueryVmrPkgResResultDTO.
+        r"""Sets the vmr_name of this QueryVmrPkgResResultDTO.
 
         云会议室套餐包名称。
 
@@ -115,7 +115,7 @@ class QueryVmrPkgResResultDTO:
 
     @property
     def vmr_pkg_parties(self):
-        """Gets the vmr_pkg_parties of this QueryVmrPkgResResultDTO.
+        r"""Gets the vmr_pkg_parties of this QueryVmrPkgResResultDTO.
 
         云会议室套餐方数。
 
@@ -126,7 +126,7 @@ class QueryVmrPkgResResultDTO:
 
     @vmr_pkg_parties.setter
     def vmr_pkg_parties(self, vmr_pkg_parties):
-        """Sets the vmr_pkg_parties of this QueryVmrPkgResResultDTO.
+        r"""Sets the vmr_pkg_parties of this QueryVmrPkgResResultDTO.
 
         云会议室套餐方数。
 
@@ -137,7 +137,7 @@ class QueryVmrPkgResResultDTO:
 
     @property
     def vmr_pkg_count(self):
-        """Gets the vmr_pkg_count of this QueryVmrPkgResResultDTO.
+        r"""Gets the vmr_pkg_count of this QueryVmrPkgResResultDTO.
 
         该云会议室套餐分配的总数。
 
@@ -148,7 +148,7 @@ class QueryVmrPkgResResultDTO:
 
     @vmr_pkg_count.setter
     def vmr_pkg_count(self, vmr_pkg_count):
-        """Sets the vmr_pkg_count of this QueryVmrPkgResResultDTO.
+        r"""Sets the vmr_pkg_count of this QueryVmrPkgResResultDTO.
 
         该云会议室套餐分配的总数。
 
@@ -159,7 +159,7 @@ class QueryVmrPkgResResultDTO:
 
     @property
     def vmr_pkg_used_count(self):
-        """Gets the vmr_pkg_used_count of this QueryVmrPkgResResultDTO.
+        r"""Gets the vmr_pkg_used_count of this QueryVmrPkgResResultDTO.
 
         该套餐对应的云会议室已分配数量。
 
@@ -170,7 +170,7 @@ class QueryVmrPkgResResultDTO:
 
     @vmr_pkg_used_count.setter
     def vmr_pkg_used_count(self, vmr_pkg_used_count):
-        """Sets the vmr_pkg_used_count of this QueryVmrPkgResResultDTO.
+        r"""Sets the vmr_pkg_used_count of this QueryVmrPkgResResultDTO.
 
         该套餐对应的云会议室已分配数量。
 

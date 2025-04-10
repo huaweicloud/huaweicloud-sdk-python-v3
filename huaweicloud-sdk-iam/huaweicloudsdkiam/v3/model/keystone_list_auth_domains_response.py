@@ -28,7 +28,7 @@ class KeystoneListAuthDomainsResponse(SdkResponse):
     }
 
     def __init__(self, domains=None, links=None):
-        """KeystoneListAuthDomainsResponse
+        r"""KeystoneListAuthDomainsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class KeystoneListAuthDomainsResponse(SdkResponse):
 
     @property
     def domains(self):
-        """Gets the domains of this KeystoneListAuthDomainsResponse.
+        r"""Gets the domains of this KeystoneListAuthDomainsResponse.
 
         账号信息列表。
 
@@ -62,7 +62,7 @@ class KeystoneListAuthDomainsResponse(SdkResponse):
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this KeystoneListAuthDomainsResponse.
+        r"""Sets the domains of this KeystoneListAuthDomainsResponse.
 
         账号信息列表。
 
@@ -73,7 +73,7 @@ class KeystoneListAuthDomainsResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this KeystoneListAuthDomainsResponse.
+        r"""Gets the links of this KeystoneListAuthDomainsResponse.
 
         :return: The links of this KeystoneListAuthDomainsResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -82,7 +82,7 @@ class KeystoneListAuthDomainsResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneListAuthDomainsResponse.
+        r"""Sets the links of this KeystoneListAuthDomainsResponse.
 
         :param links: The links of this KeystoneListAuthDomainsResponse.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`

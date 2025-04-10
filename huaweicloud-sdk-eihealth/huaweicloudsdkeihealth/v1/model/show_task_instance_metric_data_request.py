@@ -41,7 +41,7 @@ class ShowTaskInstanceMetricDataRequest:
     }
 
     def __init__(self, eihealth_project_id=None, job_id=None, task_name=None, task_index=None, instance_name=None, from_time=None, to_time=None, method=None, metric_name=None):
-        """ShowTaskInstanceMetricDataRequest
+        r"""ShowTaskInstanceMetricDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowTaskInstanceMetricDataRequest.
+        r"""Gets the eihealth_project_id of this ShowTaskInstanceMetricDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -105,7 +105,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowTaskInstanceMetricDataRequest.
+        r"""Sets the eihealth_project_id of this ShowTaskInstanceMetricDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -116,7 +116,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowTaskInstanceMetricDataRequest.
+        r"""Gets the job_id of this ShowTaskInstanceMetricDataRequest.
 
         作业id
 
@@ -127,7 +127,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowTaskInstanceMetricDataRequest.
+        r"""Sets the job_id of this ShowTaskInstanceMetricDataRequest.
 
         作业id
 
@@ -138,7 +138,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ShowTaskInstanceMetricDataRequest.
+        r"""Gets the task_name of this ShowTaskInstanceMetricDataRequest.
 
         子任务名称
 
@@ -149,7 +149,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ShowTaskInstanceMetricDataRequest.
+        r"""Sets the task_name of this ShowTaskInstanceMetricDataRequest.
 
         子任务名称
 
@@ -160,7 +160,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @property
     def task_index(self):
-        """Gets the task_index of this ShowTaskInstanceMetricDataRequest.
+        r"""Gets the task_index of this ShowTaskInstanceMetricDataRequest.
 
         子任务的并发序号
 
@@ -171,7 +171,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @task_index.setter
     def task_index(self, task_index):
-        """Sets the task_index of this ShowTaskInstanceMetricDataRequest.
+        r"""Sets the task_index of this ShowTaskInstanceMetricDataRequest.
 
         子任务的并发序号
 
@@ -182,7 +182,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ShowTaskInstanceMetricDataRequest.
+        r"""Gets the instance_name of this ShowTaskInstanceMetricDataRequest.
 
         子任务实例名称
 
@@ -193,7 +193,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ShowTaskInstanceMetricDataRequest.
+        r"""Sets the instance_name of this ShowTaskInstanceMetricDataRequest.
 
         子任务实例名称
 
@@ -204,7 +204,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @property
     def from_time(self):
-        """Gets the from_time of this ShowTaskInstanceMetricDataRequest.
+        r"""Gets the from_time of this ShowTaskInstanceMetricDataRequest.
 
         查询监控数据起始时间，UNIX时间戳，单位毫秒，不填时默认为当前时间
 
@@ -215,7 +215,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @from_time.setter
     def from_time(self, from_time):
-        """Sets the from_time of this ShowTaskInstanceMetricDataRequest.
+        r"""Sets the from_time of this ShowTaskInstanceMetricDataRequest.
 
         查询监控数据起始时间，UNIX时间戳，单位毫秒，不填时默认为当前时间
 
@@ -226,7 +226,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @property
     def to_time(self):
-        """Gets the to_time of this ShowTaskInstanceMetricDataRequest.
+        r"""Gets the to_time of this ShowTaskInstanceMetricDataRequest.
 
         查询监控数据截止时间，UNIX时间戳，单位毫秒，不填时默认为当前时间
 
@@ -237,7 +237,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @to_time.setter
     def to_time(self, to_time):
-        """Sets the to_time of this ShowTaskInstanceMetricDataRequest.
+        r"""Sets the to_time of this ShowTaskInstanceMetricDataRequest.
 
         查询监控数据截止时间，UNIX时间戳，单位毫秒，不填时默认为当前时间
 
@@ -248,7 +248,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @property
     def method(self):
-        """Gets the method of this ShowTaskInstanceMetricDataRequest.
+        r"""Gets the method of this ShowTaskInstanceMetricDataRequest.
 
         统计方法。枚举值，取值范围：maximum（最大值）、minimum（最小值）、average（平均值），不填时默认为maximum
 
@@ -259,7 +259,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this ShowTaskInstanceMetricDataRequest.
+        r"""Sets the method of this ShowTaskInstanceMetricDataRequest.
 
         统计方法。枚举值，取值范围：maximum（最大值）、minimum（最小值）、average（平均值），不填时默认为maximum
 
@@ -270,7 +270,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ShowTaskInstanceMetricDataRequest.
+        r"""Gets the metric_name of this ShowTaskInstanceMetricDataRequest.
 
         查询的监控指标名称
 
@@ -281,7 +281,7 @@ class ShowTaskInstanceMetricDataRequest:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ShowTaskInstanceMetricDataRequest.
+        r"""Sets the metric_name of this ShowTaskInstanceMetricDataRequest.
 
         查询的监控指标名称
 

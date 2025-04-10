@@ -25,7 +25,7 @@ class DeleteCsrRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteCsrRequest
+        r"""DeleteCsrRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteCsrRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteCsrRequest.
+        r"""Gets the id of this DeleteCsrRequest.
 
         CSR的ID。
 
@@ -53,7 +53,7 @@ class DeleteCsrRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteCsrRequest.
+        r"""Sets the id of this DeleteCsrRequest.
 
         CSR的ID。
 

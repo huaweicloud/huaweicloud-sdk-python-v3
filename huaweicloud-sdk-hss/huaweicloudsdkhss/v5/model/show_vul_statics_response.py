@@ -38,7 +38,7 @@ class ShowVulStaticsResponse(SdkResponse):
     }
 
     def __init__(self, need_urgent_repair=None, unrepair=None, existed_vul_hosts=None, today_handle=None, all_handle=None, supported=None, vul_library_update_time=None):
-        """ShowVulStaticsResponse
+        r"""ShowVulStaticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowVulStaticsResponse(SdkResponse):
 
     @property
     def need_urgent_repair(self):
-        """Gets the need_urgent_repair of this ShowVulStaticsResponse.
+        r"""Gets the need_urgent_repair of this ShowVulStaticsResponse.
 
         需紧急修复的漏洞数
 
@@ -97,7 +97,7 @@ class ShowVulStaticsResponse(SdkResponse):
 
     @need_urgent_repair.setter
     def need_urgent_repair(self, need_urgent_repair):
-        """Sets the need_urgent_repair of this ShowVulStaticsResponse.
+        r"""Sets the need_urgent_repair of this ShowVulStaticsResponse.
 
         需紧急修复的漏洞数
 
@@ -108,7 +108,7 @@ class ShowVulStaticsResponse(SdkResponse):
 
     @property
     def unrepair(self):
-        """Gets the unrepair of this ShowVulStaticsResponse.
+        r"""Gets the unrepair of this ShowVulStaticsResponse.
 
         未完成修复的漏洞数
 
@@ -119,7 +119,7 @@ class ShowVulStaticsResponse(SdkResponse):
 
     @unrepair.setter
     def unrepair(self, unrepair):
-        """Sets the unrepair of this ShowVulStaticsResponse.
+        r"""Sets the unrepair of this ShowVulStaticsResponse.
 
         未完成修复的漏洞数
 
@@ -130,7 +130,7 @@ class ShowVulStaticsResponse(SdkResponse):
 
     @property
     def existed_vul_hosts(self):
-        """Gets the existed_vul_hosts of this ShowVulStaticsResponse.
+        r"""Gets the existed_vul_hosts of this ShowVulStaticsResponse.
 
         存在漏洞的服务器数
 
@@ -141,7 +141,7 @@ class ShowVulStaticsResponse(SdkResponse):
 
     @existed_vul_hosts.setter
     def existed_vul_hosts(self, existed_vul_hosts):
-        """Sets the existed_vul_hosts of this ShowVulStaticsResponse.
+        r"""Sets the existed_vul_hosts of this ShowVulStaticsResponse.
 
         存在漏洞的服务器数
 
@@ -152,7 +152,7 @@ class ShowVulStaticsResponse(SdkResponse):
 
     @property
     def today_handle(self):
-        """Gets the today_handle of this ShowVulStaticsResponse.
+        r"""Gets the today_handle of this ShowVulStaticsResponse.
 
         今日处理漏洞数
 
@@ -163,7 +163,7 @@ class ShowVulStaticsResponse(SdkResponse):
 
     @today_handle.setter
     def today_handle(self, today_handle):
-        """Sets the today_handle of this ShowVulStaticsResponse.
+        r"""Sets the today_handle of this ShowVulStaticsResponse.
 
         今日处理漏洞数
 
@@ -174,7 +174,7 @@ class ShowVulStaticsResponse(SdkResponse):
 
     @property
     def all_handle(self):
-        """Gets the all_handle of this ShowVulStaticsResponse.
+        r"""Gets the all_handle of this ShowVulStaticsResponse.
 
         累计处理漏洞数
 
@@ -185,7 +185,7 @@ class ShowVulStaticsResponse(SdkResponse):
 
     @all_handle.setter
     def all_handle(self, all_handle):
-        """Sets the all_handle of this ShowVulStaticsResponse.
+        r"""Sets the all_handle of this ShowVulStaticsResponse.
 
         累计处理漏洞数
 
@@ -196,7 +196,7 @@ class ShowVulStaticsResponse(SdkResponse):
 
     @property
     def supported(self):
-        """Gets the supported of this ShowVulStaticsResponse.
+        r"""Gets the supported of this ShowVulStaticsResponse.
 
         已支持漏洞数
 
@@ -207,7 +207,7 @@ class ShowVulStaticsResponse(SdkResponse):
 
     @supported.setter
     def supported(self, supported):
-        """Sets the supported of this ShowVulStaticsResponse.
+        r"""Sets the supported of this ShowVulStaticsResponse.
 
         已支持漏洞数
 
@@ -218,7 +218,7 @@ class ShowVulStaticsResponse(SdkResponse):
 
     @property
     def vul_library_update_time(self):
-        """Gets the vul_library_update_time of this ShowVulStaticsResponse.
+        r"""Gets the vul_library_update_time of this ShowVulStaticsResponse.
 
         漏洞库更新时间
 
@@ -229,7 +229,7 @@ class ShowVulStaticsResponse(SdkResponse):
 
     @vul_library_update_time.setter
     def vul_library_update_time(self, vul_library_update_time):
-        """Sets the vul_library_update_time of this ShowVulStaticsResponse.
+        r"""Sets the vul_library_update_time of this ShowVulStaticsResponse.
 
         漏洞库更新时间
 

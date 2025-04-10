@@ -33,7 +33,7 @@ class HealthCheck:
     }
 
     def __init__(self, protocol=None, port=None, unhealthy=None, timeout=None, interval=None):
-        """HealthCheck
+        r"""HealthCheck
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class HealthCheck:
 
     @property
     def protocol(self):
-        """Gets the protocol of this HealthCheck.
+        r"""Gets the protocol of this HealthCheck.
 
         当前LVS只支持TCP_CHECK
 
@@ -82,7 +82,7 @@ class HealthCheck:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this HealthCheck.
+        r"""Sets the protocol of this HealthCheck.
 
         当前LVS只支持TCP_CHECK
 
@@ -93,7 +93,7 @@ class HealthCheck:
 
     @property
     def port(self):
-        """Gets the port of this HealthCheck.
+        r"""Gets the port of this HealthCheck.
 
         健康检查端口
 
@@ -104,7 +104,7 @@ class HealthCheck:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this HealthCheck.
+        r"""Sets the port of this HealthCheck.
 
         健康检查端口
 
@@ -115,7 +115,7 @@ class HealthCheck:
 
     @property
     def unhealthy(self):
-        """Gets the unhealthy of this HealthCheck.
+        r"""Gets the unhealthy of this HealthCheck.
 
         判定后端不健康的阈值，连续探测失败次数
 
@@ -126,7 +126,7 @@ class HealthCheck:
 
     @unhealthy.setter
     def unhealthy(self, unhealthy):
-        """Sets the unhealthy of this HealthCheck.
+        r"""Sets the unhealthy of this HealthCheck.
 
         判定后端不健康的阈值，连续探测失败次数
 
@@ -137,7 +137,7 @@ class HealthCheck:
 
     @property
     def timeout(self):
-        """Gets the timeout of this HealthCheck.
+        r"""Gets the timeout of this HealthCheck.
 
         探测后端的超时时间，单位秒
 
@@ -148,7 +148,7 @@ class HealthCheck:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this HealthCheck.
+        r"""Sets the timeout of this HealthCheck.
 
         探测后端的超时时间，单位秒
 
@@ -159,7 +159,7 @@ class HealthCheck:
 
     @property
     def interval(self):
-        """Gets the interval of this HealthCheck.
+        r"""Gets the interval of this HealthCheck.
 
         探测后端的间隔时间，单位秒
 
@@ -170,7 +170,7 @@ class HealthCheck:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this HealthCheck.
+        r"""Sets the interval of this HealthCheck.
 
         探测后端的间隔时间，单位秒
 

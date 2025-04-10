@@ -25,7 +25,7 @@ class ComBandwidthControlOptions:
     }
 
     def __init__(self, com_bandwidth_control_value=None):
-        """ComBandwidthControlOptions
+        r"""ComBandwidthControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ComBandwidthControlOptions:
 
     @property
     def com_bandwidth_control_value(self):
-        """Gets the com_bandwidth_control_value of this ComBandwidthControlOptions.
+        r"""Gets the com_bandwidth_control_value of this ComBandwidthControlOptions.
 
         串口带宽控制量（Kbps）。取值范围为[500-2000]。默认：1000。
 
@@ -54,7 +54,7 @@ class ComBandwidthControlOptions:
 
     @com_bandwidth_control_value.setter
     def com_bandwidth_control_value(self, com_bandwidth_control_value):
-        """Sets the com_bandwidth_control_value of this ComBandwidthControlOptions.
+        r"""Sets the com_bandwidth_control_value of this ComBandwidthControlOptions.
 
         串口带宽控制量（Kbps）。取值范围为[500-2000]。默认：1000。
 

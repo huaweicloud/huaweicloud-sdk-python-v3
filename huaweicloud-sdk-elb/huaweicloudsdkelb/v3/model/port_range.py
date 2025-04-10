@@ -27,7 +27,7 @@ class PortRange:
     }
 
     def __init__(self, start_port=None, end_port=None):
-        """PortRange
+        r"""PortRange
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PortRange:
 
     @property
     def start_port(self):
-        """Gets the start_port of this PortRange.
+        r"""Gets the start_port of this PortRange.
 
         起始端口
 
@@ -61,7 +61,7 @@ class PortRange:
 
     @start_port.setter
     def start_port(self, start_port):
-        """Sets the start_port of this PortRange.
+        r"""Sets the start_port of this PortRange.
 
         起始端口
 
@@ -72,7 +72,7 @@ class PortRange:
 
     @property
     def end_port(self):
-        """Gets the end_port of this PortRange.
+        r"""Gets the end_port of this PortRange.
 
         结束端口，需大于等于起始端口
 
@@ -83,7 +83,7 @@ class PortRange:
 
     @end_port.setter
     def end_port(self, end_port):
-        """Sets the end_port of this PortRange.
+        r"""Sets the end_port of this PortRange.
 
         结束端口，需大于等于起始端口
 

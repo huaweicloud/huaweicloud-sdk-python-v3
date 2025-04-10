@@ -27,7 +27,7 @@ class UpdateInternetBandwidthRequest:
     }
 
     def __init__(self, internet_bandwidth_id=None, body=None):
-        """UpdateInternetBandwidthRequest
+        r"""UpdateInternetBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateInternetBandwidthRequest:
 
     @property
     def internet_bandwidth_id(self):
-        """Gets the internet_bandwidth_id of this UpdateInternetBandwidthRequest.
+        r"""Gets the internet_bandwidth_id of this UpdateInternetBandwidthRequest.
 
         :return: The internet_bandwidth_id of this UpdateInternetBandwidthRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class UpdateInternetBandwidthRequest:
 
     @internet_bandwidth_id.setter
     def internet_bandwidth_id(self, internet_bandwidth_id):
-        """Sets the internet_bandwidth_id of this UpdateInternetBandwidthRequest.
+        r"""Sets the internet_bandwidth_id of this UpdateInternetBandwidthRequest.
 
         :param internet_bandwidth_id: The internet_bandwidth_id of this UpdateInternetBandwidthRequest.
         :type internet_bandwidth_id: str
@@ -67,7 +67,7 @@ class UpdateInternetBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInternetBandwidthRequest.
+        r"""Gets the body of this UpdateInternetBandwidthRequest.
 
         :return: The body of this UpdateInternetBandwidthRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.UpdateInternetBandwidthRequestBody`
@@ -76,7 +76,7 @@ class UpdateInternetBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInternetBandwidthRequest.
+        r"""Sets the body of this UpdateInternetBandwidthRequest.
 
         :param body: The body of this UpdateInternetBandwidthRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.UpdateInternetBandwidthRequestBody`

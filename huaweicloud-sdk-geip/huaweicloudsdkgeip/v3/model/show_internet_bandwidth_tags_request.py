@@ -25,7 +25,7 @@ class ShowInternetBandwidthTagsRequest:
     }
 
     def __init__(self, resource_id=None):
-        """ShowInternetBandwidthTagsRequest
+        r"""ShowInternetBandwidthTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowInternetBandwidthTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowInternetBandwidthTagsRequest.
+        r"""Gets the resource_id of this ShowInternetBandwidthTagsRequest.
 
         :return: The resource_id of this ShowInternetBandwidthTagsRequest.
         :rtype: str
@@ -51,7 +51,7 @@ class ShowInternetBandwidthTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowInternetBandwidthTagsRequest.
+        r"""Sets the resource_id of this ShowInternetBandwidthTagsRequest.
 
         :param resource_id: The resource_id of this ShowInternetBandwidthTagsRequest.
         :type resource_id: str

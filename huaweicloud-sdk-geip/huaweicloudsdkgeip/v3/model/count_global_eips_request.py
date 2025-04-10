@@ -69,7 +69,7 @@ class CountGlobalEipsRequest:
     }
 
     def __init__(self, id=None, internet_bandwidth_id=None, name=None, name_like=None, access_site=None, geip_pool_name=None, isp=None, ip_version=None, ip_address=None, ipv6_address=None, freezen=None, polluted=None, internet_bandwidth_is_null=None, gcb_bandwidth_is_null=None, status=None, associate_instance_info_region=None, associate_instance_info_public_border_group=None, associate_instance_info_instance_site=None, associate_instance_info_instance_type=None, associate_instance_info_instance_id=None, associate_instance_info_project_id=None, enterprise_project_id=None, tags=None):
-        """CountGlobalEipsRequest
+        r"""CountGlobalEipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -197,7 +197,7 @@ class CountGlobalEipsRequest:
 
     @property
     def id(self):
-        """Gets the id of this CountGlobalEipsRequest.
+        r"""Gets the id of this CountGlobalEipsRequest.
 
         :return: The id of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -206,7 +206,7 @@ class CountGlobalEipsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CountGlobalEipsRequest.
+        r"""Sets the id of this CountGlobalEipsRequest.
 
         :param id: The id of this CountGlobalEipsRequest.
         :type id: list[str]
@@ -215,7 +215,7 @@ class CountGlobalEipsRequest:
 
     @property
     def internet_bandwidth_id(self):
-        """Gets the internet_bandwidth_id of this CountGlobalEipsRequest.
+        r"""Gets the internet_bandwidth_id of this CountGlobalEipsRequest.
 
         :return: The internet_bandwidth_id of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -224,7 +224,7 @@ class CountGlobalEipsRequest:
 
     @internet_bandwidth_id.setter
     def internet_bandwidth_id(self, internet_bandwidth_id):
-        """Sets the internet_bandwidth_id of this CountGlobalEipsRequest.
+        r"""Sets the internet_bandwidth_id of this CountGlobalEipsRequest.
 
         :param internet_bandwidth_id: The internet_bandwidth_id of this CountGlobalEipsRequest.
         :type internet_bandwidth_id: list[str]
@@ -233,7 +233,7 @@ class CountGlobalEipsRequest:
 
     @property
     def name(self):
-        """Gets the name of this CountGlobalEipsRequest.
+        r"""Gets the name of this CountGlobalEipsRequest.
 
         :return: The name of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -242,7 +242,7 @@ class CountGlobalEipsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CountGlobalEipsRequest.
+        r"""Sets the name of this CountGlobalEipsRequest.
 
         :param name: The name of this CountGlobalEipsRequest.
         :type name: list[str]
@@ -251,7 +251,7 @@ class CountGlobalEipsRequest:
 
     @property
     def name_like(self):
-        """Gets the name_like of this CountGlobalEipsRequest.
+        r"""Gets the name_like of this CountGlobalEipsRequest.
 
         :return: The name_like of this CountGlobalEipsRequest.
         :rtype: str
@@ -260,7 +260,7 @@ class CountGlobalEipsRequest:
 
     @name_like.setter
     def name_like(self, name_like):
-        """Sets the name_like of this CountGlobalEipsRequest.
+        r"""Sets the name_like of this CountGlobalEipsRequest.
 
         :param name_like: The name_like of this CountGlobalEipsRequest.
         :type name_like: str
@@ -269,7 +269,7 @@ class CountGlobalEipsRequest:
 
     @property
     def access_site(self):
-        """Gets the access_site of this CountGlobalEipsRequest.
+        r"""Gets the access_site of this CountGlobalEipsRequest.
 
         :return: The access_site of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -278,7 +278,7 @@ class CountGlobalEipsRequest:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this CountGlobalEipsRequest.
+        r"""Sets the access_site of this CountGlobalEipsRequest.
 
         :param access_site: The access_site of this CountGlobalEipsRequest.
         :type access_site: list[str]
@@ -287,7 +287,7 @@ class CountGlobalEipsRequest:
 
     @property
     def geip_pool_name(self):
-        """Gets the geip_pool_name of this CountGlobalEipsRequest.
+        r"""Gets the geip_pool_name of this CountGlobalEipsRequest.
 
         :return: The geip_pool_name of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -296,7 +296,7 @@ class CountGlobalEipsRequest:
 
     @geip_pool_name.setter
     def geip_pool_name(self, geip_pool_name):
-        """Sets the geip_pool_name of this CountGlobalEipsRequest.
+        r"""Sets the geip_pool_name of this CountGlobalEipsRequest.
 
         :param geip_pool_name: The geip_pool_name of this CountGlobalEipsRequest.
         :type geip_pool_name: list[str]
@@ -305,7 +305,7 @@ class CountGlobalEipsRequest:
 
     @property
     def isp(self):
-        """Gets the isp of this CountGlobalEipsRequest.
+        r"""Gets the isp of this CountGlobalEipsRequest.
 
         :return: The isp of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -314,7 +314,7 @@ class CountGlobalEipsRequest:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this CountGlobalEipsRequest.
+        r"""Sets the isp of this CountGlobalEipsRequest.
 
         :param isp: The isp of this CountGlobalEipsRequest.
         :type isp: list[str]
@@ -323,7 +323,7 @@ class CountGlobalEipsRequest:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this CountGlobalEipsRequest.
+        r"""Gets the ip_version of this CountGlobalEipsRequest.
 
         :return: The ip_version of this CountGlobalEipsRequest.
         :rtype: list[int]
@@ -332,7 +332,7 @@ class CountGlobalEipsRequest:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this CountGlobalEipsRequest.
+        r"""Sets the ip_version of this CountGlobalEipsRequest.
 
         :param ip_version: The ip_version of this CountGlobalEipsRequest.
         :type ip_version: list[int]
@@ -341,7 +341,7 @@ class CountGlobalEipsRequest:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this CountGlobalEipsRequest.
+        r"""Gets the ip_address of this CountGlobalEipsRequest.
 
         :return: The ip_address of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -350,7 +350,7 @@ class CountGlobalEipsRequest:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this CountGlobalEipsRequest.
+        r"""Sets the ip_address of this CountGlobalEipsRequest.
 
         :param ip_address: The ip_address of this CountGlobalEipsRequest.
         :type ip_address: list[str]
@@ -359,7 +359,7 @@ class CountGlobalEipsRequest:
 
     @property
     def ipv6_address(self):
-        """Gets the ipv6_address of this CountGlobalEipsRequest.
+        r"""Gets the ipv6_address of this CountGlobalEipsRequest.
 
         :return: The ipv6_address of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -368,7 +368,7 @@ class CountGlobalEipsRequest:
 
     @ipv6_address.setter
     def ipv6_address(self, ipv6_address):
-        """Sets the ipv6_address of this CountGlobalEipsRequest.
+        r"""Sets the ipv6_address of this CountGlobalEipsRequest.
 
         :param ipv6_address: The ipv6_address of this CountGlobalEipsRequest.
         :type ipv6_address: list[str]
@@ -377,7 +377,7 @@ class CountGlobalEipsRequest:
 
     @property
     def freezen(self):
-        """Gets the freezen of this CountGlobalEipsRequest.
+        r"""Gets the freezen of this CountGlobalEipsRequest.
 
         :return: The freezen of this CountGlobalEipsRequest.
         :rtype: list[bool]
@@ -386,7 +386,7 @@ class CountGlobalEipsRequest:
 
     @freezen.setter
     def freezen(self, freezen):
-        """Sets the freezen of this CountGlobalEipsRequest.
+        r"""Sets the freezen of this CountGlobalEipsRequest.
 
         :param freezen: The freezen of this CountGlobalEipsRequest.
         :type freezen: list[bool]
@@ -395,7 +395,7 @@ class CountGlobalEipsRequest:
 
     @property
     def polluted(self):
-        """Gets the polluted of this CountGlobalEipsRequest.
+        r"""Gets the polluted of this CountGlobalEipsRequest.
 
         :return: The polluted of this CountGlobalEipsRequest.
         :rtype: list[bool]
@@ -404,7 +404,7 @@ class CountGlobalEipsRequest:
 
     @polluted.setter
     def polluted(self, polluted):
-        """Sets the polluted of this CountGlobalEipsRequest.
+        r"""Sets the polluted of this CountGlobalEipsRequest.
 
         :param polluted: The polluted of this CountGlobalEipsRequest.
         :type polluted: list[bool]
@@ -413,7 +413,7 @@ class CountGlobalEipsRequest:
 
     @property
     def internet_bandwidth_is_null(self):
-        """Gets the internet_bandwidth_is_null of this CountGlobalEipsRequest.
+        r"""Gets the internet_bandwidth_is_null of this CountGlobalEipsRequest.
 
         :return: The internet_bandwidth_is_null of this CountGlobalEipsRequest.
         :rtype: list[bool]
@@ -422,7 +422,7 @@ class CountGlobalEipsRequest:
 
     @internet_bandwidth_is_null.setter
     def internet_bandwidth_is_null(self, internet_bandwidth_is_null):
-        """Sets the internet_bandwidth_is_null of this CountGlobalEipsRequest.
+        r"""Sets the internet_bandwidth_is_null of this CountGlobalEipsRequest.
 
         :param internet_bandwidth_is_null: The internet_bandwidth_is_null of this CountGlobalEipsRequest.
         :type internet_bandwidth_is_null: list[bool]
@@ -431,7 +431,7 @@ class CountGlobalEipsRequest:
 
     @property
     def gcb_bandwidth_is_null(self):
-        """Gets the gcb_bandwidth_is_null of this CountGlobalEipsRequest.
+        r"""Gets the gcb_bandwidth_is_null of this CountGlobalEipsRequest.
 
         :return: The gcb_bandwidth_is_null of this CountGlobalEipsRequest.
         :rtype: list[bool]
@@ -440,7 +440,7 @@ class CountGlobalEipsRequest:
 
     @gcb_bandwidth_is_null.setter
     def gcb_bandwidth_is_null(self, gcb_bandwidth_is_null):
-        """Sets the gcb_bandwidth_is_null of this CountGlobalEipsRequest.
+        r"""Sets the gcb_bandwidth_is_null of this CountGlobalEipsRequest.
 
         :param gcb_bandwidth_is_null: The gcb_bandwidth_is_null of this CountGlobalEipsRequest.
         :type gcb_bandwidth_is_null: list[bool]
@@ -449,7 +449,7 @@ class CountGlobalEipsRequest:
 
     @property
     def status(self):
-        """Gets the status of this CountGlobalEipsRequest.
+        r"""Gets the status of this CountGlobalEipsRequest.
 
         :return: The status of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -458,7 +458,7 @@ class CountGlobalEipsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CountGlobalEipsRequest.
+        r"""Sets the status of this CountGlobalEipsRequest.
 
         :param status: The status of this CountGlobalEipsRequest.
         :type status: list[str]
@@ -467,7 +467,7 @@ class CountGlobalEipsRequest:
 
     @property
     def associate_instance_info_region(self):
-        """Gets the associate_instance_info_region of this CountGlobalEipsRequest.
+        r"""Gets the associate_instance_info_region of this CountGlobalEipsRequest.
 
         :return: The associate_instance_info_region of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -476,7 +476,7 @@ class CountGlobalEipsRequest:
 
     @associate_instance_info_region.setter
     def associate_instance_info_region(self, associate_instance_info_region):
-        """Sets the associate_instance_info_region of this CountGlobalEipsRequest.
+        r"""Sets the associate_instance_info_region of this CountGlobalEipsRequest.
 
         :param associate_instance_info_region: The associate_instance_info_region of this CountGlobalEipsRequest.
         :type associate_instance_info_region: list[str]
@@ -485,7 +485,7 @@ class CountGlobalEipsRequest:
 
     @property
     def associate_instance_info_public_border_group(self):
-        """Gets the associate_instance_info_public_border_group of this CountGlobalEipsRequest.
+        r"""Gets the associate_instance_info_public_border_group of this CountGlobalEipsRequest.
 
         :return: The associate_instance_info_public_border_group of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -494,7 +494,7 @@ class CountGlobalEipsRequest:
 
     @associate_instance_info_public_border_group.setter
     def associate_instance_info_public_border_group(self, associate_instance_info_public_border_group):
-        """Sets the associate_instance_info_public_border_group of this CountGlobalEipsRequest.
+        r"""Sets the associate_instance_info_public_border_group of this CountGlobalEipsRequest.
 
         :param associate_instance_info_public_border_group: The associate_instance_info_public_border_group of this CountGlobalEipsRequest.
         :type associate_instance_info_public_border_group: list[str]
@@ -503,7 +503,7 @@ class CountGlobalEipsRequest:
 
     @property
     def associate_instance_info_instance_site(self):
-        """Gets the associate_instance_info_instance_site of this CountGlobalEipsRequest.
+        r"""Gets the associate_instance_info_instance_site of this CountGlobalEipsRequest.
 
         :return: The associate_instance_info_instance_site of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -512,7 +512,7 @@ class CountGlobalEipsRequest:
 
     @associate_instance_info_instance_site.setter
     def associate_instance_info_instance_site(self, associate_instance_info_instance_site):
-        """Sets the associate_instance_info_instance_site of this CountGlobalEipsRequest.
+        r"""Sets the associate_instance_info_instance_site of this CountGlobalEipsRequest.
 
         :param associate_instance_info_instance_site: The associate_instance_info_instance_site of this CountGlobalEipsRequest.
         :type associate_instance_info_instance_site: list[str]
@@ -521,7 +521,7 @@ class CountGlobalEipsRequest:
 
     @property
     def associate_instance_info_instance_type(self):
-        """Gets the associate_instance_info_instance_type of this CountGlobalEipsRequest.
+        r"""Gets the associate_instance_info_instance_type of this CountGlobalEipsRequest.
 
         :return: The associate_instance_info_instance_type of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -530,7 +530,7 @@ class CountGlobalEipsRequest:
 
     @associate_instance_info_instance_type.setter
     def associate_instance_info_instance_type(self, associate_instance_info_instance_type):
-        """Sets the associate_instance_info_instance_type of this CountGlobalEipsRequest.
+        r"""Sets the associate_instance_info_instance_type of this CountGlobalEipsRequest.
 
         :param associate_instance_info_instance_type: The associate_instance_info_instance_type of this CountGlobalEipsRequest.
         :type associate_instance_info_instance_type: list[str]
@@ -539,7 +539,7 @@ class CountGlobalEipsRequest:
 
     @property
     def associate_instance_info_instance_id(self):
-        """Gets the associate_instance_info_instance_id of this CountGlobalEipsRequest.
+        r"""Gets the associate_instance_info_instance_id of this CountGlobalEipsRequest.
 
         :return: The associate_instance_info_instance_id of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -548,7 +548,7 @@ class CountGlobalEipsRequest:
 
     @associate_instance_info_instance_id.setter
     def associate_instance_info_instance_id(self, associate_instance_info_instance_id):
-        """Sets the associate_instance_info_instance_id of this CountGlobalEipsRequest.
+        r"""Sets the associate_instance_info_instance_id of this CountGlobalEipsRequest.
 
         :param associate_instance_info_instance_id: The associate_instance_info_instance_id of this CountGlobalEipsRequest.
         :type associate_instance_info_instance_id: list[str]
@@ -557,7 +557,7 @@ class CountGlobalEipsRequest:
 
     @property
     def associate_instance_info_project_id(self):
-        """Gets the associate_instance_info_project_id of this CountGlobalEipsRequest.
+        r"""Gets the associate_instance_info_project_id of this CountGlobalEipsRequest.
 
         :return: The associate_instance_info_project_id of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -566,7 +566,7 @@ class CountGlobalEipsRequest:
 
     @associate_instance_info_project_id.setter
     def associate_instance_info_project_id(self, associate_instance_info_project_id):
-        """Sets the associate_instance_info_project_id of this CountGlobalEipsRequest.
+        r"""Sets the associate_instance_info_project_id of this CountGlobalEipsRequest.
 
         :param associate_instance_info_project_id: The associate_instance_info_project_id of this CountGlobalEipsRequest.
         :type associate_instance_info_project_id: list[str]
@@ -575,7 +575,7 @@ class CountGlobalEipsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CountGlobalEipsRequest.
+        r"""Gets the enterprise_project_id of this CountGlobalEipsRequest.
 
         :return: The enterprise_project_id of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -584,7 +584,7 @@ class CountGlobalEipsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CountGlobalEipsRequest.
+        r"""Sets the enterprise_project_id of this CountGlobalEipsRequest.
 
         :param enterprise_project_id: The enterprise_project_id of this CountGlobalEipsRequest.
         :type enterprise_project_id: list[str]
@@ -593,7 +593,7 @@ class CountGlobalEipsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this CountGlobalEipsRequest.
+        r"""Gets the tags of this CountGlobalEipsRequest.
 
         :return: The tags of this CountGlobalEipsRequest.
         :rtype: list[str]
@@ -602,7 +602,7 @@ class CountGlobalEipsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CountGlobalEipsRequest.
+        r"""Sets the tags of this CountGlobalEipsRequest.
 
         :param tags: The tags of this CountGlobalEipsRequest.
         :type tags: list[str]

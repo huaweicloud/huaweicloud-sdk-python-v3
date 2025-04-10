@@ -31,7 +31,7 @@ class BatchUpdateDevicesStatusRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, value=None, body=None):
-        """BatchUpdateDevicesStatusRequest
+        r"""BatchUpdateDevicesStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class BatchUpdateDevicesStatusRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchUpdateDevicesStatusRequest.
+        r"""Gets the x_request_id of this BatchUpdateDevicesStatusRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -74,7 +74,7 @@ class BatchUpdateDevicesStatusRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchUpdateDevicesStatusRequest.
+        r"""Sets the x_request_id of this BatchUpdateDevicesStatusRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -85,7 +85,7 @@ class BatchUpdateDevicesStatusRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this BatchUpdateDevicesStatusRequest.
+        r"""Gets the accept_language of this BatchUpdateDevicesStatusRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -96,7 +96,7 @@ class BatchUpdateDevicesStatusRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this BatchUpdateDevicesStatusRequest.
+        r"""Sets the accept_language of this BatchUpdateDevicesStatusRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -107,7 +107,7 @@ class BatchUpdateDevicesStatusRequest:
 
     @property
     def value(self):
-        """Gets the value of this BatchUpdateDevicesStatusRequest.
+        r"""Gets the value of this BatchUpdateDevicesStatusRequest.
 
         状态。 * 0：启用 * 1：停用 
 
@@ -118,7 +118,7 @@ class BatchUpdateDevicesStatusRequest:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this BatchUpdateDevicesStatusRequest.
+        r"""Sets the value of this BatchUpdateDevicesStatusRequest.
 
         状态。 * 0：启用 * 1：停用 
 
@@ -129,7 +129,7 @@ class BatchUpdateDevicesStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateDevicesStatusRequest.
+        r"""Gets the body of this BatchUpdateDevicesStatusRequest.
 
         :return: The body of this BatchUpdateDevicesStatusRequest.
         :rtype: list[str]
@@ -138,7 +138,7 @@ class BatchUpdateDevicesStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateDevicesStatusRequest.
+        r"""Sets the body of this BatchUpdateDevicesStatusRequest.
 
         :param body: The body of this BatchUpdateDevicesStatusRequest.
         :type body: list[str]

@@ -33,7 +33,7 @@ class PermissionHostDetailNew:
     }
 
     def __init__(self, can_view=None, can_edit=None, can_delete=None, can_add_host=None, can_copy=None):
-        """PermissionHostDetailNew
+        r"""PermissionHostDetailNew
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PermissionHostDetailNew:
 
     @property
     def can_view(self):
-        """Gets the can_view of this PermissionHostDetailNew.
+        r"""Gets the can_view of this PermissionHostDetailNew.
 
         是否有查看权限
 
@@ -82,7 +82,7 @@ class PermissionHostDetailNew:
 
     @can_view.setter
     def can_view(self, can_view):
-        """Sets the can_view of this PermissionHostDetailNew.
+        r"""Sets the can_view of this PermissionHostDetailNew.
 
         是否有查看权限
 
@@ -93,7 +93,7 @@ class PermissionHostDetailNew:
 
     @property
     def can_edit(self):
-        """Gets the can_edit of this PermissionHostDetailNew.
+        r"""Gets the can_edit of this PermissionHostDetailNew.
 
         是否有编辑权限
 
@@ -104,7 +104,7 @@ class PermissionHostDetailNew:
 
     @can_edit.setter
     def can_edit(self, can_edit):
-        """Sets the can_edit of this PermissionHostDetailNew.
+        r"""Sets the can_edit of this PermissionHostDetailNew.
 
         是否有编辑权限
 
@@ -115,7 +115,7 @@ class PermissionHostDetailNew:
 
     @property
     def can_delete(self):
-        """Gets the can_delete of this PermissionHostDetailNew.
+        r"""Gets the can_delete of this PermissionHostDetailNew.
 
         是否有删除权限
 
@@ -126,7 +126,7 @@ class PermissionHostDetailNew:
 
     @can_delete.setter
     def can_delete(self, can_delete):
-        """Sets the can_delete of this PermissionHostDetailNew.
+        r"""Sets the can_delete of this PermissionHostDetailNew.
 
         是否有删除权限
 
@@ -137,7 +137,7 @@ class PermissionHostDetailNew:
 
     @property
     def can_add_host(self):
-        """Gets the can_add_host of this PermissionHostDetailNew.
+        r"""Gets the can_add_host of this PermissionHostDetailNew.
 
         是否有添加主机权限
 
@@ -148,7 +148,7 @@ class PermissionHostDetailNew:
 
     @can_add_host.setter
     def can_add_host(self, can_add_host):
-        """Sets the can_add_host of this PermissionHostDetailNew.
+        r"""Sets the can_add_host of this PermissionHostDetailNew.
 
         是否有添加主机权限
 
@@ -159,7 +159,7 @@ class PermissionHostDetailNew:
 
     @property
     def can_copy(self):
-        """Gets the can_copy of this PermissionHostDetailNew.
+        r"""Gets the can_copy of this PermissionHostDetailNew.
 
         是否有复制主机权限
 
@@ -170,7 +170,7 @@ class PermissionHostDetailNew:
 
     @can_copy.setter
     def can_copy(self, can_copy):
-        """Sets the can_copy of this PermissionHostDetailNew.
+        r"""Sets the can_copy of this PermissionHostDetailNew.
 
         是否有复制主机权限
 

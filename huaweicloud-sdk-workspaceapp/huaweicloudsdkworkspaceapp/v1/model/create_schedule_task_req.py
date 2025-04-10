@@ -51,7 +51,7 @@ class CreateScheduleTaskReq:
     }
 
     def __init__(self, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, time_zone=None, scheduled_date=None, scheduled_time=None, expire_time=None, task_name=None, task_type=None, schedule_task_policy=None, description=None, target_infos=None):
-        """CreateScheduleTaskReq
+        r"""CreateScheduleTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class CreateScheduleTaskReq:
 
     @property
     def scheduled_type(self):
-        """Gets the scheduled_type of this CreateScheduleTaskReq.
+        r"""Gets the scheduled_type of this CreateScheduleTaskReq.
 
         :return: The scheduled_type of this CreateScheduleTaskReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
@@ -143,7 +143,7 @@ class CreateScheduleTaskReq:
 
     @scheduled_type.setter
     def scheduled_type(self, scheduled_type):
-        """Sets the scheduled_type of this CreateScheduleTaskReq.
+        r"""Sets the scheduled_type of this CreateScheduleTaskReq.
 
         :param scheduled_type: The scheduled_type of this CreateScheduleTaskReq.
         :type scheduled_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
@@ -152,7 +152,7 @@ class CreateScheduleTaskReq:
 
     @property
     def day_interval(self):
-        """Gets the day_interval of this CreateScheduleTaskReq.
+        r"""Gets the day_interval of this CreateScheduleTaskReq.
 
         周期按天时：按x天间隔执行。
 
@@ -163,7 +163,7 @@ class CreateScheduleTaskReq:
 
     @day_interval.setter
     def day_interval(self, day_interval):
-        """Sets the day_interval of this CreateScheduleTaskReq.
+        r"""Sets the day_interval of this CreateScheduleTaskReq.
 
         周期按天时：按x天间隔执行。
 
@@ -174,7 +174,7 @@ class CreateScheduleTaskReq:
 
     @property
     def week_list(self):
-        """Gets the week_list of this CreateScheduleTaskReq.
+        r"""Gets the week_list of this CreateScheduleTaskReq.
 
         周期按周时：取值1~7，英文逗号分隔，如1,2,7。
 
@@ -185,7 +185,7 @@ class CreateScheduleTaskReq:
 
     @week_list.setter
     def week_list(self, week_list):
-        """Sets the week_list of this CreateScheduleTaskReq.
+        r"""Sets the week_list of this CreateScheduleTaskReq.
 
         周期按周时：取值1~7，英文逗号分隔，如1,2,7。
 
@@ -196,7 +196,7 @@ class CreateScheduleTaskReq:
 
     @property
     def month_list(self):
-        """Gets the month_list of this CreateScheduleTaskReq.
+        r"""Gets the month_list of this CreateScheduleTaskReq.
 
         周期按月时：取值1~12，英文逗号分隔，如1,3,12。
 
@@ -207,7 +207,7 @@ class CreateScheduleTaskReq:
 
     @month_list.setter
     def month_list(self, month_list):
-        """Sets the month_list of this CreateScheduleTaskReq.
+        r"""Sets the month_list of this CreateScheduleTaskReq.
 
         周期按月时：取值1~12，英文逗号分隔，如1,3,12。
 
@@ -218,7 +218,7 @@ class CreateScheduleTaskReq:
 
     @property
     def date_list(self):
-        """Gets the date_list of this CreateScheduleTaskReq.
+        r"""Gets the date_list of this CreateScheduleTaskReq.
 
         周期按月时：取值1~31及L(代表当月最后一天)，英文逗号分隔，如1,2,28,L。
 
@@ -229,7 +229,7 @@ class CreateScheduleTaskReq:
 
     @date_list.setter
     def date_list(self, date_list):
-        """Sets the date_list of this CreateScheduleTaskReq.
+        r"""Sets the date_list of this CreateScheduleTaskReq.
 
         周期按月时：取值1~31及L(代表当月最后一天)，英文逗号分隔，如1,2,28,L。
 
@@ -240,7 +240,7 @@ class CreateScheduleTaskReq:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this CreateScheduleTaskReq.
+        r"""Gets the time_zone of this CreateScheduleTaskReq.
 
         时区。
 
@@ -251,7 +251,7 @@ class CreateScheduleTaskReq:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this CreateScheduleTaskReq.
+        r"""Sets the time_zone of this CreateScheduleTaskReq.
 
         时区。
 
@@ -262,7 +262,7 @@ class CreateScheduleTaskReq:
 
     @property
     def scheduled_date(self):
-        """Gets the scheduled_date of this CreateScheduleTaskReq.
+        r"""Gets the scheduled_date of this CreateScheduleTaskReq.
 
         周期指定时间时：表示指定的日期，格式为yyyy-MM-dd。
 
@@ -273,7 +273,7 @@ class CreateScheduleTaskReq:
 
     @scheduled_date.setter
     def scheduled_date(self, scheduled_date):
-        """Sets the scheduled_date of this CreateScheduleTaskReq.
+        r"""Sets the scheduled_date of this CreateScheduleTaskReq.
 
         周期指定时间时：表示指定的日期，格式为yyyy-MM-dd。
 
@@ -284,7 +284,7 @@ class CreateScheduleTaskReq:
 
     @property
     def scheduled_time(self):
-        """Gets the scheduled_time of this CreateScheduleTaskReq.
+        r"""Gets the scheduled_time of this CreateScheduleTaskReq.
 
         指定的执行时间点，格式为HH:mm:ss。
 
@@ -295,7 +295,7 @@ class CreateScheduleTaskReq:
 
     @scheduled_time.setter
     def scheduled_time(self, scheduled_time):
-        """Sets the scheduled_time of this CreateScheduleTaskReq.
+        r"""Sets the scheduled_time of this CreateScheduleTaskReq.
 
         指定的执行时间点，格式为HH:mm:ss。
 
@@ -306,7 +306,7 @@ class CreateScheduleTaskReq:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this CreateScheduleTaskReq.
+        r"""Gets the expire_time of this CreateScheduleTaskReq.
 
         到期时间。
 
@@ -317,7 +317,7 @@ class CreateScheduleTaskReq:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this CreateScheduleTaskReq.
+        r"""Sets the expire_time of this CreateScheduleTaskReq.
 
         到期时间。
 
@@ -328,7 +328,7 @@ class CreateScheduleTaskReq:
 
     @property
     def task_name(self):
-        """Gets the task_name of this CreateScheduleTaskReq.
+        r"""Gets the task_name of this CreateScheduleTaskReq.
 
         任务名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
 
@@ -339,7 +339,7 @@ class CreateScheduleTaskReq:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this CreateScheduleTaskReq.
+        r"""Sets the task_name of this CreateScheduleTaskReq.
 
         任务名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
 
@@ -350,7 +350,7 @@ class CreateScheduleTaskReq:
 
     @property
     def task_type(self):
-        """Gets the task_type of this CreateScheduleTaskReq.
+        r"""Gets the task_type of this CreateScheduleTaskReq.
 
         :return: The task_type of this CreateScheduleTaskReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
@@ -359,7 +359,7 @@ class CreateScheduleTaskReq:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this CreateScheduleTaskReq.
+        r"""Sets the task_type of this CreateScheduleTaskReq.
 
         :param task_type: The task_type of this CreateScheduleTaskReq.
         :type task_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
@@ -368,7 +368,7 @@ class CreateScheduleTaskReq:
 
     @property
     def schedule_task_policy(self):
-        """Gets the schedule_task_policy of this CreateScheduleTaskReq.
+        r"""Gets the schedule_task_policy of this CreateScheduleTaskReq.
 
         :return: The schedule_task_policy of this CreateScheduleTaskReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskPolicy`
@@ -377,7 +377,7 @@ class CreateScheduleTaskReq:
 
     @schedule_task_policy.setter
     def schedule_task_policy(self, schedule_task_policy):
-        """Sets the schedule_task_policy of this CreateScheduleTaskReq.
+        r"""Sets the schedule_task_policy of this CreateScheduleTaskReq.
 
         :param schedule_task_policy: The schedule_task_policy of this CreateScheduleTaskReq.
         :type schedule_task_policy: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskPolicy`
@@ -386,7 +386,7 @@ class CreateScheduleTaskReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateScheduleTaskReq.
+        r"""Gets the description of this CreateScheduleTaskReq.
 
         任务描述。
 
@@ -397,7 +397,7 @@ class CreateScheduleTaskReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateScheduleTaskReq.
+        r"""Sets the description of this CreateScheduleTaskReq.
 
         任务描述。
 
@@ -408,7 +408,7 @@ class CreateScheduleTaskReq:
 
     @property
     def target_infos(self):
-        """Gets the target_infos of this CreateScheduleTaskReq.
+        r"""Gets the target_infos of this CreateScheduleTaskReq.
 
         定时任务对象列表。
 
@@ -419,7 +419,7 @@ class CreateScheduleTaskReq:
 
     @target_infos.setter
     def target_infos(self, target_infos):
-        """Sets the target_infos of this CreateScheduleTaskReq.
+        r"""Sets the target_infos of this CreateScheduleTaskReq.
 
         定时任务对象列表。
 

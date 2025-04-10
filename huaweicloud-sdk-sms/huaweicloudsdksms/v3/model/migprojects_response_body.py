@@ -49,7 +49,7 @@ class MigprojectsResponseBody:
     }
 
     def __init__(self, id=None, name=None, use_public_ip=None, isdefault=None, start_target_server=None, region=None, speed_limit=None, exist_server=None, description=None, type=None, enterprise_project=None, syncing=None, start_network_check=None):
-        """MigprojectsResponseBody
+        r"""MigprojectsResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class MigprojectsResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this MigprojectsResponseBody.
+        r"""Gets the id of this MigprojectsResponseBody.
 
         迁移项目ID
 
@@ -138,7 +138,7 @@ class MigprojectsResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MigprojectsResponseBody.
+        r"""Sets the id of this MigprojectsResponseBody.
 
         迁移项目ID
 
@@ -149,7 +149,7 @@ class MigprojectsResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this MigprojectsResponseBody.
+        r"""Gets the name of this MigprojectsResponseBody.
 
         迁移项目名称
 
@@ -160,7 +160,7 @@ class MigprojectsResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MigprojectsResponseBody.
+        r"""Sets the name of this MigprojectsResponseBody.
 
         迁移项目名称
 
@@ -171,7 +171,7 @@ class MigprojectsResponseBody:
 
     @property
     def use_public_ip(self):
-        """Gets the use_public_ip of this MigprojectsResponseBody.
+        r"""Gets the use_public_ip of this MigprojectsResponseBody.
 
         是否使用公网IP迁移
 
@@ -182,7 +182,7 @@ class MigprojectsResponseBody:
 
     @use_public_ip.setter
     def use_public_ip(self, use_public_ip):
-        """Sets the use_public_ip of this MigprojectsResponseBody.
+        r"""Sets the use_public_ip of this MigprojectsResponseBody.
 
         是否使用公网IP迁移
 
@@ -193,7 +193,7 @@ class MigprojectsResponseBody:
 
     @property
     def isdefault(self):
-        """Gets the isdefault of this MigprojectsResponseBody.
+        r"""Gets the isdefault of this MigprojectsResponseBody.
 
         是否为默认模板
 
@@ -204,7 +204,7 @@ class MigprojectsResponseBody:
 
     @isdefault.setter
     def isdefault(self, isdefault):
-        """Sets the isdefault of this MigprojectsResponseBody.
+        r"""Sets the isdefault of this MigprojectsResponseBody.
 
         是否为默认模板
 
@@ -215,7 +215,7 @@ class MigprojectsResponseBody:
 
     @property
     def start_target_server(self):
-        """Gets the start_target_server of this MigprojectsResponseBody.
+        r"""Gets the start_target_server of this MigprojectsResponseBody.
 
         迁移后是否启动目的端虚拟机
 
@@ -226,7 +226,7 @@ class MigprojectsResponseBody:
 
     @start_target_server.setter
     def start_target_server(self, start_target_server):
-        """Sets the start_target_server of this MigprojectsResponseBody.
+        r"""Sets the start_target_server of this MigprojectsResponseBody.
 
         迁移后是否启动目的端虚拟机
 
@@ -237,7 +237,7 @@ class MigprojectsResponseBody:
 
     @property
     def region(self):
-        """Gets the region of this MigprojectsResponseBody.
+        r"""Gets the region of this MigprojectsResponseBody.
 
         区域名称
 
@@ -248,7 +248,7 @@ class MigprojectsResponseBody:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this MigprojectsResponseBody.
+        r"""Sets the region of this MigprojectsResponseBody.
 
         区域名称
 
@@ -259,7 +259,7 @@ class MigprojectsResponseBody:
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this MigprojectsResponseBody.
+        r"""Gets the speed_limit of this MigprojectsResponseBody.
 
         模板中配置的限速信息，单位：Mbps
 
@@ -270,7 +270,7 @@ class MigprojectsResponseBody:
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this MigprojectsResponseBody.
+        r"""Sets the speed_limit of this MigprojectsResponseBody.
 
         模板中配置的限速信息，单位：Mbps
 
@@ -281,7 +281,7 @@ class MigprojectsResponseBody:
 
     @property
     def exist_server(self):
-        """Gets the exist_server of this MigprojectsResponseBody.
+        r"""Gets the exist_server of this MigprojectsResponseBody.
 
         迁移项目下是否存在服务器
 
@@ -292,7 +292,7 @@ class MigprojectsResponseBody:
 
     @exist_server.setter
     def exist_server(self, exist_server):
-        """Sets the exist_server of this MigprojectsResponseBody.
+        r"""Sets the exist_server of this MigprojectsResponseBody.
 
         迁移项目下是否存在服务器
 
@@ -303,7 +303,7 @@ class MigprojectsResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this MigprojectsResponseBody.
+        r"""Gets the description of this MigprojectsResponseBody.
 
         迁移项目描述
 
@@ -314,7 +314,7 @@ class MigprojectsResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MigprojectsResponseBody.
+        r"""Sets the description of this MigprojectsResponseBody.
 
         迁移项目描述
 
@@ -325,7 +325,7 @@ class MigprojectsResponseBody:
 
     @property
     def type(self):
-        """Gets the type of this MigprojectsResponseBody.
+        r"""Gets the type of this MigprojectsResponseBody.
 
         迁移项目默认迁移类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
@@ -336,7 +336,7 @@ class MigprojectsResponseBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MigprojectsResponseBody.
+        r"""Sets the type of this MigprojectsResponseBody.
 
         迁移项目默认迁移类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
@@ -347,7 +347,7 @@ class MigprojectsResponseBody:
 
     @property
     def enterprise_project(self):
-        """Gets the enterprise_project of this MigprojectsResponseBody.
+        r"""Gets the enterprise_project of this MigprojectsResponseBody.
 
         迁移项目所属的企业项目名称
 
@@ -358,7 +358,7 @@ class MigprojectsResponseBody:
 
     @enterprise_project.setter
     def enterprise_project(self, enterprise_project):
-        """Sets the enterprise_project of this MigprojectsResponseBody.
+        r"""Sets the enterprise_project of this MigprojectsResponseBody.
 
         迁移项目所属的企业项目名称
 
@@ -369,7 +369,7 @@ class MigprojectsResponseBody:
 
     @property
     def syncing(self):
-        """Gets the syncing of this MigprojectsResponseBody.
+        r"""Gets the syncing of this MigprojectsResponseBody.
 
         是否持续同步
 
@@ -380,7 +380,7 @@ class MigprojectsResponseBody:
 
     @syncing.setter
     def syncing(self, syncing):
-        """Sets the syncing of this MigprojectsResponseBody.
+        r"""Sets the syncing of this MigprojectsResponseBody.
 
         是否持续同步
 
@@ -391,7 +391,7 @@ class MigprojectsResponseBody:
 
     @property
     def start_network_check(self):
-        """Gets the start_network_check of this MigprojectsResponseBody.
+        r"""Gets the start_network_check of this MigprojectsResponseBody.
 
         是否开启网络质量检测
 
@@ -402,7 +402,7 @@ class MigprojectsResponseBody:
 
     @start_network_check.setter
     def start_network_check(self, start_network_check):
-        """Sets the start_network_check of this MigprojectsResponseBody.
+        r"""Sets the start_network_check of this MigprojectsResponseBody.
 
         是否开启网络质量检测
 

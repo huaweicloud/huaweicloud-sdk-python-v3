@@ -26,7 +26,7 @@ class ShowSecretEventResponse(SdkResponse):
     }
 
     def __init__(self, event=None):
-        """ShowSecretEventResponse
+        r"""ShowSecretEventResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSecretEventResponse(SdkResponse):
 
     @property
     def event(self):
-        """Gets the event of this ShowSecretEventResponse.
+        r"""Gets the event of this ShowSecretEventResponse.
 
         :return: The event of this ShowSecretEventResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.Event`
@@ -53,7 +53,7 @@ class ShowSecretEventResponse(SdkResponse):
 
     @event.setter
     def event(self, event):
-        """Sets the event of this ShowSecretEventResponse.
+        r"""Sets the event of this ShowSecretEventResponse.
 
         :param event: The event of this ShowSecretEventResponse.
         :type event: :class:`huaweicloudsdkcsms.v1.Event`

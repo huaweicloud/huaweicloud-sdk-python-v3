@@ -29,7 +29,7 @@ class SetOffSiteBackupPolicyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """SetOffSiteBackupPolicyRequest
+        r"""SetOffSiteBackupPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetOffSiteBackupPolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetOffSiteBackupPolicyRequest.
+        r"""Gets the x_language of this SetOffSiteBackupPolicyRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class SetOffSiteBackupPolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetOffSiteBackupPolicyRequest.
+        r"""Sets the x_language of this SetOffSiteBackupPolicyRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class SetOffSiteBackupPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetOffSiteBackupPolicyRequest.
+        r"""Gets the instance_id of this SetOffSiteBackupPolicyRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class SetOffSiteBackupPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetOffSiteBackupPolicyRequest.
+        r"""Sets the instance_id of this SetOffSiteBackupPolicyRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class SetOffSiteBackupPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetOffSiteBackupPolicyRequest.
+        r"""Gets the body of this SetOffSiteBackupPolicyRequest.
 
         :return: The body of this SetOffSiteBackupPolicyRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SetOffSiteBackupPolicyRequestBody`
@@ -109,7 +109,7 @@ class SetOffSiteBackupPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetOffSiteBackupPolicyRequest.
+        r"""Sets the body of this SetOffSiteBackupPolicyRequest.
 
         :param body: The body of this SetOffSiteBackupPolicyRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SetOffSiteBackupPolicyRequestBody`

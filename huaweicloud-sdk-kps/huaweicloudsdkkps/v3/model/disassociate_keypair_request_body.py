@@ -25,7 +25,7 @@ class DisassociateKeypairRequestBody:
     }
 
     def __init__(self, server=None):
-        """DisassociateKeypairRequestBody
+        r"""DisassociateKeypairRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DisassociateKeypairRequestBody:
 
     @property
     def server(self):
-        """Gets the server of this DisassociateKeypairRequestBody.
+        r"""Gets the server of this DisassociateKeypairRequestBody.
 
         :return: The server of this DisassociateKeypairRequestBody.
         :rtype: :class:`huaweicloudsdkkps.v3.DisassociateEcsServerInfo`
@@ -51,7 +51,7 @@ class DisassociateKeypairRequestBody:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this DisassociateKeypairRequestBody.
+        r"""Sets the server of this DisassociateKeypairRequestBody.
 
         :param server: The server of this DisassociateKeypairRequestBody.
         :type server: :class:`huaweicloudsdkkps.v3.DisassociateEcsServerInfo`

@@ -31,7 +31,7 @@ class CreateTerminalsBindingDesktopsInfo:
     }
 
     def __init__(self, line=None, mac=None, desktop_name=None, description=None):
-        """CreateTerminalsBindingDesktopsInfo
+        r"""CreateTerminalsBindingDesktopsInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateTerminalsBindingDesktopsInfo:
 
     @property
     def line(self):
-        """Gets the line of this CreateTerminalsBindingDesktopsInfo.
+        r"""Gets the line of this CreateTerminalsBindingDesktopsInfo.
 
         行号,用于批量导入
 
@@ -75,7 +75,7 @@ class CreateTerminalsBindingDesktopsInfo:
 
     @line.setter
     def line(self, line):
-        """Sets the line of this CreateTerminalsBindingDesktopsInfo.
+        r"""Sets the line of this CreateTerminalsBindingDesktopsInfo.
 
         行号,用于批量导入
 
@@ -86,7 +86,7 @@ class CreateTerminalsBindingDesktopsInfo:
 
     @property
     def mac(self):
-        """Gets the mac of this CreateTerminalsBindingDesktopsInfo.
+        r"""Gets the mac of this CreateTerminalsBindingDesktopsInfo.
 
         终端mac地址
 
@@ -97,7 +97,7 @@ class CreateTerminalsBindingDesktopsInfo:
 
     @mac.setter
     def mac(self, mac):
-        """Sets the mac of this CreateTerminalsBindingDesktopsInfo.
+        r"""Sets the mac of this CreateTerminalsBindingDesktopsInfo.
 
         终端mac地址
 
@@ -108,7 +108,7 @@ class CreateTerminalsBindingDesktopsInfo:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this CreateTerminalsBindingDesktopsInfo.
+        r"""Gets the desktop_name of this CreateTerminalsBindingDesktopsInfo.
 
         桌面名称，用于批量导入
 
@@ -119,7 +119,7 @@ class CreateTerminalsBindingDesktopsInfo:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this CreateTerminalsBindingDesktopsInfo.
+        r"""Sets the desktop_name of this CreateTerminalsBindingDesktopsInfo.
 
         桌面名称，用于批量导入
 
@@ -130,7 +130,7 @@ class CreateTerminalsBindingDesktopsInfo:
 
     @property
     def description(self):
-        """Gets the description of this CreateTerminalsBindingDesktopsInfo.
+        r"""Gets the description of this CreateTerminalsBindingDesktopsInfo.
 
         描述
 
@@ -141,7 +141,7 @@ class CreateTerminalsBindingDesktopsInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateTerminalsBindingDesktopsInfo.
+        r"""Sets the description of this CreateTerminalsBindingDesktopsInfo.
 
         描述
 

@@ -28,7 +28,7 @@ class ListPipelineTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, templates=None, count=None):
-        """ListPipelineTemplatesResponse
+        r"""ListPipelineTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPipelineTemplatesResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this ListPipelineTemplatesResponse.
+        r"""Gets the templates of this ListPipelineTemplatesResponse.
 
         模板列表
 
@@ -62,7 +62,7 @@ class ListPipelineTemplatesResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this ListPipelineTemplatesResponse.
+        r"""Sets the templates of this ListPipelineTemplatesResponse.
 
         模板列表
 
@@ -73,7 +73,7 @@ class ListPipelineTemplatesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListPipelineTemplatesResponse.
+        r"""Gets the count of this ListPipelineTemplatesResponse.
 
         模板总数
 
@@ -84,7 +84,7 @@ class ListPipelineTemplatesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListPipelineTemplatesResponse.
+        r"""Sets the count of this ListPipelineTemplatesResponse.
 
         模板总数
 

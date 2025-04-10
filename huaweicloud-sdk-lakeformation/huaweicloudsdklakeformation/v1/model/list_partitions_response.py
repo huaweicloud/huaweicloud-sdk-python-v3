@@ -28,7 +28,7 @@ class ListPartitionsResponse(SdkResponse):
     }
 
     def __init__(self, partitions=None, page_info=None):
-        """ListPartitionsResponse
+        r"""ListPartitionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @property
     def partitions(self):
-        """Gets the partitions of this ListPartitionsResponse.
+        r"""Gets the partitions of this ListPartitionsResponse.
 
         :return: The partitions of this ListPartitionsResponse.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.Partition`]
@@ -60,7 +60,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @partitions.setter
     def partitions(self, partitions):
-        """Sets the partitions of this ListPartitionsResponse.
+        r"""Sets the partitions of this ListPartitionsResponse.
 
         :param partitions: The partitions of this ListPartitionsResponse.
         :type partitions: list[:class:`huaweicloudsdklakeformation.v1.Partition`]
@@ -69,7 +69,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPartitionsResponse.
+        r"""Gets the page_info of this ListPartitionsResponse.
 
         :return: The page_info of this ListPartitionsResponse.
         :rtype: :class:`huaweicloudsdklakeformation.v1.PagedInfo`
@@ -78,7 +78,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPartitionsResponse.
+        r"""Sets the page_info of this ListPartitionsResponse.
 
         :param page_info: The page_info of this ListPartitionsResponse.
         :type page_info: :class:`huaweicloudsdklakeformation.v1.PagedInfo`

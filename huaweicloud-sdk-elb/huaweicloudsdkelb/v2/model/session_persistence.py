@@ -29,7 +29,7 @@ class SessionPersistence:
     }
 
     def __init__(self, type=None, cookie_name=None, persistence_timeout=None):
-        """SessionPersistence
+        r"""SessionPersistence
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SessionPersistence:
 
     @property
     def type(self):
-        """Gets the type of this SessionPersistence.
+        r"""Gets the type of this SessionPersistence.
 
         会话保持的类型。SOURCE_IP：根据请求的源IP，将同一IP的请求发送到同一个后端云服务器上。HTTP_COOKIE：客户端第一次发送请求时，负载均衡器自动生成cookie并将该cookie插入响应消息中，后续请求会发送到处理第一个请求的后端云服务器上。APP_COOKIE：客户端第一次发送请求时，后端服务器生成cookie并将该cookie插入响应消息中，后续请求会发送到处理第一个请求的后端云服务器上。当后端云服务器的protocol为TCP时，只按SOURCE_IP生效当后端云服务器的protocol为HTTP时，只按HTTP_COOKIE或APP_COOKIE生效
 
@@ -67,7 +67,7 @@ class SessionPersistence:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SessionPersistence.
+        r"""Sets the type of this SessionPersistence.
 
         会话保持的类型。SOURCE_IP：根据请求的源IP，将同一IP的请求发送到同一个后端云服务器上。HTTP_COOKIE：客户端第一次发送请求时，负载均衡器自动生成cookie并将该cookie插入响应消息中，后续请求会发送到处理第一个请求的后端云服务器上。APP_COOKIE：客户端第一次发送请求时，后端服务器生成cookie并将该cookie插入响应消息中，后续请求会发送到处理第一个请求的后端云服务器上。当后端云服务器的protocol为TCP时，只按SOURCE_IP生效当后端云服务器的protocol为HTTP时，只按HTTP_COOKIE或APP_COOKIE生效
 
@@ -78,7 +78,7 @@ class SessionPersistence:
 
     @property
     def cookie_name(self):
-        """Gets the cookie_name of this SessionPersistence.
+        r"""Gets the cookie_name of this SessionPersistence.
 
         cookie的名称。只有当会话保持的类型是APP_COOKIE时可以指定。
 
@@ -89,7 +89,7 @@ class SessionPersistence:
 
     @cookie_name.setter
     def cookie_name(self, cookie_name):
-        """Sets the cookie_name of this SessionPersistence.
+        r"""Sets the cookie_name of this SessionPersistence.
 
         cookie的名称。只有当会话保持的类型是APP_COOKIE时可以指定。
 
@@ -100,7 +100,7 @@ class SessionPersistence:
 
     @property
     def persistence_timeout(self):
-        """Gets the persistence_timeout of this SessionPersistence.
+        r"""Gets the persistence_timeout of this SessionPersistence.
 
         会话保持的超时时间。取值范围：[1,60]（分钟）：当后端云服务器的protocol为TCP、UDP时[1,1440]（分钟）：当后端云服务器的protocol为HTTP时。当type为APP_COOKIE时该字段不生效。
 
@@ -111,7 +111,7 @@ class SessionPersistence:
 
     @persistence_timeout.setter
     def persistence_timeout(self, persistence_timeout):
-        """Sets the persistence_timeout of this SessionPersistence.
+        r"""Sets the persistence_timeout of this SessionPersistence.
 
         会话保持的超时时间。取值范围：[1,60]（分钟）：当后端云服务器的protocol为TCP、UDP时[1,1440]（分钟）：当后端云服务器的protocol为HTTP时。当type为APP_COOKIE时该字段不生效。
 

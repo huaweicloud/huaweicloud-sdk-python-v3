@@ -35,7 +35,7 @@ class DelegatedAdministratorDto:
     }
 
     def __init__(self, delegation_enabled_at=None, account_id=None, account_urn=None, join_method=None, joined_at=None, account_name=None):
-        """DelegatedAdministratorDto
+        r"""DelegatedAdministratorDto
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class DelegatedAdministratorDto:
 
     @property
     def delegation_enabled_at(self):
-        """Gets the delegation_enabled_at of this DelegatedAdministratorDto.
+        r"""Gets the delegation_enabled_at of this DelegatedAdministratorDto.
 
         将账号设置为委托管理员的日期。
 
@@ -83,7 +83,7 @@ class DelegatedAdministratorDto:
 
     @delegation_enabled_at.setter
     def delegation_enabled_at(self, delegation_enabled_at):
-        """Sets the delegation_enabled_at of this DelegatedAdministratorDto.
+        r"""Sets the delegation_enabled_at of this DelegatedAdministratorDto.
 
         将账号设置为委托管理员的日期。
 
@@ -94,7 +94,7 @@ class DelegatedAdministratorDto:
 
     @property
     def account_id(self):
-        """Gets the account_id of this DelegatedAdministratorDto.
+        r"""Gets the account_id of this DelegatedAdministratorDto.
 
         账号的唯一标识符（ID）。
 
@@ -105,7 +105,7 @@ class DelegatedAdministratorDto:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this DelegatedAdministratorDto.
+        r"""Sets the account_id of this DelegatedAdministratorDto.
 
         账号的唯一标识符（ID）。
 
@@ -116,7 +116,7 @@ class DelegatedAdministratorDto:
 
     @property
     def account_urn(self):
-        """Gets the account_urn of this DelegatedAdministratorDto.
+        r"""Gets the account_urn of this DelegatedAdministratorDto.
 
         账号的统一资源名称。
 
@@ -127,7 +127,7 @@ class DelegatedAdministratorDto:
 
     @account_urn.setter
     def account_urn(self, account_urn):
-        """Sets the account_urn of this DelegatedAdministratorDto.
+        r"""Sets the account_urn of this DelegatedAdministratorDto.
 
         账号的统一资源名称。
 
@@ -138,7 +138,7 @@ class DelegatedAdministratorDto:
 
     @property
     def join_method(self):
-        """Gets the join_method of this DelegatedAdministratorDto.
+        r"""Gets the join_method of this DelegatedAdministratorDto.
 
         账号加入组织的方式,invited：邀请加入，created：创建加入。
 
@@ -149,7 +149,7 @@ class DelegatedAdministratorDto:
 
     @join_method.setter
     def join_method(self, join_method):
-        """Sets the join_method of this DelegatedAdministratorDto.
+        r"""Sets the join_method of this DelegatedAdministratorDto.
 
         账号加入组织的方式,invited：邀请加入，created：创建加入。
 
@@ -160,7 +160,7 @@ class DelegatedAdministratorDto:
 
     @property
     def joined_at(self):
-        """Gets the joined_at of this DelegatedAdministratorDto.
+        r"""Gets the joined_at of this DelegatedAdministratorDto.
 
         账号成为组织一部分的日期。
 
@@ -171,7 +171,7 @@ class DelegatedAdministratorDto:
 
     @joined_at.setter
     def joined_at(self, joined_at):
-        """Sets the joined_at of this DelegatedAdministratorDto.
+        r"""Sets the joined_at of this DelegatedAdministratorDto.
 
         账号成为组织一部分的日期。
 
@@ -182,7 +182,7 @@ class DelegatedAdministratorDto:
 
     @property
     def account_name(self):
-        """Gets the account_name of this DelegatedAdministratorDto.
+        r"""Gets the account_name of this DelegatedAdministratorDto.
 
         账号名称
 
@@ -193,7 +193,7 @@ class DelegatedAdministratorDto:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this DelegatedAdministratorDto.
+        r"""Sets the account_name of this DelegatedAdministratorDto.
 
         账号名称
 

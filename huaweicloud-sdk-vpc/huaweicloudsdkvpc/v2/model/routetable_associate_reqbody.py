@@ -25,7 +25,7 @@ class RoutetableAssociateReqbody:
     }
 
     def __init__(self, routetable=None):
-        """RoutetableAssociateReqbody
+        r"""RoutetableAssociateReqbody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RoutetableAssociateReqbody:
 
     @property
     def routetable(self):
-        """Gets the routetable of this RoutetableAssociateReqbody.
+        r"""Gets the routetable of this RoutetableAssociateReqbody.
 
         :return: The routetable of this RoutetableAssociateReqbody.
         :rtype: :class:`huaweicloudsdkvpc.v2.AsscoiateReq`
@@ -51,7 +51,7 @@ class RoutetableAssociateReqbody:
 
     @routetable.setter
     def routetable(self, routetable):
-        """Sets the routetable of this RoutetableAssociateReqbody.
+        r"""Sets the routetable of this RoutetableAssociateReqbody.
 
         :param routetable: The routetable of this RoutetableAssociateReqbody.
         :type routetable: :class:`huaweicloudsdkvpc.v2.AsscoiateReq`

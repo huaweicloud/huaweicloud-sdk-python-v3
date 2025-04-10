@@ -30,7 +30,7 @@ class CreateGroupResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, group_id=None, order_id=None):
-        """CreateGroupResponse
+        r"""CreateGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateGroupResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateGroupResponse.
+        r"""Gets the job_id of this CreateGroupResponse.
 
         任务ID，仅创建按需实例时会返回该参数。
 
@@ -69,7 +69,7 @@ class CreateGroupResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateGroupResponse.
+        r"""Sets the job_id of this CreateGroupResponse.
 
         任务ID，仅创建按需实例时会返回该参数。
 
@@ -80,7 +80,7 @@ class CreateGroupResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateGroupResponse.
+        r"""Gets the group_id of this CreateGroupResponse.
 
         组ID，仅创建按需实例时会返回该参数。
 
@@ -91,7 +91,7 @@ class CreateGroupResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateGroupResponse.
+        r"""Sets the group_id of this CreateGroupResponse.
 
         组ID，仅创建按需实例时会返回该参数。
 
@@ -102,7 +102,7 @@ class CreateGroupResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateGroupResponse.
+        r"""Gets the order_id of this CreateGroupResponse.
 
         订单号，创建包年包月时返回该参数。
 
@@ -113,7 +113,7 @@ class CreateGroupResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateGroupResponse.
+        r"""Sets the order_id of this CreateGroupResponse.
 
         订单号，创建包年包月时返回该参数。
 

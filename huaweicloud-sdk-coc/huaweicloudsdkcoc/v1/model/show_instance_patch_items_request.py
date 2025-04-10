@@ -43,7 +43,7 @@ class ShowInstancePatchItemsRequest:
     }
 
     def __init__(self, instance_compliant_id=None, offset=None, limit=None, title=None, sort_dir=None, sort_key=None, patch_status=None, classification=None, severity_level=None, compliance_level=None):
-        """ShowInstancePatchItemsRequest
+        r"""ShowInstancePatchItemsRequest
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class ShowInstancePatchItemsRequest:
 
     @property
     def instance_compliant_id(self):
-        """Gets the instance_compliant_id of this ShowInstancePatchItemsRequest.
+        r"""Gets the instance_compliant_id of this ShowInstancePatchItemsRequest.
 
         合规性报告id
 
@@ -116,7 +116,7 @@ class ShowInstancePatchItemsRequest:
 
     @instance_compliant_id.setter
     def instance_compliant_id(self, instance_compliant_id):
-        """Sets the instance_compliant_id of this ShowInstancePatchItemsRequest.
+        r"""Sets the instance_compliant_id of this ShowInstancePatchItemsRequest.
 
         合规性报告id
 
@@ -127,7 +127,7 @@ class ShowInstancePatchItemsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowInstancePatchItemsRequest.
+        r"""Gets the offset of this ShowInstancePatchItemsRequest.
 
         偏移量
 
@@ -138,7 +138,7 @@ class ShowInstancePatchItemsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowInstancePatchItemsRequest.
+        r"""Sets the offset of this ShowInstancePatchItemsRequest.
 
         偏移量
 
@@ -149,7 +149,7 @@ class ShowInstancePatchItemsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowInstancePatchItemsRequest.
+        r"""Gets the limit of this ShowInstancePatchItemsRequest.
 
         每页数量
 
@@ -160,7 +160,7 @@ class ShowInstancePatchItemsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowInstancePatchItemsRequest.
+        r"""Sets the limit of this ShowInstancePatchItemsRequest.
 
         每页数量
 
@@ -171,7 +171,7 @@ class ShowInstancePatchItemsRequest:
 
     @property
     def title(self):
-        """Gets the title of this ShowInstancePatchItemsRequest.
+        r"""Gets the title of this ShowInstancePatchItemsRequest.
 
         补丁名称
 
@@ -182,7 +182,7 @@ class ShowInstancePatchItemsRequest:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ShowInstancePatchItemsRequest.
+        r"""Sets the title of this ShowInstancePatchItemsRequest.
 
         补丁名称
 
@@ -193,7 +193,7 @@ class ShowInstancePatchItemsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ShowInstancePatchItemsRequest.
+        r"""Gets the sort_dir of this ShowInstancePatchItemsRequest.
 
         排序 - asc：升序 - desc：降序
 
@@ -204,7 +204,7 @@ class ShowInstancePatchItemsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ShowInstancePatchItemsRequest.
+        r"""Sets the sort_dir of this ShowInstancePatchItemsRequest.
 
         排序 - asc：升序 - desc：降序
 
@@ -215,7 +215,7 @@ class ShowInstancePatchItemsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ShowInstancePatchItemsRequest.
+        r"""Gets the sort_key of this ShowInstancePatchItemsRequest.
 
         排序字段 -installed_time：补丁安装时间
 
@@ -226,7 +226,7 @@ class ShowInstancePatchItemsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ShowInstancePatchItemsRequest.
+        r"""Sets the sort_key of this ShowInstancePatchItemsRequest.
 
         排序字段 -installed_time：补丁安装时间
 
@@ -237,7 +237,7 @@ class ShowInstancePatchItemsRequest:
 
     @property
     def patch_status(self):
-        """Gets the patch_status of this ShowInstancePatchItemsRequest.
+        r"""Gets the patch_status of this ShowInstancePatchItemsRequest.
 
         补丁状态 INSTALLED：已安装 INSTALLED_OTHER：已安装其他 MISSING：缺失 REJECT：拒绝 FAILED：失败 PENDING_REBOOT：已安装待重启
 
@@ -248,7 +248,7 @@ class ShowInstancePatchItemsRequest:
 
     @patch_status.setter
     def patch_status(self, patch_status):
-        """Sets the patch_status of this ShowInstancePatchItemsRequest.
+        r"""Sets the patch_status of this ShowInstancePatchItemsRequest.
 
         补丁状态 INSTALLED：已安装 INSTALLED_OTHER：已安装其他 MISSING：缺失 REJECT：拒绝 FAILED：失败 PENDING_REBOOT：已安装待重启
 
@@ -259,7 +259,7 @@ class ShowInstancePatchItemsRequest:
 
     @property
     def classification(self):
-        """Gets the classification of this ShowInstancePatchItemsRequest.
+        r"""Gets the classification of this ShowInstancePatchItemsRequest.
 
         分类
 
@@ -270,7 +270,7 @@ class ShowInstancePatchItemsRequest:
 
     @classification.setter
     def classification(self, classification):
-        """Sets the classification of this ShowInstancePatchItemsRequest.
+        r"""Sets the classification of this ShowInstancePatchItemsRequest.
 
         分类
 
@@ -281,7 +281,7 @@ class ShowInstancePatchItemsRequest:
 
     @property
     def severity_level(self):
-        """Gets the severity_level of this ShowInstancePatchItemsRequest.
+        r"""Gets the severity_level of this ShowInstancePatchItemsRequest.
 
         严重性级别
 
@@ -292,7 +292,7 @@ class ShowInstancePatchItemsRequest:
 
     @severity_level.setter
     def severity_level(self, severity_level):
-        """Sets the severity_level of this ShowInstancePatchItemsRequest.
+        r"""Sets the severity_level of this ShowInstancePatchItemsRequest.
 
         严重性级别
 
@@ -303,7 +303,7 @@ class ShowInstancePatchItemsRequest:
 
     @property
     def compliance_level(self):
-        """Gets the compliance_level of this ShowInstancePatchItemsRequest.
+        r"""Gets the compliance_level of this ShowInstancePatchItemsRequest.
 
         合规性级别
 
@@ -314,7 +314,7 @@ class ShowInstancePatchItemsRequest:
 
     @compliance_level.setter
     def compliance_level(self, compliance_level):
-        """Sets the compliance_level of this ShowInstancePatchItemsRequest.
+        r"""Sets the compliance_level of this ShowInstancePatchItemsRequest.
 
         合规性级别
 

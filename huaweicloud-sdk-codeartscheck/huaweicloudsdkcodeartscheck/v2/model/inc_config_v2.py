@@ -37,7 +37,7 @@ class IncConfigV2:
     }
 
     def __init__(self, parent_task_id=None, git_source_branch=None, git_target_branch=None, merge_id=None, event_type=None, action=None, title=None):
-        """IncConfigV2
+        r"""IncConfigV2
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class IncConfigV2:
 
     @property
     def parent_task_id(self):
-        """Gets the parent_task_id of this IncConfigV2.
+        r"""Gets the parent_task_id of this IncConfigV2.
 
         需要关联的父任务ID，流水线创建或MR创建任务需要该参数
 
@@ -96,7 +96,7 @@ class IncConfigV2:
 
     @parent_task_id.setter
     def parent_task_id(self, parent_task_id):
-        """Sets the parent_task_id of this IncConfigV2.
+        r"""Sets the parent_task_id of this IncConfigV2.
 
         需要关联的父任务ID，流水线创建或MR创建任务需要该参数
 
@@ -107,7 +107,7 @@ class IncConfigV2:
 
     @property
     def git_source_branch(self):
-        """Gets the git_source_branch of this IncConfigV2.
+        r"""Gets the git_source_branch of this IncConfigV2.
 
         增量检查代码源分支
 
@@ -118,7 +118,7 @@ class IncConfigV2:
 
     @git_source_branch.setter
     def git_source_branch(self, git_source_branch):
-        """Sets the git_source_branch of this IncConfigV2.
+        r"""Sets the git_source_branch of this IncConfigV2.
 
         增量检查代码源分支
 
@@ -129,7 +129,7 @@ class IncConfigV2:
 
     @property
     def git_target_branch(self):
-        """Gets the git_target_branch of this IncConfigV2.
+        r"""Gets the git_target_branch of this IncConfigV2.
 
         增量检查代码目标分支
 
@@ -140,7 +140,7 @@ class IncConfigV2:
 
     @git_target_branch.setter
     def git_target_branch(self, git_target_branch):
-        """Sets the git_target_branch of this IncConfigV2.
+        r"""Sets the git_target_branch of this IncConfigV2.
 
         增量检查代码目标分支
 
@@ -151,7 +151,7 @@ class IncConfigV2:
 
     @property
     def merge_id(self):
-        """Gets the merge_id of this IncConfigV2.
+        r"""Gets the merge_id of this IncConfigV2.
 
         MR唯一标示ID
 
@@ -162,7 +162,7 @@ class IncConfigV2:
 
     @merge_id.setter
     def merge_id(self, merge_id):
-        """Sets the merge_id of this IncConfigV2.
+        r"""Sets the merge_id of this IncConfigV2.
 
         MR唯一标示ID
 
@@ -173,7 +173,7 @@ class IncConfigV2:
 
     @property
     def event_type(self):
-        """Gets the event_type of this IncConfigV2.
+        r"""Gets the event_type of this IncConfigV2.
 
         webhook触发事件类型,merge_request/push_request
 
@@ -184,7 +184,7 @@ class IncConfigV2:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this IncConfigV2.
+        r"""Sets the event_type of this IncConfigV2.
 
         webhook触发事件类型,merge_request/push_request
 
@@ -195,7 +195,7 @@ class IncConfigV2:
 
     @property
     def action(self):
-        """Gets the action of this IncConfigV2.
+        r"""Gets the action of this IncConfigV2.
 
         webhook事件状态，open/close/update
 
@@ -206,7 +206,7 @@ class IncConfigV2:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this IncConfigV2.
+        r"""Sets the action of this IncConfigV2.
 
         webhook事件状态，open/close/update
 
@@ -217,7 +217,7 @@ class IncConfigV2:
 
     @property
     def title(self):
-        """Gets the title of this IncConfigV2.
+        r"""Gets the title of this IncConfigV2.
 
         MR标题
 
@@ -228,7 +228,7 @@ class IncConfigV2:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this IncConfigV2.
+        r"""Sets the title of this IncConfigV2.
 
         MR标题
 

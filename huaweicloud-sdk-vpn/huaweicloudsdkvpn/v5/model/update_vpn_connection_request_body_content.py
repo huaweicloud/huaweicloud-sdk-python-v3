@@ -48,7 +48,7 @@ class UpdateVpnConnectionRequestBodyContent:
     }
 
     def __init__(self, name=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_hub=None, psk=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, peer_subnets_v6=None, policy_rules_v6=None):
-        """UpdateVpnConnectionRequestBodyContent
+        r"""UpdateVpnConnectionRequestBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @property
     def name(self):
-        """Gets the name of this UpdateVpnConnectionRequestBodyContent.
+        r"""Gets the name of this UpdateVpnConnectionRequestBodyContent.
 
         VPN连接名称
 
@@ -132,7 +132,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVpnConnectionRequestBodyContent.
+        r"""Sets the name of this UpdateVpnConnectionRequestBodyContent.
 
         VPN连接名称
 
@@ -143,7 +143,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @property
     def cgw_id(self):
-        """Gets the cgw_id of this UpdateVpnConnectionRequestBodyContent.
+        r"""Gets the cgw_id of this UpdateVpnConnectionRequestBodyContent.
 
         对端网关ID
 
@@ -154,7 +154,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @cgw_id.setter
     def cgw_id(self, cgw_id):
-        """Sets the cgw_id of this UpdateVpnConnectionRequestBodyContent.
+        r"""Sets the cgw_id of this UpdateVpnConnectionRequestBodyContent.
 
         对端网关ID
 
@@ -165,7 +165,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @property
     def peer_subnets(self):
-        """Gets the peer_subnets of this UpdateVpnConnectionRequestBodyContent.
+        r"""Gets the peer_subnets of this UpdateVpnConnectionRequestBodyContent.
 
         对端网段
 
@@ -176,7 +176,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @peer_subnets.setter
     def peer_subnets(self, peer_subnets):
-        """Sets the peer_subnets of this UpdateVpnConnectionRequestBodyContent.
+        r"""Sets the peer_subnets of this UpdateVpnConnectionRequestBodyContent.
 
         对端网段
 
@@ -187,7 +187,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @property
     def tunnel_local_address(self):
-        """Gets the tunnel_local_address of this UpdateVpnConnectionRequestBodyContent.
+        r"""Gets the tunnel_local_address of this UpdateVpnConnectionRequestBodyContent.
 
         本端隧道口地址
 
@@ -198,7 +198,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @tunnel_local_address.setter
     def tunnel_local_address(self, tunnel_local_address):
-        """Sets the tunnel_local_address of this UpdateVpnConnectionRequestBodyContent.
+        r"""Sets the tunnel_local_address of this UpdateVpnConnectionRequestBodyContent.
 
         本端隧道口地址
 
@@ -209,7 +209,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @property
     def tunnel_peer_address(self):
-        """Gets the tunnel_peer_address of this UpdateVpnConnectionRequestBodyContent.
+        r"""Gets the tunnel_peer_address of this UpdateVpnConnectionRequestBodyContent.
 
         对端隧道口地址
 
@@ -220,7 +220,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @tunnel_peer_address.setter
     def tunnel_peer_address(self, tunnel_peer_address):
-        """Sets the tunnel_peer_address of this UpdateVpnConnectionRequestBodyContent.
+        r"""Sets the tunnel_peer_address of this UpdateVpnConnectionRequestBodyContent.
 
         对端隧道口地址
 
@@ -231,7 +231,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @property
     def enable_hub(self):
-        """Gets the enable_hub of this UpdateVpnConnectionRequestBodyContent.
+        r"""Gets the enable_hub of this UpdateVpnConnectionRequestBodyContent.
 
         开启分支互联
 
@@ -242,7 +242,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @enable_hub.setter
     def enable_hub(self, enable_hub):
-        """Sets the enable_hub of this UpdateVpnConnectionRequestBodyContent.
+        r"""Sets the enable_hub of this UpdateVpnConnectionRequestBodyContent.
 
         开启分支互联
 
@@ -253,7 +253,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @property
     def psk(self):
-        """Gets the psk of this UpdateVpnConnectionRequestBodyContent.
+        r"""Gets the psk of this UpdateVpnConnectionRequestBodyContent.
 
         预共享密钥，只能包含大写字母、小写字母、数字和特殊字符(~!@#$%^()-_+={ },./:;)且至少包含四种字符的三种
 
@@ -264,7 +264,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @psk.setter
     def psk(self, psk):
-        """Sets the psk of this UpdateVpnConnectionRequestBodyContent.
+        r"""Sets the psk of this UpdateVpnConnectionRequestBodyContent.
 
         预共享密钥，只能包含大写字母、小写字母、数字和特殊字符(~!@#$%^()-_+={ },./:;)且至少包含四种字符的三种
 
@@ -275,7 +275,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @property
     def policy_rules(self):
-        """Gets the policy_rules of this UpdateVpnConnectionRequestBodyContent.
+        r"""Gets the policy_rules of this UpdateVpnConnectionRequestBodyContent.
 
         策略模式的策略规则组
 
@@ -286,7 +286,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @policy_rules.setter
     def policy_rules(self, policy_rules):
-        """Sets the policy_rules of this UpdateVpnConnectionRequestBodyContent.
+        r"""Sets the policy_rules of this UpdateVpnConnectionRequestBodyContent.
 
         策略模式的策略规则组
 
@@ -297,7 +297,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @property
     def ikepolicy(self):
-        """Gets the ikepolicy of this UpdateVpnConnectionRequestBodyContent.
+        r"""Gets the ikepolicy of this UpdateVpnConnectionRequestBodyContent.
 
         :return: The ikepolicy of this UpdateVpnConnectionRequestBodyContent.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateIkePolicy`
@@ -306,7 +306,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @ikepolicy.setter
     def ikepolicy(self, ikepolicy):
-        """Sets the ikepolicy of this UpdateVpnConnectionRequestBodyContent.
+        r"""Sets the ikepolicy of this UpdateVpnConnectionRequestBodyContent.
 
         :param ikepolicy: The ikepolicy of this UpdateVpnConnectionRequestBodyContent.
         :type ikepolicy: :class:`huaweicloudsdkvpn.v5.UpdateIkePolicy`
@@ -315,7 +315,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @property
     def ipsecpolicy(self):
-        """Gets the ipsecpolicy of this UpdateVpnConnectionRequestBodyContent.
+        r"""Gets the ipsecpolicy of this UpdateVpnConnectionRequestBodyContent.
 
         :return: The ipsecpolicy of this UpdateVpnConnectionRequestBodyContent.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateIpsecPolicy`
@@ -324,7 +324,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @ipsecpolicy.setter
     def ipsecpolicy(self, ipsecpolicy):
-        """Sets the ipsecpolicy of this UpdateVpnConnectionRequestBodyContent.
+        r"""Sets the ipsecpolicy of this UpdateVpnConnectionRequestBodyContent.
 
         :param ipsecpolicy: The ipsecpolicy of this UpdateVpnConnectionRequestBodyContent.
         :type ipsecpolicy: :class:`huaweicloudsdkvpn.v5.UpdateIpsecPolicy`
@@ -333,7 +333,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @property
     def peer_subnets_v6(self):
-        """Gets the peer_subnets_v6 of this UpdateVpnConnectionRequestBodyContent.
+        r"""Gets the peer_subnets_v6 of this UpdateVpnConnectionRequestBodyContent.
 
         使能ipv6的对端子网
 
@@ -344,7 +344,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @peer_subnets_v6.setter
     def peer_subnets_v6(self, peer_subnets_v6):
-        """Sets the peer_subnets_v6 of this UpdateVpnConnectionRequestBodyContent.
+        r"""Sets the peer_subnets_v6 of this UpdateVpnConnectionRequestBodyContent.
 
         使能ipv6的对端子网
 
@@ -355,7 +355,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @property
     def policy_rules_v6(self):
-        """Gets the policy_rules_v6 of this UpdateVpnConnectionRequestBodyContent.
+        r"""Gets the policy_rules_v6 of this UpdateVpnConnectionRequestBodyContent.
 
         策略模式的ipv6策略规则组
 
@@ -366,7 +366,7 @@ class UpdateVpnConnectionRequestBodyContent:
 
     @policy_rules_v6.setter
     def policy_rules_v6(self, policy_rules_v6):
-        """Sets the policy_rules_v6 of this UpdateVpnConnectionRequestBodyContent.
+        r"""Sets the policy_rules_v6 of this UpdateVpnConnectionRequestBodyContent.
 
         策略模式的ipv6策略规则组
 

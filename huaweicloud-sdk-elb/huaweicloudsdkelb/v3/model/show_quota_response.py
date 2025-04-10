@@ -28,7 +28,7 @@ class ShowQuotaResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, quota=None):
-        """ShowQuotaResponse
+        r"""ShowQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowQuotaResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowQuotaResponse.
+        r"""Gets the request_id of this ShowQuotaResponse.
 
         请求ID。  注：自动生成 。
 
@@ -62,7 +62,7 @@ class ShowQuotaResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowQuotaResponse.
+        r"""Sets the request_id of this ShowQuotaResponse.
 
         请求ID。  注：自动生成 。
 
@@ -73,7 +73,7 @@ class ShowQuotaResponse(SdkResponse):
 
     @property
     def quota(self):
-        """Gets the quota of this ShowQuotaResponse.
+        r"""Gets the quota of this ShowQuotaResponse.
 
         :return: The quota of this ShowQuotaResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.Quota`
@@ -82,7 +82,7 @@ class ShowQuotaResponse(SdkResponse):
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ShowQuotaResponse.
+        r"""Sets the quota of this ShowQuotaResponse.
 
         :param quota: The quota of this ShowQuotaResponse.
         :type quota: :class:`huaweicloudsdkelb.v3.Quota`

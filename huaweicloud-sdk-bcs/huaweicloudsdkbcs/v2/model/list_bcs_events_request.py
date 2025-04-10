@@ -29,7 +29,7 @@ class ListBcsEventsRequest:
     }
 
     def __init__(self, blockchain_id=None, type=None, body=None):
-        """ListBcsEventsRequest
+        r"""ListBcsEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListBcsEventsRequest:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this ListBcsEventsRequest.
+        r"""Gets the blockchain_id of this ListBcsEventsRequest.
 
         区块链服务id
 
@@ -67,7 +67,7 @@ class ListBcsEventsRequest:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this ListBcsEventsRequest.
+        r"""Sets the blockchain_id of this ListBcsEventsRequest.
 
         区块链服务id
 
@@ -78,7 +78,7 @@ class ListBcsEventsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListBcsEventsRequest.
+        r"""Gets the type of this ListBcsEventsRequest.
 
         查询类型。type=active_alert代表查询活动告警，type=history_alert代表查询历史告警。不传或者传其他值则返回指定查询条件的所有信息。
 
@@ -89,7 +89,7 @@ class ListBcsEventsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListBcsEventsRequest.
+        r"""Sets the type of this ListBcsEventsRequest.
 
         查询类型。type=active_alert代表查询活动告警，type=history_alert代表查询历史告警。不传或者传其他值则返回指定查询条件的所有信息。
 
@@ -100,7 +100,7 @@ class ListBcsEventsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListBcsEventsRequest.
+        r"""Gets the body of this ListBcsEventsRequest.
 
         :return: The body of this ListBcsEventsRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.ListBcsEventRequestBody`
@@ -109,7 +109,7 @@ class ListBcsEventsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListBcsEventsRequest.
+        r"""Sets the body of this ListBcsEventsRequest.
 
         :param body: The body of this ListBcsEventsRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.ListBcsEventRequestBody`

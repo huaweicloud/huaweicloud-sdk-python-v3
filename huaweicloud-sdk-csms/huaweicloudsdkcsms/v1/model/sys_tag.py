@@ -27,7 +27,7 @@ class SysTag:
     }
 
     def __init__(self, key=None, value=None):
-        """SysTag
+        r"""SysTag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SysTag:
 
     @property
     def key(self):
-        """Gets the key of this SysTag.
+        r"""Gets the key of this SysTag.
 
         标签键。
 
@@ -61,7 +61,7 @@ class SysTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this SysTag.
+        r"""Sets the key of this SysTag.
 
         标签键。
 
@@ -72,7 +72,7 @@ class SysTag:
 
     @property
     def value(self):
-        """Gets the value of this SysTag.
+        r"""Gets the value of this SysTag.
 
         标签值。
 
@@ -83,7 +83,7 @@ class SysTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SysTag.
+        r"""Sets the value of this SysTag.
 
         标签值。
 

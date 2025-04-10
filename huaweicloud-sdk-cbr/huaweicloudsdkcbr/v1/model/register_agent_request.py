@@ -25,7 +25,7 @@ class RegisterAgentRequest:
     }
 
     def __init__(self, body=None):
-        """RegisterAgentRequest
+        r"""RegisterAgentRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RegisterAgentRequest:
 
     @property
     def body(self):
-        """Gets the body of this RegisterAgentRequest.
+        r"""Gets the body of this RegisterAgentRequest.
 
         :return: The body of this RegisterAgentRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.AgentRegisterReq`
@@ -52,7 +52,7 @@ class RegisterAgentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RegisterAgentRequest.
+        r"""Sets the body of this RegisterAgentRequest.
 
         :param body: The body of this RegisterAgentRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.AgentRegisterReq`

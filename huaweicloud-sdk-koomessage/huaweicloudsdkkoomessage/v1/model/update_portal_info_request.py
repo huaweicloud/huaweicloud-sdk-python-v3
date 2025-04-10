@@ -27,7 +27,7 @@ class UpdatePortalInfoRequest:
     }
 
     def __init__(self, portal_id=None, body=None):
-        """UpdatePortalInfoRequest
+        r"""UpdatePortalInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePortalInfoRequest:
 
     @property
     def portal_id(self):
-        """Gets the portal_id of this UpdatePortalInfoRequest.
+        r"""Gets the portal_id of this UpdatePortalInfoRequest.
 
         主页ID。
 
@@ -60,7 +60,7 @@ class UpdatePortalInfoRequest:
 
     @portal_id.setter
     def portal_id(self, portal_id):
-        """Sets the portal_id of this UpdatePortalInfoRequest.
+        r"""Sets the portal_id of this UpdatePortalInfoRequest.
 
         主页ID。
 
@@ -71,7 +71,7 @@ class UpdatePortalInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePortalInfoRequest.
+        r"""Gets the body of this UpdatePortalInfoRequest.
 
         :return: The body of this UpdatePortalInfoRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdatePortalInfoRequestBody`
@@ -80,7 +80,7 @@ class UpdatePortalInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePortalInfoRequest.
+        r"""Sets the body of this UpdatePortalInfoRequest.
 
         :param body: The body of this UpdatePortalInfoRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.UpdatePortalInfoRequestBody`

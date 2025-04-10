@@ -27,7 +27,7 @@ class UpdateVpcPeeringOption:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateVpcPeeringOption
+        r"""UpdateVpcPeeringOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateVpcPeeringOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateVpcPeeringOption.
+        r"""Gets the name of this UpdateVpcPeeringOption.
 
         功能说明：对等连接名称 取值范围：支持1~64个字符
 
@@ -61,7 +61,7 @@ class UpdateVpcPeeringOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVpcPeeringOption.
+        r"""Sets the name of this UpdateVpcPeeringOption.
 
         功能说明：对等连接名称 取值范围：支持1~64个字符
 
@@ -72,7 +72,7 @@ class UpdateVpcPeeringOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateVpcPeeringOption.
+        r"""Gets the description of this UpdateVpcPeeringOption.
 
         功能说明：对等连接描述 取值范围：0-255个字符，支持数字、字母、中文字符
 
@@ -83,7 +83,7 @@ class UpdateVpcPeeringOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateVpcPeeringOption.
+        r"""Sets the description of this UpdateVpcPeeringOption.
 
         功能说明：对等连接描述 取值范围：0-255个字符，支持数字、字母、中文字符
 

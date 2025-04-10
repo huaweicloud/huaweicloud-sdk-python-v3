@@ -45,7 +45,7 @@ class ListBandwidthDetailRequest:
     }
 
     def __init__(self, play_domains=None, app=None, stream=None, country=None, region=None, isp=None, protocol=None, interval=None, start_time=None, end_time=None, service_type=None):
-        """ListBandwidthDetailRequest
+        r"""ListBandwidthDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListBandwidthDetailRequest:
 
     @property
     def play_domains(self):
-        """Gets the play_domains of this ListBandwidthDetailRequest.
+        r"""Gets the play_domains of this ListBandwidthDetailRequest.
 
         播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。  如果不传入域名，则查询租户下所有播放域名的带宽数据。 
 
@@ -124,7 +124,7 @@ class ListBandwidthDetailRequest:
 
     @play_domains.setter
     def play_domains(self, play_domains):
-        """Sets the play_domains of this ListBandwidthDetailRequest.
+        r"""Sets the play_domains of this ListBandwidthDetailRequest.
 
         播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。  如果不传入域名，则查询租户下所有播放域名的带宽数据。 
 
@@ -135,7 +135,7 @@ class ListBandwidthDetailRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListBandwidthDetailRequest.
+        r"""Gets the app of this ListBandwidthDetailRequest.
 
         应用名称。
 
@@ -146,7 +146,7 @@ class ListBandwidthDetailRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListBandwidthDetailRequest.
+        r"""Sets the app of this ListBandwidthDetailRequest.
 
         应用名称。
 
@@ -157,7 +157,7 @@ class ListBandwidthDetailRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this ListBandwidthDetailRequest.
+        r"""Gets the stream of this ListBandwidthDetailRequest.
 
         流名。
 
@@ -168,7 +168,7 @@ class ListBandwidthDetailRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ListBandwidthDetailRequest.
+        r"""Sets the stream of this ListBandwidthDetailRequest.
 
         流名。
 
@@ -179,7 +179,7 @@ class ListBandwidthDetailRequest:
 
     @property
     def country(self):
-        """Gets the country of this ListBandwidthDetailRequest.
+        r"""Gets the country of this ListBandwidthDetailRequest.
 
         国家列表。具体取值请参考[国家名称缩写](https://support.huaweicloud.com/api-live/vod_08_0172.html)，不填写查询所有国家。 
 
@@ -190,7 +190,7 @@ class ListBandwidthDetailRequest:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this ListBandwidthDetailRequest.
+        r"""Sets the country of this ListBandwidthDetailRequest.
 
         国家列表。具体取值请参考[国家名称缩写](https://support.huaweicloud.com/api-live/vod_08_0172.html)，不填写查询所有国家。 
 
@@ -201,7 +201,7 @@ class ListBandwidthDetailRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListBandwidthDetailRequest.
+        r"""Gets the region of this ListBandwidthDetailRequest.
 
         区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
@@ -212,7 +212,7 @@ class ListBandwidthDetailRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListBandwidthDetailRequest.
+        r"""Sets the region of this ListBandwidthDetailRequest.
 
         区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
@@ -223,7 +223,7 @@ class ListBandwidthDetailRequest:
 
     @property
     def isp(self):
-        """Gets the isp of this ListBandwidthDetailRequest.
+        r"""Gets the isp of this ListBandwidthDetailRequest.
 
         运营商列表，取值如下： - CMCC ：移动 - CTCC ：电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
@@ -234,7 +234,7 @@ class ListBandwidthDetailRequest:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ListBandwidthDetailRequest.
+        r"""Sets the isp of this ListBandwidthDetailRequest.
 
         运营商列表，取值如下： - CMCC ：移动 - CTCC ：电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
@@ -245,7 +245,7 @@ class ListBandwidthDetailRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListBandwidthDetailRequest.
+        r"""Gets the protocol of this ListBandwidthDetailRequest.
 
         请求协议
 
@@ -256,7 +256,7 @@ class ListBandwidthDetailRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListBandwidthDetailRequest.
+        r"""Sets the protocol of this ListBandwidthDetailRequest.
 
         请求协议
 
@@ -267,7 +267,7 @@ class ListBandwidthDetailRequest:
 
     @property
     def interval(self):
-        """Gets the interval of this ListBandwidthDetailRequest.
+        r"""Gets the interval of this ListBandwidthDetailRequest.
 
         查询数据的时间粒度。支持300（默认值）, 3600和86400秒。不传值时，使用默认值300秒。 
 
@@ -278,7 +278,7 @@ class ListBandwidthDetailRequest:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ListBandwidthDetailRequest.
+        r"""Sets the interval of this ListBandwidthDetailRequest.
 
         查询数据的时间粒度。支持300（默认值）, 3600和86400秒。不传值时，使用默认值300秒。 
 
@@ -289,7 +289,7 @@ class ListBandwidthDetailRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListBandwidthDetailRequest.
+        r"""Gets the start_time of this ListBandwidthDetailRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
 
@@ -300,7 +300,7 @@ class ListBandwidthDetailRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListBandwidthDetailRequest.
+        r"""Sets the start_time of this ListBandwidthDetailRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
 
@@ -311,7 +311,7 @@ class ListBandwidthDetailRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListBandwidthDetailRequest.
+        r"""Gets the end_time of this ListBandwidthDetailRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
@@ -322,7 +322,7 @@ class ListBandwidthDetailRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListBandwidthDetailRequest.
+        r"""Sets the end_time of this ListBandwidthDetailRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
@@ -333,7 +333,7 @@ class ListBandwidthDetailRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ListBandwidthDetailRequest.
+        r"""Gets the service_type of this ListBandwidthDetailRequest.
 
         服务类型： - Live：直播 - LLL：超低时延直播 - ALL：默认所有直播 
 
@@ -344,7 +344,7 @@ class ListBandwidthDetailRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ListBandwidthDetailRequest.
+        r"""Sets the service_type of this ListBandwidthDetailRequest.
 
         服务类型： - Live：直播 - LLL：超低时延直播 - ALL：默认所有直播 
 

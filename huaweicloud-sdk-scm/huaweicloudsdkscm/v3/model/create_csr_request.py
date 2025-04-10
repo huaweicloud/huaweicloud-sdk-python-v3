@@ -25,7 +25,7 @@ class CreateCsrRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCsrRequest
+        r"""CreateCsrRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCsrRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCsrRequest.
+        r"""Gets the body of this CreateCsrRequest.
 
         :return: The body of this CreateCsrRequest.
         :rtype: :class:`huaweicloudsdkscm.v3.CreateCsrRequestBody`
@@ -52,7 +52,7 @@ class CreateCsrRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCsrRequest.
+        r"""Sets the body of this CreateCsrRequest.
 
         :param body: The body of this CreateCsrRequest.
         :type body: :class:`huaweicloudsdkscm.v3.CreateCsrRequestBody`

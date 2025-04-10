@@ -26,7 +26,7 @@ class SetHpcCacheBackendResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """SetHpcCacheBackendResponse
+        r"""SetHpcCacheBackendResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetHpcCacheBackendResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SetHpcCacheBackendResponse.
+        r"""Gets the x_request_id of this SetHpcCacheBackendResponse.
 
         :return: The x_request_id of this SetHpcCacheBackendResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class SetHpcCacheBackendResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SetHpcCacheBackendResponse.
+        r"""Sets the x_request_id of this SetHpcCacheBackendResponse.
 
         :param x_request_id: The x_request_id of this SetHpcCacheBackendResponse.
         :type x_request_id: str

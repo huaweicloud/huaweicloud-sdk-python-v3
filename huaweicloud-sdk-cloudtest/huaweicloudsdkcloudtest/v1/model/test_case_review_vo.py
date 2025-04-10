@@ -65,7 +65,7 @@ class TestCaseReviewVo:
     }
 
     def __init__(self, uri=None, testcase_name=None, testcase_number=None, testcase_stage=None, testcase_last_modified=None, testcase_last_modified_timestamp=None, testcase_uri=None, version_uri=None, version_name=None, comment=None, close_comment=None, reviewer=None, creation_date=None, creation_date_timestamp=None, close_user_ids=None, actual_close_person=None, status=None, close_date=None, close_date_timestamp=None, expect_close_date=None, expect_close_date_timestamp=None):
-        """TestCaseReviewVo
+        r"""TestCaseReviewVo
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class TestCaseReviewVo:
 
     @property
     def uri(self):
-        """Gets the uri of this TestCaseReviewVo.
+        r"""Gets the uri of this TestCaseReviewVo.
 
         评审URI
 
@@ -194,7 +194,7 @@ class TestCaseReviewVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this TestCaseReviewVo.
+        r"""Sets the uri of this TestCaseReviewVo.
 
         评审URI
 
@@ -205,7 +205,7 @@ class TestCaseReviewVo:
 
     @property
     def testcase_name(self):
-        """Gets the testcase_name of this TestCaseReviewVo.
+        r"""Gets the testcase_name of this TestCaseReviewVo.
 
         用例名称
 
@@ -216,7 +216,7 @@ class TestCaseReviewVo:
 
     @testcase_name.setter
     def testcase_name(self, testcase_name):
-        """Sets the testcase_name of this TestCaseReviewVo.
+        r"""Sets the testcase_name of this TestCaseReviewVo.
 
         用例名称
 
@@ -227,7 +227,7 @@ class TestCaseReviewVo:
 
     @property
     def testcase_number(self):
-        """Gets the testcase_number of this TestCaseReviewVo.
+        r"""Gets the testcase_number of this TestCaseReviewVo.
 
         用例编号
 
@@ -238,7 +238,7 @@ class TestCaseReviewVo:
 
     @testcase_number.setter
     def testcase_number(self, testcase_number):
-        """Sets the testcase_number of this TestCaseReviewVo.
+        r"""Sets the testcase_number of this TestCaseReviewVo.
 
         用例编号
 
@@ -249,7 +249,7 @@ class TestCaseReviewVo:
 
     @property
     def testcase_stage(self):
-        """Gets the testcase_stage of this TestCaseReviewVo.
+        r"""Gets the testcase_stage of this TestCaseReviewVo.
 
         用例阶段
 
@@ -260,7 +260,7 @@ class TestCaseReviewVo:
 
     @testcase_stage.setter
     def testcase_stage(self, testcase_stage):
-        """Sets the testcase_stage of this TestCaseReviewVo.
+        r"""Sets the testcase_stage of this TestCaseReviewVo.
 
         用例阶段
 
@@ -271,7 +271,7 @@ class TestCaseReviewVo:
 
     @property
     def testcase_last_modified(self):
-        """Gets the testcase_last_modified of this TestCaseReviewVo.
+        r"""Gets the testcase_last_modified of this TestCaseReviewVo.
 
         用例修改时间
 
@@ -282,7 +282,7 @@ class TestCaseReviewVo:
 
     @testcase_last_modified.setter
     def testcase_last_modified(self, testcase_last_modified):
-        """Sets the testcase_last_modified of this TestCaseReviewVo.
+        r"""Sets the testcase_last_modified of this TestCaseReviewVo.
 
         用例修改时间
 
@@ -293,7 +293,7 @@ class TestCaseReviewVo:
 
     @property
     def testcase_last_modified_timestamp(self):
-        """Gets the testcase_last_modified_timestamp of this TestCaseReviewVo.
+        r"""Gets the testcase_last_modified_timestamp of this TestCaseReviewVo.
 
         用例修改时间时间戳
 
@@ -304,7 +304,7 @@ class TestCaseReviewVo:
 
     @testcase_last_modified_timestamp.setter
     def testcase_last_modified_timestamp(self, testcase_last_modified_timestamp):
-        """Sets the testcase_last_modified_timestamp of this TestCaseReviewVo.
+        r"""Sets the testcase_last_modified_timestamp of this TestCaseReviewVo.
 
         用例修改时间时间戳
 
@@ -315,7 +315,7 @@ class TestCaseReviewVo:
 
     @property
     def testcase_uri(self):
-        """Gets the testcase_uri of this TestCaseReviewVo.
+        r"""Gets the testcase_uri of this TestCaseReviewVo.
 
         分支用例URI
 
@@ -326,7 +326,7 @@ class TestCaseReviewVo:
 
     @testcase_uri.setter
     def testcase_uri(self, testcase_uri):
-        """Sets the testcase_uri of this TestCaseReviewVo.
+        r"""Sets the testcase_uri of this TestCaseReviewVo.
 
         分支用例URI
 
@@ -337,7 +337,7 @@ class TestCaseReviewVo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this TestCaseReviewVo.
+        r"""Gets the version_uri of this TestCaseReviewVo.
 
         版本URI
 
@@ -348,7 +348,7 @@ class TestCaseReviewVo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this TestCaseReviewVo.
+        r"""Sets the version_uri of this TestCaseReviewVo.
 
         版本URI
 
@@ -359,7 +359,7 @@ class TestCaseReviewVo:
 
     @property
     def version_name(self):
-        """Gets the version_name of this TestCaseReviewVo.
+        r"""Gets the version_name of this TestCaseReviewVo.
 
         版本名称
 
@@ -370,7 +370,7 @@ class TestCaseReviewVo:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this TestCaseReviewVo.
+        r"""Sets the version_name of this TestCaseReviewVo.
 
         版本名称
 
@@ -381,7 +381,7 @@ class TestCaseReviewVo:
 
     @property
     def comment(self):
-        """Gets the comment of this TestCaseReviewVo.
+        r"""Gets the comment of this TestCaseReviewVo.
 
         评审意见
 
@@ -392,7 +392,7 @@ class TestCaseReviewVo:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this TestCaseReviewVo.
+        r"""Sets the comment of this TestCaseReviewVo.
 
         评审意见
 
@@ -403,7 +403,7 @@ class TestCaseReviewVo:
 
     @property
     def close_comment(self):
-        """Gets the close_comment of this TestCaseReviewVo.
+        r"""Gets the close_comment of this TestCaseReviewVo.
 
         闭环意见
 
@@ -414,7 +414,7 @@ class TestCaseReviewVo:
 
     @close_comment.setter
     def close_comment(self, close_comment):
-        """Sets the close_comment of this TestCaseReviewVo.
+        r"""Sets the close_comment of this TestCaseReviewVo.
 
         闭环意见
 
@@ -425,7 +425,7 @@ class TestCaseReviewVo:
 
     @property
     def reviewer(self):
-        """Gets the reviewer of this TestCaseReviewVo.
+        r"""Gets the reviewer of this TestCaseReviewVo.
 
         评审人
 
@@ -436,7 +436,7 @@ class TestCaseReviewVo:
 
     @reviewer.setter
     def reviewer(self, reviewer):
-        """Sets the reviewer of this TestCaseReviewVo.
+        r"""Sets the reviewer of this TestCaseReviewVo.
 
         评审人
 
@@ -447,7 +447,7 @@ class TestCaseReviewVo:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this TestCaseReviewVo.
+        r"""Gets the creation_date of this TestCaseReviewVo.
 
         评审创建时间
 
@@ -458,7 +458,7 @@ class TestCaseReviewVo:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this TestCaseReviewVo.
+        r"""Sets the creation_date of this TestCaseReviewVo.
 
         评审创建时间
 
@@ -469,7 +469,7 @@ class TestCaseReviewVo:
 
     @property
     def creation_date_timestamp(self):
-        """Gets the creation_date_timestamp of this TestCaseReviewVo.
+        r"""Gets the creation_date_timestamp of this TestCaseReviewVo.
 
         评审创建时间时间戳
 
@@ -480,7 +480,7 @@ class TestCaseReviewVo:
 
     @creation_date_timestamp.setter
     def creation_date_timestamp(self, creation_date_timestamp):
-        """Sets the creation_date_timestamp of this TestCaseReviewVo.
+        r"""Sets the creation_date_timestamp of this TestCaseReviewVo.
 
         评审创建时间时间戳
 
@@ -491,7 +491,7 @@ class TestCaseReviewVo:
 
     @property
     def close_user_ids(self):
-        """Gets the close_user_ids of this TestCaseReviewVo.
+        r"""Gets the close_user_ids of this TestCaseReviewVo.
 
         指定的闭环人列表
 
@@ -502,7 +502,7 @@ class TestCaseReviewVo:
 
     @close_user_ids.setter
     def close_user_ids(self, close_user_ids):
-        """Sets the close_user_ids of this TestCaseReviewVo.
+        r"""Sets the close_user_ids of this TestCaseReviewVo.
 
         指定的闭环人列表
 
@@ -513,7 +513,7 @@ class TestCaseReviewVo:
 
     @property
     def actual_close_person(self):
-        """Gets the actual_close_person of this TestCaseReviewVo.
+        r"""Gets the actual_close_person of this TestCaseReviewVo.
 
         实际闭环人
 
@@ -524,7 +524,7 @@ class TestCaseReviewVo:
 
     @actual_close_person.setter
     def actual_close_person(self, actual_close_person):
-        """Sets the actual_close_person of this TestCaseReviewVo.
+        r"""Sets the actual_close_person of this TestCaseReviewVo.
 
         实际闭环人
 
@@ -535,7 +535,7 @@ class TestCaseReviewVo:
 
     @property
     def status(self):
-        """Gets the status of this TestCaseReviewVo.
+        r"""Gets the status of this TestCaseReviewVo.
 
         评审状态
 
@@ -546,7 +546,7 @@ class TestCaseReviewVo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TestCaseReviewVo.
+        r"""Sets the status of this TestCaseReviewVo.
 
         评审状态
 
@@ -557,7 +557,7 @@ class TestCaseReviewVo:
 
     @property
     def close_date(self):
-        """Gets the close_date of this TestCaseReviewVo.
+        r"""Gets the close_date of this TestCaseReviewVo.
 
         评审闭环时间
 
@@ -568,7 +568,7 @@ class TestCaseReviewVo:
 
     @close_date.setter
     def close_date(self, close_date):
-        """Sets the close_date of this TestCaseReviewVo.
+        r"""Sets the close_date of this TestCaseReviewVo.
 
         评审闭环时间
 
@@ -579,7 +579,7 @@ class TestCaseReviewVo:
 
     @property
     def close_date_timestamp(self):
-        """Gets the close_date_timestamp of this TestCaseReviewVo.
+        r"""Gets the close_date_timestamp of this TestCaseReviewVo.
 
         评审闭环时间时间戳
 
@@ -590,7 +590,7 @@ class TestCaseReviewVo:
 
     @close_date_timestamp.setter
     def close_date_timestamp(self, close_date_timestamp):
-        """Sets the close_date_timestamp of this TestCaseReviewVo.
+        r"""Sets the close_date_timestamp of this TestCaseReviewVo.
 
         评审闭环时间时间戳
 
@@ -601,7 +601,7 @@ class TestCaseReviewVo:
 
     @property
     def expect_close_date(self):
-        """Gets the expect_close_date of this TestCaseReviewVo.
+        r"""Gets the expect_close_date of this TestCaseReviewVo.
 
         期望闭环时间
 
@@ -612,7 +612,7 @@ class TestCaseReviewVo:
 
     @expect_close_date.setter
     def expect_close_date(self, expect_close_date):
-        """Sets the expect_close_date of this TestCaseReviewVo.
+        r"""Sets the expect_close_date of this TestCaseReviewVo.
 
         期望闭环时间
 
@@ -623,7 +623,7 @@ class TestCaseReviewVo:
 
     @property
     def expect_close_date_timestamp(self):
-        """Gets the expect_close_date_timestamp of this TestCaseReviewVo.
+        r"""Gets the expect_close_date_timestamp of this TestCaseReviewVo.
 
         期望闭环时间时间戳
 
@@ -634,7 +634,7 @@ class TestCaseReviewVo:
 
     @expect_close_date_timestamp.setter
     def expect_close_date_timestamp(self, expect_close_date_timestamp):
-        """Sets the expect_close_date_timestamp of this TestCaseReviewVo.
+        r"""Sets the expect_close_date_timestamp of this TestCaseReviewVo.
 
         期望闭环时间时间戳
 

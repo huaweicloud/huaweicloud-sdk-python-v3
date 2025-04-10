@@ -24,7 +24,7 @@ class UpdateCoverByThumbnailResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateCoverByThumbnailResponse
+        r"""UpdateCoverByThumbnailResponse
 
         The model defined in huaweicloud sdk
 

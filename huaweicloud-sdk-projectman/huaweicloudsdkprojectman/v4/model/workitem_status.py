@@ -27,7 +27,7 @@ class WorkitemStatus:
     }
 
     def __init__(self, id=None, status=None):
-        """WorkitemStatus
+        r"""WorkitemStatus
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WorkitemStatus:
 
     @property
     def id(self):
-        """Gets the id of this WorkitemStatus.
+        r"""Gets the id of this WorkitemStatus.
 
         工作项状态变更记录的id,每次变更产生一条新的记录id
 
@@ -61,7 +61,7 @@ class WorkitemStatus:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkitemStatus.
+        r"""Sets the id of this WorkitemStatus.
 
         工作项状态变更记录的id,每次变更产生一条新的记录id
 
@@ -72,7 +72,7 @@ class WorkitemStatus:
 
     @property
     def status(self):
-        """Gets the status of this WorkitemStatus.
+        r"""Gets the status of this WorkitemStatus.
 
         :return: The status of this WorkitemStatus.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkitemStatusStatus`
@@ -81,7 +81,7 @@ class WorkitemStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this WorkitemStatus.
+        r"""Sets the status of this WorkitemStatus.
 
         :param status: The status of this WorkitemStatus.
         :type status: :class:`huaweicloudsdkprojectman.v4.WorkitemStatusStatus`

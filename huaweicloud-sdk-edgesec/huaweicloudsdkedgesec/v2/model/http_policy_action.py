@@ -27,7 +27,7 @@ class HttpPolicyAction:
     }
 
     def __init__(self, category=None, followed_action_id=None):
-        """HttpPolicyAction
+        r"""HttpPolicyAction
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HttpPolicyAction:
 
     @property
     def category(self):
-        """Gets the category of this HttpPolicyAction.
+        r"""Gets the category of this HttpPolicyAction.
 
         防护等级
 
@@ -61,7 +61,7 @@ class HttpPolicyAction:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this HttpPolicyAction.
+        r"""Sets the category of this HttpPolicyAction.
 
         防护等级
 
@@ -72,7 +72,7 @@ class HttpPolicyAction:
 
     @property
     def followed_action_id(self):
-        """Gets the followed_action_id of this HttpPolicyAction.
+        r"""Gets the followed_action_id of this HttpPolicyAction.
 
         攻击惩罚规则ID
 
@@ -83,7 +83,7 @@ class HttpPolicyAction:
 
     @followed_action_id.setter
     def followed_action_id(self, followed_action_id):
-        """Sets the followed_action_id of this HttpPolicyAction.
+        r"""Sets the followed_action_id of this HttpPolicyAction.
 
         攻击惩罚规则ID
 

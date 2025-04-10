@@ -28,7 +28,7 @@ class CreateDocWatermarkByAddressResponse(SdkResponse):
     }
 
     def __init__(self, region_id=None, watermarked_file=None):
-        """CreateDocWatermarkByAddressResponse
+        r"""CreateDocWatermarkByAddressResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateDocWatermarkByAddressResponse(SdkResponse):
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateDocWatermarkByAddressResponse.
+        r"""Gets the region_id of this CreateDocWatermarkByAddressResponse.
 
         当前项目所在region的id，如：xx-xx-1。
 
@@ -62,7 +62,7 @@ class CreateDocWatermarkByAddressResponse(SdkResponse):
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateDocWatermarkByAddressResponse.
+        r"""Sets the region_id of this CreateDocWatermarkByAddressResponse.
 
         当前项目所在region的id，如：xx-xx-1。
 
@@ -73,7 +73,7 @@ class CreateDocWatermarkByAddressResponse(SdkResponse):
 
     @property
     def watermarked_file(self):
-        """Gets the watermarked_file of this CreateDocWatermarkByAddressResponse.
+        r"""Gets the watermarked_file of this CreateDocWatermarkByAddressResponse.
 
         添加水印后的文档地址，当前只支持华为云OBS对象，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.doc**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.doc为对象全路径名。
 
@@ -84,7 +84,7 @@ class CreateDocWatermarkByAddressResponse(SdkResponse):
 
     @watermarked_file.setter
     def watermarked_file(self, watermarked_file):
-        """Sets the watermarked_file of this CreateDocWatermarkByAddressResponse.
+        r"""Sets the watermarked_file of this CreateDocWatermarkByAddressResponse.
 
         添加水印后的文档地址，当前只支持华为云OBS对象，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.doc**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.doc为对象全路径名。
 

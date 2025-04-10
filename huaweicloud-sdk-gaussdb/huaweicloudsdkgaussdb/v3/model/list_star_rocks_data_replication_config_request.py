@@ -29,7 +29,7 @@ class ListStarRocksDataReplicationConfigRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, task_name=None):
-        """ListStarRocksDataReplicationConfigRequest
+        r"""ListStarRocksDataReplicationConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListStarRocksDataReplicationConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListStarRocksDataReplicationConfigRequest.
+        r"""Gets the instance_id of this ListStarRocksDataReplicationConfigRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -65,7 +65,7 @@ class ListStarRocksDataReplicationConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListStarRocksDataReplicationConfigRequest.
+        r"""Sets the instance_id of this ListStarRocksDataReplicationConfigRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -76,7 +76,7 @@ class ListStarRocksDataReplicationConfigRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListStarRocksDataReplicationConfigRequest.
+        r"""Gets the x_language of this ListStarRocksDataReplicationConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -87,7 +87,7 @@ class ListStarRocksDataReplicationConfigRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListStarRocksDataReplicationConfigRequest.
+        r"""Sets the x_language of this ListStarRocksDataReplicationConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -98,7 +98,7 @@ class ListStarRocksDataReplicationConfigRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ListStarRocksDataReplicationConfigRequest.
+        r"""Gets the task_name of this ListStarRocksDataReplicationConfigRequest.
 
         数据同步任务名。 字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线_。
 
@@ -109,7 +109,7 @@ class ListStarRocksDataReplicationConfigRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ListStarRocksDataReplicationConfigRequest.
+        r"""Sets the task_name of this ListStarRocksDataReplicationConfigRequest.
 
         数据同步任务名。 字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线_。
 

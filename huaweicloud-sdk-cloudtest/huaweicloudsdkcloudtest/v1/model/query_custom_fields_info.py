@@ -29,7 +29,7 @@ class QueryCustomFieldsInfo:
     }
 
     def __init__(self, id=None, values=None, field_name=None):
-        """QueryCustomFieldsInfo
+        r"""QueryCustomFieldsInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QueryCustomFieldsInfo:
 
     @property
     def id(self):
-        """Gets the id of this QueryCustomFieldsInfo.
+        r"""Gets the id of this QueryCustomFieldsInfo.
 
         测试用例自定义字段Id
 
@@ -68,7 +68,7 @@ class QueryCustomFieldsInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryCustomFieldsInfo.
+        r"""Sets the id of this QueryCustomFieldsInfo.
 
         测试用例自定义字段Id
 
@@ -79,7 +79,7 @@ class QueryCustomFieldsInfo:
 
     @property
     def values(self):
-        """Gets the values of this QueryCustomFieldsInfo.
+        r"""Gets the values of this QueryCustomFieldsInfo.
 
         测试用例自定义字段值
 
@@ -90,7 +90,7 @@ class QueryCustomFieldsInfo:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this QueryCustomFieldsInfo.
+        r"""Sets the values of this QueryCustomFieldsInfo.
 
         测试用例自定义字段值
 
@@ -101,7 +101,7 @@ class QueryCustomFieldsInfo:
 
     @property
     def field_name(self):
-        """Gets the field_name of this QueryCustomFieldsInfo.
+        r"""Gets the field_name of this QueryCustomFieldsInfo.
 
         自定义字段名，优先取id再取fieldName
 
@@ -112,7 +112,7 @@ class QueryCustomFieldsInfo:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this QueryCustomFieldsInfo.
+        r"""Sets the field_name of this QueryCustomFieldsInfo.
 
         自定义字段名，优先取id再取fieldName
 

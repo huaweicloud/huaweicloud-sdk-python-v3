@@ -40,7 +40,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, job_id=None, job_type=None, row_count=None, input_size=None, schema=None, rows=None):
-        """PreviewSqlJobResultResponse
+        r"""PreviewSqlJobResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this PreviewSqlJobResultResponse.
+        r"""Gets the is_success of this PreviewSqlJobResultResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -104,7 +104,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this PreviewSqlJobResultResponse.
+        r"""Sets the is_success of this PreviewSqlJobResultResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -115,7 +115,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this PreviewSqlJobResultResponse.
+        r"""Gets the message of this PreviewSqlJobResultResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -126,7 +126,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this PreviewSqlJobResultResponse.
+        r"""Sets the message of this PreviewSqlJobResultResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -137,7 +137,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this PreviewSqlJobResultResponse.
+        r"""Gets the job_id of this PreviewSqlJobResultResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -148,7 +148,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this PreviewSqlJobResultResponse.
+        r"""Sets the job_id of this PreviewSqlJobResultResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -159,7 +159,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this PreviewSqlJobResultResponse.
+        r"""Gets the job_type of this PreviewSqlJobResultResponse.
 
         作业类型，包含DDL、DCL、IMPORT、EXPORT、QUERY、INSERT。  目前仅支持查看“QUERY”类型作业的执行结果。
 
@@ -170,7 +170,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this PreviewSqlJobResultResponse.
+        r"""Sets the job_type of this PreviewSqlJobResultResponse.
 
         作业类型，包含DDL、DCL、IMPORT、EXPORT、QUERY、INSERT。  目前仅支持查看“QUERY”类型作业的执行结果。
 
@@ -181,7 +181,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @property
     def row_count(self):
-        """Gets the row_count of this PreviewSqlJobResultResponse.
+        r"""Gets the row_count of this PreviewSqlJobResultResponse.
 
         作业结果总条数。
 
@@ -192,7 +192,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @row_count.setter
     def row_count(self, row_count):
-        """Sets the row_count of this PreviewSqlJobResultResponse.
+        r"""Sets the row_count of this PreviewSqlJobResultResponse.
 
         作业结果总条数。
 
@@ -203,7 +203,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @property
     def input_size(self):
-        """Gets the input_size of this PreviewSqlJobResultResponse.
+        r"""Gets the input_size of this PreviewSqlJobResultResponse.
 
         作业执行过程中扫描的数据量。
 
@@ -214,7 +214,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @input_size.setter
     def input_size(self, input_size):
-        """Sets the input_size of this PreviewSqlJobResultResponse.
+        r"""Sets the input_size of this PreviewSqlJobResultResponse.
 
         作业执行过程中扫描的数据量。
 
@@ -225,7 +225,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @property
     def schema(self):
-        """Gets the schema of this PreviewSqlJobResultResponse.
+        r"""Gets the schema of this PreviewSqlJobResultResponse.
 
         作业结果列名称和类型。
 
@@ -236,7 +236,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this PreviewSqlJobResultResponse.
+        r"""Sets the schema of this PreviewSqlJobResultResponse.
 
         作业结果列名称和类型。
 
@@ -247,7 +247,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @property
     def rows(self):
-        """Gets the rows of this PreviewSqlJobResultResponse.
+        r"""Gets the rows of this PreviewSqlJobResultResponse.
 
         作业结果集。
 
@@ -258,7 +258,7 @@ class PreviewSqlJobResultResponse(SdkResponse):
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this PreviewSqlJobResultResponse.
+        r"""Sets the rows of this PreviewSqlJobResultResponse.
 
         作业结果集。
 

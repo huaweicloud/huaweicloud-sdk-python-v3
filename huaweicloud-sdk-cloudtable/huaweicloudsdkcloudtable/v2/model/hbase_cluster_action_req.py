@@ -25,7 +25,7 @@ class HbaseClusterActionReq:
     }
 
     def __init__(self, restart=None):
-        """HbaseClusterActionReq
+        r"""HbaseClusterActionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class HbaseClusterActionReq:
 
     @property
     def restart(self):
-        """Gets the restart of this HbaseClusterActionReq.
+        r"""Gets the restart of this HbaseClusterActionReq.
 
         该请求参数内无其他内容，但是需要该参数作为重启集群入参，示例看下述所示
 
@@ -53,7 +53,7 @@ class HbaseClusterActionReq:
 
     @restart.setter
     def restart(self, restart):
-        """Sets the restart of this HbaseClusterActionReq.
+        r"""Sets the restart of this HbaseClusterActionReq.
 
         该请求参数内无其他内容，但是需要该参数作为重启集群入参，示例看下述所示
 

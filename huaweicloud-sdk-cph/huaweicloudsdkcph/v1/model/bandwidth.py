@@ -37,7 +37,7 @@ class Bandwidth:
     }
 
     def __init__(self, band_width_name=None, band_width_id=None, band_width_size=None, band_width_charge_mode=None, band_width_share_type=None, create_time=None, update_time=None):
-        """Bandwidth
+        r"""Bandwidth
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Bandwidth:
 
     @property
     def band_width_name(self):
-        """Gets the band_width_name of this Bandwidth.
+        r"""Gets the band_width_name of this Bandwidth.
 
         云手机服务器的带宽名称。
 
@@ -96,7 +96,7 @@ class Bandwidth:
 
     @band_width_name.setter
     def band_width_name(self, band_width_name):
-        """Sets the band_width_name of this Bandwidth.
+        r"""Sets the band_width_name of this Bandwidth.
 
         云手机服务器的带宽名称。
 
@@ -107,7 +107,7 @@ class Bandwidth:
 
     @property
     def band_width_id(self):
-        """Gets the band_width_id of this Bandwidth.
+        r"""Gets the band_width_id of this Bandwidth.
 
         云手机服务器的带宽唯一标识。
 
@@ -118,7 +118,7 @@ class Bandwidth:
 
     @band_width_id.setter
     def band_width_id(self, band_width_id):
-        """Sets the band_width_id of this Bandwidth.
+        r"""Sets the band_width_id of this Bandwidth.
 
         云手机服务器的带宽唯一标识。
 
@@ -129,7 +129,7 @@ class Bandwidth:
 
     @property
     def band_width_size(self):
-        """Gets the band_width_size of this Bandwidth.
+        r"""Gets the band_width_size of this Bandwidth.
 
         云手机服务器的带宽大小。
 
@@ -140,7 +140,7 @@ class Bandwidth:
 
     @band_width_size.setter
     def band_width_size(self, band_width_size):
-        """Sets the band_width_size of this Bandwidth.
+        r"""Sets the band_width_size of this Bandwidth.
 
         云手机服务器的带宽大小。
 
@@ -151,7 +151,7 @@ class Bandwidth:
 
     @property
     def band_width_charge_mode(self):
-        """Gets the band_width_charge_mode of this Bandwidth.
+        r"""Gets the band_width_charge_mode of this Bandwidth.
 
         云手机服务器带宽的计费方式。  - 0：bandwidth, 按带宽计费  - 1：traffic, 按流量计费
 
@@ -162,7 +162,7 @@ class Bandwidth:
 
     @band_width_charge_mode.setter
     def band_width_charge_mode(self, band_width_charge_mode):
-        """Sets the band_width_charge_mode of this Bandwidth.
+        r"""Sets the band_width_charge_mode of this Bandwidth.
 
         云手机服务器带宽的计费方式。  - 0：bandwidth, 按带宽计费  - 1：traffic, 按流量计费
 
@@ -173,7 +173,7 @@ class Bandwidth:
 
     @property
     def band_width_share_type(self):
-        """Gets the band_width_share_type of this Bandwidth.
+        r"""Gets the band_width_share_type of this Bandwidth.
 
         云手机服务器的带宽类型。  - 0：per，独享带宽 - 1：whole，共享带宽
 
@@ -184,7 +184,7 @@ class Bandwidth:
 
     @band_width_share_type.setter
     def band_width_share_type(self, band_width_share_type):
-        """Sets the band_width_share_type of this Bandwidth.
+        r"""Sets the band_width_share_type of this Bandwidth.
 
         云手机服务器的带宽类型。  - 0：per，独享带宽 - 1：whole，共享带宽
 
@@ -195,7 +195,7 @@ class Bandwidth:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Bandwidth.
+        r"""Gets the create_time of this Bandwidth.
 
         带宽创建时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -206,7 +206,7 @@ class Bandwidth:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Bandwidth.
+        r"""Sets the create_time of this Bandwidth.
 
         带宽创建时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -217,7 +217,7 @@ class Bandwidth:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Bandwidth.
+        r"""Gets the update_time of this Bandwidth.
 
         带宽更新时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -228,7 +228,7 @@ class Bandwidth:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Bandwidth.
+        r"""Sets the update_time of this Bandwidth.
 
         带宽更新时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 

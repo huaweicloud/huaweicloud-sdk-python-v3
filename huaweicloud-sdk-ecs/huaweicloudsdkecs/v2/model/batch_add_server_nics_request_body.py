@@ -25,7 +25,7 @@ class BatchAddServerNicsRequestBody:
     }
 
     def __init__(self, nics=None):
-        """BatchAddServerNicsRequestBody
+        r"""BatchAddServerNicsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchAddServerNicsRequestBody:
 
     @property
     def nics(self):
-        """Gets the nics of this BatchAddServerNicsRequestBody.
+        r"""Gets the nics of this BatchAddServerNicsRequestBody.
 
         需要添加的网卡参数列表。
 
@@ -53,7 +53,7 @@ class BatchAddServerNicsRequestBody:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this BatchAddServerNicsRequestBody.
+        r"""Sets the nics of this BatchAddServerNicsRequestBody.
 
         需要添加的网卡参数列表。
 

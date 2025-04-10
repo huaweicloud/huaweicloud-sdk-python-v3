@@ -37,7 +37,7 @@ class EsflavorsVersionsFlavorsResp:
     }
 
     def __init__(self, cpu=None, ram=None, name=None, region=None, diskrange=None, available_az=None, flavor_id=None):
-        """EsflavorsVersionsFlavorsResp
+        r"""EsflavorsVersionsFlavorsResp
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class EsflavorsVersionsFlavorsResp:
 
     @property
     def cpu(self):
-        """Gets the cpu of this EsflavorsVersionsFlavorsResp.
+        r"""Gets the cpu of this EsflavorsVersionsFlavorsResp.
 
         实例的CPU核数。
 
@@ -96,7 +96,7 @@ class EsflavorsVersionsFlavorsResp:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this EsflavorsVersionsFlavorsResp.
+        r"""Sets the cpu of this EsflavorsVersionsFlavorsResp.
 
         实例的CPU核数。
 
@@ -107,7 +107,7 @@ class EsflavorsVersionsFlavorsResp:
 
     @property
     def ram(self):
-        """Gets the ram of this EsflavorsVersionsFlavorsResp.
+        r"""Gets the ram of this EsflavorsVersionsFlavorsResp.
 
         实例的内存大小。单位GB。
 
@@ -118,7 +118,7 @@ class EsflavorsVersionsFlavorsResp:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this EsflavorsVersionsFlavorsResp.
+        r"""Sets the ram of this EsflavorsVersionsFlavorsResp.
 
         实例的内存大小。单位GB。
 
@@ -129,7 +129,7 @@ class EsflavorsVersionsFlavorsResp:
 
     @property
     def name(self):
-        """Gets the name of this EsflavorsVersionsFlavorsResp.
+        r"""Gets the name of this EsflavorsVersionsFlavorsResp.
 
         规格名称。
 
@@ -140,7 +140,7 @@ class EsflavorsVersionsFlavorsResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EsflavorsVersionsFlavorsResp.
+        r"""Sets the name of this EsflavorsVersionsFlavorsResp.
 
         规格名称。
 
@@ -151,7 +151,7 @@ class EsflavorsVersionsFlavorsResp:
 
     @property
     def region(self):
-        """Gets the region of this EsflavorsVersionsFlavorsResp.
+        r"""Gets the region of this EsflavorsVersionsFlavorsResp.
 
         可用region。
 
@@ -162,7 +162,7 @@ class EsflavorsVersionsFlavorsResp:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this EsflavorsVersionsFlavorsResp.
+        r"""Sets the region of this EsflavorsVersionsFlavorsResp.
 
         可用region。
 
@@ -173,7 +173,7 @@ class EsflavorsVersionsFlavorsResp:
 
     @property
     def diskrange(self):
-        """Gets the diskrange of this EsflavorsVersionsFlavorsResp.
+        r"""Gets the diskrange of this EsflavorsVersionsFlavorsResp.
 
         实例的硬盘容量范围。
 
@@ -184,7 +184,7 @@ class EsflavorsVersionsFlavorsResp:
 
     @diskrange.setter
     def diskrange(self, diskrange):
-        """Sets the diskrange of this EsflavorsVersionsFlavorsResp.
+        r"""Sets the diskrange of this EsflavorsVersionsFlavorsResp.
 
         实例的硬盘容量范围。
 
@@ -195,7 +195,7 @@ class EsflavorsVersionsFlavorsResp:
 
     @property
     def available_az(self):
-        """Gets the available_az of this EsflavorsVersionsFlavorsResp.
+        r"""Gets the available_az of this EsflavorsVersionsFlavorsResp.
 
         可用区。
 
@@ -206,7 +206,7 @@ class EsflavorsVersionsFlavorsResp:
 
     @available_az.setter
     def available_az(self, available_az):
-        """Sets the available_az of this EsflavorsVersionsFlavorsResp.
+        r"""Sets the available_az of this EsflavorsVersionsFlavorsResp.
 
         可用区。
 
@@ -217,7 +217,7 @@ class EsflavorsVersionsFlavorsResp:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this EsflavorsVersionsFlavorsResp.
+        r"""Gets the flavor_id of this EsflavorsVersionsFlavorsResp.
 
         规格对应的ID。
 
@@ -228,7 +228,7 @@ class EsflavorsVersionsFlavorsResp:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this EsflavorsVersionsFlavorsResp.
+        r"""Sets the flavor_id of this EsflavorsVersionsFlavorsResp.
 
         规格对应的ID。
 

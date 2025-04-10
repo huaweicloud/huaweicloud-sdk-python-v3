@@ -27,7 +27,7 @@ class BatchAttachSharableVolumesOption:
     }
 
     def __init__(self, server_id=None, device=None):
-        """BatchAttachSharableVolumesOption
+        r"""BatchAttachSharableVolumesOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAttachSharableVolumesOption:
 
     @property
     def server_id(self):
-        """Gets the server_id of this BatchAttachSharableVolumesOption.
+        r"""Gets the server_id of this BatchAttachSharableVolumesOption.
 
         共享磁盘需要挂载的弹性云服务器ID。
 
@@ -60,7 +60,7 @@ class BatchAttachSharableVolumesOption:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this BatchAttachSharableVolumesOption.
+        r"""Sets the server_id of this BatchAttachSharableVolumesOption.
 
         共享磁盘需要挂载的弹性云服务器ID。
 
@@ -71,7 +71,7 @@ class BatchAttachSharableVolumesOption:
 
     @property
     def device(self):
-        """Gets the device of this BatchAttachSharableVolumesOption.
+        r"""Gets the device of this BatchAttachSharableVolumesOption.
 
         磁盘挂载点。  > 说明： >  > - 新增加的磁盘挂载点不能和已有的磁盘挂载点相同。 > - 对于采用XEN虚拟化类型的弹性云服务器，device为必选参数；系统盘挂载点请指定/dev/sda；数据盘挂载点请按英文字母顺序依次指定，如/dev/sdb，/dev/sdc，如果指定了以“/dev/vd”开头的挂载点，系统默认改为“/dev/sd”。 > - 对于采用KVM虚拟化类型的弹性云服务器，系统盘挂载点请指定/dev/vda；数据盘挂载点可不用指定，也可按英文字母顺序依次指定，如/dev/vdb，/dev/vdc，如果指定了以“/dev/sd”开头的挂载点，系统默认改为“/dev/vd”。
 
@@ -82,7 +82,7 @@ class BatchAttachSharableVolumesOption:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this BatchAttachSharableVolumesOption.
+        r"""Sets the device of this BatchAttachSharableVolumesOption.
 
         磁盘挂载点。  > 说明： >  > - 新增加的磁盘挂载点不能和已有的磁盘挂载点相同。 > - 对于采用XEN虚拟化类型的弹性云服务器，device为必选参数；系统盘挂载点请指定/dev/sda；数据盘挂载点请按英文字母顺序依次指定，如/dev/sdb，/dev/sdc，如果指定了以“/dev/vd”开头的挂载点，系统默认改为“/dev/sd”。 > - 对于采用KVM虚拟化类型的弹性云服务器，系统盘挂载点请指定/dev/vda；数据盘挂载点可不用指定，也可按英文字母顺序依次指定，如/dev/vdb，/dev/vdc，如果指定了以“/dev/sd”开头的挂载点，系统默认改为“/dev/vd”。
 

@@ -39,7 +39,7 @@ class SearchResourceSharesReqBody:
     }
 
     def __init__(self, limit=None, name=None, marker=None, permission_id=None, resource_owner=None, resource_share_ids=None, resource_share_status=None, tag_filters=None):
-        """SearchResourceSharesReqBody
+        r"""SearchResourceSharesReqBody
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class SearchResourceSharesReqBody:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchResourceSharesReqBody.
+        r"""Gets the limit of this SearchResourceSharesReqBody.
 
         分页页面的最大值。
 
@@ -102,7 +102,7 @@ class SearchResourceSharesReqBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchResourceSharesReqBody.
+        r"""Sets the limit of this SearchResourceSharesReqBody.
 
         分页页面的最大值。
 
@@ -113,7 +113,7 @@ class SearchResourceSharesReqBody:
 
     @property
     def name(self):
-        """Gets the name of this SearchResourceSharesReqBody.
+        r"""Gets the name of this SearchResourceSharesReqBody.
 
         资源共享实例名称。
 
@@ -124,7 +124,7 @@ class SearchResourceSharesReqBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SearchResourceSharesReqBody.
+        r"""Sets the name of this SearchResourceSharesReqBody.
 
         资源共享实例名称。
 
@@ -135,7 +135,7 @@ class SearchResourceSharesReqBody:
 
     @property
     def marker(self):
-        """Gets the marker of this SearchResourceSharesReqBody.
+        r"""Gets the marker of this SearchResourceSharesReqBody.
 
         页面标记。
 
@@ -146,7 +146,7 @@ class SearchResourceSharesReqBody:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this SearchResourceSharesReqBody.
+        r"""Sets the marker of this SearchResourceSharesReqBody.
 
         页面标记。
 
@@ -157,7 +157,7 @@ class SearchResourceSharesReqBody:
 
     @property
     def permission_id(self):
-        """Gets the permission_id of this SearchResourceSharesReqBody.
+        r"""Gets the permission_id of this SearchResourceSharesReqBody.
 
         权限ID。
 
@@ -168,7 +168,7 @@ class SearchResourceSharesReqBody:
 
     @permission_id.setter
     def permission_id(self, permission_id):
-        """Sets the permission_id of this SearchResourceSharesReqBody.
+        r"""Sets the permission_id of this SearchResourceSharesReqBody.
 
         权限ID。
 
@@ -179,7 +179,7 @@ class SearchResourceSharesReqBody:
 
     @property
     def resource_owner(self):
-        """Gets the resource_owner of this SearchResourceSharesReqBody.
+        r"""Gets the resource_owner of this SearchResourceSharesReqBody.
 
         检索您创建的或共享给您的（self或者other-accounts）资源共享实例。
 
@@ -190,7 +190,7 @@ class SearchResourceSharesReqBody:
 
     @resource_owner.setter
     def resource_owner(self, resource_owner):
-        """Sets the resource_owner of this SearchResourceSharesReqBody.
+        r"""Sets the resource_owner of this SearchResourceSharesReqBody.
 
         检索您创建的或共享给您的（self或者other-accounts）资源共享实例。
 
@@ -201,7 +201,7 @@ class SearchResourceSharesReqBody:
 
     @property
     def resource_share_ids(self):
-        """Gets the resource_share_ids of this SearchResourceSharesReqBody.
+        r"""Gets the resource_share_ids of this SearchResourceSharesReqBody.
 
         资源共享实例的ID列表。
 
@@ -212,7 +212,7 @@ class SearchResourceSharesReqBody:
 
     @resource_share_ids.setter
     def resource_share_ids(self, resource_share_ids):
-        """Sets the resource_share_ids of this SearchResourceSharesReqBody.
+        r"""Sets the resource_share_ids of this SearchResourceSharesReqBody.
 
         资源共享实例的ID列表。
 
@@ -223,7 +223,7 @@ class SearchResourceSharesReqBody:
 
     @property
     def resource_share_status(self):
-        """Gets the resource_share_status of this SearchResourceSharesReqBody.
+        r"""Gets the resource_share_status of this SearchResourceSharesReqBody.
 
         资源共享实例的状态。
 
@@ -234,7 +234,7 @@ class SearchResourceSharesReqBody:
 
     @resource_share_status.setter
     def resource_share_status(self, resource_share_status):
-        """Sets the resource_share_status of this SearchResourceSharesReqBody.
+        r"""Sets the resource_share_status of this SearchResourceSharesReqBody.
 
         资源共享实例的状态。
 
@@ -245,7 +245,7 @@ class SearchResourceSharesReqBody:
 
     @property
     def tag_filters(self):
-        """Gets the tag_filters of this SearchResourceSharesReqBody.
+        r"""Gets the tag_filters of this SearchResourceSharesReqBody.
 
         资源共享实例的标签。
 
@@ -256,7 +256,7 @@ class SearchResourceSharesReqBody:
 
     @tag_filters.setter
     def tag_filters(self, tag_filters):
-        """Sets the tag_filters of this SearchResourceSharesReqBody.
+        r"""Sets the tag_filters of this SearchResourceSharesReqBody.
 
         资源共享实例的标签。
 

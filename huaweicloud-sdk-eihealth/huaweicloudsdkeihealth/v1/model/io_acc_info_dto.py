@@ -31,7 +31,7 @@ class IoAccInfoDto:
     }
 
     def __init__(self, id=None, type=None, space=None, free_space=None):
-        """IoAccInfoDto
+        r"""IoAccInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class IoAccInfoDto:
 
     @property
     def id(self):
-        """Gets the id of this IoAccInfoDto.
+        r"""Gets the id of this IoAccInfoDto.
 
         io加速实例id
 
@@ -75,7 +75,7 @@ class IoAccInfoDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IoAccInfoDto.
+        r"""Sets the id of this IoAccInfoDto.
 
         io加速实例id
 
@@ -86,7 +86,7 @@ class IoAccInfoDto:
 
     @property
     def type(self):
-        """Gets the type of this IoAccInfoDto.
+        r"""Gets the type of this IoAccInfoDto.
 
         io加速实例类型
 
@@ -97,7 +97,7 @@ class IoAccInfoDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this IoAccInfoDto.
+        r"""Sets the type of this IoAccInfoDto.
 
         io加速实例类型
 
@@ -108,7 +108,7 @@ class IoAccInfoDto:
 
     @property
     def space(self):
-        """Gets the space of this IoAccInfoDto.
+        r"""Gets the space of this IoAccInfoDto.
 
         io加速实例总容量
 
@@ -119,7 +119,7 @@ class IoAccInfoDto:
 
     @space.setter
     def space(self, space):
-        """Sets the space of this IoAccInfoDto.
+        r"""Sets the space of this IoAccInfoDto.
 
         io加速实例总容量
 
@@ -130,7 +130,7 @@ class IoAccInfoDto:
 
     @property
     def free_space(self):
-        """Gets the free_space of this IoAccInfoDto.
+        r"""Gets the free_space of this IoAccInfoDto.
 
         io加速实例空闲容量
 
@@ -141,7 +141,7 @@ class IoAccInfoDto:
 
     @free_space.setter
     def free_space(self, free_space):
-        """Sets the free_space of this IoAccInfoDto.
+        r"""Sets the free_space of this IoAccInfoDto.
 
         io加速实例空闲容量
 

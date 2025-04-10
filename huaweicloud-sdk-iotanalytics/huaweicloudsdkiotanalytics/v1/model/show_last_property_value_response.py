@@ -26,7 +26,7 @@ class ShowLastPropertyValueResponse(SdkResponse):
     }
 
     def __init__(self, properties=None):
-        """ShowLastPropertyValueResponse
+        r"""ShowLastPropertyValueResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowLastPropertyValueResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this ShowLastPropertyValueResponse.
+        r"""Gets the properties of this ShowLastPropertyValueResponse.
 
         查询到的资产属性列表
 
@@ -55,7 +55,7 @@ class ShowLastPropertyValueResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ShowLastPropertyValueResponse.
+        r"""Sets the properties of this ShowLastPropertyValueResponse.
 
         查询到的资产属性列表
 

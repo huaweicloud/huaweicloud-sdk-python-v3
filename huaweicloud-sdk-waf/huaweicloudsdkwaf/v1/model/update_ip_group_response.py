@@ -36,7 +36,7 @@ class UpdateIpGroupResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, ips=None, size=None, rules=None, description=None):
-        """UpdateIpGroupResponse
+        r"""UpdateIpGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class UpdateIpGroupResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateIpGroupResponse.
+        r"""Gets the id of this UpdateIpGroupResponse.
 
         地址组id
 
@@ -90,7 +90,7 @@ class UpdateIpGroupResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateIpGroupResponse.
+        r"""Sets the id of this UpdateIpGroupResponse.
 
         地址组id
 
@@ -101,7 +101,7 @@ class UpdateIpGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateIpGroupResponse.
+        r"""Gets the name of this UpdateIpGroupResponse.
 
         地址组名称
 
@@ -112,7 +112,7 @@ class UpdateIpGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateIpGroupResponse.
+        r"""Sets the name of this UpdateIpGroupResponse.
 
         地址组名称
 
@@ -123,7 +123,7 @@ class UpdateIpGroupResponse(SdkResponse):
 
     @property
     def ips(self):
-        """Gets the ips of this UpdateIpGroupResponse.
+        r"""Gets the ips of this UpdateIpGroupResponse.
 
         地址组ip（以逗号分隔的ip或ip段）
 
@@ -134,7 +134,7 @@ class UpdateIpGroupResponse(SdkResponse):
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this UpdateIpGroupResponse.
+        r"""Sets the ips of this UpdateIpGroupResponse.
 
         地址组ip（以逗号分隔的ip或ip段）
 
@@ -145,7 +145,7 @@ class UpdateIpGroupResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this UpdateIpGroupResponse.
+        r"""Gets the size of this UpdateIpGroupResponse.
 
         地址组长度
 
@@ -156,7 +156,7 @@ class UpdateIpGroupResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this UpdateIpGroupResponse.
+        r"""Sets the size of this UpdateIpGroupResponse.
 
         地址组长度
 
@@ -167,7 +167,7 @@ class UpdateIpGroupResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this UpdateIpGroupResponse.
+        r"""Gets the rules of this UpdateIpGroupResponse.
 
         ip地址组绑定的规则列表
 
@@ -178,7 +178,7 @@ class UpdateIpGroupResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this UpdateIpGroupResponse.
+        r"""Sets the rules of this UpdateIpGroupResponse.
 
         ip地址组绑定的规则列表
 
@@ -189,7 +189,7 @@ class UpdateIpGroupResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateIpGroupResponse.
+        r"""Gets the description of this UpdateIpGroupResponse.
 
         地址组描述
 
@@ -200,7 +200,7 @@ class UpdateIpGroupResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateIpGroupResponse.
+        r"""Sets the description of this UpdateIpGroupResponse.
 
         地址组描述
 

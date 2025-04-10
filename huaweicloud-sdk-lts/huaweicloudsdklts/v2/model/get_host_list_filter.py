@@ -31,7 +31,7 @@ class GetHostListFilter:
     }
 
     def __init__(self, host_name_list=None, host_ip_list=None, host_status=None, host_version=None):
-        """GetHostListFilter
+        r"""GetHostListFilter
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class GetHostListFilter:
 
     @property
     def host_name_list(self):
-        """Gets the host_name_list of this GetHostListFilter.
+        r"""Gets the host_name_list of this GetHostListFilter.
 
         主机名称列表。可以根据主机名称列表，进行批量过滤。
 
@@ -75,7 +75,7 @@ class GetHostListFilter:
 
     @host_name_list.setter
     def host_name_list(self, host_name_list):
-        """Sets the host_name_list of this GetHostListFilter.
+        r"""Sets the host_name_list of this GetHostListFilter.
 
         主机名称列表。可以根据主机名称列表，进行批量过滤。
 
@@ -86,7 +86,7 @@ class GetHostListFilter:
 
     @property
     def host_ip_list(self):
-        """Gets the host_ip_list of this GetHostListFilter.
+        r"""Gets the host_ip_list of this GetHostListFilter.
 
         主机ID列表。可以根据主机IP列表，进行批量过滤。
 
@@ -97,7 +97,7 @@ class GetHostListFilter:
 
     @host_ip_list.setter
     def host_ip_list(self, host_ip_list):
-        """Sets the host_ip_list of this GetHostListFilter.
+        r"""Sets the host_ip_list of this GetHostListFilter.
 
         主机ID列表。可以根据主机IP列表，进行批量过滤。
 
@@ -108,7 +108,7 @@ class GetHostListFilter:
 
     @property
     def host_status(self):
-        """Gets the host_status of this GetHostListFilter.
+        r"""Gets the host_status of this GetHostListFilter.
 
         主机状态。可以根据主机状态进行过滤。 uninstall:未安装 running:运行 offline:离线 error:异常 plugin error:插件错误 installing:安装中 install-fail:安装失败 upgrading:升级中 upgrading-transient:升级中 upgrade failed:升级失败 upgrade-fail:升级失败 uninstalling:卸载中 uninstalling-transient:卸载中 authentication error:鉴权失败
 
@@ -119,7 +119,7 @@ class GetHostListFilter:
 
     @host_status.setter
     def host_status(self, host_status):
-        """Sets the host_status of this GetHostListFilter.
+        r"""Sets the host_status of this GetHostListFilter.
 
         主机状态。可以根据主机状态进行过滤。 uninstall:未安装 running:运行 offline:离线 error:异常 plugin error:插件错误 installing:安装中 install-fail:安装失败 upgrading:升级中 upgrading-transient:升级中 upgrade failed:升级失败 upgrade-fail:升级失败 uninstalling:卸载中 uninstalling-transient:卸载中 authentication error:鉴权失败
 
@@ -130,7 +130,7 @@ class GetHostListFilter:
 
     @property
     def host_version(self):
-        """Gets the host_version of this GetHostListFilter.
+        r"""Gets the host_version of this GetHostListFilter.
 
         主机版本。可以根据主机版本进行过滤。
 
@@ -141,7 +141,7 @@ class GetHostListFilter:
 
     @host_version.setter
     def host_version(self, host_version):
-        """Sets the host_version of this GetHostListFilter.
+        r"""Sets the host_version of this GetHostListFilter.
 
         主机版本。可以根据主机版本进行过滤。
 

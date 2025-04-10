@@ -39,7 +39,7 @@ class PublicScriptDetailModel:
     }
 
     def __init__(self, script_uuid=None, name=None, description=None, type=None, content=None, script_params=None, gmt_created=None, properties=None):
-        """PublicScriptDetailModel
+        r"""PublicScriptDetailModel
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PublicScriptDetailModel:
 
     @property
     def script_uuid(self):
-        """Gets the script_uuid of this PublicScriptDetailModel.
+        r"""Gets the script_uuid of this PublicScriptDetailModel.
 
         脚本uuid
 
@@ -96,7 +96,7 @@ class PublicScriptDetailModel:
 
     @script_uuid.setter
     def script_uuid(self, script_uuid):
-        """Sets the script_uuid of this PublicScriptDetailModel.
+        r"""Sets the script_uuid of this PublicScriptDetailModel.
 
         脚本uuid
 
@@ -107,7 +107,7 @@ class PublicScriptDetailModel:
 
     @property
     def name(self):
-        """Gets the name of this PublicScriptDetailModel.
+        r"""Gets the name of this PublicScriptDetailModel.
 
         脚本名称
 
@@ -118,7 +118,7 @@ class PublicScriptDetailModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublicScriptDetailModel.
+        r"""Sets the name of this PublicScriptDetailModel.
 
         脚本名称
 
@@ -129,7 +129,7 @@ class PublicScriptDetailModel:
 
     @property
     def description(self):
-        """Gets the description of this PublicScriptDetailModel.
+        r"""Gets the description of this PublicScriptDetailModel.
 
         脚本描述
 
@@ -140,7 +140,7 @@ class PublicScriptDetailModel:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublicScriptDetailModel.
+        r"""Sets the description of this PublicScriptDetailModel.
 
         脚本描述
 
@@ -151,7 +151,7 @@ class PublicScriptDetailModel:
 
     @property
     def type(self):
-        """Gets the type of this PublicScriptDetailModel.
+        r"""Gets the type of this PublicScriptDetailModel.
 
         脚本类型 SHELL:shell脚本， PYTHON:Python脚本， BAT:Bat脚本，
 
@@ -162,7 +162,7 @@ class PublicScriptDetailModel:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PublicScriptDetailModel.
+        r"""Sets the type of this PublicScriptDetailModel.
 
         脚本类型 SHELL:shell脚本， PYTHON:Python脚本， BAT:Bat脚本，
 
@@ -173,7 +173,7 @@ class PublicScriptDetailModel:
 
     @property
     def content(self):
-        """Gets the content of this PublicScriptDetailModel.
+        r"""Gets the content of this PublicScriptDetailModel.
 
         脚本内容
 
@@ -184,7 +184,7 @@ class PublicScriptDetailModel:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this PublicScriptDetailModel.
+        r"""Sets the content of this PublicScriptDetailModel.
 
         脚本内容
 
@@ -195,7 +195,7 @@ class PublicScriptDetailModel:
 
     @property
     def script_params(self):
-        """Gets the script_params of this PublicScriptDetailModel.
+        r"""Gets the script_params of this PublicScriptDetailModel.
 
         脚本入参
 
@@ -206,7 +206,7 @@ class PublicScriptDetailModel:
 
     @script_params.setter
     def script_params(self, script_params):
-        """Sets the script_params of this PublicScriptDetailModel.
+        r"""Sets the script_params of this PublicScriptDetailModel.
 
         脚本入参
 
@@ -217,7 +217,7 @@ class PublicScriptDetailModel:
 
     @property
     def gmt_created(self):
-        """Gets the gmt_created of this PublicScriptDetailModel.
+        r"""Gets the gmt_created of this PublicScriptDetailModel.
 
         创建时间
 
@@ -228,7 +228,7 @@ class PublicScriptDetailModel:
 
     @gmt_created.setter
     def gmt_created(self, gmt_created):
-        """Sets the gmt_created of this PublicScriptDetailModel.
+        r"""Sets the gmt_created of this PublicScriptDetailModel.
 
         创建时间
 
@@ -239,7 +239,7 @@ class PublicScriptDetailModel:
 
     @property
     def properties(self):
-        """Gets the properties of this PublicScriptDetailModel.
+        r"""Gets the properties of this PublicScriptDetailModel.
 
         :return: The properties of this PublicScriptDetailModel.
         :rtype: :class:`huaweicloudsdkcoc.v1.PublicScriptPropertiesModel`
@@ -248,7 +248,7 @@ class PublicScriptDetailModel:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this PublicScriptDetailModel.
+        r"""Sets the properties of this PublicScriptDetailModel.
 
         :param properties: The properties of this PublicScriptDetailModel.
         :type properties: :class:`huaweicloudsdkcoc.v1.PublicScriptPropertiesModel`

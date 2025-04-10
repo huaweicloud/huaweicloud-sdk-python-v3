@@ -28,7 +28,7 @@ class ListCertificateAuthorityObsBucketResponse(SdkResponse):
     }
 
     def __init__(self, total=None, obs_buckets=None):
-        """ListCertificateAuthorityObsBucketResponse
+        r"""ListCertificateAuthorityObsBucketResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCertificateAuthorityObsBucketResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListCertificateAuthorityObsBucketResponse.
+        r"""Gets the total of this ListCertificateAuthorityObsBucketResponse.
 
         OBS桶总数。
 
@@ -62,7 +62,7 @@ class ListCertificateAuthorityObsBucketResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListCertificateAuthorityObsBucketResponse.
+        r"""Sets the total of this ListCertificateAuthorityObsBucketResponse.
 
         OBS桶总数。
 
@@ -73,7 +73,7 @@ class ListCertificateAuthorityObsBucketResponse(SdkResponse):
 
     @property
     def obs_buckets(self):
-        """Gets the obs_buckets of this ListCertificateAuthorityObsBucketResponse.
+        r"""Gets the obs_buckets of this ListCertificateAuthorityObsBucketResponse.
 
         OBS桶列表，详情请参见**ObsBuckets**字段数据结构说明。
 
@@ -84,7 +84,7 @@ class ListCertificateAuthorityObsBucketResponse(SdkResponse):
 
     @obs_buckets.setter
     def obs_buckets(self, obs_buckets):
-        """Sets the obs_buckets of this ListCertificateAuthorityObsBucketResponse.
+        r"""Sets the obs_buckets of this ListCertificateAuthorityObsBucketResponse.
 
         OBS桶列表，详情请参见**ObsBuckets**字段数据结构说明。
 

@@ -25,7 +25,7 @@ class BatchAttachInternetBandwidthsGlobalEipRequestBody:
     }
 
     def __init__(self, global_eips=None):
-        """BatchAttachInternetBandwidthsGlobalEipRequestBody
+        r"""BatchAttachInternetBandwidthsGlobalEipRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchAttachInternetBandwidthsGlobalEipRequestBody:
 
     @property
     def global_eips(self):
-        """Gets the global_eips of this BatchAttachInternetBandwidthsGlobalEipRequestBody.
+        r"""Gets the global_eips of this BatchAttachInternetBandwidthsGlobalEipRequestBody.
 
         批量绑定全域公网带宽请求体对象
 
@@ -53,7 +53,7 @@ class BatchAttachInternetBandwidthsGlobalEipRequestBody:
 
     @global_eips.setter
     def global_eips(self, global_eips):
-        """Sets the global_eips of this BatchAttachInternetBandwidthsGlobalEipRequestBody.
+        r"""Sets the global_eips of this BatchAttachInternetBandwidthsGlobalEipRequestBody.
 
         批量绑定全域公网带宽请求体对象
 

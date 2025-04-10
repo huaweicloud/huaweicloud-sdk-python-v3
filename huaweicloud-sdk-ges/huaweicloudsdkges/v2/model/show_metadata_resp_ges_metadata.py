@@ -25,7 +25,7 @@ class ShowMetadataRespGesMetadata:
     }
 
     def __init__(self, labels=None):
-        """ShowMetadataRespGesMetadata
+        r"""ShowMetadataRespGesMetadata
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowMetadataRespGesMetadata:
 
     @property
     def labels(self):
-        """Gets the labels of this ShowMetadataRespGesMetadata.
+        r"""Gets the labels of this ShowMetadataRespGesMetadata.
 
         Label数据结构集合。
 
@@ -54,7 +54,7 @@ class ShowMetadataRespGesMetadata:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ShowMetadataRespGesMetadata.
+        r"""Sets the labels of this ShowMetadataRespGesMetadata.
 
         Label数据结构集合。
 

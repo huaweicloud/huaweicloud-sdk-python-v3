@@ -27,7 +27,7 @@ class DeleteGcbResourceTagRequest:
     }
 
     def __init__(self, resource_id=None, tag_key=None):
-        """DeleteGcbResourceTagRequest
+        r"""DeleteGcbResourceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteGcbResourceTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteGcbResourceTagRequest.
+        r"""Gets the resource_id of this DeleteGcbResourceTagRequest.
 
         资源唯一标识符。
 
@@ -59,7 +59,7 @@ class DeleteGcbResourceTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteGcbResourceTagRequest.
+        r"""Sets the resource_id of this DeleteGcbResourceTagRequest.
 
         资源唯一标识符。
 
@@ -70,7 +70,7 @@ class DeleteGcbResourceTagRequest:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this DeleteGcbResourceTagRequest.
+        r"""Gets the tag_key of this DeleteGcbResourceTagRequest.
 
         删除的tag的key。
 
@@ -81,7 +81,7 @@ class DeleteGcbResourceTagRequest:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this DeleteGcbResourceTagRequest.
+        r"""Sets the tag_key of this DeleteGcbResourceTagRequest.
 
         删除的tag的key。
 

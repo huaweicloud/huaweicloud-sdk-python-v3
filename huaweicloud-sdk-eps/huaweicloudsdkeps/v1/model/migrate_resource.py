@@ -33,7 +33,7 @@ class MigrateResource:
     }
 
     def __init__(self, region_id=None, project_id=None, resource_id=None, resource_type=None, associated=None):
-        """MigrateResource
+        r"""MigrateResource
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class MigrateResource:
 
     @property
     def region_id(self):
-        """Gets the region_id of this MigrateResource.
+        r"""Gets the region_id of this MigrateResource.
 
         资源所属RegionID。迁移OBS服务资源时为必选项。
 
@@ -80,7 +80,7 @@ class MigrateResource:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this MigrateResource.
+        r"""Sets the region_id of this MigrateResource.
 
         资源所属RegionID。迁移OBS服务资源时为必选项。
 
@@ -91,7 +91,7 @@ class MigrateResource:
 
     @property
     def project_id(self):
-        """Gets the project_id of this MigrateResource.
+        r"""Gets the project_id of this MigrateResource.
 
         项目ID。resource_type为region级别服务时为必选项。
 
@@ -102,7 +102,7 @@ class MigrateResource:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this MigrateResource.
+        r"""Sets the project_id of this MigrateResource.
 
         项目ID。resource_type为region级别服务时为必选项。
 
@@ -113,7 +113,7 @@ class MigrateResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this MigrateResource.
+        r"""Gets the resource_id of this MigrateResource.
 
         资源ID
 
@@ -124,7 +124,7 @@ class MigrateResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this MigrateResource.
+        r"""Sets the resource_id of this MigrateResource.
 
         资源ID
 
@@ -135,7 +135,7 @@ class MigrateResource:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this MigrateResource.
+        r"""Gets the resource_type of this MigrateResource.
 
         资源类型
 
@@ -146,7 +146,7 @@ class MigrateResource:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this MigrateResource.
+        r"""Sets the resource_type of this MigrateResource.
 
         资源类型
 
@@ -157,7 +157,7 @@ class MigrateResource:
 
     @property
     def associated(self):
-        """Gets the associated of this MigrateResource.
+        r"""Gets the associated of this MigrateResource.
 
         是否关联迁移。目前仅支持ECS关联资源EVS、EIP迁移。
 
@@ -168,7 +168,7 @@ class MigrateResource:
 
     @associated.setter
     def associated(self, associated):
-        """Sets the associated of this MigrateResource.
+        r"""Sets the associated of this MigrateResource.
 
         是否关联迁移。目前仅支持ECS关联资源EVS、EIP迁移。
 

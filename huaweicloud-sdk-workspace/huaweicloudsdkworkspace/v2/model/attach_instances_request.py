@@ -27,7 +27,7 @@ class AttachInstancesRequest:
     }
 
     def __init__(self, service_transaction_id=None, body=None):
-        """AttachInstancesRequest
+        r"""AttachInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AttachInstancesRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this AttachInstancesRequest.
+        r"""Gets the service_transaction_id of this AttachInstancesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -61,7 +61,7 @@ class AttachInstancesRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this AttachInstancesRequest.
+        r"""Sets the service_transaction_id of this AttachInstancesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -72,7 +72,7 @@ class AttachInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this AttachInstancesRequest.
+        r"""Gets the body of this AttachInstancesRequest.
 
         :return: The body of this AttachInstancesRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AttachInstancesReq`
@@ -81,7 +81,7 @@ class AttachInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachInstancesRequest.
+        r"""Sets the body of this AttachInstancesRequest.
 
         :param body: The body of this AttachInstancesRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.AttachInstancesReq`

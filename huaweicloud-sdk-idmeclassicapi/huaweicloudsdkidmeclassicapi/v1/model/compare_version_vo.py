@@ -29,7 +29,7 @@ class CompareVersionVO:
     }
 
     def __init__(self, basic_version=None, correlation_version=None, id=None):
-        """CompareVersionVO
+        r"""CompareVersionVO
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CompareVersionVO:
 
     @property
     def basic_version(self):
-        """Gets the basic_version of this CompareVersionVO.
+        r"""Gets the basic_version of this CompareVersionVO.
 
         **参数解释：**  基础版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -65,7 +65,7 @@ class CompareVersionVO:
 
     @basic_version.setter
     def basic_version(self, basic_version):
-        """Sets the basic_version of this CompareVersionVO.
+        r"""Sets the basic_version of this CompareVersionVO.
 
         **参数解释：**  基础版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -76,7 +76,7 @@ class CompareVersionVO:
 
     @property
     def correlation_version(self):
-        """Gets the correlation_version of this CompareVersionVO.
+        r"""Gets the correlation_version of this CompareVersionVO.
 
         **参数解释：**  对比版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -87,7 +87,7 @@ class CompareVersionVO:
 
     @correlation_version.setter
     def correlation_version(self, correlation_version):
-        """Sets the correlation_version of this CompareVersionVO.
+        r"""Sets the correlation_version of this CompareVersionVO.
 
         **参数解释：**  对比版本号。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -98,7 +98,7 @@ class CompareVersionVO:
 
     @property
     def id(self):
-        """Gets the id of this CompareVersionVO.
+        r"""Gets the id of this CompareVersionVO.
 
         **参数解释：**  实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -109,7 +109,7 @@ class CompareVersionVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CompareVersionVO.
+        r"""Sets the id of this CompareVersionVO.
 
         **参数解释：**  实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 

@@ -31,7 +31,7 @@ class DeviceLinkageStatusCondition:
     }
 
     def __init__(self, device_id=None, product_id=None, status_list=None, duration=None):
-        """DeviceLinkageStatusCondition
+        r"""DeviceLinkageStatusCondition
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DeviceLinkageStatusCondition:
 
     @property
     def device_id(self):
-        """Gets the device_id of this DeviceLinkageStatusCondition.
+        r"""Gets the device_id of this DeviceLinkageStatusCondition.
 
         **参数说明**：设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。存在该参数时设备状态触发根据指定设备触发，该参数值和product_id不能同时为空。如果该参数和product_id同时存在时，以该参数值对应的设备进行条件过滤。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -75,7 +75,7 @@ class DeviceLinkageStatusCondition:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this DeviceLinkageStatusCondition.
+        r"""Sets the device_id of this DeviceLinkageStatusCondition.
 
         **参数说明**：设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。存在该参数时设备状态触发根据指定设备触发，该参数值和product_id不能同时为空。如果该参数和product_id同时存在时，以该参数值对应的设备进行条件过滤。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -86,7 +86,7 @@ class DeviceLinkageStatusCondition:
 
     @property
     def product_id(self):
-        """Gets the product_id of this DeviceLinkageStatusCondition.
+        r"""Gets the product_id of this DeviceLinkageStatusCondition.
 
         **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，创建产品后获得。方法请参见 [[创建产品](https://support.huaweicloud.com/api-iothub/iot_06_v5_0050.html)](tag:hws)[[创建产品](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0050.html)](tag:hws_hk)。存在该参数且device_id为空时设备状态触发匹配该产品下所有设备触发，该参数值和device_id不能同时为空。
 
@@ -97,7 +97,7 @@ class DeviceLinkageStatusCondition:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this DeviceLinkageStatusCondition.
+        r"""Sets the product_id of this DeviceLinkageStatusCondition.
 
         **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，创建产品后获得。方法请参见 [[创建产品](https://support.huaweicloud.com/api-iothub/iot_06_v5_0050.html)](tag:hws)[[创建产品](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0050.html)](tag:hws_hk)。存在该参数且device_id为空时设备状态触发匹配该产品下所有设备触发，该参数值和device_id不能同时为空。
 
@@ -108,7 +108,7 @@ class DeviceLinkageStatusCondition:
 
     @property
     def status_list(self):
-        """Gets the status_list of this DeviceLinkageStatusCondition.
+        r"""Gets the status_list of this DeviceLinkageStatusCondition.
 
         **参数说明**：状态列表，设备状态条件携带该参数。 **取值范围**： - ONLINE：设备上线 - OFFLINE：设备下线
 
@@ -119,7 +119,7 @@ class DeviceLinkageStatusCondition:
 
     @status_list.setter
     def status_list(self, status_list):
-        """Sets the status_list of this DeviceLinkageStatusCondition.
+        r"""Sets the status_list of this DeviceLinkageStatusCondition.
 
         **参数说明**：状态列表，设备状态条件携带该参数。 **取值范围**： - ONLINE：设备上线 - OFFLINE：设备下线
 
@@ -130,7 +130,7 @@ class DeviceLinkageStatusCondition:
 
     @property
     def duration(self):
-        """Gets the duration of this DeviceLinkageStatusCondition.
+        r"""Gets the duration of this DeviceLinkageStatusCondition.
 
         **持续时长**：设备状态持续时长，取值范围: 0-60(分钟)。
 
@@ -141,7 +141,7 @@ class DeviceLinkageStatusCondition:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this DeviceLinkageStatusCondition.
+        r"""Sets the duration of this DeviceLinkageStatusCondition.
 
         **持续时长**：设备状态持续时长，取值范围: 0-60(分钟)。
 

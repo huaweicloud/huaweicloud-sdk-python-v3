@@ -32,7 +32,7 @@ class ListCompositeHostsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, cloud_total=None, premium_total=None, items=None):
-        """ListCompositeHostsResponse
+        r"""ListCompositeHostsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListCompositeHostsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListCompositeHostsResponse.
+        r"""Gets the total of this ListCompositeHostsResponse.
 
         所有防护域名的数量
 
@@ -76,7 +76,7 @@ class ListCompositeHostsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListCompositeHostsResponse.
+        r"""Sets the total of this ListCompositeHostsResponse.
 
         所有防护域名的数量
 
@@ -87,7 +87,7 @@ class ListCompositeHostsResponse(SdkResponse):
 
     @property
     def cloud_total(self):
-        """Gets the cloud_total of this ListCompositeHostsResponse.
+        r"""Gets the cloud_total of this ListCompositeHostsResponse.
 
         云模式防护域名的数量
 
@@ -98,7 +98,7 @@ class ListCompositeHostsResponse(SdkResponse):
 
     @cloud_total.setter
     def cloud_total(self, cloud_total):
-        """Sets the cloud_total of this ListCompositeHostsResponse.
+        r"""Sets the cloud_total of this ListCompositeHostsResponse.
 
         云模式防护域名的数量
 
@@ -109,7 +109,7 @@ class ListCompositeHostsResponse(SdkResponse):
 
     @property
     def premium_total(self):
-        """Gets the premium_total of this ListCompositeHostsResponse.
+        r"""Gets the premium_total of this ListCompositeHostsResponse.
 
         独享模式防护域名的数量
 
@@ -120,7 +120,7 @@ class ListCompositeHostsResponse(SdkResponse):
 
     @premium_total.setter
     def premium_total(self, premium_total):
-        """Sets the premium_total of this ListCompositeHostsResponse.
+        r"""Sets the premium_total of this ListCompositeHostsResponse.
 
         独享模式防护域名的数量
 
@@ -131,7 +131,7 @@ class ListCompositeHostsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListCompositeHostsResponse.
+        r"""Gets the items of this ListCompositeHostsResponse.
 
         详细的防护域名信息
 
@@ -142,7 +142,7 @@ class ListCompositeHostsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListCompositeHostsResponse.
+        r"""Sets the items of this ListCompositeHostsResponse.
 
         详细的防护域名信息
 

@@ -29,7 +29,7 @@ class UpdateEnvironmentRequest:
     }
 
     def __init__(self, application_id=None, environment_id=None, body=None):
-        """UpdateEnvironmentRequest
+        r"""UpdateEnvironmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEnvironmentRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this UpdateEnvironmentRequest.
+        r"""Gets the application_id of this UpdateEnvironmentRequest.
 
         应用id
 
@@ -66,7 +66,7 @@ class UpdateEnvironmentRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this UpdateEnvironmentRequest.
+        r"""Sets the application_id of this UpdateEnvironmentRequest.
 
         应用id
 
@@ -77,7 +77,7 @@ class UpdateEnvironmentRequest:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this UpdateEnvironmentRequest.
+        r"""Gets the environment_id of this UpdateEnvironmentRequest.
 
         环境id
 
@@ -88,7 +88,7 @@ class UpdateEnvironmentRequest:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this UpdateEnvironmentRequest.
+        r"""Sets the environment_id of this UpdateEnvironmentRequest.
 
         环境id
 
@@ -99,7 +99,7 @@ class UpdateEnvironmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEnvironmentRequest.
+        r"""Gets the body of this UpdateEnvironmentRequest.
 
         :return: The body of this UpdateEnvironmentRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.EnvironmentRequest`
@@ -108,7 +108,7 @@ class UpdateEnvironmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEnvironmentRequest.
+        r"""Sets the body of this UpdateEnvironmentRequest.
 
         :param body: The body of this UpdateEnvironmentRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.EnvironmentRequest`

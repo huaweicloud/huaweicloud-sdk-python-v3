@@ -29,7 +29,7 @@ class FineGrainedSnapshotDetail:
     }
 
     def __init__(self, database=None, schema_list=None, table_list=None):
-        """FineGrainedSnapshotDetail
+        r"""FineGrainedSnapshotDetail
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FineGrainedSnapshotDetail:
 
     @property
     def database(self):
-        """Gets the database of this FineGrainedSnapshotDetail.
+        r"""Gets the database of this FineGrainedSnapshotDetail.
 
         数据库。
 
@@ -68,7 +68,7 @@ class FineGrainedSnapshotDetail:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this FineGrainedSnapshotDetail.
+        r"""Sets the database of this FineGrainedSnapshotDetail.
 
         数据库。
 
@@ -79,7 +79,7 @@ class FineGrainedSnapshotDetail:
 
     @property
     def schema_list(self):
-        """Gets the schema_list of this FineGrainedSnapshotDetail.
+        r"""Gets the schema_list of this FineGrainedSnapshotDetail.
 
         模式列表。
 
@@ -90,7 +90,7 @@ class FineGrainedSnapshotDetail:
 
     @schema_list.setter
     def schema_list(self, schema_list):
-        """Sets the schema_list of this FineGrainedSnapshotDetail.
+        r"""Sets the schema_list of this FineGrainedSnapshotDetail.
 
         模式列表。
 
@@ -101,7 +101,7 @@ class FineGrainedSnapshotDetail:
 
     @property
     def table_list(self):
-        """Gets the table_list of this FineGrainedSnapshotDetail.
+        r"""Gets the table_list of this FineGrainedSnapshotDetail.
 
         表集合。
 
@@ -112,7 +112,7 @@ class FineGrainedSnapshotDetail:
 
     @table_list.setter
     def table_list(self, table_list):
-        """Sets the table_list of this FineGrainedSnapshotDetail.
+        r"""Sets the table_list of this FineGrainedSnapshotDetail.
 
         表集合。
 

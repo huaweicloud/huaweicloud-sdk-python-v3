@@ -25,7 +25,7 @@ class CreateOptimizationTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateOptimizationTaskRequest
+        r"""CreateOptimizationTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateOptimizationTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOptimizationTaskRequest.
+        r"""Gets the body of this CreateOptimizationTaskRequest.
 
         :return: The body of this CreateOptimizationTaskRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.OptimizationTaskData`
@@ -52,7 +52,7 @@ class CreateOptimizationTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOptimizationTaskRequest.
+        r"""Sets the body of this CreateOptimizationTaskRequest.
 
         :param body: The body of this CreateOptimizationTaskRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.OptimizationTaskData`

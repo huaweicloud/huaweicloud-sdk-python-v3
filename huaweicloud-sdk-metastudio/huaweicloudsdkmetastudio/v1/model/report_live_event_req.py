@@ -29,7 +29,7 @@ class ReportLiveEventReq:
     }
 
     def __init__(self, total=None, events=None, review_config=None):
-        """ReportLiveEventReq
+        r"""ReportLiveEventReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ReportLiveEventReq:
 
     @property
     def total(self):
-        """Gets the total of this ReportLiveEventReq.
+        r"""Gets the total of this ReportLiveEventReq.
 
         **参数解释**： 事件条目数。
 
@@ -67,7 +67,7 @@ class ReportLiveEventReq:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ReportLiveEventReq.
+        r"""Sets the total of this ReportLiveEventReq.
 
         **参数解释**： 事件条目数。
 
@@ -78,7 +78,7 @@ class ReportLiveEventReq:
 
     @property
     def events(self):
-        """Gets the events of this ReportLiveEventReq.
+        r"""Gets the events of this ReportLiveEventReq.
 
         事件内容。
 
@@ -89,7 +89,7 @@ class ReportLiveEventReq:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this ReportLiveEventReq.
+        r"""Sets the events of this ReportLiveEventReq.
 
         事件内容。
 
@@ -100,7 +100,7 @@ class ReportLiveEventReq:
 
     @property
     def review_config(self):
-        """Gets the review_config of this ReportLiveEventReq.
+        r"""Gets the review_config of this ReportLiveEventReq.
 
         :return: The review_config of this ReportLiveEventReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -109,7 +109,7 @@ class ReportLiveEventReq:
 
     @review_config.setter
     def review_config(self, review_config):
-        """Sets the review_config of this ReportLiveEventReq.
+        r"""Sets the review_config of this ReportLiveEventReq.
 
         :param review_config: The review_config of this ReportLiveEventReq.
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`

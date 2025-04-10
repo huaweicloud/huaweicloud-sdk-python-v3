@@ -29,7 +29,7 @@ class ShowAppVersionDetailRequest:
     }
 
     def __init__(self, ief_instance_id=None, app_id=None, version_id=None):
-        """ShowAppVersionDetailRequest
+        r"""ShowAppVersionDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowAppVersionDetailRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ShowAppVersionDetailRequest.
+        r"""Gets the ief_instance_id of this ShowAppVersionDetailRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -66,7 +66,7 @@ class ShowAppVersionDetailRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ShowAppVersionDetailRequest.
+        r"""Sets the ief_instance_id of this ShowAppVersionDetailRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -77,7 +77,7 @@ class ShowAppVersionDetailRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowAppVersionDetailRequest.
+        r"""Gets the app_id of this ShowAppVersionDetailRequest.
 
         应用模板ID
 
@@ -88,7 +88,7 @@ class ShowAppVersionDetailRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowAppVersionDetailRequest.
+        r"""Sets the app_id of this ShowAppVersionDetailRequest.
 
         应用模板ID
 
@@ -99,7 +99,7 @@ class ShowAppVersionDetailRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ShowAppVersionDetailRequest.
+        r"""Gets the version_id of this ShowAppVersionDetailRequest.
 
         应用模板版本ID
 
@@ -110,7 +110,7 @@ class ShowAppVersionDetailRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ShowAppVersionDetailRequest.
+        r"""Sets the version_id of this ShowAppVersionDetailRequest.
 
         应用模板版本ID
 

@@ -29,7 +29,7 @@ class DeleteAssetRequest:
     }
 
     def __init__(self, x_app_user_id=None, asset_id=None, mode=None):
-        """DeleteAssetRequest
+        r"""DeleteAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteAssetRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this DeleteAssetRequest.
+        r"""Gets the x_app_user_id of this DeleteAssetRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -67,7 +67,7 @@ class DeleteAssetRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this DeleteAssetRequest.
+        r"""Sets the x_app_user_id of this DeleteAssetRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -78,7 +78,7 @@ class DeleteAssetRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this DeleteAssetRequest.
+        r"""Gets the asset_id of this DeleteAssetRequest.
 
         资产ID。
 
@@ -89,7 +89,7 @@ class DeleteAssetRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this DeleteAssetRequest.
+        r"""Sets the asset_id of this DeleteAssetRequest.
 
         资产ID。
 
@@ -100,7 +100,7 @@ class DeleteAssetRequest:
 
     @property
     def mode(self):
-        """Gets the mode of this DeleteAssetRequest.
+        r"""Gets the mode of this DeleteAssetRequest.
 
         删除模式
 
@@ -111,7 +111,7 @@ class DeleteAssetRequest:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this DeleteAssetRequest.
+        r"""Sets the mode of this DeleteAssetRequest.
 
         删除模式
 

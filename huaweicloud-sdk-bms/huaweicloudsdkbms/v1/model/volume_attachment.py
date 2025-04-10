@@ -27,7 +27,7 @@ class VolumeAttachment:
     }
 
     def __init__(self, volume_id=None, device=None):
-        """VolumeAttachment
+        r"""VolumeAttachment
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class VolumeAttachment:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this VolumeAttachment.
+        r"""Gets the volume_id of this VolumeAttachment.
 
         要挂卷的卷ID。可以从云硬盘控制台查询，或者通过调用“查询云硬盘列表”API获取。
 
@@ -60,7 +60,7 @@ class VolumeAttachment:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this VolumeAttachment.
+        r"""Sets the volume_id of this VolumeAttachment.
 
         要挂卷的卷ID。可以从云硬盘控制台查询，或者通过调用“查询云硬盘列表”API获取。
 
@@ -71,7 +71,7 @@ class VolumeAttachment:
 
     @property
     def device(self):
-        """Gets the device of this VolumeAttachment.
+        r"""Gets the device of this VolumeAttachment.
 
         磁盘挂载点，如/dev/sda、/dev/sdb。新增加的磁盘挂载点不能和已有的磁盘挂载点相同。需要根据已有设备名称顺序指定，否则不写device或device的值为空时，由系统自动生成。
 
@@ -82,7 +82,7 @@ class VolumeAttachment:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this VolumeAttachment.
+        r"""Sets the device of this VolumeAttachment.
 
         磁盘挂载点，如/dev/sda、/dev/sdb。新增加的磁盘挂载点不能和已有的磁盘挂载点相同。需要根据已有设备名称顺序指定，否则不写device或device的值为空时，由系统自动生成。
 

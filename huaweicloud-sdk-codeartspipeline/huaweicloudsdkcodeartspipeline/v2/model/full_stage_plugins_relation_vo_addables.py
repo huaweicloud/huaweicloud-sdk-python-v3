@@ -29,7 +29,7 @@ class FullStagePluginsRelationVOAddables:
     }
 
     def __init__(self, additional_prop1=None, additional_prop2=None, additional_prop3=None):
-        """FullStagePluginsRelationVOAddables
+        r"""FullStagePluginsRelationVOAddables
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FullStagePluginsRelationVOAddables:
 
     @property
     def additional_prop1(self):
-        """Gets the additional_prop1 of this FullStagePluginsRelationVOAddables.
+        r"""Gets the additional_prop1 of this FullStagePluginsRelationVOAddables.
 
         额外属性1
 
@@ -68,7 +68,7 @@ class FullStagePluginsRelationVOAddables:
 
     @additional_prop1.setter
     def additional_prop1(self, additional_prop1):
-        """Sets the additional_prop1 of this FullStagePluginsRelationVOAddables.
+        r"""Sets the additional_prop1 of this FullStagePluginsRelationVOAddables.
 
         额外属性1
 
@@ -79,7 +79,7 @@ class FullStagePluginsRelationVOAddables:
 
     @property
     def additional_prop2(self):
-        """Gets the additional_prop2 of this FullStagePluginsRelationVOAddables.
+        r"""Gets the additional_prop2 of this FullStagePluginsRelationVOAddables.
 
         额外属性2
 
@@ -90,7 +90,7 @@ class FullStagePluginsRelationVOAddables:
 
     @additional_prop2.setter
     def additional_prop2(self, additional_prop2):
-        """Sets the additional_prop2 of this FullStagePluginsRelationVOAddables.
+        r"""Sets the additional_prop2 of this FullStagePluginsRelationVOAddables.
 
         额外属性2
 
@@ -101,7 +101,7 @@ class FullStagePluginsRelationVOAddables:
 
     @property
     def additional_prop3(self):
-        """Gets the additional_prop3 of this FullStagePluginsRelationVOAddables.
+        r"""Gets the additional_prop3 of this FullStagePluginsRelationVOAddables.
 
         额外属性3
 
@@ -112,7 +112,7 @@ class FullStagePluginsRelationVOAddables:
 
     @additional_prop3.setter
     def additional_prop3(self, additional_prop3):
-        """Sets the additional_prop3 of this FullStagePluginsRelationVOAddables.
+        r"""Sets the additional_prop3 of this FullStagePluginsRelationVOAddables.
 
         额外属性3
 

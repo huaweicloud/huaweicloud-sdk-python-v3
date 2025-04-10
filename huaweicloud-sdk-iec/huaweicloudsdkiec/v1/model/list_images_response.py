@@ -28,7 +28,7 @@ class ListImagesResponse(SdkResponse):
     }
 
     def __init__(self, images=None, total=None):
-        """ListImagesResponse
+        r"""ListImagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListImagesResponse(SdkResponse):
 
     @property
     def images(self):
-        """Gets the images of this ListImagesResponse.
+        r"""Gets the images of this ListImagesResponse.
 
         查询返回的镜像列表。
 
@@ -62,7 +62,7 @@ class ListImagesResponse(SdkResponse):
 
     @images.setter
     def images(self, images):
-        """Sets the images of this ListImagesResponse.
+        r"""Sets the images of this ListImagesResponse.
 
         查询返回的镜像列表。
 
@@ -73,7 +73,7 @@ class ListImagesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListImagesResponse.
+        r"""Gets the total of this ListImagesResponse.
 
         列表元素个数，分页查询时返回总数。
 
@@ -84,7 +84,7 @@ class ListImagesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListImagesResponse.
+        r"""Sets the total of this ListImagesResponse.
 
         列表元素个数，分页查询时返回总数。
 

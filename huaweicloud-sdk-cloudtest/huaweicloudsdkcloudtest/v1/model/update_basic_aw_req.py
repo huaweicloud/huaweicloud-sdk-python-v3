@@ -39,7 +39,7 @@ class UpdateBasicAwReq:
     }
 
     def __init__(self, description=None, dft_check_point_list=None, dft_custom_header=None, dft_retry_interval=None, dft_retry_times=None, dft_variable_list=None, name=None, param_type_and_dft_value=None):
-        """UpdateBasicAwReq
+        r"""UpdateBasicAwReq
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class UpdateBasicAwReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateBasicAwReq.
+        r"""Gets the description of this UpdateBasicAwReq.
 
         描述
 
@@ -103,7 +103,7 @@ class UpdateBasicAwReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateBasicAwReq.
+        r"""Sets the description of this UpdateBasicAwReq.
 
         描述
 
@@ -114,7 +114,7 @@ class UpdateBasicAwReq:
 
     @property
     def dft_check_point_list(self):
-        """Gets the dft_check_point_list of this UpdateBasicAwReq.
+        r"""Gets the dft_check_point_list of this UpdateBasicAwReq.
 
         默认检查点List
 
@@ -125,7 +125,7 @@ class UpdateBasicAwReq:
 
     @dft_check_point_list.setter
     def dft_check_point_list(self, dft_check_point_list):
-        """Sets the dft_check_point_list of this UpdateBasicAwReq.
+        r"""Sets the dft_check_point_list of this UpdateBasicAwReq.
 
         默认检查点List
 
@@ -136,7 +136,7 @@ class UpdateBasicAwReq:
 
     @property
     def dft_custom_header(self):
-        """Gets the dft_custom_header of this UpdateBasicAwReq.
+        r"""Gets the dft_custom_header of this UpdateBasicAwReq.
 
         AW参数类list
 
@@ -147,7 +147,7 @@ class UpdateBasicAwReq:
 
     @dft_custom_header.setter
     def dft_custom_header(self, dft_custom_header):
-        """Sets the dft_custom_header of this UpdateBasicAwReq.
+        r"""Sets the dft_custom_header of this UpdateBasicAwReq.
 
         AW参数类list
 
@@ -158,7 +158,7 @@ class UpdateBasicAwReq:
 
     @property
     def dft_retry_interval(self):
-        """Gets the dft_retry_interval of this UpdateBasicAwReq.
+        r"""Gets the dft_retry_interval of this UpdateBasicAwReq.
 
         重试间隔时间 (ms) 为空表示不等待(目前内部使用)
 
@@ -169,7 +169,7 @@ class UpdateBasicAwReq:
 
     @dft_retry_interval.setter
     def dft_retry_interval(self, dft_retry_interval):
-        """Sets the dft_retry_interval of this UpdateBasicAwReq.
+        r"""Sets the dft_retry_interval of this UpdateBasicAwReq.
 
         重试间隔时间 (ms) 为空表示不等待(目前内部使用)
 
@@ -180,7 +180,7 @@ class UpdateBasicAwReq:
 
     @property
     def dft_retry_times(self):
-        """Gets the dft_retry_times of this UpdateBasicAwReq.
+        r"""Gets the dft_retry_times of this UpdateBasicAwReq.
 
         重试次数(目前内部使用)
 
@@ -191,7 +191,7 @@ class UpdateBasicAwReq:
 
     @dft_retry_times.setter
     def dft_retry_times(self, dft_retry_times):
-        """Sets the dft_retry_times of this UpdateBasicAwReq.
+        r"""Sets the dft_retry_times of this UpdateBasicAwReq.
 
         重试次数(目前内部使用)
 
@@ -202,7 +202,7 @@ class UpdateBasicAwReq:
 
     @property
     def dft_variable_list(self):
-        """Gets the dft_variable_list of this UpdateBasicAwReq.
+        r"""Gets the dft_variable_list of this UpdateBasicAwReq.
 
         定义的变量信息
 
@@ -213,7 +213,7 @@ class UpdateBasicAwReq:
 
     @dft_variable_list.setter
     def dft_variable_list(self, dft_variable_list):
-        """Sets the dft_variable_list of this UpdateBasicAwReq.
+        r"""Sets the dft_variable_list of this UpdateBasicAwReq.
 
         定义的变量信息
 
@@ -224,7 +224,7 @@ class UpdateBasicAwReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateBasicAwReq.
+        r"""Gets the name of this UpdateBasicAwReq.
 
         名称
 
@@ -235,7 +235,7 @@ class UpdateBasicAwReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateBasicAwReq.
+        r"""Sets the name of this UpdateBasicAwReq.
 
         名称
 
@@ -246,7 +246,7 @@ class UpdateBasicAwReq:
 
     @property
     def param_type_and_dft_value(self):
-        """Gets the param_type_and_dft_value of this UpdateBasicAwReq.
+        r"""Gets the param_type_and_dft_value of this UpdateBasicAwReq.
 
         参数类型和参数默认值对应List
 
@@ -257,7 +257,7 @@ class UpdateBasicAwReq:
 
     @param_type_and_dft_value.setter
     def param_type_and_dft_value(self, param_type_and_dft_value):
-        """Sets the param_type_and_dft_value of this UpdateBasicAwReq.
+        r"""Sets the param_type_and_dft_value of this UpdateBasicAwReq.
 
         参数类型和参数默认值对应List
 

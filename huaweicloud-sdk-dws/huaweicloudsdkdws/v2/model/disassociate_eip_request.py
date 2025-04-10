@@ -27,7 +27,7 @@ class DisassociateEipRequest:
     }
 
     def __init__(self, cluster_id=None, eip_id=None):
-        """DisassociateEipRequest
+        r"""DisassociateEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DisassociateEipRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DisassociateEipRequest.
+        r"""Gets the cluster_id of this DisassociateEipRequest.
 
         集群ID
 
@@ -59,7 +59,7 @@ class DisassociateEipRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DisassociateEipRequest.
+        r"""Sets the cluster_id of this DisassociateEipRequest.
 
         集群ID
 
@@ -70,7 +70,7 @@ class DisassociateEipRequest:
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this DisassociateEipRequest.
+        r"""Gets the eip_id of this DisassociateEipRequest.
 
         集群绑定的弹性IP
 
@@ -81,7 +81,7 @@ class DisassociateEipRequest:
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this DisassociateEipRequest.
+        r"""Sets the eip_id of this DisassociateEipRequest.
 
         集群绑定的弹性IP
 

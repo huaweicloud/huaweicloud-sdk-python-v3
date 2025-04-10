@@ -29,7 +29,7 @@ class CheckoutAndUpdateRequest:
     }
 
     def __init__(self, identifier=None, model_name=None, body=None):
-        """CheckoutAndUpdateRequest
+        r"""CheckoutAndUpdateRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CheckoutAndUpdateRequest:
 
     @property
     def identifier(self):
-        """Gets the identifier of this CheckoutAndUpdateRequest.
+        r"""Gets the identifier of this CheckoutAndUpdateRequest.
 
         **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
@@ -66,7 +66,7 @@ class CheckoutAndUpdateRequest:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this CheckoutAndUpdateRequest.
+        r"""Sets the identifier of this CheckoutAndUpdateRequest.
 
         **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
@@ -77,7 +77,7 @@ class CheckoutAndUpdateRequest:
 
     @property
     def model_name(self):
-        """Gets the model_name of this CheckoutAndUpdateRequest.
+        r"""Gets the model_name of this CheckoutAndUpdateRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -88,7 +88,7 @@ class CheckoutAndUpdateRequest:
 
     @model_name.setter
     def model_name(self, model_name):
-        """Sets the model_name of this CheckoutAndUpdateRequest.
+        r"""Sets the model_name of this CheckoutAndUpdateRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -99,7 +99,7 @@ class CheckoutAndUpdateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckoutAndUpdateRequest.
+        r"""Gets the body of this CheckoutAndUpdateRequest.
 
         :return: The body of this CheckoutAndUpdateRequest.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOVersionModelVersionCheckoutAndUpdateDTOVersionModel`
@@ -108,7 +108,7 @@ class CheckoutAndUpdateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckoutAndUpdateRequest.
+        r"""Sets the body of this CheckoutAndUpdateRequest.
 
         :param body: The body of this CheckoutAndUpdateRequest.
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOVersionModelVersionCheckoutAndUpdateDTOVersionModel`

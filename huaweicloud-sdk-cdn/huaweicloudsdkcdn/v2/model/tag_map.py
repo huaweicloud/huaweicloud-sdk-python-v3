@@ -27,7 +27,7 @@ class TagMap:
     }
 
     def __init__(self, key=None, value=None):
-        """TagMap
+        r"""TagMap
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TagMap:
 
     @property
     def key(self):
-        """Gets the key of this TagMap.
+        r"""Gets the key of this TagMap.
 
         标签键。长度1-128个字符, 可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : = + - @
 
@@ -60,7 +60,7 @@ class TagMap:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagMap.
+        r"""Sets the key of this TagMap.
 
         标签键。长度1-128个字符, 可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : = + - @
 
@@ -71,7 +71,7 @@ class TagMap:
 
     @property
     def value(self):
-        """Gets the value of this TagMap.
+        r"""Gets the value of this TagMap.
 
         标签值。长度0-255个字符,  可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / = + - @
 
@@ -82,7 +82,7 @@ class TagMap:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagMap.
+        r"""Sets the value of this TagMap.
 
         标签值。长度0-255个字符,  可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / = + - @
 

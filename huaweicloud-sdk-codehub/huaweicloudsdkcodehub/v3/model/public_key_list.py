@@ -27,7 +27,7 @@ class PublicKeyList:
     }
 
     def __init__(self, sshkey=None, total=None):
-        """PublicKeyList
+        r"""PublicKeyList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PublicKeyList:
 
     @property
     def sshkey(self):
-        """Gets the sshkey of this PublicKeyList.
+        r"""Gets the sshkey of this PublicKeyList.
 
         密钥列表
 
@@ -61,7 +61,7 @@ class PublicKeyList:
 
     @sshkey.setter
     def sshkey(self, sshkey):
-        """Sets the sshkey of this PublicKeyList.
+        r"""Sets the sshkey of this PublicKeyList.
 
         密钥列表
 
@@ -72,7 +72,7 @@ class PublicKeyList:
 
     @property
     def total(self):
-        """Gets the total of this PublicKeyList.
+        r"""Gets the total of this PublicKeyList.
 
         密钥总数
 
@@ -83,7 +83,7 @@ class PublicKeyList:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this PublicKeyList.
+        r"""Sets the total of this PublicKeyList.
 
         密钥总数
 

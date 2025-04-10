@@ -27,7 +27,7 @@ class DeleteRomaAppRequest:
     }
 
     def __init__(self, app_id=None, instance_id=None):
-        """DeleteRomaAppRequest
+        r"""DeleteRomaAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteRomaAppRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this DeleteRomaAppRequest.
+        r"""Gets the app_id of this DeleteRomaAppRequest.
 
         应用ID
 
@@ -59,7 +59,7 @@ class DeleteRomaAppRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this DeleteRomaAppRequest.
+        r"""Sets the app_id of this DeleteRomaAppRequest.
 
         应用ID
 
@@ -70,7 +70,7 @@ class DeleteRomaAppRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteRomaAppRequest.
+        r"""Gets the instance_id of this DeleteRomaAppRequest.
 
         实例ID
 
@@ -81,7 +81,7 @@ class DeleteRomaAppRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteRomaAppRequest.
+        r"""Sets the instance_id of this DeleteRomaAppRequest.
 
         实例ID
 

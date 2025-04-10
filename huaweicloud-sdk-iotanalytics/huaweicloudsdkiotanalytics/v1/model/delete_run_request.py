@@ -27,7 +27,7 @@ class DeleteRunRequest:
     }
 
     def __init__(self, job_id=None, run_id=None):
-        """DeleteRunRequest
+        r"""DeleteRunRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteRunRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteRunRequest.
+        r"""Gets the job_id of this DeleteRunRequest.
 
         作业ID。
 
@@ -59,7 +59,7 @@ class DeleteRunRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteRunRequest.
+        r"""Sets the job_id of this DeleteRunRequest.
 
         作业ID。
 
@@ -70,7 +70,7 @@ class DeleteRunRequest:
 
     @property
     def run_id(self):
-        """Gets the run_id of this DeleteRunRequest.
+        r"""Gets the run_id of this DeleteRunRequest.
 
         作业运行ID。
 
@@ -81,7 +81,7 @@ class DeleteRunRequest:
 
     @run_id.setter
     def run_id(self, run_id):
-        """Sets the run_id of this DeleteRunRequest.
+        r"""Sets the run_id of this DeleteRunRequest.
 
         作业运行ID。
 

@@ -25,7 +25,7 @@ class App:
     }
 
     def __init__(self, app=None):
-        """App
+        r"""App
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class App:
 
     @property
     def app(self):
-        """Gets the app of this App.
+        r"""Gets the app of this App.
 
         :return: The app of this App.
         :rtype: :class:`huaweicloudsdkief.v1.AppDetail`
@@ -51,7 +51,7 @@ class App:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this App.
+        r"""Sets the app of this App.
 
         :param app: The app of this App.
         :type app: :class:`huaweicloudsdkief.v1.AppDetail`

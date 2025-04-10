@@ -27,7 +27,7 @@ class ModifyHlsConfig:
     }
 
     def __init__(self, push_domain=None, application=None):
-        """ModifyHlsConfig
+        r"""ModifyHlsConfig
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ModifyHlsConfig:
 
     @property
     def push_domain(self):
-        """Gets the push_domain of this ModifyHlsConfig.
+        r"""Gets the push_domain of this ModifyHlsConfig.
 
         推流域名
 
@@ -59,7 +59,7 @@ class ModifyHlsConfig:
 
     @push_domain.setter
     def push_domain(self, push_domain):
-        """Sets the push_domain of this ModifyHlsConfig.
+        r"""Sets the push_domain of this ModifyHlsConfig.
 
         推流域名
 
@@ -70,7 +70,7 @@ class ModifyHlsConfig:
 
     @property
     def application(self):
-        """Gets the application of this ModifyHlsConfig.
+        r"""Gets the application of this ModifyHlsConfig.
 
         推流域名APP配置
 
@@ -81,7 +81,7 @@ class ModifyHlsConfig:
 
     @application.setter
     def application(self, application):
-        """Sets the application of this ModifyHlsConfig.
+        r"""Sets the application of this ModifyHlsConfig.
 
         推流域名APP配置
 

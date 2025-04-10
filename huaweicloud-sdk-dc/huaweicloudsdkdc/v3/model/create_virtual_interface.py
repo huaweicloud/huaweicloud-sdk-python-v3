@@ -73,7 +73,7 @@ class CreateVirtualInterface:
     }
 
     def __init__(self, name=None, description=None, direct_connect_id=None, type=None, service_type=None, vlan=None, bandwidth=None, local_gateway_v4_ip=None, remote_gateway_v4_ip=None, address_family=None, local_gateway_v6_ip=None, remote_gateway_v6_ip=None, vgw_id=None, gateway_id=None, route_mode=None, bgp_asn=None, bgp_md5=None, remote_ep_group=None, service_ep_group=None, enable_bfd=None, enable_nqa=None, lag_id=None, resource_tenant_id=None, enterprise_project_id=None, tags=None):
-        """CreateVirtualInterface
+        r"""CreateVirtualInterface
 
         The model defined in huaweicloud sdk
 
@@ -205,7 +205,7 @@ class CreateVirtualInterface:
 
     @property
     def name(self):
-        """Gets the name of this CreateVirtualInterface.
+        r"""Gets the name of this CreateVirtualInterface.
 
         虚拟接口名字
 
@@ -216,7 +216,7 @@ class CreateVirtualInterface:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVirtualInterface.
+        r"""Sets the name of this CreateVirtualInterface.
 
         虚拟接口名字
 
@@ -227,7 +227,7 @@ class CreateVirtualInterface:
 
     @property
     def description(self):
-        """Gets the description of this CreateVirtualInterface.
+        r"""Gets the description of this CreateVirtualInterface.
 
         虚拟接口描述信息
 
@@ -238,7 +238,7 @@ class CreateVirtualInterface:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateVirtualInterface.
+        r"""Sets the description of this CreateVirtualInterface.
 
         虚拟接口描述信息
 
@@ -249,7 +249,7 @@ class CreateVirtualInterface:
 
     @property
     def direct_connect_id(self):
-        """Gets the direct_connect_id of this CreateVirtualInterface.
+        r"""Gets the direct_connect_id of this CreateVirtualInterface.
 
         虚拟接口关联的物理专线ID。在创建虚拟接口时，需要关联direct_connect_id或lag_id，当LAG功能在当前局点不支持时，该参数为必选。
 
@@ -260,7 +260,7 @@ class CreateVirtualInterface:
 
     @direct_connect_id.setter
     def direct_connect_id(self, direct_connect_id):
-        """Sets the direct_connect_id of this CreateVirtualInterface.
+        r"""Sets the direct_connect_id of this CreateVirtualInterface.
 
         虚拟接口关联的物理专线ID。在创建虚拟接口时，需要关联direct_connect_id或lag_id，当LAG功能在当前局点不支持时，该参数为必选。
 
@@ -271,7 +271,7 @@ class CreateVirtualInterface:
 
     @property
     def type(self):
-        """Gets the type of this CreateVirtualInterface.
+        r"""Gets the type of this CreateVirtualInterface.
 
         虚拟接口的类型,private
 
@@ -282,7 +282,7 @@ class CreateVirtualInterface:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateVirtualInterface.
+        r"""Sets the type of this CreateVirtualInterface.
 
         虚拟接口的类型,private
 
@@ -293,7 +293,7 @@ class CreateVirtualInterface:
 
     @property
     def service_type(self):
-        """Gets the service_type of this CreateVirtualInterface.
+        r"""Gets the service_type of this CreateVirtualInterface.
 
         接入网关类型：VGW/GDGW/LGW
 
@@ -304,7 +304,7 @@ class CreateVirtualInterface:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this CreateVirtualInterface.
+        r"""Sets the service_type of this CreateVirtualInterface.
 
         接入网关类型：VGW/GDGW/LGW
 
@@ -315,7 +315,7 @@ class CreateVirtualInterface:
 
     @property
     def vlan(self):
-        """Gets the vlan of this CreateVirtualInterface.
+        r"""Gets the vlan of this CreateVirtualInterface.
 
         对接客户侧vlan。当关联物理连接选择托管专线时，vlan需要和托管专线保持一致。
 
@@ -326,7 +326,7 @@ class CreateVirtualInterface:
 
     @vlan.setter
     def vlan(self, vlan):
-        """Sets the vlan of this CreateVirtualInterface.
+        r"""Sets the vlan of this CreateVirtualInterface.
 
         对接客户侧vlan。当关联物理连接选择托管专线时，vlan需要和托管专线保持一致。
 
@@ -337,7 +337,7 @@ class CreateVirtualInterface:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this CreateVirtualInterface.
+        r"""Gets the bandwidth of this CreateVirtualInterface.
 
         虚拟接口接入带宽
 
@@ -348,7 +348,7 @@ class CreateVirtualInterface:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this CreateVirtualInterface.
+        r"""Sets the bandwidth of this CreateVirtualInterface.
 
         虚拟接口接入带宽
 
@@ -359,7 +359,7 @@ class CreateVirtualInterface:
 
     @property
     def local_gateway_v4_ip(self):
-        """Gets the local_gateway_v4_ip of this CreateVirtualInterface.
+        r"""Gets the local_gateway_v4_ip of this CreateVirtualInterface.
 
         云侧网关IPv4接口地址,如果address_family是IPv4，是必选参数
 
@@ -370,7 +370,7 @@ class CreateVirtualInterface:
 
     @local_gateway_v4_ip.setter
     def local_gateway_v4_ip(self, local_gateway_v4_ip):
-        """Sets the local_gateway_v4_ip of this CreateVirtualInterface.
+        r"""Sets the local_gateway_v4_ip of this CreateVirtualInterface.
 
         云侧网关IPv4接口地址,如果address_family是IPv4，是必选参数
 
@@ -381,7 +381,7 @@ class CreateVirtualInterface:
 
     @property
     def remote_gateway_v4_ip(self):
-        """Gets the remote_gateway_v4_ip of this CreateVirtualInterface.
+        r"""Gets the remote_gateway_v4_ip of this CreateVirtualInterface.
 
         客户侧网关IPv4接口地址,如果address_family是IPv4，是必选参数
 
@@ -392,7 +392,7 @@ class CreateVirtualInterface:
 
     @remote_gateway_v4_ip.setter
     def remote_gateway_v4_ip(self, remote_gateway_v4_ip):
-        """Sets the remote_gateway_v4_ip of this CreateVirtualInterface.
+        r"""Sets the remote_gateway_v4_ip of this CreateVirtualInterface.
 
         客户侧网关IPv4接口地址,如果address_family是IPv4，是必选参数
 
@@ -403,7 +403,7 @@ class CreateVirtualInterface:
 
     @property
     def address_family(self):
-        """Gets the address_family of this CreateVirtualInterface.
+        r"""Gets the address_family of this CreateVirtualInterface.
 
         接口的地址簇类型，ipv4，ipv6
 
@@ -414,7 +414,7 @@ class CreateVirtualInterface:
 
     @address_family.setter
     def address_family(self, address_family):
-        """Sets the address_family of this CreateVirtualInterface.
+        r"""Sets the address_family of this CreateVirtualInterface.
 
         接口的地址簇类型，ipv4，ipv6
 
@@ -425,7 +425,7 @@ class CreateVirtualInterface:
 
     @property
     def local_gateway_v6_ip(self):
-        """Gets the local_gateway_v6_ip of this CreateVirtualInterface.
+        r"""Gets the local_gateway_v6_ip of this CreateVirtualInterface.
 
         云侧网关IPv6接口地址,如果address_family是IPv6，是必选参数
 
@@ -436,7 +436,7 @@ class CreateVirtualInterface:
 
     @local_gateway_v6_ip.setter
     def local_gateway_v6_ip(self, local_gateway_v6_ip):
-        """Sets the local_gateway_v6_ip of this CreateVirtualInterface.
+        r"""Sets the local_gateway_v6_ip of this CreateVirtualInterface.
 
         云侧网关IPv6接口地址,如果address_family是IPv6，是必选参数
 
@@ -447,7 +447,7 @@ class CreateVirtualInterface:
 
     @property
     def remote_gateway_v6_ip(self):
-        """Gets the remote_gateway_v6_ip of this CreateVirtualInterface.
+        r"""Gets the remote_gateway_v6_ip of this CreateVirtualInterface.
 
         客户侧网关IPv6接口地址,如果address_family是IPv6，是必选参数
 
@@ -458,7 +458,7 @@ class CreateVirtualInterface:
 
     @remote_gateway_v6_ip.setter
     def remote_gateway_v6_ip(self, remote_gateway_v6_ip):
-        """Sets the remote_gateway_v6_ip of this CreateVirtualInterface.
+        r"""Sets the remote_gateway_v6_ip of this CreateVirtualInterface.
 
         客户侧网关IPv6接口地址,如果address_family是IPv6，是必选参数
 
@@ -469,7 +469,7 @@ class CreateVirtualInterface:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this CreateVirtualInterface.
+        r"""Gets the vgw_id of this CreateVirtualInterface.
 
         虚拟接口连接的虚拟网关的ID
 
@@ -480,7 +480,7 @@ class CreateVirtualInterface:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this CreateVirtualInterface.
+        r"""Sets the vgw_id of this CreateVirtualInterface.
 
         虚拟接口连接的虚拟网关的ID
 
@@ -491,7 +491,7 @@ class CreateVirtualInterface:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this CreateVirtualInterface.
+        r"""Gets the gateway_id of this CreateVirtualInterface.
 
         虚拟接口关联的网关的ID。 当虚拟接口接入网关类型为全域接入网关时该参数必填，gateway_id值为全域接入网关的id
 
@@ -502,7 +502,7 @@ class CreateVirtualInterface:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this CreateVirtualInterface.
+        r"""Sets the gateway_id of this CreateVirtualInterface.
 
         虚拟接口关联的网关的ID。 当虚拟接口接入网关类型为全域接入网关时该参数必填，gateway_id值为全域接入网关的id
 
@@ -513,7 +513,7 @@ class CreateVirtualInterface:
 
     @property
     def route_mode(self):
-        """Gets the route_mode of this CreateVirtualInterface.
+        r"""Gets the route_mode of this CreateVirtualInterface.
 
         路由模式：static/bgp
 
@@ -524,7 +524,7 @@ class CreateVirtualInterface:
 
     @route_mode.setter
     def route_mode(self, route_mode):
-        """Sets the route_mode of this CreateVirtualInterface.
+        r"""Sets the route_mode of this CreateVirtualInterface.
 
         路由模式：static/bgp
 
@@ -535,7 +535,7 @@ class CreateVirtualInterface:
 
     @property
     def bgp_asn(self):
-        """Gets the bgp_asn of this CreateVirtualInterface.
+        r"""Gets the bgp_asn of this CreateVirtualInterface.
 
         客户侧BGP邻居的AS号
 
@@ -546,7 +546,7 @@ class CreateVirtualInterface:
 
     @bgp_asn.setter
     def bgp_asn(self, bgp_asn):
-        """Sets the bgp_asn of this CreateVirtualInterface.
+        r"""Sets the bgp_asn of this CreateVirtualInterface.
 
         客户侧BGP邻居的AS号
 
@@ -557,7 +557,7 @@ class CreateVirtualInterface:
 
     @property
     def bgp_md5(self):
-        """Gets the bgp_md5 of this CreateVirtualInterface.
+        r"""Gets the bgp_md5 of this CreateVirtualInterface.
 
         BGP邻居的MD5密码
 
@@ -568,7 +568,7 @@ class CreateVirtualInterface:
 
     @bgp_md5.setter
     def bgp_md5(self, bgp_md5):
-        """Sets the bgp_md5 of this CreateVirtualInterface.
+        r"""Sets the bgp_md5 of this CreateVirtualInterface.
 
         BGP邻居的MD5密码
 
@@ -579,7 +579,7 @@ class CreateVirtualInterface:
 
     @property
     def remote_ep_group(self):
-        """Gets the remote_ep_group of this CreateVirtualInterface.
+        r"""Gets the remote_ep_group of this CreateVirtualInterface.
 
         远端子网列表，记录租户侧的cidrs
 
@@ -590,7 +590,7 @@ class CreateVirtualInterface:
 
     @remote_ep_group.setter
     def remote_ep_group(self, remote_ep_group):
-        """Sets the remote_ep_group of this CreateVirtualInterface.
+        r"""Sets the remote_ep_group of this CreateVirtualInterface.
 
         远端子网列表，记录租户侧的cidrs
 
@@ -601,7 +601,7 @@ class CreateVirtualInterface:
 
     @property
     def service_ep_group(self):
-        """Gets the service_ep_group of this CreateVirtualInterface.
+        r"""Gets the service_ep_group of this CreateVirtualInterface.
 
         访问公网服务的子网列表
 
@@ -612,7 +612,7 @@ class CreateVirtualInterface:
 
     @service_ep_group.setter
     def service_ep_group(self, service_ep_group):
-        """Sets the service_ep_group of this CreateVirtualInterface.
+        r"""Sets the service_ep_group of this CreateVirtualInterface.
 
         访问公网服务的子网列表
 
@@ -623,7 +623,7 @@ class CreateVirtualInterface:
 
     @property
     def enable_bfd(self):
-        """Gets the enable_bfd of this CreateVirtualInterface.
+        r"""Gets the enable_bfd of this CreateVirtualInterface.
 
         是否使能bfd功能：true或false。[（预留字段暂不支持）](tag:dt)
 
@@ -634,7 +634,7 @@ class CreateVirtualInterface:
 
     @enable_bfd.setter
     def enable_bfd(self, enable_bfd):
-        """Sets the enable_bfd of this CreateVirtualInterface.
+        r"""Sets the enable_bfd of this CreateVirtualInterface.
 
         是否使能bfd功能：true或false。[（预留字段暂不支持）](tag:dt)
 
@@ -645,7 +645,7 @@ class CreateVirtualInterface:
 
     @property
     def enable_nqa(self):
-        """Gets the enable_nqa of this CreateVirtualInterface.
+        r"""Gets the enable_nqa of this CreateVirtualInterface.
 
         是否使能nqa功能：true或false。[（预留字段暂不支持）](tag:dt)
 
@@ -656,7 +656,7 @@ class CreateVirtualInterface:
 
     @enable_nqa.setter
     def enable_nqa(self, enable_nqa):
-        """Sets the enable_nqa of this CreateVirtualInterface.
+        r"""Sets the enable_nqa of this CreateVirtualInterface.
 
         是否使能nqa功能：true或false。[（预留字段暂不支持）](tag:dt)
 
@@ -667,7 +667,7 @@ class CreateVirtualInterface:
 
     @property
     def lag_id(self):
-        """Gets the lag_id of this CreateVirtualInterface.
+        r"""Gets the lag_id of this CreateVirtualInterface.
 
         虚拟接口关联的链路聚合组ID
 
@@ -678,7 +678,7 @@ class CreateVirtualInterface:
 
     @lag_id.setter
     def lag_id(self, lag_id):
-        """Sets the lag_id of this CreateVirtualInterface.
+        r"""Sets the lag_id of this CreateVirtualInterface.
 
         虚拟接口关联的链路聚合组ID
 
@@ -689,7 +689,7 @@ class CreateVirtualInterface:
 
     @property
     def resource_tenant_id(self):
-        """Gets the resource_tenant_id of this CreateVirtualInterface.
+        r"""Gets the resource_tenant_id of this CreateVirtualInterface.
 
         目标的租户的ID,用于跨租户创建虚拟接口场景
 
@@ -700,7 +700,7 @@ class CreateVirtualInterface:
 
     @resource_tenant_id.setter
     def resource_tenant_id(self, resource_tenant_id):
-        """Sets the resource_tenant_id of this CreateVirtualInterface.
+        r"""Sets the resource_tenant_id of this CreateVirtualInterface.
 
         目标的租户的ID,用于跨租户创建虚拟接口场景
 
@@ -711,7 +711,7 @@ class CreateVirtualInterface:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateVirtualInterface.
+        r"""Gets the enterprise_project_id of this CreateVirtualInterface.
 
         实例所属企业项目ID
 
@@ -722,7 +722,7 @@ class CreateVirtualInterface:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateVirtualInterface.
+        r"""Sets the enterprise_project_id of this CreateVirtualInterface.
 
         实例所属企业项目ID
 
@@ -733,7 +733,7 @@ class CreateVirtualInterface:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateVirtualInterface.
+        r"""Gets the tags of this CreateVirtualInterface.
 
         标签信息
 
@@ -744,7 +744,7 @@ class CreateVirtualInterface:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateVirtualInterface.
+        r"""Sets the tags of this CreateVirtualInterface.
 
         标签信息
 

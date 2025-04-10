@@ -27,7 +27,7 @@ class SetQosThresholdRequest:
     }
 
     def __init__(self, threshold_type=None, body=None):
-        """SetQosThresholdRequest
+        r"""SetQosThresholdRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SetQosThresholdRequest:
 
     @property
     def threshold_type(self):
-        """Gets the threshold_type of this SetQosThresholdRequest.
+        r"""Gets the threshold_type of this SetQosThresholdRequest.
 
         阈值类型： * AUDIO：音频相关阈值 * VIDEO：视频相关阈值 * SCREEN：屏幕共享相关阈值 * CPU：CPU相关阈值
 
@@ -60,7 +60,7 @@ class SetQosThresholdRequest:
 
     @threshold_type.setter
     def threshold_type(self, threshold_type):
-        """Sets the threshold_type of this SetQosThresholdRequest.
+        r"""Sets the threshold_type of this SetQosThresholdRequest.
 
         阈值类型： * AUDIO：音频相关阈值 * VIDEO：视频相关阈值 * SCREEN：屏幕共享相关阈值 * CPU：CPU相关阈值
 
@@ -71,7 +71,7 @@ class SetQosThresholdRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetQosThresholdRequest.
+        r"""Gets the body of this SetQosThresholdRequest.
 
         :return: The body of this SetQosThresholdRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetQosThresholdReq`
@@ -80,7 +80,7 @@ class SetQosThresholdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetQosThresholdRequest.
+        r"""Sets the body of this SetQosThresholdRequest.
 
         :param body: The body of this SetQosThresholdRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.SetQosThresholdReq`

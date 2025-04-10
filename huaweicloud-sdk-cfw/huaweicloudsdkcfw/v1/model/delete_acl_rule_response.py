@@ -26,7 +26,7 @@ class DeleteAclRuleResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """DeleteAclRuleResponse
+        r"""DeleteAclRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteAclRuleResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteAclRuleResponse.
+        r"""Gets the data of this DeleteAclRuleResponse.
 
         :return: The data of this DeleteAclRuleResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.RuleId`
@@ -53,7 +53,7 @@ class DeleteAclRuleResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteAclRuleResponse.
+        r"""Sets the data of this DeleteAclRuleResponse.
 
         :param data: The data of this DeleteAclRuleResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.RuleId`

@@ -25,7 +25,7 @@ class DeleteEnterpriseRouterRequest:
     }
 
     def __init__(self, er_id=None):
-        """DeleteEnterpriseRouterRequest
+        r"""DeleteEnterpriseRouterRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteEnterpriseRouterRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this DeleteEnterpriseRouterRequest.
+        r"""Gets the er_id of this DeleteEnterpriseRouterRequest.
 
         企业路由器实例ID
 
@@ -53,7 +53,7 @@ class DeleteEnterpriseRouterRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this DeleteEnterpriseRouterRequest.
+        r"""Sets the er_id of this DeleteEnterpriseRouterRequest.
 
         企业路由器实例ID
 

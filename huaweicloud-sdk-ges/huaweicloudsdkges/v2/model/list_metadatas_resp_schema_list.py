@@ -43,7 +43,7 @@ class ListMetadatasRespSchemaList:
     }
 
     def __init__(self, id=None, name=None, start_time=None, last_update_time=None, encrypted=None, master_key_name=None, master_key_id=None, description=None, metadata_path=None, status=None):
-        """ListMetadatasRespSchemaList
+        r"""ListMetadatasRespSchemaList
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListMetadatasRespSchemaList:
 
     @property
     def id(self):
-        """Gets the id of this ListMetadatasRespSchemaList.
+        r"""Gets the id of this ListMetadatasRespSchemaList.
 
         元数据 ID。
 
@@ -117,7 +117,7 @@ class ListMetadatasRespSchemaList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListMetadatasRespSchemaList.
+        r"""Sets the id of this ListMetadatasRespSchemaList.
 
         元数据 ID。
 
@@ -128,7 +128,7 @@ class ListMetadatasRespSchemaList:
 
     @property
     def name(self):
-        """Gets the name of this ListMetadatasRespSchemaList.
+        r"""Gets the name of this ListMetadatasRespSchemaList.
 
         元数据名称。
 
@@ -139,7 +139,7 @@ class ListMetadatasRespSchemaList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListMetadatasRespSchemaList.
+        r"""Sets the name of this ListMetadatasRespSchemaList.
 
         元数据名称。
 
@@ -150,7 +150,7 @@ class ListMetadatasRespSchemaList:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListMetadatasRespSchemaList.
+        r"""Gets the start_time of this ListMetadatasRespSchemaList.
 
         元数据创建时间
 
@@ -161,7 +161,7 @@ class ListMetadatasRespSchemaList:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListMetadatasRespSchemaList.
+        r"""Sets the start_time of this ListMetadatasRespSchemaList.
 
         元数据创建时间
 
@@ -172,7 +172,7 @@ class ListMetadatasRespSchemaList:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this ListMetadatasRespSchemaList.
+        r"""Gets the last_update_time of this ListMetadatasRespSchemaList.
 
         元数据最后更新时间
 
@@ -183,7 +183,7 @@ class ListMetadatasRespSchemaList:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this ListMetadatasRespSchemaList.
+        r"""Sets the last_update_time of this ListMetadatasRespSchemaList.
 
         元数据最后更新时间
 
@@ -194,7 +194,7 @@ class ListMetadatasRespSchemaList:
 
     @property
     def encrypted(self):
-        """Gets the encrypted of this ListMetadatasRespSchemaList.
+        r"""Gets the encrypted of this ListMetadatasRespSchemaList.
 
         元数据是否加密
 
@@ -205,7 +205,7 @@ class ListMetadatasRespSchemaList:
 
     @encrypted.setter
     def encrypted(self, encrypted):
-        """Sets the encrypted of this ListMetadatasRespSchemaList.
+        r"""Sets the encrypted of this ListMetadatasRespSchemaList.
 
         元数据是否加密
 
@@ -216,7 +216,7 @@ class ListMetadatasRespSchemaList:
 
     @property
     def master_key_name(self):
-        """Gets the master_key_name of this ListMetadatasRespSchemaList.
+        r"""Gets the master_key_name of this ListMetadatasRespSchemaList.
 
         秘钥名称
 
@@ -227,7 +227,7 @@ class ListMetadatasRespSchemaList:
 
     @master_key_name.setter
     def master_key_name(self, master_key_name):
-        """Sets the master_key_name of this ListMetadatasRespSchemaList.
+        r"""Sets the master_key_name of this ListMetadatasRespSchemaList.
 
         秘钥名称
 
@@ -238,7 +238,7 @@ class ListMetadatasRespSchemaList:
 
     @property
     def master_key_id(self):
-        """Gets the master_key_id of this ListMetadatasRespSchemaList.
+        r"""Gets the master_key_id of this ListMetadatasRespSchemaList.
 
         秘钥id
 
@@ -249,7 +249,7 @@ class ListMetadatasRespSchemaList:
 
     @master_key_id.setter
     def master_key_id(self, master_key_id):
-        """Sets the master_key_id of this ListMetadatasRespSchemaList.
+        r"""Sets the master_key_id of this ListMetadatasRespSchemaList.
 
         秘钥id
 
@@ -260,7 +260,7 @@ class ListMetadatasRespSchemaList:
 
     @property
     def description(self):
-        """Gets the description of this ListMetadatasRespSchemaList.
+        r"""Gets the description of this ListMetadatasRespSchemaList.
 
         元数据 描述。
 
@@ -271,7 +271,7 @@ class ListMetadatasRespSchemaList:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListMetadatasRespSchemaList.
+        r"""Sets the description of this ListMetadatasRespSchemaList.
 
         元数据 描述。
 
@@ -282,7 +282,7 @@ class ListMetadatasRespSchemaList:
 
     @property
     def metadata_path(self):
-        """Gets the metadata_path of this ListMetadatasRespSchemaList.
+        r"""Gets the metadata_path of this ListMetadatasRespSchemaList.
 
         元数据对应路径。
 
@@ -293,7 +293,7 @@ class ListMetadatasRespSchemaList:
 
     @metadata_path.setter
     def metadata_path(self, metadata_path):
-        """Sets the metadata_path of this ListMetadatasRespSchemaList.
+        r"""Sets the metadata_path of this ListMetadatasRespSchemaList.
 
         元数据对应路径。
 
@@ -304,7 +304,7 @@ class ListMetadatasRespSchemaList:
 
     @property
     def status(self):
-        """Gets the status of this ListMetadatasRespSchemaList.
+        r"""Gets the status of this ListMetadatasRespSchemaList.
 
         元数据是否可用。
 
@@ -315,7 +315,7 @@ class ListMetadatasRespSchemaList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListMetadatasRespSchemaList.
+        r"""Sets the status of this ListMetadatasRespSchemaList.
 
         元数据是否可用。
 

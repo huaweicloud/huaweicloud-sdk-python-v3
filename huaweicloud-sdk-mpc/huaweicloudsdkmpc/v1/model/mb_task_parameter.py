@@ -29,7 +29,7 @@ class MbTaskParameter:
     }
 
     def __init__(self, status_description=None, output_filename=None, metadata=None):
-        """MbTaskParameter
+        r"""MbTaskParameter
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MbTaskParameter:
 
     @property
     def status_description(self):
-        """Gets the status_description of this MbTaskParameter.
+        r"""Gets the status_description of this MbTaskParameter.
 
         具体状态描述，FAILED时可用于分析问题。 
 
@@ -68,7 +68,7 @@ class MbTaskParameter:
 
     @status_description.setter
     def status_description(self, status_description):
-        """Sets the status_description of this MbTaskParameter.
+        r"""Sets the status_description of this MbTaskParameter.
 
         具体状态描述，FAILED时可用于分析问题。 
 
@@ -79,7 +79,7 @@ class MbTaskParameter:
 
     @property
     def output_filename(self):
-        """Gets the output_filename of this MbTaskParameter.
+        r"""Gets the output_filename of this MbTaskParameter.
 
         输出文件名称。 
 
@@ -90,7 +90,7 @@ class MbTaskParameter:
 
     @output_filename.setter
     def output_filename(self, output_filename):
-        """Sets the output_filename of this MbTaskParameter.
+        r"""Sets the output_filename of this MbTaskParameter.
 
         输出文件名称。 
 
@@ -101,7 +101,7 @@ class MbTaskParameter:
 
     @property
     def metadata(self):
-        """Gets the metadata of this MbTaskParameter.
+        r"""Gets the metadata of this MbTaskParameter.
 
         :return: The metadata of this MbTaskParameter.
         :rtype: :class:`huaweicloudsdkmpc.v1.MetaData`
@@ -110,7 +110,7 @@ class MbTaskParameter:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this MbTaskParameter.
+        r"""Sets the metadata of this MbTaskParameter.
 
         :param metadata: The metadata of this MbTaskParameter.
         :type metadata: :class:`huaweicloudsdkmpc.v1.MetaData`

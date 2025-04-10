@@ -27,7 +27,7 @@ class UpdateClusterEipRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateClusterEipRequest
+        r"""UpdateClusterEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateClusterEipRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateClusterEipRequest.
+        r"""Gets the cluster_id of this UpdateClusterEipRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class UpdateClusterEipRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateClusterEipRequest.
+        r"""Sets the cluster_id of this UpdateClusterEipRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class UpdateClusterEipRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateClusterEipRequest.
+        r"""Gets the body of this UpdateClusterEipRequest.
 
         :return: The body of this UpdateClusterEipRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.MasterEIPRequest`
@@ -80,7 +80,7 @@ class UpdateClusterEipRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateClusterEipRequest.
+        r"""Sets the body of this UpdateClusterEipRequest.
 
         :param body: The body of this UpdateClusterEipRequest.
         :type body: :class:`huaweicloudsdkcce.v3.MasterEIPRequest`

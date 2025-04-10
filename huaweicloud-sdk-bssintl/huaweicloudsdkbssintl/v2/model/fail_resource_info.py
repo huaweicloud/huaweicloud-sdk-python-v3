@@ -29,7 +29,7 @@ class FailResourceInfo:
     }
 
     def __init__(self, error_code=None, error_msg=None, resource_id=None):
-        """FailResourceInfo
+        r"""FailResourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FailResourceInfo:
 
     @property
     def error_code(self):
-        """Gets the error_code of this FailResourceInfo.
+        r"""Gets the error_code of this FailResourceInfo.
 
         |参数名称：错误码| |参数约束及描述：错误码|
 
@@ -68,7 +68,7 @@ class FailResourceInfo:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this FailResourceInfo.
+        r"""Sets the error_code of this FailResourceInfo.
 
         |参数名称：错误码| |参数约束及描述：错误码|
 
@@ -79,7 +79,7 @@ class FailResourceInfo:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this FailResourceInfo.
+        r"""Gets the error_msg of this FailResourceInfo.
 
         |参数名称：错误描述| |参数约束及描述：错误描述|
 
@@ -90,7 +90,7 @@ class FailResourceInfo:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this FailResourceInfo.
+        r"""Sets the error_msg of this FailResourceInfo.
 
         |参数名称：错误描述| |参数约束及描述：错误描述|
 
@@ -101,7 +101,7 @@ class FailResourceInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this FailResourceInfo.
+        r"""Gets the resource_id of this FailResourceInfo.
 
         |参数名称：资源ID| |参数约束及描述：资源ID|
 
@@ -112,7 +112,7 @@ class FailResourceInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this FailResourceInfo.
+        r"""Sets the resource_id of this FailResourceInfo.
 
         |参数名称：资源ID| |参数约束及描述：资源ID|
 

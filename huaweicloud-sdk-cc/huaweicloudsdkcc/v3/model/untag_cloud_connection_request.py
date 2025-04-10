@@ -27,7 +27,7 @@ class UntagCloudConnectionRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UntagCloudConnectionRequest
+        r"""UntagCloudConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UntagCloudConnectionRequest:
 
     @property
     def id(self):
-        """Gets the id of this UntagCloudConnectionRequest.
+        r"""Gets the id of this UntagCloudConnectionRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UntagCloudConnectionRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UntagCloudConnectionRequest.
+        r"""Sets the id of this UntagCloudConnectionRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UntagCloudConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UntagCloudConnectionRequest.
+        r"""Gets the body of this UntagCloudConnectionRequest.
 
         :return: The body of this UntagCloudConnectionRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.UntagCloudConnectionRequestBody`
@@ -80,7 +80,7 @@ class UntagCloudConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UntagCloudConnectionRequest.
+        r"""Sets the body of this UntagCloudConnectionRequest.
 
         :param body: The body of this UntagCloudConnectionRequest.
         :type body: :class:`huaweicloudsdkcc.v3.UntagCloudConnectionRequestBody`

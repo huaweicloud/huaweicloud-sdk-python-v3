@@ -37,7 +37,7 @@ class RunlogItem:
     }
 
     def __init__(self, id=None, file_name=None, group_name=None, replication_ip=None, status=None, time=None, backup_id=None):
-        """RunlogItem
+        r"""RunlogItem
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class RunlogItem:
 
     @property
     def id(self):
-        """Gets the id of this RunlogItem.
+        r"""Gets the id of this RunlogItem.
 
         日志的唯一标识
 
@@ -96,7 +96,7 @@ class RunlogItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RunlogItem.
+        r"""Sets the id of this RunlogItem.
 
         日志的唯一标识
 
@@ -107,7 +107,7 @@ class RunlogItem:
 
     @property
     def file_name(self):
-        """Gets the file_name of this RunlogItem.
+        r"""Gets the file_name of this RunlogItem.
 
         运行日志文件名
 
@@ -118,7 +118,7 @@ class RunlogItem:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this RunlogItem.
+        r"""Sets the file_name of this RunlogItem.
 
         运行日志文件名
 
@@ -129,7 +129,7 @@ class RunlogItem:
 
     @property
     def group_name(self):
-        """Gets the group_name of this RunlogItem.
+        r"""Gets the group_name of this RunlogItem.
 
         分片名称
 
@@ -140,7 +140,7 @@ class RunlogItem:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this RunlogItem.
+        r"""Sets the group_name of this RunlogItem.
 
         分片名称
 
@@ -151,7 +151,7 @@ class RunlogItem:
 
     @property
     def replication_ip(self):
-        """Gets the replication_ip of this RunlogItem.
+        r"""Gets the replication_ip of this RunlogItem.
 
         采集运行日志所在副本的IP
 
@@ -162,7 +162,7 @@ class RunlogItem:
 
     @replication_ip.setter
     def replication_ip(self, replication_ip):
-        """Sets the replication_ip of this RunlogItem.
+        r"""Sets the replication_ip of this RunlogItem.
 
         采集运行日志所在副本的IP
 
@@ -173,7 +173,7 @@ class RunlogItem:
 
     @property
     def status(self):
-        """Gets the status of this RunlogItem.
+        r"""Gets the status of this RunlogItem.
 
         获取运行日志状态
 
@@ -184,7 +184,7 @@ class RunlogItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RunlogItem.
+        r"""Sets the status of this RunlogItem.
 
         获取运行日志状态
 
@@ -195,7 +195,7 @@ class RunlogItem:
 
     @property
     def time(self):
-        """Gets the time of this RunlogItem.
+        r"""Gets the time of this RunlogItem.
 
         运行日志采集的日期，格式为\"yyyy-MM-dd\"
 
@@ -206,7 +206,7 @@ class RunlogItem:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this RunlogItem.
+        r"""Sets the time of this RunlogItem.
 
         运行日志采集的日期，格式为\"yyyy-MM-dd\"
 
@@ -217,7 +217,7 @@ class RunlogItem:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this RunlogItem.
+        r"""Gets the backup_id of this RunlogItem.
 
         日志文件的ID
 
@@ -228,7 +228,7 @@ class RunlogItem:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this RunlogItem.
+        r"""Sets the backup_id of this RunlogItem.
 
         日志文件的ID
 

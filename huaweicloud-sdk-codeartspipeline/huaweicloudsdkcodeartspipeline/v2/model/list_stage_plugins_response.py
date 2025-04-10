@@ -26,7 +26,7 @@ class ListStagePluginsResponse(SdkResponse):
     }
 
     def __init__(self, full_stage_plugins_item_list=None):
-        """ListStagePluginsResponse
+        r"""ListStagePluginsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListStagePluginsResponse(SdkResponse):
 
     @property
     def full_stage_plugins_item_list(self):
-        """Gets the full_stage_plugins_item_list of this ListStagePluginsResponse.
+        r"""Gets the full_stage_plugins_item_list of this ListStagePluginsResponse.
 
         结果集
 
@@ -55,7 +55,7 @@ class ListStagePluginsResponse(SdkResponse):
 
     @full_stage_plugins_item_list.setter
     def full_stage_plugins_item_list(self, full_stage_plugins_item_list):
-        """Sets the full_stage_plugins_item_list of this ListStagePluginsResponse.
+        r"""Sets the full_stage_plugins_item_list of this ListStagePluginsResponse.
 
         结果集
 

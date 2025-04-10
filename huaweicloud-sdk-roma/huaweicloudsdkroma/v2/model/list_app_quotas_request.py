@@ -31,7 +31,7 @@ class ListAppQuotasRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, name=None):
-        """ListAppQuotasRequest
+        r"""ListAppQuotasRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListAppQuotasRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAppQuotasRequest.
+        r"""Gets the instance_id of this ListAppQuotasRequest.
 
         实例ID
 
@@ -74,7 +74,7 @@ class ListAppQuotasRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAppQuotasRequest.
+        r"""Sets the instance_id of this ListAppQuotasRequest.
 
         实例ID
 
@@ -85,7 +85,7 @@ class ListAppQuotasRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppQuotasRequest.
+        r"""Gets the offset of this ListAppQuotasRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -96,7 +96,7 @@ class ListAppQuotasRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppQuotasRequest.
+        r"""Sets the offset of this ListAppQuotasRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -107,7 +107,7 @@ class ListAppQuotasRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppQuotasRequest.
+        r"""Gets the limit of this ListAppQuotasRequest.
 
         每页显示的条目数量
 
@@ -118,7 +118,7 @@ class ListAppQuotasRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppQuotasRequest.
+        r"""Sets the limit of this ListAppQuotasRequest.
 
         每页显示的条目数量
 
@@ -129,7 +129,7 @@ class ListAppQuotasRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAppQuotasRequest.
+        r"""Gets the name of this ListAppQuotasRequest.
 
         客户端配额名称
 
@@ -140,7 +140,7 @@ class ListAppQuotasRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAppQuotasRequest.
+        r"""Sets the name of this ListAppQuotasRequest.
 
         客户端配额名称
 

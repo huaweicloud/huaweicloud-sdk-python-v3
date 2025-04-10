@@ -41,7 +41,7 @@ class ListProductTemplatesRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, id=None, name=None, status=None, created_user_name=None, created_date_start=None, created_date_end=None, offset=None):
-        """ListProductTemplatesRequest
+        r"""ListProductTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListProductTemplatesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListProductTemplatesRequest.
+        r"""Gets the instance_id of this ListProductTemplatesRequest.
 
         实例ID
 
@@ -109,7 +109,7 @@ class ListProductTemplatesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListProductTemplatesRequest.
+        r"""Sets the instance_id of this ListProductTemplatesRequest.
 
         实例ID
 
@@ -120,7 +120,7 @@ class ListProductTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProductTemplatesRequest.
+        r"""Gets the limit of this ListProductTemplatesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -131,7 +131,7 @@ class ListProductTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProductTemplatesRequest.
+        r"""Sets the limit of this ListProductTemplatesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -142,7 +142,7 @@ class ListProductTemplatesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListProductTemplatesRequest.
+        r"""Gets the id of this ListProductTemplatesRequest.
 
         产品模板ID
 
@@ -153,7 +153,7 @@ class ListProductTemplatesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListProductTemplatesRequest.
+        r"""Sets the id of this ListProductTemplatesRequest.
 
         产品模板ID
 
@@ -164,7 +164,7 @@ class ListProductTemplatesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListProductTemplatesRequest.
+        r"""Gets the name of this ListProductTemplatesRequest.
 
         产品模板名称
 
@@ -175,7 +175,7 @@ class ListProductTemplatesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListProductTemplatesRequest.
+        r"""Sets the name of this ListProductTemplatesRequest.
 
         产品模板名称
 
@@ -186,7 +186,7 @@ class ListProductTemplatesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListProductTemplatesRequest.
+        r"""Gets the status of this ListProductTemplatesRequest.
 
         产品模板状态 0-启用 1-停用
 
@@ -197,7 +197,7 @@ class ListProductTemplatesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListProductTemplatesRequest.
+        r"""Sets the status of this ListProductTemplatesRequest.
 
         产品模板状态 0-启用 1-停用
 
@@ -208,7 +208,7 @@ class ListProductTemplatesRequest:
 
     @property
     def created_user_name(self):
-        """Gets the created_user_name of this ListProductTemplatesRequest.
+        r"""Gets the created_user_name of this ListProductTemplatesRequest.
 
         创建用户名
 
@@ -219,7 +219,7 @@ class ListProductTemplatesRequest:
 
     @created_user_name.setter
     def created_user_name(self, created_user_name):
-        """Sets the created_user_name of this ListProductTemplatesRequest.
+        r"""Sets the created_user_name of this ListProductTemplatesRequest.
 
         创建用户名
 
@@ -230,7 +230,7 @@ class ListProductTemplatesRequest:
 
     @property
     def created_date_start(self):
-        """Gets the created_date_start of this ListProductTemplatesRequest.
+        r"""Gets the created_date_start of this ListProductTemplatesRequest.
 
         创建时间起始，格式timestamp(ms)，使用UTC时区
 
@@ -241,7 +241,7 @@ class ListProductTemplatesRequest:
 
     @created_date_start.setter
     def created_date_start(self, created_date_start):
-        """Sets the created_date_start of this ListProductTemplatesRequest.
+        r"""Sets the created_date_start of this ListProductTemplatesRequest.
 
         创建时间起始，格式timestamp(ms)，使用UTC时区
 
@@ -252,7 +252,7 @@ class ListProductTemplatesRequest:
 
     @property
     def created_date_end(self):
-        """Gets the created_date_end of this ListProductTemplatesRequest.
+        r"""Gets the created_date_end of this ListProductTemplatesRequest.
 
         创建时间截止，格式timestamp(ms)，使用UTC时区
 
@@ -263,7 +263,7 @@ class ListProductTemplatesRequest:
 
     @created_date_end.setter
     def created_date_end(self, created_date_end):
-        """Sets the created_date_end of this ListProductTemplatesRequest.
+        r"""Sets the created_date_end of this ListProductTemplatesRequest.
 
         创建时间截止，格式timestamp(ms)，使用UTC时区
 
@@ -274,7 +274,7 @@ class ListProductTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProductTemplatesRequest.
+        r"""Gets the offset of this ListProductTemplatesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -285,7 +285,7 @@ class ListProductTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProductTemplatesRequest.
+        r"""Sets the offset of this ListProductTemplatesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 

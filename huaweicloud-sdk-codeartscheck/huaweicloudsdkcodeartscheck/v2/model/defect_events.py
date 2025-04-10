@@ -45,7 +45,7 @@ class DefectEvents:
     }
 
     def __init__(self, events=None, description=None, fix_suggestions=None, line=None, end_line=None, code_context_start_line=None, main=None, path=None, tag=None, main_buggy_code=None, code_context=None):
-        """DefectEvents
+        r"""DefectEvents
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class DefectEvents:
 
     @property
     def events(self):
-        """Gets the events of this DefectEvents.
+        r"""Gets the events of this DefectEvents.
 
         调用链信息
 
@@ -124,7 +124,7 @@ class DefectEvents:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this DefectEvents.
+        r"""Sets the events of this DefectEvents.
 
         调用链信息
 
@@ -135,7 +135,7 @@ class DefectEvents:
 
     @property
     def description(self):
-        """Gets the description of this DefectEvents.
+        r"""Gets the description of this DefectEvents.
 
         描述
 
@@ -146,7 +146,7 @@ class DefectEvents:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DefectEvents.
+        r"""Sets the description of this DefectEvents.
 
         描述
 
@@ -157,7 +157,7 @@ class DefectEvents:
 
     @property
     def fix_suggestions(self):
-        """Gets the fix_suggestions of this DefectEvents.
+        r"""Gets the fix_suggestions of this DefectEvents.
 
         fix suggestions
 
@@ -168,7 +168,7 @@ class DefectEvents:
 
     @fix_suggestions.setter
     def fix_suggestions(self, fix_suggestions):
-        """Sets the fix_suggestions of this DefectEvents.
+        r"""Sets the fix_suggestions of this DefectEvents.
 
         fix suggestions
 
@@ -179,7 +179,7 @@ class DefectEvents:
 
     @property
     def line(self):
-        """Gets the line of this DefectEvents.
+        r"""Gets the line of this DefectEvents.
 
         缺陷所在行
 
@@ -190,7 +190,7 @@ class DefectEvents:
 
     @line.setter
     def line(self, line):
-        """Sets the line of this DefectEvents.
+        r"""Sets the line of this DefectEvents.
 
         缺陷所在行
 
@@ -201,7 +201,7 @@ class DefectEvents:
 
     @property
     def end_line(self):
-        """Gets the end_line of this DefectEvents.
+        r"""Gets the end_line of this DefectEvents.
 
         缺陷结束行
 
@@ -212,7 +212,7 @@ class DefectEvents:
 
     @end_line.setter
     def end_line(self, end_line):
-        """Sets the end_line of this DefectEvents.
+        r"""Sets the end_line of this DefectEvents.
 
         缺陷结束行
 
@@ -223,7 +223,7 @@ class DefectEvents:
 
     @property
     def code_context_start_line(self):
-        """Gets the code_context_start_line of this DefectEvents.
+        r"""Gets the code_context_start_line of this DefectEvents.
 
         缺陷开始行
 
@@ -234,7 +234,7 @@ class DefectEvents:
 
     @code_context_start_line.setter
     def code_context_start_line(self, code_context_start_line):
-        """Sets the code_context_start_line of this DefectEvents.
+        r"""Sets the code_context_start_line of this DefectEvents.
 
         缺陷开始行
 
@@ -245,7 +245,7 @@ class DefectEvents:
 
     @property
     def main(self):
-        """Gets the main of this DefectEvents.
+        r"""Gets the main of this DefectEvents.
 
         代码片段
 
@@ -256,7 +256,7 @@ class DefectEvents:
 
     @main.setter
     def main(self, main):
-        """Sets the main of this DefectEvents.
+        r"""Sets the main of this DefectEvents.
 
         代码片段
 
@@ -267,7 +267,7 @@ class DefectEvents:
 
     @property
     def path(self):
-        """Gets the path of this DefectEvents.
+        r"""Gets the path of this DefectEvents.
 
         file path
 
@@ -278,7 +278,7 @@ class DefectEvents:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this DefectEvents.
+        r"""Sets the path of this DefectEvents.
 
         file path
 
@@ -289,7 +289,7 @@ class DefectEvents:
 
     @property
     def tag(self):
-        """Gets the tag of this DefectEvents.
+        r"""Gets the tag of this DefectEvents.
 
         标签
 
@@ -300,7 +300,7 @@ class DefectEvents:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this DefectEvents.
+        r"""Sets the tag of this DefectEvents.
 
         标签
 
@@ -311,7 +311,7 @@ class DefectEvents:
 
     @property
     def main_buggy_code(self):
-        """Gets the main_buggy_code of this DefectEvents.
+        r"""Gets the main_buggy_code of this DefectEvents.
 
         main buggy code
 
@@ -322,7 +322,7 @@ class DefectEvents:
 
     @main_buggy_code.setter
     def main_buggy_code(self, main_buggy_code):
-        """Sets the main_buggy_code of this DefectEvents.
+        r"""Sets the main_buggy_code of this DefectEvents.
 
         main buggy code
 
@@ -333,7 +333,7 @@ class DefectEvents:
 
     @property
     def code_context(self):
-        """Gets the code_context of this DefectEvents.
+        r"""Gets the code_context of this DefectEvents.
 
         code context
 
@@ -344,7 +344,7 @@ class DefectEvents:
 
     @code_context.setter
     def code_context(self, code_context):
-        """Sets the code_context of this DefectEvents.
+        r"""Sets the code_context of this DefectEvents.
 
         code context
 

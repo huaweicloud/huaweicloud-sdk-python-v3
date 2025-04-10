@@ -32,7 +32,7 @@ class UpdateQueuePlanResponse(SdkResponse):
     }
 
     def __init__(self, queue_name=None, plan_id=None, is_success=None, message=None):
-        """UpdateQueuePlanResponse
+        r"""UpdateQueuePlanResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateQueuePlanResponse(SdkResponse):
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this UpdateQueuePlanResponse.
+        r"""Gets the queue_name of this UpdateQueuePlanResponse.
 
         定时扩缩容计划对应的队列名称
 
@@ -76,7 +76,7 @@ class UpdateQueuePlanResponse(SdkResponse):
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this UpdateQueuePlanResponse.
+        r"""Sets the queue_name of this UpdateQueuePlanResponse.
 
         定时扩缩容计划对应的队列名称
 
@@ -87,7 +87,7 @@ class UpdateQueuePlanResponse(SdkResponse):
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this UpdateQueuePlanResponse.
+        r"""Gets the plan_id of this UpdateQueuePlanResponse.
 
         扩缩容计划的ID编号
 
@@ -98,7 +98,7 @@ class UpdateQueuePlanResponse(SdkResponse):
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this UpdateQueuePlanResponse.
+        r"""Sets the plan_id of this UpdateQueuePlanResponse.
 
         扩缩容计划的ID编号
 
@@ -109,7 +109,7 @@ class UpdateQueuePlanResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this UpdateQueuePlanResponse.
+        r"""Gets the is_success of this UpdateQueuePlanResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -120,7 +120,7 @@ class UpdateQueuePlanResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this UpdateQueuePlanResponse.
+        r"""Sets the is_success of this UpdateQueuePlanResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -131,7 +131,7 @@ class UpdateQueuePlanResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this UpdateQueuePlanResponse.
+        r"""Gets the message of this UpdateQueuePlanResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -142,7 +142,7 @@ class UpdateQueuePlanResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this UpdateQueuePlanResponse.
+        r"""Sets the message of this UpdateQueuePlanResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 

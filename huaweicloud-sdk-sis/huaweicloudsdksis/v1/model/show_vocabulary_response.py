@@ -34,7 +34,7 @@ class ShowVocabularyResponse(SdkResponse):
     }
 
     def __init__(self, vocabulary_id=None, name=None, description=None, language=None, contents=None):
-        """ShowVocabularyResponse
+        r"""ShowVocabularyResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowVocabularyResponse(SdkResponse):
 
     @property
     def vocabulary_id(self):
-        """Gets the vocabulary_id of this ShowVocabularyResponse.
+        r"""Gets the vocabulary_id of this ShowVocabularyResponse.
 
         调用成功返回热词表ID，调用失败时无此字段。
 
@@ -83,7 +83,7 @@ class ShowVocabularyResponse(SdkResponse):
 
     @vocabulary_id.setter
     def vocabulary_id(self, vocabulary_id):
-        """Sets the vocabulary_id of this ShowVocabularyResponse.
+        r"""Sets the vocabulary_id of this ShowVocabularyResponse.
 
         调用成功返回热词表ID，调用失败时无此字段。
 
@@ -94,7 +94,7 @@ class ShowVocabularyResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowVocabularyResponse.
+        r"""Gets the name of this ShowVocabularyResponse.
 
         调用成功返回热词表名，调用失败时无此字段。
 
@@ -105,7 +105,7 @@ class ShowVocabularyResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowVocabularyResponse.
+        r"""Sets the name of this ShowVocabularyResponse.
 
         调用成功返回热词表名，调用失败时无此字段。
 
@@ -116,7 +116,7 @@ class ShowVocabularyResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowVocabularyResponse.
+        r"""Gets the description of this ShowVocabularyResponse.
 
         调用成功返回热词表描述，调用失败时无此字段。
 
@@ -127,7 +127,7 @@ class ShowVocabularyResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowVocabularyResponse.
+        r"""Sets the description of this ShowVocabularyResponse.
 
         调用成功返回热词表描述，调用失败时无此字段。
 
@@ -138,7 +138,7 @@ class ShowVocabularyResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this ShowVocabularyResponse.
+        r"""Gets the language of this ShowVocabularyResponse.
 
         调用成功返回热词表语言类型，调用失败时无此字段。
 
@@ -149,7 +149,7 @@ class ShowVocabularyResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ShowVocabularyResponse.
+        r"""Sets the language of this ShowVocabularyResponse.
 
         调用成功返回热词表语言类型，调用失败时无此字段。
 
@@ -160,7 +160,7 @@ class ShowVocabularyResponse(SdkResponse):
 
     @property
     def contents(self):
-        """Gets the contents of this ShowVocabularyResponse.
+        r"""Gets the contents of this ShowVocabularyResponse.
 
         调用成功返回热词列表，调用失败时无此字段。
 
@@ -171,7 +171,7 @@ class ShowVocabularyResponse(SdkResponse):
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this ShowVocabularyResponse.
+        r"""Sets the contents of this ShowVocabularyResponse.
 
         调用成功返回热词列表，调用失败时无此字段。
 

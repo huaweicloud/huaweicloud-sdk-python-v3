@@ -28,7 +28,7 @@ class ShowNodesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, nodes=None):
-        """ShowNodesResponse
+        r"""ShowNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowNodesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowNodesResponse.
+        r"""Gets the count of this ShowNodesResponse.
 
         满足条件的设备总数
 
@@ -62,7 +62,7 @@ class ShowNodesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowNodesResponse.
+        r"""Sets the count of this ShowNodesResponse.
 
         满足条件的设备总数
 
@@ -73,7 +73,7 @@ class ShowNodesResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this ShowNodesResponse.
+        r"""Gets the nodes of this ShowNodesResponse.
 
         :return: The nodes of this ShowNodesResponse.
         :rtype: list[:class:`huaweicloudsdkhilens.v3.NodeResponse`]
@@ -82,7 +82,7 @@ class ShowNodesResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ShowNodesResponse.
+        r"""Sets the nodes of this ShowNodesResponse.
 
         :param nodes: The nodes of this ShowNodesResponse.
         :type nodes: list[:class:`huaweicloudsdkhilens.v3.NodeResponse`]

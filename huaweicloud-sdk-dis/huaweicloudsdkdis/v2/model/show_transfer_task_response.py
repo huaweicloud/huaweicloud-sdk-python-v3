@@ -48,7 +48,7 @@ class ShowTransferTaskResponse(SdkResponse):
     }
 
     def __init__(self, stream_name=None, task_name=None, state=None, destination_type=None, create_time=None, last_transfer_timestamp=None, partitions=None, obs_destination_description=None, dws_destination_descripton=None, mrs_destination_description=None, dli_destination_description=None, cloudtable_destination_descripton=None):
-        """ShowTransferTaskResponse
+        r"""ShowTransferTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this ShowTransferTaskResponse.
+        r"""Gets the stream_name of this ShowTransferTaskResponse.
 
         该转储任务所属通道名称。
 
@@ -132,7 +132,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this ShowTransferTaskResponse.
+        r"""Sets the stream_name of this ShowTransferTaskResponse.
 
         该转储任务所属通道名称。
 
@@ -143,7 +143,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this ShowTransferTaskResponse.
+        r"""Gets the task_name of this ShowTransferTaskResponse.
 
         转储任务名称。
 
@@ -154,7 +154,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ShowTransferTaskResponse.
+        r"""Sets the task_name of this ShowTransferTaskResponse.
 
         转储任务名称。
 
@@ -165,7 +165,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowTransferTaskResponse.
+        r"""Gets the state of this ShowTransferTaskResponse.
 
         转储任务状态。  - ERROR：错误。 - STARTING：启动中。 - PAUSED：已停止。 - RUNNING：运行中。 - DELETE：已删除。 - ABNORMAL：异常。
 
@@ -176,7 +176,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowTransferTaskResponse.
+        r"""Sets the state of this ShowTransferTaskResponse.
 
         转储任务状态。  - ERROR：错误。 - STARTING：启动中。 - PAUSED：已停止。 - RUNNING：运行中。 - DELETE：已删除。 - ABNORMAL：异常。
 
@@ -187,7 +187,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @property
     def destination_type(self):
-        """Gets the destination_type of this ShowTransferTaskResponse.
+        r"""Gets the destination_type of this ShowTransferTaskResponse.
 
         转储任务类型。  - OBS：转储到OBS。 - MRS：转储到MRS。 - DLI：转储到DLI。 - CLOUDTABLE：转储到CloudTable。 - DWS：转储到DWS。
 
@@ -198,7 +198,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @destination_type.setter
     def destination_type(self, destination_type):
-        """Sets the destination_type of this ShowTransferTaskResponse.
+        r"""Sets the destination_type of this ShowTransferTaskResponse.
 
         转储任务类型。  - OBS：转储到OBS。 - MRS：转储到MRS。 - DLI：转储到DLI。 - CLOUDTABLE：转储到CloudTable。 - DWS：转储到DWS。
 
@@ -209,7 +209,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowTransferTaskResponse.
+        r"""Gets the create_time of this ShowTransferTaskResponse.
 
         转储任务创建时间。
 
@@ -220,7 +220,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowTransferTaskResponse.
+        r"""Sets the create_time of this ShowTransferTaskResponse.
 
         转储任务创建时间。
 
@@ -231,7 +231,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @property
     def last_transfer_timestamp(self):
-        """Gets the last_transfer_timestamp of this ShowTransferTaskResponse.
+        r"""Gets the last_transfer_timestamp of this ShowTransferTaskResponse.
 
         转储任务最近一次转储时间。
 
@@ -242,7 +242,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @last_transfer_timestamp.setter
     def last_transfer_timestamp(self, last_transfer_timestamp):
-        """Sets the last_transfer_timestamp of this ShowTransferTaskResponse.
+        r"""Sets the last_transfer_timestamp of this ShowTransferTaskResponse.
 
         转储任务最近一次转储时间。
 
@@ -253,7 +253,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @property
     def partitions(self):
-        """Gets the partitions of this ShowTransferTaskResponse.
+        r"""Gets the partitions of this ShowTransferTaskResponse.
 
         分区转储详情列表。
 
@@ -264,7 +264,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @partitions.setter
     def partitions(self, partitions):
-        """Sets the partitions of this ShowTransferTaskResponse.
+        r"""Sets the partitions of this ShowTransferTaskResponse.
 
         分区转储详情列表。
 
@@ -275,7 +275,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @property
     def obs_destination_description(self):
-        """Gets the obs_destination_description of this ShowTransferTaskResponse.
+        r"""Gets the obs_destination_description of this ShowTransferTaskResponse.
 
         :return: The obs_destination_description of this ShowTransferTaskResponse.
         :rtype: :class:`huaweicloudsdkdis.v2.OBSDestinationDescriptorRequest`
@@ -284,7 +284,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @obs_destination_description.setter
     def obs_destination_description(self, obs_destination_description):
-        """Sets the obs_destination_description of this ShowTransferTaskResponse.
+        r"""Sets the obs_destination_description of this ShowTransferTaskResponse.
 
         :param obs_destination_description: The obs_destination_description of this ShowTransferTaskResponse.
         :type obs_destination_description: :class:`huaweicloudsdkdis.v2.OBSDestinationDescriptorRequest`
@@ -293,7 +293,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @property
     def dws_destination_descripton(self):
-        """Gets the dws_destination_descripton of this ShowTransferTaskResponse.
+        r"""Gets the dws_destination_descripton of this ShowTransferTaskResponse.
 
         :return: The dws_destination_descripton of this ShowTransferTaskResponse.
         :rtype: :class:`huaweicloudsdkdis.v2.DWSDestinationDescriptorRequest`
@@ -302,7 +302,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @dws_destination_descripton.setter
     def dws_destination_descripton(self, dws_destination_descripton):
-        """Sets the dws_destination_descripton of this ShowTransferTaskResponse.
+        r"""Sets the dws_destination_descripton of this ShowTransferTaskResponse.
 
         :param dws_destination_descripton: The dws_destination_descripton of this ShowTransferTaskResponse.
         :type dws_destination_descripton: :class:`huaweicloudsdkdis.v2.DWSDestinationDescriptorRequest`
@@ -311,7 +311,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @property
     def mrs_destination_description(self):
-        """Gets the mrs_destination_description of this ShowTransferTaskResponse.
+        r"""Gets the mrs_destination_description of this ShowTransferTaskResponse.
 
         :return: The mrs_destination_description of this ShowTransferTaskResponse.
         :rtype: :class:`huaweicloudsdkdis.v2.MRSDestinationDescriptorRequest`
@@ -320,7 +320,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @mrs_destination_description.setter
     def mrs_destination_description(self, mrs_destination_description):
-        """Sets the mrs_destination_description of this ShowTransferTaskResponse.
+        r"""Sets the mrs_destination_description of this ShowTransferTaskResponse.
 
         :param mrs_destination_description: The mrs_destination_description of this ShowTransferTaskResponse.
         :type mrs_destination_description: :class:`huaweicloudsdkdis.v2.MRSDestinationDescriptorRequest`
@@ -329,7 +329,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @property
     def dli_destination_description(self):
-        """Gets the dli_destination_description of this ShowTransferTaskResponse.
+        r"""Gets the dli_destination_description of this ShowTransferTaskResponse.
 
         :return: The dli_destination_description of this ShowTransferTaskResponse.
         :rtype: :class:`huaweicloudsdkdis.v2.DliDestinationDescriptorRequest`
@@ -338,7 +338,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @dli_destination_description.setter
     def dli_destination_description(self, dli_destination_description):
-        """Sets the dli_destination_description of this ShowTransferTaskResponse.
+        r"""Sets the dli_destination_description of this ShowTransferTaskResponse.
 
         :param dli_destination_description: The dli_destination_description of this ShowTransferTaskResponse.
         :type dli_destination_description: :class:`huaweicloudsdkdis.v2.DliDestinationDescriptorRequest`
@@ -347,7 +347,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @property
     def cloudtable_destination_descripton(self):
-        """Gets the cloudtable_destination_descripton of this ShowTransferTaskResponse.
+        r"""Gets the cloudtable_destination_descripton of this ShowTransferTaskResponse.
 
         :return: The cloudtable_destination_descripton of this ShowTransferTaskResponse.
         :rtype: :class:`huaweicloudsdkdis.v2.CloudtableDestinationDescriptorRequest`
@@ -356,7 +356,7 @@ class ShowTransferTaskResponse(SdkResponse):
 
     @cloudtable_destination_descripton.setter
     def cloudtable_destination_descripton(self, cloudtable_destination_descripton):
-        """Sets the cloudtable_destination_descripton of this ShowTransferTaskResponse.
+        r"""Sets the cloudtable_destination_descripton of this ShowTransferTaskResponse.
 
         :param cloudtable_destination_descripton: The cloudtable_destination_descripton of this ShowTransferTaskResponse.
         :type cloudtable_destination_descripton: :class:`huaweicloudsdkdis.v2.CloudtableDestinationDescriptorRequest`

@@ -31,7 +31,7 @@ class ObsAuthorityConfig:
     }
 
     def __init__(self, bucket=None, operation=None, location=None, project_id=None):
-        """ObsAuthorityConfig
+        r"""ObsAuthorityConfig
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ObsAuthorityConfig:
 
     @property
     def bucket(self):
-        """Gets the bucket of this ObsAuthorityConfig.
+        r"""Gets the bucket of this ObsAuthorityConfig.
 
         OBS桶名
 
@@ -72,7 +72,7 @@ class ObsAuthorityConfig:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ObsAuthorityConfig.
+        r"""Sets the bucket of this ObsAuthorityConfig.
 
         OBS桶名
 
@@ -83,7 +83,7 @@ class ObsAuthorityConfig:
 
     @property
     def operation(self):
-        """Gets the operation of this ObsAuthorityConfig.
+        r"""Gets the operation of this ObsAuthorityConfig.
 
         操作，1-授权；0-取消授权
 
@@ -94,7 +94,7 @@ class ObsAuthorityConfig:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this ObsAuthorityConfig.
+        r"""Sets the operation of this ObsAuthorityConfig.
 
         操作，1-授权；0-取消授权
 
@@ -105,7 +105,7 @@ class ObsAuthorityConfig:
 
     @property
     def location(self):
-        """Gets the location of this ObsAuthorityConfig.
+        r"""Gets the location of this ObsAuthorityConfig.
 
         查询bucket所在的region - cn-north-4 - cn-north-1 - cn-north-5 - cn-north-6 - cn-south-1 - cn-east-2
 
@@ -116,7 +116,7 @@ class ObsAuthorityConfig:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ObsAuthorityConfig.
+        r"""Sets the location of this ObsAuthorityConfig.
 
         查询bucket所在的region - cn-north-4 - cn-north-1 - cn-north-5 - cn-north-6 - cn-south-1 - cn-east-2
 
@@ -127,7 +127,7 @@ class ObsAuthorityConfig:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ObsAuthorityConfig.
+        r"""Gets the project_id of this ObsAuthorityConfig.
 
         租户华为云账号projectid
 
@@ -138,7 +138,7 @@ class ObsAuthorityConfig:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ObsAuthorityConfig.
+        r"""Sets the project_id of this ObsAuthorityConfig.
 
         租户华为云账号projectid
 

@@ -25,7 +25,7 @@ class CompoundMetricVOSearchResultData:
     }
 
     def __init__(self, value=None):
-        """CompoundMetricVOSearchResultData
+        r"""CompoundMetricVOSearchResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CompoundMetricVOSearchResultData:
 
     @property
     def value(self):
-        """Gets the value of this CompoundMetricVOSearchResultData.
+        r"""Gets the value of this CompoundMetricVOSearchResultData.
 
         :return: The value of this CompoundMetricVOSearchResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CompoundMetricVOSearchResultDataValue`
@@ -52,7 +52,7 @@ class CompoundMetricVOSearchResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CompoundMetricVOSearchResultData.
+        r"""Sets the value of this CompoundMetricVOSearchResultData.
 
         :param value: The value of this CompoundMetricVOSearchResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.CompoundMetricVOSearchResultDataValue`

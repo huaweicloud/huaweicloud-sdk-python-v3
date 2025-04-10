@@ -25,7 +25,7 @@ class UpdateShareSpaceConfigRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateShareSpaceConfigRequest
+        r"""UpdateShareSpaceConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateShareSpaceConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateShareSpaceConfigRequest.
+        r"""Gets the body of this UpdateShareSpaceConfigRequest.
 
         :return: The body of this UpdateShareSpaceConfigRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateShareSpaceConfigReq`
@@ -52,7 +52,7 @@ class UpdateShareSpaceConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateShareSpaceConfigRequest.
+        r"""Sets the body of this UpdateShareSpaceConfigRequest.
 
         :param body: The body of this UpdateShareSpaceConfigRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateShareSpaceConfigReq`

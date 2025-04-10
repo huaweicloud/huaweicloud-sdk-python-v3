@@ -30,7 +30,7 @@ class ListWafWhiteIpRuleResponse(SdkResponse):
     }
 
     def __init__(self, total=None, black=None, white=None):
-        """ListWafWhiteIpRuleResponse
+        r"""ListWafWhiteIpRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListWafWhiteIpRuleResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListWafWhiteIpRuleResponse.
+        r"""Gets the total of this ListWafWhiteIpRuleResponse.
 
         total
 
@@ -69,7 +69,7 @@ class ListWafWhiteIpRuleResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListWafWhiteIpRuleResponse.
+        r"""Sets the total of this ListWafWhiteIpRuleResponse.
 
         total
 
@@ -80,7 +80,7 @@ class ListWafWhiteIpRuleResponse(SdkResponse):
 
     @property
     def black(self):
-        """Gets the black of this ListWafWhiteIpRuleResponse.
+        r"""Gets the black of this ListWafWhiteIpRuleResponse.
 
         black
 
@@ -91,7 +91,7 @@ class ListWafWhiteIpRuleResponse(SdkResponse):
 
     @black.setter
     def black(self, black):
-        """Sets the black of this ListWafWhiteIpRuleResponse.
+        r"""Sets the black of this ListWafWhiteIpRuleResponse.
 
         black
 
@@ -102,7 +102,7 @@ class ListWafWhiteIpRuleResponse(SdkResponse):
 
     @property
     def white(self):
-        """Gets the white of this ListWafWhiteIpRuleResponse.
+        r"""Gets the white of this ListWafWhiteIpRuleResponse.
 
         white
 
@@ -113,7 +113,7 @@ class ListWafWhiteIpRuleResponse(SdkResponse):
 
     @white.setter
     def white(self, white):
-        """Sets the white of this ListWafWhiteIpRuleResponse.
+        r"""Sets the white of this ListWafWhiteIpRuleResponse.
 
         white
 

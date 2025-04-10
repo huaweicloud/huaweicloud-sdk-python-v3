@@ -35,7 +35,7 @@ class ListWarehouseAppsRequest:
     }
 
     def __init__(self, limit=None, offset=None, verify_status=None, app_id=None, app_name=None, app_category=None):
-        """ListWarehouseAppsRequest
+        r"""ListWarehouseAppsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListWarehouseAppsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWarehouseAppsRequest.
+        r"""Gets the limit of this ListWarehouseAppsRequest.
 
         单次查询的大小[1-100]。
 
@@ -89,7 +89,7 @@ class ListWarehouseAppsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWarehouseAppsRequest.
+        r"""Sets the limit of this ListWarehouseAppsRequest.
 
         单次查询的大小[1-100]。
 
@@ -100,7 +100,7 @@ class ListWarehouseAppsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWarehouseAppsRequest.
+        r"""Gets the offset of this ListWarehouseAppsRequest.
 
         查询的偏移量。
 
@@ -111,7 +111,7 @@ class ListWarehouseAppsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWarehouseAppsRequest.
+        r"""Sets the offset of this ListWarehouseAppsRequest.
 
         查询的偏移量。
 
@@ -122,7 +122,7 @@ class ListWarehouseAppsRequest:
 
     @property
     def verify_status(self):
-        """Gets the verify_status of this ListWarehouseAppsRequest.
+        r"""Gets the verify_status of this ListWarehouseAppsRequest.
 
         审核状态。
 
@@ -133,7 +133,7 @@ class ListWarehouseAppsRequest:
 
     @verify_status.setter
     def verify_status(self, verify_status):
-        """Sets the verify_status of this ListWarehouseAppsRequest.
+        r"""Sets the verify_status of this ListWarehouseAppsRequest.
 
         审核状态。
 
@@ -144,7 +144,7 @@ class ListWarehouseAppsRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListWarehouseAppsRequest.
+        r"""Gets the app_id of this ListWarehouseAppsRequest.
 
         应用仓库中的应用记录ID。
 
@@ -155,7 +155,7 @@ class ListWarehouseAppsRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListWarehouseAppsRequest.
+        r"""Sets the app_id of this ListWarehouseAppsRequest.
 
         应用仓库中的应用记录ID。
 
@@ -166,7 +166,7 @@ class ListWarehouseAppsRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListWarehouseAppsRequest.
+        r"""Gets the app_name of this ListWarehouseAppsRequest.
 
         应用名称。
 
@@ -177,7 +177,7 @@ class ListWarehouseAppsRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListWarehouseAppsRequest.
+        r"""Sets the app_name of this ListWarehouseAppsRequest.
 
         应用名称。
 
@@ -188,7 +188,7 @@ class ListWarehouseAppsRequest:
 
     @property
     def app_category(self):
-        """Gets the app_category of this ListWarehouseAppsRequest.
+        r"""Gets the app_category of this ListWarehouseAppsRequest.
 
         应用分类： * `GAME`-  `游戏`。 * `BUSSINESS_INTELLIGENCE`- `商业智能`。 * `SECURE_STORAGE`-  `安全与存储`。 * `MULTIMEDIA_AND_CODING`- `多媒体与编解码`。 * `PROJECT_MANAGEMENT`- `项目管理`, * `PRODUCTIVITY_AND_COLLABORATION`-  `生产力与协作`。 * `WEB_ADN_APPLICATION`-  `网页与应用开发`。 * `GRAPHIC_DESIGN`-  `图形设计`。 * `OTHER`-  `其它`。
 
@@ -199,7 +199,7 @@ class ListWarehouseAppsRequest:
 
     @app_category.setter
     def app_category(self, app_category):
-        """Sets the app_category of this ListWarehouseAppsRequest.
+        r"""Sets the app_category of this ListWarehouseAppsRequest.
 
         应用分类： * `GAME`-  `游戏`。 * `BUSSINESS_INTELLIGENCE`- `商业智能`。 * `SECURE_STORAGE`-  `安全与存储`。 * `MULTIMEDIA_AND_CODING`- `多媒体与编解码`。 * `PROJECT_MANAGEMENT`- `项目管理`, * `PRODUCTIVITY_AND_COLLABORATION`-  `生产力与协作`。 * `WEB_ADN_APPLICATION`-  `网页与应用开发`。 * `GRAPHIC_DESIGN`-  `图形设计`。 * `OTHER`-  `其它`。
 

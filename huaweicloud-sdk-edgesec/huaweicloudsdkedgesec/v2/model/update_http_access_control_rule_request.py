@@ -29,7 +29,7 @@ class UpdateHttpAccessControlRuleRequest:
     }
 
     def __init__(self, policy_id=None, rule_id=None, body=None):
-        """UpdateHttpAccessControlRuleRequest
+        r"""UpdateHttpAccessControlRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateHttpAccessControlRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateHttpAccessControlRuleRequest.
+        r"""Gets the policy_id of this UpdateHttpAccessControlRuleRequest.
 
         策略id
 
@@ -66,7 +66,7 @@ class UpdateHttpAccessControlRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateHttpAccessControlRuleRequest.
+        r"""Sets the policy_id of this UpdateHttpAccessControlRuleRequest.
 
         策略id
 
@@ -77,7 +77,7 @@ class UpdateHttpAccessControlRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateHttpAccessControlRuleRequest.
+        r"""Gets the rule_id of this UpdateHttpAccessControlRuleRequest.
 
         防护规则id
 
@@ -88,7 +88,7 @@ class UpdateHttpAccessControlRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateHttpAccessControlRuleRequest.
+        r"""Sets the rule_id of this UpdateHttpAccessControlRuleRequest.
 
         防护规则id
 
@@ -99,7 +99,7 @@ class UpdateHttpAccessControlRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHttpAccessControlRuleRequest.
+        r"""Gets the body of this UpdateHttpAccessControlRuleRequest.
 
         :return: The body of this UpdateHttpAccessControlRuleRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.UpdateHttpAccessControlRuleRequestBody`
@@ -108,7 +108,7 @@ class UpdateHttpAccessControlRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHttpAccessControlRuleRequest.
+        r"""Sets the body of this UpdateHttpAccessControlRuleRequest.
 
         :param body: The body of this UpdateHttpAccessControlRuleRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.UpdateHttpAccessControlRuleRequestBody`

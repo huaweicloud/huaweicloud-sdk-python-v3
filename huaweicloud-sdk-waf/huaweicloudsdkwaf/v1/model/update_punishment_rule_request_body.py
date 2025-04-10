@@ -29,7 +29,7 @@ class UpdatePunishmentRuleRequestBody:
     }
 
     def __init__(self, category=None, block_time=None, description=None):
-        """UpdatePunishmentRuleRequestBody
+        r"""UpdatePunishmentRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdatePunishmentRuleRequestBody:
 
     @property
     def category(self):
-        """Gets the category of this UpdatePunishmentRuleRequestBody.
+        r"""Gets the category of this UpdatePunishmentRuleRequestBody.
 
         攻击惩罚类别
 
@@ -66,7 +66,7 @@ class UpdatePunishmentRuleRequestBody:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this UpdatePunishmentRuleRequestBody.
+        r"""Sets the category of this UpdatePunishmentRuleRequestBody.
 
         攻击惩罚类别
 
@@ -77,7 +77,7 @@ class UpdatePunishmentRuleRequestBody:
 
     @property
     def block_time(self):
-        """Gets the block_time of this UpdatePunishmentRuleRequestBody.
+        r"""Gets the block_time of this UpdatePunishmentRuleRequestBody.
 
         拦截时间，如果选择前缀为long的攻击惩罚类别，则block_time时长范围设置为301-1800;选择前缀为short的攻击惩罚类别，则block_time时长范围为0-300之间
 
@@ -88,7 +88,7 @@ class UpdatePunishmentRuleRequestBody:
 
     @block_time.setter
     def block_time(self, block_time):
-        """Sets the block_time of this UpdatePunishmentRuleRequestBody.
+        r"""Sets the block_time of this UpdatePunishmentRuleRequestBody.
 
         拦截时间，如果选择前缀为long的攻击惩罚类别，则block_time时长范围设置为301-1800;选择前缀为short的攻击惩罚类别，则block_time时长范围为0-300之间
 
@@ -99,7 +99,7 @@ class UpdatePunishmentRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdatePunishmentRuleRequestBody.
+        r"""Gets the description of this UpdatePunishmentRuleRequestBody.
 
         规则描述
 
@@ -110,7 +110,7 @@ class UpdatePunishmentRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePunishmentRuleRequestBody.
+        r"""Sets the description of this UpdatePunishmentRuleRequestBody.
 
         规则描述
 

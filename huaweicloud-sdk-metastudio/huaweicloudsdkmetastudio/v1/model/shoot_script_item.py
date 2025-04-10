@@ -29,7 +29,7 @@ class ShootScriptItem:
     }
 
     def __init__(self, sequence_no=None, shoot_script=None, subtitle_file_info=None):
-        """ShootScriptItem
+        r"""ShootScriptItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShootScriptItem:
 
     @property
     def sequence_no(self):
-        """Gets the sequence_no of this ShootScriptItem.
+        r"""Gets the sequence_no of this ShootScriptItem.
 
         **参数解释**： 剧本序号。 **约束限制**： 同一个剧本序号不重复。 **默认取值**： 不涉及。
 
@@ -68,7 +68,7 @@ class ShootScriptItem:
 
     @sequence_no.setter
     def sequence_no(self, sequence_no):
-        """Sets the sequence_no of this ShootScriptItem.
+        r"""Sets the sequence_no of this ShootScriptItem.
 
         **参数解释**： 剧本序号。 **约束限制**： 同一个剧本序号不重复。 **默认取值**： 不涉及。
 
@@ -79,7 +79,7 @@ class ShootScriptItem:
 
     @property
     def shoot_script(self):
-        """Gets the shoot_script of this ShootScriptItem.
+        r"""Gets the shoot_script of this ShootScriptItem.
 
         :return: The shoot_script of this ShootScriptItem.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShootScript`
@@ -88,7 +88,7 @@ class ShootScriptItem:
 
     @shoot_script.setter
     def shoot_script(self, shoot_script):
-        """Sets the shoot_script of this ShootScriptItem.
+        r"""Sets the shoot_script of this ShootScriptItem.
 
         :param shoot_script: The shoot_script of this ShootScriptItem.
         :type shoot_script: :class:`huaweicloudsdkmetastudio.v1.ShootScript`
@@ -97,7 +97,7 @@ class ShootScriptItem:
 
     @property
     def subtitle_file_info(self):
-        """Gets the subtitle_file_info of this ShootScriptItem.
+        r"""Gets the subtitle_file_info of this ShootScriptItem.
 
         :return: The subtitle_file_info of this ShootScriptItem.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SubtitleFiles`
@@ -106,7 +106,7 @@ class ShootScriptItem:
 
     @subtitle_file_info.setter
     def subtitle_file_info(self, subtitle_file_info):
-        """Sets the subtitle_file_info of this ShootScriptItem.
+        r"""Sets the subtitle_file_info of this ShootScriptItem.
 
         :param subtitle_file_info: The subtitle_file_info of this ShootScriptItem.
         :type subtitle_file_info: :class:`huaweicloudsdkmetastudio.v1.SubtitleFiles`

@@ -34,7 +34,7 @@ class CloudPondClient(Client):
         return client_builder
 
     def create_edge_site(self, request):
-        """创建边缘小站
+        r"""创建边缘小站
 
         创建边缘小站。
         - 一个边缘小站关联一个华为云指定的区域。
@@ -100,7 +100,7 @@ class CloudPondClient(Client):
         return http_info
 
     def delete_edge_site(self, request):
-        """删除边缘小站
+        r"""删除边缘小站
 
         删除指定的边缘小站。
         
@@ -165,7 +165,7 @@ class CloudPondClient(Client):
         return http_info
 
     def list_edge_sites(self, request):
-        """查询边缘小站列表
+        r"""查询边缘小站列表
 
         查询边缘小站列表。
         
@@ -253,7 +253,7 @@ class CloudPondClient(Client):
         return http_info
 
     def show_edge_site(self, request):
-        """查询边缘小站详情
+        r"""查询边缘小站详情
 
         查询边缘小站详情。
         
@@ -318,7 +318,7 @@ class CloudPondClient(Client):
         return http_info
 
     def update_edge_site(self, request):
-        """更新边缘小站
+        r"""更新边缘小站
 
         更新边缘小站。
         - 允许更新边缘小站描述或场地信息。
@@ -386,7 +386,7 @@ class CloudPondClient(Client):
         return http_info
 
     def list_edge_site_metrics(self, request):
-        """查看站点容量信息
+        r"""查看站点容量信息
 
         查看站点容量信息。
         
@@ -453,7 +453,7 @@ class CloudPondClient(Client):
         return http_info
 
     def list_quotas(self, request):
-        """查询配额
+        r"""查询配额
 
         查询租户资源配额。
         
@@ -516,7 +516,7 @@ class CloudPondClient(Client):
         return http_info
 
     def list_racks(self, request):
-        """查询机柜列表
+        r"""查询机柜列表
 
         查询机柜列表。
         
@@ -591,7 +591,7 @@ class CloudPondClient(Client):
         return http_info
 
     def show_rack(self, request):
-        """查询机柜详情
+        r"""查询机柜详情
 
         查询机柜详情。
         
@@ -656,7 +656,7 @@ class CloudPondClient(Client):
         return http_info
 
     def list_supported_regions(self, request):
-        """查询支持的区域列表
+        r"""查询支持的区域列表
 
         查询支持CloudPond接入的华为云区域（region）列表。
         
@@ -731,7 +731,7 @@ class CloudPondClient(Client):
         return http_info
 
     def list_storage_pools(self, request):
-        """查询存储池列表
+        r"""查询存储池列表
 
         查询存储池列表。
         
@@ -806,7 +806,7 @@ class CloudPondClient(Client):
         return http_info
 
     def show_storage_pool(self, request):
-        """查询存储池详情
+        r"""查询存储池详情
 
         查询存储池详情。
         
@@ -871,7 +871,7 @@ class CloudPondClient(Client):
         return http_info
 
     def list_supported_zones(self, request):
-        """查询支持的地区列表
+        r"""查询支持的地区列表
 
         查询支持CloudPond接入的华为云地区列表。
         - 该接口支持企业项目细粒度权限的校验，具体细粒度请参见 ies:zone:list

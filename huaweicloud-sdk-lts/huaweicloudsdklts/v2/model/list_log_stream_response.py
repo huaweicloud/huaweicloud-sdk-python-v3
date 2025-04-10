@@ -26,7 +26,7 @@ class ListLogStreamResponse(SdkResponse):
     }
 
     def __init__(self, log_streams=None):
-        """ListLogStreamResponse
+        r"""ListLogStreamResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListLogStreamResponse(SdkResponse):
 
     @property
     def log_streams(self):
-        """Gets the log_streams of this ListLogStreamResponse.
+        r"""Gets the log_streams of this ListLogStreamResponse.
 
         :return: The log_streams of this ListLogStreamResponse.
         :rtype: list[:class:`huaweicloudsdklts.v2.LogStreamResBody`]
@@ -53,7 +53,7 @@ class ListLogStreamResponse(SdkResponse):
 
     @log_streams.setter
     def log_streams(self, log_streams):
-        """Sets the log_streams of this ListLogStreamResponse.
+        r"""Sets the log_streams of this ListLogStreamResponse.
 
         :param log_streams: The log_streams of this ListLogStreamResponse.
         :type log_streams: list[:class:`huaweicloudsdklts.v2.LogStreamResBody`]

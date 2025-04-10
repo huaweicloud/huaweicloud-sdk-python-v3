@@ -26,7 +26,7 @@ class ExecuteCommandMobilizationResponse(SdkResponse):
     }
 
     def __init__(self, response=None):
-        """ExecuteCommandMobilizationResponse
+        r"""ExecuteCommandMobilizationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExecuteCommandMobilizationResponse(SdkResponse):
 
     @property
     def response(self):
-        """Gets the response of this ExecuteCommandMobilizationResponse.
+        r"""Gets the response of this ExecuteCommandMobilizationResponse.
 
         返回信息
 
@@ -55,7 +55,7 @@ class ExecuteCommandMobilizationResponse(SdkResponse):
 
     @response.setter
     def response(self, response):
-        """Sets the response of this ExecuteCommandMobilizationResponse.
+        r"""Sets the response of this ExecuteCommandMobilizationResponse.
 
         返回信息
 

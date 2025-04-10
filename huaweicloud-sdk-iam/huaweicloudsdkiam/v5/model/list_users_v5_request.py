@@ -29,7 +29,7 @@ class ListUsersV5Request:
     }
 
     def __init__(self, limit=None, marker=None, group_id=None):
-        """ListUsersV5Request
+        r"""ListUsersV5Request
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListUsersV5Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUsersV5Request.
+        r"""Gets the limit of this ListUsersV5Request.
 
         每页显示的条目数量。
 
@@ -68,7 +68,7 @@ class ListUsersV5Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUsersV5Request.
+        r"""Sets the limit of this ListUsersV5Request.
 
         每页显示的条目数量。
 
@@ -79,7 +79,7 @@ class ListUsersV5Request:
 
     @property
     def marker(self):
-        """Gets the marker of this ListUsersV5Request.
+        r"""Gets the marker of this ListUsersV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 
@@ -90,7 +90,7 @@ class ListUsersV5Request:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListUsersV5Request.
+        r"""Sets the marker of this ListUsersV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 
@@ -101,7 +101,7 @@ class ListUsersV5Request:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListUsersV5Request.
+        r"""Gets the group_id of this ListUsersV5Request.
 
         用户组ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -112,7 +112,7 @@ class ListUsersV5Request:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListUsersV5Request.
+        r"""Sets the group_id of this ListUsersV5Request.
 
         用户组ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 

@@ -25,7 +25,7 @@ class BatchDeleteLabelRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteLabelRequest
+        r"""BatchDeleteLabelRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteLabelRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteLabelRequest.
+        r"""Gets the body of this BatchDeleteLabelRequest.
 
         :return: The body of this BatchDeleteLabelRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteLabelReq`
@@ -52,7 +52,7 @@ class BatchDeleteLabelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteLabelRequest.
+        r"""Sets the body of this BatchDeleteLabelRequest.
 
         :param body: The body of this BatchDeleteLabelRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.BatchDeleteLabelReq`

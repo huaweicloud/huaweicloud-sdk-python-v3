@@ -29,7 +29,7 @@ class L7rulesInStatusResp:
     }
 
     def __init__(self, type=None, id=None, provisioning_status=None):
-        """L7rulesInStatusResp
+        r"""L7rulesInStatusResp
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class L7rulesInStatusResp:
 
     @property
     def type(self):
-        """Gets the type of this L7rulesInStatusResp.
+        r"""Gets the type of this L7rulesInStatusResp.
 
         转发规则的匹配内容。PATH：匹配请求中的路径；HOST_NAME：匹配请求中的域名
 
@@ -65,7 +65,7 @@ class L7rulesInStatusResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this L7rulesInStatusResp.
+        r"""Sets the type of this L7rulesInStatusResp.
 
         转发规则的匹配内容。PATH：匹配请求中的路径；HOST_NAME：匹配请求中的域名
 
@@ -76,7 +76,7 @@ class L7rulesInStatusResp:
 
     @property
     def id(self):
-        """Gets the id of this L7rulesInStatusResp.
+        r"""Gets the id of this L7rulesInStatusResp.
 
         转发规则ID
 
@@ -87,7 +87,7 @@ class L7rulesInStatusResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this L7rulesInStatusResp.
+        r"""Sets the id of this L7rulesInStatusResp.
 
         转发规则ID
 
@@ -98,7 +98,7 @@ class L7rulesInStatusResp:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this L7rulesInStatusResp.
+        r"""Gets the provisioning_status of this L7rulesInStatusResp.
 
         转发规则的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
@@ -109,7 +109,7 @@ class L7rulesInStatusResp:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this L7rulesInStatusResp.
+        r"""Sets the provisioning_status of this L7rulesInStatusResp.
 
         转发规则的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 

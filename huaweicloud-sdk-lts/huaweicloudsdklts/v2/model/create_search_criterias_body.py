@@ -31,7 +31,7 @@ class CreateSearchCriteriasBody:
     }
 
     def __init__(self, criteria=None, eps_id=None, name=None, search_type=None):
-        """CreateSearchCriteriasBody
+        r"""CreateSearchCriteriasBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateSearchCriteriasBody:
 
     @property
     def criteria(self):
-        """Gets the criteria of this CreateSearchCriteriasBody.
+        r"""Gets the criteria of this CreateSearchCriteriasBody.
 
         快速查询字段
 
@@ -72,7 +72,7 @@ class CreateSearchCriteriasBody:
 
     @criteria.setter
     def criteria(self, criteria):
-        """Sets the criteria of this CreateSearchCriteriasBody.
+        r"""Sets the criteria of this CreateSearchCriteriasBody.
 
         快速查询字段
 
@@ -83,7 +83,7 @@ class CreateSearchCriteriasBody:
 
     @property
     def eps_id(self):
-        """Gets the eps_id of this CreateSearchCriteriasBody.
+        r"""Gets the eps_id of this CreateSearchCriteriasBody.
 
         企业项目id
 
@@ -94,7 +94,7 @@ class CreateSearchCriteriasBody:
 
     @eps_id.setter
     def eps_id(self, eps_id):
-        """Sets the eps_id of this CreateSearchCriteriasBody.
+        r"""Sets the eps_id of this CreateSearchCriteriasBody.
 
         企业项目id
 
@@ -105,7 +105,7 @@ class CreateSearchCriteriasBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateSearchCriteriasBody.
+        r"""Gets the name of this CreateSearchCriteriasBody.
 
         创建快速查询名称
 
@@ -116,7 +116,7 @@ class CreateSearchCriteriasBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateSearchCriteriasBody.
+        r"""Sets the name of this CreateSearchCriteriasBody.
 
         创建快速查询名称
 
@@ -127,7 +127,7 @@ class CreateSearchCriteriasBody:
 
     @property
     def search_type(self):
-        """Gets the search_type of this CreateSearchCriteriasBody.
+        r"""Gets the search_type of this CreateSearchCriteriasBody.
 
         查询类型 原始日志：ORIGINALLOG 可视化日志: VISUALIZATION
 
@@ -138,7 +138,7 @@ class CreateSearchCriteriasBody:
 
     @search_type.setter
     def search_type(self, search_type):
-        """Sets the search_type of this CreateSearchCriteriasBody.
+        r"""Sets the search_type of this CreateSearchCriteriasBody.
 
         查询类型 原始日志：ORIGINALLOG 可视化日志: VISUALIZATION
 

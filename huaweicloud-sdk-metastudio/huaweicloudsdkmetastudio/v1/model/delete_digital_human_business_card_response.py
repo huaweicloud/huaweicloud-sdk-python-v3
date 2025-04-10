@@ -26,7 +26,7 @@ class DeleteDigitalHumanBusinessCardResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """DeleteDigitalHumanBusinessCardResponse
+        r"""DeleteDigitalHumanBusinessCardResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteDigitalHumanBusinessCardResponse.
+        r"""Gets the x_request_id of this DeleteDigitalHumanBusinessCardResponse.
 
         :return: The x_request_id of this DeleteDigitalHumanBusinessCardResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteDigitalHumanBusinessCardResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteDigitalHumanBusinessCardResponse.
+        r"""Sets the x_request_id of this DeleteDigitalHumanBusinessCardResponse.
 
         :param x_request_id: The x_request_id of this DeleteDigitalHumanBusinessCardResponse.
         :type x_request_id: str

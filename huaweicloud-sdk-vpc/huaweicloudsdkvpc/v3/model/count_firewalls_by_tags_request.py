@@ -25,7 +25,7 @@ class CountFirewallsByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """CountFirewallsByTagsRequest
+        r"""CountFirewallsByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CountFirewallsByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CountFirewallsByTagsRequest.
+        r"""Gets the body of this CountFirewallsByTagsRequest.
 
         :return: The body of this CountFirewallsByTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.CountFirewallsByTagsRequestBody`
@@ -52,7 +52,7 @@ class CountFirewallsByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CountFirewallsByTagsRequest.
+        r"""Sets the body of this CountFirewallsByTagsRequest.
 
         :param body: The body of this CountFirewallsByTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.CountFirewallsByTagsRequestBody`

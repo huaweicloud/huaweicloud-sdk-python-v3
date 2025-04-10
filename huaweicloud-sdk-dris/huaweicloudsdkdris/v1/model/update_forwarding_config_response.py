@@ -30,7 +30,7 @@ class UpdateForwardingConfigResponse(SdkResponse):
     }
 
     def __init__(self, forwarding_type=None, kafka_config=None, mrs_kafka_config=None):
-        """UpdateForwardingConfigResponse
+        r"""UpdateForwardingConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateForwardingConfigResponse(SdkResponse):
 
     @property
     def forwarding_type(self):
-        """Gets the forwarding_type of this UpdateForwardingConfigResponse.
+        r"""Gets the forwarding_type of this UpdateForwardingConfigResponse.
 
         **参数说明**：转发配置的类型。  **取值范围**：当前仅支持“kafka、mrskafka”。
 
@@ -69,7 +69,7 @@ class UpdateForwardingConfigResponse(SdkResponse):
 
     @forwarding_type.setter
     def forwarding_type(self, forwarding_type):
-        """Sets the forwarding_type of this UpdateForwardingConfigResponse.
+        r"""Sets the forwarding_type of this UpdateForwardingConfigResponse.
 
         **参数说明**：转发配置的类型。  **取值范围**：当前仅支持“kafka、mrskafka”。
 
@@ -80,7 +80,7 @@ class UpdateForwardingConfigResponse(SdkResponse):
 
     @property
     def kafka_config(self):
-        """Gets the kafka_config of this UpdateForwardingConfigResponse.
+        r"""Gets the kafka_config of this UpdateForwardingConfigResponse.
 
         :return: The kafka_config of this UpdateForwardingConfigResponse.
         :rtype: :class:`huaweicloudsdkdris.v1.KafkaConfigResponseDTO`
@@ -89,7 +89,7 @@ class UpdateForwardingConfigResponse(SdkResponse):
 
     @kafka_config.setter
     def kafka_config(self, kafka_config):
-        """Sets the kafka_config of this UpdateForwardingConfigResponse.
+        r"""Sets the kafka_config of this UpdateForwardingConfigResponse.
 
         :param kafka_config: The kafka_config of this UpdateForwardingConfigResponse.
         :type kafka_config: :class:`huaweicloudsdkdris.v1.KafkaConfigResponseDTO`
@@ -98,7 +98,7 @@ class UpdateForwardingConfigResponse(SdkResponse):
 
     @property
     def mrs_kafka_config(self):
-        """Gets the mrs_kafka_config of this UpdateForwardingConfigResponse.
+        r"""Gets the mrs_kafka_config of this UpdateForwardingConfigResponse.
 
         :return: The mrs_kafka_config of this UpdateForwardingConfigResponse.
         :rtype: :class:`huaweicloudsdkdris.v1.MrsKafkaConfigResponseDTO`
@@ -107,7 +107,7 @@ class UpdateForwardingConfigResponse(SdkResponse):
 
     @mrs_kafka_config.setter
     def mrs_kafka_config(self, mrs_kafka_config):
-        """Sets the mrs_kafka_config of this UpdateForwardingConfigResponse.
+        r"""Sets the mrs_kafka_config of this UpdateForwardingConfigResponse.
 
         :param mrs_kafka_config: The mrs_kafka_config of this UpdateForwardingConfigResponse.
         :type mrs_kafka_config: :class:`huaweicloudsdkdris.v1.MrsKafkaConfigResponseDTO`

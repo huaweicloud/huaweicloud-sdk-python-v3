@@ -25,7 +25,7 @@ class BatchDeleteDesktopSnapshotRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteDesktopSnapshotRequest
+        r"""BatchDeleteDesktopSnapshotRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteDesktopSnapshotRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteDesktopSnapshotRequest.
+        r"""Gets the body of this BatchDeleteDesktopSnapshotRequest.
 
         :return: The body of this BatchDeleteDesktopSnapshotRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteDesktopSnapshotReq`
@@ -52,7 +52,7 @@ class BatchDeleteDesktopSnapshotRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteDesktopSnapshotRequest.
+        r"""Sets the body of this BatchDeleteDesktopSnapshotRequest.
 
         :param body: The body of this BatchDeleteDesktopSnapshotRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchDeleteDesktopSnapshotReq`

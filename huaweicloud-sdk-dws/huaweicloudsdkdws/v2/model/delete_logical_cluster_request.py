@@ -27,7 +27,7 @@ class DeleteLogicalClusterRequest:
     }
 
     def __init__(self, cluster_id=None, logical_cluster_id=None):
-        """DeleteLogicalClusterRequest
+        r"""DeleteLogicalClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteLogicalClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteLogicalClusterRequest.
+        r"""Gets the cluster_id of this DeleteLogicalClusterRequest.
 
         指定待删除集群的ID
 
@@ -59,7 +59,7 @@ class DeleteLogicalClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteLogicalClusterRequest.
+        r"""Sets the cluster_id of this DeleteLogicalClusterRequest.
 
         指定待删除集群的ID
 
@@ -70,7 +70,7 @@ class DeleteLogicalClusterRequest:
 
     @property
     def logical_cluster_id(self):
-        """Gets the logical_cluster_id of this DeleteLogicalClusterRequest.
+        r"""Gets the logical_cluster_id of this DeleteLogicalClusterRequest.
 
         指定待删除逻辑集群的ID
 
@@ -81,7 +81,7 @@ class DeleteLogicalClusterRequest:
 
     @logical_cluster_id.setter
     def logical_cluster_id(self, logical_cluster_id):
-        """Sets the logical_cluster_id of this DeleteLogicalClusterRequest.
+        r"""Sets the logical_cluster_id of this DeleteLogicalClusterRequest.
 
         指定待删除逻辑集群的ID
 

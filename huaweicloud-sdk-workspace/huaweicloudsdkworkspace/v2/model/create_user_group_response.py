@@ -30,7 +30,7 @@ class CreateUserGroupResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, encoded_authorization_message=None):
-        """CreateUserGroupResponse
+        r"""CreateUserGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateUserGroupResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateUserGroupResponse.
+        r"""Gets the error_code of this CreateUserGroupResponse.
 
         错误码。
 
@@ -69,7 +69,7 @@ class CreateUserGroupResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateUserGroupResponse.
+        r"""Sets the error_code of this CreateUserGroupResponse.
 
         错误码。
 
@@ -80,7 +80,7 @@ class CreateUserGroupResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateUserGroupResponse.
+        r"""Gets the error_msg of this CreateUserGroupResponse.
 
         错误描述。
 
@@ -91,7 +91,7 @@ class CreateUserGroupResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateUserGroupResponse.
+        r"""Sets the error_msg of this CreateUserGroupResponse.
 
         错误描述。
 
@@ -102,7 +102,7 @@ class CreateUserGroupResponse(SdkResponse):
 
     @property
     def encoded_authorization_message(self):
-        """Gets the encoded_authorization_message of this CreateUserGroupResponse.
+        r"""Gets the encoded_authorization_message of this CreateUserGroupResponse.
 
         加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
 
@@ -113,7 +113,7 @@ class CreateUserGroupResponse(SdkResponse):
 
     @encoded_authorization_message.setter
     def encoded_authorization_message(self, encoded_authorization_message):
-        """Sets the encoded_authorization_message of this CreateUserGroupResponse.
+        r"""Sets the encoded_authorization_message of this CreateUserGroupResponse.
 
         加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
 

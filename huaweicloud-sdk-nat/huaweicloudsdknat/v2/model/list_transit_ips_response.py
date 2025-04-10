@@ -30,7 +30,7 @@ class ListTransitIpsResponse(SdkResponse):
     }
 
     def __init__(self, transit_ips=None, page_info=None, request_id=None):
-        """ListTransitIpsResponse
+        r"""ListTransitIpsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTransitIpsResponse(SdkResponse):
 
     @property
     def transit_ips(self):
-        """Gets the transit_ips of this ListTransitIpsResponse.
+        r"""Gets the transit_ips of this ListTransitIpsResponse.
 
         查询中转IP列表的响应体。
 
@@ -69,7 +69,7 @@ class ListTransitIpsResponse(SdkResponse):
 
     @transit_ips.setter
     def transit_ips(self, transit_ips):
-        """Sets the transit_ips of this ListTransitIpsResponse.
+        r"""Sets the transit_ips of this ListTransitIpsResponse.
 
         查询中转IP列表的响应体。
 
@@ -80,7 +80,7 @@ class ListTransitIpsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListTransitIpsResponse.
+        r"""Gets the page_info of this ListTransitIpsResponse.
 
         :return: The page_info of this ListTransitIpsResponse.
         :rtype: :class:`huaweicloudsdknat.v2.PageInfo`
@@ -89,7 +89,7 @@ class ListTransitIpsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListTransitIpsResponse.
+        r"""Sets the page_info of this ListTransitIpsResponse.
 
         :param page_info: The page_info of this ListTransitIpsResponse.
         :type page_info: :class:`huaweicloudsdknat.v2.PageInfo`
@@ -98,7 +98,7 @@ class ListTransitIpsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListTransitIpsResponse.
+        r"""Gets the request_id of this ListTransitIpsResponse.
 
         请求ID。
 
@@ -109,7 +109,7 @@ class ListTransitIpsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListTransitIpsResponse.
+        r"""Sets the request_id of this ListTransitIpsResponse.
 
         请求ID。
 

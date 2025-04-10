@@ -30,7 +30,7 @@ class ShowJobSuccessRatioResponse(SdkResponse):
     }
 
     def __init__(self, success_count=None, total_count=None, success_ratio=None):
-        """ShowJobSuccessRatioResponse
+        r"""ShowJobSuccessRatioResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowJobSuccessRatioResponse(SdkResponse):
 
     @property
     def success_count(self):
-        """Gets the success_count of this ShowJobSuccessRatioResponse.
+        r"""Gets the success_count of this ShowJobSuccessRatioResponse.
 
         任务成功构建次数
 
@@ -69,7 +69,7 @@ class ShowJobSuccessRatioResponse(SdkResponse):
 
     @success_count.setter
     def success_count(self, success_count):
-        """Sets the success_count of this ShowJobSuccessRatioResponse.
+        r"""Sets the success_count of this ShowJobSuccessRatioResponse.
 
         任务成功构建次数
 
@@ -80,7 +80,7 @@ class ShowJobSuccessRatioResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowJobSuccessRatioResponse.
+        r"""Gets the total_count of this ShowJobSuccessRatioResponse.
 
         任务构建总次数
 
@@ -91,7 +91,7 @@ class ShowJobSuccessRatioResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowJobSuccessRatioResponse.
+        r"""Sets the total_count of this ShowJobSuccessRatioResponse.
 
         任务构建总次数
 
@@ -102,7 +102,7 @@ class ShowJobSuccessRatioResponse(SdkResponse):
 
     @property
     def success_ratio(self):
-        """Gets the success_ratio of this ShowJobSuccessRatioResponse.
+        r"""Gets the success_ratio of this ShowJobSuccessRatioResponse.
 
         任务成功率,精确到小数点后两位
 
@@ -113,7 +113,7 @@ class ShowJobSuccessRatioResponse(SdkResponse):
 
     @success_ratio.setter
     def success_ratio(self, success_ratio):
-        """Sets the success_ratio of this ShowJobSuccessRatioResponse.
+        r"""Sets the success_ratio of this ShowJobSuccessRatioResponse.
 
         任务成功率,精确到小数点后两位
 

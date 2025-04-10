@@ -25,7 +25,7 @@ class UnlockPortRequest:
     }
 
     def __init__(self, body=None):
-        """UnlockPortRequest
+        r"""UnlockPortRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UnlockPortRequest:
 
     @property
     def body(self):
-        """Gets the body of this UnlockPortRequest.
+        r"""Gets the body of this UnlockPortRequest.
 
         :return: The body of this UnlockPortRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UnlockPortRequestBody`
@@ -52,7 +52,7 @@ class UnlockPortRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UnlockPortRequest.
+        r"""Sets the body of this UnlockPortRequest.
 
         :param body: The body of this UnlockPortRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.UnlockPortRequestBody`

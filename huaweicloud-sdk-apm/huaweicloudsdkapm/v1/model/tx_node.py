@@ -29,7 +29,7 @@ class TxNode:
     }
 
     def __init__(self, tx_node_id=None, tx_node_name=None, tx_node_type=None):
-        """TxNode
+        r"""TxNode
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TxNode:
 
     @property
     def tx_node_id(self):
-        """Gets the tx_node_id of this TxNode.
+        r"""Gets the tx_node_id of this TxNode.
 
         节点id。
 
@@ -68,7 +68,7 @@ class TxNode:
 
     @tx_node_id.setter
     def tx_node_id(self, tx_node_id):
-        """Sets the tx_node_id of this TxNode.
+        r"""Sets the tx_node_id of this TxNode.
 
         节点id。
 
@@ -79,7 +79,7 @@ class TxNode:
 
     @property
     def tx_node_name(self):
-        """Gets the tx_node_name of this TxNode.
+        r"""Gets the tx_node_name of this TxNode.
 
         节点名称。
 
@@ -90,7 +90,7 @@ class TxNode:
 
     @tx_node_name.setter
     def tx_node_name(self, tx_node_name):
-        """Sets the tx_node_name of this TxNode.
+        r"""Sets the tx_node_name of this TxNode.
 
         节点名称。
 
@@ -101,7 +101,7 @@ class TxNode:
 
     @property
     def tx_node_type(self):
-        """Gets the tx_node_type of this TxNode.
+        r"""Gets the tx_node_type of this TxNode.
 
         节点类型。
 
@@ -112,7 +112,7 @@ class TxNode:
 
     @tx_node_type.setter
     def tx_node_type(self, tx_node_type):
-        """Sets the tx_node_type of this TxNode.
+        r"""Sets the tx_node_type of this TxNode.
 
         节点类型。
 

@@ -26,7 +26,7 @@ class ListSuggestionsResponse(SdkResponse):
     }
 
     def __init__(self, questions=None):
-        """ListSuggestionsResponse
+        r"""ListSuggestionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSuggestionsResponse(SdkResponse):
 
     @property
     def questions(self):
-        """Gets the questions of this ListSuggestionsResponse.
+        r"""Gets the questions of this ListSuggestionsResponse.
 
         推荐问列表。
 
@@ -55,7 +55,7 @@ class ListSuggestionsResponse(SdkResponse):
 
     @questions.setter
     def questions(self, questions):
-        """Sets the questions of this ListSuggestionsResponse.
+        r"""Sets the questions of this ListSuggestionsResponse.
 
         推荐问列表。
 

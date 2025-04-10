@@ -27,7 +27,7 @@ class SyncChatRequest:
     }
 
     def __init__(self, content_type=None, body=None):
-        """SyncChatRequest
+        r"""SyncChatRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SyncChatRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this SyncChatRequest.
+        r"""Gets the content_type of this SyncChatRequest.
 
         content enum - application/json
 
@@ -61,7 +61,7 @@ class SyncChatRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this SyncChatRequest.
+        r"""Sets the content_type of this SyncChatRequest.
 
         content enum - application/json
 
@@ -72,7 +72,7 @@ class SyncChatRequest:
 
     @property
     def body(self):
-        """Gets the body of this SyncChatRequest.
+        r"""Gets the body of this SyncChatRequest.
 
         :return: The body of this SyncChatRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.ChatRequestMessage`
@@ -81,7 +81,7 @@ class SyncChatRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SyncChatRequest.
+        r"""Sets the body of this SyncChatRequest.
 
         :param body: The body of this SyncChatRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.ChatRequestMessage`

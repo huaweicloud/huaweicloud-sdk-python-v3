@@ -25,7 +25,7 @@ class FrozenEffect:
     }
 
     def __init__(self, frozen_effect=None):
-        """FrozenEffect
+        r"""FrozenEffect
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class FrozenEffect:
 
     @property
     def frozen_effect(self):
-        """Gets the frozen_effect of this FrozenEffect.
+        r"""Gets the frozen_effect of this FrozenEffect.
 
         :return: The frozen_effect of this FrozenEffect.
         :rtype: :class:`huaweicloudsdkcc.v3.FrozenEffectEnum`
@@ -52,7 +52,7 @@ class FrozenEffect:
 
     @frozen_effect.setter
     def frozen_effect(self, frozen_effect):
-        """Sets the frozen_effect of this FrozenEffect.
+        r"""Sets the frozen_effect of this FrozenEffect.
 
         :param frozen_effect: The frozen_effect of this FrozenEffect.
         :type frozen_effect: :class:`huaweicloudsdkcc.v3.FrozenEffectEnum`

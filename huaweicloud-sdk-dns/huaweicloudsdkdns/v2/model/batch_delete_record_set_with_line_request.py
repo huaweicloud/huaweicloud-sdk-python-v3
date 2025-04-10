@@ -27,7 +27,7 @@ class BatchDeleteRecordSetWithLineRequest:
     }
 
     def __init__(self, zone_id=None, body=None):
-        """BatchDeleteRecordSetWithLineRequest
+        r"""BatchDeleteRecordSetWithLineRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteRecordSetWithLineRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this BatchDeleteRecordSetWithLineRequest.
+        r"""Gets the zone_id of this BatchDeleteRecordSetWithLineRequest.
 
         所属zone的ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteRecordSetWithLineRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this BatchDeleteRecordSetWithLineRequest.
+        r"""Sets the zone_id of this BatchDeleteRecordSetWithLineRequest.
 
         所属zone的ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteRecordSetWithLineRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteRecordSetWithLineRequest.
+        r"""Gets the body of this BatchDeleteRecordSetWithLineRequest.
 
         :return: The body of this BatchDeleteRecordSetWithLineRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetWithLineRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteRecordSetWithLineRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteRecordSetWithLineRequest.
+        r"""Sets the body of this BatchDeleteRecordSetWithLineRequest.
 
         :param body: The body of this BatchDeleteRecordSetWithLineRequest.
         :type body: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetWithLineRequestBody`

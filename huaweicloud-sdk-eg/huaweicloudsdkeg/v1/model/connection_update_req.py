@@ -25,7 +25,7 @@ class ConnectionUpdateReq:
     }
 
     def __init__(self, description=None):
-        """ConnectionUpdateReq
+        r"""ConnectionUpdateReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ConnectionUpdateReq:
 
     @property
     def description(self):
-        """Gets the description of this ConnectionUpdateReq.
+        r"""Gets the description of this ConnectionUpdateReq.
 
         目标连接描述
 
@@ -54,7 +54,7 @@ class ConnectionUpdateReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConnectionUpdateReq.
+        r"""Sets the description of this ConnectionUpdateReq.
 
         目标连接描述
 

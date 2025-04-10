@@ -63,7 +63,7 @@ class PublicAwLibRes:
     }
 
     def __init__(self, create_time=None, create_time_stamp=None, create_time_string=None, create_user=None, document_link=None, id=None, name=None, net_area=None, obs_temp_url=None, product_line=None, repo_branch=None, repo_lib_path=None, repo_password=None, repo_private_key=None, repo_url=None, repo_username=None, update_time=None, update_time_stamp=None, update_time_string=None, update_user=None):
-        """PublicAwLibRes
+        r"""PublicAwLibRes
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class PublicAwLibRes:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PublicAwLibRes.
+        r"""Gets the create_time of this PublicAwLibRes.
 
         创建时间
 
@@ -187,7 +187,7 @@ class PublicAwLibRes:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PublicAwLibRes.
+        r"""Sets the create_time of this PublicAwLibRes.
 
         创建时间
 
@@ -198,7 +198,7 @@ class PublicAwLibRes:
 
     @property
     def create_time_stamp(self):
-        """Gets the create_time_stamp of this PublicAwLibRes.
+        r"""Gets the create_time_stamp of this PublicAwLibRes.
 
         创建时间戳
 
@@ -209,7 +209,7 @@ class PublicAwLibRes:
 
     @create_time_stamp.setter
     def create_time_stamp(self, create_time_stamp):
-        """Sets the create_time_stamp of this PublicAwLibRes.
+        r"""Sets the create_time_stamp of this PublicAwLibRes.
 
         创建时间戳
 
@@ -220,7 +220,7 @@ class PublicAwLibRes:
 
     @property
     def create_time_string(self):
-        """Gets the create_time_string of this PublicAwLibRes.
+        r"""Gets the create_time_string of this PublicAwLibRes.
 
         创建时间字符串
 
@@ -231,7 +231,7 @@ class PublicAwLibRes:
 
     @create_time_string.setter
     def create_time_string(self, create_time_string):
-        """Sets the create_time_string of this PublicAwLibRes.
+        r"""Sets the create_time_string of this PublicAwLibRes.
 
         创建时间字符串
 
@@ -242,7 +242,7 @@ class PublicAwLibRes:
 
     @property
     def create_user(self):
-        """Gets the create_user of this PublicAwLibRes.
+        r"""Gets the create_user of this PublicAwLibRes.
 
         创建人
 
@@ -253,7 +253,7 @@ class PublicAwLibRes:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this PublicAwLibRes.
+        r"""Sets the create_user of this PublicAwLibRes.
 
         创建人
 
@@ -264,7 +264,7 @@ class PublicAwLibRes:
 
     @property
     def document_link(self):
-        """Gets the document_link of this PublicAwLibRes.
+        r"""Gets the document_link of this PublicAwLibRes.
 
         关联公共aw时的编辑链接
 
@@ -275,7 +275,7 @@ class PublicAwLibRes:
 
     @document_link.setter
     def document_link(self, document_link):
-        """Sets the document_link of this PublicAwLibRes.
+        r"""Sets the document_link of this PublicAwLibRes.
 
         关联公共aw时的编辑链接
 
@@ -286,7 +286,7 @@ class PublicAwLibRes:
 
     @property
     def id(self):
-        """Gets the id of this PublicAwLibRes.
+        r"""Gets the id of this PublicAwLibRes.
 
         id
 
@@ -297,7 +297,7 @@ class PublicAwLibRes:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublicAwLibRes.
+        r"""Sets the id of this PublicAwLibRes.
 
         id
 
@@ -308,7 +308,7 @@ class PublicAwLibRes:
 
     @property
     def name(self):
-        """Gets the name of this PublicAwLibRes.
+        r"""Gets the name of this PublicAwLibRes.
 
         名称
 
@@ -319,7 +319,7 @@ class PublicAwLibRes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublicAwLibRes.
+        r"""Sets the name of this PublicAwLibRes.
 
         名称
 
@@ -330,7 +330,7 @@ class PublicAwLibRes:
 
     @property
     def net_area(self):
-        """Gets the net_area of this PublicAwLibRes.
+        r"""Gets the net_area of this PublicAwLibRes.
 
         蓝区:Blue,绿区:Green,黄区:Yellow
 
@@ -341,7 +341,7 @@ class PublicAwLibRes:
 
     @net_area.setter
     def net_area(self, net_area):
-        """Sets the net_area of this PublicAwLibRes.
+        r"""Sets the net_area of this PublicAwLibRes.
 
         蓝区:Blue,绿区:Green,黄区:Yellow
 
@@ -352,7 +352,7 @@ class PublicAwLibRes:
 
     @property
     def obs_temp_url(self):
-        """Gets the obs_temp_url of this PublicAwLibRes.
+        r"""Gets the obs_temp_url of this PublicAwLibRes.
 
         obs临时url
 
@@ -363,7 +363,7 @@ class PublicAwLibRes:
 
     @obs_temp_url.setter
     def obs_temp_url(self, obs_temp_url):
-        """Sets the obs_temp_url of this PublicAwLibRes.
+        r"""Sets the obs_temp_url of this PublicAwLibRes.
 
         obs临时url
 
@@ -374,7 +374,7 @@ class PublicAwLibRes:
 
     @property
     def product_line(self):
-        """Gets the product_line of this PublicAwLibRes.
+        r"""Gets the product_line of this PublicAwLibRes.
 
         产品线
 
@@ -385,7 +385,7 @@ class PublicAwLibRes:
 
     @product_line.setter
     def product_line(self, product_line):
-        """Sets the product_line of this PublicAwLibRes.
+        r"""Sets the product_line of this PublicAwLibRes.
 
         产品线
 
@@ -396,7 +396,7 @@ class PublicAwLibRes:
 
     @property
     def repo_branch(self):
-        """Gets the repo_branch of this PublicAwLibRes.
+        r"""Gets the repo_branch of this PublicAwLibRes.
 
         仓库分支
 
@@ -407,7 +407,7 @@ class PublicAwLibRes:
 
     @repo_branch.setter
     def repo_branch(self, repo_branch):
-        """Sets the repo_branch of this PublicAwLibRes.
+        r"""Sets the repo_branch of this PublicAwLibRes.
 
         仓库分支
 
@@ -418,7 +418,7 @@ class PublicAwLibRes:
 
     @property
     def repo_lib_path(self):
-        """Gets the repo_lib_path of this PublicAwLibRes.
+        r"""Gets the repo_lib_path of this PublicAwLibRes.
 
         存公共aw依赖jar包的目录
 
@@ -429,7 +429,7 @@ class PublicAwLibRes:
 
     @repo_lib_path.setter
     def repo_lib_path(self, repo_lib_path):
-        """Sets the repo_lib_path of this PublicAwLibRes.
+        r"""Sets the repo_lib_path of this PublicAwLibRes.
 
         存公共aw依赖jar包的目录
 
@@ -440,7 +440,7 @@ class PublicAwLibRes:
 
     @property
     def repo_password(self):
-        """Gets the repo_password of this PublicAwLibRes.
+        r"""Gets the repo_password of this PublicAwLibRes.
 
         仓库密码
 
@@ -451,7 +451,7 @@ class PublicAwLibRes:
 
     @repo_password.setter
     def repo_password(self, repo_password):
-        """Sets the repo_password of this PublicAwLibRes.
+        r"""Sets the repo_password of this PublicAwLibRes.
 
         仓库密码
 
@@ -462,7 +462,7 @@ class PublicAwLibRes:
 
     @property
     def repo_private_key(self):
-        """Gets the repo_private_key of this PublicAwLibRes.
+        r"""Gets the repo_private_key of this PublicAwLibRes.
 
         仓库秘钥
 
@@ -473,7 +473,7 @@ class PublicAwLibRes:
 
     @repo_private_key.setter
     def repo_private_key(self, repo_private_key):
-        """Sets the repo_private_key of this PublicAwLibRes.
+        r"""Sets the repo_private_key of this PublicAwLibRes.
 
         仓库秘钥
 
@@ -484,7 +484,7 @@ class PublicAwLibRes:
 
     @property
     def repo_url(self):
-        """Gets the repo_url of this PublicAwLibRes.
+        r"""Gets the repo_url of this PublicAwLibRes.
 
         仓库地址
 
@@ -495,7 +495,7 @@ class PublicAwLibRes:
 
     @repo_url.setter
     def repo_url(self, repo_url):
-        """Sets the repo_url of this PublicAwLibRes.
+        r"""Sets the repo_url of this PublicAwLibRes.
 
         仓库地址
 
@@ -506,7 +506,7 @@ class PublicAwLibRes:
 
     @property
     def repo_username(self):
-        """Gets the repo_username of this PublicAwLibRes.
+        r"""Gets the repo_username of this PublicAwLibRes.
 
         仓库用户名
 
@@ -517,7 +517,7 @@ class PublicAwLibRes:
 
     @repo_username.setter
     def repo_username(self, repo_username):
-        """Sets the repo_username of this PublicAwLibRes.
+        r"""Sets the repo_username of this PublicAwLibRes.
 
         仓库用户名
 
@@ -528,7 +528,7 @@ class PublicAwLibRes:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PublicAwLibRes.
+        r"""Gets the update_time of this PublicAwLibRes.
 
         更新时间
 
@@ -539,7 +539,7 @@ class PublicAwLibRes:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PublicAwLibRes.
+        r"""Sets the update_time of this PublicAwLibRes.
 
         更新时间
 
@@ -550,7 +550,7 @@ class PublicAwLibRes:
 
     @property
     def update_time_stamp(self):
-        """Gets the update_time_stamp of this PublicAwLibRes.
+        r"""Gets the update_time_stamp of this PublicAwLibRes.
 
         更新时间戳
 
@@ -561,7 +561,7 @@ class PublicAwLibRes:
 
     @update_time_stamp.setter
     def update_time_stamp(self, update_time_stamp):
-        """Sets the update_time_stamp of this PublicAwLibRes.
+        r"""Sets the update_time_stamp of this PublicAwLibRes.
 
         更新时间戳
 
@@ -572,7 +572,7 @@ class PublicAwLibRes:
 
     @property
     def update_time_string(self):
-        """Gets the update_time_string of this PublicAwLibRes.
+        r"""Gets the update_time_string of this PublicAwLibRes.
 
         更新时间字符串
 
@@ -583,7 +583,7 @@ class PublicAwLibRes:
 
     @update_time_string.setter
     def update_time_string(self, update_time_string):
-        """Sets the update_time_string of this PublicAwLibRes.
+        r"""Sets the update_time_string of this PublicAwLibRes.
 
         更新时间字符串
 
@@ -594,7 +594,7 @@ class PublicAwLibRes:
 
     @property
     def update_user(self):
-        """Gets the update_user of this PublicAwLibRes.
+        r"""Gets the update_user of this PublicAwLibRes.
 
         更新人
 
@@ -605,7 +605,7 @@ class PublicAwLibRes:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this PublicAwLibRes.
+        r"""Sets the update_user of this PublicAwLibRes.
 
         更新人
 

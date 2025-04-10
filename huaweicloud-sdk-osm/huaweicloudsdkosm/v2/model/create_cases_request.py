@@ -35,7 +35,7 @@ class CreateCasesRequest:
     }
 
     def __init__(self, x_site=None, x_language=None, x_time_zone=None, x_phone_verifiedid=None, x_email_verifiedid=None, body=None):
-        """CreateCasesRequest
+        r"""CreateCasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateCasesRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this CreateCasesRequest.
+        r"""Gets the x_site of this CreateCasesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -89,7 +89,7 @@ class CreateCasesRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this CreateCasesRequest.
+        r"""Sets the x_site of this CreateCasesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -100,7 +100,7 @@ class CreateCasesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateCasesRequest.
+        r"""Gets the x_language of this CreateCasesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -111,7 +111,7 @@ class CreateCasesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateCasesRequest.
+        r"""Sets the x_language of this CreateCasesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -122,7 +122,7 @@ class CreateCasesRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this CreateCasesRequest.
+        r"""Gets the x_time_zone of this CreateCasesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -133,7 +133,7 @@ class CreateCasesRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this CreateCasesRequest.
+        r"""Sets the x_time_zone of this CreateCasesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -144,7 +144,7 @@ class CreateCasesRequest:
 
     @property
     def x_phone_verifiedid(self):
-        """Gets the x_phone_verifiedid of this CreateCasesRequest.
+        r"""Gets the x_phone_verifiedid of this CreateCasesRequest.
 
         手机验证序列号id，如果是非注册联系方式则必填，通过\"查询已验证的列表\"接口查询获取
 
@@ -155,7 +155,7 @@ class CreateCasesRequest:
 
     @x_phone_verifiedid.setter
     def x_phone_verifiedid(self, x_phone_verifiedid):
-        """Sets the x_phone_verifiedid of this CreateCasesRequest.
+        r"""Sets the x_phone_verifiedid of this CreateCasesRequest.
 
         手机验证序列号id，如果是非注册联系方式则必填，通过\"查询已验证的列表\"接口查询获取
 
@@ -166,7 +166,7 @@ class CreateCasesRequest:
 
     @property
     def x_email_verifiedid(self):
-        """Gets the x_email_verifiedid of this CreateCasesRequest.
+        r"""Gets the x_email_verifiedid of this CreateCasesRequest.
 
         邮件验证序列号id，如果是非注册联系方式则必填，通过\"查询已验证的列表\"接口查询获取
 
@@ -177,7 +177,7 @@ class CreateCasesRequest:
 
     @x_email_verifiedid.setter
     def x_email_verifiedid(self, x_email_verifiedid):
-        """Sets the x_email_verifiedid of this CreateCasesRequest.
+        r"""Sets the x_email_verifiedid of this CreateCasesRequest.
 
         邮件验证序列号id，如果是非注册联系方式则必填，通过\"查询已验证的列表\"接口查询获取
 
@@ -188,7 +188,7 @@ class CreateCasesRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCasesRequest.
+        r"""Gets the body of this CreateCasesRequest.
 
         :return: The body of this CreateCasesRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.CreateOrderIncidentV2Req`
@@ -197,7 +197,7 @@ class CreateCasesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCasesRequest.
+        r"""Sets the body of this CreateCasesRequest.
 
         :param body: The body of this CreateCasesRequest.
         :type body: :class:`huaweicloudsdkosm.v2.CreateOrderIncidentV2Req`

@@ -33,7 +33,7 @@ class AlarmNotifyConfig:
     }
 
     def __init__(self, alarm_to_user=None, topic_urn=None, delay_time=None, rpo_delay=None, rto_delay=None):
-        """AlarmNotifyConfig
+        r"""AlarmNotifyConfig
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class AlarmNotifyConfig:
 
     @property
     def alarm_to_user(self):
-        """Gets the alarm_to_user of this AlarmNotifyConfig.
+        r"""Gets the alarm_to_user of this AlarmNotifyConfig.
 
         异常告警是否通知用户。
 
@@ -81,7 +81,7 @@ class AlarmNotifyConfig:
 
     @alarm_to_user.setter
     def alarm_to_user(self, alarm_to_user):
-        """Sets the alarm_to_user of this AlarmNotifyConfig.
+        r"""Sets the alarm_to_user of this AlarmNotifyConfig.
 
         异常告警是否通知用户。
 
@@ -92,7 +92,7 @@ class AlarmNotifyConfig:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this AlarmNotifyConfig.
+        r"""Gets the topic_urn of this AlarmNotifyConfig.
 
         SMN主题URN。
 
@@ -103,7 +103,7 @@ class AlarmNotifyConfig:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this AlarmNotifyConfig.
+        r"""Sets the topic_urn of this AlarmNotifyConfig.
 
         SMN主题URN。
 
@@ -114,7 +114,7 @@ class AlarmNotifyConfig:
 
     @property
     def delay_time(self):
-        """Gets the delay_time of this AlarmNotifyConfig.
+        r"""Gets the delay_time of this AlarmNotifyConfig.
 
         时延阈值(单位为s)。取值： - 最小值：1 - 最大值：3600 - 缺省值：0 - 说明： 1.源数据库和目标数据库之间的同步有时会存在一个时间差，称为时延，单位为秒。 2.时延阈值设置是指时延超过一定的值并持续6分钟后，DRS可以发送通知给指定收件人。（初次进入增量迁移阶段，会有较多数据等待同步，存在较大的时延，属于正常情况，不在此功能的监控范围之内。） 3.只有全量+增量的任务支持此选项。
 
@@ -125,7 +125,7 @@ class AlarmNotifyConfig:
 
     @delay_time.setter
     def delay_time(self, delay_time):
-        """Sets the delay_time of this AlarmNotifyConfig.
+        r"""Sets the delay_time of this AlarmNotifyConfig.
 
         时延阈值(单位为s)。取值： - 最小值：1 - 最大值：3600 - 缺省值：0 - 说明： 1.源数据库和目标数据库之间的同步有时会存在一个时间差，称为时延，单位为秒。 2.时延阈值设置是指时延超过一定的值并持续6分钟后，DRS可以发送通知给指定收件人。（初次进入增量迁移阶段，会有较多数据等待同步，存在较大的时延，属于正常情况，不在此功能的监控范围之内。） 3.只有全量+增量的任务支持此选项。
 
@@ -136,7 +136,7 @@ class AlarmNotifyConfig:
 
     @property
     def rpo_delay(self):
-        """Gets the rpo_delay of this AlarmNotifyConfig.
+        r"""Gets the rpo_delay of this AlarmNotifyConfig.
 
         RPO时延阈值(单位为s)。取值： - 最小值：1 - 最大值：3600 - 缺省值：0 - 说明： RPO时延阈值设置是业务数据库与DRS实例间同步的时延超过一定的值并持续6分钟后，DRS可以发送通知给指定收件人。（初次进入增量灾备阶段，会有较多数据等待同步，存在较大的时延，属于正常情况，不在此功能的监控范围之内。）
 
@@ -147,7 +147,7 @@ class AlarmNotifyConfig:
 
     @rpo_delay.setter
     def rpo_delay(self, rpo_delay):
-        """Sets the rpo_delay of this AlarmNotifyConfig.
+        r"""Sets the rpo_delay of this AlarmNotifyConfig.
 
         RPO时延阈值(单位为s)。取值： - 最小值：1 - 最大值：3600 - 缺省值：0 - 说明： RPO时延阈值设置是业务数据库与DRS实例间同步的时延超过一定的值并持续6分钟后，DRS可以发送通知给指定收件人。（初次进入增量灾备阶段，会有较多数据等待同步，存在较大的时延，属于正常情况，不在此功能的监控范围之内。）
 
@@ -158,7 +158,7 @@ class AlarmNotifyConfig:
 
     @property
     def rto_delay(self):
-        """Gets the rto_delay of this AlarmNotifyConfig.
+        r"""Gets the rto_delay of this AlarmNotifyConfig.
 
         RTO时延阈值(s)。取值： - 最小值：1 - 最大值：3600 - 缺省值：0 - 说明： RTO时延阈值设置是DRS实例与灾备数据库间同步的时延超过一定的值并持续6分钟后，DRS可以发送通知给指定收件人。
 
@@ -169,7 +169,7 @@ class AlarmNotifyConfig:
 
     @rto_delay.setter
     def rto_delay(self, rto_delay):
-        """Sets the rto_delay of this AlarmNotifyConfig.
+        r"""Sets the rto_delay of this AlarmNotifyConfig.
 
         RTO时延阈值(s)。取值： - 最小值：1 - 最大值：3600 - 缺省值：0 - 说明： RTO时延阈值设置是DRS实例与灾备数据库间同步的时延超过一定的值并持续6分钟后，DRS可以发送通知给指定收件人。
 

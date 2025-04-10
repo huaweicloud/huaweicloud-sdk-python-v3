@@ -26,7 +26,7 @@ class SearchAtomicIndexesResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """SearchAtomicIndexesResponse
+        r"""SearchAtomicIndexesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SearchAtomicIndexesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchAtomicIndexesResponse.
+        r"""Gets the data of this SearchAtomicIndexesResponse.
 
         :return: The data of this SearchAtomicIndexesResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AtomicIndexVOSearchResultData`
@@ -53,7 +53,7 @@ class SearchAtomicIndexesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchAtomicIndexesResponse.
+        r"""Sets the data of this SearchAtomicIndexesResponse.
 
         :param data: The data of this SearchAtomicIndexesResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.AtomicIndexVOSearchResultData`

@@ -25,7 +25,7 @@ class BatchDeleteMembersV4RequestBody:
     }
 
     def __init__(self, user_ids=None):
-        """BatchDeleteMembersV4RequestBody
+        r"""BatchDeleteMembersV4RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteMembersV4RequestBody:
 
     @property
     def user_ids(self):
-        """Gets the user_ids of this BatchDeleteMembersV4RequestBody.
+        r"""Gets the user_ids of this BatchDeleteMembersV4RequestBody.
 
         用户id
 
@@ -53,7 +53,7 @@ class BatchDeleteMembersV4RequestBody:
 
     @user_ids.setter
     def user_ids(self, user_ids):
-        """Sets the user_ids of this BatchDeleteMembersV4RequestBody.
+        r"""Sets the user_ids of this BatchDeleteMembersV4RequestBody.
 
         用户id
 

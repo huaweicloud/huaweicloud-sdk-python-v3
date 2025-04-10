@@ -25,7 +25,7 @@ class ResetLoginMethodRequest:
     }
 
     def __init__(self, server_id=None):
-        """ResetLoginMethodRequest
+        r"""ResetLoginMethodRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResetLoginMethodRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ResetLoginMethodRequest.
+        r"""Gets the server_id of this ResetLoginMethodRequest.
 
         堡垒机实例ID，使用UUID格式。
 
@@ -53,7 +53,7 @@ class ResetLoginMethodRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ResetLoginMethodRequest.
+        r"""Sets the server_id of this ResetLoginMethodRequest.
 
         堡垒机实例ID，使用UUID格式。
 

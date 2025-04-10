@@ -26,7 +26,7 @@ class ShowConcurrencyPackageUsingResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowConcurrencyPackageUsingResponse
+        r"""ShowConcurrencyPackageUsingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowConcurrencyPackageUsingResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowConcurrencyPackageUsingResponse.
+        r"""Gets the body of this ShowConcurrencyPackageUsingResponse.
 
         :return: The body of this ShowConcurrencyPackageUsingResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ShowConcurrencyPackageUsingResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowConcurrencyPackageUsingResponse.
+        r"""Sets the body of this ShowConcurrencyPackageUsingResponse.
 
         :param body: The body of this ShowConcurrencyPackageUsingResponse.
         :type body: str

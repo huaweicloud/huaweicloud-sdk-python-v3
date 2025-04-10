@@ -29,7 +29,7 @@ class SetSensitiveSlowLogRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, status=None):
-        """SetSensitiveSlowLogRequest
+        r"""SetSensitiveSlowLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SetSensitiveSlowLogRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetSensitiveSlowLogRequest.
+        r"""Gets the x_language of this SetSensitiveSlowLogRequest.
 
         语言
 
@@ -66,7 +66,7 @@ class SetSensitiveSlowLogRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetSensitiveSlowLogRequest.
+        r"""Sets the x_language of this SetSensitiveSlowLogRequest.
 
         语言
 
@@ -77,7 +77,7 @@ class SetSensitiveSlowLogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetSensitiveSlowLogRequest.
+        r"""Gets the instance_id of this SetSensitiveSlowLogRequest.
 
         实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -88,7 +88,7 @@ class SetSensitiveSlowLogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetSensitiveSlowLogRequest.
+        r"""Sets the instance_id of this SetSensitiveSlowLogRequest.
 
         实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -99,7 +99,7 @@ class SetSensitiveSlowLogRequest:
 
     @property
     def status(self):
-        """Gets the status of this SetSensitiveSlowLogRequest.
+        r"""Gets the status of this SetSensitiveSlowLogRequest.
 
         开启或关闭慢日志敏感信息明文，取值为on或off。
 
@@ -110,7 +110,7 @@ class SetSensitiveSlowLogRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SetSensitiveSlowLogRequest.
+        r"""Sets the status of this SetSensitiveSlowLogRequest.
 
         开启或关闭慢日志敏感信息明文，取值为on或off。
 

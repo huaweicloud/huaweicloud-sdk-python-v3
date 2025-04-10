@@ -27,7 +27,7 @@ class NeutronUpdateFirewallRuleRequest:
     }
 
     def __init__(self, firewall_rule_id=None, body=None):
-        """NeutronUpdateFirewallRuleRequest
+        r"""NeutronUpdateFirewallRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NeutronUpdateFirewallRuleRequest:
 
     @property
     def firewall_rule_id(self):
-        """Gets the firewall_rule_id of this NeutronUpdateFirewallRuleRequest.
+        r"""Gets the firewall_rule_id of this NeutronUpdateFirewallRuleRequest.
 
         网络ACL防火墙规则ID
 
@@ -60,7 +60,7 @@ class NeutronUpdateFirewallRuleRequest:
 
     @firewall_rule_id.setter
     def firewall_rule_id(self, firewall_rule_id):
-        """Sets the firewall_rule_id of this NeutronUpdateFirewallRuleRequest.
+        r"""Sets the firewall_rule_id of this NeutronUpdateFirewallRuleRequest.
 
         网络ACL防火墙规则ID
 
@@ -71,7 +71,7 @@ class NeutronUpdateFirewallRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this NeutronUpdateFirewallRuleRequest.
+        r"""Gets the body of this NeutronUpdateFirewallRuleRequest.
 
         :return: The body of this NeutronUpdateFirewallRuleRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallRuleRequestBody`
@@ -80,7 +80,7 @@ class NeutronUpdateFirewallRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this NeutronUpdateFirewallRuleRequest.
+        r"""Sets the body of this NeutronUpdateFirewallRuleRequest.
 
         :param body: The body of this NeutronUpdateFirewallRuleRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallRuleRequestBody`

@@ -28,7 +28,7 @@ class ListNoticeConfigsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListNoticeConfigsResponse
+        r"""ListNoticeConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListNoticeConfigsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListNoticeConfigsResponse.
+        r"""Gets the total of this ListNoticeConfigsResponse.
 
         配置的告警通知总数量
 
@@ -62,7 +62,7 @@ class ListNoticeConfigsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListNoticeConfigsResponse.
+        r"""Sets the total of this ListNoticeConfigsResponse.
 
         配置的告警通知总数量
 
@@ -73,7 +73,7 @@ class ListNoticeConfigsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListNoticeConfigsResponse.
+        r"""Gets the items of this ListNoticeConfigsResponse.
 
         配置的告警通知
 
@@ -84,7 +84,7 @@ class ListNoticeConfigsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListNoticeConfigsResponse.
+        r"""Sets the items of this ListNoticeConfigsResponse.
 
         配置的告警通知
 

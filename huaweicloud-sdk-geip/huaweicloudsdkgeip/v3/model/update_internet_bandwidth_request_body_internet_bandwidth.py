@@ -33,7 +33,7 @@ class UpdateInternetBandwidthRequestBodyInternetBandwidth:
     }
 
     def __init__(self, name=None, description=None, size=None, charge_mode=None, ingress_size=None):
-        """UpdateInternetBandwidthRequestBodyInternetBandwidth
+        r"""UpdateInternetBandwidthRequestBodyInternetBandwidth
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def name(self):
-        """Gets the name of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the name of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
 
         - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -82,7 +82,7 @@ class UpdateInternetBandwidthRequestBodyInternetBandwidth:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the name of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
 
         - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -93,7 +93,7 @@ class UpdateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def description(self):
-        """Gets the description of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the description of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -104,7 +104,7 @@ class UpdateInternetBandwidthRequestBodyInternetBandwidth:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the description of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -115,7 +115,7 @@ class UpdateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def size(self):
-        """Gets the size of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the size of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
 
         全域公网带宽大小（出云方向）
 
@@ -126,7 +126,7 @@ class UpdateInternetBandwidthRequestBodyInternetBandwidth:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the size of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
 
         全域公网带宽大小（出云方向）
 
@@ -137,7 +137,7 @@ class UpdateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the charge_mode of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
 
         计费模式
 
@@ -148,7 +148,7 @@ class UpdateInternetBandwidthRequestBodyInternetBandwidth:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the charge_mode of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
 
         计费模式
 
@@ -159,7 +159,7 @@ class UpdateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def ingress_size(self):
-        """Gets the ingress_size of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the ingress_size of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
 
         全域公网带宽大小（入云方向）
 
@@ -170,7 +170,7 @@ class UpdateInternetBandwidthRequestBodyInternetBandwidth:
 
     @ingress_size.setter
     def ingress_size(self, ingress_size):
-        """Sets the ingress_size of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the ingress_size of this UpdateInternetBandwidthRequestBodyInternetBandwidth.
 
         全域公网带宽大小（入云方向）
 

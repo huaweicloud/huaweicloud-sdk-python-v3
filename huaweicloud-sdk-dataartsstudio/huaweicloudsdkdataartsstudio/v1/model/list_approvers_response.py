@@ -26,7 +26,7 @@ class ListApproversResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListApproversResponse
+        r"""ListApproversResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListApproversResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListApproversResponse.
+        r"""Gets the data of this ListApproversResponse.
 
         :return: The data of this ListApproversResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListApproversResultData`
@@ -53,7 +53,7 @@ class ListApproversResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListApproversResponse.
+        r"""Sets the data of this ListApproversResponse.
 
         :param data: The data of this ListApproversResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListApproversResultData`

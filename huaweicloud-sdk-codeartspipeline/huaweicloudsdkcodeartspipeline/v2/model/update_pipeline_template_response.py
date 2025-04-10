@@ -26,7 +26,7 @@ class UpdatePipelineTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None):
-        """UpdatePipelineTemplateResponse
+        r"""UpdatePipelineTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdatePipelineTemplateResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this UpdatePipelineTemplateResponse.
+        r"""Gets the template_id of this UpdatePipelineTemplateResponse.
 
         :return: The template_id of this UpdatePipelineTemplateResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdatePipelineTemplateResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this UpdatePipelineTemplateResponse.
+        r"""Sets the template_id of this UpdatePipelineTemplateResponse.
 
         :param template_id: The template_id of this UpdatePipelineTemplateResponse.
         :type template_id: str

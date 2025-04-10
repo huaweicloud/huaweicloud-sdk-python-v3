@@ -27,7 +27,7 @@ class SendDesktopPoolNotificationsRequest:
     }
 
     def __init__(self, pool_id=None, body=None):
-        """SendDesktopPoolNotificationsRequest
+        r"""SendDesktopPoolNotificationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SendDesktopPoolNotificationsRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this SendDesktopPoolNotificationsRequest.
+        r"""Gets the pool_id of this SendDesktopPoolNotificationsRequest.
 
         桌面池ID。
 
@@ -60,7 +60,7 @@ class SendDesktopPoolNotificationsRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this SendDesktopPoolNotificationsRequest.
+        r"""Sets the pool_id of this SendDesktopPoolNotificationsRequest.
 
         桌面池ID。
 
@@ -71,7 +71,7 @@ class SendDesktopPoolNotificationsRequest:
 
     @property
     def body(self):
-        """Gets the body of this SendDesktopPoolNotificationsRequest.
+        r"""Gets the body of this SendDesktopPoolNotificationsRequest.
 
         :return: The body of this SendDesktopPoolNotificationsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.SendDesktopPoolNotificationsReq`
@@ -80,7 +80,7 @@ class SendDesktopPoolNotificationsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SendDesktopPoolNotificationsRequest.
+        r"""Sets the body of this SendDesktopPoolNotificationsRequest.
 
         :param body: The body of this SendDesktopPoolNotificationsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.SendDesktopPoolNotificationsReq`

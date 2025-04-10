@@ -27,7 +27,7 @@ class DeleteAccessClientRequest:
     }
 
     def __init__(self, instance_id=None, client_id=None):
-        """DeleteAccessClientRequest
+        r"""DeleteAccessClientRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteAccessClientRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteAccessClientRequest.
+        r"""Gets the instance_id of this DeleteAccessClientRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -59,7 +59,7 @@ class DeleteAccessClientRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteAccessClientRequest.
+        r"""Sets the instance_id of this DeleteAccessClientRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -70,7 +70,7 @@ class DeleteAccessClientRequest:
 
     @property
     def client_id(self):
-        """Gets the client_id of this DeleteAccessClientRequest.
+        r"""Gets the client_id of this DeleteAccessClientRequest.
 
         客户端ID。创建客户端时自动生成。
 
@@ -81,7 +81,7 @@ class DeleteAccessClientRequest:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this DeleteAccessClientRequest.
+        r"""Sets the client_id of this DeleteAccessClientRequest.
 
         客户端ID。创建客户端时自动生成。
 

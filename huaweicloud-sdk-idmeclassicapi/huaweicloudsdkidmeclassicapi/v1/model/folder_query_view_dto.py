@@ -57,7 +57,7 @@ class FolderQueryViewDTO:
     }
 
     def __init__(self, business_code=None, class_name=None, create_time=None, creator=None, description=None, description_en=None, disable_flag=None, ext_attr_map=None, ext_attrs=None, id=None, last_update_time=None, modifier=None, name=None, name_en=None, rdm_extension_type=None, tenant=None, type=None):
-        """FolderQueryViewDTO
+        r"""FolderQueryViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -153,7 +153,7 @@ class FolderQueryViewDTO:
 
     @property
     def business_code(self):
-        """Gets the business_code of this FolderQueryViewDTO.
+        r"""Gets the business_code of this FolderQueryViewDTO.
 
         **参数解释：**  编码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -164,7 +164,7 @@ class FolderQueryViewDTO:
 
     @business_code.setter
     def business_code(self, business_code):
-        """Sets the business_code of this FolderQueryViewDTO.
+        r"""Sets the business_code of this FolderQueryViewDTO.
 
         **参数解释：**  编码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -175,7 +175,7 @@ class FolderQueryViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this FolderQueryViewDTO.
+        r"""Gets the class_name of this FolderQueryViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -186,7 +186,7 @@ class FolderQueryViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this FolderQueryViewDTO.
+        r"""Sets the class_name of this FolderQueryViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -197,7 +197,7 @@ class FolderQueryViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this FolderQueryViewDTO.
+        r"""Gets the create_time of this FolderQueryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -208,7 +208,7 @@ class FolderQueryViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this FolderQueryViewDTO.
+        r"""Sets the create_time of this FolderQueryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -219,7 +219,7 @@ class FolderQueryViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this FolderQueryViewDTO.
+        r"""Gets the creator of this FolderQueryViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -230,7 +230,7 @@ class FolderQueryViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this FolderQueryViewDTO.
+        r"""Sets the creator of this FolderQueryViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -241,7 +241,7 @@ class FolderQueryViewDTO:
 
     @property
     def description(self):
-        """Gets the description of this FolderQueryViewDTO.
+        r"""Gets the description of this FolderQueryViewDTO.
 
         **参数解释：**  中文描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -252,7 +252,7 @@ class FolderQueryViewDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FolderQueryViewDTO.
+        r"""Sets the description of this FolderQueryViewDTO.
 
         **参数解释：**  中文描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -263,7 +263,7 @@ class FolderQueryViewDTO:
 
     @property
     def description_en(self):
-        """Gets the description_en of this FolderQueryViewDTO.
+        r"""Gets the description_en of this FolderQueryViewDTO.
 
         **参数解释：**  英文描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -274,7 +274,7 @@ class FolderQueryViewDTO:
 
     @description_en.setter
     def description_en(self, description_en):
-        """Sets the description_en of this FolderQueryViewDTO.
+        r"""Sets the description_en of this FolderQueryViewDTO.
 
         **参数解释：**  英文描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -285,7 +285,7 @@ class FolderQueryViewDTO:
 
     @property
     def disable_flag(self):
-        """Gets the disable_flag of this FolderQueryViewDTO.
+        r"""Gets the disable_flag of this FolderQueryViewDTO.
 
         **参数解释：**  失效标识。  **取值范围：**  - true：失效。  - false：未失效。  **默认取值：**  false。 
 
@@ -296,7 +296,7 @@ class FolderQueryViewDTO:
 
     @disable_flag.setter
     def disable_flag(self, disable_flag):
-        """Sets the disable_flag of this FolderQueryViewDTO.
+        r"""Sets the disable_flag of this FolderQueryViewDTO.
 
         **参数解释：**  失效标识。  **取值范围：**  - true：失效。  - false：未失效。  **默认取值：**  false。 
 
@@ -307,7 +307,7 @@ class FolderQueryViewDTO:
 
     @property
     def ext_attr_map(self):
-        """Gets the ext_attr_map of this FolderQueryViewDTO.
+        r"""Gets the ext_attr_map of this FolderQueryViewDTO.
 
         **参数解释：**  扩展属性映射集。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -318,7 +318,7 @@ class FolderQueryViewDTO:
 
     @ext_attr_map.setter
     def ext_attr_map(self, ext_attr_map):
-        """Sets the ext_attr_map of this FolderQueryViewDTO.
+        r"""Sets the ext_attr_map of this FolderQueryViewDTO.
 
         **参数解释：**  扩展属性映射集。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -329,7 +329,7 @@ class FolderQueryViewDTO:
 
     @property
     def ext_attrs(self):
-        """Gets the ext_attrs of this FolderQueryViewDTO.
+        r"""Gets the ext_attrs of this FolderQueryViewDTO.
 
         **参数解释：**  扩展属性列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -340,7 +340,7 @@ class FolderQueryViewDTO:
 
     @ext_attrs.setter
     def ext_attrs(self, ext_attrs):
-        """Sets the ext_attrs of this FolderQueryViewDTO.
+        r"""Sets the ext_attrs of this FolderQueryViewDTO.
 
         **参数解释：**  扩展属性列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -351,7 +351,7 @@ class FolderQueryViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this FolderQueryViewDTO.
+        r"""Gets the id of this FolderQueryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -362,7 +362,7 @@ class FolderQueryViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FolderQueryViewDTO.
+        r"""Sets the id of this FolderQueryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -373,7 +373,7 @@ class FolderQueryViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this FolderQueryViewDTO.
+        r"""Gets the last_update_time of this FolderQueryViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -384,7 +384,7 @@ class FolderQueryViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this FolderQueryViewDTO.
+        r"""Sets the last_update_time of this FolderQueryViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -395,7 +395,7 @@ class FolderQueryViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this FolderQueryViewDTO.
+        r"""Gets the modifier of this FolderQueryViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -406,7 +406,7 @@ class FolderQueryViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this FolderQueryViewDTO.
+        r"""Sets the modifier of this FolderQueryViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -417,7 +417,7 @@ class FolderQueryViewDTO:
 
     @property
     def name(self):
-        """Gets the name of this FolderQueryViewDTO.
+        r"""Gets the name of this FolderQueryViewDTO.
 
         **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -428,7 +428,7 @@ class FolderQueryViewDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FolderQueryViewDTO.
+        r"""Sets the name of this FolderQueryViewDTO.
 
         **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -439,7 +439,7 @@ class FolderQueryViewDTO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this FolderQueryViewDTO.
+        r"""Gets the name_en of this FolderQueryViewDTO.
 
         **参数解释：**  英文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -450,7 +450,7 @@ class FolderQueryViewDTO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this FolderQueryViewDTO.
+        r"""Sets the name_en of this FolderQueryViewDTO.
 
         **参数解释：**  英文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -461,7 +461,7 @@ class FolderQueryViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this FolderQueryViewDTO.
+        r"""Gets the rdm_extension_type of this FolderQueryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -472,7 +472,7 @@ class FolderQueryViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this FolderQueryViewDTO.
+        r"""Sets the rdm_extension_type of this FolderQueryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -483,7 +483,7 @@ class FolderQueryViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this FolderQueryViewDTO.
+        r"""Gets the tenant of this FolderQueryViewDTO.
 
         :return: The tenant of this FolderQueryViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantQueryViewDTO`
@@ -492,7 +492,7 @@ class FolderQueryViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this FolderQueryViewDTO.
+        r"""Sets the tenant of this FolderQueryViewDTO.
 
         :param tenant: The tenant of this FolderQueryViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantQueryViewDTO`
@@ -501,7 +501,7 @@ class FolderQueryViewDTO:
 
     @property
     def type(self):
-        """Gets the type of this FolderQueryViewDTO.
+        r"""Gets the type of this FolderQueryViewDTO.
 
         **参数解释：**  类别。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -512,7 +512,7 @@ class FolderQueryViewDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this FolderQueryViewDTO.
+        r"""Sets the type of this FolderQueryViewDTO.
 
         **参数解释：**  类别。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

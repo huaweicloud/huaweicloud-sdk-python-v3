@@ -24,7 +24,7 @@ class UpdateTemplateMetadataResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateTemplateMetadataResponse
+        r"""UpdateTemplateMetadataResponse
 
         The model defined in huaweicloud sdk
 

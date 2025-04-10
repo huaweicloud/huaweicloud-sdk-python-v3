@@ -29,7 +29,7 @@ class OnError:
     }
 
     def __init__(self, error=None, transition=None, retry_ref=None):
-        """OnError
+        r"""OnError
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class OnError:
 
     @property
     def error(self):
-        """Gets the error of this OnError.
+        r"""Gets the error of this OnError.
 
         错误匹配表达式，用来过滤需要处理的异常
 
@@ -68,7 +68,7 @@ class OnError:
 
     @error.setter
     def error(self, error):
-        """Sets the error of this OnError.
+        r"""Sets the error of this OnError.
 
         错误匹配表达式，用来过滤需要处理的异常
 
@@ -79,7 +79,7 @@ class OnError:
 
     @property
     def transition(self):
-        """Gets the transition of this OnError.
+        r"""Gets the transition of this OnError.
 
         下一步骤节点ID
 
@@ -90,7 +90,7 @@ class OnError:
 
     @transition.setter
     def transition(self, transition):
-        """Sets the transition of this OnError.
+        r"""Sets the transition of this OnError.
 
         下一步骤节点ID
 
@@ -101,7 +101,7 @@ class OnError:
 
     @property
     def retry_ref(self):
-        """Gets the retry_ref of this OnError.
+        r"""Gets the retry_ref of this OnError.
 
         重试策略名称
 
@@ -112,7 +112,7 @@ class OnError:
 
     @retry_ref.setter
     def retry_ref(self, retry_ref):
-        """Sets the retry_ref of this OnError.
+        r"""Sets the retry_ref of this OnError.
 
         重试策略名称
 

@@ -31,7 +31,7 @@ class FindingDetails:
     }
 
     def __init__(self, external_access_details=None, unused_iam_user_access_key_details=None, unused_iam_user_password_details=None, unused_permission_details=None):
-        """FindingDetails
+        r"""FindingDetails
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class FindingDetails:
 
     @property
     def external_access_details(self):
-        """Gets the external_access_details of this FindingDetails.
+        r"""Gets the external_access_details of this FindingDetails.
 
         :return: The external_access_details of this FindingDetails.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ExternalAccessDetails`
@@ -73,7 +73,7 @@ class FindingDetails:
 
     @external_access_details.setter
     def external_access_details(self, external_access_details):
-        """Sets the external_access_details of this FindingDetails.
+        r"""Sets the external_access_details of this FindingDetails.
 
         :param external_access_details: The external_access_details of this FindingDetails.
         :type external_access_details: :class:`huaweicloudsdkiamaccessanalyzer.v1.ExternalAccessDetails`
@@ -82,7 +82,7 @@ class FindingDetails:
 
     @property
     def unused_iam_user_access_key_details(self):
-        """Gets the unused_iam_user_access_key_details of this FindingDetails.
+        r"""Gets the unused_iam_user_access_key_details of this FindingDetails.
 
         :return: The unused_iam_user_access_key_details of this FindingDetails.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedIamUserAccessKeyDetails`
@@ -91,7 +91,7 @@ class FindingDetails:
 
     @unused_iam_user_access_key_details.setter
     def unused_iam_user_access_key_details(self, unused_iam_user_access_key_details):
-        """Sets the unused_iam_user_access_key_details of this FindingDetails.
+        r"""Sets the unused_iam_user_access_key_details of this FindingDetails.
 
         :param unused_iam_user_access_key_details: The unused_iam_user_access_key_details of this FindingDetails.
         :type unused_iam_user_access_key_details: :class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedIamUserAccessKeyDetails`
@@ -100,7 +100,7 @@ class FindingDetails:
 
     @property
     def unused_iam_user_password_details(self):
-        """Gets the unused_iam_user_password_details of this FindingDetails.
+        r"""Gets the unused_iam_user_password_details of this FindingDetails.
 
         :return: The unused_iam_user_password_details of this FindingDetails.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedIamUserPasswordDetails`
@@ -109,7 +109,7 @@ class FindingDetails:
 
     @unused_iam_user_password_details.setter
     def unused_iam_user_password_details(self, unused_iam_user_password_details):
-        """Sets the unused_iam_user_password_details of this FindingDetails.
+        r"""Sets the unused_iam_user_password_details of this FindingDetails.
 
         :param unused_iam_user_password_details: The unused_iam_user_password_details of this FindingDetails.
         :type unused_iam_user_password_details: :class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedIamUserPasswordDetails`
@@ -118,7 +118,7 @@ class FindingDetails:
 
     @property
     def unused_permission_details(self):
-        """Gets the unused_permission_details of this FindingDetails.
+        r"""Gets the unused_permission_details of this FindingDetails.
 
         :return: The unused_permission_details of this FindingDetails.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedPermissionDetails`
@@ -127,7 +127,7 @@ class FindingDetails:
 
     @unused_permission_details.setter
     def unused_permission_details(self, unused_permission_details):
-        """Sets the unused_permission_details of this FindingDetails.
+        r"""Sets the unused_permission_details of this FindingDetails.
 
         :param unused_permission_details: The unused_permission_details of this FindingDetails.
         :type unused_permission_details: :class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedPermissionDetails`

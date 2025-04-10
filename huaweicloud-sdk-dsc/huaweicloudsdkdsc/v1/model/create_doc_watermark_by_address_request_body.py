@@ -51,7 +51,7 @@ class CreateDocWatermarkByAddressRequestBody:
     }
 
     def __init__(self, region_id=None, src_file=None, doc_type=None, dst_file=None, blind_watermark=None, visible_watermark=None, image_mark=None, visible_type=None, file_password=None, marked_file_password=None, readonly_password=None, front=None, rotation=None, opacity=None):
-        """CreateDocWatermarkByAddressRequestBody
+        r"""CreateDocWatermarkByAddressRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -131,7 +131,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateDocWatermarkByAddressRequestBody.
+        r"""Gets the region_id of this CreateDocWatermarkByAddressRequestBody.
 
         项目所在region的id，如：xx-xx-1。
 
@@ -142,7 +142,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateDocWatermarkByAddressRequestBody.
+        r"""Sets the region_id of this CreateDocWatermarkByAddressRequestBody.
 
         项目所在region的id，如：xx-xx-1。
 
@@ -153,7 +153,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @property
     def src_file(self):
-        """Gets the src_file of this CreateDocWatermarkByAddressRequestBody.
+        r"""Gets the src_file of this CreateDocWatermarkByAddressRequestBody.
 
         待添加水印的文档地址，当前只支持华为云OBS对象，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
 
@@ -164,7 +164,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @src_file.setter
     def src_file(self, src_file):
-        """Sets the src_file of this CreateDocWatermarkByAddressRequestBody.
+        r"""Sets the src_file of this CreateDocWatermarkByAddressRequestBody.
 
         待添加水印的文档地址，当前只支持华为云OBS对象，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
 
@@ -175,7 +175,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @property
     def doc_type(self):
-        """Gets the doc_type of this CreateDocWatermarkByAddressRequestBody.
+        r"""Gets the doc_type of this CreateDocWatermarkByAddressRequestBody.
 
         待嵌入水印的文档类型。
 
@@ -186,7 +186,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @doc_type.setter
     def doc_type(self, doc_type):
-        """Sets the doc_type of this CreateDocWatermarkByAddressRequestBody.
+        r"""Sets the doc_type of this CreateDocWatermarkByAddressRequestBody.
 
         待嵌入水印的文档类型。
 
@@ -197,7 +197,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @property
     def dst_file(self):
-        """Gets the dst_file of this CreateDocWatermarkByAddressRequestBody.
+        r"""Gets the dst_file of this CreateDocWatermarkByAddressRequestBody.
 
         添加水印后的文档存放地址，格式和要求同src_file字段，不设置时，默认取src_file的值，即添加水印后覆盖原文件。
 
@@ -208,7 +208,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @dst_file.setter
     def dst_file(self, dst_file):
-        """Sets the dst_file of this CreateDocWatermarkByAddressRequestBody.
+        r"""Sets the dst_file of this CreateDocWatermarkByAddressRequestBody.
 
         添加水印后的文档存放地址，格式和要求同src_file字段，不设置时，默认取src_file的值，即添加水印后覆盖原文件。
 
@@ -219,7 +219,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @property
     def blind_watermark(self):
-        """Gets the blind_watermark of this CreateDocWatermarkByAddressRequestBody.
+        r"""Gets the blind_watermark of this CreateDocWatermarkByAddressRequestBody.
 
         暗文字水印内容，与“visible_watermark”字段至少有一个不为空
 
@@ -230,7 +230,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @blind_watermark.setter
     def blind_watermark(self, blind_watermark):
-        """Sets the blind_watermark of this CreateDocWatermarkByAddressRequestBody.
+        r"""Sets the blind_watermark of this CreateDocWatermarkByAddressRequestBody.
 
         暗文字水印内容，与“visible_watermark”字段至少有一个不为空
 
@@ -241,7 +241,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @property
     def visible_watermark(self):
-        """Gets the visible_watermark of this CreateDocWatermarkByAddressRequestBody.
+        r"""Gets the visible_watermark of this CreateDocWatermarkByAddressRequestBody.
 
         明文字水印内容，与暗水印“blind_watermark”字段至少有一个不为空。
 
@@ -252,7 +252,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @visible_watermark.setter
     def visible_watermark(self, visible_watermark):
-        """Sets the visible_watermark of this CreateDocWatermarkByAddressRequestBody.
+        r"""Sets the visible_watermark of this CreateDocWatermarkByAddressRequestBody.
 
         明文字水印内容，与暗水印“blind_watermark”字段至少有一个不为空。
 
@@ -263,7 +263,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @property
     def image_mark(self):
-        """Gets the image_mark of this CreateDocWatermarkByAddressRequestBody.
+        r"""Gets the image_mark of this CreateDocWatermarkByAddressRequestBody.
 
         待嵌入的图形明水印文件的地址,  字段格式要求同src_file字段，图形文件的格式必须为“png”或“jpg”，否则返回参数错误；图像文件大小不超过1MB
 
@@ -274,7 +274,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @image_mark.setter
     def image_mark(self, image_mark):
-        """Sets the image_mark of this CreateDocWatermarkByAddressRequestBody.
+        r"""Sets the image_mark of this CreateDocWatermarkByAddressRequestBody.
 
         待嵌入的图形明水印文件的地址,  字段格式要求同src_file字段，图形文件的格式必须为“png”或“jpg”，否则返回参数错误；图像文件大小不超过1MB
 
@@ -285,7 +285,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @property
     def visible_type(self):
-        """Gets the visible_type of this CreateDocWatermarkByAddressRequestBody.
+        r"""Gets the visible_type of this CreateDocWatermarkByAddressRequestBody.
 
         该字段控制明水印嵌入文字还是图片。默认为**TEXT**类型，需填写visible_watermark字段设置明文字水印； 当该字段为**IMAGE**时，需填写image_watermark字段设置水印图片地址此时 ，“visible_watermark”，“font_size”，“rotation”和“opacity”字段无效。
 
@@ -296,7 +296,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @visible_type.setter
     def visible_type(self, visible_type):
-        """Sets the visible_type of this CreateDocWatermarkByAddressRequestBody.
+        r"""Sets the visible_type of this CreateDocWatermarkByAddressRequestBody.
 
         该字段控制明水印嵌入文字还是图片。默认为**TEXT**类型，需填写visible_watermark字段设置明文字水印； 当该字段为**IMAGE**时，需填写image_watermark字段设置水印图片地址此时 ，“visible_watermark”，“font_size”，“rotation”和“opacity”字段无效。
 
@@ -307,7 +307,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @property
     def file_password(self):
-        """Gets the file_password of this CreateDocWatermarkByAddressRequestBody.
+        r"""Gets the file_password of this CreateDocWatermarkByAddressRequestBody.
 
         待加水印文件有密码时，读取文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
 
@@ -318,7 +318,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @file_password.setter
     def file_password(self, file_password):
-        """Sets the file_password of this CreateDocWatermarkByAddressRequestBody.
+        r"""Sets the file_password of this CreateDocWatermarkByAddressRequestBody.
 
         待加水印文件有密码时，读取文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
 
@@ -329,7 +329,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @property
     def marked_file_password(self):
-        """Gets the marked_file_password of this CreateDocWatermarkByAddressRequestBody.
+        r"""Gets the marked_file_password of this CreateDocWatermarkByAddressRequestBody.
 
         添加水印后给文件设置密码， 最大支持长度256。默认不加文档密码。
 
@@ -340,7 +340,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @marked_file_password.setter
     def marked_file_password(self, marked_file_password):
-        """Sets the marked_file_password of this CreateDocWatermarkByAddressRequestBody.
+        r"""Sets the marked_file_password of this CreateDocWatermarkByAddressRequestBody.
 
         添加水印后给文件设置密码， 最大支持长度256。默认不加文档密码。
 
@@ -351,7 +351,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @property
     def readonly_password(self):
-        """Gets the readonly_password of this CreateDocWatermarkByAddressRequestBody.
+        r"""Gets the readonly_password of this CreateDocWatermarkByAddressRequestBody.
 
         添加水印后给文件设置只读密码， 最大支持长度256。默认不加只读密码。
 
@@ -362,7 +362,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @readonly_password.setter
     def readonly_password(self, readonly_password):
-        """Sets the readonly_password of this CreateDocWatermarkByAddressRequestBody.
+        r"""Sets the readonly_password of this CreateDocWatermarkByAddressRequestBody.
 
         添加水印后给文件设置只读密码， 最大支持长度256。默认不加只读密码。
 
@@ -373,7 +373,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @property
     def front(self):
-        """Gets the front of this CreateDocWatermarkByAddressRequestBody.
+        r"""Gets the front of this CreateDocWatermarkByAddressRequestBody.
 
         明水印字体大小，取值为[1,100]，默认值50
 
@@ -384,7 +384,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @front.setter
     def front(self, front):
-        """Sets the front of this CreateDocWatermarkByAddressRequestBody.
+        r"""Sets the front of this CreateDocWatermarkByAddressRequestBody.
 
         明水印字体大小，取值为[1,100]，默认值50
 
@@ -395,7 +395,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @property
     def rotation(self):
-        """Gets the rotation of this CreateDocWatermarkByAddressRequestBody.
+        r"""Gets the rotation of this CreateDocWatermarkByAddressRequestBody.
 
         明水印旋转角度，逆时针方向，取值为[0,90]，默认值45。
 
@@ -406,7 +406,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @rotation.setter
     def rotation(self, rotation):
-        """Sets the rotation of this CreateDocWatermarkByAddressRequestBody.
+        r"""Sets the rotation of this CreateDocWatermarkByAddressRequestBody.
 
         明水印旋转角度，逆时针方向，取值为[0,90]，默认值45。
 
@@ -417,7 +417,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @property
     def opacity(self):
-        """Gets the opacity of this CreateDocWatermarkByAddressRequestBody.
+        r"""Gets the opacity of this CreateDocWatermarkByAddressRequestBody.
 
         明水印的透明度，取值[0,1]，默认值为0.3；
 
@@ -428,7 +428,7 @@ class CreateDocWatermarkByAddressRequestBody:
 
     @opacity.setter
     def opacity(self, opacity):
-        """Sets the opacity of this CreateDocWatermarkByAddressRequestBody.
+        r"""Sets the opacity of this CreateDocWatermarkByAddressRequestBody.
 
         明水印的透明度，取值[0,1]，默认值为0.3；
 

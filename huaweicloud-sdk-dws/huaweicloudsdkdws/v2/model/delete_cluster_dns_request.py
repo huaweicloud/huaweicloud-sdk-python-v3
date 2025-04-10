@@ -27,7 +27,7 @@ class DeleteClusterDnsRequest:
     }
 
     def __init__(self, cluster_id=None, type=None):
-        """DeleteClusterDnsRequest
+        r"""DeleteClusterDnsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteClusterDnsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteClusterDnsRequest.
+        r"""Gets the cluster_id of this DeleteClusterDnsRequest.
 
         集群的ID
 
@@ -59,7 +59,7 @@ class DeleteClusterDnsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteClusterDnsRequest.
+        r"""Sets the cluster_id of this DeleteClusterDnsRequest.
 
         集群的ID
 
@@ -70,7 +70,7 @@ class DeleteClusterDnsRequest:
 
     @property
     def type(self):
-        """Gets the type of this DeleteClusterDnsRequest.
+        r"""Gets the type of this DeleteClusterDnsRequest.
 
         域名类型，支持删除公网域名。
 
@@ -81,7 +81,7 @@ class DeleteClusterDnsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DeleteClusterDnsRequest.
+        r"""Sets the type of this DeleteClusterDnsRequest.
 
         域名类型，支持删除公网域名。
 

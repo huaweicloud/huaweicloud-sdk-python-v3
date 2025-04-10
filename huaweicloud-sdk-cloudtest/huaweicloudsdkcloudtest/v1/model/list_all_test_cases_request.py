@@ -27,7 +27,7 @@ class ListAllTestCasesRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ListAllTestCasesRequest
+        r"""ListAllTestCasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListAllTestCasesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListAllTestCasesRequest.
+        r"""Gets the project_id of this ListAllTestCasesRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class ListAllTestCasesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListAllTestCasesRequest.
+        r"""Sets the project_id of this ListAllTestCasesRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class ListAllTestCasesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAllTestCasesRequest.
+        r"""Gets the body of this ListAllTestCasesRequest.
 
         :return: The body of this ListAllTestCasesRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestCasesQueryInfo`
@@ -80,7 +80,7 @@ class ListAllTestCasesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAllTestCasesRequest.
+        r"""Sets the body of this ListAllTestCasesRequest.
 
         :param body: The body of this ListAllTestCasesRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.TestCasesQueryInfo`

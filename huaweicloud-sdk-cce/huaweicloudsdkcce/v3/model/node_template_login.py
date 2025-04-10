@@ -27,7 +27,7 @@ class NodeTemplateLogin:
     }
 
     def __init__(self, ssh_key=None, user_password=None):
-        """NodeTemplateLogin
+        r"""NodeTemplateLogin
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodeTemplateLogin:
 
     @property
     def ssh_key(self):
-        """Gets the ssh_key of this NodeTemplateLogin.
+        r"""Gets the ssh_key of this NodeTemplateLogin.
 
         :return: The ssh_key of this NodeTemplateLogin.
         :rtype: str
@@ -59,7 +59,7 @@ class NodeTemplateLogin:
 
     @ssh_key.setter
     def ssh_key(self, ssh_key):
-        """Sets the ssh_key of this NodeTemplateLogin.
+        r"""Sets the ssh_key of this NodeTemplateLogin.
 
         :param ssh_key: The ssh_key of this NodeTemplateLogin.
         :type ssh_key: str
@@ -68,7 +68,7 @@ class NodeTemplateLogin:
 
     @property
     def user_password(self):
-        """Gets the user_password of this NodeTemplateLogin.
+        r"""Gets the user_password of this NodeTemplateLogin.
 
         :return: The user_password of this NodeTemplateLogin.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeTemplateLoginUserPassword`
@@ -77,7 +77,7 @@ class NodeTemplateLogin:
 
     @user_password.setter
     def user_password(self, user_password):
-        """Sets the user_password of this NodeTemplateLogin.
+        r"""Sets the user_password of this NodeTemplateLogin.
 
         :param user_password: The user_password of this NodeTemplateLogin.
         :type user_password: :class:`huaweicloudsdkcce.v3.NodeTemplateLoginUserPassword`

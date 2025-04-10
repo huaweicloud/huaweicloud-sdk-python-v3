@@ -35,7 +35,7 @@ class CreateGovernancePolicyRequest:
     }
 
     def __init__(self, content_type=None, x_engine_id=None, x_enterprise_project_id=None, x_environment=None, kind=None, body=None):
-        """CreateGovernancePolicyRequest
+        r"""CreateGovernancePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CreateGovernancePolicyRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this CreateGovernancePolicyRequest.
+        r"""Gets the content_type of this CreateGovernancePolicyRequest.
 
         该字段内容填为 \"application/json;charset=UTF-8\"。
 
@@ -85,7 +85,7 @@ class CreateGovernancePolicyRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this CreateGovernancePolicyRequest.
+        r"""Sets the content_type of this CreateGovernancePolicyRequest.
 
         该字段内容填为 \"application/json;charset=UTF-8\"。
 
@@ -96,7 +96,7 @@ class CreateGovernancePolicyRequest:
 
     @property
     def x_engine_id(self):
-        """Gets the x_engine_id of this CreateGovernancePolicyRequest.
+        r"""Gets the x_engine_id of this CreateGovernancePolicyRequest.
 
         微服务引擎的实例ID
 
@@ -107,7 +107,7 @@ class CreateGovernancePolicyRequest:
 
     @x_engine_id.setter
     def x_engine_id(self, x_engine_id):
-        """Sets the x_engine_id of this CreateGovernancePolicyRequest.
+        r"""Sets the x_engine_id of this CreateGovernancePolicyRequest.
 
         微服务引擎的实例ID
 
@@ -118,7 +118,7 @@ class CreateGovernancePolicyRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this CreateGovernancePolicyRequest.
+        r"""Gets the x_enterprise_project_id of this CreateGovernancePolicyRequest.
 
         企业项目ID
 
@@ -129,7 +129,7 @@ class CreateGovernancePolicyRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this CreateGovernancePolicyRequest.
+        r"""Sets the x_enterprise_project_id of this CreateGovernancePolicyRequest.
 
         企业项目ID
 
@@ -140,7 +140,7 @@ class CreateGovernancePolicyRequest:
 
     @property
     def x_environment(self):
-        """Gets the x_environment of this CreateGovernancePolicyRequest.
+        r"""Gets the x_environment of this CreateGovernancePolicyRequest.
 
         所属环境
 
@@ -151,7 +151,7 @@ class CreateGovernancePolicyRequest:
 
     @x_environment.setter
     def x_environment(self, x_environment):
-        """Sets the x_environment of this CreateGovernancePolicyRequest.
+        r"""Sets the x_environment of this CreateGovernancePolicyRequest.
 
         所属环境
 
@@ -162,7 +162,7 @@ class CreateGovernancePolicyRequest:
 
     @property
     def kind(self):
-        """Gets the kind of this CreateGovernancePolicyRequest.
+        r"""Gets the kind of this CreateGovernancePolicyRequest.
 
         治理策略类型
 
@@ -173,7 +173,7 @@ class CreateGovernancePolicyRequest:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateGovernancePolicyRequest.
+        r"""Sets the kind of this CreateGovernancePolicyRequest.
 
         治理策略类型
 
@@ -184,7 +184,7 @@ class CreateGovernancePolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGovernancePolicyRequest.
+        r"""Gets the body of this CreateGovernancePolicyRequest.
 
         :return: The body of this CreateGovernancePolicyRequest.
         :rtype: :class:`huaweicloudsdkcse.v1.CreateGovPolicy`
@@ -193,7 +193,7 @@ class CreateGovernancePolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGovernancePolicyRequest.
+        r"""Sets the body of this CreateGovernancePolicyRequest.
 
         :param body: The body of this CreateGovernancePolicyRequest.
         :type body: :class:`huaweicloudsdkcse.v1.CreateGovPolicy`

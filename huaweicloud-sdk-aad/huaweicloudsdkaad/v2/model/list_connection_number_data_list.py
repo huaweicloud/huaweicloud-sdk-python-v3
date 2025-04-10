@@ -27,7 +27,7 @@ class ListConnectionNumberDataList:
     }
 
     def __init__(self, time=None, value=None):
-        """ListConnectionNumberDataList
+        r"""ListConnectionNumberDataList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListConnectionNumberDataList:
 
     @property
     def time(self):
-        """Gets the time of this ListConnectionNumberDataList.
+        r"""Gets the time of this ListConnectionNumberDataList.
 
         时间戳毫秒值
 
@@ -61,7 +61,7 @@ class ListConnectionNumberDataList:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ListConnectionNumberDataList.
+        r"""Sets the time of this ListConnectionNumberDataList.
 
         时间戳毫秒值
 
@@ -72,7 +72,7 @@ class ListConnectionNumberDataList:
 
     @property
     def value(self):
-        """Gets the value of this ListConnectionNumberDataList.
+        r"""Gets the value of this ListConnectionNumberDataList.
 
         连接数
 
@@ -83,7 +83,7 @@ class ListConnectionNumberDataList:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListConnectionNumberDataList.
+        r"""Sets the value of this ListConnectionNumberDataList.
 
         连接数
 

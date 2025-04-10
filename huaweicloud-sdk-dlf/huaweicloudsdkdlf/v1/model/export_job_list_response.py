@@ -24,7 +24,7 @@ class ExportJobListResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ExportJobListResponse
+        r"""ExportJobListResponse
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class ExecuteCreateVideoRequest:
     }
 
     def __init__(self, body=None):
-        """ExecuteCreateVideoRequest
+        r"""ExecuteCreateVideoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExecuteCreateVideoRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteCreateVideoRequest.
+        r"""Gets the body of this ExecuteCreateVideoRequest.
 
         :return: The body of this ExecuteCreateVideoRequest.
         :rtype: :class:`huaweicloudsdkcbs.v1.CreateVideoReq`
@@ -52,7 +52,7 @@ class ExecuteCreateVideoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteCreateVideoRequest.
+        r"""Sets the body of this ExecuteCreateVideoRequest.
 
         :param body: The body of this ExecuteCreateVideoRequest.
         :type body: :class:`huaweicloudsdkcbs.v1.CreateVideoReq`

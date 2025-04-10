@@ -27,7 +27,7 @@ class RocketMQProductSupportFeaturesEntity:
     }
 
     def __init__(self, name=None, properties=None):
-        """RocketMQProductSupportFeaturesEntity
+        r"""RocketMQProductSupportFeaturesEntity
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RocketMQProductSupportFeaturesEntity:
 
     @property
     def name(self):
-        """Gets the name of this RocketMQProductSupportFeaturesEntity.
+        r"""Gets the name of this RocketMQProductSupportFeaturesEntity.
 
         特性名称。
 
@@ -61,7 +61,7 @@ class RocketMQProductSupportFeaturesEntity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RocketMQProductSupportFeaturesEntity.
+        r"""Sets the name of this RocketMQProductSupportFeaturesEntity.
 
         特性名称。
 
@@ -72,7 +72,7 @@ class RocketMQProductSupportFeaturesEntity:
 
     @property
     def properties(self):
-        """Gets the properties of this RocketMQProductSupportFeaturesEntity.
+        r"""Gets the properties of this RocketMQProductSupportFeaturesEntity.
 
         功能特性的键值对。
 
@@ -83,7 +83,7 @@ class RocketMQProductSupportFeaturesEntity:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this RocketMQProductSupportFeaturesEntity.
+        r"""Sets the properties of this RocketMQProductSupportFeaturesEntity.
 
         功能特性的键值对。
 

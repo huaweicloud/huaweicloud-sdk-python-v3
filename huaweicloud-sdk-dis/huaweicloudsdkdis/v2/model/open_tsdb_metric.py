@@ -27,7 +27,7 @@ class OpenTSDBMetric:
     }
 
     def __init__(self, type=None, value=None):
-        """OpenTSDBMetric
+        r"""OpenTSDBMetric
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OpenTSDBMetric:
 
     @property
     def type(self):
-        """Gets the type of this OpenTSDBMetric.
+        r"""Gets the type of this OpenTSDBMetric.
 
         - Constant表示metric为常量value的值。 - String表示metric为通道内用户数据对应JSON属性的取值，且该JOSN属性的取值为String。
 
@@ -59,7 +59,7 @@ class OpenTSDBMetric:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this OpenTSDBMetric.
+        r"""Sets the type of this OpenTSDBMetric.
 
         - Constant表示metric为常量value的值。 - String表示metric为通道内用户数据对应JSON属性的取值，且该JOSN属性的取值为String。
 
@@ -70,7 +70,7 @@ class OpenTSDBMetric:
 
     @property
     def value(self):
-        """Gets the value of this OpenTSDBMetric.
+        r"""Gets the value of this OpenTSDBMetric.
 
         常量或通道内用户数据的JSON属性名称。  取值范围：1～32，只能包含英文字母、数字和点。
 
@@ -81,7 +81,7 @@ class OpenTSDBMetric:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this OpenTSDBMetric.
+        r"""Sets the value of this OpenTSDBMetric.
 
         常量或通道内用户数据的JSON属性名称。  取值范围：1～32，只能包含英文字母、数字和点。
 

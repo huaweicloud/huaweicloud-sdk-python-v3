@@ -29,7 +29,7 @@ class ClickHouseResizeFlavorRequestBody:
     }
 
     def __init__(self, flavor_ref=None, delay=None, instance_id=None):
-        """ClickHouseResizeFlavorRequestBody
+        r"""ClickHouseResizeFlavorRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ClickHouseResizeFlavorRequestBody:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this ClickHouseResizeFlavorRequestBody.
+        r"""Gets the flavor_ref of this ClickHouseResizeFlavorRequestBody.
 
         规格ID。可通过“查询规格信息”接口获取。  仅允许使用对应数据库，和对应实例类型的规格ID。
 
@@ -66,7 +66,7 @@ class ClickHouseResizeFlavorRequestBody:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this ClickHouseResizeFlavorRequestBody.
+        r"""Sets the flavor_ref of this ClickHouseResizeFlavorRequestBody.
 
         规格ID。可通过“查询规格信息”接口获取。  仅允许使用对应数据库，和对应实例类型的规格ID。
 
@@ -77,7 +77,7 @@ class ClickHouseResizeFlavorRequestBody:
 
     @property
     def delay(self):
-        """Gets the delay of this ClickHouseResizeFlavorRequestBody.
+        r"""Gets the delay of this ClickHouseResizeFlavorRequestBody.
 
         是否延迟变更。默认false。
 
@@ -88,7 +88,7 @@ class ClickHouseResizeFlavorRequestBody:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this ClickHouseResizeFlavorRequestBody.
+        r"""Sets the delay of this ClickHouseResizeFlavorRequestBody.
 
         是否延迟变更。默认false。
 
@@ -99,7 +99,7 @@ class ClickHouseResizeFlavorRequestBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ClickHouseResizeFlavorRequestBody.
+        r"""Gets the instance_id of this ClickHouseResizeFlavorRequestBody.
 
         实例ID，严格匹配UUID规则。
 
@@ -110,7 +110,7 @@ class ClickHouseResizeFlavorRequestBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ClickHouseResizeFlavorRequestBody.
+        r"""Sets the instance_id of this ClickHouseResizeFlavorRequestBody.
 
         实例ID，严格匹配UUID规则。
 

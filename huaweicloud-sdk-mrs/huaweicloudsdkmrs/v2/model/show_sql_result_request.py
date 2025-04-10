@@ -27,7 +27,7 @@ class ShowSqlResultRequest:
     }
 
     def __init__(self, cluster_id=None, sql_id=None):
-        """ShowSqlResultRequest
+        r"""ShowSqlResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowSqlResultRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowSqlResultRequest.
+        r"""Gets the cluster_id of this ShowSqlResultRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -59,7 +59,7 @@ class ShowSqlResultRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowSqlResultRequest.
+        r"""Sets the cluster_id of this ShowSqlResultRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -70,7 +70,7 @@ class ShowSqlResultRequest:
 
     @property
     def sql_id(self):
-        """Gets the sql_id of this ShowSqlResultRequest.
+        r"""Gets the sql_id of this ShowSqlResultRequest.
 
         SQL的执行ID，即提交SQL语句返回结果中的sql_id。
 
@@ -81,7 +81,7 @@ class ShowSqlResultRequest:
 
     @sql_id.setter
     def sql_id(self, sql_id):
-        """Sets the sql_id of this ShowSqlResultRequest.
+        r"""Sets the sql_id of this ShowSqlResultRequest.
 
         SQL的执行ID，即提交SQL语句返回结果中的sql_id。
 

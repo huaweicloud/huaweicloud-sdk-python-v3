@@ -25,7 +25,7 @@ class NovaAttachInterfaceFixedIp:
     }
 
     def __init__(self, ip_address=None):
-        """NovaAttachInterfaceFixedIp
+        r"""NovaAttachInterfaceFixedIp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NovaAttachInterfaceFixedIp:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this NovaAttachInterfaceFixedIp.
+        r"""Gets the ip_address of this NovaAttachInterfaceFixedIp.
 
         IP地址。
 
@@ -54,7 +54,7 @@ class NovaAttachInterfaceFixedIp:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this NovaAttachInterfaceFixedIp.
+        r"""Sets the ip_address of this NovaAttachInterfaceFixedIp.
 
         IP地址。
 

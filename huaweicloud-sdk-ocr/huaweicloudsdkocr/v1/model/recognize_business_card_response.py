@@ -28,7 +28,7 @@ class RecognizeBusinessCardResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeBusinessCardResponse
+        r"""RecognizeBusinessCardResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeBusinessCardResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeBusinessCardResponse.
+        r"""Gets the result of this RecognizeBusinessCardResponse.
 
         :return: The result of this RecognizeBusinessCardResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.BusinessCardResult`
@@ -60,7 +60,7 @@ class RecognizeBusinessCardResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeBusinessCardResponse.
+        r"""Sets the result of this RecognizeBusinessCardResponse.
 
         :param result: The result of this RecognizeBusinessCardResponse.
         :type result: :class:`huaweicloudsdkocr.v1.BusinessCardResult`
@@ -69,7 +69,7 @@ class RecognizeBusinessCardResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeBusinessCardResponse.
+        r"""Gets the x_request_id of this RecognizeBusinessCardResponse.
 
         :return: The x_request_id of this RecognizeBusinessCardResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeBusinessCardResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeBusinessCardResponse.
+        r"""Sets the x_request_id of this RecognizeBusinessCardResponse.
 
         :param x_request_id: The x_request_id of this RecognizeBusinessCardResponse.
         :type x_request_id: str

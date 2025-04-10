@@ -34,7 +34,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return client_builder
 
     def add_group_async(self, request):
-        """批量创建主机组
+        r"""批量创建主机组
 
         批量创建主机组
         
@@ -99,7 +99,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def delete_group_async(self, request):
-        """删除主机组
+        r"""删除主机组
 
         删除主机组
         
@@ -164,7 +164,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def list_groups_async(self, request):
-        """获取主机组列表
+        r"""获取主机组列表
 
         获取主机组列表
         
@@ -231,7 +231,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def list_host_results_async(self, request):
-        """获取主机漏洞扫描结果
+        r"""获取主机漏洞扫描结果
 
         获取主机漏洞扫描结果
         
@@ -302,7 +302,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def batch_start_host_tasks_async(self, request):
-        """批量启动或取消主机扫描任务
+        r"""批量启动或取消主机扫描任务
 
         批量启动或取消主机漏洞扫描任务
         
@@ -367,7 +367,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def batch_create_hosts_async(self, request):
-        """批量创建主机资产
+        r"""批量创建主机资产
 
         批量创建租户的主机资产
         
@@ -432,7 +432,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def delete_host_async(self, request):
-        """删除主机资产
+        r"""删除主机资产
 
         删除租户的主机资产
         
@@ -497,7 +497,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def list_hosts_async(self, request):
-        """获取主机资产
+        r"""获取主机资产
 
         获取租户的主机资产列表
         
@@ -566,7 +566,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def show_subscription_async(self, request):
-        """资源版本查询接口
+        r"""资源版本查询接口
 
         资源版本查询接口
         
@@ -631,7 +631,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def download_task_report_async(self, request):
-        """下载网站扫描报告
+        r"""下载网站扫描报告
 
         下载网站扫描任务PDF报告
         
@@ -696,7 +696,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def execute_generate_report_async(self, request):
-        """生成网站扫描报告
+        r"""生成网站扫描报告
 
         生成网站扫描PDF报告
         
@@ -761,7 +761,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def list_business_risks_async(self, request):
-        """获取网站业务风险扫描结果
+        r"""获取网站业务风险扫描结果
 
         获取网站业务风险扫描结果
         
@@ -830,7 +830,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def list_port_results_async(self, request):
-        """获取网站端口扫描结果
+        r"""获取网站端口扫描结果
 
         获取网站端口扫描结果
         
@@ -899,7 +899,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def show_report_status_async(self, request):
-        """获取网站扫描报告状态
+        r"""获取网站扫描报告状态
 
         获取网站扫描PDF报告生成状态
         
@@ -964,7 +964,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def show_results_async(self, request):
-        """获取网站扫描结果
+        r"""获取网站扫描结果
 
         获取网站漏洞扫描结果
         
@@ -1033,7 +1033,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def update_false_positive_async(self, request):
-        """更新网站漏洞的误报状态
+        r"""更新网站漏洞的误报状态
 
         更新网站扫描漏洞的误报状态
         
@@ -1098,7 +1098,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def cancel_tasks_async(self, request):
-        """取消或重启网站扫描任务
+        r"""取消或重启网站扫描任务
 
         取消或重启网站漏洞扫描任务
         
@@ -1163,7 +1163,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def create_tasks_async(self, request):
-        """创建网站扫描任务并启动
+        r"""创建网站扫描任务并启动
 
         创建网站漏洞扫描任务并启动
         
@@ -1230,7 +1230,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def list_task_histories_async(self, request):
-        """获取网站的历史扫描任务
+        r"""获取网站的历史扫描任务
 
         获取网站漏洞扫描的历史扫描任务
         
@@ -1299,7 +1299,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def show_tasks_async(self, request):
-        """获取网站扫描任务详情
+        r"""获取网站扫描任务详情
 
         获取网站漏洞扫描任务详情
         
@@ -1364,7 +1364,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def authorize_domains_async(self, request):
-        """认证网站资产
+        r"""认证网站资产
 
         认证租户的网站资产
         
@@ -1429,7 +1429,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def create_domains_async(self, request):
-        """创建网站资产
+        r"""创建网站资产
 
         创建租户的网站资产
         
@@ -1494,7 +1494,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def delete_domains_async(self, request):
-        """删除网站资产
+        r"""删除网站资产
 
         删除租户的网站资产
         
@@ -1559,7 +1559,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def list_domains_async(self, request):
-        """获取网站资产
+        r"""获取网站资产
 
         获取租户的所有网站资产
         
@@ -1630,7 +1630,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def show_domain_settings_async(self, request):
-        """获取网站配置
+        r"""获取网站配置
 
         获取网站登录配置
         
@@ -1695,7 +1695,7 @@ class CodeArtsInspectorAsyncClient(Client):
         return http_info
 
     def update_domain_settings_async(self, request):
-        """更新网站配置
+        r"""更新网站配置
 
         更新网站登录配置
         

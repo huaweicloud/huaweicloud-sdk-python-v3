@@ -25,7 +25,7 @@ class ShowDomainQuotaRequest:
     }
 
     def __init__(self, domain_id=None):
-        """ShowDomainQuotaRequest
+        r"""ShowDomainQuotaRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDomainQuotaRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowDomainQuotaRequest.
+        r"""Gets the domain_id of this ShowDomainQuotaRequest.
 
         租户ID。
 
@@ -53,7 +53,7 @@ class ShowDomainQuotaRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowDomainQuotaRequest.
+        r"""Sets the domain_id of this ShowDomainQuotaRequest.
 
         租户ID。
 

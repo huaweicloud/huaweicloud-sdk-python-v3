@@ -45,7 +45,7 @@ class ListAllScalingV2PoliciesRequest:
     }
 
     def __init__(self, scaling_resource_id=None, scaling_resource_type=None, scaling_policy_name=None, scaling_policy_type=None, scaling_policy_id=None, start_number=None, limit=None, sort_by=None, order=None, enterprise_project_id=None, alarm_id=None):
-        """ListAllScalingV2PoliciesRequest
+        r"""ListAllScalingV2PoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @property
     def scaling_resource_id(self):
-        """Gets the scaling_resource_id of this ListAllScalingV2PoliciesRequest.
+        r"""Gets the scaling_resource_id of this ListAllScalingV2PoliciesRequest.
 
         伸缩组ID。
 
@@ -124,7 +124,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @scaling_resource_id.setter
     def scaling_resource_id(self, scaling_resource_id):
-        """Sets the scaling_resource_id of this ListAllScalingV2PoliciesRequest.
+        r"""Sets the scaling_resource_id of this ListAllScalingV2PoliciesRequest.
 
         伸缩组ID。
 
@@ -135,7 +135,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @property
     def scaling_resource_type(self):
-        """Gets the scaling_resource_type of this ListAllScalingV2PoliciesRequest.
+        r"""Gets the scaling_resource_type of this ListAllScalingV2PoliciesRequest.
 
         伸缩资源类型：伸缩组：SCALING_GROUP；带宽：BANDWIDTH
 
@@ -146,7 +146,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @scaling_resource_type.setter
     def scaling_resource_type(self, scaling_resource_type):
-        """Sets the scaling_resource_type of this ListAllScalingV2PoliciesRequest.
+        r"""Sets the scaling_resource_type of this ListAllScalingV2PoliciesRequest.
 
         伸缩资源类型：伸缩组：SCALING_GROUP；带宽：BANDWIDTH
 
@@ -157,7 +157,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @property
     def scaling_policy_name(self):
-        """Gets the scaling_policy_name of this ListAllScalingV2PoliciesRequest.
+        r"""Gets the scaling_policy_name of this ListAllScalingV2PoliciesRequest.
 
         伸缩策略名称。
 
@@ -168,7 +168,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @scaling_policy_name.setter
     def scaling_policy_name(self, scaling_policy_name):
-        """Sets the scaling_policy_name of this ListAllScalingV2PoliciesRequest.
+        r"""Sets the scaling_policy_name of this ListAllScalingV2PoliciesRequest.
 
         伸缩策略名称。
 
@@ -179,7 +179,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @property
     def scaling_policy_type(self):
-        """Gets the scaling_policy_type of this ListAllScalingV2PoliciesRequest.
+        r"""Gets the scaling_policy_type of this ListAllScalingV2PoliciesRequest.
 
         策略类型。  告警策略：ALARM ,定时策略：SCHEDULED, 周期策略：RECURRENCE
 
@@ -190,7 +190,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @scaling_policy_type.setter
     def scaling_policy_type(self, scaling_policy_type):
-        """Sets the scaling_policy_type of this ListAllScalingV2PoliciesRequest.
+        r"""Sets the scaling_policy_type of this ListAllScalingV2PoliciesRequest.
 
         策略类型。  告警策略：ALARM ,定时策略：SCHEDULED, 周期策略：RECURRENCE
 
@@ -201,7 +201,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @property
     def scaling_policy_id(self):
-        """Gets the scaling_policy_id of this ListAllScalingV2PoliciesRequest.
+        r"""Gets the scaling_policy_id of this ListAllScalingV2PoliciesRequest.
 
         伸缩策略ID。
 
@@ -212,7 +212,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @scaling_policy_id.setter
     def scaling_policy_id(self, scaling_policy_id):
-        """Sets the scaling_policy_id of this ListAllScalingV2PoliciesRequest.
+        r"""Sets the scaling_policy_id of this ListAllScalingV2PoliciesRequest.
 
         伸缩策略ID。
 
@@ -223,7 +223,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @property
     def start_number(self):
-        """Gets the start_number of this ListAllScalingV2PoliciesRequest.
+        r"""Gets the start_number of this ListAllScalingV2PoliciesRequest.
 
         查询的起始行号，默认为0。
 
@@ -234,7 +234,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this ListAllScalingV2PoliciesRequest.
+        r"""Sets the start_number of this ListAllScalingV2PoliciesRequest.
 
         查询的起始行号，默认为0。
 
@@ -245,7 +245,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAllScalingV2PoliciesRequest.
+        r"""Gets the limit of this ListAllScalingV2PoliciesRequest.
 
         查询记录数，默认20，最大100。
 
@@ -256,7 +256,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAllScalingV2PoliciesRequest.
+        r"""Sets the limit of this ListAllScalingV2PoliciesRequest.
 
         查询记录数，默认20，最大100。
 
@@ -267,7 +267,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this ListAllScalingV2PoliciesRequest.
+        r"""Gets the sort_by of this ListAllScalingV2PoliciesRequest.
 
         排序方法POLICY_NAME：根据策略名称排序;TRIGGER_CONDITION：根据触发条件排序，如升序下，告警策略最先，其余根据最近一次触发时间升序排列;CREATE_TIME：根据策略的创建时间排序。
 
@@ -278,7 +278,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this ListAllScalingV2PoliciesRequest.
+        r"""Sets the sort_by of this ListAllScalingV2PoliciesRequest.
 
         排序方法POLICY_NAME：根据策略名称排序;TRIGGER_CONDITION：根据触发条件排序，如升序下，告警策略最先，其余根据最近一次触发时间升序排列;CREATE_TIME：根据策略的创建时间排序。
 
@@ -289,7 +289,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListAllScalingV2PoliciesRequest.
+        r"""Gets the order of this ListAllScalingV2PoliciesRequest.
 
         排序顺序ASC：升序；DESC：降序
 
@@ -300,7 +300,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListAllScalingV2PoliciesRequest.
+        r"""Sets the order of this ListAllScalingV2PoliciesRequest.
 
         排序顺序ASC：升序；DESC：降序
 
@@ -311,7 +311,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAllScalingV2PoliciesRequest.
+        r"""Gets the enterprise_project_id of this ListAllScalingV2PoliciesRequest.
 
         企业项目ID。当scaling_resource_type指定为：SCALING_GROUP传入all_granted_eps时：华为云帐号和拥有全局权限的IAM用户可以查询该用户所有的伸缩组对应的伸缩策略。授予部分企业项目的IAM用户，可以查询该用户所有授权企业项目下的伸缩组对应的伸缩策略。说明：如果授予部分企业项目的IAM用户拥有超过100个企业项目，则只能返回有权限的前100个企业项目对应伸缩组的伸缩策略列表。当scaling_resource_type指定为：BANDWIDTH传入all_granted_eps时:华为云帐号和拥有全局权限的IAM用户可以查询该用户所有带宽对应的伸缩策略。授予部分企业项目的IAM用户，可以查询该用户所有授权企业项目下的带宽对应的伸缩策略，带宽在all_granted_eps场景下返回策略请参见[《EIP接口参口》查询带宽列表](https://support.huaweicloud.com/api-eip/eip_apiBandwidth_0002.html)。不指定scaling_resource_type当传入all_granted_eps时：华为云帐号和拥有全局权限的IAM用户可以查询该用户所有的伸缩组和带宽对应的伸缩策略。授予部分企业项目的IAM用户，可以查询该用户所有授权企业项目下的伸缩组和带宽对应的伸缩策略。说明：如果授予部分企业项目的IAM用户拥有超过100个企业项目，则只能返回有权限的前100个企业项目对应伸缩组的伸缩策略列表；带宽在all_granted_eps场景下返回策略请参见[《EIP接口参口》查询带宽列表](https://support.huaweicloud.com/api-eip/eip_apiBandwidth_0002.html)。
 
@@ -322,7 +322,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAllScalingV2PoliciesRequest.
+        r"""Sets the enterprise_project_id of this ListAllScalingV2PoliciesRequest.
 
         企业项目ID。当scaling_resource_type指定为：SCALING_GROUP传入all_granted_eps时：华为云帐号和拥有全局权限的IAM用户可以查询该用户所有的伸缩组对应的伸缩策略。授予部分企业项目的IAM用户，可以查询该用户所有授权企业项目下的伸缩组对应的伸缩策略。说明：如果授予部分企业项目的IAM用户拥有超过100个企业项目，则只能返回有权限的前100个企业项目对应伸缩组的伸缩策略列表。当scaling_resource_type指定为：BANDWIDTH传入all_granted_eps时:华为云帐号和拥有全局权限的IAM用户可以查询该用户所有带宽对应的伸缩策略。授予部分企业项目的IAM用户，可以查询该用户所有授权企业项目下的带宽对应的伸缩策略，带宽在all_granted_eps场景下返回策略请参见[《EIP接口参口》查询带宽列表](https://support.huaweicloud.com/api-eip/eip_apiBandwidth_0002.html)。不指定scaling_resource_type当传入all_granted_eps时：华为云帐号和拥有全局权限的IAM用户可以查询该用户所有的伸缩组和带宽对应的伸缩策略。授予部分企业项目的IAM用户，可以查询该用户所有授权企业项目下的伸缩组和带宽对应的伸缩策略。说明：如果授予部分企业项目的IAM用户拥有超过100个企业项目，则只能返回有权限的前100个企业项目对应伸缩组的伸缩策略列表；带宽在all_granted_eps场景下返回策略请参见[《EIP接口参口》查询带宽列表](https://support.huaweicloud.com/api-eip/eip_apiBandwidth_0002.html)。
 
@@ -333,7 +333,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this ListAllScalingV2PoliciesRequest.
+        r"""Gets the alarm_id of this ListAllScalingV2PoliciesRequest.
 
         告警ID，即告警规则的ID。
 
@@ -344,7 +344,7 @@ class ListAllScalingV2PoliciesRequest:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this ListAllScalingV2PoliciesRequest.
+        r"""Sets the alarm_id of this ListAllScalingV2PoliciesRequest.
 
         告警ID，即告警规则的ID。
 

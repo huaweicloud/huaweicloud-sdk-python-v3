@@ -46,7 +46,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, created_at=None, node_id=None, type=None, serial_num=None, ca=None, certificate=None, private_key=None, package=None):
-        """CreateEdgeNodeCertsResponse
+        r"""CreateEdgeNodeCertsResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateEdgeNodeCertsResponse.
+        r"""Gets the id of this CreateEdgeNodeCertsResponse.
 
         证书id
 
@@ -125,7 +125,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateEdgeNodeCertsResponse.
+        r"""Sets the id of this CreateEdgeNodeCertsResponse.
 
         证书id
 
@@ -136,7 +136,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateEdgeNodeCertsResponse.
+        r"""Gets the name of this CreateEdgeNodeCertsResponse.
 
         证书名称
 
@@ -147,7 +147,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateEdgeNodeCertsResponse.
+        r"""Sets the name of this CreateEdgeNodeCertsResponse.
 
         证书名称
 
@@ -158,7 +158,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateEdgeNodeCertsResponse.
+        r"""Gets the description of this CreateEdgeNodeCertsResponse.
 
         证书的描述
 
@@ -169,7 +169,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateEdgeNodeCertsResponse.
+        r"""Sets the description of this CreateEdgeNodeCertsResponse.
 
         证书的描述
 
@@ -180,7 +180,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateEdgeNodeCertsResponse.
+        r"""Gets the created_at of this CreateEdgeNodeCertsResponse.
 
         证书的创建时间
 
@@ -191,7 +191,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateEdgeNodeCertsResponse.
+        r"""Sets the created_at of this CreateEdgeNodeCertsResponse.
 
         证书的创建时间
 
@@ -202,7 +202,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this CreateEdgeNodeCertsResponse.
+        r"""Gets the node_id of this CreateEdgeNodeCertsResponse.
 
         节点id
 
@@ -213,7 +213,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this CreateEdgeNodeCertsResponse.
+        r"""Sets the node_id of this CreateEdgeNodeCertsResponse.
 
         节点id
 
@@ -224,7 +224,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CreateEdgeNodeCertsResponse.
+        r"""Gets the type of this CreateEdgeNodeCertsResponse.
 
         证书类型，包含： - system：创建节点时会默认创建一套系统证书 - application：应用证书 - device：设备证书
 
@@ -235,7 +235,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateEdgeNodeCertsResponse.
+        r"""Sets the type of this CreateEdgeNodeCertsResponse.
 
         证书类型，包含： - system：创建节点时会默认创建一套系统证书 - application：应用证书 - device：设备证书
 
@@ -246,7 +246,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @property
     def serial_num(self):
-        """Gets the serial_num of this CreateEdgeNodeCertsResponse.
+        r"""Gets the serial_num of this CreateEdgeNodeCertsResponse.
 
         证书序列号
 
@@ -257,7 +257,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @serial_num.setter
     def serial_num(self, serial_num):
-        """Sets the serial_num of this CreateEdgeNodeCertsResponse.
+        r"""Sets the serial_num of this CreateEdgeNodeCertsResponse.
 
         证书序列号
 
@@ -268,7 +268,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @property
     def ca(self):
-        """Gets the ca of this CreateEdgeNodeCertsResponse.
+        r"""Gets the ca of this CreateEdgeNodeCertsResponse.
 
         根证书
 
@@ -279,7 +279,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @ca.setter
     def ca(self, ca):
-        """Sets the ca of this CreateEdgeNodeCertsResponse.
+        r"""Sets the ca of this CreateEdgeNodeCertsResponse.
 
         根证书
 
@@ -290,7 +290,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @property
     def certificate(self):
-        """Gets the certificate of this CreateEdgeNodeCertsResponse.
+        r"""Gets the certificate of this CreateEdgeNodeCertsResponse.
 
         证书
 
@@ -301,7 +301,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this CreateEdgeNodeCertsResponse.
+        r"""Sets the certificate of this CreateEdgeNodeCertsResponse.
 
         证书
 
@@ -312,7 +312,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @property
     def private_key(self):
-        """Gets the private_key of this CreateEdgeNodeCertsResponse.
+        r"""Gets the private_key of this CreateEdgeNodeCertsResponse.
 
         私钥
 
@@ -323,7 +323,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this CreateEdgeNodeCertsResponse.
+        r"""Sets the private_key of this CreateEdgeNodeCertsResponse.
 
         私钥
 
@@ -334,7 +334,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @property
     def package(self):
-        """Gets the package of this CreateEdgeNodeCertsResponse.
+        r"""Gets the package of this CreateEdgeNodeCertsResponse.
 
         将证书文件certificate/ca/private_key打成.tar.gz包后用base64编码的字符串。 使用时请使用base64解码成.tar.gz包。
 
@@ -345,7 +345,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
 
     @package.setter
     def package(self, package):
-        """Sets the package of this CreateEdgeNodeCertsResponse.
+        r"""Sets the package of this CreateEdgeNodeCertsResponse.
 
         将证书文件certificate/ca/private_key打成.tar.gz包后用base64编码的字符串。 使用时请使用base64解码成.tar.gz包。
 

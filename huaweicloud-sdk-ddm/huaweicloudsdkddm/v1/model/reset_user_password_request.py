@@ -29,7 +29,7 @@ class ResetUserPasswordRequest:
     }
 
     def __init__(self, instance_id=None, username=None, body=None):
-        """ResetUserPasswordRequest
+        r"""ResetUserPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResetUserPasswordRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetUserPasswordRequest.
+        r"""Gets the instance_id of this ResetUserPasswordRequest.
 
         DDM实例ID。
 
@@ -66,7 +66,7 @@ class ResetUserPasswordRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetUserPasswordRequest.
+        r"""Sets the instance_id of this ResetUserPasswordRequest.
 
         DDM实例ID。
 
@@ -77,7 +77,7 @@ class ResetUserPasswordRequest:
 
     @property
     def username(self):
-        """Gets the username of this ResetUserPasswordRequest.
+        r"""Gets the username of this ResetUserPasswordRequest.
 
         需要修改的DDM帐号名称。
 
@@ -88,7 +88,7 @@ class ResetUserPasswordRequest:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this ResetUserPasswordRequest.
+        r"""Sets the username of this ResetUserPasswordRequest.
 
         需要修改的DDM帐号名称。
 
@@ -99,7 +99,7 @@ class ResetUserPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetUserPasswordRequest.
+        r"""Gets the body of this ResetUserPasswordRequest.
 
         :return: The body of this ResetUserPasswordRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.ResetUserPasswordReq`
@@ -108,7 +108,7 @@ class ResetUserPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetUserPasswordRequest.
+        r"""Sets the body of this ResetUserPasswordRequest.
 
         :param body: The body of this ResetUserPasswordRequest.
         :type body: :class:`huaweicloudsdkddm.v1.ResetUserPasswordReq`

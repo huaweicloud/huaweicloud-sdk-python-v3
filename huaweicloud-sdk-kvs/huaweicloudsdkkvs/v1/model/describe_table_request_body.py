@@ -25,7 +25,7 @@ class DescribeTableRequestBody:
     }
 
     def __init__(self, table_name=None):
-        """DescribeTableRequestBody
+        r"""DescribeTableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DescribeTableRequestBody:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DescribeTableRequestBody.
+        r"""Gets the table_name of this DescribeTableRequestBody.
 
         表名。 - 长度：[3, 63] - 取值字符限制：[a-zA-Z0-9_-]+
 
@@ -53,7 +53,7 @@ class DescribeTableRequestBody:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DescribeTableRequestBody.
+        r"""Sets the table_name of this DescribeTableRequestBody.
 
         表名。 - 长度：[3, 63] - 取值字符限制：[a-zA-Z0-9_-]+
 

@@ -37,7 +37,7 @@ class ListListenersRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, name=None, status=None, accelerator_id=None):
-        """ListListenersRequest
+        r"""ListListenersRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListListenersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListListenersRequest.
+        r"""Gets the limit of this ListListenersRequest.
 
         分页查询每页的资源个数。如果不设置，则默认为500。
 
@@ -96,7 +96,7 @@ class ListListenersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListListenersRequest.
+        r"""Sets the limit of this ListListenersRequest.
 
         分页查询每页的资源个数。如果不设置，则默认为500。
 
@@ -107,7 +107,7 @@ class ListListenersRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListListenersRequest.
+        r"""Gets the marker of this ListListenersRequest.
 
         分页查询的起始的资源ID，表示上一页最后一条查询资源记录的ID。不指定时表示查询第一页。 必须与limit一起使用。
 
@@ -118,7 +118,7 @@ class ListListenersRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListListenersRequest.
+        r"""Sets the marker of this ListListenersRequest.
 
         分页查询的起始的资源ID，表示上一页最后一条查询资源记录的ID。不指定时表示查询第一页。 必须与limit一起使用。
 
@@ -129,7 +129,7 @@ class ListListenersRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListListenersRequest.
+        r"""Gets the page_reverse of this ListListenersRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -140,7 +140,7 @@ class ListListenersRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListListenersRequest.
+        r"""Sets the page_reverse of this ListListenersRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -151,7 +151,7 @@ class ListListenersRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListListenersRequest.
+        r"""Gets the id of this ListListenersRequest.
 
         资源ID。
 
@@ -162,7 +162,7 @@ class ListListenersRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListListenersRequest.
+        r"""Sets the id of this ListListenersRequest.
 
         资源ID。
 
@@ -173,7 +173,7 @@ class ListListenersRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListListenersRequest.
+        r"""Gets the name of this ListListenersRequest.
 
         资源名称，取值范围：0~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -184,7 +184,7 @@ class ListListenersRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListListenersRequest.
+        r"""Sets the name of this ListListenersRequest.
 
         资源名称，取值范围：0~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -195,7 +195,7 @@ class ListListenersRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListListenersRequest.
+        r"""Gets the status of this ListListenersRequest.
 
         配置状态，可选范围: - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
 
@@ -206,7 +206,7 @@ class ListListenersRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListListenersRequest.
+        r"""Sets the status of this ListListenersRequest.
 
         配置状态，可选范围: - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
 
@@ -217,7 +217,7 @@ class ListListenersRequest:
 
     @property
     def accelerator_id(self):
-        """Gets the accelerator_id of this ListListenersRequest.
+        r"""Gets the accelerator_id of this ListListenersRequest.
 
         全球加速器ID。
 
@@ -228,7 +228,7 @@ class ListListenersRequest:
 
     @accelerator_id.setter
     def accelerator_id(self, accelerator_id):
-        """Sets the accelerator_id of this ListListenersRequest.
+        r"""Sets the accelerator_id of this ListListenersRequest.
 
         全球加速器ID。
 

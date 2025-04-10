@@ -29,7 +29,7 @@ class AppTemplateResourceDetail:
     }
 
     def __init__(self, resource_name=None, icon=None, href=None):
-        """AppTemplateResourceDetail
+        r"""AppTemplateResourceDetail
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AppTemplateResourceDetail:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this AppTemplateResourceDetail.
+        r"""Gets the resource_name of this AppTemplateResourceDetail.
 
         资源名称
 
@@ -68,7 +68,7 @@ class AppTemplateResourceDetail:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this AppTemplateResourceDetail.
+        r"""Sets the resource_name of this AppTemplateResourceDetail.
 
         资源名称
 
@@ -79,7 +79,7 @@ class AppTemplateResourceDetail:
 
     @property
     def icon(self):
-        """Gets the icon of this AppTemplateResourceDetail.
+        r"""Gets the icon of this AppTemplateResourceDetail.
 
         图标文件（base64编码）
 
@@ -90,7 +90,7 @@ class AppTemplateResourceDetail:
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this AppTemplateResourceDetail.
+        r"""Sets the icon of this AppTemplateResourceDetail.
 
         图标文件（base64编码）
 
@@ -101,7 +101,7 @@ class AppTemplateResourceDetail:
 
     @property
     def href(self):
-        """Gets the href of this AppTemplateResourceDetail.
+        r"""Gets the href of this AppTemplateResourceDetail.
 
         超链接地址
 
@@ -112,7 +112,7 @@ class AppTemplateResourceDetail:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this AppTemplateResourceDetail.
+        r"""Sets the href of this AppTemplateResourceDetail.
 
         超链接地址
 

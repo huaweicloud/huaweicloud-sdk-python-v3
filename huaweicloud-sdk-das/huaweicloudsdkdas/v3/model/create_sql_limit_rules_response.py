@@ -24,7 +24,7 @@ class CreateSqlLimitRulesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateSqlLimitRulesResponse
+        r"""CreateSqlLimitRulesResponse
 
         The model defined in huaweicloud sdk
 

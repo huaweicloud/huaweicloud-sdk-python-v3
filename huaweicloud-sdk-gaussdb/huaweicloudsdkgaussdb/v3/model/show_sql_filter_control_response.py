@@ -26,7 +26,7 @@ class ShowSqlFilterControlResponse(SdkResponse):
     }
 
     def __init__(self, switch_status=None):
-        """ShowSqlFilterControlResponse
+        r"""ShowSqlFilterControlResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSqlFilterControlResponse(SdkResponse):
 
     @property
     def switch_status(self):
-        """Gets the switch_status of this ShowSqlFilterControlResponse.
+        r"""Gets the switch_status of this ShowSqlFilterControlResponse.
 
         sql限流开关状态。  取值：  - ON：已开启 - OFF：已关闭
 
@@ -55,7 +55,7 @@ class ShowSqlFilterControlResponse(SdkResponse):
 
     @switch_status.setter
     def switch_status(self, switch_status):
-        """Sets the switch_status of this ShowSqlFilterControlResponse.
+        r"""Sets the switch_status of this ShowSqlFilterControlResponse.
 
         sql限流开关状态。  取值：  - ON：已开启 - OFF：已关闭
 

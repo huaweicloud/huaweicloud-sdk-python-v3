@@ -33,7 +33,7 @@ class ListTaskRequest:
     }
 
     def __init__(self, x_apig_app_code=None, service_group=None, service_type=None, limit=None, offset=None):
-        """ListTaskRequest
+        r"""ListTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListTaskRequest:
 
     @property
     def x_apig_app_code(self):
-        """Gets the x_apig_app_code of this ListTaskRequest.
+        r"""Gets the x_apig_app_code of this ListTaskRequest.
 
         用户凭证
 
@@ -79,7 +79,7 @@ class ListTaskRequest:
 
     @x_apig_app_code.setter
     def x_apig_app_code(self, x_apig_app_code):
-        """Sets the x_apig_app_code of this ListTaskRequest.
+        r"""Sets the x_apig_app_code of this ListTaskRequest.
 
         用户凭证
 
@@ -90,7 +90,7 @@ class ListTaskRequest:
 
     @property
     def service_group(self):
-        """Gets the service_group of this ListTaskRequest.
+        r"""Gets the service_group of this ListTaskRequest.
 
         服务类别，针对不同服务类场景，为用户提前填充对应值，用户侧不需单独赋值；当前仅支持 二维切割 2dcut ，便于后续扩展
 
@@ -101,7 +101,7 @@ class ListTaskRequest:
 
     @service_group.setter
     def service_group(self, service_group):
-        """Sets the service_group of this ListTaskRequest.
+        r"""Sets the service_group of this ListTaskRequest.
 
         服务类别，针对不同服务类场景，为用户提前填充对应值，用户侧不需单独赋值；当前仅支持 二维切割 2dcut ，便于后续扩展
 
@@ -112,7 +112,7 @@ class ListTaskRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ListTaskRequest.
+        r"""Gets the service_type of this ListTaskRequest.
 
         子服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；服装切割固定为 irregular-textile，雕刻机切割固定为 engraving-machine-cutting， 板材切割固定为 regular-plate
 
@@ -123,7 +123,7 @@ class ListTaskRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ListTaskRequest.
+        r"""Sets the service_type of this ListTaskRequest.
 
         子服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；服装切割固定为 irregular-textile，雕刻机切割固定为 engraving-machine-cutting， 板材切割固定为 regular-plate
 
@@ -134,7 +134,7 @@ class ListTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTaskRequest.
+        r"""Gets the limit of this ListTaskRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为300，取值范围[1,300]
 
@@ -145,7 +145,7 @@ class ListTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTaskRequest.
+        r"""Sets the limit of this ListTaskRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为300，取值范围[1,300]
 
@@ -156,7 +156,7 @@ class ListTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTaskRequest.
+        r"""Gets the offset of this ListTaskRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -167,7 +167,7 @@ class ListTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTaskRequest.
+        r"""Sets the offset of this ListTaskRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 

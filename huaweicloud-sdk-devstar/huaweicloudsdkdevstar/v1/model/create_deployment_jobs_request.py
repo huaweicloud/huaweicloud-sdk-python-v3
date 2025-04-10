@@ -31,7 +31,7 @@ class CreateDeploymentJobsRequest:
     }
 
     def __init__(self, x_language=None, application_id=None, environment_tag=None, body=None):
-        """CreateDeploymentJobsRequest
+        r"""CreateDeploymentJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateDeploymentJobsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateDeploymentJobsRequest.
+        r"""Gets the x_language of this CreateDeploymentJobsRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -73,7 +73,7 @@ class CreateDeploymentJobsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateDeploymentJobsRequest.
+        r"""Sets the x_language of this CreateDeploymentJobsRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -84,7 +84,7 @@ class CreateDeploymentJobsRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this CreateDeploymentJobsRequest.
+        r"""Gets the application_id of this CreateDeploymentJobsRequest.
 
         应用id
 
@@ -95,7 +95,7 @@ class CreateDeploymentJobsRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this CreateDeploymentJobsRequest.
+        r"""Sets the application_id of this CreateDeploymentJobsRequest.
 
         应用id
 
@@ -106,7 +106,7 @@ class CreateDeploymentJobsRequest:
 
     @property
     def environment_tag(self):
-        """Gets the environment_tag of this CreateDeploymentJobsRequest.
+        r"""Gets the environment_tag of this CreateDeploymentJobsRequest.
 
         环境标识，从 [应用详情接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DevStar&api=ShowApplication) 返回报文中的环境信息获取。
 
@@ -117,7 +117,7 @@ class CreateDeploymentJobsRequest:
 
     @environment_tag.setter
     def environment_tag(self, environment_tag):
-        """Sets the environment_tag of this CreateDeploymentJobsRequest.
+        r"""Sets the environment_tag of this CreateDeploymentJobsRequest.
 
         环境标识，从 [应用详情接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DevStar&api=ShowApplication) 返回报文中的环境信息获取。
 
@@ -128,7 +128,7 @@ class CreateDeploymentJobsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDeploymentJobsRequest.
+        r"""Gets the body of this CreateDeploymentJobsRequest.
 
         :return: The body of this CreateDeploymentJobsRequest.
         :rtype: :class:`huaweicloudsdkdevstar.v1.CreateDeploymentJobsParams`
@@ -137,7 +137,7 @@ class CreateDeploymentJobsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDeploymentJobsRequest.
+        r"""Sets the body of this CreateDeploymentJobsRequest.
 
         :param body: The body of this CreateDeploymentJobsRequest.
         :type body: :class:`huaweicloudsdkdevstar.v1.CreateDeploymentJobsParams`

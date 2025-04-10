@@ -26,7 +26,7 @@ class DeleteDisasterRecoveryDrillResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteDisasterRecoveryDrillResponse
+        r"""DeleteDisasterRecoveryDrillResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDisasterRecoveryDrillResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteDisasterRecoveryDrillResponse.
+        r"""Gets the job_id of this DeleteDisasterRecoveryDrillResponse.
 
         成功返回jobId信息
 
@@ -55,7 +55,7 @@ class DeleteDisasterRecoveryDrillResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteDisasterRecoveryDrillResponse.
+        r"""Sets the job_id of this DeleteDisasterRecoveryDrillResponse.
 
         成功返回jobId信息
 

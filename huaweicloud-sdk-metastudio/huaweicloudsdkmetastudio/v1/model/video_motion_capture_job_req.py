@@ -29,7 +29,7 @@ class VideoMotionCaptureJobReq:
     }
 
     def __init__(self, motion_capture_mode=None, input_info=None, output_info=None):
-        """VideoMotionCaptureJobReq
+        r"""VideoMotionCaptureJobReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VideoMotionCaptureJobReq:
 
     @property
     def motion_capture_mode(self):
-        """Gets the motion_capture_mode of this VideoMotionCaptureJobReq.
+        r"""Gets the motion_capture_mode of this VideoMotionCaptureJobReq.
 
         视频驱动模式。 * HEAD：头部 * HALF_BODY：半身 * FULL_BODY：全身 * AUTO：自动
 
@@ -68,7 +68,7 @@ class VideoMotionCaptureJobReq:
 
     @motion_capture_mode.setter
     def motion_capture_mode(self, motion_capture_mode):
-        """Sets the motion_capture_mode of this VideoMotionCaptureJobReq.
+        r"""Sets the motion_capture_mode of this VideoMotionCaptureJobReq.
 
         视频驱动模式。 * HEAD：头部 * HALF_BODY：半身 * FULL_BODY：全身 * AUTO：自动
 
@@ -79,7 +79,7 @@ class VideoMotionCaptureJobReq:
 
     @property
     def input_info(self):
-        """Gets the input_info of this VideoMotionCaptureJobReq.
+        r"""Gets the input_info of this VideoMotionCaptureJobReq.
 
         :return: The input_info of this VideoMotionCaptureJobReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.InputInfo`
@@ -88,7 +88,7 @@ class VideoMotionCaptureJobReq:
 
     @input_info.setter
     def input_info(self, input_info):
-        """Sets the input_info of this VideoMotionCaptureJobReq.
+        r"""Sets the input_info of this VideoMotionCaptureJobReq.
 
         :param input_info: The input_info of this VideoMotionCaptureJobReq.
         :type input_info: :class:`huaweicloudsdkmetastudio.v1.InputInfo`
@@ -97,7 +97,7 @@ class VideoMotionCaptureJobReq:
 
     @property
     def output_info(self):
-        """Gets the output_info of this VideoMotionCaptureJobReq.
+        r"""Gets the output_info of this VideoMotionCaptureJobReq.
 
         :return: The output_info of this VideoMotionCaptureJobReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.OutputInfo`
@@ -106,7 +106,7 @@ class VideoMotionCaptureJobReq:
 
     @output_info.setter
     def output_info(self, output_info):
-        """Sets the output_info of this VideoMotionCaptureJobReq.
+        r"""Sets the output_info of this VideoMotionCaptureJobReq.
 
         :param output_info: The output_info of this VideoMotionCaptureJobReq.
         :type output_info: :class:`huaweicloudsdkmetastudio.v1.OutputInfo`

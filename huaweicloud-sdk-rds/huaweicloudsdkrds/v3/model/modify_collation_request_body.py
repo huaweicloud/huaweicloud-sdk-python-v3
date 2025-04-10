@@ -25,7 +25,7 @@ class ModifyCollationRequestBody:
     }
 
     def __init__(self, collation=None):
-        """ModifyCollationRequestBody
+        r"""ModifyCollationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyCollationRequestBody:
 
     @property
     def collation(self):
-        """Gets the collation of this ModifyCollationRequestBody.
+        r"""Gets the collation of this ModifyCollationRequestBody.
 
         字符集。 取值范围：根据查询SQL Server可用字符集查询可设置的字符集。
 
@@ -53,7 +53,7 @@ class ModifyCollationRequestBody:
 
     @collation.setter
     def collation(self, collation):
-        """Sets the collation of this ModifyCollationRequestBody.
+        r"""Sets the collation of this ModifyCollationRequestBody.
 
         字符集。 取值范围：根据查询SQL Server可用字符集查询可设置的字符集。
 

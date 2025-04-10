@@ -29,7 +29,7 @@ class ValidatePolicyReqBody:
     }
 
     def __init__(self, policy_document=None, policy_type=None, validate_policy_resource_type=None):
-        """ValidatePolicyReqBody
+        r"""ValidatePolicyReqBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ValidatePolicyReqBody:
 
     @property
     def policy_document(self):
-        """Gets the policy_document of this ValidatePolicyReqBody.
+        r"""Gets the policy_document of this ValidatePolicyReqBody.
 
         该策略JSON格式策略文档。
 
@@ -66,7 +66,7 @@ class ValidatePolicyReqBody:
 
     @policy_document.setter
     def policy_document(self, policy_document):
-        """Sets the policy_document of this ValidatePolicyReqBody.
+        r"""Sets the policy_document of this ValidatePolicyReqBody.
 
         该策略JSON格式策略文档。
 
@@ -77,7 +77,7 @@ class ValidatePolicyReqBody:
 
     @property
     def policy_type(self):
-        """Gets the policy_type of this ValidatePolicyReqBody.
+        r"""Gets the policy_type of this ValidatePolicyReqBody.
 
         :return: The policy_type of this ValidatePolicyReqBody.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.PolicyType`
@@ -86,7 +86,7 @@ class ValidatePolicyReqBody:
 
     @policy_type.setter
     def policy_type(self, policy_type):
-        """Sets the policy_type of this ValidatePolicyReqBody.
+        r"""Sets the policy_type of this ValidatePolicyReqBody.
 
         :param policy_type: The policy_type of this ValidatePolicyReqBody.
         :type policy_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.PolicyType`
@@ -95,7 +95,7 @@ class ValidatePolicyReqBody:
 
     @property
     def validate_policy_resource_type(self):
-        """Gets the validate_policy_resource_type of this ValidatePolicyReqBody.
+        r"""Gets the validate_policy_resource_type of this ValidatePolicyReqBody.
 
         :return: The validate_policy_resource_type of this ValidatePolicyReqBody.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ValidatePolicyResourceType`
@@ -104,7 +104,7 @@ class ValidatePolicyReqBody:
 
     @validate_policy_resource_type.setter
     def validate_policy_resource_type(self, validate_policy_resource_type):
-        """Sets the validate_policy_resource_type of this ValidatePolicyReqBody.
+        r"""Sets the validate_policy_resource_type of this ValidatePolicyReqBody.
 
         :param validate_policy_resource_type: The validate_policy_resource_type of this ValidatePolicyReqBody.
         :type validate_policy_resource_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.ValidatePolicyResourceType`

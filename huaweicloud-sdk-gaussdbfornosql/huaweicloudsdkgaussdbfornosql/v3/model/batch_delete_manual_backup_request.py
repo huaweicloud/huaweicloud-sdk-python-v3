@@ -27,7 +27,7 @@ class BatchDeleteManualBackupRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchDeleteManualBackupRequest
+        r"""BatchDeleteManualBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchDeleteManualBackupRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchDeleteManualBackupRequest.
+        r"""Gets the x_language of this BatchDeleteManualBackupRequest.
 
         语言。
 
@@ -61,7 +61,7 @@ class BatchDeleteManualBackupRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchDeleteManualBackupRequest.
+        r"""Sets the x_language of this BatchDeleteManualBackupRequest.
 
         语言。
 
@@ -72,7 +72,7 @@ class BatchDeleteManualBackupRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteManualBackupRequest.
+        r"""Gets the body of this BatchDeleteManualBackupRequest.
 
         :return: The body of this BatchDeleteManualBackupRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.BatchDeleteManualBackupRequestBody`
@@ -81,7 +81,7 @@ class BatchDeleteManualBackupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteManualBackupRequest.
+        r"""Sets the body of this BatchDeleteManualBackupRequest.
 
         :param body: The body of this BatchDeleteManualBackupRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.BatchDeleteManualBackupRequestBody`

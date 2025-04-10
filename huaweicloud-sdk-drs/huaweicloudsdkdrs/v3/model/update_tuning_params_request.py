@@ -29,7 +29,7 @@ class UpdateTuningParamsRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """UpdateTuningParamsRequest
+        r"""UpdateTuningParamsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateTuningParamsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateTuningParamsRequest.
+        r"""Gets the job_id of this UpdateTuningParamsRequest.
 
         租户在某一Region下的Job ID，如果是主备任务，使用父任务ID。
 
@@ -67,7 +67,7 @@ class UpdateTuningParamsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateTuningParamsRequest.
+        r"""Sets the job_id of this UpdateTuningParamsRequest.
 
         租户在某一Region下的Job ID，如果是主备任务，使用父任务ID。
 
@@ -78,7 +78,7 @@ class UpdateTuningParamsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateTuningParamsRequest.
+        r"""Gets the x_language of this UpdateTuningParamsRequest.
 
         请求语言类型
 
@@ -89,7 +89,7 @@ class UpdateTuningParamsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateTuningParamsRequest.
+        r"""Sets the x_language of this UpdateTuningParamsRequest.
 
         请求语言类型
 
@@ -100,7 +100,7 @@ class UpdateTuningParamsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTuningParamsRequest.
+        r"""Gets the body of this UpdateTuningParamsRequest.
 
         :return: The body of this UpdateTuningParamsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.ModifyTuningParamsReq`
@@ -109,7 +109,7 @@ class UpdateTuningParamsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTuningParamsRequest.
+        r"""Sets the body of this UpdateTuningParamsRequest.
 
         :param body: The body of this UpdateTuningParamsRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.ModifyTuningParamsReq`

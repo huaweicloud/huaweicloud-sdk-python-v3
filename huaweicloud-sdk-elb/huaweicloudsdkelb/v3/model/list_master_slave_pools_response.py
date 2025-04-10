@@ -30,7 +30,7 @@ class ListMasterSlavePoolsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, pools=None):
-        """ListMasterSlavePoolsResponse
+        r"""ListMasterSlavePoolsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListMasterSlavePoolsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListMasterSlavePoolsResponse.
+        r"""Gets the request_id of this ListMasterSlavePoolsResponse.
 
         请求ID。  注：自动生成 。
 
@@ -69,7 +69,7 @@ class ListMasterSlavePoolsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListMasterSlavePoolsResponse.
+        r"""Sets the request_id of this ListMasterSlavePoolsResponse.
 
         请求ID。  注：自动生成 。
 
@@ -80,7 +80,7 @@ class ListMasterSlavePoolsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListMasterSlavePoolsResponse.
+        r"""Gets the page_info of this ListMasterSlavePoolsResponse.
 
         :return: The page_info of this ListMasterSlavePoolsResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListMasterSlavePoolsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListMasterSlavePoolsResponse.
+        r"""Sets the page_info of this ListMasterSlavePoolsResponse.
 
         :param page_info: The page_info of this ListMasterSlavePoolsResponse.
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListMasterSlavePoolsResponse(SdkResponse):
 
     @property
     def pools(self):
-        """Gets the pools of this ListMasterSlavePoolsResponse.
+        r"""Gets the pools of this ListMasterSlavePoolsResponse.
 
         后端服务器组列表。
 
@@ -109,7 +109,7 @@ class ListMasterSlavePoolsResponse(SdkResponse):
 
     @pools.setter
     def pools(self, pools):
-        """Sets the pools of this ListMasterSlavePoolsResponse.
+        r"""Sets the pools of this ListMasterSlavePoolsResponse.
 
         后端服务器组列表。
 

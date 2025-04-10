@@ -43,7 +43,7 @@ class WafCustomRule:
     }
 
     def __init__(self, id=None, name=None, time=None, start=None, terminal=None, priority=None, conditions=None, action=None, domain_name=None, overseas_type=None):
-        """WafCustomRule
+        r"""WafCustomRule
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class WafCustomRule:
 
     @property
     def id(self):
-        """Gets the id of this WafCustomRule.
+        r"""Gets the id of this WafCustomRule.
 
         id
 
@@ -115,7 +115,7 @@ class WafCustomRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WafCustomRule.
+        r"""Sets the id of this WafCustomRule.
 
         id
 
@@ -126,7 +126,7 @@ class WafCustomRule:
 
     @property
     def name(self):
-        """Gets the name of this WafCustomRule.
+        r"""Gets the name of this WafCustomRule.
 
         name
 
@@ -137,7 +137,7 @@ class WafCustomRule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WafCustomRule.
+        r"""Sets the name of this WafCustomRule.
 
         name
 
@@ -148,7 +148,7 @@ class WafCustomRule:
 
     @property
     def time(self):
-        """Gets the time of this WafCustomRule.
+        r"""Gets the time of this WafCustomRule.
 
         精准防护规则生效时间。true-自定义生效时间，false-立即生效
 
@@ -159,7 +159,7 @@ class WafCustomRule:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this WafCustomRule.
+        r"""Sets the time of this WafCustomRule.
 
         精准防护规则生效时间。true-自定义生效时间，false-立即生效
 
@@ -170,7 +170,7 @@ class WafCustomRule:
 
     @property
     def start(self):
-        """Gets the start of this WafCustomRule.
+        r"""Gets the start of this WafCustomRule.
 
         精准防护规则生效的起始时间戳（秒）
 
@@ -181,7 +181,7 @@ class WafCustomRule:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this WafCustomRule.
+        r"""Sets the start of this WafCustomRule.
 
         精准防护规则生效的起始时间戳（秒）
 
@@ -192,7 +192,7 @@ class WafCustomRule:
 
     @property
     def terminal(self):
-        """Gets the terminal of this WafCustomRule.
+        r"""Gets the terminal of this WafCustomRule.
 
         精准防护规则生效的终止时间戳（秒）
 
@@ -203,7 +203,7 @@ class WafCustomRule:
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this WafCustomRule.
+        r"""Sets the terminal of this WafCustomRule.
 
         精准防护规则生效的终止时间戳（秒）
 
@@ -214,7 +214,7 @@ class WafCustomRule:
 
     @property
     def priority(self):
-        """Gets the priority of this WafCustomRule.
+        r"""Gets the priority of this WafCustomRule.
 
         执行该规则的优先级，值越小，优先级越高。取值范围：0到1000。
 
@@ -225,7 +225,7 @@ class WafCustomRule:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this WafCustomRule.
+        r"""Sets the priority of this WafCustomRule.
 
         执行该规则的优先级，值越小，优先级越高。取值范围：0到1000。
 
@@ -236,7 +236,7 @@ class WafCustomRule:
 
     @property
     def conditions(self):
-        """Gets the conditions of this WafCustomRule.
+        r"""Gets the conditions of this WafCustomRule.
 
         condition
 
@@ -247,7 +247,7 @@ class WafCustomRule:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this WafCustomRule.
+        r"""Sets the conditions of this WafCustomRule.
 
         condition
 
@@ -258,7 +258,7 @@ class WafCustomRule:
 
     @property
     def action(self):
-        """Gets the action of this WafCustomRule.
+        r"""Gets the action of this WafCustomRule.
 
         :return: The action of this WafCustomRule.
         :rtype: :class:`huaweicloudsdkaad.v2.WafCustomRuleAction`
@@ -267,7 +267,7 @@ class WafCustomRule:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this WafCustomRule.
+        r"""Sets the action of this WafCustomRule.
 
         :param action: The action of this WafCustomRule.
         :type action: :class:`huaweicloudsdkaad.v2.WafCustomRuleAction`
@@ -276,7 +276,7 @@ class WafCustomRule:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this WafCustomRule.
+        r"""Gets the domain_name of this WafCustomRule.
 
         域名
 
@@ -287,7 +287,7 @@ class WafCustomRule:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this WafCustomRule.
+        r"""Sets the domain_name of this WafCustomRule.
 
         域名
 
@@ -298,7 +298,7 @@ class WafCustomRule:
 
     @property
     def overseas_type(self):
-        """Gets the overseas_type of this WafCustomRule.
+        r"""Gets the overseas_type of this WafCustomRule.
 
         防护区域，0-大陆，1-海外
 
@@ -309,7 +309,7 @@ class WafCustomRule:
 
     @overseas_type.setter
     def overseas_type(self, overseas_type):
-        """Sets the overseas_type of this WafCustomRule.
+        r"""Sets the overseas_type of this WafCustomRule.
 
         防护区域，0-大陆，1-海外
 

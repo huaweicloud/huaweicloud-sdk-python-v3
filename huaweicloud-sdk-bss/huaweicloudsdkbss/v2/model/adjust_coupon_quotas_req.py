@@ -29,7 +29,7 @@ class AdjustCouponQuotasReq:
     }
 
     def __init__(self, quota_id=None, indirect_partner_ids=None, quota_amount=None):
-        """AdjustCouponQuotasReq
+        r"""AdjustCouponQuotasReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AdjustCouponQuotasReq:
 
     @property
     def quota_id(self):
-        """Gets the quota_id of this AdjustCouponQuotasReq.
+        r"""Gets the quota_id of this AdjustCouponQuotasReq.
 
         华为云总经销商发放的代金券额度的ID。获取方法请参见查询优惠券额度。
 
@@ -65,7 +65,7 @@ class AdjustCouponQuotasReq:
 
     @quota_id.setter
     def quota_id(self, quota_id):
-        """Sets the quota_id of this AdjustCouponQuotasReq.
+        r"""Sets the quota_id of this AdjustCouponQuotasReq.
 
         华为云总经销商发放的代金券额度的ID。获取方法请参见查询优惠券额度。
 
@@ -76,7 +76,7 @@ class AdjustCouponQuotasReq:
 
     @property
     def indirect_partner_ids(self):
-        """Gets the indirect_partner_ids of this AdjustCouponQuotasReq.
+        r"""Gets the indirect_partner_ids of this AdjustCouponQuotasReq.
 
         云经销商ID列表。
 
@@ -87,7 +87,7 @@ class AdjustCouponQuotasReq:
 
     @indirect_partner_ids.setter
     def indirect_partner_ids(self, indirect_partner_ids):
-        """Sets the indirect_partner_ids of this AdjustCouponQuotasReq.
+        r"""Sets the indirect_partner_ids of this AdjustCouponQuotasReq.
 
         云经销商ID列表。
 
@@ -98,7 +98,7 @@ class AdjustCouponQuotasReq:
 
     @property
     def quota_amount(self):
-        """Gets the quota_amount of this AdjustCouponQuotasReq.
+        r"""Gets the quota_amount of this AdjustCouponQuotasReq.
 
         华为云总经销商向云经销商发放的代金券额度值。 单位：元。取值大于0且精确到小数点后2位。
 
@@ -109,7 +109,7 @@ class AdjustCouponQuotasReq:
 
     @quota_amount.setter
     def quota_amount(self, quota_amount):
-        """Sets the quota_amount of this AdjustCouponQuotasReq.
+        r"""Sets the quota_amount of this AdjustCouponQuotasReq.
 
         华为云总经销商向云经销商发放的代金券额度值。 单位：元。取值大于0且精确到小数点后2位。
 

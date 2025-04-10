@@ -29,7 +29,7 @@ class BatchWindow:
     }
 
     def __init__(self, count=None, time=None, interval=None):
-        """BatchWindow
+        r"""BatchWindow
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchWindow:
 
     @property
     def count(self):
-        """Gets the count of this BatchWindow.
+        r"""Gets the count of this BatchWindow.
 
         批量推送条数[1,10000]
 
@@ -68,7 +68,7 @@ class BatchWindow:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchWindow.
+        r"""Sets the count of this BatchWindow.
 
         批量推送条数[1,10000]
 
@@ -79,7 +79,7 @@ class BatchWindow:
 
     @property
     def time(self):
-        """Gets the time of this BatchWindow.
+        r"""Gets the time of this BatchWindow.
 
         重试次数
 
@@ -90,7 +90,7 @@ class BatchWindow:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this BatchWindow.
+        r"""Sets the time of this BatchWindow.
 
         重试次数
 
@@ -101,7 +101,7 @@ class BatchWindow:
 
     @property
     def interval(self):
-        """Gets the interval of this BatchWindow.
+        r"""Gets the interval of this BatchWindow.
 
         批量推送间隔[0,15]，单位秒
 
@@ -112,7 +112,7 @@ class BatchWindow:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this BatchWindow.
+        r"""Sets the interval of this BatchWindow.
 
         批量推送间隔[0,15]，单位秒
 

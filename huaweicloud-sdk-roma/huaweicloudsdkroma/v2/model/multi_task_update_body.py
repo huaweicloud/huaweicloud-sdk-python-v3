@@ -31,7 +31,7 @@ class MultiTaskUpdateBody:
     }
 
     def __init__(self, description=None, task_tag=None, operation_types=None, repulling_snapshot=None):
-        """MultiTaskUpdateBody
+        r"""MultiTaskUpdateBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class MultiTaskUpdateBody:
 
     @property
     def description(self):
-        """Gets the description of this MultiTaskUpdateBody.
+        r"""Gets the description of this MultiTaskUpdateBody.
 
         描述信息
 
@@ -73,7 +73,7 @@ class MultiTaskUpdateBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MultiTaskUpdateBody.
+        r"""Sets the description of this MultiTaskUpdateBody.
 
         描述信息
 
@@ -84,7 +84,7 @@ class MultiTaskUpdateBody:
 
     @property
     def task_tag(self):
-        """Gets the task_tag of this MultiTaskUpdateBody.
+        r"""Gets the task_tag of this MultiTaskUpdateBody.
 
         任务标签,只能包含字母、数字、中划线、下划线
 
@@ -95,7 +95,7 @@ class MultiTaskUpdateBody:
 
     @task_tag.setter
     def task_tag(self, task_tag):
-        """Sets the task_tag of this MultiTaskUpdateBody.
+        r"""Sets the task_tag of this MultiTaskUpdateBody.
 
         任务标签,只能包含字母、数字、中划线、下划线
 
@@ -106,7 +106,7 @@ class MultiTaskUpdateBody:
 
     @property
     def operation_types(self):
-        """Gets the operation_types of this MultiTaskUpdateBody.
+        r"""Gets the operation_types of this MultiTaskUpdateBody.
 
         需要支持的操作类型，支持多选，至少需要选择以下一种： - INSERT - UPDATE - DELETE
 
@@ -117,7 +117,7 @@ class MultiTaskUpdateBody:
 
     @operation_types.setter
     def operation_types(self, operation_types):
-        """Sets the operation_types of this MultiTaskUpdateBody.
+        r"""Sets the operation_types of this MultiTaskUpdateBody.
 
         需要支持的操作类型，支持多选，至少需要选择以下一种： - INSERT - UPDATE - DELETE
 
@@ -128,7 +128,7 @@ class MultiTaskUpdateBody:
 
     @property
     def repulling_snapshot(self):
-        """Gets the repulling_snapshot of this MultiTaskUpdateBody.
+        r"""Gets the repulling_snapshot of this MultiTaskUpdateBody.
 
         是否同步已有数据，仅在编辑任务时生效
 
@@ -139,7 +139,7 @@ class MultiTaskUpdateBody:
 
     @repulling_snapshot.setter
     def repulling_snapshot(self, repulling_snapshot):
-        """Sets the repulling_snapshot of this MultiTaskUpdateBody.
+        r"""Sets the repulling_snapshot of this MultiTaskUpdateBody.
 
         是否同步已有数据，仅在编辑任务时生效
 

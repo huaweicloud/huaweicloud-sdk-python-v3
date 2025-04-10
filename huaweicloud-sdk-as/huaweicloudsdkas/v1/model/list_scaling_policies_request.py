@@ -35,7 +35,7 @@ class ListScalingPoliciesRequest:
     }
 
     def __init__(self, scaling_group_id=None, scaling_policy_name=None, scaling_policy_type=None, scaling_policy_id=None, start_number=None, limit=None):
-        """ListScalingPoliciesRequest
+        r"""ListScalingPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListScalingPoliciesRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this ListScalingPoliciesRequest.
+        r"""Gets the scaling_group_id of this ListScalingPoliciesRequest.
 
         伸缩组ID。
 
@@ -88,7 +88,7 @@ class ListScalingPoliciesRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this ListScalingPoliciesRequest.
+        r"""Sets the scaling_group_id of this ListScalingPoliciesRequest.
 
         伸缩组ID。
 
@@ -99,7 +99,7 @@ class ListScalingPoliciesRequest:
 
     @property
     def scaling_policy_name(self):
-        """Gets the scaling_policy_name of this ListScalingPoliciesRequest.
+        r"""Gets the scaling_policy_name of this ListScalingPoliciesRequest.
 
         伸缩策略名称。
 
@@ -110,7 +110,7 @@ class ListScalingPoliciesRequest:
 
     @scaling_policy_name.setter
     def scaling_policy_name(self, scaling_policy_name):
-        """Sets the scaling_policy_name of this ListScalingPoliciesRequest.
+        r"""Sets the scaling_policy_name of this ListScalingPoliciesRequest.
 
         伸缩策略名称。
 
@@ -121,7 +121,7 @@ class ListScalingPoliciesRequest:
 
     @property
     def scaling_policy_type(self):
-        """Gets the scaling_policy_type of this ListScalingPoliciesRequest.
+        r"""Gets the scaling_policy_type of this ListScalingPoliciesRequest.
 
         策略类型。
 
@@ -132,7 +132,7 @@ class ListScalingPoliciesRequest:
 
     @scaling_policy_type.setter
     def scaling_policy_type(self, scaling_policy_type):
-        """Sets the scaling_policy_type of this ListScalingPoliciesRequest.
+        r"""Sets the scaling_policy_type of this ListScalingPoliciesRequest.
 
         策略类型。
 
@@ -143,7 +143,7 @@ class ListScalingPoliciesRequest:
 
     @property
     def scaling_policy_id(self):
-        """Gets the scaling_policy_id of this ListScalingPoliciesRequest.
+        r"""Gets the scaling_policy_id of this ListScalingPoliciesRequest.
 
         伸缩策略ID。
 
@@ -154,7 +154,7 @@ class ListScalingPoliciesRequest:
 
     @scaling_policy_id.setter
     def scaling_policy_id(self, scaling_policy_id):
-        """Sets the scaling_policy_id of this ListScalingPoliciesRequest.
+        r"""Sets the scaling_policy_id of this ListScalingPoliciesRequest.
 
         伸缩策略ID。
 
@@ -165,7 +165,7 @@ class ListScalingPoliciesRequest:
 
     @property
     def start_number(self):
-        """Gets the start_number of this ListScalingPoliciesRequest.
+        r"""Gets the start_number of this ListScalingPoliciesRequest.
 
         查询的起始行号，默认为0。
 
@@ -176,7 +176,7 @@ class ListScalingPoliciesRequest:
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this ListScalingPoliciesRequest.
+        r"""Sets the start_number of this ListScalingPoliciesRequest.
 
         查询的起始行号，默认为0。
 
@@ -187,7 +187,7 @@ class ListScalingPoliciesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScalingPoliciesRequest.
+        r"""Gets the limit of this ListScalingPoliciesRequest.
 
         查询记录数，默认20，最大100。
 
@@ -198,7 +198,7 @@ class ListScalingPoliciesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScalingPoliciesRequest.
+        r"""Sets the limit of this ListScalingPoliciesRequest.
 
         查询记录数，默认20，最大100。
 

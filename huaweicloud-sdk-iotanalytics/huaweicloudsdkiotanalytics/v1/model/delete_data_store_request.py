@@ -25,7 +25,7 @@ class DeleteDataStoreRequest:
     }
 
     def __init__(self, data_store_id=None):
-        """DeleteDataStoreRequest
+        r"""DeleteDataStoreRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDataStoreRequest:
 
     @property
     def data_store_id(self):
-        """Gets the data_store_id of this DeleteDataStoreRequest.
+        r"""Gets the data_store_id of this DeleteDataStoreRequest.
 
         存储 ID
 
@@ -53,7 +53,7 @@ class DeleteDataStoreRequest:
 
     @data_store_id.setter
     def data_store_id(self, data_store_id):
-        """Sets the data_store_id of this DeleteDataStoreRequest.
+        r"""Sets the data_store_id of this DeleteDataStoreRequest.
 
         存储 ID
 

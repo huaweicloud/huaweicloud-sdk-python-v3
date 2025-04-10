@@ -29,7 +29,7 @@ class ErrorCodeRedirectRules:
     }
 
     def __init__(self, error_code=None, target_code=None, target_link=None):
-        """ErrorCodeRedirectRules
+        r"""ErrorCodeRedirectRules
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ErrorCodeRedirectRules:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ErrorCodeRedirectRules.
+        r"""Gets the error_code of this ErrorCodeRedirectRules.
 
         重定向的错误码，当前支持以下状态码 4xx:400, 403, 404, 405, 414, 416, 451 5xx:500, 501, 502, 503, 504
 
@@ -65,7 +65,7 @@ class ErrorCodeRedirectRules:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ErrorCodeRedirectRules.
+        r"""Sets the error_code of this ErrorCodeRedirectRules.
 
         重定向的错误码，当前支持以下状态码 4xx:400, 403, 404, 405, 414, 416, 451 5xx:500, 501, 502, 503, 504
 
@@ -76,7 +76,7 @@ class ErrorCodeRedirectRules:
 
     @property
     def target_code(self):
-        """Gets the target_code of this ErrorCodeRedirectRules.
+        r"""Gets the target_code of this ErrorCodeRedirectRules.
 
         重定向状态码，取值为301或302
 
@@ -87,7 +87,7 @@ class ErrorCodeRedirectRules:
 
     @target_code.setter
     def target_code(self, target_code):
-        """Sets the target_code of this ErrorCodeRedirectRules.
+        r"""Sets the target_code of this ErrorCodeRedirectRules.
 
         重定向状态码，取值为301或302
 
@@ -98,7 +98,7 @@ class ErrorCodeRedirectRules:
 
     @property
     def target_link(self):
-        """Gets the target_link of this ErrorCodeRedirectRules.
+        r"""Gets the target_link of this ErrorCodeRedirectRules.
 
         重定向的目标链接
 
@@ -109,7 +109,7 @@ class ErrorCodeRedirectRules:
 
     @target_link.setter
     def target_link(self, target_link):
-        """Sets the target_link of this ErrorCodeRedirectRules.
+        r"""Sets the target_link of this ErrorCodeRedirectRules.
 
         重定向的目标链接
 

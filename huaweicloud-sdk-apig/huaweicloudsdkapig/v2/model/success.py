@@ -31,7 +31,7 @@ class Success:
     }
 
     def __init__(self, path=None, method=None, action=None, id=None):
-        """Success
+        r"""Success
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Success:
 
     @property
     def path(self):
-        """Gets the path of this Success.
+        r"""Gets the path of this Success.
 
         API请求路径
 
@@ -75,7 +75,7 @@ class Success:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this Success.
+        r"""Sets the path of this Success.
 
         API请求路径
 
@@ -86,7 +86,7 @@ class Success:
 
     @property
     def method(self):
-        """Gets the method of this Success.
+        r"""Gets the method of this Success.
 
         API请求方法
 
@@ -97,7 +97,7 @@ class Success:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this Success.
+        r"""Sets the method of this Success.
 
         API请求方法
 
@@ -108,7 +108,7 @@ class Success:
 
     @property
     def action(self):
-        """Gets the action of this Success.
+        r"""Gets the action of this Success.
 
         导入行为： - update：表示更新API - create：表示新建API
 
@@ -119,7 +119,7 @@ class Success:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this Success.
+        r"""Sets the action of this Success.
 
         导入行为： - update：表示更新API - create：表示新建API
 
@@ -130,7 +130,7 @@ class Success:
 
     @property
     def id(self):
-        """Gets the id of this Success.
+        r"""Gets the id of this Success.
 
         导入成功的API编号
 
@@ -141,7 +141,7 @@ class Success:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Success.
+        r"""Sets the id of this Success.
 
         导入成功的API编号
 

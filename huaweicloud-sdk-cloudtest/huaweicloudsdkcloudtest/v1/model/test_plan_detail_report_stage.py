@@ -25,7 +25,7 @@ class TestPlanDetailReportStage:
     }
 
     def __init__(self, case_complete_rate=None):
-        """TestPlanDetailReportStage
+        r"""TestPlanDetailReportStage
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TestPlanDetailReportStage:
 
     @property
     def case_complete_rate(self):
-        """Gets the case_complete_rate of this TestPlanDetailReportStage.
+        r"""Gets the case_complete_rate of this TestPlanDetailReportStage.
 
         用例完成率,按状态统计
 
@@ -54,7 +54,7 @@ class TestPlanDetailReportStage:
 
     @case_complete_rate.setter
     def case_complete_rate(self, case_complete_rate):
-        """Sets the case_complete_rate of this TestPlanDetailReportStage.
+        r"""Sets the case_complete_rate of this TestPlanDetailReportStage.
 
         用例完成率,按状态统计
 

@@ -32,7 +32,7 @@ class UpdateLtsInfoConfigResponse(SdkResponse):
     }
 
     def __init__(self, id=None, enabled=None, lts_id_info=None, enabale=None):
-        """UpdateLtsInfoConfigResponse
+        r"""UpdateLtsInfoConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateLtsInfoConfigResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateLtsInfoConfigResponse.
+        r"""Gets the id of this UpdateLtsInfoConfigResponse.
 
         lts配置信息id
 
@@ -76,7 +76,7 @@ class UpdateLtsInfoConfigResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateLtsInfoConfigResponse.
+        r"""Sets the id of this UpdateLtsInfoConfigResponse.
 
         lts配置信息id
 
@@ -87,7 +87,7 @@ class UpdateLtsInfoConfigResponse(SdkResponse):
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateLtsInfoConfigResponse.
+        r"""Gets the enabled of this UpdateLtsInfoConfigResponse.
 
         是否开启全量日志   - false: 不开启   - true: 开启
 
@@ -98,7 +98,7 @@ class UpdateLtsInfoConfigResponse(SdkResponse):
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateLtsInfoConfigResponse.
+        r"""Sets the enabled of this UpdateLtsInfoConfigResponse.
 
         是否开启全量日志   - false: 不开启   - true: 开启
 
@@ -109,7 +109,7 @@ class UpdateLtsInfoConfigResponse(SdkResponse):
 
     @property
     def lts_id_info(self):
-        """Gets the lts_id_info of this UpdateLtsInfoConfigResponse.
+        r"""Gets the lts_id_info of this UpdateLtsInfoConfigResponse.
 
         :return: The lts_id_info of this UpdateLtsInfoConfigResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.LtsIdInfo`
@@ -118,7 +118,7 @@ class UpdateLtsInfoConfigResponse(SdkResponse):
 
     @lts_id_info.setter
     def lts_id_info(self, lts_id_info):
-        """Sets the lts_id_info of this UpdateLtsInfoConfigResponse.
+        r"""Sets the lts_id_info of this UpdateLtsInfoConfigResponse.
 
         :param lts_id_info: The lts_id_info of this UpdateLtsInfoConfigResponse.
         :type lts_id_info: :class:`huaweicloudsdkwaf.v1.LtsIdInfo`
@@ -127,7 +127,7 @@ class UpdateLtsInfoConfigResponse(SdkResponse):
 
     @property
     def enabale(self):
-        """Gets the enabale of this UpdateLtsInfoConfigResponse.
+        r"""Gets the enabale of this UpdateLtsInfoConfigResponse.
 
         该参数废弃，请忽略
 
@@ -138,7 +138,7 @@ class UpdateLtsInfoConfigResponse(SdkResponse):
 
     @enabale.setter
     def enabale(self, enabale):
-        """Sets the enabale of this UpdateLtsInfoConfigResponse.
+        r"""Sets the enabale of this UpdateLtsInfoConfigResponse.
 
         该参数废弃，请忽略
 

@@ -27,7 +27,7 @@ class UpdateLogGroupParams:
     }
 
     def __init__(self, ttl_in_days=None, tags=None):
-        """UpdateLogGroupParams
+        r"""UpdateLogGroupParams
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateLogGroupParams:
 
     @property
     def ttl_in_days(self):
-        """Gets the ttl_in_days of this UpdateLogGroupParams.
+        r"""Gets the ttl_in_days of this UpdateLogGroupParams.
 
         日志存储时间 天。 取值范围为 [1, 30]
 
@@ -60,7 +60,7 @@ class UpdateLogGroupParams:
 
     @ttl_in_days.setter
     def ttl_in_days(self, ttl_in_days):
-        """Sets the ttl_in_days of this UpdateLogGroupParams.
+        r"""Sets the ttl_in_days of this UpdateLogGroupParams.
 
         日志存储时间 天。 取值范围为 [1, 30]
 
@@ -71,7 +71,7 @@ class UpdateLogGroupParams:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateLogGroupParams.
+        r"""Gets the tags of this UpdateLogGroupParams.
 
         标签字段信息
 
@@ -82,7 +82,7 @@ class UpdateLogGroupParams:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateLogGroupParams.
+        r"""Sets the tags of this UpdateLogGroupParams.
 
         标签字段信息
 

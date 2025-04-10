@@ -26,7 +26,7 @@ class ShowClusterResponse(SdkResponse):
     }
 
     def __init__(self, cluster=None):
-        """ShowClusterResponse
+        r"""ShowClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowClusterResponse(SdkResponse):
 
     @property
     def cluster(self):
-        """Gets the cluster of this ShowClusterResponse.
+        r"""Gets the cluster of this ShowClusterResponse.
 
         :return: The cluster of this ShowClusterResponse.
         :rtype: :class:`huaweicloudsdkkafka.v2.ShowClusterRespCluster`
@@ -53,7 +53,7 @@ class ShowClusterResponse(SdkResponse):
 
     @cluster.setter
     def cluster(self, cluster):
-        """Sets the cluster of this ShowClusterResponse.
+        r"""Sets the cluster of this ShowClusterResponse.
 
         :param cluster: The cluster of this ShowClusterResponse.
         :type cluster: :class:`huaweicloudsdkkafka.v2.ShowClusterRespCluster`

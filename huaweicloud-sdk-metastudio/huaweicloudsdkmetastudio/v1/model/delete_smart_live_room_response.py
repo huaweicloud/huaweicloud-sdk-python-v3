@@ -26,7 +26,7 @@ class DeleteSmartLiveRoomResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """DeleteSmartLiveRoomResponse
+        r"""DeleteSmartLiveRoomResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteSmartLiveRoomResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteSmartLiveRoomResponse.
+        r"""Gets the x_request_id of this DeleteSmartLiveRoomResponse.
 
         :return: The x_request_id of this DeleteSmartLiveRoomResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteSmartLiveRoomResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteSmartLiveRoomResponse.
+        r"""Sets the x_request_id of this DeleteSmartLiveRoomResponse.
 
         :param x_request_id: The x_request_id of this DeleteSmartLiveRoomResponse.
         :type x_request_id: str

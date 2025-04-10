@@ -24,7 +24,7 @@ class UpdateTimerRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateTimerRuleResponse
+        r"""UpdateTimerRuleResponse
 
         The model defined in huaweicloud sdk
 

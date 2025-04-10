@@ -26,7 +26,7 @@ class ShowPolicyResponse(SdkResponse):
     }
 
     def __init__(self, policy=None):
-        """ShowPolicyResponse
+        r"""ShowPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPolicyResponse(SdkResponse):
 
     @property
     def policy(self):
-        """Gets the policy of this ShowPolicyResponse.
+        r"""Gets the policy of this ShowPolicyResponse.
 
         :return: The policy of this ShowPolicyResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.PolicyDto`
@@ -53,7 +53,7 @@ class ShowPolicyResponse(SdkResponse):
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this ShowPolicyResponse.
+        r"""Sets the policy of this ShowPolicyResponse.
 
         :param policy: The policy of this ShowPolicyResponse.
         :type policy: :class:`huaweicloudsdkorganizations.v1.PolicyDto`

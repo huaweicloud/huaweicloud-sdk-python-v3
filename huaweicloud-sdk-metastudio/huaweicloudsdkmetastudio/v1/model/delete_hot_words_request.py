@@ -27,7 +27,7 @@ class DeleteHotWordsRequest:
     }
 
     def __init__(self, x_app_user_id=None, hot_words_id=None):
-        """DeleteHotWordsRequest
+        r"""DeleteHotWordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteHotWordsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this DeleteHotWordsRequest.
+        r"""Gets the x_app_user_id of this DeleteHotWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -60,7 +60,7 @@ class DeleteHotWordsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this DeleteHotWordsRequest.
+        r"""Sets the x_app_user_id of this DeleteHotWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -71,7 +71,7 @@ class DeleteHotWordsRequest:
 
     @property
     def hot_words_id(self):
-        """Gets the hot_words_id of this DeleteHotWordsRequest.
+        r"""Gets the hot_words_id of this DeleteHotWordsRequest.
 
         热词记录ID。
 
@@ -82,7 +82,7 @@ class DeleteHotWordsRequest:
 
     @hot_words_id.setter
     def hot_words_id(self, hot_words_id):
-        """Sets the hot_words_id of this DeleteHotWordsRequest.
+        r"""Sets the hot_words_id of this DeleteHotWordsRequest.
 
         热词记录ID。
 

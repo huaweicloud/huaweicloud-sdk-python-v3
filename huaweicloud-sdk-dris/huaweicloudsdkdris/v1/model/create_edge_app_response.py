@@ -34,7 +34,7 @@ class CreateEdgeAppResponse(SdkResponse):
     }
 
     def __init__(self, edge_app_id=None, description=None, created_time=None, last_modified_time=None, last_published_version=None):
-        """CreateEdgeAppResponse
+        r"""CreateEdgeAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this CreateEdgeAppResponse.
+        r"""Gets the edge_app_id of this CreateEdgeAppResponse.
 
         **参数说明**：用户自定义应用唯一ID。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）、美元符号（$）的组合。
 
@@ -83,7 +83,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this CreateEdgeAppResponse.
+        r"""Sets the edge_app_id of this CreateEdgeAppResponse.
 
         **参数说明**：用户自定义应用唯一ID。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）、美元符号（$）的组合。
 
@@ -94,7 +94,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateEdgeAppResponse.
+        r"""Gets the description of this CreateEdgeAppResponse.
 
         **参数说明**：应用描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文引号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -105,7 +105,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateEdgeAppResponse.
+        r"""Sets the description of this CreateEdgeAppResponse.
 
         **参数说明**：应用描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文引号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -116,7 +116,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this CreateEdgeAppResponse.
+        r"""Gets the created_time of this CreateEdgeAppResponse.
 
         **参数说明**：创建时间。
 
@@ -127,7 +127,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CreateEdgeAppResponse.
+        r"""Sets the created_time of this CreateEdgeAppResponse.
 
         **参数说明**：创建时间。
 
@@ -138,7 +138,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this CreateEdgeAppResponse.
+        r"""Gets the last_modified_time of this CreateEdgeAppResponse.
 
         **参数说明**：更新时间。
 
@@ -149,7 +149,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this CreateEdgeAppResponse.
+        r"""Sets the last_modified_time of this CreateEdgeAppResponse.
 
         **参数说明**：更新时间。
 
@@ -160,7 +160,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @property
     def last_published_version(self):
-        """Gets the last_published_version of this CreateEdgeAppResponse.
+        r"""Gets the last_published_version of this CreateEdgeAppResponse.
 
         **参数说明**：最新发布版本。
 
@@ -171,7 +171,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @last_published_version.setter
     def last_published_version(self, last_published_version):
-        """Sets the last_published_version of this CreateEdgeAppResponse.
+        r"""Sets the last_published_version of this CreateEdgeAppResponse.
 
         **参数说明**：最新发布版本。
 

@@ -26,7 +26,7 @@ class CreatePublicipResponse(SdkResponse):
     }
 
     def __init__(self, publicip=None):
-        """CreatePublicipResponse
+        r"""CreatePublicipResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePublicipResponse(SdkResponse):
 
     @property
     def publicip(self):
-        """Gets the publicip of this CreatePublicipResponse.
+        r"""Gets the publicip of this CreatePublicipResponse.
 
         :return: The publicip of this CreatePublicipResponse.
         :rtype: :class:`huaweicloudsdkeip.v2.PublicipCreateResp`
@@ -53,7 +53,7 @@ class CreatePublicipResponse(SdkResponse):
 
     @publicip.setter
     def publicip(self, publicip):
-        """Sets the publicip of this CreatePublicipResponse.
+        r"""Sets the publicip of this CreatePublicipResponse.
 
         :param publicip: The publicip of this CreatePublicipResponse.
         :type publicip: :class:`huaweicloudsdkeip.v2.PublicipCreateResp`

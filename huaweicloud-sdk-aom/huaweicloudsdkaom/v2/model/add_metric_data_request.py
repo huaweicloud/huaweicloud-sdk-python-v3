@@ -25,7 +25,7 @@ class AddMetricDataRequest:
     }
 
     def __init__(self, body=None):
-        """AddMetricDataRequest
+        r"""AddMetricDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddMetricDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddMetricDataRequest.
+        r"""Gets the body of this AddMetricDataRequest.
 
         :return: The body of this AddMetricDataRequest.
         :rtype: list[:class:`huaweicloudsdkaom.v2.MetricDataItem`]
@@ -52,7 +52,7 @@ class AddMetricDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddMetricDataRequest.
+        r"""Sets the body of this AddMetricDataRequest.
 
         :param body: The body of this AddMetricDataRequest.
         :type body: list[:class:`huaweicloudsdkaom.v2.MetricDataItem`]

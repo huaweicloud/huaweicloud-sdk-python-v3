@@ -31,7 +31,7 @@ class LoginTokenUser:
     }
 
     def __init__(self, domain=None, name=None, password_expires_at=None, id=None):
-        """LoginTokenUser
+        r"""LoginTokenUser
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class LoginTokenUser:
 
     @property
     def domain(self):
-        """Gets the domain of this LoginTokenUser.
+        r"""Gets the domain of this LoginTokenUser.
 
         :return: The domain of this LoginTokenUser.
         :rtype: :class:`huaweicloudsdkiam.v3.LoginTokenDomain`
@@ -73,7 +73,7 @@ class LoginTokenUser:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this LoginTokenUser.
+        r"""Sets the domain of this LoginTokenUser.
 
         :param domain: The domain of this LoginTokenUser.
         :type domain: :class:`huaweicloudsdkiam.v3.LoginTokenDomain`
@@ -82,7 +82,7 @@ class LoginTokenUser:
 
     @property
     def name(self):
-        """Gets the name of this LoginTokenUser.
+        r"""Gets the name of this LoginTokenUser.
 
         被委托方用户名。
 
@@ -93,7 +93,7 @@ class LoginTokenUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LoginTokenUser.
+        r"""Sets the name of this LoginTokenUser.
 
         被委托方用户名。
 
@@ -104,7 +104,7 @@ class LoginTokenUser:
 
     @property
     def password_expires_at(self):
-        """Gets the password_expires_at of this LoginTokenUser.
+        r"""Gets the password_expires_at of this LoginTokenUser.
 
         被委托方用户的密码过期时间。
 
@@ -115,7 +115,7 @@ class LoginTokenUser:
 
     @password_expires_at.setter
     def password_expires_at(self, password_expires_at):
-        """Sets the password_expires_at of this LoginTokenUser.
+        r"""Sets the password_expires_at of this LoginTokenUser.
 
         被委托方用户的密码过期时间。
 
@@ -126,7 +126,7 @@ class LoginTokenUser:
 
     @property
     def id(self):
-        """Gets the id of this LoginTokenUser.
+        r"""Gets the id of this LoginTokenUser.
 
         被委托方用户ID。
 
@@ -137,7 +137,7 @@ class LoginTokenUser:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LoginTokenUser.
+        r"""Sets the id of this LoginTokenUser.
 
         被委托方用户ID。
 

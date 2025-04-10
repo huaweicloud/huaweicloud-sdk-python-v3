@@ -25,7 +25,7 @@ class StackSetOperationActionPrimitiveTypeHolder:
     }
 
     def __init__(self, action=None):
-        """StackSetOperationActionPrimitiveTypeHolder
+        r"""StackSetOperationActionPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StackSetOperationActionPrimitiveTypeHolder:
 
     @property
     def action(self):
-        """Gets the action of this StackSetOperationActionPrimitiveTypeHolder.
+        r"""Gets the action of this StackSetOperationActionPrimitiveTypeHolder.
 
         用户当前的操作   * `CREATE_STACK_INSTANCES` - 创建资源栈实例   * `DELETE_STACK_INSTANCES` - 删除资源栈实例   * `DEPLOY_STACK_SET` - 部署资源栈集   * `DEPLOY_STACK_INSTANCES` - 部署资源栈实例   * `UPDATE_STACK_INSTANCES` - 更新资源栈实例
 
@@ -54,7 +54,7 @@ class StackSetOperationActionPrimitiveTypeHolder:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this StackSetOperationActionPrimitiveTypeHolder.
+        r"""Sets the action of this StackSetOperationActionPrimitiveTypeHolder.
 
         用户当前的操作   * `CREATE_STACK_INSTANCES` - 创建资源栈实例   * `DELETE_STACK_INSTANCES` - 删除资源栈实例   * `DEPLOY_STACK_SET` - 部署资源栈集   * `DEPLOY_STACK_INSTANCES` - 部署资源栈实例   * `UPDATE_STACK_INSTANCES` - 更新资源栈实例
 

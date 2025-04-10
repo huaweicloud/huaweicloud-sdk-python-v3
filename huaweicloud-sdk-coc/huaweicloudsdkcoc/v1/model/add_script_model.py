@@ -37,7 +37,7 @@ class AddScriptModel:
     }
 
     def __init__(self, name=None, properties=None, description=None, type=None, content=None, enterprise_project_id=None, script_params=None):
-        """AddScriptModel
+        r"""AddScriptModel
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class AddScriptModel:
 
     @property
     def name(self):
-        """Gets the name of this AddScriptModel.
+        r"""Gets the name of this AddScriptModel.
 
         脚本名称：只能包含中文、英文、数字、下划线
 
@@ -91,7 +91,7 @@ class AddScriptModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddScriptModel.
+        r"""Sets the name of this AddScriptModel.
 
         脚本名称：只能包含中文、英文、数字、下划线
 
@@ -102,7 +102,7 @@ class AddScriptModel:
 
     @property
     def properties(self):
-        """Gets the properties of this AddScriptModel.
+        r"""Gets the properties of this AddScriptModel.
 
         :return: The properties of this AddScriptModel.
         :rtype: :class:`huaweicloudsdkcoc.v1.ScriptPropertiesModel`
@@ -111,7 +111,7 @@ class AddScriptModel:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this AddScriptModel.
+        r"""Sets the properties of this AddScriptModel.
 
         :param properties: The properties of this AddScriptModel.
         :type properties: :class:`huaweicloudsdkcoc.v1.ScriptPropertiesModel`
@@ -120,7 +120,7 @@ class AddScriptModel:
 
     @property
     def description(self):
-        """Gets the description of this AddScriptModel.
+        r"""Gets the description of this AddScriptModel.
 
         脚本描述
 
@@ -131,7 +131,7 @@ class AddScriptModel:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddScriptModel.
+        r"""Sets the description of this AddScriptModel.
 
         脚本描述
 
@@ -142,7 +142,7 @@ class AddScriptModel:
 
     @property
     def type(self):
-        """Gets the type of this AddScriptModel.
+        r"""Gets the type of this AddScriptModel.
 
         脚本类型: 对于脚本后缀： SHELL:.sh PYTHON:.py BAT:.bat
 
@@ -153,7 +153,7 @@ class AddScriptModel:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AddScriptModel.
+        r"""Sets the type of this AddScriptModel.
 
         脚本类型: 对于脚本后缀： SHELL:.sh PYTHON:.py BAT:.bat
 
@@ -164,7 +164,7 @@ class AddScriptModel:
 
     @property
     def content(self):
-        """Gets the content of this AddScriptModel.
+        r"""Gets the content of this AddScriptModel.
 
         脚本内容
 
@@ -175,7 +175,7 @@ class AddScriptModel:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this AddScriptModel.
+        r"""Sets the content of this AddScriptModel.
 
         脚本内容
 
@@ -186,7 +186,7 @@ class AddScriptModel:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this AddScriptModel.
+        r"""Gets the enterprise_project_id of this AddScriptModel.
 
         企业项目ID，默认为：0
 
@@ -197,7 +197,7 @@ class AddScriptModel:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this AddScriptModel.
+        r"""Sets the enterprise_project_id of this AddScriptModel.
 
         企业项目ID，默认为：0
 
@@ -208,7 +208,7 @@ class AddScriptModel:
 
     @property
     def script_params(self):
-        """Gets the script_params of this AddScriptModel.
+        r"""Gets the script_params of this AddScriptModel.
 
         脚本入参
 
@@ -219,7 +219,7 @@ class AddScriptModel:
 
     @script_params.setter
     def script_params(self, script_params):
-        """Sets the script_params of this AddScriptModel.
+        r"""Sets the script_params of this AddScriptModel.
 
         脚本入参
 

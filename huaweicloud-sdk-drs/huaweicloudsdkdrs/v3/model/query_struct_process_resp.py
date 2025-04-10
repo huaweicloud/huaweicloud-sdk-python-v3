@@ -31,7 +31,7 @@ class QueryStructProcessResp:
     }
 
     def __init__(self, job_id=None, error_code=None, error_message=None, struct_process=None):
-        """QueryStructProcessResp
+        r"""QueryStructProcessResp
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class QueryStructProcessResp:
 
     @property
     def job_id(self):
-        """Gets the job_id of this QueryStructProcessResp.
+        r"""Gets the job_id of this QueryStructProcessResp.
 
         任务ID
 
@@ -74,7 +74,7 @@ class QueryStructProcessResp:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this QueryStructProcessResp.
+        r"""Sets the job_id of this QueryStructProcessResp.
 
         任务ID
 
@@ -85,7 +85,7 @@ class QueryStructProcessResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this QueryStructProcessResp.
+        r"""Gets the error_code of this QueryStructProcessResp.
 
         错误码
 
@@ -96,7 +96,7 @@ class QueryStructProcessResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this QueryStructProcessResp.
+        r"""Sets the error_code of this QueryStructProcessResp.
 
         错误码
 
@@ -107,7 +107,7 @@ class QueryStructProcessResp:
 
     @property
     def error_message(self):
-        """Gets the error_message of this QueryStructProcessResp.
+        r"""Gets the error_message of this QueryStructProcessResp.
 
         错误信息
 
@@ -118,7 +118,7 @@ class QueryStructProcessResp:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this QueryStructProcessResp.
+        r"""Sets the error_message of this QueryStructProcessResp.
 
         错误信息
 
@@ -129,7 +129,7 @@ class QueryStructProcessResp:
 
     @property
     def struct_process(self):
-        """Gets the struct_process of this QueryStructProcessResp.
+        r"""Gets the struct_process of this QueryStructProcessResp.
 
         :return: The struct_process of this QueryStructProcessResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.StructProcessResp`
@@ -138,7 +138,7 @@ class QueryStructProcessResp:
 
     @struct_process.setter
     def struct_process(self, struct_process):
-        """Sets the struct_process of this QueryStructProcessResp.
+        r"""Sets the struct_process of this QueryStructProcessResp.
 
         :param struct_process: The struct_process of this QueryStructProcessResp.
         :type struct_process: :class:`huaweicloudsdkdrs.v3.StructProcessResp`

@@ -26,7 +26,7 @@ class BatchDeleteJobsByIdResponse(SdkResponse):
     }
 
     def __init__(self, jobs=None):
-        """BatchDeleteJobsByIdResponse
+        r"""BatchDeleteJobsByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteJobsByIdResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchDeleteJobsByIdResponse.
+        r"""Gets the jobs of this BatchDeleteJobsByIdResponse.
 
         批量删除任务响应体。
 
@@ -55,7 +55,7 @@ class BatchDeleteJobsByIdResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchDeleteJobsByIdResponse.
+        r"""Sets the jobs of this BatchDeleteJobsByIdResponse.
 
         批量删除任务响应体。
 

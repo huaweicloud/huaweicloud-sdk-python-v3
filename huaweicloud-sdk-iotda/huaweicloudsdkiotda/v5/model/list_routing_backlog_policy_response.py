@@ -30,7 +30,7 @@ class ListRoutingBacklogPolicyResponse(SdkResponse):
     }
 
     def __init__(self, backlog_policies=None, count=None, marker=None):
-        """ListRoutingBacklogPolicyResponse
+        r"""ListRoutingBacklogPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRoutingBacklogPolicyResponse(SdkResponse):
 
     @property
     def backlog_policies(self):
-        """Gets the backlog_policies of this ListRoutingBacklogPolicyResponse.
+        r"""Gets the backlog_policies of this ListRoutingBacklogPolicyResponse.
 
         数据流转积压策略列表。
 
@@ -69,7 +69,7 @@ class ListRoutingBacklogPolicyResponse(SdkResponse):
 
     @backlog_policies.setter
     def backlog_policies(self, backlog_policies):
-        """Sets the backlog_policies of this ListRoutingBacklogPolicyResponse.
+        r"""Sets the backlog_policies of this ListRoutingBacklogPolicyResponse.
 
         数据流转积压策略列表。
 
@@ -80,7 +80,7 @@ class ListRoutingBacklogPolicyResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListRoutingBacklogPolicyResponse.
+        r"""Gets the count of this ListRoutingBacklogPolicyResponse.
 
         满足查询条件的记录总数。
 
@@ -91,7 +91,7 @@ class ListRoutingBacklogPolicyResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListRoutingBacklogPolicyResponse.
+        r"""Sets the count of this ListRoutingBacklogPolicyResponse.
 
         满足查询条件的记录总数。
 
@@ -102,7 +102,7 @@ class ListRoutingBacklogPolicyResponse(SdkResponse):
 
     @property
     def marker(self):
-        """Gets the marker of this ListRoutingBacklogPolicyResponse.
+        r"""Gets the marker of this ListRoutingBacklogPolicyResponse.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 
@@ -113,7 +113,7 @@ class ListRoutingBacklogPolicyResponse(SdkResponse):
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRoutingBacklogPolicyResponse.
+        r"""Sets the marker of this ListRoutingBacklogPolicyResponse.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 

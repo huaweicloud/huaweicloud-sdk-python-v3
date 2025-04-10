@@ -30,7 +30,7 @@ class ShowDiagnosisTaskDetailsResponse(SdkResponse):
     }
 
     def __init__(self, abnormal_item_sum=None, failed_item_sum=None, diagnosis_node_report_list=None):
-        """ShowDiagnosisTaskDetailsResponse
+        r"""ShowDiagnosisTaskDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowDiagnosisTaskDetailsResponse(SdkResponse):
 
     @property
     def abnormal_item_sum(self):
-        """Gets the abnormal_item_sum of this ShowDiagnosisTaskDetailsResponse.
+        r"""Gets the abnormal_item_sum of this ShowDiagnosisTaskDetailsResponse.
 
         诊断结果为异常的诊断项总数
 
@@ -69,7 +69,7 @@ class ShowDiagnosisTaskDetailsResponse(SdkResponse):
 
     @abnormal_item_sum.setter
     def abnormal_item_sum(self, abnormal_item_sum):
-        """Sets the abnormal_item_sum of this ShowDiagnosisTaskDetailsResponse.
+        r"""Sets the abnormal_item_sum of this ShowDiagnosisTaskDetailsResponse.
 
         诊断结果为异常的诊断项总数
 
@@ -80,7 +80,7 @@ class ShowDiagnosisTaskDetailsResponse(SdkResponse):
 
     @property
     def failed_item_sum(self):
-        """Gets the failed_item_sum of this ShowDiagnosisTaskDetailsResponse.
+        r"""Gets the failed_item_sum of this ShowDiagnosisTaskDetailsResponse.
 
         诊断失败的诊断项总数
 
@@ -91,7 +91,7 @@ class ShowDiagnosisTaskDetailsResponse(SdkResponse):
 
     @failed_item_sum.setter
     def failed_item_sum(self, failed_item_sum):
-        """Sets the failed_item_sum of this ShowDiagnosisTaskDetailsResponse.
+        r"""Sets the failed_item_sum of this ShowDiagnosisTaskDetailsResponse.
 
         诊断失败的诊断项总数
 
@@ -102,7 +102,7 @@ class ShowDiagnosisTaskDetailsResponse(SdkResponse):
 
     @property
     def diagnosis_node_report_list(self):
-        """Gets the diagnosis_node_report_list of this ShowDiagnosisTaskDetailsResponse.
+        r"""Gets the diagnosis_node_report_list of this ShowDiagnosisTaskDetailsResponse.
 
         节点诊断报告列表
 
@@ -113,7 +113,7 @@ class ShowDiagnosisTaskDetailsResponse(SdkResponse):
 
     @diagnosis_node_report_list.setter
     def diagnosis_node_report_list(self, diagnosis_node_report_list):
-        """Sets the diagnosis_node_report_list of this ShowDiagnosisTaskDetailsResponse.
+        r"""Sets the diagnosis_node_report_list of this ShowDiagnosisTaskDetailsResponse.
 
         节点诊断报告列表
 

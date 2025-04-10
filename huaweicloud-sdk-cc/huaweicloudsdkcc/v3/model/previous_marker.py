@@ -25,7 +25,7 @@ class PreviousMarker:
     }
 
     def __init__(self, previous_marker=None):
-        """PreviousMarker
+        r"""PreviousMarker
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PreviousMarker:
 
     @property
     def previous_marker(self):
-        """Gets the previous_marker of this PreviousMarker.
+        r"""Gets the previous_marker of this PreviousMarker.
 
         向前分页标识符。
 
@@ -54,7 +54,7 @@ class PreviousMarker:
 
     @previous_marker.setter
     def previous_marker(self, previous_marker):
-        """Sets the previous_marker of this PreviousMarker.
+        r"""Sets the previous_marker of this PreviousMarker.
 
         向前分页标识符。
 

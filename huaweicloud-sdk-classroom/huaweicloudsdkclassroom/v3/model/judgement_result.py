@@ -35,7 +35,7 @@ class JudgementResult:
     }
 
     def __init__(self, output=None, file_id=None, image_id=None, case_count=None, executed_count=None, testcases=None):
-        """JudgementResult
+        r"""JudgementResult
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class JudgementResult:
 
     @property
     def output(self):
-        """Gets the output of this JudgementResult.
+        r"""Gets the output of this JudgementResult.
 
         标准类型输出结果
 
@@ -83,7 +83,7 @@ class JudgementResult:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this JudgementResult.
+        r"""Sets the output of this JudgementResult.
 
         标准类型输出结果
 
@@ -94,7 +94,7 @@ class JudgementResult:
 
     @property
     def file_id(self):
-        """Gets the file_id of this JudgementResult.
+        r"""Gets the file_id of this JudgementResult.
 
         文件形式输出的文件id，可根据文件id下载详情
 
@@ -105,7 +105,7 @@ class JudgementResult:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this JudgementResult.
+        r"""Sets the file_id of this JudgementResult.
 
         文件形式输出的文件id，可根据文件id下载详情
 
@@ -116,7 +116,7 @@ class JudgementResult:
 
     @property
     def image_id(self):
-        """Gets the image_id of this JudgementResult.
+        r"""Gets the image_id of this JudgementResult.
 
         图片形式输出的图片id，可根据图片id下载详情
 
@@ -127,7 +127,7 @@ class JudgementResult:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this JudgementResult.
+        r"""Sets the image_id of this JudgementResult.
 
         图片形式输出的图片id，可根据图片id下载详情
 
@@ -138,7 +138,7 @@ class JudgementResult:
 
     @property
     def case_count(self):
-        """Gets the case_count of this JudgementResult.
+        r"""Gets the case_count of this JudgementResult.
 
         用例形式输出的用例总个数
 
@@ -149,7 +149,7 @@ class JudgementResult:
 
     @case_count.setter
     def case_count(self, case_count):
-        """Sets the case_count of this JudgementResult.
+        r"""Sets the case_count of this JudgementResult.
 
         用例形式输出的用例总个数
 
@@ -160,7 +160,7 @@ class JudgementResult:
 
     @property
     def executed_count(self):
-        """Gets the executed_count of this JudgementResult.
+        r"""Gets the executed_count of this JudgementResult.
 
         用例形式输出的已执行用例的个数
 
@@ -171,7 +171,7 @@ class JudgementResult:
 
     @executed_count.setter
     def executed_count(self, executed_count):
-        """Sets the executed_count of this JudgementResult.
+        r"""Sets the executed_count of this JudgementResult.
 
         用例形式输出的已执行用例的个数
 
@@ -182,7 +182,7 @@ class JudgementResult:
 
     @property
     def testcases(self):
-        """Gets the testcases of this JudgementResult.
+        r"""Gets the testcases of this JudgementResult.
 
         用例形式输出的已执行用例的结果
 
@@ -193,7 +193,7 @@ class JudgementResult:
 
     @testcases.setter
     def testcases(self, testcases):
-        """Sets the testcases of this JudgementResult.
+        r"""Sets the testcases of this JudgementResult.
 
         用例形式输出的已执行用例的结果
 

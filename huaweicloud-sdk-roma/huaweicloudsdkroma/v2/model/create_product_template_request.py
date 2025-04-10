@@ -27,7 +27,7 @@ class CreateProductTemplateRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateProductTemplateRequest
+        r"""CreateProductTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateProductTemplateRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateProductTemplateRequest.
+        r"""Gets the instance_id of this CreateProductTemplateRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateProductTemplateRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateProductTemplateRequest.
+        r"""Sets the instance_id of this CreateProductTemplateRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateProductTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateProductTemplateRequest.
+        r"""Gets the body of this CreateProductTemplateRequest.
 
         :return: The body of this CreateProductTemplateRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProductTemplateRequestBody`
@@ -80,7 +80,7 @@ class CreateProductTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateProductTemplateRequest.
+        r"""Sets the body of this CreateProductTemplateRequest.
 
         :param body: The body of this CreateProductTemplateRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateProductTemplateRequestBody`

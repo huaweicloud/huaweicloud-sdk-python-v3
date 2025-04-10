@@ -53,7 +53,7 @@ class ExtDataSource:
     }
 
     def __init__(self, id=None, name=None, type=None, connect_info=None, user_name=None, version=None, configure_status=None, status=None, data_source_id=None, created=None, updated=None, data_source_updated=None, extend_properties=None, description=None, fail_reason=None):
-        """ExtDataSource
+        r"""ExtDataSource
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ExtDataSource:
 
     @property
     def id(self):
-        """Gets the id of this ExtDataSource.
+        r"""Gets the id of this ExtDataSource.
 
         id。
 
@@ -152,7 +152,7 @@ class ExtDataSource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExtDataSource.
+        r"""Sets the id of this ExtDataSource.
 
         id。
 
@@ -163,7 +163,7 @@ class ExtDataSource:
 
     @property
     def name(self):
-        """Gets the name of this ExtDataSource.
+        r"""Gets the name of this ExtDataSource.
 
         数据源名称。
 
@@ -174,7 +174,7 @@ class ExtDataSource:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExtDataSource.
+        r"""Sets the name of this ExtDataSource.
 
         数据源名称。
 
@@ -185,7 +185,7 @@ class ExtDataSource:
 
     @property
     def type(self):
-        """Gets the type of this ExtDataSource.
+        r"""Gets the type of this ExtDataSource.
 
         类型。
 
@@ -196,7 +196,7 @@ class ExtDataSource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExtDataSource.
+        r"""Sets the type of this ExtDataSource.
 
         类型。
 
@@ -207,7 +207,7 @@ class ExtDataSource:
 
     @property
     def connect_info(self):
-        """Gets the connect_info of this ExtDataSource.
+        r"""Gets the connect_info of this ExtDataSource.
 
         数据库。
 
@@ -218,7 +218,7 @@ class ExtDataSource:
 
     @connect_info.setter
     def connect_info(self, connect_info):
-        """Sets the connect_info of this ExtDataSource.
+        r"""Sets the connect_info of this ExtDataSource.
 
         数据库。
 
@@ -229,7 +229,7 @@ class ExtDataSource:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ExtDataSource.
+        r"""Gets the user_name of this ExtDataSource.
 
         用户名。
 
@@ -240,7 +240,7 @@ class ExtDataSource:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ExtDataSource.
+        r"""Sets the user_name of this ExtDataSource.
 
         用户名。
 
@@ -251,7 +251,7 @@ class ExtDataSource:
 
     @property
     def version(self):
-        """Gets the version of this ExtDataSource.
+        r"""Gets the version of this ExtDataSource.
 
         版本。
 
@@ -262,7 +262,7 @@ class ExtDataSource:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ExtDataSource.
+        r"""Sets the version of this ExtDataSource.
 
         版本。
 
@@ -273,7 +273,7 @@ class ExtDataSource:
 
     @property
     def configure_status(self):
-        """Gets the configure_status of this ExtDataSource.
+        r"""Gets the configure_status of this ExtDataSource.
 
         配置状态。
 
@@ -284,7 +284,7 @@ class ExtDataSource:
 
     @configure_status.setter
     def configure_status(self, configure_status):
-        """Sets the configure_status of this ExtDataSource.
+        r"""Sets the configure_status of this ExtDataSource.
 
         配置状态。
 
@@ -295,7 +295,7 @@ class ExtDataSource:
 
     @property
     def status(self):
-        """Gets the status of this ExtDataSource.
+        r"""Gets the status of this ExtDataSource.
 
         状态。
 
@@ -306,7 +306,7 @@ class ExtDataSource:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExtDataSource.
+        r"""Sets the status of this ExtDataSource.
 
         状态。
 
@@ -317,7 +317,7 @@ class ExtDataSource:
 
     @property
     def data_source_id(self):
-        """Gets the data_source_id of this ExtDataSource.
+        r"""Gets the data_source_id of this ExtDataSource.
 
         数据源id。
 
@@ -328,7 +328,7 @@ class ExtDataSource:
 
     @data_source_id.setter
     def data_source_id(self, data_source_id):
-        """Sets the data_source_id of this ExtDataSource.
+        r"""Sets the data_source_id of this ExtDataSource.
 
         数据源id。
 
@@ -339,7 +339,7 @@ class ExtDataSource:
 
     @property
     def created(self):
-        """Gets the created of this ExtDataSource.
+        r"""Gets the created of this ExtDataSource.
 
         创建时间。
 
@@ -350,7 +350,7 @@ class ExtDataSource:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ExtDataSource.
+        r"""Sets the created of this ExtDataSource.
 
         创建时间。
 
@@ -361,7 +361,7 @@ class ExtDataSource:
 
     @property
     def updated(self):
-        """Gets the updated of this ExtDataSource.
+        r"""Gets the updated of this ExtDataSource.
 
         更新时间。
 
@@ -372,7 +372,7 @@ class ExtDataSource:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ExtDataSource.
+        r"""Sets the updated of this ExtDataSource.
 
         更新时间。
 
@@ -383,7 +383,7 @@ class ExtDataSource:
 
     @property
     def data_source_updated(self):
-        """Gets the data_source_updated of this ExtDataSource.
+        r"""Gets the data_source_updated of this ExtDataSource.
 
         数据源更新时间。
 
@@ -394,7 +394,7 @@ class ExtDataSource:
 
     @data_source_updated.setter
     def data_source_updated(self, data_source_updated):
-        """Sets the data_source_updated of this ExtDataSource.
+        r"""Sets the data_source_updated of this ExtDataSource.
 
         数据源更新时间。
 
@@ -405,7 +405,7 @@ class ExtDataSource:
 
     @property
     def extend_properties(self):
-        """Gets the extend_properties of this ExtDataSource.
+        r"""Gets the extend_properties of this ExtDataSource.
 
         扩展信息。
 
@@ -416,7 +416,7 @@ class ExtDataSource:
 
     @extend_properties.setter
     def extend_properties(self, extend_properties):
-        """Sets the extend_properties of this ExtDataSource.
+        r"""Sets the extend_properties of this ExtDataSource.
 
         扩展信息。
 
@@ -427,7 +427,7 @@ class ExtDataSource:
 
     @property
     def description(self):
-        """Gets the description of this ExtDataSource.
+        r"""Gets the description of this ExtDataSource.
 
         描述。
 
@@ -438,7 +438,7 @@ class ExtDataSource:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ExtDataSource.
+        r"""Sets the description of this ExtDataSource.
 
         描述。
 
@@ -449,7 +449,7 @@ class ExtDataSource:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ExtDataSource.
+        r"""Gets the fail_reason of this ExtDataSource.
 
         失败原因。
 
@@ -460,7 +460,7 @@ class ExtDataSource:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ExtDataSource.
+        r"""Sets the fail_reason of this ExtDataSource.
 
         失败原因。
 

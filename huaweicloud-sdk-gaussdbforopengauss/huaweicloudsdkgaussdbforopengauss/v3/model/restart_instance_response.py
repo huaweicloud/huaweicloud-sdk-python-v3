@@ -26,7 +26,7 @@ class RestartInstanceResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """RestartInstanceResponse
+        r"""RestartInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RestartInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RestartInstanceResponse.
+        r"""Gets the job_id of this RestartInstanceResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class RestartInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RestartInstanceResponse.
+        r"""Sets the job_id of this RestartInstanceResponse.
 
         任务ID。
 

@@ -27,7 +27,7 @@ class ShowIssuesWrokFlowConfigRequest:
     }
 
     def __init__(self, project_id=None, tracker_id=None):
-        """ShowIssuesWrokFlowConfigRequest
+        r"""ShowIssuesWrokFlowConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowIssuesWrokFlowConfigRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowIssuesWrokFlowConfigRequest.
+        r"""Gets the project_id of this ShowIssuesWrokFlowConfigRequest.
 
         devcloud项目的32位id
 
@@ -59,7 +59,7 @@ class ShowIssuesWrokFlowConfigRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowIssuesWrokFlowConfigRequest.
+        r"""Sets the project_id of this ShowIssuesWrokFlowConfigRequest.
 
         devcloud项目的32位id
 
@@ -70,7 +70,7 @@ class ShowIssuesWrokFlowConfigRequest:
 
     @property
     def tracker_id(self):
-        """Gets the tracker_id of this ShowIssuesWrokFlowConfigRequest.
+        r"""Gets the tracker_id of this ShowIssuesWrokFlowConfigRequest.
 
         工作项类型id [2,3,4,5,6,7]
 
@@ -81,7 +81,7 @@ class ShowIssuesWrokFlowConfigRequest:
 
     @tracker_id.setter
     def tracker_id(self, tracker_id):
-        """Sets the tracker_id of this ShowIssuesWrokFlowConfigRequest.
+        r"""Sets the tracker_id of this ShowIssuesWrokFlowConfigRequest.
 
         工作项类型id [2,3,4,5,6,7]
 

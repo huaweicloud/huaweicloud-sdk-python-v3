@@ -35,7 +35,7 @@ class ListElasticResourcePoolScaleRecordsRequest:
     }
 
     def __init__(self, elastic_resource_pool_name=None, start_time=None, end_time=None, status=None, offset=None, limit=None):
-        """ListElasticResourcePoolScaleRecordsRequest
+        r"""ListElasticResourcePoolScaleRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListElasticResourcePoolScaleRecordsRequest:
 
     @property
     def elastic_resource_pool_name(self):
-        """Gets the elastic_resource_pool_name of this ListElasticResourcePoolScaleRecordsRequest.
+        r"""Gets the elastic_resource_pool_name of this ListElasticResourcePoolScaleRecordsRequest.
 
         弹性资源池名称
 
@@ -88,7 +88,7 @@ class ListElasticResourcePoolScaleRecordsRequest:
 
     @elastic_resource_pool_name.setter
     def elastic_resource_pool_name(self, elastic_resource_pool_name):
-        """Sets the elastic_resource_pool_name of this ListElasticResourcePoolScaleRecordsRequest.
+        r"""Sets the elastic_resource_pool_name of this ListElasticResourcePoolScaleRecordsRequest.
 
         弹性资源池名称
 
@@ -99,7 +99,7 @@ class ListElasticResourcePoolScaleRecordsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListElasticResourcePoolScaleRecordsRequest.
+        r"""Gets the start_time of this ListElasticResourcePoolScaleRecordsRequest.
 
         start_time用于查询扩缩容历史的开始时间，该时间点需大于当前时间点减30天，必须小于end_time 。时间格式为unix时间戳，单位：毫秒。 ①若start_time为空，则查询end_time前七天到end_time的数据（end_time最大不能大于当前时间30天）。 ②查询当前时间点前15天到当前时间点的数据（start_time和end_time同时为空）。
 
@@ -110,7 +110,7 @@ class ListElasticResourcePoolScaleRecordsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListElasticResourcePoolScaleRecordsRequest.
+        r"""Sets the start_time of this ListElasticResourcePoolScaleRecordsRequest.
 
         start_time用于查询扩缩容历史的开始时间，该时间点需大于当前时间点减30天，必须小于end_time 。时间格式为unix时间戳，单位：毫秒。 ①若start_time为空，则查询end_time前七天到end_time的数据（end_time最大不能大于当前时间30天）。 ②查询当前时间点前15天到当前时间点的数据（start_time和end_time同时为空）。
 
@@ -121,7 +121,7 @@ class ListElasticResourcePoolScaleRecordsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListElasticResourcePoolScaleRecordsRequest.
+        r"""Gets the end_time of this ListElasticResourcePoolScaleRecordsRequest.
 
         end_time用于查询扩缩容历史的结束时间，该时间点不能小于开始时间，不能大于当前时间。时间格式为unix时间戳，单位：毫秒。 ①若end_time为空，则查询start_time到当前时间点的数据。 ②查询当前时间点前15天到当前时间的数据（start_time和end_time同时为空）。
 
@@ -132,7 +132,7 @@ class ListElasticResourcePoolScaleRecordsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListElasticResourcePoolScaleRecordsRequest.
+        r"""Sets the end_time of this ListElasticResourcePoolScaleRecordsRequest.
 
         end_time用于查询扩缩容历史的结束时间，该时间点不能小于开始时间，不能大于当前时间。时间格式为unix时间戳，单位：毫秒。 ①若end_time为空，则查询start_time到当前时间点的数据。 ②查询当前时间点前15天到当前时间的数据（start_time和end_time同时为空）。
 
@@ -143,7 +143,7 @@ class ListElasticResourcePoolScaleRecordsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListElasticResourcePoolScaleRecordsRequest.
+        r"""Gets the status of this ListElasticResourcePoolScaleRecordsRequest.
 
         弹性资源池扩缩容的状态
 
@@ -154,7 +154,7 @@ class ListElasticResourcePoolScaleRecordsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListElasticResourcePoolScaleRecordsRequest.
+        r"""Sets the status of this ListElasticResourcePoolScaleRecordsRequest.
 
         弹性资源池扩缩容的状态
 
@@ -165,7 +165,7 @@ class ListElasticResourcePoolScaleRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListElasticResourcePoolScaleRecordsRequest.
+        r"""Gets the offset of this ListElasticResourcePoolScaleRecordsRequest.
 
         偏移量
 
@@ -176,7 +176,7 @@ class ListElasticResourcePoolScaleRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListElasticResourcePoolScaleRecordsRequest.
+        r"""Sets the offset of this ListElasticResourcePoolScaleRecordsRequest.
 
         偏移量
 
@@ -187,7 +187,7 @@ class ListElasticResourcePoolScaleRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListElasticResourcePoolScaleRecordsRequest.
+        r"""Gets the limit of this ListElasticResourcePoolScaleRecordsRequest.
 
         当前分页条数
 
@@ -198,7 +198,7 @@ class ListElasticResourcePoolScaleRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListElasticResourcePoolScaleRecordsRequest.
+        r"""Sets the limit of this ListElasticResourcePoolScaleRecordsRequest.
 
         当前分页条数
 

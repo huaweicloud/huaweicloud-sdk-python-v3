@@ -33,7 +33,7 @@ class TemplateVersion:
     }
 
     def __init__(self, template_id=None, template_name=None, version_description=None, create_time=None, version_id=None):
-        """TemplateVersion
+        r"""TemplateVersion
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class TemplateVersion:
 
     @property
     def template_id(self):
-        """Gets the template_id of this TemplateVersion.
+        r"""Gets the template_id of this TemplateVersion.
 
         模板的唯一ID，由模板服务随机生成
 
@@ -78,7 +78,7 @@ class TemplateVersion:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this TemplateVersion.
+        r"""Sets the template_id of this TemplateVersion.
 
         模板的唯一ID，由模板服务随机生成
 
@@ -89,7 +89,7 @@ class TemplateVersion:
 
     @property
     def template_name(self):
-        """Gets the template_name of this TemplateVersion.
+        r"""Gets the template_name of this TemplateVersion.
 
         用户希望创建的模板名称
 
@@ -100,7 +100,7 @@ class TemplateVersion:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this TemplateVersion.
+        r"""Sets the template_name of this TemplateVersion.
 
         用户希望创建的模板名称
 
@@ -111,7 +111,7 @@ class TemplateVersion:
 
     @property
     def version_description(self):
-        """Gets the version_description of this TemplateVersion.
+        r"""Gets the version_description of this TemplateVersion.
 
         模板版本的描述。可用于客户识别自己的模板版本
 
@@ -122,7 +122,7 @@ class TemplateVersion:
 
     @version_description.setter
     def version_description(self, version_description):
-        """Sets the version_description of this TemplateVersion.
+        r"""Sets the version_description of this TemplateVersion.
 
         模板版本的描述。可用于客户识别自己的模板版本
 
@@ -133,7 +133,7 @@ class TemplateVersion:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TemplateVersion.
+        r"""Gets the create_time of this TemplateVersion.
 
         版本创建时间，格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -144,7 +144,7 @@ class TemplateVersion:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TemplateVersion.
+        r"""Sets the create_time of this TemplateVersion.
 
         版本创建时间，格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -155,7 +155,7 @@ class TemplateVersion:
 
     @property
     def version_id(self):
-        """Gets the version_id of this TemplateVersion.
+        r"""Gets the version_id of this TemplateVersion.
 
         模板模板版本ID
 
@@ -166,7 +166,7 @@ class TemplateVersion:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this TemplateVersion.
+        r"""Sets the version_id of this TemplateVersion.
 
         模板模板版本ID
 

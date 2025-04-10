@@ -23,7 +23,7 @@ class EventDimensionName:
     }
 
     def __init__(self):
-        """EventDimensionName
+        r"""EventDimensionName
 
         The model defined in huaweicloud sdk
 

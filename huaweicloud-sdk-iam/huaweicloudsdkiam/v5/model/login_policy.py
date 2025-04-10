@@ -41,7 +41,7 @@ class LoginPolicy:
     }
 
     def __init__(self, user_validity_period=None, custom_info_for_login=None, lockout_duration=None, login_failed_times=None, period_with_login_failures=None, session_timeout=None, show_recent_login_info=None, allow_address_netmasks=None, allow_ip_ranges=None):
-        """LoginPolicy
+        r"""LoginPolicy
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class LoginPolicy:
 
     @property
     def user_validity_period(self):
-        """Gets the user_validity_period of this LoginPolicy.
+        r"""Gets the user_validity_period of this LoginPolicy.
 
         如果IAM用户在该值设置的有效期（天）内未登录，则被停用，不适用于根用户。
 
@@ -103,7 +103,7 @@ class LoginPolicy:
 
     @user_validity_period.setter
     def user_validity_period(self, user_validity_period):
-        """Sets the user_validity_period of this LoginPolicy.
+        r"""Sets the user_validity_period of this LoginPolicy.
 
         如果IAM用户在该值设置的有效期（天）内未登录，则被停用，不适用于根用户。
 
@@ -114,7 +114,7 @@ class LoginPolicy:
 
     @property
     def custom_info_for_login(self):
-        """Gets the custom_info_for_login of this LoginPolicy.
+        r"""Gets the custom_info_for_login of this LoginPolicy.
 
         登录提示信息。
 
@@ -125,7 +125,7 @@ class LoginPolicy:
 
     @custom_info_for_login.setter
     def custom_info_for_login(self, custom_info_for_login):
-        """Sets the custom_info_for_login of this LoginPolicy.
+        r"""Sets the custom_info_for_login of this LoginPolicy.
 
         登录提示信息。
 
@@ -136,7 +136,7 @@ class LoginPolicy:
 
     @property
     def lockout_duration(self):
-        """Gets the lockout_duration of this LoginPolicy.
+        r"""Gets the lockout_duration of this LoginPolicy.
 
         IAM用户登录锁定时长（分钟）。
 
@@ -147,7 +147,7 @@ class LoginPolicy:
 
     @lockout_duration.setter
     def lockout_duration(self, lockout_duration):
-        """Sets the lockout_duration of this LoginPolicy.
+        r"""Sets the lockout_duration of this LoginPolicy.
 
         IAM用户登录锁定时长（分钟）。
 
@@ -158,7 +158,7 @@ class LoginPolicy:
 
     @property
     def login_failed_times(self):
-        """Gets the login_failed_times of this LoginPolicy.
+        r"""Gets the login_failed_times of this LoginPolicy.
 
         限定时间内登录失败次数。
 
@@ -169,7 +169,7 @@ class LoginPolicy:
 
     @login_failed_times.setter
     def login_failed_times(self, login_failed_times):
-        """Sets the login_failed_times of this LoginPolicy.
+        r"""Sets the login_failed_times of this LoginPolicy.
 
         限定时间内登录失败次数。
 
@@ -180,7 +180,7 @@ class LoginPolicy:
 
     @property
     def period_with_login_failures(self):
-        """Gets the period_with_login_failures of this LoginPolicy.
+        r"""Gets the period_with_login_failures of this LoginPolicy.
 
         限定时间长度（分钟）。
 
@@ -191,7 +191,7 @@ class LoginPolicy:
 
     @period_with_login_failures.setter
     def period_with_login_failures(self, period_with_login_failures):
-        """Sets the period_with_login_failures of this LoginPolicy.
+        r"""Sets the period_with_login_failures of this LoginPolicy.
 
         限定时间长度（分钟）。
 
@@ -202,7 +202,7 @@ class LoginPolicy:
 
     @property
     def session_timeout(self):
-        """Gets the session_timeout of this LoginPolicy.
+        r"""Gets the session_timeout of this LoginPolicy.
 
         登录会话失效时间。
 
@@ -213,7 +213,7 @@ class LoginPolicy:
 
     @session_timeout.setter
     def session_timeout(self, session_timeout):
-        """Sets the session_timeout of this LoginPolicy.
+        r"""Sets the session_timeout of this LoginPolicy.
 
         登录会话失效时间。
 
@@ -224,7 +224,7 @@ class LoginPolicy:
 
     @property
     def show_recent_login_info(self):
-        """Gets the show_recent_login_info of this LoginPolicy.
+        r"""Gets the show_recent_login_info of this LoginPolicy.
 
         是否显示最近一次的登录信息。
 
@@ -235,7 +235,7 @@ class LoginPolicy:
 
     @show_recent_login_info.setter
     def show_recent_login_info(self, show_recent_login_info):
-        """Sets the show_recent_login_info of this LoginPolicy.
+        r"""Sets the show_recent_login_info of this LoginPolicy.
 
         是否显示最近一次的登录信息。
 
@@ -246,7 +246,7 @@ class LoginPolicy:
 
     @property
     def allow_address_netmasks(self):
-        """Gets the allow_address_netmasks of this LoginPolicy.
+        r"""Gets the allow_address_netmasks of this LoginPolicy.
 
         允许访问的IP地址或网段。
 
@@ -257,7 +257,7 @@ class LoginPolicy:
 
     @allow_address_netmasks.setter
     def allow_address_netmasks(self, allow_address_netmasks):
-        """Sets the allow_address_netmasks of this LoginPolicy.
+        r"""Sets the allow_address_netmasks of this LoginPolicy.
 
         允许访问的IP地址或网段。
 
@@ -268,7 +268,7 @@ class LoginPolicy:
 
     @property
     def allow_ip_ranges(self):
-        """Gets the allow_ip_ranges of this LoginPolicy.
+        r"""Gets the allow_ip_ranges of this LoginPolicy.
 
         允许访问的IP地址区间。
 
@@ -279,7 +279,7 @@ class LoginPolicy:
 
     @allow_ip_ranges.setter
     def allow_ip_ranges(self, allow_ip_ranges):
-        """Sets the allow_ip_ranges of this LoginPolicy.
+        r"""Sets the allow_ip_ranges of this LoginPolicy.
 
         允许访问的IP地址区间。
 

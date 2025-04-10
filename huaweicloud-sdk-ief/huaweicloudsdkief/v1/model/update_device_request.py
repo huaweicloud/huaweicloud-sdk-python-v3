@@ -29,7 +29,7 @@ class UpdateDeviceRequest:
     }
 
     def __init__(self, ief_instance_id=None, device_id=None, body=None):
-        """UpdateDeviceRequest
+        r"""UpdateDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateDeviceRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this UpdateDeviceRequest.
+        r"""Gets the ief_instance_id of this UpdateDeviceRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -67,7 +67,7 @@ class UpdateDeviceRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this UpdateDeviceRequest.
+        r"""Sets the ief_instance_id of this UpdateDeviceRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -78,7 +78,7 @@ class UpdateDeviceRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this UpdateDeviceRequest.
+        r"""Gets the device_id of this UpdateDeviceRequest.
 
         设备ID
 
@@ -89,7 +89,7 @@ class UpdateDeviceRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this UpdateDeviceRequest.
+        r"""Sets the device_id of this UpdateDeviceRequest.
 
         设备ID
 
@@ -100,7 +100,7 @@ class UpdateDeviceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDeviceRequest.
+        r"""Gets the body of this UpdateDeviceRequest.
 
         :return: The body of this UpdateDeviceRequest.
         :rtype: :class:`huaweicloudsdkief.v1.EdgemgrDevicesUpdate`
@@ -109,7 +109,7 @@ class UpdateDeviceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDeviceRequest.
+        r"""Sets the body of this UpdateDeviceRequest.
 
         :param body: The body of this UpdateDeviceRequest.
         :type body: :class:`huaweicloudsdkief.v1.EdgemgrDevicesUpdate`

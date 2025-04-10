@@ -27,7 +27,7 @@ class ClusterInformation:
     }
 
     def __init__(self, spec=None, metadata=None):
-        """ClusterInformation
+        r"""ClusterInformation
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ClusterInformation:
 
     @property
     def spec(self):
-        """Gets the spec of this ClusterInformation.
+        r"""Gets the spec of this ClusterInformation.
 
         :return: The spec of this ClusterInformation.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterInformationSpec`
@@ -58,7 +58,7 @@ class ClusterInformation:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ClusterInformation.
+        r"""Sets the spec of this ClusterInformation.
 
         :param spec: The spec of this ClusterInformation.
         :type spec: :class:`huaweicloudsdkcce.v3.ClusterInformationSpec`
@@ -67,7 +67,7 @@ class ClusterInformation:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ClusterInformation.
+        r"""Gets the metadata of this ClusterInformation.
 
         :return: The metadata of this ClusterInformation.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterMetadataForUpdate`
@@ -76,7 +76,7 @@ class ClusterInformation:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ClusterInformation.
+        r"""Sets the metadata of this ClusterInformation.
 
         :param metadata: The metadata of this ClusterInformation.
         :type metadata: :class:`huaweicloudsdkcce.v3.ClusterMetadataForUpdate`

@@ -25,7 +25,7 @@ class StackSetVarsURIContentPrimitiveTypeHolder:
     }
 
     def __init__(self, vars_uri_content=None):
-        """StackSetVarsURIContentPrimitiveTypeHolder
+        r"""StackSetVarsURIContentPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StackSetVarsURIContentPrimitiveTypeHolder:
 
     @property
     def vars_uri_content(self):
-        """Gets the vars_uri_content of this StackSetVarsURIContentPrimitiveTypeHolder.
+        r"""Gets the vars_uri_content of this StackSetVarsURIContentPrimitiveTypeHolder.
 
         vars_uri对应的文件内容
 
@@ -54,7 +54,7 @@ class StackSetVarsURIContentPrimitiveTypeHolder:
 
     @vars_uri_content.setter
     def vars_uri_content(self, vars_uri_content):
-        """Sets the vars_uri_content of this StackSetVarsURIContentPrimitiveTypeHolder.
+        r"""Sets the vars_uri_content of this StackSetVarsURIContentPrimitiveTypeHolder.
 
         vars_uri对应的文件内容
 

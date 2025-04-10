@@ -25,7 +25,7 @@ class SqlserverDatabaseForCreation:
     }
 
     def __init__(self, name=None):
-        """SqlserverDatabaseForCreation
+        r"""SqlserverDatabaseForCreation
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SqlserverDatabaseForCreation:
 
     @property
     def name(self):
-        """Gets the name of this SqlserverDatabaseForCreation.
+        r"""Gets the name of this SqlserverDatabaseForCreation.
 
         数据库名称。 数据库名称长度可在1～64个字符之间，由字母、数字、中划线或下划线组成，不能包含其他特殊字符，且不能以RDS for SQL Server系统库开头或结尾。 RDS for SQL Server系统库包括master，msdb，model，tempdb，resource以及rdsadmin。
 
@@ -53,7 +53,7 @@ class SqlserverDatabaseForCreation:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SqlserverDatabaseForCreation.
+        r"""Sets the name of this SqlserverDatabaseForCreation.
 
         数据库名称。 数据库名称长度可在1～64个字符之间，由字母、数字、中划线或下划线组成，不能包含其他特殊字符，且不能以RDS for SQL Server系统库开头或结尾。 RDS for SQL Server系统库包括master，msdb，model，tempdb，resource以及rdsadmin。
 

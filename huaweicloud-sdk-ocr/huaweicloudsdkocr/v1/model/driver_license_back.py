@@ -39,7 +39,7 @@ class DriverLicenseBack:
     }
 
     def __init__(self, type=None, number=None, name=None, issuing_authority=None, address=None, file_number=None, record=None, text_location=None):
-        """DriverLicenseBack
+        r"""DriverLicenseBack
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class DriverLicenseBack:
 
     @property
     def type(self):
-        """Gets the type of this DriverLicenseBack.
+        r"""Gets the type of this DriverLicenseBack.
 
         驾驶证类型。 normal：纸质驾驶证 electronic：电子驾驶证 
 
@@ -103,7 +103,7 @@ class DriverLicenseBack:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DriverLicenseBack.
+        r"""Sets the type of this DriverLicenseBack.
 
         驾驶证类型。 normal：纸质驾驶证 electronic：电子驾驶证 
 
@@ -114,7 +114,7 @@ class DriverLicenseBack:
 
     @property
     def number(self):
-        """Gets the number of this DriverLicenseBack.
+        r"""Gets the number of this DriverLicenseBack.
 
         驾驶证号。 
 
@@ -125,7 +125,7 @@ class DriverLicenseBack:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this DriverLicenseBack.
+        r"""Sets the number of this DriverLicenseBack.
 
         驾驶证号。 
 
@@ -136,7 +136,7 @@ class DriverLicenseBack:
 
     @property
     def name(self):
-        """Gets the name of this DriverLicenseBack.
+        r"""Gets the name of this DriverLicenseBack.
 
         姓名。 
 
@@ -147,7 +147,7 @@ class DriverLicenseBack:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DriverLicenseBack.
+        r"""Sets the name of this DriverLicenseBack.
 
         姓名。 
 
@@ -158,7 +158,7 @@ class DriverLicenseBack:
 
     @property
     def issuing_authority(self):
-        """Gets the issuing_authority of this DriverLicenseBack.
+        r"""Gets the issuing_authority of this DriverLicenseBack.
 
         发证机关。 
 
@@ -169,7 +169,7 @@ class DriverLicenseBack:
 
     @issuing_authority.setter
     def issuing_authority(self, issuing_authority):
-        """Sets the issuing_authority of this DriverLicenseBack.
+        r"""Sets the issuing_authority of this DriverLicenseBack.
 
         发证机关。 
 
@@ -180,7 +180,7 @@ class DriverLicenseBack:
 
     @property
     def address(self):
-        """Gets the address of this DriverLicenseBack.
+        r"""Gets the address of this DriverLicenseBack.
 
         住址。 
 
@@ -191,7 +191,7 @@ class DriverLicenseBack:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this DriverLicenseBack.
+        r"""Sets the address of this DriverLicenseBack.
 
         住址。 
 
@@ -202,7 +202,7 @@ class DriverLicenseBack:
 
     @property
     def file_number(self):
-        """Gets the file_number of this DriverLicenseBack.
+        r"""Gets the file_number of this DriverLicenseBack.
 
         档案编号。 > 说明：当驾驶证类型为纸质驾驶证时才返回。 
 
@@ -213,7 +213,7 @@ class DriverLicenseBack:
 
     @file_number.setter
     def file_number(self, file_number):
-        """Sets the file_number of this DriverLicenseBack.
+        r"""Sets the file_number of this DriverLicenseBack.
 
         档案编号。 > 说明：当驾驶证类型为纸质驾驶证时才返回。 
 
@@ -224,7 +224,7 @@ class DriverLicenseBack:
 
     @property
     def record(self):
-        """Gets the record of this DriverLicenseBack.
+        r"""Gets the record of this DriverLicenseBack.
 
         记录。 
 
@@ -235,7 +235,7 @@ class DriverLicenseBack:
 
     @record.setter
     def record(self, record):
-        """Sets the record of this DriverLicenseBack.
+        r"""Sets the record of this DriverLicenseBack.
 
         记录。 
 
@@ -246,7 +246,7 @@ class DriverLicenseBack:
 
     @property
     def text_location(self):
-        """Gets the text_location of this DriverLicenseBack.
+        r"""Gets the text_location of this DriverLicenseBack.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -257,7 +257,7 @@ class DriverLicenseBack:
 
     @text_location.setter
     def text_location(self, text_location):
-        """Sets the text_location of this DriverLicenseBack.
+        r"""Sets the text_location of this DriverLicenseBack.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 

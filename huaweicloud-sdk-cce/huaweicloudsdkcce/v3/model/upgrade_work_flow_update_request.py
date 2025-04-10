@@ -29,7 +29,7 @@ class UpgradeWorkFlowUpdateRequest:
     }
 
     def __init__(self, cluster_id=None, upgrade_workflow_id=None, body=None):
-        """UpgradeWorkFlowUpdateRequest
+        r"""UpgradeWorkFlowUpdateRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpgradeWorkFlowUpdateRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpgradeWorkFlowUpdateRequest.
+        r"""Gets the cluster_id of this UpgradeWorkFlowUpdateRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -66,7 +66,7 @@ class UpgradeWorkFlowUpdateRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpgradeWorkFlowUpdateRequest.
+        r"""Sets the cluster_id of this UpgradeWorkFlowUpdateRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -77,7 +77,7 @@ class UpgradeWorkFlowUpdateRequest:
 
     @property
     def upgrade_workflow_id(self):
-        """Gets the upgrade_workflow_id of this UpgradeWorkFlowUpdateRequest.
+        r"""Gets the upgrade_workflow_id of this UpgradeWorkFlowUpdateRequest.
 
         集群升级任务引导流程ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -88,7 +88,7 @@ class UpgradeWorkFlowUpdateRequest:
 
     @upgrade_workflow_id.setter
     def upgrade_workflow_id(self, upgrade_workflow_id):
-        """Sets the upgrade_workflow_id of this UpgradeWorkFlowUpdateRequest.
+        r"""Sets the upgrade_workflow_id of this UpgradeWorkFlowUpdateRequest.
 
         集群升级任务引导流程ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -99,7 +99,7 @@ class UpgradeWorkFlowUpdateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpgradeWorkFlowUpdateRequest.
+        r"""Gets the body of this UpgradeWorkFlowUpdateRequest.
 
         :return: The body of this UpgradeWorkFlowUpdateRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeWorkFlowUpdateRequestBody`
@@ -108,7 +108,7 @@ class UpgradeWorkFlowUpdateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpgradeWorkFlowUpdateRequest.
+        r"""Sets the body of this UpgradeWorkFlowUpdateRequest.
 
         :param body: The body of this UpgradeWorkFlowUpdateRequest.
         :type body: :class:`huaweicloudsdkcce.v3.UpgradeWorkFlowUpdateRequestBody`

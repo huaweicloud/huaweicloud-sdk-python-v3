@@ -29,7 +29,7 @@ class TaskOutputWebhook:
     }
 
     def __init__(self, url=None, headers=None, data_category=None):
-        """TaskOutputWebhook
+        r"""TaskOutputWebhook
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TaskOutputWebhook:
 
     @property
     def url(self):
-        """Gets the url of this TaskOutputWebhook.
+        r"""Gets the url of this TaskOutputWebhook.
 
         结果回调地址
 
@@ -66,7 +66,7 @@ class TaskOutputWebhook:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this TaskOutputWebhook.
+        r"""Sets the url of this TaskOutputWebhook.
 
         结果回调地址
 
@@ -77,7 +77,7 @@ class TaskOutputWebhook:
 
     @property
     def headers(self):
-        """Gets the headers of this TaskOutputWebhook.
+        r"""Gets the headers of this TaskOutputWebhook.
 
         结果回调时需要携带的请求头
 
@@ -88,7 +88,7 @@ class TaskOutputWebhook:
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this TaskOutputWebhook.
+        r"""Sets the headers of this TaskOutputWebhook.
 
         结果回调时需要携带的请求头
 
@@ -99,7 +99,7 @@ class TaskOutputWebhook:
 
     @property
     def data_category(self):
-        """Gets the data_category of this TaskOutputWebhook.
+        r"""Gets the data_category of this TaskOutputWebhook.
 
         作业输出数据类别的列表，当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据，部分服务需要
 
@@ -110,7 +110,7 @@ class TaskOutputWebhook:
 
     @data_category.setter
     def data_category(self, data_category):
-        """Sets the data_category of this TaskOutputWebhook.
+        r"""Sets the data_category of this TaskOutputWebhook.
 
         作业输出数据类别的列表，当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据，部分服务需要
 

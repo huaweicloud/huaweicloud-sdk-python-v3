@@ -45,7 +45,7 @@ class GetGroup:
     }
 
     def __init__(self, group_id=None, name=None, description=None, warm_data_usage=None, data_store_count=None, cold_data_usage=None, warm_data_retention_policy=None, cold_data_retention_policy=None, created_time=None, modified_time=None, type=None):
-        """GetGroup
+        r"""GetGroup
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class GetGroup:
 
     @property
     def group_id(self):
-        """Gets the group_id of this GetGroup.
+        r"""Gets the group_id of this GetGroup.
 
         存储组 ID
 
@@ -124,7 +124,7 @@ class GetGroup:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this GetGroup.
+        r"""Sets the group_id of this GetGroup.
 
         存储组 ID
 
@@ -135,7 +135,7 @@ class GetGroup:
 
     @property
     def name(self):
-        """Gets the name of this GetGroup.
+        r"""Gets the name of this GetGroup.
 
         存储组名称
 
@@ -146,7 +146,7 @@ class GetGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetGroup.
+        r"""Sets the name of this GetGroup.
 
         存储组名称
 
@@ -157,7 +157,7 @@ class GetGroup:
 
     @property
     def description(self):
-        """Gets the description of this GetGroup.
+        r"""Gets the description of this GetGroup.
 
         描述
 
@@ -168,7 +168,7 @@ class GetGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this GetGroup.
+        r"""Sets the description of this GetGroup.
 
         描述
 
@@ -179,7 +179,7 @@ class GetGroup:
 
     @property
     def warm_data_usage(self):
-        """Gets the warm_data_usage of this GetGroup.
+        r"""Gets the warm_data_usage of this GetGroup.
 
         温数据存储用量
 
@@ -190,7 +190,7 @@ class GetGroup:
 
     @warm_data_usage.setter
     def warm_data_usage(self, warm_data_usage):
-        """Sets the warm_data_usage of this GetGroup.
+        r"""Sets the warm_data_usage of this GetGroup.
 
         温数据存储用量
 
@@ -201,7 +201,7 @@ class GetGroup:
 
     @property
     def data_store_count(self):
-        """Gets the data_store_count of this GetGroup.
+        r"""Gets the data_store_count of this GetGroup.
 
         此存储组下存储实例的个数
 
@@ -212,7 +212,7 @@ class GetGroup:
 
     @data_store_count.setter
     def data_store_count(self, data_store_count):
-        """Sets the data_store_count of this GetGroup.
+        r"""Sets the data_store_count of this GetGroup.
 
         此存储组下存储实例的个数
 
@@ -223,7 +223,7 @@ class GetGroup:
 
     @property
     def cold_data_usage(self):
-        """Gets the cold_data_usage of this GetGroup.
+        r"""Gets the cold_data_usage of this GetGroup.
 
         冷数据存储用量
 
@@ -234,7 +234,7 @@ class GetGroup:
 
     @cold_data_usage.setter
     def cold_data_usage(self, cold_data_usage):
-        """Sets the cold_data_usage of this GetGroup.
+        r"""Sets the cold_data_usage of this GetGroup.
 
         冷数据存储用量
 
@@ -245,7 +245,7 @@ class GetGroup:
 
     @property
     def warm_data_retention_policy(self):
-        """Gets the warm_data_retention_policy of this GetGroup.
+        r"""Gets the warm_data_retention_policy of this GetGroup.
 
         温数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
 
@@ -256,7 +256,7 @@ class GetGroup:
 
     @warm_data_retention_policy.setter
     def warm_data_retention_policy(self, warm_data_retention_policy):
-        """Sets the warm_data_retention_policy of this GetGroup.
+        r"""Sets the warm_data_retention_policy of this GetGroup.
 
         温数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
 
@@ -267,7 +267,7 @@ class GetGroup:
 
     @property
     def cold_data_retention_policy(self):
-        """Gets the cold_data_retention_policy of this GetGroup.
+        r"""Gets the cold_data_retention_policy of this GetGroup.
 
         冷数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
 
@@ -278,7 +278,7 @@ class GetGroup:
 
     @cold_data_retention_policy.setter
     def cold_data_retention_policy(self, cold_data_retention_policy):
-        """Sets the cold_data_retention_policy of this GetGroup.
+        r"""Sets the cold_data_retention_policy of this GetGroup.
 
         冷数据老化策略，单位只支持d（天），且只支持整数，如365天则可配置为“365d”，如“365h”或“360.5d”等均不被支持
 
@@ -289,7 +289,7 @@ class GetGroup:
 
     @property
     def created_time(self):
-        """Gets the created_time of this GetGroup.
+        r"""Gets the created_time of this GetGroup.
 
         创建时间
 
@@ -300,7 +300,7 @@ class GetGroup:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this GetGroup.
+        r"""Sets the created_time of this GetGroup.
 
         创建时间
 
@@ -311,7 +311,7 @@ class GetGroup:
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this GetGroup.
+        r"""Gets the modified_time of this GetGroup.
 
         修改时间
 
@@ -322,7 +322,7 @@ class GetGroup:
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this GetGroup.
+        r"""Sets the modified_time of this GetGroup.
 
         修改时间
 
@@ -333,7 +333,7 @@ class GetGroup:
 
     @property
     def type(self):
-        """Gets the type of this GetGroup.
+        r"""Gets the type of this GetGroup.
 
         存储类型，有资产存储(取值:AssetStorage)、设备存储(取值:DeviceStorage)两种类型
 
@@ -344,7 +344,7 @@ class GetGroup:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GetGroup.
+        r"""Sets the type of this GetGroup.
 
         存储类型，有资产存储(取值:AssetStorage)、设备存储(取值:DeviceStorage)两种类型
 

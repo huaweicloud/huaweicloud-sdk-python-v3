@@ -38,7 +38,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, service_name=None, service_type=None, created_at=None, is_charge=None, public_border_group=None, enable_policy=None):
-        """ListServiceDescribeDetailsResponse
+        r"""ListServiceDescribeDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ListServiceDescribeDetailsResponse.
+        r"""Gets the id of this ListServiceDescribeDetailsResponse.
 
         终端节点服务的ID，唯一标识。
 
@@ -97,7 +97,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListServiceDescribeDetailsResponse.
+        r"""Sets the id of this ListServiceDescribeDetailsResponse.
 
         终端节点服务的ID，唯一标识。
 
@@ -108,7 +108,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
 
     @property
     def service_name(self):
-        """Gets the service_name of this ListServiceDescribeDetailsResponse.
+        r"""Gets the service_name of this ListServiceDescribeDetailsResponse.
 
         终端节点服务的名称。
 
@@ -119,7 +119,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this ListServiceDescribeDetailsResponse.
+        r"""Sets the service_name of this ListServiceDescribeDetailsResponse.
 
         终端节点服务的名称。
 
@@ -130,7 +130,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
 
     @property
     def service_type(self):
-        """Gets the service_type of this ListServiceDescribeDetailsResponse.
+        r"""Gets the service_type of this ListServiceDescribeDetailsResponse.
 
         终端节点服务类型。仅支持将用户私有服务创建为interface类型的终端节点服务。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
@@ -141,7 +141,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ListServiceDescribeDetailsResponse.
+        r"""Sets the service_type of this ListServiceDescribeDetailsResponse.
 
         终端节点服务类型。仅支持将用户私有服务创建为interface类型的终端节点服务。  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
@@ -152,7 +152,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListServiceDescribeDetailsResponse.
+        r"""Gets the created_at of this ListServiceDescribeDetailsResponse.
 
         终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -163,7 +163,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListServiceDescribeDetailsResponse.
+        r"""Sets the created_at of this ListServiceDescribeDetailsResponse.
 
         终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -174,7 +174,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
 
     @property
     def is_charge(self):
-        """Gets the is_charge of this ListServiceDescribeDetailsResponse.
+        r"""Gets the is_charge of this ListServiceDescribeDetailsResponse.
 
         连接该终端节点服务的终端节点是否计费。  - true：计费  - false：不计费
 
@@ -185,7 +185,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
 
     @is_charge.setter
     def is_charge(self, is_charge):
-        """Sets the is_charge of this ListServiceDescribeDetailsResponse.
+        r"""Sets the is_charge of this ListServiceDescribeDetailsResponse.
 
         连接该终端节点服务的终端节点是否计费。  - true：计费  - false：不计费
 
@@ -196,7 +196,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ListServiceDescribeDetailsResponse.
+        r"""Gets the public_border_group of this ListServiceDescribeDetailsResponse.
 
         终端节点对应Pool的Public Border Group信息
 
@@ -207,7 +207,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListServiceDescribeDetailsResponse.
+        r"""Sets the public_border_group of this ListServiceDescribeDetailsResponse.
 
         终端节点对应Pool的Public Border Group信息
 
@@ -218,7 +218,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
 
     @property
     def enable_policy(self):
-        """Gets the enable_policy of this ListServiceDescribeDetailsResponse.
+        r"""Gets the enable_policy of this ListServiceDescribeDetailsResponse.
 
         是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
@@ -229,7 +229,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
 
     @enable_policy.setter
     def enable_policy(self, enable_policy):
-        """Sets the enable_policy of this ListServiceDescribeDetailsResponse.
+        r"""Sets the enable_policy of this ListServiceDescribeDetailsResponse.
 
         是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 

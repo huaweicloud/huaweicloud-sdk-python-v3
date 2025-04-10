@@ -28,7 +28,7 @@ class NeutronListSecurityGroupsResponse(SdkResponse):
     }
 
     def __init__(self, security_groups=None, security_groups_links=None):
-        """NeutronListSecurityGroupsResponse
+        r"""NeutronListSecurityGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class NeutronListSecurityGroupsResponse(SdkResponse):
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this NeutronListSecurityGroupsResponse.
+        r"""Gets the security_groups of this NeutronListSecurityGroupsResponse.
 
         安全组对象列表
 
@@ -62,7 +62,7 @@ class NeutronListSecurityGroupsResponse(SdkResponse):
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this NeutronListSecurityGroupsResponse.
+        r"""Sets the security_groups of this NeutronListSecurityGroupsResponse.
 
         安全组对象列表
 
@@ -73,7 +73,7 @@ class NeutronListSecurityGroupsResponse(SdkResponse):
 
     @property
     def security_groups_links(self):
-        """Gets the security_groups_links of this NeutronListSecurityGroupsResponse.
+        r"""Gets the security_groups_links of this NeutronListSecurityGroupsResponse.
 
         分页信息
 
@@ -84,7 +84,7 @@ class NeutronListSecurityGroupsResponse(SdkResponse):
 
     @security_groups_links.setter
     def security_groups_links(self, security_groups_links):
-        """Sets the security_groups_links of this NeutronListSecurityGroupsResponse.
+        r"""Sets the security_groups_links of this NeutronListSecurityGroupsResponse.
 
         分页信息
 

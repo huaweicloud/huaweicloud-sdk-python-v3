@@ -37,7 +37,7 @@ class DatabaseFlavorRsp:
     }
 
     def __init__(self, code=None, name=None, cpu=None, ram=None, max_connections=None, disk_space=None, sold_out=None):
-        """DatabaseFlavorRsp
+        r"""DatabaseFlavorRsp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DatabaseFlavorRsp:
 
     @property
     def code(self):
-        """Gets the code of this DatabaseFlavorRsp.
+        r"""Gets the code of this DatabaseFlavorRsp.
 
         规格编号
 
@@ -89,7 +89,7 @@ class DatabaseFlavorRsp:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DatabaseFlavorRsp.
+        r"""Sets the code of this DatabaseFlavorRsp.
 
         规格编号
 
@@ -100,7 +100,7 @@ class DatabaseFlavorRsp:
 
     @property
     def name(self):
-        """Gets the name of this DatabaseFlavorRsp.
+        r"""Gets the name of this DatabaseFlavorRsp.
 
         规格名称
 
@@ -111,7 +111,7 @@ class DatabaseFlavorRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatabaseFlavorRsp.
+        r"""Sets the name of this DatabaseFlavorRsp.
 
         规格名称
 
@@ -122,7 +122,7 @@ class DatabaseFlavorRsp:
 
     @property
     def cpu(self):
-        """Gets the cpu of this DatabaseFlavorRsp.
+        r"""Gets the cpu of this DatabaseFlavorRsp.
 
         核数
 
@@ -133,7 +133,7 @@ class DatabaseFlavorRsp:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this DatabaseFlavorRsp.
+        r"""Sets the cpu of this DatabaseFlavorRsp.
 
         核数
 
@@ -144,7 +144,7 @@ class DatabaseFlavorRsp:
 
     @property
     def ram(self):
-        """Gets the ram of this DatabaseFlavorRsp.
+        r"""Gets the ram of this DatabaseFlavorRsp.
 
         内存
 
@@ -155,7 +155,7 @@ class DatabaseFlavorRsp:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this DatabaseFlavorRsp.
+        r"""Sets the ram of this DatabaseFlavorRsp.
 
         内存
 
@@ -166,7 +166,7 @@ class DatabaseFlavorRsp:
 
     @property
     def max_connections(self):
-        """Gets the max_connections of this DatabaseFlavorRsp.
+        r"""Gets the max_connections of this DatabaseFlavorRsp.
 
         最大连接数
 
@@ -177,7 +177,7 @@ class DatabaseFlavorRsp:
 
     @max_connections.setter
     def max_connections(self, max_connections):
-        """Sets the max_connections of this DatabaseFlavorRsp.
+        r"""Sets the max_connections of this DatabaseFlavorRsp.
 
         最大连接数
 
@@ -188,7 +188,7 @@ class DatabaseFlavorRsp:
 
     @property
     def disk_space(self):
-        """Gets the disk_space of this DatabaseFlavorRsp.
+        r"""Gets the disk_space of this DatabaseFlavorRsp.
 
         存储空间
 
@@ -199,7 +199,7 @@ class DatabaseFlavorRsp:
 
     @disk_space.setter
     def disk_space(self, disk_space):
-        """Sets the disk_space of this DatabaseFlavorRsp.
+        r"""Sets the disk_space of this DatabaseFlavorRsp.
 
         存储空间
 
@@ -210,7 +210,7 @@ class DatabaseFlavorRsp:
 
     @property
     def sold_out(self):
-        """Gets the sold_out of this DatabaseFlavorRsp.
+        r"""Gets the sold_out of this DatabaseFlavorRsp.
 
         是否售罄
 
@@ -221,7 +221,7 @@ class DatabaseFlavorRsp:
 
     @sold_out.setter
     def sold_out(self, sold_out):
-        """Sets the sold_out of this DatabaseFlavorRsp.
+        r"""Sets the sold_out of this DatabaseFlavorRsp.
 
         是否售罄
 

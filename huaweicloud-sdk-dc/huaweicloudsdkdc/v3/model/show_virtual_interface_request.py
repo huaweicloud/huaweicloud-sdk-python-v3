@@ -27,7 +27,7 @@ class ShowVirtualInterfaceRequest:
     }
 
     def __init__(self, fields=None, virtual_interface_id=None):
-        """ShowVirtualInterfaceRequest
+        r"""ShowVirtualInterfaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowVirtualInterfaceRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ShowVirtualInterfaceRequest.
+        r"""Gets the fields of this ShowVirtualInterfaceRequest.
 
         显示字段列表
 
@@ -60,7 +60,7 @@ class ShowVirtualInterfaceRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ShowVirtualInterfaceRequest.
+        r"""Sets the fields of this ShowVirtualInterfaceRequest.
 
         显示字段列表
 
@@ -71,7 +71,7 @@ class ShowVirtualInterfaceRequest:
 
     @property
     def virtual_interface_id(self):
-        """Gets the virtual_interface_id of this ShowVirtualInterfaceRequest.
+        r"""Gets the virtual_interface_id of this ShowVirtualInterfaceRequest.
 
         虚拟接口ID。
 
@@ -82,7 +82,7 @@ class ShowVirtualInterfaceRequest:
 
     @virtual_interface_id.setter
     def virtual_interface_id(self, virtual_interface_id):
-        """Sets the virtual_interface_id of this ShowVirtualInterfaceRequest.
+        r"""Sets the virtual_interface_id of this ShowVirtualInterfaceRequest.
 
         虚拟接口ID。
 

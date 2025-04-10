@@ -40,7 +40,7 @@ class CreateAccessClientResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, access_mode=None, status=None, vpc_id=None, subnet_id=None, access_connections=None, create_time=None):
-        """CreateAccessClientResponse
+        r"""CreateAccessClientResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateAccessClientResponse.
+        r"""Gets the id of this CreateAccessClientResponse.
 
         客户端ID
 
@@ -104,7 +104,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateAccessClientResponse.
+        r"""Sets the id of this CreateAccessClientResponse.
 
         客户端ID
 
@@ -115,7 +115,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateAccessClientResponse.
+        r"""Gets the name of this CreateAccessClientResponse.
 
         客户端名称
 
@@ -126,7 +126,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAccessClientResponse.
+        r"""Sets the name of this CreateAccessClientResponse.
 
         客户端名称
 
@@ -137,7 +137,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this CreateAccessClientResponse.
+        r"""Gets the access_mode of this CreateAccessClientResponse.
 
         接入模式,SYSTEM,CUSTOM,AUTO
 
@@ -148,7 +148,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this CreateAccessClientResponse.
+        r"""Sets the access_mode of this CreateAccessClientResponse.
 
         接入模式,SYSTEM,CUSTOM,AUTO
 
@@ -159,7 +159,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateAccessClientResponse.
+        r"""Gets the status of this CreateAccessClientResponse.
 
         客户端状态,CREATING,RUNNING,DELETING,DELETED,CREATE_FAIL,DELETE_FAIL
 
@@ -170,7 +170,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateAccessClientResponse.
+        r"""Sets the status of this CreateAccessClientResponse.
 
         客户端状态,CREATING,RUNNING,DELETING,DELETED,CREATE_FAIL,DELETE_FAIL
 
@@ -181,7 +181,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateAccessClientResponse.
+        r"""Gets the vpc_id of this CreateAccessClientResponse.
 
         VPC ID
 
@@ -192,7 +192,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateAccessClientResponse.
+        r"""Sets the vpc_id of this CreateAccessClientResponse.
 
         VPC ID
 
@@ -203,7 +203,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateAccessClientResponse.
+        r"""Gets the subnet_id of this CreateAccessClientResponse.
 
         子网ID
 
@@ -214,7 +214,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateAccessClientResponse.
+        r"""Sets the subnet_id of this CreateAccessClientResponse.
 
         子网ID
 
@@ -225,7 +225,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @property
     def access_connections(self):
-        """Gets the access_connections of this CreateAccessClientResponse.
+        r"""Gets the access_connections of this CreateAccessClientResponse.
 
         接入连接列表
 
@@ -236,7 +236,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @access_connections.setter
     def access_connections(self, access_connections):
-        """Sets the access_connections of this CreateAccessClientResponse.
+        r"""Sets the access_connections of this CreateAccessClientResponse.
 
         接入连接列表
 
@@ -247,7 +247,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateAccessClientResponse.
+        r"""Gets the create_time of this CreateAccessClientResponse.
 
         实例创建时间戳
 
@@ -258,7 +258,7 @@ class CreateAccessClientResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateAccessClientResponse.
+        r"""Sets the create_time of this CreateAccessClientResponse.
 
         实例创建时间戳
 

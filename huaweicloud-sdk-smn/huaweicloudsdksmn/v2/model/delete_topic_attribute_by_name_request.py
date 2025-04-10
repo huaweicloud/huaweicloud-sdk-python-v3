@@ -27,7 +27,7 @@ class DeleteTopicAttributeByNameRequest:
     }
 
     def __init__(self, topic_urn=None, name=None):
-        """DeleteTopicAttributeByNameRequest
+        r"""DeleteTopicAttributeByNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteTopicAttributeByNameRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this DeleteTopicAttributeByNameRequest.
+        r"""Gets the topic_urn of this DeleteTopicAttributeByNameRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -59,7 +59,7 @@ class DeleteTopicAttributeByNameRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this DeleteTopicAttributeByNameRequest.
+        r"""Sets the topic_urn of this DeleteTopicAttributeByNameRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -70,7 +70,7 @@ class DeleteTopicAttributeByNameRequest:
 
     @property
     def name(self):
-        """Gets the name of this DeleteTopicAttributeByNameRequest.
+        r"""Gets the name of this DeleteTopicAttributeByNameRequest.
 
         主题策略名称。 只支持特定的策略名称，请参见[Topic属性表](smn_api_a1000.xml)。
 
@@ -81,7 +81,7 @@ class DeleteTopicAttributeByNameRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeleteTopicAttributeByNameRequest.
+        r"""Sets the name of this DeleteTopicAttributeByNameRequest.
 
         主题策略名称。 只支持特定的策略名称，请参见[Topic属性表](smn_api_a1000.xml)。
 

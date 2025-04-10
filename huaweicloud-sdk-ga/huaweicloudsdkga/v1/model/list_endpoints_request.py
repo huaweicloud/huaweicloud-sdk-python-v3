@@ -35,7 +35,7 @@ class ListEndpointsRequest:
     }
 
     def __init__(self, endpoint_group_id=None, limit=None, marker=None, page_reverse=None, id=None, status=None):
-        """ListEndpointsRequest
+        r"""ListEndpointsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListEndpointsRequest:
 
     @property
     def endpoint_group_id(self):
-        """Gets the endpoint_group_id of this ListEndpointsRequest.
+        r"""Gets the endpoint_group_id of this ListEndpointsRequest.
 
         终端节点组ID。
 
@@ -88,7 +88,7 @@ class ListEndpointsRequest:
 
     @endpoint_group_id.setter
     def endpoint_group_id(self, endpoint_group_id):
-        """Sets the endpoint_group_id of this ListEndpointsRequest.
+        r"""Sets the endpoint_group_id of this ListEndpointsRequest.
 
         终端节点组ID。
 
@@ -99,7 +99,7 @@ class ListEndpointsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEndpointsRequest.
+        r"""Gets the limit of this ListEndpointsRequest.
 
         分页查询每页的资源个数。如果不设置，则默认为500。
 
@@ -110,7 +110,7 @@ class ListEndpointsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEndpointsRequest.
+        r"""Sets the limit of this ListEndpointsRequest.
 
         分页查询每页的资源个数。如果不设置，则默认为500。
 
@@ -121,7 +121,7 @@ class ListEndpointsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListEndpointsRequest.
+        r"""Gets the marker of this ListEndpointsRequest.
 
         分页查询的起始的资源ID，表示上一页最后一条查询资源记录的ID。不指定时表示查询第一页。 必须与limit一起使用。
 
@@ -132,7 +132,7 @@ class ListEndpointsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListEndpointsRequest.
+        r"""Sets the marker of this ListEndpointsRequest.
 
         分页查询的起始的资源ID，表示上一页最后一条查询资源记录的ID。不指定时表示查询第一页。 必须与limit一起使用。
 
@@ -143,7 +143,7 @@ class ListEndpointsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListEndpointsRequest.
+        r"""Gets the page_reverse of this ListEndpointsRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -154,7 +154,7 @@ class ListEndpointsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListEndpointsRequest.
+        r"""Sets the page_reverse of this ListEndpointsRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -165,7 +165,7 @@ class ListEndpointsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListEndpointsRequest.
+        r"""Gets the id of this ListEndpointsRequest.
 
         资源ID。
 
@@ -176,7 +176,7 @@ class ListEndpointsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListEndpointsRequest.
+        r"""Sets the id of this ListEndpointsRequest.
 
         资源ID。
 
@@ -187,7 +187,7 @@ class ListEndpointsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListEndpointsRequest.
+        r"""Gets the status of this ListEndpointsRequest.
 
         配置状态，可选范围: - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
 
@@ -198,7 +198,7 @@ class ListEndpointsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListEndpointsRequest.
+        r"""Sets the status of this ListEndpointsRequest.
 
         配置状态，可选范围: - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
 

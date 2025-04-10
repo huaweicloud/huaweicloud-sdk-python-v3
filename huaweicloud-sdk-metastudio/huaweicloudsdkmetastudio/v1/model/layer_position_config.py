@@ -29,7 +29,7 @@ class LayerPositionConfig:
     }
 
     def __init__(self, dx=None, dy=None, layer_index=None):
-        """LayerPositionConfig
+        r"""LayerPositionConfig
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class LayerPositionConfig:
 
     @property
     def dx(self):
-        """Gets the dx of this LayerPositionConfig.
+        r"""Gets the dx of this LayerPositionConfig.
 
         **参数解释**： 图层左上角像素点的X轴位置值（画布左上角坐标是0x0）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**： 该值为相对于画布的像素值，仅表示布局位置关系，与输出画面分辨率无关。
 
@@ -65,7 +65,7 @@ class LayerPositionConfig:
 
     @dx.setter
     def dx(self, dx):
-        """Sets the dx of this LayerPositionConfig.
+        r"""Sets the dx of this LayerPositionConfig.
 
         **参数解释**： 图层左上角像素点的X轴位置值（画布左上角坐标是0x0）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**： 该值为相对于画布的像素值，仅表示布局位置关系，与输出画面分辨率无关。
 
@@ -76,7 +76,7 @@ class LayerPositionConfig:
 
     @property
     def dy(self):
-        """Gets the dy of this LayerPositionConfig.
+        r"""Gets the dy of this LayerPositionConfig.
 
         **参数解释**： 图层图片左上角像素点的Y轴位置值（画布左上角坐标是0x0）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**： 该值为相对于画布的像素值，仅表示布局位置关系，与输出画面分辨率无关。
 
@@ -87,7 +87,7 @@ class LayerPositionConfig:
 
     @dy.setter
     def dy(self, dy):
-        """Sets the dy of this LayerPositionConfig.
+        r"""Sets the dy of this LayerPositionConfig.
 
         **参数解释**： 图层图片左上角像素点的Y轴位置值（画布左上角坐标是0x0）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**： 该值为相对于画布的像素值，仅表示布局位置关系，与输出画面分辨率无关。
 
@@ -98,7 +98,7 @@ class LayerPositionConfig:
 
     @property
     def layer_index(self):
-        """Gets the layer_index of this LayerPositionConfig.
+        r"""Gets the layer_index of this LayerPositionConfig.
 
         **参数解释**： 图片、视频、人物图的层顺序。 > 图层顺序为从1开始的整数，底层图层顺序是1，往上依次增加。  **约束限制**： 如果出现重复则重复图层叠加关系随机。
 
@@ -109,7 +109,7 @@ class LayerPositionConfig:
 
     @layer_index.setter
     def layer_index(self, layer_index):
-        """Sets the layer_index of this LayerPositionConfig.
+        r"""Sets the layer_index of this LayerPositionConfig.
 
         **参数解释**： 图片、视频、人物图的层顺序。 > 图层顺序为从1开始的整数，底层图层顺序是1，往上依次增加。  **约束限制**： 如果出现重复则重复图层叠加关系随机。
 

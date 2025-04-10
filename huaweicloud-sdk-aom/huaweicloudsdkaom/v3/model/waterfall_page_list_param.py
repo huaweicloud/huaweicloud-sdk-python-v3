@@ -27,7 +27,7 @@ class WaterfallPageListParam:
     }
 
     def __init__(self, marker=None, limit=None):
-        """WaterfallPageListParam
+        r"""WaterfallPageListParam
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WaterfallPageListParam:
 
     @property
     def marker(self):
-        """Gets the marker of this WaterfallPageListParam.
+        r"""Gets the marker of this WaterfallPageListParam.
 
         页面的分页标志位,为分页的最后一条记录的id
 
@@ -61,7 +61,7 @@ class WaterfallPageListParam:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this WaterfallPageListParam.
+        r"""Sets the marker of this WaterfallPageListParam.
 
         页面的分页标志位,为分页的最后一条记录的id
 
@@ -72,7 +72,7 @@ class WaterfallPageListParam:
 
     @property
     def limit(self):
-        """Gets the limit of this WaterfallPageListParam.
+        r"""Gets the limit of this WaterfallPageListParam.
 
         查询返回记录的数量限制。limit可以为空，如果值小于1或者大于100，则会使用默认值100
 
@@ -83,7 +83,7 @@ class WaterfallPageListParam:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this WaterfallPageListParam.
+        r"""Sets the limit of this WaterfallPageListParam.
 
         查询返回记录的数量限制。limit可以为空，如果值小于1或者大于100，则会使用默认值100
 

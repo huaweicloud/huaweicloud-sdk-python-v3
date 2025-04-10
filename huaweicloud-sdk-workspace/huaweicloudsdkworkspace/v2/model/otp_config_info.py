@@ -39,7 +39,7 @@ class OtpConfigInfo:
     }
 
     def __init__(self, enable=None, receive_mode=None, auth_url=None, app_id=None, app_secret=None, auth_server_access_mode=None, cert_content=None, apply_rule=None):
-        """OtpConfigInfo
+        r"""OtpConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class OtpConfigInfo:
 
     @property
     def enable(self):
-        """Gets the enable of this OtpConfigInfo.
+        r"""Gets the enable of this OtpConfigInfo.
 
         是否启用
 
@@ -103,7 +103,7 @@ class OtpConfigInfo:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this OtpConfigInfo.
+        r"""Sets the enable of this OtpConfigInfo.
 
         是否启用
 
@@ -114,7 +114,7 @@ class OtpConfigInfo:
 
     @property
     def receive_mode(self):
-        """Gets the receive_mode of this OtpConfigInfo.
+        r"""Gets the receive_mode of this OtpConfigInfo.
 
         :return: The receive_mode of this OtpConfigInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ReceiveModeEnum`
@@ -123,7 +123,7 @@ class OtpConfigInfo:
 
     @receive_mode.setter
     def receive_mode(self, receive_mode):
-        """Sets the receive_mode of this OtpConfigInfo.
+        r"""Sets the receive_mode of this OtpConfigInfo.
 
         :param receive_mode: The receive_mode of this OtpConfigInfo.
         :type receive_mode: :class:`huaweicloudsdkworkspace.v2.ReceiveModeEnum`
@@ -132,7 +132,7 @@ class OtpConfigInfo:
 
     @property
     def auth_url(self):
-        """Gets the auth_url of this OtpConfigInfo.
+        r"""Gets the auth_url of this OtpConfigInfo.
 
         辅助认证服务器地址
 
@@ -143,7 +143,7 @@ class OtpConfigInfo:
 
     @auth_url.setter
     def auth_url(self, auth_url):
-        """Sets the auth_url of this OtpConfigInfo.
+        r"""Sets the auth_url of this OtpConfigInfo.
 
         辅助认证服务器地址
 
@@ -154,7 +154,7 @@ class OtpConfigInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this OtpConfigInfo.
+        r"""Gets the app_id of this OtpConfigInfo.
 
         认证服务接入账号
 
@@ -165,7 +165,7 @@ class OtpConfigInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this OtpConfigInfo.
+        r"""Sets the app_id of this OtpConfigInfo.
 
         认证服务接入账号
 
@@ -176,7 +176,7 @@ class OtpConfigInfo:
 
     @property
     def app_secret(self):
-        """Gets the app_secret of this OtpConfigInfo.
+        r"""Gets the app_secret of this OtpConfigInfo.
 
         认证服务接入密码
 
@@ -187,7 +187,7 @@ class OtpConfigInfo:
 
     @app_secret.setter
     def app_secret(self, app_secret):
-        """Sets the app_secret of this OtpConfigInfo.
+        r"""Sets the app_secret of this OtpConfigInfo.
 
         认证服务接入密码
 
@@ -198,7 +198,7 @@ class OtpConfigInfo:
 
     @property
     def auth_server_access_mode(self):
-        """Gets the auth_server_access_mode of this OtpConfigInfo.
+        r"""Gets the auth_server_access_mode of this OtpConfigInfo.
 
         :return: The auth_server_access_mode of this OtpConfigInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AuthServerAccessMode`
@@ -207,7 +207,7 @@ class OtpConfigInfo:
 
     @auth_server_access_mode.setter
     def auth_server_access_mode(self, auth_server_access_mode):
-        """Sets the auth_server_access_mode of this OtpConfigInfo.
+        r"""Sets the auth_server_access_mode of this OtpConfigInfo.
 
         :param auth_server_access_mode: The auth_server_access_mode of this OtpConfigInfo.
         :type auth_server_access_mode: :class:`huaweicloudsdkworkspace.v2.AuthServerAccessMode`
@@ -216,7 +216,7 @@ class OtpConfigInfo:
 
     @property
     def cert_content(self):
-        """Gets the cert_content of this OtpConfigInfo.
+        r"""Gets the cert_content of this OtpConfigInfo.
 
         pem格式证书内容
 
@@ -227,7 +227,7 @@ class OtpConfigInfo:
 
     @cert_content.setter
     def cert_content(self, cert_content):
-        """Sets the cert_content of this OtpConfigInfo.
+        r"""Sets the cert_content of this OtpConfigInfo.
 
         pem格式证书内容
 
@@ -238,7 +238,7 @@ class OtpConfigInfo:
 
     @property
     def apply_rule(self):
-        """Gets the apply_rule of this OtpConfigInfo.
+        r"""Gets the apply_rule of this OtpConfigInfo.
 
         :return: The apply_rule of this OtpConfigInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplyRuleInfo`
@@ -247,7 +247,7 @@ class OtpConfigInfo:
 
     @apply_rule.setter
     def apply_rule(self, apply_rule):
-        """Sets the apply_rule of this OtpConfigInfo.
+        r"""Sets the apply_rule of this OtpConfigInfo.
 
         :param apply_rule: The apply_rule of this OtpConfigInfo.
         :type apply_rule: :class:`huaweicloudsdkworkspace.v2.ApplyRuleInfo`

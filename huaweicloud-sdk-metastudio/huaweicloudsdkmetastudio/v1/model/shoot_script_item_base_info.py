@@ -25,7 +25,7 @@ class ShootScriptItemBaseInfo:
     }
 
     def __init__(self, sequence_no=None):
-        """ShootScriptItemBaseInfo
+        r"""ShootScriptItemBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShootScriptItemBaseInfo:
 
     @property
     def sequence_no(self):
-        """Gets the sequence_no of this ShootScriptItemBaseInfo.
+        r"""Gets the sequence_no of this ShootScriptItemBaseInfo.
 
         **参数解释**： 剧本序号。 **约束限制**： 同一个剧本序号不重复。 **默认取值**： 不涉及。
 
@@ -54,7 +54,7 @@ class ShootScriptItemBaseInfo:
 
     @sequence_no.setter
     def sequence_no(self, sequence_no):
-        """Sets the sequence_no of this ShootScriptItemBaseInfo.
+        r"""Sets the sequence_no of this ShootScriptItemBaseInfo.
 
         **参数解释**： 剧本序号。 **约束限制**： 同一个剧本序号不重复。 **默认取值**： 不涉及。
 

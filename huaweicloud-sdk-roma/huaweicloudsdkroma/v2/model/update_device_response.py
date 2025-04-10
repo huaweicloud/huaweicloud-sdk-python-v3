@@ -88,7 +88,7 @@ class UpdateDeviceResponse(SdkResponse):
     }
 
     def __init__(self, permissions=None, id=None, device_id=None, parent_device_id=None, parent_device_name=None, product=None, device_name=None, instance_id=None, client_id=None, node_id=None, app_name=None, status=None, online_status=None, description=None, authentication=None, created_user=None, last_updated_user=None, tags=None, created_datetime=None, last_updated_datetime=None, connect_address=None, ssl_connect_address=None, ipv6_connect_address=None, ipv6_ssl_connect_address=None, last_login_datetime=None, node_type=None, device_type=None, client_ip=None, keep_alive=None, last_active_time=None, version=None, app_id=None):
-        """UpdateDeviceResponse
+        r"""UpdateDeviceResponse
 
         The model defined in huaweicloud sdk
 
@@ -261,7 +261,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def permissions(self):
-        """Gets the permissions of this UpdateDeviceResponse.
+        r"""Gets the permissions of this UpdateDeviceResponse.
 
         权限
 
@@ -272,7 +272,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this UpdateDeviceResponse.
+        r"""Sets the permissions of this UpdateDeviceResponse.
 
         权限
 
@@ -283,7 +283,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateDeviceResponse.
+        r"""Gets the id of this UpdateDeviceResponse.
 
         设备ID
 
@@ -294,7 +294,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateDeviceResponse.
+        r"""Sets the id of this UpdateDeviceResponse.
 
         设备ID
 
@@ -305,7 +305,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def device_id(self):
-        """Gets the device_id of this UpdateDeviceResponse.
+        r"""Gets the device_id of this UpdateDeviceResponse.
 
         设备ID（兼容20.0）
 
@@ -316,7 +316,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this UpdateDeviceResponse.
+        r"""Sets the device_id of this UpdateDeviceResponse.
 
         设备ID（兼容20.0）
 
@@ -327,7 +327,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def parent_device_id(self):
-        """Gets the parent_device_id of this UpdateDeviceResponse.
+        r"""Gets the parent_device_id of this UpdateDeviceResponse.
 
         父设备ID
 
@@ -338,7 +338,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @parent_device_id.setter
     def parent_device_id(self, parent_device_id):
-        """Sets the parent_device_id of this UpdateDeviceResponse.
+        r"""Sets the parent_device_id of this UpdateDeviceResponse.
 
         父设备ID
 
@@ -349,7 +349,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def parent_device_name(self):
-        """Gets the parent_device_name of this UpdateDeviceResponse.
+        r"""Gets the parent_device_name of this UpdateDeviceResponse.
 
         父设备名称
 
@@ -360,7 +360,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @parent_device_name.setter
     def parent_device_name(self, parent_device_name):
-        """Sets the parent_device_name of this UpdateDeviceResponse.
+        r"""Sets the parent_device_name of this UpdateDeviceResponse.
 
         父设备名称
 
@@ -371,7 +371,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def product(self):
-        """Gets the product of this UpdateDeviceResponse.
+        r"""Gets the product of this UpdateDeviceResponse.
 
         :return: The product of this UpdateDeviceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.ProductReferer`
@@ -380,7 +380,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @product.setter
     def product(self, product):
-        """Sets the product of this UpdateDeviceResponse.
+        r"""Sets the product of this UpdateDeviceResponse.
 
         :param product: The product of this UpdateDeviceResponse.
         :type product: :class:`huaweicloudsdkroma.v2.ProductReferer`
@@ -389,7 +389,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def device_name(self):
-        """Gets the device_name of this UpdateDeviceResponse.
+        r"""Gets the device_name of this UpdateDeviceResponse.
 
         设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?'-@%&!, 长度2-64
 
@@ -400,7 +400,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this UpdateDeviceResponse.
+        r"""Sets the device_name of this UpdateDeviceResponse.
 
         设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?'-@%&!, 长度2-64
 
@@ -411,7 +411,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDeviceResponse.
+        r"""Gets the instance_id of this UpdateDeviceResponse.
 
         实例id
 
@@ -422,7 +422,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDeviceResponse.
+        r"""Sets the instance_id of this UpdateDeviceResponse.
 
         实例id
 
@@ -433,7 +433,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def client_id(self):
-        """Gets the client_id of this UpdateDeviceResponse.
+        r"""Gets the client_id of this UpdateDeviceResponse.
 
         设备客户端ID，平台生成的设备唯一标识
 
@@ -444,7 +444,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this UpdateDeviceResponse.
+        r"""Sets the client_id of this UpdateDeviceResponse.
 
         设备客户端ID，平台生成的设备唯一标识
 
@@ -455,7 +455,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this UpdateDeviceResponse.
+        r"""Gets the node_id of this UpdateDeviceResponse.
 
         设备物理编号，通常使用MAC或者IMEI号，支持英文大小写，数字，下划线和中划线，长度2-64
 
@@ -466,7 +466,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this UpdateDeviceResponse.
+        r"""Sets the node_id of this UpdateDeviceResponse.
 
         设备物理编号，通常使用MAC或者IMEI号，支持英文大小写，数字，下划线和中划线，长度2-64
 
@@ -477,7 +477,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this UpdateDeviceResponse.
+        r"""Gets the app_name of this UpdateDeviceResponse.
 
         应用名称
 
@@ -488,7 +488,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this UpdateDeviceResponse.
+        r"""Sets the app_name of this UpdateDeviceResponse.
 
         应用名称
 
@@ -499,7 +499,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateDeviceResponse.
+        r"""Gets the status of this UpdateDeviceResponse.
 
         设备状态 0-启用 1-禁用
 
@@ -510,7 +510,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateDeviceResponse.
+        r"""Sets the status of this UpdateDeviceResponse.
 
         设备状态 0-启用 1-禁用
 
@@ -521,7 +521,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def online_status(self):
-        """Gets the online_status of this UpdateDeviceResponse.
+        r"""Gets the online_status of this UpdateDeviceResponse.
 
         是否在线 0-未连接 1-在线 2-离线
 
@@ -532,7 +532,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @online_status.setter
     def online_status(self, online_status):
-        """Sets the online_status of this UpdateDeviceResponse.
+        r"""Sets the online_status of this UpdateDeviceResponse.
 
         是否在线 0-未连接 1-在线 2-离线
 
@@ -543,7 +543,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateDeviceResponse.
+        r"""Gets the description of this UpdateDeviceResponse.
 
         备注
 
@@ -554,7 +554,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateDeviceResponse.
+        r"""Sets the description of this UpdateDeviceResponse.
 
         备注
 
@@ -565,7 +565,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def authentication(self):
-        """Gets the authentication of this UpdateDeviceResponse.
+        r"""Gets the authentication of this UpdateDeviceResponse.
 
         :return: The authentication of this UpdateDeviceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.Authentication`
@@ -574,7 +574,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @authentication.setter
     def authentication(self, authentication):
-        """Sets the authentication of this UpdateDeviceResponse.
+        r"""Sets the authentication of this UpdateDeviceResponse.
 
         :param authentication: The authentication of this UpdateDeviceResponse.
         :type authentication: :class:`huaweicloudsdkroma.v2.Authentication`
@@ -583,7 +583,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def created_user(self):
-        """Gets the created_user of this UpdateDeviceResponse.
+        r"""Gets the created_user of this UpdateDeviceResponse.
 
         :return: The created_user of this UpdateDeviceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -592,7 +592,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @created_user.setter
     def created_user(self, created_user):
-        """Sets the created_user of this UpdateDeviceResponse.
+        r"""Sets the created_user of this UpdateDeviceResponse.
 
         :param created_user: The created_user of this UpdateDeviceResponse.
         :type created_user: :class:`huaweicloudsdkroma.v2.CreatedUser`
@@ -601,7 +601,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def last_updated_user(self):
-        """Gets the last_updated_user of this UpdateDeviceResponse.
+        r"""Gets the last_updated_user of this UpdateDeviceResponse.
 
         :return: The last_updated_user of this UpdateDeviceResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -610,7 +610,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
-        """Sets the last_updated_user of this UpdateDeviceResponse.
+        r"""Sets the last_updated_user of this UpdateDeviceResponse.
 
         :param last_updated_user: The last_updated_user of this UpdateDeviceResponse.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.LastUpdatedUser`
@@ -619,7 +619,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateDeviceResponse.
+        r"""Gets the tags of this UpdateDeviceResponse.
 
         标签
 
@@ -630,7 +630,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateDeviceResponse.
+        r"""Sets the tags of this UpdateDeviceResponse.
 
         标签
 
@@ -641,7 +641,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def created_datetime(self):
-        """Gets the created_datetime of this UpdateDeviceResponse.
+        r"""Gets the created_datetime of this UpdateDeviceResponse.
 
         创建时间，timestamp(ms)，使用UTC时区
 
@@ -652,7 +652,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @created_datetime.setter
     def created_datetime(self, created_datetime):
-        """Sets the created_datetime of this UpdateDeviceResponse.
+        r"""Sets the created_datetime of this UpdateDeviceResponse.
 
         创建时间，timestamp(ms)，使用UTC时区
 
@@ -663,7 +663,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def last_updated_datetime(self):
-        """Gets the last_updated_datetime of this UpdateDeviceResponse.
+        r"""Gets the last_updated_datetime of this UpdateDeviceResponse.
 
         最后修改时间，timestamp(ms)，使用UTC时区
 
@@ -674,7 +674,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @last_updated_datetime.setter
     def last_updated_datetime(self, last_updated_datetime):
-        """Sets the last_updated_datetime of this UpdateDeviceResponse.
+        r"""Sets the last_updated_datetime of this UpdateDeviceResponse.
 
         最后修改时间，timestamp(ms)，使用UTC时区
 
@@ -685,7 +685,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def connect_address(self):
-        """Gets the connect_address of this UpdateDeviceResponse.
+        r"""Gets the connect_address of this UpdateDeviceResponse.
 
         设备接入地址
 
@@ -696,7 +696,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @connect_address.setter
     def connect_address(self, connect_address):
-        """Sets the connect_address of this UpdateDeviceResponse.
+        r"""Sets the connect_address of this UpdateDeviceResponse.
 
         设备接入地址
 
@@ -707,7 +707,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def ssl_connect_address(self):
-        """Gets the ssl_connect_address of this UpdateDeviceResponse.
+        r"""Gets the ssl_connect_address of this UpdateDeviceResponse.
 
         设备接入SSL地址
 
@@ -718,7 +718,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @ssl_connect_address.setter
     def ssl_connect_address(self, ssl_connect_address):
-        """Sets the ssl_connect_address of this UpdateDeviceResponse.
+        r"""Sets the ssl_connect_address of this UpdateDeviceResponse.
 
         设备接入SSL地址
 
@@ -729,7 +729,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def ipv6_connect_address(self):
-        """Gets the ipv6_connect_address of this UpdateDeviceResponse.
+        r"""Gets the ipv6_connect_address of this UpdateDeviceResponse.
 
         设备接入IPV6地址
 
@@ -740,7 +740,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @ipv6_connect_address.setter
     def ipv6_connect_address(self, ipv6_connect_address):
-        """Sets the ipv6_connect_address of this UpdateDeviceResponse.
+        r"""Sets the ipv6_connect_address of this UpdateDeviceResponse.
 
         设备接入IPV6地址
 
@@ -751,7 +751,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def ipv6_ssl_connect_address(self):
-        """Gets the ipv6_ssl_connect_address of this UpdateDeviceResponse.
+        r"""Gets the ipv6_ssl_connect_address of this UpdateDeviceResponse.
 
         设备接入IPV6 SSL地址
 
@@ -762,7 +762,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @ipv6_ssl_connect_address.setter
     def ipv6_ssl_connect_address(self, ipv6_ssl_connect_address):
-        """Sets the ipv6_ssl_connect_address of this UpdateDeviceResponse.
+        r"""Sets the ipv6_ssl_connect_address of this UpdateDeviceResponse.
 
         设备接入IPV6 SSL地址
 
@@ -773,7 +773,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def last_login_datetime(self):
-        """Gets the last_login_datetime of this UpdateDeviceResponse.
+        r"""Gets the last_login_datetime of this UpdateDeviceResponse.
 
         最后登录时间
 
@@ -784,7 +784,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @last_login_datetime.setter
     def last_login_datetime(self, last_login_datetime):
-        """Sets the last_login_datetime of this UpdateDeviceResponse.
+        r"""Sets the last_login_datetime of this UpdateDeviceResponse.
 
         最后登录时间
 
@@ -795,7 +795,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def node_type(self):
-        """Gets the node_type of this UpdateDeviceResponse.
+        r"""Gets the node_type of this UpdateDeviceResponse.
 
         节点类型 0-直连 1-网关 2-子设备
 
@@ -806,7 +806,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this UpdateDeviceResponse.
+        r"""Sets the node_type of this UpdateDeviceResponse.
 
         节点类型 0-直连 1-网关 2-子设备
 
@@ -817,7 +817,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def device_type(self):
-        """Gets the device_type of this UpdateDeviceResponse.
+        r"""Gets the device_type of this UpdateDeviceResponse.
 
         设备类型<br>0-普通设备（无子设备也无父设备）<br>1-网关设备(可挂载子设备)<br>2-子设备(归属于某个网关设备)
 
@@ -828,7 +828,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this UpdateDeviceResponse.
+        r"""Sets the device_type of this UpdateDeviceResponse.
 
         设备类型<br>0-普通设备（无子设备也无父设备）<br>1-网关设备(可挂载子设备)<br>2-子设备(归属于某个网关设备)
 
@@ -839,7 +839,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this UpdateDeviceResponse.
+        r"""Gets the client_ip of this UpdateDeviceResponse.
 
         客户端ip
 
@@ -850,7 +850,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this UpdateDeviceResponse.
+        r"""Sets the client_ip of this UpdateDeviceResponse.
 
         客户端ip
 
@@ -861,7 +861,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def keep_alive(self):
-        """Gets the keep_alive of this UpdateDeviceResponse.
+        r"""Gets the keep_alive of this UpdateDeviceResponse.
 
         心跳时间
 
@@ -872,7 +872,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @keep_alive.setter
     def keep_alive(self, keep_alive):
-        """Sets the keep_alive of this UpdateDeviceResponse.
+        r"""Sets the keep_alive of this UpdateDeviceResponse.
 
         心跳时间
 
@@ -883,7 +883,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def last_active_time(self):
-        """Gets the last_active_time of this UpdateDeviceResponse.
+        r"""Gets the last_active_time of this UpdateDeviceResponse.
 
         最后登录时间
 
@@ -894,7 +894,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @last_active_time.setter
     def last_active_time(self, last_active_time):
-        """Sets the last_active_time of this UpdateDeviceResponse.
+        r"""Sets the last_active_time of this UpdateDeviceResponse.
 
         最后登录时间
 
@@ -905,7 +905,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this UpdateDeviceResponse.
+        r"""Gets the version of this UpdateDeviceResponse.
 
         设备版本
 
@@ -916,7 +916,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateDeviceResponse.
+        r"""Sets the version of this UpdateDeviceResponse.
 
         设备版本
 
@@ -927,7 +927,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateDeviceResponse.
+        r"""Gets the app_id of this UpdateDeviceResponse.
 
         应用ID
 
@@ -938,7 +938,7 @@ class UpdateDeviceResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateDeviceResponse.
+        r"""Sets the app_id of this UpdateDeviceResponse.
 
         应用ID
 

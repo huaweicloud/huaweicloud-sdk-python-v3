@@ -24,7 +24,7 @@ class CreateSubEnterpriseAccountResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateSubEnterpriseAccountResponse
+        r"""CreateSubEnterpriseAccountResponse
 
         The model defined in huaweicloud sdk
 

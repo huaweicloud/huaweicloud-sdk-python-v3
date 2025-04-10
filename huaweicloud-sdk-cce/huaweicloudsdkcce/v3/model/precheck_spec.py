@@ -31,7 +31,7 @@ class PrecheckSpec:
     }
 
     def __init__(self, cluster_id=None, cluster_version=None, target_version=None, skipped_check_item_list=None):
-        """PrecheckSpec
+        r"""PrecheckSpec
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PrecheckSpec:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this PrecheckSpec.
+        r"""Gets the cluster_id of this PrecheckSpec.
 
         集群ID
 
@@ -75,7 +75,7 @@ class PrecheckSpec:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this PrecheckSpec.
+        r"""Sets the cluster_id of this PrecheckSpec.
 
         集群ID
 
@@ -86,7 +86,7 @@ class PrecheckSpec:
 
     @property
     def cluster_version(self):
-        """Gets the cluster_version of this PrecheckSpec.
+        r"""Gets the cluster_version of this PrecheckSpec.
 
         集群版本
 
@@ -97,7 +97,7 @@ class PrecheckSpec:
 
     @cluster_version.setter
     def cluster_version(self, cluster_version):
-        """Sets the cluster_version of this PrecheckSpec.
+        r"""Sets the cluster_version of this PrecheckSpec.
 
         集群版本
 
@@ -108,7 +108,7 @@ class PrecheckSpec:
 
     @property
     def target_version(self):
-        """Gets the target_version of this PrecheckSpec.
+        r"""Gets the target_version of this PrecheckSpec.
 
         升级目标版本
 
@@ -119,7 +119,7 @@ class PrecheckSpec:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this PrecheckSpec.
+        r"""Sets the target_version of this PrecheckSpec.
 
         升级目标版本
 
@@ -130,7 +130,7 @@ class PrecheckSpec:
 
     @property
     def skipped_check_item_list(self):
-        """Gets the skipped_check_item_list of this PrecheckSpec.
+        r"""Gets the skipped_check_item_list of this PrecheckSpec.
 
         跳过检查的项目列表
 
@@ -141,7 +141,7 @@ class PrecheckSpec:
 
     @skipped_check_item_list.setter
     def skipped_check_item_list(self, skipped_check_item_list):
-        """Sets the skipped_check_item_list of this PrecheckSpec.
+        r"""Sets the skipped_check_item_list of this PrecheckSpec.
 
         跳过检查的项目列表
 

@@ -25,7 +25,7 @@ class RunLanguageDetectionRequest:
     }
 
     def __init__(self, body=None):
-        """RunLanguageDetectionRequest
+        r"""RunLanguageDetectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunLanguageDetectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunLanguageDetectionRequest.
+        r"""Gets the body of this RunLanguageDetectionRequest.
 
         :return: The body of this RunLanguageDetectionRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.LanguageDetectionReq`
@@ -52,7 +52,7 @@ class RunLanguageDetectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunLanguageDetectionRequest.
+        r"""Sets the body of this RunLanguageDetectionRequest.
 
         :param body: The body of this RunLanguageDetectionRequest.
         :type body: :class:`huaweicloudsdknlp.v2.LanguageDetectionReq`

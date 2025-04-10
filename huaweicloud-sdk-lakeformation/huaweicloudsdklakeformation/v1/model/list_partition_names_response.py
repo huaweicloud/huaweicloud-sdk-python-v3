@@ -28,7 +28,7 @@ class ListPartitionNamesResponse(SdkResponse):
     }
 
     def __init__(self, partition_name_list=None, page_info=None):
-        """ListPartitionNamesResponse
+        r"""ListPartitionNamesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPartitionNamesResponse(SdkResponse):
 
     @property
     def partition_name_list(self):
-        """Gets the partition_name_list of this ListPartitionNamesResponse.
+        r"""Gets the partition_name_list of this ListPartitionNamesResponse.
 
         分区名字列表
 
@@ -62,7 +62,7 @@ class ListPartitionNamesResponse(SdkResponse):
 
     @partition_name_list.setter
     def partition_name_list(self, partition_name_list):
-        """Sets the partition_name_list of this ListPartitionNamesResponse.
+        r"""Sets the partition_name_list of this ListPartitionNamesResponse.
 
         分区名字列表
 
@@ -73,7 +73,7 @@ class ListPartitionNamesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPartitionNamesResponse.
+        r"""Gets the page_info of this ListPartitionNamesResponse.
 
         :return: The page_info of this ListPartitionNamesResponse.
         :rtype: :class:`huaweicloudsdklakeformation.v1.PagedInfo`
@@ -82,7 +82,7 @@ class ListPartitionNamesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPartitionNamesResponse.
+        r"""Sets the page_info of this ListPartitionNamesResponse.
 
         :param page_info: The page_info of this ListPartitionNamesResponse.
         :type page_info: :class:`huaweicloudsdklakeformation.v1.PagedInfo`

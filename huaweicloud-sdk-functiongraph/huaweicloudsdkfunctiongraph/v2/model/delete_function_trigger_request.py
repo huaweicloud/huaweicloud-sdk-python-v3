@@ -29,7 +29,7 @@ class DeleteFunctionTriggerRequest:
     }
 
     def __init__(self, function_urn=None, trigger_type_code=None, trigger_id=None):
-        """DeleteFunctionTriggerRequest
+        r"""DeleteFunctionTriggerRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteFunctionTriggerRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this DeleteFunctionTriggerRequest.
+        r"""Gets the function_urn of this DeleteFunctionTriggerRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -65,7 +65,7 @@ class DeleteFunctionTriggerRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this DeleteFunctionTriggerRequest.
+        r"""Sets the function_urn of this DeleteFunctionTriggerRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -76,7 +76,7 @@ class DeleteFunctionTriggerRequest:
 
     @property
     def trigger_type_code(self):
-        """Gets the trigger_type_code of this DeleteFunctionTriggerRequest.
+        r"""Gets the trigger_type_code of this DeleteFunctionTriggerRequest.
 
         触发器类型代码。
 
@@ -87,7 +87,7 @@ class DeleteFunctionTriggerRequest:
 
     @trigger_type_code.setter
     def trigger_type_code(self, trigger_type_code):
-        """Sets the trigger_type_code of this DeleteFunctionTriggerRequest.
+        r"""Sets the trigger_type_code of this DeleteFunctionTriggerRequest.
 
         触发器类型代码。
 
@@ -98,7 +98,7 @@ class DeleteFunctionTriggerRequest:
 
     @property
     def trigger_id(self):
-        """Gets the trigger_id of this DeleteFunctionTriggerRequest.
+        r"""Gets the trigger_id of this DeleteFunctionTriggerRequest.
 
         触发器编码。
 
@@ -109,7 +109,7 @@ class DeleteFunctionTriggerRequest:
 
     @trigger_id.setter
     def trigger_id(self, trigger_id):
-        """Sets the trigger_id of this DeleteFunctionTriggerRequest.
+        r"""Sets the trigger_id of this DeleteFunctionTriggerRequest.
 
         触发器编码。
 

@@ -36,7 +36,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None, template_name=None, template_type=None, create_time=None, template_description=None, policies=None):
-        """ShowAlarmTemplateResponse
+        r"""ShowAlarmTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowAlarmTemplateResponse.
+        r"""Gets the template_id of this ShowAlarmTemplateResponse.
 
         告警模板的ID，以at开头，后跟字母、数字，长度最长为64
 
@@ -90,7 +90,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowAlarmTemplateResponse.
+        r"""Sets the template_id of this ShowAlarmTemplateResponse.
 
         告警模板的ID，以at开头，后跟字母、数字，长度最长为64
 
@@ -101,7 +101,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
 
     @property
     def template_name(self):
-        """Gets the template_name of this ShowAlarmTemplateResponse.
+        r"""Gets the template_name of this ShowAlarmTemplateResponse.
 
         告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]
 
@@ -112,7 +112,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ShowAlarmTemplateResponse.
+        r"""Sets the template_name of this ShowAlarmTemplateResponse.
 
         告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]
 
@@ -123,7 +123,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
 
     @property
     def template_type(self):
-        """Gets the template_type of this ShowAlarmTemplateResponse.
+        r"""Gets the template_type of this ShowAlarmTemplateResponse.
 
         :return: The template_type of this ShowAlarmTemplateResponse.
         :rtype: :class:`huaweicloudsdkces.v2.TemplateType`
@@ -132,7 +132,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this ShowAlarmTemplateResponse.
+        r"""Sets the template_type of this ShowAlarmTemplateResponse.
 
         :param template_type: The template_type of this ShowAlarmTemplateResponse.
         :type template_type: :class:`huaweicloudsdkces.v2.TemplateType`
@@ -141,7 +141,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowAlarmTemplateResponse.
+        r"""Gets the create_time of this ShowAlarmTemplateResponse.
 
         告警模板的创建时间
 
@@ -152,7 +152,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowAlarmTemplateResponse.
+        r"""Sets the create_time of this ShowAlarmTemplateResponse.
 
         告警模板的创建时间
 
@@ -163,7 +163,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
 
     @property
     def template_description(self):
-        """Gets the template_description of this ShowAlarmTemplateResponse.
+        r"""Gets the template_description of this ShowAlarmTemplateResponse.
 
         告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
 
@@ -174,7 +174,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
 
     @template_description.setter
     def template_description(self, template_description):
-        """Sets the template_description of this ShowAlarmTemplateResponse.
+        r"""Sets the template_description of this ShowAlarmTemplateResponse.
 
         告警模板的描述，长度范围[0,256]，该字段默认值为空字符串
 
@@ -185,7 +185,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ShowAlarmTemplateResponse.
+        r"""Gets the policies of this ShowAlarmTemplateResponse.
 
         告警模板策略列表
 
@@ -196,7 +196,7 @@ class ShowAlarmTemplateResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ShowAlarmTemplateResponse.
+        r"""Sets the policies of this ShowAlarmTemplateResponse.
 
         告警模板策略列表
 

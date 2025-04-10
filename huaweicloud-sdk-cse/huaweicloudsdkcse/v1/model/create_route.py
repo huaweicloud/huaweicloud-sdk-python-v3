@@ -29,7 +29,7 @@ class CreateRoute:
     }
 
     def __init__(self, name=None, weight=None, tags=None):
-        """CreateRoute
+        r"""CreateRoute
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateRoute:
 
     @property
     def name(self):
-        """Gets the name of this CreateRoute.
+        r"""Gets the name of this CreateRoute.
 
         规则名称。
 
@@ -68,7 +68,7 @@ class CreateRoute:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRoute.
+        r"""Sets the name of this CreateRoute.
 
         规则名称。
 
@@ -79,7 +79,7 @@ class CreateRoute:
 
     @property
     def weight(self):
-        """Gets the weight of this CreateRoute.
+        r"""Gets the weight of this CreateRoute.
 
         权重值。
 
@@ -90,7 +90,7 @@ class CreateRoute:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this CreateRoute.
+        r"""Sets the weight of this CreateRoute.
 
         权重值。
 
@@ -101,7 +101,7 @@ class CreateRoute:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateRoute.
+        r"""Gets the tags of this CreateRoute.
 
         :return: The tags of this CreateRoute.
         :rtype: :class:`huaweicloudsdkcse.v1.CreateRouteTags`
@@ -110,7 +110,7 @@ class CreateRoute:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateRoute.
+        r"""Sets the tags of this CreateRoute.
 
         :param tags: The tags of this CreateRoute.
         :type tags: :class:`huaweicloudsdkcse.v1.CreateRouteTags`

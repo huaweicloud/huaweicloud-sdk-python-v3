@@ -25,7 +25,7 @@ class DeleteDiagnosisReportRequest:
     }
 
     def __init__(self, report_id_list=None):
-        """DeleteDiagnosisReportRequest
+        r"""DeleteDiagnosisReportRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteDiagnosisReportRequest:
 
     @property
     def report_id_list(self):
-        """Gets the report_id_list of this DeleteDiagnosisReportRequest.
+        r"""Gets the report_id_list of this DeleteDiagnosisReportRequest.
 
         诊断报告ID
 
@@ -54,7 +54,7 @@ class DeleteDiagnosisReportRequest:
 
     @report_id_list.setter
     def report_id_list(self, report_id_list):
-        """Sets the report_id_list of this DeleteDiagnosisReportRequest.
+        r"""Sets the report_id_list of this DeleteDiagnosisReportRequest.
 
         诊断报告ID
 

@@ -37,7 +37,7 @@ class ApiAclInfoWithBindNum:
     }
 
     def __init__(self, acl_name=None, acl_type=None, acl_value=None, bind_num=None, entity_type=None, id=None, update_time=None):
-        """ApiAclInfoWithBindNum
+        r"""ApiAclInfoWithBindNum
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ApiAclInfoWithBindNum:
 
     @property
     def acl_name(self):
-        """Gets the acl_name of this ApiAclInfoWithBindNum.
+        r"""Gets the acl_name of this ApiAclInfoWithBindNum.
 
         ACL策略名称
 
@@ -96,7 +96,7 @@ class ApiAclInfoWithBindNum:
 
     @acl_name.setter
     def acl_name(self, acl_name):
-        """Sets the acl_name of this ApiAclInfoWithBindNum.
+        r"""Sets the acl_name of this ApiAclInfoWithBindNum.
 
         ACL策略名称
 
@@ -107,7 +107,7 @@ class ApiAclInfoWithBindNum:
 
     @property
     def acl_type(self):
-        """Gets the acl_type of this ApiAclInfoWithBindNum.
+        r"""Gets the acl_type of this ApiAclInfoWithBindNum.
 
         类型 - PERMIT（白名单类型） - DENY（黑名单类型）
 
@@ -118,7 +118,7 @@ class ApiAclInfoWithBindNum:
 
     @acl_type.setter
     def acl_type(self, acl_type):
-        """Sets the acl_type of this ApiAclInfoWithBindNum.
+        r"""Sets the acl_type of this ApiAclInfoWithBindNum.
 
         类型 - PERMIT（白名单类型） - DENY（黑名单类型）
 
@@ -129,7 +129,7 @@ class ApiAclInfoWithBindNum:
 
     @property
     def acl_value(self):
-        """Gets the acl_value of this ApiAclInfoWithBindNum.
+        r"""Gets the acl_value of this ApiAclInfoWithBindNum.
 
         ACL策略的值
 
@@ -140,7 +140,7 @@ class ApiAclInfoWithBindNum:
 
     @acl_value.setter
     def acl_value(self, acl_value):
-        """Sets the acl_value of this ApiAclInfoWithBindNum.
+        r"""Sets the acl_value of this ApiAclInfoWithBindNum.
 
         ACL策略的值
 
@@ -151,7 +151,7 @@ class ApiAclInfoWithBindNum:
 
     @property
     def bind_num(self):
-        """Gets the bind_num of this ApiAclInfoWithBindNum.
+        r"""Gets the bind_num of this ApiAclInfoWithBindNum.
 
         绑定的API数量
 
@@ -162,7 +162,7 @@ class ApiAclInfoWithBindNum:
 
     @bind_num.setter
     def bind_num(self, bind_num):
-        """Sets the bind_num of this ApiAclInfoWithBindNum.
+        r"""Sets the bind_num of this ApiAclInfoWithBindNum.
 
         绑定的API数量
 
@@ -173,7 +173,7 @@ class ApiAclInfoWithBindNum:
 
     @property
     def entity_type(self):
-        """Gets the entity_type of this ApiAclInfoWithBindNum.
+        r"""Gets the entity_type of this ApiAclInfoWithBindNum.
 
         对象类型 - IP - DOMAIN - DOMAIN_ID
 
@@ -184,7 +184,7 @@ class ApiAclInfoWithBindNum:
 
     @entity_type.setter
     def entity_type(self, entity_type):
-        """Sets the entity_type of this ApiAclInfoWithBindNum.
+        r"""Sets the entity_type of this ApiAclInfoWithBindNum.
 
         对象类型 - IP - DOMAIN - DOMAIN_ID
 
@@ -195,7 +195,7 @@ class ApiAclInfoWithBindNum:
 
     @property
     def id(self):
-        """Gets the id of this ApiAclInfoWithBindNum.
+        r"""Gets the id of this ApiAclInfoWithBindNum.
 
         ACL策略编号
 
@@ -206,7 +206,7 @@ class ApiAclInfoWithBindNum:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiAclInfoWithBindNum.
+        r"""Sets the id of this ApiAclInfoWithBindNum.
 
         ACL策略编号
 
@@ -217,7 +217,7 @@ class ApiAclInfoWithBindNum:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ApiAclInfoWithBindNum.
+        r"""Gets the update_time of this ApiAclInfoWithBindNum.
 
         更新时间
 
@@ -228,7 +228,7 @@ class ApiAclInfoWithBindNum:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ApiAclInfoWithBindNum.
+        r"""Sets the update_time of this ApiAclInfoWithBindNum.
 
         更新时间
 

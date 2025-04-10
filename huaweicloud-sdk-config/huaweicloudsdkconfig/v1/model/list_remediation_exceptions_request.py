@@ -31,7 +31,7 @@ class ListRemediationExceptionsRequest:
     }
 
     def __init__(self, policy_assignment_id=None, limit=None, marker=None, resource_id=None):
-        """ListRemediationExceptionsRequest
+        r"""ListRemediationExceptionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListRemediationExceptionsRequest:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this ListRemediationExceptionsRequest.
+        r"""Gets the policy_assignment_id of this ListRemediationExceptionsRequest.
 
         规则ID
 
@@ -74,7 +74,7 @@ class ListRemediationExceptionsRequest:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this ListRemediationExceptionsRequest.
+        r"""Sets the policy_assignment_id of this ListRemediationExceptionsRequest.
 
         规则ID
 
@@ -85,7 +85,7 @@ class ListRemediationExceptionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRemediationExceptionsRequest.
+        r"""Gets the limit of this ListRemediationExceptionsRequest.
 
         最大的返回数量
 
@@ -96,7 +96,7 @@ class ListRemediationExceptionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRemediationExceptionsRequest.
+        r"""Sets the limit of this ListRemediationExceptionsRequest.
 
         最大的返回数量
 
@@ -107,7 +107,7 @@ class ListRemediationExceptionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListRemediationExceptionsRequest.
+        r"""Gets the marker of this ListRemediationExceptionsRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -118,7 +118,7 @@ class ListRemediationExceptionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRemediationExceptionsRequest.
+        r"""Sets the marker of this ListRemediationExceptionsRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -129,7 +129,7 @@ class ListRemediationExceptionsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListRemediationExceptionsRequest.
+        r"""Gets the resource_id of this ListRemediationExceptionsRequest.
 
         资源ID
 
@@ -140,7 +140,7 @@ class ListRemediationExceptionsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListRemediationExceptionsRequest.
+        r"""Sets the resource_id of this ListRemediationExceptionsRequest.
 
         资源ID
 

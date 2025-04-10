@@ -27,7 +27,7 @@ class PublicNetworkAccess:
     }
 
     def __init__(self, result=None, public_network_info=None):
-        """PublicNetworkAccess
+        r"""PublicNetworkAccess
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PublicNetworkAccess:
 
     @property
     def result(self):
-        """Gets the result of this PublicNetworkAccess.
+        r"""Gets the result of this PublicNetworkAccess.
 
         :return: The result of this PublicNetworkAccess.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
@@ -59,7 +59,7 @@ class PublicNetworkAccess:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this PublicNetworkAccess.
+        r"""Sets the result of this PublicNetworkAccess.
 
         :param result: The result of this PublicNetworkAccess.
         :type result: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
@@ -68,7 +68,7 @@ class PublicNetworkAccess:
 
     @property
     def public_network_info(self):
-        """Gets the public_network_info of this PublicNetworkAccess.
+        r"""Gets the public_network_info of this PublicNetworkAccess.
 
         kerberos信息
 
@@ -79,7 +79,7 @@ class PublicNetworkAccess:
 
     @public_network_info.setter
     def public_network_info(self, public_network_info):
-        """Sets the public_network_info of this PublicNetworkAccess.
+        r"""Sets the public_network_info of this PublicNetworkAccess.
 
         kerberos信息
 

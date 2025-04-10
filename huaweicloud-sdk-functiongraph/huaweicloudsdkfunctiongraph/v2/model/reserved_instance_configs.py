@@ -35,7 +35,7 @@ class ReservedInstanceConfigs:
     }
 
     def __init__(self, function_urn=None, qualifier_type=None, qualifier_name=None, min_count=None, idle_mode=None, tactics_config=None):
-        """ReservedInstanceConfigs
+        r"""ReservedInstanceConfigs
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ReservedInstanceConfigs:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ReservedInstanceConfigs.
+        r"""Gets the function_urn of this ReservedInstanceConfigs.
 
         函数URN
 
@@ -89,7 +89,7 @@ class ReservedInstanceConfigs:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ReservedInstanceConfigs.
+        r"""Sets the function_urn of this ReservedInstanceConfigs.
 
         函数URN
 
@@ -100,7 +100,7 @@ class ReservedInstanceConfigs:
 
     @property
     def qualifier_type(self):
-        """Gets the qualifier_type of this ReservedInstanceConfigs.
+        r"""Gets the qualifier_type of this ReservedInstanceConfigs.
 
         限定类型, 支持version和alias
 
@@ -111,7 +111,7 @@ class ReservedInstanceConfigs:
 
     @qualifier_type.setter
     def qualifier_type(self, qualifier_type):
-        """Sets the qualifier_type of this ReservedInstanceConfigs.
+        r"""Sets the qualifier_type of this ReservedInstanceConfigs.
 
         限定类型, 支持version和alias
 
@@ -122,7 +122,7 @@ class ReservedInstanceConfigs:
 
     @property
     def qualifier_name(self):
-        """Gets the qualifier_name of this ReservedInstanceConfigs.
+        r"""Gets the qualifier_name of this ReservedInstanceConfigs.
 
         限定类型对应的取值
 
@@ -133,7 +133,7 @@ class ReservedInstanceConfigs:
 
     @qualifier_name.setter
     def qualifier_name(self, qualifier_name):
-        """Sets the qualifier_name of this ReservedInstanceConfigs.
+        r"""Sets the qualifier_name of this ReservedInstanceConfigs.
 
         限定类型对应的取值
 
@@ -144,7 +144,7 @@ class ReservedInstanceConfigs:
 
     @property
     def min_count(self):
-        """Gets the min_count of this ReservedInstanceConfigs.
+        r"""Gets the min_count of this ReservedInstanceConfigs.
 
         预留实例个数
 
@@ -155,7 +155,7 @@ class ReservedInstanceConfigs:
 
     @min_count.setter
     def min_count(self, min_count):
-        """Sets the min_count of this ReservedInstanceConfigs.
+        r"""Sets the min_count of this ReservedInstanceConfigs.
 
         预留实例个数
 
@@ -166,7 +166,7 @@ class ReservedInstanceConfigs:
 
     @property
     def idle_mode(self):
-        """Gets the idle_mode of this ReservedInstanceConfigs.
+        r"""Gets the idle_mode of this ReservedInstanceConfigs.
 
         是否开启闲置模式配置
 
@@ -177,7 +177,7 @@ class ReservedInstanceConfigs:
 
     @idle_mode.setter
     def idle_mode(self, idle_mode):
-        """Sets the idle_mode of this ReservedInstanceConfigs.
+        r"""Sets the idle_mode of this ReservedInstanceConfigs.
 
         是否开启闲置模式配置
 
@@ -188,7 +188,7 @@ class ReservedInstanceConfigs:
 
     @property
     def tactics_config(self):
-        """Gets the tactics_config of this ReservedInstanceConfigs.
+        r"""Gets the tactics_config of this ReservedInstanceConfigs.
 
         :return: The tactics_config of this ReservedInstanceConfigs.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.TacticsConfig`
@@ -197,7 +197,7 @@ class ReservedInstanceConfigs:
 
     @tactics_config.setter
     def tactics_config(self, tactics_config):
-        """Sets the tactics_config of this ReservedInstanceConfigs.
+        r"""Sets the tactics_config of this ReservedInstanceConfigs.
 
         :param tactics_config: The tactics_config of this ReservedInstanceConfigs.
         :type tactics_config: :class:`huaweicloudsdkfunctiongraph.v2.TacticsConfig`

@@ -27,7 +27,7 @@ class UpdateDefectStatusRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """UpdateDefectStatusRequest
+        r"""UpdateDefectStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDefectStatusRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateDefectStatusRequest.
+        r"""Gets the task_id of this UpdateDefectStatusRequest.
 
         任务id
 
@@ -60,7 +60,7 @@ class UpdateDefectStatusRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateDefectStatusRequest.
+        r"""Sets the task_id of this UpdateDefectStatusRequest.
 
         任务id
 
@@ -71,7 +71,7 @@ class UpdateDefectStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDefectStatusRequest.
+        r"""Gets the body of this UpdateDefectStatusRequest.
 
         :return: The body of this UpdateDefectStatusRequest.
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.UpdateDefectRequestBody`
@@ -80,7 +80,7 @@ class UpdateDefectStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDefectStatusRequest.
+        r"""Sets the body of this UpdateDefectStatusRequest.
 
         :param body: The body of this UpdateDefectStatusRequest.
         :type body: :class:`huaweicloudsdkcodeartscheck.v2.UpdateDefectRequestBody`

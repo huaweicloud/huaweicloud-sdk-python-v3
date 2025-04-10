@@ -31,7 +31,7 @@ class LoadbalancersResource:
     }
 
     def __init__(self, id=None, name=None, l7_flavor_id=None, ip_target_enable=None):
-        """LoadbalancersResource
+        r"""LoadbalancersResource
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class LoadbalancersResource:
 
     @property
     def id(self):
-        """Gets the id of this LoadbalancersResource.
+        r"""Gets the id of this LoadbalancersResource.
 
         负载均衡器ID。
 
@@ -75,7 +75,7 @@ class LoadbalancersResource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LoadbalancersResource.
+        r"""Sets the id of this LoadbalancersResource.
 
         负载均衡器ID。
 
@@ -86,7 +86,7 @@ class LoadbalancersResource:
 
     @property
     def name(self):
-        """Gets the name of this LoadbalancersResource.
+        r"""Gets the name of this LoadbalancersResource.
 
         负载均衡器名称。
 
@@ -97,7 +97,7 @@ class LoadbalancersResource:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LoadbalancersResource.
+        r"""Sets the name of this LoadbalancersResource.
 
         负载均衡器名称。
 
@@ -108,7 +108,7 @@ class LoadbalancersResource:
 
     @property
     def l7_flavor_id(self):
-        """Gets the l7_flavor_id of this LoadbalancersResource.
+        r"""Gets the l7_flavor_id of this LoadbalancersResource.
 
         7层协议Id。
 
@@ -119,7 +119,7 @@ class LoadbalancersResource:
 
     @l7_flavor_id.setter
     def l7_flavor_id(self, l7_flavor_id):
-        """Sets the l7_flavor_id of this LoadbalancersResource.
+        r"""Sets the l7_flavor_id of this LoadbalancersResource.
 
         7层协议Id。
 
@@ -130,7 +130,7 @@ class LoadbalancersResource:
 
     @property
     def ip_target_enable(self):
-        """Gets the ip_target_enable of this LoadbalancersResource.
+        r"""Gets the ip_target_enable of this LoadbalancersResource.
 
         是否开启跨VPC后端。
 
@@ -141,7 +141,7 @@ class LoadbalancersResource:
 
     @ip_target_enable.setter
     def ip_target_enable(self, ip_target_enable):
-        """Sets the ip_target_enable of this LoadbalancersResource.
+        r"""Sets the ip_target_enable of this LoadbalancersResource.
 
         是否开启跨VPC后端。
 

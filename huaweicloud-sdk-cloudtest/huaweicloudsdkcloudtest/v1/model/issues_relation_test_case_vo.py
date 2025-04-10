@@ -45,7 +45,7 @@ class IssuesRelationTestCaseVo:
     }
 
     def __init__(self, uri=None, number=None, name=None, dr_relation_id=None, status_code=None, status_name=None, author=None, author_id=None, owner=None, project_uuid=None, creation_date=None):
-        """IssuesRelationTestCaseVo
+        r"""IssuesRelationTestCaseVo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class IssuesRelationTestCaseVo:
 
     @property
     def uri(self):
-        """Gets the uri of this IssuesRelationTestCaseVo.
+        r"""Gets the uri of this IssuesRelationTestCaseVo.
 
         用例ID
 
@@ -124,7 +124,7 @@ class IssuesRelationTestCaseVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this IssuesRelationTestCaseVo.
+        r"""Sets the uri of this IssuesRelationTestCaseVo.
 
         用例ID
 
@@ -135,7 +135,7 @@ class IssuesRelationTestCaseVo:
 
     @property
     def number(self):
-        """Gets the number of this IssuesRelationTestCaseVo.
+        r"""Gets the number of this IssuesRelationTestCaseVo.
 
         用例编号
 
@@ -146,7 +146,7 @@ class IssuesRelationTestCaseVo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this IssuesRelationTestCaseVo.
+        r"""Sets the number of this IssuesRelationTestCaseVo.
 
         用例编号
 
@@ -157,7 +157,7 @@ class IssuesRelationTestCaseVo:
 
     @property
     def name(self):
-        """Gets the name of this IssuesRelationTestCaseVo.
+        r"""Gets the name of this IssuesRelationTestCaseVo.
 
         用例名称
 
@@ -168,7 +168,7 @@ class IssuesRelationTestCaseVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IssuesRelationTestCaseVo.
+        r"""Sets the name of this IssuesRelationTestCaseVo.
 
         用例名称
 
@@ -179,7 +179,7 @@ class IssuesRelationTestCaseVo:
 
     @property
     def dr_relation_id(self):
-        """Gets the dr_relation_id of this IssuesRelationTestCaseVo.
+        r"""Gets the dr_relation_id of this IssuesRelationTestCaseVo.
 
         工作项id
 
@@ -190,7 +190,7 @@ class IssuesRelationTestCaseVo:
 
     @dr_relation_id.setter
     def dr_relation_id(self, dr_relation_id):
-        """Sets the dr_relation_id of this IssuesRelationTestCaseVo.
+        r"""Sets the dr_relation_id of this IssuesRelationTestCaseVo.
 
         工作项id
 
@@ -201,7 +201,7 @@ class IssuesRelationTestCaseVo:
 
     @property
     def status_code(self):
-        """Gets the status_code of this IssuesRelationTestCaseVo.
+        r"""Gets the status_code of this IssuesRelationTestCaseVo.
 
         状态ID
 
@@ -212,7 +212,7 @@ class IssuesRelationTestCaseVo:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this IssuesRelationTestCaseVo.
+        r"""Sets the status_code of this IssuesRelationTestCaseVo.
 
         状态ID
 
@@ -223,7 +223,7 @@ class IssuesRelationTestCaseVo:
 
     @property
     def status_name(self):
-        """Gets the status_name of this IssuesRelationTestCaseVo.
+        r"""Gets the status_name of this IssuesRelationTestCaseVo.
 
         状态名称
 
@@ -234,7 +234,7 @@ class IssuesRelationTestCaseVo:
 
     @status_name.setter
     def status_name(self, status_name):
-        """Sets the status_name of this IssuesRelationTestCaseVo.
+        r"""Sets the status_name of this IssuesRelationTestCaseVo.
 
         状态名称
 
@@ -245,7 +245,7 @@ class IssuesRelationTestCaseVo:
 
     @property
     def author(self):
-        """Gets the author of this IssuesRelationTestCaseVo.
+        r"""Gets the author of this IssuesRelationTestCaseVo.
 
         创建人名称
 
@@ -256,7 +256,7 @@ class IssuesRelationTestCaseVo:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this IssuesRelationTestCaseVo.
+        r"""Sets the author of this IssuesRelationTestCaseVo.
 
         创建人名称
 
@@ -267,7 +267,7 @@ class IssuesRelationTestCaseVo:
 
     @property
     def author_id(self):
-        """Gets the author_id of this IssuesRelationTestCaseVo.
+        r"""Gets the author_id of this IssuesRelationTestCaseVo.
 
         创建人ID
 
@@ -278,7 +278,7 @@ class IssuesRelationTestCaseVo:
 
     @author_id.setter
     def author_id(self, author_id):
-        """Sets the author_id of this IssuesRelationTestCaseVo.
+        r"""Sets the author_id of this IssuesRelationTestCaseVo.
 
         创建人ID
 
@@ -289,7 +289,7 @@ class IssuesRelationTestCaseVo:
 
     @property
     def owner(self):
-        """Gets the owner of this IssuesRelationTestCaseVo.
+        r"""Gets the owner of this IssuesRelationTestCaseVo.
 
         处理人名称
 
@@ -300,7 +300,7 @@ class IssuesRelationTestCaseVo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this IssuesRelationTestCaseVo.
+        r"""Sets the owner of this IssuesRelationTestCaseVo.
 
         处理人名称
 
@@ -311,7 +311,7 @@ class IssuesRelationTestCaseVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this IssuesRelationTestCaseVo.
+        r"""Gets the project_uuid of this IssuesRelationTestCaseVo.
 
         项目ID
 
@@ -322,7 +322,7 @@ class IssuesRelationTestCaseVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this IssuesRelationTestCaseVo.
+        r"""Sets the project_uuid of this IssuesRelationTestCaseVo.
 
         项目ID
 
@@ -333,7 +333,7 @@ class IssuesRelationTestCaseVo:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this IssuesRelationTestCaseVo.
+        r"""Gets the creation_date of this IssuesRelationTestCaseVo.
 
         创建时间
 
@@ -344,7 +344,7 @@ class IssuesRelationTestCaseVo:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this IssuesRelationTestCaseVo.
+        r"""Sets the creation_date of this IssuesRelationTestCaseVo.
 
         创建时间
 

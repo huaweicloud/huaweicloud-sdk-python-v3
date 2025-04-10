@@ -25,7 +25,7 @@ class CancelSubscriptionRequest:
     }
 
     def __init__(self, subscription_urn=None):
-        """CancelSubscriptionRequest
+        r"""CancelSubscriptionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CancelSubscriptionRequest:
 
     @property
     def subscription_urn(self):
-        """Gets the subscription_urn of this CancelSubscriptionRequest.
+        r"""Gets the subscription_urn of this CancelSubscriptionRequest.
 
         订阅者的唯一的资源标识，可通过[查询订阅者列表](ListSubscriptions.xml)获取该标识。
 
@@ -53,7 +53,7 @@ class CancelSubscriptionRequest:
 
     @subscription_urn.setter
     def subscription_urn(self, subscription_urn):
-        """Sets the subscription_urn of this CancelSubscriptionRequest.
+        r"""Sets the subscription_urn of this CancelSubscriptionRequest.
 
         订阅者的唯一的资源标识，可通过[查询订阅者列表](ListSubscriptions.xml)获取该标识。
 

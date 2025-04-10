@@ -32,7 +32,7 @@ class EnableConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, configuration_id=None, configuration_name=None, success=None, apply_results=None):
-        """EnableConfigurationResponse
+        r"""EnableConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class EnableConfigurationResponse(SdkResponse):
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this EnableConfigurationResponse.
+        r"""Gets the configuration_id of this EnableConfigurationResponse.
 
         参数组ID。
 
@@ -76,7 +76,7 @@ class EnableConfigurationResponse(SdkResponse):
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this EnableConfigurationResponse.
+        r"""Sets the configuration_id of this EnableConfigurationResponse.
 
         参数组ID。
 
@@ -87,7 +87,7 @@ class EnableConfigurationResponse(SdkResponse):
 
     @property
     def configuration_name(self):
-        """Gets the configuration_name of this EnableConfigurationResponse.
+        r"""Gets the configuration_name of this EnableConfigurationResponse.
 
         参数组名称。
 
@@ -98,7 +98,7 @@ class EnableConfigurationResponse(SdkResponse):
 
     @configuration_name.setter
     def configuration_name(self, configuration_name):
-        """Sets the configuration_name of this EnableConfigurationResponse.
+        r"""Sets the configuration_name of this EnableConfigurationResponse.
 
         参数组名称。
 
@@ -109,7 +109,7 @@ class EnableConfigurationResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this EnableConfigurationResponse.
+        r"""Gets the success of this EnableConfigurationResponse.
 
         参数模板是否都应用成功。  - “true”表示参数模板都应用成功。 - “false”表示存在应用失败的参数模板。
 
@@ -120,7 +120,7 @@ class EnableConfigurationResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this EnableConfigurationResponse.
+        r"""Sets the success of this EnableConfigurationResponse.
 
         参数模板是否都应用成功。  - “true”表示参数模板都应用成功。 - “false”表示存在应用失败的参数模板。
 
@@ -131,7 +131,7 @@ class EnableConfigurationResponse(SdkResponse):
 
     @property
     def apply_results(self):
-        """Gets the apply_results of this EnableConfigurationResponse.
+        r"""Gets the apply_results of this EnableConfigurationResponse.
 
         对每个实例的应用结果。
 
@@ -142,7 +142,7 @@ class EnableConfigurationResponse(SdkResponse):
 
     @apply_results.setter
     def apply_results(self, apply_results):
-        """Sets the apply_results of this EnableConfigurationResponse.
+        r"""Sets the apply_results of this EnableConfigurationResponse.
 
         对每个实例的应用结果。
 

@@ -39,7 +39,7 @@ class AnticrawlerRule:
     }
 
     def __init__(self, id=None, policyid=None, conditions=None, name=None, type=None, timestamp=None, status=None, priority=None):
-        """AnticrawlerRule
+        r"""AnticrawlerRule
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class AnticrawlerRule:
 
     @property
     def id(self):
-        """Gets the id of this AnticrawlerRule.
+        r"""Gets the id of this AnticrawlerRule.
 
         规则id
 
@@ -103,7 +103,7 @@ class AnticrawlerRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AnticrawlerRule.
+        r"""Sets the id of this AnticrawlerRule.
 
         规则id
 
@@ -114,7 +114,7 @@ class AnticrawlerRule:
 
     @property
     def policyid(self):
-        """Gets the policyid of this AnticrawlerRule.
+        r"""Gets the policyid of this AnticrawlerRule.
 
         策略id
 
@@ -125,7 +125,7 @@ class AnticrawlerRule:
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this AnticrawlerRule.
+        r"""Sets the policyid of this AnticrawlerRule.
 
         策略id
 
@@ -136,7 +136,7 @@ class AnticrawlerRule:
 
     @property
     def conditions(self):
-        """Gets the conditions of this AnticrawlerRule.
+        r"""Gets the conditions of this AnticrawlerRule.
 
         匹配条件列表
 
@@ -147,7 +147,7 @@ class AnticrawlerRule:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this AnticrawlerRule.
+        r"""Sets the conditions of this AnticrawlerRule.
 
         匹配条件列表
 
@@ -158,7 +158,7 @@ class AnticrawlerRule:
 
     @property
     def name(self):
-        """Gets the name of this AnticrawlerRule.
+        r"""Gets the name of this AnticrawlerRule.
 
         规则名称
 
@@ -169,7 +169,7 @@ class AnticrawlerRule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AnticrawlerRule.
+        r"""Sets the name of this AnticrawlerRule.
 
         规则名称
 
@@ -180,7 +180,7 @@ class AnticrawlerRule:
 
     @property
     def type(self):
-        """Gets the type of this AnticrawlerRule.
+        r"""Gets the type of this AnticrawlerRule.
 
         JS脚本反爬虫规则类型，指定防护路径：anticrawler_specific_url 排除防护路径：anticrawler_except_url
 
@@ -191,7 +191,7 @@ class AnticrawlerRule:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AnticrawlerRule.
+        r"""Sets the type of this AnticrawlerRule.
 
         JS脚本反爬虫规则类型，指定防护路径：anticrawler_specific_url 排除防护路径：anticrawler_except_url
 
@@ -202,7 +202,7 @@ class AnticrawlerRule:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this AnticrawlerRule.
+        r"""Gets the timestamp of this AnticrawlerRule.
 
         创建规则时间戳
 
@@ -213,7 +213,7 @@ class AnticrawlerRule:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this AnticrawlerRule.
+        r"""Sets the timestamp of this AnticrawlerRule.
 
         创建规则时间戳
 
@@ -224,7 +224,7 @@ class AnticrawlerRule:
 
     @property
     def status(self):
-        """Gets the status of this AnticrawlerRule.
+        r"""Gets the status of this AnticrawlerRule.
 
         规则状态，0：关闭，1：开启
 
@@ -235,7 +235,7 @@ class AnticrawlerRule:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AnticrawlerRule.
+        r"""Sets the status of this AnticrawlerRule.
 
         规则状态，0：关闭，1：开启
 
@@ -246,7 +246,7 @@ class AnticrawlerRule:
 
     @property
     def priority(self):
-        """Gets the priority of this AnticrawlerRule.
+        r"""Gets the priority of this AnticrawlerRule.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 
@@ -257,7 +257,7 @@ class AnticrawlerRule:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this AnticrawlerRule.
+        r"""Sets the priority of this AnticrawlerRule.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 

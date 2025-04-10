@@ -59,7 +59,7 @@ class UpdateUserResult:
     }
 
     def __init__(self, access_mode=None, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, domain_id=None, enabled=None, areacode=None, email=None, id=None, links=None, password_expires_at=None, create_time=None, xdomain_id=None, xdomain_type=None, is_domain_owner=None):
-        """UpdateUserResult
+        r"""UpdateUserResult
 
         The model defined in huaweicloud sdk
 
@@ -157,7 +157,7 @@ class UpdateUserResult:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this UpdateUserResult.
+        r"""Gets the access_mode of this UpdateUserResult.
 
         IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
 
@@ -168,7 +168,7 @@ class UpdateUserResult:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this UpdateUserResult.
+        r"""Sets the access_mode of this UpdateUserResult.
 
         IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
 
@@ -179,7 +179,7 @@ class UpdateUserResult:
 
     @property
     def pwd_status(self):
-        """Gets the pwd_status of this UpdateUserResult.
+        r"""Gets the pwd_status of this UpdateUserResult.
 
         IAM用户密码状态。true：需要修改密码，false：正常。
 
@@ -190,7 +190,7 @@ class UpdateUserResult:
 
     @pwd_status.setter
     def pwd_status(self, pwd_status):
-        """Sets the pwd_status of this UpdateUserResult.
+        r"""Sets the pwd_status of this UpdateUserResult.
 
         IAM用户密码状态。true：需要修改密码，false：正常。
 
@@ -201,7 +201,7 @@ class UpdateUserResult:
 
     @property
     def xuser_id(self):
-        """Gets the xuser_id of this UpdateUserResult.
+        r"""Gets the xuser_id of this UpdateUserResult.
 
         IAM用户在外部系统中的ID。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
@@ -212,7 +212,7 @@ class UpdateUserResult:
 
     @xuser_id.setter
     def xuser_id(self, xuser_id):
-        """Sets the xuser_id of this UpdateUserResult.
+        r"""Sets the xuser_id of this UpdateUserResult.
 
         IAM用户在外部系统中的ID。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
@@ -223,7 +223,7 @@ class UpdateUserResult:
 
     @property
     def xuser_type(self):
-        """Gets the xuser_type of this UpdateUserResult.
+        r"""Gets the xuser_type of this UpdateUserResult.
 
         IAM用户在外部系统中的类型。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
@@ -234,7 +234,7 @@ class UpdateUserResult:
 
     @xuser_type.setter
     def xuser_type(self, xuser_type):
-        """Sets the xuser_type of this UpdateUserResult.
+        r"""Sets the xuser_type of this UpdateUserResult.
 
         IAM用户在外部系统中的类型。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
@@ -245,7 +245,7 @@ class UpdateUserResult:
 
     @property
     def description(self):
-        """Gets the description of this UpdateUserResult.
+        r"""Gets the description of this UpdateUserResult.
 
         IAM用户的新描述信息。
 
@@ -256,7 +256,7 @@ class UpdateUserResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateUserResult.
+        r"""Sets the description of this UpdateUserResult.
 
         IAM用户的新描述信息。
 
@@ -267,7 +267,7 @@ class UpdateUserResult:
 
     @property
     def name(self):
-        """Gets the name of this UpdateUserResult.
+        r"""Gets the name of this UpdateUserResult.
 
         IAM用户新用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头。
 
@@ -278,7 +278,7 @@ class UpdateUserResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateUserResult.
+        r"""Sets the name of this UpdateUserResult.
 
         IAM用户新用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头。
 
@@ -289,7 +289,7 @@ class UpdateUserResult:
 
     @property
     def phone(self):
-        """Gets the phone of this UpdateUserResult.
+        r"""Gets the phone of this UpdateUserResult.
 
         IAM用户新手机号，纯数字，长度小于等于32字符。必须与国家码同时存在。
 
@@ -300,7 +300,7 @@ class UpdateUserResult:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this UpdateUserResult.
+        r"""Sets the phone of this UpdateUserResult.
 
         IAM用户新手机号，纯数字，长度小于等于32字符。必须与国家码同时存在。
 
@@ -311,7 +311,7 @@ class UpdateUserResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateUserResult.
+        r"""Gets the domain_id of this UpdateUserResult.
 
         IAM用户所属账号ID。
 
@@ -322,7 +322,7 @@ class UpdateUserResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateUserResult.
+        r"""Sets the domain_id of this UpdateUserResult.
 
         IAM用户所属账号ID。
 
@@ -333,7 +333,7 @@ class UpdateUserResult:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateUserResult.
+        r"""Gets the enabled of this UpdateUserResult.
 
         是否启用IAM用户。true为启用，false为停用，默认为true。
 
@@ -344,7 +344,7 @@ class UpdateUserResult:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateUserResult.
+        r"""Sets the enabled of this UpdateUserResult.
 
         是否启用IAM用户。true为启用，false为停用，默认为true。
 
@@ -355,7 +355,7 @@ class UpdateUserResult:
 
     @property
     def areacode(self):
-        """Gets the areacode of this UpdateUserResult.
+        r"""Gets the areacode of this UpdateUserResult.
 
         国家码。中国大陆为“0086”。
 
@@ -366,7 +366,7 @@ class UpdateUserResult:
 
     @areacode.setter
     def areacode(self, areacode):
-        """Sets the areacode of this UpdateUserResult.
+        r"""Sets the areacode of this UpdateUserResult.
 
         国家码。中国大陆为“0086”。
 
@@ -377,7 +377,7 @@ class UpdateUserResult:
 
     @property
     def email(self):
-        """Gets the email of this UpdateUserResult.
+        r"""Gets the email of this UpdateUserResult.
 
         IAM用户新邮箱。
 
@@ -388,7 +388,7 @@ class UpdateUserResult:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this UpdateUserResult.
+        r"""Sets the email of this UpdateUserResult.
 
         IAM用户新邮箱。
 
@@ -399,7 +399,7 @@ class UpdateUserResult:
 
     @property
     def id(self):
-        """Gets the id of this UpdateUserResult.
+        r"""Gets the id of this UpdateUserResult.
 
         IAM用户ID。
 
@@ -410,7 +410,7 @@ class UpdateUserResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateUserResult.
+        r"""Sets the id of this UpdateUserResult.
 
         IAM用户ID。
 
@@ -421,7 +421,7 @@ class UpdateUserResult:
 
     @property
     def links(self):
-        """Gets the links of this UpdateUserResult.
+        r"""Gets the links of this UpdateUserResult.
 
         :return: The links of this UpdateUserResult.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -430,7 +430,7 @@ class UpdateUserResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this UpdateUserResult.
+        r"""Sets the links of this UpdateUserResult.
 
         :param links: The links of this UpdateUserResult.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -439,7 +439,7 @@ class UpdateUserResult:
 
     @property
     def password_expires_at(self):
-        """Gets the password_expires_at of this UpdateUserResult.
+        r"""Gets the password_expires_at of this UpdateUserResult.
 
         密码过期时间（UTC时间），“null”表示密码不过期。
 
@@ -450,7 +450,7 @@ class UpdateUserResult:
 
     @password_expires_at.setter
     def password_expires_at(self, password_expires_at):
-        """Sets the password_expires_at of this UpdateUserResult.
+        r"""Sets the password_expires_at of this UpdateUserResult.
 
         密码过期时间（UTC时间），“null”表示密码不过期。
 
@@ -461,7 +461,7 @@ class UpdateUserResult:
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateUserResult.
+        r"""Gets the create_time of this UpdateUserResult.
 
         UTC时间，格式为YYYY-MM-DDTHH:mm:ss.ssssss，日期和时间戳格式如：2023-06-28T08:56:33.710000。
 
@@ -472,7 +472,7 @@ class UpdateUserResult:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateUserResult.
+        r"""Sets the create_time of this UpdateUserResult.
 
         UTC时间，格式为YYYY-MM-DDTHH:mm:ss.ssssss，日期和时间戳格式如：2023-06-28T08:56:33.710000。
 
@@ -483,7 +483,7 @@ class UpdateUserResult:
 
     @property
     def xdomain_id(self):
-        """Gets the xdomain_id of this UpdateUserResult.
+        r"""Gets the xdomain_id of this UpdateUserResult.
 
         IAM用户在外部系统中的ID。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
@@ -494,7 +494,7 @@ class UpdateUserResult:
 
     @xdomain_id.setter
     def xdomain_id(self, xdomain_id):
-        """Sets the xdomain_id of this UpdateUserResult.
+        r"""Sets the xdomain_id of this UpdateUserResult.
 
         IAM用户在外部系统中的ID。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
@@ -505,7 +505,7 @@ class UpdateUserResult:
 
     @property
     def xdomain_type(self):
-        """Gets the xdomain_type of this UpdateUserResult.
+        r"""Gets the xdomain_type of this UpdateUserResult.
 
         IAM用户在外部系统中的类型。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。 
 
@@ -516,7 +516,7 @@ class UpdateUserResult:
 
     @xdomain_type.setter
     def xdomain_type(self, xdomain_type):
-        """Sets the xdomain_type of this UpdateUserResult.
+        r"""Sets the xdomain_type of this UpdateUserResult.
 
         IAM用户在外部系统中的类型。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。 
 
@@ -527,7 +527,7 @@ class UpdateUserResult:
 
     @property
     def is_domain_owner(self):
-        """Gets the is_domain_owner of this UpdateUserResult.
+        r"""Gets the is_domain_owner of this UpdateUserResult.
 
         IAM用户是否为账号管理员。
 
@@ -538,7 +538,7 @@ class UpdateUserResult:
 
     @is_domain_owner.setter
     def is_domain_owner(self, is_domain_owner):
-        """Sets the is_domain_owner of this UpdateUserResult.
+        r"""Sets the is_domain_owner of this UpdateUserResult.
 
         IAM用户是否为账号管理员。
 

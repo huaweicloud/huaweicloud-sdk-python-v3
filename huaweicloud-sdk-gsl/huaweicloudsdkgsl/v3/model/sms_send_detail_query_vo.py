@@ -35,7 +35,7 @@ class SmsSendDetailQueryVo:
     }
 
     def __init__(self, cid=None, msisdn=None, sent_time=None, received_time=None, sms_status=None, sms_content=None):
-        """SmsSendDetailQueryVo
+        r"""SmsSendDetailQueryVo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SmsSendDetailQueryVo:
 
     @property
     def cid(self):
-        """Gets the cid of this SmsSendDetailQueryVo.
+        r"""Gets the cid of this SmsSendDetailQueryVo.
 
         容器ID
 
@@ -89,7 +89,7 @@ class SmsSendDetailQueryVo:
 
     @cid.setter
     def cid(self, cid):
-        """Sets the cid of this SmsSendDetailQueryVo.
+        r"""Sets the cid of this SmsSendDetailQueryVo.
 
         容器ID
 
@@ -100,7 +100,7 @@ class SmsSendDetailQueryVo:
 
     @property
     def msisdn(self):
-        """Gets the msisdn of this SmsSendDetailQueryVo.
+        r"""Gets the msisdn of this SmsSendDetailQueryVo.
 
         MSISDN
 
@@ -111,7 +111,7 @@ class SmsSendDetailQueryVo:
 
     @msisdn.setter
     def msisdn(self, msisdn):
-        """Sets the msisdn of this SmsSendDetailQueryVo.
+        r"""Sets the msisdn of this SmsSendDetailQueryVo.
 
         MSISDN
 
@@ -122,7 +122,7 @@ class SmsSendDetailQueryVo:
 
     @property
     def sent_time(self):
-        """Gets the sent_time of this SmsSendDetailQueryVo.
+        r"""Gets the sent_time of this SmsSendDetailQueryVo.
 
         发送时间
 
@@ -133,7 +133,7 @@ class SmsSendDetailQueryVo:
 
     @sent_time.setter
     def sent_time(self, sent_time):
-        """Sets the sent_time of this SmsSendDetailQueryVo.
+        r"""Sets the sent_time of this SmsSendDetailQueryVo.
 
         发送时间
 
@@ -144,7 +144,7 @@ class SmsSendDetailQueryVo:
 
     @property
     def received_time(self):
-        """Gets the received_time of this SmsSendDetailQueryVo.
+        r"""Gets the received_time of this SmsSendDetailQueryVo.
 
         接收时间
 
@@ -155,7 +155,7 @@ class SmsSendDetailQueryVo:
 
     @received_time.setter
     def received_time(self, received_time):
-        """Sets the received_time of this SmsSendDetailQueryVo.
+        r"""Sets the received_time of this SmsSendDetailQueryVo.
 
         接收时间
 
@@ -166,7 +166,7 @@ class SmsSendDetailQueryVo:
 
     @property
     def sms_status(self):
-        """Gets the sms_status of this SmsSendDetailQueryVo.
+        r"""Gets the sms_status of this SmsSendDetailQueryVo.
 
         短信状态:1发送中 2.已送达 3.失败
 
@@ -177,7 +177,7 @@ class SmsSendDetailQueryVo:
 
     @sms_status.setter
     def sms_status(self, sms_status):
-        """Sets the sms_status of this SmsSendDetailQueryVo.
+        r"""Sets the sms_status of this SmsSendDetailQueryVo.
 
         短信状态:1发送中 2.已送达 3.失败
 
@@ -188,7 +188,7 @@ class SmsSendDetailQueryVo:
 
     @property
     def sms_content(self):
-        """Gets the sms_content of this SmsSendDetailQueryVo.
+        r"""Gets the sms_content of this SmsSendDetailQueryVo.
 
         短信内容
 
@@ -199,7 +199,7 @@ class SmsSendDetailQueryVo:
 
     @sms_content.setter
     def sms_content(self, sms_content):
-        """Sets the sms_content of this SmsSendDetailQueryVo.
+        r"""Sets the sms_content of this SmsSendDetailQueryVo.
 
         短信内容
 

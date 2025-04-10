@@ -23,7 +23,7 @@ class ListGcbTenantTagsRequest:
     }
 
     def __init__(self):
-        """ListGcbTenantTagsRequest
+        r"""ListGcbTenantTagsRequest
 
         The model defined in huaweicloud sdk
 

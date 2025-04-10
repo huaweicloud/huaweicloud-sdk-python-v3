@@ -27,7 +27,7 @@ class ShowRepositoryRequest:
     }
 
     def __init__(self, namespace=None, repository=None):
-        """ShowRepositoryRequest
+        r"""ShowRepositoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowRepositoryRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ShowRepositoryRequest.
+        r"""Gets the namespace of this ShowRepositoryRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -59,7 +59,7 @@ class ShowRepositoryRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ShowRepositoryRequest.
+        r"""Sets the namespace of this ShowRepositoryRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -70,7 +70,7 @@ class ShowRepositoryRequest:
 
     @property
     def repository(self):
-        """Gets the repository of this ShowRepositoryRequest.
+        r"""Gets the repository of this ShowRepositoryRequest.
 
         镜像仓库名称
 
@@ -81,7 +81,7 @@ class ShowRepositoryRequest:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this ShowRepositoryRequest.
+        r"""Sets the repository of this ShowRepositoryRequest.
 
         镜像仓库名称
 

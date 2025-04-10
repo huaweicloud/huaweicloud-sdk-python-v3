@@ -27,7 +27,7 @@ class RenewDataProfileRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """RenewDataProfileRequest
+        r"""RenewDataProfileRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RenewDataProfileRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this RenewDataProfileRequest.
+        r"""Gets the workspace of this RenewDataProfileRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)
 
@@ -60,7 +60,7 @@ class RenewDataProfileRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this RenewDataProfileRequest.
+        r"""Sets the workspace of this RenewDataProfileRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)
 
@@ -71,7 +71,7 @@ class RenewDataProfileRequest:
 
     @property
     def body(self):
-        """Gets the body of this RenewDataProfileRequest.
+        r"""Gets the body of this RenewDataProfileRequest.
 
         :return: The body of this RenewDataProfileRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataProfileRO`
@@ -80,7 +80,7 @@ class RenewDataProfileRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RenewDataProfileRequest.
+        r"""Sets the body of this RenewDataProfileRequest.
 
         :param body: The body of this RenewDataProfileRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.DataProfileRO`

@@ -41,7 +41,7 @@ class HttpInfoResponseBody:
     }
 
     def __init__(self, https_status=None, cert_name=None, certificate=None, private_key=None, certificate_type=None, force_redirect_https=None, force_redirect_config=None, http2=None, expiration_time=None):
-        """HttpInfoResponseBody
+        r"""HttpInfoResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class HttpInfoResponseBody:
 
     @property
     def https_status(self):
-        """Gets the https_status of this HttpInfoResponseBody.
+        r"""Gets the https_status of this HttpInfoResponseBody.
 
         HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源；3：启用HTTPS加速并HTTPS回源，开启时需要传递证书及私钥
 
@@ -110,7 +110,7 @@ class HttpInfoResponseBody:
 
     @https_status.setter
     def https_status(self, https_status):
-        """Sets the https_status of this HttpInfoResponseBody.
+        r"""Sets the https_status of this HttpInfoResponseBody.
 
         HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源；3：启用HTTPS加速并HTTPS回源，开启时需要传递证书及私钥
 
@@ -121,7 +121,7 @@ class HttpInfoResponseBody:
 
     @property
     def cert_name(self):
-        """Gets the cert_name of this HttpInfoResponseBody.
+        r"""Gets the cert_name of this HttpInfoResponseBody.
 
         证书名称。（长度限制为3-32字符）。
 
@@ -132,7 +132,7 @@ class HttpInfoResponseBody:
 
     @cert_name.setter
     def cert_name(self, cert_name):
-        """Sets the cert_name of this HttpInfoResponseBody.
+        r"""Sets the cert_name of this HttpInfoResponseBody.
 
         证书名称。（长度限制为3-32字符）。
 
@@ -143,7 +143,7 @@ class HttpInfoResponseBody:
 
     @property
     def certificate(self):
-        """Gets the certificate of this HttpInfoResponseBody.
+        r"""Gets the certificate of this HttpInfoResponseBody.
 
         证书内容。
 
@@ -154,7 +154,7 @@ class HttpInfoResponseBody:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this HttpInfoResponseBody.
+        r"""Sets the certificate of this HttpInfoResponseBody.
 
         证书内容。
 
@@ -165,7 +165,7 @@ class HttpInfoResponseBody:
 
     @property
     def private_key(self):
-        """Gets the private_key of this HttpInfoResponseBody.
+        r"""Gets the private_key of this HttpInfoResponseBody.
 
         功能说明： HTTPS协议使用的私钥，不启用证书则无需输入。（为了客户信息安全，接口返回私钥为空）
 
@@ -176,7 +176,7 @@ class HttpInfoResponseBody:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this HttpInfoResponseBody.
+        r"""Sets the private_key of this HttpInfoResponseBody.
 
         功能说明： HTTPS协议使用的私钥，不启用证书则无需输入。（为了客户信息安全，接口返回私钥为空）
 
@@ -187,7 +187,7 @@ class HttpInfoResponseBody:
 
     @property
     def certificate_type(self):
-        """Gets the certificate_type of this HttpInfoResponseBody.
+        r"""Gets the certificate_type of this HttpInfoResponseBody.
 
         证书类型。1：代表华为云托管证书；0：表示自有证书。
 
@@ -198,7 +198,7 @@ class HttpInfoResponseBody:
 
     @certificate_type.setter
     def certificate_type(self, certificate_type):
-        """Sets the certificate_type of this HttpInfoResponseBody.
+        r"""Sets the certificate_type of this HttpInfoResponseBody.
 
         证书类型。1：代表华为云托管证书；0：表示自有证书。
 
@@ -209,7 +209,7 @@ class HttpInfoResponseBody:
 
     @property
     def force_redirect_https(self):
-        """Gets the force_redirect_https of this HttpInfoResponseBody.
+        r"""Gets the force_redirect_https of this HttpInfoResponseBody.
 
         客户端请求是否强制重定向。1是，0否。（如果为2，表示强制跳转HTTP）
 
@@ -220,7 +220,7 @@ class HttpInfoResponseBody:
 
     @force_redirect_https.setter
     def force_redirect_https(self, force_redirect_https):
-        """Sets the force_redirect_https of this HttpInfoResponseBody.
+        r"""Sets the force_redirect_https of this HttpInfoResponseBody.
 
         客户端请求是否强制重定向。1是，0否。（如果为2，表示强制跳转HTTP）
 
@@ -231,7 +231,7 @@ class HttpInfoResponseBody:
 
     @property
     def force_redirect_config(self):
-        """Gets the force_redirect_config of this HttpInfoResponseBody.
+        r"""Gets the force_redirect_config of this HttpInfoResponseBody.
 
         :return: The force_redirect_config of this HttpInfoResponseBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
@@ -240,7 +240,7 @@ class HttpInfoResponseBody:
 
     @force_redirect_config.setter
     def force_redirect_config(self, force_redirect_config):
-        """Sets the force_redirect_config of this HttpInfoResponseBody.
+        r"""Sets the force_redirect_config of this HttpInfoResponseBody.
 
         :param force_redirect_config: The force_redirect_config of this HttpInfoResponseBody.
         :type force_redirect_config: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
@@ -249,7 +249,7 @@ class HttpInfoResponseBody:
 
     @property
     def http2(self):
-        """Gets the http2 of this HttpInfoResponseBody.
+        r"""Gets the http2 of this HttpInfoResponseBody.
 
         是否使用HTTP2.0。（1是，0否。）
 
@@ -260,7 +260,7 @@ class HttpInfoResponseBody:
 
     @http2.setter
     def http2(self, http2):
-        """Sets the http2 of this HttpInfoResponseBody.
+        r"""Sets the http2 of this HttpInfoResponseBody.
 
         是否使用HTTP2.0。（1是，0否。）
 
@@ -271,7 +271,7 @@ class HttpInfoResponseBody:
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this HttpInfoResponseBody.
+        r"""Gets the expiration_time of this HttpInfoResponseBody.
 
         证书过期时间
 
@@ -282,7 +282,7 @@ class HttpInfoResponseBody:
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this HttpInfoResponseBody.
+        r"""Sets the expiration_time of this HttpInfoResponseBody.
 
         证书过期时间
 

@@ -43,7 +43,7 @@ class ListTransportHistoriesRequest:
     }
 
     def __init__(self, authorization_id=None, authorization_detail_id=None, group_id=None, session_id=None, sort=None, offset=None, limit=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListTransportHistoriesRequest
+        r"""ListTransportHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class ListTransportHistoriesRequest:
 
     @property
     def authorization_id(self):
-        """Gets the authorization_id of this ListTransportHistoriesRequest.
+        r"""Gets the authorization_id of this ListTransportHistoriesRequest.
 
         授权id
 
@@ -114,7 +114,7 @@ class ListTransportHistoriesRequest:
 
     @authorization_id.setter
     def authorization_id(self, authorization_id):
-        """Sets the authorization_id of this ListTransportHistoriesRequest.
+        r"""Sets the authorization_id of this ListTransportHistoriesRequest.
 
         授权id
 
@@ -125,7 +125,7 @@ class ListTransportHistoriesRequest:
 
     @property
     def authorization_detail_id(self):
-        """Gets the authorization_detail_id of this ListTransportHistoriesRequest.
+        r"""Gets the authorization_detail_id of this ListTransportHistoriesRequest.
 
         授权详情id
 
@@ -136,7 +136,7 @@ class ListTransportHistoriesRequest:
 
     @authorization_detail_id.setter
     def authorization_detail_id(self, authorization_detail_id):
-        """Sets the authorization_detail_id of this ListTransportHistoriesRequest.
+        r"""Sets the authorization_detail_id of this ListTransportHistoriesRequest.
 
         授权详情id
 
@@ -147,7 +147,7 @@ class ListTransportHistoriesRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListTransportHistoriesRequest.
+        r"""Gets the group_id of this ListTransportHistoriesRequest.
 
         华为云IAM组id，同组其他工单时，该id必传
 
@@ -158,7 +158,7 @@ class ListTransportHistoriesRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListTransportHistoriesRequest.
+        r"""Sets the group_id of this ListTransportHistoriesRequest.
 
         华为云IAM组id，同组其他工单时，该id必传
 
@@ -169,7 +169,7 @@ class ListTransportHistoriesRequest:
 
     @property
     def session_id(self):
-        """Gets the session_id of this ListTransportHistoriesRequest.
+        r"""Gets the session_id of this ListTransportHistoriesRequest.
 
         会话id
 
@@ -180,7 +180,7 @@ class ListTransportHistoriesRequest:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this ListTransportHistoriesRequest.
+        r"""Sets the session_id of this ListTransportHistoriesRequest.
 
         会话id
 
@@ -191,7 +191,7 @@ class ListTransportHistoriesRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListTransportHistoriesRequest.
+        r"""Gets the sort of this ListTransportHistoriesRequest.
 
         1：按操作时间升序； 0：按操作时间降序；默认0
 
@@ -202,7 +202,7 @@ class ListTransportHistoriesRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListTransportHistoriesRequest.
+        r"""Sets the sort of this ListTransportHistoriesRequest.
 
         1：按操作时间升序； 0：按操作时间降序；默认0
 
@@ -213,7 +213,7 @@ class ListTransportHistoriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTransportHistoriesRequest.
+        r"""Gets the offset of this ListTransportHistoriesRequest.
 
         查询偏移量
 
@@ -224,7 +224,7 @@ class ListTransportHistoriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTransportHistoriesRequest.
+        r"""Sets the offset of this ListTransportHistoriesRequest.
 
         查询偏移量
 
@@ -235,7 +235,7 @@ class ListTransportHistoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTransportHistoriesRequest.
+        r"""Gets the limit of this ListTransportHistoriesRequest.
 
         查询限制条数
 
@@ -246,7 +246,7 @@ class ListTransportHistoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTransportHistoriesRequest.
+        r"""Sets the limit of this ListTransportHistoriesRequest.
 
         查询限制条数
 
@@ -257,7 +257,7 @@ class ListTransportHistoriesRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ListTransportHistoriesRequest.
+        r"""Gets the x_site of this ListTransportHistoriesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -268,7 +268,7 @@ class ListTransportHistoriesRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ListTransportHistoriesRequest.
+        r"""Sets the x_site of this ListTransportHistoriesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -279,7 +279,7 @@ class ListTransportHistoriesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListTransportHistoriesRequest.
+        r"""Gets the x_language of this ListTransportHistoriesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -290,7 +290,7 @@ class ListTransportHistoriesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListTransportHistoriesRequest.
+        r"""Sets the x_language of this ListTransportHistoriesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -301,7 +301,7 @@ class ListTransportHistoriesRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this ListTransportHistoriesRequest.
+        r"""Gets the x_time_zone of this ListTransportHistoriesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -312,7 +312,7 @@ class ListTransportHistoriesRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this ListTransportHistoriesRequest.
+        r"""Sets the x_time_zone of this ListTransportHistoriesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

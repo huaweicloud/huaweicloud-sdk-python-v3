@@ -43,7 +43,7 @@ class BaseEndpoint:
     }
 
     def __init__(self, id=None, endpoint_name=None, ip=None, db_port=None, db_user=None, db_password=None, instance_id=None, instance_name=None, db_name=None, source_sharding=None):
-        """BaseEndpoint
+        r"""BaseEndpoint
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class BaseEndpoint:
 
     @property
     def id(self):
-        """Gets the id of this BaseEndpoint.
+        r"""Gets the id of this BaseEndpoint.
 
         数据库信息ID。
 
@@ -114,7 +114,7 @@ class BaseEndpoint:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BaseEndpoint.
+        r"""Sets the id of this BaseEndpoint.
 
         数据库信息ID。
 
@@ -125,7 +125,7 @@ class BaseEndpoint:
 
     @property
     def endpoint_name(self):
-        """Gets the endpoint_name of this BaseEndpoint.
+        r"""Gets the endpoint_name of this BaseEndpoint.
 
         数据库场景类型。取值： - oracle：云下自建Oracle数据库。 - ecs_oracle：华为云ECS自建Oracle数据库。 - cloud_gaussdbv5：华为云数据库GaussDB分布式。 - mysql：他云/本地自建MySQL数据库。 - ecs_mysql：华为云ECS自建MySQL数据库。 - cloud_mysql：华为云数据库RDS for MySQL。 - redis：云下自建Redis数据。 - ecs_redis：华为云ECS自建Redis数据。 - rediscluster：云下自建Redis集群数据库。 - ecs_rediscluster：华为云ECS自建Redis集群数据库。 - cloud_gaussdb_redis：华为云数据库GeminiDB Redis。 - postgresql: 云下自建PostgreSQL数据库。 - ecs_postgresql: 华为云ECS自建PostgreSQL数据库。 - cloud_postgresql: 华为云数据库RDS for PostgreSQL。 - mongodb: 云下自建MongoDB数据库。 - ecs_mongodb: 华为云ECS自建MongoDB数据库。 - cloud_mongodb: 华为云文档数据库服务DDS。
 
@@ -136,7 +136,7 @@ class BaseEndpoint:
 
     @endpoint_name.setter
     def endpoint_name(self, endpoint_name):
-        """Sets the endpoint_name of this BaseEndpoint.
+        r"""Sets the endpoint_name of this BaseEndpoint.
 
         数据库场景类型。取值： - oracle：云下自建Oracle数据库。 - ecs_oracle：华为云ECS自建Oracle数据库。 - cloud_gaussdbv5：华为云数据库GaussDB分布式。 - mysql：他云/本地自建MySQL数据库。 - ecs_mysql：华为云ECS自建MySQL数据库。 - cloud_mysql：华为云数据库RDS for MySQL。 - redis：云下自建Redis数据。 - ecs_redis：华为云ECS自建Redis数据。 - rediscluster：云下自建Redis集群数据库。 - ecs_rediscluster：华为云ECS自建Redis集群数据库。 - cloud_gaussdb_redis：华为云数据库GeminiDB Redis。 - postgresql: 云下自建PostgreSQL数据库。 - ecs_postgresql: 华为云ECS自建PostgreSQL数据库。 - cloud_postgresql: 华为云数据库RDS for PostgreSQL。 - mongodb: 云下自建MongoDB数据库。 - ecs_mongodb: 华为云ECS自建MongoDB数据库。 - cloud_mongodb: 华为云文档数据库服务DDS。
 
@@ -147,7 +147,7 @@ class BaseEndpoint:
 
     @property
     def ip(self):
-        """Gets the ip of this BaseEndpoint.
+        r"""Gets the ip of this BaseEndpoint.
 
         数据库IP。 约束： - 数据库为自建MongoDB时，数据库IP与端口之间用“:”英文冒号拼接，多个值之间请用“,”英文逗号隔开，最多支持填写3个IP地址或域名。 - 数据库为DDS实例时，数据库IP与端口之间用“:”英文冒号拼接，多个IP端口之间请用“,”英文逗号分隔。 - 数据库为Redis集群时，请填写源端Redis集群所有分片的IP地址和对应端口，数据库IP与端口之间用“:”英文冒号拼接，多个IP端口之间请用“,”英文逗号分隔，并且推荐填写集群分片的Slave节点的IP地址。最多支持填写32个IP地址或域名，多个值之间请用英文逗号隔开。 示例： - MySQL：ip - MongoDB：ip:port,ip:port,ip:port - DDS：ip:port,ip:port  - Redis集群：ip:port,ip:port
 
@@ -158,7 +158,7 @@ class BaseEndpoint:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this BaseEndpoint.
+        r"""Sets the ip of this BaseEndpoint.
 
         数据库IP。 约束： - 数据库为自建MongoDB时，数据库IP与端口之间用“:”英文冒号拼接，多个值之间请用“,”英文逗号隔开，最多支持填写3个IP地址或域名。 - 数据库为DDS实例时，数据库IP与端口之间用“:”英文冒号拼接，多个IP端口之间请用“,”英文逗号分隔。 - 数据库为Redis集群时，请填写源端Redis集群所有分片的IP地址和对应端口，数据库IP与端口之间用“:”英文冒号拼接，多个IP端口之间请用“,”英文逗号分隔，并且推荐填写集群分片的Slave节点的IP地址。最多支持填写32个IP地址或域名，多个值之间请用英文逗号隔开。 示例： - MySQL：ip - MongoDB：ip:port,ip:port,ip:port - DDS：ip:port,ip:port  - Redis集群：ip:port,ip:port
 
@@ -169,7 +169,7 @@ class BaseEndpoint:
 
     @property
     def db_port(self):
-        """Gets the db_port of this BaseEndpoint.
+        r"""Gets the db_port of this BaseEndpoint.
 
         数据库端口。  约束：输入范围为1-65535之间的整数。
 
@@ -180,7 +180,7 @@ class BaseEndpoint:
 
     @db_port.setter
     def db_port(self, db_port):
-        """Sets the db_port of this BaseEndpoint.
+        r"""Sets the db_port of this BaseEndpoint.
 
         数据库端口。  约束：输入范围为1-65535之间的整数。
 
@@ -191,7 +191,7 @@ class BaseEndpoint:
 
     @property
     def db_user(self):
-        """Gets the db_user of this BaseEndpoint.
+        r"""Gets the db_user of this BaseEndpoint.
 
         数据库用户名。
 
@@ -202,7 +202,7 @@ class BaseEndpoint:
 
     @db_user.setter
     def db_user(self, db_user):
-        """Sets the db_user of this BaseEndpoint.
+        r"""Sets the db_user of this BaseEndpoint.
 
         数据库用户名。
 
@@ -213,7 +213,7 @@ class BaseEndpoint:
 
     @property
     def db_password(self):
-        """Gets the db_password of this BaseEndpoint.
+        r"""Gets the db_password of this BaseEndpoint.
 
         数据库密码。
 
@@ -224,7 +224,7 @@ class BaseEndpoint:
 
     @db_password.setter
     def db_password(self, db_password):
-        """Sets the db_password of this BaseEndpoint.
+        r"""Sets the db_password of this BaseEndpoint.
 
         数据库密码。
 
@@ -235,7 +235,7 @@ class BaseEndpoint:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BaseEndpoint.
+        r"""Gets the instance_id of this BaseEndpoint.
 
         华为云数据库实例ID。
 
@@ -246,7 +246,7 @@ class BaseEndpoint:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BaseEndpoint.
+        r"""Sets the instance_id of this BaseEndpoint.
 
         华为云数据库实例ID。
 
@@ -257,7 +257,7 @@ class BaseEndpoint:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this BaseEndpoint.
+        r"""Gets the instance_name of this BaseEndpoint.
 
         华为云数据库实例名称。
 
@@ -268,7 +268,7 @@ class BaseEndpoint:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this BaseEndpoint.
+        r"""Sets the instance_name of this BaseEndpoint.
 
         华为云数据库实例名称。
 
@@ -279,7 +279,7 @@ class BaseEndpoint:
 
     @property
     def db_name(self):
-        """Gets the db_name of this BaseEndpoint.
+        r"""Gets the db_name of this BaseEndpoint.
 
         指定数据库名称。例如： - oracle：serviceName.orcl。
 
@@ -290,7 +290,7 @@ class BaseEndpoint:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this BaseEndpoint.
+        r"""Sets the db_name of this BaseEndpoint.
 
         指定数据库名称。例如： - oracle：serviceName.orcl。
 
@@ -301,7 +301,7 @@ class BaseEndpoint:
 
     @property
     def source_sharding(self):
-        """Gets the source_sharding of this BaseEndpoint.
+        r"""Gets the source_sharding of this BaseEndpoint.
 
         物理源库信息。
 
@@ -312,7 +312,7 @@ class BaseEndpoint:
 
     @source_sharding.setter
     def source_sharding(self, source_sharding):
-        """Sets the source_sharding of this BaseEndpoint.
+        r"""Sets the source_sharding of this BaseEndpoint.
 
         物理源库信息。
 

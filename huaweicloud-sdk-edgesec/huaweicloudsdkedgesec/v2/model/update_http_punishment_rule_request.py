@@ -29,7 +29,7 @@ class UpdateHttpPunishmentRuleRequest:
     }
 
     def __init__(self, policy_id=None, rule_id=None, body=None):
-        """UpdateHttpPunishmentRuleRequest
+        r"""UpdateHttpPunishmentRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateHttpPunishmentRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateHttpPunishmentRuleRequest.
+        r"""Gets the policy_id of this UpdateHttpPunishmentRuleRequest.
 
         策略id
 
@@ -66,7 +66,7 @@ class UpdateHttpPunishmentRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateHttpPunishmentRuleRequest.
+        r"""Sets the policy_id of this UpdateHttpPunishmentRuleRequest.
 
         策略id
 
@@ -77,7 +77,7 @@ class UpdateHttpPunishmentRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateHttpPunishmentRuleRequest.
+        r"""Gets the rule_id of this UpdateHttpPunishmentRuleRequest.
 
         防护规则id
 
@@ -88,7 +88,7 @@ class UpdateHttpPunishmentRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateHttpPunishmentRuleRequest.
+        r"""Sets the rule_id of this UpdateHttpPunishmentRuleRequest.
 
         防护规则id
 
@@ -99,7 +99,7 @@ class UpdateHttpPunishmentRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHttpPunishmentRuleRequest.
+        r"""Gets the body of this UpdateHttpPunishmentRuleRequest.
 
         :return: The body of this UpdateHttpPunishmentRuleRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.UpdateHttpPunishmentRuleRequestBody`
@@ -108,7 +108,7 @@ class UpdateHttpPunishmentRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHttpPunishmentRuleRequest.
+        r"""Sets the body of this UpdateHttpPunishmentRuleRequest.
 
         :param body: The body of this UpdateHttpPunishmentRuleRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.UpdateHttpPunishmentRuleRequestBody`

@@ -24,7 +24,7 @@ class AddApplyJoinProjectForAgcResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddApplyJoinProjectForAgcResponse
+        r"""AddApplyJoinProjectForAgcResponse
 
         The model defined in huaweicloud sdk
 

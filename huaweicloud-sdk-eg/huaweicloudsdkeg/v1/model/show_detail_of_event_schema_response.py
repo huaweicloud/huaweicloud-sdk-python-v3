@@ -46,7 +46,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, compatibility=None, provider_type=None, format=None, number_of_versions=None, created_time=None, updated_time=None, version=None, definition=None):
-        """ShowDetailOfEventSchemaResponse
+        r"""ShowDetailOfEventSchemaResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDetailOfEventSchemaResponse.
+        r"""Gets the id of this ShowDetailOfEventSchemaResponse.
 
         事件模型ID
 
@@ -125,7 +125,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDetailOfEventSchemaResponse.
+        r"""Sets the id of this ShowDetailOfEventSchemaResponse.
 
         事件模型ID
 
@@ -136,7 +136,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDetailOfEventSchemaResponse.
+        r"""Gets the name of this ShowDetailOfEventSchemaResponse.
 
         事件模型名称，租户下唯一
 
@@ -147,7 +147,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDetailOfEventSchemaResponse.
+        r"""Sets the name of this ShowDetailOfEventSchemaResponse.
 
         事件模型名称，租户下唯一
 
@@ -158,7 +158,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowDetailOfEventSchemaResponse.
+        r"""Gets the description of this ShowDetailOfEventSchemaResponse.
 
         事件模型描述
 
@@ -169,7 +169,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowDetailOfEventSchemaResponse.
+        r"""Sets the description of this ShowDetailOfEventSchemaResponse.
 
         事件模型描述
 
@@ -180,7 +180,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @property
     def compatibility(self):
-        """Gets the compatibility of this ShowDetailOfEventSchemaResponse.
+        r"""Gets the compatibility of this ShowDetailOfEventSchemaResponse.
 
         事件模型兼容性
 
@@ -191,7 +191,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @compatibility.setter
     def compatibility(self, compatibility):
-        """Sets the compatibility of this ShowDetailOfEventSchemaResponse.
+        r"""Sets the compatibility of this ShowDetailOfEventSchemaResponse.
 
         事件模型兼容性
 
@@ -202,7 +202,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this ShowDetailOfEventSchemaResponse.
+        r"""Gets the provider_type of this ShowDetailOfEventSchemaResponse.
 
         提供方类型，OFFICIAL：官方事件源；CUSTOM：自定义事件源
 
@@ -213,7 +213,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this ShowDetailOfEventSchemaResponse.
+        r"""Sets the provider_type of this ShowDetailOfEventSchemaResponse.
 
         提供方类型，OFFICIAL：官方事件源；CUSTOM：自定义事件源
 
@@ -224,7 +224,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @property
     def format(self):
-        """Gets the format of this ShowDetailOfEventSchemaResponse.
+        r"""Gets the format of this ShowDetailOfEventSchemaResponse.
 
         事件模型格式
 
@@ -235,7 +235,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @format.setter
     def format(self, format):
-        """Sets the format of this ShowDetailOfEventSchemaResponse.
+        r"""Sets the format of this ShowDetailOfEventSchemaResponse.
 
         事件模型格式
 
@@ -246,7 +246,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @property
     def number_of_versions(self):
-        """Gets the number_of_versions of this ShowDetailOfEventSchemaResponse.
+        r"""Gets the number_of_versions of this ShowDetailOfEventSchemaResponse.
 
         事件模型版本数
 
@@ -257,7 +257,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @number_of_versions.setter
     def number_of_versions(self, number_of_versions):
-        """Sets the number_of_versions of this ShowDetailOfEventSchemaResponse.
+        r"""Sets the number_of_versions of this ShowDetailOfEventSchemaResponse.
 
         事件模型版本数
 
@@ -268,7 +268,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowDetailOfEventSchemaResponse.
+        r"""Gets the created_time of this ShowDetailOfEventSchemaResponse.
 
         创建时间
 
@@ -279,7 +279,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowDetailOfEventSchemaResponse.
+        r"""Sets the created_time of this ShowDetailOfEventSchemaResponse.
 
         创建时间
 
@@ -290,7 +290,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ShowDetailOfEventSchemaResponse.
+        r"""Gets the updated_time of this ShowDetailOfEventSchemaResponse.
 
         更新时间
 
@@ -301,7 +301,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ShowDetailOfEventSchemaResponse.
+        r"""Sets the updated_time of this ShowDetailOfEventSchemaResponse.
 
         更新时间
 
@@ -312,7 +312,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowDetailOfEventSchemaResponse.
+        r"""Gets the version of this ShowDetailOfEventSchemaResponse.
 
         事件模型当前版本号
 
@@ -323,7 +323,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowDetailOfEventSchemaResponse.
+        r"""Sets the version of this ShowDetailOfEventSchemaResponse.
 
         事件模型当前版本号
 
@@ -334,7 +334,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @property
     def definition(self):
-        """Gets the definition of this ShowDetailOfEventSchemaResponse.
+        r"""Gets the definition of this ShowDetailOfEventSchemaResponse.
 
         事件模型内容定义
 
@@ -345,7 +345,7 @@ class ShowDetailOfEventSchemaResponse(SdkResponse):
 
     @definition.setter
     def definition(self, definition):
-        """Sets the definition of this ShowDetailOfEventSchemaResponse.
+        r"""Sets the definition of this ShowDetailOfEventSchemaResponse.
 
         事件模型内容定义
 

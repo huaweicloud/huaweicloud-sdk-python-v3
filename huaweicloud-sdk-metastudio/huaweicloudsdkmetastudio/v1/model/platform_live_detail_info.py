@@ -31,7 +31,7 @@ class PlatformLiveDetailInfo:
     }
 
     def __init__(self, platform_id=None, platform=None, account=None, live_id=None):
-        """PlatformLiveDetailInfo
+        r"""PlatformLiveDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PlatformLiveDetailInfo:
 
     @property
     def platform_id(self):
-        """Gets the platform_id of this PlatformLiveDetailInfo.
+        r"""Gets the platform_id of this PlatformLiveDetailInfo.
 
         直播平台ID。
 
@@ -75,7 +75,7 @@ class PlatformLiveDetailInfo:
 
     @platform_id.setter
     def platform_id(self, platform_id):
-        """Sets the platform_id of this PlatformLiveDetailInfo.
+        r"""Sets the platform_id of this PlatformLiveDetailInfo.
 
         直播平台ID。
 
@@ -86,7 +86,7 @@ class PlatformLiveDetailInfo:
 
     @property
     def platform(self):
-        """Gets the platform of this PlatformLiveDetailInfo.
+        r"""Gets the platform of this PlatformLiveDetailInfo.
 
         直播平台。美团填写meituan
 
@@ -97,7 +97,7 @@ class PlatformLiveDetailInfo:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this PlatformLiveDetailInfo.
+        r"""Sets the platform of this PlatformLiveDetailInfo.
 
         直播平台。美团填写meituan
 
@@ -108,7 +108,7 @@ class PlatformLiveDetailInfo:
 
     @property
     def account(self):
-        """Gets the account of this PlatformLiveDetailInfo.
+        r"""Gets the account of this PlatformLiveDetailInfo.
 
         授权账号信息。 美团平台对应：opBizCode
 
@@ -119,7 +119,7 @@ class PlatformLiveDetailInfo:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this PlatformLiveDetailInfo.
+        r"""Sets the account of this PlatformLiveDetailInfo.
 
         授权账号信息。 美团平台对应：opBizCode
 
@@ -130,7 +130,7 @@ class PlatformLiveDetailInfo:
 
     @property
     def live_id(self):
-        """Gets the live_id of this PlatformLiveDetailInfo.
+        r"""Gets the live_id of this PlatformLiveDetailInfo.
 
         直播ID。如果配置，则段落切换回调中会携带该信息。 美团对应liveId
 
@@ -141,7 +141,7 @@ class PlatformLiveDetailInfo:
 
     @live_id.setter
     def live_id(self, live_id):
-        """Sets the live_id of this PlatformLiveDetailInfo.
+        r"""Sets the live_id of this PlatformLiveDetailInfo.
 
         直播ID。如果配置，则段落切换回调中会携带该信息。 美团对应liveId
 

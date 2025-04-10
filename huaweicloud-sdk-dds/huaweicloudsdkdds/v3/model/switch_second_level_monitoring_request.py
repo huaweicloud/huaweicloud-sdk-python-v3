@@ -27,7 +27,7 @@ class SwitchSecondLevelMonitoringRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SwitchSecondLevelMonitoringRequest
+        r"""SwitchSecondLevelMonitoringRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SwitchSecondLevelMonitoringRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchSecondLevelMonitoringRequest.
+        r"""Gets the instance_id of this SwitchSecondLevelMonitoringRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class SwitchSecondLevelMonitoringRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchSecondLevelMonitoringRequest.
+        r"""Sets the instance_id of this SwitchSecondLevelMonitoringRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class SwitchSecondLevelMonitoringRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchSecondLevelMonitoringRequest.
+        r"""Gets the body of this SwitchSecondLevelMonitoringRequest.
 
         :return: The body of this SwitchSecondLevelMonitoringRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.SwitchSecondLevelMonitoringRequestBody`
@@ -80,7 +80,7 @@ class SwitchSecondLevelMonitoringRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchSecondLevelMonitoringRequest.
+        r"""Sets the body of this SwitchSecondLevelMonitoringRequest.
 
         :param body: The body of this SwitchSecondLevelMonitoringRequest.
         :type body: :class:`huaweicloudsdkdds.v3.SwitchSecondLevelMonitoringRequestBody`

@@ -25,7 +25,7 @@ class NetworkInfo:
     }
 
     def __init__(self, network_type=None):
-        """NetworkInfo
+        r"""NetworkInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NetworkInfo:
 
     @property
     def network_type(self):
-        """Gets the network_type of this NetworkInfo.
+        r"""Gets the network_type of this NetworkInfo.
 
         网络类型（固定值：internet）
 
@@ -53,7 +53,7 @@ class NetworkInfo:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this NetworkInfo.
+        r"""Sets the network_type of this NetworkInfo.
 
         网络类型（固定值：internet）
 

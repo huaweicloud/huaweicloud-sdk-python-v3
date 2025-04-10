@@ -27,7 +27,7 @@ class OutputRespStepOutputs:
     }
 
     def __init__(self, step_run_id=None, output_result=None):
-        """OutputRespStepOutputs
+        r"""OutputRespStepOutputs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OutputRespStepOutputs:
 
     @property
     def step_run_id(self):
-        """Gets the step_run_id of this OutputRespStepOutputs.
+        r"""Gets the step_run_id of this OutputRespStepOutputs.
 
         :return: The step_run_id of this OutputRespStepOutputs.
         :rtype: str
@@ -59,7 +59,7 @@ class OutputRespStepOutputs:
 
     @step_run_id.setter
     def step_run_id(self, step_run_id):
-        """Sets the step_run_id of this OutputRespStepOutputs.
+        r"""Sets the step_run_id of this OutputRespStepOutputs.
 
         :param step_run_id: The step_run_id of this OutputRespStepOutputs.
         :type step_run_id: str
@@ -68,7 +68,7 @@ class OutputRespStepOutputs:
 
     @property
     def output_result(self):
-        """Gets the output_result of this OutputRespStepOutputs.
+        r"""Gets the output_result of this OutputRespStepOutputs.
 
         :return: The output_result of this OutputRespStepOutputs.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.OutputRespOutputResult`]
@@ -77,7 +77,7 @@ class OutputRespStepOutputs:
 
     @output_result.setter
     def output_result(self, output_result):
-        """Sets the output_result of this OutputRespStepOutputs.
+        r"""Sets the output_result of this OutputRespStepOutputs.
 
         :param output_result: The output_result of this OutputRespStepOutputs.
         :type output_result: list[:class:`huaweicloudsdkcodeartspipeline.v2.OutputRespOutputResult`]

@@ -26,7 +26,7 @@ class UpdateDesignDataLayersResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UpdateDesignDataLayersResponse
+        r"""UpdateDesignDataLayersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateDesignDataLayersResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateDesignDataLayersResponse.
+        r"""Gets the data of this UpdateDesignDataLayersResponse.
 
         :return: The data of this UpdateDesignDataLayersResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListDesignDataLayersResultData`
@@ -53,7 +53,7 @@ class UpdateDesignDataLayersResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateDesignDataLayersResponse.
+        r"""Sets the data of this UpdateDesignDataLayersResponse.
 
         :param data: The data of this UpdateDesignDataLayersResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListDesignDataLayersResultData`

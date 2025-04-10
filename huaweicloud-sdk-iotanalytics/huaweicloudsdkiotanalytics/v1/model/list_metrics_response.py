@@ -28,7 +28,7 @@ class ListMetricsResponse(SdkResponse):
     }
 
     def __init__(self, timestamps=None, metrics=None):
-        """ListMetricsResponse
+        r"""ListMetricsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMetricsResponse(SdkResponse):
 
     @property
     def timestamps(self):
-        """Gets the timestamps of this ListMetricsResponse.
+        r"""Gets the timestamps of this ListMetricsResponse.
 
         时间序列
 
@@ -62,7 +62,7 @@ class ListMetricsResponse(SdkResponse):
 
     @timestamps.setter
     def timestamps(self, timestamps):
-        """Sets the timestamps of this ListMetricsResponse.
+        r"""Sets the timestamps of this ListMetricsResponse.
 
         时间序列
 
@@ -73,7 +73,7 @@ class ListMetricsResponse(SdkResponse):
 
     @property
     def metrics(self):
-        """Gets the metrics of this ListMetricsResponse.
+        r"""Gets the metrics of this ListMetricsResponse.
 
         查询的测量指标列表
 
@@ -84,7 +84,7 @@ class ListMetricsResponse(SdkResponse):
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ListMetricsResponse.
+        r"""Sets the metrics of this ListMetricsResponse.
 
         查询的测量指标列表
 

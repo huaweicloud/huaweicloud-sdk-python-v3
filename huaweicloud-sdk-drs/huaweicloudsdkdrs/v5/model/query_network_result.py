@@ -35,7 +35,7 @@ class QueryNetworkResult:
     }
 
     def __init__(self, ip=None, success=None, result=None, status=None, error_code=None, error_msg=None):
-        """QueryNetworkResult
+        r"""QueryNetworkResult
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class QueryNetworkResult:
 
     @property
     def ip(self):
-        """Gets the ip of this QueryNetworkResult.
+        r"""Gets the ip of this QueryNetworkResult.
 
         测试连接IP。
 
@@ -87,7 +87,7 @@ class QueryNetworkResult:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this QueryNetworkResult.
+        r"""Sets the ip of this QueryNetworkResult.
 
         测试连接IP。
 
@@ -98,7 +98,7 @@ class QueryNetworkResult:
 
     @property
     def success(self):
-        """Gets the success of this QueryNetworkResult.
+        r"""Gets the success of this QueryNetworkResult.
 
         测试连接是否成功。
 
@@ -109,7 +109,7 @@ class QueryNetworkResult:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this QueryNetworkResult.
+        r"""Sets the success of this QueryNetworkResult.
 
         测试连接是否成功。
 
@@ -120,7 +120,7 @@ class QueryNetworkResult:
 
     @property
     def result(self):
-        """Gets the result of this QueryNetworkResult.
+        r"""Gets the result of this QueryNetworkResult.
 
         测试连接结果。
 
@@ -131,7 +131,7 @@ class QueryNetworkResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this QueryNetworkResult.
+        r"""Sets the result of this QueryNetworkResult.
 
         测试连接结果。
 
@@ -142,7 +142,7 @@ class QueryNetworkResult:
 
     @property
     def status(self):
-        """Gets the status of this QueryNetworkResult.
+        r"""Gets the status of this QueryNetworkResult.
 
         测试连接是否成功。取值： - success：成功。 - failed：不成功。
 
@@ -153,7 +153,7 @@ class QueryNetworkResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryNetworkResult.
+        r"""Sets the status of this QueryNetworkResult.
 
         测试连接是否成功。取值： - success：成功。 - failed：不成功。
 
@@ -164,7 +164,7 @@ class QueryNetworkResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this QueryNetworkResult.
+        r"""Gets the error_code of this QueryNetworkResult.
 
         测试连接失败错误码。
 
@@ -175,7 +175,7 @@ class QueryNetworkResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this QueryNetworkResult.
+        r"""Sets the error_code of this QueryNetworkResult.
 
         测试连接失败错误码。
 
@@ -186,7 +186,7 @@ class QueryNetworkResult:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this QueryNetworkResult.
+        r"""Gets the error_msg of this QueryNetworkResult.
 
         测试连接失败错误内容。
 
@@ -197,7 +197,7 @@ class QueryNetworkResult:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this QueryNetworkResult.
+        r"""Sets the error_msg of this QueryNetworkResult.
 
         测试连接失败错误内容。
 

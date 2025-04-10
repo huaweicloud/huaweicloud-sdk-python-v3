@@ -28,7 +28,7 @@ class ListSchemasResponse(SdkResponse):
     }
 
     def __init__(self, value=None, page_info=None):
-        """ListSchemasResponse
+        r"""ListSchemasResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSchemasResponse(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this ListSchemasResponse.
+        r"""Gets the value of this ListSchemasResponse.
 
         schemas 接口.
 
@@ -62,7 +62,7 @@ class ListSchemasResponse(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListSchemasResponse.
+        r"""Sets the value of this ListSchemasResponse.
 
         schemas 接口.
 
@@ -73,7 +73,7 @@ class ListSchemasResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListSchemasResponse.
+        r"""Gets the page_info of this ListSchemasResponse.
 
         :return: The page_info of this ListSchemasResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListSchemasResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListSchemasResponse.
+        r"""Sets the page_info of this ListSchemasResponse.
 
         :param page_info: The page_info of this ListSchemasResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

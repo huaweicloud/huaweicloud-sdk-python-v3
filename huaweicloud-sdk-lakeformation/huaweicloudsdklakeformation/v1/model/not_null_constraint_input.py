@@ -33,7 +33,7 @@ class NotNullConstraintInput:
     }
 
     def __init__(self, column_name=None, constraint_name=None, enable_constraint=None, rely_constraint=None, validate_constraint=None):
-        """NotNullConstraintInput
+        r"""NotNullConstraintInput
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class NotNullConstraintInput:
 
     @property
     def column_name(self):
-        """Gets the column_name of this NotNullConstraintInput.
+        r"""Gets the column_name of this NotNullConstraintInput.
 
         列名
 
@@ -77,7 +77,7 @@ class NotNullConstraintInput:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this NotNullConstraintInput.
+        r"""Sets the column_name of this NotNullConstraintInput.
 
         列名
 
@@ -88,7 +88,7 @@ class NotNullConstraintInput:
 
     @property
     def constraint_name(self):
-        """Gets the constraint_name of this NotNullConstraintInput.
+        r"""Gets the constraint_name of this NotNullConstraintInput.
 
         constraint Name
 
@@ -99,7 +99,7 @@ class NotNullConstraintInput:
 
     @constraint_name.setter
     def constraint_name(self, constraint_name):
-        """Sets the constraint_name of this NotNullConstraintInput.
+        r"""Sets the constraint_name of this NotNullConstraintInput.
 
         constraint Name
 
@@ -110,7 +110,7 @@ class NotNullConstraintInput:
 
     @property
     def enable_constraint(self):
-        """Gets the enable_constraint of this NotNullConstraintInput.
+        r"""Gets the enable_constraint of this NotNullConstraintInput.
 
         enable constraint
 
@@ -121,7 +121,7 @@ class NotNullConstraintInput:
 
     @enable_constraint.setter
     def enable_constraint(self, enable_constraint):
-        """Sets the enable_constraint of this NotNullConstraintInput.
+        r"""Sets the enable_constraint of this NotNullConstraintInput.
 
         enable constraint
 
@@ -132,7 +132,7 @@ class NotNullConstraintInput:
 
     @property
     def rely_constraint(self):
-        """Gets the rely_constraint of this NotNullConstraintInput.
+        r"""Gets the rely_constraint of this NotNullConstraintInput.
 
         constraint is rely when Query
 
@@ -143,7 +143,7 @@ class NotNullConstraintInput:
 
     @rely_constraint.setter
     def rely_constraint(self, rely_constraint):
-        """Sets the rely_constraint of this NotNullConstraintInput.
+        r"""Sets the rely_constraint of this NotNullConstraintInput.
 
         constraint is rely when Query
 
@@ -154,7 +154,7 @@ class NotNullConstraintInput:
 
     @property
     def validate_constraint(self):
-        """Gets the validate_constraint of this NotNullConstraintInput.
+        r"""Gets the validate_constraint of this NotNullConstraintInput.
 
         constraint is validated
 
@@ -165,7 +165,7 @@ class NotNullConstraintInput:
 
     @validate_constraint.setter
     def validate_constraint(self, validate_constraint):
-        """Sets the validate_constraint of this NotNullConstraintInput.
+        r"""Sets the validate_constraint of this NotNullConstraintInput.
 
         constraint is validated
 

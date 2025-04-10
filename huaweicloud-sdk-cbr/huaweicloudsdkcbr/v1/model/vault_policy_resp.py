@@ -29,7 +29,7 @@ class VaultPolicyResp:
     }
 
     def __init__(self, destination_vault_id=None, policy_id=None, vault_id=None):
-        """VaultPolicyResp
+        r"""VaultPolicyResp
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class VaultPolicyResp:
 
     @property
     def destination_vault_id(self):
-        """Gets the destination_vault_id of this VaultPolicyResp.
+        r"""Gets the destination_vault_id of this VaultPolicyResp.
 
         目标region的vault ID，仅设置复制策略时有。
 
@@ -66,7 +66,7 @@ class VaultPolicyResp:
 
     @destination_vault_id.setter
     def destination_vault_id(self, destination_vault_id):
-        """Sets the destination_vault_id of this VaultPolicyResp.
+        r"""Sets the destination_vault_id of this VaultPolicyResp.
 
         目标region的vault ID，仅设置复制策略时有。
 
@@ -77,7 +77,7 @@ class VaultPolicyResp:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this VaultPolicyResp.
+        r"""Gets the policy_id of this VaultPolicyResp.
 
         设置的策略ID
 
@@ -88,7 +88,7 @@ class VaultPolicyResp:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this VaultPolicyResp.
+        r"""Sets the policy_id of this VaultPolicyResp.
 
         设置的策略ID
 
@@ -99,7 +99,7 @@ class VaultPolicyResp:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this VaultPolicyResp.
+        r"""Gets the vault_id of this VaultPolicyResp.
 
         设置策略的vault ID
 
@@ -110,7 +110,7 @@ class VaultPolicyResp:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this VaultPolicyResp.
+        r"""Sets the vault_id of this VaultPolicyResp.
 
         设置策略的vault ID
 

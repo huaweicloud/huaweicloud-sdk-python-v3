@@ -34,7 +34,7 @@ class ShowDnsNameResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, dns_name=None, dns_type=None, ipv6_address=None, status=None):
-        """ShowDnsNameResponse
+        r"""ShowDnsNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowDnsNameResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDnsNameResponse.
+        r"""Gets the instance_id of this ShowDnsNameResponse.
 
         实例ID。
 
@@ -83,7 +83,7 @@ class ShowDnsNameResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDnsNameResponse.
+        r"""Sets the instance_id of this ShowDnsNameResponse.
 
         实例ID。
 
@@ -94,7 +94,7 @@ class ShowDnsNameResponse(SdkResponse):
 
     @property
     def dns_name(self):
-        """Gets the dns_name of this ShowDnsNameResponse.
+        r"""Gets the dns_name of this ShowDnsNameResponse.
 
         实例域名。
 
@@ -105,7 +105,7 @@ class ShowDnsNameResponse(SdkResponse):
 
     @dns_name.setter
     def dns_name(self, dns_name):
-        """Sets the dns_name of this ShowDnsNameResponse.
+        r"""Sets the dns_name of this ShowDnsNameResponse.
 
         实例域名。
 
@@ -116,7 +116,7 @@ class ShowDnsNameResponse(SdkResponse):
 
     @property
     def dns_type(self):
-        """Gets the dns_type of this ShowDnsNameResponse.
+        r"""Gets the dns_type of this ShowDnsNameResponse.
 
         实例域名类型，当前只支持private。
 
@@ -127,7 +127,7 @@ class ShowDnsNameResponse(SdkResponse):
 
     @dns_type.setter
     def dns_type(self, dns_type):
-        """Sets the dns_type of this ShowDnsNameResponse.
+        r"""Sets the dns_type of this ShowDnsNameResponse.
 
         实例域名类型，当前只支持private。
 
@@ -138,7 +138,7 @@ class ShowDnsNameResponse(SdkResponse):
 
     @property
     def ipv6_address(self):
-        """Gets the ipv6_address of this ShowDnsNameResponse.
+        r"""Gets the ipv6_address of this ShowDnsNameResponse.
 
         实例内网IPv6地址。
 
@@ -149,7 +149,7 @@ class ShowDnsNameResponse(SdkResponse):
 
     @ipv6_address.setter
     def ipv6_address(self, ipv6_address):
-        """Sets the ipv6_address of this ShowDnsNameResponse.
+        r"""Sets the ipv6_address of this ShowDnsNameResponse.
 
         实例内网IPv6地址。
 
@@ -160,7 +160,7 @@ class ShowDnsNameResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDnsNameResponse.
+        r"""Gets the status of this ShowDnsNameResponse.
 
         域名状态。
 
@@ -171,7 +171,7 @@ class ShowDnsNameResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDnsNameResponse.
+        r"""Sets the status of this ShowDnsNameResponse.
 
         域名状态。
 

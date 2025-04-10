@@ -25,7 +25,7 @@ class ShowReplicationRequest:
     }
 
     def __init__(self, replication_id=None):
-        """ShowReplicationRequest
+        r"""ShowReplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowReplicationRequest:
 
     @property
     def replication_id(self):
-        """Gets the replication_id of this ShowReplicationRequest.
+        r"""Gets the replication_id of this ShowReplicationRequest.
 
         复制对ID。
 
@@ -53,7 +53,7 @@ class ShowReplicationRequest:
 
     @replication_id.setter
     def replication_id(self, replication_id):
-        """Sets the replication_id of this ShowReplicationRequest.
+        r"""Sets the replication_id of this ShowReplicationRequest.
 
         复制对ID。
 

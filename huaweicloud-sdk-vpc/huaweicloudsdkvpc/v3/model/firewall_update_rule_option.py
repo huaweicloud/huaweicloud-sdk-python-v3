@@ -27,7 +27,7 @@ class FirewallUpdateRuleOption:
     }
 
     def __init__(self, ingress_rules=None, egress_rules=None):
-        """FirewallUpdateRuleOption
+        r"""FirewallUpdateRuleOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FirewallUpdateRuleOption:
 
     @property
     def ingress_rules(self):
-        """Gets the ingress_rules of this FirewallUpdateRuleOption.
+        r"""Gets the ingress_rules of this FirewallUpdateRuleOption.
 
         功能说明：ACL更新入方向规则列表 约束：ingress_rules和egress_rules仅能同时设置一个，且当前只支持同时更新一条规则
 
@@ -61,7 +61,7 @@ class FirewallUpdateRuleOption:
 
     @ingress_rules.setter
     def ingress_rules(self, ingress_rules):
-        """Sets the ingress_rules of this FirewallUpdateRuleOption.
+        r"""Sets the ingress_rules of this FirewallUpdateRuleOption.
 
         功能说明：ACL更新入方向规则列表 约束：ingress_rules和egress_rules仅能同时设置一个，且当前只支持同时更新一条规则
 
@@ -72,7 +72,7 @@ class FirewallUpdateRuleOption:
 
     @property
     def egress_rules(self):
-        """Gets the egress_rules of this FirewallUpdateRuleOption.
+        r"""Gets the egress_rules of this FirewallUpdateRuleOption.
 
         功能说明：ACL更新出方向规则列表 约束：ingress_rules和egress_rules仅能同时设置一个，且当前只支持同时更新一条规则
 
@@ -83,7 +83,7 @@ class FirewallUpdateRuleOption:
 
     @egress_rules.setter
     def egress_rules(self, egress_rules):
-        """Sets the egress_rules of this FirewallUpdateRuleOption.
+        r"""Sets the egress_rules of this FirewallUpdateRuleOption.
 
         功能说明：ACL更新出方向规则列表 约束：ingress_rules和egress_rules仅能同时设置一个，且当前只支持同时更新一条规则
 

@@ -25,7 +25,7 @@ class CheckWhetherHostGroupCanBeCreatedRequest:
     }
 
     def __init__(self, project_id=None):
-        """CheckWhetherHostGroupCanBeCreatedRequest
+        r"""CheckWhetherHostGroupCanBeCreatedRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CheckWhetherHostGroupCanBeCreatedRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CheckWhetherHostGroupCanBeCreatedRequest.
+        r"""Gets the project_id of this CheckWhetherHostGroupCanBeCreatedRequest.
 
         项目id
 
@@ -53,7 +53,7 @@ class CheckWhetherHostGroupCanBeCreatedRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CheckWhetherHostGroupCanBeCreatedRequest.
+        r"""Sets the project_id of this CheckWhetherHostGroupCanBeCreatedRequest.
 
         项目id
 

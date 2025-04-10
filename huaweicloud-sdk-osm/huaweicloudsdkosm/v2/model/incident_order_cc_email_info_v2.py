@@ -29,7 +29,7 @@ class IncidentOrderCCEmailInfoV2:
     }
 
     def __init__(self, user_id=None, customer_id=None, cc_email=None):
-        """IncidentOrderCCEmailInfoV2
+        r"""IncidentOrderCCEmailInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IncidentOrderCCEmailInfoV2:
 
     @property
     def user_id(self):
-        """Gets the user_id of this IncidentOrderCCEmailInfoV2.
+        r"""Gets the user_id of this IncidentOrderCCEmailInfoV2.
 
         用户id
 
@@ -68,7 +68,7 @@ class IncidentOrderCCEmailInfoV2:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this IncidentOrderCCEmailInfoV2.
+        r"""Sets the user_id of this IncidentOrderCCEmailInfoV2.
 
         用户id
 
@@ -79,7 +79,7 @@ class IncidentOrderCCEmailInfoV2:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this IncidentOrderCCEmailInfoV2.
+        r"""Gets the customer_id of this IncidentOrderCCEmailInfoV2.
 
         客户id
 
@@ -90,7 +90,7 @@ class IncidentOrderCCEmailInfoV2:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this IncidentOrderCCEmailInfoV2.
+        r"""Sets the customer_id of this IncidentOrderCCEmailInfoV2.
 
         客户id
 
@@ -101,7 +101,7 @@ class IncidentOrderCCEmailInfoV2:
 
     @property
     def cc_email(self):
-        """Gets the cc_email of this IncidentOrderCCEmailInfoV2.
+        r"""Gets the cc_email of this IncidentOrderCCEmailInfoV2.
 
         操作邮箱
 
@@ -112,7 +112,7 @@ class IncidentOrderCCEmailInfoV2:
 
     @cc_email.setter
     def cc_email(self, cc_email):
-        """Sets the cc_email of this IncidentOrderCCEmailInfoV2.
+        r"""Sets the cc_email of this IncidentOrderCCEmailInfoV2.
 
         操作邮箱
 

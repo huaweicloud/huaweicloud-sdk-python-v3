@@ -25,7 +25,7 @@ class RuleIdList:
     }
 
     def __init__(self, rules=None):
-        """RuleIdList
+        r"""RuleIdList
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RuleIdList:
 
     @property
     def rules(self):
-        """Gets the rules of this RuleIdList.
+        r"""Gets the rules of this RuleIdList.
 
         规则id列表
 
@@ -54,7 +54,7 @@ class RuleIdList:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this RuleIdList.
+        r"""Sets the rules of this RuleIdList.
 
         规则id列表
 

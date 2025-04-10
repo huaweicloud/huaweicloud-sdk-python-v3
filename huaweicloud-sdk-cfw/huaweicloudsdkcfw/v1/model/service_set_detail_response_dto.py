@@ -31,7 +31,7 @@ class ServiceSetDetailResponseDto:
     }
 
     def __init__(self, id=None, name=None, description=None, service_set_type=None):
-        """ServiceSetDetailResponseDto
+        r"""ServiceSetDetailResponseDto
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ServiceSetDetailResponseDto:
 
     @property
     def id(self):
-        """Gets the id of this ServiceSetDetailResponseDto.
+        r"""Gets the id of this ServiceSetDetailResponseDto.
 
         服务组id
 
@@ -74,7 +74,7 @@ class ServiceSetDetailResponseDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServiceSetDetailResponseDto.
+        r"""Sets the id of this ServiceSetDetailResponseDto.
 
         服务组id
 
@@ -85,7 +85,7 @@ class ServiceSetDetailResponseDto:
 
     @property
     def name(self):
-        """Gets the name of this ServiceSetDetailResponseDto.
+        r"""Gets the name of this ServiceSetDetailResponseDto.
 
         服务组名称
 
@@ -96,7 +96,7 @@ class ServiceSetDetailResponseDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ServiceSetDetailResponseDto.
+        r"""Sets the name of this ServiceSetDetailResponseDto.
 
         服务组名称
 
@@ -107,7 +107,7 @@ class ServiceSetDetailResponseDto:
 
     @property
     def description(self):
-        """Gets the description of this ServiceSetDetailResponseDto.
+        r"""Gets the description of this ServiceSetDetailResponseDto.
 
         服务组描述信息
 
@@ -118,7 +118,7 @@ class ServiceSetDetailResponseDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServiceSetDetailResponseDto.
+        r"""Sets the description of this ServiceSetDetailResponseDto.
 
         服务组描述信息
 
@@ -129,7 +129,7 @@ class ServiceSetDetailResponseDto:
 
     @property
     def service_set_type(self):
-        """Gets the service_set_type of this ServiceSetDetailResponseDto.
+        r"""Gets the service_set_type of this ServiceSetDetailResponseDto.
 
         服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
 
@@ -140,7 +140,7 @@ class ServiceSetDetailResponseDto:
 
     @service_set_type.setter
     def service_set_type(self, service_set_type):
-        """Sets the service_set_type of this ServiceSetDetailResponseDto.
+        r"""Sets the service_set_type of this ServiceSetDetailResponseDto.
 
         服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
 

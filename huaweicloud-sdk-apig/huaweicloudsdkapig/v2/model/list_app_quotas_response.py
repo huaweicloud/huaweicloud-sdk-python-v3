@@ -30,7 +30,7 @@ class ListAppQuotasResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, quotas=None):
-        """ListAppQuotasResponse
+        r"""ListAppQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAppQuotasResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListAppQuotasResponse.
+        r"""Gets the size of this ListAppQuotasResponse.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListAppQuotasResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListAppQuotasResponse.
+        r"""Sets the size of this ListAppQuotasResponse.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListAppQuotasResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAppQuotasResponse.
+        r"""Gets the total of this ListAppQuotasResponse.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListAppQuotasResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAppQuotasResponse.
+        r"""Sets the total of this ListAppQuotasResponse.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListAppQuotasResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ListAppQuotasResponse.
+        r"""Gets the quotas of this ListAppQuotasResponse.
 
         凭据配额列表
 
@@ -111,7 +111,7 @@ class ListAppQuotasResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ListAppQuotasResponse.
+        r"""Sets the quotas of this ListAppQuotasResponse.
 
         凭据配额列表
 

@@ -31,7 +31,7 @@ class QueryProxyResponseV3:
     }
 
     def __init__(self, proxy=None, master_instance=None, readonly_instances=None, proxy_security_group_check_result=None):
-        """QueryProxyResponseV3
+        r"""QueryProxyResponseV3
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class QueryProxyResponseV3:
 
     @property
     def proxy(self):
-        """Gets the proxy of this QueryProxyResponseV3.
+        r"""Gets the proxy of this QueryProxyResponseV3.
 
         :return: The proxy of this QueryProxyResponseV3.
         :rtype: :class:`huaweicloudsdkrds.v3.ProxyInfo`
@@ -73,7 +73,7 @@ class QueryProxyResponseV3:
 
     @proxy.setter
     def proxy(self, proxy):
-        """Sets the proxy of this QueryProxyResponseV3.
+        r"""Sets the proxy of this QueryProxyResponseV3.
 
         :param proxy: The proxy of this QueryProxyResponseV3.
         :type proxy: :class:`huaweicloudsdkrds.v3.ProxyInfo`
@@ -82,7 +82,7 @@ class QueryProxyResponseV3:
 
     @property
     def master_instance(self):
-        """Gets the master_instance of this QueryProxyResponseV3.
+        r"""Gets the master_instance of this QueryProxyResponseV3.
 
         :return: The master_instance of this QueryProxyResponseV3.
         :rtype: :class:`huaweicloudsdkrds.v3.InstanceInfo`
@@ -91,7 +91,7 @@ class QueryProxyResponseV3:
 
     @master_instance.setter
     def master_instance(self, master_instance):
-        """Sets the master_instance of this QueryProxyResponseV3.
+        r"""Sets the master_instance of this QueryProxyResponseV3.
 
         :param master_instance: The master_instance of this QueryProxyResponseV3.
         :type master_instance: :class:`huaweicloudsdkrds.v3.InstanceInfo`
@@ -100,7 +100,7 @@ class QueryProxyResponseV3:
 
     @property
     def readonly_instances(self):
-        """Gets the readonly_instances of this QueryProxyResponseV3.
+        r"""Gets the readonly_instances of this QueryProxyResponseV3.
 
         数据库只读实例信息。
 
@@ -111,7 +111,7 @@ class QueryProxyResponseV3:
 
     @readonly_instances.setter
     def readonly_instances(self, readonly_instances):
-        """Sets the readonly_instances of this QueryProxyResponseV3.
+        r"""Sets the readonly_instances of this QueryProxyResponseV3.
 
         数据库只读实例信息。
 
@@ -122,7 +122,7 @@ class QueryProxyResponseV3:
 
     @property
     def proxy_security_group_check_result(self):
-        """Gets the proxy_security_group_check_result of this QueryProxyResponseV3.
+        r"""Gets the proxy_security_group_check_result of this QueryProxyResponseV3.
 
         安全组是否放通该数据库代理到数据库的网络地址。
 
@@ -133,7 +133,7 @@ class QueryProxyResponseV3:
 
     @proxy_security_group_check_result.setter
     def proxy_security_group_check_result(self, proxy_security_group_check_result):
-        """Sets the proxy_security_group_check_result of this QueryProxyResponseV3.
+        r"""Sets the proxy_security_group_check_result of this QueryProxyResponseV3.
 
         安全组是否放通该数据库代理到数据库的网络地址。
 

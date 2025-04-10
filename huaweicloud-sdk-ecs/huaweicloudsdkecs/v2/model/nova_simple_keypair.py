@@ -31,7 +31,7 @@ class NovaSimpleKeypair:
     }
 
     def __init__(self, fingerprint=None, name=None, public_key=None, type=None):
-        """NovaSimpleKeypair
+        r"""NovaSimpleKeypair
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class NovaSimpleKeypair:
 
     @property
     def fingerprint(self):
-        """Gets the fingerprint of this NovaSimpleKeypair.
+        r"""Gets the fingerprint of this NovaSimpleKeypair.
 
         密钥对应指纹信息。
 
@@ -72,7 +72,7 @@ class NovaSimpleKeypair:
 
     @fingerprint.setter
     def fingerprint(self, fingerprint):
-        """Sets the fingerprint of this NovaSimpleKeypair.
+        r"""Sets the fingerprint of this NovaSimpleKeypair.
 
         密钥对应指纹信息。
 
@@ -83,7 +83,7 @@ class NovaSimpleKeypair:
 
     @property
     def name(self):
-        """Gets the name of this NovaSimpleKeypair.
+        r"""Gets the name of this NovaSimpleKeypair.
 
         密钥名称。
 
@@ -94,7 +94,7 @@ class NovaSimpleKeypair:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NovaSimpleKeypair.
+        r"""Sets the name of this NovaSimpleKeypair.
 
         密钥名称。
 
@@ -105,7 +105,7 @@ class NovaSimpleKeypair:
 
     @property
     def public_key(self):
-        """Gets the public_key of this NovaSimpleKeypair.
+        r"""Gets the public_key of this NovaSimpleKeypair.
 
         密钥对应publicKey信息。
 
@@ -116,7 +116,7 @@ class NovaSimpleKeypair:
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this NovaSimpleKeypair.
+        r"""Sets the public_key of this NovaSimpleKeypair.
 
         密钥对应publicKey信息。
 
@@ -127,7 +127,7 @@ class NovaSimpleKeypair:
 
     @property
     def type(self):
-        """Gets the type of this NovaSimpleKeypair.
+        r"""Gets the type of this NovaSimpleKeypair.
 
         密钥类型，默认“ssh”  微版本2.2以上支持
 
@@ -138,7 +138,7 @@ class NovaSimpleKeypair:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NovaSimpleKeypair.
+        r"""Sets the type of this NovaSimpleKeypair.
 
         密钥类型，默认“ssh”  微版本2.2以上支持
 

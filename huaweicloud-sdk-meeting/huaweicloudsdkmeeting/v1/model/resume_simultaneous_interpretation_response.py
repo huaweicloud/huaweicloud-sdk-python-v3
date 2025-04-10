@@ -24,7 +24,7 @@ class ResumeSimultaneousInterpretationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ResumeSimultaneousInterpretationResponse
+        r"""ResumeSimultaneousInterpretationResponse
 
         The model defined in huaweicloud sdk
 

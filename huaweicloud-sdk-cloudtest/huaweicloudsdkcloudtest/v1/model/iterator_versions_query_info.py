@@ -43,7 +43,7 @@ class IteratorVersionsQueryInfo:
     }
 
     def __init__(self, name=None, filter=None, own=None, branch_uri=None, iterator_uri=None, owner_ids=None, project_uuid=None, current_stage=None, page_no=None, page_size=None):
-        """IteratorVersionsQueryInfo
+        r"""IteratorVersionsQueryInfo
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class IteratorVersionsQueryInfo:
 
     @property
     def name(self):
-        """Gets the name of this IteratorVersionsQueryInfo.
+        r"""Gets the name of this IteratorVersionsQueryInfo.
 
         迭代计划名称（支持模糊搜索）
 
@@ -116,7 +116,7 @@ class IteratorVersionsQueryInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IteratorVersionsQueryInfo.
+        r"""Sets the name of this IteratorVersionsQueryInfo.
 
         迭代计划名称（支持模糊搜索）
 
@@ -127,7 +127,7 @@ class IteratorVersionsQueryInfo:
 
     @property
     def filter(self):
-        """Gets the filter of this IteratorVersionsQueryInfo.
+        r"""Gets the filter of this IteratorVersionsQueryInfo.
 
         :return: The filter of this IteratorVersionsQueryInfo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.IteratorListFilterInfo`
@@ -136,7 +136,7 @@ class IteratorVersionsQueryInfo:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this IteratorVersionsQueryInfo.
+        r"""Sets the filter of this IteratorVersionsQueryInfo.
 
         :param filter: The filter of this IteratorVersionsQueryInfo.
         :type filter: :class:`huaweicloudsdkcloudtest.v1.IteratorListFilterInfo`
@@ -145,7 +145,7 @@ class IteratorVersionsQueryInfo:
 
     @property
     def own(self):
-        """Gets the own of this IteratorVersionsQueryInfo.
+        r"""Gets the own of this IteratorVersionsQueryInfo.
 
         是否是我的
 
@@ -156,7 +156,7 @@ class IteratorVersionsQueryInfo:
 
     @own.setter
     def own(self, own):
-        """Sets the own of this IteratorVersionsQueryInfo.
+        r"""Sets the own of this IteratorVersionsQueryInfo.
 
         是否是我的
 
@@ -167,7 +167,7 @@ class IteratorVersionsQueryInfo:
 
     @property
     def branch_uri(self):
-        """Gets the branch_uri of this IteratorVersionsQueryInfo.
+        r"""Gets the branch_uri of this IteratorVersionsQueryInfo.
 
         分支URI
 
@@ -178,7 +178,7 @@ class IteratorVersionsQueryInfo:
 
     @branch_uri.setter
     def branch_uri(self, branch_uri):
-        """Sets the branch_uri of this IteratorVersionsQueryInfo.
+        r"""Sets the branch_uri of this IteratorVersionsQueryInfo.
 
         分支URI
 
@@ -189,7 +189,7 @@ class IteratorVersionsQueryInfo:
 
     @property
     def iterator_uri(self):
-        """Gets the iterator_uri of this IteratorVersionsQueryInfo.
+        r"""Gets the iterator_uri of this IteratorVersionsQueryInfo.
 
         迭代计划URI
 
@@ -200,7 +200,7 @@ class IteratorVersionsQueryInfo:
 
     @iterator_uri.setter
     def iterator_uri(self, iterator_uri):
-        """Sets the iterator_uri of this IteratorVersionsQueryInfo.
+        r"""Sets the iterator_uri of this IteratorVersionsQueryInfo.
 
         迭代计划URI
 
@@ -211,7 +211,7 @@ class IteratorVersionsQueryInfo:
 
     @property
     def owner_ids(self):
-        """Gets the owner_ids of this IteratorVersionsQueryInfo.
+        r"""Gets the owner_ids of this IteratorVersionsQueryInfo.
 
         迭代计划责任人集合
 
@@ -222,7 +222,7 @@ class IteratorVersionsQueryInfo:
 
     @owner_ids.setter
     def owner_ids(self, owner_ids):
-        """Sets the owner_ids of this IteratorVersionsQueryInfo.
+        r"""Sets the owner_ids of this IteratorVersionsQueryInfo.
 
         迭代计划责任人集合
 
@@ -233,7 +233,7 @@ class IteratorVersionsQueryInfo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this IteratorVersionsQueryInfo.
+        r"""Gets the project_uuid of this IteratorVersionsQueryInfo.
 
         项目ID
 
@@ -244,7 +244,7 @@ class IteratorVersionsQueryInfo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this IteratorVersionsQueryInfo.
+        r"""Sets the project_uuid of this IteratorVersionsQueryInfo.
 
         项目ID
 
@@ -255,7 +255,7 @@ class IteratorVersionsQueryInfo:
 
     @property
     def current_stage(self):
-        """Gets the current_stage of this IteratorVersionsQueryInfo.
+        r"""Gets the current_stage of this IteratorVersionsQueryInfo.
 
         迭代计划所处节点
 
@@ -266,7 +266,7 @@ class IteratorVersionsQueryInfo:
 
     @current_stage.setter
     def current_stage(self, current_stage):
-        """Sets the current_stage of this IteratorVersionsQueryInfo.
+        r"""Sets the current_stage of this IteratorVersionsQueryInfo.
 
         迭代计划所处节点
 
@@ -277,7 +277,7 @@ class IteratorVersionsQueryInfo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this IteratorVersionsQueryInfo.
+        r"""Gets the page_no of this IteratorVersionsQueryInfo.
 
         当前页数
 
@@ -288,7 +288,7 @@ class IteratorVersionsQueryInfo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this IteratorVersionsQueryInfo.
+        r"""Sets the page_no of this IteratorVersionsQueryInfo.
 
         当前页数
 
@@ -299,7 +299,7 @@ class IteratorVersionsQueryInfo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this IteratorVersionsQueryInfo.
+        r"""Gets the page_size of this IteratorVersionsQueryInfo.
 
         每页条数
 
@@ -310,7 +310,7 @@ class IteratorVersionsQueryInfo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this IteratorVersionsQueryInfo.
+        r"""Sets the page_size of this IteratorVersionsQueryInfo.
 
         每页条数
 

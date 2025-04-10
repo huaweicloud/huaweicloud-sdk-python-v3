@@ -39,7 +39,7 @@ class CbsGetSpecInfo:
     }
 
     def __init__(self, resource_spec_code=None, ecs_system_data_size=None, cpu=None, ram=None, asset=None, connection=None, type=None, data_disk_size=None):
-        """CbsGetSpecInfo
+        r"""CbsGetSpecInfo
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class CbsGetSpecInfo:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this CbsGetSpecInfo.
+        r"""Gets the resource_spec_code of this CbsGetSpecInfo.
 
         云堡垒机规格名称。
 
@@ -95,7 +95,7 @@ class CbsGetSpecInfo:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this CbsGetSpecInfo.
+        r"""Sets the resource_spec_code of this CbsGetSpecInfo.
 
         云堡垒机规格名称。
 
@@ -106,7 +106,7 @@ class CbsGetSpecInfo:
 
     @property
     def ecs_system_data_size(self):
-        """Gets the ecs_system_data_size of this CbsGetSpecInfo.
+        r"""Gets the ecs_system_data_size of this CbsGetSpecInfo.
 
         云堡垒机系统盘磁盘大小，单位GB。
 
@@ -117,7 +117,7 @@ class CbsGetSpecInfo:
 
     @ecs_system_data_size.setter
     def ecs_system_data_size(self, ecs_system_data_size):
-        """Sets the ecs_system_data_size of this CbsGetSpecInfo.
+        r"""Sets the ecs_system_data_size of this CbsGetSpecInfo.
 
         云堡垒机系统盘磁盘大小，单位GB。
 
@@ -128,7 +128,7 @@ class CbsGetSpecInfo:
 
     @property
     def cpu(self):
-        """Gets the cpu of this CbsGetSpecInfo.
+        r"""Gets the cpu of this CbsGetSpecInfo.
 
         云堡垒机CPU核心数。
 
@@ -139,7 +139,7 @@ class CbsGetSpecInfo:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this CbsGetSpecInfo.
+        r"""Sets the cpu of this CbsGetSpecInfo.
 
         云堡垒机CPU核心数。
 
@@ -150,7 +150,7 @@ class CbsGetSpecInfo:
 
     @property
     def ram(self):
-        """Gets the ram of this CbsGetSpecInfo.
+        r"""Gets the ram of this CbsGetSpecInfo.
 
         云堡垒机内存大小，单位GB。
 
@@ -161,7 +161,7 @@ class CbsGetSpecInfo:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this CbsGetSpecInfo.
+        r"""Sets the ram of this CbsGetSpecInfo.
 
         云堡垒机内存大小，单位GB。
 
@@ -172,7 +172,7 @@ class CbsGetSpecInfo:
 
     @property
     def asset(self):
-        """Gets the asset of this CbsGetSpecInfo.
+        r"""Gets the asset of this CbsGetSpecInfo.
 
         云堡垒机资产数量。
 
@@ -183,7 +183,7 @@ class CbsGetSpecInfo:
 
     @asset.setter
     def asset(self, asset):
-        """Sets the asset of this CbsGetSpecInfo.
+        r"""Sets the asset of this CbsGetSpecInfo.
 
         云堡垒机资产数量。
 
@@ -194,7 +194,7 @@ class CbsGetSpecInfo:
 
     @property
     def connection(self):
-        """Gets the connection of this CbsGetSpecInfo.
+        r"""Gets the connection of this CbsGetSpecInfo.
 
         云堡垒机最大连接数。
 
@@ -205,7 +205,7 @@ class CbsGetSpecInfo:
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this CbsGetSpecInfo.
+        r"""Sets the connection of this CbsGetSpecInfo.
 
         云堡垒机最大连接数。
 
@@ -216,7 +216,7 @@ class CbsGetSpecInfo:
 
     @property
     def type(self):
-        """Gets the type of this CbsGetSpecInfo.
+        r"""Gets the type of this CbsGetSpecInfo.
 
         云堡垒机规格类型。 - basic：标准版 - enhance：专业版
 
@@ -227,7 +227,7 @@ class CbsGetSpecInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CbsGetSpecInfo.
+        r"""Sets the type of this CbsGetSpecInfo.
 
         云堡垒机规格类型。 - basic：标准版 - enhance：专业版
 
@@ -238,7 +238,7 @@ class CbsGetSpecInfo:
 
     @property
     def data_disk_size(self):
-        """Gets the data_disk_size of this CbsGetSpecInfo.
+        r"""Gets the data_disk_size of this CbsGetSpecInfo.
 
         云堡垒机数据盘大小，单位TB。
 
@@ -249,7 +249,7 @@ class CbsGetSpecInfo:
 
     @data_disk_size.setter
     def data_disk_size(self, data_disk_size):
-        """Sets the data_disk_size of this CbsGetSpecInfo.
+        r"""Sets the data_disk_size of this CbsGetSpecInfo.
 
         云堡垒机数据盘大小，单位TB。
 

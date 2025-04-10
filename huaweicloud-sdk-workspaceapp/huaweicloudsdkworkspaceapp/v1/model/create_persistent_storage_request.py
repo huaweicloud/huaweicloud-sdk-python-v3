@@ -25,7 +25,7 @@ class CreatePersistentStorageRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePersistentStorageRequest
+        r"""CreatePersistentStorageRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreatePersistentStorageRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePersistentStorageRequest.
+        r"""Gets the body of this CreatePersistentStorageRequest.
 
         :return: The body of this CreatePersistentStorageRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreatePersistentStorageReq`
@@ -52,7 +52,7 @@ class CreatePersistentStorageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePersistentStorageRequest.
+        r"""Sets the body of this CreatePersistentStorageRequest.
 
         :param body: The body of this CreatePersistentStorageRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.CreatePersistentStorageReq`

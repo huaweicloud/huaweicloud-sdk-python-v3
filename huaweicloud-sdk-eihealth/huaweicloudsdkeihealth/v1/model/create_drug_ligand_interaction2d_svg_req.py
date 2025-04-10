@@ -29,7 +29,7 @@ class CreateDrugLigandInteraction2dSvgReq:
     }
 
     def __init__(self, receptor_file=None, ligand_file=None, name=None):
-        """CreateDrugLigandInteraction2dSvgReq
+        r"""CreateDrugLigandInteraction2dSvgReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateDrugLigandInteraction2dSvgReq:
 
     @property
     def receptor_file(self):
-        """Gets the receptor_file of this CreateDrugLigandInteraction2dSvgReq.
+        r"""Gets the receptor_file of this CreateDrugLigandInteraction2dSvgReq.
 
         :return: The receptor_file of this CreateDrugLigandInteraction2dSvgReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
@@ -65,7 +65,7 @@ class CreateDrugLigandInteraction2dSvgReq:
 
     @receptor_file.setter
     def receptor_file(self, receptor_file):
-        """Sets the receptor_file of this CreateDrugLigandInteraction2dSvgReq.
+        r"""Sets the receptor_file of this CreateDrugLigandInteraction2dSvgReq.
 
         :param receptor_file: The receptor_file of this CreateDrugLigandInteraction2dSvgReq.
         :type receptor_file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
@@ -74,7 +74,7 @@ class CreateDrugLigandInteraction2dSvgReq:
 
     @property
     def ligand_file(self):
-        """Gets the ligand_file of this CreateDrugLigandInteraction2dSvgReq.
+        r"""Gets the ligand_file of this CreateDrugLigandInteraction2dSvgReq.
 
         :return: The ligand_file of this CreateDrugLigandInteraction2dSvgReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -83,7 +83,7 @@ class CreateDrugLigandInteraction2dSvgReq:
 
     @ligand_file.setter
     def ligand_file(self, ligand_file):
-        """Sets the ligand_file of this CreateDrugLigandInteraction2dSvgReq.
+        r"""Sets the ligand_file of this CreateDrugLigandInteraction2dSvgReq.
 
         :param ligand_file: The ligand_file of this CreateDrugLigandInteraction2dSvgReq.
         :type ligand_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -92,7 +92,7 @@ class CreateDrugLigandInteraction2dSvgReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateDrugLigandInteraction2dSvgReq.
+        r"""Gets the name of this CreateDrugLigandInteraction2dSvgReq.
 
         小分子名称
 
@@ -103,7 +103,7 @@ class CreateDrugLigandInteraction2dSvgReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDrugLigandInteraction2dSvgReq.
+        r"""Sets the name of this CreateDrugLigandInteraction2dSvgReq.
 
         小分子名称
 

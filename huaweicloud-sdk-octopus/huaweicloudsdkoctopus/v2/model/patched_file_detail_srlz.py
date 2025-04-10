@@ -27,7 +27,7 @@ class PatchedFileDetailSrlz:
     }
 
     def __init__(self, filename=None, ready=None):
-        """PatchedFileDetailSrlz
+        r"""PatchedFileDetailSrlz
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PatchedFileDetailSrlz:
 
     @property
     def filename(self):
-        """Gets the filename of this PatchedFileDetailSrlz.
+        r"""Gets the filename of this PatchedFileDetailSrlz.
 
         文件名
 
@@ -61,7 +61,7 @@ class PatchedFileDetailSrlz:
 
     @filename.setter
     def filename(self, filename):
-        """Sets the filename of this PatchedFileDetailSrlz.
+        r"""Sets the filename of this PatchedFileDetailSrlz.
 
         文件名
 
@@ -72,7 +72,7 @@ class PatchedFileDetailSrlz:
 
     @property
     def ready(self):
-        """Gets the ready of this PatchedFileDetailSrlz.
+        r"""Gets the ready of this PatchedFileDetailSrlz.
 
         文件状态
 
@@ -83,7 +83,7 @@ class PatchedFileDetailSrlz:
 
     @ready.setter
     def ready(self, ready):
-        """Sets the ready of this PatchedFileDetailSrlz.
+        r"""Sets the ready of this PatchedFileDetailSrlz.
 
         文件状态
 

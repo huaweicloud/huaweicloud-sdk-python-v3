@@ -23,7 +23,7 @@ class Limit:
     }
 
     def __init__(self):
-        """Limit
+        r"""Limit
 
         The model defined in huaweicloud sdk
 

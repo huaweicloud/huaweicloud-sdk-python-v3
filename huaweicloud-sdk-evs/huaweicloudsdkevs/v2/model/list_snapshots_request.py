@@ -45,7 +45,7 @@ class ListSnapshotsRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None, status=None, volume_id=None, availability_zone=None, id=None, dedicated_storage_name=None, dedicated_storage_id=None, service_type=None, enterprise_project_id=None):
-        """ListSnapshotsRequest
+        r"""ListSnapshotsRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListSnapshotsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSnapshotsRequest.
+        r"""Gets the offset of this ListSnapshotsRequest.
 
         偏移量。 说明:分页查询快照时使用，与limit配合使用。假如共有30个快照，设置offset为11，limit为10，即为从第12个快照开始查询，一次最多可读取10个快照。
 
@@ -124,7 +124,7 @@ class ListSnapshotsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSnapshotsRequest.
+        r"""Sets the offset of this ListSnapshotsRequest.
 
         偏移量。 说明:分页查询快照时使用，与limit配合使用。假如共有30个快照，设置offset为11，limit为10，即为从第12个快照开始查询，一次最多可读取10个快照。
 
@@ -135,7 +135,7 @@ class ListSnapshotsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSnapshotsRequest.
+        r"""Gets the limit of this ListSnapshotsRequest.
 
         返回结果个数限制，值为大于0的整数。默认值为1000。
 
@@ -146,7 +146,7 @@ class ListSnapshotsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSnapshotsRequest.
+        r"""Sets the limit of this ListSnapshotsRequest.
 
         返回结果个数限制，值为大于0的整数。默认值为1000。
 
@@ -157,7 +157,7 @@ class ListSnapshotsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSnapshotsRequest.
+        r"""Gets the name of this ListSnapshotsRequest.
 
         云硬盘快照名称。最大支持255个字节。
 
@@ -168,7 +168,7 @@ class ListSnapshotsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSnapshotsRequest.
+        r"""Sets the name of this ListSnapshotsRequest.
 
         云硬盘快照名称。最大支持255个字节。
 
@@ -179,7 +179,7 @@ class ListSnapshotsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListSnapshotsRequest.
+        r"""Gets the status of this ListSnapshotsRequest.
 
         云硬盘快照状态，具体请参见A.3 云硬盘快照状态。
 
@@ -190,7 +190,7 @@ class ListSnapshotsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSnapshotsRequest.
+        r"""Sets the status of this ListSnapshotsRequest.
 
         云硬盘快照状态，具体请参见A.3 云硬盘快照状态。
 
@@ -201,7 +201,7 @@ class ListSnapshotsRequest:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this ListSnapshotsRequest.
+        r"""Gets the volume_id of this ListSnapshotsRequest.
 
         快照所属云硬盘的ID。
 
@@ -212,7 +212,7 @@ class ListSnapshotsRequest:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this ListSnapshotsRequest.
+        r"""Sets the volume_id of this ListSnapshotsRequest.
 
         快照所属云硬盘的ID。
 
@@ -223,7 +223,7 @@ class ListSnapshotsRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListSnapshotsRequest.
+        r"""Gets the availability_zone of this ListSnapshotsRequest.
 
         快照所属云硬盘的可用区。
 
@@ -234,7 +234,7 @@ class ListSnapshotsRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListSnapshotsRequest.
+        r"""Sets the availability_zone of this ListSnapshotsRequest.
 
         快照所属云硬盘的可用区。
 
@@ -245,7 +245,7 @@ class ListSnapshotsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListSnapshotsRequest.
+        r"""Gets the id of this ListSnapshotsRequest.
 
         指定快照id进行过滤。可以传入多个id过滤查询，格式：id=id1&id=id2&id=id3
 
@@ -256,7 +256,7 @@ class ListSnapshotsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSnapshotsRequest.
+        r"""Sets the id of this ListSnapshotsRequest.
 
         指定快照id进行过滤。可以传入多个id过滤查询，格式：id=id1&id=id2&id=id3
 
@@ -267,7 +267,7 @@ class ListSnapshotsRequest:
 
     @property
     def dedicated_storage_name(self):
-        """Gets the dedicated_storage_name of this ListSnapshotsRequest.
+        r"""Gets the dedicated_storage_name of this ListSnapshotsRequest.
 
         专属存储的名称。
 
@@ -278,7 +278,7 @@ class ListSnapshotsRequest:
 
     @dedicated_storage_name.setter
     def dedicated_storage_name(self, dedicated_storage_name):
-        """Sets the dedicated_storage_name of this ListSnapshotsRequest.
+        r"""Sets the dedicated_storage_name of this ListSnapshotsRequest.
 
         专属存储的名称。
 
@@ -289,7 +289,7 @@ class ListSnapshotsRequest:
 
     @property
     def dedicated_storage_id(self):
-        """Gets the dedicated_storage_id of this ListSnapshotsRequest.
+        r"""Gets the dedicated_storage_id of this ListSnapshotsRequest.
 
         专属存储ID。
 
@@ -300,7 +300,7 @@ class ListSnapshotsRequest:
 
     @dedicated_storage_id.setter
     def dedicated_storage_id(self, dedicated_storage_id):
-        """Sets the dedicated_storage_id of this ListSnapshotsRequest.
+        r"""Sets the dedicated_storage_id of this ListSnapshotsRequest.
 
         专属存储ID。
 
@@ -311,7 +311,7 @@ class ListSnapshotsRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ListSnapshotsRequest.
+        r"""Gets the service_type of this ListSnapshotsRequest.
 
         服务类型。仅支持EVS、DSS、DESS。
 
@@ -322,7 +322,7 @@ class ListSnapshotsRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ListSnapshotsRequest.
+        r"""Sets the service_type of this ListSnapshotsRequest.
 
         服务类型。仅支持EVS、DSS、DESS。
 
@@ -333,7 +333,7 @@ class ListSnapshotsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListSnapshotsRequest.
+        r"""Gets the enterprise_project_id of this ListSnapshotsRequest.
 
         指定企业项目id进行过滤。 传入“all_granted_eps”，代表查询权限范围内的所有企业项目下的云硬盘。 > 说明： >  > 关于企业项目ID的获取及企业项目特性的详细信息，请参考：\"[企业管理用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)\"。
 
@@ -344,7 +344,7 @@ class ListSnapshotsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListSnapshotsRequest.
+        r"""Sets the enterprise_project_id of this ListSnapshotsRequest.
 
         指定企业项目id进行过滤。 传入“all_granted_eps”，代表查询权限范围内的所有企业项目下的云硬盘。 > 说明： >  > 关于企业项目ID的获取及企业项目特性的详细信息，请参考：\"[企业管理用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)\"。
 

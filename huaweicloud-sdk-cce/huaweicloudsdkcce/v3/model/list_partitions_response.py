@@ -30,7 +30,7 @@ class ListPartitionsResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, items=None):
-        """ListPartitionsResponse
+        r"""ListPartitionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListPartitionsResponse.
+        r"""Gets the kind of this ListPartitionsResponse.
 
         资源类型
 
@@ -69,7 +69,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListPartitionsResponse.
+        r"""Sets the kind of this ListPartitionsResponse.
 
         资源类型
 
@@ -80,7 +80,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListPartitionsResponse.
+        r"""Gets the api_version of this ListPartitionsResponse.
 
         API版本
 
@@ -91,7 +91,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListPartitionsResponse.
+        r"""Sets the api_version of this ListPartitionsResponse.
 
         API版本
 
@@ -102,7 +102,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListPartitionsResponse.
+        r"""Gets the items of this ListPartitionsResponse.
 
         :return: The items of this ListPartitionsResponse.
         :rtype: list[:class:`huaweicloudsdkcce.v3.Partition`]
@@ -111,7 +111,7 @@ class ListPartitionsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListPartitionsResponse.
+        r"""Sets the items of this ListPartitionsResponse.
 
         :param items: The items of this ListPartitionsResponse.
         :type items: list[:class:`huaweicloudsdkcce.v3.Partition`]

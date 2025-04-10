@@ -29,7 +29,7 @@ class ProductCoverDetailInfo:
     }
 
     def __init__(self, asset_id=None, cover_url=None, thumbnail_url=None):
-        """ProductCoverDetailInfo
+        r"""ProductCoverDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ProductCoverDetailInfo:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ProductCoverDetailInfo.
+        r"""Gets the asset_id of this ProductCoverDetailInfo.
 
         资产ID
 
@@ -68,7 +68,7 @@ class ProductCoverDetailInfo:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ProductCoverDetailInfo.
+        r"""Sets the asset_id of this ProductCoverDetailInfo.
 
         资产ID
 
@@ -79,7 +79,7 @@ class ProductCoverDetailInfo:
 
     @property
     def cover_url(self):
-        """Gets the cover_url of this ProductCoverDetailInfo.
+        r"""Gets the cover_url of this ProductCoverDetailInfo.
 
         封面图片路径。
 
@@ -90,7 +90,7 @@ class ProductCoverDetailInfo:
 
     @cover_url.setter
     def cover_url(self, cover_url):
-        """Sets the cover_url of this ProductCoverDetailInfo.
+        r"""Sets the cover_url of this ProductCoverDetailInfo.
 
         封面图片路径。
 
@@ -101,7 +101,7 @@ class ProductCoverDetailInfo:
 
     @property
     def thumbnail_url(self):
-        """Gets the thumbnail_url of this ProductCoverDetailInfo.
+        r"""Gets the thumbnail_url of this ProductCoverDetailInfo.
 
         缩略图路径。
 
@@ -112,7 +112,7 @@ class ProductCoverDetailInfo:
 
     @thumbnail_url.setter
     def thumbnail_url(self, thumbnail_url):
-        """Sets the thumbnail_url of this ProductCoverDetailInfo.
+        r"""Sets the thumbnail_url of this ProductCoverDetailInfo.
 
         缩略图路径。
 

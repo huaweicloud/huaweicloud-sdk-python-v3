@@ -27,7 +27,7 @@ class PhoneDataVolumeSize:
     }
 
     def __init__(self, phone_id=None, new_size=None):
-        """PhoneDataVolumeSize
+        r"""PhoneDataVolumeSize
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PhoneDataVolumeSize:
 
     @property
     def phone_id(self):
-        """Gets the phone_id of this PhoneDataVolumeSize.
+        r"""Gets the phone_id of this PhoneDataVolumeSize.
 
         云手机id
 
@@ -59,7 +59,7 @@ class PhoneDataVolumeSize:
 
     @phone_id.setter
     def phone_id(self, phone_id):
-        """Sets the phone_id of this PhoneDataVolumeSize.
+        r"""Sets the phone_id of this PhoneDataVolumeSize.
 
         云手机id
 
@@ -70,7 +70,7 @@ class PhoneDataVolumeSize:
 
     @property
     def new_size(self):
-        """Gets the new_size of this PhoneDataVolumeSize.
+        r"""Gets the new_size of this PhoneDataVolumeSize.
 
         扩容后的手机数据盘大小，单位为GiB。扩容的大小必须大于等于原有容量且小于最大容量。 最大容量：32768GiB
 
@@ -81,7 +81,7 @@ class PhoneDataVolumeSize:
 
     @new_size.setter
     def new_size(self, new_size):
-        """Sets the new_size of this PhoneDataVolumeSize.
+        r"""Sets the new_size of this PhoneDataVolumeSize.
 
         扩容后的手机数据盘大小，单位为GiB。扩容的大小必须大于等于原有容量且小于最大容量。 最大容量：32768GiB
 

@@ -30,7 +30,7 @@ class ListPeerLinksResponse(SdkResponse):
     }
 
     def __init__(self, peer_links=None, page_info=None, request_id=None):
-        """ListPeerLinksResponse
+        r"""ListPeerLinksResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPeerLinksResponse(SdkResponse):
 
     @property
     def peer_links(self):
-        """Gets the peer_links of this ListPeerLinksResponse.
+        r"""Gets the peer_links of this ListPeerLinksResponse.
 
         专线关联连接列表。
 
@@ -69,7 +69,7 @@ class ListPeerLinksResponse(SdkResponse):
 
     @peer_links.setter
     def peer_links(self, peer_links):
-        """Sets the peer_links of this ListPeerLinksResponse.
+        r"""Sets the peer_links of this ListPeerLinksResponse.
 
         专线关联连接列表。
 
@@ -80,7 +80,7 @@ class ListPeerLinksResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPeerLinksResponse.
+        r"""Gets the page_info of this ListPeerLinksResponse.
 
         :return: The page_info of this ListPeerLinksResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListPeerLinksResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPeerLinksResponse.
+        r"""Sets the page_info of this ListPeerLinksResponse.
 
         :param page_info: The page_info of this ListPeerLinksResponse.
         :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListPeerLinksResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListPeerLinksResponse.
+        r"""Gets the request_id of this ListPeerLinksResponse.
 
         请求ID。
 
@@ -109,7 +109,7 @@ class ListPeerLinksResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListPeerLinksResponse.
+        r"""Sets the request_id of this ListPeerLinksResponse.
 
         请求ID。
 

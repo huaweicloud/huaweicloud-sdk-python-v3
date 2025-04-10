@@ -37,7 +37,7 @@ class QueryResourceByTagRequestBody:
     }
 
     def __init__(self, request_id=None, without_any_tag=None, tags=None, tags_any=None, not_tags=None, not_tags_any=None, matches=None):
-        """QueryResourceByTagRequestBody
+        r"""QueryResourceByTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class QueryResourceByTagRequestBody:
 
     @property
     def request_id(self):
-        """Gets the request_id of this QueryResourceByTagRequestBody.
+        r"""Gets the request_id of this QueryResourceByTagRequestBody.
 
         请求ID。
 
@@ -96,7 +96,7 @@ class QueryResourceByTagRequestBody:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this QueryResourceByTagRequestBody.
+        r"""Sets the request_id of this QueryResourceByTagRequestBody.
 
         请求ID。
 
@@ -107,7 +107,7 @@ class QueryResourceByTagRequestBody:
 
     @property
     def without_any_tag(self):
-        """Gets the without_any_tag of this QueryResourceByTagRequestBody.
+        r"""Gets the without_any_tag of this QueryResourceByTagRequestBody.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”、“tags_any”、“not_tags”、“not_tags_any”字段。
 
@@ -118,7 +118,7 @@ class QueryResourceByTagRequestBody:
 
     @without_any_tag.setter
     def without_any_tag(self, without_any_tag):
-        """Sets the without_any_tag of this QueryResourceByTagRequestBody.
+        r"""Sets the without_any_tag of this QueryResourceByTagRequestBody.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”、“tags_any”、“not_tags”、“not_tags_any”字段。
 
@@ -129,7 +129,7 @@ class QueryResourceByTagRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this QueryResourceByTagRequestBody.
+        r"""Gets the tags of this QueryResourceByTagRequestBody.
 
         包含标签，最多包含20个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失。Key不能重复，同一个key中values不能重复。结果返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
 
@@ -140,7 +140,7 @@ class QueryResourceByTagRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this QueryResourceByTagRequestBody.
+        r"""Sets the tags of this QueryResourceByTagRequestBody.
 
         包含标签，最多包含20个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失。Key不能重复，同一个key中values不能重复。结果返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
 
@@ -151,7 +151,7 @@ class QueryResourceByTagRequestBody:
 
     @property
     def tags_any(self):
-        """Gets the tags_any of this QueryResourceByTagRequestBody.
+        r"""Gets the tags_any of this QueryResourceByTagRequestBody.
 
         包含任意标签，最多包含20个key，每个key下面的value最多10个, 每个key对应的value可以为空数组但结构体不能缺失。Key不能重复，同一个key中values不能重复。结果返回包含标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
 
@@ -162,7 +162,7 @@ class QueryResourceByTagRequestBody:
 
     @tags_any.setter
     def tags_any(self, tags_any):
-        """Sets the tags_any of this QueryResourceByTagRequestBody.
+        r"""Sets the tags_any of this QueryResourceByTagRequestBody.
 
         包含任意标签，最多包含20个key，每个key下面的value最多10个, 每个key对应的value可以为空数组但结构体不能缺失。Key不能重复，同一个key中values不能重复。结果返回包含标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
 
@@ -173,7 +173,7 @@ class QueryResourceByTagRequestBody:
 
     @property
     def not_tags(self):
-        """Gets the not_tags of this QueryResourceByTagRequestBody.
+        r"""Gets the not_tags of this QueryResourceByTagRequestBody.
 
         不包含标签，最多包含20个key，每个key下面的value最多10个, 每个key对应的value可以为空数组但结构体不能缺失。Key不能重复，同一个key中values不能重复。结果返回不包含标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
 
@@ -184,7 +184,7 @@ class QueryResourceByTagRequestBody:
 
     @not_tags.setter
     def not_tags(self, not_tags):
-        """Sets the not_tags of this QueryResourceByTagRequestBody.
+        r"""Sets the not_tags of this QueryResourceByTagRequestBody.
 
         不包含标签，最多包含20个key，每个key下面的value最多10个, 每个key对应的value可以为空数组但结构体不能缺失。Key不能重复，同一个key中values不能重复。结果返回不包含标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
 
@@ -195,7 +195,7 @@ class QueryResourceByTagRequestBody:
 
     @property
     def not_tags_any(self):
-        """Gets the not_tags_any of this QueryResourceByTagRequestBody.
+        r"""Gets the not_tags_any of this QueryResourceByTagRequestBody.
 
         不包含任意标签，最多包含20个key，每个key下面的value最多10个, 每个key对应的value可以为空数组但结构体不能缺失。Key不能重复，同一个key中values不能重复。结果返回不包含标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
 
@@ -206,7 +206,7 @@ class QueryResourceByTagRequestBody:
 
     @not_tags_any.setter
     def not_tags_any(self, not_tags_any):
-        """Sets the not_tags_any of this QueryResourceByTagRequestBody.
+        r"""Sets the not_tags_any of this QueryResourceByTagRequestBody.
 
         不包含任意标签，最多包含20个key，每个key下面的value最多10个, 每个key对应的value可以为空数组但结构体不能缺失。Key不能重复，同一个key中values不能重复。结果返回不包含标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
 
@@ -217,7 +217,7 @@ class QueryResourceByTagRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this QueryResourceByTagRequestBody.
+        r"""Gets the matches of this QueryResourceByTagRequestBody.
 
         是否匹配以下tag，key必须为\"resource_name\"，value如果有值则模糊匹配，如果为空字符串则精确匹配。
 
@@ -228,7 +228,7 @@ class QueryResourceByTagRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this QueryResourceByTagRequestBody.
+        r"""Sets the matches of this QueryResourceByTagRequestBody.
 
         是否匹配以下tag，key必须为\"resource_name\"，value如果有值则模糊匹配，如果为空字符串则精确匹配。
 

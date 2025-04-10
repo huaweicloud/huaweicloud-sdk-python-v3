@@ -28,7 +28,7 @@ class BatchShowParamsResponse(SdkResponse):
     }
 
     def __init__(self, params_list=None, count=None):
-        """BatchShowParamsResponse
+        r"""BatchShowParamsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchShowParamsResponse(SdkResponse):
 
     @property
     def params_list(self):
-        """Gets the params_list of this BatchShowParamsResponse.
+        r"""Gets the params_list of this BatchShowParamsResponse.
 
         查询数据库参数响应体
 
@@ -62,7 +62,7 @@ class BatchShowParamsResponse(SdkResponse):
 
     @params_list.setter
     def params_list(self, params_list):
-        """Sets the params_list of this BatchShowParamsResponse.
+        r"""Sets the params_list of this BatchShowParamsResponse.
 
         查询数据库参数响应体
 
@@ -73,7 +73,7 @@ class BatchShowParamsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchShowParamsResponse.
+        r"""Gets the count of this BatchShowParamsResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class BatchShowParamsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchShowParamsResponse.
+        r"""Sets the count of this BatchShowParamsResponse.
 
         总数
 

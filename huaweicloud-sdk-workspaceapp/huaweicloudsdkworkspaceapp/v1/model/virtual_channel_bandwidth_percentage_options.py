@@ -25,7 +25,7 @@ class VirtualChannelBandwidthPercentageOptions:
     }
 
     def __init__(self, virtual_channel_bandwidth_percentage_value=None):
-        """VirtualChannelBandwidthPercentageOptions
+        r"""VirtualChannelBandwidthPercentageOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class VirtualChannelBandwidthPercentageOptions:
 
     @property
     def virtual_channel_bandwidth_percentage_value(self):
-        """Gets the virtual_channel_bandwidth_percentage_value of this VirtualChannelBandwidthPercentageOptions.
+        r"""Gets the virtual_channel_bandwidth_percentage_value of this VirtualChannelBandwidthPercentageOptions.
 
         虚拟通道带宽百分比控制量（%）。取值范围为[0-100]。默认：65。
 
@@ -54,7 +54,7 @@ class VirtualChannelBandwidthPercentageOptions:
 
     @virtual_channel_bandwidth_percentage_value.setter
     def virtual_channel_bandwidth_percentage_value(self, virtual_channel_bandwidth_percentage_value):
-        """Sets the virtual_channel_bandwidth_percentage_value of this VirtualChannelBandwidthPercentageOptions.
+        r"""Sets the virtual_channel_bandwidth_percentage_value of this VirtualChannelBandwidthPercentageOptions.
 
         虚拟通道带宽百分比控制量（%）。取值范围为[0-100]。默认：65。
 

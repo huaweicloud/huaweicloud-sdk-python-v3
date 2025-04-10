@@ -27,7 +27,7 @@ class MysqlUpdateInstanceNameRequest:
     }
 
     def __init__(self, name=None, is_modify_node_name=None):
-        """MysqlUpdateInstanceNameRequest
+        r"""MysqlUpdateInstanceNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class MysqlUpdateInstanceNameRequest:
 
     @property
     def name(self):
-        """Gets the name of this MysqlUpdateInstanceNameRequest.
+        r"""Gets the name of this MysqlUpdateInstanceNameRequest.
 
         实例名称。  用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围：最小为4个字符，最大为64个字符且不超过64个字节（注意：一个中文字符占用3个字节），必须以字母或中文开头，区分大小写，可以包含字母、数字、中划线、下划线或中文，不能包含其他特殊字符。
 
@@ -60,7 +60,7 @@ class MysqlUpdateInstanceNameRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MysqlUpdateInstanceNameRequest.
+        r"""Sets the name of this MysqlUpdateInstanceNameRequest.
 
         实例名称。  用于表示实例的名称，同一租户下，同类型的实例名可重名。取值范围：最小为4个字符，最大为64个字符且不超过64个字节（注意：一个中文字符占用3个字节），必须以字母或中文开头，区分大小写，可以包含字母、数字、中划线、下划线或中文，不能包含其他特殊字符。
 
@@ -71,7 +71,7 @@ class MysqlUpdateInstanceNameRequest:
 
     @property
     def is_modify_node_name(self):
-        """Gets the is_modify_node_name of this MysqlUpdateInstanceNameRequest.
+        r"""Gets the is_modify_node_name of this MysqlUpdateInstanceNameRequest.
 
         是否同步修改节点名称，取值：true或false, 默认值为true。
 
@@ -82,7 +82,7 @@ class MysqlUpdateInstanceNameRequest:
 
     @is_modify_node_name.setter
     def is_modify_node_name(self, is_modify_node_name):
-        """Sets the is_modify_node_name of this MysqlUpdateInstanceNameRequest.
+        r"""Sets the is_modify_node_name of this MysqlUpdateInstanceNameRequest.
 
         是否同步修改节点名称，取值：true或false, 默认值为true。
 

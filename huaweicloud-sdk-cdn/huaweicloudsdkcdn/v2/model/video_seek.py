@@ -31,7 +31,7 @@ class VideoSeek:
     }
 
     def __init__(self, enable_video_seek=None, enable_flv_by_time_seek=None, start_parameter=None, end_parameter=None):
-        """VideoSeek
+        r"""VideoSeek
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class VideoSeek:
 
     @property
     def enable_video_seek(self):
-        """Gets the enable_video_seek of this VideoSeek.
+        r"""Gets the enable_video_seek of this VideoSeek.
 
         视频拖拽开关， true：开启，false：关闭  > 当本字段设置为“false”时，查询域名配置接口将不会返回视频拖拽配置信息。
 
@@ -74,7 +74,7 @@ class VideoSeek:
 
     @enable_video_seek.setter
     def enable_video_seek(self, enable_video_seek):
-        """Sets the enable_video_seek of this VideoSeek.
+        r"""Sets the enable_video_seek of this VideoSeek.
 
         视频拖拽开关， true：开启，false：关闭  > 当本字段设置为“false”时，查询域名配置接口将不会返回视频拖拽配置信息。
 
@@ -85,7 +85,7 @@ class VideoSeek:
 
     @property
     def enable_flv_by_time_seek(self):
-        """Gets the enable_flv_by_time_seek of this VideoSeek.
+        r"""Gets the enable_flv_by_time_seek of this VideoSeek.
 
         flv时间拖拽开关， true：开启，false：关闭。
 
@@ -96,7 +96,7 @@ class VideoSeek:
 
     @enable_flv_by_time_seek.setter
     def enable_flv_by_time_seek(self, enable_flv_by_time_seek):
-        """Sets the enable_flv_by_time_seek of this VideoSeek.
+        r"""Sets the enable_flv_by_time_seek of this VideoSeek.
 
         flv时间拖拽开关， true：开启，false：关闭。
 
@@ -107,7 +107,7 @@ class VideoSeek:
 
     @property
     def start_parameter(self):
-        """Gets the start_parameter of this VideoSeek.
+        r"""Gets the start_parameter of this VideoSeek.
 
         自定义用户请求URL中视频播放的开始参数，支持使用数字0-9、字符a-z、A-Z，及\"_\"，长度≤64个字符。
 
@@ -118,7 +118,7 @@ class VideoSeek:
 
     @start_parameter.setter
     def start_parameter(self, start_parameter):
-        """Sets the start_parameter of this VideoSeek.
+        r"""Sets the start_parameter of this VideoSeek.
 
         自定义用户请求URL中视频播放的开始参数，支持使用数字0-9、字符a-z、A-Z，及\"_\"，长度≤64个字符。
 
@@ -129,7 +129,7 @@ class VideoSeek:
 
     @property
     def end_parameter(self):
-        """Gets the end_parameter of this VideoSeek.
+        r"""Gets the end_parameter of this VideoSeek.
 
         自定义用户请求URL中视频播放的结束参数，支持使用数字0-9、字符a-z、A-Z，及\"_\"，长度≤64个字符。
 
@@ -140,7 +140,7 @@ class VideoSeek:
 
     @end_parameter.setter
     def end_parameter(self, end_parameter):
-        """Sets the end_parameter of this VideoSeek.
+        r"""Sets the end_parameter of this VideoSeek.
 
         自定义用户请求URL中视频播放的结束参数，支持使用数字0-9、字符a-z、A-Z，及\"_\"，长度≤64个字符。
 

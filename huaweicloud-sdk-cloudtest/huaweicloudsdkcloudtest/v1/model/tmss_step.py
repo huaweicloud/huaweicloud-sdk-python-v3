@@ -27,7 +27,7 @@ class TmssStep:
     }
 
     def __init__(self, expect_result=None, test_step=None):
-        """TmssStep
+        r"""TmssStep
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TmssStep:
 
     @property
     def expect_result(self):
-        """Gets the expect_result of this TmssStep.
+        r"""Gets the expect_result of this TmssStep.
 
         测试步骤
 
@@ -61,7 +61,7 @@ class TmssStep:
 
     @expect_result.setter
     def expect_result(self, expect_result):
-        """Sets the expect_result of this TmssStep.
+        r"""Sets the expect_result of this TmssStep.
 
         测试步骤
 
@@ -72,7 +72,7 @@ class TmssStep:
 
     @property
     def test_step(self):
-        """Gets the test_step of this TmssStep.
+        r"""Gets the test_step of this TmssStep.
 
         预期结果对象
 
@@ -83,7 +83,7 @@ class TmssStep:
 
     @test_step.setter
     def test_step(self, test_step):
-        """Sets the test_step of this TmssStep.
+        r"""Sets the test_step of this TmssStep.
 
         预期结果对象
 

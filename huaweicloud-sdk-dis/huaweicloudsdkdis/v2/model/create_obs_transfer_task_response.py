@@ -24,7 +24,7 @@ class CreateObsTransferTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateObsTransferTaskResponse
+        r"""CreateObsTransferTaskResponse
 
         The model defined in huaweicloud sdk
 

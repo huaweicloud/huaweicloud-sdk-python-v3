@@ -29,7 +29,7 @@ class LogConfig:
     }
 
     def __init__(self, enable_lts_log=None, enable_obs_log=None, obs_path=None):
-        """LogConfig
+        r"""LogConfig
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LogConfig:
 
     @property
     def enable_lts_log(self):
-        """Gets the enable_lts_log of this LogConfig.
+        r"""Gets the enable_lts_log of this LogConfig.
 
         是否开启日志并记录到LTS,默认不开启
 
@@ -68,7 +68,7 @@ class LogConfig:
 
     @enable_lts_log.setter
     def enable_lts_log(self, enable_lts_log):
-        """Sets the enable_lts_log of this LogConfig.
+        r"""Sets the enable_lts_log of this LogConfig.
 
         是否开启日志并记录到LTS,默认不开启
 
@@ -79,7 +79,7 @@ class LogConfig:
 
     @property
     def enable_obs_log(self):
-        """Gets the enable_obs_log of this LogConfig.
+        r"""Gets the enable_obs_log of this LogConfig.
 
         是否开启日志转储到OBS，默认不开启 开启的时候需要先开启日志记录到LTS，否则无法开启。
 
@@ -90,7 +90,7 @@ class LogConfig:
 
     @enable_obs_log.setter
     def enable_obs_log(self, enable_obs_log):
-        """Sets the enable_obs_log of this LogConfig.
+        r"""Sets the enable_obs_log of this LogConfig.
 
         是否开启日志转储到OBS，默认不开启 开启的时候需要先开启日志记录到LTS，否则无法开启。
 
@@ -101,7 +101,7 @@ class LogConfig:
 
     @property
     def obs_path(self):
-        """Gets the obs_path of this LogConfig.
+        r"""Gets the obs_path of this LogConfig.
 
         日志存储的OBS路径
 
@@ -112,7 +112,7 @@ class LogConfig:
 
     @obs_path.setter
     def obs_path(self, obs_path):
-        """Sets the obs_path of this LogConfig.
+        r"""Sets the obs_path of this LogConfig.
 
         日志存储的OBS路径
 

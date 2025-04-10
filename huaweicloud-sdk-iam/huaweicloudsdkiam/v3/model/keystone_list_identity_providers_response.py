@@ -28,7 +28,7 @@ class KeystoneListIdentityProvidersResponse(SdkResponse):
     }
 
     def __init__(self, identity_providers=None, links=None):
-        """KeystoneListIdentityProvidersResponse
+        r"""KeystoneListIdentityProvidersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class KeystoneListIdentityProvidersResponse(SdkResponse):
 
     @property
     def identity_providers(self):
-        """Gets the identity_providers of this KeystoneListIdentityProvidersResponse.
+        r"""Gets the identity_providers of this KeystoneListIdentityProvidersResponse.
 
         身份提供商信息列表。
 
@@ -62,7 +62,7 @@ class KeystoneListIdentityProvidersResponse(SdkResponse):
 
     @identity_providers.setter
     def identity_providers(self, identity_providers):
-        """Sets the identity_providers of this KeystoneListIdentityProvidersResponse.
+        r"""Sets the identity_providers of this KeystoneListIdentityProvidersResponse.
 
         身份提供商信息列表。
 
@@ -73,7 +73,7 @@ class KeystoneListIdentityProvidersResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this KeystoneListIdentityProvidersResponse.
+        r"""Gets the links of this KeystoneListIdentityProvidersResponse.
 
         :return: The links of this KeystoneListIdentityProvidersResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -82,7 +82,7 @@ class KeystoneListIdentityProvidersResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneListIdentityProvidersResponse.
+        r"""Sets the links of this KeystoneListIdentityProvidersResponse.
 
         :param links: The links of this KeystoneListIdentityProvidersResponse.
         :type links: :class:`huaweicloudsdkiam.v3.Links`

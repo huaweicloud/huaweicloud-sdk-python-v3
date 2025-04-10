@@ -25,7 +25,7 @@ class CreateTerminalsBindingDesktopsRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTerminalsBindingDesktopsRequest
+        r"""CreateTerminalsBindingDesktopsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTerminalsBindingDesktopsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTerminalsBindingDesktopsRequest.
+        r"""Gets the body of this CreateTerminalsBindingDesktopsRequest.
 
         :return: The body of this CreateTerminalsBindingDesktopsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateTerminalsBindingDesktopsRequestBody`
@@ -52,7 +52,7 @@ class CreateTerminalsBindingDesktopsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTerminalsBindingDesktopsRequest.
+        r"""Sets the body of this CreateTerminalsBindingDesktopsRequest.
 
         :param body: The body of this CreateTerminalsBindingDesktopsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateTerminalsBindingDesktopsRequestBody`

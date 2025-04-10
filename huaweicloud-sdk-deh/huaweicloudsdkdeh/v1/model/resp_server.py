@@ -47,7 +47,7 @@ class RespServer:
     }
 
     def __init__(self, addresses=None, created=None, flavor=None, id=None, name=None, status=None, tenant_id=None, updated=None, user_id=None, task_state=None, image=None, metadata=None):
-        """RespServer
+        r"""RespServer
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class RespServer:
 
     @property
     def addresses(self):
-        """Gets the addresses of this RespServer.
+        r"""Gets the addresses of this RespServer.
 
         弹性云服务器的网络属性。
 
@@ -119,7 +119,7 @@ class RespServer:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this RespServer.
+        r"""Sets the addresses of this RespServer.
 
         弹性云服务器的网络属性。
 
@@ -130,7 +130,7 @@ class RespServer:
 
     @property
     def created(self):
-        """Gets the created of this RespServer.
+        r"""Gets the created of this RespServer.
 
         弹性云服务器创建时间。
 
@@ -141,7 +141,7 @@ class RespServer:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this RespServer.
+        r"""Sets the created of this RespServer.
 
         弹性云服务器创建时间。
 
@@ -152,7 +152,7 @@ class RespServer:
 
     @property
     def flavor(self):
-        """Gets the flavor of this RespServer.
+        r"""Gets the flavor of this RespServer.
 
         :return: The flavor of this RespServer.
         :rtype: :class:`huaweicloudsdkdeh.v1.RespFlavor`
@@ -161,7 +161,7 @@ class RespServer:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this RespServer.
+        r"""Sets the flavor of this RespServer.
 
         :param flavor: The flavor of this RespServer.
         :type flavor: :class:`huaweicloudsdkdeh.v1.RespFlavor`
@@ -170,7 +170,7 @@ class RespServer:
 
     @property
     def id(self):
-        """Gets the id of this RespServer.
+        r"""Gets the id of this RespServer.
 
         弹性云服务器ID，格式为UUID。
 
@@ -181,7 +181,7 @@ class RespServer:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RespServer.
+        r"""Sets the id of this RespServer.
 
         弹性云服务器ID，格式为UUID。
 
@@ -192,7 +192,7 @@ class RespServer:
 
     @property
     def name(self):
-        """Gets the name of this RespServer.
+        r"""Gets the name of this RespServer.
 
         弹性云服务器名称。
 
@@ -203,7 +203,7 @@ class RespServer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RespServer.
+        r"""Sets the name of this RespServer.
 
         弹性云服务器名称。
 
@@ -214,7 +214,7 @@ class RespServer:
 
     @property
     def status(self):
-        """Gets the status of this RespServer.
+        r"""Gets the status of this RespServer.
 
         弹性云服务器状态。  取值范围：ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PASSWORD、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE
 
@@ -225,7 +225,7 @@ class RespServer:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RespServer.
+        r"""Sets the status of this RespServer.
 
         弹性云服务器状态。  取值范围：ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PASSWORD、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE
 
@@ -236,7 +236,7 @@ class RespServer:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this RespServer.
+        r"""Gets the tenant_id of this RespServer.
 
         弹性云服务器所属租户ID，格式为UUID。
 
@@ -247,7 +247,7 @@ class RespServer:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this RespServer.
+        r"""Sets the tenant_id of this RespServer.
 
         弹性云服务器所属租户ID，格式为UUID。
 
@@ -258,7 +258,7 @@ class RespServer:
 
     @property
     def updated(self):
-        """Gets the updated of this RespServer.
+        r"""Gets the updated of this RespServer.
 
         弹性云服务器更新时间。
 
@@ -269,7 +269,7 @@ class RespServer:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this RespServer.
+        r"""Sets the updated of this RespServer.
 
         弹性云服务器更新时间。
 
@@ -280,7 +280,7 @@ class RespServer:
 
     @property
     def user_id(self):
-        """Gets the user_id of this RespServer.
+        r"""Gets the user_id of this RespServer.
 
         创建弹性云服务器的用户ID，格式为UUID。
 
@@ -291,7 +291,7 @@ class RespServer:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this RespServer.
+        r"""Sets the user_id of this RespServer.
 
         创建弹性云服务器的用户ID，格式为UUID。
 
@@ -302,7 +302,7 @@ class RespServer:
 
     @property
     def task_state(self):
-        """Gets the task_state of this RespServer.
+        r"""Gets the task_state of this RespServer.
 
         弹性云服务器当前任务的状态。
 
@@ -313,7 +313,7 @@ class RespServer:
 
     @task_state.setter
     def task_state(self, task_state):
-        """Sets the task_state of this RespServer.
+        r"""Sets the task_state of this RespServer.
 
         弹性云服务器当前任务的状态。
 
@@ -324,7 +324,7 @@ class RespServer:
 
     @property
     def image(self):
-        """Gets the image of this RespServer.
+        r"""Gets the image of this RespServer.
 
         :return: The image of this RespServer.
         :rtype: :class:`huaweicloudsdkdeh.v1.RespImage`
@@ -333,7 +333,7 @@ class RespServer:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this RespServer.
+        r"""Sets the image of this RespServer.
 
         :param image: The image of this RespServer.
         :type image: :class:`huaweicloudsdkdeh.v1.RespImage`
@@ -342,7 +342,7 @@ class RespServer:
 
     @property
     def metadata(self):
-        """Gets the metadata of this RespServer.
+        r"""Gets the metadata of this RespServer.
 
         :return: The metadata of this RespServer.
         :rtype: :class:`huaweicloudsdkdeh.v1.RespMetadata`
@@ -351,7 +351,7 @@ class RespServer:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this RespServer.
+        r"""Sets the metadata of this RespServer.
 
         :param metadata: The metadata of this RespServer.
         :type metadata: :class:`huaweicloudsdkdeh.v1.RespMetadata`

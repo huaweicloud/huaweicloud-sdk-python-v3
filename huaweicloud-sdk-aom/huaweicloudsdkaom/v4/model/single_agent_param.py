@@ -27,7 +27,7 @@ class SingleAgentParam:
     }
 
     def __init__(self, agent_id=None, inner_ip=None):
-        """SingleAgentParam
+        r"""SingleAgentParam
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SingleAgentParam:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this SingleAgentParam.
+        r"""Gets the agent_id of this SingleAgentParam.
 
         agent ID唯一值。
 
@@ -59,7 +59,7 @@ class SingleAgentParam:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this SingleAgentParam.
+        r"""Sets the agent_id of this SingleAgentParam.
 
         agent ID唯一值。
 
@@ -70,7 +70,7 @@ class SingleAgentParam:
 
     @property
     def inner_ip(self):
-        """Gets the inner_ip of this SingleAgentParam.
+        r"""Gets the inner_ip of this SingleAgentParam.
 
         主机ip。
 
@@ -81,7 +81,7 @@ class SingleAgentParam:
 
     @inner_ip.setter
     def inner_ip(self, inner_ip):
-        """Sets the inner_ip of this SingleAgentParam.
+        r"""Sets the inner_ip of this SingleAgentParam.
 
         主机ip。
 

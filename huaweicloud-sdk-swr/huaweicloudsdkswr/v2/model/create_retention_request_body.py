@@ -27,7 +27,7 @@ class CreateRetentionRequestBody:
     }
 
     def __init__(self, algorithm=None, rules=None):
-        """CreateRetentionRequestBody
+        r"""CreateRetentionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateRetentionRequestBody:
 
     @property
     def algorithm(self):
-        """Gets the algorithm of this CreateRetentionRequestBody.
+        r"""Gets the algorithm of this CreateRetentionRequestBody.
 
         回收规则匹配策略，固定为\"or\"
 
@@ -59,7 +59,7 @@ class CreateRetentionRequestBody:
 
     @algorithm.setter
     def algorithm(self, algorithm):
-        """Sets the algorithm of this CreateRetentionRequestBody.
+        r"""Sets the algorithm of this CreateRetentionRequestBody.
 
         回收规则匹配策略，固定为\"or\"
 
@@ -70,7 +70,7 @@ class CreateRetentionRequestBody:
 
     @property
     def rules(self):
-        """Gets the rules of this CreateRetentionRequestBody.
+        r"""Gets the rules of this CreateRetentionRequestBody.
 
         镜像老化规则
 
@@ -81,7 +81,7 @@ class CreateRetentionRequestBody:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this CreateRetentionRequestBody.
+        r"""Sets the rules of this CreateRetentionRequestBody.
 
         镜像老化规则
 

@@ -29,7 +29,7 @@ class UpdateAccessModeReq:
     }
 
     def __init__(self, access_mode=None, dedicated_cidrs=None, apply_shared_vpc_dedicated_param=None):
-        """UpdateAccessModeReq
+        r"""UpdateAccessModeReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateAccessModeReq:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this UpdateAccessModeReq.
+        r"""Gets the access_mode of this UpdateAccessModeReq.
 
         接入模式。 - INTERNET：互联网接入。 - DEDICATED：专线接入。 - BOTH：代表两种接入方式都支持。
 
@@ -68,7 +68,7 @@ class UpdateAccessModeReq:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this UpdateAccessModeReq.
+        r"""Sets the access_mode of this UpdateAccessModeReq.
 
         接入模式。 - INTERNET：互联网接入。 - DEDICATED：专线接入。 - BOTH：代表两种接入方式都支持。
 
@@ -79,7 +79,7 @@ class UpdateAccessModeReq:
 
     @property
     def dedicated_cidrs(self):
-        """Gets the dedicated_cidrs of this UpdateAccessModeReq.
+        r"""Gets the dedicated_cidrs of this UpdateAccessModeReq.
 
         专线接入网段列表，多个网段信息用分号隔开，列表长度不超过5。
 
@@ -90,7 +90,7 @@ class UpdateAccessModeReq:
 
     @dedicated_cidrs.setter
     def dedicated_cidrs(self, dedicated_cidrs):
-        """Sets the dedicated_cidrs of this UpdateAccessModeReq.
+        r"""Sets the dedicated_cidrs of this UpdateAccessModeReq.
 
         专线接入网段列表，多个网段信息用分号隔开，列表长度不超过5。
 
@@ -101,7 +101,7 @@ class UpdateAccessModeReq:
 
     @property
     def apply_shared_vpc_dedicated_param(self):
-        """Gets the apply_shared_vpc_dedicated_param of this UpdateAccessModeReq.
+        r"""Gets the apply_shared_vpc_dedicated_param of this UpdateAccessModeReq.
 
         :return: The apply_shared_vpc_dedicated_param of this UpdateAccessModeReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplySharedVpcDedicatedParam`
@@ -110,7 +110,7 @@ class UpdateAccessModeReq:
 
     @apply_shared_vpc_dedicated_param.setter
     def apply_shared_vpc_dedicated_param(self, apply_shared_vpc_dedicated_param):
-        """Sets the apply_shared_vpc_dedicated_param of this UpdateAccessModeReq.
+        r"""Sets the apply_shared_vpc_dedicated_param of this UpdateAccessModeReq.
 
         :param apply_shared_vpc_dedicated_param: The apply_shared_vpc_dedicated_param of this UpdateAccessModeReq.
         :type apply_shared_vpc_dedicated_param: :class:`huaweicloudsdkworkspace.v2.ApplySharedVpcDedicatedParam`

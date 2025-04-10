@@ -27,7 +27,7 @@ class ShowMetricValueRequest:
     }
 
     def __init__(self, asset_id=None, body=None):
-        """ShowMetricValueRequest
+        r"""ShowMetricValueRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowMetricValueRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ShowMetricValueRequest.
+        r"""Gets the asset_id of this ShowMetricValueRequest.
 
         资产ID
 
@@ -60,7 +60,7 @@ class ShowMetricValueRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ShowMetricValueRequest.
+        r"""Sets the asset_id of this ShowMetricValueRequest.
 
         资产ID
 
@@ -71,7 +71,7 @@ class ShowMetricValueRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowMetricValueRequest.
+        r"""Gets the body of this ShowMetricValueRequest.
 
         :return: The body of this ShowMetricValueRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.GetMetricsValue`
@@ -80,7 +80,7 @@ class ShowMetricValueRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowMetricValueRequest.
+        r"""Sets the body of this ShowMetricValueRequest.
 
         :param body: The body of this ShowMetricValueRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.GetMetricsValue`

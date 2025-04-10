@@ -29,7 +29,7 @@ class EdgeContentRuleRsp:
     }
 
     def __init__(self, app_id=None, products=None, rule_actions=None):
-        """EdgeContentRuleRsp
+        r"""EdgeContentRuleRsp
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class EdgeContentRuleRsp:
 
     @property
     def app_id(self):
-        """Gets the app_id of this EdgeContentRuleRsp.
+        r"""Gets the app_id of this EdgeContentRuleRsp.
 
         Edge中的资源空间Id
 
@@ -65,7 +65,7 @@ class EdgeContentRuleRsp:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this EdgeContentRuleRsp.
+        r"""Sets the app_id of this EdgeContentRuleRsp.
 
         Edge中的资源空间Id
 
@@ -76,7 +76,7 @@ class EdgeContentRuleRsp:
 
     @property
     def products(self):
-        """Gets the products of this EdgeContentRuleRsp.
+        r"""Gets the products of this EdgeContentRuleRsp.
 
         Edge中某资源空间Id下的产品列表
 
@@ -87,7 +87,7 @@ class EdgeContentRuleRsp:
 
     @products.setter
     def products(self, products):
-        """Sets the products of this EdgeContentRuleRsp.
+        r"""Sets the products of this EdgeContentRuleRsp.
 
         Edge中某资源空间Id下的产品列表
 
@@ -98,7 +98,7 @@ class EdgeContentRuleRsp:
 
     @property
     def rule_actions(self):
-        """Gets the rule_actions of this EdgeContentRuleRsp.
+        r"""Gets the rule_actions of this EdgeContentRuleRsp.
 
         Edge中rule_id和action_id列表
 
@@ -109,7 +109,7 @@ class EdgeContentRuleRsp:
 
     @rule_actions.setter
     def rule_actions(self, rule_actions):
-        """Sets the rule_actions of this EdgeContentRuleRsp.
+        r"""Sets the rule_actions of this EdgeContentRuleRsp.
 
         Edge中rule_id和action_id列表
 

@@ -28,7 +28,7 @@ class RecognizePassportResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizePassportResponse
+        r"""RecognizePassportResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizePassportResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizePassportResponse.
+        r"""Gets the result of this RecognizePassportResponse.
 
         :return: The result of this RecognizePassportResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.PassportResult`
@@ -60,7 +60,7 @@ class RecognizePassportResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizePassportResponse.
+        r"""Sets the result of this RecognizePassportResponse.
 
         :param result: The result of this RecognizePassportResponse.
         :type result: :class:`huaweicloudsdkocr.v1.PassportResult`
@@ -69,7 +69,7 @@ class RecognizePassportResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizePassportResponse.
+        r"""Gets the x_request_id of this RecognizePassportResponse.
 
         :return: The x_request_id of this RecognizePassportResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizePassportResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizePassportResponse.
+        r"""Sets the x_request_id of this RecognizePassportResponse.
 
         :param x_request_id: The x_request_id of this RecognizePassportResponse.
         :type x_request_id: str

@@ -27,7 +27,7 @@ class DeleteTrustedIpAddressRequest:
     }
 
     def __init__(self, id=None, ip_id=None):
-        """DeleteTrustedIpAddressRequest
+        r"""DeleteTrustedIpAddressRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteTrustedIpAddressRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteTrustedIpAddressRequest.
+        r"""Gets the id of this DeleteTrustedIpAddressRequest.
 
         ip的id
 
@@ -59,7 +59,7 @@ class DeleteTrustedIpAddressRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteTrustedIpAddressRequest.
+        r"""Sets the id of this DeleteTrustedIpAddressRequest.
 
         ip的id
 
@@ -70,7 +70,7 @@ class DeleteTrustedIpAddressRequest:
 
     @property
     def ip_id(self):
-        """Gets the ip_id of this DeleteTrustedIpAddressRequest.
+        r"""Gets the ip_id of this DeleteTrustedIpAddressRequest.
 
         ip的id
 
@@ -81,7 +81,7 @@ class DeleteTrustedIpAddressRequest:
 
     @ip_id.setter
     def ip_id(self, ip_id):
-        """Sets the ip_id of this DeleteTrustedIpAddressRequest.
+        r"""Sets the ip_id of this DeleteTrustedIpAddressRequest.
 
         ip的id
 

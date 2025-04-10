@@ -35,7 +35,7 @@ class QueryUserSelectedObjectInfoReq:
     }
 
     def __init__(self, db_name=None, schema_name=None, table_name=None, offset=None, limit=None, has_column_info=None):
-        """QueryUserSelectedObjectInfoReq
+        r"""QueryUserSelectedObjectInfoReq
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QueryUserSelectedObjectInfoReq:
 
     @property
     def db_name(self):
-        """Gets the db_name of this QueryUserSelectedObjectInfoReq.
+        r"""Gets the db_name of this QueryUserSelectedObjectInfoReq.
 
         库名。
 
@@ -89,7 +89,7 @@ class QueryUserSelectedObjectInfoReq:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this QueryUserSelectedObjectInfoReq.
+        r"""Sets the db_name of this QueryUserSelectedObjectInfoReq.
 
         库名。
 
@@ -100,7 +100,7 @@ class QueryUserSelectedObjectInfoReq:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this QueryUserSelectedObjectInfoReq.
+        r"""Gets the schema_name of this QueryUserSelectedObjectInfoReq.
 
         模式名。
 
@@ -111,7 +111,7 @@ class QueryUserSelectedObjectInfoReq:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this QueryUserSelectedObjectInfoReq.
+        r"""Sets the schema_name of this QueryUserSelectedObjectInfoReq.
 
         模式名。
 
@@ -122,7 +122,7 @@ class QueryUserSelectedObjectInfoReq:
 
     @property
     def table_name(self):
-        """Gets the table_name of this QueryUserSelectedObjectInfoReq.
+        r"""Gets the table_name of this QueryUserSelectedObjectInfoReq.
 
         表名。
 
@@ -133,7 +133,7 @@ class QueryUserSelectedObjectInfoReq:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this QueryUserSelectedObjectInfoReq.
+        r"""Sets the table_name of this QueryUserSelectedObjectInfoReq.
 
         表名。
 
@@ -144,7 +144,7 @@ class QueryUserSelectedObjectInfoReq:
 
     @property
     def offset(self):
-        """Gets the offset of this QueryUserSelectedObjectInfoReq.
+        r"""Gets the offset of this QueryUserSelectedObjectInfoReq.
 
         偏移量，表示从此偏移量开始查询， offset 大于等于 0。默认为0
 
@@ -155,7 +155,7 @@ class QueryUserSelectedObjectInfoReq:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this QueryUserSelectedObjectInfoReq.
+        r"""Sets the offset of this QueryUserSelectedObjectInfoReq.
 
         偏移量，表示从此偏移量开始查询， offset 大于等于 0。默认为0
 
@@ -166,7 +166,7 @@ class QueryUserSelectedObjectInfoReq:
 
     @property
     def limit(self):
-        """Gets the limit of this QueryUserSelectedObjectInfoReq.
+        r"""Gets the limit of this QueryUserSelectedObjectInfoReq.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 
@@ -177,7 +177,7 @@ class QueryUserSelectedObjectInfoReq:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QueryUserSelectedObjectInfoReq.
+        r"""Sets the limit of this QueryUserSelectedObjectInfoReq.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 
@@ -188,7 +188,7 @@ class QueryUserSelectedObjectInfoReq:
 
     @property
     def has_column_info(self):
-        """Gets the has_column_info of this QueryUserSelectedObjectInfoReq.
+        r"""Gets the has_column_info of this QueryUserSelectedObjectInfoReq.
 
         是否有映射。
 
@@ -199,7 +199,7 @@ class QueryUserSelectedObjectInfoReq:
 
     @has_column_info.setter
     def has_column_info(self, has_column_info):
-        """Sets the has_column_info of this QueryUserSelectedObjectInfoReq.
+        r"""Sets the has_column_info of this QueryUserSelectedObjectInfoReq.
 
         是否有映射。
 

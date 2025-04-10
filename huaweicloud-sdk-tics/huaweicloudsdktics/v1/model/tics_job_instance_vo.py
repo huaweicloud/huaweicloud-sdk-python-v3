@@ -45,7 +45,7 @@ class TicsJobInstanceVo:
     }
 
     def __init__(self, end_time=None, ext=None, id=None, is_single_predict=None, job_instance_type=None, job_name=None, job_partner=None, result_ext=None, round_id=None, start_time=None, status=None):
-        """TicsJobInstanceVo
+        r"""TicsJobInstanceVo
 
         The model defined in huaweicloud sdk
 
@@ -109,7 +109,7 @@ class TicsJobInstanceVo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TicsJobInstanceVo.
+        r"""Gets the end_time of this TicsJobInstanceVo.
 
         结束时间
 
@@ -120,7 +120,7 @@ class TicsJobInstanceVo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TicsJobInstanceVo.
+        r"""Sets the end_time of this TicsJobInstanceVo.
 
         结束时间
 
@@ -131,7 +131,7 @@ class TicsJobInstanceVo:
 
     @property
     def ext(self):
-        """Gets the ext of this TicsJobInstanceVo.
+        r"""Gets the ext of this TicsJobInstanceVo.
 
         参数等额外信息
 
@@ -142,7 +142,7 @@ class TicsJobInstanceVo:
 
     @ext.setter
     def ext(self, ext):
-        """Sets the ext of this TicsJobInstanceVo.
+        r"""Sets the ext of this TicsJobInstanceVo.
 
         参数等额外信息
 
@@ -153,7 +153,7 @@ class TicsJobInstanceVo:
 
     @property
     def id(self):
-        """Gets the id of this TicsJobInstanceVo.
+        r"""Gets the id of this TicsJobInstanceVo.
 
         实例id
 
@@ -164,7 +164,7 @@ class TicsJobInstanceVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TicsJobInstanceVo.
+        r"""Sets the id of this TicsJobInstanceVo.
 
         实例id
 
@@ -175,7 +175,7 @@ class TicsJobInstanceVo:
 
     @property
     def is_single_predict(self):
-        """Gets the is_single_predict of this TicsJobInstanceVo.
+        r"""Gets the is_single_predict of this TicsJobInstanceVo.
 
         单方还是双方预测
 
@@ -186,7 +186,7 @@ class TicsJobInstanceVo:
 
     @is_single_predict.setter
     def is_single_predict(self, is_single_predict):
-        """Sets the is_single_predict of this TicsJobInstanceVo.
+        r"""Sets the is_single_predict of this TicsJobInstanceVo.
 
         单方还是双方预测
 
@@ -197,7 +197,7 @@ class TicsJobInstanceVo:
 
     @property
     def job_instance_type(self):
-        """Gets the job_instance_type of this TicsJobInstanceVo.
+        r"""Gets the job_instance_type of this TicsJobInstanceVo.
 
         作业类型，HFL.横向联邦，SQL.联邦分析，VFL_EVALUATE.联邦评估，VFL_FEATURE_SELECTION.特征选择，VFL_ID_TRUNCATION.Id截断，VFL_PREDICT.联邦预测，VFL_SAMPLE_ALIGNMENT.样本对齐，VFL_TRAIN.联邦训练
 
@@ -208,7 +208,7 @@ class TicsJobInstanceVo:
 
     @job_instance_type.setter
     def job_instance_type(self, job_instance_type):
-        """Sets the job_instance_type of this TicsJobInstanceVo.
+        r"""Sets the job_instance_type of this TicsJobInstanceVo.
 
         作业类型，HFL.横向联邦，SQL.联邦分析，VFL_EVALUATE.联邦评估，VFL_FEATURE_SELECTION.特征选择，VFL_ID_TRUNCATION.Id截断，VFL_PREDICT.联邦预测，VFL_SAMPLE_ALIGNMENT.样本对齐，VFL_TRAIN.联邦训练
 
@@ -219,7 +219,7 @@ class TicsJobInstanceVo:
 
     @property
     def job_name(self):
-        """Gets the job_name of this TicsJobInstanceVo.
+        r"""Gets the job_name of this TicsJobInstanceVo.
 
         作业名称
 
@@ -230,7 +230,7 @@ class TicsJobInstanceVo:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this TicsJobInstanceVo.
+        r"""Sets the job_name of this TicsJobInstanceVo.
 
         作业名称
 
@@ -241,7 +241,7 @@ class TicsJobInstanceVo:
 
     @property
     def job_partner(self):
-        """Gets the job_partner of this TicsJobInstanceVo.
+        r"""Gets the job_partner of this TicsJobInstanceVo.
 
         参与方信息
 
@@ -252,7 +252,7 @@ class TicsJobInstanceVo:
 
     @job_partner.setter
     def job_partner(self, job_partner):
-        """Sets the job_partner of this TicsJobInstanceVo.
+        r"""Sets the job_partner of this TicsJobInstanceVo.
 
         参与方信息
 
@@ -263,7 +263,7 @@ class TicsJobInstanceVo:
 
     @property
     def result_ext(self):
-        """Gets the result_ext of this TicsJobInstanceVo.
+        r"""Gets the result_ext of this TicsJobInstanceVo.
 
         参数等额外信息
 
@@ -274,7 +274,7 @@ class TicsJobInstanceVo:
 
     @result_ext.setter
     def result_ext(self, result_ext):
-        """Sets the result_ext of this TicsJobInstanceVo.
+        r"""Sets the result_ext of this TicsJobInstanceVo.
 
         参数等额外信息
 
@@ -285,7 +285,7 @@ class TicsJobInstanceVo:
 
     @property
     def round_id(self):
-        """Gets the round_id of this TicsJobInstanceVo.
+        r"""Gets the round_id of this TicsJobInstanceVo.
 
         作业执行总轮数
 
@@ -296,7 +296,7 @@ class TicsJobInstanceVo:
 
     @round_id.setter
     def round_id(self, round_id):
-        """Sets the round_id of this TicsJobInstanceVo.
+        r"""Sets the round_id of this TicsJobInstanceVo.
 
         作业执行总轮数
 
@@ -307,7 +307,7 @@ class TicsJobInstanceVo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TicsJobInstanceVo.
+        r"""Gets the start_time of this TicsJobInstanceVo.
 
         开始时间
 
@@ -318,7 +318,7 @@ class TicsJobInstanceVo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TicsJobInstanceVo.
+        r"""Sets the start_time of this TicsJobInstanceVo.
 
         开始时间
 
@@ -329,7 +329,7 @@ class TicsJobInstanceVo:
 
     @property
     def status(self):
-        """Gets the status of this TicsJobInstanceVo.
+        r"""Gets the status of this TicsJobInstanceVo.
 
         作业、任务状态，作业任务状态，NEW.新建,SUBMITING.提交中,ACCEPTED.已接收,DEPLOYING.部署中,RUNNING.运行中,SUCCEEDED.成功,FAILED.失败,TERMINATED.中止,TERMINATING.中止中,PENDING.等待中
 
@@ -340,7 +340,7 @@ class TicsJobInstanceVo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TicsJobInstanceVo.
+        r"""Sets the status of this TicsJobInstanceVo.
 
         作业、任务状态，作业任务状态，NEW.新建,SUBMITING.提交中,ACCEPTED.已接收,DEPLOYING.部署中,RUNNING.运行中,SUCCEEDED.成功,FAILED.失败,TERMINATED.中止,TERMINATING.中止中,PENDING.等待中
 

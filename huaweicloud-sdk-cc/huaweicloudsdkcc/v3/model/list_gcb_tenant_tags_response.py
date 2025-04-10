@@ -30,7 +30,7 @@ class ListGcbTenantTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, total_count=None, request_id=None):
-        """ListGcbTenantTagsResponse
+        r"""ListGcbTenantTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListGcbTenantTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListGcbTenantTagsResponse.
+        r"""Gets the tags of this ListGcbTenantTagsResponse.
 
         标签列表。
 
@@ -69,7 +69,7 @@ class ListGcbTenantTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListGcbTenantTagsResponse.
+        r"""Sets the tags of this ListGcbTenantTagsResponse.
 
         标签列表。
 
@@ -80,7 +80,7 @@ class ListGcbTenantTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListGcbTenantTagsResponse.
+        r"""Gets the total_count of this ListGcbTenantTagsResponse.
 
         总记录数。
 
@@ -91,7 +91,7 @@ class ListGcbTenantTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListGcbTenantTagsResponse.
+        r"""Sets the total_count of this ListGcbTenantTagsResponse.
 
         总记录数。
 
@@ -102,7 +102,7 @@ class ListGcbTenantTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGcbTenantTagsResponse.
+        r"""Gets the request_id of this ListGcbTenantTagsResponse.
 
         请求ID。
 
@@ -113,7 +113,7 @@ class ListGcbTenantTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGcbTenantTagsResponse.
+        r"""Sets the request_id of this ListGcbTenantTagsResponse.
 
         请求ID。
 

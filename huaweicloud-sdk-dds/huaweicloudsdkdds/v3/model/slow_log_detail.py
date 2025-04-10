@@ -47,7 +47,7 @@ class SlowLogDetail:
     }
 
     def __init__(self, node_name=None, node_id=None, whole_message=None, operate_type=None, cost_time=None, lock_time=None, docs_returned=None, docs_scanned=None, database=None, collection=None, log_time=None, line_num=None):
-        """SlowLogDetail
+        r"""SlowLogDetail
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class SlowLogDetail:
 
     @property
     def node_name(self):
-        """Gets the node_name of this SlowLogDetail.
+        r"""Gets the node_name of this SlowLogDetail.
 
         节点名称。
 
@@ -119,7 +119,7 @@ class SlowLogDetail:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this SlowLogDetail.
+        r"""Sets the node_name of this SlowLogDetail.
 
         节点名称。
 
@@ -130,7 +130,7 @@ class SlowLogDetail:
 
     @property
     def node_id(self):
-        """Gets the node_id of this SlowLogDetail.
+        r"""Gets the node_id of this SlowLogDetail.
 
         节点ID。
 
@@ -141,7 +141,7 @@ class SlowLogDetail:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this SlowLogDetail.
+        r"""Sets the node_id of this SlowLogDetail.
 
         节点ID。
 
@@ -152,7 +152,7 @@ class SlowLogDetail:
 
     @property
     def whole_message(self):
-        """Gets the whole_message of this SlowLogDetail.
+        r"""Gets the whole_message of this SlowLogDetail.
 
         执行语句。
 
@@ -163,7 +163,7 @@ class SlowLogDetail:
 
     @whole_message.setter
     def whole_message(self, whole_message):
-        """Sets the whole_message of this SlowLogDetail.
+        r"""Sets the whole_message of this SlowLogDetail.
 
         执行语句。
 
@@ -174,7 +174,7 @@ class SlowLogDetail:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this SlowLogDetail.
+        r"""Gets the operate_type of this SlowLogDetail.
 
         语句类型。
 
@@ -185,7 +185,7 @@ class SlowLogDetail:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this SlowLogDetail.
+        r"""Sets the operate_type of this SlowLogDetail.
 
         语句类型。
 
@@ -196,7 +196,7 @@ class SlowLogDetail:
 
     @property
     def cost_time(self):
-        """Gets the cost_time of this SlowLogDetail.
+        r"""Gets the cost_time of this SlowLogDetail.
 
         执行时间。单位：ms
 
@@ -207,7 +207,7 @@ class SlowLogDetail:
 
     @cost_time.setter
     def cost_time(self, cost_time):
-        """Sets the cost_time of this SlowLogDetail.
+        r"""Sets the cost_time of this SlowLogDetail.
 
         执行时间。单位：ms
 
@@ -218,7 +218,7 @@ class SlowLogDetail:
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this SlowLogDetail.
+        r"""Gets the lock_time of this SlowLogDetail.
 
         等待锁时间。单位：us
 
@@ -229,7 +229,7 @@ class SlowLogDetail:
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this SlowLogDetail.
+        r"""Sets the lock_time of this SlowLogDetail.
 
         等待锁时间。单位：us
 
@@ -240,7 +240,7 @@ class SlowLogDetail:
 
     @property
     def docs_returned(self):
-        """Gets the docs_returned of this SlowLogDetail.
+        r"""Gets the docs_returned of this SlowLogDetail.
 
         返回的文档数。
 
@@ -251,7 +251,7 @@ class SlowLogDetail:
 
     @docs_returned.setter
     def docs_returned(self, docs_returned):
-        """Sets the docs_returned of this SlowLogDetail.
+        r"""Sets the docs_returned of this SlowLogDetail.
 
         返回的文档数。
 
@@ -262,7 +262,7 @@ class SlowLogDetail:
 
     @property
     def docs_scanned(self):
-        """Gets the docs_scanned of this SlowLogDetail.
+        r"""Gets the docs_scanned of this SlowLogDetail.
 
         扫描的文档数。
 
@@ -273,7 +273,7 @@ class SlowLogDetail:
 
     @docs_scanned.setter
     def docs_scanned(self, docs_scanned):
-        """Sets the docs_scanned of this SlowLogDetail.
+        r"""Sets the docs_scanned of this SlowLogDetail.
 
         扫描的文档数。
 
@@ -284,7 +284,7 @@ class SlowLogDetail:
 
     @property
     def database(self):
-        """Gets the database of this SlowLogDetail.
+        r"""Gets the database of this SlowLogDetail.
 
         日志所属的数据库库名。
 
@@ -295,7 +295,7 @@ class SlowLogDetail:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this SlowLogDetail.
+        r"""Sets the database of this SlowLogDetail.
 
         日志所属的数据库库名。
 
@@ -306,7 +306,7 @@ class SlowLogDetail:
 
     @property
     def collection(self):
-        """Gets the collection of this SlowLogDetail.
+        r"""Gets the collection of this SlowLogDetail.
 
         日志所属的数据库表名。
 
@@ -317,7 +317,7 @@ class SlowLogDetail:
 
     @collection.setter
     def collection(self, collection):
-        """Sets the collection of this SlowLogDetail.
+        r"""Sets the collection of this SlowLogDetail.
 
         日志所属的数据库表名。
 
@@ -328,7 +328,7 @@ class SlowLogDetail:
 
     @property
     def log_time(self):
-        """Gets the log_time of this SlowLogDetail.
+        r"""Gets the log_time of this SlowLogDetail.
 
         日志产生时间，UTC时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -339,7 +339,7 @@ class SlowLogDetail:
 
     @log_time.setter
     def log_time(self, log_time):
-        """Sets the log_time of this SlowLogDetail.
+        r"""Sets the log_time of this SlowLogDetail.
 
         日志产生时间，UTC时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -350,7 +350,7 @@ class SlowLogDetail:
 
     @property
     def line_num(self):
-        """Gets the line_num of this SlowLogDetail.
+        r"""Gets the line_num of this SlowLogDetail.
 
         日志单行序列号
 
@@ -361,7 +361,7 @@ class SlowLogDetail:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this SlowLogDetail.
+        r"""Sets the line_num of this SlowLogDetail.
 
         日志单行序列号
 

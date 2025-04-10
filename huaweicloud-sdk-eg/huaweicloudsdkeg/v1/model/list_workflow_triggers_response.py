@@ -30,7 +30,7 @@ class ListWorkflowTriggersResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListWorkflowTriggersResponse
+        r"""ListWorkflowTriggersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListWorkflowTriggersResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListWorkflowTriggersResponse.
+        r"""Gets the total of this ListWorkflowTriggersResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListWorkflowTriggersResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListWorkflowTriggersResponse.
+        r"""Sets the total of this ListWorkflowTriggersResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListWorkflowTriggersResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListWorkflowTriggersResponse.
+        r"""Gets the size of this ListWorkflowTriggersResponse.
 
         本页数量
 
@@ -91,7 +91,7 @@ class ListWorkflowTriggersResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListWorkflowTriggersResponse.
+        r"""Sets the size of this ListWorkflowTriggersResponse.
 
         本页数量
 
@@ -102,7 +102,7 @@ class ListWorkflowTriggersResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListWorkflowTriggersResponse.
+        r"""Gets the items of this ListWorkflowTriggersResponse.
 
         对象列表
 
@@ -113,7 +113,7 @@ class ListWorkflowTriggersResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListWorkflowTriggersResponse.
+        r"""Sets the items of this ListWorkflowTriggersResponse.
 
         对象列表
 

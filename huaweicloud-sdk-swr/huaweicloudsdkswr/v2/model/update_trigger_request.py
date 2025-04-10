@@ -31,7 +31,7 @@ class UpdateTriggerRequest:
     }
 
     def __init__(self, namespace=None, repository=None, trigger=None, body=None):
-        """UpdateTriggerRequest
+        r"""UpdateTriggerRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateTriggerRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this UpdateTriggerRequest.
+        r"""Gets the namespace of this UpdateTriggerRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -72,7 +72,7 @@ class UpdateTriggerRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this UpdateTriggerRequest.
+        r"""Sets the namespace of this UpdateTriggerRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -83,7 +83,7 @@ class UpdateTriggerRequest:
 
     @property
     def repository(self):
-        """Gets the repository of this UpdateTriggerRequest.
+        r"""Gets the repository of this UpdateTriggerRequest.
 
         镜像仓库名称
 
@@ -94,7 +94,7 @@ class UpdateTriggerRequest:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this UpdateTriggerRequest.
+        r"""Sets the repository of this UpdateTriggerRequest.
 
         镜像仓库名称
 
@@ -105,7 +105,7 @@ class UpdateTriggerRequest:
 
     @property
     def trigger(self):
-        """Gets the trigger of this UpdateTriggerRequest.
+        r"""Gets the trigger of this UpdateTriggerRequest.
 
         触发器名称
 
@@ -116,7 +116,7 @@ class UpdateTriggerRequest:
 
     @trigger.setter
     def trigger(self, trigger):
-        """Sets the trigger of this UpdateTriggerRequest.
+        r"""Sets the trigger of this UpdateTriggerRequest.
 
         触发器名称
 
@@ -127,7 +127,7 @@ class UpdateTriggerRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTriggerRequest.
+        r"""Gets the body of this UpdateTriggerRequest.
 
         :return: The body of this UpdateTriggerRequest.
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateTriggerRequestBody`
@@ -136,7 +136,7 @@ class UpdateTriggerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTriggerRequest.
+        r"""Sets the body of this UpdateTriggerRequest.
 
         :param body: The body of this UpdateTriggerRequest.
         :type body: :class:`huaweicloudsdkswr.v2.UpdateTriggerRequestBody`

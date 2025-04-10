@@ -29,7 +29,7 @@ class ListInstanceNodesInfoRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, datastore_type=None):
-        """ListInstanceNodesInfoRequest
+        r"""ListInstanceNodesInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListInstanceNodesInfoRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListInstanceNodesInfoRequest.
+        r"""Gets the x_language of this ListInstanceNodesInfoRequest.
 
         语言
 
@@ -66,7 +66,7 @@ class ListInstanceNodesInfoRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListInstanceNodesInfoRequest.
+        r"""Sets the x_language of this ListInstanceNodesInfoRequest.
 
         语言
 
@@ -77,7 +77,7 @@ class ListInstanceNodesInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceNodesInfoRequest.
+        r"""Gets the instance_id of this ListInstanceNodesInfoRequest.
 
         实例ID
 
@@ -88,7 +88,7 @@ class ListInstanceNodesInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceNodesInfoRequest.
+        r"""Sets the instance_id of this ListInstanceNodesInfoRequest.
 
         实例ID
 
@@ -99,7 +99,7 @@ class ListInstanceNodesInfoRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListInstanceNodesInfoRequest.
+        r"""Gets the datastore_type of this ListInstanceNodesInfoRequest.
 
         数据库类型
 
@@ -110,7 +110,7 @@ class ListInstanceNodesInfoRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListInstanceNodesInfoRequest.
+        r"""Sets the datastore_type of this ListInstanceNodesInfoRequest.
 
         数据库类型
 

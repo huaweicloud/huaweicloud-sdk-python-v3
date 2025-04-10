@@ -29,7 +29,7 @@ class UpdateBackupOffsitePolicyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateBackupOffsitePolicyRequest
+        r"""UpdateBackupOffsitePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateBackupOffsitePolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateBackupOffsitePolicyRequest.
+        r"""Gets the x_language of this UpdateBackupOffsitePolicyRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -67,7 +67,7 @@ class UpdateBackupOffsitePolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateBackupOffsitePolicyRequest.
+        r"""Sets the x_language of this UpdateBackupOffsitePolicyRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -78,7 +78,7 @@ class UpdateBackupOffsitePolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateBackupOffsitePolicyRequest.
+        r"""Gets the instance_id of this UpdateBackupOffsitePolicyRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -89,7 +89,7 @@ class UpdateBackupOffsitePolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateBackupOffsitePolicyRequest.
+        r"""Sets the instance_id of this UpdateBackupOffsitePolicyRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -100,7 +100,7 @@ class UpdateBackupOffsitePolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateBackupOffsitePolicyRequest.
+        r"""Gets the body of this UpdateBackupOffsitePolicyRequest.
 
         :return: The body of this UpdateBackupOffsitePolicyRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateBackupOffsitePolicyRequestBody`
@@ -109,7 +109,7 @@ class UpdateBackupOffsitePolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBackupOffsitePolicyRequest.
+        r"""Sets the body of this UpdateBackupOffsitePolicyRequest.
 
         :param body: The body of this UpdateBackupOffsitePolicyRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.UpdateBackupOffsitePolicyRequestBody`

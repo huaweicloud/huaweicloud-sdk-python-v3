@@ -29,7 +29,7 @@ class EsPublicipsResource:
     }
 
     def __init__(self, publicip_id=None, publicip_address=None, ip_version=None):
-        """EsPublicipsResource
+        r"""EsPublicipsResource
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EsPublicipsResource:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this EsPublicipsResource.
+        r"""Gets the publicip_id of this EsPublicipsResource.
 
         弹性公网ip配置id。
 
@@ -68,7 +68,7 @@ class EsPublicipsResource:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this EsPublicipsResource.
+        r"""Sets the publicip_id of this EsPublicipsResource.
 
         弹性公网ip配置id。
 
@@ -79,7 +79,7 @@ class EsPublicipsResource:
 
     @property
     def publicip_address(self):
-        """Gets the publicip_address of this EsPublicipsResource.
+        r"""Gets the publicip_address of this EsPublicipsResource.
 
         IP地址。
 
@@ -90,7 +90,7 @@ class EsPublicipsResource:
 
     @publicip_address.setter
     def publicip_address(self, publicip_address):
-        """Sets the publicip_address of this EsPublicipsResource.
+        r"""Sets the publicip_address of this EsPublicipsResource.
 
         IP地址。
 
@@ -101,7 +101,7 @@ class EsPublicipsResource:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this EsPublicipsResource.
+        r"""Gets the ip_version of this EsPublicipsResource.
 
         IP版本信息。 - 4：表示IPv4。 - 6：表示IPv6。
 
@@ -112,7 +112,7 @@ class EsPublicipsResource:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this EsPublicipsResource.
+        r"""Sets the ip_version of this EsPublicipsResource.
 
         IP版本信息。 - 4：表示IPv4。 - 6：表示IPv6。
 

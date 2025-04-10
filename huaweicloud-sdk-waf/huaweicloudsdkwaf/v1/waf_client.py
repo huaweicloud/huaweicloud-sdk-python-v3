@@ -34,7 +34,7 @@ class WafClient(Client):
         return client_builder
 
     def apply_certificate_to_host(self, request):
-        """绑定证书到域名
+        r"""绑定证书到域名
 
         绑定证书到域名
         
@@ -103,7 +103,7 @@ class WafClient(Client):
         return http_info
 
     def change_prepaid_cloud_waf(self, request):
-        """变更包周期云模式waf规格
+        r"""变更包周期云模式waf规格
 
         变更包周期云模式waf规格。注：
          - 1.变更某产品规格的前提是必须已购买该产品 
@@ -173,7 +173,7 @@ class WafClient(Client):
         return http_info
 
     def create_anti_tamper_rule(self, request):
-        """创建防篡改规则
+        r"""创建防篡改规则
 
         创建防篡改规则
         
@@ -242,7 +242,7 @@ class WafClient(Client):
         return http_info
 
     def create_anticrawler_rule(self, request):
-        """创建JS脚本反爬虫规则
+        r"""创建JS脚本反爬虫规则
 
         创建JS脚本反爬虫规则，在调用此接口创建防护规则前，需要调用更新JS脚本反爬虫规则防护模式（UpdateAnticrawlerRuleType）接口指定防护模式
         
@@ -311,7 +311,7 @@ class WafClient(Client):
         return http_info
 
     def create_antileakage_rule(self, request):
-        """创建防敏感信息泄露规则
+        r"""创建防敏感信息泄露规则
 
         创建防敏感信息泄露规则
         
@@ -380,7 +380,7 @@ class WafClient(Client):
         return http_info
 
     def create_cc_rule(self, request):
-        """创建cc规则
+        r"""创建cc规则
 
         创建cc规则
         
@@ -449,7 +449,7 @@ class WafClient(Client):
         return http_info
 
     def create_certificate(self, request):
-        """创建证书
+        r"""创建证书
 
         创建证书
         
@@ -516,7 +516,7 @@ class WafClient(Client):
         return http_info
 
     def create_cloud_waf_post_paid_resource(self, request):
-        """开通云模式按需计费接口
+        r"""开通云模式按需计费接口
 
         开通云模式按需计费接口
         
@@ -585,7 +585,7 @@ class WafClient(Client):
         return http_info
 
     def create_custom_rule(self, request):
-        """创建精准防护规则
+        r"""创建精准防护规则
 
         创建精准防护规则
         
@@ -654,7 +654,7 @@ class WafClient(Client):
         return http_info
 
     def create_geoip_rule(self, request):
-        """创建地理位置控制规则
+        r"""创建地理位置控制规则
 
         创建地理位置控制规则
         
@@ -723,7 +723,7 @@ class WafClient(Client):
         return http_info
 
     def create_host(self, request):
-        """创建云模式防护域名
+        r"""创建云模式防护域名
 
         创建云模式防护域名
         
@@ -790,7 +790,7 @@ class WafClient(Client):
         return http_info
 
     def create_ignore_rule(self, request):
-        """创建全局白名单(原误报屏蔽)规则
+        r"""创建全局白名单(原误报屏蔽)规则
 
         创建全局白名单(原误报屏蔽)规则
         
@@ -859,7 +859,7 @@ class WafClient(Client):
         return http_info
 
     def create_instance(self, request):
-        """创建WAF独享引擎实例
+        r"""创建WAF独享引擎实例
 
         创建WAF独享引擎实例。独享模式支持的局点包括：华东-青岛、中东-利雅得、华北-北京一、华北-北京四、华北-乌兰察布一、华东-上海一、华东-上海二、华南-广州、华南-深圳、中国-香港、西南-贵阳一、亚太-曼谷、 亚太-新加坡、非洲约翰内斯堡、土耳其-伊斯坦布尔；普通租户类独享支持的局点：华北-北京四、华东-上海一、华南-广州、中国-香港、亚太-曼谷、 亚太-新加坡。
         
@@ -926,7 +926,7 @@ class WafClient(Client):
         return http_info
 
     def create_ip_group(self, request):
-        """创建ip地址组
+        r"""创建ip地址组
 
         创建ip地址组
         
@@ -993,7 +993,7 @@ class WafClient(Client):
         return http_info
 
     def create_policy(self, request):
-        """创建防护策略
+        r"""创建防护策略
 
         创建防护策略，系统会在生成策略时配置一些默认的配置项，如果需要修改策略的默认配置项需要通过调用更新防护策略接口实现
         
@@ -1060,7 +1060,7 @@ class WafClient(Client):
         return http_info
 
     def create_premium_host(self, request):
-        """创建独享模式域名
+        r"""创建独享模式域名
 
         创建独享模式域名
         
@@ -1127,7 +1127,7 @@ class WafClient(Client):
         return http_info
 
     def create_prepaid_cloud_waf(self, request):
-        """购买包周期云模式waf
+        r"""购买包周期云模式waf
 
         购买包周期云模式waf。
         
@@ -1194,7 +1194,7 @@ class WafClient(Client):
         return http_info
 
     def create_privacy_rule(self, request):
-        """创建隐私屏蔽防护规则
+        r"""创建隐私屏蔽防护规则
 
         创建隐私屏蔽防护规则
         
@@ -1263,7 +1263,7 @@ class WafClient(Client):
         return http_info
 
     def create_punishment_rule(self, request):
-        """创建攻击惩罚规则
+        r"""创建攻击惩罚规则
 
         创建攻击惩罚规则
         
@@ -1332,7 +1332,7 @@ class WafClient(Client):
         return http_info
 
     def create_value_list(self, request):
-        """创建引用表
+        r"""创建引用表
 
         创建引用表，引用表能够被CC攻击防护规则和精准访问防护中的规则所引用。
         
@@ -1399,7 +1399,7 @@ class WafClient(Client):
         return http_info
 
     def create_whiteblackip_rule(self, request):
-        """创建黑白名单规则
+        r"""创建黑白名单规则
 
         创建黑白名单规则
         
@@ -1468,7 +1468,7 @@ class WafClient(Client):
         return http_info
 
     def delete_anticrawler_rule(self, request):
-        """删除JS脚本反爬虫防护规则
+        r"""删除JS脚本反爬虫防护规则
 
         删除JS脚本反爬虫防护规则
         
@@ -1537,7 +1537,7 @@ class WafClient(Client):
         return http_info
 
     def delete_antileakage_rule(self, request):
-        """删除防敏感信息泄露防护规则
+        r"""删除防敏感信息泄露防护规则
 
         删除防敏感信息泄露防护规则
         
@@ -1606,7 +1606,7 @@ class WafClient(Client):
         return http_info
 
     def delete_antitamper_rule(self, request):
-        """删除防篡改防护规则
+        r"""删除防篡改防护规则
 
         删除防篡改防护规则
         
@@ -1675,7 +1675,7 @@ class WafClient(Client):
         return http_info
 
     def delete_cc_rule(self, request):
-        """删除cc防护规则
+        r"""删除cc防护规则
 
         删除cc防护规则
         
@@ -1744,7 +1744,7 @@ class WafClient(Client):
         return http_info
 
     def delete_certificate(self, request):
-        """删除证书
+        r"""删除证书
 
         删除证书
         
@@ -1811,7 +1811,7 @@ class WafClient(Client):
         return http_info
 
     def delete_cloud_waf_post_paid_resource(self, request):
-        """关闭云模式按需计费接口
+        r"""关闭云模式按需计费接口
 
         关闭云模式按需计费接口
         
@@ -1878,7 +1878,7 @@ class WafClient(Client):
         return http_info
 
     def delete_custom_rule(self, request):
-        """删除精准防护规则
+        r"""删除精准防护规则
 
         删除精准防护规则
         
@@ -1947,7 +1947,7 @@ class WafClient(Client):
         return http_info
 
     def delete_geoip_rule(self, request):
-        """删除地理位置控制防护规则
+        r"""删除地理位置控制防护规则
 
         删除地理位置控制防护规则
         
@@ -2016,7 +2016,7 @@ class WafClient(Client):
         return http_info
 
     def delete_host(self, request):
-        """删除云模式防护域名
+        r"""删除云模式防护域名
 
         删除云模式防护域名
         
@@ -2083,7 +2083,7 @@ class WafClient(Client):
         return http_info
 
     def delete_ignore_rule(self, request):
-        """删除全局白名单(原误报屏蔽)防护规则
+        r"""删除全局白名单(原误报屏蔽)防护规则
 
         删除全局白名单(原误报屏蔽)防护规则
         
@@ -2152,7 +2152,7 @@ class WafClient(Client):
         return http_info
 
     def delete_instance(self, request):
-        """删除WAF独享引擎信息
+        r"""删除WAF独享引擎信息
 
         删除WAF独享引擎信息。独享模式只在部分局点支持，包括：华北-北京四、华东-上海一、华南-广州、华南-深圳  、中国-香港、亚太-曼谷、 亚太-新加坡。
         
@@ -2219,7 +2219,7 @@ class WafClient(Client):
         return http_info
 
     def delete_ip_group(self, request):
-        """删除ip地址组
+        r"""删除ip地址组
 
         删除ip地址组
         
@@ -2286,7 +2286,7 @@ class WafClient(Client):
         return http_info
 
     def delete_policy(self, request):
-        """删除防护策略
+        r"""删除防护策略
 
         删除防护策略，若策略正在使用，则需要先接解除域名与策略的绑定关系才能删除策略。
         
@@ -2353,7 +2353,7 @@ class WafClient(Client):
         return http_info
 
     def delete_premium_host(self, request):
-        """删除独享模式域名
+        r"""删除独享模式域名
 
         删除独享模式域名
         
@@ -2422,7 +2422,7 @@ class WafClient(Client):
         return http_info
 
     def delete_privacy_rule(self, request):
-        """删除隐私屏蔽防护规则
+        r"""删除隐私屏蔽防护规则
 
         删除隐私屏蔽防护规则
         
@@ -2491,7 +2491,7 @@ class WafClient(Client):
         return http_info
 
     def delete_punishment_rule(self, request):
-        """删除攻击惩罚规则
+        r"""删除攻击惩罚规则
 
         删除攻击惩罚规则
         
@@ -2560,7 +2560,7 @@ class WafClient(Client):
         return http_info
 
     def delete_value_list(self, request):
-        """删除引用表
+        r"""删除引用表
 
         删除引用表
         
@@ -2627,7 +2627,7 @@ class WafClient(Client):
         return http_info
 
     def delete_white_black_ip_rule(self, request):
-        """删除黑白名单防护规则
+        r"""删除黑白名单防护规则
 
         删除黑白名单防护规则
         
@@ -2696,7 +2696,7 @@ class WafClient(Client):
         return http_info
 
     def list_anticrawler_rules(self, request):
-        """查询JS脚本反爬虫规则列表
+        r"""查询JS脚本反爬虫规则列表
 
         查询JS脚本反爬虫规则列表
         
@@ -2769,7 +2769,7 @@ class WafClient(Client):
         return http_info
 
     def list_antileakage_rules(self, request):
-        """查询防敏感信息泄露规则列表
+        r"""查询防敏感信息泄露规则列表
 
         查询防敏感信息泄露规则列表
         
@@ -2840,7 +2840,7 @@ class WafClient(Client):
         return http_info
 
     def list_antitamper_rule(self, request):
-        """查询防篡改规则列表
+        r"""查询防篡改规则列表
 
         查询防篡改规则列表
         
@@ -2911,7 +2911,7 @@ class WafClient(Client):
         return http_info
 
     def list_bandwidth_timeline(self, request):
-        """查询安全统计带宽数据
+        r"""查询安全统计带宽数据
 
         查询安全统计带宽数据，统计的带宽数据为平均值，单位为bit/s。
         
@@ -2988,7 +2988,7 @@ class WafClient(Client):
         return http_info
 
     def list_cc_rules(self, request):
-        """查询cc规则列表
+        r"""查询cc规则列表
 
         查询cc规则列表
         
@@ -3059,7 +3059,7 @@ class WafClient(Client):
         return http_info
 
     def list_certificates(self, request):
-        """查询证书列表
+        r"""查询证书列表
 
         查询证书列表
         
@@ -3134,7 +3134,7 @@ class WafClient(Client):
         return http_info
 
     def list_composite_hosts(self, request):
-        """查询全部防护域名列表
+        r"""查询全部防护域名列表
 
         查询全部防护域名列表，包括云模式和独享模式
         
@@ -3213,7 +3213,7 @@ class WafClient(Client):
         return http_info
 
     def list_custom_rules(self, request):
-        """查询精准防护规则列表
+        r"""查询精准防护规则列表
 
         查询精准防护规则列表
         
@@ -3284,7 +3284,7 @@ class WafClient(Client):
         return http_info
 
     def list_event(self, request):
-        """查询攻击事件列表
+        r"""查询攻击事件列表
 
         查询攻击事件列表，该API暂时不支持查询全部防护事件，pagesize参数不可设为-1，由于性能原因，数据量越大消耗的内存越大，后端最多限制查询10000条数据，例如：自定义时间段内的数据超过了10000条，就无法查出page为101，pagesize为100之后的数据，需要调整时间区间，再进行查询
         
@@ -3367,7 +3367,7 @@ class WafClient(Client):
         return http_info
 
     def list_geoip_rule(self, request):
-        """查询地理位置访问控制规则列表
+        r"""查询地理位置访问控制规则列表
 
         查询地理位置访问控制规则列表
         
@@ -3438,7 +3438,7 @@ class WafClient(Client):
         return http_info
 
     def list_host(self, request):
-        """查询云模式防护域名列表
+        r"""查询云模式防护域名列表
 
         查询云模式防护域名列表
         
@@ -3511,7 +3511,7 @@ class WafClient(Client):
         return http_info
 
     def list_host_route(self, request):
-        """获取云模式域名路由信息
+        r"""获取云模式域名路由信息
 
         返回路由信息
         
@@ -3578,7 +3578,7 @@ class WafClient(Client):
         return http_info
 
     def list_ignore_rule(self, request):
-        """查询全局白名单(原误报屏蔽)规则列表
+        r"""查询全局白名单(原误报屏蔽)规则列表
 
         查询全局白名单(原误报屏蔽)规则列表
         
@@ -3649,7 +3649,7 @@ class WafClient(Client):
         return http_info
 
     def list_instance(self, request):
-        """查询WAF独享引擎列表
+        r"""查询WAF独享引擎列表
 
         查询WAF独享引擎列表。独享模式只在部分局点支持，包括：华北-北京四、华东-上海一、华南-广州、华南-深圳  、中国-香港、亚太-曼谷、 亚太-新加坡。
         
@@ -3720,7 +3720,7 @@ class WafClient(Client):
         return http_info
 
     def list_ip_group(self, request):
-        """查询地址组列表
+        r"""查询地址组列表
 
         查询地址组列表
         
@@ -3793,7 +3793,7 @@ class WafClient(Client):
         return http_info
 
     def list_notice_configs(self, request):
-        """查询告警通知配置
+        r"""查询告警通知配置
 
         查询告警通知配置
         
@@ -3858,7 +3858,7 @@ class WafClient(Client):
         return http_info
 
     def list_overviews_classification(self, request):
-        """查询安全总览分类统计top信息
+        r"""查询安全总览分类统计top信息
 
         查询安全总览分类统计TOP信息，包含受攻击域名 、攻击源ip、受攻击URL、攻击来源区域、攻击事件分布。
         
@@ -3935,7 +3935,7 @@ class WafClient(Client):
         return http_info
 
     def list_policy(self, request):
-        """查询防护策略列表
+        r"""查询防护策略列表
 
         查询防护策略列表
         
@@ -4006,7 +4006,7 @@ class WafClient(Client):
         return http_info
 
     def list_premium_host(self, request):
-        """独享模式域名列表
+        r"""独享模式域名列表
 
         独享模式域名列表
         
@@ -4081,7 +4081,7 @@ class WafClient(Client):
         return http_info
 
     def list_privacy_rule(self, request):
-        """查询隐私屏蔽防护规则列表
+        r"""查询隐私屏蔽防护规则列表
 
         查询隐私屏蔽防护规则列表
         
@@ -4152,7 +4152,7 @@ class WafClient(Client):
         return http_info
 
     def list_punishment_rules(self, request):
-        """查询攻击惩罚规则列表
+        r"""查询攻击惩罚规则列表
 
         查询攻击惩罚规则列表
         
@@ -4223,7 +4223,7 @@ class WafClient(Client):
         return http_info
 
     def list_qps_timeline(self, request):
-        """查询安全统计qps次数
+        r"""查询安全统计qps次数
 
         查询安全统计qps次数。
         
@@ -4298,7 +4298,7 @@ class WafClient(Client):
         return http_info
 
     def list_request_timeline(self, request):
-        """查询安全总览中请求次数时间线统计数据
+        r"""查询安全总览中请求次数时间线统计数据
 
         查询安全总览中请求次数时间线统计数据。
         
@@ -4375,7 +4375,7 @@ class WafClient(Client):
         return http_info
 
     def list_statistics(self, request):
-        """查询安全总览请求与攻击数量
+        r"""查询安全总览请求与攻击数量
 
         查询安全总览请求与攻击数量。
         
@@ -4448,7 +4448,7 @@ class WafClient(Client):
         return http_info
 
     def list_top_abnormal(self, request):
-        """查询业务异常数量
+        r"""查询业务异常数量
 
         查询业务异常TOP统计信息。
         
@@ -4525,7 +4525,7 @@ class WafClient(Client):
         return http_info
 
     def list_value_list(self, request):
-        """查询引用表列表
+        r"""查询引用表列表
 
         查询引用表列表
         
@@ -4594,7 +4594,7 @@ class WafClient(Client):
         return http_info
 
     def list_whiteblackip_rule(self, request):
-        """查询黑白名单规则列表
+        r"""查询黑白名单规则列表
 
         查询黑白名单规则列表
         
@@ -4667,7 +4667,7 @@ class WafClient(Client):
         return http_info
 
     def migrate_composite_hosts(self, request):
-        """按企业项目迁移防护域名
+        r"""按企业项目迁移防护域名
 
         按企业项目迁移防护域名，仅专业版与独享版支持该功能
         
@@ -4736,7 +4736,7 @@ class WafClient(Client):
         return http_info
 
     def rename_instance(self, request):
-        """重命名WAF独享引擎
+        r"""重命名WAF独享引擎
 
         重命名WAF独享引擎。独享模式只在部分局点支持，包括：华北-北京四、华东-上海一、华南-广州、华南-深圳  、中国-香港、亚太-曼谷、 亚太-新加坡。
         
@@ -4805,7 +4805,7 @@ class WafClient(Client):
         return http_info
 
     def show_anticrawler_rule(self, request):
-        """查询JS脚本反爬虫防护规则
+        r"""查询JS脚本反爬虫防护规则
 
         根据Id查询JS脚本反爬虫防护规则
         
@@ -4874,7 +4874,7 @@ class WafClient(Client):
         return http_info
 
     def show_antileakage_rule(self, request):
-        """查询防敏感信息泄露防护规则
+        r"""查询防敏感信息泄露防护规则
 
         根据Id查询防敏感信息泄露防护规则
         
@@ -4943,7 +4943,7 @@ class WafClient(Client):
         return http_info
 
     def show_antitamper_rule(self, request):
-        """查询防篡改防护规则
+        r"""查询防篡改防护规则
 
         查询防篡改防护规则
         
@@ -5012,7 +5012,7 @@ class WafClient(Client):
         return http_info
 
     def show_cc_rule(self, request):
-        """根据Id查询cc防护规则
+        r"""根据Id查询cc防护规则
 
         根据Id查询cc防护规则
         
@@ -5081,7 +5081,7 @@ class WafClient(Client):
         return http_info
 
     def show_certificate(self, request):
-        """查询证书
+        r"""查询证书
 
         查询证书
         
@@ -5148,7 +5148,7 @@ class WafClient(Client):
         return http_info
 
     def show_composite_host(self, request):
-        """根据Id查询防护域名
+        r"""根据Id查询防护域名
 
         根据Id查询防护域名
         
@@ -5215,7 +5215,7 @@ class WafClient(Client):
         return http_info
 
     def show_console_config(self, request):
-        """局点支持特性查询
+        r"""局点支持特性查询
 
         局点支持特性查询
         
@@ -5278,7 +5278,7 @@ class WafClient(Client):
         return http_info
 
     def show_custom_rule(self, request):
-        """根据Id查询精准防护规则
+        r"""根据Id查询精准防护规则
 
         根据Id查询精准防护规则
         
@@ -5347,7 +5347,7 @@ class WafClient(Client):
         return http_info
 
     def show_event(self, request):
-        """查询指定事件id的防护事件详情
+        r"""查询指定事件id的防护事件详情
 
         查询指定事件id的防护事件详情
         
@@ -5416,7 +5416,7 @@ class WafClient(Client):
         return http_info
 
     def show_geoip_rule(self, request):
-        """删除地理位置控制防护规则
+        r"""删除地理位置控制防护规则
 
         删除地理位置控制防护规则
         
@@ -5485,7 +5485,7 @@ class WafClient(Client):
         return http_info
 
     def show_host(self, request):
-        """根据防护域名Id查询云模式防护域名详细信息
+        r"""根据防护域名Id查询云模式防护域名详细信息
 
         根据防护域名Id查询云模式防护域名详细信息
         
@@ -5552,7 +5552,7 @@ class WafClient(Client):
         return http_info
 
     def show_ignore_rule(self, request):
-        """查询全局白名单(原误报屏蔽)防护规则
+        r"""查询全局白名单(原误报屏蔽)防护规则
 
         查询全局白名单(原误报屏蔽)防护规则
         
@@ -5621,7 +5621,7 @@ class WafClient(Client):
         return http_info
 
     def show_instance(self, request):
-        """查询WAF独享引擎信息
+        r"""查询WAF独享引擎信息
 
         查询WAF独享引擎信息。独享模式只在部分局点支持，包括：华北-北京四、华东-上海一、华南-广州、华南-深圳  、中国-香港、亚太-曼谷、 亚太-新加坡。
         
@@ -5688,7 +5688,7 @@ class WafClient(Client):
         return http_info
 
     def show_ip_group(self, request):
-        """查询ip地址组明细
+        r"""查询ip地址组明细
 
         查询ip地址组明细
         
@@ -5755,7 +5755,7 @@ class WafClient(Client):
         return http_info
 
     def show_lts_info_config(self, request):
-        """查询lts配置信息
+        r"""查询lts配置信息
 
         查询lts配置信息
         
@@ -5820,7 +5820,7 @@ class WafClient(Client):
         return http_info
 
     def show_policy(self, request):
-        """根据Id查询防护策略
+        r"""根据Id查询防护策略
 
         根据Id查询防护策略
         
@@ -5887,7 +5887,7 @@ class WafClient(Client):
         return http_info
 
     def show_premium_host(self, request):
-        """查看独享模式域名配置
+        r"""查看独享模式域名配置
 
         查看独享模式域名配置
         
@@ -5954,7 +5954,7 @@ class WafClient(Client):
         return http_info
 
     def show_privacy_rule(self, request):
-        """查询隐私屏蔽防护规则
+        r"""查询隐私屏蔽防护规则
 
         查询隐私屏蔽防护规则
         
@@ -6023,7 +6023,7 @@ class WafClient(Client):
         return http_info
 
     def show_punishment_rule(self, request):
-        """根据Id查询攻击惩罚防护规则
+        r"""根据Id查询攻击惩罚防护规则
 
         根据Id查询攻击惩罚防护规则
         
@@ -6092,7 +6092,7 @@ class WafClient(Client):
         return http_info
 
     def show_source_ip(self, request):
-        """查询WAF回源Ip信息
+        r"""查询WAF回源Ip信息
 
         查询WAF回源Ip信息
         
@@ -6155,7 +6155,7 @@ class WafClient(Client):
         return http_info
 
     def show_subscription_info(self, request):
-        """查询租户订购信息
+        r"""查询租户订购信息
 
         查询租户订购信息，包括云模式包周期、按需计费、独享模式
         
@@ -6218,7 +6218,7 @@ class WafClient(Client):
         return http_info
 
     def show_value_list(self, request):
-        """查询引用表
+        r"""查询引用表
 
         查询引用表
         
@@ -6285,7 +6285,7 @@ class WafClient(Client):
         return http_info
 
     def show_white_black_ip_rule(self, request):
-        """查询黑白名单防护规则
+        r"""查询黑白名单防护规则
 
         查询黑白名单防护规则
         
@@ -6354,7 +6354,7 @@ class WafClient(Client):
         return http_info
 
     def update_alert_notice_config(self, request):
-        """更新告警通知配置
+        r"""更新告警通知配置
 
         更新告警通知配置
         
@@ -6423,7 +6423,7 @@ class WafClient(Client):
         return http_info
 
     def update_anti_tamper_rule_refresh(self, request):
-        """网页防篡改规则更新缓存
+        r"""网页防篡改规则更新缓存
 
         网页防篡改规则更新缓存
         
@@ -6492,7 +6492,7 @@ class WafClient(Client):
         return http_info
 
     def update_anticrawler_rule(self, request):
-        """更新JS脚本反爬虫防护规则
+        r"""更新JS脚本反爬虫防护规则
 
         更新JS脚本反爬虫防护规则
         
@@ -6563,7 +6563,7 @@ class WafClient(Client):
         return http_info
 
     def update_anticrawler_rule_type(self, request):
-        """更新JS脚本反爬虫规则防护模式
+        r"""更新JS脚本反爬虫规则防护模式
 
         更新JS脚本反爬虫规则防护模式，在创建JS脚本反爬虫规则前，需要调用该接口指定JS脚本反爬虫规则防护模式。
         
@@ -6632,7 +6632,7 @@ class WafClient(Client):
         return http_info
 
     def update_antileakage_rule(self, request):
-        """更新防敏感信息泄露防护规则
+        r"""更新防敏感信息泄露防护规则
 
         更新防敏感信息泄露防护规则
         
@@ -6703,7 +6703,7 @@ class WafClient(Client):
         return http_info
 
     def update_cc_rule(self, request):
-        """更新cc防护规则
+        r"""更新cc防护规则
 
         更新cc防护规则
         
@@ -6774,7 +6774,7 @@ class WafClient(Client):
         return http_info
 
     def update_certificate(self, request):
-        """修改证书
+        r"""修改证书
 
         修改证书
         
@@ -6843,7 +6843,7 @@ class WafClient(Client):
         return http_info
 
     def update_custom_rule(self, request):
-        """更新精准防护规则
+        r"""更新精准防护规则
 
         更新精准防护规则
         
@@ -6914,7 +6914,7 @@ class WafClient(Client):
         return http_info
 
     def update_geoip_rule(self, request):
-        """更新地理位置控制防护规则
+        r"""更新地理位置控制防护规则
 
         更新地理位置控制防护规则
         
@@ -6985,7 +6985,7 @@ class WafClient(Client):
         return http_info
 
     def update_host(self, request):
-        """更新云模式防护域名的配置
+        r"""更新云模式防护域名的配置
 
         更新云模式防护域名配置，在没有填入源站信息server的原始数据的情况下，则新的源站信息server会覆盖源站信息，而不是新增源站。此外，请求体可只传需要更新的部分。
         
@@ -7054,7 +7054,7 @@ class WafClient(Client):
         return http_info
 
     def update_host_protect_status(self, request):
-        """修改域名防护状态
+        r"""修改域名防护状态
 
         修改域名防护状态
         
@@ -7123,7 +7123,7 @@ class WafClient(Client):
         return http_info
 
     def update_ignore_rule(self, request):
-        """更新全局白名单(原误报屏蔽)防护规则
+        r"""更新全局白名单(原误报屏蔽)防护规则
 
         更新全局白名单(原误报屏蔽)防护规则
         
@@ -7194,7 +7194,7 @@ class WafClient(Client):
         return http_info
 
     def update_ip_group(self, request):
-        """修改ip地址组
+        r"""修改ip地址组
 
         修改ip地址组
         
@@ -7265,7 +7265,7 @@ class WafClient(Client):
         return http_info
 
     def update_lts_info_config(self, request):
-        """配置全量日志lts
+        r"""配置全量日志lts
 
         配置全量日志lts，该接口可用来开启与关闭waf全量日志以及配置日志组和日志流。日志组id和日志流id可前往云日志服务获取。配置的日志流id要属于所配置的日志组。
         
@@ -7334,7 +7334,7 @@ class WafClient(Client):
         return http_info
 
     def update_policy(self, request):
-        """更新防护策略
+        r"""更新防护策略
 
         更新防护策略，请求体可只传需要更新的部分
         
@@ -7403,7 +7403,7 @@ class WafClient(Client):
         return http_info
 
     def update_policy_protect_host(self, request):
-        """更新防护策略的域名
+        r"""更新防护策略的域名
 
         更新防护策略的防护域名
         
@@ -7472,7 +7472,7 @@ class WafClient(Client):
         return http_info
 
     def update_policy_rule_status(self, request):
-        """修改单条规则的状态
+        r"""修改单条规则的状态
 
         修改单条规则的状态，用于开启或者关闭单条规则，比如关闭精准防护中某一条规则
         
@@ -7545,7 +7545,7 @@ class WafClient(Client):
         return http_info
 
     def update_premium_host(self, request):
-        """修改独享模式域名配置
+        r"""修改独享模式域名配置
 
         修改独享模式域名配置，在没有填入源站信息server的原始数据的情况下，则新的源站信息server会覆盖源站信息，而不是新增源站。此外，请求体可只传需要更新的部分。
         
@@ -7614,7 +7614,7 @@ class WafClient(Client):
         return http_info
 
     def update_premium_host_protect_status(self, request):
-        """修改独享模式域名防护状态
+        r"""修改独享模式域名防护状态
 
         修改独享模式域名防护状态
         
@@ -7683,7 +7683,7 @@ class WafClient(Client):
         return http_info
 
     def update_privacy_rule(self, request):
-        """更新隐私屏蔽防护规则
+        r"""更新隐私屏蔽防护规则
 
         更新隐私屏蔽防护规则
         
@@ -7754,7 +7754,7 @@ class WafClient(Client):
         return http_info
 
     def update_punishment_rule(self, request):
-        """更新攻击惩罚规则
+        r"""更新攻击惩罚规则
 
         更新攻击惩罚规则
         
@@ -7825,7 +7825,7 @@ class WafClient(Client):
         return http_info
 
     def update_value_list(self, request):
-        """修改引用表
+        r"""修改引用表
 
         修改引用表
         
@@ -7894,7 +7894,7 @@ class WafClient(Client):
         return http_info
 
     def update_whiteblackip_rule(self, request):
-        """更新黑白名单防护规则
+        r"""更新黑白名单防护规则
 
         更新黑白名单防护规则，可以更新ip/ip段以及防护动作等信息
         

@@ -25,7 +25,7 @@ class ApigRole:
     }
 
     def __init__(self, role_id=None):
-        """ApigRole
+        r"""ApigRole
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ApigRole:
 
     @property
     def role_id(self):
-        """Gets the role_id of this ApigRole.
+        r"""Gets the role_id of this ApigRole.
 
         角色id，r00001：管理员；r00002：开发者；r00003：运维者；r00004：访客
 
@@ -54,7 +54,7 @@ class ApigRole:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this ApigRole.
+        r"""Sets the role_id of this ApigRole.
 
         角色id，r00001：管理员；r00002：开发者；r00003：运维者；r00004：访客
 

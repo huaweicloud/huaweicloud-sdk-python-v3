@@ -30,7 +30,7 @@ class GetServiceLinkedAgencyDeletionStatusV5Response(SdkResponse):
     }
 
     def __init__(self, status=None, reason=None, agency_usage_list=None):
-        """GetServiceLinkedAgencyDeletionStatusV5Response
+        r"""GetServiceLinkedAgencyDeletionStatusV5Response
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class GetServiceLinkedAgencyDeletionStatusV5Response(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this GetServiceLinkedAgencyDeletionStatusV5Response.
+        r"""Gets the status of this GetServiceLinkedAgencyDeletionStatusV5Response.
 
         :return: The status of this GetServiceLinkedAgencyDeletionStatusV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.DeletionTaskStatus`
@@ -67,7 +67,7 @@ class GetServiceLinkedAgencyDeletionStatusV5Response(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetServiceLinkedAgencyDeletionStatusV5Response.
+        r"""Sets the status of this GetServiceLinkedAgencyDeletionStatusV5Response.
 
         :param status: The status of this GetServiceLinkedAgencyDeletionStatusV5Response.
         :type status: :class:`huaweicloudsdkiam.v5.DeletionTaskStatus`
@@ -76,7 +76,7 @@ class GetServiceLinkedAgencyDeletionStatusV5Response(SdkResponse):
 
     @property
     def reason(self):
-        """Gets the reason of this GetServiceLinkedAgencyDeletionStatusV5Response.
+        r"""Gets the reason of this GetServiceLinkedAgencyDeletionStatusV5Response.
 
         删除失败的原因。
 
@@ -87,7 +87,7 @@ class GetServiceLinkedAgencyDeletionStatusV5Response(SdkResponse):
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this GetServiceLinkedAgencyDeletionStatusV5Response.
+        r"""Sets the reason of this GetServiceLinkedAgencyDeletionStatusV5Response.
 
         删除失败的原因。
 
@@ -98,7 +98,7 @@ class GetServiceLinkedAgencyDeletionStatusV5Response(SdkResponse):
 
     @property
     def agency_usage_list(self):
-        """Gets the agency_usage_list of this GetServiceLinkedAgencyDeletionStatusV5Response.
+        r"""Gets the agency_usage_list of this GetServiceLinkedAgencyDeletionStatusV5Response.
 
         该服务关联委托正在被使用的场景列表。
 
@@ -109,7 +109,7 @@ class GetServiceLinkedAgencyDeletionStatusV5Response(SdkResponse):
 
     @agency_usage_list.setter
     def agency_usage_list(self, agency_usage_list):
-        """Sets the agency_usage_list of this GetServiceLinkedAgencyDeletionStatusV5Response.
+        r"""Sets the agency_usage_list of this GetServiceLinkedAgencyDeletionStatusV5Response.
 
         该服务关联委托正在被使用的场景列表。
 

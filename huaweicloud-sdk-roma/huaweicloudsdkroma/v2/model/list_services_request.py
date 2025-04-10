@@ -43,7 +43,7 @@ class ListServicesRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, service_id=None, service_name=None, product_template_id=None, product_id=None, created_user_name=None, created_date_start=None, created_date_end=None, offset=None):
-        """ListServicesRequest
+        r"""ListServicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class ListServicesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListServicesRequest.
+        r"""Gets the instance_id of this ListServicesRequest.
 
         实例ID
 
@@ -116,7 +116,7 @@ class ListServicesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListServicesRequest.
+        r"""Sets the instance_id of this ListServicesRequest.
 
         实例ID
 
@@ -127,7 +127,7 @@ class ListServicesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServicesRequest.
+        r"""Gets the limit of this ListServicesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -138,7 +138,7 @@ class ListServicesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServicesRequest.
+        r"""Sets the limit of this ListServicesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -149,7 +149,7 @@ class ListServicesRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ListServicesRequest.
+        r"""Gets the service_id of this ListServicesRequest.
 
         服务ID
 
@@ -160,7 +160,7 @@ class ListServicesRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ListServicesRequest.
+        r"""Sets the service_id of this ListServicesRequest.
 
         服务ID
 
@@ -171,7 +171,7 @@ class ListServicesRequest:
 
     @property
     def service_name(self):
-        """Gets the service_name of this ListServicesRequest.
+        r"""Gets the service_name of this ListServicesRequest.
 
         服务名称
 
@@ -182,7 +182,7 @@ class ListServicesRequest:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this ListServicesRequest.
+        r"""Sets the service_name of this ListServicesRequest.
 
         服务名称
 
@@ -193,7 +193,7 @@ class ListServicesRequest:
 
     @property
     def product_template_id(self):
-        """Gets the product_template_id of this ListServicesRequest.
+        r"""Gets the product_template_id of this ListServicesRequest.
 
         归属产品模板ID，product_template_id和product_id二选一
 
@@ -204,7 +204,7 @@ class ListServicesRequest:
 
     @product_template_id.setter
     def product_template_id(self, product_template_id):
-        """Sets the product_template_id of this ListServicesRequest.
+        r"""Sets the product_template_id of this ListServicesRequest.
 
         归属产品模板ID，product_template_id和product_id二选一
 
@@ -215,7 +215,7 @@ class ListServicesRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ListServicesRequest.
+        r"""Gets the product_id of this ListServicesRequest.
 
         归属产品ID，product_template_id和product_id二选一
 
@@ -226,7 +226,7 @@ class ListServicesRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ListServicesRequest.
+        r"""Sets the product_id of this ListServicesRequest.
 
         归属产品ID，product_template_id和product_id二选一
 
@@ -237,7 +237,7 @@ class ListServicesRequest:
 
     @property
     def created_user_name(self):
-        """Gets the created_user_name of this ListServicesRequest.
+        r"""Gets the created_user_name of this ListServicesRequest.
 
         创建用户名
 
@@ -248,7 +248,7 @@ class ListServicesRequest:
 
     @created_user_name.setter
     def created_user_name(self, created_user_name):
-        """Sets the created_user_name of this ListServicesRequest.
+        r"""Sets the created_user_name of this ListServicesRequest.
 
         创建用户名
 
@@ -259,7 +259,7 @@ class ListServicesRequest:
 
     @property
     def created_date_start(self):
-        """Gets the created_date_start of this ListServicesRequest.
+        r"""Gets the created_date_start of this ListServicesRequest.
 
         创建时间起始，格式timestamp(ms)，使用UTC时区
 
@@ -270,7 +270,7 @@ class ListServicesRequest:
 
     @created_date_start.setter
     def created_date_start(self, created_date_start):
-        """Sets the created_date_start of this ListServicesRequest.
+        r"""Sets the created_date_start of this ListServicesRequest.
 
         创建时间起始，格式timestamp(ms)，使用UTC时区
 
@@ -281,7 +281,7 @@ class ListServicesRequest:
 
     @property
     def created_date_end(self):
-        """Gets the created_date_end of this ListServicesRequest.
+        r"""Gets the created_date_end of this ListServicesRequest.
 
         创建时间截止，格式timestamp(ms)。使用UTC时区
 
@@ -292,7 +292,7 @@ class ListServicesRequest:
 
     @created_date_end.setter
     def created_date_end(self, created_date_end):
-        """Sets the created_date_end of this ListServicesRequest.
+        r"""Sets the created_date_end of this ListServicesRequest.
 
         创建时间截止，格式timestamp(ms)。使用UTC时区
 
@@ -303,7 +303,7 @@ class ListServicesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListServicesRequest.
+        r"""Gets the offset of this ListServicesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -314,7 +314,7 @@ class ListServicesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListServicesRequest.
+        r"""Sets the offset of this ListServicesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 

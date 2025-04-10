@@ -27,7 +27,7 @@ class ListOperationsRequest:
     }
 
     def __init__(self, service_type=None, resource_type=None):
-        """ListOperationsRequest
+        r"""ListOperationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListOperationsRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ListOperationsRequest.
+        r"""Gets the service_type of this ListOperationsRequest.
 
         事件对应的云服务类型。
 
@@ -61,7 +61,7 @@ class ListOperationsRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ListOperationsRequest.
+        r"""Sets the service_type of this ListOperationsRequest.
 
         事件对应的云服务类型。
 
@@ -72,7 +72,7 @@ class ListOperationsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListOperationsRequest.
+        r"""Gets the resource_type of this ListOperationsRequest.
 
         事件对应的资源类型。传入该参数时，service_type必选。
 
@@ -83,7 +83,7 @@ class ListOperationsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListOperationsRequest.
+        r"""Sets the resource_type of this ListOperationsRequest.
 
         事件对应的资源类型。传入该参数时，service_type必选。
 

@@ -26,7 +26,7 @@ class ShowNatGatewayTagResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowNatGatewayTagResponse
+        r"""ShowNatGatewayTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowNatGatewayTagResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowNatGatewayTagResponse.
+        r"""Gets the tags of this ShowNatGatewayTagResponse.
 
         标签列表。
 
@@ -55,7 +55,7 @@ class ShowNatGatewayTagResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowNatGatewayTagResponse.
+        r"""Sets the tags of this ShowNatGatewayTagResponse.
 
         标签列表。
 

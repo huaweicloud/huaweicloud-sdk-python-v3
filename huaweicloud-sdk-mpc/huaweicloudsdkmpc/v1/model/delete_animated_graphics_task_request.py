@@ -25,7 +25,7 @@ class DeleteAnimatedGraphicsTaskRequest:
     }
 
     def __init__(self, task_id=None):
-        """DeleteAnimatedGraphicsTaskRequest
+        r"""DeleteAnimatedGraphicsTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAnimatedGraphicsTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteAnimatedGraphicsTaskRequest.
+        r"""Gets the task_id of this DeleteAnimatedGraphicsTaskRequest.
 
         任务ID 
 
@@ -53,7 +53,7 @@ class DeleteAnimatedGraphicsTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteAnimatedGraphicsTaskRequest.
+        r"""Sets the task_id of this DeleteAnimatedGraphicsTaskRequest.
 
         任务ID 
 

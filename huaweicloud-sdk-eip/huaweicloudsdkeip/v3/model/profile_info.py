@@ -43,7 +43,7 @@ class ProfileInfo:
     }
 
     def __init__(self, local_network_port=None, standalone=None, notify_status=None, create_time=None, fake_network_type=None, create_source=None, ecs_id=None, lock_status=None, freezed_status=None, bandwith_info=None):
-        """ProfileInfo
+        r"""ProfileInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ProfileInfo:
 
     @property
     def local_network_port(self):
-        """Gets the local_network_port of this ProfileInfo.
+        r"""Gets the local_network_port of this ProfileInfo.
 
         公网IP附属的5_xxx网络（如5_bgp）中的port_id
 
@@ -117,7 +117,7 @@ class ProfileInfo:
 
     @local_network_port.setter
     def local_network_port(self, local_network_port):
-        """Sets the local_network_port of this ProfileInfo.
+        r"""Sets the local_network_port of this ProfileInfo.
 
         公网IP附属的5_xxx网络（如5_bgp）中的port_id
 
@@ -128,7 +128,7 @@ class ProfileInfo:
 
     @property
     def standalone(self):
-        """Gets the standalone of this ProfileInfo.
+        r"""Gets the standalone of this ProfileInfo.
 
         标识公网IP是否是和虚机一起创建的。true-独立创建；false-和虚机一起创建
 
@@ -139,7 +139,7 @@ class ProfileInfo:
 
     @standalone.setter
     def standalone(self, standalone):
-        """Sets the standalone of this ProfileInfo.
+        r"""Sets the standalone of this ProfileInfo.
 
         标识公网IP是否是和虚机一起创建的。true-独立创建；false-和虚机一起创建
 
@@ -150,7 +150,7 @@ class ProfileInfo:
 
     @property
     def notify_status(self):
-        """Gets the notify_status of this ProfileInfo.
+        r"""Gets the notify_status of this ProfileInfo.
 
         云服务标识公网IP创建进度, EIP服务内部使用。
 
@@ -161,7 +161,7 @@ class ProfileInfo:
 
     @notify_status.setter
     def notify_status(self, notify_status):
-        """Sets the notify_status of this ProfileInfo.
+        r"""Sets the notify_status of this ProfileInfo.
 
         云服务标识公网IP创建进度, EIP服务内部使用。
 
@@ -172,7 +172,7 @@ class ProfileInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ProfileInfo.
+        r"""Gets the create_time of this ProfileInfo.
 
         公网IP创建时间
 
@@ -183,7 +183,7 @@ class ProfileInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ProfileInfo.
+        r"""Sets the create_time of this ProfileInfo.
 
         公网IP创建时间
 
@@ -194,7 +194,7 @@ class ProfileInfo:
 
     @property
     def fake_network_type(self):
-        """Gets the fake_network_type of this ProfileInfo.
+        r"""Gets the fake_network_type of this ProfileInfo.
 
         该字段仅仅用于表示eip的bgp类型是否是真实的静态sbgp * 1. 如果为true，则该eip可以切换bgp类型 * 2. 如果为false，则该eip不可以切换bgp类型
 
@@ -205,7 +205,7 @@ class ProfileInfo:
 
     @fake_network_type.setter
     def fake_network_type(self, fake_network_type):
-        """Sets the fake_network_type of this ProfileInfo.
+        r"""Sets the fake_network_type of this ProfileInfo.
 
         该字段仅仅用于表示eip的bgp类型是否是真实的静态sbgp * 1. 如果为true，则该eip可以切换bgp类型 * 2. 如果为false，则该eip不可以切换bgp类型
 
@@ -216,7 +216,7 @@ class ProfileInfo:
 
     @property
     def create_source(self):
-        """Gets the create_source of this ProfileInfo.
+        r"""Gets the create_source of this ProfileInfo.
 
         标识IP是和哪类资源一起购买的
 
@@ -227,7 +227,7 @@ class ProfileInfo:
 
     @create_source.setter
     def create_source(self, create_source):
-        """Sets the create_source of this ProfileInfo.
+        r"""Sets the create_source of this ProfileInfo.
 
         标识IP是和哪类资源一起购买的
 
@@ -238,7 +238,7 @@ class ProfileInfo:
 
     @property
     def ecs_id(self):
-        """Gets the ecs_id of this ProfileInfo.
+        r"""Gets the ecs_id of this ProfileInfo.
 
         标识和公网IP一起购买的ecs的id
 
@@ -249,7 +249,7 @@ class ProfileInfo:
 
     @ecs_id.setter
     def ecs_id(self, ecs_id):
-        """Sets the ecs_id of this ProfileInfo.
+        r"""Sets the ecs_id of this ProfileInfo.
 
         标识和公网IP一起购买的ecs的id
 
@@ -260,7 +260,7 @@ class ProfileInfo:
 
     @property
     def lock_status(self):
-        """Gets the lock_status of this ProfileInfo.
+        r"""Gets the lock_status of this ProfileInfo.
 
         公网IP加锁状态, eg:\"POLICE,LOCKED\"。POLICE-公安冻结；LOCKED-普通冻结；普通冻结细分状态：ARREAR-欠费；DELABLE-可删除；
 
@@ -271,7 +271,7 @@ class ProfileInfo:
 
     @lock_status.setter
     def lock_status(self, lock_status):
-        """Sets the lock_status of this ProfileInfo.
+        r"""Sets the lock_status of this ProfileInfo.
 
         公网IP加锁状态, eg:\"POLICE,LOCKED\"。POLICE-公安冻结；LOCKED-普通冻结；普通冻结细分状态：ARREAR-欠费；DELABLE-可删除；
 
@@ -282,7 +282,7 @@ class ProfileInfo:
 
     @property
     def freezed_status(self):
-        """Gets the freezed_status of this ProfileInfo.
+        r"""Gets the freezed_status of this ProfileInfo.
 
         公网IP冻结状态。
 
@@ -293,7 +293,7 @@ class ProfileInfo:
 
     @freezed_status.setter
     def freezed_status(self, freezed_status):
-        """Sets the freezed_status of this ProfileInfo.
+        r"""Sets the freezed_status of this ProfileInfo.
 
         公网IP冻结状态。
 
@@ -304,7 +304,7 @@ class ProfileInfo:
 
     @property
     def bandwith_info(self):
-        """Gets the bandwith_info of this ProfileInfo.
+        r"""Gets the bandwith_info of this ProfileInfo.
 
         :return: The bandwith_info of this ProfileInfo.
         :rtype: :class:`huaweicloudsdkeip.v3.BandwidthInfoResp`
@@ -313,7 +313,7 @@ class ProfileInfo:
 
     @bandwith_info.setter
     def bandwith_info(self, bandwith_info):
-        """Sets the bandwith_info of this ProfileInfo.
+        r"""Sets the bandwith_info of this ProfileInfo.
 
         :param bandwith_info: The bandwith_info of this ProfileInfo.
         :type bandwith_info: :class:`huaweicloudsdkeip.v3.BandwidthInfoResp`

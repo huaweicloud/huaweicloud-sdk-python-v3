@@ -27,7 +27,7 @@ class DocumentClassificationReq:
     }
 
     def __init__(self, content=None, lang=None):
-        """DocumentClassificationReq
+        r"""DocumentClassificationReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DocumentClassificationReq:
 
     @property
     def content(self):
-        """Gets the content of this DocumentClassificationReq.
+        r"""Gets the content of this DocumentClassificationReq.
 
         输入的文档，最大长度10000, 长度超过10000字符截取前10000个字符。
 
@@ -60,7 +60,7 @@ class DocumentClassificationReq:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this DocumentClassificationReq.
+        r"""Sets the content of this DocumentClassificationReq.
 
         输入的文档，最大长度10000, 长度超过10000字符截取前10000个字符。
 
@@ -71,7 +71,7 @@ class DocumentClassificationReq:
 
     @property
     def lang(self):
-        """Gets the lang of this DocumentClassificationReq.
+        r"""Gets the lang of this DocumentClassificationReq.
 
         预留字段，支持的文本语言类型，当前只支持zh（中文），默认zh。
 
@@ -82,7 +82,7 @@ class DocumentClassificationReq:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this DocumentClassificationReq.
+        r"""Sets the lang of this DocumentClassificationReq.
 
         预留字段，支持的文本语言类型，当前只支持zh（中文），默认zh。
 

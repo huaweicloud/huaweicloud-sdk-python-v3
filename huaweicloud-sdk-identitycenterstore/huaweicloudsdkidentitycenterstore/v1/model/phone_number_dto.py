@@ -31,7 +31,7 @@ class PhoneNumberDto:
     }
 
     def __init__(self, primary=None, type=None, value=None):
-        """PhoneNumberDto
+        r"""PhoneNumberDto
 
         The model defined in huaweicloud sdk
 
@@ -59,7 +59,7 @@ class PhoneNumberDto:
 
     @property
     def primary(self):
-        """Gets the primary of this PhoneNumberDto.
+        r"""Gets the primary of this PhoneNumberDto.
 
         一个布尔值，表示这是否为用户的主电话号码
 
@@ -70,7 +70,7 @@ class PhoneNumberDto:
 
     @primary.setter
     def primary(self, primary):
-        """Sets the primary of this PhoneNumberDto.
+        r"""Sets the primary of this PhoneNumberDto.
 
         一个布尔值，表示这是否为用户的主电话号码
 
@@ -81,7 +81,7 @@ class PhoneNumberDto:
 
     @property
     def type(self):
-        """Gets the type of this PhoneNumberDto.
+        r"""Gets the type of this PhoneNumberDto.
 
         表示电话号码类型的字符串
 
@@ -92,7 +92,7 @@ class PhoneNumberDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PhoneNumberDto.
+        r"""Sets the type of this PhoneNumberDto.
 
         表示电话号码类型的字符串
 
@@ -103,7 +103,7 @@ class PhoneNumberDto:
 
     @property
     def value(self):
-        """Gets the value of this PhoneNumberDto.
+        r"""Gets the value of this PhoneNumberDto.
 
         包含电话号码的字符串
 
@@ -114,7 +114,7 @@ class PhoneNumberDto:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PhoneNumberDto.
+        r"""Sets the value of this PhoneNumberDto.
 
         包含电话号码的字符串
 

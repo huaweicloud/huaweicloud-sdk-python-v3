@@ -27,7 +27,7 @@ class CreateDataCompareTransformationInfo:
     }
 
     def __init__(self, transformation_type=None, value=None):
-        """CreateDataCompareTransformationInfo
+        r"""CreateDataCompareTransformationInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateDataCompareTransformationInfo:
 
     @property
     def transformation_type(self):
-        """Gets the transformation_type of this CreateDataCompareTransformationInfo.
+        r"""Gets the transformation_type of this CreateDataCompareTransformationInfo.
 
         加工规则，值为contentConditionalFilter。
 
@@ -59,7 +59,7 @@ class CreateDataCompareTransformationInfo:
 
     @transformation_type.setter
     def transformation_type(self, transformation_type):
-        """Sets the transformation_type of this CreateDataCompareTransformationInfo.
+        r"""Sets the transformation_type of this CreateDataCompareTransformationInfo.
 
         加工规则，值为contentConditionalFilter。
 
@@ -70,7 +70,7 @@ class CreateDataCompareTransformationInfo:
 
     @property
     def value(self):
-        """Gets the value of this CreateDataCompareTransformationInfo.
+        r"""Gets the value of this CreateDataCompareTransformationInfo.
 
         过滤条件，值为sql条件语句，例如id>100，长度限制256。
 
@@ -81,7 +81,7 @@ class CreateDataCompareTransformationInfo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateDataCompareTransformationInfo.
+        r"""Sets the value of this CreateDataCompareTransformationInfo.
 
         过滤条件，值为sql条件语句，例如id>100，长度限制256。
 

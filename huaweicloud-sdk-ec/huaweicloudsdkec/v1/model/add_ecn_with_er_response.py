@@ -36,7 +36,7 @@ class AddEcnWithErResponse(SdkResponse):
     }
 
     def __init__(self, id=None, er_id=None, region_id=None, status=None, health_status=None, created_at=None):
-        """AddEcnWithErResponse
+        r"""AddEcnWithErResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class AddEcnWithErResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this AddEcnWithErResponse.
+        r"""Gets the id of this AddEcnWithErResponse.
 
         企业连接网络关联企业路由器ID
 
@@ -90,7 +90,7 @@ class AddEcnWithErResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AddEcnWithErResponse.
+        r"""Sets the id of this AddEcnWithErResponse.
 
         企业连接网络关联企业路由器ID
 
@@ -101,7 +101,7 @@ class AddEcnWithErResponse(SdkResponse):
 
     @property
     def er_id(self):
-        """Gets the er_id of this AddEcnWithErResponse.
+        r"""Gets the er_id of this AddEcnWithErResponse.
 
         企业路由器ID
 
@@ -112,7 +112,7 @@ class AddEcnWithErResponse(SdkResponse):
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this AddEcnWithErResponse.
+        r"""Sets the er_id of this AddEcnWithErResponse.
 
         企业路由器ID
 
@@ -123,7 +123,7 @@ class AddEcnWithErResponse(SdkResponse):
 
     @property
     def region_id(self):
-        """Gets the region_id of this AddEcnWithErResponse.
+        r"""Gets the region_id of this AddEcnWithErResponse.
 
         区域ID
 
@@ -134,7 +134,7 @@ class AddEcnWithErResponse(SdkResponse):
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this AddEcnWithErResponse.
+        r"""Sets the region_id of this AddEcnWithErResponse.
 
         区域ID
 
@@ -145,7 +145,7 @@ class AddEcnWithErResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AddEcnWithErResponse.
+        r"""Gets the status of this AddEcnWithErResponse.
 
         状态
 
@@ -156,7 +156,7 @@ class AddEcnWithErResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AddEcnWithErResponse.
+        r"""Sets the status of this AddEcnWithErResponse.
 
         状态
 
@@ -167,7 +167,7 @@ class AddEcnWithErResponse(SdkResponse):
 
     @property
     def health_status(self):
-        """Gets the health_status of this AddEcnWithErResponse.
+        r"""Gets the health_status of this AddEcnWithErResponse.
 
         健康状态
 
@@ -178,7 +178,7 @@ class AddEcnWithErResponse(SdkResponse):
 
     @health_status.setter
     def health_status(self, health_status):
-        """Sets the health_status of this AddEcnWithErResponse.
+        r"""Sets the health_status of this AddEcnWithErResponse.
 
         健康状态
 
@@ -189,7 +189,7 @@ class AddEcnWithErResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this AddEcnWithErResponse.
+        r"""Gets the created_at of this AddEcnWithErResponse.
 
         创建时间
 
@@ -200,7 +200,7 @@ class AddEcnWithErResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AddEcnWithErResponse.
+        r"""Sets the created_at of this AddEcnWithErResponse.
 
         创建时间
 

@@ -25,7 +25,7 @@ class StackSetOperationUpdateTimePrimitiveTypeHolder:
     }
 
     def __init__(self, update_time=None):
-        """StackSetOperationUpdateTimePrimitiveTypeHolder
+        r"""StackSetOperationUpdateTimePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StackSetOperationUpdateTimePrimitiveTypeHolder:
 
     @property
     def update_time(self):
-        """Gets the update_time of this StackSetOperationUpdateTimePrimitiveTypeHolder.
+        r"""Gets the update_time of this StackSetOperationUpdateTimePrimitiveTypeHolder.
 
         资源栈集操作的更新时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 
@@ -54,7 +54,7 @@ class StackSetOperationUpdateTimePrimitiveTypeHolder:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this StackSetOperationUpdateTimePrimitiveTypeHolder.
+        r"""Sets the update_time of this StackSetOperationUpdateTimePrimitiveTypeHolder.
 
         资源栈集操作的更新时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 

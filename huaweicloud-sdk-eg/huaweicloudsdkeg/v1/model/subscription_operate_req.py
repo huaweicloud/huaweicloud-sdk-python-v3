@@ -27,7 +27,7 @@ class SubscriptionOperateReq:
     }
 
     def __init__(self, subscription_ids=None, operation=None):
-        """SubscriptionOperateReq
+        r"""SubscriptionOperateReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SubscriptionOperateReq:
 
     @property
     def subscription_ids(self):
-        """Gets the subscription_ids of this SubscriptionOperateReq.
+        r"""Gets the subscription_ids of this SubscriptionOperateReq.
 
         订阅对象ID列表，单次批量操作最多支持10个订阅
 
@@ -61,7 +61,7 @@ class SubscriptionOperateReq:
 
     @subscription_ids.setter
     def subscription_ids(self, subscription_ids):
-        """Sets the subscription_ids of this SubscriptionOperateReq.
+        r"""Sets the subscription_ids of this SubscriptionOperateReq.
 
         订阅对象ID列表，单次批量操作最多支持10个订阅
 
@@ -72,7 +72,7 @@ class SubscriptionOperateReq:
 
     @property
     def operation(self):
-        """Gets the operation of this SubscriptionOperateReq.
+        r"""Gets the operation of this SubscriptionOperateReq.
 
         操作类型
 
@@ -83,7 +83,7 @@ class SubscriptionOperateReq:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this SubscriptionOperateReq.
+        r"""Sets the operation of this SubscriptionOperateReq.
 
         操作类型
 

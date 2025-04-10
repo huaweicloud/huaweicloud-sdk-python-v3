@@ -28,7 +28,7 @@ class ListRepositoryTagsResponse(SdkResponse):
     }
 
     def __init__(self, body=None, content_range=None):
-        """ListRepositoryTagsResponse
+        r"""ListRepositoryTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRepositoryTagsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListRepositoryTagsResponse.
+        r"""Gets the body of this ListRepositoryTagsResponse.
 
         镜像tag列表
 
@@ -62,7 +62,7 @@ class ListRepositoryTagsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListRepositoryTagsResponse.
+        r"""Sets the body of this ListRepositoryTagsResponse.
 
         镜像tag列表
 
@@ -73,7 +73,7 @@ class ListRepositoryTagsResponse(SdkResponse):
 
     @property
     def content_range(self):
-        """Gets the content_range of this ListRepositoryTagsResponse.
+        r"""Gets the content_range of this ListRepositoryTagsResponse.
 
         :return: The content_range of this ListRepositoryTagsResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListRepositoryTagsResponse(SdkResponse):
 
     @content_range.setter
     def content_range(self, content_range):
-        """Sets the content_range of this ListRepositoryTagsResponse.
+        r"""Sets the content_range of this ListRepositoryTagsResponse.
 
         :param content_range: The content_range of this ListRepositoryTagsResponse.
         :type content_range: str

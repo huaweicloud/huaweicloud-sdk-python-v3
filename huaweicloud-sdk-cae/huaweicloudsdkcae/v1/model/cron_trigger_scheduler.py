@@ -27,7 +27,7 @@ class CronTriggerScheduler:
     }
 
     def __init__(self, cron=None, target_replica=None):
-        """CronTriggerScheduler
+        r"""CronTriggerScheduler
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CronTriggerScheduler:
 
     @property
     def cron(self):
-        """Gets the cron of this CronTriggerScheduler.
+        r"""Gets the cron of this CronTriggerScheduler.
 
         触发时间点，以五位cron表达式表示。
 
@@ -61,7 +61,7 @@ class CronTriggerScheduler:
 
     @cron.setter
     def cron(self, cron):
-        """Sets the cron of this CronTriggerScheduler.
+        r"""Sets the cron of this CronTriggerScheduler.
 
         触发时间点，以五位cron表达式表示。
 
@@ -72,7 +72,7 @@ class CronTriggerScheduler:
 
     @property
     def target_replica(self):
-        """Gets the target_replica of this CronTriggerScheduler.
+        r"""Gets the target_replica of this CronTriggerScheduler.
 
         要求达到的实例数。
 
@@ -83,7 +83,7 @@ class CronTriggerScheduler:
 
     @target_replica.setter
     def target_replica(self, target_replica):
-        """Sets the target_replica of this CronTriggerScheduler.
+        r"""Sets the target_replica of this CronTriggerScheduler.
 
         要求达到的实例数。
 

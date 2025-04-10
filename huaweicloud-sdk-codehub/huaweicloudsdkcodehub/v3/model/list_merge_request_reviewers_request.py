@@ -31,7 +31,7 @@ class ListMergeRequestReviewersRequest:
     }
 
     def __init__(self, repository_id=None, merge_request_iid=None, page=None, per_page=None):
-        """ListMergeRequestReviewersRequest
+        r"""ListMergeRequestReviewersRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListMergeRequestReviewersRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this ListMergeRequestReviewersRequest.
+        r"""Gets the repository_id of this ListMergeRequestReviewersRequest.
 
         仓库的主键id
 
@@ -73,7 +73,7 @@ class ListMergeRequestReviewersRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this ListMergeRequestReviewersRequest.
+        r"""Sets the repository_id of this ListMergeRequestReviewersRequest.
 
         仓库的主键id
 
@@ -84,7 +84,7 @@ class ListMergeRequestReviewersRequest:
 
     @property
     def merge_request_iid(self):
-        """Gets the merge_request_iid of this ListMergeRequestReviewersRequest.
+        r"""Gets the merge_request_iid of this ListMergeRequestReviewersRequest.
 
         合并请求的短id
 
@@ -95,7 +95,7 @@ class ListMergeRequestReviewersRequest:
 
     @merge_request_iid.setter
     def merge_request_iid(self, merge_request_iid):
-        """Sets the merge_request_iid of this ListMergeRequestReviewersRequest.
+        r"""Sets the merge_request_iid of this ListMergeRequestReviewersRequest.
 
         合并请求的短id
 
@@ -106,7 +106,7 @@ class ListMergeRequestReviewersRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListMergeRequestReviewersRequest.
+        r"""Gets the page of this ListMergeRequestReviewersRequest.
 
         页码
 
@@ -117,7 +117,7 @@ class ListMergeRequestReviewersRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListMergeRequestReviewersRequest.
+        r"""Sets the page of this ListMergeRequestReviewersRequest.
 
         页码
 
@@ -128,7 +128,7 @@ class ListMergeRequestReviewersRequest:
 
     @property
     def per_page(self):
-        """Gets the per_page of this ListMergeRequestReviewersRequest.
+        r"""Gets the per_page of this ListMergeRequestReviewersRequest.
 
         每页条数
 
@@ -139,7 +139,7 @@ class ListMergeRequestReviewersRequest:
 
     @per_page.setter
     def per_page(self, per_page):
-        """Sets the per_page of this ListMergeRequestReviewersRequest.
+        r"""Sets the per_page of this ListMergeRequestReviewersRequest.
 
         每页条数
 

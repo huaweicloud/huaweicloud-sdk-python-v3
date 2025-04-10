@@ -37,7 +37,7 @@ class IncidentDetailExtInfoV2:
     }
 
     def __init__(self, area_code=None, remind_mobile=None, remind_mail=None, contact_type=None, remind_time=None, cc_email=None, commodity_id=None):
-        """IncidentDetailExtInfoV2
+        r"""IncidentDetailExtInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class IncidentDetailExtInfoV2:
 
     @property
     def area_code(self):
-        """Gets the area_code of this IncidentDetailExtInfoV2.
+        r"""Gets the area_code of this IncidentDetailExtInfoV2.
 
         国家码
 
@@ -96,7 +96,7 @@ class IncidentDetailExtInfoV2:
 
     @area_code.setter
     def area_code(self, area_code):
-        """Sets the area_code of this IncidentDetailExtInfoV2.
+        r"""Sets the area_code of this IncidentDetailExtInfoV2.
 
         国家码
 
@@ -107,7 +107,7 @@ class IncidentDetailExtInfoV2:
 
     @property
     def remind_mobile(self):
-        """Gets the remind_mobile of this IncidentDetailExtInfoV2.
+        r"""Gets the remind_mobile of this IncidentDetailExtInfoV2.
 
         提醒手机
 
@@ -118,7 +118,7 @@ class IncidentDetailExtInfoV2:
 
     @remind_mobile.setter
     def remind_mobile(self, remind_mobile):
-        """Sets the remind_mobile of this IncidentDetailExtInfoV2.
+        r"""Sets the remind_mobile of this IncidentDetailExtInfoV2.
 
         提醒手机
 
@@ -129,7 +129,7 @@ class IncidentDetailExtInfoV2:
 
     @property
     def remind_mail(self):
-        """Gets the remind_mail of this IncidentDetailExtInfoV2.
+        r"""Gets the remind_mail of this IncidentDetailExtInfoV2.
 
         提醒邮箱
 
@@ -140,7 +140,7 @@ class IncidentDetailExtInfoV2:
 
     @remind_mail.setter
     def remind_mail(self, remind_mail):
-        """Sets the remind_mail of this IncidentDetailExtInfoV2.
+        r"""Sets the remind_mail of this IncidentDetailExtInfoV2.
 
         提醒邮箱
 
@@ -151,7 +151,7 @@ class IncidentDetailExtInfoV2:
 
     @property
     def contact_type(self):
-        """Gets the contact_type of this IncidentDetailExtInfoV2.
+        r"""Gets the contact_type of this IncidentDetailExtInfoV2.
 
         联系方式类型
 
@@ -162,7 +162,7 @@ class IncidentDetailExtInfoV2:
 
     @contact_type.setter
     def contact_type(self, contact_type):
-        """Sets the contact_type of this IncidentDetailExtInfoV2.
+        r"""Sets the contact_type of this IncidentDetailExtInfoV2.
 
         联系方式类型
 
@@ -173,7 +173,7 @@ class IncidentDetailExtInfoV2:
 
     @property
     def remind_time(self):
-        """Gets the remind_time of this IncidentDetailExtInfoV2.
+        r"""Gets the remind_time of this IncidentDetailExtInfoV2.
 
         提醒时间
 
@@ -184,7 +184,7 @@ class IncidentDetailExtInfoV2:
 
     @remind_time.setter
     def remind_time(self, remind_time):
-        """Sets the remind_time of this IncidentDetailExtInfoV2.
+        r"""Sets the remind_time of this IncidentDetailExtInfoV2.
 
         提醒时间
 
@@ -195,7 +195,7 @@ class IncidentDetailExtInfoV2:
 
     @property
     def cc_email(self):
-        """Gets the cc_email of this IncidentDetailExtInfoV2.
+        r"""Gets the cc_email of this IncidentDetailExtInfoV2.
 
         抄送邮箱
 
@@ -206,7 +206,7 @@ class IncidentDetailExtInfoV2:
 
     @cc_email.setter
     def cc_email(self, cc_email):
-        """Sets the cc_email of this IncidentDetailExtInfoV2.
+        r"""Sets the cc_email of this IncidentDetailExtInfoV2.
 
         抄送邮箱
 
@@ -217,7 +217,7 @@ class IncidentDetailExtInfoV2:
 
     @property
     def commodity_id(self):
-        """Gets the commodity_id of this IncidentDetailExtInfoV2.
+        r"""Gets the commodity_id of this IncidentDetailExtInfoV2.
 
         ISV商品id
 
@@ -228,7 +228,7 @@ class IncidentDetailExtInfoV2:
 
     @commodity_id.setter
     def commodity_id(self, commodity_id):
-        """Sets the commodity_id of this IncidentDetailExtInfoV2.
+        r"""Sets the commodity_id of this IncidentDetailExtInfoV2.
 
         ISV商品id
 

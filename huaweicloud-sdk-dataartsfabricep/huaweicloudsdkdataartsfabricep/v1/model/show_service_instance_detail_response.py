@@ -58,7 +58,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
     }
 
     def __init__(self, visibility=None, source=None, id=None, name=None, description=None, endpoint_id=None, status=None, create_time=None, update_time=None, duration=None, create_user=None, type=None, update_user=None, url=None, config=None, error_code=None, error_msg=None):
-        """ShowServiceInstanceDetailResponse
+        r"""ShowServiceInstanceDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -156,7 +156,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def visibility(self):
-        """Gets the visibility of this ShowServiceInstanceDetailResponse.
+        r"""Gets the visibility of this ShowServiceInstanceDetailResponse.
 
         可见性：  - PRIVATE：私有  - PUBLIC：公共  默认为PRIVATE
 
@@ -167,7 +167,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this ShowServiceInstanceDetailResponse.
+        r"""Sets the visibility of this ShowServiceInstanceDetailResponse.
 
         可见性：  - PRIVATE：私有  - PUBLIC：公共  默认为PRIVATE
 
@@ -178,7 +178,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def source(self):
-        """Gets the source of this ShowServiceInstanceDetailResponse.
+        r"""Gets the source of this ShowServiceInstanceDetailResponse.
 
         :return: The source of this ShowServiceInstanceDetailResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.SourceRef`
@@ -187,7 +187,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ShowServiceInstanceDetailResponse.
+        r"""Sets the source of this ShowServiceInstanceDetailResponse.
 
         :param source: The source of this ShowServiceInstanceDetailResponse.
         :type source: :class:`huaweicloudsdkdataartsfabricep.v1.SourceRef`
@@ -196,7 +196,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowServiceInstanceDetailResponse.
+        r"""Gets the id of this ShowServiceInstanceDetailResponse.
 
         Service Instance的ID
 
@@ -207,7 +207,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowServiceInstanceDetailResponse.
+        r"""Sets the id of this ShowServiceInstanceDetailResponse.
 
         Service Instance的ID
 
@@ -218,7 +218,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowServiceInstanceDetailResponse.
+        r"""Gets the name of this ShowServiceInstanceDetailResponse.
 
         一个Service Instance的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -229,7 +229,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowServiceInstanceDetailResponse.
+        r"""Sets the name of this ShowServiceInstanceDetailResponse.
 
         一个Service Instance的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -240,7 +240,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowServiceInstanceDetailResponse.
+        r"""Gets the description of this ShowServiceInstanceDetailResponse.
 
         描述信息
 
@@ -251,7 +251,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowServiceInstanceDetailResponse.
+        r"""Sets the description of this ShowServiceInstanceDetailResponse.
 
         描述信息
 
@@ -262,7 +262,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this ShowServiceInstanceDetailResponse.
+        r"""Gets the endpoint_id of this ShowServiceInstanceDetailResponse.
 
         endpoint空间id
 
@@ -273,7 +273,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this ShowServiceInstanceDetailResponse.
+        r"""Sets the endpoint_id of this ShowServiceInstanceDetailResponse.
 
         endpoint空间id
 
@@ -284,7 +284,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowServiceInstanceDetailResponse.
+        r"""Gets the status of this ShowServiceInstanceDetailResponse.
 
         :return: The status of this ShowServiceInstanceDetailResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.StatusEnum`
@@ -293,7 +293,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowServiceInstanceDetailResponse.
+        r"""Sets the status of this ShowServiceInstanceDetailResponse.
 
         :param status: The status of this ShowServiceInstanceDetailResponse.
         :type status: :class:`huaweicloudsdkdataartsfabricep.v1.StatusEnum`
@@ -302,7 +302,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowServiceInstanceDetailResponse.
+        r"""Gets the create_time of this ShowServiceInstanceDetailResponse.
 
         创建时间
 
@@ -313,7 +313,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowServiceInstanceDetailResponse.
+        r"""Sets the create_time of this ShowServiceInstanceDetailResponse.
 
         创建时间
 
@@ -324,7 +324,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowServiceInstanceDetailResponse.
+        r"""Gets the update_time of this ShowServiceInstanceDetailResponse.
 
         更新时间
 
@@ -335,7 +335,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowServiceInstanceDetailResponse.
+        r"""Sets the update_time of this ShowServiceInstanceDetailResponse.
 
         更新时间
 
@@ -346,7 +346,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def duration(self):
-        """Gets the duration of this ShowServiceInstanceDetailResponse.
+        r"""Gets the duration of this ShowServiceInstanceDetailResponse.
 
         运行时长
 
@@ -357,7 +357,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ShowServiceInstanceDetailResponse.
+        r"""Sets the duration of this ShowServiceInstanceDetailResponse.
 
         运行时长
 
@@ -368,7 +368,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this ShowServiceInstanceDetailResponse.
+        r"""Gets the create_user of this ShowServiceInstanceDetailResponse.
 
         :return: The create_user of this ShowServiceInstanceDetailResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.User`
@@ -377,7 +377,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ShowServiceInstanceDetailResponse.
+        r"""Sets the create_user of this ShowServiceInstanceDetailResponse.
 
         :param create_user: The create_user of this ShowServiceInstanceDetailResponse.
         :type create_user: :class:`huaweicloudsdkdataartsfabricep.v1.User`
@@ -386,7 +386,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowServiceInstanceDetailResponse.
+        r"""Gets the type of this ShowServiceInstanceDetailResponse.
 
         :return: The type of this ShowServiceInstanceDetailResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.ServiceType`
@@ -395,7 +395,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowServiceInstanceDetailResponse.
+        r"""Sets the type of this ShowServiceInstanceDetailResponse.
 
         :param type: The type of this ShowServiceInstanceDetailResponse.
         :type type: :class:`huaweicloudsdkdataartsfabricep.v1.ServiceType`
@@ -404,7 +404,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def update_user(self):
-        """Gets the update_user of this ShowServiceInstanceDetailResponse.
+        r"""Gets the update_user of this ShowServiceInstanceDetailResponse.
 
         :return: The update_user of this ShowServiceInstanceDetailResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.User`
@@ -413,7 +413,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this ShowServiceInstanceDetailResponse.
+        r"""Sets the update_user of this ShowServiceInstanceDetailResponse.
 
         :param update_user: The update_user of this ShowServiceInstanceDetailResponse.
         :type update_user: :class:`huaweicloudsdkdataartsfabricep.v1.User`
@@ -422,7 +422,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this ShowServiceInstanceDetailResponse.
+        r"""Gets the url of this ShowServiceInstanceDetailResponse.
 
         :return: The url of this ShowServiceInstanceDetailResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.Url`
@@ -431,7 +431,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowServiceInstanceDetailResponse.
+        r"""Sets the url of this ShowServiceInstanceDetailResponse.
 
         :param url: The url of this ShowServiceInstanceDetailResponse.
         :type url: :class:`huaweicloudsdkdataartsfabricep.v1.Url`
@@ -440,7 +440,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def config(self):
-        """Gets the config of this ShowServiceInstanceDetailResponse.
+        r"""Gets the config of this ShowServiceInstanceDetailResponse.
 
         :return: The config of this ShowServiceInstanceDetailResponse.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.AppInstanceConfig`
@@ -449,7 +449,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @config.setter
     def config(self, config):
-        """Sets the config of this ShowServiceInstanceDetailResponse.
+        r"""Sets the config of this ShowServiceInstanceDetailResponse.
 
         :param config: The config of this ShowServiceInstanceDetailResponse.
         :type config: :class:`huaweicloudsdkdataartsfabricep.v1.AppInstanceConfig`
@@ -458,7 +458,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowServiceInstanceDetailResponse.
+        r"""Gets the error_code of this ShowServiceInstanceDetailResponse.
 
         错误码
 
@@ -469,7 +469,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowServiceInstanceDetailResponse.
+        r"""Sets the error_code of this ShowServiceInstanceDetailResponse.
 
         错误码
 
@@ -480,7 +480,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ShowServiceInstanceDetailResponse.
+        r"""Gets the error_msg of this ShowServiceInstanceDetailResponse.
 
         错误描述
 
@@ -491,7 +491,7 @@ class ShowServiceInstanceDetailResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ShowServiceInstanceDetailResponse.
+        r"""Sets the error_msg of this ShowServiceInstanceDetailResponse.
 
         错误描述
 

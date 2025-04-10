@@ -34,7 +34,7 @@ class IdentityCenterSCIMClient(Client):
         return client_builder
 
     def create_group(self, request):
-        """创建用户组
+        r"""创建用户组
 
         使用SCIM协议，同步用户组到IAM身份中心。
         约束条件
@@ -107,7 +107,7 @@ class IdentityCenterSCIMClient(Client):
         return http_info
 
     def delete_group(self, request):
-        """删除用户组
+        r"""删除用户组
 
         删除现有用户组。
         
@@ -176,7 +176,7 @@ class IdentityCenterSCIMClient(Client):
         return http_info
 
     def get_group(self, request):
-        """查询用户组详情
+        r"""查询用户组详情
 
         查询现有用户组的详情信息。
         暂不支持
@@ -248,7 +248,7 @@ class IdentityCenterSCIMClient(Client):
         return http_info
 
     def list_groups(self, request):
-        """列出用户组
+        r"""列出用户组
 
         对现有用户组列表执行筛选查询，最多只能返回50个结果。
         暂不支持
@@ -325,7 +325,7 @@ class IdentityCenterSCIMClient(Client):
         return http_info
 
     def patch_group(self, request):
-        """部分更新用户组
+        r"""部分更新用户组
 
         修改现有用户组的部分属性，和管理用户组中的用户。
         约束条件
@@ -400,7 +400,7 @@ class IdentityCenterSCIMClient(Client):
         return http_info
 
     def service_provider_config(self, request):
-        """查询服务提供商配置
+        r"""查询服务提供商配置
 
         查询IAM身份中心的SCIM相关配置信息。
         
@@ -467,7 +467,7 @@ class IdentityCenterSCIMClient(Client):
         return http_info
 
     def create_user(self, request):
-        """创建用户
+        r"""创建用户
 
         使用SCIM协议，同步用户到IAM身份中心。
         暂不支持
@@ -550,7 +550,7 @@ class IdentityCenterSCIMClient(Client):
         return http_info
 
     def delete_user(self, request):
-        """删除用户
+        r"""删除用户
 
         删除现有用户。
         
@@ -619,7 +619,7 @@ class IdentityCenterSCIMClient(Client):
         return http_info
 
     def get_user(self, request):
-        """查询用户详情
+        r"""查询用户详情
 
         查询现有用户的详情信息。
         
@@ -688,7 +688,7 @@ class IdentityCenterSCIMClient(Client):
         return http_info
 
     def list_users(self, request):
-        """列出用户
+        r"""列出用户
 
         对现有用户列表执行筛选查询，最多只能返回50个结果。
         暂不支持
@@ -765,7 +765,7 @@ class IdentityCenterSCIMClient(Client):
         return http_info
 
     def patch_user(self, request):
-        """部分更新用户
+        r"""部分更新用户
 
         修改现有用户的部分属性。
         暂不支持
@@ -853,7 +853,7 @@ class IdentityCenterSCIMClient(Client):
         return http_info
 
     def put_user(self, request):
-        """更新用户
+        r"""更新用户
 
         更新现有用户。
         暂不支持

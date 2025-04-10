@@ -27,7 +27,7 @@ class UpdateNotificationRequestBody:
     }
 
     def __init__(self, topic=None, status=None):
-        """UpdateNotificationRequestBody
+        r"""UpdateNotificationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateNotificationRequestBody:
 
     @property
     def topic(self):
-        """Gets the topic of this UpdateNotificationRequestBody.
+        r"""Gets the topic of this UpdateNotificationRequestBody.
 
         通知发送的主题名，该主题需要在MQS存在
 
@@ -59,7 +59,7 @@ class UpdateNotificationRequestBody:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this UpdateNotificationRequestBody.
+        r"""Sets the topic of this UpdateNotificationRequestBody.
 
         通知发送的主题名，该主题需要在MQS存在
 
@@ -70,7 +70,7 @@ class UpdateNotificationRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateNotificationRequestBody.
+        r"""Gets the status of this UpdateNotificationRequestBody.
 
         启停状态 0-启用 1-停用
 
@@ -81,7 +81,7 @@ class UpdateNotificationRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateNotificationRequestBody.
+        r"""Sets the status of this UpdateNotificationRequestBody.
 
         启停状态 0-启用 1-停用
 

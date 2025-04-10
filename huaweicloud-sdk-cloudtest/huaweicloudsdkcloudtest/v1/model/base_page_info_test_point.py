@@ -35,7 +35,7 @@ class BasePageInfoTestPoint:
     }
 
     def __init__(self, limit=None, list=None, offset=None, pages=None, size=None, total=None):
-        """BasePageInfoTestPoint
+        r"""BasePageInfoTestPoint
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BasePageInfoTestPoint:
 
     @property
     def limit(self):
-        """Gets the limit of this BasePageInfoTestPoint.
+        r"""Gets the limit of this BasePageInfoTestPoint.
 
         :return: The limit of this BasePageInfoTestPoint.
         :rtype: int
@@ -87,7 +87,7 @@ class BasePageInfoTestPoint:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BasePageInfoTestPoint.
+        r"""Sets the limit of this BasePageInfoTestPoint.
 
         :param limit: The limit of this BasePageInfoTestPoint.
         :type limit: int
@@ -96,7 +96,7 @@ class BasePageInfoTestPoint:
 
     @property
     def list(self):
-        """Gets the list of this BasePageInfoTestPoint.
+        r"""Gets the list of this BasePageInfoTestPoint.
 
         :return: The list of this BasePageInfoTestPoint.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.TestPoint`]
@@ -105,7 +105,7 @@ class BasePageInfoTestPoint:
 
     @list.setter
     def list(self, list):
-        """Sets the list of this BasePageInfoTestPoint.
+        r"""Sets the list of this BasePageInfoTestPoint.
 
         :param list: The list of this BasePageInfoTestPoint.
         :type list: list[:class:`huaweicloudsdkcloudtest.v1.TestPoint`]
@@ -114,7 +114,7 @@ class BasePageInfoTestPoint:
 
     @property
     def offset(self):
-        """Gets the offset of this BasePageInfoTestPoint.
+        r"""Gets the offset of this BasePageInfoTestPoint.
 
         :return: The offset of this BasePageInfoTestPoint.
         :rtype: int
@@ -123,7 +123,7 @@ class BasePageInfoTestPoint:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BasePageInfoTestPoint.
+        r"""Sets the offset of this BasePageInfoTestPoint.
 
         :param offset: The offset of this BasePageInfoTestPoint.
         :type offset: int
@@ -132,7 +132,7 @@ class BasePageInfoTestPoint:
 
     @property
     def pages(self):
-        """Gets the pages of this BasePageInfoTestPoint.
+        r"""Gets the pages of this BasePageInfoTestPoint.
 
         :return: The pages of this BasePageInfoTestPoint.
         :rtype: int
@@ -141,7 +141,7 @@ class BasePageInfoTestPoint:
 
     @pages.setter
     def pages(self, pages):
-        """Sets the pages of this BasePageInfoTestPoint.
+        r"""Sets the pages of this BasePageInfoTestPoint.
 
         :param pages: The pages of this BasePageInfoTestPoint.
         :type pages: int
@@ -150,7 +150,7 @@ class BasePageInfoTestPoint:
 
     @property
     def size(self):
-        """Gets the size of this BasePageInfoTestPoint.
+        r"""Gets the size of this BasePageInfoTestPoint.
 
         :return: The size of this BasePageInfoTestPoint.
         :rtype: int
@@ -159,7 +159,7 @@ class BasePageInfoTestPoint:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BasePageInfoTestPoint.
+        r"""Sets the size of this BasePageInfoTestPoint.
 
         :param size: The size of this BasePageInfoTestPoint.
         :type size: int
@@ -168,7 +168,7 @@ class BasePageInfoTestPoint:
 
     @property
     def total(self):
-        """Gets the total of this BasePageInfoTestPoint.
+        r"""Gets the total of this BasePageInfoTestPoint.
 
         :return: The total of this BasePageInfoTestPoint.
         :rtype: int
@@ -177,7 +177,7 @@ class BasePageInfoTestPoint:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BasePageInfoTestPoint.
+        r"""Sets the total of this BasePageInfoTestPoint.
 
         :param total: The total of this BasePageInfoTestPoint.
         :type total: int

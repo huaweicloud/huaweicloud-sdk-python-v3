@@ -29,7 +29,7 @@ class UpdateServerBlockDeviceRequest:
     }
 
     def __init__(self, server_id=None, volume_id=None, body=None):
-        """UpdateServerBlockDeviceRequest
+        r"""UpdateServerBlockDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateServerBlockDeviceRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this UpdateServerBlockDeviceRequest.
+        r"""Gets the server_id of this UpdateServerBlockDeviceRequest.
 
         云服务器ID。
 
@@ -66,7 +66,7 @@ class UpdateServerBlockDeviceRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this UpdateServerBlockDeviceRequest.
+        r"""Sets the server_id of this UpdateServerBlockDeviceRequest.
 
         云服务器ID。
 
@@ -77,7 +77,7 @@ class UpdateServerBlockDeviceRequest:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this UpdateServerBlockDeviceRequest.
+        r"""Gets the volume_id of this UpdateServerBlockDeviceRequest.
 
         磁盘id，uuid格式
 
@@ -88,7 +88,7 @@ class UpdateServerBlockDeviceRequest:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this UpdateServerBlockDeviceRequest.
+        r"""Sets the volume_id of this UpdateServerBlockDeviceRequest.
 
         磁盘id，uuid格式
 
@@ -99,7 +99,7 @@ class UpdateServerBlockDeviceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateServerBlockDeviceRequest.
+        r"""Gets the body of this UpdateServerBlockDeviceRequest.
 
         :return: The body of this UpdateServerBlockDeviceRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerBlockDeviceReq`
@@ -108,7 +108,7 @@ class UpdateServerBlockDeviceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateServerBlockDeviceRequest.
+        r"""Sets the body of this UpdateServerBlockDeviceRequest.
 
         :param body: The body of this UpdateServerBlockDeviceRequest.
         :type body: :class:`huaweicloudsdkecs.v2.UpdateServerBlockDeviceReq`

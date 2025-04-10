@@ -41,7 +41,7 @@ class AvailableZonesResp:
     }
 
     def __init__(self, sold_out=None, id=None, code=None, name=None, port=None, resource_availability=None, default_az=None, remain_time=None, ipv6_enable=None):
-        """AvailableZonesResp
+        r"""AvailableZonesResp
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class AvailableZonesResp:
 
     @property
     def sold_out(self):
-        """Gets the sold_out of this AvailableZonesResp.
+        r"""Gets the sold_out of this AvailableZonesResp.
 
         是否售罄。
 
@@ -110,7 +110,7 @@ class AvailableZonesResp:
 
     @sold_out.setter
     def sold_out(self, sold_out):
-        """Sets the sold_out of this AvailableZonesResp.
+        r"""Sets the sold_out of this AvailableZonesResp.
 
         是否售罄。
 
@@ -121,7 +121,7 @@ class AvailableZonesResp:
 
     @property
     def id(self):
-        """Gets the id of this AvailableZonesResp.
+        r"""Gets the id of this AvailableZonesResp.
 
         可用区ID。
 
@@ -132,7 +132,7 @@ class AvailableZonesResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AvailableZonesResp.
+        r"""Sets the id of this AvailableZonesResp.
 
         可用区ID。
 
@@ -143,7 +143,7 @@ class AvailableZonesResp:
 
     @property
     def code(self):
-        """Gets the code of this AvailableZonesResp.
+        r"""Gets the code of this AvailableZonesResp.
 
         可用区编码。
 
@@ -154,7 +154,7 @@ class AvailableZonesResp:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this AvailableZonesResp.
+        r"""Sets the code of this AvailableZonesResp.
 
         可用区编码。
 
@@ -165,7 +165,7 @@ class AvailableZonesResp:
 
     @property
     def name(self):
-        """Gets the name of this AvailableZonesResp.
+        r"""Gets the name of this AvailableZonesResp.
 
         可用区名称。
 
@@ -176,7 +176,7 @@ class AvailableZonesResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AvailableZonesResp.
+        r"""Sets the name of this AvailableZonesResp.
 
         可用区名称。
 
@@ -187,7 +187,7 @@ class AvailableZonesResp:
 
     @property
     def port(self):
-        """Gets the port of this AvailableZonesResp.
+        r"""Gets the port of this AvailableZonesResp.
 
         可用区端口号。
 
@@ -198,7 +198,7 @@ class AvailableZonesResp:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this AvailableZonesResp.
+        r"""Sets the port of this AvailableZonesResp.
 
         可用区端口号。
 
@@ -209,7 +209,7 @@ class AvailableZonesResp:
 
     @property
     def resource_availability(self):
-        """Gets the resource_availability of this AvailableZonesResp.
+        r"""Gets the resource_availability of this AvailableZonesResp.
 
         可用区上是否还有可用资源。
 
@@ -220,7 +220,7 @@ class AvailableZonesResp:
 
     @resource_availability.setter
     def resource_availability(self, resource_availability):
-        """Sets the resource_availability of this AvailableZonesResp.
+        r"""Sets the resource_availability of this AvailableZonesResp.
 
         可用区上是否还有可用资源。
 
@@ -231,7 +231,7 @@ class AvailableZonesResp:
 
     @property
     def default_az(self):
-        """Gets the default_az of this AvailableZonesResp.
+        r"""Gets the default_az of this AvailableZonesResp.
 
         是否为默认可用区。
 
@@ -242,7 +242,7 @@ class AvailableZonesResp:
 
     @default_az.setter
     def default_az(self, default_az):
-        """Sets the default_az of this AvailableZonesResp.
+        r"""Sets the default_az of this AvailableZonesResp.
 
         是否为默认可用区。
 
@@ -253,7 +253,7 @@ class AvailableZonesResp:
 
     @property
     def remain_time(self):
-        """Gets the remain_time of this AvailableZonesResp.
+        r"""Gets the remain_time of this AvailableZonesResp.
 
         剩余时间。
 
@@ -264,7 +264,7 @@ class AvailableZonesResp:
 
     @remain_time.setter
     def remain_time(self, remain_time):
-        """Sets the remain_time of this AvailableZonesResp.
+        r"""Sets the remain_time of this AvailableZonesResp.
 
         剩余时间。
 
@@ -275,7 +275,7 @@ class AvailableZonesResp:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this AvailableZonesResp.
+        r"""Gets the ipv6_enable of this AvailableZonesResp.
 
         是否支持IPv6。
 
@@ -286,7 +286,7 @@ class AvailableZonesResp:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this AvailableZonesResp.
+        r"""Sets the ipv6_enable of this AvailableZonesResp.
 
         是否支持IPv6。
 

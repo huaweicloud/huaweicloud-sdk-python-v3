@@ -41,7 +41,7 @@ class CoreIndex:
     }
 
     def __init__(self, error_request_count=None, max_rps=None, max_users=None, request_count=None, rps=None, success_count=None, success_rate=None, trans_tps=None, response_time=None):
-        """CoreIndex
+        r"""CoreIndex
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class CoreIndex:
 
     @property
     def error_request_count(self):
-        """Gets the error_request_count of this CoreIndex.
+        r"""Gets the error_request_count of this CoreIndex.
 
         错误请求数
 
@@ -110,7 +110,7 @@ class CoreIndex:
 
     @error_request_count.setter
     def error_request_count(self, error_request_count):
-        """Sets the error_request_count of this CoreIndex.
+        r"""Sets the error_request_count of this CoreIndex.
 
         错误请求数
 
@@ -121,7 +121,7 @@ class CoreIndex:
 
     @property
     def max_rps(self):
-        """Gets the max_rps of this CoreIndex.
+        r"""Gets the max_rps of this CoreIndex.
 
         最大RPS
 
@@ -132,7 +132,7 @@ class CoreIndex:
 
     @max_rps.setter
     def max_rps(self, max_rps):
-        """Sets the max_rps of this CoreIndex.
+        r"""Sets the max_rps of this CoreIndex.
 
         最大RPS
 
@@ -143,7 +143,7 @@ class CoreIndex:
 
     @property
     def max_users(self):
-        """Gets the max_users of this CoreIndex.
+        r"""Gets the max_users of this CoreIndex.
 
         最大并发数
 
@@ -154,7 +154,7 @@ class CoreIndex:
 
     @max_users.setter
     def max_users(self, max_users):
-        """Sets the max_users of this CoreIndex.
+        r"""Sets the max_users of this CoreIndex.
 
         最大并发数
 
@@ -165,7 +165,7 @@ class CoreIndex:
 
     @property
     def request_count(self):
-        """Gets the request_count of this CoreIndex.
+        r"""Gets the request_count of this CoreIndex.
 
         请求总数
 
@@ -176,7 +176,7 @@ class CoreIndex:
 
     @request_count.setter
     def request_count(self, request_count):
-        """Sets the request_count of this CoreIndex.
+        r"""Sets the request_count of this CoreIndex.
 
         请求总数
 
@@ -187,7 +187,7 @@ class CoreIndex:
 
     @property
     def rps(self):
-        """Gets the rps of this CoreIndex.
+        r"""Gets the rps of this CoreIndex.
 
         平均RPS
 
@@ -198,7 +198,7 @@ class CoreIndex:
 
     @rps.setter
     def rps(self, rps):
-        """Sets the rps of this CoreIndex.
+        r"""Sets the rps of this CoreIndex.
 
         平均RPS
 
@@ -209,7 +209,7 @@ class CoreIndex:
 
     @property
     def success_count(self):
-        """Gets the success_count of this CoreIndex.
+        r"""Gets the success_count of this CoreIndex.
 
         成功数
 
@@ -220,7 +220,7 @@ class CoreIndex:
 
     @success_count.setter
     def success_count(self, success_count):
-        """Sets the success_count of this CoreIndex.
+        r"""Sets the success_count of this CoreIndex.
 
         成功数
 
@@ -231,7 +231,7 @@ class CoreIndex:
 
     @property
     def success_rate(self):
-        """Gets the success_rate of this CoreIndex.
+        r"""Gets the success_rate of this CoreIndex.
 
         成功率
 
@@ -242,7 +242,7 @@ class CoreIndex:
 
     @success_rate.setter
     def success_rate(self, success_rate):
-        """Sets the success_rate of this CoreIndex.
+        r"""Sets the success_rate of this CoreIndex.
 
         成功率
 
@@ -253,7 +253,7 @@ class CoreIndex:
 
     @property
     def trans_tps(self):
-        """Gets the trans_tps of this CoreIndex.
+        r"""Gets the trans_tps of this CoreIndex.
 
         平均TPS
 
@@ -264,7 +264,7 @@ class CoreIndex:
 
     @trans_tps.setter
     def trans_tps(self, trans_tps):
-        """Sets the trans_tps of this CoreIndex.
+        r"""Sets the trans_tps of this CoreIndex.
 
         平均TPS
 
@@ -275,7 +275,7 @@ class CoreIndex:
 
     @property
     def response_time(self):
-        """Gets the response_time of this CoreIndex.
+        r"""Gets the response_time of this CoreIndex.
 
         :return: The response_time of this CoreIndex.
         :rtype: :class:`huaweicloudsdkcpts.v1.ResponseTimeInfo`
@@ -284,7 +284,7 @@ class CoreIndex:
 
     @response_time.setter
     def response_time(self, response_time):
-        """Sets the response_time of this CoreIndex.
+        r"""Sets the response_time of this CoreIndex.
 
         :param response_time: The response_time of this CoreIndex.
         :type response_time: :class:`huaweicloudsdkcpts.v1.ResponseTimeInfo`

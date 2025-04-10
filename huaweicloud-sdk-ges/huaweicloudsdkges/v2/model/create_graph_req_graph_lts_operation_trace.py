@@ -27,7 +27,7 @@ class CreateGraphReqGraphLtsOperationTrace:
     }
 
     def __init__(self, enable_audit=None, audit_log_group_name=None):
-        """CreateGraphReqGraphLtsOperationTrace
+        r"""CreateGraphReqGraphLtsOperationTrace
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateGraphReqGraphLtsOperationTrace:
 
     @property
     def enable_audit(self):
-        """Gets the enable_audit of this CreateGraphReqGraphLtsOperationTrace.
+        r"""Gets the enable_audit of this CreateGraphReqGraphLtsOperationTrace.
 
         是否开启图审计，默认“false”。
 
@@ -61,7 +61,7 @@ class CreateGraphReqGraphLtsOperationTrace:
 
     @enable_audit.setter
     def enable_audit(self, enable_audit):
-        """Sets the enable_audit of this CreateGraphReqGraphLtsOperationTrace.
+        r"""Sets the enable_audit of this CreateGraphReqGraphLtsOperationTrace.
 
         是否开启图审计，默认“false”。
 
@@ -72,7 +72,7 @@ class CreateGraphReqGraphLtsOperationTrace:
 
     @property
     def audit_log_group_name(self):
-        """Gets the audit_log_group_name of this CreateGraphReqGraphLtsOperationTrace.
+        r"""Gets the audit_log_group_name of this CreateGraphReqGraphLtsOperationTrace.
 
         LTS日志组名称。
 
@@ -83,7 +83,7 @@ class CreateGraphReqGraphLtsOperationTrace:
 
     @audit_log_group_name.setter
     def audit_log_group_name(self, audit_log_group_name):
-        """Sets the audit_log_group_name of this CreateGraphReqGraphLtsOperationTrace.
+        r"""Sets the audit_log_group_name of this CreateGraphReqGraphLtsOperationTrace.
 
         LTS日志组名称。
 

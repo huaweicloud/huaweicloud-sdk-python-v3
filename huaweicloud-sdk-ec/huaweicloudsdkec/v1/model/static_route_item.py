@@ -35,7 +35,7 @@ class StaticRouteItem:
     }
 
     def __init__(self, prefix=None, next_hop=None, interface_name=None, priority=None, track_nqa=None, post_to_cloud=None):
-        """StaticRouteItem
+        r"""StaticRouteItem
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class StaticRouteItem:
 
     @property
     def prefix(self):
-        """Gets the prefix of this StaticRouteItem.
+        r"""Gets the prefix of this StaticRouteItem.
 
         目标网络
 
@@ -84,7 +84,7 @@ class StaticRouteItem:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this StaticRouteItem.
+        r"""Sets the prefix of this StaticRouteItem.
 
         目标网络
 
@@ -95,7 +95,7 @@ class StaticRouteItem:
 
     @property
     def next_hop(self):
-        """Gets the next_hop of this StaticRouteItem.
+        r"""Gets the next_hop of this StaticRouteItem.
 
         下一跳地址
 
@@ -106,7 +106,7 @@ class StaticRouteItem:
 
     @next_hop.setter
     def next_hop(self, next_hop):
-        """Sets the next_hop of this StaticRouteItem.
+        r"""Sets the next_hop of this StaticRouteItem.
 
         下一跳地址
 
@@ -117,7 +117,7 @@ class StaticRouteItem:
 
     @property
     def interface_name(self):
-        """Gets the interface_name of this StaticRouteItem.
+        r"""Gets the interface_name of this StaticRouteItem.
 
         接口名字
 
@@ -128,7 +128,7 @@ class StaticRouteItem:
 
     @interface_name.setter
     def interface_name(self, interface_name):
-        """Sets the interface_name of this StaticRouteItem.
+        r"""Sets the interface_name of this StaticRouteItem.
 
         接口名字
 
@@ -139,7 +139,7 @@ class StaticRouteItem:
 
     @property
     def priority(self):
-        """Gets the priority of this StaticRouteItem.
+        r"""Gets the priority of this StaticRouteItem.
 
         优先级
 
@@ -150,7 +150,7 @@ class StaticRouteItem:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this StaticRouteItem.
+        r"""Sets the priority of this StaticRouteItem.
 
         优先级
 
@@ -161,7 +161,7 @@ class StaticRouteItem:
 
     @property
     def track_nqa(self):
-        """Gets the track_nqa of this StaticRouteItem.
+        r"""Gets the track_nqa of this StaticRouteItem.
 
         自动检测
 
@@ -172,7 +172,7 @@ class StaticRouteItem:
 
     @track_nqa.setter
     def track_nqa(self, track_nqa):
-        """Sets the track_nqa of this StaticRouteItem.
+        r"""Sets the track_nqa of this StaticRouteItem.
 
         自动检测
 
@@ -183,7 +183,7 @@ class StaticRouteItem:
 
     @property
     def post_to_cloud(self):
-        """Gets the post_to_cloud of this StaticRouteItem.
+        r"""Gets the post_to_cloud of this StaticRouteItem.
 
         发布到企业连接网络
 
@@ -194,7 +194,7 @@ class StaticRouteItem:
 
     @post_to_cloud.setter
     def post_to_cloud(self, post_to_cloud):
-        """Sets the post_to_cloud of this StaticRouteItem.
+        r"""Sets the post_to_cloud of this StaticRouteItem.
 
         发布到企业连接网络
 

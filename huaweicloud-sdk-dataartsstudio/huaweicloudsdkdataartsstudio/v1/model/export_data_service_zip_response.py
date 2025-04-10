@@ -24,7 +24,7 @@ class ExportDataServiceZipResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """ExportDataServiceZipResponse
+        r"""ExportDataServiceZipResponse
 
         The model defined in huaweicloud sdk
 

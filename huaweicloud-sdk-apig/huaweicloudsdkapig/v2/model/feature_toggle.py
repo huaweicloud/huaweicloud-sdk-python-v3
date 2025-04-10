@@ -29,7 +29,7 @@ class FeatureToggle:
     }
 
     def __init__(self, name=None, enable=None, config=None):
-        """FeatureToggle
+        r"""FeatureToggle
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class FeatureToggle:
 
     @property
     def name(self):
-        """Gets the name of this FeatureToggle.
+        r"""Gets the name of this FeatureToggle.
 
         特性名称
 
@@ -66,7 +66,7 @@ class FeatureToggle:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FeatureToggle.
+        r"""Sets the name of this FeatureToggle.
 
         特性名称
 
@@ -77,7 +77,7 @@ class FeatureToggle:
 
     @property
     def enable(self):
-        """Gets the enable of this FeatureToggle.
+        r"""Gets the enable of this FeatureToggle.
 
         是否开启特性
 
@@ -88,7 +88,7 @@ class FeatureToggle:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this FeatureToggle.
+        r"""Sets the enable of this FeatureToggle.
 
         是否开启特性
 
@@ -99,7 +99,7 @@ class FeatureToggle:
 
     @property
     def config(self):
-        """Gets the config of this FeatureToggle.
+        r"""Gets the config of this FeatureToggle.
 
         特性参数配置
 
@@ -110,7 +110,7 @@ class FeatureToggle:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this FeatureToggle.
+        r"""Sets the config of this FeatureToggle.
 
         特性参数配置
 

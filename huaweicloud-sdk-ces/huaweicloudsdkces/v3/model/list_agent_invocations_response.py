@@ -28,7 +28,7 @@ class ListAgentInvocationsResponse(SdkResponse):
     }
 
     def __init__(self, invocations=None, count=None):
-        """ListAgentInvocationsResponse
+        r"""ListAgentInvocationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAgentInvocationsResponse(SdkResponse):
 
     @property
     def invocations(self):
-        """Gets the invocations of this ListAgentInvocationsResponse.
+        r"""Gets the invocations of this ListAgentInvocationsResponse.
 
         任务列表
 
@@ -62,7 +62,7 @@ class ListAgentInvocationsResponse(SdkResponse):
 
     @invocations.setter
     def invocations(self, invocations):
-        """Sets the invocations of this ListAgentInvocationsResponse.
+        r"""Sets the invocations of this ListAgentInvocationsResponse.
 
         任务列表
 
@@ -73,7 +73,7 @@ class ListAgentInvocationsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAgentInvocationsResponse.
+        r"""Gets the count of this ListAgentInvocationsResponse.
 
         任务列表总量
 
@@ -84,7 +84,7 @@ class ListAgentInvocationsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAgentInvocationsResponse.
+        r"""Sets the count of this ListAgentInvocationsResponse.
 
         任务列表总量
 

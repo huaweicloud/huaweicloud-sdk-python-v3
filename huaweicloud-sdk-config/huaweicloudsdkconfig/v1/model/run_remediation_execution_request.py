@@ -27,7 +27,7 @@ class RunRemediationExecutionRequest:
     }
 
     def __init__(self, policy_assignment_id=None, body=None):
-        """RunRemediationExecutionRequest
+        r"""RunRemediationExecutionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunRemediationExecutionRequest:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this RunRemediationExecutionRequest.
+        r"""Gets the policy_assignment_id of this RunRemediationExecutionRequest.
 
         规则ID
 
@@ -60,7 +60,7 @@ class RunRemediationExecutionRequest:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this RunRemediationExecutionRequest.
+        r"""Sets the policy_assignment_id of this RunRemediationExecutionRequest.
 
         规则ID
 
@@ -71,7 +71,7 @@ class RunRemediationExecutionRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunRemediationExecutionRequest.
+        r"""Gets the body of this RunRemediationExecutionRequest.
 
         :return: The body of this RunRemediationExecutionRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.RemediationRunRequestBody`
@@ -80,7 +80,7 @@ class RunRemediationExecutionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunRemediationExecutionRequest.
+        r"""Sets the body of this RunRemediationExecutionRequest.
 
         :param body: The body of this RunRemediationExecutionRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.RemediationRunRequestBody`

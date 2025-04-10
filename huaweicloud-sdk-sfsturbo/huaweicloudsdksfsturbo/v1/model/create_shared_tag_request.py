@@ -27,7 +27,7 @@ class CreateSharedTagRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """CreateSharedTagRequest
+        r"""CreateSharedTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSharedTagRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this CreateSharedTagRequest.
+        r"""Gets the share_id of this CreateSharedTagRequest.
 
         共享ID
 
@@ -60,7 +60,7 @@ class CreateSharedTagRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this CreateSharedTagRequest.
+        r"""Sets the share_id of this CreateSharedTagRequest.
 
         共享ID
 
@@ -71,7 +71,7 @@ class CreateSharedTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSharedTagRequest.
+        r"""Gets the body of this CreateSharedTagRequest.
 
         :return: The body of this CreateSharedTagRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.CreateSharedTagRequestBody`
@@ -80,7 +80,7 @@ class CreateSharedTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSharedTagRequest.
+        r"""Sets the body of this CreateSharedTagRequest.
 
         :param body: The body of this CreateSharedTagRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.CreateSharedTagRequestBody`

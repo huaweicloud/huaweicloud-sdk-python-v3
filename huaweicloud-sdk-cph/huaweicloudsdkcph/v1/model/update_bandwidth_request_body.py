@@ -25,7 +25,7 @@ class UpdateBandwidthRequestBody:
     }
 
     def __init__(self, band_width_size=None):
-        """UpdateBandwidthRequestBody
+        r"""UpdateBandwidthRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateBandwidthRequestBody:
 
     @property
     def band_width_size(self):
-        """Gets the band_width_size of this UpdateBandwidthRequestBody.
+        r"""Gets the band_width_size of this UpdateBandwidthRequestBody.
 
         - 小于等于300Mbit/s：默认最小增长步长为1Mbit/s。 - 300Mbit/s~1000Mbit/s：默认最小增长步长为50Mbit/s。 - 大于1000Mbit/s：默认最小增长步长为500Mbit/s。
 
@@ -53,7 +53,7 @@ class UpdateBandwidthRequestBody:
 
     @band_width_size.setter
     def band_width_size(self, band_width_size):
-        """Sets the band_width_size of this UpdateBandwidthRequestBody.
+        r"""Sets the band_width_size of this UpdateBandwidthRequestBody.
 
         - 小于等于300Mbit/s：默认最小增长步长为1Mbit/s。 - 300Mbit/s~1000Mbit/s：默认最小增长步长为50Mbit/s。 - 大于1000Mbit/s：默认最小增长步长为500Mbit/s。
 

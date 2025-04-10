@@ -25,7 +25,7 @@ class NeutronUpdateFirewallPolicyRequestBody:
     }
 
     def __init__(self, firewall_policy=None):
-        """NeutronUpdateFirewallPolicyRequestBody
+        r"""NeutronUpdateFirewallPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NeutronUpdateFirewallPolicyRequestBody:
 
     @property
     def firewall_policy(self):
-        """Gets the firewall_policy of this NeutronUpdateFirewallPolicyRequestBody.
+        r"""Gets the firewall_policy of this NeutronUpdateFirewallPolicyRequestBody.
 
         :return: The firewall_policy of this NeutronUpdateFirewallPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallPolicyOption`
@@ -51,7 +51,7 @@ class NeutronUpdateFirewallPolicyRequestBody:
 
     @firewall_policy.setter
     def firewall_policy(self, firewall_policy):
-        """Sets the firewall_policy of this NeutronUpdateFirewallPolicyRequestBody.
+        r"""Sets the firewall_policy of this NeutronUpdateFirewallPolicyRequestBody.
 
         :param firewall_policy: The firewall_policy of this NeutronUpdateFirewallPolicyRequestBody.
         :type firewall_policy: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallPolicyOption`

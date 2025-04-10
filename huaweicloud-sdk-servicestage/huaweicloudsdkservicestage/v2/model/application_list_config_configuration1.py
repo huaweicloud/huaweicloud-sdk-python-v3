@@ -29,7 +29,7 @@ class ApplicationListConfigConfiguration1:
     }
 
     def __init__(self, application_id=None, environment_id=None, configuration=None):
-        """ApplicationListConfigConfiguration1
+        r"""ApplicationListConfigConfiguration1
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ApplicationListConfigConfiguration1:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ApplicationListConfigConfiguration1.
+        r"""Gets the application_id of this ApplicationListConfigConfiguration1.
 
         应用ID。
 
@@ -68,7 +68,7 @@ class ApplicationListConfigConfiguration1:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ApplicationListConfigConfiguration1.
+        r"""Sets the application_id of this ApplicationListConfigConfiguration1.
 
         应用ID。
 
@@ -79,7 +79,7 @@ class ApplicationListConfigConfiguration1:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ApplicationListConfigConfiguration1.
+        r"""Gets the environment_id of this ApplicationListConfigConfiguration1.
 
         环境ID。
 
@@ -90,7 +90,7 @@ class ApplicationListConfigConfiguration1:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ApplicationListConfigConfiguration1.
+        r"""Sets the environment_id of this ApplicationListConfigConfiguration1.
 
         环境ID。
 
@@ -101,7 +101,7 @@ class ApplicationListConfigConfiguration1:
 
     @property
     def configuration(self):
-        """Gets the configuration of this ApplicationListConfigConfiguration1.
+        r"""Gets the configuration of this ApplicationListConfigConfiguration1.
 
         :return: The configuration of this ApplicationListConfigConfiguration1.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ApplicationListConfigConfiguration`
@@ -110,7 +110,7 @@ class ApplicationListConfigConfiguration1:
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this ApplicationListConfigConfiguration1.
+        r"""Sets the configuration of this ApplicationListConfigConfiguration1.
 
         :param configuration: The configuration of this ApplicationListConfigConfiguration1.
         :type configuration: :class:`huaweicloudsdkservicestage.v2.ApplicationListConfigConfiguration`

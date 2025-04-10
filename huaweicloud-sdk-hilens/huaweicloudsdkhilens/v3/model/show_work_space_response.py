@@ -48,7 +48,7 @@ class ShowWorkSpaceResponse(SdkResponse):
     }
 
     def __init__(self, workspace_id=None, ma_workspace_id=None, project_id=None, name=None, description=None, enterprise_project_id=None, enterprise_project_name=None, create_time=None, update_time=None, owner=None, user_id=None, used_flag=None):
-        """ShowWorkSpaceResponse
+        r"""ShowWorkSpaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowWorkSpaceResponse.
+        r"""Gets the workspace_id of this ShowWorkSpaceResponse.
 
         工作空间id
 
@@ -132,7 +132,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowWorkSpaceResponse.
+        r"""Sets the workspace_id of this ShowWorkSpaceResponse.
 
         工作空间id
 
@@ -143,7 +143,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def ma_workspace_id(self):
-        """Gets the ma_workspace_id of this ShowWorkSpaceResponse.
+        r"""Gets the ma_workspace_id of this ShowWorkSpaceResponse.
 
         对应的Modelarts工作空间的id
 
@@ -154,7 +154,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @ma_workspace_id.setter
     def ma_workspace_id(self, ma_workspace_id):
-        """Sets the ma_workspace_id of this ShowWorkSpaceResponse.
+        r"""Sets the ma_workspace_id of this ShowWorkSpaceResponse.
 
         对应的Modelarts工作空间的id
 
@@ -165,7 +165,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowWorkSpaceResponse.
+        r"""Gets the project_id of this ShowWorkSpaceResponse.
 
         项目ID
 
@@ -176,7 +176,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowWorkSpaceResponse.
+        r"""Sets the project_id of this ShowWorkSpaceResponse.
 
         项目ID
 
@@ -187,7 +187,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowWorkSpaceResponse.
+        r"""Gets the name of this ShowWorkSpaceResponse.
 
         工作空间名称
 
@@ -198,7 +198,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowWorkSpaceResponse.
+        r"""Sets the name of this ShowWorkSpaceResponse.
 
         工作空间名称
 
@@ -209,7 +209,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowWorkSpaceResponse.
+        r"""Gets the description of this ShowWorkSpaceResponse.
 
         工作空间描述
 
@@ -220,7 +220,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowWorkSpaceResponse.
+        r"""Sets the description of this ShowWorkSpaceResponse.
 
         工作空间描述
 
@@ -231,7 +231,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowWorkSpaceResponse.
+        r"""Gets the enterprise_project_id of this ShowWorkSpaceResponse.
 
         企业项目ID
 
@@ -242,7 +242,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowWorkSpaceResponse.
+        r"""Sets the enterprise_project_id of this ShowWorkSpaceResponse.
 
         企业项目ID
 
@@ -253,7 +253,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this ShowWorkSpaceResponse.
+        r"""Gets the enterprise_project_name of this ShowWorkSpaceResponse.
 
         企业项目名称
 
@@ -264,7 +264,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this ShowWorkSpaceResponse.
+        r"""Sets the enterprise_project_name of this ShowWorkSpaceResponse.
 
         企业项目名称
 
@@ -275,7 +275,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowWorkSpaceResponse.
+        r"""Gets the create_time of this ShowWorkSpaceResponse.
 
         创建时间
 
@@ -286,7 +286,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowWorkSpaceResponse.
+        r"""Sets the create_time of this ShowWorkSpaceResponse.
 
         创建时间
 
@@ -297,7 +297,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowWorkSpaceResponse.
+        r"""Gets the update_time of this ShowWorkSpaceResponse.
 
         更新时间
 
@@ -308,7 +308,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowWorkSpaceResponse.
+        r"""Sets the update_time of this ShowWorkSpaceResponse.
 
         更新时间
 
@@ -319,7 +319,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this ShowWorkSpaceResponse.
+        r"""Gets the owner of this ShowWorkSpaceResponse.
 
         创建者
 
@@ -330,7 +330,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ShowWorkSpaceResponse.
+        r"""Sets the owner of this ShowWorkSpaceResponse.
 
         创建者
 
@@ -341,7 +341,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowWorkSpaceResponse.
+        r"""Gets the user_id of this ShowWorkSpaceResponse.
 
         创建者的USER_ID
 
@@ -352,7 +352,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowWorkSpaceResponse.
+        r"""Sets the user_id of this ShowWorkSpaceResponse.
 
         创建者的USER_ID
 
@@ -363,7 +363,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def used_flag(self):
-        """Gets the used_flag of this ShowWorkSpaceResponse.
+        r"""Gets the used_flag of this ShowWorkSpaceResponse.
 
         正在被使用
 
@@ -374,7 +374,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @used_flag.setter
     def used_flag(self, used_flag):
-        """Sets the used_flag of this ShowWorkSpaceResponse.
+        r"""Sets the used_flag of this ShowWorkSpaceResponse.
 
         正在被使用
 

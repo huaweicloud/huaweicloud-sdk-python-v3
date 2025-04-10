@@ -55,7 +55,7 @@ class VaultCreate:
     }
 
     def __init__(self, backup_policy_id=None, billing=None, description=None, name=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None, threshold=None, smn_notify=None, backup_name_prefix=None, demand_billing=None, sys_lock_source_service=None, locked=None):
-        """VaultCreate
+        r"""VaultCreate
 
         The model defined in huaweicloud sdk
 
@@ -145,7 +145,7 @@ class VaultCreate:
 
     @property
     def backup_policy_id(self):
-        """Gets the backup_policy_id of this VaultCreate.
+        r"""Gets the backup_policy_id of this VaultCreate.
 
         备份策略ID，不设置时为null，不自动备份。
 
@@ -156,7 +156,7 @@ class VaultCreate:
 
     @backup_policy_id.setter
     def backup_policy_id(self, backup_policy_id):
-        """Sets the backup_policy_id of this VaultCreate.
+        r"""Sets the backup_policy_id of this VaultCreate.
 
         备份策略ID，不设置时为null，不自动备份。
 
@@ -167,7 +167,7 @@ class VaultCreate:
 
     @property
     def billing(self):
-        """Gets the billing of this VaultCreate.
+        r"""Gets the billing of this VaultCreate.
 
         :return: The billing of this VaultCreate.
         :rtype: :class:`huaweicloudsdkcbr.v1.BillingCreate`
@@ -176,7 +176,7 @@ class VaultCreate:
 
     @billing.setter
     def billing(self, billing):
-        """Sets the billing of this VaultCreate.
+        r"""Sets the billing of this VaultCreate.
 
         :param billing: The billing of this VaultCreate.
         :type billing: :class:`huaweicloudsdkcbr.v1.BillingCreate`
@@ -185,7 +185,7 @@ class VaultCreate:
 
     @property
     def description(self):
-        """Gets the description of this VaultCreate.
+        r"""Gets the description of this VaultCreate.
 
         描述
 
@@ -196,7 +196,7 @@ class VaultCreate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VaultCreate.
+        r"""Sets the description of this VaultCreate.
 
         描述
 
@@ -207,7 +207,7 @@ class VaultCreate:
 
     @property
     def name(self):
-        """Gets the name of this VaultCreate.
+        r"""Gets the name of this VaultCreate.
 
         存储库名称
 
@@ -218,7 +218,7 @@ class VaultCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VaultCreate.
+        r"""Sets the name of this VaultCreate.
 
         存储库名称
 
@@ -229,7 +229,7 @@ class VaultCreate:
 
     @property
     def resources(self):
-        """Gets the resources of this VaultCreate.
+        r"""Gets the resources of this VaultCreate.
 
         绑定的备份资源，未在创建时绑定资源填[]
 
@@ -240,7 +240,7 @@ class VaultCreate:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this VaultCreate.
+        r"""Sets the resources of this VaultCreate.
 
         绑定的备份资源，未在创建时绑定资源填[]
 
@@ -251,7 +251,7 @@ class VaultCreate:
 
     @property
     def tags(self):
-        """Gets the tags of this VaultCreate.
+        r"""Gets the tags of this VaultCreate.
 
         标签列表 tags不允许为空列表。 tags中最多包含10个key。 tags中key不允许重复。
 
@@ -262,7 +262,7 @@ class VaultCreate:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this VaultCreate.
+        r"""Sets the tags of this VaultCreate.
 
         标签列表 tags不允许为空列表。 tags中最多包含10个key。 tags中key不允许重复。
 
@@ -273,7 +273,7 @@ class VaultCreate:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this VaultCreate.
+        r"""Gets the enterprise_project_id of this VaultCreate.
 
         企业项目ID，默认为‘0’。
 
@@ -284,7 +284,7 @@ class VaultCreate:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this VaultCreate.
+        r"""Sets the enterprise_project_id of this VaultCreate.
 
         企业项目ID，默认为‘0’。
 
@@ -295,7 +295,7 @@ class VaultCreate:
 
     @property
     def auto_bind(self):
-        """Gets the auto_bind of this VaultCreate.
+        r"""Gets the auto_bind of this VaultCreate.
 
         是否支持自动挂载。
 
@@ -306,7 +306,7 @@ class VaultCreate:
 
     @auto_bind.setter
     def auto_bind(self, auto_bind):
-        """Sets the auto_bind of this VaultCreate.
+        r"""Sets the auto_bind of this VaultCreate.
 
         是否支持自动挂载。
 
@@ -317,7 +317,7 @@ class VaultCreate:
 
     @property
     def bind_rules(self):
-        """Gets the bind_rules of this VaultCreate.
+        r"""Gets the bind_rules of this VaultCreate.
 
         :return: The bind_rules of this VaultCreate.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
@@ -326,7 +326,7 @@ class VaultCreate:
 
     @bind_rules.setter
     def bind_rules(self, bind_rules):
-        """Sets the bind_rules of this VaultCreate.
+        r"""Sets the bind_rules of this VaultCreate.
 
         :param bind_rules: The bind_rules of this VaultCreate.
         :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
@@ -335,7 +335,7 @@ class VaultCreate:
 
     @property
     def auto_expand(self):
-        """Gets the auto_expand of this VaultCreate.
+        r"""Gets the auto_expand of this VaultCreate.
 
         [是否开启存储库自动扩容能力（只支持按需存储库）。](tag:hws,hws_hk) [是否开启存储库自动扩容能力。](tag:dt,ocb,tlf,sbc,fcs_vm,ctc,g42,tm,cmcc,hcso_dt)
 
@@ -346,7 +346,7 @@ class VaultCreate:
 
     @auto_expand.setter
     def auto_expand(self, auto_expand):
-        """Sets the auto_expand of this VaultCreate.
+        r"""Sets the auto_expand of this VaultCreate.
 
         [是否开启存储库自动扩容能力（只支持按需存储库）。](tag:hws,hws_hk) [是否开启存储库自动扩容能力。](tag:dt,ocb,tlf,sbc,fcs_vm,ctc,g42,tm,cmcc,hcso_dt)
 
@@ -357,7 +357,7 @@ class VaultCreate:
 
     @property
     def threshold(self):
-        """Gets the threshold of this VaultCreate.
+        r"""Gets the threshold of this VaultCreate.
 
         存储库容量阈值，已用容量占总容量达到此百分比，将根据 smn_notify 参数设置选择是否发送相关通知。 默认值为：80 最大值：100 最小值：1
 
@@ -368,7 +368,7 @@ class VaultCreate:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this VaultCreate.
+        r"""Sets the threshold of this VaultCreate.
 
         存储库容量阈值，已用容量占总容量达到此百分比，将根据 smn_notify 参数设置选择是否发送相关通知。 默认值为：80 最大值：100 最小值：1
 
@@ -379,7 +379,7 @@ class VaultCreate:
 
     @property
     def smn_notify(self):
-        """Gets the smn_notify of this VaultCreate.
+        r"""Gets the smn_notify of this VaultCreate.
 
         存储库smn消息通知开关。 默认值为 true。
 
@@ -390,7 +390,7 @@ class VaultCreate:
 
     @smn_notify.setter
     def smn_notify(self, smn_notify):
-        """Sets the smn_notify of this VaultCreate.
+        r"""Sets the smn_notify of this VaultCreate.
 
         存储库smn消息通知开关。 默认值为 true。
 
@@ -401,7 +401,7 @@ class VaultCreate:
 
     @property
     def backup_name_prefix(self):
-        """Gets the backup_name_prefix of this VaultCreate.
+        r"""Gets the backup_name_prefix of this VaultCreate.
 
         备份名称前缀，设置后该存储库自动备份产生的备份副本都将携带该备份名称前缀
 
@@ -412,7 +412,7 @@ class VaultCreate:
 
     @backup_name_prefix.setter
     def backup_name_prefix(self, backup_name_prefix):
-        """Sets the backup_name_prefix of this VaultCreate.
+        r"""Sets the backup_name_prefix of this VaultCreate.
 
         备份名称前缀，设置后该存储库自动备份产生的备份副本都将携带该备份名称前缀
 
@@ -423,7 +423,7 @@ class VaultCreate:
 
     @property
     def demand_billing(self):
-        """Gets the demand_billing of this VaultCreate.
+        r"""Gets the demand_billing of this VaultCreate.
 
         存储库使用是否允许超出容量，只有创建包周期存储库时才允许该值为 true
 
@@ -434,7 +434,7 @@ class VaultCreate:
 
     @demand_billing.setter
     def demand_billing(self, demand_billing):
-        """Sets the demand_billing of this VaultCreate.
+        r"""Sets the demand_billing of this VaultCreate.
 
         存储库使用是否允许超出容量，只有创建包周期存储库时才允许该值为 true
 
@@ -445,7 +445,7 @@ class VaultCreate:
 
     @property
     def sys_lock_source_service(self):
-        """Gets the sys_lock_source_service of this VaultCreate.
+        r"""Gets the sys_lock_source_service of this VaultCreate.
 
         用于标识SMB服务，您可以设置为SMB或者空
 
@@ -456,7 +456,7 @@ class VaultCreate:
 
     @sys_lock_source_service.setter
     def sys_lock_source_service(self, sys_lock_source_service):
-        """Sets the sys_lock_source_service of this VaultCreate.
+        r"""Sets the sys_lock_source_service of this VaultCreate.
 
         用于标识SMB服务，您可以设置为SMB或者空
 
@@ -467,7 +467,7 @@ class VaultCreate:
 
     @property
     def locked(self):
-        """Gets the locked of this VaultCreate.
+        r"""Gets the locked of this VaultCreate.
 
         用于标识该存储库是否已锁定
 
@@ -478,7 +478,7 @@ class VaultCreate:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this VaultCreate.
+        r"""Sets the locked of this VaultCreate.
 
         用于标识该存储库是否已锁定
 

@@ -27,7 +27,7 @@ class UpdateOrderRequest:
     }
 
     def __init__(self, order_id=None, body=None):
-        """UpdateOrderRequest
+        r"""UpdateOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateOrderRequest:
 
     @property
     def order_id(self):
-        """Gets the order_id of this UpdateOrderRequest.
+        r"""Gets the order_id of this UpdateOrderRequest.
 
         订单ID
 
@@ -60,7 +60,7 @@ class UpdateOrderRequest:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this UpdateOrderRequest.
+        r"""Sets the order_id of this UpdateOrderRequest.
 
         订单ID
 
@@ -71,7 +71,7 @@ class UpdateOrderRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateOrderRequest.
+        r"""Gets the body of this UpdateOrderRequest.
 
         :return: The body of this UpdateOrderRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.CbcUpdate`
@@ -80,7 +80,7 @@ class UpdateOrderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateOrderRequest.
+        r"""Sets the body of this UpdateOrderRequest.
 
         :param body: The body of this UpdateOrderRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.CbcUpdate`

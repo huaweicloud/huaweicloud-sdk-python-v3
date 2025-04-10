@@ -27,7 +27,7 @@ class DeleteSearchCriterias:
     }
 
     def __init__(self, eps_id=None, id=None):
-        """DeleteSearchCriterias
+        r"""DeleteSearchCriterias
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteSearchCriterias:
 
     @property
     def eps_id(self):
-        """Gets the eps_id of this DeleteSearchCriterias.
+        r"""Gets the eps_id of this DeleteSearchCriterias.
 
         企业项目id
 
@@ -60,7 +60,7 @@ class DeleteSearchCriterias:
 
     @eps_id.setter
     def eps_id(self, eps_id):
-        """Sets the eps_id of this DeleteSearchCriterias.
+        r"""Sets the eps_id of this DeleteSearchCriterias.
 
         企业项目id
 
@@ -71,7 +71,7 @@ class DeleteSearchCriterias:
 
     @property
     def id(self):
-        """Gets the id of this DeleteSearchCriterias.
+        r"""Gets the id of this DeleteSearchCriterias.
 
         快速查询id
 
@@ -82,7 +82,7 @@ class DeleteSearchCriterias:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteSearchCriterias.
+        r"""Sets the id of this DeleteSearchCriterias.
 
         快速查询id
 

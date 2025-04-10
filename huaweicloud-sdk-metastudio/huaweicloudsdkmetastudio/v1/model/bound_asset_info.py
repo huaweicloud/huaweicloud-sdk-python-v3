@@ -27,7 +27,7 @@ class BoundAssetInfo:
     }
 
     def __init__(self, asset_id=None, asset_name=None):
-        """BoundAssetInfo
+        r"""BoundAssetInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BoundAssetInfo:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this BoundAssetInfo.
+        r"""Gets the asset_id of this BoundAssetInfo.
 
         资产ID。
 
@@ -61,7 +61,7 @@ class BoundAssetInfo:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this BoundAssetInfo.
+        r"""Sets the asset_id of this BoundAssetInfo.
 
         资产ID。
 
@@ -72,7 +72,7 @@ class BoundAssetInfo:
 
     @property
     def asset_name(self):
-        """Gets the asset_name of this BoundAssetInfo.
+        r"""Gets the asset_name of this BoundAssetInfo.
 
         资产名称。从资产库查询的资产名称
 
@@ -83,7 +83,7 @@ class BoundAssetInfo:
 
     @asset_name.setter
     def asset_name(self, asset_name):
-        """Sets the asset_name of this BoundAssetInfo.
+        r"""Sets the asset_name of this BoundAssetInfo.
 
         资产名称。从资产库查询的资产名称
 

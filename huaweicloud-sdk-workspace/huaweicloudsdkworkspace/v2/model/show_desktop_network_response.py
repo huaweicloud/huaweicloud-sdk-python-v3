@@ -30,7 +30,7 @@ class ShowDesktopNetworkResponse(SdkResponse):
     }
 
     def __init__(self, computer_name=None, computer_id=None, network_infos=None):
-        """ShowDesktopNetworkResponse
+        r"""ShowDesktopNetworkResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowDesktopNetworkResponse(SdkResponse):
 
     @property
     def computer_name(self):
-        """Gets the computer_name of this ShowDesktopNetworkResponse.
+        r"""Gets the computer_name of this ShowDesktopNetworkResponse.
 
         桌面名称
 
@@ -69,7 +69,7 @@ class ShowDesktopNetworkResponse(SdkResponse):
 
     @computer_name.setter
     def computer_name(self, computer_name):
-        """Sets the computer_name of this ShowDesktopNetworkResponse.
+        r"""Sets the computer_name of this ShowDesktopNetworkResponse.
 
         桌面名称
 
@@ -80,7 +80,7 @@ class ShowDesktopNetworkResponse(SdkResponse):
 
     @property
     def computer_id(self):
-        """Gets the computer_id of this ShowDesktopNetworkResponse.
+        r"""Gets the computer_id of this ShowDesktopNetworkResponse.
 
         桌面ID
 
@@ -91,7 +91,7 @@ class ShowDesktopNetworkResponse(SdkResponse):
 
     @computer_id.setter
     def computer_id(self, computer_id):
-        """Sets the computer_id of this ShowDesktopNetworkResponse.
+        r"""Sets the computer_id of this ShowDesktopNetworkResponse.
 
         桌面ID
 
@@ -102,7 +102,7 @@ class ShowDesktopNetworkResponse(SdkResponse):
 
     @property
     def network_infos(self):
-        """Gets the network_infos of this ShowDesktopNetworkResponse.
+        r"""Gets the network_infos of this ShowDesktopNetworkResponse.
 
         桌面网络信息
 
@@ -113,7 +113,7 @@ class ShowDesktopNetworkResponse(SdkResponse):
 
     @network_infos.setter
     def network_infos(self, network_infos):
-        """Sets the network_infos of this ShowDesktopNetworkResponse.
+        r"""Sets the network_infos of this ShowDesktopNetworkResponse.
 
         桌面网络信息
 

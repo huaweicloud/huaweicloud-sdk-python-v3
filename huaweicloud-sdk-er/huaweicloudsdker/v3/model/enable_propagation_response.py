@@ -30,7 +30,7 @@ class EnablePropagationResponse(SdkResponse):
     }
 
     def __init__(self, propagation=None, request_id=None, x_client_token=None):
-        """EnablePropagationResponse
+        r"""EnablePropagationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class EnablePropagationResponse(SdkResponse):
 
     @property
     def propagation(self):
-        """Gets the propagation of this EnablePropagationResponse.
+        r"""Gets the propagation of this EnablePropagationResponse.
 
         :return: The propagation of this EnablePropagationResponse.
         :rtype: :class:`huaweicloudsdker.v3.Propagation`
@@ -67,7 +67,7 @@ class EnablePropagationResponse(SdkResponse):
 
     @propagation.setter
     def propagation(self, propagation):
-        """Sets the propagation of this EnablePropagationResponse.
+        r"""Sets the propagation of this EnablePropagationResponse.
 
         :param propagation: The propagation of this EnablePropagationResponse.
         :type propagation: :class:`huaweicloudsdker.v3.Propagation`
@@ -76,7 +76,7 @@ class EnablePropagationResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this EnablePropagationResponse.
+        r"""Gets the request_id of this EnablePropagationResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class EnablePropagationResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this EnablePropagationResponse.
+        r"""Sets the request_id of this EnablePropagationResponse.
 
         请求ID
 
@@ -98,7 +98,7 @@ class EnablePropagationResponse(SdkResponse):
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this EnablePropagationResponse.
+        r"""Gets the x_client_token of this EnablePropagationResponse.
 
         :return: The x_client_token of this EnablePropagationResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class EnablePropagationResponse(SdkResponse):
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this EnablePropagationResponse.
+        r"""Sets the x_client_token of this EnablePropagationResponse.
 
         :param x_client_token: The x_client_token of this EnablePropagationResponse.
         :type x_client_token: str

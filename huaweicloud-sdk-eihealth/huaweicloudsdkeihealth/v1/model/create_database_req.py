@@ -31,7 +31,7 @@ class CreateDatabaseReq:
     }
 
     def __init__(self, name=None, template_id=None, description=None, import_data=None):
-        """CreateDatabaseReq
+        r"""CreateDatabaseReq
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateDatabaseReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateDatabaseReq.
+        r"""Gets the name of this CreateDatabaseReq.
 
         实例名称
 
@@ -73,7 +73,7 @@ class CreateDatabaseReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDatabaseReq.
+        r"""Sets the name of this CreateDatabaseReq.
 
         实例名称
 
@@ -84,7 +84,7 @@ class CreateDatabaseReq:
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreateDatabaseReq.
+        r"""Gets the template_id of this CreateDatabaseReq.
 
         模板id
 
@@ -95,7 +95,7 @@ class CreateDatabaseReq:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreateDatabaseReq.
+        r"""Sets the template_id of this CreateDatabaseReq.
 
         模板id
 
@@ -106,7 +106,7 @@ class CreateDatabaseReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateDatabaseReq.
+        r"""Gets the description of this CreateDatabaseReq.
 
         实例描述
 
@@ -117,7 +117,7 @@ class CreateDatabaseReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateDatabaseReq.
+        r"""Sets the description of this CreateDatabaseReq.
 
         实例描述
 
@@ -128,7 +128,7 @@ class CreateDatabaseReq:
 
     @property
     def import_data(self):
-        """Gets the import_data of this CreateDatabaseReq.
+        r"""Gets the import_data of this CreateDatabaseReq.
 
         :return: The import_data of this CreateDatabaseReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportDatabaseDataReq`
@@ -137,7 +137,7 @@ class CreateDatabaseReq:
 
     @import_data.setter
     def import_data(self, import_data):
-        """Sets the import_data of this CreateDatabaseReq.
+        r"""Sets the import_data of this CreateDatabaseReq.
 
         :param import_data: The import_data of this CreateDatabaseReq.
         :type import_data: :class:`huaweicloudsdkeihealth.v1.ImportDatabaseDataReq`

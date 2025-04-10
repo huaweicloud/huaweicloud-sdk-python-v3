@@ -28,7 +28,7 @@ class ListAllBranchesResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """ListAllBranchesResponse
+        r"""ListAllBranchesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAllBranchesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListAllBranchesResponse.
+        r"""Gets the status of this ListAllBranchesResponse.
 
         对外时：success|error;
 
@@ -62,7 +62,7 @@ class ListAllBranchesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAllBranchesResponse.
+        r"""Sets the status of this ListAllBranchesResponse.
 
         对外时：success|error;
 
@@ -73,7 +73,7 @@ class ListAllBranchesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListAllBranchesResponse.
+        r"""Gets the result of this ListAllBranchesResponse.
 
         :return: The result of this ListAllBranchesResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueListTestVersionVo`
@@ -82,7 +82,7 @@ class ListAllBranchesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListAllBranchesResponse.
+        r"""Sets the result of this ListAllBranchesResponse.
 
         :param result: The result of this ListAllBranchesResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueListTestVersionVo`

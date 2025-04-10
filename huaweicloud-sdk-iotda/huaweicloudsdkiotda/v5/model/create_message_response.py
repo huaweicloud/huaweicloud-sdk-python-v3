@@ -28,7 +28,7 @@ class CreateMessageResponse(SdkResponse):
     }
 
     def __init__(self, message_id=None, result=None):
-        """CreateMessageResponse
+        r"""CreateMessageResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateMessageResponse(SdkResponse):
 
     @property
     def message_id(self):
-        """Gets the message_id of this CreateMessageResponse.
+        r"""Gets the message_id of this CreateMessageResponse.
 
         消息id，由用户生成（推荐使用UUID），同一个设备下唯一， 如果用户不填写，则由物联网平台生成。
 
@@ -62,7 +62,7 @@ class CreateMessageResponse(SdkResponse):
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this CreateMessageResponse.
+        r"""Sets the message_id of this CreateMessageResponse.
 
         消息id，由用户生成（推荐使用UUID），同一个设备下唯一， 如果用户不填写，则由物联网平台生成。
 
@@ -73,7 +73,7 @@ class CreateMessageResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateMessageResponse.
+        r"""Gets the result of this CreateMessageResponse.
 
         :return: The result of this CreateMessageResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.MessageResult`
@@ -82,7 +82,7 @@ class CreateMessageResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateMessageResponse.
+        r"""Sets the result of this CreateMessageResponse.
 
         :param result: The result of this CreateMessageResponse.
         :type result: :class:`huaweicloudsdkiotda.v5.MessageResult`

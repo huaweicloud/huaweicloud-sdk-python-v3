@@ -29,7 +29,7 @@ class LogContents:
     }
 
     def __init__(self, content=None, line_num=None, labels=None):
-        """LogContents
+        r"""LogContents
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LogContents:
 
     @property
     def content(self):
-        """Gets the content of this LogContents.
+        r"""Gets the content of this LogContents.
 
         日志原数据。
 
@@ -68,7 +68,7 @@ class LogContents:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this LogContents.
+        r"""Sets the content of this LogContents.
 
         日志原数据。
 
@@ -79,7 +79,7 @@ class LogContents:
 
     @property
     def line_num(self):
-        """Gets the line_num of this LogContents.
+        r"""Gets the line_num of this LogContents.
 
         日志单行序列号。
 
@@ -90,7 +90,7 @@ class LogContents:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this LogContents.
+        r"""Sets the line_num of this LogContents.
 
         日志单行序列号。
 
@@ -101,7 +101,7 @@ class LogContents:
 
     @property
     def labels(self):
-        """Gets the labels of this LogContents.
+        r"""Gets the labels of this LogContents.
 
         该条日志包含的 labels。
 
@@ -112,7 +112,7 @@ class LogContents:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this LogContents.
+        r"""Sets the labels of this LogContents.
 
         该条日志包含的 labels。
 

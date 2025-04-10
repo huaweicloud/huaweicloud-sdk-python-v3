@@ -30,7 +30,7 @@ class ListCnInfosBeforeReduceResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, max_reduction_num=None, nodes=None):
-        """ListCnInfosBeforeReduceResponse
+        r"""ListCnInfosBeforeReduceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCnInfosBeforeReduceResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListCnInfosBeforeReduceResponse.
+        r"""Gets the instance_id of this ListCnInfosBeforeReduceResponse.
 
         实例ID。
 
@@ -69,7 +69,7 @@ class ListCnInfosBeforeReduceResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListCnInfosBeforeReduceResponse.
+        r"""Sets the instance_id of this ListCnInfosBeforeReduceResponse.
 
         实例ID。
 
@@ -80,7 +80,7 @@ class ListCnInfosBeforeReduceResponse(SdkResponse):
 
     @property
     def max_reduction_num(self):
-        """Gets the max_reduction_num of this ListCnInfosBeforeReduceResponse.
+        r"""Gets the max_reduction_num of this ListCnInfosBeforeReduceResponse.
 
         单次缩容允许最大步长。
 
@@ -91,7 +91,7 @@ class ListCnInfosBeforeReduceResponse(SdkResponse):
 
     @max_reduction_num.setter
     def max_reduction_num(self, max_reduction_num):
-        """Sets the max_reduction_num of this ListCnInfosBeforeReduceResponse.
+        r"""Sets the max_reduction_num of this ListCnInfosBeforeReduceResponse.
 
         单次缩容允许最大步长。
 
@@ -102,7 +102,7 @@ class ListCnInfosBeforeReduceResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this ListCnInfosBeforeReduceResponse.
+        r"""Gets the nodes of this ListCnInfosBeforeReduceResponse.
 
         节点信息列表。
 
@@ -113,7 +113,7 @@ class ListCnInfosBeforeReduceResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ListCnInfosBeforeReduceResponse.
+        r"""Sets the nodes of this ListCnInfosBeforeReduceResponse.
 
         节点信息列表。
 

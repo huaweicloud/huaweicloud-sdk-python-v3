@@ -25,7 +25,7 @@ class AgencyAuth:
     }
 
     def __init__(self, identity=None):
-        """AgencyAuth
+        r"""AgencyAuth
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AgencyAuth:
 
     @property
     def identity(self):
-        """Gets the identity of this AgencyAuth.
+        r"""Gets the identity of this AgencyAuth.
 
         :return: The identity of this AgencyAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyAuthIdentity`
@@ -51,7 +51,7 @@ class AgencyAuth:
 
     @identity.setter
     def identity(self, identity):
-        """Sets the identity of this AgencyAuth.
+        r"""Sets the identity of this AgencyAuth.
 
         :param identity: The identity of this AgencyAuth.
         :type identity: :class:`huaweicloudsdkiam.v3.AgencyAuthIdentity`

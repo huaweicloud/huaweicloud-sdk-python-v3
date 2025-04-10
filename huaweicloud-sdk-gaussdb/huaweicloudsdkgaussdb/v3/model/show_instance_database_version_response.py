@@ -28,7 +28,7 @@ class ShowInstanceDatabaseVersionResponse(SdkResponse):
     }
 
     def __init__(self, datastore=None, upgrade_flag=None):
-        """ShowInstanceDatabaseVersionResponse
+        r"""ShowInstanceDatabaseVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowInstanceDatabaseVersionResponse(SdkResponse):
 
     @property
     def datastore(self):
-        """Gets the datastore of this ShowInstanceDatabaseVersionResponse.
+        r"""Gets the datastore of this ShowInstanceDatabaseVersionResponse.
 
         :return: The datastore of this ShowInstanceDatabaseVersionResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.InstanceDatabaseVersionInfo`
@@ -60,7 +60,7 @@ class ShowInstanceDatabaseVersionResponse(SdkResponse):
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this ShowInstanceDatabaseVersionResponse.
+        r"""Sets the datastore of this ShowInstanceDatabaseVersionResponse.
 
         :param datastore: The datastore of this ShowInstanceDatabaseVersionResponse.
         :type datastore: :class:`huaweicloudsdkgaussdb.v3.InstanceDatabaseVersionInfo`
@@ -69,7 +69,7 @@ class ShowInstanceDatabaseVersionResponse(SdkResponse):
 
     @property
     def upgrade_flag(self):
-        """Gets the upgrade_flag of this ShowInstanceDatabaseVersionResponse.
+        r"""Gets the upgrade_flag of this ShowInstanceDatabaseVersionResponse.
 
         是否可升级。 - true：是。 - false：否。
 
@@ -80,7 +80,7 @@ class ShowInstanceDatabaseVersionResponse(SdkResponse):
 
     @upgrade_flag.setter
     def upgrade_flag(self, upgrade_flag):
-        """Sets the upgrade_flag of this ShowInstanceDatabaseVersionResponse.
+        r"""Sets the upgrade_flag of this ShowInstanceDatabaseVersionResponse.
 
         是否可升级。 - true：是。 - false：否。
 

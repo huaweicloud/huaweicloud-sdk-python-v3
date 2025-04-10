@@ -27,7 +27,7 @@ class AddRdsNoAgentDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """AddRdsNoAgentDatabaseRequest
+        r"""AddRdsNoAgentDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddRdsNoAgentDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddRdsNoAgentDatabaseRequest.
+        r"""Gets the instance_id of this AddRdsNoAgentDatabaseRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -60,7 +60,7 @@ class AddRdsNoAgentDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddRdsNoAgentDatabaseRequest.
+        r"""Sets the instance_id of this AddRdsNoAgentDatabaseRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -71,7 +71,7 @@ class AddRdsNoAgentDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddRdsNoAgentDatabaseRequest.
+        r"""Gets the body of this AddRdsNoAgentDatabaseRequest.
 
         :return: The body of this AddRdsNoAgentDatabaseRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.RdsNoAgentDbRequest`
@@ -80,7 +80,7 @@ class AddRdsNoAgentDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddRdsNoAgentDatabaseRequest.
+        r"""Sets the body of this AddRdsNoAgentDatabaseRequest.
 
         :param body: The body of this AddRdsNoAgentDatabaseRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.RdsNoAgentDbRequest`

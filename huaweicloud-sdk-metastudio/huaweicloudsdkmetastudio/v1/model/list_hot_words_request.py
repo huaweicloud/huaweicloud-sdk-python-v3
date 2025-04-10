@@ -35,7 +35,7 @@ class ListHotWordsRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None, robot_id=None, region=None, language=None):
-        """ListHotWordsRequest
+        r"""ListHotWordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListHotWordsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListHotWordsRequest.
+        r"""Gets the x_app_user_id of this ListHotWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -88,7 +88,7 @@ class ListHotWordsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListHotWordsRequest.
+        r"""Sets the x_app_user_id of this ListHotWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -99,7 +99,7 @@ class ListHotWordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHotWordsRequest.
+        r"""Gets the offset of this ListHotWordsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -110,7 +110,7 @@ class ListHotWordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHotWordsRequest.
+        r"""Sets the offset of this ListHotWordsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -121,7 +121,7 @@ class ListHotWordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHotWordsRequest.
+        r"""Gets the limit of this ListHotWordsRequest.
 
         每页显示的条目数量。
 
@@ -132,7 +132,7 @@ class ListHotWordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHotWordsRequest.
+        r"""Sets the limit of this ListHotWordsRequest.
 
         每页显示的条目数量。
 
@@ -143,7 +143,7 @@ class ListHotWordsRequest:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this ListHotWordsRequest.
+        r"""Gets the robot_id of this ListHotWordsRequest.
 
         应用ID。
 
@@ -154,7 +154,7 @@ class ListHotWordsRequest:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this ListHotWordsRequest.
+        r"""Sets the robot_id of this ListHotWordsRequest.
 
         应用ID。
 
@@ -165,7 +165,7 @@ class ListHotWordsRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListHotWordsRequest.
+        r"""Gets the region of this ListHotWordsRequest.
 
         sis服务所在区域
 
@@ -176,7 +176,7 @@ class ListHotWordsRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListHotWordsRequest.
+        r"""Sets the region of this ListHotWordsRequest.
 
         sis服务所在区域
 
@@ -187,7 +187,7 @@ class ListHotWordsRequest:
 
     @property
     def language(self):
-        """Gets the language of this ListHotWordsRequest.
+        r"""Gets the language of this ListHotWordsRequest.
 
         智能交互语言  * zh_CN：简体中文（已下线，请使用CN）  * en_US：英语（已下线，请使用EN）  * CN: 中文  * EN: 英文
 
@@ -198,7 +198,7 @@ class ListHotWordsRequest:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ListHotWordsRequest.
+        r"""Sets the language of this ListHotWordsRequest.
 
         智能交互语言  * zh_CN：简体中文（已下线，请使用CN）  * en_US：英语（已下线，请使用EN）  * CN: 中文  * EN: 英文
 

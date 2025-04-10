@@ -29,7 +29,7 @@ class SimpleTimerType:
     }
 
     def __init__(self, start_time=None, repeat_interval=None, repeat_count=None):
-        """SimpleTimerType
+        r"""SimpleTimerType
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SimpleTimerType:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SimpleTimerType.
+        r"""Gets the start_time of this SimpleTimerType.
 
         **参数说明**：规则触发的开始时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'。
 
@@ -65,7 +65,7 @@ class SimpleTimerType:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SimpleTimerType.
+        r"""Sets the start_time of this SimpleTimerType.
 
         **参数说明**：规则触发的开始时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'。
 
@@ -76,7 +76,7 @@ class SimpleTimerType:
 
     @property
     def repeat_interval(self):
-        """Gets the repeat_interval of this SimpleTimerType.
+        r"""Gets the repeat_interval of this SimpleTimerType.
 
         **参数说明**：规则触发的重复时间间隔，单位为秒。
 
@@ -87,7 +87,7 @@ class SimpleTimerType:
 
     @repeat_interval.setter
     def repeat_interval(self, repeat_interval):
-        """Sets the repeat_interval of this SimpleTimerType.
+        r"""Sets the repeat_interval of this SimpleTimerType.
 
         **参数说明**：规则触发的重复时间间隔，单位为秒。
 
@@ -98,7 +98,7 @@ class SimpleTimerType:
 
     @property
     def repeat_count(self):
-        """Gets the repeat_count of this SimpleTimerType.
+        r"""Gets the repeat_count of this SimpleTimerType.
 
         **参数说明**：规则触发的重复次数。
 
@@ -109,7 +109,7 @@ class SimpleTimerType:
 
     @repeat_count.setter
     def repeat_count(self, repeat_count):
-        """Sets the repeat_count of this SimpleTimerType.
+        r"""Sets the repeat_count of this SimpleTimerType.
 
         **参数说明**：规则触发的重复次数。
 

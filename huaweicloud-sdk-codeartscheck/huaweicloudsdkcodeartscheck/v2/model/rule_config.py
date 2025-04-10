@@ -39,7 +39,7 @@ class RuleConfig:
     }
 
     def __init__(self, id=None, rule_id=None, default_value=None, option_value=None, option_key=None, option_name=None, template_id=None, description=None):
-        """RuleConfig
+        r"""RuleConfig
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class RuleConfig:
 
     @property
     def id(self):
-        """Gets the id of this RuleConfig.
+        r"""Gets the id of this RuleConfig.
 
         规则配置ID
 
@@ -103,7 +103,7 @@ class RuleConfig:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RuleConfig.
+        r"""Sets the id of this RuleConfig.
 
         规则配置ID
 
@@ -114,7 +114,7 @@ class RuleConfig:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this RuleConfig.
+        r"""Gets the rule_id of this RuleConfig.
 
         规则ID
 
@@ -125,7 +125,7 @@ class RuleConfig:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this RuleConfig.
+        r"""Sets the rule_id of this RuleConfig.
 
         规则ID
 
@@ -136,7 +136,7 @@ class RuleConfig:
 
     @property
     def default_value(self):
-        """Gets the default_value of this RuleConfig.
+        r"""Gets the default_value of this RuleConfig.
 
         默认值
 
@@ -147,7 +147,7 @@ class RuleConfig:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this RuleConfig.
+        r"""Sets the default_value of this RuleConfig.
 
         默认值
 
@@ -158,7 +158,7 @@ class RuleConfig:
 
     @property
     def option_value(self):
-        """Gets the option_value of this RuleConfig.
+        r"""Gets the option_value of this RuleConfig.
 
         当前
 
@@ -169,7 +169,7 @@ class RuleConfig:
 
     @option_value.setter
     def option_value(self, option_value):
-        """Sets the option_value of this RuleConfig.
+        r"""Sets the option_value of this RuleConfig.
 
         当前
 
@@ -180,7 +180,7 @@ class RuleConfig:
 
     @property
     def option_key(self):
-        """Gets the option_key of this RuleConfig.
+        r"""Gets the option_key of this RuleConfig.
 
         当前规则配置项key
 
@@ -191,7 +191,7 @@ class RuleConfig:
 
     @option_key.setter
     def option_key(self, option_key):
-        """Sets the option_key of this RuleConfig.
+        r"""Sets the option_key of this RuleConfig.
 
         当前规则配置项key
 
@@ -202,7 +202,7 @@ class RuleConfig:
 
     @property
     def option_name(self):
-        """Gets the option_name of this RuleConfig.
+        r"""Gets the option_name of this RuleConfig.
 
         当前规则配置项名称
 
@@ -213,7 +213,7 @@ class RuleConfig:
 
     @option_name.setter
     def option_name(self, option_name):
-        """Sets the option_name of this RuleConfig.
+        r"""Sets the option_name of this RuleConfig.
 
         当前规则配置项名称
 
@@ -224,7 +224,7 @@ class RuleConfig:
 
     @property
     def template_id(self):
-        """Gets the template_id of this RuleConfig.
+        r"""Gets the template_id of this RuleConfig.
 
         规则集id
 
@@ -235,7 +235,7 @@ class RuleConfig:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this RuleConfig.
+        r"""Sets the template_id of this RuleConfig.
 
         规则集id
 
@@ -246,7 +246,7 @@ class RuleConfig:
 
     @property
     def description(self):
-        """Gets the description of this RuleConfig.
+        r"""Gets the description of this RuleConfig.
 
         描述
 
@@ -257,7 +257,7 @@ class RuleConfig:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RuleConfig.
+        r"""Sets the description of this RuleConfig.
 
         描述
 

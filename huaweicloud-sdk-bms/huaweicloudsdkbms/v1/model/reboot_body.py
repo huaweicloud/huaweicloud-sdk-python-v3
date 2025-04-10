@@ -25,7 +25,7 @@ class RebootBody:
     }
 
     def __init__(self, reboot=None):
-        """RebootBody
+        r"""RebootBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RebootBody:
 
     @property
     def reboot(self):
-        """Gets the reboot of this RebootBody.
+        r"""Gets the reboot of this RebootBody.
 
         :return: The reboot of this RebootBody.
         :rtype: :class:`huaweicloudsdkbms.v1.ServersInfoType`
@@ -51,7 +51,7 @@ class RebootBody:
 
     @reboot.setter
     def reboot(self, reboot):
-        """Sets the reboot of this RebootBody.
+        r"""Sets the reboot of this RebootBody.
 
         :param reboot: The reboot of this RebootBody.
         :type reboot: :class:`huaweicloudsdkbms.v1.ServersInfoType`

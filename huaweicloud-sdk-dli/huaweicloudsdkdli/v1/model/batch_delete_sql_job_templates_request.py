@@ -25,7 +25,7 @@ class BatchDeleteSqlJobTemplatesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteSqlJobTemplatesRequest
+        r"""BatchDeleteSqlJobTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteSqlJobTemplatesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteSqlJobTemplatesRequest.
+        r"""Gets the body of this BatchDeleteSqlJobTemplatesRequest.
 
         :return: The body of this BatchDeleteSqlJobTemplatesRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.BatchDeleteSqlJobTemplatesRequestBody`
@@ -52,7 +52,7 @@ class BatchDeleteSqlJobTemplatesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteSqlJobTemplatesRequest.
+        r"""Sets the body of this BatchDeleteSqlJobTemplatesRequest.
 
         :param body: The body of this BatchDeleteSqlJobTemplatesRequest.
         :type body: :class:`huaweicloudsdkdli.v1.BatchDeleteSqlJobTemplatesRequestBody`

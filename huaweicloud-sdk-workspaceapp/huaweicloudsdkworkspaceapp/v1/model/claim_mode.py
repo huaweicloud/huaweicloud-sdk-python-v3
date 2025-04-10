@@ -27,7 +27,7 @@ class ClaimMode:
     }
 
     def __init__(self):
-        """ClaimMode
+        r"""ClaimMode
 
         The model defined in huaweicloud sdk
 

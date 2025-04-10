@@ -25,7 +25,7 @@ class ListScalingNotificationsRequest:
     }
 
     def __init__(self, scaling_group_id=None):
-        """ListScalingNotificationsRequest
+        r"""ListScalingNotificationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListScalingNotificationsRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this ListScalingNotificationsRequest.
+        r"""Gets the scaling_group_id of this ListScalingNotificationsRequest.
 
         伸缩组标识。
 
@@ -53,7 +53,7 @@ class ListScalingNotificationsRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this ListScalingNotificationsRequest.
+        r"""Sets the scaling_group_id of this ListScalingNotificationsRequest.
 
         伸缩组标识。
 

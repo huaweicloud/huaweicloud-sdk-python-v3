@@ -27,7 +27,7 @@ class UpdateKafkaUserClientQuotaTaskRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateKafkaUserClientQuotaTaskRequest
+        r"""UpdateKafkaUserClientQuotaTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateKafkaUserClientQuotaTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateKafkaUserClientQuotaTaskRequest.
+        r"""Gets the instance_id of this UpdateKafkaUserClientQuotaTaskRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateKafkaUserClientQuotaTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateKafkaUserClientQuotaTaskRequest.
+        r"""Sets the instance_id of this UpdateKafkaUserClientQuotaTaskRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateKafkaUserClientQuotaTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateKafkaUserClientQuotaTaskRequest.
+        r"""Gets the body of this UpdateKafkaUserClientQuotaTaskRequest.
 
         :return: The body of this UpdateKafkaUserClientQuotaTaskRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateKafkaUserClientQuotaTaskReq`
@@ -80,7 +80,7 @@ class UpdateKafkaUserClientQuotaTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateKafkaUserClientQuotaTaskRequest.
+        r"""Sets the body of this UpdateKafkaUserClientQuotaTaskRequest.
 
         :param body: The body of this UpdateKafkaUserClientQuotaTaskRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.UpdateKafkaUserClientQuotaTaskReq`

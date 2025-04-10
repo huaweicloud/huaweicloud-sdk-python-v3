@@ -26,7 +26,7 @@ class CheckNetAclResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CheckNetAclResponse
+        r"""CheckNetAclResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CheckNetAclResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CheckNetAclResponse.
+        r"""Gets the body of this CheckNetAclResponse.
 
         检查网卡安全组端口是否符合要求成功
 
@@ -55,7 +55,7 @@ class CheckNetAclResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckNetAclResponse.
+        r"""Sets the body of this CheckNetAclResponse.
 
         检查网卡安全组端口是否符合要求成功
 

@@ -25,7 +25,7 @@ class WidgetIdItem:
     }
 
     def __init__(self, widget_id=None):
-        """WidgetIdItem
+        r"""WidgetIdItem
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class WidgetIdItem:
 
     @property
     def widget_id(self):
-        """Gets the widget_id of this WidgetIdItem.
+        r"""Gets the widget_id of this WidgetIdItem.
 
         视图id
 
@@ -54,7 +54,7 @@ class WidgetIdItem:
 
     @widget_id.setter
     def widget_id(self, widget_id):
-        """Sets the widget_id of this WidgetIdItem.
+        r"""Sets the widget_id of this WidgetIdItem.
 
         视图id
 

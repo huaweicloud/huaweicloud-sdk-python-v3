@@ -25,7 +25,7 @@ class CheckInstanceAccessRequest:
     }
 
     def __init__(self, instance_id=None):
-        """CheckInstanceAccessRequest
+        r"""CheckInstanceAccessRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CheckInstanceAccessRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CheckInstanceAccessRequest.
+        r"""Gets the instance_id of this CheckInstanceAccessRequest.
 
         CodeArtsIDEOnline实例id
 
@@ -53,7 +53,7 @@ class CheckInstanceAccessRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CheckInstanceAccessRequest.
+        r"""Sets the instance_id of this CheckInstanceAccessRequest.
 
         CodeArtsIDEOnline实例id
 

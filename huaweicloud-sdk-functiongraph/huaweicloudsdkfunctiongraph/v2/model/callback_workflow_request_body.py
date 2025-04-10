@@ -29,7 +29,7 @@ class CallbackWorkflowRequestBody:
     }
 
     def __init__(self, result=None, error=None, output=None):
-        """CallbackWorkflowRequestBody
+        r"""CallbackWorkflowRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CallbackWorkflowRequestBody:
 
     @property
     def result(self):
-        """Gets the result of this CallbackWorkflowRequestBody.
+        r"""Gets the result of this CallbackWorkflowRequestBody.
 
         执行结果
 
@@ -66,7 +66,7 @@ class CallbackWorkflowRequestBody:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CallbackWorkflowRequestBody.
+        r"""Sets the result of this CallbackWorkflowRequestBody.
 
         执行结果
 
@@ -77,7 +77,7 @@ class CallbackWorkflowRequestBody:
 
     @property
     def error(self):
-        """Gets the error of this CallbackWorkflowRequestBody.
+        r"""Gets the error of this CallbackWorkflowRequestBody.
 
         错误信息
 
@@ -88,7 +88,7 @@ class CallbackWorkflowRequestBody:
 
     @error.setter
     def error(self, error):
-        """Sets the error of this CallbackWorkflowRequestBody.
+        r"""Sets the error of this CallbackWorkflowRequestBody.
 
         错误信息
 
@@ -99,7 +99,7 @@ class CallbackWorkflowRequestBody:
 
     @property
     def output(self):
-        """Gets the output of this CallbackWorkflowRequestBody.
+        r"""Gets the output of this CallbackWorkflowRequestBody.
 
         工作流的执行结果，JSON格式，仅在status为success时有值
 
@@ -110,7 +110,7 @@ class CallbackWorkflowRequestBody:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CallbackWorkflowRequestBody.
+        r"""Sets the output of this CallbackWorkflowRequestBody.
 
         工作流的执行结果，JSON格式，仅在status为success时有值
 

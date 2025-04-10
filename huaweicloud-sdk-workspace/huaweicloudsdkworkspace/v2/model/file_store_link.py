@@ -29,7 +29,7 @@ class FileStoreLink:
     }
 
     def __init__(self, store_type=None, bucket_store=None, file_link=None):
-        """FileStoreLink
+        r"""FileStoreLink
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class FileStoreLink:
 
     @property
     def store_type(self):
-        """Gets the store_type of this FileStoreLink.
+        r"""Gets the store_type of this FileStoreLink.
 
         :return: The store_type of this FileStoreLink.
         :rtype: :class:`huaweicloudsdkworkspace.v2.FileStoreTypeEnum`
@@ -65,7 +65,7 @@ class FileStoreLink:
 
     @store_type.setter
     def store_type(self, store_type):
-        """Sets the store_type of this FileStoreLink.
+        r"""Sets the store_type of this FileStoreLink.
 
         :param store_type: The store_type of this FileStoreLink.
         :type store_type: :class:`huaweicloudsdkworkspace.v2.FileStoreTypeEnum`
@@ -74,7 +74,7 @@ class FileStoreLink:
 
     @property
     def bucket_store(self):
-        """Gets the bucket_store of this FileStoreLink.
+        r"""Gets the bucket_store of this FileStoreLink.
 
         :return: The bucket_store of this FileStoreLink.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BucketStore`
@@ -83,7 +83,7 @@ class FileStoreLink:
 
     @bucket_store.setter
     def bucket_store(self, bucket_store):
-        """Sets the bucket_store of this FileStoreLink.
+        r"""Sets the bucket_store of this FileStoreLink.
 
         :param bucket_store: The bucket_store of this FileStoreLink.
         :type bucket_store: :class:`huaweicloudsdkworkspace.v2.BucketStore`
@@ -92,7 +92,7 @@ class FileStoreLink:
 
     @property
     def file_link(self):
-        """Gets the file_link of this FileStoreLink.
+        r"""Gets the file_link of this FileStoreLink.
 
         文件下载完整路径。
 
@@ -103,7 +103,7 @@ class FileStoreLink:
 
     @file_link.setter
     def file_link(self, file_link):
-        """Sets the file_link of this FileStoreLink.
+        r"""Sets the file_link of this FileStoreLink.
 
         文件下载完整路径。
 

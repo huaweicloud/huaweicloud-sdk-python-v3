@@ -23,7 +23,7 @@ class ShowAccessAgentLatestVersionRequest:
     }
 
     def __init__(self):
-        """ShowAccessAgentLatestVersionRequest
+        r"""ShowAccessAgentLatestVersionRequest
 
         The model defined in huaweicloud sdk
 

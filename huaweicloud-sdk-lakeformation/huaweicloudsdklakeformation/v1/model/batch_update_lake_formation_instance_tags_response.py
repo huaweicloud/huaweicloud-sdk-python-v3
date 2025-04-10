@@ -24,7 +24,7 @@ class BatchUpdateLakeFormationInstanceTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchUpdateLakeFormationInstanceTagsResponse
+        r"""BatchUpdateLakeFormationInstanceTagsResponse
 
         The model defined in huaweicloud sdk
 

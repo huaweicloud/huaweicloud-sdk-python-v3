@@ -29,7 +29,7 @@ class CreateDomainReq:
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None):
-        """CreateDomainReq
+        r"""CreateDomainReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateDomainReq:
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateDomainReq.
+        r"""Gets the api_version of this CreateDomainReq.
 
         :return: The api_version of this CreateDomainReq.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -63,7 +63,7 @@ class CreateDomainReq:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateDomainReq.
+        r"""Sets the api_version of this CreateDomainReq.
 
         :param api_version: The api_version of this CreateDomainReq.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -72,7 +72,7 @@ class CreateDomainReq:
 
     @property
     def kind(self):
-        """Gets the kind of this CreateDomainReq.
+        r"""Gets the kind of this CreateDomainReq.
 
         :return: The kind of this CreateDomainReq.
         :rtype: :class:`huaweicloudsdkcae.v1.DomainKindObj`
@@ -81,7 +81,7 @@ class CreateDomainReq:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateDomainReq.
+        r"""Sets the kind of this CreateDomainReq.
 
         :param kind: The kind of this CreateDomainReq.
         :type kind: :class:`huaweicloudsdkcae.v1.DomainKindObj`
@@ -90,7 +90,7 @@ class CreateDomainReq:
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateDomainReq.
+        r"""Gets the metadata of this CreateDomainReq.
 
         :return: The metadata of this CreateDomainReq.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateMetaDomain`
@@ -99,7 +99,7 @@ class CreateDomainReq:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateDomainReq.
+        r"""Sets the metadata of this CreateDomainReq.
 
         :param metadata: The metadata of this CreateDomainReq.
         :type metadata: :class:`huaweicloudsdkcae.v1.CreateMetaDomain`

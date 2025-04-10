@@ -33,7 +33,7 @@ class AggregateResponse:
     }
 
     def __init__(self, inputs=None, expression=None, output_property=None, outputs=None, schedule=None):
-        """AggregateResponse
+        r"""AggregateResponse
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AggregateResponse:
 
     @property
     def inputs(self):
-        """Gets the inputs of this AggregateResponse.
+        r"""Gets the inputs of this AggregateResponse.
 
         输入参数
 
@@ -82,7 +82,7 @@ class AggregateResponse:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this AggregateResponse.
+        r"""Sets the inputs of this AggregateResponse.
 
         输入参数
 
@@ -93,7 +93,7 @@ class AggregateResponse:
 
     @property
     def expression(self):
-        """Gets the expression of this AggregateResponse.
+        r"""Gets the expression of this AggregateResponse.
 
         :return: The expression of this AggregateResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.Expression`
@@ -102,7 +102,7 @@ class AggregateResponse:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this AggregateResponse.
+        r"""Sets the expression of this AggregateResponse.
 
         :param expression: The expression of this AggregateResponse.
         :type expression: :class:`huaweicloudsdkiotanalytics.v1.Expression`
@@ -111,7 +111,7 @@ class AggregateResponse:
 
     @property
     def output_property(self):
-        """Gets the output_property of this AggregateResponse.
+        r"""Gets the output_property of this AggregateResponse.
 
         输出属性名(不推荐使用，待废弃，使用outputs替代)
 
@@ -122,7 +122,7 @@ class AggregateResponse:
 
     @output_property.setter
     def output_property(self, output_property):
-        """Sets the output_property of this AggregateResponse.
+        r"""Sets the output_property of this AggregateResponse.
 
         输出属性名(不推荐使用，待废弃，使用outputs替代)
 
@@ -133,7 +133,7 @@ class AggregateResponse:
 
     @property
     def outputs(self):
-        """Gets the outputs of this AggregateResponse.
+        r"""Gets the outputs of this AggregateResponse.
 
         :return: The outputs of this AggregateResponse.
         :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.OutputResponse`]
@@ -142,7 +142,7 @@ class AggregateResponse:
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this AggregateResponse.
+        r"""Sets the outputs of this AggregateResponse.
 
         :param outputs: The outputs of this AggregateResponse.
         :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputResponse`]
@@ -151,7 +151,7 @@ class AggregateResponse:
 
     @property
     def schedule(self):
-        """Gets the schedule of this AggregateResponse.
+        r"""Gets the schedule of this AggregateResponse.
 
         :return: The schedule of this AggregateResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DTSchedule`
@@ -160,7 +160,7 @@ class AggregateResponse:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this AggregateResponse.
+        r"""Sets the schedule of this AggregateResponse.
 
         :param schedule: The schedule of this AggregateResponse.
         :type schedule: :class:`huaweicloudsdkiotanalytics.v1.DTSchedule`

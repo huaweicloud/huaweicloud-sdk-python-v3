@@ -71,7 +71,7 @@ class CreateScalingGroupOption:
     }
 
     def __init__(self, scaling_group_name=None, scaling_configuration_id=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, lb_listener_id=None, lbaas_listeners=None, available_zones=None, networks=None, security_groups=None, vpc_id=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, notifications=None, delete_publicip=None, delete_volume=None, enterprise_project_id=None, multi_az_priority_policy=None, iam_agency_name=None, description=None, tags=None):
-        """CreateScalingGroupOption
+        r"""CreateScalingGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -200,7 +200,7 @@ class CreateScalingGroupOption:
 
     @property
     def scaling_group_name(self):
-        """Gets the scaling_group_name of this CreateScalingGroupOption.
+        r"""Gets the scaling_group_name of this CreateScalingGroupOption.
 
         伸缩组名称(1-64个字符)，只能包含中文、字母、数字、下划线、中划线。
 
@@ -211,7 +211,7 @@ class CreateScalingGroupOption:
 
     @scaling_group_name.setter
     def scaling_group_name(self, scaling_group_name):
-        """Sets the scaling_group_name of this CreateScalingGroupOption.
+        r"""Sets the scaling_group_name of this CreateScalingGroupOption.
 
         伸缩组名称(1-64个字符)，只能包含中文、字母、数字、下划线、中划线。
 
@@ -222,7 +222,7 @@ class CreateScalingGroupOption:
 
     @property
     def scaling_configuration_id(self):
-        """Gets the scaling_configuration_id of this CreateScalingGroupOption.
+        r"""Gets the scaling_configuration_id of this CreateScalingGroupOption.
 
         伸缩配置ID，通过查询弹性伸缩配置列表接口获取。
 
@@ -233,7 +233,7 @@ class CreateScalingGroupOption:
 
     @scaling_configuration_id.setter
     def scaling_configuration_id(self, scaling_configuration_id):
-        """Sets the scaling_configuration_id of this CreateScalingGroupOption.
+        r"""Sets the scaling_configuration_id of this CreateScalingGroupOption.
 
         伸缩配置ID，通过查询弹性伸缩配置列表接口获取。
 
@@ -244,7 +244,7 @@ class CreateScalingGroupOption:
 
     @property
     def desire_instance_number(self):
-        """Gets the desire_instance_number of this CreateScalingGroupOption.
+        r"""Gets the desire_instance_number of this CreateScalingGroupOption.
 
         期望实例数量，默认值为最小实例数。最小实例数<=期望实例数<=最大实例数
 
@@ -255,7 +255,7 @@ class CreateScalingGroupOption:
 
     @desire_instance_number.setter
     def desire_instance_number(self, desire_instance_number):
-        """Sets the desire_instance_number of this CreateScalingGroupOption.
+        r"""Sets the desire_instance_number of this CreateScalingGroupOption.
 
         期望实例数量，默认值为最小实例数。最小实例数<=期望实例数<=最大实例数
 
@@ -266,7 +266,7 @@ class CreateScalingGroupOption:
 
     @property
     def min_instance_number(self):
-        """Gets the min_instance_number of this CreateScalingGroupOption.
+        r"""Gets the min_instance_number of this CreateScalingGroupOption.
 
         最小实例数量，默认值为0。
 
@@ -277,7 +277,7 @@ class CreateScalingGroupOption:
 
     @min_instance_number.setter
     def min_instance_number(self, min_instance_number):
-        """Sets the min_instance_number of this CreateScalingGroupOption.
+        r"""Sets the min_instance_number of this CreateScalingGroupOption.
 
         最小实例数量，默认值为0。
 
@@ -288,7 +288,7 @@ class CreateScalingGroupOption:
 
     @property
     def max_instance_number(self):
-        """Gets the max_instance_number of this CreateScalingGroupOption.
+        r"""Gets the max_instance_number of this CreateScalingGroupOption.
 
         最大实例数量，默认值为0。
 
@@ -299,7 +299,7 @@ class CreateScalingGroupOption:
 
     @max_instance_number.setter
     def max_instance_number(self, max_instance_number):
-        """Sets the max_instance_number of this CreateScalingGroupOption.
+        r"""Sets the max_instance_number of this CreateScalingGroupOption.
 
         最大实例数量，默认值为0。
 
@@ -310,7 +310,7 @@ class CreateScalingGroupOption:
 
     @property
     def cool_down_time(self):
-        """Gets the cool_down_time of this CreateScalingGroupOption.
+        r"""Gets the cool_down_time of this CreateScalingGroupOption.
 
         冷却时间，取值范围0-86400，默认为300，单位是秒。 只针对告警策略生效，定时、周期策略和手动触发策略不受该参数限制。
 
@@ -321,7 +321,7 @@ class CreateScalingGroupOption:
 
     @cool_down_time.setter
     def cool_down_time(self, cool_down_time):
-        """Sets the cool_down_time of this CreateScalingGroupOption.
+        r"""Sets the cool_down_time of this CreateScalingGroupOption.
 
         冷却时间，取值范围0-86400，默认为300，单位是秒。 只针对告警策略生效，定时、周期策略和手动触发策略不受该参数限制。
 
@@ -332,7 +332,7 @@ class CreateScalingGroupOption:
 
     @property
     def lb_listener_id(self):
-        """Gets the lb_listener_id of this CreateScalingGroupOption.
+        r"""Gets the lb_listener_id of this CreateScalingGroupOption.
 
         弹性负载均衡（经典型）监听器ID，最多支持绑定6个负载均衡监听器，多个负载均衡监听器ID以逗号分隔。首先使用vpc_id通过查询ELB服务负载均衡器列表接口获取负载均衡器的ID，详见《弹性负载均衡API参考》的“查询负载均衡器列表”，再使用该ID查询监听器列表获取，详见《弹性负载均衡API参考》的“查询监听器列表”。
 
@@ -343,7 +343,7 @@ class CreateScalingGroupOption:
 
     @lb_listener_id.setter
     def lb_listener_id(self, lb_listener_id):
-        """Sets the lb_listener_id of this CreateScalingGroupOption.
+        r"""Sets the lb_listener_id of this CreateScalingGroupOption.
 
         弹性负载均衡（经典型）监听器ID，最多支持绑定6个负载均衡监听器，多个负载均衡监听器ID以逗号分隔。首先使用vpc_id通过查询ELB服务负载均衡器列表接口获取负载均衡器的ID，详见《弹性负载均衡API参考》的“查询负载均衡器列表”，再使用该ID查询监听器列表获取，详见《弹性负载均衡API参考》的“查询监听器列表”。
 
@@ -354,7 +354,7 @@ class CreateScalingGroupOption:
 
     @property
     def lbaas_listeners(self):
-        """Gets the lbaas_listeners of this CreateScalingGroupOption.
+        r"""Gets the lbaas_listeners of this CreateScalingGroupOption.
 
         弹性负载均衡器（增强型）信息，最多支持绑定6个负载均衡。该字段与lb_listener_id互斥。
 
@@ -365,7 +365,7 @@ class CreateScalingGroupOption:
 
     @lbaas_listeners.setter
     def lbaas_listeners(self, lbaas_listeners):
-        """Sets the lbaas_listeners of this CreateScalingGroupOption.
+        r"""Sets the lbaas_listeners of this CreateScalingGroupOption.
 
         弹性负载均衡器（增强型）信息，最多支持绑定6个负载均衡。该字段与lb_listener_id互斥。
 
@@ -376,7 +376,7 @@ class CreateScalingGroupOption:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this CreateScalingGroupOption.
+        r"""Gets the available_zones of this CreateScalingGroupOption.
 
         可用分区信息。弹性伸缩活动中自动添加的云服务器会被创建在指定的可用区中。如果没有指定可用分区，会由系统自动指定可用分区。详情请参考地区和终端节点。
 
@@ -387,7 +387,7 @@ class CreateScalingGroupOption:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this CreateScalingGroupOption.
+        r"""Sets the available_zones of this CreateScalingGroupOption.
 
         可用分区信息。弹性伸缩活动中自动添加的云服务器会被创建在指定的可用区中。如果没有指定可用分区，会由系统自动指定可用分区。详情请参考地区和终端节点。
 
@@ -398,7 +398,7 @@ class CreateScalingGroupOption:
 
     @property
     def networks(self):
-        """Gets the networks of this CreateScalingGroupOption.
+        r"""Gets the networks of this CreateScalingGroupOption.
 
         网络信息，最多支持选择5个子网，传入的第一个子网默认作为云服务器的主网卡。获取子网信息请参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
 
@@ -409,7 +409,7 @@ class CreateScalingGroupOption:
 
     @networks.setter
     def networks(self, networks):
-        """Sets the networks of this CreateScalingGroupOption.
+        r"""Sets the networks of this CreateScalingGroupOption.
 
         网络信息，最多支持选择5个子网，传入的第一个子网默认作为云服务器的主网卡。获取子网信息请参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
 
@@ -420,7 +420,7 @@ class CreateScalingGroupOption:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this CreateScalingGroupOption.
+        r"""Gets the security_groups of this CreateScalingGroupOption.
 
         安全组信息，最多支持选择1个安全组。使用vpc_id通过查询VPC服务安全组列表接口获取，详见《虚拟私有云API参考》的“查询安全组列表”。当伸缩配置和伸缩组同时指定安全组时，将以伸缩配置中的安全组为准；当伸缩配置和伸缩组都没有指定安全组时，将使用默认安全组。为了使用灵活性更高，推荐在伸缩配置中指定安全组。
 
@@ -431,7 +431,7 @@ class CreateScalingGroupOption:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this CreateScalingGroupOption.
+        r"""Sets the security_groups of this CreateScalingGroupOption.
 
         安全组信息，最多支持选择1个安全组。使用vpc_id通过查询VPC服务安全组列表接口获取，详见《虚拟私有云API参考》的“查询安全组列表”。当伸缩配置和伸缩组同时指定安全组时，将以伸缩配置中的安全组为准；当伸缩配置和伸缩组都没有指定安全组时，将使用默认安全组。为了使用灵活性更高，推荐在伸缩配置中指定安全组。
 
@@ -442,7 +442,7 @@ class CreateScalingGroupOption:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateScalingGroupOption.
+        r"""Gets the vpc_id of this CreateScalingGroupOption.
 
         VPC信息，通过查询VPC服务VPC列表接口获取，详见《虚拟私有云API参考》的“查询VPC列表”。
 
@@ -453,7 +453,7 @@ class CreateScalingGroupOption:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateScalingGroupOption.
+        r"""Sets the vpc_id of this CreateScalingGroupOption.
 
         VPC信息，通过查询VPC服务VPC列表接口获取，详见《虚拟私有云API参考》的“查询VPC列表”。
 
@@ -464,7 +464,7 @@ class CreateScalingGroupOption:
 
     @property
     def health_periodic_audit_method(self):
-        """Gets the health_periodic_audit_method of this CreateScalingGroupOption.
+        r"""Gets the health_periodic_audit_method of this CreateScalingGroupOption.
 
         伸缩组实例健康检查方式：ELB_AUDIT和NOVA_AUDIT。当伸缩组参数中设置负载均衡时，默认为ELB_AUDIT；否则默认为NOVA_AUDIT。ELB_AUDIT表示负载均衡健康检查方式，在有监听器的伸缩组中有效。NOVA_AUDIT表示弹性伸缩自带的健康检查方式。
 
@@ -475,7 +475,7 @@ class CreateScalingGroupOption:
 
     @health_periodic_audit_method.setter
     def health_periodic_audit_method(self, health_periodic_audit_method):
-        """Sets the health_periodic_audit_method of this CreateScalingGroupOption.
+        r"""Sets the health_periodic_audit_method of this CreateScalingGroupOption.
 
         伸缩组实例健康检查方式：ELB_AUDIT和NOVA_AUDIT。当伸缩组参数中设置负载均衡时，默认为ELB_AUDIT；否则默认为NOVA_AUDIT。ELB_AUDIT表示负载均衡健康检查方式，在有监听器的伸缩组中有效。NOVA_AUDIT表示弹性伸缩自带的健康检查方式。
 
@@ -486,7 +486,7 @@ class CreateScalingGroupOption:
 
     @property
     def health_periodic_audit_time(self):
-        """Gets the health_periodic_audit_time of this CreateScalingGroupOption.
+        r"""Gets the health_periodic_audit_time of this CreateScalingGroupOption.
 
         伸缩组实例的健康检查周期，可设置为1、5、15、60、180（分钟），若不设置该参数，默认为5。若设置为0，可以实现10秒级健康检查。
 
@@ -497,7 +497,7 @@ class CreateScalingGroupOption:
 
     @health_periodic_audit_time.setter
     def health_periodic_audit_time(self, health_periodic_audit_time):
-        """Sets the health_periodic_audit_time of this CreateScalingGroupOption.
+        r"""Sets the health_periodic_audit_time of this CreateScalingGroupOption.
 
         伸缩组实例的健康检查周期，可设置为1、5、15、60、180（分钟），若不设置该参数，默认为5。若设置为0，可以实现10秒级健康检查。
 
@@ -508,7 +508,7 @@ class CreateScalingGroupOption:
 
     @property
     def health_periodic_audit_grace_period(self):
-        """Gets the health_periodic_audit_grace_period of this CreateScalingGroupOption.
+        r"""Gets the health_periodic_audit_grace_period of this CreateScalingGroupOption.
 
         伸缩组实例健康状况检查宽限期，取值范围0-86400，单位是秒。当实例加入伸缩组并且进入已启用状态后，健康状况检查宽限期才会启动，伸缩组会等健康状况检查宽限期结束后才检查实例的运行状况。当伸缩组实例健康检查方式为ELB_AUDIT时，该参数生效，若不设置该参数，默认为600秒。
 
@@ -519,7 +519,7 @@ class CreateScalingGroupOption:
 
     @health_periodic_audit_grace_period.setter
     def health_periodic_audit_grace_period(self, health_periodic_audit_grace_period):
-        """Sets the health_periodic_audit_grace_period of this CreateScalingGroupOption.
+        r"""Sets the health_periodic_audit_grace_period of this CreateScalingGroupOption.
 
         伸缩组实例健康状况检查宽限期，取值范围0-86400，单位是秒。当实例加入伸缩组并且进入已启用状态后，健康状况检查宽限期才会启动，伸缩组会等健康状况检查宽限期结束后才检查实例的运行状况。当伸缩组实例健康检查方式为ELB_AUDIT时，该参数生效，若不设置该参数，默认为600秒。
 
@@ -530,7 +530,7 @@ class CreateScalingGroupOption:
 
     @property
     def instance_terminate_policy(self):
-        """Gets the instance_terminate_policy of this CreateScalingGroupOption.
+        r"""Gets the instance_terminate_policy of this CreateScalingGroupOption.
 
         伸缩组实例移除策略：OLD_CONFIG_OLD_INSTANCE（默认）：从根据“较早创建的配置”创建的实例中筛选出较早创建的实例被优先移除。OLD_CONFIG_NEW_INSTANCE：从根据“较早创建的配置”创建的实例中筛选出较新创建的实例被优先移除。OLD_INSTANCE：较早创建的实例被优先移除。NEW_INSTANCE：较新创建的实例将被优先移除。
 
@@ -541,7 +541,7 @@ class CreateScalingGroupOption:
 
     @instance_terminate_policy.setter
     def instance_terminate_policy(self, instance_terminate_policy):
-        """Sets the instance_terminate_policy of this CreateScalingGroupOption.
+        r"""Sets the instance_terminate_policy of this CreateScalingGroupOption.
 
         伸缩组实例移除策略：OLD_CONFIG_OLD_INSTANCE（默认）：从根据“较早创建的配置”创建的实例中筛选出较早创建的实例被优先移除。OLD_CONFIG_NEW_INSTANCE：从根据“较早创建的配置”创建的实例中筛选出较新创建的实例被优先移除。OLD_INSTANCE：较早创建的实例被优先移除。NEW_INSTANCE：较新创建的实例将被优先移除。
 
@@ -552,7 +552,7 @@ class CreateScalingGroupOption:
 
     @property
     def notifications(self):
-        """Gets the notifications of this CreateScalingGroupOption.
+        r"""Gets the notifications of this CreateScalingGroupOption.
 
         通知方式：EMAIL为发送邮件通知。该通知方式即将被废除，建议给弹性伸缩组配置通知功能。详见通知。
 
@@ -563,7 +563,7 @@ class CreateScalingGroupOption:
 
     @notifications.setter
     def notifications(self, notifications):
-        """Sets the notifications of this CreateScalingGroupOption.
+        r"""Sets the notifications of this CreateScalingGroupOption.
 
         通知方式：EMAIL为发送邮件通知。该通知方式即将被废除，建议给弹性伸缩组配置通知功能。详见通知。
 
@@ -574,7 +574,7 @@ class CreateScalingGroupOption:
 
     @property
     def delete_publicip(self):
-        """Gets the delete_publicip of this CreateScalingGroupOption.
+        r"""Gets the delete_publicip of this CreateScalingGroupOption.
 
         配置删除云服务器时是否删除云服务器绑定的弹性IP。取值为true或false，默认为false。true：删除云服务器时，会同时删除绑定在云服务器上的弹性IP。当弹性IP的计费方式为包年包月时，不会被删除。false：删除云服务器时，仅解绑定在云服务器上的弹性IP，不删除弹性IP。
 
@@ -585,7 +585,7 @@ class CreateScalingGroupOption:
 
     @delete_publicip.setter
     def delete_publicip(self, delete_publicip):
-        """Sets the delete_publicip of this CreateScalingGroupOption.
+        r"""Sets the delete_publicip of this CreateScalingGroupOption.
 
         配置删除云服务器时是否删除云服务器绑定的弹性IP。取值为true或false，默认为false。true：删除云服务器时，会同时删除绑定在云服务器上的弹性IP。当弹性IP的计费方式为包年包月时，不会被删除。false：删除云服务器时，仅解绑定在云服务器上的弹性IP，不删除弹性IP。
 
@@ -596,7 +596,7 @@ class CreateScalingGroupOption:
 
     @property
     def delete_volume(self):
-        """Gets the delete_volume of this CreateScalingGroupOption.
+        r"""Gets the delete_volume of this CreateScalingGroupOption.
 
         配置删除云服务器时是否删除云服务器绑定的数据盘。取值为true或false，默认为false。 true：删除云服务器时，会同时删除绑定在云服务器上的数据盘。当数据盘的计费方式为包年包月时，不会被删除。 false：删除云服务器时，仅解绑定在云服务器上的数据盘，不删除数据盘。
 
@@ -607,7 +607,7 @@ class CreateScalingGroupOption:
 
     @delete_volume.setter
     def delete_volume(self, delete_volume):
-        """Sets the delete_volume of this CreateScalingGroupOption.
+        r"""Sets the delete_volume of this CreateScalingGroupOption.
 
         配置删除云服务器时是否删除云服务器绑定的数据盘。取值为true或false，默认为false。 true：删除云服务器时，会同时删除绑定在云服务器上的数据盘。当数据盘的计费方式为包年包月时，不会被删除。 false：删除云服务器时，仅解绑定在云服务器上的数据盘，不删除数据盘。
 
@@ -618,7 +618,7 @@ class CreateScalingGroupOption:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateScalingGroupOption.
+        r"""Gets the enterprise_project_id of this CreateScalingGroupOption.
 
         企业项目ID，用于指定伸缩组归属的企业项目。取值为0或无该值，表示属于default企业项目。取值为UUID，表示属于该UUID对应的企业项目，如何获取企业项目ID，请参考[查询企业项目列表](https://support.huaweicloud.com/api-em/zh-cn_topic_0121230880.html)。当伸缩组配置企业项目时，由该伸缩组创建的弹性云服务器将归属于该企业项目。否则将使用默认企业项目。说明：关于企业项目特性的详细信息，请参见[企业项目管理](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0131965280.html)。
 
@@ -629,7 +629,7 @@ class CreateScalingGroupOption:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateScalingGroupOption.
+        r"""Sets the enterprise_project_id of this CreateScalingGroupOption.
 
         企业项目ID，用于指定伸缩组归属的企业项目。取值为0或无该值，表示属于default企业项目。取值为UUID，表示属于该UUID对应的企业项目，如何获取企业项目ID，请参考[查询企业项目列表](https://support.huaweicloud.com/api-em/zh-cn_topic_0121230880.html)。当伸缩组配置企业项目时，由该伸缩组创建的弹性云服务器将归属于该企业项目。否则将使用默认企业项目。说明：关于企业项目特性的详细信息，请参见[企业项目管理](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0131965280.html)。
 
@@ -640,7 +640,7 @@ class CreateScalingGroupOption:
 
     @property
     def multi_az_priority_policy(self):
-        """Gets the multi_az_priority_policy of this CreateScalingGroupOption.
+        r"""Gets the multi_az_priority_policy of this CreateScalingGroupOption.
 
         伸缩组扩缩容时目标AZ选择的优先级策略：EQUILIBRIUM_DISTRIBUTE（默认）：均衡分布，云服务器扩缩容时优先保证available_zones列表中各AZ下虚拟机数量均衡，当无法在目标AZ下完成虚拟机扩容时，按照PICK_FIRST原则选择其他可用AZ。PICK_FIRST：选择优先，虚拟机扩缩容时目标AZ的选择按照available_zones列表的顺序进行优先级排序。
 
@@ -651,7 +651,7 @@ class CreateScalingGroupOption:
 
     @multi_az_priority_policy.setter
     def multi_az_priority_policy(self, multi_az_priority_policy):
-        """Sets the multi_az_priority_policy of this CreateScalingGroupOption.
+        r"""Sets the multi_az_priority_policy of this CreateScalingGroupOption.
 
         伸缩组扩缩容时目标AZ选择的优先级策略：EQUILIBRIUM_DISTRIBUTE（默认）：均衡分布，云服务器扩缩容时优先保证available_zones列表中各AZ下虚拟机数量均衡，当无法在目标AZ下完成虚拟机扩容时，按照PICK_FIRST原则选择其他可用AZ。PICK_FIRST：选择优先，虚拟机扩缩容时目标AZ的选择按照available_zones列表的顺序进行优先级排序。
 
@@ -662,7 +662,7 @@ class CreateScalingGroupOption:
 
     @property
     def iam_agency_name(self):
-        """Gets the iam_agency_name of this CreateScalingGroupOption.
+        r"""Gets the iam_agency_name of this CreateScalingGroupOption.
 
         委托的名称委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
 
@@ -673,7 +673,7 @@ class CreateScalingGroupOption:
 
     @iam_agency_name.setter
     def iam_agency_name(self, iam_agency_name):
-        """Sets the iam_agency_name of this CreateScalingGroupOption.
+        r"""Sets the iam_agency_name of this CreateScalingGroupOption.
 
         委托的名称委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
 
@@ -684,7 +684,7 @@ class CreateScalingGroupOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateScalingGroupOption.
+        r"""Gets the description of this CreateScalingGroupOption.
 
         伸缩组描述信息(0-256个字符)
 
@@ -695,7 +695,7 @@ class CreateScalingGroupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateScalingGroupOption.
+        r"""Sets the description of this CreateScalingGroupOption.
 
         伸缩组描述信息(0-256个字符)
 
@@ -706,7 +706,7 @@ class CreateScalingGroupOption:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateScalingGroupOption.
+        r"""Gets the tags of this CreateScalingGroupOption.
 
         创建特定标签并将其添加到伸缩组。每个伸缩组最多添加10个标签。
 
@@ -717,7 +717,7 @@ class CreateScalingGroupOption:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateScalingGroupOption.
+        r"""Sets the tags of this CreateScalingGroupOption.
 
         创建特定标签并将其添加到伸缩组。每个伸缩组最多添加10个标签。
 

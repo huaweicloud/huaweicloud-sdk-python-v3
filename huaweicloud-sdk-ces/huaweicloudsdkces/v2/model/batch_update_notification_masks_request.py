@@ -25,7 +25,7 @@ class BatchUpdateNotificationMasksRequest:
     }
 
     def __init__(self, body=None):
-        """BatchUpdateNotificationMasksRequest
+        r"""BatchUpdateNotificationMasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchUpdateNotificationMasksRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateNotificationMasksRequest.
+        r"""Gets the body of this BatchUpdateNotificationMasksRequest.
 
         :return: The body of this BatchUpdateNotificationMasksRequest.
         :rtype: :class:`huaweicloudsdkces.v2.BatchUpdateNotificationMasksRequestBody`
@@ -52,7 +52,7 @@ class BatchUpdateNotificationMasksRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateNotificationMasksRequest.
+        r"""Sets the body of this BatchUpdateNotificationMasksRequest.
 
         :param body: The body of this BatchUpdateNotificationMasksRequest.
         :type body: :class:`huaweicloudsdkces.v2.BatchUpdateNotificationMasksRequestBody`

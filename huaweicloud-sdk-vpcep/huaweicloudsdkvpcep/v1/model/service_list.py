@@ -67,7 +67,7 @@ class ServiceList:
     }
 
     def __init__(self, id=None, port_id=None, service_name=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, domain_id=None, ports=None, ip=None, tags=None, connection_count=None, tcp_proxy=None, error=None, description=None, supported_editions=None, public_border_group=None, enable_policy=None):
-        """ServiceList
+        r"""ServiceList
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class ServiceList:
 
     @property
     def id(self):
-        """Gets the id of this ServiceList.
+        r"""Gets the id of this ServiceList.
 
         终端节点服务的ID，唯一标识。
 
@@ -201,7 +201,7 @@ class ServiceList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServiceList.
+        r"""Sets the id of this ServiceList.
 
         终端节点服务的ID，唯一标识。
 
@@ -212,7 +212,7 @@ class ServiceList:
 
     @property
     def port_id(self):
-        """Gets the port_id of this ServiceList.
+        r"""Gets the port_id of this ServiceList.
 
         标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。取值为：  - LB类型：负载均衡器内网IP对应的端口ID。  - VM类型：弹性云服务器IP地址对应的网卡ID。  - VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
 
@@ -223,7 +223,7 @@ class ServiceList:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this ServiceList.
+        r"""Sets the port_id of this ServiceList.
 
         标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。取值为：  - LB类型：负载均衡器内网IP对应的端口ID。  - VM类型：弹性云服务器IP地址对应的网卡ID。  - VIP类型：虚拟资源所在物理服务器对应的网卡ID。（该字段已废弃，请优先使用LB类型）
 
@@ -234,7 +234,7 @@ class ServiceList:
 
     @property
     def service_name(self):
-        """Gets the service_name of this ServiceList.
+        r"""Gets the service_name of this ServiceList.
 
         终端节点服务的名称。
 
@@ -245,7 +245,7 @@ class ServiceList:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this ServiceList.
+        r"""Sets the service_name of this ServiceList.
 
         终端节点服务的名称。
 
@@ -256,7 +256,7 @@ class ServiceList:
 
     @property
     def server_type(self):
-        """Gets the server_type of this ServiceList.
+        r"""Gets the server_type of this ServiceList.
 
         资源类型。  - VM：云服务器。  - VIP：虚拟IP。  - LB：增强负载均衡型。
 
@@ -267,7 +267,7 @@ class ServiceList:
 
     @server_type.setter
     def server_type(self, server_type):
-        """Sets the server_type of this ServiceList.
+        r"""Sets the server_type of this ServiceList.
 
         资源类型。  - VM：云服务器。  - VIP：虚拟IP。  - LB：增强负载均衡型。
 
@@ -278,7 +278,7 @@ class ServiceList:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ServiceList.
+        r"""Gets the vpc_id of this ServiceList.
 
         终端节点服务对应后端资源所在的VPC的ID。
 
@@ -289,7 +289,7 @@ class ServiceList:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ServiceList.
+        r"""Sets the vpc_id of this ServiceList.
 
         终端节点服务对应后端资源所在的VPC的ID。
 
@@ -300,7 +300,7 @@ class ServiceList:
 
     @property
     def approval_enabled(self):
-        """Gets the approval_enabled of this ServiceList.
+        r"""Gets the approval_enabled of this ServiceList.
 
         是否需要审批。  - false：不需要审批，创建的终端节点连接直接为accepted状态。  - true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。
 
@@ -311,7 +311,7 @@ class ServiceList:
 
     @approval_enabled.setter
     def approval_enabled(self, approval_enabled):
-        """Sets the approval_enabled of this ServiceList.
+        r"""Sets the approval_enabled of this ServiceList.
 
         是否需要审批。  - false：不需要审批，创建的终端节点连接直接为accepted状态。  - true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。
 
@@ -322,7 +322,7 @@ class ServiceList:
 
     @property
     def status(self):
-        """Gets the status of this ServiceList.
+        r"""Gets the status of this ServiceList.
 
         终端节点服务的状态。  - creating：创建中  - available：可连接  - failed：失败  - deleting：删除中
 
@@ -333,7 +333,7 @@ class ServiceList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ServiceList.
+        r"""Sets the status of this ServiceList.
 
         终端节点服务的状态。  - creating：创建中  - available：可连接  - failed：失败  - deleting：删除中
 
@@ -344,7 +344,7 @@ class ServiceList:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ServiceList.
+        r"""Gets the service_type of this ServiceList.
 
         终端节点服务类型。 终端节点服务类型包括“网关（gateway）型”和“接口（interface）型”：  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
@@ -355,7 +355,7 @@ class ServiceList:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ServiceList.
+        r"""Sets the service_type of this ServiceList.
 
         终端节点服务类型。 终端节点服务类型包括“网关（gateway）型”和“接口（interface）型”：  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
@@ -366,7 +366,7 @@ class ServiceList:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ServiceList.
+        r"""Gets the created_at of this ServiceList.
 
         终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -377,7 +377,7 @@ class ServiceList:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ServiceList.
+        r"""Sets the created_at of this ServiceList.
 
         终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -388,7 +388,7 @@ class ServiceList:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ServiceList.
+        r"""Gets the updated_at of this ServiceList.
 
         终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -399,7 +399,7 @@ class ServiceList:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ServiceList.
+        r"""Sets the updated_at of this ServiceList.
 
         终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -410,7 +410,7 @@ class ServiceList:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ServiceList.
+        r"""Gets the project_id of this ServiceList.
 
         项目ID，获取方法请参见获取项目ID。
 
@@ -421,7 +421,7 @@ class ServiceList:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ServiceList.
+        r"""Sets the project_id of this ServiceList.
 
         项目ID，获取方法请参见获取项目ID。
 
@@ -432,7 +432,7 @@ class ServiceList:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ServiceList.
+        r"""Gets the domain_id of this ServiceList.
 
         Domain ID
 
@@ -443,7 +443,7 @@ class ServiceList:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ServiceList.
+        r"""Sets the domain_id of this ServiceList.
 
         Domain ID
 
@@ -454,7 +454,7 @@ class ServiceList:
 
     @property
     def ports(self):
-        """Gets the ports of this ServiceList.
+        r"""Gets the ports of this ServiceList.
 
         服务开放的端口映射列表 同一个终端节点服务下，不允许重复的端口映射。 若多个终端节点服务共用一个port_id， 则终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复。
 
@@ -465,7 +465,7 @@ class ServiceList:
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this ServiceList.
+        r"""Sets the ports of this ServiceList.
 
         服务开放的端口映射列表 同一个终端节点服务下，不允许重复的端口映射。 若多个终端节点服务共用一个port_id， 则终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复。
 
@@ -476,7 +476,7 @@ class ServiceList:
 
     @property
     def ip(self):
-        """Gets the ip of this ServiceList.
+        r"""Gets the ip of this ServiceList.
 
         接口型VLAN场景服务端IPv4地址或域名
 
@@ -487,7 +487,7 @@ class ServiceList:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ServiceList.
+        r"""Sets the ip of this ServiceList.
 
         接口型VLAN场景服务端IPv4地址或域名
 
@@ -498,7 +498,7 @@ class ServiceList:
 
     @property
     def tags(self):
-        """Gets the tags of this ServiceList.
+        r"""Gets the tags of this ServiceList.
 
         资源标签列表
 
@@ -509,7 +509,7 @@ class ServiceList:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ServiceList.
+        r"""Sets the tags of this ServiceList.
 
         资源标签列表
 
@@ -520,7 +520,7 @@ class ServiceList:
 
     @property
     def connection_count(self):
-        """Gets the connection_count of this ServiceList.
+        r"""Gets the connection_count of this ServiceList.
 
         终端节点服务下连接的状态为“创建中”或“已接受”的终端节点的个数。
 
@@ -531,7 +531,7 @@ class ServiceList:
 
     @connection_count.setter
     def connection_count(self, connection_count):
-        """Sets the connection_count of this ServiceList.
+        r"""Sets the connection_count of this ServiceList.
 
         终端节点服务下连接的状态为“创建中”或“已接受”的终端节点的个数。
 
@@ -542,7 +542,7 @@ class ServiceList:
 
     @property
     def tcp_proxy(self):
-        """Gets the tcp_proxy of this ServiceList.
+        r"""Gets the tcp_proxy of this ServiceList.
 
         用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
@@ -553,7 +553,7 @@ class ServiceList:
 
     @tcp_proxy.setter
     def tcp_proxy(self, tcp_proxy):
-        """Sets the tcp_proxy of this ServiceList.
+        r"""Sets the tcp_proxy of this ServiceList.
 
         用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
@@ -564,7 +564,7 @@ class ServiceList:
 
     @property
     def error(self):
-        """Gets the error of this ServiceList.
+        r"""Gets the error of this ServiceList.
 
         提交任务异常时返回的异常信息
 
@@ -575,7 +575,7 @@ class ServiceList:
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ServiceList.
+        r"""Sets the error of this ServiceList.
 
         提交任务异常时返回的异常信息
 
@@ -586,7 +586,7 @@ class ServiceList:
 
     @property
     def description(self):
-        """Gets the description of this ServiceList.
+        r"""Gets the description of this ServiceList.
 
         描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
 
@@ -597,7 +597,7 @@ class ServiceList:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServiceList.
+        r"""Sets the description of this ServiceList.
 
         描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
 
@@ -608,7 +608,7 @@ class ServiceList:
 
     @property
     def supported_editions(self):
-        """Gets the supported_editions of this ServiceList.
+        r"""Gets the supported_editions of this ServiceList.
 
         终端节点服务支持的类型，取值范围为profession-专业型，basic-基础型
 
@@ -619,7 +619,7 @@ class ServiceList:
 
     @supported_editions.setter
     def supported_editions(self, supported_editions):
-        """Sets the supported_editions of this ServiceList.
+        r"""Sets the supported_editions of this ServiceList.
 
         终端节点服务支持的类型，取值范围为profession-专业型，basic-基础型
 
@@ -630,7 +630,7 @@ class ServiceList:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ServiceList.
+        r"""Gets the public_border_group of this ServiceList.
 
         终端节点服务对应Pool的Public Border Group信息
 
@@ -641,7 +641,7 @@ class ServiceList:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ServiceList.
+        r"""Sets the public_border_group of this ServiceList.
 
         终端节点服务对应Pool的Public Border Group信息
 
@@ -652,7 +652,7 @@ class ServiceList:
 
     @property
     def enable_policy(self):
-        """Gets the enable_policy of this ServiceList.
+        r"""Gets the enable_policy of this ServiceList.
 
         是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 
@@ -663,7 +663,7 @@ class ServiceList:
 
     @enable_policy.setter
     def enable_policy(self, enable_policy):
-        """Sets the enable_policy of this ServiceList.
+        r"""Sets the enable_policy of this ServiceList.
 
         是否允许自定义终端节点策略。  - false：不支持设置终端节点策略  - true：支持设置终端节点策略 默认为false
 

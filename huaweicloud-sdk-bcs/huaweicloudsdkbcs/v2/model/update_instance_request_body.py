@@ -29,7 +29,7 @@ class UpdateInstanceRequestBody:
     }
 
     def __init__(self, node_orgs=None, publicips=None, is_delete_org=None):
-        """UpdateInstanceRequestBody
+        r"""UpdateInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateInstanceRequestBody:
 
     @property
     def node_orgs(self):
-        """Gets the node_orgs of this UpdateInstanceRequestBody.
+        r"""Gets the node_orgs of this UpdateInstanceRequestBody.
 
         添加节点的组织列表
 
@@ -67,7 +67,7 @@ class UpdateInstanceRequestBody:
 
     @node_orgs.setter
     def node_orgs(self, node_orgs):
-        """Sets the node_orgs of this UpdateInstanceRequestBody.
+        r"""Sets the node_orgs of this UpdateInstanceRequestBody.
 
         添加节点的组织列表
 
@@ -78,7 +78,7 @@ class UpdateInstanceRequestBody:
 
     @property
     def publicips(self):
-        """Gets the publicips of this UpdateInstanceRequestBody.
+        r"""Gets the publicips of this UpdateInstanceRequestBody.
 
         ief添加组织时，ief节点信息。绑定模式的IEF服务，新增组织时，该字段必填
 
@@ -89,7 +89,7 @@ class UpdateInstanceRequestBody:
 
     @publicips.setter
     def publicips(self, publicips):
-        """Sets the publicips of this UpdateInstanceRequestBody.
+        r"""Sets the publicips of this UpdateInstanceRequestBody.
 
         ief添加组织时，ief节点信息。绑定模式的IEF服务，新增组织时，该字段必填
 
@@ -100,7 +100,7 @@ class UpdateInstanceRequestBody:
 
     @property
     def is_delete_org(self):
-        """Gets the is_delete_org of this UpdateInstanceRequestBody.
+        r"""Gets the is_delete_org of this UpdateInstanceRequestBody.
 
         是否是删除组织
 
@@ -111,7 +111,7 @@ class UpdateInstanceRequestBody:
 
     @is_delete_org.setter
     def is_delete_org(self, is_delete_org):
-        """Sets the is_delete_org of this UpdateInstanceRequestBody.
+        r"""Sets the is_delete_org of this UpdateInstanceRequestBody.
 
         是否是删除组织
 

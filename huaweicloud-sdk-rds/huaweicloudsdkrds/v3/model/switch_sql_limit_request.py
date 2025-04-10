@@ -27,7 +27,7 @@ class SwitchSqlLimitRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SwitchSqlLimitRequest
+        r"""SwitchSqlLimitRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SwitchSqlLimitRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchSqlLimitRequest.
+        r"""Gets the instance_id of this SwitchSqlLimitRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class SwitchSqlLimitRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchSqlLimitRequest.
+        r"""Sets the instance_id of this SwitchSqlLimitRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class SwitchSqlLimitRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchSqlLimitRequest.
+        r"""Gets the body of this SwitchSqlLimitRequest.
 
         :return: The body of this SwitchSqlLimitRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SwitchSqlLimitControlReqV3`
@@ -80,7 +80,7 @@ class SwitchSqlLimitRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchSqlLimitRequest.
+        r"""Sets the body of this SwitchSqlLimitRequest.
 
         :param body: The body of this SwitchSqlLimitRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SwitchSqlLimitControlReqV3`

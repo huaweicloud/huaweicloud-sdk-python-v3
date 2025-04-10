@@ -27,7 +27,7 @@ class CreateCentralNetworkPolicyRequest:
     }
 
     def __init__(self, central_network_id=None, body=None):
-        """CreateCentralNetworkPolicyRequest
+        r"""CreateCentralNetworkPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCentralNetworkPolicyRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this CreateCentralNetworkPolicyRequest.
+        r"""Gets the central_network_id of this CreateCentralNetworkPolicyRequest.
 
         中心网络的ID。
 
@@ -60,7 +60,7 @@ class CreateCentralNetworkPolicyRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this CreateCentralNetworkPolicyRequest.
+        r"""Sets the central_network_id of this CreateCentralNetworkPolicyRequest.
 
         中心网络的ID。
 
@@ -71,7 +71,7 @@ class CreateCentralNetworkPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCentralNetworkPolicyRequest.
+        r"""Gets the body of this CreateCentralNetworkPolicyRequest.
 
         :return: The body of this CreateCentralNetworkPolicyRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.CreateCentralNetworkPolicyRequestBody`
@@ -80,7 +80,7 @@ class CreateCentralNetworkPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCentralNetworkPolicyRequest.
+        r"""Sets the body of this CreateCentralNetworkPolicyRequest.
 
         :param body: The body of this CreateCentralNetworkPolicyRequest.
         :type body: :class:`huaweicloudsdkcc.v3.CreateCentralNetworkPolicyRequestBody`

@@ -27,7 +27,7 @@ class ListConsumeSubCustomersRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListConsumeSubCustomersRequest
+        r"""ListConsumeSubCustomersRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListConsumeSubCustomersRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListConsumeSubCustomersRequest.
+        r"""Gets the x_language of this ListConsumeSubCustomersRequest.
 
         语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
@@ -61,7 +61,7 @@ class ListConsumeSubCustomersRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListConsumeSubCustomersRequest.
+        r"""Sets the x_language of this ListConsumeSubCustomersRequest.
 
         语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
@@ -72,7 +72,7 @@ class ListConsumeSubCustomersRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListConsumeSubCustomersRequest.
+        r"""Gets the body of this ListConsumeSubCustomersRequest.
 
         :return: The body of this ListConsumeSubCustomersRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.ListConsumeSubCustomersReq`
@@ -81,7 +81,7 @@ class ListConsumeSubCustomersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListConsumeSubCustomersRequest.
+        r"""Sets the body of this ListConsumeSubCustomersRequest.
 
         :param body: The body of this ListConsumeSubCustomersRequest.
         :type body: :class:`huaweicloudsdkbss.v2.ListConsumeSubCustomersReq`

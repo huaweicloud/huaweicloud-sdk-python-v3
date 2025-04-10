@@ -37,7 +37,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
     }
 
     def __init__(self, report_id=None, status=None, begin_time=None, end_time=None, group_name=None, topic_name=None, accumulated_partitions=None):
-        """KafkaMessageDiagnosisReportInfoEntity
+        r"""KafkaMessageDiagnosisReportInfoEntity
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
 
     @property
     def report_id(self):
-        """Gets the report_id of this KafkaMessageDiagnosisReportInfoEntity.
+        r"""Gets the report_id of this KafkaMessageDiagnosisReportInfoEntity.
 
         诊断报告ID
 
@@ -90,7 +90,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
 
     @report_id.setter
     def report_id(self, report_id):
-        """Sets the report_id of this KafkaMessageDiagnosisReportInfoEntity.
+        r"""Sets the report_id of this KafkaMessageDiagnosisReportInfoEntity.
 
         诊断报告ID
 
@@ -101,7 +101,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
 
     @property
     def status(self):
-        """Gets the status of this KafkaMessageDiagnosisReportInfoEntity.
+        r"""Gets the status of this KafkaMessageDiagnosisReportInfoEntity.
 
         消息积压诊断任务状态。 - diagnosing：诊断中 - failed：诊断失败 - deleted：手动删除 - finished：诊断完成 - normal：诊断结果正常 - abnormal：诊断结果异常
 
@@ -112,7 +112,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this KafkaMessageDiagnosisReportInfoEntity.
+        r"""Sets the status of this KafkaMessageDiagnosisReportInfoEntity.
 
         消息积压诊断任务状态。 - diagnosing：诊断中 - failed：诊断失败 - deleted：手动删除 - finished：诊断完成 - normal：诊断结果正常 - abnormal：诊断结果异常
 
@@ -123,7 +123,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this KafkaMessageDiagnosisReportInfoEntity.
+        r"""Gets the begin_time of this KafkaMessageDiagnosisReportInfoEntity.
 
         诊断任务开始时间
 
@@ -134,7 +134,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this KafkaMessageDiagnosisReportInfoEntity.
+        r"""Sets the begin_time of this KafkaMessageDiagnosisReportInfoEntity.
 
         诊断任务开始时间
 
@@ -145,7 +145,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
 
     @property
     def end_time(self):
-        """Gets the end_time of this KafkaMessageDiagnosisReportInfoEntity.
+        r"""Gets the end_time of this KafkaMessageDiagnosisReportInfoEntity.
 
         诊断任务结束时间
 
@@ -156,7 +156,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this KafkaMessageDiagnosisReportInfoEntity.
+        r"""Sets the end_time of this KafkaMessageDiagnosisReportInfoEntity.
 
         诊断任务结束时间
 
@@ -167,7 +167,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
 
     @property
     def group_name(self):
-        """Gets the group_name of this KafkaMessageDiagnosisReportInfoEntity.
+        r"""Gets the group_name of this KafkaMessageDiagnosisReportInfoEntity.
 
         该次诊断任务诊断的消费组名称
 
@@ -178,7 +178,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this KafkaMessageDiagnosisReportInfoEntity.
+        r"""Sets the group_name of this KafkaMessageDiagnosisReportInfoEntity.
 
         该次诊断任务诊断的消费组名称
 
@@ -189,7 +189,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
 
     @property
     def topic_name(self):
-        """Gets the topic_name of this KafkaMessageDiagnosisReportInfoEntity.
+        r"""Gets the topic_name of this KafkaMessageDiagnosisReportInfoEntity.
 
         该次诊断任务诊断的topic名称
 
@@ -200,7 +200,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
 
     @topic_name.setter
     def topic_name(self, topic_name):
-        """Sets the topic_name of this KafkaMessageDiagnosisReportInfoEntity.
+        r"""Sets the topic_name of this KafkaMessageDiagnosisReportInfoEntity.
 
         该次诊断任务诊断的topic名称
 
@@ -211,7 +211,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
 
     @property
     def accumulated_partitions(self):
-        """Gets the accumulated_partitions of this KafkaMessageDiagnosisReportInfoEntity.
+        r"""Gets the accumulated_partitions of this KafkaMessageDiagnosisReportInfoEntity.
 
         该次诊断任务发现的存在消息堆积的分区数
 
@@ -222,7 +222,7 @@ class KafkaMessageDiagnosisReportInfoEntity:
 
     @accumulated_partitions.setter
     def accumulated_partitions(self, accumulated_partitions):
-        """Sets the accumulated_partitions of this KafkaMessageDiagnosisReportInfoEntity.
+        r"""Sets the accumulated_partitions of this KafkaMessageDiagnosisReportInfoEntity.
 
         该次诊断任务发现的存在消息堆积的分区数
 

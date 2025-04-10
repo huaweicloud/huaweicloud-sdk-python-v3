@@ -28,7 +28,7 @@ class ListIndirectPartnersResponse(SdkResponse):
     }
 
     def __init__(self, count=None, indirect_partners=None):
-        """ListIndirectPartnersResponse
+        r"""ListIndirectPartnersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListIndirectPartnersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListIndirectPartnersResponse.
+        r"""Gets the count of this ListIndirectPartnersResponse.
 
         符合条件的记录个数，只有成功的时候出现。
 
@@ -62,7 +62,7 @@ class ListIndirectPartnersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListIndirectPartnersResponse.
+        r"""Sets the count of this ListIndirectPartnersResponse.
 
         符合条件的记录个数，只有成功的时候出现。
 
@@ -73,7 +73,7 @@ class ListIndirectPartnersResponse(SdkResponse):
 
     @property
     def indirect_partners(self):
-        """Gets the indirect_partners of this ListIndirectPartnersResponse.
+        r"""Gets the indirect_partners of this ListIndirectPartnersResponse.
 
         云经销商列表，具体参见表1。
 
@@ -84,7 +84,7 @@ class ListIndirectPartnersResponse(SdkResponse):
 
     @indirect_partners.setter
     def indirect_partners(self, indirect_partners):
-        """Sets the indirect_partners of this ListIndirectPartnersResponse.
+        r"""Sets the indirect_partners of this ListIndirectPartnersResponse.
 
         云经销商列表，具体参见表1。
 

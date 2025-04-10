@@ -32,7 +32,7 @@ class SearchResourceResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchResourceResponse
+        r"""SearchResourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchResourceResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchResourceResponse.
+        r"""Gets the offset of this SearchResourceResponse.
 
         页面起始页，从0开始。
 
@@ -76,7 +76,7 @@ class SearchResourceResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchResourceResponse.
+        r"""Sets the offset of this SearchResourceResponse.
 
         页面起始页，从0开始。
 
@@ -87,7 +87,7 @@ class SearchResourceResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchResourceResponse.
+        r"""Gets the limit of this SearchResourceResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -98,7 +98,7 @@ class SearchResourceResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchResourceResponse.
+        r"""Sets the limit of this SearchResourceResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -109,7 +109,7 @@ class SearchResourceResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchResourceResponse.
+        r"""Gets the count of this SearchResourceResponse.
 
         总数量。
 
@@ -120,7 +120,7 @@ class SearchResourceResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchResourceResponse.
+        r"""Sets the count of this SearchResourceResponse.
 
         总数量。
 
@@ -131,7 +131,7 @@ class SearchResourceResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchResourceResponse.
+        r"""Gets the data of this SearchResourceResponse.
 
         分页查询企业的资源项。
 
@@ -142,7 +142,7 @@ class SearchResourceResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchResourceResponse.
+        r"""Sets the data of this SearchResourceResponse.
 
         分页查询企业的资源项。
 

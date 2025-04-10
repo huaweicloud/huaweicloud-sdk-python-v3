@@ -31,7 +31,7 @@ class ListScriptJobBatchesRequest:
     }
 
     def __init__(self, execute_uuid=None, x_language=None, x_project_id=None, x_user_profile=None):
-        """ListScriptJobBatchesRequest
+        r"""ListScriptJobBatchesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListScriptJobBatchesRequest:
 
     @property
     def execute_uuid(self):
-        """Gets the execute_uuid of this ListScriptJobBatchesRequest.
+        r"""Gets the execute_uuid of this ListScriptJobBatchesRequest.
 
         脚本工单的执行Id，取自executeJobScript和ListJobScriptOrders返回体中
 
@@ -74,7 +74,7 @@ class ListScriptJobBatchesRequest:
 
     @execute_uuid.setter
     def execute_uuid(self, execute_uuid):
-        """Sets the execute_uuid of this ListScriptJobBatchesRequest.
+        r"""Sets the execute_uuid of this ListScriptJobBatchesRequest.
 
         脚本工单的执行Id，取自executeJobScript和ListJobScriptOrders返回体中
 
@@ -85,7 +85,7 @@ class ListScriptJobBatchesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListScriptJobBatchesRequest.
+        r"""Gets the x_language of this ListScriptJobBatchesRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -96,7 +96,7 @@ class ListScriptJobBatchesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListScriptJobBatchesRequest.
+        r"""Sets the x_language of this ListScriptJobBatchesRequest.
 
         国际化标记，zh-cn表示中文，en-us或不传表示英文
 
@@ -107,7 +107,7 @@ class ListScriptJobBatchesRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListScriptJobBatchesRequest.
+        r"""Gets the x_project_id of this ListScriptJobBatchesRequest.
 
         项目ID，一个项目对应一个region
 
@@ -118,7 +118,7 @@ class ListScriptJobBatchesRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListScriptJobBatchesRequest.
+        r"""Sets the x_project_id of this ListScriptJobBatchesRequest.
 
         项目ID，一个项目对应一个region
 
@@ -129,7 +129,7 @@ class ListScriptJobBatchesRequest:
 
     @property
     def x_user_profile(self):
-        """Gets the x_user_profile of this ListScriptJobBatchesRequest.
+        r"""Gets the x_user_profile of this ListScriptJobBatchesRequest.
 
         IAM5.0用户信息
 
@@ -140,7 +140,7 @@ class ListScriptJobBatchesRequest:
 
     @x_user_profile.setter
     def x_user_profile(self, x_user_profile):
-        """Sets the x_user_profile of this ListScriptJobBatchesRequest.
+        r"""Sets the x_user_profile of this ListScriptJobBatchesRequest.
 
         IAM5.0用户信息
 

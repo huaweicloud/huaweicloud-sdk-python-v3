@@ -25,7 +25,7 @@ class WafCustomRuleAction:
     }
 
     def __init__(self, category=None):
-        """WafCustomRuleAction
+        r"""WafCustomRuleAction
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class WafCustomRuleAction:
 
     @property
     def category(self):
-        """Gets the category of this WafCustomRuleAction.
+        r"""Gets the category of this WafCustomRuleAction.
 
         防护动作。 “block”：拦截。 “pass”：放行。 “log”：仅记录
 
@@ -54,7 +54,7 @@ class WafCustomRuleAction:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this WafCustomRuleAction.
+        r"""Sets the category of this WafCustomRuleAction.
 
         防护动作。 “block”：拦截。 “pass”：放行。 “log”：仅记录
 

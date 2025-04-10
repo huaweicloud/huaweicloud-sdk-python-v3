@@ -27,7 +27,7 @@ class ResourceTag:
     }
 
     def __init__(self, key=None, value=None):
-        """ResourceTag
+        r"""ResourceTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ResourceTag:
 
     @property
     def key(self):
-        """Gets the key of this ResourceTag.
+        r"""Gets the key of this ResourceTag.
 
         标签键。 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @
 
@@ -59,7 +59,7 @@ class ResourceTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceTag.
+        r"""Sets the key of this ResourceTag.
 
         标签键。 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @
 
@@ -70,7 +70,7 @@ class ResourceTag:
 
     @property
     def value(self):
-        """Gets the value of this ResourceTag.
+        r"""Gets the value of this ResourceTag.
 
         标签值。 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : / = + - @
 
@@ -81,7 +81,7 @@ class ResourceTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResourceTag.
+        r"""Sets the value of this ResourceTag.
 
         标签值。 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : / = + - @
 

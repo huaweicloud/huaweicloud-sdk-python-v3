@@ -27,7 +27,7 @@ class ListXelLogResponseResult:
     }
 
     def __init__(self, file_name=None, file_size=None):
-        """ListXelLogResponseResult
+        r"""ListXelLogResponseResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListXelLogResponseResult:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ListXelLogResponseResult.
+        r"""Gets the file_name of this ListXelLogResponseResult.
 
         文件名
 
@@ -59,7 +59,7 @@ class ListXelLogResponseResult:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ListXelLogResponseResult.
+        r"""Sets the file_name of this ListXelLogResponseResult.
 
         文件名
 
@@ -70,7 +70,7 @@ class ListXelLogResponseResult:
 
     @property
     def file_size(self):
-        """Gets the file_size of this ListXelLogResponseResult.
+        r"""Gets the file_size of this ListXelLogResponseResult.
 
         日志大小，单位：KB
 
@@ -81,7 +81,7 @@ class ListXelLogResponseResult:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this ListXelLogResponseResult.
+        r"""Sets the file_size of this ListXelLogResponseResult.
 
         日志大小，单位：KB
 

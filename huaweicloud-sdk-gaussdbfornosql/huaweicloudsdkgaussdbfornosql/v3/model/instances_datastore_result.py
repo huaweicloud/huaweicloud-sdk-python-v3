@@ -27,7 +27,7 @@ class InstancesDatastoreResult:
     }
 
     def __init__(self, type=None, version=None):
-        """InstancesDatastoreResult
+        r"""InstancesDatastoreResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class InstancesDatastoreResult:
 
     @property
     def type(self):
-        """Gets the type of this InstancesDatastoreResult.
+        r"""Gets the type of this InstancesDatastoreResult.
 
         数据库引擎。
 
@@ -59,7 +59,7 @@ class InstancesDatastoreResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this InstancesDatastoreResult.
+        r"""Sets the type of this InstancesDatastoreResult.
 
         数据库引擎。
 
@@ -70,7 +70,7 @@ class InstancesDatastoreResult:
 
     @property
     def version(self):
-        """Gets the version of this InstancesDatastoreResult.
+        r"""Gets the version of this InstancesDatastoreResult.
 
         数据库版本号。
 
@@ -81,7 +81,7 @@ class InstancesDatastoreResult:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this InstancesDatastoreResult.
+        r"""Sets the version of this InstancesDatastoreResult.
 
         数据库版本号。
 

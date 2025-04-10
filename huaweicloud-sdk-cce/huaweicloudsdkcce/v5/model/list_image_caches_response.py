@@ -26,7 +26,7 @@ class ListImageCachesResponse(SdkResponse):
     }
 
     def __init__(self, image_caches=None):
-        """ListImageCachesResponse
+        r"""ListImageCachesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListImageCachesResponse(SdkResponse):
 
     @property
     def image_caches(self):
-        """Gets the image_caches of this ListImageCachesResponse.
+        r"""Gets the image_caches of this ListImageCachesResponse.
 
         镜像缓存列表。
 
@@ -55,7 +55,7 @@ class ListImageCachesResponse(SdkResponse):
 
     @image_caches.setter
     def image_caches(self, image_caches):
-        """Sets the image_caches of this ListImageCachesResponse.
+        r"""Sets the image_caches of this ListImageCachesResponse.
 
         镜像缓存列表。
 

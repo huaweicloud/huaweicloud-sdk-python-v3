@@ -29,7 +29,7 @@ class UpdateSecretRequest:
     }
 
     def __init__(self, secret_id=None, x_enterprise_project_id=None, body=None):
-        """UpdateSecretRequest
+        r"""UpdateSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateSecretRequest:
 
     @property
     def secret_id(self):
-        """Gets the secret_id of this UpdateSecretRequest.
+        r"""Gets the secret_id of this UpdateSecretRequest.
 
         凭据ID。
 
@@ -67,7 +67,7 @@ class UpdateSecretRequest:
 
     @secret_id.setter
     def secret_id(self, secret_id):
-        """Sets the secret_id of this UpdateSecretRequest.
+        r"""Sets the secret_id of this UpdateSecretRequest.
 
         凭据ID。
 
@@ -78,7 +78,7 @@ class UpdateSecretRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this UpdateSecretRequest.
+        r"""Gets the x_enterprise_project_id of this UpdateSecretRequest.
 
         企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
 
@@ -89,7 +89,7 @@ class UpdateSecretRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this UpdateSecretRequest.
+        r"""Sets the x_enterprise_project_id of this UpdateSecretRequest.
 
         企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
 
@@ -100,7 +100,7 @@ class UpdateSecretRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecretRequest.
+        r"""Gets the body of this UpdateSecretRequest.
 
         :return: The body of this UpdateSecretRequest.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateOrUpdateSecretReq`
@@ -109,7 +109,7 @@ class UpdateSecretRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecretRequest.
+        r"""Sets the body of this UpdateSecretRequest.
 
         :param body: The body of this UpdateSecretRequest.
         :type body: :class:`huaweicloudsdkcae.v1.CreateOrUpdateSecretReq`

@@ -27,7 +27,7 @@ class UpdateShrinkNodesRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateShrinkNodesRequest
+        r"""UpdateShrinkNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateShrinkNodesRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateShrinkNodesRequest.
+        r"""Gets the cluster_id of this UpdateShrinkNodesRequest.
 
         指定待缩容的集群ID。
 
@@ -60,7 +60,7 @@ class UpdateShrinkNodesRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateShrinkNodesRequest.
+        r"""Sets the cluster_id of this UpdateShrinkNodesRequest.
 
         指定待缩容的集群ID。
 
@@ -71,7 +71,7 @@ class UpdateShrinkNodesRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateShrinkNodesRequest.
+        r"""Gets the body of this UpdateShrinkNodesRequest.
 
         :return: The body of this UpdateShrinkNodesRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.ShrinkNodesReq`
@@ -80,7 +80,7 @@ class UpdateShrinkNodesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateShrinkNodesRequest.
+        r"""Sets the body of this UpdateShrinkNodesRequest.
 
         :param body: The body of this UpdateShrinkNodesRequest.
         :type body: :class:`huaweicloudsdkcss.v1.ShrinkNodesReq`

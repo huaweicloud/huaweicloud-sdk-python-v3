@@ -27,7 +27,7 @@ class RepoListInfoV2:
     }
 
     def __init__(self, repositories=None, total=None):
-        """RepoListInfoV2
+        r"""RepoListInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RepoListInfoV2:
 
     @property
     def repositories(self):
-        """Gets the repositories of this RepoListInfoV2.
+        r"""Gets the repositories of this RepoListInfoV2.
 
         仓库列表
 
@@ -61,7 +61,7 @@ class RepoListInfoV2:
 
     @repositories.setter
     def repositories(self, repositories):
-        """Sets the repositories of this RepoListInfoV2.
+        r"""Sets the repositories of this RepoListInfoV2.
 
         仓库列表
 
@@ -72,7 +72,7 @@ class RepoListInfoV2:
 
     @property
     def total(self):
-        """Gets the total of this RepoListInfoV2.
+        r"""Gets the total of this RepoListInfoV2.
 
         仓库总数
 
@@ -83,7 +83,7 @@ class RepoListInfoV2:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this RepoListInfoV2.
+        r"""Sets the total of this RepoListInfoV2.
 
         仓库总数
 

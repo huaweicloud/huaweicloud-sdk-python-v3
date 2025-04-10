@@ -31,7 +31,7 @@ class CreateResOnlineInstanceRequest:
     }
 
     def __init__(self, content_type=None, resource_id=None, workspace_id=None, body=None):
-        """CreateResOnlineInstanceRequest
+        r"""CreateResOnlineInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateResOnlineInstanceRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this CreateResOnlineInstanceRequest.
+        r"""Gets the content_type of this CreateResOnlineInstanceRequest.
 
         内容类型，取值为application/json。
 
@@ -72,7 +72,7 @@ class CreateResOnlineInstanceRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this CreateResOnlineInstanceRequest.
+        r"""Sets the content_type of this CreateResOnlineInstanceRequest.
 
         内容类型，取值为application/json。
 
@@ -83,7 +83,7 @@ class CreateResOnlineInstanceRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateResOnlineInstanceRequest.
+        r"""Gets the resource_id of this CreateResOnlineInstanceRequest.
 
         资源id（数据源id或场景id）。
 
@@ -94,7 +94,7 @@ class CreateResOnlineInstanceRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateResOnlineInstanceRequest.
+        r"""Sets the resource_id of this CreateResOnlineInstanceRequest.
 
         资源id（数据源id或场景id）。
 
@@ -105,7 +105,7 @@ class CreateResOnlineInstanceRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateResOnlineInstanceRequest.
+        r"""Gets the workspace_id of this CreateResOnlineInstanceRequest.
 
         工作空间id。
 
@@ -116,7 +116,7 @@ class CreateResOnlineInstanceRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateResOnlineInstanceRequest.
+        r"""Sets the workspace_id of this CreateResOnlineInstanceRequest.
 
         工作空间id。
 
@@ -127,7 +127,7 @@ class CreateResOnlineInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResOnlineInstanceRequest.
+        r"""Gets the body of this CreateResOnlineInstanceRequest.
 
         :return: The body of this CreateResOnlineInstanceRequest.
         :rtype: :class:`huaweicloudsdkres.v1.CreateResOnlineInstanceRequestBody`
@@ -136,7 +136,7 @@ class CreateResOnlineInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResOnlineInstanceRequest.
+        r"""Sets the body of this CreateResOnlineInstanceRequest.
 
         :param body: The body of this CreateResOnlineInstanceRequest.
         :type body: :class:`huaweicloudsdkres.v1.CreateResOnlineInstanceRequestBody`

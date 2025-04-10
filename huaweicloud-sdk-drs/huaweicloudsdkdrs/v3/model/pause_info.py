@@ -27,7 +27,7 @@ class PauseInfo:
     }
 
     def __init__(self, job_id=None, pause_mode=None):
-        """PauseInfo
+        r"""PauseInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PauseInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this PauseInfo.
+        r"""Gets the job_id of this PauseInfo.
 
         任务id
 
@@ -59,7 +59,7 @@ class PauseInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this PauseInfo.
+        r"""Sets the job_id of this PauseInfo.
 
         任务id
 
@@ -70,7 +70,7 @@ class PauseInfo:
 
     @property
     def pause_mode(self):
-        """Gets the pause_mode of this PauseInfo.
+        r"""Gets the pause_mode of this PauseInfo.
 
         暂停类型，target:停回放,all:停日志抓取和回放
 
@@ -81,7 +81,7 @@ class PauseInfo:
 
     @pause_mode.setter
     def pause_mode(self, pause_mode):
-        """Sets the pause_mode of this PauseInfo.
+        r"""Sets the pause_mode of this PauseInfo.
 
         暂停类型，target:停回放,all:停日志抓取和回放
 

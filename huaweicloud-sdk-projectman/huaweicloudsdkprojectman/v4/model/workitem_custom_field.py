@@ -33,7 +33,7 @@ class WorkitemCustomField:
     }
 
     def __init__(self, field_id=None, field_name=None, field_type=None, field_option_source=None, value=None):
-        """WorkitemCustomField
+        r"""WorkitemCustomField
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class WorkitemCustomField:
 
     @property
     def field_id(self):
-        """Gets the field_id of this WorkitemCustomField.
+        r"""Gets the field_id of this WorkitemCustomField.
 
         自定义字段id
 
@@ -82,7 +82,7 @@ class WorkitemCustomField:
 
     @field_id.setter
     def field_id(self, field_id):
-        """Sets the field_id of this WorkitemCustomField.
+        r"""Sets the field_id of this WorkitemCustomField.
 
         自定义字段id
 
@@ -93,7 +93,7 @@ class WorkitemCustomField:
 
     @property
     def field_name(self):
-        """Gets the field_name of this WorkitemCustomField.
+        r"""Gets the field_name of this WorkitemCustomField.
 
         自定义字段名称
 
@@ -104,7 +104,7 @@ class WorkitemCustomField:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this WorkitemCustomField.
+        r"""Sets the field_name of this WorkitemCustomField.
 
         自定义字段名称
 
@@ -115,7 +115,7 @@ class WorkitemCustomField:
 
     @property
     def field_type(self):
-        """Gets the field_type of this WorkitemCustomField.
+        r"""Gets the field_type of this WorkitemCustomField.
 
         自定义字段类型, \"Date\",\"Number\",\"DateTime\", \"MultiLineText\",\"SingleLineText\", \"Select\",  \"Checkbox\"
 
@@ -126,7 +126,7 @@ class WorkitemCustomField:
 
     @field_type.setter
     def field_type(self, field_type):
-        """Sets the field_type of this WorkitemCustomField.
+        r"""Sets the field_type of this WorkitemCustomField.
 
         自定义字段类型, \"Date\",\"Number\",\"DateTime\", \"MultiLineText\",\"SingleLineText\", \"Select\",  \"Checkbox\"
 
@@ -137,7 +137,7 @@ class WorkitemCustomField:
 
     @property
     def field_option_source(self):
-        """Gets the field_option_source of this WorkitemCustomField.
+        r"""Gets the field_option_source of this WorkitemCustomField.
 
         自定义字段的选项源,CUSTOM，USER，DOMAIN，ITERATION，MODULE，TAG
 
@@ -148,7 +148,7 @@ class WorkitemCustomField:
 
     @field_option_source.setter
     def field_option_source(self, field_option_source):
-        """Sets the field_option_source of this WorkitemCustomField.
+        r"""Sets the field_option_source of this WorkitemCustomField.
 
         自定义字段的选项源,CUSTOM，USER，DOMAIN，ITERATION，MODULE，TAG
 
@@ -159,7 +159,7 @@ class WorkitemCustomField:
 
     @property
     def value(self):
-        """Gets the value of this WorkitemCustomField.
+        r"""Gets the value of this WorkitemCustomField.
 
         自定义字段值, (field_type为Date,Number,DateTime时,field_option_source为空，value值是数字的字符串)， (field_type为MultiLineText,SingleLineText时,field_option_source为空，value值是文本字符串)， (field_type为Select ,field_option_source为CUSTOM时，value值是文本字符串) (field_type为Select ,field_option_source为USER，DOMAIN，ITERATION，MODULE，TAG时，value值是Json格式{}), (field_type为Checkbox ,field_option_source为CUSTOM时，value值是字符串数组[\\\"aaa\\\"]), (field_type为\"Checkbox\" ,field_option_source为USER，DOMAIN，ITERATION，MODULE，TAG时，value值是Json的数组[{},{}])
 
@@ -170,7 +170,7 @@ class WorkitemCustomField:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this WorkitemCustomField.
+        r"""Sets the value of this WorkitemCustomField.
 
         自定义字段值, (field_type为Date,Number,DateTime时,field_option_source为空，value值是数字的字符串)， (field_type为MultiLineText,SingleLineText时,field_option_source为空，value值是文本字符串)， (field_type为Select ,field_option_source为CUSTOM时，value值是文本字符串) (field_type为Select ,field_option_source为USER，DOMAIN，ITERATION，MODULE，TAG时，value值是Json格式{}), (field_type为Checkbox ,field_option_source为CUSTOM时，value值是字符串数组[\\\"aaa\\\"]), (field_type为\"Checkbox\" ,field_option_source为USER，DOMAIN，ITERATION，MODULE，TAG时，value值是Json的数组[{},{}])
 

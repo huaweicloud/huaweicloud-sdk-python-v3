@@ -35,7 +35,7 @@ class CreateHostClusterRequestBody:
     }
 
     def __init__(self, name=None, project_id=None, os=None, slave_cluster_id=None, description=None, is_proxy_mode=None):
-        """CreateHostClusterRequestBody
+        r"""CreateHostClusterRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CreateHostClusterRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateHostClusterRequestBody.
+        r"""Gets the name of this CreateHostClusterRequestBody.
 
         主机集群名
 
@@ -85,7 +85,7 @@ class CreateHostClusterRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateHostClusterRequestBody.
+        r"""Sets the name of this CreateHostClusterRequestBody.
 
         主机集群名
 
@@ -96,7 +96,7 @@ class CreateHostClusterRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateHostClusterRequestBody.
+        r"""Gets the project_id of this CreateHostClusterRequestBody.
 
         项目id
 
@@ -107,7 +107,7 @@ class CreateHostClusterRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateHostClusterRequestBody.
+        r"""Sets the project_id of this CreateHostClusterRequestBody.
 
         项目id
 
@@ -118,7 +118,7 @@ class CreateHostClusterRequestBody:
 
     @property
     def os(self):
-        """Gets the os of this CreateHostClusterRequestBody.
+        r"""Gets the os of this CreateHostClusterRequestBody.
 
         操作系统：windows|linux
 
@@ -129,7 +129,7 @@ class CreateHostClusterRequestBody:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this CreateHostClusterRequestBody.
+        r"""Sets the os of this CreateHostClusterRequestBody.
 
         操作系统：windows|linux
 
@@ -140,7 +140,7 @@ class CreateHostClusterRequestBody:
 
     @property
     def slave_cluster_id(self):
-        """Gets the slave_cluster_id of this CreateHostClusterRequestBody.
+        r"""Gets the slave_cluster_id of this CreateHostClusterRequestBody.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -151,7 +151,7 @@ class CreateHostClusterRequestBody:
 
     @slave_cluster_id.setter
     def slave_cluster_id(self, slave_cluster_id):
-        """Sets the slave_cluster_id of this CreateHostClusterRequestBody.
+        r"""Sets the slave_cluster_id of this CreateHostClusterRequestBody.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -162,7 +162,7 @@ class CreateHostClusterRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateHostClusterRequestBody.
+        r"""Gets the description of this CreateHostClusterRequestBody.
 
         描述
 
@@ -173,7 +173,7 @@ class CreateHostClusterRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateHostClusterRequestBody.
+        r"""Sets the description of this CreateHostClusterRequestBody.
 
         描述
 
@@ -184,7 +184,7 @@ class CreateHostClusterRequestBody:
 
     @property
     def is_proxy_mode(self):
-        """Gets the is_proxy_mode of this CreateHostClusterRequestBody.
+        r"""Gets the is_proxy_mode of this CreateHostClusterRequestBody.
 
         主机集群是否为代理机接入模式， 1：是 0：否
 
@@ -195,7 +195,7 @@ class CreateHostClusterRequestBody:
 
     @is_proxy_mode.setter
     def is_proxy_mode(self, is_proxy_mode):
-        """Sets the is_proxy_mode of this CreateHostClusterRequestBody.
+        r"""Sets the is_proxy_mode of this CreateHostClusterRequestBody.
 
         主机集群是否为代理机接入模式， 1：是 0：否
 

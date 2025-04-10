@@ -27,7 +27,7 @@ class AccessControlList:
     }
 
     def __init__(self, grant=None):
-        """AccessControlList
+        r"""AccessControlList
 
         The model defined in huaweicloud sdk
 
@@ -45,7 +45,7 @@ class AccessControlList:
 
     @property
     def grant(self):
-        """Gets the grant of this AccessControlList.
+        r"""Gets the grant of this AccessControlList.
 
         :return: The grant of this AccessControlList.
         :rtype: list[:class:`huaweicloudsdkobs.v1.Grant`]
@@ -54,7 +54,7 @@ class AccessControlList:
 
     @grant.setter
     def grant(self, grant):
-        """Sets the grant of this AccessControlList.
+        r"""Sets the grant of this AccessControlList.
 
         :param grant: The grant of this AccessControlList.
         :type grant: list[:class:`huaweicloudsdkobs.v1.Grant`]

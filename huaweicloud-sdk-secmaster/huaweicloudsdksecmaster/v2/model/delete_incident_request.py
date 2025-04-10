@@ -29,7 +29,7 @@ class DeleteIncidentRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """DeleteIncidentRequest
+        r"""DeleteIncidentRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteIncidentRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteIncidentRequest.
+        r"""Gets the project_id of this DeleteIncidentRequest.
 
         项目id
 
@@ -66,7 +66,7 @@ class DeleteIncidentRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteIncidentRequest.
+        r"""Sets the project_id of this DeleteIncidentRequest.
 
         项目id
 
@@ -77,7 +77,7 @@ class DeleteIncidentRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeleteIncidentRequest.
+        r"""Gets the workspace_id of this DeleteIncidentRequest.
 
         工作空间id
 
@@ -88,7 +88,7 @@ class DeleteIncidentRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeleteIncidentRequest.
+        r"""Sets the workspace_id of this DeleteIncidentRequest.
 
         工作空间id
 
@@ -99,7 +99,7 @@ class DeleteIncidentRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteIncidentRequest.
+        r"""Gets the body of this DeleteIncidentRequest.
 
         :return: The body of this DeleteIncidentRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteIncidentRequestBody`
@@ -108,7 +108,7 @@ class DeleteIncidentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteIncidentRequest.
+        r"""Sets the body of this DeleteIncidentRequest.
 
         :param body: The body of this DeleteIncidentRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.DeleteIncidentRequestBody`

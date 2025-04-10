@@ -32,7 +32,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
     }
 
     def __init__(self, total=None, count=None, result=None, x_request_id=None):
-        """ShowUrlTaskInfoResponse
+        r"""ShowUrlTaskInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowUrlTaskInfoResponse.
+        r"""Gets the total of this ShowUrlTaskInfoResponse.
 
         查询结果总数。
 
@@ -76,7 +76,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowUrlTaskInfoResponse.
+        r"""Sets the total of this ShowUrlTaskInfoResponse.
 
         查询结果总数。
 
@@ -87,7 +87,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowUrlTaskInfoResponse.
+        r"""Gets the count of this ShowUrlTaskInfoResponse.
 
         当前查询到的总页数。
 
@@ -98,7 +98,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowUrlTaskInfoResponse.
+        r"""Sets the count of this ShowUrlTaskInfoResponse.
 
         当前查询到的总页数。
 
@@ -109,7 +109,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowUrlTaskInfoResponse.
+        r"""Gets the result of this ShowUrlTaskInfoResponse.
 
         url信息。
 
@@ -120,7 +120,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowUrlTaskInfoResponse.
+        r"""Sets the result of this ShowUrlTaskInfoResponse.
 
         url信息。
 
@@ -131,7 +131,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowUrlTaskInfoResponse.
+        r"""Gets the x_request_id of this ShowUrlTaskInfoResponse.
 
         :return: The x_request_id of this ShowUrlTaskInfoResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowUrlTaskInfoResponse.
+        r"""Sets the x_request_id of this ShowUrlTaskInfoResponse.
 
         :param x_request_id: The x_request_id of this ShowUrlTaskInfoResponse.
         :type x_request_id: str

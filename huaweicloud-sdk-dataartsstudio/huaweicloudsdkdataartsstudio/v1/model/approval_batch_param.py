@@ -37,7 +37,7 @@ class ApprovalBatchParam:
     }
 
     def __init__(self, biz_infos=None, approver_user_id=None, approver_user_name=None, email=None, fast_approval=None, schedule_time=None, env_type=None):
-        """ApprovalBatchParam
+        r"""ApprovalBatchParam
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ApprovalBatchParam:
 
     @property
     def biz_infos(self):
-        """Gets the biz_infos of this ApprovalBatchParam.
+        r"""Gets the biz_infos of this ApprovalBatchParam.
 
         业务信息列表。
 
@@ -93,7 +93,7 @@ class ApprovalBatchParam:
 
     @biz_infos.setter
     def biz_infos(self, biz_infos):
-        """Sets the biz_infos of this ApprovalBatchParam.
+        r"""Sets the biz_infos of this ApprovalBatchParam.
 
         业务信息列表。
 
@@ -104,7 +104,7 @@ class ApprovalBatchParam:
 
     @property
     def approver_user_id(self):
-        """Gets the approver_user_id of this ApprovalBatchParam.
+        r"""Gets the approver_user_id of this ApprovalBatchParam.
 
         审批人ID。
 
@@ -115,7 +115,7 @@ class ApprovalBatchParam:
 
     @approver_user_id.setter
     def approver_user_id(self, approver_user_id):
-        """Sets the approver_user_id of this ApprovalBatchParam.
+        r"""Sets the approver_user_id of this ApprovalBatchParam.
 
         审批人ID。
 
@@ -126,7 +126,7 @@ class ApprovalBatchParam:
 
     @property
     def approver_user_name(self):
-        """Gets the approver_user_name of this ApprovalBatchParam.
+        r"""Gets the approver_user_name of this ApprovalBatchParam.
 
         审批人姓名。
 
@@ -137,7 +137,7 @@ class ApprovalBatchParam:
 
     @approver_user_name.setter
     def approver_user_name(self, approver_user_name):
-        """Sets the approver_user_name of this ApprovalBatchParam.
+        r"""Sets the approver_user_name of this ApprovalBatchParam.
 
         审批人姓名。
 
@@ -148,7 +148,7 @@ class ApprovalBatchParam:
 
     @property
     def email(self):
-        """Gets the email of this ApprovalBatchParam.
+        r"""Gets the email of this ApprovalBatchParam.
 
         审批人邮箱，仅在创建审批人时填写。
 
@@ -159,7 +159,7 @@ class ApprovalBatchParam:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ApprovalBatchParam.
+        r"""Sets the email of this ApprovalBatchParam.
 
         审批人邮箱，仅在创建审批人时填写。
 
@@ -170,7 +170,7 @@ class ApprovalBatchParam:
 
     @property
     def fast_approval(self):
-        """Gets the fast_approval of this ApprovalBatchParam.
+        r"""Gets the fast_approval of this ApprovalBatchParam.
 
         快速审批，非正式场景，用于快速上手体验，仅在当前用户有审批权限时提供。
 
@@ -181,7 +181,7 @@ class ApprovalBatchParam:
 
     @fast_approval.setter
     def fast_approval(self, fast_approval):
-        """Sets the fast_approval of this ApprovalBatchParam.
+        r"""Sets the fast_approval of this ApprovalBatchParam.
 
         快速审批，非正式场景，用于快速上手体验，仅在当前用户有审批权限时提供。
 
@@ -192,7 +192,7 @@ class ApprovalBatchParam:
 
     @property
     def schedule_time(self):
-        """Gets the schedule_time of this ApprovalBatchParam.
+        r"""Gets the schedule_time of this ApprovalBatchParam.
 
         作业调度时间。格式参照：30_18，表示18点30分。
 
@@ -203,7 +203,7 @@ class ApprovalBatchParam:
 
     @schedule_time.setter
     def schedule_time(self, schedule_time):
-        """Sets the schedule_time of this ApprovalBatchParam.
+        r"""Sets the schedule_time of this ApprovalBatchParam.
 
         作业调度时间。格式参照：30_18，表示18点30分。
 
@@ -214,7 +214,7 @@ class ApprovalBatchParam:
 
     @property
     def env_type(self):
-        """Gets the env_type of this ApprovalBatchParam.
+        r"""Gets the env_type of this ApprovalBatchParam.
 
         :return: The env_type of this ApprovalBatchParam.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
@@ -223,7 +223,7 @@ class ApprovalBatchParam:
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this ApprovalBatchParam.
+        r"""Sets the env_type of this ApprovalBatchParam.
 
         :param env_type: The env_type of this ApprovalBatchParam.
         :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`

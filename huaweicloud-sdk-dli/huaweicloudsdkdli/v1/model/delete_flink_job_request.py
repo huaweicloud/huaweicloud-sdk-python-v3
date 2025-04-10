@@ -25,7 +25,7 @@ class DeleteFlinkJobRequest:
     }
 
     def __init__(self, job_id=None):
-        """DeleteFlinkJobRequest
+        r"""DeleteFlinkJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteFlinkJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteFlinkJobRequest.
+        r"""Gets the job_id of this DeleteFlinkJobRequest.
 
         作业ID。
 
@@ -53,7 +53,7 @@ class DeleteFlinkJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteFlinkJobRequest.
+        r"""Sets the job_id of this DeleteFlinkJobRequest.
 
         作业ID。
 

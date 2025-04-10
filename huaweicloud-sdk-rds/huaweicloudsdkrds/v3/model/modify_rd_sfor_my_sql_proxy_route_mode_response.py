@@ -26,7 +26,7 @@ class ModifyRdSforMySqlProxyRouteModeResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """ModifyRdSforMySqlProxyRouteModeResponse
+        r"""ModifyRdSforMySqlProxyRouteModeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ModifyRdSforMySqlProxyRouteModeResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ModifyRdSforMySqlProxyRouteModeResponse.
+        r"""Gets the result of this ModifyRdSforMySqlProxyRouteModeResponse.
 
         修改数据库代理路由模式结果。 取值：     failed 失败     success 成功
 
@@ -55,7 +55,7 @@ class ModifyRdSforMySqlProxyRouteModeResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ModifyRdSforMySqlProxyRouteModeResponse.
+        r"""Sets the result of this ModifyRdSforMySqlProxyRouteModeResponse.
 
         修改数据库代理路由模式结果。 取值：     failed 失败     success 成功
 

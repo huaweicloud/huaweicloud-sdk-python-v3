@@ -48,7 +48,7 @@ class ShowFunctionAppResponse(SdkResponse):
     }
 
     def __init__(self, name=None, last_modified_time=None, stack_resources=None, status=None, stack_name=None, stack_id=None, repo_name=None, description=None, repo=None, pipeline_id=None, project_id=None, apig_url=None):
-        """ShowFunctionAppResponse
+        r"""ShowFunctionAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowFunctionAppResponse.
+        r"""Gets the name of this ShowFunctionAppResponse.
 
         应用名称
 
@@ -132,7 +132,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowFunctionAppResponse.
+        r"""Sets the name of this ShowFunctionAppResponse.
 
         应用名称
 
@@ -143,7 +143,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this ShowFunctionAppResponse.
+        r"""Gets the last_modified_time of this ShowFunctionAppResponse.
 
         最后修改时间
 
@@ -154,7 +154,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this ShowFunctionAppResponse.
+        r"""Sets the last_modified_time of this ShowFunctionAppResponse.
 
         最后修改时间
 
@@ -165,7 +165,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @property
     def stack_resources(self):
-        """Gets the stack_resources of this ShowFunctionAppResponse.
+        r"""Gets the stack_resources of this ShowFunctionAppResponse.
 
         :return: The stack_resources of this ShowFunctionAppResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StackResource`
@@ -174,7 +174,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @stack_resources.setter
     def stack_resources(self, stack_resources):
-        """Sets the stack_resources of this ShowFunctionAppResponse.
+        r"""Sets the stack_resources of this ShowFunctionAppResponse.
 
         :param stack_resources: The stack_resources of this ShowFunctionAppResponse.
         :type stack_resources: :class:`huaweicloudsdkfunctiongraph.v2.StackResource`
@@ -183,7 +183,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowFunctionAppResponse.
+        r"""Gets the status of this ShowFunctionAppResponse.
 
         应用状态
 
@@ -194,7 +194,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowFunctionAppResponse.
+        r"""Sets the status of this ShowFunctionAppResponse.
 
         应用状态
 
@@ -205,7 +205,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @property
     def stack_name(self):
-        """Gets the stack_name of this ShowFunctionAppResponse.
+        r"""Gets the stack_name of this ShowFunctionAppResponse.
 
         资源栈名称
 
@@ -216,7 +216,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @stack_name.setter
     def stack_name(self, stack_name):
-        """Sets the stack_name of this ShowFunctionAppResponse.
+        r"""Sets the stack_name of this ShowFunctionAppResponse.
 
         资源栈名称
 
@@ -227,7 +227,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @property
     def stack_id(self):
-        """Gets the stack_id of this ShowFunctionAppResponse.
+        r"""Gets the stack_id of this ShowFunctionAppResponse.
 
         资源栈id
 
@@ -238,7 +238,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @stack_id.setter
     def stack_id(self, stack_id):
-        """Sets the stack_id of this ShowFunctionAppResponse.
+        r"""Sets the stack_id of this ShowFunctionAppResponse.
 
         资源栈id
 
@@ -249,7 +249,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @property
     def repo_name(self):
-        """Gets the repo_name of this ShowFunctionAppResponse.
+        r"""Gets the repo_name of this ShowFunctionAppResponse.
 
         存储库名称
 
@@ -260,7 +260,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @repo_name.setter
     def repo_name(self, repo_name):
-        """Sets the repo_name of this ShowFunctionAppResponse.
+        r"""Sets the repo_name of this ShowFunctionAppResponse.
 
         存储库名称
 
@@ -271,7 +271,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowFunctionAppResponse.
+        r"""Gets the description of this ShowFunctionAppResponse.
 
         应用描述
 
@@ -282,7 +282,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowFunctionAppResponse.
+        r"""Sets the description of this ShowFunctionAppResponse.
 
         应用描述
 
@@ -293,7 +293,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @property
     def repo(self):
-        """Gets the repo of this ShowFunctionAppResponse.
+        r"""Gets the repo of this ShowFunctionAppResponse.
 
         :return: The repo of this ShowFunctionAppResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.RepoInfo`
@@ -302,7 +302,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @repo.setter
     def repo(self, repo):
-        """Sets the repo of this ShowFunctionAppResponse.
+        r"""Sets the repo of this ShowFunctionAppResponse.
 
         :param repo: The repo of this ShowFunctionAppResponse.
         :type repo: :class:`huaweicloudsdkfunctiongraph.v2.RepoInfo`
@@ -311,7 +311,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this ShowFunctionAppResponse.
+        r"""Gets the pipeline_id of this ShowFunctionAppResponse.
 
         管道id
 
@@ -322,7 +322,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this ShowFunctionAppResponse.
+        r"""Sets the pipeline_id of this ShowFunctionAppResponse.
 
         管道id
 
@@ -333,7 +333,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowFunctionAppResponse.
+        r"""Gets the project_id of this ShowFunctionAppResponse.
 
         项目id
 
@@ -344,7 +344,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowFunctionAppResponse.
+        r"""Sets the project_id of this ShowFunctionAppResponse.
 
         项目id
 
@@ -355,7 +355,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @property
     def apig_url(self):
-        """Gets the apig_url of this ShowFunctionAppResponse.
+        r"""Gets the apig_url of this ShowFunctionAppResponse.
 
         调用URL
 
@@ -366,7 +366,7 @@ class ShowFunctionAppResponse(SdkResponse):
 
     @apig_url.setter
     def apig_url(self, apig_url):
-        """Sets the apig_url of this ShowFunctionAppResponse.
+        r"""Sets the apig_url of this ShowFunctionAppResponse.
 
         调用URL
 

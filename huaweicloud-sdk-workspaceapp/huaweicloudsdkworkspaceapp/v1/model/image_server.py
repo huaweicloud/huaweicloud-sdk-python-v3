@@ -51,7 +51,7 @@ class ImageServer:
     }
 
     def __init__(self, id=None, name=None, description=None, image_ref=None, server_group_id=None, app_group_id=None, server_id=None, instance_id=None, image_id=None, status=None, authorize_accounts=None, create_time=None, update_time=None, enterprise_project_id=None):
-        """ImageServer
+        r"""ImageServer
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ImageServer:
 
     @property
     def id(self):
-        """Gets the id of this ImageServer.
+        r"""Gets the id of this ImageServer.
 
         实例的唯一标识。
 
@@ -145,7 +145,7 @@ class ImageServer:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImageServer.
+        r"""Sets the id of this ImageServer.
 
         实例的唯一标识。
 
@@ -156,7 +156,7 @@ class ImageServer:
 
     @property
     def name(self):
-        """Gets the name of this ImageServer.
+        r"""Gets the name of this ImageServer.
 
         镜像实例名称。
 
@@ -167,7 +167,7 @@ class ImageServer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImageServer.
+        r"""Sets the name of this ImageServer.
 
         镜像实例名称。
 
@@ -178,7 +178,7 @@ class ImageServer:
 
     @property
     def description(self):
-        """Gets the description of this ImageServer.
+        r"""Gets the description of this ImageServer.
 
         描述。
 
@@ -189,7 +189,7 @@ class ImageServer:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ImageServer.
+        r"""Sets the description of this ImageServer.
 
         描述。
 
@@ -200,7 +200,7 @@ class ImageServer:
 
     @property
     def image_ref(self):
-        """Gets the image_ref of this ImageServer.
+        r"""Gets the image_ref of this ImageServer.
 
         :return: The image_ref of this ImageServer.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageRef`
@@ -209,7 +209,7 @@ class ImageServer:
 
     @image_ref.setter
     def image_ref(self, image_ref):
-        """Sets the image_ref of this ImageServer.
+        r"""Sets the image_ref of this ImageServer.
 
         :param image_ref: The image_ref of this ImageServer.
         :type image_ref: :class:`huaweicloudsdkworkspaceapp.v1.ImageRef`
@@ -218,7 +218,7 @@ class ImageServer:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ImageServer.
+        r"""Gets the server_group_id of this ImageServer.
 
         APS服务器组ID。
 
@@ -229,7 +229,7 @@ class ImageServer:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ImageServer.
+        r"""Sets the server_group_id of this ImageServer.
 
         APS服务器组ID。
 
@@ -240,7 +240,7 @@ class ImageServer:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this ImageServer.
+        r"""Gets the app_group_id of this ImageServer.
 
         应用组ID。
 
@@ -251,7 +251,7 @@ class ImageServer:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this ImageServer.
+        r"""Sets the app_group_id of this ImageServer.
 
         应用组ID。
 
@@ -262,7 +262,7 @@ class ImageServer:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ImageServer.
+        r"""Gets the server_id of this ImageServer.
 
         APS实例ID。
 
@@ -273,7 +273,7 @@ class ImageServer:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ImageServer.
+        r"""Sets the server_id of this ImageServer.
 
         APS实例ID。
 
@@ -284,7 +284,7 @@ class ImageServer:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ImageServer.
+        r"""Gets the instance_id of this ImageServer.
 
         ECS服务器ID。
 
@@ -295,7 +295,7 @@ class ImageServer:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ImageServer.
+        r"""Sets the instance_id of this ImageServer.
 
         ECS服务器ID。
 
@@ -306,7 +306,7 @@ class ImageServer:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ImageServer.
+        r"""Gets the image_id of this ImageServer.
 
         镜像产物唯一标识。
 
@@ -317,7 +317,7 @@ class ImageServer:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ImageServer.
+        r"""Sets the image_id of this ImageServer.
 
         镜像产物唯一标识。
 
@@ -328,7 +328,7 @@ class ImageServer:
 
     @property
     def status(self):
-        """Gets the status of this ImageServer.
+        r"""Gets the status of this ImageServer.
 
         :return: The status of this ImageServer.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageServerStatus`
@@ -337,7 +337,7 @@ class ImageServer:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ImageServer.
+        r"""Sets the status of this ImageServer.
 
         :param status: The status of this ImageServer.
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.ImageServerStatus`
@@ -346,7 +346,7 @@ class ImageServer:
 
     @property
     def authorize_accounts(self):
-        """Gets the authorize_accounts of this ImageServer.
+        r"""Gets the authorize_accounts of this ImageServer.
 
         应用组授权用户， * 限制用户类型：'USER' - 用户
 
@@ -357,7 +357,7 @@ class ImageServer:
 
     @authorize_accounts.setter
     def authorize_accounts(self, authorize_accounts):
-        """Sets the authorize_accounts of this ImageServer.
+        r"""Sets the authorize_accounts of this ImageServer.
 
         应用组授权用户， * 限制用户类型：'USER' - 用户
 
@@ -368,7 +368,7 @@ class ImageServer:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ImageServer.
+        r"""Gets the create_time of this ImageServer.
 
         镜像实例创建时间
 
@@ -379,7 +379,7 @@ class ImageServer:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ImageServer.
+        r"""Sets the create_time of this ImageServer.
 
         镜像实例创建时间
 
@@ -390,7 +390,7 @@ class ImageServer:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ImageServer.
+        r"""Gets the update_time of this ImageServer.
 
         更新时间
 
@@ -401,7 +401,7 @@ class ImageServer:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ImageServer.
+        r"""Sets the update_time of this ImageServer.
 
         更新时间
 
@@ -412,7 +412,7 @@ class ImageServer:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ImageServer.
+        r"""Gets the enterprise_project_id of this ImageServer.
 
         企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)
 
@@ -423,7 +423,7 @@ class ImageServer:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ImageServer.
+        r"""Sets the enterprise_project_id of this ImageServer.
 
         企业项目ID,仅企业项目需配置(字段为空或者0表示使用默认default企业项目)
 

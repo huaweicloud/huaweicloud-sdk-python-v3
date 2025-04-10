@@ -31,7 +31,7 @@ class VendorDto:
     }
 
     def __init__(self, id=None, domain_id=None, name=None, logo=None):
-        """VendorDto
+        r"""VendorDto
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class VendorDto:
 
     @property
     def id(self):
-        """Gets the id of this VendorDto.
+        r"""Gets the id of this VendorDto.
 
         供应商id
 
@@ -71,7 +71,7 @@ class VendorDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VendorDto.
+        r"""Sets the id of this VendorDto.
 
         供应商id
 
@@ -82,7 +82,7 @@ class VendorDto:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this VendorDto.
+        r"""Gets the domain_id of this VendorDto.
 
         账号id
 
@@ -93,7 +93,7 @@ class VendorDto:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this VendorDto.
+        r"""Sets the domain_id of this VendorDto.
 
         账号id
 
@@ -104,7 +104,7 @@ class VendorDto:
 
     @property
     def name(self):
-        """Gets the name of this VendorDto.
+        r"""Gets the name of this VendorDto.
 
         名称
 
@@ -115,7 +115,7 @@ class VendorDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VendorDto.
+        r"""Sets the name of this VendorDto.
 
         名称
 
@@ -126,7 +126,7 @@ class VendorDto:
 
     @property
     def logo(self):
-        """Gets the logo of this VendorDto.
+        r"""Gets the logo of this VendorDto.
 
         logo图片base64编码
 
@@ -137,7 +137,7 @@ class VendorDto:
 
     @logo.setter
     def logo(self, logo):
-        """Sets the logo of this VendorDto.
+        r"""Sets the logo of this VendorDto.
 
         logo图片base64编码
 

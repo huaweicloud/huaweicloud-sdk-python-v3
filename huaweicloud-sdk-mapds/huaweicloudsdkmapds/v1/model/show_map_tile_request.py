@@ -31,7 +31,7 @@ class ShowMapTileRequest:
     }
 
     def __init__(self, z=None, x=None, y=None, authorization=None):
-        """ShowMapTileRequest
+        r"""ShowMapTileRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowMapTileRequest:
 
     @property
     def z(self):
-        """Gets the z of this ShowMapTileRequest.
+        r"""Gets the z of this ShowMapTileRequest.
 
         缩放级别，取值范围[0~20]。
 
@@ -71,7 +71,7 @@ class ShowMapTileRequest:
 
     @z.setter
     def z(self, z):
-        """Sets the z of this ShowMapTileRequest.
+        r"""Sets the z of this ShowMapTileRequest.
 
         缩放级别，取值范围[0~20]。
 
@@ -82,7 +82,7 @@ class ShowMapTileRequest:
 
     @property
     def x(self):
-        """Gets the x of this ShowMapTileRequest.
+        r"""Gets the x of this ShowMapTileRequest.
 
         缩放网格上的 X 坐标。 值必须在 [0, 2的z次方-1] 范围内。
 
@@ -93,7 +93,7 @@ class ShowMapTileRequest:
 
     @x.setter
     def x(self, x):
-        """Sets the x of this ShowMapTileRequest.
+        r"""Sets the x of this ShowMapTileRequest.
 
         缩放网格上的 X 坐标。 值必须在 [0, 2的z次方-1] 范围内。
 
@@ -104,7 +104,7 @@ class ShowMapTileRequest:
 
     @property
     def y(self):
-        """Gets the y of this ShowMapTileRequest.
+        r"""Gets the y of this ShowMapTileRequest.
 
         缩放网格上的 Y 坐标。 值必须在 [0, 2的z次方-1] 范围内。
 
@@ -115,7 +115,7 @@ class ShowMapTileRequest:
 
     @y.setter
     def y(self, y):
-        """Sets the y of this ShowMapTileRequest.
+        r"""Sets the y of this ShowMapTileRequest.
 
         缩放网格上的 Y 坐标。 值必须在 [0, 2的z次方-1] 范围内。
 
@@ -126,7 +126,7 @@ class ShowMapTileRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this ShowMapTileRequest.
+        r"""Gets the authorization of this ShowMapTileRequest.
 
         签名消息头为：  Authorization: HMAC-SHA256 Clientid=xxxx,Expiry=xxxx,Signature=xxxx  HMAC-SHA256为固定签名算法，Clientid、Expiry、Signature的值从获取获取SAS token请求返回的消息体中获取，要求Clientid，Expiry，Signature同时存在。
 
@@ -137,7 +137,7 @@ class ShowMapTileRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this ShowMapTileRequest.
+        r"""Sets the authorization of this ShowMapTileRequest.
 
         签名消息头为：  Authorization: HMAC-SHA256 Clientid=xxxx,Expiry=xxxx,Signature=xxxx  HMAC-SHA256为固定签名算法，Clientid、Expiry、Signature的值从获取获取SAS token请求返回的消息体中获取，要求Clientid，Expiry，Signature同时存在。
 

@@ -25,7 +25,7 @@ class ShowAimMsgTemplateDetailRequest:
     }
 
     def __init__(self, template_id=None):
-        """ShowAimMsgTemplateDetailRequest
+        r"""ShowAimMsgTemplateDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAimMsgTemplateDetailRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowAimMsgTemplateDetailRequest.
+        r"""Gets the template_id of this ShowAimMsgTemplateDetailRequest.
 
         短信模板ID。
 
@@ -53,7 +53,7 @@ class ShowAimMsgTemplateDetailRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowAimMsgTemplateDetailRequest.
+        r"""Sets the template_id of this ShowAimMsgTemplateDetailRequest.
 
         短信模板ID。
 

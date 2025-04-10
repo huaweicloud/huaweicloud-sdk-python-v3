@@ -30,7 +30,7 @@ class ListApiVersionsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, api_versions=None):
-        """ListApiVersionsV2Response
+        r"""ListApiVersionsV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListApiVersionsV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListApiVersionsV2Response.
+        r"""Gets the size of this ListApiVersionsV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListApiVersionsV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListApiVersionsV2Response.
+        r"""Sets the size of this ListApiVersionsV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListApiVersionsV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListApiVersionsV2Response.
+        r"""Gets the total of this ListApiVersionsV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListApiVersionsV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListApiVersionsV2Response.
+        r"""Sets the total of this ListApiVersionsV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListApiVersionsV2Response(SdkResponse):
 
     @property
     def api_versions(self):
-        """Gets the api_versions of this ListApiVersionsV2Response.
+        r"""Gets the api_versions of this ListApiVersionsV2Response.
 
         本次查询返回的API历史版本列表
 
@@ -111,7 +111,7 @@ class ListApiVersionsV2Response(SdkResponse):
 
     @api_versions.setter
     def api_versions(self, api_versions):
-        """Sets the api_versions of this ListApiVersionsV2Response.
+        r"""Sets the api_versions of this ListApiVersionsV2Response.
 
         本次查询返回的API历史版本列表
 

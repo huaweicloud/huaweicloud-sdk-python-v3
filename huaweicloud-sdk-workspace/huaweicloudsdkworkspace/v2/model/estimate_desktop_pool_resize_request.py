@@ -25,7 +25,7 @@ class EstimateDesktopPoolResizeRequest:
     }
 
     def __init__(self, body=None):
-        """EstimateDesktopPoolResizeRequest
+        r"""EstimateDesktopPoolResizeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EstimateDesktopPoolResizeRequest:
 
     @property
     def body(self):
-        """Gets the body of this EstimateDesktopPoolResizeRequest.
+        r"""Gets the body of this EstimateDesktopPoolResizeRequest.
 
         :return: The body of this EstimateDesktopPoolResizeRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.EstimateResizeRequestBody`
@@ -52,7 +52,7 @@ class EstimateDesktopPoolResizeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EstimateDesktopPoolResizeRequest.
+        r"""Sets the body of this EstimateDesktopPoolResizeRequest.
 
         :param body: The body of this EstimateDesktopPoolResizeRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.EstimateResizeRequestBody`

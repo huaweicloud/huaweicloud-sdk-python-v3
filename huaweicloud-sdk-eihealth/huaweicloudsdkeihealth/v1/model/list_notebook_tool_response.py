@@ -28,7 +28,7 @@ class ListNotebookToolResponse(SdkResponse):
     }
 
     def __init__(self, count=None, tools=None):
-        """ListNotebookToolResponse
+        r"""ListNotebookToolResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListNotebookToolResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListNotebookToolResponse.
+        r"""Gets the count of this ListNotebookToolResponse.
 
         总个数
 
@@ -62,7 +62,7 @@ class ListNotebookToolResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListNotebookToolResponse.
+        r"""Sets the count of this ListNotebookToolResponse.
 
         总个数
 
@@ -73,7 +73,7 @@ class ListNotebookToolResponse(SdkResponse):
 
     @property
     def tools(self):
-        """Gets the tools of this ListNotebookToolResponse.
+        r"""Gets the tools of this ListNotebookToolResponse.
 
         tool详情列表
 
@@ -84,7 +84,7 @@ class ListNotebookToolResponse(SdkResponse):
 
     @tools.setter
     def tools(self, tools):
-        """Sets the tools of this ListNotebookToolResponse.
+        r"""Sets the tools of this ListNotebookToolResponse.
 
         tool详情列表
 

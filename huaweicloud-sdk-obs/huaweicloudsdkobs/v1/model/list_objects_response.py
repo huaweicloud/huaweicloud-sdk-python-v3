@@ -60,7 +60,7 @@ class ListObjectsResponse(SdkResponse):
     }
 
     def __init__(self, contents=None, common_prefixes=None, delimiter=None, encoding_type=None, is_truncated=None, marker=None, next_marker=None, max_keys=None, name=None, prefix=None, x_obs_id_2=None, x_obs_request_id=None, e_tag=None, x_obs_bucket_type=None, connection=None, content_length=None, date=None):
-        """ListObjectsResponse
+        r"""ListObjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -158,7 +158,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def contents(self):
-        """Gets the contents of this ListObjectsResponse.
+        r"""Gets the contents of this ListObjectsResponse.
 
         :return: The contents of this ListObjectsResponse.
         :rtype: list[:class:`huaweicloudsdkobs.v1.Contents`]
@@ -167,7 +167,7 @@ class ListObjectsResponse(SdkResponse):
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this ListObjectsResponse.
+        r"""Sets the contents of this ListObjectsResponse.
 
         :param contents: The contents of this ListObjectsResponse.
         :type contents: list[:class:`huaweicloudsdkobs.v1.Contents`]
@@ -176,7 +176,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def common_prefixes(self):
-        """Gets the common_prefixes of this ListObjectsResponse.
+        r"""Gets the common_prefixes of this ListObjectsResponse.
 
         :return: The common_prefixes of this ListObjectsResponse.
         :rtype: list[:class:`huaweicloudsdkobs.v1.CommonPrefixes`]
@@ -185,7 +185,7 @@ class ListObjectsResponse(SdkResponse):
 
     @common_prefixes.setter
     def common_prefixes(self, common_prefixes):
-        """Sets the common_prefixes of this ListObjectsResponse.
+        r"""Sets the common_prefixes of this ListObjectsResponse.
 
         :param common_prefixes: The common_prefixes of this ListObjectsResponse.
         :type common_prefixes: list[:class:`huaweicloudsdkobs.v1.CommonPrefixes`]
@@ -194,7 +194,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def delimiter(self):
-        """Gets the delimiter of this ListObjectsResponse.
+        r"""Gets the delimiter of this ListObjectsResponse.
 
         The **delimiter** parameter specified in the request
 
@@ -205,7 +205,7 @@ class ListObjectsResponse(SdkResponse):
 
     @delimiter.setter
     def delimiter(self, delimiter):
-        """Sets the delimiter of this ListObjectsResponse.
+        r"""Sets the delimiter of this ListObjectsResponse.
 
         The **delimiter** parameter specified in the request
 
@@ -216,7 +216,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def encoding_type(self):
-        """Gets the encoding_type of this ListObjectsResponse.
+        r"""Gets the encoding_type of this ListObjectsResponse.
 
         Encodes some elements in the response based on the specified type. If **encoding-type** is specified in the request, **Delimiter**, **Marker**, **Prefix** (including the **Prefix** in **CommonPrefixes**), **NextMarker**, and **Key** in the response will be encoded.
 
@@ -227,7 +227,7 @@ class ListObjectsResponse(SdkResponse):
 
     @encoding_type.setter
     def encoding_type(self, encoding_type):
-        """Sets the encoding_type of this ListObjectsResponse.
+        r"""Sets the encoding_type of this ListObjectsResponse.
 
         Encodes some elements in the response based on the specified type. If **encoding-type** is specified in the request, **Delimiter**, **Marker**, **Prefix** (including the **Prefix** in **CommonPrefixes**), **NextMarker**, and **Key** in the response will be encoded.
 
@@ -238,7 +238,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def is_truncated(self):
-        """Gets the is_truncated of this ListObjectsResponse.
+        r"""Gets the is_truncated of this ListObjectsResponse.
 
         Determines whether the returned list of objects is truncated. **true**: Not all results are returned. **false**: All results have been returned.
 
@@ -249,7 +249,7 @@ class ListObjectsResponse(SdkResponse):
 
     @is_truncated.setter
     def is_truncated(self, is_truncated):
-        """Sets the is_truncated of this ListObjectsResponse.
+        r"""Sets the is_truncated of this ListObjectsResponse.
 
         Determines whether the returned list of objects is truncated. **true**: Not all results are returned. **false**: All results have been returned.
 
@@ -260,7 +260,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def marker(self):
-        """Gets the marker of this ListObjectsResponse.
+        r"""Gets the marker of this ListObjectsResponse.
 
         Marker for the position from which objects in a bucket will be listed
 
@@ -271,7 +271,7 @@ class ListObjectsResponse(SdkResponse):
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListObjectsResponse.
+        r"""Sets the marker of this ListObjectsResponse.
 
         Marker for the position from which objects in a bucket will be listed
 
@@ -282,7 +282,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListObjectsResponse.
+        r"""Gets the next_marker of this ListObjectsResponse.
 
         A marker for the last returned object in the list. **NextMarker** is returned when not all the objects are listed. In subsequent requests, you can set **Marker** to the value of this parameter to list the remaining objects.
 
@@ -293,7 +293,7 @@ class ListObjectsResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListObjectsResponse.
+        r"""Sets the next_marker of this ListObjectsResponse.
 
         A marker for the last returned object in the list. **NextMarker** is returned when not all the objects are listed. In subsequent requests, you can set **Marker** to the value of this parameter to list the remaining objects.
 
@@ -304,7 +304,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def max_keys(self):
-        """Gets the max_keys of this ListObjectsResponse.
+        r"""Gets the max_keys of this ListObjectsResponse.
 
         Maximum number of objects that can be listed
 
@@ -315,7 +315,7 @@ class ListObjectsResponse(SdkResponse):
 
     @max_keys.setter
     def max_keys(self, max_keys):
-        """Sets the max_keys of this ListObjectsResponse.
+        r"""Sets the max_keys of this ListObjectsResponse.
 
         Maximum number of objects that can be listed
 
@@ -326,7 +326,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ListObjectsResponse.
+        r"""Gets the name of this ListObjectsResponse.
 
         Name of the requested bucket
 
@@ -337,7 +337,7 @@ class ListObjectsResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListObjectsResponse.
+        r"""Sets the name of this ListObjectsResponse.
 
         Name of the requested bucket
 
@@ -348,7 +348,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def prefix(self):
-        """Gets the prefix of this ListObjectsResponse.
+        r"""Gets the prefix of this ListObjectsResponse.
 
         Prefix of an object name. Only objects whose names have this prefix are listed.
 
@@ -359,7 +359,7 @@ class ListObjectsResponse(SdkResponse):
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this ListObjectsResponse.
+        r"""Sets the prefix of this ListObjectsResponse.
 
         Prefix of an object name. Only objects whose names have this prefix are listed.
 
@@ -370,7 +370,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def x_obs_id_2(self):
-        """Gets the x_obs_id_2 of this ListObjectsResponse.
+        r"""Gets the x_obs_id_2 of this ListObjectsResponse.
 
         :return: The x_obs_id_2 of this ListObjectsResponse.
         :rtype: str
@@ -379,7 +379,7 @@ class ListObjectsResponse(SdkResponse):
 
     @x_obs_id_2.setter
     def x_obs_id_2(self, x_obs_id_2):
-        """Sets the x_obs_id_2 of this ListObjectsResponse.
+        r"""Sets the x_obs_id_2 of this ListObjectsResponse.
 
         :param x_obs_id_2: The x_obs_id_2 of this ListObjectsResponse.
         :type x_obs_id_2: str
@@ -388,7 +388,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def x_obs_request_id(self):
-        """Gets the x_obs_request_id of this ListObjectsResponse.
+        r"""Gets the x_obs_request_id of this ListObjectsResponse.
 
         :return: The x_obs_request_id of this ListObjectsResponse.
         :rtype: str
@@ -397,7 +397,7 @@ class ListObjectsResponse(SdkResponse):
 
     @x_obs_request_id.setter
     def x_obs_request_id(self, x_obs_request_id):
-        """Sets the x_obs_request_id of this ListObjectsResponse.
+        r"""Sets the x_obs_request_id of this ListObjectsResponse.
 
         :param x_obs_request_id: The x_obs_request_id of this ListObjectsResponse.
         :type x_obs_request_id: str
@@ -406,7 +406,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def e_tag(self):
-        """Gets the e_tag of this ListObjectsResponse.
+        r"""Gets the e_tag of this ListObjectsResponse.
 
         :return: The e_tag of this ListObjectsResponse.
         :rtype: str
@@ -415,7 +415,7 @@ class ListObjectsResponse(SdkResponse):
 
     @e_tag.setter
     def e_tag(self, e_tag):
-        """Sets the e_tag of this ListObjectsResponse.
+        r"""Sets the e_tag of this ListObjectsResponse.
 
         :param e_tag: The e_tag of this ListObjectsResponse.
         :type e_tag: str
@@ -424,7 +424,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def x_obs_bucket_type(self):
-        """Gets the x_obs_bucket_type of this ListObjectsResponse.
+        r"""Gets the x_obs_bucket_type of this ListObjectsResponse.
 
         :return: The x_obs_bucket_type of this ListObjectsResponse.
         :rtype: str
@@ -433,7 +433,7 @@ class ListObjectsResponse(SdkResponse):
 
     @x_obs_bucket_type.setter
     def x_obs_bucket_type(self, x_obs_bucket_type):
-        """Sets the x_obs_bucket_type of this ListObjectsResponse.
+        r"""Sets the x_obs_bucket_type of this ListObjectsResponse.
 
         :param x_obs_bucket_type: The x_obs_bucket_type of this ListObjectsResponse.
         :type x_obs_bucket_type: str
@@ -442,7 +442,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this ListObjectsResponse.
+        r"""Gets the connection of this ListObjectsResponse.
 
         :return: The connection of this ListObjectsResponse.
         :rtype: str
@@ -451,7 +451,7 @@ class ListObjectsResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this ListObjectsResponse.
+        r"""Sets the connection of this ListObjectsResponse.
 
         :param connection: The connection of this ListObjectsResponse.
         :type connection: str
@@ -460,7 +460,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this ListObjectsResponse.
+        r"""Gets the content_length of this ListObjectsResponse.
 
         :return: The content_length of this ListObjectsResponse.
         :rtype: str
@@ -469,7 +469,7 @@ class ListObjectsResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this ListObjectsResponse.
+        r"""Sets the content_length of this ListObjectsResponse.
 
         :param content_length: The content_length of this ListObjectsResponse.
         :type content_length: str
@@ -478,7 +478,7 @@ class ListObjectsResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this ListObjectsResponse.
+        r"""Gets the date of this ListObjectsResponse.
 
         :return: The date of this ListObjectsResponse.
         :rtype: str
@@ -487,7 +487,7 @@ class ListObjectsResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ListObjectsResponse.
+        r"""Sets the date of this ListObjectsResponse.
 
         :param date: The date of this ListObjectsResponse.
         :type date: str

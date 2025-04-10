@@ -42,7 +42,7 @@ class ListTopicDetailsResponse(SdkResponse):
     }
 
     def __init__(self, update_time=None, push_policy=None, create_time=None, name=None, topic_urn=None, display_name=None, request_id=None, enterprise_project_id=None, topic_id=None):
-        """ListTopicDetailsResponse
+        r"""ListTopicDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ListTopicDetailsResponse.
+        r"""Gets the update_time of this ListTopicDetailsResponse.
 
         更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -111,7 +111,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ListTopicDetailsResponse.
+        r"""Sets the update_time of this ListTopicDetailsResponse.
 
         更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -122,7 +122,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @property
     def push_policy(self):
-        """Gets the push_policy of this ListTopicDetailsResponse.
+        r"""Gets the push_policy of this ListTopicDetailsResponse.
 
         消息推送的策略。0表示发送失败，保留到失败队列，1表示直接丢弃发送失败的消息。
 
@@ -133,7 +133,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @push_policy.setter
     def push_policy(self, push_policy):
-        """Sets the push_policy of this ListTopicDetailsResponse.
+        r"""Sets the push_policy of this ListTopicDetailsResponse.
 
         消息推送的策略。0表示发送失败，保留到失败队列，1表示直接丢弃发送失败的消息。
 
@@ -144,7 +144,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListTopicDetailsResponse.
+        r"""Gets the create_time of this ListTopicDetailsResponse.
 
         创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -155,7 +155,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListTopicDetailsResponse.
+        r"""Sets the create_time of this ListTopicDetailsResponse.
 
         创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -166,7 +166,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ListTopicDetailsResponse.
+        r"""Gets the name of this ListTopicDetailsResponse.
 
         创建Topic的名字。
 
@@ -177,7 +177,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTopicDetailsResponse.
+        r"""Sets the name of this ListTopicDetailsResponse.
 
         创建Topic的名字。
 
@@ -188,7 +188,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this ListTopicDetailsResponse.
+        r"""Gets the topic_urn of this ListTopicDetailsResponse.
 
         Topic的唯一的资源标识。可以通过[查看主题列表获](smn_api_51004.xml)取该标识。
 
@@ -199,7 +199,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this ListTopicDetailsResponse.
+        r"""Sets the topic_urn of this ListTopicDetailsResponse.
 
         Topic的唯一的资源标识。可以通过[查看主题列表获](smn_api_51004.xml)取该标识。
 
@@ -210,7 +210,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @property
     def display_name(self):
-        """Gets the display_name of this ListTopicDetailsResponse.
+        r"""Gets the display_name of this ListTopicDetailsResponse.
 
         Topic的显示名，推送邮件消息时，作为邮件发件人显示。
 
@@ -221,7 +221,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ListTopicDetailsResponse.
+        r"""Sets the display_name of this ListTopicDetailsResponse.
 
         Topic的显示名，推送邮件消息时，作为邮件发件人显示。
 
@@ -232,7 +232,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListTopicDetailsResponse.
+        r"""Gets the request_id of this ListTopicDetailsResponse.
 
         请求的唯一标识ID。
 
@@ -243,7 +243,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListTopicDetailsResponse.
+        r"""Sets the request_id of this ListTopicDetailsResponse.
 
         请求的唯一标识ID。
 
@@ -254,7 +254,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListTopicDetailsResponse.
+        r"""Gets the enterprise_project_id of this ListTopicDetailsResponse.
 
         企业项目ID。
 
@@ -265,7 +265,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListTopicDetailsResponse.
+        r"""Sets the enterprise_project_id of this ListTopicDetailsResponse.
 
         企业项目ID。
 
@@ -276,7 +276,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this ListTopicDetailsResponse.
+        r"""Gets the topic_id of this ListTopicDetailsResponse.
 
         主题ID。
 
@@ -287,7 +287,7 @@ class ListTopicDetailsResponse(SdkResponse):
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this ListTopicDetailsResponse.
+        r"""Sets the topic_id of this ListTopicDetailsResponse.
 
         主题ID。
 

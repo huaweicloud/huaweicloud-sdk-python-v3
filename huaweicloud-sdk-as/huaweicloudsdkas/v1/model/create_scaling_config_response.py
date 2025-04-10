@@ -26,7 +26,7 @@ class CreateScalingConfigResponse(SdkResponse):
     }
 
     def __init__(self, scaling_configuration_id=None):
-        """CreateScalingConfigResponse
+        r"""CreateScalingConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateScalingConfigResponse(SdkResponse):
 
     @property
     def scaling_configuration_id(self):
-        """Gets the scaling_configuration_id of this CreateScalingConfigResponse.
+        r"""Gets the scaling_configuration_id of this CreateScalingConfigResponse.
 
         伸缩配置ID
 
@@ -55,7 +55,7 @@ class CreateScalingConfigResponse(SdkResponse):
 
     @scaling_configuration_id.setter
     def scaling_configuration_id(self, scaling_configuration_id):
-        """Sets the scaling_configuration_id of this CreateScalingConfigResponse.
+        r"""Sets the scaling_configuration_id of this CreateScalingConfigResponse.
 
         伸缩配置ID
 

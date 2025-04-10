@@ -39,7 +39,7 @@ class Optimizer:
     }
 
     def __init__(self, type=None, learning_rate=None, initial_accumulator_value=None, lambda1=None, lambda2=None, epsilon=None, decay_rate=None, decay_steps=None):
-        """Optimizer
+        r"""Optimizer
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class Optimizer:
 
     @property
     def type(self):
-        """Gets the type of this Optimizer.
+        r"""Gets the type of this Optimizer.
 
         优化器类型。
 
@@ -103,7 +103,7 @@ class Optimizer:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Optimizer.
+        r"""Sets the type of this Optimizer.
 
         优化器类型。
 
@@ -114,7 +114,7 @@ class Optimizer:
 
     @property
     def learning_rate(self):
-        """Gets the learning_rate of this Optimizer.
+        r"""Gets the learning_rate of this Optimizer.
 
         学习率。
 
@@ -125,7 +125,7 @@ class Optimizer:
 
     @learning_rate.setter
     def learning_rate(self, learning_rate):
-        """Sets the learning_rate of this Optimizer.
+        r"""Sets the learning_rate of this Optimizer.
 
         学习率。
 
@@ -136,7 +136,7 @@ class Optimizer:
 
     @property
     def initial_accumulator_value(self):
-        """Gets the initial_accumulator_value of this Optimizer.
+        r"""Gets the initial_accumulator_value of this Optimizer.
 
         初始梯度累加和。
 
@@ -147,7 +147,7 @@ class Optimizer:
 
     @initial_accumulator_value.setter
     def initial_accumulator_value(self, initial_accumulator_value):
-        """Sets the initial_accumulator_value of this Optimizer.
+        r"""Sets the initial_accumulator_value of this Optimizer.
 
         初始梯度累加和。
 
@@ -158,7 +158,7 @@ class Optimizer:
 
     @property
     def lambda1(self):
-        """Gets the lambda1 of this Optimizer.
+        r"""Gets the lambda1 of this Optimizer.
 
         L1正则项系数。
 
@@ -169,7 +169,7 @@ class Optimizer:
 
     @lambda1.setter
     def lambda1(self, lambda1):
-        """Sets the lambda1 of this Optimizer.
+        r"""Sets the lambda1 of this Optimizer.
 
         L1正则项系数。
 
@@ -180,7 +180,7 @@ class Optimizer:
 
     @property
     def lambda2(self):
-        """Gets the lambda2 of this Optimizer.
+        r"""Gets the lambda2 of this Optimizer.
 
         L2正则项系数。
 
@@ -191,7 +191,7 @@ class Optimizer:
 
     @lambda2.setter
     def lambda2(self, lambda2):
-        """Sets the lambda2 of this Optimizer.
+        r"""Sets the lambda2 of this Optimizer.
 
         L2正则项系数。
 
@@ -202,7 +202,7 @@ class Optimizer:
 
     @property
     def epsilon(self):
-        """Gets the epsilon of this Optimizer.
+        r"""Gets the epsilon of this Optimizer.
 
         数值稳定常量。
 
@@ -213,7 +213,7 @@ class Optimizer:
 
     @epsilon.setter
     def epsilon(self, epsilon):
-        """Sets the epsilon of this Optimizer.
+        r"""Sets the epsilon of this Optimizer.
 
         数值稳定常量。
 
@@ -224,7 +224,7 @@ class Optimizer:
 
     @property
     def decay_rate(self):
-        """Gets the decay_rate of this Optimizer.
+        r"""Gets the decay_rate of this Optimizer.
 
         衰减因子。
 
@@ -235,7 +235,7 @@ class Optimizer:
 
     @decay_rate.setter
     def decay_rate(self, decay_rate):
-        """Sets the decay_rate of this Optimizer.
+        r"""Sets the decay_rate of this Optimizer.
 
         衰减因子。
 
@@ -246,7 +246,7 @@ class Optimizer:
 
     @property
     def decay_steps(self):
-        """Gets the decay_steps of this Optimizer.
+        r"""Gets the decay_steps of this Optimizer.
 
         衰减步长。
 
@@ -257,7 +257,7 @@ class Optimizer:
 
     @decay_steps.setter
     def decay_steps(self, decay_steps):
-        """Sets the decay_steps of this Optimizer.
+        r"""Sets the decay_steps of this Optimizer.
 
         衰减步长。
 

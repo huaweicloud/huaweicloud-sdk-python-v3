@@ -25,7 +25,7 @@ class DnsMapping:
     }
 
     def __init__(self, dns=None):
-        """DnsMapping
+        r"""DnsMapping
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DnsMapping:
 
     @property
     def dns(self):
-        """Gets the dns of this DnsMapping.
+        r"""Gets the dns of this DnsMapping.
 
         :return: The dns of this DnsMapping.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.DnsMappingNode`]
@@ -52,7 +52,7 @@ class DnsMapping:
 
     @dns.setter
     def dns(self, dns):
-        """Sets the dns of this DnsMapping.
+        r"""Sets the dns of this DnsMapping.
 
         :param dns: The dns of this DnsMapping.
         :type dns: list[:class:`huaweicloudsdkcloudtest.v1.DnsMappingNode`]

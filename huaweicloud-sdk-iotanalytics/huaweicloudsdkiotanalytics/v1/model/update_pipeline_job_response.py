@@ -32,7 +32,7 @@ class UpdatePipelineJobResponse(SdkResponse):
     }
 
     def __init__(self, pipeline_id=None, pipeline_state=None, status=None, check_info=None):
-        """UpdatePipelineJobResponse
+        r"""UpdatePipelineJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdatePipelineJobResponse(SdkResponse):
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this UpdatePipelineJobResponse.
+        r"""Gets the pipeline_id of this UpdatePipelineJobResponse.
 
         管道ID
 
@@ -76,7 +76,7 @@ class UpdatePipelineJobResponse(SdkResponse):
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this UpdatePipelineJobResponse.
+        r"""Sets the pipeline_id of this UpdatePipelineJobResponse.
 
         管道ID
 
@@ -87,7 +87,7 @@ class UpdatePipelineJobResponse(SdkResponse):
 
     @property
     def pipeline_state(self):
-        """Gets the pipeline_state of this UpdatePipelineJobResponse.
+        r"""Gets the pipeline_state of this UpdatePipelineJobResponse.
 
         管道状态
 
@@ -98,7 +98,7 @@ class UpdatePipelineJobResponse(SdkResponse):
 
     @pipeline_state.setter
     def pipeline_state(self, pipeline_state):
-        """Sets the pipeline_state of this UpdatePipelineJobResponse.
+        r"""Sets the pipeline_state of this UpdatePipelineJobResponse.
 
         管道状态
 
@@ -109,7 +109,7 @@ class UpdatePipelineJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdatePipelineJobResponse.
+        r"""Gets the status of this UpdatePipelineJobResponse.
 
         操作结果
 
@@ -120,7 +120,7 @@ class UpdatePipelineJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdatePipelineJobResponse.
+        r"""Sets the status of this UpdatePipelineJobResponse.
 
         操作结果
 
@@ -131,7 +131,7 @@ class UpdatePipelineJobResponse(SdkResponse):
 
     @property
     def check_info(self):
-        """Gets the check_info of this UpdatePipelineJobResponse.
+        r"""Gets the check_info of this UpdatePipelineJobResponse.
 
         管道错误详情
 
@@ -142,7 +142,7 @@ class UpdatePipelineJobResponse(SdkResponse):
 
     @check_info.setter
     def check_info(self, check_info):
-        """Sets the check_info of this UpdatePipelineJobResponse.
+        r"""Sets the check_info of this UpdatePipelineJobResponse.
 
         管道错误详情
 

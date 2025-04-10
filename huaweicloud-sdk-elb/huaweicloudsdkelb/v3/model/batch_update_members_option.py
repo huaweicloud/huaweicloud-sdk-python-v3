@@ -33,7 +33,7 @@ class BatchUpdateMembersOption:
     }
 
     def __init__(self, id=None, admin_state_up=None, name=None, protocol_port=None, weight=None):
-        """BatchUpdateMembersOption
+        r"""BatchUpdateMembersOption
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class BatchUpdateMembersOption:
 
     @property
     def id(self):
-        """Gets the id of this BatchUpdateMembersOption.
+        r"""Gets the id of this BatchUpdateMembersOption.
 
         后端服务器ID。 >此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
@@ -81,7 +81,7 @@ class BatchUpdateMembersOption:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchUpdateMembersOption.
+        r"""Sets the id of this BatchUpdateMembersOption.
 
         后端服务器ID。 >此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
@@ -92,7 +92,7 @@ class BatchUpdateMembersOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this BatchUpdateMembersOption.
+        r"""Gets the admin_state_up of this BatchUpdateMembersOption.
 
         后端服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
 
@@ -103,7 +103,7 @@ class BatchUpdateMembersOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this BatchUpdateMembersOption.
+        r"""Sets the admin_state_up of this BatchUpdateMembersOption.
 
         后端服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
 
@@ -114,7 +114,7 @@ class BatchUpdateMembersOption:
 
     @property
     def name(self):
-        """Gets the name of this BatchUpdateMembersOption.
+        r"""Gets the name of this BatchUpdateMembersOption.
 
         后端服务器名称。
 
@@ -125,7 +125,7 @@ class BatchUpdateMembersOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchUpdateMembersOption.
+        r"""Sets the name of this BatchUpdateMembersOption.
 
         后端服务器名称。
 
@@ -136,7 +136,7 @@ class BatchUpdateMembersOption:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this BatchUpdateMembersOption.
+        r"""Gets the protocol_port of this BatchUpdateMembersOption.
 
         后端服务器端口。  在开启端口透传的pool下的member，该字段无法更新。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)
 
@@ -147,7 +147,7 @@ class BatchUpdateMembersOption:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this BatchUpdateMembersOption.
+        r"""Sets the protocol_port of this BatchUpdateMembersOption.
 
         后端服务器端口。  在开启端口透传的pool下的member，该字段无法更新。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)
 
@@ -158,7 +158,7 @@ class BatchUpdateMembersOption:
 
     @property
     def weight(self):
-        """Gets the weight of this BatchUpdateMembersOption.
+        r"""Gets the weight of this BatchUpdateMembersOption.
 
         后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。权重为0的后端不再接受新的请求。当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
 
@@ -169,7 +169,7 @@ class BatchUpdateMembersOption:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this BatchUpdateMembersOption.
+        r"""Sets the weight of this BatchUpdateMembersOption.
 
         后端服务器的权重，请求按权重在同一后端服务器组下的后端服务器间分发。权重为0的后端不再接受新的请求。当后端服务器所在的后端服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
 

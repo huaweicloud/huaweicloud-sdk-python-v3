@@ -29,7 +29,7 @@ class CheckRomaInstanceListV2Request:
     }
 
     def __init__(self, status=None, offset=None, limit=None):
-        """CheckRomaInstanceListV2Request
+        r"""CheckRomaInstanceListV2Request
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CheckRomaInstanceListV2Request:
 
     @property
     def status(self):
-        """Gets the status of this CheckRomaInstanceListV2Request.
+        r"""Gets the status of this CheckRomaInstanceListV2Request.
 
         实例状态
 
@@ -68,7 +68,7 @@ class CheckRomaInstanceListV2Request:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CheckRomaInstanceListV2Request.
+        r"""Sets the status of this CheckRomaInstanceListV2Request.
 
         实例状态
 
@@ -79,7 +79,7 @@ class CheckRomaInstanceListV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this CheckRomaInstanceListV2Request.
+        r"""Gets the offset of this CheckRomaInstanceListV2Request.
 
         偏移量，大于等于0
 
@@ -90,7 +90,7 @@ class CheckRomaInstanceListV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this CheckRomaInstanceListV2Request.
+        r"""Sets the offset of this CheckRomaInstanceListV2Request.
 
         偏移量，大于等于0
 
@@ -101,7 +101,7 @@ class CheckRomaInstanceListV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this CheckRomaInstanceListV2Request.
+        r"""Gets the limit of this CheckRomaInstanceListV2Request.
 
         每页显示的条目数量
 
@@ -112,7 +112,7 @@ class CheckRomaInstanceListV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this CheckRomaInstanceListV2Request.
+        r"""Sets the limit of this CheckRomaInstanceListV2Request.
 
         每页显示的条目数量
 

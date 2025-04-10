@@ -39,7 +39,7 @@ class TopnRequstBody:
     }
 
     def __init__(self, end_time=None, is_desc=None, resource_type=None, sort_by=None, start_time=None, topn=None, filter=None, search_list=None):
-        """TopnRequstBody
+        r"""TopnRequstBody
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class TopnRequstBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TopnRequstBody.
+        r"""Gets the end_time of this TopnRequstBody.
 
         结束时间时间戳，毫秒时间
 
@@ -95,7 +95,7 @@ class TopnRequstBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TopnRequstBody.
+        r"""Sets the end_time of this TopnRequstBody.
 
         结束时间时间戳，毫秒时间
 
@@ -106,7 +106,7 @@ class TopnRequstBody:
 
     @property
     def is_desc(self):
-        """Gets the is_desc of this TopnRequstBody.
+        r"""Gets the is_desc of this TopnRequstBody.
 
         是否降序  true / false
 
@@ -117,7 +117,7 @@ class TopnRequstBody:
 
     @is_desc.setter
     def is_desc(self, is_desc):
-        """Sets the is_desc of this TopnRequstBody.
+        r"""Sets the is_desc of this TopnRequstBody.
 
         是否降序  true / false
 
@@ -128,7 +128,7 @@ class TopnRequstBody:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this TopnRequstBody.
+        r"""Gets the resource_type of this TopnRequstBody.
 
         资源类型，log_group / log_stream / tenant
 
@@ -139,7 +139,7 @@ class TopnRequstBody:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this TopnRequstBody.
+        r"""Sets the resource_type of this TopnRequstBody.
 
         资源类型，log_group / log_stream / tenant
 
@@ -150,7 +150,7 @@ class TopnRequstBody:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this TopnRequstBody.
+        r"""Gets the sort_by of this TopnRequstBody.
 
         排序依据，index/write/storage/basicTransfer/seniorTransfer/coldStorage，必须是search_list中存在的数据
 
@@ -161,7 +161,7 @@ class TopnRequstBody:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this TopnRequstBody.
+        r"""Sets the sort_by of this TopnRequstBody.
 
         排序依据，index/write/storage/basicTransfer/seniorTransfer/coldStorage，必须是search_list中存在的数据
 
@@ -172,7 +172,7 @@ class TopnRequstBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TopnRequstBody.
+        r"""Gets the start_time of this TopnRequstBody.
 
         开始时间时间戳，毫秒时间，最多支持30天范围内的查询
 
@@ -183,7 +183,7 @@ class TopnRequstBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TopnRequstBody.
+        r"""Sets the start_time of this TopnRequstBody.
 
         开始时间时间戳，毫秒时间，最多支持30天范围内的查询
 
@@ -194,7 +194,7 @@ class TopnRequstBody:
 
     @property
     def topn(self):
-        """Gets the topn of this TopnRequstBody.
+        r"""Gets the topn of this TopnRequstBody.
 
         查询前多少数据，范围1~100
 
@@ -205,7 +205,7 @@ class TopnRequstBody:
 
     @topn.setter
     def topn(self, topn):
-        """Sets the topn of this TopnRequstBody.
+        r"""Sets the topn of this TopnRequstBody.
 
         查询前多少数据，范围1~100
 
@@ -216,7 +216,7 @@ class TopnRequstBody:
 
     @property
     def filter(self):
-        """Gets the filter of this TopnRequstBody.
+        r"""Gets the filter of this TopnRequstBody.
 
         过滤条件 {     \"log_group_id\": \"xxxxxx\" }过滤器，为一个map结构，键为过滤属性，值为属性值，不支持模糊匹配
 
@@ -227,7 +227,7 @@ class TopnRequstBody:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this TopnRequstBody.
+        r"""Sets the filter of this TopnRequstBody.
 
         过滤条件 {     \"log_group_id\": \"xxxxxx\" }过滤器，为一个map结构，键为过滤属性，值为属性值，不支持模糊匹配
 
@@ -238,7 +238,7 @@ class TopnRequstBody:
 
     @property
     def search_list(self):
-        """Gets the search_list of this TopnRequstBody.
+        r"""Gets the search_list of this TopnRequstBody.
 
         查询数据类型，字符串数组可多种搭配，只能在index/write/storage/basicTransfer/seniorTransfer/coldStorage中选填
 
@@ -249,7 +249,7 @@ class TopnRequstBody:
 
     @search_list.setter
     def search_list(self, search_list):
-        """Sets the search_list of this TopnRequstBody.
+        r"""Sets the search_list of this TopnRequstBody.
 
         查询数据类型，字符串数组可多种搭配，只能在index/write/storage/basicTransfer/seniorTransfer/coldStorage中选填
 

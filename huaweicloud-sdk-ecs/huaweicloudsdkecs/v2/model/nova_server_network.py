@@ -29,7 +29,7 @@ class NovaServerNetwork:
     }
 
     def __init__(self, port=None, uuid=None, fixed_ip=None):
-        """NovaServerNetwork
+        r"""NovaServerNetwork
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class NovaServerNetwork:
 
     @property
     def port(self):
-        """Gets the port of this NovaServerNetwork.
+        r"""Gets the port of this NovaServerNetwork.
 
         网络port uuid。  没有指定网络uuid时必须指定。
 
@@ -68,7 +68,7 @@ class NovaServerNetwork:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this NovaServerNetwork.
+        r"""Sets the port of this NovaServerNetwork.
 
         网络port uuid。  没有指定网络uuid时必须指定。
 
@@ -79,7 +79,7 @@ class NovaServerNetwork:
 
     @property
     def uuid(self):
-        """Gets the uuid of this NovaServerNetwork.
+        r"""Gets the uuid of this NovaServerNetwork.
 
         网络uuid。  没有指定网络port时必须指定。
 
@@ -90,7 +90,7 @@ class NovaServerNetwork:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this NovaServerNetwork.
+        r"""Sets the uuid of this NovaServerNetwork.
 
         网络uuid。  没有指定网络port时必须指定。
 
@@ -101,7 +101,7 @@ class NovaServerNetwork:
 
     @property
     def fixed_ip(self):
-        """Gets the fixed_ip of this NovaServerNetwork.
+        r"""Gets the fixed_ip of this NovaServerNetwork.
 
         指定的IP地址。网络的三个参数（port、uuid和fixed_ip）中，port优先级最高；指定fixed_ip时必须指明uuid。
 
@@ -112,7 +112,7 @@ class NovaServerNetwork:
 
     @fixed_ip.setter
     def fixed_ip(self, fixed_ip):
-        """Sets the fixed_ip of this NovaServerNetwork.
+        r"""Sets the fixed_ip of this NovaServerNetwork.
 
         指定的IP地址。网络的三个参数（port、uuid和fixed_ip）中，port优先级最高；指定fixed_ip时必须指明uuid。
 

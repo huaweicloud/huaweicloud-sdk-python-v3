@@ -27,7 +27,7 @@ class TargetDto:
     }
 
     def __init__(self, type=None, entity=None):
-        """TargetDto
+        r"""TargetDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TargetDto:
 
     @property
     def type(self):
-        """Gets the type of this TargetDto.
+        r"""Gets the type of this TargetDto.
 
         目标类型，account：账户id，name：账户名称。
 
@@ -59,7 +59,7 @@ class TargetDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TargetDto.
+        r"""Sets the type of this TargetDto.
 
         目标类型，account：账户id，name：账户名称。
 
@@ -70,7 +70,7 @@ class TargetDto:
 
     @property
     def entity(self):
-        """Gets the entity of this TargetDto.
+        r"""Gets the entity of this TargetDto.
 
         如果指定 'type:account'，则必须提供账号ID作为实体。如果指定 'type:name'，则必须指定账号名称作为实体。
 
@@ -81,7 +81,7 @@ class TargetDto:
 
     @entity.setter
     def entity(self, entity):
-        """Sets the entity of this TargetDto.
+        r"""Sets the entity of this TargetDto.
 
         如果指定 'type:account'，则必须提供账号ID作为实体。如果指定 'type:name'，则必须指定账号名称作为实体。
 

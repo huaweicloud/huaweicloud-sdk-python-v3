@@ -39,7 +39,7 @@ class ResourceTypeResponse:
     }
 
     def __init__(self, name=None, display_name=None, _global=None, regions=None, console_endpoint_id=None, console_list_url=None, console_detail_url=None, track=None):
-        """ResourceTypeResponse
+        r"""ResourceTypeResponse
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ResourceTypeResponse:
 
     @property
     def name(self):
-        """Gets the name of this ResourceTypeResponse.
+        r"""Gets the name of this ResourceTypeResponse.
 
         资源类型名称
 
@@ -103,7 +103,7 @@ class ResourceTypeResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ResourceTypeResponse.
+        r"""Sets the name of this ResourceTypeResponse.
 
         资源类型名称
 
@@ -114,7 +114,7 @@ class ResourceTypeResponse:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ResourceTypeResponse.
+        r"""Gets the display_name of this ResourceTypeResponse.
 
         资源类型显示名称，可以通过请求中 'X-Language'设置语言
 
@@ -125,7 +125,7 @@ class ResourceTypeResponse:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ResourceTypeResponse.
+        r"""Sets the display_name of this ResourceTypeResponse.
 
         资源类型显示名称，可以通过请求中 'X-Language'设置语言
 
@@ -136,7 +136,7 @@ class ResourceTypeResponse:
 
     @property
     def _global(self):
-        """Gets the _global of this ResourceTypeResponse.
+        r"""Gets the _global of this ResourceTypeResponse.
 
         是否是全局类型的资源
 
@@ -147,7 +147,7 @@ class ResourceTypeResponse:
 
     @_global.setter
     def _global(self, _global):
-        """Sets the _global of this ResourceTypeResponse.
+        r"""Sets the _global of this ResourceTypeResponse.
 
         是否是全局类型的资源
 
@@ -158,7 +158,7 @@ class ResourceTypeResponse:
 
     @property
     def regions(self):
-        """Gets the regions of this ResourceTypeResponse.
+        r"""Gets the regions of this ResourceTypeResponse.
 
         支持的region列表
 
@@ -169,7 +169,7 @@ class ResourceTypeResponse:
 
     @regions.setter
     def regions(self, regions):
-        """Sets the regions of this ResourceTypeResponse.
+        r"""Sets the regions of this ResourceTypeResponse.
 
         支持的region列表
 
@@ -180,7 +180,7 @@ class ResourceTypeResponse:
 
     @property
     def console_endpoint_id(self):
-        """Gets the console_endpoint_id of this ResourceTypeResponse.
+        r"""Gets the console_endpoint_id of this ResourceTypeResponse.
 
         console终端id
 
@@ -191,7 +191,7 @@ class ResourceTypeResponse:
 
     @console_endpoint_id.setter
     def console_endpoint_id(self, console_endpoint_id):
-        """Sets the console_endpoint_id of this ResourceTypeResponse.
+        r"""Sets the console_endpoint_id of this ResourceTypeResponse.
 
         console终端id
 
@@ -202,7 +202,7 @@ class ResourceTypeResponse:
 
     @property
     def console_list_url(self):
-        """Gets the console_list_url of this ResourceTypeResponse.
+        r"""Gets the console_list_url of this ResourceTypeResponse.
 
         console列表页地址
 
@@ -213,7 +213,7 @@ class ResourceTypeResponse:
 
     @console_list_url.setter
     def console_list_url(self, console_list_url):
-        """Sets the console_list_url of this ResourceTypeResponse.
+        r"""Sets the console_list_url of this ResourceTypeResponse.
 
         console列表页地址
 
@@ -224,7 +224,7 @@ class ResourceTypeResponse:
 
     @property
     def console_detail_url(self):
-        """Gets the console_detail_url of this ResourceTypeResponse.
+        r"""Gets the console_detail_url of this ResourceTypeResponse.
 
         console详情页地址
 
@@ -235,7 +235,7 @@ class ResourceTypeResponse:
 
     @console_detail_url.setter
     def console_detail_url(self, console_detail_url):
-        """Sets the console_detail_url of this ResourceTypeResponse.
+        r"""Sets the console_detail_url of this ResourceTypeResponse.
 
         console详情页地址
 
@@ -246,7 +246,7 @@ class ResourceTypeResponse:
 
     @property
     def track(self):
-        """Gets the track of this ResourceTypeResponse.
+        r"""Gets the track of this ResourceTypeResponse.
 
         资源是否默认收集，\"tracked\"表示默认收集，\"untracked\"表示默认不收集
 
@@ -257,7 +257,7 @@ class ResourceTypeResponse:
 
     @track.setter
     def track(self, track):
-        """Sets the track of this ResourceTypeResponse.
+        r"""Sets the track of this ResourceTypeResponse.
 
         资源是否默认收集，\"tracked\"表示默认收集，\"untracked\"表示默认不收集
 

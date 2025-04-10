@@ -38,7 +38,7 @@ class ListPlaybooksResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, total=None, size=None, page=None, data=None, x_request_id=None):
-        """ListPlaybooksResponse
+        r"""ListPlaybooksResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ListPlaybooksResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListPlaybooksResponse.
+        r"""Gets the code of this ListPlaybooksResponse.
 
         错误码
 
@@ -97,7 +97,7 @@ class ListPlaybooksResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListPlaybooksResponse.
+        r"""Sets the code of this ListPlaybooksResponse.
 
         错误码
 
@@ -108,7 +108,7 @@ class ListPlaybooksResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListPlaybooksResponse.
+        r"""Gets the message of this ListPlaybooksResponse.
 
         响应消息信息
 
@@ -119,7 +119,7 @@ class ListPlaybooksResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListPlaybooksResponse.
+        r"""Sets the message of this ListPlaybooksResponse.
 
         响应消息信息
 
@@ -130,7 +130,7 @@ class ListPlaybooksResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPlaybooksResponse.
+        r"""Gets the total of this ListPlaybooksResponse.
 
         总条数
 
@@ -141,7 +141,7 @@ class ListPlaybooksResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPlaybooksResponse.
+        r"""Sets the total of this ListPlaybooksResponse.
 
         总条数
 
@@ -152,7 +152,7 @@ class ListPlaybooksResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListPlaybooksResponse.
+        r"""Gets the size of this ListPlaybooksResponse.
 
         分页查询数据大小
 
@@ -163,7 +163,7 @@ class ListPlaybooksResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListPlaybooksResponse.
+        r"""Sets the size of this ListPlaybooksResponse.
 
         分页查询数据大小
 
@@ -174,7 +174,7 @@ class ListPlaybooksResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ListPlaybooksResponse.
+        r"""Gets the page of this ListPlaybooksResponse.
 
         当前页码
 
@@ -185,7 +185,7 @@ class ListPlaybooksResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListPlaybooksResponse.
+        r"""Sets the page of this ListPlaybooksResponse.
 
         当前页码
 
@@ -196,7 +196,7 @@ class ListPlaybooksResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListPlaybooksResponse.
+        r"""Gets the data of this ListPlaybooksResponse.
 
         剧本列表信息
 
@@ -207,7 +207,7 @@ class ListPlaybooksResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListPlaybooksResponse.
+        r"""Sets the data of this ListPlaybooksResponse.
 
         剧本列表信息
 
@@ -218,7 +218,7 @@ class ListPlaybooksResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListPlaybooksResponse.
+        r"""Gets the x_request_id of this ListPlaybooksResponse.
 
         :return: The x_request_id of this ListPlaybooksResponse.
         :rtype: str
@@ -227,7 +227,7 @@ class ListPlaybooksResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListPlaybooksResponse.
+        r"""Sets the x_request_id of this ListPlaybooksResponse.
 
         :param x_request_id: The x_request_id of this ListPlaybooksResponse.
         :type x_request_id: str

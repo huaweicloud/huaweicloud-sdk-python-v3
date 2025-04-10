@@ -27,7 +27,7 @@ class ShowFsDirRequest:
     }
 
     def __init__(self, share_id=None, path=None):
-        """ShowFsDirRequest
+        r"""ShowFsDirRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowFsDirRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this ShowFsDirRequest.
+        r"""Gets the share_id of this ShowFsDirRequest.
 
         文件系统id
 
@@ -59,7 +59,7 @@ class ShowFsDirRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this ShowFsDirRequest.
+        r"""Sets the share_id of this ShowFsDirRequest.
 
         文件系统id
 
@@ -70,7 +70,7 @@ class ShowFsDirRequest:
 
     @property
     def path(self):
-        """Gets the path of this ShowFsDirRequest.
+        r"""Gets the path of this ShowFsDirRequest.
 
         需要查询的目录的全路径
 
@@ -81,7 +81,7 @@ class ShowFsDirRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowFsDirRequest.
+        r"""Sets the path of this ShowFsDirRequest.
 
         需要查询的目录的全路径
 

@@ -37,7 +37,7 @@ class ListVpcRoutesRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, type=None, vpc_id=None, destination=None, tenant_id=None):
-        """ListVpcRoutesRequest
+        r"""ListVpcRoutesRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListVpcRoutesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVpcRoutesRequest.
+        r"""Gets the limit of this ListVpcRoutesRequest.
 
         每页返回的个数
 
@@ -96,7 +96,7 @@ class ListVpcRoutesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVpcRoutesRequest.
+        r"""Sets the limit of this ListVpcRoutesRequest.
 
         每页返回的个数
 
@@ -107,7 +107,7 @@ class ListVpcRoutesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListVpcRoutesRequest.
+        r"""Gets the marker of this ListVpcRoutesRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -118,7 +118,7 @@ class ListVpcRoutesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListVpcRoutesRequest.
+        r"""Sets the marker of this ListVpcRoutesRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -129,7 +129,7 @@ class ListVpcRoutesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListVpcRoutesRequest.
+        r"""Gets the id of this ListVpcRoutesRequest.
 
         按照routes_id过滤查询
 
@@ -140,7 +140,7 @@ class ListVpcRoutesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListVpcRoutesRequest.
+        r"""Sets the id of this ListVpcRoutesRequest.
 
         按照routes_id过滤查询
 
@@ -151,7 +151,7 @@ class ListVpcRoutesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListVpcRoutesRequest.
+        r"""Gets the type of this ListVpcRoutesRequest.
 
         功能说明：按照路由类型过滤查询  取值范围：peering
 
@@ -162,7 +162,7 @@ class ListVpcRoutesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListVpcRoutesRequest.
+        r"""Sets the type of this ListVpcRoutesRequest.
 
         功能说明：按照路由类型过滤查询  取值范围：peering
 
@@ -173,7 +173,7 @@ class ListVpcRoutesRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListVpcRoutesRequest.
+        r"""Gets the vpc_id of this ListVpcRoutesRequest.
 
         按照vpc_id过滤查询
 
@@ -184,7 +184,7 @@ class ListVpcRoutesRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListVpcRoutesRequest.
+        r"""Sets the vpc_id of this ListVpcRoutesRequest.
 
         按照vpc_id过滤查询
 
@@ -195,7 +195,7 @@ class ListVpcRoutesRequest:
 
     @property
     def destination(self):
-        """Gets the destination of this ListVpcRoutesRequest.
+        r"""Gets the destination of this ListVpcRoutesRequest.
 
         按照路由目的地址CIDR过滤查询
 
@@ -206,7 +206,7 @@ class ListVpcRoutesRequest:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this ListVpcRoutesRequest.
+        r"""Sets the destination of this ListVpcRoutesRequest.
 
         按照路由目的地址CIDR过滤查询
 
@@ -217,7 +217,7 @@ class ListVpcRoutesRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ListVpcRoutesRequest.
+        r"""Gets the tenant_id of this ListVpcRoutesRequest.
 
         按照项目ID过滤查询
 
@@ -228,7 +228,7 @@ class ListVpcRoutesRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ListVpcRoutesRequest.
+        r"""Sets the tenant_id of this ListVpcRoutesRequest.
 
         按照项目ID过滤查询
 

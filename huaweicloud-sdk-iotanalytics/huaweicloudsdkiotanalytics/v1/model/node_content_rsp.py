@@ -27,7 +27,7 @@ class NodeContentRsp:
     }
 
     def __init__(self, site_id=None, sqllist=None):
-        """NodeContentRsp
+        r"""NodeContentRsp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodeContentRsp:
 
     @property
     def site_id(self):
-        """Gets the site_id of this NodeContentRsp.
+        r"""Gets the site_id of this NodeContentRsp.
 
         节点实例ID
 
@@ -61,7 +61,7 @@ class NodeContentRsp:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this NodeContentRsp.
+        r"""Sets the site_id of this NodeContentRsp.
 
         节点实例ID
 
@@ -72,7 +72,7 @@ class NodeContentRsp:
 
     @property
     def sqllist(self):
-        """Gets the sqllist of this NodeContentRsp.
+        r"""Gets the sqllist of this NodeContentRsp.
 
         SQL列表，将指定边缘平台节点的数字孪生模型实例数据转发到中心平台节点。
 
@@ -83,7 +83,7 @@ class NodeContentRsp:
 
     @sqllist.setter
     def sqllist(self, sqllist):
-        """Sets the sqllist of this NodeContentRsp.
+        r"""Sets the sqllist of this NodeContentRsp.
 
         SQL列表，将指定边缘平台节点的数字孪生模型实例数据转发到中心平台节点。
 

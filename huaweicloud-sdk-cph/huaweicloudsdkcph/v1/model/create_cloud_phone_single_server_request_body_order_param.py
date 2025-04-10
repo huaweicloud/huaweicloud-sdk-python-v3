@@ -33,7 +33,7 @@ class CreateCloudPhoneSingleServerRequestBodyOrderParam:
     }
 
     def __init__(self, charging_mode=None, period_type=None, period_num=None, is_auto_pay=None, is_auto_renew=None):
-        """CreateCloudPhoneSingleServerRequestBodyOrderParam
+        r"""CreateCloudPhoneSingleServerRequestBodyOrderParam
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CreateCloudPhoneSingleServerRequestBodyOrderParam:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
+        r"""Gets the charging_mode of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
 
         计费类型。 0：包周期
 
@@ -79,7 +79,7 @@ class CreateCloudPhoneSingleServerRequestBodyOrderParam:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
+        r"""Sets the charging_mode of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
 
         计费类型。 0：包周期
 
@@ -90,7 +90,7 @@ class CreateCloudPhoneSingleServerRequestBodyOrderParam:
 
     @property
     def period_type(self):
-        """Gets the period_type of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
+        r"""Gets the period_type of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
 
         订购周期类型。 2：月 3：年
 
@@ -101,7 +101,7 @@ class CreateCloudPhoneSingleServerRequestBodyOrderParam:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
+        r"""Sets the period_type of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
 
         订购周期类型。 2：月 3：年
 
@@ -112,7 +112,7 @@ class CreateCloudPhoneSingleServerRequestBodyOrderParam:
 
     @property
     def period_num(self):
-        """Gets the period_num of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
+        r"""Gets the period_num of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
 
         订购周期数。 当订购周期为月时，取值范围[1, 9]。 当订购周期为年时，取值范围[1,10]。
 
@@ -123,7 +123,7 @@ class CreateCloudPhoneSingleServerRequestBodyOrderParam:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
+        r"""Sets the period_num of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
 
         订购周期数。 当订购周期为月时，取值范围[1, 9]。 当订购周期为年时，取值范围[1,10]。
 
@@ -134,7 +134,7 @@ class CreateCloudPhoneSingleServerRequestBodyOrderParam:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
+        r"""Gets the is_auto_pay of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
 
         是否自动付款。默认不自动付款。 0：不自动付款 1：自动付款
 
@@ -145,7 +145,7 @@ class CreateCloudPhoneSingleServerRequestBodyOrderParam:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
+        r"""Sets the is_auto_pay of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
 
         是否自动付款。默认不自动付款。 0：不自动付款 1：自动付款
 
@@ -156,7 +156,7 @@ class CreateCloudPhoneSingleServerRequestBodyOrderParam:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
+        r"""Gets the is_auto_renew of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
 
         是否自动续订。默认不自动续订。 0：不自动续订 1：自动续订
 
@@ -167,7 +167,7 @@ class CreateCloudPhoneSingleServerRequestBodyOrderParam:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
+        r"""Sets the is_auto_renew of this CreateCloudPhoneSingleServerRequestBodyOrderParam.
 
         是否自动续订。默认不自动续订。 0：不自动续订 1：自动续订
 

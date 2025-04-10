@@ -29,7 +29,7 @@ class UpdateSimSmScenariosFilesRequest:
     }
 
     def __init__(self, parent_lookup_id=None, sha256=None, body=None):
-        """UpdateSimSmScenariosFilesRequest
+        r"""UpdateSimSmScenariosFilesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateSimSmScenariosFilesRequest:
 
     @property
     def parent_lookup_id(self):
-        """Gets the parent_lookup_id of this UpdateSimSmScenariosFilesRequest.
+        r"""Gets the parent_lookup_id of this UpdateSimSmScenariosFilesRequest.
 
         场景ID
 
@@ -66,7 +66,7 @@ class UpdateSimSmScenariosFilesRequest:
 
     @parent_lookup_id.setter
     def parent_lookup_id(self, parent_lookup_id):
-        """Sets the parent_lookup_id of this UpdateSimSmScenariosFilesRequest.
+        r"""Sets the parent_lookup_id of this UpdateSimSmScenariosFilesRequest.
 
         场景ID
 
@@ -77,7 +77,7 @@ class UpdateSimSmScenariosFilesRequest:
 
     @property
     def sha256(self):
-        """Gets the sha256 of this UpdateSimSmScenariosFilesRequest.
+        r"""Gets the sha256 of this UpdateSimSmScenariosFilesRequest.
 
         文件sha256值
 
@@ -88,7 +88,7 @@ class UpdateSimSmScenariosFilesRequest:
 
     @sha256.setter
     def sha256(self, sha256):
-        """Sets the sha256 of this UpdateSimSmScenariosFilesRequest.
+        r"""Sets the sha256 of this UpdateSimSmScenariosFilesRequest.
 
         文件sha256值
 
@@ -99,7 +99,7 @@ class UpdateSimSmScenariosFilesRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSimSmScenariosFilesRequest.
+        r"""Gets the body of this UpdateSimSmScenariosFilesRequest.
 
         :return: The body of this UpdateSimSmScenariosFilesRequest.
         :rtype: :class:`huaweicloudsdkoctopus.v2.PatchedFileDetailSrlz`
@@ -108,7 +108,7 @@ class UpdateSimSmScenariosFilesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSimSmScenariosFilesRequest.
+        r"""Sets the body of this UpdateSimSmScenariosFilesRequest.
 
         :param body: The body of this UpdateSimSmScenariosFilesRequest.
         :type body: :class:`huaweicloudsdkoctopus.v2.PatchedFileDetailSrlz`

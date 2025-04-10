@@ -31,7 +31,7 @@ class IndicatorInfo:
     }
 
     def __init__(self, indicator_name=None, plugin_name=None, default_collect_rate=None, support_datastore_version=None):
-        """IndicatorInfo
+        r"""IndicatorInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class IndicatorInfo:
 
     @property
     def indicator_name(self):
-        """Gets the indicator_name of this IndicatorInfo.
+        r"""Gets the indicator_name of this IndicatorInfo.
 
         监控指标名称。
 
@@ -75,7 +75,7 @@ class IndicatorInfo:
 
     @indicator_name.setter
     def indicator_name(self, indicator_name):
-        """Sets the indicator_name of this IndicatorInfo.
+        r"""Sets the indicator_name of this IndicatorInfo.
 
         监控指标名称。
 
@@ -86,7 +86,7 @@ class IndicatorInfo:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this IndicatorInfo.
+        r"""Gets the plugin_name of this IndicatorInfo.
 
         采集模块名称。
 
@@ -97,7 +97,7 @@ class IndicatorInfo:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this IndicatorInfo.
+        r"""Sets the plugin_name of this IndicatorInfo.
 
         采集模块名称。
 
@@ -108,7 +108,7 @@ class IndicatorInfo:
 
     @property
     def default_collect_rate(self):
-        """Gets the default_collect_rate of this IndicatorInfo.
+        r"""Gets the default_collect_rate of this IndicatorInfo.
 
         默认采集频率。
 
@@ -119,7 +119,7 @@ class IndicatorInfo:
 
     @default_collect_rate.setter
     def default_collect_rate(self, default_collect_rate):
-        """Sets the default_collect_rate of this IndicatorInfo.
+        r"""Sets the default_collect_rate of this IndicatorInfo.
 
         默认采集频率。
 
@@ -130,7 +130,7 @@ class IndicatorInfo:
 
     @property
     def support_datastore_version(self):
-        """Gets the support_datastore_version of this IndicatorInfo.
+        r"""Gets the support_datastore_version of this IndicatorInfo.
 
         支持的集群版本。
 
@@ -141,7 +141,7 @@ class IndicatorInfo:
 
     @support_datastore_version.setter
     def support_datastore_version(self, support_datastore_version):
-        """Sets the support_datastore_version of this IndicatorInfo.
+        r"""Sets the support_datastore_version of this IndicatorInfo.
 
         支持的集群版本。
 

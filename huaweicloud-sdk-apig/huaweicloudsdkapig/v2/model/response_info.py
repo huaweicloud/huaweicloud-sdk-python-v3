@@ -29,7 +29,7 @@ class ResponseInfo:
     }
 
     def __init__(self, status=None, body=None, headers=None):
-        """ResponseInfo
+        r"""ResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ResponseInfo:
 
     @property
     def status(self):
-        """Gets the status of this ResponseInfo.
+        r"""Gets the status of this ResponseInfo.
 
         响应的HTTP状态码。范围为200-599，但不允许为444。
 
@@ -68,7 +68,7 @@ class ResponseInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ResponseInfo.
+        r"""Sets the status of this ResponseInfo.
 
         响应的HTTP状态码。范围为200-599，但不允许为444。
 
@@ -79,7 +79,7 @@ class ResponseInfo:
 
     @property
     def body(self):
-        """Gets the body of this ResponseInfo.
+        r"""Gets the body of this ResponseInfo.
 
         响应的Body模板
 
@@ -90,7 +90,7 @@ class ResponseInfo:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResponseInfo.
+        r"""Sets the body of this ResponseInfo.
 
         响应的Body模板
 
@@ -101,7 +101,7 @@ class ResponseInfo:
 
     @property
     def headers(self):
-        """Gets the headers of this ResponseInfo.
+        r"""Gets the headers of this ResponseInfo.
 
         自定义的响应头
 
@@ -112,7 +112,7 @@ class ResponseInfo:
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this ResponseInfo.
+        r"""Sets the headers of this ResponseInfo.
 
         自定义的响应头
 

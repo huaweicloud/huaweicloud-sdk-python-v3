@@ -56,7 +56,7 @@ class ShowGroupResponse(SdkResponse):
     }
 
     def __init__(self, creator_id=None, project_id=None, created_at=None, description=None, full_name=None, ancestor_ids=None, ancestor_names=None, id=None, members_count=None, name=None, repository_count=None, star_count=None, starred=None, subgroup_count=None, visibility=None, sum=None):
-        """ShowGroupResponse
+        r"""ShowGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -149,7 +149,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this ShowGroupResponse.
+        r"""Gets the creator_id of this ShowGroupResponse.
 
         创建者id
 
@@ -160,7 +160,7 @@ class ShowGroupResponse(SdkResponse):
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this ShowGroupResponse.
+        r"""Sets the creator_id of this ShowGroupResponse.
 
         创建者id
 
@@ -171,7 +171,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowGroupResponse.
+        r"""Gets the project_id of this ShowGroupResponse.
 
         项目id
 
@@ -182,7 +182,7 @@ class ShowGroupResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowGroupResponse.
+        r"""Sets the project_id of this ShowGroupResponse.
 
         项目id
 
@@ -193,7 +193,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowGroupResponse.
+        r"""Gets the created_at of this ShowGroupResponse.
 
         创建时间
 
@@ -204,7 +204,7 @@ class ShowGroupResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowGroupResponse.
+        r"""Sets the created_at of this ShowGroupResponse.
 
         创建时间
 
@@ -215,7 +215,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowGroupResponse.
+        r"""Gets the description of this ShowGroupResponse.
 
         描述
 
@@ -226,7 +226,7 @@ class ShowGroupResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowGroupResponse.
+        r"""Sets the description of this ShowGroupResponse.
 
         描述
 
@@ -237,7 +237,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def full_name(self):
-        """Gets the full_name of this ShowGroupResponse.
+        r"""Gets the full_name of this ShowGroupResponse.
 
         代码组全名
 
@@ -248,7 +248,7 @@ class ShowGroupResponse(SdkResponse):
 
     @full_name.setter
     def full_name(self, full_name):
-        """Sets the full_name of this ShowGroupResponse.
+        r"""Sets the full_name of this ShowGroupResponse.
 
         代码组全名
 
@@ -259,7 +259,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def ancestor_ids(self):
-        """Gets the ancestor_ids of this ShowGroupResponse.
+        r"""Gets the ancestor_ids of this ShowGroupResponse.
 
         代码组层级路径id
 
@@ -270,7 +270,7 @@ class ShowGroupResponse(SdkResponse):
 
     @ancestor_ids.setter
     def ancestor_ids(self, ancestor_ids):
-        """Sets the ancestor_ids of this ShowGroupResponse.
+        r"""Sets the ancestor_ids of this ShowGroupResponse.
 
         代码组层级路径id
 
@@ -281,7 +281,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def ancestor_names(self):
-        """Gets the ancestor_names of this ShowGroupResponse.
+        r"""Gets the ancestor_names of this ShowGroupResponse.
 
         代码组层级路径名称
 
@@ -292,7 +292,7 @@ class ShowGroupResponse(SdkResponse):
 
     @ancestor_names.setter
     def ancestor_names(self, ancestor_names):
-        """Sets the ancestor_names of this ShowGroupResponse.
+        r"""Sets the ancestor_names of this ShowGroupResponse.
 
         代码组层级路径名称
 
@@ -303,7 +303,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowGroupResponse.
+        r"""Gets the id of this ShowGroupResponse.
 
         代码组id
 
@@ -314,7 +314,7 @@ class ShowGroupResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowGroupResponse.
+        r"""Sets the id of this ShowGroupResponse.
 
         代码组id
 
@@ -325,7 +325,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def members_count(self):
-        """Gets the members_count of this ShowGroupResponse.
+        r"""Gets the members_count of this ShowGroupResponse.
 
         代码组成员计数
 
@@ -336,7 +336,7 @@ class ShowGroupResponse(SdkResponse):
 
     @members_count.setter
     def members_count(self, members_count):
-        """Sets the members_count of this ShowGroupResponse.
+        r"""Sets the members_count of this ShowGroupResponse.
 
         代码组成员计数
 
@@ -347,7 +347,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowGroupResponse.
+        r"""Gets the name of this ShowGroupResponse.
 
         代码组名
 
@@ -358,7 +358,7 @@ class ShowGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowGroupResponse.
+        r"""Sets the name of this ShowGroupResponse.
 
         代码组名
 
@@ -369,7 +369,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def repository_count(self):
-        """Gets the repository_count of this ShowGroupResponse.
+        r"""Gets the repository_count of this ShowGroupResponse.
 
         仓库计数
 
@@ -380,7 +380,7 @@ class ShowGroupResponse(SdkResponse):
 
     @repository_count.setter
     def repository_count(self, repository_count):
-        """Sets the repository_count of this ShowGroupResponse.
+        r"""Sets the repository_count of this ShowGroupResponse.
 
         仓库计数
 
@@ -391,7 +391,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def star_count(self):
-        """Gets the star_count of this ShowGroupResponse.
+        r"""Gets the star_count of this ShowGroupResponse.
 
         关注计数
 
@@ -402,7 +402,7 @@ class ShowGroupResponse(SdkResponse):
 
     @star_count.setter
     def star_count(self, star_count):
-        """Sets the star_count of this ShowGroupResponse.
+        r"""Sets the star_count of this ShowGroupResponse.
 
         关注计数
 
@@ -413,7 +413,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def starred(self):
-        """Gets the starred of this ShowGroupResponse.
+        r"""Gets the starred of this ShowGroupResponse.
 
         是否关注
 
@@ -424,7 +424,7 @@ class ShowGroupResponse(SdkResponse):
 
     @starred.setter
     def starred(self, starred):
-        """Sets the starred of this ShowGroupResponse.
+        r"""Sets the starred of this ShowGroupResponse.
 
         是否关注
 
@@ -435,7 +435,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def subgroup_count(self):
-        """Gets the subgroup_count of this ShowGroupResponse.
+        r"""Gets the subgroup_count of this ShowGroupResponse.
 
         子组计数
 
@@ -446,7 +446,7 @@ class ShowGroupResponse(SdkResponse):
 
     @subgroup_count.setter
     def subgroup_count(self, subgroup_count):
-        """Sets the subgroup_count of this ShowGroupResponse.
+        r"""Sets the subgroup_count of this ShowGroupResponse.
 
         子组计数
 
@@ -457,7 +457,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def visibility(self):
-        """Gets the visibility of this ShowGroupResponse.
+        r"""Gets the visibility of this ShowGroupResponse.
 
         可见性, private public
 
@@ -468,7 +468,7 @@ class ShowGroupResponse(SdkResponse):
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this ShowGroupResponse.
+        r"""Sets the visibility of this ShowGroupResponse.
 
         可见性, private public
 
@@ -479,7 +479,7 @@ class ShowGroupResponse(SdkResponse):
 
     @property
     def sum(self):
-        """Gets the sum of this ShowGroupResponse.
+        r"""Gets the sum of this ShowGroupResponse.
 
         :return: The sum of this ShowGroupResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v4.GroupSumDto`
@@ -488,7 +488,7 @@ class ShowGroupResponse(SdkResponse):
 
     @sum.setter
     def sum(self, sum):
-        """Sets the sum of this ShowGroupResponse.
+        r"""Sets the sum of this ShowGroupResponse.
 
         :param sum: The sum of this ShowGroupResponse.
         :type sum: :class:`huaweicloudsdkcodehub.v4.GroupSumDto`

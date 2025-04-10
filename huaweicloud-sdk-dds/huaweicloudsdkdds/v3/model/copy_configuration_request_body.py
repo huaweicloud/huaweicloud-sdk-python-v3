@@ -27,7 +27,7 @@ class CopyConfigurationRequestBody:
     }
 
     def __init__(self, name=None, description=None):
-        """CopyConfigurationRequestBody
+        r"""CopyConfigurationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CopyConfigurationRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CopyConfigurationRequestBody.
+        r"""Gets the name of this CopyConfigurationRequestBody.
 
         复制后的参数模板模板名称
 
@@ -60,7 +60,7 @@ class CopyConfigurationRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CopyConfigurationRequestBody.
+        r"""Sets the name of this CopyConfigurationRequestBody.
 
         复制后的参数模板模板名称
 
@@ -71,7 +71,7 @@ class CopyConfigurationRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CopyConfigurationRequestBody.
+        r"""Gets the description of this CopyConfigurationRequestBody.
 
         参数模板模板描述。
 
@@ -82,7 +82,7 @@ class CopyConfigurationRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CopyConfigurationRequestBody.
+        r"""Sets the description of this CopyConfigurationRequestBody.
 
         参数模板模板描述。
 

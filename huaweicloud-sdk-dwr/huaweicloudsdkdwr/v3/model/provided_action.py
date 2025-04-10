@@ -57,7 +57,7 @@ class ProvidedAction:
     }
 
     def __init__(self, template_name=None, category=None, create_time=None, last_modify_time=None, inputs=None, dynamic_source_definition=None, need_policy=None, provider_name=None, is_uploaded_func_pkg=None, func_pkg_endpoint=None, upload_func_pkg_size=None, upload_func_pkg_etag=None, register_status=None, description=None, function_template=None, provider_domainid=None, provider_userid=None):
-        """ProvidedAction
+        r"""ProvidedAction
 
         The model defined in huaweicloud sdk
 
@@ -144,7 +144,7 @@ class ProvidedAction:
 
     @property
     def template_name(self):
-        """Gets the template_name of this ProvidedAction.
+        r"""Gets the template_name of this ProvidedAction.
 
         算子模板名称。
 
@@ -155,7 +155,7 @@ class ProvidedAction:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ProvidedAction.
+        r"""Sets the template_name of this ProvidedAction.
 
         算子模板名称。
 
@@ -166,7 +166,7 @@ class ProvidedAction:
 
     @property
     def category(self):
-        """Gets the category of this ProvidedAction.
+        r"""Gets the category of this ProvidedAction.
 
         分类。默认分类为FileProcess,MediaProcess,ImageProcess,ContentReview,NotificationProcess,VoiceInteraction
 
@@ -177,7 +177,7 @@ class ProvidedAction:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ProvidedAction.
+        r"""Sets the category of this ProvidedAction.
 
         分类。默认分类为FileProcess,MediaProcess,ImageProcess,ContentReview,NotificationProcess,VoiceInteraction
 
@@ -188,7 +188,7 @@ class ProvidedAction:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ProvidedAction.
+        r"""Gets the create_time of this ProvidedAction.
 
         创建时间。
 
@@ -199,7 +199,7 @@ class ProvidedAction:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ProvidedAction.
+        r"""Sets the create_time of this ProvidedAction.
 
         创建时间。
 
@@ -210,7 +210,7 @@ class ProvidedAction:
 
     @property
     def last_modify_time(self):
-        """Gets the last_modify_time of this ProvidedAction.
+        r"""Gets the last_modify_time of this ProvidedAction.
 
         最近修改时间。
 
@@ -221,7 +221,7 @@ class ProvidedAction:
 
     @last_modify_time.setter
     def last_modify_time(self, last_modify_time):
-        """Sets the last_modify_time of this ProvidedAction.
+        r"""Sets the last_modify_time of this ProvidedAction.
 
         最近修改时间。
 
@@ -232,7 +232,7 @@ class ProvidedAction:
 
     @property
     def inputs(self):
-        """Gets the inputs of this ProvidedAction.
+        r"""Gets the inputs of this ProvidedAction.
 
         可修改参数定义列表。
 
@@ -243,7 +243,7 @@ class ProvidedAction:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this ProvidedAction.
+        r"""Sets the inputs of this ProvidedAction.
 
         可修改参数定义列表。
 
@@ -254,7 +254,7 @@ class ProvidedAction:
 
     @property
     def dynamic_source_definition(self):
-        """Gets the dynamic_source_definition of this ProvidedAction.
+        r"""Gets the dynamic_source_definition of this ProvidedAction.
 
         可修改参数引用
 
@@ -265,7 +265,7 @@ class ProvidedAction:
 
     @dynamic_source_definition.setter
     def dynamic_source_definition(self, dynamic_source_definition):
-        """Sets the dynamic_source_definition of this ProvidedAction.
+        r"""Sets the dynamic_source_definition of this ProvidedAction.
 
         可修改参数引用
 
@@ -276,7 +276,7 @@ class ProvidedAction:
 
     @property
     def need_policy(self):
-        """Gets the need_policy of this ProvidedAction.
+        r"""Gets the need_policy of this ProvidedAction.
 
         需要的权限。
 
@@ -287,7 +287,7 @@ class ProvidedAction:
 
     @need_policy.setter
     def need_policy(self, need_policy):
-        """Sets the need_policy of this ProvidedAction.
+        r"""Sets the need_policy of this ProvidedAction.
 
         需要的权限。
 
@@ -298,7 +298,7 @@ class ProvidedAction:
 
     @property
     def provider_name(self):
-        """Gets the provider_name of this ProvidedAction.
+        r"""Gets the provider_name of this ProvidedAction.
 
         算子提供方名称。
 
@@ -309,7 +309,7 @@ class ProvidedAction:
 
     @provider_name.setter
     def provider_name(self, provider_name):
-        """Sets the provider_name of this ProvidedAction.
+        r"""Sets the provider_name of this ProvidedAction.
 
         算子提供方名称。
 
@@ -320,7 +320,7 @@ class ProvidedAction:
 
     @property
     def is_uploaded_func_pkg(self):
-        """Gets the is_uploaded_func_pkg of this ProvidedAction.
+        r"""Gets the is_uploaded_func_pkg of this ProvidedAction.
 
         是否上传了算子包
 
@@ -331,7 +331,7 @@ class ProvidedAction:
 
     @is_uploaded_func_pkg.setter
     def is_uploaded_func_pkg(self, is_uploaded_func_pkg):
-        """Sets the is_uploaded_func_pkg of this ProvidedAction.
+        r"""Sets the is_uploaded_func_pkg of this ProvidedAction.
 
         是否上传了算子包
 
@@ -342,7 +342,7 @@ class ProvidedAction:
 
     @property
     def func_pkg_endpoint(self):
-        """Gets the func_pkg_endpoint of this ProvidedAction.
+        r"""Gets the func_pkg_endpoint of this ProvidedAction.
 
         上传算子包的临时签名URL地址，用于上传算子包。
 
@@ -353,7 +353,7 @@ class ProvidedAction:
 
     @func_pkg_endpoint.setter
     def func_pkg_endpoint(self, func_pkg_endpoint):
-        """Sets the func_pkg_endpoint of this ProvidedAction.
+        r"""Sets the func_pkg_endpoint of this ProvidedAction.
 
         上传算子包的临时签名URL地址，用于上传算子包。
 
@@ -364,7 +364,7 @@ class ProvidedAction:
 
     @property
     def upload_func_pkg_size(self):
-        """Gets the upload_func_pkg_size of this ProvidedAction.
+        r"""Gets the upload_func_pkg_size of this ProvidedAction.
 
         上传算子包的大小。小于100M
 
@@ -375,7 +375,7 @@ class ProvidedAction:
 
     @upload_func_pkg_size.setter
     def upload_func_pkg_size(self, upload_func_pkg_size):
-        """Sets the upload_func_pkg_size of this ProvidedAction.
+        r"""Sets the upload_func_pkg_size of this ProvidedAction.
 
         上传算子包的大小。小于100M
 
@@ -386,7 +386,7 @@ class ProvidedAction:
 
     @property
     def upload_func_pkg_etag(self):
-        """Gets the upload_func_pkg_etag of this ProvidedAction.
+        r"""Gets the upload_func_pkg_etag of this ProvidedAction.
 
         上传算子包的etag。
 
@@ -397,7 +397,7 @@ class ProvidedAction:
 
     @upload_func_pkg_etag.setter
     def upload_func_pkg_etag(self, upload_func_pkg_etag):
-        """Sets the upload_func_pkg_etag of this ProvidedAction.
+        r"""Sets the upload_func_pkg_etag of this ProvidedAction.
 
         上传算子包的etag。
 
@@ -408,7 +408,7 @@ class ProvidedAction:
 
     @property
     def register_status(self):
-        """Gets the register_status of this ProvidedAction.
+        r"""Gets the register_status of this ProvidedAction.
 
         :return: The register_status of this ProvidedAction.
         :rtype: :class:`huaweicloudsdkdwr.v3.PublicTemplateRegisterType`
@@ -417,7 +417,7 @@ class ProvidedAction:
 
     @register_status.setter
     def register_status(self, register_status):
-        """Sets the register_status of this ProvidedAction.
+        r"""Sets the register_status of this ProvidedAction.
 
         :param register_status: The register_status of this ProvidedAction.
         :type register_status: :class:`huaweicloudsdkdwr.v3.PublicTemplateRegisterType`
@@ -426,7 +426,7 @@ class ProvidedAction:
 
     @property
     def description(self):
-        """Gets the description of this ProvidedAction.
+        r"""Gets the description of this ProvidedAction.
 
         描述。
 
@@ -437,7 +437,7 @@ class ProvidedAction:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProvidedAction.
+        r"""Sets the description of this ProvidedAction.
 
         描述。
 
@@ -448,7 +448,7 @@ class ProvidedAction:
 
     @property
     def function_template(self):
-        """Gets the function_template of this ProvidedAction.
+        r"""Gets the function_template of this ProvidedAction.
 
         函数URN
 
@@ -459,7 +459,7 @@ class ProvidedAction:
 
     @function_template.setter
     def function_template(self, function_template):
-        """Sets the function_template of this ProvidedAction.
+        r"""Sets the function_template of this ProvidedAction.
 
         函数URN
 
@@ -470,7 +470,7 @@ class ProvidedAction:
 
     @property
     def provider_domainid(self):
-        """Gets the provider_domainid of this ProvidedAction.
+        r"""Gets the provider_domainid of this ProvidedAction.
 
         算子提供方IAM DomainID
 
@@ -481,7 +481,7 @@ class ProvidedAction:
 
     @provider_domainid.setter
     def provider_domainid(self, provider_domainid):
-        """Sets the provider_domainid of this ProvidedAction.
+        r"""Sets the provider_domainid of this ProvidedAction.
 
         算子提供方IAM DomainID
 
@@ -492,7 +492,7 @@ class ProvidedAction:
 
     @property
     def provider_userid(self):
-        """Gets the provider_userid of this ProvidedAction.
+        r"""Gets the provider_userid of this ProvidedAction.
 
         算子提供方IAM UserID
 
@@ -503,7 +503,7 @@ class ProvidedAction:
 
     @provider_userid.setter
     def provider_userid(self, provider_userid):
-        """Sets the provider_userid of this ProvidedAction.
+        r"""Sets the provider_userid of this ProvidedAction.
 
         算子提供方IAM UserID
 

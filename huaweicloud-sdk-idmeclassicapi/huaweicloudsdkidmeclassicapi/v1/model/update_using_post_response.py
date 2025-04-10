@@ -30,7 +30,7 @@ class UpdateUsingPostResponse(SdkResponse):
     }
 
     def __init__(self, result=None, data=None, errors=None):
-        """UpdateUsingPostResponse
+        r"""UpdateUsingPostResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateUsingPostResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateUsingPostResponse.
+        r"""Gets the result of this UpdateUsingPostResponse.
 
         **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
 
@@ -69,7 +69,7 @@ class UpdateUsingPostResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateUsingPostResponse.
+        r"""Sets the result of this UpdateUsingPostResponse.
 
         **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
 
@@ -80,7 +80,7 @@ class UpdateUsingPostResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateUsingPostResponse.
+        r"""Gets the data of this UpdateUsingPostResponse.
 
         **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -91,7 +91,7 @@ class UpdateUsingPostResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateUsingPostResponse.
+        r"""Sets the data of this UpdateUsingPostResponse.
 
         **参数解释：**  请求数据。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -102,7 +102,7 @@ class UpdateUsingPostResponse(SdkResponse):
 
     @property
     def errors(self):
-        """Gets the errors of this UpdateUsingPostResponse.
+        r"""Gets the errors of this UpdateUsingPostResponse.
 
         **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -113,7 +113,7 @@ class UpdateUsingPostResponse(SdkResponse):
 
     @errors.setter
     def errors(self, errors):
-        """Sets the errors of this UpdateUsingPostResponse.
+        r"""Sets the errors of this UpdateUsingPostResponse.
 
         **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

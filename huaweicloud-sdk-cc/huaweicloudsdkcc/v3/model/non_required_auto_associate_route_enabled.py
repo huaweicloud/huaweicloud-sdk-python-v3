@@ -23,7 +23,7 @@ class NonRequiredAutoAssociateRouteEnabled:
     }
 
     def __init__(self):
-        """NonRequiredAutoAssociateRouteEnabled
+        r"""NonRequiredAutoAssociateRouteEnabled
 
         The model defined in huaweicloud sdk
 

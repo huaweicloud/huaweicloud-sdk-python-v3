@@ -24,7 +24,7 @@ class UpdateAssetMetaResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateAssetMetaResponse
+        r"""UpdateAssetMetaResponse
 
         The model defined in huaweicloud sdk
 

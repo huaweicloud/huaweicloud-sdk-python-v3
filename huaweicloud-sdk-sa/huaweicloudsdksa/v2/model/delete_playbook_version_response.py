@@ -30,7 +30,7 @@ class DeletePlaybookVersionResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, x_request_id=None):
-        """DeletePlaybookVersionResponse
+        r"""DeletePlaybookVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeletePlaybookVersionResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DeletePlaybookVersionResponse.
+        r"""Gets the code of this DeletePlaybookVersionResponse.
 
         Error code
 
@@ -69,7 +69,7 @@ class DeletePlaybookVersionResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeletePlaybookVersionResponse.
+        r"""Sets the code of this DeletePlaybookVersionResponse.
 
         Error code
 
@@ -80,7 +80,7 @@ class DeletePlaybookVersionResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeletePlaybookVersionResponse.
+        r"""Gets the message of this DeletePlaybookVersionResponse.
 
         Error message
 
@@ -91,7 +91,7 @@ class DeletePlaybookVersionResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeletePlaybookVersionResponse.
+        r"""Sets the message of this DeletePlaybookVersionResponse.
 
         Error message
 
@@ -102,7 +102,7 @@ class DeletePlaybookVersionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeletePlaybookVersionResponse.
+        r"""Gets the x_request_id of this DeletePlaybookVersionResponse.
 
         :return: The x_request_id of this DeletePlaybookVersionResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class DeletePlaybookVersionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeletePlaybookVersionResponse.
+        r"""Sets the x_request_id of this DeletePlaybookVersionResponse.
 
         :param x_request_id: The x_request_id of this DeletePlaybookVersionResponse.
         :type x_request_id: str

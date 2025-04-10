@@ -25,7 +25,7 @@ class GetTableColumnStatisticsInput:
     }
 
     def __init__(self, column_names=None):
-        """GetTableColumnStatisticsInput
+        r"""GetTableColumnStatisticsInput
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GetTableColumnStatisticsInput:
 
     @property
     def column_names(self):
-        """Gets the column_names of this GetTableColumnStatisticsInput.
+        r"""Gets the column_names of this GetTableColumnStatisticsInput.
 
         列名
 
@@ -53,7 +53,7 @@ class GetTableColumnStatisticsInput:
 
     @column_names.setter
     def column_names(self, column_names):
-        """Sets the column_names of this GetTableColumnStatisticsInput.
+        r"""Sets the column_names of this GetTableColumnStatisticsInput.
 
         列名
 

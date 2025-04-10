@@ -27,7 +27,7 @@ class ReqUpdateHpcCacheInfo:
     }
 
     def __init__(self, action=None, data=None):
-        """ReqUpdateHpcCacheInfo
+        r"""ReqUpdateHpcCacheInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ReqUpdateHpcCacheInfo:
 
     @property
     def action(self):
-        """Gets the action of this ReqUpdateHpcCacheInfo.
+        r"""Gets the action of this ReqUpdateHpcCacheInfo.
 
         配置hpc缓存型的动作，如initialize_overlay
 
@@ -59,7 +59,7 @@ class ReqUpdateHpcCacheInfo:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ReqUpdateHpcCacheInfo.
+        r"""Sets the action of this ReqUpdateHpcCacheInfo.
 
         配置hpc缓存型的动作，如initialize_overlay
 
@@ -70,7 +70,7 @@ class ReqUpdateHpcCacheInfo:
 
     @property
     def data(self):
-        """Gets the data of this ReqUpdateHpcCacheInfo.
+        r"""Gets the data of this ReqUpdateHpcCacheInfo.
 
         :return: The data of this ReqUpdateHpcCacheInfo.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ReqUpdateHpcCacheData`
@@ -79,7 +79,7 @@ class ReqUpdateHpcCacheInfo:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ReqUpdateHpcCacheInfo.
+        r"""Sets the data of this ReqUpdateHpcCacheInfo.
 
         :param data: The data of this ReqUpdateHpcCacheInfo.
         :type data: :class:`huaweicloudsdksfsturbo.v1.ReqUpdateHpcCacheData`

@@ -77,7 +77,7 @@ class Pool:
     }
 
     def __init__(self, admin_state_up=None, description=None, healthmonitor_id=None, id=None, lb_algorithm=None, listeners=None, loadbalancers=None, members=None, name=None, project_id=None, protocol=None, session_persistence=None, ip_version=None, slow_start=None, member_deletion_protection_enable=None, created_at=None, updated_at=None, vpc_id=None, type=None, protection_status=None, protection_reason=None, any_port_enable=None, connection_drain=None, enterprise_project_id=None, pool_health=None, public_border_group=None, quic_cid_hash_strategy=None):
-        """Pool
+        r"""Pool
 
         The model defined in huaweicloud sdk
 
@@ -208,7 +208,7 @@ class Pool:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this Pool.
+        r"""Gets the admin_state_up of this Pool.
 
         参数解释：后端服务器组的管理状态。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -219,7 +219,7 @@ class Pool:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this Pool.
+        r"""Sets the admin_state_up of this Pool.
 
         参数解释：后端服务器组的管理状态。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -230,7 +230,7 @@ class Pool:
 
     @property
     def description(self):
-        """Gets the description of this Pool.
+        r"""Gets the description of this Pool.
 
         参数解释：后端服务器组的描述信息。
 
@@ -241,7 +241,7 @@ class Pool:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Pool.
+        r"""Sets the description of this Pool.
 
         参数解释：后端服务器组的描述信息。
 
@@ -252,7 +252,7 @@ class Pool:
 
     @property
     def healthmonitor_id(self):
-        """Gets the healthmonitor_id of this Pool.
+        r"""Gets the healthmonitor_id of this Pool.
 
         参数解释：后端服务器组关联的健康检查的ID。
 
@@ -263,7 +263,7 @@ class Pool:
 
     @healthmonitor_id.setter
     def healthmonitor_id(self, healthmonitor_id):
-        """Sets the healthmonitor_id of this Pool.
+        r"""Sets the healthmonitor_id of this Pool.
 
         参数解释：后端服务器组关联的健康检查的ID。
 
@@ -274,7 +274,7 @@ class Pool:
 
     @property
     def id(self):
-        """Gets the id of this Pool.
+        r"""Gets the id of this Pool.
 
         参数解释：后端服务器组的ID。
 
@@ -285,7 +285,7 @@ class Pool:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Pool.
+        r"""Sets the id of this Pool.
 
         参数解释：后端服务器组的ID。
 
@@ -296,7 +296,7 @@ class Pool:
 
     @property
     def lb_algorithm(self):
-        """Gets the lb_algorithm of this Pool.
+        r"""Gets the lb_algorithm of this Pool.
 
         参数解释：后端服务器组的负载均衡算法。  约束限制： - 当该字段的取值为SOURCE_IP或QUIC_CID时，后端服务器组绑定的后端服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  取值范围： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  [不支持QUIC_CID算法。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
 
@@ -307,7 +307,7 @@ class Pool:
 
     @lb_algorithm.setter
     def lb_algorithm(self, lb_algorithm):
-        """Sets the lb_algorithm of this Pool.
+        r"""Sets the lb_algorithm of this Pool.
 
         参数解释：后端服务器组的负载均衡算法。  约束限制： - 当该字段的取值为SOURCE_IP或QUIC_CID时，后端服务器组绑定的后端服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。  取值范围： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  [不支持QUIC_CID算法。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
 
@@ -318,7 +318,7 @@ class Pool:
 
     @property
     def listeners(self):
-        """Gets the listeners of this Pool.
+        r"""Gets the listeners of this Pool.
 
         参数解释：后端服务器组关联的监听器ID列表。
 
@@ -329,7 +329,7 @@ class Pool:
 
     @listeners.setter
     def listeners(self, listeners):
-        """Sets the listeners of this Pool.
+        r"""Sets the listeners of this Pool.
 
         参数解释：后端服务器组关联的监听器ID列表。
 
@@ -340,7 +340,7 @@ class Pool:
 
     @property
     def loadbalancers(self):
-        """Gets the loadbalancers of this Pool.
+        r"""Gets the loadbalancers of this Pool.
 
         参数解释：后端服务器组关联的负载均衡器ID列表。
 
@@ -351,7 +351,7 @@ class Pool:
 
     @loadbalancers.setter
     def loadbalancers(self, loadbalancers):
-        """Sets the loadbalancers of this Pool.
+        r"""Sets the loadbalancers of this Pool.
 
         参数解释：后端服务器组关联的负载均衡器ID列表。
 
@@ -362,7 +362,7 @@ class Pool:
 
     @property
     def members(self):
-        """Gets the members of this Pool.
+        r"""Gets the members of this Pool.
 
         参数解释：后端服务器组中的后端服务器ID列表。
 
@@ -373,7 +373,7 @@ class Pool:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this Pool.
+        r"""Sets the members of this Pool.
 
         参数解释：后端服务器组中的后端服务器ID列表。
 
@@ -384,7 +384,7 @@ class Pool:
 
     @property
     def name(self):
-        """Gets the name of this Pool.
+        r"""Gets the name of this Pool.
 
         参数解释：后端服务器组的名称。
 
@@ -395,7 +395,7 @@ class Pool:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Pool.
+        r"""Sets the name of this Pool.
 
         参数解释：后端服务器组的名称。
 
@@ -406,7 +406,7 @@ class Pool:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Pool.
+        r"""Gets the project_id of this Pool.
 
         参数解释：后端服务器组所在的项目ID。
 
@@ -417,7 +417,7 @@ class Pool:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Pool.
+        r"""Sets the project_id of this Pool.
 
         参数解释：后端服务器组所在的项目ID。
 
@@ -428,7 +428,7 @@ class Pool:
 
     @property
     def protocol(self):
-        """Gets the protocol of this Pool.
+        r"""Gets the protocol of this Pool.
 
         参数解释：后端服务器组的后端协议。  约束限制： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时pool的protocol必须为TCP。 [- listener的protocol为IP时，pool的protocol必须为IP。](tag:hws_eu) - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP、HTTPS或GRPC。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。 - listener的protocol为QUIC时，pool的protocol必须为HTTP、HTTPS或GRPC。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP。 - 若pool的protocol为QUIC，则必须开启session_persistence且type为SOURCE_IP。 - 若pool的protocol为GRPC，关联监听器必须开启HTTP2。 - 若pool的protocol为TCP,则pool的ip_version字段取值必须是4。  取值范围：TCP、UDP、[IP、](tag:hws_eu)TLS、GRPC、HTTP、HTTPS和QUIC。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
@@ -439,7 +439,7 @@ class Pool:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this Pool.
+        r"""Sets the protocol of this Pool.
 
         参数解释：后端服务器组的后端协议。  约束限制： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC。 - listener的protocol为TCP时pool的protocol必须为TCP。 [- listener的protocol为IP时，pool的protocol必须为IP。](tag:hws_eu) - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP、HTTPS或GRPC。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。 - listener的protocol为QUIC时，pool的protocol必须为HTTP、HTTPS或GRPC。 - listener的protocol为TLS时，pool的protocol必须为TLS或TCP。 - 若pool的protocol为QUIC，则必须开启session_persistence且type为SOURCE_IP。 - 若pool的protocol为GRPC，关联监听器必须开启HTTP2。 - 若pool的protocol为TCP,则pool的ip_version字段取值必须是4。  取值范围：TCP、UDP、[IP、](tag:hws_eu)TLS、GRPC、HTTP、HTTPS和QUIC。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
@@ -450,7 +450,7 @@ class Pool:
 
     @property
     def session_persistence(self):
-        """Gets the session_persistence of this Pool.
+        r"""Gets the session_persistence of this Pool.
 
         :return: The session_persistence of this Pool.
         :rtype: :class:`huaweicloudsdkelb.v3.SessionPersistence`
@@ -459,7 +459,7 @@ class Pool:
 
     @session_persistence.setter
     def session_persistence(self, session_persistence):
-        """Sets the session_persistence of this Pool.
+        r"""Sets the session_persistence of this Pool.
 
         :param session_persistence: The session_persistence of this Pool.
         :type session_persistence: :class:`huaweicloudsdkelb.v3.SessionPersistence`
@@ -468,7 +468,7 @@ class Pool:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this Pool.
+        r"""Gets the ip_version of this Pool.
 
         参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
 
@@ -479,7 +479,7 @@ class Pool:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this Pool.
+        r"""Sets the ip_version of this Pool.
 
         参数解释：后端服务器组支持的IP版本。  [取值范围： - 共享型：固定为v4； - 独享型：取值dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs)  [取值范围：dualstack、v4。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt)
 
@@ -490,7 +490,7 @@ class Pool:
 
     @property
     def slow_start(self):
-        """Gets the slow_start of this Pool.
+        r"""Gets the slow_start of this Pool.
 
         :return: The slow_start of this Pool.
         :rtype: :class:`huaweicloudsdkelb.v3.SlowStart`
@@ -499,7 +499,7 @@ class Pool:
 
     @slow_start.setter
     def slow_start(self, slow_start):
-        """Sets the slow_start of this Pool.
+        r"""Sets the slow_start of this Pool.
 
         :param slow_start: The slow_start of this Pool.
         :type slow_start: :class:`huaweicloudsdkelb.v3.SlowStart`
@@ -508,7 +508,7 @@ class Pool:
 
     @property
     def member_deletion_protection_enable(self):
-        """Gets the member_deletion_protection_enable of this Pool.
+        r"""Gets the member_deletion_protection_enable of this Pool.
 
         参数解释：是否开启误删保护。  取值范围：false不开启，true开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -519,7 +519,7 @@ class Pool:
 
     @member_deletion_protection_enable.setter
     def member_deletion_protection_enable(self, member_deletion_protection_enable):
-        """Sets the member_deletion_protection_enable of this Pool.
+        r"""Sets the member_deletion_protection_enable of this Pool.
 
         参数解释：是否开启误删保护。  取值范围：false不开启，true开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -530,7 +530,7 @@ class Pool:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Pool.
+        r"""Gets the created_at of this Pool.
 
         参数解释：创建时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
@@ -541,7 +541,7 @@ class Pool:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Pool.
+        r"""Sets the created_at of this Pool.
 
         参数解释：创建时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
@@ -552,7 +552,7 @@ class Pool:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Pool.
+        r"""Gets the updated_at of this Pool.
 
         参数解释：更新时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
@@ -563,7 +563,7 @@ class Pool:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Pool.
+        r"""Sets the updated_at of this Pool.
 
         参数解释：更新时间。  取值范围：格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
@@ -574,7 +574,7 @@ class Pool:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this Pool.
+        r"""Gets the vpc_id of this Pool.
 
         参数解释：后端服务器组关联的虚拟私有云的ID。
 
@@ -585,7 +585,7 @@ class Pool:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this Pool.
+        r"""Sets the vpc_id of this Pool.
 
         参数解释：后端服务器组关联的虚拟私有云的ID。
 
@@ -596,7 +596,7 @@ class Pool:
 
     @property
     def type(self):
-        """Gets the type of this Pool.
+        r"""Gets the type of this Pool.
 
         参数解释：后端服务器组的类型。  取值范围： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)] - 空字符串（\"\"）：允许任意类型的后端
 
@@ -607,7 +607,7 @@ class Pool:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Pool.
+        r"""Sets the type of this Pool.
 
         参数解释：后端服务器组的类型。  取值范围： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。[pool的protocol为IP时，type不允许设置为ip。](tag:hws_eu)] - 空字符串（\"\"）：允许任意类型的后端
 
@@ -618,7 +618,7 @@ class Pool:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this Pool.
+        r"""Gets the protection_status of this Pool.
 
         参数解释：修改保护状态,。  取值范围： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。  默认取值：nonProtection
 
@@ -629,7 +629,7 @@ class Pool:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this Pool.
+        r"""Sets the protection_status of this Pool.
 
         参数解释：修改保护状态,。  取值范围： - nonProtection: 不保护。 - consoleProtection: 控制台修改保护。  默认取值：nonProtection
 
@@ -640,7 +640,7 @@ class Pool:
 
     @property
     def protection_reason(self):
-        """Gets the protection_reason of this Pool.
+        r"""Gets the protection_reason of this Pool.
 
         参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
@@ -651,7 +651,7 @@ class Pool:
 
     @protection_reason.setter
     def protection_reason(self, protection_reason):
-        """Sets the protection_reason of this Pool.
+        r"""Sets the protection_reason of this Pool.
 
         参数解释：设置保护的原因。作为protection_status的转态设置的原因。  约束限制：仅当protection_status为consoleProtection时有效。  取值范围：除'<'和'>'外通用Unicode字符集字符，最大255个字符。
 
@@ -662,7 +662,7 @@ class Pool:
 
     @property
     def any_port_enable(self):
-        """Gets the any_port_enable of this Pool.
+        r"""Gets the any_port_enable of this Pool.
 
         参数解释：后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  约束限制： - 仅QUIC,TCP,UDP的pool支持。
 
@@ -673,7 +673,7 @@ class Pool:
 
     @any_port_enable.setter
     def any_port_enable(self, any_port_enable):
-        """Sets the any_port_enable of this Pool.
+        r"""Sets the any_port_enable of this Pool.
 
         参数解释：后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。关闭后，请求会转发给后端服务器protocol_port字段指定端口。取值：false不开启，true开启。  约束限制： - 仅QUIC,TCP,UDP的pool支持。
 
@@ -684,7 +684,7 @@ class Pool:
 
     @property
     def connection_drain(self):
-        """Gets the connection_drain of this Pool.
+        r"""Gets the connection_drain of this Pool.
 
         :return: The connection_drain of this Pool.
         :rtype: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
@@ -693,7 +693,7 @@ class Pool:
 
     @connection_drain.setter
     def connection_drain(self, connection_drain):
-        """Sets the connection_drain of this Pool.
+        r"""Sets the connection_drain of this Pool.
 
         :param connection_drain: The connection_drain of this Pool.
         :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
@@ -702,7 +702,7 @@ class Pool:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Pool.
+        r"""Gets the enterprise_project_id of this Pool.
 
         参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -713,7 +713,7 @@ class Pool:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Pool.
+        r"""Sets the enterprise_project_id of this Pool.
 
         参数解释：IP地址组所在的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -724,7 +724,7 @@ class Pool:
 
     @property
     def pool_health(self):
-        """Gets the pool_health of this Pool.
+        r"""Gets the pool_health of this Pool.
 
         :return: The pool_health of this Pool.
         :rtype: :class:`huaweicloudsdkelb.v3.PoolHealth`
@@ -733,7 +733,7 @@ class Pool:
 
     @pool_health.setter
     def pool_health(self, pool_health):
-        """Sets the pool_health of this Pool.
+        r"""Sets the pool_health of this Pool.
 
         :param pool_health: The pool_health of this Pool.
         :type pool_health: :class:`huaweicloudsdkelb.v3.PoolHealth`
@@ -742,7 +742,7 @@ class Pool:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this Pool.
+        r"""Gets the public_border_group of this Pool.
 
         参数解释：网络公共边界组，如：center
 
@@ -753,7 +753,7 @@ class Pool:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this Pool.
+        r"""Sets the public_border_group of this Pool.
 
         参数解释：网络公共边界组，如：center
 
@@ -764,7 +764,7 @@ class Pool:
 
     @property
     def quic_cid_hash_strategy(self):
-        """Gets the quic_cid_hash_strategy of this Pool.
+        r"""Gets the quic_cid_hash_strategy of this Pool.
 
         :return: The quic_cid_hash_strategy of this Pool.
         :rtype: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
@@ -773,7 +773,7 @@ class Pool:
 
     @quic_cid_hash_strategy.setter
     def quic_cid_hash_strategy(self, quic_cid_hash_strategy):
-        """Sets the quic_cid_hash_strategy of this Pool.
+        r"""Sets the quic_cid_hash_strategy of this Pool.
 
         :param quic_cid_hash_strategy: The quic_cid_hash_strategy of this Pool.
         :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`

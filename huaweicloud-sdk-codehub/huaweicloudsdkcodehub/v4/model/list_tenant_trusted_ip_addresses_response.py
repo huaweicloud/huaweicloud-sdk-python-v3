@@ -28,7 +28,7 @@ class ListTenantTrustedIpAddressesResponse(SdkResponse):
     }
 
     def __init__(self, body=None, x_total=None):
-        """ListTenantTrustedIpAddressesResponse
+        r"""ListTenantTrustedIpAddressesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTenantTrustedIpAddressesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListTenantTrustedIpAddressesResponse.
+        r"""Gets the body of this ListTenantTrustedIpAddressesResponse.
 
         租户ip白名单列表
 
@@ -62,7 +62,7 @@ class ListTenantTrustedIpAddressesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTenantTrustedIpAddressesResponse.
+        r"""Sets the body of this ListTenantTrustedIpAddressesResponse.
 
         租户ip白名单列表
 
@@ -73,7 +73,7 @@ class ListTenantTrustedIpAddressesResponse(SdkResponse):
 
     @property
     def x_total(self):
-        """Gets the x_total of this ListTenantTrustedIpAddressesResponse.
+        r"""Gets the x_total of this ListTenantTrustedIpAddressesResponse.
 
         :return: The x_total of this ListTenantTrustedIpAddressesResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListTenantTrustedIpAddressesResponse(SdkResponse):
 
     @x_total.setter
     def x_total(self, x_total):
-        """Sets the x_total of this ListTenantTrustedIpAddressesResponse.
+        r"""Sets the x_total of this ListTenantTrustedIpAddressesResponse.
 
         :param x_total: The x_total of this ListTenantTrustedIpAddressesResponse.
         :type x_total: str

@@ -29,7 +29,7 @@ class RelevanceQapair:
     }
 
     def __init__(self, link=None, question=None, qa_pair_id=None):
-        """RelevanceQapair
+        r"""RelevanceQapair
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RelevanceQapair:
 
     @property
     def link(self):
-        """Gets the link of this RelevanceQapair.
+        r"""Gets the link of this RelevanceQapair.
 
         链接
 
@@ -68,7 +68,7 @@ class RelevanceQapair:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this RelevanceQapair.
+        r"""Sets the link of this RelevanceQapair.
 
         链接
 
@@ -79,7 +79,7 @@ class RelevanceQapair:
 
     @property
     def question(self):
-        """Gets the question of this RelevanceQapair.
+        r"""Gets the question of this RelevanceQapair.
 
         标准问题
 
@@ -90,7 +90,7 @@ class RelevanceQapair:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this RelevanceQapair.
+        r"""Sets the question of this RelevanceQapair.
 
         标准问题
 
@@ -101,7 +101,7 @@ class RelevanceQapair:
 
     @property
     def qa_pair_id(self):
-        """Gets the qa_pair_id of this RelevanceQapair.
+        r"""Gets the qa_pair_id of this RelevanceQapair.
 
         标准问题Id
 
@@ -112,7 +112,7 @@ class RelevanceQapair:
 
     @qa_pair_id.setter
     def qa_pair_id(self, qa_pair_id):
-        """Sets the qa_pair_id of this RelevanceQapair.
+        r"""Sets the qa_pair_id of this RelevanceQapair.
 
         标准问题Id
 

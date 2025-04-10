@@ -26,7 +26,7 @@ class CreateCssClusterResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateCssClusterResponse
+        r"""CreateCssClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateCssClusterResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateCssClusterResponse.
+        r"""Gets the id of this CreateCssClusterResponse.
 
         css集群id
 
@@ -55,7 +55,7 @@ class CreateCssClusterResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateCssClusterResponse.
+        r"""Sets the id of this CreateCssClusterResponse.
 
         css集群id
 

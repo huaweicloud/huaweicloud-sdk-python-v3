@@ -29,7 +29,7 @@ class CheckDomainPermissionForAgencyRequest:
     }
 
     def __init__(self, domain_id=None, agency_id=None, role_id=None):
-        """CheckDomainPermissionForAgencyRequest
+        r"""CheckDomainPermissionForAgencyRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CheckDomainPermissionForAgencyRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CheckDomainPermissionForAgencyRequest.
+        r"""Gets the domain_id of this CheckDomainPermissionForAgencyRequest.
 
         委托方账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -65,7 +65,7 @@ class CheckDomainPermissionForAgencyRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CheckDomainPermissionForAgencyRequest.
+        r"""Sets the domain_id of this CheckDomainPermissionForAgencyRequest.
 
         委托方账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -76,7 +76,7 @@ class CheckDomainPermissionForAgencyRequest:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this CheckDomainPermissionForAgencyRequest.
+        r"""Gets the agency_id of this CheckDomainPermissionForAgencyRequest.
 
         委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -87,7 +87,7 @@ class CheckDomainPermissionForAgencyRequest:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this CheckDomainPermissionForAgencyRequest.
+        r"""Sets the agency_id of this CheckDomainPermissionForAgencyRequest.
 
         委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -98,7 +98,7 @@ class CheckDomainPermissionForAgencyRequest:
 
     @property
     def role_id(self):
-        """Gets the role_id of this CheckDomainPermissionForAgencyRequest.
+        r"""Gets the role_id of this CheckDomainPermissionForAgencyRequest.
 
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
@@ -109,7 +109,7 @@ class CheckDomainPermissionForAgencyRequest:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this CheckDomainPermissionForAgencyRequest.
+        r"""Sets the role_id of this CheckDomainPermissionForAgencyRequest.
 
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 

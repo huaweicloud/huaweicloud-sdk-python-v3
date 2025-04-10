@@ -27,7 +27,7 @@ class JobResourcesGroup:
     }
 
     def __init__(self, name=None, resources=None):
-        """JobResourcesGroup
+        r"""JobResourcesGroup
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class JobResourcesGroup:
 
     @property
     def name(self):
-        """Gets the name of this JobResourcesGroup.
+        r"""Gets the name of this JobResourcesGroup.
 
         用户组名称。
 
@@ -61,7 +61,7 @@ class JobResourcesGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobResourcesGroup.
+        r"""Sets the name of this JobResourcesGroup.
 
         用户组名称。
 
@@ -72,7 +72,7 @@ class JobResourcesGroup:
 
     @property
     def resources(self):
-        """Gets the resources of this JobResourcesGroup.
+        r"""Gets the resources of this JobResourcesGroup.
 
         用户组资源。
 
@@ -83,7 +83,7 @@ class JobResourcesGroup:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this JobResourcesGroup.
+        r"""Sets the resources of this JobResourcesGroup.
 
         用户组资源。
 

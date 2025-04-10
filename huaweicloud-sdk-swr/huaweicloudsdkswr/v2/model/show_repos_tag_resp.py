@@ -57,7 +57,7 @@ class ShowReposTagResp:
     }
 
     def __init__(self, id=None, repo_id=None, tag=None, image_id=None, manifest=None, digest=None, schema=None, path=None, internal_path=None, size=None, is_trusted=None, created=None, updated=None, deleted=None, domain_id=None, scanned=None, tag_type=None):
-        """ShowReposTagResp
+        r"""ShowReposTagResp
 
         The model defined in huaweicloud sdk
 
@@ -138,7 +138,7 @@ class ShowReposTagResp:
 
     @property
     def id(self):
-        """Gets the id of this ShowReposTagResp.
+        r"""Gets the id of this ShowReposTagResp.
 
         tag编号
 
@@ -149,7 +149,7 @@ class ShowReposTagResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowReposTagResp.
+        r"""Sets the id of this ShowReposTagResp.
 
         tag编号
 
@@ -160,7 +160,7 @@ class ShowReposTagResp:
 
     @property
     def repo_id(self):
-        """Gets the repo_id of this ShowReposTagResp.
+        r"""Gets the repo_id of this ShowReposTagResp.
 
         仓库编号
 
@@ -171,7 +171,7 @@ class ShowReposTagResp:
 
     @repo_id.setter
     def repo_id(self, repo_id):
-        """Sets the repo_id of this ShowReposTagResp.
+        r"""Sets the repo_id of this ShowReposTagResp.
 
         仓库编号
 
@@ -182,7 +182,7 @@ class ShowReposTagResp:
 
     @property
     def tag(self):
-        """Gets the tag of this ShowReposTagResp.
+        r"""Gets the tag of this ShowReposTagResp.
 
         Tag版本名称
 
@@ -193,7 +193,7 @@ class ShowReposTagResp:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ShowReposTagResp.
+        r"""Sets the tag of this ShowReposTagResp.
 
         Tag版本名称
 
@@ -204,7 +204,7 @@ class ShowReposTagResp:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ShowReposTagResp.
+        r"""Gets the image_id of this ShowReposTagResp.
 
         镜像id
 
@@ -215,7 +215,7 @@ class ShowReposTagResp:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ShowReposTagResp.
+        r"""Sets the image_id of this ShowReposTagResp.
 
         镜像id
 
@@ -226,7 +226,7 @@ class ShowReposTagResp:
 
     @property
     def manifest(self):
-        """Gets the manifest of this ShowReposTagResp.
+        r"""Gets the manifest of this ShowReposTagResp.
 
         镜像manifest
 
@@ -237,7 +237,7 @@ class ShowReposTagResp:
 
     @manifest.setter
     def manifest(self, manifest):
-        """Sets the manifest of this ShowReposTagResp.
+        r"""Sets the manifest of this ShowReposTagResp.
 
         镜像manifest
 
@@ -248,7 +248,7 @@ class ShowReposTagResp:
 
     @property
     def digest(self):
-        """Gets the digest of this ShowReposTagResp.
+        r"""Gets the digest of this ShowReposTagResp.
 
         镜像hash值
 
@@ -259,7 +259,7 @@ class ShowReposTagResp:
 
     @digest.setter
     def digest(self, digest):
-        """Sets the digest of this ShowReposTagResp.
+        r"""Sets the digest of this ShowReposTagResp.
 
         镜像hash值
 
@@ -270,7 +270,7 @@ class ShowReposTagResp:
 
     @property
     def schema(self):
-        """Gets the schema of this ShowReposTagResp.
+        r"""Gets the schema of this ShowReposTagResp.
 
         docker协议版本，值为1或2
 
@@ -281,7 +281,7 @@ class ShowReposTagResp:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this ShowReposTagResp.
+        r"""Sets the schema of this ShowReposTagResp.
 
         docker协议版本，值为1或2
 
@@ -292,7 +292,7 @@ class ShowReposTagResp:
 
     @property
     def path(self):
-        """Gets the path of this ShowReposTagResp.
+        r"""Gets the path of this ShowReposTagResp.
 
         镜像pull地址，格式为swr.cn-north-1.myhuaweicloud.com/namespace/repository:tag
 
@@ -303,7 +303,7 @@ class ShowReposTagResp:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowReposTagResp.
+        r"""Sets the path of this ShowReposTagResp.
 
         镜像pull地址，格式为swr.cn-north-1.myhuaweicloud.com/namespace/repository:tag
 
@@ -314,7 +314,7 @@ class ShowReposTagResp:
 
     @property
     def internal_path(self):
-        """Gets the internal_path of this ShowReposTagResp.
+        r"""Gets the internal_path of this ShowReposTagResp.
 
         cce集群内镜像pull路径，格式为 10.125.0.198:20202/namespace/repository:tag
 
@@ -325,7 +325,7 @@ class ShowReposTagResp:
 
     @internal_path.setter
     def internal_path(self, internal_path):
-        """Sets the internal_path of this ShowReposTagResp.
+        r"""Sets the internal_path of this ShowReposTagResp.
 
         cce集群内镜像pull路径，格式为 10.125.0.198:20202/namespace/repository:tag
 
@@ -336,7 +336,7 @@ class ShowReposTagResp:
 
     @property
     def size(self):
-        """Gets the size of this ShowReposTagResp.
+        r"""Gets the size of this ShowReposTagResp.
 
         镜像大小，0 ~ 9223372036854775807
 
@@ -347,7 +347,7 @@ class ShowReposTagResp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowReposTagResp.
+        r"""Sets the size of this ShowReposTagResp.
 
         镜像大小，0 ~ 9223372036854775807
 
@@ -358,7 +358,7 @@ class ShowReposTagResp:
 
     @property
     def is_trusted(self):
-        """Gets the is_trusted of this ShowReposTagResp.
+        r"""Gets the is_trusted of this ShowReposTagResp.
 
         默认值为false
 
@@ -369,7 +369,7 @@ class ShowReposTagResp:
 
     @is_trusted.setter
     def is_trusted(self, is_trusted):
-        """Sets the is_trusted of this ShowReposTagResp.
+        r"""Sets the is_trusted of this ShowReposTagResp.
 
         默认值为false
 
@@ -380,7 +380,7 @@ class ShowReposTagResp:
 
     @property
     def created(self):
-        """Gets the created of this ShowReposTagResp.
+        r"""Gets the created of this ShowReposTagResp.
 
         镜像创建时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -391,7 +391,7 @@ class ShowReposTagResp:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowReposTagResp.
+        r"""Sets the created of this ShowReposTagResp.
 
         镜像创建时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -402,7 +402,7 @@ class ShowReposTagResp:
 
     @property
     def updated(self):
-        """Gets the updated of this ShowReposTagResp.
+        r"""Gets the updated of this ShowReposTagResp.
 
         镜像更新时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -413,7 +413,7 @@ class ShowReposTagResp:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowReposTagResp.
+        r"""Sets the updated of this ShowReposTagResp.
 
         镜像更新时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -424,7 +424,7 @@ class ShowReposTagResp:
 
     @property
     def deleted(self):
-        """Gets the deleted of this ShowReposTagResp.
+        r"""Gets the deleted of this ShowReposTagResp.
 
         镜像删除时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -435,7 +435,7 @@ class ShowReposTagResp:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this ShowReposTagResp.
+        r"""Sets the deleted of this ShowReposTagResp.
 
         镜像删除时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -446,7 +446,7 @@ class ShowReposTagResp:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowReposTagResp.
+        r"""Gets the domain_id of this ShowReposTagResp.
 
         帐号ID
 
@@ -457,7 +457,7 @@ class ShowReposTagResp:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowReposTagResp.
+        r"""Sets the domain_id of this ShowReposTagResp.
 
         帐号ID
 
@@ -468,7 +468,7 @@ class ShowReposTagResp:
 
     @property
     def scanned(self):
-        """Gets the scanned of this ShowReposTagResp.
+        r"""Gets the scanned of this ShowReposTagResp.
 
         镜像是否被扫描过
 
@@ -479,7 +479,7 @@ class ShowReposTagResp:
 
     @scanned.setter
     def scanned(self, scanned):
-        """Sets the scanned of this ShowReposTagResp.
+        r"""Sets the scanned of this ShowReposTagResp.
 
         镜像是否被扫描过
 
@@ -490,7 +490,7 @@ class ShowReposTagResp:
 
     @property
     def tag_type(self):
-        """Gets the tag_type of this ShowReposTagResp.
+        r"""Gets the tag_type of this ShowReposTagResp.
 
         0：manifest类型；1：manifest list类型
 
@@ -501,7 +501,7 @@ class ShowReposTagResp:
 
     @tag_type.setter
     def tag_type(self, tag_type):
-        """Sets the tag_type of this ShowReposTagResp.
+        r"""Sets the tag_type of this ShowReposTagResp.
 
         0：manifest类型；1：manifest list类型
 

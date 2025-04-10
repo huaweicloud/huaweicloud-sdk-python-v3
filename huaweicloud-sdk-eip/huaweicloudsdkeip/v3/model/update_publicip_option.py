@@ -31,7 +31,7 @@ class UpdatePublicipOption:
     }
 
     def __init__(self, alias=None, description=None, associate_instance_type=None, associate_instance_id=None):
-        """UpdatePublicipOption
+        r"""UpdatePublicipOption
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdatePublicipOption:
 
     @property
     def alias(self):
-        """Gets the alias of this UpdatePublicipOption.
+        r"""Gets the alias of this UpdatePublicipOption.
 
         功能说明：公网IP的名称。
 
@@ -75,7 +75,7 @@ class UpdatePublicipOption:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this UpdatePublicipOption.
+        r"""Sets the alias of this UpdatePublicipOption.
 
         功能说明：公网IP的名称。
 
@@ -86,7 +86,7 @@ class UpdatePublicipOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdatePublicipOption.
+        r"""Gets the description of this UpdatePublicipOption.
 
         功能说明：公网IP的描述信息 取值范围：0-256长度的字符串，不支持特殊字符<>
 
@@ -97,7 +97,7 @@ class UpdatePublicipOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePublicipOption.
+        r"""Sets the description of this UpdatePublicipOption.
 
         功能说明：公网IP的描述信息 取值范围：0-256长度的字符串，不支持特殊字符<>
 
@@ -108,7 +108,7 @@ class UpdatePublicipOption:
 
     @property
     def associate_instance_type(self):
-        """Gets the associate_instance_type of this UpdatePublicipOption.
+        r"""Gets the associate_instance_type of this UpdatePublicipOption.
 
         功能说明：端口所属实例类型 取值范围：PORT、NATGW、VPN、ELB、null 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例。 约束：associate_instance_type和associate_instance_id都为null时表示解绑实例，通过APIE调用需要切换为文本输入方式输入null值，可参考解绑请求实例。 约束：双栈公网IP不允许修改绑定的实例。
 
@@ -119,7 +119,7 @@ class UpdatePublicipOption:
 
     @associate_instance_type.setter
     def associate_instance_type(self, associate_instance_type):
-        """Sets the associate_instance_type of this UpdatePublicipOption.
+        r"""Sets the associate_instance_type of this UpdatePublicipOption.
 
         功能说明：端口所属实例类型 取值范围：PORT、NATGW、VPN、ELB、null 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例。 约束：associate_instance_type和associate_instance_id都为null时表示解绑实例，通过APIE调用需要切换为文本输入方式输入null值，可参考解绑请求实例。 约束：双栈公网IP不允许修改绑定的实例。
 
@@ -130,7 +130,7 @@ class UpdatePublicipOption:
 
     @property
     def associate_instance_id(self):
-        """Gets the associate_instance_id of this UpdatePublicipOption.
+        r"""Gets the associate_instance_id of this UpdatePublicipOption.
 
         功能说明：端口所属实例ID，例如RDS实例ID 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例。 约束：associate_instance_type和associate_instance_id都为null时表示解绑实例，通过APIE调用需要切换为文本输入方式输入null值，可参考解绑请求实例。 约束：双栈公网IP不允许修改绑定的实例。
 
@@ -141,7 +141,7 @@ class UpdatePublicipOption:
 
     @associate_instance_id.setter
     def associate_instance_id(self, associate_instance_id):
-        """Sets the associate_instance_id of this UpdatePublicipOption.
+        r"""Sets the associate_instance_id of this UpdatePublicipOption.
 
         功能说明：端口所属实例ID，例如RDS实例ID 约束：associate_instance_type和associate_instance_id都不为空时表示绑定实例。 约束：associate_instance_type和associate_instance_id都为null时表示解绑实例，通过APIE调用需要切换为文本输入方式输入null值，可参考解绑请求实例。 约束：双栈公网IP不允许修改绑定的实例。
 

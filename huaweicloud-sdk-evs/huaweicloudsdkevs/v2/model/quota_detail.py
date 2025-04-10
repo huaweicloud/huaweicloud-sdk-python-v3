@@ -29,7 +29,7 @@ class QuotaDetail:
     }
 
     def __init__(self, in_use=None, limit=None, reserved=None):
-        """QuotaDetail
+        r"""QuotaDetail
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class QuotaDetail:
 
     @property
     def in_use(self):
-        """Gets the in_use of this QuotaDetail.
+        r"""Gets the in_use of this QuotaDetail.
 
         已使用的数量。
 
@@ -65,7 +65,7 @@ class QuotaDetail:
 
     @in_use.setter
     def in_use(self, in_use):
-        """Sets the in_use of this QuotaDetail.
+        r"""Sets the in_use of this QuotaDetail.
 
         已使用的数量。
 
@@ -76,7 +76,7 @@ class QuotaDetail:
 
     @property
     def limit(self):
-        """Gets the limit of this QuotaDetail.
+        r"""Gets the limit of this QuotaDetail.
 
         最大的数量。
 
@@ -87,7 +87,7 @@ class QuotaDetail:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QuotaDetail.
+        r"""Sets the limit of this QuotaDetail.
 
         最大的数量。
 
@@ -98,7 +98,7 @@ class QuotaDetail:
 
     @property
     def reserved(self):
-        """Gets the reserved of this QuotaDetail.
+        r"""Gets the reserved of this QuotaDetail.
 
         预留属性。
 
@@ -109,7 +109,7 @@ class QuotaDetail:
 
     @reserved.setter
     def reserved(self, reserved):
-        """Sets the reserved of this QuotaDetail.
+        r"""Sets the reserved of this QuotaDetail.
 
         预留属性。
 

@@ -26,7 +26,7 @@ class SearchApprovalsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """SearchApprovalsResponse
+        r"""SearchApprovalsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SearchApprovalsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchApprovalsResponse.
+        r"""Gets the data of this SearchApprovalsResponse.
 
         :return: The data of this SearchApprovalsResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchApprovalsResultData`
@@ -53,7 +53,7 @@ class SearchApprovalsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchApprovalsResponse.
+        r"""Sets the data of this SearchApprovalsResponse.
 
         :param data: The data of this SearchApprovalsResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.SearchApprovalsResultData`

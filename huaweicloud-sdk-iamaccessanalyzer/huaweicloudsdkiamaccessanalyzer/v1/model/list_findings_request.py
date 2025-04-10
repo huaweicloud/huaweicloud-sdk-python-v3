@@ -27,7 +27,7 @@ class ListFindingsRequest:
     }
 
     def __init__(self, analyzer_id=None, body=None):
-        """ListFindingsRequest
+        r"""ListFindingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListFindingsRequest:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this ListFindingsRequest.
+        r"""Gets the analyzer_id of this ListFindingsRequest.
 
         分析器的唯一标识符。
 
@@ -60,7 +60,7 @@ class ListFindingsRequest:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this ListFindingsRequest.
+        r"""Sets the analyzer_id of this ListFindingsRequest.
 
         分析器的唯一标识符。
 
@@ -71,7 +71,7 @@ class ListFindingsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListFindingsRequest.
+        r"""Gets the body of this ListFindingsRequest.
 
         :return: The body of this ListFindingsRequest.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListFindingsReqBody`
@@ -80,7 +80,7 @@ class ListFindingsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListFindingsRequest.
+        r"""Sets the body of this ListFindingsRequest.
 
         :param body: The body of this ListFindingsRequest.
         :type body: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListFindingsReqBody`

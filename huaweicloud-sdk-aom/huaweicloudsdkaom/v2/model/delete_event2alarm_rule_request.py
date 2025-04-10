@@ -25,7 +25,7 @@ class DeleteEvent2alarmRuleRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteEvent2alarmRuleRequest
+        r"""DeleteEvent2alarmRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteEvent2alarmRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteEvent2alarmRuleRequest.
+        r"""Gets the body of this DeleteEvent2alarmRuleRequest.
 
         :return: The body of this DeleteEvent2alarmRuleRequest.
         :rtype: list[str]
@@ -52,7 +52,7 @@ class DeleteEvent2alarmRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteEvent2alarmRuleRequest.
+        r"""Sets the body of this DeleteEvent2alarmRuleRequest.
 
         :param body: The body of this DeleteEvent2alarmRuleRequest.
         :type body: list[str]

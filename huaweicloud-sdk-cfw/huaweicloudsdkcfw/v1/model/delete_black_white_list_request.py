@@ -29,7 +29,7 @@ class DeleteBlackWhiteListRequest:
     }
 
     def __init__(self, list_id=None, enterprise_project_id=None, fw_instance_id=None):
-        """DeleteBlackWhiteListRequest
+        r"""DeleteBlackWhiteListRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteBlackWhiteListRequest:
 
     @property
     def list_id(self):
-        """Gets the list_id of this DeleteBlackWhiteListRequest.
+        r"""Gets the list_id of this DeleteBlackWhiteListRequest.
 
         黑白名单列表id，可通过[查询黑白名单列表接口](ListBlackWhiteLists.xml)查询获得，通过返回值中的data.records.list_id（.表示各对象之间层级的区分）获得。
 
@@ -67,7 +67,7 @@ class DeleteBlackWhiteListRequest:
 
     @list_id.setter
     def list_id(self, list_id):
-        """Sets the list_id of this DeleteBlackWhiteListRequest.
+        r"""Sets the list_id of this DeleteBlackWhiteListRequest.
 
         黑白名单列表id，可通过[查询黑白名单列表接口](ListBlackWhiteLists.xml)查询获得，通过返回值中的data.records.list_id（.表示各对象之间层级的区分）获得。
 
@@ -78,7 +78,7 @@ class DeleteBlackWhiteListRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeleteBlackWhiteListRequest.
+        r"""Gets the enterprise_project_id of this DeleteBlackWhiteListRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -89,7 +89,7 @@ class DeleteBlackWhiteListRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeleteBlackWhiteListRequest.
+        r"""Sets the enterprise_project_id of this DeleteBlackWhiteListRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -100,7 +100,7 @@ class DeleteBlackWhiteListRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this DeleteBlackWhiteListRequest.
+        r"""Gets the fw_instance_id of this DeleteBlackWhiteListRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -111,7 +111,7 @@ class DeleteBlackWhiteListRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this DeleteBlackWhiteListRequest.
+        r"""Sets the fw_instance_id of this DeleteBlackWhiteListRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 

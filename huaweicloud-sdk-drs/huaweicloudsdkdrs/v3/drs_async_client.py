@@ -34,7 +34,7 @@ class DrsAsyncClient(Client):
         return client_builder
 
     def batch_change_data_async(self, request):
-        """批量数据加工
+        r"""批量数据加工
 
         数据复制服务支持对同步的对象进行加工，即可以为选择的对象添加规则。
         
@@ -101,7 +101,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_check_jobs_async(self, request):
-        """批量预检查
+        r"""批量预检查
 
         批量预检查，校验是否可进行迁移。
         
@@ -168,7 +168,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_check_results_async(self, request):
-        """批量查询预检查结果
+        r"""批量查询预检查结果
 
         批量查询任务的预检查结果。
         
@@ -235,7 +235,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_create_jobs_async(self, request):
-        """批量创建任务
+        r"""批量创建任务
 
         根据请求参数不同，可以批量创建实时迁移、实时同步、实时灾备任务。
         
@@ -302,7 +302,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_delete_jobs_async(self, request):
-        """批量结束任务或删除任务
+        r"""批量结束任务或删除任务
 
         批量结束任务或删除实时迁移、实时同步、实时灾备任务。
         
@@ -369,7 +369,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_list_job_details_async(self, request):
-        """批量查询任务详情
+        r"""批量查询任务详情
 
         根据任务ID批量查询任务详情。
         
@@ -436,7 +436,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_list_job_status_async(self, request):
-        """批量查询任务状态
+        r"""批量查询任务状态
 
         根据任务ID批量查询任务状态。
         
@@ -503,7 +503,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_list_progresses_async(self, request):
-        """批量查询任务进度
+        r"""批量查询任务进度
 
         根据任务ID批量查询全量进度、增量时延信息。
         
@@ -570,7 +570,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_list_rpos_and_rtos_async(self, request):
-        """批量查询RPO和RTO
+        r"""批量查询RPO和RTO
 
         批量查询RPO和RTO。
         
@@ -637,7 +637,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_list_struct_detail_async(self, request):
-        """批量查询灾备初始化对象详情
+        r"""批量查询灾备初始化对象详情
 
         根据任务ID批量查询灾备初始化对象详情。
         
@@ -706,7 +706,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_list_struct_process_async(self, request):
-        """批量查询灾备初始化进度
+        r"""批量查询灾备初始化进度
 
         根据任务ID批量查询灾备初始化进度，虚拟id不支持查询。
         
@@ -773,7 +773,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_reset_password_async(self, request):
-        """批量修改源库/目标库密码
+        r"""批量修改源库/目标库密码
 
         任务启动之后需要修改源库/目标库密码时调用此接口。
         
@@ -840,7 +840,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_restore_task_async(self, request):
-        """批量续传/重试
+        r"""批量续传/重试
 
         在迁移过程中由于不确定因素导致迁移任务失败，可通过重试功能，重新提交迁移任务。
         
@@ -907,7 +907,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_set_definer_async(self, request):
-        """批量设置definer
+        r"""批量设置definer
 
         批量设置Definer迁移是否迁移到到该用户下。
         - 选择是：迁移后，所有源数据库对象的Definer都会迁移至该用户下，其他用户需要授权后才具有数据库对象权限。
@@ -976,7 +976,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_set_objects_async(self, request):
-        """批量数据库对象选择
+        r"""批量数据库对象选择
 
         迁移之前，选择需要迁移的数据库或者表。
         
@@ -1043,7 +1043,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_set_policy_async(self, request):
-        """批量设置同步策略
+        r"""批量设置同步策略
 
         - 批量设置同步策略，包括冲突策略、过滤DROP Datase、对象同步范围。
         - 设置kafka同步策略
@@ -1111,7 +1111,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_set_smn_async(self, request):
-        """批量配置异常通知
+        r"""批量配置异常通知
 
         批量设置异常通知，已结束的任务不支持设置。
         - 支持选择已有的SMN主题和手动输入手机号、邮箱两种方式，具体根据自己使用情况选择
@@ -1179,7 +1179,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_set_speed_async(self, request):
-        """批量设置任务限速
+        r"""批量设置任务限速
 
         批量设置任务限速，任务创建成功后默认不限速。
         - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。
@@ -1248,7 +1248,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_show_params_async(self, request):
-        """批量获取数据库参数
+        r"""批量获取数据库参数
 
         在进行数据库迁移时，为了确保迁移成功后业务应用的使用不受影响，数据复制服务提供了参数对比功能帮助您进行源库和目标库参数一致性对比，此接口可以获取源库和目标库的数据库参数。
         
@@ -1315,7 +1315,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_start_jobs_async(self, request):
-        """批量启动任务
+        r"""批量启动任务
 
         批量启动实时迁移、同步、灾备任务。
         
@@ -1382,7 +1382,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_stop_jobs_async(self, request):
-        """批量暂停任务
+        r"""批量暂停任务
 
         批量暂停任务。
         
@@ -1449,7 +1449,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_switchover_async(self, request):
-        """批量主备倒换
+        r"""批量主备倒换
 
         批量主备倒换。
         
@@ -1516,7 +1516,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_update_job_async(self, request):
-        """批量修改任务
+        r"""批量修改任务
 
         批量修改任务名称或描述，设置异常通知信息。
         
@@ -1583,7 +1583,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_update_user_async(self, request):
-        """批量更新迁移用户信息
+        r"""批量更新迁移用户信息
 
         数据库的迁移过程中，迁移用户需要进行单独处理，该接口可以批量设置需要迁移的用户和角色。
         
@@ -1650,7 +1650,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_validate_clusters_connections_async(self, request):
-        """批量测试连接-集群模式
+        r"""批量测试连接-集群模式
 
         - 批量测试连接（集群模式）。
         - 主备任务测试连接
@@ -1718,7 +1718,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def batch_validate_connections_async(self, request):
-        """批量测试连接
+        r"""批量测试连接
 
         批量测试连接。
         
@@ -1785,7 +1785,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def create_compare_result_file_async(self, request):
-        """导出对比任务结果文件
+        r"""导出对比任务结果文件
 
         导出对比任务结果文件。
         
@@ -1856,7 +1856,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def create_compare_task_async(self, request):
-        """创建对比任务
+        r"""创建对比任务
 
         创建对比任务。
         
@@ -1923,7 +1923,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def create_data_level_table_compare_job_async(self, request):
-        """创建数据级表对比任务
+        r"""创建数据级表对比任务
 
         创建数据级表对比任务。
         
@@ -1992,7 +1992,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def create_object_level_compare_job_async(self, request):
-        """创建对象级对比任务
+        r"""创建对象级对比任务
 
         创建对象级对比任务。
         
@@ -2061,7 +2061,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def delete_compare_job_async(self, request):
-        """取消对比任务
+        r"""取消对比任务
 
         取消对比任务。
         
@@ -2130,7 +2130,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def download_compare_result_file_async(self, request):
-        """下载对比任务结果文件
+        r"""下载对比任务结果文件
 
         下载对比任务结果文件。
         
@@ -2205,7 +2205,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_available_node_types_async(self, request):
-        """查询可用的Node规格
+        r"""查询可用的Node规格
 
         查询可用的Node规格。
         
@@ -2280,7 +2280,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_available_zone_async(self, request):
-        """查询规格未售罄的可用区
+        r"""查询规格未售罄的可用区
 
         查询规格未售罄的可用区
         
@@ -2347,7 +2347,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_compare_result_async(self, request):
-        """查询对比结果
+        r"""查询对比结果
 
         查询对比结果。
         
@@ -2414,7 +2414,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_content_compare_detail_async(self, request):
-        """查询内容对比详情
+        r"""查询内容对比详情
 
         查询内容对比详情
         
@@ -2493,7 +2493,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_content_compare_difference_async(self, request):
-        """查询内容对比差异
+        r"""查询内容对比差异
 
         查询内容对比差异。
         
@@ -2570,7 +2570,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_content_compare_overview_async(self, request):
-        """查询内容对比总览
+        r"""查询内容对比总览
 
         查询内容对比总览。
         
@@ -2643,7 +2643,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_data_compare_detail_async(self, request):
-        """查询行数对比详情
+        r"""查询行数对比详情
 
         查询行数对比详情。
         
@@ -2726,7 +2726,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_data_compare_overview_async(self, request):
-        """查询行数对比总览
+        r"""查询行数对比总览
 
         查询行数对比总览。
         
@@ -2801,7 +2801,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_data_level_table_compare_jobs_async(self, request):
-        """查询数据级表对比任务列表
+        r"""查询数据级表对比任务列表
 
         查询数据级表对比任务列表。
         
@@ -2872,7 +2872,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_obeject_level_compare_detail_async(self, request):
-        """查询对象对比任务详情
+        r"""查询对象对比任务详情
 
         查询对象对比任务详情。
         
@@ -2947,7 +2947,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_obeject_level_compare_overview_async(self, request):
-        """查询对象对比任务概览
+        r"""查询对象对比任务概览
 
         查询对象对比任务概览。
         
@@ -3014,7 +3014,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def list_users_async(self, request):
-        """获取源库迁移用户列表
+        r"""获取源库迁移用户列表
 
         数据库的迁移过程中，迁移用户需要进行单独处理，该接口可以查询源库的用户信息。
         
@@ -3081,7 +3081,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_job_list_async(self, request):
-        """查询租户任务列表
+        r"""查询租户任务列表
 
         查询租户任务列表，可以根据引擎类型，网络类型，任务状态，任务名称，任务ID进行查询。
         
@@ -3148,7 +3148,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_monitoring_data_async(self, request):
-        """查询容灾监控数据
+        r"""查询容灾监控数据
 
         根据任务ID查询容灾监控数据。
         
@@ -3215,7 +3215,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def show_quotas_async(self, request):
-        """查询配额
+        r"""查询配额
 
         查询单租户在某一项目下DRS服务下的配额信息。
         
@@ -3280,7 +3280,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def start_promptly_data_level_table_compare_job_async(self, request):
-        """立即启动数据级表对比任务
+        r"""立即启动数据级表对比任务
 
         立即启动数据级表对比任务。
         
@@ -3349,7 +3349,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def update_params_async(self, request):
-        """修改数据库参数
+        r"""修改数据库参数
 
         修改数据库参数。
         
@@ -3418,7 +3418,7 @@ class DrsAsyncClient(Client):
         return http_info
 
     def update_tuning_params_async(self, request):
-        """高级设置
+        r"""高级设置
 
         修改调优参数的值。
         

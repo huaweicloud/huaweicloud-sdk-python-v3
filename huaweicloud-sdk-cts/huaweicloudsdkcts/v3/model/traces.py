@@ -73,7 +73,7 @@ class Traces:
     }
 
     def __init__(self, resource_id=None, trace_name=None, trace_rating=None, trace_type=None, request=None, response=None, code=None, api_version=None, message=None, record_time=None, trace_id=None, time=None, user=None, service_type=None, resource_type=None, source_ip=None, resource_name=None, request_id=None, location_info=None, endpoint=None, resource_url=None, enterprise_project_id=None, resource_account_id=None, read_only=None, operation_id=None):
-        """Traces
+        r"""Traces
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class Traces:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this Traces.
+        r"""Gets the resource_id of this Traces.
 
         标识事件对应的云服务资源ID。
 
@@ -222,7 +222,7 @@ class Traces:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this Traces.
+        r"""Sets the resource_id of this Traces.
 
         标识事件对应的云服务资源ID。
 
@@ -233,7 +233,7 @@ class Traces:
 
     @property
     def trace_name(self):
-        """Gets the trace_name of this Traces.
+        r"""Gets the trace_name of this Traces.
 
         标识查询事件列表对应的事件名称。由0-9,a-z,A-Z,'-','.','_',组成，长度为1～64个字符，且以首字符必须为字母。
 
@@ -244,7 +244,7 @@ class Traces:
 
     @trace_name.setter
     def trace_name(self, trace_name):
-        """Sets the trace_name of this Traces.
+        r"""Sets the trace_name of this Traces.
 
         标识查询事件列表对应的事件名称。由0-9,a-z,A-Z,'-','.','_',组成，长度为1～64个字符，且以首字符必须为字母。
 
@@ -255,7 +255,7 @@ class Traces:
 
     @property
     def trace_rating(self):
-        """Gets the trace_rating of this Traces.
+        r"""Gets the trace_rating of this Traces.
 
         标识事件等级，目前有三种：正常（normal），警告（warning），事故（incident）。
 
@@ -266,7 +266,7 @@ class Traces:
 
     @trace_rating.setter
     def trace_rating(self, trace_rating):
-        """Sets the trace_rating of this Traces.
+        r"""Sets the trace_rating of this Traces.
 
         标识事件等级，目前有三种：正常（normal），警告（warning），事故（incident）。
 
@@ -277,7 +277,7 @@ class Traces:
 
     @property
     def trace_type(self):
-        """Gets the trace_type of this Traces.
+        r"""Gets the trace_type of this Traces.
 
         标识事件发生源头类型，管理类事件主要包括API调用（ApiCall），Console页面调用（ConsoleAction）和系统间调用（SystemAction）。 数据类事件主要包括ObsSDK，ObsAPI。
 
@@ -288,7 +288,7 @@ class Traces:
 
     @trace_type.setter
     def trace_type(self, trace_type):
-        """Sets the trace_type of this Traces.
+        r"""Sets the trace_type of this Traces.
 
         标识事件发生源头类型，管理类事件主要包括API调用（ApiCall），Console页面调用（ConsoleAction）和系统间调用（SystemAction）。 数据类事件主要包括ObsSDK，ObsAPI。
 
@@ -299,7 +299,7 @@ class Traces:
 
     @property
     def request(self):
-        """Gets the request of this Traces.
+        r"""Gets the request of this Traces.
 
         标识事件对应接口请求内容，即资源操作请求体。
 
@@ -310,7 +310,7 @@ class Traces:
 
     @request.setter
     def request(self, request):
-        """Sets the request of this Traces.
+        r"""Sets the request of this Traces.
 
         标识事件对应接口请求内容，即资源操作请求体。
 
@@ -321,7 +321,7 @@ class Traces:
 
     @property
     def response(self):
-        """Gets the response of this Traces.
+        r"""Gets the response of this Traces.
 
         记录用户请求的响应，标识事件对应接口响应内容，即资源操作结果返回体。
 
@@ -332,7 +332,7 @@ class Traces:
 
     @response.setter
     def response(self, response):
-        """Sets the response of this Traces.
+        r"""Sets the response of this Traces.
 
         记录用户请求的响应，标识事件对应接口响应内容，即资源操作结果返回体。
 
@@ -343,7 +343,7 @@ class Traces:
 
     @property
     def code(self):
-        """Gets the code of this Traces.
+        r"""Gets the code of this Traces.
 
         记录用户请求的响应，标识事件对应接口返回的HTTP状态码。
 
@@ -354,7 +354,7 @@ class Traces:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this Traces.
+        r"""Sets the code of this Traces.
 
         记录用户请求的响应，标识事件对应接口返回的HTTP状态码。
 
@@ -365,7 +365,7 @@ class Traces:
 
     @property
     def api_version(self):
-        """Gets the api_version of this Traces.
+        r"""Gets the api_version of this Traces.
 
         标识事件对应的云服务接口版本。
 
@@ -376,7 +376,7 @@ class Traces:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this Traces.
+        r"""Sets the api_version of this Traces.
 
         标识事件对应的云服务接口版本。
 
@@ -387,7 +387,7 @@ class Traces:
 
     @property
     def message(self):
-        """Gets the message of this Traces.
+        r"""Gets the message of this Traces.
 
         标识其他云服务为此条事件添加的备注信息。
 
@@ -398,7 +398,7 @@ class Traces:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this Traces.
+        r"""Sets the message of this Traces.
 
         标识其他云服务为此条事件添加的备注信息。
 
@@ -409,7 +409,7 @@ class Traces:
 
     @property
     def record_time(self):
-        """Gets the record_time of this Traces.
+        r"""Gets the record_time of this Traces.
 
         标识云审计服务记录本次事件的时间戳。
 
@@ -420,7 +420,7 @@ class Traces:
 
     @record_time.setter
     def record_time(self, record_time):
-        """Sets the record_time of this Traces.
+        r"""Sets the record_time of this Traces.
 
         标识云审计服务记录本次事件的时间戳。
 
@@ -431,7 +431,7 @@ class Traces:
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this Traces.
+        r"""Gets the trace_id of this Traces.
 
         标识事件的ID，由系统生成的UUID。
 
@@ -442,7 +442,7 @@ class Traces:
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this Traces.
+        r"""Sets the trace_id of this Traces.
 
         标识事件的ID，由系统生成的UUID。
 
@@ -453,7 +453,7 @@ class Traces:
 
     @property
     def time(self):
-        """Gets the time of this Traces.
+        r"""Gets the time of this Traces.
 
         标识事件产生的时间戳。
 
@@ -464,7 +464,7 @@ class Traces:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this Traces.
+        r"""Sets the time of this Traces.
 
         标识事件产生的时间戳。
 
@@ -475,7 +475,7 @@ class Traces:
 
     @property
     def user(self):
-        """Gets the user of this Traces.
+        r"""Gets the user of this Traces.
 
         :return: The user of this Traces.
         :rtype: :class:`huaweicloudsdkcts.v3.UserInfo`
@@ -484,7 +484,7 @@ class Traces:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this Traces.
+        r"""Sets the user of this Traces.
 
         :param user: The user of this Traces.
         :type user: :class:`huaweicloudsdkcts.v3.UserInfo`
@@ -493,7 +493,7 @@ class Traces:
 
     @property
     def service_type(self):
-        """Gets the service_type of this Traces.
+        r"""Gets the service_type of this Traces.
 
         标识查询事件列表对应的云服务类型。必须为已对接CTS的云服务的英文缩写，且服务类型一般为大写字母。
 
@@ -504,7 +504,7 @@ class Traces:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this Traces.
+        r"""Sets the service_type of this Traces.
 
         标识查询事件列表对应的云服务类型。必须为已对接CTS的云服务的英文缩写，且服务类型一般为大写字母。
 
@@ -515,7 +515,7 @@ class Traces:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Traces.
+        r"""Gets the resource_type of this Traces.
 
         查询事件列表对应的资源类型。
 
@@ -526,7 +526,7 @@ class Traces:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Traces.
+        r"""Sets the resource_type of this Traces.
 
         查询事件列表对应的资源类型。
 
@@ -537,7 +537,7 @@ class Traces:
 
     @property
     def source_ip(self):
-        """Gets the source_ip of this Traces.
+        r"""Gets the source_ip of this Traces.
 
         标识触发事件的租户IP。
 
@@ -548,7 +548,7 @@ class Traces:
 
     @source_ip.setter
     def source_ip(self, source_ip):
-        """Sets the source_ip of this Traces.
+        r"""Sets the source_ip of this Traces.
 
         标识触发事件的租户IP。
 
@@ -559,7 +559,7 @@ class Traces:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this Traces.
+        r"""Gets the resource_name of this Traces.
 
         标识事件对应的资源名称。
 
@@ -570,7 +570,7 @@ class Traces:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this Traces.
+        r"""Sets the resource_name of this Traces.
 
         标识事件对应的资源名称。
 
@@ -581,7 +581,7 @@ class Traces:
 
     @property
     def request_id(self):
-        """Gets the request_id of this Traces.
+        r"""Gets the request_id of this Traces.
 
         记录本次请求的request id
 
@@ -592,7 +592,7 @@ class Traces:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this Traces.
+        r"""Sets the request_id of this Traces.
 
         记录本次请求的request id
 
@@ -603,7 +603,7 @@ class Traces:
 
     @property
     def location_info(self):
-        """Gets the location_info of this Traces.
+        r"""Gets the location_info of this Traces.
 
         记录本次请求出错后，问题定位所需要的辅助信息。
 
@@ -614,7 +614,7 @@ class Traces:
 
     @location_info.setter
     def location_info(self, location_info):
-        """Sets the location_info of this Traces.
+        r"""Sets the location_info of this Traces.
 
         记录本次请求出错后，问题定位所需要的辅助信息。
 
@@ -625,7 +625,7 @@ class Traces:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this Traces.
+        r"""Gets the endpoint of this Traces.
 
         云资源的详情页面
 
@@ -636,7 +636,7 @@ class Traces:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this Traces.
+        r"""Sets the endpoint of this Traces.
 
         云资源的详情页面
 
@@ -647,7 +647,7 @@ class Traces:
 
     @property
     def resource_url(self):
-        """Gets the resource_url of this Traces.
+        r"""Gets the resource_url of this Traces.
 
         云资源的详情页面的访问链接（不含endpoint）
 
@@ -658,7 +658,7 @@ class Traces:
 
     @resource_url.setter
     def resource_url(self, resource_url):
-        """Sets the resource_url of this Traces.
+        r"""Sets the resource_url of this Traces.
 
         云资源的详情页面的访问链接（不含endpoint）
 
@@ -669,7 +669,7 @@ class Traces:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Traces.
+        r"""Gets the enterprise_project_id of this Traces.
 
         标识资源所在的企业项目ID。
 
@@ -680,7 +680,7 @@ class Traces:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Traces.
+        r"""Sets the enterprise_project_id of this Traces.
 
         标识资源所在的企业项目ID。
 
@@ -691,7 +691,7 @@ class Traces:
 
     @property
     def resource_account_id(self):
-        """Gets the resource_account_id of this Traces.
+        r"""Gets the resource_account_id of this Traces.
 
         标识资源所在的账号ID。仅在跨租户操作资源时有值。
 
@@ -702,7 +702,7 @@ class Traces:
 
     @resource_account_id.setter
     def resource_account_id(self, resource_account_id):
-        """Sets the resource_account_id of this Traces.
+        r"""Sets the resource_account_id of this Traces.
 
         标识资源所在的账号ID。仅在跨租户操作资源时有值。
 
@@ -713,7 +713,7 @@ class Traces:
 
     @property
     def read_only(self):
-        """Gets the read_only of this Traces.
+        r"""Gets the read_only of this Traces.
 
         标识用户请求是不是只读。
 
@@ -724,7 +724,7 @@ class Traces:
 
     @read_only.setter
     def read_only(self, read_only):
-        """Sets the read_only of this Traces.
+        r"""Sets the read_only of this Traces.
 
         标识用户请求是不是只读。
 
@@ -735,7 +735,7 @@ class Traces:
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this Traces.
+        r"""Gets the operation_id of this Traces.
 
         记录事件对应的操作ID。
 
@@ -746,7 +746,7 @@ class Traces:
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this Traces.
+        r"""Sets the operation_id of this Traces.
 
         记录事件对应的操作ID。
 

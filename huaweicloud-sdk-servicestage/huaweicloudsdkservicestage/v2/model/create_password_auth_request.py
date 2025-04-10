@@ -27,7 +27,7 @@ class CreatePasswordAuthRequest:
     }
 
     def __init__(self, repo_type=None, body=None):
-        """CreatePasswordAuthRequest
+        r"""CreatePasswordAuthRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePasswordAuthRequest:
 
     @property
     def repo_type(self):
-        """Gets the repo_type of this CreatePasswordAuthRequest.
+        r"""Gets the repo_type of this CreatePasswordAuthRequest.
 
         仓库类型。 支持口令授权的仓库类型有：github、devcloud、bitbucket。
 
@@ -60,7 +60,7 @@ class CreatePasswordAuthRequest:
 
     @repo_type.setter
     def repo_type(self, repo_type):
-        """Sets the repo_type of this CreatePasswordAuthRequest.
+        r"""Sets the repo_type of this CreatePasswordAuthRequest.
 
         仓库类型。 支持口令授权的仓库类型有：github、devcloud、bitbucket。
 
@@ -71,7 +71,7 @@ class CreatePasswordAuthRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePasswordAuthRequest.
+        r"""Gets the body of this CreatePasswordAuthRequest.
 
         :return: The body of this CreatePasswordAuthRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.AccessPassword`
@@ -80,7 +80,7 @@ class CreatePasswordAuthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePasswordAuthRequest.
+        r"""Sets the body of this CreatePasswordAuthRequest.
 
         :param body: The body of this CreatePasswordAuthRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.AccessPassword`

@@ -27,7 +27,7 @@ class CreateJobRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateJobRequest
+        r"""CreateJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateJobRequest.
+        r"""Gets the x_language of this CreateJobRequest.
 
         请求语言类型。
 
@@ -61,7 +61,7 @@ class CreateJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateJobRequest.
+        r"""Sets the x_language of this CreateJobRequest.
 
         请求语言类型。
 
@@ -72,7 +72,7 @@ class CreateJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateJobRequest.
+        r"""Gets the body of this CreateJobRequest.
 
         :return: The body of this CreateJobRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.SingleCreateJobReq`
@@ -81,7 +81,7 @@ class CreateJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateJobRequest.
+        r"""Sets the body of this CreateJobRequest.
 
         :param body: The body of this CreateJobRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.SingleCreateJobReq`

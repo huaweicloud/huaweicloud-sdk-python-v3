@@ -31,7 +31,7 @@ class VocabInfo:
     }
 
     def __init__(self, vocabulary_id=None, name=None, language=None, description=None):
-        """VocabInfo
+        r"""VocabInfo
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class VocabInfo:
 
     @property
     def vocabulary_id(self):
-        """Gets the vocabulary_id of this VocabInfo.
+        r"""Gets the vocabulary_id of this VocabInfo.
 
         热词表ID。
 
@@ -71,7 +71,7 @@ class VocabInfo:
 
     @vocabulary_id.setter
     def vocabulary_id(self, vocabulary_id):
-        """Sets the vocabulary_id of this VocabInfo.
+        r"""Sets the vocabulary_id of this VocabInfo.
 
         热词表ID。
 
@@ -82,7 +82,7 @@ class VocabInfo:
 
     @property
     def name(self):
-        """Gets the name of this VocabInfo.
+        r"""Gets the name of this VocabInfo.
 
         热词表名。
 
@@ -93,7 +93,7 @@ class VocabInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VocabInfo.
+        r"""Sets the name of this VocabInfo.
 
         热词表名。
 
@@ -104,7 +104,7 @@ class VocabInfo:
 
     @property
     def language(self):
-        """Gets the language of this VocabInfo.
+        r"""Gets the language of this VocabInfo.
 
         热词表语言类型。
 
@@ -115,7 +115,7 @@ class VocabInfo:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this VocabInfo.
+        r"""Sets the language of this VocabInfo.
 
         热词表语言类型。
 
@@ -126,7 +126,7 @@ class VocabInfo:
 
     @property
     def description(self):
-        """Gets the description of this VocabInfo.
+        r"""Gets the description of this VocabInfo.
 
         热词表描述。
 
@@ -137,7 +137,7 @@ class VocabInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VocabInfo.
+        r"""Sets the description of this VocabInfo.
 
         热词表描述。
 

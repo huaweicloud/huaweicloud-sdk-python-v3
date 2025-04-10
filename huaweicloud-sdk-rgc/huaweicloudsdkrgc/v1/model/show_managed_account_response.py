@@ -60,7 +60,7 @@ class ShowManagedAccountResponse(SdkResponse):
     }
 
     def __init__(self, landing_zone_version=None, manage_account_id=None, account_id=None, account_name=None, account_type=None, owner=None, state=None, message=None, parent_organizational_unit_id=None, parent_organizational_unit_name=None, identity_store_user_name=None, blueprint_product_id=None, blueprint_product_version=None, blueprint_status=None, is_blueprint_has_multi_account_resource=None, regions=None, created_at=None, updated_at=None):
-        """ShowManagedAccountResponse
+        r"""ShowManagedAccountResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def landing_zone_version(self):
-        """Gets the landing_zone_version of this ShowManagedAccountResponse.
+        r"""Gets the landing_zone_version of this ShowManagedAccountResponse.
 
         Landing Zone版本。
 
@@ -174,7 +174,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @landing_zone_version.setter
     def landing_zone_version(self, landing_zone_version):
-        """Sets the landing_zone_version of this ShowManagedAccountResponse.
+        r"""Sets the landing_zone_version of this ShowManagedAccountResponse.
 
         Landing Zone版本。
 
@@ -185,7 +185,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def manage_account_id(self):
-        """Gets the manage_account_id of this ShowManagedAccountResponse.
+        r"""Gets the manage_account_id of this ShowManagedAccountResponse.
 
         管理纳管账号ID。
 
@@ -196,7 +196,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @manage_account_id.setter
     def manage_account_id(self, manage_account_id):
-        """Sets the manage_account_id of this ShowManagedAccountResponse.
+        r"""Sets the manage_account_id of this ShowManagedAccountResponse.
 
         管理纳管账号ID。
 
@@ -207,7 +207,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def account_id(self):
-        """Gets the account_id of this ShowManagedAccountResponse.
+        r"""Gets the account_id of this ShowManagedAccountResponse.
 
         纳管账号ID。
 
@@ -218,7 +218,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this ShowManagedAccountResponse.
+        r"""Sets the account_id of this ShowManagedAccountResponse.
 
         纳管账号ID。
 
@@ -229,7 +229,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def account_name(self):
-        """Gets the account_name of this ShowManagedAccountResponse.
+        r"""Gets the account_name of this ShowManagedAccountResponse.
 
         纳管账号名称。
 
@@ -240,7 +240,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this ShowManagedAccountResponse.
+        r"""Sets the account_name of this ShowManagedAccountResponse.
 
         纳管账号名称。
 
@@ -251,7 +251,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def account_type(self):
-        """Gets the account_type of this ShowManagedAccountResponse.
+        r"""Gets the account_type of this ShowManagedAccountResponse.
 
         纳管账号类型。
 
@@ -262,7 +262,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @account_type.setter
     def account_type(self, account_type):
-        """Sets the account_type of this ShowManagedAccountResponse.
+        r"""Sets the account_type of this ShowManagedAccountResponse.
 
         纳管账号类型。
 
@@ -273,7 +273,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this ShowManagedAccountResponse.
+        r"""Gets the owner of this ShowManagedAccountResponse.
 
         纳管账号的创建来源，包括CUSTOM和RGC。
 
@@ -284,7 +284,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ShowManagedAccountResponse.
+        r"""Sets the owner of this ShowManagedAccountResponse.
 
         纳管账号的创建来源，包括CUSTOM和RGC。
 
@@ -295,7 +295,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowManagedAccountResponse.
+        r"""Gets the state of this ShowManagedAccountResponse.
 
         纳管账号状态。
 
@@ -306,7 +306,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowManagedAccountResponse.
+        r"""Sets the state of this ShowManagedAccountResponse.
 
         纳管账号状态。
 
@@ -317,7 +317,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowManagedAccountResponse.
+        r"""Gets the message of this ShowManagedAccountResponse.
 
         错误状态描述信息。
 
@@ -328,7 +328,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowManagedAccountResponse.
+        r"""Sets the message of this ShowManagedAccountResponse.
 
         错误状态描述信息。
 
@@ -339,7 +339,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def parent_organizational_unit_id(self):
-        """Gets the parent_organizational_unit_id of this ShowManagedAccountResponse.
+        r"""Gets the parent_organizational_unit_id of this ShowManagedAccountResponse.
 
         父注册OU ID。
 
@@ -350,7 +350,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @parent_organizational_unit_id.setter
     def parent_organizational_unit_id(self, parent_organizational_unit_id):
-        """Sets the parent_organizational_unit_id of this ShowManagedAccountResponse.
+        r"""Sets the parent_organizational_unit_id of this ShowManagedAccountResponse.
 
         父注册OU ID。
 
@@ -361,7 +361,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def parent_organizational_unit_name(self):
-        """Gets the parent_organizational_unit_name of this ShowManagedAccountResponse.
+        r"""Gets the parent_organizational_unit_name of this ShowManagedAccountResponse.
 
         父注册OU名称。
 
@@ -372,7 +372,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @parent_organizational_unit_name.setter
     def parent_organizational_unit_name(self, parent_organizational_unit_name):
-        """Sets the parent_organizational_unit_name of this ShowManagedAccountResponse.
+        r"""Sets the parent_organizational_unit_name of this ShowManagedAccountResponse.
 
         父注册OU名称。
 
@@ -383,7 +383,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def identity_store_user_name(self):
-        """Gets the identity_store_user_name of this ShowManagedAccountResponse.
+        r"""Gets the identity_store_user_name of this ShowManagedAccountResponse.
 
         Identity Center用户名。
 
@@ -394,7 +394,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @identity_store_user_name.setter
     def identity_store_user_name(self, identity_store_user_name):
-        """Sets the identity_store_user_name of this ShowManagedAccountResponse.
+        r"""Sets the identity_store_user_name of this ShowManagedAccountResponse.
 
         Identity Center用户名。
 
@@ -405,7 +405,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def blueprint_product_id(self):
-        """Gets the blueprint_product_id of this ShowManagedAccountResponse.
+        r"""Gets the blueprint_product_id of this ShowManagedAccountResponse.
 
         模板ID。
 
@@ -416,7 +416,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @blueprint_product_id.setter
     def blueprint_product_id(self, blueprint_product_id):
-        """Sets the blueprint_product_id of this ShowManagedAccountResponse.
+        r"""Sets the blueprint_product_id of this ShowManagedAccountResponse.
 
         模板ID。
 
@@ -427,7 +427,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def blueprint_product_version(self):
-        """Gets the blueprint_product_version of this ShowManagedAccountResponse.
+        r"""Gets the blueprint_product_version of this ShowManagedAccountResponse.
 
         模板版本。
 
@@ -438,7 +438,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @blueprint_product_version.setter
     def blueprint_product_version(self, blueprint_product_version):
-        """Sets the blueprint_product_version of this ShowManagedAccountResponse.
+        r"""Sets the blueprint_product_version of this ShowManagedAccountResponse.
 
         模板版本。
 
@@ -449,7 +449,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def blueprint_status(self):
-        """Gets the blueprint_status of this ShowManagedAccountResponse.
+        r"""Gets the blueprint_status of this ShowManagedAccountResponse.
 
         模板部署状态，包括失败, 完成, 进行中。
 
@@ -460,7 +460,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @blueprint_status.setter
     def blueprint_status(self, blueprint_status):
-        """Sets the blueprint_status of this ShowManagedAccountResponse.
+        r"""Sets the blueprint_status of this ShowManagedAccountResponse.
 
         模板部署状态，包括失败, 完成, 进行中。
 
@@ -471,7 +471,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def is_blueprint_has_multi_account_resource(self):
-        """Gets the is_blueprint_has_multi_account_resource of this ShowManagedAccountResponse.
+        r"""Gets the is_blueprint_has_multi_account_resource of this ShowManagedAccountResponse.
 
         模板是否包含多账号资源。
 
@@ -482,7 +482,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @is_blueprint_has_multi_account_resource.setter
     def is_blueprint_has_multi_account_resource(self, is_blueprint_has_multi_account_resource):
-        """Sets the is_blueprint_has_multi_account_resource of this ShowManagedAccountResponse.
+        r"""Sets the is_blueprint_has_multi_account_resource of this ShowManagedAccountResponse.
 
         模板是否包含多账号资源。
 
@@ -493,7 +493,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def regions(self):
-        """Gets the regions of this ShowManagedAccountResponse.
+        r"""Gets the regions of this ShowManagedAccountResponse.
 
         区域信息。
 
@@ -504,7 +504,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @regions.setter
     def regions(self, regions):
-        """Sets the regions of this ShowManagedAccountResponse.
+        r"""Sets the regions of this ShowManagedAccountResponse.
 
         区域信息。
 
@@ -515,7 +515,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowManagedAccountResponse.
+        r"""Gets the created_at of this ShowManagedAccountResponse.
 
         组织里某个注册OU下的纳管账号被创建的时间。
 
@@ -526,7 +526,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowManagedAccountResponse.
+        r"""Sets the created_at of this ShowManagedAccountResponse.
 
         组织里某个注册OU下的纳管账号被创建的时间。
 
@@ -537,7 +537,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowManagedAccountResponse.
+        r"""Gets the updated_at of this ShowManagedAccountResponse.
 
         组织里某个注册OU下的纳管账号最后一次更新的时间。
 
@@ -548,7 +548,7 @@ class ShowManagedAccountResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowManagedAccountResponse.
+        r"""Sets the updated_at of this ShowManagedAccountResponse.
 
         组织里某个注册OU下的纳管账号最后一次更新的时间。
 

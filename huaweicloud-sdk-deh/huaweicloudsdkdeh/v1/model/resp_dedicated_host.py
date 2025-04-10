@@ -53,7 +53,7 @@ class RespDedicatedHost:
     }
 
     def __init__(self, dedicated_host_id=None, name=None, auto_placement=None, availability_zone=None, project_id=None, host_properties=None, state=None, available_vcpus=None, available_memory=None, allocated_at=None, released_at=None, instance_total=None, instance_uuids=None, tags=None, sys_tags=None):
-        """RespDedicatedHost
+        r"""RespDedicatedHost
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class RespDedicatedHost:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this RespDedicatedHost.
+        r"""Gets the dedicated_host_id of this RespDedicatedHost.
 
         专属主机ID。
 
@@ -137,7 +137,7 @@ class RespDedicatedHost:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this RespDedicatedHost.
+        r"""Sets the dedicated_host_id of this RespDedicatedHost.
 
         专属主机ID。
 
@@ -148,7 +148,7 @@ class RespDedicatedHost:
 
     @property
     def name(self):
-        """Gets the name of this RespDedicatedHost.
+        r"""Gets the name of this RespDedicatedHost.
 
         专属主机的名称。  长度限制在255个字符以内，并且不能以空格开头或结尾。
 
@@ -159,7 +159,7 @@ class RespDedicatedHost:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RespDedicatedHost.
+        r"""Sets the name of this RespDedicatedHost.
 
         专属主机的名称。  长度限制在255个字符以内，并且不能以空格开头或结尾。
 
@@ -170,7 +170,7 @@ class RespDedicatedHost:
 
     @property
     def auto_placement(self):
-        """Gets the auto_placement of this RespDedicatedHost.
+        r"""Gets the auto_placement of this RespDedicatedHost.
 
         在创建云服务器时（未指定专属主机ID），是否允许云服务器自动分配在一台可用的专属主机上。
 
@@ -181,7 +181,7 @@ class RespDedicatedHost:
 
     @auto_placement.setter
     def auto_placement(self, auto_placement):
-        """Sets the auto_placement of this RespDedicatedHost.
+        r"""Sets the auto_placement of this RespDedicatedHost.
 
         在创建云服务器时（未指定专属主机ID），是否允许云服务器自动分配在一台可用的专属主机上。
 
@@ -192,7 +192,7 @@ class RespDedicatedHost:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this RespDedicatedHost.
+        r"""Gets the availability_zone of this RespDedicatedHost.
 
         专属主机所属的可用区。
 
@@ -203,7 +203,7 @@ class RespDedicatedHost:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this RespDedicatedHost.
+        r"""Sets the availability_zone of this RespDedicatedHost.
 
         专属主机所属的可用区。
 
@@ -214,7 +214,7 @@ class RespDedicatedHost:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RespDedicatedHost.
+        r"""Gets the project_id of this RespDedicatedHost.
 
         专属主机所属的租户ID。
 
@@ -225,7 +225,7 @@ class RespDedicatedHost:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RespDedicatedHost.
+        r"""Sets the project_id of this RespDedicatedHost.
 
         专属主机所属的租户ID。
 
@@ -236,7 +236,7 @@ class RespDedicatedHost:
 
     @property
     def host_properties(self):
-        """Gets the host_properties of this RespDedicatedHost.
+        r"""Gets the host_properties of this RespDedicatedHost.
 
         :return: The host_properties of this RespDedicatedHost.
         :rtype: :class:`huaweicloudsdkdeh.v1.RespHostProperty`
@@ -245,7 +245,7 @@ class RespDedicatedHost:
 
     @host_properties.setter
     def host_properties(self, host_properties):
-        """Sets the host_properties of this RespDedicatedHost.
+        r"""Sets the host_properties of this RespDedicatedHost.
 
         :param host_properties: The host_properties of this RespDedicatedHost.
         :type host_properties: :class:`huaweicloudsdkdeh.v1.RespHostProperty`
@@ -254,7 +254,7 @@ class RespDedicatedHost:
 
     @property
     def state(self):
-        """Gets the state of this RespDedicatedHost.
+        r"""Gets the state of this RespDedicatedHost.
 
         专属主机状态。
 
@@ -265,7 +265,7 @@ class RespDedicatedHost:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this RespDedicatedHost.
+        r"""Sets the state of this RespDedicatedHost.
 
         专属主机状态。
 
@@ -276,7 +276,7 @@ class RespDedicatedHost:
 
     @property
     def available_vcpus(self):
-        """Gets the available_vcpus of this RespDedicatedHost.
+        r"""Gets the available_vcpus of this RespDedicatedHost.
 
         专属主机可用的vCPU核数。
 
@@ -287,7 +287,7 @@ class RespDedicatedHost:
 
     @available_vcpus.setter
     def available_vcpus(self, available_vcpus):
-        """Sets the available_vcpus of this RespDedicatedHost.
+        r"""Sets the available_vcpus of this RespDedicatedHost.
 
         专属主机可用的vCPU核数。
 
@@ -298,7 +298,7 @@ class RespDedicatedHost:
 
     @property
     def available_memory(self):
-        """Gets the available_memory of this RespDedicatedHost.
+        r"""Gets the available_memory of this RespDedicatedHost.
 
         专属主机可用的内存大小。
 
@@ -309,7 +309,7 @@ class RespDedicatedHost:
 
     @available_memory.setter
     def available_memory(self, available_memory):
-        """Sets the available_memory of this RespDedicatedHost.
+        r"""Sets the available_memory of this RespDedicatedHost.
 
         专属主机可用的内存大小。
 
@@ -320,7 +320,7 @@ class RespDedicatedHost:
 
     @property
     def allocated_at(self):
-        """Gets the allocated_at of this RespDedicatedHost.
+        r"""Gets the allocated_at of this RespDedicatedHost.
 
         专属主机的分配时间。
 
@@ -331,7 +331,7 @@ class RespDedicatedHost:
 
     @allocated_at.setter
     def allocated_at(self, allocated_at):
-        """Sets the allocated_at of this RespDedicatedHost.
+        r"""Sets the allocated_at of this RespDedicatedHost.
 
         专属主机的分配时间。
 
@@ -342,7 +342,7 @@ class RespDedicatedHost:
 
     @property
     def released_at(self):
-        """Gets the released_at of this RespDedicatedHost.
+        r"""Gets the released_at of this RespDedicatedHost.
 
         专属主机的释放时间。
 
@@ -353,7 +353,7 @@ class RespDedicatedHost:
 
     @released_at.setter
     def released_at(self, released_at):
-        """Sets the released_at of this RespDedicatedHost.
+        r"""Sets the released_at of this RespDedicatedHost.
 
         专属主机的释放时间。
 
@@ -364,7 +364,7 @@ class RespDedicatedHost:
 
     @property
     def instance_total(self):
-        """Gets the instance_total of this RespDedicatedHost.
+        r"""Gets the instance_total of this RespDedicatedHost.
 
         专属主机上的实例总数。
 
@@ -375,7 +375,7 @@ class RespDedicatedHost:
 
     @instance_total.setter
     def instance_total(self, instance_total):
-        """Sets the instance_total of this RespDedicatedHost.
+        r"""Sets the instance_total of this RespDedicatedHost.
 
         专属主机上的实例总数。
 
@@ -386,7 +386,7 @@ class RespDedicatedHost:
 
     @property
     def instance_uuids(self):
-        """Gets the instance_uuids of this RespDedicatedHost.
+        r"""Gets the instance_uuids of this RespDedicatedHost.
 
         专属主机上的实例UUID。  查询专属主机列表接口不显示此参数。
 
@@ -397,7 +397,7 @@ class RespDedicatedHost:
 
     @instance_uuids.setter
     def instance_uuids(self, instance_uuids):
-        """Sets the instance_uuids of this RespDedicatedHost.
+        r"""Sets the instance_uuids of this RespDedicatedHost.
 
         专属主机上的实例UUID。  查询专属主机列表接口不显示此参数。
 
@@ -408,7 +408,7 @@ class RespDedicatedHost:
 
     @property
     def tags(self):
-        """Gets the tags of this RespDedicatedHost.
+        r"""Gets the tags of this RespDedicatedHost.
 
         专属主机标签。
 
@@ -419,7 +419,7 @@ class RespDedicatedHost:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this RespDedicatedHost.
+        r"""Sets the tags of this RespDedicatedHost.
 
         专属主机标签。
 
@@ -430,7 +430,7 @@ class RespDedicatedHost:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this RespDedicatedHost.
+        r"""Gets the sys_tags of this RespDedicatedHost.
 
         专属主机系统标签。
 
@@ -441,7 +441,7 @@ class RespDedicatedHost:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this RespDedicatedHost.
+        r"""Sets the sys_tags of this RespDedicatedHost.
 
         专属主机系统标签。
 

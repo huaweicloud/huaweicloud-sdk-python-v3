@@ -27,7 +27,7 @@ class PolicyDto:
     }
 
     def __init__(self, content=None, policy_summary=None):
-        """PolicyDto
+        r"""PolicyDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PolicyDto:
 
     @property
     def content(self):
-        """Gets the content of this PolicyDto.
+        r"""Gets the content of this PolicyDto.
 
         策略的文本内容。
 
@@ -59,7 +59,7 @@ class PolicyDto:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this PolicyDto.
+        r"""Sets the content of this PolicyDto.
 
         策略的文本内容。
 
@@ -70,7 +70,7 @@ class PolicyDto:
 
     @property
     def policy_summary(self):
-        """Gets the policy_summary of this PolicyDto.
+        r"""Gets the policy_summary of this PolicyDto.
 
         :return: The policy_summary of this PolicyDto.
         :rtype: :class:`huaweicloudsdkorganizations.v1.PolicySummaryDto`
@@ -79,7 +79,7 @@ class PolicyDto:
 
     @policy_summary.setter
     def policy_summary(self, policy_summary):
-        """Sets the policy_summary of this PolicyDto.
+        r"""Sets the policy_summary of this PolicyDto.
 
         :param policy_summary: The policy_summary of this PolicyDto.
         :type policy_summary: :class:`huaweicloudsdkorganizations.v1.PolicySummaryDto`

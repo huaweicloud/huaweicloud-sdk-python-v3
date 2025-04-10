@@ -25,7 +25,7 @@ class DeleteVgwRequest:
     }
 
     def __init__(self, vgw_id=None):
-        """DeleteVgwRequest
+        r"""DeleteVgwRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteVgwRequest:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this DeleteVgwRequest.
+        r"""Gets the vgw_id of this DeleteVgwRequest.
 
         VPN网关实例ID
 
@@ -53,7 +53,7 @@ class DeleteVgwRequest:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this DeleteVgwRequest.
+        r"""Sets the vgw_id of this DeleteVgwRequest.
 
         VPN网关实例ID
 

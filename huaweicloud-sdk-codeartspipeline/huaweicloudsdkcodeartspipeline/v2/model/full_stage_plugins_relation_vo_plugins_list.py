@@ -53,7 +53,7 @@ class FullStagePluginsRelationVOPluginsList:
     }
 
     def __init__(self, unique_id=None, display_name=None, plugin_name=None, disabled=None, group_name=None, group_type=None, plugin_attribution=None, plugin_composition_type=None, runtime_attribution=None, all_steps=None, description=None, version_attribution=None, icon_url=None, multi_step_editable=None, standard=None):
-        """FullStagePluginsRelationVOPluginsList
+        r"""FullStagePluginsRelationVOPluginsList
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @property
     def unique_id(self):
-        """Gets the unique_id of this FullStagePluginsRelationVOPluginsList.
+        r"""Gets the unique_id of this FullStagePluginsRelationVOPluginsList.
 
         唯一ID
 
@@ -152,7 +152,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @unique_id.setter
     def unique_id(self, unique_id):
-        """Sets the unique_id of this FullStagePluginsRelationVOPluginsList.
+        r"""Sets the unique_id of this FullStagePluginsRelationVOPluginsList.
 
         唯一ID
 
@@ -163,7 +163,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @property
     def display_name(self):
-        """Gets the display_name of this FullStagePluginsRelationVOPluginsList.
+        r"""Gets the display_name of this FullStagePluginsRelationVOPluginsList.
 
         展示名
 
@@ -174,7 +174,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this FullStagePluginsRelationVOPluginsList.
+        r"""Sets the display_name of this FullStagePluginsRelationVOPluginsList.
 
         展示名
 
@@ -185,7 +185,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this FullStagePluginsRelationVOPluginsList.
+        r"""Gets the plugin_name of this FullStagePluginsRelationVOPluginsList.
 
         插件名
 
@@ -196,7 +196,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this FullStagePluginsRelationVOPluginsList.
+        r"""Sets the plugin_name of this FullStagePluginsRelationVOPluginsList.
 
         插件名
 
@@ -207,7 +207,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @property
     def disabled(self):
-        """Gets the disabled of this FullStagePluginsRelationVOPluginsList.
+        r"""Gets the disabled of this FullStagePluginsRelationVOPluginsList.
 
         禁用
 
@@ -218,7 +218,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this FullStagePluginsRelationVOPluginsList.
+        r"""Sets the disabled of this FullStagePluginsRelationVOPluginsList.
 
         禁用
 
@@ -229,7 +229,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @property
     def group_name(self):
-        """Gets the group_name of this FullStagePluginsRelationVOPluginsList.
+        r"""Gets the group_name of this FullStagePluginsRelationVOPluginsList.
 
         组名
 
@@ -240,7 +240,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this FullStagePluginsRelationVOPluginsList.
+        r"""Sets the group_name of this FullStagePluginsRelationVOPluginsList.
 
         组名
 
@@ -251,7 +251,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @property
     def group_type(self):
-        """Gets the group_type of this FullStagePluginsRelationVOPluginsList.
+        r"""Gets the group_type of this FullStagePluginsRelationVOPluginsList.
 
         组类型
 
@@ -262,7 +262,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this FullStagePluginsRelationVOPluginsList.
+        r"""Sets the group_type of this FullStagePluginsRelationVOPluginsList.
 
         组类型
 
@@ -273,7 +273,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @property
     def plugin_attribution(self):
-        """Gets the plugin_attribution of this FullStagePluginsRelationVOPluginsList.
+        r"""Gets the plugin_attribution of this FullStagePluginsRelationVOPluginsList.
 
         插件属性
 
@@ -284,7 +284,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @plugin_attribution.setter
     def plugin_attribution(self, plugin_attribution):
-        """Sets the plugin_attribution of this FullStagePluginsRelationVOPluginsList.
+        r"""Sets the plugin_attribution of this FullStagePluginsRelationVOPluginsList.
 
         插件属性
 
@@ -295,7 +295,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @property
     def plugin_composition_type(self):
-        """Gets the plugin_composition_type of this FullStagePluginsRelationVOPluginsList.
+        r"""Gets the plugin_composition_type of this FullStagePluginsRelationVOPluginsList.
 
         组合插件
 
@@ -306,7 +306,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @plugin_composition_type.setter
     def plugin_composition_type(self, plugin_composition_type):
-        """Sets the plugin_composition_type of this FullStagePluginsRelationVOPluginsList.
+        r"""Sets the plugin_composition_type of this FullStagePluginsRelationVOPluginsList.
 
         组合插件
 
@@ -317,7 +317,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @property
     def runtime_attribution(self):
-        """Gets the runtime_attribution of this FullStagePluginsRelationVOPluginsList.
+        r"""Gets the runtime_attribution of this FullStagePluginsRelationVOPluginsList.
 
         运行属性
 
@@ -328,7 +328,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @runtime_attribution.setter
     def runtime_attribution(self, runtime_attribution):
-        """Sets the runtime_attribution of this FullStagePluginsRelationVOPluginsList.
+        r"""Sets the runtime_attribution of this FullStagePluginsRelationVOPluginsList.
 
         运行属性
 
@@ -339,7 +339,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @property
     def all_steps(self):
-        """Gets the all_steps of this FullStagePluginsRelationVOPluginsList.
+        r"""Gets the all_steps of this FullStagePluginsRelationVOPluginsList.
 
         基础插件列表
 
@@ -350,7 +350,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @all_steps.setter
     def all_steps(self, all_steps):
-        """Sets the all_steps of this FullStagePluginsRelationVOPluginsList.
+        r"""Sets the all_steps of this FullStagePluginsRelationVOPluginsList.
 
         基础插件列表
 
@@ -361,7 +361,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @property
     def description(self):
-        """Gets the description of this FullStagePluginsRelationVOPluginsList.
+        r"""Gets the description of this FullStagePluginsRelationVOPluginsList.
 
         描述
 
@@ -372,7 +372,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FullStagePluginsRelationVOPluginsList.
+        r"""Sets the description of this FullStagePluginsRelationVOPluginsList.
 
         描述
 
@@ -383,7 +383,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @property
     def version_attribution(self):
-        """Gets the version_attribution of this FullStagePluginsRelationVOPluginsList.
+        r"""Gets the version_attribution of this FullStagePluginsRelationVOPluginsList.
 
         版本属性
 
@@ -394,7 +394,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @version_attribution.setter
     def version_attribution(self, version_attribution):
-        """Sets the version_attribution of this FullStagePluginsRelationVOPluginsList.
+        r"""Sets the version_attribution of this FullStagePluginsRelationVOPluginsList.
 
         版本属性
 
@@ -405,7 +405,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @property
     def icon_url(self):
-        """Gets the icon_url of this FullStagePluginsRelationVOPluginsList.
+        r"""Gets the icon_url of this FullStagePluginsRelationVOPluginsList.
 
         图标URL
 
@@ -416,7 +416,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @icon_url.setter
     def icon_url(self, icon_url):
-        """Sets the icon_url of this FullStagePluginsRelationVOPluginsList.
+        r"""Sets the icon_url of this FullStagePluginsRelationVOPluginsList.
 
         图标URL
 
@@ -427,7 +427,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @property
     def multi_step_editable(self):
-        """Gets the multi_step_editable of this FullStagePluginsRelationVOPluginsList.
+        r"""Gets the multi_step_editable of this FullStagePluginsRelationVOPluginsList.
 
         是否可编辑
 
@@ -438,7 +438,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @multi_step_editable.setter
     def multi_step_editable(self, multi_step_editable):
-        """Sets the multi_step_editable of this FullStagePluginsRelationVOPluginsList.
+        r"""Sets the multi_step_editable of this FullStagePluginsRelationVOPluginsList.
 
         是否可编辑
 
@@ -449,7 +449,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @property
     def standard(self):
-        """Gets the standard of this FullStagePluginsRelationVOPluginsList.
+        r"""Gets the standard of this FullStagePluginsRelationVOPluginsList.
 
         标准
 
@@ -460,7 +460,7 @@ class FullStagePluginsRelationVOPluginsList:
 
     @standard.setter
     def standard(self, standard):
-        """Sets the standard of this FullStagePluginsRelationVOPluginsList.
+        r"""Sets the standard of this FullStagePluginsRelationVOPluginsList.
 
         标准
 

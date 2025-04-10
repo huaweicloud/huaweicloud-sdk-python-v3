@@ -25,7 +25,7 @@ class BatchDeleteImageServerRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteImageServerRequest
+        r"""BatchDeleteImageServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteImageServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteImageServerRequest.
+        r"""Gets the body of this BatchDeleteImageServerRequest.
 
         :return: The body of this BatchDeleteImageServerRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteImageServerReq`
@@ -52,7 +52,7 @@ class BatchDeleteImageServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteImageServerRequest.
+        r"""Sets the body of this BatchDeleteImageServerRequest.
 
         :param body: The body of this BatchDeleteImageServerRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteImageServerReq`

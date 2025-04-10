@@ -29,7 +29,7 @@ class RenameInstanceRequest:
     }
 
     def __init__(self, enterprise_project_id=None, instance_id=None, body=None):
-        """RenameInstanceRequest
+        r"""RenameInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RenameInstanceRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RenameInstanceRequest.
+        r"""Gets the enterprise_project_id of this RenameInstanceRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -67,7 +67,7 @@ class RenameInstanceRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RenameInstanceRequest.
+        r"""Sets the enterprise_project_id of this RenameInstanceRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -78,7 +78,7 @@ class RenameInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RenameInstanceRequest.
+        r"""Gets the instance_id of this RenameInstanceRequest.
 
         独享引擎ID（通过调用WAF的ListInstance接口获取所有独享引擎信息查询独享引擎ID）
 
@@ -89,7 +89,7 @@ class RenameInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RenameInstanceRequest.
+        r"""Sets the instance_id of this RenameInstanceRequest.
 
         独享引擎ID（通过调用WAF的ListInstance接口获取所有独享引擎信息查询独享引擎ID）
 
@@ -100,7 +100,7 @@ class RenameInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this RenameInstanceRequest.
+        r"""Gets the body of this RenameInstanceRequest.
 
         :return: The body of this RenameInstanceRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.RenameInstanceRequestBody`
@@ -109,7 +109,7 @@ class RenameInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RenameInstanceRequest.
+        r"""Sets the body of this RenameInstanceRequest.
 
         :param body: The body of this RenameInstanceRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.RenameInstanceRequestBody`

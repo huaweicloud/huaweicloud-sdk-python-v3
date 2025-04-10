@@ -51,7 +51,7 @@ class PipelineLatestRun:
     }
 
     def __init__(self, pipeline_id=None, pipeline_run_id=None, executor_id=None, executor_name=None, stage_status_list=None, status=None, run_number=None, trigger_type=None, build_params=None, artifact_params=None, start_time=None, end_time=None, modify_url=None, detail_url=None):
-        """PipelineLatestRun
+        r"""PipelineLatestRun
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class PipelineLatestRun:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this PipelineLatestRun.
+        r"""Gets the pipeline_id of this PipelineLatestRun.
 
         流水线ID
 
@@ -145,7 +145,7 @@ class PipelineLatestRun:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this PipelineLatestRun.
+        r"""Sets the pipeline_id of this PipelineLatestRun.
 
         流水线ID
 
@@ -156,7 +156,7 @@ class PipelineLatestRun:
 
     @property
     def pipeline_run_id(self):
-        """Gets the pipeline_run_id of this PipelineLatestRun.
+        r"""Gets the pipeline_run_id of this PipelineLatestRun.
 
         流水线运行实例ID
 
@@ -167,7 +167,7 @@ class PipelineLatestRun:
 
     @pipeline_run_id.setter
     def pipeline_run_id(self, pipeline_run_id):
-        """Sets the pipeline_run_id of this PipelineLatestRun.
+        r"""Sets the pipeline_run_id of this PipelineLatestRun.
 
         流水线运行实例ID
 
@@ -178,7 +178,7 @@ class PipelineLatestRun:
 
     @property
     def executor_id(self):
-        """Gets the executor_id of this PipelineLatestRun.
+        r"""Gets the executor_id of this PipelineLatestRun.
 
         执行人ID
 
@@ -189,7 +189,7 @@ class PipelineLatestRun:
 
     @executor_id.setter
     def executor_id(self, executor_id):
-        """Sets the executor_id of this PipelineLatestRun.
+        r"""Sets the executor_id of this PipelineLatestRun.
 
         执行人ID
 
@@ -200,7 +200,7 @@ class PipelineLatestRun:
 
     @property
     def executor_name(self):
-        """Gets the executor_name of this PipelineLatestRun.
+        r"""Gets the executor_name of this PipelineLatestRun.
 
         执行人名称
 
@@ -211,7 +211,7 @@ class PipelineLatestRun:
 
     @executor_name.setter
     def executor_name(self, executor_name):
-        """Sets the executor_name of this PipelineLatestRun.
+        r"""Sets the executor_name of this PipelineLatestRun.
 
         执行人名称
 
@@ -222,7 +222,7 @@ class PipelineLatestRun:
 
     @property
     def stage_status_list(self):
-        """Gets the stage_status_list of this PipelineLatestRun.
+        r"""Gets the stage_status_list of this PipelineLatestRun.
 
         阶段状态信息
 
@@ -233,7 +233,7 @@ class PipelineLatestRun:
 
     @stage_status_list.setter
     def stage_status_list(self, stage_status_list):
-        """Sets the stage_status_list of this PipelineLatestRun.
+        r"""Sets the stage_status_list of this PipelineLatestRun.
 
         阶段状态信息
 
@@ -244,7 +244,7 @@ class PipelineLatestRun:
 
     @property
     def status(self):
-        """Gets the status of this PipelineLatestRun.
+        r"""Gets the status of this PipelineLatestRun.
 
         流水线状态
 
@@ -255,7 +255,7 @@ class PipelineLatestRun:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PipelineLatestRun.
+        r"""Sets the status of this PipelineLatestRun.
 
         流水线状态
 
@@ -266,7 +266,7 @@ class PipelineLatestRun:
 
     @property
     def run_number(self):
-        """Gets the run_number of this PipelineLatestRun.
+        r"""Gets the run_number of this PipelineLatestRun.
 
         运行序号
 
@@ -277,7 +277,7 @@ class PipelineLatestRun:
 
     @run_number.setter
     def run_number(self, run_number):
-        """Sets the run_number of this PipelineLatestRun.
+        r"""Sets the run_number of this PipelineLatestRun.
 
         运行序号
 
@@ -288,7 +288,7 @@ class PipelineLatestRun:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this PipelineLatestRun.
+        r"""Gets the trigger_type of this PipelineLatestRun.
 
         触发类型
 
@@ -299,7 +299,7 @@ class PipelineLatestRun:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this PipelineLatestRun.
+        r"""Sets the trigger_type of this PipelineLatestRun.
 
         触发类型
 
@@ -310,7 +310,7 @@ class PipelineLatestRun:
 
     @property
     def build_params(self):
-        """Gets the build_params of this PipelineLatestRun.
+        r"""Gets the build_params of this PipelineLatestRun.
 
         :return: The build_params of this PipelineLatestRun.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineLatestRunBuildParams`
@@ -319,7 +319,7 @@ class PipelineLatestRun:
 
     @build_params.setter
     def build_params(self, build_params):
-        """Sets the build_params of this PipelineLatestRun.
+        r"""Sets the build_params of this PipelineLatestRun.
 
         :param build_params: The build_params of this PipelineLatestRun.
         :type build_params: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineLatestRunBuildParams`
@@ -328,7 +328,7 @@ class PipelineLatestRun:
 
     @property
     def artifact_params(self):
-        """Gets the artifact_params of this PipelineLatestRun.
+        r"""Gets the artifact_params of this PipelineLatestRun.
 
         :return: The artifact_params of this PipelineLatestRun.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineLatestRunArtifactParams`
@@ -337,7 +337,7 @@ class PipelineLatestRun:
 
     @artifact_params.setter
     def artifact_params(self, artifact_params):
-        """Sets the artifact_params of this PipelineLatestRun.
+        r"""Sets the artifact_params of this PipelineLatestRun.
 
         :param artifact_params: The artifact_params of this PipelineLatestRun.
         :type artifact_params: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineLatestRunArtifactParams`
@@ -346,7 +346,7 @@ class PipelineLatestRun:
 
     @property
     def start_time(self):
-        """Gets the start_time of this PipelineLatestRun.
+        r"""Gets the start_time of this PipelineLatestRun.
 
         开始时间
 
@@ -357,7 +357,7 @@ class PipelineLatestRun:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this PipelineLatestRun.
+        r"""Sets the start_time of this PipelineLatestRun.
 
         开始时间
 
@@ -368,7 +368,7 @@ class PipelineLatestRun:
 
     @property
     def end_time(self):
-        """Gets the end_time of this PipelineLatestRun.
+        r"""Gets the end_time of this PipelineLatestRun.
 
         结束时间
 
@@ -379,7 +379,7 @@ class PipelineLatestRun:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this PipelineLatestRun.
+        r"""Sets the end_time of this PipelineLatestRun.
 
         结束时间
 
@@ -390,7 +390,7 @@ class PipelineLatestRun:
 
     @property
     def modify_url(self):
-        """Gets the modify_url of this PipelineLatestRun.
+        r"""Gets the modify_url of this PipelineLatestRun.
 
         修改页地址
 
@@ -401,7 +401,7 @@ class PipelineLatestRun:
 
     @modify_url.setter
     def modify_url(self, modify_url):
-        """Sets the modify_url of this PipelineLatestRun.
+        r"""Sets the modify_url of this PipelineLatestRun.
 
         修改页地址
 
@@ -412,7 +412,7 @@ class PipelineLatestRun:
 
     @property
     def detail_url(self):
-        """Gets the detail_url of this PipelineLatestRun.
+        r"""Gets the detail_url of this PipelineLatestRun.
 
         详情页地址
 
@@ -423,7 +423,7 @@ class PipelineLatestRun:
 
     @detail_url.setter
     def detail_url(self, detail_url):
-        """Sets the detail_url of this PipelineLatestRun.
+        r"""Sets the detail_url of this PipelineLatestRun.
 
         详情页地址
 

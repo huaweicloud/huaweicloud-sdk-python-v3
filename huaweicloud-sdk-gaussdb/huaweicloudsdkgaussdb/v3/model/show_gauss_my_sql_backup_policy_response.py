@@ -26,7 +26,7 @@ class ShowGaussMySqlBackupPolicyResponse(SdkResponse):
     }
 
     def __init__(self, backup_policy=None):
-        """ShowGaussMySqlBackupPolicyResponse
+        r"""ShowGaussMySqlBackupPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowGaussMySqlBackupPolicyResponse(SdkResponse):
 
     @property
     def backup_policy(self):
-        """Gets the backup_policy of this ShowGaussMySqlBackupPolicyResponse.
+        r"""Gets the backup_policy of this ShowGaussMySqlBackupPolicyResponse.
 
         :return: The backup_policy of this ShowGaussMySqlBackupPolicyResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.BackupPolicy`
@@ -53,7 +53,7 @@ class ShowGaussMySqlBackupPolicyResponse(SdkResponse):
 
     @backup_policy.setter
     def backup_policy(self, backup_policy):
-        """Sets the backup_policy of this ShowGaussMySqlBackupPolicyResponse.
+        r"""Sets the backup_policy of this ShowGaussMySqlBackupPolicyResponse.
 
         :param backup_policy: The backup_policy of this ShowGaussMySqlBackupPolicyResponse.
         :type backup_policy: :class:`huaweicloudsdkgaussdb.v3.BackupPolicy`

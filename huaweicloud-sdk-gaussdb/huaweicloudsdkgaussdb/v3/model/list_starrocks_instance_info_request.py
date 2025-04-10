@@ -29,7 +29,7 @@ class ListStarrocksInstanceInfoRequest:
     }
 
     def __init__(self, instance_id=None, starrocks_instance_id=None, x_language=None):
-        """ListStarrocksInstanceInfoRequest
+        r"""ListStarrocksInstanceInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListStarrocksInstanceInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListStarrocksInstanceInfoRequest.
+        r"""Gets the instance_id of this ListStarrocksInstanceInfoRequest.
 
         TaurusDB实例ID，严格匹配UUID规则。
 
@@ -66,7 +66,7 @@ class ListStarrocksInstanceInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListStarrocksInstanceInfoRequest.
+        r"""Sets the instance_id of this ListStarrocksInstanceInfoRequest.
 
         TaurusDB实例ID，严格匹配UUID规则。
 
@@ -77,7 +77,7 @@ class ListStarrocksInstanceInfoRequest:
 
     @property
     def starrocks_instance_id(self):
-        """Gets the starrocks_instance_id of this ListStarrocksInstanceInfoRequest.
+        r"""Gets the starrocks_instance_id of this ListStarrocksInstanceInfoRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -88,7 +88,7 @@ class ListStarrocksInstanceInfoRequest:
 
     @starrocks_instance_id.setter
     def starrocks_instance_id(self, starrocks_instance_id):
-        """Sets the starrocks_instance_id of this ListStarrocksInstanceInfoRequest.
+        r"""Sets the starrocks_instance_id of this ListStarrocksInstanceInfoRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -99,7 +99,7 @@ class ListStarrocksInstanceInfoRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListStarrocksInstanceInfoRequest.
+        r"""Gets the x_language of this ListStarrocksInstanceInfoRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -110,7 +110,7 @@ class ListStarrocksInstanceInfoRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListStarrocksInstanceInfoRequest.
+        r"""Sets the x_language of this ListStarrocksInstanceInfoRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

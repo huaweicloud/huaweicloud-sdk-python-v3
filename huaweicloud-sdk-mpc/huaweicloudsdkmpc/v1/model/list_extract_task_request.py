@@ -37,7 +37,7 @@ class ListExtractTaskRequest:
     }
 
     def __init__(self, x_language=None, task_id=None, status=None, start_time=None, end_time=None, page=None, size=None):
-        """ListExtractTaskRequest
+        r"""ListExtractTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListExtractTaskRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListExtractTaskRequest.
+        r"""Gets the x_language of this ListExtractTaskRequest.
 
         客户端语言
 
@@ -96,7 +96,7 @@ class ListExtractTaskRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListExtractTaskRequest.
+        r"""Sets the x_language of this ListExtractTaskRequest.
 
         客户端语言
 
@@ -107,7 +107,7 @@ class ListExtractTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListExtractTaskRequest.
+        r"""Gets the task_id of this ListExtractTaskRequest.
 
         任务ID。一次最多10个 
 
@@ -118,7 +118,7 @@ class ListExtractTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListExtractTaskRequest.
+        r"""Sets the task_id of this ListExtractTaskRequest.
 
         任务ID。一次最多10个 
 
@@ -129,7 +129,7 @@ class ListExtractTaskRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListExtractTaskRequest.
+        r"""Gets the status of this ListExtractTaskRequest.
 
         任务执行状态。  取值如下： - INIT：初始状态 - WAITING：等待启动 - PREPROCESSING：处理中 - SUCCEED：处理成功 - FAILED：处理失败 - CANCELED：已取消 
 
@@ -140,7 +140,7 @@ class ListExtractTaskRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListExtractTaskRequest.
+        r"""Sets the status of this ListExtractTaskRequest.
 
         任务执行状态。  取值如下： - INIT：初始状态 - WAITING：等待启动 - PREPROCESSING：处理中 - SUCCEED：处理成功 - FAILED：处理失败 - CANCELED：已取消 
 
@@ -151,7 +151,7 @@ class ListExtractTaskRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListExtractTaskRequest.
+        r"""Gets the start_time of this ListExtractTaskRequest.
 
         起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
@@ -162,7 +162,7 @@ class ListExtractTaskRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListExtractTaskRequest.
+        r"""Sets the start_time of this ListExtractTaskRequest.
 
         起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
@@ -173,7 +173,7 @@ class ListExtractTaskRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListExtractTaskRequest.
+        r"""Gets the end_time of this ListExtractTaskRequest.
 
         结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
@@ -184,7 +184,7 @@ class ListExtractTaskRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListExtractTaskRequest.
+        r"""Sets the end_time of this ListExtractTaskRequest.
 
         结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
@@ -195,7 +195,7 @@ class ListExtractTaskRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListExtractTaskRequest.
+        r"""Gets the page of this ListExtractTaskRequest.
 
         分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
@@ -206,7 +206,7 @@ class ListExtractTaskRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListExtractTaskRequest.
+        r"""Sets the page of this ListExtractTaskRequest.
 
         分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
@@ -217,7 +217,7 @@ class ListExtractTaskRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListExtractTaskRequest.
+        r"""Gets the size of this ListExtractTaskRequest.
 
         每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 
@@ -228,7 +228,7 @@ class ListExtractTaskRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListExtractTaskRequest.
+        r"""Sets the size of this ListExtractTaskRequest.
 
         每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 

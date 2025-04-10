@@ -25,7 +25,7 @@ class DeleteFirewallRequest:
     }
 
     def __init__(self, resource_id=None):
-        """DeleteFirewallRequest
+        r"""DeleteFirewallRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteFirewallRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteFirewallRequest.
+        r"""Gets the resource_id of this DeleteFirewallRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -53,7 +53,7 @@ class DeleteFirewallRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteFirewallRequest.
+        r"""Sets the resource_id of this DeleteFirewallRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 

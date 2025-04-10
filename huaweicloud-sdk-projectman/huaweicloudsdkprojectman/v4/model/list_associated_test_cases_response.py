@@ -28,7 +28,7 @@ class ListAssociatedTestCasesResponse(SdkResponse):
     }
 
     def __init__(self, test_cases=None, total=None):
-        """ListAssociatedTestCasesResponse
+        r"""ListAssociatedTestCasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAssociatedTestCasesResponse(SdkResponse):
 
     @property
     def test_cases(self):
-        """Gets the test_cases of this ListAssociatedTestCasesResponse.
+        r"""Gets the test_cases of this ListAssociatedTestCasesResponse.
 
         关联的测试用例列表
 
@@ -62,7 +62,7 @@ class ListAssociatedTestCasesResponse(SdkResponse):
 
     @test_cases.setter
     def test_cases(self, test_cases):
-        """Sets the test_cases of this ListAssociatedTestCasesResponse.
+        r"""Sets the test_cases of this ListAssociatedTestCasesResponse.
 
         关联的测试用例列表
 
@@ -73,7 +73,7 @@ class ListAssociatedTestCasesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAssociatedTestCasesResponse.
+        r"""Gets the total of this ListAssociatedTestCasesResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListAssociatedTestCasesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAssociatedTestCasesResponse.
+        r"""Sets the total of this ListAssociatedTestCasesResponse.
 
         总数
 

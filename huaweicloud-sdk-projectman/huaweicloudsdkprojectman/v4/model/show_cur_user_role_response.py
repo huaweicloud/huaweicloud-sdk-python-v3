@@ -26,7 +26,7 @@ class ShowCurUserRoleResponse(SdkResponse):
     }
 
     def __init__(self, user_role=None):
-        """ShowCurUserRoleResponse
+        r"""ShowCurUserRoleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowCurUserRoleResponse(SdkResponse):
 
     @property
     def user_role(self):
-        """Gets the user_role of this ShowCurUserRoleResponse.
+        r"""Gets the user_role of this ShowCurUserRoleResponse.
 
         用户角色id 成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
@@ -55,7 +55,7 @@ class ShowCurUserRoleResponse(SdkResponse):
 
     @user_role.setter
     def user_role(self, user_role):
-        """Sets the user_role of this ShowCurUserRoleResponse.
+        r"""Sets the user_role of this ShowCurUserRoleResponse.
 
         用户角色id 成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 

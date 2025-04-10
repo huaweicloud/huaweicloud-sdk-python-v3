@@ -28,7 +28,7 @@ class ListRacksResponse(SdkResponse):
     }
 
     def __init__(self, racks=None, page_info=None):
-        """ListRacksResponse
+        r"""ListRacksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRacksResponse(SdkResponse):
 
     @property
     def racks(self):
-        """Gets the racks of this ListRacksResponse.
+        r"""Gets the racks of this ListRacksResponse.
 
         机柜列表
 
@@ -62,7 +62,7 @@ class ListRacksResponse(SdkResponse):
 
     @racks.setter
     def racks(self, racks):
-        """Sets the racks of this ListRacksResponse.
+        r"""Sets the racks of this ListRacksResponse.
 
         机柜列表
 
@@ -73,7 +73,7 @@ class ListRacksResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListRacksResponse.
+        r"""Gets the page_info of this ListRacksResponse.
 
         :return: The page_info of this ListRacksResponse.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListRacksResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListRacksResponse.
+        r"""Sets the page_info of this ListRacksResponse.
 
         :param page_info: The page_info of this ListRacksResponse.
         :type page_info: :class:`huaweicloudsdkcloudpond.v1.PageInfo`

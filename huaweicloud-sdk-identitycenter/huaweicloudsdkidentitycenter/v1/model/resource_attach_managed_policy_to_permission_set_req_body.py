@@ -27,7 +27,7 @@ class ResourceAttachManagedPolicyToPermissionSetReqBody:
     }
 
     def __init__(self, managed_role_id=None, managed_role_name=None):
-        """ResourceAttachManagedPolicyToPermissionSetReqBody
+        r"""ResourceAttachManagedPolicyToPermissionSetReqBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResourceAttachManagedPolicyToPermissionSetReqBody:
 
     @property
     def managed_role_id(self):
-        """Gets the managed_role_id of this ResourceAttachManagedPolicyToPermissionSetReqBody.
+        r"""Gets the managed_role_id of this ResourceAttachManagedPolicyToPermissionSetReqBody.
 
         IAM系统策略唯一标识
 
@@ -60,7 +60,7 @@ class ResourceAttachManagedPolicyToPermissionSetReqBody:
 
     @managed_role_id.setter
     def managed_role_id(self, managed_role_id):
-        """Sets the managed_role_id of this ResourceAttachManagedPolicyToPermissionSetReqBody.
+        r"""Sets the managed_role_id of this ResourceAttachManagedPolicyToPermissionSetReqBody.
 
         IAM系统策略唯一标识
 
@@ -71,7 +71,7 @@ class ResourceAttachManagedPolicyToPermissionSetReqBody:
 
     @property
     def managed_role_name(self):
-        """Gets the managed_role_name of this ResourceAttachManagedPolicyToPermissionSetReqBody.
+        r"""Gets the managed_role_name of this ResourceAttachManagedPolicyToPermissionSetReqBody.
 
         IAM系统策略名称
 
@@ -82,7 +82,7 @@ class ResourceAttachManagedPolicyToPermissionSetReqBody:
 
     @managed_role_name.setter
     def managed_role_name(self, managed_role_name):
-        """Sets the managed_role_name of this ResourceAttachManagedPolicyToPermissionSetReqBody.
+        r"""Sets the managed_role_name of this ResourceAttachManagedPolicyToPermissionSetReqBody.
 
         IAM系统策略名称
 

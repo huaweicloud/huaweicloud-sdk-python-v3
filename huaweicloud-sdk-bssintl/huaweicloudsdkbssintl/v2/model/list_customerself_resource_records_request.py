@@ -57,7 +57,7 @@ class ListCustomerselfResourceRecordsRequest:
     }
 
     def __init__(self, x_language=None, cycle=None, cloud_service_type=None, region=None, charge_mode=None, bill_type=None, offset=None, limit=None, resource_id=None, enterprise_project_id=None, include_zero_record=None, method=None, sub_customer_id=None, trade_id=None, bill_date_begin=None, bill_date_end=None, statistic_type=None):
-        """ListCustomerselfResourceRecordsRequest
+        r"""ListCustomerselfResourceRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -154,7 +154,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the x_language of this ListCustomerselfResourceRecordsRequest.
 
         语言：中文：zh_CN 英文：en_US。缺省为zh_CN
 
@@ -165,7 +165,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the x_language of this ListCustomerselfResourceRecordsRequest.
 
         语言：中文：zh_CN 英文：en_US。缺省为zh_CN
 
@@ -176,7 +176,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def cycle(self):
-        """Gets the cycle of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the cycle of this ListCustomerselfResourceRecordsRequest.
 
         查询的资源消费记录所在账期，格式：YYYY-MM。
 
@@ -187,7 +187,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @cycle.setter
     def cycle(self, cycle):
-        """Sets the cycle of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the cycle of this ListCustomerselfResourceRecordsRequest.
 
         查询的资源消费记录所在账期，格式：YYYY-MM。
 
@@ -198,7 +198,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the cloud_service_type of this ListCustomerselfResourceRecordsRequest.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
 
@@ -209,7 +209,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the cloud_service_type of this ListCustomerselfResourceRecordsRequest.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
 
@@ -220,7 +220,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the region of this ListCustomerselfResourceRecordsRequest.
 
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
 
@@ -231,7 +231,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the region of this ListCustomerselfResourceRecordsRequest.
 
         云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
 
@@ -242,7 +242,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the charge_mode of this ListCustomerselfResourceRecordsRequest.
 
         计费模式。1：包年/包月3：按需10：预留实例11：节省计划。此参数不携带时，不作为筛选条件。
 
@@ -253,7 +253,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the charge_mode of this ListCustomerselfResourceRecordsRequest.
 
         计费模式。1：包年/包月3：按需10：预留实例11：节省计划。此参数不携带时，不作为筛选条件。
 
@@ -264,7 +264,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def bill_type(self):
-        """Gets the bill_type of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the bill_type of this ListCustomerselfResourceRecordsRequest.
 
         账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿 12：消费-按时计费 14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。20：退款-变更100：退款-退订税金23：消费-节省计划抵扣 24：退款-包年/包月转按需101：调账-补偿税金102：调账-扣费税金。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -275,7 +275,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @bill_type.setter
     def bill_type(self, bill_type):
-        """Sets the bill_type of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the bill_type of this ListCustomerselfResourceRecordsRequest.
 
         账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿 12：消费-按时计费 14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。20：退款-变更100：退款-退订税金23：消费-节省计划抵扣 24：退款-包年/包月转按需101：调账-补偿税金102：调账-扣费税金。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -286,7 +286,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the offset of this ListCustomerselfResourceRecordsRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -297,7 +297,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the offset of this ListCustomerselfResourceRecordsRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -308,7 +308,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the limit of this ListCustomerselfResourceRecordsRequest.
 
         每次查询的数量限制。默认值为10。
 
@@ -319,7 +319,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the limit of this ListCustomerselfResourceRecordsRequest.
 
         每次查询的数量限制。默认值为10。
 
@@ -330,7 +330,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the resource_id of this ListCustomerselfResourceRecordsRequest.
 
         资源ID。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
 
@@ -341,7 +341,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the resource_id of this ListCustomerselfResourceRecordsRequest.
 
         资源ID。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
 
@@ -352,7 +352,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
 
         企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
 
@@ -363,7 +363,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
 
         企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
 
@@ -374,7 +374,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def include_zero_record(self):
-        """Gets the include_zero_record of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the include_zero_record of this ListCustomerselfResourceRecordsRequest.
 
         返回是否包含应付金额为0的记录。true：包含false：不包含。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -385,7 +385,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @include_zero_record.setter
     def include_zero_record(self, include_zero_record):
-        """Sets the include_zero_record of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the include_zero_record of this ListCustomerselfResourceRecordsRequest.
 
         返回是否包含应付金额为0的记录。true：包含false：不包含。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -396,7 +396,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def method(self):
-        """Gets the method of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the method of this ListCustomerselfResourceRecordsRequest.
 
         查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户。此参数不携带或携带值为空时，默认值为“all”，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。
 
@@ -407,7 +407,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the method of this ListCustomerselfResourceRecordsRequest.
 
         查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户。此参数不携带或携带值为空时，默认值为“all”，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。
 
@@ -418,7 +418,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def sub_customer_id(self):
-        """Gets the sub_customer_id of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the sub_customer_id of this ListCustomerselfResourceRecordsRequest.
 
         企业子账号ID。此参数携带值为空串时，不作为筛选条件。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
@@ -429,7 +429,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @sub_customer_id.setter
     def sub_customer_id(self, sub_customer_id):
-        """Sets the sub_customer_id of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the sub_customer_id of this ListCustomerselfResourceRecordsRequest.
 
         企业子账号ID。此参数携带值为空串时，不作为筛选条件。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
@@ -440,7 +440,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def trade_id(self):
-        """Gets the trade_id of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the trade_id of this ListCustomerselfResourceRecordsRequest.
 
         订单ID或交易ID。账单类型为1、2、3、4和8时此处为订单ID。账单类型为其它场景时此处为交易ID，为扣费维度的唯一标识。例如非月末扣费时为应收ID；月末扣费时为账单ID。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
 
@@ -451,7 +451,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @trade_id.setter
     def trade_id(self, trade_id):
-        """Sets the trade_id of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the trade_id of this ListCustomerselfResourceRecordsRequest.
 
         订单ID或交易ID。账单类型为1、2、3、4和8时此处为订单ID。账单类型为其它场景时此处为交易ID，为扣费维度的唯一标识。例如非月末扣费时为应收ID；月末扣费时为账单ID。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
 
@@ -462,7 +462,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def bill_date_begin(self):
-        """Gets the bill_date_begin of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the bill_date_begin of this ListCustomerselfResourceRecordsRequest.
 
         查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
 
@@ -473,7 +473,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @bill_date_begin.setter
     def bill_date_begin(self, bill_date_begin):
-        """Sets the bill_date_begin of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the bill_date_begin of this ListCustomerselfResourceRecordsRequest.
 
         查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
 
@@ -484,7 +484,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def bill_date_end(self):
-        """Gets the bill_date_end of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the bill_date_end of this ListCustomerselfResourceRecordsRequest.
 
         查询的资源消费记录的结束日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
 
@@ -495,7 +495,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @bill_date_end.setter
     def bill_date_end(self, bill_date_end):
-        """Sets the bill_date_end of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the bill_date_end of this ListCustomerselfResourceRecordsRequest.
 
         查询的资源消费记录的结束日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
 
@@ -506,7 +506,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @property
     def statistic_type(self):
-        """Gets the statistic_type of this ListCustomerselfResourceRecordsRequest.
+        r"""Gets the statistic_type of this ListCustomerselfResourceRecordsRequest.
 
         |参数名称：统计类型。| |参数的约束及描述：统计类型。非必填，默认值为3。1：按账期 3：按明细|
 
@@ -517,7 +517,7 @@ class ListCustomerselfResourceRecordsRequest:
 
     @statistic_type.setter
     def statistic_type(self, statistic_type):
-        """Sets the statistic_type of this ListCustomerselfResourceRecordsRequest.
+        r"""Sets the statistic_type of this ListCustomerselfResourceRecordsRequest.
 
         |参数名称：统计类型。| |参数的约束及描述：统计类型。非必填，默认值为3。1：按账期 3：按明细|
 

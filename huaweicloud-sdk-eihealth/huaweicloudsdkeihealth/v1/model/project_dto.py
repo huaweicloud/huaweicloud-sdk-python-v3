@@ -27,7 +27,7 @@ class ProjectDto:
     }
 
     def __init__(self, id=None, name=None):
-        """ProjectDto
+        r"""ProjectDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProjectDto:
 
     @property
     def id(self):
-        """Gets the id of this ProjectDto.
+        r"""Gets the id of this ProjectDto.
 
         项目id
 
@@ -61,7 +61,7 @@ class ProjectDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProjectDto.
+        r"""Sets the id of this ProjectDto.
 
         项目id
 
@@ -72,7 +72,7 @@ class ProjectDto:
 
     @property
     def name(self):
-        """Gets the name of this ProjectDto.
+        r"""Gets the name of this ProjectDto.
 
         项目名
 
@@ -83,7 +83,7 @@ class ProjectDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProjectDto.
+        r"""Sets the name of this ProjectDto.
 
         项目名
 

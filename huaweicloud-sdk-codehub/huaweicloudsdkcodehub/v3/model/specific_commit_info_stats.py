@@ -29,7 +29,7 @@ class SpecificCommitInfoStats:
     }
 
     def __init__(self, additions=None, deletions=None, total=None):
-        """SpecificCommitInfoStats
+        r"""SpecificCommitInfoStats
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SpecificCommitInfoStats:
 
     @property
     def additions(self):
-        """Gets the additions of this SpecificCommitInfoStats.
+        r"""Gets the additions of this SpecificCommitInfoStats.
 
         变更增加的行数
 
@@ -68,7 +68,7 @@ class SpecificCommitInfoStats:
 
     @additions.setter
     def additions(self, additions):
-        """Sets the additions of this SpecificCommitInfoStats.
+        r"""Sets the additions of this SpecificCommitInfoStats.
 
         变更增加的行数
 
@@ -79,7 +79,7 @@ class SpecificCommitInfoStats:
 
     @property
     def deletions(self):
-        """Gets the deletions of this SpecificCommitInfoStats.
+        r"""Gets the deletions of this SpecificCommitInfoStats.
 
         变更删除的行数
 
@@ -90,7 +90,7 @@ class SpecificCommitInfoStats:
 
     @deletions.setter
     def deletions(self, deletions):
-        """Sets the deletions of this SpecificCommitInfoStats.
+        r"""Sets the deletions of this SpecificCommitInfoStats.
 
         变更删除的行数
 
@@ -101,7 +101,7 @@ class SpecificCommitInfoStats:
 
     @property
     def total(self):
-        """Gets the total of this SpecificCommitInfoStats.
+        r"""Gets the total of this SpecificCommitInfoStats.
 
         变更的总行数
 
@@ -112,7 +112,7 @@ class SpecificCommitInfoStats:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this SpecificCommitInfoStats.
+        r"""Sets the total of this SpecificCommitInfoStats.
 
         变更的总行数
 

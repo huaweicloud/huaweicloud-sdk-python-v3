@@ -27,7 +27,7 @@ class StartLogAutoBackupPolicyRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """StartLogAutoBackupPolicyRequest
+        r"""StartLogAutoBackupPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartLogAutoBackupPolicyRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StartLogAutoBackupPolicyRequest.
+        r"""Gets the cluster_id of this StartLogAutoBackupPolicyRequest.
 
         指定开启日志备份的集群ID。
 
@@ -60,7 +60,7 @@ class StartLogAutoBackupPolicyRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StartLogAutoBackupPolicyRequest.
+        r"""Sets the cluster_id of this StartLogAutoBackupPolicyRequest.
 
         指定开启日志备份的集群ID。
 
@@ -71,7 +71,7 @@ class StartLogAutoBackupPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartLogAutoBackupPolicyRequest.
+        r"""Gets the body of this StartLogAutoBackupPolicyRequest.
 
         :return: The body of this StartLogAutoBackupPolicyRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.StartLogAutoBackupPolicyReq`
@@ -80,7 +80,7 @@ class StartLogAutoBackupPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartLogAutoBackupPolicyRequest.
+        r"""Sets the body of this StartLogAutoBackupPolicyRequest.
 
         :param body: The body of this StartLogAutoBackupPolicyRequest.
         :type body: :class:`huaweicloudsdkcss.v1.StartLogAutoBackupPolicyReq`

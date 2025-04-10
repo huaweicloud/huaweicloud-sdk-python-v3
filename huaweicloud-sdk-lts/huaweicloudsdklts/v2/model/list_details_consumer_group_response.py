@@ -26,7 +26,7 @@ class ListDetailsConsumerGroupResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListDetailsConsumerGroupResponse
+        r"""ListDetailsConsumerGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDetailsConsumerGroupResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListDetailsConsumerGroupResponse.
+        r"""Gets the body of this ListDetailsConsumerGroupResponse.
 
         :return: The body of this ListDetailsConsumerGroupResponse.
         :rtype: list[:class:`huaweicloudsdklts.v2.ConsumerCheckpointInfo`]
@@ -53,7 +53,7 @@ class ListDetailsConsumerGroupResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListDetailsConsumerGroupResponse.
+        r"""Sets the body of this ListDetailsConsumerGroupResponse.
 
         :param body: The body of this ListDetailsConsumerGroupResponse.
         :type body: list[:class:`huaweicloudsdklts.v2.ConsumerCheckpointInfo`]

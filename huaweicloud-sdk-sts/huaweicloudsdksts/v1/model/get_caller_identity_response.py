@@ -30,7 +30,7 @@ class GetCallerIdentityResponse(SdkResponse):
     }
 
     def __init__(self, account_id=None, principal_urn=None, principal_id=None):
-        """GetCallerIdentityResponse
+        r"""GetCallerIdentityResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class GetCallerIdentityResponse(SdkResponse):
 
     @property
     def account_id(self):
-        """Gets the account_id of this GetCallerIdentityResponse.
+        r"""Gets the account_id of this GetCallerIdentityResponse.
 
         华为云账号ID。
 
@@ -69,7 +69,7 @@ class GetCallerIdentityResponse(SdkResponse):
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this GetCallerIdentityResponse.
+        r"""Sets the account_id of this GetCallerIdentityResponse.
 
         华为云账号ID。
 
@@ -80,7 +80,7 @@ class GetCallerIdentityResponse(SdkResponse):
 
     @property
     def principal_urn(self):
-        """Gets the principal_urn of this GetCallerIdentityResponse.
+        r"""Gets the principal_urn of this GetCallerIdentityResponse.
 
         主体URN。
 
@@ -91,7 +91,7 @@ class GetCallerIdentityResponse(SdkResponse):
 
     @principal_urn.setter
     def principal_urn(self, principal_urn):
-        """Sets the principal_urn of this GetCallerIdentityResponse.
+        r"""Sets the principal_urn of this GetCallerIdentityResponse.
 
         主体URN。
 
@@ -102,7 +102,7 @@ class GetCallerIdentityResponse(SdkResponse):
 
     @property
     def principal_id(self):
-        """Gets the principal_id of this GetCallerIdentityResponse.
+        r"""Gets the principal_id of this GetCallerIdentityResponse.
 
         主体ID。
 
@@ -113,7 +113,7 @@ class GetCallerIdentityResponse(SdkResponse):
 
     @principal_id.setter
     def principal_id(self, principal_id):
-        """Sets the principal_id of this GetCallerIdentityResponse.
+        r"""Sets the principal_id of this GetCallerIdentityResponse.
 
         主体ID。
 

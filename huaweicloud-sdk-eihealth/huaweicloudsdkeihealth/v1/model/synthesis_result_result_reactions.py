@@ -29,7 +29,7 @@ class SynthesisResultResultReactions:
     }
 
     def __init__(self, id=None, reactants=None, product=None):
-        """SynthesisResultResultReactions
+        r"""SynthesisResultResultReactions
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SynthesisResultResultReactions:
 
     @property
     def id(self):
-        """Gets the id of this SynthesisResultResultReactions.
+        r"""Gets the id of this SynthesisResultResultReactions.
 
         反应的序号
 
@@ -65,7 +65,7 @@ class SynthesisResultResultReactions:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SynthesisResultResultReactions.
+        r"""Sets the id of this SynthesisResultResultReactions.
 
         反应的序号
 
@@ -76,7 +76,7 @@ class SynthesisResultResultReactions:
 
     @property
     def reactants(self):
-        """Gets the reactants of this SynthesisResultResultReactions.
+        r"""Gets the reactants of this SynthesisResultResultReactions.
 
         反应物分子序号的列表
 
@@ -87,7 +87,7 @@ class SynthesisResultResultReactions:
 
     @reactants.setter
     def reactants(self, reactants):
-        """Sets the reactants of this SynthesisResultResultReactions.
+        r"""Sets the reactants of this SynthesisResultResultReactions.
 
         反应物分子序号的列表
 
@@ -98,7 +98,7 @@ class SynthesisResultResultReactions:
 
     @property
     def product(self):
-        """Gets the product of this SynthesisResultResultReactions.
+        r"""Gets the product of this SynthesisResultResultReactions.
 
         产物分子序号
 
@@ -109,7 +109,7 @@ class SynthesisResultResultReactions:
 
     @product.setter
     def product(self, product):
-        """Sets the product of this SynthesisResultResultReactions.
+        r"""Sets the product of this SynthesisResultResultReactions.
 
         产物分子序号
 

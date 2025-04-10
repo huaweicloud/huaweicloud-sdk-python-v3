@@ -23,7 +23,7 @@ class ListClusterUpgradePathsRequest:
     }
 
     def __init__(self):
-        """ListClusterUpgradePathsRequest
+        r"""ListClusterUpgradePathsRequest
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class ClusterListDatastore:
     }
 
     def __init__(self, type=None, version=None, support_securitymode=None):
-        """ClusterListDatastore
+        r"""ClusterListDatastore
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ClusterListDatastore:
 
     @property
     def type(self):
-        """Gets the type of this ClusterListDatastore.
+        r"""Gets the type of this ClusterListDatastore.
 
         引擎类型，目前只支持elasticsearch。
 
@@ -68,7 +68,7 @@ class ClusterListDatastore:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ClusterListDatastore.
+        r"""Sets the type of this ClusterListDatastore.
 
         引擎类型，目前只支持elasticsearch。
 
@@ -79,7 +79,7 @@ class ClusterListDatastore:
 
     @property
     def version(self):
-        """Gets the version of this ClusterListDatastore.
+        r"""Gets the version of this ClusterListDatastore.
 
         CSS集群引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
 
@@ -90,7 +90,7 @@ class ClusterListDatastore:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ClusterListDatastore.
+        r"""Sets the version of this ClusterListDatastore.
 
         CSS集群引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
 
@@ -101,7 +101,7 @@ class ClusterListDatastore:
 
     @property
     def support_securitymode(self):
-        """Gets the support_securitymode of this ClusterListDatastore.
+        r"""Gets the support_securitymode of this ClusterListDatastore.
 
         是否支持安全模式
 
@@ -112,7 +112,7 @@ class ClusterListDatastore:
 
     @support_securitymode.setter
     def support_securitymode(self, support_securitymode):
-        """Sets the support_securitymode of this ClusterListDatastore.
+        r"""Sets the support_securitymode of this ClusterListDatastore.
 
         是否支持安全模式
 

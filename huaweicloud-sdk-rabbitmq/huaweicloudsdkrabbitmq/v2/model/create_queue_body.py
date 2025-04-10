@@ -37,7 +37,7 @@ class CreateQueueBody:
     }
 
     def __init__(self, name=None, auto_delete=None, durable=None, dead_letter_exchange=None, dead_letter_routing_key=None, message_ttl=None, lazy_mode=None):
-        """CreateQueueBody
+        r"""CreateQueueBody
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class CreateQueueBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateQueueBody.
+        r"""Gets the name of this CreateQueueBody.
 
         Queue名称
 
@@ -94,7 +94,7 @@ class CreateQueueBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateQueueBody.
+        r"""Sets the name of this CreateQueueBody.
 
         Queue名称
 
@@ -105,7 +105,7 @@ class CreateQueueBody:
 
     @property
     def auto_delete(self):
-        """Gets the auto_delete of this CreateQueueBody.
+        r"""Gets the auto_delete of this CreateQueueBody.
 
         是否自动删除
 
@@ -116,7 +116,7 @@ class CreateQueueBody:
 
     @auto_delete.setter
     def auto_delete(self, auto_delete):
-        """Sets the auto_delete of this CreateQueueBody.
+        r"""Sets the auto_delete of this CreateQueueBody.
 
         是否自动删除
 
@@ -127,7 +127,7 @@ class CreateQueueBody:
 
     @property
     def durable(self):
-        """Gets the durable of this CreateQueueBody.
+        r"""Gets the durable of this CreateQueueBody.
 
         是否持久化[（AMQP版本默认持久化，不涉及此字段）](tag:hws,hws_hk)
 
@@ -138,7 +138,7 @@ class CreateQueueBody:
 
     @durable.setter
     def durable(self, durable):
-        """Sets the durable of this CreateQueueBody.
+        r"""Sets the durable of this CreateQueueBody.
 
         是否持久化[（AMQP版本默认持久化，不涉及此字段）](tag:hws,hws_hk)
 
@@ -149,7 +149,7 @@ class CreateQueueBody:
 
     @property
     def dead_letter_exchange(self):
-        """Gets the dead_letter_exchange of this CreateQueueBody.
+        r"""Gets the dead_letter_exchange of this CreateQueueBody.
 
         死信Exchange名称，消息被拒绝或过期时将重新发布到该Exchange。
 
@@ -160,7 +160,7 @@ class CreateQueueBody:
 
     @dead_letter_exchange.setter
     def dead_letter_exchange(self, dead_letter_exchange):
-        """Sets the dead_letter_exchange of this CreateQueueBody.
+        r"""Sets the dead_letter_exchange of this CreateQueueBody.
 
         死信Exchange名称，消息被拒绝或过期时将重新发布到该Exchange。
 
@@ -171,7 +171,7 @@ class CreateQueueBody:
 
     @property
     def dead_letter_routing_key(self):
-        """Gets the dead_letter_routing_key of this CreateQueueBody.
+        r"""Gets the dead_letter_routing_key of this CreateQueueBody.
 
         死信Exchange的RoutingKey，死信Exchange会发送死信消息到绑定对应RoutingKey的Queue上。
 
@@ -182,7 +182,7 @@ class CreateQueueBody:
 
     @dead_letter_routing_key.setter
     def dead_letter_routing_key(self, dead_letter_routing_key):
-        """Sets the dead_letter_routing_key of this CreateQueueBody.
+        r"""Sets the dead_letter_routing_key of this CreateQueueBody.
 
         死信Exchange的RoutingKey，死信Exchange会发送死信消息到绑定对应RoutingKey的Queue上。
 
@@ -193,7 +193,7 @@ class CreateQueueBody:
 
     @property
     def message_ttl(self):
-        """Gets the message_ttl of this CreateQueueBody.
+        r"""Gets the message_ttl of this CreateQueueBody.
 
         发布到Queue的消息在被丢弃之前可以存活多长时间
 
@@ -204,7 +204,7 @@ class CreateQueueBody:
 
     @message_ttl.setter
     def message_ttl(self, message_ttl):
-        """Sets the message_ttl of this CreateQueueBody.
+        r"""Sets the message_ttl of this CreateQueueBody.
 
         发布到Queue的消息在被丢弃之前可以存活多长时间
 
@@ -215,7 +215,7 @@ class CreateQueueBody:
 
     @property
     def lazy_mode(self):
-        """Gets the lazy_mode of this CreateQueueBody.
+        r"""Gets the lazy_mode of this CreateQueueBody.
 
         若设置惰性队列，请输入lazy。惰性队列模式会在磁盘上存储尽可能多的消息以减少内存使用；若不设置，队列将消息存储在内存缓存以尽可能快地传递消息。[（AMQP版本默认将消息存储到磁盘，不涉及此字段）](tag:hws,hws_hk)
 
@@ -226,7 +226,7 @@ class CreateQueueBody:
 
     @lazy_mode.setter
     def lazy_mode(self, lazy_mode):
-        """Sets the lazy_mode of this CreateQueueBody.
+        r"""Sets the lazy_mode of this CreateQueueBody.
 
         若设置惰性队列，请输入lazy。惰性队列模式会在磁盘上存储尽可能多的消息以减少内存使用；若不设置，队列将消息存储在内存缓存以尽可能快地传递消息。[（AMQP版本默认将消息存储到磁盘，不涉及此字段）](tag:hws,hws_hk)
 

@@ -45,7 +45,7 @@ class ExternalUpdatePeerLink:
     }
 
     def __init__(self, id=None, tenant_id=None, name=None, description=None, global_dc_gateway_id=None, bandwidth_info=None, peer_site=None, status=None, reason=None, created_time=None, updated_time=None):
-        """ExternalUpdatePeerLink
+        r"""ExternalUpdatePeerLink
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ExternalUpdatePeerLink:
 
     @property
     def id(self):
-        """Gets the id of this ExternalUpdatePeerLink.
+        r"""Gets the id of this ExternalUpdatePeerLink.
 
         关联连接的ID
 
@@ -124,7 +124,7 @@ class ExternalUpdatePeerLink:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExternalUpdatePeerLink.
+        r"""Sets the id of this ExternalUpdatePeerLink.
 
         关联连接的ID
 
@@ -135,7 +135,7 @@ class ExternalUpdatePeerLink:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ExternalUpdatePeerLink.
+        r"""Gets the tenant_id of this ExternalUpdatePeerLink.
 
         关联连接归属的租户ID
 
@@ -146,7 +146,7 @@ class ExternalUpdatePeerLink:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ExternalUpdatePeerLink.
+        r"""Sets the tenant_id of this ExternalUpdatePeerLink.
 
         关联连接归属的租户ID
 
@@ -157,7 +157,7 @@ class ExternalUpdatePeerLink:
 
     @property
     def name(self):
-        """Gets the name of this ExternalUpdatePeerLink.
+        r"""Gets the name of this ExternalUpdatePeerLink.
 
         关联连接的名字
 
@@ -168,7 +168,7 @@ class ExternalUpdatePeerLink:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExternalUpdatePeerLink.
+        r"""Sets the name of this ExternalUpdatePeerLink.
 
         关联连接的名字
 
@@ -179,7 +179,7 @@ class ExternalUpdatePeerLink:
 
     @property
     def description(self):
-        """Gets the description of this ExternalUpdatePeerLink.
+        r"""Gets the description of this ExternalUpdatePeerLink.
 
         关联连接的描述信息
 
@@ -190,7 +190,7 @@ class ExternalUpdatePeerLink:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ExternalUpdatePeerLink.
+        r"""Sets the description of this ExternalUpdatePeerLink.
 
         关联连接的描述信息
 
@@ -201,7 +201,7 @@ class ExternalUpdatePeerLink:
 
     @property
     def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this ExternalUpdatePeerLink.
+        r"""Gets the global_dc_gateway_id of this ExternalUpdatePeerLink.
 
         关联连接归属的接入网关ID
 
@@ -212,7 +212,7 @@ class ExternalUpdatePeerLink:
 
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this ExternalUpdatePeerLink.
+        r"""Sets the global_dc_gateway_id of this ExternalUpdatePeerLink.
 
         关联连接归属的接入网关ID
 
@@ -223,7 +223,7 @@ class ExternalUpdatePeerLink:
 
     @property
     def bandwidth_info(self):
-        """Gets the bandwidth_info of this ExternalUpdatePeerLink.
+        r"""Gets the bandwidth_info of this ExternalUpdatePeerLink.
 
         :return: The bandwidth_info of this ExternalUpdatePeerLink.
         :rtype: :class:`huaweicloudsdkdc.v3.BandwidthInfoExternal`
@@ -232,7 +232,7 @@ class ExternalUpdatePeerLink:
 
     @bandwidth_info.setter
     def bandwidth_info(self, bandwidth_info):
-        """Sets the bandwidth_info of this ExternalUpdatePeerLink.
+        r"""Sets the bandwidth_info of this ExternalUpdatePeerLink.
 
         :param bandwidth_info: The bandwidth_info of this ExternalUpdatePeerLink.
         :type bandwidth_info: :class:`huaweicloudsdkdc.v3.BandwidthInfoExternal`
@@ -241,7 +241,7 @@ class ExternalUpdatePeerLink:
 
     @property
     def peer_site(self):
-        """Gets the peer_site of this ExternalUpdatePeerLink.
+        r"""Gets the peer_site of this ExternalUpdatePeerLink.
 
         :return: The peer_site of this ExternalUpdatePeerLink.
         :rtype: :class:`huaweicloudsdkdc.v3.PeerSiteExternal`
@@ -250,7 +250,7 @@ class ExternalUpdatePeerLink:
 
     @peer_site.setter
     def peer_site(self, peer_site):
-        """Sets the peer_site of this ExternalUpdatePeerLink.
+        r"""Sets the peer_site of this ExternalUpdatePeerLink.
 
         :param peer_site: The peer_site of this ExternalUpdatePeerLink.
         :type peer_site: :class:`huaweicloudsdkdc.v3.PeerSiteExternal`
@@ -259,7 +259,7 @@ class ExternalUpdatePeerLink:
 
     @property
     def status(self):
-        """Gets the status of this ExternalUpdatePeerLink.
+        r"""Gets the status of this ExternalUpdatePeerLink.
 
         关联连接的状态
 
@@ -270,7 +270,7 @@ class ExternalUpdatePeerLink:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExternalUpdatePeerLink.
+        r"""Sets the status of this ExternalUpdatePeerLink.
 
         关联连接的状态
 
@@ -281,7 +281,7 @@ class ExternalUpdatePeerLink:
 
     @property
     def reason(self):
-        """Gets the reason of this ExternalUpdatePeerLink.
+        r"""Gets the reason of this ExternalUpdatePeerLink.
 
         失败原因
 
@@ -292,7 +292,7 @@ class ExternalUpdatePeerLink:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ExternalUpdatePeerLink.
+        r"""Sets the reason of this ExternalUpdatePeerLink.
 
         失败原因
 
@@ -303,7 +303,7 @@ class ExternalUpdatePeerLink:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ExternalUpdatePeerLink.
+        r"""Gets the created_time of this ExternalUpdatePeerLink.
 
         创建时间
 
@@ -314,7 +314,7 @@ class ExternalUpdatePeerLink:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ExternalUpdatePeerLink.
+        r"""Sets the created_time of this ExternalUpdatePeerLink.
 
         创建时间
 
@@ -325,7 +325,7 @@ class ExternalUpdatePeerLink:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ExternalUpdatePeerLink.
+        r"""Gets the updated_time of this ExternalUpdatePeerLink.
 
         更新时间
 
@@ -336,7 +336,7 @@ class ExternalUpdatePeerLink:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ExternalUpdatePeerLink.
+        r"""Sets the updated_time of this ExternalUpdatePeerLink.
 
         更新时间
 

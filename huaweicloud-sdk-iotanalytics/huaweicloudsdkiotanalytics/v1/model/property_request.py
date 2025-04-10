@@ -29,7 +29,7 @@ class PropertyRequest:
     }
 
     def __init__(self, name=None, value=None, device_id=None):
-        """PropertyRequest
+        r"""PropertyRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class PropertyRequest:
 
     @property
     def name(self):
-        """Gets the name of this PropertyRequest.
+        r"""Gets the name of this PropertyRequest.
 
         属性名称，必须是模型中已存在的
 
@@ -67,7 +67,7 @@ class PropertyRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PropertyRequest.
+        r"""Sets the name of this PropertyRequest.
 
         属性名称，必须是模型中已存在的
 
@@ -78,7 +78,7 @@ class PropertyRequest:
 
     @property
     def value(self):
-        """Gets the value of this PropertyRequest.
+        r"""Gets the value of this PropertyRequest.
 
         值，只有static型属性可以填写
 
@@ -89,7 +89,7 @@ class PropertyRequest:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PropertyRequest.
+        r"""Sets the value of this PropertyRequest.
 
         值，只有static型属性可以填写
 
@@ -100,7 +100,7 @@ class PropertyRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this PropertyRequest.
+        r"""Gets the device_id of this PropertyRequest.
 
         设备ID，只有measurement型属性可以填写
 
@@ -111,7 +111,7 @@ class PropertyRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this PropertyRequest.
+        r"""Sets the device_id of this PropertyRequest.
 
         设备ID，只有measurement型属性可以填写
 

@@ -27,7 +27,7 @@ class ListSupportRegionsRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListSupportRegionsRequest
+        r"""ListSupportRegionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListSupportRegionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSupportRegionsRequest.
+        r"""Gets the limit of this ListSupportRegionsRequest.
 
         指定查询返回记录条数，默认值10。
 
@@ -61,7 +61,7 @@ class ListSupportRegionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSupportRegionsRequest.
+        r"""Sets the limit of this ListSupportRegionsRequest.
 
         指定查询返回记录条数，默认值10。
 
@@ -72,7 +72,7 @@ class ListSupportRegionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSupportRegionsRequest.
+        r"""Gets the offset of this ListSupportRegionsRequest.
 
         索引位置，从offset指定的下一条数据开始查询。
 
@@ -83,7 +83,7 @@ class ListSupportRegionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSupportRegionsRequest.
+        r"""Sets the offset of this ListSupportRegionsRequest.
 
         索引位置，从offset指定的下一条数据开始查询。
 

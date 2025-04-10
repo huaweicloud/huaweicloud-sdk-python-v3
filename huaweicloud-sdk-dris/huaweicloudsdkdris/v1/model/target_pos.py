@@ -31,7 +31,7 @@ class TargetPos:
     }
 
     def __init__(self, left_top_x=None, left_top_y=None, right_bottom_x=None, right_bottom_y=None):
-        """TargetPos
+        r"""TargetPos
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TargetPos:
 
     @property
     def left_top_x(self):
-        """Gets the left_top_x of this TargetPos.
+        r"""Gets the left_top_x of this TargetPos.
 
         **参数说明**：目标区域框左上X坐标。
 
@@ -75,7 +75,7 @@ class TargetPos:
 
     @left_top_x.setter
     def left_top_x(self, left_top_x):
-        """Sets the left_top_x of this TargetPos.
+        r"""Sets the left_top_x of this TargetPos.
 
         **参数说明**：目标区域框左上X坐标。
 
@@ -86,7 +86,7 @@ class TargetPos:
 
     @property
     def left_top_y(self):
-        """Gets the left_top_y of this TargetPos.
+        r"""Gets the left_top_y of this TargetPos.
 
         **参数说明**：目标区域框左上Y坐标。
 
@@ -97,7 +97,7 @@ class TargetPos:
 
     @left_top_y.setter
     def left_top_y(self, left_top_y):
-        """Sets the left_top_y of this TargetPos.
+        r"""Sets the left_top_y of this TargetPos.
 
         **参数说明**：目标区域框左上Y坐标。
 
@@ -108,7 +108,7 @@ class TargetPos:
 
     @property
     def right_bottom_x(self):
-        """Gets the right_bottom_x of this TargetPos.
+        r"""Gets the right_bottom_x of this TargetPos.
 
         **参数说明**：目标区域框右下X坐标。
 
@@ -119,7 +119,7 @@ class TargetPos:
 
     @right_bottom_x.setter
     def right_bottom_x(self, right_bottom_x):
-        """Sets the right_bottom_x of this TargetPos.
+        r"""Sets the right_bottom_x of this TargetPos.
 
         **参数说明**：目标区域框右下X坐标。
 
@@ -130,7 +130,7 @@ class TargetPos:
 
     @property
     def right_bottom_y(self):
-        """Gets the right_bottom_y of this TargetPos.
+        r"""Gets the right_bottom_y of this TargetPos.
 
         **参数说明**：目标区域框右下Y坐标。
 
@@ -141,7 +141,7 @@ class TargetPos:
 
     @right_bottom_y.setter
     def right_bottom_y(self, right_bottom_y):
-        """Sets the right_bottom_y of this TargetPos.
+        r"""Sets the right_bottom_y of this TargetPos.
 
         **参数说明**：目标区域框右下Y坐标。
 

@@ -27,7 +27,7 @@ class CreateReportCustomEventRequest:
     }
 
     def __init__(self, integration_key=None, body=None):
-        """CreateReportCustomEventRequest
+        r"""CreateReportCustomEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateReportCustomEventRequest:
 
     @property
     def integration_key(self):
-        """Gets the integration_key of this CreateReportCustomEventRequest.
+        r"""Gets the integration_key of this CreateReportCustomEventRequest.
 
         集成ID
 
@@ -60,7 +60,7 @@ class CreateReportCustomEventRequest:
 
     @integration_key.setter
     def integration_key(self, integration_key):
-        """Sets the integration_key of this CreateReportCustomEventRequest.
+        r"""Sets the integration_key of this CreateReportCustomEventRequest.
 
         集成ID
 
@@ -71,7 +71,7 @@ class CreateReportCustomEventRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateReportCustomEventRequest.
+        r"""Gets the body of this CreateReportCustomEventRequest.
 
         :return: The body of this CreateReportCustomEventRequest.
         :rtype: :class:`huaweicloudsdkcoc.v1.ReportCustomEventRequestBody`
@@ -80,7 +80,7 @@ class CreateReportCustomEventRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateReportCustomEventRequest.
+        r"""Sets the body of this CreateReportCustomEventRequest.
 
         :param body: The body of this CreateReportCustomEventRequest.
         :type body: :class:`huaweicloudsdkcoc.v1.ReportCustomEventRequestBody`

@@ -39,7 +39,7 @@ class ListRtcHistoryQualityRequest:
     }
 
     def __init__(self, authorization=None, x_sdk_date=None, x_project_id=None, project_id=None, app=None, metric=None, start_date=None, end_date=None):
-        """ListRtcHistoryQualityRequest
+        r"""ListRtcHistoryQualityRequest
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class ListRtcHistoryQualityRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this ListRtcHistoryQualityRequest.
+        r"""Gets the authorization of this ListRtcHistoryQualityRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
@@ -100,7 +100,7 @@ class ListRtcHistoryQualityRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this ListRtcHistoryQualityRequest.
+        r"""Sets the authorization of this ListRtcHistoryQualityRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
@@ -111,7 +111,7 @@ class ListRtcHistoryQualityRequest:
 
     @property
     def x_sdk_date(self):
-        """Gets the x_sdk_date of this ListRtcHistoryQualityRequest.
+        r"""Gets the x_sdk_date of this ListRtcHistoryQualityRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。 
 
@@ -122,7 +122,7 @@ class ListRtcHistoryQualityRequest:
 
     @x_sdk_date.setter
     def x_sdk_date(self, x_sdk_date):
-        """Sets the x_sdk_date of this ListRtcHistoryQualityRequest.
+        r"""Sets the x_sdk_date of this ListRtcHistoryQualityRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。 
 
@@ -133,7 +133,7 @@ class ListRtcHistoryQualityRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListRtcHistoryQualityRequest.
+        r"""Gets the x_project_id of this ListRtcHistoryQualityRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
@@ -144,7 +144,7 @@ class ListRtcHistoryQualityRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListRtcHistoryQualityRequest.
+        r"""Sets the x_project_id of this ListRtcHistoryQualityRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
@@ -155,7 +155,7 @@ class ListRtcHistoryQualityRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListRtcHistoryQualityRequest.
+        r"""Gets the project_id of this ListRtcHistoryQualityRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
@@ -166,7 +166,7 @@ class ListRtcHistoryQualityRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListRtcHistoryQualityRequest.
+        r"""Sets the project_id of this ListRtcHistoryQualityRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
@@ -177,7 +177,7 @@ class ListRtcHistoryQualityRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListRtcHistoryQualityRequest.
+        r"""Gets the app of this ListRtcHistoryQualityRequest.
 
         应用标识 
 
@@ -188,7 +188,7 @@ class ListRtcHistoryQualityRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListRtcHistoryQualityRequest.
+        r"""Sets the app of this ListRtcHistoryQualityRequest.
 
         应用标识 
 
@@ -199,7 +199,7 @@ class ListRtcHistoryQualityRequest:
 
     @property
     def metric(self):
-        """Gets the metric of this ListRtcHistoryQualityRequest.
+        r"""Gets the metric of this ListRtcHistoryQualityRequest.
 
         查询的数据类型 - JoinSuccessRate：加入房间成功率 - JoinSuccess5SecsRate：5秒加入成功率 - VideoFreezeRate：视频卡顿率 - AudioFreezeRate：音频卡顿率 - FirstVideoRecvTime：首帧视频接收耗时 - FirstAudioRecvTime：首帧音频接收耗时 - PullStreamSuccessRate：拉流成功率 - PushStreamSuccessRate：推流成功率 - VideoUpstreamExcellentTransRate：客户端视频上行优质传输率 - AudioUpstreamExcellentTransRate：客户端音频上行优质传输率 - VideoExcellentTransRate：端到端视频优质传输率 - AudioExcellentTransRate：端到端音频优质传输率 - VideoTransDelay：端到端视频网络时，单位为毫秒，取当天所有用户网络延迟的中位数 - AudioTransDelay：端到端音频网络时延，单位为毫秒，取当天所有用户网络延迟的中位数 
 
@@ -210,7 +210,7 @@ class ListRtcHistoryQualityRequest:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this ListRtcHistoryQualityRequest.
+        r"""Sets the metric of this ListRtcHistoryQualityRequest.
 
         查询的数据类型 - JoinSuccessRate：加入房间成功率 - JoinSuccess5SecsRate：5秒加入成功率 - VideoFreezeRate：视频卡顿率 - AudioFreezeRate：音频卡顿率 - FirstVideoRecvTime：首帧视频接收耗时 - FirstAudioRecvTime：首帧音频接收耗时 - PullStreamSuccessRate：拉流成功率 - PushStreamSuccessRate：推流成功率 - VideoUpstreamExcellentTransRate：客户端视频上行优质传输率 - AudioUpstreamExcellentTransRate：客户端音频上行优质传输率 - VideoExcellentTransRate：端到端视频优质传输率 - AudioExcellentTransRate：端到端音频优质传输率 - VideoTransDelay：端到端视频网络时，单位为毫秒，取当天所有用户网络延迟的中位数 - AudioTransDelay：端到端音频网络时延，单位为毫秒，取当天所有用户网络延迟的中位数 
 
@@ -221,7 +221,7 @@ class ListRtcHistoryQualityRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ListRtcHistoryQualityRequest.
+        r"""Gets the start_date of this ListRtcHistoryQualityRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23，不写默认读取过去1天数据数据。 
 
@@ -232,7 +232,7 @@ class ListRtcHistoryQualityRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ListRtcHistoryQualityRequest.
+        r"""Sets the start_date of this ListRtcHistoryQualityRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23，不写默认读取过去1天数据数据。 
 
@@ -243,7 +243,7 @@ class ListRtcHistoryQualityRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ListRtcHistoryQualityRequest.
+        r"""Gets the end_date of this ListRtcHistoryQualityRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23 
 
@@ -254,7 +254,7 @@ class ListRtcHistoryQualityRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ListRtcHistoryQualityRequest.
+        r"""Sets the end_date of this ListRtcHistoryQualityRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23 
 

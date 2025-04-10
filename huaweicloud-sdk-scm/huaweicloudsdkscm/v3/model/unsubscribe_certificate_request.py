@@ -25,7 +25,7 @@ class UnsubscribeCertificateRequest:
     }
 
     def __init__(self, cert_id=None):
-        """UnsubscribeCertificateRequest
+        r"""UnsubscribeCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UnsubscribeCertificateRequest:
 
     @property
     def cert_id(self):
-        """Gets the cert_id of this UnsubscribeCertificateRequest.
+        r"""Gets the cert_id of this UnsubscribeCertificateRequest.
 
         证书id。
 
@@ -53,7 +53,7 @@ class UnsubscribeCertificateRequest:
 
     @cert_id.setter
     def cert_id(self, cert_id):
-        """Sets the cert_id of this UnsubscribeCertificateRequest.
+        r"""Sets the cert_id of this UnsubscribeCertificateRequest.
 
         证书id。
 

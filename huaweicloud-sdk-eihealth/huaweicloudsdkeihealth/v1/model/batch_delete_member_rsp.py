@@ -31,7 +31,7 @@ class BatchDeleteMemberRsp:
     }
 
     def __init__(self, id=None, name=None, status=None, failed_reason=None):
-        """BatchDeleteMemberRsp
+        r"""BatchDeleteMemberRsp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BatchDeleteMemberRsp:
 
     @property
     def id(self):
-        """Gets the id of this BatchDeleteMemberRsp.
+        r"""Gets the id of this BatchDeleteMemberRsp.
 
         用户id
 
@@ -75,7 +75,7 @@ class BatchDeleteMemberRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchDeleteMemberRsp.
+        r"""Sets the id of this BatchDeleteMemberRsp.
 
         用户id
 
@@ -86,7 +86,7 @@ class BatchDeleteMemberRsp:
 
     @property
     def name(self):
-        """Gets the name of this BatchDeleteMemberRsp.
+        r"""Gets the name of this BatchDeleteMemberRsp.
 
         用户名
 
@@ -97,7 +97,7 @@ class BatchDeleteMemberRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchDeleteMemberRsp.
+        r"""Sets the name of this BatchDeleteMemberRsp.
 
         用户名
 
@@ -108,7 +108,7 @@ class BatchDeleteMemberRsp:
 
     @property
     def status(self):
-        """Gets the status of this BatchDeleteMemberRsp.
+        r"""Gets the status of this BatchDeleteMemberRsp.
 
         删除结果
 
@@ -119,7 +119,7 @@ class BatchDeleteMemberRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchDeleteMemberRsp.
+        r"""Sets the status of this BatchDeleteMemberRsp.
 
         删除结果
 
@@ -130,7 +130,7 @@ class BatchDeleteMemberRsp:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this BatchDeleteMemberRsp.
+        r"""Gets the failed_reason of this BatchDeleteMemberRsp.
 
         失败原因
 
@@ -141,7 +141,7 @@ class BatchDeleteMemberRsp:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this BatchDeleteMemberRsp.
+        r"""Sets the failed_reason of this BatchDeleteMemberRsp.
 
         失败原因
 

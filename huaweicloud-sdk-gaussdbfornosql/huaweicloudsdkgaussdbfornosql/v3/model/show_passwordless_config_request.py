@@ -29,7 +29,7 @@ class ShowPasswordlessConfigRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ShowPasswordlessConfigRequest
+        r"""ShowPasswordlessConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowPasswordlessConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowPasswordlessConfigRequest.
+        r"""Gets the instance_id of this ShowPasswordlessConfigRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class ShowPasswordlessConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowPasswordlessConfigRequest.
+        r"""Sets the instance_id of this ShowPasswordlessConfigRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class ShowPasswordlessConfigRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowPasswordlessConfigRequest.
+        r"""Gets the offset of this ShowPasswordlessConfigRequest.
 
         索引位置偏移量，表示从查询到的免密配置列表偏移offset条数据后查询对应的免密配置。 取值大于或等于0。不传该参数时，查询偏移量默认为0，表示从第一条记录开始查询。
 
@@ -89,7 +89,7 @@ class ShowPasswordlessConfigRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowPasswordlessConfigRequest.
+        r"""Sets the offset of this ShowPasswordlessConfigRequest.
 
         索引位置偏移量，表示从查询到的免密配置列表偏移offset条数据后查询对应的免密配置。 取值大于或等于0。不传该参数时，查询偏移量默认为0，表示从第一条记录开始查询。
 
@@ -100,7 +100,7 @@ class ShowPasswordlessConfigRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowPasswordlessConfigRequest.
+        r"""Gets the limit of this ShowPasswordlessConfigRequest.
 
         查询个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条记录。
 
@@ -111,7 +111,7 @@ class ShowPasswordlessConfigRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowPasswordlessConfigRequest.
+        r"""Sets the limit of this ShowPasswordlessConfigRequest.
 
         查询个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条记录。
 

@@ -30,7 +30,7 @@ class ListIpGroupsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, ip_groups=None, page_info=None):
-        """ListIpGroupsResponse
+        r"""ListIpGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListIpGroupsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListIpGroupsResponse.
+        r"""Gets the request_id of this ListIpGroupsResponse.
 
         请求ID。
 
@@ -69,7 +69,7 @@ class ListIpGroupsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListIpGroupsResponse.
+        r"""Sets the request_id of this ListIpGroupsResponse.
 
         请求ID。
 
@@ -80,7 +80,7 @@ class ListIpGroupsResponse(SdkResponse):
 
     @property
     def ip_groups(self):
-        """Gets the ip_groups of this ListIpGroupsResponse.
+        r"""Gets the ip_groups of this ListIpGroupsResponse.
 
         :return: The ip_groups of this ListIpGroupsResponse.
         :rtype: list[:class:`huaweicloudsdkga.v1.IpGroupDetail`]
@@ -89,7 +89,7 @@ class ListIpGroupsResponse(SdkResponse):
 
     @ip_groups.setter
     def ip_groups(self, ip_groups):
-        """Sets the ip_groups of this ListIpGroupsResponse.
+        r"""Sets the ip_groups of this ListIpGroupsResponse.
 
         :param ip_groups: The ip_groups of this ListIpGroupsResponse.
         :type ip_groups: list[:class:`huaweicloudsdkga.v1.IpGroupDetail`]
@@ -98,7 +98,7 @@ class ListIpGroupsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListIpGroupsResponse.
+        r"""Gets the page_info of this ListIpGroupsResponse.
 
         :return: The page_info of this ListIpGroupsResponse.
         :rtype: :class:`huaweicloudsdkga.v1.PageInfo`
@@ -107,7 +107,7 @@ class ListIpGroupsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListIpGroupsResponse.
+        r"""Sets the page_info of this ListIpGroupsResponse.
 
         :param page_info: The page_info of this ListIpGroupsResponse.
         :type page_info: :class:`huaweicloudsdkga.v1.PageInfo`

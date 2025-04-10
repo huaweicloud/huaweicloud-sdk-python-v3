@@ -28,7 +28,7 @@ class RunFastaPreprocessResponse(SdkResponse):
     }
 
     def __init__(self, count=None, has_more=None):
-        """RunFastaPreprocessResponse
+        r"""RunFastaPreprocessResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RunFastaPreprocessResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this RunFastaPreprocessResponse.
+        r"""Gets the count of this RunFastaPreprocessResponse.
 
         已知的蛋白序列数量
 
@@ -62,7 +62,7 @@ class RunFastaPreprocessResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this RunFastaPreprocessResponse.
+        r"""Sets the count of this RunFastaPreprocessResponse.
 
         已知的蛋白序列数量
 
@@ -73,7 +73,7 @@ class RunFastaPreprocessResponse(SdkResponse):
 
     @property
     def has_more(self):
-        """Gets the has_more of this RunFastaPreprocessResponse.
+        r"""Gets the has_more of this RunFastaPreprocessResponse.
 
         文件中是否还有更多氨基酸序列没有处理
 
@@ -84,7 +84,7 @@ class RunFastaPreprocessResponse(SdkResponse):
 
     @has_more.setter
     def has_more(self, has_more):
-        """Sets the has_more of this RunFastaPreprocessResponse.
+        r"""Sets the has_more of this RunFastaPreprocessResponse.
 
         文件中是否还有更多氨基酸序列没有处理
 

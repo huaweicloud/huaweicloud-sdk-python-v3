@@ -28,7 +28,7 @@ class UpdatePrivateBucketAccessResponse(SdkResponse):
     }
 
     def __init__(self, status=None, x_request_id=None):
-        """UpdatePrivateBucketAccessResponse
+        r"""UpdatePrivateBucketAccessResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdatePrivateBucketAccessResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdatePrivateBucketAccessResponse.
+        r"""Gets the status of this UpdatePrivateBucketAccessResponse.
 
         桶开启关闭状态（true：开启；false：关闭）
 
@@ -62,7 +62,7 @@ class UpdatePrivateBucketAccessResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdatePrivateBucketAccessResponse.
+        r"""Sets the status of this UpdatePrivateBucketAccessResponse.
 
         桶开启关闭状态（true：开启；false：关闭）
 
@@ -73,7 +73,7 @@ class UpdatePrivateBucketAccessResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdatePrivateBucketAccessResponse.
+        r"""Gets the x_request_id of this UpdatePrivateBucketAccessResponse.
 
         :return: The x_request_id of this UpdatePrivateBucketAccessResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class UpdatePrivateBucketAccessResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdatePrivateBucketAccessResponse.
+        r"""Sets the x_request_id of this UpdatePrivateBucketAccessResponse.
 
         :param x_request_id: The x_request_id of this UpdatePrivateBucketAccessResponse.
         :type x_request_id: str

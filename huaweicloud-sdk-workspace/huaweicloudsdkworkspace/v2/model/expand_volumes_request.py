@@ -27,7 +27,7 @@ class ExpandVolumesRequest:
     }
 
     def __init__(self, service_transaction_id=None, body=None):
-        """ExpandVolumesRequest
+        r"""ExpandVolumesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExpandVolumesRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this ExpandVolumesRequest.
+        r"""Gets the service_transaction_id of this ExpandVolumesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -61,7 +61,7 @@ class ExpandVolumesRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this ExpandVolumesRequest.
+        r"""Sets the service_transaction_id of this ExpandVolumesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -72,7 +72,7 @@ class ExpandVolumesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExpandVolumesRequest.
+        r"""Gets the body of this ExpandVolumesRequest.
 
         :return: The body of this ExpandVolumesRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ExpandDesktopsVolumesReq`
@@ -81,7 +81,7 @@ class ExpandVolumesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExpandVolumesRequest.
+        r"""Sets the body of this ExpandVolumesRequest.
 
         :param body: The body of this ExpandVolumesRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ExpandDesktopsVolumesReq`

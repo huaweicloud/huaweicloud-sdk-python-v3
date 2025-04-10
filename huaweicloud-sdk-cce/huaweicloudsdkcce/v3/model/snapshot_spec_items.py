@@ -35,7 +35,7 @@ class SnapshotSpecItems:
     }
 
     def __init__(self, id=None, type=None, status=None, creation_timestamp=None, update_timestamp=None, message=None):
-        """SnapshotSpecItems
+        r"""SnapshotSpecItems
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SnapshotSpecItems:
 
     @property
     def id(self):
-        """Gets the id of this SnapshotSpecItems.
+        r"""Gets the id of this SnapshotSpecItems.
 
         子任务ID
 
@@ -89,7 +89,7 @@ class SnapshotSpecItems:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SnapshotSpecItems.
+        r"""Sets the id of this SnapshotSpecItems.
 
         子任务ID
 
@@ -100,7 +100,7 @@ class SnapshotSpecItems:
 
     @property
     def type(self):
-        """Gets the type of this SnapshotSpecItems.
+        r"""Gets the type of this SnapshotSpecItems.
 
         子任务类型
 
@@ -111,7 +111,7 @@ class SnapshotSpecItems:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SnapshotSpecItems.
+        r"""Sets the type of this SnapshotSpecItems.
 
         子任务类型
 
@@ -122,7 +122,7 @@ class SnapshotSpecItems:
 
     @property
     def status(self):
-        """Gets the status of this SnapshotSpecItems.
+        r"""Gets the status of this SnapshotSpecItems.
 
         状态
 
@@ -133,7 +133,7 @@ class SnapshotSpecItems:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SnapshotSpecItems.
+        r"""Sets the status of this SnapshotSpecItems.
 
         状态
 
@@ -144,7 +144,7 @@ class SnapshotSpecItems:
 
     @property
     def creation_timestamp(self):
-        """Gets the creation_timestamp of this SnapshotSpecItems.
+        r"""Gets the creation_timestamp of this SnapshotSpecItems.
 
         任务创建时间
 
@@ -155,7 +155,7 @@ class SnapshotSpecItems:
 
     @creation_timestamp.setter
     def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this SnapshotSpecItems.
+        r"""Sets the creation_timestamp of this SnapshotSpecItems.
 
         任务创建时间
 
@@ -166,7 +166,7 @@ class SnapshotSpecItems:
 
     @property
     def update_timestamp(self):
-        """Gets the update_timestamp of this SnapshotSpecItems.
+        r"""Gets the update_timestamp of this SnapshotSpecItems.
 
         任务更新时间
 
@@ -177,7 +177,7 @@ class SnapshotSpecItems:
 
     @update_timestamp.setter
     def update_timestamp(self, update_timestamp):
-        """Sets the update_timestamp of this SnapshotSpecItems.
+        r"""Sets the update_timestamp of this SnapshotSpecItems.
 
         任务更新时间
 
@@ -188,7 +188,7 @@ class SnapshotSpecItems:
 
     @property
     def message(self):
-        """Gets the message of this SnapshotSpecItems.
+        r"""Gets the message of this SnapshotSpecItems.
 
         信息
 
@@ -199,7 +199,7 @@ class SnapshotSpecItems:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this SnapshotSpecItems.
+        r"""Sets the message of this SnapshotSpecItems.
 
         信息
 

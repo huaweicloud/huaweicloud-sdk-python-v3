@@ -27,7 +27,7 @@ class CreateTag:
     }
 
     def __init__(self, key=None, value=None):
-        """CreateTag
+        r"""CreateTag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateTag:
 
     @property
     def key(self):
-        """Gets the key of this CreateTag.
+        r"""Gets the key of this CreateTag.
 
         标签键
 
@@ -61,7 +61,7 @@ class CreateTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CreateTag.
+        r"""Sets the key of this CreateTag.
 
         标签键
 
@@ -72,7 +72,7 @@ class CreateTag:
 
     @property
     def value(self):
-        """Gets the value of this CreateTag.
+        r"""Gets the value of this CreateTag.
 
         标签值
 
@@ -83,7 +83,7 @@ class CreateTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateTag.
+        r"""Sets the value of this CreateTag.
 
         标签值
 

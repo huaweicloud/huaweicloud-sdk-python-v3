@@ -40,7 +40,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
     }
 
     def __init__(self, enable_experience=None, enable_hss_service=None, enable_image_scan=None, enable_sm3=None, enable_image_sync=None, enable_cci_service=None, enable_image_label=None, enable_pipeline=None):
-        """ShowShareFeatureGatesResponse
+        r"""ShowShareFeatureGatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @property
     def enable_experience(self):
-        """Gets the enable_experience of this ShowShareFeatureGatesResponse.
+        r"""Gets the enable_experience of this ShowShareFeatureGatesResponse.
 
         是否支持体验馆
 
@@ -104,7 +104,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @enable_experience.setter
     def enable_experience(self, enable_experience):
-        """Sets the enable_experience of this ShowShareFeatureGatesResponse.
+        r"""Sets the enable_experience of this ShowShareFeatureGatesResponse.
 
         是否支持体验馆
 
@@ -115,7 +115,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @property
     def enable_hss_service(self):
-        """Gets the enable_hss_service of this ShowShareFeatureGatesResponse.
+        r"""Gets the enable_hss_service of this ShowShareFeatureGatesResponse.
 
         是否支持对接hss服务
 
@@ -126,7 +126,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @enable_hss_service.setter
     def enable_hss_service(self, enable_hss_service):
-        """Sets the enable_hss_service of this ShowShareFeatureGatesResponse.
+        r"""Sets the enable_hss_service of this ShowShareFeatureGatesResponse.
 
         是否支持对接hss服务
 
@@ -137,7 +137,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @property
     def enable_image_scan(self):
-        """Gets the enable_image_scan of this ShowShareFeatureGatesResponse.
+        r"""Gets the enable_image_scan of this ShowShareFeatureGatesResponse.
 
         是否支持镜像扫描
 
@@ -148,7 +148,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @enable_image_scan.setter
     def enable_image_scan(self, enable_image_scan):
-        """Sets the enable_image_scan of this ShowShareFeatureGatesResponse.
+        r"""Sets the enable_image_scan of this ShowShareFeatureGatesResponse.
 
         是否支持镜像扫描
 
@@ -159,7 +159,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @property
     def enable_sm3(self):
-        """Gets the enable_sm3 of this ShowShareFeatureGatesResponse.
+        r"""Gets the enable_sm3 of this ShowShareFeatureGatesResponse.
 
         是否支持国密场景
 
@@ -170,7 +170,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @enable_sm3.setter
     def enable_sm3(self, enable_sm3):
-        """Sets the enable_sm3 of this ShowShareFeatureGatesResponse.
+        r"""Sets the enable_sm3 of this ShowShareFeatureGatesResponse.
 
         是否支持国密场景
 
@@ -181,7 +181,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @property
     def enable_image_sync(self):
-        """Gets the enable_image_sync of this ShowShareFeatureGatesResponse.
+        r"""Gets the enable_image_sync of this ShowShareFeatureGatesResponse.
 
         是否支持镜像同步
 
@@ -192,7 +192,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @enable_image_sync.setter
     def enable_image_sync(self, enable_image_sync):
-        """Sets the enable_image_sync of this ShowShareFeatureGatesResponse.
+        r"""Sets the enable_image_sync of this ShowShareFeatureGatesResponse.
 
         是否支持镜像同步
 
@@ -203,7 +203,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @property
     def enable_cci_service(self):
-        """Gets the enable_cci_service of this ShowShareFeatureGatesResponse.
+        r"""Gets the enable_cci_service of this ShowShareFeatureGatesResponse.
 
         是否支持对接cci服务
 
@@ -214,7 +214,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @enable_cci_service.setter
     def enable_cci_service(self, enable_cci_service):
-        """Sets the enable_cci_service of this ShowShareFeatureGatesResponse.
+        r"""Sets the enable_cci_service of this ShowShareFeatureGatesResponse.
 
         是否支持对接cci服务
 
@@ -225,7 +225,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @property
     def enable_image_label(self):
-        """Gets the enable_image_label of this ShowShareFeatureGatesResponse.
+        r"""Gets the enable_image_label of this ShowShareFeatureGatesResponse.
 
         是否支持镜像标签
 
@@ -236,7 +236,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @enable_image_label.setter
     def enable_image_label(self, enable_image_label):
-        """Sets the enable_image_label of this ShowShareFeatureGatesResponse.
+        r"""Sets the enable_image_label of this ShowShareFeatureGatesResponse.
 
         是否支持镜像标签
 
@@ -247,7 +247,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @property
     def enable_pipeline(self):
-        """Gets the enable_pipeline of this ShowShareFeatureGatesResponse.
+        r"""Gets the enable_pipeline of this ShowShareFeatureGatesResponse.
 
         是否支持流水线服务
 
@@ -258,7 +258,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
 
     @enable_pipeline.setter
     def enable_pipeline(self, enable_pipeline):
-        """Sets the enable_pipeline of this ShowShareFeatureGatesResponse.
+        r"""Sets the enable_pipeline of this ShowShareFeatureGatesResponse.
 
         是否支持流水线服务
 

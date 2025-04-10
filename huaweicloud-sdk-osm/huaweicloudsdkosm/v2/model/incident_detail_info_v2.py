@@ -59,7 +59,7 @@ class IncidentDetailInfoV2:
     }
 
     def __init__(self, xcustomer_id=None, xcustomer_name=None, status=None, judgement=None, incident_id=None, business_type_name=None, incident_type_name=None, customer_id=None, dc_name=None, simple_description=None, source_name=None, create_time=None, message_list=None, incident_satisfaction=None, severity_name=None, business_ownership=None, resolve_time=None, ext_info=None):
-        """IncidentDetailInfoV2
+        r"""IncidentDetailInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -151,7 +151,7 @@ class IncidentDetailInfoV2:
 
     @property
     def xcustomer_id(self):
-        """Gets the xcustomer_id of this IncidentDetailInfoV2.
+        r"""Gets the xcustomer_id of this IncidentDetailInfoV2.
 
         子用户id
 
@@ -162,7 +162,7 @@ class IncidentDetailInfoV2:
 
     @xcustomer_id.setter
     def xcustomer_id(self, xcustomer_id):
-        """Sets the xcustomer_id of this IncidentDetailInfoV2.
+        r"""Sets the xcustomer_id of this IncidentDetailInfoV2.
 
         子用户id
 
@@ -173,7 +173,7 @@ class IncidentDetailInfoV2:
 
     @property
     def xcustomer_name(self):
-        """Gets the xcustomer_name of this IncidentDetailInfoV2.
+        r"""Gets the xcustomer_name of this IncidentDetailInfoV2.
 
         子用户名称
 
@@ -184,7 +184,7 @@ class IncidentDetailInfoV2:
 
     @xcustomer_name.setter
     def xcustomer_name(self, xcustomer_name):
-        """Sets the xcustomer_name of this IncidentDetailInfoV2.
+        r"""Sets the xcustomer_name of this IncidentDetailInfoV2.
 
         子用户名称
 
@@ -195,7 +195,7 @@ class IncidentDetailInfoV2:
 
     @property
     def status(self):
-        """Gets the status of this IncidentDetailInfoV2.
+        r"""Gets the status of this IncidentDetailInfoV2.
 
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 
@@ -206,7 +206,7 @@ class IncidentDetailInfoV2:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IncidentDetailInfoV2.
+        r"""Sets the status of this IncidentDetailInfoV2.
 
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 
@@ -217,7 +217,7 @@ class IncidentDetailInfoV2:
 
     @property
     def judgement(self):
-        """Gets the judgement of this IncidentDetailInfoV2.
+        r"""Gets the judgement of this IncidentDetailInfoV2.
 
         评价内容
 
@@ -228,7 +228,7 @@ class IncidentDetailInfoV2:
 
     @judgement.setter
     def judgement(self, judgement):
-        """Sets the judgement of this IncidentDetailInfoV2.
+        r"""Sets the judgement of this IncidentDetailInfoV2.
 
         评价内容
 
@@ -239,7 +239,7 @@ class IncidentDetailInfoV2:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this IncidentDetailInfoV2.
+        r"""Gets the incident_id of this IncidentDetailInfoV2.
 
         工单id
 
@@ -250,7 +250,7 @@ class IncidentDetailInfoV2:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this IncidentDetailInfoV2.
+        r"""Sets the incident_id of this IncidentDetailInfoV2.
 
         工单id
 
@@ -261,7 +261,7 @@ class IncidentDetailInfoV2:
 
     @property
     def business_type_name(self):
-        """Gets the business_type_name of this IncidentDetailInfoV2.
+        r"""Gets the business_type_name of this IncidentDetailInfoV2.
 
         问题类型名称
 
@@ -272,7 +272,7 @@ class IncidentDetailInfoV2:
 
     @business_type_name.setter
     def business_type_name(self, business_type_name):
-        """Sets the business_type_name of this IncidentDetailInfoV2.
+        r"""Sets the business_type_name of this IncidentDetailInfoV2.
 
         问题类型名称
 
@@ -283,7 +283,7 @@ class IncidentDetailInfoV2:
 
     @property
     def incident_type_name(self):
-        """Gets the incident_type_name of this IncidentDetailInfoV2.
+        r"""Gets the incident_type_name of this IncidentDetailInfoV2.
 
         工单类型名称
 
@@ -294,7 +294,7 @@ class IncidentDetailInfoV2:
 
     @incident_type_name.setter
     def incident_type_name(self, incident_type_name):
-        """Sets the incident_type_name of this IncidentDetailInfoV2.
+        r"""Sets the incident_type_name of this IncidentDetailInfoV2.
 
         工单类型名称
 
@@ -305,7 +305,7 @@ class IncidentDetailInfoV2:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this IncidentDetailInfoV2.
+        r"""Gets the customer_id of this IncidentDetailInfoV2.
 
         客户id
 
@@ -316,7 +316,7 @@ class IncidentDetailInfoV2:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this IncidentDetailInfoV2.
+        r"""Sets the customer_id of this IncidentDetailInfoV2.
 
         客户id
 
@@ -327,7 +327,7 @@ class IncidentDetailInfoV2:
 
     @property
     def dc_name(self):
-        """Gets the dc_name of this IncidentDetailInfoV2.
+        r"""Gets the dc_name of this IncidentDetailInfoV2.
 
         区域名称
 
@@ -338,7 +338,7 @@ class IncidentDetailInfoV2:
 
     @dc_name.setter
     def dc_name(self, dc_name):
-        """Sets the dc_name of this IncidentDetailInfoV2.
+        r"""Sets the dc_name of this IncidentDetailInfoV2.
 
         区域名称
 
@@ -349,7 +349,7 @@ class IncidentDetailInfoV2:
 
     @property
     def simple_description(self):
-        """Gets the simple_description of this IncidentDetailInfoV2.
+        r"""Gets the simple_description of this IncidentDetailInfoV2.
 
         简要描述
 
@@ -360,7 +360,7 @@ class IncidentDetailInfoV2:
 
     @simple_description.setter
     def simple_description(self, simple_description):
-        """Sets the simple_description of this IncidentDetailInfoV2.
+        r"""Sets the simple_description of this IncidentDetailInfoV2.
 
         简要描述
 
@@ -371,7 +371,7 @@ class IncidentDetailInfoV2:
 
     @property
     def source_name(self):
-        """Gets the source_name of this IncidentDetailInfoV2.
+        r"""Gets the source_name of this IncidentDetailInfoV2.
 
         来源名称
 
@@ -382,7 +382,7 @@ class IncidentDetailInfoV2:
 
     @source_name.setter
     def source_name(self, source_name):
-        """Sets the source_name of this IncidentDetailInfoV2.
+        r"""Sets the source_name of this IncidentDetailInfoV2.
 
         来源名称
 
@@ -393,7 +393,7 @@ class IncidentDetailInfoV2:
 
     @property
     def create_time(self):
-        """Gets the create_time of this IncidentDetailInfoV2.
+        r"""Gets the create_time of this IncidentDetailInfoV2.
 
         创建时间
 
@@ -404,7 +404,7 @@ class IncidentDetailInfoV2:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this IncidentDetailInfoV2.
+        r"""Sets the create_time of this IncidentDetailInfoV2.
 
         创建时间
 
@@ -415,7 +415,7 @@ class IncidentDetailInfoV2:
 
     @property
     def message_list(self):
-        """Gets the message_list of this IncidentDetailInfoV2.
+        r"""Gets the message_list of this IncidentDetailInfoV2.
 
         留言列表
 
@@ -426,7 +426,7 @@ class IncidentDetailInfoV2:
 
     @message_list.setter
     def message_list(self, message_list):
-        """Sets the message_list of this IncidentDetailInfoV2.
+        r"""Sets the message_list of this IncidentDetailInfoV2.
 
         留言列表
 
@@ -437,7 +437,7 @@ class IncidentDetailInfoV2:
 
     @property
     def incident_satisfaction(self):
-        """Gets the incident_satisfaction of this IncidentDetailInfoV2.
+        r"""Gets the incident_satisfaction of this IncidentDetailInfoV2.
 
         满意度列表
 
@@ -448,7 +448,7 @@ class IncidentDetailInfoV2:
 
     @incident_satisfaction.setter
     def incident_satisfaction(self, incident_satisfaction):
-        """Sets the incident_satisfaction of this IncidentDetailInfoV2.
+        r"""Sets the incident_satisfaction of this IncidentDetailInfoV2.
 
         满意度列表
 
@@ -459,7 +459,7 @@ class IncidentDetailInfoV2:
 
     @property
     def severity_name(self):
-        """Gets the severity_name of this IncidentDetailInfoV2.
+        r"""Gets the severity_name of this IncidentDetailInfoV2.
 
         严重性名称
 
@@ -470,7 +470,7 @@ class IncidentDetailInfoV2:
 
     @severity_name.setter
     def severity_name(self, severity_name):
-        """Sets the severity_name of this IncidentDetailInfoV2.
+        r"""Sets the severity_name of this IncidentDetailInfoV2.
 
         严重性名称
 
@@ -481,7 +481,7 @@ class IncidentDetailInfoV2:
 
     @property
     def business_ownership(self):
-        """Gets the business_ownership of this IncidentDetailInfoV2.
+        r"""Gets the business_ownership of this IncidentDetailInfoV2.
 
         业务归属 0华为云 1BP伙伴 2ISV
 
@@ -492,7 +492,7 @@ class IncidentDetailInfoV2:
 
     @business_ownership.setter
     def business_ownership(self, business_ownership):
-        """Sets the business_ownership of this IncidentDetailInfoV2.
+        r"""Sets the business_ownership of this IncidentDetailInfoV2.
 
         业务归属 0华为云 1BP伙伴 2ISV
 
@@ -503,7 +503,7 @@ class IncidentDetailInfoV2:
 
     @property
     def resolve_time(self):
-        """Gets the resolve_time of this IncidentDetailInfoV2.
+        r"""Gets the resolve_time of this IncidentDetailInfoV2.
 
         解决时间
 
@@ -514,7 +514,7 @@ class IncidentDetailInfoV2:
 
     @resolve_time.setter
     def resolve_time(self, resolve_time):
-        """Sets the resolve_time of this IncidentDetailInfoV2.
+        r"""Sets the resolve_time of this IncidentDetailInfoV2.
 
         解决时间
 
@@ -525,7 +525,7 @@ class IncidentDetailInfoV2:
 
     @property
     def ext_info(self):
-        """Gets the ext_info of this IncidentDetailInfoV2.
+        r"""Gets the ext_info of this IncidentDetailInfoV2.
 
         :return: The ext_info of this IncidentDetailInfoV2.
         :rtype: :class:`huaweicloudsdkosm.v2.IncidentDetailExtInfoV2`
@@ -534,7 +534,7 @@ class IncidentDetailInfoV2:
 
     @ext_info.setter
     def ext_info(self, ext_info):
-        """Sets the ext_info of this IncidentDetailInfoV2.
+        r"""Sets the ext_info of this IncidentDetailInfoV2.
 
         :param ext_info: The ext_info of this IncidentDetailInfoV2.
         :type ext_info: :class:`huaweicloudsdkosm.v2.IncidentDetailExtInfoV2`

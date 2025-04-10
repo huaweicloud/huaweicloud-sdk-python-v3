@@ -59,7 +59,7 @@ class CertificateInfo:
     }
 
     def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, id=None, name=None, private_key=None, type=None, created_at=None, updated_at=None, expire_time=None, project_id=None, enc_certificate=None, enc_private_key=None, scm_certificate_id=None, common_name=None, fingerprint=None, subject_alternative_names=None):
-        """CertificateInfo
+        r"""CertificateInfo
 
         The model defined in huaweicloud sdk
 
@@ -150,7 +150,7 @@ class CertificateInfo:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CertificateInfo.
+        r"""Gets the admin_state_up of this CertificateInfo.
 
         证书的管理状态。  不支持该字段，请勿使用。
 
@@ -161,7 +161,7 @@ class CertificateInfo:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CertificateInfo.
+        r"""Sets the admin_state_up of this CertificateInfo.
 
         证书的管理状态。  不支持该字段，请勿使用。
 
@@ -172,7 +172,7 @@ class CertificateInfo:
 
     @property
     def certificate(self):
-        """Gets the certificate of this CertificateInfo.
+        r"""Gets the certificate of this CertificateInfo.
 
         证书的内容。PEM编码格式。
 
@@ -183,7 +183,7 @@ class CertificateInfo:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this CertificateInfo.
+        r"""Sets the certificate of this CertificateInfo.
 
         证书的内容。PEM编码格式。
 
@@ -194,7 +194,7 @@ class CertificateInfo:
 
     @property
     def description(self):
-        """Gets the description of this CertificateInfo.
+        r"""Gets the description of this CertificateInfo.
 
         证书的描述。
 
@@ -205,7 +205,7 @@ class CertificateInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CertificateInfo.
+        r"""Sets the description of this CertificateInfo.
 
         证书的描述。
 
@@ -216,7 +216,7 @@ class CertificateInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this CertificateInfo.
+        r"""Gets the domain of this CertificateInfo.
 
         服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分隔，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分隔，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com。  泛域名：在普通域名的基础上仅允许首字母为\"\\*\"。例：\\*.test.com
 
@@ -227,7 +227,7 @@ class CertificateInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CertificateInfo.
+        r"""Sets the domain of this CertificateInfo.
 
         服务器证书所签域名。该字段仅type为server时有效。  总长度为0-10000，由若干普通域名或泛域名组成，域名之间以\",\"分隔，不超过100个域名。  普通域名：由若干字符串组成，字符串间以\".\"分隔，单个字符串长度不超过63个字符， 只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com。  泛域名：在普通域名的基础上仅允许首字母为\"\\*\"。例：\\*.test.com
 
@@ -238,7 +238,7 @@ class CertificateInfo:
 
     @property
     def id(self):
-        """Gets the id of this CertificateInfo.
+        r"""Gets the id of this CertificateInfo.
 
         证书ID。
 
@@ -249,7 +249,7 @@ class CertificateInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CertificateInfo.
+        r"""Sets the id of this CertificateInfo.
 
         证书ID。
 
@@ -260,7 +260,7 @@ class CertificateInfo:
 
     @property
     def name(self):
-        """Gets the name of this CertificateInfo.
+        r"""Gets the name of this CertificateInfo.
 
         证书的名称。
 
@@ -271,7 +271,7 @@ class CertificateInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CertificateInfo.
+        r"""Sets the name of this CertificateInfo.
 
         证书的名称。
 
@@ -282,7 +282,7 @@ class CertificateInfo:
 
     @property
     def private_key(self):
-        """Gets the private_key of this CertificateInfo.
+        r"""Gets the private_key of this CertificateInfo.
 
         服务器证书的私钥。PEM编码格式。  当type为client时，该参数被忽略，不影响证书的创建和使用。  当type为server时，该字段必须符合格式要求，且私钥必须是有效的。
 
@@ -293,7 +293,7 @@ class CertificateInfo:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this CertificateInfo.
+        r"""Sets the private_key of this CertificateInfo.
 
         服务器证书的私钥。PEM编码格式。  当type为client时，该参数被忽略，不影响证书的创建和使用。  当type为server时，该字段必须符合格式要求，且私钥必须是有效的。
 
@@ -304,7 +304,7 @@ class CertificateInfo:
 
     @property
     def type(self):
-        """Gets the type of this CertificateInfo.
+        r"""Gets the type of this CertificateInfo.
 
         SSL证书的类型。分为服务器证书(server)、CA证书(client)。默认值：server。
 
@@ -315,7 +315,7 @@ class CertificateInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CertificateInfo.
+        r"""Sets the type of this CertificateInfo.
 
         SSL证书的类型。分为服务器证书(server)、CA证书(client)。默认值：server。
 
@@ -326,7 +326,7 @@ class CertificateInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CertificateInfo.
+        r"""Gets the created_at of this CertificateInfo.
 
         证书创建时间。
 
@@ -337,7 +337,7 @@ class CertificateInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CertificateInfo.
+        r"""Sets the created_at of this CertificateInfo.
 
         证书创建时间。
 
@@ -348,7 +348,7 @@ class CertificateInfo:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CertificateInfo.
+        r"""Gets the updated_at of this CertificateInfo.
 
         证书更新时间。
 
@@ -359,7 +359,7 @@ class CertificateInfo:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CertificateInfo.
+        r"""Sets the updated_at of this CertificateInfo.
 
         证书更新时间。
 
@@ -370,7 +370,7 @@ class CertificateInfo:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this CertificateInfo.
+        r"""Gets the expire_time of this CertificateInfo.
 
         证书使用截止时间。
 
@@ -381,7 +381,7 @@ class CertificateInfo:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this CertificateInfo.
+        r"""Sets the expire_time of this CertificateInfo.
 
         证书使用截止时间。
 
@@ -392,7 +392,7 @@ class CertificateInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CertificateInfo.
+        r"""Gets the project_id of this CertificateInfo.
 
         证书所在项目ID。
 
@@ -403,7 +403,7 @@ class CertificateInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CertificateInfo.
+        r"""Sets the project_id of this CertificateInfo.
 
         证书所在项目ID。
 
@@ -414,7 +414,7 @@ class CertificateInfo:
 
     @property
     def enc_certificate(self):
-        """Gets the enc_certificate of this CertificateInfo.
+        r"""Gets the enc_certificate of this CertificateInfo.
 
         HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
 
@@ -425,7 +425,7 @@ class CertificateInfo:
 
     @enc_certificate.setter
     def enc_certificate(self, enc_certificate):
-        """Sets the enc_certificate of this CertificateInfo.
+        r"""Sets the enc_certificate of this CertificateInfo.
 
         HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
 
@@ -436,7 +436,7 @@ class CertificateInfo:
 
     @property
     def enc_private_key(self):
-        """Gets the enc_private_key of this CertificateInfo.
+        r"""Gets the enc_private_key of this CertificateInfo.
 
         HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
 
@@ -447,7 +447,7 @@ class CertificateInfo:
 
     @enc_private_key.setter
     def enc_private_key(self, enc_private_key):
-        """Sets the enc_private_key of this CertificateInfo.
+        r"""Sets the enc_private_key of this CertificateInfo.
 
         HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
 
@@ -458,7 +458,7 @@ class CertificateInfo:
 
     @property
     def scm_certificate_id(self):
-        """Gets the scm_certificate_id of this CertificateInfo.
+        r"""Gets the scm_certificate_id of this CertificateInfo.
 
         SCM证书ID
 
@@ -469,7 +469,7 @@ class CertificateInfo:
 
     @scm_certificate_id.setter
     def scm_certificate_id(self, scm_certificate_id):
-        """Sets the scm_certificate_id of this CertificateInfo.
+        r"""Sets the scm_certificate_id of this CertificateInfo.
 
         SCM证书ID
 
@@ -480,7 +480,7 @@ class CertificateInfo:
 
     @property
     def common_name(self):
-        """Gets the common_name of this CertificateInfo.
+        r"""Gets the common_name of this CertificateInfo.
 
         证书绑定的主域名。
 
@@ -491,7 +491,7 @@ class CertificateInfo:
 
     @common_name.setter
     def common_name(self, common_name):
-        """Sets the common_name of this CertificateInfo.
+        r"""Sets the common_name of this CertificateInfo.
 
         证书绑定的主域名。
 
@@ -502,7 +502,7 @@ class CertificateInfo:
 
     @property
     def fingerprint(self):
-        """Gets the fingerprint of this CertificateInfo.
+        r"""Gets the fingerprint of this CertificateInfo.
 
         证书指纹。
 
@@ -513,7 +513,7 @@ class CertificateInfo:
 
     @fingerprint.setter
     def fingerprint(self, fingerprint):
-        """Sets the fingerprint of this CertificateInfo.
+        r"""Sets the fingerprint of this CertificateInfo.
 
         证书指纹。
 
@@ -524,7 +524,7 @@ class CertificateInfo:
 
     @property
     def subject_alternative_names(self):
-        """Gets the subject_alternative_names of this CertificateInfo.
+        r"""Gets the subject_alternative_names of this CertificateInfo.
 
         证书绑定的所有域名。
 
@@ -535,7 +535,7 @@ class CertificateInfo:
 
     @subject_alternative_names.setter
     def subject_alternative_names(self, subject_alternative_names):
-        """Sets the subject_alternative_names of this CertificateInfo.
+        r"""Sets the subject_alternative_names of this CertificateInfo.
 
         证书绑定的所有域名。
 

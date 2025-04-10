@@ -55,7 +55,7 @@ class DownloadCasesRequest:
     }
 
     def __init__(self, language=None, timezone=None, incident_id=None, query_start_time=None, query_end_time=None, x_customer_name=None, search_key=None, status=None, customer_id=None, tenant_source_id_list=None, sub_customer_id=None, offset=None, limit=None, x_site=None, x_language=None, x_time_zone=None):
-        """DownloadCasesRequest
+        r"""DownloadCasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -146,7 +146,7 @@ class DownloadCasesRequest:
 
     @property
     def language(self):
-        """Gets the language of this DownloadCasesRequest.
+        r"""Gets the language of this DownloadCasesRequest.
 
         语言
 
@@ -157,7 +157,7 @@ class DownloadCasesRequest:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this DownloadCasesRequest.
+        r"""Sets the language of this DownloadCasesRequest.
 
         语言
 
@@ -168,7 +168,7 @@ class DownloadCasesRequest:
 
     @property
     def timezone(self):
-        """Gets the timezone of this DownloadCasesRequest.
+        r"""Gets the timezone of this DownloadCasesRequest.
 
         时区
 
@@ -179,7 +179,7 @@ class DownloadCasesRequest:
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this DownloadCasesRequest.
+        r"""Sets the timezone of this DownloadCasesRequest.
 
         时区
 
@@ -190,7 +190,7 @@ class DownloadCasesRequest:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this DownloadCasesRequest.
+        r"""Gets the incident_id of this DownloadCasesRequest.
 
         工单id
 
@@ -201,7 +201,7 @@ class DownloadCasesRequest:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this DownloadCasesRequest.
+        r"""Sets the incident_id of this DownloadCasesRequest.
 
         工单id
 
@@ -212,7 +212,7 @@ class DownloadCasesRequest:
 
     @property
     def query_start_time(self):
-        """Gets the query_start_time of this DownloadCasesRequest.
+        r"""Gets the query_start_time of this DownloadCasesRequest.
 
         查询开始时间
 
@@ -223,7 +223,7 @@ class DownloadCasesRequest:
 
     @query_start_time.setter
     def query_start_time(self, query_start_time):
-        """Sets the query_start_time of this DownloadCasesRequest.
+        r"""Sets the query_start_time of this DownloadCasesRequest.
 
         查询开始时间
 
@@ -234,7 +234,7 @@ class DownloadCasesRequest:
 
     @property
     def query_end_time(self):
-        """Gets the query_end_time of this DownloadCasesRequest.
+        r"""Gets the query_end_time of this DownloadCasesRequest.
 
         查询结束时间
 
@@ -245,7 +245,7 @@ class DownloadCasesRequest:
 
     @query_end_time.setter
     def query_end_time(self, query_end_time):
-        """Sets the query_end_time of this DownloadCasesRequest.
+        r"""Sets the query_end_time of this DownloadCasesRequest.
 
         查询结束时间
 
@@ -256,7 +256,7 @@ class DownloadCasesRequest:
 
     @property
     def x_customer_name(self):
-        """Gets the x_customer_name of this DownloadCasesRequest.
+        r"""Gets the x_customer_name of this DownloadCasesRequest.
 
         子用户名称
 
@@ -267,7 +267,7 @@ class DownloadCasesRequest:
 
     @x_customer_name.setter
     def x_customer_name(self, x_customer_name):
-        """Sets the x_customer_name of this DownloadCasesRequest.
+        r"""Sets the x_customer_name of this DownloadCasesRequest.
 
         子用户名称
 
@@ -278,7 +278,7 @@ class DownloadCasesRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this DownloadCasesRequest.
+        r"""Gets the search_key of this DownloadCasesRequest.
 
         搜索关键字
 
@@ -289,7 +289,7 @@ class DownloadCasesRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this DownloadCasesRequest.
+        r"""Sets the search_key of this DownloadCasesRequest.
 
         搜索关键字
 
@@ -300,7 +300,7 @@ class DownloadCasesRequest:
 
     @property
     def status(self):
-        """Gets the status of this DownloadCasesRequest.
+        r"""Gets the status of this DownloadCasesRequest.
 
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 
@@ -311,7 +311,7 @@ class DownloadCasesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DownloadCasesRequest.
+        r"""Sets the status of this DownloadCasesRequest.
 
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 
@@ -322,7 +322,7 @@ class DownloadCasesRequest:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this DownloadCasesRequest.
+        r"""Gets the customer_id of this DownloadCasesRequest.
 
         用户id
 
@@ -333,7 +333,7 @@ class DownloadCasesRequest:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this DownloadCasesRequest.
+        r"""Sets the customer_id of this DownloadCasesRequest.
 
         用户id
 
@@ -344,7 +344,7 @@ class DownloadCasesRequest:
 
     @property
     def tenant_source_id_list(self):
-        """Gets the tenant_source_id_list of this DownloadCasesRequest.
+        r"""Gets the tenant_source_id_list of this DownloadCasesRequest.
 
         来源id
 
@@ -355,7 +355,7 @@ class DownloadCasesRequest:
 
     @tenant_source_id_list.setter
     def tenant_source_id_list(self, tenant_source_id_list):
-        """Sets the tenant_source_id_list of this DownloadCasesRequest.
+        r"""Sets the tenant_source_id_list of this DownloadCasesRequest.
 
         来源id
 
@@ -366,7 +366,7 @@ class DownloadCasesRequest:
 
     @property
     def sub_customer_id(self):
-        """Gets the sub_customer_id of this DownloadCasesRequest.
+        r"""Gets the sub_customer_id of this DownloadCasesRequest.
 
         子用户id
 
@@ -377,7 +377,7 @@ class DownloadCasesRequest:
 
     @sub_customer_id.setter
     def sub_customer_id(self, sub_customer_id):
-        """Sets the sub_customer_id of this DownloadCasesRequest.
+        r"""Sets the sub_customer_id of this DownloadCasesRequest.
 
         子用户id
 
@@ -388,7 +388,7 @@ class DownloadCasesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this DownloadCasesRequest.
+        r"""Gets the offset of this DownloadCasesRequest.
 
         查询偏移量
 
@@ -399,7 +399,7 @@ class DownloadCasesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this DownloadCasesRequest.
+        r"""Sets the offset of this DownloadCasesRequest.
 
         查询偏移量
 
@@ -410,7 +410,7 @@ class DownloadCasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this DownloadCasesRequest.
+        r"""Gets the limit of this DownloadCasesRequest.
 
         查询数量
 
@@ -421,7 +421,7 @@ class DownloadCasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this DownloadCasesRequest.
+        r"""Sets the limit of this DownloadCasesRequest.
 
         查询数量
 
@@ -432,7 +432,7 @@ class DownloadCasesRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this DownloadCasesRequest.
+        r"""Gets the x_site of this DownloadCasesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -443,7 +443,7 @@ class DownloadCasesRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this DownloadCasesRequest.
+        r"""Sets the x_site of this DownloadCasesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -454,7 +454,7 @@ class DownloadCasesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DownloadCasesRequest.
+        r"""Gets the x_language of this DownloadCasesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -465,7 +465,7 @@ class DownloadCasesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DownloadCasesRequest.
+        r"""Sets the x_language of this DownloadCasesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -476,7 +476,7 @@ class DownloadCasesRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this DownloadCasesRequest.
+        r"""Gets the x_time_zone of this DownloadCasesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -487,7 +487,7 @@ class DownloadCasesRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this DownloadCasesRequest.
+        r"""Sets the x_time_zone of this DownloadCasesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

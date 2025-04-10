@@ -23,7 +23,7 @@ class AttackPhase:
     }
 
     def __init__(self):
-        """AttackPhase
+        r"""AttackPhase
 
         The model defined in huaweicloud sdk
 

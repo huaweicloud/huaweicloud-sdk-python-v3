@@ -26,7 +26,7 @@ class CompareConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, differences=None):
-        """CompareConfigurationResponse
+        r"""CompareConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CompareConfigurationResponse(SdkResponse):
 
     @property
     def differences(self):
-        """Gets the differences of this CompareConfigurationResponse.
+        r"""Gets the differences of this CompareConfigurationResponse.
 
         参数模板之间的区别集合。
 
@@ -55,7 +55,7 @@ class CompareConfigurationResponse(SdkResponse):
 
     @differences.setter
     def differences(self, differences):
-        """Sets the differences of this CompareConfigurationResponse.
+        r"""Sets the differences of this CompareConfigurationResponse.
 
         参数模板之间的区别集合。
 

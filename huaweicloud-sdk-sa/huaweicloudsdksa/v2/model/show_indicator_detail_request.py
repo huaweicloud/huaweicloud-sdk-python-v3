@@ -29,7 +29,7 @@ class ShowIndicatorDetailRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, indicator_id=None):
-        """ShowIndicatorDetailRequest
+        r"""ShowIndicatorDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowIndicatorDetailRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowIndicatorDetailRequest.
+        r"""Gets the project_id of this ShowIndicatorDetailRequest.
 
         ID of project
 
@@ -65,7 +65,7 @@ class ShowIndicatorDetailRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowIndicatorDetailRequest.
+        r"""Sets the project_id of this ShowIndicatorDetailRequest.
 
         ID of project
 
@@ -76,7 +76,7 @@ class ShowIndicatorDetailRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowIndicatorDetailRequest.
+        r"""Gets the workspace_id of this ShowIndicatorDetailRequest.
 
         workspace id
 
@@ -87,7 +87,7 @@ class ShowIndicatorDetailRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowIndicatorDetailRequest.
+        r"""Sets the workspace_id of this ShowIndicatorDetailRequest.
 
         workspace id
 
@@ -98,7 +98,7 @@ class ShowIndicatorDetailRequest:
 
     @property
     def indicator_id(self):
-        """Gets the indicator_id of this ShowIndicatorDetailRequest.
+        r"""Gets the indicator_id of this ShowIndicatorDetailRequest.
 
         ID of indicator
 
@@ -109,7 +109,7 @@ class ShowIndicatorDetailRequest:
 
     @indicator_id.setter
     def indicator_id(self, indicator_id):
-        """Sets the indicator_id of this ShowIndicatorDetailRequest.
+        r"""Sets the indicator_id of this ShowIndicatorDetailRequest.
 
         ID of indicator
 

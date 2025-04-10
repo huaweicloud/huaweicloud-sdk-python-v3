@@ -33,7 +33,7 @@ class InstanceInfo:
     }
 
     def __init__(self, id=None, status=None, name=None, weight=None, available_zones=None):
-        """InstanceInfo
+        r"""InstanceInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class InstanceInfo:
 
     @property
     def id(self):
-        """Gets the id of this InstanceInfo.
+        r"""Gets the id of this InstanceInfo.
 
         数据库主实例或只读实例ID。
 
@@ -82,7 +82,7 @@ class InstanceInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstanceInfo.
+        r"""Sets the id of this InstanceInfo.
 
         数据库主实例或只读实例ID。
 
@@ -93,7 +93,7 @@ class InstanceInfo:
 
     @property
     def status(self):
-        """Gets the status of this InstanceInfo.
+        r"""Gets the status of this InstanceInfo.
 
         节点状态。
 
@@ -104,7 +104,7 @@ class InstanceInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceInfo.
+        r"""Sets the status of this InstanceInfo.
 
         节点状态。
 
@@ -115,7 +115,7 @@ class InstanceInfo:
 
     @property
     def name(self):
-        """Gets the name of this InstanceInfo.
+        r"""Gets the name of this InstanceInfo.
 
         数据库实例名称。
 
@@ -126,7 +126,7 @@ class InstanceInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceInfo.
+        r"""Sets the name of this InstanceInfo.
 
         数据库实例名称。
 
@@ -137,7 +137,7 @@ class InstanceInfo:
 
     @property
     def weight(self):
-        """Gets the weight of this InstanceInfo.
+        r"""Gets the weight of this InstanceInfo.
 
         数据库实例读权重。
 
@@ -148,7 +148,7 @@ class InstanceInfo:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this InstanceInfo.
+        r"""Sets the weight of this InstanceInfo.
 
         数据库实例读权重。
 
@@ -159,7 +159,7 @@ class InstanceInfo:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this InstanceInfo.
+        r"""Gets the available_zones of this InstanceInfo.
 
         可用区信息。
 
@@ -170,7 +170,7 @@ class InstanceInfo:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this InstanceInfo.
+        r"""Sets the available_zones of this InstanceInfo.
 
         可用区信息。
 

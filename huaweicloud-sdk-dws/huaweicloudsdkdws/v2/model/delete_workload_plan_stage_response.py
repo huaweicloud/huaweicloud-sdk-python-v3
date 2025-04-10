@@ -28,7 +28,7 @@ class DeleteWorkloadPlanStageResponse(SdkResponse):
     }
 
     def __init__(self, workload_res_code=None, workload_res_str=None):
-        """DeleteWorkloadPlanStageResponse
+        r"""DeleteWorkloadPlanStageResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteWorkloadPlanStageResponse(SdkResponse):
 
     @property
     def workload_res_code(self):
-        """Gets the workload_res_code of this DeleteWorkloadPlanStageResponse.
+        r"""Gets the workload_res_code of this DeleteWorkloadPlanStageResponse.
 
         响应编码。
 
@@ -62,7 +62,7 @@ class DeleteWorkloadPlanStageResponse(SdkResponse):
 
     @workload_res_code.setter
     def workload_res_code(self, workload_res_code):
-        """Sets the workload_res_code of this DeleteWorkloadPlanStageResponse.
+        r"""Sets the workload_res_code of this DeleteWorkloadPlanStageResponse.
 
         响应编码。
 
@@ -73,7 +73,7 @@ class DeleteWorkloadPlanStageResponse(SdkResponse):
 
     @property
     def workload_res_str(self):
-        """Gets the workload_res_str of this DeleteWorkloadPlanStageResponse.
+        r"""Gets the workload_res_str of this DeleteWorkloadPlanStageResponse.
 
         响应信息。
 
@@ -84,7 +84,7 @@ class DeleteWorkloadPlanStageResponse(SdkResponse):
 
     @workload_res_str.setter
     def workload_res_str(self, workload_res_str):
-        """Sets the workload_res_str of this DeleteWorkloadPlanStageResponse.
+        r"""Sets the workload_res_str of this DeleteWorkloadPlanStageResponse.
 
         响应信息。
 

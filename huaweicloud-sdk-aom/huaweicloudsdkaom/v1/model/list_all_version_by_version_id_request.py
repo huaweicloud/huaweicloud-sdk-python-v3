@@ -25,7 +25,7 @@ class ListAllVersionByVersionIdRequest:
     }
 
     def __init__(self, body=None):
-        """ListAllVersionByVersionIdRequest
+        r"""ListAllVersionByVersionIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListAllVersionByVersionIdRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAllVersionByVersionIdRequest.
+        r"""Gets the body of this ListAllVersionByVersionIdRequest.
 
         :return: The body of this ListAllVersionByVersionIdRequest.
         :rtype: :class:`huaweicloudsdkaom.v1.SearchScriptsRequestBody`
@@ -52,7 +52,7 @@ class ListAllVersionByVersionIdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAllVersionByVersionIdRequest.
+        r"""Sets the body of this ListAllVersionByVersionIdRequest.
 
         :param body: The body of this ListAllVersionByVersionIdRequest.
         :type body: :class:`huaweicloudsdkaom.v1.SearchScriptsRequestBody`

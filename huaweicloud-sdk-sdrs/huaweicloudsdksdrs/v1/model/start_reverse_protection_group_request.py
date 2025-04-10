@@ -27,7 +27,7 @@ class StartReverseProtectionGroupRequest:
     }
 
     def __init__(self, server_group_id=None, body=None):
-        """StartReverseProtectionGroupRequest
+        r"""StartReverseProtectionGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartReverseProtectionGroupRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this StartReverseProtectionGroupRequest.
+        r"""Gets the server_group_id of this StartReverseProtectionGroupRequest.
 
         保护组的ID。
 
@@ -60,7 +60,7 @@ class StartReverseProtectionGroupRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this StartReverseProtectionGroupRequest.
+        r"""Sets the server_group_id of this StartReverseProtectionGroupRequest.
 
         保护组的ID。
 
@@ -71,7 +71,7 @@ class StartReverseProtectionGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartReverseProtectionGroupRequest.
+        r"""Gets the body of this StartReverseProtectionGroupRequest.
 
         :return: The body of this StartReverseProtectionGroupRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.ReverseProtectionGroupRequestBody`
@@ -80,7 +80,7 @@ class StartReverseProtectionGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartReverseProtectionGroupRequest.
+        r"""Sets the body of this StartReverseProtectionGroupRequest.
 
         :param body: The body of this StartReverseProtectionGroupRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.ReverseProtectionGroupRequestBody`

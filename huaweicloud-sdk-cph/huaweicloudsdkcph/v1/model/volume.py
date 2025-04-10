@@ -35,7 +35,7 @@ class Volume:
     }
 
     def __init__(self, volume_name=None, volume_id=None, volume_size=None, volume_type=None, create_time=None, update_time=None):
-        """Volume
+        r"""Volume
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Volume:
 
     @property
     def volume_name(self):
-        """Gets the volume_name of this Volume.
+        r"""Gets the volume_name of this Volume.
 
         云手机服务器的硬盘名称。
 
@@ -89,7 +89,7 @@ class Volume:
 
     @volume_name.setter
     def volume_name(self, volume_name):
-        """Sets the volume_name of this Volume.
+        r"""Sets the volume_name of this Volume.
 
         云手机服务器的硬盘名称。
 
@@ -100,7 +100,7 @@ class Volume:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this Volume.
+        r"""Gets the volume_id of this Volume.
 
         云手机服务器的硬盘唯一标识。
 
@@ -111,7 +111,7 @@ class Volume:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this Volume.
+        r"""Sets the volume_id of this Volume.
 
         云手机服务器的硬盘唯一标识。
 
@@ -122,7 +122,7 @@ class Volume:
 
     @property
     def volume_size(self):
-        """Gets the volume_size of this Volume.
+        r"""Gets the volume_size of this Volume.
 
         云手机服务器的硬盘大小，单位G。
 
@@ -133,7 +133,7 @@ class Volume:
 
     @volume_size.setter
     def volume_size(self, volume_size):
-        """Sets the volume_size of this Volume.
+        r"""Sets the volume_size of this Volume.
 
         云手机服务器的硬盘大小，单位G。
 
@@ -144,7 +144,7 @@ class Volume:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this Volume.
+        r"""Gets the volume_type of this Volume.
 
         云手机服务器的硬盘类型。
 
@@ -155,7 +155,7 @@ class Volume:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this Volume.
+        r"""Sets the volume_type of this Volume.
 
         云手机服务器的硬盘类型。
 
@@ -166,7 +166,7 @@ class Volume:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Volume.
+        r"""Gets the create_time of this Volume.
 
         硬盘创建时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -177,7 +177,7 @@ class Volume:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Volume.
+        r"""Sets the create_time of this Volume.
 
         硬盘创建时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -188,7 +188,7 @@ class Volume:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Volume.
+        r"""Gets the update_time of this Volume.
 
         硬盘更新时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -199,7 +199,7 @@ class Volume:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Volume.
+        r"""Sets the update_time of this Volume.
 
         硬盘更新时间，  时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 

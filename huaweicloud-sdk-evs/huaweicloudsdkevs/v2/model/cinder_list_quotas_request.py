@@ -27,7 +27,7 @@ class CinderListQuotasRequest:
     }
 
     def __init__(self, target_project_id=None, usage=None):
-        """CinderListQuotasRequest
+        r"""CinderListQuotasRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CinderListQuotasRequest:
 
     @property
     def target_project_id(self):
-        """Gets the target_project_id of this CinderListQuotasRequest.
+        r"""Gets the target_project_id of this CinderListQuotasRequest.
 
         目标的项目ID。与project_id保持一致即可。
 
@@ -59,7 +59,7 @@ class CinderListQuotasRequest:
 
     @target_project_id.setter
     def target_project_id(self, target_project_id):
-        """Sets the target_project_id of this CinderListQuotasRequest.
+        r"""Sets the target_project_id of this CinderListQuotasRequest.
 
         目标的项目ID。与project_id保持一致即可。
 
@@ -70,7 +70,7 @@ class CinderListQuotasRequest:
 
     @property
     def usage(self):
-        """Gets the usage of this CinderListQuotasRequest.
+        r"""Gets the usage of this CinderListQuotasRequest.
 
         是否查询配额详细信息。当前只支持传true。
 
@@ -81,7 +81,7 @@ class CinderListQuotasRequest:
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this CinderListQuotasRequest.
+        r"""Sets the usage of this CinderListQuotasRequest.
 
         是否查询配额详细信息。当前只支持传true。
 

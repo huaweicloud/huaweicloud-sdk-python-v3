@@ -25,7 +25,7 @@ class UpdateScaleInPolicyRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateScaleInPolicyRequest
+        r"""UpdateScaleInPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateScaleInPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateScaleInPolicyRequest.
+        r"""Gets the body of this UpdateScaleInPolicyRequest.
 
         :return: The body of this UpdateScaleInPolicyRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateScaleInPolicyReq`
@@ -52,7 +52,7 @@ class UpdateScaleInPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateScaleInPolicyRequest.
+        r"""Sets the body of this UpdateScaleInPolicyRequest.
 
         :param body: The body of this UpdateScaleInPolicyRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateScaleInPolicyReq`

@@ -27,7 +27,7 @@ class PipelineParameter:
     }
 
     def __init__(self, name=None, value=None):
-        """PipelineParameter
+        r"""PipelineParameter
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PipelineParameter:
 
     @property
     def name(self):
-        """Gets the name of this PipelineParameter.
+        r"""Gets the name of this PipelineParameter.
 
         参数名称
 
@@ -59,7 +59,7 @@ class PipelineParameter:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PipelineParameter.
+        r"""Sets the name of this PipelineParameter.
 
         参数名称
 
@@ -70,7 +70,7 @@ class PipelineParameter:
 
     @property
     def value(self):
-        """Gets the value of this PipelineParameter.
+        r"""Gets the value of this PipelineParameter.
 
         参数值
 
@@ -81,7 +81,7 @@ class PipelineParameter:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PipelineParameter.
+        r"""Sets the value of this PipelineParameter.
 
         参数值
 

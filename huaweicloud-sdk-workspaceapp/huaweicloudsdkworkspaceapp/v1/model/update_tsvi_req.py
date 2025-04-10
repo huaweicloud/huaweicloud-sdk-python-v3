@@ -25,7 +25,7 @@ class UpdateTsviReq:
     }
 
     def __init__(self, items=None):
-        """UpdateTsviReq
+        r"""UpdateTsviReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateTsviReq:
 
     @property
     def items(self):
-        """Gets the items of this UpdateTsviReq.
+        r"""Gets the items of this UpdateTsviReq.
 
         批量请求列表，一次请求数量区间 [1, 20]。
 
@@ -53,7 +53,7 @@ class UpdateTsviReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this UpdateTsviReq.
+        r"""Sets the items of this UpdateTsviReq.
 
         批量请求列表，一次请求数量区间 [1, 20]。
 

@@ -28,7 +28,7 @@ class CopyHostsToTargetResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """CopyHostsToTargetResponse
+        r"""CopyHostsToTargetResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CopyHostsToTargetResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CopyHostsToTargetResponse.
+        r"""Gets the status of this CopyHostsToTargetResponse.
 
         请求成功失败状态
 
@@ -62,7 +62,7 @@ class CopyHostsToTargetResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CopyHostsToTargetResponse.
+        r"""Sets the status of this CopyHostsToTargetResponse.
 
         请求成功失败状态
 
@@ -73,7 +73,7 @@ class CopyHostsToTargetResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CopyHostsToTargetResponse.
+        r"""Gets the result of this CopyHostsToTargetResponse.
 
         返回结果
 
@@ -84,7 +84,7 @@ class CopyHostsToTargetResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CopyHostsToTargetResponse.
+        r"""Sets the result of this CopyHostsToTargetResponse.
 
         返回结果
 

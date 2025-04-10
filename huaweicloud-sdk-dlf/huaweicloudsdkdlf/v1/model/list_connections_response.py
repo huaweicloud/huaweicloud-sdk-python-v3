@@ -28,7 +28,7 @@ class ListConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, connections=None):
-        """ListConnectionsResponse
+        r"""ListConnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListConnectionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListConnectionsResponse.
+        r"""Gets the total of this ListConnectionsResponse.
 
         :return: The total of this ListConnectionsResponse.
         :rtype: int
@@ -60,7 +60,7 @@ class ListConnectionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListConnectionsResponse.
+        r"""Sets the total of this ListConnectionsResponse.
 
         :param total: The total of this ListConnectionsResponse.
         :type total: int
@@ -69,7 +69,7 @@ class ListConnectionsResponse(SdkResponse):
 
     @property
     def connections(self):
-        """Gets the connections of this ListConnectionsResponse.
+        r"""Gets the connections of this ListConnectionsResponse.
 
         :return: The connections of this ListConnectionsResponse.
         :rtype: list[:class:`huaweicloudsdkdlf.v1.ConnectionInfo`]
@@ -78,7 +78,7 @@ class ListConnectionsResponse(SdkResponse):
 
     @connections.setter
     def connections(self, connections):
-        """Sets the connections of this ListConnectionsResponse.
+        r"""Sets the connections of this ListConnectionsResponse.
 
         :param connections: The connections of this ListConnectionsResponse.
         :type connections: list[:class:`huaweicloudsdkdlf.v1.ConnectionInfo`]

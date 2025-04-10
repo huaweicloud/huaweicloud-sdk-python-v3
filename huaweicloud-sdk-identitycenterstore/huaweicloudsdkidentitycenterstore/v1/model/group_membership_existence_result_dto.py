@@ -29,7 +29,7 @@ class GroupMembershipExistenceResultDto:
     }
 
     def __init__(self, group_id=None, member_id=None, membership_exists=None):
-        """GroupMembershipExistenceResultDto
+        r"""GroupMembershipExistenceResultDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GroupMembershipExistenceResultDto:
 
     @property
     def group_id(self):
-        """Gets the group_id of this GroupMembershipExistenceResultDto.
+        r"""Gets the group_id of this GroupMembershipExistenceResultDto.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 
@@ -68,7 +68,7 @@ class GroupMembershipExistenceResultDto:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this GroupMembershipExistenceResultDto.
+        r"""Sets the group_id of this GroupMembershipExistenceResultDto.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 
@@ -79,7 +79,7 @@ class GroupMembershipExistenceResultDto:
 
     @property
     def member_id(self):
-        """Gets the member_id of this GroupMembershipExistenceResultDto.
+        r"""Gets the member_id of this GroupMembershipExistenceResultDto.
 
         :return: The member_id of this GroupMembershipExistenceResultDto.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.MemberIdDto`
@@ -88,7 +88,7 @@ class GroupMembershipExistenceResultDto:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this GroupMembershipExistenceResultDto.
+        r"""Sets the member_id of this GroupMembershipExistenceResultDto.
 
         :param member_id: The member_id of this GroupMembershipExistenceResultDto.
         :type member_id: :class:`huaweicloudsdkidentitycenterstore.v1.MemberIdDto`
@@ -97,7 +97,7 @@ class GroupMembershipExistenceResultDto:
 
     @property
     def membership_exists(self):
-        """Gets the membership_exists of this GroupMembershipExistenceResultDto.
+        r"""Gets the membership_exists of this GroupMembershipExistenceResultDto.
 
         一个布尔值，表示用户是否在组中
 
@@ -108,7 +108,7 @@ class GroupMembershipExistenceResultDto:
 
     @membership_exists.setter
     def membership_exists(self, membership_exists):
-        """Sets the membership_exists of this GroupMembershipExistenceResultDto.
+        r"""Sets the membership_exists of this GroupMembershipExistenceResultDto.
 
         一个布尔值，表示用户是否在组中
 

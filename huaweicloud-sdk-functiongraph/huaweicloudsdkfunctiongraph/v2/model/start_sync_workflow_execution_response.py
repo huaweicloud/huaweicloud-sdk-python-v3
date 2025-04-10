@@ -36,7 +36,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
     }
 
     def __init__(self, execution_id=None, status=None, output=None, errors=None, begin_time=None, end_time=None):
-        """StartSyncWorkflowExecutionResponse
+        r"""StartSyncWorkflowExecutionResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
 
     @property
     def execution_id(self):
-        """Gets the execution_id of this StartSyncWorkflowExecutionResponse.
+        r"""Gets the execution_id of this StartSyncWorkflowExecutionResponse.
 
         流程实例ID
 
@@ -90,7 +90,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
 
     @execution_id.setter
     def execution_id(self, execution_id):
-        """Sets the execution_id of this StartSyncWorkflowExecutionResponse.
+        r"""Sets the execution_id of this StartSyncWorkflowExecutionResponse.
 
         流程实例ID
 
@@ -101,7 +101,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this StartSyncWorkflowExecutionResponse.
+        r"""Gets the status of this StartSyncWorkflowExecutionResponse.
 
         流程执行最终状态
 
@@ -112,7 +112,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StartSyncWorkflowExecutionResponse.
+        r"""Sets the status of this StartSyncWorkflowExecutionResponse.
 
         流程执行最终状态
 
@@ -123,7 +123,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
 
     @property
     def output(self):
-        """Gets the output of this StartSyncWorkflowExecutionResponse.
+        r"""Gets the output of this StartSyncWorkflowExecutionResponse.
 
         函数流的执行结果，JSON格式，仅在status为success时有值
 
@@ -134,7 +134,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
 
     @output.setter
     def output(self, output):
-        """Sets the output of this StartSyncWorkflowExecutionResponse.
+        r"""Sets the output of this StartSyncWorkflowExecutionResponse.
 
         函数流的执行结果，JSON格式，仅在status为success时有值
 
@@ -145,7 +145,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
 
     @property
     def errors(self):
-        """Gets the errors of this StartSyncWorkflowExecutionResponse.
+        r"""Gets the errors of this StartSyncWorkflowExecutionResponse.
 
         流程执行错误信息，仅在status为fail时有值
 
@@ -156,7 +156,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
 
     @errors.setter
     def errors(self, errors):
-        """Sets the errors of this StartSyncWorkflowExecutionResponse.
+        r"""Sets the errors of this StartSyncWorkflowExecutionResponse.
 
         流程执行错误信息，仅在status为fail时有值
 
@@ -167,7 +167,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this StartSyncWorkflowExecutionResponse.
+        r"""Gets the begin_time of this StartSyncWorkflowExecutionResponse.
 
         流程实例创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -178,7 +178,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this StartSyncWorkflowExecutionResponse.
+        r"""Sets the begin_time of this StartSyncWorkflowExecutionResponse.
 
         流程实例创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -189,7 +189,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this StartSyncWorkflowExecutionResponse.
+        r"""Gets the end_time of this StartSyncWorkflowExecutionResponse.
 
         流程实例结束时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -200,7 +200,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this StartSyncWorkflowExecutionResponse.
+        r"""Sets the end_time of this StartSyncWorkflowExecutionResponse.
 
         流程实例结束时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 

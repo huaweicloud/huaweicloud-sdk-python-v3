@@ -25,7 +25,7 @@ class BatchQueryProgressReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchQueryProgressReq
+        r"""BatchQueryProgressReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchQueryProgressReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchQueryProgressReq.
+        r"""Gets the jobs of this BatchQueryProgressReq.
 
         批量查询进度任务ID请求列表
 
@@ -53,7 +53,7 @@ class BatchQueryProgressReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchQueryProgressReq.
+        r"""Sets the jobs of this BatchQueryProgressReq.
 
         批量查询进度任务ID请求列表
 

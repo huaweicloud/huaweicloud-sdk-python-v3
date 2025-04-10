@@ -27,7 +27,7 @@ class SparkOptionConf:
     }
 
     def __init__(self, name=None, value=None):
-        """SparkOptionConf
+        r"""SparkOptionConf
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SparkOptionConf:
 
     @property
     def name(self):
-        """Gets the name of this SparkOptionConf.
+        r"""Gets the name of this SparkOptionConf.
 
         参数名称
 
@@ -61,7 +61,7 @@ class SparkOptionConf:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SparkOptionConf.
+        r"""Sets the name of this SparkOptionConf.
 
         参数名称
 
@@ -72,7 +72,7 @@ class SparkOptionConf:
 
     @property
     def value(self):
-        """Gets the value of this SparkOptionConf.
+        r"""Gets the value of this SparkOptionConf.
 
         参数值
 
@@ -83,7 +83,7 @@ class SparkOptionConf:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SparkOptionConf.
+        r"""Sets the value of this SparkOptionConf.
 
         参数值
 

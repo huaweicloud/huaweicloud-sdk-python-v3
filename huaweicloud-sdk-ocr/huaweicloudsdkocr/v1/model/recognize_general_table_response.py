@@ -28,7 +28,7 @@ class RecognizeGeneralTableResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeGeneralTableResponse
+        r"""RecognizeGeneralTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeGeneralTableResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeGeneralTableResponse.
+        r"""Gets the result of this RecognizeGeneralTableResponse.
 
         :return: The result of this RecognizeGeneralTableResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.GeneralTableResult`
@@ -60,7 +60,7 @@ class RecognizeGeneralTableResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeGeneralTableResponse.
+        r"""Sets the result of this RecognizeGeneralTableResponse.
 
         :param result: The result of this RecognizeGeneralTableResponse.
         :type result: :class:`huaweicloudsdkocr.v1.GeneralTableResult`
@@ -69,7 +69,7 @@ class RecognizeGeneralTableResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeGeneralTableResponse.
+        r"""Gets the x_request_id of this RecognizeGeneralTableResponse.
 
         :return: The x_request_id of this RecognizeGeneralTableResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeGeneralTableResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeGeneralTableResponse.
+        r"""Sets the x_request_id of this RecognizeGeneralTableResponse.
 
         :param x_request_id: The x_request_id of this RecognizeGeneralTableResponse.
         :type x_request_id: str

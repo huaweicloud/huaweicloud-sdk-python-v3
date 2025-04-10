@@ -39,7 +39,7 @@ class BasicObjectQueryViewDTO:
     }
 
     def __init__(self, id=None, creator=None, create_time=None, modifier=None, last_update_time=None, rdm_extension_type=None, tenant=None, class_name=None):
-        """BasicObjectQueryViewDTO
+        r"""BasicObjectQueryViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class BasicObjectQueryViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this BasicObjectQueryViewDTO.
+        r"""Gets the id of this BasicObjectQueryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -103,7 +103,7 @@ class BasicObjectQueryViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BasicObjectQueryViewDTO.
+        r"""Sets the id of this BasicObjectQueryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -114,7 +114,7 @@ class BasicObjectQueryViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this BasicObjectQueryViewDTO.
+        r"""Gets the creator of this BasicObjectQueryViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -125,7 +125,7 @@ class BasicObjectQueryViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this BasicObjectQueryViewDTO.
+        r"""Sets the creator of this BasicObjectQueryViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -136,7 +136,7 @@ class BasicObjectQueryViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this BasicObjectQueryViewDTO.
+        r"""Gets the create_time of this BasicObjectQueryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -147,7 +147,7 @@ class BasicObjectQueryViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this BasicObjectQueryViewDTO.
+        r"""Sets the create_time of this BasicObjectQueryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -158,7 +158,7 @@ class BasicObjectQueryViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this BasicObjectQueryViewDTO.
+        r"""Gets the modifier of this BasicObjectQueryViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -169,7 +169,7 @@ class BasicObjectQueryViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this BasicObjectQueryViewDTO.
+        r"""Sets the modifier of this BasicObjectQueryViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -180,7 +180,7 @@ class BasicObjectQueryViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this BasicObjectQueryViewDTO.
+        r"""Gets the last_update_time of this BasicObjectQueryViewDTO.
 
         **参数解释：**  最后的修改时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -191,7 +191,7 @@ class BasicObjectQueryViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this BasicObjectQueryViewDTO.
+        r"""Sets the last_update_time of this BasicObjectQueryViewDTO.
 
         **参数解释：**  最后的修改时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -202,7 +202,7 @@ class BasicObjectQueryViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this BasicObjectQueryViewDTO.
+        r"""Gets the rdm_extension_type of this BasicObjectQueryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -213,7 +213,7 @@ class BasicObjectQueryViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this BasicObjectQueryViewDTO.
+        r"""Sets the rdm_extension_type of this BasicObjectQueryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -224,7 +224,7 @@ class BasicObjectQueryViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this BasicObjectQueryViewDTO.
+        r"""Gets the tenant of this BasicObjectQueryViewDTO.
 
         :return: The tenant of this BasicObjectQueryViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -233,7 +233,7 @@ class BasicObjectQueryViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this BasicObjectQueryViewDTO.
+        r"""Sets the tenant of this BasicObjectQueryViewDTO.
 
         :param tenant: The tenant of this BasicObjectQueryViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -242,7 +242,7 @@ class BasicObjectQueryViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this BasicObjectQueryViewDTO.
+        r"""Gets the class_name of this BasicObjectQueryViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -253,7 +253,7 @@ class BasicObjectQueryViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this BasicObjectQueryViewDTO.
+        r"""Sets the class_name of this BasicObjectQueryViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

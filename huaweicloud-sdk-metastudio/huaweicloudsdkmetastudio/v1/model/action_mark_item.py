@@ -29,7 +29,7 @@ class ActionMarkItem:
     }
 
     def __init__(self, action_start_time=None, action_end_time=None, action_type=None):
-        """ActionMarkItem
+        r"""ActionMarkItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ActionMarkItem:
 
     @property
     def action_start_time(self):
-        """Gets the action_start_time of this ActionMarkItem.
+        r"""Gets the action_start_time of this ActionMarkItem.
 
         选取推理数据预处理视频起始时间。格式：“HH:MM:SS.mmm”。
 
@@ -68,7 +68,7 @@ class ActionMarkItem:
 
     @action_start_time.setter
     def action_start_time(self, action_start_time):
-        """Sets the action_start_time of this ActionMarkItem.
+        r"""Sets the action_start_time of this ActionMarkItem.
 
         选取推理数据预处理视频起始时间。格式：“HH:MM:SS.mmm”。
 
@@ -79,7 +79,7 @@ class ActionMarkItem:
 
     @property
     def action_end_time(self):
-        """Gets the action_end_time of this ActionMarkItem.
+        r"""Gets the action_end_time of this ActionMarkItem.
 
         选取推理数据预处理视频结束时间。格式：“HH:MM:SS.mmm”。
 
@@ -90,7 +90,7 @@ class ActionMarkItem:
 
     @action_end_time.setter
     def action_end_time(self, action_end_time):
-        """Sets the action_end_time of this ActionMarkItem.
+        r"""Sets the action_end_time of this ActionMarkItem.
 
         选取推理数据预处理视频结束时间。格式：“HH:MM:SS.mmm”。
 
@@ -101,7 +101,7 @@ class ActionMarkItem:
 
     @property
     def action_type(self):
-        """Gets the action_type of this ActionMarkItem.
+        r"""Gets the action_type of this ActionMarkItem.
 
         动作类型。 * SILENCE: 静默 * ACTION：动作
 
@@ -112,7 +112,7 @@ class ActionMarkItem:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this ActionMarkItem.
+        r"""Sets the action_type of this ActionMarkItem.
 
         动作类型。 * SILENCE: 静默 * ACTION：动作
 

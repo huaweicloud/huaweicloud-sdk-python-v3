@@ -30,7 +30,7 @@ class CreateSessionResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, session_id=None):
-        """CreateSessionResponse
+        r"""CreateSessionResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateSessionResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateSessionResponse.
+        r"""Gets the error_code of this CreateSessionResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class CreateSessionResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateSessionResponse.
+        r"""Sets the error_code of this CreateSessionResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class CreateSessionResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateSessionResponse.
+        r"""Gets the error_msg of this CreateSessionResponse.
 
         错误描述
 
@@ -91,7 +91,7 @@ class CreateSessionResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateSessionResponse.
+        r"""Sets the error_msg of this CreateSessionResponse.
 
         错误描述
 
@@ -102,7 +102,7 @@ class CreateSessionResponse(SdkResponse):
 
     @property
     def session_id(self):
-        """Gets the session_id of this CreateSessionResponse.
+        r"""Gets the session_id of this CreateSessionResponse.
 
         会话Id
 
@@ -113,7 +113,7 @@ class CreateSessionResponse(SdkResponse):
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this CreateSessionResponse.
+        r"""Sets the session_id of this CreateSessionResponse.
 
         会话Id
 

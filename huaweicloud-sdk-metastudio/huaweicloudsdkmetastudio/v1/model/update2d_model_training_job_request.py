@@ -29,7 +29,7 @@ class Update2dModelTrainingJobRequest:
     }
 
     def __init__(self, job_id=None, x_app_user_id=None, body=None):
-        """Update2dModelTrainingJobRequest
+        r"""Update2dModelTrainingJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class Update2dModelTrainingJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this Update2dModelTrainingJobRequest.
+        r"""Gets the job_id of this Update2dModelTrainingJobRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class Update2dModelTrainingJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this Update2dModelTrainingJobRequest.
+        r"""Sets the job_id of this Update2dModelTrainingJobRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class Update2dModelTrainingJobRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this Update2dModelTrainingJobRequest.
+        r"""Gets the x_app_user_id of this Update2dModelTrainingJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -89,7 +89,7 @@ class Update2dModelTrainingJobRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this Update2dModelTrainingJobRequest.
+        r"""Sets the x_app_user_id of this Update2dModelTrainingJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -100,7 +100,7 @@ class Update2dModelTrainingJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this Update2dModelTrainingJobRequest.
+        r"""Gets the body of this Update2dModelTrainingJobRequest.
 
         :return: The body of this Update2dModelTrainingJobRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.Update2dModelTrainingJobReq`
@@ -109,7 +109,7 @@ class Update2dModelTrainingJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this Update2dModelTrainingJobRequest.
+        r"""Sets the body of this Update2dModelTrainingJobRequest.
 
         :param body: The body of this Update2dModelTrainingJobRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.Update2dModelTrainingJobReq`

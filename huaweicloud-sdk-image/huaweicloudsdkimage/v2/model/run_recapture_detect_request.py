@@ -25,7 +25,7 @@ class RunRecaptureDetectRequest:
     }
 
     def __init__(self, body=None):
-        """RunRecaptureDetectRequest
+        r"""RunRecaptureDetectRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunRecaptureDetectRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunRecaptureDetectRequest.
+        r"""Gets the body of this RunRecaptureDetectRequest.
 
         :return: The body of this RunRecaptureDetectRequest.
         :rtype: :class:`huaweicloudsdkimage.v2.RecaptureDetectReq`
@@ -52,7 +52,7 @@ class RunRecaptureDetectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunRecaptureDetectRequest.
+        r"""Sets the body of this RunRecaptureDetectRequest.
 
         :param body: The body of this RunRecaptureDetectRequest.
         :type body: :class:`huaweicloudsdkimage.v2.RecaptureDetectReq`

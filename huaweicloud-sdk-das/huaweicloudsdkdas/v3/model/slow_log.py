@@ -43,7 +43,7 @@ class SlowLog:
     }
 
     def __init__(self, sql=None, sql_template_id=None, database=None, client=None, user=None, execute_at=None, query_time=None, lock_time=None, rows_examined=None, rows_sent=None):
-        """SlowLog
+        r"""SlowLog
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class SlowLog:
 
     @property
     def sql(self):
-        """Gets the sql of this SlowLog.
+        r"""Gets the sql of this SlowLog.
 
         SQL语句。
 
@@ -107,7 +107,7 @@ class SlowLog:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this SlowLog.
+        r"""Sets the sql of this SlowLog.
 
         SQL语句。
 
@@ -118,7 +118,7 @@ class SlowLog:
 
     @property
     def sql_template_id(self):
-        """Gets the sql_template_id of this SlowLog.
+        r"""Gets the sql_template_id of this SlowLog.
 
         SQL模板ID。
 
@@ -129,7 +129,7 @@ class SlowLog:
 
     @sql_template_id.setter
     def sql_template_id(self, sql_template_id):
-        """Sets the sql_template_id of this SlowLog.
+        r"""Sets the sql_template_id of this SlowLog.
 
         SQL模板ID。
 
@@ -140,7 +140,7 @@ class SlowLog:
 
     @property
     def database(self):
-        """Gets the database of this SlowLog.
+        r"""Gets the database of this SlowLog.
 
         数据库名。
 
@@ -151,7 +151,7 @@ class SlowLog:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this SlowLog.
+        r"""Sets the database of this SlowLog.
 
         数据库名。
 
@@ -162,7 +162,7 @@ class SlowLog:
 
     @property
     def client(self):
-        """Gets the client of this SlowLog.
+        r"""Gets the client of this SlowLog.
 
         客户端。
 
@@ -173,7 +173,7 @@ class SlowLog:
 
     @client.setter
     def client(self, client):
-        """Sets the client of this SlowLog.
+        r"""Sets the client of this SlowLog.
 
         客户端。
 
@@ -184,7 +184,7 @@ class SlowLog:
 
     @property
     def user(self):
-        """Gets the user of this SlowLog.
+        r"""Gets the user of this SlowLog.
 
         用户。
 
@@ -195,7 +195,7 @@ class SlowLog:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this SlowLog.
+        r"""Sets the user of this SlowLog.
 
         用户。
 
@@ -206,7 +206,7 @@ class SlowLog:
 
     @property
     def execute_at(self):
-        """Gets the execute_at of this SlowLog.
+        r"""Gets the execute_at of this SlowLog.
 
         执行开始时间（Unix timestamp），单位：毫秒。
 
@@ -217,7 +217,7 @@ class SlowLog:
 
     @execute_at.setter
     def execute_at(self, execute_at):
-        """Sets the execute_at of this SlowLog.
+        r"""Sets the execute_at of this SlowLog.
 
         执行开始时间（Unix timestamp），单位：毫秒。
 
@@ -228,7 +228,7 @@ class SlowLog:
 
     @property
     def query_time(self):
-        """Gets the query_time of this SlowLog.
+        r"""Gets the query_time of this SlowLog.
 
         执行耗时（秒）。
 
@@ -239,7 +239,7 @@ class SlowLog:
 
     @query_time.setter
     def query_time(self, query_time):
-        """Sets the query_time of this SlowLog.
+        r"""Sets the query_time of this SlowLog.
 
         执行耗时（秒）。
 
@@ -250,7 +250,7 @@ class SlowLog:
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this SlowLog.
+        r"""Gets the lock_time of this SlowLog.
 
         锁等待耗时（秒）。
 
@@ -261,7 +261,7 @@ class SlowLog:
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this SlowLog.
+        r"""Sets the lock_time of this SlowLog.
 
         锁等待耗时（秒）。
 
@@ -272,7 +272,7 @@ class SlowLog:
 
     @property
     def rows_examined(self):
-        """Gets the rows_examined of this SlowLog.
+        r"""Gets the rows_examined of this SlowLog.
 
         扫描行数。
 
@@ -283,7 +283,7 @@ class SlowLog:
 
     @rows_examined.setter
     def rows_examined(self, rows_examined):
-        """Sets the rows_examined of this SlowLog.
+        r"""Sets the rows_examined of this SlowLog.
 
         扫描行数。
 
@@ -294,7 +294,7 @@ class SlowLog:
 
     @property
     def rows_sent(self):
-        """Gets the rows_sent of this SlowLog.
+        r"""Gets the rows_sent of this SlowLog.
 
         返回行数。
 
@@ -305,7 +305,7 @@ class SlowLog:
 
     @rows_sent.setter
     def rows_sent(self, rows_sent):
-        """Sets the rows_sent of this SlowLog.
+        r"""Sets the rows_sent of this SlowLog.
 
         返回行数。
 

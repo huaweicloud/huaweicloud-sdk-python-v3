@@ -25,7 +25,7 @@ class ListP2cVgwAvailabilityZonesRequest:
     }
 
     def __init__(self, flavor=None):
-        """ListP2cVgwAvailabilityZonesRequest
+        r"""ListP2cVgwAvailabilityZonesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListP2cVgwAvailabilityZonesRequest:
 
     @property
     def flavor(self):
-        """Gets the flavor of this ListP2cVgwAvailabilityZonesRequest.
+        r"""Gets the flavor of this ListP2cVgwAvailabilityZonesRequest.
 
         flavor规格
 
@@ -54,7 +54,7 @@ class ListP2cVgwAvailabilityZonesRequest:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ListP2cVgwAvailabilityZonesRequest.
+        r"""Sets the flavor of this ListP2cVgwAvailabilityZonesRequest.
 
         flavor规格
 

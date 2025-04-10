@@ -35,7 +35,7 @@ class CreateClusterBackupStrategyBody:
     }
 
     def __init__(self, period=None, prefix=None, keepday=None, bucket=None, base_path=None, agency=None):
-        """CreateClusterBackupStrategyBody
+        r"""CreateClusterBackupStrategyBody
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class CreateClusterBackupStrategyBody:
 
     @property
     def period(self):
-        """Gets the period of this CreateClusterBackupStrategyBody.
+        r"""Gets the period of this CreateClusterBackupStrategyBody.
 
         每天自动创建快照的时间点。只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。
 
@@ -86,7 +86,7 @@ class CreateClusterBackupStrategyBody:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this CreateClusterBackupStrategyBody.
+        r"""Sets the period of this CreateClusterBackupStrategyBody.
 
         每天自动创建快照的时间点。只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。
 
@@ -97,7 +97,7 @@ class CreateClusterBackupStrategyBody:
 
     @property
     def prefix(self):
-        """Gets the prefix of this CreateClusterBackupStrategyBody.
+        r"""Gets the prefix of this CreateClusterBackupStrategyBody.
 
         自动创建的快照的前缀，需要用户自己手动输入。只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。
 
@@ -108,7 +108,7 @@ class CreateClusterBackupStrategyBody:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this CreateClusterBackupStrategyBody.
+        r"""Sets the prefix of this CreateClusterBackupStrategyBody.
 
         自动创建的快照的前缀，需要用户自己手动输入。只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。
 
@@ -119,7 +119,7 @@ class CreateClusterBackupStrategyBody:
 
     @property
     def keepday(self):
-        """Gets the keepday of this CreateClusterBackupStrategyBody.
+        r"""Gets the keepday of this CreateClusterBackupStrategyBody.
 
         自动创建快照的保留天数。取值范围：1-90。
 
@@ -130,7 +130,7 @@ class CreateClusterBackupStrategyBody:
 
     @keepday.setter
     def keepday(self, keepday):
-        """Sets the keepday of this CreateClusterBackupStrategyBody.
+        r"""Sets the keepday of this CreateClusterBackupStrategyBody.
 
         自动创建快照的保留天数。取值范围：1-90。
 
@@ -141,7 +141,7 @@ class CreateClusterBackupStrategyBody:
 
     @property
     def bucket(self):
-        """Gets the bucket of this CreateClusterBackupStrategyBody.
+        r"""Gets the bucket of this CreateClusterBackupStrategyBody.
 
         备份使用的OBS桶名称。
 
@@ -152,7 +152,7 @@ class CreateClusterBackupStrategyBody:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this CreateClusterBackupStrategyBody.
+        r"""Sets the bucket of this CreateClusterBackupStrategyBody.
 
         备份使用的OBS桶名称。
 
@@ -163,7 +163,7 @@ class CreateClusterBackupStrategyBody:
 
     @property
     def base_path(self):
-        """Gets the base_path of this CreateClusterBackupStrategyBody.
+        r"""Gets the base_path of this CreateClusterBackupStrategyBody.
 
         快照在OBS桶中的存放路径。
 
@@ -174,7 +174,7 @@ class CreateClusterBackupStrategyBody:
 
     @base_path.setter
     def base_path(self, base_path):
-        """Sets the base_path of this CreateClusterBackupStrategyBody.
+        r"""Sets the base_path of this CreateClusterBackupStrategyBody.
 
         快照在OBS桶中的存放路径。
 
@@ -185,7 +185,7 @@ class CreateClusterBackupStrategyBody:
 
     @property
     def agency(self):
-        """Gets the agency of this CreateClusterBackupStrategyBody.
+        r"""Gets the agency of this CreateClusterBackupStrategyBody.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。   >如果bucket、basePath和agency三个参数同时为空，则系统会自动创建OBS桶和IAM代理（若创建失败，则需要手工配置正确的参数）。
 
@@ -196,7 +196,7 @@ class CreateClusterBackupStrategyBody:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this CreateClusterBackupStrategyBody.
+        r"""Sets the agency of this CreateClusterBackupStrategyBody.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。   >如果bucket、basePath和agency三个参数同时为空，则系统会自动创建OBS桶和IAM代理（若创建失败，则需要手工配置正确的参数）。
 

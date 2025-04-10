@@ -27,7 +27,7 @@ class DeleteAppRequest:
     }
 
     def __init__(self, app_id=None, reserve_obs_file=None):
-        """DeleteAppRequest
+        r"""DeleteAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteAppRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this DeleteAppRequest.
+        r"""Gets the app_id of this DeleteAppRequest.
 
         应用ID。
 
@@ -60,7 +60,7 @@ class DeleteAppRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this DeleteAppRequest.
+        r"""Sets the app_id of this DeleteAppRequest.
 
         应用ID。
 
@@ -71,7 +71,7 @@ class DeleteAppRequest:
 
     @property
     def reserve_obs_file(self):
-        """Gets the reserve_obs_file of this DeleteAppRequest.
+        r"""Gets the reserve_obs_file of this DeleteAppRequest.
 
         删除应用时是否保留OBS桶文件(默认false) * 'true' - 保留OBS桶文件,仅删除应用 * 'false' - 不保留OBS桶文件,删除应用同时删除OBS桶文件
 
@@ -82,7 +82,7 @@ class DeleteAppRequest:
 
     @reserve_obs_file.setter
     def reserve_obs_file(self, reserve_obs_file):
-        """Sets the reserve_obs_file of this DeleteAppRequest.
+        r"""Sets the reserve_obs_file of this DeleteAppRequest.
 
         删除应用时是否保留OBS桶文件(默认false) * 'true' - 保留OBS桶文件,仅删除应用 * 'false' - 不保留OBS桶文件,删除应用同时删除OBS桶文件
 

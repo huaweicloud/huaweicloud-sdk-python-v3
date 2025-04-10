@@ -25,7 +25,7 @@ class ShowRestrictionOfInstanceV2Request:
     }
 
     def __init__(self, instance_id=None):
-        """ShowRestrictionOfInstanceV2Request
+        r"""ShowRestrictionOfInstanceV2Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowRestrictionOfInstanceV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowRestrictionOfInstanceV2Request.
+        r"""Gets the instance_id of this ShowRestrictionOfInstanceV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -53,7 +53,7 @@ class ShowRestrictionOfInstanceV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowRestrictionOfInstanceV2Request.
+        r"""Sets the instance_id of this ShowRestrictionOfInstanceV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 

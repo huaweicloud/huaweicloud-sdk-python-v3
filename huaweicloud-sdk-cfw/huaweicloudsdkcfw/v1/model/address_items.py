@@ -27,7 +27,7 @@ class AddressItems:
     }
 
     def __init__(self, items=None, covered_ip=None):
-        """AddressItems
+        r"""AddressItems
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddressItems:
 
     @property
     def items(self):
-        """Gets the items of this AddressItems.
+        r"""Gets the items of this AddressItems.
 
         地址组成员id列表
 
@@ -61,7 +61,7 @@ class AddressItems:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this AddressItems.
+        r"""Sets the items of this AddressItems.
 
         地址组成员id列表
 
@@ -72,7 +72,7 @@ class AddressItems:
 
     @property
     def covered_ip(self):
-        """Gets the covered_ip of this AddressItems.
+        r"""Gets the covered_ip of this AddressItems.
 
         覆盖ip列表
 
@@ -83,7 +83,7 @@ class AddressItems:
 
     @covered_ip.setter
     def covered_ip(self, covered_ip):
-        """Sets the covered_ip of this AddressItems.
+        r"""Sets the covered_ip of this AddressItems.
 
         覆盖ip列表
 

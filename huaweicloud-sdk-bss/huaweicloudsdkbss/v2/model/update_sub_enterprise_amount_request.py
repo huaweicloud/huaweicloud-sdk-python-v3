@@ -25,7 +25,7 @@ class UpdateSubEnterpriseAmountRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateSubEnterpriseAmountRequest
+        r"""UpdateSubEnterpriseAmountRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateSubEnterpriseAmountRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSubEnterpriseAmountRequest.
+        r"""Gets the body of this UpdateSubEnterpriseAmountRequest.
 
         :return: The body of this UpdateSubEnterpriseAmountRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.TransferEnterpriseMultiAccountReq`
@@ -52,7 +52,7 @@ class UpdateSubEnterpriseAmountRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSubEnterpriseAmountRequest.
+        r"""Sets the body of this UpdateSubEnterpriseAmountRequest.
 
         :param body: The body of this UpdateSubEnterpriseAmountRequest.
         :type body: :class:`huaweicloudsdkbss.v2.TransferEnterpriseMultiAccountReq`

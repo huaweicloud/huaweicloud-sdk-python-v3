@@ -27,7 +27,7 @@ class UpdateElasticResourcePoolRequest:
     }
 
     def __init__(self, elastic_resource_pool_name=None, body=None):
-        """UpdateElasticResourcePoolRequest
+        r"""UpdateElasticResourcePoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateElasticResourcePoolRequest:
 
     @property
     def elastic_resource_pool_name(self):
-        """Gets the elastic_resource_pool_name of this UpdateElasticResourcePoolRequest.
+        r"""Gets the elastic_resource_pool_name of this UpdateElasticResourcePoolRequest.
 
         弹性资源池名称
 
@@ -60,7 +60,7 @@ class UpdateElasticResourcePoolRequest:
 
     @elastic_resource_pool_name.setter
     def elastic_resource_pool_name(self, elastic_resource_pool_name):
-        """Sets the elastic_resource_pool_name of this UpdateElasticResourcePoolRequest.
+        r"""Sets the elastic_resource_pool_name of this UpdateElasticResourcePoolRequest.
 
         弹性资源池名称
 
@@ -71,7 +71,7 @@ class UpdateElasticResourcePoolRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateElasticResourcePoolRequest.
+        r"""Gets the body of this UpdateElasticResourcePoolRequest.
 
         :return: The body of this UpdateElasticResourcePoolRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolRequestBody`
@@ -80,7 +80,7 @@ class UpdateElasticResourcePoolRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateElasticResourcePoolRequest.
+        r"""Sets the body of this UpdateElasticResourcePoolRequest.
 
         :param body: The body of this UpdateElasticResourcePoolRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolRequestBody`

@@ -73,7 +73,7 @@ class SearchUserResultDTO:
     }
 
     def __init__(self, id=None, user_account=None, name=None, english_name=None, phone=None, country=None, email=None, vmr_id=None, dept_code=None, dept_name_path=None, user_type=None, admin_type=None, signature=None, title=None, desc=None, status=None, sort_level=None, hide_phone=None, third_account=None, vision_account=None, license=None, active_time=None, active_code_expire_time=None, expire_time=None, active_code=None):
-        """SearchUserResultDTO
+        r"""SearchUserResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class SearchUserResultDTO:
 
     @property
     def id(self):
-        """Gets the id of this SearchUserResultDTO.
+        r"""Gets the id of this SearchUserResultDTO.
 
         用户UUID。
 
@@ -222,7 +222,7 @@ class SearchUserResultDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SearchUserResultDTO.
+        r"""Sets the id of this SearchUserResultDTO.
 
         用户UUID。
 
@@ -233,7 +233,7 @@ class SearchUserResultDTO:
 
     @property
     def user_account(self):
-        """Gets the user_account of this SearchUserResultDTO.
+        r"""Gets the user_account of this SearchUserResultDTO.
 
         华为云会议帐号。
 
@@ -244,7 +244,7 @@ class SearchUserResultDTO:
 
     @user_account.setter
     def user_account(self, user_account):
-        """Sets the user_account of this SearchUserResultDTO.
+        r"""Sets the user_account of this SearchUserResultDTO.
 
         华为云会议帐号。
 
@@ -255,7 +255,7 @@ class SearchUserResultDTO:
 
     @property
     def name(self):
-        """Gets the name of this SearchUserResultDTO.
+        r"""Gets the name of this SearchUserResultDTO.
 
         名称。
 
@@ -266,7 +266,7 @@ class SearchUserResultDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SearchUserResultDTO.
+        r"""Sets the name of this SearchUserResultDTO.
 
         名称。
 
@@ -277,7 +277,7 @@ class SearchUserResultDTO:
 
     @property
     def english_name(self):
-        """Gets the english_name of this SearchUserResultDTO.
+        r"""Gets the english_name of this SearchUserResultDTO.
 
         英文名称。
 
@@ -288,7 +288,7 @@ class SearchUserResultDTO:
 
     @english_name.setter
     def english_name(self, english_name):
-        """Sets the english_name of this SearchUserResultDTO.
+        r"""Sets the english_name of this SearchUserResultDTO.
 
         英文名称。
 
@@ -299,7 +299,7 @@ class SearchUserResultDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this SearchUserResultDTO.
+        r"""Gets the phone of this SearchUserResultDTO.
 
         联系电话。
 
@@ -310,7 +310,7 @@ class SearchUserResultDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this SearchUserResultDTO.
+        r"""Sets the phone of this SearchUserResultDTO.
 
         联系电话。
 
@@ -321,7 +321,7 @@ class SearchUserResultDTO:
 
     @property
     def country(self):
-        """Gets the country of this SearchUserResultDTO.
+        r"""Gets the country of this SearchUserResultDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -332,7 +332,7 @@ class SearchUserResultDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this SearchUserResultDTO.
+        r"""Sets the country of this SearchUserResultDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -343,7 +343,7 @@ class SearchUserResultDTO:
 
     @property
     def email(self):
-        """Gets the email of this SearchUserResultDTO.
+        r"""Gets the email of this SearchUserResultDTO.
 
         邮箱地址。
 
@@ -354,7 +354,7 @@ class SearchUserResultDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this SearchUserResultDTO.
+        r"""Sets the email of this SearchUserResultDTO.
 
         邮箱地址。
 
@@ -365,7 +365,7 @@ class SearchUserResultDTO:
 
     @property
     def vmr_id(self):
-        """Gets the vmr_id of this SearchUserResultDTO.
+        r"""Gets the vmr_id of this SearchUserResultDTO.
 
         个人会议ID。
 
@@ -376,7 +376,7 @@ class SearchUserResultDTO:
 
     @vmr_id.setter
     def vmr_id(self, vmr_id):
-        """Sets the vmr_id of this SearchUserResultDTO.
+        r"""Sets the vmr_id of this SearchUserResultDTO.
 
         个人会议ID。
 
@@ -387,7 +387,7 @@ class SearchUserResultDTO:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this SearchUserResultDTO.
+        r"""Gets the dept_code of this SearchUserResultDTO.
 
         部门编码。
 
@@ -398,7 +398,7 @@ class SearchUserResultDTO:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this SearchUserResultDTO.
+        r"""Sets the dept_code of this SearchUserResultDTO.
 
         部门编码。
 
@@ -409,7 +409,7 @@ class SearchUserResultDTO:
 
     @property
     def dept_name_path(self):
-        """Gets the dept_name_path of this SearchUserResultDTO.
+        r"""Gets the dept_name_path of this SearchUserResultDTO.
 
         部门完整名称。
 
@@ -420,7 +420,7 @@ class SearchUserResultDTO:
 
     @dept_name_path.setter
     def dept_name_path(self, dept_name_path):
-        """Sets the dept_name_path of this SearchUserResultDTO.
+        r"""Sets the dept_name_path of this SearchUserResultDTO.
 
         部门完整名称。
 
@@ -431,7 +431,7 @@ class SearchUserResultDTO:
 
     @property
     def user_type(self):
-        """Gets the user_type of this SearchUserResultDTO.
+        r"""Gets the user_type of this SearchUserResultDTO.
 
         用户类型。 * 2：普通用户 * 12：智慧屏用户 * 13：IdeaHub用户 * 14：SmartRooms用户
 
@@ -442,7 +442,7 @@ class SearchUserResultDTO:
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this SearchUserResultDTO.
+        r"""Sets the user_type of this SearchUserResultDTO.
 
         用户类型。 * 2：普通用户 * 12：智慧屏用户 * 13：IdeaHub用户 * 14：SmartRooms用户
 
@@ -453,7 +453,7 @@ class SearchUserResultDTO:
 
     @property
     def admin_type(self):
-        """Gets the admin_type of this SearchUserResultDTO.
+        r"""Gets the admin_type of this SearchUserResultDTO.
 
         管理员类型。 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
 
@@ -464,7 +464,7 @@ class SearchUserResultDTO:
 
     @admin_type.setter
     def admin_type(self, admin_type):
-        """Sets the admin_type of this SearchUserResultDTO.
+        r"""Sets the admin_type of this SearchUserResultDTO.
 
         管理员类型。 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
 
@@ -475,7 +475,7 @@ class SearchUserResultDTO:
 
     @property
     def signature(self):
-        """Gets the signature of this SearchUserResultDTO.
+        r"""Gets the signature of this SearchUserResultDTO.
 
         签名。
 
@@ -486,7 +486,7 @@ class SearchUserResultDTO:
 
     @signature.setter
     def signature(self, signature):
-        """Sets the signature of this SearchUserResultDTO.
+        r"""Sets the signature of this SearchUserResultDTO.
 
         签名。
 
@@ -497,7 +497,7 @@ class SearchUserResultDTO:
 
     @property
     def title(self):
-        """Gets the title of this SearchUserResultDTO.
+        r"""Gets the title of this SearchUserResultDTO.
 
         职位。
 
@@ -508,7 +508,7 @@ class SearchUserResultDTO:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this SearchUserResultDTO.
+        r"""Sets the title of this SearchUserResultDTO.
 
         职位。
 
@@ -519,7 +519,7 @@ class SearchUserResultDTO:
 
     @property
     def desc(self):
-        """Gets the desc of this SearchUserResultDTO.
+        r"""Gets the desc of this SearchUserResultDTO.
 
         备注。
 
@@ -530,7 +530,7 @@ class SearchUserResultDTO:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this SearchUserResultDTO.
+        r"""Sets the desc of this SearchUserResultDTO.
 
         备注。
 
@@ -541,7 +541,7 @@ class SearchUserResultDTO:
 
     @property
     def status(self):
-        """Gets the status of this SearchUserResultDTO.
+        r"""Gets the status of this SearchUserResultDTO.
 
         用户状态。 * 0：正常 * 1：停用 
 
@@ -552,7 +552,7 @@ class SearchUserResultDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SearchUserResultDTO.
+        r"""Sets the status of this SearchUserResultDTO.
 
         用户状态。 * 0：正常 * 1：停用 
 
@@ -563,7 +563,7 @@ class SearchUserResultDTO:
 
     @property
     def sort_level(self):
-        """Gets the sort_level of this SearchUserResultDTO.
+        r"""Gets the sort_level of this SearchUserResultDTO.
 
         通讯录排序等级，序号越低优先级越高。
 
@@ -574,7 +574,7 @@ class SearchUserResultDTO:
 
     @sort_level.setter
     def sort_level(self, sort_level):
-        """Sets the sort_level of this SearchUserResultDTO.
+        r"""Sets the sort_level of this SearchUserResultDTO.
 
         通讯录排序等级，序号越低优先级越高。
 
@@ -585,7 +585,7 @@ class SearchUserResultDTO:
 
     @property
     def hide_phone(self):
-        """Gets the hide_phone of this SearchUserResultDTO.
+        r"""Gets the hide_phone of this SearchUserResultDTO.
 
         是否隐藏手机号码。
 
@@ -596,7 +596,7 @@ class SearchUserResultDTO:
 
     @hide_phone.setter
     def hide_phone(self, hide_phone):
-        """Sets the hide_phone of this SearchUserResultDTO.
+        r"""Sets the hide_phone of this SearchUserResultDTO.
 
         是否隐藏手机号码。
 
@@ -607,7 +607,7 @@ class SearchUserResultDTO:
 
     @property
     def third_account(self):
-        """Gets the third_account of this SearchUserResultDTO.
+        r"""Gets the third_account of this SearchUserResultDTO.
 
         第三方User ID。
 
@@ -618,7 +618,7 @@ class SearchUserResultDTO:
 
     @third_account.setter
     def third_account(self, third_account):
-        """Sets the third_account of this SearchUserResultDTO.
+        r"""Sets the third_account of this SearchUserResultDTO.
 
         第三方User ID。
 
@@ -629,7 +629,7 @@ class SearchUserResultDTO:
 
     @property
     def vision_account(self):
-        """Gets the vision_account of this SearchUserResultDTO.
+        r"""Gets the vision_account of this SearchUserResultDTO.
 
         智慧屏帐号。
 
@@ -640,7 +640,7 @@ class SearchUserResultDTO:
 
     @vision_account.setter
     def vision_account(self, vision_account):
-        """Sets the vision_account of this SearchUserResultDTO.
+        r"""Sets the vision_account of this SearchUserResultDTO.
 
         智慧屏帐号。
 
@@ -651,7 +651,7 @@ class SearchUserResultDTO:
 
     @property
     def license(self):
-        """Gets the license of this SearchUserResultDTO.
+        r"""Gets the license of this SearchUserResultDTO.
 
         许可证。 * 0：商用 * 1：免费试用 
 
@@ -662,7 +662,7 @@ class SearchUserResultDTO:
 
     @license.setter
     def license(self, license):
-        """Sets the license of this SearchUserResultDTO.
+        r"""Sets the license of this SearchUserResultDTO.
 
         许可证。 * 0：商用 * 1：免费试用 
 
@@ -673,7 +673,7 @@ class SearchUserResultDTO:
 
     @property
     def active_time(self):
-        """Gets the active_time of this SearchUserResultDTO.
+        r"""Gets the active_time of this SearchUserResultDTO.
 
         激活时间，utc时间戳。
 
@@ -684,7 +684,7 @@ class SearchUserResultDTO:
 
     @active_time.setter
     def active_time(self, active_time):
-        """Sets the active_time of this SearchUserResultDTO.
+        r"""Sets the active_time of this SearchUserResultDTO.
 
         激活时间，utc时间戳。
 
@@ -695,7 +695,7 @@ class SearchUserResultDTO:
 
     @property
     def active_code_expire_time(self):
-        """Gets the active_code_expire_time of this SearchUserResultDTO.
+        r"""Gets the active_code_expire_time of this SearchUserResultDTO.
 
         激活码到期时间,utc时间戳。
 
@@ -706,7 +706,7 @@ class SearchUserResultDTO:
 
     @active_code_expire_time.setter
     def active_code_expire_time(self, active_code_expire_time):
-        """Sets the active_code_expire_time of this SearchUserResultDTO.
+        r"""Sets the active_code_expire_time of this SearchUserResultDTO.
 
         激活码到期时间,utc时间戳。
 
@@ -717,7 +717,7 @@ class SearchUserResultDTO:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this SearchUserResultDTO.
+        r"""Gets the expire_time of this SearchUserResultDTO.
 
         已激活的终端到期时间,utc时间戳。
 
@@ -728,7 +728,7 @@ class SearchUserResultDTO:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this SearchUserResultDTO.
+        r"""Sets the expire_time of this SearchUserResultDTO.
 
         已激活的终端到期时间,utc时间戳。
 
@@ -739,7 +739,7 @@ class SearchUserResultDTO:
 
     @property
     def active_code(self):
-        """Gets the active_code of this SearchUserResultDTO.
+        r"""Gets the active_code of this SearchUserResultDTO.
 
         激活码。
 
@@ -750,7 +750,7 @@ class SearchUserResultDTO:
 
     @active_code.setter
     def active_code(self, active_code):
-        """Sets the active_code of this SearchUserResultDTO.
+        r"""Sets the active_code of this SearchUserResultDTO.
 
         激活码。
 

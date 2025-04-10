@@ -26,7 +26,7 @@ class FreezeNodeResponse(SdkResponse):
     }
 
     def __init__(self, node_id=None):
-        """FreezeNodeResponse
+        r"""FreezeNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class FreezeNodeResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this FreezeNodeResponse.
+        r"""Gets the node_id of this FreezeNodeResponse.
 
         设备ID
 
@@ -55,7 +55,7 @@ class FreezeNodeResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this FreezeNodeResponse.
+        r"""Sets the node_id of this FreezeNodeResponse.
 
         设备ID
 

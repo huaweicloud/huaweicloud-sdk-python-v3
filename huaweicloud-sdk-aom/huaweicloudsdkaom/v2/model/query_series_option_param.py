@@ -29,7 +29,7 @@ class QuerySeriesOptionParam:
     }
 
     def __init__(self, namespace=None, metric_name=None, dimensions=None):
-        """QuerySeriesOptionParam
+        r"""QuerySeriesOptionParam
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class QuerySeriesOptionParam:
 
     @property
     def namespace(self):
-        """Gets the namespace of this QuerySeriesOptionParam.
+        r"""Gets the namespace of this QuerySeriesOptionParam.
 
         时间序列命名空间。取值范围：PAAS.CONTAINER、PAAS.NODE、PAAS.SLA、PAAS.AGGR、CUSTOMMETRICS等。PAAS.CONTAINER：应用时间序列命名空间；PAAS.NODE：节点时间序列命名空间；PAAS.SLA：SLA时间序列命名空间；PAAS.AGGR：集群时间序列命名空间；CUSTOMMETRICS：自定义时间序列命名空间。
 
@@ -67,7 +67,7 @@ class QuerySeriesOptionParam:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this QuerySeriesOptionParam.
+        r"""Sets the namespace of this QuerySeriesOptionParam.
 
         时间序列命名空间。取值范围：PAAS.CONTAINER、PAAS.NODE、PAAS.SLA、PAAS.AGGR、CUSTOMMETRICS等。PAAS.CONTAINER：应用时间序列命名空间；PAAS.NODE：节点时间序列命名空间；PAAS.SLA：SLA时间序列命名空间；PAAS.AGGR：集群时间序列命名空间；CUSTOMMETRICS：自定义时间序列命名空间。
 
@@ -78,7 +78,7 @@ class QuerySeriesOptionParam:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this QuerySeriesOptionParam.
+        r"""Gets the metric_name of this QuerySeriesOptionParam.
 
         时间序列名称，名称长度取值范围为1~255个字符。取值范围：AOM提供的基础时间序列名称，cpuUsage、cpuCoreUsed等：cpuUsage：cpu使用率；cpuCoreUsed：cpu内核占用；用户上报的自定义时间序列名称。
 
@@ -89,7 +89,7 @@ class QuerySeriesOptionParam:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this QuerySeriesOptionParam.
+        r"""Sets the metric_name of this QuerySeriesOptionParam.
 
         时间序列名称，名称长度取值范围为1~255个字符。取值范围：AOM提供的基础时间序列名称，cpuUsage、cpuCoreUsed等：cpuUsage：cpu使用率；cpuCoreUsed：cpu内核占用；用户上报的自定义时间序列名称。
 
@@ -100,7 +100,7 @@ class QuerySeriesOptionParam:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this QuerySeriesOptionParam.
+        r"""Gets the dimensions of this QuerySeriesOptionParam.
 
         时间序列维度列表。可通过/v2/{project_id}/series接口中namespace+metric_name，查询当前监控的时间序列名称的时间序列维度列表。
 
@@ -111,7 +111,7 @@ class QuerySeriesOptionParam:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this QuerySeriesOptionParam.
+        r"""Sets the dimensions of this QuerySeriesOptionParam.
 
         时间序列维度列表。可通过/v2/{project_id}/series接口中namespace+metric_name，查询当前监控的时间序列名称的时间序列维度列表。
 

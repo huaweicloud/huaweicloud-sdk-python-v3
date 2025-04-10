@@ -39,7 +39,7 @@ class MessageRsp:
     }
 
     def __init__(self, message_type=None, eihealth_project_name=None, resource_type=None, resource_name=None, operator=None, status=None, operate_time=None, message_detail=None):
-        """MessageRsp
+        r"""MessageRsp
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class MessageRsp:
 
     @property
     def message_type(self):
-        """Gets the message_type of this MessageRsp.
+        r"""Gets the message_type of this MessageRsp.
 
         消息类型
 
@@ -103,7 +103,7 @@ class MessageRsp:
 
     @message_type.setter
     def message_type(self, message_type):
-        """Sets the message_type of this MessageRsp.
+        r"""Sets the message_type of this MessageRsp.
 
         消息类型
 
@@ -114,7 +114,7 @@ class MessageRsp:
 
     @property
     def eihealth_project_name(self):
-        """Gets the eihealth_project_name of this MessageRsp.
+        r"""Gets the eihealth_project_name of this MessageRsp.
 
         项目名称
 
@@ -125,7 +125,7 @@ class MessageRsp:
 
     @eihealth_project_name.setter
     def eihealth_project_name(self, eihealth_project_name):
-        """Sets the eihealth_project_name of this MessageRsp.
+        r"""Sets the eihealth_project_name of this MessageRsp.
 
         项目名称
 
@@ -136,7 +136,7 @@ class MessageRsp:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this MessageRsp.
+        r"""Gets the resource_type of this MessageRsp.
 
         资源类型
 
@@ -147,7 +147,7 @@ class MessageRsp:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this MessageRsp.
+        r"""Sets the resource_type of this MessageRsp.
 
         资源类型
 
@@ -158,7 +158,7 @@ class MessageRsp:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this MessageRsp.
+        r"""Gets the resource_name of this MessageRsp.
 
         资源名称
 
@@ -169,7 +169,7 @@ class MessageRsp:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this MessageRsp.
+        r"""Sets the resource_name of this MessageRsp.
 
         资源名称
 
@@ -180,7 +180,7 @@ class MessageRsp:
 
     @property
     def operator(self):
-        """Gets the operator of this MessageRsp.
+        r"""Gets the operator of this MessageRsp.
 
         操作用户
 
@@ -191,7 +191,7 @@ class MessageRsp:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this MessageRsp.
+        r"""Sets the operator of this MessageRsp.
 
         操作用户
 
@@ -202,7 +202,7 @@ class MessageRsp:
 
     @property
     def status(self):
-        """Gets the status of this MessageRsp.
+        r"""Gets the status of this MessageRsp.
 
         状态
 
@@ -213,7 +213,7 @@ class MessageRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MessageRsp.
+        r"""Sets the status of this MessageRsp.
 
         状态
 
@@ -224,7 +224,7 @@ class MessageRsp:
 
     @property
     def operate_time(self):
-        """Gets the operate_time of this MessageRsp.
+        r"""Gets the operate_time of this MessageRsp.
 
         操作时间
 
@@ -235,7 +235,7 @@ class MessageRsp:
 
     @operate_time.setter
     def operate_time(self, operate_time):
-        """Sets the operate_time of this MessageRsp.
+        r"""Sets the operate_time of this MessageRsp.
 
         操作时间
 
@@ -246,7 +246,7 @@ class MessageRsp:
 
     @property
     def message_detail(self):
-        """Gets the message_detail of this MessageRsp.
+        r"""Gets the message_detail of this MessageRsp.
 
         详情
 
@@ -257,7 +257,7 @@ class MessageRsp:
 
     @message_detail.setter
     def message_detail(self, message_detail):
-        """Sets the message_detail of this MessageRsp.
+        r"""Sets the message_detail of this MessageRsp.
 
         详情
 

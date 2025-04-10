@@ -32,7 +32,7 @@ class CreateAutoJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None, max_platform_flavor=None, app_infos=None, job_info=None):
-        """CreateAutoJobResponse
+        r"""CreateAutoJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateAutoJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateAutoJobResponse.
+        r"""Gets the id of this CreateAutoJobResponse.
 
         作业id
 
@@ -76,7 +76,7 @@ class CreateAutoJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateAutoJobResponse.
+        r"""Sets the id of this CreateAutoJobResponse.
 
         作业id
 
@@ -87,7 +87,7 @@ class CreateAutoJobResponse(SdkResponse):
 
     @property
     def max_platform_flavor(self):
-        """Gets the max_platform_flavor of this CreateAutoJobResponse.
+        r"""Gets the max_platform_flavor of this CreateAutoJobResponse.
 
         :return: The max_platform_flavor of this CreateAutoJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
@@ -96,7 +96,7 @@ class CreateAutoJobResponse(SdkResponse):
 
     @max_platform_flavor.setter
     def max_platform_flavor(self, max_platform_flavor):
-        """Sets the max_platform_flavor of this CreateAutoJobResponse.
+        r"""Sets the max_platform_flavor of this CreateAutoJobResponse.
 
         :param max_platform_flavor: The max_platform_flavor of this CreateAutoJobResponse.
         :type max_platform_flavor: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
@@ -105,7 +105,7 @@ class CreateAutoJobResponse(SdkResponse):
 
     @property
     def app_infos(self):
-        """Gets the app_infos of this CreateAutoJobResponse.
+        r"""Gets the app_infos of this CreateAutoJobResponse.
 
         筛选后的app集合
 
@@ -116,7 +116,7 @@ class CreateAutoJobResponse(SdkResponse):
 
     @app_infos.setter
     def app_infos(self, app_infos):
-        """Sets the app_infos of this CreateAutoJobResponse.
+        r"""Sets the app_infos of this CreateAutoJobResponse.
 
         筛选后的app集合
 
@@ -127,7 +127,7 @@ class CreateAutoJobResponse(SdkResponse):
 
     @property
     def job_info(self):
-        """Gets the job_info of this CreateAutoJobResponse.
+        r"""Gets the job_info of this CreateAutoJobResponse.
 
         :return: The job_info of this CreateAutoJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.JobFilterDto`
@@ -136,7 +136,7 @@ class CreateAutoJobResponse(SdkResponse):
 
     @job_info.setter
     def job_info(self, job_info):
-        """Sets the job_info of this CreateAutoJobResponse.
+        r"""Sets the job_info of this CreateAutoJobResponse.
 
         :param job_info: The job_info of this CreateAutoJobResponse.
         :type job_info: :class:`huaweicloudsdkeihealth.v1.JobFilterDto`

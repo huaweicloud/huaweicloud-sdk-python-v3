@@ -27,7 +27,7 @@ class ListInstancesSupportFastRestoreRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListInstancesSupportFastRestoreRequest
+        r"""ListInstancesSupportFastRestoreRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListInstancesSupportFastRestoreRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListInstancesSupportFastRestoreRequest.
+        r"""Gets the x_language of this ListInstancesSupportFastRestoreRequest.
 
         语言
 
@@ -61,7 +61,7 @@ class ListInstancesSupportFastRestoreRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListInstancesSupportFastRestoreRequest.
+        r"""Sets the x_language of this ListInstancesSupportFastRestoreRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class ListInstancesSupportFastRestoreRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListInstancesSupportFastRestoreRequest.
+        r"""Gets the body of this ListInstancesSupportFastRestoreRequest.
 
         :return: The body of this ListInstancesSupportFastRestoreRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ListInstancesSupportFastRestoreRequestBody`
@@ -81,7 +81,7 @@ class ListInstancesSupportFastRestoreRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListInstancesSupportFastRestoreRequest.
+        r"""Sets the body of this ListInstancesSupportFastRestoreRequest.
 
         :param body: The body of this ListInstancesSupportFastRestoreRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ListInstancesSupportFastRestoreRequestBody`

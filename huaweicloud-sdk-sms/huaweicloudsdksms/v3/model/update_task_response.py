@@ -26,7 +26,7 @@ class UpdateTaskResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateTaskResponse
+        r"""UpdateTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateTaskResponse.
+        r"""Gets the body of this UpdateTaskResponse.
 
         更新指定ID的迁移任务
 
@@ -55,7 +55,7 @@ class UpdateTaskResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTaskResponse.
+        r"""Sets the body of this UpdateTaskResponse.
 
         更新指定ID的迁移任务
 

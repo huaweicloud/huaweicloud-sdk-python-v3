@@ -37,7 +37,7 @@ class ItemsResponse:
     }
 
     def __init__(self, resource_type=None, resource_name=None, index=None, module_address=None, supported=None, unsupported_message=None, resource_price=None):
-        """ItemsResponse
+        r"""ItemsResponse
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ItemsResponse:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ItemsResponse.
+        r"""Gets the resource_type of this ItemsResponse.
 
         资源的类型  以HCL格式的模板为例，resource_type 为 huaweicloud_vpc  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   name = \"test_vpc\" } ```  以json格式的模板为例，resource_type 为 huaweicloud_vpc  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"name\": \"test_vpc\"       }     }   } } ```
 
@@ -96,7 +96,7 @@ class ItemsResponse:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ItemsResponse.
+        r"""Sets the resource_type of this ItemsResponse.
 
         资源的类型  以HCL格式的模板为例，resource_type 为 huaweicloud_vpc  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   name = \"test_vpc\" } ```  以json格式的模板为例，resource_type 为 huaweicloud_vpc  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"name\": \"test_vpc\"       }     }   } } ```
 
@@ -107,7 +107,7 @@ class ItemsResponse:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ItemsResponse.
+        r"""Gets the resource_name of this ItemsResponse.
 
         资源的名称，默认为资源的逻辑名称  以HCL格式的模板为例，resource_name 为 my_hello_world_vpc  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   name = \"test_vpc\" } ```  以json格式的模板为例，resource_name 为 my_hello_world_vpc  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"name\": \"test_vpc\"       }     }   } } ```
 
@@ -118,7 +118,7 @@ class ItemsResponse:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ItemsResponse.
+        r"""Sets the resource_name of this ItemsResponse.
 
         资源的名称，默认为资源的逻辑名称  以HCL格式的模板为例，resource_name 为 my_hello_world_vpc  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   name = \"test_vpc\" } ```  以json格式的模板为例，resource_name 为 my_hello_world_vpc  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"name\": \"test_vpc\"       }     }   } } ```
 
@@ -129,7 +129,7 @@ class ItemsResponse:
 
     @property
     def index(self):
-        """Gets the index of this ItemsResponse.
+        r"""Gets the index of this ItemsResponse.
 
         资源的索引，如果用户在模板中使用了count或for_each则会返回index。如果index出现，则resource_name + index可以作为该资源的一种标识  如果用户在模板中使用count，则index为从0开始的数字  以HCL格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[0]`和`huaweicloud_vpc.my_hello_world_vpc[1]`标识两个资源  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   count = 2   name = \"test_vpc\" } ```  以json格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[0]`和`huaweicloud_vpc.my_hello_world_vpc[1]`标识两个资源  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"name\": \"test_vpc\",         \"count\": 2       }     }   } } ```  如果用户在模板中使用for_each，则index为用户自定义的字符串  以HCL格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[\"vpc1\"]`和`huaweicloud_vpc.my_hello_world_vpc[\"vpc2\"]`标识两个资源  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   for_each = {     \"vpc1\" = \"test_vpc\"     \"vpc2\" = \"test_vpc\"   }   name = each.value } ```  以json格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[\"vpc1\"]`和`huaweicloud_vpc.my_hello_world_vpc[\"vpc2\"]`标识两个资源  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"for_each\": {           \"vpc1\": \"test_vpc\",           \"vpc2\": \"test_vpc\"         }         \"name\": \"${each.value}\"       }     }   } } ```
 
@@ -140,7 +140,7 @@ class ItemsResponse:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this ItemsResponse.
+        r"""Sets the index of this ItemsResponse.
 
         资源的索引，如果用户在模板中使用了count或for_each则会返回index。如果index出现，则resource_name + index可以作为该资源的一种标识  如果用户在模板中使用count，则index为从0开始的数字  以HCL格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[0]`和`huaweicloud_vpc.my_hello_world_vpc[1]`标识两个资源  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   count = 2   name = \"test_vpc\" } ```  以json格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[0]`和`huaweicloud_vpc.my_hello_world_vpc[1]`标识两个资源  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"name\": \"test_vpc\",         \"count\": 2       }     }   } } ```  如果用户在模板中使用for_each，则index为用户自定义的字符串  以HCL格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[\"vpc1\"]`和`huaweicloud_vpc.my_hello_world_vpc[\"vpc2\"]`标识两个资源  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   for_each = {     \"vpc1\" = \"test_vpc\"     \"vpc2\" = \"test_vpc\"   }   name = each.value } ```  以json格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[\"vpc1\"]`和`huaweicloud_vpc.my_hello_world_vpc[\"vpc2\"]`标识两个资源  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"for_each\": {           \"vpc1\": \"test_vpc\",           \"vpc2\": \"test_vpc\"         }         \"name\": \"${each.value}\"       }     }   } } ```
 
@@ -151,7 +151,7 @@ class ItemsResponse:
 
     @property
     def module_address(self):
-        """Gets the module_address of this ItemsResponse.
+        r"""Gets the module_address of this ItemsResponse.
 
         该资源的模块地址
 
@@ -162,7 +162,7 @@ class ItemsResponse:
 
     @module_address.setter
     def module_address(self, module_address):
-        """Sets the module_address of this ItemsResponse.
+        r"""Sets the module_address of this ItemsResponse.
 
         该资源的模块地址
 
@@ -173,7 +173,7 @@ class ItemsResponse:
 
     @property
     def supported(self):
-        """Gets the supported of this ItemsResponse.
+        r"""Gets the supported of this ItemsResponse.
 
         该资源或该资源当前所给予的参数是否支持进行询价
 
@@ -184,7 +184,7 @@ class ItemsResponse:
 
     @supported.setter
     def supported(self, supported):
-        """Sets the supported of this ItemsResponse.
+        r"""Sets the supported of this ItemsResponse.
 
         该资源或该资源当前所给予的参数是否支持进行询价
 
@@ -195,7 +195,7 @@ class ItemsResponse:
 
     @property
     def unsupported_message(self):
-        """Gets the unsupported_message of this ItemsResponse.
+        r"""Gets the unsupported_message of this ItemsResponse.
 
         该资源不支持询价的具体原因
 
@@ -206,7 +206,7 @@ class ItemsResponse:
 
     @unsupported_message.setter
     def unsupported_message(self, unsupported_message):
-        """Sets the unsupported_message of this ItemsResponse.
+        r"""Sets the unsupported_message of this ItemsResponse.
 
         该资源不支持询价的具体原因
 
@@ -217,7 +217,7 @@ class ItemsResponse:
 
     @property
     def resource_price(self):
-        """Gets the resource_price of this ItemsResponse.
+        r"""Gets the resource_price of this ItemsResponse.
 
         该资源的询价信息  如果该资源支持包周期计费或按需计费，或者该资源为免费资源，则返回该字段；如果该资源不支持询价，则不返回该字段。
 
@@ -228,7 +228,7 @@ class ItemsResponse:
 
     @resource_price.setter
     def resource_price(self, resource_price):
-        """Sets the resource_price of this ItemsResponse.
+        r"""Sets the resource_price of this ItemsResponse.
 
         该资源的询价信息  如果该资源支持包周期计费或按需计费，或者该资源为免费资源，则返回该字段；如果该资源不支持询价，则不返回该字段。
 

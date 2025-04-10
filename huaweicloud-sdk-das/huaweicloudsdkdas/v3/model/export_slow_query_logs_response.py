@@ -28,7 +28,7 @@ class ExportSlowQueryLogsResponse(SdkResponse):
     }
 
     def __init__(self, slow_logs=None, next_marker=None):
-        """ExportSlowQueryLogsResponse
+        r"""ExportSlowQueryLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExportSlowQueryLogsResponse(SdkResponse):
 
     @property
     def slow_logs(self):
-        """Gets the slow_logs of this ExportSlowQueryLogsResponse.
+        r"""Gets the slow_logs of this ExportSlowQueryLogsResponse.
 
         慢SQL集合。当集合为空时，说明慢SQL已全部导出。
 
@@ -62,7 +62,7 @@ class ExportSlowQueryLogsResponse(SdkResponse):
 
     @slow_logs.setter
     def slow_logs(self, slow_logs):
-        """Sets the slow_logs of this ExportSlowQueryLogsResponse.
+        r"""Sets the slow_logs of this ExportSlowQueryLogsResponse.
 
         慢SQL集合。当集合为空时，说明慢SQL已全部导出。
 
@@ -73,7 +73,7 @@ class ExportSlowQueryLogsResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ExportSlowQueryLogsResponse.
+        r"""Gets the next_marker of this ExportSlowQueryLogsResponse.
 
         获取下一页所需的标识符。marker仅在3分钟内有效。
 
@@ -84,7 +84,7 @@ class ExportSlowQueryLogsResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ExportSlowQueryLogsResponse.
+        r"""Sets the next_marker of this ExportSlowQueryLogsResponse.
 
         获取下一页所需的标识符。marker仅在3分钟内有效。
 

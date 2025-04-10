@@ -29,7 +29,7 @@ class ListIegRequest:
     }
 
     def __init__(self, limit=None, marker=None, enterprise_project_id=None):
-        """ListIegRequest
+        r"""ListIegRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListIegRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListIegRequest.
+        r"""Gets the limit of this ListIegRequest.
 
         分页查询时每页返回的记录数量
 
@@ -68,7 +68,7 @@ class ListIegRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListIegRequest.
+        r"""Sets the limit of this ListIegRequest.
 
         分页查询时每页返回的记录数量
 
@@ -79,7 +79,7 @@ class ListIegRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListIegRequest.
+        r"""Gets the marker of this ListIegRequest.
 
         marker标识，请求此marker之后的数据
 
@@ -90,7 +90,7 @@ class ListIegRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListIegRequest.
+        r"""Sets the marker of this ListIegRequest.
 
         marker标识，请求此marker之后的数据
 
@@ -101,7 +101,7 @@ class ListIegRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListIegRequest.
+        r"""Gets the enterprise_project_id of this ListIegRequest.
 
         企业项目id
 
@@ -112,7 +112,7 @@ class ListIegRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListIegRequest.
+        r"""Sets the enterprise_project_id of this ListIegRequest.
 
         企业项目id
 

@@ -25,7 +25,7 @@ class ResizeServerExtendParam:
     }
 
     def __init__(self, is_auto_pay=None):
-        """ResizeServerExtendParam
+        r"""ResizeServerExtendParam
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResizeServerExtendParam:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ResizeServerExtendParam.
+        r"""Gets the is_auto_pay of this ResizeServerExtendParam.
 
         下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。  - “true”：是（自动支付） - “false”：否（需要客户手动支付）  > 说明： >  > 当弹性云服务器是按包年包月计费时生效，该值为空时默认为客户手动支付。
 
@@ -54,7 +54,7 @@ class ResizeServerExtendParam:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ResizeServerExtendParam.
+        r"""Sets the is_auto_pay of this ResizeServerExtendParam.
 
         下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。  - “true”：是（自动支付） - “false”：否（需要客户手动支付）  > 说明： >  > 当弹性云服务器是按包年包月计费时生效，该值为空时默认为客户手动支付。
 

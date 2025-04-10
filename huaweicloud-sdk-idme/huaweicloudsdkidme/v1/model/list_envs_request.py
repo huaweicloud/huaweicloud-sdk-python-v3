@@ -29,7 +29,7 @@ class ListEnvsRequest:
     }
 
     def __init__(self, page_num=None, page_size=None, env_types=None):
-        """ListEnvsRequest
+        r"""ListEnvsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListEnvsRequest:
 
     @property
     def page_num(self):
-        """Gets the page_num of this ListEnvsRequest.
+        r"""Gets the page_num of this ListEnvsRequest.
 
         页码
 
@@ -68,7 +68,7 @@ class ListEnvsRequest:
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this ListEnvsRequest.
+        r"""Sets the page_num of this ListEnvsRequest.
 
         页码
 
@@ -79,7 +79,7 @@ class ListEnvsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListEnvsRequest.
+        r"""Gets the page_size of this ListEnvsRequest.
 
         当前页大小
 
@@ -90,7 +90,7 @@ class ListEnvsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListEnvsRequest.
+        r"""Sets the page_size of this ListEnvsRequest.
 
         当前页大小
 
@@ -101,7 +101,7 @@ class ListEnvsRequest:
 
     @property
     def env_types(self):
-        """Gets the env_types of this ListEnvsRequest.
+        r"""Gets the env_types of this ListEnvsRequest.
 
         云服务类型 - STUDIO：设计态服务。 - CLOUD_BASIC：公有云基础版数据建模引擎。 - CLOUD_TRIAL：公有云体验版数据建模引擎。 - EDGE_BASIC：边缘云基础版数据建模引擎。 - CLOUD_LINKX：公有云基础版数字主线引擎。 - EDGE_LINKX：边缘云基础版数字主线引擎。
 
@@ -112,7 +112,7 @@ class ListEnvsRequest:
 
     @env_types.setter
     def env_types(self, env_types):
-        """Sets the env_types of this ListEnvsRequest.
+        r"""Sets the env_types of this ListEnvsRequest.
 
         云服务类型 - STUDIO：设计态服务。 - CLOUD_BASIC：公有云基础版数据建模引擎。 - CLOUD_TRIAL：公有云体验版数据建模引擎。 - EDGE_BASIC：边缘云基础版数据建模引擎。 - CLOUD_LINKX：公有云基础版数字主线引擎。 - EDGE_LINKX：边缘云基础版数字主线引擎。
 

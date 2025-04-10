@@ -25,7 +25,7 @@ class RecognizeShortAudioRequest:
     }
 
     def __init__(self, body=None):
-        """RecognizeShortAudioRequest
+        r"""RecognizeShortAudioRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RecognizeShortAudioRequest:
 
     @property
     def body(self):
-        """Gets the body of this RecognizeShortAudioRequest.
+        r"""Gets the body of this RecognizeShortAudioRequest.
 
         :return: The body of this RecognizeShortAudioRequest.
         :rtype: :class:`huaweicloudsdksis.v1.PostShortAudioReq`
@@ -52,7 +52,7 @@ class RecognizeShortAudioRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RecognizeShortAudioRequest.
+        r"""Sets the body of this RecognizeShortAudioRequest.
 
         :param body: The body of this RecognizeShortAudioRequest.
         :type body: :class:`huaweicloudsdksis.v1.PostShortAudioReq`

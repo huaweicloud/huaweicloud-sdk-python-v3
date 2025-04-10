@@ -30,7 +30,7 @@ class CreateSasTokenRequest:
     }
 
     def __init__(self, x_auth_token=None, content_type=None, body=None):
-        """CreateSasTokenRequest
+        r"""CreateSasTokenRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateSasTokenRequest:
 
     @property
     def x_auth_token(self):
-        """Gets the x_auth_token of this CreateSasTokenRequest.
+        r"""Gets the x_auth_token of this CreateSasTokenRequest.
 
         IAM用户的token，无需特殊权限。
 
@@ -67,7 +67,7 @@ class CreateSasTokenRequest:
 
     @x_auth_token.setter
     def x_auth_token(self, x_auth_token):
-        """Sets the x_auth_token of this CreateSasTokenRequest.
+        r"""Sets the x_auth_token of this CreateSasTokenRequest.
 
         IAM用户的token，无需特殊权限。
 
@@ -78,7 +78,7 @@ class CreateSasTokenRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this CreateSasTokenRequest.
+        r"""Gets the content_type of this CreateSasTokenRequest.
 
         该字段填为“application/json;charset=utf8”。
 
@@ -89,7 +89,7 @@ class CreateSasTokenRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this CreateSasTokenRequest.
+        r"""Sets the content_type of this CreateSasTokenRequest.
 
         该字段填为“application/json;charset=utf8”。
 
@@ -100,7 +100,7 @@ class CreateSasTokenRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSasTokenRequest.
+        r"""Gets the body of this CreateSasTokenRequest.
 
         :return: The body of this CreateSasTokenRequest.
         :rtype: :class:`huaweicloudsdkmapds.v1.CreateSasTokenRequestBody`
@@ -109,7 +109,7 @@ class CreateSasTokenRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSasTokenRequest.
+        r"""Sets the body of this CreateSasTokenRequest.
 
         :param body: The body of this CreateSasTokenRequest.
         :type body: :class:`huaweicloudsdkmapds.v1.CreateSasTokenRequestBody`

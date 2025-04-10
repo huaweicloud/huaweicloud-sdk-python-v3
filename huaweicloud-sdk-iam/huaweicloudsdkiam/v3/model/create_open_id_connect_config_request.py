@@ -27,7 +27,7 @@ class CreateOpenIdConnectConfigRequest:
     }
 
     def __init__(self, idp_id=None, body=None):
-        """CreateOpenIdConnectConfigRequest
+        r"""CreateOpenIdConnectConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateOpenIdConnectConfigRequest:
 
     @property
     def idp_id(self):
-        """Gets the idp_id of this CreateOpenIdConnectConfigRequest.
+        r"""Gets the idp_id of this CreateOpenIdConnectConfigRequest.
 
         身份提供商ID
 
@@ -60,7 +60,7 @@ class CreateOpenIdConnectConfigRequest:
 
     @idp_id.setter
     def idp_id(self, idp_id):
-        """Sets the idp_id of this CreateOpenIdConnectConfigRequest.
+        r"""Sets the idp_id of this CreateOpenIdConnectConfigRequest.
 
         身份提供商ID
 
@@ -71,7 +71,7 @@ class CreateOpenIdConnectConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOpenIdConnectConfigRequest.
+        r"""Gets the body of this CreateOpenIdConnectConfigRequest.
 
         :return: The body of this CreateOpenIdConnectConfigRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateOpenIdConnectConfigRequestBody`
@@ -80,7 +80,7 @@ class CreateOpenIdConnectConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOpenIdConnectConfigRequest.
+        r"""Sets the body of this CreateOpenIdConnectConfigRequest.
 
         :param body: The body of this CreateOpenIdConnectConfigRequest.
         :type body: :class:`huaweicloudsdkiam.v3.CreateOpenIdConnectConfigRequestBody`

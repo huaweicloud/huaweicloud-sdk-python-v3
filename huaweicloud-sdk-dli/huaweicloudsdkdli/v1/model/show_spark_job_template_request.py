@@ -25,7 +25,7 @@ class ShowSparkJobTemplateRequest:
     }
 
     def __init__(self, template_id=None):
-        """ShowSparkJobTemplateRequest
+        r"""ShowSparkJobTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSparkJobTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowSparkJobTemplateRequest.
+        r"""Gets the template_id of this ShowSparkJobTemplateRequest.
 
         :return: The template_id of this ShowSparkJobTemplateRequest.
         :rtype: str
@@ -51,7 +51,7 @@ class ShowSparkJobTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowSparkJobTemplateRequest.
+        r"""Sets the template_id of this ShowSparkJobTemplateRequest.
 
         :param template_id: The template_id of this ShowSparkJobTemplateRequest.
         :type template_id: str

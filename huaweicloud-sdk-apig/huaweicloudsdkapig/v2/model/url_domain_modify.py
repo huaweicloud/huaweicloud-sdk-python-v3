@@ -33,7 +33,7 @@ class UrlDomainModify:
     }
 
     def __init__(self, min_ssl_version=None, is_http_redirect_to_https=None, verified_client_certificate_enabled=None, ingress_http_port=None, ingress_https_port=None):
-        """UrlDomainModify
+        r"""UrlDomainModify
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class UrlDomainModify:
 
     @property
     def min_ssl_version(self):
-        """Gets the min_ssl_version of this UrlDomainModify.
+        r"""Gets the min_ssl_version of this UrlDomainModify.
 
         最小ssl协议版本号。支持TLSv1.1或TLSv1.2
 
@@ -81,7 +81,7 @@ class UrlDomainModify:
 
     @min_ssl_version.setter
     def min_ssl_version(self, min_ssl_version):
-        """Sets the min_ssl_version of this UrlDomainModify.
+        r"""Sets the min_ssl_version of this UrlDomainModify.
 
         最小ssl协议版本号。支持TLSv1.1或TLSv1.2
 
@@ -92,7 +92,7 @@ class UrlDomainModify:
 
     @property
     def is_http_redirect_to_https(self):
-        """Gets the is_http_redirect_to_https of this UrlDomainModify.
+        r"""Gets the is_http_redirect_to_https of this UrlDomainModify.
 
         是否开启http到https的重定向，false为关闭，true为开启，默认为false
 
@@ -103,7 +103,7 @@ class UrlDomainModify:
 
     @is_http_redirect_to_https.setter
     def is_http_redirect_to_https(self, is_http_redirect_to_https):
-        """Sets the is_http_redirect_to_https of this UrlDomainModify.
+        r"""Sets the is_http_redirect_to_https of this UrlDomainModify.
 
         是否开启http到https的重定向，false为关闭，true为开启，默认为false
 
@@ -114,7 +114,7 @@ class UrlDomainModify:
 
     @property
     def verified_client_certificate_enabled(self):
-        """Gets the verified_client_certificate_enabled of this UrlDomainModify.
+        r"""Gets the verified_client_certificate_enabled of this UrlDomainModify.
 
         是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 
@@ -125,7 +125,7 @@ class UrlDomainModify:
 
     @verified_client_certificate_enabled.setter
     def verified_client_certificate_enabled(self, verified_client_certificate_enabled):
-        """Sets the verified_client_certificate_enabled of this UrlDomainModify.
+        r"""Sets the verified_client_certificate_enabled of this UrlDomainModify.
 
         是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 
@@ -136,7 +136,7 @@ class UrlDomainModify:
 
     @property
     def ingress_http_port(self):
-        """Gets the ingress_http_port of this UrlDomainModify.
+        r"""Gets the ingress_http_port of this UrlDomainModify.
 
         访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；如果填写该参数，则必须同时填写https_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
@@ -147,7 +147,7 @@ class UrlDomainModify:
 
     @ingress_http_port.setter
     def ingress_http_port(self, ingress_http_port):
-        """Sets the ingress_http_port of this UrlDomainModify.
+        r"""Sets the ingress_http_port of this UrlDomainModify.
 
         访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；如果填写该参数，则必须同时填写https_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
@@ -158,7 +158,7 @@ class UrlDomainModify:
 
     @property
     def ingress_https_port(self):
-        """Gets the ingress_https_port of this UrlDomainModify.
+        r"""Gets the ingress_https_port of this UrlDomainModify.
 
         访问该域名绑定的https协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；如果填写该参数，则必须同时填写http_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
@@ -169,7 +169,7 @@ class UrlDomainModify:
 
     @ingress_https_port.setter
     def ingress_https_port(self, ingress_https_port):
-        """Sets the ingress_https_port of this UrlDomainModify.
+        r"""Sets the ingress_https_port of this UrlDomainModify.
 
         访问该域名绑定的https协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；如果填写该参数，则必须同时填写http_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 

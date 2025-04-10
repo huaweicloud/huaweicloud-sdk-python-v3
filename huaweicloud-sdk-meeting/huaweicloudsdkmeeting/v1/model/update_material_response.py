@@ -24,7 +24,7 @@ class UpdateMaterialResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateMaterialResponse
+        r"""UpdateMaterialResponse
 
         The model defined in huaweicloud sdk
 

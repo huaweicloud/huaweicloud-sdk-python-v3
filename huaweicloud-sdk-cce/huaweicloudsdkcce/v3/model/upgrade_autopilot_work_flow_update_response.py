@@ -34,7 +34,7 @@ class UpgradeAutopilotWorkFlowUpdateResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """UpgradeAutopilotWorkFlowUpdateResponse
+        r"""UpgradeAutopilotWorkFlowUpdateResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpgradeAutopilotWorkFlowUpdateResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this UpgradeAutopilotWorkFlowUpdateResponse.
+        r"""Gets the kind of this UpgradeAutopilotWorkFlowUpdateResponse.
 
         API类型，固定值“WorkFlowTask”，该值不可修改。 
 
@@ -83,7 +83,7 @@ class UpgradeAutopilotWorkFlowUpdateResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpgradeAutopilotWorkFlowUpdateResponse.
+        r"""Sets the kind of this UpgradeAutopilotWorkFlowUpdateResponse.
 
         API类型，固定值“WorkFlowTask”，该值不可修改。 
 
@@ -94,7 +94,7 @@ class UpgradeAutopilotWorkFlowUpdateResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpgradeAutopilotWorkFlowUpdateResponse.
+        r"""Gets the api_version of this UpgradeAutopilotWorkFlowUpdateResponse.
 
         API版本，固定值“v3”，该值不可修改。 
 
@@ -105,7 +105,7 @@ class UpgradeAutopilotWorkFlowUpdateResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpgradeAutopilotWorkFlowUpdateResponse.
+        r"""Sets the api_version of this UpgradeAutopilotWorkFlowUpdateResponse.
 
         API版本，固定值“v3”，该值不可修改。 
 
@@ -116,7 +116,7 @@ class UpgradeAutopilotWorkFlowUpdateResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpgradeAutopilotWorkFlowUpdateResponse.
+        r"""Gets the metadata of this UpgradeAutopilotWorkFlowUpdateResponse.
 
         :return: The metadata of this UpgradeAutopilotWorkFlowUpdateResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -125,7 +125,7 @@ class UpgradeAutopilotWorkFlowUpdateResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpgradeAutopilotWorkFlowUpdateResponse.
+        r"""Sets the metadata of this UpgradeAutopilotWorkFlowUpdateResponse.
 
         :param metadata: The metadata of this UpgradeAutopilotWorkFlowUpdateResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -134,7 +134,7 @@ class UpgradeAutopilotWorkFlowUpdateResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this UpgradeAutopilotWorkFlowUpdateResponse.
+        r"""Gets the spec of this UpgradeAutopilotWorkFlowUpdateResponse.
 
         :return: The spec of this UpgradeAutopilotWorkFlowUpdateResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.WorkFlowSpec`
@@ -143,7 +143,7 @@ class UpgradeAutopilotWorkFlowUpdateResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpgradeAutopilotWorkFlowUpdateResponse.
+        r"""Sets the spec of this UpgradeAutopilotWorkFlowUpdateResponse.
 
         :param spec: The spec of this UpgradeAutopilotWorkFlowUpdateResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.WorkFlowSpec`
@@ -152,7 +152,7 @@ class UpgradeAutopilotWorkFlowUpdateResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpgradeAutopilotWorkFlowUpdateResponse.
+        r"""Gets the status of this UpgradeAutopilotWorkFlowUpdateResponse.
 
         :return: The status of this UpgradeAutopilotWorkFlowUpdateResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.WorkFlowStatus`
@@ -161,7 +161,7 @@ class UpgradeAutopilotWorkFlowUpdateResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpgradeAutopilotWorkFlowUpdateResponse.
+        r"""Sets the status of this UpgradeAutopilotWorkFlowUpdateResponse.
 
         :param status: The status of this UpgradeAutopilotWorkFlowUpdateResponse.
         :type status: :class:`huaweicloudsdkcce.v3.WorkFlowStatus`

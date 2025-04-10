@@ -51,7 +51,7 @@ class VaultOrder:
     }
 
     def __init__(self, name=None, billing=None, resources=None, description=None, backup_policy_id=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, threshold=None, smn_notify=None, parameters=None, auto_expand=None, locked=None):
-        """VaultOrder
+        r"""VaultOrder
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class VaultOrder:
 
     @property
     def name(self):
-        """Gets the name of this VaultOrder.
+        r"""Gets the name of this VaultOrder.
 
         存储库名称  最小长度：1  最大长度：64
 
@@ -143,7 +143,7 @@ class VaultOrder:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VaultOrder.
+        r"""Sets the name of this VaultOrder.
 
         存储库名称  最小长度：1  最大长度：64
 
@@ -154,7 +154,7 @@ class VaultOrder:
 
     @property
     def billing(self):
-        """Gets the billing of this VaultOrder.
+        r"""Gets the billing of this VaultOrder.
 
         :return: The billing of this VaultOrder.
         :rtype: :class:`huaweicloudsdkcbr.v1.BillingCreate`
@@ -163,7 +163,7 @@ class VaultOrder:
 
     @billing.setter
     def billing(self, billing):
-        """Sets the billing of this VaultOrder.
+        r"""Sets the billing of this VaultOrder.
 
         :param billing: The billing of this VaultOrder.
         :type billing: :class:`huaweicloudsdkcbr.v1.BillingCreate`
@@ -172,7 +172,7 @@ class VaultOrder:
 
     @property
     def resources(self):
-        """Gets the resources of this VaultOrder.
+        r"""Gets the resources of this VaultOrder.
 
         绑定的备份资源，未在创建时绑定资源填[]
 
@@ -183,7 +183,7 @@ class VaultOrder:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this VaultOrder.
+        r"""Sets the resources of this VaultOrder.
 
         绑定的备份资源，未在创建时绑定资源填[]
 
@@ -194,7 +194,7 @@ class VaultOrder:
 
     @property
     def description(self):
-        """Gets the description of this VaultOrder.
+        r"""Gets the description of this VaultOrder.
 
         描述  最小长度：0  最大长度：255
 
@@ -205,7 +205,7 @@ class VaultOrder:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VaultOrder.
+        r"""Sets the description of this VaultOrder.
 
         描述  最小长度：0  最大长度：255
 
@@ -216,7 +216,7 @@ class VaultOrder:
 
     @property
     def backup_policy_id(self):
-        """Gets the backup_policy_id of this VaultOrder.
+        r"""Gets the backup_policy_id of this VaultOrder.
 
         备份策略ID，不设置时为null，不自动备份。
 
@@ -227,7 +227,7 @@ class VaultOrder:
 
     @backup_policy_id.setter
     def backup_policy_id(self, backup_policy_id):
-        """Sets the backup_policy_id of this VaultOrder.
+        r"""Sets the backup_policy_id of this VaultOrder.
 
         备份策略ID，不设置时为null，不自动备份。
 
@@ -238,7 +238,7 @@ class VaultOrder:
 
     @property
     def tags(self):
-        """Gets the tags of this VaultOrder.
+        r"""Gets the tags of this VaultOrder.
 
         标签列表 tags不允许为空列表。 tags中最多包含10个key。 tags中key不允许重复。
 
@@ -249,7 +249,7 @@ class VaultOrder:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this VaultOrder.
+        r"""Sets the tags of this VaultOrder.
 
         标签列表 tags不允许为空列表。 tags中最多包含10个key。 tags中key不允许重复。
 
@@ -260,7 +260,7 @@ class VaultOrder:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this VaultOrder.
+        r"""Gets the enterprise_project_id of this VaultOrder.
 
         企业项目ID，默认为‘0’。
 
@@ -271,7 +271,7 @@ class VaultOrder:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this VaultOrder.
+        r"""Sets the enterprise_project_id of this VaultOrder.
 
         企业项目ID，默认为‘0’。
 
@@ -282,7 +282,7 @@ class VaultOrder:
 
     @property
     def auto_bind(self):
-        """Gets the auto_bind of this VaultOrder.
+        r"""Gets the auto_bind of this VaultOrder.
 
         是否支持自动挂载。
 
@@ -293,7 +293,7 @@ class VaultOrder:
 
     @auto_bind.setter
     def auto_bind(self, auto_bind):
-        """Sets the auto_bind of this VaultOrder.
+        r"""Sets the auto_bind of this VaultOrder.
 
         是否支持自动挂载。
 
@@ -304,7 +304,7 @@ class VaultOrder:
 
     @property
     def bind_rules(self):
-        """Gets the bind_rules of this VaultOrder.
+        r"""Gets the bind_rules of this VaultOrder.
 
         :return: The bind_rules of this VaultOrder.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
@@ -313,7 +313,7 @@ class VaultOrder:
 
     @bind_rules.setter
     def bind_rules(self, bind_rules):
-        """Sets the bind_rules of this VaultOrder.
+        r"""Sets the bind_rules of this VaultOrder.
 
         :param bind_rules: The bind_rules of this VaultOrder.
         :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
@@ -322,7 +322,7 @@ class VaultOrder:
 
     @property
     def threshold(self):
-        """Gets the threshold of this VaultOrder.
+        r"""Gets the threshold of this VaultOrder.
 
         存储库阈值，百分比。  最小值：1  最大值：100
 
@@ -333,7 +333,7 @@ class VaultOrder:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this VaultOrder.
+        r"""Sets the threshold of this VaultOrder.
 
         存储库阈值，百分比。  最小值：1  最大值：100
 
@@ -344,7 +344,7 @@ class VaultOrder:
 
     @property
     def smn_notify(self):
-        """Gets the smn_notify of this VaultOrder.
+        r"""Gets the smn_notify of this VaultOrder.
 
         当容量到达阈值，是否启用通知
 
@@ -355,7 +355,7 @@ class VaultOrder:
 
     @smn_notify.setter
     def smn_notify(self, smn_notify):
-        """Sets the smn_notify of this VaultOrder.
+        r"""Sets the smn_notify of this VaultOrder.
 
         当容量到达阈值，是否启用通知
 
@@ -366,7 +366,7 @@ class VaultOrder:
 
     @property
     def parameters(self):
-        """Gets the parameters of this VaultOrder.
+        r"""Gets the parameters of this VaultOrder.
 
         :return: The parameters of this VaultOrder.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultCreateParameters`
@@ -375,7 +375,7 @@ class VaultOrder:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this VaultOrder.
+        r"""Sets the parameters of this VaultOrder.
 
         :param parameters: The parameters of this VaultOrder.
         :type parameters: :class:`huaweicloudsdkcbr.v1.VaultCreateParameters`
@@ -384,7 +384,7 @@ class VaultOrder:
 
     @property
     def auto_expand(self):
-        """Gets the auto_expand of this VaultOrder.
+        r"""Gets the auto_expand of this VaultOrder.
 
         是否开启存储库自动扩容能力（只支持按需存储库）。
 
@@ -395,7 +395,7 @@ class VaultOrder:
 
     @auto_expand.setter
     def auto_expand(self, auto_expand):
-        """Sets the auto_expand of this VaultOrder.
+        r"""Sets the auto_expand of this VaultOrder.
 
         是否开启存储库自动扩容能力（只支持按需存储库）。
 
@@ -406,7 +406,7 @@ class VaultOrder:
 
     @property
     def locked(self):
-        """Gets the locked of this VaultOrder.
+        r"""Gets the locked of this VaultOrder.
 
         用于标识当前存储库是否已锁定
 
@@ -417,7 +417,7 @@ class VaultOrder:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this VaultOrder.
+        r"""Sets the locked of this VaultOrder.
 
         用于标识当前存储库是否已锁定
 

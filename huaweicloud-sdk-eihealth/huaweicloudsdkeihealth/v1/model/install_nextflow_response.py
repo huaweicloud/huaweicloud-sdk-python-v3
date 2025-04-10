@@ -26,7 +26,7 @@ class InstallNextflowResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """InstallNextflowResponse
+        r"""InstallNextflowResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class InstallNextflowResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this InstallNextflowResponse.
+        r"""Gets the id of this InstallNextflowResponse.
 
         引擎ID
 
@@ -55,7 +55,7 @@ class InstallNextflowResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstallNextflowResponse.
+        r"""Sets the id of this InstallNextflowResponse.
 
         引擎ID
 

@@ -32,7 +32,7 @@ class ShowDrReplicaStatusResponse(SdkResponse):
     }
 
     def __init__(self, replica_state=None, wal_write_receive_delay_in_mb=None, wal_write_replay_delay_in_mb=None, wal_receive_replay_delay_in_ms=None):
-        """ShowDrReplicaStatusResponse
+        r"""ShowDrReplicaStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowDrReplicaStatusResponse(SdkResponse):
 
     @property
     def replica_state(self):
-        """Gets the replica_state of this ShowDrReplicaStatusResponse.
+        r"""Gets the replica_state of this ShowDrReplicaStatusResponse.
 
         同步状态，取值范围是0或-1，0表示正常，-1表示异常。
 
@@ -76,7 +76,7 @@ class ShowDrReplicaStatusResponse(SdkResponse):
 
     @replica_state.setter
     def replica_state(self, replica_state):
-        """Sets the replica_state of this ShowDrReplicaStatusResponse.
+        r"""Sets the replica_state of this ShowDrReplicaStatusResponse.
 
         同步状态，取值范围是0或-1，0表示正常，-1表示异常。
 
@@ -87,7 +87,7 @@ class ShowDrReplicaStatusResponse(SdkResponse):
 
     @property
     def wal_write_receive_delay_in_mb(self):
-        """Gets the wal_write_receive_delay_in_mb of this ShowDrReplicaStatusResponse.
+        r"""Gets the wal_write_receive_delay_in_mb of this ShowDrReplicaStatusResponse.
 
         发送延迟大小（MB），即主实例当前wal日志写入位点与灾备实例当前接收wal日志位点的差值。
 
@@ -98,7 +98,7 @@ class ShowDrReplicaStatusResponse(SdkResponse):
 
     @wal_write_receive_delay_in_mb.setter
     def wal_write_receive_delay_in_mb(self, wal_write_receive_delay_in_mb):
-        """Sets the wal_write_receive_delay_in_mb of this ShowDrReplicaStatusResponse.
+        r"""Sets the wal_write_receive_delay_in_mb of this ShowDrReplicaStatusResponse.
 
         发送延迟大小（MB），即主实例当前wal日志写入位点与灾备实例当前接收wal日志位点的差值。
 
@@ -109,7 +109,7 @@ class ShowDrReplicaStatusResponse(SdkResponse):
 
     @property
     def wal_write_replay_delay_in_mb(self):
-        """Gets the wal_write_replay_delay_in_mb of this ShowDrReplicaStatusResponse.
+        r"""Gets the wal_write_replay_delay_in_mb of this ShowDrReplicaStatusResponse.
 
         端到端延迟大小（MB），即主实例当前wal日志写入位点与灾备实例当前回放wal日志位点的差值。
 
@@ -120,7 +120,7 @@ class ShowDrReplicaStatusResponse(SdkResponse):
 
     @wal_write_replay_delay_in_mb.setter
     def wal_write_replay_delay_in_mb(self, wal_write_replay_delay_in_mb):
-        """Sets the wal_write_replay_delay_in_mb of this ShowDrReplicaStatusResponse.
+        r"""Sets the wal_write_replay_delay_in_mb of this ShowDrReplicaStatusResponse.
 
         端到端延迟大小（MB），即主实例当前wal日志写入位点与灾备实例当前回放wal日志位点的差值。
 
@@ -131,7 +131,7 @@ class ShowDrReplicaStatusResponse(SdkResponse):
 
     @property
     def wal_receive_replay_delay_in_ms(self):
-        """Gets the wal_receive_replay_delay_in_ms of this ShowDrReplicaStatusResponse.
+        r"""Gets the wal_receive_replay_delay_in_ms of this ShowDrReplicaStatusResponse.
 
         回放延迟时间（ms），即数据在灾备上回放的延迟时间。
 
@@ -142,7 +142,7 @@ class ShowDrReplicaStatusResponse(SdkResponse):
 
     @wal_receive_replay_delay_in_ms.setter
     def wal_receive_replay_delay_in_ms(self, wal_receive_replay_delay_in_ms):
-        """Sets the wal_receive_replay_delay_in_ms of this ShowDrReplicaStatusResponse.
+        r"""Sets the wal_receive_replay_delay_in_ms of this ShowDrReplicaStatusResponse.
 
         回放延迟时间（ms），即数据在灾备上回放的延迟时间。
 

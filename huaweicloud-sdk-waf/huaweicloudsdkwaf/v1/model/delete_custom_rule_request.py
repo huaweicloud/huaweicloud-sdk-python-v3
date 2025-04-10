@@ -29,7 +29,7 @@ class DeleteCustomRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, rule_id=None):
-        """DeleteCustomRuleRequest
+        r"""DeleteCustomRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteCustomRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeleteCustomRuleRequest.
+        r"""Gets the enterprise_project_id of this DeleteCustomRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -66,7 +66,7 @@ class DeleteCustomRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeleteCustomRuleRequest.
+        r"""Sets the enterprise_project_id of this DeleteCustomRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -77,7 +77,7 @@ class DeleteCustomRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DeleteCustomRuleRequest.
+        r"""Gets the policy_id of this DeleteCustomRuleRequest.
 
         防护策略id，通过指定防护策略id来指明查询该防护策略下的防护规则，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -88,7 +88,7 @@ class DeleteCustomRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DeleteCustomRuleRequest.
+        r"""Sets the policy_id of this DeleteCustomRuleRequest.
 
         防护策略id，通过指定防护策略id来指明查询该防护策略下的防护规则，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -99,7 +99,7 @@ class DeleteCustomRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this DeleteCustomRuleRequest.
+        r"""Gets the rule_id of this DeleteCustomRuleRequest.
 
         精准防护规则id，通过查询精准防护规则列表接口（ListCustomRules）获取
 
@@ -110,7 +110,7 @@ class DeleteCustomRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this DeleteCustomRuleRequest.
+        r"""Sets the rule_id of this DeleteCustomRuleRequest.
 
         精准防护规则id，通过查询精准防护规则列表接口（ListCustomRules）获取
 

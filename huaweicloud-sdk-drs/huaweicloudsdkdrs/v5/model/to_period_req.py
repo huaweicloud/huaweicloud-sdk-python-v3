@@ -31,7 +31,7 @@ class ToPeriodReq:
     }
 
     def __init__(self, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None):
-        """ToPeriodReq
+        r"""ToPeriodReq
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ToPeriodReq:
 
     @property
     def period_type(self):
-        """Gets the period_type of this ToPeriodReq.
+        r"""Gets the period_type of this ToPeriodReq.
 
         订单类型，取值： - 2：包月 - 3：包年
 
@@ -71,7 +71,7 @@ class ToPeriodReq:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ToPeriodReq.
+        r"""Sets the period_type of this ToPeriodReq.
 
         订单类型，取值： - 2：包月 - 3：包年
 
@@ -82,7 +82,7 @@ class ToPeriodReq:
 
     @property
     def period_num(self):
-        """Gets the period_num of this ToPeriodReq.
+        r"""Gets the period_num of this ToPeriodReq.
 
         订单周期数
 
@@ -93,7 +93,7 @@ class ToPeriodReq:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this ToPeriodReq.
+        r"""Sets the period_num of this ToPeriodReq.
 
         订单周期数
 
@@ -104,7 +104,7 @@ class ToPeriodReq:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this ToPeriodReq.
+        r"""Gets the is_auto_renew of this ToPeriodReq.
 
         是否自动续费
 
@@ -115,7 +115,7 @@ class ToPeriodReq:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this ToPeriodReq.
+        r"""Sets the is_auto_renew of this ToPeriodReq.
 
         是否自动续费
 
@@ -126,7 +126,7 @@ class ToPeriodReq:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ToPeriodReq.
+        r"""Gets the is_auto_pay of this ToPeriodReq.
 
         是否自动支付
 
@@ -137,7 +137,7 @@ class ToPeriodReq:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ToPeriodReq.
+        r"""Sets the is_auto_pay of this ToPeriodReq.
 
         是否自动支付
 

@@ -29,7 +29,7 @@ class ShowImageBlobRequest:
     }
 
     def __init__(self, repository_uuid=None, branch_name=None, path=None):
-        """ShowImageBlobRequest
+        r"""ShowImageBlobRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowImageBlobRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this ShowImageBlobRequest.
+        r"""Gets the repository_uuid of this ShowImageBlobRequest.
 
         仓库id
 
@@ -65,7 +65,7 @@ class ShowImageBlobRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this ShowImageBlobRequest.
+        r"""Sets the repository_uuid of this ShowImageBlobRequest.
 
         仓库id
 
@@ -76,7 +76,7 @@ class ShowImageBlobRequest:
 
     @property
     def branch_name(self):
-        """Gets the branch_name of this ShowImageBlobRequest.
+        r"""Gets the branch_name of this ShowImageBlobRequest.
 
         分支名称
 
@@ -87,7 +87,7 @@ class ShowImageBlobRequest:
 
     @branch_name.setter
     def branch_name(self, branch_name):
-        """Sets the branch_name of this ShowImageBlobRequest.
+        r"""Sets the branch_name of this ShowImageBlobRequest.
 
         分支名称
 
@@ -98,7 +98,7 @@ class ShowImageBlobRequest:
 
     @property
     def path(self):
-        """Gets the path of this ShowImageBlobRequest.
+        r"""Gets the path of this ShowImageBlobRequest.
 
         图片路径
 
@@ -109,7 +109,7 @@ class ShowImageBlobRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowImageBlobRequest.
+        r"""Sets the path of this ShowImageBlobRequest.
 
         图片路径
 

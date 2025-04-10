@@ -27,7 +27,7 @@ class CreateKnowledgeIntentRsp:
     }
 
     def __init__(self, intent_id=None, identify=None):
-        """CreateKnowledgeIntentRsp
+        r"""CreateKnowledgeIntentRsp
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateKnowledgeIntentRsp:
 
     @property
     def intent_id(self):
-        """Gets the intent_id of this CreateKnowledgeIntentRsp.
+        r"""Gets the intent_id of this CreateKnowledgeIntentRsp.
 
         意图ID。
 
@@ -60,7 +60,7 @@ class CreateKnowledgeIntentRsp:
 
     @intent_id.setter
     def intent_id(self, intent_id):
-        """Sets the intent_id of this CreateKnowledgeIntentRsp.
+        r"""Sets the intent_id of this CreateKnowledgeIntentRsp.
 
         意图ID。
 
@@ -71,7 +71,7 @@ class CreateKnowledgeIntentRsp:
 
     @property
     def identify(self):
-        """Gets the identify of this CreateKnowledgeIntentRsp.
+        r"""Gets the identify of this CreateKnowledgeIntentRsp.
 
         意图标识。
 
@@ -82,7 +82,7 @@ class CreateKnowledgeIntentRsp:
 
     @identify.setter
     def identify(self, identify):
-        """Sets the identify of this CreateKnowledgeIntentRsp.
+        r"""Sets the identify of this CreateKnowledgeIntentRsp.
 
         意图标识。
 

@@ -29,7 +29,7 @@ class ListRecycleInstancesRequest:
     }
 
     def __init__(self, x_language=None, offset=None, limit=None):
-        """ListRecycleInstancesRequest
+        r"""ListRecycleInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListRecycleInstancesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListRecycleInstancesRequest.
+        r"""Gets the x_language of this ListRecycleInstancesRequest.
 
         语言
 
@@ -66,7 +66,7 @@ class ListRecycleInstancesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListRecycleInstancesRequest.
+        r"""Sets the x_language of this ListRecycleInstancesRequest.
 
         语言
 
@@ -77,7 +77,7 @@ class ListRecycleInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRecycleInstancesRequest.
+        r"""Gets the offset of this ListRecycleInstancesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，必须为数字，不能为负数。
 
@@ -88,7 +88,7 @@ class ListRecycleInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRecycleInstancesRequest.
+        r"""Sets the offset of this ListRecycleInstancesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，必须为数字，不能为负数。
 
@@ -99,7 +99,7 @@ class ListRecycleInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRecycleInstancesRequest.
+        r"""Gets the limit of this ListRecycleInstancesRequest.
 
         每页数据条数。取值范围[1, 50]。
 
@@ -110,7 +110,7 @@ class ListRecycleInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRecycleInstancesRequest.
+        r"""Sets the limit of this ListRecycleInstancesRequest.
 
         每页数据条数。取值范围[1, 50]。
 

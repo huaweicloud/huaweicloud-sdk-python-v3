@@ -37,7 +37,7 @@ class ListTopAbnormalRequest:
     }
 
     def __init__(self, enterprise_project_id=None, _from=None, to=None, top=None, code=None, hosts=None, instances=None):
-        """ListTopAbnormalRequest
+        r"""ListTopAbnormalRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListTopAbnormalRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListTopAbnormalRequest.
+        r"""Gets the enterprise_project_id of this ListTopAbnormalRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -94,7 +94,7 @@ class ListTopAbnormalRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListTopAbnormalRequest.
+        r"""Sets the enterprise_project_id of this ListTopAbnormalRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -105,7 +105,7 @@ class ListTopAbnormalRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ListTopAbnormalRequest.
+        r"""Gets the _from of this ListTopAbnormalRequest.
 
         起始时间（13位毫秒时间戳），需要和to同时使用
 
@@ -116,7 +116,7 @@ class ListTopAbnormalRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ListTopAbnormalRequest.
+        r"""Sets the _from of this ListTopAbnormalRequest.
 
         起始时间（13位毫秒时间戳），需要和to同时使用
 
@@ -127,7 +127,7 @@ class ListTopAbnormalRequest:
 
     @property
     def to(self):
-        """Gets the to of this ListTopAbnormalRequest.
+        r"""Gets the to of this ListTopAbnormalRequest.
 
         结束时间（13位毫秒时间戳），需要和from同时使用
 
@@ -138,7 +138,7 @@ class ListTopAbnormalRequest:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ListTopAbnormalRequest.
+        r"""Sets the to of this ListTopAbnormalRequest.
 
         结束时间（13位毫秒时间戳），需要和from同时使用
 
@@ -149,7 +149,7 @@ class ListTopAbnormalRequest:
 
     @property
     def top(self):
-        """Gets the top of this ListTopAbnormalRequest.
+        r"""Gets the top of this ListTopAbnormalRequest.
 
         要查询的前几的结果，默认值为5，最大值为10。
 
@@ -160,7 +160,7 @@ class ListTopAbnormalRequest:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this ListTopAbnormalRequest.
+        r"""Sets the top of this ListTopAbnormalRequest.
 
         要查询的前几的结果，默认值为5，最大值为10。
 
@@ -171,7 +171,7 @@ class ListTopAbnormalRequest:
 
     @property
     def code(self):
-        """Gets the code of this ListTopAbnormalRequest.
+        r"""Gets the code of this ListTopAbnormalRequest.
 
         要查询的异常状态码，目前支持查询的异常状态码包括404、500以及502。不传该参数默认查询404的状态码。
 
@@ -182,7 +182,7 @@ class ListTopAbnormalRequest:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListTopAbnormalRequest.
+        r"""Sets the code of this ListTopAbnormalRequest.
 
         要查询的异常状态码，目前支持查询的异常状态码包括404、500以及502。不传该参数默认查询404的状态码。
 
@@ -193,7 +193,7 @@ class ListTopAbnormalRequest:
 
     @property
     def hosts(self):
-        """Gets the hosts of this ListTopAbnormalRequest.
+        r"""Gets the hosts of this ListTopAbnormalRequest.
 
         域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
 
@@ -204,7 +204,7 @@ class ListTopAbnormalRequest:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this ListTopAbnormalRequest.
+        r"""Sets the hosts of this ListTopAbnormalRequest.
 
         域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
 
@@ -215,7 +215,7 @@ class ListTopAbnormalRequest:
 
     @property
     def instances(self):
-        """Gets the instances of this ListTopAbnormalRequest.
+        r"""Gets the instances of this ListTopAbnormalRequest.
 
         要查询引擎实例id
 
@@ -226,7 +226,7 @@ class ListTopAbnormalRequest:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListTopAbnormalRequest.
+        r"""Sets the instances of this ListTopAbnormalRequest.
 
         要查询引擎实例id
 

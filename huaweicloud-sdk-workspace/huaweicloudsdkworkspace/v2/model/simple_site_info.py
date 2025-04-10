@@ -27,7 +27,7 @@ class SimpleSiteInfo:
     }
 
     def __init__(self, id=None, status=None):
-        """SimpleSiteInfo
+        r"""SimpleSiteInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SimpleSiteInfo:
 
     @property
     def id(self):
-        """Gets the id of this SimpleSiteInfo.
+        r"""Gets the id of this SimpleSiteInfo.
 
         云桌面边缘小站id。
 
@@ -61,7 +61,7 @@ class SimpleSiteInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SimpleSiteInfo.
+        r"""Sets the id of this SimpleSiteInfo.
 
         云桌面边缘小站id。
 
@@ -72,7 +72,7 @@ class SimpleSiteInfo:
 
     @property
     def status(self):
-        """Gets the status of this SimpleSiteInfo.
+        r"""Gets the status of this SimpleSiteInfo.
 
         云办公服务的状态。 - PREPARING：准备开通。 - SUBSCRIBING：开通中。 - SUBSCRIBED：已开通。 - SUBSCRIPTION_FAILED：开通失败。 - DEREGISTERING：销户中。 - DEREGISTRATION_FAILED：销户失败。 - CLOSED：已销户未开通。
 
@@ -83,7 +83,7 @@ class SimpleSiteInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SimpleSiteInfo.
+        r"""Sets the status of this SimpleSiteInfo.
 
         云办公服务的状态。 - PREPARING：准备开通。 - SUBSCRIBING：开通中。 - SUBSCRIBED：已开通。 - SUBSCRIPTION_FAILED：开通失败。 - DEREGISTERING：销户中。 - DEREGISTRATION_FAILED：销户失败。 - CLOSED：已销户未开通。
 

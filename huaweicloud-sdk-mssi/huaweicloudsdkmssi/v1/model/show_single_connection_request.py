@@ -25,7 +25,7 @@ class ShowSingleConnectionRequest:
     }
 
     def __init__(self, connect_id=None):
-        """ShowSingleConnectionRequest
+        r"""ShowSingleConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSingleConnectionRequest:
 
     @property
     def connect_id(self):
-        """Gets the connect_id of this ShowSingleConnectionRequest.
+        r"""Gets the connect_id of this ShowSingleConnectionRequest.
 
         ID of Connection
 
@@ -53,7 +53,7 @@ class ShowSingleConnectionRequest:
 
     @connect_id.setter
     def connect_id(self, connect_id):
-        """Sets the connect_id of this ShowSingleConnectionRequest.
+        r"""Sets the connect_id of this ShowSingleConnectionRequest.
 
         ID of Connection
 

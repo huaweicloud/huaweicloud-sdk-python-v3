@@ -34,7 +34,7 @@ class ListUsingGetResponse(SdkResponse):
     }
 
     def __init__(self, list=None, page_num=None, page_size=None, total_page=None, total_size=None):
-        """ListUsingGetResponse
+        r"""ListUsingGetResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListUsingGetResponse(SdkResponse):
 
     @property
     def list(self):
-        """Gets the list of this ListUsingGetResponse.
+        r"""Gets the list of this ListUsingGetResponse.
 
         返回结果
 
@@ -83,7 +83,7 @@ class ListUsingGetResponse(SdkResponse):
 
     @list.setter
     def list(self, list):
-        """Sets the list of this ListUsingGetResponse.
+        r"""Sets the list of this ListUsingGetResponse.
 
         返回结果
 
@@ -94,7 +94,7 @@ class ListUsingGetResponse(SdkResponse):
 
     @property
     def page_num(self):
-        """Gets the page_num of this ListUsingGetResponse.
+        r"""Gets the page_num of this ListUsingGetResponse.
 
         页码
 
@@ -105,7 +105,7 @@ class ListUsingGetResponse(SdkResponse):
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this ListUsingGetResponse.
+        r"""Sets the page_num of this ListUsingGetResponse.
 
         页码
 
@@ -116,7 +116,7 @@ class ListUsingGetResponse(SdkResponse):
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListUsingGetResponse.
+        r"""Gets the page_size of this ListUsingGetResponse.
 
         分页大小
 
@@ -127,7 +127,7 @@ class ListUsingGetResponse(SdkResponse):
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListUsingGetResponse.
+        r"""Sets the page_size of this ListUsingGetResponse.
 
         分页大小
 
@@ -138,7 +138,7 @@ class ListUsingGetResponse(SdkResponse):
 
     @property
     def total_page(self):
-        """Gets the total_page of this ListUsingGetResponse.
+        r"""Gets the total_page of this ListUsingGetResponse.
 
         总页数
 
@@ -149,7 +149,7 @@ class ListUsingGetResponse(SdkResponse):
 
     @total_page.setter
     def total_page(self, total_page):
-        """Sets the total_page of this ListUsingGetResponse.
+        r"""Sets the total_page of this ListUsingGetResponse.
 
         总页数
 
@@ -160,7 +160,7 @@ class ListUsingGetResponse(SdkResponse):
 
     @property
     def total_size(self):
-        """Gets the total_size of this ListUsingGetResponse.
+        r"""Gets the total_size of this ListUsingGetResponse.
 
         总条数
 
@@ -171,7 +171,7 @@ class ListUsingGetResponse(SdkResponse):
 
     @total_size.setter
     def total_size(self, total_size):
-        """Sets the total_size of this ListUsingGetResponse.
+        r"""Sets the total_size of this ListUsingGetResponse.
 
         总条数
 

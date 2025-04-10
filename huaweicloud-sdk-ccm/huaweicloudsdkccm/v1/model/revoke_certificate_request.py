@@ -27,7 +27,7 @@ class RevokeCertificateRequest:
     }
 
     def __init__(self, certificate_id=None, body=None):
-        """RevokeCertificateRequest
+        r"""RevokeCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RevokeCertificateRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this RevokeCertificateRequest.
+        r"""Gets the certificate_id of this RevokeCertificateRequest.
 
         所要吊销的私有证书ID。
 
@@ -60,7 +60,7 @@ class RevokeCertificateRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this RevokeCertificateRequest.
+        r"""Sets the certificate_id of this RevokeCertificateRequest.
 
         所要吊销的私有证书ID。
 
@@ -71,7 +71,7 @@ class RevokeCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this RevokeCertificateRequest.
+        r"""Gets the body of this RevokeCertificateRequest.
 
         :return: The body of this RevokeCertificateRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.RevokeCertificateRequestBody`
@@ -80,7 +80,7 @@ class RevokeCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RevokeCertificateRequest.
+        r"""Sets the body of this RevokeCertificateRequest.
 
         :param body: The body of this RevokeCertificateRequest.
         :type body: :class:`huaweicloudsdkccm.v1.RevokeCertificateRequestBody`

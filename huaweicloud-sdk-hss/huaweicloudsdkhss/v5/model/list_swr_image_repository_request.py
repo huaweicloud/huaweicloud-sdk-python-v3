@@ -63,13 +63,13 @@ class ListSwrImageRepositoryRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, namespace=None, image_name=None, image_version=None, latest_version=None, offset=None, limit=None, image_type=None, scan_status=None, instance_name=None, image_size=None, start_latest_update_time=None, end_latest_update_time=None, start_latest_scan_time=None, end_latest_scan_time=None, has_malicious_file=None, has_unsafe_setting=None, has_vul=None, instance_id=None):
-        """ListSwrImageRepositoryRequest
+        r"""ListSwrImageRepositoryRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param namespace: 组织名称
         :type namespace: str
@@ -174,7 +174,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListSwrImageRepositoryRequest.
+        r"""Gets the region of this ListSwrImageRepositoryRequest.
 
         Region ID
 
@@ -185,7 +185,7 @@ class ListSwrImageRepositoryRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListSwrImageRepositoryRequest.
+        r"""Sets the region of this ListSwrImageRepositoryRequest.
 
         Region ID
 
@@ -196,9 +196,9 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListSwrImageRepositoryRequest.
+        r"""Gets the enterprise_project_id of this ListSwrImageRepositoryRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListSwrImageRepositoryRequest.
         :rtype: str
@@ -207,9 +207,9 @@ class ListSwrImageRepositoryRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListSwrImageRepositoryRequest.
+        r"""Sets the enterprise_project_id of this ListSwrImageRepositoryRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListSwrImageRepositoryRequest.
         :type enterprise_project_id: str
@@ -218,7 +218,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListSwrImageRepositoryRequest.
+        r"""Gets the namespace of this ListSwrImageRepositoryRequest.
 
         组织名称
 
@@ -229,7 +229,7 @@ class ListSwrImageRepositoryRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListSwrImageRepositoryRequest.
+        r"""Sets the namespace of this ListSwrImageRepositoryRequest.
 
         组织名称
 
@@ -240,7 +240,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def image_name(self):
-        """Gets the image_name of this ListSwrImageRepositoryRequest.
+        r"""Gets the image_name of this ListSwrImageRepositoryRequest.
 
         镜像名称
 
@@ -251,7 +251,7 @@ class ListSwrImageRepositoryRequest:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this ListSwrImageRepositoryRequest.
+        r"""Sets the image_name of this ListSwrImageRepositoryRequest.
 
         镜像名称
 
@@ -262,7 +262,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def image_version(self):
-        """Gets the image_version of this ListSwrImageRepositoryRequest.
+        r"""Gets the image_version of this ListSwrImageRepositoryRequest.
 
         镜像版本
 
@@ -273,7 +273,7 @@ class ListSwrImageRepositoryRequest:
 
     @image_version.setter
     def image_version(self, image_version):
-        """Sets the image_version of this ListSwrImageRepositoryRequest.
+        r"""Sets the image_version of this ListSwrImageRepositoryRequest.
 
         镜像版本
 
@@ -284,7 +284,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def latest_version(self):
-        """Gets the latest_version of this ListSwrImageRepositoryRequest.
+        r"""Gets the latest_version of this ListSwrImageRepositoryRequest.
 
         仅关注最新版本镜像
 
@@ -295,7 +295,7 @@ class ListSwrImageRepositoryRequest:
 
     @latest_version.setter
     def latest_version(self, latest_version):
-        """Sets the latest_version of this ListSwrImageRepositoryRequest.
+        r"""Sets the latest_version of this ListSwrImageRepositoryRequest.
 
         仅关注最新版本镜像
 
@@ -306,7 +306,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSwrImageRepositoryRequest.
+        r"""Gets the offset of this ListSwrImageRepositoryRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -317,7 +317,7 @@ class ListSwrImageRepositoryRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSwrImageRepositoryRequest.
+        r"""Sets the offset of this ListSwrImageRepositoryRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -328,7 +328,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSwrImageRepositoryRequest.
+        r"""Gets the limit of this ListSwrImageRepositoryRequest.
 
         每页显示数量
 
@@ -339,7 +339,7 @@ class ListSwrImageRepositoryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSwrImageRepositoryRequest.
+        r"""Sets the limit of this ListSwrImageRepositoryRequest.
 
         每页显示数量
 
@@ -350,7 +350,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def image_type(self):
-        """Gets the image_type of this ListSwrImageRepositoryRequest.
+        r"""Gets the image_type of this ListSwrImageRepositoryRequest.
 
         镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
@@ -361,7 +361,7 @@ class ListSwrImageRepositoryRequest:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this ListSwrImageRepositoryRequest.
+        r"""Sets the image_type of this ListSwrImageRepositoryRequest.
 
         镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
@@ -372,7 +372,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def scan_status(self):
-        """Gets the scan_status of this ListSwrImageRepositoryRequest.
+        r"""Gets the scan_status of this ListSwrImageRepositoryRequest.
 
         扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - waiting_for_scan : 等待扫描
 
@@ -383,7 +383,7 @@ class ListSwrImageRepositoryRequest:
 
     @scan_status.setter
     def scan_status(self, scan_status):
-        """Sets the scan_status of this ListSwrImageRepositoryRequest.
+        r"""Sets the scan_status of this ListSwrImageRepositoryRequest.
 
         扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - waiting_for_scan : 等待扫描
 
@@ -394,7 +394,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ListSwrImageRepositoryRequest.
+        r"""Gets the instance_name of this ListSwrImageRepositoryRequest.
 
         企业镜像实例名称
 
@@ -405,7 +405,7 @@ class ListSwrImageRepositoryRequest:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ListSwrImageRepositoryRequest.
+        r"""Sets the instance_name of this ListSwrImageRepositoryRequest.
 
         企业镜像实例名称
 
@@ -416,7 +416,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def image_size(self):
-        """Gets the image_size of this ListSwrImageRepositoryRequest.
+        r"""Gets the image_size of this ListSwrImageRepositoryRequest.
 
         镜像大小
 
@@ -427,7 +427,7 @@ class ListSwrImageRepositoryRequest:
 
     @image_size.setter
     def image_size(self, image_size):
-        """Sets the image_size of this ListSwrImageRepositoryRequest.
+        r"""Sets the image_size of this ListSwrImageRepositoryRequest.
 
         镜像大小
 
@@ -438,7 +438,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def start_latest_update_time(self):
-        """Gets the start_latest_update_time of this ListSwrImageRepositoryRequest.
+        r"""Gets the start_latest_update_time of this ListSwrImageRepositoryRequest.
 
         创建时间开始日期，时间单位 毫秒（ms）
 
@@ -449,7 +449,7 @@ class ListSwrImageRepositoryRequest:
 
     @start_latest_update_time.setter
     def start_latest_update_time(self, start_latest_update_time):
-        """Sets the start_latest_update_time of this ListSwrImageRepositoryRequest.
+        r"""Sets the start_latest_update_time of this ListSwrImageRepositoryRequest.
 
         创建时间开始日期，时间单位 毫秒（ms）
 
@@ -460,7 +460,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def end_latest_update_time(self):
-        """Gets the end_latest_update_time of this ListSwrImageRepositoryRequest.
+        r"""Gets the end_latest_update_time of this ListSwrImageRepositoryRequest.
 
         创建时间结束日期，时间单位 毫秒（ms）
 
@@ -471,7 +471,7 @@ class ListSwrImageRepositoryRequest:
 
     @end_latest_update_time.setter
     def end_latest_update_time(self, end_latest_update_time):
-        """Sets the end_latest_update_time of this ListSwrImageRepositoryRequest.
+        r"""Sets the end_latest_update_time of this ListSwrImageRepositoryRequest.
 
         创建时间结束日期，时间单位 毫秒（ms）
 
@@ -482,7 +482,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def start_latest_scan_time(self):
-        """Gets the start_latest_scan_time of this ListSwrImageRepositoryRequest.
+        r"""Gets the start_latest_scan_time of this ListSwrImageRepositoryRequest.
 
         最近一次扫描完成时间开始日期，时间单位 毫秒（ms）
 
@@ -493,7 +493,7 @@ class ListSwrImageRepositoryRequest:
 
     @start_latest_scan_time.setter
     def start_latest_scan_time(self, start_latest_scan_time):
-        """Sets the start_latest_scan_time of this ListSwrImageRepositoryRequest.
+        r"""Sets the start_latest_scan_time of this ListSwrImageRepositoryRequest.
 
         最近一次扫描完成时间开始日期，时间单位 毫秒（ms）
 
@@ -504,7 +504,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def end_latest_scan_time(self):
-        """Gets the end_latest_scan_time of this ListSwrImageRepositoryRequest.
+        r"""Gets the end_latest_scan_time of this ListSwrImageRepositoryRequest.
 
         最近一次扫描完成时间结束日期，时间单位 毫秒（ms）
 
@@ -515,7 +515,7 @@ class ListSwrImageRepositoryRequest:
 
     @end_latest_scan_time.setter
     def end_latest_scan_time(self, end_latest_scan_time):
-        """Sets the end_latest_scan_time of this ListSwrImageRepositoryRequest.
+        r"""Sets the end_latest_scan_time of this ListSwrImageRepositoryRequest.
 
         最近一次扫描完成时间结束日期，时间单位 毫秒（ms）
 
@@ -526,7 +526,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def has_malicious_file(self):
-        """Gets the has_malicious_file of this ListSwrImageRepositoryRequest.
+        r"""Gets the has_malicious_file of this ListSwrImageRepositoryRequest.
 
         是否存在恶意文件
 
@@ -537,7 +537,7 @@ class ListSwrImageRepositoryRequest:
 
     @has_malicious_file.setter
     def has_malicious_file(self, has_malicious_file):
-        """Sets the has_malicious_file of this ListSwrImageRepositoryRequest.
+        r"""Sets the has_malicious_file of this ListSwrImageRepositoryRequest.
 
         是否存在恶意文件
 
@@ -548,7 +548,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def has_unsafe_setting(self):
-        """Gets the has_unsafe_setting of this ListSwrImageRepositoryRequest.
+        r"""Gets the has_unsafe_setting of this ListSwrImageRepositoryRequest.
 
         是否存在基线检查
 
@@ -559,7 +559,7 @@ class ListSwrImageRepositoryRequest:
 
     @has_unsafe_setting.setter
     def has_unsafe_setting(self, has_unsafe_setting):
-        """Sets the has_unsafe_setting of this ListSwrImageRepositoryRequest.
+        r"""Sets the has_unsafe_setting of this ListSwrImageRepositoryRequest.
 
         是否存在基线检查
 
@@ -570,7 +570,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def has_vul(self):
-        """Gets the has_vul of this ListSwrImageRepositoryRequest.
+        r"""Gets the has_vul of this ListSwrImageRepositoryRequest.
 
         是否存在软件漏洞
 
@@ -581,7 +581,7 @@ class ListSwrImageRepositoryRequest:
 
     @has_vul.setter
     def has_vul(self, has_vul):
-        """Sets the has_vul of this ListSwrImageRepositoryRequest.
+        r"""Sets the has_vul of this ListSwrImageRepositoryRequest.
 
         是否存在软件漏洞
 
@@ -592,7 +592,7 @@ class ListSwrImageRepositoryRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSwrImageRepositoryRequest.
+        r"""Gets the instance_id of this ListSwrImageRepositoryRequest.
 
         企业仓库实例ID，swr共享版无需使用该参数
 
@@ -603,7 +603,7 @@ class ListSwrImageRepositoryRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSwrImageRepositoryRequest.
+        r"""Sets the instance_id of this ListSwrImageRepositoryRequest.
 
         企业仓库实例ID，swr共享版无需使用该参数
 

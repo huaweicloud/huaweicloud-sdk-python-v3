@@ -28,7 +28,7 @@ class ShowEnvironmentDetailResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """ShowEnvironmentDetailResponse
+        r"""ShowEnvironmentDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowEnvironmentDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowEnvironmentDetailResponse.
+        r"""Gets the status of this ShowEnvironmentDetailResponse.
 
         请求成功失败状态
 
@@ -62,7 +62,7 @@ class ShowEnvironmentDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowEnvironmentDetailResponse.
+        r"""Sets the status of this ShowEnvironmentDetailResponse.
 
         请求成功失败状态
 
@@ -73,7 +73,7 @@ class ShowEnvironmentDetailResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowEnvironmentDetailResponse.
+        r"""Gets the result of this ShowEnvironmentDetailResponse.
 
         :return: The result of this ShowEnvironmentDetailResponse.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.EnvironmentDetail`
@@ -82,7 +82,7 @@ class ShowEnvironmentDetailResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowEnvironmentDetailResponse.
+        r"""Sets the result of this ShowEnvironmentDetailResponse.
 
         :param result: The result of this ShowEnvironmentDetailResponse.
         :type result: :class:`huaweicloudsdkcodeartsdeploy.v2.EnvironmentDetail`

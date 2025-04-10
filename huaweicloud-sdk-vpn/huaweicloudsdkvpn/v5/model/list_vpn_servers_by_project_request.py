@@ -27,7 +27,7 @@ class ListVpnServersByProjectRequest:
     }
 
     def __init__(self, limit=None, marker=None):
-        """ListVpnServersByProjectRequest
+        r"""ListVpnServersByProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListVpnServersByProjectRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVpnServersByProjectRequest.
+        r"""Gets the limit of this ListVpnServersByProjectRequest.
 
         分页查询时每页返回的记录数量
 
@@ -61,7 +61,7 @@ class ListVpnServersByProjectRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVpnServersByProjectRequest.
+        r"""Sets the limit of this ListVpnServersByProjectRequest.
 
         分页查询时每页返回的记录数量
 
@@ -72,7 +72,7 @@ class ListVpnServersByProjectRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListVpnServersByProjectRequest.
+        r"""Gets the marker of this ListVpnServersByProjectRequest.
 
         上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
 
@@ -83,7 +83,7 @@ class ListVpnServersByProjectRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListVpnServersByProjectRequest.
+        r"""Sets the marker of this ListVpnServersByProjectRequest.
 
         上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
 

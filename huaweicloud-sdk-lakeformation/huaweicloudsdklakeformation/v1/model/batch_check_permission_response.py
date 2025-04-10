@@ -26,7 +26,7 @@ class BatchCheckPermissionResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchCheckPermissionResponse
+        r"""BatchCheckPermissionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchCheckPermissionResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchCheckPermissionResponse.
+        r"""Gets the body of this BatchCheckPermissionResponse.
 
         :return: The body of this BatchCheckPermissionResponse.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.CheckPermissionResult`]
@@ -53,7 +53,7 @@ class BatchCheckPermissionResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCheckPermissionResponse.
+        r"""Sets the body of this BatchCheckPermissionResponse.
 
         :param body: The body of this BatchCheckPermissionResponse.
         :type body: list[:class:`huaweicloudsdklakeformation.v1.CheckPermissionResult`]

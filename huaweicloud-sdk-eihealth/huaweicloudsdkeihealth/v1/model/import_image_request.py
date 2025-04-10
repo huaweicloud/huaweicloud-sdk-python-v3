@@ -27,7 +27,7 @@ class ImportImageRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """ImportImageRequest
+        r"""ImportImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ImportImageRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ImportImageRequest.
+        r"""Gets the eihealth_project_id of this ImportImageRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class ImportImageRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ImportImageRequest.
+        r"""Sets the eihealth_project_id of this ImportImageRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class ImportImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportImageRequest.
+        r"""Gets the body of this ImportImageRequest.
 
         :return: The body of this ImportImageRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportImageReq`
@@ -80,7 +80,7 @@ class ImportImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportImageRequest.
+        r"""Sets the body of this ImportImageRequest.
 
         :param body: The body of this ImportImageRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.ImportImageReq`

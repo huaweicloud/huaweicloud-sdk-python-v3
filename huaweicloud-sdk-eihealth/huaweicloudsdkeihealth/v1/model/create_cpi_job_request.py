@@ -27,7 +27,7 @@ class CreateCpiJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateCpiJobRequest
+        r"""CreateCpiJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCpiJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateCpiJobRequest.
+        r"""Gets the eihealth_project_id of this CreateCpiJobRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class CreateCpiJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateCpiJobRequest.
+        r"""Sets the eihealth_project_id of this CreateCpiJobRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class CreateCpiJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCpiJobRequest.
+        r"""Gets the body of this CreateCpiJobRequest.
 
         :return: The body of this CreateCpiJobRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateCpiJobReq`
@@ -80,7 +80,7 @@ class CreateCpiJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCpiJobRequest.
+        r"""Sets the body of this CreateCpiJobRequest.
 
         :param body: The body of this CreateCpiJobRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateCpiJobReq`

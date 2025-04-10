@@ -25,7 +25,7 @@ class ShowRepositoryInfoRequest:
     }
 
     def __init__(self, repo_id=None):
-        """ShowRepositoryInfoRequest
+        r"""ShowRepositoryInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowRepositoryInfoRequest:
 
     @property
     def repo_id(self):
-        """Gets the repo_id of this ShowRepositoryInfoRequest.
+        r"""Gets the repo_id of this ShowRepositoryInfoRequest.
 
         仓库id
 
@@ -53,7 +53,7 @@ class ShowRepositoryInfoRequest:
 
     @repo_id.setter
     def repo_id(self, repo_id):
-        """Sets the repo_id of this ShowRepositoryInfoRequest.
+        r"""Sets the repo_id of this ShowRepositoryInfoRequest.
 
         仓库id
 

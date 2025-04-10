@@ -27,7 +27,7 @@ class UpdateHpcShareRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """UpdateHpcShareRequest
+        r"""UpdateHpcShareRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateHpcShareRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this UpdateHpcShareRequest.
+        r"""Gets the share_id of this UpdateHpcShareRequest.
 
         文件系统ID
 
@@ -60,7 +60,7 @@ class UpdateHpcShareRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this UpdateHpcShareRequest.
+        r"""Sets the share_id of this UpdateHpcShareRequest.
 
         文件系统ID
 
@@ -71,7 +71,7 @@ class UpdateHpcShareRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHpcShareRequest.
+        r"""Gets the body of this UpdateHpcShareRequest.
 
         :return: The body of this UpdateHpcShareRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.UpdateHpcShareRequestBody`
@@ -80,7 +80,7 @@ class UpdateHpcShareRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHpcShareRequest.
+        r"""Sets the body of this UpdateHpcShareRequest.
 
         :param body: The body of this UpdateHpcShareRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.UpdateHpcShareRequestBody`

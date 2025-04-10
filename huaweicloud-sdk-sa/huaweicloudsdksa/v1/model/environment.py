@@ -31,7 +31,7 @@ class Environment:
     }
 
     def __init__(self, type=None, domain_id=None, project_id=None, region_id=None):
-        """Environment
+        r"""Environment
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class Environment:
 
     @property
     def type(self):
-        """Gets the type of this Environment.
+        r"""Gets the type of this Environment.
 
         环境供应商，HWCP/HWC/AWS/Azure/GCP等。
 
@@ -73,7 +73,7 @@ class Environment:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Environment.
+        r"""Sets the type of this Environment.
 
         环境供应商，HWCP/HWC/AWS/Azure/GCP等。
 
@@ -84,7 +84,7 @@ class Environment:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this Environment.
+        r"""Gets the domain_id of this Environment.
 
         租户账号ID，用来标识事件所属租户。
 
@@ -95,7 +95,7 @@ class Environment:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this Environment.
+        r"""Sets the domain_id of this Environment.
 
         租户账号ID，用来标识事件所属租户。
 
@@ -106,7 +106,7 @@ class Environment:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Environment.
+        r"""Gets the project_id of this Environment.
 
         租户项目ID，用来标识事件所属项目区域。
 
@@ -117,7 +117,7 @@ class Environment:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Environment.
+        r"""Sets the project_id of this Environment.
 
         租户项目ID，用来标识事件所属项目区域。
 
@@ -128,7 +128,7 @@ class Environment:
 
     @property
     def region_id(self):
-        """Gets the region_id of this Environment.
+        r"""Gets the region_id of this Environment.
 
         数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义。
 
@@ -139,7 +139,7 @@ class Environment:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this Environment.
+        r"""Sets the region_id of this Environment.
 
         数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义。
 

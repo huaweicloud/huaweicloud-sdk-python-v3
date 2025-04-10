@@ -33,7 +33,7 @@ class ShowTopologyTreeRequest:
     }
 
     def __init__(self, region_id=None, business_id=None, env_tag_id=None, env_keyword=None, x_business_id=None):
-        """ShowTopologyTreeRequest
+        r"""ShowTopologyTreeRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ShowTopologyTreeRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ShowTopologyTreeRequest.
+        r"""Gets the region_id of this ShowTopologyTreeRequest.
 
         区域id。
 
@@ -80,7 +80,7 @@ class ShowTopologyTreeRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ShowTopologyTreeRequest.
+        r"""Sets the region_id of this ShowTopologyTreeRequest.
 
         区域id。
 
@@ -91,7 +91,7 @@ class ShowTopologyTreeRequest:
 
     @property
     def business_id(self):
-        """Gets the business_id of this ShowTopologyTreeRequest.
+        r"""Gets the business_id of this ShowTopologyTreeRequest.
 
         应用id。
 
@@ -102,7 +102,7 @@ class ShowTopologyTreeRequest:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this ShowTopologyTreeRequest.
+        r"""Sets the business_id of this ShowTopologyTreeRequest.
 
         应用id。
 
@@ -113,7 +113,7 @@ class ShowTopologyTreeRequest:
 
     @property
     def env_tag_id(self):
-        """Gets the env_tag_id of this ShowTopologyTreeRequest.
+        r"""Gets the env_tag_id of this ShowTopologyTreeRequest.
 
         环境标签id。
 
@@ -124,7 +124,7 @@ class ShowTopologyTreeRequest:
 
     @env_tag_id.setter
     def env_tag_id(self, env_tag_id):
-        """Sets the env_tag_id of this ShowTopologyTreeRequest.
+        r"""Sets the env_tag_id of this ShowTopologyTreeRequest.
 
         环境标签id。
 
@@ -135,7 +135,7 @@ class ShowTopologyTreeRequest:
 
     @property
     def env_keyword(self):
-        """Gets the env_keyword of this ShowTopologyTreeRequest.
+        r"""Gets the env_keyword of this ShowTopologyTreeRequest.
 
         环境关键字。
 
@@ -146,7 +146,7 @@ class ShowTopologyTreeRequest:
 
     @env_keyword.setter
     def env_keyword(self, env_keyword):
-        """Sets the env_keyword of this ShowTopologyTreeRequest.
+        r"""Sets the env_keyword of this ShowTopologyTreeRequest.
 
         环境关键字。
 
@@ -157,7 +157,7 @@ class ShowTopologyTreeRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ShowTopologyTreeRequest.
+        r"""Gets the x_business_id of this ShowTopologyTreeRequest.
 
         应用id。
 
@@ -168,7 +168,7 @@ class ShowTopologyTreeRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ShowTopologyTreeRequest.
+        r"""Sets the x_business_id of this ShowTopologyTreeRequest.
 
         应用id。
 

@@ -27,7 +27,7 @@ class FaceDetectBase64Req:
     }
 
     def __init__(self, image_base64=None, attributes=None):
-        """FaceDetectBase64Req
+        r"""FaceDetectBase64Req
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class FaceDetectBase64Req:
 
     @property
     def image_base64(self):
-        """Gets the image_base64 of this FaceDetectBase64Req.
+        r"""Gets the image_base64 of this FaceDetectBase64Req.
 
         图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于1MB。 • 图片为JPG/JPEG/BMP/PNG格式。
 
@@ -60,7 +60,7 @@ class FaceDetectBase64Req:
 
     @image_base64.setter
     def image_base64(self, image_base64):
-        """Sets the image_base64 of this FaceDetectBase64Req.
+        r"""Sets the image_base64 of this FaceDetectBase64Req.
 
         图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于1MB。 • 图片为JPG/JPEG/BMP/PNG格式。
 
@@ -71,7 +71,7 @@ class FaceDetectBase64Req:
 
     @property
     def attributes(self):
-        """Gets the attributes of this FaceDetectBase64Req.
+        r"""Gets the attributes of this FaceDetectBase64Req.
 
         是否返回人脸属性，希望获取的属性列表，多个属性间使用逗号（,）隔开。目前支持的属性有：   • 1：性别   • 2：年龄   • 4：装束（帽子、眼镜）   • 6：口罩   • 7：发型   • 8：胡须   • 11：图片类型   • 12：质量   • 13：表情   • 21：人脸图片旋转角（顺时针偏转角度），支持0°、90°、180°和270°图片旋转
 
@@ -82,7 +82,7 @@ class FaceDetectBase64Req:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this FaceDetectBase64Req.
+        r"""Sets the attributes of this FaceDetectBase64Req.
 
         是否返回人脸属性，希望获取的属性列表，多个属性间使用逗号（,）隔开。目前支持的属性有：   • 1：性别   • 2：年龄   • 4：装束（帽子、眼镜）   • 6：口罩   • 7：发型   • 8：胡须   • 11：图片类型   • 12：质量   • 13：表情   • 21：人脸图片旋转角（顺时针偏转角度），支持0°、90°、180°和270°图片旋转
 

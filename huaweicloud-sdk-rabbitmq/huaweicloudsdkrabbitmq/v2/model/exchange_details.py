@@ -37,7 +37,7 @@ class ExchangeDetails:
     }
 
     def __init__(self, durable=None, default=None, internal=None, name=None, auto_delete=None, type=None, vhost=None):
-        """ExchangeDetails
+        r"""ExchangeDetails
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ExchangeDetails:
 
     @property
     def durable(self):
-        """Gets the durable of this ExchangeDetails.
+        r"""Gets the durable of this ExchangeDetails.
 
         是否持久化
 
@@ -96,7 +96,7 @@ class ExchangeDetails:
 
     @durable.setter
     def durable(self, durable):
-        """Sets the durable of this ExchangeDetails.
+        r"""Sets the durable of this ExchangeDetails.
 
         是否持久化
 
@@ -107,7 +107,7 @@ class ExchangeDetails:
 
     @property
     def default(self):
-        """Gets the default of this ExchangeDetails.
+        r"""Gets the default of this ExchangeDetails.
 
         是否是默认Exchange
 
@@ -118,7 +118,7 @@ class ExchangeDetails:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this ExchangeDetails.
+        r"""Sets the default of this ExchangeDetails.
 
         是否是默认Exchange
 
@@ -129,7 +129,7 @@ class ExchangeDetails:
 
     @property
     def internal(self):
-        """Gets the internal of this ExchangeDetails.
+        r"""Gets the internal of this ExchangeDetails.
 
         是否是内部Exchange
 
@@ -140,7 +140,7 @@ class ExchangeDetails:
 
     @internal.setter
     def internal(self, internal):
-        """Sets the internal of this ExchangeDetails.
+        r"""Sets the internal of this ExchangeDetails.
 
         是否是内部Exchange
 
@@ -151,7 +151,7 @@ class ExchangeDetails:
 
     @property
     def name(self):
-        """Gets the name of this ExchangeDetails.
+        r"""Gets the name of this ExchangeDetails.
 
         Exchange名称
 
@@ -162,7 +162,7 @@ class ExchangeDetails:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExchangeDetails.
+        r"""Sets the name of this ExchangeDetails.
 
         Exchange名称
 
@@ -173,7 +173,7 @@ class ExchangeDetails:
 
     @property
     def auto_delete(self):
-        """Gets the auto_delete of this ExchangeDetails.
+        r"""Gets the auto_delete of this ExchangeDetails.
 
         是否自动删除
 
@@ -184,7 +184,7 @@ class ExchangeDetails:
 
     @auto_delete.setter
     def auto_delete(self, auto_delete):
-        """Sets the auto_delete of this ExchangeDetails.
+        r"""Sets the auto_delete of this ExchangeDetails.
 
         是否自动删除
 
@@ -195,7 +195,7 @@ class ExchangeDetails:
 
     @property
     def type(self):
-        """Gets the type of this ExchangeDetails.
+        r"""Gets the type of this ExchangeDetails.
 
         Exchange类型
 
@@ -206,7 +206,7 @@ class ExchangeDetails:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExchangeDetails.
+        r"""Sets the type of this ExchangeDetails.
 
         Exchange类型
 
@@ -217,7 +217,7 @@ class ExchangeDetails:
 
     @property
     def vhost(self):
-        """Gets the vhost of this ExchangeDetails.
+        r"""Gets the vhost of this ExchangeDetails.
 
         所属Vhost
 
@@ -228,7 +228,7 @@ class ExchangeDetails:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this ExchangeDetails.
+        r"""Sets the vhost of this ExchangeDetails.
 
         所属Vhost
 

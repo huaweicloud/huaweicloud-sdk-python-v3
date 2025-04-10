@@ -29,7 +29,7 @@ class TraceTopologyNode:
     }
 
     def __init__(self, node_id=None, node_name=None, hint=None):
-        """TraceTopologyNode
+        r"""TraceTopologyNode
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TraceTopologyNode:
 
     @property
     def node_id(self):
-        """Gets the node_id of this TraceTopologyNode.
+        r"""Gets the node_id of this TraceTopologyNode.
 
         节点id。
 
@@ -68,7 +68,7 @@ class TraceTopologyNode:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this TraceTopologyNode.
+        r"""Sets the node_id of this TraceTopologyNode.
 
         节点id。
 
@@ -79,7 +79,7 @@ class TraceTopologyNode:
 
     @property
     def node_name(self):
-        """Gets the node_name of this TraceTopologyNode.
+        r"""Gets the node_name of this TraceTopologyNode.
 
         节点名称。
 
@@ -90,7 +90,7 @@ class TraceTopologyNode:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this TraceTopologyNode.
+        r"""Sets the node_name of this TraceTopologyNode.
 
         节点名称。
 
@@ -101,7 +101,7 @@ class TraceTopologyNode:
 
     @property
     def hint(self):
-        """Gets the hint of this TraceTopologyNode.
+        r"""Gets the hint of this TraceTopologyNode.
 
         节点提示字段。
 
@@ -112,7 +112,7 @@ class TraceTopologyNode:
 
     @hint.setter
     def hint(self, hint):
-        """Sets the hint of this TraceTopologyNode.
+        r"""Sets the hint of this TraceTopologyNode.
 
         节点提示字段。
 

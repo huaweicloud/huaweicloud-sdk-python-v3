@@ -25,7 +25,7 @@ class CreateExternalIncidentResponseData:
     }
 
     def __init__(self, incident_num=None):
-        """CreateExternalIncidentResponseData
+        r"""CreateExternalIncidentResponseData
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateExternalIncidentResponseData:
 
     @property
     def incident_num(self):
-        """Gets the incident_num of this CreateExternalIncidentResponseData.
+        r"""Gets the incident_num of this CreateExternalIncidentResponseData.
 
         事件单号
 
@@ -53,7 +53,7 @@ class CreateExternalIncidentResponseData:
 
     @incident_num.setter
     def incident_num(self, incident_num):
-        """Sets the incident_num of this CreateExternalIncidentResponseData.
+        r"""Sets the incident_num of this CreateExternalIncidentResponseData.
 
         事件单号
 

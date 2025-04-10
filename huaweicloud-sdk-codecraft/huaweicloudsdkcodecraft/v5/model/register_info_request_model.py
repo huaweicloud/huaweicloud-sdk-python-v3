@@ -29,7 +29,7 @@ class RegisterInfoRequestModel:
     }
 
     def __init__(self, competition_id=None, stage_id=None, domain_id=None):
-        """RegisterInfoRequestModel
+        r"""RegisterInfoRequestModel
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RegisterInfoRequestModel:
 
     @property
     def competition_id(self):
-        """Gets the competition_id of this RegisterInfoRequestModel.
+        r"""Gets the competition_id of this RegisterInfoRequestModel.
 
         大赛ID，大赛平台提供
 
@@ -65,7 +65,7 @@ class RegisterInfoRequestModel:
 
     @competition_id.setter
     def competition_id(self, competition_id):
-        """Sets the competition_id of this RegisterInfoRequestModel.
+        r"""Sets the competition_id of this RegisterInfoRequestModel.
 
         大赛ID，大赛平台提供
 
@@ -76,7 +76,7 @@ class RegisterInfoRequestModel:
 
     @property
     def stage_id(self):
-        """Gets the stage_id of this RegisterInfoRequestModel.
+        r"""Gets the stage_id of this RegisterInfoRequestModel.
 
         大赛阶段ID，大赛平台提供
 
@@ -87,7 +87,7 @@ class RegisterInfoRequestModel:
 
     @stage_id.setter
     def stage_id(self, stage_id):
-        """Sets the stage_id of this RegisterInfoRequestModel.
+        r"""Sets the stage_id of this RegisterInfoRequestModel.
 
         大赛阶段ID，大赛平台提供
 
@@ -98,7 +98,7 @@ class RegisterInfoRequestModel:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this RegisterInfoRequestModel.
+        r"""Gets the domain_id of this RegisterInfoRequestModel.
 
         租户ID
 
@@ -109,7 +109,7 @@ class RegisterInfoRequestModel:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this RegisterInfoRequestModel.
+        r"""Sets the domain_id of this RegisterInfoRequestModel.
 
         租户ID
 

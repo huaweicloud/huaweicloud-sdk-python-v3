@@ -29,7 +29,7 @@ class ListFilesByQueryRequest:
     }
 
     def __init__(self, repo_id=None, file_path=None, ref=None):
-        """ListFilesByQueryRequest
+        r"""ListFilesByQueryRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListFilesByQueryRequest:
 
     @property
     def repo_id(self):
-        """Gets the repo_id of this ListFilesByQueryRequest.
+        r"""Gets the repo_id of this ListFilesByQueryRequest.
 
         仓库短id
 
@@ -65,7 +65,7 @@ class ListFilesByQueryRequest:
 
     @repo_id.setter
     def repo_id(self, repo_id):
-        """Sets the repo_id of this ListFilesByQueryRequest.
+        r"""Sets the repo_id of this ListFilesByQueryRequest.
 
         仓库短id
 
@@ -76,7 +76,7 @@ class ListFilesByQueryRequest:
 
     @property
     def file_path(self):
-        """Gets the file_path of this ListFilesByQueryRequest.
+        r"""Gets the file_path of this ListFilesByQueryRequest.
 
         文件的完整路径。
 
@@ -87,7 +87,7 @@ class ListFilesByQueryRequest:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this ListFilesByQueryRequest.
+        r"""Sets the file_path of this ListFilesByQueryRequest.
 
         文件的完整路径。
 
@@ -98,7 +98,7 @@ class ListFilesByQueryRequest:
 
     @property
     def ref(self):
-        """Gets the ref of this ListFilesByQueryRequest.
+        r"""Gets the ref of this ListFilesByQueryRequest.
 
         commit id，仓库的branch名或tag名
 
@@ -109,7 +109,7 @@ class ListFilesByQueryRequest:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this ListFilesByQueryRequest.
+        r"""Sets the ref of this ListFilesByQueryRequest.
 
         commit id，仓库的branch名或tag名
 

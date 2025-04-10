@@ -25,7 +25,7 @@ class ListBandwidthPackagesByTagsRequestBody:
     }
 
     def __init__(self, tags=None):
-        """ListBandwidthPackagesByTagsRequestBody
+        r"""ListBandwidthPackagesByTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListBandwidthPackagesByTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListBandwidthPackagesByTagsRequestBody.
+        r"""Gets the tags of this ListBandwidthPackagesByTagsRequestBody.
 
         包含标签。
 
@@ -53,7 +53,7 @@ class ListBandwidthPackagesByTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListBandwidthPackagesByTagsRequestBody.
+        r"""Sets the tags of this ListBandwidthPackagesByTagsRequestBody.
 
         包含标签。
 

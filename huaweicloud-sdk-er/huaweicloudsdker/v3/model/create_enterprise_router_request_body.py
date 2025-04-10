@@ -25,7 +25,7 @@ class CreateEnterpriseRouterRequestBody:
     }
 
     def __init__(self, instance=None):
-        """CreateEnterpriseRouterRequestBody
+        r"""CreateEnterpriseRouterRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateEnterpriseRouterRequestBody:
 
     @property
     def instance(self):
-        """Gets the instance of this CreateEnterpriseRouterRequestBody.
+        r"""Gets the instance of this CreateEnterpriseRouterRequestBody.
 
         :return: The instance of this CreateEnterpriseRouterRequestBody.
         :rtype: :class:`huaweicloudsdker.v3.CreateEnterpriseRouter`
@@ -51,7 +51,7 @@ class CreateEnterpriseRouterRequestBody:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this CreateEnterpriseRouterRequestBody.
+        r"""Sets the instance of this CreateEnterpriseRouterRequestBody.
 
         :param instance: The instance of this CreateEnterpriseRouterRequestBody.
         :type instance: :class:`huaweicloudsdker.v3.CreateEnterpriseRouter`

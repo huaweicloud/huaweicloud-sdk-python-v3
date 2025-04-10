@@ -29,7 +29,7 @@ class AssignAppAuthorizationsReq:
     }
 
     def __init__(self, authorization_type=None, users=None, del_users=None):
-        """AssignAppAuthorizationsReq
+        r"""AssignAppAuthorizationsReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AssignAppAuthorizationsReq:
 
     @property
     def authorization_type(self):
-        """Gets the authorization_type of this AssignAppAuthorizationsReq.
+        r"""Gets the authorization_type of this AssignAppAuthorizationsReq.
 
         :return: The authorization_type of this AssignAppAuthorizationsReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AssignType`
@@ -65,7 +65,7 @@ class AssignAppAuthorizationsReq:
 
     @authorization_type.setter
     def authorization_type(self, authorization_type):
-        """Sets the authorization_type of this AssignAppAuthorizationsReq.
+        r"""Sets the authorization_type of this AssignAppAuthorizationsReq.
 
         :param authorization_type: The authorization_type of this AssignAppAuthorizationsReq.
         :type authorization_type: :class:`huaweicloudsdkworkspace.v2.AssignType`
@@ -74,7 +74,7 @@ class AssignAppAuthorizationsReq:
 
     @property
     def users(self):
-        """Gets the users of this AssignAppAuthorizationsReq.
+        r"""Gets the users of this AssignAppAuthorizationsReq.
 
         新增授权用户列表，一次请求数量区间 [0, 100]。
 
@@ -85,7 +85,7 @@ class AssignAppAuthorizationsReq:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this AssignAppAuthorizationsReq.
+        r"""Sets the users of this AssignAppAuthorizationsReq.
 
         新增授权用户列表，一次请求数量区间 [0, 100]。
 
@@ -96,7 +96,7 @@ class AssignAppAuthorizationsReq:
 
     @property
     def del_users(self):
-        """Gets the del_users of this AssignAppAuthorizationsReq.
+        r"""Gets the del_users of this AssignAppAuthorizationsReq.
 
         取消授权用户列表，一次请求数量区间 [0, 100]。
 
@@ -107,7 +107,7 @@ class AssignAppAuthorizationsReq:
 
     @del_users.setter
     def del_users(self, del_users):
-        """Sets the del_users of this AssignAppAuthorizationsReq.
+        r"""Sets the del_users of this AssignAppAuthorizationsReq.
 
         取消授权用户列表，一次请求数量区间 [0, 100]。
 

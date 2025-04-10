@@ -27,7 +27,7 @@ class BatchReinstallServerReq:
     }
 
     def __init__(self, server_ids=None, update_access_agent=None):
-        """BatchReinstallServerReq
+        r"""BatchReinstallServerReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchReinstallServerReq:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this BatchReinstallServerReq.
+        r"""Gets the server_ids of this BatchReinstallServerReq.
 
         应用服务器id集合。
 
@@ -61,7 +61,7 @@ class BatchReinstallServerReq:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this BatchReinstallServerReq.
+        r"""Sets the server_ids of this BatchReinstallServerReq.
 
         应用服务器id集合。
 
@@ -72,7 +72,7 @@ class BatchReinstallServerReq:
 
     @property
     def update_access_agent(self):
-        """Gets the update_access_agent of this BatchReinstallServerReq.
+        r"""Gets the update_access_agent of this BatchReinstallServerReq.
 
         是否自动升级hda版本。
 
@@ -83,7 +83,7 @@ class BatchReinstallServerReq:
 
     @update_access_agent.setter
     def update_access_agent(self, update_access_agent):
-        """Sets the update_access_agent of this BatchReinstallServerReq.
+        r"""Sets the update_access_agent of this BatchReinstallServerReq.
 
         是否自动升级hda版本。
 

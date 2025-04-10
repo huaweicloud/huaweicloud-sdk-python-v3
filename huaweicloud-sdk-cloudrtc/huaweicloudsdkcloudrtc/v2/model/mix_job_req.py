@@ -27,7 +27,7 @@ class MixJobReq:
     }
 
     def __init__(self, mix_param=None, record_param=None):
-        """MixJobReq
+        r"""MixJobReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class MixJobReq:
 
     @property
     def mix_param(self):
-        """Gets the mix_param of this MixJobReq.
+        r"""Gets the mix_param of this MixJobReq.
 
         :return: The mix_param of this MixJobReq.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
@@ -58,7 +58,7 @@ class MixJobReq:
 
     @mix_param.setter
     def mix_param(self, mix_param):
-        """Sets the mix_param of this MixJobReq.
+        r"""Sets the mix_param of this MixJobReq.
 
         :param mix_param: The mix_param of this MixJobReq.
         :type mix_param: :class:`huaweicloudsdkcloudrtc.v2.MixParam`
@@ -67,7 +67,7 @@ class MixJobReq:
 
     @property
     def record_param(self):
-        """Gets the record_param of this MixJobReq.
+        r"""Gets the record_param of this MixJobReq.
 
         :return: The record_param of this MixJobReq.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
@@ -76,7 +76,7 @@ class MixJobReq:
 
     @record_param.setter
     def record_param(self, record_param):
-        """Sets the record_param of this MixJobReq.
+        r"""Sets the record_param of this MixJobReq.
 
         :param record_param: The record_param of this MixJobReq.
         :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`

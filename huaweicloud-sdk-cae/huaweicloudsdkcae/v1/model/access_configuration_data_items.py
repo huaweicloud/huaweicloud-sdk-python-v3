@@ -43,7 +43,7 @@ class AccessConfigurationDataItems:
     }
 
     def __init__(self, operator=None, uid=None, metadata=None, type=None, domain_names=None, access_control=None, ports=None, elb_id=None, public_ip=None, private_ip=None):
-        """AccessConfigurationDataItems
+        r"""AccessConfigurationDataItems
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AccessConfigurationDataItems:
 
     @property
     def operator(self):
-        """Gets the operator of this AccessConfigurationDataItems.
+        r"""Gets the operator of this AccessConfigurationDataItems.
 
         配置模式。 - 如果operator值为空，则表示使用全量覆盖模式进行配置，否则表示使用增删改模式进行配置。且此级列表的所有元素的operator值必须同时全为空或者非空。 - 当使用增删改模式时，operator取值支持\"add\",\"copy\",\"modify\",\"delete\"，分别表示新增，复制指定uid的元素修改后新增，修改指定uid的元素，删除指定uid的元素。 - 当operator取值为\"copy\",\"modify\",\"delete\"时，uid的值必须为非空，且存在于最后一次生效的配置中。 - 当operator取值为\"copy\",\"modify\"时，与operator同级别的字段中除uid外的所有字段如不写，置空或者为空列表，则表示保留在最后一次生效配置中指定uid的元素的同一字段的值。 
 
@@ -117,7 +117,7 @@ class AccessConfigurationDataItems:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this AccessConfigurationDataItems.
+        r"""Sets the operator of this AccessConfigurationDataItems.
 
         配置模式。 - 如果operator值为空，则表示使用全量覆盖模式进行配置，否则表示使用增删改模式进行配置。且此级列表的所有元素的operator值必须同时全为空或者非空。 - 当使用增删改模式时，operator取值支持\"add\",\"copy\",\"modify\",\"delete\"，分别表示新增，复制指定uid的元素修改后新增，修改指定uid的元素，删除指定uid的元素。 - 当operator取值为\"copy\",\"modify\",\"delete\"时，uid的值必须为非空，且存在于最后一次生效的配置中。 - 当operator取值为\"copy\",\"modify\"时，与operator同级别的字段中除uid外的所有字段如不写，置空或者为空列表，则表示保留在最后一次生效配置中指定uid的元素的同一字段的值。 
 
@@ -128,7 +128,7 @@ class AccessConfigurationDataItems:
 
     @property
     def uid(self):
-        """Gets the uid of this AccessConfigurationDataItems.
+        r"""Gets the uid of this AccessConfigurationDataItems.
 
         访问方式的uid。
 
@@ -139,7 +139,7 @@ class AccessConfigurationDataItems:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this AccessConfigurationDataItems.
+        r"""Sets the uid of this AccessConfigurationDataItems.
 
         访问方式的uid。
 
@@ -150,7 +150,7 @@ class AccessConfigurationDataItems:
 
     @property
     def metadata(self):
-        """Gets the metadata of this AccessConfigurationDataItems.
+        r"""Gets the metadata of this AccessConfigurationDataItems.
 
         :return: The metadata of this AccessConfigurationDataItems.
         :rtype: :class:`huaweicloudsdkcae.v1.AccessConfigurationMetadata`
@@ -159,7 +159,7 @@ class AccessConfigurationDataItems:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this AccessConfigurationDataItems.
+        r"""Sets the metadata of this AccessConfigurationDataItems.
 
         :param metadata: The metadata of this AccessConfigurationDataItems.
         :type metadata: :class:`huaweicloudsdkcae.v1.AccessConfigurationMetadata`
@@ -168,7 +168,7 @@ class AccessConfigurationDataItems:
 
     @property
     def type(self):
-        """Gets the type of this AccessConfigurationDataItems.
+        r"""Gets the type of this AccessConfigurationDataItems.
 
         访问方式类型。
 
@@ -179,7 +179,7 @@ class AccessConfigurationDataItems:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AccessConfigurationDataItems.
+        r"""Sets the type of this AccessConfigurationDataItems.
 
         访问方式类型。
 
@@ -190,7 +190,7 @@ class AccessConfigurationDataItems:
 
     @property
     def domain_names(self):
-        """Gets the domain_names of this AccessConfigurationDataItems.
+        r"""Gets the domain_names of this AccessConfigurationDataItems.
 
         内网访问方式域名。
 
@@ -201,7 +201,7 @@ class AccessConfigurationDataItems:
 
     @domain_names.setter
     def domain_names(self, domain_names):
-        """Sets the domain_names of this AccessConfigurationDataItems.
+        r"""Sets the domain_names of this AccessConfigurationDataItems.
 
         内网访问方式域名。
 
@@ -212,7 +212,7 @@ class AccessConfigurationDataItems:
 
     @property
     def access_control(self):
-        """Gets the access_control of this AccessConfigurationDataItems.
+        r"""Gets the access_control of this AccessConfigurationDataItems.
 
         :return: The access_control of this AccessConfigurationDataItems.
         :rtype: :class:`huaweicloudsdkcae.v1.AccessControl`
@@ -221,7 +221,7 @@ class AccessConfigurationDataItems:
 
     @access_control.setter
     def access_control(self, access_control):
-        """Sets the access_control of this AccessConfigurationDataItems.
+        r"""Sets the access_control of this AccessConfigurationDataItems.
 
         :param access_control: The access_control of this AccessConfigurationDataItems.
         :type access_control: :class:`huaweicloudsdkcae.v1.AccessControl`
@@ -230,7 +230,7 @@ class AccessConfigurationDataItems:
 
     @property
     def ports(self):
-        """Gets the ports of this AccessConfigurationDataItems.
+        r"""Gets the ports of this AccessConfigurationDataItems.
 
         访问方式配置端口、协议、证书、URL路径等信息列表。
 
@@ -241,7 +241,7 @@ class AccessConfigurationDataItems:
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this AccessConfigurationDataItems.
+        r"""Sets the ports of this AccessConfigurationDataItems.
 
         访问方式配置端口、协议、证书、URL路径等信息列表。
 
@@ -252,7 +252,7 @@ class AccessConfigurationDataItems:
 
     @property
     def elb_id(self):
-        """Gets the elb_id of this AccessConfigurationDataItems.
+        r"""Gets the elb_id of this AccessConfigurationDataItems.
 
         用户选择的elb的ID。
 
@@ -263,7 +263,7 @@ class AccessConfigurationDataItems:
 
     @elb_id.setter
     def elb_id(self, elb_id):
-        """Sets the elb_id of this AccessConfigurationDataItems.
+        r"""Sets the elb_id of this AccessConfigurationDataItems.
 
         用户选择的elb的ID。
 
@@ -274,7 +274,7 @@ class AccessConfigurationDataItems:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this AccessConfigurationDataItems.
+        r"""Gets the public_ip of this AccessConfigurationDataItems.
 
         响应体参数，用户选择的elb的公网ip。
 
@@ -285,7 +285,7 @@ class AccessConfigurationDataItems:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this AccessConfigurationDataItems.
+        r"""Sets the public_ip of this AccessConfigurationDataItems.
 
         响应体参数，用户选择的elb的公网ip。
 
@@ -296,7 +296,7 @@ class AccessConfigurationDataItems:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this AccessConfigurationDataItems.
+        r"""Gets the private_ip of this AccessConfigurationDataItems.
 
         响应体参数，用户选择的elb的私网ip。
 
@@ -307,7 +307,7 @@ class AccessConfigurationDataItems:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this AccessConfigurationDataItems.
+        r"""Sets the private_ip of this AccessConfigurationDataItems.
 
         响应体参数，用户选择的elb的私网ip。
 

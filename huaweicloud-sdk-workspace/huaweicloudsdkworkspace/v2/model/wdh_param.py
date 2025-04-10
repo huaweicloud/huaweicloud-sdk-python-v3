@@ -27,7 +27,7 @@ class WdhParam:
     }
 
     def __init__(self, tenancy=None, dedicated_host_id=None):
-        """WdhParam
+        r"""WdhParam
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WdhParam:
 
     @property
     def tenancy(self):
-        """Gets the tenancy of this WdhParam.
+        r"""Gets the tenancy of this WdhParam.
 
         在指定的桌面专属主机上创建桌面。  - dedicated：桌面专属主机。
 
@@ -61,7 +61,7 @@ class WdhParam:
 
     @tenancy.setter
     def tenancy(self, tenancy):
-        """Sets the tenancy of this WdhParam.
+        r"""Sets the tenancy of this WdhParam.
 
         在指定的桌面专属主机上创建桌面。  - dedicated：桌面专属主机。
 
@@ -72,7 +72,7 @@ class WdhParam:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this WdhParam.
+        r"""Gets the dedicated_host_id of this WdhParam.
 
         桌面专属主机的ID。 指定桌面专属主机的ID则将桌面放置到此桌面专属主机。 未指定桌面专属主机的ID则使用自动放置功能放置到可用的桌面专属主机。 注意： - 仅在tenancy指定为dedicated时此字段生效。 - 若要使用自动放置功能来创建桌面，您需要先开启桌面专属主机的自动放置功能。
 
@@ -83,7 +83,7 @@ class WdhParam:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this WdhParam.
+        r"""Sets the dedicated_host_id of this WdhParam.
 
         桌面专属主机的ID。 指定桌面专属主机的ID则将桌面放置到此桌面专属主机。 未指定桌面专属主机的ID则使用自动放置功能放置到可用的桌面专属主机。 注意： - 仅在tenancy指定为dedicated时此字段生效。 - 若要使用自动放置功能来创建桌面，您需要先开启桌面专属主机的自动放置功能。
 

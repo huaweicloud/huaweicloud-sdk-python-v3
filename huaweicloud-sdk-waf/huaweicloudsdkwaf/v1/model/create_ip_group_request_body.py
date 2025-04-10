@@ -29,7 +29,7 @@ class CreateIpGroupRequestBody:
     }
 
     def __init__(self, name=None, ips=None, description=None):
-        """CreateIpGroupRequestBody
+        r"""CreateIpGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateIpGroupRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateIpGroupRequestBody.
+        r"""Gets the name of this CreateIpGroupRequestBody.
 
         地址组名称
 
@@ -66,7 +66,7 @@ class CreateIpGroupRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateIpGroupRequestBody.
+        r"""Sets the name of this CreateIpGroupRequestBody.
 
         地址组名称
 
@@ -77,7 +77,7 @@ class CreateIpGroupRequestBody:
 
     @property
     def ips(self):
-        """Gets the ips of this CreateIpGroupRequestBody.
+        r"""Gets the ips of this CreateIpGroupRequestBody.
 
         以逗号分隔的ip或ip段
 
@@ -88,7 +88,7 @@ class CreateIpGroupRequestBody:
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this CreateIpGroupRequestBody.
+        r"""Sets the ips of this CreateIpGroupRequestBody.
 
         以逗号分隔的ip或ip段
 
@@ -99,7 +99,7 @@ class CreateIpGroupRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateIpGroupRequestBody.
+        r"""Gets the description of this CreateIpGroupRequestBody.
 
         地址组描述
 
@@ -110,7 +110,7 @@ class CreateIpGroupRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateIpGroupRequestBody.
+        r"""Sets the description of this CreateIpGroupRequestBody.
 
         地址组描述
 

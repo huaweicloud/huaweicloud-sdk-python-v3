@@ -24,7 +24,7 @@ class UpdateVpcepConnectionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateVpcepConnectionResponse
+        r"""UpdateVpcepConnectionResponse
 
         The model defined in huaweicloud sdk
 

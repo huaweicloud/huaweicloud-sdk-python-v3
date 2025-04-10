@@ -27,7 +27,7 @@ class AddProtectedInstanceTagsRequest:
     }
 
     def __init__(self, protected_instance_id=None, body=None):
-        """AddProtectedInstanceTagsRequest
+        r"""AddProtectedInstanceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddProtectedInstanceTagsRequest:
 
     @property
     def protected_instance_id(self):
-        """Gets the protected_instance_id of this AddProtectedInstanceTagsRequest.
+        r"""Gets the protected_instance_id of this AddProtectedInstanceTagsRequest.
 
         保护实例的ID。
 
@@ -60,7 +60,7 @@ class AddProtectedInstanceTagsRequest:
 
     @protected_instance_id.setter
     def protected_instance_id(self, protected_instance_id):
-        """Sets the protected_instance_id of this AddProtectedInstanceTagsRequest.
+        r"""Sets the protected_instance_id of this AddProtectedInstanceTagsRequest.
 
         保护实例的ID。
 
@@ -71,7 +71,7 @@ class AddProtectedInstanceTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddProtectedInstanceTagsRequest.
+        r"""Gets the body of this AddProtectedInstanceTagsRequest.
 
         :return: The body of this AddProtectedInstanceTagsRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAddTagsRequestBody`
@@ -80,7 +80,7 @@ class AddProtectedInstanceTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddProtectedInstanceTagsRequest.
+        r"""Sets the body of this AddProtectedInstanceTagsRequest.
 
         :param body: The body of this AddProtectedInstanceTagsRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAddTagsRequestBody`

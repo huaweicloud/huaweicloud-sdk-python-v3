@@ -28,7 +28,7 @@ class ShowBusinessAssetsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, assets=None):
-        """ShowBusinessAssetsResponse
+        r"""ShowBusinessAssetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowBusinessAssetsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowBusinessAssetsResponse.
+        r"""Gets the count of this ShowBusinessAssetsResponse.
 
         业务资产总数
 
@@ -62,7 +62,7 @@ class ShowBusinessAssetsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowBusinessAssetsResponse.
+        r"""Sets the count of this ShowBusinessAssetsResponse.
 
         业务资产总数
 
@@ -73,7 +73,7 @@ class ShowBusinessAssetsResponse(SdkResponse):
 
     @property
     def assets(self):
-        """Gets the assets of this ShowBusinessAssetsResponse.
+        r"""Gets the assets of this ShowBusinessAssetsResponse.
 
         业务资产列表
 
@@ -84,7 +84,7 @@ class ShowBusinessAssetsResponse(SdkResponse):
 
     @assets.setter
     def assets(self, assets):
-        """Sets the assets of this ShowBusinessAssetsResponse.
+        r"""Sets the assets of this ShowBusinessAssetsResponse.
 
         业务资产列表
 

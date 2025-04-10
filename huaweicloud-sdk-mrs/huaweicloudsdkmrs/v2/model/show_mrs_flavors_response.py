@@ -28,7 +28,7 @@ class ShowMrsFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, version_name=None, available_flavors=None):
-        """ShowMrsFlavorsResponse
+        r"""ShowMrsFlavorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowMrsFlavorsResponse(SdkResponse):
 
     @property
     def version_name(self):
-        """Gets the version_name of this ShowMrsFlavorsResponse.
+        r"""Gets the version_name of this ShowMrsFlavorsResponse.
 
         版本名称
 
@@ -62,7 +62,7 @@ class ShowMrsFlavorsResponse(SdkResponse):
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this ShowMrsFlavorsResponse.
+        r"""Sets the version_name of this ShowMrsFlavorsResponse.
 
         版本名称
 
@@ -73,7 +73,7 @@ class ShowMrsFlavorsResponse(SdkResponse):
 
     @property
     def available_flavors(self):
-        """Gets the available_flavors of this ShowMrsFlavorsResponse.
+        r"""Gets the available_flavors of this ShowMrsFlavorsResponse.
 
         不同可用区支持的规格列表
 
@@ -84,7 +84,7 @@ class ShowMrsFlavorsResponse(SdkResponse):
 
     @available_flavors.setter
     def available_flavors(self, available_flavors):
-        """Sets the available_flavors of this ShowMrsFlavorsResponse.
+        r"""Sets the available_flavors of this ShowMrsFlavorsResponse.
 
         不同可用区支持的规格列表
 

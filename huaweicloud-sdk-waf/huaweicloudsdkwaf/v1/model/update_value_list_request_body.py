@@ -31,7 +31,7 @@ class UpdateValueListRequestBody:
     }
 
     def __init__(self, name=None, type=None, values=None, description=None):
-        """UpdateValueListRequestBody
+        r"""UpdateValueListRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateValueListRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateValueListRequestBody.
+        r"""Gets the name of this UpdateValueListRequestBody.
 
         引用表名称，2-32位字符串组成
 
@@ -73,7 +73,7 @@ class UpdateValueListRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateValueListRequestBody.
+        r"""Sets the name of this UpdateValueListRequestBody.
 
         引用表名称，2-32位字符串组成
 
@@ -84,7 +84,7 @@ class UpdateValueListRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this UpdateValueListRequestBody.
+        r"""Gets the type of this UpdateValueListRequestBody.
 
         引用表类型，参见枚举列表
 
@@ -95,7 +95,7 @@ class UpdateValueListRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateValueListRequestBody.
+        r"""Sets the type of this UpdateValueListRequestBody.
 
         引用表类型，参见枚举列表
 
@@ -106,7 +106,7 @@ class UpdateValueListRequestBody:
 
     @property
     def values(self):
-        """Gets the values of this UpdateValueListRequestBody.
+        r"""Gets the values of this UpdateValueListRequestBody.
 
         引用表的值
 
@@ -117,7 +117,7 @@ class UpdateValueListRequestBody:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this UpdateValueListRequestBody.
+        r"""Sets the values of this UpdateValueListRequestBody.
 
         引用表的值
 
@@ -128,7 +128,7 @@ class UpdateValueListRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateValueListRequestBody.
+        r"""Gets the description of this UpdateValueListRequestBody.
 
         引用表描述，最长128字符
 
@@ -139,7 +139,7 @@ class UpdateValueListRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateValueListRequestBody.
+        r"""Sets the description of this UpdateValueListRequestBody.
 
         引用表描述，最长128字符
 

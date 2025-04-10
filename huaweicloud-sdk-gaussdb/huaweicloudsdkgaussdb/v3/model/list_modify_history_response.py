@@ -28,7 +28,7 @@ class ListModifyHistoryResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, histories=None):
-        """ListModifyHistoryResponse
+        r"""ListModifyHistoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListModifyHistoryResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListModifyHistoryResponse.
+        r"""Gets the total_count of this ListModifyHistoryResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListModifyHistoryResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListModifyHistoryResponse.
+        r"""Sets the total_count of this ListModifyHistoryResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListModifyHistoryResponse(SdkResponse):
 
     @property
     def histories(self):
-        """Gets the histories of this ListModifyHistoryResponse.
+        r"""Gets the histories of this ListModifyHistoryResponse.
 
         参数模板的修改历史列表。
 
@@ -84,7 +84,7 @@ class ListModifyHistoryResponse(SdkResponse):
 
     @histories.setter
     def histories(self, histories):
-        """Sets the histories of this ListModifyHistoryResponse.
+        r"""Sets the histories of this ListModifyHistoryResponse.
 
         参数模板的修改历史列表。
 

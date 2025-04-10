@@ -34,7 +34,7 @@ class ListUsersResponse(SdkResponse):
     }
 
     def __init__(self, total_results=None, items_per_page=None, start_index=None, schemas=None, resources=None):
-        """ListUsersResponse
+        r"""ListUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def total_results(self):
-        """Gets the total_results of this ListUsersResponse.
+        r"""Gets the total_results of this ListUsersResponse.
 
         总结果数
 
@@ -83,7 +83,7 @@ class ListUsersResponse(SdkResponse):
 
     @total_results.setter
     def total_results(self, total_results):
-        """Sets the total_results of this ListUsersResponse.
+        r"""Sets the total_results of this ListUsersResponse.
 
         总结果数
 
@@ -94,7 +94,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def items_per_page(self):
-        """Gets the items_per_page of this ListUsersResponse.
+        r"""Gets the items_per_page of this ListUsersResponse.
 
         每页的元素个数
 
@@ -105,7 +105,7 @@ class ListUsersResponse(SdkResponse):
 
     @items_per_page.setter
     def items_per_page(self, items_per_page):
-        """Sets the items_per_page of this ListUsersResponse.
+        r"""Sets the items_per_page of this ListUsersResponse.
 
         每页的元素个数
 
@@ -116,7 +116,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def start_index(self):
-        """Gets the start_index of this ListUsersResponse.
+        r"""Gets the start_index of this ListUsersResponse.
 
         起始索引
 
@@ -127,7 +127,7 @@ class ListUsersResponse(SdkResponse):
 
     @start_index.setter
     def start_index(self, start_index):
-        """Sets the start_index of this ListUsersResponse.
+        r"""Sets the start_index of this ListUsersResponse.
 
         起始索引
 
@@ -138,7 +138,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def schemas(self):
-        """Gets the schemas of this ListUsersResponse.
+        r"""Gets the schemas of this ListUsersResponse.
 
         概要
 
@@ -149,7 +149,7 @@ class ListUsersResponse(SdkResponse):
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this ListUsersResponse.
+        r"""Sets the schemas of this ListUsersResponse.
 
         概要
 
@@ -160,7 +160,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListUsersResponse.
+        r"""Gets the resources of this ListUsersResponse.
 
         包含用户信息的列表
 
@@ -171,7 +171,7 @@ class ListUsersResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListUsersResponse.
+        r"""Sets the resources of this ListUsersResponse.
 
         包含用户信息的列表
 

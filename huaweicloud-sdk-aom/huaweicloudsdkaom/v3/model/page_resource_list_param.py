@@ -39,7 +39,7 @@ class PageResourceListParam:
     }
 
     def __init__(self, marker=None, limit=None, keywords=None, ci_relationships=None, ci_type=None, ci_region=None, ci_ids=None, ci_id=None):
-        """PageResourceListParam
+        r"""PageResourceListParam
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class PageResourceListParam:
 
     @property
     def marker(self):
-        """Gets the marker of this PageResourceListParam.
+        r"""Gets the marker of this PageResourceListParam.
 
         页面的分页标志位,为分页的最后一条记录的id
 
@@ -102,7 +102,7 @@ class PageResourceListParam:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this PageResourceListParam.
+        r"""Sets the marker of this PageResourceListParam.
 
         页面的分页标志位,为分页的最后一条记录的id
 
@@ -113,7 +113,7 @@ class PageResourceListParam:
 
     @property
     def limit(self):
-        """Gets the limit of this PageResourceListParam.
+        r"""Gets the limit of this PageResourceListParam.
 
         查询返回记录的数量限制。limit可以为空，如果值小于1或者大于100，则会使用默认值100
 
@@ -124,7 +124,7 @@ class PageResourceListParam:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this PageResourceListParam.
+        r"""Sets the limit of this PageResourceListParam.
 
         查询返回记录的数量限制。limit可以为空，如果值小于1或者大于100，则会使用默认值100
 
@@ -135,7 +135,7 @@ class PageResourceListParam:
 
     @property
     def keywords(self):
-        """Gets the keywords of this PageResourceListParam.
+        r"""Gets the keywords of this PageResourceListParam.
 
         关键字模糊搜索。Key取值：NAME、RESOURCE_ID
 
@@ -146,7 +146,7 @@ class PageResourceListParam:
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this PageResourceListParam.
+        r"""Sets the keywords of this PageResourceListParam.
 
         关键字模糊搜索。Key取值：NAME、RESOURCE_ID
 
@@ -157,7 +157,7 @@ class PageResourceListParam:
 
     @property
     def ci_relationships(self):
-        """Gets the ci_relationships of this PageResourceListParam.
+        r"""Gets the ci_relationships of this PageResourceListParam.
 
         是否需要返回拓扑树,默认是false。需要：true---性能差，不需要false--性能好
 
@@ -168,7 +168,7 @@ class PageResourceListParam:
 
     @ci_relationships.setter
     def ci_relationships(self, ci_relationships):
-        """Sets the ci_relationships of this PageResourceListParam.
+        r"""Sets the ci_relationships of this PageResourceListParam.
 
         是否需要返回拓扑树,默认是false。需要：true---性能差，不需要false--性能好
 
@@ -179,7 +179,7 @@ class PageResourceListParam:
 
     @property
     def ci_type(self):
-        """Gets the ci_type of this PageResourceListParam.
+        r"""Gets the ci_type of this PageResourceListParam.
 
         节点类型，取值：application、sub_application、component、environment
 
@@ -190,7 +190,7 @@ class PageResourceListParam:
 
     @ci_type.setter
     def ci_type(self, ci_type):
-        """Sets the ci_type of this PageResourceListParam.
+        r"""Sets the ci_type of this PageResourceListParam.
 
         节点类型，取值：application、sub_application、component、environment
 
@@ -201,7 +201,7 @@ class PageResourceListParam:
 
     @property
     def ci_region(self):
-        """Gets the ci_region of this PageResourceListParam.
+        r"""Gets the ci_region of this PageResourceListParam.
 
         环境的region信息，若没有值，代表全部
 
@@ -212,7 +212,7 @@ class PageResourceListParam:
 
     @ci_region.setter
     def ci_region(self, ci_region):
-        """Sets the ci_region of this PageResourceListParam.
+        r"""Sets the ci_region of this PageResourceListParam.
 
         环境的region信息，若没有值，代表全部
 
@@ -223,7 +223,7 @@ class PageResourceListParam:
 
     @property
     def ci_ids(self):
-        """Gets the ci_ids of this PageResourceListParam.
+        r"""Gets the ci_ids of this PageResourceListParam.
 
         节点id列表;如果ci_ids和ci_id同时有，则优先ci_ids，但是不能同时为空
 
@@ -234,7 +234,7 @@ class PageResourceListParam:
 
     @ci_ids.setter
     def ci_ids(self, ci_ids):
-        """Sets the ci_ids of this PageResourceListParam.
+        r"""Sets the ci_ids of this PageResourceListParam.
 
         节点id列表;如果ci_ids和ci_id同时有，则优先ci_ids，但是不能同时为空
 
@@ -245,7 +245,7 @@ class PageResourceListParam:
 
     @property
     def ci_id(self):
-        """Gets the ci_id of this PageResourceListParam.
+        r"""Gets the ci_id of this PageResourceListParam.
 
         节点id列表;如果ci_ids和ci_id同时有，则优先ci_ids，但是不能同时为空。但是不支持应用批量查询
 
@@ -256,7 +256,7 @@ class PageResourceListParam:
 
     @ci_id.setter
     def ci_id(self, ci_id):
-        """Sets the ci_id of this PageResourceListParam.
+        r"""Sets the ci_id of this PageResourceListParam.
 
         节点id列表;如果ci_ids和ci_id同时有，则优先ci_ids，但是不能同时为空。但是不支持应用批量查询
 

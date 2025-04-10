@@ -24,7 +24,7 @@ class PutCustomPolicyToPermissionSetResponse(SdkResponse):
     }
 
     def __init__(self):
-        """PutCustomPolicyToPermissionSetResponse
+        r"""PutCustomPolicyToPermissionSetResponse
 
         The model defined in huaweicloud sdk
 

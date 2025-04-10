@@ -28,7 +28,7 @@ class ListRestoreDatabasesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, database_names=None):
-        """ListRestoreDatabasesResponse
+        r"""ListRestoreDatabasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRestoreDatabasesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListRestoreDatabasesResponse.
+        r"""Gets the total_count of this ListRestoreDatabasesResponse.
 
         总记录数。
 
@@ -62,7 +62,7 @@ class ListRestoreDatabasesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListRestoreDatabasesResponse.
+        r"""Sets the total_count of this ListRestoreDatabasesResponse.
 
         总记录数。
 
@@ -73,7 +73,7 @@ class ListRestoreDatabasesResponse(SdkResponse):
 
     @property
     def database_names(self):
-        """Gets the database_names of this ListRestoreDatabasesResponse.
+        r"""Gets the database_names of this ListRestoreDatabasesResponse.
 
         数据库名称列表。
 
@@ -84,7 +84,7 @@ class ListRestoreDatabasesResponse(SdkResponse):
 
     @database_names.setter
     def database_names(self, database_names):
-        """Sets the database_names of this ListRestoreDatabasesResponse.
+        r"""Sets the database_names of this ListRestoreDatabasesResponse.
 
         数据库名称列表。
 

@@ -23,7 +23,7 @@ class ListQualityEnhanceDefaultTemplateRequest:
     }
 
     def __init__(self):
-        """ListQualityEnhanceDefaultTemplateRequest
+        r"""ListQualityEnhanceDefaultTemplateRequest
 
         The model defined in huaweicloud sdk
 

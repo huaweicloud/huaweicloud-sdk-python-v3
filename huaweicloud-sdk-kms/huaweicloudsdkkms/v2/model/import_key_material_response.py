@@ -24,7 +24,7 @@ class ImportKeyMaterialResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ImportKeyMaterialResponse
+        r"""ImportKeyMaterialResponse
 
         The model defined in huaweicloud sdk
 

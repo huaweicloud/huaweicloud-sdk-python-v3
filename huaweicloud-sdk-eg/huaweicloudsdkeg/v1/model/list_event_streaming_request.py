@@ -27,7 +27,7 @@ class ListEventStreamingRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListEventStreamingRequest
+        r"""ListEventStreamingRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListEventStreamingRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEventStreamingRequest.
+        r"""Gets the offset of this ListEventStreamingRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -61,7 +61,7 @@ class ListEventStreamingRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEventStreamingRequest.
+        r"""Sets the offset of this ListEventStreamingRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -72,7 +72,7 @@ class ListEventStreamingRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEventStreamingRequest.
+        r"""Gets the limit of this ListEventStreamingRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -83,7 +83,7 @@ class ListEventStreamingRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEventStreamingRequest.
+        r"""Sets the limit of this ListEventStreamingRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 

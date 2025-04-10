@@ -24,7 +24,7 @@ class UpdateSlowlogSensitiveSwitchResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateSlowlogSensitiveSwitchResponse
+        r"""UpdateSlowlogSensitiveSwitchResponse
 
         The model defined in huaweicloud sdk
 

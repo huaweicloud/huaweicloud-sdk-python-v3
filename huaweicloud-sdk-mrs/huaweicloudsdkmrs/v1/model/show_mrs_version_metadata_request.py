@@ -27,7 +27,7 @@ class ShowMrsVersionMetadataRequest:
     }
 
     def __init__(self, version_name=None, cluster_id=None):
-        """ShowMrsVersionMetadataRequest
+        r"""ShowMrsVersionMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowMrsVersionMetadataRequest:
 
     @property
     def version_name(self):
-        """Gets the version_name of this ShowMrsVersionMetadataRequest.
+        r"""Gets the version_name of this ShowMrsVersionMetadataRequest.
 
         集群版本。例如“MRS 3.1.0”。如果请求客户端不支持自动转义，则需要将空格转义为%20，例如“MRS%203.1.0”。
 
@@ -60,7 +60,7 @@ class ShowMrsVersionMetadataRequest:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this ShowMrsVersionMetadataRequest.
+        r"""Sets the version_name of this ShowMrsVersionMetadataRequest.
 
         集群版本。例如“MRS 3.1.0”。如果请求客户端不支持自动转义，则需要将空格转义为%20，例如“MRS%203.1.0”。
 
@@ -71,7 +71,7 @@ class ShowMrsVersionMetadataRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowMrsVersionMetadataRequest.
+        r"""Gets the cluster_id of this ShowMrsVersionMetadataRequest.
 
         集群ID。如果指定集群ID，则获取该集群做过补丁更新的最新版本元数据。
 
@@ -82,7 +82,7 @@ class ShowMrsVersionMetadataRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowMrsVersionMetadataRequest.
+        r"""Sets the cluster_id of this ShowMrsVersionMetadataRequest.
 
         集群ID。如果指定集群ID，则获取该集群做过补丁更新的最新版本元数据。
 

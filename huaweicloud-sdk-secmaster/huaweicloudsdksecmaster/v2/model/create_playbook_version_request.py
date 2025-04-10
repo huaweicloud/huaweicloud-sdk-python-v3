@@ -31,7 +31,7 @@ class CreatePlaybookVersionRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, playbook_id=None, body=None):
-        """CreatePlaybookVersionRequest
+        r"""CreatePlaybookVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreatePlaybookVersionRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreatePlaybookVersionRequest.
+        r"""Gets the project_id of this CreatePlaybookVersionRequest.
 
         项目ID
 
@@ -72,7 +72,7 @@ class CreatePlaybookVersionRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreatePlaybookVersionRequest.
+        r"""Sets the project_id of this CreatePlaybookVersionRequest.
 
         项目ID
 
@@ -83,7 +83,7 @@ class CreatePlaybookVersionRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreatePlaybookVersionRequest.
+        r"""Gets the workspace_id of this CreatePlaybookVersionRequest.
 
         工作空间ID
 
@@ -94,7 +94,7 @@ class CreatePlaybookVersionRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreatePlaybookVersionRequest.
+        r"""Sets the workspace_id of this CreatePlaybookVersionRequest.
 
         工作空间ID
 
@@ -105,7 +105,7 @@ class CreatePlaybookVersionRequest:
 
     @property
     def playbook_id(self):
-        """Gets the playbook_id of this CreatePlaybookVersionRequest.
+        r"""Gets the playbook_id of this CreatePlaybookVersionRequest.
 
         剧本ID
 
@@ -116,7 +116,7 @@ class CreatePlaybookVersionRequest:
 
     @playbook_id.setter
     def playbook_id(self, playbook_id):
-        """Sets the playbook_id of this CreatePlaybookVersionRequest.
+        r"""Sets the playbook_id of this CreatePlaybookVersionRequest.
 
         剧本ID
 
@@ -127,7 +127,7 @@ class CreatePlaybookVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePlaybookVersionRequest.
+        r"""Gets the body of this CreatePlaybookVersionRequest.
 
         :return: The body of this CreatePlaybookVersionRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookVersionInfo`
@@ -136,7 +136,7 @@ class CreatePlaybookVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePlaybookVersionRequest.
+        r"""Sets the body of this CreatePlaybookVersionRequest.
 
         :param body: The body of this CreatePlaybookVersionRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookVersionInfo`

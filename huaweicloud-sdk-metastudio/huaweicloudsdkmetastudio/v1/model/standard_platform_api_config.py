@@ -27,7 +27,7 @@ class StandardPlatformApiConfig:
     }
 
     def __init__(self, api_type=None, url=None):
-        """StandardPlatformApiConfig
+        r"""StandardPlatformApiConfig
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StandardPlatformApiConfig:
 
     @property
     def api_type(self):
-        """Gets the api_type of this StandardPlatformApiConfig.
+        r"""Gets the api_type of this StandardPlatformApiConfig.
 
         API类型。 * PRODUCT_QUERY: 查询商品 * LIVE_EVENT_CALLBACK: 直播事件回调
 
@@ -59,7 +59,7 @@ class StandardPlatformApiConfig:
 
     @api_type.setter
     def api_type(self, api_type):
-        """Sets the api_type of this StandardPlatformApiConfig.
+        r"""Sets the api_type of this StandardPlatformApiConfig.
 
         API类型。 * PRODUCT_QUERY: 查询商品 * LIVE_EVENT_CALLBACK: 直播事件回调
 
@@ -70,7 +70,7 @@ class StandardPlatformApiConfig:
 
     @property
     def url(self):
-        """Gets the url of this StandardPlatformApiConfig.
+        r"""Gets the url of this StandardPlatformApiConfig.
 
         URL。仅支持HTTPS形式URL
 
@@ -81,7 +81,7 @@ class StandardPlatformApiConfig:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this StandardPlatformApiConfig.
+        r"""Sets the url of this StandardPlatformApiConfig.
 
         URL。仅支持HTTPS形式URL
 

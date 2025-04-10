@@ -29,7 +29,7 @@ class HttpResponseHeader:
     }
 
     def __init__(self, name=None, value=None, action=None):
-        """HttpResponseHeader
+        r"""HttpResponseHeader
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class HttpResponseHeader:
 
     @property
     def name(self):
-        """Gets the name of this HttpResponseHeader.
+        r"""Gets the name of this HttpResponseHeader.
 
         设置HTTP响应头参数。取值：\"Content-Disposition\", \"Content-Language\", \"Access-Control-Allow-Origin\",\"Access-Control-Allow-Methods\", \"Access-Control-Max-Age\", \"Access-Control-Expose-Headers\"或自定义头部。格式要求：长度1~100，以字母开头，可以使用字母、数字和短横杠。
 
@@ -66,7 +66,7 @@ class HttpResponseHeader:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HttpResponseHeader.
+        r"""Sets the name of this HttpResponseHeader.
 
         设置HTTP响应头参数。取值：\"Content-Disposition\", \"Content-Language\", \"Access-Control-Allow-Origin\",\"Access-Control-Allow-Methods\", \"Access-Control-Max-Age\", \"Access-Control-Expose-Headers\"或自定义头部。格式要求：长度1~100，以字母开头，可以使用字母、数字和短横杠。
 
@@ -77,7 +77,7 @@ class HttpResponseHeader:
 
     @property
     def value(self):
-        """Gets the value of this HttpResponseHeader.
+        r"""Gets the value of this HttpResponseHeader.
 
         设置HTTP响应头参数的值。自定义HTTP响应头参数长度范围1~256，支持字母、数字和特定字符（.-_*#!&+|^~'\"/:;,=@?<>）。
 
@@ -88,7 +88,7 @@ class HttpResponseHeader:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this HttpResponseHeader.
+        r"""Sets the value of this HttpResponseHeader.
 
         设置HTTP响应头参数的值。自定义HTTP响应头参数长度范围1~256，支持字母、数字和特定字符（.-_*#!&+|^~'\"/:;,=@?<>）。
 
@@ -99,7 +99,7 @@ class HttpResponseHeader:
 
     @property
     def action(self):
-        """Gets the action of this HttpResponseHeader.
+        r"""Gets the action of this HttpResponseHeader.
 
         设置http响应头操作类型，取值“set/delete”。set代表设置，delete代表删除。
 
@@ -110,7 +110,7 @@ class HttpResponseHeader:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this HttpResponseHeader.
+        r"""Sets the action of this HttpResponseHeader.
 
         设置http响应头操作类型，取值“set/delete”。set代表设置，delete代表删除。
 

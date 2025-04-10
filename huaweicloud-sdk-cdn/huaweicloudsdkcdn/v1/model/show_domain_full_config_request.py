@@ -27,7 +27,7 @@ class ShowDomainFullConfigRequest:
     }
 
     def __init__(self, domain_name=None, enterprise_project_id=None):
-        """ShowDomainFullConfigRequest
+        r"""ShowDomainFullConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowDomainFullConfigRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowDomainFullConfigRequest.
+        r"""Gets the domain_name of this ShowDomainFullConfigRequest.
 
         加速域名。
 
@@ -60,7 +60,7 @@ class ShowDomainFullConfigRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowDomainFullConfigRequest.
+        r"""Sets the domain_name of this ShowDomainFullConfigRequest.
 
         加速域名。
 
@@ -71,7 +71,7 @@ class ShowDomainFullConfigRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowDomainFullConfigRequest.
+        r"""Gets the enterprise_project_id of this ShowDomainFullConfigRequest.
 
         企业项目ID， all：所有项目。
 
@@ -82,7 +82,7 @@ class ShowDomainFullConfigRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowDomainFullConfigRequest.
+        r"""Sets the enterprise_project_id of this ShowDomainFullConfigRequest.
 
         企业项目ID， all：所有项目。
 

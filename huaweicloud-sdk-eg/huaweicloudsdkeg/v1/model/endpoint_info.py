@@ -49,7 +49,7 @@ class EndpointInfo:
     }
 
     def __init__(self, id=None, name=None, vpc_id=None, subnet_id=None, domain=None, description=None, status=None, error_info=None, type=None, scalable=None, created_time=None, updated_time=None, endpoints=None):
-        """EndpointInfo
+        r"""EndpointInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class EndpointInfo:
 
     @property
     def id(self):
-        """Gets the id of this EndpointInfo.
+        r"""Gets the id of this EndpointInfo.
 
         访问端点ID
 
@@ -138,7 +138,7 @@ class EndpointInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EndpointInfo.
+        r"""Sets the id of this EndpointInfo.
 
         访问端点ID
 
@@ -149,7 +149,7 @@ class EndpointInfo:
 
     @property
     def name(self):
-        """Gets the name of this EndpointInfo.
+        r"""Gets the name of this EndpointInfo.
 
         用户指定的访问端点名称
 
@@ -160,7 +160,7 @@ class EndpointInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EndpointInfo.
+        r"""Sets the name of this EndpointInfo.
 
         用户指定的访问端点名称
 
@@ -171,7 +171,7 @@ class EndpointInfo:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this EndpointInfo.
+        r"""Gets the vpc_id of this EndpointInfo.
 
         访问端点所在的VPC的ID
 
@@ -182,7 +182,7 @@ class EndpointInfo:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this EndpointInfo.
+        r"""Sets the vpc_id of this EndpointInfo.
 
         访问端点所在的VPC的ID
 
@@ -193,7 +193,7 @@ class EndpointInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this EndpointInfo.
+        r"""Gets the subnet_id of this EndpointInfo.
 
         访问端点所在的子网的ID
 
@@ -204,7 +204,7 @@ class EndpointInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this EndpointInfo.
+        r"""Sets the subnet_id of this EndpointInfo.
 
         访问端点所在的子网的ID
 
@@ -215,7 +215,7 @@ class EndpointInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this EndpointInfo.
+        r"""Gets the domain of this EndpointInfo.
 
         访问域名
 
@@ -226,7 +226,7 @@ class EndpointInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this EndpointInfo.
+        r"""Sets the domain of this EndpointInfo.
 
         访问域名
 
@@ -237,7 +237,7 @@ class EndpointInfo:
 
     @property
     def description(self):
-        """Gets the description of this EndpointInfo.
+        r"""Gets the description of this EndpointInfo.
 
         描述
 
@@ -248,7 +248,7 @@ class EndpointInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EndpointInfo.
+        r"""Sets the description of this EndpointInfo.
 
         描述
 
@@ -259,7 +259,7 @@ class EndpointInfo:
 
     @property
     def status(self):
-        """Gets the status of this EndpointInfo.
+        r"""Gets the status of this EndpointInfo.
 
         访问端点状态
 
@@ -270,7 +270,7 @@ class EndpointInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EndpointInfo.
+        r"""Sets the status of this EndpointInfo.
 
         访问端点状态
 
@@ -281,7 +281,7 @@ class EndpointInfo:
 
     @property
     def error_info(self):
-        """Gets the error_info of this EndpointInfo.
+        r"""Gets the error_info of this EndpointInfo.
 
         :return: The error_info of this EndpointInfo.
         :rtype: :class:`huaweicloudsdkeg.v1.ErrorInfo`
@@ -290,7 +290,7 @@ class EndpointInfo:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this EndpointInfo.
+        r"""Sets the error_info of this EndpointInfo.
 
         :param error_info: The error_info of this EndpointInfo.
         :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`
@@ -299,7 +299,7 @@ class EndpointInfo:
 
     @property
     def type(self):
-        """Gets the type of this EndpointInfo.
+        r"""Gets the type of this EndpointInfo.
 
         访问端点类型
 
@@ -310,7 +310,7 @@ class EndpointInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EndpointInfo.
+        r"""Sets the type of this EndpointInfo.
 
         访问端点类型
 
@@ -321,7 +321,7 @@ class EndpointInfo:
 
     @property
     def scalable(self):
-        """Gets the scalable of this EndpointInfo.
+        r"""Gets the scalable of this EndpointInfo.
 
         是否可更新
 
@@ -332,7 +332,7 @@ class EndpointInfo:
 
     @scalable.setter
     def scalable(self, scalable):
-        """Sets the scalable of this EndpointInfo.
+        r"""Sets the scalable of this EndpointInfo.
 
         是否可更新
 
@@ -343,7 +343,7 @@ class EndpointInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this EndpointInfo.
+        r"""Gets the created_time of this EndpointInfo.
 
         创建UTC时间
 
@@ -354,7 +354,7 @@ class EndpointInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this EndpointInfo.
+        r"""Sets the created_time of this EndpointInfo.
 
         创建UTC时间
 
@@ -365,7 +365,7 @@ class EndpointInfo:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this EndpointInfo.
+        r"""Gets the updated_time of this EndpointInfo.
 
         更新UTC时间
 
@@ -376,7 +376,7 @@ class EndpointInfo:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this EndpointInfo.
+        r"""Sets the updated_time of this EndpointInfo.
 
         更新UTC时间
 
@@ -387,7 +387,7 @@ class EndpointInfo:
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this EndpointInfo.
+        r"""Gets the endpoints of this EndpointInfo.
 
         访问端点终端节点列表
 
@@ -398,7 +398,7 @@ class EndpointInfo:
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this EndpointInfo.
+        r"""Sets the endpoints of this EndpointInfo.
 
         访问端点终端节点列表
 

@@ -26,7 +26,7 @@ class UpdateInstanceResponse(SdkResponse):
     }
 
     def __init__(self, operation_id=None):
-        """UpdateInstanceResponse
+        r"""UpdateInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this UpdateInstanceResponse.
+        r"""Gets the operation_id of this UpdateInstanceResponse.
 
         操作记录id
 
@@ -55,7 +55,7 @@ class UpdateInstanceResponse(SdkResponse):
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this UpdateInstanceResponse.
+        r"""Sets the operation_id of this UpdateInstanceResponse.
 
         操作记录id
 

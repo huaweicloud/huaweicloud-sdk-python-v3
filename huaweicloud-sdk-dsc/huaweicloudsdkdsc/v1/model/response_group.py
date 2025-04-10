@@ -39,7 +39,7 @@ class ResponseGroup:
     }
 
     def __init__(self, category=None, delete_allowed=None, group_desc=None, group_name=None, id=None, rule_names=None, task_names=None, is_default=None):
-        """ResponseGroup
+        r"""ResponseGroup
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ResponseGroup:
 
     @property
     def category(self):
-        """Gets the category of this ResponseGroup.
+        r"""Gets the category of this ResponseGroup.
 
         规则类别，内置规则(BUILT_IN)或自建规则(BUILT_SELF)
 
@@ -103,7 +103,7 @@ class ResponseGroup:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ResponseGroup.
+        r"""Sets the category of this ResponseGroup.
 
         规则类别，内置规则(BUILT_IN)或自建规则(BUILT_SELF)
 
@@ -114,7 +114,7 @@ class ResponseGroup:
 
     @property
     def delete_allowed(self):
-        """Gets the delete_allowed of this ResponseGroup.
+        r"""Gets the delete_allowed of this ResponseGroup.
 
         是否允许删除
 
@@ -125,7 +125,7 @@ class ResponseGroup:
 
     @delete_allowed.setter
     def delete_allowed(self, delete_allowed):
-        """Sets the delete_allowed of this ResponseGroup.
+        r"""Sets the delete_allowed of this ResponseGroup.
 
         是否允许删除
 
@@ -136,7 +136,7 @@ class ResponseGroup:
 
     @property
     def group_desc(self):
-        """Gets the group_desc of this ResponseGroup.
+        r"""Gets the group_desc of this ResponseGroup.
 
         规则组描述
 
@@ -147,7 +147,7 @@ class ResponseGroup:
 
     @group_desc.setter
     def group_desc(self, group_desc):
-        """Sets the group_desc of this ResponseGroup.
+        r"""Sets the group_desc of this ResponseGroup.
 
         规则组描述
 
@@ -158,7 +158,7 @@ class ResponseGroup:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ResponseGroup.
+        r"""Gets the group_name of this ResponseGroup.
 
         规则组名称
 
@@ -169,7 +169,7 @@ class ResponseGroup:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ResponseGroup.
+        r"""Sets the group_name of this ResponseGroup.
 
         规则组名称
 
@@ -180,7 +180,7 @@ class ResponseGroup:
 
     @property
     def id(self):
-        """Gets the id of this ResponseGroup.
+        r"""Gets the id of this ResponseGroup.
 
         规则组ID
 
@@ -191,7 +191,7 @@ class ResponseGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResponseGroup.
+        r"""Sets the id of this ResponseGroup.
 
         规则组ID
 
@@ -202,7 +202,7 @@ class ResponseGroup:
 
     @property
     def rule_names(self):
-        """Gets the rule_names of this ResponseGroup.
+        r"""Gets the rule_names of this ResponseGroup.
 
         规则名称
 
@@ -213,7 +213,7 @@ class ResponseGroup:
 
     @rule_names.setter
     def rule_names(self, rule_names):
-        """Sets the rule_names of this ResponseGroup.
+        r"""Sets the rule_names of this ResponseGroup.
 
         规则名称
 
@@ -224,7 +224,7 @@ class ResponseGroup:
 
     @property
     def task_names(self):
-        """Gets the task_names of this ResponseGroup.
+        r"""Gets the task_names of this ResponseGroup.
 
         扫描任务名称
 
@@ -235,7 +235,7 @@ class ResponseGroup:
 
     @task_names.setter
     def task_names(self, task_names):
-        """Sets the task_names of this ResponseGroup.
+        r"""Sets the task_names of this ResponseGroup.
 
         扫描任务名称
 
@@ -246,7 +246,7 @@ class ResponseGroup:
 
     @property
     def is_default(self):
-        """Gets the is_default of this ResponseGroup.
+        r"""Gets the is_default of this ResponseGroup.
 
         是否为默认规则组
 
@@ -257,7 +257,7 @@ class ResponseGroup:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this ResponseGroup.
+        r"""Sets the is_default of this ResponseGroup.
 
         是否为默认规则组
 

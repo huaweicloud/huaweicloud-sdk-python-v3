@@ -27,7 +27,7 @@ class ListBandwidthPackageLinesRequest:
     }
 
     def __init__(self, level=None, name=None):
-        """ListBandwidthPackageLinesRequest
+        r"""ListBandwidthPackageLinesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListBandwidthPackageLinesRequest:
 
     @property
     def level(self):
-        """Gets the level of this ListBandwidthPackageLinesRequest.
+        r"""Gets the level of this ListBandwidthPackageLinesRequest.
 
         根据带宽包等级进行查询
 
@@ -61,7 +61,7 @@ class ListBandwidthPackageLinesRequest:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ListBandwidthPackageLinesRequest.
+        r"""Sets the level of this ListBandwidthPackageLinesRequest.
 
         根据带宽包等级进行查询
 
@@ -72,7 +72,7 @@ class ListBandwidthPackageLinesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListBandwidthPackageLinesRequest.
+        r"""Gets the name of this ListBandwidthPackageLinesRequest.
 
         根据名称进行模糊查询
 
@@ -83,7 +83,7 @@ class ListBandwidthPackageLinesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListBandwidthPackageLinesRequest.
+        r"""Sets the name of this ListBandwidthPackageLinesRequest.
 
         根据名称进行模糊查询
 

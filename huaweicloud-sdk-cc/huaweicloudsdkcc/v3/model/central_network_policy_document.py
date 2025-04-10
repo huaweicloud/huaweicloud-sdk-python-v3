@@ -29,7 +29,7 @@ class CentralNetworkPolicyDocument:
     }
 
     def __init__(self, default_plane=None, planes=None, er_instances=None):
-        """CentralNetworkPolicyDocument
+        r"""CentralNetworkPolicyDocument
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CentralNetworkPolicyDocument:
 
     @property
     def default_plane(self):
-        """Gets the default_plane of this CentralNetworkPolicyDocument.
+        r"""Gets the default_plane of this CentralNetworkPolicyDocument.
 
         中心网络默认平面的名字。
 
@@ -66,7 +66,7 @@ class CentralNetworkPolicyDocument:
 
     @default_plane.setter
     def default_plane(self, default_plane):
-        """Sets the default_plane of this CentralNetworkPolicyDocument.
+        r"""Sets the default_plane of this CentralNetworkPolicyDocument.
 
         中心网络默认平面的名字。
 
@@ -77,7 +77,7 @@ class CentralNetworkPolicyDocument:
 
     @property
     def planes(self):
-        """Gets the planes of this CentralNetworkPolicyDocument.
+        r"""Gets the planes of this CentralNetworkPolicyDocument.
 
         中心网络平面列表。
 
@@ -88,7 +88,7 @@ class CentralNetworkPolicyDocument:
 
     @planes.setter
     def planes(self, planes):
-        """Sets the planes of this CentralNetworkPolicyDocument.
+        r"""Sets the planes of this CentralNetworkPolicyDocument.
 
         中心网络平面列表。
 
@@ -99,7 +99,7 @@ class CentralNetworkPolicyDocument:
 
     @property
     def er_instances(self):
-        """Gets the er_instances of this CentralNetworkPolicyDocument.
+        r"""Gets the er_instances of this CentralNetworkPolicyDocument.
 
         中心网络ER实例列表。
 
@@ -110,7 +110,7 @@ class CentralNetworkPolicyDocument:
 
     @er_instances.setter
     def er_instances(self, er_instances):
-        """Sets the er_instances of this CentralNetworkPolicyDocument.
+        r"""Sets the er_instances of this CentralNetworkPolicyDocument.
 
         中心网络ER实例列表。
 

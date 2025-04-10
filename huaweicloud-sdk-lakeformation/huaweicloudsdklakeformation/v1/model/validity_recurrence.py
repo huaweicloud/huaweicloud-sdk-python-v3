@@ -27,7 +27,7 @@ class ValidityRecurrence:
     }
 
     def __init__(self, interval=None, schedule=None):
-        """ValidityRecurrence
+        r"""ValidityRecurrence
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ValidityRecurrence:
 
     @property
     def interval(self):
-        """Gets the interval of this ValidityRecurrence.
+        r"""Gets the interval of this ValidityRecurrence.
 
         :return: The interval of this ValidityRecurrence.
         :rtype: :class:`huaweicloudsdklakeformation.v1.ValidityInterval`
@@ -59,7 +59,7 @@ class ValidityRecurrence:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ValidityRecurrence.
+        r"""Sets the interval of this ValidityRecurrence.
 
         :param interval: The interval of this ValidityRecurrence.
         :type interval: :class:`huaweicloudsdklakeformation.v1.ValidityInterval`
@@ -68,7 +68,7 @@ class ValidityRecurrence:
 
     @property
     def schedule(self):
-        """Gets the schedule of this ValidityRecurrence.
+        r"""Gets the schedule of this ValidityRecurrence.
 
         :return: The schedule of this ValidityRecurrence.
         :rtype: :class:`huaweicloudsdklakeformation.v1.RecurrenceSchedule`
@@ -77,7 +77,7 @@ class ValidityRecurrence:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this ValidityRecurrence.
+        r"""Sets the schedule of this ValidityRecurrence.
 
         :param schedule: The schedule of this ValidityRecurrence.
         :type schedule: :class:`huaweicloudsdklakeformation.v1.RecurrenceSchedule`

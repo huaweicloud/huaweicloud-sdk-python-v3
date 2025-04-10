@@ -27,7 +27,7 @@ class SortDir:
     }
 
     def __init__(self):
-        """SortDir
+        r"""SortDir
 
         The model defined in huaweicloud sdk
 

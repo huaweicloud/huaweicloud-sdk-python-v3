@@ -29,7 +29,7 @@ class LineageRelation:
     }
 
     def __init__(self, from_entity_id=None, relationship_id=None, to_entity_id=None):
-        """LineageRelation
+        r"""LineageRelation
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LineageRelation:
 
     @property
     def from_entity_id(self):
-        """Gets the from_entity_id of this LineageRelation.
+        r"""Gets the from_entity_id of this LineageRelation.
 
         血缘来源
 
@@ -68,7 +68,7 @@ class LineageRelation:
 
     @from_entity_id.setter
     def from_entity_id(self, from_entity_id):
-        """Sets the from_entity_id of this LineageRelation.
+        r"""Sets the from_entity_id of this LineageRelation.
 
         血缘来源
 
@@ -79,7 +79,7 @@ class LineageRelation:
 
     @property
     def relationship_id(self):
-        """Gets the relationship_id of this LineageRelation.
+        r"""Gets the relationship_id of this LineageRelation.
 
         关系id
 
@@ -90,7 +90,7 @@ class LineageRelation:
 
     @relationship_id.setter
     def relationship_id(self, relationship_id):
-        """Sets the relationship_id of this LineageRelation.
+        r"""Sets the relationship_id of this LineageRelation.
 
         关系id
 
@@ -101,7 +101,7 @@ class LineageRelation:
 
     @property
     def to_entity_id(self):
-        """Gets the to_entity_id of this LineageRelation.
+        r"""Gets the to_entity_id of this LineageRelation.
 
         血缘流向
 
@@ -112,7 +112,7 @@ class LineageRelation:
 
     @to_entity_id.setter
     def to_entity_id(self, to_entity_id):
-        """Sets the to_entity_id of this LineageRelation.
+        r"""Sets the to_entity_id of this LineageRelation.
 
         血缘流向
 

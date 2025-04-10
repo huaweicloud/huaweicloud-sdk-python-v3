@@ -39,7 +39,7 @@ class ListApisUnbindedToAppV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, app_id=None, env_id=None, group_id=None, api_id=None, api_name=None):
-        """ListApisUnbindedToAppV2Request
+        r"""ListApisUnbindedToAppV2Request
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class ListApisUnbindedToAppV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListApisUnbindedToAppV2Request.
+        r"""Gets the instance_id of this ListApisUnbindedToAppV2Request.
 
         实例ID
 
@@ -100,7 +100,7 @@ class ListApisUnbindedToAppV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListApisUnbindedToAppV2Request.
+        r"""Sets the instance_id of this ListApisUnbindedToAppV2Request.
 
         实例ID
 
@@ -111,7 +111,7 @@ class ListApisUnbindedToAppV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListApisUnbindedToAppV2Request.
+        r"""Gets the offset of this ListApisUnbindedToAppV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -122,7 +122,7 @@ class ListApisUnbindedToAppV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListApisUnbindedToAppV2Request.
+        r"""Sets the offset of this ListApisUnbindedToAppV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -133,7 +133,7 @@ class ListApisUnbindedToAppV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApisUnbindedToAppV2Request.
+        r"""Gets the limit of this ListApisUnbindedToAppV2Request.
 
         每页显示的条目数量
 
@@ -144,7 +144,7 @@ class ListApisUnbindedToAppV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApisUnbindedToAppV2Request.
+        r"""Sets the limit of this ListApisUnbindedToAppV2Request.
 
         每页显示的条目数量
 
@@ -155,7 +155,7 @@ class ListApisUnbindedToAppV2Request:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListApisUnbindedToAppV2Request.
+        r"""Gets the app_id of this ListApisUnbindedToAppV2Request.
 
         应用id
 
@@ -166,7 +166,7 @@ class ListApisUnbindedToAppV2Request:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListApisUnbindedToAppV2Request.
+        r"""Sets the app_id of this ListApisUnbindedToAppV2Request.
 
         应用id
 
@@ -177,7 +177,7 @@ class ListApisUnbindedToAppV2Request:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ListApisUnbindedToAppV2Request.
+        r"""Gets the env_id of this ListApisUnbindedToAppV2Request.
 
         环境id
 
@@ -188,7 +188,7 @@ class ListApisUnbindedToAppV2Request:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ListApisUnbindedToAppV2Request.
+        r"""Sets the env_id of this ListApisUnbindedToAppV2Request.
 
         环境id
 
@@ -199,7 +199,7 @@ class ListApisUnbindedToAppV2Request:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListApisUnbindedToAppV2Request.
+        r"""Gets the group_id of this ListApisUnbindedToAppV2Request.
 
         API分组编号
 
@@ -210,7 +210,7 @@ class ListApisUnbindedToAppV2Request:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListApisUnbindedToAppV2Request.
+        r"""Sets the group_id of this ListApisUnbindedToAppV2Request.
 
         API分组编号
 
@@ -221,7 +221,7 @@ class ListApisUnbindedToAppV2Request:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ListApisUnbindedToAppV2Request.
+        r"""Gets the api_id of this ListApisUnbindedToAppV2Request.
 
         API编号
 
@@ -232,7 +232,7 @@ class ListApisUnbindedToAppV2Request:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ListApisUnbindedToAppV2Request.
+        r"""Sets the api_id of this ListApisUnbindedToAppV2Request.
 
         API编号
 
@@ -243,7 +243,7 @@ class ListApisUnbindedToAppV2Request:
 
     @property
     def api_name(self):
-        """Gets the api_name of this ListApisUnbindedToAppV2Request.
+        r"""Gets the api_name of this ListApisUnbindedToAppV2Request.
 
         API名称
 
@@ -254,7 +254,7 @@ class ListApisUnbindedToAppV2Request:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this ListApisUnbindedToAppV2Request.
+        r"""Sets the api_name of this ListApisUnbindedToAppV2Request.
 
         API名称
 

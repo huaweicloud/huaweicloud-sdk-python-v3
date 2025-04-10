@@ -33,7 +33,7 @@ class ClassroomCard:
     }
 
     def __init__(self, classroom_id=None, name=None, description=None, credit=None, status=None):
-        """ClassroomCard
+        r"""ClassroomCard
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ClassroomCard:
 
     @property
     def classroom_id(self):
-        """Gets the classroom_id of this ClassroomCard.
+        r"""Gets the classroom_id of this ClassroomCard.
 
         课堂ID
 
@@ -77,7 +77,7 @@ class ClassroomCard:
 
     @classroom_id.setter
     def classroom_id(self, classroom_id):
-        """Sets the classroom_id of this ClassroomCard.
+        r"""Sets the classroom_id of this ClassroomCard.
 
         课堂ID
 
@@ -88,7 +88,7 @@ class ClassroomCard:
 
     @property
     def name(self):
-        """Gets the name of this ClassroomCard.
+        r"""Gets the name of this ClassroomCard.
 
         课堂名称
 
@@ -99,7 +99,7 @@ class ClassroomCard:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClassroomCard.
+        r"""Sets the name of this ClassroomCard.
 
         课堂名称
 
@@ -110,7 +110,7 @@ class ClassroomCard:
 
     @property
     def description(self):
-        """Gets the description of this ClassroomCard.
+        r"""Gets the description of this ClassroomCard.
 
         课堂描述
 
@@ -121,7 +121,7 @@ class ClassroomCard:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ClassroomCard.
+        r"""Sets the description of this ClassroomCard.
 
         课堂描述
 
@@ -132,7 +132,7 @@ class ClassroomCard:
 
     @property
     def credit(self):
-        """Gets the credit of this ClassroomCard.
+        r"""Gets the credit of this ClassroomCard.
 
         课堂学分
 
@@ -143,7 +143,7 @@ class ClassroomCard:
 
     @credit.setter
     def credit(self, credit):
-        """Sets the credit of this ClassroomCard.
+        r"""Sets the credit of this ClassroomCard.
 
         课堂学分
 
@@ -154,7 +154,7 @@ class ClassroomCard:
 
     @property
     def status(self):
-        """Gets the status of this ClassroomCard.
+        r"""Gets the status of this ClassroomCard.
 
         课堂当前的状态，normal：课堂处于正常状态，archive：课堂已归档
 
@@ -165,7 +165,7 @@ class ClassroomCard:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClassroomCard.
+        r"""Sets the status of this ClassroomCard.
 
         课堂当前的状态，normal：课堂处于正常状态，archive：课堂已归档
 

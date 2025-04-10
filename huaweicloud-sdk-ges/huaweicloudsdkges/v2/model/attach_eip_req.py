@@ -25,7 +25,7 @@ class AttachEipReq:
     }
 
     def __init__(self, eip_id=None):
-        """AttachEipReq
+        r"""AttachEipReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AttachEipReq:
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this AttachEipReq.
+        r"""Gets the eip_id of this AttachEipReq.
 
         弹性公网IP的ID。
 
@@ -53,7 +53,7 @@ class AttachEipReq:
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this AttachEipReq.
+        r"""Sets the eip_id of this AttachEipReq.
 
         弹性公网IP的ID。
 

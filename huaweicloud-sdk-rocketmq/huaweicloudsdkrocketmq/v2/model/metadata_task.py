@@ -33,7 +33,7 @@ class MetadataTask:
     }
 
     def __init__(self, id=None, name=None, start_date=None, status=None, type=None):
-        """MetadataTask
+        r"""MetadataTask
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MetadataTask:
 
     @property
     def id(self):
-        """Gets the id of this MetadataTask.
+        r"""Gets the id of this MetadataTask.
 
         元数据迁移任务ID。
 
@@ -82,7 +82,7 @@ class MetadataTask:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MetadataTask.
+        r"""Sets the id of this MetadataTask.
 
         元数据迁移任务ID。
 
@@ -93,7 +93,7 @@ class MetadataTask:
 
     @property
     def name(self):
-        """Gets the name of this MetadataTask.
+        r"""Gets the name of this MetadataTask.
 
         元数据迁移任务名称。
 
@@ -104,7 +104,7 @@ class MetadataTask:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MetadataTask.
+        r"""Sets the name of this MetadataTask.
 
         元数据迁移任务名称。
 
@@ -115,7 +115,7 @@ class MetadataTask:
 
     @property
     def start_date(self):
-        """Gets the start_date of this MetadataTask.
+        r"""Gets the start_date of this MetadataTask.
 
         元数据迁移任务开始时间。
 
@@ -126,7 +126,7 @@ class MetadataTask:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this MetadataTask.
+        r"""Sets the start_date of this MetadataTask.
 
         元数据迁移任务开始时间。
 
@@ -137,7 +137,7 @@ class MetadataTask:
 
     @property
     def status(self):
-        """Gets the status of this MetadataTask.
+        r"""Gets the status of this MetadataTask.
 
         元数据迁移任务状态。
 
@@ -148,7 +148,7 @@ class MetadataTask:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MetadataTask.
+        r"""Sets the status of this MetadataTask.
 
         元数据迁移任务状态。
 
@@ -159,7 +159,7 @@ class MetadataTask:
 
     @property
     def type(self):
-        """Gets the type of this MetadataTask.
+        r"""Gets the type of this MetadataTask.
 
         元数据迁移类型。
 
@@ -170,7 +170,7 @@ class MetadataTask:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MetadataTask.
+        r"""Sets the type of this MetadataTask.
 
         元数据迁移类型。
 

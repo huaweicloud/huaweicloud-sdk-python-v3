@@ -24,7 +24,7 @@ class CreateNodeEncryptdatasResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateNodeEncryptdatasResponse
+        r"""CreateNodeEncryptdatasResponse
 
         The model defined in huaweicloud sdk
 

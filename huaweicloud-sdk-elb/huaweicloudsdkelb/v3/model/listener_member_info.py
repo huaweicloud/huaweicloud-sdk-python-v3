@@ -27,7 +27,7 @@ class ListenerMemberInfo:
     }
 
     def __init__(self, listener_id=None, operating_status=None):
-        """ListenerMemberInfo
+        r"""ListenerMemberInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListenerMemberInfo:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this ListenerMemberInfo.
+        r"""Gets the listener_id of this ListenerMemberInfo.
 
         后端服务器关联的监听器id。
 
@@ -59,7 +59,7 @@ class ListenerMemberInfo:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this ListenerMemberInfo.
+        r"""Sets the listener_id of this ListenerMemberInfo.
 
         后端服务器关联的监听器id。
 
@@ -70,7 +70,7 @@ class ListenerMemberInfo:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this ListenerMemberInfo.
+        r"""Gets the operating_status of this ListenerMemberInfo.
 
         后端服务器的健康状态。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机或服务异常。
 
@@ -81,7 +81,7 @@ class ListenerMemberInfo:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this ListenerMemberInfo.
+        r"""Sets the operating_status of this ListenerMemberInfo.
 
         后端服务器的健康状态。  取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机或服务异常。
 

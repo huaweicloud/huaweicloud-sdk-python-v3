@@ -30,7 +30,7 @@ class ShowCommitsByBranchResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowCommitsByBranchResponse
+        r"""ShowCommitsByBranchResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowCommitsByBranchResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowCommitsByBranchResponse.
+        r"""Gets the error of this ShowCommitsByBranchResponse.
 
         :return: The error of this ShowCommitsByBranchResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ShowCommitsByBranchResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowCommitsByBranchResponse.
+        r"""Sets the error of this ShowCommitsByBranchResponse.
 
         :param error: The error of this ShowCommitsByBranchResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ShowCommitsByBranchResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowCommitsByBranchResponse.
+        r"""Gets the result of this ShowCommitsByBranchResponse.
 
         :return: The result of this ShowCommitsByBranchResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CommitList`
@@ -85,7 +85,7 @@ class ShowCommitsByBranchResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowCommitsByBranchResponse.
+        r"""Sets the result of this ShowCommitsByBranchResponse.
 
         :param result: The result of this ShowCommitsByBranchResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.CommitList`
@@ -94,7 +94,7 @@ class ShowCommitsByBranchResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowCommitsByBranchResponse.
+        r"""Gets the status of this ShowCommitsByBranchResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ShowCommitsByBranchResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowCommitsByBranchResponse.
+        r"""Sets the status of this ShowCommitsByBranchResponse.
 
         响应状态
 

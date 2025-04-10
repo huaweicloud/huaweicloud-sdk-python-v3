@@ -30,7 +30,7 @@ class CreateModelDefinitionResponse(SdkResponse):
     }
 
     def __init__(self, id=None, version_id=None, x_request_id=None):
-        """CreateModelDefinitionResponse
+        r"""CreateModelDefinitionResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateModelDefinitionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateModelDefinitionResponse.
+        r"""Gets the id of this CreateModelDefinitionResponse.
 
         模型ID，32~36位的英文、数字、短横组合
 
@@ -69,7 +69,7 @@ class CreateModelDefinitionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateModelDefinitionResponse.
+        r"""Sets the id of this CreateModelDefinitionResponse.
 
         模型ID，32~36位的英文、数字、短横组合
 
@@ -80,7 +80,7 @@ class CreateModelDefinitionResponse(SdkResponse):
 
     @property
     def version_id(self):
-        """Gets the version_id of this CreateModelDefinitionResponse.
+        r"""Gets the version_id of this CreateModelDefinitionResponse.
 
         模型版本ID，32~36位的英文、数字、短横组合，系统自动生成无法修改，输入不生效。
 
@@ -91,7 +91,7 @@ class CreateModelDefinitionResponse(SdkResponse):
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this CreateModelDefinitionResponse.
+        r"""Sets the version_id of this CreateModelDefinitionResponse.
 
         模型版本ID，32~36位的英文、数字、短横组合，系统自动生成无法修改，输入不生效。
 
@@ -102,7 +102,7 @@ class CreateModelDefinitionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateModelDefinitionResponse.
+        r"""Gets the x_request_id of this CreateModelDefinitionResponse.
 
         :return: The x_request_id of this CreateModelDefinitionResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class CreateModelDefinitionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateModelDefinitionResponse.
+        r"""Sets the x_request_id of this CreateModelDefinitionResponse.
 
         :param x_request_id: The x_request_id of this CreateModelDefinitionResponse.
         :type x_request_id: str

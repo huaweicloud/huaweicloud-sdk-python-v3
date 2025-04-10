@@ -29,7 +29,7 @@ class LabelSite:
     }
 
     def __init__(self, index=None, name=None, coordinate=None):
-        """LabelSite
+        r"""LabelSite
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LabelSite:
 
     @property
     def index(self):
-        """Gets the index of this LabelSite.
+        r"""Gets the index of this LabelSite.
 
         索引
 
@@ -68,7 +68,7 @@ class LabelSite:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this LabelSite.
+        r"""Sets the index of this LabelSite.
 
         索引
 
@@ -79,7 +79,7 @@ class LabelSite:
 
     @property
     def name(self):
-        """Gets the name of this LabelSite.
+        r"""Gets the name of this LabelSite.
 
         标记位点名称
 
@@ -90,7 +90,7 @@ class LabelSite:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LabelSite.
+        r"""Sets the name of this LabelSite.
 
         标记位点名称
 
@@ -101,7 +101,7 @@ class LabelSite:
 
     @property
     def coordinate(self):
-        """Gets the coordinate of this LabelSite.
+        r"""Gets the coordinate of this LabelSite.
 
         位点三维坐标集
 
@@ -112,7 +112,7 @@ class LabelSite:
 
     @coordinate.setter
     def coordinate(self, coordinate):
-        """Sets the coordinate of this LabelSite.
+        r"""Sets the coordinate of this LabelSite.
 
         位点三维坐标集
 

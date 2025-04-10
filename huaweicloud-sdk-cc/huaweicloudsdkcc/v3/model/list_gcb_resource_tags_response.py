@@ -28,7 +28,7 @@ class ListGcbResourceTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, request_id=None):
-        """ListGcbResourceTagsResponse
+        r"""ListGcbResourceTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListGcbResourceTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListGcbResourceTagsResponse.
+        r"""Gets the tags of this ListGcbResourceTagsResponse.
 
         标签列表。
 
@@ -62,7 +62,7 @@ class ListGcbResourceTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListGcbResourceTagsResponse.
+        r"""Sets the tags of this ListGcbResourceTagsResponse.
 
         标签列表。
 
@@ -73,7 +73,7 @@ class ListGcbResourceTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGcbResourceTagsResponse.
+        r"""Gets the request_id of this ListGcbResourceTagsResponse.
 
         请求ID。
 
@@ -84,7 +84,7 @@ class ListGcbResourceTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGcbResourceTagsResponse.
+        r"""Sets the request_id of this ListGcbResourceTagsResponse.
 
         请求ID。
 

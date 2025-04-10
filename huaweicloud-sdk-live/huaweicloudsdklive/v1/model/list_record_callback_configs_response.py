@@ -28,7 +28,7 @@ class ListRecordCallbackConfigsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, callback_config=None):
-        """ListRecordCallbackConfigsResponse
+        r"""ListRecordCallbackConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRecordCallbackConfigsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListRecordCallbackConfigsResponse.
+        r"""Gets the total of this ListRecordCallbackConfigsResponse.
 
         查询结果的总元素数量
 
@@ -62,7 +62,7 @@ class ListRecordCallbackConfigsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListRecordCallbackConfigsResponse.
+        r"""Sets the total of this ListRecordCallbackConfigsResponse.
 
         查询结果的总元素数量
 
@@ -73,7 +73,7 @@ class ListRecordCallbackConfigsResponse(SdkResponse):
 
     @property
     def callback_config(self):
-        """Gets the callback_config of this ListRecordCallbackConfigsResponse.
+        r"""Gets the callback_config of this ListRecordCallbackConfigsResponse.
 
         回调配置
 
@@ -84,7 +84,7 @@ class ListRecordCallbackConfigsResponse(SdkResponse):
 
     @callback_config.setter
     def callback_config(self, callback_config):
-        """Sets the callback_config of this ListRecordCallbackConfigsResponse.
+        r"""Sets the callback_config of this ListRecordCallbackConfigsResponse.
 
         回调配置
 

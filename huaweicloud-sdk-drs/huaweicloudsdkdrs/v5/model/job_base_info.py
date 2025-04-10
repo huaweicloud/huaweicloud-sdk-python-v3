@@ -51,7 +51,7 @@ class JobBaseInfo:
     }
 
     def __init__(self, name=None, job_type=None, multi_write=None, engine_type=None, job_direction=None, task_type=None, net_type=None, charging_mode=None, enterprise_project_id=None, description=None, start_time=None, expired_days=None, tags=None, is_open_fast_clean=None):
-        """JobBaseInfo
+        r"""JobBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class JobBaseInfo:
 
     @property
     def name(self):
-        """Gets the name of this JobBaseInfo.
+        r"""Gets the name of this JobBaseInfo.
 
         任务名称。 约束：任务名称在4位到50位之间，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。 - 最小长度：4 - 最大长度：50
 
@@ -145,7 +145,7 @@ class JobBaseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobBaseInfo.
+        r"""Sets the name of this JobBaseInfo.
 
         任务名称。 约束：任务名称在4位到50位之间，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。 - 最小长度：4 - 最大长度：50
 
@@ -156,7 +156,7 @@ class JobBaseInfo:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobBaseInfo.
+        r"""Gets the job_type of this JobBaseInfo.
 
         任务场景。取值： - migration：实时迁移。 - sync：实时同步。 - cloudDataGuard：实时灾备。
 
@@ -167,7 +167,7 @@ class JobBaseInfo:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobBaseInfo.
+        r"""Sets the job_type of this JobBaseInfo.
 
         任务场景。取值： - migration：实时迁移。 - sync：实时同步。 - cloudDataGuard：实时灾备。
 
@@ -178,7 +178,7 @@ class JobBaseInfo:
 
     @property
     def multi_write(self):
-        """Gets the multi_write of this JobBaseInfo.
+        r"""Gets the multi_write of this JobBaseInfo.
 
         灾备类型是否双主灾备。说明： - job_type 是cloudDataGuard时，必填，灾备类型是双主灾备时，multi_write取值true, 否则为false。 - job_type 是其他类型时，multi_write是非必选参数。
 
@@ -189,7 +189,7 @@ class JobBaseInfo:
 
     @multi_write.setter
     def multi_write(self, multi_write):
-        """Sets the multi_write of this JobBaseInfo.
+        r"""Sets the multi_write of this JobBaseInfo.
 
         灾备类型是否双主灾备。说明： - job_type 是cloudDataGuard时，必填，灾备类型是双主灾备时，multi_write取值true, 否则为false。 - job_type 是其他类型时，multi_write是非必选参数。
 
@@ -200,7 +200,7 @@ class JobBaseInfo:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this JobBaseInfo.
+        r"""Gets the engine_type of this JobBaseInfo.
 
         引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。 - redis-to-gaussredis：Redis同步到GeminiDB Redis，实时迁移场景使用。 - rediscluster-to-gaussredis：Redis集群同步到GeminiDB Redis，实时迁移场景使用。 - mysql-to-mysql：MySQL同步到MySQL，实时同步场景使用。
 
@@ -211,7 +211,7 @@ class JobBaseInfo:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this JobBaseInfo.
+        r"""Sets the engine_type of this JobBaseInfo.
 
         引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。 - redis-to-gaussredis：Redis同步到GeminiDB Redis，实时迁移场景使用。 - rediscluster-to-gaussredis：Redis集群同步到GeminiDB Redis，实时迁移场景使用。 - mysql-to-mysql：MySQL同步到MySQL，实时同步场景使用。
 
@@ -222,7 +222,7 @@ class JobBaseInfo:
 
     @property
     def job_direction(self):
-        """Gets the job_direction of this JobBaseInfo.
+        r"""Gets the job_direction of this JobBaseInfo.
 
         迁移方向。取值： - up：入云 ，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
 
@@ -233,7 +233,7 @@ class JobBaseInfo:
 
     @job_direction.setter
     def job_direction(self, job_direction):
-        """Sets the job_direction of this JobBaseInfo.
+        r"""Sets the job_direction of this JobBaseInfo.
 
         迁移方向。取值： - up：入云 ，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
 
@@ -244,7 +244,7 @@ class JobBaseInfo:
 
     @property
     def task_type(self):
-        """Gets the task_type of this JobBaseInfo.
+        r"""Gets the task_type of this JobBaseInfo.
 
         迁移模式。取值： - FULL_TRANS ：全量。 - FULL_INCR_TRANS：全量+增量。 - INCR_TRANS：增量。
 
@@ -255,7 +255,7 @@ class JobBaseInfo:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this JobBaseInfo.
+        r"""Sets the task_type of this JobBaseInfo.
 
         迁移模式。取值： - FULL_TRANS ：全量。 - FULL_INCR_TRANS：全量+增量。 - INCR_TRANS：增量。
 
@@ -266,7 +266,7 @@ class JobBaseInfo:
 
     @property
     def net_type(self):
-        """Gets the net_type of this JobBaseInfo.
+        r"""Gets the net_type of this JobBaseInfo.
 
         网络类型。取值： - eip：公网网络。 - vpc：VPC网络，灾备场景不支持选择VPC网络。 - vpn：VPN、专线网络。
 
@@ -277,7 +277,7 @@ class JobBaseInfo:
 
     @net_type.setter
     def net_type(self, net_type):
-        """Sets the net_type of this JobBaseInfo.
+        r"""Sets the net_type of this JobBaseInfo.
 
         网络类型。取值： - eip：公网网络。 - vpc：VPC网络，灾备场景不支持选择VPC网络。 - vpn：VPN、专线网络。
 
@@ -288,7 +288,7 @@ class JobBaseInfo:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this JobBaseInfo.
+        r"""Gets the charging_mode of this JobBaseInfo.
 
         计费模式，默认按需。取值： - period：包周期。 - on_demand：按需。
 
@@ -299,7 +299,7 @@ class JobBaseInfo:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this JobBaseInfo.
+        r"""Sets the charging_mode of this JobBaseInfo.
 
         计费模式，默认按需。取值： - period：包周期。 - on_demand：按需。
 
@@ -310,7 +310,7 @@ class JobBaseInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this JobBaseInfo.
+        r"""Gets the enterprise_project_id of this JobBaseInfo.
 
         企业项目ID。 缺省值：\"0\"，表示\"default\"企业项目。
 
@@ -321,7 +321,7 @@ class JobBaseInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this JobBaseInfo.
+        r"""Sets the enterprise_project_id of this JobBaseInfo.
 
         企业项目ID。 缺省值：\"0\"，表示\"default\"企业项目。
 
@@ -332,7 +332,7 @@ class JobBaseInfo:
 
     @property
     def description(self):
-        """Gets the description of this JobBaseInfo.
+        r"""Gets the description of this JobBaseInfo.
 
         任务描述。 约束：任务描述不能超过256位，且不能包含!<>&'\"\\特殊字符。
 
@@ -343,7 +343,7 @@ class JobBaseInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this JobBaseInfo.
+        r"""Sets the description of this JobBaseInfo.
 
         任务描述。 约束：任务描述不能超过256位，且不能包含!<>&'\"\\特殊字符。
 
@@ -354,7 +354,7 @@ class JobBaseInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this JobBaseInfo.
+        r"""Gets the start_time of this JobBaseInfo.
 
         任务定时启动时间。
 
@@ -365,7 +365,7 @@ class JobBaseInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this JobBaseInfo.
+        r"""Sets the start_time of this JobBaseInfo.
 
         任务定时启动时间。
 
@@ -376,7 +376,7 @@ class JobBaseInfo:
 
     @property
     def expired_days(self):
-        """Gets the expired_days of this JobBaseInfo.
+        r"""Gets the expired_days of this JobBaseInfo.
 
         任务处于异常状态一段时间后，将会自动结束。单位为天。(范围14-100)，不传默认为14天。
 
@@ -387,7 +387,7 @@ class JobBaseInfo:
 
     @expired_days.setter
     def expired_days(self, expired_days):
-        """Sets the expired_days of this JobBaseInfo.
+        r"""Sets the expired_days of this JobBaseInfo.
 
         任务处于异常状态一段时间后，将会自动结束。单位为天。(范围14-100)，不传默认为14天。
 
@@ -398,7 +398,7 @@ class JobBaseInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this JobBaseInfo.
+        r"""Gets the tags of this JobBaseInfo.
 
         标签信息，最多添加10个标签。
 
@@ -409,7 +409,7 @@ class JobBaseInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this JobBaseInfo.
+        r"""Sets the tags of this JobBaseInfo.
 
         标签信息，最多添加10个标签。
 
@@ -420,7 +420,7 @@ class JobBaseInfo:
 
     @property
     def is_open_fast_clean(self):
-        """Gets the is_open_fast_clean of this JobBaseInfo.
+        r"""Gets the is_open_fast_clean of this JobBaseInfo.
 
         是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。
 
@@ -431,7 +431,7 @@ class JobBaseInfo:
 
     @is_open_fast_clean.setter
     def is_open_fast_clean(self, is_open_fast_clean):
-        """Sets the is_open_fast_clean of this JobBaseInfo.
+        r"""Sets the is_open_fast_clean of this JobBaseInfo.
 
         是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。
 

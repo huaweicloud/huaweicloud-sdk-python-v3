@@ -43,7 +43,7 @@ class ListProductsRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, create_until=None, create_since=None, name=None, tag=None, state=None):
-        """ListProductsRequest
+        r"""ListProductsRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListProductsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListProductsRequest.
+        r"""Gets the x_app_user_id of this ListProductsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -117,7 +117,7 @@ class ListProductsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListProductsRequest.
+        r"""Sets the x_app_user_id of this ListProductsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -128,7 +128,7 @@ class ListProductsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProductsRequest.
+        r"""Gets the offset of this ListProductsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -139,7 +139,7 @@ class ListProductsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProductsRequest.
+        r"""Sets the offset of this ListProductsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -150,7 +150,7 @@ class ListProductsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProductsRequest.
+        r"""Gets the limit of this ListProductsRequest.
 
         每页显示的条目数量。
 
@@ -161,7 +161,7 @@ class ListProductsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProductsRequest.
+        r"""Sets the limit of this ListProductsRequest.
 
         每页显示的条目数量。
 
@@ -172,7 +172,7 @@ class ListProductsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListProductsRequest.
+        r"""Gets the sort_key of this ListProductsRequest.
 
         排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
@@ -183,7 +183,7 @@ class ListProductsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListProductsRequest.
+        r"""Sets the sort_key of this ListProductsRequest.
 
         排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
@@ -194,7 +194,7 @@ class ListProductsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListProductsRequest.
+        r"""Gets the sort_dir of this ListProductsRequest.
 
         排序方式。 * asc：升序 * desc：降序  默认asc升序。
 
@@ -205,7 +205,7 @@ class ListProductsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListProductsRequest.
+        r"""Sets the sort_dir of this ListProductsRequest.
 
         排序方式。 * asc：升序 * desc：降序  默认asc升序。
 
@@ -216,7 +216,7 @@ class ListProductsRequest:
 
     @property
     def create_until(self):
-        """Gets the create_until of this ListProductsRequest.
+        r"""Gets the create_until of this ListProductsRequest.
 
         过滤创建时间<=输入时间的记录。
 
@@ -227,7 +227,7 @@ class ListProductsRequest:
 
     @create_until.setter
     def create_until(self, create_until):
-        """Sets the create_until of this ListProductsRequest.
+        r"""Sets the create_until of this ListProductsRequest.
 
         过滤创建时间<=输入时间的记录。
 
@@ -238,7 +238,7 @@ class ListProductsRequest:
 
     @property
     def create_since(self):
-        """Gets the create_since of this ListProductsRequest.
+        r"""Gets the create_since of this ListProductsRequest.
 
         过滤创建时间>=输入时间的记录。
 
@@ -249,7 +249,7 @@ class ListProductsRequest:
 
     @create_since.setter
     def create_since(self, create_since):
-        """Sets the create_since of this ListProductsRequest.
+        r"""Sets the create_since of this ListProductsRequest.
 
         过滤创建时间>=输入时间的记录。
 
@@ -260,7 +260,7 @@ class ListProductsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListProductsRequest.
+        r"""Gets the name of this ListProductsRequest.
 
         按名称模糊查询。
 
@@ -271,7 +271,7 @@ class ListProductsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListProductsRequest.
+        r"""Sets the name of this ListProductsRequest.
 
         按名称模糊查询。
 
@@ -282,7 +282,7 @@ class ListProductsRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ListProductsRequest.
+        r"""Gets the tag of this ListProductsRequest.
 
         按标签模糊查询。
 
@@ -293,7 +293,7 @@ class ListProductsRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListProductsRequest.
+        r"""Sets the tag of this ListProductsRequest.
 
         按标签模糊查询。
 
@@ -304,7 +304,7 @@ class ListProductsRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListProductsRequest.
+        r"""Gets the state of this ListProductsRequest.
 
         按状态查询，多状态使用英文逗号分隔。
 
@@ -315,7 +315,7 @@ class ListProductsRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListProductsRequest.
+        r"""Sets the state of this ListProductsRequest.
 
         按状态查询，多状态使用英文逗号分隔。
 

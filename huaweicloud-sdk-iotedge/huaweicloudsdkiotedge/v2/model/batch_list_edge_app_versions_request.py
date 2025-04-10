@@ -37,7 +37,7 @@ class BatchListEdgeAppVersionsRequest:
     }
 
     def __init__(self, edge_app_id=None, version=None, offset=None, limit=None, ai_card_type=None, arch=None, state=None):
-        """BatchListEdgeAppVersionsRequest
+        r"""BatchListEdgeAppVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class BatchListEdgeAppVersionsRequest:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this BatchListEdgeAppVersionsRequest.
+        r"""Gets the edge_app_id of this BatchListEdgeAppVersionsRequest.
 
         应用版本,应用内版本唯一。
 
@@ -95,7 +95,7 @@ class BatchListEdgeAppVersionsRequest:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this BatchListEdgeAppVersionsRequest.
+        r"""Sets the edge_app_id of this BatchListEdgeAppVersionsRequest.
 
         应用版本,应用内版本唯一。
 
@@ -106,7 +106,7 @@ class BatchListEdgeAppVersionsRequest:
 
     @property
     def version(self):
-        """Gets the version of this BatchListEdgeAppVersionsRequest.
+        r"""Gets the version of this BatchListEdgeAppVersionsRequest.
 
         应用版本搜索关键字
 
@@ -117,7 +117,7 @@ class BatchListEdgeAppVersionsRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this BatchListEdgeAppVersionsRequest.
+        r"""Sets the version of this BatchListEdgeAppVersionsRequest.
 
         应用版本搜索关键字
 
@@ -128,7 +128,7 @@ class BatchListEdgeAppVersionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchListEdgeAppVersionsRequest.
+        r"""Gets the offset of this BatchListEdgeAppVersionsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -139,7 +139,7 @@ class BatchListEdgeAppVersionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchListEdgeAppVersionsRequest.
+        r"""Sets the offset of this BatchListEdgeAppVersionsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -150,7 +150,7 @@ class BatchListEdgeAppVersionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchListEdgeAppVersionsRequest.
+        r"""Gets the limit of this BatchListEdgeAppVersionsRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 
@@ -161,7 +161,7 @@ class BatchListEdgeAppVersionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchListEdgeAppVersionsRequest.
+        r"""Sets the limit of this BatchListEdgeAppVersionsRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 
@@ -172,7 +172,7 @@ class BatchListEdgeAppVersionsRequest:
 
     @property
     def ai_card_type(self):
-        """Gets the ai_card_type of this BatchListEdgeAppVersionsRequest.
+        r"""Gets the ai_card_type of this BatchListEdgeAppVersionsRequest.
 
         ai加速卡类型
 
@@ -183,7 +183,7 @@ class BatchListEdgeAppVersionsRequest:
 
     @ai_card_type.setter
     def ai_card_type(self, ai_card_type):
-        """Sets the ai_card_type of this BatchListEdgeAppVersionsRequest.
+        r"""Sets the ai_card_type of this BatchListEdgeAppVersionsRequest.
 
         ai加速卡类型
 
@@ -194,7 +194,7 @@ class BatchListEdgeAppVersionsRequest:
 
     @property
     def arch(self):
-        """Gets the arch of this BatchListEdgeAppVersionsRequest.
+        r"""Gets the arch of this BatchListEdgeAppVersionsRequest.
 
         支持架构
 
@@ -205,7 +205,7 @@ class BatchListEdgeAppVersionsRequest:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this BatchListEdgeAppVersionsRequest.
+        r"""Sets the arch of this BatchListEdgeAppVersionsRequest.
 
         支持架构
 
@@ -216,7 +216,7 @@ class BatchListEdgeAppVersionsRequest:
 
     @property
     def state(self):
-        """Gets the state of this BatchListEdgeAppVersionsRequest.
+        r"""Gets the state of this BatchListEdgeAppVersionsRequest.
 
         应用版本状态
 
@@ -227,7 +227,7 @@ class BatchListEdgeAppVersionsRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this BatchListEdgeAppVersionsRequest.
+        r"""Sets the state of this BatchListEdgeAppVersionsRequest.
 
         应用版本状态
 

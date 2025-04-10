@@ -29,7 +29,7 @@ class WordInfo:
     }
 
     def __init__(self, start_time=None, end_time=None, word=None):
-        """WordInfo
+        r"""WordInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class WordInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this WordInfo.
+        r"""Gets the start_time of this WordInfo.
 
         起始时间
 
@@ -68,7 +68,7 @@ class WordInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this WordInfo.
+        r"""Sets the start_time of this WordInfo.
 
         起始时间
 
@@ -79,7 +79,7 @@ class WordInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this WordInfo.
+        r"""Gets the end_time of this WordInfo.
 
         结束时间
 
@@ -90,7 +90,7 @@ class WordInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this WordInfo.
+        r"""Sets the end_time of this WordInfo.
 
         结束时间
 
@@ -101,7 +101,7 @@ class WordInfo:
 
     @property
     def word(self):
-        """Gets the word of this WordInfo.
+        r"""Gets the word of this WordInfo.
 
         分词
 
@@ -112,7 +112,7 @@ class WordInfo:
 
     @word.setter
     def word(self, word):
-        """Sets the word of this WordInfo.
+        r"""Sets the word of this WordInfo.
 
         分词
 

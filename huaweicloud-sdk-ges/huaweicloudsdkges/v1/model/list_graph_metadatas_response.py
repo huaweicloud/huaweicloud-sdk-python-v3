@@ -30,7 +30,7 @@ class ListGraphMetadatasResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, ges_metadata=None):
-        """ListGraphMetadatasResponse
+        r"""ListGraphMetadatasResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListGraphMetadatasResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ListGraphMetadatasResponse.
+        r"""Gets the error_message of this ListGraphMetadatasResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -69,7 +69,7 @@ class ListGraphMetadatasResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ListGraphMetadatasResponse.
+        r"""Sets the error_message of this ListGraphMetadatasResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -80,7 +80,7 @@ class ListGraphMetadatasResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListGraphMetadatasResponse.
+        r"""Gets the error_code of this ListGraphMetadatasResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -91,7 +91,7 @@ class ListGraphMetadatasResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListGraphMetadatasResponse.
+        r"""Sets the error_code of this ListGraphMetadatasResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -102,7 +102,7 @@ class ListGraphMetadatasResponse(SdkResponse):
 
     @property
     def ges_metadata(self):
-        """Gets the ges_metadata of this ListGraphMetadatasResponse.
+        r"""Gets the ges_metadata of this ListGraphMetadatasResponse.
 
         :return: The ges_metadata of this ListGraphMetadatasResponse.
         :rtype: :class:`huaweicloudsdkges.v1.GesMetaData`
@@ -111,7 +111,7 @@ class ListGraphMetadatasResponse(SdkResponse):
 
     @ges_metadata.setter
     def ges_metadata(self, ges_metadata):
-        """Sets the ges_metadata of this ListGraphMetadatasResponse.
+        r"""Sets the ges_metadata of this ListGraphMetadatasResponse.
 
         :param ges_metadata: The ges_metadata of this ListGraphMetadatasResponse.
         :type ges_metadata: :class:`huaweicloudsdkges.v1.GesMetaData`

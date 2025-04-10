@@ -27,7 +27,7 @@ class ListCheckpointRequest:
     }
 
     def __init__(self, data_job_id=None, eihealth_project_id=None):
-        """ListCheckpointRequest
+        r"""ListCheckpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListCheckpointRequest:
 
     @property
     def data_job_id(self):
-        """Gets the data_job_id of this ListCheckpointRequest.
+        r"""Gets the data_job_id of this ListCheckpointRequest.
 
         数据作业id
 
@@ -59,7 +59,7 @@ class ListCheckpointRequest:
 
     @data_job_id.setter
     def data_job_id(self, data_job_id):
-        """Sets the data_job_id of this ListCheckpointRequest.
+        r"""Sets the data_job_id of this ListCheckpointRequest.
 
         数据作业id
 
@@ -70,7 +70,7 @@ class ListCheckpointRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListCheckpointRequest.
+        r"""Gets the eihealth_project_id of this ListCheckpointRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -81,7 +81,7 @@ class ListCheckpointRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListCheckpointRequest.
+        r"""Sets the eihealth_project_id of this ListCheckpointRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 

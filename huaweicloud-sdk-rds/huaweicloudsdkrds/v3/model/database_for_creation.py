@@ -29,7 +29,7 @@ class DatabaseForCreation:
     }
 
     def __init__(self, name=None, character_set=None, comment=None):
-        """DatabaseForCreation
+        r"""DatabaseForCreation
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DatabaseForCreation:
 
     @property
     def name(self):
-        """Gets the name of this DatabaseForCreation.
+        r"""Gets the name of this DatabaseForCreation.
 
         数据库名称。 数据库名称长度可在1～64个字符之间，由字母、数字、中划线、下划线或$组成，$累计总长度小于等于10个字符，（MySQL 8.0不可包含$）。
 
@@ -66,7 +66,7 @@ class DatabaseForCreation:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatabaseForCreation.
+        r"""Sets the name of this DatabaseForCreation.
 
         数据库名称。 数据库名称长度可在1～64个字符之间，由字母、数字、中划线、下划线或$组成，$累计总长度小于等于10个字符，（MySQL 8.0不可包含$）。
 
@@ -77,7 +77,7 @@ class DatabaseForCreation:
 
     @property
     def character_set(self):
-        """Gets the character_set of this DatabaseForCreation.
+        r"""Gets the character_set of this DatabaseForCreation.
 
         数据库使用的字符集，例如utf8、gbk、ascii等MySQL支持的字符集。
 
@@ -88,7 +88,7 @@ class DatabaseForCreation:
 
     @character_set.setter
     def character_set(self, character_set):
-        """Sets the character_set of this DatabaseForCreation.
+        r"""Sets the character_set of this DatabaseForCreation.
 
         数据库使用的字符集，例如utf8、gbk、ascii等MySQL支持的字符集。
 
@@ -99,7 +99,7 @@ class DatabaseForCreation:
 
     @property
     def comment(self):
-        """Gets the comment of this DatabaseForCreation.
+        r"""Gets the comment of this DatabaseForCreation.
 
         数据库备注，最大长度512
 
@@ -110,7 +110,7 @@ class DatabaseForCreation:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this DatabaseForCreation.
+        r"""Sets the comment of this DatabaseForCreation.
 
         数据库备注，最大长度512
 

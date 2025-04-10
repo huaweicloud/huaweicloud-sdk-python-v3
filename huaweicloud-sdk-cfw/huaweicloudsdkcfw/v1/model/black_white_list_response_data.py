@@ -31,7 +31,7 @@ class BlackWhiteListResponseData:
     }
 
     def __init__(self, offset=None, limit=None, total=None, records=None):
-        """BlackWhiteListResponseData
+        r"""BlackWhiteListResponseData
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BlackWhiteListResponseData:
 
     @property
     def offset(self):
-        """Gets the offset of this BlackWhiteListResponseData.
+        r"""Gets the offset of this BlackWhiteListResponseData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -75,7 +75,7 @@ class BlackWhiteListResponseData:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BlackWhiteListResponseData.
+        r"""Sets the offset of this BlackWhiteListResponseData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -86,7 +86,7 @@ class BlackWhiteListResponseData:
 
     @property
     def limit(self):
-        """Gets the limit of this BlackWhiteListResponseData.
+        r"""Gets the limit of this BlackWhiteListResponseData.
 
         每页显示个数，范围为1-1024
 
@@ -97,7 +97,7 @@ class BlackWhiteListResponseData:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BlackWhiteListResponseData.
+        r"""Sets the limit of this BlackWhiteListResponseData.
 
         每页显示个数，范围为1-1024
 
@@ -108,7 +108,7 @@ class BlackWhiteListResponseData:
 
     @property
     def total(self):
-        """Gets the total of this BlackWhiteListResponseData.
+        r"""Gets the total of this BlackWhiteListResponseData.
 
         查询黑白名单总条数
 
@@ -119,7 +119,7 @@ class BlackWhiteListResponseData:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BlackWhiteListResponseData.
+        r"""Sets the total of this BlackWhiteListResponseData.
 
         查询黑白名单总条数
 
@@ -130,7 +130,7 @@ class BlackWhiteListResponseData:
 
     @property
     def records(self):
-        """Gets the records of this BlackWhiteListResponseData.
+        r"""Gets the records of this BlackWhiteListResponseData.
 
         黑白名单列表
 
@@ -141,7 +141,7 @@ class BlackWhiteListResponseData:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this BlackWhiteListResponseData.
+        r"""Sets the records of this BlackWhiteListResponseData.
 
         黑白名单列表
 

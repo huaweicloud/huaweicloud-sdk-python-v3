@@ -33,7 +33,7 @@ class JobNodeBaseInfo:
     }
 
     def __init__(self, instance_type=None, arch=None, availability_zone=None, status=None, role=None):
-        """JobNodeBaseInfo
+        r"""JobNodeBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class JobNodeBaseInfo:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this JobNodeBaseInfo.
+        r"""Gets the instance_type of this JobNodeBaseInfo.
 
         实例类型。取值： - single：单机。 - ha：主备。
 
@@ -79,7 +79,7 @@ class JobNodeBaseInfo:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this JobNodeBaseInfo.
+        r"""Sets the instance_type of this JobNodeBaseInfo.
 
         实例类型。取值： - single：单机。 - ha：主备。
 
@@ -90,7 +90,7 @@ class JobNodeBaseInfo:
 
     @property
     def arch(self):
-        """Gets the arch of this JobNodeBaseInfo.
+        r"""Gets the arch of this JobNodeBaseInfo.
 
         CPU架构。取值： - x86 - arm
 
@@ -101,7 +101,7 @@ class JobNodeBaseInfo:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this JobNodeBaseInfo.
+        r"""Sets the arch of this JobNodeBaseInfo.
 
         CPU架构。取值： - x86 - arm
 
@@ -112,7 +112,7 @@ class JobNodeBaseInfo:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this JobNodeBaseInfo.
+        r"""Gets the availability_zone of this JobNodeBaseInfo.
 
         可用区ID。 约束：对于任务实例类型不是单机的实例，需要分别为实例所有节点指定可用区，并用“,”英文逗号隔开。示例： - 实例类型为single：\"cn-north-4a\" - 实例类型为ha：\"cn-north-4a,cn-north-4b\"
 
@@ -123,7 +123,7 @@ class JobNodeBaseInfo:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this JobNodeBaseInfo.
+        r"""Sets the availability_zone of this JobNodeBaseInfo.
 
         可用区ID。 约束：对于任务实例类型不是单机的实例，需要分别为实例所有节点指定可用区，并用“,”英文逗号隔开。示例： - 实例类型为single：\"cn-north-4a\" - 实例类型为ha：\"cn-north-4a,cn-north-4b\"
 
@@ -134,7 +134,7 @@ class JobNodeBaseInfo:
 
     @property
     def status(self):
-        """Gets the status of this JobNodeBaseInfo.
+        r"""Gets the status of this JobNodeBaseInfo.
 
         状态。
 
@@ -145,7 +145,7 @@ class JobNodeBaseInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobNodeBaseInfo.
+        r"""Sets the status of this JobNodeBaseInfo.
 
         状态。
 
@@ -156,7 +156,7 @@ class JobNodeBaseInfo:
 
     @property
     def role(self):
-        """Gets the role of this JobNodeBaseInfo.
+        r"""Gets the role of this JobNodeBaseInfo.
 
         任务主备角色。
 
@@ -167,7 +167,7 @@ class JobNodeBaseInfo:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this JobNodeBaseInfo.
+        r"""Sets the role of this JobNodeBaseInfo.
 
         任务主备角色。
 

@@ -27,7 +27,7 @@ class VersionModelMasterIdsDTO:
     }
 
     def __init__(self, master_id=None, version=None):
-        """VersionModelMasterIdsDTO
+        r"""VersionModelMasterIdsDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class VersionModelMasterIdsDTO:
 
     @property
     def master_id(self):
-        """Gets the master_id of this VersionModelMasterIdsDTO.
+        r"""Gets the master_id of this VersionModelMasterIdsDTO.
 
         **参数解释：**  父模型ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -60,7 +60,7 @@ class VersionModelMasterIdsDTO:
 
     @master_id.setter
     def master_id(self, master_id):
-        """Sets the master_id of this VersionModelMasterIdsDTO.
+        r"""Sets the master_id of this VersionModelMasterIdsDTO.
 
         **参数解释：**  父模型ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -71,7 +71,7 @@ class VersionModelMasterIdsDTO:
 
     @property
     def version(self):
-        """Gets the version of this VersionModelMasterIdsDTO.
+        r"""Gets the version of this VersionModelMasterIdsDTO.
 
         **参数解释：**  版本对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -82,7 +82,7 @@ class VersionModelMasterIdsDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this VersionModelMasterIdsDTO.
+        r"""Sets the version of this VersionModelMasterIdsDTO.
 
         **参数解释：**  版本对象。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

@@ -26,7 +26,7 @@ class RebootCloudTableClusterResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """RebootCloudTableClusterResponse
+        r"""RebootCloudTableClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RebootCloudTableClusterResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this RebootCloudTableClusterResponse.
+        r"""Gets the body of this RebootCloudTableClusterResponse.
 
         :return: The body of this RebootCloudTableClusterResponse.
         :rtype: list[:class:`huaweicloudsdkcloudtable.v2.RestartInstanceRsp`]
@@ -53,7 +53,7 @@ class RebootCloudTableClusterResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RebootCloudTableClusterResponse.
+        r"""Sets the body of this RebootCloudTableClusterResponse.
 
         :param body: The body of this RebootCloudTableClusterResponse.
         :type body: list[:class:`huaweicloudsdkcloudtable.v2.RestartInstanceRsp`]

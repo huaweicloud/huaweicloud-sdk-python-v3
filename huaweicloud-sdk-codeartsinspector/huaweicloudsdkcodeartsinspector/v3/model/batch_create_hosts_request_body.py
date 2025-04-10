@@ -25,7 +25,7 @@ class BatchCreateHostsRequestBody:
     }
 
     def __init__(self, hosts=None):
-        """BatchCreateHostsRequestBody
+        r"""BatchCreateHostsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchCreateHostsRequestBody:
 
     @property
     def hosts(self):
-        """Gets the hosts of this BatchCreateHostsRequestBody.
+        r"""Gets the hosts of this BatchCreateHostsRequestBody.
 
         主机资产列表
 
@@ -53,7 +53,7 @@ class BatchCreateHostsRequestBody:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this BatchCreateHostsRequestBody.
+        r"""Sets the hosts of this BatchCreateHostsRequestBody.
 
         主机资产列表
 

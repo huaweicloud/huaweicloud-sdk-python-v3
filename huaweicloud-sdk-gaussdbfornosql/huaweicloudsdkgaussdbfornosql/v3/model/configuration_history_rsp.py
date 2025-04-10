@@ -37,7 +37,7 @@ class ConfigurationHistoryRsp:
     }
 
     def __init__(self, parameter_name=None, old_value=None, new_value=None, update_result=None, applied=None, updated_at=None, applied_at=None):
-        """ConfigurationHistoryRsp
+        r"""ConfigurationHistoryRsp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ConfigurationHistoryRsp:
 
     @property
     def parameter_name(self):
-        """Gets the parameter_name of this ConfigurationHistoryRsp.
+        r"""Gets the parameter_name of this ConfigurationHistoryRsp.
 
         参数名称。
 
@@ -89,7 +89,7 @@ class ConfigurationHistoryRsp:
 
     @parameter_name.setter
     def parameter_name(self, parameter_name):
-        """Sets the parameter_name of this ConfigurationHistoryRsp.
+        r"""Sets the parameter_name of this ConfigurationHistoryRsp.
 
         参数名称。
 
@@ -100,7 +100,7 @@ class ConfigurationHistoryRsp:
 
     @property
     def old_value(self):
-        """Gets the old_value of this ConfigurationHistoryRsp.
+        r"""Gets the old_value of this ConfigurationHistoryRsp.
 
         参数旧值
 
@@ -111,7 +111,7 @@ class ConfigurationHistoryRsp:
 
     @old_value.setter
     def old_value(self, old_value):
-        """Sets the old_value of this ConfigurationHistoryRsp.
+        r"""Sets the old_value of this ConfigurationHistoryRsp.
 
         参数旧值
 
@@ -122,7 +122,7 @@ class ConfigurationHistoryRsp:
 
     @property
     def new_value(self):
-        """Gets the new_value of this ConfigurationHistoryRsp.
+        r"""Gets the new_value of this ConfigurationHistoryRsp.
 
         参数新值
 
@@ -133,7 +133,7 @@ class ConfigurationHistoryRsp:
 
     @new_value.setter
     def new_value(self, new_value):
-        """Sets the new_value of this ConfigurationHistoryRsp.
+        r"""Sets the new_value of this ConfigurationHistoryRsp.
 
         参数新值
 
@@ -144,7 +144,7 @@ class ConfigurationHistoryRsp:
 
     @property
     def update_result(self):
-        """Gets the update_result of this ConfigurationHistoryRsp.
+        r"""Gets the update_result of this ConfigurationHistoryRsp.
 
         更新结果
 
@@ -155,7 +155,7 @@ class ConfigurationHistoryRsp:
 
     @update_result.setter
     def update_result(self, update_result):
-        """Sets the update_result of this ConfigurationHistoryRsp.
+        r"""Sets the update_result of this ConfigurationHistoryRsp.
 
         更新结果
 
@@ -166,7 +166,7 @@ class ConfigurationHistoryRsp:
 
     @property
     def applied(self):
-        """Gets the applied of this ConfigurationHistoryRsp.
+        r"""Gets the applied of this ConfigurationHistoryRsp.
 
         - true:已生效 - false:未生效
 
@@ -177,7 +177,7 @@ class ConfigurationHistoryRsp:
 
     @applied.setter
     def applied(self, applied):
-        """Sets the applied of this ConfigurationHistoryRsp.
+        r"""Sets the applied of this ConfigurationHistoryRsp.
 
         - true:已生效 - false:未生效
 
@@ -188,7 +188,7 @@ class ConfigurationHistoryRsp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ConfigurationHistoryRsp.
+        r"""Gets the updated_at of this ConfigurationHistoryRsp.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  [其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。](tag:hc)  [其中，T指某个时间的开始；Z指时区偏移量。](tag:hk)
 
@@ -199,7 +199,7 @@ class ConfigurationHistoryRsp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ConfigurationHistoryRsp.
+        r"""Sets the updated_at of this ConfigurationHistoryRsp.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  [其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。](tag:hc)  [其中，T指某个时间的开始；Z指时区偏移量。](tag:hk)
 
@@ -210,7 +210,7 @@ class ConfigurationHistoryRsp:
 
     @property
     def applied_at(self):
-        """Gets the applied_at of this ConfigurationHistoryRsp.
+        r"""Gets the applied_at of this ConfigurationHistoryRsp.
 
         生效时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  [其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。](tag:hc)  [其中，T指某个时间的开始；Z指时区偏移量。](tag:hk)
 
@@ -221,7 +221,7 @@ class ConfigurationHistoryRsp:
 
     @applied_at.setter
     def applied_at(self, applied_at):
-        """Sets the applied_at of this ConfigurationHistoryRsp.
+        r"""Sets the applied_at of this ConfigurationHistoryRsp.
 
         生效时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  [其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。](tag:hc)  [其中，T指某个时间的开始；Z指时区偏移量。](tag:hk)
 

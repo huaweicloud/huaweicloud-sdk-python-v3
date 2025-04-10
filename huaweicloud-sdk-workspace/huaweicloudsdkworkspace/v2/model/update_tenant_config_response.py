@@ -24,7 +24,7 @@ class UpdateTenantConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateTenantConfigResponse
+        r"""UpdateTenantConfigResponse
 
         The model defined in huaweicloud sdk
 

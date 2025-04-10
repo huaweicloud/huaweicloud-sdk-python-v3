@@ -27,7 +27,7 @@ class CreateArchiveRuleRequest:
     }
 
     def __init__(self, analyzer_id=None, body=None):
-        """CreateArchiveRuleRequest
+        r"""CreateArchiveRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateArchiveRuleRequest:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this CreateArchiveRuleRequest.
+        r"""Gets the analyzer_id of this CreateArchiveRuleRequest.
 
         分析器的唯一标识符。
 
@@ -60,7 +60,7 @@ class CreateArchiveRuleRequest:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this CreateArchiveRuleRequest.
+        r"""Sets the analyzer_id of this CreateArchiveRuleRequest.
 
         分析器的唯一标识符。
 
@@ -71,7 +71,7 @@ class CreateArchiveRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateArchiveRuleRequest.
+        r"""Gets the body of this CreateArchiveRuleRequest.
 
         :return: The body of this CreateArchiveRuleRequest.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.CreateArchiveRuleReqBody`
@@ -80,7 +80,7 @@ class CreateArchiveRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateArchiveRuleRequest.
+        r"""Sets the body of this CreateArchiveRuleRequest.
 
         :param body: The body of this CreateArchiveRuleRequest.
         :type body: :class:`huaweicloudsdkiamaccessanalyzer.v1.CreateArchiveRuleReqBody`

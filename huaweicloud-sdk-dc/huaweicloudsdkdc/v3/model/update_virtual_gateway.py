@@ -31,7 +31,7 @@ class UpdateVirtualGateway:
     }
 
     def __init__(self, name=None, description=None, local_ep_group=None, local_ep_group_ipv6=None):
-        """UpdateVirtualGateway
+        r"""UpdateVirtualGateway
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateVirtualGateway:
 
     @property
     def name(self):
-        """Gets the name of this UpdateVirtualGateway.
+        r"""Gets the name of this UpdateVirtualGateway.
 
         更新虚拟网关的名字
 
@@ -75,7 +75,7 @@ class UpdateVirtualGateway:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVirtualGateway.
+        r"""Sets the name of this UpdateVirtualGateway.
 
         更新虚拟网关的名字
 
@@ -86,7 +86,7 @@ class UpdateVirtualGateway:
 
     @property
     def description(self):
-        """Gets the description of this UpdateVirtualGateway.
+        r"""Gets the description of this UpdateVirtualGateway.
 
         虚拟网关的描述信息
 
@@ -97,7 +97,7 @@ class UpdateVirtualGateway:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateVirtualGateway.
+        r"""Sets the description of this UpdateVirtualGateway.
 
         虚拟网关的描述信息
 
@@ -108,7 +108,7 @@ class UpdateVirtualGateway:
 
     @property
     def local_ep_group(self):
-        """Gets the local_ep_group of this UpdateVirtualGateway.
+        r"""Gets the local_ep_group of this UpdateVirtualGateway.
 
         虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs[，当虚拟网关接入VPC时该列表才允许更新。](tag:dt)
 
@@ -119,7 +119,7 @@ class UpdateVirtualGateway:
 
     @local_ep_group.setter
     def local_ep_group(self, local_ep_group):
-        """Sets the local_ep_group of this UpdateVirtualGateway.
+        r"""Sets the local_ep_group of this UpdateVirtualGateway.
 
         虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs[，当虚拟网关接入VPC时该列表才允许更新。](tag:dt)
 
@@ -130,7 +130,7 @@ class UpdateVirtualGateway:
 
     @property
     def local_ep_group_ipv6(self):
-        """Gets the local_ep_group_ipv6 of this UpdateVirtualGateway.
+        r"""Gets the local_ep_group_ipv6 of this UpdateVirtualGateway.
 
         虚拟网关到访问云上服务IPv6子网列表，通常是vpc的cidrs。[（预留字段，暂不支持）](tag:dt)
 
@@ -141,7 +141,7 @@ class UpdateVirtualGateway:
 
     @local_ep_group_ipv6.setter
     def local_ep_group_ipv6(self, local_ep_group_ipv6):
-        """Sets the local_ep_group_ipv6 of this UpdateVirtualGateway.
+        r"""Sets the local_ep_group_ipv6 of this UpdateVirtualGateway.
 
         虚拟网关到访问云上服务IPv6子网列表，通常是vpc的cidrs。[（预留字段，暂不支持）](tag:dt)
 

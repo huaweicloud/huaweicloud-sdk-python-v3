@@ -31,7 +31,7 @@ class ModifyOttChannelEndPointsReq:
     }
 
     def __init__(self, domain=None, app_name=None, id=None, endpoints=None):
-        """ModifyOttChannelEndPointsReq
+        r"""ModifyOttChannelEndPointsReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ModifyOttChannelEndPointsReq:
 
     @property
     def domain(self):
-        """Gets the domain of this ModifyOttChannelEndPointsReq.
+        r"""Gets the domain of this ModifyOttChannelEndPointsReq.
 
         频道推流域名
 
@@ -72,7 +72,7 @@ class ModifyOttChannelEndPointsReq:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ModifyOttChannelEndPointsReq.
+        r"""Sets the domain of this ModifyOttChannelEndPointsReq.
 
         频道推流域名
 
@@ -83,7 +83,7 @@ class ModifyOttChannelEndPointsReq:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ModifyOttChannelEndPointsReq.
+        r"""Gets the app_name of this ModifyOttChannelEndPointsReq.
 
         组名或应用名
 
@@ -94,7 +94,7 @@ class ModifyOttChannelEndPointsReq:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ModifyOttChannelEndPointsReq.
+        r"""Sets the app_name of this ModifyOttChannelEndPointsReq.
 
         组名或应用名
 
@@ -105,7 +105,7 @@ class ModifyOttChannelEndPointsReq:
 
     @property
     def id(self):
-        """Gets the id of this ModifyOttChannelEndPointsReq.
+        r"""Gets the id of this ModifyOttChannelEndPointsReq.
 
         频道ID。频道唯一标识，为必填项
 
@@ -116,7 +116,7 @@ class ModifyOttChannelEndPointsReq:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyOttChannelEndPointsReq.
+        r"""Sets the id of this ModifyOttChannelEndPointsReq.
 
         频道ID。频道唯一标识，为必填项
 
@@ -127,7 +127,7 @@ class ModifyOttChannelEndPointsReq:
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this ModifyOttChannelEndPointsReq.
+        r"""Gets the endpoints of this ModifyOttChannelEndPointsReq.
 
         频道出流信息
 
@@ -138,7 +138,7 @@ class ModifyOttChannelEndPointsReq:
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this ModifyOttChannelEndPointsReq.
+        r"""Sets the endpoints of this ModifyOttChannelEndPointsReq.
 
         频道出流信息
 

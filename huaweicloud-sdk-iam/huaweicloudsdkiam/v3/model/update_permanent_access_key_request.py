@@ -27,7 +27,7 @@ class UpdatePermanentAccessKeyRequest:
     }
 
     def __init__(self, access_key=None, body=None):
-        """UpdatePermanentAccessKeyRequest
+        r"""UpdatePermanentAccessKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePermanentAccessKeyRequest:
 
     @property
     def access_key(self):
-        """Gets the access_key of this UpdatePermanentAccessKeyRequest.
+        r"""Gets the access_key of this UpdatePermanentAccessKeyRequest.
 
         待修改的指定AK。
 
@@ -60,7 +60,7 @@ class UpdatePermanentAccessKeyRequest:
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this UpdatePermanentAccessKeyRequest.
+        r"""Sets the access_key of this UpdatePermanentAccessKeyRequest.
 
         待修改的指定AK。
 
@@ -71,7 +71,7 @@ class UpdatePermanentAccessKeyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePermanentAccessKeyRequest.
+        r"""Gets the body of this UpdatePermanentAccessKeyRequest.
 
         :return: The body of this UpdatePermanentAccessKeyRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdatePermanentAccessKeyRequestBody`
@@ -80,7 +80,7 @@ class UpdatePermanentAccessKeyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePermanentAccessKeyRequest.
+        r"""Sets the body of this UpdatePermanentAccessKeyRequest.
 
         :param body: The body of this UpdatePermanentAccessKeyRequest.
         :type body: :class:`huaweicloudsdkiam.v3.UpdatePermanentAccessKeyRequestBody`

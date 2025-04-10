@@ -83,7 +83,7 @@ class CreateTestCaseReq:
     }
 
     def __init__(self, activity_id=None, add_to_plan=None, aw_cata_list=None, aw_instance=None, case_type=None, case_variable_list=None, demo_flag=None, error_step=None, id=None, import_info_list=None, is_key_word=None, is_sync=None, issue_id=None, name=None, old_tmss_case_uri=None, old_tmss_case_uri_list=None, package_name=None, plan_id=None, project_id=None, release_dev=None, script_name=None, script_path=None, source=None, source_way=None, src_tmss_case_uri=None, tmss_case_uri=None, tmss_feature_uri=None, tmss_property=None, type=None, variable_group_id=None):
-        """CreateTestCaseReq
+        r"""CreateTestCaseReq
 
         The model defined in huaweicloud sdk
 
@@ -246,7 +246,7 @@ class CreateTestCaseReq:
 
     @property
     def activity_id(self):
-        """Gets the activity_id of this CreateTestCaseReq.
+        r"""Gets the activity_id of this CreateTestCaseReq.
 
         活动id
 
@@ -257,7 +257,7 @@ class CreateTestCaseReq:
 
     @activity_id.setter
     def activity_id(self, activity_id):
-        """Sets the activity_id of this CreateTestCaseReq.
+        r"""Sets the activity_id of this CreateTestCaseReq.
 
         活动id
 
@@ -268,7 +268,7 @@ class CreateTestCaseReq:
 
     @property
     def add_to_plan(self):
-        """Gets the add_to_plan of this CreateTestCaseReq.
+        r"""Gets the add_to_plan of this CreateTestCaseReq.
 
         是否添加到计划
 
@@ -279,7 +279,7 @@ class CreateTestCaseReq:
 
     @add_to_plan.setter
     def add_to_plan(self, add_to_plan):
-        """Sets the add_to_plan of this CreateTestCaseReq.
+        r"""Sets the add_to_plan of this CreateTestCaseReq.
 
         是否添加到计划
 
@@ -290,7 +290,7 @@ class CreateTestCaseReq:
 
     @property
     def aw_cata_list(self):
-        """Gets the aw_cata_list of this CreateTestCaseReq.
+        r"""Gets the aw_cata_list of this CreateTestCaseReq.
 
         创建时可选择导入的aw目录直接产生测试步骤
 
@@ -301,7 +301,7 @@ class CreateTestCaseReq:
 
     @aw_cata_list.setter
     def aw_cata_list(self, aw_cata_list):
-        """Sets the aw_cata_list of this CreateTestCaseReq.
+        r"""Sets the aw_cata_list of this CreateTestCaseReq.
 
         创建时可选择导入的aw目录直接产生测试步骤
 
@@ -312,7 +312,7 @@ class CreateTestCaseReq:
 
     @property
     def aw_instance(self):
-        """Gets the aw_instance of this CreateTestCaseReq.
+        r"""Gets the aw_instance of this CreateTestCaseReq.
 
         :return: The aw_instance of this CreateTestCaseReq.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CaseAwInstance`
@@ -321,7 +321,7 @@ class CreateTestCaseReq:
 
     @aw_instance.setter
     def aw_instance(self, aw_instance):
-        """Sets the aw_instance of this CreateTestCaseReq.
+        r"""Sets the aw_instance of this CreateTestCaseReq.
 
         :param aw_instance: The aw_instance of this CreateTestCaseReq.
         :type aw_instance: :class:`huaweicloudsdkcloudtest.v1.CaseAwInstance`
@@ -330,7 +330,7 @@ class CreateTestCaseReq:
 
     @property
     def case_type(self):
-        """Gets the case_type of this CreateTestCaseReq.
+        r"""Gets the case_type of this CreateTestCaseReq.
 
         用例类型：0商用现有类型，1从内部导过来的用例类型
 
@@ -341,7 +341,7 @@ class CreateTestCaseReq:
 
     @case_type.setter
     def case_type(self, case_type):
-        """Sets the case_type of this CreateTestCaseReq.
+        r"""Sets the case_type of this CreateTestCaseReq.
 
         用例类型：0商用现有类型，1从内部导过来的用例类型
 
@@ -352,7 +352,7 @@ class CreateTestCaseReq:
 
     @property
     def case_variable_list(self):
-        """Gets the case_variable_list of this CreateTestCaseReq.
+        r"""Gets the case_variable_list of this CreateTestCaseReq.
 
         用例局部变量
 
@@ -363,7 +363,7 @@ class CreateTestCaseReq:
 
     @case_variable_list.setter
     def case_variable_list(self, case_variable_list):
-        """Sets the case_variable_list of this CreateTestCaseReq.
+        r"""Sets the case_variable_list of this CreateTestCaseReq.
 
         用例局部变量
 
@@ -374,7 +374,7 @@ class CreateTestCaseReq:
 
     @property
     def demo_flag(self):
-        """Gets the demo_flag of this CreateTestCaseReq.
+        r"""Gets the demo_flag of this CreateTestCaseReq.
 
         演示标志
 
@@ -385,7 +385,7 @@ class CreateTestCaseReq:
 
     @demo_flag.setter
     def demo_flag(self, demo_flag):
-        """Sets the demo_flag of this CreateTestCaseReq.
+        r"""Sets the demo_flag of this CreateTestCaseReq.
 
         演示标志
 
@@ -396,7 +396,7 @@ class CreateTestCaseReq:
 
     @property
     def error_step(self):
-        """Gets the error_step of this CreateTestCaseReq.
+        r"""Gets the error_step of this CreateTestCaseReq.
 
         错误测试阶段
 
@@ -407,7 +407,7 @@ class CreateTestCaseReq:
 
     @error_step.setter
     def error_step(self, error_step):
-        """Sets the error_step of this CreateTestCaseReq.
+        r"""Sets the error_step of this CreateTestCaseReq.
 
         错误测试阶段
 
@@ -418,7 +418,7 @@ class CreateTestCaseReq:
 
     @property
     def id(self):
-        """Gets the id of this CreateTestCaseReq.
+        r"""Gets the id of this CreateTestCaseReq.
 
         id
 
@@ -429,7 +429,7 @@ class CreateTestCaseReq:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateTestCaseReq.
+        r"""Sets the id of this CreateTestCaseReq.
 
         id
 
@@ -440,7 +440,7 @@ class CreateTestCaseReq:
 
     @property
     def import_info_list(self):
-        """Gets the import_info_list of this CreateTestCaseReq.
+        r"""Gets the import_info_list of this CreateTestCaseReq.
 
         import信息List
 
@@ -451,7 +451,7 @@ class CreateTestCaseReq:
 
     @import_info_list.setter
     def import_info_list(self, import_info_list):
-        """Sets the import_info_list of this CreateTestCaseReq.
+        r"""Sets the import_info_list of this CreateTestCaseReq.
 
         import信息List
 
@@ -462,7 +462,7 @@ class CreateTestCaseReq:
 
     @property
     def is_key_word(self):
-        """Gets the is_key_word of this CreateTestCaseReq.
+        r"""Gets the is_key_word of this CreateTestCaseReq.
 
         是否设置为关键字操作
 
@@ -473,7 +473,7 @@ class CreateTestCaseReq:
 
     @is_key_word.setter
     def is_key_word(self, is_key_word):
-        """Sets the is_key_word of this CreateTestCaseReq.
+        r"""Sets the is_key_word of this CreateTestCaseReq.
 
         是否设置为关键字操作
 
@@ -484,7 +484,7 @@ class CreateTestCaseReq:
 
     @property
     def is_sync(self):
-        """Gets the is_sync of this CreateTestCaseReq.
+        r"""Gets the is_sync of this CreateTestCaseReq.
 
         是否同步
 
@@ -495,7 +495,7 @@ class CreateTestCaseReq:
 
     @is_sync.setter
     def is_sync(self, is_sync):
-        """Sets the is_sync of this CreateTestCaseReq.
+        r"""Sets the is_sync of this CreateTestCaseReq.
 
         是否同步
 
@@ -506,7 +506,7 @@ class CreateTestCaseReq:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this CreateTestCaseReq.
+        r"""Gets the issue_id of this CreateTestCaseReq.
 
         问题ID
 
@@ -517,7 +517,7 @@ class CreateTestCaseReq:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this CreateTestCaseReq.
+        r"""Sets the issue_id of this CreateTestCaseReq.
 
         问题ID
 
@@ -528,7 +528,7 @@ class CreateTestCaseReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateTestCaseReq.
+        r"""Gets the name of this CreateTestCaseReq.
 
         名称
 
@@ -539,7 +539,7 @@ class CreateTestCaseReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTestCaseReq.
+        r"""Sets the name of this CreateTestCaseReq.
 
         名称
 
@@ -550,7 +550,7 @@ class CreateTestCaseReq:
 
     @property
     def old_tmss_case_uri(self):
-        """Gets the old_tmss_case_uri of this CreateTestCaseReq.
+        r"""Gets the old_tmss_case_uri of this CreateTestCaseReq.
 
         被复制用例的tmsscaseuri
 
@@ -561,7 +561,7 @@ class CreateTestCaseReq:
 
     @old_tmss_case_uri.setter
     def old_tmss_case_uri(self, old_tmss_case_uri):
-        """Sets the old_tmss_case_uri of this CreateTestCaseReq.
+        r"""Sets the old_tmss_case_uri of this CreateTestCaseReq.
 
         被复制用例的tmsscaseuri
 
@@ -572,7 +572,7 @@ class CreateTestCaseReq:
 
     @property
     def old_tmss_case_uri_list(self):
-        """Gets the old_tmss_case_uri_list of this CreateTestCaseReq.
+        r"""Gets the old_tmss_case_uri_list of this CreateTestCaseReq.
 
         被复制用例的tmsscaseuri列表，内部使用
 
@@ -583,7 +583,7 @@ class CreateTestCaseReq:
 
     @old_tmss_case_uri_list.setter
     def old_tmss_case_uri_list(self, old_tmss_case_uri_list):
-        """Sets the old_tmss_case_uri_list of this CreateTestCaseReq.
+        r"""Sets the old_tmss_case_uri_list of this CreateTestCaseReq.
 
         被复制用例的tmsscaseuri列表，内部使用
 
@@ -594,7 +594,7 @@ class CreateTestCaseReq:
 
     @property
     def package_name(self):
-        """Gets the package_name of this CreateTestCaseReq.
+        r"""Gets the package_name of this CreateTestCaseReq.
 
         包名
 
@@ -605,7 +605,7 @@ class CreateTestCaseReq:
 
     @package_name.setter
     def package_name(self, package_name):
-        """Sets the package_name of this CreateTestCaseReq.
+        r"""Sets the package_name of this CreateTestCaseReq.
 
         包名
 
@@ -616,7 +616,7 @@ class CreateTestCaseReq:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this CreateTestCaseReq.
+        r"""Gets the plan_id of this CreateTestCaseReq.
 
         计划ID
 
@@ -627,7 +627,7 @@ class CreateTestCaseReq:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this CreateTestCaseReq.
+        r"""Sets the plan_id of this CreateTestCaseReq.
 
         计划ID
 
@@ -638,7 +638,7 @@ class CreateTestCaseReq:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateTestCaseReq.
+        r"""Gets the project_id of this CreateTestCaseReq.
 
         工程ID
 
@@ -649,7 +649,7 @@ class CreateTestCaseReq:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateTestCaseReq.
+        r"""Sets the project_id of this CreateTestCaseReq.
 
         工程ID
 
@@ -660,7 +660,7 @@ class CreateTestCaseReq:
 
     @property
     def release_dev(self):
-        """Gets the release_dev of this CreateTestCaseReq.
+        r"""Gets the release_dev of this CreateTestCaseReq.
 
         新服务新建用例版本号
 
@@ -671,7 +671,7 @@ class CreateTestCaseReq:
 
     @release_dev.setter
     def release_dev(self, release_dev):
-        """Sets the release_dev of this CreateTestCaseReq.
+        r"""Sets the release_dev of this CreateTestCaseReq.
 
         新服务新建用例版本号
 
@@ -682,7 +682,7 @@ class CreateTestCaseReq:
 
     @property
     def script_name(self):
-        """Gets the script_name of this CreateTestCaseReq.
+        r"""Gets the script_name of this CreateTestCaseReq.
 
         脚本名(类名)
 
@@ -693,7 +693,7 @@ class CreateTestCaseReq:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this CreateTestCaseReq.
+        r"""Sets the script_name of this CreateTestCaseReq.
 
         脚本名(类名)
 
@@ -704,7 +704,7 @@ class CreateTestCaseReq:
 
     @property
     def script_path(self):
-        """Gets the script_path of this CreateTestCaseReq.
+        r"""Gets the script_path of this CreateTestCaseReq.
 
         脚本路径
 
@@ -715,7 +715,7 @@ class CreateTestCaseReq:
 
     @script_path.setter
     def script_path(self, script_path):
-        """Sets the script_path of this CreateTestCaseReq.
+        r"""Sets the script_path of this CreateTestCaseReq.
 
         脚本路径
 
@@ -726,7 +726,7 @@ class CreateTestCaseReq:
 
     @property
     def source(self):
-        """Gets the source of this CreateTestCaseReq.
+        r"""Gets the source of this CreateTestCaseReq.
 
         来源
 
@@ -737,7 +737,7 @@ class CreateTestCaseReq:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this CreateTestCaseReq.
+        r"""Sets the source of this CreateTestCaseReq.
 
         来源
 
@@ -748,7 +748,7 @@ class CreateTestCaseReq:
 
     @property
     def source_way(self):
-        """Gets the source_way of this CreateTestCaseReq.
+        r"""Gets the source_way of this CreateTestCaseReq.
 
         来源的方式
 
@@ -759,7 +759,7 @@ class CreateTestCaseReq:
 
     @source_way.setter
     def source_way(self, source_way):
-        """Sets the source_way of this CreateTestCaseReq.
+        r"""Sets the source_way of this CreateTestCaseReq.
 
         来源的方式
 
@@ -770,7 +770,7 @@ class CreateTestCaseReq:
 
     @property
     def src_tmss_case_uri(self):
-        """Gets the src_tmss_case_uri of this CreateTestCaseReq.
+        r"""Gets the src_tmss_case_uri of this CreateTestCaseReq.
 
         选择用例中测试步骤生成关键字时的原用例tmssCaseUri
 
@@ -781,7 +781,7 @@ class CreateTestCaseReq:
 
     @src_tmss_case_uri.setter
     def src_tmss_case_uri(self, src_tmss_case_uri):
-        """Sets the src_tmss_case_uri of this CreateTestCaseReq.
+        r"""Sets the src_tmss_case_uri of this CreateTestCaseReq.
 
         选择用例中测试步骤生成关键字时的原用例tmssCaseUri
 
@@ -792,7 +792,7 @@ class CreateTestCaseReq:
 
     @property
     def tmss_case_uri(self):
-        """Gets the tmss_case_uri of this CreateTestCaseReq.
+        r"""Gets the tmss_case_uri of this CreateTestCaseReq.
 
         tmss用例uri
 
@@ -803,7 +803,7 @@ class CreateTestCaseReq:
 
     @tmss_case_uri.setter
     def tmss_case_uri(self, tmss_case_uri):
-        """Sets the tmss_case_uri of this CreateTestCaseReq.
+        r"""Sets the tmss_case_uri of this CreateTestCaseReq.
 
         tmss用例uri
 
@@ -814,7 +814,7 @@ class CreateTestCaseReq:
 
     @property
     def tmss_feature_uri(self):
-        """Gets the tmss_feature_uri of this CreateTestCaseReq.
+        r"""Gets the tmss_feature_uri of this CreateTestCaseReq.
 
         tmss用例uri
 
@@ -825,7 +825,7 @@ class CreateTestCaseReq:
 
     @tmss_feature_uri.setter
     def tmss_feature_uri(self, tmss_feature_uri):
-        """Sets the tmss_feature_uri of this CreateTestCaseReq.
+        r"""Sets the tmss_feature_uri of this CreateTestCaseReq.
 
         tmss用例uri
 
@@ -836,7 +836,7 @@ class CreateTestCaseReq:
 
     @property
     def tmss_property(self):
-        """Gets the tmss_property of this CreateTestCaseReq.
+        r"""Gets the tmss_property of this CreateTestCaseReq.
 
         :return: The tmss_property of this CreateTestCaseReq.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TmssTestcase`
@@ -845,7 +845,7 @@ class CreateTestCaseReq:
 
     @tmss_property.setter
     def tmss_property(self, tmss_property):
-        """Sets the tmss_property of this CreateTestCaseReq.
+        r"""Sets the tmss_property of this CreateTestCaseReq.
 
         :param tmss_property: The tmss_property of this CreateTestCaseReq.
         :type tmss_property: :class:`huaweicloudsdkcloudtest.v1.TmssTestcase`
@@ -854,7 +854,7 @@ class CreateTestCaseReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateTestCaseReq.
+        r"""Gets the type of this CreateTestCaseReq.
 
         类型
 
@@ -865,7 +865,7 @@ class CreateTestCaseReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateTestCaseReq.
+        r"""Sets the type of this CreateTestCaseReq.
 
         类型
 
@@ -876,7 +876,7 @@ class CreateTestCaseReq:
 
     @property
     def variable_group_id(self):
-        """Gets the variable_group_id of this CreateTestCaseReq.
+        r"""Gets the variable_group_id of this CreateTestCaseReq.
 
         环境参数分组id
 
@@ -887,7 +887,7 @@ class CreateTestCaseReq:
 
     @variable_group_id.setter
     def variable_group_id(self, variable_group_id):
-        """Sets the variable_group_id of this CreateTestCaseReq.
+        r"""Sets the variable_group_id of this CreateTestCaseReq.
 
         环境参数分组id
 

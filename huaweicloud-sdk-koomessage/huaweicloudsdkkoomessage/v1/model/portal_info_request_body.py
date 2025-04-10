@@ -33,7 +33,7 @@ class PortalInfoRequestBody:
     }
 
     def __init__(self, background_img=None, summary=None, tels=None, fastapps=None, hw_pubs=None):
-        """PortalInfoRequestBody
+        r"""PortalInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class PortalInfoRequestBody:
 
     @property
     def background_img(self):
-        """Gets the background_img of this PortalInfoRequestBody.
+        r"""Gets the background_img of this PortalInfoRequestBody.
 
         主页背景图片资源ID。  > 分辨率大于等于1440*810，支持jpg、jpeg、bmp、png。参数值为上传智能信息服务号图片资源API返回的resource_id。 
 
@@ -80,7 +80,7 @@ class PortalInfoRequestBody:
 
     @background_img.setter
     def background_img(self, background_img):
-        """Sets the background_img of this PortalInfoRequestBody.
+        r"""Sets the background_img of this PortalInfoRequestBody.
 
         主页背景图片资源ID。  > 分辨率大于等于1440*810，支持jpg、jpeg、bmp、png。参数值为上传智能信息服务号图片资源API返回的resource_id。 
 
@@ -91,7 +91,7 @@ class PortalInfoRequestBody:
 
     @property
     def summary(self):
-        """Gets the summary of this PortalInfoRequestBody.
+        r"""Gets the summary of this PortalInfoRequestBody.
 
         简介。
 
@@ -102,7 +102,7 @@ class PortalInfoRequestBody:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this PortalInfoRequestBody.
+        r"""Sets the summary of this PortalInfoRequestBody.
 
         简介。
 
@@ -113,7 +113,7 @@ class PortalInfoRequestBody:
 
     @property
     def tels(self):
-        """Gets the tels of this PortalInfoRequestBody.
+        r"""Gets the tels of this PortalInfoRequestBody.
 
         热线号列表。
 
@@ -124,7 +124,7 @@ class PortalInfoRequestBody:
 
     @tels.setter
     def tels(self, tels):
-        """Sets the tels of this PortalInfoRequestBody.
+        r"""Sets the tels of this PortalInfoRequestBody.
 
         热线号列表。
 
@@ -135,7 +135,7 @@ class PortalInfoRequestBody:
 
     @property
     def fastapps(self):
-        """Gets the fastapps of this PortalInfoRequestBody.
+        r"""Gets the fastapps of this PortalInfoRequestBody.
 
         快应用列表。
 
@@ -146,7 +146,7 @@ class PortalInfoRequestBody:
 
     @fastapps.setter
     def fastapps(self, fastapps):
-        """Sets the fastapps of this PortalInfoRequestBody.
+        r"""Sets the fastapps of this PortalInfoRequestBody.
 
         快应用列表。
 
@@ -157,7 +157,7 @@ class PortalInfoRequestBody:
 
     @property
     def hw_pubs(self):
-        """Gets the hw_pubs of this PortalInfoRequestBody.
+        r"""Gets the hw_pubs of this PortalInfoRequestBody.
 
         华为服务号列表。  > 预留，暂未使用。 
 
@@ -168,7 +168,7 @@ class PortalInfoRequestBody:
 
     @hw_pubs.setter
     def hw_pubs(self, hw_pubs):
-        """Sets the hw_pubs of this PortalInfoRequestBody.
+        r"""Sets the hw_pubs of this PortalInfoRequestBody.
 
         华为服务号列表。  > 预留，暂未使用。 
 

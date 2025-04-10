@@ -27,7 +27,7 @@ class AddBridgeRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """AddBridgeRequest
+        r"""AddBridgeRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddBridgeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddBridgeRequest.
+        r"""Gets the instance_id of this AddBridgeRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，建议携带该参数，在使用专业版时必须携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID，具体获取方式请参考[[查看实例详情](https://support.huaweicloud.com/usermanual-iothub/iot_01_0079.html#section1)](tag:hws) [[查看实例详情](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0079.html#section1)](tag:hws_hk)。
 
@@ -61,7 +61,7 @@ class AddBridgeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddBridgeRequest.
+        r"""Sets the instance_id of this AddBridgeRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，建议携带该参数，在使用专业版时必须携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID，具体获取方式请参考[[查看实例详情](https://support.huaweicloud.com/usermanual-iothub/iot_01_0079.html#section1)](tag:hws) [[查看实例详情](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0079.html#section1)](tag:hws_hk)。
 
@@ -72,7 +72,7 @@ class AddBridgeRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddBridgeRequest.
+        r"""Gets the body of this AddBridgeRequest.
 
         :return: The body of this AddBridgeRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.AddBridge`
@@ -81,7 +81,7 @@ class AddBridgeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddBridgeRequest.
+        r"""Sets the body of this AddBridgeRequest.
 
         :param body: The body of this AddBridgeRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.AddBridge`

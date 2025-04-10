@@ -26,7 +26,7 @@ class ShowCertificateAuthorityQuotaResponse(SdkResponse):
     }
 
     def __init__(self, quotas=None):
-        """ShowCertificateAuthorityQuotaResponse
+        r"""ShowCertificateAuthorityQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowCertificateAuthorityQuotaResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ShowCertificateAuthorityQuotaResponse.
+        r"""Gets the quotas of this ShowCertificateAuthorityQuotaResponse.
 
         :return: The quotas of this ShowCertificateAuthorityQuotaResponse.
         :rtype: :class:`huaweicloudsdkccm.v1.Quotas`
@@ -53,7 +53,7 @@ class ShowCertificateAuthorityQuotaResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ShowCertificateAuthorityQuotaResponse.
+        r"""Sets the quotas of this ShowCertificateAuthorityQuotaResponse.
 
         :param quotas: The quotas of this ShowCertificateAuthorityQuotaResponse.
         :type quotas: :class:`huaweicloudsdkccm.v1.Quotas`

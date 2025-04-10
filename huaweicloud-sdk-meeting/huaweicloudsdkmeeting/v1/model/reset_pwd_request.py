@@ -29,7 +29,7 @@ class ResetPwdRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, body=None):
-        """ResetPwdRequest
+        r"""ResetPwdRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ResetPwdRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ResetPwdRequest.
+        r"""Gets the x_request_id of this ResetPwdRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -68,7 +68,7 @@ class ResetPwdRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ResetPwdRequest.
+        r"""Sets the x_request_id of this ResetPwdRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -79,7 +79,7 @@ class ResetPwdRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this ResetPwdRequest.
+        r"""Gets the accept_language of this ResetPwdRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -90,7 +90,7 @@ class ResetPwdRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this ResetPwdRequest.
+        r"""Sets the accept_language of this ResetPwdRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -101,7 +101,7 @@ class ResetPwdRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetPwdRequest.
+        r"""Gets the body of this ResetPwdRequest.
 
         :return: The body of this ResetPwdRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResetPwdReqDTOV1`
@@ -110,7 +110,7 @@ class ResetPwdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetPwdRequest.
+        r"""Sets the body of this ResetPwdRequest.
 
         :param body: The body of this ResetPwdRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.ResetPwdReqDTOV1`

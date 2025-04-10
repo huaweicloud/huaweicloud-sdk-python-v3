@@ -39,7 +39,7 @@ class ListEndpointsRequest:
     }
 
     def __init__(self, offset=None, limit=None, sort=None, type=None, name=None, vpc_id=None, fuzzy_name=None, subnet_id=None):
-        """ListEndpointsRequest
+        r"""ListEndpointsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListEndpointsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEndpointsRequest.
+        r"""Gets the offset of this ListEndpointsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -103,7 +103,7 @@ class ListEndpointsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEndpointsRequest.
+        r"""Sets the offset of this ListEndpointsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -114,7 +114,7 @@ class ListEndpointsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEndpointsRequest.
+        r"""Gets the limit of this ListEndpointsRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -125,7 +125,7 @@ class ListEndpointsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEndpointsRequest.
+        r"""Sets the limit of this ListEndpointsRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -136,7 +136,7 @@ class ListEndpointsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListEndpointsRequest.
+        r"""Gets the sort of this ListEndpointsRequest.
 
         指定查询排序
 
@@ -147,7 +147,7 @@ class ListEndpointsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListEndpointsRequest.
+        r"""Sets the sort of this ListEndpointsRequest.
 
         指定查询排序
 
@@ -158,7 +158,7 @@ class ListEndpointsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListEndpointsRequest.
+        r"""Gets the type of this ListEndpointsRequest.
 
         指定查询访问端点的类型
 
@@ -169,7 +169,7 @@ class ListEndpointsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListEndpointsRequest.
+        r"""Sets the type of this ListEndpointsRequest.
 
         指定查询访问端点的类型
 
@@ -180,7 +180,7 @@ class ListEndpointsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListEndpointsRequest.
+        r"""Gets the name of this ListEndpointsRequest.
 
         指定查询访问端点的名称
 
@@ -191,7 +191,7 @@ class ListEndpointsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListEndpointsRequest.
+        r"""Sets the name of this ListEndpointsRequest.
 
         指定查询访问端点的名称
 
@@ -202,7 +202,7 @@ class ListEndpointsRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListEndpointsRequest.
+        r"""Gets the vpc_id of this ListEndpointsRequest.
 
         指定查询访问端点的vpcId
 
@@ -213,7 +213,7 @@ class ListEndpointsRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListEndpointsRequest.
+        r"""Sets the vpc_id of this ListEndpointsRequest.
 
         指定查询访问端点的vpcId
 
@@ -224,7 +224,7 @@ class ListEndpointsRequest:
 
     @property
     def fuzzy_name(self):
-        """Gets the fuzzy_name of this ListEndpointsRequest.
+        r"""Gets the fuzzy_name of this ListEndpointsRequest.
 
         指定查询访问端点的名称,模糊查询
 
@@ -235,7 +235,7 @@ class ListEndpointsRequest:
 
     @fuzzy_name.setter
     def fuzzy_name(self, fuzzy_name):
-        """Sets the fuzzy_name of this ListEndpointsRequest.
+        r"""Sets the fuzzy_name of this ListEndpointsRequest.
 
         指定查询访问端点的名称,模糊查询
 
@@ -246,7 +246,7 @@ class ListEndpointsRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListEndpointsRequest.
+        r"""Gets the subnet_id of this ListEndpointsRequest.
 
         指定查询访问端点的SubnetId
 
@@ -257,7 +257,7 @@ class ListEndpointsRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListEndpointsRequest.
+        r"""Sets the subnet_id of this ListEndpointsRequest.
 
         指定查询访问端点的SubnetId
 

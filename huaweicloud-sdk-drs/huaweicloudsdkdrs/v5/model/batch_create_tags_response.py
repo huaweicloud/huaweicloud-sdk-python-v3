@@ -26,7 +26,7 @@ class BatchCreateTagsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchCreateTagsResponse
+        r"""BatchCreateTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchCreateTagsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateTagsResponse.
+        r"""Gets the body of this BatchCreateTagsResponse.
 
         空响应体。
 
@@ -55,7 +55,7 @@ class BatchCreateTagsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateTagsResponse.
+        r"""Sets the body of this BatchCreateTagsResponse.
 
         空响应体。
 

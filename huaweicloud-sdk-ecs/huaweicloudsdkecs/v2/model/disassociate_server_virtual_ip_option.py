@@ -29,7 +29,7 @@ class DisassociateServerVirtualIpOption:
     }
 
     def __init__(self, subnet_id=None, ip_address=None, reverse_binding=None):
-        """DisassociateServerVirtualIpOption
+        r"""DisassociateServerVirtualIpOption
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DisassociateServerVirtualIpOption:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this DisassociateServerVirtualIpOption.
+        r"""Gets the subnet_id of this DisassociateServerVirtualIpOption.
 
         云服务器添加网卡的信息。  约束：解绑虚拟IP时，subnet_id为空字符串
 
@@ -66,7 +66,7 @@ class DisassociateServerVirtualIpOption:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this DisassociateServerVirtualIpOption.
+        r"""Sets the subnet_id of this DisassociateServerVirtualIpOption.
 
         云服务器添加网卡的信息。  约束：解绑虚拟IP时，subnet_id为空字符串
 
@@ -77,7 +77,7 @@ class DisassociateServerVirtualIpOption:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this DisassociateServerVirtualIpOption.
+        r"""Gets the ip_address of this DisassociateServerVirtualIpOption.
 
         网卡即将配置的虚拟IP的地址。  约束：解绑虚拟IP时，ip_address为空字符串
 
@@ -88,7 +88,7 @@ class DisassociateServerVirtualIpOption:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this DisassociateServerVirtualIpOption.
+        r"""Sets the ip_address of this DisassociateServerVirtualIpOption.
 
         网卡即将配置的虚拟IP的地址。  约束：解绑虚拟IP时，ip_address为空字符串
 
@@ -99,7 +99,7 @@ class DisassociateServerVirtualIpOption:
 
     @property
     def reverse_binding(self):
-        """Gets the reverse_binding of this DisassociateServerVirtualIpOption.
+        r"""Gets the reverse_binding of this DisassociateServerVirtualIpOption.
 
         虚拟IP的allowed_address_pairs属性是否添加网卡的IP/Mac对。
 
@@ -110,7 +110,7 @@ class DisassociateServerVirtualIpOption:
 
     @reverse_binding.setter
     def reverse_binding(self, reverse_binding):
-        """Sets the reverse_binding of this DisassociateServerVirtualIpOption.
+        r"""Sets the reverse_binding of this DisassociateServerVirtualIpOption.
 
         虚拟IP的allowed_address_pairs属性是否添加网卡的IP/Mac对。
 

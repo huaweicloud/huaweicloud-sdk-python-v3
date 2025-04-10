@@ -27,7 +27,7 @@ class GetPropertyRequest:
     }
 
     def __init__(self, tags=None, property_names=None):
-        """GetPropertyRequest
+        r"""GetPropertyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class GetPropertyRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this GetPropertyRequest.
+        r"""Gets the tags of this GetPropertyRequest.
 
         对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\"deviceId\": \"id0001\"}
 
@@ -60,7 +60,7 @@ class GetPropertyRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this GetPropertyRequest.
+        r"""Sets the tags of this GetPropertyRequest.
 
         对property按指定tags标签进行过滤查询，填入设备标签与标签值，不可为空，例如 {\"deviceId\": \"id0001\"}
 
@@ -71,7 +71,7 @@ class GetPropertyRequest:
 
     @property
     def property_names(self):
-        """Gets the property_names of this GetPropertyRequest.
+        r"""Gets the property_names of this GetPropertyRequest.
 
         查询设备的属性名称
 
@@ -82,7 +82,7 @@ class GetPropertyRequest:
 
     @property_names.setter
     def property_names(self, property_names):
-        """Sets the property_names of this GetPropertyRequest.
+        r"""Sets the property_names of this GetPropertyRequest.
 
         查询设备的属性名称
 

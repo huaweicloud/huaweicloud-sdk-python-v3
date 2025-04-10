@@ -27,7 +27,7 @@ class CreateBindingGeipRequestBody:
     }
 
     def __init__(self, gcb_id=None, global_eips=None):
-        """CreateBindingGeipRequestBody
+        r"""CreateBindingGeipRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateBindingGeipRequestBody:
 
     @property
     def gcb_id(self):
-        """Gets the gcb_id of this CreateBindingGeipRequestBody.
+        r"""Gets the gcb_id of this CreateBindingGeipRequestBody.
 
         带宽包id
 
@@ -61,7 +61,7 @@ class CreateBindingGeipRequestBody:
 
     @gcb_id.setter
     def gcb_id(self, gcb_id):
-        """Sets the gcb_id of this CreateBindingGeipRequestBody.
+        r"""Sets the gcb_id of this CreateBindingGeipRequestBody.
 
         带宽包id
 
@@ -72,7 +72,7 @@ class CreateBindingGeipRequestBody:
 
     @property
     def global_eips(self):
-        """Gets the global_eips of this CreateBindingGeipRequestBody.
+        r"""Gets the global_eips of this CreateBindingGeipRequestBody.
 
         :return: The global_eips of this CreateBindingGeipRequestBody.
         :rtype: list[:class:`huaweicloudsdkdc.v3.BindingGeipBody`]
@@ -81,7 +81,7 @@ class CreateBindingGeipRequestBody:
 
     @global_eips.setter
     def global_eips(self, global_eips):
-        """Sets the global_eips of this CreateBindingGeipRequestBody.
+        r"""Sets the global_eips of this CreateBindingGeipRequestBody.
 
         :param global_eips: The global_eips of this CreateBindingGeipRequestBody.
         :type global_eips: list[:class:`huaweicloudsdkdc.v3.BindingGeipBody`]

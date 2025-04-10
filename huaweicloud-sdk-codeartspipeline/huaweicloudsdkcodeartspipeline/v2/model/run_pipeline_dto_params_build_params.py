@@ -31,7 +31,7 @@ class RunPipelineDTOParamsBuildParams:
     }
 
     def __init__(self, build_type=None, target_branch=None, tag=None, event_type=None):
-        """RunPipelineDTOParamsBuildParams
+        r"""RunPipelineDTOParamsBuildParams
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class RunPipelineDTOParamsBuildParams:
 
     @property
     def build_type(self):
-        """Gets the build_type of this RunPipelineDTOParamsBuildParams.
+        r"""Gets the build_type of this RunPipelineDTOParamsBuildParams.
 
         分支还是tag触发
 
@@ -74,7 +74,7 @@ class RunPipelineDTOParamsBuildParams:
 
     @build_type.setter
     def build_type(self, build_type):
-        """Sets the build_type of this RunPipelineDTOParamsBuildParams.
+        r"""Sets the build_type of this RunPipelineDTOParamsBuildParams.
 
         分支还是tag触发
 
@@ -85,7 +85,7 @@ class RunPipelineDTOParamsBuildParams:
 
     @property
     def target_branch(self):
-        """Gets the target_branch of this RunPipelineDTOParamsBuildParams.
+        r"""Gets the target_branch of this RunPipelineDTOParamsBuildParams.
 
         运行分支
 
@@ -96,7 +96,7 @@ class RunPipelineDTOParamsBuildParams:
 
     @target_branch.setter
     def target_branch(self, target_branch):
-        """Sets the target_branch of this RunPipelineDTOParamsBuildParams.
+        r"""Sets the target_branch of this RunPipelineDTOParamsBuildParams.
 
         运行分支
 
@@ -107,7 +107,7 @@ class RunPipelineDTOParamsBuildParams:
 
     @property
     def tag(self):
-        """Gets the tag of this RunPipelineDTOParamsBuildParams.
+        r"""Gets the tag of this RunPipelineDTOParamsBuildParams.
 
         运行tag
 
@@ -118,7 +118,7 @@ class RunPipelineDTOParamsBuildParams:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this RunPipelineDTOParamsBuildParams.
+        r"""Sets the tag of this RunPipelineDTOParamsBuildParams.
 
         运行tag
 
@@ -129,7 +129,7 @@ class RunPipelineDTOParamsBuildParams:
 
     @property
     def event_type(self):
-        """Gets the event_type of this RunPipelineDTOParamsBuildParams.
+        r"""Gets the event_type of this RunPipelineDTOParamsBuildParams.
 
         触发事件类型
 
@@ -140,7 +140,7 @@ class RunPipelineDTOParamsBuildParams:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this RunPipelineDTOParamsBuildParams.
+        r"""Sets the event_type of this RunPipelineDTOParamsBuildParams.
 
         触发事件类型
 

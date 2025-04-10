@@ -24,7 +24,7 @@ class ExecuteTaskActionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ExecuteTaskActionResponse
+        r"""ExecuteTaskActionResponse
 
         The model defined in huaweicloud sdk
 

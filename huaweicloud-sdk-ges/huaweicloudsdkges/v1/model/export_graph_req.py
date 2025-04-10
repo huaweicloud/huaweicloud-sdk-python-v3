@@ -31,7 +31,7 @@ class ExportGraphReq:
     }
 
     def __init__(self, graph_export_path=None, edge_set_name=None, vertex_set_name=None, schema_name=None):
-        """ExportGraphReq
+        r"""ExportGraphReq
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ExportGraphReq:
 
     @property
     def graph_export_path(self):
-        """Gets the graph_export_path of this ExportGraphReq.
+        r"""Gets the graph_export_path of this ExportGraphReq.
 
         图的导出OBS路径。
 
@@ -71,7 +71,7 @@ class ExportGraphReq:
 
     @graph_export_path.setter
     def graph_export_path(self, graph_export_path):
-        """Sets the graph_export_path of this ExportGraphReq.
+        r"""Sets the graph_export_path of this ExportGraphReq.
 
         图的导出OBS路径。
 
@@ -82,7 +82,7 @@ class ExportGraphReq:
 
     @property
     def edge_set_name(self):
-        """Gets the edge_set_name of this ExportGraphReq.
+        r"""Gets the edge_set_name of this ExportGraphReq.
 
         导出边文件名。
 
@@ -93,7 +93,7 @@ class ExportGraphReq:
 
     @edge_set_name.setter
     def edge_set_name(self, edge_set_name):
-        """Sets the edge_set_name of this ExportGraphReq.
+        r"""Sets the edge_set_name of this ExportGraphReq.
 
         导出边文件名。
 
@@ -104,7 +104,7 @@ class ExportGraphReq:
 
     @property
     def vertex_set_name(self):
-        """Gets the vertex_set_name of this ExportGraphReq.
+        r"""Gets the vertex_set_name of this ExportGraphReq.
 
         导出点文件名。
 
@@ -115,7 +115,7 @@ class ExportGraphReq:
 
     @vertex_set_name.setter
     def vertex_set_name(self, vertex_set_name):
-        """Sets the vertex_set_name of this ExportGraphReq.
+        r"""Sets the vertex_set_name of this ExportGraphReq.
 
         导出点文件名。
 
@@ -126,7 +126,7 @@ class ExportGraphReq:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this ExportGraphReq.
+        r"""Gets the schema_name of this ExportGraphReq.
 
         导出元数据文件名。
 
@@ -137,7 +137,7 @@ class ExportGraphReq:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this ExportGraphReq.
+        r"""Sets the schema_name of this ExportGraphReq.
 
         导出元数据文件名。
 

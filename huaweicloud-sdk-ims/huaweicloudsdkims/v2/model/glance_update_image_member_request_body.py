@@ -27,7 +27,7 @@ class GlanceUpdateImageMemberRequestBody:
     }
 
     def __init__(self, status=None, vault_id=None):
-        """GlanceUpdateImageMemberRequestBody
+        r"""GlanceUpdateImageMemberRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class GlanceUpdateImageMemberRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this GlanceUpdateImageMemberRequestBody.
+        r"""Gets the status of this GlanceUpdateImageMemberRequestBody.
 
         镜像成员的状态。 取值如下： accepted：表示接受共享镜像。接受后，该镜像在用户镜像列表中可见，用户可以使用该镜像创建云服务器。 rejected：表示拒绝共享镜像。拒绝后，该镜像在用户镜像列表中不可见，但是，用户仍然可以使用该镜像创建云服务器。
 
@@ -60,7 +60,7 @@ class GlanceUpdateImageMemberRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GlanceUpdateImageMemberRequestBody.
+        r"""Sets the status of this GlanceUpdateImageMemberRequestBody.
 
         镜像成员的状态。 取值如下： accepted：表示接受共享镜像。接受后，该镜像在用户镜像列表中可见，用户可以使用该镜像创建云服务器。 rejected：表示拒绝共享镜像。拒绝后，该镜像在用户镜像列表中不可见，但是，用户仍然可以使用该镜像创建云服务器。
 
@@ -71,7 +71,7 @@ class GlanceUpdateImageMemberRequestBody:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this GlanceUpdateImageMemberRequestBody.
+        r"""Gets the vault_id of this GlanceUpdateImageMemberRequestBody.
 
         存储库ID。 如果是CBR创建的整机镜像，则在接受该共享镜像时，为必选参数，需传入该值。 存储库ID可以从云备份服务控制台获取，或者参考《云备份接口参考》的“查询存储库列表”章节查询。
 
@@ -82,7 +82,7 @@ class GlanceUpdateImageMemberRequestBody:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this GlanceUpdateImageMemberRequestBody.
+        r"""Sets the vault_id of this GlanceUpdateImageMemberRequestBody.
 
         存储库ID。 如果是CBR创建的整机镜像，则在接受该共享镜像时，为必选参数，需传入该值。 存储库ID可以从云备份服务控制台获取，或者参考《云备份接口参考》的“查询存储库列表”章节查询。
 

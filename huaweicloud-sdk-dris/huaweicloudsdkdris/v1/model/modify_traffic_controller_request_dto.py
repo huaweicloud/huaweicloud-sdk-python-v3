@@ -41,7 +41,7 @@ class ModifyTrafficControllerRequestDTO:
     }
 
     def __init__(self, name=None, description=None, lat=None, lon=None, ele=None, pos_description=None, installation_mode=None, road_name=None, link_id=None):
-        """ModifyTrafficControllerRequestDTO
+        r"""ModifyTrafficControllerRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @property
     def name(self):
-        """Gets the name of this ModifyTrafficControllerRequestDTO.
+        r"""Gets the name of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：名称。  **取值范围**：长度不超过128，只允许汉字、字母、数字、以及_-等字符的组合。 
 
@@ -110,7 +110,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyTrafficControllerRequestDTO.
+        r"""Sets the name of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：名称。  **取值范围**：长度不超过128，只允许汉字、字母、数字、以及_-等字符的组合。 
 
@@ -121,7 +121,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @property
     def description(self):
-        """Gets the description of this ModifyTrafficControllerRequestDTO.
+        r"""Gets the description of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：描述
 
@@ -132,7 +132,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModifyTrafficControllerRequestDTO.
+        r"""Sets the description of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：描述
 
@@ -143,7 +143,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @property
     def lat(self):
-        """Gets the lat of this ModifyTrafficControllerRequestDTO.
+        r"""Gets the lat of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：定义纬度数值，北纬为正，南纬为负，单位°，精度小数点后7位。
 
@@ -154,7 +154,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @lat.setter
     def lat(self, lat):
-        """Sets the lat of this ModifyTrafficControllerRequestDTO.
+        r"""Sets the lat of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：定义纬度数值，北纬为正，南纬为负，单位°，精度小数点后7位。
 
@@ -165,7 +165,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @property
     def lon(self):
-        """Gets the lon of this ModifyTrafficControllerRequestDTO.
+        r"""Gets the lon of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：定义经度数值。东经为正，西经为负，单位°，精度小数点后7位。
 
@@ -176,7 +176,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @lon.setter
     def lon(self, lon):
-        """Sets the lon of this ModifyTrafficControllerRequestDTO.
+        r"""Sets the lon of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：定义经度数值。东经为正，西经为负，单位°，精度小数点后7位。
 
@@ -187,7 +187,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @property
     def ele(self):
-        """Gets the ele of this ModifyTrafficControllerRequestDTO.
+        r"""Gets the ele of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：定义海拔高程，可选，单位为分米。
 
@@ -198,7 +198,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @ele.setter
     def ele(self, ele):
-        """Sets the ele of this ModifyTrafficControllerRequestDTO.
+        r"""Sets the ele of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：定义海拔高程，可选，单位为分米。
 
@@ -209,7 +209,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @property
     def pos_description(self):
-        """Gets the pos_description of this ModifyTrafficControllerRequestDTO.
+        r"""Gets the pos_description of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：位置说明。  **取值范围**：长度不超过128，只允许字母、数字、以及_等字符的组合。 
 
@@ -220,7 +220,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @pos_description.setter
     def pos_description(self, pos_description):
-        """Sets the pos_description of this ModifyTrafficControllerRequestDTO.
+        r"""Sets the pos_description of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：位置说明。  **取值范围**：长度不超过128，只允许字母、数字、以及_等字符的组合。 
 
@@ -231,7 +231,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @property
     def installation_mode(self):
-        """Gets the installation_mode of this ModifyTrafficControllerRequestDTO.
+        r"""Gets the installation_mode of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：架设方式。  **取值范围**： - columnar：柱式 - road-side-attach：路侧附着式 - cantilever：悬臂式 - gantry：门架式 - lane-above-attach：车行道上方附着式\" 
 
@@ -242,7 +242,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @installation_mode.setter
     def installation_mode(self, installation_mode):
-        """Sets the installation_mode of this ModifyTrafficControllerRequestDTO.
+        r"""Sets the installation_mode of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：架设方式。  **取值范围**： - columnar：柱式 - road-side-attach：路侧附着式 - cantilever：悬臂式 - gantry：门架式 - lane-above-attach：车行道上方附着式\" 
 
@@ -253,7 +253,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @property
     def road_name(self):
-        """Gets the road_name of this ModifyTrafficControllerRequestDTO.
+        r"""Gets the road_name of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：所属道路名称，比如高速名称。  **取值范围**：长度不超过64，只允许汉字、字母、数字、以及_-等字符的组合。 
 
@@ -264,7 +264,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @road_name.setter
     def road_name(self, road_name):
-        """Sets the road_name of this ModifyTrafficControllerRequestDTO.
+        r"""Sets the road_name of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：所属道路名称，比如高速名称。  **取值范围**：长度不超过64，只允许汉字、字母、数字、以及_-等字符的组合。 
 
@@ -275,7 +275,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @property
     def link_id(self):
-        """Gets the link_id of this ModifyTrafficControllerRequestDTO.
+        r"""Gets the link_id of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：信号机设备所属路段ID。  **取值范围**：长度等于30，只允许大写字母、数字。 
 
@@ -286,7 +286,7 @@ class ModifyTrafficControllerRequestDTO:
 
     @link_id.setter
     def link_id(self, link_id):
-        """Sets the link_id of this ModifyTrafficControllerRequestDTO.
+        r"""Sets the link_id of this ModifyTrafficControllerRequestDTO.
 
         **参数说明**：信号机设备所属路段ID。  **取值范围**：长度等于30，只允许大写字母、数字。 
 

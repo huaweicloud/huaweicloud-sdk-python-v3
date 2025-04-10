@@ -27,7 +27,7 @@ class SwitchSlowlogDesensitizationRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SwitchSlowlogDesensitizationRequest
+        r"""SwitchSlowlogDesensitizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SwitchSlowlogDesensitizationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchSlowlogDesensitizationRequest.
+        r"""Gets the instance_id of this SwitchSlowlogDesensitizationRequest.
 
         实例ID，可以调用5.3.3 查询实例列表和详情接口获取。如果未申请实例，可以调用5.3.1 创建实例接口创建。
 
@@ -60,7 +60,7 @@ class SwitchSlowlogDesensitizationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchSlowlogDesensitizationRequest.
+        r"""Sets the instance_id of this SwitchSlowlogDesensitizationRequest.
 
         实例ID，可以调用5.3.3 查询实例列表和详情接口获取。如果未申请实例，可以调用5.3.1 创建实例接口创建。
 
@@ -71,7 +71,7 @@ class SwitchSlowlogDesensitizationRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchSlowlogDesensitizationRequest.
+        r"""Gets the body of this SwitchSlowlogDesensitizationRequest.
 
         :return: The body of this SwitchSlowlogDesensitizationRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchSlowlogDesensitizationRequestBody`
@@ -80,7 +80,7 @@ class SwitchSlowlogDesensitizationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchSlowlogDesensitizationRequest.
+        r"""Sets the body of this SwitchSlowlogDesensitizationRequest.
 
         :param body: The body of this SwitchSlowlogDesensitizationRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchSlowlogDesensitizationRequestBody`

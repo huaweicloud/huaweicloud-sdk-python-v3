@@ -41,7 +41,7 @@ class Schedule:
     }
 
     def __init__(self, start_time=None, end_time=None, cron_expression=None, computing_resource_id=None, enable=None, conf=None, schedule_status=None, next_fire_time=None, prev_fire_time=None):
-        """Schedule
+        r"""Schedule
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class Schedule:
 
     @property
     def start_time(self):
-        """Gets the start_time of this Schedule.
+        r"""Gets the start_time of this Schedule.
 
         调度开始时间。时间格式为ISO时区日期时间。例如2021-03-03T10:15:30+08:00
 
@@ -105,7 +105,7 @@ class Schedule:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this Schedule.
+        r"""Sets the start_time of this Schedule.
 
         调度开始时间。时间格式为ISO时区日期时间。例如2021-03-03T10:15:30+08:00
 
@@ -116,7 +116,7 @@ class Schedule:
 
     @property
     def end_time(self):
-        """Gets the end_time of this Schedule.
+        r"""Gets the end_time of this Schedule.
 
         调度结束时间。时间格式为ISO时区日期时间。例如2021-03-03T10:15:30+08:00
 
@@ -127,7 +127,7 @@ class Schedule:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this Schedule.
+        r"""Sets the end_time of this Schedule.
 
         调度结束时间。时间格式为ISO时区日期时间。例如2021-03-03T10:15:30+08:00
 
@@ -138,7 +138,7 @@ class Schedule:
 
     @property
     def cron_expression(self):
-        """Gets the cron_expression of this Schedule.
+        r"""Gets the cron_expression of this Schedule.
 
         Cron表达式，格式为<秒> <分> <时> <天> <月> <星期>
 
@@ -149,7 +149,7 @@ class Schedule:
 
     @cron_expression.setter
     def cron_expression(self, cron_expression):
-        """Sets the cron_expression of this Schedule.
+        r"""Sets the cron_expression of this Schedule.
 
         Cron表达式，格式为<秒> <分> <时> <天> <月> <星期>
 
@@ -160,7 +160,7 @@ class Schedule:
 
     @property
     def computing_resource_id(self):
-        """Gets the computing_resource_id of this Schedule.
+        r"""Gets the computing_resource_id of this Schedule.
 
         计算资源ID。
 
@@ -171,7 +171,7 @@ class Schedule:
 
     @computing_resource_id.setter
     def computing_resource_id(self, computing_resource_id):
-        """Sets the computing_resource_id of this Schedule.
+        r"""Sets the computing_resource_id of this Schedule.
 
         计算资源ID。
 
@@ -182,7 +182,7 @@ class Schedule:
 
     @property
     def enable(self):
-        """Gets the enable of this Schedule.
+        r"""Gets the enable of this Schedule.
 
         调度启用状态. true: 调度中；false：停止调度。
 
@@ -193,7 +193,7 @@ class Schedule:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this Schedule.
+        r"""Sets the enable of this Schedule.
 
         调度启用状态. true: 调度中；false：停止调度。
 
@@ -204,7 +204,7 @@ class Schedule:
 
     @property
     def conf(self):
-        """Gets the conf of this Schedule.
+        r"""Gets the conf of this Schedule.
 
         作业运行配置信息。
 
@@ -215,7 +215,7 @@ class Schedule:
 
     @conf.setter
     def conf(self, conf):
-        """Sets the conf of this Schedule.
+        r"""Sets the conf of this Schedule.
 
         作业运行配置信息。
 
@@ -226,7 +226,7 @@ class Schedule:
 
     @property
     def schedule_status(self):
-        """Gets the schedule_status of this Schedule.
+        r"""Gets the schedule_status of this Schedule.
 
         仅在查询作业和查询所有作业接口的响应返回。调度状态。1:NORMAL, 2:PAUSED, 3:COMPLETE, 4:ERROR, 5:BLOCKED
 
@@ -237,7 +237,7 @@ class Schedule:
 
     @schedule_status.setter
     def schedule_status(self, schedule_status):
-        """Sets the schedule_status of this Schedule.
+        r"""Sets the schedule_status of this Schedule.
 
         仅在查询作业和查询所有作业接口的响应返回。调度状态。1:NORMAL, 2:PAUSED, 3:COMPLETE, 4:ERROR, 5:BLOCKED
 
@@ -248,7 +248,7 @@ class Schedule:
 
     @property
     def next_fire_time(self):
-        """Gets the next_fire_time of this Schedule.
+        r"""Gets the next_fire_time of this Schedule.
 
         仅在查询作业和查询所有作业接口的响应返回。上一次调度开始时间。
 
@@ -259,7 +259,7 @@ class Schedule:
 
     @next_fire_time.setter
     def next_fire_time(self, next_fire_time):
-        """Sets the next_fire_time of this Schedule.
+        r"""Sets the next_fire_time of this Schedule.
 
         仅在查询作业和查询所有作业接口的响应返回。上一次调度开始时间。
 
@@ -270,7 +270,7 @@ class Schedule:
 
     @property
     def prev_fire_time(self):
-        """Gets the prev_fire_time of this Schedule.
+        r"""Gets the prev_fire_time of this Schedule.
 
         仅在查询作业和查询所有作业接口的响应返回。下一次调度开始时间。
 
@@ -281,7 +281,7 @@ class Schedule:
 
     @prev_fire_time.setter
     def prev_fire_time(self, prev_fire_time):
-        """Sets the prev_fire_time of this Schedule.
+        r"""Sets the prev_fire_time of this Schedule.
 
         仅在查询作业和查询所有作业接口的响应返回。下一次调度开始时间。
 

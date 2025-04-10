@@ -26,7 +26,7 @@ class ShowGrowthRateResponse(SdkResponse):
     }
 
     def __init__(self, growth_rate=None):
-        """ShowGrowthRateResponse
+        r"""ShowGrowthRateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowGrowthRateResponse(SdkResponse):
 
     @property
     def growth_rate(self):
-        """Gets the growth_rate of this ShowGrowthRateResponse.
+        r"""Gets the growth_rate of this ShowGrowthRateResponse.
 
         环比值
 
@@ -55,7 +55,7 @@ class ShowGrowthRateResponse(SdkResponse):
 
     @growth_rate.setter
     def growth_rate(self, growth_rate):
-        """Sets the growth_rate of this ShowGrowthRateResponse.
+        r"""Sets the growth_rate of this ShowGrowthRateResponse.
 
         环比值
 

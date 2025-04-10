@@ -27,7 +27,7 @@ class SecurityCertification:
     }
 
     def __init__(self, result=None, kerberos_info=None):
-        """SecurityCertification
+        r"""SecurityCertification
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SecurityCertification:
 
     @property
     def result(self):
-        """Gets the result of this SecurityCertification.
+        r"""Gets the result of this SecurityCertification.
 
         :return: The result of this SecurityCertification.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
@@ -59,7 +59,7 @@ class SecurityCertification:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this SecurityCertification.
+        r"""Sets the result of this SecurityCertification.
 
         :param result: The result of this SecurityCertification.
         :type result: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
@@ -68,7 +68,7 @@ class SecurityCertification:
 
     @property
     def kerberos_info(self):
-        """Gets the kerberos_info of this SecurityCertification.
+        r"""Gets the kerberos_info of this SecurityCertification.
 
         kerberos信息
 
@@ -79,7 +79,7 @@ class SecurityCertification:
 
     @kerberos_info.setter
     def kerberos_info(self, kerberos_info):
-        """Sets the kerberos_info of this SecurityCertification.
+        r"""Sets the kerberos_info of this SecurityCertification.
 
         kerberos信息
 

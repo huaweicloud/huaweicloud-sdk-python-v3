@@ -28,7 +28,7 @@ class TagLaborResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, updated_time=None):
-        """TagLaborResponse
+        r"""TagLaborResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class TagLaborResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this TagLaborResponse.
+        r"""Gets the request_id of this TagLaborResponse.
 
         调用成功时的返回请求ID。  调用失败时无此字段。
 
@@ -62,7 +62,7 @@ class TagLaborResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this TagLaborResponse.
+        r"""Sets the request_id of this TagLaborResponse.
 
         调用成功时的返回请求ID。  调用失败时无此字段。
 
@@ -73,7 +73,7 @@ class TagLaborResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this TagLaborResponse.
+        r"""Gets the updated_time of this TagLaborResponse.
 
         转人工的时间。格式为“yyyy-MM-dd THH:mm:ssZ”。其中，T指某个时间的开始；Z指UTC时间。  调用失败时无此字段。
 
@@ -84,7 +84,7 @@ class TagLaborResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this TagLaborResponse.
+        r"""Sets the updated_time of this TagLaborResponse.
 
         转人工的时间。格式为“yyyy-MM-dd THH:mm:ssZ”。其中，T指某个时间的开始；Z指UTC时间。  调用失败时无此字段。
 

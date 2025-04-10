@@ -33,7 +33,7 @@ class WorkitemStatusStatus:
     }
 
     def __init__(self, id=None, name=None, type=None, description=None, parent_status_id=None):
-        """WorkitemStatusStatus
+        r"""WorkitemStatusStatus
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class WorkitemStatusStatus:
 
     @property
     def id(self):
-        """Gets the id of this WorkitemStatusStatus.
+        r"""Gets the id of this WorkitemStatusStatus.
 
         工作项的状态id
 
@@ -82,7 +82,7 @@ class WorkitemStatusStatus:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkitemStatusStatus.
+        r"""Sets the id of this WorkitemStatusStatus.
 
         工作项的状态id
 
@@ -93,7 +93,7 @@ class WorkitemStatusStatus:
 
     @property
     def name(self):
-        """Gets the name of this WorkitemStatusStatus.
+        r"""Gets the name of this WorkitemStatusStatus.
 
         状态名称
 
@@ -104,7 +104,7 @@ class WorkitemStatusStatus:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkitemStatusStatus.
+        r"""Sets the name of this WorkitemStatusStatus.
 
         状态名称
 
@@ -115,7 +115,7 @@ class WorkitemStatusStatus:
 
     @property
     def type(self):
-        """Gets the type of this WorkitemStatusStatus.
+        r"""Gets the type of this WorkitemStatusStatus.
 
         工作项状态的类型， BACKLOG( \"初始化\"), READY(\"待启动\"), IN_PROGRESS(\"进行中\"), COMPLETE(\"已完成\"), DONE(\"已结束\"),
 
@@ -126,7 +126,7 @@ class WorkitemStatusStatus:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this WorkitemStatusStatus.
+        r"""Sets the type of this WorkitemStatusStatus.
 
         工作项状态的类型， BACKLOG( \"初始化\"), READY(\"待启动\"), IN_PROGRESS(\"进行中\"), COMPLETE(\"已完成\"), DONE(\"已结束\"),
 
@@ -137,7 +137,7 @@ class WorkitemStatusStatus:
 
     @property
     def description(self):
-        """Gets the description of this WorkitemStatusStatus.
+        r"""Gets the description of this WorkitemStatusStatus.
 
         工作项状态的描述
 
@@ -148,7 +148,7 @@ class WorkitemStatusStatus:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this WorkitemStatusStatus.
+        r"""Sets the description of this WorkitemStatusStatus.
 
         工作项状态的描述
 
@@ -159,7 +159,7 @@ class WorkitemStatusStatus:
 
     @property
     def parent_status_id(self):
-        """Gets the parent_status_id of this WorkitemStatusStatus.
+        r"""Gets the parent_status_id of this WorkitemStatusStatus.
 
         工作项状态的父状态id
 
@@ -170,7 +170,7 @@ class WorkitemStatusStatus:
 
     @parent_status_id.setter
     def parent_status_id(self, parent_status_id):
-        """Sets the parent_status_id of this WorkitemStatusStatus.
+        r"""Sets the parent_status_id of this WorkitemStatusStatus.
 
         工作项状态的父状态id
 

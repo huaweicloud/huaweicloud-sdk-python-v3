@@ -31,7 +31,7 @@ class ErrorLogList:
     }
 
     def __init__(self, node_name=None, level=None, time=None, content=None):
-        """ErrorLogList
+        r"""ErrorLogList
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ErrorLogList:
 
     @property
     def node_name(self):
-        """Gets the node_name of this ErrorLogList.
+        r"""Gets the node_name of this ErrorLogList.
 
         节点名称。
 
@@ -71,7 +71,7 @@ class ErrorLogList:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this ErrorLogList.
+        r"""Sets the node_name of this ErrorLogList.
 
         节点名称。
 
@@ -82,7 +82,7 @@ class ErrorLogList:
 
     @property
     def level(self):
-        """Gets the level of this ErrorLogList.
+        r"""Gets the level of this ErrorLogList.
 
         日志级别。
 
@@ -93,7 +93,7 @@ class ErrorLogList:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ErrorLogList.
+        r"""Sets the level of this ErrorLogList.
 
         日志级别。
 
@@ -104,7 +104,7 @@ class ErrorLogList:
 
     @property
     def time(self):
-        """Gets the time of this ErrorLogList.
+        r"""Gets the time of this ErrorLogList.
 
         发生时间，UTC时间。
 
@@ -115,7 +115,7 @@ class ErrorLogList:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ErrorLogList.
+        r"""Sets the time of this ErrorLogList.
 
         发生时间，UTC时间。
 
@@ -126,7 +126,7 @@ class ErrorLogList:
 
     @property
     def content(self):
-        """Gets the content of this ErrorLogList.
+        r"""Gets the content of this ErrorLogList.
 
         日志内容。
 
@@ -137,7 +137,7 @@ class ErrorLogList:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ErrorLogList.
+        r"""Sets the content of this ErrorLogList.
 
         日志内容。
 

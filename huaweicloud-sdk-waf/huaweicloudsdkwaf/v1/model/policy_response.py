@@ -47,7 +47,7 @@ class PolicyResponse:
     }
 
     def __init__(self, id=None, name=None, level=None, full_detection=None, robot_action=None, action=None, options=None, modulex_options=None, hosts=None, bind_host=None, extend=None, timestamp=None):
-        """PolicyResponse
+        r"""PolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class PolicyResponse:
 
     @property
     def id(self):
-        """Gets the id of this PolicyResponse.
+        r"""Gets the id of this PolicyResponse.
 
         防护策略id
 
@@ -131,7 +131,7 @@ class PolicyResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PolicyResponse.
+        r"""Sets the id of this PolicyResponse.
 
         防护策略id
 
@@ -142,7 +142,7 @@ class PolicyResponse:
 
     @property
     def name(self):
-        """Gets the name of this PolicyResponse.
+        r"""Gets the name of this PolicyResponse.
 
         防护策略名
 
@@ -153,7 +153,7 @@ class PolicyResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PolicyResponse.
+        r"""Sets the name of this PolicyResponse.
 
         防护策略名
 
@@ -164,7 +164,7 @@ class PolicyResponse:
 
     @property
     def level(self):
-        """Gets the level of this PolicyResponse.
+        r"""Gets the level of this PolicyResponse.
 
         Web基础防护等级   - 1 : 宽松，防护粒度较粗，只拦截攻击特征比较明显的请求。当误报情况较多的场景下，建议选择“宽松”模式。   - 2：中等，默认为“中等”防护模式，满足大多数场景下的Web防护需求。   - 3：严格，防护粒度最精细，可以拦截具有复杂的绕过特征的攻击请求，例如jolokia网络攻击、探测CGI漏洞、探测 Druid SQL注入攻击
 
@@ -175,7 +175,7 @@ class PolicyResponse:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this PolicyResponse.
+        r"""Sets the level of this PolicyResponse.
 
         Web基础防护等级   - 1 : 宽松，防护粒度较粗，只拦截攻击特征比较明显的请求。当误报情况较多的场景下，建议选择“宽松”模式。   - 2：中等，默认为“中等”防护模式，满足大多数场景下的Web防护需求。   - 3：严格，防护粒度最精细，可以拦截具有复杂的绕过特征的攻击请求，例如jolokia网络攻击、探测CGI漏洞、探测 Druid SQL注入攻击
 
@@ -186,7 +186,7 @@ class PolicyResponse:
 
     @property
     def full_detection(self):
-        """Gets the full_detection of this PolicyResponse.
+        r"""Gets the full_detection of this PolicyResponse.
 
         精准防护中的检测模式。   - false：短路检测，当用户的请求符合精准防护中的拦截条件时，便立刻终止检测，进行拦截   - true ：全检测，请求符合精准防护中的拦截条件时，全检测不会立即拦截，会继续执行其他防护的检测，最后进行拦截。
 
@@ -197,7 +197,7 @@ class PolicyResponse:
 
     @full_detection.setter
     def full_detection(self, full_detection):
-        """Sets the full_detection of this PolicyResponse.
+        r"""Sets the full_detection of this PolicyResponse.
 
         精准防护中的检测模式。   - false：短路检测，当用户的请求符合精准防护中的拦截条件时，便立刻终止检测，进行拦截   - true ：全检测，请求符合精准防护中的拦截条件时，全检测不会立即拦截，会继续执行其他防护的检测，最后进行拦截。
 
@@ -208,7 +208,7 @@ class PolicyResponse:
 
     @property
     def robot_action(self):
-        """Gets the robot_action of this PolicyResponse.
+        r"""Gets the robot_action of this PolicyResponse.
 
         :return: The robot_action of this PolicyResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Action`
@@ -217,7 +217,7 @@ class PolicyResponse:
 
     @robot_action.setter
     def robot_action(self, robot_action):
-        """Sets the robot_action of this PolicyResponse.
+        r"""Sets the robot_action of this PolicyResponse.
 
         :param robot_action: The robot_action of this PolicyResponse.
         :type robot_action: :class:`huaweicloudsdkwaf.v1.Action`
@@ -226,7 +226,7 @@ class PolicyResponse:
 
     @property
     def action(self):
-        """Gets the action of this PolicyResponse.
+        r"""Gets the action of this PolicyResponse.
 
         :return: The action of this PolicyResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.PolicyAction`
@@ -235,7 +235,7 @@ class PolicyResponse:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this PolicyResponse.
+        r"""Sets the action of this PolicyResponse.
 
         :param action: The action of this PolicyResponse.
         :type action: :class:`huaweicloudsdkwaf.v1.PolicyAction`
@@ -244,7 +244,7 @@ class PolicyResponse:
 
     @property
     def options(self):
-        """Gets the options of this PolicyResponse.
+        r"""Gets the options of this PolicyResponse.
 
         :return: The options of this PolicyResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.PolicyOption`
@@ -253,7 +253,7 @@ class PolicyResponse:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this PolicyResponse.
+        r"""Sets the options of this PolicyResponse.
 
         :param options: The options of this PolicyResponse.
         :type options: :class:`huaweicloudsdkwaf.v1.PolicyOption`
@@ -262,7 +262,7 @@ class PolicyResponse:
 
     @property
     def modulex_options(self):
-        """Gets the modulex_options of this PolicyResponse.
+        r"""Gets the modulex_options of this PolicyResponse.
 
         智能访问控制防护项相关配置信息，目前该特性还处于公测阶段，只有部分局点支持该特性
 
@@ -273,7 +273,7 @@ class PolicyResponse:
 
     @modulex_options.setter
     def modulex_options(self, modulex_options):
-        """Sets the modulex_options of this PolicyResponse.
+        r"""Sets the modulex_options of this PolicyResponse.
 
         智能访问控制防护项相关配置信息，目前该特性还处于公测阶段，只有部分局点支持该特性
 
@@ -284,7 +284,7 @@ class PolicyResponse:
 
     @property
     def hosts(self):
-        """Gets the hosts of this PolicyResponse.
+        r"""Gets the hosts of this PolicyResponse.
 
         与防护策略绑定的防护的域名id数组
 
@@ -295,7 +295,7 @@ class PolicyResponse:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this PolicyResponse.
+        r"""Sets the hosts of this PolicyResponse.
 
         与防护策略绑定的防护的域名id数组
 
@@ -306,7 +306,7 @@ class PolicyResponse:
 
     @property
     def bind_host(self):
-        """Gets the bind_host of this PolicyResponse.
+        r"""Gets the bind_host of this PolicyResponse.
 
         与防护策略绑定的防护的域名信息数组，相对于hosts字段，包含更详细的域名信息
 
@@ -317,7 +317,7 @@ class PolicyResponse:
 
     @bind_host.setter
     def bind_host(self, bind_host):
-        """Sets the bind_host of this PolicyResponse.
+        r"""Sets the bind_host of this PolicyResponse.
 
         与防护策略绑定的防护的域名信息数组，相对于hosts字段，包含更详细的域名信息
 
@@ -328,7 +328,7 @@ class PolicyResponse:
 
     @property
     def extend(self):
-        """Gets the extend of this PolicyResponse.
+        r"""Gets the extend of this PolicyResponse.
 
         扩展字段，用于存放Web基础防护中一些开关配置等信息
 
@@ -339,7 +339,7 @@ class PolicyResponse:
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this PolicyResponse.
+        r"""Sets the extend of this PolicyResponse.
 
         扩展字段，用于存放Web基础防护中一些开关配置等信息
 
@@ -350,7 +350,7 @@ class PolicyResponse:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this PolicyResponse.
+        r"""Gets the timestamp of this PolicyResponse.
 
         创建防护策略的时间
 
@@ -361,7 +361,7 @@ class PolicyResponse:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this PolicyResponse.
+        r"""Sets the timestamp of this PolicyResponse.
 
         创建防护策略的时间
 

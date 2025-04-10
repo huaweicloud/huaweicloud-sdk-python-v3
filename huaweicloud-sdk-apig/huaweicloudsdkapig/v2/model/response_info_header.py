@@ -27,7 +27,7 @@ class ResponseInfoHeader:
     }
 
     def __init__(self, key=None, value=None):
-        """ResponseInfoHeader
+        r"""ResponseInfoHeader
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResponseInfoHeader:
 
     @property
     def key(self):
-        """Gets the key of this ResponseInfoHeader.
+        r"""Gets the key of this ResponseInfoHeader.
 
         分组自定义响应的响应头的key，支持英文字母、数字和中划线，长度为1到128位
 
@@ -61,7 +61,7 @@ class ResponseInfoHeader:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResponseInfoHeader.
+        r"""Sets the key of this ResponseInfoHeader.
 
         分组自定义响应的响应头的key，支持英文字母、数字和中划线，长度为1到128位
 
@@ -72,7 +72,7 @@ class ResponseInfoHeader:
 
     @property
     def value(self):
-        """Gets the value of this ResponseInfoHeader.
+        r"""Gets the value of this ResponseInfoHeader.
 
         分组自定义响应的响应头的value，为长度为1到1024位的字符串
 
@@ -83,7 +83,7 @@ class ResponseInfoHeader:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResponseInfoHeader.
+        r"""Sets the value of this ResponseInfoHeader.
 
         分组自定义响应的响应头的value，为长度为1到1024位的字符串
 

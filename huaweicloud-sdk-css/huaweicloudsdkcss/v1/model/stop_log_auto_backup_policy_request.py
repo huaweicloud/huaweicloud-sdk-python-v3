@@ -25,7 +25,7 @@ class StopLogAutoBackupPolicyRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """StopLogAutoBackupPolicyRequest
+        r"""StopLogAutoBackupPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopLogAutoBackupPolicyRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StopLogAutoBackupPolicyRequest.
+        r"""Gets the cluster_id of this StopLogAutoBackupPolicyRequest.
 
         指定关闭日志自动备份的集群ID。
 
@@ -53,7 +53,7 @@ class StopLogAutoBackupPolicyRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StopLogAutoBackupPolicyRequest.
+        r"""Sets the cluster_id of this StopLogAutoBackupPolicyRequest.
 
         指定关闭日志自动备份的集群ID。
 

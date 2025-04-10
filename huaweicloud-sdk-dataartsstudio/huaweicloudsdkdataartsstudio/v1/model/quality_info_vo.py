@@ -55,7 +55,7 @@ class QualityInfoVO:
     }
 
     def __init__(self, id=None, table_id=None, attr_id=None, biz_type=None, data_quality_id=None, show_control=None, data_quality_name=None, alert_conf=None, expression=None, extend_info=None, from_standard=None, result_description=None, create_by=None, update_by=None, create_time=None, update_time=None):
-        """QualityInfoVO
+        r"""QualityInfoVO
 
         The model defined in huaweicloud sdk
 
@@ -147,7 +147,7 @@ class QualityInfoVO:
 
     @property
     def id(self):
-        """Gets the id of this QualityInfoVO.
+        r"""Gets the id of this QualityInfoVO.
 
         编码ID，ID字符串。
 
@@ -158,7 +158,7 @@ class QualityInfoVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QualityInfoVO.
+        r"""Sets the id of this QualityInfoVO.
 
         编码ID，ID字符串。
 
@@ -169,7 +169,7 @@ class QualityInfoVO:
 
     @property
     def table_id(self):
-        """Gets the table_id of this QualityInfoVO.
+        r"""Gets the table_id of this QualityInfoVO.
 
         表ID，只读，ID字符串。
 
@@ -180,7 +180,7 @@ class QualityInfoVO:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this QualityInfoVO.
+        r"""Sets the table_id of this QualityInfoVO.
 
         表ID，只读，ID字符串。
 
@@ -191,7 +191,7 @@ class QualityInfoVO:
 
     @property
     def attr_id(self):
-        """Gets the attr_id of this QualityInfoVO.
+        r"""Gets the attr_id of this QualityInfoVO.
 
         属性ID，只读，ID字符串。
 
@@ -202,7 +202,7 @@ class QualityInfoVO:
 
     @attr_id.setter
     def attr_id(self, attr_id):
-        """Sets the attr_id of this QualityInfoVO.
+        r"""Sets the attr_id of this QualityInfoVO.
 
         属性ID，只读，ID字符串。
 
@@ -213,7 +213,7 @@ class QualityInfoVO:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this QualityInfoVO.
+        r"""Gets the biz_type of this QualityInfoVO.
 
         :return: The biz_type of this QualityInfoVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -222,7 +222,7 @@ class QualityInfoVO:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this QualityInfoVO.
+        r"""Sets the biz_type of this QualityInfoVO.
 
         :param biz_type: The biz_type of this QualityInfoVO.
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -231,7 +231,7 @@ class QualityInfoVO:
 
     @property
     def data_quality_id(self):
-        """Gets the data_quality_id of this QualityInfoVO.
+        r"""Gets the data_quality_id of this QualityInfoVO.
 
         质量ID，ID字符串。
 
@@ -242,7 +242,7 @@ class QualityInfoVO:
 
     @data_quality_id.setter
     def data_quality_id(self, data_quality_id):
-        """Sets the data_quality_id of this QualityInfoVO.
+        r"""Sets the data_quality_id of this QualityInfoVO.
 
         质量ID，ID字符串。
 
@@ -253,7 +253,7 @@ class QualityInfoVO:
 
     @property
     def show_control(self):
-        """Gets the show_control of this QualityInfoVO.
+        r"""Gets the show_control of this QualityInfoVO.
 
         是否要显示正则表达式。
 
@@ -264,7 +264,7 @@ class QualityInfoVO:
 
     @show_control.setter
     def show_control(self, show_control):
-        """Sets the show_control of this QualityInfoVO.
+        r"""Sets the show_control of this QualityInfoVO.
 
         是否要显示正则表达式。
 
@@ -275,7 +275,7 @@ class QualityInfoVO:
 
     @property
     def data_quality_name(self):
-        """Gets the data_quality_name of this QualityInfoVO.
+        r"""Gets the data_quality_name of this QualityInfoVO.
 
         质量名称。
 
@@ -286,7 +286,7 @@ class QualityInfoVO:
 
     @data_quality_name.setter
     def data_quality_name(self, data_quality_name):
-        """Sets the data_quality_name of this QualityInfoVO.
+        r"""Sets the data_quality_name of this QualityInfoVO.
 
         质量名称。
 
@@ -297,7 +297,7 @@ class QualityInfoVO:
 
     @property
     def alert_conf(self):
-        """Gets the alert_conf of this QualityInfoVO.
+        r"""Gets the alert_conf of this QualityInfoVO.
 
         告警配置。
 
@@ -308,7 +308,7 @@ class QualityInfoVO:
 
     @alert_conf.setter
     def alert_conf(self, alert_conf):
-        """Sets the alert_conf of this QualityInfoVO.
+        r"""Sets the alert_conf of this QualityInfoVO.
 
         告警配置。
 
@@ -319,7 +319,7 @@ class QualityInfoVO:
 
     @property
     def expression(self):
-        """Gets the expression of this QualityInfoVO.
+        r"""Gets the expression of this QualityInfoVO.
 
         正则相关校验规则中正则配置。
 
@@ -330,7 +330,7 @@ class QualityInfoVO:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this QualityInfoVO.
+        r"""Sets the expression of this QualityInfoVO.
 
         正则相关校验规则中正则配置。
 
@@ -341,7 +341,7 @@ class QualityInfoVO:
 
     @property
     def extend_info(self):
-        """Gets the extend_info of this QualityInfoVO.
+        r"""Gets the extend_info of this QualityInfoVO.
 
         扩展信息。
 
@@ -352,7 +352,7 @@ class QualityInfoVO:
 
     @extend_info.setter
     def extend_info(self, extend_info):
-        """Sets the extend_info of this QualityInfoVO.
+        r"""Sets the extend_info of this QualityInfoVO.
 
         扩展信息。
 
@@ -363,7 +363,7 @@ class QualityInfoVO:
 
     @property
     def from_standard(self):
-        """Gets the from_standard of this QualityInfoVO.
+        r"""Gets the from_standard of this QualityInfoVO.
 
         是否来源于数据标准质量配置，只读。
 
@@ -374,7 +374,7 @@ class QualityInfoVO:
 
     @from_standard.setter
     def from_standard(self, from_standard):
-        """Sets the from_standard of this QualityInfoVO.
+        r"""Sets the from_standard of this QualityInfoVO.
 
         是否来源于数据标准质量配置，只读。
 
@@ -385,7 +385,7 @@ class QualityInfoVO:
 
     @property
     def result_description(self):
-        """Gets the result_description of this QualityInfoVO.
+        r"""Gets the result_description of this QualityInfoVO.
 
         结果说明。
 
@@ -396,7 +396,7 @@ class QualityInfoVO:
 
     @result_description.setter
     def result_description(self, result_description):
-        """Sets the result_description of this QualityInfoVO.
+        r"""Sets the result_description of this QualityInfoVO.
 
         结果说明。
 
@@ -407,7 +407,7 @@ class QualityInfoVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this QualityInfoVO.
+        r"""Gets the create_by of this QualityInfoVO.
 
         创建人，只读。
 
@@ -418,7 +418,7 @@ class QualityInfoVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this QualityInfoVO.
+        r"""Sets the create_by of this QualityInfoVO.
 
         创建人，只读。
 
@@ -429,7 +429,7 @@ class QualityInfoVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this QualityInfoVO.
+        r"""Gets the update_by of this QualityInfoVO.
 
         更新人，只读。
 
@@ -440,7 +440,7 @@ class QualityInfoVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this QualityInfoVO.
+        r"""Sets the update_by of this QualityInfoVO.
 
         更新人，只读。
 
@@ -451,7 +451,7 @@ class QualityInfoVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QualityInfoVO.
+        r"""Gets the create_time of this QualityInfoVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -462,7 +462,7 @@ class QualityInfoVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QualityInfoVO.
+        r"""Sets the create_time of this QualityInfoVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -473,7 +473,7 @@ class QualityInfoVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this QualityInfoVO.
+        r"""Gets the update_time of this QualityInfoVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -484,7 +484,7 @@ class QualityInfoVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this QualityInfoVO.
+        r"""Sets the update_time of this QualityInfoVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 

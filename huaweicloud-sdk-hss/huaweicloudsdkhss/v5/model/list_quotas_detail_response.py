@@ -44,7 +44,7 @@ class ListQuotasDetailResponse(SdkResponse):
     }
 
     def __init__(self, packet_cycle_num=None, on_demand_num=None, used_num=None, idle_num=None, normal_num=None, expired_num=None, freeze_num=None, quota_statistics_list=None, total_num=None, data_list=None):
-        """ListQuotasDetailResponse
+        r"""ListQuotasDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @property
     def packet_cycle_num(self):
-        """Gets the packet_cycle_num of this ListQuotasDetailResponse.
+        r"""Gets the packet_cycle_num of this ListQuotasDetailResponse.
 
         包周期配额数
 
@@ -118,7 +118,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @packet_cycle_num.setter
     def packet_cycle_num(self, packet_cycle_num):
-        """Sets the packet_cycle_num of this ListQuotasDetailResponse.
+        r"""Sets the packet_cycle_num of this ListQuotasDetailResponse.
 
         包周期配额数
 
@@ -129,7 +129,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @property
     def on_demand_num(self):
-        """Gets the on_demand_num of this ListQuotasDetailResponse.
+        r"""Gets the on_demand_num of this ListQuotasDetailResponse.
 
         按需配额数
 
@@ -140,7 +140,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @on_demand_num.setter
     def on_demand_num(self, on_demand_num):
-        """Sets the on_demand_num of this ListQuotasDetailResponse.
+        r"""Sets the on_demand_num of this ListQuotasDetailResponse.
 
         按需配额数
 
@@ -151,7 +151,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @property
     def used_num(self):
-        """Gets the used_num of this ListQuotasDetailResponse.
+        r"""Gets the used_num of this ListQuotasDetailResponse.
 
         已使用配额数
 
@@ -162,7 +162,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @used_num.setter
     def used_num(self, used_num):
-        """Sets the used_num of this ListQuotasDetailResponse.
+        r"""Sets the used_num of this ListQuotasDetailResponse.
 
         已使用配额数
 
@@ -173,7 +173,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @property
     def idle_num(self):
-        """Gets the idle_num of this ListQuotasDetailResponse.
+        r"""Gets the idle_num of this ListQuotasDetailResponse.
 
         空闲配额数
 
@@ -184,7 +184,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @idle_num.setter
     def idle_num(self, idle_num):
-        """Sets the idle_num of this ListQuotasDetailResponse.
+        r"""Sets the idle_num of this ListQuotasDetailResponse.
 
         空闲配额数
 
@@ -195,7 +195,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @property
     def normal_num(self):
-        """Gets the normal_num of this ListQuotasDetailResponse.
+        r"""Gets the normal_num of this ListQuotasDetailResponse.
 
         正常配额数
 
@@ -206,7 +206,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @normal_num.setter
     def normal_num(self, normal_num):
-        """Sets the normal_num of this ListQuotasDetailResponse.
+        r"""Sets the normal_num of this ListQuotasDetailResponse.
 
         正常配额数
 
@@ -217,7 +217,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @property
     def expired_num(self):
-        """Gets the expired_num of this ListQuotasDetailResponse.
+        r"""Gets the expired_num of this ListQuotasDetailResponse.
 
         过期配额数
 
@@ -228,7 +228,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @expired_num.setter
     def expired_num(self, expired_num):
-        """Sets the expired_num of this ListQuotasDetailResponse.
+        r"""Sets the expired_num of this ListQuotasDetailResponse.
 
         过期配额数
 
@@ -239,7 +239,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @property
     def freeze_num(self):
-        """Gets the freeze_num of this ListQuotasDetailResponse.
+        r"""Gets the freeze_num of this ListQuotasDetailResponse.
 
         冻结配额数
 
@@ -250,7 +250,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @freeze_num.setter
     def freeze_num(self, freeze_num):
-        """Sets the freeze_num of this ListQuotasDetailResponse.
+        r"""Sets the freeze_num of this ListQuotasDetailResponse.
 
         冻结配额数
 
@@ -261,7 +261,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @property
     def quota_statistics_list(self):
-        """Gets the quota_statistics_list of this ListQuotasDetailResponse.
+        r"""Gets the quota_statistics_list of this ListQuotasDetailResponse.
 
         配额统计列表
 
@@ -272,7 +272,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @quota_statistics_list.setter
     def quota_statistics_list(self, quota_statistics_list):
-        """Sets the quota_statistics_list of this ListQuotasDetailResponse.
+        r"""Sets the quota_statistics_list of this ListQuotasDetailResponse.
 
         配额统计列表
 
@@ -283,7 +283,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListQuotasDetailResponse.
+        r"""Gets the total_num of this ListQuotasDetailResponse.
 
         配额总数
 
@@ -294,7 +294,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListQuotasDetailResponse.
+        r"""Sets the total_num of this ListQuotasDetailResponse.
 
         配额总数
 
@@ -305,7 +305,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListQuotasDetailResponse.
+        r"""Gets the data_list of this ListQuotasDetailResponse.
 
         配额列表
 
@@ -316,7 +316,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListQuotasDetailResponse.
+        r"""Sets the data_list of this ListQuotasDetailResponse.
 
         配额列表
 

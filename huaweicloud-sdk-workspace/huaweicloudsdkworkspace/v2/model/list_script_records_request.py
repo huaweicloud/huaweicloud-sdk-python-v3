@@ -49,7 +49,7 @@ class ListScriptRecordsRequest:
     }
 
     def __init__(self, offset=None, limit=None, resource_id=None, resource_group_id=None, script_id=None, script_name=None, status=None, is_first_order=None, script_task_id=None, task_type=None, show_history=None, execute_time_start=None, execute_time_end=None):
-        """ListScriptRecordsRequest
+        r"""ListScriptRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListScriptRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListScriptRecordsRequest.
+        r"""Gets the offset of this ListScriptRecordsRequest.
 
         查询的偏移量。
 
@@ -138,7 +138,7 @@ class ListScriptRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListScriptRecordsRequest.
+        r"""Sets the offset of this ListScriptRecordsRequest.
 
         查询的偏移量。
 
@@ -149,7 +149,7 @@ class ListScriptRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScriptRecordsRequest.
+        r"""Gets the limit of this ListScriptRecordsRequest.
 
         单次查询的大小[1-100]。
 
@@ -160,7 +160,7 @@ class ListScriptRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScriptRecordsRequest.
+        r"""Sets the limit of this ListScriptRecordsRequest.
 
         单次查询的大小[1-100]。
 
@@ -171,7 +171,7 @@ class ListScriptRecordsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListScriptRecordsRequest.
+        r"""Gets the resource_id of this ListScriptRecordsRequest.
 
         执行脚本的资源ID列表。
 
@@ -182,7 +182,7 @@ class ListScriptRecordsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListScriptRecordsRequest.
+        r"""Sets the resource_id of this ListScriptRecordsRequest.
 
         执行脚本的资源ID列表。
 
@@ -193,7 +193,7 @@ class ListScriptRecordsRequest:
 
     @property
     def resource_group_id(self):
-        """Gets the resource_group_id of this ListScriptRecordsRequest.
+        r"""Gets the resource_group_id of this ListScriptRecordsRequest.
 
         执行脚本的资源组ID。
 
@@ -204,7 +204,7 @@ class ListScriptRecordsRequest:
 
     @resource_group_id.setter
     def resource_group_id(self, resource_group_id):
-        """Sets the resource_group_id of this ListScriptRecordsRequest.
+        r"""Sets the resource_group_id of this ListScriptRecordsRequest.
 
         执行脚本的资源组ID。
 
@@ -215,7 +215,7 @@ class ListScriptRecordsRequest:
 
     @property
     def script_id(self):
-        """Gets the script_id of this ListScriptRecordsRequest.
+        r"""Gets the script_id of this ListScriptRecordsRequest.
 
         执行的脚本ID。
 
@@ -226,7 +226,7 @@ class ListScriptRecordsRequest:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this ListScriptRecordsRequest.
+        r"""Sets the script_id of this ListScriptRecordsRequest.
 
         执行的脚本ID。
 
@@ -237,7 +237,7 @@ class ListScriptRecordsRequest:
 
     @property
     def script_name(self):
-        """Gets the script_name of this ListScriptRecordsRequest.
+        r"""Gets the script_name of this ListScriptRecordsRequest.
 
         执行的脚本名称。
 
@@ -248,7 +248,7 @@ class ListScriptRecordsRequest:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this ListScriptRecordsRequest.
+        r"""Sets the script_name of this ListScriptRecordsRequest.
 
         执行的脚本名称。
 
@@ -259,7 +259,7 @@ class ListScriptRecordsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListScriptRecordsRequest.
+        r"""Gets the status of this ListScriptRecordsRequest.
 
         执行脚本的执行情况。
 
@@ -270,7 +270,7 @@ class ListScriptRecordsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListScriptRecordsRequest.
+        r"""Sets the status of this ListScriptRecordsRequest.
 
         执行脚本的执行情况。
 
@@ -281,7 +281,7 @@ class ListScriptRecordsRequest:
 
     @property
     def is_first_order(self):
-        """Gets the is_first_order of this ListScriptRecordsRequest.
+        r"""Gets the is_first_order of this ListScriptRecordsRequest.
 
         是否首批执行。
 
@@ -292,7 +292,7 @@ class ListScriptRecordsRequest:
 
     @is_first_order.setter
     def is_first_order(self, is_first_order):
-        """Sets the is_first_order of this ListScriptRecordsRequest.
+        r"""Sets the is_first_order of this ListScriptRecordsRequest.
 
         是否首批执行。
 
@@ -303,7 +303,7 @@ class ListScriptRecordsRequest:
 
     @property
     def script_task_id(self):
-        """Gets the script_task_id of this ListScriptRecordsRequest.
+        r"""Gets the script_task_id of this ListScriptRecordsRequest.
 
         执行脚本的任务ID。
 
@@ -314,7 +314,7 @@ class ListScriptRecordsRequest:
 
     @script_task_id.setter
     def script_task_id(self, script_task_id):
-        """Sets the script_task_id of this ListScriptRecordsRequest.
+        r"""Sets the script_task_id of this ListScriptRecordsRequest.
 
         执行脚本的任务ID。
 
@@ -325,7 +325,7 @@ class ListScriptRecordsRequest:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ListScriptRecordsRequest.
+        r"""Gets the task_type of this ListScriptRecordsRequest.
 
         执行记录的任务类型(SCRIPT/COMMAND)。
 
@@ -336,7 +336,7 @@ class ListScriptRecordsRequest:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ListScriptRecordsRequest.
+        r"""Sets the task_type of this ListScriptRecordsRequest.
 
         执行记录的任务类型(SCRIPT/COMMAND)。
 
@@ -347,7 +347,7 @@ class ListScriptRecordsRequest:
 
     @property
     def show_history(self):
-        """Gets the show_history of this ListScriptRecordsRequest.
+        r"""Gets the show_history of this ListScriptRecordsRequest.
 
         是否查询历史记录，默认为false，为true时需要同时传入resource_id与script_id。
 
@@ -358,7 +358,7 @@ class ListScriptRecordsRequest:
 
     @show_history.setter
     def show_history(self, show_history):
-        """Sets the show_history of this ListScriptRecordsRequest.
+        r"""Sets the show_history of this ListScriptRecordsRequest.
 
         是否查询历史记录，默认为false，为true时需要同时传入resource_id与script_id。
 
@@ -369,7 +369,7 @@ class ListScriptRecordsRequest:
 
     @property
     def execute_time_start(self):
-        """Gets the execute_time_start of this ListScriptRecordsRequest.
+        r"""Gets the execute_time_start of this ListScriptRecordsRequest.
 
         按执行时间查询的起始时间。指定该参数后，返回的结果为此时间之后的所有执行记录。时间格式如：“2021-10-01T12:00:00Z”。
 
@@ -380,7 +380,7 @@ class ListScriptRecordsRequest:
 
     @execute_time_start.setter
     def execute_time_start(self, execute_time_start):
-        """Sets the execute_time_start of this ListScriptRecordsRequest.
+        r"""Sets the execute_time_start of this ListScriptRecordsRequest.
 
         按执行时间查询的起始时间。指定该参数后，返回的结果为此时间之后的所有执行记录。时间格式如：“2021-10-01T12:00:00Z”。
 
@@ -391,7 +391,7 @@ class ListScriptRecordsRequest:
 
     @property
     def execute_time_end(self):
-        """Gets the execute_time_end of this ListScriptRecordsRequest.
+        r"""Gets the execute_time_end of this ListScriptRecordsRequest.
 
         按执行时间查询的终止时间。指定该参数后，返回的结果为此时间之前的所有执行记录。时间格式如：“2021-10-01T12:00:00Z”。
 
@@ -402,7 +402,7 @@ class ListScriptRecordsRequest:
 
     @execute_time_end.setter
     def execute_time_end(self, execute_time_end):
-        """Sets the execute_time_end of this ListScriptRecordsRequest.
+        r"""Sets the execute_time_end of this ListScriptRecordsRequest.
 
         按执行时间查询的终止时间。指定该参数后，返回的结果为此时间之前的所有执行记录。时间格式如：“2021-10-01T12:00:00Z”。
 

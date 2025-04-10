@@ -29,7 +29,7 @@ class RebuildDesktopPoolRequest:
     }
 
     def __init__(self, service_transaction_id=None, pool_id=None, body=None):
-        """RebuildDesktopPoolRequest
+        r"""RebuildDesktopPoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RebuildDesktopPoolRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this RebuildDesktopPoolRequest.
+        r"""Gets the service_transaction_id of this RebuildDesktopPoolRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -67,7 +67,7 @@ class RebuildDesktopPoolRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this RebuildDesktopPoolRequest.
+        r"""Sets the service_transaction_id of this RebuildDesktopPoolRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -78,7 +78,7 @@ class RebuildDesktopPoolRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this RebuildDesktopPoolRequest.
+        r"""Gets the pool_id of this RebuildDesktopPoolRequest.
 
         桌面池ID。
 
@@ -89,7 +89,7 @@ class RebuildDesktopPoolRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this RebuildDesktopPoolRequest.
+        r"""Sets the pool_id of this RebuildDesktopPoolRequest.
 
         桌面池ID。
 
@@ -100,7 +100,7 @@ class RebuildDesktopPoolRequest:
 
     @property
     def body(self):
-        """Gets the body of this RebuildDesktopPoolRequest.
+        r"""Gets the body of this RebuildDesktopPoolRequest.
 
         :return: The body of this RebuildDesktopPoolRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.RebuildDesktopPoolReq`
@@ -109,7 +109,7 @@ class RebuildDesktopPoolRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RebuildDesktopPoolRequest.
+        r"""Sets the body of this RebuildDesktopPoolRequest.
 
         :param body: The body of this RebuildDesktopPoolRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.RebuildDesktopPoolReq`

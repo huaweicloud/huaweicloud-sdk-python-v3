@@ -27,7 +27,7 @@ class AccessConfigReq:
     }
 
     def __init__(self, access_mode=None, dedicated_cidrs=None):
-        """AccessConfigReq
+        r"""AccessConfigReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AccessConfigReq:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this AccessConfigReq.
+        r"""Gets the access_mode of this AccessConfigReq.
 
         接入方式。 - INTERNET：表示Internet接入。 - DEDICATED：表示专线接入。 - BOTH：表示两种接入方式都支持。
 
@@ -60,7 +60,7 @@ class AccessConfigReq:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this AccessConfigReq.
+        r"""Sets the access_mode of this AccessConfigReq.
 
         接入方式。 - INTERNET：表示Internet接入。 - DEDICATED：表示专线接入。 - BOTH：表示两种接入方式都支持。
 
@@ -71,7 +71,7 @@ class AccessConfigReq:
 
     @property
     def dedicated_cidrs(self):
-        """Gets the dedicated_cidrs of this AccessConfigReq.
+        r"""Gets the dedicated_cidrs of this AccessConfigReq.
 
         专线接入网段列表，多个网段信息用分号隔开，列表长度不超过5。
 
@@ -82,7 +82,7 @@ class AccessConfigReq:
 
     @dedicated_cidrs.setter
     def dedicated_cidrs(self, dedicated_cidrs):
-        """Sets the dedicated_cidrs of this AccessConfigReq.
+        r"""Sets the dedicated_cidrs of this AccessConfigReq.
 
         专线接入网段列表，多个网段信息用分号隔开，列表长度不超过5。
 

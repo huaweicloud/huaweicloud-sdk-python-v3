@@ -40,7 +40,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
     }
 
     def __init__(self, count=None, executions=None, is_truncated=None, next_offset=None, x_request_id=None, content_length=None, date=None, content_type=None):
-        """ListWorkflowInstanceResponse
+        r"""ListWorkflowInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListWorkflowInstanceResponse.
+        r"""Gets the count of this ListWorkflowInstanceResponse.
 
         满足条件的运行实例个数。
 
@@ -104,7 +104,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListWorkflowInstanceResponse.
+        r"""Sets the count of this ListWorkflowInstanceResponse.
 
         满足条件的运行实例个数。
 
@@ -115,7 +115,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @property
     def executions(self):
-        """Gets the executions of this ListWorkflowInstanceResponse.
+        r"""Gets the executions of this ListWorkflowInstanceResponse.
 
         实例信息列表
 
@@ -126,7 +126,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @executions.setter
     def executions(self, executions):
-        """Sets the executions of this ListWorkflowInstanceResponse.
+        r"""Sets the executions of this ListWorkflowInstanceResponse.
 
         实例信息列表
 
@@ -137,7 +137,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @property
     def is_truncated(self):
-        """Gets the is_truncated of this ListWorkflowInstanceResponse.
+        r"""Gets the is_truncated of this ListWorkflowInstanceResponse.
 
         表明是否本次返回的结果列表被截断。true：表示本次没有返回全部结果。false：表示本次已经返回了全部结果。
 
@@ -148,7 +148,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @is_truncated.setter
     def is_truncated(self, is_truncated):
-        """Sets the is_truncated of this ListWorkflowInstanceResponse.
+        r"""Sets the is_truncated of this ListWorkflowInstanceResponse.
 
         表明是否本次返回的结果列表被截断。true：表示本次没有返回全部结果。false：表示本次已经返回了全部结果。
 
@@ -159,7 +159,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @property
     def next_offset(self):
-        """Gets the next_offset of this ListWorkflowInstanceResponse.
+        r"""Gets the next_offset of this ListWorkflowInstanceResponse.
 
         如果本次没有返回全部结果，响应请求中将包含此字段，用于标明本次请求列举到的最后一个工作流实例。后续请求可以指定Marker等于该值来列举剩余的工作流实例。如果is_truncated为false，该字段不会返回。
 
@@ -170,7 +170,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @next_offset.setter
     def next_offset(self, next_offset):
-        """Sets the next_offset of this ListWorkflowInstanceResponse.
+        r"""Sets the next_offset of this ListWorkflowInstanceResponse.
 
         如果本次没有返回全部结果，响应请求中将包含此字段，用于标明本次请求列举到的最后一个工作流实例。后续请求可以指定Marker等于该值来列举剩余的工作流实例。如果is_truncated为false，该字段不会返回。
 
@@ -181,7 +181,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListWorkflowInstanceResponse.
+        r"""Gets the x_request_id of this ListWorkflowInstanceResponse.
 
         :return: The x_request_id of this ListWorkflowInstanceResponse.
         :rtype: str
@@ -190,7 +190,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListWorkflowInstanceResponse.
+        r"""Sets the x_request_id of this ListWorkflowInstanceResponse.
 
         :param x_request_id: The x_request_id of this ListWorkflowInstanceResponse.
         :type x_request_id: str
@@ -199,7 +199,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this ListWorkflowInstanceResponse.
+        r"""Gets the content_length of this ListWorkflowInstanceResponse.
 
         :return: The content_length of this ListWorkflowInstanceResponse.
         :rtype: str
@@ -208,7 +208,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this ListWorkflowInstanceResponse.
+        r"""Sets the content_length of this ListWorkflowInstanceResponse.
 
         :param content_length: The content_length of this ListWorkflowInstanceResponse.
         :type content_length: str
@@ -217,7 +217,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this ListWorkflowInstanceResponse.
+        r"""Gets the date of this ListWorkflowInstanceResponse.
 
         :return: The date of this ListWorkflowInstanceResponse.
         :rtype: str
@@ -226,7 +226,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ListWorkflowInstanceResponse.
+        r"""Sets the date of this ListWorkflowInstanceResponse.
 
         :param date: The date of this ListWorkflowInstanceResponse.
         :type date: str
@@ -235,7 +235,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @property
     def content_type(self):
-        """Gets the content_type of this ListWorkflowInstanceResponse.
+        r"""Gets the content_type of this ListWorkflowInstanceResponse.
 
         :return: The content_type of this ListWorkflowInstanceResponse.
         :rtype: str
@@ -244,7 +244,7 @@ class ListWorkflowInstanceResponse(SdkResponse):
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ListWorkflowInstanceResponse.
+        r"""Sets the content_type of this ListWorkflowInstanceResponse.
 
         :param content_type: The content_type of this ListWorkflowInstanceResponse.
         :type content_type: str

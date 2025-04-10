@@ -25,7 +25,7 @@ class InjectionConfig:
     }
 
     def __init__(self, namespaces=None):
-        """InjectionConfig
+        r"""InjectionConfig
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class InjectionConfig:
 
     @property
     def namespaces(self):
-        """Gets the namespaces of this InjectionConfig.
+        r"""Gets the namespaces of this InjectionConfig.
 
         :return: The namespaces of this InjectionConfig.
         :rtype: :class:`huaweicloudsdkasm.v1.Selector`
@@ -52,7 +52,7 @@ class InjectionConfig:
 
     @namespaces.setter
     def namespaces(self, namespaces):
-        """Sets the namespaces of this InjectionConfig.
+        r"""Sets the namespaces of this InjectionConfig.
 
         :param namespaces: The namespaces of this InjectionConfig.
         :type namespaces: :class:`huaweicloudsdkasm.v1.Selector`

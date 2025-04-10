@@ -27,7 +27,7 @@ class Whitelist:
     }
 
     def __init__(self, group_name=None, ip_list=None):
-        """Whitelist
+        r"""Whitelist
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Whitelist:
 
     @property
     def group_name(self):
-        """Gets the group_name of this Whitelist.
+        r"""Gets the group_name of this Whitelist.
 
         白名单分组名称，每个实例支持创建4个分组。
 
@@ -59,7 +59,7 @@ class Whitelist:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this Whitelist.
+        r"""Sets the group_name of this Whitelist.
 
         白名单分组名称，每个实例支持创建4个分组。
 
@@ -70,7 +70,7 @@ class Whitelist:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this Whitelist.
+        r"""Gets the ip_list of this Whitelist.
 
         白名单分组下的IP列表,每个实例最多可以添加20个IP地址/地址段。如果有多个，可以用逗号分隔。不支持的IP和地址段：0.0.0.0和0.0.0.0/0
 
@@ -81,7 +81,7 @@ class Whitelist:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this Whitelist.
+        r"""Sets the ip_list of this Whitelist.
 
         白名单分组下的IP列表,每个实例最多可以添加20个IP地址/地址段。如果有多个，可以用逗号分隔。不支持的IP和地址段：0.0.0.0和0.0.0.0/0
 

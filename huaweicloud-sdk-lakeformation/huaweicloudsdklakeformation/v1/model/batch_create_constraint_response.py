@@ -24,7 +24,7 @@ class BatchCreateConstraintResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateConstraintResponse
+        r"""BatchCreateConstraintResponse
 
         The model defined in huaweicloud sdk
 

@@ -41,7 +41,7 @@ class ResponseCustomerGateway:
     }
 
     def __init__(self, id=None, name=None, bgp_asn=None, id_type=None, id_value=None, ca_certificate=None, created_at=None, updated_at=None, tags=None):
-        """ResponseCustomerGateway
+        r"""ResponseCustomerGateway
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ResponseCustomerGateway:
 
     @property
     def id(self):
-        """Gets the id of this ResponseCustomerGateway.
+        r"""Gets the id of this ResponseCustomerGateway.
 
         网关的ID
 
@@ -110,7 +110,7 @@ class ResponseCustomerGateway:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResponseCustomerGateway.
+        r"""Sets the id of this ResponseCustomerGateway.
 
         网关的ID
 
@@ -121,7 +121,7 @@ class ResponseCustomerGateway:
 
     @property
     def name(self):
-        """Gets the name of this ResponseCustomerGateway.
+        r"""Gets the name of this ResponseCustomerGateway.
 
         网关名称
 
@@ -132,7 +132,7 @@ class ResponseCustomerGateway:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ResponseCustomerGateway.
+        r"""Sets the name of this ResponseCustomerGateway.
 
         网关名称
 
@@ -143,7 +143,7 @@ class ResponseCustomerGateway:
 
     @property
     def bgp_asn(self):
-        """Gets the bgp_asn of this ResponseCustomerGateway.
+        r"""Gets the bgp_asn of this ResponseCustomerGateway.
 
         网关的bgp asn号
 
@@ -154,7 +154,7 @@ class ResponseCustomerGateway:
 
     @bgp_asn.setter
     def bgp_asn(self, bgp_asn):
-        """Sets the bgp_asn of this ResponseCustomerGateway.
+        r"""Sets the bgp_asn of this ResponseCustomerGateway.
 
         网关的bgp asn号
 
@@ -165,7 +165,7 @@ class ResponseCustomerGateway:
 
     @property
     def id_type(self):
-        """Gets the id_type of this ResponseCustomerGateway.
+        r"""Gets the id_type of this ResponseCustomerGateway.
 
         对端网关标识类型
 
@@ -176,7 +176,7 @@ class ResponseCustomerGateway:
 
     @id_type.setter
     def id_type(self, id_type):
-        """Sets the id_type of this ResponseCustomerGateway.
+        r"""Sets the id_type of this ResponseCustomerGateway.
 
         对端网关标识类型
 
@@ -187,7 +187,7 @@ class ResponseCustomerGateway:
 
     @property
     def id_value(self):
-        """Gets the id_value of this ResponseCustomerGateway.
+        r"""Gets the id_value of this ResponseCustomerGateway.
 
         对端网关标识值
 
@@ -198,7 +198,7 @@ class ResponseCustomerGateway:
 
     @id_value.setter
     def id_value(self, id_value):
-        """Sets the id_value of this ResponseCustomerGateway.
+        r"""Sets the id_value of this ResponseCustomerGateway.
 
         对端网关标识值
 
@@ -209,7 +209,7 @@ class ResponseCustomerGateway:
 
     @property
     def ca_certificate(self):
-        """Gets the ca_certificate of this ResponseCustomerGateway.
+        r"""Gets the ca_certificate of this ResponseCustomerGateway.
 
         :return: The ca_certificate of this ResponseCustomerGateway.
         :rtype: :class:`huaweicloudsdkvpn.v5.CaCertificate`
@@ -218,7 +218,7 @@ class ResponseCustomerGateway:
 
     @ca_certificate.setter
     def ca_certificate(self, ca_certificate):
-        """Sets the ca_certificate of this ResponseCustomerGateway.
+        r"""Sets the ca_certificate of this ResponseCustomerGateway.
 
         :param ca_certificate: The ca_certificate of this ResponseCustomerGateway.
         :type ca_certificate: :class:`huaweicloudsdkvpn.v5.CaCertificate`
@@ -227,7 +227,7 @@ class ResponseCustomerGateway:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ResponseCustomerGateway.
+        r"""Gets the created_at of this ResponseCustomerGateway.
 
         创建时间
 
@@ -238,7 +238,7 @@ class ResponseCustomerGateway:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ResponseCustomerGateway.
+        r"""Sets the created_at of this ResponseCustomerGateway.
 
         创建时间
 
@@ -249,7 +249,7 @@ class ResponseCustomerGateway:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ResponseCustomerGateway.
+        r"""Gets the updated_at of this ResponseCustomerGateway.
 
         更新时间
 
@@ -260,7 +260,7 @@ class ResponseCustomerGateway:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ResponseCustomerGateway.
+        r"""Sets the updated_at of this ResponseCustomerGateway.
 
         更新时间
 
@@ -271,7 +271,7 @@ class ResponseCustomerGateway:
 
     @property
     def tags(self):
-        """Gets the tags of this ResponseCustomerGateway.
+        r"""Gets the tags of this ResponseCustomerGateway.
 
         标签
 
@@ -282,7 +282,7 @@ class ResponseCustomerGateway:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ResponseCustomerGateway.
+        r"""Sets the tags of this ResponseCustomerGateway.
 
         标签
 

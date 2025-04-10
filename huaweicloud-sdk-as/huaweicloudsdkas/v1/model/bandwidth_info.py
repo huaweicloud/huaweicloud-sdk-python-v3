@@ -31,7 +31,7 @@ class BandwidthInfo:
     }
 
     def __init__(self, size=None, share_type=None, charging_mode=None, id=None):
-        """BandwidthInfo
+        r"""BandwidthInfo
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class BandwidthInfo:
 
     @property
     def size(self):
-        """Gets the size of this BandwidthInfo.
+        r"""Gets the size of this BandwidthInfo.
 
         带宽（Mbit/s），按带宽分配取值范围为[1,2000]，按流量分配取值范围为[1,300]。  说明： - 若share_type是PER，该参数为必选项。若share_type是WHOLE，会忽略该参数。 - 具体范围以各区域配置为准，请参见控制台对应页面显示。 - 创建带宽时的最小单位会根据带宽取值范围不同存在差异。 - 小于等于300Mbit/s：默认最小单位为1Mbit/s。 - 300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。 - 大于1000Mbit/s：默认最小单位为500Mbit/s。
 
@@ -74,7 +74,7 @@ class BandwidthInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BandwidthInfo.
+        r"""Sets the size of this BandwidthInfo.
 
         带宽（Mbit/s），按带宽分配取值范围为[1,2000]，按流量分配取值范围为[1,300]。  说明： - 若share_type是PER，该参数为必选项。若share_type是WHOLE，会忽略该参数。 - 具体范围以各区域配置为准，请参见控制台对应页面显示。 - 创建带宽时的最小单位会根据带宽取值范围不同存在差异。 - 小于等于300Mbit/s：默认最小单位为1Mbit/s。 - 300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。 - 大于1000Mbit/s：默认最小单位为500Mbit/s。
 
@@ -85,7 +85,7 @@ class BandwidthInfo:
 
     @property
     def share_type(self):
-        """Gets the share_type of this BandwidthInfo.
+        r"""Gets the share_type of this BandwidthInfo.
 
         带宽的共享类型。共享类型枚举：PER：独享型。WHOLE：共享型。
 
@@ -96,7 +96,7 @@ class BandwidthInfo:
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this BandwidthInfo.
+        r"""Sets the share_type of this BandwidthInfo.
 
         带宽的共享类型。共享类型枚举：PER：独享型。WHOLE：共享型。
 
@@ -107,7 +107,7 @@ class BandwidthInfo:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this BandwidthInfo.
+        r"""Gets the charging_mode of this BandwidthInfo.
 
         带宽的计费类型。字段值为“bandwidth”，表示按带宽计费。字段值为“traffic”，表示按流量计费。字段为其它值，会导致创建云服务器失败。如果share_type是PER，该参数为必选项。如果share_type是WHOLE，会忽略该参数。
 
@@ -118,7 +118,7 @@ class BandwidthInfo:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this BandwidthInfo.
+        r"""Sets the charging_mode of this BandwidthInfo.
 
         带宽的计费类型。字段值为“bandwidth”，表示按带宽计费。字段值为“traffic”，表示按流量计费。字段为其它值，会导致创建云服务器失败。如果share_type是PER，该参数为必选项。如果share_type是WHOLE，会忽略该参数。
 
@@ -129,7 +129,7 @@ class BandwidthInfo:
 
     @property
     def id(self):
-        """Gets the id of this BandwidthInfo.
+        r"""Gets the id of this BandwidthInfo.
 
         带宽ID，使用共享型带宽时，可以选择之前创建的共享带宽来创建弹性IP。如果share_type是PER，会忽略该参数。如果share_type是WHOLE，该参数为必选项。
 
@@ -140,7 +140,7 @@ class BandwidthInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BandwidthInfo.
+        r"""Sets the id of this BandwidthInfo.
 
         带宽ID，使用共享型带宽时，可以选择之前创建的共享带宽来创建弹性IP。如果share_type是PER，会忽略该参数。如果share_type是WHOLE，该参数为必选项。
 

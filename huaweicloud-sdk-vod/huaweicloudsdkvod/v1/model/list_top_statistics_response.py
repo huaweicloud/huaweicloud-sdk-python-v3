@@ -26,7 +26,7 @@ class ListTopStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, top_urls=None):
-        """ListTopStatisticsResponse
+        r"""ListTopStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTopStatisticsResponse(SdkResponse):
 
     @property
     def top_urls(self):
-        """Gets the top_urls of this ListTopStatisticsResponse.
+        r"""Gets the top_urls of this ListTopStatisticsResponse.
 
         :return: The top_urls of this ListTopStatisticsResponse.
         :rtype: list[:class:`huaweicloudsdkvod.v1.TopUrl`]
@@ -53,7 +53,7 @@ class ListTopStatisticsResponse(SdkResponse):
 
     @top_urls.setter
     def top_urls(self, top_urls):
-        """Sets the top_urls of this ListTopStatisticsResponse.
+        r"""Sets the top_urls of this ListTopStatisticsResponse.
 
         :param top_urls: The top_urls of this ListTopStatisticsResponse.
         :type top_urls: list[:class:`huaweicloudsdkvod.v1.TopUrl`]

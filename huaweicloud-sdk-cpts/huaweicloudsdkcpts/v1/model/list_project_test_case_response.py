@@ -30,7 +30,7 @@ class ListProjectTestCaseResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, directory=None):
-        """ListProjectTestCaseResponse
+        r"""ListProjectTestCaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListProjectTestCaseResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListProjectTestCaseResponse.
+        r"""Gets the code of this ListProjectTestCaseResponse.
 
         状态码
 
@@ -69,7 +69,7 @@ class ListProjectTestCaseResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListProjectTestCaseResponse.
+        r"""Sets the code of this ListProjectTestCaseResponse.
 
         状态码
 
@@ -80,7 +80,7 @@ class ListProjectTestCaseResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListProjectTestCaseResponse.
+        r"""Gets the message of this ListProjectTestCaseResponse.
 
         描述
 
@@ -91,7 +91,7 @@ class ListProjectTestCaseResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListProjectTestCaseResponse.
+        r"""Sets the message of this ListProjectTestCaseResponse.
 
         描述
 
@@ -102,7 +102,7 @@ class ListProjectTestCaseResponse(SdkResponse):
 
     @property
     def directory(self):
-        """Gets the directory of this ListProjectTestCaseResponse.
+        r"""Gets the directory of this ListProjectTestCaseResponse.
 
         用例集
 
@@ -113,7 +113,7 @@ class ListProjectTestCaseResponse(SdkResponse):
 
     @directory.setter
     def directory(self, directory):
-        """Sets the directory of this ListProjectTestCaseResponse.
+        r"""Sets the directory of this ListProjectTestCaseResponse.
 
         用例集
 

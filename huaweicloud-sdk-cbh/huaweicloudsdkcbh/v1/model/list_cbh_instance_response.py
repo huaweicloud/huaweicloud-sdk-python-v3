@@ -30,7 +30,7 @@ class ListCbhInstanceResponse(SdkResponse):
     }
 
     def __init__(self, total=None, quota_detail=None, instance=None):
-        """ListCbhInstanceResponse
+        r"""ListCbhInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCbhInstanceResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListCbhInstanceResponse.
+        r"""Gets the total of this ListCbhInstanceResponse.
 
         云堡垒机实例总数。
 
@@ -69,7 +69,7 @@ class ListCbhInstanceResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListCbhInstanceResponse.
+        r"""Sets the total of this ListCbhInstanceResponse.
 
         云堡垒机实例总数。
 
@@ -80,7 +80,7 @@ class ListCbhInstanceResponse(SdkResponse):
 
     @property
     def quota_detail(self):
-        """Gets the quota_detail of this ListCbhInstanceResponse.
+        r"""Gets the quota_detail of this ListCbhInstanceResponse.
 
         :return: The quota_detail of this ListCbhInstanceResponse.
         :rtype: :class:`huaweicloudsdkcbh.v1.QuotaDetail`
@@ -89,7 +89,7 @@ class ListCbhInstanceResponse(SdkResponse):
 
     @quota_detail.setter
     def quota_detail(self, quota_detail):
-        """Sets the quota_detail of this ListCbhInstanceResponse.
+        r"""Sets the quota_detail of this ListCbhInstanceResponse.
 
         :param quota_detail: The quota_detail of this ListCbhInstanceResponse.
         :type quota_detail: :class:`huaweicloudsdkcbh.v1.QuotaDetail`
@@ -98,7 +98,7 @@ class ListCbhInstanceResponse(SdkResponse):
 
     @property
     def instance(self):
-        """Gets the instance of this ListCbhInstanceResponse.
+        r"""Gets the instance of this ListCbhInstanceResponse.
 
         云堡垒机实例列表信息。
 
@@ -109,7 +109,7 @@ class ListCbhInstanceResponse(SdkResponse):
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ListCbhInstanceResponse.
+        r"""Sets the instance of this ListCbhInstanceResponse.
 
         云堡垒机实例列表信息。
 

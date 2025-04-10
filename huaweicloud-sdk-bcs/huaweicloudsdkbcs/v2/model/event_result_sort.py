@@ -27,7 +27,7 @@ class EventResultSort:
     }
 
     def __init__(self, order_by=None, order=None):
-        """EventResultSort
+        r"""EventResultSort
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EventResultSort:
 
     @property
     def order_by(self):
-        """Gets the order_by of this EventResultSort.
+        r"""Gets the order_by of this EventResultSort.
 
         排序字段列表。会根据列表中定义顺序对返回列表最排序
 
@@ -61,7 +61,7 @@ class EventResultSort:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this EventResultSort.
+        r"""Sets the order_by of this EventResultSort.
 
         排序字段列表。会根据列表中定义顺序对返回列表最排序
 
@@ -72,7 +72,7 @@ class EventResultSort:
 
     @property
     def order(self):
-        """Gets the order of this EventResultSort.
+        r"""Gets the order of this EventResultSort.
 
         排序方式枚举值。asc代表正序，desc代表倒序
 
@@ -83,7 +83,7 @@ class EventResultSort:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this EventResultSort.
+        r"""Sets the order of this EventResultSort.
 
         排序方式枚举值。asc代表正序，desc代表倒序
 

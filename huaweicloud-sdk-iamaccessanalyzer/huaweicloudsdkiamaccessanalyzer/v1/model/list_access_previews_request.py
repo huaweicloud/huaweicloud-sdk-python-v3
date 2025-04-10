@@ -29,7 +29,7 @@ class ListAccessPreviewsRequest:
     }
 
     def __init__(self, analyzer_id=None, limit=None, marker=None):
-        """ListAccessPreviewsRequest
+        r"""ListAccessPreviewsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAccessPreviewsRequest:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this ListAccessPreviewsRequest.
+        r"""Gets the analyzer_id of this ListAccessPreviewsRequest.
 
         分析器的唯一标识符。
 
@@ -67,7 +67,7 @@ class ListAccessPreviewsRequest:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this ListAccessPreviewsRequest.
+        r"""Sets the analyzer_id of this ListAccessPreviewsRequest.
 
         分析器的唯一标识符。
 
@@ -78,7 +78,7 @@ class ListAccessPreviewsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAccessPreviewsRequest.
+        r"""Gets the limit of this ListAccessPreviewsRequest.
 
         单页最大结果数。
 
@@ -89,7 +89,7 @@ class ListAccessPreviewsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAccessPreviewsRequest.
+        r"""Sets the limit of this ListAccessPreviewsRequest.
 
         单页最大结果数。
 
@@ -100,7 +100,7 @@ class ListAccessPreviewsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAccessPreviewsRequest.
+        r"""Gets the marker of this ListAccessPreviewsRequest.
 
         页面标记。
 
@@ -111,7 +111,7 @@ class ListAccessPreviewsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAccessPreviewsRequest.
+        r"""Sets the marker of this ListAccessPreviewsRequest.
 
         页面标记。
 

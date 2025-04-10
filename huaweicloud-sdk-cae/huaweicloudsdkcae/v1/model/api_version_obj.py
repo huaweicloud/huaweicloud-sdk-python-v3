@@ -26,7 +26,7 @@ class ApiVersionObj:
     }
 
     def __init__(self):
-        """ApiVersionObj
+        r"""ApiVersionObj
 
         The model defined in huaweicloud sdk
 

@@ -43,7 +43,7 @@ class AccessAkskVO:
     }
 
     def __init__(self, id=None, gmt_create=None, gmt_modify=None, inner_domain_id=None, ak=None, sk=None, status=None, descp=None, gmt_create_timestamp=None, gmt_modify_timestamp=None):
-        """AccessAkskVO
+        r"""AccessAkskVO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AccessAkskVO:
 
     @property
     def id(self):
-        """Gets the id of this AccessAkskVO.
+        r"""Gets the id of this AccessAkskVO.
 
         ak/sk的id。
 
@@ -117,7 +117,7 @@ class AccessAkskVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AccessAkskVO.
+        r"""Sets the id of this AccessAkskVO.
 
         ak/sk的id。
 
@@ -128,7 +128,7 @@ class AccessAkskVO:
 
     @property
     def gmt_create(self):
-        """Gets the gmt_create of this AccessAkskVO.
+        r"""Gets the gmt_create of this AccessAkskVO.
 
         ak/sk的生成时间。
 
@@ -139,7 +139,7 @@ class AccessAkskVO:
 
     @gmt_create.setter
     def gmt_create(self, gmt_create):
-        """Sets the gmt_create of this AccessAkskVO.
+        r"""Sets the gmt_create of this AccessAkskVO.
 
         ak/sk的生成时间。
 
@@ -150,7 +150,7 @@ class AccessAkskVO:
 
     @property
     def gmt_modify(self):
-        """Gets the gmt_modify of this AccessAkskVO.
+        r"""Gets the gmt_modify of this AccessAkskVO.
 
         ak/sk的修改时间。
 
@@ -161,7 +161,7 @@ class AccessAkskVO:
 
     @gmt_modify.setter
     def gmt_modify(self, gmt_modify):
-        """Sets the gmt_modify of this AccessAkskVO.
+        r"""Sets the gmt_modify of this AccessAkskVO.
 
         ak/sk的修改时间。
 
@@ -172,7 +172,7 @@ class AccessAkskVO:
 
     @property
     def inner_domain_id(self):
-        """Gets the inner_domain_id of this AccessAkskVO.
+        r"""Gets the inner_domain_id of this AccessAkskVO.
 
         内部租户id。
 
@@ -183,7 +183,7 @@ class AccessAkskVO:
 
     @inner_domain_id.setter
     def inner_domain_id(self, inner_domain_id):
-        """Sets the inner_domain_id of this AccessAkskVO.
+        r"""Sets the inner_domain_id of this AccessAkskVO.
 
         内部租户id。
 
@@ -194,7 +194,7 @@ class AccessAkskVO:
 
     @property
     def ak(self):
-        """Gets the ak of this AccessAkskVO.
+        r"""Gets the ak of this AccessAkskVO.
 
         生成的ak。
 
@@ -205,7 +205,7 @@ class AccessAkskVO:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this AccessAkskVO.
+        r"""Sets the ak of this AccessAkskVO.
 
         生成的ak。
 
@@ -216,7 +216,7 @@ class AccessAkskVO:
 
     @property
     def sk(self):
-        """Gets the sk of this AccessAkskVO.
+        r"""Gets the sk of this AccessAkskVO.
 
         生成的sk。
 
@@ -227,7 +227,7 @@ class AccessAkskVO:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this AccessAkskVO.
+        r"""Sets the sk of this AccessAkskVO.
 
         生成的sk。
 
@@ -238,7 +238,7 @@ class AccessAkskVO:
 
     @property
     def status(self):
-        """Gets the status of this AccessAkskVO.
+        r"""Gets the status of this AccessAkskVO.
 
         ak/sk的状态。
 
@@ -249,7 +249,7 @@ class AccessAkskVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AccessAkskVO.
+        r"""Sets the status of this AccessAkskVO.
 
         ak/sk的状态。
 
@@ -260,7 +260,7 @@ class AccessAkskVO:
 
     @property
     def descp(self):
-        """Gets the descp of this AccessAkskVO.
+        r"""Gets the descp of this AccessAkskVO.
 
         ak/sk的描述信息。
 
@@ -271,7 +271,7 @@ class AccessAkskVO:
 
     @descp.setter
     def descp(self, descp):
-        """Sets the descp of this AccessAkskVO.
+        r"""Sets the descp of this AccessAkskVO.
 
         ak/sk的描述信息。
 
@@ -282,7 +282,7 @@ class AccessAkskVO:
 
     @property
     def gmt_create_timestamp(self):
-        """Gets the gmt_create_timestamp of this AccessAkskVO.
+        r"""Gets the gmt_create_timestamp of this AccessAkskVO.
 
         ak/sk的生成时间戳。
 
@@ -293,7 +293,7 @@ class AccessAkskVO:
 
     @gmt_create_timestamp.setter
     def gmt_create_timestamp(self, gmt_create_timestamp):
-        """Sets the gmt_create_timestamp of this AccessAkskVO.
+        r"""Sets the gmt_create_timestamp of this AccessAkskVO.
 
         ak/sk的生成时间戳。
 
@@ -304,7 +304,7 @@ class AccessAkskVO:
 
     @property
     def gmt_modify_timestamp(self):
-        """Gets the gmt_modify_timestamp of this AccessAkskVO.
+        r"""Gets the gmt_modify_timestamp of this AccessAkskVO.
 
         ak/sk的修改时间戳。
 
@@ -315,7 +315,7 @@ class AccessAkskVO:
 
     @gmt_modify_timestamp.setter
     def gmt_modify_timestamp(self, gmt_modify_timestamp):
-        """Sets the gmt_modify_timestamp of this AccessAkskVO.
+        r"""Sets the gmt_modify_timestamp of this AccessAkskVO.
 
         ak/sk的修改时间戳。
 

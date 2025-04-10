@@ -27,7 +27,7 @@ class ModelProperty:
     }
 
     def __init__(self, phone_id=None, _property=None):
-        """ModelProperty
+        r"""ModelProperty
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ModelProperty:
 
     @property
     def phone_id(self):
-        """Gets the phone_id of this ModelProperty.
+        r"""Gets the phone_id of this ModelProperty.
 
         云手机id，不超过32个字节。
 
@@ -59,7 +59,7 @@ class ModelProperty:
 
     @phone_id.setter
     def phone_id(self, phone_id):
-        """Sets the phone_id of this ModelProperty.
+        r"""Sets the phone_id of this ModelProperty.
 
         云手机id，不超过32个字节。
 
@@ -70,7 +70,7 @@ class ModelProperty:
 
     @property
     def _property(self):
-        """Gets the _property of this ModelProperty.
+        r"""Gets the _property of this ModelProperty.
 
         云手机属性列表，为Json格式字符串。
 
@@ -81,7 +81,7 @@ class ModelProperty:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this ModelProperty.
+        r"""Sets the _property of this ModelProperty.
 
         云手机属性列表，为Json格式字符串。
 

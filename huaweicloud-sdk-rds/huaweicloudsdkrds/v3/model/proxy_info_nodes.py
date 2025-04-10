@@ -33,7 +33,7 @@ class ProxyInfoNodes:
     }
 
     def __init__(self, id=None, status=None, role=None, az_code=None, frozen_flag=None):
-        """ProxyInfoNodes
+        r"""ProxyInfoNodes
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ProxyInfoNodes:
 
     @property
     def id(self):
-        """Gets the id of this ProxyInfoNodes.
+        r"""Gets the id of this ProxyInfoNodes.
 
         数据库代理节点ID。
 
@@ -82,7 +82,7 @@ class ProxyInfoNodes:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProxyInfoNodes.
+        r"""Sets the id of this ProxyInfoNodes.
 
         数据库代理节点ID。
 
@@ -93,7 +93,7 @@ class ProxyInfoNodes:
 
     @property
     def status(self):
-        """Gets the status of this ProxyInfoNodes.
+        r"""Gets the status of this ProxyInfoNodes.
 
         数据库代理节点状态。  取值范围： NORMAL: 表示节点正常。 ABNORMAL: 表示节点节点状态异常。 CREATING: 表示节点正在创建中。 CREATEFAIL: 表示节点创建失败。
 
@@ -104,7 +104,7 @@ class ProxyInfoNodes:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ProxyInfoNodes.
+        r"""Sets the status of this ProxyInfoNodes.
 
         数据库代理节点状态。  取值范围： NORMAL: 表示节点正常。 ABNORMAL: 表示节点节点状态异常。 CREATING: 表示节点正在创建中。 CREATEFAIL: 表示节点创建失败。
 
@@ -115,7 +115,7 @@ class ProxyInfoNodes:
 
     @property
     def role(self):
-        """Gets the role of this ProxyInfoNodes.
+        r"""Gets the role of this ProxyInfoNodes.
 
         数据库代理节点角色：  master：主节点。  slave：备节点。
 
@@ -126,7 +126,7 @@ class ProxyInfoNodes:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ProxyInfoNodes.
+        r"""Sets the role of this ProxyInfoNodes.
 
         数据库代理节点角色：  master：主节点。  slave：备节点。
 
@@ -137,7 +137,7 @@ class ProxyInfoNodes:
 
     @property
     def az_code(self):
-        """Gets the az_code of this ProxyInfoNodes.
+        r"""Gets the az_code of this ProxyInfoNodes.
 
         数据库代理节点所在可用区。
 
@@ -148,7 +148,7 @@ class ProxyInfoNodes:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this ProxyInfoNodes.
+        r"""Sets the az_code of this ProxyInfoNodes.
 
         数据库代理节点所在可用区。
 
@@ -159,7 +159,7 @@ class ProxyInfoNodes:
 
     @property
     def frozen_flag(self):
-        """Gets the frozen_flag of this ProxyInfoNodes.
+        r"""Gets the frozen_flag of this ProxyInfoNodes.
 
         数据库代理节点是否被冻结。  取值范围：  0：未冻结。  1：冻结。
 
@@ -170,7 +170,7 @@ class ProxyInfoNodes:
 
     @frozen_flag.setter
     def frozen_flag(self, frozen_flag):
-        """Sets the frozen_flag of this ProxyInfoNodes.
+        r"""Sets the frozen_flag of this ProxyInfoNodes.
 
         数据库代理节点是否被冻结。  取值范围：  0：未冻结。  1：冻结。
 

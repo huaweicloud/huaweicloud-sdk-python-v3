@@ -29,7 +29,7 @@ class PutDiskInfoReq:
     }
 
     def __init__(self, disks=None, volumegroups=None, btrfs_list=None):
-        """PutDiskInfoReq
+        r"""PutDiskInfoReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PutDiskInfoReq:
 
     @property
     def disks(self):
-        """Gets the disks of this PutDiskInfoReq.
+        r"""Gets the disks of this PutDiskInfoReq.
 
         更新的磁盘信息
 
@@ -68,7 +68,7 @@ class PutDiskInfoReq:
 
     @disks.setter
     def disks(self, disks):
-        """Sets the disks of this PutDiskInfoReq.
+        r"""Sets the disks of this PutDiskInfoReq.
 
         更新的磁盘信息
 
@@ -79,7 +79,7 @@ class PutDiskInfoReq:
 
     @property
     def volumegroups(self):
-        """Gets the volumegroups of this PutDiskInfoReq.
+        r"""Gets the volumegroups of this PutDiskInfoReq.
 
         更新的卷信息
 
@@ -90,7 +90,7 @@ class PutDiskInfoReq:
 
     @volumegroups.setter
     def volumegroups(self, volumegroups):
-        """Sets the volumegroups of this PutDiskInfoReq.
+        r"""Sets the volumegroups of this PutDiskInfoReq.
 
         更新的卷信息
 
@@ -101,7 +101,7 @@ class PutDiskInfoReq:
 
     @property
     def btrfs_list(self):
-        """Gets the btrfs_list of this PutDiskInfoReq.
+        r"""Gets the btrfs_list of this PutDiskInfoReq.
 
         更新的btrfs信息
 
@@ -112,7 +112,7 @@ class PutDiskInfoReq:
 
     @btrfs_list.setter
     def btrfs_list(self, btrfs_list):
-        """Sets the btrfs_list of this PutDiskInfoReq.
+        r"""Sets the btrfs_list of this PutDiskInfoReq.
 
         更新的btrfs信息
 

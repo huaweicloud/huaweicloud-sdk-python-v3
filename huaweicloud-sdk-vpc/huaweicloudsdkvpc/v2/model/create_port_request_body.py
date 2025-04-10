@@ -25,7 +25,7 @@ class CreatePortRequestBody:
     }
 
     def __init__(self, port=None):
-        """CreatePortRequestBody
+        r"""CreatePortRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreatePortRequestBody:
 
     @property
     def port(self):
-        """Gets the port of this CreatePortRequestBody.
+        r"""Gets the port of this CreatePortRequestBody.
 
         :return: The port of this CreatePortRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.CreatePortOption`
@@ -51,7 +51,7 @@ class CreatePortRequestBody:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this CreatePortRequestBody.
+        r"""Sets the port of this CreatePortRequestBody.
 
         :param port: The port of this CreatePortRequestBody.
         :type port: :class:`huaweicloudsdkvpc.v2.CreatePortOption`

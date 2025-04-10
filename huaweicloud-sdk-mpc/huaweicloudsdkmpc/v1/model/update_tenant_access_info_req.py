@@ -27,7 +27,7 @@ class UpdateTenantAccessInfoReq:
     }
 
     def __init__(self, is_open=None, agreement_version=None):
-        """UpdateTenantAccessInfoReq
+        r"""UpdateTenantAccessInfoReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateTenantAccessInfoReq:
 
     @property
     def is_open(self):
-        """Gets the is_open of this UpdateTenantAccessInfoReq.
+        r"""Gets the is_open of this UpdateTenantAccessInfoReq.
 
         是否已开通服务 - false：未开通 - true：已开通 
 
@@ -61,7 +61,7 @@ class UpdateTenantAccessInfoReq:
 
     @is_open.setter
     def is_open(self, is_open):
-        """Sets the is_open of this UpdateTenantAccessInfoReq.
+        r"""Sets the is_open of this UpdateTenantAccessInfoReq.
 
         是否已开通服务 - false：未开通 - true：已开通 
 
@@ -72,7 +72,7 @@ class UpdateTenantAccessInfoReq:
 
     @property
     def agreement_version(self):
-        """Gets the agreement_version of this UpdateTenantAccessInfoReq.
+        r"""Gets the agreement_version of this UpdateTenantAccessInfoReq.
 
         服务协议版本 
 
@@ -83,7 +83,7 @@ class UpdateTenantAccessInfoReq:
 
     @agreement_version.setter
     def agreement_version(self, agreement_version):
-        """Sets the agreement_version of this UpdateTenantAccessInfoReq.
+        r"""Sets the agreement_version of this UpdateTenantAccessInfoReq.
 
         服务协议版本 
 

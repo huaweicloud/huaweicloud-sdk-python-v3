@@ -25,7 +25,7 @@ class FilePath:
     }
 
     def __init__(self, path=None):
-        """FilePath
+        r"""FilePath
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class FilePath:
 
     @property
     def path(self):
-        """Gets the path of this FilePath.
+        r"""Gets the path of this FilePath.
 
         文件在OBS上的路径
 
@@ -53,7 +53,7 @@ class FilePath:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this FilePath.
+        r"""Sets the path of this FilePath.
 
         文件在OBS上的路径
 

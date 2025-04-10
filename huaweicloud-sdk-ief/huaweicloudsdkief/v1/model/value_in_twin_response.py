@@ -31,7 +31,7 @@ class ValueInTwinResponse:
     }
 
     def __init__(self, excepted=None, actual=None, metadata=None, optional=None):
-        """ValueInTwinResponse
+        r"""ValueInTwinResponse
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ValueInTwinResponse:
 
     @property
     def excepted(self):
-        """Gets the excepted of this ValueInTwinResponse.
+        r"""Gets the excepted of this ValueInTwinResponse.
 
         :return: The excepted of this ValueInTwinResponse.
         :rtype: :class:`huaweicloudsdkief.v1.ExceptedActual`
@@ -73,7 +73,7 @@ class ValueInTwinResponse:
 
     @excepted.setter
     def excepted(self, excepted):
-        """Sets the excepted of this ValueInTwinResponse.
+        r"""Sets the excepted of this ValueInTwinResponse.
 
         :param excepted: The excepted of this ValueInTwinResponse.
         :type excepted: :class:`huaweicloudsdkief.v1.ExceptedActual`
@@ -82,7 +82,7 @@ class ValueInTwinResponse:
 
     @property
     def actual(self):
-        """Gets the actual of this ValueInTwinResponse.
+        r"""Gets the actual of this ValueInTwinResponse.
 
         :return: The actual of this ValueInTwinResponse.
         :rtype: :class:`huaweicloudsdkief.v1.ExceptedActual`
@@ -91,7 +91,7 @@ class ValueInTwinResponse:
 
     @actual.setter
     def actual(self, actual):
-        """Sets the actual of this ValueInTwinResponse.
+        r"""Sets the actual of this ValueInTwinResponse.
 
         :param actual: The actual of this ValueInTwinResponse.
         :type actual: :class:`huaweicloudsdkief.v1.ExceptedActual`
@@ -100,7 +100,7 @@ class ValueInTwinResponse:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ValueInTwinResponse.
+        r"""Gets the metadata of this ValueInTwinResponse.
 
         :return: The metadata of this ValueInTwinResponse.
         :rtype: :class:`huaweicloudsdkief.v1.Metadata`
@@ -109,7 +109,7 @@ class ValueInTwinResponse:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ValueInTwinResponse.
+        r"""Sets the metadata of this ValueInTwinResponse.
 
         :param metadata: The metadata of this ValueInTwinResponse.
         :type metadata: :class:`huaweicloudsdkief.v1.Metadata`
@@ -118,7 +118,7 @@ class ValueInTwinResponse:
 
     @property
     def optional(self):
-        """Gets the optional of this ValueInTwinResponse.
+        r"""Gets the optional of this ValueInTwinResponse.
 
         标识属性是否可选，默认为true，继承模板的属性默认为false
 
@@ -129,7 +129,7 @@ class ValueInTwinResponse:
 
     @optional.setter
     def optional(self, optional):
-        """Sets the optional of this ValueInTwinResponse.
+        r"""Sets the optional of this ValueInTwinResponse.
 
         标识属性是否可选，默认为true，继承模板的属性默认为false
 

@@ -25,7 +25,7 @@ class DeleteMetricOrEventAlarmRuleRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteMetricOrEventAlarmRuleRequest
+        r"""DeleteMetricOrEventAlarmRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteMetricOrEventAlarmRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteMetricOrEventAlarmRuleRequest.
+        r"""Gets the body of this DeleteMetricOrEventAlarmRuleRequest.
 
         :return: The body of this DeleteMetricOrEventAlarmRuleRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteAlarmRuleV4RequestBody`
@@ -52,7 +52,7 @@ class DeleteMetricOrEventAlarmRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteMetricOrEventAlarmRuleRequest.
+        r"""Sets the body of this DeleteMetricOrEventAlarmRuleRequest.
 
         :param body: The body of this DeleteMetricOrEventAlarmRuleRequest.
         :type body: :class:`huaweicloudsdkaom.v2.DeleteAlarmRuleV4RequestBody`

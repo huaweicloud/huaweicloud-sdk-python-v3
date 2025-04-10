@@ -29,7 +29,7 @@ class ReqCreateTag:
     }
 
     def __init__(self, project_id=None, resources=None, tags=None):
-        """ReqCreateTag
+        r"""ReqCreateTag
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ReqCreateTag:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ReqCreateTag.
+        r"""Gets the project_id of this ReqCreateTag.
 
         项目ID，resource_type为region级别服务时为必选项。
 
@@ -66,7 +66,7 @@ class ReqCreateTag:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ReqCreateTag.
+        r"""Sets the project_id of this ReqCreateTag.
 
         项目ID，resource_type为region级别服务时为必选项。
 
@@ -77,7 +77,7 @@ class ReqCreateTag:
 
     @property
     def resources(self):
-        """Gets the resources of this ReqCreateTag.
+        r"""Gets the resources of this ReqCreateTag.
 
         资源列表
 
@@ -88,7 +88,7 @@ class ReqCreateTag:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ReqCreateTag.
+        r"""Sets the resources of this ReqCreateTag.
 
         资源列表
 
@@ -99,7 +99,7 @@ class ReqCreateTag:
 
     @property
     def tags(self):
-        """Gets the tags of this ReqCreateTag.
+        r"""Gets the tags of this ReqCreateTag.
 
         标签列表
 
@@ -110,7 +110,7 @@ class ReqCreateTag:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ReqCreateTag.
+        r"""Sets the tags of this ReqCreateTag.
 
         标签列表
 

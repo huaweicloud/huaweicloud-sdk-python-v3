@@ -32,7 +32,7 @@ class ListInstanceTopSlowLogResponse(SdkResponse):
     }
 
     def __init__(self, top_execute_slow_logs=None, top_avg_query_time_slow_logs=None, top_max_query_time_slow_logs=None, rows_examined_exceeding=None):
-        """ListInstanceTopSlowLogResponse
+        r"""ListInstanceTopSlowLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListInstanceTopSlowLogResponse(SdkResponse):
 
     @property
     def top_execute_slow_logs(self):
-        """Gets the top_execute_slow_logs of this ListInstanceTopSlowLogResponse.
+        r"""Gets the top_execute_slow_logs of this ListInstanceTopSlowLogResponse.
 
         执行次数列表
 
@@ -76,7 +76,7 @@ class ListInstanceTopSlowLogResponse(SdkResponse):
 
     @top_execute_slow_logs.setter
     def top_execute_slow_logs(self, top_execute_slow_logs):
-        """Sets the top_execute_slow_logs of this ListInstanceTopSlowLogResponse.
+        r"""Sets the top_execute_slow_logs of this ListInstanceTopSlowLogResponse.
 
         执行次数列表
 
@@ -87,7 +87,7 @@ class ListInstanceTopSlowLogResponse(SdkResponse):
 
     @property
     def top_avg_query_time_slow_logs(self):
-        """Gets the top_avg_query_time_slow_logs of this ListInstanceTopSlowLogResponse.
+        r"""Gets the top_avg_query_time_slow_logs of this ListInstanceTopSlowLogResponse.
 
         平均执行时间列表
 
@@ -98,7 +98,7 @@ class ListInstanceTopSlowLogResponse(SdkResponse):
 
     @top_avg_query_time_slow_logs.setter
     def top_avg_query_time_slow_logs(self, top_avg_query_time_slow_logs):
-        """Sets the top_avg_query_time_slow_logs of this ListInstanceTopSlowLogResponse.
+        r"""Sets the top_avg_query_time_slow_logs of this ListInstanceTopSlowLogResponse.
 
         平均执行时间列表
 
@@ -109,7 +109,7 @@ class ListInstanceTopSlowLogResponse(SdkResponse):
 
     @property
     def top_max_query_time_slow_logs(self):
-        """Gets the top_max_query_time_slow_logs of this ListInstanceTopSlowLogResponse.
+        r"""Gets the top_max_query_time_slow_logs of this ListInstanceTopSlowLogResponse.
 
         最大执行时间列表
 
@@ -120,7 +120,7 @@ class ListInstanceTopSlowLogResponse(SdkResponse):
 
     @top_max_query_time_slow_logs.setter
     def top_max_query_time_slow_logs(self, top_max_query_time_slow_logs):
-        """Sets the top_max_query_time_slow_logs of this ListInstanceTopSlowLogResponse.
+        r"""Sets the top_max_query_time_slow_logs of this ListInstanceTopSlowLogResponse.
 
         最大执行时间列表
 
@@ -131,7 +131,7 @@ class ListInstanceTopSlowLogResponse(SdkResponse):
 
     @property
     def rows_examined_exceeding(self):
-        """Gets the rows_examined_exceeding of this ListInstanceTopSlowLogResponse.
+        r"""Gets the rows_examined_exceeding of this ListInstanceTopSlowLogResponse.
 
         扫描返回比列表
 
@@ -142,7 +142,7 @@ class ListInstanceTopSlowLogResponse(SdkResponse):
 
     @rows_examined_exceeding.setter
     def rows_examined_exceeding(self, rows_examined_exceeding):
-        """Sets the rows_examined_exceeding of this ListInstanceTopSlowLogResponse.
+        r"""Sets the rows_examined_exceeding of this ListInstanceTopSlowLogResponse.
 
         扫描返回比列表
 

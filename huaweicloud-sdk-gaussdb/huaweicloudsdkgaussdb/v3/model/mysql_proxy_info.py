@@ -29,7 +29,7 @@ class MysqlProxyInfo:
     }
 
     def __init__(self, pool_id=None, name=None, address=None):
-        """MysqlProxyInfo
+        r"""MysqlProxyInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MysqlProxyInfo:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this MysqlProxyInfo.
+        r"""Gets the pool_id of this MysqlProxyInfo.
 
         Proxy实例ID。
 
@@ -68,7 +68,7 @@ class MysqlProxyInfo:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this MysqlProxyInfo.
+        r"""Sets the pool_id of this MysqlProxyInfo.
 
         Proxy实例ID。
 
@@ -79,7 +79,7 @@ class MysqlProxyInfo:
 
     @property
     def name(self):
-        """Gets the name of this MysqlProxyInfo.
+        r"""Gets the name of this MysqlProxyInfo.
 
         Proxy实例名称。
 
@@ -90,7 +90,7 @@ class MysqlProxyInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MysqlProxyInfo.
+        r"""Sets the name of this MysqlProxyInfo.
 
         Proxy实例名称。
 
@@ -101,7 +101,7 @@ class MysqlProxyInfo:
 
     @property
     def address(self):
-        """Gets the address of this MysqlProxyInfo.
+        r"""Gets the address of this MysqlProxyInfo.
 
         Proxy读写分离地址。
 
@@ -112,7 +112,7 @@ class MysqlProxyInfo:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this MysqlProxyInfo.
+        r"""Sets the address of this MysqlProxyInfo.
 
         Proxy读写分离地址。
 

@@ -29,7 +29,7 @@ class LineCompareResultOverview:
     }
 
     def __init__(self, source_db_name=None, target_db_name=None, line_compare_result=None):
-        """LineCompareResultOverview
+        r"""LineCompareResultOverview
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class LineCompareResultOverview:
 
     @property
     def source_db_name(self):
-        """Gets the source_db_name of this LineCompareResultOverview.
+        r"""Gets the source_db_name of this LineCompareResultOverview.
 
         源库名称。
 
@@ -65,7 +65,7 @@ class LineCompareResultOverview:
 
     @source_db_name.setter
     def source_db_name(self, source_db_name):
-        """Sets the source_db_name of this LineCompareResultOverview.
+        r"""Sets the source_db_name of this LineCompareResultOverview.
 
         源库名称。
 
@@ -76,7 +76,7 @@ class LineCompareResultOverview:
 
     @property
     def target_db_name(self):
-        """Gets the target_db_name of this LineCompareResultOverview.
+        r"""Gets the target_db_name of this LineCompareResultOverview.
 
         目标库名称。
 
@@ -87,7 +87,7 @@ class LineCompareResultOverview:
 
     @target_db_name.setter
     def target_db_name(self, target_db_name):
-        """Sets the target_db_name of this LineCompareResultOverview.
+        r"""Sets the target_db_name of this LineCompareResultOverview.
 
         目标库名称。
 
@@ -98,7 +98,7 @@ class LineCompareResultOverview:
 
     @property
     def line_compare_result(self):
-        """Gets the line_compare_result of this LineCompareResultOverview.
+        r"""Gets the line_compare_result of this LineCompareResultOverview.
 
         对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 
@@ -109,7 +109,7 @@ class LineCompareResultOverview:
 
     @line_compare_result.setter
     def line_compare_result(self, line_compare_result):
-        """Sets the line_compare_result of this LineCompareResultOverview.
+        r"""Sets the line_compare_result of this LineCompareResultOverview.
 
         对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 

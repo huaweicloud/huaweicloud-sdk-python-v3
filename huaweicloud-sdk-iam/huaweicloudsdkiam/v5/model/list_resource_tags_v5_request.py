@@ -27,7 +27,7 @@ class ListResourceTagsV5Request:
     }
 
     def __init__(self, resource_id=None, resource_type=None):
-        """ListResourceTagsV5Request
+        r"""ListResourceTagsV5Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListResourceTagsV5Request:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListResourceTagsV5Request.
+        r"""Gets the resource_id of this ListResourceTagsV5Request.
 
         资源ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -59,7 +59,7 @@ class ListResourceTagsV5Request:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListResourceTagsV5Request.
+        r"""Sets the resource_id of this ListResourceTagsV5Request.
 
         资源ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -70,7 +70,7 @@ class ListResourceTagsV5Request:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListResourceTagsV5Request.
+        r"""Gets the resource_type of this ListResourceTagsV5Request.
 
         资源类型，可以为“信任委托”（agency）或“IAM用户”（user）。
 
@@ -81,7 +81,7 @@ class ListResourceTagsV5Request:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListResourceTagsV5Request.
+        r"""Sets the resource_type of this ListResourceTagsV5Request.
 
         资源类型，可以为“信任委托”（agency）或“IAM用户”（user）。
 

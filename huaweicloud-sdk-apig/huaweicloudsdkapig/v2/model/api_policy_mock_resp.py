@@ -37,7 +37,7 @@ class ApiPolicyMockResp:
     }
 
     def __init__(self, id=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None, result_content=None):
-        """ApiPolicyMockResp
+        r"""ApiPolicyMockResp
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ApiPolicyMockResp:
 
     @property
     def id(self):
-        """Gets the id of this ApiPolicyMockResp.
+        r"""Gets the id of this ApiPolicyMockResp.
 
         编号
 
@@ -93,7 +93,7 @@ class ApiPolicyMockResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiPolicyMockResp.
+        r"""Sets the id of this ApiPolicyMockResp.
 
         编号
 
@@ -104,7 +104,7 @@ class ApiPolicyMockResp:
 
     @property
     def effect_mode(self):
-        """Gets the effect_mode of this ApiPolicyMockResp.
+        r"""Gets the effect_mode of this ApiPolicyMockResp.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -115,7 +115,7 @@ class ApiPolicyMockResp:
 
     @effect_mode.setter
     def effect_mode(self, effect_mode):
-        """Sets the effect_mode of this ApiPolicyMockResp.
+        r"""Sets the effect_mode of this ApiPolicyMockResp.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -126,7 +126,7 @@ class ApiPolicyMockResp:
 
     @property
     def name(self):
-        """Gets the name of this ApiPolicyMockResp.
+        r"""Gets the name of this ApiPolicyMockResp.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -137,7 +137,7 @@ class ApiPolicyMockResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiPolicyMockResp.
+        r"""Sets the name of this ApiPolicyMockResp.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -148,7 +148,7 @@ class ApiPolicyMockResp:
 
     @property
     def backend_params(self):
-        """Gets the backend_params of this ApiPolicyMockResp.
+        r"""Gets the backend_params of this ApiPolicyMockResp.
 
         后端参数列表
 
@@ -159,7 +159,7 @@ class ApiPolicyMockResp:
 
     @backend_params.setter
     def backend_params(self, backend_params):
-        """Sets the backend_params of this ApiPolicyMockResp.
+        r"""Sets the backend_params of this ApiPolicyMockResp.
 
         后端参数列表
 
@@ -170,7 +170,7 @@ class ApiPolicyMockResp:
 
     @property
     def conditions(self):
-        """Gets the conditions of this ApiPolicyMockResp.
+        r"""Gets the conditions of this ApiPolicyMockResp.
 
         策略条件列表
 
@@ -181,7 +181,7 @@ class ApiPolicyMockResp:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ApiPolicyMockResp.
+        r"""Sets the conditions of this ApiPolicyMockResp.
 
         策略条件列表
 
@@ -192,7 +192,7 @@ class ApiPolicyMockResp:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ApiPolicyMockResp.
+        r"""Gets the authorizer_id of this ApiPolicyMockResp.
 
         后端自定义认证对象的ID
 
@@ -203,7 +203,7 @@ class ApiPolicyMockResp:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ApiPolicyMockResp.
+        r"""Sets the authorizer_id of this ApiPolicyMockResp.
 
         后端自定义认证对象的ID
 
@@ -214,7 +214,7 @@ class ApiPolicyMockResp:
 
     @property
     def result_content(self):
-        """Gets the result_content of this ApiPolicyMockResp.
+        r"""Gets the result_content of this ApiPolicyMockResp.
 
         返回结果
 
@@ -225,7 +225,7 @@ class ApiPolicyMockResp:
 
     @result_content.setter
     def result_content(self, result_content):
-        """Sets the result_content of this ApiPolicyMockResp.
+        r"""Sets the result_content of this ApiPolicyMockResp.
 
         返回结果
 

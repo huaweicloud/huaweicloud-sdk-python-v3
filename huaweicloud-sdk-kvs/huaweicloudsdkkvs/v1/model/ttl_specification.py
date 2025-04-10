@@ -29,7 +29,7 @@ class TtlSpecification:
     }
 
     def __init__(self, enable=None, expire_after_seconds=None, field_name=None):
-        """TtlSpecification
+        r"""TtlSpecification
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class TtlSpecification:
 
     @property
     def enable(self):
-        """Gets the enable of this TtlSpecification.
+        r"""Gets the enable of this TtlSpecification.
 
         TTL开关
 
@@ -67,7 +67,7 @@ class TtlSpecification:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this TtlSpecification.
+        r"""Sets the enable of this TtlSpecification.
 
         TTL开关
 
@@ -78,7 +78,7 @@ class TtlSpecification:
 
     @property
     def expire_after_seconds(self):
-        """Gets the expire_after_seconds of this TtlSpecification.
+        r"""Gets the expire_after_seconds of this TtlSpecification.
 
         生存时间，以秒为单位
 
@@ -89,7 +89,7 @@ class TtlSpecification:
 
     @expire_after_seconds.setter
     def expire_after_seconds(self, expire_after_seconds):
-        """Sets the expire_after_seconds of this TtlSpecification.
+        r"""Sets the expire_after_seconds of this TtlSpecification.
 
         生存时间，以秒为单位
 
@@ -100,7 +100,7 @@ class TtlSpecification:
 
     @property
     def field_name(self):
-        """Gets the field_name of this TtlSpecification.
+        r"""Gets the field_name of this TtlSpecification.
 
         文档中记录TTL过期时间的字段名，字段值为UTC时间，单位秒
 
@@ -111,7 +111,7 @@ class TtlSpecification:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this TtlSpecification.
+        r"""Sets the field_name of this TtlSpecification.
 
         文档中记录TTL过期时间的字段名，字段值为UTC时间，单位秒
 

@@ -42,7 +42,7 @@ class ListTtsaDataResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, start_time=None, end_time=None, is_tail=None, audio=None, blendshapes=None, animations=None, motions=None, x_request_id=None):
-        """ListTtsaDataResponse
+        r"""ListTtsaDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListTtsaDataResponse.
+        r"""Gets the job_id of this ListTtsaDataResponse.
 
         任务ID。
 
@@ -111,7 +111,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListTtsaDataResponse.
+        r"""Sets the job_id of this ListTtsaDataResponse.
 
         任务ID。
 
@@ -122,7 +122,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListTtsaDataResponse.
+        r"""Gets the start_time of this ListTtsaDataResponse.
 
         驱动任务开始时间，格式遵循：RFC 3339， 例 “2020-07-30T10:43:17Z”
 
@@ -133,7 +133,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListTtsaDataResponse.
+        r"""Sets the start_time of this ListTtsaDataResponse.
 
         驱动任务开始时间，格式遵循：RFC 3339， 例 “2020-07-30T10:43:17Z”
 
@@ -144,7 +144,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListTtsaDataResponse.
+        r"""Gets the end_time of this ListTtsaDataResponse.
 
         驱动任务结束时间，格式遵循：RFC 3339， 例 “2020-07-30T10:45:17Z”
 
@@ -155,7 +155,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListTtsaDataResponse.
+        r"""Sets the end_time of this ListTtsaDataResponse.
 
         驱动任务结束时间，格式遵循：RFC 3339， 例 “2020-07-30T10:45:17Z”
 
@@ -166,7 +166,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @property
     def is_tail(self):
-        """Gets the is_tail of this ListTtsaDataResponse.
+        r"""Gets the is_tail of this ListTtsaDataResponse.
 
         是否为尾部(任务数据已全部生成，后续没有新的数据)
 
@@ -177,7 +177,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @is_tail.setter
     def is_tail(self, is_tail):
-        """Sets the is_tail of this ListTtsaDataResponse.
+        r"""Sets the is_tail of this ListTtsaDataResponse.
 
         是否为尾部(任务数据已全部生成，后续没有新的数据)
 
@@ -188,7 +188,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @property
     def audio(self):
-        """Gets the audio of this ListTtsaDataResponse.
+        r"""Gets the audio of this ListTtsaDataResponse.
 
         音频数据，Base64编码，1秒内的数据。
 
@@ -199,7 +199,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @audio.setter
     def audio(self, audio):
-        """Sets the audio of this ListTtsaDataResponse.
+        r"""Sets the audio of this ListTtsaDataResponse.
 
         音频数据，Base64编码，1秒内的数据。
 
@@ -210,7 +210,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @property
     def blendshapes(self):
-        """Gets the blendshapes of this ListTtsaDataResponse.
+        r"""Gets the blendshapes of this ListTtsaDataResponse.
 
         语音驱动的表情基数据。
 
@@ -221,7 +221,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @blendshapes.setter
     def blendshapes(self, blendshapes):
-        """Sets the blendshapes of this ListTtsaDataResponse.
+        r"""Sets the blendshapes of this ListTtsaDataResponse.
 
         语音驱动的表情基数据。
 
@@ -232,7 +232,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @property
     def animations(self):
-        """Gets the animations of this ListTtsaDataResponse.
+        r"""Gets the animations of this ListTtsaDataResponse.
 
         手工指定的动作库动作数据。
 
@@ -243,7 +243,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @animations.setter
     def animations(self, animations):
-        """Sets the animations of this ListTtsaDataResponse.
+        r"""Sets the animations of this ListTtsaDataResponse.
 
         手工指定的动作库动作数据。
 
@@ -254,7 +254,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @property
     def motions(self):
-        """Gets the motions of this ListTtsaDataResponse.
+        r"""Gets the motions of this ListTtsaDataResponse.
 
         语义驱动的智能动作数据。
 
@@ -265,7 +265,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @motions.setter
     def motions(self, motions):
-        """Sets the motions of this ListTtsaDataResponse.
+        r"""Sets the motions of this ListTtsaDataResponse.
 
         语义驱动的智能动作数据。
 
@@ -276,7 +276,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListTtsaDataResponse.
+        r"""Gets the x_request_id of this ListTtsaDataResponse.
 
         :return: The x_request_id of this ListTtsaDataResponse.
         :rtype: str
@@ -285,7 +285,7 @@ class ListTtsaDataResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListTtsaDataResponse.
+        r"""Sets the x_request_id of this ListTtsaDataResponse.
 
         :param x_request_id: The x_request_id of this ListTtsaDataResponse.
         :type x_request_id: str

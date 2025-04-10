@@ -27,7 +27,7 @@ class ExecuteKillLogicalProcessesRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ExecuteKillLogicalProcessesRequest
+        r"""ExecuteKillLogicalProcessesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteKillLogicalProcessesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExecuteKillLogicalProcessesRequest.
+        r"""Gets the instance_id of this ExecuteKillLogicalProcessesRequest.
 
         DDM实例ID。
 
@@ -60,7 +60,7 @@ class ExecuteKillLogicalProcessesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExecuteKillLogicalProcessesRequest.
+        r"""Sets the instance_id of this ExecuteKillLogicalProcessesRequest.
 
         DDM实例ID。
 
@@ -71,7 +71,7 @@ class ExecuteKillLogicalProcessesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteKillLogicalProcessesRequest.
+        r"""Gets the body of this ExecuteKillLogicalProcessesRequest.
 
         :return: The body of this ExecuteKillLogicalProcessesRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.KillProcessesOpenRequest`
@@ -80,7 +80,7 @@ class ExecuteKillLogicalProcessesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteKillLogicalProcessesRequest.
+        r"""Sets the body of this ExecuteKillLogicalProcessesRequest.
 
         :param body: The body of this ExecuteKillLogicalProcessesRequest.
         :type body: :class:`huaweicloudsdkddm.v1.KillProcessesOpenRequest`

@@ -32,7 +32,7 @@ class ListRecommendWordsResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, recommend_words=None, total_count=None):
-        """ListRecommendWordsResponse
+        r"""ListRecommendWordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListRecommendWordsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListRecommendWordsResponse.
+        r"""Gets the error_code of this ListRecommendWordsResponse.
 
         错误码
 
@@ -76,7 +76,7 @@ class ListRecommendWordsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListRecommendWordsResponse.
+        r"""Sets the error_code of this ListRecommendWordsResponse.
 
         错误码
 
@@ -87,7 +87,7 @@ class ListRecommendWordsResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListRecommendWordsResponse.
+        r"""Gets the error_msg of this ListRecommendWordsResponse.
 
         错误描述
 
@@ -98,7 +98,7 @@ class ListRecommendWordsResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListRecommendWordsResponse.
+        r"""Sets the error_msg of this ListRecommendWordsResponse.
 
         错误描述
 
@@ -109,7 +109,7 @@ class ListRecommendWordsResponse(SdkResponse):
 
     @property
     def recommend_words(self):
-        """Gets the recommend_words of this ListRecommendWordsResponse.
+        r"""Gets the recommend_words of this ListRecommendWordsResponse.
 
         推荐词列表
 
@@ -120,7 +120,7 @@ class ListRecommendWordsResponse(SdkResponse):
 
     @recommend_words.setter
     def recommend_words(self, recommend_words):
-        """Sets the recommend_words of this ListRecommendWordsResponse.
+        r"""Sets the recommend_words of this ListRecommendWordsResponse.
 
         推荐词列表
 
@@ -131,7 +131,7 @@ class ListRecommendWordsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListRecommendWordsResponse.
+        r"""Gets the total_count of this ListRecommendWordsResponse.
 
         推荐词总数
 
@@ -142,7 +142,7 @@ class ListRecommendWordsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListRecommendWordsResponse.
+        r"""Sets the total_count of this ListRecommendWordsResponse.
 
         推荐词总数
 

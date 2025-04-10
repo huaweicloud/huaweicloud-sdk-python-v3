@@ -29,7 +29,7 @@ class ExtendedAvailabilityZone:
     }
 
     def __init__(self, name=None, public_border_group=None, available_specs=None):
-        """ExtendedAvailabilityZone
+        r"""ExtendedAvailabilityZone
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ExtendedAvailabilityZone:
 
     @property
     def name(self):
-        """Gets the name of this ExtendedAvailabilityZone.
+        r"""Gets the name of this ExtendedAvailabilityZone.
 
         可用区名称
 
@@ -68,7 +68,7 @@ class ExtendedAvailabilityZone:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExtendedAvailabilityZone.
+        r"""Sets the name of this ExtendedAvailabilityZone.
 
         可用区名称
 
@@ -79,7 +79,7 @@ class ExtendedAvailabilityZone:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ExtendedAvailabilityZone.
+        r"""Gets the public_border_group of this ExtendedAvailabilityZone.
 
         公共边界组
 
@@ -90,7 +90,7 @@ class ExtendedAvailabilityZone:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ExtendedAvailabilityZone.
+        r"""Sets the public_border_group of this ExtendedAvailabilityZone.
 
         公共边界组
 
@@ -101,7 +101,7 @@ class ExtendedAvailabilityZone:
 
     @property
     def available_specs(self):
-        """Gets the available_specs of this ExtendedAvailabilityZone.
+        r"""Gets the available_specs of this ExtendedAvailabilityZone.
 
         :return: The available_specs of this ExtendedAvailabilityZone.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.AvailableSpec`]
@@ -110,7 +110,7 @@ class ExtendedAvailabilityZone:
 
     @available_specs.setter
     def available_specs(self, available_specs):
-        """Sets the available_specs of this ExtendedAvailabilityZone.
+        r"""Sets the available_specs of this ExtendedAvailabilityZone.
 
         :param available_specs: The available_specs of this ExtendedAvailabilityZone.
         :type available_specs: list[:class:`huaweicloudsdkvpn.v5.AvailableSpec`]

@@ -28,7 +28,7 @@ class ListDeployTasksResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, result=None):
-        """ListDeployTasksResponse
+        r"""ListDeployTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDeployTasksResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListDeployTasksResponse.
+        r"""Gets the total_num of this ListDeployTasksResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListDeployTasksResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListDeployTasksResponse.
+        r"""Sets the total_num of this ListDeployTasksResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListDeployTasksResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListDeployTasksResponse.
+        r"""Gets the result of this ListDeployTasksResponse.
 
         返回结果
 
@@ -84,7 +84,7 @@ class ListDeployTasksResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListDeployTasksResponse.
+        r"""Sets the result of this ListDeployTasksResponse.
 
         返回结果
 

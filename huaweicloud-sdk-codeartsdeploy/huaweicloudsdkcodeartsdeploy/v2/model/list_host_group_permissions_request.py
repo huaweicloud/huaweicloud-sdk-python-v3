@@ -25,7 +25,7 @@ class ListHostGroupPermissionsRequest:
     }
 
     def __init__(self, group_id=None):
-        """ListHostGroupPermissionsRequest
+        r"""ListHostGroupPermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListHostGroupPermissionsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListHostGroupPermissionsRequest.
+        r"""Gets the group_id of this ListHostGroupPermissionsRequest.
 
         主机集群id
 
@@ -53,7 +53,7 @@ class ListHostGroupPermissionsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListHostGroupPermissionsRequest.
+        r"""Sets the group_id of this ListHostGroupPermissionsRequest.
 
         主机集群id
 

@@ -31,7 +31,7 @@ class TriggerMetadataList:
     }
 
     def __init__(self, trigger_name=None, trigger_type=None, event_type=None, event_data=None):
-        """TriggerMetadataList
+        r"""TriggerMetadataList
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TriggerMetadataList:
 
     @property
     def trigger_name(self):
-        """Gets the trigger_name of this TriggerMetadataList.
+        r"""Gets the trigger_name of this TriggerMetadataList.
 
         触发名称
 
@@ -75,7 +75,7 @@ class TriggerMetadataList:
 
     @trigger_name.setter
     def trigger_name(self, trigger_name):
-        """Sets the trigger_name of this TriggerMetadataList.
+        r"""Sets the trigger_name of this TriggerMetadataList.
 
         触发名称
 
@@ -86,7 +86,7 @@ class TriggerMetadataList:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this TriggerMetadataList.
+        r"""Gets the trigger_type of this TriggerMetadataList.
 
         触发器类型
 
@@ -97,7 +97,7 @@ class TriggerMetadataList:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this TriggerMetadataList.
+        r"""Sets the trigger_type of this TriggerMetadataList.
 
         触发器类型
 
@@ -108,7 +108,7 @@ class TriggerMetadataList:
 
     @property
     def event_type(self):
-        """Gets the event_type of this TriggerMetadataList.
+        r"""Gets the event_type of this TriggerMetadataList.
 
         事件类型
 
@@ -119,7 +119,7 @@ class TriggerMetadataList:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this TriggerMetadataList.
+        r"""Sets the event_type of this TriggerMetadataList.
 
         事件类型
 
@@ -130,7 +130,7 @@ class TriggerMetadataList:
 
     @property
     def event_data(self):
-        """Gets the event_data of this TriggerMetadataList.
+        r"""Gets the event_data of this TriggerMetadataList.
 
         事件数据
 
@@ -141,7 +141,7 @@ class TriggerMetadataList:
 
     @event_data.setter
     def event_data(self, event_data):
-        """Sets the event_data of this TriggerMetadataList.
+        r"""Sets the event_data of this TriggerMetadataList.
 
         事件数据
 

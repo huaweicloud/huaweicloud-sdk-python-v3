@@ -25,7 +25,7 @@ class RepoListHook:
     }
 
     def __init__(self, hooks=None):
-        """RepoListHook
+        r"""RepoListHook
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RepoListHook:
 
     @property
     def hooks(self):
-        """Gets the hooks of this RepoListHook.
+        r"""Gets the hooks of this RepoListHook.
 
         hook列表
 
@@ -54,7 +54,7 @@ class RepoListHook:
 
     @hooks.setter
     def hooks(self, hooks):
-        """Sets the hooks of this RepoListHook.
+        r"""Sets the hooks of this RepoListHook.
 
         hook列表
 

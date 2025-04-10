@@ -28,7 +28,7 @@ class RecognizeShortAudioResponse(SdkResponse):
     }
 
     def __init__(self, trace_id=None, result=None):
-        """RecognizeShortAudioResponse
+        r"""RecognizeShortAudioResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeShortAudioResponse(SdkResponse):
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this RecognizeShortAudioResponse.
+        r"""Gets the trace_id of this RecognizeShortAudioResponse.
 
         服务内部的令牌，可用于在日志中追溯具体流程，调用失败无此字段。  在某些错误情况下可能没有此令牌字符串。
 
@@ -62,7 +62,7 @@ class RecognizeShortAudioResponse(SdkResponse):
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this RecognizeShortAudioResponse.
+        r"""Sets the trace_id of this RecognizeShortAudioResponse.
 
         服务内部的令牌，可用于在日志中追溯具体流程，调用失败无此字段。  在某些错误情况下可能没有此令牌字符串。
 
@@ -73,7 +73,7 @@ class RecognizeShortAudioResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeShortAudioResponse.
+        r"""Gets the result of this RecognizeShortAudioResponse.
 
         :return: The result of this RecognizeShortAudioResponse.
         :rtype: :class:`huaweicloudsdksis.v1.Result`
@@ -82,7 +82,7 @@ class RecognizeShortAudioResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeShortAudioResponse.
+        r"""Sets the result of this RecognizeShortAudioResponse.
 
         :param result: The result of this RecognizeShortAudioResponse.
         :type result: :class:`huaweicloudsdksis.v1.Result`

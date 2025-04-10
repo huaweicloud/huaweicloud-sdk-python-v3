@@ -30,7 +30,7 @@ class ShowDomainKeyChainResponse(SdkResponse):
     }
 
     def __init__(self, key=None, auth_type=None, timeout=None):
-        """ShowDomainKeyChainResponse
+        r"""ShowDomainKeyChainResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowDomainKeyChainResponse(SdkResponse):
 
     @property
     def key(self):
-        """Gets the key of this ShowDomainKeyChainResponse.
+        r"""Gets the key of this ShowDomainKeyChainResponse.
 
         防盗链Key值，由32个字符组成，支持大写字母、小写字母、数字。不可为纯数字或纯字母。
 
@@ -69,7 +69,7 @@ class ShowDomainKeyChainResponse(SdkResponse):
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ShowDomainKeyChainResponse.
+        r"""Sets the key of this ShowDomainKeyChainResponse.
 
         防盗链Key值，由32个字符组成，支持大写字母、小写字母、数字。不可为纯数字或纯字母。
 
@@ -80,7 +80,7 @@ class ShowDomainKeyChainResponse(SdkResponse):
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ShowDomainKeyChainResponse.
+        r"""Gets the auth_type of this ShowDomainKeyChainResponse.
 
         计算鉴权串的方式： - d_sha256：鉴权方式D，采用HMAC-SHA256算法，建议优先选择此方式； - c_aes：鉴权方式C，采用对称加密算法； - b_md5：鉴权方式B，采用MD5信息摘要算法； - a_md5：鉴权方式A，采用MD5信息摘要算法。  > 鉴权方式ABC存在安全风险，鉴权方式D拥有更高的安全性，建议您优先使用鉴权方式D。
 
@@ -91,7 +91,7 @@ class ShowDomainKeyChainResponse(SdkResponse):
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ShowDomainKeyChainResponse.
+        r"""Sets the auth_type of this ShowDomainKeyChainResponse.
 
         计算鉴权串的方式： - d_sha256：鉴权方式D，采用HMAC-SHA256算法，建议优先选择此方式； - c_aes：鉴权方式C，采用对称加密算法； - b_md5：鉴权方式B，采用MD5信息摘要算法； - a_md5：鉴权方式A，采用MD5信息摘要算法。  > 鉴权方式ABC存在安全风险，鉴权方式D拥有更高的安全性，建议您优先使用鉴权方式D。
 
@@ -102,7 +102,7 @@ class ShowDomainKeyChainResponse(SdkResponse):
 
     @property
     def timeout(self):
-        """Gets the timeout of this ShowDomainKeyChainResponse.
+        r"""Gets the timeout of this ShowDomainKeyChainResponse.
 
         URL鉴权信息的超时时长  取值范围：[60，2592000]，即1分钟-30天  单位：秒  鉴权信息中携带的请求时间与直播服务收到请求时的时间的最大差值，用于检查直播推流URL或者直播播放URL是否已过期
 
@@ -113,7 +113,7 @@ class ShowDomainKeyChainResponse(SdkResponse):
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ShowDomainKeyChainResponse.
+        r"""Sets the timeout of this ShowDomainKeyChainResponse.
 
         URL鉴权信息的超时时长  取值范围：[60，2592000]，即1分钟-30天  单位：秒  鉴权信息中携带的请求时间与直播服务收到请求时的时间的最大差值，用于检查直播推流URL或者直播播放URL是否已过期
 

@@ -25,7 +25,7 @@ class DeleteWorkflowRequest:
     }
 
     def __init__(self, graph_name=None):
-        """DeleteWorkflowRequest
+        r"""DeleteWorkflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteWorkflowRequest:
 
     @property
     def graph_name(self):
-        """Gets the graph_name of this DeleteWorkflowRequest.
+        r"""Gets the graph_name of this DeleteWorkflowRequest.
 
         工作流名称。名称必须以字母或数字开头，只能由字母、数字、下划线和中划线组成，长度小于等于64个字符，且不能重名。
 
@@ -53,7 +53,7 @@ class DeleteWorkflowRequest:
 
     @graph_name.setter
     def graph_name(self, graph_name):
-        """Sets the graph_name of this DeleteWorkflowRequest.
+        r"""Sets the graph_name of this DeleteWorkflowRequest.
 
         工作流名称。名称必须以字母或数字开头，只能由字母、数字、下划线和中划线组成，长度小于等于64个字符，且不能重名。
 

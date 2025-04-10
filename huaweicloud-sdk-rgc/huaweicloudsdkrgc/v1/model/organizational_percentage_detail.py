@@ -27,7 +27,7 @@ class OrganizationalPercentageDetail:
     }
 
     def __init__(self, percentage_name=None, percentage_status=None):
-        """OrganizationalPercentageDetail
+        r"""OrganizationalPercentageDetail
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OrganizationalPercentageDetail:
 
     @property
     def percentage_name(self):
-        """Gets the percentage_name of this OrganizationalPercentageDetail.
+        r"""Gets the percentage_name of this OrganizationalPercentageDetail.
 
         进度名称。
 
@@ -61,7 +61,7 @@ class OrganizationalPercentageDetail:
 
     @percentage_name.setter
     def percentage_name(self, percentage_name):
-        """Sets the percentage_name of this OrganizationalPercentageDetail.
+        r"""Sets the percentage_name of this OrganizationalPercentageDetail.
 
         进度名称。
 
@@ -72,7 +72,7 @@ class OrganizationalPercentageDetail:
 
     @property
     def percentage_status(self):
-        """Gets the percentage_status of this OrganizationalPercentageDetail.
+        r"""Gets the percentage_status of this OrganizationalPercentageDetail.
 
         创建账号、注册OU、纳管账号的进度完成状态。
 
@@ -83,7 +83,7 @@ class OrganizationalPercentageDetail:
 
     @percentage_status.setter
     def percentage_status(self, percentage_status):
-        """Sets the percentage_status of this OrganizationalPercentageDetail.
+        r"""Sets the percentage_status of this OrganizationalPercentageDetail.
 
         创建账号、注册OU、纳管账号的进度完成状态。
 

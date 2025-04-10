@@ -25,7 +25,7 @@ class PublishVersionVOSearchResultData:
     }
 
     def __init__(self, value=None):
-        """PublishVersionVOSearchResultData
+        r"""PublishVersionVOSearchResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PublishVersionVOSearchResultData:
 
     @property
     def value(self):
-        """Gets the value of this PublishVersionVOSearchResultData.
+        r"""Gets the value of this PublishVersionVOSearchResultData.
 
         :return: The value of this PublishVersionVOSearchResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PublishVersionVOSearchResultDataValue`
@@ -52,7 +52,7 @@ class PublishVersionVOSearchResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PublishVersionVOSearchResultData.
+        r"""Sets the value of this PublishVersionVOSearchResultData.
 
         :param value: The value of this PublishVersionVOSearchResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.PublishVersionVOSearchResultDataValue`

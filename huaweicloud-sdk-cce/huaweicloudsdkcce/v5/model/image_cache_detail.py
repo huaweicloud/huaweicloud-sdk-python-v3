@@ -41,7 +41,7 @@ class ImageCacheDetail:
     }
 
     def __init__(self, name=None, id=None, created_at=None, images=None, image_cache_size=None, retention_days=None, building_config=None, status=None, message=None):
-        """ImageCacheDetail
+        r"""ImageCacheDetail
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ImageCacheDetail:
 
     @property
     def name(self):
-        """Gets the name of this ImageCacheDetail.
+        r"""Gets the name of this ImageCacheDetail.
 
         镜像缓存名称。
 
@@ -102,7 +102,7 @@ class ImageCacheDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImageCacheDetail.
+        r"""Sets the name of this ImageCacheDetail.
 
         镜像缓存名称。
 
@@ -113,7 +113,7 @@ class ImageCacheDetail:
 
     @property
     def id(self):
-        """Gets the id of this ImageCacheDetail.
+        r"""Gets the id of this ImageCacheDetail.
 
         镜像缓存ID。
 
@@ -124,7 +124,7 @@ class ImageCacheDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImageCacheDetail.
+        r"""Sets the id of this ImageCacheDetail.
 
         镜像缓存ID。
 
@@ -135,7 +135,7 @@ class ImageCacheDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ImageCacheDetail.
+        r"""Gets the created_at of this ImageCacheDetail.
 
         镜像缓存创建时间戳。
 
@@ -146,7 +146,7 @@ class ImageCacheDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ImageCacheDetail.
+        r"""Sets the created_at of this ImageCacheDetail.
 
         镜像缓存创建时间戳。
 
@@ -157,7 +157,7 @@ class ImageCacheDetail:
 
     @property
     def images(self):
-        """Gets the images of this ImageCacheDetail.
+        r"""Gets the images of this ImageCacheDetail.
 
         镜像缓存中的容器镜像列表。
 
@@ -168,7 +168,7 @@ class ImageCacheDetail:
 
     @images.setter
     def images(self, images):
-        """Sets the images of this ImageCacheDetail.
+        r"""Sets the images of this ImageCacheDetail.
 
         镜像缓存中的容器镜像列表。
 
@@ -179,7 +179,7 @@ class ImageCacheDetail:
 
     @property
     def image_cache_size(self):
-        """Gets the image_cache_size of this ImageCacheDetail.
+        r"""Gets the image_cache_size of this ImageCacheDetail.
 
         镜像缓存后端对应的存储盘大小，单位GiB。
 
@@ -190,7 +190,7 @@ class ImageCacheDetail:
 
     @image_cache_size.setter
     def image_cache_size(self, image_cache_size):
-        """Sets the image_cache_size of this ImageCacheDetail.
+        r"""Sets the image_cache_size of this ImageCacheDetail.
 
         镜像缓存后端对应的存储盘大小，单位GiB。
 
@@ -201,7 +201,7 @@ class ImageCacheDetail:
 
     @property
     def retention_days(self):
-        """Gets the retention_days of this ImageCacheDetail.
+        r"""Gets the retention_days of this ImageCacheDetail.
 
         **参数解释：** 镜像缓存有效的天数,不设置或值为0表示永久有效。镜像缓存到达有效期后自动过期并删除。 **约束限制：** 不涉及 **取值范围：** [0-10000] **默认取值：** 0 
 
@@ -212,7 +212,7 @@ class ImageCacheDetail:
 
     @retention_days.setter
     def retention_days(self, retention_days):
-        """Sets the retention_days of this ImageCacheDetail.
+        r"""Sets the retention_days of this ImageCacheDetail.
 
         **参数解释：** 镜像缓存有效的天数,不设置或值为0表示永久有效。镜像缓存到达有效期后自动过期并删除。 **约束限制：** 不涉及 **取值范围：** [0-10000] **默认取值：** 0 
 
@@ -223,7 +223,7 @@ class ImageCacheDetail:
 
     @property
     def building_config(self):
-        """Gets the building_config of this ImageCacheDetail.
+        r"""Gets the building_config of this ImageCacheDetail.
 
         :return: The building_config of this ImageCacheDetail.
         :rtype: :class:`huaweicloudsdkcce.v5.ImageCacheBuildingConfig`
@@ -232,7 +232,7 @@ class ImageCacheDetail:
 
     @building_config.setter
     def building_config(self, building_config):
-        """Sets the building_config of this ImageCacheDetail.
+        r"""Sets the building_config of this ImageCacheDetail.
 
         :param building_config: The building_config of this ImageCacheDetail.
         :type building_config: :class:`huaweicloudsdkcce.v5.ImageCacheBuildingConfig`
@@ -241,7 +241,7 @@ class ImageCacheDetail:
 
     @property
     def status(self):
-        """Gets the status of this ImageCacheDetail.
+        r"""Gets the status of this ImageCacheDetail.
 
         **参数解释：** 镜像缓存的状态。 **约束限制：** 不涉及 **取值范围：** - Available： 可用状态，表示当前镜像缓存正常可用。 - Unavailable：不可用，表示镜像缓存状态异常或过期，不可使用。 - Creating：创建中，表示镜像缓存正在创建中。 - Deleting：删除中，表示镜像缓存正在删除中。 - Failed：创建失败，表示镜像缓存创建失败。 **默认取值：** 不涉及
 
@@ -252,7 +252,7 @@ class ImageCacheDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ImageCacheDetail.
+        r"""Sets the status of this ImageCacheDetail.
 
         **参数解释：** 镜像缓存的状态。 **约束限制：** 不涉及 **取值范围：** - Available： 可用状态，表示当前镜像缓存正常可用。 - Unavailable：不可用，表示镜像缓存状态异常或过期，不可使用。 - Creating：创建中，表示镜像缓存正在创建中。 - Deleting：删除中，表示镜像缓存正在删除中。 - Failed：创建失败，表示镜像缓存创建失败。 **默认取值：** 不涉及
 
@@ -263,7 +263,7 @@ class ImageCacheDetail:
 
     @property
     def message(self):
-        """Gets the message of this ImageCacheDetail.
+        r"""Gets the message of this ImageCacheDetail.
 
         镜像缓存创建失败或异常的错误信息。
 
@@ -274,7 +274,7 @@ class ImageCacheDetail:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ImageCacheDetail.
+        r"""Sets the message of this ImageCacheDetail.
 
         镜像缓存创建失败或异常的错误信息。
 

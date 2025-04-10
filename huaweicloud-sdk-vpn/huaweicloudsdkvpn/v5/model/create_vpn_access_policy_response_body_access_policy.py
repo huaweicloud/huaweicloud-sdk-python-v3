@@ -25,7 +25,7 @@ class CreateVpnAccessPolicyResponseBodyAccessPolicy:
     }
 
     def __init__(self, id=None):
-        """CreateVpnAccessPolicyResponseBodyAccessPolicy
+        r"""CreateVpnAccessPolicyResponseBodyAccessPolicy
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVpnAccessPolicyResponseBodyAccessPolicy:
 
     @property
     def id(self):
-        """Gets the id of this CreateVpnAccessPolicyResponseBodyAccessPolicy.
+        r"""Gets the id of this CreateVpnAccessPolicyResponseBodyAccessPolicy.
 
         访问策略ID
 
@@ -54,7 +54,7 @@ class CreateVpnAccessPolicyResponseBodyAccessPolicy:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateVpnAccessPolicyResponseBodyAccessPolicy.
+        r"""Sets the id of this CreateVpnAccessPolicyResponseBodyAccessPolicy.
 
         访问策略ID
 

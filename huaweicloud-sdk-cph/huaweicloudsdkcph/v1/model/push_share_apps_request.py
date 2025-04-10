@@ -25,7 +25,7 @@ class PushShareAppsRequest:
     }
 
     def __init__(self, body=None):
-        """PushShareAppsRequest
+        r"""PushShareAppsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PushShareAppsRequest:
 
     @property
     def body(self):
-        """Gets the body of this PushShareAppsRequest.
+        r"""Gets the body of this PushShareAppsRequest.
 
         :return: The body of this PushShareAppsRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.PushShareAppsRequestBody`
@@ -52,7 +52,7 @@ class PushShareAppsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PushShareAppsRequest.
+        r"""Sets the body of this PushShareAppsRequest.
 
         :param body: The body of this PushShareAppsRequest.
         :type body: :class:`huaweicloudsdkcph.v1.PushShareAppsRequestBody`

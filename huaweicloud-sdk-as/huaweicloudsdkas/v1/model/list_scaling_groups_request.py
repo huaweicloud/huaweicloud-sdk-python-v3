@@ -35,7 +35,7 @@ class ListScalingGroupsRequest:
     }
 
     def __init__(self, scaling_group_name=None, scaling_configuration_id=None, scaling_group_status=None, start_number=None, limit=None, enterprise_project_id=None):
-        """ListScalingGroupsRequest
+        r"""ListScalingGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListScalingGroupsRequest:
 
     @property
     def scaling_group_name(self):
-        """Gets the scaling_group_name of this ListScalingGroupsRequest.
+        r"""Gets the scaling_group_name of this ListScalingGroupsRequest.
 
         伸缩组名称
 
@@ -89,7 +89,7 @@ class ListScalingGroupsRequest:
 
     @scaling_group_name.setter
     def scaling_group_name(self, scaling_group_name):
-        """Sets the scaling_group_name of this ListScalingGroupsRequest.
+        r"""Sets the scaling_group_name of this ListScalingGroupsRequest.
 
         伸缩组名称
 
@@ -100,7 +100,7 @@ class ListScalingGroupsRequest:
 
     @property
     def scaling_configuration_id(self):
-        """Gets the scaling_configuration_id of this ListScalingGroupsRequest.
+        r"""Gets the scaling_configuration_id of this ListScalingGroupsRequest.
 
         伸缩配置ID，通过查询弹性伸缩配置列表接口获取，详见[查询弹性伸缩配置列表](https://support.huaweicloud.com/api-as/as_06_0202.html)。
 
@@ -111,7 +111,7 @@ class ListScalingGroupsRequest:
 
     @scaling_configuration_id.setter
     def scaling_configuration_id(self, scaling_configuration_id):
-        """Sets the scaling_configuration_id of this ListScalingGroupsRequest.
+        r"""Sets the scaling_configuration_id of this ListScalingGroupsRequest.
 
         伸缩配置ID，通过查询弹性伸缩配置列表接口获取，详见[查询弹性伸缩配置列表](https://support.huaweicloud.com/api-as/as_06_0202.html)。
 
@@ -122,7 +122,7 @@ class ListScalingGroupsRequest:
 
     @property
     def scaling_group_status(self):
-        """Gets the scaling_group_status of this ListScalingGroupsRequest.
+        r"""Gets the scaling_group_status of this ListScalingGroupsRequest.
 
         伸缩组状态，取值如下：  - INSERVICE：正常状态 - PAUSED：停用状态 - ERROR：异常状态 - DELETING：删除中 - FREEZED：已冻结
 
@@ -133,7 +133,7 @@ class ListScalingGroupsRequest:
 
     @scaling_group_status.setter
     def scaling_group_status(self, scaling_group_status):
-        """Sets the scaling_group_status of this ListScalingGroupsRequest.
+        r"""Sets the scaling_group_status of this ListScalingGroupsRequest.
 
         伸缩组状态，取值如下：  - INSERVICE：正常状态 - PAUSED：停用状态 - ERROR：异常状态 - DELETING：删除中 - FREEZED：已冻结
 
@@ -144,7 +144,7 @@ class ListScalingGroupsRequest:
 
     @property
     def start_number(self):
-        """Gets the start_number of this ListScalingGroupsRequest.
+        r"""Gets the start_number of this ListScalingGroupsRequest.
 
         查询的起始行号，默认为0。最小值为0，最大值没有限制。
 
@@ -155,7 +155,7 @@ class ListScalingGroupsRequest:
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this ListScalingGroupsRequest.
+        r"""Sets the start_number of this ListScalingGroupsRequest.
 
         查询的起始行号，默认为0。最小值为0，最大值没有限制。
 
@@ -166,7 +166,7 @@ class ListScalingGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScalingGroupsRequest.
+        r"""Gets the limit of this ListScalingGroupsRequest.
 
         查询的记录条数，默认为20。取值范围为：0~100。
 
@@ -177,7 +177,7 @@ class ListScalingGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScalingGroupsRequest.
+        r"""Sets the limit of this ListScalingGroupsRequest.
 
         查询的记录条数，默认为20。取值范围为：0~100。
 
@@ -188,7 +188,7 @@ class ListScalingGroupsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListScalingGroupsRequest.
+        r"""Gets the enterprise_project_id of this ListScalingGroupsRequest.
 
         企业项目ID，当传入all_granted_eps时表示查询该用户所有授权的企业项目下的伸缩组列表，如何获取企业项目ID，请参考[查询企业项目列表](https://support.huaweicloud.com/api-em/zh-cn_topic_0121230880.html)。说明：华为云帐号和拥有全局权限的IAM用户可以查询该用户所有伸缩组列表。授予部分企业项目的IAM用户，如果拥有超过100个企业项目，则只能返回有权限的前100个企业项目对应的伸缩组列表。
 
@@ -199,7 +199,7 @@ class ListScalingGroupsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListScalingGroupsRequest.
+        r"""Sets the enterprise_project_id of this ListScalingGroupsRequest.
 
         企业项目ID，当传入all_granted_eps时表示查询该用户所有授权的企业项目下的伸缩组列表，如何获取企业项目ID，请参考[查询企业项目列表](https://support.huaweicloud.com/api-em/zh-cn_topic_0121230880.html)。说明：华为云帐号和拥有全局权限的IAM用户可以查询该用户所有伸缩组列表。授予部分企业项目的IAM用户，如果拥有超过100个企业项目，则只能返回有权限的前100个企业项目对应的伸缩组列表。
 

@@ -26,7 +26,7 @@ class ListFactLogicTablesResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListFactLogicTablesResponse
+        r"""ListFactLogicTablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListFactLogicTablesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListFactLogicTablesResponse.
+        r"""Gets the data of this ListFactLogicTablesResponse.
 
         :return: The data of this ListFactLogicTablesResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListFactLogicTablesResultData`
@@ -53,7 +53,7 @@ class ListFactLogicTablesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListFactLogicTablesResponse.
+        r"""Sets the data of this ListFactLogicTablesResponse.
 
         :param data: The data of this ListFactLogicTablesResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListFactLogicTablesResultData`

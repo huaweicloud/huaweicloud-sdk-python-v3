@@ -25,7 +25,7 @@ class ErrorSite:
     }
 
     def __init__(self, err_sites=None):
-        """ErrorSite
+        r"""ErrorSite
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ErrorSite:
 
     @property
     def err_sites(self):
-        """Gets the err_sites of this ErrorSite.
+        r"""Gets the err_sites of this ErrorSite.
 
         异常站点。
 
@@ -54,7 +54,7 @@ class ErrorSite:
 
     @err_sites.setter
     def err_sites(self, err_sites):
-        """Sets the err_sites of this ErrorSite.
+        r"""Sets the err_sites of this ErrorSite.
 
         异常站点。
 

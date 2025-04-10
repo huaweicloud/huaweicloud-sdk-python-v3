@@ -26,7 +26,7 @@ class ShowReplicationCapabilitiesResponse(SdkResponse):
     }
 
     def __init__(self, regions=None):
-        """ShowReplicationCapabilitiesResponse
+        r"""ShowReplicationCapabilitiesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowReplicationCapabilitiesResponse(SdkResponse):
 
     @property
     def regions(self):
-        """Gets the regions of this ShowReplicationCapabilitiesResponse.
+        r"""Gets the regions of this ShowReplicationCapabilitiesResponse.
 
         支持复制的区域列表
 
@@ -55,7 +55,7 @@ class ShowReplicationCapabilitiesResponse(SdkResponse):
 
     @regions.setter
     def regions(self, regions):
-        """Sets the regions of this ShowReplicationCapabilitiesResponse.
+        r"""Sets the regions of this ShowReplicationCapabilitiesResponse.
 
         支持复制的区域列表
 

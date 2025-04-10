@@ -29,7 +29,7 @@ class LakeCatConfiguration:
     }
 
     def __init__(self, key=None, value=None, description=None):
-        """LakeCatConfiguration
+        r"""LakeCatConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class LakeCatConfiguration:
 
     @property
     def key(self):
-        """Gets the key of this LakeCatConfiguration.
+        r"""Gets the key of this LakeCatConfiguration.
 
         配置项的key
 
@@ -66,7 +66,7 @@ class LakeCatConfiguration:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this LakeCatConfiguration.
+        r"""Sets the key of this LakeCatConfiguration.
 
         配置项的key
 
@@ -77,7 +77,7 @@ class LakeCatConfiguration:
 
     @property
     def value(self):
-        """Gets the value of this LakeCatConfiguration.
+        r"""Gets the value of this LakeCatConfiguration.
 
         配置项的值
 
@@ -88,7 +88,7 @@ class LakeCatConfiguration:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this LakeCatConfiguration.
+        r"""Sets the value of this LakeCatConfiguration.
 
         配置项的值
 
@@ -99,7 +99,7 @@ class LakeCatConfiguration:
 
     @property
     def description(self):
-        """Gets the description of this LakeCatConfiguration.
+        r"""Gets the description of this LakeCatConfiguration.
 
         配置项描述
 
@@ -110,7 +110,7 @@ class LakeCatConfiguration:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this LakeCatConfiguration.
+        r"""Sets the description of this LakeCatConfiguration.
 
         配置项描述
 

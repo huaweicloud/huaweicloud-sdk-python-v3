@@ -25,7 +25,7 @@ class RuleStatus:
     }
 
     def __init__(self, status=None):
-        """RuleStatus
+        r"""RuleStatus
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RuleStatus:
 
     @property
     def status(self):
-        """Gets the status of this RuleStatus.
+        r"""Gets the status of this RuleStatus.
 
         **参数说明**：规则的激活状态。 **取值范围**： - active：激活。 - inactive：未激活。
 
@@ -53,7 +53,7 @@ class RuleStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RuleStatus.
+        r"""Sets the status of this RuleStatus.
 
         **参数说明**：规则的激活状态。 **取值范围**： - active：激活。 - inactive：未激活。
 

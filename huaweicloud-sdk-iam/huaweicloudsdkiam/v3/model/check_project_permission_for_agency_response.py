@@ -24,7 +24,7 @@ class CheckProjectPermissionForAgencyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CheckProjectPermissionForAgencyResponse
+        r"""CheckProjectPermissionForAgencyResponse
 
         The model defined in huaweicloud sdk
 

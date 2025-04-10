@@ -27,7 +27,7 @@ class RestoreInstanceRequestBody:
     }
 
     def __init__(self, source=None, target=None):
-        """RestoreInstanceRequestBody
+        r"""RestoreInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RestoreInstanceRequestBody:
 
     @property
     def source(self):
-        """Gets the source of this RestoreInstanceRequestBody.
+        r"""Gets the source of this RestoreInstanceRequestBody.
 
         :return: The source of this RestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkdds.v3.Source`
@@ -57,7 +57,7 @@ class RestoreInstanceRequestBody:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this RestoreInstanceRequestBody.
+        r"""Sets the source of this RestoreInstanceRequestBody.
 
         :param source: The source of this RestoreInstanceRequestBody.
         :type source: :class:`huaweicloudsdkdds.v3.Source`
@@ -66,7 +66,7 @@ class RestoreInstanceRequestBody:
 
     @property
     def target(self):
-        """Gets the target of this RestoreInstanceRequestBody.
+        r"""Gets the target of this RestoreInstanceRequestBody.
 
         :return: The target of this RestoreInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkdds.v3.Target`
@@ -75,7 +75,7 @@ class RestoreInstanceRequestBody:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this RestoreInstanceRequestBody.
+        r"""Sets the target of this RestoreInstanceRequestBody.
 
         :param target: The target of this RestoreInstanceRequestBody.
         :type target: :class:`huaweicloudsdkdds.v3.Target`

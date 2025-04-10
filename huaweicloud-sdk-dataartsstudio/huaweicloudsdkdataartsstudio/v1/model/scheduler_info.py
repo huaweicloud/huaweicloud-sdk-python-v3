@@ -39,7 +39,7 @@ class SchedulerInfo:
     }
 
     def __init__(self, cron_expression=None, end_time=None, max_time_out=None, interval=None, schedule_type=None, start_time=None, job_id=None, enabled=None):
-        """SchedulerInfo
+        r"""SchedulerInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class SchedulerInfo:
 
     @property
     def cron_expression(self):
-        """Gets the cron_expression of this SchedulerInfo.
+        r"""Gets the cron_expression of this SchedulerInfo.
 
         表达式
 
@@ -103,7 +103,7 @@ class SchedulerInfo:
 
     @cron_expression.setter
     def cron_expression(self, cron_expression):
-        """Sets the cron_expression of this SchedulerInfo.
+        r"""Sets the cron_expression of this SchedulerInfo.
 
         表达式
 
@@ -114,7 +114,7 @@ class SchedulerInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SchedulerInfo.
+        r"""Gets the end_time of this SchedulerInfo.
 
         结束时间
 
@@ -125,7 +125,7 @@ class SchedulerInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SchedulerInfo.
+        r"""Sets the end_time of this SchedulerInfo.
 
         结束时间
 
@@ -136,7 +136,7 @@ class SchedulerInfo:
 
     @property
     def max_time_out(self):
-        """Gets the max_time_out of this SchedulerInfo.
+        r"""Gets the max_time_out of this SchedulerInfo.
 
         最大超时时间
 
@@ -147,7 +147,7 @@ class SchedulerInfo:
 
     @max_time_out.setter
     def max_time_out(self, max_time_out):
-        """Sets the max_time_out of this SchedulerInfo.
+        r"""Sets the max_time_out of this SchedulerInfo.
 
         最大超时时间
 
@@ -158,7 +158,7 @@ class SchedulerInfo:
 
     @property
     def interval(self):
-        """Gets the interval of this SchedulerInfo.
+        r"""Gets the interval of this SchedulerInfo.
 
         间隔
 
@@ -169,7 +169,7 @@ class SchedulerInfo:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this SchedulerInfo.
+        r"""Sets the interval of this SchedulerInfo.
 
         间隔
 
@@ -180,7 +180,7 @@ class SchedulerInfo:
 
     @property
     def schedule_type(self):
-        """Gets the schedule_type of this SchedulerInfo.
+        r"""Gets the schedule_type of this SchedulerInfo.
 
         调度类型
 
@@ -191,7 +191,7 @@ class SchedulerInfo:
 
     @schedule_type.setter
     def schedule_type(self, schedule_type):
-        """Sets the schedule_type of this SchedulerInfo.
+        r"""Sets the schedule_type of this SchedulerInfo.
 
         调度类型
 
@@ -202,7 +202,7 @@ class SchedulerInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SchedulerInfo.
+        r"""Gets the start_time of this SchedulerInfo.
 
         开始时间
 
@@ -213,7 +213,7 @@ class SchedulerInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SchedulerInfo.
+        r"""Sets the start_time of this SchedulerInfo.
 
         开始时间
 
@@ -224,7 +224,7 @@ class SchedulerInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this SchedulerInfo.
+        r"""Gets the job_id of this SchedulerInfo.
 
         工作id
 
@@ -235,7 +235,7 @@ class SchedulerInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SchedulerInfo.
+        r"""Sets the job_id of this SchedulerInfo.
 
         工作id
 
@@ -246,7 +246,7 @@ class SchedulerInfo:
 
     @property
     def enabled(self):
-        """Gets the enabled of this SchedulerInfo.
+        r"""Gets the enabled of this SchedulerInfo.
 
         启用
 
@@ -257,7 +257,7 @@ class SchedulerInfo:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this SchedulerInfo.
+        r"""Sets the enabled of this SchedulerInfo.
 
         启用
 

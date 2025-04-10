@@ -31,7 +31,7 @@ class ComponentEnvironmentValueFrom:
     }
 
     def __init__(self, reference_type=None, name=None, key=None, optional=None):
-        """ComponentEnvironmentValueFrom
+        r"""ComponentEnvironmentValueFrom
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ComponentEnvironmentValueFrom:
 
     @property
     def reference_type(self):
-        """Gets the reference_type of this ComponentEnvironmentValueFrom.
+        r"""Gets the reference_type of this ComponentEnvironmentValueFrom.
 
         :return: The reference_type of this ComponentEnvironmentValueFrom.
         :rtype: str
@@ -71,7 +71,7 @@ class ComponentEnvironmentValueFrom:
 
     @reference_type.setter
     def reference_type(self, reference_type):
-        """Sets the reference_type of this ComponentEnvironmentValueFrom.
+        r"""Sets the reference_type of this ComponentEnvironmentValueFrom.
 
         :param reference_type: The reference_type of this ComponentEnvironmentValueFrom.
         :type reference_type: str
@@ -80,7 +80,7 @@ class ComponentEnvironmentValueFrom:
 
     @property
     def name(self):
-        """Gets the name of this ComponentEnvironmentValueFrom.
+        r"""Gets the name of this ComponentEnvironmentValueFrom.
 
         configmap或者secret的名字
 
@@ -91,7 +91,7 @@ class ComponentEnvironmentValueFrom:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentEnvironmentValueFrom.
+        r"""Sets the name of this ComponentEnvironmentValueFrom.
 
         configmap或者secret的名字
 
@@ -102,7 +102,7 @@ class ComponentEnvironmentValueFrom:
 
     @property
     def key(self):
-        """Gets the key of this ComponentEnvironmentValueFrom.
+        r"""Gets the key of this ComponentEnvironmentValueFrom.
 
         configmap或者secret的key
 
@@ -113,7 +113,7 @@ class ComponentEnvironmentValueFrom:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ComponentEnvironmentValueFrom.
+        r"""Sets the key of this ComponentEnvironmentValueFrom.
 
         configmap或者secret的key
 
@@ -124,7 +124,7 @@ class ComponentEnvironmentValueFrom:
 
     @property
     def optional(self):
-        """Gets the optional of this ComponentEnvironmentValueFrom.
+        r"""Gets the optional of this ComponentEnvironmentValueFrom.
 
         configmap或者secret或者他们的key是否必须存在
 
@@ -135,7 +135,7 @@ class ComponentEnvironmentValueFrom:
 
     @optional.setter
     def optional(self, optional):
-        """Sets the optional of this ComponentEnvironmentValueFrom.
+        r"""Sets the optional of this ComponentEnvironmentValueFrom.
 
         configmap或者secret或者他们的key是否必须存在
 

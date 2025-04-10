@@ -37,7 +37,7 @@ class TaskDto:
     }
 
     def __init__(self, task_name=None, app_id=None, display_name=None, output_dir=None, resources=None, location=None, inputs=None):
-        """TaskDto
+        r"""TaskDto
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class TaskDto:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TaskDto.
+        r"""Gets the task_name of this TaskDto.
 
         子任务实际名称，取值范围[1,32]，只能以大小写字母开头，由大小写字母、数字、中划线（-）、下划线（_）组成，以大小写字符或数字结尾。
 
@@ -94,7 +94,7 @@ class TaskDto:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TaskDto.
+        r"""Sets the task_name of this TaskDto.
 
         子任务实际名称，取值范围[1,32]，只能以大小写字母开头，由大小写字母、数字、中划线（-）、下划线（_）组成，以大小写字符或数字结尾。
 
@@ -105,7 +105,7 @@ class TaskDto:
 
     @property
     def app_id(self):
-        """Gets the app_id of this TaskDto.
+        r"""Gets the app_id of this TaskDto.
 
         应用id，取值范围[1,135]，正则先不能有中文，两种格式。特殊id，采用{app_name}::{app_version}::{src_project_name}格式，用于手动创建场景；其他场景，app_id为系统分配的唯一标识
 
@@ -116,7 +116,7 @@ class TaskDto:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this TaskDto.
+        r"""Sets the app_id of this TaskDto.
 
         应用id，取值范围[1,135]，正则先不能有中文，两种格式。特殊id，采用{app_name}::{app_version}::{src_project_name}格式，用于手动创建场景；其他场景，app_id为系统分配的唯一标识
 
@@ -127,7 +127,7 @@ class TaskDto:
 
     @property
     def display_name(self):
-        """Gets the display_name of this TaskDto.
+        r"""Gets the display_name of this TaskDto.
 
         流程的子任务展示名称，最大长度64
 
@@ -138,7 +138,7 @@ class TaskDto:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this TaskDto.
+        r"""Sets the display_name of this TaskDto.
 
         流程的子任务展示名称，最大长度64
 
@@ -149,7 +149,7 @@ class TaskDto:
 
     @property
     def output_dir(self):
-        """Gets the output_dir of this TaskDto.
+        r"""Gets the output_dir of this TaskDto.
 
         子任务的输出存放路径，用户可显式指定;输出路径必须以斜杠（/）开头且不能以斜杠（/）结尾，不能包含两个以上相邻的斜杠（/），不能包含以下特殊字符：\\ : ; * ? < \" > | 。其中单个文件夹名称不能以中划线（-）开头，不能以英文句号（.）或斜杠（/）或空格开头或结尾
 
@@ -160,7 +160,7 @@ class TaskDto:
 
     @output_dir.setter
     def output_dir(self, output_dir):
-        """Sets the output_dir of this TaskDto.
+        r"""Sets the output_dir of this TaskDto.
 
         子任务的输出存放路径，用户可显式指定;输出路径必须以斜杠（/）开头且不能以斜杠（/）结尾，不能包含两个以上相邻的斜杠（/），不能包含以下特殊字符：\\ : ; * ? < \" > | 。其中单个文件夹名称不能以中划线（-）开头，不能以英文句号（.）或斜杠（/）或空格开头或结尾
 
@@ -171,7 +171,7 @@ class TaskDto:
 
     @property
     def resources(self):
-        """Gets the resources of this TaskDto.
+        r"""Gets the resources of this TaskDto.
 
         :return: The resources of this TaskDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
@@ -180,7 +180,7 @@ class TaskDto:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this TaskDto.
+        r"""Sets the resources of this TaskDto.
 
         :param resources: The resources of this TaskDto.
         :type resources: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
@@ -189,7 +189,7 @@ class TaskDto:
 
     @property
     def location(self):
-        """Gets the location of this TaskDto.
+        r"""Gets the location of this TaskDto.
 
         :return: The location of this TaskDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.VertexLocationDto`
@@ -198,7 +198,7 @@ class TaskDto:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this TaskDto.
+        r"""Sets the location of this TaskDto.
 
         :param location: The location of this TaskDto.
         :type location: :class:`huaweicloudsdkeihealth.v1.VertexLocationDto`
@@ -207,7 +207,7 @@ class TaskDto:
 
     @property
     def inputs(self):
-        """Gets the inputs of this TaskDto.
+        r"""Gets the inputs of this TaskDto.
 
         任务的输入参数信息
 
@@ -218,7 +218,7 @@ class TaskDto:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this TaskDto.
+        r"""Sets the inputs of this TaskDto.
 
         任务的输入参数信息
 

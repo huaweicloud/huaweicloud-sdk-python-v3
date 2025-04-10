@@ -29,7 +29,7 @@ class ListQuotasRespQuotasResources:
     }
 
     def __init__(self, type=None, available=None, edge_volume=None):
-        """ListQuotasRespQuotasResources
+        r"""ListQuotasRespQuotasResources
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListQuotasRespQuotasResources:
 
     @property
     def type(self):
-        """Gets the type of this ListQuotasRespQuotasResources.
+        r"""Gets the type of this ListQuotasRespQuotasResources.
 
         类型。  取值范围：  - \"graph\" - \"backup\" - \"metadata\"
 
@@ -68,7 +68,7 @@ class ListQuotasRespQuotasResources:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListQuotasRespQuotasResources.
+        r"""Sets the type of this ListQuotasRespQuotasResources.
 
         类型。  取值范围：  - \"graph\" - \"backup\" - \"metadata\"
 
@@ -79,7 +79,7 @@ class ListQuotasRespQuotasResources:
 
     @property
     def available(self):
-        """Gets the available of this ListQuotasRespQuotasResources.
+        r"""Gets the available of this ListQuotasRespQuotasResources.
 
         图的可用个数。
 
@@ -90,7 +90,7 @@ class ListQuotasRespQuotasResources:
 
     @available.setter
     def available(self, available):
-        """Sets the available of this ListQuotasRespQuotasResources.
+        r"""Sets the available of this ListQuotasRespQuotasResources.
 
         图的可用个数。
 
@@ -101,7 +101,7 @@ class ListQuotasRespQuotasResources:
 
     @property
     def edge_volume(self):
-        """Gets the edge_volume of this ListQuotasRespQuotasResources.
+        r"""Gets the edge_volume of this ListQuotasRespQuotasResources.
 
         边的可用个数。type为graph时此值有效。
 
@@ -112,7 +112,7 @@ class ListQuotasRespQuotasResources:
 
     @edge_volume.setter
     def edge_volume(self, edge_volume):
-        """Sets the edge_volume of this ListQuotasRespQuotasResources.
+        r"""Sets the edge_volume of this ListQuotasRespQuotasResources.
 
         边的可用个数。type为graph时此值有效。
 

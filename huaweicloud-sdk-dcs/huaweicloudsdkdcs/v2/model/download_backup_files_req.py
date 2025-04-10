@@ -25,7 +25,7 @@ class DownloadBackupFilesReq:
     }
 
     def __init__(self, expiration=None):
-        """DownloadBackupFilesReq
+        r"""DownloadBackupFilesReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DownloadBackupFilesReq:
 
     @property
     def expiration(self):
-        """Gets the expiration of this DownloadBackupFilesReq.
+        r"""Gets the expiration of this DownloadBackupFilesReq.
 
         设置URL的有效期，必须在5分钟和24小时之内，单位为秒。
 
@@ -53,7 +53,7 @@ class DownloadBackupFilesReq:
 
     @expiration.setter
     def expiration(self, expiration):
-        """Sets the expiration of this DownloadBackupFilesReq.
+        r"""Sets the expiration of this DownloadBackupFilesReq.
 
         设置URL的有效期，必须在5分钟和24小时之内，单位为秒。
 

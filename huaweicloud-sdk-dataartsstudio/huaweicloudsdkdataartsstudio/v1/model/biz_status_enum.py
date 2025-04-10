@@ -31,7 +31,7 @@ class BizStatusEnum:
     }
 
     def __init__(self):
-        """BizStatusEnum
+        r"""BizStatusEnum
 
         The model defined in huaweicloud sdk
 

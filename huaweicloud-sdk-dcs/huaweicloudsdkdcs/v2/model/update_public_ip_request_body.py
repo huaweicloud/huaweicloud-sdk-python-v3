@@ -29,7 +29,7 @@ class UpdatePublicIpRequestBody:
     }
 
     def __init__(self, publicip_id=None, enable_ssl=None, elb_id=None):
-        """UpdatePublicIpRequestBody
+        r"""UpdatePublicIpRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdatePublicIpRequestBody:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this UpdatePublicIpRequestBody.
+        r"""Gets the publicip_id of this UpdatePublicIpRequestBody.
 
         公网访问绑定的ELB的EIP的ID，当Redis版本为3.0时，该参数为必填参数。
 
@@ -68,7 +68,7 @@ class UpdatePublicIpRequestBody:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this UpdatePublicIpRequestBody.
+        r"""Sets the publicip_id of this UpdatePublicIpRequestBody.
 
         公网访问绑定的ELB的EIP的ID，当Redis版本为3.0时，该参数为必填参数。
 
@@ -79,7 +79,7 @@ class UpdatePublicIpRequestBody:
 
     @property
     def enable_ssl(self):
-        """Gets the enable_ssl of this UpdatePublicIpRequestBody.
+        r"""Gets the enable_ssl of this UpdatePublicIpRequestBody.
 
         是否开启SSL，仅在开启SSL时有值，当Redis版本为3.0时，该参数为必填参数。
 
@@ -90,7 +90,7 @@ class UpdatePublicIpRequestBody:
 
     @enable_ssl.setter
     def enable_ssl(self, enable_ssl):
-        """Sets the enable_ssl of this UpdatePublicIpRequestBody.
+        r"""Sets the enable_ssl of this UpdatePublicIpRequestBody.
 
         是否开启SSL，仅在开启SSL时有值，当Redis版本为3.0时，该参数为必填参数。
 
@@ -101,7 +101,7 @@ class UpdatePublicIpRequestBody:
 
     @property
     def elb_id(self):
-        """Gets the elb_id of this UpdatePublicIpRequestBody.
+        r"""Gets the elb_id of this UpdatePublicIpRequestBody.
 
         公网访问绑定的ELB ID，当Redis版本为4.0，5.0，6.0和企业版时，该参数为必填参数。
 
@@ -112,7 +112,7 @@ class UpdatePublicIpRequestBody:
 
     @elb_id.setter
     def elb_id(self, elb_id):
-        """Sets the elb_id of this UpdatePublicIpRequestBody.
+        r"""Sets the elb_id of this UpdatePublicIpRequestBody.
 
         公网访问绑定的ELB ID，当Redis版本为4.0，5.0，6.0和企业版时，该参数为必填参数。
 

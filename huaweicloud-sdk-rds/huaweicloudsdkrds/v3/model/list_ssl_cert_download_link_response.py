@@ -26,7 +26,7 @@ class ListSslCertDownloadLinkResponse(SdkResponse):
     }
 
     def __init__(self, cert_info_list=None):
-        """ListSslCertDownloadLinkResponse
+        r"""ListSslCertDownloadLinkResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSslCertDownloadLinkResponse(SdkResponse):
 
     @property
     def cert_info_list(self):
-        """Gets the cert_info_list of this ListSslCertDownloadLinkResponse.
+        r"""Gets the cert_info_list of this ListSslCertDownloadLinkResponse.
 
         :return: The cert_info_list of this ListSslCertDownloadLinkResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.DownloadInfoRsp`]
@@ -53,7 +53,7 @@ class ListSslCertDownloadLinkResponse(SdkResponse):
 
     @cert_info_list.setter
     def cert_info_list(self, cert_info_list):
-        """Sets the cert_info_list of this ListSslCertDownloadLinkResponse.
+        r"""Sets the cert_info_list of this ListSslCertDownloadLinkResponse.
 
         :param cert_info_list: The cert_info_list of this ListSslCertDownloadLinkResponse.
         :type cert_info_list: list[:class:`huaweicloudsdkrds.v3.DownloadInfoRsp`]

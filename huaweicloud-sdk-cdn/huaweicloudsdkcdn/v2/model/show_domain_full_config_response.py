@@ -28,7 +28,7 @@ class ShowDomainFullConfigResponse(SdkResponse):
     }
 
     def __init__(self, configs=None, x_request_id=None):
-        """ShowDomainFullConfigResponse
+        r"""ShowDomainFullConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDomainFullConfigResponse(SdkResponse):
 
     @property
     def configs(self):
-        """Gets the configs of this ShowDomainFullConfigResponse.
+        r"""Gets the configs of this ShowDomainFullConfigResponse.
 
         :return: The configs of this ShowDomainFullConfigResponse.
         :rtype: :class:`huaweicloudsdkcdn.v2.ConfigsGetBody`
@@ -60,7 +60,7 @@ class ShowDomainFullConfigResponse(SdkResponse):
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ShowDomainFullConfigResponse.
+        r"""Sets the configs of this ShowDomainFullConfigResponse.
 
         :param configs: The configs of this ShowDomainFullConfigResponse.
         :type configs: :class:`huaweicloudsdkcdn.v2.ConfigsGetBody`
@@ -69,7 +69,7 @@ class ShowDomainFullConfigResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowDomainFullConfigResponse.
+        r"""Gets the x_request_id of this ShowDomainFullConfigResponse.
 
         :return: The x_request_id of this ShowDomainFullConfigResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowDomainFullConfigResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowDomainFullConfigResponse.
+        r"""Sets the x_request_id of this ShowDomainFullConfigResponse.
 
         :param x_request_id: The x_request_id of this ShowDomainFullConfigResponse.
         :type x_request_id: str

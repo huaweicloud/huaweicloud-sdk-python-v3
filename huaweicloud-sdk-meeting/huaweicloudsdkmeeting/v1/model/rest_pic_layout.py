@@ -35,7 +35,7 @@ class RestPicLayout:
     }
 
     def __init__(self, switch_time=None, pic_num=None, lay_out_name=None, image_type=None, uuid=None, subscriber_in_pics=None):
-        """RestPicLayout
+        r"""RestPicLayout
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RestPicLayout:
 
     @property
     def switch_time(self):
-        """Gets the switch_time of this RestPicLayout.
+        r"""Gets the switch_time of this RestPicLayout.
 
         多画面轮询时间，单位秒。
 
@@ -89,7 +89,7 @@ class RestPicLayout:
 
     @switch_time.setter
     def switch_time(self, switch_time):
-        """Sets the switch_time of this RestPicLayout.
+        r"""Sets the switch_time of this RestPicLayout.
 
         多画面轮询时间，单位秒。
 
@@ -100,7 +100,7 @@ class RestPicLayout:
 
     @property
     def pic_num(self):
-        """Gets the pic_num of this RestPicLayout.
+        r"""Gets the pic_num of this RestPicLayout.
 
         多画面画面数量。
 
@@ -111,7 +111,7 @@ class RestPicLayout:
 
     @pic_num.setter
     def pic_num(self, pic_num):
-        """Sets the pic_num of this RestPicLayout.
+        r"""Sets the pic_num of this RestPicLayout.
 
         多画面画面数量。
 
@@ -122,7 +122,7 @@ class RestPicLayout:
 
     @property
     def lay_out_name(self):
-        """Gets the lay_out_name of this RestPicLayout.
+        r"""Gets the lay_out_name of this RestPicLayout.
 
         多画面布局名称。
 
@@ -133,7 +133,7 @@ class RestPicLayout:
 
     @lay_out_name.setter
     def lay_out_name(self, lay_out_name):
-        """Sets the lay_out_name of this RestPicLayout.
+        r"""Sets the lay_out_name of this RestPicLayout.
 
         多画面布局名称。
 
@@ -144,7 +144,7 @@ class RestPicLayout:
 
     @property
     def image_type(self):
-        """Gets the image_type of this RestPicLayout.
+        r"""Gets the image_type of this RestPicLayout.
 
         画面类型。
 
@@ -155,7 +155,7 @@ class RestPicLayout:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this RestPicLayout.
+        r"""Sets the image_type of this RestPicLayout.
 
         画面类型。
 
@@ -166,7 +166,7 @@ class RestPicLayout:
 
     @property
     def uuid(self):
-        """Gets the uuid of this RestPicLayout.
+        r"""Gets the uuid of this RestPicLayout.
 
         布局UUID。
 
@@ -177,7 +177,7 @@ class RestPicLayout:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this RestPicLayout.
+        r"""Sets the uuid of this RestPicLayout.
 
         布局UUID。
 
@@ -188,7 +188,7 @@ class RestPicLayout:
 
     @property
     def subscriber_in_pics(self):
-        """Gets the subscriber_in_pics of this RestPicLayout.
+        r"""Gets the subscriber_in_pics of this RestPicLayout.
 
         子画面列表。
 
@@ -199,7 +199,7 @@ class RestPicLayout:
 
     @subscriber_in_pics.setter
     def subscriber_in_pics(self, subscriber_in_pics):
-        """Sets the subscriber_in_pics of this RestPicLayout.
+        r"""Sets the subscriber_in_pics of this RestPicLayout.
 
         子画面列表。
 

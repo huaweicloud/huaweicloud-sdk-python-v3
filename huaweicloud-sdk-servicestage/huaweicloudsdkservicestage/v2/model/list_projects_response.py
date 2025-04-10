@@ -26,7 +26,7 @@ class ListProjectsResponse(SdkResponse):
     }
 
     def __init__(self, projects=None):
-        """ListProjectsResponse
+        r"""ListProjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListProjectsResponse(SdkResponse):
 
     @property
     def projects(self):
-        """Gets the projects of this ListProjectsResponse.
+        r"""Gets the projects of this ListProjectsResponse.
 
         项目列表。
 
@@ -55,7 +55,7 @@ class ListProjectsResponse(SdkResponse):
 
     @projects.setter
     def projects(self, projects):
-        """Sets the projects of this ListProjectsResponse.
+        r"""Sets the projects of this ListProjectsResponse.
 
         项目列表。
 

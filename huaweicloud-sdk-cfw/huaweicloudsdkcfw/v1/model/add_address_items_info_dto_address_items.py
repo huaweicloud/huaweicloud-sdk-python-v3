@@ -29,7 +29,7 @@ class AddAddressItemsInfoDtoAddressItems:
     }
 
     def __init__(self, address_type=None, address=None, description=None):
-        """AddAddressItemsInfoDtoAddressItems
+        r"""AddAddressItemsInfoDtoAddressItems
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AddAddressItemsInfoDtoAddressItems:
 
     @property
     def address_type(self):
-        """Gets the address_type of this AddAddressItemsInfoDtoAddressItems.
+        r"""Gets the address_type of this AddAddressItemsInfoDtoAddressItems.
 
         地址类型0 ipv4，1 ipv6
 
@@ -67,7 +67,7 @@ class AddAddressItemsInfoDtoAddressItems:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this AddAddressItemsInfoDtoAddressItems.
+        r"""Sets the address_type of this AddAddressItemsInfoDtoAddressItems.
 
         地址类型0 ipv4，1 ipv6
 
@@ -78,7 +78,7 @@ class AddAddressItemsInfoDtoAddressItems:
 
     @property
     def address(self):
-        """Gets the address of this AddAddressItemsInfoDtoAddressItems.
+        r"""Gets the address of this AddAddressItemsInfoDtoAddressItems.
 
         ip
 
@@ -89,7 +89,7 @@ class AddAddressItemsInfoDtoAddressItems:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this AddAddressItemsInfoDtoAddressItems.
+        r"""Sets the address of this AddAddressItemsInfoDtoAddressItems.
 
         ip
 
@@ -100,7 +100,7 @@ class AddAddressItemsInfoDtoAddressItems:
 
     @property
     def description(self):
-        """Gets the description of this AddAddressItemsInfoDtoAddressItems.
+        r"""Gets the description of this AddAddressItemsInfoDtoAddressItems.
 
         地址组成员描述
 
@@ -111,7 +111,7 @@ class AddAddressItemsInfoDtoAddressItems:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddAddressItemsInfoDtoAddressItems.
+        r"""Sets the description of this AddAddressItemsInfoDtoAddressItems.
 
         地址组成员描述
 

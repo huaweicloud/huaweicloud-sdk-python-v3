@@ -27,7 +27,7 @@ class KnowledgeQuestionUpdateInfo:
     }
 
     def __init__(self, question_id=None, question=None):
-        """KnowledgeQuestionUpdateInfo
+        r"""KnowledgeQuestionUpdateInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class KnowledgeQuestionUpdateInfo:
 
     @property
     def question_id(self):
-        """Gets the question_id of this KnowledgeQuestionUpdateInfo.
+        r"""Gets the question_id of this KnowledgeQuestionUpdateInfo.
 
         问法ID。
 
@@ -59,7 +59,7 @@ class KnowledgeQuestionUpdateInfo:
 
     @question_id.setter
     def question_id(self, question_id):
-        """Sets the question_id of this KnowledgeQuestionUpdateInfo.
+        r"""Sets the question_id of this KnowledgeQuestionUpdateInfo.
 
         问法ID。
 
@@ -70,7 +70,7 @@ class KnowledgeQuestionUpdateInfo:
 
     @property
     def question(self):
-        """Gets the question of this KnowledgeQuestionUpdateInfo.
+        r"""Gets the question of this KnowledgeQuestionUpdateInfo.
 
         问法。
 
@@ -81,7 +81,7 @@ class KnowledgeQuestionUpdateInfo:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this KnowledgeQuestionUpdateInfo.
+        r"""Sets the question of this KnowledgeQuestionUpdateInfo.
 
         问法。
 

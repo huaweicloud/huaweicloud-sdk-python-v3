@@ -31,7 +31,7 @@ class GenerateTokenResultDto:
     }
 
     def __init__(self, token=None, user_id=None, user_name=None, app_id=None):
-        """GenerateTokenResultDto
+        r"""GenerateTokenResultDto
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class GenerateTokenResultDto:
 
     @property
     def token(self):
-        """Gets the token of this GenerateTokenResultDto.
+        r"""Gets the token of this GenerateTokenResultDto.
 
         **参数解释**：  认证token。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -75,7 +75,7 @@ class GenerateTokenResultDto:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this GenerateTokenResultDto.
+        r"""Sets the token of this GenerateTokenResultDto.
 
         **参数解释**：  认证token。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -86,7 +86,7 @@ class GenerateTokenResultDto:
 
     @property
     def user_id(self):
-        """Gets the user_id of this GenerateTokenResultDto.
+        r"""Gets the user_id of this GenerateTokenResultDto.
 
         **参数解释**：  用户ID。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -97,7 +97,7 @@ class GenerateTokenResultDto:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this GenerateTokenResultDto.
+        r"""Sets the user_id of this GenerateTokenResultDto.
 
         **参数解释**：  用户ID。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -108,7 +108,7 @@ class GenerateTokenResultDto:
 
     @property
     def user_name(self):
-        """Gets the user_name of this GenerateTokenResultDto.
+        r"""Gets the user_name of this GenerateTokenResultDto.
 
         **参数解释**：  用户名。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -119,7 +119,7 @@ class GenerateTokenResultDto:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this GenerateTokenResultDto.
+        r"""Sets the user_name of this GenerateTokenResultDto.
 
         **参数解释**：  用户名。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -130,7 +130,7 @@ class GenerateTokenResultDto:
 
     @property
     def app_id(self):
-        """Gets the app_id of this GenerateTokenResultDto.
+        r"""Gets the app_id of this GenerateTokenResultDto.
 
         **参数解释**：  应用ID。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -141,7 +141,7 @@ class GenerateTokenResultDto:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this GenerateTokenResultDto.
+        r"""Sets the app_id of this GenerateTokenResultDto.
 
         **参数解释**：  应用ID。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 

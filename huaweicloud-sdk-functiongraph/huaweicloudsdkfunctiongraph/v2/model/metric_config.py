@@ -31,7 +31,7 @@ class MetricConfig:
     }
 
     def __init__(self, name=None, type=None, threshold=None, min=None):
-        """MetricConfig
+        r"""MetricConfig
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MetricConfig:
 
     @property
     def name(self):
-        """Gets the name of this MetricConfig.
+        r"""Gets the name of this MetricConfig.
 
         流量配置名称
 
@@ -75,7 +75,7 @@ class MetricConfig:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MetricConfig.
+        r"""Sets the name of this MetricConfig.
 
         流量配置名称
 
@@ -86,7 +86,7 @@ class MetricConfig:
 
     @property
     def type(self):
-        """Gets the type of this MetricConfig.
+        r"""Gets the type of this MetricConfig.
 
         流量配置类型，当前只支持预留实例使用率一种类型
 
@@ -97,7 +97,7 @@ class MetricConfig:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MetricConfig.
+        r"""Sets the type of this MetricConfig.
 
         流量配置类型，当前只支持预留实例使用率一种类型
 
@@ -108,7 +108,7 @@ class MetricConfig:
 
     @property
     def threshold(self):
-        """Gets the threshold of this MetricConfig.
+        r"""Gets the threshold of this MetricConfig.
 
         流量阈值
 
@@ -119,7 +119,7 @@ class MetricConfig:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this MetricConfig.
+        r"""Sets the threshold of this MetricConfig.
 
         流量阈值
 
@@ -130,7 +130,7 @@ class MetricConfig:
 
     @property
     def min(self):
-        """Gets the min of this MetricConfig.
+        r"""Gets the min of this MetricConfig.
 
         流量最小值
 
@@ -141,7 +141,7 @@ class MetricConfig:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this MetricConfig.
+        r"""Sets the min of this MetricConfig.
 
         流量最小值
 

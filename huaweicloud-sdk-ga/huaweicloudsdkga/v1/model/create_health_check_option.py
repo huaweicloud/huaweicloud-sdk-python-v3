@@ -37,7 +37,7 @@ class CreateHealthCheckOption:
     }
 
     def __init__(self, endpoint_group_id=None, protocol=None, port=None, interval=None, timeout=None, max_retries=None, enabled=None):
-        """CreateHealthCheckOption
+        r"""CreateHealthCheckOption
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateHealthCheckOption:
 
     @property
     def endpoint_group_id(self):
-        """Gets the endpoint_group_id of this CreateHealthCheckOption.
+        r"""Gets the endpoint_group_id of this CreateHealthCheckOption.
 
         终端节点组ID。
 
@@ -89,7 +89,7 @@ class CreateHealthCheckOption:
 
     @endpoint_group_id.setter
     def endpoint_group_id(self, endpoint_group_id):
-        """Sets the endpoint_group_id of this CreateHealthCheckOption.
+        r"""Sets the endpoint_group_id of this CreateHealthCheckOption.
 
         终端节点组ID。
 
@@ -100,7 +100,7 @@ class CreateHealthCheckOption:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreateHealthCheckOption.
+        r"""Gets the protocol of this CreateHealthCheckOption.
 
         :return: The protocol of this CreateHealthCheckOption.
         :rtype: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
@@ -109,7 +109,7 @@ class CreateHealthCheckOption:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreateHealthCheckOption.
+        r"""Sets the protocol of this CreateHealthCheckOption.
 
         :param protocol: The protocol of this CreateHealthCheckOption.
         :type protocol: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
@@ -118,7 +118,7 @@ class CreateHealthCheckOption:
 
     @property
     def port(self):
-        """Gets the port of this CreateHealthCheckOption.
+        r"""Gets the port of this CreateHealthCheckOption.
 
         健康检查的端口。
 
@@ -129,7 +129,7 @@ class CreateHealthCheckOption:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this CreateHealthCheckOption.
+        r"""Sets the port of this CreateHealthCheckOption.
 
         健康检查的端口。
 
@@ -140,7 +140,7 @@ class CreateHealthCheckOption:
 
     @property
     def interval(self):
-        """Gets the interval of this CreateHealthCheckOption.
+        r"""Gets the interval of this CreateHealthCheckOption.
 
         健康检查的时间间隔，单位为秒。
 
@@ -151,7 +151,7 @@ class CreateHealthCheckOption:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this CreateHealthCheckOption.
+        r"""Sets the interval of this CreateHealthCheckOption.
 
         健康检查的时间间隔，单位为秒。
 
@@ -162,7 +162,7 @@ class CreateHealthCheckOption:
 
     @property
     def timeout(self):
-        """Gets the timeout of this CreateHealthCheckOption.
+        r"""Gets the timeout of this CreateHealthCheckOption.
 
         健康检查的超时时间，单位为秒。建议该值小于interval的值。
 
@@ -173,7 +173,7 @@ class CreateHealthCheckOption:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this CreateHealthCheckOption.
+        r"""Sets the timeout of this CreateHealthCheckOption.
 
         健康检查的超时时间，单位为秒。建议该值小于interval的值。
 
@@ -184,7 +184,7 @@ class CreateHealthCheckOption:
 
     @property
     def max_retries(self):
-        """Gets the max_retries of this CreateHealthCheckOption.
+        r"""Gets the max_retries of this CreateHealthCheckOption.
 
         最大重试次数。将终端节点的状态从“健康”设置为“不健康”或从“不健康”设置为“健康”所需的连续健康检查次数。
 
@@ -195,7 +195,7 @@ class CreateHealthCheckOption:
 
     @max_retries.setter
     def max_retries(self, max_retries):
-        """Sets the max_retries of this CreateHealthCheckOption.
+        r"""Sets the max_retries of this CreateHealthCheckOption.
 
         最大重试次数。将终端节点的状态从“健康”设置为“不健康”或从“不健康”设置为“健康”所需的连续健康检查次数。
 
@@ -206,7 +206,7 @@ class CreateHealthCheckOption:
 
     @property
     def enabled(self):
-        """Gets the enabled of this CreateHealthCheckOption.
+        r"""Gets the enabled of this CreateHealthCheckOption.
 
         是否开启健康检查。
 
@@ -217,7 +217,7 @@ class CreateHealthCheckOption:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this CreateHealthCheckOption.
+        r"""Sets the enabled of this CreateHealthCheckOption.
 
         是否开启健康检查。
 

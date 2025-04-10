@@ -25,7 +25,7 @@ class CreateSubscriptionUserRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSubscriptionUserRequest
+        r"""CreateSubscriptionUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSubscriptionUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSubscriptionUserRequest.
+        r"""Gets the body of this CreateSubscriptionUserRequest.
 
         :return: The body of this CreateSubscriptionUserRequest.
         :rtype: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestBody`
@@ -52,7 +52,7 @@ class CreateSubscriptionUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSubscriptionUserRequest.
+        r"""Sets the body of this CreateSubscriptionUserRequest.
 
         :param body: The body of this CreateSubscriptionUserRequest.
         :type body: :class:`huaweicloudsdksmnglobal.v2.CreateSubscriptionUserRequestBody`

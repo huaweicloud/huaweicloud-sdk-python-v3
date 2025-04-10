@@ -23,7 +23,7 @@ class NextMarker:
     }
 
     def __init__(self):
-        """NextMarker
+        r"""NextMarker
 
         The model defined in huaweicloud sdk
 

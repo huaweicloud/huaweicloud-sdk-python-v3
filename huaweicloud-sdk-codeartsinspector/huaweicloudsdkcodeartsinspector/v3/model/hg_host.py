@@ -45,7 +45,7 @@ class HGHost:
     }
 
     def __init__(self, auth_status=None, group_id=None, id=None, ip=None, jumper_server_id=None, last_scan_id=None, last_scan_info=None, name=None, os_type=None, smb_credential_id=None, ssh_credential_id=None):
-        """HGHost
+        r"""HGHost
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class HGHost:
 
     @property
     def auth_status(self):
-        """Gets the auth_status of this HGHost.
+        r"""Gets the auth_status of this HGHost.
 
         主机授权状态: * -1 未知 * 0 连接成功 * 1 不可达 * 2 登录失败 
 
@@ -124,7 +124,7 @@ class HGHost:
 
     @auth_status.setter
     def auth_status(self, auth_status):
-        """Sets the auth_status of this HGHost.
+        r"""Sets the auth_status of this HGHost.
 
         主机授权状态: * -1 未知 * 0 连接成功 * 1 不可达 * 2 登录失败 
 
@@ -135,7 +135,7 @@ class HGHost:
 
     @property
     def group_id(self):
-        """Gets the group_id of this HGHost.
+        r"""Gets the group_id of this HGHost.
 
         主机组id
 
@@ -146,7 +146,7 @@ class HGHost:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this HGHost.
+        r"""Sets the group_id of this HGHost.
 
         主机组id
 
@@ -157,7 +157,7 @@ class HGHost:
 
     @property
     def id(self):
-        """Gets the id of this HGHost.
+        r"""Gets the id of this HGHost.
 
         主机id
 
@@ -168,7 +168,7 @@ class HGHost:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HGHost.
+        r"""Sets the id of this HGHost.
 
         主机id
 
@@ -179,7 +179,7 @@ class HGHost:
 
     @property
     def ip(self):
-        """Gets the ip of this HGHost.
+        r"""Gets the ip of this HGHost.
 
         主机ip
 
@@ -190,7 +190,7 @@ class HGHost:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this HGHost.
+        r"""Sets the ip of this HGHost.
 
         主机ip
 
@@ -201,7 +201,7 @@ class HGHost:
 
     @property
     def jumper_server_id(self):
-        """Gets the jumper_server_id of this HGHost.
+        r"""Gets the jumper_server_id of this HGHost.
 
         跳板机id
 
@@ -212,7 +212,7 @@ class HGHost:
 
     @jumper_server_id.setter
     def jumper_server_id(self, jumper_server_id):
-        """Sets the jumper_server_id of this HGHost.
+        r"""Sets the jumper_server_id of this HGHost.
 
         跳板机id
 
@@ -223,7 +223,7 @@ class HGHost:
 
     @property
     def last_scan_id(self):
-        """Gets the last_scan_id of this HGHost.
+        r"""Gets the last_scan_id of this HGHost.
 
         最后一次扫描的id
 
@@ -234,7 +234,7 @@ class HGHost:
 
     @last_scan_id.setter
     def last_scan_id(self, last_scan_id):
-        """Sets the last_scan_id of this HGHost.
+        r"""Sets the last_scan_id of this HGHost.
 
         最后一次扫描的id
 
@@ -245,7 +245,7 @@ class HGHost:
 
     @property
     def last_scan_info(self):
-        """Gets the last_scan_info of this HGHost.
+        r"""Gets the last_scan_info of this HGHost.
 
         :return: The last_scan_info of this HGHost.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.ScanInfoDetail`
@@ -254,7 +254,7 @@ class HGHost:
 
     @last_scan_info.setter
     def last_scan_info(self, last_scan_info):
-        """Sets the last_scan_info of this HGHost.
+        r"""Sets the last_scan_info of this HGHost.
 
         :param last_scan_info: The last_scan_info of this HGHost.
         :type last_scan_info: :class:`huaweicloudsdkcodeartsinspector.v3.ScanInfoDetail`
@@ -263,7 +263,7 @@ class HGHost:
 
     @property
     def name(self):
-        """Gets the name of this HGHost.
+        r"""Gets the name of this HGHost.
 
         主机名
 
@@ -274,7 +274,7 @@ class HGHost:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HGHost.
+        r"""Sets the name of this HGHost.
 
         主机名
 
@@ -285,7 +285,7 @@ class HGHost:
 
     @property
     def os_type(self):
-        """Gets the os_type of this HGHost.
+        r"""Gets the os_type of this HGHost.
 
         主机操作系统类型
 
@@ -296,7 +296,7 @@ class HGHost:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this HGHost.
+        r"""Sets the os_type of this HGHost.
 
         主机操作系统类型
 
@@ -307,7 +307,7 @@ class HGHost:
 
     @property
     def smb_credential_id(self):
-        """Gets the smb_credential_id of this HGHost.
+        r"""Gets the smb_credential_id of this HGHost.
 
         smb_credential_id
 
@@ -318,7 +318,7 @@ class HGHost:
 
     @smb_credential_id.setter
     def smb_credential_id(self, smb_credential_id):
-        """Sets the smb_credential_id of this HGHost.
+        r"""Sets the smb_credential_id of this HGHost.
 
         smb_credential_id
 
@@ -329,7 +329,7 @@ class HGHost:
 
     @property
     def ssh_credential_id(self):
-        """Gets the ssh_credential_id of this HGHost.
+        r"""Gets the ssh_credential_id of this HGHost.
 
         ssh授权id
 
@@ -340,7 +340,7 @@ class HGHost:
 
     @ssh_credential_id.setter
     def ssh_credential_id(self, ssh_credential_id):
-        """Sets the ssh_credential_id of this HGHost.
+        r"""Sets the ssh_credential_id of this HGHost.
 
         ssh授权id
 

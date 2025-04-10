@@ -43,7 +43,7 @@ class SignatureWithBindNum:
     }
 
     def __init__(self, name=None, sign_type=None, sign_key=None, sign_secret=None, sign_algorithm=None, update_time=None, create_time=None, id=None, bind_num=None, ldapi_bind_num=None):
-        """SignatureWithBindNum
+        r"""SignatureWithBindNum
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class SignatureWithBindNum:
 
     @property
     def name(self):
-        """Gets the name of this SignatureWithBindNum.
+        r"""Gets the name of this SignatureWithBindNum.
 
         签名密钥的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -116,7 +116,7 @@ class SignatureWithBindNum:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SignatureWithBindNum.
+        r"""Sets the name of this SignatureWithBindNum.
 
         签名密钥的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -127,7 +127,7 @@ class SignatureWithBindNum:
 
     @property
     def sign_type(self):
-        """Gets the sign_type of this SignatureWithBindNum.
+        r"""Gets the sign_type of this SignatureWithBindNum.
 
         签名密钥类型： - hmac - basic - public_key - aes  basic和aes类型需要实例升级到对应版本，若不存在可联系技术工程师升级。  public_key类型开启实例配置public_key才可使用，实例特性配置详情请参考“附录 > 实例支持的APIC特性”，如确认实例不存在public_key配置可联系技术工程师开启。
 
@@ -138,7 +138,7 @@ class SignatureWithBindNum:
 
     @sign_type.setter
     def sign_type(self, sign_type):
-        """Sets the sign_type of this SignatureWithBindNum.
+        r"""Sets the sign_type of this SignatureWithBindNum.
 
         签名密钥类型： - hmac - basic - public_key - aes  basic和aes类型需要实例升级到对应版本，若不存在可联系技术工程师升级。  public_key类型开启实例配置public_key才可使用，实例特性配置详情请参考“附录 > 实例支持的APIC特性”，如确认实例不存在public_key配置可联系技术工程师开启。
 
@@ -149,7 +149,7 @@ class SignatureWithBindNum:
 
     @property
     def sign_key(self):
-        """Gets the sign_key of this SignatureWithBindNum.
+        r"""Gets the sign_key of this SignatureWithBindNum.
 
         签名密钥的key。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母或数字开头，8 ~ 32字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母开头，4 ~ 32字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，+，/，=，可以英文字母，数字，+，/开头，8 ~ 512字符。未填写时后台自动生成。 - aes类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，签名算法为aes-128-cfb时为16个字符，签名算法为aes-256-cfb时为32个字符。未填写时后台自动生成。
 
@@ -160,7 +160,7 @@ class SignatureWithBindNum:
 
     @sign_key.setter
     def sign_key(self, sign_key):
-        """Sets the sign_key of this SignatureWithBindNum.
+        r"""Sets the sign_key of this SignatureWithBindNum.
 
         签名密钥的key。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母或数字开头，8 ~ 32字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母开头，4 ~ 32字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，+，/，=，可以英文字母，数字，+，/开头，8 ~ 512字符。未填写时后台自动生成。 - aes类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，签名算法为aes-128-cfb时为16个字符，签名算法为aes-256-cfb时为32个字符。未填写时后台自动生成。
 
@@ -171,7 +171,7 @@ class SignatureWithBindNum:
 
     @property
     def sign_secret(self):
-        """Gets the sign_secret of this SignatureWithBindNum.
+        r"""Gets the sign_secret of this SignatureWithBindNum.
 
         签名密钥的密钥。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，16 ~ 64字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，8 ~ 64字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，15 ~ 2048字符。未填写时后台自动生成。 - aes类型签名密钥使用的向量：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，16个字符。未填写时后台自动生成。
 
@@ -182,7 +182,7 @@ class SignatureWithBindNum:
 
     @sign_secret.setter
     def sign_secret(self, sign_secret):
-        """Sets the sign_secret of this SignatureWithBindNum.
+        r"""Sets the sign_secret of this SignatureWithBindNum.
 
         签名密钥的密钥。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，16 ~ 64字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，8 ~ 64字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，15 ~ 2048字符。未填写时后台自动生成。 - aes类型签名密钥使用的向量：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，16个字符。未填写时后台自动生成。
 
@@ -193,7 +193,7 @@ class SignatureWithBindNum:
 
     @property
     def sign_algorithm(self):
-        """Gets the sign_algorithm of this SignatureWithBindNum.
+        r"""Gets the sign_algorithm of this SignatureWithBindNum.
 
         签名算法。默认值为空，仅aes类型签名密钥支持选择签名算法，其他类型签名密钥不支持签名算法。
 
@@ -204,7 +204,7 @@ class SignatureWithBindNum:
 
     @sign_algorithm.setter
     def sign_algorithm(self, sign_algorithm):
-        """Sets the sign_algorithm of this SignatureWithBindNum.
+        r"""Sets the sign_algorithm of this SignatureWithBindNum.
 
         签名算法。默认值为空，仅aes类型签名密钥支持选择签名算法，其他类型签名密钥不支持签名算法。
 
@@ -215,7 +215,7 @@ class SignatureWithBindNum:
 
     @property
     def update_time(self):
-        """Gets the update_time of this SignatureWithBindNum.
+        r"""Gets the update_time of this SignatureWithBindNum.
 
         更新时间
 
@@ -226,7 +226,7 @@ class SignatureWithBindNum:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this SignatureWithBindNum.
+        r"""Sets the update_time of this SignatureWithBindNum.
 
         更新时间
 
@@ -237,7 +237,7 @@ class SignatureWithBindNum:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SignatureWithBindNum.
+        r"""Gets the create_time of this SignatureWithBindNum.
 
         创建时间
 
@@ -248,7 +248,7 @@ class SignatureWithBindNum:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SignatureWithBindNum.
+        r"""Sets the create_time of this SignatureWithBindNum.
 
         创建时间
 
@@ -259,7 +259,7 @@ class SignatureWithBindNum:
 
     @property
     def id(self):
-        """Gets the id of this SignatureWithBindNum.
+        r"""Gets the id of this SignatureWithBindNum.
 
         签名密钥的编号
 
@@ -270,7 +270,7 @@ class SignatureWithBindNum:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SignatureWithBindNum.
+        r"""Sets the id of this SignatureWithBindNum.
 
         签名密钥的编号
 
@@ -281,7 +281,7 @@ class SignatureWithBindNum:
 
     @property
     def bind_num(self):
-        """Gets the bind_num of this SignatureWithBindNum.
+        r"""Gets the bind_num of this SignatureWithBindNum.
 
         绑定的API数量
 
@@ -292,7 +292,7 @@ class SignatureWithBindNum:
 
     @bind_num.setter
     def bind_num(self, bind_num):
-        """Sets the bind_num of this SignatureWithBindNum.
+        r"""Sets the bind_num of this SignatureWithBindNum.
 
         绑定的API数量
 
@@ -303,7 +303,7 @@ class SignatureWithBindNum:
 
     @property
     def ldapi_bind_num(self):
-        """Gets the ldapi_bind_num of this SignatureWithBindNum.
+        r"""Gets the ldapi_bind_num of this SignatureWithBindNum.
 
         绑定的自定义后端数量
 
@@ -314,7 +314,7 @@ class SignatureWithBindNum:
 
     @ldapi_bind_num.setter
     def ldapi_bind_num(self, ldapi_bind_num):
-        """Sets the ldapi_bind_num of this SignatureWithBindNum.
+        r"""Sets the ldapi_bind_num of this SignatureWithBindNum.
 
         绑定的自定义后端数量
 

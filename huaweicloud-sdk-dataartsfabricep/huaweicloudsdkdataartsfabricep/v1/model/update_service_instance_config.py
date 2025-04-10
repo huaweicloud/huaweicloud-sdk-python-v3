@@ -27,7 +27,7 @@ class UpdateServiceInstanceConfig:
     }
 
     def __init__(self, pgsql_instance_config=None, model_instance_config=None):
-        """UpdateServiceInstanceConfig
+        r"""UpdateServiceInstanceConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateServiceInstanceConfig:
 
     @property
     def pgsql_instance_config(self):
-        """Gets the pgsql_instance_config of this UpdateServiceInstanceConfig.
+        r"""Gets the pgsql_instance_config of this UpdateServiceInstanceConfig.
 
         :return: The pgsql_instance_config of this UpdateServiceInstanceConfig.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.PGSQLInstanceConfig`
@@ -59,7 +59,7 @@ class UpdateServiceInstanceConfig:
 
     @pgsql_instance_config.setter
     def pgsql_instance_config(self, pgsql_instance_config):
-        """Sets the pgsql_instance_config of this UpdateServiceInstanceConfig.
+        r"""Sets the pgsql_instance_config of this UpdateServiceInstanceConfig.
 
         :param pgsql_instance_config: The pgsql_instance_config of this UpdateServiceInstanceConfig.
         :type pgsql_instance_config: :class:`huaweicloudsdkdataartsfabricep.v1.PGSQLInstanceConfig`
@@ -68,7 +68,7 @@ class UpdateServiceInstanceConfig:
 
     @property
     def model_instance_config(self):
-        """Gets the model_instance_config of this UpdateServiceInstanceConfig.
+        r"""Gets the model_instance_config of this UpdateServiceInstanceConfig.
 
         :return: The model_instance_config of this UpdateServiceInstanceConfig.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.UpdateModelServiceInstanceConfig`
@@ -77,7 +77,7 @@ class UpdateServiceInstanceConfig:
 
     @model_instance_config.setter
     def model_instance_config(self, model_instance_config):
-        """Sets the model_instance_config of this UpdateServiceInstanceConfig.
+        r"""Sets the model_instance_config of this UpdateServiceInstanceConfig.
 
         :param model_instance_config: The model_instance_config of this UpdateServiceInstanceConfig.
         :type model_instance_config: :class:`huaweicloudsdkdataartsfabricep.v1.UpdateModelServiceInstanceConfig`

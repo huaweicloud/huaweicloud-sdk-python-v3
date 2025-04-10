@@ -27,7 +27,7 @@ class ModelProperty:
     }
 
     def __init__(self, name=None, value=None):
-        """ModelProperty
+        r"""ModelProperty
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ModelProperty:
 
     @property
     def name(self):
-        """Gets the name of this ModelProperty.
+        r"""Gets the name of this ModelProperty.
 
         属性名称
 
@@ -59,7 +59,7 @@ class ModelProperty:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModelProperty.
+        r"""Sets the name of this ModelProperty.
 
         属性名称
 
@@ -70,7 +70,7 @@ class ModelProperty:
 
     @property
     def value(self):
-        """Gets the value of this ModelProperty.
+        r"""Gets the value of this ModelProperty.
 
         属性值
 
@@ -81,7 +81,7 @@ class ModelProperty:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ModelProperty.
+        r"""Sets the value of this ModelProperty.
 
         属性值
 

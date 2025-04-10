@@ -29,7 +29,7 @@ class ListSfs3StorageRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None):
-        """ListSfs3StorageRequest
+        r"""ListSfs3StorageRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListSfs3StorageRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSfs3StorageRequest.
+        r"""Gets the offset of this ListSfs3StorageRequest.
 
         查询的偏移量。
 
@@ -68,7 +68,7 @@ class ListSfs3StorageRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSfs3StorageRequest.
+        r"""Sets the offset of this ListSfs3StorageRequest.
 
         查询的偏移量。
 
@@ -79,7 +79,7 @@ class ListSfs3StorageRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSfs3StorageRequest.
+        r"""Gets the limit of this ListSfs3StorageRequest.
 
         单次查询的大小[1-100]。
 
@@ -90,7 +90,7 @@ class ListSfs3StorageRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSfs3StorageRequest.
+        r"""Sets the limit of this ListSfs3StorageRequest.
 
         单次查询的大小[1-100]。
 
@@ -101,7 +101,7 @@ class ListSfs3StorageRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSfs3StorageRequest.
+        r"""Gets the name of this ListSfs3StorageRequest.
 
         查询名称,模糊匹配。
 
@@ -112,7 +112,7 @@ class ListSfs3StorageRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSfs3StorageRequest.
+        r"""Sets the name of this ListSfs3StorageRequest.
 
         查询名称,模糊匹配。
 

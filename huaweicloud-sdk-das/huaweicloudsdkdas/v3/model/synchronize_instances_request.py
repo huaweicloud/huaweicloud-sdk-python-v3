@@ -27,7 +27,7 @@ class SynchronizeInstancesRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """SynchronizeInstancesRequest
+        r"""SynchronizeInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SynchronizeInstancesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SynchronizeInstancesRequest.
+        r"""Gets the x_language of this SynchronizeInstancesRequest.
 
         请求语言类型。
 
@@ -61,7 +61,7 @@ class SynchronizeInstancesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SynchronizeInstancesRequest.
+        r"""Sets the x_language of this SynchronizeInstancesRequest.
 
         请求语言类型。
 
@@ -72,7 +72,7 @@ class SynchronizeInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this SynchronizeInstancesRequest.
+        r"""Gets the body of this SynchronizeInstancesRequest.
 
         :return: The body of this SynchronizeInstancesRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.SynchronizeInstancesReq`
@@ -81,7 +81,7 @@ class SynchronizeInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SynchronizeInstancesRequest.
+        r"""Sets the body of this SynchronizeInstancesRequest.
 
         :param body: The body of this SynchronizeInstancesRequest.
         :type body: :class:`huaweicloudsdkdas.v3.SynchronizeInstancesReq`

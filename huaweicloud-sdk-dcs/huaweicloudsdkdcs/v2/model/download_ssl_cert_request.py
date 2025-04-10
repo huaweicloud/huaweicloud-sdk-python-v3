@@ -25,7 +25,7 @@ class DownloadSslCertRequest:
     }
 
     def __init__(self, instance_id=None):
-        """DownloadSslCertRequest
+        r"""DownloadSslCertRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DownloadSslCertRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DownloadSslCertRequest.
+        r"""Gets the instance_id of this DownloadSslCertRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class DownloadSslCertRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DownloadSslCertRequest.
+        r"""Sets the instance_id of this DownloadSslCertRequest.
 
         实例ID。
 

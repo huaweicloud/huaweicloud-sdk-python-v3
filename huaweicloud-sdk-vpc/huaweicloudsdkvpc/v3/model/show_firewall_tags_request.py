@@ -25,7 +25,7 @@ class ShowFirewallTagsRequest:
     }
 
     def __init__(self, firewall_id=None):
-        """ShowFirewallTagsRequest
+        r"""ShowFirewallTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowFirewallTagsRequest:
 
     @property
     def firewall_id(self):
-        """Gets the firewall_id of this ShowFirewallTagsRequest.
+        r"""Gets the firewall_id of this ShowFirewallTagsRequest.
 
         功能说明：ACL唯一标识 取值范围：合法UUID 约束：ID对应的ACL必须存在
 
@@ -53,7 +53,7 @@ class ShowFirewallTagsRequest:
 
     @firewall_id.setter
     def firewall_id(self, firewall_id):
-        """Sets the firewall_id of this ShowFirewallTagsRequest.
+        r"""Sets the firewall_id of this ShowFirewallTagsRequest.
 
         功能说明：ACL唯一标识 取值范围：合法UUID 约束：ID对应的ACL必须存在
 

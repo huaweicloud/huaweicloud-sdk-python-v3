@@ -27,7 +27,7 @@ class DeleteSubtitle:
     }
 
     def __init__(self, type=None, language=None):
-        """DeleteSubtitle
+        r"""DeleteSubtitle
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteSubtitle:
 
     @property
     def type(self):
-        """Gets the type of this DeleteSubtitle.
+        r"""Gets the type of this DeleteSubtitle.
 
         字幕类型，字幕封装当前仅支持VTT和SRT
 
@@ -59,7 +59,7 @@ class DeleteSubtitle:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DeleteSubtitle.
+        r"""Sets the type of this DeleteSubtitle.
 
         字幕类型，字幕封装当前仅支持VTT和SRT
 
@@ -70,7 +70,7 @@ class DeleteSubtitle:
 
     @property
     def language(self):
-        """Gets the language of this DeleteSubtitle.
+        r"""Gets the language of this DeleteSubtitle.
 
         字幕语言
 
@@ -81,7 +81,7 @@ class DeleteSubtitle:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this DeleteSubtitle.
+        r"""Sets the language of this DeleteSubtitle.
 
         字幕语言
 

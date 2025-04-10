@@ -30,7 +30,7 @@ class DecryptDatakeyResponse(SdkResponse):
     }
 
     def __init__(self, data_key=None, datakey_length=None, datakey_dgst=None):
-        """DecryptDatakeyResponse
+        r"""DecryptDatakeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DecryptDatakeyResponse(SdkResponse):
 
     @property
     def data_key(self):
-        """Gets the data_key of this DecryptDatakeyResponse.
+        r"""Gets the data_key of this DecryptDatakeyResponse.
 
         DEK明文的16进制字符串。
 
@@ -69,7 +69,7 @@ class DecryptDatakeyResponse(SdkResponse):
 
     @data_key.setter
     def data_key(self, data_key):
-        """Sets the data_key of this DecryptDatakeyResponse.
+        r"""Sets the data_key of this DecryptDatakeyResponse.
 
         DEK明文的16进制字符串。
 
@@ -80,7 +80,7 @@ class DecryptDatakeyResponse(SdkResponse):
 
     @property
     def datakey_length(self):
-        """Gets the datakey_length of this DecryptDatakeyResponse.
+        r"""Gets the datakey_length of this DecryptDatakeyResponse.
 
         DEK明文字节长度。
 
@@ -91,7 +91,7 @@ class DecryptDatakeyResponse(SdkResponse):
 
     @datakey_length.setter
     def datakey_length(self, datakey_length):
-        """Sets the datakey_length of this DecryptDatakeyResponse.
+        r"""Sets the datakey_length of this DecryptDatakeyResponse.
 
         DEK明文字节长度。
 
@@ -102,7 +102,7 @@ class DecryptDatakeyResponse(SdkResponse):
 
     @property
     def datakey_dgst(self):
-        """Gets the datakey_dgst of this DecryptDatakeyResponse.
+        r"""Gets the datakey_dgst of this DecryptDatakeyResponse.
 
         DEK明文的SHA256值对应的16进制字符串。
 
@@ -113,7 +113,7 @@ class DecryptDatakeyResponse(SdkResponse):
 
     @datakey_dgst.setter
     def datakey_dgst(self, datakey_dgst):
-        """Sets the datakey_dgst of this DecryptDatakeyResponse.
+        r"""Sets the datakey_dgst of this DecryptDatakeyResponse.
 
         DEK明文的SHA256值对应的16进制字符串。
 

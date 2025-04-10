@@ -34,7 +34,7 @@ class DeleteMeshResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
-        """DeleteMeshResponse
+        r"""DeleteMeshResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class DeleteMeshResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this DeleteMeshResponse.
+        r"""Gets the api_version of this DeleteMeshResponse.
 
         API版本，固定值“v1”，该值不可修改
 
@@ -83,7 +83,7 @@ class DeleteMeshResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this DeleteMeshResponse.
+        r"""Sets the api_version of this DeleteMeshResponse.
 
         API版本，固定值“v1”，该值不可修改
 
@@ -94,7 +94,7 @@ class DeleteMeshResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this DeleteMeshResponse.
+        r"""Gets the kind of this DeleteMeshResponse.
 
         API类型，固定值“Mesh”或“mesh”，该值不可修改
 
@@ -105,7 +105,7 @@ class DeleteMeshResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this DeleteMeshResponse.
+        r"""Sets the kind of this DeleteMeshResponse.
 
         API类型，固定值“Mesh”或“mesh”，该值不可修改
 
@@ -116,7 +116,7 @@ class DeleteMeshResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this DeleteMeshResponse.
+        r"""Gets the metadata of this DeleteMeshResponse.
 
         :return: The metadata of this DeleteMeshResponse.
         :rtype: :class:`huaweicloudsdkasm.v1.MeshMetadata`
@@ -125,7 +125,7 @@ class DeleteMeshResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this DeleteMeshResponse.
+        r"""Sets the metadata of this DeleteMeshResponse.
 
         :param metadata: The metadata of this DeleteMeshResponse.
         :type metadata: :class:`huaweicloudsdkasm.v1.MeshMetadata`
@@ -134,7 +134,7 @@ class DeleteMeshResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this DeleteMeshResponse.
+        r"""Gets the spec of this DeleteMeshResponse.
 
         :return: The spec of this DeleteMeshResponse.
         :rtype: :class:`huaweicloudsdkasm.v1.MeshSpec`
@@ -143,7 +143,7 @@ class DeleteMeshResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this DeleteMeshResponse.
+        r"""Sets the spec of this DeleteMeshResponse.
 
         :param spec: The spec of this DeleteMeshResponse.
         :type spec: :class:`huaweicloudsdkasm.v1.MeshSpec`
@@ -152,7 +152,7 @@ class DeleteMeshResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteMeshResponse.
+        r"""Gets the status of this DeleteMeshResponse.
 
         :return: The status of this DeleteMeshResponse.
         :rtype: :class:`huaweicloudsdkasm.v1.MeshStatus`
@@ -161,7 +161,7 @@ class DeleteMeshResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteMeshResponse.
+        r"""Sets the status of this DeleteMeshResponse.
 
         :param status: The status of this DeleteMeshResponse.
         :type status: :class:`huaweicloudsdkasm.v1.MeshStatus`

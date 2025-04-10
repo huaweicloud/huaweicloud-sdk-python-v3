@@ -30,7 +30,7 @@ class CreateBuildJobResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None, error=None):
-        """CreateBuildJobResponse
+        r"""CreateBuildJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateBuildJobResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateBuildJobResponse.
+        r"""Gets the result of this CreateBuildJobResponse.
 
         :return: The result of this CreateBuildJobResponse.
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.CreateBuildJobResponseBodyResult`
@@ -67,7 +67,7 @@ class CreateBuildJobResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateBuildJobResponse.
+        r"""Sets the result of this CreateBuildJobResponse.
 
         :param result: The result of this CreateBuildJobResponse.
         :type result: :class:`huaweicloudsdkcodeartsbuild.v3.CreateBuildJobResponseBodyResult`
@@ -76,7 +76,7 @@ class CreateBuildJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateBuildJobResponse.
+        r"""Gets the status of this CreateBuildJobResponse.
 
         状态信息
 
@@ -87,7 +87,7 @@ class CreateBuildJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateBuildJobResponse.
+        r"""Sets the status of this CreateBuildJobResponse.
 
         状态信息
 
@@ -98,7 +98,7 @@ class CreateBuildJobResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this CreateBuildJobResponse.
+        r"""Gets the error of this CreateBuildJobResponse.
 
         错误信息
 
@@ -109,7 +109,7 @@ class CreateBuildJobResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this CreateBuildJobResponse.
+        r"""Sets the error of this CreateBuildJobResponse.
 
         错误信息
 

@@ -35,7 +35,7 @@ class BatchAssociatedIssue:
     }
 
     def __init__(self, source_issue_id=None, subject=None, issue_id=None, project=None, user=None, status=None):
-        """BatchAssociatedIssue
+        r"""BatchAssociatedIssue
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BatchAssociatedIssue:
 
     @property
     def source_issue_id(self):
-        """Gets the source_issue_id of this BatchAssociatedIssue.
+        r"""Gets the source_issue_id of this BatchAssociatedIssue.
 
         关联工作项ID
 
@@ -89,7 +89,7 @@ class BatchAssociatedIssue:
 
     @source_issue_id.setter
     def source_issue_id(self, source_issue_id):
-        """Sets the source_issue_id of this BatchAssociatedIssue.
+        r"""Sets the source_issue_id of this BatchAssociatedIssue.
 
         关联工作项ID
 
@@ -100,7 +100,7 @@ class BatchAssociatedIssue:
 
     @property
     def subject(self):
-        """Gets the subject of this BatchAssociatedIssue.
+        r"""Gets the subject of this BatchAssociatedIssue.
 
         工作项标题
 
@@ -111,7 +111,7 @@ class BatchAssociatedIssue:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this BatchAssociatedIssue.
+        r"""Sets the subject of this BatchAssociatedIssue.
 
         工作项标题
 
@@ -122,7 +122,7 @@ class BatchAssociatedIssue:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this BatchAssociatedIssue.
+        r"""Gets the issue_id of this BatchAssociatedIssue.
 
         工作项ID
 
@@ -133,7 +133,7 @@ class BatchAssociatedIssue:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this BatchAssociatedIssue.
+        r"""Sets the issue_id of this BatchAssociatedIssue.
 
         工作项ID
 
@@ -144,7 +144,7 @@ class BatchAssociatedIssue:
 
     @property
     def project(self):
-        """Gets the project of this BatchAssociatedIssue.
+        r"""Gets the project of this BatchAssociatedIssue.
 
         :return: The project of this BatchAssociatedIssue.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleProject`
@@ -153,7 +153,7 @@ class BatchAssociatedIssue:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this BatchAssociatedIssue.
+        r"""Sets the project of this BatchAssociatedIssue.
 
         :param project: The project of this BatchAssociatedIssue.
         :type project: :class:`huaweicloudsdkprojectman.v4.SimpleProject`
@@ -162,7 +162,7 @@ class BatchAssociatedIssue:
 
     @property
     def user(self):
-        """Gets the user of this BatchAssociatedIssue.
+        r"""Gets the user of this BatchAssociatedIssue.
 
         :return: The user of this BatchAssociatedIssue.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -171,7 +171,7 @@ class BatchAssociatedIssue:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this BatchAssociatedIssue.
+        r"""Sets the user of this BatchAssociatedIssue.
 
         :param user: The user of this BatchAssociatedIssue.
         :type user: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -180,7 +180,7 @@ class BatchAssociatedIssue:
 
     @property
     def status(self):
-        """Gets the status of this BatchAssociatedIssue.
+        r"""Gets the status of this BatchAssociatedIssue.
 
         :return: The status of this BatchAssociatedIssue.
         :rtype: :class:`huaweicloudsdkprojectman.v4.StatusVo`
@@ -189,7 +189,7 @@ class BatchAssociatedIssue:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchAssociatedIssue.
+        r"""Sets the status of this BatchAssociatedIssue.
 
         :param status: The status of this BatchAssociatedIssue.
         :type status: :class:`huaweicloudsdkprojectman.v4.StatusVo`

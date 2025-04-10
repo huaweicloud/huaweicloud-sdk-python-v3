@@ -25,7 +25,7 @@ class CreateVpnUserRequestBody:
     }
 
     def __init__(self, user=None):
-        """CreateVpnUserRequestBody
+        r"""CreateVpnUserRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateVpnUserRequestBody:
 
     @property
     def user(self):
-        """Gets the user of this CreateVpnUserRequestBody.
+        r"""Gets the user of this CreateVpnUserRequestBody.
 
         :return: The user of this CreateVpnUserRequestBody.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnUserRequestBodyContent`
@@ -51,7 +51,7 @@ class CreateVpnUserRequestBody:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this CreateVpnUserRequestBody.
+        r"""Sets the user of this CreateVpnUserRequestBody.
 
         :param user: The user of this CreateVpnUserRequestBody.
         :type user: :class:`huaweicloudsdkvpn.v5.CreateVpnUserRequestBodyContent`

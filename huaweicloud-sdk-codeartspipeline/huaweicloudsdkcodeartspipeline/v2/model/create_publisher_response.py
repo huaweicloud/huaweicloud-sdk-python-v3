@@ -26,7 +26,7 @@ class CreatePublisherResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreatePublisherResponse
+        r"""CreatePublisherResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePublisherResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreatePublisherResponse.
+        r"""Gets the body of this CreatePublisherResponse.
 
         :return: The body of this CreatePublisherResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CreatePublisherResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePublisherResponse.
+        r"""Sets the body of this CreatePublisherResponse.
 
         :param body: The body of this CreatePublisherResponse.
         :type body: str

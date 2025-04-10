@@ -29,7 +29,7 @@ class ShrinkParam:
     }
 
     def __init__(self, node_group_name=None, count=None, resource_ids=None):
-        """ShrinkParam
+        r"""ShrinkParam
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShrinkParam:
 
     @property
     def node_group_name(self):
-        """Gets the node_group_name of this ShrinkParam.
+        r"""Gets the node_group_name of this ShrinkParam.
 
         节点组名称
 
@@ -67,7 +67,7 @@ class ShrinkParam:
 
     @node_group_name.setter
     def node_group_name(self, node_group_name):
-        """Sets the node_group_name of this ShrinkParam.
+        r"""Sets the node_group_name of this ShrinkParam.
 
         节点组名称
 
@@ -78,7 +78,7 @@ class ShrinkParam:
 
     @property
     def count(self):
-        """Gets the count of this ShrinkParam.
+        r"""Gets the count of this ShrinkParam.
 
         缩容节点数量，如果是指定节点缩容，则该参数可以不填。
 
@@ -89,7 +89,7 @@ class ShrinkParam:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShrinkParam.
+        r"""Sets the count of this ShrinkParam.
 
         缩容节点数量，如果是指定节点缩容，则该参数可以不填。
 
@@ -100,7 +100,7 @@ class ShrinkParam:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this ShrinkParam.
+        r"""Gets the resource_ids of this ShrinkParam.
 
         缩容节点时指定待删除节点的资源ID列表。 resource_ids为空时，按照系统规则自动选择删除节点。 仅支持删除状态异常的ecs节点。 会针对指定节点进行强制删除。 可通过查询主机接口获取resource_id。
 
@@ -111,7 +111,7 @@ class ShrinkParam:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this ShrinkParam.
+        r"""Sets the resource_ids of this ShrinkParam.
 
         缩容节点时指定待删除节点的资源ID列表。 resource_ids为空时，按照系统规则自动选择删除节点。 仅支持删除状态异常的ecs节点。 会针对指定节点进行强制删除。 可通过查询主机接口获取resource_id。
 

@@ -33,7 +33,7 @@ class PipelineBasicDto:
     }
 
     def __init__(self, id=None, web_url=None, sha=None, ref=None, status=None):
-        """PipelineBasicDto
+        r"""PipelineBasicDto
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PipelineBasicDto:
 
     @property
     def id(self):
-        """Gets the id of this PipelineBasicDto.
+        r"""Gets the id of this PipelineBasicDto.
 
         流水线id
 
@@ -82,7 +82,7 @@ class PipelineBasicDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PipelineBasicDto.
+        r"""Sets the id of this PipelineBasicDto.
 
         流水线id
 
@@ -93,7 +93,7 @@ class PipelineBasicDto:
 
     @property
     def web_url(self):
-        """Gets the web_url of this PipelineBasicDto.
+        r"""Gets the web_url of this PipelineBasicDto.
 
         流水线url
 
@@ -104,7 +104,7 @@ class PipelineBasicDto:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this PipelineBasicDto.
+        r"""Sets the web_url of this PipelineBasicDto.
 
         流水线url
 
@@ -115,7 +115,7 @@ class PipelineBasicDto:
 
     @property
     def sha(self):
-        """Gets the sha of this PipelineBasicDto.
+        r"""Gets the sha of this PipelineBasicDto.
 
         流水线关联sha值
 
@@ -126,7 +126,7 @@ class PipelineBasicDto:
 
     @sha.setter
     def sha(self, sha):
-        """Sets the sha of this PipelineBasicDto.
+        r"""Sets the sha of this PipelineBasicDto.
 
         流水线关联sha值
 
@@ -137,7 +137,7 @@ class PipelineBasicDto:
 
     @property
     def ref(self):
-        """Gets the ref of this PipelineBasicDto.
+        r"""Gets the ref of this PipelineBasicDto.
 
         流水线ref
 
@@ -148,7 +148,7 @@ class PipelineBasicDto:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this PipelineBasicDto.
+        r"""Sets the ref of this PipelineBasicDto.
 
         流水线ref
 
@@ -159,7 +159,7 @@ class PipelineBasicDto:
 
     @property
     def status(self):
-        """Gets the status of this PipelineBasicDto.
+        r"""Gets the status of this PipelineBasicDto.
 
         流水线状态
 
@@ -170,7 +170,7 @@ class PipelineBasicDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PipelineBasicDto.
+        r"""Sets the status of this PipelineBasicDto.
 
         流水线状态
 

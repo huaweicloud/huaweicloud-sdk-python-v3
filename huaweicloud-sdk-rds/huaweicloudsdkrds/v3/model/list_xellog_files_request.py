@@ -31,7 +31,7 @@ class ListXellogFilesRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, offset=None, limit=None):
-        """ListXellogFilesRequest
+        r"""ListXellogFilesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListXellogFilesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListXellogFilesRequest.
+        r"""Gets the x_language of this ListXellogFilesRequest.
 
         语言
 
@@ -74,7 +74,7 @@ class ListXellogFilesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListXellogFilesRequest.
+        r"""Sets the x_language of this ListXellogFilesRequest.
 
         语言
 
@@ -85,7 +85,7 @@ class ListXellogFilesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListXellogFilesRequest.
+        r"""Gets the instance_id of this ListXellogFilesRequest.
 
         实例ID。
 
@@ -96,7 +96,7 @@ class ListXellogFilesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListXellogFilesRequest.
+        r"""Sets the instance_id of this ListXellogFilesRequest.
 
         实例ID。
 
@@ -107,7 +107,7 @@ class ListXellogFilesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListXellogFilesRequest.
+        r"""Gets the offset of this ListXellogFilesRequest.
 
         索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -118,7 +118,7 @@ class ListXellogFilesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListXellogFilesRequest.
+        r"""Sets the offset of this ListXellogFilesRequest.
 
         索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -129,7 +129,7 @@ class ListXellogFilesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListXellogFilesRequest.
+        r"""Gets the limit of this ListXellogFilesRequest.
 
         查询记录数。取值范围[1, 100]。
 
@@ -140,7 +140,7 @@ class ListXellogFilesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListXellogFilesRequest.
+        r"""Sets the limit of this ListXellogFilesRequest.
 
         查询记录数。取值范围[1, 100]。
 

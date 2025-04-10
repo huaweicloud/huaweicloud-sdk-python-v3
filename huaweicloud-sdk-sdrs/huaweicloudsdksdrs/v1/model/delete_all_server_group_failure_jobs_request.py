@@ -23,7 +23,7 @@ class DeleteAllServerGroupFailureJobsRequest:
     }
 
     def __init__(self):
-        """DeleteAllServerGroupFailureJobsRequest
+        r"""DeleteAllServerGroupFailureJobsRequest
 
         The model defined in huaweicloud sdk
 

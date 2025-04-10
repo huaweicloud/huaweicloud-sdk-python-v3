@@ -30,7 +30,7 @@ class DeleteUserRequest:
     }
 
     def __init__(self, x_security_token=None, identity_store_id=None, user_id=None):
-        """DeleteUserRequest
+        r"""DeleteUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteUserRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this DeleteUserRequest.
+        r"""Gets the x_security_token of this DeleteUserRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -67,7 +67,7 @@ class DeleteUserRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this DeleteUserRequest.
+        r"""Sets the x_security_token of this DeleteUserRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -78,7 +78,7 @@ class DeleteUserRequest:
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this DeleteUserRequest.
+        r"""Gets the identity_store_id of this DeleteUserRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -89,7 +89,7 @@ class DeleteUserRequest:
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this DeleteUserRequest.
+        r"""Sets the identity_store_id of this DeleteUserRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -100,7 +100,7 @@ class DeleteUserRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this DeleteUserRequest.
+        r"""Gets the user_id of this DeleteUserRequest.
 
         身份源中IAM身份中心用户的全局唯一标识符（ID）
 
@@ -111,7 +111,7 @@ class DeleteUserRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this DeleteUserRequest.
+        r"""Sets the user_id of this DeleteUserRequest.
 
         身份源中IAM身份中心用户的全局唯一标识符（ID）
 

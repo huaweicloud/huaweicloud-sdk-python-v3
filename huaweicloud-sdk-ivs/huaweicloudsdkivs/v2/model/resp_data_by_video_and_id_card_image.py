@@ -35,7 +35,7 @@ class RespDataByVideoAndIdCardImage:
     }
 
     def __init__(self, verification_result=None, verification_message=None, verification_code=None, similarity=None, idcard_result=None, video_result=None):
-        """RespDataByVideoAndIdCardImage
+        r"""RespDataByVideoAndIdCardImage
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class RespDataByVideoAndIdCardImage:
 
     @property
     def verification_result(self):
-        """Gets the verification_result of this RespDataByVideoAndIdCardImage.
+        r"""Gets the verification_result of this RespDataByVideoAndIdCardImage.
 
         审核校验结果： \"valid\"表示身份审核通过； \"invalid\"表示身份审核不通过； \"nonexistent\"表示数据源没有该身份证号码，这种情况一般是被验证人正在办理户籍迁移，或者被验证人是军人或政要。
 
@@ -83,7 +83,7 @@ class RespDataByVideoAndIdCardImage:
 
     @verification_result.setter
     def verification_result(self, verification_result):
-        """Sets the verification_result of this RespDataByVideoAndIdCardImage.
+        r"""Sets the verification_result of this RespDataByVideoAndIdCardImage.
 
         审核校验结果： \"valid\"表示身份审核通过； \"invalid\"表示身份审核不通过； \"nonexistent\"表示数据源没有该身份证号码，这种情况一般是被验证人正在办理户籍迁移，或者被验证人是军人或政要。
 
@@ -94,7 +94,7 @@ class RespDataByVideoAndIdCardImage:
 
     @property
     def verification_message(self):
-        """Gets the verification_message of this RespDataByVideoAndIdCardImage.
+        r"""Gets the verification_message of this RespDataByVideoAndIdCardImage.
 
         审核校验信息，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
 
@@ -105,7 +105,7 @@ class RespDataByVideoAndIdCardImage:
 
     @verification_message.setter
     def verification_message(self, verification_message):
-        """Sets the verification_message of this RespDataByVideoAndIdCardImage.
+        r"""Sets the verification_message of this RespDataByVideoAndIdCardImage.
 
         审核校验信息，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
 
@@ -116,7 +116,7 @@ class RespDataByVideoAndIdCardImage:
 
     @property
     def verification_code(self):
-        """Gets the verification_code of this RespDataByVideoAndIdCardImage.
+        r"""Gets the verification_code of this RespDataByVideoAndIdCardImage.
 
         审核校验代码，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
 
@@ -127,7 +127,7 @@ class RespDataByVideoAndIdCardImage:
 
     @verification_code.setter
     def verification_code(self, verification_code):
-        """Sets the verification_code of this RespDataByVideoAndIdCardImage.
+        r"""Sets the verification_code of this RespDataByVideoAndIdCardImage.
 
         审核校验代码，具体参考[校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
 
@@ -138,7 +138,7 @@ class RespDataByVideoAndIdCardImage:
 
     @property
     def similarity(self):
-        """Gets the similarity of this RespDataByVideoAndIdCardImage.
+        r"""Gets the similarity of this RespDataByVideoAndIdCardImage.
 
         人像相识度，取值默认范围为[0,100]，当入参detail为true时，取值范围为[0,1000]。
 
@@ -149,7 +149,7 @@ class RespDataByVideoAndIdCardImage:
 
     @similarity.setter
     def similarity(self, similarity):
-        """Sets the similarity of this RespDataByVideoAndIdCardImage.
+        r"""Sets the similarity of this RespDataByVideoAndIdCardImage.
 
         人像相识度，取值默认范围为[0,100]，当入参detail为true时，取值范围为[0,1000]。
 
@@ -160,7 +160,7 @@ class RespDataByVideoAndIdCardImage:
 
     @property
     def idcard_result(self):
-        """Gets the idcard_result of this RespDataByVideoAndIdCardImage.
+        r"""Gets the idcard_result of this RespDataByVideoAndIdCardImage.
 
         :return: The idcard_result of this RespDataByVideoAndIdCardImage.
         :rtype: :class:`huaweicloudsdkivs.v2.IdcardResult`
@@ -169,7 +169,7 @@ class RespDataByVideoAndIdCardImage:
 
     @idcard_result.setter
     def idcard_result(self, idcard_result):
-        """Sets the idcard_result of this RespDataByVideoAndIdCardImage.
+        r"""Sets the idcard_result of this RespDataByVideoAndIdCardImage.
 
         :param idcard_result: The idcard_result of this RespDataByVideoAndIdCardImage.
         :type idcard_result: :class:`huaweicloudsdkivs.v2.IdcardResult`
@@ -178,7 +178,7 @@ class RespDataByVideoAndIdCardImage:
 
     @property
     def video_result(self):
-        """Gets the video_result of this RespDataByVideoAndIdCardImage.
+        r"""Gets the video_result of this RespDataByVideoAndIdCardImage.
 
         :return: The video_result of this RespDataByVideoAndIdCardImage.
         :rtype: :class:`huaweicloudsdkivs.v2.VideoResult`
@@ -187,7 +187,7 @@ class RespDataByVideoAndIdCardImage:
 
     @video_result.setter
     def video_result(self, video_result):
-        """Sets the video_result of this RespDataByVideoAndIdCardImage.
+        r"""Sets the video_result of this RespDataByVideoAndIdCardImage.
 
         :param video_result: The video_result of this RespDataByVideoAndIdCardImage.
         :type video_result: :class:`huaweicloudsdkivs.v2.VideoResult`

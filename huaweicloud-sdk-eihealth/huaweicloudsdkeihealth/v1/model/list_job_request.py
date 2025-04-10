@@ -51,7 +51,7 @@ class ListJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, end_time=None, job_name=None, labels=None, limit=None, offset=None, sort_dir=None, sort_key=None, start_time=None, status=None, tool_name=None, user_name=None, finish_start_time=None, finish_end_time=None):
-        """ListJobRequest
+        r"""ListJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -133,7 +133,7 @@ class ListJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListJobRequest.
+        r"""Gets the eihealth_project_id of this ListJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -144,7 +144,7 @@ class ListJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListJobRequest.
+        r"""Sets the eihealth_project_id of this ListJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -155,7 +155,7 @@ class ListJobRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListJobRequest.
+        r"""Gets the end_time of this ListJobRequest.
 
         最大开始时间
 
@@ -166,7 +166,7 @@ class ListJobRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListJobRequest.
+        r"""Sets the end_time of this ListJobRequest.
 
         最大开始时间
 
@@ -177,7 +177,7 @@ class ListJobRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListJobRequest.
+        r"""Gets the job_name of this ListJobRequest.
 
         作业名称 取值范围：长度为[1,63]，以小写字母开头，允许出现中划线(-)、小写字母和数字，且必须以小写字母或数字结尾。
 
@@ -188,7 +188,7 @@ class ListJobRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListJobRequest.
+        r"""Sets the job_name of this ListJobRequest.
 
         作业名称 取值范围：长度为[1,63]，以小写字母开头，允许出现中划线(-)、小写字母和数字，且必须以小写字母或数字结尾。
 
@@ -199,7 +199,7 @@ class ListJobRequest:
 
     @property
     def labels(self):
-        """Gets the labels of this ListJobRequest.
+        r"""Gets the labels of this ListJobRequest.
 
         标签列表
 
@@ -210,7 +210,7 @@ class ListJobRequest:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ListJobRequest.
+        r"""Sets the labels of this ListJobRequest.
 
         标签列表
 
@@ -221,7 +221,7 @@ class ListJobRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJobRequest.
+        r"""Gets the limit of this ListJobRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -232,7 +232,7 @@ class ListJobRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJobRequest.
+        r"""Sets the limit of this ListJobRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -243,7 +243,7 @@ class ListJobRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJobRequest.
+        r"""Gets the offset of this ListJobRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -254,7 +254,7 @@ class ListJobRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJobRequest.
+        r"""Sets the offset of this ListJobRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -265,7 +265,7 @@ class ListJobRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListJobRequest.
+        r"""Gets the sort_dir of this ListJobRequest.
 
         排序规则 目前默认时间降序
 
@@ -276,7 +276,7 @@ class ListJobRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListJobRequest.
+        r"""Sets the sort_dir of this ListJobRequest.
 
         排序规则 目前默认时间降序
 
@@ -287,7 +287,7 @@ class ListJobRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListJobRequest.
+        r"""Gets the sort_key of this ListJobRequest.
 
         排序规则 目前默认时间降序，支持根据status
 
@@ -298,7 +298,7 @@ class ListJobRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListJobRequest.
+        r"""Sets the sort_key of this ListJobRequest.
 
         排序规则 目前默认时间降序，支持根据status
 
@@ -309,7 +309,7 @@ class ListJobRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListJobRequest.
+        r"""Gets the start_time of this ListJobRequest.
 
         最小开始时间
 
@@ -320,7 +320,7 @@ class ListJobRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListJobRequest.
+        r"""Sets the start_time of this ListJobRequest.
 
         最小开始时间
 
@@ -331,7 +331,7 @@ class ListJobRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListJobRequest.
+        r"""Gets the status of this ListJobRequest.
 
         作业运行状态 取值（Succeeded|Running|Pending|Failed|Cancelling|Cancelled|Unknown）
 
@@ -342,7 +342,7 @@ class ListJobRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListJobRequest.
+        r"""Sets the status of this ListJobRequest.
 
         作业运行状态 取值（Succeeded|Running|Pending|Failed|Cancelling|Cancelled|Unknown）
 
@@ -353,7 +353,7 @@ class ListJobRequest:
 
     @property
     def tool_name(self):
-        """Gets the tool_name of this ListJobRequest.
+        r"""Gets the tool_name of this ListJobRequest.
 
         作业依赖的组件名称(有可能是Workflow，有可能是app), 取值范围：长度为[1,56]，以小写字母开头，允许出现中划线(-)、小写字母和数字，且必须以小写字母或数字结尾。
 
@@ -364,7 +364,7 @@ class ListJobRequest:
 
     @tool_name.setter
     def tool_name(self, tool_name):
-        """Sets the tool_name of this ListJobRequest.
+        r"""Sets the tool_name of this ListJobRequest.
 
         作业依赖的组件名称(有可能是Workflow，有可能是app), 取值范围：长度为[1,56]，以小写字母开头，允许出现中划线(-)、小写字母和数字，且必须以小写字母或数字结尾。
 
@@ -375,7 +375,7 @@ class ListJobRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListJobRequest.
+        r"""Gets the user_name of this ListJobRequest.
 
         作业创建者
 
@@ -386,7 +386,7 @@ class ListJobRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListJobRequest.
+        r"""Sets the user_name of this ListJobRequest.
 
         作业创建者
 
@@ -397,7 +397,7 @@ class ListJobRequest:
 
     @property
     def finish_start_time(self):
-        """Gets the finish_start_time of this ListJobRequest.
+        r"""Gets the finish_start_time of this ListJobRequest.
 
         最小结束时间
 
@@ -408,7 +408,7 @@ class ListJobRequest:
 
     @finish_start_time.setter
     def finish_start_time(self, finish_start_time):
-        """Sets the finish_start_time of this ListJobRequest.
+        r"""Sets the finish_start_time of this ListJobRequest.
 
         最小结束时间
 
@@ -419,7 +419,7 @@ class ListJobRequest:
 
     @property
     def finish_end_time(self):
-        """Gets the finish_end_time of this ListJobRequest.
+        r"""Gets the finish_end_time of this ListJobRequest.
 
         最大结束时间
 
@@ -430,7 +430,7 @@ class ListJobRequest:
 
     @finish_end_time.setter
     def finish_end_time(self, finish_end_time):
-        """Sets the finish_end_time of this ListJobRequest.
+        r"""Sets the finish_end_time of this ListJobRequest.
 
         最大结束时间
 

@@ -61,7 +61,7 @@ class QueryTaskAssignCasesInfo:
     }
 
     def __init__(self, stage=None, owners=None, page_no=None, page_size=None, results=None, status=None, version_uri=None, release_dev=None, sort_field=None, sort_type=None, feature_uri=None, task_result_uri=None, rank_ids=None, key_word=None, issue_id=None, associated_issue=None, select_all_pages=None, is_available=None, is_script_exist=None):
-        """QueryTaskAssignCasesInfo
+        r"""QueryTaskAssignCasesInfo
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def stage(self):
-        """Gets the stage of this QueryTaskAssignCasesInfo.
+        r"""Gets the stage of this QueryTaskAssignCasesInfo.
 
         测试用例在任务中的阶段
 
@@ -180,7 +180,7 @@ class QueryTaskAssignCasesInfo:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this QueryTaskAssignCasesInfo.
+        r"""Sets the stage of this QueryTaskAssignCasesInfo.
 
         测试用例在任务中的阶段
 
@@ -191,7 +191,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def owners(self):
-        """Gets the owners of this QueryTaskAssignCasesInfo.
+        r"""Gets the owners of this QueryTaskAssignCasesInfo.
 
         处理人过滤数组
 
@@ -202,7 +202,7 @@ class QueryTaskAssignCasesInfo:
 
     @owners.setter
     def owners(self, owners):
-        """Sets the owners of this QueryTaskAssignCasesInfo.
+        r"""Sets the owners of this QueryTaskAssignCasesInfo.
 
         处理人过滤数组
 
@@ -213,7 +213,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this QueryTaskAssignCasesInfo.
+        r"""Gets the page_no of this QueryTaskAssignCasesInfo.
 
         页码
 
@@ -224,7 +224,7 @@ class QueryTaskAssignCasesInfo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this QueryTaskAssignCasesInfo.
+        r"""Sets the page_no of this QueryTaskAssignCasesInfo.
 
         页码
 
@@ -235,7 +235,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this QueryTaskAssignCasesInfo.
+        r"""Gets the page_size of this QueryTaskAssignCasesInfo.
 
         页数量
 
@@ -246,7 +246,7 @@ class QueryTaskAssignCasesInfo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this QueryTaskAssignCasesInfo.
+        r"""Sets the page_size of this QueryTaskAssignCasesInfo.
 
         页数量
 
@@ -257,7 +257,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def results(self):
-        """Gets the results of this QueryTaskAssignCasesInfo.
+        r"""Gets the results of this QueryTaskAssignCasesInfo.
 
         结果过滤
 
@@ -268,7 +268,7 @@ class QueryTaskAssignCasesInfo:
 
     @results.setter
     def results(self, results):
-        """Sets the results of this QueryTaskAssignCasesInfo.
+        r"""Sets the results of this QueryTaskAssignCasesInfo.
 
         结果过滤
 
@@ -279,7 +279,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def status(self):
-        """Gets the status of this QueryTaskAssignCasesInfo.
+        r"""Gets the status of this QueryTaskAssignCasesInfo.
 
         状态过滤
 
@@ -290,7 +290,7 @@ class QueryTaskAssignCasesInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryTaskAssignCasesInfo.
+        r"""Sets the status of this QueryTaskAssignCasesInfo.
 
         状态过滤
 
@@ -301,7 +301,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this QueryTaskAssignCasesInfo.
+        r"""Gets the version_uri of this QueryTaskAssignCasesInfo.
 
         分支/迭代uri
 
@@ -312,7 +312,7 @@ class QueryTaskAssignCasesInfo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this QueryTaskAssignCasesInfo.
+        r"""Sets the version_uri of this QueryTaskAssignCasesInfo.
 
         分支/迭代uri
 
@@ -323,7 +323,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def release_dev(self):
-        """Gets the release_dev of this QueryTaskAssignCasesInfo.
+        r"""Gets the release_dev of this QueryTaskAssignCasesInfo.
 
         任务版本过滤条件，影响关联任务的结果查询，查询当前任务版本下的用例最新结果
 
@@ -334,7 +334,7 @@ class QueryTaskAssignCasesInfo:
 
     @release_dev.setter
     def release_dev(self, release_dev):
-        """Sets the release_dev of this QueryTaskAssignCasesInfo.
+        r"""Sets the release_dev of this QueryTaskAssignCasesInfo.
 
         任务版本过滤条件，影响关联任务的结果查询，查询当前任务版本下的用例最新结果
 
@@ -345,7 +345,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this QueryTaskAssignCasesInfo.
+        r"""Gets the sort_field of this QueryTaskAssignCasesInfo.
 
         排序字段
 
@@ -356,7 +356,7 @@ class QueryTaskAssignCasesInfo:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this QueryTaskAssignCasesInfo.
+        r"""Sets the sort_field of this QueryTaskAssignCasesInfo.
 
         排序字段
 
@@ -367,7 +367,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this QueryTaskAssignCasesInfo.
+        r"""Gets the sort_type of this QueryTaskAssignCasesInfo.
 
         排序方法
 
@@ -378,7 +378,7 @@ class QueryTaskAssignCasesInfo:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this QueryTaskAssignCasesInfo.
+        r"""Sets the sort_type of this QueryTaskAssignCasesInfo.
 
         排序方法
 
@@ -389,7 +389,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def feature_uri(self):
-        """Gets the feature_uri of this QueryTaskAssignCasesInfo.
+        r"""Gets the feature_uri of this QueryTaskAssignCasesInfo.
 
         特性目录URI
 
@@ -400,7 +400,7 @@ class QueryTaskAssignCasesInfo:
 
     @feature_uri.setter
     def feature_uri(self, feature_uri):
-        """Sets the feature_uri of this QueryTaskAssignCasesInfo.
+        r"""Sets the feature_uri of this QueryTaskAssignCasesInfo.
 
         特性目录URI
 
@@ -411,7 +411,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def task_result_uri(self):
-        """Gets the task_result_uri of this QueryTaskAssignCasesInfo.
+        r"""Gets the task_result_uri of this QueryTaskAssignCasesInfo.
 
         测试套结果uri
 
@@ -422,7 +422,7 @@ class QueryTaskAssignCasesInfo:
 
     @task_result_uri.setter
     def task_result_uri(self, task_result_uri):
-        """Sets the task_result_uri of this QueryTaskAssignCasesInfo.
+        r"""Sets the task_result_uri of this QueryTaskAssignCasesInfo.
 
         测试套结果uri
 
@@ -433,7 +433,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def rank_ids(self):
-        """Gets the rank_ids of this QueryTaskAssignCasesInfo.
+        r"""Gets the rank_ids of this QueryTaskAssignCasesInfo.
 
         用例等级ID集合
 
@@ -444,7 +444,7 @@ class QueryTaskAssignCasesInfo:
 
     @rank_ids.setter
     def rank_ids(self, rank_ids):
-        """Sets the rank_ids of this QueryTaskAssignCasesInfo.
+        r"""Sets the rank_ids of this QueryTaskAssignCasesInfo.
 
         用例等级ID集合
 
@@ -455,7 +455,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def key_word(self):
-        """Gets the key_word of this QueryTaskAssignCasesInfo.
+        r"""Gets the key_word of this QueryTaskAssignCasesInfo.
 
         关键字
 
@@ -466,7 +466,7 @@ class QueryTaskAssignCasesInfo:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this QueryTaskAssignCasesInfo.
+        r"""Sets the key_word of this QueryTaskAssignCasesInfo.
 
         关键字
 
@@ -477,7 +477,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this QueryTaskAssignCasesInfo.
+        r"""Gets the issue_id of this QueryTaskAssignCasesInfo.
 
         需求id
 
@@ -488,7 +488,7 @@ class QueryTaskAssignCasesInfo:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this QueryTaskAssignCasesInfo.
+        r"""Sets the issue_id of this QueryTaskAssignCasesInfo.
 
         需求id
 
@@ -499,7 +499,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def associated_issue(self):
-        """Gets the associated_issue of this QueryTaskAssignCasesInfo.
+        r"""Gets the associated_issue of this QueryTaskAssignCasesInfo.
 
         是否关联需求（null：不限，false：未关联，true：已关联）
 
@@ -510,7 +510,7 @@ class QueryTaskAssignCasesInfo:
 
     @associated_issue.setter
     def associated_issue(self, associated_issue):
-        """Sets the associated_issue of this QueryTaskAssignCasesInfo.
+        r"""Sets the associated_issue of this QueryTaskAssignCasesInfo.
 
         是否关联需求（null：不限，false：未关联，true：已关联）
 
@@ -521,7 +521,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def select_all_pages(self):
-        """Gets the select_all_pages of this QueryTaskAssignCasesInfo.
+        r"""Gets the select_all_pages of this QueryTaskAssignCasesInfo.
 
         是否全选所有页（null：不全选，false：不全选，true：全选），用于任务批量执行结果功能，只返回用例uri，不返回其他信息
 
@@ -532,7 +532,7 @@ class QueryTaskAssignCasesInfo:
 
     @select_all_pages.setter
     def select_all_pages(self, select_all_pages):
-        """Sets the select_all_pages of this QueryTaskAssignCasesInfo.
+        r"""Sets the select_all_pages of this QueryTaskAssignCasesInfo.
 
         是否全选所有页（null：不全选，false：不全选，true：全选），用于任务批量执行结果功能，只返回用例uri，不返回其他信息
 
@@ -543,7 +543,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def is_available(self):
-        """Gets the is_available of this QueryTaskAssignCasesInfo.
+        r"""Gets the is_available of this QueryTaskAssignCasesInfo.
 
         用例是否可用
 
@@ -554,7 +554,7 @@ class QueryTaskAssignCasesInfo:
 
     @is_available.setter
     def is_available(self, is_available):
-        """Sets the is_available of this QueryTaskAssignCasesInfo.
+        r"""Sets the is_available of this QueryTaskAssignCasesInfo.
 
         用例是否可用
 
@@ -565,7 +565,7 @@ class QueryTaskAssignCasesInfo:
 
     @property
     def is_script_exist(self):
-        """Gets the is_script_exist of this QueryTaskAssignCasesInfo.
+        r"""Gets the is_script_exist of this QueryTaskAssignCasesInfo.
 
         用例脚本字段是否有值
 
@@ -576,7 +576,7 @@ class QueryTaskAssignCasesInfo:
 
     @is_script_exist.setter
     def is_script_exist(self, is_script_exist):
-        """Sets the is_script_exist of this QueryTaskAssignCasesInfo.
+        r"""Sets the is_script_exist of this QueryTaskAssignCasesInfo.
 
         用例脚本字段是否有值
 

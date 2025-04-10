@@ -31,7 +31,7 @@ class UpdateWidgetInfoLocation:
     }
 
     def __init__(self, top=None, left=None, width=None, height=None):
-        """UpdateWidgetInfoLocation
+        r"""UpdateWidgetInfoLocation
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class UpdateWidgetInfoLocation:
 
     @property
     def top(self):
-        """Gets the top of this UpdateWidgetInfoLocation.
+        r"""Gets the top of this UpdateWidgetInfoLocation.
 
         监控视图的上坐标
 
@@ -71,7 +71,7 @@ class UpdateWidgetInfoLocation:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this UpdateWidgetInfoLocation.
+        r"""Sets the top of this UpdateWidgetInfoLocation.
 
         监控视图的上坐标
 
@@ -82,7 +82,7 @@ class UpdateWidgetInfoLocation:
 
     @property
     def left(self):
-        """Gets the left of this UpdateWidgetInfoLocation.
+        r"""Gets the left of this UpdateWidgetInfoLocation.
 
         监控视图的左坐标
 
@@ -93,7 +93,7 @@ class UpdateWidgetInfoLocation:
 
     @left.setter
     def left(self, left):
-        """Sets the left of this UpdateWidgetInfoLocation.
+        r"""Sets the left of this UpdateWidgetInfoLocation.
 
         监控视图的左坐标
 
@@ -104,7 +104,7 @@ class UpdateWidgetInfoLocation:
 
     @property
     def width(self):
-        """Gets the width of this UpdateWidgetInfoLocation.
+        r"""Gets the width of this UpdateWidgetInfoLocation.
 
         监控视图图表宽度
 
@@ -115,7 +115,7 @@ class UpdateWidgetInfoLocation:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this UpdateWidgetInfoLocation.
+        r"""Sets the width of this UpdateWidgetInfoLocation.
 
         监控视图图表宽度
 
@@ -126,7 +126,7 @@ class UpdateWidgetInfoLocation:
 
     @property
     def height(self):
-        """Gets the height of this UpdateWidgetInfoLocation.
+        r"""Gets the height of this UpdateWidgetInfoLocation.
 
         监控视图图表高度
 
@@ -137,7 +137,7 @@ class UpdateWidgetInfoLocation:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this UpdateWidgetInfoLocation.
+        r"""Sets the height of this UpdateWidgetInfoLocation.
 
         监控视图图表高度
 

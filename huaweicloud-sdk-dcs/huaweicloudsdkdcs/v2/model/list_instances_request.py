@@ -43,7 +43,7 @@ class ListInstancesRequest:
     }
 
     def __init__(self, instance_id=None, include_failure=None, include_delete=None, name=None, offset=None, limit=None, status=None, name_equal=None, tags=None, ip=None):
-        """ListInstancesRequest
+        r"""ListInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListInstancesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstancesRequest.
+        r"""Gets the instance_id of this ListInstancesRequest.
 
         实例ID。
 
@@ -117,7 +117,7 @@ class ListInstancesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstancesRequest.
+        r"""Sets the instance_id of this ListInstancesRequest.
 
         实例ID。
 
@@ -128,7 +128,7 @@ class ListInstancesRequest:
 
     @property
     def include_failure(self):
-        """Gets the include_failure of this ListInstancesRequest.
+        r"""Gets the include_failure of this ListInstancesRequest.
 
         是否返回创建失败的实例数。 当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
 
@@ -139,7 +139,7 @@ class ListInstancesRequest:
 
     @include_failure.setter
     def include_failure(self, include_failure):
-        """Sets the include_failure of this ListInstancesRequest.
+        r"""Sets the include_failure of this ListInstancesRequest.
 
         是否返回创建失败的实例数。 当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
 
@@ -150,7 +150,7 @@ class ListInstancesRequest:
 
     @property
     def include_delete(self):
-        """Gets the include_delete of this ListInstancesRequest.
+        r"""Gets the include_delete of this ListInstancesRequest.
 
         是否返回已删除的实例数。 当参数值为“true”时，返回已删除的实例数。参数值为“false”或者其他值，不返回已删除的实例数。
 
@@ -161,7 +161,7 @@ class ListInstancesRequest:
 
     @include_delete.setter
     def include_delete(self, include_delete):
-        """Sets the include_delete of this ListInstancesRequest.
+        r"""Sets the include_delete of this ListInstancesRequest.
 
         是否返回已删除的实例数。 当参数值为“true”时，返回已删除的实例数。参数值为“false”或者其他值，不返回已删除的实例数。
 
@@ -172,7 +172,7 @@ class ListInstancesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListInstancesRequest.
+        r"""Gets the name of this ListInstancesRequest.
 
         实例名称。
 
@@ -183,7 +183,7 @@ class ListInstancesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListInstancesRequest.
+        r"""Sets the name of this ListInstancesRequest.
 
         实例名称。
 
@@ -194,7 +194,7 @@ class ListInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstancesRequest.
+        r"""Gets the offset of this ListInstancesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -205,7 +205,7 @@ class ListInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstancesRequest.
+        r"""Sets the offset of this ListInstancesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -216,7 +216,7 @@ class ListInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstancesRequest.
+        r"""Gets the limit of this ListInstancesRequest.
 
         每页显示条数，最小值为1，最大值为1000，若不设置该参数，则为10。
 
@@ -227,7 +227,7 @@ class ListInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstancesRequest.
+        r"""Sets the limit of this ListInstancesRequest.
 
         每页显示条数，最小值为1，最大值为1000，若不设置该参数，则为10。
 
@@ -238,7 +238,7 @@ class ListInstancesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListInstancesRequest.
+        r"""Gets the status of this ListInstancesRequest.
 
         实例状态。详细状态说明见[缓存实例状态说明](https://support.huaweicloud.com/api-dcs/dcs-api-0312047.html)
 
@@ -249,7 +249,7 @@ class ListInstancesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListInstancesRequest.
+        r"""Sets the status of this ListInstancesRequest.
 
         实例状态。详细状态说明见[缓存实例状态说明](https://support.huaweicloud.com/api-dcs/dcs-api-0312047.html)
 
@@ -260,7 +260,7 @@ class ListInstancesRequest:
 
     @property
     def name_equal(self):
-        """Gets the name_equal of this ListInstancesRequest.
+        r"""Gets the name_equal of this ListInstancesRequest.
 
         是否按照实例名称进行精确匹配查询。  和name字段对应，name字段为模糊匹配的用例名，name_equal是精确匹配的用例名。
 
@@ -271,7 +271,7 @@ class ListInstancesRequest:
 
     @name_equal.setter
     def name_equal(self, name_equal):
-        """Sets the name_equal of this ListInstancesRequest.
+        r"""Sets the name_equal of this ListInstancesRequest.
 
         是否按照实例名称进行精确匹配查询。  和name字段对应，name字段为模糊匹配的用例名，name_equal是精确匹配的用例名。
 
@@ -282,7 +282,7 @@ class ListInstancesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListInstancesRequest.
+        r"""Gets the tags of this ListInstancesRequest.
 
         根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。 
 
@@ -293,7 +293,7 @@ class ListInstancesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListInstancesRequest.
+        r"""Sets the tags of this ListInstancesRequest.
 
         根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。 
 
@@ -304,7 +304,7 @@ class ListInstancesRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListInstancesRequest.
+        r"""Gets the ip of this ListInstancesRequest.
 
         连接缓存实例的IP地址。
 
@@ -315,7 +315,7 @@ class ListInstancesRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListInstancesRequest.
+        r"""Sets the ip of this ListInstancesRequest.
 
         连接缓存实例的IP地址。
 

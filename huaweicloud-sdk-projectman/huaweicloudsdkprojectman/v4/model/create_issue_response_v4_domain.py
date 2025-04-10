@@ -27,7 +27,7 @@ class CreateIssueResponseV4Domain:
     }
 
     def __init__(self, id=None, name=None):
-        """CreateIssueResponseV4Domain
+        r"""CreateIssueResponseV4Domain
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateIssueResponseV4Domain:
 
     @property
     def id(self):
-        """Gets the id of this CreateIssueResponseV4Domain.
+        r"""Gets the id of this CreateIssueResponseV4Domain.
 
         领域id
 
@@ -61,7 +61,7 @@ class CreateIssueResponseV4Domain:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateIssueResponseV4Domain.
+        r"""Sets the id of this CreateIssueResponseV4Domain.
 
         领域id
 
@@ -72,7 +72,7 @@ class CreateIssueResponseV4Domain:
 
     @property
     def name(self):
-        """Gets the name of this CreateIssueResponseV4Domain.
+        r"""Gets the name of this CreateIssueResponseV4Domain.
 
         领域
 
@@ -83,7 +83,7 @@ class CreateIssueResponseV4Domain:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateIssueResponseV4Domain.
+        r"""Sets the name of this CreateIssueResponseV4Domain.
 
         领域
 

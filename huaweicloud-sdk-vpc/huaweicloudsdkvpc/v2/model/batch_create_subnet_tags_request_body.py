@@ -27,7 +27,7 @@ class BatchCreateSubnetTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchCreateSubnetTagsRequestBody
+        r"""BatchCreateSubnetTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchCreateSubnetTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchCreateSubnetTagsRequestBody.
+        r"""Gets the action of this BatchCreateSubnetTagsRequestBody.
 
         操作标识
 
@@ -59,7 +59,7 @@ class BatchCreateSubnetTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchCreateSubnetTagsRequestBody.
+        r"""Sets the action of this BatchCreateSubnetTagsRequestBody.
 
         操作标识
 
@@ -70,7 +70,7 @@ class BatchCreateSubnetTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateSubnetTagsRequestBody.
+        r"""Gets the tags of this BatchCreateSubnetTagsRequestBody.
 
         标签列表
 
@@ -81,7 +81,7 @@ class BatchCreateSubnetTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateSubnetTagsRequestBody.
+        r"""Sets the tags of this BatchCreateSubnetTagsRequestBody.
 
         标签列表
 

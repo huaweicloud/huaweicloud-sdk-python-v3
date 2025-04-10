@@ -24,7 +24,7 @@ class ShowAdminHealthCheckResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ShowAdminHealthCheckResponse
+        r"""ShowAdminHealthCheckResponse
 
         The model defined in huaweicloud sdk
 

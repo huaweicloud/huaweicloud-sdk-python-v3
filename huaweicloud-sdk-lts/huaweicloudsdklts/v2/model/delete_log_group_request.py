@@ -25,7 +25,7 @@ class DeleteLogGroupRequest:
     }
 
     def __init__(self, log_group_id=None):
-        """DeleteLogGroupRequest
+        r"""DeleteLogGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteLogGroupRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this DeleteLogGroupRequest.
+        r"""Gets the log_group_id of this DeleteLogGroupRequest.
 
         日志组ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）
 
@@ -53,7 +53,7 @@ class DeleteLogGroupRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this DeleteLogGroupRequest.
+        r"""Sets the log_group_id of this DeleteLogGroupRequest.
 
         日志组ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）
 

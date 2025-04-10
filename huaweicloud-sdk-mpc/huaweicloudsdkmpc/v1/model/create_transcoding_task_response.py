@@ -26,7 +26,7 @@ class CreateTranscodingTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """CreateTranscodingTaskResponse
+        r"""CreateTranscodingTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTranscodingTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateTranscodingTaskResponse.
+        r"""Gets the task_id of this CreateTranscodingTaskResponse.
 
         任务ID。 如果返回值为200 OK，为接受任务后产生的任务ID。 
 
@@ -55,7 +55,7 @@ class CreateTranscodingTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateTranscodingTaskResponse.
+        r"""Sets the task_id of this CreateTranscodingTaskResponse.
 
         任务ID。 如果返回值为200 OK，为接受任务后产生的任务ID。 
 

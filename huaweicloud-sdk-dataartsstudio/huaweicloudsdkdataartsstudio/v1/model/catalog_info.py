@@ -25,7 +25,7 @@ class CatalogInfo:
     }
 
     def __init__(self, guid=None):
-        """CatalogInfo
+        r"""CatalogInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CatalogInfo:
 
     @property
     def guid(self):
-        """Gets the guid of this CatalogInfo.
+        r"""Gets the guid of this CatalogInfo.
 
         标签guid
 
@@ -54,7 +54,7 @@ class CatalogInfo:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this CatalogInfo.
+        r"""Sets the guid of this CatalogInfo.
 
         标签guid
 

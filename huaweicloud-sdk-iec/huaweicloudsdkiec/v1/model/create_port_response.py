@@ -26,7 +26,7 @@ class CreatePortResponse(SdkResponse):
     }
 
     def __init__(self, port=None):
-        """CreatePortResponse
+        r"""CreatePortResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePortResponse(SdkResponse):
 
     @property
     def port(self):
-        """Gets the port of this CreatePortResponse.
+        r"""Gets the port of this CreatePortResponse.
 
         :return: The port of this CreatePortResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.Port`
@@ -53,7 +53,7 @@ class CreatePortResponse(SdkResponse):
 
     @port.setter
     def port(self, port):
-        """Sets the port of this CreatePortResponse.
+        r"""Sets the port of this CreatePortResponse.
 
         :param port: The port of this CreatePortResponse.
         :type port: :class:`huaweicloudsdkiec.v1.Port`

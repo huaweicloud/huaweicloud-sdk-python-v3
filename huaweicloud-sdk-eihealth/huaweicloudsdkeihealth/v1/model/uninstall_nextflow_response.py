@@ -24,7 +24,7 @@ class UninstallNextflowResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UninstallNextflowResponse
+        r"""UninstallNextflowResponse
 
         The model defined in huaweicloud sdk
 

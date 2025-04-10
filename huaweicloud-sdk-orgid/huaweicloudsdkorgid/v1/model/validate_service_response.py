@@ -26,7 +26,7 @@ class ValidateServiceResponse(SdkResponse):
     }
 
     def __init__(self, service_response=None):
-        """ValidateServiceResponse
+        r"""ValidateServiceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ValidateServiceResponse(SdkResponse):
 
     @property
     def service_response(self):
-        """Gets the service_response of this ValidateServiceResponse.
+        r"""Gets the service_response of this ValidateServiceResponse.
 
         :return: The service_response of this ValidateServiceResponse.
         :rtype: :class:`huaweicloudsdkorgid.v1.ServiceResponse`
@@ -53,7 +53,7 @@ class ValidateServiceResponse(SdkResponse):
 
     @service_response.setter
     def service_response(self, service_response):
-        """Sets the service_response of this ValidateServiceResponse.
+        r"""Sets the service_response of this ValidateServiceResponse.
 
         :param service_response: The service_response of this ValidateServiceResponse.
         :type service_response: :class:`huaweicloudsdkorgid.v1.ServiceResponse`

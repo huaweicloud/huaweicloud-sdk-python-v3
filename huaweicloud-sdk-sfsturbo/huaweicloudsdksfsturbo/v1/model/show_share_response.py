@@ -82,7 +82,7 @@ class ShowShareResponse(SdkResponse):
     }
 
     def __init__(self, action_progress=None, version=None, avail_capacity=None, availability_zone=None, az_name=None, created_at=None, crypt_key_id=None, expand_type=None, export_location=None, id=None, name=None, pay_model=None, region=None, security_group_id=None, share_proto=None, share_type=None, size=None, status=None, sub_status=None, subnet_id=None, vpc_id=None, enterprise_project_id=None, tags=None, optional_endpoint=None, hpc_bw=None, instance_id=None, instance_type=None, status_detail=None, features=None):
-        """ShowShareResponse
+        r"""ShowShareResponse
 
         The model defined in huaweicloud sdk
 
@@ -240,7 +240,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def action_progress(self):
-        """Gets the action_progress of this ShowShareResponse.
+        r"""Gets the action_progress of this ShowShareResponse.
 
         :return: The action_progress of this ShowShareResponse.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ActionProgress`
@@ -249,7 +249,7 @@ class ShowShareResponse(SdkResponse):
 
     @action_progress.setter
     def action_progress(self, action_progress):
-        """Sets the action_progress of this ShowShareResponse.
+        r"""Sets the action_progress of this ShowShareResponse.
 
         :param action_progress: The action_progress of this ShowShareResponse.
         :type action_progress: :class:`huaweicloudsdksfsturbo.v1.ActionProgress`
@@ -258,7 +258,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowShareResponse.
+        r"""Gets the version of this ShowShareResponse.
 
         SFS Turbo文件系统的版本号。
 
@@ -269,7 +269,7 @@ class ShowShareResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowShareResponse.
+        r"""Sets the version of this ShowShareResponse.
 
         SFS Turbo文件系统的版本号。
 
@@ -280,7 +280,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def avail_capacity(self):
-        """Gets the avail_capacity of this ShowShareResponse.
+        r"""Gets the avail_capacity of this ShowShareResponse.
 
         SFS Turbo文件系统剩余容量，单位GB。
 
@@ -291,7 +291,7 @@ class ShowShareResponse(SdkResponse):
 
     @avail_capacity.setter
     def avail_capacity(self, avail_capacity):
-        """Sets the avail_capacity of this ShowShareResponse.
+        r"""Sets the avail_capacity of this ShowShareResponse.
 
         SFS Turbo文件系统剩余容量，单位GB。
 
@@ -302,7 +302,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ShowShareResponse.
+        r"""Gets the availability_zone of this ShowShareResponse.
 
         SFS Turbo文件系统所在可用区编码。
 
@@ -313,7 +313,7 @@ class ShowShareResponse(SdkResponse):
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ShowShareResponse.
+        r"""Sets the availability_zone of this ShowShareResponse.
 
         SFS Turbo文件系统所在可用区编码。
 
@@ -324,7 +324,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def az_name(self):
-        """Gets the az_name of this ShowShareResponse.
+        r"""Gets the az_name of this ShowShareResponse.
 
         SFS Turbo文件系统所在可用区名称。
 
@@ -335,7 +335,7 @@ class ShowShareResponse(SdkResponse):
 
     @az_name.setter
     def az_name(self, az_name):
-        """Sets the az_name of this ShowShareResponse.
+        r"""Sets the az_name of this ShowShareResponse.
 
         SFS Turbo文件系统所在可用区名称。
 
@@ -346,7 +346,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowShareResponse.
+        r"""Gets the created_at of this ShowShareResponse.
 
         创建时间。UTC时间，例如：2018-11-19T04:02:03
 
@@ -357,7 +357,7 @@ class ShowShareResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowShareResponse.
+        r"""Sets the created_at of this ShowShareResponse.
 
         创建时间。UTC时间，例如：2018-11-19T04:02:03
 
@@ -368,7 +368,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def crypt_key_id(self):
-        """Gets the crypt_key_id of this ShowShareResponse.
+        r"""Gets the crypt_key_id of this ShowShareResponse.
 
         用户指定的加密密钥ID，非加密盘时不返回。
 
@@ -379,7 +379,7 @@ class ShowShareResponse(SdkResponse):
 
     @crypt_key_id.setter
     def crypt_key_id(self, crypt_key_id):
-        """Sets the crypt_key_id of this ShowShareResponse.
+        r"""Sets the crypt_key_id of this ShowShareResponse.
 
         用户指定的加密密钥ID，非加密盘时不返回。
 
@@ -390,7 +390,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def expand_type(self):
-        """Gets the expand_type of this ShowShareResponse.
+        r"""Gets the expand_type of this ShowShareResponse.
 
         如果是增强版文件系统，该字段返回bandwidth；如果是20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB，该字段返回hpc；否则不返回。
 
@@ -401,7 +401,7 @@ class ShowShareResponse(SdkResponse):
 
     @expand_type.setter
     def expand_type(self, expand_type):
-        """Sets the expand_type of this ShowShareResponse.
+        r"""Sets the expand_type of this ShowShareResponse.
 
         如果是增强版文件系统，该字段返回bandwidth；如果是20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB，该字段返回hpc；否则不返回。
 
@@ -412,7 +412,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def export_location(self):
-        """Gets the export_location of this ShowShareResponse.
+        r"""Gets the export_location of this ShowShareResponse.
 
         SFS Turbo文件系统的挂载端点。例如\"192.168.0.90:/\"。如果文件系统正在创建，该字段不返回。
 
@@ -423,7 +423,7 @@ class ShowShareResponse(SdkResponse):
 
     @export_location.setter
     def export_location(self, export_location):
-        """Sets the export_location of this ShowShareResponse.
+        r"""Sets the export_location of this ShowShareResponse.
 
         SFS Turbo文件系统的挂载端点。例如\"192.168.0.90:/\"。如果文件系统正在创建，该字段不返回。
 
@@ -434,7 +434,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowShareResponse.
+        r"""Gets the id of this ShowShareResponse.
 
         SFS Turbo的文件系统ID。
 
@@ -445,7 +445,7 @@ class ShowShareResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowShareResponse.
+        r"""Sets the id of this ShowShareResponse.
 
         SFS Turbo的文件系统ID。
 
@@ -456,7 +456,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowShareResponse.
+        r"""Gets the name of this ShowShareResponse.
 
         创建时指定的SFS Turbo文件系统名称。
 
@@ -467,7 +467,7 @@ class ShowShareResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowShareResponse.
+        r"""Sets the name of this ShowShareResponse.
 
         创建时指定的SFS Turbo文件系统名称。
 
@@ -478,7 +478,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def pay_model(self):
-        """Gets the pay_model of this ShowShareResponse.
+        r"""Gets the pay_model of this ShowShareResponse.
 
         SFS Turbo文件系统的计费模式。'0'代表按需付费，'1'代表包周期计费。如果文件系统正在创建，该字段不返回。
 
@@ -489,7 +489,7 @@ class ShowShareResponse(SdkResponse):
 
     @pay_model.setter
     def pay_model(self, pay_model):
-        """Sets the pay_model of this ShowShareResponse.
+        r"""Sets the pay_model of this ShowShareResponse.
 
         SFS Turbo文件系统的计费模式。'0'代表按需付费，'1'代表包周期计费。如果文件系统正在创建，该字段不返回。
 
@@ -500,7 +500,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this ShowShareResponse.
+        r"""Gets the region of this ShowShareResponse.
 
         SFS Turbo文件系统所在区域。
 
@@ -511,7 +511,7 @@ class ShowShareResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowShareResponse.
+        r"""Sets the region of this ShowShareResponse.
 
         SFS Turbo文件系统所在区域。
 
@@ -522,7 +522,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ShowShareResponse.
+        r"""Gets the security_group_id of this ShowShareResponse.
 
         用户指定的安全组ID。
 
@@ -533,7 +533,7 @@ class ShowShareResponse(SdkResponse):
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ShowShareResponse.
+        r"""Sets the security_group_id of this ShowShareResponse.
 
         用户指定的安全组ID。
 
@@ -544,7 +544,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def share_proto(self):
-        """Gets the share_proto of this ShowShareResponse.
+        r"""Gets the share_proto of this ShowShareResponse.
 
         SFS Turbo文件系统的协议类型，当前为NFS
 
@@ -555,7 +555,7 @@ class ShowShareResponse(SdkResponse):
 
     @share_proto.setter
     def share_proto(self, share_proto):
-        """Sets the share_proto of this ShowShareResponse.
+        r"""Sets the share_proto of this ShowShareResponse.
 
         SFS Turbo文件系统的协议类型，当前为NFS
 
@@ -566,7 +566,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def share_type(self):
-        """Gets the share_type of this ShowShareResponse.
+        r"""Gets the share_type of this ShowShareResponse.
 
         SFS Turbo文件系统性能类型，包括“STANDARD”标准型和“PERFORMANCE”性能型。
 
@@ -577,7 +577,7 @@ class ShowShareResponse(SdkResponse):
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this ShowShareResponse.
+        r"""Sets the share_type of this ShowShareResponse.
 
         SFS Turbo文件系统性能类型，包括“STANDARD”标准型和“PERFORMANCE”性能型。
 
@@ -588,7 +588,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowShareResponse.
+        r"""Gets the size of this ShowShareResponse.
 
         SFS Turbo文件系统总容量，单位GB。
 
@@ -599,7 +599,7 @@ class ShowShareResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowShareResponse.
+        r"""Sets the size of this ShowShareResponse.
 
         SFS Turbo文件系统总容量，单位GB。
 
@@ -610,7 +610,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowShareResponse.
+        r"""Gets the status of this ShowShareResponse.
 
         SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'303'表示创建失败，'800'表示实例被冻结。
 
@@ -621,7 +621,7 @@ class ShowShareResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowShareResponse.
+        r"""Sets the status of this ShowShareResponse.
 
         SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'303'表示创建失败，'800'表示实例被冻结。
 
@@ -632,7 +632,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def sub_status(self):
-        """Gets the sub_status of this ShowShareResponse.
+        r"""Gets the sub_status of this ShowShareResponse.
 
         SFS Turbo文件系统的子状态。当用户未对文件系统有修改类操作时，该字段不返回。 '121'表示扩容中；'132'表示修改安全组中；'137'表示添加VPC中；'138'表示删除VPC中；'150'表示配置联动后端中；'151'表示删除联动后端配置中。 '221'表示扩容成功；'232'表示修改安全组成功；'237'表示添加VPC成功；'238'表示删除VPC成功；'250'表示配置联动后端成功；'251'表示删除联动后端配置成功。 '321'表示扩容失败；'332'表示修改安全组失败；'337'表示添加VPC失败；'338'表示删除VPC失败；'350'表示配置联动后端失败；'351'表示删除联动后端配置失败。 
 
@@ -643,7 +643,7 @@ class ShowShareResponse(SdkResponse):
 
     @sub_status.setter
     def sub_status(self, sub_status):
-        """Sets the sub_status of this ShowShareResponse.
+        r"""Sets the sub_status of this ShowShareResponse.
 
         SFS Turbo文件系统的子状态。当用户未对文件系统有修改类操作时，该字段不返回。 '121'表示扩容中；'132'表示修改安全组中；'137'表示添加VPC中；'138'表示删除VPC中；'150'表示配置联动后端中；'151'表示删除联动后端配置中。 '221'表示扩容成功；'232'表示修改安全组成功；'237'表示添加VPC成功；'238'表示删除VPC成功；'250'表示配置联动后端成功；'251'表示删除联动后端配置成功。 '321'表示扩容失败；'332'表示修改安全组失败；'337'表示添加VPC失败；'338'表示删除VPC失败；'350'表示配置联动后端失败；'351'表示删除联动后端配置失败。 
 
@@ -654,7 +654,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ShowShareResponse.
+        r"""Gets the subnet_id of this ShowShareResponse.
 
         用户指定的子网的网络ID。
 
@@ -665,7 +665,7 @@ class ShowShareResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ShowShareResponse.
+        r"""Sets the subnet_id of this ShowShareResponse.
 
         用户指定的子网的网络ID。
 
@@ -676,7 +676,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowShareResponse.
+        r"""Gets the vpc_id of this ShowShareResponse.
 
         用户指定的VPC ID。
 
@@ -687,7 +687,7 @@ class ShowShareResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowShareResponse.
+        r"""Sets the vpc_id of this ShowShareResponse.
 
         用户指定的VPC ID。
 
@@ -698,7 +698,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowShareResponse.
+        r"""Gets the enterprise_project_id of this ShowShareResponse.
 
         SFS Turbo文件系统绑定的企业项目ID。
 
@@ -709,7 +709,7 @@ class ShowShareResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowShareResponse.
+        r"""Sets the enterprise_project_id of this ShowShareResponse.
 
         SFS Turbo文件系统绑定的企业项目ID。
 
@@ -720,7 +720,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowShareResponse.
+        r"""Gets the tags of this ShowShareResponse.
 
         tag标签的列表。
 
@@ -731,7 +731,7 @@ class ShowShareResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowShareResponse.
+        r"""Sets the tags of this ShowShareResponse.
 
         tag标签的列表。
 
@@ -742,7 +742,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def optional_endpoint(self):
-        """Gets the optional_endpoint of this ShowShareResponse.
+        r"""Gets the optional_endpoint of this ShowShareResponse.
 
         可选的挂载IP地址。上一代文件系统规格类型不返回该字段。
 
@@ -753,7 +753,7 @@ class ShowShareResponse(SdkResponse):
 
     @optional_endpoint.setter
     def optional_endpoint(self, optional_endpoint):
-        """Sets the optional_endpoint of this ShowShareResponse.
+        r"""Sets the optional_endpoint of this ShowShareResponse.
 
         可选的挂载IP地址。上一代文件系统规格类型不返回该字段。
 
@@ -764,7 +764,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def hpc_bw(self):
-        """Gets the hpc_bw of this ShowShareResponse.
+        r"""Gets the hpc_bw of this ShowShareResponse.
 
         文件系统的带宽规格。 - \"20M\"表示20MB/s/TiB - \"40M\"表示40MB/s/TiB - \"125M\"表示125MB/s/TiB - \"250M\"表示250MB/s/TiB - \"500M\"表示500MB/s/TiB  - \"1000M\"表示1000MB/s/TiB  - \"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"或\"48G\"表示HPC缓存型的带宽规格。 
 
@@ -775,7 +775,7 @@ class ShowShareResponse(SdkResponse):
 
     @hpc_bw.setter
     def hpc_bw(self, hpc_bw):
-        """Sets the hpc_bw of this ShowShareResponse.
+        r"""Sets the hpc_bw of this ShowShareResponse.
 
         文件系统的带宽规格。 - \"20M\"表示20MB/s/TiB - \"40M\"表示40MB/s/TiB - \"125M\"表示125MB/s/TiB - \"250M\"表示250MB/s/TiB - \"500M\"表示500MB/s/TiB  - \"1000M\"表示1000MB/s/TiB  - \"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"或\"48G\"表示HPC缓存型的带宽规格。 
 
@@ -786,7 +786,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowShareResponse.
+        r"""Gets the instance_id of this ShowShareResponse.
 
         文件系统规格的节点id，为预留字段，不具备实际含义。
 
@@ -797,7 +797,7 @@ class ShowShareResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowShareResponse.
+        r"""Sets the instance_id of this ShowShareResponse.
 
         文件系统规格的节点id，为预留字段，不具备实际含义。
 
@@ -808,7 +808,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this ShowShareResponse.
+        r"""Gets the instance_type of this ShowShareResponse.
 
         文件系统规格的节点类型，为预留字段，不具备实际含义。
 
@@ -819,7 +819,7 @@ class ShowShareResponse(SdkResponse):
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this ShowShareResponse.
+        r"""Sets the instance_type of this ShowShareResponse.
 
         文件系统规格的节点类型，为预留字段，不具备实际含义。
 
@@ -830,7 +830,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def status_detail(self):
-        """Gets the status_detail of this ShowShareResponse.
+        r"""Gets the status_detail of this ShowShareResponse.
 
         文件系统的请求ID，为预留字段，不具备实际含义。
 
@@ -841,7 +841,7 @@ class ShowShareResponse(SdkResponse):
 
     @status_detail.setter
     def status_detail(self, status_detail):
-        """Sets the status_detail of this ShowShareResponse.
+        r"""Sets the status_detail of this ShowShareResponse.
 
         文件系统的请求ID，为预留字段，不具备实际含义。
 
@@ -852,7 +852,7 @@ class ShowShareResponse(SdkResponse):
 
     @property
     def features(self):
-        """Gets the features of this ShowShareResponse.
+        r"""Gets the features of this ShowShareResponse.
 
         :return: The features of this ShowShareResponse.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ShareInfoFeatures`
@@ -861,7 +861,7 @@ class ShowShareResponse(SdkResponse):
 
     @features.setter
     def features(self, features):
-        """Sets the features of this ShowShareResponse.
+        r"""Sets the features of this ShowShareResponse.
 
         :param features: The features of this ShowShareResponse.
         :type features: :class:`huaweicloudsdksfsturbo.v1.ShareInfoFeatures`

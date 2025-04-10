@@ -25,7 +25,7 @@ class InvitedDomain:
     }
 
     def __init__(self, invited_user=None):
-        """InvitedDomain
+        r"""InvitedDomain
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class InvitedDomain:
 
     @property
     def invited_user(self):
-        """Gets the invited_user of this InvitedDomain.
+        r"""Gets the invited_user of this InvitedDomain.
 
         被邀请方租户
 
@@ -53,7 +53,7 @@ class InvitedDomain:
 
     @invited_user.setter
     def invited_user(self, invited_user):
-        """Sets the invited_user of this InvitedDomain.
+        r"""Sets the invited_user of this InvitedDomain.
 
         被邀请方租户
 

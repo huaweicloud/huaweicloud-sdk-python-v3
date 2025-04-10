@@ -31,7 +31,7 @@ class BatchConfirmLiveCommandsRequest:
     }
 
     def __init__(self, room_id=None, job_id=None, x_app_user_id=None, body=None):
-        """BatchConfirmLiveCommandsRequest
+        r"""BatchConfirmLiveCommandsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class BatchConfirmLiveCommandsRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this BatchConfirmLiveCommandsRequest.
+        r"""Gets the room_id of this BatchConfirmLiveCommandsRequest.
 
         直播间ID。
 
@@ -73,7 +73,7 @@ class BatchConfirmLiveCommandsRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this BatchConfirmLiveCommandsRequest.
+        r"""Sets the room_id of this BatchConfirmLiveCommandsRequest.
 
         直播间ID。
 
@@ -84,7 +84,7 @@ class BatchConfirmLiveCommandsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchConfirmLiveCommandsRequest.
+        r"""Gets the job_id of this BatchConfirmLiveCommandsRequest.
 
         任务ID。
 
@@ -95,7 +95,7 @@ class BatchConfirmLiveCommandsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchConfirmLiveCommandsRequest.
+        r"""Sets the job_id of this BatchConfirmLiveCommandsRequest.
 
         任务ID。
 
@@ -106,7 +106,7 @@ class BatchConfirmLiveCommandsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this BatchConfirmLiveCommandsRequest.
+        r"""Gets the x_app_user_id of this BatchConfirmLiveCommandsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -117,7 +117,7 @@ class BatchConfirmLiveCommandsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this BatchConfirmLiveCommandsRequest.
+        r"""Sets the x_app_user_id of this BatchConfirmLiveCommandsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -128,7 +128,7 @@ class BatchConfirmLiveCommandsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchConfirmLiveCommandsRequest.
+        r"""Gets the body of this BatchConfirmLiveCommandsRequest.
 
         :return: The body of this BatchConfirmLiveCommandsRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.BatchConfirmLiveCommandsReq`
@@ -137,7 +137,7 @@ class BatchConfirmLiveCommandsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchConfirmLiveCommandsRequest.
+        r"""Sets the body of this BatchConfirmLiveCommandsRequest.
 
         :param body: The body of this BatchConfirmLiveCommandsRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.BatchConfirmLiveCommandsReq`

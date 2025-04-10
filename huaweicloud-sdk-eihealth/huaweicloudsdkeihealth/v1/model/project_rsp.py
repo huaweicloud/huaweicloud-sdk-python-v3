@@ -47,7 +47,7 @@ class ProjectRsp:
     }
 
     def __init__(self, id=None, name=None, creator=None, role=None, size=None, status=None, tags=None, description=None, create_time=None, update_time=None, delete_time=None, is_core=None):
-        """ProjectRsp
+        r"""ProjectRsp
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ProjectRsp:
 
     @property
     def id(self):
-        """Gets the id of this ProjectRsp.
+        r"""Gets the id of this ProjectRsp.
 
         项目id
 
@@ -131,7 +131,7 @@ class ProjectRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProjectRsp.
+        r"""Sets the id of this ProjectRsp.
 
         项目id
 
@@ -142,7 +142,7 @@ class ProjectRsp:
 
     @property
     def name(self):
-        """Gets the name of this ProjectRsp.
+        r"""Gets the name of this ProjectRsp.
 
         项目名称
 
@@ -153,7 +153,7 @@ class ProjectRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProjectRsp.
+        r"""Sets the name of this ProjectRsp.
 
         项目名称
 
@@ -164,7 +164,7 @@ class ProjectRsp:
 
     @property
     def creator(self):
-        """Gets the creator of this ProjectRsp.
+        r"""Gets the creator of this ProjectRsp.
 
         项目所有者
 
@@ -175,7 +175,7 @@ class ProjectRsp:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ProjectRsp.
+        r"""Sets the creator of this ProjectRsp.
 
         项目所有者
 
@@ -186,7 +186,7 @@ class ProjectRsp:
 
     @property
     def role(self):
-        """Gets the role of this ProjectRsp.
+        r"""Gets the role of this ProjectRsp.
 
         当前用户在该项目上的角色
 
@@ -197,7 +197,7 @@ class ProjectRsp:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ProjectRsp.
+        r"""Sets the role of this ProjectRsp.
 
         当前用户在该项目上的角色
 
@@ -208,7 +208,7 @@ class ProjectRsp:
 
     @property
     def size(self):
-        """Gets the size of this ProjectRsp.
+        r"""Gets the size of this ProjectRsp.
 
         项目桶存储量
 
@@ -219,7 +219,7 @@ class ProjectRsp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ProjectRsp.
+        r"""Sets the size of this ProjectRsp.
 
         项目桶存储量
 
@@ -230,7 +230,7 @@ class ProjectRsp:
 
     @property
     def status(self):
-        """Gets the status of this ProjectRsp.
+        r"""Gets the status of this ProjectRsp.
 
         项目状态
 
@@ -241,7 +241,7 @@ class ProjectRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ProjectRsp.
+        r"""Sets the status of this ProjectRsp.
 
         项目状态
 
@@ -252,7 +252,7 @@ class ProjectRsp:
 
     @property
     def tags(self):
-        """Gets the tags of this ProjectRsp.
+        r"""Gets the tags of this ProjectRsp.
 
         标签列表
 
@@ -263,7 +263,7 @@ class ProjectRsp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ProjectRsp.
+        r"""Sets the tags of this ProjectRsp.
 
         标签列表
 
@@ -274,7 +274,7 @@ class ProjectRsp:
 
     @property
     def description(self):
-        """Gets the description of this ProjectRsp.
+        r"""Gets the description of this ProjectRsp.
 
         项目描述
 
@@ -285,7 +285,7 @@ class ProjectRsp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProjectRsp.
+        r"""Sets the description of this ProjectRsp.
 
         项目描述
 
@@ -296,7 +296,7 @@ class ProjectRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ProjectRsp.
+        r"""Gets the create_time of this ProjectRsp.
 
         项目创建时间
 
@@ -307,7 +307,7 @@ class ProjectRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ProjectRsp.
+        r"""Sets the create_time of this ProjectRsp.
 
         项目创建时间
 
@@ -318,7 +318,7 @@ class ProjectRsp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ProjectRsp.
+        r"""Gets the update_time of this ProjectRsp.
 
         项目更新时间
 
@@ -329,7 +329,7 @@ class ProjectRsp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ProjectRsp.
+        r"""Sets the update_time of this ProjectRsp.
 
         项目更新时间
 
@@ -340,7 +340,7 @@ class ProjectRsp:
 
     @property
     def delete_time(self):
-        """Gets the delete_time of this ProjectRsp.
+        r"""Gets the delete_time of this ProjectRsp.
 
         请求删除时间
 
@@ -351,7 +351,7 @@ class ProjectRsp:
 
     @delete_time.setter
     def delete_time(self, delete_time):
-        """Sets the delete_time of this ProjectRsp.
+        r"""Sets the delete_time of this ProjectRsp.
 
         请求删除时间
 
@@ -362,7 +362,7 @@ class ProjectRsp:
 
     @property
     def is_core(self):
-        """Gets the is_core of this ProjectRsp.
+        r"""Gets the is_core of this ProjectRsp.
 
         核心项目标记
 
@@ -373,7 +373,7 @@ class ProjectRsp:
 
     @is_core.setter
     def is_core(self, is_core):
-        """Sets the is_core of this ProjectRsp.
+        r"""Sets the is_core of this ProjectRsp.
 
         核心项目标记
 

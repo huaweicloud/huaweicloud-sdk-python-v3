@@ -31,7 +31,7 @@ class TaskNodeInfo:
     }
 
     def __init__(self, node_size=None, data_volume_type=None, data_volume_count=None, data_volume_size=None):
-        """TaskNodeInfo
+        r"""TaskNodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class TaskNodeInfo:
 
     @property
     def node_size(self):
-        """Gets the node_size of this TaskNodeInfo.
+        r"""Gets the node_size of this TaskNodeInfo.
 
         Task节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
@@ -71,7 +71,7 @@ class TaskNodeInfo:
 
     @node_size.setter
     def node_size(self, node_size):
-        """Sets the node_size of this TaskNodeInfo.
+        r"""Sets the node_size of this TaskNodeInfo.
 
         Task节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
@@ -82,7 +82,7 @@ class TaskNodeInfo:
 
     @property
     def data_volume_type(self):
-        """Gets the data_volume_type of this TaskNodeInfo.
+        r"""Gets the data_volume_type of this TaskNodeInfo.
 
         Task节点数据磁盘存储类别，目前支持SATA、SAS和SSD。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
 
@@ -93,7 +93,7 @@ class TaskNodeInfo:
 
     @data_volume_type.setter
     def data_volume_type(self, data_volume_type):
-        """Sets the data_volume_type of this TaskNodeInfo.
+        r"""Sets the data_volume_type of this TaskNodeInfo.
 
         Task节点数据磁盘存储类别，目前支持SATA、SAS和SSD。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
 
@@ -104,7 +104,7 @@ class TaskNodeInfo:
 
     @property
     def data_volume_count(self):
-        """Gets the data_volume_count of this TaskNodeInfo.
+        r"""Gets the data_volume_count of this TaskNodeInfo.
 
         Task节点数据磁盘存储数目，取值范围：0～20。
 
@@ -115,7 +115,7 @@ class TaskNodeInfo:
 
     @data_volume_count.setter
     def data_volume_count(self, data_volume_count):
-        """Sets the data_volume_count of this TaskNodeInfo.
+        r"""Sets the data_volume_count of this TaskNodeInfo.
 
         Task节点数据磁盘存储数目，取值范围：0～20。
 
@@ -126,7 +126,7 @@ class TaskNodeInfo:
 
     @property
     def data_volume_size(self):
-        """Gets the data_volume_size of this TaskNodeInfo.
+        r"""Gets the data_volume_size of this TaskNodeInfo.
 
         Task节点数据磁盘存储大小。  取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
 
@@ -137,7 +137,7 @@ class TaskNodeInfo:
 
     @data_volume_size.setter
     def data_volume_size(self, data_volume_size):
-        """Sets the data_volume_size of this TaskNodeInfo.
+        r"""Sets the data_volume_size of this TaskNodeInfo.
 
         Task节点数据磁盘存储大小。  取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
 

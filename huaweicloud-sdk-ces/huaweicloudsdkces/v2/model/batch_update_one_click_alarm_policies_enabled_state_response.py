@@ -26,7 +26,7 @@ class BatchUpdateOneClickAlarmPoliciesEnabledStateResponse(SdkResponse):
     }
 
     def __init__(self, alarm_policy_ids=None):
-        """BatchUpdateOneClickAlarmPoliciesEnabledStateResponse
+        r"""BatchUpdateOneClickAlarmPoliciesEnabledStateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchUpdateOneClickAlarmPoliciesEnabledStateResponse(SdkResponse):
 
     @property
     def alarm_policy_ids(self):
-        """Gets the alarm_policy_ids of this BatchUpdateOneClickAlarmPoliciesEnabledStateResponse.
+        r"""Gets the alarm_policy_ids of this BatchUpdateOneClickAlarmPoliciesEnabledStateResponse.
 
         成功启停的告警规则策略ID列表
 
@@ -55,7 +55,7 @@ class BatchUpdateOneClickAlarmPoliciesEnabledStateResponse(SdkResponse):
 
     @alarm_policy_ids.setter
     def alarm_policy_ids(self, alarm_policy_ids):
-        """Sets the alarm_policy_ids of this BatchUpdateOneClickAlarmPoliciesEnabledStateResponse.
+        r"""Sets the alarm_policy_ids of this BatchUpdateOneClickAlarmPoliciesEnabledStateResponse.
 
         成功启停的告警规则策略ID列表
 

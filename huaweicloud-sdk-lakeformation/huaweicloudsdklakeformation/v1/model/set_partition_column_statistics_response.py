@@ -24,7 +24,7 @@ class SetPartitionColumnStatisticsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetPartitionColumnStatisticsResponse
+        r"""SetPartitionColumnStatisticsResponse
 
         The model defined in huaweicloud sdk
 

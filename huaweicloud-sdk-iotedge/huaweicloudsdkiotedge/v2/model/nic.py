@@ -27,7 +27,7 @@ class Nic:
     }
 
     def __init__(self, eth=None, ip=None):
-        """Nic
+        r"""Nic
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Nic:
 
     @property
     def eth(self):
-        """Gets the eth of this Nic.
+        r"""Gets the eth of this Nic.
 
         网卡信息，如eth0,eth1
 
@@ -61,7 +61,7 @@ class Nic:
 
     @eth.setter
     def eth(self, eth):
-        """Sets the eth of this Nic.
+        r"""Sets the eth of this Nic.
 
         网卡信息，如eth0,eth1
 
@@ -72,7 +72,7 @@ class Nic:
 
     @property
     def ip(self):
-        """Gets the ip of this Nic.
+        r"""Gets the ip of this Nic.
 
         网卡ip
 
@@ -83,7 +83,7 @@ class Nic:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this Nic.
+        r"""Sets the ip of this Nic.
 
         网卡ip
 

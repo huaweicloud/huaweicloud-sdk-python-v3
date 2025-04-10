@@ -35,7 +35,7 @@ class ConsumerGroupInfo:
     }
 
     def __init__(self, consumer_group_name=None, create_time=None, log_group_id=None, log_stream_id=None, project_id=None, timeout=None):
-        """ConsumerGroupInfo
+        r"""ConsumerGroupInfo
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ConsumerGroupInfo:
 
     @property
     def consumer_group_name(self):
-        """Gets the consumer_group_name of this ConsumerGroupInfo.
+        r"""Gets the consumer_group_name of this ConsumerGroupInfo.
 
         创建的消费组名
 
@@ -88,7 +88,7 @@ class ConsumerGroupInfo:
 
     @consumer_group_name.setter
     def consumer_group_name(self, consumer_group_name):
-        """Sets the consumer_group_name of this ConsumerGroupInfo.
+        r"""Sets the consumer_group_name of this ConsumerGroupInfo.
 
         创建的消费组名
 
@@ -99,7 +99,7 @@ class ConsumerGroupInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ConsumerGroupInfo.
+        r"""Gets the create_time of this ConsumerGroupInfo.
 
         创建时间
 
@@ -110,7 +110,7 @@ class ConsumerGroupInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ConsumerGroupInfo.
+        r"""Sets the create_time of this ConsumerGroupInfo.
 
         创建时间
 
@@ -121,7 +121,7 @@ class ConsumerGroupInfo:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this ConsumerGroupInfo.
+        r"""Gets the log_group_id of this ConsumerGroupInfo.
 
         日志组ID
 
@@ -132,7 +132,7 @@ class ConsumerGroupInfo:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ConsumerGroupInfo.
+        r"""Sets the log_group_id of this ConsumerGroupInfo.
 
         日志组ID
 
@@ -143,7 +143,7 @@ class ConsumerGroupInfo:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this ConsumerGroupInfo.
+        r"""Gets the log_stream_id of this ConsumerGroupInfo.
 
         日志流ID
 
@@ -154,7 +154,7 @@ class ConsumerGroupInfo:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this ConsumerGroupInfo.
+        r"""Sets the log_stream_id of this ConsumerGroupInfo.
 
         日志流ID
 
@@ -165,7 +165,7 @@ class ConsumerGroupInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ConsumerGroupInfo.
+        r"""Gets the project_id of this ConsumerGroupInfo.
 
         项目ID
 
@@ -176,7 +176,7 @@ class ConsumerGroupInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ConsumerGroupInfo.
+        r"""Sets the project_id of this ConsumerGroupInfo.
 
         项目ID
 
@@ -187,7 +187,7 @@ class ConsumerGroupInfo:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ConsumerGroupInfo.
+        r"""Gets the timeout of this ConsumerGroupInfo.
 
         超时时间，单位秒
 
@@ -198,7 +198,7 @@ class ConsumerGroupInfo:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ConsumerGroupInfo.
+        r"""Sets the timeout of this ConsumerGroupInfo.
 
         超时时间，单位秒
 

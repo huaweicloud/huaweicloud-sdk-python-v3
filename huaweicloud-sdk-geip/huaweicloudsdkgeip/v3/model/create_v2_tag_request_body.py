@@ -25,7 +25,7 @@ class CreateV2TagRequestBody:
     }
 
     def __init__(self, tag=None):
-        """CreateV2TagRequestBody
+        r"""CreateV2TagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateV2TagRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateV2TagRequestBody.
+        r"""Gets the tag of this CreateV2TagRequestBody.
 
         :return: The tag of this CreateV2TagRequestBody.
         :rtype: :class:`huaweicloudsdkgeip.v3.CreateV2TagRequestBodyTag`
@@ -51,7 +51,7 @@ class CreateV2TagRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateV2TagRequestBody.
+        r"""Sets the tag of this CreateV2TagRequestBody.
 
         :param tag: The tag of this CreateV2TagRequestBody.
         :type tag: :class:`huaweicloudsdkgeip.v3.CreateV2TagRequestBodyTag`

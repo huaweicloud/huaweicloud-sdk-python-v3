@@ -27,7 +27,7 @@ class DynamicDataMask:
     }
 
     def __init__(self, mask_strategies=None, data=None):
-        """DynamicDataMask
+        r"""DynamicDataMask
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DynamicDataMask:
 
     @property
     def mask_strategies(self):
-        """Gets the mask_strategies of this DynamicDataMask.
+        r"""Gets the mask_strategies of this DynamicDataMask.
 
         脱敏策略列表，每一个策略对应一个字段，脱敏策略数最多100个。
 
@@ -59,7 +59,7 @@ class DynamicDataMask:
 
     @mask_strategies.setter
     def mask_strategies(self, mask_strategies):
-        """Sets the mask_strategies of this DynamicDataMask.
+        r"""Sets the mask_strategies of this DynamicDataMask.
 
         脱敏策略列表，每一个策略对应一个字段，脱敏策略数最多100个。
 
@@ -70,7 +70,7 @@ class DynamicDataMask:
 
     @property
     def data(self):
-        """Gets the data of this DynamicDataMask.
+        r"""Gets the data of this DynamicDataMask.
 
         数据列表。
 
@@ -81,7 +81,7 @@ class DynamicDataMask:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DynamicDataMask.
+        r"""Sets the data of this DynamicDataMask.
 
         数据列表。
 

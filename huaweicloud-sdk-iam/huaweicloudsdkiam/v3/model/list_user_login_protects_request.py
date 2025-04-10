@@ -23,7 +23,7 @@ class ListUserLoginProtectsRequest:
     }
 
     def __init__(self):
-        """ListUserLoginProtectsRequest
+        r"""ListUserLoginProtectsRequest
 
         The model defined in huaweicloud sdk
 

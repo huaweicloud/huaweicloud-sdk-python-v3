@@ -32,7 +32,7 @@ class DeleteAlertRuleResponse(SdkResponse):
     }
 
     def __init__(self, deleted=None, fail_list=None, success_list=None, x_request_id=None):
-        """DeleteAlertRuleResponse
+        r"""DeleteAlertRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class DeleteAlertRuleResponse(SdkResponse):
 
     @property
     def deleted(self):
-        """Gets the deleted of this DeleteAlertRuleResponse.
+        r"""Gets the deleted of this DeleteAlertRuleResponse.
 
         是否删除.
 
@@ -76,7 +76,7 @@ class DeleteAlertRuleResponse(SdkResponse):
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this DeleteAlertRuleResponse.
+        r"""Sets the deleted of this DeleteAlertRuleResponse.
 
         是否删除.
 
@@ -87,7 +87,7 @@ class DeleteAlertRuleResponse(SdkResponse):
 
     @property
     def fail_list(self):
-        """Gets the fail_list of this DeleteAlertRuleResponse.
+        r"""Gets the fail_list of this DeleteAlertRuleResponse.
 
         Alert rule ID.
 
@@ -98,7 +98,7 @@ class DeleteAlertRuleResponse(SdkResponse):
 
     @fail_list.setter
     def fail_list(self, fail_list):
-        """Sets the fail_list of this DeleteAlertRuleResponse.
+        r"""Sets the fail_list of this DeleteAlertRuleResponse.
 
         Alert rule ID.
 
@@ -109,7 +109,7 @@ class DeleteAlertRuleResponse(SdkResponse):
 
     @property
     def success_list(self):
-        """Gets the success_list of this DeleteAlertRuleResponse.
+        r"""Gets the success_list of this DeleteAlertRuleResponse.
 
         Alert rule ID.
 
@@ -120,7 +120,7 @@ class DeleteAlertRuleResponse(SdkResponse):
 
     @success_list.setter
     def success_list(self, success_list):
-        """Sets the success_list of this DeleteAlertRuleResponse.
+        r"""Sets the success_list of this DeleteAlertRuleResponse.
 
         Alert rule ID.
 
@@ -131,7 +131,7 @@ class DeleteAlertRuleResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteAlertRuleResponse.
+        r"""Gets the x_request_id of this DeleteAlertRuleResponse.
 
         :return: The x_request_id of this DeleteAlertRuleResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class DeleteAlertRuleResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteAlertRuleResponse.
+        r"""Sets the x_request_id of this DeleteAlertRuleResponse.
 
         :param x_request_id: The x_request_id of this DeleteAlertRuleResponse.
         :type x_request_id: str

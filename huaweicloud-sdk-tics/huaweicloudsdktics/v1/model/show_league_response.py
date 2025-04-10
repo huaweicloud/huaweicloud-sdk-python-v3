@@ -68,7 +68,7 @@ class ShowLeagueResponse(SdkResponse):
     }
 
     def __init__(self, bcs_channel_name=None, bcs_ip=None, bcs_org_name=None, block_chain_id=None, block_chain_name=None, create_date=None, create_time=None, creator_id=None, creator_name=None, description=None, dp_enabled=None, expire_time=None, id=None, is_access_control=None, is_need_approval=None, league_status=None, name=None, partners=None, privacy_protection_type=None, resource_spec_code=None, type=None, version=None):
-        """ShowLeagueResponse
+        r"""ShowLeagueResponse
 
         The model defined in huaweicloud sdk
 
@@ -191,7 +191,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def bcs_channel_name(self):
-        """Gets the bcs_channel_name of this ShowLeagueResponse.
+        r"""Gets the bcs_channel_name of this ShowLeagueResponse.
 
         BCS通道名称
 
@@ -202,7 +202,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @bcs_channel_name.setter
     def bcs_channel_name(self, bcs_channel_name):
-        """Sets the bcs_channel_name of this ShowLeagueResponse.
+        r"""Sets the bcs_channel_name of this ShowLeagueResponse.
 
         BCS通道名称
 
@@ -213,7 +213,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def bcs_ip(self):
-        """Gets the bcs_ip of this ShowLeagueResponse.
+        r"""Gets the bcs_ip of this ShowLeagueResponse.
 
         BCS浏览器ip
 
@@ -224,7 +224,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @bcs_ip.setter
     def bcs_ip(self, bcs_ip):
-        """Sets the bcs_ip of this ShowLeagueResponse.
+        r"""Sets the bcs_ip of this ShowLeagueResponse.
 
         BCS浏览器ip
 
@@ -235,7 +235,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def bcs_org_name(self):
-        """Gets the bcs_org_name of this ShowLeagueResponse.
+        r"""Gets the bcs_org_name of this ShowLeagueResponse.
 
         BCS组织名称
 
@@ -246,7 +246,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @bcs_org_name.setter
     def bcs_org_name(self, bcs_org_name):
-        """Sets the bcs_org_name of this ShowLeagueResponse.
+        r"""Sets the bcs_org_name of this ShowLeagueResponse.
 
         BCS组织名称
 
@@ -257,7 +257,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def block_chain_id(self):
-        """Gets the block_chain_id of this ShowLeagueResponse.
+        r"""Gets the block_chain_id of this ShowLeagueResponse.
 
         BCS服务实例ID
 
@@ -268,7 +268,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @block_chain_id.setter
     def block_chain_id(self, block_chain_id):
-        """Sets the block_chain_id of this ShowLeagueResponse.
+        r"""Sets the block_chain_id of this ShowLeagueResponse.
 
         BCS服务实例ID
 
@@ -279,7 +279,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def block_chain_name(self):
-        """Gets the block_chain_name of this ShowLeagueResponse.
+        r"""Gets the block_chain_name of this ShowLeagueResponse.
 
         BCS服务实例名称
 
@@ -290,7 +290,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @block_chain_name.setter
     def block_chain_name(self, block_chain_name):
-        """Sets the block_chain_name of this ShowLeagueResponse.
+        r"""Sets the block_chain_name of this ShowLeagueResponse.
 
         BCS服务实例名称
 
@@ -301,7 +301,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def create_date(self):
-        """Gets the create_date of this ShowLeagueResponse.
+        r"""Gets the create_date of this ShowLeagueResponse.
 
         创建日期
 
@@ -312,7 +312,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @create_date.setter
     def create_date(self, create_date):
-        """Sets the create_date of this ShowLeagueResponse.
+        r"""Sets the create_date of this ShowLeagueResponse.
 
         创建日期
 
@@ -323,7 +323,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowLeagueResponse.
+        r"""Gets the create_time of this ShowLeagueResponse.
 
         创建时间
 
@@ -334,7 +334,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowLeagueResponse.
+        r"""Sets the create_time of this ShowLeagueResponse.
 
         创建时间
 
@@ -345,7 +345,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this ShowLeagueResponse.
+        r"""Gets the creator_id of this ShowLeagueResponse.
 
         创建人id
 
@@ -356,7 +356,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this ShowLeagueResponse.
+        r"""Sets the creator_id of this ShowLeagueResponse.
 
         创建人id
 
@@ -367,7 +367,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this ShowLeagueResponse.
+        r"""Gets the creator_name of this ShowLeagueResponse.
 
         创建人名称
 
@@ -378,7 +378,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this ShowLeagueResponse.
+        r"""Sets the creator_name of this ShowLeagueResponse.
 
         创建人名称
 
@@ -389,7 +389,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowLeagueResponse.
+        r"""Gets the description of this ShowLeagueResponse.
 
         描述信息
 
@@ -400,7 +400,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowLeagueResponse.
+        r"""Sets the description of this ShowLeagueResponse.
 
         描述信息
 
@@ -411,7 +411,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def dp_enabled(self):
-        """Gets the dp_enabled of this ShowLeagueResponse.
+        r"""Gets the dp_enabled of this ShowLeagueResponse.
 
         是否开启差分隐私
 
@@ -422,7 +422,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @dp_enabled.setter
     def dp_enabled(self, dp_enabled):
-        """Sets the dp_enabled of this ShowLeagueResponse.
+        r"""Sets the dp_enabled of this ShowLeagueResponse.
 
         是否开启差分隐私
 
@@ -433,7 +433,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ShowLeagueResponse.
+        r"""Gets the expire_time of this ShowLeagueResponse.
 
         过期时间
 
@@ -444,7 +444,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ShowLeagueResponse.
+        r"""Sets the expire_time of this ShowLeagueResponse.
 
         过期时间
 
@@ -455,7 +455,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowLeagueResponse.
+        r"""Gets the id of this ShowLeagueResponse.
 
         联盟id
 
@@ -466,7 +466,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowLeagueResponse.
+        r"""Sets the id of this ShowLeagueResponse.
 
         联盟id
 
@@ -477,7 +477,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def is_access_control(self):
-        """Gets the is_access_control of this ShowLeagueResponse.
+        r"""Gets the is_access_control of this ShowLeagueResponse.
 
         是否开启访问控制
 
@@ -488,7 +488,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @is_access_control.setter
     def is_access_control(self, is_access_control):
-        """Sets the is_access_control of this ShowLeagueResponse.
+        r"""Sets the is_access_control of this ShowLeagueResponse.
 
         是否开启访问控制
 
@@ -499,7 +499,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def is_need_approval(self):
-        """Gets the is_need_approval of this ShowLeagueResponse.
+        r"""Gets the is_need_approval of this ShowLeagueResponse.
 
         是否开启审批
 
@@ -510,7 +510,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @is_need_approval.setter
     def is_need_approval(self, is_need_approval):
-        """Sets the is_need_approval of this ShowLeagueResponse.
+        r"""Sets the is_need_approval of this ShowLeagueResponse.
 
         是否开启审批
 
@@ -521,7 +521,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def league_status(self):
-        """Gets the league_status of this ShowLeagueResponse.
+        r"""Gets the league_status of this ShowLeagueResponse.
 
         联盟状态,CREATING.创建中,CREATE_FAILED.创建失败,NORMAL.正常,UPDATING.升级中,UPDATE_FAILED.升级失败,ROLLING.回滚中,ROLL_FAILED.回滚失败,DELETING.删除中,DELETE_FAILED.删除失败,DELETED.已删除
 
@@ -532,7 +532,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @league_status.setter
     def league_status(self, league_status):
-        """Sets the league_status of this ShowLeagueResponse.
+        r"""Sets the league_status of this ShowLeagueResponse.
 
         联盟状态,CREATING.创建中,CREATE_FAILED.创建失败,NORMAL.正常,UPDATING.升级中,UPDATE_FAILED.升级失败,ROLLING.回滚中,ROLL_FAILED.回滚失败,DELETING.删除中,DELETE_FAILED.删除失败,DELETED.已删除
 
@@ -543,7 +543,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowLeagueResponse.
+        r"""Gets the name of this ShowLeagueResponse.
 
         联盟名称
 
@@ -554,7 +554,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowLeagueResponse.
+        r"""Sets the name of this ShowLeagueResponse.
 
         联盟名称
 
@@ -565,7 +565,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def partners(self):
-        """Gets the partners of this ShowLeagueResponse.
+        r"""Gets the partners of this ShowLeagueResponse.
 
         联盟成员数
 
@@ -576,7 +576,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @partners.setter
     def partners(self, partners):
-        """Sets the partners of this ShowLeagueResponse.
+        r"""Sets the partners of this ShowLeagueResponse.
 
         联盟成员数
 
@@ -587,7 +587,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def privacy_protection_type(self):
-        """Gets the privacy_protection_type of this ShowLeagueResponse.
+        r"""Gets the privacy_protection_type of this ShowLeagueResponse.
 
         隐私保护级别,STANDARD.标准,HIGH.高
 
@@ -598,7 +598,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @privacy_protection_type.setter
     def privacy_protection_type(self, privacy_protection_type):
-        """Sets the privacy_protection_type of this ShowLeagueResponse.
+        r"""Sets the privacy_protection_type of this ShowLeagueResponse.
 
         隐私保护级别,STANDARD.标准,HIGH.高
 
@@ -609,7 +609,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ShowLeagueResponse.
+        r"""Gets the resource_spec_code of this ShowLeagueResponse.
 
         资源规格
 
@@ -620,7 +620,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ShowLeagueResponse.
+        r"""Sets the resource_spec_code of this ShowLeagueResponse.
 
         资源规格
 
@@ -631,7 +631,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowLeagueResponse.
+        r"""Gets the type of this ShowLeagueResponse.
 
         参与类型,OWNER.所有者,PARTNER.参与者
 
@@ -642,7 +642,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowLeagueResponse.
+        r"""Sets the type of this ShowLeagueResponse.
 
         参与类型,OWNER.所有者,PARTNER.参与者
 
@@ -653,7 +653,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowLeagueResponse.
+        r"""Gets the version of this ShowLeagueResponse.
 
         联盟版本
 
@@ -664,7 +664,7 @@ class ShowLeagueResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowLeagueResponse.
+        r"""Sets the version of this ShowLeagueResponse.
 
         联盟版本
 

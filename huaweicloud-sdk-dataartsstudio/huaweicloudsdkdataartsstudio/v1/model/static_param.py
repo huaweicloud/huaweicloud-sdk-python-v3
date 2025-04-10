@@ -27,7 +27,7 @@ class StaticParam:
     }
 
     def __init__(self, para_name=None, para_value=None):
-        """StaticParam
+        r"""StaticParam
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StaticParam:
 
     @property
     def para_name(self):
-        """Gets the para_name of this StaticParam.
+        r"""Gets the para_name of this StaticParam.
 
         静态参数名
 
@@ -61,7 +61,7 @@ class StaticParam:
 
     @para_name.setter
     def para_name(self, para_name):
-        """Sets the para_name of this StaticParam.
+        r"""Sets the para_name of this StaticParam.
 
         静态参数名
 
@@ -72,7 +72,7 @@ class StaticParam:
 
     @property
     def para_value(self):
-        """Gets the para_value of this StaticParam.
+        r"""Gets the para_value of this StaticParam.
 
         静态参数值
 
@@ -83,7 +83,7 @@ class StaticParam:
 
     @para_value.setter
     def para_value(self, para_value):
-        """Sets the para_value of this StaticParam.
+        r"""Sets the para_value of this StaticParam.
 
         静态参数值
 

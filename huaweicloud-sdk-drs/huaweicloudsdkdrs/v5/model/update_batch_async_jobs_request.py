@@ -29,7 +29,7 @@ class UpdateBatchAsyncJobsRequest:
     }
 
     def __init__(self, async_job_id=None, x_language=None, body=None):
-        """UpdateBatchAsyncJobsRequest
+        r"""UpdateBatchAsyncJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateBatchAsyncJobsRequest:
 
     @property
     def async_job_id(self):
-        """Gets the async_job_id of this UpdateBatchAsyncJobsRequest.
+        r"""Gets the async_job_id of this UpdateBatchAsyncJobsRequest.
 
         批量异步创建的任务ID，由创建批量异步任务接口返回。
 
@@ -67,7 +67,7 @@ class UpdateBatchAsyncJobsRequest:
 
     @async_job_id.setter
     def async_job_id(self, async_job_id):
-        """Sets the async_job_id of this UpdateBatchAsyncJobsRequest.
+        r"""Sets the async_job_id of this UpdateBatchAsyncJobsRequest.
 
         批量异步创建的任务ID，由创建批量异步任务接口返回。
 
@@ -78,7 +78,7 @@ class UpdateBatchAsyncJobsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateBatchAsyncJobsRequest.
+        r"""Gets the x_language of this UpdateBatchAsyncJobsRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class UpdateBatchAsyncJobsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateBatchAsyncJobsRequest.
+        r"""Sets the x_language of this UpdateBatchAsyncJobsRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class UpdateBatchAsyncJobsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateBatchAsyncJobsRequest.
+        r"""Gets the body of this UpdateBatchAsyncJobsRequest.
 
         :return: The body of this UpdateBatchAsyncJobsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.BatchAsyncUpdateJobReq`
@@ -109,7 +109,7 @@ class UpdateBatchAsyncJobsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBatchAsyncJobsRequest.
+        r"""Sets the body of this UpdateBatchAsyncJobsRequest.
 
         :param body: The body of this UpdateBatchAsyncJobsRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.BatchAsyncUpdateJobReq`

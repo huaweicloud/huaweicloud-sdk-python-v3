@@ -41,7 +41,7 @@ class HotWordsInfo:
     }
 
     def __init__(self, hot_words_id=None, robot_id=None, hot_words_type=None, vocabulary_id=None, sis_project_id=None, region=None, language=None, create_time=None, update_time=None):
-        """HotWordsInfo
+        r"""HotWordsInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class HotWordsInfo:
 
     @property
     def hot_words_id(self):
-        """Gets the hot_words_id of this HotWordsInfo.
+        r"""Gets the hot_words_id of this HotWordsInfo.
 
         热词记录ID。
 
@@ -110,7 +110,7 @@ class HotWordsInfo:
 
     @hot_words_id.setter
     def hot_words_id(self, hot_words_id):
-        """Sets the hot_words_id of this HotWordsInfo.
+        r"""Sets the hot_words_id of this HotWordsInfo.
 
         热词记录ID。
 
@@ -121,7 +121,7 @@ class HotWordsInfo:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this HotWordsInfo.
+        r"""Gets the robot_id of this HotWordsInfo.
 
         应用ID。
 
@@ -132,7 +132,7 @@ class HotWordsInfo:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this HotWordsInfo.
+        r"""Sets the robot_id of this HotWordsInfo.
 
         应用ID。
 
@@ -143,7 +143,7 @@ class HotWordsInfo:
 
     @property
     def hot_words_type(self):
-        """Gets the hot_words_type of this HotWordsInfo.
+        r"""Gets the hot_words_type of this HotWordsInfo.
 
         :return: The hot_words_type of this HotWordsInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
@@ -152,7 +152,7 @@ class HotWordsInfo:
 
     @hot_words_type.setter
     def hot_words_type(self, hot_words_type):
-        """Sets the hot_words_type of this HotWordsInfo.
+        r"""Sets the hot_words_type of this HotWordsInfo.
 
         :param hot_words_type: The hot_words_type of this HotWordsInfo.
         :type hot_words_type: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
@@ -161,7 +161,7 @@ class HotWordsInfo:
 
     @property
     def vocabulary_id(self):
-        """Gets the vocabulary_id of this HotWordsInfo.
+        r"""Gets the vocabulary_id of this HotWordsInfo.
 
         热词ID(sis中配置)。
 
@@ -172,7 +172,7 @@ class HotWordsInfo:
 
     @vocabulary_id.setter
     def vocabulary_id(self, vocabulary_id):
-        """Sets the vocabulary_id of this HotWordsInfo.
+        r"""Sets the vocabulary_id of this HotWordsInfo.
 
         热词ID(sis中配置)。
 
@@ -183,7 +183,7 @@ class HotWordsInfo:
 
     @property
     def sis_project_id(self):
-        """Gets the sis_project_id of this HotWordsInfo.
+        r"""Gets the sis_project_id of this HotWordsInfo.
 
         SIS服务所在区域projectId
 
@@ -194,7 +194,7 @@ class HotWordsInfo:
 
     @sis_project_id.setter
     def sis_project_id(self, sis_project_id):
-        """Sets the sis_project_id of this HotWordsInfo.
+        r"""Sets the sis_project_id of this HotWordsInfo.
 
         SIS服务所在区域projectId
 
@@ -205,7 +205,7 @@ class HotWordsInfo:
 
     @property
     def region(self):
-        """Gets the region of this HotWordsInfo.
+        r"""Gets the region of this HotWordsInfo.
 
         对接SIS服务的区域。 > 0：北京四；3：上海一；
 
@@ -216,7 +216,7 @@ class HotWordsInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this HotWordsInfo.
+        r"""Sets the region of this HotWordsInfo.
 
         对接SIS服务的区域。 > 0：北京四；3：上海一；
 
@@ -227,7 +227,7 @@ class HotWordsInfo:
 
     @property
     def language(self):
-        """Gets the language of this HotWordsInfo.
+        r"""Gets the language of this HotWordsInfo.
 
         :return: The language of this HotWordsInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -236,7 +236,7 @@ class HotWordsInfo:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this HotWordsInfo.
+        r"""Sets the language of this HotWordsInfo.
 
         :param language: The language of this HotWordsInfo.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -245,7 +245,7 @@ class HotWordsInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this HotWordsInfo.
+        r"""Gets the create_time of this HotWordsInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -256,7 +256,7 @@ class HotWordsInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this HotWordsInfo.
+        r"""Sets the create_time of this HotWordsInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -267,7 +267,7 @@ class HotWordsInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this HotWordsInfo.
+        r"""Gets the update_time of this HotWordsInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -278,7 +278,7 @@ class HotWordsInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this HotWordsInfo.
+        r"""Sets the update_time of this HotWordsInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 

@@ -24,7 +24,7 @@ class DeleteNatGatewayResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteNatGatewayResponse
+        r"""DeleteNatGatewayResponse
 
         The model defined in huaweicloud sdk
 

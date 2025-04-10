@@ -25,7 +25,7 @@ class ListCentralNetworkCapabilitiesRequest:
     }
 
     def __init__(self, capability=None):
-        """ListCentralNetworkCapabilitiesRequest
+        r"""ListCentralNetworkCapabilitiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListCentralNetworkCapabilitiesRequest:
 
     @property
     def capability(self):
-        """Gets the capability of this ListCentralNetworkCapabilitiesRequest.
+        r"""Gets the capability of this ListCentralNetworkCapabilitiesRequest.
 
         根据租户能力名查询，可查询多个类型。
 
@@ -54,7 +54,7 @@ class ListCentralNetworkCapabilitiesRequest:
 
     @capability.setter
     def capability(self, capability):
-        """Sets the capability of this ListCentralNetworkCapabilitiesRequest.
+        r"""Sets the capability of this ListCentralNetworkCapabilitiesRequest.
 
         根据租户能力名查询，可查询多个类型。
 

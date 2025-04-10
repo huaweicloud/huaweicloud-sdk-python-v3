@@ -45,7 +45,7 @@ class DomainItem:
     }
 
     def __init__(self, high=None, middle=None, low=None, hint=None, domain_id=None, top_level_domain_id=None, domain_name=None, alias=None, create_time=None, auth_status=None, protocol_type=None):
-        """DomainItem
+        r"""DomainItem
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class DomainItem:
 
     @property
     def high(self):
-        """Gets the high of this DomainItem.
+        r"""Gets the high of this DomainItem.
 
         高危漏洞数
 
@@ -124,7 +124,7 @@ class DomainItem:
 
     @high.setter
     def high(self, high):
-        """Sets the high of this DomainItem.
+        r"""Sets the high of this DomainItem.
 
         高危漏洞数
 
@@ -135,7 +135,7 @@ class DomainItem:
 
     @property
     def middle(self):
-        """Gets the middle of this DomainItem.
+        r"""Gets the middle of this DomainItem.
 
         中危漏洞数
 
@@ -146,7 +146,7 @@ class DomainItem:
 
     @middle.setter
     def middle(self, middle):
-        """Sets the middle of this DomainItem.
+        r"""Sets the middle of this DomainItem.
 
         中危漏洞数
 
@@ -157,7 +157,7 @@ class DomainItem:
 
     @property
     def low(self):
-        """Gets the low of this DomainItem.
+        r"""Gets the low of this DomainItem.
 
         低危漏洞数
 
@@ -168,7 +168,7 @@ class DomainItem:
 
     @low.setter
     def low(self, low):
-        """Sets the low of this DomainItem.
+        r"""Sets the low of this DomainItem.
 
         低危漏洞数
 
@@ -179,7 +179,7 @@ class DomainItem:
 
     @property
     def hint(self):
-        """Gets the hint of this DomainItem.
+        r"""Gets the hint of this DomainItem.
 
         提示危漏洞数
 
@@ -190,7 +190,7 @@ class DomainItem:
 
     @hint.setter
     def hint(self, hint):
-        """Sets the hint of this DomainItem.
+        r"""Sets the hint of this DomainItem.
 
         提示危漏洞数
 
@@ -201,7 +201,7 @@ class DomainItem:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DomainItem.
+        r"""Gets the domain_id of this DomainItem.
 
         网站域名ID
 
@@ -212,7 +212,7 @@ class DomainItem:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DomainItem.
+        r"""Sets the domain_id of this DomainItem.
 
         网站域名ID
 
@@ -223,7 +223,7 @@ class DomainItem:
 
     @property
     def top_level_domain_id(self):
-        """Gets the top_level_domain_id of this DomainItem.
+        r"""Gets the top_level_domain_id of this DomainItem.
 
         一级域名ID
 
@@ -234,7 +234,7 @@ class DomainItem:
 
     @top_level_domain_id.setter
     def top_level_domain_id(self, top_level_domain_id):
-        """Sets the top_level_domain_id of this DomainItem.
+        r"""Sets the top_level_domain_id of this DomainItem.
 
         一级域名ID
 
@@ -245,7 +245,7 @@ class DomainItem:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this DomainItem.
+        r"""Gets the domain_name of this DomainItem.
 
         网站域名
 
@@ -256,7 +256,7 @@ class DomainItem:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this DomainItem.
+        r"""Sets the domain_name of this DomainItem.
 
         网站域名
 
@@ -267,7 +267,7 @@ class DomainItem:
 
     @property
     def alias(self):
-        """Gets the alias of this DomainItem.
+        r"""Gets the alias of this DomainItem.
 
         网站域名的别名
 
@@ -278,7 +278,7 @@ class DomainItem:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this DomainItem.
+        r"""Sets the alias of this DomainItem.
 
         网站域名的别名
 
@@ -289,7 +289,7 @@ class DomainItem:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DomainItem.
+        r"""Gets the create_time of this DomainItem.
 
         创建网站域名资产的时间
 
@@ -300,7 +300,7 @@ class DomainItem:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DomainItem.
+        r"""Sets the create_time of this DomainItem.
 
         创建网站域名资产的时间
 
@@ -311,7 +311,7 @@ class DomainItem:
 
     @property
     def auth_status(self):
-        """Gets the auth_status of this DomainItem.
+        r"""Gets the auth_status of this DomainItem.
 
         网站域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
 
@@ -322,7 +322,7 @@ class DomainItem:
 
     @auth_status.setter
     def auth_status(self, auth_status):
-        """Sets the auth_status of this DomainItem.
+        r"""Sets the auth_status of this DomainItem.
 
         网站域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
 
@@ -333,7 +333,7 @@ class DomainItem:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this DomainItem.
+        r"""Gets the protocol_type of this DomainItem.
 
         协议类型:   * http:// - HTTP   * https:// - HTTPS 
 
@@ -344,7 +344,7 @@ class DomainItem:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this DomainItem.
+        r"""Sets the protocol_type of this DomainItem.
 
         协议类型:   * http:// - HTTP   * https:// - HTTPS 
 

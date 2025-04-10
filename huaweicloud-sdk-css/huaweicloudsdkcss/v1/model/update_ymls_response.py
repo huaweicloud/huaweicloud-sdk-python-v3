@@ -30,7 +30,7 @@ class UpdateYmlsResponse(SdkResponse):
     }
 
     def __init__(self, acknowledged=None, external_message=None, http_error_response=None):
-        """UpdateYmlsResponse
+        r"""UpdateYmlsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateYmlsResponse(SdkResponse):
 
     @property
     def acknowledged(self):
-        """Gets the acknowledged of this UpdateYmlsResponse.
+        r"""Gets the acknowledged of this UpdateYmlsResponse.
 
         修改是否成功。 - true: 修改成功。 - false: 修改失败。
 
@@ -69,7 +69,7 @@ class UpdateYmlsResponse(SdkResponse):
 
     @acknowledged.setter
     def acknowledged(self, acknowledged):
-        """Sets the acknowledged of this UpdateYmlsResponse.
+        r"""Sets the acknowledged of this UpdateYmlsResponse.
 
         修改是否成功。 - true: 修改成功。 - false: 修改失败。
 
@@ -80,7 +80,7 @@ class UpdateYmlsResponse(SdkResponse):
 
     @property
     def external_message(self):
-        """Gets the external_message of this UpdateYmlsResponse.
+        r"""Gets the external_message of this UpdateYmlsResponse.
 
         错误信息描述。当acknowledged为true时，该字段返回null。
 
@@ -91,7 +91,7 @@ class UpdateYmlsResponse(SdkResponse):
 
     @external_message.setter
     def external_message(self, external_message):
-        """Sets the external_message of this UpdateYmlsResponse.
+        r"""Sets the external_message of this UpdateYmlsResponse.
 
         错误信息描述。当acknowledged为true时，该字段返回null。
 
@@ -102,7 +102,7 @@ class UpdateYmlsResponse(SdkResponse):
 
     @property
     def http_error_response(self):
-        """Gets the http_error_response of this UpdateYmlsResponse.
+        r"""Gets the http_error_response of this UpdateYmlsResponse.
 
         HTTP错误信息。默认为null。
 
@@ -113,7 +113,7 @@ class UpdateYmlsResponse(SdkResponse):
 
     @http_error_response.setter
     def http_error_response(self, http_error_response):
-        """Sets the http_error_response of this UpdateYmlsResponse.
+        r"""Sets the http_error_response of this UpdateYmlsResponse.
 
         HTTP错误信息。默认为null。
 

@@ -29,7 +29,7 @@ class ListPipelineRunsRequest:
     }
 
     def __init__(self, project_id=None, pipeline_id=None, body=None):
-        """ListPipelineRunsRequest
+        r"""ListPipelineRunsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListPipelineRunsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListPipelineRunsRequest.
+        r"""Gets the project_id of this ListPipelineRunsRequest.
 
         项目ID
 
@@ -66,7 +66,7 @@ class ListPipelineRunsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListPipelineRunsRequest.
+        r"""Sets the project_id of this ListPipelineRunsRequest.
 
         项目ID
 
@@ -77,7 +77,7 @@ class ListPipelineRunsRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this ListPipelineRunsRequest.
+        r"""Gets the pipeline_id of this ListPipelineRunsRequest.
 
         流水线ID
 
@@ -88,7 +88,7 @@ class ListPipelineRunsRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this ListPipelineRunsRequest.
+        r"""Sets the pipeline_id of this ListPipelineRunsRequest.
 
         流水线ID
 
@@ -99,7 +99,7 @@ class ListPipelineRunsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListPipelineRunsRequest.
+        r"""Gets the body of this ListPipelineRunsRequest.
 
         :return: The body of this ListPipelineRunsRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelineRunsQuery`
@@ -108,7 +108,7 @@ class ListPipelineRunsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPipelineRunsRequest.
+        r"""Sets the body of this ListPipelineRunsRequest.
 
         :param body: The body of this ListPipelineRunsRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelineRunsQuery`

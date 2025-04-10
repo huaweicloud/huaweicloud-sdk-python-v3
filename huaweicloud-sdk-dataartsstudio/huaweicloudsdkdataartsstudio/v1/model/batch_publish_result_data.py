@@ -25,7 +25,7 @@ class BatchPublishResultData:
     }
 
     def __init__(self, value=None):
-        """BatchPublishResultData
+        r"""BatchPublishResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchPublishResultData:
 
     @property
     def value(self):
-        """Gets the value of this BatchPublishResultData.
+        r"""Gets the value of this BatchPublishResultData.
 
         :return: The value of this BatchPublishResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchOperationVO`
@@ -52,7 +52,7 @@ class BatchPublishResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this BatchPublishResultData.
+        r"""Sets the value of this BatchPublishResultData.
 
         :param value: The value of this BatchPublishResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.BatchOperationVO`

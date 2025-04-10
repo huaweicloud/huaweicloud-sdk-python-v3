@@ -25,7 +25,7 @@ class DeleteDbCacheRuleRequestBody:
     }
 
     def __init__(self, id=None):
-        """DeleteDbCacheRuleRequestBody
+        r"""DeleteDbCacheRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDbCacheRuleRequestBody:
 
     @property
     def id(self):
-        """Gets the id of this DeleteDbCacheRuleRequestBody.
+        r"""Gets the id of this DeleteDbCacheRuleRequestBody.
 
         内存加速规则ID。
 
@@ -53,7 +53,7 @@ class DeleteDbCacheRuleRequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteDbCacheRuleRequestBody.
+        r"""Sets the id of this DeleteDbCacheRuleRequestBody.
 
         内存加速规则ID。
 

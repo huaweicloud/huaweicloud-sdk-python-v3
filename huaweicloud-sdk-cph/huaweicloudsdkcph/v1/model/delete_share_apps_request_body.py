@@ -27,7 +27,7 @@ class DeleteShareAppsRequestBody:
     }
 
     def __init__(self, package_name=None, server_ids=None):
-        """DeleteShareAppsRequestBody
+        r"""DeleteShareAppsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteShareAppsRequestBody:
 
     @property
     def package_name(self):
-        """Gets the package_name of this DeleteShareAppsRequestBody.
+        r"""Gets the package_name of this DeleteShareAppsRequestBody.
 
         所需删除的共享应用的合法包名。最大长度128字节。只支持包含大小写字母、数字、下划线、点，其中不允许以数字和下划线开头，点不能作为结尾且包名中至少有一个点。
 
@@ -59,7 +59,7 @@ class DeleteShareAppsRequestBody:
 
     @package_name.setter
     def package_name(self, package_name):
-        """Sets the package_name of this DeleteShareAppsRequestBody.
+        r"""Sets the package_name of this DeleteShareAppsRequestBody.
 
         所需删除的共享应用的合法包名。最大长度128字节。只支持包含大小写字母、数字、下划线、点，其中不允许以数字和下划线开头，点不能作为结尾且包名中至少有一个点。
 
@@ -70,7 +70,7 @@ class DeleteShareAppsRequestBody:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this DeleteShareAppsRequestBody.
+        r"""Gets the server_ids of this DeleteShareAppsRequestBody.
 
         云手机服务器ID列表。
 
@@ -81,7 +81,7 @@ class DeleteShareAppsRequestBody:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this DeleteShareAppsRequestBody.
+        r"""Sets the server_ids of this DeleteShareAppsRequestBody.
 
         云手机服务器ID列表。
 

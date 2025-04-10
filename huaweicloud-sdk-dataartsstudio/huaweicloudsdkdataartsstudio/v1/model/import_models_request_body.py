@@ -25,7 +25,7 @@ class ImportModelsRequestBody:
     }
 
     def __init__(self, file=None):
-        """ImportModelsRequestBody
+        r"""ImportModelsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ImportModelsRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this ImportModelsRequestBody.
+        r"""Gets the file of this ImportModelsRequestBody.
 
         导入用的excel文件，大小必须小于4MB，且行数小于3000行。
 
@@ -53,7 +53,7 @@ class ImportModelsRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this ImportModelsRequestBody.
+        r"""Sets the file of this ImportModelsRequestBody.
 
         导入用的excel文件，大小必须小于4MB，且行数小于3000行。
 

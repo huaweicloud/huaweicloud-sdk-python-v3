@@ -25,7 +25,7 @@ class ConnectionPointPair:
     }
 
     def __init__(self, connection_point_pair=None):
-        """ConnectionPointPair
+        r"""ConnectionPointPair
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ConnectionPointPair:
 
     @property
     def connection_point_pair(self):
-        """Gets the connection_point_pair of this ConnectionPointPair.
+        r"""Gets the connection_point_pair of this ConnectionPointPair.
 
         中心网络连接的两个端点定义，长度固定为2的数组。
 
@@ -53,7 +53,7 @@ class ConnectionPointPair:
 
     @connection_point_pair.setter
     def connection_point_pair(self, connection_point_pair):
-        """Sets the connection_point_pair of this ConnectionPointPair.
+        r"""Sets the connection_point_pair of this ConnectionPointPair.
 
         中心网络连接的两个端点定义，长度固定为2的数组。
 

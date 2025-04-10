@@ -31,7 +31,7 @@ class SearchBaselineRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, x_language=None, body=None):
-        """SearchBaselineRequest
+        r"""SearchBaselineRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class SearchBaselineRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SearchBaselineRequest.
+        r"""Gets the project_id of this SearchBaselineRequest.
 
         项目id
 
@@ -72,7 +72,7 @@ class SearchBaselineRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SearchBaselineRequest.
+        r"""Sets the project_id of this SearchBaselineRequest.
 
         项目id
 
@@ -83,7 +83,7 @@ class SearchBaselineRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this SearchBaselineRequest.
+        r"""Gets the workspace_id of this SearchBaselineRequest.
 
         工作空间id
 
@@ -94,7 +94,7 @@ class SearchBaselineRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this SearchBaselineRequest.
+        r"""Sets the workspace_id of this SearchBaselineRequest.
 
         工作空间id
 
@@ -105,7 +105,7 @@ class SearchBaselineRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SearchBaselineRequest.
+        r"""Gets the x_language of this SearchBaselineRequest.
 
         语言，参考值：zh-CN、en-US
 
@@ -116,7 +116,7 @@ class SearchBaselineRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SearchBaselineRequest.
+        r"""Sets the x_language of this SearchBaselineRequest.
 
         语言，参考值：zh-CN、en-US
 
@@ -127,7 +127,7 @@ class SearchBaselineRequest:
 
     @property
     def body(self):
-        """Gets the body of this SearchBaselineRequest.
+        r"""Gets the body of this SearchBaselineRequest.
 
         :return: The body of this SearchBaselineRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.BaselineSearchRequestBody`
@@ -136,7 +136,7 @@ class SearchBaselineRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SearchBaselineRequest.
+        r"""Sets the body of this SearchBaselineRequest.
 
         :param body: The body of this SearchBaselineRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.BaselineSearchRequestBody`

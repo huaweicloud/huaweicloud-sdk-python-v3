@@ -48,7 +48,7 @@ class ShowPipleineStatusResponse(SdkResponse):
     }
 
     def __init__(self, pipeline_id=None, pipeline_name=None, executor=None, build_id=None, start_time=None, end_time=None, parameters=None, states=None, elapsed_time=None, status=None, outcome=None, detail_url=None):
-        """ShowPipleineStatusResponse
+        r"""ShowPipleineStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this ShowPipleineStatusResponse.
+        r"""Gets the pipeline_id of this ShowPipleineStatusResponse.
 
         流水线ID
 
@@ -132,7 +132,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this ShowPipleineStatusResponse.
+        r"""Sets the pipeline_id of this ShowPipleineStatusResponse.
 
         流水线ID
 
@@ -143,7 +143,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @property
     def pipeline_name(self):
-        """Gets the pipeline_name of this ShowPipleineStatusResponse.
+        r"""Gets the pipeline_name of this ShowPipleineStatusResponse.
 
         流水线名称
 
@@ -154,7 +154,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @pipeline_name.setter
     def pipeline_name(self, pipeline_name):
-        """Sets the pipeline_name of this ShowPipleineStatusResponse.
+        r"""Sets the pipeline_name of this ShowPipleineStatusResponse.
 
         流水线名称
 
@@ -165,7 +165,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @property
     def executor(self):
-        """Gets the executor of this ShowPipleineStatusResponse.
+        r"""Gets the executor of this ShowPipleineStatusResponse.
 
         执行人
 
@@ -176,7 +176,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @executor.setter
     def executor(self, executor):
-        """Sets the executor of this ShowPipleineStatusResponse.
+        r"""Sets the executor of this ShowPipleineStatusResponse.
 
         执行人
 
@@ -187,7 +187,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @property
     def build_id(self):
-        """Gets the build_id of this ShowPipleineStatusResponse.
+        r"""Gets the build_id of this ShowPipleineStatusResponse.
 
         流水线执行ID
 
@@ -198,7 +198,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @build_id.setter
     def build_id(self, build_id):
-        """Sets the build_id of this ShowPipleineStatusResponse.
+        r"""Sets the build_id of this ShowPipleineStatusResponse.
 
         流水线执行ID
 
@@ -209,7 +209,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowPipleineStatusResponse.
+        r"""Gets the start_time of this ShowPipleineStatusResponse.
 
         开始执行时间
 
@@ -220,7 +220,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowPipleineStatusResponse.
+        r"""Sets the start_time of this ShowPipleineStatusResponse.
 
         开始执行时间
 
@@ -231,7 +231,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowPipleineStatusResponse.
+        r"""Gets the end_time of this ShowPipleineStatusResponse.
 
         结束执行时间
 
@@ -242,7 +242,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowPipleineStatusResponse.
+        r"""Sets the end_time of this ShowPipleineStatusResponse.
 
         结束执行时间
 
@@ -253,7 +253,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @property
     def parameters(self):
-        """Gets the parameters of this ShowPipleineStatusResponse.
+        r"""Gets the parameters of this ShowPipleineStatusResponse.
 
         流水线参数
 
@@ -264,7 +264,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ShowPipleineStatusResponse.
+        r"""Sets the parameters of this ShowPipleineStatusResponse.
 
         流水线参数
 
@@ -275,7 +275,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @property
     def states(self):
-        """Gets the states of this ShowPipleineStatusResponse.
+        r"""Gets the states of this ShowPipleineStatusResponse.
 
         流水线执行情况
 
@@ -286,7 +286,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @states.setter
     def states(self, states):
-        """Sets the states of this ShowPipleineStatusResponse.
+        r"""Sets the states of this ShowPipleineStatusResponse.
 
         流水线执行情况
 
@@ -297,7 +297,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @property
     def elapsed_time(self):
-        """Gets the elapsed_time of this ShowPipleineStatusResponse.
+        r"""Gets the elapsed_time of this ShowPipleineStatusResponse.
 
         执行耗时
 
@@ -308,7 +308,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @elapsed_time.setter
     def elapsed_time(self, elapsed_time):
-        """Sets the elapsed_time of this ShowPipleineStatusResponse.
+        r"""Sets the elapsed_time of this ShowPipleineStatusResponse.
 
         执行耗时
 
@@ -319,7 +319,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowPipleineStatusResponse.
+        r"""Gets the status of this ShowPipleineStatusResponse.
 
         流水线运行状态
 
@@ -330,7 +330,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowPipleineStatusResponse.
+        r"""Sets the status of this ShowPipleineStatusResponse.
 
         流水线运行状态
 
@@ -341,7 +341,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @property
     def outcome(self):
-        """Gets the outcome of this ShowPipleineStatusResponse.
+        r"""Gets the outcome of this ShowPipleineStatusResponse.
 
         流水线执行结果
 
@@ -352,7 +352,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @outcome.setter
     def outcome(self, outcome):
-        """Sets the outcome of this ShowPipleineStatusResponse.
+        r"""Sets the outcome of this ShowPipleineStatusResponse.
 
         流水线执行结果
 
@@ -363,7 +363,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @property
     def detail_url(self):
-        """Gets the detail_url of this ShowPipleineStatusResponse.
+        r"""Gets the detail_url of this ShowPipleineStatusResponse.
 
         流水线详情页地址
 
@@ -374,7 +374,7 @@ class ShowPipleineStatusResponse(SdkResponse):
 
     @detail_url.setter
     def detail_url(self, detail_url):
-        """Sets the detail_url of this ShowPipleineStatusResponse.
+        r"""Sets the detail_url of this ShowPipleineStatusResponse.
 
         流水线详情页地址
 

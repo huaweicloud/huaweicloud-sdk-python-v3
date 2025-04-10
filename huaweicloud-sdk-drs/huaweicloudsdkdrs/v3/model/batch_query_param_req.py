@@ -27,7 +27,7 @@ class BatchQueryParamReq:
     }
 
     def __init__(self, jobs=None, refresh=None):
-        """BatchQueryParamReq
+        r"""BatchQueryParamReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchQueryParamReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchQueryParamReq.
+        r"""Gets the jobs of this BatchQueryParamReq.
 
         查询任务ID集合。
 
@@ -59,7 +59,7 @@ class BatchQueryParamReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchQueryParamReq.
+        r"""Sets the jobs of this BatchQueryParamReq.
 
         查询任务ID集合。
 
@@ -70,7 +70,7 @@ class BatchQueryParamReq:
 
     @property
     def refresh(self):
-        """Gets the refresh of this BatchQueryParamReq.
+        r"""Gets the refresh of this BatchQueryParamReq.
 
         是否重新获取数据库参数，1代表是，0代表否（从缓存中获取），第一次调用时请设置为1。
 
@@ -81,7 +81,7 @@ class BatchQueryParamReq:
 
     @refresh.setter
     def refresh(self, refresh):
-        """Sets the refresh of this BatchQueryParamReq.
+        r"""Sets the refresh of this BatchQueryParamReq.
 
         是否重新获取数据库参数，1代表是，0代表否（从缓存中获取），第一次调用时请设置为1。
 

@@ -28,7 +28,7 @@ class ListSecurityUnreasonablePermissionsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, unreasonable_permissions=None):
-        """ListSecurityUnreasonablePermissionsResponse
+        r"""ListSecurityUnreasonablePermissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecurityUnreasonablePermissionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSecurityUnreasonablePermissionsResponse.
+        r"""Gets the total of this ListSecurityUnreasonablePermissionsResponse.
 
         不合理权限配置总条数。
 
@@ -62,7 +62,7 @@ class ListSecurityUnreasonablePermissionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSecurityUnreasonablePermissionsResponse.
+        r"""Sets the total of this ListSecurityUnreasonablePermissionsResponse.
 
         不合理权限配置总条数。
 
@@ -73,7 +73,7 @@ class ListSecurityUnreasonablePermissionsResponse(SdkResponse):
 
     @property
     def unreasonable_permissions(self):
-        """Gets the unreasonable_permissions of this ListSecurityUnreasonablePermissionsResponse.
+        r"""Gets the unreasonable_permissions of this ListSecurityUnreasonablePermissionsResponse.
 
         不合理权限配置列表。
 
@@ -84,7 +84,7 @@ class ListSecurityUnreasonablePermissionsResponse(SdkResponse):
 
     @unreasonable_permissions.setter
     def unreasonable_permissions(self, unreasonable_permissions):
-        """Sets the unreasonable_permissions of this ListSecurityUnreasonablePermissionsResponse.
+        r"""Sets the unreasonable_permissions of this ListSecurityUnreasonablePermissionsResponse.
 
         不合理权限配置列表。
 

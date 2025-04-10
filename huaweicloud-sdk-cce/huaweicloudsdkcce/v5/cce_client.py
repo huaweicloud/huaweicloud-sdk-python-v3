@@ -39,7 +39,7 @@ class CceClient(Client):
         return client_builder
 
     def create_image_cache(self, request):
-        """创建镜像缓存
+        r"""创建镜像缓存
 
         创建镜像缓存。创建过程会在指定集群中启动临时Pod进行镜像缓存构建，创建镜像缓存后，可在负载创建时通过使用镜像缓存功能大幅减少下载容器镜像的耗时，实现容器的快速启动。单租户创建镜像缓存数量上限为50。
         
@@ -104,7 +104,7 @@ class CceClient(Client):
         return http_info
 
     def delete_image_cache(self, request):
-        """删除镜像缓存
+        r"""删除镜像缓存
 
         删除镜像缓存
         
@@ -169,7 +169,7 @@ class CceClient(Client):
         return http_info
 
     def list_image_caches(self, request):
-        """查询镜像缓存列表
+        r"""查询镜像缓存列表
 
         查询镜像缓存列表
         
@@ -234,7 +234,7 @@ class CceClient(Client):
         return http_info
 
     def show_image_cache(self, request):
-        """查询镜像缓存详情
+        r"""查询镜像缓存详情
 
         查询镜像缓存详情
         

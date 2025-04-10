@@ -27,7 +27,7 @@ class CreateVpnUserGroupRequestBodyContent:
     }
 
     def __init__(self, name=None, description=None):
-        """CreateVpnUserGroupRequestBodyContent
+        r"""CreateVpnUserGroupRequestBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateVpnUserGroupRequestBodyContent:
 
     @property
     def name(self):
-        """Gets the name of this CreateVpnUserGroupRequestBodyContent.
+        r"""Gets the name of this CreateVpnUserGroupRequestBodyContent.
 
         用户组名
 
@@ -60,7 +60,7 @@ class CreateVpnUserGroupRequestBodyContent:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVpnUserGroupRequestBodyContent.
+        r"""Sets the name of this CreateVpnUserGroupRequestBodyContent.
 
         用户组名
 
@@ -71,7 +71,7 @@ class CreateVpnUserGroupRequestBodyContent:
 
     @property
     def description(self):
-        """Gets the description of this CreateVpnUserGroupRequestBodyContent.
+        r"""Gets the description of this CreateVpnUserGroupRequestBodyContent.
 
         用户组描述
 
@@ -82,7 +82,7 @@ class CreateVpnUserGroupRequestBodyContent:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateVpnUserGroupRequestBodyContent.
+        r"""Sets the description of this CreateVpnUserGroupRequestBodyContent.
 
         用户组描述
 

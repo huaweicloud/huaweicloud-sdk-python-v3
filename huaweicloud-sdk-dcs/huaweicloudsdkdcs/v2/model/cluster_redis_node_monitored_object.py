@@ -31,7 +31,7 @@ class ClusterRedisNodeMonitoredObject:
     }
 
     def __init__(self, dcs_instance_id=None, name=None, dcs_cluster_redis_node=None, status=None):
-        """ClusterRedisNodeMonitoredObject
+        r"""ClusterRedisNodeMonitoredObject
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ClusterRedisNodeMonitoredObject:
 
     @property
     def dcs_instance_id(self):
-        """Gets the dcs_instance_id of this ClusterRedisNodeMonitoredObject.
+        r"""Gets the dcs_instance_id of this ClusterRedisNodeMonitoredObject.
 
         测量对象ID，即节点的ID。
 
@@ -75,7 +75,7 @@ class ClusterRedisNodeMonitoredObject:
 
     @dcs_instance_id.setter
     def dcs_instance_id(self, dcs_instance_id):
-        """Sets the dcs_instance_id of this ClusterRedisNodeMonitoredObject.
+        r"""Sets the dcs_instance_id of this ClusterRedisNodeMonitoredObject.
 
         测量对象ID，即节点的ID。
 
@@ -86,7 +86,7 @@ class ClusterRedisNodeMonitoredObject:
 
     @property
     def name(self):
-        """Gets the name of this ClusterRedisNodeMonitoredObject.
+        r"""Gets the name of this ClusterRedisNodeMonitoredObject.
 
         测量对象名称，即节点IP。
 
@@ -97,7 +97,7 @@ class ClusterRedisNodeMonitoredObject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClusterRedisNodeMonitoredObject.
+        r"""Sets the name of this ClusterRedisNodeMonitoredObject.
 
         测量对象名称，即节点IP。
 
@@ -108,7 +108,7 @@ class ClusterRedisNodeMonitoredObject:
 
     @property
     def dcs_cluster_redis_node(self):
-        """Gets the dcs_cluster_redis_node of this ClusterRedisNodeMonitoredObject.
+        r"""Gets the dcs_cluster_redis_node of this ClusterRedisNodeMonitoredObject.
 
         维度dcs_cluster_redis_node的测量对象的ID。
 
@@ -119,7 +119,7 @@ class ClusterRedisNodeMonitoredObject:
 
     @dcs_cluster_redis_node.setter
     def dcs_cluster_redis_node(self, dcs_cluster_redis_node):
-        """Sets the dcs_cluster_redis_node of this ClusterRedisNodeMonitoredObject.
+        r"""Sets the dcs_cluster_redis_node of this ClusterRedisNodeMonitoredObject.
 
         维度dcs_cluster_redis_node的测量对象的ID。
 
@@ -130,7 +130,7 @@ class ClusterRedisNodeMonitoredObject:
 
     @property
     def status(self):
-        """Gets the status of this ClusterRedisNodeMonitoredObject.
+        r"""Gets the status of this ClusterRedisNodeMonitoredObject.
 
         测量对象状态，即节点状态。
 
@@ -141,7 +141,7 @@ class ClusterRedisNodeMonitoredObject:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClusterRedisNodeMonitoredObject.
+        r"""Sets the status of this ClusterRedisNodeMonitoredObject.
 
         测量对象状态，即节点状态。
 

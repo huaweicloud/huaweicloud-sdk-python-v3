@@ -29,7 +29,7 @@ class AssociatePolicyGroupRequestInfo:
     }
 
     def __init__(self, target_policy_group_id=None, operate_all=None, host_id_list=None):
-        """AssociatePolicyGroupRequestInfo
+        r"""AssociatePolicyGroupRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AssociatePolicyGroupRequestInfo:
 
     @property
     def target_policy_group_id(self):
-        """Gets the target_policy_group_id of this AssociatePolicyGroupRequestInfo.
+        r"""Gets the target_policy_group_id of this AssociatePolicyGroupRequestInfo.
 
         部署的目标策略组ID
 
@@ -67,7 +67,7 @@ class AssociatePolicyGroupRequestInfo:
 
     @target_policy_group_id.setter
     def target_policy_group_id(self, target_policy_group_id):
-        """Sets the target_policy_group_id of this AssociatePolicyGroupRequestInfo.
+        r"""Sets the target_policy_group_id of this AssociatePolicyGroupRequestInfo.
 
         部署的目标策略组ID
 
@@ -78,7 +78,7 @@ class AssociatePolicyGroupRequestInfo:
 
     @property
     def operate_all(self):
-        """Gets the operate_all of this AssociatePolicyGroupRequestInfo.
+        r"""Gets the operate_all of this AssociatePolicyGroupRequestInfo.
 
         是否要对全量主机部署策略，如果为true的话，不需填写host_id_list，如果为false的话，需要填写host_id_list
 
@@ -89,7 +89,7 @@ class AssociatePolicyGroupRequestInfo:
 
     @operate_all.setter
     def operate_all(self, operate_all):
-        """Sets the operate_all of this AssociatePolicyGroupRequestInfo.
+        r"""Sets the operate_all of this AssociatePolicyGroupRequestInfo.
 
         是否要对全量主机部署策略，如果为true的话，不需填写host_id_list，如果为false的话，需要填写host_id_list
 
@@ -100,7 +100,7 @@ class AssociatePolicyGroupRequestInfo:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this AssociatePolicyGroupRequestInfo.
+        r"""Gets the host_id_list of this AssociatePolicyGroupRequestInfo.
 
         需要部署策略组的主机ID列表
 
@@ -111,7 +111,7 @@ class AssociatePolicyGroupRequestInfo:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this AssociatePolicyGroupRequestInfo.
+        r"""Sets the host_id_list of this AssociatePolicyGroupRequestInfo.
 
         需要部署策略组的主机ID列表
 

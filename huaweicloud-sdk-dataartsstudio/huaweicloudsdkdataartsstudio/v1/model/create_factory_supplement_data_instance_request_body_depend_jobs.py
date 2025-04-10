@@ -27,7 +27,7 @@ class CreateFactorySupplementDataInstanceRequestBodyDependJobs:
     }
 
     def __init__(self, job_name=None, workspace_id=None):
-        """CreateFactorySupplementDataInstanceRequestBodyDependJobs
+        r"""CreateFactorySupplementDataInstanceRequestBodyDependJobs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateFactorySupplementDataInstanceRequestBodyDependJobs:
 
     @property
     def job_name(self):
-        """Gets the job_name of this CreateFactorySupplementDataInstanceRequestBodyDependJobs.
+        r"""Gets the job_name of this CreateFactorySupplementDataInstanceRequestBodyDependJobs.
 
         依赖的作业名称
 
@@ -61,7 +61,7 @@ class CreateFactorySupplementDataInstanceRequestBodyDependJobs:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this CreateFactorySupplementDataInstanceRequestBodyDependJobs.
+        r"""Sets the job_name of this CreateFactorySupplementDataInstanceRequestBodyDependJobs.
 
         依赖的作业名称
 
@@ -72,7 +72,7 @@ class CreateFactorySupplementDataInstanceRequestBodyDependJobs:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateFactorySupplementDataInstanceRequestBodyDependJobs.
+        r"""Gets the workspace_id of this CreateFactorySupplementDataInstanceRequestBodyDependJobs.
 
         依赖的作业名称的空间ID
 
@@ -83,7 +83,7 @@ class CreateFactorySupplementDataInstanceRequestBodyDependJobs:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateFactorySupplementDataInstanceRequestBodyDependJobs.
+        r"""Sets the workspace_id of this CreateFactorySupplementDataInstanceRequestBodyDependJobs.
 
         依赖的作业名称的空间ID
 

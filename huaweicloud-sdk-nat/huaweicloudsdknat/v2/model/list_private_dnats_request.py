@@ -47,7 +47,7 @@ class ListPrivateDnatsRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, enterprise_project_id=None, description=None, gateway_id=None, transit_ip_id=None, external_ip_address=None, network_interface_id=None, type=None, private_ip_address=None):
-        """ListPrivateDnatsRequest
+        r"""ListPrivateDnatsRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListPrivateDnatsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPrivateDnatsRequest.
+        r"""Gets the limit of this ListPrivateDnatsRequest.
 
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
@@ -131,7 +131,7 @@ class ListPrivateDnatsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPrivateDnatsRequest.
+        r"""Sets the limit of this ListPrivateDnatsRequest.
 
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
@@ -142,7 +142,7 @@ class ListPrivateDnatsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPrivateDnatsRequest.
+        r"""Gets the marker of this ListPrivateDnatsRequest.
 
         功能说明：分页查询起始的资源ID，为空时查询第一页。 值从上一次查询的PageInfo中的next_marker或者previous_marker中获取。
 
@@ -153,7 +153,7 @@ class ListPrivateDnatsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPrivateDnatsRequest.
+        r"""Sets the marker of this ListPrivateDnatsRequest.
 
         功能说明：分页查询起始的资源ID，为空时查询第一页。 值从上一次查询的PageInfo中的next_marker或者previous_marker中获取。
 
@@ -164,7 +164,7 @@ class ListPrivateDnatsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListPrivateDnatsRequest.
+        r"""Gets the page_reverse of this ListPrivateDnatsRequest.
 
         是否查询前一页。
 
@@ -175,7 +175,7 @@ class ListPrivateDnatsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListPrivateDnatsRequest.
+        r"""Sets the page_reverse of this ListPrivateDnatsRequest.
 
         是否查询前一页。
 
@@ -186,7 +186,7 @@ class ListPrivateDnatsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPrivateDnatsRequest.
+        r"""Gets the id of this ListPrivateDnatsRequest.
 
         DNAT规则的ID。
 
@@ -197,7 +197,7 @@ class ListPrivateDnatsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPrivateDnatsRequest.
+        r"""Sets the id of this ListPrivateDnatsRequest.
 
         DNAT规则的ID。
 
@@ -208,7 +208,7 @@ class ListPrivateDnatsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPrivateDnatsRequest.
+        r"""Gets the enterprise_project_id of this ListPrivateDnatsRequest.
 
         企业项目ID。创建DNAT规则时，关联的企业项目ID。
 
@@ -219,7 +219,7 @@ class ListPrivateDnatsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPrivateDnatsRequest.
+        r"""Sets the enterprise_project_id of this ListPrivateDnatsRequest.
 
         企业项目ID。创建DNAT规则时，关联的企业项目ID。
 
@@ -230,7 +230,7 @@ class ListPrivateDnatsRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListPrivateDnatsRequest.
+        r"""Gets the description of this ListPrivateDnatsRequest.
 
         DNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -241,7 +241,7 @@ class ListPrivateDnatsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListPrivateDnatsRequest.
+        r"""Sets the description of this ListPrivateDnatsRequest.
 
         DNAT规则的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -252,7 +252,7 @@ class ListPrivateDnatsRequest:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this ListPrivateDnatsRequest.
+        r"""Gets the gateway_id of this ListPrivateDnatsRequest.
 
         私网NAT网关实例的ID。
 
@@ -263,7 +263,7 @@ class ListPrivateDnatsRequest:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this ListPrivateDnatsRequest.
+        r"""Sets the gateway_id of this ListPrivateDnatsRequest.
 
         私网NAT网关实例的ID。
 
@@ -274,7 +274,7 @@ class ListPrivateDnatsRequest:
 
     @property
     def transit_ip_id(self):
-        """Gets the transit_ip_id of this ListPrivateDnatsRequest.
+        r"""Gets the transit_ip_id of this ListPrivateDnatsRequest.
 
         中转IP的ID。
 
@@ -285,7 +285,7 @@ class ListPrivateDnatsRequest:
 
     @transit_ip_id.setter
     def transit_ip_id(self, transit_ip_id):
-        """Sets the transit_ip_id of this ListPrivateDnatsRequest.
+        r"""Sets the transit_ip_id of this ListPrivateDnatsRequest.
 
         中转IP的ID。
 
@@ -296,7 +296,7 @@ class ListPrivateDnatsRequest:
 
     @property
     def external_ip_address(self):
-        """Gets the external_ip_address of this ListPrivateDnatsRequest.
+        r"""Gets the external_ip_address of this ListPrivateDnatsRequest.
 
         中转IP的地址。
 
@@ -307,7 +307,7 @@ class ListPrivateDnatsRequest:
 
     @external_ip_address.setter
     def external_ip_address(self, external_ip_address):
-        """Sets the external_ip_address of this ListPrivateDnatsRequest.
+        r"""Sets the external_ip_address of this ListPrivateDnatsRequest.
 
         中转IP的地址。
 
@@ -318,7 +318,7 @@ class ListPrivateDnatsRequest:
 
     @property
     def network_interface_id(self):
-        """Gets the network_interface_id of this ListPrivateDnatsRequest.
+        r"""Gets the network_interface_id of this ListPrivateDnatsRequest.
 
         网络接口ID，支持计算、ELB、VIP等实例的网络接口。
 
@@ -329,7 +329,7 @@ class ListPrivateDnatsRequest:
 
     @network_interface_id.setter
     def network_interface_id(self, network_interface_id):
-        """Sets the network_interface_id of this ListPrivateDnatsRequest.
+        r"""Sets the network_interface_id of this ListPrivateDnatsRequest.
 
         网络接口ID，支持计算、ELB、VIP等实例的网络接口。
 
@@ -340,7 +340,7 @@ class ListPrivateDnatsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListPrivateDnatsRequest.
+        r"""Gets the type of this ListPrivateDnatsRequest.
 
         DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELB的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
 
@@ -351,7 +351,7 @@ class ListPrivateDnatsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListPrivateDnatsRequest.
+        r"""Sets the type of this ListPrivateDnatsRequest.
 
         DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELB的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
 
@@ -362,7 +362,7 @@ class ListPrivateDnatsRequest:
 
     @property
     def private_ip_address(self):
-        """Gets the private_ip_address of this ListPrivateDnatsRequest.
+        r"""Gets the private_ip_address of this ListPrivateDnatsRequest.
 
         后端实例的IP私网地址。
 
@@ -373,7 +373,7 @@ class ListPrivateDnatsRequest:
 
     @private_ip_address.setter
     def private_ip_address(self, private_ip_address):
-        """Sets the private_ip_address of this ListPrivateDnatsRequest.
+        r"""Sets the private_ip_address of this ListPrivateDnatsRequest.
 
         后端实例的IP私网地址。
 

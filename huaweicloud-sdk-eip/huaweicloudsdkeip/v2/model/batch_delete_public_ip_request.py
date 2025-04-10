@@ -25,7 +25,7 @@ class BatchDeletePublicIpRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeletePublicIpRequest
+        r"""BatchDeletePublicIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeletePublicIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeletePublicIpRequest.
+        r"""Gets the body of this BatchDeletePublicIpRequest.
 
         :return: The body of this BatchDeletePublicIpRequest.
         :rtype: :class:`huaweicloudsdkeip.v2.BatchDeletePublicIpRequestBody`
@@ -52,7 +52,7 @@ class BatchDeletePublicIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeletePublicIpRequest.
+        r"""Sets the body of this BatchDeletePublicIpRequest.
 
         :param body: The body of this BatchDeletePublicIpRequest.
         :type body: :class:`huaweicloudsdkeip.v2.BatchDeletePublicIpRequestBody`

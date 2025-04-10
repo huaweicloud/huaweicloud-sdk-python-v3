@@ -31,7 +31,7 @@ class TopicCategory:
     }
 
     def __init__(self, topic_id=None, topic_name=None, category_id=None, category_name=None):
-        """TopicCategory
+        r"""TopicCategory
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TopicCategory:
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this TopicCategory.
+        r"""Gets the topic_id of this TopicCategory.
 
         topic的id。
 
@@ -75,7 +75,7 @@ class TopicCategory:
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this TopicCategory.
+        r"""Sets the topic_id of this TopicCategory.
 
         topic的id。
 
@@ -86,7 +86,7 @@ class TopicCategory:
 
     @property
     def topic_name(self):
-        """Gets the topic_name of this TopicCategory.
+        r"""Gets the topic_name of this TopicCategory.
 
         topic的名称。
 
@@ -97,7 +97,7 @@ class TopicCategory:
 
     @topic_name.setter
     def topic_name(self, topic_name):
-        """Sets the topic_name of this TopicCategory.
+        r"""Sets the topic_name of this TopicCategory.
 
         topic的名称。
 
@@ -108,7 +108,7 @@ class TopicCategory:
 
     @property
     def category_id(self):
-        """Gets the category_id of this TopicCategory.
+        r"""Gets the category_id of this TopicCategory.
 
         topic对应的类别的id。
 
@@ -119,7 +119,7 @@ class TopicCategory:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this TopicCategory.
+        r"""Sets the category_id of this TopicCategory.
 
         topic对应的类别的id。
 
@@ -130,7 +130,7 @@ class TopicCategory:
 
     @property
     def category_name(self):
-        """Gets the category_name of this TopicCategory.
+        r"""Gets the category_name of this TopicCategory.
 
         topic对应的类别的名称。
 
@@ -141,7 +141,7 @@ class TopicCategory:
 
     @category_name.setter
     def category_name(self, category_name):
-        """Sets the category_name of this TopicCategory.
+        r"""Sets the category_name of this TopicCategory.
 
         topic对应的类别的名称。
 

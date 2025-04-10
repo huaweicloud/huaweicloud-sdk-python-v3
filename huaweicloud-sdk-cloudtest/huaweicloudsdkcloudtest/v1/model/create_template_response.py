@@ -30,7 +30,7 @@ class CreateTemplateResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """CreateTemplateResponse
+        r"""CreateTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateTemplateResponse.
+        r"""Gets the code of this CreateTemplateResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateTemplateResponse.
+        r"""Sets the code of this CreateTemplateResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateTemplateResponse.
+        r"""Gets the data of this CreateTemplateResponse.
 
         :return: The data of this CreateTemplateResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.Template`
@@ -89,7 +89,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateTemplateResponse.
+        r"""Sets the data of this CreateTemplateResponse.
 
         :param data: The data of this CreateTemplateResponse.
         :type data: :class:`huaweicloudsdkcloudtest.v1.Template`
@@ -98,7 +98,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateTemplateResponse.
+        r"""Gets the message of this CreateTemplateResponse.
 
         错误信息
 
@@ -109,7 +109,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateTemplateResponse.
+        r"""Sets the message of this CreateTemplateResponse.
 
         错误信息
 

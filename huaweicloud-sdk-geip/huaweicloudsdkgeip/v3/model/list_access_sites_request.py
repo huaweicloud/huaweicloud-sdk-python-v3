@@ -45,7 +45,7 @@ class ListAccessSitesRequest:
     }
 
     def __init__(self, limit=None, offset=None, marker=None, page_reverse=None, fields=None, sort_key=None, sort_dir=None, id=None, code=None, proxy_region=None, iec_az_code=None):
-        """ListAccessSitesRequest
+        r"""ListAccessSitesRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListAccessSitesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAccessSitesRequest.
+        r"""Gets the limit of this ListAccessSitesRequest.
 
         每页条数
 
@@ -124,7 +124,7 @@ class ListAccessSitesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAccessSitesRequest.
+        r"""Sets the limit of this ListAccessSitesRequest.
 
         每页条数
 
@@ -135,7 +135,7 @@ class ListAccessSitesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAccessSitesRequest.
+        r"""Gets the offset of this ListAccessSitesRequest.
 
         分页起始点
 
@@ -146,7 +146,7 @@ class ListAccessSitesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAccessSitesRequest.
+        r"""Sets the offset of this ListAccessSitesRequest.
 
         分页起始点
 
@@ -157,7 +157,7 @@ class ListAccessSitesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAccessSitesRequest.
+        r"""Gets the marker of this ListAccessSitesRequest.
 
         分页起始点
 
@@ -168,7 +168,7 @@ class ListAccessSitesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAccessSitesRequest.
+        r"""Sets the marker of this ListAccessSitesRequest.
 
         分页起始点
 
@@ -179,7 +179,7 @@ class ListAccessSitesRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListAccessSitesRequest.
+        r"""Gets the page_reverse of this ListAccessSitesRequest.
 
         翻页方向
 
@@ -190,7 +190,7 @@ class ListAccessSitesRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListAccessSitesRequest.
+        r"""Sets the page_reverse of this ListAccessSitesRequest.
 
         翻页方向
 
@@ -201,7 +201,7 @@ class ListAccessSitesRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListAccessSitesRequest.
+        r"""Gets the fields of this ListAccessSitesRequest.
 
         :return: The fields of this ListAccessSitesRequest.
         :rtype: list[str]
@@ -210,7 +210,7 @@ class ListAccessSitesRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListAccessSitesRequest.
+        r"""Sets the fields of this ListAccessSitesRequest.
 
         :param fields: The fields of this ListAccessSitesRequest.
         :type fields: list[str]
@@ -219,7 +219,7 @@ class ListAccessSitesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListAccessSitesRequest.
+        r"""Gets the sort_key of this ListAccessSitesRequest.
 
         按照sort_key指定的字段排序
 
@@ -230,7 +230,7 @@ class ListAccessSitesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListAccessSitesRequest.
+        r"""Sets the sort_key of this ListAccessSitesRequest.
 
         按照sort_key指定的字段排序
 
@@ -241,7 +241,7 @@ class ListAccessSitesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListAccessSitesRequest.
+        r"""Gets the sort_dir of this ListAccessSitesRequest.
 
         排序的方向，倒序或者正序
 
@@ -252,7 +252,7 @@ class ListAccessSitesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListAccessSitesRequest.
+        r"""Sets the sort_dir of this ListAccessSitesRequest.
 
         排序的方向，倒序或者正序
 
@@ -263,7 +263,7 @@ class ListAccessSitesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListAccessSitesRequest.
+        r"""Gets the id of this ListAccessSitesRequest.
 
         :return: The id of this ListAccessSitesRequest.
         :rtype: list[str]
@@ -272,7 +272,7 @@ class ListAccessSitesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListAccessSitesRequest.
+        r"""Sets the id of this ListAccessSitesRequest.
 
         :param id: The id of this ListAccessSitesRequest.
         :type id: list[str]
@@ -281,7 +281,7 @@ class ListAccessSitesRequest:
 
     @property
     def code(self):
-        """Gets the code of this ListAccessSitesRequest.
+        r"""Gets the code of this ListAccessSitesRequest.
 
         :return: The code of this ListAccessSitesRequest.
         :rtype: list[str]
@@ -290,7 +290,7 @@ class ListAccessSitesRequest:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListAccessSitesRequest.
+        r"""Sets the code of this ListAccessSitesRequest.
 
         :param code: The code of this ListAccessSitesRequest.
         :type code: list[str]
@@ -299,7 +299,7 @@ class ListAccessSitesRequest:
 
     @property
     def proxy_region(self):
-        """Gets the proxy_region of this ListAccessSitesRequest.
+        r"""Gets the proxy_region of this ListAccessSitesRequest.
 
         :return: The proxy_region of this ListAccessSitesRequest.
         :rtype: list[str]
@@ -308,7 +308,7 @@ class ListAccessSitesRequest:
 
     @proxy_region.setter
     def proxy_region(self, proxy_region):
-        """Sets the proxy_region of this ListAccessSitesRequest.
+        r"""Sets the proxy_region of this ListAccessSitesRequest.
 
         :param proxy_region: The proxy_region of this ListAccessSitesRequest.
         :type proxy_region: list[str]
@@ -317,7 +317,7 @@ class ListAccessSitesRequest:
 
     @property
     def iec_az_code(self):
-        """Gets the iec_az_code of this ListAccessSitesRequest.
+        r"""Gets the iec_az_code of this ListAccessSitesRequest.
 
         :return: The iec_az_code of this ListAccessSitesRequest.
         :rtype: list[str]
@@ -326,7 +326,7 @@ class ListAccessSitesRequest:
 
     @iec_az_code.setter
     def iec_az_code(self, iec_az_code):
-        """Sets the iec_az_code of this ListAccessSitesRequest.
+        r"""Sets the iec_az_code of this ListAccessSitesRequest.
 
         :param iec_az_code: The iec_az_code of this ListAccessSitesRequest.
         :type iec_az_code: list[str]

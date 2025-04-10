@@ -29,7 +29,7 @@ class ListEnginesRequest:
     }
 
     def __init__(self, offset=None, limit=None, type=None):
-        """ListEnginesRequest
+        r"""ListEnginesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListEnginesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEnginesRequest.
+        r"""Gets the offset of this ListEnginesRequest.
 
         偏移量。
 
@@ -68,7 +68,7 @@ class ListEnginesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEnginesRequest.
+        r"""Sets the offset of this ListEnginesRequest.
 
         偏移量。
 
@@ -79,7 +79,7 @@ class ListEnginesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEnginesRequest.
+        r"""Gets the limit of this ListEnginesRequest.
 
         每页显示的条目数量。
 
@@ -90,7 +90,7 @@ class ListEnginesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEnginesRequest.
+        r"""Sets the limit of this ListEnginesRequest.
 
         每页显示的条目数量。
 
@@ -101,7 +101,7 @@ class ListEnginesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListEnginesRequest.
+        r"""Gets the type of this ListEnginesRequest.
 
         查询所有微服务引擎需要将该值设置为ALL，查询ServiceComb引擎专享版需要将该值设置为CSE，查询注册配置中心需要将该值设置为Nacos，查询网关需要将该值设置为MicroGateway。
 
@@ -112,7 +112,7 @@ class ListEnginesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListEnginesRequest.
+        r"""Sets the type of this ListEnginesRequest.
 
         查询所有微服务引擎需要将该值设置为ALL，查询ServiceComb引擎专享版需要将该值设置为CSE，查询注册配置中心需要将该值设置为Nacos，查询网关需要将该值设置为MicroGateway。
 

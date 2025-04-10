@@ -29,7 +29,7 @@ class ListAssociationAlarmsResponseAlarms:
     }
 
     def __init__(self, alarm_id=None, name=None, description=None):
-        """ListAssociationAlarmsResponseAlarms
+        r"""ListAssociationAlarmsResponseAlarms
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListAssociationAlarmsResponseAlarms:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this ListAssociationAlarmsResponseAlarms.
+        r"""Gets the alarm_id of this ListAssociationAlarmsResponseAlarms.
 
         告警规则ID
 
@@ -65,7 +65,7 @@ class ListAssociationAlarmsResponseAlarms:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this ListAssociationAlarmsResponseAlarms.
+        r"""Sets the alarm_id of this ListAssociationAlarmsResponseAlarms.
 
         告警规则ID
 
@@ -76,7 +76,7 @@ class ListAssociationAlarmsResponseAlarms:
 
     @property
     def name(self):
-        """Gets the name of this ListAssociationAlarmsResponseAlarms.
+        r"""Gets the name of this ListAssociationAlarmsResponseAlarms.
 
         告警规则名称
 
@@ -87,7 +87,7 @@ class ListAssociationAlarmsResponseAlarms:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAssociationAlarmsResponseAlarms.
+        r"""Sets the name of this ListAssociationAlarmsResponseAlarms.
 
         告警规则名称
 
@@ -98,7 +98,7 @@ class ListAssociationAlarmsResponseAlarms:
 
     @property
     def description(self):
-        """Gets the description of this ListAssociationAlarmsResponseAlarms.
+        r"""Gets the description of this ListAssociationAlarmsResponseAlarms.
 
         告警规则描述
 
@@ -109,7 +109,7 @@ class ListAssociationAlarmsResponseAlarms:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListAssociationAlarmsResponseAlarms.
+        r"""Sets the description of this ListAssociationAlarmsResponseAlarms.
 
         告警规则描述
 

@@ -25,7 +25,7 @@ class DeleteStarRequest:
     }
 
     def __init__(self, asset_id=None):
-        """DeleteStarRequest
+        r"""DeleteStarRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteStarRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this DeleteStarRequest.
+        r"""Gets the asset_id of this DeleteStarRequest.
 
         资产id
 
@@ -53,7 +53,7 @@ class DeleteStarRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this DeleteStarRequest.
+        r"""Sets the asset_id of this DeleteStarRequest.
 
         资产id
 

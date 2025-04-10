@@ -25,7 +25,7 @@ class ShowSecurityAdminRequest:
     }
 
     def __init__(self, workspace=None):
-        """ShowSecurityAdminRequest
+        r"""ShowSecurityAdminRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSecurityAdminRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowSecurityAdminRequest.
+        r"""Gets the workspace of this ShowSecurityAdminRequest.
 
         DataArts Studio工作空间ID
 
@@ -53,7 +53,7 @@ class ShowSecurityAdminRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowSecurityAdminRequest.
+        r"""Sets the workspace of this ShowSecurityAdminRequest.
 
         DataArts Studio工作空间ID
 

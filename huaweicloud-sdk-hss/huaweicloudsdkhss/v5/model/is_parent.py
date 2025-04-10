@@ -23,7 +23,7 @@ class IsParent:
     }
 
     def __init__(self):
-        """IsParent
+        r"""IsParent
 
         The model defined in huaweicloud sdk
 

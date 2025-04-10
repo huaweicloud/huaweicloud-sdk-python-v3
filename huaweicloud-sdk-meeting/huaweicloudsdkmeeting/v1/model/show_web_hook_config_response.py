@@ -36,7 +36,7 @@ class ShowWebHookConfigResponse(SdkResponse):
     }
 
     def __init__(self, return_code=None, return_desc=None, id=None, subscriber_id=None, url=None, status=None):
-        """ShowWebHookConfigResponse
+        r"""ShowWebHookConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ShowWebHookConfigResponse(SdkResponse):
 
     @property
     def return_code(self):
-        """Gets the return_code of this ShowWebHookConfigResponse.
+        r"""Gets the return_code of this ShowWebHookConfigResponse.
 
         结果码。
 
@@ -89,7 +89,7 @@ class ShowWebHookConfigResponse(SdkResponse):
 
     @return_code.setter
     def return_code(self, return_code):
-        """Sets the return_code of this ShowWebHookConfigResponse.
+        r"""Sets the return_code of this ShowWebHookConfigResponse.
 
         结果码。
 
@@ -100,7 +100,7 @@ class ShowWebHookConfigResponse(SdkResponse):
 
     @property
     def return_desc(self):
-        """Gets the return_desc of this ShowWebHookConfigResponse.
+        r"""Gets the return_desc of this ShowWebHookConfigResponse.
 
         结果描述。
 
@@ -111,7 +111,7 @@ class ShowWebHookConfigResponse(SdkResponse):
 
     @return_desc.setter
     def return_desc(self, return_desc):
-        """Sets the return_desc of this ShowWebHookConfigResponse.
+        r"""Sets the return_desc of this ShowWebHookConfigResponse.
 
         结果描述。
 
@@ -122,7 +122,7 @@ class ShowWebHookConfigResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowWebHookConfigResponse.
+        r"""Gets the id of this ShowWebHookConfigResponse.
 
         订阅配置记录ID。
 
@@ -133,7 +133,7 @@ class ShowWebHookConfigResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowWebHookConfigResponse.
+        r"""Sets the id of this ShowWebHookConfigResponse.
 
         订阅配置记录ID。
 
@@ -144,7 +144,7 @@ class ShowWebHookConfigResponse(SdkResponse):
 
     @property
     def subscriber_id(self):
-        """Gets the subscriber_id of this ShowWebHookConfigResponse.
+        r"""Gets the subscriber_id of this ShowWebHookConfigResponse.
 
         订阅ID。
 
@@ -155,7 +155,7 @@ class ShowWebHookConfigResponse(SdkResponse):
 
     @subscriber_id.setter
     def subscriber_id(self, subscriber_id):
-        """Sets the subscriber_id of this ShowWebHookConfigResponse.
+        r"""Sets the subscriber_id of this ShowWebHookConfigResponse.
 
         订阅ID。
 
@@ -166,7 +166,7 @@ class ShowWebHookConfigResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this ShowWebHookConfigResponse.
+        r"""Gets the url of this ShowWebHookConfigResponse.
 
         订阅url。
 
@@ -177,7 +177,7 @@ class ShowWebHookConfigResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowWebHookConfigResponse.
+        r"""Sets the url of this ShowWebHookConfigResponse.
 
         订阅url。
 
@@ -188,7 +188,7 @@ class ShowWebHookConfigResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowWebHookConfigResponse.
+        r"""Gets the status of this ShowWebHookConfigResponse.
 
         事件推送状态。 * 0：已启用 * 1：未启动 * 2：已锁定 
 
@@ -199,7 +199,7 @@ class ShowWebHookConfigResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowWebHookConfigResponse.
+        r"""Sets the status of this ShowWebHookConfigResponse.
 
         事件推送状态。 * 0：已启用 * 1：未启动 * 2：已锁定 
 

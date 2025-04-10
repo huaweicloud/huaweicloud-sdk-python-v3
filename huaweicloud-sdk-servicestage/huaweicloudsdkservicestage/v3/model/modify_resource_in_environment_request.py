@@ -27,7 +27,7 @@ class ModifyResourceInEnvironmentRequest:
     }
 
     def __init__(self, environment_id=None, body=None):
-        """ModifyResourceInEnvironmentRequest
+        r"""ModifyResourceInEnvironmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ModifyResourceInEnvironmentRequest:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ModifyResourceInEnvironmentRequest.
+        r"""Gets the environment_id of this ModifyResourceInEnvironmentRequest.
 
         环境id
 
@@ -60,7 +60,7 @@ class ModifyResourceInEnvironmentRequest:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ModifyResourceInEnvironmentRequest.
+        r"""Sets the environment_id of this ModifyResourceInEnvironmentRequest.
 
         环境id
 
@@ -71,7 +71,7 @@ class ModifyResourceInEnvironmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyResourceInEnvironmentRequest.
+        r"""Gets the body of this ModifyResourceInEnvironmentRequest.
 
         :return: The body of this ModifyResourceInEnvironmentRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v3.EnvironmentResourceModify`
@@ -80,7 +80,7 @@ class ModifyResourceInEnvironmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyResourceInEnvironmentRequest.
+        r"""Sets the body of this ModifyResourceInEnvironmentRequest.
 
         :param body: The body of this ModifyResourceInEnvironmentRequest.
         :type body: :class:`huaweicloudsdkservicestage.v3.EnvironmentResourceModify`

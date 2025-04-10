@@ -45,7 +45,7 @@ class TaskBasicAttribute:
     }
 
     def __init__(self, branch_id=None, branch_name=None, create_by=None, iteration_uri=None, project_id=None, protocols=None, service_id=None, stage=None, stage_name=None, task_id=None, version_uri=None):
-        """TaskBasicAttribute
+        r"""TaskBasicAttribute
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class TaskBasicAttribute:
 
     @property
     def branch_id(self):
-        """Gets the branch_id of this TaskBasicAttribute.
+        r"""Gets the branch_id of this TaskBasicAttribute.
 
         分支ID
 
@@ -124,7 +124,7 @@ class TaskBasicAttribute:
 
     @branch_id.setter
     def branch_id(self, branch_id):
-        """Sets the branch_id of this TaskBasicAttribute.
+        r"""Sets the branch_id of this TaskBasicAttribute.
 
         分支ID
 
@@ -135,7 +135,7 @@ class TaskBasicAttribute:
 
     @property
     def branch_name(self):
-        """Gets the branch_name of this TaskBasicAttribute.
+        r"""Gets the branch_name of this TaskBasicAttribute.
 
         分支名
 
@@ -146,7 +146,7 @@ class TaskBasicAttribute:
 
     @branch_name.setter
     def branch_name(self, branch_name):
-        """Sets the branch_name of this TaskBasicAttribute.
+        r"""Sets the branch_name of this TaskBasicAttribute.
 
         分支名
 
@@ -157,7 +157,7 @@ class TaskBasicAttribute:
 
     @property
     def create_by(self):
-        """Gets the create_by of this TaskBasicAttribute.
+        r"""Gets the create_by of this TaskBasicAttribute.
 
         创建人的工号
 
@@ -168,7 +168,7 @@ class TaskBasicAttribute:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this TaskBasicAttribute.
+        r"""Sets the create_by of this TaskBasicAttribute.
 
         创建人的工号
 
@@ -179,7 +179,7 @@ class TaskBasicAttribute:
 
     @property
     def iteration_uri(self):
-        """Gets the iteration_uri of this TaskBasicAttribute.
+        r"""Gets the iteration_uri of this TaskBasicAttribute.
 
         迭代url
 
@@ -190,7 +190,7 @@ class TaskBasicAttribute:
 
     @iteration_uri.setter
     def iteration_uri(self, iteration_uri):
-        """Sets the iteration_uri of this TaskBasicAttribute.
+        r"""Sets the iteration_uri of this TaskBasicAttribute.
 
         迭代url
 
@@ -201,7 +201,7 @@ class TaskBasicAttribute:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TaskBasicAttribute.
+        r"""Gets the project_id of this TaskBasicAttribute.
 
         工程id
 
@@ -212,7 +212,7 @@ class TaskBasicAttribute:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TaskBasicAttribute.
+        r"""Sets the project_id of this TaskBasicAttribute.
 
         工程id
 
@@ -223,7 +223,7 @@ class TaskBasicAttribute:
 
     @property
     def protocols(self):
-        """Gets the protocols of this TaskBasicAttribute.
+        r"""Gets the protocols of this TaskBasicAttribute.
 
         协议
 
@@ -234,7 +234,7 @@ class TaskBasicAttribute:
 
     @protocols.setter
     def protocols(self, protocols):
-        """Sets the protocols of this TaskBasicAttribute.
+        r"""Sets the protocols of this TaskBasicAttribute.
 
         协议
 
@@ -245,7 +245,7 @@ class TaskBasicAttribute:
 
     @property
     def service_id(self):
-        """Gets the service_id of this TaskBasicAttribute.
+        r"""Gets the service_id of this TaskBasicAttribute.
 
         服务id
 
@@ -256,7 +256,7 @@ class TaskBasicAttribute:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this TaskBasicAttribute.
+        r"""Sets the service_id of this TaskBasicAttribute.
 
         服务id
 
@@ -267,7 +267,7 @@ class TaskBasicAttribute:
 
     @property
     def stage(self):
-        """Gets the stage of this TaskBasicAttribute.
+        r"""Gets the stage of this TaskBasicAttribute.
 
         阶段
 
@@ -278,7 +278,7 @@ class TaskBasicAttribute:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this TaskBasicAttribute.
+        r"""Sets the stage of this TaskBasicAttribute.
 
         阶段
 
@@ -289,7 +289,7 @@ class TaskBasicAttribute:
 
     @property
     def stage_name(self):
-        """Gets the stage_name of this TaskBasicAttribute.
+        r"""Gets the stage_name of this TaskBasicAttribute.
 
         阶段名称
 
@@ -300,7 +300,7 @@ class TaskBasicAttribute:
 
     @stage_name.setter
     def stage_name(self, stage_name):
-        """Sets the stage_name of this TaskBasicAttribute.
+        r"""Sets the stage_name of this TaskBasicAttribute.
 
         阶段名称
 
@@ -311,7 +311,7 @@ class TaskBasicAttribute:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskBasicAttribute.
+        r"""Gets the task_id of this TaskBasicAttribute.
 
         任务id
 
@@ -322,7 +322,7 @@ class TaskBasicAttribute:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskBasicAttribute.
+        r"""Sets the task_id of this TaskBasicAttribute.
 
         任务id
 
@@ -333,7 +333,7 @@ class TaskBasicAttribute:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this TaskBasicAttribute.
+        r"""Gets the version_uri of this TaskBasicAttribute.
 
         版本uri
 
@@ -344,7 +344,7 @@ class TaskBasicAttribute:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this TaskBasicAttribute.
+        r"""Sets the version_uri of this TaskBasicAttribute.
 
         版本uri
 

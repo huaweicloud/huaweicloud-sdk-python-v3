@@ -35,7 +35,7 @@ class ComponentItem:
     }
 
     def __init__(self, id=None, name=None, annotations=None, created_at=None, updated_at=None, spec=None):
-        """ComponentItem
+        r"""ComponentItem
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ComponentItem:
 
     @property
     def id(self):
-        """Gets the id of this ComponentItem.
+        r"""Gets the id of this ComponentItem.
 
         组件ID。
 
@@ -89,7 +89,7 @@ class ComponentItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ComponentItem.
+        r"""Sets the id of this ComponentItem.
 
         组件ID。
 
@@ -100,7 +100,7 @@ class ComponentItem:
 
     @property
     def name(self):
-        """Gets the name of this ComponentItem.
+        r"""Gets the name of this ComponentItem.
 
         组件名称。
 
@@ -111,7 +111,7 @@ class ComponentItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentItem.
+        r"""Sets the name of this ComponentItem.
 
         组件名称。
 
@@ -122,7 +122,7 @@ class ComponentItem:
 
     @property
     def annotations(self):
-        """Gets the annotations of this ComponentItem.
+        r"""Gets the annotations of this ComponentItem.
 
         资源信息。
 
@@ -133,7 +133,7 @@ class ComponentItem:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this ComponentItem.
+        r"""Sets the annotations of this ComponentItem.
 
         资源信息。
 
@@ -144,7 +144,7 @@ class ComponentItem:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ComponentItem.
+        r"""Gets the created_at of this ComponentItem.
 
         创建时间。
 
@@ -155,7 +155,7 @@ class ComponentItem:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ComponentItem.
+        r"""Sets the created_at of this ComponentItem.
 
         创建时间。
 
@@ -166,7 +166,7 @@ class ComponentItem:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ComponentItem.
+        r"""Gets the updated_at of this ComponentItem.
 
         更新时间。
 
@@ -177,7 +177,7 @@ class ComponentItem:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ComponentItem.
+        r"""Sets the updated_at of this ComponentItem.
 
         更新时间。
 
@@ -188,7 +188,7 @@ class ComponentItem:
 
     @property
     def spec(self):
-        """Gets the spec of this ComponentItem.
+        r"""Gets the spec of this ComponentItem.
 
         :return: The spec of this ComponentItem.
         :rtype: :class:`huaweicloudsdkcae.v1.ComponentSpec`
@@ -197,7 +197,7 @@ class ComponentItem:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ComponentItem.
+        r"""Sets the spec of this ComponentItem.
 
         :param spec: The spec of this ComponentItem.
         :type spec: :class:`huaweicloudsdkcae.v1.ComponentSpec`

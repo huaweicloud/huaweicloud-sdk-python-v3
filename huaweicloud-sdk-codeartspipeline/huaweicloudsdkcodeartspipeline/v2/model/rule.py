@@ -35,7 +35,7 @@ class Rule:
     }
 
     def __init__(self, id=None, type=None, name=None, version=None, operator=None, operate_time=None):
-        """Rule
+        r"""Rule
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class Rule:
 
     @property
     def id(self):
-        """Gets the id of this Rule.
+        r"""Gets the id of this Rule.
 
         规则ID
 
@@ -83,7 +83,7 @@ class Rule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Rule.
+        r"""Sets the id of this Rule.
 
         规则ID
 
@@ -94,7 +94,7 @@ class Rule:
 
     @property
     def type(self):
-        """Gets the type of this Rule.
+        r"""Gets the type of this Rule.
 
         规则类型
 
@@ -105,7 +105,7 @@ class Rule:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Rule.
+        r"""Sets the type of this Rule.
 
         规则类型
 
@@ -116,7 +116,7 @@ class Rule:
 
     @property
     def name(self):
-        """Gets the name of this Rule.
+        r"""Gets the name of this Rule.
 
         规则名称
 
@@ -127,7 +127,7 @@ class Rule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Rule.
+        r"""Sets the name of this Rule.
 
         规则名称
 
@@ -138,7 +138,7 @@ class Rule:
 
     @property
     def version(self):
-        """Gets the version of this Rule.
+        r"""Gets the version of this Rule.
 
         规则版本
 
@@ -149,7 +149,7 @@ class Rule:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Rule.
+        r"""Sets the version of this Rule.
 
         规则版本
 
@@ -160,7 +160,7 @@ class Rule:
 
     @property
     def operator(self):
-        """Gets the operator of this Rule.
+        r"""Gets the operator of this Rule.
 
         最近操作人员
 
@@ -171,7 +171,7 @@ class Rule:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this Rule.
+        r"""Sets the operator of this Rule.
 
         最近操作人员
 
@@ -182,7 +182,7 @@ class Rule:
 
     @property
     def operate_time(self):
-        """Gets the operate_time of this Rule.
+        r"""Gets the operate_time of this Rule.
 
         最近操作时间
 
@@ -193,7 +193,7 @@ class Rule:
 
     @operate_time.setter
     def operate_time(self, operate_time):
-        """Sets the operate_time of this Rule.
+        r"""Sets the operate_time of this Rule.
 
         最近操作时间
 

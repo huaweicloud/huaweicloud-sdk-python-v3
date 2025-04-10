@@ -63,7 +63,7 @@ class InstanceParam:
     }
 
     def __init__(self, agent_id=None, arch=None, cpu_memory=None, description=None, display_name=None, is_temporary=None, label_tag=None, plugin_enable_list=None, plugin_vars=None, port_id=None, private_ip=None, pvc_quantity=None, refresh_interval=None, repository_id=None, stack_id=None, task_type=None, token=None, vpc_id=None, instance_domain_id=None, instance_user_id=None):
-        """InstanceParam
+        r"""InstanceParam
 
         The model defined in huaweicloud sdk
 
@@ -171,7 +171,7 @@ class InstanceParam:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this InstanceParam.
+        r"""Gets the agent_id of this InstanceParam.
 
         代理商id，教程活动场景下使用
 
@@ -182,7 +182,7 @@ class InstanceParam:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this InstanceParam.
+        r"""Sets the agent_id of this InstanceParam.
 
         代理商id，教程活动场景下使用
 
@@ -193,7 +193,7 @@ class InstanceParam:
 
     @property
     def arch(self):
-        """Gets the arch of this InstanceParam.
+        r"""Gets the arch of this InstanceParam.
 
         cpu架构 x86|arm
 
@@ -204,7 +204,7 @@ class InstanceParam:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this InstanceParam.
+        r"""Sets the arch of this InstanceParam.
 
         cpu架构 x86|arm
 
@@ -215,7 +215,7 @@ class InstanceParam:
 
     @property
     def cpu_memory(self):
-        """Gets the cpu_memory of this InstanceParam.
+        r"""Gets the cpu_memory of this InstanceParam.
 
         cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacks接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
 
@@ -226,7 +226,7 @@ class InstanceParam:
 
     @cpu_memory.setter
     def cpu_memory(self, cpu_memory):
-        """Sets the cpu_memory of this InstanceParam.
+        r"""Sets the cpu_memory of this InstanceParam.
 
         cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacks接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
 
@@ -237,7 +237,7 @@ class InstanceParam:
 
     @property
     def description(self):
-        """Gets the description of this InstanceParam.
+        r"""Gets the description of this InstanceParam.
 
         描述
 
@@ -248,7 +248,7 @@ class InstanceParam:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InstanceParam.
+        r"""Sets the description of this InstanceParam.
 
         描述
 
@@ -259,7 +259,7 @@ class InstanceParam:
 
     @property
     def display_name(self):
-        """Gets the display_name of this InstanceParam.
+        r"""Gets the display_name of this InstanceParam.
 
         实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
@@ -270,7 +270,7 @@ class InstanceParam:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this InstanceParam.
+        r"""Sets the display_name of this InstanceParam.
 
         实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
@@ -281,7 +281,7 @@ class InstanceParam:
 
     @property
     def is_temporary(self):
-        """Gets the is_temporary of this InstanceParam.
+        r"""Gets the is_temporary of this InstanceParam.
 
         是否页面显示（以标签配置为准）
 
@@ -292,7 +292,7 @@ class InstanceParam:
 
     @is_temporary.setter
     def is_temporary(self, is_temporary):
-        """Sets the is_temporary of this InstanceParam.
+        r"""Sets the is_temporary of this InstanceParam.
 
         是否页面显示（以标签配置为准）
 
@@ -303,7 +303,7 @@ class InstanceParam:
 
     @property
     def label_tag(self):
-        """Gets the label_tag of this InstanceParam.
+        r"""Gets the label_tag of this InstanceParam.
 
         实例标签（不同的第三方需要和CodeArtsIDEOnline服务共同设定标签），不传默认为default
 
@@ -314,7 +314,7 @@ class InstanceParam:
 
     @label_tag.setter
     def label_tag(self, label_tag):
-        """Sets the label_tag of this InstanceParam.
+        r"""Sets the label_tag of this InstanceParam.
 
         实例标签（不同的第三方需要和CodeArtsIDEOnline服务共同设定标签），不传默认为default
 
@@ -325,7 +325,7 @@ class InstanceParam:
 
     @property
     def plugin_enable_list(self):
-        """Gets the plugin_enable_list of this InstanceParam.
+        r"""Gets the plugin_enable_list of this InstanceParam.
 
         预装插件列表
 
@@ -336,7 +336,7 @@ class InstanceParam:
 
     @plugin_enable_list.setter
     def plugin_enable_list(self, plugin_enable_list):
-        """Sets the plugin_enable_list of this InstanceParam.
+        r"""Sets the plugin_enable_list of this InstanceParam.
 
         预装插件列表
 
@@ -347,7 +347,7 @@ class InstanceParam:
 
     @property
     def plugin_vars(self):
-        """Gets the plugin_vars of this InstanceParam.
+        r"""Gets the plugin_vars of this InstanceParam.
 
         预装插件参数，请注意敏感信息保护，若涉及敏感信息，请自行加密
 
@@ -358,7 +358,7 @@ class InstanceParam:
 
     @plugin_vars.setter
     def plugin_vars(self, plugin_vars):
-        """Sets the plugin_vars of this InstanceParam.
+        r"""Sets the plugin_vars of this InstanceParam.
 
         预装插件参数，请注意敏感信息保护，若涉及敏感信息，请自行加密
 
@@ -369,7 +369,7 @@ class InstanceParam:
 
     @property
     def port_id(self):
-        """Gets the port_id of this InstanceParam.
+        r"""Gets the port_id of this InstanceParam.
 
         云服务器对应的portId，小网连接ecs的场景下使用
 
@@ -380,7 +380,7 @@ class InstanceParam:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this InstanceParam.
+        r"""Sets the port_id of this InstanceParam.
 
         云服务器对应的portId，小网连接ecs的场景下使用
 
@@ -391,7 +391,7 @@ class InstanceParam:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this InstanceParam.
+        r"""Gets the private_ip of this InstanceParam.
 
         云服务器ip，小网连接ecs的场景下使用
 
@@ -402,7 +402,7 @@ class InstanceParam:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this InstanceParam.
+        r"""Sets the private_ip of this InstanceParam.
 
         云服务器ip，小网连接ecs的场景下使用
 
@@ -413,7 +413,7 @@ class InstanceParam:
 
     @property
     def pvc_quantity(self):
-        """Gets the pvc_quantity of this InstanceParam.
+        r"""Gets the pvc_quantity of this InstanceParam.
 
         PVC规格 5GB|10GB|20GB
 
@@ -424,7 +424,7 @@ class InstanceParam:
 
     @pvc_quantity.setter
     def pvc_quantity(self, pvc_quantity):
-        """Sets the pvc_quantity of this InstanceParam.
+        r"""Sets the pvc_quantity of this InstanceParam.
 
         PVC规格 5GB|10GB|20GB
 
@@ -435,7 +435,7 @@ class InstanceParam:
 
     @property
     def refresh_interval(self):
-        """Gets the refresh_interval of this InstanceParam.
+        r"""Gets the refresh_interval of this InstanceParam.
 
         自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止
 
@@ -446,7 +446,7 @@ class InstanceParam:
 
     @refresh_interval.setter
     def refresh_interval(self, refresh_interval):
-        """Sets the refresh_interval of this InstanceParam.
+        r"""Sets the refresh_interval of this InstanceParam.
 
         自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止
 
@@ -457,7 +457,7 @@ class InstanceParam:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this InstanceParam.
+        r"""Gets the repository_id of this InstanceParam.
 
         解放号的仓库id，解放号场景下使用
 
@@ -468,7 +468,7 @@ class InstanceParam:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this InstanceParam.
+        r"""Sets the repository_id of this InstanceParam.
 
         解放号的仓库id，解放号场景下使用
 
@@ -479,7 +479,7 @@ class InstanceParam:
 
     @property
     def stack_id(self):
-        """Gets the stack_id of this InstanceParam.
+        r"""Gets the stack_id of this InstanceParam.
 
         技术栈ID，通过技术栈管理ListStacks接口获取。
 
@@ -490,7 +490,7 @@ class InstanceParam:
 
     @stack_id.setter
     def stack_id(self, stack_id):
-        """Sets the stack_id of this InstanceParam.
+        r"""Sets the stack_id of this InstanceParam.
 
         技术栈ID，通过技术栈管理ListStacks接口获取。
 
@@ -501,7 +501,7 @@ class InstanceParam:
 
     @property
     def task_type(self):
-        """Gets the task_type of this InstanceParam.
+        r"""Gets the task_type of this InstanceParam.
 
         任务类型，教程活动场景下使用
 
@@ -512,7 +512,7 @@ class InstanceParam:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this InstanceParam.
+        r"""Sets the task_type of this InstanceParam.
 
         任务类型，教程活动场景下使用
 
@@ -523,7 +523,7 @@ class InstanceParam:
 
     @property
     def token(self):
-        """Gets the token of this InstanceParam.
+        r"""Gets the token of this InstanceParam.
 
         解放号的token，解放号场景下使用
 
@@ -534,7 +534,7 @@ class InstanceParam:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this InstanceParam.
+        r"""Sets the token of this InstanceParam.
 
         解放号的token，解放号场景下使用
 
@@ -545,7 +545,7 @@ class InstanceParam:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this InstanceParam.
+        r"""Gets the vpc_id of this InstanceParam.
 
         云服务器对应的vpcId，小网连接ecs的场景下使用
 
@@ -556,7 +556,7 @@ class InstanceParam:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this InstanceParam.
+        r"""Sets the vpc_id of this InstanceParam.
 
         云服务器对应的vpcId，小网连接ecs的场景下使用
 
@@ -567,7 +567,7 @@ class InstanceParam:
 
     @property
     def instance_domain_id(self):
-        """Gets the instance_domain_id of this InstanceParam.
+        r"""Gets the instance_domain_id of this InstanceParam.
 
         实例授权用户租户ID
 
@@ -578,7 +578,7 @@ class InstanceParam:
 
     @instance_domain_id.setter
     def instance_domain_id(self, instance_domain_id):
-        """Sets the instance_domain_id of this InstanceParam.
+        r"""Sets the instance_domain_id of this InstanceParam.
 
         实例授权用户租户ID
 
@@ -589,7 +589,7 @@ class InstanceParam:
 
     @property
     def instance_user_id(self):
-        """Gets the instance_user_id of this InstanceParam.
+        r"""Gets the instance_user_id of this InstanceParam.
 
         实例授权用户ID
 
@@ -600,7 +600,7 @@ class InstanceParam:
 
     @instance_user_id.setter
     def instance_user_id(self, instance_user_id):
-        """Sets the instance_user_id of this InstanceParam.
+        r"""Sets the instance_user_id of this InstanceParam.
 
         实例授权用户ID
 

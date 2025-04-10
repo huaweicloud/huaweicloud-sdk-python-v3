@@ -26,7 +26,7 @@ class BatchShowUserDetailsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchShowUserDetailsResponse
+        r"""BatchShowUserDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchShowUserDetailsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchShowUserDetailsResponse.
+        r"""Gets the body of this BatchShowUserDetailsResponse.
 
         用户信息列表
 
@@ -55,7 +55,7 @@ class BatchShowUserDetailsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchShowUserDetailsResponse.
+        r"""Sets the body of this BatchShowUserDetailsResponse.
 
         用户信息列表
 

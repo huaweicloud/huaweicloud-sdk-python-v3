@@ -27,7 +27,7 @@ class StarRocksInstanceInfoTagsInfo:
     }
 
     def __init__(self, tags=None, sys_tags=None):
-        """StarRocksInstanceInfoTagsInfo
+        r"""StarRocksInstanceInfoTagsInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StarRocksInstanceInfoTagsInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this StarRocksInstanceInfoTagsInfo.
+        r"""Gets the tags of this StarRocksInstanceInfoTagsInfo.
 
         用户标签。
 
@@ -61,7 +61,7 @@ class StarRocksInstanceInfoTagsInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this StarRocksInstanceInfoTagsInfo.
+        r"""Sets the tags of this StarRocksInstanceInfoTagsInfo.
 
         用户标签。
 
@@ -72,7 +72,7 @@ class StarRocksInstanceInfoTagsInfo:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this StarRocksInstanceInfoTagsInfo.
+        r"""Gets the sys_tags of this StarRocksInstanceInfoTagsInfo.
 
         系统标签。
 
@@ -83,7 +83,7 @@ class StarRocksInstanceInfoTagsInfo:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this StarRocksInstanceInfoTagsInfo.
+        r"""Sets the sys_tags of this StarRocksInstanceInfoTagsInfo.
 
         系统标签。
 

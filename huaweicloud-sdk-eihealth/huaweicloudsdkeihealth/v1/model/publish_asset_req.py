@@ -41,7 +41,7 @@ class PublishAssetReq:
     }
 
     def __init__(self, image_id=None, tag=None, name=None, version=None, title=None, picture=None, summary=None, description=None, labels=None):
-        """PublishAssetReq
+        r"""PublishAssetReq
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class PublishAssetReq:
 
     @property
     def image_id(self):
-        """Gets the image_id of this PublishAssetReq.
+        r"""Gets the image_id of this PublishAssetReq.
 
         镜像id
 
@@ -106,7 +106,7 @@ class PublishAssetReq:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this PublishAssetReq.
+        r"""Sets the image_id of this PublishAssetReq.
 
         镜像id
 
@@ -117,7 +117,7 @@ class PublishAssetReq:
 
     @property
     def tag(self):
-        """Gets the tag of this PublishAssetReq.
+        r"""Gets the tag of this PublishAssetReq.
 
         镜像tag
 
@@ -128,7 +128,7 @@ class PublishAssetReq:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this PublishAssetReq.
+        r"""Sets the tag of this PublishAssetReq.
 
         镜像tag
 
@@ -139,7 +139,7 @@ class PublishAssetReq:
 
     @property
     def name(self):
-        """Gets the name of this PublishAssetReq.
+        r"""Gets the name of this PublishAssetReq.
 
         资产名称
 
@@ -150,7 +150,7 @@ class PublishAssetReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublishAssetReq.
+        r"""Sets the name of this PublishAssetReq.
 
         资产名称
 
@@ -161,7 +161,7 @@ class PublishAssetReq:
 
     @property
     def version(self):
-        """Gets the version of this PublishAssetReq.
+        r"""Gets the version of this PublishAssetReq.
 
         资产版本
 
@@ -172,7 +172,7 @@ class PublishAssetReq:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PublishAssetReq.
+        r"""Sets the version of this PublishAssetReq.
 
         资产版本
 
@@ -183,7 +183,7 @@ class PublishAssetReq:
 
     @property
     def title(self):
-        """Gets the title of this PublishAssetReq.
+        r"""Gets the title of this PublishAssetReq.
 
         展示名
 
@@ -194,7 +194,7 @@ class PublishAssetReq:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this PublishAssetReq.
+        r"""Sets the title of this PublishAssetReq.
 
         展示名
 
@@ -205,7 +205,7 @@ class PublishAssetReq:
 
     @property
     def picture(self):
-        """Gets the picture of this PublishAssetReq.
+        r"""Gets the picture of this PublishAssetReq.
 
         封面图片base64编码
 
@@ -216,7 +216,7 @@ class PublishAssetReq:
 
     @picture.setter
     def picture(self, picture):
-        """Sets the picture of this PublishAssetReq.
+        r"""Sets the picture of this PublishAssetReq.
 
         封面图片base64编码
 
@@ -227,7 +227,7 @@ class PublishAssetReq:
 
     @property
     def summary(self):
-        """Gets the summary of this PublishAssetReq.
+        r"""Gets the summary of this PublishAssetReq.
 
         短描述
 
@@ -238,7 +238,7 @@ class PublishAssetReq:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this PublishAssetReq.
+        r"""Sets the summary of this PublishAssetReq.
 
         短描述
 
@@ -249,7 +249,7 @@ class PublishAssetReq:
 
     @property
     def description(self):
-        """Gets the description of this PublishAssetReq.
+        r"""Gets the description of this PublishAssetReq.
 
         长描述
 
@@ -260,7 +260,7 @@ class PublishAssetReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublishAssetReq.
+        r"""Sets the description of this PublishAssetReq.
 
         长描述
 
@@ -271,7 +271,7 @@ class PublishAssetReq:
 
     @property
     def labels(self):
-        """Gets the labels of this PublishAssetReq.
+        r"""Gets the labels of this PublishAssetReq.
 
         标签列表
 
@@ -282,7 +282,7 @@ class PublishAssetReq:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this PublishAssetReq.
+        r"""Sets the labels of this PublishAssetReq.
 
         标签列表
 

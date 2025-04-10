@@ -27,7 +27,7 @@ class ResExecConfig:
     }
 
     def __init__(self, spark_calc_spec=None, spark_option_confs=None):
-        """ResExecConfig
+        r"""ResExecConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResExecConfig:
 
     @property
     def spark_calc_spec(self):
-        """Gets the spark_calc_spec of this ResExecConfig.
+        r"""Gets the spark_calc_spec of this ResExecConfig.
 
         :return: The spark_calc_spec of this ResExecConfig.
         :rtype: :class:`huaweicloudsdkres.v1.SparkCalcSpec`
@@ -59,7 +59,7 @@ class ResExecConfig:
 
     @spark_calc_spec.setter
     def spark_calc_spec(self, spark_calc_spec):
-        """Sets the spark_calc_spec of this ResExecConfig.
+        r"""Sets the spark_calc_spec of this ResExecConfig.
 
         :param spark_calc_spec: The spark_calc_spec of this ResExecConfig.
         :type spark_calc_spec: :class:`huaweicloudsdkres.v1.SparkCalcSpec`
@@ -68,7 +68,7 @@ class ResExecConfig:
 
     @property
     def spark_option_confs(self):
-        """Gets the spark_option_confs of this ResExecConfig.
+        r"""Gets the spark_option_confs of this ResExecConfig.
 
         spark可选配置项
 
@@ -79,7 +79,7 @@ class ResExecConfig:
 
     @spark_option_confs.setter
     def spark_option_confs(self, spark_option_confs):
-        """Sets the spark_option_confs of this ResExecConfig.
+        r"""Sets the spark_option_confs of this ResExecConfig.
 
         spark可选配置项
 

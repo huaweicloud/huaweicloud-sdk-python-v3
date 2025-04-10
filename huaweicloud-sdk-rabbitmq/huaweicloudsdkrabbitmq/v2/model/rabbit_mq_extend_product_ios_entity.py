@@ -31,7 +31,7 @@ class RabbitMQExtendProductIosEntity:
     }
 
     def __init__(self, io_spec=None, available_zones=None, type=None, unavailable_zones=None):
-        """RabbitMQExtendProductIosEntity
+        r"""RabbitMQExtendProductIosEntity
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class RabbitMQExtendProductIosEntity:
 
     @property
     def io_spec(self):
-        """Gets the io_spec of this RabbitMQExtendProductIosEntity.
+        r"""Gets the io_spec of this RabbitMQExtendProductIosEntity.
 
         存储IO规格。
 
@@ -75,7 +75,7 @@ class RabbitMQExtendProductIosEntity:
 
     @io_spec.setter
     def io_spec(self, io_spec):
-        """Sets the io_spec of this RabbitMQExtendProductIosEntity.
+        r"""Sets the io_spec of this RabbitMQExtendProductIosEntity.
 
         存储IO规格。
 
@@ -86,7 +86,7 @@ class RabbitMQExtendProductIosEntity:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this RabbitMQExtendProductIosEntity.
+        r"""Gets the available_zones of this RabbitMQExtendProductIosEntity.
 
         有可用资源的可用区列表
 
@@ -97,7 +97,7 @@ class RabbitMQExtendProductIosEntity:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this RabbitMQExtendProductIosEntity.
+        r"""Sets the available_zones of this RabbitMQExtendProductIosEntity.
 
         有可用资源的可用区列表
 
@@ -108,7 +108,7 @@ class RabbitMQExtendProductIosEntity:
 
     @property
     def type(self):
-        """Gets the type of this RabbitMQExtendProductIosEntity.
+        r"""Gets the type of this RabbitMQExtendProductIosEntity.
 
         IO类型。
 
@@ -119,7 +119,7 @@ class RabbitMQExtendProductIosEntity:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RabbitMQExtendProductIosEntity.
+        r"""Sets the type of this RabbitMQExtendProductIosEntity.
 
         IO类型。
 
@@ -130,7 +130,7 @@ class RabbitMQExtendProductIosEntity:
 
     @property
     def unavailable_zones(self):
-        """Gets the unavailable_zones of this RabbitMQExtendProductIosEntity.
+        r"""Gets the unavailable_zones of this RabbitMQExtendProductIosEntity.
 
         资源售罄的可用区列表。
 
@@ -141,7 +141,7 @@ class RabbitMQExtendProductIosEntity:
 
     @unavailable_zones.setter
     def unavailable_zones(self, unavailable_zones):
-        """Sets the unavailable_zones of this RabbitMQExtendProductIosEntity.
+        r"""Sets the unavailable_zones of this RabbitMQExtendProductIosEntity.
 
         资源售罄的可用区列表。
 

@@ -27,7 +27,7 @@ class CreateVhostRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateVhostRequest
+        r"""CreateVhostRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateVhostRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateVhostRequest.
+        r"""Gets the instance_id of this CreateVhostRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateVhostRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateVhostRequest.
+        r"""Sets the instance_id of this CreateVhostRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateVhostRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVhostRequest.
+        r"""Gets the body of this CreateVhostRequest.
 
         :return: The body of this CreateVhostRequest.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreateVhostBody`
@@ -80,7 +80,7 @@ class CreateVhostRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVhostRequest.
+        r"""Sets the body of this CreateVhostRequest.
 
         :param body: The body of this CreateVhostRequest.
         :type body: :class:`huaweicloudsdkrabbitmq.v2.CreateVhostBody`

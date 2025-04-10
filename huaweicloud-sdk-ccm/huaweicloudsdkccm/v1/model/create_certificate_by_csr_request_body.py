@@ -37,7 +37,7 @@ class CreateCertificateByCsrRequestBody:
     }
 
     def __init__(self, issuer_id=None, csr=None, validity=None, type=None, path_length=None, subject_alternative_names=None, enterprise_project_id=None):
-        """CreateCertificateByCsrRequestBody
+        r"""CreateCertificateByCsrRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class CreateCertificateByCsrRequestBody:
 
     @property
     def issuer_id(self):
-        """Gets the issuer_id of this CreateCertificateByCsrRequestBody.
+        r"""Gets the issuer_id of this CreateCertificateByCsrRequestBody.
 
         父CA证书ID。
 
@@ -93,7 +93,7 @@ class CreateCertificateByCsrRequestBody:
 
     @issuer_id.setter
     def issuer_id(self, issuer_id):
-        """Sets the issuer_id of this CreateCertificateByCsrRequestBody.
+        r"""Sets the issuer_id of this CreateCertificateByCsrRequestBody.
 
         父CA证书ID。
 
@@ -104,7 +104,7 @@ class CreateCertificateByCsrRequestBody:
 
     @property
     def csr(self):
-        """Gets the csr of this CreateCertificateByCsrRequestBody.
+        r"""Gets the csr of this CreateCertificateByCsrRequestBody.
 
         证书签名请求。请使用“\\r\\n”或“\\n”替代证书签名请求中的换行符，若通过console端请求此接口，则无需做符号转换。
 
@@ -115,7 +115,7 @@ class CreateCertificateByCsrRequestBody:
 
     @csr.setter
     def csr(self, csr):
-        """Sets the csr of this CreateCertificateByCsrRequestBody.
+        r"""Sets the csr of this CreateCertificateByCsrRequestBody.
 
         证书签名请求。请使用“\\r\\n”或“\\n”替代证书签名请求中的换行符，若通过console端请求此接口，则无需做符号转换。
 
@@ -126,7 +126,7 @@ class CreateCertificateByCsrRequestBody:
 
     @property
     def validity(self):
-        """Gets the validity of this CreateCertificateByCsrRequestBody.
+        r"""Gets the validity of this CreateCertificateByCsrRequestBody.
 
         :return: The validity of this CreateCertificateByCsrRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.Validity`
@@ -135,7 +135,7 @@ class CreateCertificateByCsrRequestBody:
 
     @validity.setter
     def validity(self, validity):
-        """Sets the validity of this CreateCertificateByCsrRequestBody.
+        r"""Sets the validity of this CreateCertificateByCsrRequestBody.
 
         :param validity: The validity of this CreateCertificateByCsrRequestBody.
         :type validity: :class:`huaweicloudsdkccm.v1.Validity`
@@ -144,7 +144,7 @@ class CreateCertificateByCsrRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateCertificateByCsrRequestBody.
+        r"""Gets the type of this CreateCertificateByCsrRequestBody.
 
         证书类型，用于区分从属CA与私有证书。   - **ENTITY_CERT** : 签发私有证书，为缺省值；   - **INTERMEDIATE_CA** : 签发从属CA。
 
@@ -155,7 +155,7 @@ class CreateCertificateByCsrRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateCertificateByCsrRequestBody.
+        r"""Sets the type of this CreateCertificateByCsrRequestBody.
 
         证书类型，用于区分从属CA与私有证书。   - **ENTITY_CERT** : 签发私有证书，为缺省值；   - **INTERMEDIATE_CA** : 签发从属CA。
 
@@ -166,7 +166,7 @@ class CreateCertificateByCsrRequestBody:
 
     @property
     def path_length(self):
-        """Gets the path_length of this CreateCertificateByCsrRequestBody.
+        r"""Gets the path_length of this CreateCertificateByCsrRequestBody.
 
         路径长度，仅当签发从属CA时有效。
 
@@ -177,7 +177,7 @@ class CreateCertificateByCsrRequestBody:
 
     @path_length.setter
     def path_length(self, path_length):
-        """Sets the path_length of this CreateCertificateByCsrRequestBody.
+        r"""Sets the path_length of this CreateCertificateByCsrRequestBody.
 
         路径长度，仅当签发从属CA时有效。
 
@@ -188,7 +188,7 @@ class CreateCertificateByCsrRequestBody:
 
     @property
     def subject_alternative_names(self):
-        """Gets the subject_alternative_names of this CreateCertificateByCsrRequestBody.
+        r"""Gets the subject_alternative_names of this CreateCertificateByCsrRequestBody.
 
         主体备用名称(本接口预留参数，当前在后端被忽略)，详情请参见**SubjectAlternativeName**字段数据结构说明。
 
@@ -199,7 +199,7 @@ class CreateCertificateByCsrRequestBody:
 
     @subject_alternative_names.setter
     def subject_alternative_names(self, subject_alternative_names):
-        """Sets the subject_alternative_names of this CreateCertificateByCsrRequestBody.
+        r"""Sets the subject_alternative_names of this CreateCertificateByCsrRequestBody.
 
         主体备用名称(本接口预留参数，当前在后端被忽略)，详情请参见**SubjectAlternativeName**字段数据结构说明。
 
@@ -210,7 +210,7 @@ class CreateCertificateByCsrRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateCertificateByCsrRequestBody.
+        r"""Gets the enterprise_project_id of this CreateCertificateByCsrRequestBody.
 
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
@@ -221,7 +221,7 @@ class CreateCertificateByCsrRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateCertificateByCsrRequestBody.
+        r"""Sets the enterprise_project_id of this CreateCertificateByCsrRequestBody.
 
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 

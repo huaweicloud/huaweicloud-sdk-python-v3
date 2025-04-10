@@ -23,7 +23,7 @@ class NovaListAvailabilityZonesRequest:
     }
 
     def __init__(self):
-        """NovaListAvailabilityZonesRequest
+        r"""NovaListAvailabilityZonesRequest
 
         The model defined in huaweicloud sdk
 

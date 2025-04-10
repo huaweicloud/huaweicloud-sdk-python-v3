@@ -28,7 +28,7 @@ class ShowAcceleratorResponse(SdkResponse):
     }
 
     def __init__(self, accelerator=None, request_id=None):
-        """ShowAcceleratorResponse
+        r"""ShowAcceleratorResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAcceleratorResponse(SdkResponse):
 
     @property
     def accelerator(self):
-        """Gets the accelerator of this ShowAcceleratorResponse.
+        r"""Gets the accelerator of this ShowAcceleratorResponse.
 
         :return: The accelerator of this ShowAcceleratorResponse.
         :rtype: :class:`huaweicloudsdkga.v1.AcceleratorDetail`
@@ -60,7 +60,7 @@ class ShowAcceleratorResponse(SdkResponse):
 
     @accelerator.setter
     def accelerator(self, accelerator):
-        """Sets the accelerator of this ShowAcceleratorResponse.
+        r"""Sets the accelerator of this ShowAcceleratorResponse.
 
         :param accelerator: The accelerator of this ShowAcceleratorResponse.
         :type accelerator: :class:`huaweicloudsdkga.v1.AcceleratorDetail`
@@ -69,7 +69,7 @@ class ShowAcceleratorResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowAcceleratorResponse.
+        r"""Gets the request_id of this ShowAcceleratorResponse.
 
         请求ID。
 
@@ -80,7 +80,7 @@ class ShowAcceleratorResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowAcceleratorResponse.
+        r"""Sets the request_id of this ShowAcceleratorResponse.
 
         请求ID。
 

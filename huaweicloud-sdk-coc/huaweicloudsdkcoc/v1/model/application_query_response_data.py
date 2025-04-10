@@ -37,7 +37,7 @@ class ApplicationQueryResponseData:
     }
 
     def __init__(self, id=None, name=None, code=None, domain_id=None, parent_id=None, description=None, path=None):
-        """ApplicationQueryResponseData
+        r"""ApplicationQueryResponseData
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ApplicationQueryResponseData:
 
     @property
     def id(self):
-        """Gets the id of this ApplicationQueryResponseData.
+        r"""Gets the id of this ApplicationQueryResponseData.
 
         应用id
 
@@ -96,7 +96,7 @@ class ApplicationQueryResponseData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApplicationQueryResponseData.
+        r"""Sets the id of this ApplicationQueryResponseData.
 
         应用id
 
@@ -107,7 +107,7 @@ class ApplicationQueryResponseData:
 
     @property
     def name(self):
-        """Gets the name of this ApplicationQueryResponseData.
+        r"""Gets the name of this ApplicationQueryResponseData.
 
         应用名称
 
@@ -118,7 +118,7 @@ class ApplicationQueryResponseData:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicationQueryResponseData.
+        r"""Sets the name of this ApplicationQueryResponseData.
 
         应用名称
 
@@ -129,7 +129,7 @@ class ApplicationQueryResponseData:
 
     @property
     def code(self):
-        """Gets the code of this ApplicationQueryResponseData.
+        r"""Gets the code of this ApplicationQueryResponseData.
 
         应用code
 
@@ -140,7 +140,7 @@ class ApplicationQueryResponseData:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ApplicationQueryResponseData.
+        r"""Sets the code of this ApplicationQueryResponseData.
 
         应用code
 
@@ -151,7 +151,7 @@ class ApplicationQueryResponseData:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ApplicationQueryResponseData.
+        r"""Gets the domain_id of this ApplicationQueryResponseData.
 
         租户id
 
@@ -162,7 +162,7 @@ class ApplicationQueryResponseData:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ApplicationQueryResponseData.
+        r"""Sets the domain_id of this ApplicationQueryResponseData.
 
         租户id
 
@@ -173,7 +173,7 @@ class ApplicationQueryResponseData:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ApplicationQueryResponseData.
+        r"""Gets the parent_id of this ApplicationQueryResponseData.
 
         父节点id
 
@@ -184,7 +184,7 @@ class ApplicationQueryResponseData:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ApplicationQueryResponseData.
+        r"""Sets the parent_id of this ApplicationQueryResponseData.
 
         父节点id
 
@@ -195,7 +195,7 @@ class ApplicationQueryResponseData:
 
     @property
     def description(self):
-        """Gets the description of this ApplicationQueryResponseData.
+        r"""Gets the description of this ApplicationQueryResponseData.
 
         描述信息
 
@@ -206,7 +206,7 @@ class ApplicationQueryResponseData:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApplicationQueryResponseData.
+        r"""Sets the description of this ApplicationQueryResponseData.
 
         描述信息
 
@@ -217,7 +217,7 @@ class ApplicationQueryResponseData:
 
     @property
     def path(self):
-        """Gets the path of this ApplicationQueryResponseData.
+        r"""Gets the path of this ApplicationQueryResponseData.
 
         应用path路径，由应用id用.拼接
 
@@ -228,7 +228,7 @@ class ApplicationQueryResponseData:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ApplicationQueryResponseData.
+        r"""Sets the path of this ApplicationQueryResponseData.
 
         应用path路径，由应用id用.拼接
 

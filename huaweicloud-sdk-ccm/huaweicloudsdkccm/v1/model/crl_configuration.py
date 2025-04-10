@@ -31,7 +31,7 @@ class CrlConfiguration:
     }
 
     def __init__(self, enabled=None, crl_name=None, obs_bucket_name=None, valid_days=None):
-        """CrlConfiguration
+        r"""CrlConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CrlConfiguration:
 
     @property
     def enabled(self):
-        """Gets the enabled of this CrlConfiguration.
+        r"""Gets the enabled of this CrlConfiguration.
 
         是否启用CRL发布功能。 - **true** - **false**
 
@@ -74,7 +74,7 @@ class CrlConfiguration:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this CrlConfiguration.
+        r"""Sets the enabled of this CrlConfiguration.
 
         是否启用CRL发布功能。 - **true** - **false**
 
@@ -85,7 +85,7 @@ class CrlConfiguration:
 
     @property
     def crl_name(self):
-        """Gets the crl_name of this CrlConfiguration.
+        r"""Gets the crl_name of this CrlConfiguration.
 
         吊销列表文件名称。 > 若用户不指定，系统将默认采用当前证书的父CA ID。
 
@@ -96,7 +96,7 @@ class CrlConfiguration:
 
     @crl_name.setter
     def crl_name(self, crl_name):
-        """Sets the crl_name of this CrlConfiguration.
+        r"""Sets the crl_name of this CrlConfiguration.
 
         吊销列表文件名称。 > 若用户不指定，系统将默认采用当前证书的父CA ID。
 
@@ -107,7 +107,7 @@ class CrlConfiguration:
 
     @property
     def obs_bucket_name(self):
-        """Gets the obs_bucket_name of this CrlConfiguration.
+        r"""Gets the obs_bucket_name of this CrlConfiguration.
 
         OBS桶名称。 > 当需要启用CRL发布功能： > - 此参数为必填项，且用户必须已创建委托授权，授予PCA服务对OBS的相关权限，具体参见本文档：**证书吊销处理>查看是否具有委托权限**、**证书吊销处理>创建委托**； > - 指定的OBS桶必须存在，否则将报错。
 
@@ -118,7 +118,7 @@ class CrlConfiguration:
 
     @obs_bucket_name.setter
     def obs_bucket_name(self, obs_bucket_name):
-        """Sets the obs_bucket_name of this CrlConfiguration.
+        r"""Sets the obs_bucket_name of this CrlConfiguration.
 
         OBS桶名称。 > 当需要启用CRL发布功能： > - 此参数为必填项，且用户必须已创建委托授权，授予PCA服务对OBS的相关权限，具体参见本文档：**证书吊销处理>查看是否具有委托权限**、**证书吊销处理>创建委托**； > - 指定的OBS桶必须存在，否则将报错。
 
@@ -129,7 +129,7 @@ class CrlConfiguration:
 
     @property
     def valid_days(self):
-        """Gets the valid_days of this CrlConfiguration.
+        r"""Gets the valid_days of this CrlConfiguration.
 
         CRL更新周期，单位为\"天\"。当启用CRL发布功能，为必填项。
 
@@ -140,7 +140,7 @@ class CrlConfiguration:
 
     @valid_days.setter
     def valid_days(self, valid_days):
-        """Sets the valid_days of this CrlConfiguration.
+        r"""Sets the valid_days of this CrlConfiguration.
 
         CRL更新周期，单位为\"天\"。当启用CRL发布功能，为必填项。
 

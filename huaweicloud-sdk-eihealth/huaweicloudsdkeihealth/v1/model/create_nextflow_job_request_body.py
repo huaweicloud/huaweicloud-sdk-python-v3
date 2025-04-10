@@ -35,7 +35,7 @@ class CreateNextflowJobRequestBody:
     }
 
     def __init__(self, name=None, description=None, labels=None, workflow_id=None, params=None, priority=None):
-        """CreateNextflowJobRequestBody
+        r"""CreateNextflowJobRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class CreateNextflowJobRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateNextflowJobRequestBody.
+        r"""Gets the name of this CreateNextflowJobRequestBody.
 
         作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -87,7 +87,7 @@ class CreateNextflowJobRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateNextflowJobRequestBody.
+        r"""Sets the name of this CreateNextflowJobRequestBody.
 
         作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -98,7 +98,7 @@ class CreateNextflowJobRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateNextflowJobRequestBody.
+        r"""Gets the description of this CreateNextflowJobRequestBody.
 
         作业的描述,取值范围：输入字符最大长度为255
 
@@ -109,7 +109,7 @@ class CreateNextflowJobRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateNextflowJobRequestBody.
+        r"""Sets the description of this CreateNextflowJobRequestBody.
 
         作业的描述,取值范围：输入字符最大长度为255
 
@@ -120,7 +120,7 @@ class CreateNextflowJobRequestBody:
 
     @property
     def labels(self):
-        """Gets the labels of this CreateNextflowJobRequestBody.
+        r"""Gets the labels of this CreateNextflowJobRequestBody.
 
         作业标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
@@ -131,7 +131,7 @@ class CreateNextflowJobRequestBody:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this CreateNextflowJobRequestBody.
+        r"""Sets the labels of this CreateNextflowJobRequestBody.
 
         作业标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
 
@@ -142,7 +142,7 @@ class CreateNextflowJobRequestBody:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this CreateNextflowJobRequestBody.
+        r"""Gets the workflow_id of this CreateNextflowJobRequestBody.
 
         作业依赖的流程id
 
@@ -153,7 +153,7 @@ class CreateNextflowJobRequestBody:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this CreateNextflowJobRequestBody.
+        r"""Sets the workflow_id of this CreateNextflowJobRequestBody.
 
         作业依赖的流程id
 
@@ -164,7 +164,7 @@ class CreateNextflowJobRequestBody:
 
     @property
     def params(self):
-        """Gets the params of this CreateNextflowJobRequestBody.
+        r"""Gets the params of this CreateNextflowJobRequestBody.
 
         流程参数列表文件，取值范围[0, 10M]
 
@@ -175,7 +175,7 @@ class CreateNextflowJobRequestBody:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CreateNextflowJobRequestBody.
+        r"""Sets the params of this CreateNextflowJobRequestBody.
 
         流程参数列表文件，取值范围[0, 10M]
 
@@ -186,7 +186,7 @@ class CreateNextflowJobRequestBody:
 
     @property
     def priority(self):
-        """Gets the priority of this CreateNextflowJobRequestBody.
+        r"""Gets the priority of this CreateNextflowJobRequestBody.
 
         作业的优先级,取值范围[0,9]，0最低，默认数值0
 
@@ -197,7 +197,7 @@ class CreateNextflowJobRequestBody:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this CreateNextflowJobRequestBody.
+        r"""Sets the priority of this CreateNextflowJobRequestBody.
 
         作业的优先级,取值范围[0,9]，0最低，默认数值0
 

@@ -35,7 +35,7 @@ class CollectReplyRatesRequest:
     }
 
     def __init__(self, qabot_id=None, start_time=None, end_time=None, interval=None, time_zone=None, domain=None):
-        """CollectReplyRatesRequest
+        r"""CollectReplyRatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class CollectReplyRatesRequest:
 
     @property
     def qabot_id(self):
-        """Gets the qabot_id of this CollectReplyRatesRequest.
+        r"""Gets the qabot_id of this CollectReplyRatesRequest.
 
         qabot编号，UUID格式。
 
@@ -88,7 +88,7 @@ class CollectReplyRatesRequest:
 
     @qabot_id.setter
     def qabot_id(self, qabot_id):
-        """Sets the qabot_id of this CollectReplyRatesRequest.
+        r"""Sets the qabot_id of this CollectReplyRatesRequest.
 
         qabot编号，UUID格式。
 
@@ -99,7 +99,7 @@ class CollectReplyRatesRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CollectReplyRatesRequest.
+        r"""Gets the start_time of this CollectReplyRatesRequest.
 
         查询的起始时间，long，UTC时间，默认值为0。
 
@@ -110,7 +110,7 @@ class CollectReplyRatesRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CollectReplyRatesRequest.
+        r"""Sets the start_time of this CollectReplyRatesRequest.
 
         查询的起始时间，long，UTC时间，默认值为0。
 
@@ -121,7 +121,7 @@ class CollectReplyRatesRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CollectReplyRatesRequest.
+        r"""Gets the end_time of this CollectReplyRatesRequest.
 
         查询的结束时间，long，UTC时间，默认值为当前时间的毫秒数。
 
@@ -132,7 +132,7 @@ class CollectReplyRatesRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CollectReplyRatesRequest.
+        r"""Sets the end_time of this CollectReplyRatesRequest.
 
         查询的结束时间，long，UTC时间，默认值为当前时间的毫秒数。
 
@@ -143,7 +143,7 @@ class CollectReplyRatesRequest:
 
     @property
     def interval(self):
-        """Gets the interval of this CollectReplyRatesRequest.
+        r"""Gets the interval of this CollectReplyRatesRequest.
 
         统计周期目前支持month,week,day。
 
@@ -154,7 +154,7 @@ class CollectReplyRatesRequest:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this CollectReplyRatesRequest.
+        r"""Sets the interval of this CollectReplyRatesRequest.
 
         统计周期目前支持month,week,day。
 
@@ -165,7 +165,7 @@ class CollectReplyRatesRequest:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this CollectReplyRatesRequest.
+        r"""Gets the time_zone of this CollectReplyRatesRequest.
 
         请求所在时区，例如：中国东八区为\"+08:00\"；美国西五区为\"-05:00\"；默认为\"UTC\"。
 
@@ -176,7 +176,7 @@ class CollectReplyRatesRequest:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this CollectReplyRatesRequest.
+        r"""Sets the time_zone of this CollectReplyRatesRequest.
 
         请求所在时区，例如：中国东八区为\"+08:00\"；美国西五区为\"-05:00\"；默认为\"UTC\"。
 
@@ -187,7 +187,7 @@ class CollectReplyRatesRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this CollectReplyRatesRequest.
+        r"""Gets the domain of this CollectReplyRatesRequest.
 
         所属领域。
 
@@ -198,7 +198,7 @@ class CollectReplyRatesRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CollectReplyRatesRequest.
+        r"""Sets the domain of this CollectReplyRatesRequest.
 
         所属领域。
 

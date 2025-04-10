@@ -27,7 +27,7 @@ class DeleteEndpointPermissionsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """DeleteEndpointPermissionsRequest
+        r"""DeleteEndpointPermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteEndpointPermissionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteEndpointPermissionsRequest.
+        r"""Gets the instance_id of this DeleteEndpointPermissionsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -60,7 +60,7 @@ class DeleteEndpointPermissionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteEndpointPermissionsRequest.
+        r"""Sets the instance_id of this DeleteEndpointPermissionsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -71,7 +71,7 @@ class DeleteEndpointPermissionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteEndpointPermissionsRequest.
+        r"""Gets the body of this DeleteEndpointPermissionsRequest.
 
         :return: The body of this DeleteEndpointPermissionsRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.EndpointPermissionList`
@@ -80,7 +80,7 @@ class DeleteEndpointPermissionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteEndpointPermissionsRequest.
+        r"""Sets the body of this DeleteEndpointPermissionsRequest.
 
         :param body: The body of this DeleteEndpointPermissionsRequest.
         :type body: :class:`huaweicloudsdkapig.v2.EndpointPermissionList`

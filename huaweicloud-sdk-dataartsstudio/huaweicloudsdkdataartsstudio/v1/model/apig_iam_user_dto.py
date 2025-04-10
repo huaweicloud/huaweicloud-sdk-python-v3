@@ -33,7 +33,7 @@ class ApigIamUserDto:
     }
 
     def __init__(self, user_id=None, user_name=None, domain_id=None, domain_name=None, is_domain_owner=None):
-        """ApigIamUserDto
+        r"""ApigIamUserDto
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ApigIamUserDto:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ApigIamUserDto.
+        r"""Gets the user_id of this ApigIamUserDto.
 
         用户id
 
@@ -82,7 +82,7 @@ class ApigIamUserDto:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ApigIamUserDto.
+        r"""Sets the user_id of this ApigIamUserDto.
 
         用户id
 
@@ -93,7 +93,7 @@ class ApigIamUserDto:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ApigIamUserDto.
+        r"""Gets the user_name of this ApigIamUserDto.
 
         用户名
 
@@ -104,7 +104,7 @@ class ApigIamUserDto:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ApigIamUserDto.
+        r"""Sets the user_name of this ApigIamUserDto.
 
         用户名
 
@@ -115,7 +115,7 @@ class ApigIamUserDto:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ApigIamUserDto.
+        r"""Gets the domain_id of this ApigIamUserDto.
 
         租户id
 
@@ -126,7 +126,7 @@ class ApigIamUserDto:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ApigIamUserDto.
+        r"""Sets the domain_id of this ApigIamUserDto.
 
         租户id
 
@@ -137,7 +137,7 @@ class ApigIamUserDto:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ApigIamUserDto.
+        r"""Gets the domain_name of this ApigIamUserDto.
 
         租户名
 
@@ -148,7 +148,7 @@ class ApigIamUserDto:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ApigIamUserDto.
+        r"""Sets the domain_name of this ApigIamUserDto.
 
         租户名
 
@@ -159,7 +159,7 @@ class ApigIamUserDto:
 
     @property
     def is_domain_owner(self):
-        """Gets the is_domain_owner of this ApigIamUserDto.
+        r"""Gets the is_domain_owner of this ApigIamUserDto.
 
         是否是空间拥有者
 
@@ -170,7 +170,7 @@ class ApigIamUserDto:
 
     @is_domain_owner.setter
     def is_domain_owner(self, is_domain_owner):
-        """Sets the is_domain_owner of this ApigIamUserDto.
+        r"""Sets the is_domain_owner of this ApigIamUserDto.
 
         是否是空间拥有者
 

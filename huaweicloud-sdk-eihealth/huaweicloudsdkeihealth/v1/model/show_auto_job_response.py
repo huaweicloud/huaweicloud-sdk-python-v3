@@ -70,7 +70,7 @@ class ShowAutoJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, create_time=None, finish_time=None, database_id=None, database_column=None, database_column_type=None, clean_database_column=None, database_trigger=None, tool_info=None, job_name=None, job_name_type=None, job_description=None, labels=None, priority=None, timeout=None, output_dir=None, output_dir_type=None, node_labels=None, io_acc_id=None, tasks=None):
-        """ShowAutoJobResponse
+        r"""ShowAutoJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -198,7 +198,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowAutoJobResponse.
+        r"""Gets the id of this ShowAutoJobResponse.
 
         自动作业ID
 
@@ -209,7 +209,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAutoJobResponse.
+        r"""Sets the id of this ShowAutoJobResponse.
 
         自动作业ID
 
@@ -220,7 +220,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowAutoJobResponse.
+        r"""Gets the name of this ShowAutoJobResponse.
 
         自动作业的名称
 
@@ -231,7 +231,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAutoJobResponse.
+        r"""Sets the name of this ShowAutoJobResponse.
 
         自动作业的名称
 
@@ -242,7 +242,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowAutoJobResponse.
+        r"""Gets the description of this ShowAutoJobResponse.
 
         自动作业的描述
 
@@ -253,7 +253,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowAutoJobResponse.
+        r"""Sets the description of this ShowAutoJobResponse.
 
         自动作业的描述
 
@@ -264,7 +264,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowAutoJobResponse.
+        r"""Gets the status of this ShowAutoJobResponse.
 
         自动作业状态
 
@@ -275,7 +275,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAutoJobResponse.
+        r"""Sets the status of this ShowAutoJobResponse.
 
         自动作业状态
 
@@ -286,7 +286,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowAutoJobResponse.
+        r"""Gets the create_time of this ShowAutoJobResponse.
 
         自动作业创建时间
 
@@ -297,7 +297,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowAutoJobResponse.
+        r"""Sets the create_time of this ShowAutoJobResponse.
 
         自动作业创建时间
 
@@ -308,7 +308,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this ShowAutoJobResponse.
+        r"""Gets the finish_time of this ShowAutoJobResponse.
 
         自动作业结束时间
 
@@ -319,7 +319,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this ShowAutoJobResponse.
+        r"""Sets the finish_time of this ShowAutoJobResponse.
 
         自动作业结束时间
 
@@ -330,7 +330,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def database_id(self):
-        """Gets the database_id of this ShowAutoJobResponse.
+        r"""Gets the database_id of this ShowAutoJobResponse.
 
         自动作业依赖的数据库ID
 
@@ -341,7 +341,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @database_id.setter
     def database_id(self, database_id):
-        """Sets the database_id of this ShowAutoJobResponse.
+        r"""Sets the database_id of this ShowAutoJobResponse.
 
         自动作业依赖的数据库ID
 
@@ -352,7 +352,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def database_column(self):
-        """Gets the database_column of this ShowAutoJobResponse.
+        r"""Gets the database_column of this ShowAutoJobResponse.
 
         自动作业状态更新列
 
@@ -363,7 +363,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @database_column.setter
     def database_column(self, database_column):
-        """Sets the database_column of this ShowAutoJobResponse.
+        r"""Sets the database_column of this ShowAutoJobResponse.
 
         自动作业状态更新列
 
@@ -374,7 +374,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def database_column_type(self):
-        """Gets the database_column_type of this ShowAutoJobResponse.
+        r"""Gets the database_column_type of this ShowAutoJobResponse.
 
         自动作业状态更新列的类型，不填默认为EXISTED
 
@@ -385,7 +385,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @database_column_type.setter
     def database_column_type(self, database_column_type):
-        """Sets the database_column_type of this ShowAutoJobResponse.
+        r"""Sets the database_column_type of this ShowAutoJobResponse.
 
         自动作业状态更新列的类型，不填默认为EXISTED
 
@@ -396,7 +396,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def clean_database_column(self):
-        """Gets the clean_database_column of this ShowAutoJobResponse.
+        r"""Gets the clean_database_column of this ShowAutoJobResponse.
 
         是否清空作业状态更新列
 
@@ -407,7 +407,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @clean_database_column.setter
     def clean_database_column(self, clean_database_column):
-        """Sets the clean_database_column of this ShowAutoJobResponse.
+        r"""Sets the clean_database_column of this ShowAutoJobResponse.
 
         是否清空作业状态更新列
 
@@ -418,7 +418,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def database_trigger(self):
-        """Gets the database_trigger of this ShowAutoJobResponse.
+        r"""Gets the database_trigger of this ShowAutoJobResponse.
 
         自动作业触发器
 
@@ -429,7 +429,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @database_trigger.setter
     def database_trigger(self, database_trigger):
-        """Sets the database_trigger of this ShowAutoJobResponse.
+        r"""Sets the database_trigger of this ShowAutoJobResponse.
 
         自动作业触发器
 
@@ -440,7 +440,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def tool_info(self):
-        """Gets the tool_info of this ShowAutoJobResponse.
+        r"""Gets the tool_info of this ShowAutoJobResponse.
 
         :return: The tool_info of this ShowAutoJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ToolInfoDto`
@@ -449,7 +449,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @tool_info.setter
     def tool_info(self, tool_info):
-        """Sets the tool_info of this ShowAutoJobResponse.
+        r"""Sets the tool_info of this ShowAutoJobResponse.
 
         :param tool_info: The tool_info of this ShowAutoJobResponse.
         :type tool_info: :class:`huaweicloudsdkeihealth.v1.ToolInfoDto`
@@ -458,7 +458,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def job_name(self):
-        """Gets the job_name of this ShowAutoJobResponse.
+        r"""Gets the job_name of this ShowAutoJobResponse.
 
         作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -469,7 +469,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ShowAutoJobResponse.
+        r"""Sets the job_name of this ShowAutoJobResponse.
 
         作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -480,7 +480,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def job_name_type(self):
-        """Gets the job_name_type of this ShowAutoJobResponse.
+        r"""Gets the job_name_type of this ShowAutoJobResponse.
 
         作业的名称类型
 
@@ -491,7 +491,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @job_name_type.setter
     def job_name_type(self, job_name_type):
-        """Sets the job_name_type of this ShowAutoJobResponse.
+        r"""Sets the job_name_type of this ShowAutoJobResponse.
 
         作业的名称类型
 
@@ -502,7 +502,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def job_description(self):
-        """Gets the job_description of this ShowAutoJobResponse.
+        r"""Gets the job_description of this ShowAutoJobResponse.
 
         作业的描述,取值范围：输入字符最大长度为255
 
@@ -513,7 +513,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @job_description.setter
     def job_description(self, job_description):
-        """Sets the job_description of this ShowAutoJobResponse.
+        r"""Sets the job_description of this ShowAutoJobResponse.
 
         作业的描述,取值范围：输入字符最大长度为255
 
@@ -524,7 +524,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this ShowAutoJobResponse.
+        r"""Gets the labels of this ShowAutoJobResponse.
 
         作业标签，取值范围[0,5]，单个标签最大长度32字符，仅仅包含小写字母或数字或大写字母
 
@@ -535,7 +535,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ShowAutoJobResponse.
+        r"""Sets the labels of this ShowAutoJobResponse.
 
         作业标签，取值范围[0,5]，单个标签最大长度32字符，仅仅包含小写字母或数字或大写字母
 
@@ -546,7 +546,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def priority(self):
-        """Gets the priority of this ShowAutoJobResponse.
+        r"""Gets the priority of this ShowAutoJobResponse.
 
         作业的优先级,取值范围[0,9]，0最低，默认数值0
 
@@ -557,7 +557,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ShowAutoJobResponse.
+        r"""Sets the priority of this ShowAutoJobResponse.
 
         作业的优先级,取值范围[0,9]，0最低，默认数值0
 
@@ -568,7 +568,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def timeout(self):
-        """Gets the timeout of this ShowAutoJobResponse.
+        r"""Gets the timeout of this ShowAutoJobResponse.
 
         作业执行超时时长，取值范围: [1, 144000]，单位：分钟，默认数值1440
 
@@ -579,7 +579,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ShowAutoJobResponse.
+        r"""Sets the timeout of this ShowAutoJobResponse.
 
         作业执行超时时长，取值范围: [1, 144000]，单位：分钟，默认数值1440
 
@@ -590,7 +590,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def output_dir(self):
-        """Gets the output_dir of this ShowAutoJobResponse.
+        r"""Gets the output_dir of this ShowAutoJobResponse.
 
         job结果存储目录，不指定则在workflow的工作目录下生产job同名子目录，指定则已指定路径为准;
 
@@ -601,7 +601,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @output_dir.setter
     def output_dir(self, output_dir):
-        """Sets the output_dir of this ShowAutoJobResponse.
+        r"""Sets the output_dir of this ShowAutoJobResponse.
 
         job结果存储目录，不指定则在workflow的工作目录下生产job同名子目录，指定则已指定路径为准;
 
@@ -612,7 +612,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def output_dir_type(self):
-        """Gets the output_dir_type of this ShowAutoJobResponse.
+        r"""Gets the output_dir_type of this ShowAutoJobResponse.
 
         输出路径的类型
 
@@ -623,7 +623,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @output_dir_type.setter
     def output_dir_type(self, output_dir_type):
-        """Sets the output_dir_type of this ShowAutoJobResponse.
+        r"""Sets the output_dir_type of this ShowAutoJobResponse.
 
         输出路径的类型
 
@@ -634,7 +634,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def node_labels(self):
-        """Gets the node_labels of this ShowAutoJobResponse.
+        r"""Gets the node_labels of this ShowAutoJobResponse.
 
         节点标签 取值范围[0,1]，单个标签最大长度63字符
 
@@ -645,7 +645,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @node_labels.setter
     def node_labels(self, node_labels):
-        """Sets the node_labels of this ShowAutoJobResponse.
+        r"""Sets the node_labels of this ShowAutoJobResponse.
 
         节点标签 取值范围[0,1]，单个标签最大长度63字符
 
@@ -656,7 +656,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def io_acc_id(self):
-        """Gets the io_acc_id of this ShowAutoJobResponse.
+        r"""Gets the io_acc_id of this ShowAutoJobResponse.
 
         自动作业使用的IO加速实例id，不填表示不使用
 
@@ -667,7 +667,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @io_acc_id.setter
     def io_acc_id(self, io_acc_id):
-        """Sets the io_acc_id of this ShowAutoJobResponse.
+        r"""Sets the io_acc_id of this ShowAutoJobResponse.
 
         自动作业使用的IO加速实例id，不填表示不使用
 
@@ -678,7 +678,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ShowAutoJobResponse.
+        r"""Gets the tasks of this ShowAutoJobResponse.
 
         自动作业依赖的流程信息
 
@@ -689,7 +689,7 @@ class ShowAutoJobResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ShowAutoJobResponse.
+        r"""Sets the tasks of this ShowAutoJobResponse.
 
         自动作业依赖的流程信息
 

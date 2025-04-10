@@ -34,7 +34,7 @@ class ComponentFailDetail:
     }
 
     def __init__(self):
-        """ComponentFailDetail
+        r"""ComponentFailDetail
 
         The model defined in huaweicloud sdk
 

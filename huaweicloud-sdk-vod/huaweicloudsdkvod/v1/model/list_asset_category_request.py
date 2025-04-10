@@ -25,7 +25,7 @@ class ListAssetCategoryRequest:
     }
 
     def __init__(self, id=None):
-        """ListAssetCategoryRequest
+        r"""ListAssetCategoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListAssetCategoryRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListAssetCategoryRequest.
+        r"""Gets the id of this ListAssetCategoryRequest.
 
         视频分类ID。  若设置为0，则查询所有一级分类。
 
@@ -53,7 +53,7 @@ class ListAssetCategoryRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListAssetCategoryRequest.
+        r"""Sets the id of this ListAssetCategoryRequest.
 
         视频分类ID。  若设置为0，则查询所有一级分类。
 

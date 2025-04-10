@@ -39,7 +39,7 @@ class HttpInfoRequestBody:
     }
 
     def __init__(self, cert_name=None, https_status=None, certificate=None, private_key=None, http2=None, certificate_type=None, force_redirect_https=None, force_redirect_config=None):
-        """HttpInfoRequestBody
+        r"""HttpInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class HttpInfoRequestBody:
 
     @property
     def cert_name(self):
-        """Gets the cert_name of this HttpInfoRequestBody.
+        r"""Gets the cert_name of this HttpInfoRequestBody.
 
         证书名字。（长度限制为3-64字符）。
 
@@ -101,7 +101,7 @@ class HttpInfoRequestBody:
 
     @cert_name.setter
     def cert_name(self, cert_name):
-        """Sets the cert_name of this HttpInfoRequestBody.
+        r"""Sets the cert_name of this HttpInfoRequestBody.
 
         证书名字。（长度限制为3-64字符）。
 
@@ -112,7 +112,7 @@ class HttpInfoRequestBody:
 
     @property
     def https_status(self):
-        """Gets the https_status of this HttpInfoRequestBody.
+        r"""Gets the https_status of this HttpInfoRequestBody.
 
         HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源；3：启用HTTPS加速并HTTPS回源，首次配置证书需要传递证书及私钥，如已有证书可不用传证书及私钥。
 
@@ -123,7 +123,7 @@ class HttpInfoRequestBody:
 
     @https_status.setter
     def https_status(self, https_status):
-        """Sets the https_status of this HttpInfoRequestBody.
+        r"""Sets the https_status of this HttpInfoRequestBody.
 
         HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源；3：启用HTTPS加速并HTTPS回源，首次配置证书需要传递证书及私钥，如已有证书可不用传证书及私钥。
 
@@ -134,7 +134,7 @@ class HttpInfoRequestBody:
 
     @property
     def certificate(self):
-        """Gets the certificate of this HttpInfoRequestBody.
+        r"""Gets the certificate of this HttpInfoRequestBody.
 
         HTTPS协议使用的SSL证书内容，仅支持PEM编码格式。不启用证书则无需输入。初次配置证书时必传。
 
@@ -145,7 +145,7 @@ class HttpInfoRequestBody:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this HttpInfoRequestBody.
+        r"""Sets the certificate of this HttpInfoRequestBody.
 
         HTTPS协议使用的SSL证书内容，仅支持PEM编码格式。不启用证书则无需输入。初次配置证书时必传。
 
@@ -156,7 +156,7 @@ class HttpInfoRequestBody:
 
     @property
     def private_key(self):
-        """Gets the private_key of this HttpInfoRequestBody.
+        r"""Gets the private_key of this HttpInfoRequestBody.
 
         HTTPS协议使用的SSL证书私钥内容，仅支持PEM编码格式。不启用证书则无需输入。初次配置证书时必传。
 
@@ -167,7 +167,7 @@ class HttpInfoRequestBody:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this HttpInfoRequestBody.
+        r"""Sets the private_key of this HttpInfoRequestBody.
 
         HTTPS协议使用的SSL证书私钥内容，仅支持PEM编码格式。不启用证书则无需输入。初次配置证书时必传。
 
@@ -178,7 +178,7 @@ class HttpInfoRequestBody:
 
     @property
     def http2(self):
-        """Gets the http2 of this HttpInfoRequestBody.
+        r"""Gets the http2 of this HttpInfoRequestBody.
 
         是否使用HTTP2.0。（1：是，0：否。）
 
@@ -189,7 +189,7 @@ class HttpInfoRequestBody:
 
     @http2.setter
     def http2(self, http2):
-        """Sets the http2 of this HttpInfoRequestBody.
+        r"""Sets the http2 of this HttpInfoRequestBody.
 
         是否使用HTTP2.0。（1：是，0：否。）
 
@@ -200,7 +200,7 @@ class HttpInfoRequestBody:
 
     @property
     def certificate_type(self):
-        """Gets the certificate_type of this HttpInfoRequestBody.
+        r"""Gets the certificate_type of this HttpInfoRequestBody.
 
         证书类型。1：代表华为云托管证书；0：表示自有证书。 默认值0。
 
@@ -211,7 +211,7 @@ class HttpInfoRequestBody:
 
     @certificate_type.setter
     def certificate_type(self, certificate_type):
-        """Sets the certificate_type of this HttpInfoRequestBody.
+        r"""Sets the certificate_type of this HttpInfoRequestBody.
 
         证书类型。1：代表华为云托管证书；0：表示自有证书。 默认值0。
 
@@ -222,7 +222,7 @@ class HttpInfoRequestBody:
 
     @property
     def force_redirect_https(self):
-        """Gets the force_redirect_https of this HttpInfoRequestBody.
+        r"""Gets the force_redirect_https of this HttpInfoRequestBody.
 
         强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（此参数即将下线,建议使用force_redirect_config修改配置）
 
@@ -233,7 +233,7 @@ class HttpInfoRequestBody:
 
     @force_redirect_https.setter
     def force_redirect_https(self, force_redirect_https):
-        """Sets the force_redirect_https of this HttpInfoRequestBody.
+        r"""Sets the force_redirect_https of this HttpInfoRequestBody.
 
         强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（此参数即将下线,建议使用force_redirect_config修改配置）
 
@@ -244,7 +244,7 @@ class HttpInfoRequestBody:
 
     @property
     def force_redirect_config(self):
-        """Gets the force_redirect_config of this HttpInfoRequestBody.
+        r"""Gets the force_redirect_config of this HttpInfoRequestBody.
 
         :return: The force_redirect_config of this HttpInfoRequestBody.
         :rtype: :class:`huaweicloudsdkcdn.v1.ForceRedirect`
@@ -253,7 +253,7 @@ class HttpInfoRequestBody:
 
     @force_redirect_config.setter
     def force_redirect_config(self, force_redirect_config):
-        """Sets the force_redirect_config of this HttpInfoRequestBody.
+        r"""Sets the force_redirect_config of this HttpInfoRequestBody.
 
         :param force_redirect_config: The force_redirect_config of this HttpInfoRequestBody.
         :type force_redirect_config: :class:`huaweicloudsdkcdn.v1.ForceRedirect`

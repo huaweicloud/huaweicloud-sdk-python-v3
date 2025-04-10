@@ -25,7 +25,7 @@ class DeleteTemplateGroupCollectionRequest:
     }
 
     def __init__(self, group_collection_id=None):
-        """DeleteTemplateGroupCollectionRequest
+        r"""DeleteTemplateGroupCollectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTemplateGroupCollectionRequest:
 
     @property
     def group_collection_id(self):
-        """Gets the group_collection_id of this DeleteTemplateGroupCollectionRequest.
+        r"""Gets the group_collection_id of this DeleteTemplateGroupCollectionRequest.
 
         模板组集合id 
 
@@ -53,7 +53,7 @@ class DeleteTemplateGroupCollectionRequest:
 
     @group_collection_id.setter
     def group_collection_id(self, group_collection_id):
-        """Sets the group_collection_id of this DeleteTemplateGroupCollectionRequest.
+        r"""Sets the group_collection_id of this DeleteTemplateGroupCollectionRequest.
 
         模板组集合id 
 

@@ -35,7 +35,7 @@ class MicroServiceInfoNacosBase:
     }
 
     def __init__(self, namespace=None, cluster_name=None, group_name=None, service_name=None, server_config=None, user_info=None):
-        """MicroServiceInfoNacosBase
+        r"""MicroServiceInfoNacosBase
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class MicroServiceInfoNacosBase:
 
     @property
     def namespace(self):
-        """Gets the namespace of this MicroServiceInfoNacosBase.
+        r"""Gets the namespace of this MicroServiceInfoNacosBase.
 
         命名空间ID，当选择默认命名空间public时，此项为空。由字母、数字、连接符('-')、下划线('_')组成且64个字符之内。 
 
@@ -86,7 +86,7 @@ class MicroServiceInfoNacosBase:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this MicroServiceInfoNacosBase.
+        r"""Sets the namespace of this MicroServiceInfoNacosBase.
 
         命名空间ID，当选择默认命名空间public时，此项为空。由字母、数字、连接符('-')、下划线('_')组成且64个字符之内。 
 
@@ -97,7 +97,7 @@ class MicroServiceInfoNacosBase:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this MicroServiceInfoNacosBase.
+        r"""Gets the cluster_name of this MicroServiceInfoNacosBase.
 
         集群名称，默认为DEFAULT。由字母、数字、连接符('-')、下划线('_')组成且64个字符之内。
 
@@ -108,7 +108,7 @@ class MicroServiceInfoNacosBase:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this MicroServiceInfoNacosBase.
+        r"""Sets the cluster_name of this MicroServiceInfoNacosBase.
 
         集群名称，默认为DEFAULT。由字母、数字、连接符('-')、下划线('_')组成且64个字符之内。
 
@@ -119,7 +119,7 @@ class MicroServiceInfoNacosBase:
 
     @property
     def group_name(self):
-        """Gets the group_name of this MicroServiceInfoNacosBase.
+        r"""Gets the group_name of this MicroServiceInfoNacosBase.
 
         分组名称，默认为DEFAULT_GROUP。由字母、数字、连接符('-')、下划线('_')、点号('.')、冒号(':')组成且128个字符之内。 
 
@@ -130,7 +130,7 @@ class MicroServiceInfoNacosBase:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this MicroServiceInfoNacosBase.
+        r"""Sets the group_name of this MicroServiceInfoNacosBase.
 
         分组名称，默认为DEFAULT_GROUP。由字母、数字、连接符('-')、下划线('_')、点号('.')、冒号(':')组成且128个字符之内。 
 
@@ -141,7 +141,7 @@ class MicroServiceInfoNacosBase:
 
     @property
     def service_name(self):
-        """Gets the service_name of this MicroServiceInfoNacosBase.
+        r"""Gets the service_name of this MicroServiceInfoNacosBase.
 
         微服务名称。不包含中文和@@，不得以@开头，512个字符以内。
 
@@ -152,7 +152,7 @@ class MicroServiceInfoNacosBase:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this MicroServiceInfoNacosBase.
+        r"""Sets the service_name of this MicroServiceInfoNacosBase.
 
         微服务名称。不包含中文和@@，不得以@开头，512个字符以内。
 
@@ -163,7 +163,7 @@ class MicroServiceInfoNacosBase:
 
     @property
     def server_config(self):
-        """Gets the server_config of this MicroServiceInfoNacosBase.
+        r"""Gets the server_config of this MicroServiceInfoNacosBase.
 
         nacos服务端配置信息。
 
@@ -174,7 +174,7 @@ class MicroServiceInfoNacosBase:
 
     @server_config.setter
     def server_config(self, server_config):
-        """Sets the server_config of this MicroServiceInfoNacosBase.
+        r"""Sets the server_config of this MicroServiceInfoNacosBase.
 
         nacos服务端配置信息。
 
@@ -185,7 +185,7 @@ class MicroServiceInfoNacosBase:
 
     @property
     def user_info(self):
-        """Gets the user_info of this MicroServiceInfoNacosBase.
+        r"""Gets the user_info of this MicroServiceInfoNacosBase.
 
         :return: The user_info of this MicroServiceInfoNacosBase.
         :rtype: :class:`huaweicloudsdkapig.v2.NacosUserInfo`
@@ -194,7 +194,7 @@ class MicroServiceInfoNacosBase:
 
     @user_info.setter
     def user_info(self, user_info):
-        """Sets the user_info of this MicroServiceInfoNacosBase.
+        r"""Sets the user_info of this MicroServiceInfoNacosBase.
 
         :param user_info: The user_info of this MicroServiceInfoNacosBase.
         :type user_info: :class:`huaweicloudsdkapig.v2.NacosUserInfo`

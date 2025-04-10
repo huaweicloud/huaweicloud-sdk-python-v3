@@ -25,7 +25,7 @@ class CreateAssetCategoryRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAssetCategoryRequest
+        r"""CreateAssetCategoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAssetCategoryRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAssetCategoryRequest.
+        r"""Gets the body of this CreateAssetCategoryRequest.
 
         :return: The body of this CreateAssetCategoryRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.CreateCategoryReq`
@@ -52,7 +52,7 @@ class CreateAssetCategoryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAssetCategoryRequest.
+        r"""Sets the body of this CreateAssetCategoryRequest.
 
         :param body: The body of this CreateAssetCategoryRequest.
         :type body: :class:`huaweicloudsdkvod.v1.CreateCategoryReq`

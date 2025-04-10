@@ -65,7 +65,7 @@ class Template:
     }
 
     def __init__(self, approve_info=None, create_by=None, create_time=None, enterprise_project_id=None, id=None, is_collect=None, is_publish=None, job_id=None, job_version=None, name=None, need_synchronize=None, nodes=None, parameters=None, project_id=None, quote=None, rate_control=None, share_type=None, steps=None, update_by=None, update_time=None, version=None):
-        """Template
+        r"""Template
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class Template:
 
     @property
     def approve_info(self):
-        """Gets the approve_info of this Template.
+        r"""Gets the approve_info of this Template.
 
         :return: The approve_info of this Template.
         :rtype: :class:`huaweicloudsdkaom.v1.ApproveInfo`
@@ -192,7 +192,7 @@ class Template:
 
     @approve_info.setter
     def approve_info(self, approve_info):
-        """Sets the approve_info of this Template.
+        r"""Sets the approve_info of this Template.
 
         :param approve_info: The approve_info of this Template.
         :type approve_info: :class:`huaweicloudsdkaom.v1.ApproveInfo`
@@ -201,7 +201,7 @@ class Template:
 
     @property
     def create_by(self):
-        """Gets the create_by of this Template.
+        r"""Gets the create_by of this Template.
 
         模板创建人，从接口调用传入的token中获取。
 
@@ -212,7 +212,7 @@ class Template:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this Template.
+        r"""Sets the create_by of this Template.
 
         模板创建人，从接口调用传入的token中获取。
 
@@ -223,7 +223,7 @@ class Template:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Template.
+        r"""Gets the create_time of this Template.
 
         模板创建时间，为utc时间毫秒数。
 
@@ -234,7 +234,7 @@ class Template:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Template.
+        r"""Sets the create_time of this Template.
 
         模板创建时间，为utc时间毫秒数。
 
@@ -245,7 +245,7 @@ class Template:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Template.
+        r"""Gets the enterprise_project_id of this Template.
 
         企业项目id
 
@@ -256,7 +256,7 @@ class Template:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Template.
+        r"""Sets the enterprise_project_id of this Template.
 
         企业项目id
 
@@ -267,7 +267,7 @@ class Template:
 
     @property
     def id(self):
-        """Gets the id of this Template.
+        r"""Gets the id of this Template.
 
         模板id，唯一标识，根据project_id和template_name生成。
 
@@ -278,7 +278,7 @@ class Template:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Template.
+        r"""Sets the id of this Template.
 
         模板id，唯一标识，根据project_id和template_name生成。
 
@@ -289,7 +289,7 @@ class Template:
 
     @property
     def is_collect(self):
-        """Gets the is_collect of this Template.
+        r"""Gets the is_collect of this Template.
 
         模板是否收藏，不允许更新模板时修改，更改收藏状态调用单独的更新模板收藏状态接口
 
@@ -300,7 +300,7 @@ class Template:
 
     @is_collect.setter
     def is_collect(self, is_collect):
-        """Sets the is_collect of this Template.
+        r"""Sets the is_collect of this Template.
 
         模板是否收藏，不允许更新模板时修改，更改收藏状态调用单独的更新模板收藏状态接口
 
@@ -311,7 +311,7 @@ class Template:
 
     @property
     def is_publish(self):
-        """Gets the is_publish of this Template.
+        r"""Gets the is_publish of this Template.
 
         是否发布成服务
 
@@ -322,7 +322,7 @@ class Template:
 
     @is_publish.setter
     def is_publish(self, is_publish):
-        """Sets the is_publish of this Template.
+        r"""Sets the is_publish of this Template.
 
         是否发布成服务
 
@@ -333,7 +333,7 @@ class Template:
 
     @property
     def job_id(self):
-        """Gets the job_id of this Template.
+        r"""Gets the job_id of this Template.
 
         作业id
 
@@ -344,7 +344,7 @@ class Template:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this Template.
+        r"""Sets the job_id of this Template.
 
         作业id
 
@@ -355,7 +355,7 @@ class Template:
 
     @property
     def job_version(self):
-        """Gets the job_version of this Template.
+        r"""Gets the job_version of this Template.
 
         作业版本
 
@@ -366,7 +366,7 @@ class Template:
 
     @job_version.setter
     def job_version(self, job_version):
-        """Sets the job_version of this Template.
+        r"""Sets the job_version of this Template.
 
         作业版本
 
@@ -377,7 +377,7 @@ class Template:
 
     @property
     def name(self):
-        """Gets the name of this Template.
+        r"""Gets the name of this Template.
 
         模板名称
 
@@ -388,7 +388,7 @@ class Template:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Template.
+        r"""Sets the name of this Template.
 
         模板名称
 
@@ -399,7 +399,7 @@ class Template:
 
     @property
     def need_synchronize(self):
-        """Gets the need_synchronize of this Template.
+        r"""Gets the need_synchronize of this Template.
 
         是否需要同步
 
@@ -410,7 +410,7 @@ class Template:
 
     @need_synchronize.setter
     def need_synchronize(self, need_synchronize):
-        """Sets the need_synchronize of this Template.
+        r"""Sets the need_synchronize of this Template.
 
         是否需要同步
 
@@ -421,7 +421,7 @@ class Template:
 
     @property
     def nodes(self):
-        """Gets the nodes of this Template.
+        r"""Gets the nodes of this Template.
 
         任务执行时需要的参数列表。
 
@@ -432,7 +432,7 @@ class Template:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this Template.
+        r"""Sets the nodes of this Template.
 
         任务执行时需要的参数列表。
 
@@ -443,7 +443,7 @@ class Template:
 
     @property
     def parameters(self):
-        """Gets the parameters of this Template.
+        r"""Gets the parameters of this Template.
 
         任务执行时需要的参数列表。
 
@@ -454,7 +454,7 @@ class Template:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this Template.
+        r"""Sets the parameters of this Template.
 
         任务执行时需要的参数列表。
 
@@ -465,7 +465,7 @@ class Template:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Template.
+        r"""Gets the project_id of this Template.
 
         项目id
 
@@ -476,7 +476,7 @@ class Template:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Template.
+        r"""Sets the project_id of this Template.
 
         项目id
 
@@ -487,7 +487,7 @@ class Template:
 
     @property
     def quote(self):
-        """Gets the quote of this Template.
+        r"""Gets the quote of this Template.
 
         引用参数
 
@@ -498,7 +498,7 @@ class Template:
 
     @quote.setter
     def quote(self, quote):
-        """Sets the quote of this Template.
+        r"""Sets the quote of this Template.
 
         引用参数
 
@@ -509,7 +509,7 @@ class Template:
 
     @property
     def rate_control(self):
-        """Gets the rate_control of this Template.
+        r"""Gets the rate_control of this Template.
 
         :return: The rate_control of this Template.
         :rtype: :class:`huaweicloudsdkaom.v1.RateControl`
@@ -518,7 +518,7 @@ class Template:
 
     @rate_control.setter
     def rate_control(self, rate_control):
-        """Sets the rate_control of this Template.
+        r"""Sets the rate_control of this Template.
 
         :param rate_control: The rate_control of this Template.
         :type rate_control: :class:`huaweicloudsdkaom.v1.RateControl`
@@ -527,7 +527,7 @@ class Template:
 
     @property
     def share_type(self):
-        """Gets the share_type of this Template.
+        r"""Gets the share_type of this Template.
 
         默认模板为public，自定义模板为private
 
@@ -538,7 +538,7 @@ class Template:
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this Template.
+        r"""Sets the share_type of this Template.
 
         默认模板为public，自定义模板为private
 
@@ -549,7 +549,7 @@ class Template:
 
     @property
     def steps(self):
-        """Gets the steps of this Template.
+        r"""Gets the steps of this Template.
 
         作业步骤
 
@@ -560,7 +560,7 @@ class Template:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this Template.
+        r"""Sets the steps of this Template.
 
         作业步骤
 
@@ -571,7 +571,7 @@ class Template:
 
     @property
     def update_by(self):
-        """Gets the update_by of this Template.
+        r"""Gets the update_by of this Template.
 
         模板更新人，从接口调用传入的token中获取。
 
@@ -582,7 +582,7 @@ class Template:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this Template.
+        r"""Sets the update_by of this Template.
 
         模板更新人，从接口调用传入的token中获取。
 
@@ -593,7 +593,7 @@ class Template:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Template.
+        r"""Gets the update_time of this Template.
 
         模板更新时间，为utc时间毫秒数。
 
@@ -604,7 +604,7 @@ class Template:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Template.
+        r"""Sets the update_time of this Template.
 
         模板更新时间，为utc时间毫秒数。
 
@@ -615,7 +615,7 @@ class Template:
 
     @property
     def version(self):
-        """Gets the version of this Template.
+        r"""Gets the version of this Template.
 
         模板版本
 
@@ -626,7 +626,7 @@ class Template:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Template.
+        r"""Sets the version of this Template.
 
         模板版本
 

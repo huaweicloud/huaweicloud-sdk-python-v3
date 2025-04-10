@@ -35,7 +35,7 @@ class HttpForwarding:
     }
 
     def __init__(self, url=None, cert_id=None, cn_name=None, sni_enable=None, signature_enable=None, token=None):
-        """HttpForwarding
+        r"""HttpForwarding
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class HttpForwarding:
 
     @property
     def url(self):
-        """Gets the url of this HttpForwarding.
+        r"""Gets the url of this HttpForwarding.
 
         **参数说明**：用于接收满足规则条件数据的http服务器地址。
 
@@ -88,7 +88,7 @@ class HttpForwarding:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this HttpForwarding.
+        r"""Sets the url of this HttpForwarding.
 
         **参数说明**：用于接收满足规则条件数据的http服务器地址。
 
@@ -99,7 +99,7 @@ class HttpForwarding:
 
     @property
     def cert_id(self):
-        """Gets the cert_id of this HttpForwarding.
+        r"""Gets the cert_id of this HttpForwarding.
 
         **参数说明**：证书id，请参见[[加载推送证书第3步](https://support.huaweicloud.com/usermanual-iothub/iot_01_0001.html#section3)](tag:hws)[[加载推送证书第3步](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0001.html#section3)](tag:hws_hk)获取证书ID
 
@@ -110,7 +110,7 @@ class HttpForwarding:
 
     @cert_id.setter
     def cert_id(self, cert_id):
-        """Sets the cert_id of this HttpForwarding.
+        r"""Sets the cert_id of this HttpForwarding.
 
         **参数说明**：证书id，请参见[[加载推送证书第3步](https://support.huaweicloud.com/usermanual-iothub/iot_01_0001.html#section3)](tag:hws)[[加载推送证书第3步](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0001.html#section3)](tag:hws_hk)获取证书ID
 
@@ -121,7 +121,7 @@ class HttpForwarding:
 
     @property
     def cn_name(self):
-        """Gets the cn_name of this HttpForwarding.
+        r"""Gets the cn_name of this HttpForwarding.
 
         **参数说明**：当sni_enable为true时，此字段需要填写，内容为将要请求的服务端证书的域名,举例:domain:8443;当sni_enbale为false时，此字段默认不填写。
 
@@ -132,7 +132,7 @@ class HttpForwarding:
 
     @cn_name.setter
     def cn_name(self, cn_name):
-        """Sets the cn_name of this HttpForwarding.
+        r"""Sets the cn_name of this HttpForwarding.
 
         **参数说明**：当sni_enable为true时，此字段需要填写，内容为将要请求的服务端证书的域名,举例:domain:8443;当sni_enbale为false时，此字段默认不填写。
 
@@ -143,7 +143,7 @@ class HttpForwarding:
 
     @property
     def sni_enable(self):
-        """Gets the sni_enable of this HttpForwarding.
+        r"""Gets the sni_enable of this HttpForwarding.
 
         **参数说明**：需要https服务端和客户端都支持此功能，默认为false，设成true表明Https的客户端在发起请求时，需要携带cn_name；https服务端根据cn_name返回对应的证书；设为false可关闭此功能。
 
@@ -154,7 +154,7 @@ class HttpForwarding:
 
     @sni_enable.setter
     def sni_enable(self, sni_enable):
-        """Sets the sni_enable of this HttpForwarding.
+        r"""Sets the sni_enable of this HttpForwarding.
 
         **参数说明**：需要https服务端和客户端都支持此功能，默认为false，设成true表明Https的客户端在发起请求时，需要携带cn_name；https服务端根据cn_name返回对应的证书；设为false可关闭此功能。
 
@@ -165,7 +165,7 @@ class HttpForwarding:
 
     @property
     def signature_enable(self):
-        """Gets the signature_enable of this HttpForwarding.
+        r"""Gets the signature_enable of this HttpForwarding.
 
         **参数说明**：是否启用签名。填写token时， 该参数必须为true， token才可以生效，否则token不生效。推荐设置成true，使用token签名验证消息是否来自平台。
 
@@ -176,7 +176,7 @@ class HttpForwarding:
 
     @signature_enable.setter
     def signature_enable(self, signature_enable):
-        """Sets the signature_enable of this HttpForwarding.
+        r"""Sets the signature_enable of this HttpForwarding.
 
         **参数说明**：是否启用签名。填写token时， 该参数必须为true， token才可以生效，否则token不生效。推荐设置成true，使用token签名验证消息是否来自平台。
 
@@ -187,7 +187,7 @@ class HttpForwarding:
 
     @property
     def token(self):
-        """Gets the token of this HttpForwarding.
+        r"""Gets the token of this HttpForwarding.
 
         **参数说明**：用作生成签名的Token，客户端可以使用该token按照规则生成签名并与推送消息中携带的签名做对比， 从而验证安全性。**取值范围**: 长度不超过32， 不小于3， 只允许字母、数字的组合。请参见[[HTTP/HTTPS推送基于Token认证物联网平台](https://support.huaweicloud.com/usermanual-iothub/iot_01_0001.html#section6)](tag:hws)[[HTTP/HTTPS推送基于Token认证物联网平台](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0001.html#section6)](tag:hws_hk)
 
@@ -198,7 +198,7 @@ class HttpForwarding:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this HttpForwarding.
+        r"""Sets the token of this HttpForwarding.
 
         **参数说明**：用作生成签名的Token，客户端可以使用该token按照规则生成签名并与推送消息中携带的签名做对比， 从而验证安全性。**取值范围**: 长度不超过32， 不小于3， 只允许字母、数字的组合。请参见[[HTTP/HTTPS推送基于Token认证物联网平台](https://support.huaweicloud.com/usermanual-iothub/iot_01_0001.html#section6)](tag:hws)[[HTTP/HTTPS推送基于Token认证物联网平台](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0001.html#section6)](tag:hws_hk)
 

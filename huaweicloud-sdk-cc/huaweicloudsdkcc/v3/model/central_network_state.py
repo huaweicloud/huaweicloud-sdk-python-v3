@@ -25,7 +25,7 @@ class CentralNetworkState:
     }
 
     def __init__(self, state=None):
-        """CentralNetworkState
+        r"""CentralNetworkState
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CentralNetworkState:
 
     @property
     def state(self):
-        """Gets the state of this CentralNetworkState.
+        r"""Gets the state of this CentralNetworkState.
 
         :return: The state of this CentralNetworkState.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkStateEnum`
@@ -51,7 +51,7 @@ class CentralNetworkState:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CentralNetworkState.
+        r"""Sets the state of this CentralNetworkState.
 
         :param state: The state of this CentralNetworkState.
         :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkStateEnum`

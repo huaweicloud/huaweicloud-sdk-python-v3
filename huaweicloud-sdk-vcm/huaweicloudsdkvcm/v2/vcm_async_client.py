@@ -34,7 +34,7 @@ class VcmAsyncClient(Client):
         return client_builder
 
     def check_audio_job_async(self, request):
-        """查询单个作业
+        r"""查询单个作业
 
         该 API 用于查询并显示单个作业详情。
         
@@ -99,7 +99,7 @@ class VcmAsyncClient(Client):
         return http_info
 
     def check_video_job_async(self, request):
-        """查询单个作业
+        r"""查询单个作业
 
         该API用于查询并显示单个作业详情。
         
@@ -164,7 +164,7 @@ class VcmAsyncClient(Client):
         return http_info
 
     def create_audio_job_async(self, request):
-        """创建作业
+        r"""创建作业
 
         该接口用于创建语音内容审核的作业。
         
@@ -229,7 +229,7 @@ class VcmAsyncClient(Client):
         return http_info
 
     def create_video_job_async(self, request):
-        """创建作业
+        r"""创建作业
 
         该接口用于创建视频内容审核的作业。
         
@@ -294,7 +294,7 @@ class VcmAsyncClient(Client):
         return http_info
 
     def delete_demo_info_async(self, request):
-        """删除语音作业
+        r"""删除语音作业
 
         删除语音作业
         
@@ -359,7 +359,7 @@ class VcmAsyncClient(Client):
         return http_info
 
     def delete_video_job_async(self, request):
-        """删除作业
+        r"""删除作业
 
         该API用于删除指定作业。
         
@@ -424,7 +424,7 @@ class VcmAsyncClient(Client):
         return http_info
 
     def list_audio_jobs_async(self, request):
-        """查询作业列表
+        r"""查询作业列表
 
         查询作业列表
         
@@ -487,7 +487,7 @@ class VcmAsyncClient(Client):
         return http_info
 
     def list_video_jobs_async(self, request):
-        """查询作业列表
+        r"""查询作业列表
 
         该API用于查询并显示视频内容审核的作业列表。
         

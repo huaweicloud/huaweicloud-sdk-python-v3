@@ -25,7 +25,7 @@ class UploadAimMsgSignatureFileRequestBody:
     }
 
     def __init__(self, file=None):
-        """UploadAimMsgSignatureFileRequestBody
+        r"""UploadAimMsgSignatureFileRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UploadAimMsgSignatureFileRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this UploadAimMsgSignatureFileRequestBody.
+        r"""Gets the file of this UploadAimMsgSignatureFileRequestBody.
 
         营业执照/授权委托书文件。
 
@@ -53,7 +53,7 @@ class UploadAimMsgSignatureFileRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this UploadAimMsgSignatureFileRequestBody.
+        r"""Sets the file of this UploadAimMsgSignatureFileRequestBody.
 
         营业执照/授权委托书文件。
 

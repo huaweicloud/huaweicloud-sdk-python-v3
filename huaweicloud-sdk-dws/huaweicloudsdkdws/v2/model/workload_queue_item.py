@@ -33,7 +33,7 @@ class WorkloadQueueItem:
     }
 
     def __init__(self, queue_name=None, logical_cluster_name=None, short_query_optimize=None, short_query_concurrency_num=None, resource_item_list=None):
-        """WorkloadQueueItem
+        r"""WorkloadQueueItem
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class WorkloadQueueItem:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this WorkloadQueueItem.
+        r"""Gets the queue_name of this WorkloadQueueItem.
 
         资源池名称。
 
@@ -80,7 +80,7 @@ class WorkloadQueueItem:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this WorkloadQueueItem.
+        r"""Sets the queue_name of this WorkloadQueueItem.
 
         资源池名称。
 
@@ -91,7 +91,7 @@ class WorkloadQueueItem:
 
     @property
     def logical_cluster_name(self):
-        """Gets the logical_cluster_name of this WorkloadQueueItem.
+        r"""Gets the logical_cluster_name of this WorkloadQueueItem.
 
         逻辑集群名称。
 
@@ -102,7 +102,7 @@ class WorkloadQueueItem:
 
     @logical_cluster_name.setter
     def logical_cluster_name(self, logical_cluster_name):
-        """Sets the logical_cluster_name of this WorkloadQueueItem.
+        r"""Sets the logical_cluster_name of this WorkloadQueueItem.
 
         逻辑集群名称。
 
@@ -113,7 +113,7 @@ class WorkloadQueueItem:
 
     @property
     def short_query_optimize(self):
-        """Gets the short_query_optimize of this WorkloadQueueItem.
+        r"""Gets the short_query_optimize of this WorkloadQueueItem.
 
         工作负载队列短查询加速开关。
 
@@ -124,7 +124,7 @@ class WorkloadQueueItem:
 
     @short_query_optimize.setter
     def short_query_optimize(self, short_query_optimize):
-        """Sets the short_query_optimize of this WorkloadQueueItem.
+        r"""Sets the short_query_optimize of this WorkloadQueueItem.
 
         工作负载队列短查询加速开关。
 
@@ -135,7 +135,7 @@ class WorkloadQueueItem:
 
     @property
     def short_query_concurrency_num(self):
-        """Gets the short_query_concurrency_num of this WorkloadQueueItem.
+        r"""Gets the short_query_concurrency_num of this WorkloadQueueItem.
 
         工作负载队列短查询并发数。
 
@@ -146,7 +146,7 @@ class WorkloadQueueItem:
 
     @short_query_concurrency_num.setter
     def short_query_concurrency_num(self, short_query_concurrency_num):
-        """Sets the short_query_concurrency_num of this WorkloadQueueItem.
+        r"""Sets the short_query_concurrency_num of this WorkloadQueueItem.
 
         工作负载队列短查询并发数。
 
@@ -157,7 +157,7 @@ class WorkloadQueueItem:
 
     @property
     def resource_item_list(self):
-        """Gets the resource_item_list of this WorkloadQueueItem.
+        r"""Gets the resource_item_list of this WorkloadQueueItem.
 
         资源配置队列。
 
@@ -168,7 +168,7 @@ class WorkloadQueueItem:
 
     @resource_item_list.setter
     def resource_item_list(self, resource_item_list):
-        """Sets the resource_item_list of this WorkloadQueueItem.
+        r"""Sets the resource_item_list of this WorkloadQueueItem.
 
         资源配置队列。
 

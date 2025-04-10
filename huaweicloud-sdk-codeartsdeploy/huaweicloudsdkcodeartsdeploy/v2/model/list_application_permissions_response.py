@@ -28,7 +28,7 @@ class ListApplicationPermissionsResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """ListApplicationPermissionsResponse
+        r"""ListApplicationPermissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListApplicationPermissionsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListApplicationPermissionsResponse.
+        r"""Gets the result of this ListApplicationPermissionsResponse.
 
         角色应用权限
 
@@ -62,7 +62,7 @@ class ListApplicationPermissionsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListApplicationPermissionsResponse.
+        r"""Sets the result of this ListApplicationPermissionsResponse.
 
         角色应用权限
 
@@ -73,7 +73,7 @@ class ListApplicationPermissionsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListApplicationPermissionsResponse.
+        r"""Gets the status of this ListApplicationPermissionsResponse.
 
         请求成功失败状态
 
@@ -84,7 +84,7 @@ class ListApplicationPermissionsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListApplicationPermissionsResponse.
+        r"""Sets the status of this ListApplicationPermissionsResponse.
 
         请求成功失败状态
 

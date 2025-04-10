@@ -42,7 +42,7 @@ class CreateTokenReqBody:
     }
 
     def __init__(self, client_id=None, client_secret=None, code=None, device_code=None, grant_type=None, redirect_uri=None, refresh_token=None, scopes=None):
-        """CreateTokenReqBody
+        r"""CreateTokenReqBody
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class CreateTokenReqBody:
 
     @property
     def client_id(self):
-        """Gets the client_id of this CreateTokenReqBody.
+        r"""Gets the client_id of this CreateTokenReqBody.
 
         客户端的唯一标识
 
@@ -103,7 +103,7 @@ class CreateTokenReqBody:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this CreateTokenReqBody.
+        r"""Sets the client_id of this CreateTokenReqBody.
 
         客户端的唯一标识
 
@@ -114,7 +114,7 @@ class CreateTokenReqBody:
 
     @property
     def client_secret(self):
-        """Gets the client_secret of this CreateTokenReqBody.
+        r"""Gets the client_secret of this CreateTokenReqBody.
 
         为客户端生成的秘密字符串。客户端将使用此字符串在后续调用中获得服务的身份验证
 
@@ -125,7 +125,7 @@ class CreateTokenReqBody:
 
     @client_secret.setter
     def client_secret(self, client_secret):
-        """Sets the client_secret of this CreateTokenReqBody.
+        r"""Sets the client_secret of this CreateTokenReqBody.
 
         为客户端生成的秘密字符串。客户端将使用此字符串在后续调用中获得服务的身份验证
 
@@ -136,7 +136,7 @@ class CreateTokenReqBody:
 
     @property
     def code(self):
-        """Gets the code of this CreateTokenReqBody.
+        r"""Gets the code of this CreateTokenReqBody.
 
         从授权服务接收的授权代码。执行授权授予请求以获取对令牌的访问权限时需要此参数
 
@@ -147,7 +147,7 @@ class CreateTokenReqBody:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateTokenReqBody.
+        r"""Sets the code of this CreateTokenReqBody.
 
         从授权服务接收的授权代码。执行授权授予请求以获取对令牌的访问权限时需要此参数
 
@@ -158,7 +158,7 @@ class CreateTokenReqBody:
 
     @property
     def device_code(self):
-        """Gets the device_code of this CreateTokenReqBody.
+        r"""Gets the device_code of this CreateTokenReqBody.
 
         仅在为设备代码授权类型调用此API时使用
 
@@ -169,7 +169,7 @@ class CreateTokenReqBody:
 
     @device_code.setter
     def device_code(self, device_code):
-        """Sets the device_code of this CreateTokenReqBody.
+        r"""Sets the device_code of this CreateTokenReqBody.
 
         仅在为设备代码授权类型调用此API时使用
 
@@ -180,7 +180,7 @@ class CreateTokenReqBody:
 
     @property
     def grant_type(self):
-        """Gets the grant_type of this CreateTokenReqBody.
+        r"""Gets the grant_type of this CreateTokenReqBody.
 
         请求的授权类型。支持授权码、设备代码、客户端凭证和刷新令牌等授权类型
 
@@ -191,7 +191,7 @@ class CreateTokenReqBody:
 
     @grant_type.setter
     def grant_type(self, grant_type):
-        """Sets the grant_type of this CreateTokenReqBody.
+        r"""Sets the grant_type of this CreateTokenReqBody.
 
         请求的授权类型。支持授权码、设备代码、客户端凭证和刷新令牌等授权类型
 
@@ -202,7 +202,7 @@ class CreateTokenReqBody:
 
     @property
     def redirect_uri(self):
-        """Gets the redirect_uri of this CreateTokenReqBody.
+        r"""Gets the redirect_uri of this CreateTokenReqBody.
 
         将接收授权代码的应用程序的位置。用户授权服务将请求发送到此位置
 
@@ -213,7 +213,7 @@ class CreateTokenReqBody:
 
     @redirect_uri.setter
     def redirect_uri(self, redirect_uri):
-        """Sets the redirect_uri of this CreateTokenReqBody.
+        r"""Sets the redirect_uri of this CreateTokenReqBody.
 
         将接收授权代码的应用程序的位置。用户授权服务将请求发送到此位置
 
@@ -224,7 +224,7 @@ class CreateTokenReqBody:
 
     @property
     def refresh_token(self):
-        """Gets the refresh_token of this CreateTokenReqBody.
+        r"""Gets the refresh_token of this CreateTokenReqBody.
 
         刷新令牌，此令牌可在访问令牌过期后获取新的访问令牌
 
@@ -235,7 +235,7 @@ class CreateTokenReqBody:
 
     @refresh_token.setter
     def refresh_token(self, refresh_token):
-        """Sets the refresh_token of this CreateTokenReqBody.
+        r"""Sets the refresh_token of this CreateTokenReqBody.
 
         刷新令牌，此令牌可在访问令牌过期后获取新的访问令牌
 
@@ -246,7 +246,7 @@ class CreateTokenReqBody:
 
     @property
     def scopes(self):
-        """Gets the scopes of this CreateTokenReqBody.
+        r"""Gets the scopes of this CreateTokenReqBody.
 
         客户端定义的作用域列表，表示客户端想要获取的权限。授权后，此列表用于在授予访问令牌时限制权限
 
@@ -257,7 +257,7 @@ class CreateTokenReqBody:
 
     @scopes.setter
     def scopes(self, scopes):
-        """Sets the scopes of this CreateTokenReqBody.
+        r"""Sets the scopes of this CreateTokenReqBody.
 
         客户端定义的作用域列表，表示客户端想要获取的权限。授权后，此列表用于在授予访问令牌时限制权限
 

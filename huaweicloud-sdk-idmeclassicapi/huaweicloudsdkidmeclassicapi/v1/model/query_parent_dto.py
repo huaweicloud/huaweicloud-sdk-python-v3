@@ -25,7 +25,7 @@ class QueryParentDTO:
     }
 
     def __init__(self, child_id=None):
-        """QueryParentDTO
+        r"""QueryParentDTO
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class QueryParentDTO:
 
     @property
     def child_id(self):
-        """Gets the child_id of this QueryParentDTO.
+        r"""Gets the child_id of this QueryParentDTO.
 
         **参数解释：**  子节点实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -53,7 +53,7 @@ class QueryParentDTO:
 
     @child_id.setter
     def child_id(self, child_id):
-        """Sets the child_id of this QueryParentDTO.
+        r"""Sets the child_id of this QueryParentDTO.
 
         **参数解释：**  子节点实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 

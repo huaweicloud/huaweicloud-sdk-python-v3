@@ -28,7 +28,7 @@ class ListValueListResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListValueListResponse
+        r"""ListValueListResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListValueListResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListValueListResponse.
+        r"""Gets the total of this ListValueListResponse.
 
         引用表条数
 
@@ -62,7 +62,7 @@ class ListValueListResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListValueListResponse.
+        r"""Sets the total of this ListValueListResponse.
 
         引用表条数
 
@@ -73,7 +73,7 @@ class ListValueListResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListValueListResponse.
+        r"""Gets the items of this ListValueListResponse.
 
         引用表列表
 
@@ -84,7 +84,7 @@ class ListValueListResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListValueListResponse.
+        r"""Sets the items of this ListValueListResponse.
 
         引用表列表
 

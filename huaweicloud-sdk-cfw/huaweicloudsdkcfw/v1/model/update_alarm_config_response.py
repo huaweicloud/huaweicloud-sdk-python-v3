@@ -26,7 +26,7 @@ class UpdateAlarmConfigResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UpdateAlarmConfigResponse
+        r"""UpdateAlarmConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAlarmConfigResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateAlarmConfigResponse.
+        r"""Gets the data of this UpdateAlarmConfigResponse.
 
         :return: The data of this UpdateAlarmConfigResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.ResponseData`
@@ -53,7 +53,7 @@ class UpdateAlarmConfigResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateAlarmConfigResponse.
+        r"""Sets the data of this UpdateAlarmConfigResponse.
 
         :param data: The data of this UpdateAlarmConfigResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.ResponseData`

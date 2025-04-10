@@ -29,7 +29,7 @@ class ProjectInfo:
     }
 
     def __init__(self, domain=None, id=None, name=None):
-        """ProjectInfo
+        r"""ProjectInfo
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ProjectInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this ProjectInfo.
+        r"""Gets the domain of this ProjectInfo.
 
         :return: The domain of this ProjectInfo.
         :rtype: :class:`huaweicloudsdkiam.v3.DomainInfo`
@@ -65,7 +65,7 @@ class ProjectInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ProjectInfo.
+        r"""Sets the domain of this ProjectInfo.
 
         :param domain: The domain of this ProjectInfo.
         :type domain: :class:`huaweicloudsdkiam.v3.DomainInfo`
@@ -74,7 +74,7 @@ class ProjectInfo:
 
     @property
     def id(self):
-        """Gets the id of this ProjectInfo.
+        r"""Gets the id of this ProjectInfo.
 
         project id
 
@@ -85,7 +85,7 @@ class ProjectInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProjectInfo.
+        r"""Sets the id of this ProjectInfo.
 
         project id
 
@@ -96,7 +96,7 @@ class ProjectInfo:
 
     @property
     def name(self):
-        """Gets the name of this ProjectInfo.
+        r"""Gets the name of this ProjectInfo.
 
         project name
 
@@ -107,7 +107,7 @@ class ProjectInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProjectInfo.
+        r"""Sets the name of this ProjectInfo.
 
         project name
 

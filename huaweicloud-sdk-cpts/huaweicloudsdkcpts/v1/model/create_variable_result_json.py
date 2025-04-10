@@ -25,7 +25,7 @@ class CreateVariableResultJson:
     }
 
     def __init__(self, variable_id=None):
-        """CreateVariableResultJson
+        r"""CreateVariableResultJson
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVariableResultJson:
 
     @property
     def variable_id(self):
-        """Gets the variable_id of this CreateVariableResultJson.
+        r"""Gets the variable_id of this CreateVariableResultJson.
 
         变量id
 
@@ -54,7 +54,7 @@ class CreateVariableResultJson:
 
     @variable_id.setter
     def variable_id(self, variable_id):
-        """Sets the variable_id of this CreateVariableResultJson.
+        r"""Sets the variable_id of this CreateVariableResultJson.
 
         变量id
 

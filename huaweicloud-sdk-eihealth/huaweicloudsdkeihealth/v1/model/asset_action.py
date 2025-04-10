@@ -28,7 +28,7 @@ class AssetAction:
     }
 
     def __init__(self):
-        """AssetAction
+        r"""AssetAction
 
         The model defined in huaweicloud sdk
 

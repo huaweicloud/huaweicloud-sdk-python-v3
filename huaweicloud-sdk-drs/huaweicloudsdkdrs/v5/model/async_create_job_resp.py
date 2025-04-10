@@ -25,7 +25,7 @@ class AsyncCreateJobResp:
     }
 
     def __init__(self, async_job_id=None):
-        """AsyncCreateJobResp
+        r"""AsyncCreateJobResp
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AsyncCreateJobResp:
 
     @property
     def async_job_id(self):
-        """Gets the async_job_id of this AsyncCreateJobResp.
+        r"""Gets the async_job_id of this AsyncCreateJobResp.
 
         批量异步创建的任务ID。
 
@@ -53,7 +53,7 @@ class AsyncCreateJobResp:
 
     @async_job_id.setter
     def async_job_id(self, async_job_id):
-        """Sets the async_job_id of this AsyncCreateJobResp.
+        r"""Sets the async_job_id of this AsyncCreateJobResp.
 
         批量异步创建的任务ID。
 

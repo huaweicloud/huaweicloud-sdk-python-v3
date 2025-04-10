@@ -27,7 +27,7 @@ class Sni:
     }
 
     def __init__(self, status=None, server_name=None):
-        """Sni
+        r"""Sni
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class Sni:
 
     @property
     def status(self):
-        """Gets the status of this Sni.
+        r"""Gets the status of this Sni.
 
         是否开启回源SNI，on：打开，off：关闭。
 
@@ -60,7 +60,7 @@ class Sni:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Sni.
+        r"""Sets the status of this Sni.
 
         是否开启回源SNI，on：打开，off：关闭。
 
@@ -71,7 +71,7 @@ class Sni:
 
     @property
     def server_name(self):
-        """Gets the server_name of this Sni.
+        r"""Gets the server_name of this Sni.
 
         CDN节点回源需要访问的源站域名。如test.example.com。   > 1. 开启回源SNI时必填。   > 2. 不支持泛域名，仅支持输入数字、“-”、“.”、英文大小写字符。
 
@@ -82,7 +82,7 @@ class Sni:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this Sni.
+        r"""Sets the server_name of this Sni.
 
         CDN节点回源需要访问的源站域名。如test.example.com。   > 1. 开启回源SNI时必填。   > 2. 不支持泛域名，仅支持输入数字、“-”、“.”、英文大小写字符。
 

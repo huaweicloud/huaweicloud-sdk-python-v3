@@ -33,7 +33,7 @@ class Metadata:
     }
 
     def __init__(self, crypt_key_id=None, dedicated_flavor=None, dedicated_storage_id=None, expand_type=None, hpc_bw=None):
-        """Metadata
+        r"""Metadata
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Metadata:
 
     @property
     def crypt_key_id(self):
-        """Gets the crypt_key_id of this Metadata.
+        r"""Gets the crypt_key_id of this Metadata.
 
         要创加密文件系统，该字段传KMS服务专业版密钥的ID。
 
@@ -82,7 +82,7 @@ class Metadata:
 
     @crypt_key_id.setter
     def crypt_key_id(self, crypt_key_id):
-        """Sets the crypt_key_id of this Metadata.
+        r"""Sets the crypt_key_id of this Metadata.
 
         要创加密文件系统，该字段传KMS服务专业版密钥的ID。
 
@@ -93,7 +93,7 @@ class Metadata:
 
     @property
     def dedicated_flavor(self):
-        """Gets the dedicated_flavor of this Metadata.
+        r"""Gets the dedicated_flavor of this Metadata.
 
         创专属文件系统，要创建的虚拟机的规格。
 
@@ -104,7 +104,7 @@ class Metadata:
 
     @dedicated_flavor.setter
     def dedicated_flavor(self, dedicated_flavor):
-        """Sets the dedicated_flavor of this Metadata.
+        r"""Sets the dedicated_flavor of this Metadata.
 
         创专属文件系统，要创建的虚拟机的规格。
 
@@ -115,7 +115,7 @@ class Metadata:
 
     @property
     def dedicated_storage_id(self):
-        """Gets the dedicated_storage_id of this Metadata.
+        r"""Gets the dedicated_storage_id of this Metadata.
 
         创专属文件系统，要指定一个专属分布式存储的ID。
 
@@ -126,7 +126,7 @@ class Metadata:
 
     @dedicated_storage_id.setter
     def dedicated_storage_id(self, dedicated_storage_id):
-        """Sets the dedicated_storage_id of this Metadata.
+        r"""Sets the dedicated_storage_id of this Metadata.
 
         创专属文件系统，要指定一个专属分布式存储的ID。
 
@@ -137,7 +137,7 @@ class Metadata:
 
     @property
     def expand_type(self):
-        """Gets the expand_type of this Metadata.
+        r"""Gets the expand_type of this Metadata.
 
         扩展类型；当文件系统正在创建时，该字段不返回。  - 创建增强型、20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB、HPC缓存型文件系统时，该参数必填。  - 创建增强型的文件系统，包括标准型-增强版和性能型-增强版，需要填写\"bandwidth\"。  - 创建20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB文件系统，需要填写\"hpc\"。  - 创建HPC缓存型，需要填写\"hpc_cache\"。 
 
@@ -148,7 +148,7 @@ class Metadata:
 
     @expand_type.setter
     def expand_type(self, expand_type):
-        """Sets the expand_type of this Metadata.
+        r"""Sets the expand_type of this Metadata.
 
         扩展类型；当文件系统正在创建时，该字段不返回。  - 创建增强型、20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB、HPC缓存型文件系统时，该参数必填。  - 创建增强型的文件系统，包括标准型-增强版和性能型-增强版，需要填写\"bandwidth\"。  - 创建20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB文件系统，需要填写\"hpc\"。  - 创建HPC缓存型，需要填写\"hpc_cache\"。 
 
@@ -159,7 +159,7 @@ class Metadata:
 
     @property
     def hpc_bw(self):
-        """Gets the hpc_bw of this Metadata.
+        r"""Gets the hpc_bw of this Metadata.
 
         文件系统的带宽规格。  创建20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB、HPC缓存型文件系统时，该参数必填。  20MB/s/TiB，填写\"20M\"。 40MB/s/TiB，填写\"40M\"。 125MB/s/TiB，填写\"125M\"。 250MB/s/TiB，填写\"250M\"。 500MB/s/TiB，填写\"500M\"。 1000MB/s/TiB，填写\"1000M\"。 HPC缓存型，填写\"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"或\"48G\"。 
 
@@ -170,7 +170,7 @@ class Metadata:
 
     @hpc_bw.setter
     def hpc_bw(self, hpc_bw):
-        """Sets the hpc_bw of this Metadata.
+        r"""Sets the hpc_bw of this Metadata.
 
         文件系统的带宽规格。  创建20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB、HPC缓存型文件系统时，该参数必填。  20MB/s/TiB，填写\"20M\"。 40MB/s/TiB，填写\"40M\"。 125MB/s/TiB，填写\"125M\"。 250MB/s/TiB，填写\"250M\"。 500MB/s/TiB，填写\"500M\"。 1000MB/s/TiB，填写\"1000M\"。 HPC缓存型，填写\"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"或\"48G\"。 
 

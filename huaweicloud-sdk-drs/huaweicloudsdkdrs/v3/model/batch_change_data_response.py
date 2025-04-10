@@ -28,7 +28,7 @@ class BatchChangeDataResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchChangeDataResponse
+        r"""BatchChangeDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchChangeDataResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchChangeDataResponse.
+        r"""Gets the results of this BatchChangeDataResponse.
 
         批量数据加工响应列表
 
@@ -62,7 +62,7 @@ class BatchChangeDataResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchChangeDataResponse.
+        r"""Sets the results of this BatchChangeDataResponse.
 
         批量数据加工响应列表
 
@@ -73,7 +73,7 @@ class BatchChangeDataResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchChangeDataResponse.
+        r"""Gets the count of this BatchChangeDataResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class BatchChangeDataResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchChangeDataResponse.
+        r"""Sets the count of this BatchChangeDataResponse.
 
         总数
 

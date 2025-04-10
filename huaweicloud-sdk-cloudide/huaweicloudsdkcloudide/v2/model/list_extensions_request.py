@@ -25,7 +25,7 @@ class ListExtensionsRequest:
     }
 
     def __init__(self, body=None):
-        """ListExtensionsRequest
+        r"""ListExtensionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListExtensionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListExtensionsRequest.
+        r"""Gets the body of this ListExtensionsRequest.
 
         :return: The body of this ListExtensionsRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.ExtensionQueryParamSnake`
@@ -52,7 +52,7 @@ class ListExtensionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListExtensionsRequest.
+        r"""Sets the body of this ListExtensionsRequest.
 
         :param body: The body of this ListExtensionsRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.ExtensionQueryParamSnake`

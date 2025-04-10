@@ -57,7 +57,7 @@ class ListRtcClientQosDetailsRequest:
     }
 
     def __init__(self, authorization=None, x_sdk_date=None, x_project_id=None, project_id=None, domain=None, app_id=None, room_id=None, user_id=None, peer_id=None, stream_id=None, direction=None, mid=None, start_time=None, end_time=None, time_type=None, limit=None, offset=None):
-        """ListRtcClientQosDetailsRequest
+        r"""ListRtcClientQosDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -149,7 +149,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this ListRtcClientQosDetailsRequest.
+        r"""Gets the authorization of this ListRtcClientQosDetailsRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
@@ -160,7 +160,7 @@ class ListRtcClientQosDetailsRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this ListRtcClientQosDetailsRequest.
+        r"""Sets the authorization of this ListRtcClientQosDetailsRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
@@ -171,7 +171,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def x_sdk_date(self):
-        """Gets the x_sdk_date of this ListRtcClientQosDetailsRequest.
+        r"""Gets the x_sdk_date of this ListRtcClientQosDetailsRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。 
 
@@ -182,7 +182,7 @@ class ListRtcClientQosDetailsRequest:
 
     @x_sdk_date.setter
     def x_sdk_date(self, x_sdk_date):
-        """Sets the x_sdk_date of this ListRtcClientQosDetailsRequest.
+        r"""Sets the x_sdk_date of this ListRtcClientQosDetailsRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。 
 
@@ -193,7 +193,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListRtcClientQosDetailsRequest.
+        r"""Gets the x_project_id of this ListRtcClientQosDetailsRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
@@ -204,7 +204,7 @@ class ListRtcClientQosDetailsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListRtcClientQosDetailsRequest.
+        r"""Sets the x_project_id of this ListRtcClientQosDetailsRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
@@ -215,7 +215,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListRtcClientQosDetailsRequest.
+        r"""Gets the project_id of this ListRtcClientQosDetailsRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
@@ -226,7 +226,7 @@ class ListRtcClientQosDetailsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListRtcClientQosDetailsRequest.
+        r"""Sets the project_id of this ListRtcClientQosDetailsRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
@@ -237,7 +237,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ListRtcClientQosDetailsRequest.
+        r"""Gets the domain of this ListRtcClientQosDetailsRequest.
 
         域名 
 
@@ -248,7 +248,7 @@ class ListRtcClientQosDetailsRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListRtcClientQosDetailsRequest.
+        r"""Sets the domain of this ListRtcClientQosDetailsRequest.
 
         域名 
 
@@ -259,7 +259,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListRtcClientQosDetailsRequest.
+        r"""Gets the app_id of this ListRtcClientQosDetailsRequest.
 
         应用id 
 
@@ -270,7 +270,7 @@ class ListRtcClientQosDetailsRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListRtcClientQosDetailsRequest.
+        r"""Sets the app_id of this ListRtcClientQosDetailsRequest.
 
         应用id 
 
@@ -281,7 +281,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this ListRtcClientQosDetailsRequest.
+        r"""Gets the room_id of this ListRtcClientQosDetailsRequest.
 
         房间ID 
 
@@ -292,7 +292,7 @@ class ListRtcClientQosDetailsRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ListRtcClientQosDetailsRequest.
+        r"""Sets the room_id of this ListRtcClientQosDetailsRequest.
 
         房间ID 
 
@@ -303,7 +303,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ListRtcClientQosDetailsRequest.
+        r"""Gets the user_id of this ListRtcClientQosDetailsRequest.
 
         发送端用户 
 
@@ -314,7 +314,7 @@ class ListRtcClientQosDetailsRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ListRtcClientQosDetailsRequest.
+        r"""Sets the user_id of this ListRtcClientQosDetailsRequest.
 
         发送端用户 
 
@@ -325,7 +325,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def peer_id(self):
-        """Gets the peer_id of this ListRtcClientQosDetailsRequest.
+        r"""Gets the peer_id of this ListRtcClientQosDetailsRequest.
 
         需查询接收端用户id 
 
@@ -336,7 +336,7 @@ class ListRtcClientQosDetailsRequest:
 
     @peer_id.setter
     def peer_id(self, peer_id):
-        """Sets the peer_id of this ListRtcClientQosDetailsRequest.
+        r"""Sets the peer_id of this ListRtcClientQosDetailsRequest.
 
         需查询接收端用户id 
 
@@ -347,7 +347,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this ListRtcClientQosDetailsRequest.
+        r"""Gets the stream_id of this ListRtcClientQosDetailsRequest.
 
         流号 
 
@@ -358,7 +358,7 @@ class ListRtcClientQosDetailsRequest:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this ListRtcClientQosDetailsRequest.
+        r"""Sets the stream_id of this ListRtcClientQosDetailsRequest.
 
         流号 
 
@@ -369,7 +369,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def direction(self):
-        """Gets the direction of this ListRtcClientQosDetailsRequest.
+        r"""Gets the direction of this ListRtcClientQosDetailsRequest.
 
         判断上下行数据 
 
@@ -380,7 +380,7 @@ class ListRtcClientQosDetailsRequest:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this ListRtcClientQosDetailsRequest.
+        r"""Sets the direction of this ListRtcClientQosDetailsRequest.
 
         判断上下行数据 
 
@@ -391,7 +391,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def mid(self):
-        """Gets the mid of this ListRtcClientQosDetailsRequest.
+        r"""Gets the mid of this ListRtcClientQosDetailsRequest.
 
         需查询的指标，填all则返回所有指标。多个指标使用','分割 - appcpu：端侧APP CPU使用率（appCpu） - syscpu：端侧系统 CPU使用率（deviceCpu） - abit：端侧音频码率kpbs（bitrate） - vbit：端侧视频码率kbps（bitRate） - dbit：端侧辅流码率kbps（bitRate） - vfps：端侧视频帧率fps（actFrameRate） - dfps：端侧辅流帧率fps（actFrameRate） - vblock：端侧视频卡顿率（统计大于等于600ms视频卡顿） - dblock：端侧辅流卡顿率（统计大于等于600ms辅流卡顿） - aloss：端侧音频丢包率（pktLoss） - vloss：端侧视频丢包率（pktLoss） - dloss：端侧辅流丢包率（pktLoss） - vwidth：端侧视频分辨率宽（actPicW） - vheight：端侧视频分辨率高（actPicH） - dwidth：端侧辅流分辨率宽（actPicW） - dheight：端侧辅流分辨率高（actPicH） - ajitter：端侧音频抖动率（jitter） - artt：端侧音频时延（rtt） - vjitter：端侧视频抖动率（jitter） - vrtt：端侧视频时延（rtt） - djitter：端侧辅流抖动率（jitter） - drtt：端侧辅流时延（rtt） 
 
@@ -402,7 +402,7 @@ class ListRtcClientQosDetailsRequest:
 
     @mid.setter
     def mid(self, mid):
-        """Sets the mid of this ListRtcClientQosDetailsRequest.
+        r"""Sets the mid of this ListRtcClientQosDetailsRequest.
 
         需查询的指标，填all则返回所有指标。多个指标使用','分割 - appcpu：端侧APP CPU使用率（appCpu） - syscpu：端侧系统 CPU使用率（deviceCpu） - abit：端侧音频码率kpbs（bitrate） - vbit：端侧视频码率kbps（bitRate） - dbit：端侧辅流码率kbps（bitRate） - vfps：端侧视频帧率fps（actFrameRate） - dfps：端侧辅流帧率fps（actFrameRate） - vblock：端侧视频卡顿率（统计大于等于600ms视频卡顿） - dblock：端侧辅流卡顿率（统计大于等于600ms辅流卡顿） - aloss：端侧音频丢包率（pktLoss） - vloss：端侧视频丢包率（pktLoss） - dloss：端侧辅流丢包率（pktLoss） - vwidth：端侧视频分辨率宽（actPicW） - vheight：端侧视频分辨率高（actPicH） - dwidth：端侧辅流分辨率宽（actPicW） - dheight：端侧辅流分辨率高（actPicH） - ajitter：端侧音频抖动率（jitter） - artt：端侧音频时延（rtt） - vjitter：端侧视频抖动率（jitter） - vrtt：端侧视频时延（rtt） - djitter：端侧辅流抖动率（jitter） - drtt：端侧辅流时延（rtt） 
 
@@ -413,7 +413,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListRtcClientQosDetailsRequest.
+        r"""Gets the start_time of this ListRtcClientQosDetailsRequest.
 
         查询起始时间。UTC时间，格式：yyyy-mm-ddThh:mm:ssZ，如2020-04-23T06:00:00Z 
 
@@ -424,7 +424,7 @@ class ListRtcClientQosDetailsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListRtcClientQosDetailsRequest.
+        r"""Sets the start_time of this ListRtcClientQosDetailsRequest.
 
         查询起始时间。UTC时间，格式：yyyy-mm-ddThh:mm:ssZ，如2020-04-23T06:00:00Z 
 
@@ -435,7 +435,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListRtcClientQosDetailsRequest.
+        r"""Gets the end_time of this ListRtcClientQosDetailsRequest.
 
         查询结束时间。UTC时间，格式：yyyy-mm-ddThh:mm:ssZ，如2020-04-23T07:00:00Z 
 
@@ -446,7 +446,7 @@ class ListRtcClientQosDetailsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListRtcClientQosDetailsRequest.
+        r"""Sets the end_time of this ListRtcClientQosDetailsRequest.
 
         查询结束时间。UTC时间，格式：yyyy-mm-ddThh:mm:ssZ，如2020-04-23T07:00:00Z 
 
@@ -457,7 +457,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def time_type(self):
-        """Gets the time_type of this ListRtcClientQosDetailsRequest.
+        r"""Gets the time_type of this ListRtcClientQosDetailsRequest.
 
         查询的时间类型取值：stime 数据库打点时间，不填默认ctime查询
 
@@ -468,7 +468,7 @@ class ListRtcClientQosDetailsRequest:
 
     @time_type.setter
     def time_type(self, time_type):
-        """Sets the time_type of this ListRtcClientQosDetailsRequest.
+        r"""Sets the time_type of this ListRtcClientQosDetailsRequest.
 
         查询的时间类型取值：stime 数据库打点时间，不填默认ctime查询
 
@@ -479,7 +479,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRtcClientQosDetailsRequest.
+        r"""Gets the limit of this ListRtcClientQosDetailsRequest.
 
         查询结果限制 
 
@@ -490,7 +490,7 @@ class ListRtcClientQosDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRtcClientQosDetailsRequest.
+        r"""Sets the limit of this ListRtcClientQosDetailsRequest.
 
         查询结果限制 
 
@@ -501,7 +501,7 @@ class ListRtcClientQosDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRtcClientQosDetailsRequest.
+        r"""Gets the offset of this ListRtcClientQosDetailsRequest.
 
         查询偏移量 
 
@@ -512,7 +512,7 @@ class ListRtcClientQosDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRtcClientQosDetailsRequest.
+        r"""Sets the offset of this ListRtcClientQosDetailsRequest.
 
         查询偏移量 
 

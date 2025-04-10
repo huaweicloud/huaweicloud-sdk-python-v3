@@ -33,7 +33,7 @@ class AgencyInfo:
     }
 
     def __init__(self, account_id=None, agency_name=None, permission_set_name=None, agency_urn=None, description=None):
-        """AgencyInfo
+        r"""AgencyInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AgencyInfo:
 
     @property
     def account_id(self):
-        """Gets the account_id of this AgencyInfo.
+        r"""Gets the account_id of this AgencyInfo.
 
         分配给用户的账号的全局唯一标识符（ID）
 
@@ -82,7 +82,7 @@ class AgencyInfo:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this AgencyInfo.
+        r"""Sets the account_id of this AgencyInfo.
 
         分配给用户的账号的全局唯一标识符（ID）
 
@@ -93,7 +93,7 @@ class AgencyInfo:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this AgencyInfo.
+        r"""Gets the agency_name of this AgencyInfo.
 
         分配给用户的委托或信任委托的名称
 
@@ -104,7 +104,7 @@ class AgencyInfo:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this AgencyInfo.
+        r"""Sets the agency_name of this AgencyInfo.
 
         分配给用户的委托或信任委托的名称
 
@@ -115,7 +115,7 @@ class AgencyInfo:
 
     @property
     def permission_set_name(self):
-        """Gets the permission_set_name of this AgencyInfo.
+        r"""Gets the permission_set_name of this AgencyInfo.
 
         权限集名称
 
@@ -126,7 +126,7 @@ class AgencyInfo:
 
     @permission_set_name.setter
     def permission_set_name(self, permission_set_name):
-        """Sets the permission_set_name of this AgencyInfo.
+        r"""Sets the permission_set_name of this AgencyInfo.
 
         权限集名称
 
@@ -137,7 +137,7 @@ class AgencyInfo:
 
     @property
     def agency_urn(self):
-        """Gets the agency_urn of this AgencyInfo.
+        r"""Gets the agency_urn of this AgencyInfo.
 
         委托或信任委托的统一资源名称（URN）
 
@@ -148,7 +148,7 @@ class AgencyInfo:
 
     @agency_urn.setter
     def agency_urn(self, agency_urn):
-        """Sets the agency_urn of this AgencyInfo.
+        r"""Sets the agency_urn of this AgencyInfo.
 
         委托或信任委托的统一资源名称（URN）
 
@@ -159,7 +159,7 @@ class AgencyInfo:
 
     @property
     def description(self):
-        """Gets the description of this AgencyInfo.
+        r"""Gets the description of this AgencyInfo.
 
         描述信息
 
@@ -170,7 +170,7 @@ class AgencyInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AgencyInfo.
+        r"""Sets the description of this AgencyInfo.
 
         描述信息
 

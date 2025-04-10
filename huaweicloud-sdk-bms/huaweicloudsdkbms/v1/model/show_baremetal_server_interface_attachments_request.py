@@ -25,7 +25,7 @@ class ShowBaremetalServerInterfaceAttachmentsRequest:
     }
 
     def __init__(self, server_id=None):
-        """ShowBaremetalServerInterfaceAttachmentsRequest
+        r"""ShowBaremetalServerInterfaceAttachmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowBaremetalServerInterfaceAttachmentsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowBaremetalServerInterfaceAttachmentsRequest.
+        r"""Gets the server_id of this ShowBaremetalServerInterfaceAttachmentsRequest.
 
         裸金属服务器ID
 
@@ -53,7 +53,7 @@ class ShowBaremetalServerInterfaceAttachmentsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowBaremetalServerInterfaceAttachmentsRequest.
+        r"""Sets the server_id of this ShowBaremetalServerInterfaceAttachmentsRequest.
 
         裸金属服务器ID
 

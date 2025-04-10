@@ -27,7 +27,7 @@ class CreateOrUpdateEntitiesRequest:
     }
 
     def __init__(self, instance=None, body=None):
-        """CreateOrUpdateEntitiesRequest
+        r"""CreateOrUpdateEntitiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateOrUpdateEntitiesRequest:
 
     @property
     def instance(self):
-        """Gets the instance of this CreateOrUpdateEntitiesRequest.
+        r"""Gets the instance of this CreateOrUpdateEntitiesRequest.
 
         实例ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)
 
@@ -60,7 +60,7 @@ class CreateOrUpdateEntitiesRequest:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this CreateOrUpdateEntitiesRequest.
+        r"""Sets the instance of this CreateOrUpdateEntitiesRequest.
 
         实例ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)
 
@@ -71,7 +71,7 @@ class CreateOrUpdateEntitiesRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOrUpdateEntitiesRequest.
+        r"""Gets the body of this CreateOrUpdateEntitiesRequest.
 
         :return: The body of this CreateOrUpdateEntitiesRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataEntityWithExtInfo`
@@ -80,7 +80,7 @@ class CreateOrUpdateEntitiesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOrUpdateEntitiesRequest.
+        r"""Sets the body of this CreateOrUpdateEntitiesRequest.
 
         :param body: The body of this CreateOrUpdateEntitiesRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.DataEntityWithExtInfo`

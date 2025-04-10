@@ -25,7 +25,7 @@ class DeleteTransferRequest:
     }
 
     def __init__(self, log_transfer_id=None):
-        """DeleteTransferRequest
+        r"""DeleteTransferRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTransferRequest:
 
     @property
     def log_transfer_id(self):
-        """Gets the log_transfer_id of this DeleteTransferRequest.
+        r"""Gets the log_transfer_id of this DeleteTransferRequest.
 
         日志转储ID。获取ID有3种方式： 1. 调用查询日志转储接口，返回值有日志转储ID  2. 调用新增日志转储接口，返回值有日志转储ID 3. 调用删除日志转储接口，返回值有日志转储ID
 
@@ -53,7 +53,7 @@ class DeleteTransferRequest:
 
     @log_transfer_id.setter
     def log_transfer_id(self, log_transfer_id):
-        """Sets the log_transfer_id of this DeleteTransferRequest.
+        r"""Sets the log_transfer_id of this DeleteTransferRequest.
 
         日志转储ID。获取ID有3种方式： 1. 调用查询日志转储接口，返回值有日志转储ID  2. 调用新增日志转储接口，返回值有日志转储ID 3. 调用删除日志转储接口，返回值有日志转储ID
 

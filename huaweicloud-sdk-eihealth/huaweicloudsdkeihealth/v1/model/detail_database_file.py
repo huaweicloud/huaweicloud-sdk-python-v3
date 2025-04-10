@@ -33,7 +33,7 @@ class DetailDatabaseFile:
     }
 
     def __init__(self, source=None, url=None, eihealth_project_id=None, status=None, failed_reason=None):
-        """DetailDatabaseFile
+        r"""DetailDatabaseFile
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class DetailDatabaseFile:
 
     @property
     def source(self):
-        """Gets the source of this DetailDatabaseFile.
+        r"""Gets the source of this DetailDatabaseFile.
 
         :return: The source of this DetailDatabaseFile.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DatabaseFileSource`
@@ -78,7 +78,7 @@ class DetailDatabaseFile:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this DetailDatabaseFile.
+        r"""Sets the source of this DetailDatabaseFile.
 
         :param source: The source of this DetailDatabaseFile.
         :type source: :class:`huaweicloudsdkeihealth.v1.DatabaseFileSource`
@@ -87,7 +87,7 @@ class DetailDatabaseFile:
 
     @property
     def url(self):
-        """Gets the url of this DetailDatabaseFile.
+        r"""Gets the url of this DetailDatabaseFile.
 
         文件URL，用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -98,7 +98,7 @@ class DetailDatabaseFile:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this DetailDatabaseFile.
+        r"""Sets the url of this DetailDatabaseFile.
 
         文件URL，用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -109,7 +109,7 @@ class DetailDatabaseFile:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this DetailDatabaseFile.
+        r"""Gets the eihealth_project_id of this DetailDatabaseFile.
 
         数据库文件所在项目id，仅文件为数据中心时填写
 
@@ -120,7 +120,7 @@ class DetailDatabaseFile:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this DetailDatabaseFile.
+        r"""Sets the eihealth_project_id of this DetailDatabaseFile.
 
         数据库文件所在项目id，仅文件为数据中心时填写
 
@@ -131,7 +131,7 @@ class DetailDatabaseFile:
 
     @property
     def status(self):
-        """Gets the status of this DetailDatabaseFile.
+        r"""Gets the status of this DetailDatabaseFile.
 
         数据库文件写入状态
 
@@ -142,7 +142,7 @@ class DetailDatabaseFile:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DetailDatabaseFile.
+        r"""Sets the status of this DetailDatabaseFile.
 
         数据库文件写入状态
 
@@ -153,7 +153,7 @@ class DetailDatabaseFile:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this DetailDatabaseFile.
+        r"""Gets the failed_reason of this DetailDatabaseFile.
 
         失败原因
 
@@ -164,7 +164,7 @@ class DetailDatabaseFile:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this DetailDatabaseFile.
+        r"""Sets the failed_reason of this DetailDatabaseFile.
 
         失败原因
 

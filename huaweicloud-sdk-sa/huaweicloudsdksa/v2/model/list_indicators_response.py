@@ -34,7 +34,7 @@ class ListIndicatorsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, total=None, data=None, x_request_id=None):
-        """ListIndicatorsResponse
+        r"""ListIndicatorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListIndicatorsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListIndicatorsResponse.
+        r"""Gets the code of this ListIndicatorsResponse.
 
         Id value
 
@@ -83,7 +83,7 @@ class ListIndicatorsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListIndicatorsResponse.
+        r"""Sets the code of this ListIndicatorsResponse.
 
         Id value
 
@@ -94,7 +94,7 @@ class ListIndicatorsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListIndicatorsResponse.
+        r"""Gets the message of this ListIndicatorsResponse.
 
         Error message
 
@@ -105,7 +105,7 @@ class ListIndicatorsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListIndicatorsResponse.
+        r"""Sets the message of this ListIndicatorsResponse.
 
         Error message
 
@@ -116,7 +116,7 @@ class ListIndicatorsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListIndicatorsResponse.
+        r"""Gets the total of this ListIndicatorsResponse.
 
         tatal count
 
@@ -127,7 +127,7 @@ class ListIndicatorsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListIndicatorsResponse.
+        r"""Sets the total of this ListIndicatorsResponse.
 
         tatal count
 
@@ -138,7 +138,7 @@ class ListIndicatorsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListIndicatorsResponse.
+        r"""Gets the data of this ListIndicatorsResponse.
 
         list of informations of indicator
 
@@ -149,7 +149,7 @@ class ListIndicatorsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListIndicatorsResponse.
+        r"""Sets the data of this ListIndicatorsResponse.
 
         list of informations of indicator
 
@@ -160,7 +160,7 @@ class ListIndicatorsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListIndicatorsResponse.
+        r"""Gets the x_request_id of this ListIndicatorsResponse.
 
         :return: The x_request_id of this ListIndicatorsResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class ListIndicatorsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListIndicatorsResponse.
+        r"""Sets the x_request_id of this ListIndicatorsResponse.
 
         :param x_request_id: The x_request_id of this ListIndicatorsResponse.
         :type x_request_id: str

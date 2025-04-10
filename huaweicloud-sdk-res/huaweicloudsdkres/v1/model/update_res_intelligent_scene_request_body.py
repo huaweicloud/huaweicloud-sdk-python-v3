@@ -35,7 +35,7 @@ class UpdateResIntelligentSceneRequestBody:
     }
 
     def __init__(self, category=None, datasource_id=None, specs_config=None, schedule=None, job_configs=None, scene_name=None):
-        """UpdateResIntelligentSceneRequestBody
+        r"""UpdateResIntelligentSceneRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class UpdateResIntelligentSceneRequestBody:
 
     @property
     def category(self):
-        """Gets the category of this UpdateResIntelligentSceneRequestBody.
+        r"""Gets the category of this UpdateResIntelligentSceneRequestBody.
 
         场景类型： - customize，自定义场景 - intelligent，智能场景
 
@@ -84,7 +84,7 @@ class UpdateResIntelligentSceneRequestBody:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this UpdateResIntelligentSceneRequestBody.
+        r"""Sets the category of this UpdateResIntelligentSceneRequestBody.
 
         场景类型： - customize，自定义场景 - intelligent，智能场景
 
@@ -95,7 +95,7 @@ class UpdateResIntelligentSceneRequestBody:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this UpdateResIntelligentSceneRequestBody.
+        r"""Gets the datasource_id of this UpdateResIntelligentSceneRequestBody.
 
         数据源id，字母、数字、下划线、减号组合32位。
 
@@ -106,7 +106,7 @@ class UpdateResIntelligentSceneRequestBody:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this UpdateResIntelligentSceneRequestBody.
+        r"""Sets the datasource_id of this UpdateResIntelligentSceneRequestBody.
 
         数据源id，字母、数字、下划线、减号组合32位。
 
@@ -117,7 +117,7 @@ class UpdateResIntelligentSceneRequestBody:
 
     @property
     def specs_config(self):
-        """Gets the specs_config of this UpdateResIntelligentSceneRequestBody.
+        r"""Gets the specs_config of this UpdateResIntelligentSceneRequestBody.
 
         :return: The specs_config of this UpdateResIntelligentSceneRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.SpecsConfig`
@@ -126,7 +126,7 @@ class UpdateResIntelligentSceneRequestBody:
 
     @specs_config.setter
     def specs_config(self, specs_config):
-        """Sets the specs_config of this UpdateResIntelligentSceneRequestBody.
+        r"""Sets the specs_config of this UpdateResIntelligentSceneRequestBody.
 
         :param specs_config: The specs_config of this UpdateResIntelligentSceneRequestBody.
         :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
@@ -135,7 +135,7 @@ class UpdateResIntelligentSceneRequestBody:
 
     @property
     def schedule(self):
-        """Gets the schedule of this UpdateResIntelligentSceneRequestBody.
+        r"""Gets the schedule of this UpdateResIntelligentSceneRequestBody.
 
         调度信息。
 
@@ -146,7 +146,7 @@ class UpdateResIntelligentSceneRequestBody:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this UpdateResIntelligentSceneRequestBody.
+        r"""Sets the schedule of this UpdateResIntelligentSceneRequestBody.
 
         调度信息。
 
@@ -157,7 +157,7 @@ class UpdateResIntelligentSceneRequestBody:
 
     @property
     def job_configs(self):
-        """Gets the job_configs of this UpdateResIntelligentSceneRequestBody.
+        r"""Gets the job_configs of this UpdateResIntelligentSceneRequestBody.
 
         :return: The job_configs of this UpdateResIntelligentSceneRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.JobConfig`
@@ -166,7 +166,7 @@ class UpdateResIntelligentSceneRequestBody:
 
     @job_configs.setter
     def job_configs(self, job_configs):
-        """Sets the job_configs of this UpdateResIntelligentSceneRequestBody.
+        r"""Sets the job_configs of this UpdateResIntelligentSceneRequestBody.
 
         :param job_configs: The job_configs of this UpdateResIntelligentSceneRequestBody.
         :type job_configs: :class:`huaweicloudsdkres.v1.JobConfig`
@@ -175,7 +175,7 @@ class UpdateResIntelligentSceneRequestBody:
 
     @property
     def scene_name(self):
-        """Gets the scene_name of this UpdateResIntelligentSceneRequestBody.
+        r"""Gets the scene_name of this UpdateResIntelligentSceneRequestBody.
 
         场景名称，1-64位字母、数字、下划线、中划线组合。
 
@@ -186,7 +186,7 @@ class UpdateResIntelligentSceneRequestBody:
 
     @scene_name.setter
     def scene_name(self, scene_name):
-        """Sets the scene_name of this UpdateResIntelligentSceneRequestBody.
+        r"""Sets the scene_name of this UpdateResIntelligentSceneRequestBody.
 
         场景名称，1-64位字母、数字、下划线、中划线组合。
 

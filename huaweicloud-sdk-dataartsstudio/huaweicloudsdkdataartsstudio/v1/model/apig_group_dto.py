@@ -27,7 +27,7 @@ class ApigGroupDTO:
     }
 
     def __init__(self, group_id=None, group_name=None):
-        """ApigGroupDTO
+        r"""ApigGroupDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApigGroupDTO:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ApigGroupDTO.
+        r"""Gets the group_id of this ApigGroupDTO.
 
         分组编号
 
@@ -61,7 +61,7 @@ class ApigGroupDTO:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ApigGroupDTO.
+        r"""Sets the group_id of this ApigGroupDTO.
 
         分组编号
 
@@ -72,7 +72,7 @@ class ApigGroupDTO:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ApigGroupDTO.
+        r"""Gets the group_name of this ApigGroupDTO.
 
         分组名称
 
@@ -83,7 +83,7 @@ class ApigGroupDTO:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ApigGroupDTO.
+        r"""Sets the group_name of this ApigGroupDTO.
 
         分组名称
 

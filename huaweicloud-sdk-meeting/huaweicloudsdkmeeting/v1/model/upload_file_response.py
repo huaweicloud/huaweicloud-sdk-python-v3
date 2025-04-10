@@ -28,7 +28,7 @@ class UploadFileResponse(SdkResponse):
     }
 
     def __init__(self, file_id=None, image_moderation=None):
-        """UploadFileResponse
+        r"""UploadFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UploadFileResponse(SdkResponse):
 
     @property
     def file_id(self):
-        """Gets the file_id of this UploadFileResponse.
+        r"""Gets the file_id of this UploadFileResponse.
 
         文件Id。
 
@@ -62,7 +62,7 @@ class UploadFileResponse(SdkResponse):
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this UploadFileResponse.
+        r"""Sets the file_id of this UploadFileResponse.
 
         文件Id。
 
@@ -73,7 +73,7 @@ class UploadFileResponse(SdkResponse):
 
     @property
     def image_moderation(self):
-        """Gets the image_moderation of this UploadFileResponse.
+        r"""Gets the image_moderation of this UploadFileResponse.
 
         :return: The image_moderation of this UploadFileResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ImageModerationResult`
@@ -82,7 +82,7 @@ class UploadFileResponse(SdkResponse):
 
     @image_moderation.setter
     def image_moderation(self, image_moderation):
-        """Sets the image_moderation of this UploadFileResponse.
+        r"""Sets the image_moderation of this UploadFileResponse.
 
         :param image_moderation: The image_moderation of this UploadFileResponse.
         :type image_moderation: :class:`huaweicloudsdkmeeting.v1.ImageModerationResult`

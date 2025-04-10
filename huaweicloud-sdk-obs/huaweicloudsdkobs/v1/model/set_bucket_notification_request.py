@@ -33,7 +33,7 @@ class SetBucketNotificationRequest:
     }
 
     def __init__(self, date=None, bucket_name=None, notification=None, body=None):
-        """SetBucketNotificationRequest
+        r"""SetBucketNotificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SetBucketNotificationRequest:
 
     @property
     def date(self):
-        """Gets the date of this SetBucketNotificationRequest.
+        r"""Gets the date of this SetBucketNotificationRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -75,7 +75,7 @@ class SetBucketNotificationRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this SetBucketNotificationRequest.
+        r"""Sets the date of this SetBucketNotificationRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -86,7 +86,7 @@ class SetBucketNotificationRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this SetBucketNotificationRequest.
+        r"""Gets the bucket_name of this SetBucketNotificationRequest.
 
         Name of the requested bucket
 
@@ -97,7 +97,7 @@ class SetBucketNotificationRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this SetBucketNotificationRequest.
+        r"""Sets the bucket_name of this SetBucketNotificationRequest.
 
         Name of the requested bucket
 
@@ -108,7 +108,7 @@ class SetBucketNotificationRequest:
 
     @property
     def notification(self):
-        """Gets the notification of this SetBucketNotificationRequest.
+        r"""Gets the notification of this SetBucketNotificationRequest.
 
         Indicates the notification configuration API of the bucket.
 
@@ -119,7 +119,7 @@ class SetBucketNotificationRequest:
 
     @notification.setter
     def notification(self, notification):
-        """Sets the notification of this SetBucketNotificationRequest.
+        r"""Sets the notification of this SetBucketNotificationRequest.
 
         Indicates the notification configuration API of the bucket.
 
@@ -130,7 +130,7 @@ class SetBucketNotificationRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetBucketNotificationRequest.
+        r"""Gets the body of this SetBucketNotificationRequest.
 
         :return: The body of this SetBucketNotificationRequest.
         :rtype: :class:`huaweicloudsdkobs.v1.SetBucketNotificationRequestBody`
@@ -139,7 +139,7 @@ class SetBucketNotificationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetBucketNotificationRequest.
+        r"""Sets the body of this SetBucketNotificationRequest.
 
         :param body: The body of this SetBucketNotificationRequest.
         :type body: :class:`huaweicloudsdkobs.v1.SetBucketNotificationRequestBody`

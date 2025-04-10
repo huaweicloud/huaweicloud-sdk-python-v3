@@ -26,7 +26,7 @@ class ListElbsResponse(SdkResponse):
     }
 
     def __init__(self, loadbalancers=None):
-        """ListElbsResponse
+        r"""ListElbsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListElbsResponse(SdkResponse):
 
     @property
     def loadbalancers(self):
-        """Gets the loadbalancers of this ListElbsResponse.
+        r"""Gets the loadbalancers of this ListElbsResponse.
 
         负载均衡器列表。
 
@@ -55,7 +55,7 @@ class ListElbsResponse(SdkResponse):
 
     @loadbalancers.setter
     def loadbalancers(self, loadbalancers):
-        """Sets the loadbalancers of this ListElbsResponse.
+        r"""Sets the loadbalancers of this ListElbsResponse.
 
         负载均衡器列表。
 

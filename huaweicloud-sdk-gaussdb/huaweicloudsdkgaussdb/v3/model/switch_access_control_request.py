@@ -31,7 +31,7 @@ class SwitchAccessControlRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, proxy_id=None, body=None):
-        """SwitchAccessControlRequest
+        r"""SwitchAccessControlRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class SwitchAccessControlRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SwitchAccessControlRequest.
+        r"""Gets the x_language of this SwitchAccessControlRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -73,7 +73,7 @@ class SwitchAccessControlRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SwitchAccessControlRequest.
+        r"""Sets the x_language of this SwitchAccessControlRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -84,7 +84,7 @@ class SwitchAccessControlRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchAccessControlRequest.
+        r"""Gets the instance_id of this SwitchAccessControlRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -95,7 +95,7 @@ class SwitchAccessControlRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchAccessControlRequest.
+        r"""Sets the instance_id of this SwitchAccessControlRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -106,7 +106,7 @@ class SwitchAccessControlRequest:
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this SwitchAccessControlRequest.
+        r"""Gets the proxy_id of this SwitchAccessControlRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -117,7 +117,7 @@ class SwitchAccessControlRequest:
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this SwitchAccessControlRequest.
+        r"""Sets the proxy_id of this SwitchAccessControlRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -128,7 +128,7 @@ class SwitchAccessControlRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchAccessControlRequest.
+        r"""Gets the body of this SwitchAccessControlRequest.
 
         :return: The body of this SwitchAccessControlRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SwitchAccessControlRequestBody`
@@ -137,7 +137,7 @@ class SwitchAccessControlRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchAccessControlRequest.
+        r"""Sets the body of this SwitchAccessControlRequest.
 
         :param body: The body of this SwitchAccessControlRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.SwitchAccessControlRequestBody`

@@ -75,7 +75,7 @@ class CambodianIdCardResult:
     }
 
     def __init__(self, id_number=None, name_kh=None, name_en=None, birth_date=None, sex=None, height=None, birth_place=None, address=None, issue_date=None, expiry_date=None, description=None, machine_code1=None, machine_code2=None, machine_code3=None, portrait_image=None, portrait_location=None, idcard_type=None, adjusted_image=None, detect_border_integrity_result=None, detect_blocking_within_border_result=None, detect_blur_result=None, detect_glare_result=None, detect_tampering_result=None, detect_reproduce_result=None, score_info=None, confidence=None):
-        """CambodianIdCardResult
+        r"""CambodianIdCardResult
 
         The model defined in huaweicloud sdk
 
@@ -218,7 +218,7 @@ class CambodianIdCardResult:
 
     @property
     def id_number(self):
-        """Gets the id_number of this CambodianIdCardResult.
+        r"""Gets the id_number of this CambodianIdCardResult.
 
         身份证号码。 
 
@@ -229,7 +229,7 @@ class CambodianIdCardResult:
 
     @id_number.setter
     def id_number(self, id_number):
-        """Sets the id_number of this CambodianIdCardResult.
+        r"""Sets the id_number of this CambodianIdCardResult.
 
         身份证号码。 
 
@@ -240,7 +240,7 @@ class CambodianIdCardResult:
 
     @property
     def name_kh(self):
-        """Gets the name_kh of this CambodianIdCardResult.
+        r"""Gets the name_kh of this CambodianIdCardResult.
 
         高棉语版姓名。 
 
@@ -251,7 +251,7 @@ class CambodianIdCardResult:
 
     @name_kh.setter
     def name_kh(self, name_kh):
-        """Sets the name_kh of this CambodianIdCardResult.
+        r"""Sets the name_kh of this CambodianIdCardResult.
 
         高棉语版姓名。 
 
@@ -262,7 +262,7 @@ class CambodianIdCardResult:
 
     @property
     def name_en(self):
-        """Gets the name_en of this CambodianIdCardResult.
+        r"""Gets the name_en of this CambodianIdCardResult.
 
         英文姓名。 
 
@@ -273,7 +273,7 @@ class CambodianIdCardResult:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this CambodianIdCardResult.
+        r"""Sets the name_en of this CambodianIdCardResult.
 
         英文姓名。 
 
@@ -284,7 +284,7 @@ class CambodianIdCardResult:
 
     @property
     def birth_date(self):
-        """Gets the birth_date of this CambodianIdCardResult.
+        r"""Gets the birth_date of this CambodianIdCardResult.
 
         出生日期。 
 
@@ -295,7 +295,7 @@ class CambodianIdCardResult:
 
     @birth_date.setter
     def birth_date(self, birth_date):
-        """Sets the birth_date of this CambodianIdCardResult.
+        r"""Sets the birth_date of this CambodianIdCardResult.
 
         出生日期。 
 
@@ -306,7 +306,7 @@ class CambodianIdCardResult:
 
     @property
     def sex(self):
-        """Gets the sex of this CambodianIdCardResult.
+        r"""Gets the sex of this CambodianIdCardResult.
 
         性别。 
 
@@ -317,7 +317,7 @@ class CambodianIdCardResult:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this CambodianIdCardResult.
+        r"""Sets the sex of this CambodianIdCardResult.
 
         性别。 
 
@@ -328,7 +328,7 @@ class CambodianIdCardResult:
 
     @property
     def height(self):
-        """Gets the height of this CambodianIdCardResult.
+        r"""Gets the height of this CambodianIdCardResult.
 
         身高。 
 
@@ -339,7 +339,7 @@ class CambodianIdCardResult:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this CambodianIdCardResult.
+        r"""Sets the height of this CambodianIdCardResult.
 
         身高。 
 
@@ -350,7 +350,7 @@ class CambodianIdCardResult:
 
     @property
     def birth_place(self):
-        """Gets the birth_place of this CambodianIdCardResult.
+        r"""Gets the birth_place of this CambodianIdCardResult.
 
         出生地。 
 
@@ -361,7 +361,7 @@ class CambodianIdCardResult:
 
     @birth_place.setter
     def birth_place(self, birth_place):
-        """Sets the birth_place of this CambodianIdCardResult.
+        r"""Sets the birth_place of this CambodianIdCardResult.
 
         出生地。 
 
@@ -372,7 +372,7 @@ class CambodianIdCardResult:
 
     @property
     def address(self):
-        """Gets the address of this CambodianIdCardResult.
+        r"""Gets the address of this CambodianIdCardResult.
 
         地址，以空格分隔。 
 
@@ -383,7 +383,7 @@ class CambodianIdCardResult:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this CambodianIdCardResult.
+        r"""Sets the address of this CambodianIdCardResult.
 
         地址，以空格分隔。 
 
@@ -394,7 +394,7 @@ class CambodianIdCardResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this CambodianIdCardResult.
+        r"""Gets the issue_date of this CambodianIdCardResult.
 
         签发起始日期。 
 
@@ -405,7 +405,7 @@ class CambodianIdCardResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this CambodianIdCardResult.
+        r"""Sets the issue_date of this CambodianIdCardResult.
 
         签发起始日期。 
 
@@ -416,7 +416,7 @@ class CambodianIdCardResult:
 
     @property
     def expiry_date(self):
-        """Gets the expiry_date of this CambodianIdCardResult.
+        r"""Gets the expiry_date of this CambodianIdCardResult.
 
         签发结束日期。 
 
@@ -427,7 +427,7 @@ class CambodianIdCardResult:
 
     @expiry_date.setter
     def expiry_date(self, expiry_date):
-        """Sets the expiry_date of this CambodianIdCardResult.
+        r"""Sets the expiry_date of this CambodianIdCardResult.
 
         签发结束日期。 
 
@@ -438,7 +438,7 @@ class CambodianIdCardResult:
 
     @property
     def description(self):
-        """Gets the description of this CambodianIdCardResult.
+        r"""Gets the description of this CambodianIdCardResult.
 
         图片中的个人特征。 
 
@@ -449,7 +449,7 @@ class CambodianIdCardResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CambodianIdCardResult.
+        r"""Sets the description of this CambodianIdCardResult.
 
         图片中的个人特征。 
 
@@ -460,7 +460,7 @@ class CambodianIdCardResult:
 
     @property
     def machine_code1(self):
-        """Gets the machine_code1 of this CambodianIdCardResult.
+        r"""Gets the machine_code1 of this CambodianIdCardResult.
 
         机器码第一行。 
 
@@ -471,7 +471,7 @@ class CambodianIdCardResult:
 
     @machine_code1.setter
     def machine_code1(self, machine_code1):
-        """Sets the machine_code1 of this CambodianIdCardResult.
+        r"""Sets the machine_code1 of this CambodianIdCardResult.
 
         机器码第一行。 
 
@@ -482,7 +482,7 @@ class CambodianIdCardResult:
 
     @property
     def machine_code2(self):
-        """Gets the machine_code2 of this CambodianIdCardResult.
+        r"""Gets the machine_code2 of this CambodianIdCardResult.
 
         机器码第二行。 
 
@@ -493,7 +493,7 @@ class CambodianIdCardResult:
 
     @machine_code2.setter
     def machine_code2(self, machine_code2):
-        """Sets the machine_code2 of this CambodianIdCardResult.
+        r"""Sets the machine_code2 of this CambodianIdCardResult.
 
         机器码第二行。 
 
@@ -504,7 +504,7 @@ class CambodianIdCardResult:
 
     @property
     def machine_code3(self):
-        """Gets the machine_code3 of this CambodianIdCardResult.
+        r"""Gets the machine_code3 of this CambodianIdCardResult.
 
         机器码第三行。 
 
@@ -515,7 +515,7 @@ class CambodianIdCardResult:
 
     @machine_code3.setter
     def machine_code3(self, machine_code3):
-        """Sets the machine_code3 of this CambodianIdCardResult.
+        r"""Sets the machine_code3 of this CambodianIdCardResult.
 
         机器码第三行。 
 
@@ -526,7 +526,7 @@ class CambodianIdCardResult:
 
     @property
     def portrait_image(self):
-        """Gets the portrait_image of this CambodianIdCardResult.
+        r"""Gets the portrait_image of this CambodianIdCardResult.
 
         头像的base64编码。 当输入参数“return_portrait_image”为“true”时，才返回该参数。 
 
@@ -537,7 +537,7 @@ class CambodianIdCardResult:
 
     @portrait_image.setter
     def portrait_image(self, portrait_image):
-        """Sets the portrait_image of this CambodianIdCardResult.
+        r"""Sets the portrait_image of this CambodianIdCardResult.
 
         头像的base64编码。 当输入参数“return_portrait_image”为“true”时，才返回该参数。 
 
@@ -548,7 +548,7 @@ class CambodianIdCardResult:
 
     @property
     def portrait_location(self):
-        """Gets the portrait_location of this CambodianIdCardResult.
+        r"""Gets the portrait_location of this CambodianIdCardResult.
 
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -559,7 +559,7 @@ class CambodianIdCardResult:
 
     @portrait_location.setter
     def portrait_location(self, portrait_location):
-        """Sets the portrait_location of this CambodianIdCardResult.
+        r"""Sets the portrait_location of this CambodianIdCardResult.
 
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -570,7 +570,7 @@ class CambodianIdCardResult:
 
     @property
     def idcard_type(self):
-        """Gets the idcard_type of this CambodianIdCardResult.
+        r"""Gets the idcard_type of this CambodianIdCardResult.
 
         身份证的类型。当输入参数\"idcard_type \"为\"true\"时，才返回该参数。取值如下所示： - normal：身份证原件 - copy：复印的身份证 
 
@@ -581,7 +581,7 @@ class CambodianIdCardResult:
 
     @idcard_type.setter
     def idcard_type(self, idcard_type):
-        """Sets the idcard_type of this CambodianIdCardResult.
+        r"""Sets the idcard_type of this CambodianIdCardResult.
 
         身份证的类型。当输入参数\"idcard_type \"为\"true\"时，才返回该参数。取值如下所示： - normal：身份证原件 - copy：复印的身份证 
 
@@ -592,7 +592,7 @@ class CambodianIdCardResult:
 
     @property
     def adjusted_image(self):
-        """Gets the adjusted_image of this CambodianIdCardResult.
+        r"""Gets the adjusted_image of this CambodianIdCardResult.
 
         身份证原图的base64编码。 当输入参数\"return_adjusted_image\"为\"true\"时，才返回该参数。 
 
@@ -603,7 +603,7 @@ class CambodianIdCardResult:
 
     @adjusted_image.setter
     def adjusted_image(self, adjusted_image):
-        """Sets the adjusted_image of this CambodianIdCardResult.
+        r"""Sets the adjusted_image of this CambodianIdCardResult.
 
         身份证原图的base64编码。 当输入参数\"return_adjusted_image\"为\"true\"时，才返回该参数。 
 
@@ -614,7 +614,7 @@ class CambodianIdCardResult:
 
     @property
     def detect_border_integrity_result(self):
-        """Gets the detect_border_integrity_result of this CambodianIdCardResult.
+        r"""Gets the detect_border_integrity_result of this CambodianIdCardResult.
 
         身份证图片边框完整性告警结果，\"true\"表示边框不完整，\"false\"表示边框完整。仅在输入参数detect_border_integrity为true时，返回该字段。 
 
@@ -625,7 +625,7 @@ class CambodianIdCardResult:
 
     @detect_border_integrity_result.setter
     def detect_border_integrity_result(self, detect_border_integrity_result):
-        """Sets the detect_border_integrity_result of this CambodianIdCardResult.
+        r"""Sets the detect_border_integrity_result of this CambodianIdCardResult.
 
         身份证图片边框完整性告警结果，\"true\"表示边框不完整，\"false\"表示边框完整。仅在输入参数detect_border_integrity为true时，返回该字段。 
 
@@ -636,7 +636,7 @@ class CambodianIdCardResult:
 
     @property
     def detect_blocking_within_border_result(self):
-        """Gets the detect_blocking_within_border_result of this CambodianIdCardResult.
+        r"""Gets the detect_blocking_within_border_result of this CambodianIdCardResult.
 
         身份证图像框内是否存在遮挡的告警结果，\"true\"表示边框内部存在遮挡，\"false\"表示边框内部完整。仅在输入参数detect_blocking_within_border为true时，返回该字段。 
 
@@ -647,7 +647,7 @@ class CambodianIdCardResult:
 
     @detect_blocking_within_border_result.setter
     def detect_blocking_within_border_result(self, detect_blocking_within_border_result):
-        """Sets the detect_blocking_within_border_result of this CambodianIdCardResult.
+        r"""Sets the detect_blocking_within_border_result of this CambodianIdCardResult.
 
         身份证图像框内是否存在遮挡的告警结果，\"true\"表示边框内部存在遮挡，\"false\"表示边框内部完整。仅在输入参数detect_blocking_within_border为true时，返回该字段。 
 
@@ -658,7 +658,7 @@ class CambodianIdCardResult:
 
     @property
     def detect_blur_result(self):
-        """Gets the detect_blur_result of this CambodianIdCardResult.
+        r"""Gets the detect_blur_result of this CambodianIdCardResult.
 
         身份证模糊告警结果，\"true\"表示图片模糊，\"false\"表示身份证清晰。仅在输入参数detect_blur为true时，返回该字段。 
 
@@ -669,7 +669,7 @@ class CambodianIdCardResult:
 
     @detect_blur_result.setter
     def detect_blur_result(self, detect_blur_result):
-        """Sets the detect_blur_result of this CambodianIdCardResult.
+        r"""Sets the detect_blur_result of this CambodianIdCardResult.
 
         身份证模糊告警结果，\"true\"表示图片模糊，\"false\"表示身份证清晰。仅在输入参数detect_blur为true时，返回该字段。 
 
@@ -680,7 +680,7 @@ class CambodianIdCardResult:
 
     @property
     def detect_glare_result(self):
-        """Gets the detect_glare_result of this CambodianIdCardResult.
+        r"""Gets the detect_glare_result of this CambodianIdCardResult.
 
         身份证反光告警结果，\"true\"表示身份证反光，\"false\"表示是身份证无反光。仅在输入参数detect_glare为true时，返回该字段。 
 
@@ -691,7 +691,7 @@ class CambodianIdCardResult:
 
     @detect_glare_result.setter
     def detect_glare_result(self, detect_glare_result):
-        """Sets the detect_glare_result of this CambodianIdCardResult.
+        r"""Sets the detect_glare_result of this CambodianIdCardResult.
 
         身份证反光告警结果，\"true\"表示身份证反光，\"false\"表示是身份证无反光。仅在输入参数detect_glare为true时，返回该字段。 
 
@@ -702,7 +702,7 @@ class CambodianIdCardResult:
 
     @property
     def detect_tampering_result(self):
-        """Gets the detect_tampering_result of this CambodianIdCardResult.
+        r"""Gets the detect_tampering_result of this CambodianIdCardResult.
 
         身份证人像被篡改的告警结果，\"true\"表示身份证人像被篡改，\"false\"表示是身份证人像未被篡改。仅在输入参数detect_tampering为true时，返回该字段。 
 
@@ -713,7 +713,7 @@ class CambodianIdCardResult:
 
     @detect_tampering_result.setter
     def detect_tampering_result(self, detect_tampering_result):
-        """Sets the detect_tampering_result of this CambodianIdCardResult.
+        r"""Sets the detect_tampering_result of this CambodianIdCardResult.
 
         身份证人像被篡改的告警结果，\"true\"表示身份证人像被篡改，\"false\"表示是身份证人像未被篡改。仅在输入参数detect_tampering为true时，返回该字段。 
 
@@ -724,7 +724,7 @@ class CambodianIdCardResult:
 
     @property
     def detect_reproduce_result(self):
-        """Gets the detect_reproduce_result of this CambodianIdCardResult.
+        r"""Gets the detect_reproduce_result of this CambodianIdCardResult.
 
         身份证是否经过翻拍的告警结果，“true”表示身份证经过翻拍，“false”表示身份证未经过翻拍。仅在输入参数detect_reproduce为true时，返回该字段。 
 
@@ -735,7 +735,7 @@ class CambodianIdCardResult:
 
     @detect_reproduce_result.setter
     def detect_reproduce_result(self, detect_reproduce_result):
-        """Sets the detect_reproduce_result of this CambodianIdCardResult.
+        r"""Sets the detect_reproduce_result of this CambodianIdCardResult.
 
         身份证是否经过翻拍的告警结果，“true”表示身份证经过翻拍，“false”表示身份证未经过翻拍。仅在输入参数detect_reproduce为true时，返回该字段。 
 
@@ -746,7 +746,7 @@ class CambodianIdCardResult:
 
     @property
     def score_info(self):
-        """Gets the score_info of this CambodianIdCardResult.
+        r"""Gets the score_info of this CambodianIdCardResult.
 
         :return: The score_info of this CambodianIdCardResult.
         :rtype: :class:`huaweicloudsdkocr.v1.CambodianIdCardScoreInformationResult`
@@ -755,7 +755,7 @@ class CambodianIdCardResult:
 
     @score_info.setter
     def score_info(self, score_info):
-        """Sets the score_info of this CambodianIdCardResult.
+        r"""Sets the score_info of this CambodianIdCardResult.
 
         :param score_info: The score_info of this CambodianIdCardResult.
         :type score_info: :class:`huaweicloudsdkocr.v1.CambodianIdCardScoreInformationResult`
@@ -764,7 +764,7 @@ class CambodianIdCardResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this CambodianIdCardResult.
+        r"""Gets the confidence of this CambodianIdCardResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -775,7 +775,7 @@ class CambodianIdCardResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this CambodianIdCardResult.
+        r"""Sets the confidence of this CambodianIdCardResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 

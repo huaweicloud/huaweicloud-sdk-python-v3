@@ -31,7 +31,7 @@ class CreateRouteTableReq:
     }
 
     def __init__(self, name=None, routes=None, vpc_id=None, description=None):
-        """CreateRouteTableReq
+        r"""CreateRouteTableReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CreateRouteTableReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateRouteTableReq.
+        r"""Gets the name of this CreateRouteTableReq.
 
         功能说明：路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -74,7 +74,7 @@ class CreateRouteTableReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRouteTableReq.
+        r"""Sets the name of this CreateRouteTableReq.
 
         功能说明：路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -85,7 +85,7 @@ class CreateRouteTableReq:
 
     @property
     def routes(self):
-        """Gets the routes of this CreateRouteTableReq.
+        r"""Gets the routes of this CreateRouteTableReq.
 
         功能说明：路由对象，参见route字段说明  约束：每个路由表最大关联200条路由
 
@@ -96,7 +96,7 @@ class CreateRouteTableReq:
 
     @routes.setter
     def routes(self, routes):
-        """Sets the routes of this CreateRouteTableReq.
+        r"""Sets the routes of this CreateRouteTableReq.
 
         功能说明：路由对象，参见route字段说明  约束：每个路由表最大关联200条路由
 
@@ -107,7 +107,7 @@ class CreateRouteTableReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateRouteTableReq.
+        r"""Gets the vpc_id of this CreateRouteTableReq.
 
         路由表所在的虚拟私有云ID
 
@@ -118,7 +118,7 @@ class CreateRouteTableReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateRouteTableReq.
+        r"""Sets the vpc_id of this CreateRouteTableReq.
 
         路由表所在的虚拟私有云ID
 
@@ -129,7 +129,7 @@ class CreateRouteTableReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateRouteTableReq.
+        r"""Gets the description of this CreateRouteTableReq.
 
         功能说明：路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -140,7 +140,7 @@ class CreateRouteTableReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRouteTableReq.
+        r"""Sets the description of this CreateRouteTableReq.
 
         功能说明：路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 

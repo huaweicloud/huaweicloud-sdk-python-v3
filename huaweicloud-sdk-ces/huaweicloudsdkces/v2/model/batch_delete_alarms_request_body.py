@@ -25,7 +25,7 @@ class BatchDeleteAlarmsRequestBody:
     }
 
     def __init__(self, alarm_ids=None):
-        """BatchDeleteAlarmsRequestBody
+        r"""BatchDeleteAlarmsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteAlarmsRequestBody:
 
     @property
     def alarm_ids(self):
-        """Gets the alarm_ids of this BatchDeleteAlarmsRequestBody.
+        r"""Gets the alarm_ids of this BatchDeleteAlarmsRequestBody.
 
         需要批量删除的告警规则的ID列表
 
@@ -53,7 +53,7 @@ class BatchDeleteAlarmsRequestBody:
 
     @alarm_ids.setter
     def alarm_ids(self, alarm_ids):
-        """Sets the alarm_ids of this BatchDeleteAlarmsRequestBody.
+        r"""Sets the alarm_ids of this BatchDeleteAlarmsRequestBody.
 
         需要批量删除的告警规则的ID列表
 

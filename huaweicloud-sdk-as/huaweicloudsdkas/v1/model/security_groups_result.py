@@ -25,7 +25,7 @@ class SecurityGroupsResult:
     }
 
     def __init__(self, id=None):
-        """SecurityGroupsResult
+        r"""SecurityGroupsResult
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SecurityGroupsResult:
 
     @property
     def id(self):
-        """Gets the id of this SecurityGroupsResult.
+        r"""Gets the id of this SecurityGroupsResult.
 
         安全组ID
 
@@ -54,7 +54,7 @@ class SecurityGroupsResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecurityGroupsResult.
+        r"""Sets the id of this SecurityGroupsResult.
 
         安全组ID
 

@@ -25,7 +25,7 @@ class DetachEipReq:
     }
 
     def __init__(self, eip_id=None):
-        """DetachEipReq
+        r"""DetachEipReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DetachEipReq:
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this DetachEipReq.
+        r"""Gets the eip_id of this DetachEipReq.
 
         弹性公网IP的ID。
 
@@ -53,7 +53,7 @@ class DetachEipReq:
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this DetachEipReq.
+        r"""Sets the eip_id of this DetachEipReq.
 
         弹性公网IP的ID。
 

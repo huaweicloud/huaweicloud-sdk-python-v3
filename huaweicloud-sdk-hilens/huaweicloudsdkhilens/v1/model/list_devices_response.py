@@ -28,7 +28,7 @@ class ListDevicesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None):
-        """ListDevicesResponse
+        r"""ListDevicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDevicesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDevicesResponse.
+        r"""Gets the total of this ListDevicesResponse.
 
         满足条件的设备总数
 
@@ -62,7 +62,7 @@ class ListDevicesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDevicesResponse.
+        r"""Sets the total of this ListDevicesResponse.
 
         满足条件的设备总数
 
@@ -73,7 +73,7 @@ class ListDevicesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListDevicesResponse.
+        r"""Gets the data of this ListDevicesResponse.
 
         :return: The data of this ListDevicesResponse.
         :rtype: list[:class:`huaweicloudsdkhilens.v1.GetDevicesListArrayObject`]
@@ -82,7 +82,7 @@ class ListDevicesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListDevicesResponse.
+        r"""Sets the data of this ListDevicesResponse.
 
         :param data: The data of this ListDevicesResponse.
         :type data: list[:class:`huaweicloudsdkhilens.v1.GetDevicesListArrayObject`]

@@ -26,7 +26,7 @@ class ShowRedisPitrInfoResponse(SdkResponse):
     }
 
     def __init__(self, storage=None):
-        """ShowRedisPitrInfoResponse
+        r"""ShowRedisPitrInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowRedisPitrInfoResponse(SdkResponse):
 
     @property
     def storage(self):
-        """Gets the storage of this ShowRedisPitrInfoResponse.
+        r"""Gets the storage of this ShowRedisPitrInfoResponse.
 
         查询Redis实例指定时间点恢复所占用的存储空间。 单位：GB
 
@@ -55,7 +55,7 @@ class ShowRedisPitrInfoResponse(SdkResponse):
 
     @storage.setter
     def storage(self, storage):
-        """Sets the storage of this ShowRedisPitrInfoResponse.
+        r"""Sets the storage of this ShowRedisPitrInfoResponse.
 
         查询Redis实例指定时间点恢复所占用的存储空间。 单位：GB
 

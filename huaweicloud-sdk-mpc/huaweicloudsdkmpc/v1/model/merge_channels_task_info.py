@@ -39,7 +39,7 @@ class MergeChannelsTaskInfo:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, end_time=None, output=None, description=None, audio_files=None, output_filename=None):
-        """MergeChannelsTaskInfo
+        r"""MergeChannelsTaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class MergeChannelsTaskInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this MergeChannelsTaskInfo.
+        r"""Gets the task_id of this MergeChannelsTaskInfo.
 
         任务Id
 
@@ -103,7 +103,7 @@ class MergeChannelsTaskInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this MergeChannelsTaskInfo.
+        r"""Sets the task_id of this MergeChannelsTaskInfo.
 
         任务Id
 
@@ -114,7 +114,7 @@ class MergeChannelsTaskInfo:
 
     @property
     def status(self):
-        """Gets the status of this MergeChannelsTaskInfo.
+        r"""Gets the status of this MergeChannelsTaskInfo.
 
         任务执行状态，取值如下。 \"NO_TASK\"      //无任务，task_id非法 \"WAITING\"      //等待启动 \"PROCESSING\"   //处理中 \"SUCCEEDED\"    //成功 \"FAILED\"       //失败 \"CANCELED\"     //已删除 
 
@@ -125,7 +125,7 @@ class MergeChannelsTaskInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MergeChannelsTaskInfo.
+        r"""Sets the status of this MergeChannelsTaskInfo.
 
         任务执行状态，取值如下。 \"NO_TASK\"      //无任务，task_id非法 \"WAITING\"      //等待启动 \"PROCESSING\"   //处理中 \"SUCCEEDED\"    //成功 \"FAILED\"       //失败 \"CANCELED\"     //已删除 
 
@@ -136,7 +136,7 @@ class MergeChannelsTaskInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this MergeChannelsTaskInfo.
+        r"""Gets the create_time of this MergeChannelsTaskInfo.
 
         任务启动时间 
 
@@ -147,7 +147,7 @@ class MergeChannelsTaskInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this MergeChannelsTaskInfo.
+        r"""Sets the create_time of this MergeChannelsTaskInfo.
 
         任务启动时间 
 
@@ -158,7 +158,7 @@ class MergeChannelsTaskInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this MergeChannelsTaskInfo.
+        r"""Gets the end_time of this MergeChannelsTaskInfo.
 
         任务结束时间 
 
@@ -169,7 +169,7 @@ class MergeChannelsTaskInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this MergeChannelsTaskInfo.
+        r"""Sets the end_time of this MergeChannelsTaskInfo.
 
         任务结束时间 
 
@@ -180,7 +180,7 @@ class MergeChannelsTaskInfo:
 
     @property
     def output(self):
-        """Gets the output of this MergeChannelsTaskInfo.
+        r"""Gets the output of this MergeChannelsTaskInfo.
 
         :return: The output of this MergeChannelsTaskInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -189,7 +189,7 @@ class MergeChannelsTaskInfo:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this MergeChannelsTaskInfo.
+        r"""Sets the output of this MergeChannelsTaskInfo.
 
         :param output: The output of this MergeChannelsTaskInfo.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -198,7 +198,7 @@ class MergeChannelsTaskInfo:
 
     @property
     def description(self):
-        """Gets the description of this MergeChannelsTaskInfo.
+        r"""Gets the description of this MergeChannelsTaskInfo.
 
         任务描述，当出现异常时，此字段为异常的原因。 
 
@@ -209,7 +209,7 @@ class MergeChannelsTaskInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MergeChannelsTaskInfo.
+        r"""Sets the description of this MergeChannelsTaskInfo.
 
         任务描述，当出现异常时，此字段为异常的原因。 
 
@@ -220,7 +220,7 @@ class MergeChannelsTaskInfo:
 
     @property
     def audio_files(self):
-        """Gets the audio_files of this MergeChannelsTaskInfo.
+        r"""Gets the audio_files of this MergeChannelsTaskInfo.
 
         音频文件列表
 
@@ -231,7 +231,7 @@ class MergeChannelsTaskInfo:
 
     @audio_files.setter
     def audio_files(self, audio_files):
-        """Sets the audio_files of this MergeChannelsTaskInfo.
+        r"""Sets the audio_files of this MergeChannelsTaskInfo.
 
         音频文件列表
 
@@ -242,7 +242,7 @@ class MergeChannelsTaskInfo:
 
     @property
     def output_filename(self):
-        """Gets the output_filename of this MergeChannelsTaskInfo.
+        r"""Gets the output_filename of this MergeChannelsTaskInfo.
 
         输出文件名。
 
@@ -253,7 +253,7 @@ class MergeChannelsTaskInfo:
 
     @output_filename.setter
     def output_filename(self, output_filename):
-        """Sets the output_filename of this MergeChannelsTaskInfo.
+        r"""Sets the output_filename of this MergeChannelsTaskInfo.
 
         输出文件名。
 

@@ -26,7 +26,7 @@ class NovaShowServerResponse(SdkResponse):
     }
 
     def __init__(self, server=None):
-        """NovaShowServerResponse
+        r"""NovaShowServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NovaShowServerResponse(SdkResponse):
 
     @property
     def server(self):
-        """Gets the server of this NovaShowServerResponse.
+        r"""Gets the server of this NovaShowServerResponse.
 
         :return: The server of this NovaShowServerResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaServer`
@@ -53,7 +53,7 @@ class NovaShowServerResponse(SdkResponse):
 
     @server.setter
     def server(self, server):
-        """Sets the server of this NovaShowServerResponse.
+        r"""Sets the server of this NovaShowServerResponse.
 
         :param server: The server of this NovaShowServerResponse.
         :type server: :class:`huaweicloudsdkecs.v2.NovaServer`

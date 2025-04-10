@@ -25,7 +25,7 @@ class DeleteResourceTagRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteResourceTagRequest
+        r"""DeleteResourceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteResourceTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteResourceTagRequest.
+        r"""Gets the body of this DeleteResourceTagRequest.
 
         :return: The body of this DeleteResourceTagRequest.
         :rtype: :class:`huaweicloudsdktms.v1.ReqDeleteTag`
@@ -52,7 +52,7 @@ class DeleteResourceTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteResourceTagRequest.
+        r"""Sets the body of this DeleteResourceTagRequest.
 
         :param body: The body of this DeleteResourceTagRequest.
         :type body: :class:`huaweicloudsdktms.v1.ReqDeleteTag`

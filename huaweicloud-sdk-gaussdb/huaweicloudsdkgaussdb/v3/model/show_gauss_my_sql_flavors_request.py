@@ -33,7 +33,7 @@ class ShowGaussMySqlFlavorsRequest:
     }
 
     def __init__(self, x_language=None, database_name=None, version_name=None, availability_zone_mode=None, spec_code=None):
-        """ShowGaussMySqlFlavorsRequest
+        r"""ShowGaussMySqlFlavorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ShowGaussMySqlFlavorsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowGaussMySqlFlavorsRequest.
+        r"""Gets the x_language of this ShowGaussMySqlFlavorsRequest.
 
         语言。
 
@@ -80,7 +80,7 @@ class ShowGaussMySqlFlavorsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowGaussMySqlFlavorsRequest.
+        r"""Sets the x_language of this ShowGaussMySqlFlavorsRequest.
 
         语言。
 
@@ -91,7 +91,7 @@ class ShowGaussMySqlFlavorsRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ShowGaussMySqlFlavorsRequest.
+        r"""Gets the database_name of this ShowGaussMySqlFlavorsRequest.
 
         数据库引擎名称。
 
@@ -102,7 +102,7 @@ class ShowGaussMySqlFlavorsRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ShowGaussMySqlFlavorsRequest.
+        r"""Sets the database_name of this ShowGaussMySqlFlavorsRequest.
 
         数据库引擎名称。
 
@@ -113,7 +113,7 @@ class ShowGaussMySqlFlavorsRequest:
 
     @property
     def version_name(self):
-        """Gets the version_name of this ShowGaussMySqlFlavorsRequest.
+        r"""Gets the version_name of this ShowGaussMySqlFlavorsRequest.
 
         数据库版本号，目前仅支持兼容MySQL 8.0。
 
@@ -124,7 +124,7 @@ class ShowGaussMySqlFlavorsRequest:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this ShowGaussMySqlFlavorsRequest.
+        r"""Sets the version_name of this ShowGaussMySqlFlavorsRequest.
 
         数据库版本号，目前仅支持兼容MySQL 8.0。
 
@@ -135,7 +135,7 @@ class ShowGaussMySqlFlavorsRequest:
 
     @property
     def availability_zone_mode(self):
-        """Gets the availability_zone_mode of this ShowGaussMySqlFlavorsRequest.
+        r"""Gets the availability_zone_mode of this ShowGaussMySqlFlavorsRequest.
 
         规格的可用区模式，现在仅支持\"single\"、\"multi\"，不区分大小写。
 
@@ -146,7 +146,7 @@ class ShowGaussMySqlFlavorsRequest:
 
     @availability_zone_mode.setter
     def availability_zone_mode(self, availability_zone_mode):
-        """Sets the availability_zone_mode of this ShowGaussMySqlFlavorsRequest.
+        r"""Sets the availability_zone_mode of this ShowGaussMySqlFlavorsRequest.
 
         规格的可用区模式，现在仅支持\"single\"、\"multi\"，不区分大小写。
 
@@ -157,7 +157,7 @@ class ShowGaussMySqlFlavorsRequest:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ShowGaussMySqlFlavorsRequest.
+        r"""Gets the spec_code of this ShowGaussMySqlFlavorsRequest.
 
         规格编码。
 
@@ -168,7 +168,7 @@ class ShowGaussMySqlFlavorsRequest:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ShowGaussMySqlFlavorsRequest.
+        r"""Sets the spec_code of this ShowGaussMySqlFlavorsRequest.
 
         规格编码。
 

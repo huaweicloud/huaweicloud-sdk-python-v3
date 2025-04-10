@@ -51,7 +51,7 @@ class SnapshotList:
     }
 
     def __init__(self, id=None, status=None, name=None, description=None, created_at=None, updated_at=None, metadata=None, volume_id=None, size=None, os_extended_snapshot_attributesproject_id=None, os_extended_snapshot_attributesprogress=None, dedicated_storage_id=None, dedicated_storage_name=None, service_type=None):
-        """SnapshotList
+        r"""SnapshotList
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class SnapshotList:
 
     @property
     def id(self):
-        """Gets the id of this SnapshotList.
+        r"""Gets the id of this SnapshotList.
 
         云硬盘快照ID。
 
@@ -137,7 +137,7 @@ class SnapshotList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SnapshotList.
+        r"""Sets the id of this SnapshotList.
 
         云硬盘快照ID。
 
@@ -148,7 +148,7 @@ class SnapshotList:
 
     @property
     def status(self):
-        """Gets the status of this SnapshotList.
+        r"""Gets the status of this SnapshotList.
 
         云硬盘快照的状态。
 
@@ -159,7 +159,7 @@ class SnapshotList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SnapshotList.
+        r"""Sets the status of this SnapshotList.
 
         云硬盘快照的状态。
 
@@ -170,7 +170,7 @@ class SnapshotList:
 
     @property
     def name(self):
-        """Gets the name of this SnapshotList.
+        r"""Gets the name of this SnapshotList.
 
         云硬盘快照名称。
 
@@ -181,7 +181,7 @@ class SnapshotList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SnapshotList.
+        r"""Sets the name of this SnapshotList.
 
         云硬盘快照名称。
 
@@ -192,7 +192,7 @@ class SnapshotList:
 
     @property
     def description(self):
-        """Gets the description of this SnapshotList.
+        r"""Gets the description of this SnapshotList.
 
         云硬盘快照描述信息。
 
@@ -203,7 +203,7 @@ class SnapshotList:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SnapshotList.
+        r"""Sets the description of this SnapshotList.
 
         云硬盘快照描述信息。
 
@@ -214,7 +214,7 @@ class SnapshotList:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SnapshotList.
+        r"""Gets the created_at of this SnapshotList.
 
         云硬盘快照创建时间。
 
@@ -225,7 +225,7 @@ class SnapshotList:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SnapshotList.
+        r"""Sets the created_at of this SnapshotList.
 
         云硬盘快照创建时间。
 
@@ -236,7 +236,7 @@ class SnapshotList:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SnapshotList.
+        r"""Gets the updated_at of this SnapshotList.
 
         云硬盘快照更新时间。
 
@@ -247,7 +247,7 @@ class SnapshotList:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SnapshotList.
+        r"""Sets the updated_at of this SnapshotList.
 
         云硬盘快照更新时间。
 
@@ -258,7 +258,7 @@ class SnapshotList:
 
     @property
     def metadata(self):
-        """Gets the metadata of this SnapshotList.
+        r"""Gets the metadata of this SnapshotList.
 
         云硬盘快照的元数据信息。
 
@@ -269,7 +269,7 @@ class SnapshotList:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this SnapshotList.
+        r"""Sets the metadata of this SnapshotList.
 
         云硬盘快照的元数据信息。
 
@@ -280,7 +280,7 @@ class SnapshotList:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this SnapshotList.
+        r"""Gets the volume_id of this SnapshotList.
 
         快照所属的云硬盘。
 
@@ -291,7 +291,7 @@ class SnapshotList:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this SnapshotList.
+        r"""Sets the volume_id of this SnapshotList.
 
         快照所属的云硬盘。
 
@@ -302,7 +302,7 @@ class SnapshotList:
 
     @property
     def size(self):
-        """Gets the size of this SnapshotList.
+        r"""Gets the size of this SnapshotList.
 
         云硬盘快照大小。
 
@@ -313,7 +313,7 @@ class SnapshotList:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this SnapshotList.
+        r"""Sets the size of this SnapshotList.
 
         云硬盘快照大小。
 
@@ -324,7 +324,7 @@ class SnapshotList:
 
     @property
     def os_extended_snapshot_attributesproject_id(self):
-        """Gets the os_extended_snapshot_attributesproject_id of this SnapshotList.
+        r"""Gets the os_extended_snapshot_attributesproject_id of this SnapshotList.
 
         项目ID。
 
@@ -335,7 +335,7 @@ class SnapshotList:
 
     @os_extended_snapshot_attributesproject_id.setter
     def os_extended_snapshot_attributesproject_id(self, os_extended_snapshot_attributesproject_id):
-        """Sets the os_extended_snapshot_attributesproject_id of this SnapshotList.
+        r"""Sets the os_extended_snapshot_attributesproject_id of this SnapshotList.
 
         项目ID。
 
@@ -346,7 +346,7 @@ class SnapshotList:
 
     @property
     def os_extended_snapshot_attributesprogress(self):
-        """Gets the os_extended_snapshot_attributesprogress of this SnapshotList.
+        r"""Gets the os_extended_snapshot_attributesprogress of this SnapshotList.
 
         快照进度。
 
@@ -357,7 +357,7 @@ class SnapshotList:
 
     @os_extended_snapshot_attributesprogress.setter
     def os_extended_snapshot_attributesprogress(self, os_extended_snapshot_attributesprogress):
-        """Sets the os_extended_snapshot_attributesprogress of this SnapshotList.
+        r"""Sets the os_extended_snapshot_attributesprogress of this SnapshotList.
 
         快照进度。
 
@@ -368,7 +368,7 @@ class SnapshotList:
 
     @property
     def dedicated_storage_id(self):
-        """Gets the dedicated_storage_id of this SnapshotList.
+        r"""Gets the dedicated_storage_id of this SnapshotList.
 
         专属存储ID。
 
@@ -379,7 +379,7 @@ class SnapshotList:
 
     @dedicated_storage_id.setter
     def dedicated_storage_id(self, dedicated_storage_id):
-        """Sets the dedicated_storage_id of this SnapshotList.
+        r"""Sets the dedicated_storage_id of this SnapshotList.
 
         专属存储ID。
 
@@ -390,7 +390,7 @@ class SnapshotList:
 
     @property
     def dedicated_storage_name(self):
-        """Gets the dedicated_storage_name of this SnapshotList.
+        r"""Gets the dedicated_storage_name of this SnapshotList.
 
         专属存储名称。
 
@@ -401,7 +401,7 @@ class SnapshotList:
 
     @dedicated_storage_name.setter
     def dedicated_storage_name(self, dedicated_storage_name):
-        """Sets the dedicated_storage_name of this SnapshotList.
+        r"""Sets the dedicated_storage_name of this SnapshotList.
 
         专属存储名称。
 
@@ -412,7 +412,7 @@ class SnapshotList:
 
     @property
     def service_type(self):
-        """Gets the service_type of this SnapshotList.
+        r"""Gets the service_type of this SnapshotList.
 
         服务类型。
 
@@ -423,7 +423,7 @@ class SnapshotList:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this SnapshotList.
+        r"""Sets the service_type of this SnapshotList.
 
         服务类型。
 

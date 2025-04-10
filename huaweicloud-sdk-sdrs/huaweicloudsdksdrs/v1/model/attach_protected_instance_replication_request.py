@@ -27,7 +27,7 @@ class AttachProtectedInstanceReplicationRequest:
     }
 
     def __init__(self, protected_instance_id=None, body=None):
-        """AttachProtectedInstanceReplicationRequest
+        r"""AttachProtectedInstanceReplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AttachProtectedInstanceReplicationRequest:
 
     @property
     def protected_instance_id(self):
-        """Gets the protected_instance_id of this AttachProtectedInstanceReplicationRequest.
+        r"""Gets the protected_instance_id of this AttachProtectedInstanceReplicationRequest.
 
         保护实例的ID。
 
@@ -60,7 +60,7 @@ class AttachProtectedInstanceReplicationRequest:
 
     @protected_instance_id.setter
     def protected_instance_id(self, protected_instance_id):
-        """Sets the protected_instance_id of this AttachProtectedInstanceReplicationRequest.
+        r"""Sets the protected_instance_id of this AttachProtectedInstanceReplicationRequest.
 
         保护实例的ID。
 
@@ -71,7 +71,7 @@ class AttachProtectedInstanceReplicationRequest:
 
     @property
     def body(self):
-        """Gets the body of this AttachProtectedInstanceReplicationRequest.
+        r"""Gets the body of this AttachProtectedInstanceReplicationRequest.
 
         :return: The body of this AttachProtectedInstanceReplicationRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAttachReplicationRequestBody`
@@ -80,7 +80,7 @@ class AttachProtectedInstanceReplicationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachProtectedInstanceReplicationRequest.
+        r"""Sets the body of this AttachProtectedInstanceReplicationRequest.
 
         :param body: The body of this AttachProtectedInstanceReplicationRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAttachReplicationRequestBody`

@@ -41,7 +41,7 @@ class ConsumerGroup:
     }
 
     def __init__(self, enabled=None, broadcast=None, brokers=None, name=None, group_desc=None, retry_max_time=None, created_at=None, permissions=None, consume_orderly=None):
-        """ConsumerGroup
+        r"""ConsumerGroup
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ConsumerGroup:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ConsumerGroup.
+        r"""Gets the enabled of this ConsumerGroup.
 
         是否可以消费。
 
@@ -110,7 +110,7 @@ class ConsumerGroup:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ConsumerGroup.
+        r"""Sets the enabled of this ConsumerGroup.
 
         是否可以消费。
 
@@ -121,7 +121,7 @@ class ConsumerGroup:
 
     @property
     def broadcast(self):
-        """Gets the broadcast of this ConsumerGroup.
+        r"""Gets the broadcast of this ConsumerGroup.
 
         是否广播。
 
@@ -132,7 +132,7 @@ class ConsumerGroup:
 
     @broadcast.setter
     def broadcast(self, broadcast):
-        """Sets the broadcast of this ConsumerGroup.
+        r"""Sets the broadcast of this ConsumerGroup.
 
         是否广播。
 
@@ -143,7 +143,7 @@ class ConsumerGroup:
 
     @property
     def brokers(self):
-        """Gets the brokers of this ConsumerGroup.
+        r"""Gets the brokers of this ConsumerGroup.
 
         关联的代理列表。
 
@@ -154,7 +154,7 @@ class ConsumerGroup:
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this ConsumerGroup.
+        r"""Sets the brokers of this ConsumerGroup.
 
         关联的代理列表。
 
@@ -165,7 +165,7 @@ class ConsumerGroup:
 
     @property
     def name(self):
-        """Gets the name of this ConsumerGroup.
+        r"""Gets the name of this ConsumerGroup.
 
         消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
@@ -176,7 +176,7 @@ class ConsumerGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConsumerGroup.
+        r"""Sets the name of this ConsumerGroup.
 
         消费组名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
@@ -187,7 +187,7 @@ class ConsumerGroup:
 
     @property
     def group_desc(self):
-        """Gets the group_desc of this ConsumerGroup.
+        r"""Gets the group_desc of this ConsumerGroup.
 
         消费组描述，长度0~200个字符。
 
@@ -198,7 +198,7 @@ class ConsumerGroup:
 
     @group_desc.setter
     def group_desc(self, group_desc):
-        """Sets the group_desc of this ConsumerGroup.
+        r"""Sets the group_desc of this ConsumerGroup.
 
         消费组描述，长度0~200个字符。
 
@@ -209,7 +209,7 @@ class ConsumerGroup:
 
     @property
     def retry_max_time(self):
-        """Gets the retry_max_time of this ConsumerGroup.
+        r"""Gets the retry_max_time of this ConsumerGroup.
 
         最大重试次数，取值范围为1~16。
 
@@ -220,7 +220,7 @@ class ConsumerGroup:
 
     @retry_max_time.setter
     def retry_max_time(self, retry_max_time):
-        """Sets the retry_max_time of this ConsumerGroup.
+        r"""Sets the retry_max_time of this ConsumerGroup.
 
         最大重试次数，取值范围为1~16。
 
@@ -231,7 +231,7 @@ class ConsumerGroup:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ConsumerGroup.
+        r"""Gets the created_at of this ConsumerGroup.
 
         创建时间戳。
 
@@ -242,7 +242,7 @@ class ConsumerGroup:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ConsumerGroup.
+        r"""Sets the created_at of this ConsumerGroup.
 
         创建时间戳。
 
@@ -253,7 +253,7 @@ class ConsumerGroup:
 
     @property
     def permissions(self):
-        """Gets the permissions of this ConsumerGroup.
+        r"""Gets the permissions of this ConsumerGroup.
 
         权限集。
 
@@ -264,7 +264,7 @@ class ConsumerGroup:
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this ConsumerGroup.
+        r"""Sets the permissions of this ConsumerGroup.
 
         权限集。
 
@@ -275,7 +275,7 @@ class ConsumerGroup:
 
     @property
     def consume_orderly(self):
-        """Gets the consume_orderly of this ConsumerGroup.
+        r"""Gets the consume_orderly of this ConsumerGroup.
 
         是否按顺序消费。
 
@@ -286,7 +286,7 @@ class ConsumerGroup:
 
     @consume_orderly.setter
     def consume_orderly(self, consume_orderly):
-        """Sets the consume_orderly of this ConsumerGroup.
+        r"""Sets the consume_orderly of this ConsumerGroup.
 
         是否按顺序消费。
 

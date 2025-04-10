@@ -26,7 +26,7 @@ class NovaListKeypairsResponse(SdkResponse):
     }
 
     def __init__(self, keypairs=None):
-        """NovaListKeypairsResponse
+        r"""NovaListKeypairsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NovaListKeypairsResponse(SdkResponse):
 
     @property
     def keypairs(self):
-        """Gets the keypairs of this NovaListKeypairsResponse.
+        r"""Gets the keypairs of this NovaListKeypairsResponse.
 
         密钥信息列表。
 
@@ -55,7 +55,7 @@ class NovaListKeypairsResponse(SdkResponse):
 
     @keypairs.setter
     def keypairs(self, keypairs):
-        """Sets the keypairs of this NovaListKeypairsResponse.
+        r"""Sets the keypairs of this NovaListKeypairsResponse.
 
         密钥信息列表。
 

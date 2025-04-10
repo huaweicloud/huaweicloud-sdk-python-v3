@@ -27,7 +27,7 @@ class BatchChangeMaintainServerReq:
     }
 
     def __init__(self, items=None, maintain_status=None):
-        """BatchChangeMaintainServerReq
+        r"""BatchChangeMaintainServerReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchChangeMaintainServerReq:
 
     @property
     def items(self):
-        """Gets the items of this BatchChangeMaintainServerReq.
+        r"""Gets the items of this BatchChangeMaintainServerReq.
 
         批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
 
@@ -59,7 +59,7 @@ class BatchChangeMaintainServerReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this BatchChangeMaintainServerReq.
+        r"""Sets the items of this BatchChangeMaintainServerReq.
 
         批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
 
@@ -70,7 +70,7 @@ class BatchChangeMaintainServerReq:
 
     @property
     def maintain_status(self):
-        """Gets the maintain_status of this BatchChangeMaintainServerReq.
+        r"""Gets the maintain_status of this BatchChangeMaintainServerReq.
 
         服务器维护状态标识： * `true` - 添加标记 * `false` - 移除标记
 
@@ -81,7 +81,7 @@ class BatchChangeMaintainServerReq:
 
     @maintain_status.setter
     def maintain_status(self, maintain_status):
-        """Sets the maintain_status of this BatchChangeMaintainServerReq.
+        r"""Sets the maintain_status of this BatchChangeMaintainServerReq.
 
         服务器维护状态标识： * `true` - 添加标记 * `false` - 移除标记
 

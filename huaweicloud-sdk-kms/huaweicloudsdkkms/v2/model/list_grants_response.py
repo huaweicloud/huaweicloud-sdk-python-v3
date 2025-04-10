@@ -32,7 +32,7 @@ class ListGrantsResponse(SdkResponse):
     }
 
     def __init__(self, grants=None, next_marker=None, truncated=None, total=None):
-        """ListGrantsResponse
+        r"""ListGrantsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListGrantsResponse(SdkResponse):
 
     @property
     def grants(self):
-        """Gets the grants of this ListGrantsResponse.
+        r"""Gets the grants of this ListGrantsResponse.
 
         grant列表，详情请参见grants字段数据结构说明。
 
@@ -76,7 +76,7 @@ class ListGrantsResponse(SdkResponse):
 
     @grants.setter
     def grants(self, grants):
-        """Sets the grants of this ListGrantsResponse.
+        r"""Sets the grants of this ListGrantsResponse.
 
         grant列表，详情请参见grants字段数据结构说明。
 
@@ -87,7 +87,7 @@ class ListGrantsResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListGrantsResponse.
+        r"""Gets the next_marker of this ListGrantsResponse.
 
         获取下一页所需要传递的marker值。 当“truncated”为“false”时，“next_marker”为空。
 
@@ -98,7 +98,7 @@ class ListGrantsResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListGrantsResponse.
+        r"""Sets the next_marker of this ListGrantsResponse.
 
         获取下一页所需要传递的marker值。 当“truncated”为“false”时，“next_marker”为空。
 
@@ -109,7 +109,7 @@ class ListGrantsResponse(SdkResponse):
 
     @property
     def truncated(self):
-        """Gets the truncated of this ListGrantsResponse.
+        r"""Gets the truncated of this ListGrantsResponse.
 
         是否还有下一页：  - “true”表示还有数据。  - “false”表示已经是最后一页。
 
@@ -120,7 +120,7 @@ class ListGrantsResponse(SdkResponse):
 
     @truncated.setter
     def truncated(self, truncated):
-        """Sets the truncated of this ListGrantsResponse.
+        r"""Sets the truncated of this ListGrantsResponse.
 
         是否还有下一页：  - “true”表示还有数据。  - “false”表示已经是最后一页。
 
@@ -131,7 +131,7 @@ class ListGrantsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListGrantsResponse.
+        r"""Gets the total of this ListGrantsResponse.
 
         grant总条数。
 
@@ -142,7 +142,7 @@ class ListGrantsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListGrantsResponse.
+        r"""Sets the total of this ListGrantsResponse.
 
         grant总条数。
 

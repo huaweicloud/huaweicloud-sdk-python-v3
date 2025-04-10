@@ -29,7 +29,7 @@ class UpdateEventRequest:
     }
 
     def __init__(self, function_urn=None, event_id=None, body=None):
-        """UpdateEventRequest
+        r"""UpdateEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEventRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this UpdateEventRequest.
+        r"""Gets the function_urn of this UpdateEventRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -66,7 +66,7 @@ class UpdateEventRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this UpdateEventRequest.
+        r"""Sets the function_urn of this UpdateEventRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -77,7 +77,7 @@ class UpdateEventRequest:
 
     @property
     def event_id(self):
-        """Gets the event_id of this UpdateEventRequest.
+        r"""Gets the event_id of this UpdateEventRequest.
 
         测试事件ID
 
@@ -88,7 +88,7 @@ class UpdateEventRequest:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this UpdateEventRequest.
+        r"""Sets the event_id of this UpdateEventRequest.
 
         测试事件ID
 
@@ -99,7 +99,7 @@ class UpdateEventRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEventRequest.
+        r"""Gets the body of this UpdateEventRequest.
 
         :return: The body of this UpdateEventRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateEventRequestBody`
@@ -108,7 +108,7 @@ class UpdateEventRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEventRequest.
+        r"""Sets the body of this UpdateEventRequest.
 
         :param body: The body of this UpdateEventRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateEventRequestBody`

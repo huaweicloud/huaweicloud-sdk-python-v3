@@ -29,7 +29,7 @@ class ListQueryStructuredLogsRequest:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None, body=None):
-        """ListQueryStructuredLogsRequest
+        r"""ListQueryStructuredLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListQueryStructuredLogsRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this ListQueryStructuredLogsRequest.
+        r"""Gets the log_group_id of this ListQueryStructuredLogsRequest.
 
         日志组id。
 
@@ -66,7 +66,7 @@ class ListQueryStructuredLogsRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ListQueryStructuredLogsRequest.
+        r"""Sets the log_group_id of this ListQueryStructuredLogsRequest.
 
         日志组id。
 
@@ -77,7 +77,7 @@ class ListQueryStructuredLogsRequest:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this ListQueryStructuredLogsRequest.
+        r"""Gets the log_stream_id of this ListQueryStructuredLogsRequest.
 
         日志流id。
 
@@ -88,7 +88,7 @@ class ListQueryStructuredLogsRequest:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this ListQueryStructuredLogsRequest.
+        r"""Sets the log_stream_id of this ListQueryStructuredLogsRequest.
 
         日志流id。
 
@@ -99,7 +99,7 @@ class ListQueryStructuredLogsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListQueryStructuredLogsRequest.
+        r"""Gets the body of this ListQueryStructuredLogsRequest.
 
         :return: The body of this ListQueryStructuredLogsRequest.
         :rtype: :class:`huaweicloudsdklts.v2.QueryLtsStructLogParams`
@@ -108,7 +108,7 @@ class ListQueryStructuredLogsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListQueryStructuredLogsRequest.
+        r"""Sets the body of this ListQueryStructuredLogsRequest.
 
         :param body: The body of this ListQueryStructuredLogsRequest.
         :type body: :class:`huaweicloudsdklts.v2.QueryLtsStructLogParams`

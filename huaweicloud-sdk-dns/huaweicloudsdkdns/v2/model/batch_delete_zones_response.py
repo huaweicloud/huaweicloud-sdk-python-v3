@@ -28,7 +28,7 @@ class BatchDeleteZonesResponse(SdkResponse):
     }
 
     def __init__(self, zones=None, metadata=None):
-        """BatchDeleteZonesResponse
+        r"""BatchDeleteZonesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchDeleteZonesResponse(SdkResponse):
 
     @property
     def zones(self):
-        """Gets the zones of this BatchDeleteZonesResponse.
+        r"""Gets the zones of this BatchDeleteZonesResponse.
 
         删除zone的列表响应。
 
@@ -62,7 +62,7 @@ class BatchDeleteZonesResponse(SdkResponse):
 
     @zones.setter
     def zones(self, zones):
-        """Sets the zones of this BatchDeleteZonesResponse.
+        r"""Sets the zones of this BatchDeleteZonesResponse.
 
         删除zone的列表响应。
 
@@ -73,7 +73,7 @@ class BatchDeleteZonesResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this BatchDeleteZonesResponse.
+        r"""Gets the metadata of this BatchDeleteZonesResponse.
 
         :return: The metadata of this BatchDeleteZonesResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -82,7 +82,7 @@ class BatchDeleteZonesResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this BatchDeleteZonesResponse.
+        r"""Sets the metadata of this BatchDeleteZonesResponse.
 
         :param metadata: The metadata of this BatchDeleteZonesResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`

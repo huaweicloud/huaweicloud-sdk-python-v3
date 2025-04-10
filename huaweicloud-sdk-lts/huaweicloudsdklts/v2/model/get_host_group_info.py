@@ -37,7 +37,7 @@ class GetHostGroupInfo:
     }
 
     def __init__(self, host_group_id=None, host_group_name=None, host_group_type=None, host_id_list=None, host_group_tag=None, create_time=None, update_time=None):
-        """GetHostGroupInfo
+        r"""GetHostGroupInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class GetHostGroupInfo:
 
     @property
     def host_group_id(self):
-        """Gets the host_group_id of this GetHostGroupInfo.
+        r"""Gets the host_group_id of this GetHostGroupInfo.
 
         主机组ID
 
@@ -96,7 +96,7 @@ class GetHostGroupInfo:
 
     @host_group_id.setter
     def host_group_id(self, host_group_id):
-        """Sets the host_group_id of this GetHostGroupInfo.
+        r"""Sets the host_group_id of this GetHostGroupInfo.
 
         主机组ID
 
@@ -107,7 +107,7 @@ class GetHostGroupInfo:
 
     @property
     def host_group_name(self):
-        """Gets the host_group_name of this GetHostGroupInfo.
+        r"""Gets the host_group_name of this GetHostGroupInfo.
 
         主机组名称
 
@@ -118,7 +118,7 @@ class GetHostGroupInfo:
 
     @host_group_name.setter
     def host_group_name(self, host_group_name):
-        """Sets the host_group_name of this GetHostGroupInfo.
+        r"""Sets the host_group_name of this GetHostGroupInfo.
 
         主机组名称
 
@@ -129,7 +129,7 @@ class GetHostGroupInfo:
 
     @property
     def host_group_type(self):
-        """Gets the host_group_type of this GetHostGroupInfo.
+        r"""Gets the host_group_type of this GetHostGroupInfo.
 
         主机组类型。linux：linux类型，windows：windows类型
 
@@ -140,7 +140,7 @@ class GetHostGroupInfo:
 
     @host_group_type.setter
     def host_group_type(self, host_group_type):
-        """Sets the host_group_type of this GetHostGroupInfo.
+        r"""Sets the host_group_type of this GetHostGroupInfo.
 
         主机组类型。linux：linux类型，windows：windows类型
 
@@ -151,7 +151,7 @@ class GetHostGroupInfo:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this GetHostGroupInfo.
+        r"""Gets the host_id_list of this GetHostGroupInfo.
 
         主机ID列表
 
@@ -162,7 +162,7 @@ class GetHostGroupInfo:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this GetHostGroupInfo.
+        r"""Sets the host_id_list of this GetHostGroupInfo.
 
         主机ID列表
 
@@ -173,7 +173,7 @@ class GetHostGroupInfo:
 
     @property
     def host_group_tag(self):
-        """Gets the host_group_tag of this GetHostGroupInfo.
+        r"""Gets the host_group_tag of this GetHostGroupInfo.
 
         标签信息
 
@@ -184,7 +184,7 @@ class GetHostGroupInfo:
 
     @host_group_tag.setter
     def host_group_tag(self, host_group_tag):
-        """Sets the host_group_tag of this GetHostGroupInfo.
+        r"""Sets the host_group_tag of this GetHostGroupInfo.
 
         标签信息
 
@@ -195,7 +195,7 @@ class GetHostGroupInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this GetHostGroupInfo.
+        r"""Gets the create_time of this GetHostGroupInfo.
 
         创建时间
 
@@ -206,7 +206,7 @@ class GetHostGroupInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this GetHostGroupInfo.
+        r"""Sets the create_time of this GetHostGroupInfo.
 
         创建时间
 
@@ -217,7 +217,7 @@ class GetHostGroupInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this GetHostGroupInfo.
+        r"""Gets the update_time of this GetHostGroupInfo.
 
         更新时间
 
@@ -228,7 +228,7 @@ class GetHostGroupInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this GetHostGroupInfo.
+        r"""Sets the update_time of this GetHostGroupInfo.
 
         更新时间
 

@@ -47,7 +47,7 @@ class ApiPolicyFunctionResp:
     }
 
     def __init__(self, function_urn=None, network_type=None, invocation_type=None, timeout=None, version=None, alias_urn=None, id=None, name=None, conditions=None, backend_params=None, effect_mode=None, authorizer_id=None):
-        """ApiPolicyFunctionResp
+        r"""ApiPolicyFunctionResp
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ApiPolicyFunctionResp:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ApiPolicyFunctionResp.
+        r"""Gets the function_urn of this ApiPolicyFunctionResp.
 
         函数URN
 
@@ -125,7 +125,7 @@ class ApiPolicyFunctionResp:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ApiPolicyFunctionResp.
+        r"""Sets the function_urn of this ApiPolicyFunctionResp.
 
         函数URN
 
@@ -136,7 +136,7 @@ class ApiPolicyFunctionResp:
 
     @property
     def network_type(self):
-        """Gets the network_type of this ApiPolicyFunctionResp.
+        r"""Gets the network_type of this ApiPolicyFunctionResp.
 
         对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
 
@@ -147,7 +147,7 @@ class ApiPolicyFunctionResp:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this ApiPolicyFunctionResp.
+        r"""Sets the network_type of this ApiPolicyFunctionResp.
 
         对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
 
@@ -158,7 +158,7 @@ class ApiPolicyFunctionResp:
 
     @property
     def invocation_type(self):
-        """Gets the invocation_type of this ApiPolicyFunctionResp.
+        r"""Gets the invocation_type of this ApiPolicyFunctionResp.
 
         调用类型 - async： 异步 - sync：同步
 
@@ -169,7 +169,7 @@ class ApiPolicyFunctionResp:
 
     @invocation_type.setter
     def invocation_type(self, invocation_type):
-        """Sets the invocation_type of this ApiPolicyFunctionResp.
+        r"""Sets the invocation_type of this ApiPolicyFunctionResp.
 
         调用类型 - async： 异步 - sync：同步
 
@@ -180,7 +180,7 @@ class ApiPolicyFunctionResp:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ApiPolicyFunctionResp.
+        r"""Gets the timeout of this ApiPolicyFunctionResp.
 
         服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
@@ -191,7 +191,7 @@ class ApiPolicyFunctionResp:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ApiPolicyFunctionResp.
+        r"""Sets the timeout of this ApiPolicyFunctionResp.
 
         服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
@@ -202,7 +202,7 @@ class ApiPolicyFunctionResp:
 
     @property
     def version(self):
-        """Gets the version of this ApiPolicyFunctionResp.
+        r"""Gets the version of this ApiPolicyFunctionResp.
 
         函数版本   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -213,7 +213,7 @@ class ApiPolicyFunctionResp:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApiPolicyFunctionResp.
+        r"""Sets the version of this ApiPolicyFunctionResp.
 
         函数版本   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -224,7 +224,7 @@ class ApiPolicyFunctionResp:
 
     @property
     def alias_urn(self):
-        """Gets the alias_urn of this ApiPolicyFunctionResp.
+        r"""Gets the alias_urn of this ApiPolicyFunctionResp.
 
         函数别名URN   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -235,7 +235,7 @@ class ApiPolicyFunctionResp:
 
     @alias_urn.setter
     def alias_urn(self, alias_urn):
-        """Sets the alias_urn of this ApiPolicyFunctionResp.
+        r"""Sets the alias_urn of this ApiPolicyFunctionResp.
 
         函数别名URN   当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -246,7 +246,7 @@ class ApiPolicyFunctionResp:
 
     @property
     def id(self):
-        """Gets the id of this ApiPolicyFunctionResp.
+        r"""Gets the id of this ApiPolicyFunctionResp.
 
         编号
 
@@ -257,7 +257,7 @@ class ApiPolicyFunctionResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiPolicyFunctionResp.
+        r"""Sets the id of this ApiPolicyFunctionResp.
 
         编号
 
@@ -268,7 +268,7 @@ class ApiPolicyFunctionResp:
 
     @property
     def name(self):
-        """Gets the name of this ApiPolicyFunctionResp.
+        r"""Gets the name of this ApiPolicyFunctionResp.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -279,7 +279,7 @@ class ApiPolicyFunctionResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiPolicyFunctionResp.
+        r"""Sets the name of this ApiPolicyFunctionResp.
 
         策略后端名称。字符串由中文、英文字母、数字、下划线组成，且只能以中文或英文开头。
 
@@ -290,7 +290,7 @@ class ApiPolicyFunctionResp:
 
     @property
     def conditions(self):
-        """Gets the conditions of this ApiPolicyFunctionResp.
+        r"""Gets the conditions of this ApiPolicyFunctionResp.
 
         策略条件列表
 
@@ -301,7 +301,7 @@ class ApiPolicyFunctionResp:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ApiPolicyFunctionResp.
+        r"""Sets the conditions of this ApiPolicyFunctionResp.
 
         策略条件列表
 
@@ -312,7 +312,7 @@ class ApiPolicyFunctionResp:
 
     @property
     def backend_params(self):
-        """Gets the backend_params of this ApiPolicyFunctionResp.
+        r"""Gets the backend_params of this ApiPolicyFunctionResp.
 
         后端参数列表
 
@@ -323,7 +323,7 @@ class ApiPolicyFunctionResp:
 
     @backend_params.setter
     def backend_params(self, backend_params):
-        """Sets the backend_params of this ApiPolicyFunctionResp.
+        r"""Sets the backend_params of this ApiPolicyFunctionResp.
 
         后端参数列表
 
@@ -334,7 +334,7 @@ class ApiPolicyFunctionResp:
 
     @property
     def effect_mode(self):
-        """Gets the effect_mode of this ApiPolicyFunctionResp.
+        r"""Gets the effect_mode of this ApiPolicyFunctionResp.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -345,7 +345,7 @@ class ApiPolicyFunctionResp:
 
     @effect_mode.setter
     def effect_mode(self, effect_mode):
-        """Sets the effect_mode of this ApiPolicyFunctionResp.
+        r"""Sets the effect_mode of this ApiPolicyFunctionResp.
 
         关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
 
@@ -356,7 +356,7 @@ class ApiPolicyFunctionResp:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ApiPolicyFunctionResp.
+        r"""Gets the authorizer_id of this ApiPolicyFunctionResp.
 
         后端自定义认证对象的ID
 
@@ -367,7 +367,7 @@ class ApiPolicyFunctionResp:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ApiPolicyFunctionResp.
+        r"""Sets the authorizer_id of this ApiPolicyFunctionResp.
 
         后端自定义认证对象的ID
 

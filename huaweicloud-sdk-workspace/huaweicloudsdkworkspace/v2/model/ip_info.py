@@ -27,7 +27,7 @@ class IpInfo:
     }
 
     def __init__(self, ip_address=None, subnet_mask=None):
-        """IpInfo
+        r"""IpInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IpInfo:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this IpInfo.
+        r"""Gets the ip_address of this IpInfo.
 
         ip地址。
 
@@ -59,7 +59,7 @@ class IpInfo:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this IpInfo.
+        r"""Sets the ip_address of this IpInfo.
 
         ip地址。
 
@@ -70,7 +70,7 @@ class IpInfo:
 
     @property
     def subnet_mask(self):
-        """Gets the subnet_mask of this IpInfo.
+        r"""Gets the subnet_mask of this IpInfo.
 
         子网掩码。
 
@@ -81,7 +81,7 @@ class IpInfo:
 
     @subnet_mask.setter
     def subnet_mask(self, subnet_mask):
-        """Sets the subnet_mask of this IpInfo.
+        r"""Sets the subnet_mask of this IpInfo.
 
         子网掩码。
 

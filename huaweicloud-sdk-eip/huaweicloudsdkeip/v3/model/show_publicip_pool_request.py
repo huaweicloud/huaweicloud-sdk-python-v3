@@ -27,7 +27,7 @@ class ShowPublicipPoolRequest:
     }
 
     def __init__(self, publicip_pool_id=None, fields=None):
-        """ShowPublicipPoolRequest
+        r"""ShowPublicipPoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowPublicipPoolRequest:
 
     @property
     def publicip_pool_id(self):
-        """Gets the publicip_pool_id of this ShowPublicipPoolRequest.
+        r"""Gets the publicip_pool_id of this ShowPublicipPoolRequest.
 
         公网IP池ID唯一标识
 
@@ -60,7 +60,7 @@ class ShowPublicipPoolRequest:
 
     @publicip_pool_id.setter
     def publicip_pool_id(self, publicip_pool_id):
-        """Sets the publicip_pool_id of this ShowPublicipPoolRequest.
+        r"""Sets the publicip_pool_id of this ShowPublicipPoolRequest.
 
         公网IP池ID唯一标识
 
@@ -71,7 +71,7 @@ class ShowPublicipPoolRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ShowPublicipPoolRequest.
+        r"""Gets the fields of this ShowPublicipPoolRequest.
 
         显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/size/used/project_id/status/billing_info/created_at/updated_at/type/shared/is_common/description/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group
 
@@ -82,7 +82,7 @@ class ShowPublicipPoolRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ShowPublicipPoolRequest.
+        r"""Sets the fields of this ShowPublicipPoolRequest.
 
         显示，形式为\"fields=id&fields=name&...\"  支持字段：id/name/size/used/project_id/status/billing_info/created_at/updated_at/type/shared/is_common/description/tags/enterprise_project_id/allow_share_bandwidth_types/public_border_group
 

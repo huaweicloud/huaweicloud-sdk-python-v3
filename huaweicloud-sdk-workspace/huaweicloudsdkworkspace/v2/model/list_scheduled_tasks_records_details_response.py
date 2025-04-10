@@ -28,7 +28,7 @@ class ListScheduledTasksRecordsDetailsResponse(SdkResponse):
     }
 
     def __init__(self, tasks_records_details=None, total_count=None):
-        """ListScheduledTasksRecordsDetailsResponse
+        r"""ListScheduledTasksRecordsDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListScheduledTasksRecordsDetailsResponse(SdkResponse):
 
     @property
     def tasks_records_details(self):
-        """Gets the tasks_records_details of this ListScheduledTasksRecordsDetailsResponse.
+        r"""Gets the tasks_records_details of this ListScheduledTasksRecordsDetailsResponse.
 
         定时任务执行记录详情列表。
 
@@ -62,7 +62,7 @@ class ListScheduledTasksRecordsDetailsResponse(SdkResponse):
 
     @tasks_records_details.setter
     def tasks_records_details(self, tasks_records_details):
-        """Sets the tasks_records_details of this ListScheduledTasksRecordsDetailsResponse.
+        r"""Sets the tasks_records_details of this ListScheduledTasksRecordsDetailsResponse.
 
         定时任务执行记录详情列表。
 
@@ -73,7 +73,7 @@ class ListScheduledTasksRecordsDetailsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListScheduledTasksRecordsDetailsResponse.
+        r"""Gets the total_count of this ListScheduledTasksRecordsDetailsResponse.
 
         总个数。
 
@@ -84,7 +84,7 @@ class ListScheduledTasksRecordsDetailsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListScheduledTasksRecordsDetailsResponse.
+        r"""Sets the total_count of this ListScheduledTasksRecordsDetailsResponse.
 
         总个数。
 

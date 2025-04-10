@@ -31,7 +31,7 @@ class InferenceVideoMarkInfo:
     }
 
     def __init__(self, video_start_time=None, video_end_time=None, chat_video_start_time=None, chat_video_end_time=None):
-        """InferenceVideoMarkInfo
+        r"""InferenceVideoMarkInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class InferenceVideoMarkInfo:
 
     @property
     def video_start_time(self):
-        """Gets the video_start_time of this InferenceVideoMarkInfo.
+        r"""Gets the video_start_time of this InferenceVideoMarkInfo.
 
         选取推理数据预处理视频起始时间。格式：“HH:MM:SS.mmm”。
 
@@ -75,7 +75,7 @@ class InferenceVideoMarkInfo:
 
     @video_start_time.setter
     def video_start_time(self, video_start_time):
-        """Sets the video_start_time of this InferenceVideoMarkInfo.
+        r"""Sets the video_start_time of this InferenceVideoMarkInfo.
 
         选取推理数据预处理视频起始时间。格式：“HH:MM:SS.mmm”。
 
@@ -86,7 +86,7 @@ class InferenceVideoMarkInfo:
 
     @property
     def video_end_time(self):
-        """Gets the video_end_time of this InferenceVideoMarkInfo.
+        r"""Gets the video_end_time of this InferenceVideoMarkInfo.
 
         选取推理数据预处理视频结束时间。格式：“HH:MM:SS.mmm”。
 
@@ -97,7 +97,7 @@ class InferenceVideoMarkInfo:
 
     @video_end_time.setter
     def video_end_time(self, video_end_time):
-        """Sets the video_end_time of this InferenceVideoMarkInfo.
+        r"""Sets the video_end_time of this InferenceVideoMarkInfo.
 
         选取推理数据预处理视频结束时间。格式：“HH:MM:SS.mmm”。
 
@@ -108,7 +108,7 @@ class InferenceVideoMarkInfo:
 
     @property
     def chat_video_start_time(self):
-        """Gets the chat_video_start_time of this InferenceVideoMarkInfo.
+        r"""Gets the chat_video_start_time of this InferenceVideoMarkInfo.
 
         选取推理数据预处理智能交互视频起始时间。格式：“HH:MM:SS.mmm”。
 
@@ -119,7 +119,7 @@ class InferenceVideoMarkInfo:
 
     @chat_video_start_time.setter
     def chat_video_start_time(self, chat_video_start_time):
-        """Sets the chat_video_start_time of this InferenceVideoMarkInfo.
+        r"""Sets the chat_video_start_time of this InferenceVideoMarkInfo.
 
         选取推理数据预处理智能交互视频起始时间。格式：“HH:MM:SS.mmm”。
 
@@ -130,7 +130,7 @@ class InferenceVideoMarkInfo:
 
     @property
     def chat_video_end_time(self):
-        """Gets the chat_video_end_time of this InferenceVideoMarkInfo.
+        r"""Gets the chat_video_end_time of this InferenceVideoMarkInfo.
 
         选取推理数据预处理智能交互视频结束时间。格式：“HH:MM:SS.mmm”。
 
@@ -141,7 +141,7 @@ class InferenceVideoMarkInfo:
 
     @chat_video_end_time.setter
     def chat_video_end_time(self, chat_video_end_time):
-        """Sets the chat_video_end_time of this InferenceVideoMarkInfo.
+        r"""Sets the chat_video_end_time of this InferenceVideoMarkInfo.
 
         选取推理数据预处理智能交互视频结束时间。格式：“HH:MM:SS.mmm”。
 

@@ -31,7 +31,7 @@ class ListResourceInstancesRequestBody:
     }
 
     def __init__(self, tags=None, limit=None, offset=None, matches=None):
-        """ListResourceInstancesRequestBody
+        r"""ListResourceInstancesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListResourceInstancesRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListResourceInstancesRequestBody.
+        r"""Gets the tags of this ListResourceInstancesRequestBody.
 
         标签列表。 最多包含20个key，每个key下面的value最多20个，每个key对应的value可以为空数组但结构体不能缺失。key不能重复，同一个key中values不能重复。结果返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
 
@@ -75,7 +75,7 @@ class ListResourceInstancesRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListResourceInstancesRequestBody.
+        r"""Sets the tags of this ListResourceInstancesRequestBody.
 
         标签列表。 最多包含20个key，每个key下面的value最多20个，每个key对应的value可以为空数组但结构体不能缺失。key不能重复，同一个key中values不能重复。结果返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
 
@@ -86,7 +86,7 @@ class ListResourceInstancesRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourceInstancesRequestBody.
+        r"""Gets the limit of this ListResourceInstancesRequestBody.
 
         每页条目数量，取值如下： - 10：每页显示10条资源信息。 - 20：每页显示20条资源信息。 - 50：每页显示50条资源信息。
 
@@ -97,7 +97,7 @@ class ListResourceInstancesRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourceInstancesRequestBody.
+        r"""Sets the limit of this ListResourceInstancesRequestBody.
 
         每页条目数量，取值如下： - 10：每页显示10条资源信息。 - 20：每页显示20条资源信息。 - 50：每页显示50条资源信息。
 
@@ -108,7 +108,7 @@ class ListResourceInstancesRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListResourceInstancesRequestBody.
+        r"""Gets the offset of this ListResourceInstancesRequestBody.
 
         索引位置，偏移量，从offset指定的下一条数据开始查询。
 
@@ -119,7 +119,7 @@ class ListResourceInstancesRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListResourceInstancesRequestBody.
+        r"""Sets the offset of this ListResourceInstancesRequestBody.
 
         索引位置，偏移量，从offset指定的下一条数据开始查询。
 
@@ -130,7 +130,7 @@ class ListResourceInstancesRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this ListResourceInstancesRequestBody.
+        r"""Gets the matches of this ListResourceInstancesRequestBody.
 
         搜索字段。 key为要匹配的字段，如resource_name等。value为匹配的值。key为固定字典值，不能包含重复的key或不支持的key。
 
@@ -141,7 +141,7 @@ class ListResourceInstancesRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ListResourceInstancesRequestBody.
+        r"""Sets the matches of this ListResourceInstancesRequestBody.
 
         搜索字段。 key为要匹配的字段，如resource_name等。value为匹配的值。key为固定字典值，不能包含重复的key或不支持的key。
 

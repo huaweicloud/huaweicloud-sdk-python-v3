@@ -61,7 +61,7 @@ class Server:
     }
 
     def __init__(self, server_name=None, availability_zone=None, server_id=None, server_model_name=None, phone_model_name=None, keypair_name=None, status=None, vpc_id=None, cidr=None, vpc_cidr=None, subnet_id=None, subnet_cidr=None, addresses=None, resource_project_id=None, metadata=None, network_version=None, enterprise_project_id=None, create_time=None, update_time=None):
-        """Server
+        r"""Server
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class Server:
 
     @property
     def server_name(self):
-        """Gets the server_name of this Server.
+        r"""Gets the server_name of this Server.
 
         云手机服务器名称，不超过65字符，只支持英文字母、数字、汉字、下划线和中划线。
 
@@ -180,7 +180,7 @@ class Server:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this Server.
+        r"""Sets the server_name of this Server.
 
         云手机服务器名称，不超过65字符，只支持英文字母、数字、汉字、下划线和中划线。
 
@@ -191,7 +191,7 @@ class Server:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this Server.
+        r"""Gets the availability_zone of this Server.
 
         云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
@@ -202,7 +202,7 @@ class Server:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this Server.
+        r"""Sets the availability_zone of this Server.
 
         云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
 
@@ -213,7 +213,7 @@ class Server:
 
     @property
     def server_id(self):
-        """Gets the server_id of this Server.
+        r"""Gets the server_id of this Server.
 
         云手机服务器的唯一标识，不超过32个字节。
 
@@ -224,7 +224,7 @@ class Server:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this Server.
+        r"""Sets the server_id of this Server.
 
         云手机服务器的唯一标识，不超过32个字节。
 
@@ -235,7 +235,7 @@ class Server:
 
     @property
     def server_model_name(self):
-        """Gets the server_model_name of this Server.
+        r"""Gets the server_model_name of this Server.
 
         云手机服务器规格名称，不超过64个字节。
 
@@ -246,7 +246,7 @@ class Server:
 
     @server_model_name.setter
     def server_model_name(self, server_model_name):
-        """Sets the server_model_name of this Server.
+        r"""Sets the server_model_name of this Server.
 
         云手机服务器规格名称，不超过64个字节。
 
@@ -257,7 +257,7 @@ class Server:
 
     @property
     def phone_model_name(self):
-        """Gets the phone_model_name of this Server.
+        r"""Gets the phone_model_name of this Server.
 
         云手机规格名称，不超过64个字节。
 
@@ -268,7 +268,7 @@ class Server:
 
     @phone_model_name.setter
     def phone_model_name(self, phone_model_name):
-        """Sets the phone_model_name of this Server.
+        r"""Sets the phone_model_name of this Server.
 
         云手机规格名称，不超过64个字节。
 
@@ -279,7 +279,7 @@ class Server:
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this Server.
+        r"""Gets the keypair_name of this Server.
 
         连接云手机所使用的密钥对的名称，不超过64个字节。
 
@@ -290,7 +290,7 @@ class Server:
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this Server.
+        r"""Sets the keypair_name of this Server.
 
         连接云手机所使用的密钥对的名称，不超过64个字节。
 
@@ -301,7 +301,7 @@ class Server:
 
     @property
     def status(self):
-        """Gets the status of this Server.
+        r"""Gets the status of this Server.
 
         服务器状态。 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
 
@@ -312,7 +312,7 @@ class Server:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Server.
+        r"""Sets the status of this Server.
 
         服务器状态。 - 0、1、3、4：创建中 - 2：异常 - 5：正常 - 8：冻结 - 10：关机 - 11：关机中 - 12：关机失败 - 13：开机中
 
@@ -323,7 +323,7 @@ class Server:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this Server.
+        r"""Gets the vpc_id of this Server.
 
         云手机服务器所属虚拟私有云（简称VPC）的ID。 网络版本network_version取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定VPC的 VPC ID。
 
@@ -334,7 +334,7 @@ class Server:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this Server.
+        r"""Sets the vpc_id of this Server.
 
         云手机服务器所属虚拟私有云（简称VPC）的ID。 网络版本network_version取值为“v1”时，表示云手机服务器所属资源租户的VPC ID；取值为“v2”时，表示租户创建服务器时指定VPC的 VPC ID。
 
@@ -345,7 +345,7 @@ class Server:
 
     @property
     def cidr(self):
-        """Gets the cidr of this Server.
+        r"""Gets the cidr of this Server.
 
         云手机服务器所属虚拟私有云（简称VPC）的网段。网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR。
 
@@ -356,7 +356,7 @@ class Server:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this Server.
+        r"""Sets the cidr of this Server.
 
         云手机服务器所属虚拟私有云（简称VPC）的网段。网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR。
 
@@ -367,7 +367,7 @@ class Server:
 
     @property
     def vpc_cidr(self):
-        """Gets the vpc_cidr of this Server.
+        r"""Gets the vpc_cidr of this Server.
 
         云手机服务器所属虚拟私有云（简称VPC  网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
 
@@ -378,7 +378,7 @@ class Server:
 
     @vpc_cidr.setter
     def vpc_cidr(self, vpc_cidr):
-        """Sets the vpc_cidr of this Server.
+        r"""Sets the vpc_cidr of this Server.
 
         云手机服务器所属虚拟私有云（简称VPC  网络版本 network_version 取值为“v1”时，表示云手机服务器所属资源租户的VPC CIDR；取值为“v2”时，表示租户创建服务器时指定 VPC 的 VPC CIDR
 
@@ -389,7 +389,7 @@ class Server:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this Server.
+        r"""Gets the subnet_id of this Server.
 
         云手机服务器所属子网的ID。仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID，网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID。
 
@@ -400,7 +400,7 @@ class Server:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this Server.
+        r"""Sets the subnet_id of this Server.
 
         云手机服务器所属子网的ID。仅在网络版本 network_version 取值为“v2”时，该取值表示租户创建服务器时指定子网的 ID，网络版本取值为“v1”时，该字段表示云手机服务器所属资源租户的子网ID。
 
@@ -411,7 +411,7 @@ class Server:
 
     @property
     def subnet_cidr(self):
-        """Gets the subnet_cidr of this Server.
+        r"""Gets the subnet_cidr of this Server.
 
         云手机服务器所属子网网段。网络版本 network_version 取值为“v2”时，表示租户创建服务器时指定子网的 CIDR; 取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR。
 
@@ -422,7 +422,7 @@ class Server:
 
     @subnet_cidr.setter
     def subnet_cidr(self, subnet_cidr):
-        """Sets the subnet_cidr of this Server.
+        r"""Sets the subnet_cidr of this Server.
 
         云手机服务器所属子网网段。网络版本 network_version 取值为“v2”时，表示租户创建服务器时指定子网的 CIDR; 取值为“v1”时，表示云手机服务器所属资源租户的子网CIDR。
 
@@ -433,7 +433,7 @@ class Server:
 
     @property
     def addresses(self):
-        """Gets the addresses of this Server.
+        r"""Gets the addresses of this Server.
 
         云手机服务器的IP相关信息。
 
@@ -444,7 +444,7 @@ class Server:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this Server.
+        r"""Sets the addresses of this Server.
 
         云手机服务器的IP相关信息。
 
@@ -455,7 +455,7 @@ class Server:
 
     @property
     def resource_project_id(self):
-        """Gets the resource_project_id of this Server.
+        r"""Gets the resource_project_id of this Server.
 
         云手机服务器的项目ID。用于对使用系统定义网络的服务器创建对等连接，并非租户的项目ID。
 
@@ -466,7 +466,7 @@ class Server:
 
     @resource_project_id.setter
     def resource_project_id(self, resource_project_id):
-        """Sets the resource_project_id of this Server.
+        r"""Sets the resource_project_id of this Server.
 
         云手机服务器的项目ID。用于对使用系统定义网络的服务器创建对等连接，并非租户的项目ID。
 
@@ -477,7 +477,7 @@ class Server:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Server.
+        r"""Gets the metadata of this Server.
 
         :return: The metadata of this Server.
         :rtype: :class:`huaweicloudsdkcph.v1.ServerMetadata`
@@ -486,7 +486,7 @@ class Server:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Server.
+        r"""Sets the metadata of this Server.
 
         :param metadata: The metadata of this Server.
         :type metadata: :class:`huaweicloudsdkcph.v1.ServerMetadata`
@@ -495,7 +495,7 @@ class Server:
 
     @property
     def network_version(self):
-        """Gets the network_version of this Server.
+        r"""Gets the network_version of this Server.
 
         是否为自定义网络的云手机服务器标识。\"v1\"，非自定义网络的云手机服务器。  \"v2\"，自定义网络的云手机服务器。支持按照网络版本字段进行筛选。
 
@@ -506,7 +506,7 @@ class Server:
 
     @network_version.setter
     def network_version(self, network_version):
-        """Sets the network_version of this Server.
+        r"""Sets the network_version of this Server.
 
         是否为自定义网络的云手机服务器标识。\"v1\"，非自定义网络的云手机服务器。  \"v2\"，自定义网络的云手机服务器。支持按照网络版本字段进行筛选。
 
@@ -517,7 +517,7 @@ class Server:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Server.
+        r"""Gets the enterprise_project_id of this Server.
 
         云手机服务器所属企业项目ID。
 
@@ -528,7 +528,7 @@ class Server:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Server.
+        r"""Sets the enterprise_project_id of this Server.
 
         云手机服务器所属企业项目ID。
 
@@ -539,7 +539,7 @@ class Server:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Server.
+        r"""Gets the create_time of this Server.
 
         创建时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -550,7 +550,7 @@ class Server:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Server.
+        r"""Sets the create_time of this Server.
 
         创建时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -561,7 +561,7 @@ class Server:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Server.
+        r"""Gets the update_time of this Server.
 
         更新时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -572,7 +572,7 @@ class Server:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Server.
+        r"""Sets the update_time of this Server.
 
         更新时间， 时间格式为UTC，YYYY-MM-DDTHH:MM:SSZ。
 

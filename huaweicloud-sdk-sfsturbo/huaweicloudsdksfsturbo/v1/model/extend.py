@@ -29,7 +29,7 @@ class Extend:
     }
 
     def __init__(self, new_size=None, new_bandwidth=None, bss_param=None):
-        """Extend
+        r"""Extend
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class Extend:
 
     @property
     def new_size(self):
-        """Gets the new_size of this Extend.
+        r"""Gets the new_size of this Extend.
 
         扩容后文件系统的新容量，以GiB为单位。  SFS Turbo上一代文件系统规格类型-标准型和性能型，取值范围500~32768 GiB，扩容步长大于等于100 GiB。  SFS Turbo上一代文件系统规格类型-标准型增强版和性能型增强版。容量范围是10240~327680 GiB。扩容步长大于等于100 GiB。  20MB/s/TiB，容量范围是3686~1048576 GiB。容量必须为1.2TiB的倍数，扩容步长需要大于等于1.2TiB，需要将目标容量换算为GiB后需要向下取整。如4.8TiB->4915GiB，8.4TiB->8601GiB。  40MB/s/TiB，容量范围是1228~1048576 GiB。容量必须为1.2TiB的倍数，扩容步长需要大于等于1.2TiB，需要将目标容量换算为GiB后需要向下取整。如4.8TiB->4915GiB，8.4TiB->8601GiB。  125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB与40MB/s/TiB的容量范围，扩容步长相同。  HPC缓存型文件系统，容量范围是4096~1048576 GiB。扩容步长均为1TiB。需要将目标容量换算为GiB。
 
@@ -67,7 +67,7 @@ class Extend:
 
     @new_size.setter
     def new_size(self, new_size):
-        """Sets the new_size of this Extend.
+        r"""Sets the new_size of this Extend.
 
         扩容后文件系统的新容量，以GiB为单位。  SFS Turbo上一代文件系统规格类型-标准型和性能型，取值范围500~32768 GiB，扩容步长大于等于100 GiB。  SFS Turbo上一代文件系统规格类型-标准型增强版和性能型增强版。容量范围是10240~327680 GiB。扩容步长大于等于100 GiB。  20MB/s/TiB，容量范围是3686~1048576 GiB。容量必须为1.2TiB的倍数，扩容步长需要大于等于1.2TiB，需要将目标容量换算为GiB后需要向下取整。如4.8TiB->4915GiB，8.4TiB->8601GiB。  40MB/s/TiB，容量范围是1228~1048576 GiB。容量必须为1.2TiB的倍数，扩容步长需要大于等于1.2TiB，需要将目标容量换算为GiB后需要向下取整。如4.8TiB->4915GiB，8.4TiB->8601GiB。  125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB与40MB/s/TiB的容量范围，扩容步长相同。  HPC缓存型文件系统，容量范围是4096~1048576 GiB。扩容步长均为1TiB。需要将目标容量换算为GiB。
 
@@ -78,7 +78,7 @@ class Extend:
 
     @property
     def new_bandwidth(self):
-        """Gets the new_bandwidth of this Extend.
+        r"""Gets the new_bandwidth of this Extend.
 
         带宽的目标值，单位：GB。仅HPC缓存型支持带宽扩缩。 支持的带宽值为：\"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"、\"48G\"。 
 
@@ -89,7 +89,7 @@ class Extend:
 
     @new_bandwidth.setter
     def new_bandwidth(self, new_bandwidth):
-        """Sets the new_bandwidth of this Extend.
+        r"""Sets the new_bandwidth of this Extend.
 
         带宽的目标值，单位：GB。仅HPC缓存型支持带宽扩缩。 支持的带宽值为：\"2G\"、\"4G\"、\"8G\"、\"16G\"、\"24G\"、\"32G\"、\"48G\"。 
 
@@ -100,7 +100,7 @@ class Extend:
 
     @property
     def bss_param(self):
-        """Gets the bss_param of this Extend.
+        r"""Gets the bss_param of this Extend.
 
         :return: The bss_param of this Extend.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.BssInfoExtend`
@@ -109,7 +109,7 @@ class Extend:
 
     @bss_param.setter
     def bss_param(self, bss_param):
-        """Sets the bss_param of this Extend.
+        r"""Sets the bss_param of this Extend.
 
         :param bss_param: The bss_param of this Extend.
         :type bss_param: :class:`huaweicloudsdksfsturbo.v1.BssInfoExtend`

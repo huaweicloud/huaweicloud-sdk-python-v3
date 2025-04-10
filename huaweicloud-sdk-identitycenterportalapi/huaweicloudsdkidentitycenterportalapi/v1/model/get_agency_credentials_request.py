@@ -30,7 +30,7 @@ class GetAgencyCredentialsRequest:
     }
 
     def __init__(self, access_token=None, target_account_id=None, agency_urn=None):
-        """GetAgencyCredentialsRequest
+        r"""GetAgencyCredentialsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class GetAgencyCredentialsRequest:
 
     @property
     def access_token(self):
-        """Gets the access_token of this GetAgencyCredentialsRequest.
+        r"""Gets the access_token of this GetAgencyCredentialsRequest.
 
         创建令牌接口调用签发的访问令牌
 
@@ -66,7 +66,7 @@ class GetAgencyCredentialsRequest:
 
     @access_token.setter
     def access_token(self, access_token):
-        """Sets the access_token of this GetAgencyCredentialsRequest.
+        r"""Sets the access_token of this GetAgencyCredentialsRequest.
 
         创建令牌接口调用签发的访问令牌
 
@@ -77,7 +77,7 @@ class GetAgencyCredentialsRequest:
 
     @property
     def target_account_id(self):
-        """Gets the target_account_id of this GetAgencyCredentialsRequest.
+        r"""Gets the target_account_id of this GetAgencyCredentialsRequest.
 
         目标账户的全局唯一标识符（ID）
 
@@ -88,7 +88,7 @@ class GetAgencyCredentialsRequest:
 
     @target_account_id.setter
     def target_account_id(self, target_account_id):
-        """Sets the target_account_id of this GetAgencyCredentialsRequest.
+        r"""Sets the target_account_id of this GetAgencyCredentialsRequest.
 
         目标账户的全局唯一标识符（ID）
 
@@ -99,7 +99,7 @@ class GetAgencyCredentialsRequest:
 
     @property
     def agency_urn(self):
-        """Gets the agency_urn of this GetAgencyCredentialsRequest.
+        r"""Gets the agency_urn of this GetAgencyCredentialsRequest.
 
         委托或信任委托的统一资源名称（URN）
 
@@ -110,7 +110,7 @@ class GetAgencyCredentialsRequest:
 
     @agency_urn.setter
     def agency_urn(self, agency_urn):
-        """Sets the agency_urn of this GetAgencyCredentialsRequest.
+        r"""Sets the agency_urn of this GetAgencyCredentialsRequest.
 
         委托或信任委托的统一资源名称（URN）
 

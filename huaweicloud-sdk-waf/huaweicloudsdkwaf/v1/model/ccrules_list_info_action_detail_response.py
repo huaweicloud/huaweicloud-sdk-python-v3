@@ -27,7 +27,7 @@ class CcrulesListInfoActionDetailResponse:
     }
 
     def __init__(self, content_type=None, content=None):
-        """CcrulesListInfoActionDetailResponse
+        r"""CcrulesListInfoActionDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CcrulesListInfoActionDetailResponse:
 
     @property
     def content_type(self):
-        """Gets the content_type of this CcrulesListInfoActionDetailResponse.
+        r"""Gets the content_type of this CcrulesListInfoActionDetailResponse.
 
         内容类型，值可为“application/json”、“text/html”、“text/xml”。
 
@@ -61,7 +61,7 @@ class CcrulesListInfoActionDetailResponse:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this CcrulesListInfoActionDetailResponse.
+        r"""Sets the content_type of this CcrulesListInfoActionDetailResponse.
 
         内容类型，值可为“application/json”、“text/html”、“text/xml”。
 
@@ -72,7 +72,7 @@ class CcrulesListInfoActionDetailResponse:
 
     @property
     def content(self):
-        """Gets the content of this CcrulesListInfoActionDetailResponse.
+        r"""Gets the content of this CcrulesListInfoActionDetailResponse.
 
         阻断页面内容
 
@@ -83,7 +83,7 @@ class CcrulesListInfoActionDetailResponse:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CcrulesListInfoActionDetailResponse.
+        r"""Sets the content of this CcrulesListInfoActionDetailResponse.
 
         阻断页面内容
 

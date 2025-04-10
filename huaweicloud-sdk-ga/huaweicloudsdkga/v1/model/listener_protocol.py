@@ -27,7 +27,7 @@ class ListenerProtocol:
     }
 
     def __init__(self):
-        """ListenerProtocol
+        r"""ListenerProtocol
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class DeleteMigprojectRequest:
     }
 
     def __init__(self, mig_project_id=None):
-        """DeleteMigprojectRequest
+        r"""DeleteMigprojectRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteMigprojectRequest:
 
     @property
     def mig_project_id(self):
-        """Gets the mig_project_id of this DeleteMigprojectRequest.
+        r"""Gets the mig_project_id of this DeleteMigprojectRequest.
 
         需要删除的迁移项目的ID
 
@@ -53,7 +53,7 @@ class DeleteMigprojectRequest:
 
     @mig_project_id.setter
     def mig_project_id(self, mig_project_id):
-        """Sets the mig_project_id of this DeleteMigprojectRequest.
+        r"""Sets the mig_project_id of this DeleteMigprojectRequest.
 
         需要删除的迁移项目的ID
 

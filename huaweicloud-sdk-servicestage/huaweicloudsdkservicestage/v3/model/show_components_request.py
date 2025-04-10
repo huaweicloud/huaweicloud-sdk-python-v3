@@ -35,7 +35,7 @@ class ShowComponentsRequest:
     }
 
     def __init__(self, limit=None, offset=None, order_by=None, order=None, application_name=None, component_name=None):
-        """ShowComponentsRequest
+        r"""ShowComponentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ShowComponentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowComponentsRequest.
+        r"""Gets the limit of this ShowComponentsRequest.
 
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
@@ -89,7 +89,7 @@ class ShowComponentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowComponentsRequest.
+        r"""Sets the limit of this ShowComponentsRequest.
 
         指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
@@ -100,7 +100,7 @@ class ShowComponentsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowComponentsRequest.
+        r"""Gets the offset of this ShowComponentsRequest.
 
         指定查询偏移量，默认偏移量为0.
 
@@ -111,7 +111,7 @@ class ShowComponentsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowComponentsRequest.
+        r"""Sets the offset of this ShowComponentsRequest.
 
         指定查询偏移量，默认偏移量为0.
 
@@ -122,7 +122,7 @@ class ShowComponentsRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ShowComponentsRequest.
+        r"""Gets the order_by of this ShowComponentsRequest.
 
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
@@ -133,7 +133,7 @@ class ShowComponentsRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ShowComponentsRequest.
+        r"""Sets the order_by of this ShowComponentsRequest.
 
         排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
@@ -144,7 +144,7 @@ class ShowComponentsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ShowComponentsRequest.
+        r"""Gets the order of this ShowComponentsRequest.
 
         desc/asc，默认desc。
 
@@ -155,7 +155,7 @@ class ShowComponentsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ShowComponentsRequest.
+        r"""Sets the order of this ShowComponentsRequest.
 
         desc/asc，默认desc。
 
@@ -166,7 +166,7 @@ class ShowComponentsRequest:
 
     @property
     def application_name(self):
-        """Gets the application_name of this ShowComponentsRequest.
+        r"""Gets the application_name of this ShowComponentsRequest.
 
         应用名称
 
@@ -177,7 +177,7 @@ class ShowComponentsRequest:
 
     @application_name.setter
     def application_name(self, application_name):
-        """Sets the application_name of this ShowComponentsRequest.
+        r"""Sets the application_name of this ShowComponentsRequest.
 
         应用名称
 
@@ -188,7 +188,7 @@ class ShowComponentsRequest:
 
     @property
     def component_name(self):
-        """Gets the component_name of this ShowComponentsRequest.
+        r"""Gets the component_name of this ShowComponentsRequest.
 
         组件名称
 
@@ -199,7 +199,7 @@ class ShowComponentsRequest:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this ShowComponentsRequest.
+        r"""Sets the component_name of this ShowComponentsRequest.
 
         组件名称
 

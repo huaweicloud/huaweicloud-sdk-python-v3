@@ -25,7 +25,7 @@ class DeleteNotificationTemplateBody:
     }
 
     def __init__(self, template_names=None):
-        """DeleteNotificationTemplateBody
+        r"""DeleteNotificationTemplateBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteNotificationTemplateBody:
 
     @property
     def template_names(self):
-        """Gets the template_names of this DeleteNotificationTemplateBody.
+        r"""Gets the template_names of this DeleteNotificationTemplateBody.
 
         待删除模板名称数组
 
@@ -53,7 +53,7 @@ class DeleteNotificationTemplateBody:
 
     @template_names.setter
     def template_names(self, template_names):
-        """Sets the template_names of this DeleteNotificationTemplateBody.
+        r"""Sets the template_names of this DeleteNotificationTemplateBody.
 
         待删除模板名称数组
 

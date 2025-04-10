@@ -39,7 +39,7 @@ class VpnUser:
     }
 
     def __init__(self, id=None, name=None, description=None, user_group_id=None, user_group_name=None, created_at=None, updated_at=None, static_ip=None):
-        """VpnUser
+        r"""VpnUser
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class VpnUser:
 
     @property
     def id(self):
-        """Gets the id of this VpnUser.
+        r"""Gets the id of this VpnUser.
 
         用户ID
 
@@ -103,7 +103,7 @@ class VpnUser:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VpnUser.
+        r"""Sets the id of this VpnUser.
 
         用户ID
 
@@ -114,7 +114,7 @@ class VpnUser:
 
     @property
     def name(self):
-        """Gets the name of this VpnUser.
+        r"""Gets the name of this VpnUser.
 
         用户名称
 
@@ -125,7 +125,7 @@ class VpnUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VpnUser.
+        r"""Sets the name of this VpnUser.
 
         用户名称
 
@@ -136,7 +136,7 @@ class VpnUser:
 
     @property
     def description(self):
-        """Gets the description of this VpnUser.
+        r"""Gets the description of this VpnUser.
 
         用户描述
 
@@ -147,7 +147,7 @@ class VpnUser:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VpnUser.
+        r"""Sets the description of this VpnUser.
 
         用户描述
 
@@ -158,7 +158,7 @@ class VpnUser:
 
     @property
     def user_group_id(self):
-        """Gets the user_group_id of this VpnUser.
+        r"""Gets the user_group_id of this VpnUser.
 
         所属用户组ID
 
@@ -169,7 +169,7 @@ class VpnUser:
 
     @user_group_id.setter
     def user_group_id(self, user_group_id):
-        """Sets the user_group_id of this VpnUser.
+        r"""Sets the user_group_id of this VpnUser.
 
         所属用户组ID
 
@@ -180,7 +180,7 @@ class VpnUser:
 
     @property
     def user_group_name(self):
-        """Gets the user_group_name of this VpnUser.
+        r"""Gets the user_group_name of this VpnUser.
 
         所属用户组名称
 
@@ -191,7 +191,7 @@ class VpnUser:
 
     @user_group_name.setter
     def user_group_name(self, user_group_name):
-        """Sets the user_group_name of this VpnUser.
+        r"""Sets the user_group_name of this VpnUser.
 
         所属用户组名称
 
@@ -202,7 +202,7 @@ class VpnUser:
 
     @property
     def created_at(self):
-        """Gets the created_at of this VpnUser.
+        r"""Gets the created_at of this VpnUser.
 
         创建时间
 
@@ -213,7 +213,7 @@ class VpnUser:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this VpnUser.
+        r"""Sets the created_at of this VpnUser.
 
         创建时间
 
@@ -224,7 +224,7 @@ class VpnUser:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this VpnUser.
+        r"""Gets the updated_at of this VpnUser.
 
         更新时间
 
@@ -235,7 +235,7 @@ class VpnUser:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this VpnUser.
+        r"""Sets the updated_at of this VpnUser.
 
         更新时间
 
@@ -246,7 +246,7 @@ class VpnUser:
 
     @property
     def static_ip(self):
-        """Gets the static_ip of this VpnUser.
+        r"""Gets the static_ip of this VpnUser.
 
         静态客户端IP地址，disable表示随机分配客户端IP
 
@@ -257,7 +257,7 @@ class VpnUser:
 
     @static_ip.setter
     def static_ip(self, static_ip):
-        """Sets the static_ip of this VpnUser.
+        r"""Sets the static_ip of this VpnUser.
 
         静态客户端IP地址，disable表示随机分配客户端IP
 

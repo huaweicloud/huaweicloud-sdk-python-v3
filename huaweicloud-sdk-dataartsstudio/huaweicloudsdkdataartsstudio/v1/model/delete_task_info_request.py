@@ -27,7 +27,7 @@ class DeleteTaskInfoRequest:
     }
 
     def __init__(self, workspace=None, task_id=None):
-        """DeleteTaskInfoRequest
+        r"""DeleteTaskInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteTaskInfoRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteTaskInfoRequest.
+        r"""Gets the workspace of this DeleteTaskInfoRequest.
 
         DataArts Studio工作空间ID
 
@@ -59,7 +59,7 @@ class DeleteTaskInfoRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteTaskInfoRequest.
+        r"""Sets the workspace of this DeleteTaskInfoRequest.
 
         DataArts Studio工作空间ID
 
@@ -70,7 +70,7 @@ class DeleteTaskInfoRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteTaskInfoRequest.
+        r"""Gets the task_id of this DeleteTaskInfoRequest.
 
         任务id
 
@@ -81,7 +81,7 @@ class DeleteTaskInfoRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteTaskInfoRequest.
+        r"""Sets the task_id of this DeleteTaskInfoRequest.
 
         任务id
 

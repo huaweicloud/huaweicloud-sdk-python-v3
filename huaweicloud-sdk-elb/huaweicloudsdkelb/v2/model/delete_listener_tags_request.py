@@ -27,7 +27,7 @@ class DeleteListenerTagsRequest:
     }
 
     def __init__(self, listener_id=None, key=None):
-        """DeleteListenerTagsRequest
+        r"""DeleteListenerTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteListenerTagsRequest:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this DeleteListenerTagsRequest.
+        r"""Gets the listener_id of this DeleteListenerTagsRequest.
 
         监听器ID
 
@@ -59,7 +59,7 @@ class DeleteListenerTagsRequest:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this DeleteListenerTagsRequest.
+        r"""Sets the listener_id of this DeleteListenerTagsRequest.
 
         监听器ID
 
@@ -70,7 +70,7 @@ class DeleteListenerTagsRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteListenerTagsRequest.
+        r"""Gets the key of this DeleteListenerTagsRequest.
 
         待删除标签的key值。
 
@@ -81,7 +81,7 @@ class DeleteListenerTagsRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteListenerTagsRequest.
+        r"""Sets the key of this DeleteListenerTagsRequest.
 
         待删除标签的key值。
 

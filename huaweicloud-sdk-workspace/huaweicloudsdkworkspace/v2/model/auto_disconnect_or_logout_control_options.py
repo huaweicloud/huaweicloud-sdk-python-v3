@@ -25,7 +25,7 @@ class AutoDisconnectOrLogoutControlOptions:
     }
 
     def __init__(self, auto_disconnect_minutes=None):
-        """AutoDisconnectOrLogoutControlOptions
+        r"""AutoDisconnectOrLogoutControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AutoDisconnectOrLogoutControlOptions:
 
     @property
     def auto_disconnect_minutes(self):
-        """Gets the auto_disconnect_minutes of this AutoDisconnectOrLogoutControlOptions.
+        r"""Gets the auto_disconnect_minutes of this AutoDisconnectOrLogoutControlOptions.
 
         断开或注销等待时间（分钟）。取值范围为[1-86400]。默认：1440。
 
@@ -54,7 +54,7 @@ class AutoDisconnectOrLogoutControlOptions:
 
     @auto_disconnect_minutes.setter
     def auto_disconnect_minutes(self, auto_disconnect_minutes):
-        """Sets the auto_disconnect_minutes of this AutoDisconnectOrLogoutControlOptions.
+        r"""Sets the auto_disconnect_minutes of this AutoDisconnectOrLogoutControlOptions.
 
         断开或注销等待时间（分钟）。取值范围为[1-86400]。默认：1440。
 

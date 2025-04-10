@@ -28,7 +28,7 @@ class CreateSecretResponse(SdkResponse):
     }
 
     def __init__(self, auths=None, x_swr_dockerlogin=None):
-        """CreateSecretResponse
+        r"""CreateSecretResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateSecretResponse(SdkResponse):
 
     @property
     def auths(self):
-        """Gets the auths of this CreateSecretResponse.
+        r"""Gets the auths of this CreateSecretResponse.
 
         认证信息
 
@@ -62,7 +62,7 @@ class CreateSecretResponse(SdkResponse):
 
     @auths.setter
     def auths(self, auths):
-        """Sets the auths of this CreateSecretResponse.
+        r"""Sets the auths of this CreateSecretResponse.
 
         认证信息
 
@@ -73,7 +73,7 @@ class CreateSecretResponse(SdkResponse):
 
     @property
     def x_swr_dockerlogin(self):
-        """Gets the x_swr_dockerlogin of this CreateSecretResponse.
+        r"""Gets the x_swr_dockerlogin of this CreateSecretResponse.
 
         :return: The x_swr_dockerlogin of this CreateSecretResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateSecretResponse(SdkResponse):
 
     @x_swr_dockerlogin.setter
     def x_swr_dockerlogin(self, x_swr_dockerlogin):
-        """Sets the x_swr_dockerlogin of this CreateSecretResponse.
+        r"""Sets the x_swr_dockerlogin of this CreateSecretResponse.
 
         :param x_swr_dockerlogin: The x_swr_dockerlogin of this CreateSecretResponse.
         :type x_swr_dockerlogin: str

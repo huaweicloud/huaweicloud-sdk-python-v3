@@ -29,7 +29,7 @@ class ChDatabaseTableConfigCheckResult:
     }
 
     def __init__(self, table_name=None, table_config=None, check_result=None):
-        """ChDatabaseTableConfigCheckResult
+        r"""ChDatabaseTableConfigCheckResult
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ChDatabaseTableConfigCheckResult:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ChDatabaseTableConfigCheckResult.
+        r"""Gets the table_name of this ChDatabaseTableConfigCheckResult.
 
         数据库表名。
 
@@ -65,7 +65,7 @@ class ChDatabaseTableConfigCheckResult:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ChDatabaseTableConfigCheckResult.
+        r"""Sets the table_name of this ChDatabaseTableConfigCheckResult.
 
         数据库表名。
 
@@ -76,7 +76,7 @@ class ChDatabaseTableConfigCheckResult:
 
     @property
     def table_config(self):
-        """Gets the table_config of this ChDatabaseTableConfigCheckResult.
+        r"""Gets the table_config of this ChDatabaseTableConfigCheckResult.
 
         表配置项。  允许输入的列操作有：PARTITION BY, COLUMNS, ORDER BY, SAMPLE BY, PRIMARY KEY, TTL
 
@@ -87,7 +87,7 @@ class ChDatabaseTableConfigCheckResult:
 
     @table_config.setter
     def table_config(self, table_config):
-        """Sets the table_config of this ChDatabaseTableConfigCheckResult.
+        r"""Sets the table_config of this ChDatabaseTableConfigCheckResult.
 
         表配置项。  允许输入的列操作有：PARTITION BY, COLUMNS, ORDER BY, SAMPLE BY, PRIMARY KEY, TTL
 
@@ -98,7 +98,7 @@ class ChDatabaseTableConfigCheckResult:
 
     @property
     def check_result(self):
-        """Gets the check_result of this ChDatabaseTableConfigCheckResult.
+        r"""Gets the check_result of this ChDatabaseTableConfigCheckResult.
 
         校验结果。
 
@@ -109,7 +109,7 @@ class ChDatabaseTableConfigCheckResult:
 
     @check_result.setter
     def check_result(self, check_result):
-        """Sets the check_result of this ChDatabaseTableConfigCheckResult.
+        r"""Sets the check_result of this ChDatabaseTableConfigCheckResult.
 
         校验结果。
 

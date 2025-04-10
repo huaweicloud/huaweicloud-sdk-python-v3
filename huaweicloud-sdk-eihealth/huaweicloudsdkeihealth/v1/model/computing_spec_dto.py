@@ -37,7 +37,7 @@ class ComputingSpecDto:
     }
 
     def __init__(self, code=None, name=None, ram=None, vcpus=None, max_rate=None, min_rate=None, max_pps=None):
-        """ComputingSpecDto
+        r"""ComputingSpecDto
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ComputingSpecDto:
 
     @property
     def code(self):
-        """Gets the code of this ComputingSpecDto.
+        r"""Gets the code of this ComputingSpecDto.
 
         规格编号
 
@@ -94,7 +94,7 @@ class ComputingSpecDto:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ComputingSpecDto.
+        r"""Sets the code of this ComputingSpecDto.
 
         规格编号
 
@@ -105,7 +105,7 @@ class ComputingSpecDto:
 
     @property
     def name(self):
-        """Gets the name of this ComputingSpecDto.
+        r"""Gets the name of this ComputingSpecDto.
 
         规格名称
 
@@ -116,7 +116,7 @@ class ComputingSpecDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComputingSpecDto.
+        r"""Sets the name of this ComputingSpecDto.
 
         规格名称
 
@@ -127,7 +127,7 @@ class ComputingSpecDto:
 
     @property
     def ram(self):
-        """Gets the ram of this ComputingSpecDto.
+        r"""Gets the ram of this ComputingSpecDto.
 
         内存
 
@@ -138,7 +138,7 @@ class ComputingSpecDto:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this ComputingSpecDto.
+        r"""Sets the ram of this ComputingSpecDto.
 
         内存
 
@@ -149,7 +149,7 @@ class ComputingSpecDto:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this ComputingSpecDto.
+        r"""Gets the vcpus of this ComputingSpecDto.
 
         vcpus
 
@@ -160,7 +160,7 @@ class ComputingSpecDto:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this ComputingSpecDto.
+        r"""Sets the vcpus of this ComputingSpecDto.
 
         vcpus
 
@@ -171,7 +171,7 @@ class ComputingSpecDto:
 
     @property
     def max_rate(self):
-        """Gets the max_rate of this ComputingSpecDto.
+        r"""Gets the max_rate of this ComputingSpecDto.
 
         最大带宽
 
@@ -182,7 +182,7 @@ class ComputingSpecDto:
 
     @max_rate.setter
     def max_rate(self, max_rate):
-        """Sets the max_rate of this ComputingSpecDto.
+        r"""Sets the max_rate of this ComputingSpecDto.
 
         最大带宽
 
@@ -193,7 +193,7 @@ class ComputingSpecDto:
 
     @property
     def min_rate(self):
-        """Gets the min_rate of this ComputingSpecDto.
+        r"""Gets the min_rate of this ComputingSpecDto.
 
         基准带宽
 
@@ -204,7 +204,7 @@ class ComputingSpecDto:
 
     @min_rate.setter
     def min_rate(self, min_rate):
-        """Sets the min_rate of this ComputingSpecDto.
+        r"""Sets the min_rate of this ComputingSpecDto.
 
         基准带宽
 
@@ -215,7 +215,7 @@ class ComputingSpecDto:
 
     @property
     def max_pps(self):
-        """Gets the max_pps of this ComputingSpecDto.
+        r"""Gets the max_pps of this ComputingSpecDto.
 
         最大收发包能力
 
@@ -226,7 +226,7 @@ class ComputingSpecDto:
 
     @max_pps.setter
     def max_pps(self, max_pps):
-        """Sets the max_pps of this ComputingSpecDto.
+        r"""Sets the max_pps of this ComputingSpecDto.
 
         最大收发包能力
 

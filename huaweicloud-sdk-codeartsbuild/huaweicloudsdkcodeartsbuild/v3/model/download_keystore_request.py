@@ -27,7 +27,7 @@ class DownloadKeystoreRequest:
     }
 
     def __init__(self, file_name=None, domain_id=None):
-        """DownloadKeystoreRequest
+        r"""DownloadKeystoreRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DownloadKeystoreRequest:
 
     @property
     def file_name(self):
-        """Gets the file_name of this DownloadKeystoreRequest.
+        r"""Gets the file_name of this DownloadKeystoreRequest.
 
         下载的文件名称
 
@@ -59,7 +59,7 @@ class DownloadKeystoreRequest:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this DownloadKeystoreRequest.
+        r"""Sets the file_name of this DownloadKeystoreRequest.
 
         下载的文件名称
 
@@ -70,7 +70,7 @@ class DownloadKeystoreRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DownloadKeystoreRequest.
+        r"""Gets the domain_id of this DownloadKeystoreRequest.
 
         租户ID。32位数字、小写字母组合
 
@@ -81,7 +81,7 @@ class DownloadKeystoreRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DownloadKeystoreRequest.
+        r"""Sets the domain_id of this DownloadKeystoreRequest.
 
         租户ID。32位数字、小写字母组合
 

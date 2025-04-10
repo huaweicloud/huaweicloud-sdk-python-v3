@@ -28,7 +28,7 @@ class ListUsersResponse(SdkResponse):
     }
 
     def __init__(self, page_info=None, users=None):
-        """ListUsersResponse
+        r"""ListUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListUsersResponse.
+        r"""Gets the page_info of this ListUsersResponse.
 
         :return: The page_info of this ListUsersResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.PageInfoDto`
@@ -60,7 +60,7 @@ class ListUsersResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListUsersResponse.
+        r"""Sets the page_info of this ListUsersResponse.
 
         :param page_info: The page_info of this ListUsersResponse.
         :type page_info: :class:`huaweicloudsdkidentitycenterstore.v1.PageInfoDto`
@@ -69,7 +69,7 @@ class ListUsersResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this ListUsersResponse.
+        r"""Gets the users of this ListUsersResponse.
 
         身份源中的用户列表
 
@@ -80,7 +80,7 @@ class ListUsersResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ListUsersResponse.
+        r"""Sets the users of this ListUsersResponse.
 
         身份源中的用户列表
 

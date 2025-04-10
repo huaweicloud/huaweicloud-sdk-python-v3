@@ -27,7 +27,7 @@ class RunSearchRequest:
     }
 
     def __init__(self, service_name=None, body=None):
-        """RunSearchRequest
+        r"""RunSearchRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunSearchRequest:
 
     @property
     def service_name(self):
-        """Gets the service_name of this RunSearchRequest.
+        r"""Gets the service_name of this RunSearchRequest.
 
         服务实例的名称，用户创建服务实例时指定。
 
@@ -60,7 +60,7 @@ class RunSearchRequest:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this RunSearchRequest.
+        r"""Sets the service_name of this RunSearchRequest.
 
         服务实例的名称，用户创建服务实例时指定。
 
@@ -71,7 +71,7 @@ class RunSearchRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunSearchRequest.
+        r"""Gets the body of this RunSearchRequest.
 
         :return: The body of this RunSearchRequest.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.SearchParam`
@@ -80,7 +80,7 @@ class RunSearchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunSearchRequest.
+        r"""Sets the body of this RunSearchRequest.
 
         :param body: The body of this RunSearchRequest.
         :type body: :class:`huaweicloudsdkimagesearch.v2.SearchParam`

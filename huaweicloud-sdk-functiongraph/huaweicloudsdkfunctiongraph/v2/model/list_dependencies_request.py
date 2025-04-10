@@ -37,7 +37,7 @@ class ListDependenciesRequest:
     }
 
     def __init__(self, marker=None, maxitems=None, ispublic=None, dependency_type=None, runtime=None, name=None, limit=None):
-        """ListDependenciesRequest
+        r"""ListDependenciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListDependenciesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListDependenciesRequest.
+        r"""Gets the marker of this ListDependenciesRequest.
 
         上一次查询依赖包的最后记录位置，默认为\"0\"。
 
@@ -96,7 +96,7 @@ class ListDependenciesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListDependenciesRequest.
+        r"""Sets the marker of this ListDependenciesRequest.
 
         上一次查询依赖包的最后记录位置，默认为\"0\"。
 
@@ -107,7 +107,7 @@ class ListDependenciesRequest:
 
     @property
     def maxitems(self):
-        """Gets the maxitems of this ListDependenciesRequest.
+        r"""Gets the maxitems of this ListDependenciesRequest.
 
         单次查询最大条数
 
@@ -118,7 +118,7 @@ class ListDependenciesRequest:
 
     @maxitems.setter
     def maxitems(self, maxitems):
-        """Sets the maxitems of this ListDependenciesRequest.
+        r"""Sets the maxitems of this ListDependenciesRequest.
 
         单次查询最大条数
 
@@ -129,7 +129,7 @@ class ListDependenciesRequest:
 
     @property
     def ispublic(self):
-        """Gets the ispublic of this ListDependenciesRequest.
+        r"""Gets the ispublic of this ListDependenciesRequest.
 
         是否为公共依赖包
 
@@ -140,7 +140,7 @@ class ListDependenciesRequest:
 
     @ispublic.setter
     def ispublic(self, ispublic):
-        """Sets the ispublic of this ListDependenciesRequest.
+        r"""Sets the ispublic of this ListDependenciesRequest.
 
         是否为公共依赖包
 
@@ -151,7 +151,7 @@ class ListDependenciesRequest:
 
     @property
     def dependency_type(self):
-        """Gets the dependency_type of this ListDependenciesRequest.
+        r"""Gets the dependency_type of this ListDependenciesRequest.
 
         依赖包类型public：公开,private:私有，all：全部。缺省时查询全量
 
@@ -162,7 +162,7 @@ class ListDependenciesRequest:
 
     @dependency_type.setter
     def dependency_type(self, dependency_type):
-        """Sets the dependency_type of this ListDependenciesRequest.
+        r"""Sets the dependency_type of this ListDependenciesRequest.
 
         依赖包类型public：公开,private:私有，all：全部。缺省时查询全量
 
@@ -173,7 +173,7 @@ class ListDependenciesRequest:
 
     @property
     def runtime(self):
-        """Gets the runtime of this ListDependenciesRequest.
+        r"""Gets the runtime of this ListDependenciesRequest.
 
         FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
 
@@ -184,7 +184,7 @@ class ListDependenciesRequest:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this ListDependenciesRequest.
+        r"""Sets the runtime of this ListDependenciesRequest.
 
         FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 http: HTTP函数。
 
@@ -195,7 +195,7 @@ class ListDependenciesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDependenciesRequest.
+        r"""Gets the name of this ListDependenciesRequest.
 
         依赖包名称。
 
@@ -206,7 +206,7 @@ class ListDependenciesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDependenciesRequest.
+        r"""Sets the name of this ListDependenciesRequest.
 
         依赖包名称。
 
@@ -217,7 +217,7 @@ class ListDependenciesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDependenciesRequest.
+        r"""Gets the limit of this ListDependenciesRequest.
 
         本次查询可获取的依赖包的最大数目，默认为\"400\"。
 
@@ -228,7 +228,7 @@ class ListDependenciesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDependenciesRequest.
+        r"""Sets the limit of this ListDependenciesRequest.
 
         本次查询可获取的依赖包的最大数目，默认为\"400\"。
 

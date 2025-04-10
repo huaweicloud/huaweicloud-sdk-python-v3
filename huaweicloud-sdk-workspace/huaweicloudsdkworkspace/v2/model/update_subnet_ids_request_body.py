@@ -27,7 +27,7 @@ class UpdateSubnetIdsRequestBody:
     }
 
     def __init__(self, subnet_ids=None, vpc_config_infos=None):
-        """UpdateSubnetIdsRequestBody
+        r"""UpdateSubnetIdsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateSubnetIdsRequestBody:
 
     @property
     def subnet_ids(self):
-        """Gets the subnet_ids of this UpdateSubnetIdsRequestBody.
+        r"""Gets the subnet_ids of this UpdateSubnetIdsRequestBody.
 
         业务子网id
 
@@ -61,7 +61,7 @@ class UpdateSubnetIdsRequestBody:
 
     @subnet_ids.setter
     def subnet_ids(self, subnet_ids):
-        """Sets the subnet_ids of this UpdateSubnetIdsRequestBody.
+        r"""Sets the subnet_ids of this UpdateSubnetIdsRequestBody.
 
         业务子网id
 
@@ -72,7 +72,7 @@ class UpdateSubnetIdsRequestBody:
 
     @property
     def vpc_config_infos(self):
-        """Gets the vpc_config_infos of this UpdateSubnetIdsRequestBody.
+        r"""Gets the vpc_config_infos of this UpdateSubnetIdsRequestBody.
 
         VPC配置信息列表。
 
@@ -83,7 +83,7 @@ class UpdateSubnetIdsRequestBody:
 
     @vpc_config_infos.setter
     def vpc_config_infos(self, vpc_config_infos):
-        """Sets the vpc_config_infos of this UpdateSubnetIdsRequestBody.
+        r"""Sets the vpc_config_infos of this UpdateSubnetIdsRequestBody.
 
         VPC配置信息列表。
 

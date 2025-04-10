@@ -31,7 +31,7 @@ class ModCorpDTO:
     }
 
     def __init__(self, basic_info=None, admin_info=None, group_id=None, property_info=None):
-        """ModCorpDTO
+        r"""ModCorpDTO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ModCorpDTO:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this ModCorpDTO.
+        r"""Gets the basic_info of this ModCorpDTO.
 
         :return: The basic_info of this ModCorpDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ModCorpBasicDTO`
@@ -73,7 +73,7 @@ class ModCorpDTO:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this ModCorpDTO.
+        r"""Sets the basic_info of this ModCorpDTO.
 
         :param basic_info: The basic_info of this ModCorpDTO.
         :type basic_info: :class:`huaweicloudsdkmeeting.v1.ModCorpBasicDTO`
@@ -82,7 +82,7 @@ class ModCorpDTO:
 
     @property
     def admin_info(self):
-        """Gets the admin_info of this ModCorpDTO.
+        r"""Gets the admin_info of this ModCorpDTO.
 
         :return: The admin_info of this ModCorpDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ModAdminDTO`
@@ -91,7 +91,7 @@ class ModCorpDTO:
 
     @admin_info.setter
     def admin_info(self, admin_info):
-        """Sets the admin_info of this ModCorpDTO.
+        r"""Sets the admin_info of this ModCorpDTO.
 
         :param admin_info: The admin_info of this ModCorpDTO.
         :type admin_info: :class:`huaweicloudsdkmeeting.v1.ModAdminDTO`
@@ -100,7 +100,7 @@ class ModCorpDTO:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ModCorpDTO.
+        r"""Gets the group_id of this ModCorpDTO.
 
         媒体接入（包括SBC和MCU）分组id，可通过[[SP管理员查询资源信息](https://support.huaweicloud.com/api-meeting/meeting_21_1537.html)](tag:hws)[[SP管理员查询资源信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1537.html)](tag:hk)接口查询获取。
 
@@ -111,7 +111,7 @@ class ModCorpDTO:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ModCorpDTO.
+        r"""Sets the group_id of this ModCorpDTO.
 
         媒体接入（包括SBC和MCU）分组id，可通过[[SP管理员查询资源信息](https://support.huaweicloud.com/api-meeting/meeting_21_1537.html)](tag:hws)[[SP管理员查询资源信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1537.html)](tag:hk)接口查询获取。
 
@@ -122,7 +122,7 @@ class ModCorpDTO:
 
     @property
     def property_info(self):
-        """Gets the property_info of this ModCorpDTO.
+        r"""Gets the property_info of this ModCorpDTO.
 
         可配置项信息。
 
@@ -133,7 +133,7 @@ class ModCorpDTO:
 
     @property_info.setter
     def property_info(self, property_info):
-        """Sets the property_info of this ModCorpDTO.
+        r"""Sets the property_info of this ModCorpDTO.
 
         可配置项信息。
 

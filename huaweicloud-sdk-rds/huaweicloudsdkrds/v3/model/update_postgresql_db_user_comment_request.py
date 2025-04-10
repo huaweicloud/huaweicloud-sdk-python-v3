@@ -29,7 +29,7 @@ class UpdatePostgresqlDbUserCommentRequest:
     }
 
     def __init__(self, instance_id=None, user_name=None, body=None):
-        """UpdatePostgresqlDbUserCommentRequest
+        r"""UpdatePostgresqlDbUserCommentRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdatePostgresqlDbUserCommentRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdatePostgresqlDbUserCommentRequest.
+        r"""Gets the instance_id of this UpdatePostgresqlDbUserCommentRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class UpdatePostgresqlDbUserCommentRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdatePostgresqlDbUserCommentRequest.
+        r"""Sets the instance_id of this UpdatePostgresqlDbUserCommentRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class UpdatePostgresqlDbUserCommentRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UpdatePostgresqlDbUserCommentRequest.
+        r"""Gets the user_name of this UpdatePostgresqlDbUserCommentRequest.
 
         数据库用户名。
 
@@ -88,7 +88,7 @@ class UpdatePostgresqlDbUserCommentRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UpdatePostgresqlDbUserCommentRequest.
+        r"""Sets the user_name of this UpdatePostgresqlDbUserCommentRequest.
 
         数据库用户名。
 
@@ -99,7 +99,7 @@ class UpdatePostgresqlDbUserCommentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePostgresqlDbUserCommentRequest.
+        r"""Gets the body of this UpdatePostgresqlDbUserCommentRequest.
 
         :return: The body of this UpdatePostgresqlDbUserCommentRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateDbUserReq`
@@ -108,7 +108,7 @@ class UpdatePostgresqlDbUserCommentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePostgresqlDbUserCommentRequest.
+        r"""Sets the body of this UpdatePostgresqlDbUserCommentRequest.
 
         :param body: The body of this UpdatePostgresqlDbUserCommentRequest.
         :type body: :class:`huaweicloudsdkrds.v3.UpdateDbUserReq`

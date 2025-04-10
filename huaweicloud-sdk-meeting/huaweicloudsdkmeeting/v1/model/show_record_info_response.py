@@ -30,7 +30,7 @@ class ShowRecordInfoResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None):
-        """ShowRecordInfoResponse
+        r"""ShowRecordInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowRecordInfoResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowRecordInfoResponse.
+        r"""Gets the code of this ShowRecordInfoResponse.
 
         结果码
 
@@ -69,7 +69,7 @@ class ShowRecordInfoResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowRecordInfoResponse.
+        r"""Sets the code of this ShowRecordInfoResponse.
 
         结果码
 
@@ -80,7 +80,7 @@ class ShowRecordInfoResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowRecordInfoResponse.
+        r"""Gets the message of this ShowRecordInfoResponse.
 
         结果描述
 
@@ -91,7 +91,7 @@ class ShowRecordInfoResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowRecordInfoResponse.
+        r"""Sets the message of this ShowRecordInfoResponse.
 
         结果描述
 
@@ -102,7 +102,7 @@ class ShowRecordInfoResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowRecordInfoResponse.
+        r"""Gets the data of this ShowRecordInfoResponse.
 
         :return: The data of this ShowRecordInfoResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RecordInfoDO`
@@ -111,7 +111,7 @@ class ShowRecordInfoResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowRecordInfoResponse.
+        r"""Sets the data of this ShowRecordInfoResponse.
 
         :param data: The data of this ShowRecordInfoResponse.
         :type data: :class:`huaweicloudsdkmeeting.v1.RecordInfoDO`

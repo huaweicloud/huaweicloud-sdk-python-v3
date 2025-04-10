@@ -27,7 +27,7 @@ class CreatePrivateHookRequest:
     }
 
     def __init__(self, client_request_id=None, body=None):
-        """CreatePrivateHookRequest
+        r"""CreatePrivateHookRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePrivateHookRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this CreatePrivateHookRequest.
+        r"""Gets the client_request_id of this CreatePrivateHookRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -60,7 +60,7 @@ class CreatePrivateHookRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this CreatePrivateHookRequest.
+        r"""Sets the client_request_id of this CreatePrivateHookRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -71,7 +71,7 @@ class CreatePrivateHookRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePrivateHookRequest.
+        r"""Gets the body of this CreatePrivateHookRequest.
 
         :return: The body of this CreatePrivateHookRequest.
         :rtype: :class:`huaweicloudsdkaos.v1.CreatePrivateHookRequestBody`
@@ -80,7 +80,7 @@ class CreatePrivateHookRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePrivateHookRequest.
+        r"""Sets the body of this CreatePrivateHookRequest.
 
         :param body: The body of this CreatePrivateHookRequest.
         :type body: :class:`huaweicloudsdkaos.v1.CreatePrivateHookRequestBody`

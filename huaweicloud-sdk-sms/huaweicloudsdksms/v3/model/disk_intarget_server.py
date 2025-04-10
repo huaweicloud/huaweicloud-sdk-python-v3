@@ -33,7 +33,7 @@ class DiskIntargetServer:
     }
 
     def __init__(self, name=None, size=None, device_use=None, used_size=None, physical_volumes=None):
-        """DiskIntargetServer
+        r"""DiskIntargetServer
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class DiskIntargetServer:
 
     @property
     def name(self):
-        """Gets the name of this DiskIntargetServer.
+        r"""Gets the name of this DiskIntargetServer.
 
         磁盘名称
 
@@ -80,7 +80,7 @@ class DiskIntargetServer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DiskIntargetServer.
+        r"""Sets the name of this DiskIntargetServer.
 
         磁盘名称
 
@@ -91,7 +91,7 @@ class DiskIntargetServer:
 
     @property
     def size(self):
-        """Gets the size of this DiskIntargetServer.
+        r"""Gets the size of this DiskIntargetServer.
 
         磁盘大小，单位：字节
 
@@ -102,7 +102,7 @@ class DiskIntargetServer:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this DiskIntargetServer.
+        r"""Sets the size of this DiskIntargetServer.
 
         磁盘大小，单位：字节
 
@@ -113,7 +113,7 @@ class DiskIntargetServer:
 
     @property
     def device_use(self):
-        """Gets the device_use of this DiskIntargetServer.
+        r"""Gets the device_use of this DiskIntargetServer.
 
         磁盘的作用 BOOT：BOOT设备 OS：系统设备 NORMAL:平常
 
@@ -124,7 +124,7 @@ class DiskIntargetServer:
 
     @device_use.setter
     def device_use(self, device_use):
-        """Sets the device_use of this DiskIntargetServer.
+        r"""Sets the device_use of this DiskIntargetServer.
 
         磁盘的作用 BOOT：BOOT设备 OS：系统设备 NORMAL:平常
 
@@ -135,7 +135,7 @@ class DiskIntargetServer:
 
     @property
     def used_size(self):
-        """Gets the used_size of this DiskIntargetServer.
+        r"""Gets the used_size of this DiskIntargetServer.
 
         磁盘已使用大小，以字节为单位
 
@@ -146,7 +146,7 @@ class DiskIntargetServer:
 
     @used_size.setter
     def used_size(self, used_size):
-        """Sets the used_size of this DiskIntargetServer.
+        r"""Sets the used_size of this DiskIntargetServer.
 
         磁盘已使用大小，以字节为单位
 
@@ -157,7 +157,7 @@ class DiskIntargetServer:
 
     @property
     def physical_volumes(self):
-        """Gets the physical_volumes of this DiskIntargetServer.
+        r"""Gets the physical_volumes of this DiskIntargetServer.
 
         物理卷信息
 
@@ -168,7 +168,7 @@ class DiskIntargetServer:
 
     @physical_volumes.setter
     def physical_volumes(self, physical_volumes):
-        """Sets the physical_volumes of this DiskIntargetServer.
+        r"""Sets the physical_volumes of this DiskIntargetServer.
 
         物理卷信息
 

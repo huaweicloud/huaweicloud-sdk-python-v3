@@ -27,7 +27,7 @@ class DeleteVpnAccessPolicyRequest:
     }
 
     def __init__(self, vpn_server_id=None, policy_id=None):
-        """DeleteVpnAccessPolicyRequest
+        r"""DeleteVpnAccessPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteVpnAccessPolicyRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this DeleteVpnAccessPolicyRequest.
+        r"""Gets the vpn_server_id of this DeleteVpnAccessPolicyRequest.
 
         VPN服务端 ID
 
@@ -59,7 +59,7 @@ class DeleteVpnAccessPolicyRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this DeleteVpnAccessPolicyRequest.
+        r"""Sets the vpn_server_id of this DeleteVpnAccessPolicyRequest.
 
         VPN服务端 ID
 
@@ -70,7 +70,7 @@ class DeleteVpnAccessPolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DeleteVpnAccessPolicyRequest.
+        r"""Gets the policy_id of this DeleteVpnAccessPolicyRequest.
 
         VPN访问策略ID
 
@@ -81,7 +81,7 @@ class DeleteVpnAccessPolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DeleteVpnAccessPolicyRequest.
+        r"""Sets the policy_id of this DeleteVpnAccessPolicyRequest.
 
         VPN访问策略ID
 

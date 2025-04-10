@@ -31,7 +31,7 @@ class ListRuleErrorsRequest:
     }
 
     def __init__(self, ief_instance_id=None, rule_id=None, limit=None, offset=None):
-        """ListRuleErrorsRequest
+        r"""ListRuleErrorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListRuleErrorsRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListRuleErrorsRequest.
+        r"""Gets the ief_instance_id of this ListRuleErrorsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -74,7 +74,7 @@ class ListRuleErrorsRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListRuleErrorsRequest.
+        r"""Sets the ief_instance_id of this ListRuleErrorsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -85,7 +85,7 @@ class ListRuleErrorsRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ListRuleErrorsRequest.
+        r"""Gets the rule_id of this ListRuleErrorsRequest.
 
         规则ID
 
@@ -96,7 +96,7 @@ class ListRuleErrorsRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ListRuleErrorsRequest.
+        r"""Sets the rule_id of this ListRuleErrorsRequest.
 
         规则ID
 
@@ -107,7 +107,7 @@ class ListRuleErrorsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRuleErrorsRequest.
+        r"""Gets the limit of this ListRuleErrorsRequest.
 
         查询返回记录的数量限制
 
@@ -118,7 +118,7 @@ class ListRuleErrorsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRuleErrorsRequest.
+        r"""Sets the limit of this ListRuleErrorsRequest.
 
         查询返回记录的数量限制
 
@@ -129,7 +129,7 @@ class ListRuleErrorsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRuleErrorsRequest.
+        r"""Gets the offset of this ListRuleErrorsRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -140,7 +140,7 @@ class ListRuleErrorsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRuleErrorsRequest.
+        r"""Sets the offset of this ListRuleErrorsRequest.
 
         偏移量，表示查询该偏移量后面的记录
 

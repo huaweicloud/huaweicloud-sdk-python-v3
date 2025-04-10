@@ -27,7 +27,7 @@ class RDMParamVOMultiViewModelMasterIdModifierDTO:
     }
 
     def __init__(self, params=None, application_id=None):
-        """RDMParamVOMultiViewModelMasterIdModifierDTO
+        r"""RDMParamVOMultiViewModelMasterIdModifierDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RDMParamVOMultiViewModelMasterIdModifierDTO:
 
     @property
     def params(self):
-        """Gets the params of this RDMParamVOMultiViewModelMasterIdModifierDTO.
+        r"""Gets the params of this RDMParamVOMultiViewModelMasterIdModifierDTO.
 
         :return: The params of this RDMParamVOMultiViewModelMasterIdModifierDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelMasterIdModifierDTO`
@@ -59,7 +59,7 @@ class RDMParamVOMultiViewModelMasterIdModifierDTO:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RDMParamVOMultiViewModelMasterIdModifierDTO.
+        r"""Sets the params of this RDMParamVOMultiViewModelMasterIdModifierDTO.
 
         :param params: The params of this RDMParamVOMultiViewModelMasterIdModifierDTO.
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelMasterIdModifierDTO`
@@ -68,7 +68,7 @@ class RDMParamVOMultiViewModelMasterIdModifierDTO:
 
     @property
     def application_id(self):
-        """Gets the application_id of this RDMParamVOMultiViewModelMasterIdModifierDTO.
+        r"""Gets the application_id of this RDMParamVOMultiViewModelMasterIdModifierDTO.
 
         应用ID。
 
@@ -79,7 +79,7 @@ class RDMParamVOMultiViewModelMasterIdModifierDTO:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this RDMParamVOMultiViewModelMasterIdModifierDTO.
+        r"""Sets the application_id of this RDMParamVOMultiViewModelMasterIdModifierDTO.
 
         应用ID。
 

@@ -55,7 +55,7 @@ class CentralNetworkConnection:
     }
 
     def __init__(self, id=None, name=None, description=None, domain_id=None, enterprise_project_id=None, central_network_id=None, central_network_plane_id=None, global_connection_bandwidth_id=None, bandwidth_type=None, bandwidth_size=None, state=None, is_frozen=None, connection_type=None, connection_point_pair=None, created_at=None, updated_at=None):
-        """CentralNetworkConnection
+        r"""CentralNetworkConnection
 
         The model defined in huaweicloud sdk
 
@@ -136,7 +136,7 @@ class CentralNetworkConnection:
 
     @property
     def id(self):
-        """Gets the id of this CentralNetworkConnection.
+        r"""Gets the id of this CentralNetworkConnection.
 
         实例ID。
 
@@ -147,7 +147,7 @@ class CentralNetworkConnection:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CentralNetworkConnection.
+        r"""Sets the id of this CentralNetworkConnection.
 
         实例ID。
 
@@ -158,7 +158,7 @@ class CentralNetworkConnection:
 
     @property
     def name(self):
-        """Gets the name of this CentralNetworkConnection.
+        r"""Gets the name of this CentralNetworkConnection.
 
         实例名字。
 
@@ -169,7 +169,7 @@ class CentralNetworkConnection:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CentralNetworkConnection.
+        r"""Sets the name of this CentralNetworkConnection.
 
         实例名字。
 
@@ -180,7 +180,7 @@ class CentralNetworkConnection:
 
     @property
     def description(self):
-        """Gets the description of this CentralNetworkConnection.
+        r"""Gets the description of this CentralNetworkConnection.
 
         实例描述。不支持 <>。
 
@@ -191,7 +191,7 @@ class CentralNetworkConnection:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CentralNetworkConnection.
+        r"""Sets the description of this CentralNetworkConnection.
 
         实例描述。不支持 <>。
 
@@ -202,7 +202,7 @@ class CentralNetworkConnection:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CentralNetworkConnection.
+        r"""Gets the domain_id of this CentralNetworkConnection.
 
         实例所属账号ID。
 
@@ -213,7 +213,7 @@ class CentralNetworkConnection:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CentralNetworkConnection.
+        r"""Sets the domain_id of this CentralNetworkConnection.
 
         实例所属账号ID。
 
@@ -224,7 +224,7 @@ class CentralNetworkConnection:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CentralNetworkConnection.
+        r"""Gets the enterprise_project_id of this CentralNetworkConnection.
 
         实例所属企业项目ID。
 
@@ -235,7 +235,7 @@ class CentralNetworkConnection:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CentralNetworkConnection.
+        r"""Sets the enterprise_project_id of this CentralNetworkConnection.
 
         实例所属企业项目ID。
 
@@ -246,7 +246,7 @@ class CentralNetworkConnection:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this CentralNetworkConnection.
+        r"""Gets the central_network_id of this CentralNetworkConnection.
 
         中心网络ID。
 
@@ -257,7 +257,7 @@ class CentralNetworkConnection:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this CentralNetworkConnection.
+        r"""Sets the central_network_id of this CentralNetworkConnection.
 
         中心网络ID。
 
@@ -268,7 +268,7 @@ class CentralNetworkConnection:
 
     @property
     def central_network_plane_id(self):
-        """Gets the central_network_plane_id of this CentralNetworkConnection.
+        r"""Gets the central_network_plane_id of this CentralNetworkConnection.
 
         中心网络平面ID。
 
@@ -279,7 +279,7 @@ class CentralNetworkConnection:
 
     @central_network_plane_id.setter
     def central_network_plane_id(self, central_network_plane_id):
-        """Sets the central_network_plane_id of this CentralNetworkConnection.
+        r"""Sets the central_network_plane_id of this CentralNetworkConnection.
 
         中心网络平面ID。
 
@@ -290,7 +290,7 @@ class CentralNetworkConnection:
 
     @property
     def global_connection_bandwidth_id(self):
-        """Gets the global_connection_bandwidth_id of this CentralNetworkConnection.
+        r"""Gets the global_connection_bandwidth_id of this CentralNetworkConnection.
 
         全域互联带宽ID。
 
@@ -301,7 +301,7 @@ class CentralNetworkConnection:
 
     @global_connection_bandwidth_id.setter
     def global_connection_bandwidth_id(self, global_connection_bandwidth_id):
-        """Sets the global_connection_bandwidth_id of this CentralNetworkConnection.
+        r"""Sets the global_connection_bandwidth_id of this CentralNetworkConnection.
 
         全域互联带宽ID。
 
@@ -312,7 +312,7 @@ class CentralNetworkConnection:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this CentralNetworkConnection.
+        r"""Gets the bandwidth_type of this CentralNetworkConnection.
 
         :return: The bandwidth_type of this CentralNetworkConnection.
         :rtype: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
@@ -321,7 +321,7 @@ class CentralNetworkConnection:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this CentralNetworkConnection.
+        r"""Sets the bandwidth_type of this CentralNetworkConnection.
 
         :param bandwidth_type: The bandwidth_type of this CentralNetworkConnection.
         :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
@@ -330,7 +330,7 @@ class CentralNetworkConnection:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this CentralNetworkConnection.
+        r"""Gets the bandwidth_size of this CentralNetworkConnection.
 
         带宽值，单位Mbps。
 
@@ -341,7 +341,7 @@ class CentralNetworkConnection:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this CentralNetworkConnection.
+        r"""Sets the bandwidth_size of this CentralNetworkConnection.
 
         带宽值，单位Mbps。
 
@@ -352,7 +352,7 @@ class CentralNetworkConnection:
 
     @property
     def state(self):
-        """Gets the state of this CentralNetworkConnection.
+        r"""Gets the state of this CentralNetworkConnection.
 
         :return: The state of this CentralNetworkConnection.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
@@ -361,7 +361,7 @@ class CentralNetworkConnection:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CentralNetworkConnection.
+        r"""Sets the state of this CentralNetworkConnection.
 
         :param state: The state of this CentralNetworkConnection.
         :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
@@ -370,7 +370,7 @@ class CentralNetworkConnection:
 
     @property
     def is_frozen(self):
-        """Gets the is_frozen of this CentralNetworkConnection.
+        r"""Gets the is_frozen of this CentralNetworkConnection.
 
         是否冻结
 
@@ -381,7 +381,7 @@ class CentralNetworkConnection:
 
     @is_frozen.setter
     def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this CentralNetworkConnection.
+        r"""Sets the is_frozen of this CentralNetworkConnection.
 
         是否冻结
 
@@ -392,7 +392,7 @@ class CentralNetworkConnection:
 
     @property
     def connection_type(self):
-        """Gets the connection_type of this CentralNetworkConnection.
+        r"""Gets the connection_type of this CentralNetworkConnection.
 
         :return: The connection_type of this CentralNetworkConnection.
         :rtype: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
@@ -401,7 +401,7 @@ class CentralNetworkConnection:
 
     @connection_type.setter
     def connection_type(self, connection_type):
-        """Sets the connection_type of this CentralNetworkConnection.
+        r"""Sets the connection_type of this CentralNetworkConnection.
 
         :param connection_type: The connection_type of this CentralNetworkConnection.
         :type connection_type: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
@@ -410,7 +410,7 @@ class CentralNetworkConnection:
 
     @property
     def connection_point_pair(self):
-        """Gets the connection_point_pair of this CentralNetworkConnection.
+        r"""Gets the connection_point_pair of this CentralNetworkConnection.
 
         中心网络连接的两个端点定义，长度固定为2的数组。
 
@@ -421,7 +421,7 @@ class CentralNetworkConnection:
 
     @connection_point_pair.setter
     def connection_point_pair(self, connection_point_pair):
-        """Sets the connection_point_pair of this CentralNetworkConnection.
+        r"""Sets the connection_point_pair of this CentralNetworkConnection.
 
         中心网络连接的两个端点定义，长度固定为2的数组。
 
@@ -432,7 +432,7 @@ class CentralNetworkConnection:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CentralNetworkConnection.
+        r"""Gets the created_at of this CentralNetworkConnection.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -443,7 +443,7 @@ class CentralNetworkConnection:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CentralNetworkConnection.
+        r"""Sets the created_at of this CentralNetworkConnection.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -454,7 +454,7 @@ class CentralNetworkConnection:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CentralNetworkConnection.
+        r"""Gets the updated_at of this CentralNetworkConnection.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -465,7 +465,7 @@ class CentralNetworkConnection:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CentralNetworkConnection.
+        r"""Sets the updated_at of this CentralNetworkConnection.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 

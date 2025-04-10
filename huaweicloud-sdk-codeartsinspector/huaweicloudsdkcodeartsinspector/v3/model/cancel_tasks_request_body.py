@@ -27,7 +27,7 @@ class CancelTasksRequestBody:
     }
 
     def __init__(self, task_id=None, action=None):
-        """CancelTasksRequestBody
+        r"""CancelTasksRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CancelTasksRequestBody:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CancelTasksRequestBody.
+        r"""Gets the task_id of this CancelTasksRequestBody.
 
         任务ID
 
@@ -59,7 +59,7 @@ class CancelTasksRequestBody:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CancelTasksRequestBody.
+        r"""Sets the task_id of this CancelTasksRequestBody.
 
         任务ID
 
@@ -70,7 +70,7 @@ class CancelTasksRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this CancelTasksRequestBody.
+        r"""Gets the action of this CancelTasksRequestBody.
 
         对扫描任务的操作:   * cancel - 取消扫描任务   * restart - 重启扫描任务 
 
@@ -81,7 +81,7 @@ class CancelTasksRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CancelTasksRequestBody.
+        r"""Sets the action of this CancelTasksRequestBody.
 
         对扫描任务的操作:   * cancel - 取消扫描任务   * restart - 重启扫描任务 
 

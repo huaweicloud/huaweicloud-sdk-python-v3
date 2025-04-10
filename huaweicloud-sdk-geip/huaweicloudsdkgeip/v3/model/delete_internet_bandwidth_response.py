@@ -26,7 +26,7 @@ class DeleteInternetBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """DeleteInternetBandwidthResponse
+        r"""DeleteInternetBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteInternetBandwidthResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteInternetBandwidthResponse.
+        r"""Gets the x_request_id of this DeleteInternetBandwidthResponse.
 
         :return: The x_request_id of this DeleteInternetBandwidthResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteInternetBandwidthResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteInternetBandwidthResponse.
+        r"""Sets the x_request_id of this DeleteInternetBandwidthResponse.
 
         :param x_request_id: The x_request_id of this DeleteInternetBandwidthResponse.
         :type x_request_id: str

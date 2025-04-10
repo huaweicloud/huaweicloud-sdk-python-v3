@@ -32,7 +32,7 @@ class ListScalingInstancesResponse(SdkResponse):
     }
 
     def __init__(self, total_number=None, start_number=None, limit=None, scaling_group_instances=None):
-        """ListScalingInstancesResponse
+        r"""ListScalingInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListScalingInstancesResponse(SdkResponse):
 
     @property
     def total_number(self):
-        """Gets the total_number of this ListScalingInstancesResponse.
+        r"""Gets the total_number of this ListScalingInstancesResponse.
 
         总记录数。
 
@@ -76,7 +76,7 @@ class ListScalingInstancesResponse(SdkResponse):
 
     @total_number.setter
     def total_number(self, total_number):
-        """Sets the total_number of this ListScalingInstancesResponse.
+        r"""Sets the total_number of this ListScalingInstancesResponse.
 
         总记录数。
 
@@ -87,7 +87,7 @@ class ListScalingInstancesResponse(SdkResponse):
 
     @property
     def start_number(self):
-        """Gets the start_number of this ListScalingInstancesResponse.
+        r"""Gets the start_number of this ListScalingInstancesResponse.
 
         查询的起始行号。
 
@@ -98,7 +98,7 @@ class ListScalingInstancesResponse(SdkResponse):
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this ListScalingInstancesResponse.
+        r"""Sets the start_number of this ListScalingInstancesResponse.
 
         查询的起始行号。
 
@@ -109,7 +109,7 @@ class ListScalingInstancesResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListScalingInstancesResponse.
+        r"""Gets the limit of this ListScalingInstancesResponse.
 
         伸缩组实例详情。
 
@@ -120,7 +120,7 @@ class ListScalingInstancesResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScalingInstancesResponse.
+        r"""Sets the limit of this ListScalingInstancesResponse.
 
         伸缩组实例详情。
 
@@ -131,7 +131,7 @@ class ListScalingInstancesResponse(SdkResponse):
 
     @property
     def scaling_group_instances(self):
-        """Gets the scaling_group_instances of this ListScalingInstancesResponse.
+        r"""Gets the scaling_group_instances of this ListScalingInstancesResponse.
 
         伸缩组实例详情。
 
@@ -142,7 +142,7 @@ class ListScalingInstancesResponse(SdkResponse):
 
     @scaling_group_instances.setter
     def scaling_group_instances(self, scaling_group_instances):
-        """Sets the scaling_group_instances of this ListScalingInstancesResponse.
+        r"""Sets the scaling_group_instances of this ListScalingInstancesResponse.
 
         伸缩组实例详情。
 

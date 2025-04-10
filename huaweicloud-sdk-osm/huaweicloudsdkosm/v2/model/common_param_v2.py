@@ -31,7 +31,7 @@ class CommonParamV2:
     }
 
     def __init__(self, param_key=None, param_name=None, is_show=None, is_required=None):
-        """CommonParamV2
+        r"""CommonParamV2
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CommonParamV2:
 
     @property
     def param_key(self):
-        """Gets the param_key of this CommonParamV2.
+        r"""Gets the param_key of this CommonParamV2.
 
         参数标识
 
@@ -75,7 +75,7 @@ class CommonParamV2:
 
     @param_key.setter
     def param_key(self, param_key):
-        """Sets the param_key of this CommonParamV2.
+        r"""Sets the param_key of this CommonParamV2.
 
         参数标识
 
@@ -86,7 +86,7 @@ class CommonParamV2:
 
     @property
     def param_name(self):
-        """Gets the param_name of this CommonParamV2.
+        r"""Gets the param_name of this CommonParamV2.
 
         参数名称
 
@@ -97,7 +97,7 @@ class CommonParamV2:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this CommonParamV2.
+        r"""Sets the param_name of this CommonParamV2.
 
         参数名称
 
@@ -108,7 +108,7 @@ class CommonParamV2:
 
     @property
     def is_show(self):
-        """Gets the is_show of this CommonParamV2.
+        r"""Gets the is_show of this CommonParamV2.
 
         是否展示
 
@@ -119,7 +119,7 @@ class CommonParamV2:
 
     @is_show.setter
     def is_show(self, is_show):
-        """Sets the is_show of this CommonParamV2.
+        r"""Sets the is_show of this CommonParamV2.
 
         是否展示
 
@@ -130,7 +130,7 @@ class CommonParamV2:
 
     @property
     def is_required(self):
-        """Gets the is_required of this CommonParamV2.
+        r"""Gets the is_required of this CommonParamV2.
 
         是否必填
 
@@ -141,7 +141,7 @@ class CommonParamV2:
 
     @is_required.setter
     def is_required(self, is_required):
-        """Sets the is_required of this CommonParamV2.
+        r"""Sets the is_required of this CommonParamV2.
 
         是否必填
 

@@ -33,7 +33,7 @@ class NodePoolResp:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """NodePoolResp
+        r"""NodePoolResp
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class NodePoolResp:
 
     @property
     def kind(self):
-        """Gets the kind of this NodePoolResp.
+        r"""Gets the kind of this NodePoolResp.
 
         API类型，固定值“NodePool”。
 
@@ -78,7 +78,7 @@ class NodePoolResp:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this NodePoolResp.
+        r"""Sets the kind of this NodePoolResp.
 
         API类型，固定值“NodePool”。
 
@@ -89,7 +89,7 @@ class NodePoolResp:
 
     @property
     def api_version(self):
-        """Gets the api_version of this NodePoolResp.
+        r"""Gets the api_version of this NodePoolResp.
 
         API版本，固定值“v3”。
 
@@ -100,7 +100,7 @@ class NodePoolResp:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this NodePoolResp.
+        r"""Sets the api_version of this NodePoolResp.
 
         API版本，固定值“v3”。
 
@@ -111,7 +111,7 @@ class NodePoolResp:
 
     @property
     def metadata(self):
-        """Gets the metadata of this NodePoolResp.
+        r"""Gets the metadata of this NodePoolResp.
 
         :return: The metadata of this NodePoolResp.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
@@ -120,7 +120,7 @@ class NodePoolResp:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this NodePoolResp.
+        r"""Sets the metadata of this NodePoolResp.
 
         :param metadata: The metadata of this NodePoolResp.
         :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
@@ -129,7 +129,7 @@ class NodePoolResp:
 
     @property
     def spec(self):
-        """Gets the spec of this NodePoolResp.
+        r"""Gets the spec of this NodePoolResp.
 
         :return: The spec of this NodePoolResp.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
@@ -138,7 +138,7 @@ class NodePoolResp:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this NodePoolResp.
+        r"""Sets the spec of this NodePoolResp.
 
         :param spec: The spec of this NodePoolResp.
         :type spec: :class:`huaweicloudsdkcce.v3.NodePoolSpec`
@@ -147,7 +147,7 @@ class NodePoolResp:
 
     @property
     def status(self):
-        """Gets the status of this NodePoolResp.
+        r"""Gets the status of this NodePoolResp.
 
         :return: The status of this NodePoolResp.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolStatus`
@@ -156,7 +156,7 @@ class NodePoolResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NodePoolResp.
+        r"""Sets the status of this NodePoolResp.
 
         :param status: The status of this NodePoolResp.
         :type status: :class:`huaweicloudsdkcce.v3.NodePoolStatus`

@@ -39,7 +39,7 @@ class ListScheduleTaskRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, status=None, name=None, start_time=None, end_time=None, offset=None, limit=None):
-        """ListScheduleTaskRequest
+        r"""ListScheduleTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListScheduleTaskRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListScheduleTaskRequest.
+        r"""Gets the x_language of this ListScheduleTaskRequest.
 
         语言。
 
@@ -103,7 +103,7 @@ class ListScheduleTaskRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListScheduleTaskRequest.
+        r"""Sets the x_language of this ListScheduleTaskRequest.
 
         语言。
 
@@ -114,7 +114,7 @@ class ListScheduleTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListScheduleTaskRequest.
+        r"""Gets the instance_id of this ListScheduleTaskRequest.
 
         实例id。
 
@@ -125,7 +125,7 @@ class ListScheduleTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListScheduleTaskRequest.
+        r"""Sets the instance_id of this ListScheduleTaskRequest.
 
         实例id。
 
@@ -136,7 +136,7 @@ class ListScheduleTaskRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListScheduleTaskRequest.
+        r"""Gets the status of this ListScheduleTaskRequest.
 
         任务状态。
 
@@ -147,7 +147,7 @@ class ListScheduleTaskRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListScheduleTaskRequest.
+        r"""Sets the status of this ListScheduleTaskRequest.
 
         任务状态。
 
@@ -158,7 +158,7 @@ class ListScheduleTaskRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListScheduleTaskRequest.
+        r"""Gets the name of this ListScheduleTaskRequest.
 
         任务名称。
 
@@ -169,7 +169,7 @@ class ListScheduleTaskRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListScheduleTaskRequest.
+        r"""Sets the name of this ListScheduleTaskRequest.
 
         任务名称。
 
@@ -180,7 +180,7 @@ class ListScheduleTaskRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListScheduleTaskRequest.
+        r"""Gets the start_time of this ListScheduleTaskRequest.
 
         开始时间，格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -191,7 +191,7 @@ class ListScheduleTaskRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListScheduleTaskRequest.
+        r"""Sets the start_time of this ListScheduleTaskRequest.
 
         开始时间，格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -202,7 +202,7 @@ class ListScheduleTaskRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListScheduleTaskRequest.
+        r"""Gets the end_time of this ListScheduleTaskRequest.
 
         结束时间，格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -213,7 +213,7 @@ class ListScheduleTaskRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListScheduleTaskRequest.
+        r"""Sets the end_time of this ListScheduleTaskRequest.
 
         结束时间，格式为yyyy-mm-ddThh:mm:ssZ。
 
@@ -224,7 +224,7 @@ class ListScheduleTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListScheduleTaskRequest.
+        r"""Gets the offset of this ListScheduleTaskRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -235,7 +235,7 @@ class ListScheduleTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListScheduleTaskRequest.
+        r"""Sets the offset of this ListScheduleTaskRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -246,7 +246,7 @@ class ListScheduleTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScheduleTaskRequest.
+        r"""Gets the limit of this ListScheduleTaskRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100
 
@@ -257,7 +257,7 @@ class ListScheduleTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScheduleTaskRequest.
+        r"""Sets the limit of this ListScheduleTaskRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100
 

@@ -27,7 +27,7 @@ class ConfigurationMetadata:
     }
 
     def __init__(self, name=None, labels=None):
-        """ConfigurationMetadata
+        r"""ConfigurationMetadata
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ConfigurationMetadata:
 
     @property
     def name(self):
-        """Gets the name of this ConfigurationMetadata.
+        r"""Gets the name of this ConfigurationMetadata.
 
         Configuration名称
 
@@ -60,7 +60,7 @@ class ConfigurationMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigurationMetadata.
+        r"""Sets the name of this ConfigurationMetadata.
 
         Configuration名称
 
@@ -71,7 +71,7 @@ class ConfigurationMetadata:
 
     @property
     def labels(self):
-        """Gets the labels of this ConfigurationMetadata.
+        r"""Gets the labels of this ConfigurationMetadata.
 
         Configuration标签，key/value对格式。  - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀，例如example.com/my-key，DNS子域最长253个字符。 - Value：可以为空或者非空字符串，非空字符串必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。  示例：\"foo\": \"bar\" 
 
@@ -82,7 +82,7 @@ class ConfigurationMetadata:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ConfigurationMetadata.
+        r"""Sets the labels of this ConfigurationMetadata.
 
         Configuration标签，key/value对格式。  - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀，例如example.com/my-key，DNS子域最长253个字符。 - Value：可以为空或者非空字符串，非空字符串必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。  示例：\"foo\": \"bar\" 
 

@@ -51,7 +51,7 @@ class ReplicationRecordGet:
     }
 
     def __init__(self, created_at=None, destination_backup_id=None, destination_checkpoint_id=None, destination_project_id=None, destination_region=None, destination_vault_id=None, extra_info=None, id=None, source_backup_id=None, source_checkpoint_id=None, source_project_id=None, source_region=None, status=None, vault_id=None):
-        """ReplicationRecordGet
+        r"""ReplicationRecordGet
 
         The model defined in huaweicloud sdk
 
@@ -133,7 +133,7 @@ class ReplicationRecordGet:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ReplicationRecordGet.
+        r"""Gets the created_at of this ReplicationRecordGet.
 
         复制的开始时间
 
@@ -144,7 +144,7 @@ class ReplicationRecordGet:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ReplicationRecordGet.
+        r"""Sets the created_at of this ReplicationRecordGet.
 
         复制的开始时间
 
@@ -155,7 +155,7 @@ class ReplicationRecordGet:
 
     @property
     def destination_backup_id(self):
-        """Gets the destination_backup_id of this ReplicationRecordGet.
+        r"""Gets the destination_backup_id of this ReplicationRecordGet.
 
         复制的目的备份ID
 
@@ -166,7 +166,7 @@ class ReplicationRecordGet:
 
     @destination_backup_id.setter
     def destination_backup_id(self, destination_backup_id):
-        """Sets the destination_backup_id of this ReplicationRecordGet.
+        r"""Sets the destination_backup_id of this ReplicationRecordGet.
 
         复制的目的备份ID
 
@@ -177,7 +177,7 @@ class ReplicationRecordGet:
 
     @property
     def destination_checkpoint_id(self):
-        """Gets the destination_checkpoint_id of this ReplicationRecordGet.
+        r"""Gets the destination_checkpoint_id of this ReplicationRecordGet.
 
         复制的目的备份记录ID
 
@@ -188,7 +188,7 @@ class ReplicationRecordGet:
 
     @destination_checkpoint_id.setter
     def destination_checkpoint_id(self, destination_checkpoint_id):
-        """Sets the destination_checkpoint_id of this ReplicationRecordGet.
+        r"""Sets the destination_checkpoint_id of this ReplicationRecordGet.
 
         复制的目的备份记录ID
 
@@ -199,7 +199,7 @@ class ReplicationRecordGet:
 
     @property
     def destination_project_id(self):
-        """Gets the destination_project_id of this ReplicationRecordGet.
+        r"""Gets the destination_project_id of this ReplicationRecordGet.
 
         复制的目标项目ID
 
@@ -210,7 +210,7 @@ class ReplicationRecordGet:
 
     @destination_project_id.setter
     def destination_project_id(self, destination_project_id):
-        """Sets the destination_project_id of this ReplicationRecordGet.
+        r"""Sets the destination_project_id of this ReplicationRecordGet.
 
         复制的目标项目ID
 
@@ -221,7 +221,7 @@ class ReplicationRecordGet:
 
     @property
     def destination_region(self):
-        """Gets the destination_region of this ReplicationRecordGet.
+        r"""Gets the destination_region of this ReplicationRecordGet.
 
         复制的目标区域
 
@@ -232,7 +232,7 @@ class ReplicationRecordGet:
 
     @destination_region.setter
     def destination_region(self, destination_region):
-        """Sets the destination_region of this ReplicationRecordGet.
+        r"""Sets the destination_region of this ReplicationRecordGet.
 
         复制的目标区域
 
@@ -243,7 +243,7 @@ class ReplicationRecordGet:
 
     @property
     def destination_vault_id(self):
-        """Gets the destination_vault_id of this ReplicationRecordGet.
+        r"""Gets the destination_vault_id of this ReplicationRecordGet.
 
         目标存储库ID
 
@@ -254,7 +254,7 @@ class ReplicationRecordGet:
 
     @destination_vault_id.setter
     def destination_vault_id(self, destination_vault_id):
-        """Sets the destination_vault_id of this ReplicationRecordGet.
+        r"""Sets the destination_vault_id of this ReplicationRecordGet.
 
         目标存储库ID
 
@@ -265,7 +265,7 @@ class ReplicationRecordGet:
 
     @property
     def extra_info(self):
-        """Gets the extra_info of this ReplicationRecordGet.
+        r"""Gets the extra_info of this ReplicationRecordGet.
 
         :return: The extra_info of this ReplicationRecordGet.
         :rtype: :class:`huaweicloudsdkcbr.v1.ReplicationRecordsExtraInfo`
@@ -274,7 +274,7 @@ class ReplicationRecordGet:
 
     @extra_info.setter
     def extra_info(self, extra_info):
-        """Sets the extra_info of this ReplicationRecordGet.
+        r"""Sets the extra_info of this ReplicationRecordGet.
 
         :param extra_info: The extra_info of this ReplicationRecordGet.
         :type extra_info: :class:`huaweicloudsdkcbr.v1.ReplicationRecordsExtraInfo`
@@ -283,7 +283,7 @@ class ReplicationRecordGet:
 
     @property
     def id(self):
-        """Gets the id of this ReplicationRecordGet.
+        r"""Gets the id of this ReplicationRecordGet.
 
         复制记录ID
 
@@ -294,7 +294,7 @@ class ReplicationRecordGet:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ReplicationRecordGet.
+        r"""Sets the id of this ReplicationRecordGet.
 
         复制记录ID
 
@@ -305,7 +305,7 @@ class ReplicationRecordGet:
 
     @property
     def source_backup_id(self):
-        """Gets the source_backup_id of this ReplicationRecordGet.
+        r"""Gets the source_backup_id of this ReplicationRecordGet.
 
         复制的源备份ID
 
@@ -316,7 +316,7 @@ class ReplicationRecordGet:
 
     @source_backup_id.setter
     def source_backup_id(self, source_backup_id):
-        """Sets the source_backup_id of this ReplicationRecordGet.
+        r"""Sets the source_backup_id of this ReplicationRecordGet.
 
         复制的源备份ID
 
@@ -327,7 +327,7 @@ class ReplicationRecordGet:
 
     @property
     def source_checkpoint_id(self):
-        """Gets the source_checkpoint_id of this ReplicationRecordGet.
+        r"""Gets the source_checkpoint_id of this ReplicationRecordGet.
 
         复制的源备份记录ID
 
@@ -338,7 +338,7 @@ class ReplicationRecordGet:
 
     @source_checkpoint_id.setter
     def source_checkpoint_id(self, source_checkpoint_id):
-        """Sets the source_checkpoint_id of this ReplicationRecordGet.
+        r"""Sets the source_checkpoint_id of this ReplicationRecordGet.
 
         复制的源备份记录ID
 
@@ -349,7 +349,7 @@ class ReplicationRecordGet:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this ReplicationRecordGet.
+        r"""Gets the source_project_id of this ReplicationRecordGet.
 
         复制的源项目ID
 
@@ -360,7 +360,7 @@ class ReplicationRecordGet:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this ReplicationRecordGet.
+        r"""Sets the source_project_id of this ReplicationRecordGet.
 
         复制的源项目ID
 
@@ -371,7 +371,7 @@ class ReplicationRecordGet:
 
     @property
     def source_region(self):
-        """Gets the source_region of this ReplicationRecordGet.
+        r"""Gets the source_region of this ReplicationRecordGet.
 
         复制的源区域
 
@@ -382,7 +382,7 @@ class ReplicationRecordGet:
 
     @source_region.setter
     def source_region(self, source_region):
-        """Sets the source_region of this ReplicationRecordGet.
+        r"""Sets the source_region of this ReplicationRecordGet.
 
         复制的源区域
 
@@ -393,7 +393,7 @@ class ReplicationRecordGet:
 
     @property
     def status(self):
-        """Gets the status of this ReplicationRecordGet.
+        r"""Gets the status of this ReplicationRecordGet.
 
         复制的状态
 
@@ -404,7 +404,7 @@ class ReplicationRecordGet:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ReplicationRecordGet.
+        r"""Sets the status of this ReplicationRecordGet.
 
         复制的状态
 
@@ -415,7 +415,7 @@ class ReplicationRecordGet:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this ReplicationRecordGet.
+        r"""Gets the vault_id of this ReplicationRecordGet.
 
         备份所在的存储库ID
 
@@ -426,7 +426,7 @@ class ReplicationRecordGet:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this ReplicationRecordGet.
+        r"""Sets the vault_id of this ReplicationRecordGet.
 
         备份所在的存储库ID
 

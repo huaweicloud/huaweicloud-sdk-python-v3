@@ -27,7 +27,7 @@ class EdgemgrDevicesPara:
     }
 
     def __init__(self, description=None, attributes=None):
-        """EdgemgrDevicesPara
+        r"""EdgemgrDevicesPara
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EdgemgrDevicesPara:
 
     @property
     def description(self):
-        """Gets the description of this EdgemgrDevicesPara.
+        r"""Gets the description of this EdgemgrDevicesPara.
 
         终端设备描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -61,7 +61,7 @@ class EdgemgrDevicesPara:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EdgemgrDevicesPara.
+        r"""Sets the description of this EdgemgrDevicesPara.
 
         终端设备描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -72,7 +72,7 @@ class EdgemgrDevicesPara:
 
     @property
     def attributes(self):
-        """Gets the attributes of this EdgemgrDevicesPara.
+        r"""Gets the attributes of this EdgemgrDevicesPara.
 
         终端设备静态属性
 
@@ -83,7 +83,7 @@ class EdgemgrDevicesPara:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this EdgemgrDevicesPara.
+        r"""Sets the attributes of this EdgemgrDevicesPara.
 
         终端设备静态属性
 

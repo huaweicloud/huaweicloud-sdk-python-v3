@@ -32,7 +32,7 @@ class UnbindDevicePolicyResponse(SdkResponse):
     }
 
     def __init__(self, policy_id=None, target_type=None, success_targets=None, failure_targets=None):
-        """UnbindDevicePolicyResponse
+        r"""UnbindDevicePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UnbindDevicePolicyResponse(SdkResponse):
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UnbindDevicePolicyResponse.
+        r"""Gets the policy_id of this UnbindDevicePolicyResponse.
 
         策略ID。
 
@@ -76,7 +76,7 @@ class UnbindDevicePolicyResponse(SdkResponse):
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UnbindDevicePolicyResponse.
+        r"""Sets the policy_id of this UnbindDevicePolicyResponse.
 
         策略ID。
 
@@ -87,7 +87,7 @@ class UnbindDevicePolicyResponse(SdkResponse):
 
     @property
     def target_type(self):
-        """Gets the target_type of this UnbindDevicePolicyResponse.
+        r"""Gets the target_type of this UnbindDevicePolicyResponse.
 
         **参数说明**：策略的目标类型。 **取值范围**：device|product|app，device表示设备，product表示产品，app表示整个资源空间。
 
@@ -98,7 +98,7 @@ class UnbindDevicePolicyResponse(SdkResponse):
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this UnbindDevicePolicyResponse.
+        r"""Sets the target_type of this UnbindDevicePolicyResponse.
 
         **参数说明**：策略的目标类型。 **取值范围**：device|product|app，device表示设备，product表示产品，app表示整个资源空间。
 
@@ -109,7 +109,7 @@ class UnbindDevicePolicyResponse(SdkResponse):
 
     @property
     def success_targets(self):
-        """Gets the success_targets of this UnbindDevicePolicyResponse.
+        r"""Gets the success_targets of this UnbindDevicePolicyResponse.
 
         成功的目标id列表。
 
@@ -120,7 +120,7 @@ class UnbindDevicePolicyResponse(SdkResponse):
 
     @success_targets.setter
     def success_targets(self, success_targets):
-        """Sets the success_targets of this UnbindDevicePolicyResponse.
+        r"""Sets the success_targets of this UnbindDevicePolicyResponse.
 
         成功的目标id列表。
 
@@ -131,7 +131,7 @@ class UnbindDevicePolicyResponse(SdkResponse):
 
     @property
     def failure_targets(self):
-        """Gets the failure_targets of this UnbindDevicePolicyResponse.
+        r"""Gets the failure_targets of this UnbindDevicePolicyResponse.
 
         失败的目标id列表 
 
@@ -142,7 +142,7 @@ class UnbindDevicePolicyResponse(SdkResponse):
 
     @failure_targets.setter
     def failure_targets(self, failure_targets):
-        """Sets the failure_targets of this UnbindDevicePolicyResponse.
+        r"""Sets the failure_targets of this UnbindDevicePolicyResponse.
 
         失败的目标id列表 
 

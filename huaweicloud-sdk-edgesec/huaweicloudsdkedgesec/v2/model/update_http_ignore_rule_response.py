@@ -58,7 +58,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, policy_id=None, policy_name=None, timestamp=None, description=None, status=None, url=None, rule=None, mode=None, domains=None, url_logic=None, advanced=None, conditions=None, hit_num=None, update_time=None, clear_time=None):
-        """UpdateHttpIgnoreRuleResponse
+        r"""UpdateHttpIgnoreRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -156,7 +156,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the id of this UpdateHttpIgnoreRuleResponse.
 
         规则id
 
@@ -167,7 +167,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the id of this UpdateHttpIgnoreRuleResponse.
 
         规则id
 
@@ -178,7 +178,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the name of this UpdateHttpIgnoreRuleResponse.
 
         规则名称
 
@@ -189,7 +189,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the name of this UpdateHttpIgnoreRuleResponse.
 
         规则名称
 
@@ -200,7 +200,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the policy_id of this UpdateHttpIgnoreRuleResponse.
 
         规则所在策略id
 
@@ -211,7 +211,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the policy_id of this UpdateHttpIgnoreRuleResponse.
 
         规则所在策略id
 
@@ -222,7 +222,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the policy_name of this UpdateHttpIgnoreRuleResponse.
 
         规则所在策略名称
 
@@ -233,7 +233,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the policy_name of this UpdateHttpIgnoreRuleResponse.
 
         规则所在策略名称
 
@@ -244,7 +244,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the timestamp of this UpdateHttpIgnoreRuleResponse.
 
         创建规则时间戳
 
@@ -255,7 +255,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the timestamp of this UpdateHttpIgnoreRuleResponse.
 
         创建规则时间戳
 
@@ -266,7 +266,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the description of this UpdateHttpIgnoreRuleResponse.
 
         规则描述
 
@@ -277,7 +277,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the description of this UpdateHttpIgnoreRuleResponse.
 
         规则描述
 
@@ -288,7 +288,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the status of this UpdateHttpIgnoreRuleResponse.
 
         规则开关状态
 
@@ -299,7 +299,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the status of this UpdateHttpIgnoreRuleResponse.
 
         规则开关状态
 
@@ -310,7 +310,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the url of this UpdateHttpIgnoreRuleResponse.
 
         误报路径
 
@@ -321,7 +321,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the url of this UpdateHttpIgnoreRuleResponse.
 
         误报路径
 
@@ -332,7 +332,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def rule(self):
-        """Gets the rule of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the rule of this UpdateHttpIgnoreRuleResponse.
 
         规则编号
 
@@ -343,7 +343,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the rule of this UpdateHttpIgnoreRuleResponse.
 
         规则编号
 
@@ -354,7 +354,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def mode(self):
-        """Gets the mode of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the mode of this UpdateHttpIgnoreRuleResponse.
 
         误报屏蔽模式，默认为0即旧模式
 
@@ -365,7 +365,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the mode of this UpdateHttpIgnoreRuleResponse.
 
         误报屏蔽模式，默认为0即旧模式
 
@@ -376,7 +376,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def domains(self):
-        """Gets the domains of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the domains of this UpdateHttpIgnoreRuleResponse.
 
         域名列表
 
@@ -387,7 +387,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the domains of this UpdateHttpIgnoreRuleResponse.
 
         域名列表
 
@@ -398,7 +398,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def url_logic(self):
-        """Gets the url_logic of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the url_logic of this UpdateHttpIgnoreRuleResponse.
 
         屏蔽规则url类型（前缀：prefix，等于：equal）
 
@@ -409,7 +409,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @url_logic.setter
     def url_logic(self, url_logic):
-        """Sets the url_logic of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the url_logic of this UpdateHttpIgnoreRuleResponse.
 
         屏蔽规则url类型（前缀：prefix，等于：equal）
 
@@ -420,7 +420,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def advanced(self):
-        """Gets the advanced of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the advanced of this UpdateHttpIgnoreRuleResponse.
 
         :return: The advanced of this UpdateHttpIgnoreRuleResponse.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpIgnoreRuleCondition`
@@ -429,7 +429,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @advanced.setter
     def advanced(self, advanced):
-        """Sets the advanced of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the advanced of this UpdateHttpIgnoreRuleResponse.
 
         :param advanced: The advanced of this UpdateHttpIgnoreRuleResponse.
         :type advanced: :class:`huaweicloudsdkedgesec.v2.HttpIgnoreRuleCondition`
@@ -438,7 +438,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def conditions(self):
-        """Gets the conditions of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the conditions of this UpdateHttpIgnoreRuleResponse.
 
         命中条件
 
@@ -449,7 +449,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the conditions of this UpdateHttpIgnoreRuleResponse.
 
         命中条件
 
@@ -460,7 +460,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def hit_num(self):
-        """Gets the hit_num of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the hit_num of this UpdateHttpIgnoreRuleResponse.
 
         命中次数
 
@@ -471,7 +471,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @hit_num.setter
     def hit_num(self, hit_num):
-        """Sets the hit_num of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the hit_num of this UpdateHttpIgnoreRuleResponse.
 
         命中次数
 
@@ -482,7 +482,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the update_time of this UpdateHttpIgnoreRuleResponse.
 
         最后更新时间戳
 
@@ -493,7 +493,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the update_time of this UpdateHttpIgnoreRuleResponse.
 
         最后更新时间戳
 
@@ -504,7 +504,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @property
     def clear_time(self):
-        """Gets the clear_time of this UpdateHttpIgnoreRuleResponse.
+        r"""Gets the clear_time of this UpdateHttpIgnoreRuleResponse.
 
         上一次命中次数清零时间戳
 
@@ -515,7 +515,7 @@ class UpdateHttpIgnoreRuleResponse(SdkResponse):
 
     @clear_time.setter
     def clear_time(self, clear_time):
-        """Sets the clear_time of this UpdateHttpIgnoreRuleResponse.
+        r"""Sets the clear_time of this UpdateHttpIgnoreRuleResponse.
 
         上一次命中次数清零时间戳
 

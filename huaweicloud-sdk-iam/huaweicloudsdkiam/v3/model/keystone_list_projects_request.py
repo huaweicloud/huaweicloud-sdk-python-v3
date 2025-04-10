@@ -37,7 +37,7 @@ class KeystoneListProjectsRequest:
     }
 
     def __init__(self, domain_id=None, name=None, parent_id=None, enabled=None, is_domain=None, page=None, per_page=None):
-        """KeystoneListProjectsRequest
+        r"""KeystoneListProjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class KeystoneListProjectsRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneListProjectsRequest.
+        r"""Gets the domain_id of this KeystoneListProjectsRequest.
 
         项目所属账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -96,7 +96,7 @@ class KeystoneListProjectsRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneListProjectsRequest.
+        r"""Sets the domain_id of this KeystoneListProjectsRequest.
 
         项目所属账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -107,7 +107,7 @@ class KeystoneListProjectsRequest:
 
     @property
     def name(self):
-        """Gets the name of this KeystoneListProjectsRequest.
+        r"""Gets the name of this KeystoneListProjectsRequest.
 
         项目名称，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -118,7 +118,7 @@ class KeystoneListProjectsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KeystoneListProjectsRequest.
+        r"""Sets the name of this KeystoneListProjectsRequest.
 
         项目名称，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -129,7 +129,7 @@ class KeystoneListProjectsRequest:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this KeystoneListProjectsRequest.
+        r"""Gets the parent_id of this KeystoneListProjectsRequest.
 
         如果查询自己创建的项目，则此处应填为所属区域的项目ID。  如果查询的是系统内置项目，如cn-north-4，则此处应填为账号ID。  获取项目ID和账号ID，请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -140,7 +140,7 @@ class KeystoneListProjectsRequest:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this KeystoneListProjectsRequest.
+        r"""Sets the parent_id of this KeystoneListProjectsRequest.
 
         如果查询自己创建的项目，则此处应填为所属区域的项目ID。  如果查询的是系统内置项目，如cn-north-4，则此处应填为账号ID。  获取项目ID和账号ID，请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -151,7 +151,7 @@ class KeystoneListProjectsRequest:
 
     @property
     def enabled(self):
-        """Gets the enabled of this KeystoneListProjectsRequest.
+        r"""Gets the enabled of this KeystoneListProjectsRequest.
 
         项目是否启用。
 
@@ -162,7 +162,7 @@ class KeystoneListProjectsRequest:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this KeystoneListProjectsRequest.
+        r"""Sets the enabled of this KeystoneListProjectsRequest.
 
         项目是否启用。
 
@@ -173,7 +173,7 @@ class KeystoneListProjectsRequest:
 
     @property
     def is_domain(self):
-        """Gets the is_domain of this KeystoneListProjectsRequest.
+        r"""Gets the is_domain of this KeystoneListProjectsRequest.
 
         该字段无需填写。
 
@@ -184,7 +184,7 @@ class KeystoneListProjectsRequest:
 
     @is_domain.setter
     def is_domain(self, is_domain):
-        """Sets the is_domain of this KeystoneListProjectsRequest.
+        r"""Sets the is_domain of this KeystoneListProjectsRequest.
 
         该字段无需填写。
 
@@ -195,7 +195,7 @@ class KeystoneListProjectsRequest:
 
     @property
     def page(self):
-        """Gets the page of this KeystoneListProjectsRequest.
+        r"""Gets the page of this KeystoneListProjectsRequest.
 
         分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。
 
@@ -206,7 +206,7 @@ class KeystoneListProjectsRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this KeystoneListProjectsRequest.
+        r"""Sets the page of this KeystoneListProjectsRequest.
 
         分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。
 
@@ -217,7 +217,7 @@ class KeystoneListProjectsRequest:
 
     @property
     def per_page(self):
-        """Gets the per_page of this KeystoneListProjectsRequest.
+        r"""Gets the per_page of this KeystoneListProjectsRequest.
 
         分页查询时每页的数据个数，取值范围为[1,5000]。需要与page同时存在。
 
@@ -228,7 +228,7 @@ class KeystoneListProjectsRequest:
 
     @per_page.setter
     def per_page(self, per_page):
-        """Sets the per_page of this KeystoneListProjectsRequest.
+        r"""Sets the per_page of this KeystoneListProjectsRequest.
 
         分页查询时每页的数据个数，取值范围为[1,5000]。需要与page同时存在。
 

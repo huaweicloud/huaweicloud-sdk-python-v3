@@ -30,7 +30,7 @@ class ShowFlavorDetailResponse(SdkResponse):
     }
 
     def __init__(self, name=None, str_id=None, flavor_detail=None):
-        """ShowFlavorDetailResponse
+        r"""ShowFlavorDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowFlavorDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowFlavorDetailResponse.
+        r"""Gets the name of this ShowFlavorDetailResponse.
 
         规格名称
 
@@ -69,7 +69,7 @@ class ShowFlavorDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowFlavorDetailResponse.
+        r"""Sets the name of this ShowFlavorDetailResponse.
 
         规格名称
 
@@ -80,7 +80,7 @@ class ShowFlavorDetailResponse(SdkResponse):
 
     @property
     def str_id(self):
-        """Gets the str_id of this ShowFlavorDetailResponse.
+        r"""Gets the str_id of this ShowFlavorDetailResponse.
 
         规格ID
 
@@ -91,7 +91,7 @@ class ShowFlavorDetailResponse(SdkResponse):
 
     @str_id.setter
     def str_id(self, str_id):
-        """Sets the str_id of this ShowFlavorDetailResponse.
+        r"""Sets the str_id of this ShowFlavorDetailResponse.
 
         规格ID
 
@@ -102,7 +102,7 @@ class ShowFlavorDetailResponse(SdkResponse):
 
     @property
     def flavor_detail(self):
-        """Gets the flavor_detail of this ShowFlavorDetailResponse.
+        r"""Gets the flavor_detail of this ShowFlavorDetailResponse.
 
         规格详细列表
 
@@ -113,7 +113,7 @@ class ShowFlavorDetailResponse(SdkResponse):
 
     @flavor_detail.setter
     def flavor_detail(self, flavor_detail):
-        """Sets the flavor_detail of this ShowFlavorDetailResponse.
+        r"""Sets the flavor_detail of this ShowFlavorDetailResponse.
 
         规格详细列表
 

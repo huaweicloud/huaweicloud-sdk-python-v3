@@ -30,7 +30,7 @@ class ListTasksResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, entities=None):
-        """ListTasksResponse
+        r"""ListTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTasksResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTasksResponse.
+        r"""Gets the total of this ListTasksResponse.
 
         查询任务列表任务总个数
 
@@ -69,7 +69,7 @@ class ListTasksResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTasksResponse.
+        r"""Sets the total of this ListTasksResponse.
 
         查询任务列表任务总个数
 
@@ -80,7 +80,7 @@ class ListTasksResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListTasksResponse.
+        r"""Gets the size of this ListTasksResponse.
 
         查询任务列表返回的当前页的任务个数
 
@@ -91,7 +91,7 @@ class ListTasksResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListTasksResponse.
+        r"""Sets the size of this ListTasksResponse.
 
         查询任务列表返回的当前页的任务个数
 
@@ -102,7 +102,7 @@ class ListTasksResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this ListTasksResponse.
+        r"""Gets the entities of this ListTasksResponse.
 
         查询任务列表返回的对象
 
@@ -113,7 +113,7 @@ class ListTasksResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ListTasksResponse.
+        r"""Sets the entities of this ListTasksResponse.
 
         查询任务列表返回的对象
 

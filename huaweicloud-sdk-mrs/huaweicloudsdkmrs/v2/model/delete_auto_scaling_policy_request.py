@@ -27,7 +27,7 @@ class DeleteAutoScalingPolicyRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """DeleteAutoScalingPolicyRequest
+        r"""DeleteAutoScalingPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteAutoScalingPolicyRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteAutoScalingPolicyRequest.
+        r"""Gets the cluster_id of this DeleteAutoScalingPolicyRequest.
 
         集群ID。
 
@@ -60,7 +60,7 @@ class DeleteAutoScalingPolicyRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteAutoScalingPolicyRequest.
+        r"""Sets the cluster_id of this DeleteAutoScalingPolicyRequest.
 
         集群ID。
 
@@ -71,7 +71,7 @@ class DeleteAutoScalingPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteAutoScalingPolicyRequest.
+        r"""Gets the body of this DeleteAutoScalingPolicyRequest.
 
         :return: The body of this DeleteAutoScalingPolicyRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicyDeleteReq`
@@ -80,7 +80,7 @@ class DeleteAutoScalingPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAutoScalingPolicyRequest.
+        r"""Sets the body of this DeleteAutoScalingPolicyRequest.
 
         :param body: The body of this DeleteAutoScalingPolicyRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicyDeleteReq`

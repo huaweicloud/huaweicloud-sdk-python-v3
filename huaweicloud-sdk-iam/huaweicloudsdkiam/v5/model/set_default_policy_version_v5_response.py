@@ -24,7 +24,7 @@ class SetDefaultPolicyVersionV5Response(SdkResponse):
     }
 
     def __init__(self):
-        """SetDefaultPolicyVersionV5Response
+        r"""SetDefaultPolicyVersionV5Response
 
         The model defined in huaweicloud sdk
 

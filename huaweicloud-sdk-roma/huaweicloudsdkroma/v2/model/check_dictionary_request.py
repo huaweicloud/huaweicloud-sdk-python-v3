@@ -27,7 +27,7 @@ class CheckDictionaryRequest:
     }
 
     def __init__(self, dict_id=None, instance_id=None):
-        """CheckDictionaryRequest
+        r"""CheckDictionaryRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CheckDictionaryRequest:
 
     @property
     def dict_id(self):
-        """Gets the dict_id of this CheckDictionaryRequest.
+        r"""Gets the dict_id of this CheckDictionaryRequest.
 
         字典ID
 
@@ -59,7 +59,7 @@ class CheckDictionaryRequest:
 
     @dict_id.setter
     def dict_id(self, dict_id):
-        """Sets the dict_id of this CheckDictionaryRequest.
+        r"""Sets the dict_id of this CheckDictionaryRequest.
 
         字典ID
 
@@ -70,7 +70,7 @@ class CheckDictionaryRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CheckDictionaryRequest.
+        r"""Gets the instance_id of this CheckDictionaryRequest.
 
         实例ID
 
@@ -81,7 +81,7 @@ class CheckDictionaryRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CheckDictionaryRequest.
+        r"""Sets the instance_id of this CheckDictionaryRequest.
 
         实例ID
 

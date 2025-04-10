@@ -25,7 +25,7 @@ class SqlJob:
     }
 
     def __init__(self, sql=None):
-        """SqlJob
+        r"""SqlJob
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SqlJob:
 
     @property
     def sql(self):
-        """Gets the sql of this SqlJob.
+        r"""Gets the sql of this SqlJob.
 
         作业的SQL。
 
@@ -53,7 +53,7 @@ class SqlJob:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this SqlJob.
+        r"""Sets the sql of this SqlJob.
 
         作业的SQL。
 

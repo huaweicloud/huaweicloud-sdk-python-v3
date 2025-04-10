@@ -38,7 +38,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
     }
 
     def __init__(self, router=None, children=None, instances=None, dcs_cluster_redis_node=None, dcs_cluster_proxy_node=None, dcs_cluster_proxy2_node=None, total=None):
-        """ListMonitoredObjectsOfInstanceResponse
+        r"""ListMonitoredObjectsOfInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
     @property
     def router(self):
-        """Gets the router of this ListMonitoredObjectsOfInstanceResponse.
+        r"""Gets the router of this ListMonitoredObjectsOfInstanceResponse.
 
         当前查询维度路由。如果是主维度，则数组中是自身ID。
 
@@ -97,7 +97,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
     @router.setter
     def router(self, router):
-        """Sets the router of this ListMonitoredObjectsOfInstanceResponse.
+        r"""Sets the router of this ListMonitoredObjectsOfInstanceResponse.
 
         当前查询维度路由。如果是主维度，则数组中是自身ID。
 
@@ -108,7 +108,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
     @property
     def children(self):
-        """Gets the children of this ListMonitoredObjectsOfInstanceResponse.
+        r"""Gets the children of this ListMonitoredObjectsOfInstanceResponse.
 
         当前查询维度子维度对象列表。当前只有维度为dcs_instance_id时才有值。 - Proxy集群有两个子维度，分别为dcs_cluster_redis_node和dcs_cluster_proxy_node。 - Cluster集群有一个子维度 dcs_cluster_proxy_node。 
 
@@ -119,7 +119,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
     @children.setter
     def children(self, children):
-        """Sets the children of this ListMonitoredObjectsOfInstanceResponse.
+        r"""Sets the children of this ListMonitoredObjectsOfInstanceResponse.
 
         当前查询维度子维度对象列表。当前只有维度为dcs_instance_id时才有值。 - Proxy集群有两个子维度，分别为dcs_cluster_redis_node和dcs_cluster_proxy_node。 - Cluster集群有一个子维度 dcs_cluster_proxy_node。 
 
@@ -130,7 +130,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListMonitoredObjectsOfInstanceResponse.
+        r"""Gets the instances of this ListMonitoredObjectsOfInstanceResponse.
 
         当前查询维度监控对象列表。
 
@@ -141,7 +141,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListMonitoredObjectsOfInstanceResponse.
+        r"""Sets the instances of this ListMonitoredObjectsOfInstanceResponse.
 
         当前查询维度监控对象列表。
 
@@ -152,7 +152,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
     @property
     def dcs_cluster_redis_node(self):
-        """Gets the dcs_cluster_redis_node of this ListMonitoredObjectsOfInstanceResponse.
+        r"""Gets the dcs_cluster_redis_node of this ListMonitoredObjectsOfInstanceResponse.
 
         Proxy集群或Cluster集群时才存在，表示集群数据节点维度的监控对象列表。字段名称与children的子维度对象名称相同。
 
@@ -163,7 +163,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
     @dcs_cluster_redis_node.setter
     def dcs_cluster_redis_node(self, dcs_cluster_redis_node):
-        """Sets the dcs_cluster_redis_node of this ListMonitoredObjectsOfInstanceResponse.
+        r"""Sets the dcs_cluster_redis_node of this ListMonitoredObjectsOfInstanceResponse.
 
         Proxy集群或Cluster集群时才存在，表示集群数据节点维度的监控对象列表。字段名称与children的子维度对象名称相同。
 
@@ -174,7 +174,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
     @property
     def dcs_cluster_proxy_node(self):
-        """Gets the dcs_cluster_proxy_node of this ListMonitoredObjectsOfInstanceResponse.
+        r"""Gets the dcs_cluster_proxy_node of this ListMonitoredObjectsOfInstanceResponse.
 
         Proxy集群时才存在，表示集群Proxy节点维度的监控对象列表。字段名称与children的子维度对象名称相同。
 
@@ -185,7 +185,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
     @dcs_cluster_proxy_node.setter
     def dcs_cluster_proxy_node(self, dcs_cluster_proxy_node):
-        """Sets the dcs_cluster_proxy_node of this ListMonitoredObjectsOfInstanceResponse.
+        r"""Sets the dcs_cluster_proxy_node of this ListMonitoredObjectsOfInstanceResponse.
 
         Proxy集群时才存在，表示集群Proxy节点维度的监控对象列表。字段名称与children的子维度对象名称相同。
 
@@ -196,7 +196,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
     @property
     def dcs_cluster_proxy2_node(self):
-        """Gets the dcs_cluster_proxy2_node of this ListMonitoredObjectsOfInstanceResponse.
+        r"""Gets the dcs_cluster_proxy2_node of this ListMonitoredObjectsOfInstanceResponse.
 
         Redis 4.0和5.0的Proxy集群时才存在，表示集群Proxy节点维度的监控对象列表。字段名称与children的子维度对象名称相同。 
 
@@ -207,7 +207,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
     @dcs_cluster_proxy2_node.setter
     def dcs_cluster_proxy2_node(self, dcs_cluster_proxy2_node):
-        """Sets the dcs_cluster_proxy2_node of this ListMonitoredObjectsOfInstanceResponse.
+        r"""Sets the dcs_cluster_proxy2_node of this ListMonitoredObjectsOfInstanceResponse.
 
         Redis 4.0和5.0的Proxy集群时才存在，表示集群Proxy节点维度的监控对象列表。字段名称与children的子维度对象名称相同。 
 
@@ -218,7 +218,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListMonitoredObjectsOfInstanceResponse.
+        r"""Gets the total of this ListMonitoredObjectsOfInstanceResponse.
 
         主维度监控对象的总数。
 
@@ -229,7 +229,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListMonitoredObjectsOfInstanceResponse.
+        r"""Sets the total of this ListMonitoredObjectsOfInstanceResponse.
 
         主维度监控对象的总数。
 

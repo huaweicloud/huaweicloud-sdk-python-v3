@@ -27,7 +27,7 @@ class LimitSpeedReq:
     }
 
     def __init__(self, job_id=None, speed_limit=None):
-        """LimitSpeedReq
+        r"""LimitSpeedReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class LimitSpeedReq:
 
     @property
     def job_id(self):
-        """Gets the job_id of this LimitSpeedReq.
+        r"""Gets the job_id of this LimitSpeedReq.
 
         任务id
 
@@ -59,7 +59,7 @@ class LimitSpeedReq:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this LimitSpeedReq.
+        r"""Sets the job_id of this LimitSpeedReq.
 
         任务id
 
@@ -70,7 +70,7 @@ class LimitSpeedReq:
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this LimitSpeedReq.
+        r"""Gets the speed_limit of this LimitSpeedReq.
 
         限速信息请求体
 
@@ -81,7 +81,7 @@ class LimitSpeedReq:
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this LimitSpeedReq.
+        r"""Sets the speed_limit of this LimitSpeedReq.
 
         限速信息请求体
 

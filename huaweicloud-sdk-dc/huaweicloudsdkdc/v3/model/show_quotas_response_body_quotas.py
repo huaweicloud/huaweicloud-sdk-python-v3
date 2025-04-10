@@ -25,7 +25,7 @@ class ShowQuotasResponseBodyQuotas:
     }
 
     def __init__(self, resources=None):
-        """ShowQuotasResponseBodyQuotas
+        r"""ShowQuotasResponseBodyQuotas
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowQuotasResponseBodyQuotas:
 
     @property
     def resources(self):
-        """Gets the resources of this ShowQuotasResponseBodyQuotas.
+        r"""Gets the resources of this ShowQuotasResponseBodyQuotas.
 
         不同资源配额使用详情列表
 
@@ -54,7 +54,7 @@ class ShowQuotasResponseBodyQuotas:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowQuotasResponseBodyQuotas.
+        r"""Sets the resources of this ShowQuotasResponseBodyQuotas.
 
         不同资源配额使用详情列表
 

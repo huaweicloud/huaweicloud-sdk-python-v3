@@ -29,7 +29,7 @@ class CreateLabelPageReq:
     }
 
     def __init__(self, name=None, feature=None, labels=None):
-        """CreateLabelPageReq
+        r"""CreateLabelPageReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateLabelPageReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateLabelPageReq.
+        r"""Gets the name of this CreateLabelPageReq.
 
         标签页面标题，正则匹配中文，英文字母和数字及下划线
 
@@ -65,7 +65,7 @@ class CreateLabelPageReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateLabelPageReq.
+        r"""Sets the name of this CreateLabelPageReq.
 
         标签页面标题，正则匹配中文，英文字母和数字及下划线
 
@@ -76,7 +76,7 @@ class CreateLabelPageReq:
 
     @property
     def feature(self):
-        """Gets the feature of this CreateLabelPageReq.
+        r"""Gets the feature of this CreateLabelPageReq.
 
         :return: The feature of this CreateLabelPageReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.FeatureEnum`
@@ -85,7 +85,7 @@ class CreateLabelPageReq:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this CreateLabelPageReq.
+        r"""Sets the feature of this CreateLabelPageReq.
 
         :param feature: The feature of this CreateLabelPageReq.
         :type feature: :class:`huaweicloudsdkeihealth.v1.FeatureEnum`
@@ -94,7 +94,7 @@ class CreateLabelPageReq:
 
     @property
     def labels(self):
-        """Gets the labels of this CreateLabelPageReq.
+        r"""Gets the labels of this CreateLabelPageReq.
 
         标签页面包含的标签值，正则匹配中文，英文字母和数字及下划线
 
@@ -105,7 +105,7 @@ class CreateLabelPageReq:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this CreateLabelPageReq.
+        r"""Sets the labels of this CreateLabelPageReq.
 
         标签页面包含的标签值，正则匹配中文，英文字母和数字及下划线
 

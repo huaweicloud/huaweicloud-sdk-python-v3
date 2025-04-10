@@ -29,7 +29,7 @@ class CreateFaceSetReq:
     }
 
     def __init__(self, external_fields=None, face_set_name=None, face_set_capacity=None):
-        """CreateFaceSetReq
+        r"""CreateFaceSetReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateFaceSetReq:
 
     @property
     def external_fields(self):
-        """Gets the external_fields of this CreateFaceSetReq.
+        r"""Gets the external_fields of this CreateFaceSetReq.
 
         用户自定义数据，自定义字段不能以系统保留字段vector、bounding_box、external_image_id、face_id、create_time、_id、_all、_source等字段命名。Json字符串不校验重复性，自定义字段的key值长度范围为[1,36]，string类型的value长度范围为[1,256]，具体参见[[自定义字段](https://support.huaweicloud.com/api-face/face_02_0012.html)。](tag:hc) [[自定义字段](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0012.html)。](tag:hk)
 
@@ -67,7 +67,7 @@ class CreateFaceSetReq:
 
     @external_fields.setter
     def external_fields(self, external_fields):
-        """Sets the external_fields of this CreateFaceSetReq.
+        r"""Sets the external_fields of this CreateFaceSetReq.
 
         用户自定义数据，自定义字段不能以系统保留字段vector、bounding_box、external_image_id、face_id、create_time、_id、_all、_source等字段命名。Json字符串不校验重复性，自定义字段的key值长度范围为[1,36]，string类型的value长度范围为[1,256]，具体参见[[自定义字段](https://support.huaweicloud.com/api-face/face_02_0012.html)。](tag:hc) [[自定义字段](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0012.html)。](tag:hk)
 
@@ -78,7 +78,7 @@ class CreateFaceSetReq:
 
     @property
     def face_set_name(self):
-        """Gets the face_set_name of this CreateFaceSetReq.
+        r"""Gets the face_set_name of this CreateFaceSetReq.
 
         人脸库名称。 建议人脸库的名称不要以下划线（_）开头，否则云监控服务会无法采集人脸数量。
 
@@ -89,7 +89,7 @@ class CreateFaceSetReq:
 
     @face_set_name.setter
     def face_set_name(self, face_set_name):
-        """Sets the face_set_name of this CreateFaceSetReq.
+        r"""Sets the face_set_name of this CreateFaceSetReq.
 
         人脸库名称。 建议人脸库的名称不要以下划线（_）开头，否则云监控服务会无法采集人脸数量。
 
@@ -100,7 +100,7 @@ class CreateFaceSetReq:
 
     @property
     def face_set_capacity(self):
-        """Gets the face_set_capacity of this CreateFaceSetReq.
+        r"""Gets the face_set_capacity of this CreateFaceSetReq.
 
         人脸库最大的容量，填写1万整数倍的数字，例如：30000。 默认为100000，最大值为100000，可通过创建新的人脸库进行扩容，每个用户可免费默认使用10个人脸库，每个人脸库容量为10万个人脸特征。如需扩容单个人脸库规模，请联系华为云客服确认扩容规模与价格。
 
@@ -111,7 +111,7 @@ class CreateFaceSetReq:
 
     @face_set_capacity.setter
     def face_set_capacity(self, face_set_capacity):
-        """Sets the face_set_capacity of this CreateFaceSetReq.
+        r"""Sets the face_set_capacity of this CreateFaceSetReq.
 
         人脸库最大的容量，填写1万整数倍的数字，例如：30000。 默认为100000，最大值为100000，可通过创建新的人脸库进行扩容，每个用户可免费默认使用10个人脸库，每个人脸库容量为10万个人脸特征。如需扩容单个人脸库规模，请联系华为云客服确认扩容规模与价格。
 

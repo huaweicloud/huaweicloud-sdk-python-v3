@@ -29,7 +29,7 @@ class AIMSendTaskRequestMode:
     }
 
     def __init__(self, task_name=None, sms_channel=None, resolve_task=None):
-        """AIMSendTaskRequestMode
+        r"""AIMSendTaskRequestMode
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AIMSendTaskRequestMode:
 
     @property
     def task_name(self):
-        """Gets the task_name of this AIMSendTaskRequestMode.
+        r"""Gets the task_name of this AIMSendTaskRequestMode.
 
         智能信息发送任务名称。
 
@@ -68,7 +68,7 @@ class AIMSendTaskRequestMode:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this AIMSendTaskRequestMode.
+        r"""Sets the task_name of this AIMSendTaskRequestMode.
 
         智能信息发送任务名称。
 
@@ -79,7 +79,7 @@ class AIMSendTaskRequestMode:
 
     @property
     def sms_channel(self):
-        """Gets the sms_channel of this AIMSendTaskRequestMode.
+        r"""Gets the sms_channel of this AIMSendTaskRequestMode.
 
         :return: The sms_channel of this AIMSendTaskRequestMode.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.SmsChannel`
@@ -88,7 +88,7 @@ class AIMSendTaskRequestMode:
 
     @sms_channel.setter
     def sms_channel(self, sms_channel):
-        """Sets the sms_channel of this AIMSendTaskRequestMode.
+        r"""Sets the sms_channel of this AIMSendTaskRequestMode.
 
         :param sms_channel: The sms_channel of this AIMSendTaskRequestMode.
         :type sms_channel: :class:`huaweicloudsdkkoomessage.v1.SmsChannel`
@@ -97,7 +97,7 @@ class AIMSendTaskRequestMode:
 
     @property
     def resolve_task(self):
-        """Gets the resolve_task of this AIMSendTaskRequestMode.
+        r"""Gets the resolve_task of this AIMSendTaskRequestMode.
 
         :return: The resolve_task of this AIMSendTaskRequestMode.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.AIMResolveTaskRequestMode`
@@ -106,7 +106,7 @@ class AIMSendTaskRequestMode:
 
     @resolve_task.setter
     def resolve_task(self, resolve_task):
-        """Sets the resolve_task of this AIMSendTaskRequestMode.
+        r"""Sets the resolve_task of this AIMSendTaskRequestMode.
 
         :param resolve_task: The resolve_task of this AIMSendTaskRequestMode.
         :type resolve_task: :class:`huaweicloudsdkkoomessage.v1.AIMResolveTaskRequestMode`

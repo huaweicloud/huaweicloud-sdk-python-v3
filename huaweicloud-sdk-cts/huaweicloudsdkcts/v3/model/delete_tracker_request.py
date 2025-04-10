@@ -27,7 +27,7 @@ class DeleteTrackerRequest:
     }
 
     def __init__(self, tracker_name=None, tracker_type=None):
-        """DeleteTrackerRequest
+        r"""DeleteTrackerRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteTrackerRequest:
 
     @property
     def tracker_name(self):
-        """Gets the tracker_name of this DeleteTrackerRequest.
+        r"""Gets the tracker_name of this DeleteTrackerRequest.
 
         标识追踪器名称。 在不传入该字段的情况下，将删除当前租户所有的数据类追踪器。
 
@@ -61,7 +61,7 @@ class DeleteTrackerRequest:
 
     @tracker_name.setter
     def tracker_name(self, tracker_name):
-        """Sets the tracker_name of this DeleteTrackerRequest.
+        r"""Sets the tracker_name of this DeleteTrackerRequest.
 
         标识追踪器名称。 在不传入该字段的情况下，将删除当前租户所有的数据类追踪器。
 
@@ -72,7 +72,7 @@ class DeleteTrackerRequest:
 
     @property
     def tracker_type(self):
-        """Gets the tracker_type of this DeleteTrackerRequest.
+        r"""Gets the tracker_type of this DeleteTrackerRequest.
 
         标识追踪器类型。 默认值为\"data\"。传入\"system\"时，配合tracker_name参数可删除管理类追踪器。
 
@@ -83,7 +83,7 @@ class DeleteTrackerRequest:
 
     @tracker_type.setter
     def tracker_type(self, tracker_type):
-        """Sets the tracker_type of this DeleteTrackerRequest.
+        r"""Sets the tracker_type of this DeleteTrackerRequest.
 
         标识追踪器类型。 默认值为\"data\"。传入\"system\"时，配合tracker_name参数可删除管理类追踪器。
 

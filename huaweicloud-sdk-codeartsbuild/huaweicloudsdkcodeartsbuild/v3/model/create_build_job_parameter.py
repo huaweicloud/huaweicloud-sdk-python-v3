@@ -27,7 +27,7 @@ class CreateBuildJobParameter:
     }
 
     def __init__(self, name=None, params=None):
-        """CreateBuildJobParameter
+        r"""CreateBuildJobParameter
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateBuildJobParameter:
 
     @property
     def name(self):
-        """Gets the name of this CreateBuildJobParameter.
+        r"""Gets the name of this CreateBuildJobParameter.
 
         参数定义名，默认为hudson.model.StringParameterDefinition
 
@@ -61,7 +61,7 @@ class CreateBuildJobParameter:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateBuildJobParameter.
+        r"""Sets the name of this CreateBuildJobParameter.
 
         参数定义名，默认为hudson.model.StringParameterDefinition
 
@@ -72,7 +72,7 @@ class CreateBuildJobParameter:
 
     @property
     def params(self):
-        """Gets the params of this CreateBuildJobParameter.
+        r"""Gets the params of this CreateBuildJobParameter.
 
         构建执行参数子参数
 
@@ -83,7 +83,7 @@ class CreateBuildJobParameter:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CreateBuildJobParameter.
+        r"""Sets the params of this CreateBuildJobParameter.
 
         构建执行参数子参数
 

@@ -28,7 +28,7 @@ class ListAssetDailySummaryLogResponse(SdkResponse):
     }
 
     def __init__(self, total=None, summary_results=None):
-        """ListAssetDailySummaryLogResponse
+        r"""ListAssetDailySummaryLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAssetDailySummaryLogResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAssetDailySummaryLogResponse.
+        r"""Gets the total of this ListAssetDailySummaryLogResponse.
 
         记录总数 
 
@@ -62,7 +62,7 @@ class ListAssetDailySummaryLogResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAssetDailySummaryLogResponse.
+        r"""Sets the total of this ListAssetDailySummaryLogResponse.
 
         记录总数 
 
@@ -73,7 +73,7 @@ class ListAssetDailySummaryLogResponse(SdkResponse):
 
     @property
     def summary_results(self):
-        """Gets the summary_results of this ListAssetDailySummaryLogResponse.
+        r"""Gets the summary_results of this ListAssetDailySummaryLogResponse.
 
         日志文件列表 
 
@@ -84,7 +84,7 @@ class ListAssetDailySummaryLogResponse(SdkResponse):
 
     @summary_results.setter
     def summary_results(self, summary_results):
-        """Sets the summary_results of this ListAssetDailySummaryLogResponse.
+        r"""Sets the summary_results of this ListAssetDailySummaryLogResponse.
 
         日志文件列表 
 

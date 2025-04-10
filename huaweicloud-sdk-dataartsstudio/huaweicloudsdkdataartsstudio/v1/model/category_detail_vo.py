@@ -33,7 +33,7 @@ class CategoryDetailVO:
     }
 
     def __init__(self, id=None, name=None, type=None, pid=None, sub_categories=None):
-        """CategoryDetailVO
+        r"""CategoryDetailVO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CategoryDetailVO:
 
     @property
     def id(self):
-        """Gets the id of this CategoryDetailVO.
+        r"""Gets the id of this CategoryDetailVO.
 
         目录ID，根目录的ID为0
 
@@ -82,7 +82,7 @@ class CategoryDetailVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CategoryDetailVO.
+        r"""Sets the id of this CategoryDetailVO.
 
         目录ID，根目录的ID为0
 
@@ -93,7 +93,7 @@ class CategoryDetailVO:
 
     @property
     def name(self):
-        """Gets the name of this CategoryDetailVO.
+        r"""Gets the name of this CategoryDetailVO.
 
         名称
 
@@ -104,7 +104,7 @@ class CategoryDetailVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CategoryDetailVO.
+        r"""Sets the name of this CategoryDetailVO.
 
         名称
 
@@ -115,7 +115,7 @@ class CategoryDetailVO:
 
     @property
     def type(self):
-        """Gets the type of this CategoryDetailVO.
+        r"""Gets the type of this CategoryDetailVO.
 
         类型 built_in:系统内置 user-defined: 用户自定义
 
@@ -126,7 +126,7 @@ class CategoryDetailVO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CategoryDetailVO.
+        r"""Sets the type of this CategoryDetailVO.
 
         类型 built_in:系统内置 user-defined: 用户自定义
 
@@ -137,7 +137,7 @@ class CategoryDetailVO:
 
     @property
     def pid(self):
-        """Gets the pid of this CategoryDetailVO.
+        r"""Gets the pid of this CategoryDetailVO.
 
         父目录ID
 
@@ -148,7 +148,7 @@ class CategoryDetailVO:
 
     @pid.setter
     def pid(self, pid):
-        """Sets the pid of this CategoryDetailVO.
+        r"""Sets the pid of this CategoryDetailVO.
 
         父目录ID
 
@@ -159,7 +159,7 @@ class CategoryDetailVO:
 
     @property
     def sub_categories(self):
-        """Gets the sub_categories of this CategoryDetailVO.
+        r"""Gets the sub_categories of this CategoryDetailVO.
 
         子目录
 
@@ -170,7 +170,7 @@ class CategoryDetailVO:
 
     @sub_categories.setter
     def sub_categories(self, sub_categories):
-        """Sets the sub_categories of this CategoryDetailVO.
+        r"""Sets the sub_categories of this CategoryDetailVO.
 
         子目录
 

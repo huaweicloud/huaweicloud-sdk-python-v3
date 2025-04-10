@@ -35,7 +35,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
     }
 
     def __init__(self, column_name=None, object_type=None, schema_name=None, sql_type=None, sys_name=None, table_name=None):
-        """AuditSqlResponseSqlOperatedObjInfo
+        r"""AuditSqlResponseSqlOperatedObjInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
 
     @property
     def column_name(self):
-        """Gets the column_name of this AuditSqlResponseSqlOperatedObjInfo.
+        r"""Gets the column_name of this AuditSqlResponseSqlOperatedObjInfo.
 
         列名
 
@@ -89,7 +89,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this AuditSqlResponseSqlOperatedObjInfo.
+        r"""Sets the column_name of this AuditSqlResponseSqlOperatedObjInfo.
 
         列名
 
@@ -100,7 +100,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
 
     @property
     def object_type(self):
-        """Gets the object_type of this AuditSqlResponseSqlOperatedObjInfo.
+        r"""Gets the object_type of this AuditSqlResponseSqlOperatedObjInfo.
 
         操作对象类型
 
@@ -111,7 +111,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this AuditSqlResponseSqlOperatedObjInfo.
+        r"""Sets the object_type of this AuditSqlResponseSqlOperatedObjInfo.
 
         操作对象类型
 
@@ -122,7 +122,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this AuditSqlResponseSqlOperatedObjInfo.
+        r"""Gets the schema_name of this AuditSqlResponseSqlOperatedObjInfo.
 
         schema名称
 
@@ -133,7 +133,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this AuditSqlResponseSqlOperatedObjInfo.
+        r"""Sets the schema_name of this AuditSqlResponseSqlOperatedObjInfo.
 
         schema名称
 
@@ -144,7 +144,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
 
     @property
     def sql_type(self):
-        """Gets the sql_type of this AuditSqlResponseSqlOperatedObjInfo.
+        r"""Gets the sql_type of this AuditSqlResponseSqlOperatedObjInfo.
 
         sql类型
 
@@ -155,7 +155,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
 
     @sql_type.setter
     def sql_type(self, sql_type):
-        """Sets the sql_type of this AuditSqlResponseSqlOperatedObjInfo.
+        r"""Sets the sql_type of this AuditSqlResponseSqlOperatedObjInfo.
 
         sql类型
 
@@ -166,7 +166,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
 
     @property
     def sys_name(self):
-        """Gets the sys_name of this AuditSqlResponseSqlOperatedObjInfo.
+        r"""Gets the sys_name of this AuditSqlResponseSqlOperatedObjInfo.
 
         系统名称
 
@@ -177,7 +177,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
 
     @sys_name.setter
     def sys_name(self, sys_name):
-        """Sets the sys_name of this AuditSqlResponseSqlOperatedObjInfo.
+        r"""Sets the sys_name of this AuditSqlResponseSqlOperatedObjInfo.
 
         系统名称
 
@@ -188,7 +188,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
 
     @property
     def table_name(self):
-        """Gets the table_name of this AuditSqlResponseSqlOperatedObjInfo.
+        r"""Gets the table_name of this AuditSqlResponseSqlOperatedObjInfo.
 
         表名
 
@@ -199,7 +199,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this AuditSqlResponseSqlOperatedObjInfo.
+        r"""Sets the table_name of this AuditSqlResponseSqlOperatedObjInfo.
 
         表名
 

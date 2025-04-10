@@ -30,7 +30,7 @@ class ListDestinationsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListDestinationsResponse
+        r"""ListDestinationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDestinationsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDestinationsResponse.
+        r"""Gets the total of this ListDestinationsResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListDestinationsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDestinationsResponse.
+        r"""Sets the total of this ListDestinationsResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListDestinationsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListDestinationsResponse.
+        r"""Gets the size of this ListDestinationsResponse.
 
         本次返回数量
 
@@ -91,7 +91,7 @@ class ListDestinationsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListDestinationsResponse.
+        r"""Sets the size of this ListDestinationsResponse.
 
         本次返回数量
 
@@ -102,7 +102,7 @@ class ListDestinationsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListDestinationsResponse.
+        r"""Gets the items of this ListDestinationsResponse.
 
         目标数据源列表
 
@@ -113,7 +113,7 @@ class ListDestinationsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListDestinationsResponse.
+        r"""Sets the items of this ListDestinationsResponse.
 
         目标数据源列表
 

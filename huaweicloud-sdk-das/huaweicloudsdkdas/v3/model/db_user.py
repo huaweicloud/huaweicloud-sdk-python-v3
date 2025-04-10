@@ -27,7 +27,7 @@ class DbUser:
     }
 
     def __init__(self, db_user_id=None, db_username=None):
-        """DbUser
+        r"""DbUser
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DbUser:
 
     @property
     def db_user_id(self):
-        """Gets the db_user_id of this DbUser.
+        r"""Gets the db_user_id of this DbUser.
 
         数据库用户ID
 
@@ -59,7 +59,7 @@ class DbUser:
 
     @db_user_id.setter
     def db_user_id(self, db_user_id):
-        """Sets the db_user_id of this DbUser.
+        r"""Sets the db_user_id of this DbUser.
 
         数据库用户ID
 
@@ -70,7 +70,7 @@ class DbUser:
 
     @property
     def db_username(self):
-        """Gets the db_username of this DbUser.
+        r"""Gets the db_username of this DbUser.
 
         数据库用户名称
 
@@ -81,7 +81,7 @@ class DbUser:
 
     @db_username.setter
     def db_username(self, db_username):
-        """Sets the db_username of this DbUser.
+        r"""Sets the db_username of this DbUser.
 
         数据库用户名称
 

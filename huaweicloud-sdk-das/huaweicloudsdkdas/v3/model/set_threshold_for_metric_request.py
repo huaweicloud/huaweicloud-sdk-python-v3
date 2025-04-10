@@ -27,7 +27,7 @@ class SetThresholdForMetricRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """SetThresholdForMetricRequest
+        r"""SetThresholdForMetricRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SetThresholdForMetricRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetThresholdForMetricRequest.
+        r"""Gets the x_language of this SetThresholdForMetricRequest.
 
         语言
 
@@ -61,7 +61,7 @@ class SetThresholdForMetricRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetThresholdForMetricRequest.
+        r"""Sets the x_language of this SetThresholdForMetricRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class SetThresholdForMetricRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetThresholdForMetricRequest.
+        r"""Gets the body of this SetThresholdForMetricRequest.
 
         :return: The body of this SetThresholdForMetricRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.ApiSetMetricCodeThresholdReq`
@@ -81,7 +81,7 @@ class SetThresholdForMetricRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetThresholdForMetricRequest.
+        r"""Sets the body of this SetThresholdForMetricRequest.
 
         :param body: The body of this SetThresholdForMetricRequest.
         :type body: :class:`huaweicloudsdkdas.v3.ApiSetMetricCodeThresholdReq`

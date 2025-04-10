@@ -27,7 +27,7 @@ class ResourceRequirements:
     }
 
     def __init__(self, limits=None, requests=None):
-        """ResourceRequirements
+        r"""ResourceRequirements
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceRequirements:
 
     @property
     def limits(self):
-        """Gets the limits of this ResourceRequirements.
+        r"""Gets the limits of this ResourceRequirements.
 
         资源限制，创建时指定无效
 
@@ -61,7 +61,7 @@ class ResourceRequirements:
 
     @limits.setter
     def limits(self, limits):
-        """Sets the limits of this ResourceRequirements.
+        r"""Sets the limits of this ResourceRequirements.
 
         资源限制，创建时指定无效
 
@@ -72,7 +72,7 @@ class ResourceRequirements:
 
     @property
     def requests(self):
-        """Gets the requests of this ResourceRequirements.
+        r"""Gets the requests of this ResourceRequirements.
 
         资源需求，创建时指定无效
 
@@ -83,7 +83,7 @@ class ResourceRequirements:
 
     @requests.setter
     def requests(self, requests):
-        """Sets the requests of this ResourceRequirements.
+        r"""Sets the requests of this ResourceRequirements.
 
         资源需求，创建时指定无效
 

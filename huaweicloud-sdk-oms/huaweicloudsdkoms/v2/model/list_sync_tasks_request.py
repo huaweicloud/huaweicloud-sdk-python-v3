@@ -29,7 +29,7 @@ class ListSyncTasksRequest:
     }
 
     def __init__(self, limit=None, offset=None, status=None):
-        """ListSyncTasksRequest
+        r"""ListSyncTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListSyncTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSyncTasksRequest.
+        r"""Gets the limit of this ListSyncTasksRequest.
 
         查询返回同步任务列表当前页面的数量，默认查询10条。 最多返回100条迁移任务信息。
 
@@ -68,7 +68,7 @@ class ListSyncTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSyncTasksRequest.
+        r"""Sets the limit of this ListSyncTasksRequest.
 
         查询返回同步任务列表当前页面的数量，默认查询10条。 最多返回100条迁移任务信息。
 
@@ -79,7 +79,7 @@ class ListSyncTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSyncTasksRequest.
+        r"""Gets the offset of this ListSyncTasksRequest.
 
         起始的任务序号，默认为0。 取值大于等于0，取值为0时从第一条开始查询。
 
@@ -90,7 +90,7 @@ class ListSyncTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSyncTasksRequest.
+        r"""Sets the offset of this ListSyncTasksRequest.
 
         起始的任务序号，默认为0。 取值大于等于0，取值为0时从第一条开始查询。
 
@@ -101,7 +101,7 @@ class ListSyncTasksRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListSyncTasksRequest.
+        r"""Gets the status of this ListSyncTasksRequest.
 
         同步任务状态（无该参数时代表查询所有状态的任务）： SYNCHRONIZING：同步中 STOPPED：已停止
 
@@ -112,7 +112,7 @@ class ListSyncTasksRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSyncTasksRequest.
+        r"""Sets the status of this ListSyncTasksRequest.
 
         同步任务状态（无该参数时代表查询所有状态的任务）： SYNCHRONIZING：同步中 STOPPED：已停止
 

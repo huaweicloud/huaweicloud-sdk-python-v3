@@ -29,7 +29,7 @@ class ObsPolicyStatement:
     }
 
     def __init__(self, effect=None, action=None, resource=None):
-        """ObsPolicyStatement
+        r"""ObsPolicyStatement
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ObsPolicyStatement:
 
     @property
     def effect(self):
-        """Gets the effect of this ObsPolicyStatement.
+        r"""Gets the effect of this ObsPolicyStatement.
 
         状态(正常、禁用)： * 'Allow' - 允许 * 'Deny' - 禁用
 
@@ -68,7 +68,7 @@ class ObsPolicyStatement:
 
     @effect.setter
     def effect(self, effect):
-        """Sets the effect of this ObsPolicyStatement.
+        r"""Sets the effect of this ObsPolicyStatement.
 
         状态(正常、禁用)： * 'Allow' - 允许 * 'Deny' - 禁用
 
@@ -79,7 +79,7 @@ class ObsPolicyStatement:
 
     @property
     def action(self):
-        """Gets the action of this ObsPolicyStatement.
+        r"""Gets the action of this ObsPolicyStatement.
 
         可以进行操作的权限合集。
 
@@ -90,7 +90,7 @@ class ObsPolicyStatement:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ObsPolicyStatement.
+        r"""Sets the action of this ObsPolicyStatement.
 
         可以进行操作的权限合集。
 
@@ -101,7 +101,7 @@ class ObsPolicyStatement:
 
     @property
     def resource(self):
-        """Gets the resource of this ObsPolicyStatement.
+        r"""Gets the resource of this ObsPolicyStatement.
 
         允许访问的资源。
 
@@ -112,7 +112,7 @@ class ObsPolicyStatement:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this ObsPolicyStatement.
+        r"""Sets the resource of this ObsPolicyStatement.
 
         允许访问的资源。
 

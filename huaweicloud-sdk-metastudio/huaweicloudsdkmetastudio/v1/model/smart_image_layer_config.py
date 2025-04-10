@@ -27,7 +27,7 @@ class SmartImageLayerConfig:
     }
 
     def __init__(self, image_url=None, display_duration=None):
-        """SmartImageLayerConfig
+        r"""SmartImageLayerConfig
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SmartImageLayerConfig:
 
     @property
     def image_url(self):
-        """Gets the image_url of this SmartImageLayerConfig.
+        r"""Gets the image_url of this SmartImageLayerConfig.
 
         图片文件的URL。
 
@@ -60,7 +60,7 @@ class SmartImageLayerConfig:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this SmartImageLayerConfig.
+        r"""Sets the image_url of this SmartImageLayerConfig.
 
         图片文件的URL。
 
@@ -71,7 +71,7 @@ class SmartImageLayerConfig:
 
     @property
     def display_duration(self):
-        """Gets the display_duration of this SmartImageLayerConfig.
+        r"""Gets the display_duration of this SmartImageLayerConfig.
 
         **参数解释**： 图片显示时长，单位s。  显示时长规则为，若携带reply_texts、reply_audios，则与播放语音内容时长保持一致。若未携带，则与匹配的关键词语音内容时长保持一致。
 
@@ -82,7 +82,7 @@ class SmartImageLayerConfig:
 
     @display_duration.setter
     def display_duration(self, display_duration):
-        """Sets the display_duration of this SmartImageLayerConfig.
+        r"""Sets the display_duration of this SmartImageLayerConfig.
 
         **参数解释**： 图片显示时长，单位s。  显示时长规则为，若携带reply_texts、reply_audios，则与播放语音内容时长保持一致。若未携带，则与匹配的关键词语音内容时长保持一致。
 

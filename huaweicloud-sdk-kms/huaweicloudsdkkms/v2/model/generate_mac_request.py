@@ -25,7 +25,7 @@ class GenerateMacRequest:
     }
 
     def __init__(self, body=None):
-        """GenerateMacRequest
+        r"""GenerateMacRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GenerateMacRequest:
 
     @property
     def body(self):
-        """Gets the body of this GenerateMacRequest.
+        r"""Gets the body of this GenerateMacRequest.
 
         :return: The body of this GenerateMacRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.GenerateMacRequestBody`
@@ -52,7 +52,7 @@ class GenerateMacRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this GenerateMacRequest.
+        r"""Sets the body of this GenerateMacRequest.
 
         :param body: The body of this GenerateMacRequest.
         :type body: :class:`huaweicloudsdkkms.v2.GenerateMacRequestBody`

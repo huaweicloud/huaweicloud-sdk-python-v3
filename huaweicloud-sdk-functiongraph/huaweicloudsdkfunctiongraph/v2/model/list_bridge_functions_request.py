@@ -27,7 +27,7 @@ class ListBridgeFunctionsRequest:
     }
 
     def __init__(self, function_urn=None, type=None):
-        """ListBridgeFunctionsRequest
+        r"""ListBridgeFunctionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListBridgeFunctionsRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ListBridgeFunctionsRequest.
+        r"""Gets the function_urn of this ListBridgeFunctionsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -60,7 +60,7 @@ class ListBridgeFunctionsRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ListBridgeFunctionsRequest.
+        r"""Sets the function_urn of this ListBridgeFunctionsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -71,7 +71,7 @@ class ListBridgeFunctionsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListBridgeFunctionsRequest.
+        r"""Gets the type of this ListBridgeFunctionsRequest.
 
         servicebridge类型
 
@@ -82,7 +82,7 @@ class ListBridgeFunctionsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListBridgeFunctionsRequest.
+        r"""Sets the type of this ListBridgeFunctionsRequest.
 
         servicebridge类型
 

@@ -29,7 +29,7 @@ class StartInstanceSingleToHaActionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """StartInstanceSingleToHaActionRequest
+        r"""StartInstanceSingleToHaActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class StartInstanceSingleToHaActionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this StartInstanceSingleToHaActionRequest.
+        r"""Gets the x_language of this StartInstanceSingleToHaActionRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class StartInstanceSingleToHaActionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this StartInstanceSingleToHaActionRequest.
+        r"""Sets the x_language of this StartInstanceSingleToHaActionRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class StartInstanceSingleToHaActionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StartInstanceSingleToHaActionRequest.
+        r"""Gets the instance_id of this StartInstanceSingleToHaActionRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class StartInstanceSingleToHaActionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StartInstanceSingleToHaActionRequest.
+        r"""Sets the instance_id of this StartInstanceSingleToHaActionRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class StartInstanceSingleToHaActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartInstanceSingleToHaActionRequest.
+        r"""Gets the body of this StartInstanceSingleToHaActionRequest.
 
         :return: The body of this StartInstanceSingleToHaActionRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.Single2Ha`
@@ -109,7 +109,7 @@ class StartInstanceSingleToHaActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartInstanceSingleToHaActionRequest.
+        r"""Sets the body of this StartInstanceSingleToHaActionRequest.
 
         :param body: The body of this StartInstanceSingleToHaActionRequest.
         :type body: :class:`huaweicloudsdkrds.v3.Single2Ha`

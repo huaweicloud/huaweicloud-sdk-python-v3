@@ -28,7 +28,7 @@ class ListAuditInfoResponse(SdkResponse):
     }
 
     def __init__(self, lists=None, total=None):
-        """ListAuditInfoResponse
+        r"""ListAuditInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAuditInfoResponse(SdkResponse):
 
     @property
     def lists(self):
-        """Gets the lists of this ListAuditInfoResponse.
+        r"""Gets the lists of this ListAuditInfoResponse.
 
         实例集合
 
@@ -62,7 +62,7 @@ class ListAuditInfoResponse(SdkResponse):
 
     @lists.setter
     def lists(self, lists):
-        """Sets the lists of this ListAuditInfoResponse.
+        r"""Sets the lists of this ListAuditInfoResponse.
 
         实例集合
 
@@ -73,7 +73,7 @@ class ListAuditInfoResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAuditInfoResponse.
+        r"""Gets the total of this ListAuditInfoResponse.
 
         总记录数
 
@@ -84,7 +84,7 @@ class ListAuditInfoResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAuditInfoResponse.
+        r"""Sets the total of this ListAuditInfoResponse.
 
         总记录数
 

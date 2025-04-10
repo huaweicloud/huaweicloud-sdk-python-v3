@@ -26,7 +26,7 @@ class AddGeneralOtTemplateResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """AddGeneralOtTemplateResponse
+        r"""AddGeneralOtTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddGeneralOtTemplateResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this AddGeneralOtTemplateResponse.
+        r"""Gets the body of this AddGeneralOtTemplateResponse.
 
         :return: The body of this AddGeneralOtTemplateResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class AddGeneralOtTemplateResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddGeneralOtTemplateResponse.
+        r"""Sets the body of this AddGeneralOtTemplateResponse.
 
         :param body: The body of this AddGeneralOtTemplateResponse.
         :type body: str

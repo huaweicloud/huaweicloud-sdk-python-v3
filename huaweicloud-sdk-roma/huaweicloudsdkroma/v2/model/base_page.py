@@ -27,7 +27,7 @@ class BasePage:
     }
 
     def __init__(self, size=None, total=None):
-        """BasePage
+        r"""BasePage
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BasePage:
 
     @property
     def size(self):
-        """Gets the size of this BasePage.
+        r"""Gets the size of this BasePage.
 
         本次返回的列表长度
 
@@ -59,7 +59,7 @@ class BasePage:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BasePage.
+        r"""Sets the size of this BasePage.
 
         本次返回的列表长度
 
@@ -70,7 +70,7 @@ class BasePage:
 
     @property
     def total(self):
-        """Gets the total of this BasePage.
+        r"""Gets the total of this BasePage.
 
         满足条件的记录数
 
@@ -81,7 +81,7 @@ class BasePage:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BasePage.
+        r"""Sets the total of this BasePage.
 
         满足条件的记录数
 

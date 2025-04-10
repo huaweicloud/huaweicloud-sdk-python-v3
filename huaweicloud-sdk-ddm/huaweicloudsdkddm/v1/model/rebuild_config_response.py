@@ -26,7 +26,7 @@ class RebuildConfigResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """RebuildConfigResponse
+        r"""RebuildConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RebuildConfigResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this RebuildConfigResponse.
+        r"""Gets the body of this RebuildConfigResponse.
 
         :return: The body of this RebuildConfigResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class RebuildConfigResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RebuildConfigResponse.
+        r"""Sets the body of this RebuildConfigResponse.
 
         :param body: The body of this RebuildConfigResponse.
         :type body: str

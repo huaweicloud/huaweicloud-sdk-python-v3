@@ -25,7 +25,7 @@ class BatchUpdateMembersRequest:
     }
 
     def __init__(self, body=None):
-        """BatchUpdateMembersRequest
+        r"""BatchUpdateMembersRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchUpdateMembersRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateMembersRequest.
+        r"""Gets the body of this BatchUpdateMembersRequest.
 
         :return: The body of this BatchUpdateMembersRequest.
         :rtype: :class:`huaweicloudsdkims.v2.BatchUpdateMembersRequestBody`
@@ -52,7 +52,7 @@ class BatchUpdateMembersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateMembersRequest.
+        r"""Sets the body of this BatchUpdateMembersRequest.
 
         :param body: The body of this BatchUpdateMembersRequest.
         :type body: :class:`huaweicloudsdkims.v2.BatchUpdateMembersRequestBody`

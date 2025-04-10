@@ -45,7 +45,7 @@ class ListIncidentTypesRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, parent_business_code=None, offset=None, limit=None, order=None, sortby=None, name=None, enabled=None, layout_name=None, is_built_in=None):
-        """ListIncidentTypesRequest
+        r"""ListIncidentTypesRequest
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class ListIncidentTypesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListIncidentTypesRequest.
+        r"""Gets the project_id of this ListIncidentTypesRequest.
 
         项目ID
 
@@ -122,7 +122,7 @@ class ListIncidentTypesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListIncidentTypesRequest.
+        r"""Sets the project_id of this ListIncidentTypesRequest.
 
         项目ID
 
@@ -133,7 +133,7 @@ class ListIncidentTypesRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListIncidentTypesRequest.
+        r"""Gets the workspace_id of this ListIncidentTypesRequest.
 
         工作空间ID
 
@@ -144,7 +144,7 @@ class ListIncidentTypesRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListIncidentTypesRequest.
+        r"""Sets the workspace_id of this ListIncidentTypesRequest.
 
         工作空间ID
 
@@ -155,7 +155,7 @@ class ListIncidentTypesRequest:
 
     @property
     def parent_business_code(self):
-        """Gets the parent_business_code of this ListIncidentTypesRequest.
+        r"""Gets the parent_business_code of this ListIncidentTypesRequest.
 
         子类类型标识码
 
@@ -166,7 +166,7 @@ class ListIncidentTypesRequest:
 
     @parent_business_code.setter
     def parent_business_code(self, parent_business_code):
-        """Sets the parent_business_code of this ListIncidentTypesRequest.
+        r"""Sets the parent_business_code of this ListIncidentTypesRequest.
 
         子类类型标识码
 
@@ -177,7 +177,7 @@ class ListIncidentTypesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListIncidentTypesRequest.
+        r"""Gets the offset of this ListIncidentTypesRequest.
 
         request offset, from 0
 
@@ -188,7 +188,7 @@ class ListIncidentTypesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListIncidentTypesRequest.
+        r"""Sets the offset of this ListIncidentTypesRequest.
 
         request offset, from 0
 
@@ -199,7 +199,7 @@ class ListIncidentTypesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListIncidentTypesRequest.
+        r"""Gets the limit of this ListIncidentTypesRequest.
 
         request limit size
 
@@ -210,7 +210,7 @@ class ListIncidentTypesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListIncidentTypesRequest.
+        r"""Sets the limit of this ListIncidentTypesRequest.
 
         request limit size
 
@@ -221,7 +221,7 @@ class ListIncidentTypesRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListIncidentTypesRequest.
+        r"""Gets the order of this ListIncidentTypesRequest.
 
         sort order, ASC, DESC.
 
@@ -232,7 +232,7 @@ class ListIncidentTypesRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListIncidentTypesRequest.
+        r"""Sets the order of this ListIncidentTypesRequest.
 
         sort order, ASC, DESC.
 
@@ -243,7 +243,7 @@ class ListIncidentTypesRequest:
 
     @property
     def sortby(self):
-        """Gets the sortby of this ListIncidentTypesRequest.
+        r"""Gets the sortby of this ListIncidentTypesRequest.
 
         sort by property, create_time.
 
@@ -254,7 +254,7 @@ class ListIncidentTypesRequest:
 
     @sortby.setter
     def sortby(self, sortby):
-        """Sets the sortby of this ListIncidentTypesRequest.
+        r"""Sets the sortby of this ListIncidentTypesRequest.
 
         sort by property, create_time.
 
@@ -265,7 +265,7 @@ class ListIncidentTypesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListIncidentTypesRequest.
+        r"""Gets the name of this ListIncidentTypesRequest.
 
         name
 
@@ -276,7 +276,7 @@ class ListIncidentTypesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListIncidentTypesRequest.
+        r"""Sets the name of this ListIncidentTypesRequest.
 
         name
 
@@ -287,7 +287,7 @@ class ListIncidentTypesRequest:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListIncidentTypesRequest.
+        r"""Gets the enabled of this ListIncidentTypesRequest.
 
         是否启用
 
@@ -298,7 +298,7 @@ class ListIncidentTypesRequest:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListIncidentTypesRequest.
+        r"""Sets the enabled of this ListIncidentTypesRequest.
 
         是否启用
 
@@ -309,7 +309,7 @@ class ListIncidentTypesRequest:
 
     @property
     def layout_name(self):
-        """Gets the layout_name of this ListIncidentTypesRequest.
+        r"""Gets the layout_name of this ListIncidentTypesRequest.
 
         布局名称
 
@@ -320,7 +320,7 @@ class ListIncidentTypesRequest:
 
     @layout_name.setter
     def layout_name(self, layout_name):
-        """Sets the layout_name of this ListIncidentTypesRequest.
+        r"""Sets the layout_name of this ListIncidentTypesRequest.
 
         布局名称
 
@@ -331,7 +331,7 @@ class ListIncidentTypesRequest:
 
     @property
     def is_built_in(self):
-        """Gets the is_built_in of this ListIncidentTypesRequest.
+        r"""Gets the is_built_in of this ListIncidentTypesRequest.
 
         是否内置
 
@@ -342,7 +342,7 @@ class ListIncidentTypesRequest:
 
     @is_built_in.setter
     def is_built_in(self, is_built_in):
-        """Sets the is_built_in of this ListIncidentTypesRequest.
+        r"""Sets the is_built_in of this ListIncidentTypesRequest.
 
         是否内置
 

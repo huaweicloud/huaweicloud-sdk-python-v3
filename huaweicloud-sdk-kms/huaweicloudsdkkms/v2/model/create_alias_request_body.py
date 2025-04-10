@@ -27,7 +27,7 @@ class CreateAliasRequestBody:
     }
 
     def __init__(self, key_id=None, alias=None):
-        """CreateAliasRequestBody
+        r"""CreateAliasRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateAliasRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this CreateAliasRequestBody.
+        r"""Gets the key_id of this CreateAliasRequestBody.
 
         密钥ID
 
@@ -59,7 +59,7 @@ class CreateAliasRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this CreateAliasRequestBody.
+        r"""Sets the key_id of this CreateAliasRequestBody.
 
         密钥ID
 
@@ -70,7 +70,7 @@ class CreateAliasRequestBody:
 
     @property
     def alias(self):
-        """Gets the alias of this CreateAliasRequestBody.
+        r"""Gets the alias of this CreateAliasRequestBody.
 
         别名。一个账号在同一个区域别名不能重复
 
@@ -81,7 +81,7 @@ class CreateAliasRequestBody:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this CreateAliasRequestBody.
+        r"""Sets the alias of this CreateAliasRequestBody.
 
         别名。一个账号在同一个区域别名不能重复
 

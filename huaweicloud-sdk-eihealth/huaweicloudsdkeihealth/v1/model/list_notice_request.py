@@ -29,7 +29,7 @@ class ListNoticeRequest:
     }
 
     def __init__(self, is_read=None, limit=None, offset=None):
-        """ListNoticeRequest
+        r"""ListNoticeRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListNoticeRequest:
 
     @property
     def is_read(self):
-        """Gets the is_read of this ListNoticeRequest.
+        r"""Gets the is_read of this ListNoticeRequest.
 
         消息状态是否已读，true返回已读，false返回未读，不填返回全部
 
@@ -68,7 +68,7 @@ class ListNoticeRequest:
 
     @is_read.setter
     def is_read(self, is_read):
-        """Sets the is_read of this ListNoticeRequest.
+        r"""Sets the is_read of this ListNoticeRequest.
 
         消息状态是否已读，true返回已读，false返回未读，不填返回全部
 
@@ -79,7 +79,7 @@ class ListNoticeRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNoticeRequest.
+        r"""Gets the limit of this ListNoticeRequest.
 
         查询条数
 
@@ -90,7 +90,7 @@ class ListNoticeRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNoticeRequest.
+        r"""Sets the limit of this ListNoticeRequest.
 
         查询条数
 
@@ -101,7 +101,7 @@ class ListNoticeRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNoticeRequest.
+        r"""Gets the offset of this ListNoticeRequest.
 
         查询偏移量
 
@@ -112,7 +112,7 @@ class ListNoticeRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNoticeRequest.
+        r"""Sets the offset of this ListNoticeRequest.
 
         查询偏移量
 

@@ -27,7 +27,7 @@ class VodInfoV2:
     }
 
     def __init__(self, asset_id=None, play_url=None):
-        """VodInfoV2
+        r"""VodInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class VodInfoV2:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this VodInfoV2.
+        r"""Gets the asset_id of this VodInfoV2.
 
         VOD媒资id
 
@@ -60,7 +60,7 @@ class VodInfoV2:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this VodInfoV2.
+        r"""Sets the asset_id of this VodInfoV2.
 
         VOD媒资id
 
@@ -71,7 +71,7 @@ class VodInfoV2:
 
     @property
     def play_url(self):
-        """Gets the play_url of this VodInfoV2.
+        r"""Gets the play_url of this VodInfoV2.
 
         点播播放地址
 
@@ -82,7 +82,7 @@ class VodInfoV2:
 
     @play_url.setter
     def play_url(self, play_url):
-        """Sets the play_url of this VodInfoV2.
+        r"""Sets the play_url of this VodInfoV2.
 
         点播播放地址
 

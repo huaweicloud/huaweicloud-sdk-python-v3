@@ -27,7 +27,7 @@ class ListTableUsersRequest:
     }
 
     def __init__(self, database_name=None, table_name=None):
-        """ListTableUsersRequest
+        r"""ListTableUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListTableUsersRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListTableUsersRequest.
+        r"""Gets the database_name of this ListTableUsersRequest.
 
         被查询的数据库名称。
 
@@ -59,7 +59,7 @@ class ListTableUsersRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListTableUsersRequest.
+        r"""Sets the database_name of this ListTableUsersRequest.
 
         被查询的数据库名称。
 
@@ -70,7 +70,7 @@ class ListTableUsersRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListTableUsersRequest.
+        r"""Gets the table_name of this ListTableUsersRequest.
 
         被查询的表名称。
 
@@ -81,7 +81,7 @@ class ListTableUsersRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListTableUsersRequest.
+        r"""Sets the table_name of this ListTableUsersRequest.
 
         被查询的表名称。
 

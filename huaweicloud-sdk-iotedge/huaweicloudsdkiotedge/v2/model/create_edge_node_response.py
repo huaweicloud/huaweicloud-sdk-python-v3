@@ -60,7 +60,7 @@ class CreateEdgeNodeResponse(SdkResponse):
     }
 
     def __init__(self, edge_node_id=None, name=None, instance_id=None, space_id=None, product_id=None, product_name=None, state=None, type=None, installer_version=None, base_path=None, resource_ids=None, ips=None, create_time=None, hardware_model=None, device_data_format=None, automatic_upgrade=None, device_data_record=None, metric_report=None):
-        """CreateEdgeNodeResponse
+        r"""CreateEdgeNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this CreateEdgeNodeResponse.
+        r"""Gets the edge_node_id of this CreateEdgeNodeResponse.
 
         边缘节点ID
 
@@ -174,7 +174,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this CreateEdgeNodeResponse.
+        r"""Sets the edge_node_id of this CreateEdgeNodeResponse.
 
         边缘节点ID
 
@@ -185,7 +185,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateEdgeNodeResponse.
+        r"""Gets the name of this CreateEdgeNodeResponse.
 
         边缘节点名称
 
@@ -196,7 +196,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateEdgeNodeResponse.
+        r"""Sets the name of this CreateEdgeNodeResponse.
 
         边缘节点名称
 
@@ -207,7 +207,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateEdgeNodeResponse.
+        r"""Gets the instance_id of this CreateEdgeNodeResponse.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -218,7 +218,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateEdgeNodeResponse.
+        r"""Sets the instance_id of this CreateEdgeNodeResponse.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -229,7 +229,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def space_id(self):
-        """Gets the space_id of this CreateEdgeNodeResponse.
+        r"""Gets the space_id of this CreateEdgeNodeResponse.
 
         资源空间id，对应IOTDA云服务接口参数中的app_id。
 
@@ -240,7 +240,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @space_id.setter
     def space_id(self, space_id):
-        """Sets the space_id of this CreateEdgeNodeResponse.
+        r"""Sets the space_id of this CreateEdgeNodeResponse.
 
         资源空间id，对应IOTDA云服务接口参数中的app_id。
 
@@ -251,7 +251,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateEdgeNodeResponse.
+        r"""Gets the product_id of this CreateEdgeNodeResponse.
 
         边缘节点关联的产品ID，用于唯一标识一个产品模型。
 
@@ -262,7 +262,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateEdgeNodeResponse.
+        r"""Sets the product_id of this CreateEdgeNodeResponse.
 
         边缘节点关联的产品ID，用于唯一标识一个产品模型。
 
@@ -273,7 +273,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def product_name(self):
-        """Gets the product_name of this CreateEdgeNodeResponse.
+        r"""Gets the product_name of this CreateEdgeNodeResponse.
 
         边缘节点关联的产品名称。
 
@@ -284,7 +284,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this CreateEdgeNodeResponse.
+        r"""Sets the product_name of this CreateEdgeNodeResponse.
 
         边缘节点关联的产品名称。
 
@@ -295,7 +295,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this CreateEdgeNodeResponse.
+        r"""Gets the state of this CreateEdgeNodeResponse.
 
         边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|FROZEN
 
@@ -306,7 +306,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CreateEdgeNodeResponse.
+        r"""Sets the state of this CreateEdgeNodeResponse.
 
         边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|FROZEN
 
@@ -317,7 +317,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CreateEdgeNodeResponse.
+        r"""Gets the type of this CreateEdgeNodeResponse.
 
         节点所属资源类型：advanced|standard
 
@@ -328,7 +328,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateEdgeNodeResponse.
+        r"""Sets the type of this CreateEdgeNodeResponse.
 
         节点所属资源类型：advanced|standard
 
@@ -339,7 +339,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def installer_version(self):
-        """Gets the installer_version of this CreateEdgeNodeResponse.
+        r"""Gets the installer_version of this CreateEdgeNodeResponse.
 
         安装文件版本
 
@@ -350,7 +350,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @installer_version.setter
     def installer_version(self, installer_version):
-        """Sets the installer_version of this CreateEdgeNodeResponse.
+        r"""Sets the installer_version of this CreateEdgeNodeResponse.
 
         安装文件版本
 
@@ -361,7 +361,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def base_path(self):
-        """Gets the base_path of this CreateEdgeNodeResponse.
+        r"""Gets the base_path of this CreateEdgeNodeResponse.
 
         :return: The base_path of this CreateEdgeNodeResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
@@ -370,7 +370,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @base_path.setter
     def base_path(self, base_path):
-        """Sets the base_path of this CreateEdgeNodeResponse.
+        r"""Sets the base_path of this CreateEdgeNodeResponse.
 
         :param base_path: The base_path of this CreateEdgeNodeResponse.
         :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
@@ -379,7 +379,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this CreateEdgeNodeResponse.
+        r"""Gets the resource_ids of this CreateEdgeNodeResponse.
 
         资源id列表，创建节点时需绑定已购买的资源包，可以叠加节点功能。
 
@@ -390,7 +390,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this CreateEdgeNodeResponse.
+        r"""Sets the resource_ids of this CreateEdgeNodeResponse.
 
         资源id列表，创建节点时需绑定已购买的资源包，可以叠加节点功能。
 
@@ -401,7 +401,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def ips(self):
-        """Gets the ips of this CreateEdgeNodeResponse.
+        r"""Gets the ips of this CreateEdgeNodeResponse.
 
         边缘节点ip列表
 
@@ -412,7 +412,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this CreateEdgeNodeResponse.
+        r"""Sets the ips of this CreateEdgeNodeResponse.
 
         边缘节点ip列表
 
@@ -423,7 +423,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateEdgeNodeResponse.
+        r"""Gets the create_time of this CreateEdgeNodeResponse.
 
         边缘节点创建时间
 
@@ -434,7 +434,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateEdgeNodeResponse.
+        r"""Sets the create_time of this CreateEdgeNodeResponse.
 
         边缘节点创建时间
 
@@ -445,7 +445,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def hardware_model(self):
-        """Gets the hardware_model of this CreateEdgeNodeResponse.
+        r"""Gets the hardware_model of this CreateEdgeNodeResponse.
 
         注册节点网关配置
 
@@ -456,7 +456,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @hardware_model.setter
     def hardware_model(self, hardware_model):
-        """Sets the hardware_model of this CreateEdgeNodeResponse.
+        r"""Sets the hardware_model of this CreateEdgeNodeResponse.
 
         注册节点网关配置
 
@@ -467,7 +467,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def device_data_format(self):
-        """Gets the device_data_format of this CreateEdgeNodeResponse.
+        r"""Gets the device_data_format of this CreateEdgeNodeResponse.
 
         节点使用的数据格式，默认为iotda物模型1.0格式，可以选择属性平铺数据格式flat_json
 
@@ -478,7 +478,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @device_data_format.setter
     def device_data_format(self, device_data_format):
-        """Sets the device_data_format of this CreateEdgeNodeResponse.
+        r"""Sets the device_data_format of this CreateEdgeNodeResponse.
 
         节点使用的数据格式，默认为iotda物模型1.0格式，可以选择属性平铺数据格式flat_json
 
@@ -489,7 +489,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def automatic_upgrade(self):
-        """Gets the automatic_upgrade of this CreateEdgeNodeResponse.
+        r"""Gets the automatic_upgrade of this CreateEdgeNodeResponse.
 
         自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
 
@@ -500,7 +500,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @automatic_upgrade.setter
     def automatic_upgrade(self, automatic_upgrade):
-        """Sets the automatic_upgrade of this CreateEdgeNodeResponse.
+        r"""Sets the automatic_upgrade of this CreateEdgeNodeResponse.
 
         自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
 
@@ -511,7 +511,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def device_data_record(self):
-        """Gets the device_data_record of this CreateEdgeNodeResponse.
+        r"""Gets the device_data_record of this CreateEdgeNodeResponse.
 
         :return: The device_data_record of this CreateEdgeNodeResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
@@ -520,7 +520,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @device_data_record.setter
     def device_data_record(self, device_data_record):
-        """Sets the device_data_record of this CreateEdgeNodeResponse.
+        r"""Sets the device_data_record of this CreateEdgeNodeResponse.
 
         :param device_data_record: The device_data_record of this CreateEdgeNodeResponse.
         :type device_data_record: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
@@ -529,7 +529,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @property
     def metric_report(self):
-        """Gets the metric_report of this CreateEdgeNodeResponse.
+        r"""Gets the metric_report of this CreateEdgeNodeResponse.
 
         omagent监控运维工具是否上报指标
 
@@ -540,7 +540,7 @@ class CreateEdgeNodeResponse(SdkResponse):
 
     @metric_report.setter
     def metric_report(self, metric_report):
-        """Sets the metric_report of this CreateEdgeNodeResponse.
+        r"""Sets the metric_report of this CreateEdgeNodeResponse.
 
         omagent监控运维工具是否上报指标
 

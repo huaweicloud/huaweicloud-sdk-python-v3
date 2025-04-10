@@ -29,7 +29,7 @@ class GetUserRequest:
     }
 
     def __init__(self, authorization=None, tenant_id=None, user_id=None):
-        """GetUserRequest
+        r"""GetUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class GetUserRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this GetUserRequest.
+        r"""Gets the authorization of this GetUserRequest.
 
         承载令牌
 
@@ -65,7 +65,7 @@ class GetUserRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this GetUserRequest.
+        r"""Sets the authorization of this GetUserRequest.
 
         承载令牌
 
@@ -76,7 +76,7 @@ class GetUserRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this GetUserRequest.
+        r"""Gets the tenant_id of this GetUserRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -87,7 +87,7 @@ class GetUserRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this GetUserRequest.
+        r"""Sets the tenant_id of this GetUserRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -98,7 +98,7 @@ class GetUserRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this GetUserRequest.
+        r"""Gets the user_id of this GetUserRequest.
 
         用户的全局唯一标识符（ID）
 
@@ -109,7 +109,7 @@ class GetUserRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this GetUserRequest.
+        r"""Sets the user_id of this GetUserRequest.
 
         用户的全局唯一标识符（ID）
 

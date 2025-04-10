@@ -26,7 +26,7 @@ class ListHostGroupPermissionsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListHostGroupPermissionsResponse
+        r"""ListHostGroupPermissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListHostGroupPermissionsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListHostGroupPermissionsResponse.
+        r"""Gets the body of this ListHostGroupPermissionsResponse.
 
         主机集群权限矩阵
 
@@ -55,7 +55,7 @@ class ListHostGroupPermissionsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListHostGroupPermissionsResponse.
+        r"""Sets the body of this ListHostGroupPermissionsResponse.
 
         主机集群权限矩阵
 

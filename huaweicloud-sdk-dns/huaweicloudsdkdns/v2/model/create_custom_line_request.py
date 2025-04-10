@@ -25,7 +25,7 @@ class CreateCustomLineRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCustomLineRequest
+        r"""CreateCustomLineRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCustomLineRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCustomLineRequest.
+        r"""Gets the body of this CreateCustomLineRequest.
 
         :return: The body of this CreateCustomLineRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.CreateCustomLineRequestBody`
@@ -52,7 +52,7 @@ class CreateCustomLineRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCustomLineRequest.
+        r"""Sets the body of this CreateCustomLineRequest.
 
         :param body: The body of this CreateCustomLineRequest.
         :type body: :class:`huaweicloudsdkdns.v2.CreateCustomLineRequestBody`

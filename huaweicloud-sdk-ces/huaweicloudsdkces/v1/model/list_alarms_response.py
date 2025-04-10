@@ -28,7 +28,7 @@ class ListAlarmsResponse(SdkResponse):
     }
 
     def __init__(self, metric_alarms=None, meta_data=None):
-        """ListAlarmsResponse
+        r"""ListAlarmsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAlarmsResponse(SdkResponse):
 
     @property
     def metric_alarms(self):
-        """Gets the metric_alarms of this ListAlarmsResponse.
+        r"""Gets the metric_alarms of this ListAlarmsResponse.
 
         告警对象列表。
 
@@ -62,7 +62,7 @@ class ListAlarmsResponse(SdkResponse):
 
     @metric_alarms.setter
     def metric_alarms(self, metric_alarms):
-        """Sets the metric_alarms of this ListAlarmsResponse.
+        r"""Sets the metric_alarms of this ListAlarmsResponse.
 
         告警对象列表。
 
@@ -73,7 +73,7 @@ class ListAlarmsResponse(SdkResponse):
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ListAlarmsResponse.
+        r"""Gets the meta_data of this ListAlarmsResponse.
 
         :return: The meta_data of this ListAlarmsResponse.
         :rtype: :class:`huaweicloudsdkces.v1.MetaData`
@@ -82,7 +82,7 @@ class ListAlarmsResponse(SdkResponse):
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ListAlarmsResponse.
+        r"""Sets the meta_data of this ListAlarmsResponse.
 
         :param meta_data: The meta_data of this ListAlarmsResponse.
         :type meta_data: :class:`huaweicloudsdkces.v1.MetaData`

@@ -25,7 +25,7 @@ class ShowBigkeyAutoscanConfigRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowBigkeyAutoscanConfigRequest
+        r"""ShowBigkeyAutoscanConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowBigkeyAutoscanConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowBigkeyAutoscanConfigRequest.
+        r"""Gets the instance_id of this ShowBigkeyAutoscanConfigRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowBigkeyAutoscanConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowBigkeyAutoscanConfigRequest.
+        r"""Sets the instance_id of this ShowBigkeyAutoscanConfigRequest.
 
         实例ID。
 

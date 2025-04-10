@@ -32,7 +32,7 @@ class SearchVisionActiveCodeResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchVisionActiveCodeResponse
+        r"""SearchVisionActiveCodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchVisionActiveCodeResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchVisionActiveCodeResponse.
+        r"""Gets the offset of this SearchVisionActiveCodeResponse.
 
         页面起始页，从0开始。
 
@@ -76,7 +76,7 @@ class SearchVisionActiveCodeResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchVisionActiveCodeResponse.
+        r"""Sets the offset of this SearchVisionActiveCodeResponse.
 
         页面起始页，从0开始。
 
@@ -87,7 +87,7 @@ class SearchVisionActiveCodeResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchVisionActiveCodeResponse.
+        r"""Gets the limit of this SearchVisionActiveCodeResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -98,7 +98,7 @@ class SearchVisionActiveCodeResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchVisionActiveCodeResponse.
+        r"""Sets the limit of this SearchVisionActiveCodeResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -109,7 +109,7 @@ class SearchVisionActiveCodeResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchVisionActiveCodeResponse.
+        r"""Gets the count of this SearchVisionActiveCodeResponse.
 
         总数量。
 
@@ -120,7 +120,7 @@ class SearchVisionActiveCodeResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchVisionActiveCodeResponse.
+        r"""Sets the count of this SearchVisionActiveCodeResponse.
 
         总数量。
 
@@ -131,7 +131,7 @@ class SearchVisionActiveCodeResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchVisionActiveCodeResponse.
+        r"""Gets the data of this SearchVisionActiveCodeResponse.
 
         :return: The data of this SearchVisionActiveCodeResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.QueryVisionActiveCodeResultDTO`]
@@ -140,7 +140,7 @@ class SearchVisionActiveCodeResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchVisionActiveCodeResponse.
+        r"""Sets the data of this SearchVisionActiveCodeResponse.
 
         :param data: The data of this SearchVisionActiveCodeResponse.
         :type data: list[:class:`huaweicloudsdkmeeting.v1.QueryVisionActiveCodeResultDTO`]

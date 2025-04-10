@@ -29,7 +29,7 @@ class UpdateDataconnectionRequest:
     }
 
     def __init__(self, workspace=None, data_connection_id=None, body=None):
-        """UpdateDataconnectionRequest
+        r"""UpdateDataconnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDataconnectionRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateDataconnectionRequest.
+        r"""Gets the workspace of this UpdateDataconnectionRequest.
 
         工作空间id
 
@@ -66,7 +66,7 @@ class UpdateDataconnectionRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateDataconnectionRequest.
+        r"""Sets the workspace of this UpdateDataconnectionRequest.
 
         工作空间id
 
@@ -77,7 +77,7 @@ class UpdateDataconnectionRequest:
 
     @property
     def data_connection_id(self):
-        """Gets the data_connection_id of this UpdateDataconnectionRequest.
+        r"""Gets the data_connection_id of this UpdateDataconnectionRequest.
 
         数据连接ID
 
@@ -88,7 +88,7 @@ class UpdateDataconnectionRequest:
 
     @data_connection_id.setter
     def data_connection_id(self, data_connection_id):
-        """Sets the data_connection_id of this UpdateDataconnectionRequest.
+        r"""Sets the data_connection_id of this UpdateDataconnectionRequest.
 
         数据连接ID
 
@@ -99,7 +99,7 @@ class UpdateDataconnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDataconnectionRequest.
+        r"""Gets the body of this UpdateDataconnectionRequest.
 
         :return: The body of this UpdateDataconnectionRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApigDataSourcesVo`
@@ -108,7 +108,7 @@ class UpdateDataconnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDataconnectionRequest.
+        r"""Sets the body of this UpdateDataconnectionRequest.
 
         :param body: The body of this UpdateDataconnectionRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApigDataSourcesVo`

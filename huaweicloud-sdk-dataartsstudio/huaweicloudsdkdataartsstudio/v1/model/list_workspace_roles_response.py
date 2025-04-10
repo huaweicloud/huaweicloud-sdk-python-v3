@@ -26,7 +26,7 @@ class ListWorkspaceRolesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListWorkspaceRolesResponse
+        r"""ListWorkspaceRolesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListWorkspaceRolesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListWorkspaceRolesResponse.
+        r"""Gets the body of this ListWorkspaceRolesResponse.
 
         获取DataArtsStudio工作空间角色列表信息
 
@@ -55,7 +55,7 @@ class ListWorkspaceRolesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListWorkspaceRolesResponse.
+        r"""Sets the body of this ListWorkspaceRolesResponse.
 
         获取DataArtsStudio工作空间角色列表信息
 

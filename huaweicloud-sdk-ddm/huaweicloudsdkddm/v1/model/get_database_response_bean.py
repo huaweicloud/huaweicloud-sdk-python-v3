@@ -43,7 +43,7 @@ class GetDatabaseResponseBean:
     }
 
     def __init__(self, name=None, created=None, status=None, updated=None, databases=None, shard_mode=None, shard_number=None, shard_unit=None, data_vips=None, used_rds=None):
-        """GetDatabaseResponseBean
+        r"""GetDatabaseResponseBean
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class GetDatabaseResponseBean:
 
     @property
     def name(self):
-        """Gets the name of this GetDatabaseResponseBean.
+        r"""Gets the name of this GetDatabaseResponseBean.
 
         逻辑库名称。
 
@@ -107,7 +107,7 @@ class GetDatabaseResponseBean:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetDatabaseResponseBean.
+        r"""Sets the name of this GetDatabaseResponseBean.
 
         逻辑库名称。
 
@@ -118,7 +118,7 @@ class GetDatabaseResponseBean:
 
     @property
     def created(self):
-        """Gets the created of this GetDatabaseResponseBean.
+        r"""Gets the created of this GetDatabaseResponseBean.
 
         逻辑库的创建时间。
 
@@ -129,7 +129,7 @@ class GetDatabaseResponseBean:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this GetDatabaseResponseBean.
+        r"""Sets the created of this GetDatabaseResponseBean.
 
         逻辑库的创建时间。
 
@@ -140,7 +140,7 @@ class GetDatabaseResponseBean:
 
     @property
     def status(self):
-        """Gets the status of this GetDatabaseResponseBean.
+        r"""Gets the status of this GetDatabaseResponseBean.
 
         状态。
 
@@ -151,7 +151,7 @@ class GetDatabaseResponseBean:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetDatabaseResponseBean.
+        r"""Sets the status of this GetDatabaseResponseBean.
 
         状态。
 
@@ -162,7 +162,7 @@ class GetDatabaseResponseBean:
 
     @property
     def updated(self):
-        """Gets the updated of this GetDatabaseResponseBean.
+        r"""Gets the updated of this GetDatabaseResponseBean.
 
         DDM实例最后更新时间。
 
@@ -173,7 +173,7 @@ class GetDatabaseResponseBean:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this GetDatabaseResponseBean.
+        r"""Sets the updated of this GetDatabaseResponseBean.
 
         DDM实例最后更新时间。
 
@@ -184,7 +184,7 @@ class GetDatabaseResponseBean:
 
     @property
     def databases(self):
-        """Gets the databases of this GetDatabaseResponseBean.
+        r"""Gets the databases of this GetDatabaseResponseBean.
 
         逻辑库分片的详细信息。
 
@@ -195,7 +195,7 @@ class GetDatabaseResponseBean:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this GetDatabaseResponseBean.
+        r"""Sets the databases of this GetDatabaseResponseBean.
 
         逻辑库分片的详细信息。
 
@@ -206,7 +206,7 @@ class GetDatabaseResponseBean:
 
     @property
     def shard_mode(self):
-        """Gets the shard_mode of this GetDatabaseResponseBean.
+        r"""Gets the shard_mode of this GetDatabaseResponseBean.
 
         逻辑库的工作模式。  - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
 
@@ -217,7 +217,7 @@ class GetDatabaseResponseBean:
 
     @shard_mode.setter
     def shard_mode(self, shard_mode):
-        """Sets the shard_mode of this GetDatabaseResponseBean.
+        r"""Sets the shard_mode of this GetDatabaseResponseBean.
 
         逻辑库的工作模式。  - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
 
@@ -228,7 +228,7 @@ class GetDatabaseResponseBean:
 
     @property
     def shard_number(self):
-        """Gets the shard_number of this GetDatabaseResponseBean.
+        r"""Gets the shard_number of this GetDatabaseResponseBean.
 
         同一种工作模式下逻辑库分片的数量。
 
@@ -239,7 +239,7 @@ class GetDatabaseResponseBean:
 
     @shard_number.setter
     def shard_number(self, shard_number):
-        """Sets the shard_number of this GetDatabaseResponseBean.
+        r"""Sets the shard_number of this GetDatabaseResponseBean.
 
         同一种工作模式下逻辑库分片的数量。
 
@@ -250,7 +250,7 @@ class GetDatabaseResponseBean:
 
     @property
     def shard_unit(self):
-        """Gets the shard_unit of this GetDatabaseResponseBean.
+        r"""Gets the shard_unit of this GetDatabaseResponseBean.
 
         单个RDS上的逻辑库分片数。
 
@@ -261,7 +261,7 @@ class GetDatabaseResponseBean:
 
     @shard_unit.setter
     def shard_unit(self, shard_unit):
-        """Sets the shard_unit of this GetDatabaseResponseBean.
+        r"""Sets the shard_unit of this GetDatabaseResponseBean.
 
         单个RDS上的逻辑库分片数。
 
@@ -272,7 +272,7 @@ class GetDatabaseResponseBean:
 
     @property
     def data_vips(self):
-        """Gets the data_vips of this GetDatabaseResponseBean.
+        r"""Gets the data_vips of this GetDatabaseResponseBean.
 
         连接逻辑库使用的IP:端口。
 
@@ -283,7 +283,7 @@ class GetDatabaseResponseBean:
 
     @data_vips.setter
     def data_vips(self, data_vips):
-        """Sets the data_vips of this GetDatabaseResponseBean.
+        r"""Sets the data_vips of this GetDatabaseResponseBean.
 
         连接逻辑库使用的IP:端口。
 
@@ -294,7 +294,7 @@ class GetDatabaseResponseBean:
 
     @property
     def used_rds(self):
-        """Gets the used_rds of this GetDatabaseResponseBean.
+        r"""Gets the used_rds of this GetDatabaseResponseBean.
 
         关联RDS
 
@@ -305,7 +305,7 @@ class GetDatabaseResponseBean:
 
     @used_rds.setter
     def used_rds(self, used_rds):
-        """Sets the used_rds of this GetDatabaseResponseBean.
+        r"""Sets the used_rds of this GetDatabaseResponseBean.
 
         关联RDS
 

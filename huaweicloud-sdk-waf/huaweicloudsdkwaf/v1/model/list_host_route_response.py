@@ -28,7 +28,7 @@ class ListHostRouteResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListHostRouteResponse
+        r"""ListHostRouteResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListHostRouteResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListHostRouteResponse.
+        r"""Gets the total of this ListHostRouteResponse.
 
         路由线路数量
 
@@ -62,7 +62,7 @@ class ListHostRouteResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListHostRouteResponse.
+        r"""Sets the total of this ListHostRouteResponse.
 
         路由线路数量
 
@@ -73,7 +73,7 @@ class ListHostRouteResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListHostRouteResponse.
+        r"""Gets the items of this ListHostRouteResponse.
 
         单个路由线路详细信息
 
@@ -84,7 +84,7 @@ class ListHostRouteResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListHostRouteResponse.
+        r"""Sets the items of this ListHostRouteResponse.
 
         单个路由线路详细信息
 

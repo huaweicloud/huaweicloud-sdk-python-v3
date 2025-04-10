@@ -27,7 +27,7 @@ class SrCreateInstanceRspInstanceTagsInfoSysTags:
     }
 
     def __init__(self, key=None, value=None):
-        """SrCreateInstanceRspInstanceTagsInfoSysTags
+        r"""SrCreateInstanceRspInstanceTagsInfoSysTags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SrCreateInstanceRspInstanceTagsInfoSysTags:
 
     @property
     def key(self):
-        """Gets the key of this SrCreateInstanceRspInstanceTagsInfoSysTags.
+        r"""Gets the key of this SrCreateInstanceRspInstanceTagsInfoSysTags.
 
         标签键。
 
@@ -61,7 +61,7 @@ class SrCreateInstanceRspInstanceTagsInfoSysTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this SrCreateInstanceRspInstanceTagsInfoSysTags.
+        r"""Sets the key of this SrCreateInstanceRspInstanceTagsInfoSysTags.
 
         标签键。
 
@@ -72,7 +72,7 @@ class SrCreateInstanceRspInstanceTagsInfoSysTags:
 
     @property
     def value(self):
-        """Gets the value of this SrCreateInstanceRspInstanceTagsInfoSysTags.
+        r"""Gets the value of this SrCreateInstanceRspInstanceTagsInfoSysTags.
 
         标签值。
 
@@ -83,7 +83,7 @@ class SrCreateInstanceRspInstanceTagsInfoSysTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SrCreateInstanceRspInstanceTagsInfoSysTags.
+        r"""Sets the value of this SrCreateInstanceRspInstanceTagsInfoSysTags.
 
         标签值。
 

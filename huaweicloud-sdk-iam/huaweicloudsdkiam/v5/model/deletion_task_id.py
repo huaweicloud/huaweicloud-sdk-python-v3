@@ -23,7 +23,7 @@ class DeletionTaskId:
     }
 
     def __init__(self):
-        """DeletionTaskId
+        r"""DeletionTaskId
 
         The model defined in huaweicloud sdk
 

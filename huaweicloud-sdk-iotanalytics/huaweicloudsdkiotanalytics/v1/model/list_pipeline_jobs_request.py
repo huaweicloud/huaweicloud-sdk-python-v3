@@ -39,7 +39,7 @@ class ListPipelineJobsRequest:
     }
 
     def __init__(self, data_store_id=None, data_store_group_id=None, data_source_id=None, pipeline_name=None, operator_class_name=None, offset=None, limit=None, sync_status=None):
-        """ListPipelineJobsRequest
+        r"""ListPipelineJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListPipelineJobsRequest:
 
     @property
     def data_store_id(self):
-        """Gets the data_store_id of this ListPipelineJobsRequest.
+        r"""Gets the data_store_id of this ListPipelineJobsRequest.
 
         数据存储Id
 
@@ -103,7 +103,7 @@ class ListPipelineJobsRequest:
 
     @data_store_id.setter
     def data_store_id(self, data_store_id):
-        """Sets the data_store_id of this ListPipelineJobsRequest.
+        r"""Sets the data_store_id of this ListPipelineJobsRequest.
 
         数据存储Id
 
@@ -114,7 +114,7 @@ class ListPipelineJobsRequest:
 
     @property
     def data_store_group_id(self):
-        """Gets the data_store_group_id of this ListPipelineJobsRequest.
+        r"""Gets the data_store_group_id of this ListPipelineJobsRequest.
 
         存储组Id
 
@@ -125,7 +125,7 @@ class ListPipelineJobsRequest:
 
     @data_store_group_id.setter
     def data_store_group_id(self, data_store_group_id):
-        """Sets the data_store_group_id of this ListPipelineJobsRequest.
+        r"""Sets the data_store_group_id of this ListPipelineJobsRequest.
 
         存储组Id
 
@@ -136,7 +136,7 @@ class ListPipelineJobsRequest:
 
     @property
     def data_source_id(self):
-        """Gets the data_source_id of this ListPipelineJobsRequest.
+        r"""Gets the data_source_id of this ListPipelineJobsRequest.
 
         数据源Id
 
@@ -147,7 +147,7 @@ class ListPipelineJobsRequest:
 
     @data_source_id.setter
     def data_source_id(self, data_source_id):
-        """Sets the data_source_id of this ListPipelineJobsRequest.
+        r"""Sets the data_source_id of this ListPipelineJobsRequest.
 
         数据源Id
 
@@ -158,7 +158,7 @@ class ListPipelineJobsRequest:
 
     @property
     def pipeline_name(self):
-        """Gets the pipeline_name of this ListPipelineJobsRequest.
+        r"""Gets the pipeline_name of this ListPipelineJobsRequest.
 
         管道名称
 
@@ -169,7 +169,7 @@ class ListPipelineJobsRequest:
 
     @pipeline_name.setter
     def pipeline_name(self, pipeline_name):
-        """Sets the pipeline_name of this ListPipelineJobsRequest.
+        r"""Sets the pipeline_name of this ListPipelineJobsRequest.
 
         管道名称
 
@@ -180,7 +180,7 @@ class ListPipelineJobsRequest:
 
     @property
     def operator_class_name(self):
-        """Gets the operator_class_name of this ListPipelineJobsRequest.
+        r"""Gets the operator_class_name of this ListPipelineJobsRequest.
 
         包含的管道类名
 
@@ -191,7 +191,7 @@ class ListPipelineJobsRequest:
 
     @operator_class_name.setter
     def operator_class_name(self, operator_class_name):
-        """Sets the operator_class_name of this ListPipelineJobsRequest.
+        r"""Sets the operator_class_name of this ListPipelineJobsRequest.
 
         包含的管道类名
 
@@ -202,7 +202,7 @@ class ListPipelineJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPipelineJobsRequest.
+        r"""Gets the offset of this ListPipelineJobsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -213,7 +213,7 @@ class ListPipelineJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPipelineJobsRequest.
+        r"""Sets the offset of this ListPipelineJobsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -224,7 +224,7 @@ class ListPipelineJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPipelineJobsRequest.
+        r"""Gets the limit of this ListPipelineJobsRequest.
 
         每页显示的条目数量
 
@@ -235,7 +235,7 @@ class ListPipelineJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPipelineJobsRequest.
+        r"""Sets the limit of this ListPipelineJobsRequest.
 
         每页显示的条目数量
 
@@ -246,7 +246,7 @@ class ListPipelineJobsRequest:
 
     @property
     def sync_status(self):
-        """Gets the sync_status of this ListPipelineJobsRequest.
+        r"""Gets the sync_status of this ListPipelineJobsRequest.
 
         立即同步作业状态，默认是false
 
@@ -257,7 +257,7 @@ class ListPipelineJobsRequest:
 
     @sync_status.setter
     def sync_status(self, sync_status):
-        """Sets the sync_status of this ListPipelineJobsRequest.
+        r"""Sets the sync_status of this ListPipelineJobsRequest.
 
         立即同步作业状态，默认是false
 

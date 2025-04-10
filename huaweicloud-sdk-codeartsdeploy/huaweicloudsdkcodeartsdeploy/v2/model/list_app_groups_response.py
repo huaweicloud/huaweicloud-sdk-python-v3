@@ -28,7 +28,7 @@ class ListAppGroupsResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """ListAppGroupsResponse
+        r"""ListAppGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAppGroupsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListAppGroupsResponse.
+        r"""Gets the result of this ListAppGroupsResponse.
 
         分组信息列表
 
@@ -62,7 +62,7 @@ class ListAppGroupsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListAppGroupsResponse.
+        r"""Sets the result of this ListAppGroupsResponse.
 
         分组信息列表
 
@@ -73,7 +73,7 @@ class ListAppGroupsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListAppGroupsResponse.
+        r"""Gets the status of this ListAppGroupsResponse.
 
         请求成功失败状态
 
@@ -84,7 +84,7 @@ class ListAppGroupsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAppGroupsResponse.
+        r"""Sets the status of this ListAppGroupsResponse.
 
         请求成功失败状态
 

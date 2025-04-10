@@ -25,7 +25,7 @@ class UpdateAssistAuthMethodConfigRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateAssistAuthMethodConfigRequest
+        r"""UpdateAssistAuthMethodConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateAssistAuthMethodConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAssistAuthMethodConfigRequest.
+        r"""Gets the body of this UpdateAssistAuthMethodConfigRequest.
 
         :return: The body of this UpdateAssistAuthMethodConfigRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AssistAuthMethodConfigRequest`
@@ -52,7 +52,7 @@ class UpdateAssistAuthMethodConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAssistAuthMethodConfigRequest.
+        r"""Sets the body of this UpdateAssistAuthMethodConfigRequest.
 
         :param body: The body of this UpdateAssistAuthMethodConfigRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.AssistAuthMethodConfigRequest`

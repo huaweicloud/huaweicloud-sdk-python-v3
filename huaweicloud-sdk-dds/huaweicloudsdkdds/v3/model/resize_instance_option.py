@@ -31,7 +31,7 @@ class ResizeInstanceOption:
     }
 
     def __init__(self, target_type=None, target_id=None, target_ids=None, target_spec_code=None):
-        """ResizeInstanceOption
+        r"""ResizeInstanceOption
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ResizeInstanceOption:
 
     @property
     def target_type(self):
-        """Gets the target_type of this ResizeInstanceOption.
+        r"""Gets the target_type of this ResizeInstanceOption.
 
         对象类型。 - 对于集群实例，该参数为必选。变更mongos节点规格时，取值为“mongos”；变更单个shard组规格、或者批量变更多个shard组规格时，取值为“shard”，变更config组规格时，取值为\"config\"。 - 对于副本集实例，不传该参数。变更readonly节点规格时,取值为“readonly”。 - 对于单节点实例，不传该参数。
 
@@ -74,7 +74,7 @@ class ResizeInstanceOption:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this ResizeInstanceOption.
+        r"""Sets the target_type of this ResizeInstanceOption.
 
         对象类型。 - 对于集群实例，该参数为必选。变更mongos节点规格时，取值为“mongos”；变更单个shard组规格、或者批量变更多个shard组规格时，取值为“shard”，变更config组规格时，取值为\"config\"。 - 对于副本集实例，不传该参数。变更readonly节点规格时,取值为“readonly”。 - 对于单节点实例，不传该参数。
 
@@ -85,7 +85,7 @@ class ResizeInstanceOption:
 
     @property
     def target_id(self):
-        """Gets the target_id of this ResizeInstanceOption.
+        r"""Gets the target_id of this ResizeInstanceOption.
 
         待变更规格的节点ID或实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 - 对于集群实例，变更mongos节点规格时，取值为mongos节点ID；变更单个shard组规格时，取值为shard组ID；批量变更多个shard组规格时，不传该参数；变更config组规格时，取值为config组的ID。 - 对于副本集实例，取值为相应的实例ID。变更readonly节点规格时，取值为readonly节点ID。 - 对于单节点实例，取值为相应的实例ID。
 
@@ -96,7 +96,7 @@ class ResizeInstanceOption:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this ResizeInstanceOption.
+        r"""Sets the target_id of this ResizeInstanceOption.
 
         待变更规格的节点ID或实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 - 对于集群实例，变更mongos节点规格时，取值为mongos节点ID；变更单个shard组规格时，取值为shard组ID；批量变更多个shard组规格时，不传该参数；变更config组规格时，取值为config组的ID。 - 对于副本集实例，取值为相应的实例ID。变更readonly节点规格时，取值为readonly节点ID。 - 对于单节点实例，取值为相应的实例ID。
 
@@ -107,7 +107,7 @@ class ResizeInstanceOption:
 
     @property
     def target_ids(self):
-        """Gets the target_ids of this ResizeInstanceOption.
+        r"""Gets the target_ids of this ResizeInstanceOption.
 
         待变更规格的节点组ID列表，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 - 对于集群实例，变更mongos节点规格时，不传该参数；变更单个shard组规格时，不传该参数；变更config组规格时，不传该参数；批量变更多个shard组规格时，取值为相应的多个shard组ID，最多支持16个shard组批量变更。 - 对于副本集实例，不传该参数。 - 对于单节点实例，不传该参数。
 
@@ -118,7 +118,7 @@ class ResizeInstanceOption:
 
     @target_ids.setter
     def target_ids(self, target_ids):
-        """Sets the target_ids of this ResizeInstanceOption.
+        r"""Sets the target_ids of this ResizeInstanceOption.
 
         待变更规格的节点组ID列表，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 - 对于集群实例，变更mongos节点规格时，不传该参数；变更单个shard组规格时，不传该参数；变更config组规格时，不传该参数；批量变更多个shard组规格时，取值为相应的多个shard组ID，最多支持16个shard组批量变更。 - 对于副本集实例，不传该参数。 - 对于单节点实例，不传该参数。
 
@@ -129,7 +129,7 @@ class ResizeInstanceOption:
 
     @property
     def target_spec_code(self):
-        """Gets the target_spec_code of this ResizeInstanceOption.
+        r"""Gets the target_spec_code of this ResizeInstanceOption.
 
         变更至新规格的资源规格编码。
 
@@ -140,7 +140,7 @@ class ResizeInstanceOption:
 
     @target_spec_code.setter
     def target_spec_code(self, target_spec_code):
-        """Sets the target_spec_code of this ResizeInstanceOption.
+        r"""Sets the target_spec_code of this ResizeInstanceOption.
 
         变更至新规格的资源规格编码。
 

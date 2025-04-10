@@ -32,7 +32,7 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
     }
 
     def __init__(self, delete_connector=None, deploy_connector=None, deployment_id=None, update_devices=None):
-        """UpdateEdgeNodeDeviceResponse
+        r"""UpdateEdgeNodeDeviceResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
 
     @property
     def delete_connector(self):
-        """Gets the delete_connector of this UpdateEdgeNodeDeviceResponse.
+        r"""Gets the delete_connector of this UpdateEdgeNodeDeviceResponse.
 
         工业终端设备预留字段
 
@@ -76,7 +76,7 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
 
     @delete_connector.setter
     def delete_connector(self, delete_connector):
-        """Sets the delete_connector of this UpdateEdgeNodeDeviceResponse.
+        r"""Sets the delete_connector of this UpdateEdgeNodeDeviceResponse.
 
         工业终端设备预留字段
 
@@ -87,7 +87,7 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
 
     @property
     def deploy_connector(self):
-        """Gets the deploy_connector of this UpdateEdgeNodeDeviceResponse.
+        r"""Gets the deploy_connector of this UpdateEdgeNodeDeviceResponse.
 
         工业终端设备预留字段
 
@@ -98,7 +98,7 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
 
     @deploy_connector.setter
     def deploy_connector(self, deploy_connector):
-        """Sets the deploy_connector of this UpdateEdgeNodeDeviceResponse.
+        r"""Sets the deploy_connector of this UpdateEdgeNodeDeviceResponse.
 
         工业终端设备预留字段
 
@@ -109,7 +109,7 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this UpdateEdgeNodeDeviceResponse.
+        r"""Gets the deployment_id of this UpdateEdgeNodeDeviceResponse.
 
         工业终端设备预留字段
 
@@ -120,7 +120,7 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this UpdateEdgeNodeDeviceResponse.
+        r"""Sets the deployment_id of this UpdateEdgeNodeDeviceResponse.
 
         工业终端设备预留字段
 
@@ -131,7 +131,7 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
 
     @property
     def update_devices(self):
-        """Gets the update_devices of this UpdateEdgeNodeDeviceResponse.
+        r"""Gets the update_devices of this UpdateEdgeNodeDeviceResponse.
 
         :return: The update_devices of this UpdateEdgeNodeDeviceResponse.
         :rtype: :class:`huaweicloudsdkief.v1.NodeDevice`
@@ -140,7 +140,7 @@ class UpdateEdgeNodeDeviceResponse(SdkResponse):
 
     @update_devices.setter
     def update_devices(self, update_devices):
-        """Sets the update_devices of this UpdateEdgeNodeDeviceResponse.
+        r"""Sets the update_devices of this UpdateEdgeNodeDeviceResponse.
 
         :param update_devices: The update_devices of this UpdateEdgeNodeDeviceResponse.
         :type update_devices: :class:`huaweicloudsdkief.v1.NodeDevice`

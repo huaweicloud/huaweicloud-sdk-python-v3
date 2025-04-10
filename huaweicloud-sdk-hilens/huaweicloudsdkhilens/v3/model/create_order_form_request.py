@@ -25,7 +25,7 @@ class CreateOrderFormRequest:
     }
 
     def __init__(self, body=None):
-        """CreateOrderFormRequest
+        r"""CreateOrderFormRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateOrderFormRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOrderFormRequest.
+        r"""Gets the body of this CreateOrderFormRequest.
 
         :return: The body of this CreateOrderFormRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateSkillOrderFrom`
@@ -52,7 +52,7 @@ class CreateOrderFormRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOrderFormRequest.
+        r"""Sets the body of this CreateOrderFormRequest.
 
         :param body: The body of this CreateOrderFormRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.CreateSkillOrderFrom`

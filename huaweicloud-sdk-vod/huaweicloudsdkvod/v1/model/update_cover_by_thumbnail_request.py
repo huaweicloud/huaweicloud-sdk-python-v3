@@ -25,7 +25,7 @@ class UpdateCoverByThumbnailRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateCoverByThumbnailRequest
+        r"""UpdateCoverByThumbnailRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateCoverByThumbnailRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCoverByThumbnailRequest.
+        r"""Gets the body of this UpdateCoverByThumbnailRequest.
 
         :return: The body of this UpdateCoverByThumbnailRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateCoverByThumbnailReq`
@@ -52,7 +52,7 @@ class UpdateCoverByThumbnailRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCoverByThumbnailRequest.
+        r"""Sets the body of this UpdateCoverByThumbnailRequest.
 
         :param body: The body of this UpdateCoverByThumbnailRequest.
         :type body: :class:`huaweicloudsdkvod.v1.UpdateCoverByThumbnailReq`

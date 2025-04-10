@@ -27,7 +27,7 @@ class ExpandShareRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """ExpandShareRequest
+        r"""ExpandShareRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExpandShareRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this ExpandShareRequest.
+        r"""Gets the share_id of this ExpandShareRequest.
 
         文件系统ID
 
@@ -60,7 +60,7 @@ class ExpandShareRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this ExpandShareRequest.
+        r"""Sets the share_id of this ExpandShareRequest.
 
         文件系统ID
 
@@ -71,7 +71,7 @@ class ExpandShareRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExpandShareRequest.
+        r"""Gets the body of this ExpandShareRequest.
 
         :return: The body of this ExpandShareRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ExpandShareRequestBody`
@@ -80,7 +80,7 @@ class ExpandShareRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExpandShareRequest.
+        r"""Sets the body of this ExpandShareRequest.
 
         :param body: The body of this ExpandShareRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.ExpandShareRequestBody`

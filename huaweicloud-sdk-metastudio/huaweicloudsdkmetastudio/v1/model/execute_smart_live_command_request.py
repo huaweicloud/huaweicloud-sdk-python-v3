@@ -31,7 +31,7 @@ class ExecuteSmartLiveCommandRequest:
     }
 
     def __init__(self, room_id=None, job_id=None, x_app_user_id=None, body=None):
-        """ExecuteSmartLiveCommandRequest
+        r"""ExecuteSmartLiveCommandRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ExecuteSmartLiveCommandRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this ExecuteSmartLiveCommandRequest.
+        r"""Gets the room_id of this ExecuteSmartLiveCommandRequest.
 
         直播间ID。
 
@@ -73,7 +73,7 @@ class ExecuteSmartLiveCommandRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ExecuteSmartLiveCommandRequest.
+        r"""Sets the room_id of this ExecuteSmartLiveCommandRequest.
 
         直播间ID。
 
@@ -84,7 +84,7 @@ class ExecuteSmartLiveCommandRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExecuteSmartLiveCommandRequest.
+        r"""Gets the job_id of this ExecuteSmartLiveCommandRequest.
 
         任务ID。
 
@@ -95,7 +95,7 @@ class ExecuteSmartLiveCommandRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExecuteSmartLiveCommandRequest.
+        r"""Sets the job_id of this ExecuteSmartLiveCommandRequest.
 
         任务ID。
 
@@ -106,7 +106,7 @@ class ExecuteSmartLiveCommandRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ExecuteSmartLiveCommandRequest.
+        r"""Gets the x_app_user_id of this ExecuteSmartLiveCommandRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -117,7 +117,7 @@ class ExecuteSmartLiveCommandRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ExecuteSmartLiveCommandRequest.
+        r"""Sets the x_app_user_id of this ExecuteSmartLiveCommandRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -128,7 +128,7 @@ class ExecuteSmartLiveCommandRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteSmartLiveCommandRequest.
+        r"""Gets the body of this ExecuteSmartLiveCommandRequest.
 
         :return: The body of this ExecuteSmartLiveCommandRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ControlSmartLiveReq`
@@ -137,7 +137,7 @@ class ExecuteSmartLiveCommandRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteSmartLiveCommandRequest.
+        r"""Sets the body of this ExecuteSmartLiveCommandRequest.
 
         :param body: The body of this ExecuteSmartLiveCommandRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.ControlSmartLiveReq`

@@ -32,7 +32,7 @@ class DeleteTranscodeProductResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, status=None, deleted_products=None, failed_products=None):
-        """DeleteTranscodeProductResponse
+        r"""DeleteTranscodeProductResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class DeleteTranscodeProductResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this DeleteTranscodeProductResponse.
+        r"""Gets the asset_id of this DeleteTranscodeProductResponse.
 
         媒资ID
 
@@ -76,7 +76,7 @@ class DeleteTranscodeProductResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this DeleteTranscodeProductResponse.
+        r"""Sets the asset_id of this DeleteTranscodeProductResponse.
 
         媒资ID
 
@@ -87,7 +87,7 @@ class DeleteTranscodeProductResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteTranscodeProductResponse.
+        r"""Gets the status of this DeleteTranscodeProductResponse.
 
         SUCCESS：成功 FAIL：失败 PARTIAL_SUCCESS：部分成功 
 
@@ -98,7 +98,7 @@ class DeleteTranscodeProductResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteTranscodeProductResponse.
+        r"""Sets the status of this DeleteTranscodeProductResponse.
 
         SUCCESS：成功 FAIL：失败 PARTIAL_SUCCESS：部分成功 
 
@@ -109,7 +109,7 @@ class DeleteTranscodeProductResponse(SdkResponse):
 
     @property
     def deleted_products(self):
-        """Gets the deleted_products of this DeleteTranscodeProductResponse.
+        r"""Gets the deleted_products of this DeleteTranscodeProductResponse.
 
         删除成功的产物
 
@@ -120,7 +120,7 @@ class DeleteTranscodeProductResponse(SdkResponse):
 
     @deleted_products.setter
     def deleted_products(self, deleted_products):
-        """Sets the deleted_products of this DeleteTranscodeProductResponse.
+        r"""Sets the deleted_products of this DeleteTranscodeProductResponse.
 
         删除成功的产物
 
@@ -131,7 +131,7 @@ class DeleteTranscodeProductResponse(SdkResponse):
 
     @property
     def failed_products(self):
-        """Gets the failed_products of this DeleteTranscodeProductResponse.
+        r"""Gets the failed_products of this DeleteTranscodeProductResponse.
 
         删除失败的产物
 
@@ -142,7 +142,7 @@ class DeleteTranscodeProductResponse(SdkResponse):
 
     @failed_products.setter
     def failed_products(self, failed_products):
-        """Sets the failed_products of this DeleteTranscodeProductResponse.
+        r"""Sets the failed_products of this DeleteTranscodeProductResponse.
 
         删除失败的产物
 

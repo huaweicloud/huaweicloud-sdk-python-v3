@@ -23,7 +23,7 @@ class DeleteTrackerConfigRequest:
     }
 
     def __init__(self):
-        """DeleteTrackerConfigRequest
+        r"""DeleteTrackerConfigRequest
 
         The model defined in huaweicloud sdk
 

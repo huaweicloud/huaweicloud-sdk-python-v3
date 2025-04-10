@@ -29,7 +29,7 @@ class CertificateBundingHostBody:
     }
 
     def __init__(self, id=None, hostname=None, waf_type=None):
-        """CertificateBundingHostBody
+        r"""CertificateBundingHostBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CertificateBundingHostBody:
 
     @property
     def id(self):
-        """Gets the id of this CertificateBundingHostBody.
+        r"""Gets the id of this CertificateBundingHostBody.
 
         域名id
 
@@ -68,7 +68,7 @@ class CertificateBundingHostBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CertificateBundingHostBody.
+        r"""Sets the id of this CertificateBundingHostBody.
 
         域名id
 
@@ -79,7 +79,7 @@ class CertificateBundingHostBody:
 
     @property
     def hostname(self):
-        """Gets the hostname of this CertificateBundingHostBody.
+        r"""Gets the hostname of this CertificateBundingHostBody.
 
         域名
 
@@ -90,7 +90,7 @@ class CertificateBundingHostBody:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this CertificateBundingHostBody.
+        r"""Sets the hostname of this CertificateBundingHostBody.
 
         域名
 
@@ -101,7 +101,7 @@ class CertificateBundingHostBody:
 
     @property
     def waf_type(self):
-        """Gets the waf_type of this CertificateBundingHostBody.
+        r"""Gets the waf_type of this CertificateBundingHostBody.
 
         waf模式（分为云模式：cloud,独享模式：premium）
 
@@ -112,7 +112,7 @@ class CertificateBundingHostBody:
 
     @waf_type.setter
     def waf_type(self, waf_type):
-        """Sets the waf_type of this CertificateBundingHostBody.
+        r"""Sets the waf_type of this CertificateBundingHostBody.
 
         waf模式（分为云模式：cloud,独享模式：premium）
 

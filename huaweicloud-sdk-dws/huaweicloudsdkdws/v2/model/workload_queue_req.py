@@ -25,7 +25,7 @@ class WorkloadQueueReq:
     }
 
     def __init__(self, workload_queue=None):
-        """WorkloadQueueReq
+        r"""WorkloadQueueReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class WorkloadQueueReq:
 
     @property
     def workload_queue(self):
-        """Gets the workload_queue of this WorkloadQueueReq.
+        r"""Gets the workload_queue of this WorkloadQueueReq.
 
         :return: The workload_queue of this WorkloadQueueReq.
         :rtype: :class:`huaweicloudsdkdws.v2.WorkloadQueue`
@@ -51,7 +51,7 @@ class WorkloadQueueReq:
 
     @workload_queue.setter
     def workload_queue(self, workload_queue):
-        """Sets the workload_queue of this WorkloadQueueReq.
+        r"""Sets the workload_queue of this WorkloadQueueReq.
 
         :param workload_queue: The workload_queue of this WorkloadQueueReq.
         :type workload_queue: :class:`huaweicloudsdkdws.v2.WorkloadQueue`

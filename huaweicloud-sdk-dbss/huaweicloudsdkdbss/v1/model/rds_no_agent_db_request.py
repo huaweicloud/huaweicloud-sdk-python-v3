@@ -27,7 +27,7 @@ class RdsNoAgentDbRequest:
     }
 
     def __init__(self, databases=None, total_count=None):
-        """RdsNoAgentDbRequest
+        r"""RdsNoAgentDbRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RdsNoAgentDbRequest:
 
     @property
     def databases(self):
-        """Gets the databases of this RdsNoAgentDbRequest.
+        r"""Gets the databases of this RdsNoAgentDbRequest.
 
         添加数据库信息列表
 
@@ -60,7 +60,7 @@ class RdsNoAgentDbRequest:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this RdsNoAgentDbRequest.
+        r"""Sets the databases of this RdsNoAgentDbRequest.
 
         添加数据库信息列表
 
@@ -71,7 +71,7 @@ class RdsNoAgentDbRequest:
 
     @property
     def total_count(self):
-        """Gets the total_count of this RdsNoAgentDbRequest.
+        r"""Gets the total_count of this RdsNoAgentDbRequest.
 
         总数
 
@@ -82,7 +82,7 @@ class RdsNoAgentDbRequest:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this RdsNoAgentDbRequest.
+        r"""Sets the total_count of this RdsNoAgentDbRequest.
 
         总数
 

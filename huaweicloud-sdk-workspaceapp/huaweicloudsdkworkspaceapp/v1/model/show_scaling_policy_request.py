@@ -25,7 +25,7 @@ class ShowScalingPolicyRequest:
     }
 
     def __init__(self, server_group_id=None):
-        """ShowScalingPolicyRequest
+        r"""ShowScalingPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowScalingPolicyRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ShowScalingPolicyRequest.
+        r"""Gets the server_group_id of this ShowScalingPolicyRequest.
 
         服务器组唯一标识。
 
@@ -53,7 +53,7 @@ class ShowScalingPolicyRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ShowScalingPolicyRequest.
+        r"""Sets the server_group_id of this ShowScalingPolicyRequest.
 
         服务器组唯一标识。
 

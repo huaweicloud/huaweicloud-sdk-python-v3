@@ -30,7 +30,7 @@ class ListCostsResponse(SdkResponse):
     }
 
     def __init__(self, currency=None, total_count=None, cost_data=None):
-        """ListCostsResponse
+        r"""ListCostsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCostsResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ListCostsResponse.
+        r"""Gets the currency of this ListCostsResponse.
 
         货币。 USD：美元
 
@@ -69,7 +69,7 @@ class ListCostsResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ListCostsResponse.
+        r"""Sets the currency of this ListCostsResponse.
 
         货币。 USD：美元
 
@@ -80,7 +80,7 @@ class ListCostsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListCostsResponse.
+        r"""Gets the total_count of this ListCostsResponse.
 
         总条数。
 
@@ -91,7 +91,7 @@ class ListCostsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListCostsResponse.
+        r"""Sets the total_count of this ListCostsResponse.
 
         总条数。
 
@@ -102,7 +102,7 @@ class ListCostsResponse(SdkResponse):
 
     @property
     def cost_data(self):
-        """Gets the cost_data of this ListCostsResponse.
+        r"""Gets the cost_data of this ListCostsResponse.
 
         按天或按月的明细金额。
 
@@ -113,7 +113,7 @@ class ListCostsResponse(SdkResponse):
 
     @cost_data.setter
     def cost_data(self, cost_data):
-        """Sets the cost_data of this ListCostsResponse.
+        r"""Sets the cost_data of this ListCostsResponse.
 
         按天或按月的明细金额。
 

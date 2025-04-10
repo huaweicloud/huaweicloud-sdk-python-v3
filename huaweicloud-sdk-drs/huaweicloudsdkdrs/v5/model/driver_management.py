@@ -25,7 +25,7 @@ class DriverManagement:
     }
 
     def __init__(self, driver_name=None):
-        """DriverManagement
+        r"""DriverManagement
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DriverManagement:
 
     @property
     def driver_name(self):
-        """Gets the driver_name of this DriverManagement.
+        r"""Gets the driver_name of this DriverManagement.
 
         驱动名称。
 
@@ -54,7 +54,7 @@ class DriverManagement:
 
     @driver_name.setter
     def driver_name(self, driver_name):
-        """Sets the driver_name of this DriverManagement.
+        r"""Sets the driver_name of this DriverManagement.
 
         驱动名称。
 

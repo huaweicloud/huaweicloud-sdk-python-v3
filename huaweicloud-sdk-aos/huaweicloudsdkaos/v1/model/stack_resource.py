@@ -39,7 +39,7 @@ class StackResource:
     }
 
     def __init__(self, physical_resource_id=None, physical_resource_name=None, logical_resource_name=None, logical_resource_type=None, index_key=None, resource_status=None, status_message=None, resource_attributes=None):
-        """StackResource
+        r"""StackResource
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class StackResource:
 
     @property
     def physical_resource_id(self):
-        """Gets the physical_resource_id of this StackResource.
+        r"""Gets the physical_resource_id of this StackResource.
 
         资源的物理id，由该资源的provider、云服务或其他服务提供方在资源部署的时候生成  注：与physical相关的参数可以在模板以外的地方，作为该资源的一种标识
 
@@ -103,7 +103,7 @@ class StackResource:
 
     @physical_resource_id.setter
     def physical_resource_id(self, physical_resource_id):
-        """Sets the physical_resource_id of this StackResource.
+        r"""Sets the physical_resource_id of this StackResource.
 
         资源的物理id，由该资源的provider、云服务或其他服务提供方在资源部署的时候生成  注：与physical相关的参数可以在模板以外的地方，作为该资源的一种标识
 
@@ -114,7 +114,7 @@ class StackResource:
 
     @property
     def physical_resource_name(self):
-        """Gets the physical_resource_name of this StackResource.
+        r"""Gets the physical_resource_name of this StackResource.
 
         资源的物理名称，由该资源的provider、云服务或其他服务提供方在资源部署的时候定义  注：与physical相关的参数可以在模板以外的地方，作为该资源的一种标识
 
@@ -125,7 +125,7 @@ class StackResource:
 
     @physical_resource_name.setter
     def physical_resource_name(self, physical_resource_name):
-        """Sets the physical_resource_name of this StackResource.
+        r"""Sets the physical_resource_name of this StackResource.
 
         资源的物理名称，由该资源的provider、云服务或其他服务提供方在资源部署的时候定义  注：与physical相关的参数可以在模板以外的地方，作为该资源的一种标识
 
@@ -136,7 +136,7 @@ class StackResource:
 
     @property
     def logical_resource_name(self):
-        """Gets the logical_resource_name of this StackResource.
+        r"""Gets the logical_resource_name of this StackResource.
 
         资源的逻辑名称，由用户在模板中定义  注：与 logical 相关的参数仅仅在模板内部，作为该资源的一种标识  以HCL格式的模板为例，logical_resource_name 为 my_hello_world_vpc  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   name = \"test_vpc\" } ```  以json格式的模板为例，logical_resource_name 为 my_hello_world_vpc  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"name\": \"test_vpc\"       }     }   } } ```
 
@@ -147,7 +147,7 @@ class StackResource:
 
     @logical_resource_name.setter
     def logical_resource_name(self, logical_resource_name):
-        """Sets the logical_resource_name of this StackResource.
+        r"""Sets the logical_resource_name of this StackResource.
 
         资源的逻辑名称，由用户在模板中定义  注：与 logical 相关的参数仅仅在模板内部，作为该资源的一种标识  以HCL格式的模板为例，logical_resource_name 为 my_hello_world_vpc  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   name = \"test_vpc\" } ```  以json格式的模板为例，logical_resource_name 为 my_hello_world_vpc  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"name\": \"test_vpc\"       }     }   } } ```
 
@@ -158,7 +158,7 @@ class StackResource:
 
     @property
     def logical_resource_type(self):
-        """Gets the logical_resource_type of this StackResource.
+        r"""Gets the logical_resource_type of this StackResource.
 
         资源的类型  注：与 logical 相关的参数仅仅在模板内部，作为该资源的一种标识  以HCL格式的模板为例，logical_resource_type 为 huaweicloud_vpc  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   name = \"test_vpc\" } ```  以json格式的模板为例，logical_resource_type 为 huaweicloud_vpc  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"name\": \"test_vpc\"       }     }   } } ```
 
@@ -169,7 +169,7 @@ class StackResource:
 
     @logical_resource_type.setter
     def logical_resource_type(self, logical_resource_type):
-        """Sets the logical_resource_type of this StackResource.
+        r"""Sets the logical_resource_type of this StackResource.
 
         资源的类型  注：与 logical 相关的参数仅仅在模板内部，作为该资源的一种标识  以HCL格式的模板为例，logical_resource_type 为 huaweicloud_vpc  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   name = \"test_vpc\" } ```  以json格式的模板为例，logical_resource_type 为 huaweicloud_vpc  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"name\": \"test_vpc\"       }     }   } } ```
 
@@ -180,7 +180,7 @@ class StackResource:
 
     @property
     def index_key(self):
-        """Gets the index_key of this StackResource.
+        r"""Gets the index_key of this StackResource.
 
         资源的索引，如果用户在模板中使用了count或for_each则会返回index_key。如果index_key出现，则logical_resource_name + index_key可以作为该资源的一种标识  如果用户在模板中使用count，则index_key为从0开始的数字  以HCL格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[0]`和`huaweicloud_vpc.my_hello_world_vpc[1]`标识两个资源  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   count = 2   name = \"test_vpc\" } ```  以json格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[0]`和`huaweicloud_vpc.my_hello_world_vpc[1]`标识两个资源  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"name\": \"test_vpc\",         \"count\": 2       }     }   } } ```  如果用户在模板中使用for_each，则index_key为用户自定义的字符串  以HCL格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[\"vpc1\"]`和`huaweicloud_vpc.my_hello_world_vpc[\"vpc2\"]`标识两个资源  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   for_each = {     \"vpc1\" = \"test_vpc\"     \"vpc2\" = \"test_vpc\"   }   name = each.value } ```  以json格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[\"vpc1\"]`和`huaweicloud_vpc.my_hello_world_vpc[\"vpc2\"]`标识两个资源  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"for_each\": {           \"vpc1\": \"test_vpc\",           \"vpc2\": \"test_vpc\"         }         \"name\": \"${each.value}\"       }     }   } } ```
 
@@ -191,7 +191,7 @@ class StackResource:
 
     @index_key.setter
     def index_key(self, index_key):
-        """Sets the index_key of this StackResource.
+        r"""Sets the index_key of this StackResource.
 
         资源的索引，如果用户在模板中使用了count或for_each则会返回index_key。如果index_key出现，则logical_resource_name + index_key可以作为该资源的一种标识  如果用户在模板中使用count，则index_key为从0开始的数字  以HCL格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[0]`和`huaweicloud_vpc.my_hello_world_vpc[1]`标识两个资源  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   count = 2   name = \"test_vpc\" } ```  以json格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[0]`和`huaweicloud_vpc.my_hello_world_vpc[1]`标识两个资源  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"name\": \"test_vpc\",         \"count\": 2       }     }   } } ```  如果用户在模板中使用for_each，则index_key为用户自定义的字符串  以HCL格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[\"vpc1\"]`和`huaweicloud_vpc.my_hello_world_vpc[\"vpc2\"]`标识两个资源  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   for_each = {     \"vpc1\" = \"test_vpc\"     \"vpc2\" = \"test_vpc\"   }   name = each.value } ```  以json格式的模板为例，用户在模板中可以通过`huaweicloud_vpc.my_hello_world_vpc[\"vpc1\"]`和`huaweicloud_vpc.my_hello_world_vpc[\"vpc2\"]`标识两个资源  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"for_each\": {           \"vpc1\": \"test_vpc\",           \"vpc2\": \"test_vpc\"         }         \"name\": \"${each.value}\"       }     }   } } ```
 
@@ -202,7 +202,7 @@ class StackResource:
 
     @property
     def resource_status(self):
-        """Gets the resource_status of this StackResource.
+        r"""Gets the resource_status of this StackResource.
 
         资源的状态 * `CREATION_IN_PROGRESS` - 正在生成 * `CREATION_FAILED`      - 生成失败 * `CREATION_COMPLETE`    - 生成完成 * `DELETION_IN_PROGRESS` - 正在删除 * `DELETION_FAILED`      - 删除失败 * `DELETION_COMPLETE`    - 已经删除 * `UPDATE_IN_PROGRESS`   - 正在更新。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * `UPDATE_FAILED`        - 更新失败。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * `UPDATE_COMPLETE`      - 更新完成。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION
 
@@ -213,7 +213,7 @@ class StackResource:
 
     @resource_status.setter
     def resource_status(self, resource_status):
-        """Sets the resource_status of this StackResource.
+        r"""Sets the resource_status of this StackResource.
 
         资源的状态 * `CREATION_IN_PROGRESS` - 正在生成 * `CREATION_FAILED`      - 生成失败 * `CREATION_COMPLETE`    - 生成完成 * `DELETION_IN_PROGRESS` - 正在删除 * `DELETION_FAILED`      - 删除失败 * `DELETION_COMPLETE`    - 已经删除 * `UPDATE_IN_PROGRESS`   - 正在更新。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * `UPDATE_FAILED`        - 更新失败。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION * `UPDATE_COMPLETE`      - 更新完成。此处的更新特指非替换式更新，如果是替换式更新，则使用CREATION后DELETION
 
@@ -224,7 +224,7 @@ class StackResource:
 
     @property
     def status_message(self):
-        """Gets the status_message of this StackResource.
+        r"""Gets the status_message of this StackResource.
 
         当该资源状态为任意失败状态（即以 `FAILED` 结尾时），将会展示简要的错误信息总结以供debug
 
@@ -235,7 +235,7 @@ class StackResource:
 
     @status_message.setter
     def status_message(self, status_message):
-        """Sets the status_message of this StackResource.
+        r"""Sets the status_message of this StackResource.
 
         当该资源状态为任意失败状态（即以 `FAILED` 结尾时），将会展示简要的错误信息总结以供debug
 
@@ -246,7 +246,7 @@ class StackResource:
 
     @property
     def resource_attributes(self):
-        """Gets the resource_attributes of this StackResource.
+        r"""Gets the resource_attributes of this StackResource.
 
         资源属性列表
 
@@ -257,7 +257,7 @@ class StackResource:
 
     @resource_attributes.setter
     def resource_attributes(self, resource_attributes):
-        """Sets the resource_attributes of this StackResource.
+        r"""Sets the resource_attributes of this StackResource.
 
         资源属性列表
 

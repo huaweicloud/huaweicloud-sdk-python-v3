@@ -24,7 +24,7 @@ class UpdateRocketMqConfigsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateRocketMqConfigsResponse
+        r"""UpdateRocketMqConfigsResponse
 
         The model defined in huaweicloud sdk
 

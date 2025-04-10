@@ -45,7 +45,7 @@ class ListUsersOfStreamRequest:
     }
 
     def __init__(self, play_domain=None, app=None, stream=None, isp=None, country=None, region=None, protocol=None, interval=None, start_time=None, end_time=None, service_type=None):
-        """ListUsersOfStreamRequest
+        r"""ListUsersOfStreamRequest
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class ListUsersOfStreamRequest:
 
     @property
     def play_domain(self):
-        """Gets the play_domain of this ListUsersOfStreamRequest.
+        r"""Gets the play_domain of this ListUsersOfStreamRequest.
 
         播放域名。 
 
@@ -123,7 +123,7 @@ class ListUsersOfStreamRequest:
 
     @play_domain.setter
     def play_domain(self, play_domain):
-        """Sets the play_domain of this ListUsersOfStreamRequest.
+        r"""Sets the play_domain of this ListUsersOfStreamRequest.
 
         播放域名。 
 
@@ -134,7 +134,7 @@ class ListUsersOfStreamRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListUsersOfStreamRequest.
+        r"""Gets the app of this ListUsersOfStreamRequest.
 
         app名。 
 
@@ -145,7 +145,7 @@ class ListUsersOfStreamRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListUsersOfStreamRequest.
+        r"""Sets the app of this ListUsersOfStreamRequest.
 
         app名。 
 
@@ -156,7 +156,7 @@ class ListUsersOfStreamRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this ListUsersOfStreamRequest.
+        r"""Gets the stream of this ListUsersOfStreamRequest.
 
         流名。 
 
@@ -167,7 +167,7 @@ class ListUsersOfStreamRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ListUsersOfStreamRequest.
+        r"""Sets the stream of this ListUsersOfStreamRequest.
 
         流名。 
 
@@ -178,7 +178,7 @@ class ListUsersOfStreamRequest:
 
     @property
     def isp(self):
-        """Gets the isp of this ListUsersOfStreamRequest.
+        r"""Gets the isp of this ListUsersOfStreamRequest.
 
         运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
@@ -189,7 +189,7 @@ class ListUsersOfStreamRequest:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ListUsersOfStreamRequest.
+        r"""Sets the isp of this ListUsersOfStreamRequest.
 
         运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
@@ -200,7 +200,7 @@ class ListUsersOfStreamRequest:
 
     @property
     def country(self):
-        """Gets the country of this ListUsersOfStreamRequest.
+        r"""Gets the country of this ListUsersOfStreamRequest.
 
         国家列表。具体取值请参考[国家名称缩写](https://support.huaweicloud.com/api-live/vod_08_0172.html)，不填写查询所有国家。 
 
@@ -211,7 +211,7 @@ class ListUsersOfStreamRequest:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this ListUsersOfStreamRequest.
+        r"""Sets the country of this ListUsersOfStreamRequest.
 
         国家列表。具体取值请参考[国家名称缩写](https://support.huaweicloud.com/api-live/vod_08_0172.html)，不填写查询所有国家。 
 
@@ -222,7 +222,7 @@ class ListUsersOfStreamRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListUsersOfStreamRequest.
+        r"""Gets the region of this ListUsersOfStreamRequest.
 
         区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
@@ -233,7 +233,7 @@ class ListUsersOfStreamRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListUsersOfStreamRequest.
+        r"""Sets the region of this ListUsersOfStreamRequest.
 
         区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
@@ -244,7 +244,7 @@ class ListUsersOfStreamRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListUsersOfStreamRequest.
+        r"""Gets the protocol of this ListUsersOfStreamRequest.
 
         请求协议
 
@@ -255,7 +255,7 @@ class ListUsersOfStreamRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListUsersOfStreamRequest.
+        r"""Sets the protocol of this ListUsersOfStreamRequest.
 
         请求协议
 
@@ -266,7 +266,7 @@ class ListUsersOfStreamRequest:
 
     @property
     def interval(self):
-        """Gets the interval of this ListUsersOfStreamRequest.
+        r"""Gets the interval of this ListUsersOfStreamRequest.
 
         查询数据的时间粒度，支持60（默认值）, 300秒。不传值时，使用默认值60秒。 
 
@@ -277,7 +277,7 @@ class ListUsersOfStreamRequest:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ListUsersOfStreamRequest.
+        r"""Sets the interval of this ListUsersOfStreamRequest.
 
         查询数据的时间粒度，支持60（默认值）, 300秒。不传值时，使用默认值60秒。 
 
@@ -288,7 +288,7 @@ class ListUsersOfStreamRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListUsersOfStreamRequest.
+        r"""Gets the start_time of this ListUsersOfStreamRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
 
@@ -299,7 +299,7 @@ class ListUsersOfStreamRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListUsersOfStreamRequest.
+        r"""Sets the start_time of this ListUsersOfStreamRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
 
@@ -310,7 +310,7 @@ class ListUsersOfStreamRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListUsersOfStreamRequest.
+        r"""Gets the end_time of this ListUsersOfStreamRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
@@ -321,7 +321,7 @@ class ListUsersOfStreamRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListUsersOfStreamRequest.
+        r"""Sets the end_time of this ListUsersOfStreamRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
@@ -332,7 +332,7 @@ class ListUsersOfStreamRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ListUsersOfStreamRequest.
+        r"""Gets the service_type of this ListUsersOfStreamRequest.
 
         服务类型： - Live：直播 - LLL：超低时延直播 - ALL: 默认所有直播 
 
@@ -343,7 +343,7 @@ class ListUsersOfStreamRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ListUsersOfStreamRequest.
+        r"""Sets the service_type of this ListUsersOfStreamRequest.
 
         服务类型： - Live：直播 - LLL：超低时延直播 - ALL: 默认所有直播 
 

@@ -29,7 +29,7 @@ class UpgradeTaskSpec:
     }
 
     def __init__(self, version=None, target_version=None, items=None):
-        """UpgradeTaskSpec
+        r"""UpgradeTaskSpec
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpgradeTaskSpec:
 
     @property
     def version(self):
-        """Gets the version of this UpgradeTaskSpec.
+        r"""Gets the version of this UpgradeTaskSpec.
 
         升级前集群版本
 
@@ -68,7 +68,7 @@ class UpgradeTaskSpec:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpgradeTaskSpec.
+        r"""Sets the version of this UpgradeTaskSpec.
 
         升级前集群版本
 
@@ -79,7 +79,7 @@ class UpgradeTaskSpec:
 
     @property
     def target_version(self):
-        """Gets the target_version of this UpgradeTaskSpec.
+        r"""Gets the target_version of this UpgradeTaskSpec.
 
         升级的目标集群版本
 
@@ -90,7 +90,7 @@ class UpgradeTaskSpec:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this UpgradeTaskSpec.
+        r"""Sets the target_version of this UpgradeTaskSpec.
 
         升级的目标集群版本
 
@@ -101,7 +101,7 @@ class UpgradeTaskSpec:
 
     @property
     def items(self):
-        """Gets the items of this UpgradeTaskSpec.
+        r"""Gets the items of this UpgradeTaskSpec.
 
         升级任务附属信息
 
@@ -112,7 +112,7 @@ class UpgradeTaskSpec:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this UpgradeTaskSpec.
+        r"""Sets the items of this UpgradeTaskSpec.
 
         升级任务附属信息
 

@@ -26,7 +26,7 @@ class ListPermanentAccessKeysResponse(SdkResponse):
     }
 
     def __init__(self, credentials=None):
-        """ListPermanentAccessKeysResponse
+        r"""ListPermanentAccessKeysResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPermanentAccessKeysResponse(SdkResponse):
 
     @property
     def credentials(self):
-        """Gets the credentials of this ListPermanentAccessKeysResponse.
+        r"""Gets the credentials of this ListPermanentAccessKeysResponse.
 
         认证结果信息列表。
 
@@ -55,7 +55,7 @@ class ListPermanentAccessKeysResponse(SdkResponse):
 
     @credentials.setter
     def credentials(self, credentials):
-        """Sets the credentials of this ListPermanentAccessKeysResponse.
+        r"""Sets the credentials of this ListPermanentAccessKeysResponse.
 
         认证结果信息列表。
 

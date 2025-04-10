@@ -26,7 +26,7 @@ class CinderListVolumeTransfersResponse(SdkResponse):
     }
 
     def __init__(self, transfers=None):
-        """CinderListVolumeTransfersResponse
+        r"""CinderListVolumeTransfersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CinderListVolumeTransfersResponse(SdkResponse):
 
     @property
     def transfers(self):
-        """Gets the transfers of this CinderListVolumeTransfersResponse.
+        r"""Gets the transfers of this CinderListVolumeTransfersResponse.
 
         云硬盘过户记录列表概要，请参见•[transfers参数说明](https://support.huaweicloud.com/api-evs/evs_04_2110.html#evs_04_2110__li6113282511345)。
 
@@ -55,7 +55,7 @@ class CinderListVolumeTransfersResponse(SdkResponse):
 
     @transfers.setter
     def transfers(self, transfers):
-        """Sets the transfers of this CinderListVolumeTransfersResponse.
+        r"""Sets the transfers of this CinderListVolumeTransfersResponse.
 
         云硬盘过户记录列表概要，请参见•[transfers参数说明](https://support.huaweicloud.com/api-evs/evs_04_2110.html#evs_04_2110__li6113282511345)。
 

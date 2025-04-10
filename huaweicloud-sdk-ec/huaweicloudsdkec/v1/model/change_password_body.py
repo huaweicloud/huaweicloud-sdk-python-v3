@@ -26,7 +26,7 @@ class ChangePasswordBody:
     }
 
     def __init__(self, password=None):
-        """ChangePasswordBody
+        r"""ChangePasswordBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangePasswordBody:
 
     @property
     def password(self):
-        """Gets the password of this ChangePasswordBody.
+        r"""Gets the password of this ChangePasswordBody.
 
         :return: The password of this ChangePasswordBody.
         :rtype: str
@@ -52,7 +52,7 @@ class ChangePasswordBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this ChangePasswordBody.
+        r"""Sets the password of this ChangePasswordBody.
 
         :param password: The password of this ChangePasswordBody.
         :type password: str

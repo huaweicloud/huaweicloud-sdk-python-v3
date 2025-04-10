@@ -25,7 +25,7 @@ class SwitchLogReplayRequestBody:
     }
 
     def __init__(self, pause_log_replay=None):
-        """SwitchLogReplayRequestBody
+        r"""SwitchLogReplayRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SwitchLogReplayRequestBody:
 
     @property
     def pause_log_replay(self):
-        """Gets the pause_log_replay of this SwitchLogReplayRequestBody.
+        r"""Gets the pause_log_replay of this SwitchLogReplayRequestBody.
 
         “true”表示中止回放，“false”表示恢复回放，其他情况表示不做操作
 
@@ -53,7 +53,7 @@ class SwitchLogReplayRequestBody:
 
     @pause_log_replay.setter
     def pause_log_replay(self, pause_log_replay):
-        """Sets the pause_log_replay of this SwitchLogReplayRequestBody.
+        r"""Sets the pause_log_replay of this SwitchLogReplayRequestBody.
 
         “true”表示中止回放，“false”表示恢复回放，其他情况表示不做操作
 

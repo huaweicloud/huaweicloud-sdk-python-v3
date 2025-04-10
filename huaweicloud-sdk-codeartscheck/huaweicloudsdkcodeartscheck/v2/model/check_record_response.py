@@ -28,7 +28,7 @@ class CheckRecordResponse(SdkResponse):
     }
 
     def __init__(self, data=None, total=None):
-        """CheckRecordResponse
+        r"""CheckRecordResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CheckRecordResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CheckRecordResponse.
+        r"""Gets the data of this CheckRecordResponse.
 
         历史记录数据
 
@@ -62,7 +62,7 @@ class CheckRecordResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CheckRecordResponse.
+        r"""Sets the data of this CheckRecordResponse.
 
         历史记录数据
 
@@ -73,7 +73,7 @@ class CheckRecordResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this CheckRecordResponse.
+        r"""Gets the total of this CheckRecordResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class CheckRecordResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this CheckRecordResponse.
+        r"""Sets the total of this CheckRecordResponse.
 
         总数
 

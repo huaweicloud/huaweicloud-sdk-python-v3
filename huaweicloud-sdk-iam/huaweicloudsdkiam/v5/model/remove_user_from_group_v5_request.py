@@ -27,7 +27,7 @@ class RemoveUserFromGroupV5Request:
     }
 
     def __init__(self, group_id=None, body=None):
-        """RemoveUserFromGroupV5Request
+        r"""RemoveUserFromGroupV5Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RemoveUserFromGroupV5Request:
 
     @property
     def group_id(self):
-        """Gets the group_id of this RemoveUserFromGroupV5Request.
+        r"""Gets the group_id of this RemoveUserFromGroupV5Request.
 
         用户组ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -60,7 +60,7 @@ class RemoveUserFromGroupV5Request:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this RemoveUserFromGroupV5Request.
+        r"""Sets the group_id of this RemoveUserFromGroupV5Request.
 
         用户组ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -71,7 +71,7 @@ class RemoveUserFromGroupV5Request:
 
     @property
     def body(self):
-        """Gets the body of this RemoveUserFromGroupV5Request.
+        r"""Gets the body of this RemoveUserFromGroupV5Request.
 
         :return: The body of this RemoveUserFromGroupV5Request.
         :rtype: :class:`huaweicloudsdkiam.v5.RemoveUserFromGroupReqBody`
@@ -80,7 +80,7 @@ class RemoveUserFromGroupV5Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RemoveUserFromGroupV5Request.
+        r"""Sets the body of this RemoveUserFromGroupV5Request.
 
         :param body: The body of this RemoveUserFromGroupV5Request.
         :type body: :class:`huaweicloudsdkiam.v5.RemoveUserFromGroupReqBody`

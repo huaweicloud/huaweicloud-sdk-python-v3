@@ -26,7 +26,7 @@ class DeleteTrafficControllerResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteTrafficControllerResponse
+        r"""DeleteTrafficControllerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteTrafficControllerResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteTrafficControllerResponse.
+        r"""Gets the body of this DeleteTrafficControllerResponse.
 
         :return: The body of this DeleteTrafficControllerResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteTrafficControllerResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteTrafficControllerResponse.
+        r"""Sets the body of this DeleteTrafficControllerResponse.
 
         :param body: The body of this DeleteTrafficControllerResponse.
         :type body: str

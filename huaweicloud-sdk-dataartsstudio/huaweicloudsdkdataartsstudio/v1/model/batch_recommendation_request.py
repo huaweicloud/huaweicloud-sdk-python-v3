@@ -29,7 +29,7 @@ class BatchRecommendationRequest:
     }
 
     def __init__(self, recommendations=None, guids=None, add_type=None):
-        """BatchRecommendationRequest
+        r"""BatchRecommendationRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchRecommendationRequest:
 
     @property
     def recommendations(self):
-        """Gets the recommendations of this BatchRecommendationRequest.
+        r"""Gets the recommendations of this BatchRecommendationRequest.
 
         标签信息。
 
@@ -68,7 +68,7 @@ class BatchRecommendationRequest:
 
     @recommendations.setter
     def recommendations(self, recommendations):
-        """Sets the recommendations of this BatchRecommendationRequest.
+        r"""Sets the recommendations of this BatchRecommendationRequest.
 
         标签信息。
 
@@ -79,7 +79,7 @@ class BatchRecommendationRequest:
 
     @property
     def guids(self):
-        """Gets the guids of this BatchRecommendationRequest.
+        r"""Gets the guids of this BatchRecommendationRequest.
 
         资产guid。
 
@@ -90,7 +90,7 @@ class BatchRecommendationRequest:
 
     @guids.setter
     def guids(self, guids):
-        """Sets the guids of this BatchRecommendationRequest.
+        r"""Sets the guids of this BatchRecommendationRequest.
 
         资产guid。
 
@@ -101,7 +101,7 @@ class BatchRecommendationRequest:
 
     @property
     def add_type(self):
-        """Gets the add_type of this BatchRecommendationRequest.
+        r"""Gets the add_type of this BatchRecommendationRequest.
 
         添加资产类型。cover：覆盖  追加：append。默认追加。
 
@@ -112,7 +112,7 @@ class BatchRecommendationRequest:
 
     @add_type.setter
     def add_type(self, add_type):
-        """Sets the add_type of this BatchRecommendationRequest.
+        r"""Sets the add_type of this BatchRecommendationRequest.
 
         添加资产类型。cover：覆盖  追加：append。默认追加。
 

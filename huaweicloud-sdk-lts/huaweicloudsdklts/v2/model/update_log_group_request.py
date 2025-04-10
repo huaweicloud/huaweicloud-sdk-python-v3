@@ -27,7 +27,7 @@ class UpdateLogGroupRequest:
     }
 
     def __init__(self, log_group_id=None, body=None):
-        """UpdateLogGroupRequest
+        r"""UpdateLogGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateLogGroupRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this UpdateLogGroupRequest.
+        r"""Gets the log_group_id of this UpdateLogGroupRequest.
 
         日志组ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）
 
@@ -60,7 +60,7 @@ class UpdateLogGroupRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this UpdateLogGroupRequest.
+        r"""Sets the log_group_id of this UpdateLogGroupRequest.
 
         日志组ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）
 
@@ -71,7 +71,7 @@ class UpdateLogGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLogGroupRequest.
+        r"""Gets the body of this UpdateLogGroupRequest.
 
         :return: The body of this UpdateLogGroupRequest.
         :rtype: :class:`huaweicloudsdklts.v2.UpdateLogGroupParams`
@@ -80,7 +80,7 @@ class UpdateLogGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLogGroupRequest.
+        r"""Sets the body of this UpdateLogGroupRequest.
 
         :param body: The body of this UpdateLogGroupRequest.
         :type body: :class:`huaweicloudsdklts.v2.UpdateLogGroupParams`

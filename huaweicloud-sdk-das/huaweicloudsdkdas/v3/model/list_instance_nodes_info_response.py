@@ -30,7 +30,7 @@ class ListInstanceNodesInfoResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, instance_name=None, instance_nodes=None):
-        """ListInstanceNodesInfoResponse
+        r"""ListInstanceNodesInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListInstanceNodesInfoResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceNodesInfoResponse.
+        r"""Gets the instance_id of this ListInstanceNodesInfoResponse.
 
         实例ID
 
@@ -69,7 +69,7 @@ class ListInstanceNodesInfoResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceNodesInfoResponse.
+        r"""Sets the instance_id of this ListInstanceNodesInfoResponse.
 
         实例ID
 
@@ -80,7 +80,7 @@ class ListInstanceNodesInfoResponse(SdkResponse):
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ListInstanceNodesInfoResponse.
+        r"""Gets the instance_name of this ListInstanceNodesInfoResponse.
 
         实例名称
 
@@ -91,7 +91,7 @@ class ListInstanceNodesInfoResponse(SdkResponse):
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ListInstanceNodesInfoResponse.
+        r"""Sets the instance_name of this ListInstanceNodesInfoResponse.
 
         实例名称
 
@@ -102,7 +102,7 @@ class ListInstanceNodesInfoResponse(SdkResponse):
 
     @property
     def instance_nodes(self):
-        """Gets the instance_nodes of this ListInstanceNodesInfoResponse.
+        r"""Gets the instance_nodes of this ListInstanceNodesInfoResponse.
 
         实例节点列表
 
@@ -113,7 +113,7 @@ class ListInstanceNodesInfoResponse(SdkResponse):
 
     @instance_nodes.setter
     def instance_nodes(self, instance_nodes):
-        """Sets the instance_nodes of this ListInstanceNodesInfoResponse.
+        r"""Sets the instance_nodes of this ListInstanceNodesInfoResponse.
 
         实例节点列表
 

@@ -47,7 +47,7 @@ class VersionComponent:
     }
 
     def __init__(self, other=None, name=None, version=None, depend_on=None, description=None, available_cluster_types=None, external_datasources=None, resource_requirement=None, valid_roles=None, visible=None, children_components=None, multi_az_support_status=None):
-        """VersionComponent
+        r"""VersionComponent
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class VersionComponent:
 
     @property
     def other(self):
-        """Gets the other of this VersionComponent.
+        r"""Gets the other of this VersionComponent.
 
         其他
 
@@ -131,7 +131,7 @@ class VersionComponent:
 
     @other.setter
     def other(self, other):
-        """Sets the other of this VersionComponent.
+        r"""Sets the other of this VersionComponent.
 
         其他
 
@@ -142,7 +142,7 @@ class VersionComponent:
 
     @property
     def name(self):
-        """Gets the name of this VersionComponent.
+        r"""Gets the name of this VersionComponent.
 
         组件名称
 
@@ -153,7 +153,7 @@ class VersionComponent:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VersionComponent.
+        r"""Sets the name of this VersionComponent.
 
         组件名称
 
@@ -164,7 +164,7 @@ class VersionComponent:
 
     @property
     def version(self):
-        """Gets the version of this VersionComponent.
+        r"""Gets the version of this VersionComponent.
 
         支持版本
 
@@ -175,7 +175,7 @@ class VersionComponent:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this VersionComponent.
+        r"""Sets the version of this VersionComponent.
 
         支持版本
 
@@ -186,7 +186,7 @@ class VersionComponent:
 
     @property
     def depend_on(self):
-        """Gets the depend_on of this VersionComponent.
+        r"""Gets the depend_on of this VersionComponent.
 
         组件依赖项
 
@@ -197,7 +197,7 @@ class VersionComponent:
 
     @depend_on.setter
     def depend_on(self, depend_on):
-        """Sets the depend_on of this VersionComponent.
+        r"""Sets the depend_on of this VersionComponent.
 
         组件依赖项
 
@@ -208,7 +208,7 @@ class VersionComponent:
 
     @property
     def description(self):
-        """Gets the description of this VersionComponent.
+        r"""Gets the description of this VersionComponent.
 
         组件描述
 
@@ -219,7 +219,7 @@ class VersionComponent:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VersionComponent.
+        r"""Sets the description of this VersionComponent.
 
         组件描述
 
@@ -230,7 +230,7 @@ class VersionComponent:
 
     @property
     def available_cluster_types(self):
-        """Gets the available_cluster_types of this VersionComponent.
+        r"""Gets the available_cluster_types of this VersionComponent.
 
         支持该组件的集群类型
 
@@ -241,7 +241,7 @@ class VersionComponent:
 
     @available_cluster_types.setter
     def available_cluster_types(self, available_cluster_types):
-        """Sets the available_cluster_types of this VersionComponent.
+        r"""Sets the available_cluster_types of this VersionComponent.
 
         支持该组件的集群类型
 
@@ -252,7 +252,7 @@ class VersionComponent:
 
     @property
     def external_datasources(self):
-        """Gets the external_datasources of this VersionComponent.
+        r"""Gets the external_datasources of this VersionComponent.
 
         外部数据源
 
@@ -263,7 +263,7 @@ class VersionComponent:
 
     @external_datasources.setter
     def external_datasources(self, external_datasources):
-        """Sets the external_datasources of this VersionComponent.
+        r"""Sets the external_datasources of this VersionComponent.
 
         外部数据源
 
@@ -274,7 +274,7 @@ class VersionComponent:
 
     @property
     def resource_requirement(self):
-        """Gets the resource_requirement of this VersionComponent.
+        r"""Gets the resource_requirement of this VersionComponent.
 
         所需的ip等资源说明
 
@@ -285,7 +285,7 @@ class VersionComponent:
 
     @resource_requirement.setter
     def resource_requirement(self, resource_requirement):
-        """Sets the resource_requirement of this VersionComponent.
+        r"""Sets the resource_requirement of this VersionComponent.
 
         所需的ip等资源说明
 
@@ -296,7 +296,7 @@ class VersionComponent:
 
     @property
     def valid_roles(self):
-        """Gets the valid_roles of this VersionComponent.
+        r"""Gets the valid_roles of this VersionComponent.
 
         有效角色
 
@@ -307,7 +307,7 @@ class VersionComponent:
 
     @valid_roles.setter
     def valid_roles(self, valid_roles):
-        """Sets the valid_roles of this VersionComponent.
+        r"""Sets the valid_roles of this VersionComponent.
 
         有效角色
 
@@ -318,7 +318,7 @@ class VersionComponent:
 
     @property
     def visible(self):
-        """Gets the visible of this VersionComponent.
+        r"""Gets the visible of this VersionComponent.
 
         是否可见
 
@@ -329,7 +329,7 @@ class VersionComponent:
 
     @visible.setter
     def visible(self, visible):
-        """Sets the visible of this VersionComponent.
+        r"""Sets the visible of this VersionComponent.
 
         是否可见
 
@@ -340,7 +340,7 @@ class VersionComponent:
 
     @property
     def children_components(self):
-        """Gets the children_components of this VersionComponent.
+        r"""Gets the children_components of this VersionComponent.
 
         子组件
 
@@ -351,7 +351,7 @@ class VersionComponent:
 
     @children_components.setter
     def children_components(self, children_components):
-        """Sets the children_components of this VersionComponent.
+        r"""Sets the children_components of this VersionComponent.
 
         子组件
 
@@ -362,7 +362,7 @@ class VersionComponent:
 
     @property
     def multi_az_support_status(self):
-        """Gets the multi_az_support_status of this VersionComponent.
+        r"""Gets the multi_az_support_status of this VersionComponent.
 
         多az支持状态
 
@@ -373,7 +373,7 @@ class VersionComponent:
 
     @multi_az_support_status.setter
     def multi_az_support_status(self, multi_az_support_status):
-        """Sets the multi_az_support_status of this VersionComponent.
+        r"""Sets the multi_az_support_status of this VersionComponent.
 
         多az支持状态
 

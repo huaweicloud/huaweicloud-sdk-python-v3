@@ -24,7 +24,7 @@ class CreateVaultTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateVaultTagsResponse
+        r"""CreateVaultTagsResponse
 
         The model defined in huaweicloud sdk
 

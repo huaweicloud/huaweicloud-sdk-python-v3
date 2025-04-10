@@ -27,7 +27,7 @@ class ListLogItemsRequest:
     }
 
     def __init__(self, type=None, body=None):
-        """ListLogItemsRequest
+        r"""ListLogItemsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListLogItemsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListLogItemsRequest.
+        r"""Gets the type of this ListLogItemsRequest.
 
         日志接口调用方式,当值为\"querylogs\"时接口功能为查询日志内容。
 
@@ -60,7 +60,7 @@ class ListLogItemsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListLogItemsRequest.
+        r"""Sets the type of this ListLogItemsRequest.
 
         日志接口调用方式,当值为\"querylogs\"时接口功能为查询日志内容。
 
@@ -71,7 +71,7 @@ class ListLogItemsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListLogItemsRequest.
+        r"""Gets the body of this ListLogItemsRequest.
 
         :return: The body of this ListLogItemsRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.QueryBodyParam`
@@ -80,7 +80,7 @@ class ListLogItemsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListLogItemsRequest.
+        r"""Sets the body of this ListLogItemsRequest.
 
         :param body: The body of this ListLogItemsRequest.
         :type body: :class:`huaweicloudsdkaom.v2.QueryBodyParam`

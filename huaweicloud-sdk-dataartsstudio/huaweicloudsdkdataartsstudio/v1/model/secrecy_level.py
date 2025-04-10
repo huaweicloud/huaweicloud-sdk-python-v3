@@ -41,7 +41,7 @@ class SecrecyLevel:
     }
 
     def __init__(self, secrecy_level_id=None, secrecy_level_name=None, secrecy_level_number=None, description=None, created_by=None, created_at=None, updated_by=None, updated_at=None, instance_id=None):
-        """SecrecyLevel
+        r"""SecrecyLevel
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class SecrecyLevel:
 
     @property
     def secrecy_level_id(self):
-        """Gets the secrecy_level_id of this SecrecyLevel.
+        r"""Gets the secrecy_level_id of this SecrecyLevel.
 
         密级id
 
@@ -110,7 +110,7 @@ class SecrecyLevel:
 
     @secrecy_level_id.setter
     def secrecy_level_id(self, secrecy_level_id):
-        """Sets the secrecy_level_id of this SecrecyLevel.
+        r"""Sets the secrecy_level_id of this SecrecyLevel.
 
         密级id
 
@@ -121,7 +121,7 @@ class SecrecyLevel:
 
     @property
     def secrecy_level_name(self):
-        """Gets the secrecy_level_name of this SecrecyLevel.
+        r"""Gets the secrecy_level_name of this SecrecyLevel.
 
         密级名称
 
@@ -132,7 +132,7 @@ class SecrecyLevel:
 
     @secrecy_level_name.setter
     def secrecy_level_name(self, secrecy_level_name):
-        """Sets the secrecy_level_name of this SecrecyLevel.
+        r"""Sets the secrecy_level_name of this SecrecyLevel.
 
         密级名称
 
@@ -143,7 +143,7 @@ class SecrecyLevel:
 
     @property
     def secrecy_level_number(self):
-        """Gets the secrecy_level_number of this SecrecyLevel.
+        r"""Gets the secrecy_level_number of this SecrecyLevel.
 
         密级等级
 
@@ -154,7 +154,7 @@ class SecrecyLevel:
 
     @secrecy_level_number.setter
     def secrecy_level_number(self, secrecy_level_number):
-        """Sets the secrecy_level_number of this SecrecyLevel.
+        r"""Sets the secrecy_level_number of this SecrecyLevel.
 
         密级等级
 
@@ -165,7 +165,7 @@ class SecrecyLevel:
 
     @property
     def description(self):
-        """Gets the description of this SecrecyLevel.
+        r"""Gets the description of this SecrecyLevel.
 
         密级描述
 
@@ -176,7 +176,7 @@ class SecrecyLevel:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SecrecyLevel.
+        r"""Sets the description of this SecrecyLevel.
 
         密级描述
 
@@ -187,7 +187,7 @@ class SecrecyLevel:
 
     @property
     def created_by(self):
-        """Gets the created_by of this SecrecyLevel.
+        r"""Gets the created_by of this SecrecyLevel.
 
         创建者
 
@@ -198,7 +198,7 @@ class SecrecyLevel:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this SecrecyLevel.
+        r"""Sets the created_by of this SecrecyLevel.
 
         创建者
 
@@ -209,7 +209,7 @@ class SecrecyLevel:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SecrecyLevel.
+        r"""Gets the created_at of this SecrecyLevel.
 
         创建时间
 
@@ -220,7 +220,7 @@ class SecrecyLevel:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SecrecyLevel.
+        r"""Sets the created_at of this SecrecyLevel.
 
         创建时间
 
@@ -231,7 +231,7 @@ class SecrecyLevel:
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this SecrecyLevel.
+        r"""Gets the updated_by of this SecrecyLevel.
 
         更新者
 
@@ -242,7 +242,7 @@ class SecrecyLevel:
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this SecrecyLevel.
+        r"""Sets the updated_by of this SecrecyLevel.
 
         更新者
 
@@ -253,7 +253,7 @@ class SecrecyLevel:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SecrecyLevel.
+        r"""Gets the updated_at of this SecrecyLevel.
 
         更新时间
 
@@ -264,7 +264,7 @@ class SecrecyLevel:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SecrecyLevel.
+        r"""Sets the updated_at of this SecrecyLevel.
 
         更新时间
 
@@ -275,7 +275,7 @@ class SecrecyLevel:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SecrecyLevel.
+        r"""Gets the instance_id of this SecrecyLevel.
 
         DataArts实例ID
 
@@ -286,7 +286,7 @@ class SecrecyLevel:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SecrecyLevel.
+        r"""Sets the instance_id of this SecrecyLevel.
 
         DataArts实例ID
 

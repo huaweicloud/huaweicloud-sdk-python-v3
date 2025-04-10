@@ -31,7 +31,7 @@ class MeshSpec:
     }
 
     def __init__(self, type=None, version=None, extend_params=None, tags=None):
-        """MeshSpec
+        r"""MeshSpec
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class MeshSpec:
 
     @property
     def type(self):
-        """Gets the type of this MeshSpec.
+        r"""Gets the type of this MeshSpec.
 
         网格类型： InCluster: 集群内控制平面形态，基础版网格取值为InCluster
 
@@ -73,7 +73,7 @@ class MeshSpec:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MeshSpec.
+        r"""Sets the type of this MeshSpec.
 
         网格类型： InCluster: 集群内控制平面形态，基础版网格取值为InCluster
 
@@ -84,7 +84,7 @@ class MeshSpec:
 
     @property
     def version(self):
-        """Gets the version of this MeshSpec.
+        r"""Gets the version of this MeshSpec.
 
         网格版本
 
@@ -95,7 +95,7 @@ class MeshSpec:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this MeshSpec.
+        r"""Sets the version of this MeshSpec.
 
         网格版本
 
@@ -106,7 +106,7 @@ class MeshSpec:
 
     @property
     def extend_params(self):
-        """Gets the extend_params of this MeshSpec.
+        r"""Gets the extend_params of this MeshSpec.
 
         :return: The extend_params of this MeshSpec.
         :rtype: :class:`huaweicloudsdkasm.v1.MeshExtendParams`
@@ -115,7 +115,7 @@ class MeshSpec:
 
     @extend_params.setter
     def extend_params(self, extend_params):
-        """Sets the extend_params of this MeshSpec.
+        r"""Sets the extend_params of this MeshSpec.
 
         :param extend_params: The extend_params of this MeshSpec.
         :type extend_params: :class:`huaweicloudsdkasm.v1.MeshExtendParams`
@@ -124,7 +124,7 @@ class MeshSpec:
 
     @property
     def tags(self):
-        """Gets the tags of this MeshSpec.
+        r"""Gets the tags of this MeshSpec.
 
         网格资源标签
 
@@ -135,7 +135,7 @@ class MeshSpec:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this MeshSpec.
+        r"""Sets the tags of this MeshSpec.
 
         网格资源标签
 

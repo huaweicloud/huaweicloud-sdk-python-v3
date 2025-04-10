@@ -41,7 +41,7 @@ class ApiBindAclInfo:
     }
 
     def __init__(self, acl_id=None, acl_name=None, entity_type=None, acl_type=None, acl_value=None, env_id=None, env_name=None, bind_id=None, bind_time=None):
-        """ApiBindAclInfo
+        r"""ApiBindAclInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ApiBindAclInfo:
 
     @property
     def acl_id(self):
-        """Gets the acl_id of this ApiBindAclInfo.
+        r"""Gets the acl_id of this ApiBindAclInfo.
 
         ACL策略编号
 
@@ -110,7 +110,7 @@ class ApiBindAclInfo:
 
     @acl_id.setter
     def acl_id(self, acl_id):
-        """Sets the acl_id of this ApiBindAclInfo.
+        r"""Sets the acl_id of this ApiBindAclInfo.
 
         ACL策略编号
 
@@ -121,7 +121,7 @@ class ApiBindAclInfo:
 
     @property
     def acl_name(self):
-        """Gets the acl_name of this ApiBindAclInfo.
+        r"""Gets the acl_name of this ApiBindAclInfo.
 
         ACL策略名称
 
@@ -132,7 +132,7 @@ class ApiBindAclInfo:
 
     @acl_name.setter
     def acl_name(self, acl_name):
-        """Sets the acl_name of this ApiBindAclInfo.
+        r"""Sets the acl_name of this ApiBindAclInfo.
 
         ACL策略名称
 
@@ -143,7 +143,7 @@ class ApiBindAclInfo:
 
     @property
     def entity_type(self):
-        """Gets the entity_type of this ApiBindAclInfo.
+        r"""Gets the entity_type of this ApiBindAclInfo.
 
         ACL策略作用的对象类型
 
@@ -154,7 +154,7 @@ class ApiBindAclInfo:
 
     @entity_type.setter
     def entity_type(self, entity_type):
-        """Sets the entity_type of this ApiBindAclInfo.
+        r"""Sets the entity_type of this ApiBindAclInfo.
 
         ACL策略作用的对象类型
 
@@ -165,7 +165,7 @@ class ApiBindAclInfo:
 
     @property
     def acl_type(self):
-        """Gets the acl_type of this ApiBindAclInfo.
+        r"""Gets the acl_type of this ApiBindAclInfo.
 
         ACL策略类型 - PERMIT：白名单类型 - DENY：黑名单类型
 
@@ -176,7 +176,7 @@ class ApiBindAclInfo:
 
     @acl_type.setter
     def acl_type(self, acl_type):
-        """Sets the acl_type of this ApiBindAclInfo.
+        r"""Sets the acl_type of this ApiBindAclInfo.
 
         ACL策略类型 - PERMIT：白名单类型 - DENY：黑名单类型
 
@@ -187,7 +187,7 @@ class ApiBindAclInfo:
 
     @property
     def acl_value(self):
-        """Gets the acl_value of this ApiBindAclInfo.
+        r"""Gets the acl_value of this ApiBindAclInfo.
 
         ACL策略值
 
@@ -198,7 +198,7 @@ class ApiBindAclInfo:
 
     @acl_value.setter
     def acl_value(self, acl_value):
-        """Sets the acl_value of this ApiBindAclInfo.
+        r"""Sets the acl_value of this ApiBindAclInfo.
 
         ACL策略值
 
@@ -209,7 +209,7 @@ class ApiBindAclInfo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ApiBindAclInfo.
+        r"""Gets the env_id of this ApiBindAclInfo.
 
         生效的环境编号
 
@@ -220,7 +220,7 @@ class ApiBindAclInfo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ApiBindAclInfo.
+        r"""Sets the env_id of this ApiBindAclInfo.
 
         生效的环境编号
 
@@ -231,7 +231,7 @@ class ApiBindAclInfo:
 
     @property
     def env_name(self):
-        """Gets the env_name of this ApiBindAclInfo.
+        r"""Gets the env_name of this ApiBindAclInfo.
 
         生效的环境名称
 
@@ -242,7 +242,7 @@ class ApiBindAclInfo:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this ApiBindAclInfo.
+        r"""Sets the env_name of this ApiBindAclInfo.
 
         生效的环境名称
 
@@ -253,7 +253,7 @@ class ApiBindAclInfo:
 
     @property
     def bind_id(self):
-        """Gets the bind_id of this ApiBindAclInfo.
+        r"""Gets the bind_id of this ApiBindAclInfo.
 
         绑定关系编号
 
@@ -264,7 +264,7 @@ class ApiBindAclInfo:
 
     @bind_id.setter
     def bind_id(self, bind_id):
-        """Sets the bind_id of this ApiBindAclInfo.
+        r"""Sets the bind_id of this ApiBindAclInfo.
 
         绑定关系编号
 
@@ -275,7 +275,7 @@ class ApiBindAclInfo:
 
     @property
     def bind_time(self):
-        """Gets the bind_time of this ApiBindAclInfo.
+        r"""Gets the bind_time of this ApiBindAclInfo.
 
         绑定时间
 
@@ -286,7 +286,7 @@ class ApiBindAclInfo:
 
     @bind_time.setter
     def bind_time(self, bind_time):
-        """Sets the bind_time of this ApiBindAclInfo.
+        r"""Sets the bind_time of this ApiBindAclInfo.
 
         绑定时间
 

@@ -35,7 +35,7 @@ class ExportUserLoginInfoNewRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, user_name=None, computer_name=None, terminal_type=None, language=None):
-        """ExportUserLoginInfoNewRequest
+        r"""ExportUserLoginInfoNewRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ExportUserLoginInfoNewRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ExportUserLoginInfoNewRequest.
+        r"""Gets the start_time of this ExportUserLoginInfoNewRequest.
 
         查询的起始时间。指定该参数后，返回的结果为此时间之后的所有登录记录。时间格式如：“2016-08-20T21:11Z”。终止时间不为空时，起始时间为必填参数。
 
@@ -89,7 +89,7 @@ class ExportUserLoginInfoNewRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ExportUserLoginInfoNewRequest.
+        r"""Sets the start_time of this ExportUserLoginInfoNewRequest.
 
         查询的起始时间。指定该参数后，返回的结果为此时间之后的所有登录记录。时间格式如：“2016-08-20T21:11Z”。终止时间不为空时，起始时间为必填参数。
 
@@ -100,7 +100,7 @@ class ExportUserLoginInfoNewRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ExportUserLoginInfoNewRequest.
+        r"""Gets the end_time of this ExportUserLoginInfoNewRequest.
 
         查询的终止时间。指定该参数后，返回的结果为此时间之前的所有登录记录。时间格式如：“2016-08-20T21:11Z”。起始时间不为空时，终止时间为必填参数。
 
@@ -111,7 +111,7 @@ class ExportUserLoginInfoNewRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ExportUserLoginInfoNewRequest.
+        r"""Sets the end_time of this ExportUserLoginInfoNewRequest.
 
         查询的终止时间。指定该参数后，返回的结果为此时间之前的所有登录记录。时间格式如：“2016-08-20T21:11Z”。起始时间不为空时，终止时间为必填参数。
 
@@ -122,7 +122,7 @@ class ExportUserLoginInfoNewRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ExportUserLoginInfoNewRequest.
+        r"""Gets the user_name of this ExportUserLoginInfoNewRequest.
 
         登录桌面的用户名。
 
@@ -133,7 +133,7 @@ class ExportUserLoginInfoNewRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ExportUserLoginInfoNewRequest.
+        r"""Sets the user_name of this ExportUserLoginInfoNewRequest.
 
         登录桌面的用户名。
 
@@ -144,7 +144,7 @@ class ExportUserLoginInfoNewRequest:
 
     @property
     def computer_name(self):
-        """Gets the computer_name of this ExportUserLoginInfoNewRequest.
+        r"""Gets the computer_name of this ExportUserLoginInfoNewRequest.
 
         计算机名（操作系统信息中可见）。
 
@@ -155,7 +155,7 @@ class ExportUserLoginInfoNewRequest:
 
     @computer_name.setter
     def computer_name(self, computer_name):
-        """Sets the computer_name of this ExportUserLoginInfoNewRequest.
+        r"""Sets the computer_name of this ExportUserLoginInfoNewRequest.
 
         计算机名（操作系统信息中可见）。
 
@@ -166,7 +166,7 @@ class ExportUserLoginInfoNewRequest:
 
     @property
     def terminal_type(self):
-        """Gets the terminal_type of this ExportUserLoginInfoNewRequest.
+        r"""Gets the terminal_type of this ExportUserLoginInfoNewRequest.
 
         登录桌面的终端系统类型。
 
@@ -177,7 +177,7 @@ class ExportUserLoginInfoNewRequest:
 
     @terminal_type.setter
     def terminal_type(self, terminal_type):
-        """Sets the terminal_type of this ExportUserLoginInfoNewRequest.
+        r"""Sets the terminal_type of this ExportUserLoginInfoNewRequest.
 
         登录桌面的终端系统类型。
 
@@ -188,7 +188,7 @@ class ExportUserLoginInfoNewRequest:
 
     @property
     def language(self):
-        """Gets the language of this ExportUserLoginInfoNewRequest.
+        r"""Gets the language of this ExportUserLoginInfoNewRequest.
 
         导出语言，默认英文。 - zh_CN：中文 - en_US：英文
 
@@ -199,7 +199,7 @@ class ExportUserLoginInfoNewRequest:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ExportUserLoginInfoNewRequest.
+        r"""Sets the language of this ExportUserLoginInfoNewRequest.
 
         导出语言，默认英文。 - zh_CN：中文 - en_US：英文
 

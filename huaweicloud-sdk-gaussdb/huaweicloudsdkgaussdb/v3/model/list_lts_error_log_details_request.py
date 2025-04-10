@@ -29,7 +29,7 @@ class ListLtsErrorLogDetailsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ListLtsErrorLogDetailsRequest
+        r"""ListLtsErrorLogDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListLtsErrorLogDetailsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListLtsErrorLogDetailsRequest.
+        r"""Gets the x_language of this ListLtsErrorLogDetailsRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class ListLtsErrorLogDetailsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListLtsErrorLogDetailsRequest.
+        r"""Sets the x_language of this ListLtsErrorLogDetailsRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class ListLtsErrorLogDetailsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListLtsErrorLogDetailsRequest.
+        r"""Gets the instance_id of this ListLtsErrorLogDetailsRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class ListLtsErrorLogDetailsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListLtsErrorLogDetailsRequest.
+        r"""Sets the instance_id of this ListLtsErrorLogDetailsRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class ListLtsErrorLogDetailsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListLtsErrorLogDetailsRequest.
+        r"""Gets the body of this ListLtsErrorLogDetailsRequest.
 
         :return: The body of this ListLtsErrorLogDetailsRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.LtsLogErrorQueryRequest`
@@ -109,7 +109,7 @@ class ListLtsErrorLogDetailsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListLtsErrorLogDetailsRequest.
+        r"""Sets the body of this ListLtsErrorLogDetailsRequest.
 
         :param body: The body of this ListLtsErrorLogDetailsRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.LtsLogErrorQueryRequest`

@@ -35,7 +35,7 @@ class ListTopIoTrafficsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, node_id=None, component_id=None, top_io_num=None, sort_condition=None):
-        """ListTopIoTrafficsRequest
+        r"""ListTopIoTrafficsRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ListTopIoTrafficsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListTopIoTrafficsRequest.
+        r"""Gets the x_language of this ListTopIoTrafficsRequest.
 
         语言
 
@@ -86,7 +86,7 @@ class ListTopIoTrafficsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListTopIoTrafficsRequest.
+        r"""Sets the x_language of this ListTopIoTrafficsRequest.
 
         语言
 
@@ -97,7 +97,7 @@ class ListTopIoTrafficsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListTopIoTrafficsRequest.
+        r"""Gets the instance_id of this ListTopIoTrafficsRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -108,7 +108,7 @@ class ListTopIoTrafficsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListTopIoTrafficsRequest.
+        r"""Sets the instance_id of this ListTopIoTrafficsRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -119,7 +119,7 @@ class ListTopIoTrafficsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListTopIoTrafficsRequest.
+        r"""Gets the node_id of this ListTopIoTrafficsRequest.
 
         节点ID。节点应为CN或者非日志角色的DN节点，并且节点状态为正常。
 
@@ -130,7 +130,7 @@ class ListTopIoTrafficsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListTopIoTrafficsRequest.
+        r"""Sets the node_id of this ListTopIoTrafficsRequest.
 
         节点ID。节点应为CN或者非日志角色的DN节点，并且节点状态为正常。
 
@@ -141,7 +141,7 @@ class ListTopIoTrafficsRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ListTopIoTrafficsRequest.
+        r"""Gets the component_id of this ListTopIoTrafficsRequest.
 
         组件ID。组件应为CN或者非日志角色的DN组件。 DN：Data Node，和CN对应的概念。负责实际执行表数据的存储、查询操作。 CN：Coordinator Node，负责数据库系统元数据存储、查询任务的分解和部分执行，以及将DN中查询结果汇聚在一起。
 
@@ -152,7 +152,7 @@ class ListTopIoTrafficsRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ListTopIoTrafficsRequest.
+        r"""Sets the component_id of this ListTopIoTrafficsRequest.
 
         组件ID。组件应为CN或者非日志角色的DN组件。 DN：Data Node，和CN对应的概念。负责实际执行表数据的存储、查询操作。 CN：Coordinator Node，负责数据库系统元数据存储、查询任务的分解和部分执行，以及将DN中查询结果汇聚在一起。
 
@@ -163,7 +163,7 @@ class ListTopIoTrafficsRequest:
 
     @property
     def top_io_num(self):
-        """Gets the top_io_num of this ListTopIoTrafficsRequest.
+        r"""Gets the top_io_num of this ListTopIoTrafficsRequest.
 
         期望查询数据库进程下TOP IO线程数（默认值为20）。接口返回TOP IO线程与会话信息关联后的结果，数量最大不超过该值。
 
@@ -174,7 +174,7 @@ class ListTopIoTrafficsRequest:
 
     @top_io_num.setter
     def top_io_num(self, top_io_num):
-        """Sets the top_io_num of this ListTopIoTrafficsRequest.
+        r"""Sets the top_io_num of this ListTopIoTrafficsRequest.
 
         期望查询数据库进程下TOP IO线程数（默认值为20）。接口返回TOP IO线程与会话信息关联后的结果，数量最大不超过该值。
 
@@ -185,7 +185,7 @@ class ListTopIoTrafficsRequest:
 
     @property
     def sort_condition(self):
-        """Gets the sort_condition of this ListTopIoTrafficsRequest.
+        r"""Gets the sort_condition of this ListTopIoTrafficsRequest.
 
         TOP IO排序条件
 
@@ -196,7 +196,7 @@ class ListTopIoTrafficsRequest:
 
     @sort_condition.setter
     def sort_condition(self, sort_condition):
-        """Sets the sort_condition of this ListTopIoTrafficsRequest.
+        r"""Sets the sort_condition of this ListTopIoTrafficsRequest.
 
         TOP IO排序条件
 

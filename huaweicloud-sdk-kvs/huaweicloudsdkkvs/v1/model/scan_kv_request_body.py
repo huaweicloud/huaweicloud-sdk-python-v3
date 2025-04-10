@@ -39,7 +39,7 @@ class ScanKvRequestBody:
     }
 
     def __init__(self, table_name=None, hint_index_name=None, limit=None, start_key=None, end_key=None, filter_expression=None, sample_segments_count=None, return_count_only=None):
-        """ScanKvRequestBody
+        r"""ScanKvRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ScanKvRequestBody:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ScanKvRequestBody.
+        r"""Gets the table_name of this ScanKvRequestBody.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -102,7 +102,7 @@ class ScanKvRequestBody:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ScanKvRequestBody.
+        r"""Sets the table_name of this ScanKvRequestBody.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -113,7 +113,7 @@ class ScanKvRequestBody:
 
     @property
     def hint_index_name(self):
-        """Gets the hint_index_name of this ScanKvRequestBody.
+        r"""Gets the hint_index_name of this ScanKvRequestBody.
 
         create_table时指定的索引名，默认空表示主索引。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -124,7 +124,7 @@ class ScanKvRequestBody:
 
     @hint_index_name.setter
     def hint_index_name(self, hint_index_name):
-        """Sets the hint_index_name of this ScanKvRequestBody.
+        r"""Sets the hint_index_name of this ScanKvRequestBody.
 
         create_table时指定的索引名，默认空表示主索引。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -135,7 +135,7 @@ class ScanKvRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ScanKvRequestBody.
+        r"""Gets the limit of this ScanKvRequestBody.
 
         数据量不超过1MB时，返回的文档个数，最大100个，默认1MB或者100个文档。
 
@@ -146,7 +146,7 @@ class ScanKvRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ScanKvRequestBody.
+        r"""Sets the limit of this ScanKvRequestBody.
 
         数据量不超过1MB时，返回的文档个数，最大100个，默认1MB或者100个文档。
 
@@ -157,7 +157,7 @@ class ScanKvRequestBody:
 
     @property
     def start_key(self):
-        """Gets the start_key of this ScanKvRequestBody.
+        r"""Gets the start_key of this ScanKvRequestBody.
 
         起始主键或索引键值。 - 默认空，表示从头遍历，左闭。 > 分页返回时，该值使用上次响应返回的cursor_key。
 
@@ -168,7 +168,7 @@ class ScanKvRequestBody:
 
     @start_key.setter
     def start_key(self, start_key):
-        """Sets the start_key of this ScanKvRequestBody.
+        r"""Sets the start_key of this ScanKvRequestBody.
 
         起始主键或索引键值。 - 默认空，表示从头遍历，左闭。 > 分页返回时，该值使用上次响应返回的cursor_key。
 
@@ -179,7 +179,7 @@ class ScanKvRequestBody:
 
     @property
     def end_key(self):
-        """Gets the end_key of this ScanKvRequestBody.
+        r"""Gets the end_key of this ScanKvRequestBody.
 
         终止主键或索引键值。 - 默认空，表示直到最后，右开。
 
@@ -190,7 +190,7 @@ class ScanKvRequestBody:
 
     @end_key.setter
     def end_key(self, end_key):
-        """Sets the end_key of this ScanKvRequestBody.
+        r"""Sets the end_key of this ScanKvRequestBody.
 
         终止主键或索引键值。 - 默认空，表示直到最后，右开。
 
@@ -201,7 +201,7 @@ class ScanKvRequestBody:
 
     @property
     def filter_expression(self):
-        """Gets the filter_expression of this ScanKvRequestBody.
+        r"""Gets the filter_expression of this ScanKvRequestBody.
 
         :return: The filter_expression of this ScanKvRequestBody.
         :rtype: :class:`huaweicloudsdkkvs.v1.ConditionExpression`
@@ -210,7 +210,7 @@ class ScanKvRequestBody:
 
     @filter_expression.setter
     def filter_expression(self, filter_expression):
-        """Sets the filter_expression of this ScanKvRequestBody.
+        r"""Sets the filter_expression of this ScanKvRequestBody.
 
         :param filter_expression: The filter_expression of this ScanKvRequestBody.
         :type filter_expression: :class:`huaweicloudsdkkvs.v1.ConditionExpression`
@@ -219,7 +219,7 @@ class ScanKvRequestBody:
 
     @property
     def sample_segments_count(self):
-        """Gets the sample_segments_count of this ScanKvRequestBody.
+        r"""Gets the sample_segments_count of this ScanKvRequestBody.
 
         对表进行采样，尽最大努力保证返回的段列表均分整张表。举例：sample_segments_count=4，返回的段列表[MinKey, KV1)、[KV1,KV2)、[KV2,KV3)和[KV3,MaxKey)。用户可以使用scan-kv对这四个分区执行并发扫描，提高遍历效率。 - 范围: [1, 10000]。默认值：不执行采样。 - sample_segments_count仅能和table_name、start_key和end_key字段配合使用。Range分区模式下支持全表采样和范围采样；Hash分区模式仅支持全表扫描。 - 仅支持对Primary key进行采样，不支持本地/全局二级索引。 - 返回的段列表仅包含主键，不包含键值；且段列表是编码后的数据 ，不可修改。
 
@@ -230,7 +230,7 @@ class ScanKvRequestBody:
 
     @sample_segments_count.setter
     def sample_segments_count(self, sample_segments_count):
-        """Sets the sample_segments_count of this ScanKvRequestBody.
+        r"""Sets the sample_segments_count of this ScanKvRequestBody.
 
         对表进行采样，尽最大努力保证返回的段列表均分整张表。举例：sample_segments_count=4，返回的段列表[MinKey, KV1)、[KV1,KV2)、[KV2,KV3)和[KV3,MaxKey)。用户可以使用scan-kv对这四个分区执行并发扫描，提高遍历效率。 - 范围: [1, 10000]。默认值：不执行采样。 - sample_segments_count仅能和table_name、start_key和end_key字段配合使用。Range分区模式下支持全表采样和范围采样；Hash分区模式仅支持全表扫描。 - 仅支持对Primary key进行采样，不支持本地/全局二级索引。 - 返回的段列表仅包含主键，不包含键值；且段列表是编码后的数据 ，不可修改。
 
@@ -241,7 +241,7 @@ class ScanKvRequestBody:
 
     @property
     def return_count_only(self):
-        """Gets the return_count_only of this ScanKvRequestBody.
+        r"""Gets the return_count_only of this ScanKvRequestBody.
 
         返回查询条件对应的KV总数. - 当KV总数小于limit条件时，返回KV查询结果和KV总数。 - 当KV总数多于limit条件时，只返回KV总数。
 
@@ -252,7 +252,7 @@ class ScanKvRequestBody:
 
     @return_count_only.setter
     def return_count_only(self, return_count_only):
-        """Sets the return_count_only of this ScanKvRequestBody.
+        r"""Sets the return_count_only of this ScanKvRequestBody.
 
         返回查询条件对应的KV总数. - 当KV总数小于limit条件时，返回KV查询结果和KV总数。 - 当KV总数多于limit条件时，只返回KV总数。
 

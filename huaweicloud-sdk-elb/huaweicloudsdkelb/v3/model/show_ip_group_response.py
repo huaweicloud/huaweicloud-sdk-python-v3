@@ -28,7 +28,7 @@ class ShowIpGroupResponse(SdkResponse):
     }
 
     def __init__(self, ipgroup=None, request_id=None):
-        """ShowIpGroupResponse
+        r"""ShowIpGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @property
     def ipgroup(self):
-        """Gets the ipgroup of this ShowIpGroupResponse.
+        r"""Gets the ipgroup of this ShowIpGroupResponse.
 
         :return: The ipgroup of this ShowIpGroupResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.IpGroup`
@@ -60,7 +60,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @ipgroup.setter
     def ipgroup(self, ipgroup):
-        """Sets the ipgroup of this ShowIpGroupResponse.
+        r"""Sets the ipgroup of this ShowIpGroupResponse.
 
         :param ipgroup: The ipgroup of this ShowIpGroupResponse.
         :type ipgroup: :class:`huaweicloudsdkelb.v3.IpGroup`
@@ -69,7 +69,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowIpGroupResponse.
+        r"""Gets the request_id of this ShowIpGroupResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -80,7 +80,7 @@ class ShowIpGroupResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowIpGroupResponse.
+        r"""Sets the request_id of this ShowIpGroupResponse.
 
         参数解释：请求ID。  注：自动生成 。
 

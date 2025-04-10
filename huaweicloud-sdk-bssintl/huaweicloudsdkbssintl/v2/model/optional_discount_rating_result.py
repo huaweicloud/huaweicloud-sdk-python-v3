@@ -41,7 +41,7 @@ class OptionalDiscountRatingResult:
     }
 
     def __init__(self, discount_id=None, amount=None, official_website_amount=None, discount_amount=None, measure_id=None, discount_type=None, discount_name=None, best_offer=None, product_rating_results=None):
-        """OptionalDiscountRatingResult
+        r"""OptionalDiscountRatingResult
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def discount_id(self):
-        """Gets the discount_id of this OptionalDiscountRatingResult.
+        r"""Gets the discount_id of this OptionalDiscountRatingResult.
 
         折扣优惠ID。
 
@@ -110,7 +110,7 @@ class OptionalDiscountRatingResult:
 
     @discount_id.setter
     def discount_id(self, discount_id):
-        """Sets the discount_id of this OptionalDiscountRatingResult.
+        r"""Sets the discount_id of this OptionalDiscountRatingResult.
 
         折扣优惠ID。
 
@@ -121,7 +121,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def amount(self):
-        """Gets the amount of this OptionalDiscountRatingResult.
+        r"""Gets the amount of this OptionalDiscountRatingResult.
 
         总额，即最终优惠后的金额。 amount= official_website_amount - discountAmount。
 
@@ -132,7 +132,7 @@ class OptionalDiscountRatingResult:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this OptionalDiscountRatingResult.
+        r"""Sets the amount of this OptionalDiscountRatingResult.
 
         总额，即最终优惠后的金额。 amount= official_website_amount - discountAmount。
 
@@ -143,7 +143,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def official_website_amount(self):
-        """Gets the official_website_amount of this OptionalDiscountRatingResult.
+        r"""Gets the official_website_amount of this OptionalDiscountRatingResult.
 
         包年/包月产品的官网价。
 
@@ -154,7 +154,7 @@ class OptionalDiscountRatingResult:
 
     @official_website_amount.setter
     def official_website_amount(self, official_website_amount):
-        """Sets the official_website_amount of this OptionalDiscountRatingResult.
+        r"""Sets the official_website_amount of this OptionalDiscountRatingResult.
 
         包年/包月产品的官网价。
 
@@ -165,7 +165,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def discount_amount(self):
-        """Gets the discount_amount of this OptionalDiscountRatingResult.
+        r"""Gets the discount_amount of this OptionalDiscountRatingResult.
 
         可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
 
@@ -176,7 +176,7 @@ class OptionalDiscountRatingResult:
 
     @discount_amount.setter
     def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this OptionalDiscountRatingResult.
+        r"""Sets the discount_amount of this OptionalDiscountRatingResult.
 
         可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
 
@@ -187,7 +187,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this OptionalDiscountRatingResult.
+        r"""Gets the measure_id of this OptionalDiscountRatingResult.
 
         价格度量单位标识。 1：元
 
@@ -198,7 +198,7 @@ class OptionalDiscountRatingResult:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this OptionalDiscountRatingResult.
+        r"""Sets the measure_id of this OptionalDiscountRatingResult.
 
         价格度量单位标识。 1：元
 
@@ -209,7 +209,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def discount_type(self):
-        """Gets the discount_type of this OptionalDiscountRatingResult.
+        r"""Gets the discount_type of this OptionalDiscountRatingResult.
 
         折扣优惠类型。 合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣 伙伴授予折扣：607：合作伙伴授予折扣-折扣率
 
@@ -220,7 +220,7 @@ class OptionalDiscountRatingResult:
 
     @discount_type.setter
     def discount_type(self, discount_type):
-        """Sets the discount_type of this OptionalDiscountRatingResult.
+        r"""Sets the discount_type of this OptionalDiscountRatingResult.
 
         折扣优惠类型。 合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣 伙伴授予折扣：607：合作伙伴授予折扣-折扣率
 
@@ -231,7 +231,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def discount_name(self):
-        """Gets the discount_name of this OptionalDiscountRatingResult.
+        r"""Gets the discount_name of this OptionalDiscountRatingResult.
 
         折扣名称。
 
@@ -242,7 +242,7 @@ class OptionalDiscountRatingResult:
 
     @discount_name.setter
     def discount_name(self, discount_name):
-        """Sets the discount_name of this OptionalDiscountRatingResult.
+        r"""Sets the discount_name of this OptionalDiscountRatingResult.
 
         折扣名称。
 
@@ -253,7 +253,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def best_offer(self):
-        """Gets the best_offer of this OptionalDiscountRatingResult.
+        r"""Gets the best_offer of this OptionalDiscountRatingResult.
 
         是否为最优折扣。 0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算。
 
@@ -264,7 +264,7 @@ class OptionalDiscountRatingResult:
 
     @best_offer.setter
     def best_offer(self, best_offer):
-        """Sets the best_offer of this OptionalDiscountRatingResult.
+        r"""Sets the best_offer of this OptionalDiscountRatingResult.
 
         是否为最优折扣。 0：不是最优折扣，为缺省值。1：是最优折扣最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算。
 
@@ -275,7 +275,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def product_rating_results(self):
-        """Gets the product_rating_results of this OptionalDiscountRatingResult.
+        r"""Gets the product_rating_results of this OptionalDiscountRatingResult.
 
         产品询价结果，具体参见表5。
 
@@ -286,7 +286,7 @@ class OptionalDiscountRatingResult:
 
     @product_rating_results.setter
     def product_rating_results(self, product_rating_results):
-        """Sets the product_rating_results of this OptionalDiscountRatingResult.
+        r"""Sets the product_rating_results of this OptionalDiscountRatingResult.
 
         产品询价结果，具体参见表5。
 

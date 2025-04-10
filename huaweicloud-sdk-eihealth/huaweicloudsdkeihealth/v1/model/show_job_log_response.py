@@ -30,7 +30,7 @@ class ShowJobLogResponse(SdkResponse):
     }
 
     def __init__(self, count=None, logs=None, log_storage_link=None):
-        """ShowJobLogResponse
+        r"""ShowJobLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowJobLogResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowJobLogResponse.
+        r"""Gets the count of this ShowJobLogResponse.
 
         作业日志条数
 
@@ -69,7 +69,7 @@ class ShowJobLogResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowJobLogResponse.
+        r"""Sets the count of this ShowJobLogResponse.
 
         作业日志条数
 
@@ -80,7 +80,7 @@ class ShowJobLogResponse(SdkResponse):
 
     @property
     def logs(self):
-        """Gets the logs of this ShowJobLogResponse.
+        r"""Gets the logs of this ShowJobLogResponse.
 
         作业日志内容列表
 
@@ -91,7 +91,7 @@ class ShowJobLogResponse(SdkResponse):
 
     @logs.setter
     def logs(self, logs):
-        """Sets the logs of this ShowJobLogResponse.
+        r"""Sets the logs of this ShowJobLogResponse.
 
         作业日志内容列表
 
@@ -102,7 +102,7 @@ class ShowJobLogResponse(SdkResponse):
 
     @property
     def log_storage_link(self):
-        """Gets the log_storage_link of this ShowJobLogResponse.
+        r"""Gets the log_storage_link of this ShowJobLogResponse.
 
         作业日志存储链接
 
@@ -113,7 +113,7 @@ class ShowJobLogResponse(SdkResponse):
 
     @log_storage_link.setter
     def log_storage_link(self, log_storage_link):
-        """Sets the log_storage_link of this ShowJobLogResponse.
+        r"""Sets the log_storage_link of this ShowJobLogResponse.
 
         作业日志存储链接
 

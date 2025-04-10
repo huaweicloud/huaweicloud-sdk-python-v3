@@ -26,7 +26,7 @@ class UpdateCodeTableResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UpdateCodeTableResponse
+        r"""UpdateCodeTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateCodeTableResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateCodeTableResponse.
+        r"""Gets the data of this UpdateCodeTableResponse.
 
         :return: The data of this UpdateCodeTableResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateCodeTableResultData`
@@ -53,7 +53,7 @@ class UpdateCodeTableResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateCodeTableResponse.
+        r"""Sets the data of this UpdateCodeTableResponse.
 
         :param data: The data of this UpdateCodeTableResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateCodeTableResultData`

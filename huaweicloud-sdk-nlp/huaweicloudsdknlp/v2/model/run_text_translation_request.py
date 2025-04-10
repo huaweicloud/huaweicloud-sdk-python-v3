@@ -25,7 +25,7 @@ class RunTextTranslationRequest:
     }
 
     def __init__(self, body=None):
-        """RunTextTranslationRequest
+        r"""RunTextTranslationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunTextTranslationRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunTextTranslationRequest.
+        r"""Gets the body of this RunTextTranslationRequest.
 
         :return: The body of this RunTextTranslationRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.TextTranslationReq`
@@ -52,7 +52,7 @@ class RunTextTranslationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunTextTranslationRequest.
+        r"""Sets the body of this RunTextTranslationRequest.
 
         :param body: The body of this RunTextTranslationRequest.
         :type body: :class:`huaweicloudsdknlp.v2.TextTranslationReq`

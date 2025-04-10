@@ -35,7 +35,7 @@ class UpdateInstanceReq:
     }
 
     def __init__(self, name=None, description=None, security_group_id=None, enable_acl=None, enable_publicip=None, publicip_id=None):
-        """UpdateInstanceReq
+        r"""UpdateInstanceReq
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpdateInstanceReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateInstanceReq.
+        r"""Gets the name of this UpdateInstanceReq.
 
         实例名称。  由英文字符开头，只能由英文字母、数字、中划线组成，长度为4~64的字符。
 
@@ -89,7 +89,7 @@ class UpdateInstanceReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateInstanceReq.
+        r"""Sets the name of this UpdateInstanceReq.
 
         实例名称。  由英文字符开头，只能由英文字母、数字、中划线组成，长度为4~64的字符。
 
@@ -100,7 +100,7 @@ class UpdateInstanceReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateInstanceReq.
+        r"""Gets the description of this UpdateInstanceReq.
 
         实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
 
@@ -111,7 +111,7 @@ class UpdateInstanceReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateInstanceReq.
+        r"""Sets the description of this UpdateInstanceReq.
 
         实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
 
@@ -122,7 +122,7 @@ class UpdateInstanceReq:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this UpdateInstanceReq.
+        r"""Gets the security_group_id of this UpdateInstanceReq.
 
         安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
 
@@ -133,7 +133,7 @@ class UpdateInstanceReq:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this UpdateInstanceReq.
+        r"""Sets the security_group_id of this UpdateInstanceReq.
 
         安全组ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
 
@@ -144,7 +144,7 @@ class UpdateInstanceReq:
 
     @property
     def enable_acl(self):
-        """Gets the enable_acl of this UpdateInstanceReq.
+        r"""Gets the enable_acl of this UpdateInstanceReq.
 
         ACL访问控制。
 
@@ -155,7 +155,7 @@ class UpdateInstanceReq:
 
     @enable_acl.setter
     def enable_acl(self, enable_acl):
-        """Sets the enable_acl of this UpdateInstanceReq.
+        r"""Sets the enable_acl of this UpdateInstanceReq.
 
         ACL访问控制。
 
@@ -166,7 +166,7 @@ class UpdateInstanceReq:
 
     @property
     def enable_publicip(self):
-        """Gets the enable_publicip of this UpdateInstanceReq.
+        r"""Gets the enable_publicip of this UpdateInstanceReq.
 
         是否开启公网。
 
@@ -177,7 +177,7 @@ class UpdateInstanceReq:
 
     @enable_publicip.setter
     def enable_publicip(self, enable_publicip):
-        """Sets the enable_publicip of this UpdateInstanceReq.
+        r"""Sets the enable_publicip of this UpdateInstanceReq.
 
         是否开启公网。
 
@@ -188,7 +188,7 @@ class UpdateInstanceReq:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this UpdateInstanceReq.
+        r"""Gets the publicip_id of this UpdateInstanceReq.
 
         实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
 
@@ -199,7 +199,7 @@ class UpdateInstanceReq:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this UpdateInstanceReq.
+        r"""Sets the publicip_id of this UpdateInstanceReq.
 
         实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
 

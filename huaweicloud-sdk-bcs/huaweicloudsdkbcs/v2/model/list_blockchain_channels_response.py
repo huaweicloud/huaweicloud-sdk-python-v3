@@ -26,7 +26,7 @@ class ListBlockchainChannelsResponse(SdkResponse):
     }
 
     def __init__(self, channels=None):
-        """ListBlockchainChannelsResponse
+        r"""ListBlockchainChannelsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBlockchainChannelsResponse(SdkResponse):
 
     @property
     def channels(self):
-        """Gets the channels of this ListBlockchainChannelsResponse.
+        r"""Gets the channels of this ListBlockchainChannelsResponse.
 
         通道信息列表
 
@@ -55,7 +55,7 @@ class ListBlockchainChannelsResponse(SdkResponse):
 
     @channels.setter
     def channels(self, channels):
-        """Sets the channels of this ListBlockchainChannelsResponse.
+        r"""Sets the channels of this ListBlockchainChannelsResponse.
 
         通道信息列表
 

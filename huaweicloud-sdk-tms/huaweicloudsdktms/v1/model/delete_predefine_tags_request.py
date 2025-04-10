@@ -25,7 +25,7 @@ class DeletePredefineTagsRequest:
     }
 
     def __init__(self, body=None):
-        """DeletePredefineTagsRequest
+        r"""DeletePredefineTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeletePredefineTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeletePredefineTagsRequest.
+        r"""Gets the body of this DeletePredefineTagsRequest.
 
         :return: The body of this DeletePredefineTagsRequest.
         :rtype: :class:`huaweicloudsdktms.v1.ReqDeletePredefineTag`
@@ -52,7 +52,7 @@ class DeletePredefineTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeletePredefineTagsRequest.
+        r"""Sets the body of this DeletePredefineTagsRequest.
 
         :param body: The body of this DeletePredefineTagsRequest.
         :type body: :class:`huaweicloudsdktms.v1.ReqDeletePredefineTag`

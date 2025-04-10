@@ -24,7 +24,7 @@ class QuoteDataResponse(SdkResponse):
     }
 
     def __init__(self):
-        """QuoteDataResponse
+        r"""QuoteDataResponse
 
         The model defined in huaweicloud sdk
 

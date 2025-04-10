@@ -51,7 +51,7 @@ class RelationModelViewDTO:
     }
 
     def __init__(self, class_name=None, create_time=None, creator=None, description=None, id=None, last_update_time=None, modifier=None, name=None, rdm_delete_flag=None, rdm_extension_type=None, rdm_version=None, source=None, target=None, tenant=None):
-        """RelationModelViewDTO
+        r"""RelationModelViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class RelationModelViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this RelationModelViewDTO.
+        r"""Gets the class_name of this RelationModelViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -145,7 +145,7 @@ class RelationModelViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this RelationModelViewDTO.
+        r"""Sets the class_name of this RelationModelViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -156,7 +156,7 @@ class RelationModelViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this RelationModelViewDTO.
+        r"""Gets the create_time of this RelationModelViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -167,7 +167,7 @@ class RelationModelViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this RelationModelViewDTO.
+        r"""Sets the create_time of this RelationModelViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -178,7 +178,7 @@ class RelationModelViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this RelationModelViewDTO.
+        r"""Gets the creator of this RelationModelViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -189,7 +189,7 @@ class RelationModelViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this RelationModelViewDTO.
+        r"""Sets the creator of this RelationModelViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -200,7 +200,7 @@ class RelationModelViewDTO:
 
     @property
     def description(self):
-        """Gets the description of this RelationModelViewDTO.
+        r"""Gets the description of this RelationModelViewDTO.
 
         **参数解释：**  实体描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -211,7 +211,7 @@ class RelationModelViewDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RelationModelViewDTO.
+        r"""Sets the description of this RelationModelViewDTO.
 
         **参数解释：**  实体描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -222,7 +222,7 @@ class RelationModelViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this RelationModelViewDTO.
+        r"""Gets the id of this RelationModelViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -233,7 +233,7 @@ class RelationModelViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RelationModelViewDTO.
+        r"""Sets the id of this RelationModelViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -244,7 +244,7 @@ class RelationModelViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this RelationModelViewDTO.
+        r"""Gets the last_update_time of this RelationModelViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -255,7 +255,7 @@ class RelationModelViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this RelationModelViewDTO.
+        r"""Sets the last_update_time of this RelationModelViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -266,7 +266,7 @@ class RelationModelViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this RelationModelViewDTO.
+        r"""Gets the modifier of this RelationModelViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -277,7 +277,7 @@ class RelationModelViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this RelationModelViewDTO.
+        r"""Sets the modifier of this RelationModelViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -288,7 +288,7 @@ class RelationModelViewDTO:
 
     @property
     def name(self):
-        """Gets the name of this RelationModelViewDTO.
+        r"""Gets the name of this RelationModelViewDTO.
 
         **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -299,7 +299,7 @@ class RelationModelViewDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RelationModelViewDTO.
+        r"""Sets the name of this RelationModelViewDTO.
 
         **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -310,7 +310,7 @@ class RelationModelViewDTO:
 
     @property
     def rdm_delete_flag(self):
-        """Gets the rdm_delete_flag of this RelationModelViewDTO.
+        r"""Gets the rdm_delete_flag of this RelationModelViewDTO.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。 
 
@@ -321,7 +321,7 @@ class RelationModelViewDTO:
 
     @rdm_delete_flag.setter
     def rdm_delete_flag(self, rdm_delete_flag):
-        """Sets the rdm_delete_flag of this RelationModelViewDTO.
+        r"""Sets the rdm_delete_flag of this RelationModelViewDTO.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  不涉及。 
 
@@ -332,7 +332,7 @@ class RelationModelViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this RelationModelViewDTO.
+        r"""Gets the rdm_extension_type of this RelationModelViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -343,7 +343,7 @@ class RelationModelViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this RelationModelViewDTO.
+        r"""Sets the rdm_extension_type of this RelationModelViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -354,7 +354,7 @@ class RelationModelViewDTO:
 
     @property
     def rdm_version(self):
-        """Gets the rdm_version of this RelationModelViewDTO.
+        r"""Gets the rdm_version of this RelationModelViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -365,7 +365,7 @@ class RelationModelViewDTO:
 
     @rdm_version.setter
     def rdm_version(self, rdm_version):
-        """Sets the rdm_version of this RelationModelViewDTO.
+        r"""Sets the rdm_version of this RelationModelViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -376,7 +376,7 @@ class RelationModelViewDTO:
 
     @property
     def source(self):
-        """Gets the source of this RelationModelViewDTO.
+        r"""Gets the source of this RelationModelViewDTO.
 
         :return: The source of this RelationModelViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ClassesViewDTO`
@@ -385,7 +385,7 @@ class RelationModelViewDTO:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this RelationModelViewDTO.
+        r"""Sets the source of this RelationModelViewDTO.
 
         :param source: The source of this RelationModelViewDTO.
         :type source: :class:`huaweicloudsdkidmeclassicapi.v1.ClassesViewDTO`
@@ -394,7 +394,7 @@ class RelationModelViewDTO:
 
     @property
     def target(self):
-        """Gets the target of this RelationModelViewDTO.
+        r"""Gets the target of this RelationModelViewDTO.
 
         :return: The target of this RelationModelViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.StudentViewDTO`
@@ -403,7 +403,7 @@ class RelationModelViewDTO:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this RelationModelViewDTO.
+        r"""Sets the target of this RelationModelViewDTO.
 
         :param target: The target of this RelationModelViewDTO.
         :type target: :class:`huaweicloudsdkidmeclassicapi.v1.StudentViewDTO`
@@ -412,7 +412,7 @@ class RelationModelViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this RelationModelViewDTO.
+        r"""Gets the tenant of this RelationModelViewDTO.
 
         :return: The tenant of this RelationModelViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -421,7 +421,7 @@ class RelationModelViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this RelationModelViewDTO.
+        r"""Sets the tenant of this RelationModelViewDTO.
 
         :param tenant: The tenant of this RelationModelViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`

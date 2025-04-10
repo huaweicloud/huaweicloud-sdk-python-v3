@@ -29,7 +29,7 @@ class EncryptDataIn:
     }
 
     def __init__(self, name=None, description=None, config=None):
-        """EncryptDataIn
+        r"""EncryptDataIn
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class EncryptDataIn:
 
     @property
     def name(self):
-        """Gets the name of this EncryptDataIn.
+        r"""Gets the name of this EncryptDataIn.
 
         加密数据名称，小写英文字母、数字、中划线，以小写字母或数字开头，最大长度为64个字符，不能为空
 
@@ -66,7 +66,7 @@ class EncryptDataIn:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EncryptDataIn.
+        r"""Sets the name of this EncryptDataIn.
 
         加密数据名称，小写英文字母、数字、中划线，以小写字母或数字开头，最大长度为64个字符，不能为空
 
@@ -77,7 +77,7 @@ class EncryptDataIn:
 
     @property
     def description(self):
-        """Gets the description of this EncryptDataIn.
+        r"""Gets the description of this EncryptDataIn.
 
         加密数据描述
 
@@ -88,7 +88,7 @@ class EncryptDataIn:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EncryptDataIn.
+        r"""Sets the description of this EncryptDataIn.
 
         加密数据描述
 
@@ -99,7 +99,7 @@ class EncryptDataIn:
 
     @property
     def config(self):
-        """Gets the config of this EncryptDataIn.
+        r"""Gets the config of this EncryptDataIn.
 
         加密数据项配置
 
@@ -110,7 +110,7 @@ class EncryptDataIn:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this EncryptDataIn.
+        r"""Sets the config of this EncryptDataIn.
 
         加密数据项配置
 

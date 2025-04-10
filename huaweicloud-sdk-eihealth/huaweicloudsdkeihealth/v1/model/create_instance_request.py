@@ -27,7 +27,7 @@ class CreateInstanceRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateInstanceRequest
+        r"""CreateInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateInstanceRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateInstanceRequest.
+        r"""Gets the eihealth_project_id of this CreateInstanceRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class CreateInstanceRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateInstanceRequest.
+        r"""Sets the eihealth_project_id of this CreateInstanceRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class CreateInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateInstanceRequest.
+        r"""Gets the body of this CreateInstanceRequest.
 
         :return: The body of this CreateInstanceRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseReq`
@@ -80,7 +80,7 @@ class CreateInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInstanceRequest.
+        r"""Sets the body of this CreateInstanceRequest.
 
         :param body: The body of this CreateInstanceRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseReq`

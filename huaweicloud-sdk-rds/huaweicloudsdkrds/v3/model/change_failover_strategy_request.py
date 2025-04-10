@@ -29,7 +29,7 @@ class ChangeFailoverStrategyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ChangeFailoverStrategyRequest
+        r"""ChangeFailoverStrategyRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ChangeFailoverStrategyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ChangeFailoverStrategyRequest.
+        r"""Gets the x_language of this ChangeFailoverStrategyRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class ChangeFailoverStrategyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ChangeFailoverStrategyRequest.
+        r"""Sets the x_language of this ChangeFailoverStrategyRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class ChangeFailoverStrategyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeFailoverStrategyRequest.
+        r"""Gets the instance_id of this ChangeFailoverStrategyRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class ChangeFailoverStrategyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeFailoverStrategyRequest.
+        r"""Sets the instance_id of this ChangeFailoverStrategyRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class ChangeFailoverStrategyRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeFailoverStrategyRequest.
+        r"""Gets the body of this ChangeFailoverStrategyRequest.
 
         :return: The body of this ChangeFailoverStrategyRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.FailoverStrategyRequest`
@@ -109,7 +109,7 @@ class ChangeFailoverStrategyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeFailoverStrategyRequest.
+        r"""Sets the body of this ChangeFailoverStrategyRequest.
 
         :param body: The body of this ChangeFailoverStrategyRequest.
         :type body: :class:`huaweicloudsdkrds.v3.FailoverStrategyRequest`

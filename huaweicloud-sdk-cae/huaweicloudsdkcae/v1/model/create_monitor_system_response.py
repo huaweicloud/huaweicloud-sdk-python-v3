@@ -24,7 +24,7 @@ class CreateMonitorSystemResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateMonitorSystemResponse
+        r"""CreateMonitorSystemResponse
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class ListLoadbalancersByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListLoadbalancersByTagsRequest
+        r"""ListLoadbalancersByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListLoadbalancersByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListLoadbalancersByTagsRequest.
+        r"""Gets the body of this ListLoadbalancersByTagsRequest.
 
         :return: The body of this ListLoadbalancersByTagsRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.ListLoadbalancersByTagsRequestBody`
@@ -52,7 +52,7 @@ class ListLoadbalancersByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListLoadbalancersByTagsRequest.
+        r"""Sets the body of this ListLoadbalancersByTagsRequest.
 
         :param body: The body of this ListLoadbalancersByTagsRequest.
         :type body: :class:`huaweicloudsdkelb.v2.ListLoadbalancersByTagsRequestBody`

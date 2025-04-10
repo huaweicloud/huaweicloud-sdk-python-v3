@@ -28,7 +28,7 @@ class ListPublicBorderGroupsResponse(SdkResponse):
     }
 
     def __init__(self, public_border_groups=None, request_id=None):
-        """ListPublicBorderGroupsResponse
+        r"""ListPublicBorderGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPublicBorderGroupsResponse(SdkResponse):
 
     @property
     def public_border_groups(self):
-        """Gets the public_border_groups of this ListPublicBorderGroupsResponse.
+        r"""Gets the public_border_groups of this ListPublicBorderGroupsResponse.
 
         功能说明：公共池分组对象
 
@@ -62,7 +62,7 @@ class ListPublicBorderGroupsResponse(SdkResponse):
 
     @public_border_groups.setter
     def public_border_groups(self, public_border_groups):
-        """Sets the public_border_groups of this ListPublicBorderGroupsResponse.
+        r"""Sets the public_border_groups of this ListPublicBorderGroupsResponse.
 
         功能说明：公共池分组对象
 
@@ -73,7 +73,7 @@ class ListPublicBorderGroupsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListPublicBorderGroupsResponse.
+        r"""Gets the request_id of this ListPublicBorderGroupsResponse.
 
         本次请求的编号
 
@@ -84,7 +84,7 @@ class ListPublicBorderGroupsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListPublicBorderGroupsResponse.
+        r"""Sets the request_id of this ListPublicBorderGroupsResponse.
 
         本次请求的编号
 

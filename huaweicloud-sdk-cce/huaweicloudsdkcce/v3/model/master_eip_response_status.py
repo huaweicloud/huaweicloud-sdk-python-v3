@@ -27,7 +27,7 @@ class MasterEIPResponseStatus:
     }
 
     def __init__(self, private_endpoint=None, public_endpoint=None):
-        """MasterEIPResponseStatus
+        r"""MasterEIPResponseStatus
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MasterEIPResponseStatus:
 
     @property
     def private_endpoint(self):
-        """Gets the private_endpoint of this MasterEIPResponseStatus.
+        r"""Gets the private_endpoint of this MasterEIPResponseStatus.
 
         集群访问的PrivateIP(HA集群返回VIP)
 
@@ -61,7 +61,7 @@ class MasterEIPResponseStatus:
 
     @private_endpoint.setter
     def private_endpoint(self, private_endpoint):
-        """Sets the private_endpoint of this MasterEIPResponseStatus.
+        r"""Sets the private_endpoint of this MasterEIPResponseStatus.
 
         集群访问的PrivateIP(HA集群返回VIP)
 
@@ -72,7 +72,7 @@ class MasterEIPResponseStatus:
 
     @property
     def public_endpoint(self):
-        """Gets the public_endpoint of this MasterEIPResponseStatus.
+        r"""Gets the public_endpoint of this MasterEIPResponseStatus.
 
         集群访问的PublicIP
 
@@ -83,7 +83,7 @@ class MasterEIPResponseStatus:
 
     @public_endpoint.setter
     def public_endpoint(self, public_endpoint):
-        """Sets the public_endpoint of this MasterEIPResponseStatus.
+        r"""Sets the public_endpoint of this MasterEIPResponseStatus.
 
         集群访问的PublicIP
 

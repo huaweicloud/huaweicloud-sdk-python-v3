@@ -29,7 +29,7 @@ class CreateSubscriptionTargetRequest:
     }
 
     def __init__(self, subscription_id=None, enterprise_project_id=None, body=None):
-        """CreateSubscriptionTargetRequest
+        r"""CreateSubscriptionTargetRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateSubscriptionTargetRequest:
 
     @property
     def subscription_id(self):
-        """Gets the subscription_id of this CreateSubscriptionTargetRequest.
+        r"""Gets the subscription_id of this CreateSubscriptionTargetRequest.
 
         事件订阅ID
 
@@ -67,7 +67,7 @@ class CreateSubscriptionTargetRequest:
 
     @subscription_id.setter
     def subscription_id(self, subscription_id):
-        """Sets the subscription_id of this CreateSubscriptionTargetRequest.
+        r"""Sets the subscription_id of this CreateSubscriptionTargetRequest.
 
         事件订阅ID
 
@@ -78,7 +78,7 @@ class CreateSubscriptionTargetRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateSubscriptionTargetRequest.
+        r"""Gets the enterprise_project_id of this CreateSubscriptionTargetRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -89,7 +89,7 @@ class CreateSubscriptionTargetRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateSubscriptionTargetRequest.
+        r"""Sets the enterprise_project_id of this CreateSubscriptionTargetRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -100,7 +100,7 @@ class CreateSubscriptionTargetRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSubscriptionTargetRequest.
+        r"""Gets the body of this CreateSubscriptionTargetRequest.
 
         :return: The body of this CreateSubscriptionTargetRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.SubscriptionTarget`
@@ -109,7 +109,7 @@ class CreateSubscriptionTargetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSubscriptionTargetRequest.
+        r"""Sets the body of this CreateSubscriptionTargetRequest.
 
         :param body: The body of this CreateSubscriptionTargetRequest.
         :type body: :class:`huaweicloudsdkeg.v1.SubscriptionTarget`

@@ -27,7 +27,7 @@ class ShowTableRequest:
     }
 
     def __init__(self, database_name=None, table_name=None):
-        """ShowTableRequest
+        r"""ShowTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowTableRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ShowTableRequest.
+        r"""Gets the database_name of this ShowTableRequest.
 
         待描述的表所在的数据库名称。
 
@@ -59,7 +59,7 @@ class ShowTableRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ShowTableRequest.
+        r"""Sets the database_name of this ShowTableRequest.
 
         待描述的表所在的数据库名称。
 
@@ -70,7 +70,7 @@ class ShowTableRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ShowTableRequest.
+        r"""Gets the table_name of this ShowTableRequest.
 
         待描述表的名称。
 
@@ -81,7 +81,7 @@ class ShowTableRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ShowTableRequest.
+        r"""Sets the table_name of this ShowTableRequest.
 
         待描述表的名称。
 

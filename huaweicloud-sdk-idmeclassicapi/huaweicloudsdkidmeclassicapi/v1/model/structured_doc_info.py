@@ -47,7 +47,7 @@ class StructuredDocInfo:
     }
 
     def __init__(self, id=None, document_id=None, title=None, type=None, template_id=None, organization_id=None, wiki_id=None, parent_document_id=None, instance_id=None, model_name=None, create_user_id=None, modifier=None):
-        """StructuredDocInfo
+        r"""StructuredDocInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class StructuredDocInfo:
 
     @property
     def id(self):
-        """Gets the id of this StructuredDocInfo.
+        r"""Gets the id of this StructuredDocInfo.
 
         **参数解释**：  文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -131,7 +131,7 @@ class StructuredDocInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StructuredDocInfo.
+        r"""Sets the id of this StructuredDocInfo.
 
         **参数解释**：  文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -142,7 +142,7 @@ class StructuredDocInfo:
 
     @property
     def document_id(self):
-        """Gets the document_id of this StructuredDocInfo.
+        r"""Gets the document_id of this StructuredDocInfo.
 
         **参数解释**：  kooPage文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -153,7 +153,7 @@ class StructuredDocInfo:
 
     @document_id.setter
     def document_id(self, document_id):
-        """Sets the document_id of this StructuredDocInfo.
+        r"""Sets the document_id of this StructuredDocInfo.
 
         **参数解释**：  kooPage文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -164,7 +164,7 @@ class StructuredDocInfo:
 
     @property
     def title(self):
-        """Gets the title of this StructuredDocInfo.
+        r"""Gets the title of this StructuredDocInfo.
 
         **参数解释**：  文档标题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -175,7 +175,7 @@ class StructuredDocInfo:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this StructuredDocInfo.
+        r"""Sets the title of this StructuredDocInfo.
 
         **参数解释**：  文档标题。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -186,7 +186,7 @@ class StructuredDocInfo:
 
     @property
     def type(self):
-        """Gets the type of this StructuredDocInfo.
+        r"""Gets the type of this StructuredDocInfo.
 
         **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值**：  不涉及。
 
@@ -197,7 +197,7 @@ class StructuredDocInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this StructuredDocInfo.
+        r"""Sets the type of this StructuredDocInfo.
 
         **参数解释**：  文档类型。  **约束限制**：  不涉及。  **取值范围**：  - directory：目录。 - pageDocument：Page文档。 - boardDocument：Board文档。 - mindDocument：Mind文档。 - drawDocument：Draw文档。  **默认取值**：  不涉及。
 
@@ -208,7 +208,7 @@ class StructuredDocInfo:
 
     @property
     def template_id(self):
-        """Gets the template_id of this StructuredDocInfo.
+        r"""Gets the template_id of this StructuredDocInfo.
 
         **参数解释**：  模板ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -219,7 +219,7 @@ class StructuredDocInfo:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this StructuredDocInfo.
+        r"""Sets the template_id of this StructuredDocInfo.
 
         **参数解释**：  模板ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -230,7 +230,7 @@ class StructuredDocInfo:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this StructuredDocInfo.
+        r"""Gets the organization_id of this StructuredDocInfo.
 
         **参数解释**：  团队ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -241,7 +241,7 @@ class StructuredDocInfo:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this StructuredDocInfo.
+        r"""Sets the organization_id of this StructuredDocInfo.
 
         **参数解释**：  团队ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -252,7 +252,7 @@ class StructuredDocInfo:
 
     @property
     def wiki_id(self):
-        """Gets the wiki_id of this StructuredDocInfo.
+        r"""Gets the wiki_id of this StructuredDocInfo.
 
         **参数解释**：  知识库ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -263,7 +263,7 @@ class StructuredDocInfo:
 
     @wiki_id.setter
     def wiki_id(self, wiki_id):
-        """Sets the wiki_id of this StructuredDocInfo.
+        r"""Sets the wiki_id of this StructuredDocInfo.
 
         **参数解释**：  知识库ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -274,7 +274,7 @@ class StructuredDocInfo:
 
     @property
     def parent_document_id(self):
-        """Gets the parent_document_id of this StructuredDocInfo.
+        r"""Gets the parent_document_id of this StructuredDocInfo.
 
         **参数解释**：  父文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -285,7 +285,7 @@ class StructuredDocInfo:
 
     @parent_document_id.setter
     def parent_document_id(self, parent_document_id):
-        """Sets the parent_document_id of this StructuredDocInfo.
+        r"""Sets the parent_document_id of this StructuredDocInfo.
 
         **参数解释**：  父文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -296,7 +296,7 @@ class StructuredDocInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StructuredDocInfo.
+        r"""Gets the instance_id of this StructuredDocInfo.
 
         **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -307,7 +307,7 @@ class StructuredDocInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StructuredDocInfo.
+        r"""Sets the instance_id of this StructuredDocInfo.
 
         **参数解释**：  实例ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -318,7 +318,7 @@ class StructuredDocInfo:
 
     @property
     def model_name(self):
-        """Gets the model_name of this StructuredDocInfo.
+        r"""Gets the model_name of this StructuredDocInfo.
 
         **参数解释**：  模型名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -329,7 +329,7 @@ class StructuredDocInfo:
 
     @model_name.setter
     def model_name(self, model_name):
-        """Sets the model_name of this StructuredDocInfo.
+        r"""Sets the model_name of this StructuredDocInfo.
 
         **参数解释**：  模型名称。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -340,7 +340,7 @@ class StructuredDocInfo:
 
     @property
     def create_user_id(self):
-        """Gets the create_user_id of this StructuredDocInfo.
+        r"""Gets the create_user_id of this StructuredDocInfo.
 
         **参数解释**：  创建者ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -351,7 +351,7 @@ class StructuredDocInfo:
 
     @create_user_id.setter
     def create_user_id(self, create_user_id):
-        """Sets the create_user_id of this StructuredDocInfo.
+        r"""Sets the create_user_id of this StructuredDocInfo.
 
         **参数解释**：  创建者ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -362,7 +362,7 @@ class StructuredDocInfo:
 
     @property
     def modifier(self):
-        """Gets the modifier of this StructuredDocInfo.
+        r"""Gets the modifier of this StructuredDocInfo.
 
         **参数解释**：  修改人。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -373,7 +373,7 @@ class StructuredDocInfo:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this StructuredDocInfo.
+        r"""Sets the modifier of this StructuredDocInfo.
 
         **参数解释**：  修改人。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 

@@ -31,7 +31,7 @@ class VolumeAddInfo:
     }
 
     def __init__(self, id=None, type=None, size=None, cluster_id=None):
-        """VolumeAddInfo
+        r"""VolumeAddInfo
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class VolumeAddInfo:
 
     @property
     def id(self):
-        """Gets the id of this VolumeAddInfo.
+        r"""Gets the id of this VolumeAddInfo.
 
         磁盘记录ID，删除或者扩容磁盘时必选。
 
@@ -73,7 +73,7 @@ class VolumeAddInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VolumeAddInfo.
+        r"""Sets the id of this VolumeAddInfo.
 
         磁盘记录ID，删除或者扩容磁盘时必选。
 
@@ -84,7 +84,7 @@ class VolumeAddInfo:
 
     @property
     def type(self):
-        """Gets the type of this VolumeAddInfo.
+        r"""Gets the type of this VolumeAddInfo.
 
         桌面数据盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。 - SAS：高IO。 - SSD：超高IO。
 
@@ -95,7 +95,7 @@ class VolumeAddInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VolumeAddInfo.
+        r"""Sets the type of this VolumeAddInfo.
 
         桌面数据盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。 - SAS：高IO。 - SSD：超高IO。
 
@@ -106,7 +106,7 @@ class VolumeAddInfo:
 
     @property
     def size(self):
-        """Gets the size of this VolumeAddInfo.
+        r"""Gets the size of this VolumeAddInfo.
 
         磁盘容量，单位GB。
 
@@ -117,7 +117,7 @@ class VolumeAddInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this VolumeAddInfo.
+        r"""Sets the size of this VolumeAddInfo.
 
         磁盘容量，单位GB。
 
@@ -128,7 +128,7 @@ class VolumeAddInfo:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this VolumeAddInfo.
+        r"""Gets the cluster_id of this VolumeAddInfo.
 
         云服务器系统盘对应的存储池的ID。
 
@@ -139,7 +139,7 @@ class VolumeAddInfo:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this VolumeAddInfo.
+        r"""Sets the cluster_id of this VolumeAddInfo.
 
         云服务器系统盘对应的存储池的ID。
 

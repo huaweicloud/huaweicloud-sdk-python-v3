@@ -49,7 +49,7 @@ class CertBase:
     }
 
     def __init__(self, id=None, name=None, type=None, instance_id=None, project_id=None, common_name=None, san=None, not_after=None, signature_algorithm=None, create_time=None, update_time=None, algorithm_type=None, is_has_trusted_root_ca=None):
-        """CertBase
+        r"""CertBase
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class CertBase:
 
     @property
     def id(self):
-        """Gets the id of this CertBase.
+        r"""Gets the id of this CertBase.
 
         证书ID
 
@@ -138,7 +138,7 @@ class CertBase:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CertBase.
+        r"""Sets the id of this CertBase.
 
         证书ID
 
@@ -149,7 +149,7 @@ class CertBase:
 
     @property
     def name(self):
-        """Gets the name of this CertBase.
+        r"""Gets the name of this CertBase.
 
         证书名称
 
@@ -160,7 +160,7 @@ class CertBase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CertBase.
+        r"""Sets the name of this CertBase.
 
         证书名称
 
@@ -171,7 +171,7 @@ class CertBase:
 
     @property
     def type(self):
-        """Gets the type of this CertBase.
+        r"""Gets the type of this CertBase.
 
         证书类型  - global：全局证书 - instance：实例证书
 
@@ -182,7 +182,7 @@ class CertBase:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CertBase.
+        r"""Sets the type of this CertBase.
 
         证书类型  - global：全局证书 - instance：实例证书
 
@@ -193,7 +193,7 @@ class CertBase:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CertBase.
+        r"""Gets the instance_id of this CertBase.
 
         实例编码  - `type`为`global`时，缺省为common - `type`为`instance`时，为实例编码
 
@@ -204,7 +204,7 @@ class CertBase:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CertBase.
+        r"""Sets the instance_id of this CertBase.
 
         实例编码  - `type`为`global`时，缺省为common - `type`为`instance`时，为实例编码
 
@@ -215,7 +215,7 @@ class CertBase:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CertBase.
+        r"""Gets the project_id of this CertBase.
 
         租户项目编号
 
@@ -226,7 +226,7 @@ class CertBase:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CertBase.
+        r"""Sets the project_id of this CertBase.
 
         租户项目编号
 
@@ -237,7 +237,7 @@ class CertBase:
 
     @property
     def common_name(self):
-        """Gets the common_name of this CertBase.
+        r"""Gets the common_name of this CertBase.
 
         域名
 
@@ -248,7 +248,7 @@ class CertBase:
 
     @common_name.setter
     def common_name(self, common_name):
-        """Sets the common_name of this CertBase.
+        r"""Sets the common_name of this CertBase.
 
         域名
 
@@ -259,7 +259,7 @@ class CertBase:
 
     @property
     def san(self):
-        """Gets the san of this CertBase.
+        r"""Gets the san of this CertBase.
 
         san扩展域名
 
@@ -270,7 +270,7 @@ class CertBase:
 
     @san.setter
     def san(self, san):
-        """Sets the san of this CertBase.
+        r"""Sets the san of this CertBase.
 
         san扩展域名
 
@@ -281,7 +281,7 @@ class CertBase:
 
     @property
     def not_after(self):
-        """Gets the not_after of this CertBase.
+        r"""Gets the not_after of this CertBase.
 
         有效期到
 
@@ -292,7 +292,7 @@ class CertBase:
 
     @not_after.setter
     def not_after(self, not_after):
-        """Sets the not_after of this CertBase.
+        r"""Sets the not_after of this CertBase.
 
         有效期到
 
@@ -303,7 +303,7 @@ class CertBase:
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this CertBase.
+        r"""Gets the signature_algorithm of this CertBase.
 
         签名算法
 
@@ -314,7 +314,7 @@ class CertBase:
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this CertBase.
+        r"""Sets the signature_algorithm of this CertBase.
 
         签名算法
 
@@ -325,7 +325,7 @@ class CertBase:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CertBase.
+        r"""Gets the create_time of this CertBase.
 
         创建时间
 
@@ -336,7 +336,7 @@ class CertBase:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CertBase.
+        r"""Sets the create_time of this CertBase.
 
         创建时间
 
@@ -347,7 +347,7 @@ class CertBase:
 
     @property
     def update_time(self):
-        """Gets the update_time of this CertBase.
+        r"""Gets the update_time of this CertBase.
 
         更新时间
 
@@ -358,7 +358,7 @@ class CertBase:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CertBase.
+        r"""Sets the update_time of this CertBase.
 
         更新时间
 
@@ -369,7 +369,7 @@ class CertBase:
 
     @property
     def algorithm_type(self):
-        """Gets the algorithm_type of this CertBase.
+        r"""Gets the algorithm_type of this CertBase.
 
         证书算法类型： - RSA - ECC - SM2  [暂不支持](tag:hws;hws_hk;g42;Site)
 
@@ -380,7 +380,7 @@ class CertBase:
 
     @algorithm_type.setter
     def algorithm_type(self, algorithm_type):
-        """Sets the algorithm_type of this CertBase.
+        r"""Sets the algorithm_type of this CertBase.
 
         证书算法类型： - RSA - ECC - SM2  [暂不支持](tag:hws;hws_hk;g42;Site)
 
@@ -391,7 +391,7 @@ class CertBase:
 
     @property
     def is_has_trusted_root_ca(self):
-        """Gets the is_has_trusted_root_ca of this CertBase.
+        r"""Gets the is_has_trusted_root_ca of this CertBase.
 
         是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。  [暂不支持](tag:fcs;hcs;g42;Site)
 
@@ -402,7 +402,7 @@ class CertBase:
 
     @is_has_trusted_root_ca.setter
     def is_has_trusted_root_ca(self, is_has_trusted_root_ca):
-        """Sets the is_has_trusted_root_ca of this CertBase.
+        r"""Sets the is_has_trusted_root_ca of this CertBase.
 
         是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。  [暂不支持](tag:fcs;hcs;g42;Site)
 

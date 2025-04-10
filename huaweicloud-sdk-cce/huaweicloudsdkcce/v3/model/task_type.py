@@ -30,7 +30,7 @@ class TaskType:
     }
 
     def __init__(self):
-        """TaskType
+        r"""TaskType
 
         The model defined in huaweicloud sdk
 

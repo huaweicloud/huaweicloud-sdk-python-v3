@@ -44,7 +44,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
     }
 
     def __init__(self, upgrade_type_list=None, rollback_enabled=None, source_version=None, target_version=None, roll_upgrade_progress=None, upgrade_candidate_versions=None, hotfix_upgrade_candidate_versions=None, hotfix_rollback_candidate_versions=None, hotfix_upgrade_infos=None, hotfix_rollback_infos=None):
-        """ShowUpgradeCandidateVersionsResponse
+        r"""ShowUpgradeCandidateVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @property
     def upgrade_type_list(self):
-        """Gets the upgrade_type_list of this ShowUpgradeCandidateVersionsResponse.
+        r"""Gets the upgrade_type_list of this ShowUpgradeCandidateVersionsResponse.
 
         升级类型信息列表
 
@@ -118,7 +118,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @upgrade_type_list.setter
     def upgrade_type_list(self, upgrade_type_list):
-        """Sets the upgrade_type_list of this ShowUpgradeCandidateVersionsResponse.
+        r"""Sets the upgrade_type_list of this ShowUpgradeCandidateVersionsResponse.
 
         升级类型信息列表
 
@@ -129,7 +129,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @property
     def rollback_enabled(self):
-        """Gets the rollback_enabled of this ShowUpgradeCandidateVersionsResponse.
+        r"""Gets the rollback_enabled of this ShowUpgradeCandidateVersionsResponse.
 
         是否可以回滚，true可以回滚，false不可以回滚。
 
@@ -140,7 +140,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @rollback_enabled.setter
     def rollback_enabled(self, rollback_enabled):
-        """Sets the rollback_enabled of this ShowUpgradeCandidateVersionsResponse.
+        r"""Sets the rollback_enabled of this ShowUpgradeCandidateVersionsResponse.
 
         是否可以回滚，true可以回滚，false不可以回滚。
 
@@ -151,7 +151,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @property
     def source_version(self):
-        """Gets the source_version of this ShowUpgradeCandidateVersionsResponse.
+        r"""Gets the source_version of this ShowUpgradeCandidateVersionsResponse.
 
         原版本
 
@@ -162,7 +162,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @source_version.setter
     def source_version(self, source_version):
-        """Sets the source_version of this ShowUpgradeCandidateVersionsResponse.
+        r"""Sets the source_version of this ShowUpgradeCandidateVersionsResponse.
 
         原版本
 
@@ -173,7 +173,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @property
     def target_version(self):
-        """Gets the target_version of this ShowUpgradeCandidateVersionsResponse.
+        r"""Gets the target_version of this ShowUpgradeCandidateVersionsResponse.
 
         升级目标版本，没有在滚动升级中返回null。
 
@@ -184,7 +184,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this ShowUpgradeCandidateVersionsResponse.
+        r"""Sets the target_version of this ShowUpgradeCandidateVersionsResponse.
 
         升级目标版本，没有在滚动升级中返回null。
 
@@ -195,7 +195,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @property
     def roll_upgrade_progress(self):
-        """Gets the roll_upgrade_progress of this ShowUpgradeCandidateVersionsResponse.
+        r"""Gets the roll_upgrade_progress of this ShowUpgradeCandidateVersionsResponse.
 
         :return: The roll_upgrade_progress of this ShowUpgradeCandidateVersionsResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.RollUpgradeProgress`
@@ -204,7 +204,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @roll_upgrade_progress.setter
     def roll_upgrade_progress(self, roll_upgrade_progress):
-        """Sets the roll_upgrade_progress of this ShowUpgradeCandidateVersionsResponse.
+        r"""Sets the roll_upgrade_progress of this ShowUpgradeCandidateVersionsResponse.
 
         :param roll_upgrade_progress: The roll_upgrade_progress of this ShowUpgradeCandidateVersionsResponse.
         :type roll_upgrade_progress: :class:`huaweicloudsdkgaussdbforopengauss.v3.RollUpgradeProgress`
@@ -213,7 +213,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @property
     def upgrade_candidate_versions(self):
-        """Gets the upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
+        r"""Gets the upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
 
         可以升级的版本，包括大小版本，滚动升级中返回空数组。
 
@@ -224,7 +224,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @upgrade_candidate_versions.setter
     def upgrade_candidate_versions(self, upgrade_candidate_versions):
-        """Sets the upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
+        r"""Sets the upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
 
         可以升级的版本，包括大小版本，滚动升级中返回空数组。
 
@@ -235,7 +235,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @property
     def hotfix_upgrade_candidate_versions(self):
-        """Gets the hotfix_upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
+        r"""Gets the hotfix_upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
 
         可以升级的热补丁版本，滚动升级中返回空数组。
 
@@ -246,7 +246,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @hotfix_upgrade_candidate_versions.setter
     def hotfix_upgrade_candidate_versions(self, hotfix_upgrade_candidate_versions):
-        """Sets the hotfix_upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
+        r"""Sets the hotfix_upgrade_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
 
         可以升级的热补丁版本，滚动升级中返回空数组。
 
@@ -257,7 +257,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @property
     def hotfix_rollback_candidate_versions(self):
-        """Gets the hotfix_rollback_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
+        r"""Gets the hotfix_rollback_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
 
         可以回滚的热补丁版本，滚动升级中返回空数组。
 
@@ -268,7 +268,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @hotfix_rollback_candidate_versions.setter
     def hotfix_rollback_candidate_versions(self, hotfix_rollback_candidate_versions):
-        """Sets the hotfix_rollback_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
+        r"""Sets the hotfix_rollback_candidate_versions of this ShowUpgradeCandidateVersionsResponse.
 
         可以回滚的热补丁版本，滚动升级中返回空数组。
 
@@ -279,7 +279,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @property
     def hotfix_upgrade_infos(self):
-        """Gets the hotfix_upgrade_infos of this ShowUpgradeCandidateVersionsResponse.
+        r"""Gets the hotfix_upgrade_infos of this ShowUpgradeCandidateVersionsResponse.
 
         可以升级的热补丁信息。
 
@@ -290,7 +290,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @hotfix_upgrade_infos.setter
     def hotfix_upgrade_infos(self, hotfix_upgrade_infos):
-        """Sets the hotfix_upgrade_infos of this ShowUpgradeCandidateVersionsResponse.
+        r"""Sets the hotfix_upgrade_infos of this ShowUpgradeCandidateVersionsResponse.
 
         可以升级的热补丁信息。
 
@@ -301,7 +301,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @property
     def hotfix_rollback_infos(self):
-        """Gets the hotfix_rollback_infos of this ShowUpgradeCandidateVersionsResponse.
+        r"""Gets the hotfix_rollback_infos of this ShowUpgradeCandidateVersionsResponse.
 
         可以回滚的热补丁信息。
 
@@ -312,7 +312,7 @@ class ShowUpgradeCandidateVersionsResponse(SdkResponse):
 
     @hotfix_rollback_infos.setter
     def hotfix_rollback_infos(self, hotfix_rollback_infos):
-        """Sets the hotfix_rollback_infos of this ShowUpgradeCandidateVersionsResponse.
+        r"""Sets the hotfix_rollback_infos of this ShowUpgradeCandidateVersionsResponse.
 
         可以回滚的热补丁信息。
 

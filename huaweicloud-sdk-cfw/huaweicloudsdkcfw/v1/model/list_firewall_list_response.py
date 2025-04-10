@@ -36,7 +36,7 @@ class ListFirewallListResponse(SdkResponse):
     }
 
     def __init__(self, user_support_eps=None, has_ndr=None, is_support_postpaid=None, is_support_basic_version=None, is_support_buy_professional=None, data=None):
-        """ListFirewallListResponse
+        r"""ListFirewallListResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListFirewallListResponse(SdkResponse):
 
     @property
     def user_support_eps(self):
-        """Gets the user_support_eps of this ListFirewallListResponse.
+        r"""Gets the user_support_eps of this ListFirewallListResponse.
 
         是否支持企业项目，true表示是，false表示不是
 
@@ -90,7 +90,7 @@ class ListFirewallListResponse(SdkResponse):
 
     @user_support_eps.setter
     def user_support_eps(self, user_support_eps):
-        """Sets the user_support_eps of this ListFirewallListResponse.
+        r"""Sets the user_support_eps of this ListFirewallListResponse.
 
         是否支持企业项目，true表示是，false表示不是
 
@@ -101,7 +101,7 @@ class ListFirewallListResponse(SdkResponse):
 
     @property
     def has_ndr(self):
-        """Gets the has_ndr of this ListFirewallListResponse.
+        r"""Gets the has_ndr of this ListFirewallListResponse.
 
         是否存在ndr，true表示是，false表示不是，NDR为原旁路版防火墙，现已停止售卖。
 
@@ -112,7 +112,7 @@ class ListFirewallListResponse(SdkResponse):
 
     @has_ndr.setter
     def has_ndr(self, has_ndr):
-        """Sets the has_ndr of this ListFirewallListResponse.
+        r"""Sets the has_ndr of this ListFirewallListResponse.
 
         是否存在ndr，true表示是，false表示不是，NDR为原旁路版防火墙，现已停止售卖。
 
@@ -123,7 +123,7 @@ class ListFirewallListResponse(SdkResponse):
 
     @property
     def is_support_postpaid(self):
-        """Gets the is_support_postpaid of this ListFirewallListResponse.
+        r"""Gets the is_support_postpaid of this ListFirewallListResponse.
 
         是否支持按需购买，true表示是，false表示不是
 
@@ -134,7 +134,7 @@ class ListFirewallListResponse(SdkResponse):
 
     @is_support_postpaid.setter
     def is_support_postpaid(self, is_support_postpaid):
-        """Sets the is_support_postpaid of this ListFirewallListResponse.
+        r"""Sets the is_support_postpaid of this ListFirewallListResponse.
 
         是否支持按需购买，true表示是，false表示不是
 
@@ -145,7 +145,7 @@ class ListFirewallListResponse(SdkResponse):
 
     @property
     def is_support_basic_version(self):
-        """Gets the is_support_basic_version of this ListFirewallListResponse.
+        r"""Gets the is_support_basic_version of this ListFirewallListResponse.
 
         是否支持基础版，true表示是，false表示不是
 
@@ -156,7 +156,7 @@ class ListFirewallListResponse(SdkResponse):
 
     @is_support_basic_version.setter
     def is_support_basic_version(self, is_support_basic_version):
-        """Sets the is_support_basic_version of this ListFirewallListResponse.
+        r"""Sets the is_support_basic_version of this ListFirewallListResponse.
 
         是否支持基础版，true表示是，false表示不是
 
@@ -167,7 +167,7 @@ class ListFirewallListResponse(SdkResponse):
 
     @property
     def is_support_buy_professional(self):
-        """Gets the is_support_buy_professional of this ListFirewallListResponse.
+        r"""Gets the is_support_buy_professional of this ListFirewallListResponse.
 
         是否支持购买专业版，true表示是，false表示不是
 
@@ -178,7 +178,7 @@ class ListFirewallListResponse(SdkResponse):
 
     @is_support_buy_professional.setter
     def is_support_buy_professional(self, is_support_buy_professional):
-        """Sets the is_support_buy_professional of this ListFirewallListResponse.
+        r"""Sets the is_support_buy_professional of this ListFirewallListResponse.
 
         是否支持购买专业版，true表示是，false表示不是
 
@@ -189,7 +189,7 @@ class ListFirewallListResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListFirewallListResponse.
+        r"""Gets the data of this ListFirewallListResponse.
 
         :return: The data of this ListFirewallListResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.HttpFirewallInstanceListResponseData`
@@ -198,7 +198,7 @@ class ListFirewallListResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListFirewallListResponse.
+        r"""Sets the data of this ListFirewallListResponse.
 
         :param data: The data of this ListFirewallListResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.HttpFirewallInstanceListResponseData`

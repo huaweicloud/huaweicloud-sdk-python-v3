@@ -29,7 +29,7 @@ class Quota:
     }
 
     def __init__(self, type=None, available=None, edge_volume=None):
-        """Quota
+        r"""Quota
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Quota:
 
     @property
     def type(self):
-        """Gets the type of this Quota.
+        r"""Gets the type of this Quota.
 
         类型。  取值范围： - \"graph\" - \"backup\" - \"metadata\"
 
@@ -66,7 +66,7 @@ class Quota:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Quota.
+        r"""Sets the type of this Quota.
 
         类型。  取值范围： - \"graph\" - \"backup\" - \"metadata\"
 
@@ -77,7 +77,7 @@ class Quota:
 
     @property
     def available(self):
-        """Gets the available of this Quota.
+        r"""Gets the available of this Quota.
 
         图的可用个数。
 
@@ -88,7 +88,7 @@ class Quota:
 
     @available.setter
     def available(self, available):
-        """Sets the available of this Quota.
+        r"""Sets the available of this Quota.
 
         图的可用个数。
 
@@ -99,7 +99,7 @@ class Quota:
 
     @property
     def edge_volume(self):
-        """Gets the edge_volume of this Quota.
+        r"""Gets the edge_volume of this Quota.
 
         边的可用个数。type为graph时此值有效。
 
@@ -110,7 +110,7 @@ class Quota:
 
     @edge_volume.setter
     def edge_volume(self, edge_volume):
-        """Sets the edge_volume of this Quota.
+        r"""Sets the edge_volume of this Quota.
 
         边的可用个数。type为graph时此值有效。
 

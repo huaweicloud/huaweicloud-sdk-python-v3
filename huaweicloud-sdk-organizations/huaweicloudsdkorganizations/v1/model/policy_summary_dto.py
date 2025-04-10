@@ -35,7 +35,7 @@ class PolicySummaryDto:
     }
 
     def __init__(self, is_builtin=None, description=None, id=None, urn=None, name=None, type=None):
-        """PolicySummaryDto
+        r"""PolicySummaryDto
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class PolicySummaryDto:
 
     @property
     def is_builtin(self):
-        """Gets the is_builtin of this PolicySummaryDto.
+        r"""Gets the is_builtin of this PolicySummaryDto.
 
         一个布尔值，指示指定的策略是否为系统策略。如果为true，即为系统策略，则可以将策略附加到根、组织单元或账号，但不能编辑它。
 
@@ -83,7 +83,7 @@ class PolicySummaryDto:
 
     @is_builtin.setter
     def is_builtin(self, is_builtin):
-        """Sets the is_builtin of this PolicySummaryDto.
+        r"""Sets the is_builtin of this PolicySummaryDto.
 
         一个布尔值，指示指定的策略是否为系统策略。如果为true，即为系统策略，则可以将策略附加到根、组织单元或账号，但不能编辑它。
 
@@ -94,7 +94,7 @@ class PolicySummaryDto:
 
     @property
     def description(self):
-        """Gets the description of this PolicySummaryDto.
+        r"""Gets the description of this PolicySummaryDto.
 
         策略说明。
 
@@ -105,7 +105,7 @@ class PolicySummaryDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PolicySummaryDto.
+        r"""Sets the description of this PolicySummaryDto.
 
         策略说明。
 
@@ -116,7 +116,7 @@ class PolicySummaryDto:
 
     @property
     def id(self):
-        """Gets the id of this PolicySummaryDto.
+        r"""Gets the id of this PolicySummaryDto.
 
         策略的唯一标识符（ID）。
 
@@ -127,7 +127,7 @@ class PolicySummaryDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PolicySummaryDto.
+        r"""Sets the id of this PolicySummaryDto.
 
         策略的唯一标识符（ID）。
 
@@ -138,7 +138,7 @@ class PolicySummaryDto:
 
     @property
     def urn(self):
-        """Gets the urn of this PolicySummaryDto.
+        r"""Gets the urn of this PolicySummaryDto.
 
         策略的统一资源名称。
 
@@ -149,7 +149,7 @@ class PolicySummaryDto:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this PolicySummaryDto.
+        r"""Sets the urn of this PolicySummaryDto.
 
         策略的统一资源名称。
 
@@ -160,7 +160,7 @@ class PolicySummaryDto:
 
     @property
     def name(self):
-        """Gets the name of this PolicySummaryDto.
+        r"""Gets the name of this PolicySummaryDto.
 
         策略的名称。
 
@@ -171,7 +171,7 @@ class PolicySummaryDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PolicySummaryDto.
+        r"""Sets the name of this PolicySummaryDto.
 
         策略的名称。
 
@@ -182,7 +182,7 @@ class PolicySummaryDto:
 
     @property
     def type(self):
-        """Gets the type of this PolicySummaryDto.
+        r"""Gets the type of this PolicySummaryDto.
 
         策略的类型,service_control_policy：服务控制策略；tag_policy：标签策略。
 
@@ -193,7 +193,7 @@ class PolicySummaryDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PolicySummaryDto.
+        r"""Sets the type of this PolicySummaryDto.
 
         策略的类型,service_control_policy：服务控制策略；tag_policy：标签策略。
 

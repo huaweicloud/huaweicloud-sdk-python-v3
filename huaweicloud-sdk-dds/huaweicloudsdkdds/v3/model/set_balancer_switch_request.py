@@ -27,7 +27,7 @@ class SetBalancerSwitchRequest:
     }
 
     def __init__(self, instance_id=None, action=None):
-        """SetBalancerSwitchRequest
+        r"""SetBalancerSwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SetBalancerSwitchRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetBalancerSwitchRequest.
+        r"""Gets the instance_id of this SetBalancerSwitchRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -59,7 +59,7 @@ class SetBalancerSwitchRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetBalancerSwitchRequest.
+        r"""Sets the instance_id of this SetBalancerSwitchRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -70,7 +70,7 @@ class SetBalancerSwitchRequest:
 
     @property
     def action(self):
-        """Gets the action of this SetBalancerSwitchRequest.
+        r"""Gets the action of this SetBalancerSwitchRequest.
 
         开启或关闭集群均衡。
 
@@ -81,7 +81,7 @@ class SetBalancerSwitchRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this SetBalancerSwitchRequest.
+        r"""Sets the action of this SetBalancerSwitchRequest.
 
         开启或关闭集群均衡。
 

@@ -31,7 +31,7 @@ class ProbeDetail:
     }
 
     def __init__(self, exec_command=None, http_get=None, initial_delay_seconds=None, timeout_seconds=None):
-        """ProbeDetail
+        r"""ProbeDetail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ProbeDetail:
 
     @property
     def exec_command(self):
-        """Gets the exec_command of this ProbeDetail.
+        r"""Gets the exec_command of this ProbeDetail.
 
         执行探测的命令行命令，长度1-10240内的字符串
 
@@ -75,7 +75,7 @@ class ProbeDetail:
 
     @exec_command.setter
     def exec_command(self, exec_command):
-        """Sets the exec_command of this ProbeDetail.
+        r"""Sets the exec_command of this ProbeDetail.
 
         执行探测的命令行命令，长度1-10240内的字符串
 
@@ -86,7 +86,7 @@ class ProbeDetail:
 
     @property
     def http_get(self):
-        """Gets the http_get of this ProbeDetail.
+        r"""Gets the http_get of this ProbeDetail.
 
         :return: The http_get of this ProbeDetail.
         :rtype: :class:`huaweicloudsdkief.v1.HttpGetDetail`
@@ -95,7 +95,7 @@ class ProbeDetail:
 
     @http_get.setter
     def http_get(self, http_get):
-        """Sets the http_get of this ProbeDetail.
+        r"""Sets the http_get of this ProbeDetail.
 
         :param http_get: The http_get of this ProbeDetail.
         :type http_get: :class:`huaweicloudsdkief.v1.HttpGetDetail`
@@ -104,7 +104,7 @@ class ProbeDetail:
 
     @property
     def initial_delay_seconds(self):
-        """Gets the initial_delay_seconds of this ProbeDetail.
+        r"""Gets the initial_delay_seconds of this ProbeDetail.
 
         表示从工作负载启动后从多久开始探测，大于0且不大于3600的整数，默认为10
 
@@ -115,7 +115,7 @@ class ProbeDetail:
 
     @initial_delay_seconds.setter
     def initial_delay_seconds(self, initial_delay_seconds):
-        """Sets the initial_delay_seconds of this ProbeDetail.
+        r"""Sets the initial_delay_seconds of this ProbeDetail.
 
         表示从工作负载启动后从多久开始探测，大于0且不大于3600的整数，默认为10
 
@@ -126,7 +126,7 @@ class ProbeDetail:
 
     @property
     def timeout_seconds(self):
-        """Gets the timeout_seconds of this ProbeDetail.
+        r"""Gets the timeout_seconds of this ProbeDetail.
 
         表示探测超时时间，大于0且不大于3600的整数，默认为1
 
@@ -137,7 +137,7 @@ class ProbeDetail:
 
     @timeout_seconds.setter
     def timeout_seconds(self, timeout_seconds):
-        """Sets the timeout_seconds of this ProbeDetail.
+        r"""Sets the timeout_seconds of this ProbeDetail.
 
         表示探测超时时间，大于0且不大于3600的整数，默认为1
 

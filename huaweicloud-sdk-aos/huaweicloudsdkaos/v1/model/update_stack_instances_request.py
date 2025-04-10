@@ -29,7 +29,7 @@ class UpdateStackInstancesRequest:
     }
 
     def __init__(self, client_request_id=None, stack_set_name=None, body=None):
-        """UpdateStackInstancesRequest
+        r"""UpdateStackInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateStackInstancesRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this UpdateStackInstancesRequest.
+        r"""Gets the client_request_id of this UpdateStackInstancesRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -66,7 +66,7 @@ class UpdateStackInstancesRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this UpdateStackInstancesRequest.
+        r"""Sets the client_request_id of this UpdateStackInstancesRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -77,7 +77,7 @@ class UpdateStackInstancesRequest:
 
     @property
     def stack_set_name(self):
-        """Gets the stack_set_name of this UpdateStackInstancesRequest.
+        r"""Gets the stack_set_name of this UpdateStackInstancesRequest.
 
         资源栈集的名称。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -88,7 +88,7 @@ class UpdateStackInstancesRequest:
 
     @stack_set_name.setter
     def stack_set_name(self, stack_set_name):
-        """Sets the stack_set_name of this UpdateStackInstancesRequest.
+        r"""Sets the stack_set_name of this UpdateStackInstancesRequest.
 
         资源栈集的名称。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -99,7 +99,7 @@ class UpdateStackInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateStackInstancesRequest.
+        r"""Gets the body of this UpdateStackInstancesRequest.
 
         :return: The body of this UpdateStackInstancesRequest.
         :rtype: :class:`huaweicloudsdkaos.v1.UpdateStackInstancesRequestBody`
@@ -108,7 +108,7 @@ class UpdateStackInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateStackInstancesRequest.
+        r"""Sets the body of this UpdateStackInstancesRequest.
 
         :param body: The body of this UpdateStackInstancesRequest.
         :type body: :class:`huaweicloudsdkaos.v1.UpdateStackInstancesRequestBody`

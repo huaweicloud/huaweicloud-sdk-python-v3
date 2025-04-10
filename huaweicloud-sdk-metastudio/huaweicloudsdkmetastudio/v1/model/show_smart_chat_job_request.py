@@ -29,7 +29,7 @@ class ShowSmartChatJobRequest:
     }
 
     def __init__(self, x_app_user_id=None, room_id=None, job_id=None):
-        """ShowSmartChatJobRequest
+        r"""ShowSmartChatJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowSmartChatJobRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowSmartChatJobRequest.
+        r"""Gets the x_app_user_id of this ShowSmartChatJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -66,7 +66,7 @@ class ShowSmartChatJobRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowSmartChatJobRequest.
+        r"""Sets the x_app_user_id of this ShowSmartChatJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -77,7 +77,7 @@ class ShowSmartChatJobRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this ShowSmartChatJobRequest.
+        r"""Gets the room_id of this ShowSmartChatJobRequest.
 
         智能交互对话ID，获取方法请参考[创建智能交互对话直播间](CreateSmartChatRoom.xml)。
 
@@ -88,7 +88,7 @@ class ShowSmartChatJobRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ShowSmartChatJobRequest.
+        r"""Sets the room_id of this ShowSmartChatJobRequest.
 
         智能交互对话ID，获取方法请参考[创建智能交互对话直播间](CreateSmartChatRoom.xml)。
 
@@ -99,7 +99,7 @@ class ShowSmartChatJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowSmartChatJobRequest.
+        r"""Gets the job_id of this ShowSmartChatJobRequest.
 
         任务ID。
 
@@ -110,7 +110,7 @@ class ShowSmartChatJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowSmartChatJobRequest.
+        r"""Sets the job_id of this ShowSmartChatJobRequest.
 
         任务ID。
 

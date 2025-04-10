@@ -26,7 +26,7 @@ class UpdateUnbindPublicResponse(SdkResponse):
     }
 
     def __init__(self, action=None):
-        """UpdateUnbindPublicResponse
+        r"""UpdateUnbindPublicResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateUnbindPublicResponse(SdkResponse):
 
     @property
     def action(self):
-        """Gets the action of this UpdateUnbindPublicResponse.
+        r"""Gets the action of this UpdateUnbindPublicResponse.
 
         操作行为。固定为：unbindZone，表示解绑成功。
 
@@ -55,7 +55,7 @@ class UpdateUnbindPublicResponse(SdkResponse):
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateUnbindPublicResponse.
+        r"""Sets the action of this UpdateUnbindPublicResponse.
 
         操作行为。固定为：unbindZone，表示解绑成功。
 

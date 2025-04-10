@@ -25,7 +25,7 @@ class UpdateImageNameReq:
     }
 
     def __init__(self, name=None):
-        """UpdateImageNameReq
+        r"""UpdateImageNameReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateImageNameReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateImageNameReq.
+        r"""Gets the name of this UpdateImageNameReq.
 
         视频名，长度3~63位。 大小写字母，数字，汉字及部分符号(“_”、“-”、“#”)组成
 
@@ -53,7 +53,7 @@ class UpdateImageNameReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateImageNameReq.
+        r"""Sets the name of this UpdateImageNameReq.
 
         视频名，长度3~63位。 大小写字母，数字，汉字及部分符号(“_”、“-”、“#”)组成
 

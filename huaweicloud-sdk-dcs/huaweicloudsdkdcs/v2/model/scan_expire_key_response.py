@@ -38,7 +38,7 @@ class ScanExpireKeyResponse(SdkResponse):
     }
 
     def __init__(self, id=None, instance_id=None, status=None, scan_type=None, created_at=None, started_at=None, finished_at=None):
-        """ScanExpireKeyResponse
+        r"""ScanExpireKeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ScanExpireKeyResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ScanExpireKeyResponse.
+        r"""Gets the id of this ScanExpireKeyResponse.
 
         主键ID
 
@@ -97,7 +97,7 @@ class ScanExpireKeyResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScanExpireKeyResponse.
+        r"""Sets the id of this ScanExpireKeyResponse.
 
         主键ID
 
@@ -108,7 +108,7 @@ class ScanExpireKeyResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ScanExpireKeyResponse.
+        r"""Gets the instance_id of this ScanExpireKeyResponse.
 
         实例ID
 
@@ -119,7 +119,7 @@ class ScanExpireKeyResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ScanExpireKeyResponse.
+        r"""Sets the instance_id of this ScanExpireKeyResponse.
 
         实例ID
 
@@ -130,7 +130,7 @@ class ScanExpireKeyResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ScanExpireKeyResponse.
+        r"""Gets the status of this ScanExpireKeyResponse.
 
         状态
 
@@ -141,7 +141,7 @@ class ScanExpireKeyResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScanExpireKeyResponse.
+        r"""Sets the status of this ScanExpireKeyResponse.
 
         状态
 
@@ -152,7 +152,7 @@ class ScanExpireKeyResponse(SdkResponse):
 
     @property
     def scan_type(self):
-        """Gets the scan_type of this ScanExpireKeyResponse.
+        r"""Gets the scan_type of this ScanExpireKeyResponse.
 
         扫描类型
 
@@ -163,7 +163,7 @@ class ScanExpireKeyResponse(SdkResponse):
 
     @scan_type.setter
     def scan_type(self, scan_type):
-        """Sets the scan_type of this ScanExpireKeyResponse.
+        r"""Sets the scan_type of this ScanExpireKeyResponse.
 
         扫描类型
 
@@ -174,7 +174,7 @@ class ScanExpireKeyResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ScanExpireKeyResponse.
+        r"""Gets the created_at of this ScanExpireKeyResponse.
 
         创建时间, 格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -185,7 +185,7 @@ class ScanExpireKeyResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ScanExpireKeyResponse.
+        r"""Sets the created_at of this ScanExpireKeyResponse.
 
         创建时间, 格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -196,7 +196,7 @@ class ScanExpireKeyResponse(SdkResponse):
 
     @property
     def started_at(self):
-        """Gets the started_at of this ScanExpireKeyResponse.
+        r"""Gets the started_at of this ScanExpireKeyResponse.
 
         开始时间, 格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -207,7 +207,7 @@ class ScanExpireKeyResponse(SdkResponse):
 
     @started_at.setter
     def started_at(self, started_at):
-        """Sets the started_at of this ScanExpireKeyResponse.
+        r"""Sets the started_at of this ScanExpireKeyResponse.
 
         开始时间, 格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -218,7 +218,7 @@ class ScanExpireKeyResponse(SdkResponse):
 
     @property
     def finished_at(self):
-        """Gets the finished_at of this ScanExpireKeyResponse.
+        r"""Gets the finished_at of this ScanExpireKeyResponse.
 
         完成时间, 格式为：\"2020-06-15T02:21:18.669Z\"
 
@@ -229,7 +229,7 @@ class ScanExpireKeyResponse(SdkResponse):
 
     @finished_at.setter
     def finished_at(self, finished_at):
-        """Sets the finished_at of this ScanExpireKeyResponse.
+        r"""Sets the finished_at of this ScanExpireKeyResponse.
 
         完成时间, 格式为：\"2020-06-15T02:21:18.669Z\"
 

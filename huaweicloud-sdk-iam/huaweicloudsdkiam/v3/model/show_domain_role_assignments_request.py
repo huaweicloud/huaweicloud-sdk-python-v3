@@ -51,7 +51,7 @@ class ShowDomainRoleAssignmentsRequest:
     }
 
     def __init__(self, domain_id=None, role_id=None, subject=None, subject_user_id=None, subject_group_id=None, subject_agency_id=None, scope=None, scope_project_id=None, scope_domain_id=None, scope_enterprise_projects_id=None, is_inherited=None, include_group=None, page=None, per_page=None):
-        """ShowDomainRoleAssignmentsRequest
+        r"""ShowDomainRoleAssignmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -133,7 +133,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Gets the domain_id of this ShowDomainRoleAssignmentsRequest.
 
         待查询账号ID。
 
@@ -144,7 +144,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Sets the domain_id of this ShowDomainRoleAssignmentsRequest.
 
         待查询账号ID。
 
@@ -155,7 +155,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @property
     def role_id(self):
-        """Gets the role_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Gets the role_id of this ShowDomainRoleAssignmentsRequest.
 
         策略ID。
 
@@ -166,7 +166,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Sets the role_id of this ShowDomainRoleAssignmentsRequest.
 
         策略ID。
 
@@ -177,7 +177,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @property
     def subject(self):
-        """Gets the subject of this ShowDomainRoleAssignmentsRequest.
+        r"""Gets the subject of this ShowDomainRoleAssignmentsRequest.
 
         授权主体,取值范围：user、group、agency。该参数与subject.user_id、subject.group_id、subject.agency_id只能选择一个。
 
@@ -188,7 +188,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this ShowDomainRoleAssignmentsRequest.
+        r"""Sets the subject of this ShowDomainRoleAssignmentsRequest.
 
         授权主体,取值范围：user、group、agency。该参数与subject.user_id、subject.group_id、subject.agency_id只能选择一个。
 
@@ -199,7 +199,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @property
     def subject_user_id(self):
-        """Gets the subject_user_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Gets the subject_user_id of this ShowDomainRoleAssignmentsRequest.
 
         授权的IAM用户ID。
 
@@ -210,7 +210,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @subject_user_id.setter
     def subject_user_id(self, subject_user_id):
-        """Sets the subject_user_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Sets the subject_user_id of this ShowDomainRoleAssignmentsRequest.
 
         授权的IAM用户ID。
 
@@ -221,7 +221,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @property
     def subject_group_id(self):
-        """Gets the subject_group_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Gets the subject_group_id of this ShowDomainRoleAssignmentsRequest.
 
         授权的用户组ID。
 
@@ -232,7 +232,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @subject_group_id.setter
     def subject_group_id(self, subject_group_id):
-        """Sets the subject_group_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Sets the subject_group_id of this ShowDomainRoleAssignmentsRequest.
 
         授权的用户组ID。
 
@@ -243,7 +243,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @property
     def subject_agency_id(self):
-        """Gets the subject_agency_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Gets the subject_agency_id of this ShowDomainRoleAssignmentsRequest.
 
         授权的委托ID。
 
@@ -254,7 +254,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @subject_agency_id.setter
     def subject_agency_id(self, subject_agency_id):
-        """Sets the subject_agency_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Sets the subject_agency_id of this ShowDomainRoleAssignmentsRequest.
 
         授权的委托ID。
 
@@ -265,7 +265,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @property
     def scope(self):
-        """Gets the scope of this ShowDomainRoleAssignmentsRequest.
+        r"""Gets the scope of this ShowDomainRoleAssignmentsRequest.
 
         授权范围，取值范围：project、domain、enterprise_project。该参数与scope.project_id、scope.domain_id、scope.enterprise_projects_id只能选择一个。 > - 如需查看全局服务授权记录，scope取值domain或填写scope.domain_id。 > - 如需查看基于所有资源的授权记录，scope取值为domain，且is_inherited取值为true > - 如需查看基于项目的授权记录，scope取值为project或填写scope.project_id。 > - 如需查看基于企业项目的授权记录，scope取值为enterprise_project或填写scope.enterprise_project_id。
 
@@ -276,7 +276,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this ShowDomainRoleAssignmentsRequest.
+        r"""Sets the scope of this ShowDomainRoleAssignmentsRequest.
 
         授权范围，取值范围：project、domain、enterprise_project。该参数与scope.project_id、scope.domain_id、scope.enterprise_projects_id只能选择一个。 > - 如需查看全局服务授权记录，scope取值domain或填写scope.domain_id。 > - 如需查看基于所有资源的授权记录，scope取值为domain，且is_inherited取值为true > - 如需查看基于项目的授权记录，scope取值为project或填写scope.project_id。 > - 如需查看基于企业项目的授权记录，scope取值为enterprise_project或填写scope.enterprise_project_id。
 
@@ -287,7 +287,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @property
     def scope_project_id(self):
-        """Gets the scope_project_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Gets the scope_project_id of this ShowDomainRoleAssignmentsRequest.
 
         授权的项目ID。
 
@@ -298,7 +298,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @scope_project_id.setter
     def scope_project_id(self, scope_project_id):
-        """Sets the scope_project_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Sets the scope_project_id of this ShowDomainRoleAssignmentsRequest.
 
         授权的项目ID。
 
@@ -309,7 +309,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @property
     def scope_domain_id(self):
-        """Gets the scope_domain_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Gets the scope_domain_id of this ShowDomainRoleAssignmentsRequest.
 
         待查询账号ID。
 
@@ -320,7 +320,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @scope_domain_id.setter
     def scope_domain_id(self, scope_domain_id):
-        """Sets the scope_domain_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Sets the scope_domain_id of this ShowDomainRoleAssignmentsRequest.
 
         待查询账号ID。
 
@@ -331,7 +331,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @property
     def scope_enterprise_projects_id(self):
-        """Gets the scope_enterprise_projects_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Gets the scope_enterprise_projects_id of this ShowDomainRoleAssignmentsRequest.
 
         授权的企业项目ID。
 
@@ -342,7 +342,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @scope_enterprise_projects_id.setter
     def scope_enterprise_projects_id(self, scope_enterprise_projects_id):
-        """Sets the scope_enterprise_projects_id of this ShowDomainRoleAssignmentsRequest.
+        r"""Sets the scope_enterprise_projects_id of this ShowDomainRoleAssignmentsRequest.
 
         授权的企业项目ID。
 
@@ -353,7 +353,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @property
     def is_inherited(self):
-        """Gets the is_inherited of this ShowDomainRoleAssignmentsRequest.
+        r"""Gets the is_inherited of this ShowDomainRoleAssignmentsRequest.
 
         是否包含基于所有项目授权的记录，默认为false。当参数scope=domain或者scope.domain_id存在时生效。true：查询基于所有项目授权的记录。 false：查询基于全局服务授权的记录。
 
@@ -364,7 +364,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @is_inherited.setter
     def is_inherited(self, is_inherited):
-        """Sets the is_inherited of this ShowDomainRoleAssignmentsRequest.
+        r"""Sets the is_inherited of this ShowDomainRoleAssignmentsRequest.
 
         是否包含基于所有项目授权的记录，默认为false。当参数scope=domain或者scope.domain_id存在时生效。true：查询基于所有项目授权的记录。 false：查询基于全局服务授权的记录。
 
@@ -375,7 +375,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @property
     def include_group(self):
-        """Gets the include_group of this ShowDomainRoleAssignmentsRequest.
+        r"""Gets the include_group of this ShowDomainRoleAssignmentsRequest.
 
         是否包含基于IAM用户所属用户组授权的记录，默认为true。当参数subject=user或者subject.user_id存在时生效。true：查询基于IAM用户授权、IAM用户所属用户组授权的记录。 false：仅查询基于IAM用户授权的记录。
 
@@ -386,7 +386,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @include_group.setter
     def include_group(self, include_group):
-        """Sets the include_group of this ShowDomainRoleAssignmentsRequest.
+        r"""Sets the include_group of this ShowDomainRoleAssignmentsRequest.
 
         是否包含基于IAM用户所属用户组授权的记录，默认为true。当参数subject=user或者subject.user_id存在时生效。true：查询基于IAM用户授权、IAM用户所属用户组授权的记录。 false：仅查询基于IAM用户授权的记录。
 
@@ -397,7 +397,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @property
     def page(self):
-        """Gets the page of this ShowDomainRoleAssignmentsRequest.
+        r"""Gets the page of this ShowDomainRoleAssignmentsRequest.
 
         分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。
 
@@ -408,7 +408,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowDomainRoleAssignmentsRequest.
+        r"""Sets the page of this ShowDomainRoleAssignmentsRequest.
 
         分页查询时数据的页数，查询值最小为1。需要与per_page同时存在。
 
@@ -419,7 +419,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @property
     def per_page(self):
-        """Gets the per_page of this ShowDomainRoleAssignmentsRequest.
+        r"""Gets the per_page of this ShowDomainRoleAssignmentsRequest.
 
         分页查询时每页的数据个数，取值范围为[1,50]。需要与page同时存在。
 
@@ -430,7 +430,7 @@ class ShowDomainRoleAssignmentsRequest:
 
     @per_page.setter
     def per_page(self, per_page):
-        """Sets the per_page of this ShowDomainRoleAssignmentsRequest.
+        r"""Sets the per_page of this ShowDomainRoleAssignmentsRequest.
 
         分页查询时每页的数据个数，取值范围为[1,50]。需要与page同时存在。
 

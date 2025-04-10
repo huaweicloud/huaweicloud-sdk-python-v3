@@ -25,7 +25,7 @@ class ChangeSecurityGroupRequestBody:
     }
 
     def __init__(self, change_security_group=None):
-        """ChangeSecurityGroupRequestBody
+        r"""ChangeSecurityGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ChangeSecurityGroupRequestBody:
 
     @property
     def change_security_group(self):
-        """Gets the change_security_group of this ChangeSecurityGroupRequestBody.
+        r"""Gets the change_security_group of this ChangeSecurityGroupRequestBody.
 
         :return: The change_security_group of this ChangeSecurityGroupRequestBody.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ChangeSecurityGroup`
@@ -51,7 +51,7 @@ class ChangeSecurityGroupRequestBody:
 
     @change_security_group.setter
     def change_security_group(self, change_security_group):
-        """Sets the change_security_group of this ChangeSecurityGroupRequestBody.
+        r"""Sets the change_security_group of this ChangeSecurityGroupRequestBody.
 
         :param change_security_group: The change_security_group of this ChangeSecurityGroupRequestBody.
         :type change_security_group: :class:`huaweicloudsdksfsturbo.v1.ChangeSecurityGroup`

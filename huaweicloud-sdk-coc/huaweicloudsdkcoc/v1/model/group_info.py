@@ -45,7 +45,7 @@ class GroupInfo:
     }
 
     def __init__(self, id=None, name=None, code=None, domain_id=None, region_id=None, application_id=None, component_id=None, sync_mode=None, vendor=None, sync_rules=None, relation_configurations=None):
-        """GroupInfo
+        r"""GroupInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class GroupInfo:
 
     @property
     def id(self):
-        """Gets the id of this GroupInfo.
+        r"""Gets the id of this GroupInfo.
 
         :return: The id of this GroupInfo.
         :rtype: str
@@ -122,7 +122,7 @@ class GroupInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GroupInfo.
+        r"""Sets the id of this GroupInfo.
 
         :param id: The id of this GroupInfo.
         :type id: str
@@ -131,7 +131,7 @@ class GroupInfo:
 
     @property
     def name(self):
-        """Gets the name of this GroupInfo.
+        r"""Gets the name of this GroupInfo.
 
         :return: The name of this GroupInfo.
         :rtype: str
@@ -140,7 +140,7 @@ class GroupInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GroupInfo.
+        r"""Sets the name of this GroupInfo.
 
         :param name: The name of this GroupInfo.
         :type name: str
@@ -149,7 +149,7 @@ class GroupInfo:
 
     @property
     def code(self):
-        """Gets the code of this GroupInfo.
+        r"""Gets the code of this GroupInfo.
 
         :return: The code of this GroupInfo.
         :rtype: str
@@ -158,7 +158,7 @@ class GroupInfo:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this GroupInfo.
+        r"""Sets the code of this GroupInfo.
 
         :param code: The code of this GroupInfo.
         :type code: str
@@ -167,7 +167,7 @@ class GroupInfo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this GroupInfo.
+        r"""Gets the domain_id of this GroupInfo.
 
         :return: The domain_id of this GroupInfo.
         :rtype: str
@@ -176,7 +176,7 @@ class GroupInfo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this GroupInfo.
+        r"""Sets the domain_id of this GroupInfo.
 
         :param domain_id: The domain_id of this GroupInfo.
         :type domain_id: str
@@ -185,7 +185,7 @@ class GroupInfo:
 
     @property
     def region_id(self):
-        """Gets the region_id of this GroupInfo.
+        r"""Gets the region_id of this GroupInfo.
 
         :return: The region_id of this GroupInfo.
         :rtype: str
@@ -194,7 +194,7 @@ class GroupInfo:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this GroupInfo.
+        r"""Sets the region_id of this GroupInfo.
 
         :param region_id: The region_id of this GroupInfo.
         :type region_id: str
@@ -203,7 +203,7 @@ class GroupInfo:
 
     @property
     def application_id(self):
-        """Gets the application_id of this GroupInfo.
+        r"""Gets the application_id of this GroupInfo.
 
         :return: The application_id of this GroupInfo.
         :rtype: str
@@ -212,7 +212,7 @@ class GroupInfo:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this GroupInfo.
+        r"""Sets the application_id of this GroupInfo.
 
         :param application_id: The application_id of this GroupInfo.
         :type application_id: str
@@ -221,7 +221,7 @@ class GroupInfo:
 
     @property
     def component_id(self):
-        """Gets the component_id of this GroupInfo.
+        r"""Gets the component_id of this GroupInfo.
 
         :return: The component_id of this GroupInfo.
         :rtype: str
@@ -230,7 +230,7 @@ class GroupInfo:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this GroupInfo.
+        r"""Sets the component_id of this GroupInfo.
 
         :param component_id: The component_id of this GroupInfo.
         :type component_id: str
@@ -239,7 +239,7 @@ class GroupInfo:
 
     @property
     def sync_mode(self):
-        """Gets the sync_mode of this GroupInfo.
+        r"""Gets the sync_mode of this GroupInfo.
 
         :return: The sync_mode of this GroupInfo.
         :rtype: str
@@ -248,7 +248,7 @@ class GroupInfo:
 
     @sync_mode.setter
     def sync_mode(self, sync_mode):
-        """Sets the sync_mode of this GroupInfo.
+        r"""Sets the sync_mode of this GroupInfo.
 
         :param sync_mode: The sync_mode of this GroupInfo.
         :type sync_mode: str
@@ -257,7 +257,7 @@ class GroupInfo:
 
     @property
     def vendor(self):
-        """Gets the vendor of this GroupInfo.
+        r"""Gets the vendor of this GroupInfo.
 
         :return: The vendor of this GroupInfo.
         :rtype: str
@@ -266,7 +266,7 @@ class GroupInfo:
 
     @vendor.setter
     def vendor(self, vendor):
-        """Sets the vendor of this GroupInfo.
+        r"""Sets the vendor of this GroupInfo.
 
         :param vendor: The vendor of this GroupInfo.
         :type vendor: str
@@ -275,7 +275,7 @@ class GroupInfo:
 
     @property
     def sync_rules(self):
-        """Gets the sync_rules of this GroupInfo.
+        r"""Gets the sync_rules of this GroupInfo.
 
         :return: The sync_rules of this GroupInfo.
         :rtype: str
@@ -284,7 +284,7 @@ class GroupInfo:
 
     @sync_rules.setter
     def sync_rules(self, sync_rules):
-        """Sets the sync_rules of this GroupInfo.
+        r"""Sets the sync_rules of this GroupInfo.
 
         :param sync_rules: The sync_rules of this GroupInfo.
         :type sync_rules: str
@@ -293,7 +293,7 @@ class GroupInfo:
 
     @property
     def relation_configurations(self):
-        """Gets the relation_configurations of this GroupInfo.
+        r"""Gets the relation_configurations of this GroupInfo.
 
         :return: The relation_configurations of this GroupInfo.
         :rtype: list[str]
@@ -302,7 +302,7 @@ class GroupInfo:
 
     @relation_configurations.setter
     def relation_configurations(self, relation_configurations):
-        """Sets the relation_configurations of this GroupInfo.
+        r"""Sets the relation_configurations of this GroupInfo.
 
         :param relation_configurations: The relation_configurations of this GroupInfo.
         :type relation_configurations: list[str]

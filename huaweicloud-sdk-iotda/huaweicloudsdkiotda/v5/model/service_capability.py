@@ -37,7 +37,7 @@ class ServiceCapability:
     }
 
     def __init__(self, service_id=None, service_type=None, properties=None, commands=None, events=None, description=None, option=None):
-        """ServiceCapability
+        r"""ServiceCapability
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ServiceCapability:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ServiceCapability.
+        r"""Gets the service_id of this ServiceCapability.
 
         **参数说明**：设备的服务ID。注：产品内不允许重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
 
@@ -94,7 +94,7 @@ class ServiceCapability:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ServiceCapability.
+        r"""Sets the service_id of this ServiceCapability.
 
         **参数说明**：设备的服务ID。注：产品内不允许重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
 
@@ -105,7 +105,7 @@ class ServiceCapability:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ServiceCapability.
+        r"""Gets the service_type of this ServiceCapability.
 
         **参数说明**：设备的服务类型。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
 
@@ -116,7 +116,7 @@ class ServiceCapability:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ServiceCapability.
+        r"""Sets the service_type of this ServiceCapability.
 
         **参数说明**：设备的服务类型。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
 
@@ -127,7 +127,7 @@ class ServiceCapability:
 
     @property
     def properties(self):
-        """Gets the properties of this ServiceCapability.
+        r"""Gets the properties of this ServiceCapability.
 
         **参数说明**：设备服务支持的属性列表。 **取值范围**：数组长度大小不超过500。
 
@@ -138,7 +138,7 @@ class ServiceCapability:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ServiceCapability.
+        r"""Sets the properties of this ServiceCapability.
 
         **参数说明**：设备服务支持的属性列表。 **取值范围**：数组长度大小不超过500。
 
@@ -149,7 +149,7 @@ class ServiceCapability:
 
     @property
     def commands(self):
-        """Gets the commands of this ServiceCapability.
+        r"""Gets the commands of this ServiceCapability.
 
         **参数说明**：设备服务支持的命令列表。 **取值范围**：数组长度大小不超过500。
 
@@ -160,7 +160,7 @@ class ServiceCapability:
 
     @commands.setter
     def commands(self, commands):
-        """Sets the commands of this ServiceCapability.
+        r"""Sets the commands of this ServiceCapability.
 
         **参数说明**：设备服务支持的命令列表。 **取值范围**：数组长度大小不超过500。
 
@@ -171,7 +171,7 @@ class ServiceCapability:
 
     @property
     def events(self):
-        """Gets the events of this ServiceCapability.
+        r"""Gets the events of this ServiceCapability.
 
         **参数说明**：设备服务支持的事件列表。目前暂未支持自定义事件，创建/修改产品时无需定义该字段。 **取值范围**：数组长度大小不超过500。
 
@@ -182,7 +182,7 @@ class ServiceCapability:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this ServiceCapability.
+        r"""Sets the events of this ServiceCapability.
 
         **参数说明**：设备服务支持的事件列表。目前暂未支持自定义事件，创建/修改产品时无需定义该字段。 **取值范围**：数组长度大小不超过500。
 
@@ -193,7 +193,7 @@ class ServiceCapability:
 
     @property
     def description(self):
-        """Gets the description of this ServiceCapability.
+        r"""Gets the description of this ServiceCapability.
 
         **参数说明**：设备服务的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
@@ -204,7 +204,7 @@ class ServiceCapability:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServiceCapability.
+        r"""Sets the description of this ServiceCapability.
 
         **参数说明**：设备服务的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
@@ -215,7 +215,7 @@ class ServiceCapability:
 
     @property
     def option(self):
-        """Gets the option of this ServiceCapability.
+        r"""Gets the option of this ServiceCapability.
 
         **参数说明**：指定设备服务是否必选。目前本字段为非功能性字段，仅起到标识作用。 **取值范围**： - Master：主服务 - Mandatory：必选服务 - Optional：可选服务 默认值为Optional。
 
@@ -226,7 +226,7 @@ class ServiceCapability:
 
     @option.setter
     def option(self, option):
-        """Sets the option of this ServiceCapability.
+        r"""Sets the option of this ServiceCapability.
 
         **参数说明**：指定设备服务是否必选。目前本字段为非功能性字段，仅起到标识作用。 **取值范围**： - Master：主服务 - Mandatory：必选服务 - Optional：可选服务 默认值为Optional。
 

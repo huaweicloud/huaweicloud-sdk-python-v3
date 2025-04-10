@@ -24,7 +24,7 @@ class SetAttendeeLanChannelResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetAttendeeLanChannelResponse
+        r"""SetAttendeeLanChannelResponse
 
         The model defined in huaweicloud sdk
 

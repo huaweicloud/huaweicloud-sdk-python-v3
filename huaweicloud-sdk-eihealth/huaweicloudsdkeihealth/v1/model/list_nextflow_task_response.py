@@ -28,7 +28,7 @@ class ListNextflowTaskResponse(SdkResponse):
     }
 
     def __init__(self, tasks=None, count=None):
-        """ListNextflowTaskResponse
+        r"""ListNextflowTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListNextflowTaskResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListNextflowTaskResponse.
+        r"""Gets the tasks of this ListNextflowTaskResponse.
 
         子任务实例
 
@@ -62,7 +62,7 @@ class ListNextflowTaskResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListNextflowTaskResponse.
+        r"""Sets the tasks of this ListNextflowTaskResponse.
 
         子任务实例
 
@@ -73,7 +73,7 @@ class ListNextflowTaskResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListNextflowTaskResponse.
+        r"""Gets the count of this ListNextflowTaskResponse.
 
         子任务的总数
 
@@ -84,7 +84,7 @@ class ListNextflowTaskResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListNextflowTaskResponse.
+        r"""Sets the count of this ListNextflowTaskResponse.
 
         子任务的总数
 

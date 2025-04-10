@@ -33,7 +33,7 @@ class ListAppQuotaBindableAppsRequest:
     }
 
     def __init__(self, instance_id=None, app_quota_id=None, offset=None, limit=None, app_name=None):
-        """ListAppQuotaBindableAppsRequest
+        r"""ListAppQuotaBindableAppsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListAppQuotaBindableAppsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAppQuotaBindableAppsRequest.
+        r"""Gets the instance_id of this ListAppQuotaBindableAppsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -80,7 +80,7 @@ class ListAppQuotaBindableAppsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAppQuotaBindableAppsRequest.
+        r"""Sets the instance_id of this ListAppQuotaBindableAppsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -91,7 +91,7 @@ class ListAppQuotaBindableAppsRequest:
 
     @property
     def app_quota_id(self):
-        """Gets the app_quota_id of this ListAppQuotaBindableAppsRequest.
+        r"""Gets the app_quota_id of this ListAppQuotaBindableAppsRequest.
 
         凭据配额编号
 
@@ -102,7 +102,7 @@ class ListAppQuotaBindableAppsRequest:
 
     @app_quota_id.setter
     def app_quota_id(self, app_quota_id):
-        """Sets the app_quota_id of this ListAppQuotaBindableAppsRequest.
+        r"""Sets the app_quota_id of this ListAppQuotaBindableAppsRequest.
 
         凭据配额编号
 
@@ -113,7 +113,7 @@ class ListAppQuotaBindableAppsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppQuotaBindableAppsRequest.
+        r"""Gets the offset of this ListAppQuotaBindableAppsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -124,7 +124,7 @@ class ListAppQuotaBindableAppsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppQuotaBindableAppsRequest.
+        r"""Sets the offset of this ListAppQuotaBindableAppsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -135,7 +135,7 @@ class ListAppQuotaBindableAppsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppQuotaBindableAppsRequest.
+        r"""Gets the limit of this ListAppQuotaBindableAppsRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -146,7 +146,7 @@ class ListAppQuotaBindableAppsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppQuotaBindableAppsRequest.
+        r"""Sets the limit of this ListAppQuotaBindableAppsRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -157,7 +157,7 @@ class ListAppQuotaBindableAppsRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListAppQuotaBindableAppsRequest.
+        r"""Gets the app_name of this ListAppQuotaBindableAppsRequest.
 
         应用名称
 
@@ -168,7 +168,7 @@ class ListAppQuotaBindableAppsRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListAppQuotaBindableAppsRequest.
+        r"""Sets the app_name of this ListAppQuotaBindableAppsRequest.
 
         应用名称
 

@@ -29,7 +29,7 @@ class MemberBaseDto:
     }
 
     def __init__(self, id=None, iam_id=None, name=None):
-        """MemberBaseDto
+        r"""MemberBaseDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MemberBaseDto:
 
     @property
     def id(self):
-        """Gets the id of this MemberBaseDto.
+        r"""Gets the id of this MemberBaseDto.
 
         用户id
 
@@ -68,7 +68,7 @@ class MemberBaseDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MemberBaseDto.
+        r"""Sets the id of this MemberBaseDto.
 
         用户id
 
@@ -79,7 +79,7 @@ class MemberBaseDto:
 
     @property
     def iam_id(self):
-        """Gets the iam_id of this MemberBaseDto.
+        r"""Gets the iam_id of this MemberBaseDto.
 
         iam_id
 
@@ -90,7 +90,7 @@ class MemberBaseDto:
 
     @iam_id.setter
     def iam_id(self, iam_id):
-        """Sets the iam_id of this MemberBaseDto.
+        r"""Sets the iam_id of this MemberBaseDto.
 
         iam_id
 
@@ -101,7 +101,7 @@ class MemberBaseDto:
 
     @property
     def name(self):
-        """Gets the name of this MemberBaseDto.
+        r"""Gets the name of this MemberBaseDto.
 
         成员名字
 
@@ -112,7 +112,7 @@ class MemberBaseDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MemberBaseDto.
+        r"""Sets the name of this MemberBaseDto.
 
         成员名字
 

@@ -28,7 +28,7 @@ class ListHistoryResponse(SdkResponse):
     }
 
     def __init__(self, timestamps=None, properties=None):
-        """ListHistoryResponse
+        r"""ListHistoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListHistoryResponse(SdkResponse):
 
     @property
     def timestamps(self):
-        """Gets the timestamps of this ListHistoryResponse.
+        r"""Gets the timestamps of this ListHistoryResponse.
 
         时间序列
 
@@ -62,7 +62,7 @@ class ListHistoryResponse(SdkResponse):
 
     @timestamps.setter
     def timestamps(self, timestamps):
-        """Sets the timestamps of this ListHistoryResponse.
+        r"""Sets the timestamps of this ListHistoryResponse.
 
         时间序列
 
@@ -73,7 +73,7 @@ class ListHistoryResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this ListHistoryResponse.
+        r"""Gets the properties of this ListHistoryResponse.
 
         查询设备的属性值
 
@@ -84,7 +84,7 @@ class ListHistoryResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ListHistoryResponse.
+        r"""Sets the properties of this ListHistoryResponse.
 
         查询设备的属性值
 

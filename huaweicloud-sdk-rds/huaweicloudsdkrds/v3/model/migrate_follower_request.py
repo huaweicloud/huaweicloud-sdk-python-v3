@@ -29,7 +29,7 @@ class MigrateFollowerRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """MigrateFollowerRequest
+        r"""MigrateFollowerRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class MigrateFollowerRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this MigrateFollowerRequest.
+        r"""Gets the x_language of this MigrateFollowerRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class MigrateFollowerRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this MigrateFollowerRequest.
+        r"""Sets the x_language of this MigrateFollowerRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class MigrateFollowerRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this MigrateFollowerRequest.
+        r"""Gets the instance_id of this MigrateFollowerRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class MigrateFollowerRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this MigrateFollowerRequest.
+        r"""Sets the instance_id of this MigrateFollowerRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class MigrateFollowerRequest:
 
     @property
     def body(self):
-        """Gets the body of this MigrateFollowerRequest.
+        r"""Gets the body of this MigrateFollowerRequest.
 
         :return: The body of this MigrateFollowerRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.FollowerMigrateRequest`
@@ -109,7 +109,7 @@ class MigrateFollowerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this MigrateFollowerRequest.
+        r"""Sets the body of this MigrateFollowerRequest.
 
         :param body: The body of this MigrateFollowerRequest.
         :type body: :class:`huaweicloudsdkrds.v3.FollowerMigrateRequest`

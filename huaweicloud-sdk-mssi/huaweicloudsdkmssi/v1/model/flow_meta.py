@@ -95,7 +95,7 @@ class FlowMeta:
     }
 
     def __init__(self, apic_id=None, apic_release_status=None, apig_url=None, connectors=None, connectors_latest=None, creatd_time=None, description=None, dev_status=None, domain_id=None, enterprise_project_id=None, enterprise_project_name=None, extend_configs=None, flow_source_type=None, functions=None, graph=None, his_transfer_status=None, icon=None, id=None, installed_connector=None, is_valid=None, label=None, name=None, notice_status=None, project_id=None, schema_version=None, status=None, steps=None, tags=None, template_id=None, template_name=None, test_result=None, type=None, updated_time=None, user_id=None, version=None, webhook=None):
-        """FlowMeta
+        r"""FlowMeta
 
         The model defined in huaweicloud sdk
 
@@ -288,7 +288,7 @@ class FlowMeta:
 
     @property
     def apic_id(self):
-        """Gets the apic_id of this FlowMeta.
+        r"""Gets the apic_id of this FlowMeta.
 
         发布到apic的api id
 
@@ -299,7 +299,7 @@ class FlowMeta:
 
     @apic_id.setter
     def apic_id(self, apic_id):
-        """Sets the apic_id of this FlowMeta.
+        r"""Sets the apic_id of this FlowMeta.
 
         发布到apic的api id
 
@@ -310,7 +310,7 @@ class FlowMeta:
 
     @property
     def apic_release_status(self):
-        """Gets the apic_release_status of this FlowMeta.
+        r"""Gets the apic_release_status of this FlowMeta.
 
         发布到apic的状态
 
@@ -321,7 +321,7 @@ class FlowMeta:
 
     @apic_release_status.setter
     def apic_release_status(self, apic_release_status):
-        """Sets the apic_release_status of this FlowMeta.
+        r"""Sets the apic_release_status of this FlowMeta.
 
         发布到apic的状态
 
@@ -332,7 +332,7 @@ class FlowMeta:
 
     @property
     def apig_url(self):
-        """Gets the apig_url of this FlowMeta.
+        r"""Gets the apig_url of this FlowMeta.
 
         api流注册到apig的url
 
@@ -343,7 +343,7 @@ class FlowMeta:
 
     @apig_url.setter
     def apig_url(self, apig_url):
-        """Sets the apig_url of this FlowMeta.
+        r"""Sets the apig_url of this FlowMeta.
 
         api流注册到apig的url
 
@@ -354,7 +354,7 @@ class FlowMeta:
 
     @property
     def connectors(self):
-        """Gets the connectors of this FlowMeta.
+        r"""Gets the connectors of this FlowMeta.
 
         连接器
 
@@ -365,7 +365,7 @@ class FlowMeta:
 
     @connectors.setter
     def connectors(self, connectors):
-        """Sets the connectors of this FlowMeta.
+        r"""Sets the connectors of this FlowMeta.
 
         连接器
 
@@ -376,7 +376,7 @@ class FlowMeta:
 
     @property
     def connectors_latest(self):
-        """Gets the connectors_latest of this FlowMeta.
+        r"""Gets the connectors_latest of this FlowMeta.
 
         连接器最新版本
 
@@ -387,7 +387,7 @@ class FlowMeta:
 
     @connectors_latest.setter
     def connectors_latest(self, connectors_latest):
-        """Sets the connectors_latest of this FlowMeta.
+        r"""Sets the connectors_latest of this FlowMeta.
 
         连接器最新版本
 
@@ -398,7 +398,7 @@ class FlowMeta:
 
     @property
     def creatd_time(self):
-        """Gets the creatd_time of this FlowMeta.
+        r"""Gets the creatd_time of this FlowMeta.
 
         创建时间
 
@@ -409,7 +409,7 @@ class FlowMeta:
 
     @creatd_time.setter
     def creatd_time(self, creatd_time):
-        """Sets the creatd_time of this FlowMeta.
+        r"""Sets the creatd_time of this FlowMeta.
 
         创建时间
 
@@ -420,7 +420,7 @@ class FlowMeta:
 
     @property
     def description(self):
-        """Gets the description of this FlowMeta.
+        r"""Gets the description of this FlowMeta.
 
         流的描述信息
 
@@ -431,7 +431,7 @@ class FlowMeta:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FlowMeta.
+        r"""Sets the description of this FlowMeta.
 
         流的描述信息
 
@@ -442,7 +442,7 @@ class FlowMeta:
 
     @property
     def dev_status(self):
-        """Gets the dev_status of this FlowMeta.
+        r"""Gets the dev_status of this FlowMeta.
 
         开发状态
 
@@ -453,7 +453,7 @@ class FlowMeta:
 
     @dev_status.setter
     def dev_status(self, dev_status):
-        """Sets the dev_status of this FlowMeta.
+        r"""Sets the dev_status of this FlowMeta.
 
         开发状态
 
@@ -464,7 +464,7 @@ class FlowMeta:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this FlowMeta.
+        r"""Gets the domain_id of this FlowMeta.
 
         租户ID
 
@@ -475,7 +475,7 @@ class FlowMeta:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this FlowMeta.
+        r"""Sets the domain_id of this FlowMeta.
 
         租户ID
 
@@ -486,7 +486,7 @@ class FlowMeta:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this FlowMeta.
+        r"""Gets the enterprise_project_id of this FlowMeta.
 
         企业项目id
 
@@ -497,7 +497,7 @@ class FlowMeta:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this FlowMeta.
+        r"""Sets the enterprise_project_id of this FlowMeta.
 
         企业项目id
 
@@ -508,7 +508,7 @@ class FlowMeta:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this FlowMeta.
+        r"""Gets the enterprise_project_name of this FlowMeta.
 
         企业项目名称
 
@@ -519,7 +519,7 @@ class FlowMeta:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this FlowMeta.
+        r"""Sets the enterprise_project_name of this FlowMeta.
 
         企业项目名称
 
@@ -530,7 +530,7 @@ class FlowMeta:
 
     @property
     def extend_configs(self):
-        """Gets the extend_configs of this FlowMeta.
+        r"""Gets the extend_configs of this FlowMeta.
 
         流/流模板扩展配置列表
 
@@ -541,7 +541,7 @@ class FlowMeta:
 
     @extend_configs.setter
     def extend_configs(self, extend_configs):
-        """Sets the extend_configs of this FlowMeta.
+        r"""Sets the extend_configs of this FlowMeta.
 
         流/流模板扩展配置列表
 
@@ -552,7 +552,7 @@ class FlowMeta:
 
     @property
     def flow_source_type(self):
-        """Gets the flow_source_type of this FlowMeta.
+        r"""Gets the flow_source_type of this FlowMeta.
 
         流来源： inner: 公共流模板； custom： 我的流模板
 
@@ -563,7 +563,7 @@ class FlowMeta:
 
     @flow_source_type.setter
     def flow_source_type(self, flow_source_type):
-        """Sets the flow_source_type of this FlowMeta.
+        r"""Sets the flow_source_type of this FlowMeta.
 
         流来源： inner: 公共流模板； custom： 我的流模板
 
@@ -574,7 +574,7 @@ class FlowMeta:
 
     @property
     def functions(self):
-        """Gets the functions of this FlowMeta.
+        r"""Gets the functions of this FlowMeta.
 
         流/流模板函数列表
 
@@ -585,7 +585,7 @@ class FlowMeta:
 
     @functions.setter
     def functions(self, functions):
-        """Sets the functions of this FlowMeta.
+        r"""Sets the functions of this FlowMeta.
 
         流/流模板函数列表
 
@@ -596,7 +596,7 @@ class FlowMeta:
 
     @property
     def graph(self):
-        """Gets the graph of this FlowMeta.
+        r"""Gets the graph of this FlowMeta.
 
         流的编排数据(大josn)
 
@@ -607,7 +607,7 @@ class FlowMeta:
 
     @graph.setter
     def graph(self, graph):
-        """Sets the graph of this FlowMeta.
+        r"""Sets the graph of this FlowMeta.
 
         流的编排数据(大josn)
 
@@ -618,7 +618,7 @@ class FlowMeta:
 
     @property
     def his_transfer_status(self):
-        """Gets the his_transfer_status of this FlowMeta.
+        r"""Gets the his_transfer_status of this FlowMeta.
 
         :return: The his_transfer_status of this FlowMeta.
         :rtype: str
@@ -627,7 +627,7 @@ class FlowMeta:
 
     @his_transfer_status.setter
     def his_transfer_status(self, his_transfer_status):
-        """Sets the his_transfer_status of this FlowMeta.
+        r"""Sets the his_transfer_status of this FlowMeta.
 
         :param his_transfer_status: The his_transfer_status of this FlowMeta.
         :type his_transfer_status: str
@@ -636,7 +636,7 @@ class FlowMeta:
 
     @property
     def icon(self):
-        """Gets the icon of this FlowMeta.
+        r"""Gets the icon of this FlowMeta.
 
         logo base64编码
 
@@ -647,7 +647,7 @@ class FlowMeta:
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this FlowMeta.
+        r"""Sets the icon of this FlowMeta.
 
         logo base64编码
 
@@ -658,7 +658,7 @@ class FlowMeta:
 
     @property
     def id(self):
-        """Gets the id of this FlowMeta.
+        r"""Gets the id of this FlowMeta.
 
         ID
 
@@ -669,7 +669,7 @@ class FlowMeta:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FlowMeta.
+        r"""Sets the id of this FlowMeta.
 
         ID
 
@@ -680,7 +680,7 @@ class FlowMeta:
 
     @property
     def installed_connector(self):
-        """Gets the installed_connector of this FlowMeta.
+        r"""Gets the installed_connector of this FlowMeta.
 
         已部署的connector id
 
@@ -691,7 +691,7 @@ class FlowMeta:
 
     @installed_connector.setter
     def installed_connector(self, installed_connector):
-        """Sets the installed_connector of this FlowMeta.
+        r"""Sets the installed_connector of this FlowMeta.
 
         已部署的connector id
 
@@ -702,7 +702,7 @@ class FlowMeta:
 
     @property
     def is_valid(self):
-        """Gets the is_valid of this FlowMeta.
+        r"""Gets the is_valid of this FlowMeta.
 
         :return: The is_valid of this FlowMeta.
         :rtype: bool
@@ -711,7 +711,7 @@ class FlowMeta:
 
     @is_valid.setter
     def is_valid(self, is_valid):
-        """Sets the is_valid of this FlowMeta.
+        r"""Sets the is_valid of this FlowMeta.
 
         :param is_valid: The is_valid of this FlowMeta.
         :type is_valid: bool
@@ -720,7 +720,7 @@ class FlowMeta:
 
     @property
     def label(self):
-        """Gets the label of this FlowMeta.
+        r"""Gets the label of this FlowMeta.
 
         :return: The label of this FlowMeta.
         :rtype: str
@@ -729,7 +729,7 @@ class FlowMeta:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this FlowMeta.
+        r"""Sets the label of this FlowMeta.
 
         :param label: The label of this FlowMeta.
         :type label: str
@@ -738,7 +738,7 @@ class FlowMeta:
 
     @property
     def name(self):
-        """Gets the name of this FlowMeta.
+        r"""Gets the name of this FlowMeta.
 
         流的名称
 
@@ -749,7 +749,7 @@ class FlowMeta:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlowMeta.
+        r"""Sets the name of this FlowMeta.
 
         流的名称
 
@@ -760,7 +760,7 @@ class FlowMeta:
 
     @property
     def notice_status(self):
-        """Gets the notice_status of this FlowMeta.
+        r"""Gets the notice_status of this FlowMeta.
 
         :return: The notice_status of this FlowMeta.
         :rtype: str
@@ -769,7 +769,7 @@ class FlowMeta:
 
     @notice_status.setter
     def notice_status(self, notice_status):
-        """Sets the notice_status of this FlowMeta.
+        r"""Sets the notice_status of this FlowMeta.
 
         :param notice_status: The notice_status of this FlowMeta.
         :type notice_status: str
@@ -778,7 +778,7 @@ class FlowMeta:
 
     @property
     def project_id(self):
-        """Gets the project_id of this FlowMeta.
+        r"""Gets the project_id of this FlowMeta.
 
         用户项目ID
 
@@ -789,7 +789,7 @@ class FlowMeta:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this FlowMeta.
+        r"""Sets the project_id of this FlowMeta.
 
         用户项目ID
 
@@ -800,7 +800,7 @@ class FlowMeta:
 
     @property
     def schema_version(self):
-        """Gets the schema_version of this FlowMeta.
+        r"""Gets the schema_version of this FlowMeta.
 
         schema版本
 
@@ -811,7 +811,7 @@ class FlowMeta:
 
     @schema_version.setter
     def schema_version(self, schema_version):
-        """Sets the schema_version of this FlowMeta.
+        r"""Sets the schema_version of this FlowMeta.
 
         schema版本
 
@@ -822,7 +822,7 @@ class FlowMeta:
 
     @property
     def status(self):
-        """Gets the status of this FlowMeta.
+        r"""Gets the status of this FlowMeta.
 
         流的状态
 
@@ -833,7 +833,7 @@ class FlowMeta:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FlowMeta.
+        r"""Sets the status of this FlowMeta.
 
         流的状态
 
@@ -844,7 +844,7 @@ class FlowMeta:
 
     @property
     def steps(self):
-        """Gets the steps of this FlowMeta.
+        r"""Gets the steps of this FlowMeta.
 
         流的编排数据（大josn）
 
@@ -855,7 +855,7 @@ class FlowMeta:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this FlowMeta.
+        r"""Sets the steps of this FlowMeta.
 
         流的编排数据（大josn）
 
@@ -866,7 +866,7 @@ class FlowMeta:
 
     @property
     def tags(self):
-        """Gets the tags of this FlowMeta.
+        r"""Gets the tags of this FlowMeta.
 
         标签列表
 
@@ -877,7 +877,7 @@ class FlowMeta:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this FlowMeta.
+        r"""Sets the tags of this FlowMeta.
 
         标签列表
 
@@ -888,7 +888,7 @@ class FlowMeta:
 
     @property
     def template_id(self):
-        """Gets the template_id of this FlowMeta.
+        r"""Gets the template_id of this FlowMeta.
 
         模板ID
 
@@ -899,7 +899,7 @@ class FlowMeta:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this FlowMeta.
+        r"""Sets the template_id of this FlowMeta.
 
         模板ID
 
@@ -910,7 +910,7 @@ class FlowMeta:
 
     @property
     def template_name(self):
-        """Gets the template_name of this FlowMeta.
+        r"""Gets the template_name of this FlowMeta.
 
         模板名称
 
@@ -921,7 +921,7 @@ class FlowMeta:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this FlowMeta.
+        r"""Sets the template_name of this FlowMeta.
 
         模板名称
 
@@ -932,7 +932,7 @@ class FlowMeta:
 
     @property
     def test_result(self):
-        """Gets the test_result of this FlowMeta.
+        r"""Gets the test_result of this FlowMeta.
 
         测试结果
 
@@ -943,7 +943,7 @@ class FlowMeta:
 
     @test_result.setter
     def test_result(self, test_result):
-        """Sets the test_result of this FlowMeta.
+        r"""Sets the test_result of this FlowMeta.
 
         测试结果
 
@@ -954,7 +954,7 @@ class FlowMeta:
 
     @property
     def type(self):
-        """Gets the type of this FlowMeta.
+        r"""Gets the type of this FlowMeta.
 
         类型
 
@@ -965,7 +965,7 @@ class FlowMeta:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this FlowMeta.
+        r"""Sets the type of this FlowMeta.
 
         类型
 
@@ -976,7 +976,7 @@ class FlowMeta:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this FlowMeta.
+        r"""Gets the updated_time of this FlowMeta.
 
         修改时间
 
@@ -987,7 +987,7 @@ class FlowMeta:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this FlowMeta.
+        r"""Sets the updated_time of this FlowMeta.
 
         修改时间
 
@@ -998,7 +998,7 @@ class FlowMeta:
 
     @property
     def user_id(self):
-        """Gets the user_id of this FlowMeta.
+        r"""Gets the user_id of this FlowMeta.
 
         账号（所有者）
 
@@ -1009,7 +1009,7 @@ class FlowMeta:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this FlowMeta.
+        r"""Sets the user_id of this FlowMeta.
 
         账号（所有者）
 
@@ -1020,7 +1020,7 @@ class FlowMeta:
 
     @property
     def version(self):
-        """Gets the version of this FlowMeta.
+        r"""Gets the version of this FlowMeta.
 
         流的版本号
 
@@ -1031,7 +1031,7 @@ class FlowMeta:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this FlowMeta.
+        r"""Sets the version of this FlowMeta.
 
         流的版本号
 
@@ -1042,7 +1042,7 @@ class FlowMeta:
 
     @property
     def webhook(self):
-        """Gets the webhook of this FlowMeta.
+        r"""Gets the webhook of this FlowMeta.
 
         webhook触发url的ID
 
@@ -1053,7 +1053,7 @@ class FlowMeta:
 
     @webhook.setter
     def webhook(self, webhook):
-        """Sets the webhook of this FlowMeta.
+        r"""Sets the webhook of this FlowMeta.
 
         webhook触发url的ID
 

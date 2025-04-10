@@ -29,7 +29,7 @@ class BatchImportConfigsRequest:
     }
 
     def __init__(self, node_id=None, ia_id=None, body=None):
-        """BatchImportConfigsRequest
+        r"""BatchImportConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchImportConfigsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this BatchImportConfigsRequest.
+        r"""Gets the node_id of this BatchImportConfigsRequest.
 
         边缘节点ID
 
@@ -66,7 +66,7 @@ class BatchImportConfigsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this BatchImportConfigsRequest.
+        r"""Sets the node_id of this BatchImportConfigsRequest.
 
         边缘节点ID
 
@@ -77,7 +77,7 @@ class BatchImportConfigsRequest:
 
     @property
     def ia_id(self):
-        """Gets the ia_id of this BatchImportConfigsRequest.
+        r"""Gets the ia_id of this BatchImportConfigsRequest.
 
         边侧第三方应用的模块ID
 
@@ -88,7 +88,7 @@ class BatchImportConfigsRequest:
 
     @ia_id.setter
     def ia_id(self, ia_id):
-        """Sets the ia_id of this BatchImportConfigsRequest.
+        r"""Sets the ia_id of this BatchImportConfigsRequest.
 
         边侧第三方应用的模块ID
 
@@ -99,7 +99,7 @@ class BatchImportConfigsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchImportConfigsRequest.
+        r"""Gets the body of this BatchImportConfigsRequest.
 
         :return: The body of this BatchImportConfigsRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchImportConfigsRequestBody`
@@ -108,7 +108,7 @@ class BatchImportConfigsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchImportConfigsRequest.
+        r"""Sets the body of this BatchImportConfigsRequest.
 
         :param body: The body of this BatchImportConfigsRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.BatchImportConfigsRequestBody`

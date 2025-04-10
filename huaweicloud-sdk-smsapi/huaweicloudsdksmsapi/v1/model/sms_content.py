@@ -33,7 +33,7 @@ class SmsContent:
     }
 
     def __init__(self, to=None, template_id=None, template_paras=None, signature=None):
-        """SmsContent
+        r"""SmsContent
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class SmsContent:
 
     @property
     def to(self):
-        """Gets the to of this SmsContent.
+        r"""Gets the to of this SmsContent.
 
         群发短信接收方的号码
 
@@ -77,7 +77,7 @@ class SmsContent:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this SmsContent.
+        r"""Sets the to of this SmsContent.
 
         群发短信接收方的号码
 
@@ -88,7 +88,7 @@ class SmsContent:
 
     @property
     def template_id(self):
-        """Gets the template_id of this SmsContent.
+        r"""Gets the template_id of this SmsContent.
 
         短信模板ID
 
@@ -99,7 +99,7 @@ class SmsContent:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this SmsContent.
+        r"""Sets the template_id of this SmsContent.
 
         短信模板ID
 
@@ -110,7 +110,7 @@ class SmsContent:
 
     @property
     def template_paras(self):
-        """Gets the template_paras of this SmsContent.
+        r"""Gets the template_paras of this SmsContent.
 
         短信模板的变量值列表
 
@@ -121,7 +121,7 @@ class SmsContent:
 
     @template_paras.setter
     def template_paras(self, template_paras):
-        """Sets the template_paras of this SmsContent.
+        r"""Sets the template_paras of this SmsContent.
 
         短信模板的变量值列表
 
@@ -132,7 +132,7 @@ class SmsContent:
 
     @property
     def signature(self):
-        """Gets the signature of this SmsContent.
+        r"""Gets the signature of this SmsContent.
 
         短信签名
 
@@ -143,7 +143,7 @@ class SmsContent:
 
     @signature.setter
     def signature(self, signature):
-        """Sets the signature of this SmsContent.
+        r"""Sets the signature of this SmsContent.
 
         短信签名
 

@@ -33,7 +33,7 @@ class LogInfo:
     }
 
     def __init__(self, display_name=None, log=None, level=None, analysis=None, faq=None):
-        """LogInfo
+        r"""LogInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class LogInfo:
 
     @property
     def display_name(self):
-        """Gets the display_name of this LogInfo.
+        r"""Gets the display_name of this LogInfo.
 
         日志标题
 
@@ -82,7 +82,7 @@ class LogInfo:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this LogInfo.
+        r"""Sets the display_name of this LogInfo.
 
         日志标题
 
@@ -93,7 +93,7 @@ class LogInfo:
 
     @property
     def log(self):
-        """Gets the log of this LogInfo.
+        r"""Gets the log of this LogInfo.
 
         日志内容
 
@@ -104,7 +104,7 @@ class LogInfo:
 
     @log.setter
     def log(self, log):
-        """Sets the log of this LogInfo.
+        r"""Sets the log of this LogInfo.
 
         日志内容
 
@@ -115,7 +115,7 @@ class LogInfo:
 
     @property
     def level(self):
-        """Gets the level of this LogInfo.
+        r"""Gets the level of this LogInfo.
 
         日志级别
 
@@ -126,7 +126,7 @@ class LogInfo:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this LogInfo.
+        r"""Sets the level of this LogInfo.
 
         日志级别
 
@@ -137,7 +137,7 @@ class LogInfo:
 
     @property
     def analysis(self):
-        """Gets the analysis of this LogInfo.
+        r"""Gets the analysis of this LogInfo.
 
         日志分析
 
@@ -148,7 +148,7 @@ class LogInfo:
 
     @analysis.setter
     def analysis(self, analysis):
-        """Sets the analysis of this LogInfo.
+        r"""Sets the analysis of this LogInfo.
 
         日志分析
 
@@ -159,7 +159,7 @@ class LogInfo:
 
     @property
     def faq(self):
-        """Gets the faq of this LogInfo.
+        r"""Gets the faq of this LogInfo.
 
         常见问题解答
 
@@ -170,7 +170,7 @@ class LogInfo:
 
     @faq.setter
     def faq(self, faq):
-        """Sets the faq of this LogInfo.
+        r"""Sets the faq of this LogInfo.
 
         常见问题解答
 

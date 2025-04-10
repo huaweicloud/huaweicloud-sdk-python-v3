@@ -37,7 +37,7 @@ class GetHostListInfo:
     }
 
     def __init__(self, host_id=None, host_ip=None, host_name=None, host_status=None, host_type=None, host_version=None, update_time=None):
-        """GetHostListInfo
+        r"""GetHostListInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class GetHostListInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this GetHostListInfo.
+        r"""Gets the host_id of this GetHostListInfo.
 
         主机ID
 
@@ -96,7 +96,7 @@ class GetHostListInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this GetHostListInfo.
+        r"""Sets the host_id of this GetHostListInfo.
 
         主机ID
 
@@ -107,7 +107,7 @@ class GetHostListInfo:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this GetHostListInfo.
+        r"""Gets the host_ip of this GetHostListInfo.
 
         主机IP
 
@@ -118,7 +118,7 @@ class GetHostListInfo:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this GetHostListInfo.
+        r"""Sets the host_ip of this GetHostListInfo.
 
         主机IP
 
@@ -129,7 +129,7 @@ class GetHostListInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this GetHostListInfo.
+        r"""Gets the host_name of this GetHostListInfo.
 
         主机名称
 
@@ -140,7 +140,7 @@ class GetHostListInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this GetHostListInfo.
+        r"""Sets the host_name of this GetHostListInfo.
 
         主机名称
 
@@ -151,7 +151,7 @@ class GetHostListInfo:
 
     @property
     def host_status(self):
-        """Gets the host_status of this GetHostListInfo.
+        r"""Gets the host_status of this GetHostListInfo.
 
         主机状态。 uninstall:未安装 running:运行 offline:离线 error:异常 plugin error:插件错误 installing:安装中 install-fail:安装失败 upgrading:升级中 upgrading-transient:升级中 upgrade failed:升级失败 upgrade-fail:升级失败 uninstalling:卸载中 uninstalling-transient:卸载中 authentication error:鉴权失败
 
@@ -162,7 +162,7 @@ class GetHostListInfo:
 
     @host_status.setter
     def host_status(self, host_status):
-        """Sets the host_status of this GetHostListInfo.
+        r"""Sets the host_status of this GetHostListInfo.
 
         主机状态。 uninstall:未安装 running:运行 offline:离线 error:异常 plugin error:插件错误 installing:安装中 install-fail:安装失败 upgrading:升级中 upgrading-transient:升级中 upgrade failed:升级失败 upgrade-fail:升级失败 uninstalling:卸载中 uninstalling-transient:卸载中 authentication error:鉴权失败
 
@@ -173,7 +173,7 @@ class GetHostListInfo:
 
     @property
     def host_type(self):
-        """Gets the host_type of this GetHostListInfo.
+        r"""Gets the host_type of this GetHostListInfo.
 
         主机类型。linux:linux类型,windows:windows类型
 
@@ -184,7 +184,7 @@ class GetHostListInfo:
 
     @host_type.setter
     def host_type(self, host_type):
-        """Sets the host_type of this GetHostListInfo.
+        r"""Sets the host_type of this GetHostListInfo.
 
         主机类型。linux:linux类型,windows:windows类型
 
@@ -195,7 +195,7 @@ class GetHostListInfo:
 
     @property
     def host_version(self):
-        """Gets the host_version of this GetHostListInfo.
+        r"""Gets the host_version of this GetHostListInfo.
 
         主机版本
 
@@ -206,7 +206,7 @@ class GetHostListInfo:
 
     @host_version.setter
     def host_version(self, host_version):
-        """Sets the host_version of this GetHostListInfo.
+        r"""Sets the host_version of this GetHostListInfo.
 
         主机版本
 
@@ -217,7 +217,7 @@ class GetHostListInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this GetHostListInfo.
+        r"""Gets the update_time of this GetHostListInfo.
 
         更新时间
 
@@ -228,7 +228,7 @@ class GetHostListInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this GetHostListInfo.
+        r"""Sets the update_time of this GetHostListInfo.
 
         更新时间
 

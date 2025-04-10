@@ -31,7 +31,7 @@ class CreateEncryptReq:
     }
 
     def __init__(self, input=None, output=None, encryption=None, user_data=None):
-        """CreateEncryptReq
+        r"""CreateEncryptReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateEncryptReq:
 
     @property
     def input(self):
-        """Gets the input of this CreateEncryptReq.
+        r"""Gets the input of this CreateEncryptReq.
 
         :return: The input of this CreateEncryptReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -73,7 +73,7 @@ class CreateEncryptReq:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CreateEncryptReq.
+        r"""Sets the input of this CreateEncryptReq.
 
         :param input: The input of this CreateEncryptReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -82,7 +82,7 @@ class CreateEncryptReq:
 
     @property
     def output(self):
-        """Gets the output of this CreateEncryptReq.
+        r"""Gets the output of this CreateEncryptReq.
 
         :return: The output of this CreateEncryptReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -91,7 +91,7 @@ class CreateEncryptReq:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CreateEncryptReq.
+        r"""Sets the output of this CreateEncryptReq.
 
         :param output: The output of this CreateEncryptReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -100,7 +100,7 @@ class CreateEncryptReq:
 
     @property
     def encryption(self):
-        """Gets the encryption of this CreateEncryptReq.
+        r"""Gets the encryption of this CreateEncryptReq.
 
         :return: The encryption of this CreateEncryptReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Encryption`
@@ -109,7 +109,7 @@ class CreateEncryptReq:
 
     @encryption.setter
     def encryption(self, encryption):
-        """Sets the encryption of this CreateEncryptReq.
+        r"""Sets the encryption of this CreateEncryptReq.
 
         :param encryption: The encryption of this CreateEncryptReq.
         :type encryption: :class:`huaweicloudsdkmpc.v1.Encryption`
@@ -118,7 +118,7 @@ class CreateEncryptReq:
 
     @property
     def user_data(self):
-        """Gets the user_data of this CreateEncryptReq.
+        r"""Gets the user_data of this CreateEncryptReq.
 
         用户自定义数据。 
 
@@ -129,7 +129,7 @@ class CreateEncryptReq:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this CreateEncryptReq.
+        r"""Sets the user_data of this CreateEncryptReq.
 
         用户自定义数据。 
 

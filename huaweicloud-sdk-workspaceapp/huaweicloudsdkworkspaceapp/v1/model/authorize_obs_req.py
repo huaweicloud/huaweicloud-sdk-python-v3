@@ -25,7 +25,7 @@ class AuthorizeObsReq:
     }
 
     def __init__(self, app_file_name=None):
-        """AuthorizeObsReq
+        r"""AuthorizeObsReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AuthorizeObsReq:
 
     @property
     def app_file_name(self):
-        """Gets the app_file_name of this AuthorizeObsReq.
+        r"""Gets the app_file_name of this AuthorizeObsReq.
 
         应用名称,名称需满足如下规则: 1. 文件名前缀由可见字符和空格组成，且不能为全空格。 2. 长度范围1~255个字符。 3. 结尾必须是`.msi`或者`.exe`或者`.zip`或者`.rar`。
 
@@ -53,7 +53,7 @@ class AuthorizeObsReq:
 
     @app_file_name.setter
     def app_file_name(self, app_file_name):
-        """Sets the app_file_name of this AuthorizeObsReq.
+        r"""Sets the app_file_name of this AuthorizeObsReq.
 
         应用名称,名称需满足如下规则: 1. 文件名前缀由可见字符和空格组成，且不能为全空格。 2. 长度范围1~255个字符。 3. 结尾必须是`.msi`或者`.exe`或者`.zip`或者`.rar`。
 

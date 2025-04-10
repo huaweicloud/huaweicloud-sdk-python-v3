@@ -27,7 +27,7 @@ class ShowLoginTypeRequest:
     }
 
     def __init__(self, x_language=None, x_time_zone=None):
-        """ShowLoginTypeRequest
+        r"""ShowLoginTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowLoginTypeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowLoginTypeRequest.
+        r"""Gets the x_language of this ShowLoginTypeRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -61,7 +61,7 @@ class ShowLoginTypeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowLoginTypeRequest.
+        r"""Sets the x_language of this ShowLoginTypeRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -72,7 +72,7 @@ class ShowLoginTypeRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this ShowLoginTypeRequest.
+        r"""Gets the x_time_zone of this ShowLoginTypeRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -83,7 +83,7 @@ class ShowLoginTypeRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this ShowLoginTypeRequest.
+        r"""Sets the x_time_zone of this ShowLoginTypeRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

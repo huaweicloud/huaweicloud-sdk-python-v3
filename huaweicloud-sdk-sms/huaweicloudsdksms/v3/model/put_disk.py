@@ -31,7 +31,7 @@ class PutDisk:
     }
 
     def __init__(self, need_migration=None, id=None, adjust_size=None, physical_volumes=None):
-        """PutDisk
+        r"""PutDisk
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class PutDisk:
 
     @property
     def need_migration(self):
-        """Gets the need_migration of this PutDisk.
+        r"""Gets the need_migration of this PutDisk.
 
         磁盘名称
 
@@ -73,7 +73,7 @@ class PutDisk:
 
     @need_migration.setter
     def need_migration(self, need_migration):
-        """Sets the need_migration of this PutDisk.
+        r"""Sets the need_migration of this PutDisk.
 
         磁盘名称
 
@@ -84,7 +84,7 @@ class PutDisk:
 
     @property
     def id(self):
-        """Gets the id of this PutDisk.
+        r"""Gets the id of this PutDisk.
 
         磁盘ID
 
@@ -95,7 +95,7 @@ class PutDisk:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PutDisk.
+        r"""Sets the id of this PutDisk.
 
         磁盘ID
 
@@ -106,7 +106,7 @@ class PutDisk:
 
     @property
     def adjust_size(self):
-        """Gets the adjust_size of this PutDisk.
+        r"""Gets the adjust_size of this PutDisk.
 
         调整大小
 
@@ -117,7 +117,7 @@ class PutDisk:
 
     @adjust_size.setter
     def adjust_size(self, adjust_size):
-        """Sets the adjust_size of this PutDisk.
+        r"""Sets the adjust_size of this PutDisk.
 
         调整大小
 
@@ -128,7 +128,7 @@ class PutDisk:
 
     @property
     def physical_volumes(self):
-        """Gets the physical_volumes of this PutDisk.
+        r"""Gets the physical_volumes of this PutDisk.
 
         修改的卷信息
 
@@ -139,7 +139,7 @@ class PutDisk:
 
     @physical_volumes.setter
     def physical_volumes(self, physical_volumes):
-        """Sets the physical_volumes of this PutDisk.
+        r"""Sets the physical_volumes of this PutDisk.
 
         修改的卷信息
 

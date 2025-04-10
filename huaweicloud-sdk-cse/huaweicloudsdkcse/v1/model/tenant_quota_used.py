@@ -29,7 +29,7 @@ class TenantQuotaUsed:
     }
 
     def __init__(self, type=None, used=None, quota=None):
-        """TenantQuotaUsed
+        r"""TenantQuotaUsed
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TenantQuotaUsed:
 
     @property
     def type(self):
-        """Gets the type of this TenantQuotaUsed.
+        r"""Gets the type of this TenantQuotaUsed.
 
         配额类型
 
@@ -68,7 +68,7 @@ class TenantQuotaUsed:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TenantQuotaUsed.
+        r"""Sets the type of this TenantQuotaUsed.
 
         配额类型
 
@@ -79,7 +79,7 @@ class TenantQuotaUsed:
 
     @property
     def used(self):
-        """Gets the used of this TenantQuotaUsed.
+        r"""Gets the used of this TenantQuotaUsed.
 
         已使用配额
 
@@ -90,7 +90,7 @@ class TenantQuotaUsed:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this TenantQuotaUsed.
+        r"""Sets the used of this TenantQuotaUsed.
 
         已使用配额
 
@@ -101,7 +101,7 @@ class TenantQuotaUsed:
 
     @property
     def quota(self):
-        """Gets the quota of this TenantQuotaUsed.
+        r"""Gets the quota of this TenantQuotaUsed.
 
         总配额
 
@@ -112,7 +112,7 @@ class TenantQuotaUsed:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this TenantQuotaUsed.
+        r"""Sets the quota of this TenantQuotaUsed.
 
         总配额
 

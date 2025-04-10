@@ -27,7 +27,7 @@ class SwitchClusterTagsRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """SwitchClusterTagsRequest
+        r"""SwitchClusterTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SwitchClusterTagsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this SwitchClusterTagsRequest.
+        r"""Gets the cluster_id of this SwitchClusterTagsRequest.
 
         集群ID。
 
@@ -60,7 +60,7 @@ class SwitchClusterTagsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this SwitchClusterTagsRequest.
+        r"""Sets the cluster_id of this SwitchClusterTagsRequest.
 
         集群ID。
 
@@ -71,7 +71,7 @@ class SwitchClusterTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchClusterTagsRequest.
+        r"""Gets the body of this SwitchClusterTagsRequest.
 
         :return: The body of this SwitchClusterTagsRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.ModifyDefaultTagsRequestBody`
@@ -80,7 +80,7 @@ class SwitchClusterTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchClusterTagsRequest.
+        r"""Sets the body of this SwitchClusterTagsRequest.
 
         :param body: The body of this SwitchClusterTagsRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.ModifyDefaultTagsRequestBody`

@@ -35,7 +35,7 @@ class GovPolicyDetailPolicies:
     }
 
     def __init__(self, id=None, name=None, kind=None, status=None, selector=None, spec=None):
-        """GovPolicyDetailPolicies
+        r"""GovPolicyDetailPolicies
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class GovPolicyDetailPolicies:
 
     @property
     def id(self):
-        """Gets the id of this GovPolicyDetailPolicies.
+        r"""Gets the id of this GovPolicyDetailPolicies.
 
         治理策略ID。
 
@@ -89,7 +89,7 @@ class GovPolicyDetailPolicies:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GovPolicyDetailPolicies.
+        r"""Sets the id of this GovPolicyDetailPolicies.
 
         治理策略ID。
 
@@ -100,7 +100,7 @@ class GovPolicyDetailPolicies:
 
     @property
     def name(self):
-        """Gets the name of this GovPolicyDetailPolicies.
+        r"""Gets the name of this GovPolicyDetailPolicies.
 
         治理策略名称。
 
@@ -111,7 +111,7 @@ class GovPolicyDetailPolicies:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GovPolicyDetailPolicies.
+        r"""Sets the name of this GovPolicyDetailPolicies.
 
         治理策略名称。
 
@@ -122,7 +122,7 @@ class GovPolicyDetailPolicies:
 
     @property
     def kind(self):
-        """Gets the kind of this GovPolicyDetailPolicies.
+        r"""Gets the kind of this GovPolicyDetailPolicies.
 
         治理类型，支持填写retry、rate-limiting、loadbalance、circuit-breaker、instance-isolation、fault-injection和bulkhead。
 
@@ -133,7 +133,7 @@ class GovPolicyDetailPolicies:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this GovPolicyDetailPolicies.
+        r"""Sets the kind of this GovPolicyDetailPolicies.
 
         治理类型，支持填写retry、rate-limiting、loadbalance、circuit-breaker、instance-isolation、fault-injection和bulkhead。
 
@@ -144,7 +144,7 @@ class GovPolicyDetailPolicies:
 
     @property
     def status(self):
-        """Gets the status of this GovPolicyDetailPolicies.
+        r"""Gets the status of this GovPolicyDetailPolicies.
 
         启用状态，支持enabled和disabled。
 
@@ -155,7 +155,7 @@ class GovPolicyDetailPolicies:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GovPolicyDetailPolicies.
+        r"""Sets the status of this GovPolicyDetailPolicies.
 
         启用状态，支持enabled和disabled。
 
@@ -166,7 +166,7 @@ class GovPolicyDetailPolicies:
 
     @property
     def selector(self):
-        """Gets the selector of this GovPolicyDetailPolicies.
+        r"""Gets the selector of this GovPolicyDetailPolicies.
 
         :return: The selector of this GovPolicyDetailPolicies.
         :rtype: :class:`huaweicloudsdkcse.v1.GovSelector`
@@ -175,7 +175,7 @@ class GovPolicyDetailPolicies:
 
     @selector.setter
     def selector(self, selector):
-        """Sets the selector of this GovPolicyDetailPolicies.
+        r"""Sets the selector of this GovPolicyDetailPolicies.
 
         :param selector: The selector of this GovPolicyDetailPolicies.
         :type selector: :class:`huaweicloudsdkcse.v1.GovSelector`
@@ -184,7 +184,7 @@ class GovPolicyDetailPolicies:
 
     @property
     def spec(self):
-        """Gets the spec of this GovPolicyDetailPolicies.
+        r"""Gets the spec of this GovPolicyDetailPolicies.
 
         治理策略定义内容。
 
@@ -195,7 +195,7 @@ class GovPolicyDetailPolicies:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this GovPolicyDetailPolicies.
+        r"""Sets the spec of this GovPolicyDetailPolicies.
 
         治理策略定义内容。
 

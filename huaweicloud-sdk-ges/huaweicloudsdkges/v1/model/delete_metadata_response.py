@@ -28,7 +28,7 @@ class DeleteMetadataResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None):
-        """DeleteMetadataResponse
+        r"""DeleteMetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteMetadataResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this DeleteMetadataResponse.
+        r"""Gets the error_message of this DeleteMetadataResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -62,7 +62,7 @@ class DeleteMetadataResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this DeleteMetadataResponse.
+        r"""Sets the error_message of this DeleteMetadataResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -73,7 +73,7 @@ class DeleteMetadataResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this DeleteMetadataResponse.
+        r"""Gets the error_code of this DeleteMetadataResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -84,7 +84,7 @@ class DeleteMetadataResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DeleteMetadataResponse.
+        r"""Sets the error_code of this DeleteMetadataResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 

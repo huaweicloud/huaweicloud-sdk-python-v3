@@ -28,7 +28,7 @@ class UpdateVirtualGatewayResponse(SdkResponse):
     }
 
     def __init__(self, virtual_gateway=None, request_id=None):
-        """UpdateVirtualGatewayResponse
+        r"""UpdateVirtualGatewayResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateVirtualGatewayResponse(SdkResponse):
 
     @property
     def virtual_gateway(self):
-        """Gets the virtual_gateway of this UpdateVirtualGatewayResponse.
+        r"""Gets the virtual_gateway of this UpdateVirtualGatewayResponse.
 
         :return: The virtual_gateway of this UpdateVirtualGatewayResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.VirtualGateway`
@@ -60,7 +60,7 @@ class UpdateVirtualGatewayResponse(SdkResponse):
 
     @virtual_gateway.setter
     def virtual_gateway(self, virtual_gateway):
-        """Sets the virtual_gateway of this UpdateVirtualGatewayResponse.
+        r"""Sets the virtual_gateway of this UpdateVirtualGatewayResponse.
 
         :param virtual_gateway: The virtual_gateway of this UpdateVirtualGatewayResponse.
         :type virtual_gateway: :class:`huaweicloudsdkdc.v3.VirtualGateway`
@@ -69,7 +69,7 @@ class UpdateVirtualGatewayResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateVirtualGatewayResponse.
+        r"""Gets the request_id of this UpdateVirtualGatewayResponse.
 
         操作请求ID
 
@@ -80,7 +80,7 @@ class UpdateVirtualGatewayResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateVirtualGatewayResponse.
+        r"""Sets the request_id of this UpdateVirtualGatewayResponse.
 
         操作请求ID
 

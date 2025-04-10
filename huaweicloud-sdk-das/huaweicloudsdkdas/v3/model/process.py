@@ -41,7 +41,7 @@ class Process:
     }
 
     def __init__(self, id=None, user=None, host=None, database=None, command=None, time=None, state=None, sql=None, trx_executed_time=None):
-        """Process
+        r"""Process
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class Process:
 
     @property
     def id(self):
-        """Gets the id of this Process.
+        r"""Gets the id of this Process.
 
         会话ID
 
@@ -101,7 +101,7 @@ class Process:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Process.
+        r"""Sets the id of this Process.
 
         会话ID
 
@@ -112,7 +112,7 @@ class Process:
 
     @property
     def user(self):
-        """Gets the user of this Process.
+        r"""Gets the user of this Process.
 
         用户
 
@@ -123,7 +123,7 @@ class Process:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this Process.
+        r"""Sets the user of this Process.
 
         用户
 
@@ -134,7 +134,7 @@ class Process:
 
     @property
     def host(self):
-        """Gets the host of this Process.
+        r"""Gets the host of this Process.
 
         主机
 
@@ -145,7 +145,7 @@ class Process:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this Process.
+        r"""Sets the host of this Process.
 
         主机
 
@@ -156,7 +156,7 @@ class Process:
 
     @property
     def database(self):
-        """Gets the database of this Process.
+        r"""Gets the database of this Process.
 
         数据库
 
@@ -167,7 +167,7 @@ class Process:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this Process.
+        r"""Sets the database of this Process.
 
         数据库
 
@@ -178,7 +178,7 @@ class Process:
 
     @property
     def command(self):
-        """Gets the command of this Process.
+        r"""Gets the command of this Process.
 
         命令
 
@@ -189,7 +189,7 @@ class Process:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this Process.
+        r"""Sets the command of this Process.
 
         命令
 
@@ -200,7 +200,7 @@ class Process:
 
     @property
     def time(self):
-        """Gets the time of this Process.
+        r"""Gets the time of this Process.
 
         会话持续时间
 
@@ -211,7 +211,7 @@ class Process:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this Process.
+        r"""Sets the time of this Process.
 
         会话持续时间
 
@@ -222,7 +222,7 @@ class Process:
 
     @property
     def state(self):
-        """Gets the state of this Process.
+        r"""Gets the state of this Process.
 
         状态
 
@@ -233,7 +233,7 @@ class Process:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this Process.
+        r"""Sets the state of this Process.
 
         状态
 
@@ -244,7 +244,7 @@ class Process:
 
     @property
     def sql(self):
-        """Gets the sql of this Process.
+        r"""Gets the sql of this Process.
 
         SQL语句
 
@@ -255,7 +255,7 @@ class Process:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this Process.
+        r"""Sets the sql of this Process.
 
         SQL语句
 
@@ -266,7 +266,7 @@ class Process:
 
     @property
     def trx_executed_time(self):
-        """Gets the trx_executed_time of this Process.
+        r"""Gets the trx_executed_time of this Process.
 
         事务持续时间
 
@@ -277,7 +277,7 @@ class Process:
 
     @trx_executed_time.setter
     def trx_executed_time(self, trx_executed_time):
-        """Sets the trx_executed_time of this Process.
+        r"""Sets the trx_executed_time of this Process.
 
         事务持续时间
 

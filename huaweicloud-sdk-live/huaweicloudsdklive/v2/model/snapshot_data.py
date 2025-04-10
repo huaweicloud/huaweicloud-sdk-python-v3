@@ -27,7 +27,7 @@ class SnapshotData:
     }
 
     def __init__(self, count=None, time=None):
-        """SnapshotData
+        r"""SnapshotData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SnapshotData:
 
     @property
     def count(self):
-        """Gets the count of this SnapshotData.
+        r"""Gets the count of this SnapshotData.
 
         每小时内截图总数，单位为张。
 
@@ -61,7 +61,7 @@ class SnapshotData:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SnapshotData.
+        r"""Sets the count of this SnapshotData.
 
         每小时内截图总数，单位为张。
 
@@ -72,7 +72,7 @@ class SnapshotData:
 
     @property
     def time(self):
-        """Gets the time of this SnapshotData.
+        r"""Gets the time of this SnapshotData.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
 
@@ -83,7 +83,7 @@ class SnapshotData:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this SnapshotData.
+        r"""Sets the time of this SnapshotData.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
 

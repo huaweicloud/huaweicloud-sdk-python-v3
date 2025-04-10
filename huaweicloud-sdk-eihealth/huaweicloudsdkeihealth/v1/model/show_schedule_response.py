@@ -26,7 +26,7 @@ class ShowScheduleResponse(SdkResponse):
     }
 
     def __init__(self, schedulable=None):
-        """ShowScheduleResponse
+        r"""ShowScheduleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowScheduleResponse(SdkResponse):
 
     @property
     def schedulable(self):
-        """Gets the schedulable of this ShowScheduleResponse.
+        r"""Gets the schedulable of this ShowScheduleResponse.
 
         是否可调度
 
@@ -55,7 +55,7 @@ class ShowScheduleResponse(SdkResponse):
 
     @schedulable.setter
     def schedulable(self, schedulable):
-        """Sets the schedulable of this ShowScheduleResponse.
+        r"""Sets the schedulable of this ShowScheduleResponse.
 
         是否可调度
 

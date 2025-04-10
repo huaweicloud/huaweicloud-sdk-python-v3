@@ -35,7 +35,7 @@ class MigrationObjectOverviewInfo:
     }
 
     def __init__(self, type=None, src_count=None, dst_count=None, status=None, start_time=None, end_time=None):
-        """MigrationObjectOverviewInfo
+        r"""MigrationObjectOverviewInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class MigrationObjectOverviewInfo:
 
     @property
     def type(self):
-        """Gets the type of this MigrationObjectOverviewInfo.
+        r"""Gets the type of this MigrationObjectOverviewInfo.
 
         类型。
 
@@ -89,7 +89,7 @@ class MigrationObjectOverviewInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MigrationObjectOverviewInfo.
+        r"""Sets the type of this MigrationObjectOverviewInfo.
 
         类型。
 
@@ -100,7 +100,7 @@ class MigrationObjectOverviewInfo:
 
     @property
     def src_count(self):
-        """Gets the src_count of this MigrationObjectOverviewInfo.
+        r"""Gets the src_count of this MigrationObjectOverviewInfo.
 
         待迁移数量。
 
@@ -111,7 +111,7 @@ class MigrationObjectOverviewInfo:
 
     @src_count.setter
     def src_count(self, src_count):
-        """Sets the src_count of this MigrationObjectOverviewInfo.
+        r"""Sets the src_count of this MigrationObjectOverviewInfo.
 
         待迁移数量。
 
@@ -122,7 +122,7 @@ class MigrationObjectOverviewInfo:
 
     @property
     def dst_count(self):
-        """Gets the dst_count of this MigrationObjectOverviewInfo.
+        r"""Gets the dst_count of this MigrationObjectOverviewInfo.
 
         已迁移数量。
 
@@ -133,7 +133,7 @@ class MigrationObjectOverviewInfo:
 
     @dst_count.setter
     def dst_count(self, dst_count):
-        """Sets the dst_count of this MigrationObjectOverviewInfo.
+        r"""Sets the dst_count of this MigrationObjectOverviewInfo.
 
         已迁移数量。
 
@@ -144,7 +144,7 @@ class MigrationObjectOverviewInfo:
 
     @property
     def status(self):
-        """Gets the status of this MigrationObjectOverviewInfo.
+        r"""Gets the status of this MigrationObjectOverviewInfo.
 
         状态.
 
@@ -155,7 +155,7 @@ class MigrationObjectOverviewInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MigrationObjectOverviewInfo.
+        r"""Sets the status of this MigrationObjectOverviewInfo.
 
         状态.
 
@@ -166,7 +166,7 @@ class MigrationObjectOverviewInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this MigrationObjectOverviewInfo.
+        r"""Gets the start_time of this MigrationObjectOverviewInfo.
 
         开始时间。
 
@@ -177,7 +177,7 @@ class MigrationObjectOverviewInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this MigrationObjectOverviewInfo.
+        r"""Sets the start_time of this MigrationObjectOverviewInfo.
 
         开始时间。
 
@@ -188,7 +188,7 @@ class MigrationObjectOverviewInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this MigrationObjectOverviewInfo.
+        r"""Gets the end_time of this MigrationObjectOverviewInfo.
 
         结束时间。
 
@@ -199,7 +199,7 @@ class MigrationObjectOverviewInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this MigrationObjectOverviewInfo.
+        r"""Sets the end_time of this MigrationObjectOverviewInfo.
 
         结束时间。
 

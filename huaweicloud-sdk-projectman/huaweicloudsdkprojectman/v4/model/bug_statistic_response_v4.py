@@ -37,7 +37,7 @@ class BugStatisticResponseV4:
     }
 
     def __init__(self, critical_num=None, defect_index=None, module=None, normal_num=None, serious_num=None, tip_num=None, total=None):
-        """BugStatisticResponseV4
+        r"""BugStatisticResponseV4
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class BugStatisticResponseV4:
 
     @property
     def critical_num(self):
-        """Gets the critical_num of this BugStatisticResponseV4.
+        r"""Gets the critical_num of this BugStatisticResponseV4.
 
         重要程度为关键的缺陷数
 
@@ -96,7 +96,7 @@ class BugStatisticResponseV4:
 
     @critical_num.setter
     def critical_num(self, critical_num):
-        """Sets the critical_num of this BugStatisticResponseV4.
+        r"""Sets the critical_num of this BugStatisticResponseV4.
 
         重要程度为关键的缺陷数
 
@@ -107,7 +107,7 @@ class BugStatisticResponseV4:
 
     @property
     def defect_index(self):
-        """Gets the defect_index of this BugStatisticResponseV4.
+        r"""Gets the defect_index of this BugStatisticResponseV4.
 
         DI
 
@@ -118,7 +118,7 @@ class BugStatisticResponseV4:
 
     @defect_index.setter
     def defect_index(self, defect_index):
-        """Sets the defect_index of this BugStatisticResponseV4.
+        r"""Sets the defect_index of this BugStatisticResponseV4.
 
         DI
 
@@ -129,7 +129,7 @@ class BugStatisticResponseV4:
 
     @property
     def module(self):
-        """Gets the module of this BugStatisticResponseV4.
+        r"""Gets the module of this BugStatisticResponseV4.
 
         模块
 
@@ -140,7 +140,7 @@ class BugStatisticResponseV4:
 
     @module.setter
     def module(self, module):
-        """Sets the module of this BugStatisticResponseV4.
+        r"""Sets the module of this BugStatisticResponseV4.
 
         模块
 
@@ -151,7 +151,7 @@ class BugStatisticResponseV4:
 
     @property
     def normal_num(self):
-        """Gets the normal_num of this BugStatisticResponseV4.
+        r"""Gets the normal_num of this BugStatisticResponseV4.
 
         重要程度为一般的缺陷数
 
@@ -162,7 +162,7 @@ class BugStatisticResponseV4:
 
     @normal_num.setter
     def normal_num(self, normal_num):
-        """Sets the normal_num of this BugStatisticResponseV4.
+        r"""Sets the normal_num of this BugStatisticResponseV4.
 
         重要程度为一般的缺陷数
 
@@ -173,7 +173,7 @@ class BugStatisticResponseV4:
 
     @property
     def serious_num(self):
-        """Gets the serious_num of this BugStatisticResponseV4.
+        r"""Gets the serious_num of this BugStatisticResponseV4.
 
         重要程度为严重的缺陷数
 
@@ -184,7 +184,7 @@ class BugStatisticResponseV4:
 
     @serious_num.setter
     def serious_num(self, serious_num):
-        """Sets the serious_num of this BugStatisticResponseV4.
+        r"""Sets the serious_num of this BugStatisticResponseV4.
 
         重要程度为严重的缺陷数
 
@@ -195,7 +195,7 @@ class BugStatisticResponseV4:
 
     @property
     def tip_num(self):
-        """Gets the tip_num of this BugStatisticResponseV4.
+        r"""Gets the tip_num of this BugStatisticResponseV4.
 
         重要程度为提示的缺陷数
 
@@ -206,7 +206,7 @@ class BugStatisticResponseV4:
 
     @tip_num.setter
     def tip_num(self, tip_num):
-        """Sets the tip_num of this BugStatisticResponseV4.
+        r"""Sets the tip_num of this BugStatisticResponseV4.
 
         重要程度为提示的缺陷数
 
@@ -217,7 +217,7 @@ class BugStatisticResponseV4:
 
     @property
     def total(self):
-        """Gets the total of this BugStatisticResponseV4.
+        r"""Gets the total of this BugStatisticResponseV4.
 
         总数
 
@@ -228,7 +228,7 @@ class BugStatisticResponseV4:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BugStatisticResponseV4.
+        r"""Sets the total of this BugStatisticResponseV4.
 
         总数
 

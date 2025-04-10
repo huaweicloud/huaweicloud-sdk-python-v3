@@ -40,7 +40,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
     }
 
     def __init__(self, evaluation_project_id=None, evaluation_project_name=None, evaluation_project_status=None, project_status_detail=None, source_db_type=None, source_db_version=None, target_db_type=None, target_db_version=None):
-        """ShowEvaluationProjectStatusResponse
+        r"""ShowEvaluationProjectStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @property
     def evaluation_project_id(self):
-        """Gets the evaluation_project_id of this ShowEvaluationProjectStatusResponse.
+        r"""Gets the evaluation_project_id of this ShowEvaluationProjectStatusResponse.
 
         评估项目ID。
 
@@ -104,7 +104,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @evaluation_project_id.setter
     def evaluation_project_id(self, evaluation_project_id):
-        """Sets the evaluation_project_id of this ShowEvaluationProjectStatusResponse.
+        r"""Sets the evaluation_project_id of this ShowEvaluationProjectStatusResponse.
 
         评估项目ID。
 
@@ -115,7 +115,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @property
     def evaluation_project_name(self):
-        """Gets the evaluation_project_name of this ShowEvaluationProjectStatusResponse.
+        r"""Gets the evaluation_project_name of this ShowEvaluationProjectStatusResponse.
 
         评估项目名称。
 
@@ -126,7 +126,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @evaluation_project_name.setter
     def evaluation_project_name(self, evaluation_project_name):
-        """Sets the evaluation_project_name of this ShowEvaluationProjectStatusResponse.
+        r"""Sets the evaluation_project_name of this ShowEvaluationProjectStatusResponse.
 
         评估项目名称。
 
@@ -137,7 +137,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @property
     def evaluation_project_status(self):
-        """Gets the evaluation_project_status of this ShowEvaluationProjectStatusResponse.
+        r"""Gets the evaluation_project_status of this ShowEvaluationProjectStatusResponse.
 
         评估项目状态。
 
@@ -148,7 +148,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @evaluation_project_status.setter
     def evaluation_project_status(self, evaluation_project_status):
-        """Sets the evaluation_project_status of this ShowEvaluationProjectStatusResponse.
+        r"""Sets the evaluation_project_status of this ShowEvaluationProjectStatusResponse.
 
         评估项目状态。
 
@@ -159,7 +159,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @property
     def project_status_detail(self):
-        """Gets the project_status_detail of this ShowEvaluationProjectStatusResponse.
+        r"""Gets the project_status_detail of this ShowEvaluationProjectStatusResponse.
 
         :return: The project_status_detail of this ShowEvaluationProjectStatusResponse.
         :rtype: :class:`huaweicloudsdkugo.v1.ProjectStatusDetail`
@@ -168,7 +168,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @project_status_detail.setter
     def project_status_detail(self, project_status_detail):
-        """Sets the project_status_detail of this ShowEvaluationProjectStatusResponse.
+        r"""Sets the project_status_detail of this ShowEvaluationProjectStatusResponse.
 
         :param project_status_detail: The project_status_detail of this ShowEvaluationProjectStatusResponse.
         :type project_status_detail: :class:`huaweicloudsdkugo.v1.ProjectStatusDetail`
@@ -177,7 +177,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @property
     def source_db_type(self):
-        """Gets the source_db_type of this ShowEvaluationProjectStatusResponse.
+        r"""Gets the source_db_type of this ShowEvaluationProjectStatusResponse.
 
         源数据库类型。
 
@@ -188,7 +188,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @source_db_type.setter
     def source_db_type(self, source_db_type):
-        """Sets the source_db_type of this ShowEvaluationProjectStatusResponse.
+        r"""Sets the source_db_type of this ShowEvaluationProjectStatusResponse.
 
         源数据库类型。
 
@@ -199,7 +199,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @property
     def source_db_version(self):
-        """Gets the source_db_version of this ShowEvaluationProjectStatusResponse.
+        r"""Gets the source_db_version of this ShowEvaluationProjectStatusResponse.
 
         源数据库版本。
 
@@ -210,7 +210,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @source_db_version.setter
     def source_db_version(self, source_db_version):
-        """Sets the source_db_version of this ShowEvaluationProjectStatusResponse.
+        r"""Sets the source_db_version of this ShowEvaluationProjectStatusResponse.
 
         源数据库版本。
 
@@ -221,7 +221,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @property
     def target_db_type(self):
-        """Gets the target_db_type of this ShowEvaluationProjectStatusResponse.
+        r"""Gets the target_db_type of this ShowEvaluationProjectStatusResponse.
 
         目标数据库类型。
 
@@ -232,7 +232,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @target_db_type.setter
     def target_db_type(self, target_db_type):
-        """Sets the target_db_type of this ShowEvaluationProjectStatusResponse.
+        r"""Sets the target_db_type of this ShowEvaluationProjectStatusResponse.
 
         目标数据库类型。
 
@@ -243,7 +243,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @property
     def target_db_version(self):
-        """Gets the target_db_version of this ShowEvaluationProjectStatusResponse.
+        r"""Gets the target_db_version of this ShowEvaluationProjectStatusResponse.
 
         目标数据库版本。
 
@@ -254,7 +254,7 @@ class ShowEvaluationProjectStatusResponse(SdkResponse):
 
     @target_db_version.setter
     def target_db_version(self, target_db_version):
-        """Sets the target_db_version of this ShowEvaluationProjectStatusResponse.
+        r"""Sets the target_db_version of this ShowEvaluationProjectStatusResponse.
 
         目标数据库版本。
 

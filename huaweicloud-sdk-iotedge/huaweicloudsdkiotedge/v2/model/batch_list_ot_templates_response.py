@@ -30,7 +30,7 @@ class BatchListOtTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, templates=None):
-        """BatchListOtTemplatesResponse
+        r"""BatchListOtTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchListOtTemplatesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchListOtTemplatesResponse.
+        r"""Gets the count of this BatchListOtTemplatesResponse.
 
         总记录数
 
@@ -69,7 +69,7 @@ class BatchListOtTemplatesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchListOtTemplatesResponse.
+        r"""Sets the count of this BatchListOtTemplatesResponse.
 
         总记录数
 
@@ -80,7 +80,7 @@ class BatchListOtTemplatesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this BatchListOtTemplatesResponse.
+        r"""Gets the page_info of this BatchListOtTemplatesResponse.
 
         :return: The page_info of this BatchListOtTemplatesResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -89,7 +89,7 @@ class BatchListOtTemplatesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this BatchListOtTemplatesResponse.
+        r"""Sets the page_info of this BatchListOtTemplatesResponse.
 
         :param page_info: The page_info of this BatchListOtTemplatesResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -98,7 +98,7 @@ class BatchListOtTemplatesResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this BatchListOtTemplatesResponse.
+        r"""Gets the templates of this BatchListOtTemplatesResponse.
 
         每页记录数
 
@@ -109,7 +109,7 @@ class BatchListOtTemplatesResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this BatchListOtTemplatesResponse.
+        r"""Sets the templates of this BatchListOtTemplatesResponse.
 
         每页记录数
 

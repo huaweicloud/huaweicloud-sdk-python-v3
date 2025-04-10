@@ -44,7 +44,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, state=None, start_time=None, end_time=None, error_info=None, model_asset_id=None, name=None, style_id=None, model_cover_url=None, x_request_id=None):
-        """ShowPictureModelingJobResponse
+        r"""ShowPictureModelingJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowPictureModelingJobResponse.
+        r"""Gets the job_id of this ShowPictureModelingJobResponse.
 
         照片建模任务ID。
 
@@ -116,7 +116,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowPictureModelingJobResponse.
+        r"""Sets the job_id of this ShowPictureModelingJobResponse.
 
         照片建模任务ID。
 
@@ -127,7 +127,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowPictureModelingJobResponse.
+        r"""Gets the state of this ShowPictureModelingJobResponse.
 
         任务的状态。 * WAITING：等待任务调度 * PROCESSING：正在处理 * PARTIAL_SUCCEED：部分成功（模型生成，截图失败） * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
 
@@ -138,7 +138,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowPictureModelingJobResponse.
+        r"""Sets the state of this ShowPictureModelingJobResponse.
 
         任务的状态。 * WAITING：等待任务调度 * PROCESSING：正在处理 * PARTIAL_SUCCEED：部分成功（模型生成，截图失败） * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
 
@@ -149,7 +149,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowPictureModelingJobResponse.
+        r"""Gets the start_time of this ShowPictureModelingJobResponse.
 
         任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -160,7 +160,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowPictureModelingJobResponse.
+        r"""Sets the start_time of this ShowPictureModelingJobResponse.
 
         任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -171,7 +171,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowPictureModelingJobResponse.
+        r"""Gets the end_time of this ShowPictureModelingJobResponse.
 
         任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -182,7 +182,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowPictureModelingJobResponse.
+        r"""Sets the end_time of this ShowPictureModelingJobResponse.
 
         任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -193,7 +193,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @property
     def error_info(self):
-        """Gets the error_info of this ShowPictureModelingJobResponse.
+        r"""Gets the error_info of this ShowPictureModelingJobResponse.
 
         :return: The error_info of this ShowPictureModelingJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -202,7 +202,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this ShowPictureModelingJobResponse.
+        r"""Sets the error_info of this ShowPictureModelingJobResponse.
 
         :param error_info: The error_info of this ShowPictureModelingJobResponse.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -211,7 +211,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @property
     def model_asset_id(self):
-        """Gets the model_asset_id of this ShowPictureModelingJobResponse.
+        r"""Gets the model_asset_id of this ShowPictureModelingJobResponse.
 
         模型资产ID。
 
@@ -222,7 +222,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @model_asset_id.setter
     def model_asset_id(self, model_asset_id):
-        """Sets the model_asset_id of this ShowPictureModelingJobResponse.
+        r"""Sets the model_asset_id of this ShowPictureModelingJobResponse.
 
         模型资产ID。
 
@@ -233,7 +233,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowPictureModelingJobResponse.
+        r"""Gets the name of this ShowPictureModelingJobResponse.
 
         数字人模型名称。
 
@@ -244,7 +244,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowPictureModelingJobResponse.
+        r"""Sets the name of this ShowPictureModelingJobResponse.
 
         数字人模型名称。
 
@@ -255,7 +255,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @property
     def style_id(self):
-        """Gets the style_id of this ShowPictureModelingJobResponse.
+        r"""Gets the style_id of this ShowPictureModelingJobResponse.
 
         风格ID。
 
@@ -266,7 +266,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @style_id.setter
     def style_id(self, style_id):
-        """Sets the style_id of this ShowPictureModelingJobResponse.
+        r"""Sets the style_id of this ShowPictureModelingJobResponse.
 
         风格ID。
 
@@ -277,7 +277,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @property
     def model_cover_url(self):
-        """Gets the model_cover_url of this ShowPictureModelingJobResponse.
+        r"""Gets the model_cover_url of this ShowPictureModelingJobResponse.
 
         模型封面URL。
 
@@ -288,7 +288,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @model_cover_url.setter
     def model_cover_url(self, model_cover_url):
-        """Sets the model_cover_url of this ShowPictureModelingJobResponse.
+        r"""Sets the model_cover_url of this ShowPictureModelingJobResponse.
 
         模型封面URL。
 
@@ -299,7 +299,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowPictureModelingJobResponse.
+        r"""Gets the x_request_id of this ShowPictureModelingJobResponse.
 
         :return: The x_request_id of this ShowPictureModelingJobResponse.
         :rtype: str
@@ -308,7 +308,7 @@ class ShowPictureModelingJobResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowPictureModelingJobResponse.
+        r"""Sets the x_request_id of this ShowPictureModelingJobResponse.
 
         :param x_request_id: The x_request_id of this ShowPictureModelingJobResponse.
         :type x_request_id: str

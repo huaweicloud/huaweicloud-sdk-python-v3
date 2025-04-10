@@ -33,7 +33,7 @@ class ModSubCustomerBudgetReq:
     }
 
     def __init__(self, customer_id=None, budget_amount=None, cancel_partner_frozen=None, indirect_partner_id=None, budget_type=None):
-        """ModSubCustomerBudgetReq
+        r"""ModSubCustomerBudgetReq
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ModSubCustomerBudgetReq:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this ModSubCustomerBudgetReq.
+        r"""Gets the customer_id of this ModSubCustomerBudgetReq.
 
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
@@ -80,7 +80,7 @@ class ModSubCustomerBudgetReq:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this ModSubCustomerBudgetReq.
+        r"""Sets the customer_id of this ModSubCustomerBudgetReq.
 
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
@@ -91,7 +91,7 @@ class ModSubCustomerBudgetReq:
 
     @property
     def budget_amount(self):
-        """Gets the budget_amount of this ModSubCustomerBudgetReq.
+        r"""Gets the budget_amount of this ModSubCustomerBudgetReq.
 
         调整的目标金额。 单位：元。精确至小数点后2位。
 
@@ -102,7 +102,7 @@ class ModSubCustomerBudgetReq:
 
     @budget_amount.setter
     def budget_amount(self, budget_amount):
-        """Sets the budget_amount of this ModSubCustomerBudgetReq.
+        r"""Sets the budget_amount of this ModSubCustomerBudgetReq.
 
         调整的目标金额。 单位：元。精确至小数点后2位。
 
@@ -113,7 +113,7 @@ class ModSubCustomerBudgetReq:
 
     @property
     def cancel_partner_frozen(self):
-        """Gets the cancel_partner_frozen of this ModSubCustomerBudgetReq.
+        r"""Gets the cancel_partner_frozen of this ModSubCustomerBudgetReq.
 
         是否在设置客户预算的同时解除账号冻结： 0：否1：是 默认值为0。
 
@@ -124,7 +124,7 @@ class ModSubCustomerBudgetReq:
 
     @cancel_partner_frozen.setter
     def cancel_partner_frozen(self, cancel_partner_frozen):
-        """Sets the cancel_partner_frozen of this ModSubCustomerBudgetReq.
+        r"""Sets the cancel_partner_frozen of this ModSubCustomerBudgetReq.
 
         是否在设置客户预算的同时解除账号冻结： 0：否1：是 默认值为0。
 
@@ -135,7 +135,7 @@ class ModSubCustomerBudgetReq:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this ModSubCustomerBudgetReq.
+        r"""Gets the indirect_partner_id of this ModSubCustomerBudgetReq.
 
         云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
 
@@ -146,7 +146,7 @@ class ModSubCustomerBudgetReq:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this ModSubCustomerBudgetReq.
+        r"""Sets the indirect_partner_id of this ModSubCustomerBudgetReq.
 
         云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
 
@@ -157,7 +157,7 @@ class ModSubCustomerBudgetReq:
 
     @property
     def budget_type(self):
-        """Gets the budget_type of this ModSubCustomerBudgetReq.
+        r"""Gets the budget_type of this ModSubCustomerBudgetReq.
 
         |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算 ，此参数不携带或携带值为null时，默认值为MONTHLY。|
 
@@ -168,7 +168,7 @@ class ModSubCustomerBudgetReq:
 
     @budget_type.setter
     def budget_type(self, budget_type):
-        """Sets the budget_type of this ModSubCustomerBudgetReq.
+        r"""Sets the budget_type of this ModSubCustomerBudgetReq.
 
         |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算 ，此参数不携带或携带值为null时，默认值为MONTHLY。|
 

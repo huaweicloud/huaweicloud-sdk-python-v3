@@ -27,7 +27,7 @@ class AgencyAssumedbyUserDomain:
     }
 
     def __init__(self, name=None, id=None):
-        """AgencyAssumedbyUserDomain
+        r"""AgencyAssumedbyUserDomain
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AgencyAssumedbyUserDomain:
 
     @property
     def name(self):
-        """Gets the name of this AgencyAssumedbyUserDomain.
+        r"""Gets the name of this AgencyAssumedbyUserDomain.
 
         被委托方B的账号名称。
 
@@ -59,7 +59,7 @@ class AgencyAssumedbyUserDomain:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgencyAssumedbyUserDomain.
+        r"""Sets the name of this AgencyAssumedbyUserDomain.
 
         被委托方B的账号名称。
 
@@ -70,7 +70,7 @@ class AgencyAssumedbyUserDomain:
 
     @property
     def id(self):
-        """Gets the id of this AgencyAssumedbyUserDomain.
+        r"""Gets the id of this AgencyAssumedbyUserDomain.
 
         被委托方B的账号ID。
 
@@ -81,7 +81,7 @@ class AgencyAssumedbyUserDomain:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AgencyAssumedbyUserDomain.
+        r"""Sets the id of this AgencyAssumedbyUserDomain.
 
         被委托方B的账号ID。
 

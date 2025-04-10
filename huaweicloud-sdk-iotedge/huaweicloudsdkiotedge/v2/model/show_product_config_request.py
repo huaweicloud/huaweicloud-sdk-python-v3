@@ -25,7 +25,7 @@ class ShowProductConfigRequest:
     }
 
     def __init__(self, protocol_type=None):
-        """ShowProductConfigRequest
+        r"""ShowProductConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowProductConfigRequest:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this ShowProductConfigRequest.
+        r"""Gets the protocol_type of this ShowProductConfigRequest.
 
         协议类型
 
@@ -53,7 +53,7 @@ class ShowProductConfigRequest:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this ShowProductConfigRequest.
+        r"""Sets the protocol_type of this ShowProductConfigRequest.
 
         协议类型
 

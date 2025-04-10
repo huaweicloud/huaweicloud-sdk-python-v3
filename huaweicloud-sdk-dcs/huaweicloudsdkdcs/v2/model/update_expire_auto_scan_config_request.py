@@ -27,7 +27,7 @@ class UpdateExpireAutoScanConfigRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateExpireAutoScanConfigRequest
+        r"""UpdateExpireAutoScanConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateExpireAutoScanConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateExpireAutoScanConfigRequest.
+        r"""Gets the instance_id of this UpdateExpireAutoScanConfigRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class UpdateExpireAutoScanConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateExpireAutoScanConfigRequest.
+        r"""Sets the instance_id of this UpdateExpireAutoScanConfigRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class UpdateExpireAutoScanConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateExpireAutoScanConfigRequest.
+        r"""Gets the body of this UpdateExpireAutoScanConfigRequest.
 
         :return: The body of this UpdateExpireAutoScanConfigRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateAutoScanConfigRequestBody`
@@ -80,7 +80,7 @@ class UpdateExpireAutoScanConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateExpireAutoScanConfigRequest.
+        r"""Sets the body of this UpdateExpireAutoScanConfigRequest.
 
         :param body: The body of this UpdateExpireAutoScanConfigRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.UpdateAutoScanConfigRequestBody`

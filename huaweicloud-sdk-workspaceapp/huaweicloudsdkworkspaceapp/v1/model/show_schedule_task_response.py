@@ -54,7 +54,7 @@ class ShowScheduleTaskResponse(SdkResponse):
     }
 
     def __init__(self, id=None, task_type=None, task_name=None, schedule_task_policy=None, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, time_zone=None, scheduled_date=None, scheduled_time=None, expire_time=None, description=None, target_infos=None):
-        """ShowScheduleTaskResponse
+        r"""ShowScheduleTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowScheduleTaskResponse.
+        r"""Gets the id of this ShowScheduleTaskResponse.
 
         任务id。
 
@@ -153,7 +153,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowScheduleTaskResponse.
+        r"""Sets the id of this ShowScheduleTaskResponse.
 
         任务id。
 
@@ -164,7 +164,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @property
     def task_type(self):
-        """Gets the task_type of this ShowScheduleTaskResponse.
+        r"""Gets the task_type of this ShowScheduleTaskResponse.
 
         :return: The task_type of this ShowScheduleTaskResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
@@ -173,7 +173,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ShowScheduleTaskResponse.
+        r"""Sets the task_type of this ShowScheduleTaskResponse.
 
         :param task_type: The task_type of this ShowScheduleTaskResponse.
         :type task_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
@@ -182,7 +182,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this ShowScheduleTaskResponse.
+        r"""Gets the task_name of this ShowScheduleTaskResponse.
 
         任务名称。
 
@@ -193,7 +193,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ShowScheduleTaskResponse.
+        r"""Sets the task_name of this ShowScheduleTaskResponse.
 
         任务名称。
 
@@ -204,7 +204,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @property
     def schedule_task_policy(self):
-        """Gets the schedule_task_policy of this ShowScheduleTaskResponse.
+        r"""Gets the schedule_task_policy of this ShowScheduleTaskResponse.
 
         :return: The schedule_task_policy of this ShowScheduleTaskResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskPolicy`
@@ -213,7 +213,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @schedule_task_policy.setter
     def schedule_task_policy(self, schedule_task_policy):
-        """Sets the schedule_task_policy of this ShowScheduleTaskResponse.
+        r"""Sets the schedule_task_policy of this ShowScheduleTaskResponse.
 
         :param schedule_task_policy: The schedule_task_policy of this ShowScheduleTaskResponse.
         :type schedule_task_policy: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskPolicy`
@@ -222,7 +222,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @property
     def scheduled_type(self):
-        """Gets the scheduled_type of this ShowScheduleTaskResponse.
+        r"""Gets the scheduled_type of this ShowScheduleTaskResponse.
 
         :return: The scheduled_type of this ShowScheduleTaskResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
@@ -231,7 +231,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @scheduled_type.setter
     def scheduled_type(self, scheduled_type):
-        """Sets the scheduled_type of this ShowScheduleTaskResponse.
+        r"""Sets the scheduled_type of this ShowScheduleTaskResponse.
 
         :param scheduled_type: The scheduled_type of this ShowScheduleTaskResponse.
         :type scheduled_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
@@ -240,7 +240,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @property
     def day_interval(self):
-        """Gets the day_interval of this ShowScheduleTaskResponse.
+        r"""Gets the day_interval of this ShowScheduleTaskResponse.
 
         周期按天时：按x天间隔执行。
 
@@ -251,7 +251,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @day_interval.setter
     def day_interval(self, day_interval):
-        """Sets the day_interval of this ShowScheduleTaskResponse.
+        r"""Sets the day_interval of this ShowScheduleTaskResponse.
 
         周期按天时：按x天间隔执行。
 
@@ -262,7 +262,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @property
     def week_list(self):
-        """Gets the week_list of this ShowScheduleTaskResponse.
+        r"""Gets the week_list of this ShowScheduleTaskResponse.
 
         周期按周时：取值1~7，英文逗号分隔，如1,2,7。
 
@@ -273,7 +273,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @week_list.setter
     def week_list(self, week_list):
-        """Sets the week_list of this ShowScheduleTaskResponse.
+        r"""Sets the week_list of this ShowScheduleTaskResponse.
 
         周期按周时：取值1~7，英文逗号分隔，如1,2,7。
 
@@ -284,7 +284,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @property
     def month_list(self):
-        """Gets the month_list of this ShowScheduleTaskResponse.
+        r"""Gets the month_list of this ShowScheduleTaskResponse.
 
         周期按月时：取值1~12，英文逗号分隔，如1,3,12。
 
@@ -295,7 +295,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @month_list.setter
     def month_list(self, month_list):
-        """Sets the month_list of this ShowScheduleTaskResponse.
+        r"""Sets the month_list of this ShowScheduleTaskResponse.
 
         周期按月时：取值1~12，英文逗号分隔，如1,3,12。
 
@@ -306,7 +306,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @property
     def date_list(self):
-        """Gets the date_list of this ShowScheduleTaskResponse.
+        r"""Gets the date_list of this ShowScheduleTaskResponse.
 
         周期按月时：取值1~31及L(代表当月最后一天)，英文逗号分隔，如1,2,28,L。
 
@@ -317,7 +317,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @date_list.setter
     def date_list(self, date_list):
-        """Sets the date_list of this ShowScheduleTaskResponse.
+        r"""Sets the date_list of this ShowScheduleTaskResponse.
 
         周期按月时：取值1~31及L(代表当月最后一天)，英文逗号分隔，如1,2,28,L。
 
@@ -328,7 +328,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ShowScheduleTaskResponse.
+        r"""Gets the time_zone of this ShowScheduleTaskResponse.
 
         时区。
 
@@ -339,7 +339,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ShowScheduleTaskResponse.
+        r"""Sets the time_zone of this ShowScheduleTaskResponse.
 
         时区。
 
@@ -350,7 +350,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @property
     def scheduled_date(self):
-        """Gets the scheduled_date of this ShowScheduleTaskResponse.
+        r"""Gets the scheduled_date of this ShowScheduleTaskResponse.
 
         周期指定时间时：表示指定的日期，格式为yyyy-MM-dd。
 
@@ -361,7 +361,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @scheduled_date.setter
     def scheduled_date(self, scheduled_date):
-        """Sets the scheduled_date of this ShowScheduleTaskResponse.
+        r"""Sets the scheduled_date of this ShowScheduleTaskResponse.
 
         周期指定时间时：表示指定的日期，格式为yyyy-MM-dd。
 
@@ -372,7 +372,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @property
     def scheduled_time(self):
-        """Gets the scheduled_time of this ShowScheduleTaskResponse.
+        r"""Gets the scheduled_time of this ShowScheduleTaskResponse.
 
         指定的执行时间点，格式为HH:mm:ss。
 
@@ -383,7 +383,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @scheduled_time.setter
     def scheduled_time(self, scheduled_time):
-        """Sets the scheduled_time of this ShowScheduleTaskResponse.
+        r"""Sets the scheduled_time of this ShowScheduleTaskResponse.
 
         指定的执行时间点，格式为HH:mm:ss。
 
@@ -394,7 +394,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ShowScheduleTaskResponse.
+        r"""Gets the expire_time of this ShowScheduleTaskResponse.
 
         到期时间，格式为。
 
@@ -405,7 +405,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ShowScheduleTaskResponse.
+        r"""Sets the expire_time of this ShowScheduleTaskResponse.
 
         到期时间，格式为。
 
@@ -416,7 +416,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowScheduleTaskResponse.
+        r"""Gets the description of this ShowScheduleTaskResponse.
 
         描述。
 
@@ -427,7 +427,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowScheduleTaskResponse.
+        r"""Sets the description of this ShowScheduleTaskResponse.
 
         描述。
 
@@ -438,7 +438,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @property
     def target_infos(self):
-        """Gets the target_infos of this ShowScheduleTaskResponse.
+        r"""Gets the target_infos of this ShowScheduleTaskResponse.
 
         定时任务应用的对象列表。
 
@@ -449,7 +449,7 @@ class ShowScheduleTaskResponse(SdkResponse):
 
     @target_infos.setter
     def target_infos(self, target_infos):
-        """Sets the target_infos of this ShowScheduleTaskResponse.
+        r"""Sets the target_infos of this ShowScheduleTaskResponse.
 
         定时任务应用的对象列表。
 

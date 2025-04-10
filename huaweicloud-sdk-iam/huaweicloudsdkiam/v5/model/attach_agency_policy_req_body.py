@@ -25,7 +25,7 @@ class AttachAgencyPolicyReqBody:
     }
 
     def __init__(self, agency_id=None):
-        """AttachAgencyPolicyReqBody
+        r"""AttachAgencyPolicyReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AttachAgencyPolicyReqBody:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this AttachAgencyPolicyReqBody.
+        r"""Gets the agency_id of this AttachAgencyPolicyReqBody.
 
         委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -53,7 +53,7 @@ class AttachAgencyPolicyReqBody:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this AttachAgencyPolicyReqBody.
+        r"""Sets the agency_id of this AttachAgencyPolicyReqBody.
 
         委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 

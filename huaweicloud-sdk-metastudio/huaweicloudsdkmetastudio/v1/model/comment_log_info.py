@@ -33,7 +33,7 @@ class CommentLogInfo:
     }
 
     def __init__(self, operate_time=None, comment_type=None, comment_title=None, comment_message=None, attachment_download_url=None):
-        """CommentLogInfo
+        r"""CommentLogInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CommentLogInfo:
 
     @property
     def operate_time(self):
-        """Gets the operate_time of this CommentLogInfo.
+        r"""Gets the operate_time of this CommentLogInfo.
 
         操作时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”
 
@@ -82,7 +82,7 @@ class CommentLogInfo:
 
     @operate_time.setter
     def operate_time(self, operate_time):
-        """Sets the operate_time of this CommentLogInfo.
+        r"""Sets the operate_time of this CommentLogInfo.
 
         操作时间,格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”
 
@@ -93,7 +93,7 @@ class CommentLogInfo:
 
     @property
     def comment_type(self):
-        """Gets the comment_type of this CommentLogInfo.
+        r"""Gets the comment_type of this CommentLogInfo.
 
         * USER_REJECT：用户驳回 * USER_COMMENT：用户评论 * ADMIN_COMMENT：管理员评论
 
@@ -104,7 +104,7 @@ class CommentLogInfo:
 
     @comment_type.setter
     def comment_type(self, comment_type):
-        """Sets the comment_type of this CommentLogInfo.
+        r"""Sets the comment_type of this CommentLogInfo.
 
         * USER_REJECT：用户驳回 * USER_COMMENT：用户评论 * ADMIN_COMMENT：管理员评论
 
@@ -115,7 +115,7 @@ class CommentLogInfo:
 
     @property
     def comment_title(self):
-        """Gets the comment_title of this CommentLogInfo.
+        r"""Gets the comment_title of this CommentLogInfo.
 
         标题。
 
@@ -126,7 +126,7 @@ class CommentLogInfo:
 
     @comment_title.setter
     def comment_title(self, comment_title):
-        """Sets the comment_title of this CommentLogInfo.
+        r"""Sets the comment_title of this CommentLogInfo.
 
         标题。
 
@@ -137,7 +137,7 @@ class CommentLogInfo:
 
     @property
     def comment_message(self):
-        """Gets the comment_message of this CommentLogInfo.
+        r"""Gets the comment_message of this CommentLogInfo.
 
         消息。
 
@@ -148,7 +148,7 @@ class CommentLogInfo:
 
     @comment_message.setter
     def comment_message(self, comment_message):
-        """Sets the comment_message of this CommentLogInfo.
+        r"""Sets the comment_message of this CommentLogInfo.
 
         消息。
 
@@ -159,7 +159,7 @@ class CommentLogInfo:
 
     @property
     def attachment_download_url(self):
-        """Gets the attachment_download_url of this CommentLogInfo.
+        r"""Gets the attachment_download_url of this CommentLogInfo.
 
         附件下载地址
 
@@ -170,7 +170,7 @@ class CommentLogInfo:
 
     @attachment_download_url.setter
     def attachment_download_url(self, attachment_download_url):
-        """Sets the attachment_download_url of this CommentLogInfo.
+        r"""Sets the attachment_download_url of this CommentLogInfo.
 
         附件下载地址
 

@@ -35,7 +35,7 @@ class CreateFavoriteReq:
     }
 
     def __init__(self, type=None, resource_id=None, resource_name=None, resource_type=None, display_info=None, location_info=None):
-        """CreateFavoriteReq
+        r"""CreateFavoriteReq
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateFavoriteReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateFavoriteReq.
+        r"""Gets the type of this CreateFavoriteReq.
 
         收藏类型。
 
@@ -83,7 +83,7 @@ class CreateFavoriteReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateFavoriteReq.
+        r"""Sets the type of this CreateFavoriteReq.
 
         收藏类型。
 
@@ -94,7 +94,7 @@ class CreateFavoriteReq:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateFavoriteReq.
+        r"""Gets the resource_id of this CreateFavoriteReq.
 
         收藏的资源ID。
 
@@ -105,7 +105,7 @@ class CreateFavoriteReq:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateFavoriteReq.
+        r"""Sets the resource_id of this CreateFavoriteReq.
 
         收藏的资源ID。
 
@@ -116,7 +116,7 @@ class CreateFavoriteReq:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this CreateFavoriteReq.
+        r"""Gets the resource_name of this CreateFavoriteReq.
 
         收藏的资源名称，正则匹配中文，英文字母和数字及下划线。
 
@@ -127,7 +127,7 @@ class CreateFavoriteReq:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this CreateFavoriteReq.
+        r"""Sets the resource_name of this CreateFavoriteReq.
 
         收藏的资源名称，正则匹配中文，英文字母和数字及下划线。
 
@@ -138,7 +138,7 @@ class CreateFavoriteReq:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CreateFavoriteReq.
+        r"""Gets the resource_type of this CreateFavoriteReq.
 
         收藏的资源类型，正则匹配英文字母和数字及下划线。
 
@@ -149,7 +149,7 @@ class CreateFavoriteReq:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CreateFavoriteReq.
+        r"""Sets the resource_type of this CreateFavoriteReq.
 
         收藏的资源类型，正则匹配英文字母和数字及下划线。
 
@@ -160,7 +160,7 @@ class CreateFavoriteReq:
 
     @property
     def display_info(self):
-        """Gets the display_info of this CreateFavoriteReq.
+        r"""Gets the display_info of this CreateFavoriteReq.
 
         展示信息。
 
@@ -171,7 +171,7 @@ class CreateFavoriteReq:
 
     @display_info.setter
     def display_info(self, display_info):
-        """Sets the display_info of this CreateFavoriteReq.
+        r"""Sets the display_info of this CreateFavoriteReq.
 
         展示信息。
 
@@ -182,7 +182,7 @@ class CreateFavoriteReq:
 
     @property
     def location_info(self):
-        """Gets the location_info of this CreateFavoriteReq.
+        r"""Gets the location_info of this CreateFavoriteReq.
 
         定位信息。
 
@@ -193,7 +193,7 @@ class CreateFavoriteReq:
 
     @location_info.setter
     def location_info(self, location_info):
-        """Sets the location_info of this CreateFavoriteReq.
+        r"""Sets the location_info of this CreateFavoriteReq.
 
         定位信息。
 

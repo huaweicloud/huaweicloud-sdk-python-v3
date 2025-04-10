@@ -27,7 +27,7 @@ class DeleteConfigRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """DeleteConfigRequest
+        r"""DeleteConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteConfigRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteConfigRequest.
+        r"""Gets the cluster_id of this DeleteConfigRequest.
 
         指定删除配置文件的集群ID。
 
@@ -60,7 +60,7 @@ class DeleteConfigRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteConfigRequest.
+        r"""Sets the cluster_id of this DeleteConfigRequest.
 
         指定删除配置文件的集群ID。
 
@@ -71,7 +71,7 @@ class DeleteConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteConfigRequest.
+        r"""Gets the body of this DeleteConfigRequest.
 
         :return: The body of this DeleteConfigRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteConfReq`
@@ -80,7 +80,7 @@ class DeleteConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteConfigRequest.
+        r"""Sets the body of this DeleteConfigRequest.
 
         :param body: The body of this DeleteConfigRequest.
         :type body: :class:`huaweicloudsdkcss.v1.DeleteConfReq`

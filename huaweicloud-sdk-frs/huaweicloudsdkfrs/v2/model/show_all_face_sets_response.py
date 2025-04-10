@@ -28,7 +28,7 @@ class ShowAllFaceSetsResponse(SdkResponse):
     }
 
     def __init__(self, face_sets_info=None, x_request_id=None):
-        """ShowAllFaceSetsResponse
+        r"""ShowAllFaceSetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAllFaceSetsResponse(SdkResponse):
 
     @property
     def face_sets_info(self):
-        """Gets the face_sets_info of this ShowAllFaceSetsResponse.
+        r"""Gets the face_sets_info of this ShowAllFaceSetsResponse.
 
         [人脸库信息，详见[FaceSetInfo](https://support.huaweicloud.com/api-face/face_02_0020.html)。调用失败时无此字段。](tag:hc) [人脸库信息，详见[FaceSetInfo](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0020.html)。调用失败时无此字段。](tag:hk)
 
@@ -62,7 +62,7 @@ class ShowAllFaceSetsResponse(SdkResponse):
 
     @face_sets_info.setter
     def face_sets_info(self, face_sets_info):
-        """Sets the face_sets_info of this ShowAllFaceSetsResponse.
+        r"""Sets the face_sets_info of this ShowAllFaceSetsResponse.
 
         [人脸库信息，详见[FaceSetInfo](https://support.huaweicloud.com/api-face/face_02_0020.html)。调用失败时无此字段。](tag:hc) [人脸库信息，详见[FaceSetInfo](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0020.html)。调用失败时无此字段。](tag:hk)
 
@@ -73,7 +73,7 @@ class ShowAllFaceSetsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowAllFaceSetsResponse.
+        r"""Gets the x_request_id of this ShowAllFaceSetsResponse.
 
         :return: The x_request_id of this ShowAllFaceSetsResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowAllFaceSetsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowAllFaceSetsResponse.
+        r"""Sets the x_request_id of this ShowAllFaceSetsResponse.
 
         :param x_request_id: The x_request_id of this ShowAllFaceSetsResponse.
         :type x_request_id: str

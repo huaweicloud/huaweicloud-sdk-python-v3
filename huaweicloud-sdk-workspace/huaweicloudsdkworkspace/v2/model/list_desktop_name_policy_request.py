@@ -33,7 +33,7 @@ class ListDesktopNamePolicyRequest:
     }
 
     def __init__(self, is_contain_user=None, policy_name=None, policy_id=None, offset=None, limit=None):
-        """ListDesktopNamePolicyRequest
+        r"""ListDesktopNamePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListDesktopNamePolicyRequest:
 
     @property
     def is_contain_user(self):
-        """Gets the is_contain_user of this ListDesktopNamePolicyRequest.
+        r"""Gets the is_contain_user of this ListDesktopNamePolicyRequest.
 
         是否包含用户名的桌面名称策略。 - true 包含 - false 不包含
 
@@ -82,7 +82,7 @@ class ListDesktopNamePolicyRequest:
 
     @is_contain_user.setter
     def is_contain_user(self, is_contain_user):
-        """Sets the is_contain_user of this ListDesktopNamePolicyRequest.
+        r"""Sets the is_contain_user of this ListDesktopNamePolicyRequest.
 
         是否包含用户名的桌面名称策略。 - true 包含 - false 不包含
 
@@ -93,7 +93,7 @@ class ListDesktopNamePolicyRequest:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this ListDesktopNamePolicyRequest.
+        r"""Gets the policy_name of this ListDesktopNamePolicyRequest.
 
         策略名称，由数字、字母、中文、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符，支持模糊筛选。
 
@@ -104,7 +104,7 @@ class ListDesktopNamePolicyRequest:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this ListDesktopNamePolicyRequest.
+        r"""Sets the policy_name of this ListDesktopNamePolicyRequest.
 
         策略名称，由数字、字母、中文、下划线组成，必须以字母或下划线开头，长度范围为1~30个字符，支持模糊筛选。
 
@@ -115,7 +115,7 @@ class ListDesktopNamePolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ListDesktopNamePolicyRequest.
+        r"""Gets the policy_id of this ListDesktopNamePolicyRequest.
 
         策略id。
 
@@ -126,7 +126,7 @@ class ListDesktopNamePolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ListDesktopNamePolicyRequest.
+        r"""Sets the policy_id of this ListDesktopNamePolicyRequest.
 
         策略id。
 
@@ -137,7 +137,7 @@ class ListDesktopNamePolicyRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDesktopNamePolicyRequest.
+        r"""Gets the offset of this ListDesktopNamePolicyRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -148,7 +148,7 @@ class ListDesktopNamePolicyRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDesktopNamePolicyRequest.
+        r"""Sets the offset of this ListDesktopNamePolicyRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -159,7 +159,7 @@ class ListDesktopNamePolicyRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDesktopNamePolicyRequest.
+        r"""Gets the limit of this ListDesktopNamePolicyRequest.
 
         用于分页查询，取值范围0-50，默认值50。
 
@@ -170,7 +170,7 @@ class ListDesktopNamePolicyRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDesktopNamePolicyRequest.
+        r"""Sets the limit of this ListDesktopNamePolicyRequest.
 
         用于分页查询，取值范围0-50，默认值50。
 

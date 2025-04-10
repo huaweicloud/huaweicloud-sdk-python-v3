@@ -25,7 +25,7 @@ class ShowCaseRequest:
     }
 
     def __init__(self, case_id=None):
-        """ShowCaseRequest
+        r"""ShowCaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCaseRequest:
 
     @property
     def case_id(self):
-        """Gets the case_id of this ShowCaseRequest.
+        r"""Gets the case_id of this ShowCaseRequest.
 
         用例id
 
@@ -53,7 +53,7 @@ class ShowCaseRequest:
 
     @case_id.setter
     def case_id(self, case_id):
-        """Sets the case_id of this ShowCaseRequest.
+        r"""Sets the case_id of this ShowCaseRequest.
 
         用例id
 

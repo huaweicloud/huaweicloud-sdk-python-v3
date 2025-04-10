@@ -25,7 +25,7 @@ class BatchUpdateVaultRequestBody:
     }
 
     def __init__(self, vault=None):
-        """BatchUpdateVaultRequestBody
+        r"""BatchUpdateVaultRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchUpdateVaultRequestBody:
 
     @property
     def vault(self):
-        """Gets the vault of this BatchUpdateVaultRequestBody.
+        r"""Gets the vault of this BatchUpdateVaultRequestBody.
 
         :return: The vault of this BatchUpdateVaultRequestBody.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultBatchUpdate`
@@ -51,7 +51,7 @@ class BatchUpdateVaultRequestBody:
 
     @vault.setter
     def vault(self, vault):
-        """Sets the vault of this BatchUpdateVaultRequestBody.
+        r"""Sets the vault of this BatchUpdateVaultRequestBody.
 
         :param vault: The vault of this BatchUpdateVaultRequestBody.
         :type vault: :class:`huaweicloudsdkcbr.v1.VaultBatchUpdate`

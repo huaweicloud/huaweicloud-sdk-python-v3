@@ -29,7 +29,7 @@ class DeleteWafWhiteIpRuleV2RequestBody:
     }
 
     def __init__(self, ids=None, domain_name=None, overseas_type=None):
-        """DeleteWafWhiteIpRuleV2RequestBody
+        r"""DeleteWafWhiteIpRuleV2RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteWafWhiteIpRuleV2RequestBody:
 
     @property
     def ids(self):
-        """Gets the ids of this DeleteWafWhiteIpRuleV2RequestBody.
+        r"""Gets the ids of this DeleteWafWhiteIpRuleV2RequestBody.
 
         待删除规则id
 
@@ -65,7 +65,7 @@ class DeleteWafWhiteIpRuleV2RequestBody:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this DeleteWafWhiteIpRuleV2RequestBody.
+        r"""Sets the ids of this DeleteWafWhiteIpRuleV2RequestBody.
 
         待删除规则id
 
@@ -76,7 +76,7 @@ class DeleteWafWhiteIpRuleV2RequestBody:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this DeleteWafWhiteIpRuleV2RequestBody.
+        r"""Gets the domain_name of this DeleteWafWhiteIpRuleV2RequestBody.
 
         域名+端口组合，标准端口80/443无须加端口。
 
@@ -87,7 +87,7 @@ class DeleteWafWhiteIpRuleV2RequestBody:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this DeleteWafWhiteIpRuleV2RequestBody.
+        r"""Sets the domain_name of this DeleteWafWhiteIpRuleV2RequestBody.
 
         域名+端口组合，标准端口80/443无须加端口。
 
@@ -98,7 +98,7 @@ class DeleteWafWhiteIpRuleV2RequestBody:
 
     @property
     def overseas_type(self):
-        """Gets the overseas_type of this DeleteWafWhiteIpRuleV2RequestBody.
+        r"""Gets the overseas_type of this DeleteWafWhiteIpRuleV2RequestBody.
 
         防护区域
 
@@ -109,7 +109,7 @@ class DeleteWafWhiteIpRuleV2RequestBody:
 
     @overseas_type.setter
     def overseas_type(self, overseas_type):
-        """Sets the overseas_type of this DeleteWafWhiteIpRuleV2RequestBody.
+        r"""Sets the overseas_type of this DeleteWafWhiteIpRuleV2RequestBody.
 
         防护区域
 

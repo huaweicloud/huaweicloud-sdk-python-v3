@@ -29,7 +29,7 @@ class CheckNoNewAccessReqBody:
     }
 
     def __init__(self, existing_policy_document=None, new_policy_document=None, policy_type=None):
-        """CheckNoNewAccessReqBody
+        r"""CheckNoNewAccessReqBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CheckNoNewAccessReqBody:
 
     @property
     def existing_policy_document(self):
-        """Gets the existing_policy_document of this CheckNoNewAccessReqBody.
+        r"""Gets the existing_policy_document of this CheckNoNewAccessReqBody.
 
         该策略JSON格式策略文档。
 
@@ -65,7 +65,7 @@ class CheckNoNewAccessReqBody:
 
     @existing_policy_document.setter
     def existing_policy_document(self, existing_policy_document):
-        """Sets the existing_policy_document of this CheckNoNewAccessReqBody.
+        r"""Sets the existing_policy_document of this CheckNoNewAccessReqBody.
 
         该策略JSON格式策略文档。
 
@@ -76,7 +76,7 @@ class CheckNoNewAccessReqBody:
 
     @property
     def new_policy_document(self):
-        """Gets the new_policy_document of this CheckNoNewAccessReqBody.
+        r"""Gets the new_policy_document of this CheckNoNewAccessReqBody.
 
         该策略JSON格式策略文档。
 
@@ -87,7 +87,7 @@ class CheckNoNewAccessReqBody:
 
     @new_policy_document.setter
     def new_policy_document(self, new_policy_document):
-        """Sets the new_policy_document of this CheckNoNewAccessReqBody.
+        r"""Sets the new_policy_document of this CheckNoNewAccessReqBody.
 
         该策略JSON格式策略文档。
 
@@ -98,7 +98,7 @@ class CheckNoNewAccessReqBody:
 
     @property
     def policy_type(self):
-        """Gets the policy_type of this CheckNoNewAccessReqBody.
+        r"""Gets the policy_type of this CheckNoNewAccessReqBody.
 
         :return: The policy_type of this CheckNoNewAccessReqBody.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.PolicyDocumentType`
@@ -107,7 +107,7 @@ class CheckNoNewAccessReqBody:
 
     @policy_type.setter
     def policy_type(self, policy_type):
-        """Sets the policy_type of this CheckNoNewAccessReqBody.
+        r"""Sets the policy_type of this CheckNoNewAccessReqBody.
 
         :param policy_type: The policy_type of this CheckNoNewAccessReqBody.
         :type policy_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.PolicyDocumentType`

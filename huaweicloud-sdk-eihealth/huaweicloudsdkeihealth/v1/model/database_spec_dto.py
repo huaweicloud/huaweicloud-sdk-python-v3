@@ -27,7 +27,7 @@ class DatabaseSpecDto:
     }
 
     def __init__(self, code=None, name=None):
-        """DatabaseSpecDto
+        r"""DatabaseSpecDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DatabaseSpecDto:
 
     @property
     def code(self):
-        """Gets the code of this DatabaseSpecDto.
+        r"""Gets the code of this DatabaseSpecDto.
 
         规格编号
 
@@ -59,7 +59,7 @@ class DatabaseSpecDto:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DatabaseSpecDto.
+        r"""Sets the code of this DatabaseSpecDto.
 
         规格编号
 
@@ -70,7 +70,7 @@ class DatabaseSpecDto:
 
     @property
     def name(self):
-        """Gets the name of this DatabaseSpecDto.
+        r"""Gets the name of this DatabaseSpecDto.
 
         规格名称
 
@@ -81,7 +81,7 @@ class DatabaseSpecDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatabaseSpecDto.
+        r"""Sets the name of this DatabaseSpecDto.
 
         规格名称
 

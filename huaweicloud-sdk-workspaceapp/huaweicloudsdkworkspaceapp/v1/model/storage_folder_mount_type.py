@@ -28,7 +28,7 @@ class StorageFolderMountType:
     }
 
     def __init__(self):
-        """StorageFolderMountType
+        r"""StorageFolderMountType
 
         The model defined in huaweicloud sdk
 

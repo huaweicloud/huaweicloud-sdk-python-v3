@@ -29,7 +29,7 @@ class CreateIpRequestBody:
     }
 
     def __init__(self, type=None, target_id=None, password=None):
-        """CreateIpRequestBody
+        r"""CreateIpRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateIpRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateIpRequestBody.
+        r"""Gets the type of this CreateIpRequestBody.
 
         待打开IP开关的对象类型。 - 扩容shard组时，取值为“shard”。 - 扩容config组时，取值为“config”。
 
@@ -66,7 +66,7 @@ class CreateIpRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateIpRequestBody.
+        r"""Sets the type of this CreateIpRequestBody.
 
         待打开IP开关的对象类型。 - 扩容shard组时，取值为“shard”。 - 扩容config组时，取值为“config”。
 
@@ -77,7 +77,7 @@ class CreateIpRequestBody:
 
     @property
     def target_id(self):
-        """Gets the target_id of this CreateIpRequestBody.
+        r"""Gets the target_id of this CreateIpRequestBody.
 
         Shard组ID 注意：   1. 第一次添加Shard/Config IP时，该参数不传。   2. 对于已经添加过Shard IP的实例，需要传入该参数为新扩容的Shard组添加IP。
 
@@ -88,7 +88,7 @@ class CreateIpRequestBody:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this CreateIpRequestBody.
+        r"""Sets the target_id of this CreateIpRequestBody.
 
         Shard组ID 注意：   1. 第一次添加Shard/Config IP时，该参数不传。   2. 对于已经添加过Shard IP的实例，需要传入该参数为新扩容的Shard组添加IP。
 
@@ -99,7 +99,7 @@ class CreateIpRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this CreateIpRequestBody.
+        r"""Gets the password of this CreateIpRequestBody.
 
         打开集群开关设置的密码。 注意：该密码暂不支持修改，请谨慎操作。
 
@@ -110,7 +110,7 @@ class CreateIpRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateIpRequestBody.
+        r"""Sets the password of this CreateIpRequestBody.
 
         打开集群开关设置的密码。 注意：该密码暂不支持修改，请谨慎操作。
 

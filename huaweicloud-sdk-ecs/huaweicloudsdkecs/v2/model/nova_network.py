@@ -31,7 +31,7 @@ class NovaNetwork:
     }
 
     def __init__(self, addr=None, version=None, os_ext_ips_ma_cmac_addr=None, os_ext_ip_stype=None):
-        """NovaNetwork
+        r"""NovaNetwork
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class NovaNetwork:
 
     @property
     def addr(self):
-        """Gets the addr of this NovaNetwork.
+        r"""Gets the addr of this NovaNetwork.
 
         IP地址。
 
@@ -71,7 +71,7 @@ class NovaNetwork:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this NovaNetwork.
+        r"""Sets the addr of this NovaNetwork.
 
         IP地址。
 
@@ -82,7 +82,7 @@ class NovaNetwork:
 
     @property
     def version(self):
-        """Gets the version of this NovaNetwork.
+        r"""Gets the version of this NovaNetwork.
 
         IP地址类型，值为4或6。  4：IP地址类型是IPv4 6：IP地址类型是IPv6
 
@@ -93,7 +93,7 @@ class NovaNetwork:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this NovaNetwork.
+        r"""Sets the version of this NovaNetwork.
 
         IP地址类型，值为4或6。  4：IP地址类型是IPv4 6：IP地址类型是IPv6
 
@@ -104,7 +104,7 @@ class NovaNetwork:
 
     @property
     def os_ext_ips_ma_cmac_addr(self):
-        """Gets the os_ext_ips_ma_cmac_addr of this NovaNetwork.
+        r"""Gets the os_ext_ips_ma_cmac_addr of this NovaNetwork.
 
         扩展属性，MAC地址。
 
@@ -115,7 +115,7 @@ class NovaNetwork:
 
     @os_ext_ips_ma_cmac_addr.setter
     def os_ext_ips_ma_cmac_addr(self, os_ext_ips_ma_cmac_addr):
-        """Sets the os_ext_ips_ma_cmac_addr of this NovaNetwork.
+        r"""Sets the os_ext_ips_ma_cmac_addr of this NovaNetwork.
 
         扩展属性，MAC地址。
 
@@ -126,7 +126,7 @@ class NovaNetwork:
 
     @property
     def os_ext_ip_stype(self):
-        """Gets the os_ext_ip_stype of this NovaNetwork.
+        r"""Gets the os_ext_ip_stype of this NovaNetwork.
 
         扩展属性，分配IP地址方式。
 
@@ -137,7 +137,7 @@ class NovaNetwork:
 
     @os_ext_ip_stype.setter
     def os_ext_ip_stype(self, os_ext_ip_stype):
-        """Sets the os_ext_ip_stype of this NovaNetwork.
+        r"""Sets the os_ext_ip_stype of this NovaNetwork.
 
         扩展属性，分配IP地址方式。
 

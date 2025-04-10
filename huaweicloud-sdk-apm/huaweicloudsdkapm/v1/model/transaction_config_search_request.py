@@ -31,7 +31,7 @@ class TransactionConfigSearchRequest:
     }
 
     def __init__(self, business_id=None, env_id=None, page_no=None, page_size=None):
-        """TransactionConfigSearchRequest
+        r"""TransactionConfigSearchRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class TransactionConfigSearchRequest:
 
     @property
     def business_id(self):
-        """Gets the business_id of this TransactionConfigSearchRequest.
+        r"""Gets the business_id of this TransactionConfigSearchRequest.
 
         应用id。
 
@@ -72,7 +72,7 @@ class TransactionConfigSearchRequest:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this TransactionConfigSearchRequest.
+        r"""Sets the business_id of this TransactionConfigSearchRequest.
 
         应用id。
 
@@ -83,7 +83,7 @@ class TransactionConfigSearchRequest:
 
     @property
     def env_id(self):
-        """Gets the env_id of this TransactionConfigSearchRequest.
+        r"""Gets the env_id of this TransactionConfigSearchRequest.
 
         环境id。
 
@@ -94,7 +94,7 @@ class TransactionConfigSearchRequest:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this TransactionConfigSearchRequest.
+        r"""Sets the env_id of this TransactionConfigSearchRequest.
 
         环境id。
 
@@ -105,7 +105,7 @@ class TransactionConfigSearchRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this TransactionConfigSearchRequest.
+        r"""Gets the page_no of this TransactionConfigSearchRequest.
 
         页码。
 
@@ -116,7 +116,7 @@ class TransactionConfigSearchRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this TransactionConfigSearchRequest.
+        r"""Sets the page_no of this TransactionConfigSearchRequest.
 
         页码。
 
@@ -127,7 +127,7 @@ class TransactionConfigSearchRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this TransactionConfigSearchRequest.
+        r"""Gets the page_size of this TransactionConfigSearchRequest.
 
         每页数量。
 
@@ -138,7 +138,7 @@ class TransactionConfigSearchRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this TransactionConfigSearchRequest.
+        r"""Sets the page_size of this TransactionConfigSearchRequest.
 
         每页数量。
 

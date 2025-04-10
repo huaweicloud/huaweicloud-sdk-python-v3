@@ -25,7 +25,7 @@ class WeakPasswordRequestBody:
     }
 
     def __init__(self, password=None):
-        """WeakPasswordRequestBody
+        r"""WeakPasswordRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class WeakPasswordRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this WeakPasswordRequestBody.
+        r"""Gets the password of this WeakPasswordRequestBody.
 
         数据库帐号密码。
 
@@ -53,7 +53,7 @@ class WeakPasswordRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this WeakPasswordRequestBody.
+        r"""Sets the password of this WeakPasswordRequestBody.
 
         数据库帐号密码。
 

@@ -28,7 +28,7 @@ class RecognizeThailandLicensePlateResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeThailandLicensePlateResponse
+        r"""RecognizeThailandLicensePlateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeThailandLicensePlateResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeThailandLicensePlateResponse.
+        r"""Gets the result of this RecognizeThailandLicensePlateResponse.
 
         调用成功时表示调用结果。 调用失败时无此字段 
 
@@ -62,7 +62,7 @@ class RecognizeThailandLicensePlateResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeThailandLicensePlateResponse.
+        r"""Sets the result of this RecognizeThailandLicensePlateResponse.
 
         调用成功时表示调用结果。 调用失败时无此字段 
 
@@ -73,7 +73,7 @@ class RecognizeThailandLicensePlateResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeThailandLicensePlateResponse.
+        r"""Gets the x_request_id of this RecognizeThailandLicensePlateResponse.
 
         :return: The x_request_id of this RecognizeThailandLicensePlateResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class RecognizeThailandLicensePlateResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeThailandLicensePlateResponse.
+        r"""Sets the x_request_id of this RecognizeThailandLicensePlateResponse.
 
         :param x_request_id: The x_request_id of this RecognizeThailandLicensePlateResponse.
         :type x_request_id: str

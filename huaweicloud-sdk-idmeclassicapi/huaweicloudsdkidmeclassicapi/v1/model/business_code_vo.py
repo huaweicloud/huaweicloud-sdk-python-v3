@@ -25,7 +25,7 @@ class BusinessCodeVo:
     }
 
     def __init__(self, code=None):
-        """BusinessCodeVo
+        r"""BusinessCodeVo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BusinessCodeVo:
 
     @property
     def code(self):
-        """Gets the code of this BusinessCodeVo.
+        r"""Gets the code of this BusinessCodeVo.
 
         **参数解释：**  业务编码。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -54,7 +54,7 @@ class BusinessCodeVo:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this BusinessCodeVo.
+        r"""Sets the code of this BusinessCodeVo.
 
         **参数解释：**  业务编码。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

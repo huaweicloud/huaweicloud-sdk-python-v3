@@ -27,7 +27,7 @@ class ListPubInfosResponseModel:
     }
 
     def __init__(self, page_info=None, data=None):
-        """ListPubInfosResponseModel
+        r"""ListPubInfosResponseModel
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListPubInfosResponseModel:
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPubInfosResponseModel.
+        r"""Gets the page_info of this ListPubInfosResponseModel.
 
         :return: The page_info of this ListPubInfosResponseModel.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.Page`
@@ -59,7 +59,7 @@ class ListPubInfosResponseModel:
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPubInfosResponseModel.
+        r"""Sets the page_info of this ListPubInfosResponseModel.
 
         :param page_info: The page_info of this ListPubInfosResponseModel.
         :type page_info: :class:`huaweicloudsdkkoomessage.v1.Page`
@@ -68,7 +68,7 @@ class ListPubInfosResponseModel:
 
     @property
     def data(self):
-        """Gets the data of this ListPubInfosResponseModel.
+        r"""Gets the data of this ListPubInfosResponseModel.
 
         服务号详情列表。
 
@@ -79,7 +79,7 @@ class ListPubInfosResponseModel:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListPubInfosResponseModel.
+        r"""Sets the data of this ListPubInfosResponseModel.
 
         服务号详情列表。
 

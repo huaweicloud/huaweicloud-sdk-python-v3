@@ -26,7 +26,7 @@ class DisassociateSubnetResponse(SdkResponse):
     }
 
     def __init__(self, routetable=None):
-        """DisassociateSubnetResponse
+        r"""DisassociateSubnetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DisassociateSubnetResponse(SdkResponse):
 
     @property
     def routetable(self):
-        """Gets the routetable of this DisassociateSubnetResponse.
+        r"""Gets the routetable of this DisassociateSubnetResponse.
 
         :return: The routetable of this DisassociateSubnetResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.Routetable`
@@ -53,7 +53,7 @@ class DisassociateSubnetResponse(SdkResponse):
 
     @routetable.setter
     def routetable(self, routetable):
-        """Sets the routetable of this DisassociateSubnetResponse.
+        r"""Sets the routetable of this DisassociateSubnetResponse.
 
         :param routetable: The routetable of this DisassociateSubnetResponse.
         :type routetable: :class:`huaweicloudsdkiec.v1.Routetable`

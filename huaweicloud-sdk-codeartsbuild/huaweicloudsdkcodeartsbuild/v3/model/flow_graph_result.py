@@ -27,7 +27,7 @@ class FlowGraphResult:
     }
 
     def __init__(self, edges=None, vertices=None):
-        """FlowGraphResult
+        r"""FlowGraphResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FlowGraphResult:
 
     @property
     def edges(self):
-        """Gets the edges of this FlowGraphResult.
+        r"""Gets the edges of this FlowGraphResult.
 
         edges
 
@@ -61,7 +61,7 @@ class FlowGraphResult:
 
     @edges.setter
     def edges(self, edges):
-        """Sets the edges of this FlowGraphResult.
+        r"""Sets the edges of this FlowGraphResult.
 
         edges
 
@@ -72,7 +72,7 @@ class FlowGraphResult:
 
     @property
     def vertices(self):
-        """Gets the vertices of this FlowGraphResult.
+        r"""Gets the vertices of this FlowGraphResult.
 
         record信息
 
@@ -83,7 +83,7 @@ class FlowGraphResult:
 
     @vertices.setter
     def vertices(self, vertices):
-        """Sets the vertices of this FlowGraphResult.
+        r"""Sets the vertices of this FlowGraphResult.
 
         record信息
 

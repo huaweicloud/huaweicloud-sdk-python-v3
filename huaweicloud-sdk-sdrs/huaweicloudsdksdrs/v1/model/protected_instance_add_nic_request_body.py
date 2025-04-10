@@ -29,7 +29,7 @@ class ProtectedInstanceAddNicRequestBody:
     }
 
     def __init__(self, subnet_id=None, security_groups=None, ip_address=None):
-        """ProtectedInstanceAddNicRequestBody
+        r"""ProtectedInstanceAddNicRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ProtectedInstanceAddNicRequestBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ProtectedInstanceAddNicRequestBody.
+        r"""Gets the subnet_id of this ProtectedInstanceAddNicRequestBody.
 
         添加网卡的子网ID。该参数是子网的network_id，和neutron_network_id的值保持一致。
 
@@ -67,7 +67,7 @@ class ProtectedInstanceAddNicRequestBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ProtectedInstanceAddNicRequestBody.
+        r"""Sets the subnet_id of this ProtectedInstanceAddNicRequestBody.
 
         添加网卡的子网ID。该参数是子网的network_id，和neutron_network_id的值保持一致。
 
@@ -78,7 +78,7 @@ class ProtectedInstanceAddNicRequestBody:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ProtectedInstanceAddNicRequestBody.
+        r"""Gets the security_groups of this ProtectedInstanceAddNicRequestBody.
 
         添加网卡的安全组信息。默认为Sys-default安全组。
 
@@ -89,7 +89,7 @@ class ProtectedInstanceAddNicRequestBody:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ProtectedInstanceAddNicRequestBody.
+        r"""Sets the security_groups of this ProtectedInstanceAddNicRequestBody.
 
         添加网卡的安全组信息。默认为Sys-default安全组。
 
@@ -100,7 +100,7 @@ class ProtectedInstanceAddNicRequestBody:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this ProtectedInstanceAddNicRequestBody.
+        r"""Gets the ip_address of this ProtectedInstanceAddNicRequestBody.
 
         IP地址，若无该参数表示自动分配IP地址。
 
@@ -111,7 +111,7 @@ class ProtectedInstanceAddNicRequestBody:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this ProtectedInstanceAddNicRequestBody.
+        r"""Sets the ip_address of this ProtectedInstanceAddNicRequestBody.
 
         IP地址，若无该参数表示自动分配IP地址。
 

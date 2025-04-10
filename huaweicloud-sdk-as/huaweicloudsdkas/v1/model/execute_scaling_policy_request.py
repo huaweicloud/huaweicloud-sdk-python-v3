@@ -27,7 +27,7 @@ class ExecuteScalingPolicyRequest:
     }
 
     def __init__(self, scaling_policy_id=None, body=None):
-        """ExecuteScalingPolicyRequest
+        r"""ExecuteScalingPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteScalingPolicyRequest:
 
     @property
     def scaling_policy_id(self):
-        """Gets the scaling_policy_id of this ExecuteScalingPolicyRequest.
+        r"""Gets the scaling_policy_id of this ExecuteScalingPolicyRequest.
 
         伸缩策略ID。
 
@@ -60,7 +60,7 @@ class ExecuteScalingPolicyRequest:
 
     @scaling_policy_id.setter
     def scaling_policy_id(self, scaling_policy_id):
-        """Sets the scaling_policy_id of this ExecuteScalingPolicyRequest.
+        r"""Sets the scaling_policy_id of this ExecuteScalingPolicyRequest.
 
         伸缩策略ID。
 
@@ -71,7 +71,7 @@ class ExecuteScalingPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteScalingPolicyRequest.
+        r"""Gets the body of this ExecuteScalingPolicyRequest.
 
         :return: The body of this ExecuteScalingPolicyRequest.
         :rtype: :class:`huaweicloudsdkas.v1.ExecuteScalingPolicyOption`
@@ -80,7 +80,7 @@ class ExecuteScalingPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteScalingPolicyRequest.
+        r"""Sets the body of this ExecuteScalingPolicyRequest.
 
         :param body: The body of this ExecuteScalingPolicyRequest.
         :type body: :class:`huaweicloudsdkas.v1.ExecuteScalingPolicyOption`

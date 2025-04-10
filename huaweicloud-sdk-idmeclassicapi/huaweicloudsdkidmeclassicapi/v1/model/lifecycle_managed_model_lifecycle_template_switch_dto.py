@@ -31,7 +31,7 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
     }
 
     def __init__(self, id=None, lifecycle_template=None, lifecycle_state=None, modifier=None):
-        """LifecycleManagedModelLifecycleTemplateSwitchDTO
+        r"""LifecycleManagedModelLifecycleTemplateSwitchDTO
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
 
     @property
     def id(self):
-        """Gets the id of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
+        r"""Gets the id of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
 
         **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -72,7 +72,7 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
+        r"""Sets the id of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
 
         **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -83,7 +83,7 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
 
     @property
     def lifecycle_template(self):
-        """Gets the lifecycle_template of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
+        r"""Gets the lifecycle_template of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
 
         :return: The lifecycle_template of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -92,7 +92,7 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
 
     @lifecycle_template.setter
     def lifecycle_template(self, lifecycle_template):
-        """Sets the lifecycle_template of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
+        r"""Sets the lifecycle_template of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
 
         :param lifecycle_template: The lifecycle_template of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
         :type lifecycle_template: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -101,7 +101,7 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
 
     @property
     def lifecycle_state(self):
-        """Gets the lifecycle_state of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
+        r"""Gets the lifecycle_state of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
 
         :return: The lifecycle_state of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -110,7 +110,7 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
 
     @lifecycle_state.setter
     def lifecycle_state(self, lifecycle_state):
-        """Sets the lifecycle_state of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
+        r"""Sets the lifecycle_state of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
 
         :param lifecycle_state: The lifecycle_state of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
         :type lifecycle_state: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -119,7 +119,7 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
+        r"""Gets the modifier of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -130,7 +130,7 @@ class LifecycleManagedModelLifecycleTemplateSwitchDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
+        r"""Sets the modifier of this LifecycleManagedModelLifecycleTemplateSwitchDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 

@@ -43,7 +43,7 @@ class UpdateAlertNoticeConfigRequestBody:
     }
 
     def __init__(self, name=None, enabled=None, topic_urn=None, sendfreq=None, locale=None, times=None, threat=None, notice_class=None, nearly_expired_time=None, is_all_enterprise_project=None):
-        """UpdateAlertNoticeConfigRequestBody
+        r"""UpdateAlertNoticeConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAlertNoticeConfigRequestBody.
+        r"""Gets the name of this UpdateAlertNoticeConfigRequestBody.
 
         告警通知名称
 
@@ -114,7 +114,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAlertNoticeConfigRequestBody.
+        r"""Sets the name of this UpdateAlertNoticeConfigRequestBody.
 
         告警通知名称
 
@@ -125,7 +125,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateAlertNoticeConfigRequestBody.
+        r"""Gets the enabled of this UpdateAlertNoticeConfigRequestBody.
 
         是否开启   - false: 不开启   - true: 开启
 
@@ -136,7 +136,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateAlertNoticeConfigRequestBody.
+        r"""Sets the enabled of this UpdateAlertNoticeConfigRequestBody.
 
         是否开启   - false: 不开启   - true: 开启
 
@@ -147,7 +147,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this UpdateAlertNoticeConfigRequestBody.
+        r"""Gets the topic_urn of this UpdateAlertNoticeConfigRequestBody.
 
         主题URN，通过消息通知服务获取
 
@@ -158,7 +158,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this UpdateAlertNoticeConfigRequestBody.
+        r"""Sets the topic_urn of this UpdateAlertNoticeConfigRequestBody.
 
         主题URN，通过消息通知服务获取
 
@@ -169,7 +169,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @property
     def sendfreq(self):
-        """Gets the sendfreq of this UpdateAlertNoticeConfigRequestBody.
+        r"""Gets the sendfreq of this UpdateAlertNoticeConfigRequestBody.
 
         时间间隔，单位为分钟。当通知类型为防护事件时，该参数表示在该时间间隔内，攻击次数等于或者大于设定阈值时，将发送告警通知，支持的值：5、15、30、60、120、360、720、1440；当通知类型为证书到期时，该参数表示每隔多长时间发送一次告警通知，支持的值为1440、10080（单位为分钟）。
 
@@ -180,7 +180,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @sendfreq.setter
     def sendfreq(self, sendfreq):
-        """Sets the sendfreq of this UpdateAlertNoticeConfigRequestBody.
+        r"""Sets the sendfreq of this UpdateAlertNoticeConfigRequestBody.
 
         时间间隔，单位为分钟。当通知类型为防护事件时，该参数表示在该时间间隔内，攻击次数等于或者大于设定阈值时，将发送告警通知，支持的值：5、15、30、60、120、360、720、1440；当通知类型为证书到期时，该参数表示每隔多长时间发送一次告警通知，支持的值为1440、10080（单位为分钟）。
 
@@ -191,7 +191,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @property
     def locale(self):
-        """Gets the locale of this UpdateAlertNoticeConfigRequestBody.
+        r"""Gets the locale of this UpdateAlertNoticeConfigRequestBody.
 
         语言   - zh-cn：中文   - en-us
 
@@ -202,7 +202,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @locale.setter
     def locale(self, locale):
-        """Sets the locale of this UpdateAlertNoticeConfigRequestBody.
+        r"""Sets the locale of this UpdateAlertNoticeConfigRequestBody.
 
         语言   - zh-cn：中文   - en-us
 
@@ -213,7 +213,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @property
     def times(self):
-        """Gets the times of this UpdateAlertNoticeConfigRequestBody.
+        r"""Gets the times of this UpdateAlertNoticeConfigRequestBody.
 
         当通知类型为防护事件时，需要填写该参数。在该时间间隔内，当攻击次数大于或等于您设置的阈值时才会发送告警通知
 
@@ -224,7 +224,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @times.setter
     def times(self, times):
-        """Sets the times of this UpdateAlertNoticeConfigRequestBody.
+        r"""Sets the times of this UpdateAlertNoticeConfigRequestBody.
 
         当通知类型为防护事件时，需要填写该参数。在该时间间隔内，当攻击次数大于或等于您设置的阈值时才会发送告警通知
 
@@ -235,7 +235,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @property
     def threat(self):
-        """Gets the threat of this UpdateAlertNoticeConfigRequestBody.
+        r"""Gets the threat of this UpdateAlertNoticeConfigRequestBody.
 
         事件类型
 
@@ -246,7 +246,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @threat.setter
     def threat(self, threat):
-        """Sets the threat of this UpdateAlertNoticeConfigRequestBody.
+        r"""Sets the threat of this UpdateAlertNoticeConfigRequestBody.
 
         事件类型
 
@@ -257,7 +257,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @property
     def notice_class(self):
-        """Gets the notice_class of this UpdateAlertNoticeConfigRequestBody.
+        r"""Gets the notice_class of this UpdateAlertNoticeConfigRequestBody.
 
         通知类型    - threat_alert_notice: 防护事件    - cert_alert_notice: 证书到期
 
@@ -268,7 +268,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @notice_class.setter
     def notice_class(self, notice_class):
-        """Sets the notice_class of this UpdateAlertNoticeConfigRequestBody.
+        r"""Sets the notice_class of this UpdateAlertNoticeConfigRequestBody.
 
         通知类型    - threat_alert_notice: 防护事件    - cert_alert_notice: 证书到期
 
@@ -279,7 +279,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @property
     def nearly_expired_time(self):
-        """Gets the nearly_expired_time of this UpdateAlertNoticeConfigRequestBody.
+        r"""Gets the nearly_expired_time of this UpdateAlertNoticeConfigRequestBody.
 
         提前通知天数，通知类型为证书到期通知需要填写该参数
 
@@ -290,7 +290,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @nearly_expired_time.setter
     def nearly_expired_time(self, nearly_expired_time):
-        """Sets the nearly_expired_time of this UpdateAlertNoticeConfigRequestBody.
+        r"""Sets the nearly_expired_time of this UpdateAlertNoticeConfigRequestBody.
 
         提前通知天数，通知类型为证书到期通知需要填写该参数
 
@@ -301,7 +301,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @property
     def is_all_enterprise_project(self):
-        """Gets the is_all_enterprise_project of this UpdateAlertNoticeConfigRequestBody.
+        r"""Gets the is_all_enterprise_project of this UpdateAlertNoticeConfigRequestBody.
 
         是否是所有企业项目
 
@@ -312,7 +312,7 @@ class UpdateAlertNoticeConfigRequestBody:
 
     @is_all_enterprise_project.setter
     def is_all_enterprise_project(self, is_all_enterprise_project):
-        """Sets the is_all_enterprise_project of this UpdateAlertNoticeConfigRequestBody.
+        r"""Sets the is_all_enterprise_project of this UpdateAlertNoticeConfigRequestBody.
 
         是否是所有企业项目
 

@@ -45,7 +45,7 @@ class NodeTypes:
     }
 
     def __init__(self, spec_name=None, detail=None, id=None, datastore_type=None, architecture=None, available_zones=None, ram=None, vcpus=None, datastores=None, volume=None, elastic_volume_specs=None):
-        """NodeTypes
+        r"""NodeTypes
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class NodeTypes:
 
     @property
     def spec_name(self):
-        """Gets the spec_name of this NodeTypes.
+        r"""Gets the spec_name of this NodeTypes.
 
         节点类型名称。
 
@@ -113,7 +113,7 @@ class NodeTypes:
 
     @spec_name.setter
     def spec_name(self, spec_name):
-        """Sets the spec_name of this NodeTypes.
+        r"""Sets the spec_name of this NodeTypes.
 
         节点类型名称。
 
@@ -124,7 +124,7 @@ class NodeTypes:
 
     @property
     def detail(self):
-        """Gets the detail of this NodeTypes.
+        r"""Gets the detail of this NodeTypes.
 
         节点类型详细。
 
@@ -135,7 +135,7 @@ class NodeTypes:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this NodeTypes.
+        r"""Sets the detail of this NodeTypes.
 
         节点类型详细。
 
@@ -146,7 +146,7 @@ class NodeTypes:
 
     @property
     def id(self):
-        """Gets the id of this NodeTypes.
+        r"""Gets the id of this NodeTypes.
 
         节点类型ID。
 
@@ -157,7 +157,7 @@ class NodeTypes:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NodeTypes.
+        r"""Sets the id of this NodeTypes.
 
         节点类型ID。
 
@@ -168,7 +168,7 @@ class NodeTypes:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this NodeTypes.
+        r"""Gets the datastore_type of this NodeTypes.
 
         产品类型 - dws：云数仓。 - hybrid：实时数仓。 - stream：IoT数仓。
 
@@ -179,7 +179,7 @@ class NodeTypes:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this NodeTypes.
+        r"""Sets the datastore_type of this NodeTypes.
 
         产品类型 - dws：云数仓。 - hybrid：实时数仓。 - stream：IoT数仓。
 
@@ -190,7 +190,7 @@ class NodeTypes:
 
     @property
     def architecture(self):
-        """Gets the architecture of this NodeTypes.
+        r"""Gets the architecture of this NodeTypes.
 
         架构类型 - x86。 - arm。
 
@@ -201,7 +201,7 @@ class NodeTypes:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this NodeTypes.
+        r"""Sets the architecture of this NodeTypes.
 
         架构类型 - x86。 - arm。
 
@@ -212,7 +212,7 @@ class NodeTypes:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this NodeTypes.
+        r"""Gets the available_zones of this NodeTypes.
 
         支持的可用区及状态信息。
 
@@ -223,7 +223,7 @@ class NodeTypes:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this NodeTypes.
+        r"""Sets the available_zones of this NodeTypes.
 
         支持的可用区及状态信息。
 
@@ -234,7 +234,7 @@ class NodeTypes:
 
     @property
     def ram(self):
-        """Gets the ram of this NodeTypes.
+        r"""Gets the ram of this NodeTypes.
 
         内存大小。
 
@@ -245,7 +245,7 @@ class NodeTypes:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this NodeTypes.
+        r"""Sets the ram of this NodeTypes.
 
         内存大小。
 
@@ -256,7 +256,7 @@ class NodeTypes:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this NodeTypes.
+        r"""Gets the vcpus of this NodeTypes.
 
         CPU数量。
 
@@ -267,7 +267,7 @@ class NodeTypes:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this NodeTypes.
+        r"""Sets the vcpus of this NodeTypes.
 
         CPU数量。
 
@@ -278,7 +278,7 @@ class NodeTypes:
 
     @property
     def datastores(self):
-        """Gets the datastores of this NodeTypes.
+        r"""Gets the datastores of this NodeTypes.
 
         内核版本信息。
 
@@ -289,7 +289,7 @@ class NodeTypes:
 
     @datastores.setter
     def datastores(self, datastores):
-        """Sets the datastores of this NodeTypes.
+        r"""Sets the datastores of this NodeTypes.
 
         内核版本信息。
 
@@ -300,7 +300,7 @@ class NodeTypes:
 
     @property
     def volume(self):
-        """Gets the volume of this NodeTypes.
+        r"""Gets the volume of this NodeTypes.
 
         :return: The volume of this NodeTypes.
         :rtype: :class:`huaweicloudsdkdws.v2.VolumeResp`
@@ -309,7 +309,7 @@ class NodeTypes:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this NodeTypes.
+        r"""Sets the volume of this NodeTypes.
 
         :param volume: The volume of this NodeTypes.
         :type volume: :class:`huaweicloudsdkdws.v2.VolumeResp`
@@ -318,7 +318,7 @@ class NodeTypes:
 
     @property
     def elastic_volume_specs(self):
-        """Gets the elastic_volume_specs of this NodeTypes.
+        r"""Gets the elastic_volume_specs of this NodeTypes.
 
         如果规格为弹性容量规格，则该属性为规格典配的弹性容量信息，包括存储类型、最小容量、最大容量以及步长信息，如果为固定存储规格，则该属性为null。
 
@@ -329,7 +329,7 @@ class NodeTypes:
 
     @elastic_volume_specs.setter
     def elastic_volume_specs(self, elastic_volume_specs):
-        """Sets the elastic_volume_specs of this NodeTypes.
+        r"""Sets the elastic_volume_specs of this NodeTypes.
 
         如果规格为弹性容量规格，则该属性为规格典配的弹性容量信息，包括存储类型、最小容量、最大容量以及步长信息，如果为固定存储规格，则该属性为null。
 

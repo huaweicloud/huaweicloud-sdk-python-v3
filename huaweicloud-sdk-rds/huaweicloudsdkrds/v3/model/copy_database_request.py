@@ -27,7 +27,7 @@ class CopyDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CopyDatabaseRequest
+        r"""CopyDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CopyDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CopyDatabaseRequest.
+        r"""Gets the instance_id of this CopyDatabaseRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CopyDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CopyDatabaseRequest.
+        r"""Sets the instance_id of this CopyDatabaseRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CopyDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this CopyDatabaseRequest.
+        r"""Gets the body of this CopyDatabaseRequest.
 
         :return: The body of this CopyDatabaseRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.AddCopyDatabaseRequestBody`
@@ -80,7 +80,7 @@ class CopyDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CopyDatabaseRequest.
+        r"""Sets the body of this CopyDatabaseRequest.
 
         :param body: The body of this CopyDatabaseRequest.
         :type body: :class:`huaweicloudsdkrds.v3.AddCopyDatabaseRequestBody`

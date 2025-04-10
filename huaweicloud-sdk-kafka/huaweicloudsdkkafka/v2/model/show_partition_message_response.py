@@ -26,7 +26,7 @@ class ShowPartitionMessageResponse(SdkResponse):
     }
 
     def __init__(self, message=None):
-        """ShowPartitionMessageResponse
+        r"""ShowPartitionMessageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPartitionMessageResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowPartitionMessageResponse.
+        r"""Gets the message of this ShowPartitionMessageResponse.
 
         消息列表。
 
@@ -55,7 +55,7 @@ class ShowPartitionMessageResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowPartitionMessageResponse.
+        r"""Sets the message of this ShowPartitionMessageResponse.
 
         消息列表。
 

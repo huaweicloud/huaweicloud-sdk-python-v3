@@ -47,7 +47,7 @@ class CreateSecretRequestBody:
     }
 
     def __init__(self, name=None, kms_key_id=None, description=None, secret_binary=None, secret_string=None, secret_type=None, auto_rotation=None, rotation_period=None, rotation_config=None, event_subscriptions=None, enterprise_project_id=None, rotation_func_urn=None):
-        """CreateSecretRequestBody
+        r"""CreateSecretRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class CreateSecretRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateSecretRequestBody.
+        r"""Gets the name of this CreateSecretRequestBody.
 
         待创建凭据的名称。  约束：取值范围为1到64个字符，满足正则匹配“^[a-zA-Z0-9_-]{1,64}$”。
 
@@ -130,7 +130,7 @@ class CreateSecretRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateSecretRequestBody.
+        r"""Sets the name of this CreateSecretRequestBody.
 
         待创建凭据的名称。  约束：取值范围为1到64个字符，满足正则匹配“^[a-zA-Z0-9_-]{1,64}$”。
 
@@ -141,7 +141,7 @@ class CreateSecretRequestBody:
 
     @property
     def kms_key_id(self):
-        """Gets the kms_key_id of this CreateSecretRequestBody.
+        r"""Gets the kms_key_id of this CreateSecretRequestBody.
 
         用于加密保护凭据值的KMS主密钥ID，如果您未指定此参数，凭据管理服务将默认使用名为csms/default的默认主密钥，用于加密您账号在本项目中创建的凭据值。如果用户账号下不存在该名称的主密钥，则凭据管理服务自动为您创建该名称的密钥。
 
@@ -152,7 +152,7 @@ class CreateSecretRequestBody:
 
     @kms_key_id.setter
     def kms_key_id(self, kms_key_id):
-        """Sets the kms_key_id of this CreateSecretRequestBody.
+        r"""Sets the kms_key_id of this CreateSecretRequestBody.
 
         用于加密保护凭据值的KMS主密钥ID，如果您未指定此参数，凭据管理服务将默认使用名为csms/default的默认主密钥，用于加密您账号在本项目中创建的凭据值。如果用户账号下不存在该名称的主密钥，则凭据管理服务自动为您创建该名称的密钥。
 
@@ -163,7 +163,7 @@ class CreateSecretRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateSecretRequestBody.
+        r"""Gets the description of this CreateSecretRequestBody.
 
         凭据的描述信息。  约束：2048字节。
 
@@ -174,7 +174,7 @@ class CreateSecretRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateSecretRequestBody.
+        r"""Sets the description of this CreateSecretRequestBody.
 
         凭据的描述信息。  约束：2048字节。
 
@@ -185,7 +185,7 @@ class CreateSecretRequestBody:
 
     @property
     def secret_binary(self):
-        """Gets the secret_binary of this CreateSecretRequestBody.
+        r"""Gets the secret_binary of this CreateSecretRequestBody.
 
         二进制类型凭据在base64编码后的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  类型：base64编码的二进制数据对象。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。
 
@@ -196,7 +196,7 @@ class CreateSecretRequestBody:
 
     @secret_binary.setter
     def secret_binary(self, secret_binary):
-        """Sets the secret_binary of this CreateSecretRequestBody.
+        r"""Sets the secret_binary of this CreateSecretRequestBody.
 
         二进制类型凭据在base64编码后的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  类型：base64编码的二进制数据对象。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。
 
@@ -207,7 +207,7 @@ class CreateSecretRequestBody:
 
     @property
     def secret_string(self):
-        """Gets the secret_string of this CreateSecretRequestBody.
+        r"""Gets the secret_string of this CreateSecretRequestBody.
 
         文本类型凭据的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。
 
@@ -218,7 +218,7 @@ class CreateSecretRequestBody:
 
     @secret_string.setter
     def secret_string(self, secret_string):
-        """Sets the secret_string of this CreateSecretRequestBody.
+        r"""Sets the secret_string of this CreateSecretRequestBody.
 
         文本类型凭据的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。
 
@@ -229,7 +229,7 @@ class CreateSecretRequestBody:
 
     @property
     def secret_type(self):
-        """Gets the secret_type of this CreateSecretRequestBody.
+        r"""Gets the secret_type of this CreateSecretRequestBody.
 
         凭据类型   - COMMON：通用凭据(默认)。用于应用系统中的各种敏感信息储存。  - RDS：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。（已不支持，使用RDS-FG替代）  - RDS-FG：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。  - GaussDB-FG：TaurusDB凭据。专门针对TaurusDB的凭据，用于存储TaurusDB的账号信息。
 
@@ -240,7 +240,7 @@ class CreateSecretRequestBody:
 
     @secret_type.setter
     def secret_type(self, secret_type):
-        """Sets the secret_type of this CreateSecretRequestBody.
+        r"""Sets the secret_type of this CreateSecretRequestBody.
 
         凭据类型   - COMMON：通用凭据(默认)。用于应用系统中的各种敏感信息储存。  - RDS：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。（已不支持，使用RDS-FG替代）  - RDS-FG：RDS凭据 。专门针对RDS的凭据，用于存储RDS的账号信息。  - GaussDB-FG：TaurusDB凭据。专门针对TaurusDB的凭据，用于存储TaurusDB的账号信息。
 
@@ -251,7 +251,7 @@ class CreateSecretRequestBody:
 
     @property
     def auto_rotation(self):
-        """Gets the auto_rotation of this CreateSecretRequestBody.
+        r"""Gets the auto_rotation of this CreateSecretRequestBody.
 
         自动轮转  取值：true 开启 ,false 关闭 (默认)
 
@@ -262,7 +262,7 @@ class CreateSecretRequestBody:
 
     @auto_rotation.setter
     def auto_rotation(self, auto_rotation):
-        """Sets the auto_rotation of this CreateSecretRequestBody.
+        r"""Sets the auto_rotation of this CreateSecretRequestBody.
 
         自动轮转  取值：true 开启 ,false 关闭 (默认)
 
@@ -273,7 +273,7 @@ class CreateSecretRequestBody:
 
     @property
     def rotation_period(self):
-        """Gets the rotation_period of this CreateSecretRequestBody.
+        r"""Gets the rotation_period of this CreateSecretRequestBody.
 
         轮转周期  约束：6小时-8,760小时 （365天）  类型：Integer[unit] ，Integer表示时间长度 。unit表示时间单位，d（天）、h（小时）、m（分钟）、s（秒）。例如 1d 表示一天，24h也表示一天  说明：当开启自动轮转时，必须填写该值
 
@@ -284,7 +284,7 @@ class CreateSecretRequestBody:
 
     @rotation_period.setter
     def rotation_period(self, rotation_period):
-        """Sets the rotation_period of this CreateSecretRequestBody.
+        r"""Sets the rotation_period of this CreateSecretRequestBody.
 
         轮转周期  约束：6小时-8,760小时 （365天）  类型：Integer[unit] ，Integer表示时间长度 。unit表示时间单位，d（天）、h（小时）、m（分钟）、s（秒）。例如 1d 表示一天，24h也表示一天  说明：当开启自动轮转时，必须填写该值
 
@@ -295,7 +295,7 @@ class CreateSecretRequestBody:
 
     @property
     def rotation_config(self):
-        """Gets the rotation_config of this CreateSecretRequestBody.
+        r"""Gets the rotation_config of this CreateSecretRequestBody.
 
         轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS-FG、GaussDB-FG时，必须填写本参数，参数格式为{\"InstanceId\":\"\",\"SecretSubType\":\"\"}  参数说明：InstanceId为实例ID,SecretSubType为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对账号的引用。
 
@@ -306,7 +306,7 @@ class CreateSecretRequestBody:
 
     @rotation_config.setter
     def rotation_config(self, rotation_config):
-        """Sets the rotation_config of this CreateSecretRequestBody.
+        r"""Sets the rotation_config of this CreateSecretRequestBody.
 
         轮转配置  约束：范围不超过1024个字符。  当secret_type为RDS-FG、GaussDB-FG时，必须填写本参数，参数格式为{\"InstanceId\":\"\",\"SecretSubType\":\"\"}  参数说明：InstanceId为实例ID,SecretSubType为轮转子类型，取值为：SingleUser，MultiUser。  SingleUser：指定轮转类型为单用户模式轮转，每次轮转将指定账号重置为新的口令。  MultiUser：指定轮转类型为双用户模式轮转，SYSCURRENT和SYSPREVIOUS分别引用其中一个账号。凭据轮转时，SYSPREVIOUS引用的账号口令会被重置为新的随机口令，随后凭据交换SYSCURRENT和SYSPREVIOUS对账号的引用。
 
@@ -317,7 +317,7 @@ class CreateSecretRequestBody:
 
     @property
     def event_subscriptions(self):
-        """Gets the event_subscriptions of this CreateSecretRequestBody.
+        r"""Gets the event_subscriptions of this CreateSecretRequestBody.
 
         凭据订阅的事件列表，当前最大可订阅一个事件。当事件包含的基础事件触发时，通知消息将发送到事件对应的通知主题。
 
@@ -328,7 +328,7 @@ class CreateSecretRequestBody:
 
     @event_subscriptions.setter
     def event_subscriptions(self, event_subscriptions):
-        """Sets the event_subscriptions of this CreateSecretRequestBody.
+        r"""Sets the event_subscriptions of this CreateSecretRequestBody.
 
         凭据订阅的事件列表，当前最大可订阅一个事件。当事件包含的基础事件触发时，通知消息将发送到事件对应的通知主题。
 
@@ -339,7 +339,7 @@ class CreateSecretRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateSecretRequestBody.
+        r"""Gets the enterprise_project_id of this CreateSecretRequestBody.
 
         该参数针对企业用户使用。如果您是企业用户，且已创建企业项目，则请从下拉列表中为密钥选择需要绑定的企业项目，默认项目为“default”。 未开通企业管理的用户页面则没有“企业项目”参数项，无需进行配置。
 
@@ -350,7 +350,7 @@ class CreateSecretRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateSecretRequestBody.
+        r"""Sets the enterprise_project_id of this CreateSecretRequestBody.
 
         该参数针对企业用户使用。如果您是企业用户，且已创建企业项目，则请从下拉列表中为密钥选择需要绑定的企业项目，默认项目为“default”。 未开通企业管理的用户页面则没有“企业项目”参数项，无需进行配置。
 
@@ -361,7 +361,7 @@ class CreateSecretRequestBody:
 
     @property
     def rotation_func_urn(self):
-        """Gets the rotation_func_urn of this CreateSecretRequestBody.
+        r"""Gets the rotation_func_urn of this CreateSecretRequestBody.
 
         FunctionGraph函数的urn。
 
@@ -372,7 +372,7 @@ class CreateSecretRequestBody:
 
     @rotation_func_urn.setter
     def rotation_func_urn(self, rotation_func_urn):
-        """Sets the rotation_func_urn of this CreateSecretRequestBody.
+        r"""Sets the rotation_func_urn of this CreateSecretRequestBody.
 
         FunctionGraph函数的urn。
 

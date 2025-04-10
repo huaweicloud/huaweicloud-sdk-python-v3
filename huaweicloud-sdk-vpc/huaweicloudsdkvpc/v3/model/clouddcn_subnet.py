@@ -49,7 +49,7 @@ class ClouddcnSubnet:
     }
 
     def __init__(self, id=None, project_id=None, name=None, description=None, cidr=None, gateway_ip=None, dns_nameservers=None, vpc_id=None, created_at=None, updated_at=None, availability_zone=None, tags=None, enterprise_project_id=None):
-        """ClouddcnSubnet
+        r"""ClouddcnSubnet
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ClouddcnSubnet:
 
     @property
     def id(self):
-        """Gets the id of this ClouddcnSubnet.
+        r"""Gets the id of this ClouddcnSubnet.
 
         clouddcn子网ID
 
@@ -125,7 +125,7 @@ class ClouddcnSubnet:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClouddcnSubnet.
+        r"""Sets the id of this ClouddcnSubnet.
 
         clouddcn子网ID
 
@@ -136,7 +136,7 @@ class ClouddcnSubnet:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ClouddcnSubnet.
+        r"""Gets the project_id of this ClouddcnSubnet.
 
         功能说明：VPC所属的项目ID
 
@@ -147,7 +147,7 @@ class ClouddcnSubnet:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ClouddcnSubnet.
+        r"""Sets the project_id of this ClouddcnSubnet.
 
         功能说明：VPC所属的项目ID
 
@@ -158,7 +158,7 @@ class ClouddcnSubnet:
 
     @property
     def name(self):
-        """Gets the name of this ClouddcnSubnet.
+        r"""Gets the name of this ClouddcnSubnet.
 
         功能说明：子网名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -169,7 +169,7 @@ class ClouddcnSubnet:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClouddcnSubnet.
+        r"""Sets the name of this ClouddcnSubnet.
 
         功能说明：子网名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -180,7 +180,7 @@ class ClouddcnSubnet:
 
     @property
     def description(self):
-        """Gets the description of this ClouddcnSubnet.
+        r"""Gets the description of this ClouddcnSubnet.
 
         功能说明：子网描述 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -191,7 +191,7 @@ class ClouddcnSubnet:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ClouddcnSubnet.
+        r"""Sets the description of this ClouddcnSubnet.
 
         功能说明：子网描述 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -202,7 +202,7 @@ class ClouddcnSubnet:
 
     @property
     def cidr(self):
-        """Gets the cidr of this ClouddcnSubnet.
+        r"""Gets the cidr of this ClouddcnSubnet.
 
         功能说明：子网的网段 取值范围：必须在vpc对应cidr范围内 约束：必须是cidr格式。掩码长度不能大于28
 
@@ -213,7 +213,7 @@ class ClouddcnSubnet:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this ClouddcnSubnet.
+        r"""Sets the cidr of this ClouddcnSubnet.
 
         功能说明：子网的网段 取值范围：必须在vpc对应cidr范围内 约束：必须是cidr格式。掩码长度不能大于28
 
@@ -224,7 +224,7 @@ class ClouddcnSubnet:
 
     @property
     def gateway_ip(self):
-        """Gets the gateway_ip of this ClouddcnSubnet.
+        r"""Gets the gateway_ip of this ClouddcnSubnet.
 
         功能说明：子网的网关 取值范围：子网网段中的IP地址 约束：必须是ip格式
 
@@ -235,7 +235,7 @@ class ClouddcnSubnet:
 
     @gateway_ip.setter
     def gateway_ip(self, gateway_ip):
-        """Sets the gateway_ip of this ClouddcnSubnet.
+        r"""Sets the gateway_ip of this ClouddcnSubnet.
 
         功能说明：子网的网关 取值范围：子网网段中的IP地址 约束：必须是ip格式
 
@@ -246,7 +246,7 @@ class ClouddcnSubnet:
 
     @property
     def dns_nameservers(self):
-        """Gets the dns_nameservers of this ClouddcnSubnet.
+        r"""Gets the dns_nameservers of this ClouddcnSubnet.
 
         clouddcn子网dns服务器地址列表
 
@@ -257,7 +257,7 @@ class ClouddcnSubnet:
 
     @dns_nameservers.setter
     def dns_nameservers(self, dns_nameservers):
-        """Sets the dns_nameservers of this ClouddcnSubnet.
+        r"""Sets the dns_nameservers of this ClouddcnSubnet.
 
         clouddcn子网dns服务器地址列表
 
@@ -268,7 +268,7 @@ class ClouddcnSubnet:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ClouddcnSubnet.
+        r"""Gets the vpc_id of this ClouddcnSubnet.
 
         clouddcn子网所在VPC标识
 
@@ -279,7 +279,7 @@ class ClouddcnSubnet:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ClouddcnSubnet.
+        r"""Sets the vpc_id of this ClouddcnSubnet.
 
         clouddcn子网所在VPC标识
 
@@ -290,7 +290,7 @@ class ClouddcnSubnet:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ClouddcnSubnet.
+        r"""Gets the created_at of this ClouddcnSubnet.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -301,7 +301,7 @@ class ClouddcnSubnet:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ClouddcnSubnet.
+        r"""Sets the created_at of this ClouddcnSubnet.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -312,7 +312,7 @@ class ClouddcnSubnet:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ClouddcnSubnet.
+        r"""Gets the updated_at of this ClouddcnSubnet.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -323,7 +323,7 @@ class ClouddcnSubnet:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ClouddcnSubnet.
+        r"""Sets the updated_at of this ClouddcnSubnet.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -334,7 +334,7 @@ class ClouddcnSubnet:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ClouddcnSubnet.
+        r"""Gets the availability_zone of this ClouddcnSubnet.
 
         功能说明：可用区
 
@@ -345,7 +345,7 @@ class ClouddcnSubnet:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ClouddcnSubnet.
+        r"""Sets the availability_zone of this ClouddcnSubnet.
 
         功能说明：可用区
 
@@ -356,7 +356,7 @@ class ClouddcnSubnet:
 
     @property
     def tags(self):
-        """Gets the tags of this ClouddcnSubnet.
+        r"""Gets the tags of this ClouddcnSubnet.
 
         功能说明：对接TMS
 
@@ -367,7 +367,7 @@ class ClouddcnSubnet:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ClouddcnSubnet.
+        r"""Sets the tags of this ClouddcnSubnet.
 
         功能说明：对接TMS
 
@@ -378,7 +378,7 @@ class ClouddcnSubnet:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ClouddcnSubnet.
+        r"""Gets the enterprise_project_id of this ClouddcnSubnet.
 
         功能说明：对接TPS
 
@@ -389,7 +389,7 @@ class ClouddcnSubnet:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ClouddcnSubnet.
+        r"""Sets the enterprise_project_id of this ClouddcnSubnet.
 
         功能说明：对接TPS
 

@@ -25,7 +25,7 @@ class FgacUpdateReq:
     }
 
     def __init__(self, fgac_ids=None):
-        """FgacUpdateReq
+        r"""FgacUpdateReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class FgacUpdateReq:
 
     @property
     def fgac_ids(self):
-        """Gets the fgac_ids of this FgacUpdateReq.
+        r"""Gets the fgac_ids of this FgacUpdateReq.
 
         细粒度认证数据开发连接列表
 
@@ -54,7 +54,7 @@ class FgacUpdateReq:
 
     @fgac_ids.setter
     def fgac_ids(self, fgac_ids):
-        """Sets the fgac_ids of this FgacUpdateReq.
+        r"""Sets the fgac_ids of this FgacUpdateReq.
 
         细粒度认证数据开发连接列表
 

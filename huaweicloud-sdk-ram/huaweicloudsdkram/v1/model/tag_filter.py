@@ -27,7 +27,7 @@ class TagFilter:
     }
 
     def __init__(self, key=None, values=None):
-        """TagFilter
+        r"""TagFilter
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TagFilter:
 
     @property
     def key(self):
-        """Gets the key of this TagFilter.
+        r"""Gets the key of this TagFilter.
 
         标签\"键\"的标识符或名称。
 
@@ -60,7 +60,7 @@ class TagFilter:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagFilter.
+        r"""Sets the key of this TagFilter.
 
         标签\"键\"的标识符或名称。
 
@@ -71,7 +71,7 @@ class TagFilter:
 
     @property
     def values(self):
-        """Gets the values of this TagFilter.
+        r"""Gets the values of this TagFilter.
 
         标签\"键\"对应的\"值\"列表。
 
@@ -82,7 +82,7 @@ class TagFilter:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this TagFilter.
+        r"""Sets the values of this TagFilter.
 
         标签\"键\"对应的\"值\"列表。
 

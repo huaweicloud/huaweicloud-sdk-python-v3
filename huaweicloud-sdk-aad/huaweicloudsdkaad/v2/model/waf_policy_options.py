@@ -33,7 +33,7 @@ class WafPolicyOptions:
     }
 
     def __init__(self, cc=None, custom=None, geoip=None, whiteblackip=None, modulex_enabled=None):
-        """WafPolicyOptions
+        r"""WafPolicyOptions
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class WafPolicyOptions:
 
     @property
     def cc(self):
-        """Gets the cc of this WafPolicyOptions.
+        r"""Gets the cc of this WafPolicyOptions.
 
         是否开启CC（频率控制）
 
@@ -82,7 +82,7 @@ class WafPolicyOptions:
 
     @cc.setter
     def cc(self, cc):
-        """Sets the cc of this WafPolicyOptions.
+        r"""Sets the cc of this WafPolicyOptions.
 
         是否开启CC（频率控制）
 
@@ -93,7 +93,7 @@ class WafPolicyOptions:
 
     @property
     def custom(self):
-        """Gets the custom of this WafPolicyOptions.
+        r"""Gets the custom of this WafPolicyOptions.
 
         是否开启精准访问防护
 
@@ -104,7 +104,7 @@ class WafPolicyOptions:
 
     @custom.setter
     def custom(self, custom):
-        """Sets the custom of this WafPolicyOptions.
+        r"""Sets the custom of this WafPolicyOptions.
 
         是否开启精准访问防护
 
@@ -115,7 +115,7 @@ class WafPolicyOptions:
 
     @property
     def geoip(self):
-        """Gets the geoip of this WafPolicyOptions.
+        r"""Gets the geoip of this WafPolicyOptions.
 
         是否开启区域封禁防护
 
@@ -126,7 +126,7 @@ class WafPolicyOptions:
 
     @geoip.setter
     def geoip(self, geoip):
-        """Sets the geoip of this WafPolicyOptions.
+        r"""Sets the geoip of this WafPolicyOptions.
 
         是否开启区域封禁防护
 
@@ -137,7 +137,7 @@ class WafPolicyOptions:
 
     @property
     def whiteblackip(self):
-        """Gets the whiteblackip of this WafPolicyOptions.
+        r"""Gets the whiteblackip of this WafPolicyOptions.
 
         是否开启黑白名单防护
 
@@ -148,7 +148,7 @@ class WafPolicyOptions:
 
     @whiteblackip.setter
     def whiteblackip(self, whiteblackip):
-        """Sets the whiteblackip of this WafPolicyOptions.
+        r"""Sets the whiteblackip of this WafPolicyOptions.
 
         是否开启黑白名单防护
 
@@ -159,7 +159,7 @@ class WafPolicyOptions:
 
     @property
     def modulex_enabled(self):
-        """Gets the modulex_enabled of this WafPolicyOptions.
+        r"""Gets the modulex_enabled of this WafPolicyOptions.
 
         是否开启智能CC防护
 
@@ -170,7 +170,7 @@ class WafPolicyOptions:
 
     @modulex_enabled.setter
     def modulex_enabled(self, modulex_enabled):
-        """Sets the modulex_enabled of this WafPolicyOptions.
+        r"""Sets the modulex_enabled of this WafPolicyOptions.
 
         是否开启智能CC防护
 

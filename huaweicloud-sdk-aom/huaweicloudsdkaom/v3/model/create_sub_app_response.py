@@ -26,7 +26,7 @@ class CreateSubAppResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateSubAppResponse
+        r"""CreateSubAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateSubAppResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateSubAppResponse.
+        r"""Gets the body of this CreateSubAppResponse.
 
         :return: The body of this CreateSubAppResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CreateSubAppResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSubAppResponse.
+        r"""Sets the body of this CreateSubAppResponse.
 
         :param body: The body of this CreateSubAppResponse.
         :type body: str

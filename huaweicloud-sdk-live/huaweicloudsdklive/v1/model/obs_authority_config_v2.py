@@ -27,7 +27,7 @@ class ObsAuthorityConfigV2:
     }
 
     def __init__(self, bucket=None, operation=None):
-        """ObsAuthorityConfigV2
+        r"""ObsAuthorityConfigV2
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ObsAuthorityConfigV2:
 
     @property
     def bucket(self):
-        """Gets the bucket of this ObsAuthorityConfigV2.
+        r"""Gets the bucket of this ObsAuthorityConfigV2.
 
         OBS桶名
 
@@ -59,7 +59,7 @@ class ObsAuthorityConfigV2:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ObsAuthorityConfigV2.
+        r"""Sets the bucket of this ObsAuthorityConfigV2.
 
         OBS桶名
 
@@ -70,7 +70,7 @@ class ObsAuthorityConfigV2:
 
     @property
     def operation(self):
-        """Gets the operation of this ObsAuthorityConfigV2.
+        r"""Gets the operation of this ObsAuthorityConfigV2.
 
         操作 - 1：授权 - 0：取消授权
 
@@ -81,7 +81,7 @@ class ObsAuthorityConfigV2:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this ObsAuthorityConfigV2.
+        r"""Sets the operation of this ObsAuthorityConfigV2.
 
         操作 - 1：授权 - 0：取消授权
 

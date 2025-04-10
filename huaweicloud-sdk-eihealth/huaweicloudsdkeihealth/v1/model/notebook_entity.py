@@ -49,7 +49,7 @@ class NotebookEntity:
     }
 
     def __init__(self, id=None, name=None, description=None, creator=None, url=None, flavor=None, status=None, image=None, storages=None, create_time=None, update_time=None, failed_message=None, events=None):
-        """NotebookEntity
+        r"""NotebookEntity
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class NotebookEntity:
 
     @property
     def id(self):
-        """Gets the id of this NotebookEntity.
+        r"""Gets the id of this NotebookEntity.
 
         notebook ID
 
@@ -138,7 +138,7 @@ class NotebookEntity:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NotebookEntity.
+        r"""Sets the id of this NotebookEntity.
 
         notebook ID
 
@@ -149,7 +149,7 @@ class NotebookEntity:
 
     @property
     def name(self):
-        """Gets the name of this NotebookEntity.
+        r"""Gets the name of this NotebookEntity.
 
         notebook名称
 
@@ -160,7 +160,7 @@ class NotebookEntity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NotebookEntity.
+        r"""Sets the name of this NotebookEntity.
 
         notebook名称
 
@@ -171,7 +171,7 @@ class NotebookEntity:
 
     @property
     def description(self):
-        """Gets the description of this NotebookEntity.
+        r"""Gets the description of this NotebookEntity.
 
         notebook描述
 
@@ -182,7 +182,7 @@ class NotebookEntity:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NotebookEntity.
+        r"""Sets the description of this NotebookEntity.
 
         notebook描述
 
@@ -193,7 +193,7 @@ class NotebookEntity:
 
     @property
     def creator(self):
-        """Gets the creator of this NotebookEntity.
+        r"""Gets the creator of this NotebookEntity.
 
         notebook所属用户
 
@@ -204,7 +204,7 @@ class NotebookEntity:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this NotebookEntity.
+        r"""Sets the creator of this NotebookEntity.
 
         notebook所属用户
 
@@ -215,7 +215,7 @@ class NotebookEntity:
 
     @property
     def url(self):
-        """Gets the url of this NotebookEntity.
+        r"""Gets the url of this NotebookEntity.
 
         notebook访问URL
 
@@ -226,7 +226,7 @@ class NotebookEntity:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this NotebookEntity.
+        r"""Sets the url of this NotebookEntity.
 
         notebook访问URL
 
@@ -237,7 +237,7 @@ class NotebookEntity:
 
     @property
     def flavor(self):
-        """Gets the flavor of this NotebookEntity.
+        r"""Gets the flavor of this NotebookEntity.
 
         :return: The flavor of this NotebookEntity.
         :rtype: :class:`huaweicloudsdkeihealth.v1.FlavorInfo`
@@ -246,7 +246,7 @@ class NotebookEntity:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this NotebookEntity.
+        r"""Sets the flavor of this NotebookEntity.
 
         :param flavor: The flavor of this NotebookEntity.
         :type flavor: :class:`huaweicloudsdkeihealth.v1.FlavorInfo`
@@ -255,7 +255,7 @@ class NotebookEntity:
 
     @property
     def status(self):
-        """Gets the status of this NotebookEntity.
+        r"""Gets the status of this NotebookEntity.
 
         :return: The status of this NotebookEntity.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NotebookStatus`
@@ -264,7 +264,7 @@ class NotebookEntity:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NotebookEntity.
+        r"""Sets the status of this NotebookEntity.
 
         :param status: The status of this NotebookEntity.
         :type status: :class:`huaweicloudsdkeihealth.v1.NotebookStatus`
@@ -273,7 +273,7 @@ class NotebookEntity:
 
     @property
     def image(self):
-        """Gets the image of this NotebookEntity.
+        r"""Gets the image of this NotebookEntity.
 
         :return: The image of this NotebookEntity.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NotebookImage`
@@ -282,7 +282,7 @@ class NotebookEntity:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this NotebookEntity.
+        r"""Sets the image of this NotebookEntity.
 
         :param image: The image of this NotebookEntity.
         :type image: :class:`huaweicloudsdkeihealth.v1.NotebookImage`
@@ -291,7 +291,7 @@ class NotebookEntity:
 
     @property
     def storages(self):
-        """Gets the storages of this NotebookEntity.
+        r"""Gets the storages of this NotebookEntity.
 
         notebook存储信息
 
@@ -302,7 +302,7 @@ class NotebookEntity:
 
     @storages.setter
     def storages(self, storages):
-        """Sets the storages of this NotebookEntity.
+        r"""Sets the storages of this NotebookEntity.
 
         notebook存储信息
 
@@ -313,7 +313,7 @@ class NotebookEntity:
 
     @property
     def create_time(self):
-        """Gets the create_time of this NotebookEntity.
+        r"""Gets the create_time of this NotebookEntity.
 
         notebook创建时间
 
@@ -324,7 +324,7 @@ class NotebookEntity:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this NotebookEntity.
+        r"""Sets the create_time of this NotebookEntity.
 
         notebook创建时间
 
@@ -335,7 +335,7 @@ class NotebookEntity:
 
     @property
     def update_time(self):
-        """Gets the update_time of this NotebookEntity.
+        r"""Gets the update_time of this NotebookEntity.
 
         notebook更新时间
 
@@ -346,7 +346,7 @@ class NotebookEntity:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this NotebookEntity.
+        r"""Sets the update_time of this NotebookEntity.
 
         notebook更新时间
 
@@ -357,7 +357,7 @@ class NotebookEntity:
 
     @property
     def failed_message(self):
-        """Gets the failed_message of this NotebookEntity.
+        r"""Gets the failed_message of this NotebookEntity.
 
         notebook失败信息
 
@@ -368,7 +368,7 @@ class NotebookEntity:
 
     @failed_message.setter
     def failed_message(self, failed_message):
-        """Sets the failed_message of this NotebookEntity.
+        r"""Sets the failed_message of this NotebookEntity.
 
         notebook失败信息
 
@@ -379,7 +379,7 @@ class NotebookEntity:
 
     @property
     def events(self):
-        """Gets the events of this NotebookEntity.
+        r"""Gets the events of this NotebookEntity.
 
         cce事件
 
@@ -390,7 +390,7 @@ class NotebookEntity:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this NotebookEntity.
+        r"""Sets the events of this NotebookEntity.
 
         cce事件
 

@@ -33,7 +33,7 @@ class ResultStepVo:
     }
 
     def __init__(self, result=None, test_step=None, expect_result=None, actual_result=None, result_name=None):
-        """ResultStepVo
+        r"""ResultStepVo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ResultStepVo:
 
     @property
     def result(self):
-        """Gets the result of this ResultStepVo.
+        r"""Gets the result of this ResultStepVo.
 
         结果
 
@@ -82,7 +82,7 @@ class ResultStepVo:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ResultStepVo.
+        r"""Sets the result of this ResultStepVo.
 
         结果
 
@@ -93,7 +93,7 @@ class ResultStepVo:
 
     @property
     def test_step(self):
-        """Gets the test_step of this ResultStepVo.
+        r"""Gets the test_step of this ResultStepVo.
 
         测试步骤
 
@@ -104,7 +104,7 @@ class ResultStepVo:
 
     @test_step.setter
     def test_step(self, test_step):
-        """Sets the test_step of this ResultStepVo.
+        r"""Sets the test_step of this ResultStepVo.
 
         测试步骤
 
@@ -115,7 +115,7 @@ class ResultStepVo:
 
     @property
     def expect_result(self):
-        """Gets the expect_result of this ResultStepVo.
+        r"""Gets the expect_result of this ResultStepVo.
 
         预期结果
 
@@ -126,7 +126,7 @@ class ResultStepVo:
 
     @expect_result.setter
     def expect_result(self, expect_result):
-        """Sets the expect_result of this ResultStepVo.
+        r"""Sets the expect_result of this ResultStepVo.
 
         预期结果
 
@@ -137,7 +137,7 @@ class ResultStepVo:
 
     @property
     def actual_result(self):
-        """Gets the actual_result of this ResultStepVo.
+        r"""Gets the actual_result of this ResultStepVo.
 
         实际结果
 
@@ -148,7 +148,7 @@ class ResultStepVo:
 
     @actual_result.setter
     def actual_result(self, actual_result):
-        """Sets the actual_result of this ResultStepVo.
+        r"""Sets the actual_result of this ResultStepVo.
 
         实际结果
 
@@ -159,7 +159,7 @@ class ResultStepVo:
 
     @property
     def result_name(self):
-        """Gets the result_name of this ResultStepVo.
+        r"""Gets the result_name of this ResultStepVo.
 
         测试结果名称
 
@@ -170,7 +170,7 @@ class ResultStepVo:
 
     @result_name.setter
     def result_name(self, result_name):
-        """Sets the result_name of this ResultStepVo.
+        r"""Sets the result_name of this ResultStepVo.
 
         测试结果名称
 

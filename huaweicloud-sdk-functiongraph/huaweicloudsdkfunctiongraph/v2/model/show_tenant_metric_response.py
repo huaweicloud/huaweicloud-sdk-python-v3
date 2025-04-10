@@ -32,7 +32,7 @@ class ShowTenantMetricResponse(SdkResponse):
     }
 
     def __init__(self, count=None, duration=None, fail_count=None, running_count=None):
-        """ShowTenantMetricResponse
+        r"""ShowTenantMetricResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowTenantMetricResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowTenantMetricResponse.
+        r"""Gets the count of this ShowTenantMetricResponse.
 
         执行次数
 
@@ -76,7 +76,7 @@ class ShowTenantMetricResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowTenantMetricResponse.
+        r"""Sets the count of this ShowTenantMetricResponse.
 
         执行次数
 
@@ -87,7 +87,7 @@ class ShowTenantMetricResponse(SdkResponse):
 
     @property
     def duration(self):
-        """Gets the duration of this ShowTenantMetricResponse.
+        r"""Gets the duration of this ShowTenantMetricResponse.
 
         平均时延，单位毫秒
 
@@ -98,7 +98,7 @@ class ShowTenantMetricResponse(SdkResponse):
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ShowTenantMetricResponse.
+        r"""Sets the duration of this ShowTenantMetricResponse.
 
         平均时延，单位毫秒
 
@@ -109,7 +109,7 @@ class ShowTenantMetricResponse(SdkResponse):
 
     @property
     def fail_count(self):
-        """Gets the fail_count of this ShowTenantMetricResponse.
+        r"""Gets the fail_count of this ShowTenantMetricResponse.
 
         错误次数
 
@@ -120,7 +120,7 @@ class ShowTenantMetricResponse(SdkResponse):
 
     @fail_count.setter
     def fail_count(self, fail_count):
-        """Sets the fail_count of this ShowTenantMetricResponse.
+        r"""Sets the fail_count of this ShowTenantMetricResponse.
 
         错误次数
 
@@ -131,7 +131,7 @@ class ShowTenantMetricResponse(SdkResponse):
 
     @property
     def running_count(self):
-        """Gets the running_count of this ShowTenantMetricResponse.
+        r"""Gets the running_count of this ShowTenantMetricResponse.
 
         运行中数量
 
@@ -142,7 +142,7 @@ class ShowTenantMetricResponse(SdkResponse):
 
     @running_count.setter
     def running_count(self, running_count):
-        """Sets the running_count of this ShowTenantMetricResponse.
+        r"""Sets the running_count of this ShowTenantMetricResponse.
 
         运行中数量
 

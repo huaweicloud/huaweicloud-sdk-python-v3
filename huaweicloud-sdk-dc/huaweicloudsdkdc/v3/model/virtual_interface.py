@@ -97,7 +97,7 @@ class VirtualInterface:
     }
 
     def __init__(self, id=None, name=None, admin_state_up=None, bandwidth=None, create_time=None, update_time=None, description=None, direct_connect_id=None, service_type=None, status=None, tenant_id=None, type=None, vgw_id=None, vlan=None, route_limit=None, enable_nqa=None, enable_bfd=None, lag_id=None, device_id=None, enterprise_project_id=None, tags=None, local_gateway_v4_ip=None, remote_gateway_v4_ip=None, ies_id=None, reason=None, rate_limit=None, address_family=None, local_gateway_v6_ip=None, remote_gateway_v6_ip=None, lgw_id=None, gateway_id=None, remote_ep_group=None, service_ep_group=None, bgp_route_limit=None, priority=None, vif_peers=None, extend_attribute=None):
-        """VirtualInterface
+        r"""VirtualInterface
 
         The model defined in huaweicloud sdk
 
@@ -295,7 +295,7 @@ class VirtualInterface:
 
     @property
     def id(self):
-        """Gets the id of this VirtualInterface.
+        r"""Gets the id of this VirtualInterface.
 
         虚拟接口的ID
 
@@ -306,7 +306,7 @@ class VirtualInterface:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VirtualInterface.
+        r"""Sets the id of this VirtualInterface.
 
         虚拟接口的ID
 
@@ -317,7 +317,7 @@ class VirtualInterface:
 
     @property
     def name(self):
-        """Gets the name of this VirtualInterface.
+        r"""Gets the name of this VirtualInterface.
 
         虚拟接口的名字
 
@@ -328,7 +328,7 @@ class VirtualInterface:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VirtualInterface.
+        r"""Sets the name of this VirtualInterface.
 
         虚拟接口的名字
 
@@ -339,7 +339,7 @@ class VirtualInterface:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this VirtualInterface.
+        r"""Gets the admin_state_up of this VirtualInterface.
 
         管理状态：true或false
 
@@ -350,7 +350,7 @@ class VirtualInterface:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this VirtualInterface.
+        r"""Sets the admin_state_up of this VirtualInterface.
 
         管理状态：true或false
 
@@ -361,7 +361,7 @@ class VirtualInterface:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this VirtualInterface.
+        r"""Gets the bandwidth of this VirtualInterface.
 
         虚拟接口接入带宽
 
@@ -372,7 +372,7 @@ class VirtualInterface:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this VirtualInterface.
+        r"""Sets the bandwidth of this VirtualInterface.
 
         虚拟接口接入带宽
 
@@ -383,7 +383,7 @@ class VirtualInterface:
 
     @property
     def create_time(self):
-        """Gets the create_time of this VirtualInterface.
+        r"""Gets the create_time of this VirtualInterface.
 
         虚拟接口创建时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -394,7 +394,7 @@ class VirtualInterface:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this VirtualInterface.
+        r"""Sets the create_time of this VirtualInterface.
 
         虚拟接口创建时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -405,7 +405,7 @@ class VirtualInterface:
 
     @property
     def update_time(self):
-        """Gets the update_time of this VirtualInterface.
+        r"""Gets the update_time of this VirtualInterface.
 
         虚拟接口修改时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -416,7 +416,7 @@ class VirtualInterface:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this VirtualInterface.
+        r"""Sets the update_time of this VirtualInterface.
 
         虚拟接口修改时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -427,7 +427,7 @@ class VirtualInterface:
 
     @property
     def description(self):
-        """Gets the description of this VirtualInterface.
+        r"""Gets the description of this VirtualInterface.
 
         虚拟接口的描述
 
@@ -438,7 +438,7 @@ class VirtualInterface:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VirtualInterface.
+        r"""Sets the description of this VirtualInterface.
 
         虚拟接口的描述
 
@@ -449,7 +449,7 @@ class VirtualInterface:
 
     @property
     def direct_connect_id(self):
-        """Gets the direct_connect_id of this VirtualInterface.
+        r"""Gets the direct_connect_id of this VirtualInterface.
 
         物理专线的ID
 
@@ -460,7 +460,7 @@ class VirtualInterface:
 
     @direct_connect_id.setter
     def direct_connect_id(self, direct_connect_id):
-        """Sets the direct_connect_id of this VirtualInterface.
+        r"""Sets the direct_connect_id of this VirtualInterface.
 
         物理专线的ID
 
@@ -471,7 +471,7 @@ class VirtualInterface:
 
     @property
     def service_type(self):
-        """Gets the service_type of this VirtualInterface.
+        r"""Gets the service_type of this VirtualInterface.
 
         接入网关的类型：包括VGW,GDGW,LGW等
 
@@ -482,7 +482,7 @@ class VirtualInterface:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this VirtualInterface.
+        r"""Sets the service_type of this VirtualInterface.
 
         接入网关的类型：包括VGW,GDGW,LGW等
 
@@ -493,7 +493,7 @@ class VirtualInterface:
 
     @property
     def status(self):
-        """Gets the status of this VirtualInterface.
+        r"""Gets the status of this VirtualInterface.
 
         操作状态，合法值是：ACTIVE，DOWN，BUILD，ERROR，PENDING_CREATE，PENDING_UPDATE，PENDING_DELETE，DELETED，AUTHORIZATION，REJECTED
 
@@ -504,7 +504,7 @@ class VirtualInterface:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VirtualInterface.
+        r"""Sets the status of this VirtualInterface.
 
         操作状态，合法值是：ACTIVE，DOWN，BUILD，ERROR，PENDING_CREATE，PENDING_UPDATE，PENDING_DELETE，DELETED，AUTHORIZATION，REJECTED
 
@@ -515,7 +515,7 @@ class VirtualInterface:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this VirtualInterface.
+        r"""Gets the tenant_id of this VirtualInterface.
 
         租户ID
 
@@ -526,7 +526,7 @@ class VirtualInterface:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this VirtualInterface.
+        r"""Sets the tenant_id of this VirtualInterface.
 
         租户ID
 
@@ -537,7 +537,7 @@ class VirtualInterface:
 
     @property
     def type(self):
-        """Gets the type of this VirtualInterface.
+        r"""Gets the type of this VirtualInterface.
 
         表示接口类型：private
 
@@ -548,7 +548,7 @@ class VirtualInterface:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VirtualInterface.
+        r"""Sets the type of this VirtualInterface.
 
         表示接口类型：private
 
@@ -559,7 +559,7 @@ class VirtualInterface:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this VirtualInterface.
+        r"""Gets the vgw_id of this VirtualInterface.
 
         虚拟网关的ID
 
@@ -570,7 +570,7 @@ class VirtualInterface:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this VirtualInterface.
+        r"""Sets the vgw_id of this VirtualInterface.
 
         虚拟网关的ID
 
@@ -581,7 +581,7 @@ class VirtualInterface:
 
     @property
     def vlan(self):
-        """Gets the vlan of this VirtualInterface.
+        r"""Gets the vlan of this VirtualInterface.
 
         同用户网关对接的vlan, 配置范围0-3999
 
@@ -592,7 +592,7 @@ class VirtualInterface:
 
     @vlan.setter
     def vlan(self, vlan):
-        """Sets the vlan of this VirtualInterface.
+        r"""Sets the vlan of this VirtualInterface.
 
         同用户网关对接的vlan, 配置范围0-3999
 
@@ -603,7 +603,7 @@ class VirtualInterface:
 
     @property
     def route_limit(self):
-        """Gets the route_limit of this VirtualInterface.
+        r"""Gets the route_limit of this VirtualInterface.
 
         VIF远端子网路由配置规格
 
@@ -614,7 +614,7 @@ class VirtualInterface:
 
     @route_limit.setter
     def route_limit(self, route_limit):
-        """Sets the route_limit of this VirtualInterface.
+        r"""Sets the route_limit of this VirtualInterface.
 
         VIF远端子网路由配置规格
 
@@ -625,7 +625,7 @@ class VirtualInterface:
 
     @property
     def enable_nqa(self):
-        """Gets the enable_nqa of this VirtualInterface.
+        r"""Gets the enable_nqa of this VirtualInterface.
 
         是否使能nqa功能：true或false
 
@@ -636,7 +636,7 @@ class VirtualInterface:
 
     @enable_nqa.setter
     def enable_nqa(self, enable_nqa):
-        """Sets the enable_nqa of this VirtualInterface.
+        r"""Sets the enable_nqa of this VirtualInterface.
 
         是否使能nqa功能：true或false
 
@@ -647,7 +647,7 @@ class VirtualInterface:
 
     @property
     def enable_bfd(self):
-        """Gets the enable_bfd of this VirtualInterface.
+        r"""Gets the enable_bfd of this VirtualInterface.
 
         是否使能bfd功能：true或false
 
@@ -658,7 +658,7 @@ class VirtualInterface:
 
     @enable_bfd.setter
     def enable_bfd(self, enable_bfd):
-        """Sets the enable_bfd of this VirtualInterface.
+        r"""Sets the enable_bfd of this VirtualInterface.
 
         是否使能bfd功能：true或false
 
@@ -669,7 +669,7 @@ class VirtualInterface:
 
     @property
     def lag_id(self):
-        """Gets the lag_id of this VirtualInterface.
+        r"""Gets the lag_id of this VirtualInterface.
 
         VIF关联的链路聚合组ID
 
@@ -680,7 +680,7 @@ class VirtualInterface:
 
     @lag_id.setter
     def lag_id(self, lag_id):
-        """Sets the lag_id of this VirtualInterface.
+        r"""Sets the lag_id of this VirtualInterface.
 
         VIF关联的链路聚合组ID
 
@@ -691,7 +691,7 @@ class VirtualInterface:
 
     @property
     def device_id(self):
-        """Gets the device_id of this VirtualInterface.
+        r"""Gets the device_id of this VirtualInterface.
 
         归属的设备ID
 
@@ -702,7 +702,7 @@ class VirtualInterface:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this VirtualInterface.
+        r"""Sets the device_id of this VirtualInterface.
 
         归属的设备ID
 
@@ -713,7 +713,7 @@ class VirtualInterface:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this VirtualInterface.
+        r"""Gets the enterprise_project_id of this VirtualInterface.
 
         实例所属企业项目ID
 
@@ -724,7 +724,7 @@ class VirtualInterface:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this VirtualInterface.
+        r"""Sets the enterprise_project_id of this VirtualInterface.
 
         实例所属企业项目ID
 
@@ -735,7 +735,7 @@ class VirtualInterface:
 
     @property
     def tags(self):
-        """Gets the tags of this VirtualInterface.
+        r"""Gets the tags of this VirtualInterface.
 
         标签信息
 
@@ -746,7 +746,7 @@ class VirtualInterface:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this VirtualInterface.
+        r"""Sets the tags of this VirtualInterface.
 
         标签信息
 
@@ -757,7 +757,7 @@ class VirtualInterface:
 
     @property
     def local_gateway_v4_ip(self):
-        """Gets the local_gateway_v4_ip of this VirtualInterface.
+        r"""Gets the local_gateway_v4_ip of this VirtualInterface.
 
         云侧网关IPv4接口地址，该字段现已经移到vifpeer参数列表中，未来将会废弃。
 
@@ -768,7 +768,7 @@ class VirtualInterface:
 
     @local_gateway_v4_ip.setter
     def local_gateway_v4_ip(self, local_gateway_v4_ip):
-        """Sets the local_gateway_v4_ip of this VirtualInterface.
+        r"""Sets the local_gateway_v4_ip of this VirtualInterface.
 
         云侧网关IPv4接口地址，该字段现已经移到vifpeer参数列表中，未来将会废弃。
 
@@ -779,7 +779,7 @@ class VirtualInterface:
 
     @property
     def remote_gateway_v4_ip(self):
-        """Gets the remote_gateway_v4_ip of this VirtualInterface.
+        r"""Gets the remote_gateway_v4_ip of this VirtualInterface.
 
         客户侧网关IPv4接口地址，该字段现已经移到vifpeer参数列表中，未来将会废弃。
 
@@ -790,7 +790,7 @@ class VirtualInterface:
 
     @remote_gateway_v4_ip.setter
     def remote_gateway_v4_ip(self, remote_gateway_v4_ip):
-        """Sets the remote_gateway_v4_ip of this VirtualInterface.
+        r"""Sets the remote_gateway_v4_ip of this VirtualInterface.
 
         客户侧网关IPv4接口地址，该字段现已经移到vifpeer参数列表中，未来将会废弃。
 
@@ -801,7 +801,7 @@ class VirtualInterface:
 
     @property
     def ies_id(self):
-        """Gets the ies_id of this VirtualInterface.
+        r"""Gets the ies_id of this VirtualInterface.
 
         归属的CloudPond站点的ID[（功能暂不支持）](tag:dt)
 
@@ -812,7 +812,7 @@ class VirtualInterface:
 
     @ies_id.setter
     def ies_id(self, ies_id):
-        """Sets the ies_id of this VirtualInterface.
+        r"""Sets the ies_id of this VirtualInterface.
 
         归属的CloudPond站点的ID[（功能暂不支持）](tag:dt)
 
@@ -823,7 +823,7 @@ class VirtualInterface:
 
     @property
     def reason(self):
-        """Gets the reason of this VirtualInterface.
+        r"""Gets the reason of this VirtualInterface.
 
         如果资源的状态是Error的情况下，该参数会显示相关错误信息。
 
@@ -834,7 +834,7 @@ class VirtualInterface:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this VirtualInterface.
+        r"""Sets the reason of this VirtualInterface.
 
         如果资源的状态是Error的情况下，该参数会显示相关错误信息。
 
@@ -845,7 +845,7 @@ class VirtualInterface:
 
     @property
     def rate_limit(self):
-        """Gets the rate_limit of this VirtualInterface.
+        r"""Gets the rate_limit of this VirtualInterface.
 
         标识虚拟接口是否开启限速
 
@@ -856,7 +856,7 @@ class VirtualInterface:
 
     @rate_limit.setter
     def rate_limit(self, rate_limit):
-        """Sets the rate_limit of this VirtualInterface.
+        r"""Sets the rate_limit of this VirtualInterface.
 
         标识虚拟接口是否开启限速
 
@@ -867,7 +867,7 @@ class VirtualInterface:
 
     @property
     def address_family(self):
-        """Gets the address_family of this VirtualInterface.
+        r"""Gets the address_family of this VirtualInterface.
 
         接口的地址簇类型，ipv4，ipv6。该字段现已迁移到vifpeer参数列表中，未来将会废弃。
 
@@ -878,7 +878,7 @@ class VirtualInterface:
 
     @address_family.setter
     def address_family(self, address_family):
-        """Sets the address_family of this VirtualInterface.
+        r"""Sets the address_family of this VirtualInterface.
 
         接口的地址簇类型，ipv4，ipv6。该字段现已迁移到vifpeer参数列表中，未来将会废弃。
 
@@ -889,7 +889,7 @@ class VirtualInterface:
 
     @property
     def local_gateway_v6_ip(self):
-        """Gets the local_gateway_v6_ip of this VirtualInterface.
+        r"""Gets the local_gateway_v6_ip of this VirtualInterface.
 
         云侧网关IPv6接口地址，该字段现已迁移到vifpeer参数列表中，未来将会废弃。
 
@@ -900,7 +900,7 @@ class VirtualInterface:
 
     @local_gateway_v6_ip.setter
     def local_gateway_v6_ip(self, local_gateway_v6_ip):
-        """Sets the local_gateway_v6_ip of this VirtualInterface.
+        r"""Sets the local_gateway_v6_ip of this VirtualInterface.
 
         云侧网关IPv6接口地址，该字段现已迁移到vifpeer参数列表中，未来将会废弃。
 
@@ -911,7 +911,7 @@ class VirtualInterface:
 
     @property
     def remote_gateway_v6_ip(self):
-        """Gets the remote_gateway_v6_ip of this VirtualInterface.
+        r"""Gets the remote_gateway_v6_ip of this VirtualInterface.
 
         客户侧网关IPv6接口地址，该字段现已迁移到vifpeer参数列表中，未来将会废弃。
 
@@ -922,7 +922,7 @@ class VirtualInterface:
 
     @remote_gateway_v6_ip.setter
     def remote_gateway_v6_ip(self, remote_gateway_v6_ip):
-        """Sets the remote_gateway_v6_ip of this VirtualInterface.
+        r"""Sets the remote_gateway_v6_ip of this VirtualInterface.
 
         客户侧网关IPv6接口地址，该字段现已迁移到vifpeer参数列表中，未来将会废弃。
 
@@ -933,7 +933,7 @@ class VirtualInterface:
 
     @property
     def lgw_id(self):
-        """Gets the lgw_id of this VirtualInterface.
+        r"""Gets the lgw_id of this VirtualInterface.
 
         本地网关的ID，用于CloudPond场景。[（功能暂不支持）](tag:dt)
 
@@ -944,7 +944,7 @@ class VirtualInterface:
 
     @lgw_id.setter
     def lgw_id(self, lgw_id):
-        """Sets the lgw_id of this VirtualInterface.
+        r"""Sets the lgw_id of this VirtualInterface.
 
         本地网关的ID，用于CloudPond场景。[（功能暂不支持）](tag:dt)
 
@@ -955,7 +955,7 @@ class VirtualInterface:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this VirtualInterface.
+        r"""Gets the gateway_id of this VirtualInterface.
 
         虚拟接口关联的网关的ID
 
@@ -966,7 +966,7 @@ class VirtualInterface:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this VirtualInterface.
+        r"""Sets the gateway_id of this VirtualInterface.
 
         虚拟接口关联的网关的ID
 
@@ -977,7 +977,7 @@ class VirtualInterface:
 
     @property
     def remote_ep_group(self):
-        """Gets the remote_ep_group of this VirtualInterface.
+        r"""Gets the remote_ep_group of this VirtualInterface.
 
         远端子网列表，记录租户侧的cidrs。该字段现已迁移到vifpeer参数列表中，未来将会废弃。
 
@@ -988,7 +988,7 @@ class VirtualInterface:
 
     @remote_ep_group.setter
     def remote_ep_group(self, remote_ep_group):
-        """Sets the remote_ep_group of this VirtualInterface.
+        r"""Sets the remote_ep_group of this VirtualInterface.
 
         远端子网列表，记录租户侧的cidrs。该字段现已迁移到vifpeer参数列表中，未来将会废弃。
 
@@ -999,7 +999,7 @@ class VirtualInterface:
 
     @property
     def service_ep_group(self):
-        """Gets the service_ep_group of this VirtualInterface.
+        r"""Gets the service_ep_group of this VirtualInterface.
 
         该字段用于公网专线接口，表示租户可以访问云上公网服务地址列表。该字段现已迁移到vifpeer参数列表中，未来将会废弃。
 
@@ -1010,7 +1010,7 @@ class VirtualInterface:
 
     @service_ep_group.setter
     def service_ep_group(self, service_ep_group):
-        """Sets the service_ep_group of this VirtualInterface.
+        r"""Sets the service_ep_group of this VirtualInterface.
 
         该字段用于公网专线接口，表示租户可以访问云上公网服务地址列表。该字段现已迁移到vifpeer参数列表中，未来将会废弃。
 
@@ -1021,7 +1021,7 @@ class VirtualInterface:
 
     @property
     def bgp_route_limit(self):
-        """Gets the bgp_route_limit of this VirtualInterface.
+        r"""Gets the bgp_route_limit of this VirtualInterface.
 
         BGP的路由配置规格
 
@@ -1032,7 +1032,7 @@ class VirtualInterface:
 
     @bgp_route_limit.setter
     def bgp_route_limit(self, bgp_route_limit):
-        """Sets the bgp_route_limit of this VirtualInterface.
+        r"""Sets the bgp_route_limit of this VirtualInterface.
 
         BGP的路由配置规格
 
@@ -1043,7 +1043,7 @@ class VirtualInterface:
 
     @property
     def priority(self):
-        """Gets the priority of this VirtualInterface.
+        r"""Gets the priority of this VirtualInterface.
 
         虚拟接口的优先级，支持两种优先级状态normal和low。 接口优先级相同时表示负载关系，接口优先级不同时表示主备关系，出云流量优先转到优先级更高的normal接口。 目前仅BGP模式接口支持。
 
@@ -1054,7 +1054,7 @@ class VirtualInterface:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this VirtualInterface.
+        r"""Sets the priority of this VirtualInterface.
 
         虚拟接口的优先级，支持两种优先级状态normal和low。 接口优先级相同时表示负载关系，接口优先级不同时表示主备关系，出云流量优先转到优先级更高的normal接口。 目前仅BGP模式接口支持。
 
@@ -1065,7 +1065,7 @@ class VirtualInterface:
 
     @property
     def vif_peers(self):
-        """Gets the vif_peers of this VirtualInterface.
+        r"""Gets the vif_peers of this VirtualInterface.
 
         vif的Peer的相关信息[（预留字段，暂不支持）](tag:dt)
 
@@ -1076,7 +1076,7 @@ class VirtualInterface:
 
     @vif_peers.setter
     def vif_peers(self, vif_peers):
-        """Sets the vif_peers of this VirtualInterface.
+        r"""Sets the vif_peers of this VirtualInterface.
 
         vif的Peer的相关信息[（预留字段，暂不支持）](tag:dt)
 
@@ -1087,7 +1087,7 @@ class VirtualInterface:
 
     @property
     def extend_attribute(self):
-        """Gets the extend_attribute of this VirtualInterface.
+        r"""Gets the extend_attribute of this VirtualInterface.
 
         :return: The extend_attribute of this VirtualInterface.
         :rtype: :class:`huaweicloudsdkdc.v3.VifExtendAttribute`
@@ -1096,7 +1096,7 @@ class VirtualInterface:
 
     @extend_attribute.setter
     def extend_attribute(self, extend_attribute):
-        """Sets the extend_attribute of this VirtualInterface.
+        r"""Sets the extend_attribute of this VirtualInterface.
 
         :param extend_attribute: The extend_attribute of this VirtualInterface.
         :type extend_attribute: :class:`huaweicloudsdkdc.v3.VifExtendAttribute`

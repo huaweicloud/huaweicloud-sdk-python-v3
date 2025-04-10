@@ -25,7 +25,7 @@ class UpdateEndpointServiceNameRequestBody:
     }
 
     def __init__(self, endpoint_service_name=None):
-        """UpdateEndpointServiceNameRequestBody
+        r"""UpdateEndpointServiceNameRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateEndpointServiceNameRequestBody:
 
     @property
     def endpoint_service_name(self):
-        """Gets the endpoint_service_name of this UpdateEndpointServiceNameRequestBody.
+        r"""Gets the endpoint_service_name of this UpdateEndpointServiceNameRequestBody.
 
         终端节点服务名称
 
@@ -54,7 +54,7 @@ class UpdateEndpointServiceNameRequestBody:
 
     @endpoint_service_name.setter
     def endpoint_service_name(self, endpoint_service_name):
-        """Sets the endpoint_service_name of this UpdateEndpointServiceNameRequestBody.
+        r"""Sets the endpoint_service_name of this UpdateEndpointServiceNameRequestBody.
 
         终端节点服务名称
 

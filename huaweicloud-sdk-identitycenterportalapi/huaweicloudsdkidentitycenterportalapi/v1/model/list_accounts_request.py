@@ -30,7 +30,7 @@ class ListAccountsRequest:
     }
 
     def __init__(self, access_token=None, limit=None, marker=None):
-        """ListAccountsRequest
+        r"""ListAccountsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAccountsRequest:
 
     @property
     def access_token(self):
-        """Gets the access_token of this ListAccountsRequest.
+        r"""Gets the access_token of this ListAccountsRequest.
 
         创建令牌接口调用签发的访问令牌
 
@@ -68,7 +68,7 @@ class ListAccountsRequest:
 
     @access_token.setter
     def access_token(self, access_token):
-        """Sets the access_token of this ListAccountsRequest.
+        r"""Sets the access_token of this ListAccountsRequest.
 
         创建令牌接口调用签发的访问令牌
 
@@ -79,7 +79,7 @@ class ListAccountsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAccountsRequest.
+        r"""Gets the limit of this ListAccountsRequest.
 
         页面中最大结果数量。
 
@@ -90,7 +90,7 @@ class ListAccountsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAccountsRequest.
+        r"""Sets the limit of this ListAccountsRequest.
 
         页面中最大结果数量。
 
@@ -101,7 +101,7 @@ class ListAccountsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAccountsRequest.
+        r"""Gets the marker of this ListAccountsRequest.
 
         分页标记。非分页的接口，不使用该值。
 
@@ -112,7 +112,7 @@ class ListAccountsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAccountsRequest.
+        r"""Sets the marker of this ListAccountsRequest.
 
         分页标记。非分页的接口，不使用该值。
 

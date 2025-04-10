@@ -27,7 +27,7 @@ class UpdateWarehouseAppRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateWarehouseAppRequest
+        r"""UpdateWarehouseAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateWarehouseAppRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateWarehouseAppRequest.
+        r"""Gets the id of this UpdateWarehouseAppRequest.
 
         应用仓库中的应用记录ID。
 
@@ -60,7 +60,7 @@ class UpdateWarehouseAppRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateWarehouseAppRequest.
+        r"""Sets the id of this UpdateWarehouseAppRequest.
 
         应用仓库中的应用记录ID。
 
@@ -71,7 +71,7 @@ class UpdateWarehouseAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateWarehouseAppRequest.
+        r"""Gets the body of this UpdateWarehouseAppRequest.
 
         :return: The body of this UpdateWarehouseAppRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdateWarehouseAppReq`
@@ -80,7 +80,7 @@ class UpdateWarehouseAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateWarehouseAppRequest.
+        r"""Sets the body of this UpdateWarehouseAppRequest.
 
         :param body: The body of this UpdateWarehouseAppRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.UpdateWarehouseAppReq`

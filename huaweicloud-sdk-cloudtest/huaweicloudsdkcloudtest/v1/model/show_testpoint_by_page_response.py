@@ -30,7 +30,7 @@ class ShowTestpointByPageResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowTestpointByPageResponse
+        r"""ShowTestpointByPageResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTestpointByPageResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowTestpointByPageResponse.
+        r"""Gets the code of this ShowTestpointByPageResponse.
 
         :return: The code of this ShowTestpointByPageResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowTestpointByPageResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowTestpointByPageResponse.
+        r"""Sets the code of this ShowTestpointByPageResponse.
 
         :param code: The code of this ShowTestpointByPageResponse.
         :type code: str
@@ -76,7 +76,7 @@ class ShowTestpointByPageResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowTestpointByPageResponse.
+        r"""Gets the data of this ShowTestpointByPageResponse.
 
         :return: The data of this ShowTestpointByPageResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoTestPoint`
@@ -85,7 +85,7 @@ class ShowTestpointByPageResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowTestpointByPageResponse.
+        r"""Sets the data of this ShowTestpointByPageResponse.
 
         :param data: The data of this ShowTestpointByPageResponse.
         :type data: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoTestPoint`
@@ -94,7 +94,7 @@ class ShowTestpointByPageResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowTestpointByPageResponse.
+        r"""Gets the message of this ShowTestpointByPageResponse.
 
         :return: The message of this ShowTestpointByPageResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ShowTestpointByPageResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowTestpointByPageResponse.
+        r"""Sets the message of this ShowTestpointByPageResponse.
 
         :param message: The message of this ShowTestpointByPageResponse.
         :type message: str

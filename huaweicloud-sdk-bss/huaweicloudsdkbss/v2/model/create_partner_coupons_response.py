@@ -28,7 +28,7 @@ class CreatePartnerCouponsResponse(SdkResponse):
     }
 
     def __init__(self, error_details=None, coupon_infos=None):
-        """CreatePartnerCouponsResponse
+        r"""CreatePartnerCouponsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreatePartnerCouponsResponse(SdkResponse):
 
     @property
     def error_details(self):
-        """Gets the error_details of this CreatePartnerCouponsResponse.
+        r"""Gets the error_details of this CreatePartnerCouponsResponse.
 
         错误的客户列表和错误信息，只有HTTP 200的时候才会返回这个结构体，具体参见表1。
 
@@ -62,7 +62,7 @@ class CreatePartnerCouponsResponse(SdkResponse):
 
     @error_details.setter
     def error_details(self, error_details):
-        """Sets the error_details of this CreatePartnerCouponsResponse.
+        r"""Sets the error_details of this CreatePartnerCouponsResponse.
 
         错误的客户列表和错误信息，只有HTTP 200的时候才会返回这个结构体，具体参见表1。
 
@@ -73,7 +73,7 @@ class CreatePartnerCouponsResponse(SdkResponse):
 
     @property
     def coupon_infos(self):
-        """Gets the coupon_infos of this CreatePartnerCouponsResponse.
+        r"""Gets the coupon_infos of this CreatePartnerCouponsResponse.
 
         成功的客户ID和对应的券ID列表，只有HTTP 200的时候才会返回这个结构体，具体参见表2。
 
@@ -84,7 +84,7 @@ class CreatePartnerCouponsResponse(SdkResponse):
 
     @coupon_infos.setter
     def coupon_infos(self, coupon_infos):
-        """Sets the coupon_infos of this CreatePartnerCouponsResponse.
+        r"""Sets the coupon_infos of this CreatePartnerCouponsResponse.
 
         成功的客户ID和对应的券ID列表，只有HTTP 200的时候才会返回这个结构体，具体参见表2。
 

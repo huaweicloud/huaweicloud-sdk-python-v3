@@ -26,7 +26,7 @@ class ListClusterScaleInNumbersResponse(SdkResponse):
     }
 
     def __init__(self, shrink_sequence=None):
-        """ListClusterScaleInNumbersResponse
+        r"""ListClusterScaleInNumbersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListClusterScaleInNumbersResponse(SdkResponse):
 
     @property
     def shrink_sequence(self):
-        """Gets the shrink_sequence of this ListClusterScaleInNumbersResponse.
+        r"""Gets the shrink_sequence of this ListClusterScaleInNumbersResponse.
 
         合适的缩容数
 
@@ -55,7 +55,7 @@ class ListClusterScaleInNumbersResponse(SdkResponse):
 
     @shrink_sequence.setter
     def shrink_sequence(self, shrink_sequence):
-        """Sets the shrink_sequence of this ListClusterScaleInNumbersResponse.
+        r"""Sets the shrink_sequence of this ListClusterScaleInNumbersResponse.
 
         合适的缩容数
 

@@ -25,7 +25,7 @@ class CreateShareFolderReq:
     }
 
     def __init__(self, folder_name=None):
-        """CreateShareFolderReq
+        r"""CreateShareFolderReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateShareFolderReq:
 
     @property
     def folder_name(self):
-        """Gets the folder_name of this CreateShareFolderReq.
+        r"""Gets the folder_name of this CreateShareFolderReq.
 
         - 仅支持创建单层级的文件夹。 - 单个文件夹名称仅支持以下字符: 英文字母、数字、空格、下划线、中划线。 - 名称不能超过32字符。 - 不能为全空格或者以空格开头。
 
@@ -54,7 +54,7 @@ class CreateShareFolderReq:
 
     @folder_name.setter
     def folder_name(self, folder_name):
-        """Sets the folder_name of this CreateShareFolderReq.
+        r"""Sets the folder_name of this CreateShareFolderReq.
 
         - 仅支持创建单层级的文件夹。 - 单个文件夹名称仅支持以下字符: 英文字母、数字、空格、下划线、中划线。 - 名称不能超过32字符。 - 不能为全空格或者以空格开头。
 

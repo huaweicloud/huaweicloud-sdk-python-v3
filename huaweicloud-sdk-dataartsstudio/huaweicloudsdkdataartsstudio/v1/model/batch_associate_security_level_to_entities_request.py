@@ -27,7 +27,7 @@ class BatchAssociateSecurityLevelToEntitiesRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """BatchAssociateSecurityLevelToEntitiesRequest
+        r"""BatchAssociateSecurityLevelToEntitiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAssociateSecurityLevelToEntitiesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this BatchAssociateSecurityLevelToEntitiesRequest.
+        r"""Gets the workspace of this BatchAssociateSecurityLevelToEntitiesRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class BatchAssociateSecurityLevelToEntitiesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this BatchAssociateSecurityLevelToEntitiesRequest.
+        r"""Sets the workspace of this BatchAssociateSecurityLevelToEntitiesRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class BatchAssociateSecurityLevelToEntitiesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAssociateSecurityLevelToEntitiesRequest.
+        r"""Gets the body of this BatchAssociateSecurityLevelToEntitiesRequest.
 
         :return: The body of this BatchAssociateSecurityLevelToEntitiesRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BulkSecurityLevel`
@@ -80,7 +80,7 @@ class BatchAssociateSecurityLevelToEntitiesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAssociateSecurityLevelToEntitiesRequest.
+        r"""Sets the body of this BatchAssociateSecurityLevelToEntitiesRequest.
 
         :param body: The body of this BatchAssociateSecurityLevelToEntitiesRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.BulkSecurityLevel`

@@ -34,7 +34,7 @@ class ShowFactorySupplementDataResponse(SdkResponse):
     }
 
     def __init__(self, msg=None, rows=None, success=None, total=None, x_request_id=None):
-        """ShowFactorySupplementDataResponse
+        r"""ShowFactorySupplementDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowFactorySupplementDataResponse(SdkResponse):
 
     @property
     def msg(self):
-        """Gets the msg of this ShowFactorySupplementDataResponse.
+        r"""Gets the msg of this ShowFactorySupplementDataResponse.
 
         success
 
@@ -83,7 +83,7 @@ class ShowFactorySupplementDataResponse(SdkResponse):
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this ShowFactorySupplementDataResponse.
+        r"""Sets the msg of this ShowFactorySupplementDataResponse.
 
         success
 
@@ -94,7 +94,7 @@ class ShowFactorySupplementDataResponse(SdkResponse):
 
     @property
     def rows(self):
-        """Gets the rows of this ShowFactorySupplementDataResponse.
+        r"""Gets the rows of this ShowFactorySupplementDataResponse.
 
         包含若干补数据实例信息
 
@@ -105,7 +105,7 @@ class ShowFactorySupplementDataResponse(SdkResponse):
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this ShowFactorySupplementDataResponse.
+        r"""Sets the rows of this ShowFactorySupplementDataResponse.
 
         包含若干补数据实例信息
 
@@ -116,7 +116,7 @@ class ShowFactorySupplementDataResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this ShowFactorySupplementDataResponse.
+        r"""Gets the success of this ShowFactorySupplementDataResponse.
 
         查询是否成功，取值为true或者false
 
@@ -127,7 +127,7 @@ class ShowFactorySupplementDataResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ShowFactorySupplementDataResponse.
+        r"""Sets the success of this ShowFactorySupplementDataResponse.
 
         查询是否成功，取值为true或者false
 
@@ -138,7 +138,7 @@ class ShowFactorySupplementDataResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowFactorySupplementDataResponse.
+        r"""Gets the total of this ShowFactorySupplementDataResponse.
 
         补数据实例数量
 
@@ -149,7 +149,7 @@ class ShowFactorySupplementDataResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowFactorySupplementDataResponse.
+        r"""Sets the total of this ShowFactorySupplementDataResponse.
 
         补数据实例数量
 
@@ -160,7 +160,7 @@ class ShowFactorySupplementDataResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowFactorySupplementDataResponse.
+        r"""Gets the x_request_id of this ShowFactorySupplementDataResponse.
 
         :return: The x_request_id of this ShowFactorySupplementDataResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class ShowFactorySupplementDataResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowFactorySupplementDataResponse.
+        r"""Sets the x_request_id of this ShowFactorySupplementDataResponse.
 
         :param x_request_id: The x_request_id of this ShowFactorySupplementDataResponse.
         :type x_request_id: str

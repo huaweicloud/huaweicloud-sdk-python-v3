@@ -35,7 +35,7 @@ class ListRulesRequest:
     }
 
     def __init__(self, instance_id=None, app_id=None, rule_type=None, limit=None, marker=None, offset=None):
-        """ListRulesRequest
+        r"""ListRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListRulesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListRulesRequest.
+        r"""Gets the instance_id of this ListRulesRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
@@ -89,7 +89,7 @@ class ListRulesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListRulesRequest.
+        r"""Sets the instance_id of this ListRulesRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
@@ -100,7 +100,7 @@ class ListRulesRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListRulesRequest.
+        r"""Gets the app_id of this ListRulesRequest.
 
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，可以携带该参数查询指定资源空间下的规则列表，不携带该参数则会查询该用户下所有规则列表。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -111,7 +111,7 @@ class ListRulesRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListRulesRequest.
+        r"""Sets the app_id of this ListRulesRequest.
 
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，可以携带该参数查询指定资源空间下的规则列表，不携带该参数则会查询该用户下所有规则列表。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -122,7 +122,7 @@ class ListRulesRequest:
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this ListRulesRequest.
+        r"""Gets the rule_type of this ListRulesRequest.
 
         **参数说明**：规则类型。此参数为非必选参数，指定对应的规则类型结果进行返回，不携带该参数则会返回所有类型规则。 **取值范围**： - DEVICE_LINKAGE：云端联动规则。  - DEVICE_SIDE：端侧规则。
 
@@ -133,7 +133,7 @@ class ListRulesRequest:
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this ListRulesRequest.
+        r"""Sets the rule_type of this ListRulesRequest.
 
         **参数说明**：规则类型。此参数为非必选参数，指定对应的规则类型结果进行返回，不携带该参数则会返回所有类型规则。 **取值范围**： - DEVICE_LINKAGE：云端联动规则。  - DEVICE_SIDE：端侧规则。
 
@@ -144,7 +144,7 @@ class ListRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRulesRequest.
+        r"""Gets the limit of this ListRulesRequest.
 
         **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-50的整数，默认值为10。
 
@@ -155,7 +155,7 @@ class ListRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRulesRequest.
+        r"""Sets the limit of this ListRulesRequest.
 
         **参数说明**：分页查询时每页显示的记录数。 **取值范围**：1-50的整数，默认值为10。
 
@@ -166,7 +166,7 @@ class ListRulesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListRulesRequest.
+        r"""Gets the marker of this ListRulesRequest.
 
         **参数说明**：上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。 **取值范围**：长度为24的十六进制字符串，默认值为ffffffffffffffffffffffff。
 
@@ -177,7 +177,7 @@ class ListRulesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRulesRequest.
+        r"""Sets the marker of this ListRulesRequest.
 
         **参数说明**：上一次分页查询结果中最后一条记录的ID，在上一次分页查询时由物联网平台返回获得。分页查询时物联网平台是按marker也就是记录ID降序查询的，越新的数据记录ID也会越大。若填写marker，则本次只查询记录ID小于marker的数据记录。若不填写，则从记录ID最大也就是最新的一条数据开始查询。如果需要依次查询所有数据，则每次查询时必须填写上一次查询响应中的marker值。 **取值范围**：长度为24的十六进制字符串，默认值为ffffffffffffffffffffffff。
 
@@ -188,7 +188,7 @@ class ListRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRulesRequest.
+        r"""Gets the offset of this ListRulesRequest.
 
         **参数说明**：表示从marker后偏移offset条记录开始查询。默认为0，取值范围为0-500的整数。当offset为0时，表示从marker后第一条记录开始输出。限制offset最大值是出于API性能考虑，您可以搭配marker使用该参数实现翻页，例如每页50条记录，1-11页内都可以直接使用offset跳转到指定页，但到11页后，由于offset限制为500，您需要使用第11页返回的marker作为下次查询的marker，以实现翻页到12-22页。 **取值范围**：0-500的整数，默认为0。
 
@@ -199,7 +199,7 @@ class ListRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRulesRequest.
+        r"""Sets the offset of this ListRulesRequest.
 
         **参数说明**：表示从marker后偏移offset条记录开始查询。默认为0，取值范围为0-500的整数。当offset为0时，表示从marker后第一条记录开始输出。限制offset最大值是出于API性能考虑，您可以搭配marker使用该参数实现翻页，例如每页50条记录，1-11页内都可以直接使用offset跳转到指定页，但到11页后，由于offset限制为500，您需要使用第11页返回的marker作为下次查询的marker，以实现翻页到12-22页。 **取值范围**：0-500的整数，默认为0。
 

@@ -33,7 +33,7 @@ class MoveAppToGroupResult:
     }
 
     def __init__(self, code=None, application_id=None, application_name=None, error_code=None, error_msg=None):
-        """MoveAppToGroupResult
+        r"""MoveAppToGroupResult
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MoveAppToGroupResult:
 
     @property
     def code(self):
-        """Gets the code of this MoveAppToGroupResult.
+        r"""Gets the code of this MoveAppToGroupResult.
 
         是否失败
 
@@ -82,7 +82,7 @@ class MoveAppToGroupResult:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this MoveAppToGroupResult.
+        r"""Sets the code of this MoveAppToGroupResult.
 
         是否失败
 
@@ -93,7 +93,7 @@ class MoveAppToGroupResult:
 
     @property
     def application_id(self):
-        """Gets the application_id of this MoveAppToGroupResult.
+        r"""Gets the application_id of this MoveAppToGroupResult.
 
         应用id
 
@@ -104,7 +104,7 @@ class MoveAppToGroupResult:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this MoveAppToGroupResult.
+        r"""Sets the application_id of this MoveAppToGroupResult.
 
         应用id
 
@@ -115,7 +115,7 @@ class MoveAppToGroupResult:
 
     @property
     def application_name(self):
-        """Gets the application_name of this MoveAppToGroupResult.
+        r"""Gets the application_name of this MoveAppToGroupResult.
 
         应用名称
 
@@ -126,7 +126,7 @@ class MoveAppToGroupResult:
 
     @application_name.setter
     def application_name(self, application_name):
-        """Sets the application_name of this MoveAppToGroupResult.
+        r"""Sets the application_name of this MoveAppToGroupResult.
 
         应用名称
 
@@ -137,7 +137,7 @@ class MoveAppToGroupResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this MoveAppToGroupResult.
+        r"""Gets the error_code of this MoveAppToGroupResult.
 
         错误码
 
@@ -148,7 +148,7 @@ class MoveAppToGroupResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this MoveAppToGroupResult.
+        r"""Sets the error_code of this MoveAppToGroupResult.
 
         错误码
 
@@ -159,7 +159,7 @@ class MoveAppToGroupResult:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this MoveAppToGroupResult.
+        r"""Gets the error_msg of this MoveAppToGroupResult.
 
         错误信息
 
@@ -170,7 +170,7 @@ class MoveAppToGroupResult:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this MoveAppToGroupResult.
+        r"""Sets the error_msg of this MoveAppToGroupResult.
 
         错误信息
 

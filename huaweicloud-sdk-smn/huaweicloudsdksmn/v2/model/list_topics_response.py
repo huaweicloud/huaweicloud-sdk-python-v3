@@ -30,7 +30,7 @@ class ListTopicsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, topic_count=None, topics=None):
-        """ListTopicsResponse
+        r"""ListTopicsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTopicsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListTopicsResponse.
+        r"""Gets the request_id of this ListTopicsResponse.
 
         请求的唯一标识ID。
 
@@ -69,7 +69,7 @@ class ListTopicsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListTopicsResponse.
+        r"""Sets the request_id of this ListTopicsResponse.
 
         请求的唯一标识ID。
 
@@ -80,7 +80,7 @@ class ListTopicsResponse(SdkResponse):
 
     @property
     def topic_count(self):
-        """Gets the topic_count of this ListTopicsResponse.
+        r"""Gets the topic_count of this ListTopicsResponse.
 
         返回的Topic个数。该参数不受offset和limit影响，即返回的是您账户下所有的Topic个数。
 
@@ -91,7 +91,7 @@ class ListTopicsResponse(SdkResponse):
 
     @topic_count.setter
     def topic_count(self, topic_count):
-        """Sets the topic_count of this ListTopicsResponse.
+        r"""Sets the topic_count of this ListTopicsResponse.
 
         返回的Topic个数。该参数不受offset和limit影响，即返回的是您账户下所有的Topic个数。
 
@@ -102,7 +102,7 @@ class ListTopicsResponse(SdkResponse):
 
     @property
     def topics(self):
-        """Gets the topics of this ListTopicsResponse.
+        r"""Gets the topics of this ListTopicsResponse.
 
         Topic结构体数组。
 
@@ -113,7 +113,7 @@ class ListTopicsResponse(SdkResponse):
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this ListTopicsResponse.
+        r"""Sets the topics of this ListTopicsResponse.
 
         Topic结构体数组。
 

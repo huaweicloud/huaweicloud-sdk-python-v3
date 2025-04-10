@@ -25,7 +25,7 @@ class ShowAomMappingRuleRequest:
     }
 
     def __init__(self, rule_id=None):
-        """ShowAomMappingRuleRequest
+        r"""ShowAomMappingRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAomMappingRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ShowAomMappingRuleRequest.
+        r"""Gets the rule_id of this ShowAomMappingRuleRequest.
 
         接入规则ID
 
@@ -53,7 +53,7 @@ class ShowAomMappingRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ShowAomMappingRuleRequest.
+        r"""Sets the rule_id of this ShowAomMappingRuleRequest.
 
         接入规则ID
 

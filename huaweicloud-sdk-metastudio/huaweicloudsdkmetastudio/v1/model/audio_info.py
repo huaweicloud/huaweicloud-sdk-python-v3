@@ -25,7 +25,7 @@ class AudioInfo:
     }
 
     def __init__(self, audio_id=None):
-        """AudioInfo
+        r"""AudioInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AudioInfo:
 
     @property
     def audio_id(self):
-        """Gets the audio_id of this AudioInfo.
+        r"""Gets the audio_id of this AudioInfo.
 
         **参数解释**： 音频id。 > * 获取方式：剧本为音频驱动时，查询剧本详情或者更新剧本会返回audio_id  **约束限制**： 不涉及 **默认取值**： 不涉及
 
@@ -54,7 +54,7 @@ class AudioInfo:
 
     @audio_id.setter
     def audio_id(self, audio_id):
-        """Sets the audio_id of this AudioInfo.
+        r"""Sets the audio_id of this AudioInfo.
 
         **参数解释**： 音频id。 > * 获取方式：剧本为音频驱动时，查询剧本详情或者更新剧本会返回audio_id  **约束限制**： 不涉及 **默认取值**： 不涉及
 

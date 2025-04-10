@@ -27,7 +27,7 @@ class PrivateKeyVerify:
     }
 
     def __init__(self, repository_uuid=None, private_key=None):
-        """PrivateKeyVerify
+        r"""PrivateKeyVerify
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PrivateKeyVerify:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this PrivateKeyVerify.
+        r"""Gets the repository_uuid of this PrivateKeyVerify.
 
         仓库UUID(由CreateRepository接口返回)
 
@@ -59,7 +59,7 @@ class PrivateKeyVerify:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this PrivateKeyVerify.
+        r"""Sets the repository_uuid of this PrivateKeyVerify.
 
         仓库UUID(由CreateRepository接口返回)
 
@@ -70,7 +70,7 @@ class PrivateKeyVerify:
 
     @property
     def private_key(self):
-        """Gets the private_key of this PrivateKeyVerify.
+        r"""Gets the private_key of this PrivateKeyVerify.
 
         私钥
 
@@ -81,7 +81,7 @@ class PrivateKeyVerify:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this PrivateKeyVerify.
+        r"""Sets the private_key of this PrivateKeyVerify.
 
         私钥
 

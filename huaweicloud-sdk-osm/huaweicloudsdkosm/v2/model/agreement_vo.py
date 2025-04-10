@@ -35,7 +35,7 @@ class AgreementVO:
     }
 
     def __init__(self, id=None, agreement_name=None, agreement_type=None, agreement_type_name=None, content=None, version=None):
-        """AgreementVO
+        r"""AgreementVO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AgreementVO:
 
     @property
     def id(self):
-        """Gets the id of this AgreementVO.
+        r"""Gets the id of this AgreementVO.
 
         协议id
 
@@ -89,7 +89,7 @@ class AgreementVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AgreementVO.
+        r"""Sets the id of this AgreementVO.
 
         协议id
 
@@ -100,7 +100,7 @@ class AgreementVO:
 
     @property
     def agreement_name(self):
-        """Gets the agreement_name of this AgreementVO.
+        r"""Gets the agreement_name of this AgreementVO.
 
         协议名称
 
@@ -111,7 +111,7 @@ class AgreementVO:
 
     @agreement_name.setter
     def agreement_name(self, agreement_name):
-        """Sets the agreement_name of this AgreementVO.
+        r"""Sets the agreement_name of this AgreementVO.
 
         协议名称
 
@@ -122,7 +122,7 @@ class AgreementVO:
 
     @property
     def agreement_type(self):
-        """Gets the agreement_type of this AgreementVO.
+        r"""Gets the agreement_type of this AgreementVO.
 
         协议类型
 
@@ -133,7 +133,7 @@ class AgreementVO:
 
     @agreement_type.setter
     def agreement_type(self, agreement_type):
-        """Sets the agreement_type of this AgreementVO.
+        r"""Sets the agreement_type of this AgreementVO.
 
         协议类型
 
@@ -144,7 +144,7 @@ class AgreementVO:
 
     @property
     def agreement_type_name(self):
-        """Gets the agreement_type_name of this AgreementVO.
+        r"""Gets the agreement_type_name of this AgreementVO.
 
         协议类型名称
 
@@ -155,7 +155,7 @@ class AgreementVO:
 
     @agreement_type_name.setter
     def agreement_type_name(self, agreement_type_name):
-        """Sets the agreement_type_name of this AgreementVO.
+        r"""Sets the agreement_type_name of this AgreementVO.
 
         协议类型名称
 
@@ -166,7 +166,7 @@ class AgreementVO:
 
     @property
     def content(self):
-        """Gets the content of this AgreementVO.
+        r"""Gets the content of this AgreementVO.
 
         内容
 
@@ -177,7 +177,7 @@ class AgreementVO:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this AgreementVO.
+        r"""Sets the content of this AgreementVO.
 
         内容
 
@@ -188,7 +188,7 @@ class AgreementVO:
 
     @property
     def version(self):
-        """Gets the version of this AgreementVO.
+        r"""Gets the version of this AgreementVO.
 
         版本
 
@@ -199,7 +199,7 @@ class AgreementVO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AgreementVO.
+        r"""Sets the version of this AgreementVO.
 
         版本
 

@@ -29,7 +29,7 @@ class ChangeTheDelayThresholdRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ChangeTheDelayThresholdRequest
+        r"""ChangeTheDelayThresholdRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ChangeTheDelayThresholdRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ChangeTheDelayThresholdRequest.
+        r"""Gets the x_language of this ChangeTheDelayThresholdRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class ChangeTheDelayThresholdRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ChangeTheDelayThresholdRequest.
+        r"""Sets the x_language of this ChangeTheDelayThresholdRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class ChangeTheDelayThresholdRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeTheDelayThresholdRequest.
+        r"""Gets the instance_id of this ChangeTheDelayThresholdRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class ChangeTheDelayThresholdRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeTheDelayThresholdRequest.
+        r"""Sets the instance_id of this ChangeTheDelayThresholdRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class ChangeTheDelayThresholdRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeTheDelayThresholdRequest.
+        r"""Gets the body of this ChangeTheDelayThresholdRequest.
 
         :return: The body of this ChangeTheDelayThresholdRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ChangingTheDelayThresholdRequestBody`
@@ -109,7 +109,7 @@ class ChangeTheDelayThresholdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeTheDelayThresholdRequest.
+        r"""Sets the body of this ChangeTheDelayThresholdRequest.
 
         :param body: The body of this ChangeTheDelayThresholdRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ChangingTheDelayThresholdRequestBody`

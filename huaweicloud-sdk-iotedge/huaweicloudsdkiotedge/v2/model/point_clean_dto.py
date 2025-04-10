@@ -27,7 +27,7 @@ class PointCleanDTO:
     }
 
     def __init__(self, silent_window=None, deviation=None):
-        """PointCleanDTO
+        r"""PointCleanDTO
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PointCleanDTO:
 
     @property
     def silent_window(self):
-        """Gets the silent_window of this PointCleanDTO.
+        r"""Gets the silent_window of this PointCleanDTO.
 
         静默时间窗口，在该时间窗口内，没有触发上报条件，点位将不会上
 
@@ -59,7 +59,7 @@ class PointCleanDTO:
 
     @silent_window.setter
     def silent_window(self, silent_window):
-        """Sets the silent_window of this PointCleanDTO.
+        r"""Sets the silent_window of this PointCleanDTO.
 
         静默时间窗口，在该时间窗口内，没有触发上报条件，点位将不会上
 
@@ -70,7 +70,7 @@ class PointCleanDTO:
 
     @property
     def deviation(self):
-        """Gets the deviation of this PointCleanDTO.
+        r"""Gets the deviation of this PointCleanDTO.
 
         偏差，在该偏差范围内表示是正常波动，点位将不进行上报
 
@@ -81,7 +81,7 @@ class PointCleanDTO:
 
     @deviation.setter
     def deviation(self, deviation):
-        """Sets the deviation of this PointCleanDTO.
+        r"""Sets the deviation of this PointCleanDTO.
 
         偏差，在该偏差范围内表示是正常波动，点位将不进行上报
 

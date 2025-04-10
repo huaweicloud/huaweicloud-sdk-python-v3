@@ -28,7 +28,7 @@ class SwitchEquipmentHaTypeResponse(SdkResponse):
     }
 
     def __init__(self, active_equipment_id=None, standby_equipment_id=None):
-        """SwitchEquipmentHaTypeResponse
+        r"""SwitchEquipmentHaTypeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SwitchEquipmentHaTypeResponse(SdkResponse):
 
     @property
     def active_equipment_id(self):
-        """Gets the active_equipment_id of this SwitchEquipmentHaTypeResponse.
+        r"""Gets the active_equipment_id of this SwitchEquipmentHaTypeResponse.
 
         主设备ID
 
@@ -62,7 +62,7 @@ class SwitchEquipmentHaTypeResponse(SdkResponse):
 
     @active_equipment_id.setter
     def active_equipment_id(self, active_equipment_id):
-        """Sets the active_equipment_id of this SwitchEquipmentHaTypeResponse.
+        r"""Sets the active_equipment_id of this SwitchEquipmentHaTypeResponse.
 
         主设备ID
 
@@ -73,7 +73,7 @@ class SwitchEquipmentHaTypeResponse(SdkResponse):
 
     @property
     def standby_equipment_id(self):
-        """Gets the standby_equipment_id of this SwitchEquipmentHaTypeResponse.
+        r"""Gets the standby_equipment_id of this SwitchEquipmentHaTypeResponse.
 
         备设备ID
 
@@ -84,7 +84,7 @@ class SwitchEquipmentHaTypeResponse(SdkResponse):
 
     @standby_equipment_id.setter
     def standby_equipment_id(self, standby_equipment_id):
-        """Sets the standby_equipment_id of this SwitchEquipmentHaTypeResponse.
+        r"""Sets the standby_equipment_id of this SwitchEquipmentHaTypeResponse.
 
         备设备ID
 

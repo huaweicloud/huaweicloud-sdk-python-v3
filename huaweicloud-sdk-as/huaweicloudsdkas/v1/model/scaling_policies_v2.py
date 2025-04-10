@@ -51,7 +51,7 @@ class ScalingPoliciesV2:
     }
 
     def __init__(self, scaling_policy_name=None, scaling_policy_id=None, scaling_resource_id=None, scaling_resource_type=None, policy_status=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, interval_alarm_actions=None, cool_down_time=None, create_time=None, meta_data=None, description=None):
-        """ScalingPoliciesV2
+        r"""ScalingPoliciesV2
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ScalingPoliciesV2:
 
     @property
     def scaling_policy_name(self):
-        """Gets the scaling_policy_name of this ScalingPoliciesV2.
+        r"""Gets the scaling_policy_name of this ScalingPoliciesV2.
 
         伸缩策略名称。
 
@@ -145,7 +145,7 @@ class ScalingPoliciesV2:
 
     @scaling_policy_name.setter
     def scaling_policy_name(self, scaling_policy_name):
-        """Sets the scaling_policy_name of this ScalingPoliciesV2.
+        r"""Sets the scaling_policy_name of this ScalingPoliciesV2.
 
         伸缩策略名称。
 
@@ -156,7 +156,7 @@ class ScalingPoliciesV2:
 
     @property
     def scaling_policy_id(self):
-        """Gets the scaling_policy_id of this ScalingPoliciesV2.
+        r"""Gets the scaling_policy_id of this ScalingPoliciesV2.
 
         伸缩策略ID。
 
@@ -167,7 +167,7 @@ class ScalingPoliciesV2:
 
     @scaling_policy_id.setter
     def scaling_policy_id(self, scaling_policy_id):
-        """Sets the scaling_policy_id of this ScalingPoliciesV2.
+        r"""Sets the scaling_policy_id of this ScalingPoliciesV2.
 
         伸缩策略ID。
 
@@ -178,7 +178,7 @@ class ScalingPoliciesV2:
 
     @property
     def scaling_resource_id(self):
-        """Gets the scaling_resource_id of this ScalingPoliciesV2.
+        r"""Gets the scaling_resource_id of this ScalingPoliciesV2.
 
         伸缩资源ID。
 
@@ -189,7 +189,7 @@ class ScalingPoliciesV2:
 
     @scaling_resource_id.setter
     def scaling_resource_id(self, scaling_resource_id):
-        """Sets the scaling_resource_id of this ScalingPoliciesV2.
+        r"""Sets the scaling_resource_id of this ScalingPoliciesV2.
 
         伸缩资源ID。
 
@@ -200,7 +200,7 @@ class ScalingPoliciesV2:
 
     @property
     def scaling_resource_type(self):
-        """Gets the scaling_resource_type of this ScalingPoliciesV2.
+        r"""Gets the scaling_resource_type of this ScalingPoliciesV2.
 
         伸缩资源类型。伸缩组：SCALING_GROUP。带宽：BANDWIDTH。
 
@@ -211,7 +211,7 @@ class ScalingPoliciesV2:
 
     @scaling_resource_type.setter
     def scaling_resource_type(self, scaling_resource_type):
-        """Sets the scaling_resource_type of this ScalingPoliciesV2.
+        r"""Sets the scaling_resource_type of this ScalingPoliciesV2.
 
         伸缩资源类型。伸缩组：SCALING_GROUP。带宽：BANDWIDTH。
 
@@ -222,7 +222,7 @@ class ScalingPoliciesV2:
 
     @property
     def policy_status(self):
-        """Gets the policy_status of this ScalingPoliciesV2.
+        r"""Gets the policy_status of this ScalingPoliciesV2.
 
         伸缩策略状态。INSERVICE：使用中。PAUSED：停止。EXECUTING：执行中。
 
@@ -233,7 +233,7 @@ class ScalingPoliciesV2:
 
     @policy_status.setter
     def policy_status(self, policy_status):
-        """Sets the policy_status of this ScalingPoliciesV2.
+        r"""Sets the policy_status of this ScalingPoliciesV2.
 
         伸缩策略状态。INSERVICE：使用中。PAUSED：停止。EXECUTING：执行中。
 
@@ -244,7 +244,7 @@ class ScalingPoliciesV2:
 
     @property
     def scaling_policy_type(self):
-        """Gets the scaling_policy_type of this ScalingPoliciesV2.
+        r"""Gets the scaling_policy_type of this ScalingPoliciesV2.
 
         伸缩策略类型：ALARM：告警策略，此时alarm_id有返回，scheduled_policy不会返回。SCHEDULED：定时策略，此时alarm_id不会返回，scheduled_policy有返回，并且recurrence_type、recurrence_value、start_time和end_time不会返回。RECURRENCE：周期策略，此时alarm_id不会返回，scheduled_policy有返回，并且recurrence_type、recurrence_value、start_time和end_time有返回。
 
@@ -255,7 +255,7 @@ class ScalingPoliciesV2:
 
     @scaling_policy_type.setter
     def scaling_policy_type(self, scaling_policy_type):
-        """Sets the scaling_policy_type of this ScalingPoliciesV2.
+        r"""Sets the scaling_policy_type of this ScalingPoliciesV2.
 
         伸缩策略类型：ALARM：告警策略，此时alarm_id有返回，scheduled_policy不会返回。SCHEDULED：定时策略，此时alarm_id不会返回，scheduled_policy有返回，并且recurrence_type、recurrence_value、start_time和end_time不会返回。RECURRENCE：周期策略，此时alarm_id不会返回，scheduled_policy有返回，并且recurrence_type、recurrence_value、start_time和end_time有返回。
 
@@ -266,7 +266,7 @@ class ScalingPoliciesV2:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this ScalingPoliciesV2.
+        r"""Gets the alarm_id of this ScalingPoliciesV2.
 
         告警ID。
 
@@ -277,7 +277,7 @@ class ScalingPoliciesV2:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this ScalingPoliciesV2.
+        r"""Sets the alarm_id of this ScalingPoliciesV2.
 
         告警ID。
 
@@ -288,7 +288,7 @@ class ScalingPoliciesV2:
 
     @property
     def scheduled_policy(self):
-        """Gets the scheduled_policy of this ScalingPoliciesV2.
+        r"""Gets the scheduled_policy of this ScalingPoliciesV2.
 
         :return: The scheduled_policy of this ScalingPoliciesV2.
         :rtype: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
@@ -297,7 +297,7 @@ class ScalingPoliciesV2:
 
     @scheduled_policy.setter
     def scheduled_policy(self, scheduled_policy):
-        """Sets the scheduled_policy of this ScalingPoliciesV2.
+        r"""Sets the scheduled_policy of this ScalingPoliciesV2.
 
         :param scheduled_policy: The scheduled_policy of this ScalingPoliciesV2.
         :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
@@ -306,7 +306,7 @@ class ScalingPoliciesV2:
 
     @property
     def scaling_policy_action(self):
-        """Gets the scaling_policy_action of this ScalingPoliciesV2.
+        r"""Gets the scaling_policy_action of this ScalingPoliciesV2.
 
         :return: The scaling_policy_action of this ScalingPoliciesV2.
         :rtype: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV2`
@@ -315,7 +315,7 @@ class ScalingPoliciesV2:
 
     @scaling_policy_action.setter
     def scaling_policy_action(self, scaling_policy_action):
-        """Sets the scaling_policy_action of this ScalingPoliciesV2.
+        r"""Sets the scaling_policy_action of this ScalingPoliciesV2.
 
         :param scaling_policy_action: The scaling_policy_action of this ScalingPoliciesV2.
         :type scaling_policy_action: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV2`
@@ -324,7 +324,7 @@ class ScalingPoliciesV2:
 
     @property
     def interval_alarm_actions(self):
-        """Gets the interval_alarm_actions of this ScalingPoliciesV2.
+        r"""Gets the interval_alarm_actions of this ScalingPoliciesV2.
 
         :return: The interval_alarm_actions of this ScalingPoliciesV2.
         :rtype: list[:class:`huaweicloudsdkas.v1.IntervalAlarmActionsV2`]
@@ -333,7 +333,7 @@ class ScalingPoliciesV2:
 
     @interval_alarm_actions.setter
     def interval_alarm_actions(self, interval_alarm_actions):
-        """Sets the interval_alarm_actions of this ScalingPoliciesV2.
+        r"""Sets the interval_alarm_actions of this ScalingPoliciesV2.
 
         :param interval_alarm_actions: The interval_alarm_actions of this ScalingPoliciesV2.
         :type interval_alarm_actions: list[:class:`huaweicloudsdkas.v1.IntervalAlarmActionsV2`]
@@ -342,7 +342,7 @@ class ScalingPoliciesV2:
 
     @property
     def cool_down_time(self):
-        """Gets the cool_down_time of this ScalingPoliciesV2.
+        r"""Gets the cool_down_time of this ScalingPoliciesV2.
 
         冷却时间，取值范围0-86400，默认为300，单位是秒。
 
@@ -353,7 +353,7 @@ class ScalingPoliciesV2:
 
     @cool_down_time.setter
     def cool_down_time(self, cool_down_time):
-        """Sets the cool_down_time of this ScalingPoliciesV2.
+        r"""Sets the cool_down_time of this ScalingPoliciesV2.
 
         冷却时间，取值范围0-86400，默认为300，单位是秒。
 
@@ -364,7 +364,7 @@ class ScalingPoliciesV2:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ScalingPoliciesV2.
+        r"""Gets the create_time of this ScalingPoliciesV2.
 
         创建伸缩策略时间，遵循UTC时间
 
@@ -375,7 +375,7 @@ class ScalingPoliciesV2:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ScalingPoliciesV2.
+        r"""Sets the create_time of this ScalingPoliciesV2.
 
         创建伸缩策略时间，遵循UTC时间
 
@@ -386,7 +386,7 @@ class ScalingPoliciesV2:
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ScalingPoliciesV2.
+        r"""Gets the meta_data of this ScalingPoliciesV2.
 
         :return: The meta_data of this ScalingPoliciesV2.
         :rtype: :class:`huaweicloudsdkas.v1.ScalingPolicyV2MetaData`
@@ -395,7 +395,7 @@ class ScalingPoliciesV2:
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ScalingPoliciesV2.
+        r"""Sets the meta_data of this ScalingPoliciesV2.
 
         :param meta_data: The meta_data of this ScalingPoliciesV2.
         :type meta_data: :class:`huaweicloudsdkas.v1.ScalingPolicyV2MetaData`
@@ -404,7 +404,7 @@ class ScalingPoliciesV2:
 
     @property
     def description(self):
-        """Gets the description of this ScalingPoliciesV2.
+        r"""Gets the description of this ScalingPoliciesV2.
 
         伸缩策略描述（1-256个字符）
 
@@ -415,7 +415,7 @@ class ScalingPoliciesV2:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ScalingPoliciesV2.
+        r"""Sets the description of this ScalingPoliciesV2.
 
         伸缩策略描述（1-256个字符）
 

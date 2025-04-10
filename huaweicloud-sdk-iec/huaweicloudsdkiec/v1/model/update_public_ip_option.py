@@ -25,7 +25,7 @@ class UpdatePublicIpOption:
     }
 
     def __init__(self, port_id=None):
-        """UpdatePublicIpOption
+        r"""UpdatePublicIpOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdatePublicIpOption:
 
     @property
     def port_id(self):
-        """Gets the port_id of this UpdatePublicIpOption.
+        r"""Gets the port_id of this UpdatePublicIpOption.
 
         vip对应的port的ID可为空。当为空的时候，代表解绑原有eip的关系。不为空时，代表绑定eip和vip。
 
@@ -53,7 +53,7 @@ class UpdatePublicIpOption:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this UpdatePublicIpOption.
+        r"""Sets the port_id of this UpdatePublicIpOption.
 
         vip对应的port的ID可为空。当为空的时候，代表解绑原有eip的关系。不为空时，代表绑定eip和vip。
 

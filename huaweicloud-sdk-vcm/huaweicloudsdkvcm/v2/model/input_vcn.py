@@ -31,7 +31,7 @@ class InputVcn:
     }
 
     def __init__(self, ip=None, port=None, username=None, password=None):
-        """InputVcn
+        r"""InputVcn
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class InputVcn:
 
     @property
     def ip(self):
-        """Gets the ip of this InputVcn.
+        r"""Gets the ip of this InputVcn.
 
         vcn服务器的IP地址。
 
@@ -75,7 +75,7 @@ class InputVcn:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this InputVcn.
+        r"""Sets the ip of this InputVcn.
 
         vcn服务器的IP地址。
 
@@ -86,7 +86,7 @@ class InputVcn:
 
     @property
     def port(self):
-        """Gets the port of this InputVcn.
+        r"""Gets the port of this InputVcn.
 
         vcn服务器的端口号。
 
@@ -97,7 +97,7 @@ class InputVcn:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this InputVcn.
+        r"""Sets the port of this InputVcn.
 
         vcn服务器的端口号。
 
@@ -108,7 +108,7 @@ class InputVcn:
 
     @property
     def username(self):
-        """Gets the username of this InputVcn.
+        r"""Gets the username of this InputVcn.
 
         vcn服务器的账号名。
 
@@ -119,7 +119,7 @@ class InputVcn:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this InputVcn.
+        r"""Sets the username of this InputVcn.
 
         vcn服务器的账号名。
 
@@ -130,7 +130,7 @@ class InputVcn:
 
     @property
     def password(self):
-        """Gets the password of this InputVcn.
+        r"""Gets the password of this InputVcn.
 
         vcn服务器与上述账号对应的密码。
 
@@ -141,7 +141,7 @@ class InputVcn:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this InputVcn.
+        r"""Sets the password of this InputVcn.
 
         vcn服务器与上述账号对应的密码。
 

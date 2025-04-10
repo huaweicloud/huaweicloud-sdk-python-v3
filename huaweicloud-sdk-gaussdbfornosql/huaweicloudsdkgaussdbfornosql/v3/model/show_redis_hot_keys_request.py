@@ -29,7 +29,7 @@ class ShowRedisHotKeysRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ShowRedisHotKeysRequest
+        r"""ShowRedisHotKeysRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowRedisHotKeysRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowRedisHotKeysRequest.
+        r"""Gets the instance_id of this ShowRedisHotKeysRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class ShowRedisHotKeysRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowRedisHotKeysRequest.
+        r"""Sets the instance_id of this ShowRedisHotKeysRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class ShowRedisHotKeysRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowRedisHotKeysRequest.
+        r"""Gets the offset of this ShowRedisHotKeysRequest.
 
         索引位置偏移量，表示从指定offset条数据后查询对应的实例信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
@@ -89,7 +89,7 @@ class ShowRedisHotKeysRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowRedisHotKeysRequest.
+        r"""Sets the offset of this ShowRedisHotKeysRequest.
 
         索引位置偏移量，表示从指定offset条数据后查询对应的实例信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
@@ -100,7 +100,7 @@ class ShowRedisHotKeysRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowRedisHotKeysRequest.
+        r"""Gets the limit of this ShowRedisHotKeysRequest.
 
         查询数据的上限值。   - 取值范围：1~50。不传该参数时，默认查询前50条实例信息。
 
@@ -111,7 +111,7 @@ class ShowRedisHotKeysRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowRedisHotKeysRequest.
+        r"""Sets the limit of this ShowRedisHotKeysRequest.
 
         查询数据的上限值。   - 取值范围：1~50。不传该参数时，默认查询前50条实例信息。
 

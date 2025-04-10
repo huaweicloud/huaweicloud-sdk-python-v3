@@ -27,7 +27,7 @@ class ListEdgeSiteMetricsRequest:
     }
 
     def __init__(self, site_id=None, dim=None):
-        """ListEdgeSiteMetricsRequest
+        r"""ListEdgeSiteMetricsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListEdgeSiteMetricsRequest:
 
     @property
     def site_id(self):
-        """Gets the site_id of this ListEdgeSiteMetricsRequest.
+        r"""Gets the site_id of this ListEdgeSiteMetricsRequest.
 
         边缘小站ID
 
@@ -60,7 +60,7 @@ class ListEdgeSiteMetricsRequest:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ListEdgeSiteMetricsRequest.
+        r"""Sets the site_id of this ListEdgeSiteMetricsRequest.
 
         边缘小站ID
 
@@ -71,7 +71,7 @@ class ListEdgeSiteMetricsRequest:
 
     @property
     def dim(self):
-        """Gets the dim of this ListEdgeSiteMetricsRequest.
+        r"""Gets the dim of this ListEdgeSiteMetricsRequest.
 
         指定维度查询 - site_id: 按站点维度，查询站点下计算、存储资源容量信息 - flavor: 按规格维度，查询站点下各flavor的计算资源使用情况 - storage: 按存储维度，查询站点下各存储资源类型的使用情况 - flavor_capacity: 按规格容量维度，查询站点下各规格可发放数量预测 - storage_pool：按存储池维度，查询站点下各存储池的使用情况
 
@@ -82,7 +82,7 @@ class ListEdgeSiteMetricsRequest:
 
     @dim.setter
     def dim(self, dim):
-        """Sets the dim of this ListEdgeSiteMetricsRequest.
+        r"""Sets the dim of this ListEdgeSiteMetricsRequest.
 
         指定维度查询 - site_id: 按站点维度，查询站点下计算、存储资源容量信息 - flavor: 按规格维度，查询站点下各flavor的计算资源使用情况 - storage: 按存储维度，查询站点下各存储资源类型的使用情况 - flavor_capacity: 按规格容量维度，查询站点下各规格可发放数量预测 - storage_pool：按存储池维度，查询站点下各存储池的使用情况
 

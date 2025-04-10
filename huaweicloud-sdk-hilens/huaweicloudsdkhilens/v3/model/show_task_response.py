@@ -52,7 +52,7 @@ class ShowTaskResponse(SdkResponse):
     }
 
     def __init__(self, name=None, timestamp=None, description=None, streams=None, ok_pod_number=None, cur_pod_number=None, sum_pod_number=None, fail_pod_number=None, pending_pod_number=None, task_status=None, task_id=None, user_task_id=None, start_time_info=None, source_usage_estimate=None):
-        """ShowTaskResponse
+        r"""ShowTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowTaskResponse.
+        r"""Gets the name of this ShowTaskResponse.
 
         作业名称
 
@@ -146,7 +146,7 @@ class ShowTaskResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowTaskResponse.
+        r"""Sets the name of this ShowTaskResponse.
 
         作业名称
 
@@ -157,7 +157,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ShowTaskResponse.
+        r"""Gets the timestamp of this ShowTaskResponse.
 
         作业创建时间
 
@@ -168,7 +168,7 @@ class ShowTaskResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowTaskResponse.
+        r"""Sets the timestamp of this ShowTaskResponse.
 
         作业创建时间
 
@@ -179,7 +179,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowTaskResponse.
+        r"""Gets the description of this ShowTaskResponse.
 
         作业描述
 
@@ -190,7 +190,7 @@ class ShowTaskResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowTaskResponse.
+        r"""Sets the description of this ShowTaskResponse.
 
         作业描述
 
@@ -201,7 +201,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def streams(self):
-        """Gets the streams of this ShowTaskResponse.
+        r"""Gets the streams of this ShowTaskResponse.
 
         作业流详情
 
@@ -212,7 +212,7 @@ class ShowTaskResponse(SdkResponse):
 
     @streams.setter
     def streams(self, streams):
-        """Sets the streams of this ShowTaskResponse.
+        r"""Sets the streams of this ShowTaskResponse.
 
         作业流详情
 
@@ -223,7 +223,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def ok_pod_number(self):
-        """Gets the ok_pod_number of this ShowTaskResponse.
+        r"""Gets the ok_pod_number of this ShowTaskResponse.
 
         在实例上运行成功的作业数
 
@@ -234,7 +234,7 @@ class ShowTaskResponse(SdkResponse):
 
     @ok_pod_number.setter
     def ok_pod_number(self, ok_pod_number):
-        """Sets the ok_pod_number of this ShowTaskResponse.
+        r"""Sets the ok_pod_number of this ShowTaskResponse.
 
         在实例上运行成功的作业数
 
@@ -245,7 +245,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def cur_pod_number(self):
-        """Gets the cur_pod_number of this ShowTaskResponse.
+        r"""Gets the cur_pod_number of this ShowTaskResponse.
 
         在实例上正在运行的作业数
 
@@ -256,7 +256,7 @@ class ShowTaskResponse(SdkResponse):
 
     @cur_pod_number.setter
     def cur_pod_number(self, cur_pod_number):
-        """Sets the cur_pod_number of this ShowTaskResponse.
+        r"""Sets the cur_pod_number of this ShowTaskResponse.
 
         在实例上正在运行的作业数
 
@@ -267,7 +267,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def sum_pod_number(self):
-        """Gets the sum_pod_number of this ShowTaskResponse.
+        r"""Gets the sum_pod_number of this ShowTaskResponse.
 
         在实例上运行过的作业总数
 
@@ -278,7 +278,7 @@ class ShowTaskResponse(SdkResponse):
 
     @sum_pod_number.setter
     def sum_pod_number(self, sum_pod_number):
-        """Sets the sum_pod_number of this ShowTaskResponse.
+        r"""Sets the sum_pod_number of this ShowTaskResponse.
 
         在实例上运行过的作业总数
 
@@ -289,7 +289,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def fail_pod_number(self):
-        """Gets the fail_pod_number of this ShowTaskResponse.
+        r"""Gets the fail_pod_number of this ShowTaskResponse.
 
         在实例上运行失败的作业数
 
@@ -300,7 +300,7 @@ class ShowTaskResponse(SdkResponse):
 
     @fail_pod_number.setter
     def fail_pod_number(self, fail_pod_number):
-        """Sets the fail_pod_number of this ShowTaskResponse.
+        r"""Sets the fail_pod_number of this ShowTaskResponse.
 
         在实例上运行失败的作业数
 
@@ -311,7 +311,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def pending_pod_number(self):
-        """Gets the pending_pod_number of this ShowTaskResponse.
+        r"""Gets the pending_pod_number of this ShowTaskResponse.
 
         在实例上等待运行的作业数
 
@@ -322,7 +322,7 @@ class ShowTaskResponse(SdkResponse):
 
     @pending_pod_number.setter
     def pending_pod_number(self, pending_pod_number):
-        """Sets the pending_pod_number of this ShowTaskResponse.
+        r"""Sets the pending_pod_number of this ShowTaskResponse.
 
         在实例上等待运行的作业数
 
@@ -333,7 +333,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def task_status(self):
-        """Gets the task_status of this ShowTaskResponse.
+        r"""Gets the task_status of this ShowTaskResponse.
 
         作业状态信息
 
@@ -344,7 +344,7 @@ class ShowTaskResponse(SdkResponse):
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ShowTaskResponse.
+        r"""Sets the task_status of this ShowTaskResponse.
 
         作业状态信息
 
@@ -355,7 +355,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTaskResponse.
+        r"""Gets the task_id of this ShowTaskResponse.
 
         作业id
 
@@ -366,7 +366,7 @@ class ShowTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTaskResponse.
+        r"""Sets the task_id of this ShowTaskResponse.
 
         作业id
 
@@ -377,7 +377,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def user_task_id(self):
-        """Gets the user_task_id of this ShowTaskResponse.
+        r"""Gets the user_task_id of this ShowTaskResponse.
 
         用户作业id
 
@@ -388,7 +388,7 @@ class ShowTaskResponse(SdkResponse):
 
     @user_task_id.setter
     def user_task_id(self, user_task_id):
-        """Sets the user_task_id of this ShowTaskResponse.
+        r"""Sets the user_task_id of this ShowTaskResponse.
 
         用户作业id
 
@@ -399,7 +399,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def start_time_info(self):
-        """Gets the start_time_info of this ShowTaskResponse.
+        r"""Gets the start_time_info of this ShowTaskResponse.
 
         :return: The start_time_info of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdkhilens.v3.StartTimeInfo`
@@ -408,7 +408,7 @@ class ShowTaskResponse(SdkResponse):
 
     @start_time_info.setter
     def start_time_info(self, start_time_info):
-        """Sets the start_time_info of this ShowTaskResponse.
+        r"""Sets the start_time_info of this ShowTaskResponse.
 
         :param start_time_info: The start_time_info of this ShowTaskResponse.
         :type start_time_info: :class:`huaweicloudsdkhilens.v3.StartTimeInfo`
@@ -417,7 +417,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def source_usage_estimate(self):
-        """Gets the source_usage_estimate of this ShowTaskResponse.
+        r"""Gets the source_usage_estimate of this ShowTaskResponse.
 
         :return: The source_usage_estimate of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdkhilens.v3.TaskSourceUsageEstimate`
@@ -426,7 +426,7 @@ class ShowTaskResponse(SdkResponse):
 
     @source_usage_estimate.setter
     def source_usage_estimate(self, source_usage_estimate):
-        """Sets the source_usage_estimate of this ShowTaskResponse.
+        r"""Sets the source_usage_estimate of this ShowTaskResponse.
 
         :param source_usage_estimate: The source_usage_estimate of this ShowTaskResponse.
         :type source_usage_estimate: :class:`huaweicloudsdkhilens.v3.TaskSourceUsageEstimate`

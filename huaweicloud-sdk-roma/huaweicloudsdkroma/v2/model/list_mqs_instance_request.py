@@ -25,7 +25,7 @@ class ListMqsInstanceRequest:
     }
 
     def __init__(self, include_internal=None):
-        """ListMqsInstanceRequest
+        r"""ListMqsInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListMqsInstanceRequest:
 
     @property
     def include_internal(self):
-        """Gets the include_internal of this ListMqsInstanceRequest.
+        r"""Gets the include_internal of this ListMqsInstanceRequest.
 
         是否包含内部的实例。include_internal参数必须为true。
 
@@ -53,7 +53,7 @@ class ListMqsInstanceRequest:
 
     @include_internal.setter
     def include_internal(self, include_internal):
-        """Sets the include_internal of this ListMqsInstanceRequest.
+        r"""Sets the include_internal of this ListMqsInstanceRequest.
 
         是否包含内部的实例。include_internal参数必须为true。
 

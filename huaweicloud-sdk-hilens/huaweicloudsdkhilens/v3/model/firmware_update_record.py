@@ -33,7 +33,7 @@ class FirmwareUpdateRecord:
     }
 
     def __init__(self, firmware_name=None, firmware_version=None, firmware_size=None, firmware_upgrade_time=None, status=None):
-        """FirmwareUpdateRecord
+        r"""FirmwareUpdateRecord
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class FirmwareUpdateRecord:
 
     @property
     def firmware_name(self):
-        """Gets the firmware_name of this FirmwareUpdateRecord.
+        r"""Gets the firmware_name of this FirmwareUpdateRecord.
 
         固件名称
 
@@ -82,7 +82,7 @@ class FirmwareUpdateRecord:
 
     @firmware_name.setter
     def firmware_name(self, firmware_name):
-        """Sets the firmware_name of this FirmwareUpdateRecord.
+        r"""Sets the firmware_name of this FirmwareUpdateRecord.
 
         固件名称
 
@@ -93,7 +93,7 @@ class FirmwareUpdateRecord:
 
     @property
     def firmware_version(self):
-        """Gets the firmware_version of this FirmwareUpdateRecord.
+        r"""Gets the firmware_version of this FirmwareUpdateRecord.
 
         固件版本
 
@@ -104,7 +104,7 @@ class FirmwareUpdateRecord:
 
     @firmware_version.setter
     def firmware_version(self, firmware_version):
-        """Sets the firmware_version of this FirmwareUpdateRecord.
+        r"""Sets the firmware_version of this FirmwareUpdateRecord.
 
         固件版本
 
@@ -115,7 +115,7 @@ class FirmwareUpdateRecord:
 
     @property
     def firmware_size(self):
-        """Gets the firmware_size of this FirmwareUpdateRecord.
+        r"""Gets the firmware_size of this FirmwareUpdateRecord.
 
         固件大小
 
@@ -126,7 +126,7 @@ class FirmwareUpdateRecord:
 
     @firmware_size.setter
     def firmware_size(self, firmware_size):
-        """Sets the firmware_size of this FirmwareUpdateRecord.
+        r"""Sets the firmware_size of this FirmwareUpdateRecord.
 
         固件大小
 
@@ -137,7 +137,7 @@ class FirmwareUpdateRecord:
 
     @property
     def firmware_upgrade_time(self):
-        """Gets the firmware_upgrade_time of this FirmwareUpdateRecord.
+        r"""Gets the firmware_upgrade_time of this FirmwareUpdateRecord.
 
         固件升级时间
 
@@ -148,7 +148,7 @@ class FirmwareUpdateRecord:
 
     @firmware_upgrade_time.setter
     def firmware_upgrade_time(self, firmware_upgrade_time):
-        """Sets the firmware_upgrade_time of this FirmwareUpdateRecord.
+        r"""Sets the firmware_upgrade_time of this FirmwareUpdateRecord.
 
         固件升级时间
 
@@ -159,7 +159,7 @@ class FirmwareUpdateRecord:
 
     @property
     def status(self):
-        """Gets the status of this FirmwareUpdateRecord.
+        r"""Gets the status of this FirmwareUpdateRecord.
 
         固件升级状态
 
@@ -170,7 +170,7 @@ class FirmwareUpdateRecord:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FirmwareUpdateRecord.
+        r"""Sets the status of this FirmwareUpdateRecord.
 
         固件升级状态
 

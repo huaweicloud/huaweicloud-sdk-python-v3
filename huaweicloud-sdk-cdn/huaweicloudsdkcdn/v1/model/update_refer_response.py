@@ -28,7 +28,7 @@ class UpdateReferResponse(SdkResponse):
     }
 
     def __init__(self, referer=None, x_request_id=None):
-        """UpdateReferResponse
+        r"""UpdateReferResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateReferResponse(SdkResponse):
 
     @property
     def referer(self):
-        """Gets the referer of this UpdateReferResponse.
+        r"""Gets the referer of this UpdateReferResponse.
 
         :return: The referer of this UpdateReferResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.RefererRsp`
@@ -60,7 +60,7 @@ class UpdateReferResponse(SdkResponse):
 
     @referer.setter
     def referer(self, referer):
-        """Sets the referer of this UpdateReferResponse.
+        r"""Sets the referer of this UpdateReferResponse.
 
         :param referer: The referer of this UpdateReferResponse.
         :type referer: :class:`huaweicloudsdkcdn.v1.RefererRsp`
@@ -69,7 +69,7 @@ class UpdateReferResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateReferResponse.
+        r"""Gets the x_request_id of this UpdateReferResponse.
 
         :return: The x_request_id of this UpdateReferResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class UpdateReferResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateReferResponse.
+        r"""Sets the x_request_id of this UpdateReferResponse.
 
         :param x_request_id: The x_request_id of this UpdateReferResponse.
         :type x_request_id: str

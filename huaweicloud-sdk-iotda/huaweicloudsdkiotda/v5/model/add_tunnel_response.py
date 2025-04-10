@@ -33,7 +33,7 @@ class AddTunnelResponse(SdkResponse):
     }
 
     def __init__(self, tunnel_id=None, tunnel_access_token=None, expires_in=None, tunnel_uri=None):
-        """AddTunnelResponse
+        r"""AddTunnelResponse
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class AddTunnelResponse(SdkResponse):
 
     @property
     def tunnel_id(self):
-        """Gets the tunnel_id of this AddTunnelResponse.
+        r"""Gets the tunnel_id of this AddTunnelResponse.
 
         隧道ID
 
@@ -77,7 +77,7 @@ class AddTunnelResponse(SdkResponse):
 
     @tunnel_id.setter
     def tunnel_id(self, tunnel_id):
-        """Sets the tunnel_id of this AddTunnelResponse.
+        r"""Sets the tunnel_id of this AddTunnelResponse.
 
         隧道ID
 
@@ -88,7 +88,7 @@ class AddTunnelResponse(SdkResponse):
 
     @property
     def tunnel_access_token(self):
-        """Gets the tunnel_access_token of this AddTunnelResponse.
+        r"""Gets the tunnel_access_token of this AddTunnelResponse.
 
         鉴权信息
 
@@ -99,7 +99,7 @@ class AddTunnelResponse(SdkResponse):
 
     @tunnel_access_token.setter
     def tunnel_access_token(self, tunnel_access_token):
-        """Sets the tunnel_access_token of this AddTunnelResponse.
+        r"""Sets the tunnel_access_token of this AddTunnelResponse.
 
         鉴权信息
 
@@ -110,7 +110,7 @@ class AddTunnelResponse(SdkResponse):
 
     @property
     def expires_in(self):
-        """Gets the expires_in of this AddTunnelResponse.
+        r"""Gets the expires_in of this AddTunnelResponse.
 
         鉴权信息的过期时间, 单位：秒
 
@@ -121,7 +121,7 @@ class AddTunnelResponse(SdkResponse):
 
     @expires_in.setter
     def expires_in(self, expires_in):
-        """Sets the expires_in of this AddTunnelResponse.
+        r"""Sets the expires_in of this AddTunnelResponse.
 
         鉴权信息的过期时间, 单位：秒
 
@@ -132,7 +132,7 @@ class AddTunnelResponse(SdkResponse):
 
     @property
     def tunnel_uri(self):
-        """Gets the tunnel_uri of this AddTunnelResponse.
+        r"""Gets the tunnel_uri of this AddTunnelResponse.
 
         websocket接入地址
 
@@ -143,7 +143,7 @@ class AddTunnelResponse(SdkResponse):
 
     @tunnel_uri.setter
     def tunnel_uri(self, tunnel_uri):
-        """Sets the tunnel_uri of this AddTunnelResponse.
+        r"""Sets the tunnel_uri of this AddTunnelResponse.
 
         websocket接入地址
 

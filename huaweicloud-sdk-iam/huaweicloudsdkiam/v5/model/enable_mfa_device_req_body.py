@@ -31,7 +31,7 @@ class EnableMfaDeviceReqBody:
     }
 
     def __init__(self, user_id=None, serial_number=None, authentication_code_first=None, authentication_code_second=None):
-        """EnableMfaDeviceReqBody
+        r"""EnableMfaDeviceReqBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class EnableMfaDeviceReqBody:
 
     @property
     def user_id(self):
-        """Gets the user_id of this EnableMfaDeviceReqBody.
+        r"""Gets the user_id of this EnableMfaDeviceReqBody.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -71,7 +71,7 @@ class EnableMfaDeviceReqBody:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this EnableMfaDeviceReqBody.
+        r"""Sets the user_id of this EnableMfaDeviceReqBody.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -82,7 +82,7 @@ class EnableMfaDeviceReqBody:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this EnableMfaDeviceReqBody.
+        r"""Gets the serial_number of this EnableMfaDeviceReqBody.
 
         MFA设备序列号。
 
@@ -93,7 +93,7 @@ class EnableMfaDeviceReqBody:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this EnableMfaDeviceReqBody.
+        r"""Sets the serial_number of this EnableMfaDeviceReqBody.
 
         MFA设备序列号。
 
@@ -104,7 +104,7 @@ class EnableMfaDeviceReqBody:
 
     @property
     def authentication_code_first(self):
-        """Gets the authentication_code_first of this EnableMfaDeviceReqBody.
+        r"""Gets the authentication_code_first of this EnableMfaDeviceReqBody.
 
         设备发出的验证码。
 
@@ -115,7 +115,7 @@ class EnableMfaDeviceReqBody:
 
     @authentication_code_first.setter
     def authentication_code_first(self, authentication_code_first):
-        """Sets the authentication_code_first of this EnableMfaDeviceReqBody.
+        r"""Sets the authentication_code_first of this EnableMfaDeviceReqBody.
 
         设备发出的验证码。
 
@@ -126,7 +126,7 @@ class EnableMfaDeviceReqBody:
 
     @property
     def authentication_code_second(self):
-        """Gets the authentication_code_second of this EnableMfaDeviceReqBody.
+        r"""Gets the authentication_code_second of this EnableMfaDeviceReqBody.
 
         设备发出的后续验证码。
 
@@ -137,7 +137,7 @@ class EnableMfaDeviceReqBody:
 
     @authentication_code_second.setter
     def authentication_code_second(self, authentication_code_second):
-        """Sets the authentication_code_second of this EnableMfaDeviceReqBody.
+        r"""Sets the authentication_code_second of this EnableMfaDeviceReqBody.
 
         设备发出的后续验证码。
 

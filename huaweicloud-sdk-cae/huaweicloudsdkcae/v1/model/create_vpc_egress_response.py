@@ -30,7 +30,7 @@ class CreateVpcEgressResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """CreateVpcEgressResponse
+        r"""CreateVpcEgressResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateVpcEgressResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateVpcEgressResponse.
+        r"""Gets the api_version of this CreateVpcEgressResponse.
 
         :return: The api_version of this CreateVpcEgressResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class CreateVpcEgressResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateVpcEgressResponse.
+        r"""Sets the api_version of this CreateVpcEgressResponse.
 
         :param api_version: The api_version of this CreateVpcEgressResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class CreateVpcEgressResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this CreateVpcEgressResponse.
+        r"""Gets the kind of this CreateVpcEgressResponse.
 
         :return: The kind of this CreateVpcEgressResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.VpcEgressKindObj`
@@ -85,7 +85,7 @@ class CreateVpcEgressResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateVpcEgressResponse.
+        r"""Sets the kind of this CreateVpcEgressResponse.
 
         :param kind: The kind of this CreateVpcEgressResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.VpcEgressKindObj`
@@ -94,7 +94,7 @@ class CreateVpcEgressResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this CreateVpcEgressResponse.
+        r"""Gets the spec of this CreateVpcEgressResponse.
 
         :return: The spec of this CreateVpcEgressResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.VpcEgressResponseBodySpec`
@@ -103,7 +103,7 @@ class CreateVpcEgressResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CreateVpcEgressResponse.
+        r"""Sets the spec of this CreateVpcEgressResponse.
 
         :param spec: The spec of this CreateVpcEgressResponse.
         :type spec: :class:`huaweicloudsdkcae.v1.VpcEgressResponseBodySpec`

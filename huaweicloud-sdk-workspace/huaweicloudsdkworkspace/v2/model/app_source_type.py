@@ -28,7 +28,7 @@ class AppSourceType:
     }
 
     def __init__(self):
-        """AppSourceType
+        r"""AppSourceType
 
         The model defined in huaweicloud sdk
 

@@ -24,7 +24,7 @@ class AssociateRolesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AssociateRolesResponse
+        r"""AssociateRolesResponse
 
         The model defined in huaweicloud sdk
 

@@ -32,7 +32,7 @@ class ListAuthInfoResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, count=None, auth_infos=None):
-        """ListAuthInfoResponse
+        r"""ListAuthInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListAuthInfoResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListAuthInfoResponse.
+        r"""Gets the is_success of this ListAuthInfoResponse.
 
         是否成功
 
@@ -76,7 +76,7 @@ class ListAuthInfoResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListAuthInfoResponse.
+        r"""Sets the is_success of this ListAuthInfoResponse.
 
         是否成功
 
@@ -87,7 +87,7 @@ class ListAuthInfoResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListAuthInfoResponse.
+        r"""Gets the message of this ListAuthInfoResponse.
 
         请求消息
 
@@ -98,7 +98,7 @@ class ListAuthInfoResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListAuthInfoResponse.
+        r"""Sets the message of this ListAuthInfoResponse.
 
         请求消息
 
@@ -109,7 +109,7 @@ class ListAuthInfoResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAuthInfoResponse.
+        r"""Gets the count of this ListAuthInfoResponse.
 
         认证信息个数
 
@@ -120,7 +120,7 @@ class ListAuthInfoResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAuthInfoResponse.
+        r"""Sets the count of this ListAuthInfoResponse.
 
         认证信息个数
 
@@ -131,7 +131,7 @@ class ListAuthInfoResponse(SdkResponse):
 
     @property
     def auth_infos(self):
-        """Gets the auth_infos of this ListAuthInfoResponse.
+        r"""Gets the auth_infos of this ListAuthInfoResponse.
 
         认证信息列表
 
@@ -142,7 +142,7 @@ class ListAuthInfoResponse(SdkResponse):
 
     @auth_infos.setter
     def auth_infos(self, auth_infos):
-        """Sets the auth_infos of this ListAuthInfoResponse.
+        r"""Sets the auth_infos of this ListAuthInfoResponse.
 
         认证信息列表
 

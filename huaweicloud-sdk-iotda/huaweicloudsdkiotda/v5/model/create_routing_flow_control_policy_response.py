@@ -36,7 +36,7 @@ class CreateRoutingFlowControlPolicyResponse(SdkResponse):
     }
 
     def __init__(self, policy_id=None, policy_name=None, description=None, scope=None, scope_value=None, limit=None):
-        """CreateRoutingFlowControlPolicyResponse
+        r"""CreateRoutingFlowControlPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateRoutingFlowControlPolicyResponse(SdkResponse):
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CreateRoutingFlowControlPolicyResponse.
+        r"""Gets the policy_id of this CreateRoutingFlowControlPolicyResponse.
 
         **参数说明**：数据流转流控策略id，用于唯一标识一个数据流转流控策略，在创建数据流转流控策略时由物联网平台分配获得。
 
@@ -90,7 +90,7 @@ class CreateRoutingFlowControlPolicyResponse(SdkResponse):
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CreateRoutingFlowControlPolicyResponse.
+        r"""Sets the policy_id of this CreateRoutingFlowControlPolicyResponse.
 
         **参数说明**：数据流转流控策略id，用于唯一标识一个数据流转流控策略，在创建数据流转流控策略时由物联网平台分配获得。
 
@@ -101,7 +101,7 @@ class CreateRoutingFlowControlPolicyResponse(SdkResponse):
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this CreateRoutingFlowControlPolicyResponse.
+        r"""Gets the policy_name of this CreateRoutingFlowControlPolicyResponse.
 
         **参数说明**：数据流转流控策略名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -112,7 +112,7 @@ class CreateRoutingFlowControlPolicyResponse(SdkResponse):
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this CreateRoutingFlowControlPolicyResponse.
+        r"""Sets the policy_name of this CreateRoutingFlowControlPolicyResponse.
 
         **参数说明**：数据流转流控策略名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -123,7 +123,7 @@ class CreateRoutingFlowControlPolicyResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateRoutingFlowControlPolicyResponse.
+        r"""Gets the description of this CreateRoutingFlowControlPolicyResponse.
 
         **参数说明**：用户自定义的数据流转流控策略描述。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -134,7 +134,7 @@ class CreateRoutingFlowControlPolicyResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRoutingFlowControlPolicyResponse.
+        r"""Sets the description of this CreateRoutingFlowControlPolicyResponse.
 
         **参数说明**：用户自定义的数据流转流控策略描述。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -145,7 +145,7 @@ class CreateRoutingFlowControlPolicyResponse(SdkResponse):
 
     @property
     def scope(self):
-        """Gets the scope of this CreateRoutingFlowControlPolicyResponse.
+        r"""Gets the scope of this CreateRoutingFlowControlPolicyResponse.
 
         **参数说明**：流控策略作用域. **取值范围**： - USER：租户级流控策略。 - CHANNEL：转发通道级流控策略。 - RULE：转发规则级流控策略。 - ACTION：转发动作级流控策略。
 
@@ -156,7 +156,7 @@ class CreateRoutingFlowControlPolicyResponse(SdkResponse):
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this CreateRoutingFlowControlPolicyResponse.
+        r"""Sets the scope of this CreateRoutingFlowControlPolicyResponse.
 
         **参数说明**：流控策略作用域. **取值范围**： - USER：租户级流控策略。 - CHANNEL：转发通道级流控策略。 - RULE：转发规则级流控策略。 - ACTION：转发动作级流控策略。
 
@@ -167,7 +167,7 @@ class CreateRoutingFlowControlPolicyResponse(SdkResponse):
 
     @property
     def scope_value(self):
-        """Gets the scope_value of this CreateRoutingFlowControlPolicyResponse.
+        r"""Gets the scope_value of this CreateRoutingFlowControlPolicyResponse.
 
         **参数说明**：流控策略作用域附加值。 scope取值为USER时，可不携带该字段，表示租户级流控。 scope取值为CHANNEL时，**取值范围**：HTTP_FORWARDING、DIS_FORWARDING、OBS_FORWARDING、AMQP_FORWARDING、DMS_KAFKA_FORWARDING。 scope取值为RULE时，该字段为对应的ruleId。 scope取值为ACTION时，该字段为对应的actionId。
 
@@ -178,7 +178,7 @@ class CreateRoutingFlowControlPolicyResponse(SdkResponse):
 
     @scope_value.setter
     def scope_value(self, scope_value):
-        """Sets the scope_value of this CreateRoutingFlowControlPolicyResponse.
+        r"""Sets the scope_value of this CreateRoutingFlowControlPolicyResponse.
 
         **参数说明**：流控策略作用域附加值。 scope取值为USER时，可不携带该字段，表示租户级流控。 scope取值为CHANNEL时，**取值范围**：HTTP_FORWARDING、DIS_FORWARDING、OBS_FORWARDING、AMQP_FORWARDING、DMS_KAFKA_FORWARDING。 scope取值为RULE时，该字段为对应的ruleId。 scope取值为ACTION时，该字段为对应的actionId。
 
@@ -189,7 +189,7 @@ class CreateRoutingFlowControlPolicyResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this CreateRoutingFlowControlPolicyResponse.
+        r"""Gets the limit of this CreateRoutingFlowControlPolicyResponse.
 
         **参数说明**：数据转发流控大小。单位为tps，取值范围为1~1000的整数，默认为1000.
 
@@ -200,7 +200,7 @@ class CreateRoutingFlowControlPolicyResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this CreateRoutingFlowControlPolicyResponse.
+        r"""Sets the limit of this CreateRoutingFlowControlPolicyResponse.
 
         **参数说明**：数据转发流控大小。单位为tps，取值范围为1~1000的整数，默认为1000.
 

@@ -25,7 +25,7 @@ class ListDesignDataLayersResultData:
     }
 
     def __init__(self, value=None):
-        """ListDesignDataLayersResultData
+        r"""ListDesignDataLayersResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListDesignDataLayersResultData:
 
     @property
     def value(self):
-        """Gets the value of this ListDesignDataLayersResultData.
+        r"""Gets the value of this ListDesignDataLayersResultData.
 
         数仓分层数组。
 
@@ -54,7 +54,7 @@ class ListDesignDataLayersResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListDesignDataLayersResultData.
+        r"""Sets the value of this ListDesignDataLayersResultData.
 
         数仓分层数组。
 

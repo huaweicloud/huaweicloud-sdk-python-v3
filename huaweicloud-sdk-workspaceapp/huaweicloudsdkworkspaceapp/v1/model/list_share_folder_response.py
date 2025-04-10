@@ -28,7 +28,7 @@ class ListShareFolderResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None):
-        """ListShareFolderResponse
+        r"""ListShareFolderResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListShareFolderResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListShareFolderResponse.
+        r"""Gets the count of this ListShareFolderResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListShareFolderResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListShareFolderResponse.
+        r"""Sets the count of this ListShareFolderResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListShareFolderResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListShareFolderResponse.
+        r"""Gets the items of this ListShareFolderResponse.
 
         存储声明。
 
@@ -84,7 +84,7 @@ class ListShareFolderResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListShareFolderResponse.
+        r"""Sets the items of this ListShareFolderResponse.
 
         存储声明。
 

@@ -27,7 +27,7 @@ class CreateGcbResourceTagRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """CreateGcbResourceTagRequest
+        r"""CreateGcbResourceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateGcbResourceTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateGcbResourceTagRequest.
+        r"""Gets the resource_id of this CreateGcbResourceTagRequest.
 
         资源唯一标识符。
 
@@ -60,7 +60,7 @@ class CreateGcbResourceTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateGcbResourceTagRequest.
+        r"""Sets the resource_id of this CreateGcbResourceTagRequest.
 
         资源唯一标识符。
 
@@ -71,7 +71,7 @@ class CreateGcbResourceTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGcbResourceTagRequest.
+        r"""Gets the body of this CreateGcbResourceTagRequest.
 
         :return: The body of this CreateGcbResourceTagRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.CreateGcbTagRequestBody`
@@ -80,7 +80,7 @@ class CreateGcbResourceTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGcbResourceTagRequest.
+        r"""Sets the body of this CreateGcbResourceTagRequest.
 
         :param body: The body of this CreateGcbResourceTagRequest.
         :type body: :class:`huaweicloudsdkcc.v3.CreateGcbTagRequestBody`

@@ -27,7 +27,7 @@ class ImageJobExecuteInfo:
     }
 
     def __init__(self, error_code=None, error_message=None):
-        """ImageJobExecuteInfo
+        r"""ImageJobExecuteInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImageJobExecuteInfo:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ImageJobExecuteInfo.
+        r"""Gets the error_code of this ImageJobExecuteInfo.
 
         任务执行失败时的错误码。
 
@@ -61,7 +61,7 @@ class ImageJobExecuteInfo:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ImageJobExecuteInfo.
+        r"""Sets the error_code of this ImageJobExecuteInfo.
 
         任务执行失败时的错误码。
 
@@ -72,7 +72,7 @@ class ImageJobExecuteInfo:
 
     @property
     def error_message(self):
-        """Gets the error_message of this ImageJobExecuteInfo.
+        r"""Gets the error_message of this ImageJobExecuteInfo.
 
         任务失败原因。
 
@@ -83,7 +83,7 @@ class ImageJobExecuteInfo:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ImageJobExecuteInfo.
+        r"""Sets the error_message of this ImageJobExecuteInfo.
 
         任务失败原因。
 

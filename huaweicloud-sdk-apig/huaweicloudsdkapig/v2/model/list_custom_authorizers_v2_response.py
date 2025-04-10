@@ -30,7 +30,7 @@ class ListCustomAuthorizersV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, authorizer_list=None):
-        """ListCustomAuthorizersV2Response
+        r"""ListCustomAuthorizersV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListCustomAuthorizersV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListCustomAuthorizersV2Response.
+        r"""Gets the size of this ListCustomAuthorizersV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListCustomAuthorizersV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListCustomAuthorizersV2Response.
+        r"""Sets the size of this ListCustomAuthorizersV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListCustomAuthorizersV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListCustomAuthorizersV2Response.
+        r"""Gets the total of this ListCustomAuthorizersV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListCustomAuthorizersV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListCustomAuthorizersV2Response.
+        r"""Sets the total of this ListCustomAuthorizersV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListCustomAuthorizersV2Response(SdkResponse):
 
     @property
     def authorizer_list(self):
-        """Gets the authorizer_list of this ListCustomAuthorizersV2Response.
+        r"""Gets the authorizer_list of this ListCustomAuthorizersV2Response.
 
         自定义认证列表
 
@@ -111,7 +111,7 @@ class ListCustomAuthorizersV2Response(SdkResponse):
 
     @authorizer_list.setter
     def authorizer_list(self, authorizer_list):
-        """Sets the authorizer_list of this ListCustomAuthorizersV2Response.
+        r"""Sets the authorizer_list of this ListCustomAuthorizersV2Response.
 
         自定义认证列表
 

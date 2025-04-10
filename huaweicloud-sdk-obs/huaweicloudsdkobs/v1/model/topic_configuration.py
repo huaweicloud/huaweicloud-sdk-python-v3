@@ -33,7 +33,7 @@ class TopicConfiguration:
     }
 
     def __init__(self, id=None, filter=None, topic=None, event=None):
-        """TopicConfiguration
+        r"""TopicConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class TopicConfiguration:
 
     @property
     def id(self):
-        """Gets the id of this TopicConfiguration.
+        r"""Gets the id of this TopicConfiguration.
 
         Unique ID of each event notification. If you do not specify an ID, the system assigns one.
 
@@ -77,7 +77,7 @@ class TopicConfiguration:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TopicConfiguration.
+        r"""Sets the id of this TopicConfiguration.
 
         Unique ID of each event notification. If you do not specify an ID, the system assigns one.
 
@@ -88,7 +88,7 @@ class TopicConfiguration:
 
     @property
     def filter(self):
-        """Gets the filter of this TopicConfiguration.
+        r"""Gets the filter of this TopicConfiguration.
 
         :return: The filter of this TopicConfiguration.
         :rtype: :class:`huaweicloudsdkobs.v1.TopicConfigurationFilter`
@@ -97,7 +97,7 @@ class TopicConfiguration:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this TopicConfiguration.
+        r"""Sets the filter of this TopicConfiguration.
 
         :param filter: The filter of this TopicConfiguration.
         :type filter: :class:`huaweicloudsdkobs.v1.TopicConfigurationFilter`
@@ -106,7 +106,7 @@ class TopicConfiguration:
 
     @property
     def topic(self):
-        """Gets the topic of this TopicConfiguration.
+        r"""Gets the topic of this TopicConfiguration.
 
         URN of the event notification topic. When OBS detects a specific event in a bucket, it publishes a notification message to this topic. You can find the topic's URN on the [Topics](https://console-intl.huaweicloud.com/smn/?agencyId=7b00025342f14bcabb245478269c6593&region=cn-east-3&locale=en-us#/topics/list) page of the SMN console. Template: <Topic>urn:smn:region:project_id:smn_topic</Topic>
 
@@ -117,7 +117,7 @@ class TopicConfiguration:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this TopicConfiguration.
+        r"""Sets the topic of this TopicConfiguration.
 
         URN of the event notification topic. When OBS detects a specific event in a bucket, it publishes a notification message to this topic. You can find the topic's URN on the [Topics](https://console-intl.huaweicloud.com/smn/?agencyId=7b00025342f14bcabb245478269c6593&region=cn-east-3&locale=en-us#/topics/list) page of the SMN console. Template: <Topic>urn:smn:region:project_id:smn_topic</Topic>
 
@@ -128,7 +128,7 @@ class TopicConfiguration:
 
     @property
     def event(self):
-        """Gets the event of this TopicConfiguration.
+        r"""Gets the event of this TopicConfiguration.
 
         Event types for which OBS sends notifications. Multiple event types can be added in one **TopicConfiguration** or **FunctionGraphConfiguration** item. Value options: Choose from the following for object upload operations: ObjectCreated:Put ObjectCreated:Post ObjectCreated:Copy ObjectCreated:CompleteMultipartUpload  Or use a wildcard character to support all upload operations: ObjectCreated:*  Choose from the following for object delete operations: ObjectRemoved:Delete ObjectRemoved:DeleteMarkerCreated  Or use a wildcard character to support all delete operations: ObjectRemoved:*
 
@@ -139,7 +139,7 @@ class TopicConfiguration:
 
     @event.setter
     def event(self, event):
-        """Sets the event of this TopicConfiguration.
+        r"""Sets the event of this TopicConfiguration.
 
         Event types for which OBS sends notifications. Multiple event types can be added in one **TopicConfiguration** or **FunctionGraphConfiguration** item. Value options: Choose from the following for object upload operations: ObjectCreated:Put ObjectCreated:Post ObjectCreated:Copy ObjectCreated:CompleteMultipartUpload  Or use a wildcard character to support all upload operations: ObjectCreated:*  Choose from the following for object delete operations: ObjectRemoved:Delete ObjectRemoved:DeleteMarkerCreated  Or use a wildcard character to support all delete operations: ObjectRemoved:*
 

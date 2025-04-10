@@ -26,7 +26,7 @@ class BatchDeleteInstanceTopicResponse(SdkResponse):
     }
 
     def __init__(self, topics=None):
-        """BatchDeleteInstanceTopicResponse
+        r"""BatchDeleteInstanceTopicResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteInstanceTopicResponse(SdkResponse):
 
     @property
     def topics(self):
-        """Gets the topics of this BatchDeleteInstanceTopicResponse.
+        r"""Gets the topics of this BatchDeleteInstanceTopicResponse.
 
         Topic列表。
 
@@ -55,7 +55,7 @@ class BatchDeleteInstanceTopicResponse(SdkResponse):
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this BatchDeleteInstanceTopicResponse.
+        r"""Sets the topics of this BatchDeleteInstanceTopicResponse.
 
         Topic列表。
 

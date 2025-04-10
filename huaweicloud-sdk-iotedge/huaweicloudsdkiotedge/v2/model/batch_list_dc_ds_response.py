@@ -30,7 +30,7 @@ class BatchListDcDsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, datasources=None):
-        """BatchListDcDsResponse
+        r"""BatchListDcDsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchListDcDsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchListDcDsResponse.
+        r"""Gets the count of this BatchListDcDsResponse.
 
         总记录数
 
@@ -69,7 +69,7 @@ class BatchListDcDsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchListDcDsResponse.
+        r"""Sets the count of this BatchListDcDsResponse.
 
         总记录数
 
@@ -80,7 +80,7 @@ class BatchListDcDsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this BatchListDcDsResponse.
+        r"""Gets the page_info of this BatchListDcDsResponse.
 
         :return: The page_info of this BatchListDcDsResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -89,7 +89,7 @@ class BatchListDcDsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this BatchListDcDsResponse.
+        r"""Sets the page_info of this BatchListDcDsResponse.
 
         :param page_info: The page_info of this BatchListDcDsResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -98,7 +98,7 @@ class BatchListDcDsResponse(SdkResponse):
 
     @property
     def datasources(self):
-        """Gets the datasources of this BatchListDcDsResponse.
+        r"""Gets the datasources of this BatchListDcDsResponse.
 
         每页记录数
 
@@ -109,7 +109,7 @@ class BatchListDcDsResponse(SdkResponse):
 
     @datasources.setter
     def datasources(self, datasources):
-        """Sets the datasources of this BatchListDcDsResponse.
+        r"""Sets the datasources of this BatchListDcDsResponse.
 
         每页记录数
 

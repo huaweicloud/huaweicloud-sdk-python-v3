@@ -30,7 +30,7 @@ class ListFunctionReservedInstancesResponse(SdkResponse):
     }
 
     def __init__(self, reservedinstances=None, page_info=None, count=None):
-        """ListFunctionReservedInstancesResponse
+        r"""ListFunctionReservedInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFunctionReservedInstancesResponse(SdkResponse):
 
     @property
     def reservedinstances(self):
-        """Gets the reservedinstances of this ListFunctionReservedInstancesResponse.
+        r"""Gets the reservedinstances of this ListFunctionReservedInstancesResponse.
 
         函数预留实例列表
 
@@ -69,7 +69,7 @@ class ListFunctionReservedInstancesResponse(SdkResponse):
 
     @reservedinstances.setter
     def reservedinstances(self, reservedinstances):
-        """Sets the reservedinstances of this ListFunctionReservedInstancesResponse.
+        r"""Sets the reservedinstances of this ListFunctionReservedInstancesResponse.
 
         函数预留实例列表
 
@@ -80,7 +80,7 @@ class ListFunctionReservedInstancesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListFunctionReservedInstancesResponse.
+        r"""Gets the page_info of this ListFunctionReservedInstancesResponse.
 
         :return: The page_info of this ListFunctionReservedInstancesResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.PageInfo`
@@ -89,7 +89,7 @@ class ListFunctionReservedInstancesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListFunctionReservedInstancesResponse.
+        r"""Sets the page_info of this ListFunctionReservedInstancesResponse.
 
         :param page_info: The page_info of this ListFunctionReservedInstancesResponse.
         :type page_info: :class:`huaweicloudsdkfunctiongraph.v2.PageInfo`
@@ -98,7 +98,7 @@ class ListFunctionReservedInstancesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListFunctionReservedInstancesResponse.
+        r"""Gets the count of this ListFunctionReservedInstancesResponse.
 
         函数个数
 
@@ -109,7 +109,7 @@ class ListFunctionReservedInstancesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListFunctionReservedInstancesResponse.
+        r"""Sets the count of this ListFunctionReservedInstancesResponse.
 
         函数个数
 

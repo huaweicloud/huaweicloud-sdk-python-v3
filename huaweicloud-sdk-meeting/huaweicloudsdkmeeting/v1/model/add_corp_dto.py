@@ -33,7 +33,7 @@ class AddCorpDTO:
     }
 
     def __init__(self, basic_info=None, admin_info=None, res_info=None, group_id=None, property_info=None):
-        """AddCorpDTO
+        r"""AddCorpDTO
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class AddCorpDTO:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this AddCorpDTO.
+        r"""Gets the basic_info of this AddCorpDTO.
 
         :return: The basic_info of this AddCorpDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CorpBasicDTO`
@@ -78,7 +78,7 @@ class AddCorpDTO:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this AddCorpDTO.
+        r"""Sets the basic_info of this AddCorpDTO.
 
         :param basic_info: The basic_info of this AddCorpDTO.
         :type basic_info: :class:`huaweicloudsdkmeeting.v1.CorpBasicDTO`
@@ -87,7 +87,7 @@ class AddCorpDTO:
 
     @property
     def admin_info(self):
-        """Gets the admin_info of this AddCorpDTO.
+        r"""Gets the admin_info of this AddCorpDTO.
 
         :return: The admin_info of this AddCorpDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.AdminDTO`
@@ -96,7 +96,7 @@ class AddCorpDTO:
 
     @admin_info.setter
     def admin_info(self, admin_info):
-        """Sets the admin_info of this AddCorpDTO.
+        r"""Sets the admin_info of this AddCorpDTO.
 
         :param admin_info: The admin_info of this AddCorpDTO.
         :type admin_info: :class:`huaweicloudsdkmeeting.v1.AdminDTO`
@@ -105,7 +105,7 @@ class AddCorpDTO:
 
     @property
     def res_info(self):
-        """Gets the res_info of this AddCorpDTO.
+        r"""Gets the res_info of this AddCorpDTO.
 
         :return: The res_info of this AddCorpDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddCorpResDTO`
@@ -114,7 +114,7 @@ class AddCorpDTO:
 
     @res_info.setter
     def res_info(self, res_info):
-        """Sets the res_info of this AddCorpDTO.
+        r"""Sets the res_info of this AddCorpDTO.
 
         :param res_info: The res_info of this AddCorpDTO.
         :type res_info: :class:`huaweicloudsdkmeeting.v1.AddCorpResDTO`
@@ -123,7 +123,7 @@ class AddCorpDTO:
 
     @property
     def group_id(self):
-        """Gets the group_id of this AddCorpDTO.
+        r"""Gets the group_id of this AddCorpDTO.
 
         媒体接入（包括SBC和MCU）分组id，可通过[[SP管理员查询资源信息](https://support.huaweicloud.com/api-meeting/meeting_21_1537.html)](tag:hws)[[SP管理员查询资源信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1537.html)](tag:hk)接口查询获取。
 
@@ -134,7 +134,7 @@ class AddCorpDTO:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this AddCorpDTO.
+        r"""Sets the group_id of this AddCorpDTO.
 
         媒体接入（包括SBC和MCU）分组id，可通过[[SP管理员查询资源信息](https://support.huaweicloud.com/api-meeting/meeting_21_1537.html)](tag:hws)[[SP管理员查询资源信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1537.html)](tag:hk)接口查询获取。
 
@@ -145,7 +145,7 @@ class AddCorpDTO:
 
     @property
     def property_info(self):
-        """Gets the property_info of this AddCorpDTO.
+        r"""Gets the property_info of this AddCorpDTO.
 
         可配置项信息。
 
@@ -156,7 +156,7 @@ class AddCorpDTO:
 
     @property_info.setter
     def property_info(self, property_info):
-        """Sets the property_info of this AddCorpDTO.
+        r"""Sets the property_info of this AddCorpDTO.
 
         可配置项信息。
 

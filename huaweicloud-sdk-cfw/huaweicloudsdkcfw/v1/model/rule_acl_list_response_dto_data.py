@@ -33,7 +33,7 @@ class RuleAclListResponseDTOData:
     }
 
     def __init__(self, offset=None, limit=None, total=None, object_id=None, records=None):
-        """RuleAclListResponseDTOData
+        r"""RuleAclListResponseDTOData
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class RuleAclListResponseDTOData:
 
     @property
     def offset(self):
-        """Gets the offset of this RuleAclListResponseDTOData.
+        r"""Gets the offset of this RuleAclListResponseDTOData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -82,7 +82,7 @@ class RuleAclListResponseDTOData:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this RuleAclListResponseDTOData.
+        r"""Sets the offset of this RuleAclListResponseDTOData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -93,7 +93,7 @@ class RuleAclListResponseDTOData:
 
     @property
     def limit(self):
-        """Gets the limit of this RuleAclListResponseDTOData.
+        r"""Gets the limit of this RuleAclListResponseDTOData.
 
         每页显示个数，范围为1-1024
 
@@ -104,7 +104,7 @@ class RuleAclListResponseDTOData:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this RuleAclListResponseDTOData.
+        r"""Sets the limit of this RuleAclListResponseDTOData.
 
         每页显示个数，范围为1-1024
 
@@ -115,7 +115,7 @@ class RuleAclListResponseDTOData:
 
     @property
     def total(self):
-        """Gets the total of this RuleAclListResponseDTOData.
+        r"""Gets the total of this RuleAclListResponseDTOData.
 
         查询规则列表总条数
 
@@ -126,7 +126,7 @@ class RuleAclListResponseDTOData:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this RuleAclListResponseDTOData.
+        r"""Sets the total of this RuleAclListResponseDTOData.
 
         查询规则列表总条数
 
@@ -137,7 +137,7 @@ class RuleAclListResponseDTOData:
 
     @property
     def object_id(self):
-        """Gets the object_id of this RuleAclListResponseDTOData.
+        r"""Gets the object_id of this RuleAclListResponseDTOData.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
 
@@ -148,7 +148,7 @@ class RuleAclListResponseDTOData:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this RuleAclListResponseDTOData.
+        r"""Sets the object_id of this RuleAclListResponseDTOData.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。
 
@@ -159,7 +159,7 @@ class RuleAclListResponseDTOData:
 
     @property
     def records(self):
-        """Gets the records of this RuleAclListResponseDTOData.
+        r"""Gets the records of this RuleAclListResponseDTOData.
 
         查询规则列表记录
 
@@ -170,7 +170,7 @@ class RuleAclListResponseDTOData:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this RuleAclListResponseDTOData.
+        r"""Sets the records of this RuleAclListResponseDTOData.
 
         查询规则列表记录
 

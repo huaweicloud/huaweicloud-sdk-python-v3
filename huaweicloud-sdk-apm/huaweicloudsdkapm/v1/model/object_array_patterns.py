@@ -37,7 +37,7 @@ class ObjectArrayPatterns:
     }
 
     def __init__(self, key=None, type=None, max_length=None, max_value=None, min_value=None, nullable=None, hint=None):
-        """ObjectArrayPatterns
+        r"""ObjectArrayPatterns
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ObjectArrayPatterns:
 
     @property
     def key(self):
-        """Gets the key of this ObjectArrayPatterns.
+        r"""Gets the key of this ObjectArrayPatterns.
 
         键
 
@@ -96,7 +96,7 @@ class ObjectArrayPatterns:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ObjectArrayPatterns.
+        r"""Sets the key of this ObjectArrayPatterns.
 
         键
 
@@ -107,7 +107,7 @@ class ObjectArrayPatterns:
 
     @property
     def type(self):
-        """Gets the type of this ObjectArrayPatterns.
+        r"""Gets the type of this ObjectArrayPatterns.
 
         对象类型
 
@@ -118,7 +118,7 @@ class ObjectArrayPatterns:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ObjectArrayPatterns.
+        r"""Sets the type of this ObjectArrayPatterns.
 
         对象类型
 
@@ -129,7 +129,7 @@ class ObjectArrayPatterns:
 
     @property
     def max_length(self):
-        """Gets the max_length of this ObjectArrayPatterns.
+        r"""Gets the max_length of this ObjectArrayPatterns.
 
         最大长度
 
@@ -140,7 +140,7 @@ class ObjectArrayPatterns:
 
     @max_length.setter
     def max_length(self, max_length):
-        """Sets the max_length of this ObjectArrayPatterns.
+        r"""Sets the max_length of this ObjectArrayPatterns.
 
         最大长度
 
@@ -151,7 +151,7 @@ class ObjectArrayPatterns:
 
     @property
     def max_value(self):
-        """Gets the max_value of this ObjectArrayPatterns.
+        r"""Gets the max_value of this ObjectArrayPatterns.
 
         最大值
 
@@ -162,7 +162,7 @@ class ObjectArrayPatterns:
 
     @max_value.setter
     def max_value(self, max_value):
-        """Sets the max_value of this ObjectArrayPatterns.
+        r"""Sets the max_value of this ObjectArrayPatterns.
 
         最大值
 
@@ -173,7 +173,7 @@ class ObjectArrayPatterns:
 
     @property
     def min_value(self):
-        """Gets the min_value of this ObjectArrayPatterns.
+        r"""Gets the min_value of this ObjectArrayPatterns.
 
         最小值
 
@@ -184,7 +184,7 @@ class ObjectArrayPatterns:
 
     @min_value.setter
     def min_value(self, min_value):
-        """Sets the min_value of this ObjectArrayPatterns.
+        r"""Sets the min_value of this ObjectArrayPatterns.
 
         最小值
 
@@ -195,7 +195,7 @@ class ObjectArrayPatterns:
 
     @property
     def nullable(self):
-        """Gets the nullable of this ObjectArrayPatterns.
+        r"""Gets the nullable of this ObjectArrayPatterns.
 
         是否可以为空值
 
@@ -206,7 +206,7 @@ class ObjectArrayPatterns:
 
     @nullable.setter
     def nullable(self, nullable):
-        """Sets the nullable of this ObjectArrayPatterns.
+        r"""Sets the nullable of this ObjectArrayPatterns.
 
         是否可以为空值
 
@@ -217,7 +217,7 @@ class ObjectArrayPatterns:
 
     @property
     def hint(self):
-        """Gets the hint of this ObjectArrayPatterns.
+        r"""Gets the hint of this ObjectArrayPatterns.
 
         提示信息
 
@@ -228,7 +228,7 @@ class ObjectArrayPatterns:
 
     @hint.setter
     def hint(self, hint):
-        """Sets the hint of this ObjectArrayPatterns.
+        r"""Sets the hint of this ObjectArrayPatterns.
 
         提示信息
 

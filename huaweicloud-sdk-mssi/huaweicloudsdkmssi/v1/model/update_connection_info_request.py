@@ -27,7 +27,7 @@ class UpdateConnectionInfoRequest:
     }
 
     def __init__(self, connect_id=None, body=None):
-        """UpdateConnectionInfoRequest
+        r"""UpdateConnectionInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateConnectionInfoRequest:
 
     @property
     def connect_id(self):
-        """Gets the connect_id of this UpdateConnectionInfoRequest.
+        r"""Gets the connect_id of this UpdateConnectionInfoRequest.
 
         ID of Connection
 
@@ -60,7 +60,7 @@ class UpdateConnectionInfoRequest:
 
     @connect_id.setter
     def connect_id(self, connect_id):
-        """Sets the connect_id of this UpdateConnectionInfoRequest.
+        r"""Sets the connect_id of this UpdateConnectionInfoRequest.
 
         ID of Connection
 
@@ -71,7 +71,7 @@ class UpdateConnectionInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateConnectionInfoRequest.
+        r"""Gets the body of this UpdateConnectionInfoRequest.
 
         :return: The body of this UpdateConnectionInfoRequest.
         :rtype: :class:`huaweicloudsdkmssi.v1.ConnectionInfo`
@@ -80,7 +80,7 @@ class UpdateConnectionInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateConnectionInfoRequest.
+        r"""Sets the body of this UpdateConnectionInfoRequest.
 
         :param body: The body of this UpdateConnectionInfoRequest.
         :type body: :class:`huaweicloudsdkmssi.v1.ConnectionInfo`

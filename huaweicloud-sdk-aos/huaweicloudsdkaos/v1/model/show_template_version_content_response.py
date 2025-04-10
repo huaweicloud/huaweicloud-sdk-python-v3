@@ -28,7 +28,7 @@ class ShowTemplateVersionContentResponse(SdkResponse):
     }
 
     def __init__(self, body=None, location=None):
-        """ShowTemplateVersionContentResponse
+        r"""ShowTemplateVersionContentResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTemplateVersionContentResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowTemplateVersionContentResponse.
+        r"""Gets the body of this ShowTemplateVersionContentResponse.
 
         空响应体
 
@@ -62,7 +62,7 @@ class ShowTemplateVersionContentResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowTemplateVersionContentResponse.
+        r"""Sets the body of this ShowTemplateVersionContentResponse.
 
         空响应体
 
@@ -73,7 +73,7 @@ class ShowTemplateVersionContentResponse(SdkResponse):
 
     @property
     def location(self):
-        """Gets the location of this ShowTemplateVersionContentResponse.
+        r"""Gets the location of this ShowTemplateVersionContentResponse.
 
         :return: The location of this ShowTemplateVersionContentResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowTemplateVersionContentResponse(SdkResponse):
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ShowTemplateVersionContentResponse.
+        r"""Sets the location of this ShowTemplateVersionContentResponse.
 
         :param location: The location of this ShowTemplateVersionContentResponse.
         :type location: str

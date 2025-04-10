@@ -48,7 +48,7 @@ class ShowAppTemplateResponse(SdkResponse):
     }
 
     def __init__(self, name=None, description=None, runtime=None, category=None, params=None, image=None, deploy_count=None, version=None, template_guide=None, create_time=None, update_time=None, resources=None):
-        """ShowAppTemplateResponse
+        r"""ShowAppTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowAppTemplateResponse.
+        r"""Gets the name of this ShowAppTemplateResponse.
 
         模板名称
 
@@ -132,7 +132,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAppTemplateResponse.
+        r"""Sets the name of this ShowAppTemplateResponse.
 
         模板名称
 
@@ -143,7 +143,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowAppTemplateResponse.
+        r"""Gets the description of this ShowAppTemplateResponse.
 
         模板描述
 
@@ -154,7 +154,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowAppTemplateResponse.
+        r"""Sets the description of this ShowAppTemplateResponse.
 
         模板描述
 
@@ -165,7 +165,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @property
     def runtime(self):
-        """Gets the runtime of this ShowAppTemplateResponse.
+        r"""Gets the runtime of this ShowAppTemplateResponse.
 
         模板执行运行时
 
@@ -176,7 +176,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this ShowAppTemplateResponse.
+        r"""Sets the runtime of this ShowAppTemplateResponse.
 
         模板执行运行时
 
@@ -187,7 +187,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this ShowAppTemplateResponse.
+        r"""Gets the category of this ShowAppTemplateResponse.
 
         模板使用场景
 
@@ -198,7 +198,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ShowAppTemplateResponse.
+        r"""Sets the category of this ShowAppTemplateResponse.
 
         模板使用场景
 
@@ -209,7 +209,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @property
     def params(self):
-        """Gets the params of this ShowAppTemplateResponse.
+        r"""Gets the params of this ShowAppTemplateResponse.
 
         模板参数
 
@@ -220,7 +220,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ShowAppTemplateResponse.
+        r"""Sets the params of this ShowAppTemplateResponse.
 
         模板参数
 
@@ -231,7 +231,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @property
     def image(self):
-        """Gets the image of this ShowAppTemplateResponse.
+        r"""Gets the image of this ShowAppTemplateResponse.
 
         模板镜像文件（base64编码）
 
@@ -242,7 +242,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @image.setter
     def image(self, image):
-        """Sets the image of this ShowAppTemplateResponse.
+        r"""Sets the image of this ShowAppTemplateResponse.
 
         模板镜像文件（base64编码）
 
@@ -253,7 +253,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @property
     def deploy_count(self):
-        """Gets the deploy_count of this ShowAppTemplateResponse.
+        r"""Gets the deploy_count of this ShowAppTemplateResponse.
 
         模板部署次数
 
@@ -264,7 +264,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @deploy_count.setter
     def deploy_count(self, deploy_count):
-        """Sets the deploy_count of this ShowAppTemplateResponse.
+        r"""Sets the deploy_count of this ShowAppTemplateResponse.
 
         模板部署次数
 
@@ -275,7 +275,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowAppTemplateResponse.
+        r"""Gets the version of this ShowAppTemplateResponse.
 
         模板版本
 
@@ -286,7 +286,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowAppTemplateResponse.
+        r"""Sets the version of this ShowAppTemplateResponse.
 
         模板版本
 
@@ -297,7 +297,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @property
     def template_guide(self):
-        """Gets the template_guide of this ShowAppTemplateResponse.
+        r"""Gets the template_guide of this ShowAppTemplateResponse.
 
         模板指南
 
@@ -308,7 +308,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @template_guide.setter
     def template_guide(self, template_guide):
-        """Sets the template_guide of this ShowAppTemplateResponse.
+        r"""Sets the template_guide of this ShowAppTemplateResponse.
 
         模板指南
 
@@ -319,7 +319,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowAppTemplateResponse.
+        r"""Gets the create_time of this ShowAppTemplateResponse.
 
         模板创建时间
 
@@ -330,7 +330,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowAppTemplateResponse.
+        r"""Sets the create_time of this ShowAppTemplateResponse.
 
         模板创建时间
 
@@ -341,7 +341,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowAppTemplateResponse.
+        r"""Gets the update_time of this ShowAppTemplateResponse.
 
         模板更新时间
 
@@ -352,7 +352,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowAppTemplateResponse.
+        r"""Sets the update_time of this ShowAppTemplateResponse.
 
         模板更新时间
 
@@ -363,7 +363,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ShowAppTemplateResponse.
+        r"""Gets the resources of this ShowAppTemplateResponse.
 
         模板资源
 
@@ -374,7 +374,7 @@ class ShowAppTemplateResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowAppTemplateResponse.
+        r"""Sets the resources of this ShowAppTemplateResponse.
 
         模板资源
 

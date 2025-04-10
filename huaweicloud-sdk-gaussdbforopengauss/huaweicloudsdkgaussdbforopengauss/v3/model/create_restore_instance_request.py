@@ -27,7 +27,7 @@ class CreateRestoreInstanceRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateRestoreInstanceRequest
+        r"""CreateRestoreInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateRestoreInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateRestoreInstanceRequest.
+        r"""Gets the x_language of this CreateRestoreInstanceRequest.
 
         语言
 
@@ -61,7 +61,7 @@ class CreateRestoreInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateRestoreInstanceRequest.
+        r"""Sets the x_language of this CreateRestoreInstanceRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class CreateRestoreInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRestoreInstanceRequest.
+        r"""Gets the body of this CreateRestoreInstanceRequest.
 
         :return: The body of this CreateRestoreInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpengaussRestoreInstanceRequest`
@@ -81,7 +81,7 @@ class CreateRestoreInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRestoreInstanceRequest.
+        r"""Sets the body of this CreateRestoreInstanceRequest.
 
         :param body: The body of this CreateRestoreInstanceRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpengaussRestoreInstanceRequest`

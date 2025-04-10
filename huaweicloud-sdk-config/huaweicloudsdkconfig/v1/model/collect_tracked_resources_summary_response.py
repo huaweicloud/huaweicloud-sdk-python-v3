@@ -26,7 +26,7 @@ class CollectTrackedResourcesSummaryResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CollectTrackedResourcesSummaryResponse
+        r"""CollectTrackedResourcesSummaryResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CollectTrackedResourcesSummaryResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CollectTrackedResourcesSummaryResponse.
+        r"""Gets the body of this CollectTrackedResourcesSummaryResponse.
 
         资源概要信息列表
 
@@ -55,7 +55,7 @@ class CollectTrackedResourcesSummaryResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CollectTrackedResourcesSummaryResponse.
+        r"""Sets the body of this CollectTrackedResourcesSummaryResponse.
 
         资源概要信息列表
 

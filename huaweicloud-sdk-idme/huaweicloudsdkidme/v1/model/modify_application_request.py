@@ -27,7 +27,7 @@ class ModifyApplicationRequest:
     }
 
     def __init__(self, app_id=None, body=None):
-        """ModifyApplicationRequest
+        r"""ModifyApplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ModifyApplicationRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ModifyApplicationRequest.
+        r"""Gets the app_id of this ModifyApplicationRequest.
 
         应用ID。
 
@@ -60,7 +60,7 @@ class ModifyApplicationRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ModifyApplicationRequest.
+        r"""Sets the app_id of this ModifyApplicationRequest.
 
         应用ID。
 
@@ -71,7 +71,7 @@ class ModifyApplicationRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyApplicationRequest.
+        r"""Gets the body of this ModifyApplicationRequest.
 
         :return: The body of this ModifyApplicationRequest.
         :rtype: :class:`huaweicloudsdkidme.v1.ModifyApplicationRequestBody`
@@ -80,7 +80,7 @@ class ModifyApplicationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyApplicationRequest.
+        r"""Sets the body of this ModifyApplicationRequest.
 
         :param body: The body of this ModifyApplicationRequest.
         :type body: :class:`huaweicloudsdkidme.v1.ModifyApplicationRequestBody`

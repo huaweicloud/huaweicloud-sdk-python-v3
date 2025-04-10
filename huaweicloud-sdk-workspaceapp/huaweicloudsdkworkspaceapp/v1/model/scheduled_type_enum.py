@@ -29,7 +29,7 @@ class ScheduledTypeEnum:
     }
 
     def __init__(self):
-        """ScheduledTypeEnum
+        r"""ScheduledTypeEnum
 
         The model defined in huaweicloud sdk
 

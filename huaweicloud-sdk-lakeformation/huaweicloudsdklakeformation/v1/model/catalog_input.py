@@ -39,7 +39,7 @@ class CatalogInput:
     }
 
     def __init__(self, catalog_name=None, description=None, location=None, database_location_list=None, branch_name=None, owner=None, owner_type=None, owner_source=None):
-        """CatalogInput
+        r"""CatalogInput
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class CatalogInput:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this CatalogInput.
+        r"""Gets the catalog_name of this CatalogInput.
 
         catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
@@ -102,7 +102,7 @@ class CatalogInput:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this CatalogInput.
+        r"""Sets the catalog_name of this CatalogInput.
 
         catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
@@ -113,7 +113,7 @@ class CatalogInput:
 
     @property
     def description(self):
-        """Gets the description of this CatalogInput.
+        r"""Gets the description of this CatalogInput.
 
         描述信息。最大长度为4000个字符。
 
@@ -124,7 +124,7 @@ class CatalogInput:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CatalogInput.
+        r"""Sets the description of this CatalogInput.
 
         描述信息。最大长度为4000个字符。
 
@@ -135,7 +135,7 @@ class CatalogInput:
 
     @property
     def location(self):
-        """Gets the location of this CatalogInput.
+        r"""Gets the location of this CatalogInput.
 
         路径地址。例如obs://location/uri/
 
@@ -146,7 +146,7 @@ class CatalogInput:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this CatalogInput.
+        r"""Sets the location of this CatalogInput.
 
         路径地址。例如obs://location/uri/
 
@@ -157,7 +157,7 @@ class CatalogInput:
 
     @property
     def database_location_list(self):
-        """Gets the database_location_list of this CatalogInput.
+        r"""Gets the database_location_list of this CatalogInput.
 
         数据库路径列表。最小条目数为0，最大条目数为1000。
 
@@ -168,7 +168,7 @@ class CatalogInput:
 
     @database_location_list.setter
     def database_location_list(self, database_location_list):
-        """Sets the database_location_list of this CatalogInput.
+        r"""Sets the database_location_list of this CatalogInput.
 
         数据库路径列表。最小条目数为0，最大条目数为1000。
 
@@ -179,7 +179,7 @@ class CatalogInput:
 
     @property
     def branch_name(self):
-        """Gets the branch_name of this CatalogInput.
+        r"""Gets the branch_name of this CatalogInput.
 
         分支名称。只能包含字母、数字和下划线，且长度为1~32个字符。
 
@@ -190,7 +190,7 @@ class CatalogInput:
 
     @branch_name.setter
     def branch_name(self, branch_name):
-        """Sets the branch_name of this CatalogInput.
+        r"""Sets the branch_name of this CatalogInput.
 
         分支名称。只能包含字母、数字和下划线，且长度为1~32个字符。
 
@@ -201,7 +201,7 @@ class CatalogInput:
 
     @property
     def owner(self):
-        """Gets the owner of this CatalogInput.
+        r"""Gets the owner of this CatalogInput.
 
         catalog所有者。只能包含字母、数字和下划线，且最大长度为128个字符。
 
@@ -212,7 +212,7 @@ class CatalogInput:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this CatalogInput.
+        r"""Sets the owner of this CatalogInput.
 
         catalog所有者。只能包含字母、数字和下划线，且最大长度为128个字符。
 
@@ -223,7 +223,7 @@ class CatalogInput:
 
     @property
     def owner_type(self):
-        """Gets the owner_type of this CatalogInput.
+        r"""Gets the owner_type of this CatalogInput.
 
         所有者类型,USER-用户,GROUP-组,ROLE-角色
 
@@ -234,7 +234,7 @@ class CatalogInput:
 
     @owner_type.setter
     def owner_type(self, owner_type):
-        """Sets the owner_type of this CatalogInput.
+        r"""Sets the owner_type of this CatalogInput.
 
         所有者类型,USER-用户,GROUP-组,ROLE-角色
 
@@ -245,7 +245,7 @@ class CatalogInput:
 
     @property
     def owner_source(self):
-        """Gets the owner_source of this CatalogInput.
+        r"""Gets the owner_source of this CatalogInput.
 
         所有者来源,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它
 
@@ -256,7 +256,7 @@ class CatalogInput:
 
     @owner_source.setter
     def owner_source(self, owner_source):
-        """Sets the owner_source of this CatalogInput.
+        r"""Sets the owner_source of this CatalogInput.
 
         所有者来源,IAM-云用户,SAML-联邦,LDAP-ld用户,LOCAL-本地用户,AGENTTENANT-委托,OTHER-其它
 

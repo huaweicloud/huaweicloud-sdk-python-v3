@@ -35,7 +35,7 @@ class ReplicationInfo:
     }
 
     def __init__(self, replication_id=None, node_id=None, replication_ip=None, group_id=None, group_name=None, available_zone=None):
-        """ReplicationInfo
+        r"""ReplicationInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ReplicationInfo:
 
     @property
     def replication_id(self):
-        """Gets the replication_id of this ReplicationInfo.
+        r"""Gets the replication_id of this ReplicationInfo.
 
         副本ID
 
@@ -89,7 +89,7 @@ class ReplicationInfo:
 
     @replication_id.setter
     def replication_id(self, replication_id):
-        """Sets the replication_id of this ReplicationInfo.
+        r"""Sets the replication_id of this ReplicationInfo.
 
         副本ID
 
@@ -100,7 +100,7 @@ class ReplicationInfo:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ReplicationInfo.
+        r"""Gets the node_id of this ReplicationInfo.
 
         节点ID
 
@@ -111,7 +111,7 @@ class ReplicationInfo:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ReplicationInfo.
+        r"""Sets the node_id of this ReplicationInfo.
 
         节点ID
 
@@ -122,7 +122,7 @@ class ReplicationInfo:
 
     @property
     def replication_ip(self):
-        """Gets the replication_ip of this ReplicationInfo.
+        r"""Gets the replication_ip of this ReplicationInfo.
 
         副本IP
 
@@ -133,7 +133,7 @@ class ReplicationInfo:
 
     @replication_ip.setter
     def replication_ip(self, replication_ip):
-        """Sets the replication_ip of this ReplicationInfo.
+        r"""Sets the replication_ip of this ReplicationInfo.
 
         副本IP
 
@@ -144,7 +144,7 @@ class ReplicationInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ReplicationInfo.
+        r"""Gets the group_id of this ReplicationInfo.
 
         组ID
 
@@ -155,7 +155,7 @@ class ReplicationInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ReplicationInfo.
+        r"""Sets the group_id of this ReplicationInfo.
 
         组ID
 
@@ -166,7 +166,7 @@ class ReplicationInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ReplicationInfo.
+        r"""Gets the group_name of this ReplicationInfo.
 
         组名称
 
@@ -177,7 +177,7 @@ class ReplicationInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ReplicationInfo.
+        r"""Sets the group_name of this ReplicationInfo.
 
         组名称
 
@@ -188,7 +188,7 @@ class ReplicationInfo:
 
     @property
     def available_zone(self):
-        """Gets the available_zone of this ReplicationInfo.
+        r"""Gets the available_zone of this ReplicationInfo.
 
         可用区
 
@@ -199,7 +199,7 @@ class ReplicationInfo:
 
     @available_zone.setter
     def available_zone(self, available_zone):
-        """Sets the available_zone of this ReplicationInfo.
+        r"""Sets the available_zone of this ReplicationInfo.
 
         可用区
 

@@ -27,7 +27,7 @@ class UpdateAgencyPolicyRequestBody:
     }
 
     def __init__(self, unbind_role_names=None, bind_role_names=None):
-        """UpdateAgencyPolicyRequestBody
+        r"""UpdateAgencyPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateAgencyPolicyRequestBody:
 
     @property
     def unbind_role_names(self):
-        """Gets the unbind_role_names of this UpdateAgencyPolicyRequestBody.
+        r"""Gets the unbind_role_names of this UpdateAgencyPolicyRequestBody.
 
         委托解绑的权限策略集合。
 
@@ -59,7 +59,7 @@ class UpdateAgencyPolicyRequestBody:
 
     @unbind_role_names.setter
     def unbind_role_names(self, unbind_role_names):
-        """Sets the unbind_role_names of this UpdateAgencyPolicyRequestBody.
+        r"""Sets the unbind_role_names of this UpdateAgencyPolicyRequestBody.
 
         委托解绑的权限策略集合。
 
@@ -70,7 +70,7 @@ class UpdateAgencyPolicyRequestBody:
 
     @property
     def bind_role_names(self):
-        """Gets the bind_role_names of this UpdateAgencyPolicyRequestBody.
+        r"""Gets the bind_role_names of this UpdateAgencyPolicyRequestBody.
 
         委托绑定的权限策略集合。
 
@@ -81,7 +81,7 @@ class UpdateAgencyPolicyRequestBody:
 
     @bind_role_names.setter
     def bind_role_names(self, bind_role_names):
-        """Sets the bind_role_names of this UpdateAgencyPolicyRequestBody.
+        r"""Sets the bind_role_names of this UpdateAgencyPolicyRequestBody.
 
         委托绑定的权限策略集合。
 

@@ -29,7 +29,7 @@ class DeleteTableRequest:
     }
 
     def __init__(self, database_name=None, table_name=None, _async=None):
-        """DeleteTableRequest
+        r"""DeleteTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteTableRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DeleteTableRequest.
+        r"""Gets the database_name of this DeleteTableRequest.
 
         待删除的表所在的数据库名称。
 
@@ -66,7 +66,7 @@ class DeleteTableRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DeleteTableRequest.
+        r"""Sets the database_name of this DeleteTableRequest.
 
         待删除的表所在的数据库名称。
 
@@ -77,7 +77,7 @@ class DeleteTableRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DeleteTableRequest.
+        r"""Gets the table_name of this DeleteTableRequest.
 
         待删除的表名称。
 
@@ -88,7 +88,7 @@ class DeleteTableRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DeleteTableRequest.
+        r"""Sets the table_name of this DeleteTableRequest.
 
         待删除的表名称。
 
@@ -99,7 +99,7 @@ class DeleteTableRequest:
 
     @property
     def _async(self):
-        """Gets the _async of this DeleteTableRequest.
+        r"""Gets the _async of this DeleteTableRequest.
 
         是否异步执行
 
@@ -110,7 +110,7 @@ class DeleteTableRequest:
 
     @_async.setter
     def _async(self, _async):
-        """Sets the _async of this DeleteTableRequest.
+        r"""Sets the _async of this DeleteTableRequest.
 
         是否异步执行
 

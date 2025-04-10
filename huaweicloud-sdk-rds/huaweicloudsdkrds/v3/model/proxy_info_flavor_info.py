@@ -27,7 +27,7 @@ class ProxyInfoFlavorInfo:
     }
 
     def __init__(self, group_type=None, code=None):
-        """ProxyInfoFlavorInfo
+        r"""ProxyInfoFlavorInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProxyInfoFlavorInfo:
 
     @property
     def group_type(self):
-        """Gets the group_type of this ProxyInfoFlavorInfo.
+        r"""Gets the group_type of this ProxyInfoFlavorInfo.
 
         规格类型。
 
@@ -61,7 +61,7 @@ class ProxyInfoFlavorInfo:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this ProxyInfoFlavorInfo.
+        r"""Sets the group_type of this ProxyInfoFlavorInfo.
 
         规格类型。
 
@@ -72,7 +72,7 @@ class ProxyInfoFlavorInfo:
 
     @property
     def code(self):
-        """Gets the code of this ProxyInfoFlavorInfo.
+        r"""Gets the code of this ProxyInfoFlavorInfo.
 
         规格码。
 
@@ -83,7 +83,7 @@ class ProxyInfoFlavorInfo:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ProxyInfoFlavorInfo.
+        r"""Sets the code of this ProxyInfoFlavorInfo.
 
         规格码。
 

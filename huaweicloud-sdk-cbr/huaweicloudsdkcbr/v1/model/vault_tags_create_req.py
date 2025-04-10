@@ -25,7 +25,7 @@ class VaultTagsCreateReq:
     }
 
     def __init__(self, tag=None):
-        """VaultTagsCreateReq
+        r"""VaultTagsCreateReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class VaultTagsCreateReq:
 
     @property
     def tag(self):
-        """Gets the tag of this VaultTagsCreateReq.
+        r"""Gets the tag of this VaultTagsCreateReq.
 
         :return: The tag of this VaultTagsCreateReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.Tag`
@@ -52,7 +52,7 @@ class VaultTagsCreateReq:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this VaultTagsCreateReq.
+        r"""Sets the tag of this VaultTagsCreateReq.
 
         :param tag: The tag of this VaultTagsCreateReq.
         :type tag: :class:`huaweicloudsdkcbr.v1.Tag`

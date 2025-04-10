@@ -27,7 +27,7 @@ class CheckMd5DuplicationRequest:
     }
 
     def __init__(self, size=None, md5=None):
-        """CheckMd5DuplicationRequest
+        r"""CheckMd5DuplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CheckMd5DuplicationRequest:
 
     @property
     def size(self):
-        """Gets the size of this CheckMd5DuplicationRequest.
+        r"""Gets the size of this CheckMd5DuplicationRequest.
 
         文件大小
 
@@ -59,7 +59,7 @@ class CheckMd5DuplicationRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CheckMd5DuplicationRequest.
+        r"""Sets the size of this CheckMd5DuplicationRequest.
 
         文件大小
 
@@ -70,7 +70,7 @@ class CheckMd5DuplicationRequest:
 
     @property
     def md5(self):
-        """Gets the md5 of this CheckMd5DuplicationRequest.
+        r"""Gets the md5 of this CheckMd5DuplicationRequest.
 
         文件MD5。  建议参考[上传校验](https://support.huaweicloud.com/api-vod/vod_04_0212.html#vod_04_0212__section575102165412)生成对应的MD5值。
 
@@ -81,7 +81,7 @@ class CheckMd5DuplicationRequest:
 
     @md5.setter
     def md5(self, md5):
-        """Sets the md5 of this CheckMd5DuplicationRequest.
+        r"""Sets the md5 of this CheckMd5DuplicationRequest.
 
         文件MD5。  建议参考[上传校验](https://support.huaweicloud.com/api-vod/vod_04_0212.html#vod_04_0212__section575102165412)生成对应的MD5值。
 

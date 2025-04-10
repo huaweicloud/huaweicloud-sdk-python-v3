@@ -31,7 +31,7 @@ class SearchResultItem:
     }
 
     def __init__(self, smiles=None, source=None, score=None, props=None):
-        """SearchResultItem
+        r"""SearchResultItem
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class SearchResultItem:
 
     @property
     def smiles(self):
-        """Gets the smiles of this SearchResultItem.
+        r"""Gets the smiles of this SearchResultItem.
 
         分子SMILES表达式
 
@@ -71,7 +71,7 @@ class SearchResultItem:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this SearchResultItem.
+        r"""Sets the smiles of this SearchResultItem.
 
         分子SMILES表达式
 
@@ -82,7 +82,7 @@ class SearchResultItem:
 
     @property
     def source(self):
-        """Gets the source of this SearchResultItem.
+        r"""Gets the source of this SearchResultItem.
 
         分子所属的数据库来源
 
@@ -93,7 +93,7 @@ class SearchResultItem:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this SearchResultItem.
+        r"""Sets the source of this SearchResultItem.
 
         分子所属的数据库来源
 
@@ -104,7 +104,7 @@ class SearchResultItem:
 
     @property
     def score(self):
-        """Gets the score of this SearchResultItem.
+        r"""Gets the score of this SearchResultItem.
 
         分子与查询分子的相似度
 
@@ -115,7 +115,7 @@ class SearchResultItem:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this SearchResultItem.
+        r"""Sets the score of this SearchResultItem.
 
         分子与查询分子的相似度
 
@@ -126,7 +126,7 @@ class SearchResultItem:
 
     @property
     def props(self):
-        """Gets the props of this SearchResultItem.
+        r"""Gets the props of this SearchResultItem.
 
         分子ADMET属性值列表
 
@@ -137,7 +137,7 @@ class SearchResultItem:
 
     @props.setter
     def props(self, props):
-        """Sets the props of this SearchResultItem.
+        r"""Sets the props of this SearchResultItem.
 
         分子ADMET属性值列表
 

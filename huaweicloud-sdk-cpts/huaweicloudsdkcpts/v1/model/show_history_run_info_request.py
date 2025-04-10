@@ -25,7 +25,7 @@ class ShowHistoryRunInfoRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowHistoryRunInfoRequest
+        r"""ShowHistoryRunInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowHistoryRunInfoRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowHistoryRunInfoRequest.
+        r"""Gets the task_id of this ShowHistoryRunInfoRequest.
 
         任务id
 
@@ -53,7 +53,7 @@ class ShowHistoryRunInfoRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowHistoryRunInfoRequest.
+        r"""Sets the task_id of this ShowHistoryRunInfoRequest.
 
         任务id
 

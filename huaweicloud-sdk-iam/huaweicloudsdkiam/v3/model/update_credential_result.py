@@ -33,7 +33,7 @@ class UpdateCredentialResult:
     }
 
     def __init__(self, user_id=None, access=None, status=None, create_time=None, description=None):
-        """UpdateCredentialResult
+        r"""UpdateCredentialResult
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class UpdateCredentialResult:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateCredentialResult.
+        r"""Gets the user_id of this UpdateCredentialResult.
 
         IAM用户ID。
 
@@ -77,7 +77,7 @@ class UpdateCredentialResult:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateCredentialResult.
+        r"""Sets the user_id of this UpdateCredentialResult.
 
         IAM用户ID。
 
@@ -88,7 +88,7 @@ class UpdateCredentialResult:
 
     @property
     def access(self):
-        """Gets the access of this UpdateCredentialResult.
+        r"""Gets the access of this UpdateCredentialResult.
 
         修改的AK。
 
@@ -99,7 +99,7 @@ class UpdateCredentialResult:
 
     @access.setter
     def access(self, access):
-        """Sets the access of this UpdateCredentialResult.
+        r"""Sets the access of this UpdateCredentialResult.
 
         修改的AK。
 
@@ -110,7 +110,7 @@ class UpdateCredentialResult:
 
     @property
     def status(self):
-        """Gets the status of this UpdateCredentialResult.
+        r"""Gets the status of this UpdateCredentialResult.
 
         访问密钥状态。
 
@@ -121,7 +121,7 @@ class UpdateCredentialResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateCredentialResult.
+        r"""Sets the status of this UpdateCredentialResult.
 
         访问密钥状态。
 
@@ -132,7 +132,7 @@ class UpdateCredentialResult:
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateCredentialResult.
+        r"""Gets the create_time of this UpdateCredentialResult.
 
         访问密钥创建时间。
 
@@ -143,7 +143,7 @@ class UpdateCredentialResult:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateCredentialResult.
+        r"""Sets the create_time of this UpdateCredentialResult.
 
         访问密钥创建时间。
 
@@ -154,7 +154,7 @@ class UpdateCredentialResult:
 
     @property
     def description(self):
-        """Gets the description of this UpdateCredentialResult.
+        r"""Gets the description of this UpdateCredentialResult.
 
         访问密钥描述信息。
 
@@ -165,7 +165,7 @@ class UpdateCredentialResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateCredentialResult.
+        r"""Sets the description of this UpdateCredentialResult.
 
         访问密钥描述信息。
 

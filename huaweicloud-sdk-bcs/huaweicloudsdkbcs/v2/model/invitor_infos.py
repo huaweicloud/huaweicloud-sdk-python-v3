@@ -29,7 +29,7 @@ class InvitorInfos:
     }
 
     def __init__(self, tenant_id=None, project_id=None, blockchain_id=None):
-        """InvitorInfos
+        r"""InvitorInfos
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class InvitorInfos:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this InvitorInfos.
+        r"""Gets the tenant_id of this InvitorInfos.
 
         邀请方租户ID
 
@@ -65,7 +65,7 @@ class InvitorInfos:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this InvitorInfos.
+        r"""Sets the tenant_id of this InvitorInfos.
 
         邀请方租户ID
 
@@ -76,7 +76,7 @@ class InvitorInfos:
 
     @property
     def project_id(self):
-        """Gets the project_id of this InvitorInfos.
+        r"""Gets the project_id of this InvitorInfos.
 
         邀请方项目ID
 
@@ -87,7 +87,7 @@ class InvitorInfos:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this InvitorInfos.
+        r"""Sets the project_id of this InvitorInfos.
 
         邀请方项目ID
 
@@ -98,7 +98,7 @@ class InvitorInfos:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this InvitorInfos.
+        r"""Gets the blockchain_id of this InvitorInfos.
 
         邀请方BCS服务实例ID
 
@@ -109,7 +109,7 @@ class InvitorInfos:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this InvitorInfos.
+        r"""Sets the blockchain_id of this InvitorInfos.
 
         邀请方BCS服务实例ID
 

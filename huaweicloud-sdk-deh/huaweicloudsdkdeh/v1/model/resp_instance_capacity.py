@@ -25,7 +25,7 @@ class RespInstanceCapacity:
     }
 
     def __init__(self, flavor=None):
-        """RespInstanceCapacity
+        r"""RespInstanceCapacity
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RespInstanceCapacity:
 
     @property
     def flavor(self):
-        """Gets the flavor of this RespInstanceCapacity.
+        r"""Gets the flavor of this RespInstanceCapacity.
 
         支持创建的云服务器规格。
 
@@ -53,7 +53,7 @@ class RespInstanceCapacity:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this RespInstanceCapacity.
+        r"""Sets the flavor of this RespInstanceCapacity.
 
         支持创建的云服务器规格。
 

@@ -25,7 +25,7 @@ class UpdateTaskSettingsRequestBody:
     }
 
     def __init__(self, task_advanced_settings=None):
-        """UpdateTaskSettingsRequestBody
+        r"""UpdateTaskSettingsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateTaskSettingsRequestBody:
 
     @property
     def task_advanced_settings(self):
-        """Gets the task_advanced_settings of this UpdateTaskSettingsRequestBody.
+        r"""Gets the task_advanced_settings of this UpdateTaskSettingsRequestBody.
 
         高级选项参数的相关信息
 
@@ -53,7 +53,7 @@ class UpdateTaskSettingsRequestBody:
 
     @task_advanced_settings.setter
     def task_advanced_settings(self, task_advanced_settings):
-        """Sets the task_advanced_settings of this UpdateTaskSettingsRequestBody.
+        r"""Sets the task_advanced_settings of this UpdateTaskSettingsRequestBody.
 
         高级选项参数的相关信息
 

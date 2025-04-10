@@ -29,7 +29,7 @@ class UpdateSmartChatRoomRequest:
     }
 
     def __init__(self, room_id=None, x_app_user_id=None, body=None):
-        """UpdateSmartChatRoomRequest
+        r"""UpdateSmartChatRoomRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateSmartChatRoomRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this UpdateSmartChatRoomRequest.
+        r"""Gets the room_id of this UpdateSmartChatRoomRequest.
 
         智能交互对话ID。获取方法请参考[创建智能交互对话](CreateSmartChatRoom.xml)。
 
@@ -67,7 +67,7 @@ class UpdateSmartChatRoomRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this UpdateSmartChatRoomRequest.
+        r"""Sets the room_id of this UpdateSmartChatRoomRequest.
 
         智能交互对话ID。获取方法请参考[创建智能交互对话](CreateSmartChatRoom.xml)。
 
@@ -78,7 +78,7 @@ class UpdateSmartChatRoomRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this UpdateSmartChatRoomRequest.
+        r"""Gets the x_app_user_id of this UpdateSmartChatRoomRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -89,7 +89,7 @@ class UpdateSmartChatRoomRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this UpdateSmartChatRoomRequest.
+        r"""Sets the x_app_user_id of this UpdateSmartChatRoomRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -100,7 +100,7 @@ class UpdateSmartChatRoomRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSmartChatRoomRequest.
+        r"""Gets the body of this UpdateSmartChatRoomRequest.
 
         :return: The body of this UpdateSmartChatRoomRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateSmartChatRoomReq`
@@ -109,7 +109,7 @@ class UpdateSmartChatRoomRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSmartChatRoomRequest.
+        r"""Sets the body of this UpdateSmartChatRoomRequest.
 
         :param body: The body of this UpdateSmartChatRoomRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateSmartChatRoomReq`

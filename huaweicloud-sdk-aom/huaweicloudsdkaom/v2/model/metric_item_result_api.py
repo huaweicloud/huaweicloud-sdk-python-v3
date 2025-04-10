@@ -33,7 +33,7 @@ class MetricItemResultAPI:
     }
 
     def __init__(self, dimensions=None, dimensionvaluehash=None, metric_name=None, namespace=None, unit=None):
-        """MetricItemResultAPI
+        r"""MetricItemResultAPI
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MetricItemResultAPI:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this MetricItemResultAPI.
+        r"""Gets the dimensions of this MetricItemResultAPI.
 
         指标维度列表。
 
@@ -82,7 +82,7 @@ class MetricItemResultAPI:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this MetricItemResultAPI.
+        r"""Sets the dimensions of this MetricItemResultAPI.
 
         指标维度列表。
 
@@ -93,7 +93,7 @@ class MetricItemResultAPI:
 
     @property
     def dimensionvaluehash(self):
-        """Gets the dimensionvaluehash of this MetricItemResultAPI.
+        r"""Gets the dimensionvaluehash of this MetricItemResultAPI.
 
         指标哈希值。
 
@@ -104,7 +104,7 @@ class MetricItemResultAPI:
 
     @dimensionvaluehash.setter
     def dimensionvaluehash(self, dimensionvaluehash):
-        """Sets the dimensionvaluehash of this MetricItemResultAPI.
+        r"""Sets the dimensionvaluehash of this MetricItemResultAPI.
 
         指标哈希值。
 
@@ -115,7 +115,7 @@ class MetricItemResultAPI:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this MetricItemResultAPI.
+        r"""Gets the metric_name of this MetricItemResultAPI.
 
         指标名称。
 
@@ -126,7 +126,7 @@ class MetricItemResultAPI:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this MetricItemResultAPI.
+        r"""Sets the metric_name of this MetricItemResultAPI.
 
         指标名称。
 
@@ -137,7 +137,7 @@ class MetricItemResultAPI:
 
     @property
     def namespace(self):
-        """Gets the namespace of this MetricItemResultAPI.
+        r"""Gets the namespace of this MetricItemResultAPI.
 
         命名空间。
 
@@ -148,7 +148,7 @@ class MetricItemResultAPI:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this MetricItemResultAPI.
+        r"""Sets the namespace of this MetricItemResultAPI.
 
         命名空间。
 
@@ -159,7 +159,7 @@ class MetricItemResultAPI:
 
     @property
     def unit(self):
-        """Gets the unit of this MetricItemResultAPI.
+        r"""Gets the unit of this MetricItemResultAPI.
 
         指标单位。
 
@@ -170,7 +170,7 @@ class MetricItemResultAPI:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this MetricItemResultAPI.
+        r"""Sets the unit of this MetricItemResultAPI.
 
         指标单位。
 

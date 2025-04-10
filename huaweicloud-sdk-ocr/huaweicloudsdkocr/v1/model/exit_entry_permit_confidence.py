@@ -51,7 +51,7 @@ class ExitEntryPermitConfidence:
     }
 
     def __init__(self, name=None, name_en=None, birth_date=None, sex=None, number=None, valid_period=None, issuing_authority=None, issue_place=None, machine_code=None, type=None, side=None, endorsement_info_hk=None, endorsement_info_mo=None, endorsement_info_tw=None):
-        """ExitEntryPermitConfidence
+        r"""ExitEntryPermitConfidence
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ExitEntryPermitConfidence:
 
     @property
     def name(self):
-        """Gets the name of this ExitEntryPermitConfidence.
+        r"""Gets the name of this ExitEntryPermitConfidence.
 
         姓名的置信度。 
 
@@ -145,7 +145,7 @@ class ExitEntryPermitConfidence:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExitEntryPermitConfidence.
+        r"""Sets the name of this ExitEntryPermitConfidence.
 
         姓名的置信度。 
 
@@ -156,7 +156,7 @@ class ExitEntryPermitConfidence:
 
     @property
     def name_en(self):
-        """Gets the name_en of this ExitEntryPermitConfidence.
+        r"""Gets the name_en of this ExitEntryPermitConfidence.
 
         英文姓名的置信度。 
 
@@ -167,7 +167,7 @@ class ExitEntryPermitConfidence:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this ExitEntryPermitConfidence.
+        r"""Sets the name_en of this ExitEntryPermitConfidence.
 
         英文姓名的置信度。 
 
@@ -178,7 +178,7 @@ class ExitEntryPermitConfidence:
 
     @property
     def birth_date(self):
-        """Gets the birth_date of this ExitEntryPermitConfidence.
+        r"""Gets the birth_date of this ExitEntryPermitConfidence.
 
         出生日期的置信度。 
 
@@ -189,7 +189,7 @@ class ExitEntryPermitConfidence:
 
     @birth_date.setter
     def birth_date(self, birth_date):
-        """Sets the birth_date of this ExitEntryPermitConfidence.
+        r"""Sets the birth_date of this ExitEntryPermitConfidence.
 
         出生日期的置信度。 
 
@@ -200,7 +200,7 @@ class ExitEntryPermitConfidence:
 
     @property
     def sex(self):
-        """Gets the sex of this ExitEntryPermitConfidence.
+        r"""Gets the sex of this ExitEntryPermitConfidence.
 
         性别的置信度 
 
@@ -211,7 +211,7 @@ class ExitEntryPermitConfidence:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this ExitEntryPermitConfidence.
+        r"""Sets the sex of this ExitEntryPermitConfidence.
 
         性别的置信度 
 
@@ -222,7 +222,7 @@ class ExitEntryPermitConfidence:
 
     @property
     def number(self):
-        """Gets the number of this ExitEntryPermitConfidence.
+        r"""Gets the number of this ExitEntryPermitConfidence.
 
         证件号的置信度。 
 
@@ -233,7 +233,7 @@ class ExitEntryPermitConfidence:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this ExitEntryPermitConfidence.
+        r"""Sets the number of this ExitEntryPermitConfidence.
 
         证件号的置信度。 
 
@@ -244,7 +244,7 @@ class ExitEntryPermitConfidence:
 
     @property
     def valid_period(self):
-        """Gets the valid_period of this ExitEntryPermitConfidence.
+        r"""Gets the valid_period of this ExitEntryPermitConfidence.
 
         有效期限的置信度。 
 
@@ -255,7 +255,7 @@ class ExitEntryPermitConfidence:
 
     @valid_period.setter
     def valid_period(self, valid_period):
-        """Sets the valid_period of this ExitEntryPermitConfidence.
+        r"""Sets the valid_period of this ExitEntryPermitConfidence.
 
         有效期限的置信度。 
 
@@ -266,7 +266,7 @@ class ExitEntryPermitConfidence:
 
     @property
     def issuing_authority(self):
-        """Gets the issuing_authority of this ExitEntryPermitConfidence.
+        r"""Gets the issuing_authority of this ExitEntryPermitConfidence.
 
         签发机关的置信度。 
 
@@ -277,7 +277,7 @@ class ExitEntryPermitConfidence:
 
     @issuing_authority.setter
     def issuing_authority(self, issuing_authority):
-        """Sets the issuing_authority of this ExitEntryPermitConfidence.
+        r"""Sets the issuing_authority of this ExitEntryPermitConfidence.
 
         签发机关的置信度。 
 
@@ -288,7 +288,7 @@ class ExitEntryPermitConfidence:
 
     @property
     def issue_place(self):
-        """Gets the issue_place of this ExitEntryPermitConfidence.
+        r"""Gets the issue_place of this ExitEntryPermitConfidence.
 
         签发地点的置信度。 
 
@@ -299,7 +299,7 @@ class ExitEntryPermitConfidence:
 
     @issue_place.setter
     def issue_place(self, issue_place):
-        """Sets the issue_place of this ExitEntryPermitConfidence.
+        r"""Sets the issue_place of this ExitEntryPermitConfidence.
 
         签发地点的置信度。 
 
@@ -310,7 +310,7 @@ class ExitEntryPermitConfidence:
 
     @property
     def machine_code(self):
-        """Gets the machine_code of this ExitEntryPermitConfidence.
+        r"""Gets the machine_code of this ExitEntryPermitConfidence.
 
         机器码的置信度。 
 
@@ -321,7 +321,7 @@ class ExitEntryPermitConfidence:
 
     @machine_code.setter
     def machine_code(self, machine_code):
-        """Sets the machine_code of this ExitEntryPermitConfidence.
+        r"""Sets the machine_code of this ExitEntryPermitConfidence.
 
         机器码的置信度。 
 
@@ -332,7 +332,7 @@ class ExitEntryPermitConfidence:
 
     @property
     def type(self):
-        """Gets the type of this ExitEntryPermitConfidence.
+        r"""Gets the type of this ExitEntryPermitConfidence.
 
         证件类型的置信度。 
 
@@ -343,7 +343,7 @@ class ExitEntryPermitConfidence:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExitEntryPermitConfidence.
+        r"""Sets the type of this ExitEntryPermitConfidence.
 
         证件类型的置信度。 
 
@@ -354,7 +354,7 @@ class ExitEntryPermitConfidence:
 
     @property
     def side(self):
-        """Gets the side of this ExitEntryPermitConfidence.
+        r"""Gets the side of this ExitEntryPermitConfidence.
 
         证件图片正反面信息的置信度。 
 
@@ -365,7 +365,7 @@ class ExitEntryPermitConfidence:
 
     @side.setter
     def side(self, side):
-        """Sets the side of this ExitEntryPermitConfidence.
+        r"""Sets the side of this ExitEntryPermitConfidence.
 
         证件图片正反面信息的置信度。 
 
@@ -376,7 +376,7 @@ class ExitEntryPermitConfidence:
 
     @property
     def endorsement_info_hk(self):
-        """Gets the endorsement_info_hk of this ExitEntryPermitConfidence.
+        r"""Gets the endorsement_info_hk of this ExitEntryPermitConfidence.
 
         香港签注信息的置信度。 
 
@@ -387,7 +387,7 @@ class ExitEntryPermitConfidence:
 
     @endorsement_info_hk.setter
     def endorsement_info_hk(self, endorsement_info_hk):
-        """Sets the endorsement_info_hk of this ExitEntryPermitConfidence.
+        r"""Sets the endorsement_info_hk of this ExitEntryPermitConfidence.
 
         香港签注信息的置信度。 
 
@@ -398,7 +398,7 @@ class ExitEntryPermitConfidence:
 
     @property
     def endorsement_info_mo(self):
-        """Gets the endorsement_info_mo of this ExitEntryPermitConfidence.
+        r"""Gets the endorsement_info_mo of this ExitEntryPermitConfidence.
 
         澳门签注信息的置信度。 
 
@@ -409,7 +409,7 @@ class ExitEntryPermitConfidence:
 
     @endorsement_info_mo.setter
     def endorsement_info_mo(self, endorsement_info_mo):
-        """Sets the endorsement_info_mo of this ExitEntryPermitConfidence.
+        r"""Sets the endorsement_info_mo of this ExitEntryPermitConfidence.
 
         澳门签注信息的置信度。 
 
@@ -420,7 +420,7 @@ class ExitEntryPermitConfidence:
 
     @property
     def endorsement_info_tw(self):
-        """Gets the endorsement_info_tw of this ExitEntryPermitConfidence.
+        r"""Gets the endorsement_info_tw of this ExitEntryPermitConfidence.
 
         台湾签注信息的置信度。 
 
@@ -431,7 +431,7 @@ class ExitEntryPermitConfidence:
 
     @endorsement_info_tw.setter
     def endorsement_info_tw(self, endorsement_info_tw):
-        """Sets the endorsement_info_tw of this ExitEntryPermitConfidence.
+        r"""Sets the endorsement_info_tw of this ExitEntryPermitConfidence.
 
         台湾签注信息的置信度。 
 

@@ -28,7 +28,7 @@ class ListSqlLimitRulesResponse(SdkResponse):
     }
 
     def __init__(self, sql_limit_rules=None, total_count=None):
-        """ListSqlLimitRulesResponse
+        r"""ListSqlLimitRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSqlLimitRulesResponse(SdkResponse):
 
     @property
     def sql_limit_rules(self):
-        """Gets the sql_limit_rules of this ListSqlLimitRulesResponse.
+        r"""Gets the sql_limit_rules of this ListSqlLimitRulesResponse.
 
         SQL限流规则列表
 
@@ -62,7 +62,7 @@ class ListSqlLimitRulesResponse(SdkResponse):
 
     @sql_limit_rules.setter
     def sql_limit_rules(self, sql_limit_rules):
-        """Sets the sql_limit_rules of this ListSqlLimitRulesResponse.
+        r"""Sets the sql_limit_rules of this ListSqlLimitRulesResponse.
 
         SQL限流规则列表
 
@@ -73,7 +73,7 @@ class ListSqlLimitRulesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListSqlLimitRulesResponse.
+        r"""Gets the total_count of this ListSqlLimitRulesResponse.
 
         SQL限流规则总数
 
@@ -84,7 +84,7 @@ class ListSqlLimitRulesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListSqlLimitRulesResponse.
+        r"""Sets the total_count of this ListSqlLimitRulesResponse.
 
         SQL限流规则总数
 

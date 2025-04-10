@@ -27,7 +27,7 @@ class UpdateParamInfo:
     }
 
     def __init__(self, node_type=None, parameter_values=None):
-        """UpdateParamInfo
+        r"""UpdateParamInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateParamInfo:
 
     @property
     def node_type(self):
-        """Gets the node_type of this UpdateParamInfo.
+        r"""Gets the node_type of this UpdateParamInfo.
 
         节点类型。取值范围： - be - fe
 
@@ -59,7 +59,7 @@ class UpdateParamInfo:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this UpdateParamInfo.
+        r"""Sets the node_type of this UpdateParamInfo.
 
         节点类型。取值范围： - be - fe
 
@@ -70,7 +70,7 @@ class UpdateParamInfo:
 
     @property
     def parameter_values(self):
-        """Gets the parameter_values of this UpdateParamInfo.
+        r"""Gets the parameter_values of this UpdateParamInfo.
 
         参数名和参数值映射关系。用户可以基于默认参数模板的参数，自定义的参数值。不传入该参数，则保持原参数信息。
 
@@ -81,7 +81,7 @@ class UpdateParamInfo:
 
     @parameter_values.setter
     def parameter_values(self, parameter_values):
-        """Sets the parameter_values of this UpdateParamInfo.
+        r"""Sets the parameter_values of this UpdateParamInfo.
 
         参数名和参数值映射关系。用户可以基于默认参数模板的参数，自定义的参数值。不传入该参数，则保持原参数信息。
 

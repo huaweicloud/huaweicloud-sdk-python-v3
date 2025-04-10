@@ -47,7 +47,7 @@ class InheritedRoleResult:
     }
 
     def __init__(self, flag=None, description_cn=None, catalog=None, name=None, description=None, links=None, id=None, display_name=None, type=None, policy=None, updated_time=None, created_time=None):
-        """InheritedRoleResult
+        r"""InheritedRoleResult
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class InheritedRoleResult:
 
     @property
     def flag(self):
-        """Gets the flag of this InheritedRoleResult.
+        r"""Gets the flag of this InheritedRoleResult.
 
         该参数值为fine_grained时，标识此权限为系统内置的策略。
 
@@ -127,7 +127,7 @@ class InheritedRoleResult:
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this InheritedRoleResult.
+        r"""Sets the flag of this InheritedRoleResult.
 
         该参数值为fine_grained时，标识此权限为系统内置的策略。
 
@@ -138,7 +138,7 @@ class InheritedRoleResult:
 
     @property
     def description_cn(self):
-        """Gets the description_cn of this InheritedRoleResult.
+        r"""Gets the description_cn of this InheritedRoleResult.
 
         权限的中文描述信息。
 
@@ -149,7 +149,7 @@ class InheritedRoleResult:
 
     @description_cn.setter
     def description_cn(self, description_cn):
-        """Sets the description_cn of this InheritedRoleResult.
+        r"""Sets the description_cn of this InheritedRoleResult.
 
         权限的中文描述信息。
 
@@ -160,7 +160,7 @@ class InheritedRoleResult:
 
     @property
     def catalog(self):
-        """Gets the catalog of this InheritedRoleResult.
+        r"""Gets the catalog of this InheritedRoleResult.
 
         权限所在目录。
 
@@ -171,7 +171,7 @@ class InheritedRoleResult:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this InheritedRoleResult.
+        r"""Sets the catalog of this InheritedRoleResult.
 
         权限所在目录。
 
@@ -182,7 +182,7 @@ class InheritedRoleResult:
 
     @property
     def name(self):
-        """Gets the name of this InheritedRoleResult.
+        r"""Gets the name of this InheritedRoleResult.
 
         权限名。携带在用户的token中，云服务根据该名称来判断用户是否有权限访问。
 
@@ -193,7 +193,7 @@ class InheritedRoleResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InheritedRoleResult.
+        r"""Sets the name of this InheritedRoleResult.
 
         权限名。携带在用户的token中，云服务根据该名称来判断用户是否有权限访问。
 
@@ -204,7 +204,7 @@ class InheritedRoleResult:
 
     @property
     def description(self):
-        """Gets the description of this InheritedRoleResult.
+        r"""Gets the description of this InheritedRoleResult.
 
         权限描述信息。
 
@@ -215,7 +215,7 @@ class InheritedRoleResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InheritedRoleResult.
+        r"""Sets the description of this InheritedRoleResult.
 
         权限描述信息。
 
@@ -226,7 +226,7 @@ class InheritedRoleResult:
 
     @property
     def links(self):
-        """Gets the links of this InheritedRoleResult.
+        r"""Gets the links of this InheritedRoleResult.
 
         :return: The links of this InheritedRoleResult.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -235,7 +235,7 @@ class InheritedRoleResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this InheritedRoleResult.
+        r"""Sets the links of this InheritedRoleResult.
 
         :param links: The links of this InheritedRoleResult.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -244,7 +244,7 @@ class InheritedRoleResult:
 
     @property
     def id(self):
-        """Gets the id of this InheritedRoleResult.
+        r"""Gets the id of this InheritedRoleResult.
 
         权限ID。
 
@@ -255,7 +255,7 @@ class InheritedRoleResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InheritedRoleResult.
+        r"""Sets the id of this InheritedRoleResult.
 
         权限ID。
 
@@ -266,7 +266,7 @@ class InheritedRoleResult:
 
     @property
     def display_name(self):
-        """Gets the display_name of this InheritedRoleResult.
+        r"""Gets the display_name of this InheritedRoleResult.
 
         权限展示名。
 
@@ -277,7 +277,7 @@ class InheritedRoleResult:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this InheritedRoleResult.
+        r"""Sets the display_name of this InheritedRoleResult.
 
         权限展示名。
 
@@ -288,7 +288,7 @@ class InheritedRoleResult:
 
     @property
     def type(self):
-        """Gets the type of this InheritedRoleResult.
+        r"""Gets the type of this InheritedRoleResult.
 
         权限的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - AA表示在domain和project层均显示。 > - XX表示在domain和project层均不显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
@@ -299,7 +299,7 @@ class InheritedRoleResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this InheritedRoleResult.
+        r"""Sets the type of this InheritedRoleResult.
 
         权限的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - AA表示在domain和project层均显示。 > - XX表示在domain和project层均不显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
@@ -310,7 +310,7 @@ class InheritedRoleResult:
 
     @property
     def policy(self):
-        """Gets the policy of this InheritedRoleResult.
+        r"""Gets the policy of this InheritedRoleResult.
 
         :return: The policy of this InheritedRoleResult.
         :rtype: :class:`huaweicloudsdkiam.v3.RolePolicy`
@@ -319,7 +319,7 @@ class InheritedRoleResult:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this InheritedRoleResult.
+        r"""Sets the policy of this InheritedRoleResult.
 
         :param policy: The policy of this InheritedRoleResult.
         :type policy: :class:`huaweicloudsdkiam.v3.RolePolicy`
@@ -328,7 +328,7 @@ class InheritedRoleResult:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this InheritedRoleResult.
+        r"""Gets the updated_time of this InheritedRoleResult.
 
         权限更新时间。
 
@@ -339,7 +339,7 @@ class InheritedRoleResult:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this InheritedRoleResult.
+        r"""Sets the updated_time of this InheritedRoleResult.
 
         权限更新时间。
 
@@ -350,7 +350,7 @@ class InheritedRoleResult:
 
     @property
     def created_time(self):
-        """Gets the created_time of this InheritedRoleResult.
+        r"""Gets the created_time of this InheritedRoleResult.
 
         权限创建时间。
 
@@ -361,7 +361,7 @@ class InheritedRoleResult:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this InheritedRoleResult.
+        r"""Sets the created_time of this InheritedRoleResult.
 
         权限创建时间。
 

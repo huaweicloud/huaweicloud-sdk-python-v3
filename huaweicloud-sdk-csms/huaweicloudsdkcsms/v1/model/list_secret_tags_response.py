@@ -28,7 +28,7 @@ class ListSecretTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, sys_tags=None):
-        """ListSecretTagsResponse
+        r"""ListSecretTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecretTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListSecretTagsResponse.
+        r"""Gets the tags of this ListSecretTagsResponse.
 
         标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含20个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为128个字符。  - value：表示标签值。每个值最大长度255个字符，value之间为“与”的关系。
 
@@ -62,7 +62,7 @@ class ListSecretTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListSecretTagsResponse.
+        r"""Sets the tags of this ListSecretTagsResponse.
 
         标签列表，key和value键值对的集合。  - key：表示标签键，一个凭据下最多包含20个key，key不能为空，不能重复，同一个key中value不能重复。key最大长度为128个字符。  - value：表示标签值。每个值最大长度255个字符，value之间为“与”的关系。
 
@@ -73,7 +73,7 @@ class ListSecretTagsResponse(SdkResponse):
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ListSecretTagsResponse.
+        r"""Gets the sys_tags of this ListSecretTagsResponse.
 
         系统标签列表。
 
@@ -84,7 +84,7 @@ class ListSecretTagsResponse(SdkResponse):
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ListSecretTagsResponse.
+        r"""Sets the sys_tags of this ListSecretTagsResponse.
 
         系统标签列表。
 

@@ -27,7 +27,7 @@ class UrlClassificationItem:
     }
 
     def __init__(self, total=None, items=None):
-        """UrlClassificationItem
+        r"""UrlClassificationItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UrlClassificationItem:
 
     @property
     def total(self):
-        """Gets the total of this UrlClassificationItem.
+        r"""Gets the total of this UrlClassificationItem.
 
         UrlItem的总数量
 
@@ -61,7 +61,7 @@ class UrlClassificationItem:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this UrlClassificationItem.
+        r"""Sets the total of this UrlClassificationItem.
 
         UrlItem的总数量
 
@@ -72,7 +72,7 @@ class UrlClassificationItem:
 
     @property
     def items(self):
-        """Gets the items of this UrlClassificationItem.
+        r"""Gets the items of this UrlClassificationItem.
 
         UrlItem详细信息
 
@@ -83,7 +83,7 @@ class UrlClassificationItem:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this UrlClassificationItem.
+        r"""Sets the items of this UrlClassificationItem.
 
         UrlItem详细信息
 

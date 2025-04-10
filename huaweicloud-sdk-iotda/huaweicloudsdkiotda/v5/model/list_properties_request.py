@@ -29,7 +29,7 @@ class ListPropertiesRequest:
     }
 
     def __init__(self, device_id=None, instance_id=None, service_id=None):
-        """ListPropertiesRequest
+        r"""ListPropertiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListPropertiesRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ListPropertiesRequest.
+        r"""Gets the device_id of this ListPropertiesRequest.
 
         **参数说明**：下发属性的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -66,7 +66,7 @@ class ListPropertiesRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ListPropertiesRequest.
+        r"""Sets the device_id of this ListPropertiesRequest.
 
         **参数说明**：下发属性的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -77,7 +77,7 @@ class ListPropertiesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPropertiesRequest.
+        r"""Gets the instance_id of this ListPropertiesRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，建议携带该参数，在使用专业版时必须携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID，具体获取方式请参考[[查看实例详情](https://support.huaweicloud.com/usermanual-iothub/iot_01_0121.html)](tag:hws) [[查看实例详情](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0121.html)](tag:hws_hk)。
 
@@ -88,7 +88,7 @@ class ListPropertiesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPropertiesRequest.
+        r"""Sets the instance_id of this ListPropertiesRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，建议携带该参数，在使用专业版时必须携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID，具体获取方式请参考[[查看实例详情](https://support.huaweicloud.com/usermanual-iothub/iot_01_0121.html)](tag:hws) [[查看实例详情](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0121.html)](tag:hws_hk)。
 
@@ -99,7 +99,7 @@ class ListPropertiesRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ListPropertiesRequest.
+        r"""Gets the service_id of this ListPropertiesRequest.
 
         **参数说明**：设备的服务ID，在设备关联的产品模型中定义。
 
@@ -110,7 +110,7 @@ class ListPropertiesRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ListPropertiesRequest.
+        r"""Sets the service_id of this ListPropertiesRequest.
 
         **参数说明**：设备的服务ID，在设备关联的产品模型中定义。
 

@@ -47,7 +47,7 @@ class CreateTriggerRequestBody:
     }
 
     def __init__(self, action=None, app_type=None, application=None, cluster_id=None, cluster_name=None, cluster_ns=None, condition=None, container=None, enable=None, name=None, trigger_mode=None, trigger_type=None):
-        """CreateTriggerRequestBody
+        r"""CreateTriggerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class CreateTriggerRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this CreateTriggerRequestBody.
+        r"""Gets the action of this CreateTriggerRequestBody.
 
         触发动作，update
 
@@ -123,7 +123,7 @@ class CreateTriggerRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CreateTriggerRequestBody.
+        r"""Sets the action of this CreateTriggerRequestBody.
 
         触发动作，update
 
@@ -134,7 +134,7 @@ class CreateTriggerRequestBody:
 
     @property
     def app_type(self):
-        """Gets the app_type of this CreateTriggerRequestBody.
+        r"""Gets the app_type of this CreateTriggerRequestBody.
 
         应用类型，deployments、statefulsets
 
@@ -145,7 +145,7 @@ class CreateTriggerRequestBody:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this CreateTriggerRequestBody.
+        r"""Sets the app_type of this CreateTriggerRequestBody.
 
         应用类型，deployments、statefulsets
 
@@ -156,7 +156,7 @@ class CreateTriggerRequestBody:
 
     @property
     def application(self):
-        """Gets the application of this CreateTriggerRequestBody.
+        r"""Gets the application of this CreateTriggerRequestBody.
 
         应用名
 
@@ -167,7 +167,7 @@ class CreateTriggerRequestBody:
 
     @application.setter
     def application(self, application):
-        """Sets the application of this CreateTriggerRequestBody.
+        r"""Sets the application of this CreateTriggerRequestBody.
 
         应用名
 
@@ -178,7 +178,7 @@ class CreateTriggerRequestBody:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateTriggerRequestBody.
+        r"""Gets the cluster_id of this CreateTriggerRequestBody.
 
         集群ID（trigger_mode设置为cci时为空)
 
@@ -189,7 +189,7 @@ class CreateTriggerRequestBody:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateTriggerRequestBody.
+        r"""Sets the cluster_id of this CreateTriggerRequestBody.
 
         集群ID（trigger_mode设置为cci时为空)
 
@@ -200,7 +200,7 @@ class CreateTriggerRequestBody:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this CreateTriggerRequestBody.
+        r"""Gets the cluster_name of this CreateTriggerRequestBody.
 
         集群名（trigger_mode设置为cci时为空）
 
@@ -211,7 +211,7 @@ class CreateTriggerRequestBody:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this CreateTriggerRequestBody.
+        r"""Sets the cluster_name of this CreateTriggerRequestBody.
 
         集群名（trigger_mode设置为cci时为空）
 
@@ -222,7 +222,7 @@ class CreateTriggerRequestBody:
 
     @property
     def cluster_ns(self):
-        """Gets the cluster_ns of this CreateTriggerRequestBody.
+        r"""Gets the cluster_ns of this CreateTriggerRequestBody.
 
         应用名所在的namespace
 
@@ -233,7 +233,7 @@ class CreateTriggerRequestBody:
 
     @cluster_ns.setter
     def cluster_ns(self, cluster_ns):
-        """Sets the cluster_ns of this CreateTriggerRequestBody.
+        r"""Sets the cluster_ns of this CreateTriggerRequestBody.
 
         应用名所在的namespace
 
@@ -244,7 +244,7 @@ class CreateTriggerRequestBody:
 
     @property
     def condition(self):
-        """Gets the condition of this CreateTriggerRequestBody.
+        r"""Gets the condition of this CreateTriggerRequestBody.
 
         触发条件，type为all时为.*,type为tag时为tag名,type为regular时为正则表达式
 
@@ -255,7 +255,7 @@ class CreateTriggerRequestBody:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this CreateTriggerRequestBody.
+        r"""Sets the condition of this CreateTriggerRequestBody.
 
         触发条件，type为all时为.*,type为tag时为tag名,type为regular时为正则表达式
 
@@ -266,7 +266,7 @@ class CreateTriggerRequestBody:
 
     @property
     def container(self):
-        """Gets the container of this CreateTriggerRequestBody.
+        r"""Gets the container of this CreateTriggerRequestBody.
 
         需更新的container名，默认为所有container
 
@@ -277,7 +277,7 @@ class CreateTriggerRequestBody:
 
     @container.setter
     def container(self, container):
-        """Sets the container of this CreateTriggerRequestBody.
+        r"""Sets the container of this CreateTriggerRequestBody.
 
         需更新的container名，默认为所有container
 
@@ -288,7 +288,7 @@ class CreateTriggerRequestBody:
 
     @property
     def enable(self):
-        """Gets the enable of this CreateTriggerRequestBody.
+        r"""Gets the enable of this CreateTriggerRequestBody.
 
         是否生效
 
@@ -299,7 +299,7 @@ class CreateTriggerRequestBody:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this CreateTriggerRequestBody.
+        r"""Sets the enable of this CreateTriggerRequestBody.
 
         是否生效
 
@@ -310,7 +310,7 @@ class CreateTriggerRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateTriggerRequestBody.
+        r"""Gets the name of this CreateTriggerRequestBody.
 
         触发器名
 
@@ -321,7 +321,7 @@ class CreateTriggerRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTriggerRequestBody.
+        r"""Sets the name of this CreateTriggerRequestBody.
 
         触发器名
 
@@ -332,7 +332,7 @@ class CreateTriggerRequestBody:
 
     @property
     def trigger_mode(self):
-        """Gets the trigger_mode of this CreateTriggerRequestBody.
+        r"""Gets the trigger_mode of this CreateTriggerRequestBody.
 
         触发器类型，cce、cci，默认为cce
 
@@ -343,7 +343,7 @@ class CreateTriggerRequestBody:
 
     @trigger_mode.setter
     def trigger_mode(self, trigger_mode):
-        """Sets the trigger_mode of this CreateTriggerRequestBody.
+        r"""Sets the trigger_mode of this CreateTriggerRequestBody.
 
         触发器类型，cce、cci，默认为cce
 
@@ -354,7 +354,7 @@ class CreateTriggerRequestBody:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this CreateTriggerRequestBody.
+        r"""Gets the trigger_type of this CreateTriggerRequestBody.
 
         触发条件，all、tag、regular
 
@@ -365,7 +365,7 @@ class CreateTriggerRequestBody:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this CreateTriggerRequestBody.
+        r"""Sets the trigger_type of this CreateTriggerRequestBody.
 
         触发条件，all、tag、regular
 

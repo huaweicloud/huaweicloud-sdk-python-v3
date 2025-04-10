@@ -28,7 +28,7 @@ class DeleteP2cVgwConnectionResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, header_response_token=None):
-        """DeleteP2cVgwConnectionResponse
+        r"""DeleteP2cVgwConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteP2cVgwConnectionResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DeleteP2cVgwConnectionResponse.
+        r"""Gets the request_id of this DeleteP2cVgwConnectionResponse.
 
         请求ID
 
@@ -62,7 +62,7 @@ class DeleteP2cVgwConnectionResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DeleteP2cVgwConnectionResponse.
+        r"""Sets the request_id of this DeleteP2cVgwConnectionResponse.
 
         请求ID
 
@@ -73,7 +73,7 @@ class DeleteP2cVgwConnectionResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this DeleteP2cVgwConnectionResponse.
+        r"""Gets the header_response_token of this DeleteP2cVgwConnectionResponse.
 
         :return: The header_response_token of this DeleteP2cVgwConnectionResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class DeleteP2cVgwConnectionResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this DeleteP2cVgwConnectionResponse.
+        r"""Sets the header_response_token of this DeleteP2cVgwConnectionResponse.
 
         :param header_response_token: The header_response_token of this DeleteP2cVgwConnectionResponse.
         :type header_response_token: str

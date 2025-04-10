@@ -28,7 +28,7 @@ class SubscribeCertificateResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None, cert=None):
-        """SubscribeCertificateResponse
+        r"""SubscribeCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SubscribeCertificateResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this SubscribeCertificateResponse.
+        r"""Gets the order_id of this SubscribeCertificateResponse.
 
         订单号。
 
@@ -62,7 +62,7 @@ class SubscribeCertificateResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this SubscribeCertificateResponse.
+        r"""Sets the order_id of this SubscribeCertificateResponse.
 
         订单号。
 
@@ -73,7 +73,7 @@ class SubscribeCertificateResponse(SdkResponse):
 
     @property
     def cert(self):
-        """Gets the cert of this SubscribeCertificateResponse.
+        r"""Gets the cert of this SubscribeCertificateResponse.
 
         证书列表，详情请参见CertDetail字段数据结构说明。
 
@@ -84,7 +84,7 @@ class SubscribeCertificateResponse(SdkResponse):
 
     @cert.setter
     def cert(self, cert):
-        """Sets the cert of this SubscribeCertificateResponse.
+        r"""Sets the cert of this SubscribeCertificateResponse.
 
         证书列表，详情请参见CertDetail字段数据结构说明。
 

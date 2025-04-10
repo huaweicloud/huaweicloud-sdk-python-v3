@@ -40,7 +40,7 @@ class CreateDashBoardResponse(SdkResponse):
     }
 
     def __init__(self, charts=None, filters=None, group_name=None, id=None, last_update_time=None, project_id=None, title=None, use_system_template=None):
-        """CreateDashBoardResponse
+        r"""CreateDashBoardResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @property
     def charts(self):
-        """Gets the charts of this CreateDashBoardResponse.
+        r"""Gets the charts of this CreateDashBoardResponse.
 
         仪表盘图表
 
@@ -104,7 +104,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @charts.setter
     def charts(self, charts):
-        """Sets the charts of this CreateDashBoardResponse.
+        r"""Sets the charts of this CreateDashBoardResponse.
 
         仪表盘图表
 
@@ -115,7 +115,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @property
     def filters(self):
-        """Gets the filters of this CreateDashBoardResponse.
+        r"""Gets the filters of this CreateDashBoardResponse.
 
         过滤条件
 
@@ -126,7 +126,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @filters.setter
     def filters(self, filters):
-        """Sets the filters of this CreateDashBoardResponse.
+        r"""Sets the filters of this CreateDashBoardResponse.
 
         过滤条件
 
@@ -137,7 +137,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @property
     def group_name(self):
-        """Gets the group_name of this CreateDashBoardResponse.
+        r"""Gets the group_name of this CreateDashBoardResponse.
 
         日志组名称
 
@@ -148,7 +148,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this CreateDashBoardResponse.
+        r"""Sets the group_name of this CreateDashBoardResponse.
 
         日志组名称
 
@@ -159,7 +159,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateDashBoardResponse.
+        r"""Gets the id of this CreateDashBoardResponse.
 
         仪表盘id
 
@@ -170,7 +170,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDashBoardResponse.
+        r"""Sets the id of this CreateDashBoardResponse.
 
         仪表盘id
 
@@ -181,7 +181,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this CreateDashBoardResponse.
+        r"""Gets the last_update_time of this CreateDashBoardResponse.
 
         最近修改时间
 
@@ -192,7 +192,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this CreateDashBoardResponse.
+        r"""Sets the last_update_time of this CreateDashBoardResponse.
 
         最近修改时间
 
@@ -203,7 +203,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateDashBoardResponse.
+        r"""Gets the project_id of this CreateDashBoardResponse.
 
         项目id
 
@@ -214,7 +214,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateDashBoardResponse.
+        r"""Sets the project_id of this CreateDashBoardResponse.
 
         项目id
 
@@ -225,7 +225,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @property
     def title(self):
-        """Gets the title of this CreateDashBoardResponse.
+        r"""Gets the title of this CreateDashBoardResponse.
 
         仪表盘名称
 
@@ -236,7 +236,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @title.setter
     def title(self, title):
-        """Sets the title of this CreateDashBoardResponse.
+        r"""Sets the title of this CreateDashBoardResponse.
 
         仪表盘名称
 
@@ -247,7 +247,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @property
     def use_system_template(self):
-        """Gets the use_system_template of this CreateDashBoardResponse.
+        r"""Gets the use_system_template of this CreateDashBoardResponse.
 
         是否使用模板
 
@@ -258,7 +258,7 @@ class CreateDashBoardResponse(SdkResponse):
 
     @use_system_template.setter
     def use_system_template(self, use_system_template):
-        """Sets the use_system_template of this CreateDashBoardResponse.
+        r"""Sets the use_system_template of this CreateDashBoardResponse.
 
         是否使用模板
 

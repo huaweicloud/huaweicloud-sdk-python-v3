@@ -41,7 +41,7 @@ class Template:
     }
 
     def __init__(self, create_time=None, creator_name=None, creator_num=None, description=None, id=None, is_default=None, mindmap=None, name=None, update_time=None):
-        """Template
+        r"""Template
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class Template:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Template.
+        r"""Gets the create_time of this Template.
 
         创建时间
 
@@ -110,7 +110,7 @@ class Template:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Template.
+        r"""Sets the create_time of this Template.
 
         创建时间
 
@@ -121,7 +121,7 @@ class Template:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this Template.
+        r"""Gets the creator_name of this Template.
 
         创建人名称
 
@@ -132,7 +132,7 @@ class Template:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this Template.
+        r"""Sets the creator_name of this Template.
 
         创建人名称
 
@@ -143,7 +143,7 @@ class Template:
 
     @property
     def creator_num(self):
-        """Gets the creator_num of this Template.
+        r"""Gets the creator_num of this Template.
 
         创建人工号
 
@@ -154,7 +154,7 @@ class Template:
 
     @creator_num.setter
     def creator_num(self, creator_num):
-        """Sets the creator_num of this Template.
+        r"""Sets the creator_num of this Template.
 
         创建人工号
 
@@ -165,7 +165,7 @@ class Template:
 
     @property
     def description(self):
-        """Gets the description of this Template.
+        r"""Gets the description of this Template.
 
         描述
 
@@ -176,7 +176,7 @@ class Template:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Template.
+        r"""Sets the description of this Template.
 
         描述
 
@@ -187,7 +187,7 @@ class Template:
 
     @property
     def id(self):
-        """Gets the id of this Template.
+        r"""Gets the id of this Template.
 
         id 主键
 
@@ -198,7 +198,7 @@ class Template:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Template.
+        r"""Sets the id of this Template.
 
         id 主键
 
@@ -209,7 +209,7 @@ class Template:
 
     @property
     def is_default(self):
-        """Gets the is_default of this Template.
+        r"""Gets the is_default of this Template.
 
         是否默认
 
@@ -220,7 +220,7 @@ class Template:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this Template.
+        r"""Sets the is_default of this Template.
 
         是否默认
 
@@ -231,7 +231,7 @@ class Template:
 
     @property
     def mindmap(self):
-        """Gets the mindmap of this Template.
+        r"""Gets the mindmap of this Template.
 
         脑图json
 
@@ -242,7 +242,7 @@ class Template:
 
     @mindmap.setter
     def mindmap(self, mindmap):
-        """Sets the mindmap of this Template.
+        r"""Sets the mindmap of this Template.
 
         脑图json
 
@@ -253,7 +253,7 @@ class Template:
 
     @property
     def name(self):
-        """Gets the name of this Template.
+        r"""Gets the name of this Template.
 
         名称
 
@@ -264,7 +264,7 @@ class Template:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Template.
+        r"""Sets the name of this Template.
 
         名称
 
@@ -275,7 +275,7 @@ class Template:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Template.
+        r"""Gets the update_time of this Template.
 
         更新时间
 
@@ -286,7 +286,7 @@ class Template:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Template.
+        r"""Sets the update_time of this Template.
 
         更新时间
 

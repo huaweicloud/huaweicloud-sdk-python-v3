@@ -39,7 +39,7 @@ class MrsKafkaConfigResponseDTO:
     }
 
     def __init__(self, kafka_config_id=None, kafka_topics=None, brokers=None, username=None, status=None, authentication=None, created_time=None, last_modified_time=None):
-        """MrsKafkaConfigResponseDTO
+        r"""MrsKafkaConfigResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class MrsKafkaConfigResponseDTO:
 
     @property
     def kafka_config_id(self):
-        """Gets the kafka_config_id of this MrsKafkaConfigResponseDTO.
+        r"""Gets the kafka_config_id of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：每一套Kafka配置的唯一ID。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -103,7 +103,7 @@ class MrsKafkaConfigResponseDTO:
 
     @kafka_config_id.setter
     def kafka_config_id(self, kafka_config_id):
-        """Sets the kafka_config_id of this MrsKafkaConfigResponseDTO.
+        r"""Sets the kafka_config_id of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：每一套Kafka配置的唯一ID。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -114,7 +114,7 @@ class MrsKafkaConfigResponseDTO:
 
     @property
     def kafka_topics(self):
-        """Gets the kafka_topics of this MrsKafkaConfigResponseDTO.
+        r"""Gets the kafka_topics of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：kafka的主题列表。  **取值范围**：  - v2x-v1-tracks：edge上报的车辆轨迹数据  - v2x-v1-bsm：车载T-BOX，mqtt协议接入rsu， websocket协议接入rsu上报的BSM消息数据  - v2x-v1-rsi：mqtt协议接入rsu，edge上报的RSI消息数据  - v2x-v1-rsm： mqtt协议接入rsu，edge上报的RSM消息数据  - v2x-v1-spat：mqtt协议接入rsu， websocket协议接入rsu上报的SPAT消息数据  - v2x-v1-edge-flow：edge上报的车流量统计信息数据
 
@@ -125,7 +125,7 @@ class MrsKafkaConfigResponseDTO:
 
     @kafka_topics.setter
     def kafka_topics(self, kafka_topics):
-        """Sets the kafka_topics of this MrsKafkaConfigResponseDTO.
+        r"""Sets the kafka_topics of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：kafka的主题列表。  **取值范围**：  - v2x-v1-tracks：edge上报的车辆轨迹数据  - v2x-v1-bsm：车载T-BOX，mqtt协议接入rsu， websocket协议接入rsu上报的BSM消息数据  - v2x-v1-rsi：mqtt协议接入rsu，edge上报的RSI消息数据  - v2x-v1-rsm： mqtt协议接入rsu，edge上报的RSM消息数据  - v2x-v1-spat：mqtt协议接入rsu， websocket协议接入rsu上报的SPAT消息数据  - v2x-v1-edge-flow：edge上报的车流量统计信息数据
 
@@ -136,7 +136,7 @@ class MrsKafkaConfigResponseDTO:
 
     @property
     def brokers(self):
-        """Gets the brokers of this MrsKafkaConfigResponseDTO.
+        r"""Gets the brokers of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：Kafka broker列表。
 
@@ -147,7 +147,7 @@ class MrsKafkaConfigResponseDTO:
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this MrsKafkaConfigResponseDTO.
+        r"""Sets the brokers of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：Kafka broker列表。
 
@@ -158,7 +158,7 @@ class MrsKafkaConfigResponseDTO:
 
     @property
     def username(self):
-        """Gets the username of this MrsKafkaConfigResponseDTO.
+        r"""Gets the username of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：mrskafka用户名，若开启安全认证该参数必填。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -169,7 +169,7 @@ class MrsKafkaConfigResponseDTO:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this MrsKafkaConfigResponseDTO.
+        r"""Sets the username of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：mrskafka用户名，若开启安全认证该参数必填。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -180,7 +180,7 @@ class MrsKafkaConfigResponseDTO:
 
     @property
     def status(self):
-        """Gets the status of this MrsKafkaConfigResponseDTO.
+        r"""Gets the status of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：一套kafka的连接状态。  **取值范围**：  - OFFLINE：离线  - ONLINE：在线
 
@@ -191,7 +191,7 @@ class MrsKafkaConfigResponseDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MrsKafkaConfigResponseDTO.
+        r"""Sets the status of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：一套kafka的连接状态。  **取值范围**：  - OFFLINE：离线  - ONLINE：在线
 
@@ -202,7 +202,7 @@ class MrsKafkaConfigResponseDTO:
 
     @property
     def authentication(self):
-        """Gets the authentication of this MrsKafkaConfigResponseDTO.
+        r"""Gets the authentication of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：是否开启kerberos安全认证的开关。若开启安全认证则需要先上传kerberos安全认证的凭证。
 
@@ -213,7 +213,7 @@ class MrsKafkaConfigResponseDTO:
 
     @authentication.setter
     def authentication(self, authentication):
-        """Sets the authentication of this MrsKafkaConfigResponseDTO.
+        r"""Sets the authentication of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：是否开启kerberos安全认证的开关。若开启安全认证则需要先上传kerberos安全认证的凭证。
 
@@ -224,7 +224,7 @@ class MrsKafkaConfigResponseDTO:
 
     @property
     def created_time(self):
-        """Gets the created_time of this MrsKafkaConfigResponseDTO.
+        r"""Gets the created_time of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：创建时间。 格式为yyyy-MM-dd'T'HH:mm:ss'Z' 例如：2015-12-12T12:12:12Z
 
@@ -235,7 +235,7 @@ class MrsKafkaConfigResponseDTO:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this MrsKafkaConfigResponseDTO.
+        r"""Sets the created_time of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：创建时间。 格式为yyyy-MM-dd'T'HH:mm:ss'Z' 例如：2015-12-12T12:12:12Z
 
@@ -246,7 +246,7 @@ class MrsKafkaConfigResponseDTO:
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this MrsKafkaConfigResponseDTO.
+        r"""Gets the last_modified_time of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：修改时间。 格式为yyyy-MM-dd'T'HH:mm:ss'Z' 例如：2015-12-12T12:12:12Z
 
@@ -257,7 +257,7 @@ class MrsKafkaConfigResponseDTO:
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this MrsKafkaConfigResponseDTO.
+        r"""Sets the last_modified_time of this MrsKafkaConfigResponseDTO.
 
         **参数说明**：修改时间。 格式为yyyy-MM-dd'T'HH:mm:ss'Z' 例如：2015-12-12T12:12:12Z
 

@@ -55,7 +55,7 @@ class BtrfsFileSystem:
     }
 
     def __init__(self, name=None, label=None, uuid=None, device=None, size=None, nodesize=None, sectorsize=None, data_profile=None, system_profile=None, metadata_profile=None, global_reserve1=None, g_vol_used_size=None, default_subvolid=None, default_subvol_name=None, default_subvol_mountpath=None, subvolumn=None):
-        """BtrfsFileSystem
+        r"""BtrfsFileSystem
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class BtrfsFileSystem:
 
     @property
     def name(self):
-        """Gets the name of this BtrfsFileSystem.
+        r"""Gets the name of this BtrfsFileSystem.
 
         文件系统名称
 
@@ -143,7 +143,7 @@ class BtrfsFileSystem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BtrfsFileSystem.
+        r"""Sets the name of this BtrfsFileSystem.
 
         文件系统名称
 
@@ -154,7 +154,7 @@ class BtrfsFileSystem:
 
     @property
     def label(self):
-        """Gets the label of this BtrfsFileSystem.
+        r"""Gets the label of this BtrfsFileSystem.
 
         文件系统标签，若无标签为空字符串
 
@@ -165,7 +165,7 @@ class BtrfsFileSystem:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this BtrfsFileSystem.
+        r"""Sets the label of this BtrfsFileSystem.
 
         文件系统标签，若无标签为空字符串
 
@@ -176,7 +176,7 @@ class BtrfsFileSystem:
 
     @property
     def uuid(self):
-        """Gets the uuid of this BtrfsFileSystem.
+        r"""Gets the uuid of this BtrfsFileSystem.
 
         文件系统的uuid
 
@@ -187,7 +187,7 @@ class BtrfsFileSystem:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this BtrfsFileSystem.
+        r"""Sets the uuid of this BtrfsFileSystem.
 
         文件系统的uuid
 
@@ -198,7 +198,7 @@ class BtrfsFileSystem:
 
     @property
     def device(self):
-        """Gets the device of this BtrfsFileSystem.
+        r"""Gets the device of this BtrfsFileSystem.
 
         btrfs包含的设备名称
 
@@ -209,7 +209,7 @@ class BtrfsFileSystem:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this BtrfsFileSystem.
+        r"""Sets the device of this BtrfsFileSystem.
 
         btrfs包含的设备名称
 
@@ -220,7 +220,7 @@ class BtrfsFileSystem:
 
     @property
     def size(self):
-        """Gets the size of this BtrfsFileSystem.
+        r"""Gets the size of this BtrfsFileSystem.
 
         文件系统数据占用大小
 
@@ -231,7 +231,7 @@ class BtrfsFileSystem:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BtrfsFileSystem.
+        r"""Sets the size of this BtrfsFileSystem.
 
         文件系统数据占用大小
 
@@ -242,7 +242,7 @@ class BtrfsFileSystem:
 
     @property
     def nodesize(self):
-        """Gets the nodesize of this BtrfsFileSystem.
+        r"""Gets the nodesize of this BtrfsFileSystem.
 
         btrfs节点大小
 
@@ -253,7 +253,7 @@ class BtrfsFileSystem:
 
     @nodesize.setter
     def nodesize(self, nodesize):
-        """Sets the nodesize of this BtrfsFileSystem.
+        r"""Sets the nodesize of this BtrfsFileSystem.
 
         btrfs节点大小
 
@@ -264,7 +264,7 @@ class BtrfsFileSystem:
 
     @property
     def sectorsize(self):
-        """Gets the sectorsize of this BtrfsFileSystem.
+        r"""Gets the sectorsize of this BtrfsFileSystem.
 
         扇区大小
 
@@ -275,7 +275,7 @@ class BtrfsFileSystem:
 
     @sectorsize.setter
     def sectorsize(self, sectorsize):
-        """Sets the sectorsize of this BtrfsFileSystem.
+        r"""Sets the sectorsize of this BtrfsFileSystem.
 
         扇区大小
 
@@ -286,7 +286,7 @@ class BtrfsFileSystem:
 
     @property
     def data_profile(self):
-        """Gets the data_profile of this BtrfsFileSystem.
+        r"""Gets the data_profile of this BtrfsFileSystem.
 
         数据配置（RAD）
 
@@ -297,7 +297,7 @@ class BtrfsFileSystem:
 
     @data_profile.setter
     def data_profile(self, data_profile):
-        """Sets the data_profile of this BtrfsFileSystem.
+        r"""Sets the data_profile of this BtrfsFileSystem.
 
         数据配置（RAD）
 
@@ -308,7 +308,7 @@ class BtrfsFileSystem:
 
     @property
     def system_profile(self):
-        """Gets the system_profile of this BtrfsFileSystem.
+        r"""Gets the system_profile of this BtrfsFileSystem.
 
         文件系统配置（RAD）
 
@@ -319,7 +319,7 @@ class BtrfsFileSystem:
 
     @system_profile.setter
     def system_profile(self, system_profile):
-        """Sets the system_profile of this BtrfsFileSystem.
+        r"""Sets the system_profile of this BtrfsFileSystem.
 
         文件系统配置（RAD）
 
@@ -330,7 +330,7 @@ class BtrfsFileSystem:
 
     @property
     def metadata_profile(self):
-        """Gets the metadata_profile of this BtrfsFileSystem.
+        r"""Gets the metadata_profile of this BtrfsFileSystem.
 
         元数据配置（RAD）
 
@@ -341,7 +341,7 @@ class BtrfsFileSystem:
 
     @metadata_profile.setter
     def metadata_profile(self, metadata_profile):
-        """Sets the metadata_profile of this BtrfsFileSystem.
+        r"""Sets the metadata_profile of this BtrfsFileSystem.
 
         元数据配置（RAD）
 
@@ -352,7 +352,7 @@ class BtrfsFileSystem:
 
     @property
     def global_reserve1(self):
-        """Gets the global_reserve1 of this BtrfsFileSystem.
+        r"""Gets the global_reserve1 of this BtrfsFileSystem.
 
         Btrfs文件系统信息
 
@@ -363,7 +363,7 @@ class BtrfsFileSystem:
 
     @global_reserve1.setter
     def global_reserve1(self, global_reserve1):
-        """Sets the global_reserve1 of this BtrfsFileSystem.
+        r"""Sets the global_reserve1 of this BtrfsFileSystem.
 
         Btrfs文件系统信息
 
@@ -374,7 +374,7 @@ class BtrfsFileSystem:
 
     @property
     def g_vol_used_size(self):
-        """Gets the g_vol_used_size of this BtrfsFileSystem.
+        r"""Gets the g_vol_used_size of this BtrfsFileSystem.
 
         Btrfs卷已使用空间大小
 
@@ -385,7 +385,7 @@ class BtrfsFileSystem:
 
     @g_vol_used_size.setter
     def g_vol_used_size(self, g_vol_used_size):
-        """Sets the g_vol_used_size of this BtrfsFileSystem.
+        r"""Sets the g_vol_used_size of this BtrfsFileSystem.
 
         Btrfs卷已使用空间大小
 
@@ -396,7 +396,7 @@ class BtrfsFileSystem:
 
     @property
     def default_subvolid(self):
-        """Gets the default_subvolid of this BtrfsFileSystem.
+        r"""Gets the default_subvolid of this BtrfsFileSystem.
 
         默认子卷ID
 
@@ -407,7 +407,7 @@ class BtrfsFileSystem:
 
     @default_subvolid.setter
     def default_subvolid(self, default_subvolid):
-        """Sets the default_subvolid of this BtrfsFileSystem.
+        r"""Sets the default_subvolid of this BtrfsFileSystem.
 
         默认子卷ID
 
@@ -418,7 +418,7 @@ class BtrfsFileSystem:
 
     @property
     def default_subvol_name(self):
-        """Gets the default_subvol_name of this BtrfsFileSystem.
+        r"""Gets the default_subvol_name of this BtrfsFileSystem.
 
         默认子卷名称
 
@@ -429,7 +429,7 @@ class BtrfsFileSystem:
 
     @default_subvol_name.setter
     def default_subvol_name(self, default_subvol_name):
-        """Sets the default_subvol_name of this BtrfsFileSystem.
+        r"""Sets the default_subvol_name of this BtrfsFileSystem.
 
         默认子卷名称
 
@@ -440,7 +440,7 @@ class BtrfsFileSystem:
 
     @property
     def default_subvol_mountpath(self):
-        """Gets the default_subvol_mountpath of this BtrfsFileSystem.
+        r"""Gets the default_subvol_mountpath of this BtrfsFileSystem.
 
         默认子卷挂载路径/BTRFS文件系统的挂载路径
 
@@ -451,7 +451,7 @@ class BtrfsFileSystem:
 
     @default_subvol_mountpath.setter
     def default_subvol_mountpath(self, default_subvol_mountpath):
-        """Sets the default_subvol_mountpath of this BtrfsFileSystem.
+        r"""Sets the default_subvol_mountpath of this BtrfsFileSystem.
 
         默认子卷挂载路径/BTRFS文件系统的挂载路径
 
@@ -462,7 +462,7 @@ class BtrfsFileSystem:
 
     @property
     def subvolumn(self):
-        """Gets the subvolumn of this BtrfsFileSystem.
+        r"""Gets the subvolumn of this BtrfsFileSystem.
 
         子卷信息
 
@@ -473,7 +473,7 @@ class BtrfsFileSystem:
 
     @subvolumn.setter
     def subvolumn(self, subvolumn):
-        """Sets the subvolumn of this BtrfsFileSystem.
+        r"""Sets the subvolumn of this BtrfsFileSystem.
 
         子卷信息
 

@@ -28,7 +28,7 @@ class UpdateHlsConfigResponse(SdkResponse):
     }
 
     def __init__(self, push_domain=None, application=None):
-        """UpdateHlsConfigResponse
+        r"""UpdateHlsConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateHlsConfigResponse(SdkResponse):
 
     @property
     def push_domain(self):
-        """Gets the push_domain of this UpdateHlsConfigResponse.
+        r"""Gets the push_domain of this UpdateHlsConfigResponse.
 
         推流域名
 
@@ -62,7 +62,7 @@ class UpdateHlsConfigResponse(SdkResponse):
 
     @push_domain.setter
     def push_domain(self, push_domain):
-        """Sets the push_domain of this UpdateHlsConfigResponse.
+        r"""Sets the push_domain of this UpdateHlsConfigResponse.
 
         推流域名
 
@@ -73,7 +73,7 @@ class UpdateHlsConfigResponse(SdkResponse):
 
     @property
     def application(self):
-        """Gets the application of this UpdateHlsConfigResponse.
+        r"""Gets the application of this UpdateHlsConfigResponse.
 
         推流域名APP配置
 
@@ -84,7 +84,7 @@ class UpdateHlsConfigResponse(SdkResponse):
 
     @application.setter
     def application(self, application):
-        """Sets the application of this UpdateHlsConfigResponse.
+        r"""Sets the application of this UpdateHlsConfigResponse.
 
         推流域名APP配置
 

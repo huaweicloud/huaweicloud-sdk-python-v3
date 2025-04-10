@@ -31,7 +31,7 @@ class ListWorkloadPlansRequest:
     }
 
     def __init__(self, cluster_id=None, logical_cluster_name=None, limit=None, offset=None):
-        """ListWorkloadPlansRequest
+        r"""ListWorkloadPlansRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListWorkloadPlansRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListWorkloadPlansRequest.
+        r"""Gets the cluster_id of this ListWorkloadPlansRequest.
 
         集群ID
 
@@ -74,7 +74,7 @@ class ListWorkloadPlansRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListWorkloadPlansRequest.
+        r"""Sets the cluster_id of this ListWorkloadPlansRequest.
 
         集群ID
 
@@ -85,7 +85,7 @@ class ListWorkloadPlansRequest:
 
     @property
     def logical_cluster_name(self):
-        """Gets the logical_cluster_name of this ListWorkloadPlansRequest.
+        r"""Gets the logical_cluster_name of this ListWorkloadPlansRequest.
 
         逻辑集群名称
 
@@ -96,7 +96,7 @@ class ListWorkloadPlansRequest:
 
     @logical_cluster_name.setter
     def logical_cluster_name(self, logical_cluster_name):
-        """Sets the logical_cluster_name of this ListWorkloadPlansRequest.
+        r"""Sets the logical_cluster_name of this ListWorkloadPlansRequest.
 
         逻辑集群名称
 
@@ -107,7 +107,7 @@ class ListWorkloadPlansRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkloadPlansRequest.
+        r"""Gets the limit of this ListWorkloadPlansRequest.
 
         查询条数
 
@@ -118,7 +118,7 @@ class ListWorkloadPlansRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkloadPlansRequest.
+        r"""Sets the limit of this ListWorkloadPlansRequest.
 
         查询条数
 
@@ -129,7 +129,7 @@ class ListWorkloadPlansRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkloadPlansRequest.
+        r"""Gets the offset of this ListWorkloadPlansRequest.
 
         偏移量
 
@@ -140,7 +140,7 @@ class ListWorkloadPlansRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkloadPlansRequest.
+        r"""Sets the offset of this ListWorkloadPlansRequest.
 
         偏移量
 

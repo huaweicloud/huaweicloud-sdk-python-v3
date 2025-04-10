@@ -25,7 +25,7 @@ class DeleteQueueRequest:
     }
 
     def __init__(self, queue_name=None):
-        """DeleteQueueRequest
+        r"""DeleteQueueRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteQueueRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this DeleteQueueRequest.
+        r"""Gets the queue_name of this DeleteQueueRequest.
 
         指定删除的队列名称。
 
@@ -53,7 +53,7 @@ class DeleteQueueRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this DeleteQueueRequest.
+        r"""Sets the queue_name of this DeleteQueueRequest.
 
         指定删除的队列名称。
 

@@ -41,7 +41,7 @@ class BaseAppGroup:
     }
 
     def __init__(self, id=None, name=None, app_server_group_id=None, app_server_group_name=None, description=None, authorization_type=None, tenant_id=None, app_type=None, create_at=None):
-        """BaseAppGroup
+        r"""BaseAppGroup
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class BaseAppGroup:
 
     @property
     def id(self):
-        """Gets the id of this BaseAppGroup.
+        r"""Gets the id of this BaseAppGroup.
 
         应用组ID。
 
@@ -110,7 +110,7 @@ class BaseAppGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BaseAppGroup.
+        r"""Sets the id of this BaseAppGroup.
 
         应用组ID。
 
@@ -121,7 +121,7 @@ class BaseAppGroup:
 
     @property
     def name(self):
-        """Gets the name of this BaseAppGroup.
+        r"""Gets the name of this BaseAppGroup.
 
         应用组名称。
 
@@ -132,7 +132,7 @@ class BaseAppGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BaseAppGroup.
+        r"""Sets the name of this BaseAppGroup.
 
         应用组名称。
 
@@ -143,7 +143,7 @@ class BaseAppGroup:
 
     @property
     def app_server_group_id(self):
-        """Gets the app_server_group_id of this BaseAppGroup.
+        r"""Gets the app_server_group_id of this BaseAppGroup.
 
         应用服务器组ID。
 
@@ -154,7 +154,7 @@ class BaseAppGroup:
 
     @app_server_group_id.setter
     def app_server_group_id(self, app_server_group_id):
-        """Sets the app_server_group_id of this BaseAppGroup.
+        r"""Sets the app_server_group_id of this BaseAppGroup.
 
         应用服务器组ID。
 
@@ -165,7 +165,7 @@ class BaseAppGroup:
 
     @property
     def app_server_group_name(self):
-        """Gets the app_server_group_name of this BaseAppGroup.
+        r"""Gets the app_server_group_name of this BaseAppGroup.
 
         应用服务器组名称。
 
@@ -176,7 +176,7 @@ class BaseAppGroup:
 
     @app_server_group_name.setter
     def app_server_group_name(self, app_server_group_name):
-        """Sets the app_server_group_name of this BaseAppGroup.
+        r"""Sets the app_server_group_name of this BaseAppGroup.
 
         应用服务器组名称。
 
@@ -187,7 +187,7 @@ class BaseAppGroup:
 
     @property
     def description(self):
-        """Gets the description of this BaseAppGroup.
+        r"""Gets the description of this BaseAppGroup.
 
         应用组描述。
 
@@ -198,7 +198,7 @@ class BaseAppGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BaseAppGroup.
+        r"""Sets the description of this BaseAppGroup.
 
         应用组描述。
 
@@ -209,7 +209,7 @@ class BaseAppGroup:
 
     @property
     def authorization_type(self):
-        """Gets the authorization_type of this BaseAppGroup.
+        r"""Gets the authorization_type of this BaseAppGroup.
 
         :return: The authorization_type of this BaseAppGroup.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
@@ -218,7 +218,7 @@ class BaseAppGroup:
 
     @authorization_type.setter
     def authorization_type(self, authorization_type):
-        """Sets the authorization_type of this BaseAppGroup.
+        r"""Sets the authorization_type of this BaseAppGroup.
 
         :param authorization_type: The authorization_type of this BaseAppGroup.
         :type authorization_type: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
@@ -227,7 +227,7 @@ class BaseAppGroup:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this BaseAppGroup.
+        r"""Gets the tenant_id of this BaseAppGroup.
 
         租户ID。
 
@@ -238,7 +238,7 @@ class BaseAppGroup:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this BaseAppGroup.
+        r"""Sets the tenant_id of this BaseAppGroup.
 
         租户ID。
 
@@ -249,7 +249,7 @@ class BaseAppGroup:
 
     @property
     def app_type(self):
-        """Gets the app_type of this BaseAppGroup.
+        r"""Gets the app_type of this BaseAppGroup.
 
         :return: The app_type of this BaseAppGroup.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -258,7 +258,7 @@ class BaseAppGroup:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this BaseAppGroup.
+        r"""Sets the app_type of this BaseAppGroup.
 
         :param app_type: The app_type of this BaseAppGroup.
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -267,7 +267,7 @@ class BaseAppGroup:
 
     @property
     def create_at(self):
-        """Gets the create_at of this BaseAppGroup.
+        r"""Gets the create_at of this BaseAppGroup.
 
         发布时间。
 
@@ -278,7 +278,7 @@ class BaseAppGroup:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this BaseAppGroup.
+        r"""Sets the create_at of this BaseAppGroup.
 
         发布时间。
 

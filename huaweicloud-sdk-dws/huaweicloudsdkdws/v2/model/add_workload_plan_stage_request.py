@@ -29,7 +29,7 @@ class AddWorkloadPlanStageRequest:
     }
 
     def __init__(self, cluster_id=None, plan_id=None, body=None):
-        """AddWorkloadPlanStageRequest
+        r"""AddWorkloadPlanStageRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AddWorkloadPlanStageRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this AddWorkloadPlanStageRequest.
+        r"""Gets the cluster_id of this AddWorkloadPlanStageRequest.
 
         集群ID
 
@@ -66,7 +66,7 @@ class AddWorkloadPlanStageRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this AddWorkloadPlanStageRequest.
+        r"""Sets the cluster_id of this AddWorkloadPlanStageRequest.
 
         集群ID
 
@@ -77,7 +77,7 @@ class AddWorkloadPlanStageRequest:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this AddWorkloadPlanStageRequest.
+        r"""Gets the plan_id of this AddWorkloadPlanStageRequest.
 
         计划ID
 
@@ -88,7 +88,7 @@ class AddWorkloadPlanStageRequest:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this AddWorkloadPlanStageRequest.
+        r"""Sets the plan_id of this AddWorkloadPlanStageRequest.
 
         计划ID
 
@@ -99,7 +99,7 @@ class AddWorkloadPlanStageRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddWorkloadPlanStageRequest.
+        r"""Gets the body of this AddWorkloadPlanStageRequest.
 
         :return: The body of this AddWorkloadPlanStageRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.WorkloadPlanStageReq`
@@ -108,7 +108,7 @@ class AddWorkloadPlanStageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddWorkloadPlanStageRequest.
+        r"""Sets the body of this AddWorkloadPlanStageRequest.
 
         :param body: The body of this AddWorkloadPlanStageRequest.
         :type body: :class:`huaweicloudsdkdws.v2.WorkloadPlanStageReq`

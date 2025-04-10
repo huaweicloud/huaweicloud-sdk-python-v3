@@ -24,7 +24,7 @@ class ChangeEventResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeEventResponse
+        r"""ChangeEventResponse
 
         The model defined in huaweicloud sdk
 

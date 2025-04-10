@@ -47,7 +47,7 @@ class TemplateParam:
     }
 
     def __init__(self, required=None, visible=None, name=None, value=None, description=None, paramtype=None, display_type=None, display_name=None, is_static=None, is_default=None, limits=None, constraints=None):
-        """TemplateParam
+        r"""TemplateParam
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class TemplateParam:
 
     @property
     def required(self):
-        """Gets the required of this TemplateParam.
+        r"""Gets the required of this TemplateParam.
 
         是否必须
 
@@ -119,7 +119,7 @@ class TemplateParam:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this TemplateParam.
+        r"""Sets the required of this TemplateParam.
 
         是否必须
 
@@ -130,7 +130,7 @@ class TemplateParam:
 
     @property
     def visible(self):
-        """Gets the visible of this TemplateParam.
+        r"""Gets the visible of this TemplateParam.
 
         是否可见
 
@@ -141,7 +141,7 @@ class TemplateParam:
 
     @visible.setter
     def visible(self, visible):
-        """Sets the visible of this TemplateParam.
+        r"""Sets the visible of this TemplateParam.
 
         是否可见
 
@@ -152,7 +152,7 @@ class TemplateParam:
 
     @property
     def name(self):
-        """Gets the name of this TemplateParam.
+        r"""Gets the name of this TemplateParam.
 
         流水线参数名字
 
@@ -163,7 +163,7 @@ class TemplateParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TemplateParam.
+        r"""Sets the name of this TemplateParam.
 
         流水线参数名字
 
@@ -174,7 +174,7 @@ class TemplateParam:
 
     @property
     def value(self):
-        """Gets the value of this TemplateParam.
+        r"""Gets the value of this TemplateParam.
 
         流水线参数值
 
@@ -185,7 +185,7 @@ class TemplateParam:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TemplateParam.
+        r"""Sets the value of this TemplateParam.
 
         流水线参数值
 
@@ -196,7 +196,7 @@ class TemplateParam:
 
     @property
     def description(self):
-        """Gets the description of this TemplateParam.
+        r"""Gets the description of this TemplateParam.
 
         流水线参数描述
 
@@ -207,7 +207,7 @@ class TemplateParam:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TemplateParam.
+        r"""Sets the description of this TemplateParam.
 
         流水线参数描述
 
@@ -218,7 +218,7 @@ class TemplateParam:
 
     @property
     def paramtype(self):
-        """Gets the paramtype of this TemplateParam.
+        r"""Gets the paramtype of this TemplateParam.
 
         流水线参数类型
 
@@ -229,7 +229,7 @@ class TemplateParam:
 
     @paramtype.setter
     def paramtype(self, paramtype):
-        """Sets the paramtype of this TemplateParam.
+        r"""Sets the paramtype of this TemplateParam.
 
         流水线参数类型
 
@@ -240,7 +240,7 @@ class TemplateParam:
 
     @property
     def display_type(self):
-        """Gets the display_type of this TemplateParam.
+        r"""Gets the display_type of this TemplateParam.
 
         流水线参数展示类型
 
@@ -251,7 +251,7 @@ class TemplateParam:
 
     @display_type.setter
     def display_type(self, display_type):
-        """Sets the display_type of this TemplateParam.
+        r"""Sets the display_type of this TemplateParam.
 
         流水线参数展示类型
 
@@ -262,7 +262,7 @@ class TemplateParam:
 
     @property
     def display_name(self):
-        """Gets the display_name of this TemplateParam.
+        r"""Gets the display_name of this TemplateParam.
 
         流水线参数展示名字
 
@@ -273,7 +273,7 @@ class TemplateParam:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this TemplateParam.
+        r"""Sets the display_name of this TemplateParam.
 
         流水线参数展示名字
 
@@ -284,7 +284,7 @@ class TemplateParam:
 
     @property
     def is_static(self):
-        """Gets the is_static of this TemplateParam.
+        r"""Gets the is_static of this TemplateParam.
 
         是否静态参数
 
@@ -295,7 +295,7 @@ class TemplateParam:
 
     @is_static.setter
     def is_static(self, is_static):
-        """Sets the is_static of this TemplateParam.
+        r"""Sets the is_static of this TemplateParam.
 
         是否静态参数
 
@@ -306,7 +306,7 @@ class TemplateParam:
 
     @property
     def is_default(self):
-        """Gets the is_default of this TemplateParam.
+        r"""Gets the is_default of this TemplateParam.
 
         是否默认参数
 
@@ -317,7 +317,7 @@ class TemplateParam:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this TemplateParam.
+        r"""Sets the is_default of this TemplateParam.
 
         是否默认参数
 
@@ -328,7 +328,7 @@ class TemplateParam:
 
     @property
     def limits(self):
-        """Gets the limits of this TemplateParam.
+        r"""Gets the limits of this TemplateParam.
 
         array类型数据
 
@@ -339,7 +339,7 @@ class TemplateParam:
 
     @limits.setter
     def limits(self, limits):
-        """Sets the limits of this TemplateParam.
+        r"""Sets the limits of this TemplateParam.
 
         array类型数据
 
@@ -350,7 +350,7 @@ class TemplateParam:
 
     @property
     def constraints(self):
-        """Gets the constraints of this TemplateParam.
+        r"""Gets the constraints of this TemplateParam.
 
         array类型数据
 
@@ -361,7 +361,7 @@ class TemplateParam:
 
     @constraints.setter
     def constraints(self, constraints):
-        """Sets the constraints of this TemplateParam.
+        r"""Sets the constraints of this TemplateParam.
 
         array类型数据
 

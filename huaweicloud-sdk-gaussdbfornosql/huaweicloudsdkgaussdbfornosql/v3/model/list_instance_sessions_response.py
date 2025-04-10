@@ -26,7 +26,7 @@ class ListInstanceSessionsResponse(SdkResponse):
     }
 
     def __init__(self, node_sessions=None):
-        """ListInstanceSessionsResponse
+        r"""ListInstanceSessionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListInstanceSessionsResponse(SdkResponse):
 
     @property
     def node_sessions(self):
-        """Gets the node_sessions of this ListInstanceSessionsResponse.
+        r"""Gets the node_sessions of this ListInstanceSessionsResponse.
 
         节点的会话信息列表。
 
@@ -55,7 +55,7 @@ class ListInstanceSessionsResponse(SdkResponse):
 
     @node_sessions.setter
     def node_sessions(self, node_sessions):
-        """Sets the node_sessions of this ListInstanceSessionsResponse.
+        r"""Sets the node_sessions of this ListInstanceSessionsResponse.
 
         节点的会话信息列表。
 

@@ -42,7 +42,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
     }
 
     def __init__(self, name=None, created_at=None, definition=None, graph_urn=None, description=None, x_request_id=None, connection=None, content_length=None, date=None):
-        """ShowWorkflowInfoResponse
+        r"""ShowWorkflowInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowWorkflowInfoResponse.
+        r"""Gets the name of this ShowWorkflowInfoResponse.
 
         工作流的名称。
 
@@ -111,7 +111,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowWorkflowInfoResponse.
+        r"""Sets the name of this ShowWorkflowInfoResponse.
 
         工作流的名称。
 
@@ -122,7 +122,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowWorkflowInfoResponse.
+        r"""Gets the created_at of this ShowWorkflowInfoResponse.
 
         工作流的创建时间。
 
@@ -133,7 +133,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowWorkflowInfoResponse.
+        r"""Sets the created_at of this ShowWorkflowInfoResponse.
 
         工作流的创建时间。
 
@@ -144,7 +144,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @property
     def definition(self):
-        """Gets the definition of this ShowWorkflowInfoResponse.
+        r"""Gets the definition of this ShowWorkflowInfoResponse.
 
         工作流的定义。
 
@@ -155,7 +155,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @definition.setter
     def definition(self, definition):
-        """Sets the definition of this ShowWorkflowInfoResponse.
+        r"""Sets the definition of this ShowWorkflowInfoResponse.
 
         工作流的定义。
 
@@ -166,7 +166,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @property
     def graph_urn(self):
-        """Gets the graph_urn of this ShowWorkflowInfoResponse.
+        r"""Gets the graph_urn of this ShowWorkflowInfoResponse.
 
         工作流的URN。
 
@@ -177,7 +177,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @graph_urn.setter
     def graph_urn(self, graph_urn):
-        """Sets the graph_urn of this ShowWorkflowInfoResponse.
+        r"""Sets the graph_urn of this ShowWorkflowInfoResponse.
 
         工作流的URN。
 
@@ -188,7 +188,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowWorkflowInfoResponse.
+        r"""Gets the description of this ShowWorkflowInfoResponse.
 
         工作流的描述。
 
@@ -199,7 +199,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowWorkflowInfoResponse.
+        r"""Sets the description of this ShowWorkflowInfoResponse.
 
         工作流的描述。
 
@@ -210,7 +210,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowWorkflowInfoResponse.
+        r"""Gets the x_request_id of this ShowWorkflowInfoResponse.
 
         :return: The x_request_id of this ShowWorkflowInfoResponse.
         :rtype: str
@@ -219,7 +219,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowWorkflowInfoResponse.
+        r"""Sets the x_request_id of this ShowWorkflowInfoResponse.
 
         :param x_request_id: The x_request_id of this ShowWorkflowInfoResponse.
         :type x_request_id: str
@@ -228,7 +228,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this ShowWorkflowInfoResponse.
+        r"""Gets the connection of this ShowWorkflowInfoResponse.
 
         :return: The connection of this ShowWorkflowInfoResponse.
         :rtype: str
@@ -237,7 +237,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this ShowWorkflowInfoResponse.
+        r"""Sets the connection of this ShowWorkflowInfoResponse.
 
         :param connection: The connection of this ShowWorkflowInfoResponse.
         :type connection: str
@@ -246,7 +246,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this ShowWorkflowInfoResponse.
+        r"""Gets the content_length of this ShowWorkflowInfoResponse.
 
         :return: The content_length of this ShowWorkflowInfoResponse.
         :rtype: str
@@ -255,7 +255,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this ShowWorkflowInfoResponse.
+        r"""Sets the content_length of this ShowWorkflowInfoResponse.
 
         :param content_length: The content_length of this ShowWorkflowInfoResponse.
         :type content_length: str
@@ -264,7 +264,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this ShowWorkflowInfoResponse.
+        r"""Gets the date of this ShowWorkflowInfoResponse.
 
         :return: The date of this ShowWorkflowInfoResponse.
         :rtype: str
@@ -273,7 +273,7 @@ class ShowWorkflowInfoResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ShowWorkflowInfoResponse.
+        r"""Sets the date of this ShowWorkflowInfoResponse.
 
         :param date: The date of this ShowWorkflowInfoResponse.
         :type date: str

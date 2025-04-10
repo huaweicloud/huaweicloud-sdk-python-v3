@@ -43,7 +43,7 @@ class ThumbTask:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, end_time=None, input=None, output=None, output_file_name=None, user_data=None, description=None, thumbnail_info=None):
-        """ThumbTask
+        r"""ThumbTask
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ThumbTask:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ThumbTask.
+        r"""Gets the task_id of this ThumbTask.
 
         任务ID。  截图服务接受任务后产生的任务ID。一次最多10个。 
 
@@ -117,7 +117,7 @@ class ThumbTask:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ThumbTask.
+        r"""Sets the task_id of this ThumbTask.
 
         任务ID。  截图服务接受任务后产生的任务ID。一次最多10个。 
 
@@ -128,7 +128,7 @@ class ThumbTask:
 
     @property
     def status(self):
-        """Gets the status of this ThumbTask.
+        r"""Gets the status of this ThumbTask.
 
         任务状态
 
@@ -139,7 +139,7 @@ class ThumbTask:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ThumbTask.
+        r"""Sets the status of this ThumbTask.
 
         任务状态
 
@@ -150,7 +150,7 @@ class ThumbTask:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ThumbTask.
+        r"""Gets the create_time of this ThumbTask.
 
         起始时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
@@ -161,7 +161,7 @@ class ThumbTask:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ThumbTask.
+        r"""Sets the create_time of this ThumbTask.
 
         起始时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
@@ -172,7 +172,7 @@ class ThumbTask:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ThumbTask.
+        r"""Gets the end_time of this ThumbTask.
 
         结束时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
@@ -183,7 +183,7 @@ class ThumbTask:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ThumbTask.
+        r"""Sets the end_time of this ThumbTask.
 
         结束时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
@@ -194,7 +194,7 @@ class ThumbTask:
 
     @property
     def input(self):
-        """Gets the input of this ThumbTask.
+        r"""Gets the input of this ThumbTask.
 
         :return: The input of this ThumbTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -203,7 +203,7 @@ class ThumbTask:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this ThumbTask.
+        r"""Sets the input of this ThumbTask.
 
         :param input: The input of this ThumbTask.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -212,7 +212,7 @@ class ThumbTask:
 
     @property
     def output(self):
-        """Gets the output of this ThumbTask.
+        r"""Gets the output of this ThumbTask.
 
         :return: The output of this ThumbTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -221,7 +221,7 @@ class ThumbTask:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this ThumbTask.
+        r"""Sets the output of this ThumbTask.
 
         :param output: The output of this ThumbTask.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -230,7 +230,7 @@ class ThumbTask:
 
     @property
     def output_file_name(self):
-        """Gets the output_file_name of this ThumbTask.
+        r"""Gets the output_file_name of this ThumbTask.
 
         输出文件名。
 
@@ -241,7 +241,7 @@ class ThumbTask:
 
     @output_file_name.setter
     def output_file_name(self, output_file_name):
-        """Sets the output_file_name of this ThumbTask.
+        r"""Sets the output_file_name of this ThumbTask.
 
         输出文件名。
 
@@ -252,7 +252,7 @@ class ThumbTask:
 
     @property
     def user_data(self):
-        """Gets the user_data of this ThumbTask.
+        r"""Gets the user_data of this ThumbTask.
 
         用户数据。 
 
@@ -263,7 +263,7 @@ class ThumbTask:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this ThumbTask.
+        r"""Sets the user_data of this ThumbTask.
 
         用户数据。 
 
@@ -274,7 +274,7 @@ class ThumbTask:
 
     @property
     def description(self):
-        """Gets the description of this ThumbTask.
+        r"""Gets the description of this ThumbTask.
 
         任务描述。
 
@@ -285,7 +285,7 @@ class ThumbTask:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ThumbTask.
+        r"""Sets the description of this ThumbTask.
 
         任务描述。
 
@@ -296,7 +296,7 @@ class ThumbTask:
 
     @property
     def thumbnail_info(self):
-        """Gets the thumbnail_info of this ThumbTask.
+        r"""Gets the thumbnail_info of this ThumbTask.
 
         截图文件信息。 
 
@@ -307,7 +307,7 @@ class ThumbTask:
 
     @thumbnail_info.setter
     def thumbnail_info(self, thumbnail_info):
-        """Sets the thumbnail_info of this ThumbTask.
+        r"""Sets the thumbnail_info of this ThumbTask.
 
         截图文件信息。 
 

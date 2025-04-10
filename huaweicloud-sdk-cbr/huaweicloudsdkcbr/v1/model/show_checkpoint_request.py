@@ -25,7 +25,7 @@ class ShowCheckpointRequest:
     }
 
     def __init__(self, checkpoint_id=None):
-        """ShowCheckpointRequest
+        r"""ShowCheckpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCheckpointRequest:
 
     @property
     def checkpoint_id(self):
-        """Gets the checkpoint_id of this ShowCheckpointRequest.
+        r"""Gets the checkpoint_id of this ShowCheckpointRequest.
 
         还原点ID
 
@@ -53,7 +53,7 @@ class ShowCheckpointRequest:
 
     @checkpoint_id.setter
     def checkpoint_id(self, checkpoint_id):
-        """Sets the checkpoint_id of this ShowCheckpointRequest.
+        r"""Sets the checkpoint_id of this ShowCheckpointRequest.
 
         还原点ID
 

@@ -29,7 +29,7 @@ class TagResourceRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """TagResourceRequest
+        r"""TagResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TagResourceRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this TagResourceRequest.
+        r"""Gets the resource_type of this TagResourceRequest.
 
         资源类型
 
@@ -66,7 +66,7 @@ class TagResourceRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this TagResourceRequest.
+        r"""Sets the resource_type of this TagResourceRequest.
 
         资源类型
 
@@ -77,7 +77,7 @@ class TagResourceRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this TagResourceRequest.
+        r"""Gets the resource_id of this TagResourceRequest.
 
         资源ID
 
@@ -88,7 +88,7 @@ class TagResourceRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this TagResourceRequest.
+        r"""Sets the resource_id of this TagResourceRequest.
 
         资源ID
 
@@ -99,7 +99,7 @@ class TagResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this TagResourceRequest.
+        r"""Gets the body of this TagResourceRequest.
 
         :return: The body of this TagResourceRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.TagsReq`
@@ -108,7 +108,7 @@ class TagResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this TagResourceRequest.
+        r"""Sets the body of this TagResourceRequest.
 
         :param body: The body of this TagResourceRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.TagsReq`

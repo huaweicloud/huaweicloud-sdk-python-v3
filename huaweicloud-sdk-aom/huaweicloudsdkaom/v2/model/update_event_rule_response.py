@@ -26,7 +26,7 @@ class UpdateEventRuleResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateEventRuleResponse
+        r"""UpdateEventRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateEventRuleResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateEventRuleResponse.
+        r"""Gets the body of this UpdateEventRuleResponse.
 
         :return: The body of this UpdateEventRuleResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateEventRuleResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEventRuleResponse.
+        r"""Sets the body of this UpdateEventRuleResponse.
 
         :param body: The body of this UpdateEventRuleResponse.
         :type body: str

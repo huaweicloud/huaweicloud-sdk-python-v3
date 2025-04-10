@@ -27,7 +27,7 @@ class AllocationPool:
     }
 
     def __init__(self, end=None, start=None):
-        """AllocationPool
+        r"""AllocationPool
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AllocationPool:
 
     @property
     def end(self):
-        """Gets the end of this AllocationPool.
+        r"""Gets the end of this AllocationPool.
 
         网络池结束IP
 
@@ -61,7 +61,7 @@ class AllocationPool:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this AllocationPool.
+        r"""Sets the end of this AllocationPool.
 
         网络池结束IP
 
@@ -72,7 +72,7 @@ class AllocationPool:
 
     @property
     def start(self):
-        """Gets the start of this AllocationPool.
+        r"""Gets the start of this AllocationPool.
 
         网络池起始IP
 
@@ -83,7 +83,7 @@ class AllocationPool:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this AllocationPool.
+        r"""Sets the start of this AllocationPool.
 
         网络池起始IP
 

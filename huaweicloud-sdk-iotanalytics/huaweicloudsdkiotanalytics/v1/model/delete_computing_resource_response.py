@@ -26,7 +26,7 @@ class DeleteComputingResourceResponse(SdkResponse):
     }
 
     def __init__(self, computing_resource_id=None):
-        """DeleteComputingResourceResponse
+        r"""DeleteComputingResourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteComputingResourceResponse(SdkResponse):
 
     @property
     def computing_resource_id(self):
-        """Gets the computing_resource_id of this DeleteComputingResourceResponse.
+        r"""Gets the computing_resource_id of this DeleteComputingResourceResponse.
 
         被删除计算资源ID。
 
@@ -55,7 +55,7 @@ class DeleteComputingResourceResponse(SdkResponse):
 
     @computing_resource_id.setter
     def computing_resource_id(self, computing_resource_id):
-        """Sets the computing_resource_id of this DeleteComputingResourceResponse.
+        r"""Sets the computing_resource_id of this DeleteComputingResourceResponse.
 
         被删除计算资源ID。
 

@@ -43,7 +43,7 @@ class ListPluginAttachableApisRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, plugin_id=None, env_id=None, api_name=None, api_id=None, group_id=None, req_method=None, req_uri=None):
-        """ListPluginAttachableApisRequest
+        r"""ListPluginAttachableApisRequest
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class ListPluginAttachableApisRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPluginAttachableApisRequest.
+        r"""Gets the instance_id of this ListPluginAttachableApisRequest.
 
         实例ID
 
@@ -114,7 +114,7 @@ class ListPluginAttachableApisRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPluginAttachableApisRequest.
+        r"""Sets the instance_id of this ListPluginAttachableApisRequest.
 
         实例ID
 
@@ -125,7 +125,7 @@ class ListPluginAttachableApisRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPluginAttachableApisRequest.
+        r"""Gets the offset of this ListPluginAttachableApisRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -136,7 +136,7 @@ class ListPluginAttachableApisRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPluginAttachableApisRequest.
+        r"""Sets the offset of this ListPluginAttachableApisRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -147,7 +147,7 @@ class ListPluginAttachableApisRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPluginAttachableApisRequest.
+        r"""Gets the limit of this ListPluginAttachableApisRequest.
 
         每页显示的条目数量
 
@@ -158,7 +158,7 @@ class ListPluginAttachableApisRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPluginAttachableApisRequest.
+        r"""Sets the limit of this ListPluginAttachableApisRequest.
 
         每页显示的条目数量
 
@@ -169,7 +169,7 @@ class ListPluginAttachableApisRequest:
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this ListPluginAttachableApisRequest.
+        r"""Gets the plugin_id of this ListPluginAttachableApisRequest.
 
         插件编号
 
@@ -180,7 +180,7 @@ class ListPluginAttachableApisRequest:
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this ListPluginAttachableApisRequest.
+        r"""Sets the plugin_id of this ListPluginAttachableApisRequest.
 
         插件编号
 
@@ -191,7 +191,7 @@ class ListPluginAttachableApisRequest:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ListPluginAttachableApisRequest.
+        r"""Gets the env_id of this ListPluginAttachableApisRequest.
 
         发布的环境编号
 
@@ -202,7 +202,7 @@ class ListPluginAttachableApisRequest:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ListPluginAttachableApisRequest.
+        r"""Sets the env_id of this ListPluginAttachableApisRequest.
 
         发布的环境编号
 
@@ -213,7 +213,7 @@ class ListPluginAttachableApisRequest:
 
     @property
     def api_name(self):
-        """Gets the api_name of this ListPluginAttachableApisRequest.
+        r"""Gets the api_name of this ListPluginAttachableApisRequest.
 
         API名称
 
@@ -224,7 +224,7 @@ class ListPluginAttachableApisRequest:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this ListPluginAttachableApisRequest.
+        r"""Sets the api_name of this ListPluginAttachableApisRequest.
 
         API名称
 
@@ -235,7 +235,7 @@ class ListPluginAttachableApisRequest:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ListPluginAttachableApisRequest.
+        r"""Gets the api_id of this ListPluginAttachableApisRequest.
 
         API编号
 
@@ -246,7 +246,7 @@ class ListPluginAttachableApisRequest:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ListPluginAttachableApisRequest.
+        r"""Sets the api_id of this ListPluginAttachableApisRequest.
 
         API编号
 
@@ -257,7 +257,7 @@ class ListPluginAttachableApisRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListPluginAttachableApisRequest.
+        r"""Gets the group_id of this ListPluginAttachableApisRequest.
 
         分组编号
 
@@ -268,7 +268,7 @@ class ListPluginAttachableApisRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListPluginAttachableApisRequest.
+        r"""Sets the group_id of this ListPluginAttachableApisRequest.
 
         分组编号
 
@@ -279,7 +279,7 @@ class ListPluginAttachableApisRequest:
 
     @property
     def req_method(self):
-        """Gets the req_method of this ListPluginAttachableApisRequest.
+        r"""Gets the req_method of this ListPluginAttachableApisRequest.
 
         请求方法
 
@@ -290,7 +290,7 @@ class ListPluginAttachableApisRequest:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this ListPluginAttachableApisRequest.
+        r"""Sets the req_method of this ListPluginAttachableApisRequest.
 
         请求方法
 
@@ -301,7 +301,7 @@ class ListPluginAttachableApisRequest:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this ListPluginAttachableApisRequest.
+        r"""Gets the req_uri of this ListPluginAttachableApisRequest.
 
         请求路径
 
@@ -312,7 +312,7 @@ class ListPluginAttachableApisRequest:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this ListPluginAttachableApisRequest.
+        r"""Sets the req_uri of this ListPluginAttachableApisRequest.
 
         请求路径
 

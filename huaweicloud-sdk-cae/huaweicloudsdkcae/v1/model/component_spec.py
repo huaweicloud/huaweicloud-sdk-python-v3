@@ -51,7 +51,7 @@ class ComponentSpec:
     }
 
     def __init__(self, runtime=None, env_id=None, replica=None, source=None, build=None, resource_limit=None, access_info=None, image_url=None, available_replica=None, job_id=None, build_id=None, status=None, build_log_id=None, configuration_operation_id=None):
-        """ComponentSpec
+        r"""ComponentSpec
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ComponentSpec:
 
     @property
     def runtime(self):
-        """Gets the runtime of this ComponentSpec.
+        r"""Gets the runtime of this ComponentSpec.
 
         语言/运行时。
 
@@ -145,7 +145,7 @@ class ComponentSpec:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this ComponentSpec.
+        r"""Sets the runtime of this ComponentSpec.
 
         语言/运行时。
 
@@ -156,7 +156,7 @@ class ComponentSpec:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ComponentSpec.
+        r"""Gets the env_id of this ComponentSpec.
 
         环境ID。
 
@@ -167,7 +167,7 @@ class ComponentSpec:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ComponentSpec.
+        r"""Sets the env_id of this ComponentSpec.
 
         环境ID。
 
@@ -178,7 +178,7 @@ class ComponentSpec:
 
     @property
     def replica(self):
-        """Gets the replica of this ComponentSpec.
+        r"""Gets the replica of this ComponentSpec.
 
         实例个数。
 
@@ -189,7 +189,7 @@ class ComponentSpec:
 
     @replica.setter
     def replica(self, replica):
-        """Sets the replica of this ComponentSpec.
+        r"""Sets the replica of this ComponentSpec.
 
         实例个数。
 
@@ -200,7 +200,7 @@ class ComponentSpec:
 
     @property
     def source(self):
-        """Gets the source of this ComponentSpec.
+        r"""Gets the source of this ComponentSpec.
 
         :return: The source of this ComponentSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.Source`
@@ -209,7 +209,7 @@ class ComponentSpec:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ComponentSpec.
+        r"""Sets the source of this ComponentSpec.
 
         :param source: The source of this ComponentSpec.
         :type source: :class:`huaweicloudsdkcae.v1.Source`
@@ -218,7 +218,7 @@ class ComponentSpec:
 
     @property
     def build(self):
-        """Gets the build of this ComponentSpec.
+        r"""Gets the build of this ComponentSpec.
 
         :return: The build of this ComponentSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.Build`
@@ -227,7 +227,7 @@ class ComponentSpec:
 
     @build.setter
     def build(self, build):
-        """Sets the build of this ComponentSpec.
+        r"""Sets the build of this ComponentSpec.
 
         :param build: The build of this ComponentSpec.
         :type build: :class:`huaweicloudsdkcae.v1.Build`
@@ -236,7 +236,7 @@ class ComponentSpec:
 
     @property
     def resource_limit(self):
-        """Gets the resource_limit of this ComponentSpec.
+        r"""Gets the resource_limit of this ComponentSpec.
 
         :return: The resource_limit of this ComponentSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ResourceLimit`
@@ -245,7 +245,7 @@ class ComponentSpec:
 
     @resource_limit.setter
     def resource_limit(self, resource_limit):
-        """Sets the resource_limit of this ComponentSpec.
+        r"""Sets the resource_limit of this ComponentSpec.
 
         :param resource_limit: The resource_limit of this ComponentSpec.
         :type resource_limit: :class:`huaweicloudsdkcae.v1.ResourceLimit`
@@ -254,7 +254,7 @@ class ComponentSpec:
 
     @property
     def access_info(self):
-        """Gets the access_info of this ComponentSpec.
+        r"""Gets the access_info of this ComponentSpec.
 
         访问方式列表。
 
@@ -265,7 +265,7 @@ class ComponentSpec:
 
     @access_info.setter
     def access_info(self, access_info):
-        """Sets the access_info of this ComponentSpec.
+        r"""Sets the access_info of this ComponentSpec.
 
         访问方式列表。
 
@@ -276,7 +276,7 @@ class ComponentSpec:
 
     @property
     def image_url(self):
-        """Gets the image_url of this ComponentSpec.
+        r"""Gets the image_url of this ComponentSpec.
 
         镜像地址。
 
@@ -287,7 +287,7 @@ class ComponentSpec:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this ComponentSpec.
+        r"""Sets the image_url of this ComponentSpec.
 
         镜像地址。
 
@@ -298,7 +298,7 @@ class ComponentSpec:
 
     @property
     def available_replica(self):
-        """Gets the available_replica of this ComponentSpec.
+        r"""Gets the available_replica of this ComponentSpec.
 
         可用实例个数。
 
@@ -309,7 +309,7 @@ class ComponentSpec:
 
     @available_replica.setter
     def available_replica(self, available_replica):
-        """Sets the available_replica of this ComponentSpec.
+        r"""Sets the available_replica of this ComponentSpec.
 
         可用实例个数。
 
@@ -320,7 +320,7 @@ class ComponentSpec:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ComponentSpec.
+        r"""Gets the job_id of this ComponentSpec.
 
         任务ID。
 
@@ -331,7 +331,7 @@ class ComponentSpec:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ComponentSpec.
+        r"""Sets the job_id of this ComponentSpec.
 
         任务ID。
 
@@ -342,7 +342,7 @@ class ComponentSpec:
 
     @property
     def build_id(self):
-        """Gets the build_id of this ComponentSpec.
+        r"""Gets the build_id of this ComponentSpec.
 
         构建任务ID。
 
@@ -353,7 +353,7 @@ class ComponentSpec:
 
     @build_id.setter
     def build_id(self, build_id):
-        """Sets the build_id of this ComponentSpec.
+        r"""Sets the build_id of this ComponentSpec.
 
         构建任务ID。
 
@@ -364,7 +364,7 @@ class ComponentSpec:
 
     @property
     def status(self):
-        """Gets the status of this ComponentSpec.
+        r"""Gets the status of this ComponentSpec.
 
         组件状态。
 
@@ -375,7 +375,7 @@ class ComponentSpec:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ComponentSpec.
+        r"""Sets the status of this ComponentSpec.
 
         组件状态。
 
@@ -386,7 +386,7 @@ class ComponentSpec:
 
     @property
     def build_log_id(self):
-        """Gets the build_log_id of this ComponentSpec.
+        r"""Gets the build_log_id of this ComponentSpec.
 
         构建日志ID。
 
@@ -397,7 +397,7 @@ class ComponentSpec:
 
     @build_log_id.setter
     def build_log_id(self, build_log_id):
-        """Sets the build_log_id of this ComponentSpec.
+        r"""Sets the build_log_id of this ComponentSpec.
 
         构建日志ID。
 
@@ -408,7 +408,7 @@ class ComponentSpec:
 
     @property
     def configuration_operation_id(self):
-        """Gets the configuration_operation_id of this ComponentSpec.
+        r"""Gets the configuration_operation_id of this ComponentSpec.
 
         组件最新配置的操作ID。
 
@@ -419,7 +419,7 @@ class ComponentSpec:
 
     @configuration_operation_id.setter
     def configuration_operation_id(self, configuration_operation_id):
-        """Sets the configuration_operation_id of this ComponentSpec.
+        r"""Sets the configuration_operation_id of this ComponentSpec.
 
         组件最新配置的操作ID。
 

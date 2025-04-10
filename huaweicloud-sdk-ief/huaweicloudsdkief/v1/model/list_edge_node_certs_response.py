@@ -28,7 +28,7 @@ class ListEdgeNodeCertsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, node_certs=None):
-        """ListEdgeNodeCertsResponse
+        r"""ListEdgeNodeCertsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEdgeNodeCertsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListEdgeNodeCertsResponse.
+        r"""Gets the count of this ListEdgeNodeCertsResponse.
 
         节点上已关联的应用证书和设备证书的数目
 
@@ -62,7 +62,7 @@ class ListEdgeNodeCertsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListEdgeNodeCertsResponse.
+        r"""Sets the count of this ListEdgeNodeCertsResponse.
 
         节点上已关联的应用证书和设备证书的数目
 
@@ -73,7 +73,7 @@ class ListEdgeNodeCertsResponse(SdkResponse):
 
     @property
     def node_certs(self):
-        """Gets the node_certs of this ListEdgeNodeCertsResponse.
+        r"""Gets the node_certs of this ListEdgeNodeCertsResponse.
 
         节点上的证书列表
 
@@ -84,7 +84,7 @@ class ListEdgeNodeCertsResponse(SdkResponse):
 
     @node_certs.setter
     def node_certs(self, node_certs):
-        """Sets the node_certs of this ListEdgeNodeCertsResponse.
+        r"""Sets the node_certs of this ListEdgeNodeCertsResponse.
 
         节点上的证书列表
 

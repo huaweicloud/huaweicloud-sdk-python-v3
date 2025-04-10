@@ -29,7 +29,7 @@ class ResizeFlavorObject:
     }
 
     def __init__(self, spec_code=None, is_auto_pay=None, is_delay=None):
-        """ResizeFlavorObject
+        r"""ResizeFlavorObject
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ResizeFlavorObject:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ResizeFlavorObject.
+        r"""Gets the spec_code of this ResizeFlavorObject.
 
         资源规格编码。例如：rds.mysql.m1.xlarge。其中，rds代表RDS产品，mysql代表数据库引擎，m1.xlarge代表性能规格，为高内存类型。带\"rr\"的表示只读实例规格，反之表示单实例和HA实例规格。
 
@@ -67,7 +67,7 @@ class ResizeFlavorObject:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ResizeFlavorObject.
+        r"""Sets the spec_code of this ResizeFlavorObject.
 
         资源规格编码。例如：rds.mysql.m1.xlarge。其中，rds代表RDS产品，mysql代表数据库引擎，m1.xlarge代表性能规格，为高内存类型。带\"rr\"的表示只读实例规格，反之表示单实例和HA实例规格。
 
@@ -78,7 +78,7 @@ class ResizeFlavorObject:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ResizeFlavorObject.
+        r"""Gets the is_auto_pay of this ResizeFlavorObject.
 
         变更包周期实例的规格时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
 
@@ -89,7 +89,7 @@ class ResizeFlavorObject:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ResizeFlavorObject.
+        r"""Sets the is_auto_pay of this ResizeFlavorObject.
 
         变更包周期实例的规格时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
 
@@ -100,7 +100,7 @@ class ResizeFlavorObject:
 
     @property
     def is_delay(self):
-        """Gets the is_delay of this ResizeFlavorObject.
+        r"""Gets the is_delay of this ResizeFlavorObject.
 
         是否定时变更。 - true，为定时在运维时间窗做变更。 - false，为立即变更，默认该方式。
 
@@ -111,7 +111,7 @@ class ResizeFlavorObject:
 
     @is_delay.setter
     def is_delay(self, is_delay):
-        """Sets the is_delay of this ResizeFlavorObject.
+        r"""Sets the is_delay of this ResizeFlavorObject.
 
         是否定时变更。 - true，为定时在运维时间窗做变更。 - false，为立即变更，默认该方式。
 

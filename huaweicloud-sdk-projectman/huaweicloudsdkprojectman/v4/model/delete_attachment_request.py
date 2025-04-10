@@ -29,7 +29,7 @@ class DeleteAttachmentRequest:
     }
 
     def __init__(self, project_id=None, issue_id=None, attachment_id=None):
-        """DeleteAttachmentRequest
+        r"""DeleteAttachmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteAttachmentRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteAttachmentRequest.
+        r"""Gets the project_id of this DeleteAttachmentRequest.
 
         devcloud项目的32位id
 
@@ -65,7 +65,7 @@ class DeleteAttachmentRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteAttachmentRequest.
+        r"""Sets the project_id of this DeleteAttachmentRequest.
 
         devcloud项目的32位id
 
@@ -76,7 +76,7 @@ class DeleteAttachmentRequest:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this DeleteAttachmentRequest.
+        r"""Gets the issue_id of this DeleteAttachmentRequest.
 
         工作项id
 
@@ -87,7 +87,7 @@ class DeleteAttachmentRequest:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this DeleteAttachmentRequest.
+        r"""Sets the issue_id of this DeleteAttachmentRequest.
 
         工作项id
 
@@ -98,7 +98,7 @@ class DeleteAttachmentRequest:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this DeleteAttachmentRequest.
+        r"""Gets the attachment_id of this DeleteAttachmentRequest.
 
         附件id
 
@@ -109,7 +109,7 @@ class DeleteAttachmentRequest:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this DeleteAttachmentRequest.
+        r"""Sets the attachment_id of this DeleteAttachmentRequest.
 
         附件id
 

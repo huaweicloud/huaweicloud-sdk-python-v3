@@ -25,7 +25,7 @@ class ShowLoginProfileV5Request:
     }
 
     def __init__(self, user_id=None):
-        """ShowLoginProfileV5Request
+        r"""ShowLoginProfileV5Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowLoginProfileV5Request:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowLoginProfileV5Request.
+        r"""Gets the user_id of this ShowLoginProfileV5Request.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -53,7 +53,7 @@ class ShowLoginProfileV5Request:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowLoginProfileV5Request.
+        r"""Sets the user_id of this ShowLoginProfileV5Request.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 

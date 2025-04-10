@@ -27,7 +27,7 @@ class RegionDetail:
     }
 
     def __init__(self, region_id=None, display_name=None):
-        """RegionDetail
+        r"""RegionDetail
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RegionDetail:
 
     @property
     def region_id(self):
-        """Gets the region_id of this RegionDetail.
+        r"""Gets the region_id of this RegionDetail.
 
         区域ID
 
@@ -61,7 +61,7 @@ class RegionDetail:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this RegionDetail.
+        r"""Sets the region_id of this RegionDetail.
 
         区域ID
 
@@ -72,7 +72,7 @@ class RegionDetail:
 
     @property
     def display_name(self):
-        """Gets the display_name of this RegionDetail.
+        r"""Gets the display_name of this RegionDetail.
 
         区域名称
 
@@ -83,7 +83,7 @@ class RegionDetail:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this RegionDetail.
+        r"""Sets the display_name of this RegionDetail.
 
         区域名称
 

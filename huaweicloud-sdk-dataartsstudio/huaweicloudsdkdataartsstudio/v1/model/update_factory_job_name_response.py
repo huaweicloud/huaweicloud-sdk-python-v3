@@ -28,7 +28,7 @@ class UpdateFactoryJobNameResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, status_code=None):
-        """UpdateFactoryJobNameResponse
+        r"""UpdateFactoryJobNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateFactoryJobNameResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this UpdateFactoryJobNameResponse.
+        r"""Gets the is_success of this UpdateFactoryJobNameResponse.
 
         取值为true或者false
 
@@ -62,7 +62,7 @@ class UpdateFactoryJobNameResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this UpdateFactoryJobNameResponse.
+        r"""Sets the is_success of this UpdateFactoryJobNameResponse.
 
         取值为true或者false
 
@@ -73,7 +73,7 @@ class UpdateFactoryJobNameResponse(SdkResponse):
 
     @property
     def status_code(self):
-        """Gets the status_code of this UpdateFactoryJobNameResponse.
+        r"""Gets the status_code of this UpdateFactoryJobNameResponse.
 
         200表示成功返回
 
@@ -84,7 +84,7 @@ class UpdateFactoryJobNameResponse(SdkResponse):
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this UpdateFactoryJobNameResponse.
+        r"""Sets the status_code of this UpdateFactoryJobNameResponse.
 
         200表示成功返回
 

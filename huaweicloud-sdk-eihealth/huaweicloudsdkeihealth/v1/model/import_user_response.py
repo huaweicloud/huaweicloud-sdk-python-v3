@@ -26,7 +26,7 @@ class ImportUserResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ImportUserResponse
+        r"""ImportUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportUserResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ImportUserResponse.
+        r"""Gets the body of this ImportUserResponse.
 
         :return: The body of this ImportUserResponse.
         :rtype: list[:class:`huaweicloudsdkeihealth.v1.UserIdRsp`]
@@ -53,7 +53,7 @@ class ImportUserResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportUserResponse.
+        r"""Sets the body of this ImportUserResponse.
 
         :param body: The body of this ImportUserResponse.
         :type body: list[:class:`huaweicloudsdkeihealth.v1.UserIdRsp`]

@@ -27,7 +27,7 @@ class EditUserGroupRequest:
     }
 
     def __init__(self, description=None, group_name=None):
-        """EditUserGroupRequest
+        r"""EditUserGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EditUserGroupRequest:
 
     @property
     def description(self):
-        """Gets the description of this EditUserGroupRequest.
+        r"""Gets the description of this EditUserGroupRequest.
 
         用户组描述。
 
@@ -61,7 +61,7 @@ class EditUserGroupRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EditUserGroupRequest.
+        r"""Sets the description of this EditUserGroupRequest.
 
         用户组描述。
 
@@ -72,7 +72,7 @@ class EditUserGroupRequest:
 
     @property
     def group_name(self):
-        """Gets the group_name of this EditUserGroupRequest.
+        r"""Gets the group_name of this EditUserGroupRequest.
 
         用户组名，注意AD用户组不支持改名。
 
@@ -83,7 +83,7 @@ class EditUserGroupRequest:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this EditUserGroupRequest.
+        r"""Sets the group_name of this EditUserGroupRequest.
 
         用户组名，注意AD用户组不支持改名。
 

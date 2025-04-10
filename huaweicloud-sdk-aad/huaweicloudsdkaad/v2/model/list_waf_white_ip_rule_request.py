@@ -27,7 +27,7 @@ class ListWafWhiteIpRuleRequest:
     }
 
     def __init__(self, domain_name=None, overseas_type=None):
-        """ListWafWhiteIpRuleRequest
+        r"""ListWafWhiteIpRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListWafWhiteIpRuleRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ListWafWhiteIpRuleRequest.
+        r"""Gets the domain_name of this ListWafWhiteIpRuleRequest.
 
         域名
 
@@ -59,7 +59,7 @@ class ListWafWhiteIpRuleRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ListWafWhiteIpRuleRequest.
+        r"""Sets the domain_name of this ListWafWhiteIpRuleRequest.
 
         域名
 
@@ -70,7 +70,7 @@ class ListWafWhiteIpRuleRequest:
 
     @property
     def overseas_type(self):
-        """Gets the overseas_type of this ListWafWhiteIpRuleRequest.
+        r"""Gets the overseas_type of this ListWafWhiteIpRuleRequest.
 
         防护区域，0-大陆，1-海外
 
@@ -81,7 +81,7 @@ class ListWafWhiteIpRuleRequest:
 
     @overseas_type.setter
     def overseas_type(self, overseas_type):
-        """Sets the overseas_type of this ListWafWhiteIpRuleRequest.
+        r"""Sets the overseas_type of this ListWafWhiteIpRuleRequest.
 
         防护区域，0-大陆，1-海外
 

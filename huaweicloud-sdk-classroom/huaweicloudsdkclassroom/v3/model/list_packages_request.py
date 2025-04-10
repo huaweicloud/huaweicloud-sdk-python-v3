@@ -25,7 +25,7 @@ class ListPackagesRequest:
     }
 
     def __init__(self, body=None):
-        """ListPackagesRequest
+        r"""ListPackagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListPackagesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListPackagesRequest.
+        r"""Gets the body of this ListPackagesRequest.
 
         :return: The body of this ListPackagesRequest.
         :rtype: :class:`huaweicloudsdkclassroom.v3.PackagesListRequestBody`
@@ -52,7 +52,7 @@ class ListPackagesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPackagesRequest.
+        r"""Sets the body of this ListPackagesRequest.
 
         :param body: The body of this ListPackagesRequest.
         :type body: :class:`huaweicloudsdkclassroom.v3.PackagesListRequestBody`

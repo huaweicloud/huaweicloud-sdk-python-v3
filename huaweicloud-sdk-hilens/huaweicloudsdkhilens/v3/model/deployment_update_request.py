@@ -29,7 +29,7 @@ class DeploymentUpdateRequest:
     }
 
     def __init__(self, deployment=None, description=None, tags=None):
-        """DeploymentUpdateRequest
+        r"""DeploymentUpdateRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DeploymentUpdateRequest:
 
     @property
     def deployment(self):
-        """Gets the deployment of this DeploymentUpdateRequest.
+        r"""Gets the deployment of this DeploymentUpdateRequest.
 
         :return: The deployment of this DeploymentUpdateRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.DeploymentRequest`
@@ -66,7 +66,7 @@ class DeploymentUpdateRequest:
 
     @deployment.setter
     def deployment(self, deployment):
-        """Sets the deployment of this DeploymentUpdateRequest.
+        r"""Sets the deployment of this DeploymentUpdateRequest.
 
         :param deployment: The deployment of this DeploymentUpdateRequest.
         :type deployment: :class:`huaweicloudsdkhilens.v3.DeploymentRequest`
@@ -75,7 +75,7 @@ class DeploymentUpdateRequest:
 
     @property
     def description(self):
-        """Gets the description of this DeploymentUpdateRequest.
+        r"""Gets the description of this DeploymentUpdateRequest.
 
         应用部署描述修改，只修改描述不需要传deployment参数。最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -86,7 +86,7 @@ class DeploymentUpdateRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeploymentUpdateRequest.
+        r"""Sets the description of this DeploymentUpdateRequest.
 
         应用部署描述修改，只修改描述不需要传deployment参数。最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -97,7 +97,7 @@ class DeploymentUpdateRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this DeploymentUpdateRequest.
+        r"""Gets the tags of this DeploymentUpdateRequest.
 
         部署标签
 
@@ -108,7 +108,7 @@ class DeploymentUpdateRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this DeploymentUpdateRequest.
+        r"""Sets the tags of this DeploymentUpdateRequest.
 
         部署标签
 

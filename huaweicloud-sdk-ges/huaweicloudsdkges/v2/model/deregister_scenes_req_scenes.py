@@ -27,7 +27,7 @@ class DeregisterScenesReqScenes:
     }
 
     def __init__(self, name=None, applications=None):
-        """DeregisterScenesReqScenes
+        r"""DeregisterScenesReqScenes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeregisterScenesReqScenes:
 
     @property
     def name(self):
-        """Gets the name of this DeregisterScenesReqScenes.
+        r"""Gets the name of this DeregisterScenesReqScenes.
 
         场景名。
 
@@ -61,7 +61,7 @@ class DeregisterScenesReqScenes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeregisterScenesReqScenes.
+        r"""Sets the name of this DeregisterScenesReqScenes.
 
         场景名。
 
@@ -72,7 +72,7 @@ class DeregisterScenesReqScenes:
 
     @property
     def applications(self):
-        """Gets the applications of this DeregisterScenesReqScenes.
+        r"""Gets the applications of this DeregisterScenesReqScenes.
 
         要取消订阅的application 名字列表(当前不支持)。
 
@@ -83,7 +83,7 @@ class DeregisterScenesReqScenes:
 
     @applications.setter
     def applications(self, applications):
-        """Sets the applications of this DeregisterScenesReqScenes.
+        r"""Sets the applications of this DeregisterScenesReqScenes.
 
         要取消订阅的application 名字列表(当前不支持)。
 

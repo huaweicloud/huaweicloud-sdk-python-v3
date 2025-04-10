@@ -27,7 +27,7 @@ class MergeTableColumnStatisticInput:
     }
 
     def __init__(self, merge=None, table_column_statistics=None):
-        """MergeTableColumnStatisticInput
+        r"""MergeTableColumnStatisticInput
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class MergeTableColumnStatisticInput:
 
     @property
     def merge(self):
-        """Gets the merge of this MergeTableColumnStatisticInput.
+        r"""Gets the merge of this MergeTableColumnStatisticInput.
 
         是否是对统计信息的合并操作
 
@@ -60,7 +60,7 @@ class MergeTableColumnStatisticInput:
 
     @merge.setter
     def merge(self, merge):
-        """Sets the merge of this MergeTableColumnStatisticInput.
+        r"""Sets the merge of this MergeTableColumnStatisticInput.
 
         是否是对统计信息的合并操作
 
@@ -71,7 +71,7 @@ class MergeTableColumnStatisticInput:
 
     @property
     def table_column_statistics(self):
-        """Gets the table_column_statistics of this MergeTableColumnStatisticInput.
+        r"""Gets the table_column_statistics of this MergeTableColumnStatisticInput.
 
         :return: The table_column_statistics of this MergeTableColumnStatisticInput.
         :rtype: :class:`huaweicloudsdklakeformation.v1.TableColumnStatistics`
@@ -80,7 +80,7 @@ class MergeTableColumnStatisticInput:
 
     @table_column_statistics.setter
     def table_column_statistics(self, table_column_statistics):
-        """Sets the table_column_statistics of this MergeTableColumnStatisticInput.
+        r"""Sets the table_column_statistics of this MergeTableColumnStatisticInput.
 
         :param table_column_statistics: The table_column_statistics of this MergeTableColumnStatisticInput.
         :type table_column_statistics: :class:`huaweicloudsdklakeformation.v1.TableColumnStatistics`

@@ -27,7 +27,7 @@ class CreateCodeRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """CreateCodeRequest
+        r"""CreateCodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCodeRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateCodeRequest.
+        r"""Gets the user_id of this CreateCodeRequest.
 
         用户id
 
@@ -60,7 +60,7 @@ class CreateCodeRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateCodeRequest.
+        r"""Sets the user_id of this CreateCodeRequest.
 
         用户id
 
@@ -71,7 +71,7 @@ class CreateCodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCodeRequest.
+        r"""Gets the body of this CreateCodeRequest.
 
         :return: The body of this CreateCodeRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SendCodeReq`
@@ -80,7 +80,7 @@ class CreateCodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCodeRequest.
+        r"""Sets the body of this CreateCodeRequest.
 
         :param body: The body of this CreateCodeRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.SendCodeReq`

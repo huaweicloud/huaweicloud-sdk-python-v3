@@ -29,7 +29,7 @@ class UpdateIpGroupOption:
     }
 
     def __init__(self, description=None, name=None, ip_list=None):
-        """UpdateIpGroupOption
+        r"""UpdateIpGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateIpGroupOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateIpGroupOption.
+        r"""Gets the description of this UpdateIpGroupOption.
 
         参数解释：IP地址组的描述信息
 
@@ -68,7 +68,7 @@ class UpdateIpGroupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateIpGroupOption.
+        r"""Sets the description of this UpdateIpGroupOption.
 
         参数解释：IP地址组的描述信息
 
@@ -79,7 +79,7 @@ class UpdateIpGroupOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateIpGroupOption.
+        r"""Gets the name of this UpdateIpGroupOption.
 
         参数解释：IP地址组的名称
 
@@ -90,7 +90,7 @@ class UpdateIpGroupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateIpGroupOption.
+        r"""Sets the name of this UpdateIpGroupOption.
 
         参数解释：IP地址组的名称
 
@@ -101,7 +101,7 @@ class UpdateIpGroupOption:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this UpdateIpGroupOption.
+        r"""Gets the ip_list of this UpdateIpGroupOption.
 
         参数解释：IP地址组中包含的IP列表。
 
@@ -112,7 +112,7 @@ class UpdateIpGroupOption:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this UpdateIpGroupOption.
+        r"""Sets the ip_list of this UpdateIpGroupOption.
 
         参数解释：IP地址组中包含的IP列表。
 

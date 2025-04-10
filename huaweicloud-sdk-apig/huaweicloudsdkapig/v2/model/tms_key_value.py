@@ -27,7 +27,7 @@ class TmsKeyValue:
     }
 
     def __init__(self, key=None, value=None):
-        """TmsKeyValue
+        r"""TmsKeyValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TmsKeyValue:
 
     @property
     def key(self):
-        """Gets the key of this TmsKeyValue.
+        r"""Gets the key of this TmsKeyValue.
 
         键。  支持可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : = + - @； \\_sys\\_开头属于系统标签，租户不能输入
 
@@ -61,7 +61,7 @@ class TmsKeyValue:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TmsKeyValue.
+        r"""Sets the key of this TmsKeyValue.
 
         键。  支持可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : = + - @； \\_sys\\_开头属于系统标签，租户不能输入
 
@@ -72,7 +72,7 @@ class TmsKeyValue:
 
     @property
     def value(self):
-        """Gets the value of this TmsKeyValue.
+        r"""Gets the value of this TmsKeyValue.
 
         值。  支持可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / = + - @
 
@@ -83,7 +83,7 @@ class TmsKeyValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TmsKeyValue.
+        r"""Sets the value of this TmsKeyValue.
 
         值。  支持可用 UTF-8 格式表示的字母(包含中文)、数字和空格，以及以下字符： _ . : / = + - @
 

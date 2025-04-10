@@ -43,7 +43,7 @@ class GlobalConnectionBandwidthSpecCode:
     }
 
     def __init__(self, id=None, local_area=None, remote_area=None, created_at=None, updated_at=None, name_zh=None, name_en=None, level=None, sku=None, size=None):
-        """GlobalConnectionBandwidthSpecCode
+        r"""GlobalConnectionBandwidthSpecCode
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @property
     def id(self):
-        """Gets the id of this GlobalConnectionBandwidthSpecCode.
+        r"""Gets the id of this GlobalConnectionBandwidthSpecCode.
 
         实例ID。
 
@@ -114,7 +114,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GlobalConnectionBandwidthSpecCode.
+        r"""Sets the id of this GlobalConnectionBandwidthSpecCode.
 
         实例ID。
 
@@ -125,7 +125,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @property
     def local_area(self):
-        """Gets the local_area of this GlobalConnectionBandwidthSpecCode.
+        r"""Gets the local_area of this GlobalConnectionBandwidthSpecCode.
 
         功能说明：本端接入点，配合remote_area信息描述带宽实例应用的范围。 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点），站点编码通过接口获取，带宽类型为Region可不传，其他类型必传 
 
@@ -136,7 +136,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @local_area.setter
     def local_area(self, local_area):
-        """Sets the local_area of this GlobalConnectionBandwidthSpecCode.
+        r"""Sets the local_area of this GlobalConnectionBandwidthSpecCode.
 
         功能说明：本端接入点，配合remote_area信息描述带宽实例应用的范围。 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点），站点编码通过接口获取，带宽类型为Region可不传，其他类型必传 
 
@@ -147,7 +147,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @property
     def remote_area(self):
-        """Gets the remote_area of this GlobalConnectionBandwidthSpecCode.
+        r"""Gets the remote_area of this GlobalConnectionBandwidthSpecCode.
 
         功能说明：远端接入点，配合local_area信息描述带宽实例应用的范围。 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点），站点编码通过接口获取，带宽类型为Region可不传，其他类型必传 
 
@@ -158,7 +158,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @remote_area.setter
     def remote_area(self, remote_area):
-        """Sets the remote_area of this GlobalConnectionBandwidthSpecCode.
+        r"""Sets the remote_area of this GlobalConnectionBandwidthSpecCode.
 
         功能说明：远端接入点，配合local_area信息描述带宽实例应用的范围。 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点），站点编码通过接口获取，带宽类型为Region可不传，其他类型必传 
 
@@ -169,7 +169,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @property
     def created_at(self):
-        """Gets the created_at of this GlobalConnectionBandwidthSpecCode.
+        r"""Gets the created_at of this GlobalConnectionBandwidthSpecCode.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -180,7 +180,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this GlobalConnectionBandwidthSpecCode.
+        r"""Sets the created_at of this GlobalConnectionBandwidthSpecCode.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -191,7 +191,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this GlobalConnectionBandwidthSpecCode.
+        r"""Gets the updated_at of this GlobalConnectionBandwidthSpecCode.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -202,7 +202,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this GlobalConnectionBandwidthSpecCode.
+        r"""Sets the updated_at of this GlobalConnectionBandwidthSpecCode.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -213,7 +213,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @property
     def name_zh(self):
-        """Gets the name_zh of this GlobalConnectionBandwidthSpecCode.
+        r"""Gets the name_zh of this GlobalConnectionBandwidthSpecCode.
 
         功能说明：线路规格中文名。
 
@@ -224,7 +224,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @name_zh.setter
     def name_zh(self, name_zh):
-        """Sets the name_zh of this GlobalConnectionBandwidthSpecCode.
+        r"""Sets the name_zh of this GlobalConnectionBandwidthSpecCode.
 
         功能说明：线路规格中文名。
 
@@ -235,7 +235,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @property
     def name_en(self):
-        """Gets the name_en of this GlobalConnectionBandwidthSpecCode.
+        r"""Gets the name_en of this GlobalConnectionBandwidthSpecCode.
 
         功能说明：线路规格英文名。
 
@@ -246,7 +246,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this GlobalConnectionBandwidthSpecCode.
+        r"""Sets the name_en of this GlobalConnectionBandwidthSpecCode.
 
         功能说明：线路规格英文名。
 
@@ -257,7 +257,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @property
     def level(self):
-        """Gets the level of this GlobalConnectionBandwidthSpecCode.
+        r"""Gets the level of this GlobalConnectionBandwidthSpecCode.
 
         支持的线路等级： - Pt: 铂金 - Au: 金 - Ag: 银
 
@@ -268,7 +268,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this GlobalConnectionBandwidthSpecCode.
+        r"""Sets the level of this GlobalConnectionBandwidthSpecCode.
 
         支持的线路等级： - Pt: 铂金 - Au: 金 - Ag: 银
 
@@ -279,7 +279,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @property
     def sku(self):
-        """Gets the sku of this GlobalConnectionBandwidthSpecCode.
+        r"""Gets the sku of this GlobalConnectionBandwidthSpecCode.
 
         功能描述：GCB特定线路规格产品编码。
 
@@ -290,7 +290,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @sku.setter
     def sku(self, sku):
-        """Sets the sku of this GlobalConnectionBandwidthSpecCode.
+        r"""Sets the sku of this GlobalConnectionBandwidthSpecCode.
 
         功能描述：GCB特定线路规格产品编码。
 
@@ -301,7 +301,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @property
     def size(self):
-        """Gets the size of this GlobalConnectionBandwidthSpecCode.
+        r"""Gets the size of this GlobalConnectionBandwidthSpecCode.
 
         功能描述：带宽起售值，单位Mbps。
 
@@ -312,7 +312,7 @@ class GlobalConnectionBandwidthSpecCode:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this GlobalConnectionBandwidthSpecCode.
+        r"""Sets the size of this GlobalConnectionBandwidthSpecCode.
 
         功能描述：带宽起售值，单位Mbps。
 

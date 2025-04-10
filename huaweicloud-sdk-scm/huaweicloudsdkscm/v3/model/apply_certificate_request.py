@@ -27,7 +27,7 @@ class ApplyCertificateRequest:
     }
 
     def __init__(self, certificate_id=None, body=None):
-        """ApplyCertificateRequest
+        r"""ApplyCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ApplyCertificateRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this ApplyCertificateRequest.
+        r"""Gets the certificate_id of this ApplyCertificateRequest.
 
         证书id。
 
@@ -60,7 +60,7 @@ class ApplyCertificateRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this ApplyCertificateRequest.
+        r"""Sets the certificate_id of this ApplyCertificateRequest.
 
         证书id。
 
@@ -71,7 +71,7 @@ class ApplyCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this ApplyCertificateRequest.
+        r"""Gets the body of this ApplyCertificateRequest.
 
         :return: The body of this ApplyCertificateRequest.
         :rtype: :class:`huaweicloudsdkscm.v3.ApplyCertificateRequestBody`
@@ -80,7 +80,7 @@ class ApplyCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ApplyCertificateRequest.
+        r"""Sets the body of this ApplyCertificateRequest.
 
         :param body: The body of this ApplyCertificateRequest.
         :type body: :class:`huaweicloudsdkscm.v3.ApplyCertificateRequestBody`

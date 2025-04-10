@@ -41,7 +41,7 @@ class BaseJob:
     }
 
     def __init__(self, status=None, begin_time=None, end_time=None, job_id=None, job_type=None, error_code=None, error_msg=None, project_id=None, resource_id=None):
-        """BaseJob
+        r"""BaseJob
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class BaseJob:
 
     @property
     def status(self):
-        """Gets the status of this BaseJob.
+        r"""Gets the status of this BaseJob.
 
         任务状态
 
@@ -110,7 +110,7 @@ class BaseJob:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BaseJob.
+        r"""Sets the status of this BaseJob.
 
         任务状态
 
@@ -121,7 +121,7 @@ class BaseJob:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this BaseJob.
+        r"""Gets the begin_time of this BaseJob.
 
         任务开始时间
 
@@ -132,7 +132,7 @@ class BaseJob:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this BaseJob.
+        r"""Sets the begin_time of this BaseJob.
 
         任务开始时间
 
@@ -143,7 +143,7 @@ class BaseJob:
 
     @property
     def end_time(self):
-        """Gets the end_time of this BaseJob.
+        r"""Gets the end_time of this BaseJob.
 
         任务结束时间
 
@@ -154,7 +154,7 @@ class BaseJob:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this BaseJob.
+        r"""Sets the end_time of this BaseJob.
 
         任务结束时间
 
@@ -165,7 +165,7 @@ class BaseJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this BaseJob.
+        r"""Gets the job_id of this BaseJob.
 
         任务ID
 
@@ -176,7 +176,7 @@ class BaseJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BaseJob.
+        r"""Sets the job_id of this BaseJob.
 
         任务ID
 
@@ -187,7 +187,7 @@ class BaseJob:
 
     @property
     def job_type(self):
-        """Gets the job_type of this BaseJob.
+        r"""Gets the job_type of this BaseJob.
 
         任务类型
 
@@ -198,7 +198,7 @@ class BaseJob:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this BaseJob.
+        r"""Sets the job_type of this BaseJob.
 
         任务类型
 
@@ -209,7 +209,7 @@ class BaseJob:
 
     @property
     def error_code(self):
-        """Gets the error_code of this BaseJob.
+        r"""Gets the error_code of this BaseJob.
 
         任务的错误码
 
@@ -220,7 +220,7 @@ class BaseJob:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this BaseJob.
+        r"""Sets the error_code of this BaseJob.
 
         任务的错误码
 
@@ -231,7 +231,7 @@ class BaseJob:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this BaseJob.
+        r"""Gets the error_msg of this BaseJob.
 
         任务的错误信息
 
@@ -242,7 +242,7 @@ class BaseJob:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this BaseJob.
+        r"""Sets the error_msg of this BaseJob.
 
         任务的错误信息
 
@@ -253,7 +253,7 @@ class BaseJob:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BaseJob.
+        r"""Gets the project_id of this BaseJob.
 
         项目ID
 
@@ -264,7 +264,7 @@ class BaseJob:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BaseJob.
+        r"""Sets the project_id of this BaseJob.
 
         项目ID
 
@@ -275,7 +275,7 @@ class BaseJob:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BaseJob.
+        r"""Gets the resource_id of this BaseJob.
 
         参数解释：资源ID。
 
@@ -286,7 +286,7 @@ class BaseJob:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BaseJob.
+        r"""Sets the resource_id of this BaseJob.
 
         参数解释：资源ID。
 

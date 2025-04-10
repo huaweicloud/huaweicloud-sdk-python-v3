@@ -29,7 +29,7 @@ class TagSatisfactionRequest:
     }
 
     def __init__(self, qabot_id=None, request_id=None, body=None):
-        """TagSatisfactionRequest
+        r"""TagSatisfactionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TagSatisfactionRequest:
 
     @property
     def qabot_id(self):
-        """Gets the qabot_id of this TagSatisfactionRequest.
+        r"""Gets the qabot_id of this TagSatisfactionRequest.
 
         qabot编号，UUID格式。
 
@@ -66,7 +66,7 @@ class TagSatisfactionRequest:
 
     @qabot_id.setter
     def qabot_id(self, qabot_id):
-        """Sets the qabot_id of this TagSatisfactionRequest.
+        r"""Sets the qabot_id of this TagSatisfactionRequest.
 
         qabot编号，UUID格式。
 
@@ -77,7 +77,7 @@ class TagSatisfactionRequest:
 
     @property
     def request_id(self):
-        """Gets the request_id of this TagSatisfactionRequest.
+        r"""Gets the request_id of this TagSatisfactionRequest.
 
         请求ID，由问答机器人会话生成。
 
@@ -88,7 +88,7 @@ class TagSatisfactionRequest:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this TagSatisfactionRequest.
+        r"""Sets the request_id of this TagSatisfactionRequest.
 
         请求ID，由问答机器人会话生成。
 
@@ -99,7 +99,7 @@ class TagSatisfactionRequest:
 
     @property
     def body(self):
-        """Gets the body of this TagSatisfactionRequest.
+        r"""Gets the body of this TagSatisfactionRequest.
 
         :return: The body of this TagSatisfactionRequest.
         :rtype: :class:`huaweicloudsdkcbs.v1.PostSatisfactionReq`
@@ -108,7 +108,7 @@ class TagSatisfactionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this TagSatisfactionRequest.
+        r"""Sets the body of this TagSatisfactionRequest.
 
         :param body: The body of this TagSatisfactionRequest.
         :type body: :class:`huaweicloudsdkcbs.v1.PostSatisfactionReq`

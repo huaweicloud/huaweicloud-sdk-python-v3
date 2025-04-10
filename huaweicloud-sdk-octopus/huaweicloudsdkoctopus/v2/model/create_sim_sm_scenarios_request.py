@@ -25,7 +25,7 @@ class CreateSimSmScenariosRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSimSmScenariosRequest
+        r"""CreateSimSmScenariosRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSimSmScenariosRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSimSmScenariosRequest.
+        r"""Gets the body of this CreateSimSmScenariosRequest.
 
         :return: The body of this CreateSimSmScenariosRequest.
         :rtype: :class:`huaweicloudsdkoctopus.v2.ScenarioCreateReqSrlz`
@@ -52,7 +52,7 @@ class CreateSimSmScenariosRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSimSmScenariosRequest.
+        r"""Sets the body of this CreateSimSmScenariosRequest.
 
         :param body: The body of this CreateSimSmScenariosRequest.
         :type body: :class:`huaweicloudsdkoctopus.v2.ScenarioCreateReqSrlz`

@@ -30,7 +30,7 @@ class CreateNewTaskResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, task_id=None):
-        """CreateNewTaskResponse
+        r"""CreateNewTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateNewTaskResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateNewTaskResponse.
+        r"""Gets the code of this CreateNewTaskResponse.
 
         响应码
 
@@ -69,7 +69,7 @@ class CreateNewTaskResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateNewTaskResponse.
+        r"""Sets the code of this CreateNewTaskResponse.
 
         响应码
 
@@ -80,7 +80,7 @@ class CreateNewTaskResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateNewTaskResponse.
+        r"""Gets the message of this CreateNewTaskResponse.
 
         响应消息
 
@@ -91,7 +91,7 @@ class CreateNewTaskResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateNewTaskResponse.
+        r"""Sets the message of this CreateNewTaskResponse.
 
         响应消息
 
@@ -102,7 +102,7 @@ class CreateNewTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateNewTaskResponse.
+        r"""Gets the task_id of this CreateNewTaskResponse.
 
         任务id
 
@@ -113,7 +113,7 @@ class CreateNewTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateNewTaskResponse.
+        r"""Sets the task_id of this CreateNewTaskResponse.
 
         任务id
 

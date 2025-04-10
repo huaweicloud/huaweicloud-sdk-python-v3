@@ -26,7 +26,7 @@ class ListCloudImagesResponse(SdkResponse):
     }
 
     def __init__(self, images=None):
-        """ListCloudImagesResponse
+        r"""ListCloudImagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListCloudImagesResponse(SdkResponse):
 
     @property
     def images(self):
-        """Gets the images of this ListCloudImagesResponse.
+        r"""Gets the images of this ListCloudImagesResponse.
 
         查询返回的镜像列表。
 
@@ -55,7 +55,7 @@ class ListCloudImagesResponse(SdkResponse):
 
     @images.setter
     def images(self, images):
-        """Sets the images of this ListCloudImagesResponse.
+        r"""Sets the images of this ListCloudImagesResponse.
 
         查询返回的镜像列表。
 

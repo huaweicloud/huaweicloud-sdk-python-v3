@@ -31,7 +31,7 @@ class SecurityGroup:
     }
 
     def __init__(self, id=None, name=None, description=None, security_group_rules=None):
-        """SecurityGroup
+        r"""SecurityGroup
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SecurityGroup:
 
     @property
     def id(self):
-        """Gets the id of this SecurityGroup.
+        r"""Gets the id of this SecurityGroup.
 
         安全组的ID。UUID
 
@@ -75,7 +75,7 @@ class SecurityGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecurityGroup.
+        r"""Sets the id of this SecurityGroup.
 
         安全组的ID。UUID
 
@@ -86,7 +86,7 @@ class SecurityGroup:
 
     @property
     def name(self):
-        """Gets the name of this SecurityGroup.
+        r"""Gets the name of this SecurityGroup.
 
         安全组的名称。
 
@@ -97,7 +97,7 @@ class SecurityGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SecurityGroup.
+        r"""Sets the name of this SecurityGroup.
 
         安全组的名称。
 
@@ -108,7 +108,7 @@ class SecurityGroup:
 
     @property
     def description(self):
-        """Gets the description of this SecurityGroup.
+        r"""Gets the description of this SecurityGroup.
 
         安全组的描述。
 
@@ -119,7 +119,7 @@ class SecurityGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SecurityGroup.
+        r"""Sets the description of this SecurityGroup.
 
         安全组的描述。
 
@@ -130,7 +130,7 @@ class SecurityGroup:
 
     @property
     def security_group_rules(self):
-        """Gets the security_group_rules of this SecurityGroup.
+        r"""Gets the security_group_rules of this SecurityGroup.
 
         安全组规则列表。
 
@@ -141,7 +141,7 @@ class SecurityGroup:
 
     @security_group_rules.setter
     def security_group_rules(self, security_group_rules):
-        """Sets the security_group_rules of this SecurityGroup.
+        r"""Sets the security_group_rules of this SecurityGroup.
 
         安全组规则列表。
 

@@ -25,7 +25,7 @@ class TokenAuth:
     }
 
     def __init__(self, identity=None):
-        """TokenAuth
+        r"""TokenAuth
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class TokenAuth:
 
     @property
     def identity(self):
-        """Gets the identity of this TokenAuth.
+        r"""Gets the identity of this TokenAuth.
 
         :return: The identity of this TokenAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.TokenAuthIdentity`
@@ -51,7 +51,7 @@ class TokenAuth:
 
     @identity.setter
     def identity(self, identity):
-        """Sets the identity of this TokenAuth.
+        r"""Sets the identity of this TokenAuth.
 
         :param identity: The identity of this TokenAuth.
         :type identity: :class:`huaweicloudsdkiam.v3.TokenAuthIdentity`

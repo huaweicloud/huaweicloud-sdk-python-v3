@@ -27,7 +27,7 @@ class ScopedTokenIdentity:
     }
 
     def __init__(self, methods=None, token=None):
-        """ScopedTokenIdentity
+        r"""ScopedTokenIdentity
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ScopedTokenIdentity:
 
     @property
     def methods(self):
-        """Gets the methods of this ScopedTokenIdentity.
+        r"""Gets the methods of this ScopedTokenIdentity.
 
         认证方法，该字段内容为“token”。
 
@@ -59,7 +59,7 @@ class ScopedTokenIdentity:
 
     @methods.setter
     def methods(self, methods):
-        """Sets the methods of this ScopedTokenIdentity.
+        r"""Sets the methods of this ScopedTokenIdentity.
 
         认证方法，该字段内容为“token”。
 
@@ -70,7 +70,7 @@ class ScopedTokenIdentity:
 
     @property
     def token(self):
-        """Gets the token of this ScopedTokenIdentity.
+        r"""Gets the token of this ScopedTokenIdentity.
 
         :return: The token of this ScopedTokenIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.ScopedToken`
@@ -79,7 +79,7 @@ class ScopedTokenIdentity:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this ScopedTokenIdentity.
+        r"""Sets the token of this ScopedTokenIdentity.
 
         :param token: The token of this ScopedTokenIdentity.
         :type token: :class:`huaweicloudsdkiam.v3.ScopedToken`

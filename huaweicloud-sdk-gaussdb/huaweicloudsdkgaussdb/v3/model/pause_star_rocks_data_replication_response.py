@@ -26,7 +26,7 @@ class PauseStarRocksDataReplicationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """PauseStarRocksDataReplicationResponse
+        r"""PauseStarRocksDataReplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class PauseStarRocksDataReplicationResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this PauseStarRocksDataReplicationResponse.
+        r"""Gets the job_id of this PauseStarRocksDataReplicationResponse.
 
         恢复数据同步的任务ID。
 
@@ -55,7 +55,7 @@ class PauseStarRocksDataReplicationResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this PauseStarRocksDataReplicationResponse.
+        r"""Sets the job_id of this PauseStarRocksDataReplicationResponse.
 
         恢复数据同步的任务ID。
 

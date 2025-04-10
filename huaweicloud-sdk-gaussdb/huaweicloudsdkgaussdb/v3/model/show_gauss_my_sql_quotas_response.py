@@ -28,7 +28,7 @@ class ShowGaussMySqlQuotasResponse(SdkResponse):
     }
 
     def __init__(self, quota_list=None, total_count=None):
-        """ShowGaussMySqlQuotasResponse
+        r"""ShowGaussMySqlQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowGaussMySqlQuotasResponse(SdkResponse):
 
     @property
     def quota_list(self):
-        """Gets the quota_list of this ShowGaussMySqlQuotasResponse.
+        r"""Gets the quota_list of this ShowGaussMySqlQuotasResponse.
 
         资源列表对象。
 
@@ -62,7 +62,7 @@ class ShowGaussMySqlQuotasResponse(SdkResponse):
 
     @quota_list.setter
     def quota_list(self, quota_list):
-        """Sets the quota_list of this ShowGaussMySqlQuotasResponse.
+        r"""Sets the quota_list of this ShowGaussMySqlQuotasResponse.
 
         资源列表对象。
 
@@ -73,7 +73,7 @@ class ShowGaussMySqlQuotasResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowGaussMySqlQuotasResponse.
+        r"""Gets the total_count of this ShowGaussMySqlQuotasResponse.
 
         配额记录的条数。
 
@@ -84,7 +84,7 @@ class ShowGaussMySqlQuotasResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowGaussMySqlQuotasResponse.
+        r"""Sets the total_count of this ShowGaussMySqlQuotasResponse.
 
         配额记录的条数。
 

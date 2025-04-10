@@ -25,7 +25,7 @@ class SetAsymmetricSignatureReq:
     }
 
     def __init__(self, asymmetric_signature=None):
-        """SetAsymmetricSignatureReq
+        r"""SetAsymmetricSignatureReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SetAsymmetricSignatureReq:
 
     @property
     def asymmetric_signature(self):
-        """Gets the asymmetric_signature of this SetAsymmetricSignatureReq.
+        r"""Gets the asymmetric_signature of this SetAsymmetricSignatureReq.
 
         :return: The asymmetric_signature of this SetAsymmetricSignatureReq.
         :rtype: :class:`huaweicloudsdkiam.v5.AsymmetricSignature`
@@ -51,7 +51,7 @@ class SetAsymmetricSignatureReq:
 
     @asymmetric_signature.setter
     def asymmetric_signature(self, asymmetric_signature):
-        """Sets the asymmetric_signature of this SetAsymmetricSignatureReq.
+        r"""Sets the asymmetric_signature of this SetAsymmetricSignatureReq.
 
         :param asymmetric_signature: The asymmetric_signature of this SetAsymmetricSignatureReq.
         :type asymmetric_signature: :class:`huaweicloudsdkiam.v5.AsymmetricSignature`

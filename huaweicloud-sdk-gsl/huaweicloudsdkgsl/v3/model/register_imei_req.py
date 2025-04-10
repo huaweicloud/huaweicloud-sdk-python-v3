@@ -29,7 +29,7 @@ class RegisterImeiReq:
     }
 
     def __init__(self, bind_type=None, imei=None, iccid=None):
-        """RegisterImeiReq
+        r"""RegisterImeiReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RegisterImeiReq:
 
     @property
     def bind_type(self):
-        """Gets the bind_type of this RegisterImeiReq.
+        r"""Gets the bind_type of this RegisterImeiReq.
 
         绑定类型(1:普通机卡重绑，2：固定机卡重绑)
 
@@ -67,7 +67,7 @@ class RegisterImeiReq:
 
     @bind_type.setter
     def bind_type(self, bind_type):
-        """Sets the bind_type of this RegisterImeiReq.
+        r"""Sets the bind_type of this RegisterImeiReq.
 
         绑定类型(1:普通机卡重绑，2：固定机卡重绑)
 
@@ -78,7 +78,7 @@ class RegisterImeiReq:
 
     @property
     def imei(self):
-        """Gets the imei of this RegisterImeiReq.
+        r"""Gets the imei of this RegisterImeiReq.
 
         设备IMEI,84584xxxxxx
 
@@ -89,7 +89,7 @@ class RegisterImeiReq:
 
     @imei.setter
     def imei(self, imei):
-        """Sets the imei of this RegisterImeiReq.
+        r"""Sets the imei of this RegisterImeiReq.
 
         设备IMEI,84584xxxxxx
 
@@ -100,7 +100,7 @@ class RegisterImeiReq:
 
     @property
     def iccid(self):
-        """Gets the iccid of this RegisterImeiReq.
+        r"""Gets the iccid of this RegisterImeiReq.
 
         iccid，传入的sim_card_id为0,则根据iccid进行处理
 
@@ -111,7 +111,7 @@ class RegisterImeiReq:
 
     @iccid.setter
     def iccid(self, iccid):
-        """Sets the iccid of this RegisterImeiReq.
+        r"""Sets the iccid of this RegisterImeiReq.
 
         iccid，传入的sim_card_id为0,则根据iccid进行处理
 

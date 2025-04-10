@@ -25,7 +25,7 @@ class CreateEventsRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEventsRequest
+        r"""CreateEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateEventsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEventsRequest.
+        r"""Gets the body of this CreateEventsRequest.
 
         上报自定义事件。请求参数。
 
@@ -54,7 +54,7 @@ class CreateEventsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEventsRequest.
+        r"""Sets the body of this CreateEventsRequest.
 
         上报自定义事件。请求参数。
 

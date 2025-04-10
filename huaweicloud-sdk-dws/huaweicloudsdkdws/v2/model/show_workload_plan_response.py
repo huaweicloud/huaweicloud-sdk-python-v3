@@ -30,7 +30,7 @@ class ShowWorkloadPlanResponse(SdkResponse):
     }
 
     def __init__(self, workload_res_code=None, workload_res_str=None, workload_plan=None):
-        """ShowWorkloadPlanResponse
+        r"""ShowWorkloadPlanResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowWorkloadPlanResponse(SdkResponse):
 
     @property
     def workload_res_code(self):
-        """Gets the workload_res_code of this ShowWorkloadPlanResponse.
+        r"""Gets the workload_res_code of this ShowWorkloadPlanResponse.
 
         结果状态码。
 
@@ -69,7 +69,7 @@ class ShowWorkloadPlanResponse(SdkResponse):
 
     @workload_res_code.setter
     def workload_res_code(self, workload_res_code):
-        """Sets the workload_res_code of this ShowWorkloadPlanResponse.
+        r"""Sets the workload_res_code of this ShowWorkloadPlanResponse.
 
         结果状态码。
 
@@ -80,7 +80,7 @@ class ShowWorkloadPlanResponse(SdkResponse):
 
     @property
     def workload_res_str(self):
-        """Gets the workload_res_str of this ShowWorkloadPlanResponse.
+        r"""Gets the workload_res_str of this ShowWorkloadPlanResponse.
 
         结果描述。
 
@@ -91,7 +91,7 @@ class ShowWorkloadPlanResponse(SdkResponse):
 
     @workload_res_str.setter
     def workload_res_str(self, workload_res_str):
-        """Sets the workload_res_str of this ShowWorkloadPlanResponse.
+        r"""Sets the workload_res_str of this ShowWorkloadPlanResponse.
 
         结果描述。
 
@@ -102,7 +102,7 @@ class ShowWorkloadPlanResponse(SdkResponse):
 
     @property
     def workload_plan(self):
-        """Gets the workload_plan of this ShowWorkloadPlanResponse.
+        r"""Gets the workload_plan of this ShowWorkloadPlanResponse.
 
         :return: The workload_plan of this ShowWorkloadPlanResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.WorkloadPlanInfo`
@@ -111,7 +111,7 @@ class ShowWorkloadPlanResponse(SdkResponse):
 
     @workload_plan.setter
     def workload_plan(self, workload_plan):
-        """Sets the workload_plan of this ShowWorkloadPlanResponse.
+        r"""Sets the workload_plan of this ShowWorkloadPlanResponse.
 
         :param workload_plan: The workload_plan of this ShowWorkloadPlanResponse.
         :type workload_plan: :class:`huaweicloudsdkdws.v2.WorkloadPlanInfo`

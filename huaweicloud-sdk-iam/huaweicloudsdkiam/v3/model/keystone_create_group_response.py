@@ -26,7 +26,7 @@ class KeystoneCreateGroupResponse(SdkResponse):
     }
 
     def __init__(self, group=None):
-        """KeystoneCreateGroupResponse
+        r"""KeystoneCreateGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class KeystoneCreateGroupResponse(SdkResponse):
 
     @property
     def group(self):
-        """Gets the group of this KeystoneCreateGroupResponse.
+        r"""Gets the group of this KeystoneCreateGroupResponse.
 
         :return: The group of this KeystoneCreateGroupResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneGroupResultWithLinksSelf`
@@ -53,7 +53,7 @@ class KeystoneCreateGroupResponse(SdkResponse):
 
     @group.setter
     def group(self, group):
-        """Sets the group of this KeystoneCreateGroupResponse.
+        r"""Sets the group of this KeystoneCreateGroupResponse.
 
         :param group: The group of this KeystoneCreateGroupResponse.
         :type group: :class:`huaweicloudsdkiam.v3.KeystoneGroupResultWithLinksSelf`

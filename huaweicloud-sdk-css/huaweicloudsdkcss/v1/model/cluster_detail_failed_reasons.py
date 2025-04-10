@@ -27,7 +27,7 @@ class ClusterDetailFailedReasons:
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """ClusterDetailFailedReasons
+        r"""ClusterDetailFailedReasons
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ClusterDetailFailedReasons:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ClusterDetailFailedReasons.
+        r"""Gets the error_code of this ClusterDetailFailedReasons.
 
         错误码。  - CSS.6000：表示集群创建失败。 - CSS.6001：表示集群扩容失败。 - CSS.6002：表示集群重启失败。 - CSS.6004：表示集群节点创建失败。 - CSS.6005：表示服务初始化失败。
 
@@ -61,7 +61,7 @@ class ClusterDetailFailedReasons:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ClusterDetailFailedReasons.
+        r"""Sets the error_code of this ClusterDetailFailedReasons.
 
         错误码。  - CSS.6000：表示集群创建失败。 - CSS.6001：表示集群扩容失败。 - CSS.6002：表示集群重启失败。 - CSS.6004：表示集群节点创建失败。 - CSS.6005：表示服务初始化失败。
 
@@ -72,7 +72,7 @@ class ClusterDetailFailedReasons:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ClusterDetailFailedReasons.
+        r"""Gets the error_msg of this ClusterDetailFailedReasons.
 
         详细错误信息。
 
@@ -83,7 +83,7 @@ class ClusterDetailFailedReasons:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ClusterDetailFailedReasons.
+        r"""Sets the error_msg of this ClusterDetailFailedReasons.
 
         详细错误信息。
 

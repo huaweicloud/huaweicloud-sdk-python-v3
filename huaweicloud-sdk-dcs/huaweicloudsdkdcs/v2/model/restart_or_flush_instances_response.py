@@ -26,7 +26,7 @@ class RestartOrFlushInstancesResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """RestartOrFlushInstancesResponse
+        r"""RestartOrFlushInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RestartOrFlushInstancesResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this RestartOrFlushInstancesResponse.
+        r"""Gets the results of this RestartOrFlushInstancesResponse.
 
         删除/重启/清空实例的结果。
 
@@ -55,7 +55,7 @@ class RestartOrFlushInstancesResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this RestartOrFlushInstancesResponse.
+        r"""Sets the results of this RestartOrFlushInstancesResponse.
 
         删除/重启/清空实例的结果。
 

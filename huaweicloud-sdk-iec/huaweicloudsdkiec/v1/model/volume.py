@@ -47,7 +47,7 @@ class Volume:
     }
 
     def __init__(self, id=None, status=None, size=None, availability_zone=None, attachments=None, name=None, description=None, volume_type=None, bootable=None, encrypted=None, multiattach=None, metadata=None):
-        """Volume
+        r"""Volume
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class Volume:
 
     @property
     def id(self):
-        """Gets the id of this Volume.
+        r"""Gets the id of this Volume.
 
         硬盘ID。
 
@@ -130,7 +130,7 @@ class Volume:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Volume.
+        r"""Sets the id of this Volume.
 
         硬盘ID。
 
@@ -141,7 +141,7 @@ class Volume:
 
     @property
     def status(self):
-        """Gets the status of this Volume.
+        r"""Gets the status of this Volume.
 
         磁盘状态。
 
@@ -152,7 +152,7 @@ class Volume:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Volume.
+        r"""Sets the status of this Volume.
 
         磁盘状态。
 
@@ -163,7 +163,7 @@ class Volume:
 
     @property
     def size(self):
-        """Gets the size of this Volume.
+        r"""Gets the size of this Volume.
 
         磁盘大小。
 
@@ -174,7 +174,7 @@ class Volume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Volume.
+        r"""Sets the size of this Volume.
 
         磁盘大小。
 
@@ -185,7 +185,7 @@ class Volume:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this Volume.
+        r"""Gets the availability_zone of this Volume.
 
         硬盘所属的AZ信息。
 
@@ -196,7 +196,7 @@ class Volume:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this Volume.
+        r"""Sets the availability_zone of this Volume.
 
         硬盘所属的AZ信息。
 
@@ -207,7 +207,7 @@ class Volume:
 
     @property
     def attachments(self):
-        """Gets the attachments of this Volume.
+        r"""Gets the attachments of this Volume.
 
         硬盘的挂载信息。
 
@@ -218,7 +218,7 @@ class Volume:
 
     @attachments.setter
     def attachments(self, attachments):
-        """Sets the attachments of this Volume.
+        r"""Sets the attachments of this Volume.
 
         硬盘的挂载信息。
 
@@ -229,7 +229,7 @@ class Volume:
 
     @property
     def name(self):
-        """Gets the name of this Volume.
+        r"""Gets the name of this Volume.
 
         磁盘名称。
 
@@ -240,7 +240,7 @@ class Volume:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Volume.
+        r"""Sets the name of this Volume.
 
         磁盘名称。
 
@@ -251,7 +251,7 @@ class Volume:
 
     @property
     def description(self):
-        """Gets the description of this Volume.
+        r"""Gets the description of this Volume.
 
         描述。
 
@@ -262,7 +262,7 @@ class Volume:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Volume.
+        r"""Sets the description of this Volume.
 
         描述。
 
@@ -273,7 +273,7 @@ class Volume:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this Volume.
+        r"""Gets the volume_type of this Volume.
 
         磁盘类型。
 
@@ -284,7 +284,7 @@ class Volume:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this Volume.
+        r"""Sets the volume_type of this Volume.
 
         磁盘类型。
 
@@ -295,7 +295,7 @@ class Volume:
 
     @property
     def bootable(self):
-        """Gets the bootable of this Volume.
+        r"""Gets the bootable of this Volume.
 
         显示这个卷是否可启动。
 
@@ -306,7 +306,7 @@ class Volume:
 
     @bootable.setter
     def bootable(self, bootable):
-        """Sets the bootable of this Volume.
+        r"""Sets the bootable of this Volume.
 
         显示这个卷是否可启动。
 
@@ -317,7 +317,7 @@ class Volume:
 
     @property
     def encrypted(self):
-        """Gets the encrypted of this Volume.
+        r"""Gets the encrypted of this Volume.
 
         显示该卷是否已被加密。
 
@@ -328,7 +328,7 @@ class Volume:
 
     @encrypted.setter
     def encrypted(self, encrypted):
-        """Sets the encrypted of this Volume.
+        r"""Sets the encrypted of this Volume.
 
         显示该卷是否已被加密。
 
@@ -339,7 +339,7 @@ class Volume:
 
     @property
     def multiattach(self):
-        """Gets the multiattach of this Volume.
+        r"""Gets the multiattach of this Volume.
 
         磁盘是否多挂载。
 
@@ -350,7 +350,7 @@ class Volume:
 
     @multiattach.setter
     def multiattach(self, multiattach):
-        """Sets the multiattach of this Volume.
+        r"""Sets the multiattach of this Volume.
 
         磁盘是否多挂载。
 
@@ -361,7 +361,7 @@ class Volume:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Volume.
+        r"""Gets the metadata of this Volume.
 
         硬盘的元数据。
 
@@ -372,7 +372,7 @@ class Volume:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Volume.
+        r"""Sets the metadata of this Volume.
 
         硬盘的元数据。
 

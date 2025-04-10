@@ -29,7 +29,7 @@ class GrantDatabasePermission:
     }
 
     def __init__(self, name=None, host=None, databases=None):
-        """GrantDatabasePermission
+        r"""GrantDatabasePermission
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class GrantDatabasePermission:
 
     @property
     def name(self):
-        """Gets the name of this GrantDatabasePermission.
+        r"""Gets the name of this GrantDatabasePermission.
 
         数据库用户名。
 
@@ -65,7 +65,7 @@ class GrantDatabasePermission:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GrantDatabasePermission.
+        r"""Sets the name of this GrantDatabasePermission.
 
         数据库用户名。
 
@@ -76,7 +76,7 @@ class GrantDatabasePermission:
 
     @property
     def host(self):
-        """Gets the host of this GrantDatabasePermission.
+        r"""Gets the host of this GrantDatabasePermission.
 
         主机地址。
 
@@ -87,7 +87,7 @@ class GrantDatabasePermission:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this GrantDatabasePermission.
+        r"""Sets the host of this GrantDatabasePermission.
 
         主机地址。
 
@@ -98,7 +98,7 @@ class GrantDatabasePermission:
 
     @property
     def databases(self):
-        """Gets the databases of this GrantDatabasePermission.
+        r"""Gets the databases of this GrantDatabasePermission.
 
         :return: The databases of this GrantDatabasePermission.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.DatabasePermission`]
@@ -107,7 +107,7 @@ class GrantDatabasePermission:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this GrantDatabasePermission.
+        r"""Sets the databases of this GrantDatabasePermission.
 
         :param databases: The databases of this GrantDatabasePermission.
         :type databases: list[:class:`huaweicloudsdkgaussdb.v3.DatabasePermission`]

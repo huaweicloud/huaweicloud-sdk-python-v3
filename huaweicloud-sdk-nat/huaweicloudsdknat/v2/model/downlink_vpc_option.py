@@ -25,7 +25,7 @@ class DownlinkVpcOption:
     }
 
     def __init__(self, virsubnet_id=None):
-        """DownlinkVpcOption
+        r"""DownlinkVpcOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DownlinkVpcOption:
 
     @property
     def virsubnet_id(self):
-        """Gets the virsubnet_id of this DownlinkVpcOption.
+        r"""Gets the virsubnet_id of this DownlinkVpcOption.
 
         私网NAT网关实例所属的子网的ID。
 
@@ -53,7 +53,7 @@ class DownlinkVpcOption:
 
     @virsubnet_id.setter
     def virsubnet_id(self, virsubnet_id):
-        """Sets the virsubnet_id of this DownlinkVpcOption.
+        r"""Sets the virsubnet_id of this DownlinkVpcOption.
 
         私网NAT网关实例所属的子网的ID。
 

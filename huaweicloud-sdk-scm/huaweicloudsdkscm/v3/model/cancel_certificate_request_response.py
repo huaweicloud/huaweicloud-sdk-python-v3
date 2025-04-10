@@ -28,7 +28,7 @@ class CancelCertificateRequestResponse(SdkResponse):
     }
 
     def __init__(self, cert_id=None, message=None):
-        """CancelCertificateRequestResponse
+        r"""CancelCertificateRequestResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CancelCertificateRequestResponse(SdkResponse):
 
     @property
     def cert_id(self):
-        """Gets the cert_id of this CancelCertificateRequestResponse.
+        r"""Gets the cert_id of this CancelCertificateRequestResponse.
 
         证书ID。
 
@@ -62,7 +62,7 @@ class CancelCertificateRequestResponse(SdkResponse):
 
     @cert_id.setter
     def cert_id(self, cert_id):
-        """Sets the cert_id of this CancelCertificateRequestResponse.
+        r"""Sets the cert_id of this CancelCertificateRequestResponse.
 
         证书ID。
 
@@ -73,7 +73,7 @@ class CancelCertificateRequestResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CancelCertificateRequestResponse.
+        r"""Gets the message of this CancelCertificateRequestResponse.
 
         执行结果。取值如下： success：申请成功。
 
@@ -84,7 +84,7 @@ class CancelCertificateRequestResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CancelCertificateRequestResponse.
+        r"""Sets the message of this CancelCertificateRequestResponse.
 
         执行结果。取值如下： success：申请成功。
 

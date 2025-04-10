@@ -27,7 +27,7 @@ class ShowAppByNameRequest:
     }
 
     def __init__(self, name=None, display_name=None):
-        """ShowAppByNameRequest
+        r"""ShowAppByNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowAppByNameRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowAppByNameRequest.
+        r"""Gets the name of this ShowAppByNameRequest.
 
         应用唯一标识;字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点；应用唯一标识与显示名称至少填写其一
 
@@ -61,7 +61,7 @@ class ShowAppByNameRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAppByNameRequest.
+        r"""Sets the name of this ShowAppByNameRequest.
 
         应用唯一标识;字符集长度2-64，仅支持字符集：英文字母、数字、下划线、中划线、点；应用唯一标识与显示名称至少填写其一
 
@@ -72,7 +72,7 @@ class ShowAppByNameRequest:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ShowAppByNameRequest.
+        r"""Gets the display_name of this ShowAppByNameRequest.
 
         实体的显示名称；字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点；应用唯一标识与显示名称至少填写其一
 
@@ -83,7 +83,7 @@ class ShowAppByNameRequest:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ShowAppByNameRequest.
+        r"""Sets the display_name of this ShowAppByNameRequest.
 
         实体的显示名称；字符集长度2-64，仅支持字符集：中文字符、英文字母、数字、下划线、中划线、点；应用唯一标识与显示名称至少填写其一
 

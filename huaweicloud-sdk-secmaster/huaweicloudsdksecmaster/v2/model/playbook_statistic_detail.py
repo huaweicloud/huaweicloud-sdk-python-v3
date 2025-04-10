@@ -29,7 +29,7 @@ class PlaybookStatisticDetail:
     }
 
     def __init__(self, unapproved_num=None, disabled_num=None, enabled_num=None):
-        """PlaybookStatisticDetail
+        r"""PlaybookStatisticDetail
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PlaybookStatisticDetail:
 
     @property
     def unapproved_num(self):
-        """Gets the unapproved_num of this PlaybookStatisticDetail.
+        r"""Gets the unapproved_num of this PlaybookStatisticDetail.
 
         未审核剧本数量
 
@@ -68,7 +68,7 @@ class PlaybookStatisticDetail:
 
     @unapproved_num.setter
     def unapproved_num(self, unapproved_num):
-        """Sets the unapproved_num of this PlaybookStatisticDetail.
+        r"""Sets the unapproved_num of this PlaybookStatisticDetail.
 
         未审核剧本数量
 
@@ -79,7 +79,7 @@ class PlaybookStatisticDetail:
 
     @property
     def disabled_num(self):
-        """Gets the disabled_num of this PlaybookStatisticDetail.
+        r"""Gets the disabled_num of this PlaybookStatisticDetail.
 
         未启用剧本数量
 
@@ -90,7 +90,7 @@ class PlaybookStatisticDetail:
 
     @disabled_num.setter
     def disabled_num(self, disabled_num):
-        """Sets the disabled_num of this PlaybookStatisticDetail.
+        r"""Sets the disabled_num of this PlaybookStatisticDetail.
 
         未启用剧本数量
 
@@ -101,7 +101,7 @@ class PlaybookStatisticDetail:
 
     @property
     def enabled_num(self):
-        """Gets the enabled_num of this PlaybookStatisticDetail.
+        r"""Gets the enabled_num of this PlaybookStatisticDetail.
 
         已启用剧本数量
 
@@ -112,7 +112,7 @@ class PlaybookStatisticDetail:
 
     @enabled_num.setter
     def enabled_num(self, enabled_num):
-        """Sets the enabled_num of this PlaybookStatisticDetail.
+        r"""Sets the enabled_num of this PlaybookStatisticDetail.
 
         已启用剧本数量
 

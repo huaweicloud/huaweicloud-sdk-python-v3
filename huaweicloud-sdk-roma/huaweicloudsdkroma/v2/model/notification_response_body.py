@@ -35,7 +35,7 @@ class NotificationResponseBody:
     }
 
     def __init__(self, notification_id=None, type=None, status=None, topic=None, instance_id=None, app_id=None):
-        """NotificationResponseBody
+        r"""NotificationResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class NotificationResponseBody:
 
     @property
     def notification_id(self):
-        """Gets the notification_id of this NotificationResponseBody.
+        r"""Gets the notification_id of this NotificationResponseBody.
 
         订阅ID
 
@@ -89,7 +89,7 @@ class NotificationResponseBody:
 
     @notification_id.setter
     def notification_id(self, notification_id):
-        """Sets the notification_id of this NotificationResponseBody.
+        r"""Sets the notification_id of this NotificationResponseBody.
 
         订阅ID
 
@@ -100,7 +100,7 @@ class NotificationResponseBody:
 
     @property
     def type(self):
-        """Gets the type of this NotificationResponseBody.
+        r"""Gets the type of this NotificationResponseBody.
 
         订阅类型, 0:设备上线通知类型, 1:设备下线通知类型, 2:设备添加通知类型, 3:设备删除通知类型, 4:设备变更通知类型
 
@@ -111,7 +111,7 @@ class NotificationResponseBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NotificationResponseBody.
+        r"""Sets the type of this NotificationResponseBody.
 
         订阅类型, 0:设备上线通知类型, 1:设备下线通知类型, 2:设备添加通知类型, 3:设备删除通知类型, 4:设备变更通知类型
 
@@ -122,7 +122,7 @@ class NotificationResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this NotificationResponseBody.
+        r"""Gets the status of this NotificationResponseBody.
 
         订阅管理状态，0：启用，1：停用
 
@@ -133,7 +133,7 @@ class NotificationResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NotificationResponseBody.
+        r"""Sets the status of this NotificationResponseBody.
 
         订阅管理状态，0：启用，1：停用
 
@@ -144,7 +144,7 @@ class NotificationResponseBody:
 
     @property
     def topic(self):
-        """Gets the topic of this NotificationResponseBody.
+        r"""Gets the topic of this NotificationResponseBody.
 
         订阅的topic名称
 
@@ -155,7 +155,7 @@ class NotificationResponseBody:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this NotificationResponseBody.
+        r"""Sets the topic of this NotificationResponseBody.
 
         订阅的topic名称
 
@@ -166,7 +166,7 @@ class NotificationResponseBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this NotificationResponseBody.
+        r"""Gets the instance_id of this NotificationResponseBody.
 
         实例ID
 
@@ -177,7 +177,7 @@ class NotificationResponseBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this NotificationResponseBody.
+        r"""Sets the instance_id of this NotificationResponseBody.
 
         实例ID
 
@@ -188,7 +188,7 @@ class NotificationResponseBody:
 
     @property
     def app_id(self):
-        """Gets the app_id of this NotificationResponseBody.
+        r"""Gets the app_id of this NotificationResponseBody.
 
         应用ID
 
@@ -199,7 +199,7 @@ class NotificationResponseBody:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this NotificationResponseBody.
+        r"""Sets the app_id of this NotificationResponseBody.
 
         应用ID
 

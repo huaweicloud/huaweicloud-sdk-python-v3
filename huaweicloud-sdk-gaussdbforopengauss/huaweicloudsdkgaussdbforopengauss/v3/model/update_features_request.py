@@ -29,7 +29,7 @@ class UpdateFeaturesRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateFeaturesRequest
+        r"""UpdateFeaturesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateFeaturesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateFeaturesRequest.
+        r"""Gets the x_language of this UpdateFeaturesRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class UpdateFeaturesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateFeaturesRequest.
+        r"""Sets the x_language of this UpdateFeaturesRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class UpdateFeaturesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateFeaturesRequest.
+        r"""Gets the instance_id of this UpdateFeaturesRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class UpdateFeaturesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateFeaturesRequest.
+        r"""Sets the instance_id of this UpdateFeaturesRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class UpdateFeaturesRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateFeaturesRequest.
+        r"""Gets the body of this UpdateFeaturesRequest.
 
         :return: The body of this UpdateFeaturesRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateFeaturesRequestBody`
@@ -109,7 +109,7 @@ class UpdateFeaturesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateFeaturesRequest.
+        r"""Sets the body of this UpdateFeaturesRequest.
 
         :param body: The body of this UpdateFeaturesRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateFeaturesRequestBody`

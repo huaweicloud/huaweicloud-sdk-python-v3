@@ -25,7 +25,7 @@ class StopProtectionGroupRequestBody:
     }
 
     def __init__(self, stop_server_group=None):
-        """StopProtectionGroupRequestBody
+        r"""StopProtectionGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopProtectionGroupRequestBody:
 
     @property
     def stop_server_group(self):
-        """Gets the stop_server_group of this StopProtectionGroupRequestBody.
+        r"""Gets the stop_server_group of this StopProtectionGroupRequestBody.
 
         标识保护组停止保护操作。该参数目前默认值为空。
 
@@ -53,7 +53,7 @@ class StopProtectionGroupRequestBody:
 
     @stop_server_group.setter
     def stop_server_group(self, stop_server_group):
-        """Sets the stop_server_group of this StopProtectionGroupRequestBody.
+        r"""Sets the stop_server_group of this StopProtectionGroupRequestBody.
 
         标识保护组停止保护操作。该参数目前默认值为空。
 

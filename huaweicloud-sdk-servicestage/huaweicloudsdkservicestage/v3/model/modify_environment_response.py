@@ -48,7 +48,7 @@ class ModifyEnvironmentResponse(SdkResponse):
     }
 
     def __init__(self, id=None, project_id=None, name=None, description=None, enterprise_project_id=None, vpc_id=None, creator=None, create_time=None, update_time=None, deploy_mode=None, resources=None, labels=None):
-        """ModifyEnvironmentResponse
+        r"""ModifyEnvironmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ModifyEnvironmentResponse.
+        r"""Gets the id of this ModifyEnvironmentResponse.
 
         环境id
 
@@ -132,7 +132,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyEnvironmentResponse.
+        r"""Sets the id of this ModifyEnvironmentResponse.
 
         环境id
 
@@ -143,7 +143,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ModifyEnvironmentResponse.
+        r"""Gets the project_id of this ModifyEnvironmentResponse.
 
         :return: The project_id of this ModifyEnvironmentResponse.
         :rtype: str
@@ -152,7 +152,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ModifyEnvironmentResponse.
+        r"""Sets the project_id of this ModifyEnvironmentResponse.
 
         :param project_id: The project_id of this ModifyEnvironmentResponse.
         :type project_id: str
@@ -161,7 +161,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ModifyEnvironmentResponse.
+        r"""Gets the name of this ModifyEnvironmentResponse.
 
         环境名称
 
@@ -172,7 +172,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyEnvironmentResponse.
+        r"""Sets the name of this ModifyEnvironmentResponse.
 
         环境名称
 
@@ -183,7 +183,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ModifyEnvironmentResponse.
+        r"""Gets the description of this ModifyEnvironmentResponse.
 
         环境描述
 
@@ -194,7 +194,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModifyEnvironmentResponse.
+        r"""Sets the description of this ModifyEnvironmentResponse.
 
         环境描述
 
@@ -205,7 +205,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ModifyEnvironmentResponse.
+        r"""Gets the enterprise_project_id of this ModifyEnvironmentResponse.
 
         企业项目id
 
@@ -216,7 +216,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ModifyEnvironmentResponse.
+        r"""Sets the enterprise_project_id of this ModifyEnvironmentResponse.
 
         企业项目id
 
@@ -227,7 +227,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ModifyEnvironmentResponse.
+        r"""Gets the vpc_id of this ModifyEnvironmentResponse.
 
         虚拟私有云id
 
@@ -238,7 +238,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ModifyEnvironmentResponse.
+        r"""Sets the vpc_id of this ModifyEnvironmentResponse.
 
         虚拟私有云id
 
@@ -249,7 +249,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ModifyEnvironmentResponse.
+        r"""Gets the creator of this ModifyEnvironmentResponse.
 
         创建者
 
@@ -260,7 +260,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ModifyEnvironmentResponse.
+        r"""Sets the creator of this ModifyEnvironmentResponse.
 
         创建者
 
@@ -271,7 +271,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ModifyEnvironmentResponse.
+        r"""Gets the create_time of this ModifyEnvironmentResponse.
 
         创建时间。
 
@@ -282,7 +282,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ModifyEnvironmentResponse.
+        r"""Sets the create_time of this ModifyEnvironmentResponse.
 
         创建时间。
 
@@ -293,7 +293,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ModifyEnvironmentResponse.
+        r"""Gets the update_time of this ModifyEnvironmentResponse.
 
         更新时间。
 
@@ -304,7 +304,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ModifyEnvironmentResponse.
+        r"""Sets the update_time of this ModifyEnvironmentResponse.
 
         更新时间。
 
@@ -315,7 +315,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @property
     def deploy_mode(self):
-        """Gets the deploy_mode of this ModifyEnvironmentResponse.
+        r"""Gets the deploy_mode of this ModifyEnvironmentResponse.
 
         环境类型
 
@@ -326,7 +326,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @deploy_mode.setter
     def deploy_mode(self, deploy_mode):
-        """Sets the deploy_mode of this ModifyEnvironmentResponse.
+        r"""Sets the deploy_mode of this ModifyEnvironmentResponse.
 
         环境类型
 
@@ -337,7 +337,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ModifyEnvironmentResponse.
+        r"""Gets the resources of this ModifyEnvironmentResponse.
 
         :return: The resources of this ModifyEnvironmentResponse.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.Resource`]
@@ -346,7 +346,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ModifyEnvironmentResponse.
+        r"""Sets the resources of this ModifyEnvironmentResponse.
 
         :param resources: The resources of this ModifyEnvironmentResponse.
         :type resources: list[:class:`huaweicloudsdkservicestage.v3.Resource`]
@@ -355,7 +355,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this ModifyEnvironmentResponse.
+        r"""Gets the labels of this ModifyEnvironmentResponse.
 
         :return: The labels of this ModifyEnvironmentResponse.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]
@@ -364,7 +364,7 @@ class ModifyEnvironmentResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ModifyEnvironmentResponse.
+        r"""Sets the labels of this ModifyEnvironmentResponse.
 
         :param labels: The labels of this ModifyEnvironmentResponse.
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentViewLabels`]

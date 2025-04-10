@@ -31,7 +31,7 @@ class AutoscalePolicy:
     }
 
     def __init__(self, autoscale_type=None, max_auto_created=None, min_idle=None, once_auto_created=None):
-        """AutoscalePolicy
+        r"""AutoscalePolicy
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AutoscalePolicy:
 
     @property
     def autoscale_type(self):
-        """Gets the autoscale_type of this AutoscalePolicy.
+        r"""Gets the autoscale_type of this AutoscalePolicy.
 
         弹性伸缩类型，ACCESS_CREATED：接入时创建，AUTO_CREATED：弹性伸缩。
 
@@ -75,7 +75,7 @@ class AutoscalePolicy:
 
     @autoscale_type.setter
     def autoscale_type(self, autoscale_type):
-        """Sets the autoscale_type of this AutoscalePolicy.
+        r"""Sets the autoscale_type of this AutoscalePolicy.
 
         弹性伸缩类型，ACCESS_CREATED：接入时创建，AUTO_CREATED：弹性伸缩。
 
@@ -86,7 +86,7 @@ class AutoscalePolicy:
 
     @property
     def max_auto_created(self):
-        """Gets the max_auto_created of this AutoscalePolicy.
+        r"""Gets the max_auto_created of this AutoscalePolicy.
 
         自动创建桌面上限
 
@@ -97,7 +97,7 @@ class AutoscalePolicy:
 
     @max_auto_created.setter
     def max_auto_created(self, max_auto_created):
-        """Sets the max_auto_created of this AutoscalePolicy.
+        r"""Sets the max_auto_created of this AutoscalePolicy.
 
         自动创建桌面上限
 
@@ -108,7 +108,7 @@ class AutoscalePolicy:
 
     @property
     def min_idle(self):
-        """Gets the min_idle of this AutoscalePolicy.
+        r"""Gets the min_idle of this AutoscalePolicy.
 
         空闲桌面低于多少时开始自动创建桌面
 
@@ -119,7 +119,7 @@ class AutoscalePolicy:
 
     @min_idle.setter
     def min_idle(self, min_idle):
-        """Sets the min_idle of this AutoscalePolicy.
+        r"""Sets the min_idle of this AutoscalePolicy.
 
         空闲桌面低于多少时开始自动创建桌面
 
@@ -130,7 +130,7 @@ class AutoscalePolicy:
 
     @property
     def once_auto_created(self):
-        """Gets the once_auto_created of this AutoscalePolicy.
+        r"""Gets the once_auto_created of this AutoscalePolicy.
 
         一次自动创建桌面的数量
 
@@ -141,7 +141,7 @@ class AutoscalePolicy:
 
     @once_auto_created.setter
     def once_auto_created(self, once_auto_created):
-        """Sets the once_auto_created of this AutoscalePolicy.
+        r"""Sets the once_auto_created of this AutoscalePolicy.
 
         一次自动创建桌面的数量
 

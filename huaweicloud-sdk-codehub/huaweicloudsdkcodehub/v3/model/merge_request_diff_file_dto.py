@@ -67,7 +67,7 @@ class MergeRequestDiffFileDto:
     }
 
     def __init__(self, content_sha=None, submodule=None, expanded=None, diff_refs=None, mode_changed=None, file_type=None, old_path=None, new_path=None, a_mode=None, b_mode=None, file_path=None, new_file=None, renamed_file=None, deleted_file=None, diff=None, binary=None, too_large=None, collapsed=None, line_count=None, added_lines=None, removed_lines=None, blob_id=None):
-        """MergeRequestDiffFileDto
+        r"""MergeRequestDiffFileDto
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def content_sha(self):
-        """Gets the content_sha of this MergeRequestDiffFileDto.
+        r"""Gets the content_sha of this MergeRequestDiffFileDto.
 
         合并请求head sha
 
@@ -201,7 +201,7 @@ class MergeRequestDiffFileDto:
 
     @content_sha.setter
     def content_sha(self, content_sha):
-        """Sets the content_sha of this MergeRequestDiffFileDto.
+        r"""Sets the content_sha of this MergeRequestDiffFileDto.
 
         合并请求head sha
 
@@ -212,7 +212,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def submodule(self):
-        """Gets the submodule of this MergeRequestDiffFileDto.
+        r"""Gets the submodule of this MergeRequestDiffFileDto.
 
         是否为submodule
 
@@ -223,7 +223,7 @@ class MergeRequestDiffFileDto:
 
     @submodule.setter
     def submodule(self, submodule):
-        """Sets the submodule of this MergeRequestDiffFileDto.
+        r"""Sets the submodule of this MergeRequestDiffFileDto.
 
         是否为submodule
 
@@ -234,7 +234,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def expanded(self):
-        """Gets the expanded of this MergeRequestDiffFileDto.
+        r"""Gets the expanded of this MergeRequestDiffFileDto.
 
         内容是否扩展
 
@@ -245,7 +245,7 @@ class MergeRequestDiffFileDto:
 
     @expanded.setter
     def expanded(self, expanded):
-        """Sets the expanded of this MergeRequestDiffFileDto.
+        r"""Sets the expanded of this MergeRequestDiffFileDto.
 
         内容是否扩展
 
@@ -256,7 +256,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def diff_refs(self):
-        """Gets the diff_refs of this MergeRequestDiffFileDto.
+        r"""Gets the diff_refs of this MergeRequestDiffFileDto.
 
         :return: The diff_refs of this MergeRequestDiffFileDto.
         :rtype: :class:`huaweicloudsdkcodehub.v3.DiffRefsDto`
@@ -265,7 +265,7 @@ class MergeRequestDiffFileDto:
 
     @diff_refs.setter
     def diff_refs(self, diff_refs):
-        """Sets the diff_refs of this MergeRequestDiffFileDto.
+        r"""Sets the diff_refs of this MergeRequestDiffFileDto.
 
         :param diff_refs: The diff_refs of this MergeRequestDiffFileDto.
         :type diff_refs: :class:`huaweicloudsdkcodehub.v3.DiffRefsDto`
@@ -274,7 +274,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def mode_changed(self):
-        """Gets the mode_changed of this MergeRequestDiffFileDto.
+        r"""Gets the mode_changed of this MergeRequestDiffFileDto.
 
         mode是否修改
 
@@ -285,7 +285,7 @@ class MergeRequestDiffFileDto:
 
     @mode_changed.setter
     def mode_changed(self, mode_changed):
-        """Sets the mode_changed of this MergeRequestDiffFileDto.
+        r"""Sets the mode_changed of this MergeRequestDiffFileDto.
 
         mode是否修改
 
@@ -296,7 +296,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def file_type(self):
-        """Gets the file_type of this MergeRequestDiffFileDto.
+        r"""Gets the file_type of this MergeRequestDiffFileDto.
 
         文件类型
 
@@ -307,7 +307,7 @@ class MergeRequestDiffFileDto:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this MergeRequestDiffFileDto.
+        r"""Sets the file_type of this MergeRequestDiffFileDto.
 
         文件类型
 
@@ -318,7 +318,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def old_path(self):
-        """Gets the old_path of this MergeRequestDiffFileDto.
+        r"""Gets the old_path of this MergeRequestDiffFileDto.
 
         旧路径
 
@@ -329,7 +329,7 @@ class MergeRequestDiffFileDto:
 
     @old_path.setter
     def old_path(self, old_path):
-        """Sets the old_path of this MergeRequestDiffFileDto.
+        r"""Sets the old_path of this MergeRequestDiffFileDto.
 
         旧路径
 
@@ -340,7 +340,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def new_path(self):
-        """Gets the new_path of this MergeRequestDiffFileDto.
+        r"""Gets the new_path of this MergeRequestDiffFileDto.
 
         新路径
 
@@ -351,7 +351,7 @@ class MergeRequestDiffFileDto:
 
     @new_path.setter
     def new_path(self, new_path):
-        """Sets the new_path of this MergeRequestDiffFileDto.
+        r"""Sets the new_path of this MergeRequestDiffFileDto.
 
         新路径
 
@@ -362,7 +362,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def a_mode(self):
-        """Gets the a_mode of this MergeRequestDiffFileDto.
+        r"""Gets the a_mode of this MergeRequestDiffFileDto.
 
         旧mode
 
@@ -373,7 +373,7 @@ class MergeRequestDiffFileDto:
 
     @a_mode.setter
     def a_mode(self, a_mode):
-        """Sets the a_mode of this MergeRequestDiffFileDto.
+        r"""Sets the a_mode of this MergeRequestDiffFileDto.
 
         旧mode
 
@@ -384,7 +384,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def b_mode(self):
-        """Gets the b_mode of this MergeRequestDiffFileDto.
+        r"""Gets the b_mode of this MergeRequestDiffFileDto.
 
         新mode
 
@@ -395,7 +395,7 @@ class MergeRequestDiffFileDto:
 
     @b_mode.setter
     def b_mode(self, b_mode):
-        """Sets the b_mode of this MergeRequestDiffFileDto.
+        r"""Sets the b_mode of this MergeRequestDiffFileDto.
 
         新mode
 
@@ -406,7 +406,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def file_path(self):
-        """Gets the file_path of this MergeRequestDiffFileDto.
+        r"""Gets the file_path of this MergeRequestDiffFileDto.
 
         文件路径
 
@@ -417,7 +417,7 @@ class MergeRequestDiffFileDto:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this MergeRequestDiffFileDto.
+        r"""Sets the file_path of this MergeRequestDiffFileDto.
 
         文件路径
 
@@ -428,7 +428,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def new_file(self):
-        """Gets the new_file of this MergeRequestDiffFileDto.
+        r"""Gets the new_file of this MergeRequestDiffFileDto.
 
         是否为新增文件
 
@@ -439,7 +439,7 @@ class MergeRequestDiffFileDto:
 
     @new_file.setter
     def new_file(self, new_file):
-        """Sets the new_file of this MergeRequestDiffFileDto.
+        r"""Sets the new_file of this MergeRequestDiffFileDto.
 
         是否为新增文件
 
@@ -450,7 +450,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def renamed_file(self):
-        """Gets the renamed_file of this MergeRequestDiffFileDto.
+        r"""Gets the renamed_file of this MergeRequestDiffFileDto.
 
         是否为重命名文件
 
@@ -461,7 +461,7 @@ class MergeRequestDiffFileDto:
 
     @renamed_file.setter
     def renamed_file(self, renamed_file):
-        """Sets the renamed_file of this MergeRequestDiffFileDto.
+        r"""Sets the renamed_file of this MergeRequestDiffFileDto.
 
         是否为重命名文件
 
@@ -472,7 +472,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def deleted_file(self):
-        """Gets the deleted_file of this MergeRequestDiffFileDto.
+        r"""Gets the deleted_file of this MergeRequestDiffFileDto.
 
         是否为删除文件
 
@@ -483,7 +483,7 @@ class MergeRequestDiffFileDto:
 
     @deleted_file.setter
     def deleted_file(self, deleted_file):
-        """Sets the deleted_file of this MergeRequestDiffFileDto.
+        r"""Sets the deleted_file of this MergeRequestDiffFileDto.
 
         是否为删除文件
 
@@ -494,7 +494,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def diff(self):
-        """Gets the diff of this MergeRequestDiffFileDto.
+        r"""Gets the diff of this MergeRequestDiffFileDto.
 
         文件变更内容
 
@@ -505,7 +505,7 @@ class MergeRequestDiffFileDto:
 
     @diff.setter
     def diff(self, diff):
-        """Sets the diff of this MergeRequestDiffFileDto.
+        r"""Sets the diff of this MergeRequestDiffFileDto.
 
         文件变更内容
 
@@ -516,7 +516,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def binary(self):
-        """Gets the binary of this MergeRequestDiffFileDto.
+        r"""Gets the binary of this MergeRequestDiffFileDto.
 
         是否为二进制文件
 
@@ -527,7 +527,7 @@ class MergeRequestDiffFileDto:
 
     @binary.setter
     def binary(self, binary):
-        """Sets the binary of this MergeRequestDiffFileDto.
+        r"""Sets the binary of this MergeRequestDiffFileDto.
 
         是否为二进制文件
 
@@ -538,7 +538,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def too_large(self):
-        """Gets the too_large of this MergeRequestDiffFileDto.
+        r"""Gets the too_large of this MergeRequestDiffFileDto.
 
         是否过大
 
@@ -549,7 +549,7 @@ class MergeRequestDiffFileDto:
 
     @too_large.setter
     def too_large(self, too_large):
-        """Sets the too_large of this MergeRequestDiffFileDto.
+        r"""Sets the too_large of this MergeRequestDiffFileDto.
 
         是否过大
 
@@ -560,7 +560,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def collapsed(self):
-        """Gets the collapsed of this MergeRequestDiffFileDto.
+        r"""Gets the collapsed of this MergeRequestDiffFileDto.
 
         是否折叠
 
@@ -571,7 +571,7 @@ class MergeRequestDiffFileDto:
 
     @collapsed.setter
     def collapsed(self, collapsed):
-        """Sets the collapsed of this MergeRequestDiffFileDto.
+        r"""Sets the collapsed of this MergeRequestDiffFileDto.
 
         是否折叠
 
@@ -582,7 +582,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def line_count(self):
-        """Gets the line_count of this MergeRequestDiffFileDto.
+        r"""Gets the line_count of this MergeRequestDiffFileDto.
 
         单个文件可取行数范围
 
@@ -593,7 +593,7 @@ class MergeRequestDiffFileDto:
 
     @line_count.setter
     def line_count(self, line_count):
-        """Sets the line_count of this MergeRequestDiffFileDto.
+        r"""Sets the line_count of this MergeRequestDiffFileDto.
 
         单个文件可取行数范围
 
@@ -604,7 +604,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def added_lines(self):
-        """Gets the added_lines of this MergeRequestDiffFileDto.
+        r"""Gets the added_lines of this MergeRequestDiffFileDto.
 
         新增行数
 
@@ -615,7 +615,7 @@ class MergeRequestDiffFileDto:
 
     @added_lines.setter
     def added_lines(self, added_lines):
-        """Sets the added_lines of this MergeRequestDiffFileDto.
+        r"""Sets the added_lines of this MergeRequestDiffFileDto.
 
         新增行数
 
@@ -626,7 +626,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def removed_lines(self):
-        """Gets the removed_lines of this MergeRequestDiffFileDto.
+        r"""Gets the removed_lines of this MergeRequestDiffFileDto.
 
         删除行数
 
@@ -637,7 +637,7 @@ class MergeRequestDiffFileDto:
 
     @removed_lines.setter
     def removed_lines(self, removed_lines):
-        """Sets the removed_lines of this MergeRequestDiffFileDto.
+        r"""Sets the removed_lines of this MergeRequestDiffFileDto.
 
         删除行数
 
@@ -648,7 +648,7 @@ class MergeRequestDiffFileDto:
 
     @property
     def blob_id(self):
-        """Gets the blob_id of this MergeRequestDiffFileDto.
+        r"""Gets the blob_id of this MergeRequestDiffFileDto.
 
         文件blob_id
 
@@ -659,7 +659,7 @@ class MergeRequestDiffFileDto:
 
     @blob_id.setter
     def blob_id(self, blob_id):
-        """Sets the blob_id of this MergeRequestDiffFileDto.
+        r"""Sets the blob_id of this MergeRequestDiffFileDto.
 
         文件blob_id
 

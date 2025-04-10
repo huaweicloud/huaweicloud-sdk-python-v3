@@ -32,7 +32,7 @@ class CreateSecAppTaskResponse(SdkResponse):
     }
 
     def __init__(self, info_code=None, info_description=None, task_id=None, task_status=None):
-        """CreateSecAppTaskResponse
+        r"""CreateSecAppTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateSecAppTaskResponse(SdkResponse):
 
     @property
     def info_code(self):
-        """Gets the info_code of this CreateSecAppTaskResponse.
+        r"""Gets the info_code of this CreateSecAppTaskResponse.
 
         状态码:   * success - 成功   * failure - 失败 
 
@@ -76,7 +76,7 @@ class CreateSecAppTaskResponse(SdkResponse):
 
     @info_code.setter
     def info_code(self, info_code):
-        """Sets the info_code of this CreateSecAppTaskResponse.
+        r"""Sets the info_code of this CreateSecAppTaskResponse.
 
         状态码:   * success - 成功   * failure - 失败 
 
@@ -87,7 +87,7 @@ class CreateSecAppTaskResponse(SdkResponse):
 
     @property
     def info_description(self):
-        """Gets the info_description of this CreateSecAppTaskResponse.
+        r"""Gets the info_description of this CreateSecAppTaskResponse.
 
         返回的提示信息
 
@@ -98,7 +98,7 @@ class CreateSecAppTaskResponse(SdkResponse):
 
     @info_description.setter
     def info_description(self, info_description):
-        """Sets the info_description of this CreateSecAppTaskResponse.
+        r"""Sets the info_description of this CreateSecAppTaskResponse.
 
         返回的提示信息
 
@@ -109,7 +109,7 @@ class CreateSecAppTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateSecAppTaskResponse.
+        r"""Gets the task_id of this CreateSecAppTaskResponse.
 
         任务ID
 
@@ -120,7 +120,7 @@ class CreateSecAppTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateSecAppTaskResponse.
+        r"""Sets the task_id of this CreateSecAppTaskResponse.
 
         任务ID
 
@@ -131,7 +131,7 @@ class CreateSecAppTaskResponse(SdkResponse):
 
     @property
     def task_status(self):
-        """Gets the task_status of this CreateSecAppTaskResponse.
+        r"""Gets the task_status of this CreateSecAppTaskResponse.
 
         任务状态:   * WAITING - 等待   * RUNNING - 进行   * SUCCESS - 完成   * FAILURE - 失败   * STOP - 停止   * DELETED - 删除 
 
@@ -142,7 +142,7 @@ class CreateSecAppTaskResponse(SdkResponse):
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this CreateSecAppTaskResponse.
+        r"""Sets the task_status of this CreateSecAppTaskResponse.
 
         任务状态:   * WAITING - 等待   * RUNNING - 进行   * SUCCESS - 完成   * FAILURE - 失败   * STOP - 停止   * DELETED - 删除 
 

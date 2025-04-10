@@ -25,7 +25,7 @@ class BatchTestConnectionReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchTestConnectionReq
+        r"""BatchTestConnectionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchTestConnectionReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchTestConnectionReq.
+        r"""Gets the jobs of this BatchTestConnectionReq.
 
         批量测试连接请求列表。
 
@@ -53,7 +53,7 @@ class BatchTestConnectionReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchTestConnectionReq.
+        r"""Sets the jobs of this BatchTestConnectionReq.
 
         批量测试连接请求列表。
 

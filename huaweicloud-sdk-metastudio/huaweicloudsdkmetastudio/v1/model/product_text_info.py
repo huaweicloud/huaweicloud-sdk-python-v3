@@ -27,7 +27,7 @@ class ProductTextInfo:
     }
 
     def __init__(self, title=None, text=None):
-        """ProductTextInfo
+        r"""ProductTextInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProductTextInfo:
 
     @property
     def title(self):
-        """Gets the title of this ProductTextInfo.
+        r"""Gets the title of this ProductTextInfo.
 
         文本标题
 
@@ -61,7 +61,7 @@ class ProductTextInfo:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ProductTextInfo.
+        r"""Sets the title of this ProductTextInfo.
 
         文本标题
 
@@ -72,7 +72,7 @@ class ProductTextInfo:
 
     @property
     def text(self):
-        """Gets the text of this ProductTextInfo.
+        r"""Gets the text of this ProductTextInfo.
 
         文本
 
@@ -83,7 +83,7 @@ class ProductTextInfo:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this ProductTextInfo.
+        r"""Sets the text of this ProductTextInfo.
 
         文本
 

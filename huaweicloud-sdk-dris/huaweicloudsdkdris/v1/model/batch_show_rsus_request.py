@@ -37,7 +37,7 @@ class BatchShowRsusRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, rsu_id=None, esn=None, status=None, rsu_model_id=None):
-        """BatchShowRsusRequest
+        r"""BatchShowRsusRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class BatchShowRsusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchShowRsusRequest.
+        r"""Gets the instance_id of this BatchShowRsusRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -96,7 +96,7 @@ class BatchShowRsusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchShowRsusRequest.
+        r"""Sets the instance_id of this BatchShowRsusRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -107,7 +107,7 @@ class BatchShowRsusRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchShowRsusRequest.
+        r"""Gets the offset of this BatchShowRsusRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -118,7 +118,7 @@ class BatchShowRsusRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchShowRsusRequest.
+        r"""Sets the offset of this BatchShowRsusRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -129,7 +129,7 @@ class BatchShowRsusRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchShowRsusRequest.
+        r"""Gets the limit of this BatchShowRsusRequest.
 
         **参数说明**：分页查询时每页显示的记录数。
 
@@ -140,7 +140,7 @@ class BatchShowRsusRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchShowRsusRequest.
+        r"""Sets the limit of this BatchShowRsusRequest.
 
         **参数说明**：分页查询时每页显示的记录数。
 
@@ -151,7 +151,7 @@ class BatchShowRsusRequest:
 
     @property
     def rsu_id(self):
-        """Gets the rsu_id of this BatchShowRsusRequest.
+        r"""Gets the rsu_id of this BatchShowRsusRequest.
 
         **参数说明**：RSU的唯一标识符，在平台创建RSU时由平台生成。
 
@@ -162,7 +162,7 @@ class BatchShowRsusRequest:
 
     @rsu_id.setter
     def rsu_id(self, rsu_id):
-        """Sets the rsu_id of this BatchShowRsusRequest.
+        r"""Sets the rsu_id of this BatchShowRsusRequest.
 
         **参数说明**：RSU的唯一标识符，在平台创建RSU时由平台生成。
 
@@ -173,7 +173,7 @@ class BatchShowRsusRequest:
 
     @property
     def esn(self):
-        """Gets the esn of this BatchShowRsusRequest.
+        r"""Gets the esn of this BatchShowRsusRequest.
 
         **参数说明**：RSU的设备序列号。  **取值范围**：只允许字母、数字、下划线（_）的组合。 
 
@@ -184,7 +184,7 @@ class BatchShowRsusRequest:
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this BatchShowRsusRequest.
+        r"""Sets the esn of this BatchShowRsusRequest.
 
         **参数说明**：RSU的设备序列号。  **取值范围**：只允许字母、数字、下划线（_）的组合。 
 
@@ -195,7 +195,7 @@ class BatchShowRsusRequest:
 
     @property
     def status(self):
-        """Gets the status of this BatchShowRsusRequest.
+        r"""Gets the status of this BatchShowRsusRequest.
 
         **参数说明**：设备状态。  **取值范围**：  - ONLINE：在线  - OFFLINE：离线  - INITIAL：初始化  - UNKNOWN：未知 
 
@@ -206,7 +206,7 @@ class BatchShowRsusRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchShowRsusRequest.
+        r"""Sets the status of this BatchShowRsusRequest.
 
         **参数说明**：设备状态。  **取值范围**：  - ONLINE：在线  - OFFLINE：离线  - INITIAL：初始化  - UNKNOWN：未知 
 
@@ -217,7 +217,7 @@ class BatchShowRsusRequest:
 
     @property
     def rsu_model_id(self):
-        """Gets the rsu_model_id of this BatchShowRsusRequest.
+        r"""Gets the rsu_model_id of this BatchShowRsusRequest.
 
         **参数说明**：RSU型号ID，用于唯一标识一个RSU型号，在平台创建RSU型号后由平台分配获得，获取方法可参见 [创建RSU型号](https://support.huaweicloud.com/api-v2x/v2x_04_0020.html)。  **取值范围**：长度不低于1不超过36，只允许字母、数字、连接符（-）的组合。  **该字段仅供使用MQTT协议RSU设备的用户输入。使用websocket协议RSU设备的用户需忽略此字段。** 
 
@@ -228,7 +228,7 @@ class BatchShowRsusRequest:
 
     @rsu_model_id.setter
     def rsu_model_id(self, rsu_model_id):
-        """Sets the rsu_model_id of this BatchShowRsusRequest.
+        r"""Sets the rsu_model_id of this BatchShowRsusRequest.
 
         **参数说明**：RSU型号ID，用于唯一标识一个RSU型号，在平台创建RSU型号后由平台分配获得，获取方法可参见 [创建RSU型号](https://support.huaweicloud.com/api-v2x/v2x_04_0020.html)。  **取值范围**：长度不低于1不超过36，只允许字母、数字、连接符（-）的组合。  **该字段仅供使用MQTT协议RSU设备的用户输入。使用websocket协议RSU设备的用户需忽略此字段。** 
 

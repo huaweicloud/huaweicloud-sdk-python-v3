@@ -29,7 +29,7 @@ class UpdateRolesRequest:
     }
 
     def __init__(self, instance_id=None, user_name=None, body=None):
-        """UpdateRolesRequest
+        r"""UpdateRolesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateRolesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateRolesRequest.
+        r"""Gets the instance_id of this UpdateRolesRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -66,7 +66,7 @@ class UpdateRolesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateRolesRequest.
+        r"""Sets the instance_id of this UpdateRolesRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -77,7 +77,7 @@ class UpdateRolesRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UpdateRolesRequest.
+        r"""Gets the user_name of this UpdateRolesRequest.
 
         用户名。只能包含字母、数字、下划线和中划线，且长度为1~256个字符。
 
@@ -88,7 +88,7 @@ class UpdateRolesRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UpdateRolesRequest.
+        r"""Sets the user_name of this UpdateRolesRequest.
 
         用户名。只能包含字母、数字、下划线和中划线，且长度为1~256个字符。
 
@@ -99,7 +99,7 @@ class UpdateRolesRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRolesRequest.
+        r"""Gets the body of this UpdateRolesRequest.
 
         :return: The body of this UpdateRolesRequest.
         :rtype: list[:class:`huaweicloudsdklakeformation.v1.RoleInfoInput`]
@@ -108,7 +108,7 @@ class UpdateRolesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRolesRequest.
+        r"""Sets the body of this UpdateRolesRequest.
 
         :param body: The body of this UpdateRolesRequest.
         :type body: list[:class:`huaweicloudsdklakeformation.v1.RoleInfoInput`]

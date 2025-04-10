@@ -33,7 +33,7 @@ class TagResource:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None, sys_tags=None):
-        """TagResource
+        r"""TagResource
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class TagResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this TagResource.
+        r"""Gets the resource_id of this TagResource.
 
         资源ID
 
@@ -77,7 +77,7 @@ class TagResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this TagResource.
+        r"""Sets the resource_id of this TagResource.
 
         资源ID
 
@@ -88,7 +88,7 @@ class TagResource:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this TagResource.
+        r"""Gets the resource_detail of this TagResource.
 
         :return: The resource_detail of this TagResource.
         :rtype: :class:`huaweicloudsdkcbr.v1.InstancesResourceDetail`
@@ -97,7 +97,7 @@ class TagResource:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this TagResource.
+        r"""Sets the resource_detail of this TagResource.
 
         :param resource_detail: The resource_detail of this TagResource.
         :type resource_detail: :class:`huaweicloudsdkcbr.v1.InstancesResourceDetail`
@@ -106,7 +106,7 @@ class TagResource:
 
     @property
     def tags(self):
-        """Gets the tags of this TagResource.
+        r"""Gets the tags of this TagResource.
 
         标签列表 没有标签默认为空数字。
 
@@ -117,7 +117,7 @@ class TagResource:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TagResource.
+        r"""Sets the tags of this TagResource.
 
         标签列表 没有标签默认为空数字。
 
@@ -128,7 +128,7 @@ class TagResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this TagResource.
+        r"""Gets the resource_name of this TagResource.
 
         资源名称
 
@@ -139,7 +139,7 @@ class TagResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this TagResource.
+        r"""Sets the resource_name of this TagResource.
 
         资源名称
 
@@ -150,7 +150,7 @@ class TagResource:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this TagResource.
+        r"""Gets the sys_tags of this TagResource.
 
         仅op_service权限才可以获取此字段：  目前只包含一个resource_tag 结构体。  key：_sys_enterprise_project_id  value：企业项目id，0表示默认企业项目  非op_service场景不能返回此字段。
 
@@ -161,7 +161,7 @@ class TagResource:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this TagResource.
+        r"""Sets the sys_tags of this TagResource.
 
         仅op_service权限才可以获取此字段：  目前只包含一个resource_tag 结构体。  key：_sys_enterprise_project_id  value：企业项目id，0表示默认企业项目  非op_service场景不能返回此字段。
 

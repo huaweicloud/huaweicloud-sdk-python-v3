@@ -31,7 +31,7 @@ class GetQuerySearchCriteriasBody:
     }
 
     def __init__(self, criteria=None, name=None, id=None, search_type=None):
-        """GetQuerySearchCriteriasBody
+        r"""GetQuerySearchCriteriasBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class GetQuerySearchCriteriasBody:
 
     @property
     def criteria(self):
-        """Gets the criteria of this GetQuerySearchCriteriasBody.
+        r"""Gets the criteria of this GetQuerySearchCriteriasBody.
 
         快速查询字段
 
@@ -75,7 +75,7 @@ class GetQuerySearchCriteriasBody:
 
     @criteria.setter
     def criteria(self, criteria):
-        """Sets the criteria of this GetQuerySearchCriteriasBody.
+        r"""Sets the criteria of this GetQuerySearchCriteriasBody.
 
         快速查询字段
 
@@ -86,7 +86,7 @@ class GetQuerySearchCriteriasBody:
 
     @property
     def name(self):
-        """Gets the name of this GetQuerySearchCriteriasBody.
+        r"""Gets the name of this GetQuerySearchCriteriasBody.
 
         快速查询名称
 
@@ -97,7 +97,7 @@ class GetQuerySearchCriteriasBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetQuerySearchCriteriasBody.
+        r"""Sets the name of this GetQuerySearchCriteriasBody.
 
         快速查询名称
 
@@ -108,7 +108,7 @@ class GetQuerySearchCriteriasBody:
 
     @property
     def id(self):
-        """Gets the id of this GetQuerySearchCriteriasBody.
+        r"""Gets the id of this GetQuerySearchCriteriasBody.
 
         快速查询id
 
@@ -119,7 +119,7 @@ class GetQuerySearchCriteriasBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetQuerySearchCriteriasBody.
+        r"""Sets the id of this GetQuerySearchCriteriasBody.
 
         快速查询id
 
@@ -130,7 +130,7 @@ class GetQuerySearchCriteriasBody:
 
     @property
     def search_type(self):
-        """Gets the search_type of this GetQuerySearchCriteriasBody.
+        r"""Gets the search_type of this GetQuerySearchCriteriasBody.
 
         快速查询类型： 原始日志：ORIGINALLOG 可视化日志: VISUALIZATION
 
@@ -141,7 +141,7 @@ class GetQuerySearchCriteriasBody:
 
     @search_type.setter
     def search_type(self, search_type):
-        """Sets the search_type of this GetQuerySearchCriteriasBody.
+        r"""Sets the search_type of this GetQuerySearchCriteriasBody.
 
         快速查询类型： 原始日志：ORIGINALLOG 可视化日志: VISUALIZATION
 

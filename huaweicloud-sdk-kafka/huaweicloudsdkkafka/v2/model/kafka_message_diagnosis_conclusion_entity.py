@@ -27,7 +27,7 @@ class KafkaMessageDiagnosisConclusionEntity:
     }
 
     def __init__(self, id=None, params=None):
-        """KafkaMessageDiagnosisConclusionEntity
+        r"""KafkaMessageDiagnosisConclusionEntity
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class KafkaMessageDiagnosisConclusionEntity:
 
     @property
     def id(self):
-        """Gets the id of this KafkaMessageDiagnosisConclusionEntity.
+        r"""Gets the id of this KafkaMessageDiagnosisConclusionEntity.
 
         诊断结论ID
 
@@ -60,7 +60,7 @@ class KafkaMessageDiagnosisConclusionEntity:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this KafkaMessageDiagnosisConclusionEntity.
+        r"""Sets the id of this KafkaMessageDiagnosisConclusionEntity.
 
         诊断结论ID
 
@@ -71,7 +71,7 @@ class KafkaMessageDiagnosisConclusionEntity:
 
     @property
     def params(self):
-        """Gets the params of this KafkaMessageDiagnosisConclusionEntity.
+        r"""Gets the params of this KafkaMessageDiagnosisConclusionEntity.
 
         诊断结论参数列表
 
@@ -82,7 +82,7 @@ class KafkaMessageDiagnosisConclusionEntity:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this KafkaMessageDiagnosisConclusionEntity.
+        r"""Sets the params of this KafkaMessageDiagnosisConclusionEntity.
 
         诊断结论参数列表
 

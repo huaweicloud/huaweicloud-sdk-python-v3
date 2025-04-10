@@ -45,7 +45,7 @@ class HistoryRecord1:
     }
 
     def __init__(self, record_id=None, job_id=None, build_number=None, start_time=None, end_time=None, result=None, branch=None, commit_id=None, commit_message=None, executor=None, trigger_type=None):
-        """HistoryRecord1
+        r"""HistoryRecord1
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class HistoryRecord1:
 
     @property
     def record_id(self):
-        """Gets the record_id of this HistoryRecord1.
+        r"""Gets the record_id of this HistoryRecord1.
 
         构建记录id--唯一key
 
@@ -124,7 +124,7 @@ class HistoryRecord1:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this HistoryRecord1.
+        r"""Sets the record_id of this HistoryRecord1.
 
         构建记录id--唯一key
 
@@ -135,7 +135,7 @@ class HistoryRecord1:
 
     @property
     def job_id(self):
-        """Gets the job_id of this HistoryRecord1.
+        r"""Gets the job_id of this HistoryRecord1.
 
         任务id
 
@@ -146,7 +146,7 @@ class HistoryRecord1:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this HistoryRecord1.
+        r"""Sets the job_id of this HistoryRecord1.
 
         任务id
 
@@ -157,7 +157,7 @@ class HistoryRecord1:
 
     @property
     def build_number(self):
-        """Gets the build_number of this HistoryRecord1.
+        r"""Gets the build_number of this HistoryRecord1.
 
         构建编号
 
@@ -168,7 +168,7 @@ class HistoryRecord1:
 
     @build_number.setter
     def build_number(self, build_number):
-        """Sets the build_number of this HistoryRecord1.
+        r"""Sets the build_number of this HistoryRecord1.
 
         构建编号
 
@@ -179,7 +179,7 @@ class HistoryRecord1:
 
     @property
     def start_time(self):
-        """Gets the start_time of this HistoryRecord1.
+        r"""Gets the start_time of this HistoryRecord1.
 
         构建开始时间
 
@@ -190,7 +190,7 @@ class HistoryRecord1:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this HistoryRecord1.
+        r"""Sets the start_time of this HistoryRecord1.
 
         构建开始时间
 
@@ -201,7 +201,7 @@ class HistoryRecord1:
 
     @property
     def end_time(self):
-        """Gets the end_time of this HistoryRecord1.
+        r"""Gets the end_time of this HistoryRecord1.
 
         构建结束时间
 
@@ -212,7 +212,7 @@ class HistoryRecord1:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this HistoryRecord1.
+        r"""Sets the end_time of this HistoryRecord1.
 
         构建结束时间
 
@@ -223,7 +223,7 @@ class HistoryRecord1:
 
     @property
     def result(self):
-        """Gets the result of this HistoryRecord1.
+        r"""Gets the result of this HistoryRecord1.
 
         构建结果
 
@@ -234,7 +234,7 @@ class HistoryRecord1:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this HistoryRecord1.
+        r"""Sets the result of this HistoryRecord1.
 
         构建结果
 
@@ -245,7 +245,7 @@ class HistoryRecord1:
 
     @property
     def branch(self):
-        """Gets the branch of this HistoryRecord1.
+        r"""Gets the branch of this HistoryRecord1.
 
         代码分支
 
@@ -256,7 +256,7 @@ class HistoryRecord1:
 
     @branch.setter
     def branch(self, branch):
-        """Sets the branch of this HistoryRecord1.
+        r"""Sets the branch of this HistoryRecord1.
 
         代码分支
 
@@ -267,7 +267,7 @@ class HistoryRecord1:
 
     @property
     def commit_id(self):
-        """Gets the commit_id of this HistoryRecord1.
+        r"""Gets the commit_id of this HistoryRecord1.
 
         代码提交的commit id
 
@@ -278,7 +278,7 @@ class HistoryRecord1:
 
     @commit_id.setter
     def commit_id(self, commit_id):
-        """Sets the commit_id of this HistoryRecord1.
+        r"""Sets the commit_id of this HistoryRecord1.
 
         代码提交的commit id
 
@@ -289,7 +289,7 @@ class HistoryRecord1:
 
     @property
     def commit_message(self):
-        """Gets the commit_message of this HistoryRecord1.
+        r"""Gets the commit_message of this HistoryRecord1.
 
         代码提交时用户输入的提交信息，只有使用codehub仓库时有值
 
@@ -300,7 +300,7 @@ class HistoryRecord1:
 
     @commit_message.setter
     def commit_message(self, commit_message):
-        """Sets the commit_message of this HistoryRecord1.
+        r"""Sets the commit_message of this HistoryRecord1.
 
         代码提交时用户输入的提交信息，只有使用codehub仓库时有值
 
@@ -311,7 +311,7 @@ class HistoryRecord1:
 
     @property
     def executor(self):
-        """Gets the executor of this HistoryRecord1.
+        r"""Gets the executor of this HistoryRecord1.
 
         执行构建任务的用户的用户名
 
@@ -322,7 +322,7 @@ class HistoryRecord1:
 
     @executor.setter
     def executor(self, executor):
-        """Sets the executor of this HistoryRecord1.
+        r"""Sets the executor of this HistoryRecord1.
 
         执行构建任务的用户的用户名
 
@@ -333,7 +333,7 @@ class HistoryRecord1:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this HistoryRecord1.
+        r"""Gets the trigger_type of this HistoryRecord1.
 
         触发方式，可选值：手工触发，定时触发，代码更新触发，流水线触发
 
@@ -344,7 +344,7 @@ class HistoryRecord1:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this HistoryRecord1.
+        r"""Sets the trigger_type of this HistoryRecord1.
 
         触发方式，可选值：手工触发，定时触发，代码更新触发，流水线触发
 

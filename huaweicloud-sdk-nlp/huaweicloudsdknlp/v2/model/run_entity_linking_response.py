@@ -26,7 +26,7 @@ class RunEntityLinkingResponse(SdkResponse):
     }
 
     def __init__(self, entities=None):
-        """RunEntityLinkingResponse
+        r"""RunEntityLinkingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RunEntityLinkingResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this RunEntityLinkingResponse.
+        r"""Gets the entities of this RunEntityLinkingResponse.
 
         识别出的实体列表
 
@@ -55,7 +55,7 @@ class RunEntityLinkingResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this RunEntityLinkingResponse.
+        r"""Sets the entities of this RunEntityLinkingResponse.
 
         识别出的实体列表
 

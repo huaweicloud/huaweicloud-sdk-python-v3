@@ -29,7 +29,7 @@ class HWCloudSentimentResp:
     }
 
     def __init__(self, label=None, confidence=None, content=None):
-        """HWCloudSentimentResp
+        r"""HWCloudSentimentResp
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class HWCloudSentimentResp:
 
     @property
     def label(self):
-        """Gets the label of this HWCloudSentimentResp.
+        r"""Gets the label of this HWCloudSentimentResp.
 
         该文本的分析结果标签，取值如下： 0 负向 1 正向
 
@@ -65,7 +65,7 @@ class HWCloudSentimentResp:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this HWCloudSentimentResp.
+        r"""Sets the label of this HWCloudSentimentResp.
 
         该文本的分析结果标签，取值如下： 0 负向 1 正向
 
@@ -76,7 +76,7 @@ class HWCloudSentimentResp:
 
     @property
     def confidence(self):
-        """Gets the confidence of this HWCloudSentimentResp.
+        r"""Gets the confidence of this HWCloudSentimentResp.
 
         标签label的置信度。小数点精确到（6）位。
 
@@ -87,7 +87,7 @@ class HWCloudSentimentResp:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this HWCloudSentimentResp.
+        r"""Sets the confidence of this HWCloudSentimentResp.
 
         标签label的置信度。小数点精确到（6）位。
 
@@ -98,7 +98,7 @@ class HWCloudSentimentResp:
 
     @property
     def content(self):
-        """Gets the content of this HWCloudSentimentResp.
+        r"""Gets the content of this HWCloudSentimentResp.
 
         待分析文本
 
@@ -109,7 +109,7 @@ class HWCloudSentimentResp:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this HWCloudSentimentResp.
+        r"""Sets the content of this HWCloudSentimentResp.
 
         待分析文本
 

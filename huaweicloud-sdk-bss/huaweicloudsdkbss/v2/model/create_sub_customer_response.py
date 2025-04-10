@@ -28,7 +28,7 @@ class CreateSubCustomerResponse(SdkResponse):
     }
 
     def __init__(self, domain_id=None, domain_name=None):
-        """CreateSubCustomerResponse
+        r"""CreateSubCustomerResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateSubCustomerResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateSubCustomerResponse.
+        r"""Gets the domain_id of this CreateSubCustomerResponse.
 
         客户ID。 只有成功或者错误码在CBC.99000050时才会返回。
 
@@ -62,7 +62,7 @@ class CreateSubCustomerResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateSubCustomerResponse.
+        r"""Sets the domain_id of this CreateSubCustomerResponse.
 
         客户ID。 只有成功或者错误码在CBC.99000050时才会返回。
 
@@ -73,7 +73,7 @@ class CreateSubCustomerResponse(SdkResponse):
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this CreateSubCustomerResponse.
+        r"""Gets the domain_name of this CreateSubCustomerResponse.
 
         客户的华为云账号名。 若请求参数中传递了此参数值，此处返回的响应值与请求参数中取值一致。若请求参数中未传递此参数值，此处返回的响应值为系统随机生成的32位字符串。 只有成功时或者错误码在CBC.99000050时才会返回。
 
@@ -84,7 +84,7 @@ class CreateSubCustomerResponse(SdkResponse):
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this CreateSubCustomerResponse.
+        r"""Sets the domain_name of this CreateSubCustomerResponse.
 
         客户的华为云账号名。 若请求参数中传递了此参数值，此处返回的响应值与请求参数中取值一致。若请求参数中未传递此参数值，此处返回的响应值为系统随机生成的32位字符串。 只有成功时或者错误码在CBC.99000050时才会返回。
 

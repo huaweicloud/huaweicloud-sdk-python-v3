@@ -25,7 +25,7 @@ class UpdateRouteTableRequestBody:
     }
 
     def __init__(self, route_table=None):
-        """UpdateRouteTableRequestBody
+        r"""UpdateRouteTableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateRouteTableRequestBody:
 
     @property
     def route_table(self):
-        """Gets the route_table of this UpdateRouteTableRequestBody.
+        r"""Gets the route_table of this UpdateRouteTableRequestBody.
 
         :return: The route_table of this UpdateRouteTableRequestBody.
         :rtype: :class:`huaweicloudsdker.v3.UpdateRouteTable`
@@ -52,7 +52,7 @@ class UpdateRouteTableRequestBody:
 
     @route_table.setter
     def route_table(self, route_table):
-        """Sets the route_table of this UpdateRouteTableRequestBody.
+        r"""Sets the route_table of this UpdateRouteTableRequestBody.
 
         :param route_table: The route_table of this UpdateRouteTableRequestBody.
         :type route_table: :class:`huaweicloudsdker.v3.UpdateRouteTable`

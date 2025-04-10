@@ -29,7 +29,7 @@ class UpdateTenantVpcIgwRequest:
     }
 
     def __init__(self, fields=None, vpc_igw_id=None, body=None):
-        """UpdateTenantVpcIgwRequest
+        r"""UpdateTenantVpcIgwRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateTenantVpcIgwRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this UpdateTenantVpcIgwRequest.
+        r"""Gets the fields of this UpdateTenantVpcIgwRequest.
 
         形式为\\\"fields=id&fields=project_id&...\\\"，支持字段：id/project_id/vpc_id/created_at/updated_at/name
 
@@ -67,7 +67,7 @@ class UpdateTenantVpcIgwRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this UpdateTenantVpcIgwRequest.
+        r"""Sets the fields of this UpdateTenantVpcIgwRequest.
 
         形式为\\\"fields=id&fields=project_id&...\\\"，支持字段：id/project_id/vpc_id/created_at/updated_at/name
 
@@ -78,7 +78,7 @@ class UpdateTenantVpcIgwRequest:
 
     @property
     def vpc_igw_id(self):
-        """Gets the vpc_igw_id of this UpdateTenantVpcIgwRequest.
+        r"""Gets the vpc_igw_id of this UpdateTenantVpcIgwRequest.
 
         vpc-igw的uuid
 
@@ -89,7 +89,7 @@ class UpdateTenantVpcIgwRequest:
 
     @vpc_igw_id.setter
     def vpc_igw_id(self, vpc_igw_id):
-        """Sets the vpc_igw_id of this UpdateTenantVpcIgwRequest.
+        r"""Sets the vpc_igw_id of this UpdateTenantVpcIgwRequest.
 
         vpc-igw的uuid
 
@@ -100,7 +100,7 @@ class UpdateTenantVpcIgwRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTenantVpcIgwRequest.
+        r"""Gets the body of this UpdateTenantVpcIgwRequest.
 
         :return: The body of this UpdateTenantVpcIgwRequest.
         :rtype: :class:`huaweicloudsdkeip.v3.UpdateTenantVpcIgwRequestBody`
@@ -109,7 +109,7 @@ class UpdateTenantVpcIgwRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTenantVpcIgwRequest.
+        r"""Sets the body of this UpdateTenantVpcIgwRequest.
 
         :param body: The body of this UpdateTenantVpcIgwRequest.
         :type body: :class:`huaweicloudsdkeip.v3.UpdateTenantVpcIgwRequestBody`

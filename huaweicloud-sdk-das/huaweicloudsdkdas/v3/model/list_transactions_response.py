@@ -28,7 +28,7 @@ class ListTransactionsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, transaction_info_list=None):
-        """ListTransactionsResponse
+        r"""ListTransactionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTransactionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTransactionsResponse.
+        r"""Gets the total of this ListTransactionsResponse.
 
         历史事务总数
 
@@ -62,7 +62,7 @@ class ListTransactionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTransactionsResponse.
+        r"""Sets the total of this ListTransactionsResponse.
 
         历史事务总数
 
@@ -73,7 +73,7 @@ class ListTransactionsResponse(SdkResponse):
 
     @property
     def transaction_info_list(self):
-        """Gets the transaction_info_list of this ListTransactionsResponse.
+        r"""Gets the transaction_info_list of this ListTransactionsResponse.
 
         历史事务信息列表
 
@@ -84,7 +84,7 @@ class ListTransactionsResponse(SdkResponse):
 
     @transaction_info_list.setter
     def transaction_info_list(self, transaction_info_list):
-        """Sets the transaction_info_list of this ListTransactionsResponse.
+        r"""Sets the transaction_info_list of this ListTransactionsResponse.
 
         历史事务信息列表
 

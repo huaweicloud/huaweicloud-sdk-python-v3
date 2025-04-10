@@ -31,7 +31,7 @@ class DeploymentGroupUpdateRequest:
     }
 
     def __init__(self, name=None, description=None, slave_cluster_id=None, auto_connection_test_switch=None):
-        """DeploymentGroupUpdateRequest
+        r"""DeploymentGroupUpdateRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class DeploymentGroupUpdateRequest:
 
     @property
     def name(self):
-        """Gets the name of this DeploymentGroupUpdateRequest.
+        r"""Gets the name of this DeploymentGroupUpdateRequest.
 
         主机集群名
 
@@ -74,7 +74,7 @@ class DeploymentGroupUpdateRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeploymentGroupUpdateRequest.
+        r"""Sets the name of this DeploymentGroupUpdateRequest.
 
         主机集群名
 
@@ -85,7 +85,7 @@ class DeploymentGroupUpdateRequest:
 
     @property
     def description(self):
-        """Gets the description of this DeploymentGroupUpdateRequest.
+        r"""Gets the description of this DeploymentGroupUpdateRequest.
 
         描述
 
@@ -96,7 +96,7 @@ class DeploymentGroupUpdateRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeploymentGroupUpdateRequest.
+        r"""Sets the description of this DeploymentGroupUpdateRequest.
 
         描述
 
@@ -107,7 +107,7 @@ class DeploymentGroupUpdateRequest:
 
     @property
     def slave_cluster_id(self):
-        """Gets the slave_cluster_id of this DeploymentGroupUpdateRequest.
+        r"""Gets the slave_cluster_id of this DeploymentGroupUpdateRequest.
 
         自定义slave资源池id
 
@@ -118,7 +118,7 @@ class DeploymentGroupUpdateRequest:
 
     @slave_cluster_id.setter
     def slave_cluster_id(self, slave_cluster_id):
-        """Sets the slave_cluster_id of this DeploymentGroupUpdateRequest.
+        r"""Sets the slave_cluster_id of this DeploymentGroupUpdateRequest.
 
         自定义slave资源池id
 
@@ -129,7 +129,7 @@ class DeploymentGroupUpdateRequest:
 
     @property
     def auto_connection_test_switch(self):
-        """Gets the auto_connection_test_switch of this DeploymentGroupUpdateRequest.
+        r"""Gets the auto_connection_test_switch of this DeploymentGroupUpdateRequest.
 
         自动测试功能已下架，该字段已失效
 
@@ -140,7 +140,7 @@ class DeploymentGroupUpdateRequest:
 
     @auto_connection_test_switch.setter
     def auto_connection_test_switch(self, auto_connection_test_switch):
-        """Sets the auto_connection_test_switch of this DeploymentGroupUpdateRequest.
+        r"""Sets the auto_connection_test_switch of this DeploymentGroupUpdateRequest.
 
         自动测试功能已下架，该字段已失效
 

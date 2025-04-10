@@ -29,7 +29,7 @@ class ShowOmUrlRequest:
     }
 
     def __init__(self, server_id=None, ip_address=None, host_account_name=None):
-        """ShowOmUrlRequest
+        r"""ShowOmUrlRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowOmUrlRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowOmUrlRequest.
+        r"""Gets the server_id of this ShowOmUrlRequest.
 
         云堡垒机服务器ID
 
@@ -65,7 +65,7 @@ class ShowOmUrlRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowOmUrlRequest.
+        r"""Sets the server_id of this ShowOmUrlRequest.
 
         云堡垒机服务器ID
 
@@ -76,7 +76,7 @@ class ShowOmUrlRequest:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this ShowOmUrlRequest.
+        r"""Gets the ip_address of this ShowOmUrlRequest.
 
         被纳管主机IP
 
@@ -87,7 +87,7 @@ class ShowOmUrlRequest:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this ShowOmUrlRequest.
+        r"""Sets the ip_address of this ShowOmUrlRequest.
 
         被纳管主机IP
 
@@ -98,7 +98,7 @@ class ShowOmUrlRequest:
 
     @property
     def host_account_name(self):
-        """Gets the host_account_name of this ShowOmUrlRequest.
+        r"""Gets the host_account_name of this ShowOmUrlRequest.
 
         被纳管主机的账户
 
@@ -109,7 +109,7 @@ class ShowOmUrlRequest:
 
     @host_account_name.setter
     def host_account_name(self, host_account_name):
-        """Sets the host_account_name of this ShowOmUrlRequest.
+        r"""Sets the host_account_name of this ShowOmUrlRequest.
 
         被纳管主机的账户
 

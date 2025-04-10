@@ -29,7 +29,7 @@ class DeleteEdgeGroupCertRequest:
     }
 
     def __init__(self, ief_instance_id=None, group_id=None, group_cert_id=None):
-        """DeleteEdgeGroupCertRequest
+        r"""DeleteEdgeGroupCertRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteEdgeGroupCertRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this DeleteEdgeGroupCertRequest.
+        r"""Gets the ief_instance_id of this DeleteEdgeGroupCertRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -66,7 +66,7 @@ class DeleteEdgeGroupCertRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this DeleteEdgeGroupCertRequest.
+        r"""Sets the ief_instance_id of this DeleteEdgeGroupCertRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -77,7 +77,7 @@ class DeleteEdgeGroupCertRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeleteEdgeGroupCertRequest.
+        r"""Gets the group_id of this DeleteEdgeGroupCertRequest.
 
         边缘节点组ID
 
@@ -88,7 +88,7 @@ class DeleteEdgeGroupCertRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeleteEdgeGroupCertRequest.
+        r"""Sets the group_id of this DeleteEdgeGroupCertRequest.
 
         边缘节点组ID
 
@@ -99,7 +99,7 @@ class DeleteEdgeGroupCertRequest:
 
     @property
     def group_cert_id(self):
-        """Gets the group_cert_id of this DeleteEdgeGroupCertRequest.
+        r"""Gets the group_cert_id of this DeleteEdgeGroupCertRequest.
 
         边缘节点组证书ID
 
@@ -110,7 +110,7 @@ class DeleteEdgeGroupCertRequest:
 
     @group_cert_id.setter
     def group_cert_id(self, group_cert_id):
-        """Sets the group_cert_id of this DeleteEdgeGroupCertRequest.
+        r"""Sets the group_cert_id of this DeleteEdgeGroupCertRequest.
 
         边缘节点组证书ID
 

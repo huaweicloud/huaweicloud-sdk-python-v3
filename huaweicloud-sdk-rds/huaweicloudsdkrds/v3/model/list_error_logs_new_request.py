@@ -37,7 +37,7 @@ class ListErrorLogsNewRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, start_date=None, end_date=None, offset=None, limit=None, level=None):
-        """ListErrorLogsNewRequest
+        r"""ListErrorLogsNewRequest
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ListErrorLogsNewRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListErrorLogsNewRequest.
+        r"""Gets the x_language of this ListErrorLogsNewRequest.
 
         语言
 
@@ -93,7 +93,7 @@ class ListErrorLogsNewRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListErrorLogsNewRequest.
+        r"""Sets the x_language of this ListErrorLogsNewRequest.
 
         语言
 
@@ -104,7 +104,7 @@ class ListErrorLogsNewRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListErrorLogsNewRequest.
+        r"""Gets the instance_id of this ListErrorLogsNewRequest.
 
         实例ID。
 
@@ -115,7 +115,7 @@ class ListErrorLogsNewRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListErrorLogsNewRequest.
+        r"""Sets the instance_id of this ListErrorLogsNewRequest.
 
         实例ID。
 
@@ -126,7 +126,7 @@ class ListErrorLogsNewRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ListErrorLogsNewRequest.
+        r"""Gets the start_date of this ListErrorLogsNewRequest.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -137,7 +137,7 @@ class ListErrorLogsNewRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ListErrorLogsNewRequest.
+        r"""Sets the start_date of this ListErrorLogsNewRequest.
 
         开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -148,7 +148,7 @@ class ListErrorLogsNewRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ListErrorLogsNewRequest.
+        r"""Gets the end_date of this ListErrorLogsNewRequest.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 只能查询当前时间前一个月内的错误日志。
 
@@ -159,7 +159,7 @@ class ListErrorLogsNewRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ListErrorLogsNewRequest.
+        r"""Sets the end_date of this ListErrorLogsNewRequest.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 只能查询当前时间前一个月内的错误日志。
 
@@ -170,7 +170,7 @@ class ListErrorLogsNewRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListErrorLogsNewRequest.
+        r"""Gets the offset of this ListErrorLogsNewRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -181,7 +181,7 @@ class ListErrorLogsNewRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListErrorLogsNewRequest.
+        r"""Sets the offset of this ListErrorLogsNewRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -192,7 +192,7 @@ class ListErrorLogsNewRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListErrorLogsNewRequest.
+        r"""Gets the limit of this ListErrorLogsNewRequest.
 
         每页多少条记录，取值范围是1~100，不填时默认为10。
 
@@ -203,7 +203,7 @@ class ListErrorLogsNewRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListErrorLogsNewRequest.
+        r"""Sets the limit of this ListErrorLogsNewRequest.
 
         每页多少条记录，取值范围是1~100，不填时默认为10。
 
@@ -214,7 +214,7 @@ class ListErrorLogsNewRequest:
 
     @property
     def level(self):
-        """Gets the level of this ListErrorLogsNewRequest.
+        r"""Gets the level of this ListErrorLogsNewRequest.
 
         日志级别，默认为ALL。
 
@@ -225,7 +225,7 @@ class ListErrorLogsNewRequest:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ListErrorLogsNewRequest.
+        r"""Sets the level of this ListErrorLogsNewRequest.
 
         日志级别，默认为ALL。
 

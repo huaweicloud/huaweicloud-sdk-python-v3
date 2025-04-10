@@ -25,7 +25,7 @@ class CreateEventStreamingRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEventStreamingRequest
+        r"""CreateEventStreamingRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateEventStreamingRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEventStreamingRequest.
+        r"""Gets the body of this CreateEventStreamingRequest.
 
         :return: The body of this CreateEventStreamingRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.EventStreamingCreateReq`
@@ -52,7 +52,7 @@ class CreateEventStreamingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEventStreamingRequest.
+        r"""Sets the body of this CreateEventStreamingRequest.
 
         :param body: The body of this CreateEventStreamingRequest.
         :type body: :class:`huaweicloudsdkeg.v1.EventStreamingCreateReq`

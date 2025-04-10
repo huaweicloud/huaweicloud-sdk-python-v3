@@ -27,7 +27,7 @@ class ShowPluginsRequest:
     }
 
     def __init__(self, gateway_id=None, accept=None):
-        """ShowPluginsRequest
+        r"""ShowPluginsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowPluginsRequest:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this ShowPluginsRequest.
+        r"""Gets the gateway_id of this ShowPluginsRequest.
 
         网关实例id
 
@@ -60,7 +60,7 @@ class ShowPluginsRequest:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this ShowPluginsRequest.
+        r"""Sets the gateway_id of this ShowPluginsRequest.
 
         网关实例id
 
@@ -71,7 +71,7 @@ class ShowPluginsRequest:
 
     @property
     def accept(self):
-        """Gets the accept of this ShowPluginsRequest.
+        r"""Gets the accept of this ShowPluginsRequest.
 
         该字段内容填为 \"application/json\"
 
@@ -82,7 +82,7 @@ class ShowPluginsRequest:
 
     @accept.setter
     def accept(self, accept):
-        """Sets the accept of this ShowPluginsRequest.
+        r"""Sets the accept of this ShowPluginsRequest.
 
         该字段内容填为 \"application/json\"
 

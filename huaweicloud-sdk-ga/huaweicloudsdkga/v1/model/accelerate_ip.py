@@ -29,7 +29,7 @@ class AccelerateIp:
     }
 
     def __init__(self, ip_type=None, ip_address=None, area=None):
-        """AccelerateIp
+        r"""AccelerateIp
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AccelerateIp:
 
     @property
     def ip_type(self):
-        """Gets the ip_type of this AccelerateIp.
+        r"""Gets the ip_type of this AccelerateIp.
 
         IP地址类型。
 
@@ -67,7 +67,7 @@ class AccelerateIp:
 
     @ip_type.setter
     def ip_type(self, ip_type):
-        """Sets the ip_type of this AccelerateIp.
+        r"""Sets the ip_type of this AccelerateIp.
 
         IP地址类型。
 
@@ -78,7 +78,7 @@ class AccelerateIp:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this AccelerateIp.
+        r"""Gets the ip_address of this AccelerateIp.
 
         IP地址。
 
@@ -89,7 +89,7 @@ class AccelerateIp:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this AccelerateIp.
+        r"""Sets the ip_address of this AccelerateIp.
 
         IP地址。
 
@@ -100,7 +100,7 @@ class AccelerateIp:
 
     @property
     def area(self):
-        """Gets the area of this AccelerateIp.
+        r"""Gets the area of this AccelerateIp.
 
         :return: The area of this AccelerateIp.
         :rtype: :class:`huaweicloudsdkga.v1.Area`
@@ -109,7 +109,7 @@ class AccelerateIp:
 
     @area.setter
     def area(self, area):
-        """Sets the area of this AccelerateIp.
+        r"""Sets the area of this AccelerateIp.
 
         :param area: The area of this AccelerateIp.
         :type area: :class:`huaweicloudsdkga.v1.Area`

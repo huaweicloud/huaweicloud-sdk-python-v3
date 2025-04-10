@@ -25,7 +25,7 @@ class UpdateDefaultTopicRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateDefaultTopicRequest
+        r"""UpdateDefaultTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateDefaultTopicRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDefaultTopicRequest.
+        r"""Gets the body of this UpdateDefaultTopicRequest.
 
         :return: The body of this UpdateDefaultTopicRequest.
         :rtype: :class:`huaweicloudsdkdsc.v1.DefaultTopicRequest`
@@ -52,7 +52,7 @@ class UpdateDefaultTopicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDefaultTopicRequest.
+        r"""Sets the body of this UpdateDefaultTopicRequest.
 
         :param body: The body of this UpdateDefaultTopicRequest.
         :type body: :class:`huaweicloudsdkdsc.v1.DefaultTopicRequest`

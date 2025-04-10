@@ -30,7 +30,7 @@ class ListGeipResourceQuotasResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, quotas=None, x_request_id=None):
-        """ListGeipResourceQuotasResponse
+        r"""ListGeipResourceQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListGeipResourceQuotasResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGeipResourceQuotasResponse.
+        r"""Gets the request_id of this ListGeipResourceQuotasResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class ListGeipResourceQuotasResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGeipResourceQuotasResponse.
+        r"""Sets the request_id of this ListGeipResourceQuotasResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class ListGeipResourceQuotasResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ListGeipResourceQuotasResponse.
+        r"""Gets the quotas of this ListGeipResourceQuotasResponse.
 
         :return: The quotas of this ListGeipResourceQuotasResponse.
         :rtype: ListQuotas
@@ -89,7 +89,7 @@ class ListGeipResourceQuotasResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ListGeipResourceQuotasResponse.
+        r"""Sets the quotas of this ListGeipResourceQuotasResponse.
 
         :param quotas: The quotas of this ListGeipResourceQuotasResponse.
         :type quotas: ListQuotas
@@ -98,7 +98,7 @@ class ListGeipResourceQuotasResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListGeipResourceQuotasResponse.
+        r"""Gets the x_request_id of this ListGeipResourceQuotasResponse.
 
         :return: The x_request_id of this ListGeipResourceQuotasResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ListGeipResourceQuotasResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListGeipResourceQuotasResponse.
+        r"""Sets the x_request_id of this ListGeipResourceQuotasResponse.
 
         :param x_request_id: The x_request_id of this ListGeipResourceQuotasResponse.
         :type x_request_id: str

@@ -37,7 +37,7 @@ class PackageExerciseCard:
     }
 
     def __init__(self, id=None, name=None, difficult=None, exercise_type=None, exercise_type_name=None, order_count=None, knowledge_point=None):
-        """PackageExerciseCard
+        r"""PackageExerciseCard
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PackageExerciseCard:
 
     @property
     def id(self):
-        """Gets the id of this PackageExerciseCard.
+        r"""Gets the id of this PackageExerciseCard.
 
         习题id
 
@@ -96,7 +96,7 @@ class PackageExerciseCard:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PackageExerciseCard.
+        r"""Sets the id of this PackageExerciseCard.
 
         习题id
 
@@ -107,7 +107,7 @@ class PackageExerciseCard:
 
     @property
     def name(self):
-        """Gets the name of this PackageExerciseCard.
+        r"""Gets the name of this PackageExerciseCard.
 
         习题名称
 
@@ -118,7 +118,7 @@ class PackageExerciseCard:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PackageExerciseCard.
+        r"""Sets the name of this PackageExerciseCard.
 
         习题名称
 
@@ -129,7 +129,7 @@ class PackageExerciseCard:
 
     @property
     def difficult(self):
-        """Gets the difficult of this PackageExerciseCard.
+        r"""Gets the difficult of this PackageExerciseCard.
 
         :return: The difficult of this PackageExerciseCard.
         :rtype: :class:`huaweicloudsdkclassroom.v3.DifficultInfo`
@@ -138,7 +138,7 @@ class PackageExerciseCard:
 
     @difficult.setter
     def difficult(self, difficult):
-        """Sets the difficult of this PackageExerciseCard.
+        r"""Sets the difficult of this PackageExerciseCard.
 
         :param difficult: The difficult of this PackageExerciseCard.
         :type difficult: :class:`huaweicloudsdkclassroom.v3.DifficultInfo`
@@ -147,7 +147,7 @@ class PackageExerciseCard:
 
     @property
     def exercise_type(self):
-        """Gets the exercise_type of this PackageExerciseCard.
+        r"""Gets the exercise_type of this PackageExerciseCard.
 
         习题类型编号
 
@@ -158,7 +158,7 @@ class PackageExerciseCard:
 
     @exercise_type.setter
     def exercise_type(self, exercise_type):
-        """Sets the exercise_type of this PackageExerciseCard.
+        r"""Sets the exercise_type of this PackageExerciseCard.
 
         习题类型编号
 
@@ -169,7 +169,7 @@ class PackageExerciseCard:
 
     @property
     def exercise_type_name(self):
-        """Gets the exercise_type_name of this PackageExerciseCard.
+        r"""Gets the exercise_type_name of this PackageExerciseCard.
 
         习题类型名称
 
@@ -180,7 +180,7 @@ class PackageExerciseCard:
 
     @exercise_type_name.setter
     def exercise_type_name(self, exercise_type_name):
-        """Sets the exercise_type_name of this PackageExerciseCard.
+        r"""Sets the exercise_type_name of this PackageExerciseCard.
 
         习题类型名称
 
@@ -191,7 +191,7 @@ class PackageExerciseCard:
 
     @property
     def order_count(self):
-        """Gets the order_count of this PackageExerciseCard.
+        r"""Gets the order_count of this PackageExerciseCard.
 
         习题库里习题编号
 
@@ -202,7 +202,7 @@ class PackageExerciseCard:
 
     @order_count.setter
     def order_count(self, order_count):
-        """Sets the order_count of this PackageExerciseCard.
+        r"""Sets the order_count of this PackageExerciseCard.
 
         习题库里习题编号
 
@@ -213,7 +213,7 @@ class PackageExerciseCard:
 
     @property
     def knowledge_point(self):
-        """Gets the knowledge_point of this PackageExerciseCard.
+        r"""Gets the knowledge_point of this PackageExerciseCard.
 
         相关知识点
 
@@ -224,7 +224,7 @@ class PackageExerciseCard:
 
     @knowledge_point.setter
     def knowledge_point(self, knowledge_point):
-        """Sets the knowledge_point of this PackageExerciseCard.
+        r"""Sets the knowledge_point of this PackageExerciseCard.
 
         相关知识点
 

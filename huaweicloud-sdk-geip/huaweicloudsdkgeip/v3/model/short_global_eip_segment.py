@@ -27,7 +27,7 @@ class ShortGlobalEipSegment:
     }
 
     def __init__(self, id=None, name=None):
-        """ShortGlobalEipSegment
+        r"""ShortGlobalEipSegment
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShortGlobalEipSegment:
 
     @property
     def id(self):
-        """Gets the id of this ShortGlobalEipSegment.
+        r"""Gets the id of this ShortGlobalEipSegment.
 
         全域弹性公网IP段的ID
 
@@ -61,7 +61,7 @@ class ShortGlobalEipSegment:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShortGlobalEipSegment.
+        r"""Sets the id of this ShortGlobalEipSegment.
 
         全域弹性公网IP段的ID
 
@@ -72,7 +72,7 @@ class ShortGlobalEipSegment:
 
     @property
     def name(self):
-        """Gets the name of this ShortGlobalEipSegment.
+        r"""Gets the name of this ShortGlobalEipSegment.
 
         - 功能说明：全域弹性公网IP段名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -83,7 +83,7 @@ class ShortGlobalEipSegment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShortGlobalEipSegment.
+        r"""Sets the name of this ShortGlobalEipSegment.
 
         - 功能说明：全域弹性公网IP段名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 

@@ -42,7 +42,7 @@ class UpdateAppQuotaResponse(SdkResponse):
     }
 
     def __init__(self, app_quota_id=None, name=None, call_limits=None, time_unit=None, time_interval=None, remark=None, reset_time=None, create_time=None, bound_app_num=None):
-        """UpdateAppQuotaResponse
+        r"""UpdateAppQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @property
     def app_quota_id(self):
-        """Gets the app_quota_id of this UpdateAppQuotaResponse.
+        r"""Gets the app_quota_id of this UpdateAppQuotaResponse.
 
         凭据配额编号
 
@@ -111,7 +111,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @app_quota_id.setter
     def app_quota_id(self, app_quota_id):
-        """Sets the app_quota_id of this UpdateAppQuotaResponse.
+        r"""Sets the app_quota_id of this UpdateAppQuotaResponse.
 
         凭据配额编号
 
@@ -122,7 +122,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateAppQuotaResponse.
+        r"""Gets the name of this UpdateAppQuotaResponse.
 
         配额名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符
 
@@ -133,7 +133,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAppQuotaResponse.
+        r"""Sets the name of this UpdateAppQuotaResponse.
 
         配额名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符
 
@@ -144,7 +144,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @property
     def call_limits(self):
-        """Gets the call_limits of this UpdateAppQuotaResponse.
+        r"""Gets the call_limits of this UpdateAppQuotaResponse.
 
         凭据配额的访问次数限制
 
@@ -155,7 +155,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @call_limits.setter
     def call_limits(self, call_limits):
-        """Sets the call_limits of this UpdateAppQuotaResponse.
+        r"""Sets the call_limits of this UpdateAppQuotaResponse.
 
         凭据配额的访问次数限制
 
@@ -166,7 +166,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @property
     def time_unit(self):
-        """Gets the time_unit of this UpdateAppQuotaResponse.
+        r"""Gets the time_unit of this UpdateAppQuotaResponse.
 
         限定时间单位：SECOND:秒、MINUTE:分、HOUR:时、DAY:天
 
@@ -177,7 +177,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @time_unit.setter
     def time_unit(self, time_unit):
-        """Sets the time_unit of this UpdateAppQuotaResponse.
+        r"""Sets the time_unit of this UpdateAppQuotaResponse.
 
         限定时间单位：SECOND:秒、MINUTE:分、HOUR:时、DAY:天
 
@@ -188,7 +188,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @property
     def time_interval(self):
-        """Gets the time_interval of this UpdateAppQuotaResponse.
+        r"""Gets the time_interval of this UpdateAppQuotaResponse.
 
         配额的限定时间值
 
@@ -199,7 +199,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @time_interval.setter
     def time_interval(self, time_interval):
-        """Sets the time_interval of this UpdateAppQuotaResponse.
+        r"""Sets the time_interval of this UpdateAppQuotaResponse.
 
         配额的限定时间值
 
@@ -210,7 +210,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @property
     def remark(self):
-        """Gets the remark of this UpdateAppQuotaResponse.
+        r"""Gets the remark of this UpdateAppQuotaResponse.
 
         参数说明和描述
 
@@ -221,7 +221,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this UpdateAppQuotaResponse.
+        r"""Sets the remark of this UpdateAppQuotaResponse.
 
         参数说明和描述
 
@@ -232,7 +232,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @property
     def reset_time(self):
-        """Gets the reset_time of this UpdateAppQuotaResponse.
+        r"""Gets the reset_time of this UpdateAppQuotaResponse.
 
         首次配额重置时间点，不配置默认为首次调用时间计算
 
@@ -243,7 +243,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @reset_time.setter
     def reset_time(self, reset_time):
-        """Sets the reset_time of this UpdateAppQuotaResponse.
+        r"""Sets the reset_time of this UpdateAppQuotaResponse.
 
         首次配额重置时间点，不配置默认为首次调用时间计算
 
@@ -254,7 +254,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateAppQuotaResponse.
+        r"""Gets the create_time of this UpdateAppQuotaResponse.
 
         创建时间
 
@@ -265,7 +265,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateAppQuotaResponse.
+        r"""Sets the create_time of this UpdateAppQuotaResponse.
 
         创建时间
 
@@ -276,7 +276,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @property
     def bound_app_num(self):
-        """Gets the bound_app_num of this UpdateAppQuotaResponse.
+        r"""Gets the bound_app_num of this UpdateAppQuotaResponse.
 
         配额策略已绑定应用数量
 
@@ -287,7 +287,7 @@ class UpdateAppQuotaResponse(SdkResponse):
 
     @bound_app_num.setter
     def bound_app_num(self, bound_app_num):
-        """Sets the bound_app_num of this UpdateAppQuotaResponse.
+        r"""Sets the bound_app_num of this UpdateAppQuotaResponse.
 
         配额策略已绑定应用数量
 

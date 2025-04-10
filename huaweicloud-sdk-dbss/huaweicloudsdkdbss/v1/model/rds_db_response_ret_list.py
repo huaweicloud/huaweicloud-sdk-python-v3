@@ -29,7 +29,7 @@ class RdsDbResponseRetList:
     }
 
     def __init__(self, id=None, ret_status=None, ret_message=None):
-        """RdsDbResponseRetList
+        r"""RdsDbResponseRetList
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RdsDbResponseRetList:
 
     @property
     def id(self):
-        """Gets the id of this RdsDbResponseRetList.
+        r"""Gets the id of this RdsDbResponseRetList.
 
         rds数据库id
 
@@ -65,7 +65,7 @@ class RdsDbResponseRetList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RdsDbResponseRetList.
+        r"""Sets the id of this RdsDbResponseRetList.
 
         rds数据库id
 
@@ -76,7 +76,7 @@ class RdsDbResponseRetList:
 
     @property
     def ret_status(self):
-        """Gets the ret_status of this RdsDbResponseRetList.
+        r"""Gets the ret_status of this RdsDbResponseRetList.
 
         状态 - SUCCESS - FAILED
 
@@ -87,7 +87,7 @@ class RdsDbResponseRetList:
 
     @ret_status.setter
     def ret_status(self, ret_status):
-        """Sets the ret_status of this RdsDbResponseRetList.
+        r"""Sets the ret_status of this RdsDbResponseRetList.
 
         状态 - SUCCESS - FAILED
 
@@ -98,7 +98,7 @@ class RdsDbResponseRetList:
 
     @property
     def ret_message(self):
-        """Gets the ret_message of this RdsDbResponseRetList.
+        r"""Gets the ret_message of this RdsDbResponseRetList.
 
         描述
 
@@ -109,7 +109,7 @@ class RdsDbResponseRetList:
 
     @ret_message.setter
     def ret_message(self, ret_message):
-        """Sets the ret_message of this RdsDbResponseRetList.
+        r"""Sets the ret_message of this RdsDbResponseRetList.
 
         描述
 

@@ -407,7 +407,7 @@ class CaseReportDetail:
     }
 
     def __init__(self, max_success_rate_check_point=None, alias=None, average_resp_time=None, average_resp_time_check_point=None, average_resp_time_check_res=None, avg_network_traffic=None, avg_rec_bytes=None, avg_rec_bytes_check_point=None, avg_rec_bytes_check_res=None, avg_sent_bytes=None, avg_sent_bytes_check_point=None, avg_sent_bytes_check_res=None, avg_tran_resp_time=None, avg_tran_resp_time_check_point=None, avg_tran_resp_time_check_res=None, aw_id=None, case_uri=None, checkpoint_result=None, cpu_usage=None, cpu_usage_avg=None, cpu_usage_avg_check_point=None, cpu_usage_avg_check_res=None, cpu_usage_check_point=None, cpu_usage_check_res=None, create_time=None, current_thread_num=None, datum_type=None, dcs_latency_avg=None, dcs_latency_avg_check_point=None, dcs_latency_avg_check_res=None, dcs_latency_max=None, dcs_latency_max_check_point=None, dcs_latency_max_check_res=None, dcs_latency_min=None, dcs_latency_min_check_point=None, dcs_latency_min_check_res=None, detail_id=None, disk_read=None, disk_read_avg=None, disk_read_avg_check_point=None, disk_read_avg_check_res=None, disk_read_check_point=None, disk_read_check_res=None, disk_usage=None, disk_usage_avg=None, disk_usage_avg_check_point=None, disk_usage_avg_check_res=None, disk_usage_check_point=None, disk_usage_check_res=None, disk_write=None, disk_write_avg=None, disk_write_avg_check_point=None, disk_write_avg_check_res=None, disk_write_check_point=None, disk_write_check_res=None, duration=None, end_time=None, error_count=None, error_events_count=None, failed_assert=None, failed_others=None, failed_parsed=None, failed_reason=None, failed_refused=None, failed_timeout=None, id=None, is_aw=None, iteration_uri=None, kpi_monitor=None, max=None, max_avg_time=None, max_avg_time_check_point=None, max_avg_time_check_res=None, max_network_traffic=None, max_rec_bytes=None, max_rec_bytes_check_point=None, max_rec_bytes_check_res=None, max_resp_time=None, max_resp_time_check_point=None, max_resp_time_check_res=None, max_rps=None, max_sent_bytes=None, max_sent_bytes_check_point=None, max_sent_bytes_check_res=None, max_success_rate=None, max_success_rate_check_res=None, max_thread_num=None, max_thread_num_check_point=None, max_thread_num_check_res=None, max_tps=None, max_tps_check_point=None, max_tps_check_res=None, max_tran_resp_time=None, max_tran_resp_time_check_point=None, max_tran_resp_time_check_res=None, memory_usage=None, memory_usage_avg=None, memory_usage_avg_check_point=None, memory_usage_avg_check_res=None, memory_usage_check_point=None, memory_usage_check_res=None, min=None, min_network_traffic=None, mode=None, monitor_peak_time=None, monitor_peak_time_check_point=None, monitor_peak_time_check_res=None, monitor_result=None, monitor_result_check_point=None, monitor_result_check_res=None, name=None, network_read=None, network_read_avg=None, network_read_avg_check_point=None, network_read_avg_check_res=None, network_read_check_point=None, network_read_check_res=None, network_write=None, network_write_avg=None, network_write_avg_check_point=None, network_write_avg_check_res=None, network_write_check_point=None, network_write_check_res=None, peak_load_status=None, peak_load_status_check_point=None, peak_load_status_check_res=None, peak_metric=None, project_id=None, protocols=None, requests=None, result=None, result_log=None, round=None, save_all_data=None, service_id=None, stage=None, start_time=None, status=None, streaming_media_vo=None, success_count=None, success_rate=None, success_rate_check_point=None, success_rate_check_res=None, sum1xx=None, sum2xx=None, sum3xx=None, sum4xx=None, sum5xx=None, task_id=None, task_name=None, task_project_id=None, task_status=None, test_case_uri=None, tp50=None, tp50_check_point=None, tp50_check_res=None, tp75=None, tp75_check_point=None, tp75_check_res=None, tp85=None, tp85_check_point=None, tp85_check_res=None, tp90=None, tp90_check_point=None, tp90_check_res=None, tp95=None, tp95_check_point=None, tp95_check_res=None, tp99=None, tp999=None, tp9999=None, tp9999_check_point=None, tp9999_check_res=None, tp999_check_point=None, tp999_check_res=None, tp99_check_point=None, tp99_check_res=None, tps=None, tps_check_point=None, tps_check_res=None, tran_tps=None, tran_tps_check_point=None, tran_tps_check_res=None, transaction_id=None, transaction_success=None, transactions=None, transactions_check_point=None, transactions_check_res=None, update_time=None, url=None, user_concur=None, version_uri=None):
-        """CaseReportDetail
+        r"""CaseReportDetail
 
         The model defined in huaweicloud sdk
 
@@ -1380,7 +1380,7 @@ class CaseReportDetail:
 
     @property
     def max_success_rate_check_point(self):
-        """Gets the max_success_rate_check_point of this CaseReportDetail.
+        r"""Gets the max_success_rate_check_point of this CaseReportDetail.
 
         最大成功率检查点
 
@@ -1391,7 +1391,7 @@ class CaseReportDetail:
 
     @max_success_rate_check_point.setter
     def max_success_rate_check_point(self, max_success_rate_check_point):
-        """Sets the max_success_rate_check_point of this CaseReportDetail.
+        r"""Sets the max_success_rate_check_point of this CaseReportDetail.
 
         最大成功率检查点
 
@@ -1402,7 +1402,7 @@ class CaseReportDetail:
 
     @property
     def alias(self):
-        """Gets the alias of this CaseReportDetail.
+        r"""Gets the alias of this CaseReportDetail.
 
         别名
 
@@ -1413,7 +1413,7 @@ class CaseReportDetail:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this CaseReportDetail.
+        r"""Sets the alias of this CaseReportDetail.
 
         别名
 
@@ -1424,7 +1424,7 @@ class CaseReportDetail:
 
     @property
     def average_resp_time(self):
-        """Gets the average_resp_time of this CaseReportDetail.
+        r"""Gets the average_resp_time of this CaseReportDetail.
 
         平均响应时间
 
@@ -1435,7 +1435,7 @@ class CaseReportDetail:
 
     @average_resp_time.setter
     def average_resp_time(self, average_resp_time):
-        """Sets the average_resp_time of this CaseReportDetail.
+        r"""Sets the average_resp_time of this CaseReportDetail.
 
         平均响应时间
 
@@ -1446,7 +1446,7 @@ class CaseReportDetail:
 
     @property
     def average_resp_time_check_point(self):
-        """Gets the average_resp_time_check_point of this CaseReportDetail.
+        r"""Gets the average_resp_time_check_point of this CaseReportDetail.
 
         平均响应时间检查点
 
@@ -1457,7 +1457,7 @@ class CaseReportDetail:
 
     @average_resp_time_check_point.setter
     def average_resp_time_check_point(self, average_resp_time_check_point):
-        """Sets the average_resp_time_check_point of this CaseReportDetail.
+        r"""Sets the average_resp_time_check_point of this CaseReportDetail.
 
         平均响应时间检查点
 
@@ -1468,7 +1468,7 @@ class CaseReportDetail:
 
     @property
     def average_resp_time_check_res(self):
-        """Gets the average_resp_time_check_res of this CaseReportDetail.
+        r"""Gets the average_resp_time_check_res of this CaseReportDetail.
 
         平均响应时间检查结果
 
@@ -1479,7 +1479,7 @@ class CaseReportDetail:
 
     @average_resp_time_check_res.setter
     def average_resp_time_check_res(self, average_resp_time_check_res):
-        """Sets the average_resp_time_check_res of this CaseReportDetail.
+        r"""Sets the average_resp_time_check_res of this CaseReportDetail.
 
         平均响应时间检查结果
 
@@ -1490,7 +1490,7 @@ class CaseReportDetail:
 
     @property
     def avg_network_traffic(self):
-        """Gets the avg_network_traffic of this CaseReportDetail.
+        r"""Gets the avg_network_traffic of this CaseReportDetail.
 
         平均带宽
 
@@ -1501,7 +1501,7 @@ class CaseReportDetail:
 
     @avg_network_traffic.setter
     def avg_network_traffic(self, avg_network_traffic):
-        """Sets the avg_network_traffic of this CaseReportDetail.
+        r"""Sets the avg_network_traffic of this CaseReportDetail.
 
         平均带宽
 
@@ -1512,7 +1512,7 @@ class CaseReportDetail:
 
     @property
     def avg_rec_bytes(self):
-        """Gets the avg_rec_bytes of this CaseReportDetail.
+        r"""Gets the avg_rec_bytes of this CaseReportDetail.
 
         平均下行带宽
 
@@ -1523,7 +1523,7 @@ class CaseReportDetail:
 
     @avg_rec_bytes.setter
     def avg_rec_bytes(self, avg_rec_bytes):
-        """Sets the avg_rec_bytes of this CaseReportDetail.
+        r"""Sets the avg_rec_bytes of this CaseReportDetail.
 
         平均下行带宽
 
@@ -1534,7 +1534,7 @@ class CaseReportDetail:
 
     @property
     def avg_rec_bytes_check_point(self):
-        """Gets the avg_rec_bytes_check_point of this CaseReportDetail.
+        r"""Gets the avg_rec_bytes_check_point of this CaseReportDetail.
 
         平均下行带宽检查点
 
@@ -1545,7 +1545,7 @@ class CaseReportDetail:
 
     @avg_rec_bytes_check_point.setter
     def avg_rec_bytes_check_point(self, avg_rec_bytes_check_point):
-        """Sets the avg_rec_bytes_check_point of this CaseReportDetail.
+        r"""Sets the avg_rec_bytes_check_point of this CaseReportDetail.
 
         平均下行带宽检查点
 
@@ -1556,7 +1556,7 @@ class CaseReportDetail:
 
     @property
     def avg_rec_bytes_check_res(self):
-        """Gets the avg_rec_bytes_check_res of this CaseReportDetail.
+        r"""Gets the avg_rec_bytes_check_res of this CaseReportDetail.
 
         平均下行带宽检查结果
 
@@ -1567,7 +1567,7 @@ class CaseReportDetail:
 
     @avg_rec_bytes_check_res.setter
     def avg_rec_bytes_check_res(self, avg_rec_bytes_check_res):
-        """Sets the avg_rec_bytes_check_res of this CaseReportDetail.
+        r"""Sets the avg_rec_bytes_check_res of this CaseReportDetail.
 
         平均下行带宽检查结果
 
@@ -1578,7 +1578,7 @@ class CaseReportDetail:
 
     @property
     def avg_sent_bytes(self):
-        """Gets the avg_sent_bytes of this CaseReportDetail.
+        r"""Gets the avg_sent_bytes of this CaseReportDetail.
 
         平均上行带宽
 
@@ -1589,7 +1589,7 @@ class CaseReportDetail:
 
     @avg_sent_bytes.setter
     def avg_sent_bytes(self, avg_sent_bytes):
-        """Sets the avg_sent_bytes of this CaseReportDetail.
+        r"""Sets the avg_sent_bytes of this CaseReportDetail.
 
         平均上行带宽
 
@@ -1600,7 +1600,7 @@ class CaseReportDetail:
 
     @property
     def avg_sent_bytes_check_point(self):
-        """Gets the avg_sent_bytes_check_point of this CaseReportDetail.
+        r"""Gets the avg_sent_bytes_check_point of this CaseReportDetail.
 
         平均上行带宽检查点
 
@@ -1611,7 +1611,7 @@ class CaseReportDetail:
 
     @avg_sent_bytes_check_point.setter
     def avg_sent_bytes_check_point(self, avg_sent_bytes_check_point):
-        """Sets the avg_sent_bytes_check_point of this CaseReportDetail.
+        r"""Sets the avg_sent_bytes_check_point of this CaseReportDetail.
 
         平均上行带宽检查点
 
@@ -1622,7 +1622,7 @@ class CaseReportDetail:
 
     @property
     def avg_sent_bytes_check_res(self):
-        """Gets the avg_sent_bytes_check_res of this CaseReportDetail.
+        r"""Gets the avg_sent_bytes_check_res of this CaseReportDetail.
 
         平均上行带宽检查结果
 
@@ -1633,7 +1633,7 @@ class CaseReportDetail:
 
     @avg_sent_bytes_check_res.setter
     def avg_sent_bytes_check_res(self, avg_sent_bytes_check_res):
-        """Sets the avg_sent_bytes_check_res of this CaseReportDetail.
+        r"""Sets the avg_sent_bytes_check_res of this CaseReportDetail.
 
         平均上行带宽检查结果
 
@@ -1644,7 +1644,7 @@ class CaseReportDetail:
 
     @property
     def avg_tran_resp_time(self):
-        """Gets the avg_tran_resp_time of this CaseReportDetail.
+        r"""Gets the avg_tran_resp_time of this CaseReportDetail.
 
         事务平均响应时间
 
@@ -1655,7 +1655,7 @@ class CaseReportDetail:
 
     @avg_tran_resp_time.setter
     def avg_tran_resp_time(self, avg_tran_resp_time):
-        """Sets the avg_tran_resp_time of this CaseReportDetail.
+        r"""Sets the avg_tran_resp_time of this CaseReportDetail.
 
         事务平均响应时间
 
@@ -1666,7 +1666,7 @@ class CaseReportDetail:
 
     @property
     def avg_tran_resp_time_check_point(self):
-        """Gets the avg_tran_resp_time_check_point of this CaseReportDetail.
+        r"""Gets the avg_tran_resp_time_check_point of this CaseReportDetail.
 
         事务平均响应时间检查点
 
@@ -1677,7 +1677,7 @@ class CaseReportDetail:
 
     @avg_tran_resp_time_check_point.setter
     def avg_tran_resp_time_check_point(self, avg_tran_resp_time_check_point):
-        """Sets the avg_tran_resp_time_check_point of this CaseReportDetail.
+        r"""Sets the avg_tran_resp_time_check_point of this CaseReportDetail.
 
         事务平均响应时间检查点
 
@@ -1688,7 +1688,7 @@ class CaseReportDetail:
 
     @property
     def avg_tran_resp_time_check_res(self):
-        """Gets the avg_tran_resp_time_check_res of this CaseReportDetail.
+        r"""Gets the avg_tran_resp_time_check_res of this CaseReportDetail.
 
         事务平均响应时间检查结果
 
@@ -1699,7 +1699,7 @@ class CaseReportDetail:
 
     @avg_tran_resp_time_check_res.setter
     def avg_tran_resp_time_check_res(self, avg_tran_resp_time_check_res):
-        """Sets the avg_tran_resp_time_check_res of this CaseReportDetail.
+        r"""Sets the avg_tran_resp_time_check_res of this CaseReportDetail.
 
         事务平均响应时间检查结果
 
@@ -1710,7 +1710,7 @@ class CaseReportDetail:
 
     @property
     def aw_id(self):
-        """Gets the aw_id of this CaseReportDetail.
+        r"""Gets the aw_id of this CaseReportDetail.
 
         请求id
 
@@ -1721,7 +1721,7 @@ class CaseReportDetail:
 
     @aw_id.setter
     def aw_id(self, aw_id):
-        """Sets the aw_id of this CaseReportDetail.
+        r"""Sets the aw_id of this CaseReportDetail.
 
         请求id
 
@@ -1732,7 +1732,7 @@ class CaseReportDetail:
 
     @property
     def case_uri(self):
-        """Gets the case_uri of this CaseReportDetail.
+        r"""Gets the case_uri of this CaseReportDetail.
 
         用例Uri
 
@@ -1743,7 +1743,7 @@ class CaseReportDetail:
 
     @case_uri.setter
     def case_uri(self, case_uri):
-        """Sets the case_uri of this CaseReportDetail.
+        r"""Sets the case_uri of this CaseReportDetail.
 
         用例Uri
 
@@ -1754,7 +1754,7 @@ class CaseReportDetail:
 
     @property
     def checkpoint_result(self):
-        """Gets the checkpoint_result of this CaseReportDetail.
+        r"""Gets the checkpoint_result of this CaseReportDetail.
 
         所有检查点结果的汇总结果
 
@@ -1765,7 +1765,7 @@ class CaseReportDetail:
 
     @checkpoint_result.setter
     def checkpoint_result(self, checkpoint_result):
-        """Sets the checkpoint_result of this CaseReportDetail.
+        r"""Sets the checkpoint_result of this CaseReportDetail.
 
         所有检查点结果的汇总结果
 
@@ -1776,7 +1776,7 @@ class CaseReportDetail:
 
     @property
     def cpu_usage(self):
-        """Gets the cpu_usage of this CaseReportDetail.
+        r"""Gets the cpu_usage of this CaseReportDetail.
 
         cpu最大使用率
 
@@ -1787,7 +1787,7 @@ class CaseReportDetail:
 
     @cpu_usage.setter
     def cpu_usage(self, cpu_usage):
-        """Sets the cpu_usage of this CaseReportDetail.
+        r"""Sets the cpu_usage of this CaseReportDetail.
 
         cpu最大使用率
 
@@ -1798,7 +1798,7 @@ class CaseReportDetail:
 
     @property
     def cpu_usage_avg(self):
-        """Gets the cpu_usage_avg of this CaseReportDetail.
+        r"""Gets the cpu_usage_avg of this CaseReportDetail.
 
         cpu平均使用率
 
@@ -1809,7 +1809,7 @@ class CaseReportDetail:
 
     @cpu_usage_avg.setter
     def cpu_usage_avg(self, cpu_usage_avg):
-        """Sets the cpu_usage_avg of this CaseReportDetail.
+        r"""Sets the cpu_usage_avg of this CaseReportDetail.
 
         cpu平均使用率
 
@@ -1820,7 +1820,7 @@ class CaseReportDetail:
 
     @property
     def cpu_usage_avg_check_point(self):
-        """Gets the cpu_usage_avg_check_point of this CaseReportDetail.
+        r"""Gets the cpu_usage_avg_check_point of this CaseReportDetail.
 
         cpu平均使用率检查点
 
@@ -1831,7 +1831,7 @@ class CaseReportDetail:
 
     @cpu_usage_avg_check_point.setter
     def cpu_usage_avg_check_point(self, cpu_usage_avg_check_point):
-        """Sets the cpu_usage_avg_check_point of this CaseReportDetail.
+        r"""Sets the cpu_usage_avg_check_point of this CaseReportDetail.
 
         cpu平均使用率检查点
 
@@ -1842,7 +1842,7 @@ class CaseReportDetail:
 
     @property
     def cpu_usage_avg_check_res(self):
-        """Gets the cpu_usage_avg_check_res of this CaseReportDetail.
+        r"""Gets the cpu_usage_avg_check_res of this CaseReportDetail.
 
         cpu平均使用率检查结果
 
@@ -1853,7 +1853,7 @@ class CaseReportDetail:
 
     @cpu_usage_avg_check_res.setter
     def cpu_usage_avg_check_res(self, cpu_usage_avg_check_res):
-        """Sets the cpu_usage_avg_check_res of this CaseReportDetail.
+        r"""Sets the cpu_usage_avg_check_res of this CaseReportDetail.
 
         cpu平均使用率检查结果
 
@@ -1864,7 +1864,7 @@ class CaseReportDetail:
 
     @property
     def cpu_usage_check_point(self):
-        """Gets the cpu_usage_check_point of this CaseReportDetail.
+        r"""Gets the cpu_usage_check_point of this CaseReportDetail.
 
         cpu最大使用率检查点
 
@@ -1875,7 +1875,7 @@ class CaseReportDetail:
 
     @cpu_usage_check_point.setter
     def cpu_usage_check_point(self, cpu_usage_check_point):
-        """Sets the cpu_usage_check_point of this CaseReportDetail.
+        r"""Sets the cpu_usage_check_point of this CaseReportDetail.
 
         cpu最大使用率检查点
 
@@ -1886,7 +1886,7 @@ class CaseReportDetail:
 
     @property
     def cpu_usage_check_res(self):
-        """Gets the cpu_usage_check_res of this CaseReportDetail.
+        r"""Gets the cpu_usage_check_res of this CaseReportDetail.
 
         cpu最大使用率检查结果
 
@@ -1897,7 +1897,7 @@ class CaseReportDetail:
 
     @cpu_usage_check_res.setter
     def cpu_usage_check_res(self, cpu_usage_check_res):
-        """Sets the cpu_usage_check_res of this CaseReportDetail.
+        r"""Sets the cpu_usage_check_res of this CaseReportDetail.
 
         cpu最大使用率检查结果
 
@@ -1908,7 +1908,7 @@ class CaseReportDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CaseReportDetail.
+        r"""Gets the create_time of this CaseReportDetail.
 
         创建时间
 
@@ -1919,7 +1919,7 @@ class CaseReportDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CaseReportDetail.
+        r"""Sets the create_time of this CaseReportDetail.
 
         创建时间
 
@@ -1930,7 +1930,7 @@ class CaseReportDetail:
 
     @property
     def current_thread_num(self):
-        """Gets the current_thread_num of this CaseReportDetail.
+        r"""Gets the current_thread_num of this CaseReportDetail.
 
         最大并发数
 
@@ -1941,7 +1941,7 @@ class CaseReportDetail:
 
     @current_thread_num.setter
     def current_thread_num(self, current_thread_num):
-        """Sets the current_thread_num of this CaseReportDetail.
+        r"""Sets the current_thread_num of this CaseReportDetail.
 
         最大并发数
 
@@ -1952,7 +1952,7 @@ class CaseReportDetail:
 
     @property
     def datum_type(self):
-        """Gets the datum_type of this CaseReportDetail.
+        r"""Gets the datum_type of this CaseReportDetail.
 
         数据类型(case/aw/transaction)
 
@@ -1963,7 +1963,7 @@ class CaseReportDetail:
 
     @datum_type.setter
     def datum_type(self, datum_type):
-        """Sets the datum_type of this CaseReportDetail.
+        r"""Sets the datum_type of this CaseReportDetail.
 
         数据类型(case/aw/transaction)
 
@@ -1974,7 +1974,7 @@ class CaseReportDetail:
 
     @property
     def dcs_latency_avg(self):
-        """Gets the dcs_latency_avg of this CaseReportDetail.
+        r"""Gets the dcs_latency_avg of this CaseReportDetail.
 
         dcs平均时延
 
@@ -1985,7 +1985,7 @@ class CaseReportDetail:
 
     @dcs_latency_avg.setter
     def dcs_latency_avg(self, dcs_latency_avg):
-        """Sets the dcs_latency_avg of this CaseReportDetail.
+        r"""Sets the dcs_latency_avg of this CaseReportDetail.
 
         dcs平均时延
 
@@ -1996,7 +1996,7 @@ class CaseReportDetail:
 
     @property
     def dcs_latency_avg_check_point(self):
-        """Gets the dcs_latency_avg_check_point of this CaseReportDetail.
+        r"""Gets the dcs_latency_avg_check_point of this CaseReportDetail.
 
         dcs平均时延检查点
 
@@ -2007,7 +2007,7 @@ class CaseReportDetail:
 
     @dcs_latency_avg_check_point.setter
     def dcs_latency_avg_check_point(self, dcs_latency_avg_check_point):
-        """Sets the dcs_latency_avg_check_point of this CaseReportDetail.
+        r"""Sets the dcs_latency_avg_check_point of this CaseReportDetail.
 
         dcs平均时延检查点
 
@@ -2018,7 +2018,7 @@ class CaseReportDetail:
 
     @property
     def dcs_latency_avg_check_res(self):
-        """Gets the dcs_latency_avg_check_res of this CaseReportDetail.
+        r"""Gets the dcs_latency_avg_check_res of this CaseReportDetail.
 
         dcs平均时延检查结果
 
@@ -2029,7 +2029,7 @@ class CaseReportDetail:
 
     @dcs_latency_avg_check_res.setter
     def dcs_latency_avg_check_res(self, dcs_latency_avg_check_res):
-        """Sets the dcs_latency_avg_check_res of this CaseReportDetail.
+        r"""Sets the dcs_latency_avg_check_res of this CaseReportDetail.
 
         dcs平均时延检查结果
 
@@ -2040,7 +2040,7 @@ class CaseReportDetail:
 
     @property
     def dcs_latency_max(self):
-        """Gets the dcs_latency_max of this CaseReportDetail.
+        r"""Gets the dcs_latency_max of this CaseReportDetail.
 
         dcs最大时延
 
@@ -2051,7 +2051,7 @@ class CaseReportDetail:
 
     @dcs_latency_max.setter
     def dcs_latency_max(self, dcs_latency_max):
-        """Sets the dcs_latency_max of this CaseReportDetail.
+        r"""Sets the dcs_latency_max of this CaseReportDetail.
 
         dcs最大时延
 
@@ -2062,7 +2062,7 @@ class CaseReportDetail:
 
     @property
     def dcs_latency_max_check_point(self):
-        """Gets the dcs_latency_max_check_point of this CaseReportDetail.
+        r"""Gets the dcs_latency_max_check_point of this CaseReportDetail.
 
         dcs最大时延检查点·
 
@@ -2073,7 +2073,7 @@ class CaseReportDetail:
 
     @dcs_latency_max_check_point.setter
     def dcs_latency_max_check_point(self, dcs_latency_max_check_point):
-        """Sets the dcs_latency_max_check_point of this CaseReportDetail.
+        r"""Sets the dcs_latency_max_check_point of this CaseReportDetail.
 
         dcs最大时延检查点·
 
@@ -2084,7 +2084,7 @@ class CaseReportDetail:
 
     @property
     def dcs_latency_max_check_res(self):
-        """Gets the dcs_latency_max_check_res of this CaseReportDetail.
+        r"""Gets the dcs_latency_max_check_res of this CaseReportDetail.
 
         dcs最大时延检查结果
 
@@ -2095,7 +2095,7 @@ class CaseReportDetail:
 
     @dcs_latency_max_check_res.setter
     def dcs_latency_max_check_res(self, dcs_latency_max_check_res):
-        """Sets the dcs_latency_max_check_res of this CaseReportDetail.
+        r"""Sets the dcs_latency_max_check_res of this CaseReportDetail.
 
         dcs最大时延检查结果
 
@@ -2106,7 +2106,7 @@ class CaseReportDetail:
 
     @property
     def dcs_latency_min(self):
-        """Gets the dcs_latency_min of this CaseReportDetail.
+        r"""Gets the dcs_latency_min of this CaseReportDetail.
 
         dcs最小时延
 
@@ -2117,7 +2117,7 @@ class CaseReportDetail:
 
     @dcs_latency_min.setter
     def dcs_latency_min(self, dcs_latency_min):
-        """Sets the dcs_latency_min of this CaseReportDetail.
+        r"""Sets the dcs_latency_min of this CaseReportDetail.
 
         dcs最小时延
 
@@ -2128,7 +2128,7 @@ class CaseReportDetail:
 
     @property
     def dcs_latency_min_check_point(self):
-        """Gets the dcs_latency_min_check_point of this CaseReportDetail.
+        r"""Gets the dcs_latency_min_check_point of this CaseReportDetail.
 
         dcs最小时延检查点
 
@@ -2139,7 +2139,7 @@ class CaseReportDetail:
 
     @dcs_latency_min_check_point.setter
     def dcs_latency_min_check_point(self, dcs_latency_min_check_point):
-        """Sets the dcs_latency_min_check_point of this CaseReportDetail.
+        r"""Sets the dcs_latency_min_check_point of this CaseReportDetail.
 
         dcs最小时延检查点
 
@@ -2150,7 +2150,7 @@ class CaseReportDetail:
 
     @property
     def dcs_latency_min_check_res(self):
-        """Gets the dcs_latency_min_check_res of this CaseReportDetail.
+        r"""Gets the dcs_latency_min_check_res of this CaseReportDetail.
 
         dcs最小时延检查结果
 
@@ -2161,7 +2161,7 @@ class CaseReportDetail:
 
     @dcs_latency_min_check_res.setter
     def dcs_latency_min_check_res(self, dcs_latency_min_check_res):
-        """Sets the dcs_latency_min_check_res of this CaseReportDetail.
+        r"""Sets the dcs_latency_min_check_res of this CaseReportDetail.
 
         dcs最小时延检查结果
 
@@ -2172,7 +2172,7 @@ class CaseReportDetail:
 
     @property
     def detail_id(self):
-        """Gets the detail_id of this CaseReportDetail.
+        r"""Gets the detail_id of this CaseReportDetail.
 
         用例/aw/事务在数据库中dc_case_aw表的主键ID
 
@@ -2183,7 +2183,7 @@ class CaseReportDetail:
 
     @detail_id.setter
     def detail_id(self, detail_id):
-        """Sets the detail_id of this CaseReportDetail.
+        r"""Sets the detail_id of this CaseReportDetail.
 
         用例/aw/事务在数据库中dc_case_aw表的主键ID
 
@@ -2194,7 +2194,7 @@ class CaseReportDetail:
 
     @property
     def disk_read(self):
-        """Gets the disk_read of this CaseReportDetail.
+        r"""Gets the disk_read of this CaseReportDetail.
 
         磁盘最大读取速度
 
@@ -2205,7 +2205,7 @@ class CaseReportDetail:
 
     @disk_read.setter
     def disk_read(self, disk_read):
-        """Sets the disk_read of this CaseReportDetail.
+        r"""Sets the disk_read of this CaseReportDetail.
 
         磁盘最大读取速度
 
@@ -2216,7 +2216,7 @@ class CaseReportDetail:
 
     @property
     def disk_read_avg(self):
-        """Gets the disk_read_avg of this CaseReportDetail.
+        r"""Gets the disk_read_avg of this CaseReportDetail.
 
         磁盘平均读取速度
 
@@ -2227,7 +2227,7 @@ class CaseReportDetail:
 
     @disk_read_avg.setter
     def disk_read_avg(self, disk_read_avg):
-        """Sets the disk_read_avg of this CaseReportDetail.
+        r"""Sets the disk_read_avg of this CaseReportDetail.
 
         磁盘平均读取速度
 
@@ -2238,7 +2238,7 @@ class CaseReportDetail:
 
     @property
     def disk_read_avg_check_point(self):
-        """Gets the disk_read_avg_check_point of this CaseReportDetail.
+        r"""Gets the disk_read_avg_check_point of this CaseReportDetail.
 
         磁盘平均读取速度检查点
 
@@ -2249,7 +2249,7 @@ class CaseReportDetail:
 
     @disk_read_avg_check_point.setter
     def disk_read_avg_check_point(self, disk_read_avg_check_point):
-        """Sets the disk_read_avg_check_point of this CaseReportDetail.
+        r"""Sets the disk_read_avg_check_point of this CaseReportDetail.
 
         磁盘平均读取速度检查点
 
@@ -2260,7 +2260,7 @@ class CaseReportDetail:
 
     @property
     def disk_read_avg_check_res(self):
-        """Gets the disk_read_avg_check_res of this CaseReportDetail.
+        r"""Gets the disk_read_avg_check_res of this CaseReportDetail.
 
         磁盘平均读取速度检查结果
 
@@ -2271,7 +2271,7 @@ class CaseReportDetail:
 
     @disk_read_avg_check_res.setter
     def disk_read_avg_check_res(self, disk_read_avg_check_res):
-        """Sets the disk_read_avg_check_res of this CaseReportDetail.
+        r"""Sets the disk_read_avg_check_res of this CaseReportDetail.
 
         磁盘平均读取速度检查结果
 
@@ -2282,7 +2282,7 @@ class CaseReportDetail:
 
     @property
     def disk_read_check_point(self):
-        """Gets the disk_read_check_point of this CaseReportDetail.
+        r"""Gets the disk_read_check_point of this CaseReportDetail.
 
         磁盘最大读取速度检查点
 
@@ -2293,7 +2293,7 @@ class CaseReportDetail:
 
     @disk_read_check_point.setter
     def disk_read_check_point(self, disk_read_check_point):
-        """Sets the disk_read_check_point of this CaseReportDetail.
+        r"""Sets the disk_read_check_point of this CaseReportDetail.
 
         磁盘最大读取速度检查点
 
@@ -2304,7 +2304,7 @@ class CaseReportDetail:
 
     @property
     def disk_read_check_res(self):
-        """Gets the disk_read_check_res of this CaseReportDetail.
+        r"""Gets the disk_read_check_res of this CaseReportDetail.
 
         磁盘最大读取速度检查结果
 
@@ -2315,7 +2315,7 @@ class CaseReportDetail:
 
     @disk_read_check_res.setter
     def disk_read_check_res(self, disk_read_check_res):
-        """Sets the disk_read_check_res of this CaseReportDetail.
+        r"""Sets the disk_read_check_res of this CaseReportDetail.
 
         磁盘最大读取速度检查结果
 
@@ -2326,7 +2326,7 @@ class CaseReportDetail:
 
     @property
     def disk_usage(self):
-        """Gets the disk_usage of this CaseReportDetail.
+        r"""Gets the disk_usage of this CaseReportDetail.
 
         磁盘最大使用率
 
@@ -2337,7 +2337,7 @@ class CaseReportDetail:
 
     @disk_usage.setter
     def disk_usage(self, disk_usage):
-        """Sets the disk_usage of this CaseReportDetail.
+        r"""Sets the disk_usage of this CaseReportDetail.
 
         磁盘最大使用率
 
@@ -2348,7 +2348,7 @@ class CaseReportDetail:
 
     @property
     def disk_usage_avg(self):
-        """Gets the disk_usage_avg of this CaseReportDetail.
+        r"""Gets the disk_usage_avg of this CaseReportDetail.
 
         磁盘平均使用率
 
@@ -2359,7 +2359,7 @@ class CaseReportDetail:
 
     @disk_usage_avg.setter
     def disk_usage_avg(self, disk_usage_avg):
-        """Sets the disk_usage_avg of this CaseReportDetail.
+        r"""Sets the disk_usage_avg of this CaseReportDetail.
 
         磁盘平均使用率
 
@@ -2370,7 +2370,7 @@ class CaseReportDetail:
 
     @property
     def disk_usage_avg_check_point(self):
-        """Gets the disk_usage_avg_check_point of this CaseReportDetail.
+        r"""Gets the disk_usage_avg_check_point of this CaseReportDetail.
 
         磁盘平均使用率检查点
 
@@ -2381,7 +2381,7 @@ class CaseReportDetail:
 
     @disk_usage_avg_check_point.setter
     def disk_usage_avg_check_point(self, disk_usage_avg_check_point):
-        """Sets the disk_usage_avg_check_point of this CaseReportDetail.
+        r"""Sets the disk_usage_avg_check_point of this CaseReportDetail.
 
         磁盘平均使用率检查点
 
@@ -2392,7 +2392,7 @@ class CaseReportDetail:
 
     @property
     def disk_usage_avg_check_res(self):
-        """Gets the disk_usage_avg_check_res of this CaseReportDetail.
+        r"""Gets the disk_usage_avg_check_res of this CaseReportDetail.
 
         磁盘平均使用率检查结果
 
@@ -2403,7 +2403,7 @@ class CaseReportDetail:
 
     @disk_usage_avg_check_res.setter
     def disk_usage_avg_check_res(self, disk_usage_avg_check_res):
-        """Sets the disk_usage_avg_check_res of this CaseReportDetail.
+        r"""Sets the disk_usage_avg_check_res of this CaseReportDetail.
 
         磁盘平均使用率检查结果
 
@@ -2414,7 +2414,7 @@ class CaseReportDetail:
 
     @property
     def disk_usage_check_point(self):
-        """Gets the disk_usage_check_point of this CaseReportDetail.
+        r"""Gets the disk_usage_check_point of this CaseReportDetail.
 
         磁盘最大使用率检查点
 
@@ -2425,7 +2425,7 @@ class CaseReportDetail:
 
     @disk_usage_check_point.setter
     def disk_usage_check_point(self, disk_usage_check_point):
-        """Sets the disk_usage_check_point of this CaseReportDetail.
+        r"""Sets the disk_usage_check_point of this CaseReportDetail.
 
         磁盘最大使用率检查点
 
@@ -2436,7 +2436,7 @@ class CaseReportDetail:
 
     @property
     def disk_usage_check_res(self):
-        """Gets the disk_usage_check_res of this CaseReportDetail.
+        r"""Gets the disk_usage_check_res of this CaseReportDetail.
 
         磁盘最大使用率检查结果
 
@@ -2447,7 +2447,7 @@ class CaseReportDetail:
 
     @disk_usage_check_res.setter
     def disk_usage_check_res(self, disk_usage_check_res):
-        """Sets the disk_usage_check_res of this CaseReportDetail.
+        r"""Sets the disk_usage_check_res of this CaseReportDetail.
 
         磁盘最大使用率检查结果
 
@@ -2458,7 +2458,7 @@ class CaseReportDetail:
 
     @property
     def disk_write(self):
-        """Gets the disk_write of this CaseReportDetail.
+        r"""Gets the disk_write of this CaseReportDetail.
 
         磁盘最大写入速度
 
@@ -2469,7 +2469,7 @@ class CaseReportDetail:
 
     @disk_write.setter
     def disk_write(self, disk_write):
-        """Sets the disk_write of this CaseReportDetail.
+        r"""Sets the disk_write of this CaseReportDetail.
 
         磁盘最大写入速度
 
@@ -2480,7 +2480,7 @@ class CaseReportDetail:
 
     @property
     def disk_write_avg(self):
-        """Gets the disk_write_avg of this CaseReportDetail.
+        r"""Gets the disk_write_avg of this CaseReportDetail.
 
         磁盘平均写入速度
 
@@ -2491,7 +2491,7 @@ class CaseReportDetail:
 
     @disk_write_avg.setter
     def disk_write_avg(self, disk_write_avg):
-        """Sets the disk_write_avg of this CaseReportDetail.
+        r"""Sets the disk_write_avg of this CaseReportDetail.
 
         磁盘平均写入速度
 
@@ -2502,7 +2502,7 @@ class CaseReportDetail:
 
     @property
     def disk_write_avg_check_point(self):
-        """Gets the disk_write_avg_check_point of this CaseReportDetail.
+        r"""Gets the disk_write_avg_check_point of this CaseReportDetail.
 
         磁盘平均写入速度检查点
 
@@ -2513,7 +2513,7 @@ class CaseReportDetail:
 
     @disk_write_avg_check_point.setter
     def disk_write_avg_check_point(self, disk_write_avg_check_point):
-        """Sets the disk_write_avg_check_point of this CaseReportDetail.
+        r"""Sets the disk_write_avg_check_point of this CaseReportDetail.
 
         磁盘平均写入速度检查点
 
@@ -2524,7 +2524,7 @@ class CaseReportDetail:
 
     @property
     def disk_write_avg_check_res(self):
-        """Gets the disk_write_avg_check_res of this CaseReportDetail.
+        r"""Gets the disk_write_avg_check_res of this CaseReportDetail.
 
         磁盘平均写入速度检查结果
 
@@ -2535,7 +2535,7 @@ class CaseReportDetail:
 
     @disk_write_avg_check_res.setter
     def disk_write_avg_check_res(self, disk_write_avg_check_res):
-        """Sets the disk_write_avg_check_res of this CaseReportDetail.
+        r"""Sets the disk_write_avg_check_res of this CaseReportDetail.
 
         磁盘平均写入速度检查结果
 
@@ -2546,7 +2546,7 @@ class CaseReportDetail:
 
     @property
     def disk_write_check_point(self):
-        """Gets the disk_write_check_point of this CaseReportDetail.
+        r"""Gets the disk_write_check_point of this CaseReportDetail.
 
         磁盘最大写入速度检查点
 
@@ -2557,7 +2557,7 @@ class CaseReportDetail:
 
     @disk_write_check_point.setter
     def disk_write_check_point(self, disk_write_check_point):
-        """Sets the disk_write_check_point of this CaseReportDetail.
+        r"""Sets the disk_write_check_point of this CaseReportDetail.
 
         磁盘最大写入速度检查点
 
@@ -2568,7 +2568,7 @@ class CaseReportDetail:
 
     @property
     def disk_write_check_res(self):
-        """Gets the disk_write_check_res of this CaseReportDetail.
+        r"""Gets the disk_write_check_res of this CaseReportDetail.
 
         磁盘最大写入速度检查结果
 
@@ -2579,7 +2579,7 @@ class CaseReportDetail:
 
     @disk_write_check_res.setter
     def disk_write_check_res(self, disk_write_check_res):
-        """Sets the disk_write_check_res of this CaseReportDetail.
+        r"""Sets the disk_write_check_res of this CaseReportDetail.
 
         磁盘最大写入速度检查结果
 
@@ -2590,7 +2590,7 @@ class CaseReportDetail:
 
     @property
     def duration(self):
-        """Gets the duration of this CaseReportDetail.
+        r"""Gets the duration of this CaseReportDetail.
 
         运行时长
 
@@ -2601,7 +2601,7 @@ class CaseReportDetail:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this CaseReportDetail.
+        r"""Sets the duration of this CaseReportDetail.
 
         运行时长
 
@@ -2612,7 +2612,7 @@ class CaseReportDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CaseReportDetail.
+        r"""Gets the end_time of this CaseReportDetail.
 
         结束时间
 
@@ -2623,7 +2623,7 @@ class CaseReportDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CaseReportDetail.
+        r"""Sets the end_time of this CaseReportDetail.
 
         结束时间
 
@@ -2634,7 +2634,7 @@ class CaseReportDetail:
 
     @property
     def error_count(self):
-        """Gets the error_count of this CaseReportDetail.
+        r"""Gets the error_count of this CaseReportDetail.
 
         错误数
 
@@ -2645,7 +2645,7 @@ class CaseReportDetail:
 
     @error_count.setter
     def error_count(self, error_count):
-        """Sets the error_count of this CaseReportDetail.
+        r"""Sets the error_count of this CaseReportDetail.
 
         错误数
 
@@ -2656,7 +2656,7 @@ class CaseReportDetail:
 
     @property
     def error_events_count(self):
-        """Gets the error_events_count of this CaseReportDetail.
+        r"""Gets the error_events_count of this CaseReportDetail.
 
         错误事件数
 
@@ -2667,7 +2667,7 @@ class CaseReportDetail:
 
     @error_events_count.setter
     def error_events_count(self, error_events_count):
-        """Sets the error_events_count of this CaseReportDetail.
+        r"""Sets the error_events_count of this CaseReportDetail.
 
         错误事件数
 
@@ -2678,7 +2678,7 @@ class CaseReportDetail:
 
     @property
     def failed_assert(self):
-        """Gets the failed_assert of this CaseReportDetail.
+        r"""Gets the failed_assert of this CaseReportDetail.
 
         断言失败数
 
@@ -2689,7 +2689,7 @@ class CaseReportDetail:
 
     @failed_assert.setter
     def failed_assert(self, failed_assert):
-        """Sets the failed_assert of this CaseReportDetail.
+        r"""Sets the failed_assert of this CaseReportDetail.
 
         断言失败数
 
@@ -2700,7 +2700,7 @@ class CaseReportDetail:
 
     @property
     def failed_others(self):
-        """Gets the failed_others of this CaseReportDetail.
+        r"""Gets the failed_others of this CaseReportDetail.
 
         其他失败数
 
@@ -2711,7 +2711,7 @@ class CaseReportDetail:
 
     @failed_others.setter
     def failed_others(self, failed_others):
-        """Sets the failed_others of this CaseReportDetail.
+        r"""Sets the failed_others of this CaseReportDetail.
 
         其他失败数
 
@@ -2722,7 +2722,7 @@ class CaseReportDetail:
 
     @property
     def failed_parsed(self):
-        """Gets the failed_parsed of this CaseReportDetail.
+        r"""Gets the failed_parsed of this CaseReportDetail.
 
         解析失败数
 
@@ -2733,7 +2733,7 @@ class CaseReportDetail:
 
     @failed_parsed.setter
     def failed_parsed(self, failed_parsed):
-        """Sets the failed_parsed of this CaseReportDetail.
+        r"""Sets the failed_parsed of this CaseReportDetail.
 
         解析失败数
 
@@ -2744,7 +2744,7 @@ class CaseReportDetail:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this CaseReportDetail.
+        r"""Gets the failed_reason of this CaseReportDetail.
 
         失败原因
 
@@ -2755,7 +2755,7 @@ class CaseReportDetail:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this CaseReportDetail.
+        r"""Sets the failed_reason of this CaseReportDetail.
 
         失败原因
 
@@ -2766,7 +2766,7 @@ class CaseReportDetail:
 
     @property
     def failed_refused(self):
-        """Gets the failed_refused of this CaseReportDetail.
+        r"""Gets the failed_refused of this CaseReportDetail.
 
         连接拒绝失败数
 
@@ -2777,7 +2777,7 @@ class CaseReportDetail:
 
     @failed_refused.setter
     def failed_refused(self, failed_refused):
-        """Sets the failed_refused of this CaseReportDetail.
+        r"""Sets the failed_refused of this CaseReportDetail.
 
         连接拒绝失败数
 
@@ -2788,7 +2788,7 @@ class CaseReportDetail:
 
     @property
     def failed_timeout(self):
-        """Gets the failed_timeout of this CaseReportDetail.
+        r"""Gets the failed_timeout of this CaseReportDetail.
 
         连接超时失败数
 
@@ -2799,7 +2799,7 @@ class CaseReportDetail:
 
     @failed_timeout.setter
     def failed_timeout(self, failed_timeout):
-        """Sets the failed_timeout of this CaseReportDetail.
+        r"""Sets the failed_timeout of this CaseReportDetail.
 
         连接超时失败数
 
@@ -2810,7 +2810,7 @@ class CaseReportDetail:
 
     @property
     def id(self):
-        """Gets the id of this CaseReportDetail.
+        r"""Gets the id of this CaseReportDetail.
 
         用例在数据库中dc_testcase表的主键id
 
@@ -2821,7 +2821,7 @@ class CaseReportDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CaseReportDetail.
+        r"""Sets the id of this CaseReportDetail.
 
         用例在数据库中dc_testcase表的主键id
 
@@ -2832,7 +2832,7 @@ class CaseReportDetail:
 
     @property
     def is_aw(self):
-        """Gets the is_aw of this CaseReportDetail.
+        r"""Gets the is_aw of this CaseReportDetail.
 
         是否是aw
 
@@ -2843,7 +2843,7 @@ class CaseReportDetail:
 
     @is_aw.setter
     def is_aw(self, is_aw):
-        """Sets the is_aw of this CaseReportDetail.
+        r"""Sets the is_aw of this CaseReportDetail.
 
         是否是aw
 
@@ -2854,7 +2854,7 @@ class CaseReportDetail:
 
     @property
     def iteration_uri(self):
-        """Gets the iteration_uri of this CaseReportDetail.
+        r"""Gets the iteration_uri of this CaseReportDetail.
 
         迭代uri
 
@@ -2865,7 +2865,7 @@ class CaseReportDetail:
 
     @iteration_uri.setter
     def iteration_uri(self, iteration_uri):
-        """Sets the iteration_uri of this CaseReportDetail.
+        r"""Sets the iteration_uri of this CaseReportDetail.
 
         迭代uri
 
@@ -2876,7 +2876,7 @@ class CaseReportDetail:
 
     @property
     def kpi_monitor(self):
-        """Gets the kpi_monitor of this CaseReportDetail.
+        r"""Gets the kpi_monitor of this CaseReportDetail.
 
         来源于设计服务的监控数据
 
@@ -2887,7 +2887,7 @@ class CaseReportDetail:
 
     @kpi_monitor.setter
     def kpi_monitor(self, kpi_monitor):
-        """Sets the kpi_monitor of this CaseReportDetail.
+        r"""Sets the kpi_monitor of this CaseReportDetail.
 
         来源于设计服务的监控数据
 
@@ -2898,7 +2898,7 @@ class CaseReportDetail:
 
     @property
     def max(self):
-        """Gets the max of this CaseReportDetail.
+        r"""Gets the max of this CaseReportDetail.
 
         最大响应时间
 
@@ -2909,7 +2909,7 @@ class CaseReportDetail:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this CaseReportDetail.
+        r"""Sets the max of this CaseReportDetail.
 
         最大响应时间
 
@@ -2920,7 +2920,7 @@ class CaseReportDetail:
 
     @property
     def max_avg_time(self):
-        """Gets the max_avg_time of this CaseReportDetail.
+        r"""Gets the max_avg_time of this CaseReportDetail.
 
         平均响应时间
 
@@ -2931,7 +2931,7 @@ class CaseReportDetail:
 
     @max_avg_time.setter
     def max_avg_time(self, max_avg_time):
-        """Sets the max_avg_time of this CaseReportDetail.
+        r"""Sets the max_avg_time of this CaseReportDetail.
 
         平均响应时间
 
@@ -2942,7 +2942,7 @@ class CaseReportDetail:
 
     @property
     def max_avg_time_check_point(self):
-        """Gets the max_avg_time_check_point of this CaseReportDetail.
+        r"""Gets the max_avg_time_check_point of this CaseReportDetail.
 
         平均响应时间检查点
 
@@ -2953,7 +2953,7 @@ class CaseReportDetail:
 
     @max_avg_time_check_point.setter
     def max_avg_time_check_point(self, max_avg_time_check_point):
-        """Sets the max_avg_time_check_point of this CaseReportDetail.
+        r"""Sets the max_avg_time_check_point of this CaseReportDetail.
 
         平均响应时间检查点
 
@@ -2964,7 +2964,7 @@ class CaseReportDetail:
 
     @property
     def max_avg_time_check_res(self):
-        """Gets the max_avg_time_check_res of this CaseReportDetail.
+        r"""Gets the max_avg_time_check_res of this CaseReportDetail.
 
         平均响应时间检查结果
 
@@ -2975,7 +2975,7 @@ class CaseReportDetail:
 
     @max_avg_time_check_res.setter
     def max_avg_time_check_res(self, max_avg_time_check_res):
-        """Sets the max_avg_time_check_res of this CaseReportDetail.
+        r"""Sets the max_avg_time_check_res of this CaseReportDetail.
 
         平均响应时间检查结果
 
@@ -2986,7 +2986,7 @@ class CaseReportDetail:
 
     @property
     def max_network_traffic(self):
-        """Gets the max_network_traffic of this CaseReportDetail.
+        r"""Gets the max_network_traffic of this CaseReportDetail.
 
         流量峰值
 
@@ -2997,7 +2997,7 @@ class CaseReportDetail:
 
     @max_network_traffic.setter
     def max_network_traffic(self, max_network_traffic):
-        """Sets the max_network_traffic of this CaseReportDetail.
+        r"""Sets the max_network_traffic of this CaseReportDetail.
 
         流量峰值
 
@@ -3008,7 +3008,7 @@ class CaseReportDetail:
 
     @property
     def max_rec_bytes(self):
-        """Gets the max_rec_bytes of this CaseReportDetail.
+        r"""Gets the max_rec_bytes of this CaseReportDetail.
 
         最大下行带宽
 
@@ -3019,7 +3019,7 @@ class CaseReportDetail:
 
     @max_rec_bytes.setter
     def max_rec_bytes(self, max_rec_bytes):
-        """Sets the max_rec_bytes of this CaseReportDetail.
+        r"""Sets the max_rec_bytes of this CaseReportDetail.
 
         最大下行带宽
 
@@ -3030,7 +3030,7 @@ class CaseReportDetail:
 
     @property
     def max_rec_bytes_check_point(self):
-        """Gets the max_rec_bytes_check_point of this CaseReportDetail.
+        r"""Gets the max_rec_bytes_check_point of this CaseReportDetail.
 
         最大下行带宽检查点
 
@@ -3041,7 +3041,7 @@ class CaseReportDetail:
 
     @max_rec_bytes_check_point.setter
     def max_rec_bytes_check_point(self, max_rec_bytes_check_point):
-        """Sets the max_rec_bytes_check_point of this CaseReportDetail.
+        r"""Sets the max_rec_bytes_check_point of this CaseReportDetail.
 
         最大下行带宽检查点
 
@@ -3052,7 +3052,7 @@ class CaseReportDetail:
 
     @property
     def max_rec_bytes_check_res(self):
-        """Gets the max_rec_bytes_check_res of this CaseReportDetail.
+        r"""Gets the max_rec_bytes_check_res of this CaseReportDetail.
 
         最大下行带宽检查结果
 
@@ -3063,7 +3063,7 @@ class CaseReportDetail:
 
     @max_rec_bytes_check_res.setter
     def max_rec_bytes_check_res(self, max_rec_bytes_check_res):
-        """Sets the max_rec_bytes_check_res of this CaseReportDetail.
+        r"""Sets the max_rec_bytes_check_res of this CaseReportDetail.
 
         最大下行带宽检查结果
 
@@ -3074,7 +3074,7 @@ class CaseReportDetail:
 
     @property
     def max_resp_time(self):
-        """Gets the max_resp_time of this CaseReportDetail.
+        r"""Gets the max_resp_time of this CaseReportDetail.
 
         最大响应时间
 
@@ -3085,7 +3085,7 @@ class CaseReportDetail:
 
     @max_resp_time.setter
     def max_resp_time(self, max_resp_time):
-        """Sets the max_resp_time of this CaseReportDetail.
+        r"""Sets the max_resp_time of this CaseReportDetail.
 
         最大响应时间
 
@@ -3096,7 +3096,7 @@ class CaseReportDetail:
 
     @property
     def max_resp_time_check_point(self):
-        """Gets the max_resp_time_check_point of this CaseReportDetail.
+        r"""Gets the max_resp_time_check_point of this CaseReportDetail.
 
         最大响应时间检查点
 
@@ -3107,7 +3107,7 @@ class CaseReportDetail:
 
     @max_resp_time_check_point.setter
     def max_resp_time_check_point(self, max_resp_time_check_point):
-        """Sets the max_resp_time_check_point of this CaseReportDetail.
+        r"""Sets the max_resp_time_check_point of this CaseReportDetail.
 
         最大响应时间检查点
 
@@ -3118,7 +3118,7 @@ class CaseReportDetail:
 
     @property
     def max_resp_time_check_res(self):
-        """Gets the max_resp_time_check_res of this CaseReportDetail.
+        r"""Gets the max_resp_time_check_res of this CaseReportDetail.
 
         最大响应时间检查结果
 
@@ -3129,7 +3129,7 @@ class CaseReportDetail:
 
     @max_resp_time_check_res.setter
     def max_resp_time_check_res(self, max_resp_time_check_res):
-        """Sets the max_resp_time_check_res of this CaseReportDetail.
+        r"""Sets the max_resp_time_check_res of this CaseReportDetail.
 
         最大响应时间检查结果
 
@@ -3140,7 +3140,7 @@ class CaseReportDetail:
 
     @property
     def max_rps(self):
-        """Gets the max_rps of this CaseReportDetail.
+        r"""Gets the max_rps of this CaseReportDetail.
 
         最大RPS
 
@@ -3151,7 +3151,7 @@ class CaseReportDetail:
 
     @max_rps.setter
     def max_rps(self, max_rps):
-        """Sets the max_rps of this CaseReportDetail.
+        r"""Sets the max_rps of this CaseReportDetail.
 
         最大RPS
 
@@ -3162,7 +3162,7 @@ class CaseReportDetail:
 
     @property
     def max_sent_bytes(self):
-        """Gets the max_sent_bytes of this CaseReportDetail.
+        r"""Gets the max_sent_bytes of this CaseReportDetail.
 
         最大上行带宽
 
@@ -3173,7 +3173,7 @@ class CaseReportDetail:
 
     @max_sent_bytes.setter
     def max_sent_bytes(self, max_sent_bytes):
-        """Sets the max_sent_bytes of this CaseReportDetail.
+        r"""Sets the max_sent_bytes of this CaseReportDetail.
 
         最大上行带宽
 
@@ -3184,7 +3184,7 @@ class CaseReportDetail:
 
     @property
     def max_sent_bytes_check_point(self):
-        """Gets the max_sent_bytes_check_point of this CaseReportDetail.
+        r"""Gets the max_sent_bytes_check_point of this CaseReportDetail.
 
         最大上行带宽检查点
 
@@ -3195,7 +3195,7 @@ class CaseReportDetail:
 
     @max_sent_bytes_check_point.setter
     def max_sent_bytes_check_point(self, max_sent_bytes_check_point):
-        """Sets the max_sent_bytes_check_point of this CaseReportDetail.
+        r"""Sets the max_sent_bytes_check_point of this CaseReportDetail.
 
         最大上行带宽检查点
 
@@ -3206,7 +3206,7 @@ class CaseReportDetail:
 
     @property
     def max_sent_bytes_check_res(self):
-        """Gets the max_sent_bytes_check_res of this CaseReportDetail.
+        r"""Gets the max_sent_bytes_check_res of this CaseReportDetail.
 
         最大上行带宽检查结果
 
@@ -3217,7 +3217,7 @@ class CaseReportDetail:
 
     @max_sent_bytes_check_res.setter
     def max_sent_bytes_check_res(self, max_sent_bytes_check_res):
-        """Sets the max_sent_bytes_check_res of this CaseReportDetail.
+        r"""Sets the max_sent_bytes_check_res of this CaseReportDetail.
 
         最大上行带宽检查结果
 
@@ -3228,7 +3228,7 @@ class CaseReportDetail:
 
     @property
     def max_success_rate(self):
-        """Gets the max_success_rate of this CaseReportDetail.
+        r"""Gets the max_success_rate of this CaseReportDetail.
 
         最大成功率
 
@@ -3239,7 +3239,7 @@ class CaseReportDetail:
 
     @max_success_rate.setter
     def max_success_rate(self, max_success_rate):
-        """Sets the max_success_rate of this CaseReportDetail.
+        r"""Sets the max_success_rate of this CaseReportDetail.
 
         最大成功率
 
@@ -3250,7 +3250,7 @@ class CaseReportDetail:
 
     @property
     def max_success_rate_check_res(self):
-        """Gets the max_success_rate_check_res of this CaseReportDetail.
+        r"""Gets the max_success_rate_check_res of this CaseReportDetail.
 
         最大成功率检查结果
 
@@ -3261,7 +3261,7 @@ class CaseReportDetail:
 
     @max_success_rate_check_res.setter
     def max_success_rate_check_res(self, max_success_rate_check_res):
-        """Sets the max_success_rate_check_res of this CaseReportDetail.
+        r"""Sets the max_success_rate_check_res of this CaseReportDetail.
 
         最大成功率检查结果
 
@@ -3272,7 +3272,7 @@ class CaseReportDetail:
 
     @property
     def max_thread_num(self):
-        """Gets the max_thread_num of this CaseReportDetail.
+        r"""Gets the max_thread_num of this CaseReportDetail.
 
         最大线程数
 
@@ -3283,7 +3283,7 @@ class CaseReportDetail:
 
     @max_thread_num.setter
     def max_thread_num(self, max_thread_num):
-        """Sets the max_thread_num of this CaseReportDetail.
+        r"""Sets the max_thread_num of this CaseReportDetail.
 
         最大线程数
 
@@ -3294,7 +3294,7 @@ class CaseReportDetail:
 
     @property
     def max_thread_num_check_point(self):
-        """Gets the max_thread_num_check_point of this CaseReportDetail.
+        r"""Gets the max_thread_num_check_point of this CaseReportDetail.
 
         最大线程数检查点
 
@@ -3305,7 +3305,7 @@ class CaseReportDetail:
 
     @max_thread_num_check_point.setter
     def max_thread_num_check_point(self, max_thread_num_check_point):
-        """Sets the max_thread_num_check_point of this CaseReportDetail.
+        r"""Sets the max_thread_num_check_point of this CaseReportDetail.
 
         最大线程数检查点
 
@@ -3316,7 +3316,7 @@ class CaseReportDetail:
 
     @property
     def max_thread_num_check_res(self):
-        """Gets the max_thread_num_check_res of this CaseReportDetail.
+        r"""Gets the max_thread_num_check_res of this CaseReportDetail.
 
         最大线程数检查结果
 
@@ -3327,7 +3327,7 @@ class CaseReportDetail:
 
     @max_thread_num_check_res.setter
     def max_thread_num_check_res(self, max_thread_num_check_res):
-        """Sets the max_thread_num_check_res of this CaseReportDetail.
+        r"""Sets the max_thread_num_check_res of this CaseReportDetail.
 
         最大线程数检查结果
 
@@ -3338,7 +3338,7 @@ class CaseReportDetail:
 
     @property
     def max_tps(self):
-        """Gets the max_tps of this CaseReportDetail.
+        r"""Gets the max_tps of this CaseReportDetail.
 
         最大TPS
 
@@ -3349,7 +3349,7 @@ class CaseReportDetail:
 
     @max_tps.setter
     def max_tps(self, max_tps):
-        """Sets the max_tps of this CaseReportDetail.
+        r"""Sets the max_tps of this CaseReportDetail.
 
         最大TPS
 
@@ -3360,7 +3360,7 @@ class CaseReportDetail:
 
     @property
     def max_tps_check_point(self):
-        """Gets the max_tps_check_point of this CaseReportDetail.
+        r"""Gets the max_tps_check_point of this CaseReportDetail.
 
         最大TPS检查点
 
@@ -3371,7 +3371,7 @@ class CaseReportDetail:
 
     @max_tps_check_point.setter
     def max_tps_check_point(self, max_tps_check_point):
-        """Sets the max_tps_check_point of this CaseReportDetail.
+        r"""Sets the max_tps_check_point of this CaseReportDetail.
 
         最大TPS检查点
 
@@ -3382,7 +3382,7 @@ class CaseReportDetail:
 
     @property
     def max_tps_check_res(self):
-        """Gets the max_tps_check_res of this CaseReportDetail.
+        r"""Gets the max_tps_check_res of this CaseReportDetail.
 
         最大TPS检查结果
 
@@ -3393,7 +3393,7 @@ class CaseReportDetail:
 
     @max_tps_check_res.setter
     def max_tps_check_res(self, max_tps_check_res):
-        """Sets the max_tps_check_res of this CaseReportDetail.
+        r"""Sets the max_tps_check_res of this CaseReportDetail.
 
         最大TPS检查结果
 
@@ -3404,7 +3404,7 @@ class CaseReportDetail:
 
     @property
     def max_tran_resp_time(self):
-        """Gets the max_tran_resp_time of this CaseReportDetail.
+        r"""Gets the max_tran_resp_time of this CaseReportDetail.
 
         最大事务响应时间
 
@@ -3415,7 +3415,7 @@ class CaseReportDetail:
 
     @max_tran_resp_time.setter
     def max_tran_resp_time(self, max_tran_resp_time):
-        """Sets the max_tran_resp_time of this CaseReportDetail.
+        r"""Sets the max_tran_resp_time of this CaseReportDetail.
 
         最大事务响应时间
 
@@ -3426,7 +3426,7 @@ class CaseReportDetail:
 
     @property
     def max_tran_resp_time_check_point(self):
-        """Gets the max_tran_resp_time_check_point of this CaseReportDetail.
+        r"""Gets the max_tran_resp_time_check_point of this CaseReportDetail.
 
         最大事务响应时间检查点
 
@@ -3437,7 +3437,7 @@ class CaseReportDetail:
 
     @max_tran_resp_time_check_point.setter
     def max_tran_resp_time_check_point(self, max_tran_resp_time_check_point):
-        """Sets the max_tran_resp_time_check_point of this CaseReportDetail.
+        r"""Sets the max_tran_resp_time_check_point of this CaseReportDetail.
 
         最大事务响应时间检查点
 
@@ -3448,7 +3448,7 @@ class CaseReportDetail:
 
     @property
     def max_tran_resp_time_check_res(self):
-        """Gets the max_tran_resp_time_check_res of this CaseReportDetail.
+        r"""Gets the max_tran_resp_time_check_res of this CaseReportDetail.
 
         最大事务响应时间检查结果
 
@@ -3459,7 +3459,7 @@ class CaseReportDetail:
 
     @max_tran_resp_time_check_res.setter
     def max_tran_resp_time_check_res(self, max_tran_resp_time_check_res):
-        """Sets the max_tran_resp_time_check_res of this CaseReportDetail.
+        r"""Sets the max_tran_resp_time_check_res of this CaseReportDetail.
 
         最大事务响应时间检查结果
 
@@ -3470,7 +3470,7 @@ class CaseReportDetail:
 
     @property
     def memory_usage(self):
-        """Gets the memory_usage of this CaseReportDetail.
+        r"""Gets the memory_usage of this CaseReportDetail.
 
         最大内存使用率
 
@@ -3481,7 +3481,7 @@ class CaseReportDetail:
 
     @memory_usage.setter
     def memory_usage(self, memory_usage):
-        """Sets the memory_usage of this CaseReportDetail.
+        r"""Sets the memory_usage of this CaseReportDetail.
 
         最大内存使用率
 
@@ -3492,7 +3492,7 @@ class CaseReportDetail:
 
     @property
     def memory_usage_avg(self):
-        """Gets the memory_usage_avg of this CaseReportDetail.
+        r"""Gets the memory_usage_avg of this CaseReportDetail.
 
         平均内存使用率
 
@@ -3503,7 +3503,7 @@ class CaseReportDetail:
 
     @memory_usage_avg.setter
     def memory_usage_avg(self, memory_usage_avg):
-        """Sets the memory_usage_avg of this CaseReportDetail.
+        r"""Sets the memory_usage_avg of this CaseReportDetail.
 
         平均内存使用率
 
@@ -3514,7 +3514,7 @@ class CaseReportDetail:
 
     @property
     def memory_usage_avg_check_point(self):
-        """Gets the memory_usage_avg_check_point of this CaseReportDetail.
+        r"""Gets the memory_usage_avg_check_point of this CaseReportDetail.
 
         平均内存使用率检查点
 
@@ -3525,7 +3525,7 @@ class CaseReportDetail:
 
     @memory_usage_avg_check_point.setter
     def memory_usage_avg_check_point(self, memory_usage_avg_check_point):
-        """Sets the memory_usage_avg_check_point of this CaseReportDetail.
+        r"""Sets the memory_usage_avg_check_point of this CaseReportDetail.
 
         平均内存使用率检查点
 
@@ -3536,7 +3536,7 @@ class CaseReportDetail:
 
     @property
     def memory_usage_avg_check_res(self):
-        """Gets the memory_usage_avg_check_res of this CaseReportDetail.
+        r"""Gets the memory_usage_avg_check_res of this CaseReportDetail.
 
         平均内存使用率检查结果
 
@@ -3547,7 +3547,7 @@ class CaseReportDetail:
 
     @memory_usage_avg_check_res.setter
     def memory_usage_avg_check_res(self, memory_usage_avg_check_res):
-        """Sets the memory_usage_avg_check_res of this CaseReportDetail.
+        r"""Sets the memory_usage_avg_check_res of this CaseReportDetail.
 
         平均内存使用率检查结果
 
@@ -3558,7 +3558,7 @@ class CaseReportDetail:
 
     @property
     def memory_usage_check_point(self):
-        """Gets the memory_usage_check_point of this CaseReportDetail.
+        r"""Gets the memory_usage_check_point of this CaseReportDetail.
 
         最大内存使用率检查点
 
@@ -3569,7 +3569,7 @@ class CaseReportDetail:
 
     @memory_usage_check_point.setter
     def memory_usage_check_point(self, memory_usage_check_point):
-        """Sets the memory_usage_check_point of this CaseReportDetail.
+        r"""Sets the memory_usage_check_point of this CaseReportDetail.
 
         最大内存使用率检查点
 
@@ -3580,7 +3580,7 @@ class CaseReportDetail:
 
     @property
     def memory_usage_check_res(self):
-        """Gets the memory_usage_check_res of this CaseReportDetail.
+        r"""Gets the memory_usage_check_res of this CaseReportDetail.
 
         最大内存使用率检查结果
 
@@ -3591,7 +3591,7 @@ class CaseReportDetail:
 
     @memory_usage_check_res.setter
     def memory_usage_check_res(self, memory_usage_check_res):
-        """Sets the memory_usage_check_res of this CaseReportDetail.
+        r"""Sets the memory_usage_check_res of this CaseReportDetail.
 
         最大内存使用率检查结果
 
@@ -3602,7 +3602,7 @@ class CaseReportDetail:
 
     @property
     def min(self):
-        """Gets the min of this CaseReportDetail.
+        r"""Gets the min of this CaseReportDetail.
 
         最小响应时间
 
@@ -3613,7 +3613,7 @@ class CaseReportDetail:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this CaseReportDetail.
+        r"""Sets the min of this CaseReportDetail.
 
         最小响应时间
 
@@ -3624,7 +3624,7 @@ class CaseReportDetail:
 
     @property
     def min_network_traffic(self):
-        """Gets the min_network_traffic of this CaseReportDetail.
+        r"""Gets the min_network_traffic of this CaseReportDetail.
 
         流量谷值
 
@@ -3635,7 +3635,7 @@ class CaseReportDetail:
 
     @min_network_traffic.setter
     def min_network_traffic(self, min_network_traffic):
-        """Sets the min_network_traffic of this CaseReportDetail.
+        r"""Sets the min_network_traffic of this CaseReportDetail.
 
         流量谷值
 
@@ -3646,7 +3646,7 @@ class CaseReportDetail:
 
     @property
     def mode(self):
-        """Gets the mode of this CaseReportDetail.
+        r"""Gets the mode of this CaseReportDetail.
 
         压力模式
 
@@ -3657,7 +3657,7 @@ class CaseReportDetail:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CaseReportDetail.
+        r"""Sets the mode of this CaseReportDetail.
 
         压力模式
 
@@ -3668,7 +3668,7 @@ class CaseReportDetail:
 
     @property
     def monitor_peak_time(self):
-        """Gets the monitor_peak_time of this CaseReportDetail.
+        r"""Gets the monitor_peak_time of this CaseReportDetail.
 
         监控峰值时间
 
@@ -3679,7 +3679,7 @@ class CaseReportDetail:
 
     @monitor_peak_time.setter
     def monitor_peak_time(self, monitor_peak_time):
-        """Sets the monitor_peak_time of this CaseReportDetail.
+        r"""Sets the monitor_peak_time of this CaseReportDetail.
 
         监控峰值时间
 
@@ -3690,7 +3690,7 @@ class CaseReportDetail:
 
     @property
     def monitor_peak_time_check_point(self):
-        """Gets the monitor_peak_time_check_point of this CaseReportDetail.
+        r"""Gets the monitor_peak_time_check_point of this CaseReportDetail.
 
         监控峰值时间检查点
 
@@ -3701,7 +3701,7 @@ class CaseReportDetail:
 
     @monitor_peak_time_check_point.setter
     def monitor_peak_time_check_point(self, monitor_peak_time_check_point):
-        """Sets the monitor_peak_time_check_point of this CaseReportDetail.
+        r"""Sets the monitor_peak_time_check_point of this CaseReportDetail.
 
         监控峰值时间检查点
 
@@ -3712,7 +3712,7 @@ class CaseReportDetail:
 
     @property
     def monitor_peak_time_check_res(self):
-        """Gets the monitor_peak_time_check_res of this CaseReportDetail.
+        r"""Gets the monitor_peak_time_check_res of this CaseReportDetail.
 
         监控峰值时间检查结果
 
@@ -3723,7 +3723,7 @@ class CaseReportDetail:
 
     @monitor_peak_time_check_res.setter
     def monitor_peak_time_check_res(self, monitor_peak_time_check_res):
-        """Sets the monitor_peak_time_check_res of this CaseReportDetail.
+        r"""Sets the monitor_peak_time_check_res of this CaseReportDetail.
 
         监控峰值时间检查结果
 
@@ -3734,7 +3734,7 @@ class CaseReportDetail:
 
     @property
     def monitor_result(self):
-        """Gets the monitor_result of this CaseReportDetail.
+        r"""Gets the monitor_result of this CaseReportDetail.
 
         监控结果
 
@@ -3745,7 +3745,7 @@ class CaseReportDetail:
 
     @monitor_result.setter
     def monitor_result(self, monitor_result):
-        """Sets the monitor_result of this CaseReportDetail.
+        r"""Sets the monitor_result of this CaseReportDetail.
 
         监控结果
 
@@ -3756,7 +3756,7 @@ class CaseReportDetail:
 
     @property
     def monitor_result_check_point(self):
-        """Gets the monitor_result_check_point of this CaseReportDetail.
+        r"""Gets the monitor_result_check_point of this CaseReportDetail.
 
         监控结果检查点
 
@@ -3767,7 +3767,7 @@ class CaseReportDetail:
 
     @monitor_result_check_point.setter
     def monitor_result_check_point(self, monitor_result_check_point):
-        """Sets the monitor_result_check_point of this CaseReportDetail.
+        r"""Sets the monitor_result_check_point of this CaseReportDetail.
 
         监控结果检查点
 
@@ -3778,7 +3778,7 @@ class CaseReportDetail:
 
     @property
     def monitor_result_check_res(self):
-        """Gets the monitor_result_check_res of this CaseReportDetail.
+        r"""Gets the monitor_result_check_res of this CaseReportDetail.
 
         监控结果检查结果
 
@@ -3789,7 +3789,7 @@ class CaseReportDetail:
 
     @monitor_result_check_res.setter
     def monitor_result_check_res(self, monitor_result_check_res):
-        """Sets the monitor_result_check_res of this CaseReportDetail.
+        r"""Sets the monitor_result_check_res of this CaseReportDetail.
 
         监控结果检查结果
 
@@ -3800,7 +3800,7 @@ class CaseReportDetail:
 
     @property
     def name(self):
-        """Gets the name of this CaseReportDetail.
+        r"""Gets the name of this CaseReportDetail.
 
         用例/aw/事务名
 
@@ -3811,7 +3811,7 @@ class CaseReportDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CaseReportDetail.
+        r"""Sets the name of this CaseReportDetail.
 
         用例/aw/事务名
 
@@ -3822,7 +3822,7 @@ class CaseReportDetail:
 
     @property
     def network_read(self):
-        """Gets the network_read of this CaseReportDetail.
+        r"""Gets the network_read of this CaseReportDetail.
 
         网络最大接收数据速度
 
@@ -3833,7 +3833,7 @@ class CaseReportDetail:
 
     @network_read.setter
     def network_read(self, network_read):
-        """Sets the network_read of this CaseReportDetail.
+        r"""Sets the network_read of this CaseReportDetail.
 
         网络最大接收数据速度
 
@@ -3844,7 +3844,7 @@ class CaseReportDetail:
 
     @property
     def network_read_avg(self):
-        """Gets the network_read_avg of this CaseReportDetail.
+        r"""Gets the network_read_avg of this CaseReportDetail.
 
         网络平均接收数据速度
 
@@ -3855,7 +3855,7 @@ class CaseReportDetail:
 
     @network_read_avg.setter
     def network_read_avg(self, network_read_avg):
-        """Sets the network_read_avg of this CaseReportDetail.
+        r"""Sets the network_read_avg of this CaseReportDetail.
 
         网络平均接收数据速度
 
@@ -3866,7 +3866,7 @@ class CaseReportDetail:
 
     @property
     def network_read_avg_check_point(self):
-        """Gets the network_read_avg_check_point of this CaseReportDetail.
+        r"""Gets the network_read_avg_check_point of this CaseReportDetail.
 
         网络平均接收数据速度检查点
 
@@ -3877,7 +3877,7 @@ class CaseReportDetail:
 
     @network_read_avg_check_point.setter
     def network_read_avg_check_point(self, network_read_avg_check_point):
-        """Sets the network_read_avg_check_point of this CaseReportDetail.
+        r"""Sets the network_read_avg_check_point of this CaseReportDetail.
 
         网络平均接收数据速度检查点
 
@@ -3888,7 +3888,7 @@ class CaseReportDetail:
 
     @property
     def network_read_avg_check_res(self):
-        """Gets the network_read_avg_check_res of this CaseReportDetail.
+        r"""Gets the network_read_avg_check_res of this CaseReportDetail.
 
         网络平均接收数据速度检查结果
 
@@ -3899,7 +3899,7 @@ class CaseReportDetail:
 
     @network_read_avg_check_res.setter
     def network_read_avg_check_res(self, network_read_avg_check_res):
-        """Sets the network_read_avg_check_res of this CaseReportDetail.
+        r"""Sets the network_read_avg_check_res of this CaseReportDetail.
 
         网络平均接收数据速度检查结果
 
@@ -3910,7 +3910,7 @@ class CaseReportDetail:
 
     @property
     def network_read_check_point(self):
-        """Gets the network_read_check_point of this CaseReportDetail.
+        r"""Gets the network_read_check_point of this CaseReportDetail.
 
         网络最大接收数据速度检查点
 
@@ -3921,7 +3921,7 @@ class CaseReportDetail:
 
     @network_read_check_point.setter
     def network_read_check_point(self, network_read_check_point):
-        """Sets the network_read_check_point of this CaseReportDetail.
+        r"""Sets the network_read_check_point of this CaseReportDetail.
 
         网络最大接收数据速度检查点
 
@@ -3932,7 +3932,7 @@ class CaseReportDetail:
 
     @property
     def network_read_check_res(self):
-        """Gets the network_read_check_res of this CaseReportDetail.
+        r"""Gets the network_read_check_res of this CaseReportDetail.
 
         网络最大接收数据速度检查结果
 
@@ -3943,7 +3943,7 @@ class CaseReportDetail:
 
     @network_read_check_res.setter
     def network_read_check_res(self, network_read_check_res):
-        """Sets the network_read_check_res of this CaseReportDetail.
+        r"""Sets the network_read_check_res of this CaseReportDetail.
 
         网络最大接收数据速度检查结果
 
@@ -3954,7 +3954,7 @@ class CaseReportDetail:
 
     @property
     def network_write(self):
-        """Gets the network_write of this CaseReportDetail.
+        r"""Gets the network_write of this CaseReportDetail.
 
         网络最大写入数据速度
 
@@ -3965,7 +3965,7 @@ class CaseReportDetail:
 
     @network_write.setter
     def network_write(self, network_write):
-        """Sets the network_write of this CaseReportDetail.
+        r"""Sets the network_write of this CaseReportDetail.
 
         网络最大写入数据速度
 
@@ -3976,7 +3976,7 @@ class CaseReportDetail:
 
     @property
     def network_write_avg(self):
-        """Gets the network_write_avg of this CaseReportDetail.
+        r"""Gets the network_write_avg of this CaseReportDetail.
 
         网络平均写入数据速度
 
@@ -3987,7 +3987,7 @@ class CaseReportDetail:
 
     @network_write_avg.setter
     def network_write_avg(self, network_write_avg):
-        """Sets the network_write_avg of this CaseReportDetail.
+        r"""Sets the network_write_avg of this CaseReportDetail.
 
         网络平均写入数据速度
 
@@ -3998,7 +3998,7 @@ class CaseReportDetail:
 
     @property
     def network_write_avg_check_point(self):
-        """Gets the network_write_avg_check_point of this CaseReportDetail.
+        r"""Gets the network_write_avg_check_point of this CaseReportDetail.
 
         网络平均写入数据速度检查点
 
@@ -4009,7 +4009,7 @@ class CaseReportDetail:
 
     @network_write_avg_check_point.setter
     def network_write_avg_check_point(self, network_write_avg_check_point):
-        """Sets the network_write_avg_check_point of this CaseReportDetail.
+        r"""Sets the network_write_avg_check_point of this CaseReportDetail.
 
         网络平均写入数据速度检查点
 
@@ -4020,7 +4020,7 @@ class CaseReportDetail:
 
     @property
     def network_write_avg_check_res(self):
-        """Gets the network_write_avg_check_res of this CaseReportDetail.
+        r"""Gets the network_write_avg_check_res of this CaseReportDetail.
 
         网络平均写入数据速度检查结果
 
@@ -4031,7 +4031,7 @@ class CaseReportDetail:
 
     @network_write_avg_check_res.setter
     def network_write_avg_check_res(self, network_write_avg_check_res):
-        """Sets the network_write_avg_check_res of this CaseReportDetail.
+        r"""Sets the network_write_avg_check_res of this CaseReportDetail.
 
         网络平均写入数据速度检查结果
 
@@ -4042,7 +4042,7 @@ class CaseReportDetail:
 
     @property
     def network_write_check_point(self):
-        """Gets the network_write_check_point of this CaseReportDetail.
+        r"""Gets the network_write_check_point of this CaseReportDetail.
 
         网络最大写入数据速度检查点
 
@@ -4053,7 +4053,7 @@ class CaseReportDetail:
 
     @network_write_check_point.setter
     def network_write_check_point(self, network_write_check_point):
-        """Sets the network_write_check_point of this CaseReportDetail.
+        r"""Sets the network_write_check_point of this CaseReportDetail.
 
         网络最大写入数据速度检查点
 
@@ -4064,7 +4064,7 @@ class CaseReportDetail:
 
     @property
     def network_write_check_res(self):
-        """Gets the network_write_check_res of this CaseReportDetail.
+        r"""Gets the network_write_check_res of this CaseReportDetail.
 
         网络最大写入数据速度检查结果
 
@@ -4075,7 +4075,7 @@ class CaseReportDetail:
 
     @network_write_check_res.setter
     def network_write_check_res(self, network_write_check_res):
-        """Sets the network_write_check_res of this CaseReportDetail.
+        r"""Sets the network_write_check_res of this CaseReportDetail.
 
         网络最大写入数据速度检查结果
 
@@ -4086,7 +4086,7 @@ class CaseReportDetail:
 
     @property
     def peak_load_status(self):
-        """Gets the peak_load_status of this CaseReportDetail.
+        r"""Gets the peak_load_status of this CaseReportDetail.
 
         峰值负载状态
 
@@ -4097,7 +4097,7 @@ class CaseReportDetail:
 
     @peak_load_status.setter
     def peak_load_status(self, peak_load_status):
-        """Sets the peak_load_status of this CaseReportDetail.
+        r"""Sets the peak_load_status of this CaseReportDetail.
 
         峰值负载状态
 
@@ -4108,7 +4108,7 @@ class CaseReportDetail:
 
     @property
     def peak_load_status_check_point(self):
-        """Gets the peak_load_status_check_point of this CaseReportDetail.
+        r"""Gets the peak_load_status_check_point of this CaseReportDetail.
 
         峰值负载状态检查点
 
@@ -4119,7 +4119,7 @@ class CaseReportDetail:
 
     @peak_load_status_check_point.setter
     def peak_load_status_check_point(self, peak_load_status_check_point):
-        """Sets the peak_load_status_check_point of this CaseReportDetail.
+        r"""Sets the peak_load_status_check_point of this CaseReportDetail.
 
         峰值负载状态检查点
 
@@ -4130,7 +4130,7 @@ class CaseReportDetail:
 
     @property
     def peak_load_status_check_res(self):
-        """Gets the peak_load_status_check_res of this CaseReportDetail.
+        r"""Gets the peak_load_status_check_res of this CaseReportDetail.
 
         峰值负载状态检查结果
 
@@ -4141,7 +4141,7 @@ class CaseReportDetail:
 
     @peak_load_status_check_res.setter
     def peak_load_status_check_res(self, peak_load_status_check_res):
-        """Sets the peak_load_status_check_res of this CaseReportDetail.
+        r"""Sets the peak_load_status_check_res of this CaseReportDetail.
 
         峰值负载状态检查结果
 
@@ -4152,7 +4152,7 @@ class CaseReportDetail:
 
     @property
     def peak_metric(self):
-        """Gets the peak_metric of this CaseReportDetail.
+        r"""Gets the peak_metric of this CaseReportDetail.
 
         :return: The peak_metric of this CaseReportDetail.
         :rtype: :class:`huaweicloudsdkcpts.v1.PeakMetric`
@@ -4161,7 +4161,7 @@ class CaseReportDetail:
 
     @peak_metric.setter
     def peak_metric(self, peak_metric):
-        """Sets the peak_metric of this CaseReportDetail.
+        r"""Sets the peak_metric of this CaseReportDetail.
 
         :param peak_metric: The peak_metric of this CaseReportDetail.
         :type peak_metric: :class:`huaweicloudsdkcpts.v1.PeakMetric`
@@ -4170,7 +4170,7 @@ class CaseReportDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CaseReportDetail.
+        r"""Gets the project_id of this CaseReportDetail.
 
         工程ID
 
@@ -4181,7 +4181,7 @@ class CaseReportDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CaseReportDetail.
+        r"""Sets the project_id of this CaseReportDetail.
 
         工程ID
 
@@ -4192,7 +4192,7 @@ class CaseReportDetail:
 
     @property
     def protocols(self):
-        """Gets the protocols of this CaseReportDetail.
+        r"""Gets the protocols of this CaseReportDetail.
 
         协议
 
@@ -4203,7 +4203,7 @@ class CaseReportDetail:
 
     @protocols.setter
     def protocols(self, protocols):
-        """Sets the protocols of this CaseReportDetail.
+        r"""Sets the protocols of this CaseReportDetail.
 
         协议
 
@@ -4214,7 +4214,7 @@ class CaseReportDetail:
 
     @property
     def requests(self):
-        """Gets the requests of this CaseReportDetail.
+        r"""Gets the requests of this CaseReportDetail.
 
         请求数
 
@@ -4225,7 +4225,7 @@ class CaseReportDetail:
 
     @requests.setter
     def requests(self, requests):
-        """Sets the requests of this CaseReportDetail.
+        r"""Sets the requests of this CaseReportDetail.
 
         请求数
 
@@ -4236,7 +4236,7 @@ class CaseReportDetail:
 
     @property
     def result(self):
-        """Gets the result of this CaseReportDetail.
+        r"""Gets the result of this CaseReportDetail.
 
         用例结果
 
@@ -4247,7 +4247,7 @@ class CaseReportDetail:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CaseReportDetail.
+        r"""Sets the result of this CaseReportDetail.
 
         用例结果
 
@@ -4258,7 +4258,7 @@ class CaseReportDetail:
 
     @property
     def result_log(self):
-        """Gets the result_log of this CaseReportDetail.
+        r"""Gets the result_log of this CaseReportDetail.
 
         用例结果日志
 
@@ -4269,7 +4269,7 @@ class CaseReportDetail:
 
     @result_log.setter
     def result_log(self, result_log):
-        """Sets the result_log of this CaseReportDetail.
+        r"""Sets the result_log of this CaseReportDetail.
 
         用例结果日志
 
@@ -4280,7 +4280,7 @@ class CaseReportDetail:
 
     @property
     def round(self):
-        """Gets the round of this CaseReportDetail.
+        r"""Gets the round of this CaseReportDetail.
 
         执行轮次
 
@@ -4291,7 +4291,7 @@ class CaseReportDetail:
 
     @round.setter
     def round(self, round):
-        """Sets the round of this CaseReportDetail.
+        r"""Sets the round of this CaseReportDetail.
 
         执行轮次
 
@@ -4302,7 +4302,7 @@ class CaseReportDetail:
 
     @property
     def save_all_data(self):
-        """Gets the save_all_data of this CaseReportDetail.
+        r"""Gets the save_all_data of this CaseReportDetail.
 
         是否存储全量数据到CSS
 
@@ -4313,7 +4313,7 @@ class CaseReportDetail:
 
     @save_all_data.setter
     def save_all_data(self, save_all_data):
-        """Sets the save_all_data of this CaseReportDetail.
+        r"""Sets the save_all_data of this CaseReportDetail.
 
         是否存储全量数据到CSS
 
@@ -4324,7 +4324,7 @@ class CaseReportDetail:
 
     @property
     def service_id(self):
-        """Gets the service_id of this CaseReportDetail.
+        r"""Gets the service_id of this CaseReportDetail.
 
         服务ID
 
@@ -4335,7 +4335,7 @@ class CaseReportDetail:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this CaseReportDetail.
+        r"""Sets the service_id of this CaseReportDetail.
 
         服务ID
 
@@ -4346,7 +4346,7 @@ class CaseReportDetail:
 
     @property
     def stage(self):
-        """Gets the stage of this CaseReportDetail.
+        r"""Gets the stage of this CaseReportDetail.
 
         阶段
 
@@ -4357,7 +4357,7 @@ class CaseReportDetail:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this CaseReportDetail.
+        r"""Sets the stage of this CaseReportDetail.
 
         阶段
 
@@ -4368,7 +4368,7 @@ class CaseReportDetail:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CaseReportDetail.
+        r"""Gets the start_time of this CaseReportDetail.
 
         开始时间
 
@@ -4379,7 +4379,7 @@ class CaseReportDetail:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CaseReportDetail.
+        r"""Sets the start_time of this CaseReportDetail.
 
         开始时间
 
@@ -4390,7 +4390,7 @@ class CaseReportDetail:
 
     @property
     def status(self):
-        """Gets the status of this CaseReportDetail.
+        r"""Gets the status of this CaseReportDetail.
 
         任务状态
 
@@ -4401,7 +4401,7 @@ class CaseReportDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CaseReportDetail.
+        r"""Sets the status of this CaseReportDetail.
 
         任务状态
 
@@ -4412,7 +4412,7 @@ class CaseReportDetail:
 
     @property
     def streaming_media_vo(self):
-        """Gets the streaming_media_vo of this CaseReportDetail.
+        r"""Gets the streaming_media_vo of this CaseReportDetail.
 
         :return: The streaming_media_vo of this CaseReportDetail.
         :rtype: :class:`huaweicloudsdkcpts.v1.StreamingMediaReport`
@@ -4421,7 +4421,7 @@ class CaseReportDetail:
 
     @streaming_media_vo.setter
     def streaming_media_vo(self, streaming_media_vo):
-        """Sets the streaming_media_vo of this CaseReportDetail.
+        r"""Sets the streaming_media_vo of this CaseReportDetail.
 
         :param streaming_media_vo: The streaming_media_vo of this CaseReportDetail.
         :type streaming_media_vo: :class:`huaweicloudsdkcpts.v1.StreamingMediaReport`
@@ -4430,7 +4430,7 @@ class CaseReportDetail:
 
     @property
     def success_count(self):
-        """Gets the success_count of this CaseReportDetail.
+        r"""Gets the success_count of this CaseReportDetail.
 
         成功数
 
@@ -4441,7 +4441,7 @@ class CaseReportDetail:
 
     @success_count.setter
     def success_count(self, success_count):
-        """Sets the success_count of this CaseReportDetail.
+        r"""Sets the success_count of this CaseReportDetail.
 
         成功数
 
@@ -4452,7 +4452,7 @@ class CaseReportDetail:
 
     @property
     def success_rate(self):
-        """Gets the success_rate of this CaseReportDetail.
+        r"""Gets the success_rate of this CaseReportDetail.
 
         成功率
 
@@ -4463,7 +4463,7 @@ class CaseReportDetail:
 
     @success_rate.setter
     def success_rate(self, success_rate):
-        """Sets the success_rate of this CaseReportDetail.
+        r"""Sets the success_rate of this CaseReportDetail.
 
         成功率
 
@@ -4474,7 +4474,7 @@ class CaseReportDetail:
 
     @property
     def success_rate_check_point(self):
-        """Gets the success_rate_check_point of this CaseReportDetail.
+        r"""Gets the success_rate_check_point of this CaseReportDetail.
 
         成功率检查点
 
@@ -4485,7 +4485,7 @@ class CaseReportDetail:
 
     @success_rate_check_point.setter
     def success_rate_check_point(self, success_rate_check_point):
-        """Sets the success_rate_check_point of this CaseReportDetail.
+        r"""Sets the success_rate_check_point of this CaseReportDetail.
 
         成功率检查点
 
@@ -4496,7 +4496,7 @@ class CaseReportDetail:
 
     @property
     def success_rate_check_res(self):
-        """Gets the success_rate_check_res of this CaseReportDetail.
+        r"""Gets the success_rate_check_res of this CaseReportDetail.
 
         成功率检查结果
 
@@ -4507,7 +4507,7 @@ class CaseReportDetail:
 
     @success_rate_check_res.setter
     def success_rate_check_res(self, success_rate_check_res):
-        """Sets the success_rate_check_res of this CaseReportDetail.
+        r"""Sets the success_rate_check_res of this CaseReportDetail.
 
         成功率检查结果
 
@@ -4518,7 +4518,7 @@ class CaseReportDetail:
 
     @property
     def sum1xx(self):
-        """Gets the sum1xx of this CaseReportDetail.
+        r"""Gets the sum1xx of this CaseReportDetail.
 
         1XX响应码数量
 
@@ -4529,7 +4529,7 @@ class CaseReportDetail:
 
     @sum1xx.setter
     def sum1xx(self, sum1xx):
-        """Sets the sum1xx of this CaseReportDetail.
+        r"""Sets the sum1xx of this CaseReportDetail.
 
         1XX响应码数量
 
@@ -4540,7 +4540,7 @@ class CaseReportDetail:
 
     @property
     def sum2xx(self):
-        """Gets the sum2xx of this CaseReportDetail.
+        r"""Gets the sum2xx of this CaseReportDetail.
 
         2XX响应码数量
 
@@ -4551,7 +4551,7 @@ class CaseReportDetail:
 
     @sum2xx.setter
     def sum2xx(self, sum2xx):
-        """Sets the sum2xx of this CaseReportDetail.
+        r"""Sets the sum2xx of this CaseReportDetail.
 
         2XX响应码数量
 
@@ -4562,7 +4562,7 @@ class CaseReportDetail:
 
     @property
     def sum3xx(self):
-        """Gets the sum3xx of this CaseReportDetail.
+        r"""Gets the sum3xx of this CaseReportDetail.
 
         3XX响应码数量
 
@@ -4573,7 +4573,7 @@ class CaseReportDetail:
 
     @sum3xx.setter
     def sum3xx(self, sum3xx):
-        """Sets the sum3xx of this CaseReportDetail.
+        r"""Sets the sum3xx of this CaseReportDetail.
 
         3XX响应码数量
 
@@ -4584,7 +4584,7 @@ class CaseReportDetail:
 
     @property
     def sum4xx(self):
-        """Gets the sum4xx of this CaseReportDetail.
+        r"""Gets the sum4xx of this CaseReportDetail.
 
         4XX响应码数量
 
@@ -4595,7 +4595,7 @@ class CaseReportDetail:
 
     @sum4xx.setter
     def sum4xx(self, sum4xx):
-        """Sets the sum4xx of this CaseReportDetail.
+        r"""Sets the sum4xx of this CaseReportDetail.
 
         4XX响应码数量
 
@@ -4606,7 +4606,7 @@ class CaseReportDetail:
 
     @property
     def sum5xx(self):
-        """Gets the sum5xx of this CaseReportDetail.
+        r"""Gets the sum5xx of this CaseReportDetail.
 
         5XX响应码数量
 
@@ -4617,7 +4617,7 @@ class CaseReportDetail:
 
     @sum5xx.setter
     def sum5xx(self, sum5xx):
-        """Sets the sum5xx of this CaseReportDetail.
+        r"""Sets the sum5xx of this CaseReportDetail.
 
         5XX响应码数量
 
@@ -4628,7 +4628,7 @@ class CaseReportDetail:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CaseReportDetail.
+        r"""Gets the task_id of this CaseReportDetail.
 
         任务ID
 
@@ -4639,7 +4639,7 @@ class CaseReportDetail:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CaseReportDetail.
+        r"""Sets the task_id of this CaseReportDetail.
 
         任务ID
 
@@ -4650,7 +4650,7 @@ class CaseReportDetail:
 
     @property
     def task_name(self):
-        """Gets the task_name of this CaseReportDetail.
+        r"""Gets the task_name of this CaseReportDetail.
 
         任务名
 
@@ -4661,7 +4661,7 @@ class CaseReportDetail:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this CaseReportDetail.
+        r"""Sets the task_name of this CaseReportDetail.
 
         任务名
 
@@ -4672,7 +4672,7 @@ class CaseReportDetail:
 
     @property
     def task_project_id(self):
-        """Gets the task_project_id of this CaseReportDetail.
+        r"""Gets the task_project_id of this CaseReportDetail.
 
         任务项目ID
 
@@ -4683,7 +4683,7 @@ class CaseReportDetail:
 
     @task_project_id.setter
     def task_project_id(self, task_project_id):
-        """Sets the task_project_id of this CaseReportDetail.
+        r"""Sets the task_project_id of this CaseReportDetail.
 
         任务项目ID
 
@@ -4694,7 +4694,7 @@ class CaseReportDetail:
 
     @property
     def task_status(self):
-        """Gets the task_status of this CaseReportDetail.
+        r"""Gets the task_status of this CaseReportDetail.
 
         任务状态
 
@@ -4705,7 +4705,7 @@ class CaseReportDetail:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this CaseReportDetail.
+        r"""Sets the task_status of this CaseReportDetail.
 
         任务状态
 
@@ -4716,7 +4716,7 @@ class CaseReportDetail:
 
     @property
     def test_case_uri(self):
-        """Gets the test_case_uri of this CaseReportDetail.
+        r"""Gets the test_case_uri of this CaseReportDetail.
 
         用例基线uri
 
@@ -4727,7 +4727,7 @@ class CaseReportDetail:
 
     @test_case_uri.setter
     def test_case_uri(self, test_case_uri):
-        """Sets the test_case_uri of this CaseReportDetail.
+        r"""Sets the test_case_uri of this CaseReportDetail.
 
         用例基线uri
 
@@ -4738,7 +4738,7 @@ class CaseReportDetail:
 
     @property
     def tp50(self):
-        """Gets the tp50 of this CaseReportDetail.
+        r"""Gets the tp50 of this CaseReportDetail.
 
         TP50
 
@@ -4749,7 +4749,7 @@ class CaseReportDetail:
 
     @tp50.setter
     def tp50(self, tp50):
-        """Sets the tp50 of this CaseReportDetail.
+        r"""Sets the tp50 of this CaseReportDetail.
 
         TP50
 
@@ -4760,7 +4760,7 @@ class CaseReportDetail:
 
     @property
     def tp50_check_point(self):
-        """Gets the tp50_check_point of this CaseReportDetail.
+        r"""Gets the tp50_check_point of this CaseReportDetail.
 
         TP50检查点
 
@@ -4771,7 +4771,7 @@ class CaseReportDetail:
 
     @tp50_check_point.setter
     def tp50_check_point(self, tp50_check_point):
-        """Sets the tp50_check_point of this CaseReportDetail.
+        r"""Sets the tp50_check_point of this CaseReportDetail.
 
         TP50检查点
 
@@ -4782,7 +4782,7 @@ class CaseReportDetail:
 
     @property
     def tp50_check_res(self):
-        """Gets the tp50_check_res of this CaseReportDetail.
+        r"""Gets the tp50_check_res of this CaseReportDetail.
 
         TP50检查结果
 
@@ -4793,7 +4793,7 @@ class CaseReportDetail:
 
     @tp50_check_res.setter
     def tp50_check_res(self, tp50_check_res):
-        """Sets the tp50_check_res of this CaseReportDetail.
+        r"""Sets the tp50_check_res of this CaseReportDetail.
 
         TP50检查结果
 
@@ -4804,7 +4804,7 @@ class CaseReportDetail:
 
     @property
     def tp75(self):
-        """Gets the tp75 of this CaseReportDetail.
+        r"""Gets the tp75 of this CaseReportDetail.
 
         TP75
 
@@ -4815,7 +4815,7 @@ class CaseReportDetail:
 
     @tp75.setter
     def tp75(self, tp75):
-        """Sets the tp75 of this CaseReportDetail.
+        r"""Sets the tp75 of this CaseReportDetail.
 
         TP75
 
@@ -4826,7 +4826,7 @@ class CaseReportDetail:
 
     @property
     def tp75_check_point(self):
-        """Gets the tp75_check_point of this CaseReportDetail.
+        r"""Gets the tp75_check_point of this CaseReportDetail.
 
         TP75检查点
 
@@ -4837,7 +4837,7 @@ class CaseReportDetail:
 
     @tp75_check_point.setter
     def tp75_check_point(self, tp75_check_point):
-        """Sets the tp75_check_point of this CaseReportDetail.
+        r"""Sets the tp75_check_point of this CaseReportDetail.
 
         TP75检查点
 
@@ -4848,7 +4848,7 @@ class CaseReportDetail:
 
     @property
     def tp75_check_res(self):
-        """Gets the tp75_check_res of this CaseReportDetail.
+        r"""Gets the tp75_check_res of this CaseReportDetail.
 
         TP75检查结果
 
@@ -4859,7 +4859,7 @@ class CaseReportDetail:
 
     @tp75_check_res.setter
     def tp75_check_res(self, tp75_check_res):
-        """Sets the tp75_check_res of this CaseReportDetail.
+        r"""Sets the tp75_check_res of this CaseReportDetail.
 
         TP75检查结果
 
@@ -4870,7 +4870,7 @@ class CaseReportDetail:
 
     @property
     def tp85(self):
-        """Gets the tp85 of this CaseReportDetail.
+        r"""Gets the tp85 of this CaseReportDetail.
 
         TP85
 
@@ -4881,7 +4881,7 @@ class CaseReportDetail:
 
     @tp85.setter
     def tp85(self, tp85):
-        """Sets the tp85 of this CaseReportDetail.
+        r"""Sets the tp85 of this CaseReportDetail.
 
         TP85
 
@@ -4892,7 +4892,7 @@ class CaseReportDetail:
 
     @property
     def tp85_check_point(self):
-        """Gets the tp85_check_point of this CaseReportDetail.
+        r"""Gets the tp85_check_point of this CaseReportDetail.
 
         TP85检查点
 
@@ -4903,7 +4903,7 @@ class CaseReportDetail:
 
     @tp85_check_point.setter
     def tp85_check_point(self, tp85_check_point):
-        """Sets the tp85_check_point of this CaseReportDetail.
+        r"""Sets the tp85_check_point of this CaseReportDetail.
 
         TP85检查点
 
@@ -4914,7 +4914,7 @@ class CaseReportDetail:
 
     @property
     def tp85_check_res(self):
-        """Gets the tp85_check_res of this CaseReportDetail.
+        r"""Gets the tp85_check_res of this CaseReportDetail.
 
         TP85检查结果
 
@@ -4925,7 +4925,7 @@ class CaseReportDetail:
 
     @tp85_check_res.setter
     def tp85_check_res(self, tp85_check_res):
-        """Sets the tp85_check_res of this CaseReportDetail.
+        r"""Sets the tp85_check_res of this CaseReportDetail.
 
         TP85检查结果
 
@@ -4936,7 +4936,7 @@ class CaseReportDetail:
 
     @property
     def tp90(self):
-        """Gets the tp90 of this CaseReportDetail.
+        r"""Gets the tp90 of this CaseReportDetail.
 
         TP90
 
@@ -4947,7 +4947,7 @@ class CaseReportDetail:
 
     @tp90.setter
     def tp90(self, tp90):
-        """Sets the tp90 of this CaseReportDetail.
+        r"""Sets the tp90 of this CaseReportDetail.
 
         TP90
 
@@ -4958,7 +4958,7 @@ class CaseReportDetail:
 
     @property
     def tp90_check_point(self):
-        """Gets the tp90_check_point of this CaseReportDetail.
+        r"""Gets the tp90_check_point of this CaseReportDetail.
 
         TP90检查点
 
@@ -4969,7 +4969,7 @@ class CaseReportDetail:
 
     @tp90_check_point.setter
     def tp90_check_point(self, tp90_check_point):
-        """Sets the tp90_check_point of this CaseReportDetail.
+        r"""Sets the tp90_check_point of this CaseReportDetail.
 
         TP90检查点
 
@@ -4980,7 +4980,7 @@ class CaseReportDetail:
 
     @property
     def tp90_check_res(self):
-        """Gets the tp90_check_res of this CaseReportDetail.
+        r"""Gets the tp90_check_res of this CaseReportDetail.
 
         TP90检查结果
 
@@ -4991,7 +4991,7 @@ class CaseReportDetail:
 
     @tp90_check_res.setter
     def tp90_check_res(self, tp90_check_res):
-        """Sets the tp90_check_res of this CaseReportDetail.
+        r"""Sets the tp90_check_res of this CaseReportDetail.
 
         TP90检查结果
 
@@ -5002,7 +5002,7 @@ class CaseReportDetail:
 
     @property
     def tp95(self):
-        """Gets the tp95 of this CaseReportDetail.
+        r"""Gets the tp95 of this CaseReportDetail.
 
         TP95
 
@@ -5013,7 +5013,7 @@ class CaseReportDetail:
 
     @tp95.setter
     def tp95(self, tp95):
-        """Sets the tp95 of this CaseReportDetail.
+        r"""Sets the tp95 of this CaseReportDetail.
 
         TP95
 
@@ -5024,7 +5024,7 @@ class CaseReportDetail:
 
     @property
     def tp95_check_point(self):
-        """Gets the tp95_check_point of this CaseReportDetail.
+        r"""Gets the tp95_check_point of this CaseReportDetail.
 
         TP95检查点
 
@@ -5035,7 +5035,7 @@ class CaseReportDetail:
 
     @tp95_check_point.setter
     def tp95_check_point(self, tp95_check_point):
-        """Sets the tp95_check_point of this CaseReportDetail.
+        r"""Sets the tp95_check_point of this CaseReportDetail.
 
         TP95检查点
 
@@ -5046,7 +5046,7 @@ class CaseReportDetail:
 
     @property
     def tp95_check_res(self):
-        """Gets the tp95_check_res of this CaseReportDetail.
+        r"""Gets the tp95_check_res of this CaseReportDetail.
 
         TP95检查结果
 
@@ -5057,7 +5057,7 @@ class CaseReportDetail:
 
     @tp95_check_res.setter
     def tp95_check_res(self, tp95_check_res):
-        """Sets the tp95_check_res of this CaseReportDetail.
+        r"""Sets the tp95_check_res of this CaseReportDetail.
 
         TP95检查结果
 
@@ -5068,7 +5068,7 @@ class CaseReportDetail:
 
     @property
     def tp99(self):
-        """Gets the tp99 of this CaseReportDetail.
+        r"""Gets the tp99 of this CaseReportDetail.
 
         TP99
 
@@ -5079,7 +5079,7 @@ class CaseReportDetail:
 
     @tp99.setter
     def tp99(self, tp99):
-        """Sets the tp99 of this CaseReportDetail.
+        r"""Sets the tp99 of this CaseReportDetail.
 
         TP99
 
@@ -5090,7 +5090,7 @@ class CaseReportDetail:
 
     @property
     def tp999(self):
-        """Gets the tp999 of this CaseReportDetail.
+        r"""Gets the tp999 of this CaseReportDetail.
 
         TP99.9
 
@@ -5101,7 +5101,7 @@ class CaseReportDetail:
 
     @tp999.setter
     def tp999(self, tp999):
-        """Sets the tp999 of this CaseReportDetail.
+        r"""Sets the tp999 of this CaseReportDetail.
 
         TP99.9
 
@@ -5112,7 +5112,7 @@ class CaseReportDetail:
 
     @property
     def tp9999(self):
-        """Gets the tp9999 of this CaseReportDetail.
+        r"""Gets the tp9999 of this CaseReportDetail.
 
         TP99.99
 
@@ -5123,7 +5123,7 @@ class CaseReportDetail:
 
     @tp9999.setter
     def tp9999(self, tp9999):
-        """Sets the tp9999 of this CaseReportDetail.
+        r"""Sets the tp9999 of this CaseReportDetail.
 
         TP99.99
 
@@ -5134,7 +5134,7 @@ class CaseReportDetail:
 
     @property
     def tp9999_check_point(self):
-        """Gets the tp9999_check_point of this CaseReportDetail.
+        r"""Gets the tp9999_check_point of this CaseReportDetail.
 
         TP99.99检查点
 
@@ -5145,7 +5145,7 @@ class CaseReportDetail:
 
     @tp9999_check_point.setter
     def tp9999_check_point(self, tp9999_check_point):
-        """Sets the tp9999_check_point of this CaseReportDetail.
+        r"""Sets the tp9999_check_point of this CaseReportDetail.
 
         TP99.99检查点
 
@@ -5156,7 +5156,7 @@ class CaseReportDetail:
 
     @property
     def tp9999_check_res(self):
-        """Gets the tp9999_check_res of this CaseReportDetail.
+        r"""Gets the tp9999_check_res of this CaseReportDetail.
 
         TP99.99检查结果
 
@@ -5167,7 +5167,7 @@ class CaseReportDetail:
 
     @tp9999_check_res.setter
     def tp9999_check_res(self, tp9999_check_res):
-        """Sets the tp9999_check_res of this CaseReportDetail.
+        r"""Sets the tp9999_check_res of this CaseReportDetail.
 
         TP99.99检查结果
 
@@ -5178,7 +5178,7 @@ class CaseReportDetail:
 
     @property
     def tp999_check_point(self):
-        """Gets the tp999_check_point of this CaseReportDetail.
+        r"""Gets the tp999_check_point of this CaseReportDetail.
 
         TP99.9检查点
 
@@ -5189,7 +5189,7 @@ class CaseReportDetail:
 
     @tp999_check_point.setter
     def tp999_check_point(self, tp999_check_point):
-        """Sets the tp999_check_point of this CaseReportDetail.
+        r"""Sets the tp999_check_point of this CaseReportDetail.
 
         TP99.9检查点
 
@@ -5200,7 +5200,7 @@ class CaseReportDetail:
 
     @property
     def tp999_check_res(self):
-        """Gets the tp999_check_res of this CaseReportDetail.
+        r"""Gets the tp999_check_res of this CaseReportDetail.
 
         TP99.9检查结果
 
@@ -5211,7 +5211,7 @@ class CaseReportDetail:
 
     @tp999_check_res.setter
     def tp999_check_res(self, tp999_check_res):
-        """Sets the tp999_check_res of this CaseReportDetail.
+        r"""Sets the tp999_check_res of this CaseReportDetail.
 
         TP99.9检查结果
 
@@ -5222,7 +5222,7 @@ class CaseReportDetail:
 
     @property
     def tp99_check_point(self):
-        """Gets the tp99_check_point of this CaseReportDetail.
+        r"""Gets the tp99_check_point of this CaseReportDetail.
 
         TP99检查点
 
@@ -5233,7 +5233,7 @@ class CaseReportDetail:
 
     @tp99_check_point.setter
     def tp99_check_point(self, tp99_check_point):
-        """Sets the tp99_check_point of this CaseReportDetail.
+        r"""Sets the tp99_check_point of this CaseReportDetail.
 
         TP99检查点
 
@@ -5244,7 +5244,7 @@ class CaseReportDetail:
 
     @property
     def tp99_check_res(self):
-        """Gets the tp99_check_res of this CaseReportDetail.
+        r"""Gets the tp99_check_res of this CaseReportDetail.
 
         TP99检查结果
 
@@ -5255,7 +5255,7 @@ class CaseReportDetail:
 
     @tp99_check_res.setter
     def tp99_check_res(self, tp99_check_res):
-        """Sets the tp99_check_res of this CaseReportDetail.
+        r"""Sets the tp99_check_res of this CaseReportDetail.
 
         TP99检查结果
 
@@ -5266,7 +5266,7 @@ class CaseReportDetail:
 
     @property
     def tps(self):
-        """Gets the tps of this CaseReportDetail.
+        r"""Gets the tps of this CaseReportDetail.
 
         TPS
 
@@ -5277,7 +5277,7 @@ class CaseReportDetail:
 
     @tps.setter
     def tps(self, tps):
-        """Sets the tps of this CaseReportDetail.
+        r"""Sets the tps of this CaseReportDetail.
 
         TPS
 
@@ -5288,7 +5288,7 @@ class CaseReportDetail:
 
     @property
     def tps_check_point(self):
-        """Gets the tps_check_point of this CaseReportDetail.
+        r"""Gets the tps_check_point of this CaseReportDetail.
 
         TPS检查点
 
@@ -5299,7 +5299,7 @@ class CaseReportDetail:
 
     @tps_check_point.setter
     def tps_check_point(self, tps_check_point):
-        """Sets the tps_check_point of this CaseReportDetail.
+        r"""Sets the tps_check_point of this CaseReportDetail.
 
         TPS检查点
 
@@ -5310,7 +5310,7 @@ class CaseReportDetail:
 
     @property
     def tps_check_res(self):
-        """Gets the tps_check_res of this CaseReportDetail.
+        r"""Gets the tps_check_res of this CaseReportDetail.
 
         TPS检查结果
 
@@ -5321,7 +5321,7 @@ class CaseReportDetail:
 
     @tps_check_res.setter
     def tps_check_res(self, tps_check_res):
-        """Sets the tps_check_res of this CaseReportDetail.
+        r"""Sets the tps_check_res of this CaseReportDetail.
 
         TPS检查结果
 
@@ -5332,7 +5332,7 @@ class CaseReportDetail:
 
     @property
     def tran_tps(self):
-        """Gets the tran_tps of this CaseReportDetail.
+        r"""Gets the tran_tps of this CaseReportDetail.
 
         平均TPS
 
@@ -5343,7 +5343,7 @@ class CaseReportDetail:
 
     @tran_tps.setter
     def tran_tps(self, tran_tps):
-        """Sets the tran_tps of this CaseReportDetail.
+        r"""Sets the tran_tps of this CaseReportDetail.
 
         平均TPS
 
@@ -5354,7 +5354,7 @@ class CaseReportDetail:
 
     @property
     def tran_tps_check_point(self):
-        """Gets the tran_tps_check_point of this CaseReportDetail.
+        r"""Gets the tran_tps_check_point of this CaseReportDetail.
 
         平均TPS检查点
 
@@ -5365,7 +5365,7 @@ class CaseReportDetail:
 
     @tran_tps_check_point.setter
     def tran_tps_check_point(self, tran_tps_check_point):
-        """Sets the tran_tps_check_point of this CaseReportDetail.
+        r"""Sets the tran_tps_check_point of this CaseReportDetail.
 
         平均TPS检查点
 
@@ -5376,7 +5376,7 @@ class CaseReportDetail:
 
     @property
     def tran_tps_check_res(self):
-        """Gets the tran_tps_check_res of this CaseReportDetail.
+        r"""Gets the tran_tps_check_res of this CaseReportDetail.
 
         平均TPS检查结果
 
@@ -5387,7 +5387,7 @@ class CaseReportDetail:
 
     @tran_tps_check_res.setter
     def tran_tps_check_res(self, tran_tps_check_res):
-        """Sets the tran_tps_check_res of this CaseReportDetail.
+        r"""Sets the tran_tps_check_res of this CaseReportDetail.
 
         平均TPS检查结果
 
@@ -5398,7 +5398,7 @@ class CaseReportDetail:
 
     @property
     def transaction_id(self):
-        """Gets the transaction_id of this CaseReportDetail.
+        r"""Gets the transaction_id of this CaseReportDetail.
 
         事务ID
 
@@ -5409,7 +5409,7 @@ class CaseReportDetail:
 
     @transaction_id.setter
     def transaction_id(self, transaction_id):
-        """Sets the transaction_id of this CaseReportDetail.
+        r"""Sets the transaction_id of this CaseReportDetail.
 
         事务ID
 
@@ -5420,7 +5420,7 @@ class CaseReportDetail:
 
     @property
     def transaction_success(self):
-        """Gets the transaction_success of this CaseReportDetail.
+        r"""Gets the transaction_success of this CaseReportDetail.
 
         事务成功数
 
@@ -5431,7 +5431,7 @@ class CaseReportDetail:
 
     @transaction_success.setter
     def transaction_success(self, transaction_success):
-        """Sets the transaction_success of this CaseReportDetail.
+        r"""Sets the transaction_success of this CaseReportDetail.
 
         事务成功数
 
@@ -5442,7 +5442,7 @@ class CaseReportDetail:
 
     @property
     def transactions(self):
-        """Gets the transactions of this CaseReportDetail.
+        r"""Gets the transactions of this CaseReportDetail.
 
         事务数
 
@@ -5453,7 +5453,7 @@ class CaseReportDetail:
 
     @transactions.setter
     def transactions(self, transactions):
-        """Sets the transactions of this CaseReportDetail.
+        r"""Sets the transactions of this CaseReportDetail.
 
         事务数
 
@@ -5464,7 +5464,7 @@ class CaseReportDetail:
 
     @property
     def transactions_check_point(self):
-        """Gets the transactions_check_point of this CaseReportDetail.
+        r"""Gets the transactions_check_point of this CaseReportDetail.
 
         事务数检查点
 
@@ -5475,7 +5475,7 @@ class CaseReportDetail:
 
     @transactions_check_point.setter
     def transactions_check_point(self, transactions_check_point):
-        """Sets the transactions_check_point of this CaseReportDetail.
+        r"""Sets the transactions_check_point of this CaseReportDetail.
 
         事务数检查点
 
@@ -5486,7 +5486,7 @@ class CaseReportDetail:
 
     @property
     def transactions_check_res(self):
-        """Gets the transactions_check_res of this CaseReportDetail.
+        r"""Gets the transactions_check_res of this CaseReportDetail.
 
         事务数检查结果
 
@@ -5497,7 +5497,7 @@ class CaseReportDetail:
 
     @transactions_check_res.setter
     def transactions_check_res(self, transactions_check_res):
-        """Sets the transactions_check_res of this CaseReportDetail.
+        r"""Sets the transactions_check_res of this CaseReportDetail.
 
         事务数检查结果
 
@@ -5508,7 +5508,7 @@ class CaseReportDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this CaseReportDetail.
+        r"""Gets the update_time of this CaseReportDetail.
 
         更新时间
 
@@ -5519,7 +5519,7 @@ class CaseReportDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CaseReportDetail.
+        r"""Sets the update_time of this CaseReportDetail.
 
         更新时间
 
@@ -5530,7 +5530,7 @@ class CaseReportDetail:
 
     @property
     def url(self):
-        """Gets the url of this CaseReportDetail.
+        r"""Gets the url of this CaseReportDetail.
 
         aw的http url
 
@@ -5541,7 +5541,7 @@ class CaseReportDetail:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CaseReportDetail.
+        r"""Sets the url of this CaseReportDetail.
 
         aw的http url
 
@@ -5552,7 +5552,7 @@ class CaseReportDetail:
 
     @property
     def user_concur(self):
-        """Gets the user_concur of this CaseReportDetail.
+        r"""Gets the user_concur of this CaseReportDetail.
 
         反应实时vuser数据
 
@@ -5563,7 +5563,7 @@ class CaseReportDetail:
 
     @user_concur.setter
     def user_concur(self, user_concur):
-        """Sets the user_concur of this CaseReportDetail.
+        r"""Sets the user_concur of this CaseReportDetail.
 
         反应实时vuser数据
 
@@ -5574,7 +5574,7 @@ class CaseReportDetail:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this CaseReportDetail.
+        r"""Gets the version_uri of this CaseReportDetail.
 
         分支uri
 
@@ -5585,7 +5585,7 @@ class CaseReportDetail:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this CaseReportDetail.
+        r"""Sets the version_uri of this CaseReportDetail.
 
         分支uri
 

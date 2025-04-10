@@ -33,7 +33,7 @@ class ShowRecordingFileDownloadUrlsRequest:
     }
 
     def __init__(self, conf_uuid=None, offset=None, limit=None, x_authorization_type=None, x_site_id=None):
-        """ShowRecordingFileDownloadUrlsRequest
+        r"""ShowRecordingFileDownloadUrlsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ShowRecordingFileDownloadUrlsRequest:
 
     @property
     def conf_uuid(self):
-        """Gets the conf_uuid of this ShowRecordingFileDownloadUrlsRequest.
+        r"""Gets the conf_uuid of this ShowRecordingFileDownloadUrlsRequest.
 
         会议UUID(通过[[查询录制列表](https://support.huaweicloud.com/api-meeting/meeting_21_0048.html)](tag:hws)[[查询录制列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0048.html)](tag:hk)获取)。
 
@@ -81,7 +81,7 @@ class ShowRecordingFileDownloadUrlsRequest:
 
     @conf_uuid.setter
     def conf_uuid(self, conf_uuid):
-        """Sets the conf_uuid of this ShowRecordingFileDownloadUrlsRequest.
+        r"""Sets the conf_uuid of this ShowRecordingFileDownloadUrlsRequest.
 
         会议UUID(通过[[查询录制列表](https://support.huaweicloud.com/api-meeting/meeting_21_0048.html)](tag:hws)[[查询录制列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0048.html)](tag:hk)获取)。
 
@@ -92,7 +92,7 @@ class ShowRecordingFileDownloadUrlsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowRecordingFileDownloadUrlsRequest.
+        r"""Gets the offset of this ShowRecordingFileDownloadUrlsRequest.
 
         查询偏移量。默认为0。
 
@@ -103,7 +103,7 @@ class ShowRecordingFileDownloadUrlsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowRecordingFileDownloadUrlsRequest.
+        r"""Sets the offset of this ShowRecordingFileDownloadUrlsRequest.
 
         查询偏移量。默认为0。
 
@@ -114,7 +114,7 @@ class ShowRecordingFileDownloadUrlsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowRecordingFileDownloadUrlsRequest.
+        r"""Gets the limit of this ShowRecordingFileDownloadUrlsRequest.
 
         查询数量。默认是20，最大500条。
 
@@ -125,7 +125,7 @@ class ShowRecordingFileDownloadUrlsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowRecordingFileDownloadUrlsRequest.
+        r"""Sets the limit of this ShowRecordingFileDownloadUrlsRequest.
 
         查询数量。默认是20，最大500条。
 
@@ -136,7 +136,7 @@ class ShowRecordingFileDownloadUrlsRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this ShowRecordingFileDownloadUrlsRequest.
+        r"""Gets the x_authorization_type of this ShowRecordingFileDownloadUrlsRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -147,7 +147,7 @@ class ShowRecordingFileDownloadUrlsRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this ShowRecordingFileDownloadUrlsRequest.
+        r"""Sets the x_authorization_type of this ShowRecordingFileDownloadUrlsRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -158,7 +158,7 @@ class ShowRecordingFileDownloadUrlsRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this ShowRecordingFileDownloadUrlsRequest.
+        r"""Gets the x_site_id of this ShowRecordingFileDownloadUrlsRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -169,7 +169,7 @@ class ShowRecordingFileDownloadUrlsRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this ShowRecordingFileDownloadUrlsRequest.
+        r"""Sets the x_site_id of this ShowRecordingFileDownloadUrlsRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 

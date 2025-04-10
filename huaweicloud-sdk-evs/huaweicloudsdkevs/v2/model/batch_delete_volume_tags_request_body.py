@@ -27,7 +27,7 @@ class BatchDeleteVolumeTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchDeleteVolumeTagsRequestBody
+        r"""BatchDeleteVolumeTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDeleteVolumeTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchDeleteVolumeTagsRequestBody.
+        r"""Gets the action of this BatchDeleteVolumeTagsRequestBody.
 
         操作标识，当前支持的取值如下：  删除标签：delete
 
@@ -59,7 +59,7 @@ class BatchDeleteVolumeTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchDeleteVolumeTagsRequestBody.
+        r"""Sets the action of this BatchDeleteVolumeTagsRequestBody.
 
         操作标识，当前支持的取值如下：  删除标签：delete
 
@@ -70,7 +70,7 @@ class BatchDeleteVolumeTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchDeleteVolumeTagsRequestBody.
+        r"""Gets the tags of this BatchDeleteVolumeTagsRequestBody.
 
         标签列表。
 
@@ -81,7 +81,7 @@ class BatchDeleteVolumeTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchDeleteVolumeTagsRequestBody.
+        r"""Sets the tags of this BatchDeleteVolumeTagsRequestBody.
 
         标签列表。
 

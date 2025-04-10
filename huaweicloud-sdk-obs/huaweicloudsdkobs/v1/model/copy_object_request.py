@@ -77,7 +77,7 @@ class CopyObjectRequest:
     }
 
     def __init__(self, date=None, bucket_name=None, object_key=None, x_obs_acl=None, x_obs_grant_read=None, x_obs_grant_read_acp=None, x_obs_grant_write_acp=None, x_obs_grant_full_control=None, x_obs_copy_source=None, x_obs_metadata_directive=None, x_obs_copy_source_if_match=None, x_obs_copy_source_if_none_match=None, x_obs_copy_source_if_unmodified_since=None, x_obs_copy_source_if_modified_since=None, x_obs_storage_class=None, x_obs_persistent_headers=None, x_obs_website_redirect_location=None, x_obs_server_side_encryption=None, x_obs_server_side_encryption_kms_key_id=None, x_obs_server_side_encryption_customer_algorithm=None, x_obs_server_side_encryption_customer_key=None, x_obs_server_side_encryption_customer_key_md5=None, x_obs_copy_source_server_side_encryption_customer_algorithm=None, x_obs_copy_source_server_side_encryption_customer_key=None, x_obs_copy_source_server_side_encryption_customer_key_md5=None, success_action_redirect=None):
-        """CopyObjectRequest
+        r"""CopyObjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -217,7 +217,7 @@ class CopyObjectRequest:
 
     @property
     def date(self):
-        """Gets the date of this CopyObjectRequest.
+        r"""Gets the date of this CopyObjectRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -228,7 +228,7 @@ class CopyObjectRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this CopyObjectRequest.
+        r"""Sets the date of this CopyObjectRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -239,7 +239,7 @@ class CopyObjectRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this CopyObjectRequest.
+        r"""Gets the bucket_name of this CopyObjectRequest.
 
         Name of the requested bucket
 
@@ -250,7 +250,7 @@ class CopyObjectRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this CopyObjectRequest.
+        r"""Sets the bucket_name of this CopyObjectRequest.
 
         Name of the requested bucket
 
@@ -261,7 +261,7 @@ class CopyObjectRequest:
 
     @property
     def object_key(self):
-        """Gets the object_key of this CopyObjectRequest.
+        r"""Gets the object_key of this CopyObjectRequest.
 
         Name of the object copy.
 
@@ -272,7 +272,7 @@ class CopyObjectRequest:
 
     @object_key.setter
     def object_key(self, object_key):
-        """Sets the object_key of this CopyObjectRequest.
+        r"""Sets the object_key of this CopyObjectRequest.
 
         Name of the object copy.
 
@@ -283,7 +283,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_acl(self):
-        """Gets the x_obs_acl of this CopyObjectRequest.
+        r"""Gets the x_obs_acl of this CopyObjectRequest.
 
         When copying the object, you can add this header to configure access control policies for the object. The frequently used predefined policies include **private**, **public-read**, and **public-read-write**. For more information, see the ACL configuration using header fields in the ACLs section. Example: x-obs-acl: acl
 
@@ -294,7 +294,7 @@ class CopyObjectRequest:
 
     @x_obs_acl.setter
     def x_obs_acl(self, x_obs_acl):
-        """Sets the x_obs_acl of this CopyObjectRequest.
+        r"""Sets the x_obs_acl of this CopyObjectRequest.
 
         When copying the object, you can add this header to configure access control policies for the object. The frequently used predefined policies include **private**, **public-read**, and **public-read-write**. For more information, see the ACL configuration using header fields in the ACLs section. Example: x-obs-acl: acl
 
@@ -305,7 +305,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_grant_read(self):
-        """Gets the x_obs_grant_read of this CopyObjectRequest.
+        r"""Gets the x_obs_grant_read of this CopyObjectRequest.
 
         When creating an object, you can use this header to grant all users in a domain the permissions to read the object and obtain object metadata.
 
@@ -316,7 +316,7 @@ class CopyObjectRequest:
 
     @x_obs_grant_read.setter
     def x_obs_grant_read(self, x_obs_grant_read):
-        """Sets the x_obs_grant_read of this CopyObjectRequest.
+        r"""Sets the x_obs_grant_read of this CopyObjectRequest.
 
         When creating an object, you can use this header to grant all users in a domain the permissions to read the object and obtain object metadata.
 
@@ -327,7 +327,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_grant_read_acp(self):
-        """Gets the x_obs_grant_read_acp of this CopyObjectRequest.
+        r"""Gets the x_obs_grant_read_acp of this CopyObjectRequest.
 
         When creating an object, you can use this header to grant all users in a domain the permissions to obtain the object ACL.
 
@@ -338,7 +338,7 @@ class CopyObjectRequest:
 
     @x_obs_grant_read_acp.setter
     def x_obs_grant_read_acp(self, x_obs_grant_read_acp):
-        """Sets the x_obs_grant_read_acp of this CopyObjectRequest.
+        r"""Sets the x_obs_grant_read_acp of this CopyObjectRequest.
 
         When creating an object, you can use this header to grant all users in a domain the permissions to obtain the object ACL.
 
@@ -349,7 +349,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_grant_write_acp(self):
-        """Gets the x_obs_grant_write_acp of this CopyObjectRequest.
+        r"""Gets the x_obs_grant_write_acp of this CopyObjectRequest.
 
         When creating an object, you can use this header to grant all users in a domain the permissions to write the object ACL.
 
@@ -360,7 +360,7 @@ class CopyObjectRequest:
 
     @x_obs_grant_write_acp.setter
     def x_obs_grant_write_acp(self, x_obs_grant_write_acp):
-        """Sets the x_obs_grant_write_acp of this CopyObjectRequest.
+        r"""Sets the x_obs_grant_write_acp of this CopyObjectRequest.
 
         When creating an object, you can use this header to grant all users in a domain the permissions to write the object ACL.
 
@@ -371,7 +371,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_grant_full_control(self):
-        """Gets the x_obs_grant_full_control of this CopyObjectRequest.
+        r"""Gets the x_obs_grant_full_control of this CopyObjectRequest.
 
         When creating an object, you can use this header to grant all users in a domain the permissions to read the object, to obtain the object metadata and ACL, and to write the object ACL.
 
@@ -382,7 +382,7 @@ class CopyObjectRequest:
 
     @x_obs_grant_full_control.setter
     def x_obs_grant_full_control(self, x_obs_grant_full_control):
-        """Sets the x_obs_grant_full_control of this CopyObjectRequest.
+        r"""Sets the x_obs_grant_full_control of this CopyObjectRequest.
 
         When creating an object, you can use this header to grant all users in a domain the permissions to read the object, to obtain the object metadata and ACL, and to write the object ACL.
 
@@ -393,7 +393,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_copy_source(self):
-        """Gets the x_obs_copy_source of this CopyObjectRequest.
+        r"""Gets the x_obs_copy_source of this CopyObjectRequest.
 
         Indicates names of the source bucket and object in a copy request. If the source object has multiple versions, use the **versionId** parameter to specify an object version. Restriction: URL encoding is required for handling Chinese characters. Example: x-obs-copy-source: /source_bucket/sourceObject
 
@@ -404,7 +404,7 @@ class CopyObjectRequest:
 
     @x_obs_copy_source.setter
     def x_obs_copy_source(self, x_obs_copy_source):
-        """Sets the x_obs_copy_source of this CopyObjectRequest.
+        r"""Sets the x_obs_copy_source of this CopyObjectRequest.
 
         Indicates names of the source bucket and object in a copy request. If the source object has multiple versions, use the **versionId** parameter to specify an object version. Restriction: URL encoding is required for handling Chinese characters. Example: x-obs-copy-source: /source_bucket/sourceObject
 
@@ -415,7 +415,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_metadata_directive(self):
-        """Gets the x_obs_metadata_directive of this CopyObjectRequest.
+        r"""Gets the x_obs_metadata_directive of this CopyObjectRequest.
 
         Indicates whether the metadata of the target object is copied from the source object or replaced with the metadata provided in the request.  Valid values: **COPY** and **REPLACE**  Default value: **COPY**  Example: x-obs-metadata-directive: metadata_directive  Restriction: Values other than **COPY** or **REPLACE** result in an immediate 400-based error response. If you need to modify the metadata (for both the source and target objects), this parameter must be set to **REPLACE**, otherwise, the request is invalid and the server returns a 400 error. This parameter cannot change an encrypted object to a non-encrypted one (for both the source and target objects). If you use this parameter to change the encrypted object, OBS returns a 400 error.
 
@@ -426,7 +426,7 @@ class CopyObjectRequest:
 
     @x_obs_metadata_directive.setter
     def x_obs_metadata_directive(self, x_obs_metadata_directive):
-        """Sets the x_obs_metadata_directive of this CopyObjectRequest.
+        r"""Sets the x_obs_metadata_directive of this CopyObjectRequest.
 
         Indicates whether the metadata of the target object is copied from the source object or replaced with the metadata provided in the request.  Valid values: **COPY** and **REPLACE**  Default value: **COPY**  Example: x-obs-metadata-directive: metadata_directive  Restriction: Values other than **COPY** or **REPLACE** result in an immediate 400-based error response. If you need to modify the metadata (for both the source and target objects), this parameter must be set to **REPLACE**, otherwise, the request is invalid and the server returns a 400 error. This parameter cannot change an encrypted object to a non-encrypted one (for both the source and target objects). If you use this parameter to change the encrypted object, OBS returns a 400 error.
 
@@ -437,7 +437,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_copy_source_if_match(self):
-        """Gets the x_obs_copy_source_if_match of this CopyObjectRequest.
+        r"""Gets the x_obs_copy_source_if_match of this CopyObjectRequest.
 
         Copies the source object only if its ETag matches the one specified by this header. Otherwise, a 412 HTTP status code error (failed precondition) is returned.  Example: x-obs-copy-source-if-match: etag  Restriction: This parameter can be used with **x-obs-copy-source-if-unmodified-since** but not other conditional copy parameters.
 
@@ -448,7 +448,7 @@ class CopyObjectRequest:
 
     @x_obs_copy_source_if_match.setter
     def x_obs_copy_source_if_match(self, x_obs_copy_source_if_match):
-        """Sets the x_obs_copy_source_if_match of this CopyObjectRequest.
+        r"""Sets the x_obs_copy_source_if_match of this CopyObjectRequest.
 
         Copies the source object only if its ETag matches the one specified by this header. Otherwise, a 412 HTTP status code error (failed precondition) is returned.  Example: x-obs-copy-source-if-match: etag  Restriction: This parameter can be used with **x-obs-copy-source-if-unmodified-since** but not other conditional copy parameters.
 
@@ -459,7 +459,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_copy_source_if_none_match(self):
-        """Gets the x_obs_copy_source_if_none_match of this CopyObjectRequest.
+        r"""Gets the x_obs_copy_source_if_none_match of this CopyObjectRequest.
 
         Copies the object only if its ETag does not match the one specified in this header. Otherwise, a 412 HTTP status code error (failed precondition) is returned.  Example: x-obs-copy-source-if-none-match: etag  Restriction: This parameter can be used with **x-obs-copy-source-if-modified-since** but not other conditional copy parameters.
 
@@ -470,7 +470,7 @@ class CopyObjectRequest:
 
     @x_obs_copy_source_if_none_match.setter
     def x_obs_copy_source_if_none_match(self, x_obs_copy_source_if_none_match):
-        """Sets the x_obs_copy_source_if_none_match of this CopyObjectRequest.
+        r"""Sets the x_obs_copy_source_if_none_match of this CopyObjectRequest.
 
         Copies the object only if its ETag does not match the one specified in this header. Otherwise, a 412 HTTP status code error (failed precondition) is returned.  Example: x-obs-copy-source-if-none-match: etag  Restriction: This parameter can be used with **x-obs-copy-source-if-modified-since** but not other conditional copy parameters.
 
@@ -481,7 +481,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_copy_source_if_unmodified_since(self):
-        """Gets the x_obs_copy_source_if_unmodified_since of this CopyObjectRequest.
+        r"""Gets the x_obs_copy_source_if_unmodified_since of this CopyObjectRequest.
 
         Copies the source object only if it has not been modified since the time specified by this header. Otherwise, a 412 HTTP status code error (failed precondition) is returned. This header can be used with **x-obs-copy-source-if-match**, but cannot be used with other conditional copy headers.  Type: HTTP time string complying with the format specified at **http://www.ietf.org/rfc/rfc2616.txt**  Example: x-obs-copy-source-if-unmodified -since: time-sta
 
@@ -492,7 +492,7 @@ class CopyObjectRequest:
 
     @x_obs_copy_source_if_unmodified_since.setter
     def x_obs_copy_source_if_unmodified_since(self, x_obs_copy_source_if_unmodified_since):
-        """Sets the x_obs_copy_source_if_unmodified_since of this CopyObjectRequest.
+        r"""Sets the x_obs_copy_source_if_unmodified_since of this CopyObjectRequest.
 
         Copies the source object only if it has not been modified since the time specified by this header. Otherwise, a 412 HTTP status code error (failed precondition) is returned. This header can be used with **x-obs-copy-source-if-match**, but cannot be used with other conditional copy headers.  Type: HTTP time string complying with the format specified at **http://www.ietf.org/rfc/rfc2616.txt**  Example: x-obs-copy-source-if-unmodified -since: time-sta
 
@@ -503,7 +503,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_copy_source_if_modified_since(self):
-        """Gets the x_obs_copy_source_if_modified_since of this CopyObjectRequest.
+        r"""Gets the x_obs_copy_source_if_modified_since of this CopyObjectRequest.
 
         Copies the source object only if it has been modified since the time specified by this header. Otherwise, a 412 HTTP status code error (failed precondition) is returned. This header can be used with **x-obs-copy-source-if-none-match**, but cannot be used with other conditional copy headers.  Type: HTTP time string complying with the format specified at **http://www.ietf.org/rfc/rfc2616.txt**  Example: x-obs-copy-source-if-modified-since: time-sta
 
@@ -514,7 +514,7 @@ class CopyObjectRequest:
 
     @x_obs_copy_source_if_modified_since.setter
     def x_obs_copy_source_if_modified_since(self, x_obs_copy_source_if_modified_since):
-        """Sets the x_obs_copy_source_if_modified_since of this CopyObjectRequest.
+        r"""Sets the x_obs_copy_source_if_modified_since of this CopyObjectRequest.
 
         Copies the source object only if it has been modified since the time specified by this header. Otherwise, a 412 HTTP status code error (failed precondition) is returned. This header can be used with **x-obs-copy-source-if-none-match**, but cannot be used with other conditional copy headers.  Type: HTTP time string complying with the format specified at **http://www.ietf.org/rfc/rfc2616.txt**  Example: x-obs-copy-source-if-modified-since: time-sta
 
@@ -525,7 +525,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_storage_class(self):
-        """Gets the x_obs_storage_class of this CopyObjectRequest.
+        r"""Gets the x_obs_storage_class of this CopyObjectRequest.
 
         When copying an object, you can use this header to specify a storage class for the target object. If you do not have this header configured, the target object inherits the default storage class of the bucket.  Type: string  Note: There are three storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD), so the value can be **STANDARD**, **WARM**, or **COLD**. The value is case sensitive.  Example: x-obs-storage-class: STANDARD
 
@@ -536,7 +536,7 @@ class CopyObjectRequest:
 
     @x_obs_storage_class.setter
     def x_obs_storage_class(self, x_obs_storage_class):
-        """Sets the x_obs_storage_class of this CopyObjectRequest.
+        r"""Sets the x_obs_storage_class of this CopyObjectRequest.
 
         When copying an object, you can use this header to specify a storage class for the target object. If you do not have this header configured, the target object inherits the default storage class of the bucket.  Type: string  Note: There are three storage classes: Standard (STANDARD), Infrequent Access (WARM), and Archive (COLD), so the value can be **STANDARD**, **WARM**, or **COLD**. The value is case sensitive.  Example: x-obs-storage-class: STANDARD
 
@@ -547,7 +547,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_persistent_headers(self):
-        """Gets the x_obs_persistent_headers of this CopyObjectRequest.
+        r"""Gets the x_obs_persistent_headers of this CopyObjectRequest.
 
         When copying an object, you can add the **x-obs-persistent-headers** header in an HTTP request to customize one or more response headers. When you retrieve the target object or query the object metadata, the custom headers will be returned in the response message.  Type: string  Format: **x-obs-persistent-headers: ****key1:base64_encode(***value1***),****key2:base64_encode(***value2***)...**  Note: Items, such as **key1** and **key2**, are user-defined headers. If they contain non-ASCII or unrecognizable characters, they can be encoded using URL or Base64. The server processes these headers as strings, but does not decode them. Items, such as *value1* and *value2* are the values of the corresponding headers. **base64_encode** indicates that the value is encoded using Base64. A user-defined header and its Base64-encoded value are connected using a colon (:) to form a key-value pair. All key-value pairs are separated with a comma (,) and are placed in the **x-obs-persistent-headers** header. The server then decodes the uploaded value.  Example: x-obs-persistent-headers: key1:dmFsdWUx,key2:dmFsdWUy  When you download the target object or obtain the object metadata, headers **key1:***value1* and **key2:***value2* will be returned.  Restrictions:  + Response headers customized in this way cannot be prefixed with **x-obs-**. For example, you should use **key1**, instead of **x-obs-key1**.  + Standard HTTP headers, such as **host**, **content-md5**, **origin**, **range**, and **Content-Disposition**, cannot be specified as custom headers.  + The total length of this header and the custom metadata cannot exceed 8 KB.  + If the same keys are transferred, values are separated with commas (,) and then returned in one key.  + If the source object already has custom response headers, such response headers will not be copied to the target object.
 
@@ -558,7 +558,7 @@ class CopyObjectRequest:
 
     @x_obs_persistent_headers.setter
     def x_obs_persistent_headers(self, x_obs_persistent_headers):
-        """Sets the x_obs_persistent_headers of this CopyObjectRequest.
+        r"""Sets the x_obs_persistent_headers of this CopyObjectRequest.
 
         When copying an object, you can add the **x-obs-persistent-headers** header in an HTTP request to customize one or more response headers. When you retrieve the target object or query the object metadata, the custom headers will be returned in the response message.  Type: string  Format: **x-obs-persistent-headers: ****key1:base64_encode(***value1***),****key2:base64_encode(***value2***)...**  Note: Items, such as **key1** and **key2**, are user-defined headers. If they contain non-ASCII or unrecognizable characters, they can be encoded using URL or Base64. The server processes these headers as strings, but does not decode them. Items, such as *value1* and *value2* are the values of the corresponding headers. **base64_encode** indicates that the value is encoded using Base64. A user-defined header and its Base64-encoded value are connected using a colon (:) to form a key-value pair. All key-value pairs are separated with a comma (,) and are placed in the **x-obs-persistent-headers** header. The server then decodes the uploaded value.  Example: x-obs-persistent-headers: key1:dmFsdWUx,key2:dmFsdWUy  When you download the target object or obtain the object metadata, headers **key1:***value1* and **key2:***value2* will be returned.  Restrictions:  + Response headers customized in this way cannot be prefixed with **x-obs-**. For example, you should use **key1**, instead of **x-obs-key1**.  + Standard HTTP headers, such as **host**, **content-md5**, **origin**, **range**, and **Content-Disposition**, cannot be specified as custom headers.  + The total length of this header and the custom metadata cannot exceed 8 KB.  + If the same keys are transferred, values are separated with commas (,) and then returned in one key.  + If the source object already has custom response headers, such response headers will not be copied to the target object.
 
@@ -569,7 +569,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_website_redirect_location(self):
-        """Gets the x_obs_website_redirect_location of this CopyObjectRequest.
+        r"""Gets the x_obs_website_redirect_location of this CopyObjectRequest.
 
         If static website hosting has been configured for a bucket, you can configure this parameter to redirect requests for an object in this bucket to another object in the same bucket or to an external URL. OBS stores the value of this header in the object metadata.  Type: string  Default value: none  Restriction: The value must start with a slash (/), **http://**, or **https://**, with a length of no more than 2 KB.
 
@@ -580,7 +580,7 @@ class CopyObjectRequest:
 
     @x_obs_website_redirect_location.setter
     def x_obs_website_redirect_location(self, x_obs_website_redirect_location):
-        """Sets the x_obs_website_redirect_location of this CopyObjectRequest.
+        r"""Sets the x_obs_website_redirect_location of this CopyObjectRequest.
 
         If static website hosting has been configured for a bucket, you can configure this parameter to redirect requests for an object in this bucket to another object in the same bucket or to an external URL. OBS stores the value of this header in the object metadata.  Type: string  Default value: none  Restriction: The value must start with a slash (/), **http://**, or **https://**, with a length of no more than 2 KB.
 
@@ -591,7 +591,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_server_side_encryption(self):
-        """Gets the x_obs_server_side_encryption of this CopyObjectRequest.
+        r"""Gets the x_obs_server_side_encryption of this CopyObjectRequest.
 
         Indicates that SSE-KMS is used. The target object is encrypted using SSE-KMS.  Type: string  Example: x-obs-server-side-encryption: kms  This header is required when SSE-KMS is used.
 
@@ -602,7 +602,7 @@ class CopyObjectRequest:
 
     @x_obs_server_side_encryption.setter
     def x_obs_server_side_encryption(self, x_obs_server_side_encryption):
-        """Sets the x_obs_server_side_encryption of this CopyObjectRequest.
+        r"""Sets the x_obs_server_side_encryption of this CopyObjectRequest.
 
         Indicates that SSE-KMS is used. The target object is encrypted using SSE-KMS.  Type: string  Example: x-obs-server-side-encryption: kms  This header is required when SSE-KMS is used.
 
@@ -613,7 +613,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_server_side_encryption_kms_key_id(self):
-        """Gets the x_obs_server_side_encryption_kms_key_id of this CopyObjectRequest.
+        r"""Gets the x_obs_server_side_encryption_kms_key_id of this CopyObjectRequest.
 
         The master key ID used to encrypt the target object when SSE-KMS is used. If the customer does not provide this ID, the default master key ID will be used.  Type: string  Supported formats:  + *regionID***:***domainID***:key/***key_id*     + *key_id*.  *regionID* is the ID of the region to which the key belongs. *domainID* is the account ID of the tenant to which the key belongs. *key_id* is the key ID created on DEW.  Examples:  + x-obs-server-side-encryption-kms-key-id:cn-north-4:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0   + x-obs-server-side-encryption-kms-key-id:4f1cd4de-ab64-4807-920a-47fc42e7f0d0
 
@@ -624,7 +624,7 @@ class CopyObjectRequest:
 
     @x_obs_server_side_encryption_kms_key_id.setter
     def x_obs_server_side_encryption_kms_key_id(self, x_obs_server_side_encryption_kms_key_id):
-        """Sets the x_obs_server_side_encryption_kms_key_id of this CopyObjectRequest.
+        r"""Sets the x_obs_server_side_encryption_kms_key_id of this CopyObjectRequest.
 
         The master key ID used to encrypt the target object when SSE-KMS is used. If the customer does not provide this ID, the default master key ID will be used.  Type: string  Supported formats:  + *regionID***:***domainID***:key/***key_id*     + *key_id*.  *regionID* is the ID of the region to which the key belongs. *domainID* is the account ID of the tenant to which the key belongs. *key_id* is the key ID created on DEW.  Examples:  + x-obs-server-side-encryption-kms-key-id:cn-north-4:domainiddomainiddomainiddoma0001:key/4f1cd4de-ab64-4807-920a-47fc42e7f0d0   + x-obs-server-side-encryption-kms-key-id:4f1cd4de-ab64-4807-920a-47fc42e7f0d0
 
@@ -635,7 +635,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_server_side_encryption_customer_algorithm(self):
-        """Gets the x_obs_server_side_encryption_customer_algorithm of this CopyObjectRequest.
+        r"""Gets the x_obs_server_side_encryption_customer_algorithm of this CopyObjectRequest.
 
         The algorithm used to encrypt a target object when SSE-C is used.  Type: string  Example: x-obs-server-side-encryption-customer-algorithm: AES256  Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.  This header is required when SSE-C is used.
 
@@ -646,7 +646,7 @@ class CopyObjectRequest:
 
     @x_obs_server_side_encryption_customer_algorithm.setter
     def x_obs_server_side_encryption_customer_algorithm(self, x_obs_server_side_encryption_customer_algorithm):
-        """Sets the x_obs_server_side_encryption_customer_algorithm of this CopyObjectRequest.
+        r"""Sets the x_obs_server_side_encryption_customer_algorithm of this CopyObjectRequest.
 
         The algorithm used to encrypt a target object when SSE-C is used.  Type: string  Example: x-obs-server-side-encryption-customer-algorithm: AES256  Restriction: This header must be used together with **x-obs-server-side-encryption-customer-key** and **x-obs-server-side-encryption-customer-key-MD5**.  This header is required when SSE-C is used.
 
@@ -657,7 +657,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_server_side_encryption_customer_key(self):
-        """Gets the x_obs_server_side_encryption_customer_key of this CopyObjectRequest.
+        r"""Gets the x_obs_server_side_encryption_customer_key of this CopyObjectRequest.
 
         The key used to encrypt a target object when SSE-C is used.  Type: string  Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=  Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.  This header is required when SSE-C is used.
 
@@ -668,7 +668,7 @@ class CopyObjectRequest:
 
     @x_obs_server_side_encryption_customer_key.setter
     def x_obs_server_side_encryption_customer_key(self, x_obs_server_side_encryption_customer_key):
-        """Sets the x_obs_server_side_encryption_customer_key of this CopyObjectRequest.
+        r"""Sets the x_obs_server_side_encryption_customer_key of this CopyObjectRequest.
 
         The key used to encrypt a target object when SSE-C is used.  Type: string  Example: x-obs-server-side-encryption-customer-key:K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=  Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key-MD5**.  This header is required when SSE-C is used.
 
@@ -679,7 +679,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_server_side_encryption_customer_key_md5(self):
-        """Gets the x_obs_server_side_encryption_customer_key_md5 of this CopyObjectRequest.
+        r"""Gets the x_obs_server_side_encryption_customer_key_md5 of this CopyObjectRequest.
 
         The MD5 value of a key used to encrypt a target object when SSE-C is used. An MD5 value is used to ensure that there is no error during the key transmission.  Type: string  Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==  Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.  This header is required when SSE-C is used.
 
@@ -690,7 +690,7 @@ class CopyObjectRequest:
 
     @x_obs_server_side_encryption_customer_key_md5.setter
     def x_obs_server_side_encryption_customer_key_md5(self, x_obs_server_side_encryption_customer_key_md5):
-        """Sets the x_obs_server_side_encryption_customer_key_md5 of this CopyObjectRequest.
+        r"""Sets the x_obs_server_side_encryption_customer_key_md5 of this CopyObjectRequest.
 
         The MD5 value of a key used to encrypt a target object when SSE-C is used. An MD5 value is used to ensure that there is no error during the key transmission.  Type: string  Example: x-obs-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==  Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-server-side-encryption-customer-algorithm** and **x-obs-server-side-encryption-customer-key**.  This header is required when SSE-C is used.
 
@@ -701,7 +701,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_copy_source_server_side_encryption_customer_algorithm(self):
-        """Gets the x_obs_copy_source_server_side_encryption_customer_algorithm of this CopyObjectRequest.
+        r"""Gets the x_obs_copy_source_server_side_encryption_customer_algorithm of this CopyObjectRequest.
 
         The algorithm used to decrypt the source object when SSE-C is used.  Type: string  Example: x-obs-copy-source-server-side-encryption-customer-algorithm: AES256  Restriction: This header must be used together with **x-obs-copy-source-server-side-encryption-customer-key** and **x-obs-copy-source-server-side-encryption-customer-key-MD5**.  This header is required when SSE-C is used during the copy of the source object.
 
@@ -712,7 +712,7 @@ class CopyObjectRequest:
 
     @x_obs_copy_source_server_side_encryption_customer_algorithm.setter
     def x_obs_copy_source_server_side_encryption_customer_algorithm(self, x_obs_copy_source_server_side_encryption_customer_algorithm):
-        """Sets the x_obs_copy_source_server_side_encryption_customer_algorithm of this CopyObjectRequest.
+        r"""Sets the x_obs_copy_source_server_side_encryption_customer_algorithm of this CopyObjectRequest.
 
         The algorithm used to decrypt the source object when SSE-C is used.  Type: string  Example: x-obs-copy-source-server-side-encryption-customer-algorithm: AES256  Restriction: This header must be used together with **x-obs-copy-source-server-side-encryption-customer-key** and **x-obs-copy-source-server-side-encryption-customer-key-MD5**.  This header is required when SSE-C is used during the copy of the source object.
 
@@ -723,7 +723,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_copy_source_server_side_encryption_customer_key(self):
-        """Gets the x_obs_copy_source_server_side_encryption_customer_key of this CopyObjectRequest.
+        r"""Gets the x_obs_copy_source_server_side_encryption_customer_key of this CopyObjectRequest.
 
         The key used to decrypt the source object when SSE-C is used. This header decrypts the source object.  Type: string  Example: x-obs-copy-source-server-side-encryption-customer-key: K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=  Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-copy-source-server-side-encryption-customer-algorithm** and **x-obs-copy-source-server-side-encryption-customer-key-MD5**.  This header is required when SSE-C is used during the copy of the source object.
 
@@ -734,7 +734,7 @@ class CopyObjectRequest:
 
     @x_obs_copy_source_server_side_encryption_customer_key.setter
     def x_obs_copy_source_server_side_encryption_customer_key(self, x_obs_copy_source_server_side_encryption_customer_key):
-        """Sets the x_obs_copy_source_server_side_encryption_customer_key of this CopyObjectRequest.
+        r"""Sets the x_obs_copy_source_server_side_encryption_customer_key of this CopyObjectRequest.
 
         The key used to decrypt the source object when SSE-C is used. This header decrypts the source object.  Type: string  Example: x-obs-copy-source-server-side-encryption-customer-key: K7QkYpBkM5+hca27fsNkUnNVaobncnLht/rCB2o/9Cw=  Restriction: This header is a Base64-encoded 256-bit key and must be used together with **x-obs-copy-source-server-side-encryption-customer-algorithm** and **x-obs-copy-source-server-side-encryption-customer-key-MD5**.  This header is required when SSE-C is used during the copy of the source object.
 
@@ -745,7 +745,7 @@ class CopyObjectRequest:
 
     @property
     def x_obs_copy_source_server_side_encryption_customer_key_md5(self):
-        """Gets the x_obs_copy_source_server_side_encryption_customer_key_md5 of this CopyObjectRequest.
+        r"""Gets the x_obs_copy_source_server_side_encryption_customer_key_md5 of this CopyObjectRequest.
 
         The MD5 value of the key used to decrypt the source object when SSE-C is used. An MD5 value is used to ensure that there is no error during the key transmission.  Type: string  Example: x-obs-copy-source-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==  Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-copy-source-server-side-encryption-customer-algorithm** and **x-obs-copy-source-server-side-encryption-customer-key**.  This header is required when SSE-C is used during the copy of the source object.
 
@@ -756,7 +756,7 @@ class CopyObjectRequest:
 
     @x_obs_copy_source_server_side_encryption_customer_key_md5.setter
     def x_obs_copy_source_server_side_encryption_customer_key_md5(self, x_obs_copy_source_server_side_encryption_customer_key_md5):
-        """Sets the x_obs_copy_source_server_side_encryption_customer_key_md5 of this CopyObjectRequest.
+        r"""Sets the x_obs_copy_source_server_side_encryption_customer_key_md5 of this CopyObjectRequest.
 
         The MD5 value of the key used to decrypt the source object when SSE-C is used. An MD5 value is used to ensure that there is no error during the key transmission.  Type: string  Example: x-obs-copy-source-server-side-encryption-customer-key-MD5:4XvB3tbNTN+tIEVa0/fGaQ==  Restriction: This header is a Base64-encoded 128-bit MD5 value and must be used together with **x-obs-copy-source-server-side-encryption-customer-algorithm** and **x-obs-copy-source-server-side-encryption-customer-key**.  This header is required when SSE-C is used during the copy of the source object.
 
@@ -767,7 +767,7 @@ class CopyObjectRequest:
 
     @property
     def success_action_redirect(self):
-        """Gets the success_action_redirect of this CopyObjectRequest.
+        r"""Gets the success_action_redirect of this CopyObjectRequest.
 
         The address (a URL) which a successfully responded request is redirected to.  If this parameter value is valid and the request succeeds, OBS returns status code 303. The **Location** header consists of **success_action_redirect** as well as the bucket name, object name, and object ETag. If this parameter is invalid, OBS ignores this parameter and returns status code 204. In such case, the **Location** header is the object address. Type: string
 
@@ -778,7 +778,7 @@ class CopyObjectRequest:
 
     @success_action_redirect.setter
     def success_action_redirect(self, success_action_redirect):
-        """Sets the success_action_redirect of this CopyObjectRequest.
+        r"""Sets the success_action_redirect of this CopyObjectRequest.
 
         The address (a URL) which a successfully responded request is redirected to.  If this parameter value is valid and the request succeeds, OBS returns status code 303. The **Location** header consists of **success_action_redirect** as well as the bucket name, object name, and object ETag. If this parameter is invalid, OBS ignores this parameter and returns status code 204. In such case, the **Location** header is the object address. Type: string
 

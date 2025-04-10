@@ -65,7 +65,7 @@ class ShowEventItems:
     }
 
     def __init__(self, time=None, policyid=None, sip=None, host=None, url=None, attack=None, rule=None, action=None, cookie=None, headers=None, host_id=None, id=None, payload=None, payload_location=None, region=None, process_time=None, request_line=None, response_size=None, response_time=None, status=None, request_body=None):
-        """ShowEventItems
+        r"""ShowEventItems
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class ShowEventItems:
 
     @property
     def time(self):
-        """Gets the time of this ShowEventItems.
+        r"""Gets the time of this ShowEventItems.
 
         攻击发生时的时间戳（毫秒）
 
@@ -194,7 +194,7 @@ class ShowEventItems:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ShowEventItems.
+        r"""Sets the time of this ShowEventItems.
 
         攻击发生时的时间戳（毫秒）
 
@@ -205,7 +205,7 @@ class ShowEventItems:
 
     @property
     def policyid(self):
-        """Gets the policyid of this ShowEventItems.
+        r"""Gets the policyid of this ShowEventItems.
 
         策略id
 
@@ -216,7 +216,7 @@ class ShowEventItems:
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this ShowEventItems.
+        r"""Sets the policyid of this ShowEventItems.
 
         策略id
 
@@ -227,7 +227,7 @@ class ShowEventItems:
 
     @property
     def sip(self):
-        """Gets the sip of this ShowEventItems.
+        r"""Gets the sip of this ShowEventItems.
 
         源ip，Web访问者的IP地址（攻击者IP地址）
 
@@ -238,7 +238,7 @@ class ShowEventItems:
 
     @sip.setter
     def sip(self, sip):
-        """Sets the sip of this ShowEventItems.
+        r"""Sets the sip of this ShowEventItems.
 
         源ip，Web访问者的IP地址（攻击者IP地址）
 
@@ -249,7 +249,7 @@ class ShowEventItems:
 
     @property
     def host(self):
-        """Gets the host of this ShowEventItems.
+        r"""Gets the host of this ShowEventItems.
 
         域名
 
@@ -260,7 +260,7 @@ class ShowEventItems:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ShowEventItems.
+        r"""Sets the host of this ShowEventItems.
 
         域名
 
@@ -271,7 +271,7 @@ class ShowEventItems:
 
     @property
     def url(self):
-        """Gets the url of this ShowEventItems.
+        r"""Gets the url of this ShowEventItems.
 
         攻击的url链接
 
@@ -282,7 +282,7 @@ class ShowEventItems:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowEventItems.
+        r"""Sets the url of this ShowEventItems.
 
         攻击的url链接
 
@@ -293,7 +293,7 @@ class ShowEventItems:
 
     @property
     def attack(self):
-        """Gets the attack of this ShowEventItems.
+        r"""Gets the attack of this ShowEventItems.
 
         攻击类型
 
@@ -304,7 +304,7 @@ class ShowEventItems:
 
     @attack.setter
     def attack(self, attack):
-        """Sets the attack of this ShowEventItems.
+        r"""Sets the attack of this ShowEventItems.
 
         攻击类型
 
@@ -315,7 +315,7 @@ class ShowEventItems:
 
     @property
     def rule(self):
-        """Gets the rule of this ShowEventItems.
+        r"""Gets the rule of this ShowEventItems.
 
         命中的规则id
 
@@ -326,7 +326,7 @@ class ShowEventItems:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this ShowEventItems.
+        r"""Sets the rule of this ShowEventItems.
 
         命中的规则id
 
@@ -337,7 +337,7 @@ class ShowEventItems:
 
     @property
     def action(self):
-        """Gets the action of this ShowEventItems.
+        r"""Gets the action of this ShowEventItems.
 
         防护动作
 
@@ -348,7 +348,7 @@ class ShowEventItems:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ShowEventItems.
+        r"""Sets the action of this ShowEventItems.
 
         防护动作
 
@@ -359,7 +359,7 @@ class ShowEventItems:
 
     @property
     def cookie(self):
-        """Gets the cookie of this ShowEventItems.
+        r"""Gets the cookie of this ShowEventItems.
 
         攻击请求的cookie
 
@@ -370,7 +370,7 @@ class ShowEventItems:
 
     @cookie.setter
     def cookie(self, cookie):
-        """Sets the cookie of this ShowEventItems.
+        r"""Sets the cookie of this ShowEventItems.
 
         攻击请求的cookie
 
@@ -381,7 +381,7 @@ class ShowEventItems:
 
     @property
     def headers(self):
-        """Gets the headers of this ShowEventItems.
+        r"""Gets the headers of this ShowEventItems.
 
         攻击请求的headers
 
@@ -392,7 +392,7 @@ class ShowEventItems:
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this ShowEventItems.
+        r"""Sets the headers of this ShowEventItems.
 
         攻击请求的headers
 
@@ -403,7 +403,7 @@ class ShowEventItems:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ShowEventItems.
+        r"""Gets the host_id of this ShowEventItems.
 
         被攻击的域名id
 
@@ -414,7 +414,7 @@ class ShowEventItems:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ShowEventItems.
+        r"""Sets the host_id of this ShowEventItems.
 
         被攻击的域名id
 
@@ -425,7 +425,7 @@ class ShowEventItems:
 
     @property
     def id(self):
-        """Gets the id of this ShowEventItems.
+        r"""Gets the id of this ShowEventItems.
 
         防护事件id
 
@@ -436,7 +436,7 @@ class ShowEventItems:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowEventItems.
+        r"""Sets the id of this ShowEventItems.
 
         防护事件id
 
@@ -447,7 +447,7 @@ class ShowEventItems:
 
     @property
     def payload(self):
-        """Gets the payload of this ShowEventItems.
+        r"""Gets the payload of this ShowEventItems.
 
         恶意负载
 
@@ -458,7 +458,7 @@ class ShowEventItems:
 
     @payload.setter
     def payload(self, payload):
-        """Sets the payload of this ShowEventItems.
+        r"""Sets the payload of this ShowEventItems.
 
         恶意负载
 
@@ -469,7 +469,7 @@ class ShowEventItems:
 
     @property
     def payload_location(self):
-        """Gets the payload_location of this ShowEventItems.
+        r"""Gets the payload_location of this ShowEventItems.
 
         恶意负载位置
 
@@ -480,7 +480,7 @@ class ShowEventItems:
 
     @payload_location.setter
     def payload_location(self, payload_location):
-        """Sets the payload_location of this ShowEventItems.
+        r"""Sets the payload_location of this ShowEventItems.
 
         恶意负载位置
 
@@ -491,7 +491,7 @@ class ShowEventItems:
 
     @property
     def region(self):
-        """Gets the region of this ShowEventItems.
+        r"""Gets the region of this ShowEventItems.
 
         源ip地理位置
 
@@ -502,7 +502,7 @@ class ShowEventItems:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowEventItems.
+        r"""Sets the region of this ShowEventItems.
 
         源ip地理位置
 
@@ -513,7 +513,7 @@ class ShowEventItems:
 
     @property
     def process_time(self):
-        """Gets the process_time of this ShowEventItems.
+        r"""Gets the process_time of this ShowEventItems.
 
         处理时长
 
@@ -524,7 +524,7 @@ class ShowEventItems:
 
     @process_time.setter
     def process_time(self, process_time):
-        """Sets the process_time of this ShowEventItems.
+        r"""Sets the process_time of this ShowEventItems.
 
         处理时长
 
@@ -535,7 +535,7 @@ class ShowEventItems:
 
     @property
     def request_line(self):
-        """Gets the request_line of this ShowEventItems.
+        r"""Gets the request_line of this ShowEventItems.
 
         攻击请求的请求行
 
@@ -546,7 +546,7 @@ class ShowEventItems:
 
     @request_line.setter
     def request_line(self, request_line):
-        """Sets the request_line of this ShowEventItems.
+        r"""Sets the request_line of this ShowEventItems.
 
         攻击请求的请求行
 
@@ -557,7 +557,7 @@ class ShowEventItems:
 
     @property
     def response_size(self):
-        """Gets the response_size of this ShowEventItems.
+        r"""Gets the response_size of this ShowEventItems.
 
         返回大小（字节）
 
@@ -568,7 +568,7 @@ class ShowEventItems:
 
     @response_size.setter
     def response_size(self, response_size):
-        """Sets the response_size of this ShowEventItems.
+        r"""Sets the response_size of this ShowEventItems.
 
         返回大小（字节）
 
@@ -579,7 +579,7 @@ class ShowEventItems:
 
     @property
     def response_time(self):
-        """Gets the response_time of this ShowEventItems.
+        r"""Gets the response_time of this ShowEventItems.
 
         响应时间（毫秒）
 
@@ -590,7 +590,7 @@ class ShowEventItems:
 
     @response_time.setter
     def response_time(self, response_time):
-        """Sets the response_time of this ShowEventItems.
+        r"""Sets the response_time of this ShowEventItems.
 
         响应时间（毫秒）
 
@@ -601,7 +601,7 @@ class ShowEventItems:
 
     @property
     def status(self):
-        """Gets the status of this ShowEventItems.
+        r"""Gets the status of this ShowEventItems.
 
         响应码
 
@@ -612,7 +612,7 @@ class ShowEventItems:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowEventItems.
+        r"""Sets the status of this ShowEventItems.
 
         响应码
 
@@ -623,7 +623,7 @@ class ShowEventItems:
 
     @property
     def request_body(self):
-        """Gets the request_body of this ShowEventItems.
+        r"""Gets the request_body of this ShowEventItems.
 
         请求体
 
@@ -634,7 +634,7 @@ class ShowEventItems:
 
     @request_body.setter
     def request_body(self, request_body):
-        """Sets the request_body of this ShowEventItems.
+        r"""Sets the request_body of this ShowEventItems.
 
         请求体
 

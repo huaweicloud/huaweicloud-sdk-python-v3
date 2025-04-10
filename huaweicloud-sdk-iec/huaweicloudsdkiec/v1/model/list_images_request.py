@@ -61,7 +61,7 @@ class ListImagesRequest:
     }
 
     def __init__(self, imagetype=None, protected=None, id=None, visibility=None, status=None, name=None, os_type=None, virtual_env_type=None, isregistered=None, limit=None, offset=None, sort_key=None, sort_dir=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_ascend_310=None, support_kvm_hi1822_hiovs=None, support_arm=None, support_gpu_t4=None):
-        """ListImagesRequest
+        r"""ListImagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class ListImagesRequest:
 
     @property
     def imagetype(self):
-        """Gets the imagetype of this ListImagesRequest.
+        r"""Gets the imagetype of this ListImagesRequest.
 
         镜像类型，目前支持以下类型：  - 公共镜像：gold  - 私有镜像：private
 
@@ -180,7 +180,7 @@ class ListImagesRequest:
 
     @imagetype.setter
     def imagetype(self, imagetype):
-        """Sets the imagetype of this ListImagesRequest.
+        r"""Sets the imagetype of this ListImagesRequest.
 
         镜像类型，目前支持以下类型：  - 公共镜像：gold  - 私有镜像：private
 
@@ -191,7 +191,7 @@ class ListImagesRequest:
 
     @property
     def protected(self):
-        """Gets the protected of this ListImagesRequest.
+        r"""Gets the protected of this ListImagesRequest.
 
         镜像是否是受保护，取值为true/false，一般查询公共镜像时候取值为true，查询私有镜像可以不指定。
 
@@ -202,7 +202,7 @@ class ListImagesRequest:
 
     @protected.setter
     def protected(self, protected):
-        """Sets the protected of this ListImagesRequest.
+        r"""Sets the protected of this ListImagesRequest.
 
         镜像是否是受保护，取值为true/false，一般查询公共镜像时候取值为true，查询私有镜像可以不指定。
 
@@ -213,7 +213,7 @@ class ListImagesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListImagesRequest.
+        r"""Gets the id of this ListImagesRequest.
 
         镜像ID，精确匹配。
 
@@ -224,7 +224,7 @@ class ListImagesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListImagesRequest.
+        r"""Sets the id of this ListImagesRequest.
 
         镜像ID，精确匹配。
 
@@ -235,7 +235,7 @@ class ListImagesRequest:
 
     @property
     def visibility(self):
-        """Gets the visibility of this ListImagesRequest.
+        r"""Gets the visibility of this ListImagesRequest.
 
         是否被其他租户可见，取值如下：  - public：公共镜像  - private：私有镜像
 
@@ -246,7 +246,7 @@ class ListImagesRequest:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this ListImagesRequest.
+        r"""Sets the visibility of this ListImagesRequest.
 
         是否被其他租户可见，取值如下：  - public：公共镜像  - private：私有镜像
 
@@ -257,7 +257,7 @@ class ListImagesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListImagesRequest.
+        r"""Gets the status of this ListImagesRequest.
 
         镜像状态。取值如下：  - saving：表示镜像正在上传文件到后端存储  - deleted：表示镜像已经删除  - killed：表示镜像上传错误  - active：表示镜像可以正常使用
 
@@ -268,7 +268,7 @@ class ListImagesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListImagesRequest.
+        r"""Sets the status of this ListImagesRequest.
 
         镜像状态。取值如下：  - saving：表示镜像正在上传文件到后端存储  - deleted：表示镜像已经删除  - killed：表示镜像上传错误  - active：表示镜像可以正常使用
 
@@ -279,7 +279,7 @@ class ListImagesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListImagesRequest.
+        r"""Gets the name of this ListImagesRequest.
 
         镜像名称，匹配规则为精确匹配。
 
@@ -290,7 +290,7 @@ class ListImagesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListImagesRequest.
+        r"""Sets the name of this ListImagesRequest.
 
         镜像名称，匹配规则为精确匹配。
 
@@ -301,7 +301,7 @@ class ListImagesRequest:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ListImagesRequest.
+        r"""Gets the os_type of this ListImagesRequest.
 
         镜像系统类型，取值如下：  - Linux - Windows - Other
 
@@ -312,7 +312,7 @@ class ListImagesRequest:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ListImagesRequest.
+        r"""Sets the os_type of this ListImagesRequest.
 
         镜像系统类型，取值如下：  - Linux - Windows - Other
 
@@ -323,7 +323,7 @@ class ListImagesRequest:
 
     @property
     def virtual_env_type(self):
-        """Gets the virtual_env_type of this ListImagesRequest.
+        r"""Gets the virtual_env_type of this ListImagesRequest.
 
         镜像使用环境类型。  目前仅支持系统盘镜像，取值为：FusionCompute
 
@@ -334,7 +334,7 @@ class ListImagesRequest:
 
     @virtual_env_type.setter
     def virtual_env_type(self, virtual_env_type):
-        """Sets the virtual_env_type of this ListImagesRequest.
+        r"""Sets the virtual_env_type of this ListImagesRequest.
 
         镜像使用环境类型。  目前仅支持系统盘镜像，取值为：FusionCompute
 
@@ -345,7 +345,7 @@ class ListImagesRequest:
 
     @property
     def isregistered(self):
-        """Gets the isregistered of this ListImagesRequest.
+        r"""Gets the isregistered of this ListImagesRequest.
 
         镜像是否可用，取值为true/false。 > 查询公共镜像时，该参数无效。
 
@@ -356,7 +356,7 @@ class ListImagesRequest:
 
     @isregistered.setter
     def isregistered(self, isregistered):
-        """Sets the isregistered of this ListImagesRequest.
+        r"""Sets the isregistered of this ListImagesRequest.
 
         镜像是否可用，取值为true/false。 > 查询公共镜像时，该参数无效。
 
@@ -367,7 +367,7 @@ class ListImagesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListImagesRequest.
+        r"""Gets the limit of this ListImagesRequest.
 
         用于分页，表示查询几条镜像记录，取值为正整数，最大（默认）取值为500
 
@@ -378,7 +378,7 @@ class ListImagesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListImagesRequest.
+        r"""Sets the limit of this ListImagesRequest.
 
         用于分页，表示查询几条镜像记录，取值为正整数，最大（默认）取值为500
 
@@ -389,7 +389,7 @@ class ListImagesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListImagesRequest.
+        r"""Gets the offset of this ListImagesRequest.
 
         用于分页，表示查询偏移量，表示从整个列表查询结果中的该位置向后进行查询，并非页数偏移，默认取值为0，表示查询第一页。
 
@@ -400,7 +400,7 @@ class ListImagesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListImagesRequest.
+        r"""Sets the offset of this ListImagesRequest.
 
         用于分页，表示查询偏移量，表示从整个列表查询结果中的该位置向后进行查询，并非页数偏移，默认取值为0，表示查询第一页。
 
@@ -411,7 +411,7 @@ class ListImagesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListImagesRequest.
+        r"""Gets the sort_key of this ListImagesRequest.
 
         用于排序，表示按照哪个字段排序，取值为镜像属性name、status、disk_format、created_at，默认取值为created_at。
 
@@ -422,7 +422,7 @@ class ListImagesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListImagesRequest.
+        r"""Sets the sort_key of this ListImagesRequest.
 
         用于排序，表示按照哪个字段排序，取值为镜像属性name、status、disk_format、created_at，默认取值为created_at。
 
@@ -433,7 +433,7 @@ class ListImagesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListImagesRequest.
+        r"""Gets the sort_dir of this ListImagesRequest.
 
         用于排序，表示升序还是降序，取值为asc和desc，与sort_key一起组合使用，默认为降序desc。
 
@@ -444,7 +444,7 @@ class ListImagesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListImagesRequest.
+        r"""Sets the sort_dir of this ListImagesRequest.
 
         用于排序，表示升序还是降序，取值为asc和desc，与sort_key一起组合使用，默认为降序desc。
 
@@ -455,7 +455,7 @@ class ListImagesRequest:
 
     @property
     def support_kvm(self):
-        """Gets the support_kvm of this ListImagesRequest.
+        r"""Gets the support_kvm of this ListImagesRequest.
 
         如果镜像支持KVM，取值为true，否则无该属性。
 
@@ -466,7 +466,7 @@ class ListImagesRequest:
 
     @support_kvm.setter
     def support_kvm(self, support_kvm):
-        """Sets the support_kvm of this ListImagesRequest.
+        r"""Sets the support_kvm of this ListImagesRequest.
 
         如果镜像支持KVM，取值为true，否则无该属性。
 
@@ -477,7 +477,7 @@ class ListImagesRequest:
 
     @property
     def support_kvm_gpu_type(self):
-        """Gets the support_kvm_gpu_type of this ListImagesRequest.
+        r"""Gets the support_kvm_gpu_type of this ListImagesRequest.
 
         如果镜像是支持KVM虚拟化平台下的GPU类型，取值为“V100_vGPU”或者“RTX5000”，否则无该属性。
 
@@ -488,7 +488,7 @@ class ListImagesRequest:
 
     @support_kvm_gpu_type.setter
     def support_kvm_gpu_type(self, support_kvm_gpu_type):
-        """Sets the support_kvm_gpu_type of this ListImagesRequest.
+        r"""Sets the support_kvm_gpu_type of this ListImagesRequest.
 
         如果镜像是支持KVM虚拟化平台下的GPU类型，取值为“V100_vGPU”或者“RTX5000”，否则无该属性。
 
@@ -499,7 +499,7 @@ class ListImagesRequest:
 
     @property
     def support_kvm_ascend_310(self):
-        """Gets the support_kvm_ascend_310 of this ListImagesRequest.
+        r"""Gets the support_kvm_ascend_310 of this ListImagesRequest.
 
         如果镜像支持AI加速，取值为true，否则无该属性。
 
@@ -510,7 +510,7 @@ class ListImagesRequest:
 
     @support_kvm_ascend_310.setter
     def support_kvm_ascend_310(self, support_kvm_ascend_310):
-        """Sets the support_kvm_ascend_310 of this ListImagesRequest.
+        r"""Sets the support_kvm_ascend_310 of this ListImagesRequest.
 
         如果镜像支持AI加速，取值为true，否则无该属性。
 
@@ -521,7 +521,7 @@ class ListImagesRequest:
 
     @property
     def support_kvm_hi1822_hiovs(self):
-        """Gets the support_kvm_hi1822_hiovs of this ListImagesRequest.
+        r"""Gets the support_kvm_hi1822_hiovs of this ListImagesRequest.
 
         如果镜像支持计算增强，取值为true，否则无该属性。
 
@@ -532,7 +532,7 @@ class ListImagesRequest:
 
     @support_kvm_hi1822_hiovs.setter
     def support_kvm_hi1822_hiovs(self, support_kvm_hi1822_hiovs):
-        """Sets the support_kvm_hi1822_hiovs of this ListImagesRequest.
+        r"""Sets the support_kvm_hi1822_hiovs of this ListImagesRequest.
 
         如果镜像支持计算增强，取值为true，否则无该属性。
 
@@ -543,7 +543,7 @@ class ListImagesRequest:
 
     @property
     def support_arm(self):
-        """Gets the support_arm of this ListImagesRequest.
+        r"""Gets the support_arm of this ListImagesRequest.
 
         如果镜像为ARM架构类型，取值为true，否则无该属性。
 
@@ -554,7 +554,7 @@ class ListImagesRequest:
 
     @support_arm.setter
     def support_arm(self, support_arm):
-        """Sets the support_arm of this ListImagesRequest.
+        r"""Sets the support_arm of this ListImagesRequest.
 
         如果镜像为ARM架构类型，取值为true，否则无该属性。
 
@@ -565,7 +565,7 @@ class ListImagesRequest:
 
     @property
     def support_gpu_t4(self):
-        """Gets the support_gpu_t4 of this ListImagesRequest.
+        r"""Gets the support_gpu_t4 of this ListImagesRequest.
 
         如果镜像支持GPU T4，取值为true，否则无该属性。
 
@@ -576,7 +576,7 @@ class ListImagesRequest:
 
     @support_gpu_t4.setter
     def support_gpu_t4(self, support_gpu_t4):
-        """Sets the support_gpu_t4 of this ListImagesRequest.
+        r"""Sets the support_gpu_t4 of this ListImagesRequest.
 
         如果镜像支持GPU T4，取值为true，否则无该属性。
 

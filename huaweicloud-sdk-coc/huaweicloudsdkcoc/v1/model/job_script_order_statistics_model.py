@@ -27,7 +27,7 @@ class JobScriptOrderStatisticsModel:
     }
 
     def __init__(self, total_instance=None, execute_statistics=None):
-        """JobScriptOrderStatisticsModel
+        r"""JobScriptOrderStatisticsModel
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class JobScriptOrderStatisticsModel:
 
     @property
     def total_instance(self):
-        """Gets the total_instance of this JobScriptOrderStatisticsModel.
+        r"""Gets the total_instance of this JobScriptOrderStatisticsModel.
 
         实例总量
 
@@ -61,7 +61,7 @@ class JobScriptOrderStatisticsModel:
 
     @total_instance.setter
     def total_instance(self, total_instance):
-        """Sets the total_instance of this JobScriptOrderStatisticsModel.
+        r"""Sets the total_instance of this JobScriptOrderStatisticsModel.
 
         实例总量
 
@@ -72,7 +72,7 @@ class JobScriptOrderStatisticsModel:
 
     @property
     def execute_statistics(self):
-        """Gets the execute_statistics of this JobScriptOrderStatisticsModel.
+        r"""Gets the execute_statistics of this JobScriptOrderStatisticsModel.
 
         每个状态一个count，里面记录该状态的总数量，以及包含该状态的批次列表
 
@@ -83,7 +83,7 @@ class JobScriptOrderStatisticsModel:
 
     @execute_statistics.setter
     def execute_statistics(self, execute_statistics):
-        """Sets the execute_statistics of this JobScriptOrderStatisticsModel.
+        r"""Sets the execute_statistics of this JobScriptOrderStatisticsModel.
 
         每个状态一个count，里面记录该状态的总数量，以及包含该状态的批次列表
 

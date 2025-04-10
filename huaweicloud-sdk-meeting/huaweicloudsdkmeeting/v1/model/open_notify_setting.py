@@ -29,7 +29,7 @@ class OpenNotifySetting:
     }
 
     def __init__(self, enable_calendar=None, enable_sms=None, enable_email=None):
-        """OpenNotifySetting
+        r"""OpenNotifySetting
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class OpenNotifySetting:
 
     @property
     def enable_calendar(self):
-        """Gets the enable_calendar of this OpenNotifySetting.
+        r"""Gets the enable_calendar of this OpenNotifySetting.
 
         发送邮件日历是否开启。 * Y：开启 * N： 不开启 
 
@@ -65,7 +65,7 @@ class OpenNotifySetting:
 
     @enable_calendar.setter
     def enable_calendar(self, enable_calendar):
-        """Sets the enable_calendar of this OpenNotifySetting.
+        r"""Sets the enable_calendar of this OpenNotifySetting.
 
         发送邮件日历是否开启。 * Y：开启 * N： 不开启 
 
@@ -76,7 +76,7 @@ class OpenNotifySetting:
 
     @property
     def enable_sms(self):
-        """Gets the enable_sms of this OpenNotifySetting.
+        r"""Gets the enable_sms of this OpenNotifySetting.
 
         发送短信通知是否开启。 * Y：开启 * N： 不开启 
 
@@ -87,7 +87,7 @@ class OpenNotifySetting:
 
     @enable_sms.setter
     def enable_sms(self, enable_sms):
-        """Sets the enable_sms of this OpenNotifySetting.
+        r"""Sets the enable_sms of this OpenNotifySetting.
 
         发送短信通知是否开启。 * Y：开启 * N： 不开启 
 
@@ -98,7 +98,7 @@ class OpenNotifySetting:
 
     @property
     def enable_email(self):
-        """Gets the enable_email of this OpenNotifySetting.
+        r"""Gets the enable_email of this OpenNotifySetting.
 
         发送邮件是否开启。 * Y：开启 * N： 不开启 
 
@@ -109,7 +109,7 @@ class OpenNotifySetting:
 
     @enable_email.setter
     def enable_email(self, enable_email):
-        """Sets the enable_email of this OpenNotifySetting.
+        r"""Sets the enable_email of this OpenNotifySetting.
 
         发送邮件是否开启。 * Y：开启 * N： 不开启 
 

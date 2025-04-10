@@ -33,7 +33,7 @@ class ShowJobExercisesRequest:
     }
 
     def __init__(self, job_id=None, source_from=None, source_id=None, offset=None, limit=None):
-        """ShowJobExercisesRequest
+        r"""ShowJobExercisesRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ShowJobExercisesRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobExercisesRequest.
+        r"""Gets the job_id of this ShowJobExercisesRequest.
 
         作业ID。
 
@@ -79,7 +79,7 @@ class ShowJobExercisesRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobExercisesRequest.
+        r"""Sets the job_id of this ShowJobExercisesRequest.
 
         作业ID。
 
@@ -90,7 +90,7 @@ class ShowJobExercisesRequest:
 
     @property
     def source_from(self):
-        """Gets the source_from of this ShowJobExercisesRequest.
+        r"""Gets the source_from of this ShowJobExercisesRequest.
 
         作业来源于课堂或课程。 取值范围： classroom:课堂作业 course:课程作业
 
@@ -101,7 +101,7 @@ class ShowJobExercisesRequest:
 
     @source_from.setter
     def source_from(self, source_from):
-        """Sets the source_from of this ShowJobExercisesRequest.
+        r"""Sets the source_from of this ShowJobExercisesRequest.
 
         作业来源于课堂或课程。 取值范围： classroom:课堂作业 course:课程作业
 
@@ -112,7 +112,7 @@ class ShowJobExercisesRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this ShowJobExercisesRequest.
+        r"""Gets the source_id of this ShowJobExercisesRequest.
 
         课堂ID或者课程ID。
 
@@ -123,7 +123,7 @@ class ShowJobExercisesRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this ShowJobExercisesRequest.
+        r"""Sets the source_id of this ShowJobExercisesRequest.
 
         课堂ID或者课程ID。
 
@@ -134,7 +134,7 @@ class ShowJobExercisesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowJobExercisesRequest.
+        r"""Gets the offset of this ShowJobExercisesRequest.
 
         信息记录的起始编号
 
@@ -145,7 +145,7 @@ class ShowJobExercisesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowJobExercisesRequest.
+        r"""Sets the offset of this ShowJobExercisesRequest.
 
         信息记录的起始编号
 
@@ -156,7 +156,7 @@ class ShowJobExercisesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowJobExercisesRequest.
+        r"""Gets the limit of this ShowJobExercisesRequest.
 
         每页包含的信息记录数
 
@@ -167,7 +167,7 @@ class ShowJobExercisesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowJobExercisesRequest.
+        r"""Sets the limit of this ShowJobExercisesRequest.
 
         每页包含的信息记录数
 

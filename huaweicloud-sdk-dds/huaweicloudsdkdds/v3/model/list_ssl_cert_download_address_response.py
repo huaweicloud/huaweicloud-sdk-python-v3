@@ -26,7 +26,7 @@ class ListSslCertDownloadAddressResponse(SdkResponse):
     }
 
     def __init__(self, certs=None):
-        """ListSslCertDownloadAddressResponse
+        r"""ListSslCertDownloadAddressResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSslCertDownloadAddressResponse(SdkResponse):
 
     @property
     def certs(self):
-        """Gets the certs of this ListSslCertDownloadAddressResponse.
+        r"""Gets the certs of this ListSslCertDownloadAddressResponse.
 
         证书列表
 
@@ -55,7 +55,7 @@ class ListSslCertDownloadAddressResponse(SdkResponse):
 
     @certs.setter
     def certs(self, certs):
-        """Sets the certs of this ListSslCertDownloadAddressResponse.
+        r"""Sets the certs of this ListSslCertDownloadAddressResponse.
 
         证书列表
 

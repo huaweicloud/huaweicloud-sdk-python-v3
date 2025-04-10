@@ -30,7 +30,7 @@ class BatchDeleteFacotrByIdsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """BatchDeleteFacotrByIdsResponse
+        r"""BatchDeleteFacotrByIdsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchDeleteFacotrByIdsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this BatchDeleteFacotrByIdsResponse.
+        r"""Gets the code of this BatchDeleteFacotrByIdsResponse.
 
         :return: The code of this BatchDeleteFacotrByIdsResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class BatchDeleteFacotrByIdsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this BatchDeleteFacotrByIdsResponse.
+        r"""Sets the code of this BatchDeleteFacotrByIdsResponse.
 
         :param code: The code of this BatchDeleteFacotrByIdsResponse.
         :type code: str
@@ -76,7 +76,7 @@ class BatchDeleteFacotrByIdsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this BatchDeleteFacotrByIdsResponse.
+        r"""Gets the data of this BatchDeleteFacotrByIdsResponse.
 
         :return: The data of this BatchDeleteFacotrByIdsResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class BatchDeleteFacotrByIdsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this BatchDeleteFacotrByIdsResponse.
+        r"""Sets the data of this BatchDeleteFacotrByIdsResponse.
 
         :param data: The data of this BatchDeleteFacotrByIdsResponse.
         :type data: object
@@ -94,7 +94,7 @@ class BatchDeleteFacotrByIdsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this BatchDeleteFacotrByIdsResponse.
+        r"""Gets the message of this BatchDeleteFacotrByIdsResponse.
 
         :return: The message of this BatchDeleteFacotrByIdsResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class BatchDeleteFacotrByIdsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this BatchDeleteFacotrByIdsResponse.
+        r"""Sets the message of this BatchDeleteFacotrByIdsResponse.
 
         :param message: The message of this BatchDeleteFacotrByIdsResponse.
         :type message: str

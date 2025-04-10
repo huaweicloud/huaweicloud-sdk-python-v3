@@ -29,13 +29,13 @@ class AddHostsGroupRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, body=None):
-        """AddHostsGroupRequest
+        r"""AddHostsGroupRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param body: Body of the AddHostsGroupRequest
         :type body: :class:`huaweicloudsdkhss.v5.AddHostsGroupRequestInfo`
@@ -56,7 +56,7 @@ class AddHostsGroupRequest:
 
     @property
     def region(self):
-        """Gets the region of this AddHostsGroupRequest.
+        r"""Gets the region of this AddHostsGroupRequest.
 
         Region ID
 
@@ -67,7 +67,7 @@ class AddHostsGroupRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AddHostsGroupRequest.
+        r"""Sets the region of this AddHostsGroupRequest.
 
         Region ID
 
@@ -78,9 +78,9 @@ class AddHostsGroupRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this AddHostsGroupRequest.
+        r"""Gets the enterprise_project_id of this AddHostsGroupRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this AddHostsGroupRequest.
         :rtype: str
@@ -89,9 +89,9 @@ class AddHostsGroupRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this AddHostsGroupRequest.
+        r"""Sets the enterprise_project_id of this AddHostsGroupRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this AddHostsGroupRequest.
         :type enterprise_project_id: str
@@ -100,7 +100,7 @@ class AddHostsGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddHostsGroupRequest.
+        r"""Gets the body of this AddHostsGroupRequest.
 
         :return: The body of this AddHostsGroupRequest.
         :rtype: :class:`huaweicloudsdkhss.v5.AddHostsGroupRequestInfo`
@@ -109,7 +109,7 @@ class AddHostsGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddHostsGroupRequest.
+        r"""Sets the body of this AddHostsGroupRequest.
 
         :param body: The body of this AddHostsGroupRequest.
         :type body: :class:`huaweicloudsdkhss.v5.AddHostsGroupRequestInfo`

@@ -27,7 +27,7 @@ class AssociateListenerRequest:
     }
 
     def __init__(self, ip_group_id=None, body=None):
-        """AssociateListenerRequest
+        r"""AssociateListenerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociateListenerRequest:
 
     @property
     def ip_group_id(self):
-        """Gets the ip_group_id of this AssociateListenerRequest.
+        r"""Gets the ip_group_id of this AssociateListenerRequest.
 
         IP地址组ID。
 
@@ -60,7 +60,7 @@ class AssociateListenerRequest:
 
     @ip_group_id.setter
     def ip_group_id(self, ip_group_id):
-        """Sets the ip_group_id of this AssociateListenerRequest.
+        r"""Sets the ip_group_id of this AssociateListenerRequest.
 
         IP地址组ID。
 
@@ -71,7 +71,7 @@ class AssociateListenerRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateListenerRequest.
+        r"""Gets the body of this AssociateListenerRequest.
 
         :return: The body of this AssociateListenerRequest.
         :rtype: :class:`huaweicloudsdkga.v1.AssociateListenerRequestBody`
@@ -80,7 +80,7 @@ class AssociateListenerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateListenerRequest.
+        r"""Sets the body of this AssociateListenerRequest.
 
         :param body: The body of this AssociateListenerRequest.
         :type body: :class:`huaweicloudsdkga.v1.AssociateListenerRequestBody`

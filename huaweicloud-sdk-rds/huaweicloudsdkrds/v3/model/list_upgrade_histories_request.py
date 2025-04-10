@@ -35,7 +35,7 @@ class ListUpgradeHistoriesRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, order=None, sort_field=None, x_language=None):
-        """ListUpgradeHistoriesRequest
+        r"""ListUpgradeHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListUpgradeHistoriesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListUpgradeHistoriesRequest.
+        r"""Gets the instance_id of this ListUpgradeHistoriesRequest.
 
         实例ID
 
@@ -88,7 +88,7 @@ class ListUpgradeHistoriesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListUpgradeHistoriesRequest.
+        r"""Sets the instance_id of this ListUpgradeHistoriesRequest.
 
         实例ID
 
@@ -99,7 +99,7 @@ class ListUpgradeHistoriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUpgradeHistoriesRequest.
+        r"""Gets the offset of this ListUpgradeHistoriesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -110,7 +110,7 @@ class ListUpgradeHistoriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUpgradeHistoriesRequest.
+        r"""Sets the offset of this ListUpgradeHistoriesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -121,7 +121,7 @@ class ListUpgradeHistoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUpgradeHistoriesRequest.
+        r"""Gets the limit of this ListUpgradeHistoriesRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 
@@ -132,7 +132,7 @@ class ListUpgradeHistoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUpgradeHistoriesRequest.
+        r"""Sets the limit of this ListUpgradeHistoriesRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 
@@ -143,7 +143,7 @@ class ListUpgradeHistoriesRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListUpgradeHistoriesRequest.
+        r"""Gets the order of this ListUpgradeHistoriesRequest.
 
         排序方式。 DESC，降序。 ASC，升序。 默认降序。
 
@@ -154,7 +154,7 @@ class ListUpgradeHistoriesRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListUpgradeHistoriesRequest.
+        r"""Sets the order of this ListUpgradeHistoriesRequest.
 
         排序方式。 DESC，降序。 ASC，升序。 默认降序。
 
@@ -165,7 +165,7 @@ class ListUpgradeHistoriesRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ListUpgradeHistoriesRequest.
+        r"""Gets the sort_field of this ListUpgradeHistoriesRequest.
 
         排序字段。 start_time 开始时间。 end_time 结束时间。 默认开始时间。
 
@@ -176,7 +176,7 @@ class ListUpgradeHistoriesRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ListUpgradeHistoriesRequest.
+        r"""Sets the sort_field of this ListUpgradeHistoriesRequest.
 
         排序字段。 start_time 开始时间。 end_time 结束时间。 默认开始时间。
 
@@ -187,7 +187,7 @@ class ListUpgradeHistoriesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListUpgradeHistoriesRequest.
+        r"""Gets the x_language of this ListUpgradeHistoriesRequest.
 
         语言。默认en-us。
 
@@ -198,7 +198,7 @@ class ListUpgradeHistoriesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListUpgradeHistoriesRequest.
+        r"""Sets the x_language of this ListUpgradeHistoriesRequest.
 
         语言。默认en-us。
 

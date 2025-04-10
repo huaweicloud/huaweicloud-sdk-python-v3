@@ -27,7 +27,7 @@ class CreateSystemEventRequest:
     }
 
     def __init__(self, ief_instance_id=None, body=None):
-        """CreateSystemEventRequest
+        r"""CreateSystemEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateSystemEventRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateSystemEventRequest.
+        r"""Gets the ief_instance_id of this CreateSystemEventRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -61,7 +61,7 @@ class CreateSystemEventRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateSystemEventRequest.
+        r"""Sets the ief_instance_id of this CreateSystemEventRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -72,7 +72,7 @@ class CreateSystemEventRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSystemEventRequest.
+        r"""Gets the body of this CreateSystemEventRequest.
 
         :return: The body of this CreateSystemEventRequest.
         :rtype: :class:`huaweicloudsdkief.v1.EventCreateReq`
@@ -81,7 +81,7 @@ class CreateSystemEventRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSystemEventRequest.
+        r"""Sets the body of this CreateSystemEventRequest.
 
         :param body: The body of this CreateSystemEventRequest.
         :type body: :class:`huaweicloudsdkief.v1.EventCreateReq`

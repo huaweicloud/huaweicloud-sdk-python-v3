@@ -24,7 +24,7 @@ class CommitCheckpointResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CommitCheckpointResponse
+        r"""CommitCheckpointResponse
 
         The model defined in huaweicloud sdk
 

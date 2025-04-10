@@ -29,7 +29,7 @@ class ExpandDesktopPoolRequest:
     }
 
     def __init__(self, service_transaction_id=None, pool_id=None, body=None):
-        """ExpandDesktopPoolRequest
+        r"""ExpandDesktopPoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ExpandDesktopPoolRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this ExpandDesktopPoolRequest.
+        r"""Gets the service_transaction_id of this ExpandDesktopPoolRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -67,7 +67,7 @@ class ExpandDesktopPoolRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this ExpandDesktopPoolRequest.
+        r"""Sets the service_transaction_id of this ExpandDesktopPoolRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -78,7 +78,7 @@ class ExpandDesktopPoolRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ExpandDesktopPoolRequest.
+        r"""Gets the pool_id of this ExpandDesktopPoolRequest.
 
         桌面池ID。
 
@@ -89,7 +89,7 @@ class ExpandDesktopPoolRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ExpandDesktopPoolRequest.
+        r"""Sets the pool_id of this ExpandDesktopPoolRequest.
 
         桌面池ID。
 
@@ -100,7 +100,7 @@ class ExpandDesktopPoolRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExpandDesktopPoolRequest.
+        r"""Gets the body of this ExpandDesktopPoolRequest.
 
         :return: The body of this ExpandDesktopPoolRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ExpandDesktopPoolReq`
@@ -109,7 +109,7 @@ class ExpandDesktopPoolRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExpandDesktopPoolRequest.
+        r"""Sets the body of this ExpandDesktopPoolRequest.
 
         :param body: The body of this ExpandDesktopPoolRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ExpandDesktopPoolReq`

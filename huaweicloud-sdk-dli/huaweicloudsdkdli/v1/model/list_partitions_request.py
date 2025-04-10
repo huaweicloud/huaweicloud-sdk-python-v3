@@ -31,7 +31,7 @@ class ListPartitionsRequest:
     }
 
     def __init__(self, database_name=None, table_name=None, limit=None, offset=None):
-        """ListPartitionsRequest
+        r"""ListPartitionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListPartitionsRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListPartitionsRequest.
+        r"""Gets the database_name of this ListPartitionsRequest.
 
         数据库名
 
@@ -73,7 +73,7 @@ class ListPartitionsRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListPartitionsRequest.
+        r"""Sets the database_name of this ListPartitionsRequest.
 
         数据库名
 
@@ -84,7 +84,7 @@ class ListPartitionsRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListPartitionsRequest.
+        r"""Gets the table_name of this ListPartitionsRequest.
 
         表名
 
@@ -95,7 +95,7 @@ class ListPartitionsRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListPartitionsRequest.
+        r"""Sets the table_name of this ListPartitionsRequest.
 
         表名
 
@@ -106,7 +106,7 @@ class ListPartitionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPartitionsRequest.
+        r"""Gets the limit of this ListPartitionsRequest.
 
         显示个数，默认值为100
 
@@ -117,7 +117,7 @@ class ListPartitionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPartitionsRequest.
+        r"""Sets the limit of this ListPartitionsRequest.
 
         显示个数，默认值为100
 
@@ -128,7 +128,7 @@ class ListPartitionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPartitionsRequest.
+        r"""Gets the offset of this ListPartitionsRequest.
 
         偏移量
 
@@ -139,7 +139,7 @@ class ListPartitionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPartitionsRequest.
+        r"""Sets the offset of this ListPartitionsRequest.
 
         偏移量
 

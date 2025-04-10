@@ -31,7 +31,7 @@ class SearchInfo:
     }
 
     def __init__(self, total_num=None, return_num=None, search_time=None, last_item=None):
-        """SearchInfo
+        r"""SearchInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SearchInfo:
 
     @property
     def total_num(self):
-        """Gets the total_num of this SearchInfo.
+        r"""Gets the total_num of this SearchInfo.
 
         搜索结果总数。
 
@@ -75,7 +75,7 @@ class SearchInfo:
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this SearchInfo.
+        r"""Sets the total_num of this SearchInfo.
 
         搜索结果总数。
 
@@ -86,7 +86,7 @@ class SearchInfo:
 
     @property
     def return_num(self):
-        """Gets the return_num of this SearchInfo.
+        r"""Gets the return_num of this SearchInfo.
 
         返回结果总数。
 
@@ -97,7 +97,7 @@ class SearchInfo:
 
     @return_num.setter
     def return_num(self, return_num):
-        """Sets the return_num of this SearchInfo.
+        r"""Sets the return_num of this SearchInfo.
 
         返回结果总数。
 
@@ -108,7 +108,7 @@ class SearchInfo:
 
     @property
     def search_time(self):
-        """Gets the search_time of this SearchInfo.
+        r"""Gets the search_time of this SearchInfo.
 
         搜索过程耗时，单位为毫秒。
 
@@ -119,7 +119,7 @@ class SearchInfo:
 
     @search_time.setter
     def search_time(self, search_time):
-        """Sets the search_time of this SearchInfo.
+        r"""Sets the search_time of this SearchInfo.
 
         搜索过程耗时，单位为毫秒。
 
@@ -130,7 +130,7 @@ class SearchInfo:
 
     @property
     def last_item(self):
-        """Gets the last_item of this SearchInfo.
+        r"""Gets the last_item of this SearchInfo.
 
         :return: The last_item of this SearchInfo.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.SearchAfterParam`
@@ -139,7 +139,7 @@ class SearchInfo:
 
     @last_item.setter
     def last_item(self, last_item):
-        """Sets the last_item of this SearchInfo.
+        r"""Sets the last_item of this SearchInfo.
 
         :param last_item: The last_item of this SearchInfo.
         :type last_item: :class:`huaweicloudsdkimagesearch.v2.SearchAfterParam`

@@ -37,7 +37,7 @@ class ItemResultVo:
     }
 
     def __init__(self, status=None, visible=None, resource_id=None, resource_name=None, check_id=None, check_name=None, problem_level=None):
-        """ItemResultVo
+        r"""ItemResultVo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ItemResultVo:
 
     @property
     def status(self):
-        """Gets the status of this ItemResultVo.
+        r"""Gets the status of this ItemResultVo.
 
         执行状态
 
@@ -96,7 +96,7 @@ class ItemResultVo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ItemResultVo.
+        r"""Sets the status of this ItemResultVo.
 
         执行状态
 
@@ -107,7 +107,7 @@ class ItemResultVo:
 
     @property
     def visible(self):
-        """Gets the visible of this ItemResultVo.
+        r"""Gets the visible of this ItemResultVo.
 
         是否可见
 
@@ -118,7 +118,7 @@ class ItemResultVo:
 
     @visible.setter
     def visible(self, visible):
-        """Sets the visible of this ItemResultVo.
+        r"""Sets the visible of this ItemResultVo.
 
         是否可见
 
@@ -129,7 +129,7 @@ class ItemResultVo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ItemResultVo.
+        r"""Gets the resource_id of this ItemResultVo.
 
         检查项的大类Id
 
@@ -140,7 +140,7 @@ class ItemResultVo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ItemResultVo.
+        r"""Sets the resource_id of this ItemResultVo.
 
         检查项的大类Id
 
@@ -151,7 +151,7 @@ class ItemResultVo:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ItemResultVo.
+        r"""Gets the resource_name of this ItemResultVo.
 
         检查项的大类名称
 
@@ -162,7 +162,7 @@ class ItemResultVo:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ItemResultVo.
+        r"""Sets the resource_name of this ItemResultVo.
 
         检查项的大类名称
 
@@ -173,7 +173,7 @@ class ItemResultVo:
 
     @property
     def check_id(self):
-        """Gets the check_id of this ItemResultVo.
+        r"""Gets the check_id of this ItemResultVo.
 
         检查项ID
 
@@ -184,7 +184,7 @@ class ItemResultVo:
 
     @check_id.setter
     def check_id(self, check_id):
-        """Sets the check_id of this ItemResultVo.
+        r"""Sets the check_id of this ItemResultVo.
 
         检查项ID
 
@@ -195,7 +195,7 @@ class ItemResultVo:
 
     @property
     def check_name(self):
-        """Gets the check_name of this ItemResultVo.
+        r"""Gets the check_name of this ItemResultVo.
 
         执行状态
 
@@ -206,7 +206,7 @@ class ItemResultVo:
 
     @check_name.setter
     def check_name(self, check_name):
-        """Sets the check_name of this ItemResultVo.
+        r"""Sets the check_name of this ItemResultVo.
 
         执行状态
 
@@ -217,7 +217,7 @@ class ItemResultVo:
 
     @property
     def problem_level(self):
-        """Gets the problem_level of this ItemResultVo.
+        r"""Gets the problem_level of this ItemResultVo.
 
         问题等级 0:未执行，3 正常，4 异常；可用于判断检查项执行结果
 
@@ -228,7 +228,7 @@ class ItemResultVo:
 
     @problem_level.setter
     def problem_level(self, problem_level):
-        """Sets the problem_level of this ItemResultVo.
+        r"""Sets the problem_level of this ItemResultVo.
 
         问题等级 0:未执行，3 正常，4 异常；可用于判断检查项执行结果
 

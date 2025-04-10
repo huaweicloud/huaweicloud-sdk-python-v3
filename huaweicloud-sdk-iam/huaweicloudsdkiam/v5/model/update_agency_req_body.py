@@ -27,7 +27,7 @@ class UpdateAgencyReqBody:
     }
 
     def __init__(self, max_session_duration=None, description=None):
-        """UpdateAgencyReqBody
+        r"""UpdateAgencyReqBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateAgencyReqBody:
 
     @property
     def max_session_duration(self):
-        """Gets the max_session_duration of this UpdateAgencyReqBody.
+        r"""Gets the max_session_duration of this UpdateAgencyReqBody.
 
         委托或信任委托最大会话时长，默认为3600秒。
 
@@ -61,7 +61,7 @@ class UpdateAgencyReqBody:
 
     @max_session_duration.setter
     def max_session_duration(self, max_session_duration):
-        """Sets the max_session_duration of this UpdateAgencyReqBody.
+        r"""Sets the max_session_duration of this UpdateAgencyReqBody.
 
         委托或信任委托最大会话时长，默认为3600秒。
 
@@ -72,7 +72,7 @@ class UpdateAgencyReqBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAgencyReqBody.
+        r"""Gets the description of this UpdateAgencyReqBody.
 
         委托或信任委托描述信息。
 
@@ -83,7 +83,7 @@ class UpdateAgencyReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAgencyReqBody.
+        r"""Sets the description of this UpdateAgencyReqBody.
 
         委托或信任委托描述信息。
 

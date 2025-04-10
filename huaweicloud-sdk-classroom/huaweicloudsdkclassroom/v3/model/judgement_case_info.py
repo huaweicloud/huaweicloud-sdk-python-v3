@@ -27,7 +27,7 @@ class JudgementCaseInfo:
     }
 
     def __init__(self, input=None, output=None):
-        """JudgementCaseInfo
+        r"""JudgementCaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class JudgementCaseInfo:
 
     @property
     def input(self):
-        """Gets the input of this JudgementCaseInfo.
+        r"""Gets the input of this JudgementCaseInfo.
 
         用例数据输入
 
@@ -60,7 +60,7 @@ class JudgementCaseInfo:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this JudgementCaseInfo.
+        r"""Sets the input of this JudgementCaseInfo.
 
         用例数据输入
 
@@ -71,7 +71,7 @@ class JudgementCaseInfo:
 
     @property
     def output(self):
-        """Gets the output of this JudgementCaseInfo.
+        r"""Gets the output of this JudgementCaseInfo.
 
         用例数据期望输出
 
@@ -82,7 +82,7 @@ class JudgementCaseInfo:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this JudgementCaseInfo.
+        r"""Sets the output of this JudgementCaseInfo.
 
         用例数据期望输出
 

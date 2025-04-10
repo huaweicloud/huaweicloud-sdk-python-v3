@@ -30,7 +30,7 @@ class ListDependenciesResponse(SdkResponse):
     }
 
     def __init__(self, dependencies=None, next_marker=None, count=None):
-        """ListDependenciesResponse
+        r"""ListDependenciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDependenciesResponse(SdkResponse):
 
     @property
     def dependencies(self):
-        """Gets the dependencies of this ListDependenciesResponse.
+        r"""Gets the dependencies of this ListDependenciesResponse.
 
         依赖包列表
 
@@ -69,7 +69,7 @@ class ListDependenciesResponse(SdkResponse):
 
     @dependencies.setter
     def dependencies(self, dependencies):
-        """Sets the dependencies of this ListDependenciesResponse.
+        r"""Sets the dependencies of this ListDependenciesResponse.
 
         依赖包列表
 
@@ -80,7 +80,7 @@ class ListDependenciesResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListDependenciesResponse.
+        r"""Gets the next_marker of this ListDependenciesResponse.
 
         下次读取位置
 
@@ -91,7 +91,7 @@ class ListDependenciesResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListDependenciesResponse.
+        r"""Sets the next_marker of this ListDependenciesResponse.
 
         下次读取位置
 
@@ -102,7 +102,7 @@ class ListDependenciesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDependenciesResponse.
+        r"""Gets the count of this ListDependenciesResponse.
 
         依赖包总数
 
@@ -113,7 +113,7 @@ class ListDependenciesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDependenciesResponse.
+        r"""Sets the count of this ListDependenciesResponse.
 
         依赖包总数
 

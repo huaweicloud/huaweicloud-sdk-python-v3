@@ -33,7 +33,7 @@ class CreateImageWatermarkByAddressRequestBody:
     }
 
     def __init__(self, region_id=None, src_file=None, blind_watermark=None, image_watermark=None, dst_file=None):
-        """CreateImageWatermarkByAddressRequestBody
+        r"""CreateImageWatermarkByAddressRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateImageWatermarkByAddressRequestBody:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateImageWatermarkByAddressRequestBody.
+        r"""Gets the region_id of this CreateImageWatermarkByAddressRequestBody.
 
         当前项目所在region的id，如：xx-xx-1。
 
@@ -80,7 +80,7 @@ class CreateImageWatermarkByAddressRequestBody:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateImageWatermarkByAddressRequestBody.
+        r"""Sets the region_id of this CreateImageWatermarkByAddressRequestBody.
 
         当前项目所在region的id，如：xx-xx-1。
 
@@ -91,7 +91,7 @@ class CreateImageWatermarkByAddressRequestBody:
 
     @property
     def src_file(self):
-        """Gets the src_file of this CreateImageWatermarkByAddressRequestBody.
+        r"""Gets the src_file of this CreateImageWatermarkByAddressRequestBody.
 
         待加暗水印的图片地址，当前只支持华为云OBS文件，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
 
@@ -102,7 +102,7 @@ class CreateImageWatermarkByAddressRequestBody:
 
     @src_file.setter
     def src_file(self, src_file):
-        """Sets the src_file of this CreateImageWatermarkByAddressRequestBody.
+        r"""Sets the src_file of this CreateImageWatermarkByAddressRequestBody.
 
         待加暗水印的图片地址，当前只支持华为云OBS文件，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
 
@@ -113,7 +113,7 @@ class CreateImageWatermarkByAddressRequestBody:
 
     @property
     def blind_watermark(self):
-        """Gets the blind_watermark of this CreateImageWatermarkByAddressRequestBody.
+        r"""Gets the blind_watermark of this CreateImageWatermarkByAddressRequestBody.
 
         待嵌入的文字暗水印内容，长度不超过32个字符。当前仅支持数字及英文大小写。与图片暗水印image_watermark二选一。
 
@@ -124,7 +124,7 @@ class CreateImageWatermarkByAddressRequestBody:
 
     @blind_watermark.setter
     def blind_watermark(self, blind_watermark):
-        """Sets the blind_watermark of this CreateImageWatermarkByAddressRequestBody.
+        r"""Sets the blind_watermark of this CreateImageWatermarkByAddressRequestBody.
 
         待嵌入的文字暗水印内容，长度不超过32个字符。当前仅支持数字及英文大小写。与图片暗水印image_watermark二选一。
 
@@ -135,7 +135,7 @@ class CreateImageWatermarkByAddressRequestBody:
 
     @property
     def image_watermark(self):
-        """Gets the image_watermark of this CreateImageWatermarkByAddressRequestBody.
+        r"""Gets the image_watermark of this CreateImageWatermarkByAddressRequestBody.
 
         待嵌入的图片暗水印地址，格式要求同src_file字段，与文字暗水印 blind_watermark 二选一，都填写时，生效image_watermark。
 
@@ -146,7 +146,7 @@ class CreateImageWatermarkByAddressRequestBody:
 
     @image_watermark.setter
     def image_watermark(self, image_watermark):
-        """Sets the image_watermark of this CreateImageWatermarkByAddressRequestBody.
+        r"""Sets the image_watermark of this CreateImageWatermarkByAddressRequestBody.
 
         待嵌入的图片暗水印地址，格式要求同src_file字段，与文字暗水印 blind_watermark 二选一，都填写时，生效image_watermark。
 
@@ -157,7 +157,7 @@ class CreateImageWatermarkByAddressRequestBody:
 
     @property
     def dst_file(self):
-        """Gets the dst_file of this CreateImageWatermarkByAddressRequestBody.
+        r"""Gets the dst_file of this CreateImageWatermarkByAddressRequestBody.
 
         添加水印后的图片存放的地址，格式要求同src_file字段，不设置时，默认取src_file的值，即添加水印后覆盖原文件。
 
@@ -168,7 +168,7 @@ class CreateImageWatermarkByAddressRequestBody:
 
     @dst_file.setter
     def dst_file(self, dst_file):
-        """Sets the dst_file of this CreateImageWatermarkByAddressRequestBody.
+        r"""Sets the dst_file of this CreateImageWatermarkByAddressRequestBody.
 
         添加水印后的图片存放的地址，格式要求同src_file字段，不设置时，默认取src_file的值，即添加水印后覆盖原文件。
 

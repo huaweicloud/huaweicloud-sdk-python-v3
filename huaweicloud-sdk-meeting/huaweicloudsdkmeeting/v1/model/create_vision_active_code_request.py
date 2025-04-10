@@ -29,7 +29,7 @@ class CreateVisionActiveCodeRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, body=None):
-        """CreateVisionActiveCodeRequest
+        r"""CreateVisionActiveCodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateVisionActiveCodeRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateVisionActiveCodeRequest.
+        r"""Gets the x_request_id of this CreateVisionActiveCodeRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -68,7 +68,7 @@ class CreateVisionActiveCodeRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateVisionActiveCodeRequest.
+        r"""Sets the x_request_id of this CreateVisionActiveCodeRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -79,7 +79,7 @@ class CreateVisionActiveCodeRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this CreateVisionActiveCodeRequest.
+        r"""Gets the accept_language of this CreateVisionActiveCodeRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -90,7 +90,7 @@ class CreateVisionActiveCodeRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this CreateVisionActiveCodeRequest.
+        r"""Sets the accept_language of this CreateVisionActiveCodeRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -101,7 +101,7 @@ class CreateVisionActiveCodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVisionActiveCodeRequest.
+        r"""Gets the body of this CreateVisionActiveCodeRequest.
 
         :return: The body of this CreateVisionActiveCodeRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.VisionActiveCodeDTO`
@@ -110,7 +110,7 @@ class CreateVisionActiveCodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVisionActiveCodeRequest.
+        r"""Sets the body of this CreateVisionActiveCodeRequest.
 
         :param body: The body of this CreateVisionActiveCodeRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.VisionActiveCodeDTO`

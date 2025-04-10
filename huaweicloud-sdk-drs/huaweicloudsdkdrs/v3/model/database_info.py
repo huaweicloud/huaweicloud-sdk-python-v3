@@ -35,7 +35,7 @@ class DatabaseInfo:
     }
 
     def __init__(self, id=None, parent_id=None, object_type=None, object_name=None, object_alias_name=None, select=None):
-        """DatabaseInfo
+        r"""DatabaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DatabaseInfo:
 
     @property
     def id(self):
-        """Gets the id of this DatabaseInfo.
+        r"""Gets the id of this DatabaseInfo.
 
         object_type为database时，为库名；object_type为table或者view时，字段值参考示例。
 
@@ -89,7 +89,7 @@ class DatabaseInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DatabaseInfo.
+        r"""Sets the id of this DatabaseInfo.
 
         object_type为database时，为库名；object_type为table或者view时，字段值参考示例。
 
@@ -100,7 +100,7 @@ class DatabaseInfo:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this DatabaseInfo.
+        r"""Gets the parent_id of this DatabaseInfo.
 
         object_type为table或view时需要填写，为库名
 
@@ -111,7 +111,7 @@ class DatabaseInfo:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this DatabaseInfo.
+        r"""Sets the parent_id of this DatabaseInfo.
 
         object_type为table或view时需要填写，为库名
 
@@ -122,7 +122,7 @@ class DatabaseInfo:
 
     @property
     def object_type(self):
-        """Gets the object_type of this DatabaseInfo.
+        r"""Gets the object_type of this DatabaseInfo.
 
         类型
 
@@ -133,7 +133,7 @@ class DatabaseInfo:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this DatabaseInfo.
+        r"""Sets the object_type of this DatabaseInfo.
 
         类型
 
@@ -144,7 +144,7 @@ class DatabaseInfo:
 
     @property
     def object_name(self):
-        """Gets the object_name of this DatabaseInfo.
+        r"""Gets the object_name of this DatabaseInfo.
 
         数据库对象名称，库名、表名、视图名
 
@@ -155,7 +155,7 @@ class DatabaseInfo:
 
     @object_name.setter
     def object_name(self, object_name):
-        """Sets the object_name of this DatabaseInfo.
+        r"""Sets the object_name of this DatabaseInfo.
 
         数据库对象名称，库名、表名、视图名
 
@@ -166,7 +166,7 @@ class DatabaseInfo:
 
     @property
     def object_alias_name(self):
-        """Gets the object_alias_name of this DatabaseInfo.
+        r"""Gets the object_alias_name of this DatabaseInfo.
 
         别名，映射的新名称。
 
@@ -177,7 +177,7 @@ class DatabaseInfo:
 
     @object_alias_name.setter
     def object_alias_name(self, object_alias_name):
-        """Sets the object_alias_name of this DatabaseInfo.
+        r"""Sets the object_alias_name of this DatabaseInfo.
 
         别名，映射的新名称。
 
@@ -188,7 +188,7 @@ class DatabaseInfo:
 
     @property
     def select(self):
-        """Gets the select of this DatabaseInfo.
+        r"""Gets the select of this DatabaseInfo.
 
         是否选中，值为true会进行迁移，false该数据库对象不会迁移，partial为迁移库下面的部分表，不填默认为false
 
@@ -199,7 +199,7 @@ class DatabaseInfo:
 
     @select.setter
     def select(self, select):
-        """Sets the select of this DatabaseInfo.
+        r"""Sets the select of this DatabaseInfo.
 
         是否选中，值为true会进行迁移，false该数据库对象不会迁移，partial为迁移库下面的部分表，不填默认为false
 

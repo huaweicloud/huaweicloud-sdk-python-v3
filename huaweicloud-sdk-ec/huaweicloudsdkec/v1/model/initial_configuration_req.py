@@ -26,7 +26,7 @@ class InitialConfigurationReq:
     }
 
     def __init__(self, password=None):
-        """InitialConfigurationReq
+        r"""InitialConfigurationReq
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class InitialConfigurationReq:
 
     @property
     def password(self):
-        """Gets the password of this InitialConfigurationReq.
+        r"""Gets the password of this InitialConfigurationReq.
 
         加密URL的密码。由8-12位字符，包含数字、大写字母、小写字母，每种字符至少出现一次
 
@@ -55,7 +55,7 @@ class InitialConfigurationReq:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this InitialConfigurationReq.
+        r"""Sets the password of this InitialConfigurationReq.
 
         加密URL的密码。由8-12位字符，包含数字、大写字母、小写字母，每种字符至少出现一次
 

@@ -29,7 +29,7 @@ class UpdateTopicReplicaRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, body=None):
-        """UpdateTopicReplicaRequest
+        r"""UpdateTopicReplicaRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateTopicReplicaRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateTopicReplicaRequest.
+        r"""Gets the instance_id of this UpdateTopicReplicaRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class UpdateTopicReplicaRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateTopicReplicaRequest.
+        r"""Sets the instance_id of this UpdateTopicReplicaRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class UpdateTopicReplicaRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this UpdateTopicReplicaRequest.
+        r"""Gets the topic of this UpdateTopicReplicaRequest.
 
         Topic名称。
 
@@ -88,7 +88,7 @@ class UpdateTopicReplicaRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this UpdateTopicReplicaRequest.
+        r"""Sets the topic of this UpdateTopicReplicaRequest.
 
         Topic名称。
 
@@ -99,7 +99,7 @@ class UpdateTopicReplicaRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTopicReplicaRequest.
+        r"""Gets the body of this UpdateTopicReplicaRequest.
 
         :return: The body of this UpdateTopicReplicaRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.ResetReplicaReq`
@@ -108,7 +108,7 @@ class UpdateTopicReplicaRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTopicReplicaRequest.
+        r"""Sets the body of this UpdateTopicReplicaRequest.
 
         :param body: The body of this UpdateTopicReplicaRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.ResetReplicaReq`

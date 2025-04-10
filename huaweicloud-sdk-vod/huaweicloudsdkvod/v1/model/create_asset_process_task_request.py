@@ -25,7 +25,7 @@ class CreateAssetProcessTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAssetProcessTaskRequest
+        r"""CreateAssetProcessTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAssetProcessTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAssetProcessTaskRequest.
+        r"""Gets the body of this CreateAssetProcessTaskRequest.
 
         :return: The body of this CreateAssetProcessTaskRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.AssetProcessReq`
@@ -52,7 +52,7 @@ class CreateAssetProcessTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAssetProcessTaskRequest.
+        r"""Sets the body of this CreateAssetProcessTaskRequest.
 
         :param body: The body of this CreateAssetProcessTaskRequest.
         :type body: :class:`huaweicloudsdkvod.v1.AssetProcessReq`

@@ -39,7 +39,7 @@ class ListCompetitionWorksRequest:
     }
 
     def __init__(self, competition_id=None, stage_id=None, read_time=None, time_unit=None, offset=None, limit=None, sort_key=None, sort_dir=None):
-        """ListCompetitionWorksRequest
+        r"""ListCompetitionWorksRequest
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class ListCompetitionWorksRequest:
 
     @property
     def competition_id(self):
-        """Gets the competition_id of this ListCompetitionWorksRequest.
+        r"""Gets the competition_id of this ListCompetitionWorksRequest.
 
         要查询的大赛ID，由大赛平台提供
 
@@ -100,7 +100,7 @@ class ListCompetitionWorksRequest:
 
     @competition_id.setter
     def competition_id(self, competition_id):
-        """Sets the competition_id of this ListCompetitionWorksRequest.
+        r"""Sets the competition_id of this ListCompetitionWorksRequest.
 
         要查询的大赛ID，由大赛平台提供
 
@@ -111,7 +111,7 @@ class ListCompetitionWorksRequest:
 
     @property
     def stage_id(self):
-        """Gets the stage_id of this ListCompetitionWorksRequest.
+        r"""Gets the stage_id of this ListCompetitionWorksRequest.
 
         要查询的大赛阶段ID，由大赛平台提供
 
@@ -122,7 +122,7 @@ class ListCompetitionWorksRequest:
 
     @stage_id.setter
     def stage_id(self, stage_id):
-        """Sets the stage_id of this ListCompetitionWorksRequest.
+        r"""Sets the stage_id of this ListCompetitionWorksRequest.
 
         要查询的大赛阶段ID，由大赛平台提供
 
@@ -133,7 +133,7 @@ class ListCompetitionWorksRequest:
 
     @property
     def read_time(self):
-        """Gets the read_time of this ListCompetitionWorksRequest.
+        r"""Gets the read_time of this ListCompetitionWorksRequest.
 
         查询的截止时间
 
@@ -144,7 +144,7 @@ class ListCompetitionWorksRequest:
 
     @read_time.setter
     def read_time(self, read_time):
-        """Sets the read_time of this ListCompetitionWorksRequest.
+        r"""Sets the read_time of this ListCompetitionWorksRequest.
 
         查询的截止时间
 
@@ -155,7 +155,7 @@ class ListCompetitionWorksRequest:
 
     @property
     def time_unit(self):
-        """Gets the time_unit of this ListCompetitionWorksRequest.
+        r"""Gets the time_unit of this ListCompetitionWorksRequest.
 
         查询的时间范围。day表示以read_time作为结束时间,前一天内作为查询范围,hour表示以read_time作为结束时间,前一小内时作为查询范围。
 
@@ -166,7 +166,7 @@ class ListCompetitionWorksRequest:
 
     @time_unit.setter
     def time_unit(self, time_unit):
-        """Sets the time_unit of this ListCompetitionWorksRequest.
+        r"""Sets the time_unit of this ListCompetitionWorksRequest.
 
         查询的时间范围。day表示以read_time作为结束时间,前一天内作为查询范围,hour表示以read_time作为结束时间,前一小内时作为查询范围。
 
@@ -177,7 +177,7 @@ class ListCompetitionWorksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCompetitionWorksRequest.
+        r"""Gets the offset of this ListCompetitionWorksRequest.
 
         作品记录的起始编号,如果不传默认从0开始,offset为0时表示从第一条记录开始
 
@@ -188,7 +188,7 @@ class ListCompetitionWorksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCompetitionWorksRequest.
+        r"""Sets the offset of this ListCompetitionWorksRequest.
 
         作品记录的起始编号,如果不传默认从0开始,offset为0时表示从第一条记录开始
 
@@ -199,7 +199,7 @@ class ListCompetitionWorksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCompetitionWorksRequest.
+        r"""Gets the limit of this ListCompetitionWorksRequest.
 
         每页包含的作品记录数,如果不传默认返回100条，并且返回最大条数为100
 
@@ -210,7 +210,7 @@ class ListCompetitionWorksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCompetitionWorksRequest.
+        r"""Sets the limit of this ListCompetitionWorksRequest.
 
         每页包含的作品记录数,如果不传默认返回100条，并且返回最大条数为100
 
@@ -221,7 +221,7 @@ class ListCompetitionWorksRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListCompetitionWorksRequest.
+        r"""Gets the sort_key of this ListCompetitionWorksRequest.
 
         需要排序的字段，只支持works_id字段,如果不传则不进行排序
 
@@ -232,7 +232,7 @@ class ListCompetitionWorksRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListCompetitionWorksRequest.
+        r"""Sets the sort_key of this ListCompetitionWorksRequest.
 
         需要排序的字段，只支持works_id字段,如果不传则不进行排序
 
@@ -243,7 +243,7 @@ class ListCompetitionWorksRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListCompetitionWorksRequest.
+        r"""Gets the sort_dir of this ListCompetitionWorksRequest.
 
         排序类型，支持asc|desc，默认为asc升序
 
@@ -254,7 +254,7 @@ class ListCompetitionWorksRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListCompetitionWorksRequest.
+        r"""Sets the sort_dir of this ListCompetitionWorksRequest.
 
         排序类型，支持asc|desc，默认为asc升序
 

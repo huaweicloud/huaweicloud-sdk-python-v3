@@ -25,7 +25,7 @@ class QuotaResult:
     }
 
     def __init__(self, resources=None):
-        """QuotaResult
+        r"""QuotaResult
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class QuotaResult:
 
     @property
     def resources(self):
-        """Gets the resources of this QuotaResult.
+        r"""Gets the resources of this QuotaResult.
 
         资源信息
 
@@ -54,7 +54,7 @@ class QuotaResult:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this QuotaResult.
+        r"""Sets the resources of this QuotaResult.
 
         资源信息
 

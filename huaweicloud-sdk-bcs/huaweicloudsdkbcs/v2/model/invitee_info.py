@@ -33,7 +33,7 @@ class InviteeInfo:
     }
 
     def __init__(self, invitee_id=None, invitee_name=None, invitee_bcs_name=None, invitee_bcs_id=None, invitee_project_id=None):
-        """InviteeInfo
+        r"""InviteeInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class InviteeInfo:
 
     @property
     def invitee_id(self):
-        """Gets the invitee_id of this InviteeInfo.
+        r"""Gets the invitee_id of this InviteeInfo.
 
         被邀请用户id
 
@@ -82,7 +82,7 @@ class InviteeInfo:
 
     @invitee_id.setter
     def invitee_id(self, invitee_id):
-        """Sets the invitee_id of this InviteeInfo.
+        r"""Sets the invitee_id of this InviteeInfo.
 
         被邀请用户id
 
@@ -93,7 +93,7 @@ class InviteeInfo:
 
     @property
     def invitee_name(self):
-        """Gets the invitee_name of this InviteeInfo.
+        r"""Gets the invitee_name of this InviteeInfo.
 
         被邀请租户名称
 
@@ -104,7 +104,7 @@ class InviteeInfo:
 
     @invitee_name.setter
     def invitee_name(self, invitee_name):
-        """Sets the invitee_name of this InviteeInfo.
+        r"""Sets the invitee_name of this InviteeInfo.
 
         被邀请租户名称
 
@@ -115,7 +115,7 @@ class InviteeInfo:
 
     @property
     def invitee_bcs_name(self):
-        """Gets the invitee_bcs_name of this InviteeInfo.
+        r"""Gets the invitee_bcs_name of this InviteeInfo.
 
         被邀请的服务实例名称
 
@@ -126,7 +126,7 @@ class InviteeInfo:
 
     @invitee_bcs_name.setter
     def invitee_bcs_name(self, invitee_bcs_name):
-        """Sets the invitee_bcs_name of this InviteeInfo.
+        r"""Sets the invitee_bcs_name of this InviteeInfo.
 
         被邀请的服务实例名称
 
@@ -137,7 +137,7 @@ class InviteeInfo:
 
     @property
     def invitee_bcs_id(self):
-        """Gets the invitee_bcs_id of this InviteeInfo.
+        r"""Gets the invitee_bcs_id of this InviteeInfo.
 
         被邀请的服务实例id
 
@@ -148,7 +148,7 @@ class InviteeInfo:
 
     @invitee_bcs_id.setter
     def invitee_bcs_id(self, invitee_bcs_id):
-        """Sets the invitee_bcs_id of this InviteeInfo.
+        r"""Sets the invitee_bcs_id of this InviteeInfo.
 
         被邀请的服务实例id
 
@@ -159,7 +159,7 @@ class InviteeInfo:
 
     @property
     def invitee_project_id(self):
-        """Gets the invitee_project_id of this InviteeInfo.
+        r"""Gets the invitee_project_id of this InviteeInfo.
 
         被邀请的项目id
 
@@ -170,7 +170,7 @@ class InviteeInfo:
 
     @invitee_project_id.setter
     def invitee_project_id(self, invitee_project_id):
-        """Sets the invitee_project_id of this InviteeInfo.
+        r"""Sets the invitee_project_id of this InviteeInfo.
 
         被邀请的项目id
 

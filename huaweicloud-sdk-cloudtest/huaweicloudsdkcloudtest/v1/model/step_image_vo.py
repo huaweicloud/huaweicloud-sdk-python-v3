@@ -27,7 +27,7 @@ class StepImageVo:
     }
 
     def __init__(self, img_id=None, img_url=None):
-        """StepImageVo
+        r"""StepImageVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StepImageVo:
 
     @property
     def img_id(self):
-        """Gets the img_id of this StepImageVo.
+        r"""Gets the img_id of this StepImageVo.
 
         测试步骤图片id
 
@@ -61,7 +61,7 @@ class StepImageVo:
 
     @img_id.setter
     def img_id(self, img_id):
-        """Sets the img_id of this StepImageVo.
+        r"""Sets the img_id of this StepImageVo.
 
         测试步骤图片id
 
@@ -72,7 +72,7 @@ class StepImageVo:
 
     @property
     def img_url(self):
-        """Gets the img_url of this StepImageVo.
+        r"""Gets the img_url of this StepImageVo.
 
         测试步骤图片路径
 
@@ -83,7 +83,7 @@ class StepImageVo:
 
     @img_url.setter
     def img_url(self, img_url):
-        """Sets the img_url of this StepImageVo.
+        r"""Sets the img_url of this StepImageVo.
 
         测试步骤图片路径
 

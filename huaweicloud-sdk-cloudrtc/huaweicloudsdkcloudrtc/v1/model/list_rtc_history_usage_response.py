@@ -28,7 +28,7 @@ class ListRtcHistoryUsageResponse(SdkResponse):
     }
 
     def __init__(self, usage=None, x_request_id=None):
-        """ListRtcHistoryUsageResponse
+        r"""ListRtcHistoryUsageResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRtcHistoryUsageResponse(SdkResponse):
 
     @property
     def usage(self):
-        """Gets the usage of this ListRtcHistoryUsageResponse.
+        r"""Gets the usage of this ListRtcHistoryUsageResponse.
 
         时间戳及相应时间的指标数值列表
 
@@ -62,7 +62,7 @@ class ListRtcHistoryUsageResponse(SdkResponse):
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this ListRtcHistoryUsageResponse.
+        r"""Sets the usage of this ListRtcHistoryUsageResponse.
 
         时间戳及相应时间的指标数值列表
 
@@ -73,7 +73,7 @@ class ListRtcHistoryUsageResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListRtcHistoryUsageResponse.
+        r"""Gets the x_request_id of this ListRtcHistoryUsageResponse.
 
         :return: The x_request_id of this ListRtcHistoryUsageResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListRtcHistoryUsageResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListRtcHistoryUsageResponse.
+        r"""Sets the x_request_id of this ListRtcHistoryUsageResponse.
 
         :param x_request_id: The x_request_id of this ListRtcHistoryUsageResponse.
         :type x_request_id: str

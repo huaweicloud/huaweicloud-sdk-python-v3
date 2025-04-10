@@ -28,7 +28,7 @@ class UpdateGdgwRouteTableResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, gdgw_routetable=None):
-        """UpdateGdgwRouteTableResponse
+        r"""UpdateGdgwRouteTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateGdgwRouteTableResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateGdgwRouteTableResponse.
+        r"""Gets the request_id of this UpdateGdgwRouteTableResponse.
 
         请求id
 
@@ -62,7 +62,7 @@ class UpdateGdgwRouteTableResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateGdgwRouteTableResponse.
+        r"""Sets the request_id of this UpdateGdgwRouteTableResponse.
 
         请求id
 
@@ -73,7 +73,7 @@ class UpdateGdgwRouteTableResponse(SdkResponse):
 
     @property
     def gdgw_routetable(self):
-        """Gets the gdgw_routetable of this UpdateGdgwRouteTableResponse.
+        r"""Gets the gdgw_routetable of this UpdateGdgwRouteTableResponse.
 
         全域接入网关路由表
 
@@ -84,7 +84,7 @@ class UpdateGdgwRouteTableResponse(SdkResponse):
 
     @gdgw_routetable.setter
     def gdgw_routetable(self, gdgw_routetable):
-        """Sets the gdgw_routetable of this UpdateGdgwRouteTableResponse.
+        r"""Sets the gdgw_routetable of this UpdateGdgwRouteTableResponse.
 
         全域接入网关路由表
 

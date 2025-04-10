@@ -26,7 +26,7 @@ class DeletePublicIpResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeletePublicIpResponse
+        r"""DeletePublicIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeletePublicIpResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeletePublicIpResponse.
+        r"""Gets the job_id of this DeletePublicIpResponse.
 
         请求提交任务ID。
 
@@ -55,7 +55,7 @@ class DeletePublicIpResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeletePublicIpResponse.
+        r"""Sets the job_id of this DeletePublicIpResponse.
 
         请求提交任务ID。
 

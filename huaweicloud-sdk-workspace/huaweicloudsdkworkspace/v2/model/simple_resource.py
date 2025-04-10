@@ -29,7 +29,7 @@ class SimpleResource:
     }
 
     def __init__(self, type=None, quota=None, used=None):
-        """SimpleResource
+        r"""SimpleResource
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SimpleResource:
 
     @property
     def type(self):
-        """Gets the type of this SimpleResource.
+        r"""Gets the type of this SimpleResource.
 
         资源类别。 general_instances：普通桌面 Memory：内存 cores：CPU volumes：磁盘数量 volume_gigabytes：磁盘容量 gpu_instances：GPU桌面 deh：云办公主机 users：用户 policy_groups: 策略组 Cores: CPU(配额工具使用)
 
@@ -68,7 +68,7 @@ class SimpleResource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SimpleResource.
+        r"""Sets the type of this SimpleResource.
 
         资源类别。 general_instances：普通桌面 Memory：内存 cores：CPU volumes：磁盘数量 volume_gigabytes：磁盘容量 gpu_instances：GPU桌面 deh：云办公主机 users：用户 policy_groups: 策略组 Cores: CPU(配额工具使用)
 
@@ -79,7 +79,7 @@ class SimpleResource:
 
     @property
     def quota(self):
-        """Gets the quota of this SimpleResource.
+        r"""Gets the quota of this SimpleResource.
 
         配额数
 
@@ -90,7 +90,7 @@ class SimpleResource:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this SimpleResource.
+        r"""Sets the quota of this SimpleResource.
 
         配额数
 
@@ -101,7 +101,7 @@ class SimpleResource:
 
     @property
     def used(self):
-        """Gets the used of this SimpleResource.
+        r"""Gets the used of this SimpleResource.
 
         配额已用值
 
@@ -112,7 +112,7 @@ class SimpleResource:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this SimpleResource.
+        r"""Sets the used of this SimpleResource.
 
         配额已用值
 

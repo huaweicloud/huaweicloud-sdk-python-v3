@@ -25,7 +25,7 @@ class ShowTagByDesktopIdRequest:
     }
 
     def __init__(self, desktop_id=None):
-        """ShowTagByDesktopIdRequest
+        r"""ShowTagByDesktopIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowTagByDesktopIdRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ShowTagByDesktopIdRequest.
+        r"""Gets the desktop_id of this ShowTagByDesktopIdRequest.
 
         桌面id。
 
@@ -53,7 +53,7 @@ class ShowTagByDesktopIdRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ShowTagByDesktopIdRequest.
+        r"""Sets the desktop_id of this ShowTagByDesktopIdRequest.
 
         桌面id。
 

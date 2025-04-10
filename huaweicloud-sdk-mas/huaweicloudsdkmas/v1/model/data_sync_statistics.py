@@ -31,7 +31,7 @@ class DataSyncStatistics:
     }
 
     def __init__(self, abnormal_count=None, running_count=None, type_two_way_count=None, type_unidirectional_count=None):
-        """DataSyncStatistics
+        r"""DataSyncStatistics
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DataSyncStatistics:
 
     @property
     def abnormal_count(self):
-        """Gets the abnormal_count of this DataSyncStatistics.
+        r"""Gets the abnormal_count of this DataSyncStatistics.
 
         :return: The abnormal_count of this DataSyncStatistics.
         :rtype: int
@@ -73,7 +73,7 @@ class DataSyncStatistics:
 
     @abnormal_count.setter
     def abnormal_count(self, abnormal_count):
-        """Sets the abnormal_count of this DataSyncStatistics.
+        r"""Sets the abnormal_count of this DataSyncStatistics.
 
         :param abnormal_count: The abnormal_count of this DataSyncStatistics.
         :type abnormal_count: int
@@ -82,7 +82,7 @@ class DataSyncStatistics:
 
     @property
     def running_count(self):
-        """Gets the running_count of this DataSyncStatistics.
+        r"""Gets the running_count of this DataSyncStatistics.
 
         :return: The running_count of this DataSyncStatistics.
         :rtype: int
@@ -91,7 +91,7 @@ class DataSyncStatistics:
 
     @running_count.setter
     def running_count(self, running_count):
-        """Sets the running_count of this DataSyncStatistics.
+        r"""Sets the running_count of this DataSyncStatistics.
 
         :param running_count: The running_count of this DataSyncStatistics.
         :type running_count: int
@@ -100,7 +100,7 @@ class DataSyncStatistics:
 
     @property
     def type_two_way_count(self):
-        """Gets the type_two_way_count of this DataSyncStatistics.
+        r"""Gets the type_two_way_count of this DataSyncStatistics.
 
         :return: The type_two_way_count of this DataSyncStatistics.
         :rtype: int
@@ -109,7 +109,7 @@ class DataSyncStatistics:
 
     @type_two_way_count.setter
     def type_two_way_count(self, type_two_way_count):
-        """Sets the type_two_way_count of this DataSyncStatistics.
+        r"""Sets the type_two_way_count of this DataSyncStatistics.
 
         :param type_two_way_count: The type_two_way_count of this DataSyncStatistics.
         :type type_two_way_count: int
@@ -118,7 +118,7 @@ class DataSyncStatistics:
 
     @property
     def type_unidirectional_count(self):
-        """Gets the type_unidirectional_count of this DataSyncStatistics.
+        r"""Gets the type_unidirectional_count of this DataSyncStatistics.
 
         :return: The type_unidirectional_count of this DataSyncStatistics.
         :rtype: int
@@ -127,7 +127,7 @@ class DataSyncStatistics:
 
     @type_unidirectional_count.setter
     def type_unidirectional_count(self, type_unidirectional_count):
-        """Sets the type_unidirectional_count of this DataSyncStatistics.
+        r"""Sets the type_unidirectional_count of this DataSyncStatistics.
 
         :param type_unidirectional_count: The type_unidirectional_count of this DataSyncStatistics.
         :type type_unidirectional_count: int

@@ -26,7 +26,7 @@ class ListPostgresqlHbaInfoResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListPostgresqlHbaInfoResponse
+        r"""ListPostgresqlHbaInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPostgresqlHbaInfoResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListPostgresqlHbaInfoResponse.
+        r"""Gets the body of this ListPostgresqlHbaInfoResponse.
 
         :return: The body of this ListPostgresqlHbaInfoResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.PostgresqlHbaConf`]
@@ -53,7 +53,7 @@ class ListPostgresqlHbaInfoResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPostgresqlHbaInfoResponse.
+        r"""Sets the body of this ListPostgresqlHbaInfoResponse.
 
         :param body: The body of this ListPostgresqlHbaInfoResponse.
         :type body: list[:class:`huaweicloudsdkrds.v3.PostgresqlHbaConf`]

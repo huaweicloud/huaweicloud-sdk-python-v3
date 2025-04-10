@@ -37,7 +37,7 @@ class ImportApiDefinitionsAsyncRequestBody:
     }
 
     def __init__(self, is_create_group=None, group_id=None, extend_mode=None, simple_mode=None, mock_mode=None, api_mode=None, file_name=None):
-        """ImportApiDefinitionsAsyncRequestBody
+        r"""ImportApiDefinitionsAsyncRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ImportApiDefinitionsAsyncRequestBody:
 
     @property
     def is_create_group(self):
-        """Gets the is_create_group of this ImportApiDefinitionsAsyncRequestBody.
+        r"""Gets the is_create_group of this ImportApiDefinitionsAsyncRequestBody.
 
         是否创建新分组
 
@@ -95,7 +95,7 @@ class ImportApiDefinitionsAsyncRequestBody:
 
     @is_create_group.setter
     def is_create_group(self, is_create_group):
-        """Sets the is_create_group of this ImportApiDefinitionsAsyncRequestBody.
+        r"""Sets the is_create_group of this ImportApiDefinitionsAsyncRequestBody.
 
         是否创建新分组
 
@@ -106,7 +106,7 @@ class ImportApiDefinitionsAsyncRequestBody:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ImportApiDefinitionsAsyncRequestBody.
+        r"""Gets the group_id of this ImportApiDefinitionsAsyncRequestBody.
 
         API分组编号，当is_create_group=false时为必填
 
@@ -117,7 +117,7 @@ class ImportApiDefinitionsAsyncRequestBody:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ImportApiDefinitionsAsyncRequestBody.
+        r"""Sets the group_id of this ImportApiDefinitionsAsyncRequestBody.
 
         API分组编号，当is_create_group=false时为必填
 
@@ -128,7 +128,7 @@ class ImportApiDefinitionsAsyncRequestBody:
 
     @property
     def extend_mode(self):
-        """Gets the extend_mode of this ImportApiDefinitionsAsyncRequestBody.
+        r"""Gets the extend_mode of this ImportApiDefinitionsAsyncRequestBody.
 
         扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息
 
@@ -139,7 +139,7 @@ class ImportApiDefinitionsAsyncRequestBody:
 
     @extend_mode.setter
     def extend_mode(self, extend_mode):
-        """Sets the extend_mode of this ImportApiDefinitionsAsyncRequestBody.
+        r"""Sets the extend_mode of this ImportApiDefinitionsAsyncRequestBody.
 
         扩展信息导入模式 - merge：当扩展信息定义冲突时，merge保留原有扩展信息 - override：当扩展信息定义冲突时，override会覆盖原有扩展信息
 
@@ -150,7 +150,7 @@ class ImportApiDefinitionsAsyncRequestBody:
 
     @property
     def simple_mode(self):
-        """Gets the simple_mode of this ImportApiDefinitionsAsyncRequestBody.
+        r"""Gets the simple_mode of this ImportApiDefinitionsAsyncRequestBody.
 
         是否开启简易导入模式
 
@@ -161,7 +161,7 @@ class ImportApiDefinitionsAsyncRequestBody:
 
     @simple_mode.setter
     def simple_mode(self, simple_mode):
-        """Sets the simple_mode of this ImportApiDefinitionsAsyncRequestBody.
+        r"""Sets the simple_mode of this ImportApiDefinitionsAsyncRequestBody.
 
         是否开启简易导入模式
 
@@ -172,7 +172,7 @@ class ImportApiDefinitionsAsyncRequestBody:
 
     @property
     def mock_mode(self):
-        """Gets the mock_mode of this ImportApiDefinitionsAsyncRequestBody.
+        r"""Gets the mock_mode of this ImportApiDefinitionsAsyncRequestBody.
 
         是否开启Mock后端
 
@@ -183,7 +183,7 @@ class ImportApiDefinitionsAsyncRequestBody:
 
     @mock_mode.setter
     def mock_mode(self, mock_mode):
-        """Sets the mock_mode of this ImportApiDefinitionsAsyncRequestBody.
+        r"""Sets the mock_mode of this ImportApiDefinitionsAsyncRequestBody.
 
         是否开启Mock后端
 
@@ -194,7 +194,7 @@ class ImportApiDefinitionsAsyncRequestBody:
 
     @property
     def api_mode(self):
-        """Gets the api_mode of this ImportApiDefinitionsAsyncRequestBody.
+        r"""Gets the api_mode of this ImportApiDefinitionsAsyncRequestBody.
 
         导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息
 
@@ -205,7 +205,7 @@ class ImportApiDefinitionsAsyncRequestBody:
 
     @api_mode.setter
     def api_mode(self, api_mode):
-        """Sets the api_mode of this ImportApiDefinitionsAsyncRequestBody.
+        r"""Sets the api_mode of this ImportApiDefinitionsAsyncRequestBody.
 
         导入模式 - merge：当API信息定义冲突时，merge保留原有API信息 - override：当API信息定义冲突时，override会覆盖原有API信息
 
@@ -216,7 +216,7 @@ class ImportApiDefinitionsAsyncRequestBody:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ImportApiDefinitionsAsyncRequestBody.
+        r"""Gets the file_name of this ImportApiDefinitionsAsyncRequestBody.
 
         导入Api的请求体，json或yaml格式的文件
 
@@ -227,7 +227,7 @@ class ImportApiDefinitionsAsyncRequestBody:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ImportApiDefinitionsAsyncRequestBody.
+        r"""Sets the file_name of this ImportApiDefinitionsAsyncRequestBody.
 
         导入Api的请求体，json或yaml格式的文件
 

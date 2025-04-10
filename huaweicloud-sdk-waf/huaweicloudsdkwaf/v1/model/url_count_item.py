@@ -29,7 +29,7 @@ class UrlCountItem:
     }
 
     def __init__(self, key=None, num=None, host=None):
-        """UrlCountItem
+        r"""UrlCountItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UrlCountItem:
 
     @property
     def key(self):
-        """Gets the key of this UrlCountItem.
+        r"""Gets the key of this UrlCountItem.
 
         攻击类型
 
@@ -68,7 +68,7 @@ class UrlCountItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this UrlCountItem.
+        r"""Sets the key of this UrlCountItem.
 
         攻击类型
 
@@ -79,7 +79,7 @@ class UrlCountItem:
 
     @property
     def num(self):
-        """Gets the num of this UrlCountItem.
+        r"""Gets the num of this UrlCountItem.
 
         数量
 
@@ -90,7 +90,7 @@ class UrlCountItem:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this UrlCountItem.
+        r"""Sets the num of this UrlCountItem.
 
         数量
 
@@ -101,7 +101,7 @@ class UrlCountItem:
 
     @property
     def host(self):
-        """Gets the host of this UrlCountItem.
+        r"""Gets the host of this UrlCountItem.
 
         防护域名
 
@@ -112,7 +112,7 @@ class UrlCountItem:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this UrlCountItem.
+        r"""Sets the host of this UrlCountItem.
 
         防护域名
 

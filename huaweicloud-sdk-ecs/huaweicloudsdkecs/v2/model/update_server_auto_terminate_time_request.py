@@ -27,7 +27,7 @@ class UpdateServerAutoTerminateTimeRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """UpdateServerAutoTerminateTimeRequest
+        r"""UpdateServerAutoTerminateTimeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateServerAutoTerminateTimeRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this UpdateServerAutoTerminateTimeRequest.
+        r"""Gets the server_id of this UpdateServerAutoTerminateTimeRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class UpdateServerAutoTerminateTimeRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this UpdateServerAutoTerminateTimeRequest.
+        r"""Sets the server_id of this UpdateServerAutoTerminateTimeRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class UpdateServerAutoTerminateTimeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateServerAutoTerminateTimeRequest.
+        r"""Gets the body of this UpdateServerAutoTerminateTimeRequest.
 
         :return: The body of this UpdateServerAutoTerminateTimeRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerAutoTerminateTimeRequestBody`
@@ -80,7 +80,7 @@ class UpdateServerAutoTerminateTimeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateServerAutoTerminateTimeRequest.
+        r"""Sets the body of this UpdateServerAutoTerminateTimeRequest.
 
         :param body: The body of this UpdateServerAutoTerminateTimeRequest.
         :type body: :class:`huaweicloudsdkecs.v2.UpdateServerAutoTerminateTimeRequestBody`

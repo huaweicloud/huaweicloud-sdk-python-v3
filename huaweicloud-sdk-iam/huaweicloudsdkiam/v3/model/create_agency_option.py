@@ -35,7 +35,7 @@ class CreateAgencyOption:
     }
 
     def __init__(self, name=None, domain_id=None, trust_domain_id=None, trust_domain_name=None, description=None, duration=None):
-        """CreateAgencyOption
+        r"""CreateAgencyOption
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class CreateAgencyOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateAgencyOption.
+        r"""Gets the name of this CreateAgencyOption.
 
         委托名，长度不大于64位。
 
@@ -87,7 +87,7 @@ class CreateAgencyOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAgencyOption.
+        r"""Sets the name of this CreateAgencyOption.
 
         委托名，长度不大于64位。
 
@@ -98,7 +98,7 @@ class CreateAgencyOption:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateAgencyOption.
+        r"""Gets the domain_id of this CreateAgencyOption.
 
         委托方账号ID。
 
@@ -109,7 +109,7 @@ class CreateAgencyOption:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateAgencyOption.
+        r"""Sets the domain_id of this CreateAgencyOption.
 
         委托方账号ID。
 
@@ -120,7 +120,7 @@ class CreateAgencyOption:
 
     @property
     def trust_domain_id(self):
-        """Gets the trust_domain_id of this CreateAgencyOption.
+        r"""Gets the trust_domain_id of this CreateAgencyOption.
 
         被委托方账号ID。trust_domain_id和trust_domain_name至少填写一个，若都填写优先校验trust_domain_name。
 
@@ -131,7 +131,7 @@ class CreateAgencyOption:
 
     @trust_domain_id.setter
     def trust_domain_id(self, trust_domain_id):
-        """Sets the trust_domain_id of this CreateAgencyOption.
+        r"""Sets the trust_domain_id of this CreateAgencyOption.
 
         被委托方账号ID。trust_domain_id和trust_domain_name至少填写一个，若都填写优先校验trust_domain_name。
 
@@ -142,7 +142,7 @@ class CreateAgencyOption:
 
     @property
     def trust_domain_name(self):
-        """Gets the trust_domain_name of this CreateAgencyOption.
+        r"""Gets the trust_domain_name of this CreateAgencyOption.
 
         被委托方账号名。trust_domain_id和trust_domain_name至少填写一个，若都填写优先校验trust_domain_name。
 
@@ -153,7 +153,7 @@ class CreateAgencyOption:
 
     @trust_domain_name.setter
     def trust_domain_name(self, trust_domain_name):
-        """Sets the trust_domain_name of this CreateAgencyOption.
+        r"""Sets the trust_domain_name of this CreateAgencyOption.
 
         被委托方账号名。trust_domain_id和trust_domain_name至少填写一个，若都填写优先校验trust_domain_name。
 
@@ -164,7 +164,7 @@ class CreateAgencyOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateAgencyOption.
+        r"""Gets the description of this CreateAgencyOption.
 
         委托描述信息，长度不大于255位。
 
@@ -175,7 +175,7 @@ class CreateAgencyOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAgencyOption.
+        r"""Sets the description of this CreateAgencyOption.
 
         委托描述信息，长度不大于255位。
 
@@ -186,7 +186,7 @@ class CreateAgencyOption:
 
     @property
     def duration(self):
-        """Gets the duration of this CreateAgencyOption.
+        r"""Gets the duration of this CreateAgencyOption.
 
         description: 委托的期限，单位为“天”。默认为FOREVER。取值为“FOREVER\"表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天,取值为自定义天数表示委托的期限为有限天数，如20。四个参数至少填写一个。
 
@@ -197,7 +197,7 @@ class CreateAgencyOption:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this CreateAgencyOption.
+        r"""Sets the duration of this CreateAgencyOption.
 
         description: 委托的期限，单位为“天”。默认为FOREVER。取值为“FOREVER\"表示委托的期限为永久，取值为\"ONEDAY\"表示委托的期限为一天,取值为自定义天数表示委托的期限为有限天数，如20。四个参数至少填写一个。
 

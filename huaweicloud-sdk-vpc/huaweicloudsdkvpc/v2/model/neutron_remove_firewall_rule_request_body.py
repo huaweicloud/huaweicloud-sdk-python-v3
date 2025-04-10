@@ -25,7 +25,7 @@ class NeutronRemoveFirewallRuleRequestBody:
     }
 
     def __init__(self, firewall_rule_id=None):
-        """NeutronRemoveFirewallRuleRequestBody
+        r"""NeutronRemoveFirewallRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NeutronRemoveFirewallRuleRequestBody:
 
     @property
     def firewall_rule_id(self):
-        """Gets the firewall_rule_id of this NeutronRemoveFirewallRuleRequestBody.
+        r"""Gets the firewall_rule_id of this NeutronRemoveFirewallRuleRequestBody.
 
         功能说明：待移除的ACL规则ID
 
@@ -53,7 +53,7 @@ class NeutronRemoveFirewallRuleRequestBody:
 
     @firewall_rule_id.setter
     def firewall_rule_id(self, firewall_rule_id):
-        """Sets the firewall_rule_id of this NeutronRemoveFirewallRuleRequestBody.
+        r"""Sets the firewall_rule_id of this NeutronRemoveFirewallRuleRequestBody.
 
         功能说明：待移除的ACL规则ID
 

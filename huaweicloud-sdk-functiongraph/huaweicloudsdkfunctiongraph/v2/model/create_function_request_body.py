@@ -89,7 +89,7 @@ class CreateFunctionRequestBody:
     }
 
     def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, depend_version_list=None, func_vpc=None, memory_size=None, gpu_memory=None, gpu_type=None, code_type=None, code_url=None, code_filename=None, custom_image=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, mount_config=None, initializer_handler=None, initializer_timeout=None, pre_stop_handler=None, pre_stop_timeout=None, enterprise_project_id=None, type=None, log_config=None, network_controller=None, is_stateful_function=None, enable_dynamic_memory=None, enable_lts_log=None, lts_custom_tag=None):
-        """CreateFunctionRequestBody
+        r"""CreateFunctionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -261,7 +261,7 @@ class CreateFunctionRequestBody:
 
     @property
     def func_name(self):
-        """Gets the func_name of this CreateFunctionRequestBody.
+        r"""Gets the func_name of this CreateFunctionRequestBody.
 
         函数名称。
 
@@ -272,7 +272,7 @@ class CreateFunctionRequestBody:
 
     @func_name.setter
     def func_name(self, func_name):
-        """Sets the func_name of this CreateFunctionRequestBody.
+        r"""Sets the func_name of this CreateFunctionRequestBody.
 
         函数名称。
 
@@ -283,7 +283,7 @@ class CreateFunctionRequestBody:
 
     @property
     def package(self):
-        """Gets the package of this CreateFunctionRequestBody.
+        r"""Gets the package of this CreateFunctionRequestBody.
 
         函数所属的分组Package，用于用户针对函数的自定义分组。
 
@@ -294,7 +294,7 @@ class CreateFunctionRequestBody:
 
     @package.setter
     def package(self, package):
-        """Sets the package of this CreateFunctionRequestBody.
+        r"""Sets the package of this CreateFunctionRequestBody.
 
         函数所属的分组Package，用于用户针对函数的自定义分组。
 
@@ -305,7 +305,7 @@ class CreateFunctionRequestBody:
 
     @property
     def runtime(self):
-        """Gets the runtime of this CreateFunctionRequestBody.
+        r"""Gets the runtime of this CreateFunctionRequestBody.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -316,7 +316,7 @@ class CreateFunctionRequestBody:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this CreateFunctionRequestBody.
+        r"""Sets the runtime of this CreateFunctionRequestBody.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -327,7 +327,7 @@ class CreateFunctionRequestBody:
 
     @property
     def timeout(self):
-        """Gets the timeout of this CreateFunctionRequestBody.
+        r"""Gets the timeout of this CreateFunctionRequestBody.
 
         函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
@@ -338,7 +338,7 @@ class CreateFunctionRequestBody:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this CreateFunctionRequestBody.
+        r"""Sets the timeout of this CreateFunctionRequestBody.
 
         函数执行超时时间，超时函数将被强行停止，范围3～259200秒。
 
@@ -349,7 +349,7 @@ class CreateFunctionRequestBody:
 
     @property
     def handler(self):
-        """Gets the handler of this CreateFunctionRequestBody.
+        r"""Gets the handler of this CreateFunctionRequestBody.
 
         函数执行入口 规则：xx.xx，必须包含“. ”；自定义镜像函数handler为“-” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
 
@@ -360,7 +360,7 @@ class CreateFunctionRequestBody:
 
     @handler.setter
     def handler(self, handler):
-        """Sets the handler of this CreateFunctionRequestBody.
+        r"""Sets the handler of this CreateFunctionRequestBody.
 
         函数执行入口 规则：xx.xx，必须包含“. ”；自定义镜像函数handler为“-” 举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。
 
@@ -371,7 +371,7 @@ class CreateFunctionRequestBody:
 
     @property
     def depend_version_list(self):
-        """Gets the depend_version_list of this CreateFunctionRequestBody.
+        r"""Gets the depend_version_list of this CreateFunctionRequestBody.
 
         依赖版本id列表
 
@@ -382,7 +382,7 @@ class CreateFunctionRequestBody:
 
     @depend_version_list.setter
     def depend_version_list(self, depend_version_list):
-        """Sets the depend_version_list of this CreateFunctionRequestBody.
+        r"""Sets the depend_version_list of this CreateFunctionRequestBody.
 
         依赖版本id列表
 
@@ -393,7 +393,7 @@ class CreateFunctionRequestBody:
 
     @property
     def func_vpc(self):
-        """Gets the func_vpc of this CreateFunctionRequestBody.
+        r"""Gets the func_vpc of this CreateFunctionRequestBody.
 
         :return: The func_vpc of this CreateFunctionRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
@@ -402,7 +402,7 @@ class CreateFunctionRequestBody:
 
     @func_vpc.setter
     def func_vpc(self, func_vpc):
-        """Sets the func_vpc of this CreateFunctionRequestBody.
+        r"""Sets the func_vpc of this CreateFunctionRequestBody.
 
         :param func_vpc: The func_vpc of this CreateFunctionRequestBody.
         :type func_vpc: :class:`huaweicloudsdkfunctiongraph.v2.FuncVpc`
@@ -411,7 +411,7 @@ class CreateFunctionRequestBody:
 
     @property
     def memory_size(self):
-        """Gets the memory_size of this CreateFunctionRequestBody.
+        r"""Gets the memory_size of this CreateFunctionRequestBody.
 
         函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
 
@@ -422,7 +422,7 @@ class CreateFunctionRequestBody:
 
     @memory_size.setter
     def memory_size(self, memory_size):
-        """Sets the memory_size of this CreateFunctionRequestBody.
+        r"""Sets the memory_size of this CreateFunctionRequestBody.
 
         函数消耗的内存。 单位M。 取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。 最小值为128，最大值为4096。
 
@@ -433,7 +433,7 @@ class CreateFunctionRequestBody:
 
     @property
     def gpu_memory(self):
-        """Gets the gpu_memory of this CreateFunctionRequestBody.
+        r"""Gets the gpu_memory of this CreateFunctionRequestBody.
 
         函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
 
@@ -444,7 +444,7 @@ class CreateFunctionRequestBody:
 
     @gpu_memory.setter
     def gpu_memory(self, gpu_memory):
-        """Sets the gpu_memory of this CreateFunctionRequestBody.
+        r"""Sets the gpu_memory of this CreateFunctionRequestBody.
 
         函数消耗的显存，只支持自定义运行时与自定义镜像函数配置GPU。 单位MB。 取值范围为：1024、2048、3072、4096、5120、6144、7168、8192、9216、10240、11264、12288、13312、14336、15360、16384。 最小值为1024，最大值为16384。
 
@@ -455,7 +455,7 @@ class CreateFunctionRequestBody:
 
     @property
     def gpu_type(self):
-        """Gets the gpu_type of this CreateFunctionRequestBody.
+        r"""Gets the gpu_type of this CreateFunctionRequestBody.
 
         显卡类型。
 
@@ -466,7 +466,7 @@ class CreateFunctionRequestBody:
 
     @gpu_type.setter
     def gpu_type(self, gpu_type):
-        """Sets the gpu_type of this CreateFunctionRequestBody.
+        r"""Sets the gpu_type of this CreateFunctionRequestBody.
 
         显卡类型。
 
@@ -477,7 +477,7 @@ class CreateFunctionRequestBody:
 
     @property
     def code_type(self):
-        """Gets the code_type of this CreateFunctionRequestBody.
+        r"""Gets the code_type of this CreateFunctionRequestBody.
 
         函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。 创建自定义镜像函数此参数非必填，其他类型函数此参数必填。
 
@@ -488,7 +488,7 @@ class CreateFunctionRequestBody:
 
     @code_type.setter
     def code_type(self, code_type):
-        """Sets the code_type of this CreateFunctionRequestBody.
+        r"""Sets the code_type of this CreateFunctionRequestBody.
 
         函数代码类型，取值有5种。 inline: UI在线编辑代码。 zip: 函数代码为zip包。 obs: 函数代码来源于obs存储。 jar: 函数代码为jar包，主要针对Java函数。 Custom-Image-Swr: 函数代码来源与SWR自定义镜像。 创建自定义镜像函数此参数非必填，其他类型函数此参数必填。
 
@@ -499,7 +499,7 @@ class CreateFunctionRequestBody:
 
     @property
     def code_url(self):
-        """Gets the code_url of this CreateFunctionRequestBody.
+        r"""Gets the code_url of this CreateFunctionRequestBody.
 
         当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
 
@@ -510,7 +510,7 @@ class CreateFunctionRequestBody:
 
     @code_url.setter
     def code_url(self, code_url):
-        """Sets the code_url of this CreateFunctionRequestBody.
+        r"""Sets the code_url of this CreateFunctionRequestBody.
 
         当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。
 
@@ -521,7 +521,7 @@ class CreateFunctionRequestBody:
 
     @property
     def code_filename(self):
-        """Gets the code_filename of this CreateFunctionRequestBody.
+        r"""Gets the code_filename of this CreateFunctionRequestBody.
 
         函数的文件名，当CodeType为jar/zip时必须提供该字段，CodeType为其他值时不需要提供。
 
@@ -532,7 +532,7 @@ class CreateFunctionRequestBody:
 
     @code_filename.setter
     def code_filename(self, code_filename):
-        """Sets the code_filename of this CreateFunctionRequestBody.
+        r"""Sets the code_filename of this CreateFunctionRequestBody.
 
         函数的文件名，当CodeType为jar/zip时必须提供该字段，CodeType为其他值时不需要提供。
 
@@ -543,7 +543,7 @@ class CreateFunctionRequestBody:
 
     @property
     def custom_image(self):
-        """Gets the custom_image of this CreateFunctionRequestBody.
+        r"""Gets the custom_image of this CreateFunctionRequestBody.
 
         :return: The custom_image of this CreateFunctionRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
@@ -552,7 +552,7 @@ class CreateFunctionRequestBody:
 
     @custom_image.setter
     def custom_image(self, custom_image):
-        """Sets the custom_image of this CreateFunctionRequestBody.
+        r"""Sets the custom_image of this CreateFunctionRequestBody.
 
         :param custom_image: The custom_image of this CreateFunctionRequestBody.
         :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
@@ -561,7 +561,7 @@ class CreateFunctionRequestBody:
 
     @property
     def user_data(self):
-        """Gets the user_data of this CreateFunctionRequestBody.
+        r"""Gets the user_data of this CreateFunctionRequestBody.
 
         用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host={host_ip}，最多定义20个，总长度不超过4KB。
 
@@ -572,7 +572,7 @@ class CreateFunctionRequestBody:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this CreateFunctionRequestBody.
+        r"""Sets the user_data of this CreateFunctionRequestBody.
 
         用户自定义的name/value信息。 在函数中使用的参数。 举例：如函数要访问某个主机，可以设置自定义参数：Host={host_ip}，最多定义20个，总长度不超过4KB。
 
@@ -583,7 +583,7 @@ class CreateFunctionRequestBody:
 
     @property
     def encrypted_user_data(self):
-        """Gets the encrypted_user_data of this CreateFunctionRequestBody.
+        r"""Gets the encrypted_user_data of this CreateFunctionRequestBody.
 
         用户自定义的name/value信息，用于需要加密的配置。举例：如配置加密密码，可以设置自定义参数：password={1234}，最多定义20个，总长度不超过4KB。
 
@@ -594,7 +594,7 @@ class CreateFunctionRequestBody:
 
     @encrypted_user_data.setter
     def encrypted_user_data(self, encrypted_user_data):
-        """Sets the encrypted_user_data of this CreateFunctionRequestBody.
+        r"""Sets the encrypted_user_data of this CreateFunctionRequestBody.
 
         用户自定义的name/value信息，用于需要加密的配置。举例：如配置加密密码，可以设置自定义参数：password={1234}，最多定义20个，总长度不超过4KB。
 
@@ -605,7 +605,7 @@ class CreateFunctionRequestBody:
 
     @property
     def xrole(self):
-        """Gets the xrole of this CreateFunctionRequestBody.
+        r"""Gets the xrole of this CreateFunctionRequestBody.
 
         函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
 
@@ -616,7 +616,7 @@ class CreateFunctionRequestBody:
 
     @xrole.setter
     def xrole(self, xrole):
-        """Sets the xrole of this CreateFunctionRequestBody.
+        r"""Sets the xrole of this CreateFunctionRequestBody.
 
         函数配置委托。需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。如果用户函数不访问任何云服务，则不用提供委托名称。
 
@@ -627,7 +627,7 @@ class CreateFunctionRequestBody:
 
     @property
     def app_xrole(self):
-        """Gets the app_xrole of this CreateFunctionRequestBody.
+        r"""Gets the app_xrole of this CreateFunctionRequestBody.
 
         函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
 
@@ -638,7 +638,7 @@ class CreateFunctionRequestBody:
 
     @app_xrole.setter
     def app_xrole(self, app_xrole):
-        """Sets the app_xrole of this CreateFunctionRequestBody.
+        r"""Sets the app_xrole of this CreateFunctionRequestBody.
 
         函数执行委托。可为函数执行单独配置执行委托，这将减小不必要的性能损耗；不单独配置执行委托时，函数执行和函数配置将使用同一委托。
 
@@ -649,7 +649,7 @@ class CreateFunctionRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateFunctionRequestBody.
+        r"""Gets the description of this CreateFunctionRequestBody.
 
         函数描述。
 
@@ -660,7 +660,7 @@ class CreateFunctionRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateFunctionRequestBody.
+        r"""Sets the description of this CreateFunctionRequestBody.
 
         函数描述。
 
@@ -671,7 +671,7 @@ class CreateFunctionRequestBody:
 
     @property
     def func_code(self):
-        """Gets the func_code of this CreateFunctionRequestBody.
+        r"""Gets the func_code of this CreateFunctionRequestBody.
 
         :return: The func_code of this CreateFunctionRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
@@ -680,7 +680,7 @@ class CreateFunctionRequestBody:
 
     @func_code.setter
     def func_code(self, func_code):
-        """Sets the func_code of this CreateFunctionRequestBody.
+        r"""Sets the func_code of this CreateFunctionRequestBody.
 
         :param func_code: The func_code of this CreateFunctionRequestBody.
         :type func_code: :class:`huaweicloudsdkfunctiongraph.v2.FuncCode`
@@ -689,7 +689,7 @@ class CreateFunctionRequestBody:
 
     @property
     def mount_config(self):
-        """Gets the mount_config of this CreateFunctionRequestBody.
+        r"""Gets the mount_config of this CreateFunctionRequestBody.
 
         :return: The mount_config of this CreateFunctionRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
@@ -698,7 +698,7 @@ class CreateFunctionRequestBody:
 
     @mount_config.setter
     def mount_config(self, mount_config):
-        """Sets the mount_config of this CreateFunctionRequestBody.
+        r"""Sets the mount_config of this CreateFunctionRequestBody.
 
         :param mount_config: The mount_config of this CreateFunctionRequestBody.
         :type mount_config: :class:`huaweicloudsdkfunctiongraph.v2.MountConfig`
@@ -707,7 +707,7 @@ class CreateFunctionRequestBody:
 
     @property
     def initializer_handler(self):
-        """Gets the initializer_handler of this CreateFunctionRequestBody.
+        r"""Gets the initializer_handler of this CreateFunctionRequestBody.
 
         函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
@@ -718,7 +718,7 @@ class CreateFunctionRequestBody:
 
     @initializer_handler.setter
     def initializer_handler(self, initializer_handler):
-        """Sets the initializer_handler of this CreateFunctionRequestBody.
+        r"""Sets the initializer_handler of this CreateFunctionRequestBody.
 
         函数初始化入口，规则：xx.xx，必须包含“. ”。当配置初始化函数时，此参数必填。 举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。
 
@@ -729,7 +729,7 @@ class CreateFunctionRequestBody:
 
     @property
     def initializer_timeout(self):
-        """Gets the initializer_timeout of this CreateFunctionRequestBody.
+        r"""Gets the initializer_timeout of this CreateFunctionRequestBody.
 
         初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
@@ -740,7 +740,7 @@ class CreateFunctionRequestBody:
 
     @initializer_timeout.setter
     def initializer_timeout(self, initializer_timeout):
-        """Sets the initializer_timeout of this CreateFunctionRequestBody.
+        r"""Sets the initializer_timeout of this CreateFunctionRequestBody.
 
         初始化超时时间，超时函数将被强行停止，范围1～300秒。当配置初始化函数时，此参数必填。
 
@@ -751,7 +751,7 @@ class CreateFunctionRequestBody:
 
     @property
     def pre_stop_handler(self):
-        """Gets the pre_stop_handler of this CreateFunctionRequestBody.
+        r"""Gets the pre_stop_handler of this CreateFunctionRequestBody.
 
         函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
 
@@ -762,7 +762,7 @@ class CreateFunctionRequestBody:
 
     @pre_stop_handler.setter
     def pre_stop_handler(self, pre_stop_handler):
-        """Sets the pre_stop_handler of this CreateFunctionRequestBody.
+        r"""Sets the pre_stop_handler of this CreateFunctionRequestBody.
 
         函数预停止函数的入口，规则：xx.xx，必须包含“. ”。 举例：对于node.js函数：myfunction.pre_stop_handler，则表示函数的文件名为myfunction.js，初始化的入口函数名为pre_stop_handler。
 
@@ -773,7 +773,7 @@ class CreateFunctionRequestBody:
 
     @property
     def pre_stop_timeout(self):
-        """Gets the pre_stop_timeout of this CreateFunctionRequestBody.
+        r"""Gets the pre_stop_timeout of this CreateFunctionRequestBody.
 
         初始化超时时间，超时函数将被强行停止，范围1～90秒。
 
@@ -784,7 +784,7 @@ class CreateFunctionRequestBody:
 
     @pre_stop_timeout.setter
     def pre_stop_timeout(self, pre_stop_timeout):
-        """Sets the pre_stop_timeout of this CreateFunctionRequestBody.
+        r"""Sets the pre_stop_timeout of this CreateFunctionRequestBody.
 
         初始化超时时间，超时函数将被强行停止，范围1～90秒。
 
@@ -795,7 +795,7 @@ class CreateFunctionRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateFunctionRequestBody.
+        r"""Gets the enterprise_project_id of this CreateFunctionRequestBody.
 
         企业项目ID，在企业用户创建函数时必填。
 
@@ -806,7 +806,7 @@ class CreateFunctionRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateFunctionRequestBody.
+        r"""Sets the enterprise_project_id of this CreateFunctionRequestBody.
 
         企业项目ID，在企业用户创建函数时必填。
 
@@ -817,7 +817,7 @@ class CreateFunctionRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateFunctionRequestBody.
+        r"""Gets the type of this CreateFunctionRequestBody.
 
         函数版本；部分局点只支持v1函数，缺省值则为v1
 
@@ -828,7 +828,7 @@ class CreateFunctionRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateFunctionRequestBody.
+        r"""Sets the type of this CreateFunctionRequestBody.
 
         函数版本；部分局点只支持v1函数，缺省值则为v1
 
@@ -839,7 +839,7 @@ class CreateFunctionRequestBody:
 
     @property
     def log_config(self):
-        """Gets the log_config of this CreateFunctionRequestBody.
+        r"""Gets the log_config of this CreateFunctionRequestBody.
 
         :return: The log_config of this CreateFunctionRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncLogConfig`
@@ -848,7 +848,7 @@ class CreateFunctionRequestBody:
 
     @log_config.setter
     def log_config(self, log_config):
-        """Sets the log_config of this CreateFunctionRequestBody.
+        r"""Sets the log_config of this CreateFunctionRequestBody.
 
         :param log_config: The log_config of this CreateFunctionRequestBody.
         :type log_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncLogConfig`
@@ -857,7 +857,7 @@ class CreateFunctionRequestBody:
 
     @property
     def network_controller(self):
-        """Gets the network_controller of this CreateFunctionRequestBody.
+        r"""Gets the network_controller of this CreateFunctionRequestBody.
 
         :return: The network_controller of this CreateFunctionRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
@@ -866,7 +866,7 @@ class CreateFunctionRequestBody:
 
     @network_controller.setter
     def network_controller(self, network_controller):
-        """Sets the network_controller of this CreateFunctionRequestBody.
+        r"""Sets the network_controller of this CreateFunctionRequestBody.
 
         :param network_controller: The network_controller of this CreateFunctionRequestBody.
         :type network_controller: :class:`huaweicloudsdkfunctiongraph.v2.NetworkControlConfig`
@@ -875,7 +875,7 @@ class CreateFunctionRequestBody:
 
     @property
     def is_stateful_function(self):
-        """Gets the is_stateful_function of this CreateFunctionRequestBody.
+        r"""Gets the is_stateful_function of this CreateFunctionRequestBody.
 
         是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
 
@@ -886,7 +886,7 @@ class CreateFunctionRequestBody:
 
     @is_stateful_function.setter
     def is_stateful_function(self, is_stateful_function):
-        """Sets the is_stateful_function of this CreateFunctionRequestBody.
+        r"""Sets the is_stateful_function of this CreateFunctionRequestBody.
 
         是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
 
@@ -897,7 +897,7 @@ class CreateFunctionRequestBody:
 
     @property
     def enable_dynamic_memory(self):
-        """Gets the enable_dynamic_memory of this CreateFunctionRequestBody.
+        r"""Gets the enable_dynamic_memory of this CreateFunctionRequestBody.
 
         是否启动动态内存配置
 
@@ -908,7 +908,7 @@ class CreateFunctionRequestBody:
 
     @enable_dynamic_memory.setter
     def enable_dynamic_memory(self, enable_dynamic_memory):
-        """Sets the enable_dynamic_memory of this CreateFunctionRequestBody.
+        r"""Sets the enable_dynamic_memory of this CreateFunctionRequestBody.
 
         是否启动动态内存配置
 
@@ -919,7 +919,7 @@ class CreateFunctionRequestBody:
 
     @property
     def enable_lts_log(self):
-        """Gets the enable_lts_log of this CreateFunctionRequestBody.
+        r"""Gets the enable_lts_log of this CreateFunctionRequestBody.
 
         是否开启日志，缺省值为false。创建函数时，若此开关为true，且未传入log_config，则由FunctionGraph自动创建日志组日志流。
 
@@ -930,7 +930,7 @@ class CreateFunctionRequestBody:
 
     @enable_lts_log.setter
     def enable_lts_log(self, enable_lts_log):
-        """Sets the enable_lts_log of this CreateFunctionRequestBody.
+        r"""Sets the enable_lts_log of this CreateFunctionRequestBody.
 
         是否开启日志，缺省值为false。创建函数时，若此开关为true，且未传入log_config，则由FunctionGraph自动创建日志组日志流。
 
@@ -941,7 +941,7 @@ class CreateFunctionRequestBody:
 
     @property
     def lts_custom_tag(self):
-        """Gets the lts_custom_tag of this CreateFunctionRequestBody.
+        r"""Gets the lts_custom_tag of this CreateFunctionRequestBody.
 
         自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
 
@@ -952,7 +952,7 @@ class CreateFunctionRequestBody:
 
     @lts_custom_tag.setter
     def lts_custom_tag(self, lts_custom_tag):
-        """Sets the lts_custom_tag of this CreateFunctionRequestBody.
+        r"""Sets the lts_custom_tag of this CreateFunctionRequestBody.
 
         自定义日志标签。函数执行时，可以按照自定义标签配置上报标签到云日志服务(LTS)，用户可以通过标签对日志进行过滤筛选。
 

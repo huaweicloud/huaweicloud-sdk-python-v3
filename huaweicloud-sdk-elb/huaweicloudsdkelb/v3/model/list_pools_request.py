@@ -77,7 +77,7 @@ class ListPoolsRequest:
     }
 
     def __init__(self, marker=None, limit=None, page_reverse=None, description=None, admin_state_up=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, member_deletion_protection_enable=None, listener_id=None, member_instance_id=None, vpc_id=None, type=None, protection_status=None, connection_drain=None, pool_health=None, any_port_enable=None, public_border_group=None, quic_cid_len=None, quic_cid_offset=None):
-        """ListPoolsRequest
+        r"""ListPoolsRequest
 
         The model defined in huaweicloud sdk
 
@@ -225,7 +225,7 @@ class ListPoolsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPoolsRequest.
+        r"""Gets the marker of this ListPoolsRequest.
 
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -236,7 +236,7 @@ class ListPoolsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPoolsRequest.
+        r"""Sets the marker of this ListPoolsRequest.
 
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -247,7 +247,7 @@ class ListPoolsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPoolsRequest.
+        r"""Gets the limit of this ListPoolsRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -258,7 +258,7 @@ class ListPoolsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPoolsRequest.
+        r"""Sets the limit of this ListPoolsRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -269,7 +269,7 @@ class ListPoolsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListPoolsRequest.
+        r"""Gets the page_reverse of this ListPoolsRequest.
 
         是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
@@ -280,7 +280,7 @@ class ListPoolsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListPoolsRequest.
+        r"""Sets the page_reverse of this ListPoolsRequest.
 
         是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
@@ -291,7 +291,7 @@ class ListPoolsRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListPoolsRequest.
+        r"""Gets the description of this ListPoolsRequest.
 
         后端服务器组的描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
 
@@ -302,7 +302,7 @@ class ListPoolsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListPoolsRequest.
+        r"""Sets the description of this ListPoolsRequest.
 
         后端服务器组的描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。
 
@@ -313,7 +313,7 @@ class ListPoolsRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListPoolsRequest.
+        r"""Gets the admin_state_up of this ListPoolsRequest.
 
         后端服务器组的管理状态。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -324,7 +324,7 @@ class ListPoolsRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListPoolsRequest.
+        r"""Sets the admin_state_up of this ListPoolsRequest.
 
         后端服务器组的管理状态。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -335,7 +335,7 @@ class ListPoolsRequest:
 
     @property
     def healthmonitor_id(self):
-        """Gets the healthmonitor_id of this ListPoolsRequest.
+        r"""Gets the healthmonitor_id of this ListPoolsRequest.
 
         后端服务器组关联的健康检查的ID。  支持多值查询，查询条件格式：*healthmonitor_id=xxx&healthmonitor_id=xxx*。
 
@@ -346,7 +346,7 @@ class ListPoolsRequest:
 
     @healthmonitor_id.setter
     def healthmonitor_id(self, healthmonitor_id):
-        """Sets the healthmonitor_id of this ListPoolsRequest.
+        r"""Sets the healthmonitor_id of this ListPoolsRequest.
 
         后端服务器组关联的健康检查的ID。  支持多值查询，查询条件格式：*healthmonitor_id=xxx&healthmonitor_id=xxx*。
 
@@ -357,7 +357,7 @@ class ListPoolsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPoolsRequest.
+        r"""Gets the id of this ListPoolsRequest.
 
         后端服务器组的ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
@@ -368,7 +368,7 @@ class ListPoolsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPoolsRequest.
+        r"""Sets the id of this ListPoolsRequest.
 
         后端服务器组的ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
@@ -379,7 +379,7 @@ class ListPoolsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPoolsRequest.
+        r"""Gets the name of this ListPoolsRequest.
 
         后端服务器组的名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
@@ -390,7 +390,7 @@ class ListPoolsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPoolsRequest.
+        r"""Sets the name of this ListPoolsRequest.
 
         后端服务器组的名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
@@ -401,7 +401,7 @@ class ListPoolsRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this ListPoolsRequest.
+        r"""Gets the loadbalancer_id of this ListPoolsRequest.
 
         后端服务器组绑定的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id=xxx&loadbalancer_id=xxx*。
 
@@ -412,7 +412,7 @@ class ListPoolsRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this ListPoolsRequest.
+        r"""Sets the loadbalancer_id of this ListPoolsRequest.
 
         后端服务器组绑定的负载均衡器ID。  支持多值查询，查询条件格式：*loadbalancer_id=xxx&loadbalancer_id=xxx*。
 
@@ -423,7 +423,7 @@ class ListPoolsRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListPoolsRequest.
+        r"""Gets the protocol of this ListPoolsRequest.
 
         后端服务器组的后端协议。  取值：TCP、UDP、[IP、](tag:hws_eu)TLS、HTTP、HTTPS、QUIC和GRPC。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
@@ -434,7 +434,7 @@ class ListPoolsRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListPoolsRequest.
+        r"""Sets the protocol of this ListPoolsRequest.
 
         后端服务器组的后端协议。  取值：TCP、UDP、[IP、](tag:hws_eu)TLS、HTTP、HTTPS、QUIC和GRPC。  支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  [不支持QUIC协议。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
@@ -445,7 +445,7 @@ class ListPoolsRequest:
 
     @property
     def lb_algorithm(self):
-        """Gets the lb_algorithm of this ListPoolsRequest.
+        r"""Gets the lb_algorithm of this ListPoolsRequest.
 
         后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
 
@@ -456,7 +456,7 @@ class ListPoolsRequest:
 
     @lb_algorithm.setter
     def lb_algorithm(self, lb_algorithm):
-        """Sets the lb_algorithm of this ListPoolsRequest.
+        r"""Sets the lb_algorithm of this ListPoolsRequest.
 
         后端服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。 [- 2_TUPLE_HASH：二元组hash算法，仅IP类型的pool支持。 - 3_TUPLE_HASH：三元组hash算法，仅IP类型的pool支持。 - 5_TUPLE_HASH：五元组hash算法，仅IP类型的pool支持。 - IP型pool不指定该字段时，默认设置为5_TUPLE_HASH。](tag:hws_eu)  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。  [不支持QUIC_CID。](tag:hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC_CID。](tag:dt)
 
@@ -467,7 +467,7 @@ class ListPoolsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPoolsRequest.
+        r"""Gets the enterprise_project_id of this ListPoolsRequest.
 
         参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:pools:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -478,7 +478,7 @@ class ListPoolsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPoolsRequest.
+        r"""Sets the enterprise_project_id of this ListPoolsRequest.
 
         参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:pools:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -489,7 +489,7 @@ class ListPoolsRequest:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this ListPoolsRequest.
+        r"""Gets the ip_version of this ListPoolsRequest.
 
         后端服务器组支持的IP版本。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
 
@@ -500,7 +500,7 @@ class ListPoolsRequest:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this ListPoolsRequest.
+        r"""Sets the ip_version of this ListPoolsRequest.
 
         后端服务器组支持的IP版本。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
 
@@ -511,7 +511,7 @@ class ListPoolsRequest:
 
     @property
     def member_address(self):
-        """Gets the member_address of this ListPoolsRequest.
+        r"""Gets the member_address of this ListPoolsRequest.
 
         后端服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address=xxx&member_address=xxx*。
 
@@ -522,7 +522,7 @@ class ListPoolsRequest:
 
     @member_address.setter
     def member_address(self, member_address):
-        """Sets the member_address of this ListPoolsRequest.
+        r"""Sets the member_address of this ListPoolsRequest.
 
         后端服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address=xxx&member_address=xxx*。
 
@@ -533,7 +533,7 @@ class ListPoolsRequest:
 
     @property
     def member_device_id(self):
-        """Gets the member_device_id of this ListPoolsRequest.
+        r"""Gets the member_device_id of this ListPoolsRequest.
 
         后端服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id=xxx&member_device_id=xxx*。
 
@@ -544,7 +544,7 @@ class ListPoolsRequest:
 
     @member_device_id.setter
     def member_device_id(self, member_device_id):
-        """Sets the member_device_id of this ListPoolsRequest.
+        r"""Sets the member_device_id of this ListPoolsRequest.
 
         后端服务器对应的弹性云服务器的ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_device_id=xxx&member_device_id=xxx*。
 
@@ -555,7 +555,7 @@ class ListPoolsRequest:
 
     @property
     def member_deletion_protection_enable(self):
-        """Gets the member_deletion_protection_enable of this ListPoolsRequest.
+        r"""Gets the member_deletion_protection_enable of this ListPoolsRequest.
 
         是否开启删除保护，false不开启，true开启，不传查询全部。 [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -566,7 +566,7 @@ class ListPoolsRequest:
 
     @member_deletion_protection_enable.setter
     def member_deletion_protection_enable(self, member_deletion_protection_enable):
-        """Sets the member_deletion_protection_enable of this ListPoolsRequest.
+        r"""Sets the member_deletion_protection_enable of this ListPoolsRequest.
 
         是否开启删除保护，false不开启，true开启，不传查询全部。 [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
 
@@ -577,7 +577,7 @@ class ListPoolsRequest:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this ListPoolsRequest.
+        r"""Gets the listener_id of this ListPoolsRequest.
 
         关联的监听器ID，包括通过l7policy关联的。  支持多值查询，查询条件格式：*listener_id=xxx&listener_id=xxx*。
 
@@ -588,7 +588,7 @@ class ListPoolsRequest:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this ListPoolsRequest.
+        r"""Sets the listener_id of this ListPoolsRequest.
 
         关联的监听器ID，包括通过l7policy关联的。  支持多值查询，查询条件格式：*listener_id=xxx&listener_id=xxx*。
 
@@ -599,7 +599,7 @@ class ListPoolsRequest:
 
     @property
     def member_instance_id(self):
-        """Gets the member_instance_id of this ListPoolsRequest.
+        r"""Gets the member_instance_id of this ListPoolsRequest.
 
         后端服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id=xxx&member_instance_id=xxx*。
 
@@ -610,7 +610,7 @@ class ListPoolsRequest:
 
     @member_instance_id.setter
     def member_instance_id(self, member_instance_id):
-        """Sets the member_instance_id of this ListPoolsRequest.
+        r"""Sets the member_instance_id of this ListPoolsRequest.
 
         后端服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id=xxx&member_instance_id=xxx*。
 
@@ -621,7 +621,7 @@ class ListPoolsRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListPoolsRequest.
+        r"""Gets the vpc_id of this ListPoolsRequest.
 
         后端服务器组关联的虚拟私有云的ID。
 
@@ -632,7 +632,7 @@ class ListPoolsRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListPoolsRequest.
+        r"""Sets the vpc_id of this ListPoolsRequest.
 
         后端服务器组关联的虚拟私有云的ID。
 
@@ -643,7 +643,7 @@ class ListPoolsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListPoolsRequest.
+        r"""Gets the type of this ListPoolsRequest.
 
         后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。 - 空字符串（\"\"）：允许任意类型的后端
 
@@ -654,7 +654,7 @@ class ListPoolsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListPoolsRequest.
+        r"""Sets the type of this ListPoolsRequest.
 
         后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。 - 空字符串（\"\"）：允许任意类型的后端
 
@@ -665,7 +665,7 @@ class ListPoolsRequest:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this ListPoolsRequest.
+        r"""Gets the protection_status of this ListPoolsRequest.
 
         修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
 
@@ -676,7 +676,7 @@ class ListPoolsRequest:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this ListPoolsRequest.
+        r"""Sets the protection_status of this ListPoolsRequest.
 
         修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
 
@@ -687,7 +687,7 @@ class ListPoolsRequest:
 
     @property
     def connection_drain(self):
-        """Gets the connection_drain of this ListPoolsRequest.
+        r"""Gets the connection_drain of this ListPoolsRequest.
 
         查询是否开启延迟注销的功能，查询条件格式：*connection_drain=true或者*connection_drain=false
 
@@ -698,7 +698,7 @@ class ListPoolsRequest:
 
     @connection_drain.setter
     def connection_drain(self, connection_drain):
-        """Sets the connection_drain of this ListPoolsRequest.
+        r"""Sets the connection_drain of this ListPoolsRequest.
 
         查询是否开启延迟注销的功能，查询条件格式：*connection_drain=true或者*connection_drain=false
 
@@ -709,7 +709,7 @@ class ListPoolsRequest:
 
     @property
     def pool_health(self):
-        """Gets the pool_health of this ListPoolsRequest.
+        r"""Gets the pool_health of this ListPoolsRequest.
 
         查询是否开启后端全下线转发功能，查询条件格式：*pool_health=minimum_healthy_member_count=0或者*pool_health=minimum_healthy_member_count=1
 
@@ -720,7 +720,7 @@ class ListPoolsRequest:
 
     @pool_health.setter
     def pool_health(self, pool_health):
-        """Sets the pool_health of this ListPoolsRequest.
+        r"""Sets the pool_health of this ListPoolsRequest.
 
         查询是否开启后端全下线转发功能，查询条件格式：*pool_health=minimum_healthy_member_count=0或者*pool_health=minimum_healthy_member_count=1
 
@@ -731,7 +731,7 @@ class ListPoolsRequest:
 
     @property
     def any_port_enable(self):
-        """Gets the any_port_enable of this ListPoolsRequest.
+        r"""Gets the any_port_enable of this ListPoolsRequest.
 
         后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。取值：false不开启，true开启。
 
@@ -742,7 +742,7 @@ class ListPoolsRequest:
 
     @any_port_enable.setter
     def any_port_enable(self, any_port_enable):
-        """Sets the any_port_enable of this ListPoolsRequest.
+        r"""Sets the any_port_enable of this ListPoolsRequest.
 
         后端是否开启端口透传。开启后，后端服务器端口与前端监听器端口保持一致。取值：false不开启，true开启。
 
@@ -753,7 +753,7 @@ class ListPoolsRequest:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ListPoolsRequest.
+        r"""Gets the public_border_group of this ListPoolsRequest.
 
         网络公共边界组
 
@@ -764,7 +764,7 @@ class ListPoolsRequest:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListPoolsRequest.
+        r"""Sets the public_border_group of this ListPoolsRequest.
 
         网络公共边界组
 
@@ -775,7 +775,7 @@ class ListPoolsRequest:
 
     @property
     def quic_cid_len(self):
-        """Gets the quic_cid_len of this ListPoolsRequest.
+        r"""Gets the quic_cid_len of this ListPoolsRequest.
 
         查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_len=3&quic_cid_len=5*
 
@@ -786,7 +786,7 @@ class ListPoolsRequest:
 
     @quic_cid_len.setter
     def quic_cid_len(self, quic_cid_len):
-        """Sets the quic_cid_len of this ListPoolsRequest.
+        r"""Sets the quic_cid_len of this ListPoolsRequest.
 
         查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_len=3&quic_cid_len=5*
 
@@ -797,7 +797,7 @@ class ListPoolsRequest:
 
     @property
     def quic_cid_offset(self):
-        """Gets the quic_cid_offset of this ListPoolsRequest.
+        r"""Gets the quic_cid_offset of this ListPoolsRequest.
 
         查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_offset=1&quic_cid_offset=3*
 
@@ -808,7 +808,7 @@ class ListPoolsRequest:
 
     @quic_cid_offset.setter
     def quic_cid_offset(self, quic_cid_offset):
-        """Sets the quic_cid_offset of this ListPoolsRequest.
+        r"""Sets the quic_cid_offset of this ListPoolsRequest.
 
         查询相同QUIC CID策略配置的后端服务器组，仅用于查询条件，不作为响应参数字段。 支持多值查询，查询条件格式：*quic_cid_offset=1&quic_cid_offset=3*
 

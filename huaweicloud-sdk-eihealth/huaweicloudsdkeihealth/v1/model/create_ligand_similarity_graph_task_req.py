@@ -27,7 +27,7 @@ class CreateLigandSimilarityGraphTaskReq:
     }
 
     def __init__(self, mode=None, ligands=None):
-        """CreateLigandSimilarityGraphTaskReq
+        r"""CreateLigandSimilarityGraphTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateLigandSimilarityGraphTaskReq:
 
     @property
     def mode(self):
-        """Gets the mode of this CreateLigandSimilarityGraphTaskReq.
+        r"""Gets the mode of this CreateLigandSimilarityGraphTaskReq.
 
         :return: The mode of this CreateLigandSimilarityGraphTaskReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.LigandSimilarityGraphMode`
@@ -57,7 +57,7 @@ class CreateLigandSimilarityGraphTaskReq:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CreateLigandSimilarityGraphTaskReq.
+        r"""Sets the mode of this CreateLigandSimilarityGraphTaskReq.
 
         :param mode: The mode of this CreateLigandSimilarityGraphTaskReq.
         :type mode: :class:`huaweicloudsdkeihealth.v1.LigandSimilarityGraphMode`
@@ -66,7 +66,7 @@ class CreateLigandSimilarityGraphTaskReq:
 
     @property
     def ligands(self):
-        """Gets the ligands of this CreateLigandSimilarityGraphTaskReq.
+        r"""Gets the ligands of this CreateLigandSimilarityGraphTaskReq.
 
         配体列表
 
@@ -77,7 +77,7 @@ class CreateLigandSimilarityGraphTaskReq:
 
     @ligands.setter
     def ligands(self, ligands):
-        """Sets the ligands of this CreateLigandSimilarityGraphTaskReq.
+        r"""Sets the ligands of this CreateLigandSimilarityGraphTaskReq.
 
         配体列表
 

@@ -37,7 +37,7 @@ class QueryVisionActiveCodeResultDTO:
     }
 
     def __init__(self, id=None, active_code=None, dev_name=None, dev_type=None, dept_code=None, dept_name=None, expire_date=None):
-        """QueryVisionActiveCodeResultDTO
+        r"""QueryVisionActiveCodeResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class QueryVisionActiveCodeResultDTO:
 
     @property
     def id(self):
-        """Gets the id of this QueryVisionActiveCodeResultDTO.
+        r"""Gets the id of this QueryVisionActiveCodeResultDTO.
 
         激活码唯一标识。
 
@@ -96,7 +96,7 @@ class QueryVisionActiveCodeResultDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryVisionActiveCodeResultDTO.
+        r"""Sets the id of this QueryVisionActiveCodeResultDTO.
 
         激活码唯一标识。
 
@@ -107,7 +107,7 @@ class QueryVisionActiveCodeResultDTO:
 
     @property
     def active_code(self):
-        """Gets the active_code of this QueryVisionActiveCodeResultDTO.
+        r"""Gets the active_code of this QueryVisionActiveCodeResultDTO.
 
         激活码。
 
@@ -118,7 +118,7 @@ class QueryVisionActiveCodeResultDTO:
 
     @active_code.setter
     def active_code(self, active_code):
-        """Sets the active_code of this QueryVisionActiveCodeResultDTO.
+        r"""Sets the active_code of this QueryVisionActiveCodeResultDTO.
 
         激活码。
 
@@ -129,7 +129,7 @@ class QueryVisionActiveCodeResultDTO:
 
     @property
     def dev_name(self):
-        """Gets the dev_name of this QueryVisionActiveCodeResultDTO.
+        r"""Gets the dev_name of this QueryVisionActiveCodeResultDTO.
 
         终端名称。
 
@@ -140,7 +140,7 @@ class QueryVisionActiveCodeResultDTO:
 
     @dev_name.setter
     def dev_name(self, dev_name):
-        """Sets the dev_name of this QueryVisionActiveCodeResultDTO.
+        r"""Sets the dev_name of this QueryVisionActiveCodeResultDTO.
 
         终端名称。
 
@@ -151,7 +151,7 @@ class QueryVisionActiveCodeResultDTO:
 
     @property
     def dev_type(self):
-        """Gets the dev_type of this QueryVisionActiveCodeResultDTO.
+        r"""Gets the dev_type of this QueryVisionActiveCodeResultDTO.
 
         终端类型。
 
@@ -162,7 +162,7 @@ class QueryVisionActiveCodeResultDTO:
 
     @dev_type.setter
     def dev_type(self, dev_type):
-        """Sets the dev_type of this QueryVisionActiveCodeResultDTO.
+        r"""Sets the dev_type of this QueryVisionActiveCodeResultDTO.
 
         终端类型。
 
@@ -173,7 +173,7 @@ class QueryVisionActiveCodeResultDTO:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this QueryVisionActiveCodeResultDTO.
+        r"""Gets the dept_code of this QueryVisionActiveCodeResultDTO.
 
         部门编码。
 
@@ -184,7 +184,7 @@ class QueryVisionActiveCodeResultDTO:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this QueryVisionActiveCodeResultDTO.
+        r"""Sets the dept_code of this QueryVisionActiveCodeResultDTO.
 
         部门编码。
 
@@ -195,7 +195,7 @@ class QueryVisionActiveCodeResultDTO:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this QueryVisionActiveCodeResultDTO.
+        r"""Gets the dept_name of this QueryVisionActiveCodeResultDTO.
 
         部门名称。
 
@@ -206,7 +206,7 @@ class QueryVisionActiveCodeResultDTO:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this QueryVisionActiveCodeResultDTO.
+        r"""Sets the dept_name of this QueryVisionActiveCodeResultDTO.
 
         部门名称。
 
@@ -217,7 +217,7 @@ class QueryVisionActiveCodeResultDTO:
 
     @property
     def expire_date(self):
-        """Gets the expire_date of this QueryVisionActiveCodeResultDTO.
+        r"""Gets the expire_date of this QueryVisionActiveCodeResultDTO.
 
         失效时间戳。
 
@@ -228,7 +228,7 @@ class QueryVisionActiveCodeResultDTO:
 
     @expire_date.setter
     def expire_date(self, expire_date):
-        """Sets the expire_date of this QueryVisionActiveCodeResultDTO.
+        r"""Sets the expire_date of this QueryVisionActiveCodeResultDTO.
 
         失效时间戳。
 

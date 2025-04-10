@@ -40,7 +40,7 @@ class ShowJobProgressResponse(SdkResponse):
     }
 
     def __init__(self, status=None, job_id=None, job_type=None, begin_time=None, end_time=None, error_code=None, fail_reason=None, entities=None):
-        """ShowJobProgressResponse
+        r"""ShowJobProgressResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowJobProgressResponse.
+        r"""Gets the status of this ShowJobProgressResponse.
 
         任务状态，目前取值如下： SUCCESS：表示该任务执行已经结束，任务执行成功。 FAIL：表示该任务执行已经结束，任务执行失败。 RUNNING：表示该任务正在执行。 INIT：表给任务还未执行，正在初始化。
 
@@ -104,7 +104,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowJobProgressResponse.
+        r"""Sets the status of this ShowJobProgressResponse.
 
         任务状态，目前取值如下： SUCCESS：表示该任务执行已经结束，任务执行成功。 FAIL：表示该任务执行已经结束，任务执行失败。 RUNNING：表示该任务正在执行。 INIT：表给任务还未执行，正在初始化。
 
@@ -115,7 +115,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobProgressResponse.
+        r"""Gets the job_id of this ShowJobProgressResponse.
 
         任务ID。
 
@@ -126,7 +126,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobProgressResponse.
+        r"""Sets the job_id of this ShowJobProgressResponse.
 
         任务ID。
 
@@ -137,7 +137,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowJobProgressResponse.
+        r"""Gets the job_type of this ShowJobProgressResponse.
 
         任务类型。
 
@@ -148,7 +148,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowJobProgressResponse.
+        r"""Sets the job_type of this ShowJobProgressResponse.
 
         任务类型。
 
@@ -159,7 +159,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowJobProgressResponse.
+        r"""Gets the begin_time of this ShowJobProgressResponse.
 
         任务开始执行时间。格式为UTC时间。
 
@@ -170,7 +170,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowJobProgressResponse.
+        r"""Sets the begin_time of this ShowJobProgressResponse.
 
         任务开始执行时间。格式为UTC时间。
 
@@ -181,7 +181,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowJobProgressResponse.
+        r"""Gets the end_time of this ShowJobProgressResponse.
 
         任务结束时间。格式为UTC时间。
 
@@ -192,7 +192,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowJobProgressResponse.
+        r"""Sets the end_time of this ShowJobProgressResponse.
 
         任务结束时间。格式为UTC时间。
 
@@ -203,7 +203,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowJobProgressResponse.
+        r"""Gets the error_code of this ShowJobProgressResponse.
 
         错误码。
 
@@ -214,7 +214,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowJobProgressResponse.
+        r"""Sets the error_code of this ShowJobProgressResponse.
 
         错误码。
 
@@ -225,7 +225,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ShowJobProgressResponse.
+        r"""Gets the fail_reason of this ShowJobProgressResponse.
 
         失败原因。
 
@@ -236,7 +236,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ShowJobProgressResponse.
+        r"""Sets the fail_reason of this ShowJobProgressResponse.
 
         失败原因。
 
@@ -247,7 +247,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this ShowJobProgressResponse.
+        r"""Gets the entities of this ShowJobProgressResponse.
 
         :return: The entities of this ShowJobProgressResponse.
         :rtype: :class:`huaweicloudsdkims.v2.JobProgressEntities`
@@ -256,7 +256,7 @@ class ShowJobProgressResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ShowJobProgressResponse.
+        r"""Sets the entities of this ShowJobProgressResponse.
 
         :param entities: The entities of this ShowJobProgressResponse.
         :type entities: :class:`huaweicloudsdkims.v2.JobProgressEntities`

@@ -29,7 +29,7 @@ class UpdateFlinkSqlJobTemplateRequestBody:
     }
 
     def __init__(self, name=None, desc=None, sql_body=None):
-        """UpdateFlinkSqlJobTemplateRequestBody
+        r"""UpdateFlinkSqlJobTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateFlinkSqlJobTemplateRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateFlinkSqlJobTemplateRequestBody.
+        r"""Gets the name of this UpdateFlinkSqlJobTemplateRequestBody.
 
         模板名称，长度限制：0-57个字符。
 
@@ -68,7 +68,7 @@ class UpdateFlinkSqlJobTemplateRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateFlinkSqlJobTemplateRequestBody.
+        r"""Sets the name of this UpdateFlinkSqlJobTemplateRequestBody.
 
         模板名称，长度限制：0-57个字符。
 
@@ -79,7 +79,7 @@ class UpdateFlinkSqlJobTemplateRequestBody:
 
     @property
     def desc(self):
-        """Gets the desc of this UpdateFlinkSqlJobTemplateRequestBody.
+        r"""Gets the desc of this UpdateFlinkSqlJobTemplateRequestBody.
 
         模板描述，长度限制：0-2048个字符。
 
@@ -90,7 +90,7 @@ class UpdateFlinkSqlJobTemplateRequestBody:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this UpdateFlinkSqlJobTemplateRequestBody.
+        r"""Sets the desc of this UpdateFlinkSqlJobTemplateRequestBody.
 
         模板描述，长度限制：0-2048个字符。
 
@@ -101,7 +101,7 @@ class UpdateFlinkSqlJobTemplateRequestBody:
 
     @property
     def sql_body(self):
-        """Gets the sql_body of this UpdateFlinkSqlJobTemplateRequestBody.
+        r"""Gets the sql_body of this UpdateFlinkSqlJobTemplateRequestBody.
 
         Stream SQL语句，至少包含source，query，sink三个部分，长度限制：0-1024*1024个字符。
 
@@ -112,7 +112,7 @@ class UpdateFlinkSqlJobTemplateRequestBody:
 
     @sql_body.setter
     def sql_body(self, sql_body):
-        """Sets the sql_body of this UpdateFlinkSqlJobTemplateRequestBody.
+        r"""Sets the sql_body of this UpdateFlinkSqlJobTemplateRequestBody.
 
         Stream SQL语句，至少包含source，query，sink三个部分，长度限制：0-1024*1024个字符。
 

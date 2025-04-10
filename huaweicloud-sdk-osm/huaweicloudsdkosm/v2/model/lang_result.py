@@ -27,7 +27,7 @@ class LangResult:
     }
 
     def __init__(self, language=None, is_en=None):
-        """LangResult
+        r"""LangResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LangResult:
 
     @property
     def language(self):
-        """Gets the language of this LangResult.
+        r"""Gets the language of this LangResult.
 
         语言
 
@@ -61,7 +61,7 @@ class LangResult:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this LangResult.
+        r"""Sets the language of this LangResult.
 
         语言
 
@@ -72,7 +72,7 @@ class LangResult:
 
     @property
     def is_en(self):
-        """Gets the is_en of this LangResult.
+        r"""Gets the is_en of this LangResult.
 
         是否英语
 
@@ -83,7 +83,7 @@ class LangResult:
 
     @is_en.setter
     def is_en(self, is_en):
-        """Sets the is_en of this LangResult.
+        r"""Sets the is_en of this LangResult.
 
         是否英语
 

@@ -34,7 +34,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
     }
 
     def __init__(self, shadow_image=None, cut_image=None, point_y=None, token=None, expire=None):
-        """SendSlideVerifyCodeResponse
+        r"""SendSlideVerifyCodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
 
     @property
     def shadow_image(self):
-        """Gets the shadow_image of this SendSlideVerifyCodeResponse.
+        r"""Gets the shadow_image of this SendSlideVerifyCodeResponse.
 
         抠出图形后的原背景图。通过“data:url”方式来定义图片。
 
@@ -83,7 +83,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
 
     @shadow_image.setter
     def shadow_image(self, shadow_image):
-        """Sets the shadow_image of this SendSlideVerifyCodeResponse.
+        r"""Sets the shadow_image of this SendSlideVerifyCodeResponse.
 
         抠出图形后的原背景图。通过“data:url”方式来定义图片。
 
@@ -94,7 +94,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
 
     @property
     def cut_image(self):
-        """Gets the cut_image of this SendSlideVerifyCodeResponse.
+        r"""Gets the cut_image of this SendSlideVerifyCodeResponse.
 
         抠出的图形。
 
@@ -105,7 +105,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
 
     @cut_image.setter
     def cut_image(self, cut_image):
-        """Sets the cut_image of this SendSlideVerifyCodeResponse.
+        r"""Sets the cut_image of this SendSlideVerifyCodeResponse.
 
         抠出的图形。
 
@@ -116,7 +116,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
 
     @property
     def point_y(self):
-        """Gets the point_y of this SendSlideVerifyCodeResponse.
+        r"""Gets the point_y of this SendSlideVerifyCodeResponse.
 
         抠出图形的Y轴座标。
 
@@ -127,7 +127,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
 
     @point_y.setter
     def point_y(self, point_y):
-        """Sets the point_y of this SendSlideVerifyCodeResponse.
+        r"""Sets the point_y of this SendSlideVerifyCodeResponse.
 
         抠出图形的Y轴座标。
 
@@ -138,7 +138,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
 
     @property
     def token(self):
-        """Gets the token of this SendSlideVerifyCodeResponse.
+        r"""Gets the token of this SendSlideVerifyCodeResponse.
 
         验证码Token字符串。
 
@@ -149,7 +149,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
 
     @token.setter
     def token(self, token):
-        """Sets the token of this SendSlideVerifyCodeResponse.
+        r"""Sets the token of this SendSlideVerifyCodeResponse.
 
         验证码Token字符串。
 
@@ -160,7 +160,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
 
     @property
     def expire(self):
-        """Gets the expire of this SendSlideVerifyCodeResponse.
+        r"""Gets the expire of this SendSlideVerifyCodeResponse.
 
         验证码有效时间，单位：秒。
 
@@ -171,7 +171,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
 
     @expire.setter
     def expire(self, expire):
-        """Sets the expire of this SendSlideVerifyCodeResponse.
+        r"""Sets the expire of this SendSlideVerifyCodeResponse.
 
         验证码有效时间，单位：秒。
 

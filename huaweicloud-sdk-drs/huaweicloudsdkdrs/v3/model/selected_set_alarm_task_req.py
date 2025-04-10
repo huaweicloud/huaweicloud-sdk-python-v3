@@ -29,7 +29,7 @@ class SelectedSetAlarmTaskReq:
     }
 
     def __init__(self, job_id=None, status=None, engine_type=None):
-        """SelectedSetAlarmTaskReq
+        r"""SelectedSetAlarmTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SelectedSetAlarmTaskReq:
 
     @property
     def job_id(self):
-        """Gets the job_id of this SelectedSetAlarmTaskReq.
+        r"""Gets the job_id of this SelectedSetAlarmTaskReq.
 
         任务ID
 
@@ -65,7 +65,7 @@ class SelectedSetAlarmTaskReq:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SelectedSetAlarmTaskReq.
+        r"""Sets the job_id of this SelectedSetAlarmTaskReq.
 
         任务ID
 
@@ -76,7 +76,7 @@ class SelectedSetAlarmTaskReq:
 
     @property
     def status(self):
-        """Gets the status of this SelectedSetAlarmTaskReq.
+        r"""Gets the status of this SelectedSetAlarmTaskReq.
 
         任务状态
 
@@ -87,7 +87,7 @@ class SelectedSetAlarmTaskReq:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SelectedSetAlarmTaskReq.
+        r"""Sets the status of this SelectedSetAlarmTaskReq.
 
         任务状态
 
@@ -98,7 +98,7 @@ class SelectedSetAlarmTaskReq:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this SelectedSetAlarmTaskReq.
+        r"""Gets the engine_type of this SelectedSetAlarmTaskReq.
 
         引擎类型
 
@@ -109,7 +109,7 @@ class SelectedSetAlarmTaskReq:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this SelectedSetAlarmTaskReq.
+        r"""Sets the engine_type of this SelectedSetAlarmTaskReq.
 
         引擎类型
 

@@ -25,7 +25,7 @@ class DeleteLineGroupRequest:
     }
 
     def __init__(self, linegroup_id=None):
-        """DeleteLineGroupRequest
+        r"""DeleteLineGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteLineGroupRequest:
 
     @property
     def linegroup_id(self):
-        """Gets the linegroup_id of this DeleteLineGroupRequest.
+        r"""Gets the linegroup_id of this DeleteLineGroupRequest.
 
         线路分组ID
 
@@ -53,7 +53,7 @@ class DeleteLineGroupRequest:
 
     @linegroup_id.setter
     def linegroup_id(self, linegroup_id):
-        """Sets the linegroup_id of this DeleteLineGroupRequest.
+        r"""Sets the linegroup_id of this DeleteLineGroupRequest.
 
         线路分组ID
 

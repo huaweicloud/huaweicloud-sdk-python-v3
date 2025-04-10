@@ -34,7 +34,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return client_builder
 
     def apply_configuration_async(self, request):
-        """应用参数模板
+        r"""应用参数模板
 
         将参数模板应用到实例，可以指定一个或多个实例。
         
@@ -101,7 +101,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def apply_configuration_to_instances_async(self, request):
-        """应用参数模板
+        r"""应用参数模板
 
         将参数模板应用到实例，可以指定一个或多个实例。
         
@@ -168,7 +168,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def batch_delete_manual_backup_async(self, request):
-        """批量删除手动备份
+        r"""批量删除手动备份
 
         批量删除数据库实例的手动备份。
         
@@ -235,7 +235,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def batch_tag_action_async(self, request):
-        """批量添加或删除资源标签
+        r"""批量添加或删除资源标签
 
         批量添加或删除指定数据库实例的标签。
         
@@ -302,7 +302,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def batch_upgrade_database_version_async(self, request):
-        """批量数据库补丁升级
+        r"""批量数据库补丁升级
 
         批量升级数据库补丁版本。
         
@@ -367,7 +367,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def cancel_instance_schedule_window_async(self, request):
-        """取消定时任务
+        r"""取消定时任务
 
         取消定时任务
         
@@ -432,7 +432,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def check_disaster_recovery_operation_async(self, request):
-        """校验实例是否可以与指定实例建立/解除容灾关系
+        r"""校验实例是否可以与指定实例建立/解除容灾关系
 
         校验实例是否可以与指定实例建立/解除容灾关系。若接口返回成功，表示可以与指定实例建立/解除容灾关系。
         该接口需要对建立/解除容灾关系的两个实例各调用一次，2次调用都响应成功才能进行容灾关系的搭建/解除。
@@ -500,7 +500,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def check_week_password_async(self, request):
-        """判断弱密码
+        r"""判断弱密码
 
         判断弱密码。
         
@@ -565,7 +565,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def clear_instance_sessions_async(self, request):
-        """关闭实例所有节点会话
+        r"""关闭实例所有节点会话
 
         关闭实例所有节点会话。
         
@@ -632,7 +632,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def compare_configuration_async(self, request):
-        """参数模板比较
+        r"""参数模板比较
 
         比较两个参数模板之间的差异
         
@@ -697,7 +697,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def copy_configuration_async(self, request):
-        """复制参数模板
+        r"""复制参数模板
 
         复制参数模板
         
@@ -764,7 +764,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def create_back_async(self, request):
-        """创建手动备份
+        r"""创建手动备份
 
         创建手动备份。
         
@@ -831,7 +831,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def create_cold_volume_async(self, request):
-        """‘创建冷数据存储’
+        r"""‘创建冷数据存储’
 
         ‘创建冷数据存储’
         
@@ -898,7 +898,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def create_configuration_async(self, request):
-        """创建参数模板
+        r"""创建参数模板
 
         创建参数模板。
         
@@ -963,7 +963,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def create_db_cache_mapping_async(self, request):
-        """创建内存加速映射
+        r"""创建内存加速映射
 
         创建内存加速映射。
         
@@ -1028,7 +1028,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def create_db_cache_rule_async(self, request):
-        """创建内存加速规则
+        r"""创建内存加速规则
 
         创建内存加速规则。
         
@@ -1093,7 +1093,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def create_db_user_async(self, request):
-        """创建Redis数据库账号
+        r"""创建Redis数据库账号
 
         在Redis实例中创建数据库帐号。
         
@@ -1160,7 +1160,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def create_disaster_recovery_async(self, request):
-        """搭建实例与特定实例的容灾关系
+        r"""搭建实例与特定实例的容灾关系
 
         搭建实例与特定实例的容灾关系。 该接口需要对搭建容灾关系的两个实例分别各调用一次，2次接口都调用成功才能成功搭建容灾关系。
         
@@ -1227,7 +1227,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def create_instance_async(self, request):
-        """创建实例
+        r"""创建实例
 
         创建数据库实例。
         
@@ -1292,7 +1292,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def delete_backup_async(self, request):
-        """删除手动备份
+        r"""删除手动备份
 
         删除手动备份
         
@@ -1357,7 +1357,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def delete_configuration_async(self, request):
-        """删除参数模板
+        r"""删除参数模板
 
         删除指定参数模板。
         
@@ -1422,7 +1422,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def delete_db_cache_mapping_async(self, request):
-        """解除内存加速映射
+        r"""解除内存加速映射
 
         解除指定内存加速映射。
         
@@ -1487,7 +1487,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def delete_db_cache_rule_async(self, request):
-        """删除内存加速规则
+        r"""删除内存加速规则
 
         删除内存加速规则。
         
@@ -1552,7 +1552,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def delete_db_user_async(self, request):
-        """删除Redis数据库账号
+        r"""删除Redis数据库账号
 
         删除Redis实例的数据库账号。
         
@@ -1619,7 +1619,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def delete_disaster_recovery_async(self, request):
-        """解除实例与特定实例的容灾关系
+        r"""解除实例与特定实例的容灾关系
 
         解除实例与特定实例的容灾关系。 该接口需要对搭建容灾关系的两个实例分别各调用一次，2次接口都调用成功才能成功解除容灾关系。
         
@@ -1684,7 +1684,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def delete_enlarge_fail_node_async(self, request):
-        """删除扩容失败的节点
+        r"""删除扩容失败的节点
 
         删除扩容失败的节点
         
@@ -1751,7 +1751,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def delete_instance_async(self, request):
-        """删除实例
+        r"""删除实例
 
         删除数据库实例。
         
@@ -1816,7 +1816,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def delete_instances_session_async(self, request):
-        """关闭实例节点会话
+        r"""关闭实例节点会话
 
         关闭实例节点会话。
         
@@ -1883,7 +1883,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def delete_lts_configs_async(self, request):
-        """解除关联LTS日志流
+        r"""解除关联LTS日志流
 
         将实例日志与LTS日志流解除关联，后台将取消上传实例日志到的LTS日志流里。
         
@@ -1950,7 +1950,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def delete_redis_disabled_commands_async(self, request):
-        """删除Redis禁用命令
+        r"""删除Redis禁用命令
 
         删除Redis禁用命令。
         
@@ -2017,7 +2017,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def expand_instance_node_async(self, request):
-        """扩容指定集群实例的节点数量
+        r"""扩容指定集群实例的节点数量
 
         扩容指定集群实例的节点数量。
         
@@ -2084,7 +2084,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_available_flavor_infos_async(self, request):
-        """查询实例可变更规格
+        r"""查询实例可变更规格
 
         查询实例可变更规格。
         
@@ -2153,7 +2153,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_cassandra_slow_logs_async(self, request):
-        """查询GeminiDB(for Cassandra)数据库慢日志
+        r"""查询GeminiDB(for Cassandra)数据库慢日志
 
         查询GeminiDB(for Cassandra)数据库慢日志信息，支持日志关键字搜索。
         
@@ -2220,9 +2220,9 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_configuration_datastores_async(self, request):
-        """查询支持参数模板的引擎信息
+        r"""查询支持参数模板的接口信息
 
-        查询支持参数模板的引擎信息
+        查询支持参数模板的接口信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2283,7 +2283,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_configuration_templates_async(self, request):
-        """获取参数模板列表
+        r"""获取参数模板列表
 
         获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
         
@@ -2322,6 +2322,10 @@ class GaussDBforNoSQLAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'datastore_name' in local_var_params:
+            query_params.append(('datastore_name', local_var_params['datastore_name']))
+        if 'mode' in local_var_params:
+            query_params.append(('mode', local_var_params['mode']))
 
         header_params = {}
 
@@ -2350,7 +2354,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_configurations_async(self, request):
-        """获取参数模板列表
+        r"""获取参数模板列表
 
         获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
         
@@ -2385,6 +2389,10 @@ class GaussDBforNoSQLAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'datastore_name' in local_var_params:
+            query_params.append(('datastore_name', local_var_params['datastore_name']))
+        if 'mode' in local_var_params:
+            query_params.append(('mode', local_var_params['mode']))
 
         header_params = {}
 
@@ -2413,7 +2421,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_datastores_async(self, request):
-        """查询指定实例类型的数据库版本信息
+        r"""查询指定实例类型的数据库版本信息
 
         查询指定实例类型的数据库版本信息。
         
@@ -2478,7 +2486,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_db_cache_mappings_async(self, request):
-        """查询内存加速映射列表和详情
+        r"""查询内存加速映射列表和详情
 
         根据指定条件查询内存加速映射关系列表和详情。
         
@@ -2557,7 +2565,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_db_cache_rules_async(self, request):
-        """查询内存加速规则列表和详情
+        r"""查询内存加速规则列表和详情
 
         查询内存加速规则列表和详情。
         
@@ -2634,7 +2642,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_db_users_async(self, request):
-        """获取Redis数据库账号列表和详情
+        r"""获取Redis数据库账号列表和详情
 
         获取Redis数据库账号列表和详情。
         
@@ -2705,7 +2713,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_dedicated_resources_async(self, request):
-        """查询专属资源列表
+        r"""查询专属资源列表
 
         查询专属资源列表。
         
@@ -2772,7 +2780,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_eps_quotas_async(self, request):
-        """查询企业项目配额
+        r"""查询企业项目配额
 
         查询企业项目配额。
         
@@ -2841,7 +2849,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_flavor_infos_async(self, request):
-        """查询数据库规格
+        r"""查询数据库规格
 
         查询指定条件下的实例规格信息。
         
@@ -2914,7 +2922,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_flavors_async(self, request):
-        """查询指定条件下的所有实例规格信息
+        r"""查询指定条件下的所有实例规格信息
 
         查询指定条件下的所有实例规格信息。
         
@@ -2981,7 +2989,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_influxdb_slow_logs_async(self, request):
-        """查询GeminiDB(for influxdb)数据库慢日志
+        r"""查询GeminiDB(for influxdb)数据库慢日志
 
         查询GeminiDB(for influxdb)数据库慢日志信息，支持日志关键字搜索。
         
@@ -3048,7 +3056,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_instance_databases_async(self, request):
-        """获取Redis实例数据库列表
+        r"""获取Redis实例数据库列表
 
         获取Redis实例数据库列表。
         
@@ -3117,7 +3125,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_instance_maintenance_window_async(self, request):
-        """查询实例可维护时间段
+        r"""查询实例可维护时间段
 
         查询实例可维护时间段。
         
@@ -3182,7 +3190,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_instance_sessions_async(self, request):
-        """获取实例的会话
+        r"""获取实例的会话
 
         获取实例的会话。
         
@@ -3249,7 +3257,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_instance_tags_async(self, request):
-        """查询资源标签
+        r"""查询资源标签
 
         查询指定实例的标签信息。
         
@@ -3314,7 +3322,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_instances_async(self, request):
-        """查询实例列表和详情
+        r"""查询实例列表和详情
 
         根据指定条件查询数据库实例列表和详情。
         
@@ -3353,10 +3361,10 @@ class GaussDBforNoSQLAsyncClient(Client):
             query_params.append(('id', local_var_params['id']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
-        if 'mode' in local_var_params:
-            query_params.append(('mode', local_var_params['mode']))
         if 'datastore_type' in local_var_params:
             query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'mode' in local_var_params:
+            query_params.append(('mode', local_var_params['mode']))
         if 'vpc_id' in local_var_params:
             query_params.append(('vpc_id', local_var_params['vpc_id']))
         if 'subnet_id' in local_var_params:
@@ -3393,7 +3401,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_instances_by_resource_tags_async(self, request):
-        """查询资源实例
+        r"""查询资源实例
 
         根据标签查询指定的数据库实例。
         
@@ -3458,7 +3466,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_instances_by_tags_async(self, request):
-        """查询资源实例
+        r"""查询资源实例
 
         根据标签查询指定的数据库实例。
         
@@ -3523,7 +3531,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_instances_session_async(self, request):
-        """获取节点会话列表
+        r"""获取节点会话列表
 
         获取节点会话列表。
         
@@ -3594,7 +3602,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_instances_session_statistics_async(self, request):
-        """查询实例节点会话统计信息
+        r"""查询实例节点会话统计信息
 
         查询实例节点会话统计信息。
         
@@ -3659,7 +3667,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_jobs_async(self, request):
-        """查询任务列表和详情
+        r"""查询任务列表和详情
 
         查询任务列表和详情，默认查询任务列表。
         
@@ -3736,7 +3744,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_lts_configs_async(self, request):
-        """查询LTS日志配置信息
+        r"""查询LTS日志配置信息
 
         分页查询实例关联的LTS日志配置信息。
         
@@ -3811,7 +3819,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_mongodb_error_logs_async(self, request):
-        """查询GeminiDB(for Mongo)数据库错误日志
+        r"""查询GeminiDB(for Mongo)数据库错误日志
 
         查询GeminiDB(for Mongo)数据库错误日志信息，支持日志关键字搜索。
         
@@ -3878,7 +3886,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_mongodb_slow_logs_async(self, request):
-        """查询GeminiDB(for Mongo)数据库慢日志
+        r"""查询GeminiDB(for Mongo)数据库慢日志
 
         查询GeminiDB(for Mongo)数据库慢日志信息，支持日志关键字搜索。
         
@@ -3945,7 +3953,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_nosql_task_list_async(self, request):
-        """查询定时任务列表
+        r"""查询定时任务列表
 
         根据指定条件查询定时任务列表。
         
@@ -4022,7 +4030,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_project_tags_async(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询指定项目的标签信息。
         
@@ -4089,7 +4097,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_recycle_instances_async(self, request):
-        """查询回收站实例列表
+        r"""查询回收站实例列表
 
         查询回收站所有引擎的实例列表。
         
@@ -4158,7 +4166,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_redis_pitr_restore_time_async(self, request):
-        """查询Redis可恢复时间点
+        r"""查询Redis可恢复时间点
 
         查询Redis可恢复时间点。
         
@@ -4231,7 +4239,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_redis_slow_logs_async(self, request):
-        """查询GeminiDB(for Redis)数据库慢日志
+        r"""查询GeminiDB(for Redis)数据库慢日志
 
         查询GeminiDB(for Redis)数据库慢日志信息，支持日志关键字搜索。
         
@@ -4298,7 +4306,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_restore_databases_async(self, request):
-        """获取GeminiDB(for Cassandra)实例表级恢复的数据库信息
+        r"""获取GeminiDB(for Cassandra)实例表级恢复的数据库信息
 
         获取GeminiDB(for Cassandra)实例表级恢复的数据库信息。
         
@@ -4367,7 +4375,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_restore_tables_async(self, request):
-        """获取GeminiDB(for Cassandra)实例表级恢复的表信息
+        r"""获取GeminiDB(for Cassandra)实例表级恢复的表信息
 
         获取GeminiDB(for Cassandra)实例表级恢复的表信息。
         
@@ -4438,7 +4446,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_restore_time_async(self, request):
-        """查询实例可恢复的时间段
+        r"""查询实例可恢复的时间段
 
         查询实例可恢复的时间段
         
@@ -4511,7 +4519,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_slow_logs_async(self, request):
-        """查询数据库慢日志
+        r"""查询数据库慢日志
 
         查询数据库慢日志信息。
         
@@ -4588,7 +4596,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def modify_db_user_privilege_async(self, request):
-        """修改Redis数据库帐号权限
+        r"""修改Redis数据库帐号权限
 
         修改Redis数据库帐号权限。
         
@@ -4655,7 +4663,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def modify_eps_quotas_async(self, request):
-        """修改企业项目配额
+        r"""修改企业项目配额
 
         修改企业项目配额。
         
@@ -4720,7 +4728,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def modify_instance_maintenance_window_async(self, request):
-        """设置实例可维护时间段
+        r"""设置实例可维护时间段
 
         设置指定实例可维护时间段。
         
@@ -4787,7 +4795,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def modify_port_async(self, request):
-        """修改数据库端口
+        r"""修改数据库端口
 
         修改数据库实例的端口。
         
@@ -4854,7 +4862,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def modify_public_ip_async(self, request):
-        """绑定/解绑弹性公网IP
+        r"""绑定/解绑弹性公网IP
 
         实例下的节点绑定弹性公网IP/解绑弹性公网IP
         
@@ -4923,7 +4931,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def modify_volume_async(self, request):
-        """变更实例存储容量
+        r"""变更实例存储容量
 
         变更实例的存储容量大小
         
@@ -4990,7 +4998,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def offline_nodes_async(self, request):
-        """支持节点的开关机
+        r"""支持节点的开关机
 
         当底层故障导致节点无法正常工作时，可以对该节点执行关机操作，关机后会由其他节点接管业务。
         
@@ -5057,7 +5065,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def pause_resume_data_synchronization_async(self, request):
-        """暂停/恢复具备容灾关系的实例数据同步
+        r"""暂停/恢复具备容灾关系的实例数据同步
 
         该接口用于暂停/恢复具备容灾关系的实例数据同步。
         
@@ -5126,7 +5134,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def reset_db_user_password_async(self, request):
-        """重置Redis数据库账号密码
+        r"""重置Redis数据库账号密码
 
         重置Redis数据库账号密码。
         
@@ -5193,7 +5201,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def reset_param_group_template_async(self, request):
-        """重置自定义参数模板
+        r"""重置自定义参数模板
 
         重置自定义参数模板
         
@@ -5258,7 +5266,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def reset_password_async(self, request):
-        """修改实例的管理员密码
+        r"""修改实例的管理员密码
 
         修改实例的管理员密码。
         
@@ -5325,7 +5333,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def resize_cold_volume_async(self, request):
-        """扩容冷数据存储
+        r"""扩容冷数据存储
 
         扩容冷数据存储。
         
@@ -5392,7 +5400,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def resize_instance_async(self, request):
-        """变更实例规格
+        r"""变更实例规格
 
         变更实例的规格。
         
@@ -5459,7 +5467,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def resize_instance_volume_async(self, request):
-        """扩容实例存储容量
+        r"""扩容实例存储容量
 
         扩容实例的存储容量大小。
         
@@ -5526,7 +5534,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def restart_instance_async(self, request):
-        """重启实例或节点的数据库服务
+        r"""重启实例或节点
 
         重启实例或节点的数据库服务。
         
@@ -5593,7 +5601,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def restore_existing_instance_async(self, request):
-        """恢复到已有实例
+        r"""恢复到已有实例
 
         恢复到已有实例
         
@@ -5660,7 +5668,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def restore_redis_pitr_async(self, request):
-        """恢复当前Redis实例到指定时间点
+        r"""恢复当前Redis实例到指定时间点
 
         恢复当前Redis实例到指定时间点。
         
@@ -5727,7 +5735,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def save_lts_configs_async(self, request):
-        """关联LTS日志流
+        r"""关联LTS日志流
 
         - 将实例日志与LTS日志流关联，后台将自动上传实例日志到关联的LTS日志流里。
         - 关联成功后，会产生一定费用，具体计费可参考云日志服务（LTS）的定价详情。
@@ -5796,7 +5804,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def save_redis_disabled_commands_async(self, request):
-        """设置Redis禁用命令
+        r"""设置Redis禁用命令
 
         设置Redis禁用命令。
         
@@ -5863,7 +5871,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def set_auto_enlarge_policy_async(self, request):
-        """设置磁盘自动扩容策略
+        r"""设置磁盘自动扩容策略
 
         设置磁盘自动扩容策略。
         
@@ -5928,7 +5936,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def set_backup_policy_async(self, request):
-        """设置自动备份策略
+        r"""设置自动备份策略
 
         设置自动备份策略。
         
@@ -5995,7 +6003,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def set_disaster_recovery_settings_async(self, request):
-        """设置实例容灾切换的故障节点比例
+        r"""设置实例容灾切换的故障节点比例
 
         设置实例容灾切换的故障节点比例。
         
@@ -6060,7 +6068,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def set_instance_data_dump_async(self, request):
-        """开启/关闭实例数据导出
+        r"""开启/关闭实例数据导出
 
         开启/关闭实例数据导出。
         当前支持将InfluxDB数据转为parquet格式文件然后上传到指定的OBS桶中。
@@ -6128,7 +6136,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def set_recycle_policy_async(self, request):
-        """设置回收策略
+        r"""设置回收策略
 
         设置已删除实例保留天数，修改保留天数后删除的实例按照新的天数保留，修改之前已在回收站的实例保留天数不变。
         
@@ -6193,7 +6201,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def set_redis_pitr_policy_async(self, request):
-        """设置Redis恢复到指定时间点策略
+        r"""设置Redis恢复到指定时间点策略
 
         设置Redis恢复到指定时间点策略。
         
@@ -6260,7 +6268,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_all_instances_backups_async(self, request):
-        """查询备份列表
+        r"""查询备份列表
 
         根据指定条件查询备份列表。
         
@@ -6339,7 +6347,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_all_instances_backups_new_async(self, request):
-        """查询备份列表（推荐）
+        r"""查询备份列表（推荐）
 
         根据指定条件查询备份列表。
         
@@ -6420,7 +6428,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_applicable_instances_async(self, request):
-        """查询参数模板可应用的实例列表
+        r"""查询参数模板可应用的实例列表
 
         查询参数模板可应用的实例列表。
         
@@ -6489,7 +6497,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_apply_history_async(self, request):
-        """查询参数模板应用历史
+        r"""查询参数模板应用历史
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -6557,7 +6565,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_auto_enlarge_policy_async(self, request):
-        """查询磁盘自动扩容策略
+        r"""查询磁盘自动扩容策略
 
         查询磁盘自动扩容策略
         
@@ -6622,7 +6630,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_backup_policies_async(self, request):
-        """查询自动备份策略
+        r"""查询自动备份策略
 
         查询自动备份策略。
         
@@ -6687,7 +6695,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_backup_policy_async(self, request):
-        """查询自动备份策略
+        r"""查询自动备份策略
 
         查询自动备份策略。
         
@@ -6752,7 +6760,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_configuration_detail_async(self, request):
-        """获取指定参数模板的参数
+        r"""获取指定参数模板的参数
 
         获取指定参数模板的详细信息。
         
@@ -6817,7 +6825,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_disaster_recovery_settings_async(self, request):
-        """查询实例容灾切换的故障节点比例
+        r"""查询实例容灾切换的故障节点比例
 
         查询实例容灾切换的故障节点比例。
         
@@ -6886,7 +6894,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_elb_ip_group_async(self, request):
-        """查询实例负载均衡的IP访问黑白名单
+        r"""查询实例负载均衡的IP访问黑白名单
 
         查询实例负载均衡的IP访问黑白名单。
         
@@ -6951,7 +6959,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_error_log_async(self, request):
-        """查询数据库错误日志信息
+        r"""查询数据库错误日志信息
 
         查询数据库错误日志
         
@@ -7028,7 +7036,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_high_risk_commands_async(self, request):
-        """查询高危命令
+        r"""查询高危命令
 
         查询Redis的高危命令
         
@@ -7093,7 +7101,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_instance_biactive_regions_async(self, request):
-        """查询实例可搭建双活关系的Region
+        r"""查询实例可搭建双活关系的Region
 
         查询实例可搭建双活关系的Region。
         
@@ -7158,9 +7166,9 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_instance_configuration_async(self, request):
-        """获取指定实例的参数
+        r"""查询实例参数配置
 
-        获取指定实例的参数信息。
+        查询实例参数配置。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7223,7 +7231,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_instance_role_async(self, request):
-        """获取容灾实例主/备角色信息
+        r"""获取容灾实例主/备角色信息
 
         该接口用于获取容灾实例主/备角色信息，以便后续容灾实例备升主和容灾实例主降备接口调用。
         
@@ -7288,7 +7296,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_ip_num_requirement_async(self, request):
-        """查询创建实例或扩容节点时需要的IP数量
+        r"""查询创建实例或扩容节点时需要的IP数量
 
         查询创建实例或扩容节点时需要的IP数量
         
@@ -7359,7 +7367,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_modify_history_async(self, request):
-        """查询实例参数的修改历史
+        r"""查询实例参数的修改历史
 
         查询实例参数的修改历史
         
@@ -7428,7 +7436,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_passwordless_config_async(self, request):
-        """获取GeminiDB Redis的免密配置
+        r"""获取GeminiDB Redis的免密配置
 
         获取GeminiDB Redis的免密配置。
         
@@ -7497,7 +7505,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_pause_resume_stutus_async(self, request):
-        """获取容灾实例数据同步状态
+        r"""获取容灾实例数据同步状态
 
         获取容灾实例数据同步状态，主备实例id，数据同步指标值，以及倒换和切换场景下的RPO，RTO指标值。
         
@@ -7562,7 +7570,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_quotas_async(self, request):
-        """查询配额
+        r"""查询配额
 
         查询单租户在GeminiDB服务下的资源配额。
         
@@ -7631,7 +7639,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_recycle_policy_async(self, request):
-        """查询回收策略
+        r"""查询回收策略
 
         查询回收策略。
         
@@ -7696,7 +7704,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_redis_big_keys_async(self, request):
-        """查询Redis实例的大key
+        r"""查询Redis实例的大key
 
         支持查询Redis实例的大key。value长度大于bigkeys-string-threshold参数的string类型的key或者元素数大于bigkeys-composite-threshold参数的hash/list/zset/set/stream类型key，会被判断为大key。
         
@@ -7763,7 +7771,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_redis_disabled_commands_async(self, request):
-        """查询Redis禁用命令
+        r"""查询Redis禁用命令
 
         查询Redis禁用命令。
         
@@ -7834,7 +7842,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_redis_hot_keys_async(self, request):
-        """查询Redis实例的热key
+        r"""查询Redis实例的热key
 
         支持查询Redis实例的热key。
         
@@ -7903,7 +7911,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_redis_pitr_info_async(self, request):
-        """查询Redis实例指定时间点恢复所占用的存储空间
+        r"""查询Redis实例指定时间点恢复所占用的存储空间
 
         查询Redis实例指定时间点恢复所占用的存储空间。
         
@@ -7968,7 +7976,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_redis_pitr_policy_async(self, request):
-        """查询Redis恢复到指定时间点策略
+        r"""查询Redis恢复到指定时间点策略
 
         查询Redis恢复到指定时间点策略。
         
@@ -8033,7 +8041,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_restorable_list_async(self, request):
-        """查询可恢复的实例列表
+        r"""查询可恢复的实例列表
 
         查询用户可恢复的实例列表
         
@@ -8102,7 +8110,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_second_level_monitoring_status_async(self, request):
-        """查询秒级监控配置
+        r"""查询秒级监控配置
 
         查询秒级监控配置。
         
@@ -8167,7 +8175,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_slow_log_desensitization_async(self, request):
-        """查询慢日志脱敏状态
+        r"""查询慢日志脱敏状态
 
         查询慢日志脱敏状态。
         
@@ -8232,7 +8240,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def shrink_instance_node_async(self, request):
-        """缩容指定集群实例的节点数量
+        r"""缩容指定集群实例的节点数量
 
         缩容指定集群实例的节点数量。
         
@@ -8299,7 +8307,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def stop_backup_async(self, request):
-        """停止备份
+        r"""停止备份
 
         支持紧急情况下停止备份功能。
         
@@ -8366,7 +8374,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def switch_ip_group_async(self, request):
-        """设置实例负载均衡的IP访问黑白名单
+        r"""设置实例负载均衡的IP访问黑白名单
 
         设置实例负载均衡的IP访问黑白名单，黑名单、白名单只能选一种，每次调用此接口覆盖之前的设置。关闭后不限制连接的源IP地址。
         
@@ -8433,9 +8441,9 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def switch_over_async(self, request):
-        """Redis主备切换
+        r"""Redis主备切换
 
-        切换实例下的主备节点
+        切换实例的主备节点。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8498,7 +8506,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def switch_second_level_monitoring_async(self, request):
-        """开启/关闭秒级监控
+        r"""开启/关闭秒级监控
 
         开启或关闭指定实例的5秒级监控。
         
@@ -8565,7 +8573,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def switch_slowlog_desensitization_async(self, request):
-        """设置慢日志脱敏状态
+        r"""设置慢日志脱敏状态
 
         设置慢日志脱敏状态
         
@@ -8632,7 +8640,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def switch_ssl_async(self, request):
-        """切换实例SSL开关
+        r"""切换实例SSL开关
 
         切换实例SSL开关。
         
@@ -8699,7 +8707,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def switch_to_master_async(self, request):
-        """容灾实例备升主
+        r"""容灾实例备升主
 
         该接口用于对已经搭建容灾关系的实例，将备实例升级为主实例。
         
@@ -8766,7 +8774,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def switch_to_slave_async(self, request):
-        """容灾实例主降备
+        r"""容灾实例主降备
 
         该接口用于对已经搭建容灾关系的实例，将主实例降级为备实例。
         
@@ -8831,7 +8839,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def update_client_network_async(self, request):
-        """修改副本集跨网段访问配置
+        r"""修改副本集跨网段访问配置
 
         修改副本集跨网段访问配置
         
@@ -8898,7 +8906,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def update_configuration_async(self, request):
-        """修改参数模板参数
+        r"""修改参数模板参数
 
         修改参数模板参数。
         
@@ -8965,7 +8973,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def update_databases_async(self, request):
-        """操作GeminDB实例数据库
+        r"""操作GeminDB实例数据库
 
         操作GeminDB实例数据库
         
@@ -9032,7 +9040,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def update_db_cache_rule_async(self, request):
-        """修改内存加速规则
+        r"""修改内存加速规则
 
         修改指定内存加速规则。
         
@@ -9097,7 +9105,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def update_high_risk_commands_async(self, request):
-        """修改高危命令
+        r"""修改高危命令
 
         批量修改高危命令
         
@@ -9164,7 +9172,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def update_instance_configuration_async(self, request):
-        """修改指定实例的参数
+        r"""修改指定实例的参数
 
         修改指定实例的参数。
         
@@ -9231,7 +9239,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def update_instance_configurations_async(self, request):
-        """修改指定实例的参数
+        r"""修改指定实例的参数
 
         修改指定实例的参数。
         
@@ -9298,7 +9306,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def update_instance_name_async(self, request):
-        """修改实例名称
+        r"""修改实例名称
 
         修改实例名称
         
@@ -9365,7 +9373,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def update_passwordless_config_async(self, request):
-        """支持修改GeminiDB Redis的免密配置
+        r"""支持修改GeminiDB Redis的免密配置
 
         支持修改GeminiDB Redis的免密配置。
         
@@ -9432,7 +9440,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def update_security_group_async(self, request):
-        """变更实例安全组
+        r"""变更实例安全组
 
         变更实例关联的安全组
         
@@ -9499,7 +9507,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def upgrade_db_version_async(self, request):
-        """数据库补丁升级
+        r"""数据库补丁升级
 
         升级数据库补丁版本
         
@@ -9564,7 +9572,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def list_api_version_async(self, request):
-        """查询当前支持的API版本信息列表
+        r"""查询当前支持的API版本信息列表
 
         查询当前支持的API版本信息列表。
         
@@ -9627,7 +9635,7 @@ class GaussDBforNoSQLAsyncClient(Client):
         return http_info
 
     def show_api_version_async(self, request):
-        """查询指定API版本信息
+        r"""查询指定API版本信息
 
         查询指定API版本信息。
         

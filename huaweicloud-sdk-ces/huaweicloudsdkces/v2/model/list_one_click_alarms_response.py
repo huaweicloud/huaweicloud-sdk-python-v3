@@ -26,7 +26,7 @@ class ListOneClickAlarmsResponse(SdkResponse):
     }
 
     def __init__(self, one_click_alarms=None):
-        """ListOneClickAlarmsResponse
+        r"""ListOneClickAlarmsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListOneClickAlarmsResponse(SdkResponse):
 
     @property
     def one_click_alarms(self):
-        """Gets the one_click_alarms of this ListOneClickAlarmsResponse.
+        r"""Gets the one_click_alarms of this ListOneClickAlarmsResponse.
 
         一键告警列表
 
@@ -55,7 +55,7 @@ class ListOneClickAlarmsResponse(SdkResponse):
 
     @one_click_alarms.setter
     def one_click_alarms(self, one_click_alarms):
-        """Sets the one_click_alarms of this ListOneClickAlarmsResponse.
+        r"""Sets the one_click_alarms of this ListOneClickAlarmsResponse.
 
         一键告警列表
 

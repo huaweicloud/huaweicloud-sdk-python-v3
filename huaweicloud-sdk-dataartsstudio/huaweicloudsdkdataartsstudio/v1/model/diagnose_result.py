@@ -29,7 +29,7 @@ class DiagnoseResult:
     }
 
     def __init__(self):
-        """DiagnoseResult
+        r"""DiagnoseResult
 
         The model defined in huaweicloud sdk
 

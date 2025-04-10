@@ -29,7 +29,7 @@ class Severity:
     }
 
     def __init__(self, label=None, normalize_score=None, original_score=None):
-        """Severity
+        r"""Severity
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class Severity:
 
     @property
     def label(self):
-        """Gets the label of this Severity.
+        r"""Gets the label of this Severity.
 
         严重性等级取值范围：TIPS、LOW、MEDIUM、HIGH、FATAL。 TIPS：未发现任何问题。 LOW：无需针对问题执行任何操作。 MEDIUM：问题需要处理，但不紧急。 HIGH：问题必须优先处理。 FATAL：问题必须立即处理，以防止产生进一步的损害。
 
@@ -67,7 +67,7 @@ class Severity:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this Severity.
+        r"""Sets the label of this Severity.
 
         严重性等级取值范围：TIPS、LOW、MEDIUM、HIGH、FATAL。 TIPS：未发现任何问题。 LOW：无需针对问题执行任何操作。 MEDIUM：问题需要处理，但不紧急。 HIGH：问题必须优先处理。 FATAL：问题必须立即处理，以防止产生进一步的损害。
 
@@ -78,7 +78,7 @@ class Severity:
 
     @property
     def normalize_score(self):
-        """Gets the normalize_score of this Severity.
+        r"""Gets the normalize_score of this Severity.
 
         严重性评分取值范围：0-100； 与严重性等级的对应关系： TIPS 0； LOW 1-39； MEDIUM 40-69； HIGH 70-89； FATAL 90-100。
 
@@ -89,7 +89,7 @@ class Severity:
 
     @normalize_score.setter
     def normalize_score(self, normalize_score):
-        """Sets the normalize_score of this Severity.
+        r"""Sets the normalize_score of this Severity.
 
         严重性评分取值范围：0-100； 与严重性等级的对应关系： TIPS 0； LOW 1-39； MEDIUM 40-69； HIGH 70-89； FATAL 90-100。
 
@@ -100,7 +100,7 @@ class Severity:
 
     @property
     def original_score(self):
-        """Gets the original_score of this Severity.
+        r"""Gets the original_score of this Severity.
 
         严重性原始评分，指在数据源产品中的评分。
 
@@ -111,7 +111,7 @@ class Severity:
 
     @original_score.setter
     def original_score(self, original_score):
-        """Sets the original_score of this Severity.
+        r"""Sets the original_score of this Severity.
 
         严重性原始评分，指在数据源产品中的评分。
 

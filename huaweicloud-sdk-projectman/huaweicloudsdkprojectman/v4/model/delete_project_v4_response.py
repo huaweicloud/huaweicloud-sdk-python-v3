@@ -24,7 +24,7 @@ class DeleteProjectV4Response(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteProjectV4Response
+        r"""DeleteProjectV4Response
 
         The model defined in huaweicloud sdk
 

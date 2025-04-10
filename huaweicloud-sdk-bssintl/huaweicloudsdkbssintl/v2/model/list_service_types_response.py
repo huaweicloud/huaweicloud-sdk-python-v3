@@ -28,7 +28,7 @@ class ListServiceTypesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, service_types=None):
-        """ListServiceTypesResponse
+        r"""ListServiceTypesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListServiceTypesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListServiceTypesResponse.
+        r"""Gets the total_count of this ListServiceTypesResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListServiceTypesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListServiceTypesResponse.
+        r"""Sets the total_count of this ListServiceTypesResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListServiceTypesResponse(SdkResponse):
 
     @property
     def service_types(self):
-        """Gets the service_types of this ListServiceTypesResponse.
+        r"""Gets the service_types of this ListServiceTypesResponse.
 
         云服务类型信息列表，具体请参见表3。
 
@@ -84,7 +84,7 @@ class ListServiceTypesResponse(SdkResponse):
 
     @service_types.setter
     def service_types(self, service_types):
-        """Sets the service_types of this ListServiceTypesResponse.
+        r"""Sets the service_types of this ListServiceTypesResponse.
 
         云服务类型信息列表，具体请参见表3。
 

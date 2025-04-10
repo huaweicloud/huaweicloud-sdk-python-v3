@@ -28,7 +28,7 @@ class CreateTopicOrBatchDeleteTopicResponse(SdkResponse):
     }
 
     def __init__(self, id=None, job_id=None):
-        """CreateTopicOrBatchDeleteTopicResponse
+        r"""CreateTopicOrBatchDeleteTopicResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateTopicOrBatchDeleteTopicResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateTopicOrBatchDeleteTopicResponse.
+        r"""Gets the id of this CreateTopicOrBatchDeleteTopicResponse.
 
         主题名称。
 
@@ -62,7 +62,7 @@ class CreateTopicOrBatchDeleteTopicResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateTopicOrBatchDeleteTopicResponse.
+        r"""Sets the id of this CreateTopicOrBatchDeleteTopicResponse.
 
         主题名称。
 
@@ -73,7 +73,7 @@ class CreateTopicOrBatchDeleteTopicResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateTopicOrBatchDeleteTopicResponse.
+        r"""Gets the job_id of this CreateTopicOrBatchDeleteTopicResponse.
 
         删除主题任务ID。
 
@@ -84,7 +84,7 @@ class CreateTopicOrBatchDeleteTopicResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateTopicOrBatchDeleteTopicResponse.
+        r"""Sets the job_id of this CreateTopicOrBatchDeleteTopicResponse.
 
         删除主题任务ID。
 

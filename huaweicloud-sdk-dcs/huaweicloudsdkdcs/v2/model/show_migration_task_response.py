@@ -68,7 +68,7 @@ class ShowMigrationTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, task_name=None, description=None, status=None, migration_type=None, migration_method=None, ecs_tenant_private_ip=None, backup_files=None, network_type=None, source_instance=None, target_instance=None, created_at=None, updated_at=None, released_at=None, version=None, resume_mode=None, supported_features=None, tenant_vpc_id=None, tenant_subnet_id=None, tenant_security_group_id=None, bandwidth_limit_mb=None, task_status=None):
-        """ShowMigrationTaskResponse
+        r"""ShowMigrationTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -191,7 +191,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowMigrationTaskResponse.
+        r"""Gets the task_id of this ShowMigrationTaskResponse.
 
         迁移任务ID。
 
@@ -202,7 +202,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowMigrationTaskResponse.
+        r"""Sets the task_id of this ShowMigrationTaskResponse.
 
         迁移任务ID。
 
@@ -213,7 +213,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this ShowMigrationTaskResponse.
+        r"""Gets the task_name of this ShowMigrationTaskResponse.
 
         迁移任务名称。
 
@@ -224,7 +224,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ShowMigrationTaskResponse.
+        r"""Sets the task_name of this ShowMigrationTaskResponse.
 
         迁移任务名称。
 
@@ -235,7 +235,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowMigrationTaskResponse.
+        r"""Gets the description of this ShowMigrationTaskResponse.
 
         迁移任务描述。
 
@@ -246,7 +246,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowMigrationTaskResponse.
+        r"""Sets the description of this ShowMigrationTaskResponse.
 
         迁移任务描述。
 
@@ -257,7 +257,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowMigrationTaskResponse.
+        r"""Gets the status of this ShowMigrationTaskResponse.
 
         迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED。
 
@@ -268,7 +268,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowMigrationTaskResponse.
+        r"""Sets the status of this ShowMigrationTaskResponse.
 
         迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED。
 
@@ -279,7 +279,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def migration_type(self):
-        """Gets the migration_type of this ShowMigrationTaskResponse.
+        r"""Gets the migration_type of this ShowMigrationTaskResponse.
 
         迁移任务类型,包括备份文件导入和在线迁移两种类型。
 
@@ -290,7 +290,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @migration_type.setter
     def migration_type(self, migration_type):
-        """Sets the migration_type of this ShowMigrationTaskResponse.
+        r"""Sets the migration_type of this ShowMigrationTaskResponse.
 
         迁移任务类型,包括备份文件导入和在线迁移两种类型。
 
@@ -301,7 +301,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def migration_method(self):
-        """Gets the migration_method of this ShowMigrationTaskResponse.
+        r"""Gets the migration_method of this ShowMigrationTaskResponse.
 
         迁移方式，包括全量迁移和增量迁移两种类型。
 
@@ -312,7 +312,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @migration_method.setter
     def migration_method(self, migration_method):
-        """Sets the migration_method of this ShowMigrationTaskResponse.
+        r"""Sets the migration_method of this ShowMigrationTaskResponse.
 
         迁移方式，包括全量迁移和增量迁移两种类型。
 
@@ -323,7 +323,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def ecs_tenant_private_ip(self):
-        """Gets the ecs_tenant_private_ip of this ShowMigrationTaskResponse.
+        r"""Gets the ecs_tenant_private_ip of this ShowMigrationTaskResponse.
 
         迁移机租户侧私有IP，与目的/源redis私有IP处于同VPC，可将此IP加入白名单
 
@@ -334,7 +334,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @ecs_tenant_private_ip.setter
     def ecs_tenant_private_ip(self, ecs_tenant_private_ip):
-        """Sets the ecs_tenant_private_ip of this ShowMigrationTaskResponse.
+        r"""Sets the ecs_tenant_private_ip of this ShowMigrationTaskResponse.
 
         迁移机租户侧私有IP，与目的/源redis私有IP处于同VPC，可将此IP加入白名单
 
@@ -345,7 +345,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def backup_files(self):
-        """Gets the backup_files of this ShowMigrationTaskResponse.
+        r"""Gets the backup_files of this ShowMigrationTaskResponse.
 
         :return: The backup_files of this ShowMigrationTaskResponse.
         :rtype: :class:`huaweicloudsdkdcs.v2.BackupFilesBody`
@@ -354,7 +354,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @backup_files.setter
     def backup_files(self, backup_files):
-        """Sets the backup_files of this ShowMigrationTaskResponse.
+        r"""Sets the backup_files of this ShowMigrationTaskResponse.
 
         :param backup_files: The backup_files of this ShowMigrationTaskResponse.
         :type backup_files: :class:`huaweicloudsdkdcs.v2.BackupFilesBody`
@@ -363,7 +363,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def network_type(self):
-        """Gets the network_type of this ShowMigrationTaskResponse.
+        r"""Gets the network_type of this ShowMigrationTaskResponse.
 
         网络类型，包括vpc和vpn两种类型。
 
@@ -374,7 +374,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this ShowMigrationTaskResponse.
+        r"""Sets the network_type of this ShowMigrationTaskResponse.
 
         网络类型，包括vpc和vpn两种类型。
 
@@ -385,7 +385,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def source_instance(self):
-        """Gets the source_instance of this ShowMigrationTaskResponse.
+        r"""Gets the source_instance of this ShowMigrationTaskResponse.
 
         :return: The source_instance of this ShowMigrationTaskResponse.
         :rtype: :class:`huaweicloudsdkdcs.v2.SourceInstanceBody`
@@ -394,7 +394,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @source_instance.setter
     def source_instance(self, source_instance):
-        """Sets the source_instance of this ShowMigrationTaskResponse.
+        r"""Sets the source_instance of this ShowMigrationTaskResponse.
 
         :param source_instance: The source_instance of this ShowMigrationTaskResponse.
         :type source_instance: :class:`huaweicloudsdkdcs.v2.SourceInstanceBody`
@@ -403,7 +403,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def target_instance(self):
-        """Gets the target_instance of this ShowMigrationTaskResponse.
+        r"""Gets the target_instance of this ShowMigrationTaskResponse.
 
         :return: The target_instance of this ShowMigrationTaskResponse.
         :rtype: :class:`huaweicloudsdkdcs.v2.TargetInstanceBody`
@@ -412,7 +412,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @target_instance.setter
     def target_instance(self, target_instance):
-        """Sets the target_instance of this ShowMigrationTaskResponse.
+        r"""Sets the target_instance of this ShowMigrationTaskResponse.
 
         :param target_instance: The target_instance of this ShowMigrationTaskResponse.
         :type target_instance: :class:`huaweicloudsdkdcs.v2.TargetInstanceBody`
@@ -421,7 +421,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowMigrationTaskResponse.
+        r"""Gets the created_at of this ShowMigrationTaskResponse.
 
         迁移任务创建时间。
 
@@ -432,7 +432,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowMigrationTaskResponse.
+        r"""Sets the created_at of this ShowMigrationTaskResponse.
 
         迁移任务创建时间。
 
@@ -443,7 +443,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowMigrationTaskResponse.
+        r"""Gets the updated_at of this ShowMigrationTaskResponse.
 
         迁移任务完成时间。
 
@@ -454,7 +454,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowMigrationTaskResponse.
+        r"""Sets the updated_at of this ShowMigrationTaskResponse.
 
         迁移任务完成时间。
 
@@ -465,7 +465,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def released_at(self):
-        """Gets the released_at of this ShowMigrationTaskResponse.
+        r"""Gets the released_at of this ShowMigrationTaskResponse.
 
         迁移机释放时间。
 
@@ -476,7 +476,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @released_at.setter
     def released_at(self, released_at):
-        """Sets the released_at of this ShowMigrationTaskResponse.
+        r"""Sets the released_at of this ShowMigrationTaskResponse.
 
         迁移机释放时间。
 
@@ -487,7 +487,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowMigrationTaskResponse.
+        r"""Gets the version of this ShowMigrationTaskResponse.
 
         版本。
 
@@ -498,7 +498,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowMigrationTaskResponse.
+        r"""Sets the version of this ShowMigrationTaskResponse.
 
         版本。
 
@@ -509,7 +509,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def resume_mode(self):
-        """Gets the resume_mode of this ShowMigrationTaskResponse.
+        r"""Gets the resume_mode of this ShowMigrationTaskResponse.
 
         操作模式，分为auto和manual。
 
@@ -520,7 +520,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @resume_mode.setter
     def resume_mode(self, resume_mode):
-        """Sets the resume_mode of this ShowMigrationTaskResponse.
+        r"""Sets the resume_mode of this ShowMigrationTaskResponse.
 
         操作模式，分为auto和manual。
 
@@ -531,7 +531,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def supported_features(self):
-        """Gets the supported_features of this ShowMigrationTaskResponse.
+        r"""Gets the supported_features of this ShowMigrationTaskResponse.
 
         支持的特性。
 
@@ -542,7 +542,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @supported_features.setter
     def supported_features(self, supported_features):
-        """Sets the supported_features of this ShowMigrationTaskResponse.
+        r"""Sets the supported_features of this ShowMigrationTaskResponse.
 
         支持的特性。
 
@@ -553,7 +553,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def tenant_vpc_id(self):
-        """Gets the tenant_vpc_id of this ShowMigrationTaskResponse.
+        r"""Gets the tenant_vpc_id of this ShowMigrationTaskResponse.
 
         租户VPC ID。
 
@@ -564,7 +564,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @tenant_vpc_id.setter
     def tenant_vpc_id(self, tenant_vpc_id):
-        """Sets the tenant_vpc_id of this ShowMigrationTaskResponse.
+        r"""Sets the tenant_vpc_id of this ShowMigrationTaskResponse.
 
         租户VPC ID。
 
@@ -575,7 +575,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def tenant_subnet_id(self):
-        """Gets the tenant_subnet_id of this ShowMigrationTaskResponse.
+        r"""Gets the tenant_subnet_id of this ShowMigrationTaskResponse.
 
         租户子网ID。
 
@@ -586,7 +586,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @tenant_subnet_id.setter
     def tenant_subnet_id(self, tenant_subnet_id):
-        """Sets the tenant_subnet_id of this ShowMigrationTaskResponse.
+        r"""Sets the tenant_subnet_id of this ShowMigrationTaskResponse.
 
         租户子网ID。
 
@@ -597,7 +597,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def tenant_security_group_id(self):
-        """Gets the tenant_security_group_id of this ShowMigrationTaskResponse.
+        r"""Gets the tenant_security_group_id of this ShowMigrationTaskResponse.
 
         租户安全组ID。
 
@@ -608,7 +608,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @tenant_security_group_id.setter
     def tenant_security_group_id(self, tenant_security_group_id):
-        """Sets the tenant_security_group_id of this ShowMigrationTaskResponse.
+        r"""Sets the tenant_security_group_id of this ShowMigrationTaskResponse.
 
         租户安全组ID。
 
@@ -619,7 +619,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def bandwidth_limit_mb(self):
-        """Gets the bandwidth_limit_mb of this ShowMigrationTaskResponse.
+        r"""Gets the bandwidth_limit_mb of this ShowMigrationTaskResponse.
 
         带宽限制速度。
 
@@ -630,7 +630,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @bandwidth_limit_mb.setter
     def bandwidth_limit_mb(self, bandwidth_limit_mb):
-        """Sets the bandwidth_limit_mb of this ShowMigrationTaskResponse.
+        r"""Sets the bandwidth_limit_mb of this ShowMigrationTaskResponse.
 
         带宽限制速度。
 
@@ -641,7 +641,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @property
     def task_status(self):
-        """Gets the task_status of this ShowMigrationTaskResponse.
+        r"""Gets the task_status of this ShowMigrationTaskResponse.
 
         任务状态。
 
@@ -652,7 +652,7 @@ class ShowMigrationTaskResponse(SdkResponse):
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ShowMigrationTaskResponse.
+        r"""Sets the task_status of this ShowMigrationTaskResponse.
 
         任务状态。
 

@@ -31,7 +31,7 @@ class AlarmInfo:
     }
 
     def __init__(self, topics=None, alarm_rule_template_id=None, prom_instance_id=None, prom_enterprise_project_id=None):
-        """AlarmInfo
+        r"""AlarmInfo
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class AlarmInfo:
 
     @property
     def topics(self):
-        """Gets the topics of this AlarmInfo.
+        r"""Gets the topics of this AlarmInfo.
 
         **参数解释：** 联系组列表。填写SMN主题名称，通过配置告警联系组，分组管理订阅终端，接收告警信息。 **约束限制：** 不涉及
 
@@ -74,7 +74,7 @@ class AlarmInfo:
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this AlarmInfo.
+        r"""Sets the topics of this AlarmInfo.
 
         **参数解释：** 联系组列表。填写SMN主题名称，通过配置告警联系组，分组管理订阅终端，接收告警信息。 **约束限制：** 不涉及
 
@@ -85,7 +85,7 @@ class AlarmInfo:
 
     @property
     def alarm_rule_template_id(self):
-        """Gets the alarm_rule_template_id of this AlarmInfo.
+        r"""Gets the alarm_rule_template_id of this AlarmInfo.
 
         **参数解释：** 开启告警助手时传入告警模板ID。默认采用容器场景下的告警规则模板。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
@@ -96,7 +96,7 @@ class AlarmInfo:
 
     @alarm_rule_template_id.setter
     def alarm_rule_template_id(self, alarm_rule_template_id):
-        """Sets the alarm_rule_template_id of this AlarmInfo.
+        r"""Sets the alarm_rule_template_id of this AlarmInfo.
 
         **参数解释：** 开启告警助手时传入告警模板ID。默认采用容器场景下的告警规则模板。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
@@ -107,7 +107,7 @@ class AlarmInfo:
 
     @property
     def prom_instance_id(self):
-        """Gets the prom_instance_id of this AlarmInfo.
+        r"""Gets the prom_instance_id of this AlarmInfo.
 
         **参数解释：** 开启告警助手时传入AOM普罗实例的id。若未安装普罗插件或者未对接AOM实例，此参数无需指定，告警中心将不会创建指标类告警规则。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
@@ -118,7 +118,7 @@ class AlarmInfo:
 
     @prom_instance_id.setter
     def prom_instance_id(self, prom_instance_id):
-        """Sets the prom_instance_id of this AlarmInfo.
+        r"""Sets the prom_instance_id of this AlarmInfo.
 
         **参数解释：** 开启告警助手时传入AOM普罗实例的id。若未安装普罗插件或者未对接AOM实例，此参数无需指定，告警中心将不会创建指标类告警规则。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
@@ -129,7 +129,7 @@ class AlarmInfo:
 
     @property
     def prom_enterprise_project_id(self):
-        """Gets the prom_enterprise_project_id of this AlarmInfo.
+        r"""Gets the prom_enterprise_project_id of this AlarmInfo.
 
         **参数解释：** 开启告警助手时传入AOM普罗实例的企业项目id。若未安装普罗插件或者未对接AOM实例，此参数无需指定，告警中心将不会创建指标类告警规则。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
@@ -140,7 +140,7 @@ class AlarmInfo:
 
     @prom_enterprise_project_id.setter
     def prom_enterprise_project_id(self, prom_enterprise_project_id):
-        """Sets the prom_enterprise_project_id of this AlarmInfo.
+        r"""Sets the prom_enterprise_project_id of this AlarmInfo.
 
         **参数解释：** 开启告警助手时传入AOM普罗实例的企业项目id。若未安装普罗插件或者未对接AOM实例，此参数无需指定，告警中心将不会创建指标类告警规则。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 

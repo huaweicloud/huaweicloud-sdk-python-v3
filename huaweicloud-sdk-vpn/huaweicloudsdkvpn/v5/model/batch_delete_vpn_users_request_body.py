@@ -25,7 +25,7 @@ class BatchDeleteVpnUsersRequestBody:
     }
 
     def __init__(self, users=None):
-        """BatchDeleteVpnUsersRequestBody
+        r"""BatchDeleteVpnUsersRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteVpnUsersRequestBody:
 
     @property
     def users(self):
-        """Gets the users of this BatchDeleteVpnUsersRequestBody.
+        r"""Gets the users of this BatchDeleteVpnUsersRequestBody.
 
         用户列表
 
@@ -53,7 +53,7 @@ class BatchDeleteVpnUsersRequestBody:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this BatchDeleteVpnUsersRequestBody.
+        r"""Sets the users of this BatchDeleteVpnUsersRequestBody.
 
         用户列表
 

@@ -34,7 +34,7 @@ class StsAsyncClient(Client):
         return client_builder
 
     def decode_authorization_message_async(self, request):
-        """解密鉴权失败的原因
+        r"""解密鉴权失败的原因
 
         解密鉴权失败的原因。
         
@@ -101,7 +101,7 @@ class StsAsyncClient(Client):
         return http_info
 
     def get_caller_identity_async(self, request):
-        """获取调用者身份信息
+        r"""获取调用者身份信息
 
         获取调用者（华为云用户，代理等）身份信息。
         

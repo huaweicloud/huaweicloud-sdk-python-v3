@@ -29,7 +29,7 @@ class BlockPage:
     }
 
     def __init__(self, template=None, custom_page=None, redirect_url=None):
-        """BlockPage
+        r"""BlockPage
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BlockPage:
 
     @property
     def template(self):
-        """Gets the template of this BlockPage.
+        r"""Gets the template of this BlockPage.
 
         模板名称，默认页面请输入default，自定义告警页面时请输入custom，重定向请输入redirect
 
@@ -67,7 +67,7 @@ class BlockPage:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this BlockPage.
+        r"""Sets the template of this BlockPage.
 
         模板名称，默认页面请输入default，自定义告警页面时请输入custom，重定向请输入redirect
 
@@ -78,7 +78,7 @@ class BlockPage:
 
     @property
     def custom_page(self):
-        """Gets the custom_page of this BlockPage.
+        r"""Gets the custom_page of this BlockPage.
 
         :return: The custom_page of this BlockPage.
         :rtype: :class:`huaweicloudsdkwaf.v1.CustomPage`
@@ -87,7 +87,7 @@ class BlockPage:
 
     @custom_page.setter
     def custom_page(self, custom_page):
-        """Sets the custom_page of this BlockPage.
+        r"""Sets the custom_page of this BlockPage.
 
         :param custom_page: The custom_page of this BlockPage.
         :type custom_page: :class:`huaweicloudsdkwaf.v1.CustomPage`
@@ -96,7 +96,7 @@ class BlockPage:
 
     @property
     def redirect_url(self):
-        """Gets the redirect_url of this BlockPage.
+        r"""Gets the redirect_url of this BlockPage.
 
         “重定向”页面URL
 
@@ -107,7 +107,7 @@ class BlockPage:
 
     @redirect_url.setter
     def redirect_url(self, redirect_url):
-        """Sets the redirect_url of this BlockPage.
+        r"""Sets the redirect_url of this BlockPage.
 
         “重定向”页面URL
 

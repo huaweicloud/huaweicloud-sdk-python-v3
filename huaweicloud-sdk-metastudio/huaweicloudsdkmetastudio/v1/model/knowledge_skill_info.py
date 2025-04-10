@@ -33,7 +33,7 @@ class KnowledgeSkillInfo:
     }
 
     def __init__(self, skill_id=None, name=None, identify=None, create_time=None, update_time=None):
-        """KnowledgeSkillInfo
+        r"""KnowledgeSkillInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class KnowledgeSkillInfo:
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this KnowledgeSkillInfo.
+        r"""Gets the skill_id of this KnowledgeSkillInfo.
 
         技能ID。
 
@@ -82,7 +82,7 @@ class KnowledgeSkillInfo:
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this KnowledgeSkillInfo.
+        r"""Sets the skill_id of this KnowledgeSkillInfo.
 
         技能ID。
 
@@ -93,7 +93,7 @@ class KnowledgeSkillInfo:
 
     @property
     def name(self):
-        """Gets the name of this KnowledgeSkillInfo.
+        r"""Gets the name of this KnowledgeSkillInfo.
 
         技能名称。
 
@@ -104,7 +104,7 @@ class KnowledgeSkillInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KnowledgeSkillInfo.
+        r"""Sets the name of this KnowledgeSkillInfo.
 
         技能名称。
 
@@ -115,7 +115,7 @@ class KnowledgeSkillInfo:
 
     @property
     def identify(self):
-        """Gets the identify of this KnowledgeSkillInfo.
+        r"""Gets the identify of this KnowledgeSkillInfo.
 
         技能标识。
 
@@ -126,7 +126,7 @@ class KnowledgeSkillInfo:
 
     @identify.setter
     def identify(self, identify):
-        """Sets the identify of this KnowledgeSkillInfo.
+        r"""Sets the identify of this KnowledgeSkillInfo.
 
         技能标识。
 
@@ -137,7 +137,7 @@ class KnowledgeSkillInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this KnowledgeSkillInfo.
+        r"""Gets the create_time of this KnowledgeSkillInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -148,7 +148,7 @@ class KnowledgeSkillInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this KnowledgeSkillInfo.
+        r"""Sets the create_time of this KnowledgeSkillInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -159,7 +159,7 @@ class KnowledgeSkillInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this KnowledgeSkillInfo.
+        r"""Gets the update_time of this KnowledgeSkillInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -170,7 +170,7 @@ class KnowledgeSkillInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this KnowledgeSkillInfo.
+        r"""Sets the update_time of this KnowledgeSkillInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 

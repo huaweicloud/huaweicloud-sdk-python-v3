@@ -27,7 +27,7 @@ class CommonPrefixes:
     }
 
     def __init__(self, prefix=None):
-        """CommonPrefixes
+        r"""CommonPrefixes
 
         The model defined in huaweicloud sdk
 
@@ -45,7 +45,7 @@ class CommonPrefixes:
 
     @property
     def prefix(self):
-        """Gets the prefix of this CommonPrefixes.
+        r"""Gets the prefix of this CommonPrefixes.
 
         :return: The prefix of this CommonPrefixes.
         :rtype: str
@@ -54,7 +54,7 @@ class CommonPrefixes:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this CommonPrefixes.
+        r"""Sets the prefix of this CommonPrefixes.
 
         :param prefix: The prefix of this CommonPrefixes.
         :type prefix: str

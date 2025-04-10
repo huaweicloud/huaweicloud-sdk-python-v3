@@ -31,7 +31,7 @@ class ExpandParam:
     }
 
     def __init__(self, node_group_name=None, count=None, skip_bootstrap_scripts=None, scale_without_start=None):
-        """ExpandParam
+        r"""ExpandParam
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ExpandParam:
 
     @property
     def node_group_name(self):
-        """Gets the node_group_name of this ExpandParam.
+        r"""Gets the node_group_name of this ExpandParam.
 
         节点组名称
 
@@ -73,7 +73,7 @@ class ExpandParam:
 
     @node_group_name.setter
     def node_group_name(self, node_group_name):
-        """Sets the node_group_name of this ExpandParam.
+        r"""Sets the node_group_name of this ExpandParam.
 
         节点组名称
 
@@ -84,7 +84,7 @@ class ExpandParam:
 
     @property
     def count(self):
-        """Gets the count of this ExpandParam.
+        r"""Gets the count of this ExpandParam.
 
         扩容节点数量
 
@@ -95,7 +95,7 @@ class ExpandParam:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ExpandParam.
+        r"""Sets the count of this ExpandParam.
 
         扩容节点数量
 
@@ -106,7 +106,7 @@ class ExpandParam:
 
     @property
     def skip_bootstrap_scripts(self):
-        """Gets the skip_bootstrap_scripts of this ExpandParam.
+        r"""Gets the skip_bootstrap_scripts of this ExpandParam.
 
         扩容时是否在新增节点上跳过执行创建集群时指定的引导操作。未填写时，默认不执行引导操作。
 
@@ -117,7 +117,7 @@ class ExpandParam:
 
     @skip_bootstrap_scripts.setter
     def skip_bootstrap_scripts(self, skip_bootstrap_scripts):
-        """Sets the skip_bootstrap_scripts of this ExpandParam.
+        r"""Sets the skip_bootstrap_scripts of this ExpandParam.
 
         扩容时是否在新增节点上跳过执行创建集群时指定的引导操作。未填写时，默认不执行引导操作。
 
@@ -128,7 +128,7 @@ class ExpandParam:
 
     @property
     def scale_without_start(self):
-        """Gets the scale_without_start of this ExpandParam.
+        r"""Gets the scale_without_start of this ExpandParam.
 
         扩容后是否选择不启动扩容节点上的组件。未填写时，默认启动组件。  - true：扩容后不启动组件。 - false：扩容后启动组件。
 
@@ -139,7 +139,7 @@ class ExpandParam:
 
     @scale_without_start.setter
     def scale_without_start(self, scale_without_start):
-        """Sets the scale_without_start of this ExpandParam.
+        r"""Sets the scale_without_start of this ExpandParam.
 
         扩容后是否选择不启动扩容节点上的组件。未填写时，默认启动组件。  - true：扩容后不启动组件。 - false：扩容后启动组件。
 

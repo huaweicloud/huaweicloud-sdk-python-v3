@@ -26,7 +26,7 @@ class ListServerMetricDataResponse(SdkResponse):
     }
 
     def __init__(self, server_metrics=None):
-        """ListServerMetricDataResponse
+        r"""ListServerMetricDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListServerMetricDataResponse(SdkResponse):
 
     @property
     def server_metrics(self):
-        """Gets the server_metrics of this ListServerMetricDataResponse.
+        r"""Gets the server_metrics of this ListServerMetricDataResponse.
 
         监控数据。
 
@@ -55,7 +55,7 @@ class ListServerMetricDataResponse(SdkResponse):
 
     @server_metrics.setter
     def server_metrics(self, server_metrics):
-        """Sets the server_metrics of this ListServerMetricDataResponse.
+        r"""Sets the server_metrics of this ListServerMetricDataResponse.
 
         监控数据。
 

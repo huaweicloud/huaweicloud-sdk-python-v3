@@ -24,7 +24,7 @@ class SetRedisPitrPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetRedisPitrPolicyResponse
+        r"""SetRedisPitrPolicyResponse
 
         The model defined in huaweicloud sdk
 

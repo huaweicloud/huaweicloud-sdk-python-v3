@@ -28,7 +28,7 @@ class KeystoneShowCatalogResponse(SdkResponse):
     }
 
     def __init__(self, catalog=None, links=None):
-        """KeystoneShowCatalogResponse
+        r"""KeystoneShowCatalogResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class KeystoneShowCatalogResponse(SdkResponse):
 
     @property
     def catalog(self):
-        """Gets the catalog of this KeystoneShowCatalogResponse.
+        r"""Gets the catalog of this KeystoneShowCatalogResponse.
 
         服务目录信息列表。
 
@@ -62,7 +62,7 @@ class KeystoneShowCatalogResponse(SdkResponse):
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this KeystoneShowCatalogResponse.
+        r"""Sets the catalog of this KeystoneShowCatalogResponse.
 
         服务目录信息列表。
 
@@ -73,7 +73,7 @@ class KeystoneShowCatalogResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this KeystoneShowCatalogResponse.
+        r"""Gets the links of this KeystoneShowCatalogResponse.
 
         :return: The links of this KeystoneShowCatalogResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -82,7 +82,7 @@ class KeystoneShowCatalogResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneShowCatalogResponse.
+        r"""Sets the links of this KeystoneShowCatalogResponse.
 
         :param links: The links of this KeystoneShowCatalogResponse.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`

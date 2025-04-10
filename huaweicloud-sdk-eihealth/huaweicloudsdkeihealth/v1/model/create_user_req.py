@@ -37,7 +37,7 @@ class CreateUserReq:
     }
 
     def __init__(self, name=None, password=None, role=None, email=None, phone=None, areacode=None, settings=None):
-        """CreateUserReq
+        r"""CreateUserReq
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class CreateUserReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateUserReq.
+        r"""Gets the name of this CreateUserReq.
 
         用户名，长度5~31之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格
 
@@ -93,7 +93,7 @@ class CreateUserReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateUserReq.
+        r"""Sets the name of this CreateUserReq.
 
         用户名，长度5~31之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格
 
@@ -104,7 +104,7 @@ class CreateUserReq:
 
     @property
     def password(self):
-        """Gets the password of this CreateUserReq.
+        r"""Gets the password of this CreateUserReq.
 
         用户密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。
 
@@ -115,7 +115,7 @@ class CreateUserReq:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateUserReq.
+        r"""Sets the password of this CreateUserReq.
 
         用户密码，在8-32位之间支持用户自定义密码长度，至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。
 
@@ -126,7 +126,7 @@ class CreateUserReq:
 
     @property
     def role(self):
-        """Gets the role of this CreateUserReq.
+        r"""Gets the role of this CreateUserReq.
 
         角色类型：管理员(ADMIN)、操作者(OPERATOR)
 
@@ -137,7 +137,7 @@ class CreateUserReq:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this CreateUserReq.
+        r"""Sets the role of this CreateUserReq.
 
         角色类型：管理员(ADMIN)、操作者(OPERATOR)
 
@@ -148,7 +148,7 @@ class CreateUserReq:
 
     @property
     def email(self):
-        """Gets the email of this CreateUserReq.
+        r"""Gets the email of this CreateUserReq.
 
         用户邮箱，需符合邮箱格式
 
@@ -159,7 +159,7 @@ class CreateUserReq:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this CreateUserReq.
+        r"""Sets the email of this CreateUserReq.
 
         用户邮箱，需符合邮箱格式
 
@@ -170,7 +170,7 @@ class CreateUserReq:
 
     @property
     def phone(self):
-        """Gets the phone of this CreateUserReq.
+        r"""Gets the phone of this CreateUserReq.
 
         用户手机号，纯数字，长度小于等于32位。必须与国家码同时存在。
 
@@ -181,7 +181,7 @@ class CreateUserReq:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this CreateUserReq.
+        r"""Sets the phone of this CreateUserReq.
 
         用户手机号，纯数字，长度小于等于32位。必须与国家码同时存在。
 
@@ -192,7 +192,7 @@ class CreateUserReq:
 
     @property
     def areacode(self):
-        """Gets the areacode of this CreateUserReq.
+        r"""Gets the areacode of this CreateUserReq.
 
         国家码。中国大陆为“0086”
 
@@ -203,7 +203,7 @@ class CreateUserReq:
 
     @areacode.setter
     def areacode(self, areacode):
-        """Sets the areacode of this CreateUserReq.
+        r"""Sets the areacode of this CreateUserReq.
 
         国家码。中国大陆为“0086”
 
@@ -214,7 +214,7 @@ class CreateUserReq:
 
     @property
     def settings(self):
-        """Gets the settings of this CreateUserReq.
+        r"""Gets the settings of this CreateUserReq.
 
         :return: The settings of this CreateUserReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UserSettingDto`
@@ -223,7 +223,7 @@ class CreateUserReq:
 
     @settings.setter
     def settings(self, settings):
-        """Sets the settings of this CreateUserReq.
+        r"""Sets the settings of this CreateUserReq.
 
         :param settings: The settings of this CreateUserReq.
         :type settings: :class:`huaweicloudsdkeihealth.v1.UserSettingDto`

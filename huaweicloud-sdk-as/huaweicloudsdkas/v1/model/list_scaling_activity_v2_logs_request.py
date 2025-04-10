@@ -39,7 +39,7 @@ class ListScalingActivityV2LogsRequest:
     }
 
     def __init__(self, scaling_group_id=None, log_id=None, start_time=None, end_time=None, start_number=None, limit=None, type=None, status=None):
-        """ListScalingActivityV2LogsRequest
+        r"""ListScalingActivityV2LogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListScalingActivityV2LogsRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this ListScalingActivityV2LogsRequest.
+        r"""Gets the scaling_group_id of this ListScalingActivityV2LogsRequest.
 
         伸缩组ID。
 
@@ -102,7 +102,7 @@ class ListScalingActivityV2LogsRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this ListScalingActivityV2LogsRequest.
+        r"""Sets the scaling_group_id of this ListScalingActivityV2LogsRequest.
 
         伸缩组ID。
 
@@ -113,7 +113,7 @@ class ListScalingActivityV2LogsRequest:
 
     @property
     def log_id(self):
-        """Gets the log_id of this ListScalingActivityV2LogsRequest.
+        r"""Gets the log_id of this ListScalingActivityV2LogsRequest.
 
         伸缩活动日志ID
 
@@ -124,7 +124,7 @@ class ListScalingActivityV2LogsRequest:
 
     @log_id.setter
     def log_id(self, log_id):
-        """Sets the log_id of this ListScalingActivityV2LogsRequest.
+        r"""Sets the log_id of this ListScalingActivityV2LogsRequest.
 
         伸缩活动日志ID
 
@@ -135,7 +135,7 @@ class ListScalingActivityV2LogsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListScalingActivityV2LogsRequest.
+        r"""Gets the start_time of this ListScalingActivityV2LogsRequest.
 
         查询的起始时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
@@ -146,7 +146,7 @@ class ListScalingActivityV2LogsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListScalingActivityV2LogsRequest.
+        r"""Sets the start_time of this ListScalingActivityV2LogsRequest.
 
         查询的起始时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
@@ -157,7 +157,7 @@ class ListScalingActivityV2LogsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListScalingActivityV2LogsRequest.
+        r"""Gets the end_time of this ListScalingActivityV2LogsRequest.
 
         查询的截止时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
@@ -168,7 +168,7 @@ class ListScalingActivityV2LogsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListScalingActivityV2LogsRequest.
+        r"""Sets the end_time of this ListScalingActivityV2LogsRequest.
 
         查询的截止时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
@@ -179,7 +179,7 @@ class ListScalingActivityV2LogsRequest:
 
     @property
     def start_number(self):
-        """Gets the start_number of this ListScalingActivityV2LogsRequest.
+        r"""Gets the start_number of this ListScalingActivityV2LogsRequest.
 
         查询的起始行号，默认为0。
 
@@ -190,7 +190,7 @@ class ListScalingActivityV2LogsRequest:
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this ListScalingActivityV2LogsRequest.
+        r"""Sets the start_number of this ListScalingActivityV2LogsRequest.
 
         查询的起始行号，默认为0。
 
@@ -201,7 +201,7 @@ class ListScalingActivityV2LogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScalingActivityV2LogsRequest.
+        r"""Gets the limit of this ListScalingActivityV2LogsRequest.
 
         查询记录数，默认20，最大100。
 
@@ -212,7 +212,7 @@ class ListScalingActivityV2LogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScalingActivityV2LogsRequest.
+        r"""Sets the limit of this ListScalingActivityV2LogsRequest.
 
         查询记录数，默认20，最大100。
 
@@ -223,7 +223,7 @@ class ListScalingActivityV2LogsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListScalingActivityV2LogsRequest.
+        r"""Gets the type of this ListScalingActivityV2LogsRequest.
 
         查询的伸缩活动类型（查询多类型使用逗号分隔）： - NORMAL：普通伸缩活动 - MANNUAL_REMOVE：从伸缩组手动移除实例 - MANNUAL_DELETE：从伸缩组手动移除并删除实例 - MANNUAL_ADD：实例手动加入伸缩组。 - ELB_CHECK_DELETE：ELB检查移除并删除实例。 - AUDIT_CHECK_DELETE：通过审计openstack移除并删除实例。 - DIFF：期望实例数与实际实例数不一致。 - MODIFY_ELB：LB迁移。 - ENTER_STANDBY：实例转入备用。 - EXIT_STANDBY：实例移出备用。
 
@@ -234,7 +234,7 @@ class ListScalingActivityV2LogsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListScalingActivityV2LogsRequest.
+        r"""Sets the type of this ListScalingActivityV2LogsRequest.
 
         查询的伸缩活动类型（查询多类型使用逗号分隔）： - NORMAL：普通伸缩活动 - MANNUAL_REMOVE：从伸缩组手动移除实例 - MANNUAL_DELETE：从伸缩组手动移除并删除实例 - MANNUAL_ADD：实例手动加入伸缩组。 - ELB_CHECK_DELETE：ELB检查移除并删除实例。 - AUDIT_CHECK_DELETE：通过审计openstack移除并删除实例。 - DIFF：期望实例数与实际实例数不一致。 - MODIFY_ELB：LB迁移。 - ENTER_STANDBY：实例转入备用。 - EXIT_STANDBY：实例移出备用。
 
@@ -245,7 +245,7 @@ class ListScalingActivityV2LogsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListScalingActivityV2LogsRequest.
+        r"""Gets the status of this ListScalingActivityV2LogsRequest.
 
         查询的伸缩活动状态：SUCCESS：成功；FAIL：失败；DOING：伸缩中
 
@@ -256,7 +256,7 @@ class ListScalingActivityV2LogsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListScalingActivityV2LogsRequest.
+        r"""Sets the status of this ListScalingActivityV2LogsRequest.
 
         查询的伸缩活动状态：SUCCESS：成功；FAIL：失败；DOING：伸缩中
 

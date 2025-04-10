@@ -25,7 +25,7 @@ class RollbackInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """RollbackInstanceRequest
+        r"""RollbackInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RollbackInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this RollbackInstanceRequest.
+        r"""Gets the body of this RollbackInstanceRequest.
 
         :return: The body of this RollbackInstanceRequest.
         :rtype: :class:`huaweicloudsdkcbh.v2.RollbackInstanceRequestBody`
@@ -52,7 +52,7 @@ class RollbackInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RollbackInstanceRequest.
+        r"""Sets the body of this RollbackInstanceRequest.
 
         :param body: The body of this RollbackInstanceRequest.
         :type body: :class:`huaweicloudsdkcbh.v2.RollbackInstanceRequestBody`

@@ -29,7 +29,7 @@ class DeleteInstanceDemandRequest:
     }
 
     def __init__(self, id=None, delete_publicip=None, delete_volume=None):
-        """DeleteInstanceDemandRequest
+        r"""DeleteInstanceDemandRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteInstanceDemandRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteInstanceDemandRequest.
+        r"""Gets the id of this DeleteInstanceDemandRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -67,7 +67,7 @@ class DeleteInstanceDemandRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteInstanceDemandRequest.
+        r"""Sets the id of this DeleteInstanceDemandRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -78,7 +78,7 @@ class DeleteInstanceDemandRequest:
 
     @property
     def delete_publicip(self):
-        """Gets the delete_publicip of this DeleteInstanceDemandRequest.
+        r"""Gets the delete_publicip of this DeleteInstanceDemandRequest.
 
         是否删除弹性IP
 
@@ -89,7 +89,7 @@ class DeleteInstanceDemandRequest:
 
     @delete_publicip.setter
     def delete_publicip(self, delete_publicip):
-        """Sets the delete_publicip of this DeleteInstanceDemandRequest.
+        r"""Sets the delete_publicip of this DeleteInstanceDemandRequest.
 
         是否删除弹性IP
 
@@ -100,7 +100,7 @@ class DeleteInstanceDemandRequest:
 
     @property
     def delete_volume(self):
-        """Gets the delete_volume of this DeleteInstanceDemandRequest.
+        r"""Gets the delete_volume of this DeleteInstanceDemandRequest.
 
         是否删除磁盘
 
@@ -111,7 +111,7 @@ class DeleteInstanceDemandRequest:
 
     @delete_volume.setter
     def delete_volume(self, delete_volume):
-        """Sets the delete_volume of this DeleteInstanceDemandRequest.
+        r"""Sets the delete_volume of this DeleteInstanceDemandRequest.
 
         是否删除磁盘
 

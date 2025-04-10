@@ -25,7 +25,7 @@ class UpdateStarRequest:
     }
 
     def __init__(self, asset_id=None):
-        """UpdateStarRequest
+        r"""UpdateStarRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateStarRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this UpdateStarRequest.
+        r"""Gets the asset_id of this UpdateStarRequest.
 
         资产id
 
@@ -53,7 +53,7 @@ class UpdateStarRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this UpdateStarRequest.
+        r"""Sets the asset_id of this UpdateStarRequest.
 
         资产id
 

@@ -28,7 +28,7 @@ class ShowVpcAttachmentResponse(SdkResponse):
     }
 
     def __init__(self, vpc_attachment=None, request_id=None):
-        """ShowVpcAttachmentResponse
+        r"""ShowVpcAttachmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowVpcAttachmentResponse(SdkResponse):
 
     @property
     def vpc_attachment(self):
-        """Gets the vpc_attachment of this ShowVpcAttachmentResponse.
+        r"""Gets the vpc_attachment of this ShowVpcAttachmentResponse.
 
         :return: The vpc_attachment of this ShowVpcAttachmentResponse.
         :rtype: :class:`huaweicloudsdker.v3.VpcAttachmentDetails`
@@ -60,7 +60,7 @@ class ShowVpcAttachmentResponse(SdkResponse):
 
     @vpc_attachment.setter
     def vpc_attachment(self, vpc_attachment):
-        """Sets the vpc_attachment of this ShowVpcAttachmentResponse.
+        r"""Sets the vpc_attachment of this ShowVpcAttachmentResponse.
 
         :param vpc_attachment: The vpc_attachment of this ShowVpcAttachmentResponse.
         :type vpc_attachment: :class:`huaweicloudsdker.v3.VpcAttachmentDetails`
@@ -69,7 +69,7 @@ class ShowVpcAttachmentResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowVpcAttachmentResponse.
+        r"""Gets the request_id of this ShowVpcAttachmentResponse.
 
         请求id
 
@@ -80,7 +80,7 @@ class ShowVpcAttachmentResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowVpcAttachmentResponse.
+        r"""Sets the request_id of this ShowVpcAttachmentResponse.
 
         请求id
 

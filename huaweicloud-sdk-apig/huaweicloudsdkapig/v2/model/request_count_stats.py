@@ -33,7 +33,7 @@ class RequestCountStats:
     }
 
     def __init__(self, req_count=None, req_count2xx=None, req_count4xx=None, req_count5xx=None, req_count_error=None):
-        """RequestCountStats
+        r"""RequestCountStats
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class RequestCountStats:
 
     @property
     def req_count(self):
-        """Gets the req_count of this RequestCountStats.
+        r"""Gets the req_count of this RequestCountStats.
 
         请求总次数
 
@@ -82,7 +82,7 @@ class RequestCountStats:
 
     @req_count.setter
     def req_count(self, req_count):
-        """Sets the req_count of this RequestCountStats.
+        r"""Sets the req_count of this RequestCountStats.
 
         请求总次数
 
@@ -93,7 +93,7 @@ class RequestCountStats:
 
     @property
     def req_count2xx(self):
-        """Gets the req_count2xx of this RequestCountStats.
+        r"""Gets the req_count2xx of this RequestCountStats.
 
         2xx响应码总次数
 
@@ -104,7 +104,7 @@ class RequestCountStats:
 
     @req_count2xx.setter
     def req_count2xx(self, req_count2xx):
-        """Sets the req_count2xx of this RequestCountStats.
+        r"""Sets the req_count2xx of this RequestCountStats.
 
         2xx响应码总次数
 
@@ -115,7 +115,7 @@ class RequestCountStats:
 
     @property
     def req_count4xx(self):
-        """Gets the req_count4xx of this RequestCountStats.
+        r"""Gets the req_count4xx of this RequestCountStats.
 
         4xx响应码总次数
 
@@ -126,7 +126,7 @@ class RequestCountStats:
 
     @req_count4xx.setter
     def req_count4xx(self, req_count4xx):
-        """Sets the req_count4xx of this RequestCountStats.
+        r"""Sets the req_count4xx of this RequestCountStats.
 
         4xx响应码总次数
 
@@ -137,7 +137,7 @@ class RequestCountStats:
 
     @property
     def req_count5xx(self):
-        """Gets the req_count5xx of this RequestCountStats.
+        r"""Gets the req_count5xx of this RequestCountStats.
 
         5xx响应码总次数
 
@@ -148,7 +148,7 @@ class RequestCountStats:
 
     @req_count5xx.setter
     def req_count5xx(self, req_count5xx):
-        """Sets the req_count5xx of this RequestCountStats.
+        r"""Sets the req_count5xx of this RequestCountStats.
 
         5xx响应码总次数
 
@@ -159,7 +159,7 @@ class RequestCountStats:
 
     @property
     def req_count_error(self):
-        """Gets the req_count_error of this RequestCountStats.
+        r"""Gets the req_count_error of this RequestCountStats.
 
         错误次数
 
@@ -170,7 +170,7 @@ class RequestCountStats:
 
     @req_count_error.setter
     def req_count_error(self, req_count_error):
-        """Sets the req_count_error of this RequestCountStats.
+        r"""Sets the req_count_error of this RequestCountStats.
 
         错误次数
 

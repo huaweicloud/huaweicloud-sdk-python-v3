@@ -45,7 +45,7 @@ class AlarmTemplatePolicies:
     }
 
     def __init__(self, namespace=None, dimension_name=None, metric_name=None, period=None, filter=None, comparison_operator=None, value=None, unit=None, count=None, alarm_level=None, suppress_duration=None):
-        """AlarmTemplatePolicies
+        r"""AlarmTemplatePolicies
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class AlarmTemplatePolicies:
 
     @property
     def namespace(self):
-        """Gets the namespace of this AlarmTemplatePolicies.
+        r"""Gets the namespace of this AlarmTemplatePolicies.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -113,7 +113,7 @@ class AlarmTemplatePolicies:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this AlarmTemplatePolicies.
+        r"""Sets the namespace of this AlarmTemplatePolicies.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -124,7 +124,7 @@ class AlarmTemplatePolicies:
 
     @property
     def dimension_name(self):
-        """Gets the dimension_name of this AlarmTemplatePolicies.
+        r"""Gets the dimension_name of this AlarmTemplatePolicies.
 
         资源维度，必须以字母开头，多维度用\",\"分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
 
@@ -135,7 +135,7 @@ class AlarmTemplatePolicies:
 
     @dimension_name.setter
     def dimension_name(self, dimension_name):
-        """Sets the dimension_name of this AlarmTemplatePolicies.
+        r"""Sets the dimension_name of this AlarmTemplatePolicies.
 
         资源维度，必须以字母开头，多维度用\",\"分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
 
@@ -146,7 +146,7 @@ class AlarmTemplatePolicies:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this AlarmTemplatePolicies.
+        r"""Gets the metric_name of this AlarmTemplatePolicies.
 
         资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -157,7 +157,7 @@ class AlarmTemplatePolicies:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this AlarmTemplatePolicies.
+        r"""Sets the metric_name of this AlarmTemplatePolicies.
 
         资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -168,7 +168,7 @@ class AlarmTemplatePolicies:
 
     @property
     def period(self):
-        """Gets the period of this AlarmTemplatePolicies.
+        r"""Gets the period of this AlarmTemplatePolicies.
 
         告警条件判断周期,单位为秒
 
@@ -179,7 +179,7 @@ class AlarmTemplatePolicies:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this AlarmTemplatePolicies.
+        r"""Sets the period of this AlarmTemplatePolicies.
 
         告警条件判断周期,单位为秒
 
@@ -190,7 +190,7 @@ class AlarmTemplatePolicies:
 
     @property
     def filter(self):
-        """Gets the filter of this AlarmTemplatePolicies.
+        r"""Gets the filter of this AlarmTemplatePolicies.
 
         数据聚合方式
 
@@ -201,7 +201,7 @@ class AlarmTemplatePolicies:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this AlarmTemplatePolicies.
+        r"""Sets the filter of this AlarmTemplatePolicies.
 
         数据聚合方式
 
@@ -212,7 +212,7 @@ class AlarmTemplatePolicies:
 
     @property
     def comparison_operator(self):
-        """Gets the comparison_operator of this AlarmTemplatePolicies.
+        r"""Gets the comparison_operator of this AlarmTemplatePolicies.
 
         告警阈值的比较条件，支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
 
@@ -223,7 +223,7 @@ class AlarmTemplatePolicies:
 
     @comparison_operator.setter
     def comparison_operator(self, comparison_operator):
-        """Sets the comparison_operator of this AlarmTemplatePolicies.
+        r"""Sets the comparison_operator of this AlarmTemplatePolicies.
 
         告警阈值的比较条件，支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
 
@@ -234,7 +234,7 @@ class AlarmTemplatePolicies:
 
     @property
     def value(self):
-        """Gets the value of this AlarmTemplatePolicies.
+        r"""Gets the value of this AlarmTemplatePolicies.
 
         告警阈值
 
@@ -245,7 +245,7 @@ class AlarmTemplatePolicies:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AlarmTemplatePolicies.
+        r"""Sets the value of this AlarmTemplatePolicies.
 
         告警阈值
 
@@ -256,7 +256,7 @@ class AlarmTemplatePolicies:
 
     @property
     def unit(self):
-        """Gets the unit of this AlarmTemplatePolicies.
+        r"""Gets the unit of this AlarmTemplatePolicies.
 
         数据的单位字符串，长度不超过32
 
@@ -267,7 +267,7 @@ class AlarmTemplatePolicies:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this AlarmTemplatePolicies.
+        r"""Sets the unit of this AlarmTemplatePolicies.
 
         数据的单位字符串，长度不超过32
 
@@ -278,7 +278,7 @@ class AlarmTemplatePolicies:
 
     @property
     def count(self):
-        """Gets the count of this AlarmTemplatePolicies.
+        r"""Gets the count of this AlarmTemplatePolicies.
 
         次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
 
@@ -289,7 +289,7 @@ class AlarmTemplatePolicies:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this AlarmTemplatePolicies.
+        r"""Sets the count of this AlarmTemplatePolicies.
 
         次数，事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180
 
@@ -300,7 +300,7 @@ class AlarmTemplatePolicies:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this AlarmTemplatePolicies.
+        r"""Gets the alarm_level of this AlarmTemplatePolicies.
 
         告警级别，1为紧急，2为重要，3为次要，4为提示
 
@@ -311,7 +311,7 @@ class AlarmTemplatePolicies:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this AlarmTemplatePolicies.
+        r"""Sets the alarm_level of this AlarmTemplatePolicies.
 
         告警级别，1为紧急，2为重要，3为次要，4为提示
 
@@ -322,7 +322,7 @@ class AlarmTemplatePolicies:
 
     @property
     def suppress_duration(self):
-        """Gets the suppress_duration of this AlarmTemplatePolicies.
+        r"""Gets the suppress_duration of this AlarmTemplatePolicies.
 
         告警抑制周期，单位为秒，当告警抑制周期为0时，仅发送一次告警
 
@@ -333,7 +333,7 @@ class AlarmTemplatePolicies:
 
     @suppress_duration.setter
     def suppress_duration(self, suppress_duration):
-        """Sets the suppress_duration of this AlarmTemplatePolicies.
+        r"""Sets the suppress_duration of this AlarmTemplatePolicies.
 
         告警抑制周期，单位为秒，当告警抑制周期为0时，仅发送一次告警
 

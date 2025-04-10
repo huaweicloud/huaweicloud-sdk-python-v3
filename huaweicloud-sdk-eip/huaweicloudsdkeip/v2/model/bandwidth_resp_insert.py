@@ -51,7 +51,7 @@ class BandwidthRespInsert:
     }
 
     def __init__(self, bandwidth_type=None, charge_mode=None, id=None, name=None, publicip_info=None, billing_info=None, share_type=None, size=None, tenant_id=None, enterprise_project_id=None, status=None, enable_bandwidth_rules=None, rule_quota=None, bandwidth_rules=None):
-        """BandwidthRespInsert
+        r"""BandwidthRespInsert
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class BandwidthRespInsert:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this BandwidthRespInsert.
+        r"""Gets the bandwidth_type of this BandwidthRespInsert.
 
         功能说明：带宽类型，共享带宽默认为share。  取值范围：share，bgp，telcom，sbgp等。  share：共享带宽  bgp：动态bgp  telcom ：联通  sbgp：静态bgp
 
@@ -145,7 +145,7 @@ class BandwidthRespInsert:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this BandwidthRespInsert.
+        r"""Sets the bandwidth_type of this BandwidthRespInsert.
 
         功能说明：带宽类型，共享带宽默认为share。  取值范围：share，bgp，telcom，sbgp等。  share：共享带宽  bgp：动态bgp  telcom ：联通  sbgp：静态bgp
 
@@ -156,7 +156,7 @@ class BandwidthRespInsert:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this BandwidthRespInsert.
+        r"""Gets the charge_mode of this BandwidthRespInsert.
 
         功能说明：按流量计费,按带宽计费还是按增强型95计费。  取值范围：bandwidth，traffic，95peak_plus(按增强型95计费)不返回或者为空时表示是bandwidth。  约束：只有共享带宽支持95peak_plus（按增强型95计费），按增强型95计费时需要指定保底百分比，默认是20%。
 
@@ -167,7 +167,7 @@ class BandwidthRespInsert:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this BandwidthRespInsert.
+        r"""Sets the charge_mode of this BandwidthRespInsert.
 
         功能说明：按流量计费,按带宽计费还是按增强型95计费。  取值范围：bandwidth，traffic，95peak_plus(按增强型95计费)不返回或者为空时表示是bandwidth。  约束：只有共享带宽支持95peak_plus（按增强型95计费），按增强型95计费时需要指定保底百分比，默认是20%。
 
@@ -178,7 +178,7 @@ class BandwidthRespInsert:
 
     @property
     def id(self):
-        """Gets the id of this BandwidthRespInsert.
+        r"""Gets the id of this BandwidthRespInsert.
 
         功能说明：带宽唯一标识
 
@@ -189,7 +189,7 @@ class BandwidthRespInsert:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BandwidthRespInsert.
+        r"""Sets the id of this BandwidthRespInsert.
 
         功能说明：带宽唯一标识
 
@@ -200,7 +200,7 @@ class BandwidthRespInsert:
 
     @property
     def name(self):
-        """Gets the name of this BandwidthRespInsert.
+        r"""Gets the name of this BandwidthRespInsert.
 
         功能说明：带宽名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -211,7 +211,7 @@ class BandwidthRespInsert:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BandwidthRespInsert.
+        r"""Sets the name of this BandwidthRespInsert.
 
         功能说明：带宽名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -222,7 +222,7 @@ class BandwidthRespInsert:
 
     @property
     def publicip_info(self):
-        """Gets the publicip_info of this BandwidthRespInsert.
+        r"""Gets the publicip_info of this BandwidthRespInsert.
 
         功能说明：带宽对应的弹性公网IP信息  约束：WHOLE类型的带宽支持多个弹性公网IP，PER类型的带宽只能对应一个弹性公网IP
 
@@ -233,7 +233,7 @@ class BandwidthRespInsert:
 
     @publicip_info.setter
     def publicip_info(self, publicip_info):
-        """Sets the publicip_info of this BandwidthRespInsert.
+        r"""Sets the publicip_info of this BandwidthRespInsert.
 
         功能说明：带宽对应的弹性公网IP信息  约束：WHOLE类型的带宽支持多个弹性公网IP，PER类型的带宽只能对应一个弹性公网IP
 
@@ -244,7 +244,7 @@ class BandwidthRespInsert:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this BandwidthRespInsert.
+        r"""Gets the billing_info of this BandwidthRespInsert.
 
         功能说明：账单信息  如果billinginfo不为空，说明是包周期的带宽
 
@@ -255,7 +255,7 @@ class BandwidthRespInsert:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this BandwidthRespInsert.
+        r"""Sets the billing_info of this BandwidthRespInsert.
 
         功能说明：账单信息  如果billinginfo不为空，说明是包周期的带宽
 
@@ -266,7 +266,7 @@ class BandwidthRespInsert:
 
     @property
     def share_type(self):
-        """Gets the share_type of this BandwidthRespInsert.
+        r"""Gets the share_type of this BandwidthRespInsert.
 
         功能说明：带宽类型，标识是否是共享带宽  取值范围：WHOLE，PER  WHOLE表示共享带宽；PER，表示独享带宽
 
@@ -277,7 +277,7 @@ class BandwidthRespInsert:
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this BandwidthRespInsert.
+        r"""Sets the share_type of this BandwidthRespInsert.
 
         功能说明：带宽类型，标识是否是共享带宽  取值范围：WHOLE，PER  WHOLE表示共享带宽；PER，表示独享带宽
 
@@ -288,7 +288,7 @@ class BandwidthRespInsert:
 
     @property
     def size(self):
-        """Gets the size of this BandwidthRespInsert.
+        r"""Gets the size of this BandwidthRespInsert.
 
         功能说明：带宽大小  取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。
 
@@ -299,7 +299,7 @@ class BandwidthRespInsert:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BandwidthRespInsert.
+        r"""Sets the size of this BandwidthRespInsert.
 
         功能说明：带宽大小  取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。
 
@@ -310,7 +310,7 @@ class BandwidthRespInsert:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this BandwidthRespInsert.
+        r"""Gets the tenant_id of this BandwidthRespInsert.
 
         功能说明：用户所属租户ID
 
@@ -321,7 +321,7 @@ class BandwidthRespInsert:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this BandwidthRespInsert.
+        r"""Sets the tenant_id of this BandwidthRespInsert.
 
         功能说明：用户所属租户ID
 
@@ -332,7 +332,7 @@ class BandwidthRespInsert:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this BandwidthRespInsert.
+        r"""Gets the enterprise_project_id of this BandwidthRespInsert.
 
         企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建带宽时，给带宽绑定企业项目ID。
 
@@ -343,7 +343,7 @@ class BandwidthRespInsert:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this BandwidthRespInsert.
+        r"""Sets the enterprise_project_id of this BandwidthRespInsert.
 
         企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建带宽时，给带宽绑定企业项目ID。
 
@@ -354,7 +354,7 @@ class BandwidthRespInsert:
 
     @property
     def status(self):
-        """Gets the status of this BandwidthRespInsert.
+        r"""Gets the status of this BandwidthRespInsert.
 
         功能说明：带宽的状态  取值范围：  FREEZED：冻结  NORMAL：正常
 
@@ -365,7 +365,7 @@ class BandwidthRespInsert:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BandwidthRespInsert.
+        r"""Sets the status of this BandwidthRespInsert.
 
         功能说明：带宽的状态  取值范围：  FREEZED：冻结  NORMAL：正常
 
@@ -376,7 +376,7 @@ class BandwidthRespInsert:
 
     @property
     def enable_bandwidth_rules(self):
-        """Gets the enable_bandwidth_rules of this BandwidthRespInsert.
+        r"""Gets the enable_bandwidth_rules of this BandwidthRespInsert.
 
         功能说明：是否开启企业级qos 取值范围：true/false
 
@@ -387,7 +387,7 @@ class BandwidthRespInsert:
 
     @enable_bandwidth_rules.setter
     def enable_bandwidth_rules(self, enable_bandwidth_rules):
-        """Sets the enable_bandwidth_rules of this BandwidthRespInsert.
+        r"""Sets the enable_bandwidth_rules of this BandwidthRespInsert.
 
         功能说明：是否开启企业级qos 取值范围：true/false
 
@@ -398,7 +398,7 @@ class BandwidthRespInsert:
 
     @property
     def rule_quota(self):
-        """Gets the rule_quota of this BandwidthRespInsert.
+        r"""Gets the rule_quota of this BandwidthRespInsert.
 
         功能说明：带宽支持的最大分组规则数。
 
@@ -409,7 +409,7 @@ class BandwidthRespInsert:
 
     @rule_quota.setter
     def rule_quota(self, rule_quota):
-        """Sets the rule_quota of this BandwidthRespInsert.
+        r"""Sets the rule_quota of this BandwidthRespInsert.
 
         功能说明：带宽支持的最大分组规则数。
 
@@ -420,7 +420,7 @@ class BandwidthRespInsert:
 
     @property
     def bandwidth_rules(self):
-        """Gets the bandwidth_rules of this BandwidthRespInsert.
+        r"""Gets the bandwidth_rules of this BandwidthRespInsert.
 
         功能说明：带宽规则对象
 
@@ -431,7 +431,7 @@ class BandwidthRespInsert:
 
     @bandwidth_rules.setter
     def bandwidth_rules(self, bandwidth_rules):
-        """Sets the bandwidth_rules of this BandwidthRespInsert.
+        r"""Sets the bandwidth_rules of this BandwidthRespInsert.
 
         功能说明：带宽规则对象
 

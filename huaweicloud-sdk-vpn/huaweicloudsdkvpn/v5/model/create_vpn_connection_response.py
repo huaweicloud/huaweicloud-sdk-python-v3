@@ -30,7 +30,7 @@ class CreateVpnConnectionResponse(SdkResponse):
     }
 
     def __init__(self, vpn_connection=None, request_id=None, header_response_token=None):
-        """CreateVpnConnectionResponse
+        r"""CreateVpnConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateVpnConnectionResponse(SdkResponse):
 
     @property
     def vpn_connection(self):
-        """Gets the vpn_connection of this CreateVpnConnectionResponse.
+        r"""Gets the vpn_connection of this CreateVpnConnectionResponse.
 
         :return: The vpn_connection of this CreateVpnConnectionResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateResponseVpnConnection`
@@ -67,7 +67,7 @@ class CreateVpnConnectionResponse(SdkResponse):
 
     @vpn_connection.setter
     def vpn_connection(self, vpn_connection):
-        """Sets the vpn_connection of this CreateVpnConnectionResponse.
+        r"""Sets the vpn_connection of this CreateVpnConnectionResponse.
 
         :param vpn_connection: The vpn_connection of this CreateVpnConnectionResponse.
         :type vpn_connection: :class:`huaweicloudsdkvpn.v5.CreateResponseVpnConnection`
@@ -76,7 +76,7 @@ class CreateVpnConnectionResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateVpnConnectionResponse.
+        r"""Gets the request_id of this CreateVpnConnectionResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class CreateVpnConnectionResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateVpnConnectionResponse.
+        r"""Sets the request_id of this CreateVpnConnectionResponse.
 
         请求ID
 
@@ -98,7 +98,7 @@ class CreateVpnConnectionResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this CreateVpnConnectionResponse.
+        r"""Gets the header_response_token of this CreateVpnConnectionResponse.
 
         :return: The header_response_token of this CreateVpnConnectionResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateVpnConnectionResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this CreateVpnConnectionResponse.
+        r"""Sets the header_response_token of this CreateVpnConnectionResponse.
 
         :param header_response_token: The header_response_token of this CreateVpnConnectionResponse.
         :type header_response_token: str

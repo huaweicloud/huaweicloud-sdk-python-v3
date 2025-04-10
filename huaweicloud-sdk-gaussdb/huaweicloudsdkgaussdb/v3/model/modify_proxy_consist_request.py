@@ -27,7 +27,7 @@ class ModifyProxyConsistRequest:
     }
 
     def __init__(self, session_consistence=None, consistence_mode=None):
-        """ModifyProxyConsistRequest
+        r"""ModifyProxyConsistRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ModifyProxyConsistRequest:
 
     @property
     def session_consistence(self):
-        """Gets the session_consistence of this ModifyProxyConsistRequest.
+        r"""Gets the session_consistence of this ModifyProxyConsistRequest.
 
         会话一致性。 - 取值\"true\"时表示会话一致性开启。 - 取值\"false\"时表示会话一致性关闭。
 
@@ -60,7 +60,7 @@ class ModifyProxyConsistRequest:
 
     @session_consistence.setter
     def session_consistence(self, session_consistence):
-        """Sets the session_consistence of this ModifyProxyConsistRequest.
+        r"""Sets the session_consistence of this ModifyProxyConsistRequest.
 
         会话一致性。 - 取值\"true\"时表示会话一致性开启。 - 取值\"false\"时表示会话一致性关闭。
 
@@ -71,7 +71,7 @@ class ModifyProxyConsistRequest:
 
     @property
     def consistence_mode(self):
-        """Gets the consistence_mode of this ModifyProxyConsistRequest.
+        r"""Gets the consistence_mode of this ModifyProxyConsistRequest.
 
         一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性 - global: 全局一致性 - eventual: 最终一致性
 
@@ -82,7 +82,7 @@ class ModifyProxyConsistRequest:
 
     @consistence_mode.setter
     def consistence_mode(self, consistence_mode):
-        """Sets the consistence_mode of this ModifyProxyConsistRequest.
+        r"""Sets the consistence_mode of this ModifyProxyConsistRequest.
 
         一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性 - global: 全局一致性 - eventual: 最终一致性
 

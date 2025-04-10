@@ -26,7 +26,7 @@ class ListTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, templates=None):
-        """ListTemplatesResponse
+        r"""ListTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this ListTemplatesResponse.
+        r"""Gets the templates of this ListTemplatesResponse.
 
         模板列表。
 
@@ -55,7 +55,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this ListTemplatesResponse.
+        r"""Sets the templates of this ListTemplatesResponse.
 
         模板列表。
 

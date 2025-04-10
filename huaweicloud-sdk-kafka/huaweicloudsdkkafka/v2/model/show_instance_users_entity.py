@@ -33,7 +33,7 @@ class ShowInstanceUsersEntity:
     }
 
     def __init__(self, user_name=None, user_desc=None, role=None, default_app=None, created_time=None):
-        """ShowInstanceUsersEntity
+        r"""ShowInstanceUsersEntity
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowInstanceUsersEntity:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowInstanceUsersEntity.
+        r"""Gets the user_name of this ShowInstanceUsersEntity.
 
         用户名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
@@ -82,7 +82,7 @@ class ShowInstanceUsersEntity:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowInstanceUsersEntity.
+        r"""Sets the user_name of this ShowInstanceUsersEntity.
 
         用户名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
@@ -93,7 +93,7 @@ class ShowInstanceUsersEntity:
 
     @property
     def user_desc(self):
-        """Gets the user_desc of this ShowInstanceUsersEntity.
+        r"""Gets the user_desc of this ShowInstanceUsersEntity.
 
         用户描述。
 
@@ -104,7 +104,7 @@ class ShowInstanceUsersEntity:
 
     @user_desc.setter
     def user_desc(self, user_desc):
-        """Sets the user_desc of this ShowInstanceUsersEntity.
+        r"""Sets the user_desc of this ShowInstanceUsersEntity.
 
         用户描述。
 
@@ -115,7 +115,7 @@ class ShowInstanceUsersEntity:
 
     @property
     def role(self):
-        """Gets the role of this ShowInstanceUsersEntity.
+        r"""Gets the role of this ShowInstanceUsersEntity.
 
         用户角色。
 
@@ -126,7 +126,7 @@ class ShowInstanceUsersEntity:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ShowInstanceUsersEntity.
+        r"""Sets the role of this ShowInstanceUsersEntity.
 
         用户角色。
 
@@ -137,7 +137,7 @@ class ShowInstanceUsersEntity:
 
     @property
     def default_app(self):
-        """Gets the default_app of this ShowInstanceUsersEntity.
+        r"""Gets the default_app of this ShowInstanceUsersEntity.
 
         是否为默认应用。
 
@@ -148,7 +148,7 @@ class ShowInstanceUsersEntity:
 
     @default_app.setter
     def default_app(self, default_app):
-        """Sets the default_app of this ShowInstanceUsersEntity.
+        r"""Sets the default_app of this ShowInstanceUsersEntity.
 
         是否为默认应用。
 
@@ -159,7 +159,7 @@ class ShowInstanceUsersEntity:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowInstanceUsersEntity.
+        r"""Gets the created_time of this ShowInstanceUsersEntity.
 
         创建时间。
 
@@ -170,7 +170,7 @@ class ShowInstanceUsersEntity:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowInstanceUsersEntity.
+        r"""Sets the created_time of this ShowInstanceUsersEntity.
 
         创建时间。
 

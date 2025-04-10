@@ -27,7 +27,7 @@ class IpAllowList:
     }
 
     def __init__(self, address=None, description=None):
-        """IpAllowList
+        r"""IpAllowList
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class IpAllowList:
 
     @property
     def address(self):
-        """Gets the address of this IpAllowList.
+        r"""Gets the address of this IpAllowList.
 
         **参数说明**：白名单ip地址 
 
@@ -60,7 +60,7 @@ class IpAllowList:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this IpAllowList.
+        r"""Sets the address of this IpAllowList.
 
         **参数说明**：白名单ip地址 
 
@@ -71,7 +71,7 @@ class IpAllowList:
 
     @property
     def description(self):
-        """Gets the description of this IpAllowList.
+        r"""Gets the description of this IpAllowList.
 
         **参数说明**：描述 
 
@@ -82,7 +82,7 @@ class IpAllowList:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IpAllowList.
+        r"""Sets the description of this IpAllowList.
 
         **参数说明**：描述 
 

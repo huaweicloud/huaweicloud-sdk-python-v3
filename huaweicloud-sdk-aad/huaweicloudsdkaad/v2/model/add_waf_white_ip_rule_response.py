@@ -26,7 +26,7 @@ class AddWafWhiteIpRuleResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """AddWafWhiteIpRuleResponse
+        r"""AddWafWhiteIpRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddWafWhiteIpRuleResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this AddWafWhiteIpRuleResponse.
+        r"""Gets the body of this AddWafWhiteIpRuleResponse.
 
         :return: The body of this AddWafWhiteIpRuleResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class AddWafWhiteIpRuleResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddWafWhiteIpRuleResponse.
+        r"""Sets the body of this AddWafWhiteIpRuleResponse.
 
         :param body: The body of this AddWafWhiteIpRuleResponse.
         :type body: str

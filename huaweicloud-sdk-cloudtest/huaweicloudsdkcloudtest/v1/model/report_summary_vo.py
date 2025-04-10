@@ -27,7 +27,7 @@ class ReportSummaryVo:
     }
 
     def __init__(self, case_success_rate=None, case_complete_rate=None):
-        """ReportSummaryVo
+        r"""ReportSummaryVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ReportSummaryVo:
 
     @property
     def case_success_rate(self):
-        """Gets the case_success_rate of this ReportSummaryVo.
+        r"""Gets the case_success_rate of this ReportSummaryVo.
 
         用例通过率
 
@@ -61,7 +61,7 @@ class ReportSummaryVo:
 
     @case_success_rate.setter
     def case_success_rate(self, case_success_rate):
-        """Sets the case_success_rate of this ReportSummaryVo.
+        r"""Sets the case_success_rate of this ReportSummaryVo.
 
         用例通过率
 
@@ -72,7 +72,7 @@ class ReportSummaryVo:
 
     @property
     def case_complete_rate(self):
-        """Gets the case_complete_rate of this ReportSummaryVo.
+        r"""Gets the case_complete_rate of this ReportSummaryVo.
 
         用例完成率
 
@@ -83,7 +83,7 @@ class ReportSummaryVo:
 
     @case_complete_rate.setter
     def case_complete_rate(self, case_complete_rate):
-        """Sets the case_complete_rate of this ReportSummaryVo.
+        r"""Sets the case_complete_rate of this ReportSummaryVo.
 
         用例完成率
 

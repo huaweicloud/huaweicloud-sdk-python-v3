@@ -26,7 +26,7 @@ class ShowAggregatePolicyStateComplianceSummaryResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """ShowAggregatePolicyStateComplianceSummaryResponse
+        r"""ShowAggregatePolicyStateComplianceSummaryResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAggregatePolicyStateComplianceSummaryResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ShowAggregatePolicyStateComplianceSummaryResponse.
+        r"""Gets the results of this ShowAggregatePolicyStateComplianceSummaryResponse.
 
         合规总结结果列表
 
@@ -55,7 +55,7 @@ class ShowAggregatePolicyStateComplianceSummaryResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ShowAggregatePolicyStateComplianceSummaryResponse.
+        r"""Sets the results of this ShowAggregatePolicyStateComplianceSummaryResponse.
 
         合规总结结果列表
 

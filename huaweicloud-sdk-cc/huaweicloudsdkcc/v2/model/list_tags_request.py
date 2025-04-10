@@ -27,7 +27,7 @@ class ListTagsRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None):
-        """ListTagsRequest
+        r"""ListTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListTagsRequest.
+        r"""Gets the resource_type of this ListTagsRequest.
 
         资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 
@@ -59,7 +59,7 @@ class ListTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListTagsRequest.
+        r"""Sets the resource_type of this ListTagsRequest.
 
         资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 
@@ -70,7 +70,7 @@ class ListTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListTagsRequest.
+        r"""Gets the resource_id of this ListTagsRequest.
 
         资源ID
 
@@ -81,7 +81,7 @@ class ListTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListTagsRequest.
+        r"""Sets the resource_id of this ListTagsRequest.
 
         资源ID
 

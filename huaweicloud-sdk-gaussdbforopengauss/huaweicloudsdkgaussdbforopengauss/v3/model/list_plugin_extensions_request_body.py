@@ -27,7 +27,7 @@ class ListPluginExtensionsRequestBody:
     }
 
     def __init__(self, db_name=None, plugin_name=None):
-        """ListPluginExtensionsRequestBody
+        r"""ListPluginExtensionsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListPluginExtensionsRequestBody:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ListPluginExtensionsRequestBody.
+        r"""Gets the db_name of this ListPluginExtensionsRequestBody.
 
         数据库名称
 
@@ -59,7 +59,7 @@ class ListPluginExtensionsRequestBody:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ListPluginExtensionsRequestBody.
+        r"""Sets the db_name of this ListPluginExtensionsRequestBody.
 
         数据库名称
 
@@ -70,7 +70,7 @@ class ListPluginExtensionsRequestBody:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this ListPluginExtensionsRequestBody.
+        r"""Gets the plugin_name of this ListPluginExtensionsRequestBody.
 
         插件名称
 
@@ -81,7 +81,7 @@ class ListPluginExtensionsRequestBody:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this ListPluginExtensionsRequestBody.
+        r"""Sets the plugin_name of this ListPluginExtensionsRequestBody.
 
         插件名称
 

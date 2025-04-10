@@ -63,7 +63,7 @@ class QueryDataGuardMonitorResponse:
     }
 
     def __init__(self, bandwidth=None, cpu_used_percent=None, dst_delay=None, dst_io=None, dst_normal=None, dst_offset=None, dst_rps=None, mem_used_in_mb=None, node_mem_in_mb=None, node_offset=None, node_volume_in_gb=None, sr_delay=None, sr_offset=None, src_io=None, src_normal=None, src_rps=None, trans_in_mb=None, trans_lines=None, volume_used_in_gb=None, migration_bytes_per_second=None):
-        """QueryDataGuardMonitorResponse
+        r"""QueryDataGuardMonitorResponse
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this QueryDataGuardMonitorResponse.
+        r"""Gets the bandwidth of this QueryDataGuardMonitorResponse.
 
         带宽。
 
@@ -187,7 +187,7 @@ class QueryDataGuardMonitorResponse:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this QueryDataGuardMonitorResponse.
+        r"""Sets the bandwidth of this QueryDataGuardMonitorResponse.
 
         带宽。
 
@@ -198,7 +198,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def cpu_used_percent(self):
-        """Gets the cpu_used_percent of this QueryDataGuardMonitorResponse.
+        r"""Gets the cpu_used_percent of this QueryDataGuardMonitorResponse.
 
         cpu百分比。
 
@@ -209,7 +209,7 @@ class QueryDataGuardMonitorResponse:
 
     @cpu_used_percent.setter
     def cpu_used_percent(self, cpu_used_percent):
-        """Sets the cpu_used_percent of this QueryDataGuardMonitorResponse.
+        r"""Sets the cpu_used_percent of this QueryDataGuardMonitorResponse.
 
         cpu百分比。
 
@@ -220,7 +220,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def dst_delay(self):
-        """Gets the dst_delay of this QueryDataGuardMonitorResponse.
+        r"""Gets the dst_delay of this QueryDataGuardMonitorResponse.
 
         目标库时延。
 
@@ -231,7 +231,7 @@ class QueryDataGuardMonitorResponse:
 
     @dst_delay.setter
     def dst_delay(self, dst_delay):
-        """Sets the dst_delay of this QueryDataGuardMonitorResponse.
+        r"""Sets the dst_delay of this QueryDataGuardMonitorResponse.
 
         目标库时延。
 
@@ -242,7 +242,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def dst_io(self):
-        """Gets the dst_io of this QueryDataGuardMonitorResponse.
+        r"""Gets the dst_io of this QueryDataGuardMonitorResponse.
 
         目标io。
 
@@ -253,7 +253,7 @@ class QueryDataGuardMonitorResponse:
 
     @dst_io.setter
     def dst_io(self, dst_io):
-        """Sets the dst_io of this QueryDataGuardMonitorResponse.
+        r"""Sets the dst_io of this QueryDataGuardMonitorResponse.
 
         目标io。
 
@@ -264,7 +264,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def dst_normal(self):
-        """Gets the dst_normal of this QueryDataGuardMonitorResponse.
+        r"""Gets the dst_normal of this QueryDataGuardMonitorResponse.
 
         目标库连接状态。
 
@@ -275,7 +275,7 @@ class QueryDataGuardMonitorResponse:
 
     @dst_normal.setter
     def dst_normal(self, dst_normal):
-        """Sets the dst_normal of this QueryDataGuardMonitorResponse.
+        r"""Sets the dst_normal of this QueryDataGuardMonitorResponse.
 
         目标库连接状态。
 
@@ -286,7 +286,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def dst_offset(self):
-        """Gets the dst_offset of this QueryDataGuardMonitorResponse.
+        r"""Gets the dst_offset of this QueryDataGuardMonitorResponse.
 
         目标库offSet位点。
 
@@ -297,7 +297,7 @@ class QueryDataGuardMonitorResponse:
 
     @dst_offset.setter
     def dst_offset(self, dst_offset):
-        """Sets the dst_offset of this QueryDataGuardMonitorResponse.
+        r"""Sets the dst_offset of this QueryDataGuardMonitorResponse.
 
         目标库offSet位点。
 
@@ -308,7 +308,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def dst_rps(self):
-        """Gets the dst_rps of this QueryDataGuardMonitorResponse.
+        r"""Gets the dst_rps of this QueryDataGuardMonitorResponse.
 
         目标rps。
 
@@ -319,7 +319,7 @@ class QueryDataGuardMonitorResponse:
 
     @dst_rps.setter
     def dst_rps(self, dst_rps):
-        """Sets the dst_rps of this QueryDataGuardMonitorResponse.
+        r"""Sets the dst_rps of this QueryDataGuardMonitorResponse.
 
         目标rps。
 
@@ -330,7 +330,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def mem_used_in_mb(self):
-        """Gets the mem_used_in_mb of this QueryDataGuardMonitorResponse.
+        r"""Gets the mem_used_in_mb of this QueryDataGuardMonitorResponse.
 
         内存使用。
 
@@ -341,7 +341,7 @@ class QueryDataGuardMonitorResponse:
 
     @mem_used_in_mb.setter
     def mem_used_in_mb(self, mem_used_in_mb):
-        """Sets the mem_used_in_mb of this QueryDataGuardMonitorResponse.
+        r"""Sets the mem_used_in_mb of this QueryDataGuardMonitorResponse.
 
         内存使用。
 
@@ -352,7 +352,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def node_mem_in_mb(self):
-        """Gets the node_mem_in_mb of this QueryDataGuardMonitorResponse.
+        r"""Gets the node_mem_in_mb of this QueryDataGuardMonitorResponse.
 
         node内存总大小。
 
@@ -363,7 +363,7 @@ class QueryDataGuardMonitorResponse:
 
     @node_mem_in_mb.setter
     def node_mem_in_mb(self, node_mem_in_mb):
-        """Sets the node_mem_in_mb of this QueryDataGuardMonitorResponse.
+        r"""Sets the node_mem_in_mb of this QueryDataGuardMonitorResponse.
 
         node内存总大小。
 
@@ -374,7 +374,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def node_offset(self):
-        """Gets the node_offset of this QueryDataGuardMonitorResponse.
+        r"""Gets the node_offset of this QueryDataGuardMonitorResponse.
 
         迁移实例offSet位点。
 
@@ -385,7 +385,7 @@ class QueryDataGuardMonitorResponse:
 
     @node_offset.setter
     def node_offset(self, node_offset):
-        """Sets the node_offset of this QueryDataGuardMonitorResponse.
+        r"""Sets the node_offset of this QueryDataGuardMonitorResponse.
 
         迁移实例offSet位点。
 
@@ -396,7 +396,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def node_volume_in_gb(self):
-        """Gets the node_volume_in_gb of this QueryDataGuardMonitorResponse.
+        r"""Gets the node_volume_in_gb of this QueryDataGuardMonitorResponse.
 
         node磁盘总大小。
 
@@ -407,7 +407,7 @@ class QueryDataGuardMonitorResponse:
 
     @node_volume_in_gb.setter
     def node_volume_in_gb(self, node_volume_in_gb):
-        """Sets the node_volume_in_gb of this QueryDataGuardMonitorResponse.
+        r"""Sets the node_volume_in_gb of this QueryDataGuardMonitorResponse.
 
         node磁盘总大小。
 
@@ -418,7 +418,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def sr_delay(self):
-        """Gets the sr_delay of this QueryDataGuardMonitorResponse.
+        r"""Gets the sr_delay of this QueryDataGuardMonitorResponse.
 
         源库时延。
 
@@ -429,7 +429,7 @@ class QueryDataGuardMonitorResponse:
 
     @sr_delay.setter
     def sr_delay(self, sr_delay):
-        """Sets the sr_delay of this QueryDataGuardMonitorResponse.
+        r"""Sets the sr_delay of this QueryDataGuardMonitorResponse.
 
         源库时延。
 
@@ -440,7 +440,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def sr_offset(self):
-        """Gets the sr_offset of this QueryDataGuardMonitorResponse.
+        r"""Gets the sr_offset of this QueryDataGuardMonitorResponse.
 
         源库offSet位点。
 
@@ -451,7 +451,7 @@ class QueryDataGuardMonitorResponse:
 
     @sr_offset.setter
     def sr_offset(self, sr_offset):
-        """Sets the sr_offset of this QueryDataGuardMonitorResponse.
+        r"""Sets the sr_offset of this QueryDataGuardMonitorResponse.
 
         源库offSet位点。
 
@@ -462,7 +462,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def src_io(self):
-        """Gets the src_io of this QueryDataGuardMonitorResponse.
+        r"""Gets the src_io of this QueryDataGuardMonitorResponse.
 
         源io。
 
@@ -473,7 +473,7 @@ class QueryDataGuardMonitorResponse:
 
     @src_io.setter
     def src_io(self, src_io):
-        """Sets the src_io of this QueryDataGuardMonitorResponse.
+        r"""Sets the src_io of this QueryDataGuardMonitorResponse.
 
         源io。
 
@@ -484,7 +484,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def src_normal(self):
-        """Gets the src_normal of this QueryDataGuardMonitorResponse.
+        r"""Gets the src_normal of this QueryDataGuardMonitorResponse.
 
         源库连接状态。
 
@@ -495,7 +495,7 @@ class QueryDataGuardMonitorResponse:
 
     @src_normal.setter
     def src_normal(self, src_normal):
-        """Sets the src_normal of this QueryDataGuardMonitorResponse.
+        r"""Sets the src_normal of this QueryDataGuardMonitorResponse.
 
         源库连接状态。
 
@@ -506,7 +506,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def src_rps(self):
-        """Gets the src_rps of this QueryDataGuardMonitorResponse.
+        r"""Gets the src_rps of this QueryDataGuardMonitorResponse.
 
         源rps。
 
@@ -517,7 +517,7 @@ class QueryDataGuardMonitorResponse:
 
     @src_rps.setter
     def src_rps(self, src_rps):
-        """Sets the src_rps of this QueryDataGuardMonitorResponse.
+        r"""Sets the src_rps of this QueryDataGuardMonitorResponse.
 
         源rps。
 
@@ -528,7 +528,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def trans_in_mb(self):
-        """Gets the trans_in_mb of this QueryDataGuardMonitorResponse.
+        r"""Gets the trans_in_mb of this QueryDataGuardMonitorResponse.
 
         迁移数据量。
 
@@ -539,7 +539,7 @@ class QueryDataGuardMonitorResponse:
 
     @trans_in_mb.setter
     def trans_in_mb(self, trans_in_mb):
-        """Sets the trans_in_mb of this QueryDataGuardMonitorResponse.
+        r"""Sets the trans_in_mb of this QueryDataGuardMonitorResponse.
 
         迁移数据量。
 
@@ -550,7 +550,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def trans_lines(self):
-        """Gets the trans_lines of this QueryDataGuardMonitorResponse.
+        r"""Gets the trans_lines of this QueryDataGuardMonitorResponse.
 
         迁移数据行数。
 
@@ -561,7 +561,7 @@ class QueryDataGuardMonitorResponse:
 
     @trans_lines.setter
     def trans_lines(self, trans_lines):
-        """Sets the trans_lines of this QueryDataGuardMonitorResponse.
+        r"""Sets the trans_lines of this QueryDataGuardMonitorResponse.
 
         迁移数据行数。
 
@@ -572,7 +572,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def volume_used_in_gb(self):
-        """Gets the volume_used_in_gb of this QueryDataGuardMonitorResponse.
+        r"""Gets the volume_used_in_gb of this QueryDataGuardMonitorResponse.
 
         磁盘使用。
 
@@ -583,7 +583,7 @@ class QueryDataGuardMonitorResponse:
 
     @volume_used_in_gb.setter
     def volume_used_in_gb(self, volume_used_in_gb):
-        """Sets the volume_used_in_gb of this QueryDataGuardMonitorResponse.
+        r"""Sets the volume_used_in_gb of this QueryDataGuardMonitorResponse.
 
         磁盘使用。
 
@@ -594,7 +594,7 @@ class QueryDataGuardMonitorResponse:
 
     @property
     def migration_bytes_per_second(self):
-        """Gets the migration_bytes_per_second of this QueryDataGuardMonitorResponse.
+        r"""Gets the migration_bytes_per_second of this QueryDataGuardMonitorResponse.
 
         每秒迁移字节大小。
 
@@ -605,7 +605,7 @@ class QueryDataGuardMonitorResponse:
 
     @migration_bytes_per_second.setter
     def migration_bytes_per_second(self, migration_bytes_per_second):
-        """Sets the migration_bytes_per_second of this QueryDataGuardMonitorResponse.
+        r"""Sets the migration_bytes_per_second of this QueryDataGuardMonitorResponse.
 
         每秒迁移字节大小。
 

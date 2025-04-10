@@ -26,7 +26,7 @@ class ShowDeviceTemplateResponse(SdkResponse):
     }
 
     def __init__(self, device_template=None):
-        """ShowDeviceTemplateResponse
+        r"""ShowDeviceTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDeviceTemplateResponse(SdkResponse):
 
     @property
     def device_template(self):
-        """Gets the device_template of this ShowDeviceTemplateResponse.
+        r"""Gets the device_template of this ShowDeviceTemplateResponse.
 
         :return: The device_template of this ShowDeviceTemplateResponse.
         :rtype: :class:`huaweicloudsdkief.v1.EdgemgrDevice`
@@ -53,7 +53,7 @@ class ShowDeviceTemplateResponse(SdkResponse):
 
     @device_template.setter
     def device_template(self, device_template):
-        """Sets the device_template of this ShowDeviceTemplateResponse.
+        r"""Sets the device_template of this ShowDeviceTemplateResponse.
 
         :param device_template: The device_template of this ShowDeviceTemplateResponse.
         :type device_template: :class:`huaweicloudsdkief.v1.EdgemgrDevice`

@@ -27,7 +27,7 @@ class CheckpointReplicateRespbackups:
     }
 
     def __init__(self, backup_id=None, replication_record_id=None):
-        """CheckpointReplicateRespbackups
+        r"""CheckpointReplicateRespbackups
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CheckpointReplicateRespbackups:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this CheckpointReplicateRespbackups.
+        r"""Gets the backup_id of this CheckpointReplicateRespbackups.
 
         待复制的备份ID
 
@@ -59,7 +59,7 @@ class CheckpointReplicateRespbackups:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this CheckpointReplicateRespbackups.
+        r"""Sets the backup_id of this CheckpointReplicateRespbackups.
 
         待复制的备份ID
 
@@ -70,7 +70,7 @@ class CheckpointReplicateRespbackups:
 
     @property
     def replication_record_id(self):
-        """Gets the replication_record_id of this CheckpointReplicateRespbackups.
+        r"""Gets the replication_record_id of this CheckpointReplicateRespbackups.
 
         复制记录ID
 
@@ -81,7 +81,7 @@ class CheckpointReplicateRespbackups:
 
     @replication_record_id.setter
     def replication_record_id(self, replication_record_id):
-        """Sets the replication_record_id of this CheckpointReplicateRespbackups.
+        r"""Sets the replication_record_id of this CheckpointReplicateRespbackups.
 
         复制记录ID
 

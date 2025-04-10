@@ -31,7 +31,7 @@ class UserAgentFilter:
     }
 
     def __init__(self, type=None, value=None, include_empty=None, ua_list=None):
-        """UserAgentFilter
+        r"""UserAgentFilter
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UserAgentFilter:
 
     @property
     def type(self):
-        """Gets the type of this UserAgentFilter.
+        r"""Gets the type of this UserAgentFilter.
 
         UA黑白名单类型 off：关闭UA黑白名单; black：UA黑名单; white：UA白名单;
 
@@ -74,7 +74,7 @@ class UserAgentFilter:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UserAgentFilter.
+        r"""Sets the type of this UserAgentFilter.
 
         UA黑白名单类型 off：关闭UA黑白名单; black：UA黑名单; white：UA白名单;
 
@@ -85,7 +85,7 @@ class UserAgentFilter:
 
     @property
     def value(self):
-        """Gets the value of this UserAgentFilter.
+        r"""Gets the value of this UserAgentFilter.
 
         配置UA黑白名单，当type=off时，非必传。最多配置10条规则，单条规则不超过100个字符，多条规则用“,”分割。
 
@@ -96,7 +96,7 @@ class UserAgentFilter:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this UserAgentFilter.
+        r"""Sets the value of this UserAgentFilter.
 
         配置UA黑白名单，当type=off时，非必传。最多配置10条规则，单条规则不超过100个字符，多条规则用“,”分割。
 
@@ -107,7 +107,7 @@ class UserAgentFilter:
 
     @property
     def include_empty(self):
-        """Gets the include_empty of this UserAgentFilter.
+        r"""Gets the include_empty of this UserAgentFilter.
 
         是否包含空User-Agent，true:包含，false：不包含。空User-Agent是指没有User-Agent字段或者该字段的值为空。如果黑名单且该字段值为true，则表示空User-Agent不允许访问，如果是白名单且该字段值为true，则表示空User-Agent允许访问。设置User-Agent黑名单时，默认值为false，设置User-Agent白名单时，默认值为true。
 
@@ -118,7 +118,7 @@ class UserAgentFilter:
 
     @include_empty.setter
     def include_empty(self, include_empty):
-        """Sets the include_empty of this UserAgentFilter.
+        r"""Sets the include_empty of this UserAgentFilter.
 
         是否包含空User-Agent，true:包含，false：不包含。空User-Agent是指没有User-Agent字段或者该字段的值为空。如果黑名单且该字段值为true，则表示空User-Agent不允许访问，如果是白名单且该字段值为true，则表示空User-Agent允许访问。设置User-Agent黑名单时，默认值为false，设置User-Agent白名单时，默认值为true。
 
@@ -129,7 +129,7 @@ class UserAgentFilter:
 
     @property
     def ua_list(self):
-        """Gets the ua_list of this UserAgentFilter.
+        r"""Gets the ua_list of this UserAgentFilter.
 
         配置UA黑白名单，当type=off时，非必传。最多配置10条规则，单条规则不超过100个字符,同时配置value和ua_list时，ua_list生效。 
 
@@ -140,7 +140,7 @@ class UserAgentFilter:
 
     @ua_list.setter
     def ua_list(self, ua_list):
-        """Sets the ua_list of this UserAgentFilter.
+        r"""Sets the ua_list of this UserAgentFilter.
 
         配置UA黑白名单，当type=off时，非必传。最多配置10条规则，单条规则不超过100个字符,同时配置value和ua_list时，ua_list生效。 
 

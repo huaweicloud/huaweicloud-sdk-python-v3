@@ -33,7 +33,7 @@ class ApprovalUserDto:
     }
 
     def __init__(self, id=None, username=None, name=None, nick_name=None, state=None):
-        """ApprovalUserDto
+        r"""ApprovalUserDto
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ApprovalUserDto:
 
     @property
     def id(self):
-        """Gets the id of this ApprovalUserDto.
+        r"""Gets the id of this ApprovalUserDto.
 
         id
 
@@ -82,7 +82,7 @@ class ApprovalUserDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApprovalUserDto.
+        r"""Sets the id of this ApprovalUserDto.
 
         id
 
@@ -93,7 +93,7 @@ class ApprovalUserDto:
 
     @property
     def username(self):
-        """Gets the username of this ApprovalUserDto.
+        r"""Gets the username of this ApprovalUserDto.
 
         用户名
 
@@ -104,7 +104,7 @@ class ApprovalUserDto:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this ApprovalUserDto.
+        r"""Sets the username of this ApprovalUserDto.
 
         用户名
 
@@ -115,7 +115,7 @@ class ApprovalUserDto:
 
     @property
     def name(self):
-        """Gets the name of this ApprovalUserDto.
+        r"""Gets the name of this ApprovalUserDto.
 
         名称
 
@@ -126,7 +126,7 @@ class ApprovalUserDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApprovalUserDto.
+        r"""Sets the name of this ApprovalUserDto.
 
         名称
 
@@ -137,7 +137,7 @@ class ApprovalUserDto:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this ApprovalUserDto.
+        r"""Gets the nick_name of this ApprovalUserDto.
 
         昵称
 
@@ -148,7 +148,7 @@ class ApprovalUserDto:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this ApprovalUserDto.
+        r"""Sets the nick_name of this ApprovalUserDto.
 
         昵称
 
@@ -159,7 +159,7 @@ class ApprovalUserDto:
 
     @property
     def state(self):
-        """Gets the state of this ApprovalUserDto.
+        r"""Gets the state of this ApprovalUserDto.
 
         检视状态
 
@@ -170,7 +170,7 @@ class ApprovalUserDto:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ApprovalUserDto.
+        r"""Sets the state of this ApprovalUserDto.
 
         检视状态
 

@@ -23,7 +23,7 @@ class ListCertificateAuthorityObsBucketRequest:
     }
 
     def __init__(self):
-        """ListCertificateAuthorityObsBucketRequest
+        r"""ListCertificateAuthorityObsBucketRequest
 
         The model defined in huaweicloud sdk
 

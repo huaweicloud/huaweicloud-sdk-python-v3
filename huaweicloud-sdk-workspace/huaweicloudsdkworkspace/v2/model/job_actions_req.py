@@ -25,7 +25,7 @@ class JobActionsReq:
     }
 
     def __init__(self, op_type=None):
-        """JobActionsReq
+        r"""JobActionsReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class JobActionsReq:
 
     @property
     def op_type(self):
-        """Gets the op_type of this JobActionsReq.
+        r"""Gets the op_type of this JobActionsReq.
 
         操作类型。retry代表重试。
 
@@ -53,7 +53,7 @@ class JobActionsReq:
 
     @op_type.setter
     def op_type(self, op_type):
-        """Sets the op_type of this JobActionsReq.
+        r"""Sets the op_type of this JobActionsReq.
 
         操作类型。retry代表重试。
 

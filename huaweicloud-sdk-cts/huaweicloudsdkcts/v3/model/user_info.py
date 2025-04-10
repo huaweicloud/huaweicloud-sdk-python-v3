@@ -47,7 +47,7 @@ class UserInfo:
     }
 
     def __init__(self, id=None, name=None, user_name=None, domain=None, account_id=None, access_key_id=None, principal_urn=None, principal_id=None, principal_is_root_user=None, type=None, invoked_by=None, session_context=None):
-        """UserInfo
+        r"""UserInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class UserInfo:
 
     @property
     def id(self):
-        """Gets the id of this UserInfo.
+        r"""Gets the id of this UserInfo.
 
         用户ID，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 
@@ -131,7 +131,7 @@ class UserInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UserInfo.
+        r"""Sets the id of this UserInfo.
 
         用户ID，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 
@@ -142,7 +142,7 @@ class UserInfo:
 
     @property
     def name(self):
-        """Gets the name of this UserInfo.
+        r"""Gets the name of this UserInfo.
 
         用户名称。
 
@@ -153,7 +153,7 @@ class UserInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UserInfo.
+        r"""Sets the name of this UserInfo.
 
         用户名称。
 
@@ -164,7 +164,7 @@ class UserInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UserInfo.
+        r"""Gets the user_name of this UserInfo.
 
         用户名称。
 
@@ -175,7 +175,7 @@ class UserInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UserInfo.
+        r"""Sets the user_name of this UserInfo.
 
         用户名称。
 
@@ -186,7 +186,7 @@ class UserInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this UserInfo.
+        r"""Gets the domain of this UserInfo.
 
         :return: The domain of this UserInfo.
         :rtype: :class:`huaweicloudsdkcts.v3.BaseUser`
@@ -195,7 +195,7 @@ class UserInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this UserInfo.
+        r"""Sets the domain of this UserInfo.
 
         :param domain: The domain of this UserInfo.
         :type domain: :class:`huaweicloudsdkcts.v3.BaseUser`
@@ -204,7 +204,7 @@ class UserInfo:
 
     @property
     def account_id(self):
-        """Gets the account_id of this UserInfo.
+        r"""Gets the account_id of this UserInfo.
 
         账号ID，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 
@@ -215,7 +215,7 @@ class UserInfo:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this UserInfo.
+        r"""Sets the account_id of this UserInfo.
 
         账号ID，参见《云审计服务API参考》“获取账号ID和项目ID”章节。
 
@@ -226,7 +226,7 @@ class UserInfo:
 
     @property
     def access_key_id(self):
-        """Gets the access_key_id of this UserInfo.
+        r"""Gets the access_key_id of this UserInfo.
 
         访问密钥ID。
 
@@ -237,7 +237,7 @@ class UserInfo:
 
     @access_key_id.setter
     def access_key_id(self, access_key_id):
-        """Sets the access_key_id of this UserInfo.
+        r"""Sets the access_key_id of this UserInfo.
 
         访问密钥ID。
 
@@ -248,7 +248,7 @@ class UserInfo:
 
     @property
     def principal_urn(self):
-        """Gets the principal_urn of this UserInfo.
+        r"""Gets the principal_urn of this UserInfo.
 
         操作用户身份的 URN。 如果是 IAM 用户身份，格式如 iam::<account-id>:user:<user-name>。 如果是 IAM 委托会话 身份，格式如 sts::<account-id>:assumed-agency:<agency-name>/<agency-session-name>。 如果是 IAM 联邦身份，格式如 sts::<account-id>:external-user:<idp_id>/<user-session-name>。
 
@@ -259,7 +259,7 @@ class UserInfo:
 
     @principal_urn.setter
     def principal_urn(self, principal_urn):
-        """Sets the principal_urn of this UserInfo.
+        r"""Sets the principal_urn of this UserInfo.
 
         操作用户身份的 URN。 如果是 IAM 用户身份，格式如 iam::<account-id>:user:<user-name>。 如果是 IAM 委托会话 身份，格式如 sts::<account-id>:assumed-agency:<agency-name>/<agency-session-name>。 如果是 IAM 联邦身份，格式如 sts::<account-id>:external-user:<idp_id>/<user-session-name>。
 
@@ -270,7 +270,7 @@ class UserInfo:
 
     @property
     def principal_id(self):
-        """Gets the principal_id of this UserInfo.
+        r"""Gets the principal_id of this UserInfo.
 
         操作用户身份Id。 - 如果是 IAM 用户身份，格式为 <user-id>。 - 如果是 IAM 委托会话身份，格式为 <agency-id>:<agency-session-name>。 - 如果是 IAM 联邦身份，格式为 <idp_id>:<user-session-name>
 
@@ -281,7 +281,7 @@ class UserInfo:
 
     @principal_id.setter
     def principal_id(self, principal_id):
-        """Sets the principal_id of this UserInfo.
+        r"""Sets the principal_id of this UserInfo.
 
         操作用户身份Id。 - 如果是 IAM 用户身份，格式为 <user-id>。 - 如果是 IAM 委托会话身份，格式为 <agency-id>:<agency-session-name>。 - 如果是 IAM 联邦身份，格式为 <idp_id>:<user-session-name>
 
@@ -292,7 +292,7 @@ class UserInfo:
 
     @property
     def principal_is_root_user(self):
-        """Gets the principal_is_root_user of this UserInfo.
+        r"""Gets the principal_is_root_user of this UserInfo.
 
         是否是根用户。 - 值为“true”时，表示操作者是根用户。 - 值为“false”时，表示操作者是委托会话身份、联邦身份或非根用户的 IAM 用户。
 
@@ -303,7 +303,7 @@ class UserInfo:
 
     @principal_is_root_user.setter
     def principal_is_root_user(self, principal_is_root_user):
-        """Sets the principal_is_root_user of this UserInfo.
+        r"""Sets the principal_is_root_user of this UserInfo.
 
         是否是根用户。 - 值为“true”时，表示操作者是根用户。 - 值为“false”时，表示操作者是委托会话身份、联邦身份或非根用户的 IAM 用户。
 
@@ -314,7 +314,7 @@ class UserInfo:
 
     @property
     def type(self):
-        """Gets the type of this UserInfo.
+        r"""Gets the type of this UserInfo.
 
         操作者身份类型。
 
@@ -325,7 +325,7 @@ class UserInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UserInfo.
+        r"""Sets the type of this UserInfo.
 
         操作者身份类型。
 
@@ -336,7 +336,7 @@ class UserInfo:
 
     @property
     def invoked_by(self):
-        """Gets the invoked_by of this UserInfo.
+        r"""Gets the invoked_by of this UserInfo.
 
         发出请求的服务的名称。控制台操作时为[\"service.console\" ]
 
@@ -347,7 +347,7 @@ class UserInfo:
 
     @invoked_by.setter
     def invoked_by(self, invoked_by):
-        """Sets the invoked_by of this UserInfo.
+        r"""Sets the invoked_by of this UserInfo.
 
         发出请求的服务的名称。控制台操作时为[\"service.console\" ]
 
@@ -358,7 +358,7 @@ class UserInfo:
 
     @property
     def session_context(self):
-        """Gets the session_context of this UserInfo.
+        r"""Gets the session_context of this UserInfo.
 
         :return: The session_context of this UserInfo.
         :rtype: :class:`huaweicloudsdkcts.v3.SessionContext`
@@ -367,7 +367,7 @@ class UserInfo:
 
     @session_context.setter
     def session_context(self, session_context):
-        """Sets the session_context of this UserInfo.
+        r"""Sets the session_context of this UserInfo.
 
         :param session_context: The session_context of this UserInfo.
         :type session_context: :class:`huaweicloudsdkcts.v3.SessionContext`

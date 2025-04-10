@@ -26,7 +26,7 @@ class UpdateDesignAggregationLogicTableResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UpdateDesignAggregationLogicTableResponse
+        r"""UpdateDesignAggregationLogicTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateDesignAggregationLogicTableResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateDesignAggregationLogicTableResponse.
+        r"""Gets the data of this UpdateDesignAggregationLogicTableResponse.
 
         返回的数据信息。
 
@@ -55,7 +55,7 @@ class UpdateDesignAggregationLogicTableResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateDesignAggregationLogicTableResponse.
+        r"""Sets the data of this UpdateDesignAggregationLogicTableResponse.
 
         返回的数据信息。
 

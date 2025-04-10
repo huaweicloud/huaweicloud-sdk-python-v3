@@ -31,7 +31,7 @@ class HandleNotificationInvitor:
     }
 
     def __init__(self, invitor_bcs_id=None, invitor_bcs_name=None, invitor_project_id=None, invitor_user_id=None):
-        """HandleNotificationInvitor
+        r"""HandleNotificationInvitor
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class HandleNotificationInvitor:
 
     @property
     def invitor_bcs_id(self):
-        """Gets the invitor_bcs_id of this HandleNotificationInvitor.
+        r"""Gets the invitor_bcs_id of this HandleNotificationInvitor.
 
         邀请方BCS服务实例ID
 
@@ -71,7 +71,7 @@ class HandleNotificationInvitor:
 
     @invitor_bcs_id.setter
     def invitor_bcs_id(self, invitor_bcs_id):
-        """Sets the invitor_bcs_id of this HandleNotificationInvitor.
+        r"""Sets the invitor_bcs_id of this HandleNotificationInvitor.
 
         邀请方BCS服务实例ID
 
@@ -82,7 +82,7 @@ class HandleNotificationInvitor:
 
     @property
     def invitor_bcs_name(self):
-        """Gets the invitor_bcs_name of this HandleNotificationInvitor.
+        r"""Gets the invitor_bcs_name of this HandleNotificationInvitor.
 
         邀请方BCS服务实例名称
 
@@ -93,7 +93,7 @@ class HandleNotificationInvitor:
 
     @invitor_bcs_name.setter
     def invitor_bcs_name(self, invitor_bcs_name):
-        """Sets the invitor_bcs_name of this HandleNotificationInvitor.
+        r"""Sets the invitor_bcs_name of this HandleNotificationInvitor.
 
         邀请方BCS服务实例名称
 
@@ -104,7 +104,7 @@ class HandleNotificationInvitor:
 
     @property
     def invitor_project_id(self):
-        """Gets the invitor_project_id of this HandleNotificationInvitor.
+        r"""Gets the invitor_project_id of this HandleNotificationInvitor.
 
         邀请方project id
 
@@ -115,7 +115,7 @@ class HandleNotificationInvitor:
 
     @invitor_project_id.setter
     def invitor_project_id(self, invitor_project_id):
-        """Sets the invitor_project_id of this HandleNotificationInvitor.
+        r"""Sets the invitor_project_id of this HandleNotificationInvitor.
 
         邀请方project id
 
@@ -126,7 +126,7 @@ class HandleNotificationInvitor:
 
     @property
     def invitor_user_id(self):
-        """Gets the invitor_user_id of this HandleNotificationInvitor.
+        r"""Gets the invitor_user_id of this HandleNotificationInvitor.
 
         邀请方租户id。控制台->邀请方帐号->我的凭证->API凭证->帐号ID
 
@@ -137,7 +137,7 @@ class HandleNotificationInvitor:
 
     @invitor_user_id.setter
     def invitor_user_id(self, invitor_user_id):
-        """Sets the invitor_user_id of this HandleNotificationInvitor.
+        r"""Sets the invitor_user_id of this HandleNotificationInvitor.
 
         邀请方租户id。控制台->邀请方帐号->我的凭证->API凭证->帐号ID
 

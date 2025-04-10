@@ -25,7 +25,7 @@ class ShowInstanceStatusRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowInstanceStatusRequest
+        r"""ShowInstanceStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowInstanceStatusRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowInstanceStatusRequest.
+        r"""Gets the task_id of this ShowInstanceStatusRequest.
 
         实例ID
 
@@ -53,7 +53,7 @@ class ShowInstanceStatusRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowInstanceStatusRequest.
+        r"""Sets the task_id of this ShowInstanceStatusRequest.
 
         实例ID
 

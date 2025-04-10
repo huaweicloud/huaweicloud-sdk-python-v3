@@ -29,7 +29,7 @@ class CreateResourceTagRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """CreateResourceTagRequest
+        r"""CreateResourceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateResourceTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CreateResourceTagRequest.
+        r"""Gets the resource_type of this CreateResourceTagRequest.
 
         资源类型，目前有:  smn_topic，主题  smn_sms，短信  smn_application，移动推送
 
@@ -66,7 +66,7 @@ class CreateResourceTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CreateResourceTagRequest.
+        r"""Sets the resource_type of this CreateResourceTagRequest.
 
         资源类型，目前有:  smn_topic，主题  smn_sms，短信  smn_application，移动推送
 
@@ -77,7 +77,7 @@ class CreateResourceTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateResourceTagRequest.
+        r"""Gets the resource_id of this CreateResourceTagRequest.
 
         资源ID。  获取resource_id的方法：  当resource_type为“smn_topic”时， 手动添加请求消息头“X-SMN-RESOURCEID-TYPE=name”，资源ID即为topic名称。 不添加请求消息头，通过“查询资源实例”，获取资源ID。 当resource_type为“smn_sms”时，resource_id为签名ID。您可在控制台获取。
 
@@ -88,7 +88,7 @@ class CreateResourceTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateResourceTagRequest.
+        r"""Sets the resource_id of this CreateResourceTagRequest.
 
         资源ID。  获取resource_id的方法：  当resource_type为“smn_topic”时， 手动添加请求消息头“X-SMN-RESOURCEID-TYPE=name”，资源ID即为topic名称。 不添加请求消息头，通过“查询资源实例”，获取资源ID。 当resource_type为“smn_sms”时，resource_id为签名ID。您可在控制台获取。
 
@@ -99,7 +99,7 @@ class CreateResourceTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResourceTagRequest.
+        r"""Gets the body of this CreateResourceTagRequest.
 
         :return: The body of this CreateResourceTagRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.CreateResourceTagRequestBody`
@@ -108,7 +108,7 @@ class CreateResourceTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResourceTagRequest.
+        r"""Sets the body of this CreateResourceTagRequest.
 
         :param body: The body of this CreateResourceTagRequest.
         :type body: :class:`huaweicloudsdksmn.v2.CreateResourceTagRequestBody`

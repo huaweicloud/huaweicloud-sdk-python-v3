@@ -48,7 +48,7 @@ class ShowJobInstanceResponse(SdkResponse):
     }
 
     def __init__(self, job_name=None, instance_id=None, status=None, plan_time=None, start_time=None, end_time=None, execute_time=None, total=None, nodes=None, instance_type=None, force_success=None, ignore_success=None):
-        """ShowJobInstanceResponse
+        r"""ShowJobInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def job_name(self):
-        """Gets the job_name of this ShowJobInstanceResponse.
+        r"""Gets the job_name of this ShowJobInstanceResponse.
 
         作业名称
 
@@ -132,7 +132,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ShowJobInstanceResponse.
+        r"""Sets the job_name of this ShowJobInstanceResponse.
 
         作业名称
 
@@ -143,7 +143,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowJobInstanceResponse.
+        r"""Gets the instance_id of this ShowJobInstanceResponse.
 
         作业实例ID
 
@@ -154,7 +154,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowJobInstanceResponse.
+        r"""Sets the instance_id of this ShowJobInstanceResponse.
 
         作业实例ID
 
@@ -165,7 +165,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowJobInstanceResponse.
+        r"""Gets the status of this ShowJobInstanceResponse.
 
         作业实例状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
 
@@ -176,7 +176,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowJobInstanceResponse.
+        r"""Sets the status of this ShowJobInstanceResponse.
 
         作业实例状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
 
@@ -187,7 +187,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def plan_time(self):
-        """Gets the plan_time of this ShowJobInstanceResponse.
+        r"""Gets the plan_time of this ShowJobInstanceResponse.
 
         作业实例计划执行时间
 
@@ -198,7 +198,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @plan_time.setter
     def plan_time(self, plan_time):
-        """Sets the plan_time of this ShowJobInstanceResponse.
+        r"""Sets the plan_time of this ShowJobInstanceResponse.
 
         作业实例计划执行时间
 
@@ -209,7 +209,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowJobInstanceResponse.
+        r"""Gets the start_time of this ShowJobInstanceResponse.
 
         作业实例实际执行开始时间
 
@@ -220,7 +220,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowJobInstanceResponse.
+        r"""Sets the start_time of this ShowJobInstanceResponse.
 
         作业实例实际执行开始时间
 
@@ -231,7 +231,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowJobInstanceResponse.
+        r"""Gets the end_time of this ShowJobInstanceResponse.
 
         作业实例实际执行结束时间
 
@@ -242,7 +242,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowJobInstanceResponse.
+        r"""Sets the end_time of this ShowJobInstanceResponse.
 
         作业实例实际执行结束时间
 
@@ -253,7 +253,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def execute_time(self):
-        """Gets the execute_time of this ShowJobInstanceResponse.
+        r"""Gets the execute_time of this ShowJobInstanceResponse.
 
         执行耗时，单位：毫秒
 
@@ -264,7 +264,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @execute_time.setter
     def execute_time(self, execute_time):
-        """Sets the execute_time of this ShowJobInstanceResponse.
+        r"""Sets the execute_time of this ShowJobInstanceResponse.
 
         执行耗时，单位：毫秒
 
@@ -275,7 +275,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowJobInstanceResponse.
+        r"""Gets the total of this ShowJobInstanceResponse.
 
         总的节点数据条数
 
@@ -286,7 +286,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowJobInstanceResponse.
+        r"""Sets the total of this ShowJobInstanceResponse.
 
         总的节点数据条数
 
@@ -297,7 +297,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this ShowJobInstanceResponse.
+        r"""Gets the nodes of this ShowJobInstanceResponse.
 
         节点实例状态
 
@@ -308,7 +308,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ShowJobInstanceResponse.
+        r"""Sets the nodes of this ShowJobInstanceResponse.
 
         节点实例状态
 
@@ -319,7 +319,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this ShowJobInstanceResponse.
+        r"""Gets the instance_type of this ShowJobInstanceResponse.
 
         作业调度方式： - 0：正常调度 - 2：手工调度 - 5：补数据 - 6：子作业调度 - 7：单次调度
 
@@ -330,7 +330,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this ShowJobInstanceResponse.
+        r"""Sets the instance_type of this ShowJobInstanceResponse.
 
         作业调度方式： - 0：正常调度 - 2：手工调度 - 5：补数据 - 6：子作业调度 - 7：单次调度
 
@@ -341,7 +341,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def force_success(self):
-        """Gets the force_success of this ShowJobInstanceResponse.
+        r"""Gets the force_success of this ShowJobInstanceResponse.
 
         作业实例状态筛选为强制成功，默认值：false
 
@@ -352,7 +352,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @force_success.setter
     def force_success(self, force_success):
-        """Sets the force_success of this ShowJobInstanceResponse.
+        r"""Sets the force_success of this ShowJobInstanceResponse.
 
         作业实例状态筛选为强制成功，默认值：false
 
@@ -363,7 +363,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @property
     def ignore_success(self):
-        """Gets the ignore_success of this ShowJobInstanceResponse.
+        r"""Gets the ignore_success of this ShowJobInstanceResponse.
 
         作业实例状态筛选为忽略失败，默认值：false
 
@@ -374,7 +374,7 @@ class ShowJobInstanceResponse(SdkResponse):
 
     @ignore_success.setter
     def ignore_success(self, ignore_success):
-        """Sets the ignore_success of this ShowJobInstanceResponse.
+        r"""Sets the ignore_success of this ShowJobInstanceResponse.
 
         作业实例状态筛选为忽略失败，默认值：false
 

@@ -37,7 +37,7 @@ class ListServerAzInfo:
     }
 
     def __init__(self, availability_zone_id=None, type=None, mode=None, public_border_group=None, alias=None, az_group_ids=None, category=None):
-        """ListServerAzInfo
+        r"""ListServerAzInfo
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListServerAzInfo:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this ListServerAzInfo.
+        r"""Gets the availability_zone_id of this ListServerAzInfo.
 
         可用区ID
 
@@ -95,7 +95,7 @@ class ListServerAzInfo:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this ListServerAzInfo.
+        r"""Sets the availability_zone_id of this ListServerAzInfo.
 
         可用区ID
 
@@ -106,7 +106,7 @@ class ListServerAzInfo:
 
     @property
     def type(self):
-        """Gets the type of this ListServerAzInfo.
+        r"""Gets the type of this ListServerAzInfo.
 
         可用区类型
 
@@ -117,7 +117,7 @@ class ListServerAzInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListServerAzInfo.
+        r"""Sets the type of this ListServerAzInfo.
 
         可用区类型
 
@@ -128,7 +128,7 @@ class ListServerAzInfo:
 
     @property
     def mode(self):
-        """Gets the mode of this ListServerAzInfo.
+        r"""Gets the mode of this ListServerAzInfo.
 
         可用区模式
 
@@ -139,7 +139,7 @@ class ListServerAzInfo:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ListServerAzInfo.
+        r"""Sets the mode of this ListServerAzInfo.
 
         可用区模式
 
@@ -150,7 +150,7 @@ class ListServerAzInfo:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ListServerAzInfo.
+        r"""Gets the public_border_group of this ListServerAzInfo.
 
         公网边界组，网络eip类别标识，用于查找az可用的eip池
 
@@ -161,7 +161,7 @@ class ListServerAzInfo:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListServerAzInfo.
+        r"""Sets the public_border_group of this ListServerAzInfo.
 
         公网边界组，网络eip类别标识，用于查找az可用的eip池
 
@@ -172,7 +172,7 @@ class ListServerAzInfo:
 
     @property
     def alias(self):
-        """Gets the alias of this ListServerAzInfo.
+        r"""Gets the alias of this ListServerAzInfo.
 
         可用区别名
 
@@ -183,7 +183,7 @@ class ListServerAzInfo:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this ListServerAzInfo.
+        r"""Sets the alias of this ListServerAzInfo.
 
         可用区别名
 
@@ -194,7 +194,7 @@ class ListServerAzInfo:
 
     @property
     def az_group_ids(self):
-        """Gets the az_group_ids of this ListServerAzInfo.
+        r"""Gets the az_group_ids of this ListServerAzInfo.
 
         可用区所属的AZGroup列表
 
@@ -205,7 +205,7 @@ class ListServerAzInfo:
 
     @az_group_ids.setter
     def az_group_ids(self, az_group_ids):
-        """Sets the az_group_ids of this ListServerAzInfo.
+        r"""Sets the az_group_ids of this ListServerAzInfo.
 
         可用区所属的AZGroup列表
 
@@ -216,7 +216,7 @@ class ListServerAzInfo:
 
     @property
     def category(self):
-        """Gets the category of this ListServerAzInfo.
+        r"""Gets the category of this ListServerAzInfo.
 
         可用区类型对应的子类型
 
@@ -227,7 +227,7 @@ class ListServerAzInfo:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListServerAzInfo.
+        r"""Sets the category of this ListServerAzInfo.
 
         可用区类型对应的子类型
 

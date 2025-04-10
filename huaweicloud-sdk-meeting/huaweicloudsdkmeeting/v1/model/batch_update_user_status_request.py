@@ -33,7 +33,7 @@ class BatchUpdateUserStatusRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, value=None, account_type=None, body=None):
-        """BatchUpdateUserStatusRequest
+        r"""BatchUpdateUserStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class BatchUpdateUserStatusRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchUpdateUserStatusRequest.
+        r"""Gets the x_request_id of this BatchUpdateUserStatusRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -81,7 +81,7 @@ class BatchUpdateUserStatusRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchUpdateUserStatusRequest.
+        r"""Sets the x_request_id of this BatchUpdateUserStatusRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -92,7 +92,7 @@ class BatchUpdateUserStatusRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this BatchUpdateUserStatusRequest.
+        r"""Gets the accept_language of this BatchUpdateUserStatusRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -103,7 +103,7 @@ class BatchUpdateUserStatusRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this BatchUpdateUserStatusRequest.
+        r"""Sets the accept_language of this BatchUpdateUserStatusRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -114,7 +114,7 @@ class BatchUpdateUserStatusRequest:
 
     @property
     def value(self):
-        """Gets the value of this BatchUpdateUserStatusRequest.
+        r"""Gets the value of this BatchUpdateUserStatusRequest.
 
         用户的新状态。 - 0，启用 - 1，停用
 
@@ -125,7 +125,7 @@ class BatchUpdateUserStatusRequest:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this BatchUpdateUserStatusRequest.
+        r"""Sets the value of this BatchUpdateUserStatusRequest.
 
         用户的新状态。 - 0，启用 - 1，停用
 
@@ -136,7 +136,7 @@ class BatchUpdateUserStatusRequest:
 
     @property
     def account_type(self):
-        """Gets the account_type of this BatchUpdateUserStatusRequest.
+        r"""Gets the account_type of this BatchUpdateUserStatusRequest.
 
         帐号类型。默认0。 * 0：华为云会议帐号。用于帐号/密码鉴权方式 * 1：第三方User ID，用于App ID鉴权方式 
 
@@ -147,7 +147,7 @@ class BatchUpdateUserStatusRequest:
 
     @account_type.setter
     def account_type(self, account_type):
-        """Sets the account_type of this BatchUpdateUserStatusRequest.
+        r"""Sets the account_type of this BatchUpdateUserStatusRequest.
 
         帐号类型。默认0。 * 0：华为云会议帐号。用于帐号/密码鉴权方式 * 1：第三方User ID，用于App ID鉴权方式 
 
@@ -158,7 +158,7 @@ class BatchUpdateUserStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateUserStatusRequest.
+        r"""Gets the body of this BatchUpdateUserStatusRequest.
 
         :return: The body of this BatchUpdateUserStatusRequest.
         :rtype: list[str]
@@ -167,7 +167,7 @@ class BatchUpdateUserStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateUserStatusRequest.
+        r"""Sets the body of this BatchUpdateUserStatusRequest.
 
         :param body: The body of this BatchUpdateUserStatusRequest.
         :type body: list[str]

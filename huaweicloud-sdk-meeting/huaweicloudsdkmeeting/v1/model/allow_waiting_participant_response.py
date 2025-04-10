@@ -24,7 +24,7 @@ class AllowWaitingParticipantResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AllowWaitingParticipantResponse
+        r"""AllowWaitingParticipantResponse
 
         The model defined in huaweicloud sdk
 

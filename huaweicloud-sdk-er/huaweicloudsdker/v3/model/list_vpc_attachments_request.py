@@ -39,7 +39,7 @@ class ListVpcAttachmentsRequest:
     }
 
     def __init__(self, er_id=None, limit=None, marker=None, state=None, id=None, sort_key=None, sort_dir=None, vpc_id=None):
-        """ListVpcAttachmentsRequest
+        r"""ListVpcAttachmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListVpcAttachmentsRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this ListVpcAttachmentsRequest.
+        r"""Gets the er_id of this ListVpcAttachmentsRequest.
 
         企业路由器实例ID
 
@@ -102,7 +102,7 @@ class ListVpcAttachmentsRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this ListVpcAttachmentsRequest.
+        r"""Sets the er_id of this ListVpcAttachmentsRequest.
 
         企业路由器实例ID
 
@@ -113,7 +113,7 @@ class ListVpcAttachmentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVpcAttachmentsRequest.
+        r"""Gets the limit of this ListVpcAttachmentsRequest.
 
         每页返回的个数。 取值范围：0~2000。
 
@@ -124,7 +124,7 @@ class ListVpcAttachmentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVpcAttachmentsRequest.
+        r"""Sets the limit of this ListVpcAttachmentsRequest.
 
         每页返回的个数。 取值范围：0~2000。
 
@@ -135,7 +135,7 @@ class ListVpcAttachmentsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListVpcAttachmentsRequest.
+        r"""Gets the marker of this ListVpcAttachmentsRequest.
 
         上一页最后一条记录的企业路由器实例的id，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -146,7 +146,7 @@ class ListVpcAttachmentsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListVpcAttachmentsRequest.
+        r"""Sets the marker of this ListVpcAttachmentsRequest.
 
         上一页最后一条记录的企业路由器实例的id，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -157,7 +157,7 @@ class ListVpcAttachmentsRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListVpcAttachmentsRequest.
+        r"""Gets the state of this ListVpcAttachmentsRequest.
 
         连接状态:pending|available|modifying|deleting|deleted|failed|pending_acceptance|rejected|initiating_request
 
@@ -168,7 +168,7 @@ class ListVpcAttachmentsRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListVpcAttachmentsRequest.
+        r"""Sets the state of this ListVpcAttachmentsRequest.
 
         连接状态:pending|available|modifying|deleting|deleted|failed|pending_acceptance|rejected|initiating_request
 
@@ -179,7 +179,7 @@ class ListVpcAttachmentsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListVpcAttachmentsRequest.
+        r"""Gets the id of this ListVpcAttachmentsRequest.
 
         根据资源ID查询，可同时查询多个。
 
@@ -190,7 +190,7 @@ class ListVpcAttachmentsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListVpcAttachmentsRequest.
+        r"""Sets the id of this ListVpcAttachmentsRequest.
 
         根据资源ID查询，可同时查询多个。
 
@@ -201,7 +201,7 @@ class ListVpcAttachmentsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListVpcAttachmentsRequest.
+        r"""Gets the sort_key of this ListVpcAttachmentsRequest.
 
         按关键字排序，默认按照id排序，可选值:id|name|state
 
@@ -212,7 +212,7 @@ class ListVpcAttachmentsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListVpcAttachmentsRequest.
+        r"""Sets the sort_key of this ListVpcAttachmentsRequest.
 
         按关键字排序，默认按照id排序，可选值:id|name|state
 
@@ -223,7 +223,7 @@ class ListVpcAttachmentsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListVpcAttachmentsRequest.
+        r"""Gets the sort_dir of this ListVpcAttachmentsRequest.
 
         返回结果按照升序或降序排列，默认为asc,降序为desc
 
@@ -234,7 +234,7 @@ class ListVpcAttachmentsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListVpcAttachmentsRequest.
+        r"""Sets the sort_dir of this ListVpcAttachmentsRequest.
 
         返回结果按照升序或降序排列，默认为asc,降序为desc
 
@@ -245,7 +245,7 @@ class ListVpcAttachmentsRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListVpcAttachmentsRequest.
+        r"""Gets the vpc_id of this ListVpcAttachmentsRequest.
 
         VPC id
 
@@ -256,7 +256,7 @@ class ListVpcAttachmentsRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListVpcAttachmentsRequest.
+        r"""Sets the vpc_id of this ListVpcAttachmentsRequest.
 
         VPC id
 

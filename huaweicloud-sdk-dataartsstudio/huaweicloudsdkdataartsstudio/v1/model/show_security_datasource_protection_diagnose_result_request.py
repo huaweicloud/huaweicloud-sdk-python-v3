@@ -25,7 +25,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultRequest:
     }
 
     def __init__(self, workspace=None):
-        """ShowSecurityDatasourceProtectionDiagnoseResultRequest
+        r"""ShowSecurityDatasourceProtectionDiagnoseResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowSecurityDatasourceProtectionDiagnoseResultRequest.
+        r"""Gets the workspace of this ShowSecurityDatasourceProtectionDiagnoseResultRequest.
 
         DataArts Studio工作空间ID
 
@@ -53,7 +53,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowSecurityDatasourceProtectionDiagnoseResultRequest.
+        r"""Sets the workspace of this ShowSecurityDatasourceProtectionDiagnoseResultRequest.
 
         DataArts Studio工作空间ID
 

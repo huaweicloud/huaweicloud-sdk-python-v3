@@ -49,7 +49,7 @@ class TaskMonitorDetailLog:
     }
 
     def __init__(self, id=None, status=None, position=None, position_status=None, stage=None, dirty_data_count=None, data_count=None, data_size=None, data_size_unit=None, spend_time=None, remarks=None, step_begin_time=None, step_end_time=None):
-        """TaskMonitorDetailLog
+        r"""TaskMonitorDetailLog
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class TaskMonitorDetailLog:
 
     @property
     def id(self):
-        """Gets the id of this TaskMonitorDetailLog.
+        r"""Gets the id of this TaskMonitorDetailLog.
 
         任务每次执行步骤产生的唯一ID
 
@@ -138,7 +138,7 @@ class TaskMonitorDetailLog:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TaskMonitorDetailLog.
+        r"""Sets the id of this TaskMonitorDetailLog.
 
         任务每次执行步骤产生的唯一ID
 
@@ -149,7 +149,7 @@ class TaskMonitorDetailLog:
 
     @property
     def status(self):
-        """Gets the status of this TaskMonitorDetailLog.
+        r"""Gets the status of this TaskMonitorDetailLog.
 
         当前步骤执行详细状态，使用状态码的形式</br> 状态码划分规则：reader端 100 ~ 499，writer端 500 ~ 899，其他900 ~ </br> 当前状态码如下：</br> 16-被强制取消</br> 99-任务开始</br> 100-Reader 任务开始</br> 101-Reader 任务结束</br> 102-正在读取数据</br> 103-读端数据源端异常</br> 104-读取数据结束</br> 105-读取数据为0</br> 106-读任务强制取消</br> 107-在reader plugin中，任务发生了中断</br> 108-读任务恢复运行</br> 500-Writer 任务开始</br> 501-Writer 任务结束</br> 502-正在数据写入</br> 503-目标端异常</br> 504-数据写入结束</br> 505-写任务强制取消</br> 506-在writer plugin中，任务发生了中断</br> 507-写任务恢复运行</br> 900-接收到调度请求</br> 901-任务运行结束</br> 902-任务已运行结束，正在进行数据完整性校验</br> 903-输出数据完整性校验结果</br> 904-经过数据完整性校验，发现有数据缺失，正在进行数据补偿</br> 905-输出数据补偿结果</br> 906-读取任务正在在排队中（平台资源）</br> 907-读取任务被拒绝执行，因为上一次调度还没有结束</br> 908-写入任务正在在排队中（平台资源）</br> 909-写入任务被拒绝执行，因为上一次调度还没有结束</br> 911-读取任务没有被正常开启，请检查网络是否通畅，参数是否正确</br> 912-写入任务没有被正常开启，请检查网络是否通畅，参数是否正确</br> 913-任务调度请求失败</br> 914-任务被拒绝执行，因为上一次调度还没有结束</br> 915-任务不正常运行</br> 916-任务日志上报异常</br>
 
@@ -160,7 +160,7 @@ class TaskMonitorDetailLog:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskMonitorDetailLog.
+        r"""Sets the status of this TaskMonitorDetailLog.
 
         当前步骤执行详细状态，使用状态码的形式</br> 状态码划分规则：reader端 100 ~ 499，writer端 500 ~ 899，其他900 ~ </br> 当前状态码如下：</br> 16-被强制取消</br> 99-任务开始</br> 100-Reader 任务开始</br> 101-Reader 任务结束</br> 102-正在读取数据</br> 103-读端数据源端异常</br> 104-读取数据结束</br> 105-读取数据为0</br> 106-读任务强制取消</br> 107-在reader plugin中，任务发生了中断</br> 108-读任务恢复运行</br> 500-Writer 任务开始</br> 501-Writer 任务结束</br> 502-正在数据写入</br> 503-目标端异常</br> 504-数据写入结束</br> 505-写任务强制取消</br> 506-在writer plugin中，任务发生了中断</br> 507-写任务恢复运行</br> 900-接收到调度请求</br> 901-任务运行结束</br> 902-任务已运行结束，正在进行数据完整性校验</br> 903-输出数据完整性校验结果</br> 904-经过数据完整性校验，发现有数据缺失，正在进行数据补偿</br> 905-输出数据补偿结果</br> 906-读取任务正在在排队中（平台资源）</br> 907-读取任务被拒绝执行，因为上一次调度还没有结束</br> 908-写入任务正在在排队中（平台资源）</br> 909-写入任务被拒绝执行，因为上一次调度还没有结束</br> 911-读取任务没有被正常开启，请检查网络是否通畅，参数是否正确</br> 912-写入任务没有被正常开启，请检查网络是否通畅，参数是否正确</br> 913-任务调度请求失败</br> 914-任务被拒绝执行，因为上一次调度还没有结束</br> 915-任务不正常运行</br> 916-任务日志上报异常</br>
 
@@ -171,7 +171,7 @@ class TaskMonitorDetailLog:
 
     @property
     def position(self):
-        """Gets the position of this TaskMonitorDetailLog.
+        r"""Gets the position of this TaskMonitorDetailLog.
 
         标识当前步骤属于哪一个阶段，允许如下值：ADAPTER-任务处于初始化阶段, READER-任务正在执行Reader读操作, WRITER-任务正在执行Writer写操作
 
@@ -182,7 +182,7 @@ class TaskMonitorDetailLog:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this TaskMonitorDetailLog.
+        r"""Sets the position of this TaskMonitorDetailLog.
 
         标识当前步骤属于哪一个阶段，允许如下值：ADAPTER-任务处于初始化阶段, READER-任务正在执行Reader读操作, WRITER-任务正在执行Writer写操作
 
@@ -193,7 +193,7 @@ class TaskMonitorDetailLog:
 
     @property
     def position_status(self):
-        """Gets the position_status of this TaskMonitorDetailLog.
+        r"""Gets the position_status of this TaskMonitorDetailLog.
 
         任务当前步骤的状态，允许如下值：NORMAL-正在运行, NODE_END-本节点正常结束, RUNTIME_CANCEL-任务被取消, TASK_END-本任务正常结束, RUNTIME_ERR-运行时异常, INTERNAL_ERR-内部程序异常
 
@@ -204,7 +204,7 @@ class TaskMonitorDetailLog:
 
     @position_status.setter
     def position_status(self, position_status):
-        """Sets the position_status of this TaskMonitorDetailLog.
+        r"""Sets the position_status of this TaskMonitorDetailLog.
 
         任务当前步骤的状态，允许如下值：NORMAL-正在运行, NODE_END-本节点正常结束, RUNTIME_CANCEL-任务被取消, TASK_END-本任务正常结束, RUNTIME_ERR-运行时异常, INTERNAL_ERR-内部程序异常
 
@@ -215,7 +215,7 @@ class TaskMonitorDetailLog:
 
     @property
     def stage(self):
-        """Gets the stage of this TaskMonitorDetailLog.
+        r"""Gets the stage of this TaskMonitorDetailLog.
 
         标识当前步骤属于哪一个FDI插件，如adapter, apireader, rdbwriter等
 
@@ -226,7 +226,7 @@ class TaskMonitorDetailLog:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this TaskMonitorDetailLog.
+        r"""Sets the stage of this TaskMonitorDetailLog.
 
         标识当前步骤属于哪一个FDI插件，如adapter, apireader, rdbwriter等
 
@@ -237,7 +237,7 @@ class TaskMonitorDetailLog:
 
     @property
     def dirty_data_count(self):
-        """Gets the dirty_data_count of this TaskMonitorDetailLog.
+        r"""Gets the dirty_data_count of this TaskMonitorDetailLog.
 
         异常数据条数
 
@@ -248,7 +248,7 @@ class TaskMonitorDetailLog:
 
     @dirty_data_count.setter
     def dirty_data_count(self, dirty_data_count):
-        """Sets the dirty_data_count of this TaskMonitorDetailLog.
+        r"""Sets the dirty_data_count of this TaskMonitorDetailLog.
 
         异常数据条数
 
@@ -259,7 +259,7 @@ class TaskMonitorDetailLog:
 
     @property
     def data_count(self):
-        """Gets the data_count of this TaskMonitorDetailLog.
+        r"""Gets the data_count of this TaskMonitorDetailLog.
 
         成功数据条数
 
@@ -270,7 +270,7 @@ class TaskMonitorDetailLog:
 
     @data_count.setter
     def data_count(self, data_count):
-        """Sets the data_count of this TaskMonitorDetailLog.
+        r"""Sets the data_count of this TaskMonitorDetailLog.
 
         成功数据条数
 
@@ -281,7 +281,7 @@ class TaskMonitorDetailLog:
 
     @property
     def data_size(self):
-        """Gets the data_size of this TaskMonitorDetailLog.
+        r"""Gets the data_size of this TaskMonitorDetailLog.
 
         成功数据大小，浮点数类型
 
@@ -292,7 +292,7 @@ class TaskMonitorDetailLog:
 
     @data_size.setter
     def data_size(self, data_size):
-        """Sets the data_size of this TaskMonitorDetailLog.
+        r"""Sets the data_size of this TaskMonitorDetailLog.
 
         成功数据大小，浮点数类型
 
@@ -303,7 +303,7 @@ class TaskMonitorDetailLog:
 
     @property
     def data_size_unit(self):
-        """Gets the data_size_unit of this TaskMonitorDetailLog.
+        r"""Gets the data_size_unit of this TaskMonitorDetailLog.
 
         成功数据大小的计量单位
 
@@ -314,7 +314,7 @@ class TaskMonitorDetailLog:
 
     @data_size_unit.setter
     def data_size_unit(self, data_size_unit):
-        """Sets the data_size_unit of this TaskMonitorDetailLog.
+        r"""Sets the data_size_unit of this TaskMonitorDetailLog.
 
         成功数据大小的计量单位
 
@@ -325,7 +325,7 @@ class TaskMonitorDetailLog:
 
     @property
     def spend_time(self):
-        """Gets the spend_time of this TaskMonitorDetailLog.
+        r"""Gets the spend_time of this TaskMonitorDetailLog.
 
         执行时长，单位：ms
 
@@ -336,7 +336,7 @@ class TaskMonitorDetailLog:
 
     @spend_time.setter
     def spend_time(self, spend_time):
-        """Sets the spend_time of this TaskMonitorDetailLog.
+        r"""Sets the spend_time of this TaskMonitorDetailLog.
 
         执行时长，单位：ms
 
@@ -347,7 +347,7 @@ class TaskMonitorDetailLog:
 
     @property
     def remarks(self):
-        """Gets the remarks of this TaskMonitorDetailLog.
+        r"""Gets the remarks of this TaskMonitorDetailLog.
 
         执行详细信息
 
@@ -358,7 +358,7 @@ class TaskMonitorDetailLog:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this TaskMonitorDetailLog.
+        r"""Sets the remarks of this TaskMonitorDetailLog.
 
         执行详细信息
 
@@ -369,7 +369,7 @@ class TaskMonitorDetailLog:
 
     @property
     def step_begin_time(self):
-        """Gets the step_begin_time of this TaskMonitorDetailLog.
+        r"""Gets the step_begin_time of this TaskMonitorDetailLog.
 
         本次步骤启动时间，格式timestamp(ms)，使用UTC时区
 
@@ -380,7 +380,7 @@ class TaskMonitorDetailLog:
 
     @step_begin_time.setter
     def step_begin_time(self, step_begin_time):
-        """Sets the step_begin_time of this TaskMonitorDetailLog.
+        r"""Sets the step_begin_time of this TaskMonitorDetailLog.
 
         本次步骤启动时间，格式timestamp(ms)，使用UTC时区
 
@@ -391,7 +391,7 @@ class TaskMonitorDetailLog:
 
     @property
     def step_end_time(self):
-        """Gets the step_end_time of this TaskMonitorDetailLog.
+        r"""Gets the step_end_time of this TaskMonitorDetailLog.
 
         本次步骤结束时间，格式timestamp(ms)，使用UTC时区
 
@@ -402,7 +402,7 @@ class TaskMonitorDetailLog:
 
     @step_end_time.setter
     def step_end_time(self, step_end_time):
-        """Sets the step_end_time of this TaskMonitorDetailLog.
+        r"""Sets the step_end_time of this TaskMonitorDetailLog.
 
         本次步骤结束时间，格式timestamp(ms)，使用UTC时区
 

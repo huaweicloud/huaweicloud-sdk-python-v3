@@ -33,7 +33,7 @@ class SearchResourceShareInvitationReqBody:
     }
 
     def __init__(self, resource_share_ids=None, resource_share_invitation_ids=None, status=None, limit=None, marker=None):
-        """SearchResourceShareInvitationReqBody
+        r"""SearchResourceShareInvitationReqBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SearchResourceShareInvitationReqBody:
 
     @property
     def resource_share_ids(self):
-        """Gets the resource_share_ids of this SearchResourceShareInvitationReqBody.
+        r"""Gets the resource_share_ids of this SearchResourceShareInvitationReqBody.
 
         资源共享实例的ID列表。
 
@@ -82,7 +82,7 @@ class SearchResourceShareInvitationReqBody:
 
     @resource_share_ids.setter
     def resource_share_ids(self, resource_share_ids):
-        """Sets the resource_share_ids of this SearchResourceShareInvitationReqBody.
+        r"""Sets the resource_share_ids of this SearchResourceShareInvitationReqBody.
 
         资源共享实例的ID列表。
 
@@ -93,7 +93,7 @@ class SearchResourceShareInvitationReqBody:
 
     @property
     def resource_share_invitation_ids(self):
-        """Gets the resource_share_invitation_ids of this SearchResourceShareInvitationReqBody.
+        r"""Gets the resource_share_invitation_ids of this SearchResourceShareInvitationReqBody.
 
         资源共享邀请的ID列表。
 
@@ -104,7 +104,7 @@ class SearchResourceShareInvitationReqBody:
 
     @resource_share_invitation_ids.setter
     def resource_share_invitation_ids(self, resource_share_invitation_ids):
-        """Sets the resource_share_invitation_ids of this SearchResourceShareInvitationReqBody.
+        r"""Sets the resource_share_invitation_ids of this SearchResourceShareInvitationReqBody.
 
         资源共享邀请的ID列表。
 
@@ -115,7 +115,7 @@ class SearchResourceShareInvitationReqBody:
 
     @property
     def status(self):
-        """Gets the status of this SearchResourceShareInvitationReqBody.
+        r"""Gets the status of this SearchResourceShareInvitationReqBody.
 
         资源共享邀请的当前状态。
 
@@ -126,7 +126,7 @@ class SearchResourceShareInvitationReqBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SearchResourceShareInvitationReqBody.
+        r"""Sets the status of this SearchResourceShareInvitationReqBody.
 
         资源共享邀请的当前状态。
 
@@ -137,7 +137,7 @@ class SearchResourceShareInvitationReqBody:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchResourceShareInvitationReqBody.
+        r"""Gets the limit of this SearchResourceShareInvitationReqBody.
 
         分页页面的最大值。
 
@@ -148,7 +148,7 @@ class SearchResourceShareInvitationReqBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchResourceShareInvitationReqBody.
+        r"""Sets the limit of this SearchResourceShareInvitationReqBody.
 
         分页页面的最大值。
 
@@ -159,7 +159,7 @@ class SearchResourceShareInvitationReqBody:
 
     @property
     def marker(self):
-        """Gets the marker of this SearchResourceShareInvitationReqBody.
+        r"""Gets the marker of this SearchResourceShareInvitationReqBody.
 
         分页位置标识。从marker指定索引的下一条数据开始查询。查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据响应体中marker值配入此参数。
 
@@ -170,7 +170,7 @@ class SearchResourceShareInvitationReqBody:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this SearchResourceShareInvitationReqBody.
+        r"""Sets the marker of this SearchResourceShareInvitationReqBody.
 
         分页位置标识。从marker指定索引的下一条数据开始查询。查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据响应体中marker值配入此参数。
 

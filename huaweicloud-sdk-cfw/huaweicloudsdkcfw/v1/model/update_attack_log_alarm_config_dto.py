@@ -45,7 +45,7 @@ class UpdateAttackLogAlarmConfigDto:
     }
 
     def __init__(self, account_name=None, alarm_id=None, alarm_time_period=None, alarm_type=None, enable_status=None, frequency_count=None, frequency_time=None, language=None, severity=None, topic_urn=None, username=None):
-        """UpdateAttackLogAlarmConfigDto
+        r"""UpdateAttackLogAlarmConfigDto
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @property
     def account_name(self):
-        """Gets the account_name of this UpdateAttackLogAlarmConfigDto.
+        r"""Gets the account_name of this UpdateAttackLogAlarmConfigDto.
 
         账号名称
 
@@ -124,7 +124,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this UpdateAttackLogAlarmConfigDto.
+        r"""Sets the account_name of this UpdateAttackLogAlarmConfigDto.
 
         账号名称
 
@@ -135,7 +135,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this UpdateAttackLogAlarmConfigDto.
+        r"""Gets the alarm_id of this UpdateAttackLogAlarmConfigDto.
 
         告警id
 
@@ -146,7 +146,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this UpdateAttackLogAlarmConfigDto.
+        r"""Sets the alarm_id of this UpdateAttackLogAlarmConfigDto.
 
         告警id
 
@@ -157,7 +157,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @property
     def alarm_time_period(self):
-        """Gets the alarm_time_period of this UpdateAttackLogAlarmConfigDto.
+        r"""Gets the alarm_time_period of this UpdateAttackLogAlarmConfigDto.
 
         告警周期，0：全天，1：8时到22时
 
@@ -168,7 +168,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @alarm_time_period.setter
     def alarm_time_period(self, alarm_time_period):
-        """Sets the alarm_time_period of this UpdateAttackLogAlarmConfigDto.
+        r"""Sets the alarm_time_period of this UpdateAttackLogAlarmConfigDto.
 
         告警周期，0：全天，1：8时到22时
 
@@ -179,7 +179,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @property
     def alarm_type(self):
-        """Gets the alarm_type of this UpdateAttackLogAlarmConfigDto.
+        r"""Gets the alarm_type of this UpdateAttackLogAlarmConfigDto.
 
         告警类型 0:攻击告警; 1:流量超额预警; 2:EIP未防护告警; 3:威胁情报告警
 
@@ -190,7 +190,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @alarm_type.setter
     def alarm_type(self, alarm_type):
-        """Sets the alarm_type of this UpdateAttackLogAlarmConfigDto.
+        r"""Sets the alarm_type of this UpdateAttackLogAlarmConfigDto.
 
         告警类型 0:攻击告警; 1:流量超额预警; 2:EIP未防护告警; 3:威胁情报告警
 
@@ -201,7 +201,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @property
     def enable_status(self):
-        """Gets the enable_status of this UpdateAttackLogAlarmConfigDto.
+        r"""Gets the enable_status of this UpdateAttackLogAlarmConfigDto.
 
         告警状态 0:失效; 1:生效
 
@@ -212,7 +212,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @enable_status.setter
     def enable_status(self, enable_status):
-        """Sets the enable_status of this UpdateAttackLogAlarmConfigDto.
+        r"""Sets the enable_status of this UpdateAttackLogAlarmConfigDto.
 
         告警状态 0:失效; 1:生效
 
@@ -223,7 +223,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @property
     def frequency_count(self):
-        """Gets the frequency_count of this UpdateAttackLogAlarmConfigDto.
+        r"""Gets the frequency_count of this UpdateAttackLogAlarmConfigDto.
 
         告警触发频次
 
@@ -234,7 +234,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @frequency_count.setter
     def frequency_count(self, frequency_count):
-        """Sets the frequency_count of this UpdateAttackLogAlarmConfigDto.
+        r"""Sets the frequency_count of this UpdateAttackLogAlarmConfigDto.
 
         告警触发频次
 
@@ -245,7 +245,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @property
     def frequency_time(self):
-        """Gets the frequency_time of this UpdateAttackLogAlarmConfigDto.
+        r"""Gets the frequency_time of this UpdateAttackLogAlarmConfigDto.
 
         告警频次时间范围
 
@@ -256,7 +256,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @frequency_time.setter
     def frequency_time(self, frequency_time):
-        """Sets the frequency_time of this UpdateAttackLogAlarmConfigDto.
+        r"""Sets the frequency_time of this UpdateAttackLogAlarmConfigDto.
 
         告警频次时间范围
 
@@ -267,7 +267,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @property
     def language(self):
-        """Gets the language of this UpdateAttackLogAlarmConfigDto.
+        r"""Gets the language of this UpdateAttackLogAlarmConfigDto.
 
         告警语言
 
@@ -278,7 +278,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this UpdateAttackLogAlarmConfigDto.
+        r"""Sets the language of this UpdateAttackLogAlarmConfigDto.
 
         告警语言
 
@@ -289,7 +289,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @property
     def severity(self):
-        """Gets the severity of this UpdateAttackLogAlarmConfigDto.
+        r"""Gets the severity of this UpdateAttackLogAlarmConfigDto.
 
         告警等级
 
@@ -300,7 +300,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this UpdateAttackLogAlarmConfigDto.
+        r"""Sets the severity of this UpdateAttackLogAlarmConfigDto.
 
         告警等级
 
@@ -311,7 +311,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this UpdateAttackLogAlarmConfigDto.
+        r"""Gets the topic_urn of this UpdateAttackLogAlarmConfigDto.
 
         告警urn
 
@@ -322,7 +322,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this UpdateAttackLogAlarmConfigDto.
+        r"""Sets the topic_urn of this UpdateAttackLogAlarmConfigDto.
 
         告警urn
 
@@ -333,7 +333,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @property
     def username(self):
-        """Gets the username of this UpdateAttackLogAlarmConfigDto.
+        r"""Gets the username of this UpdateAttackLogAlarmConfigDto.
 
         用户名称
 
@@ -344,7 +344,7 @@ class UpdateAttackLogAlarmConfigDto:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this UpdateAttackLogAlarmConfigDto.
+        r"""Sets the username of this UpdateAttackLogAlarmConfigDto.
 
         用户名称
 

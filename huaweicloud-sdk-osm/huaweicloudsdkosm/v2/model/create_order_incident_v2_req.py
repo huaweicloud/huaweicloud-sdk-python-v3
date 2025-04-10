@@ -55,7 +55,7 @@ class CreateOrderIncidentV2Req:
     }
 
     def __init__(self, incident_sub_type_id=None, product_category_id=None, business_type_id=None, region_id=None, simple_description=None, source_id=None, remind_mobile=None, remind_mail=None, remind_time=None, project_id=None, accessory_ids=None, extends_map=None, extension_map=None, severity_id=None, verify_code=None, area_code=None):
-        """CreateOrderIncidentV2Req
+        r"""CreateOrderIncidentV2Req
 
         The model defined in huaweicloud sdk
 
@@ -145,7 +145,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def incident_sub_type_id(self):
-        """Gets the incident_sub_type_id of this CreateOrderIncidentV2Req.
+        r"""Gets the incident_sub_type_id of this CreateOrderIncidentV2Req.
 
         工单子类，通过\"查询工单类目列表\"接口获取
 
@@ -156,7 +156,7 @@ class CreateOrderIncidentV2Req:
 
     @incident_sub_type_id.setter
     def incident_sub_type_id(self, incident_sub_type_id):
-        """Sets the incident_sub_type_id of this CreateOrderIncidentV2Req.
+        r"""Sets the incident_sub_type_id of this CreateOrderIncidentV2Req.
 
         工单子类，通过\"查询工单类目列表\"接口获取
 
@@ -167,7 +167,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def product_category_id(self):
-        """Gets the product_category_id of this CreateOrderIncidentV2Req.
+        r"""Gets the product_category_id of this CreateOrderIncidentV2Req.
 
         工单产品类型，通过\"查询工单类目列表\"接口获取
 
@@ -178,7 +178,7 @@ class CreateOrderIncidentV2Req:
 
     @product_category_id.setter
     def product_category_id(self, product_category_id):
-        """Sets the product_category_id of this CreateOrderIncidentV2Req.
+        r"""Sets the product_category_id of this CreateOrderIncidentV2Req.
 
         工单产品类型，通过\"查询工单类目列表\"接口获取
 
@@ -189,7 +189,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def business_type_id(self):
-        """Gets the business_type_id of this CreateOrderIncidentV2Req.
+        r"""Gets the business_type_id of this CreateOrderIncidentV2Req.
 
         工单问题类型，通过\"查询问题类型列表\"接口获取
 
@@ -200,7 +200,7 @@ class CreateOrderIncidentV2Req:
 
     @business_type_id.setter
     def business_type_id(self, business_type_id):
-        """Sets the business_type_id of this CreateOrderIncidentV2Req.
+        r"""Sets the business_type_id of this CreateOrderIncidentV2Req.
 
         工单问题类型，通过\"查询问题类型列表\"接口获取
 
@@ -211,7 +211,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateOrderIncidentV2Req.
+        r"""Gets the region_id of this CreateOrderIncidentV2Req.
 
         区域ID，根据business_type_id对应工单类型是5则必填，通过\"查询问题类型列表\"查看
 
@@ -222,7 +222,7 @@ class CreateOrderIncidentV2Req:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateOrderIncidentV2Req.
+        r"""Sets the region_id of this CreateOrderIncidentV2Req.
 
         区域ID，根据business_type_id对应工单类型是5则必填，通过\"查询问题类型列表\"查看
 
@@ -233,7 +233,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def simple_description(self):
-        """Gets the simple_description of this CreateOrderIncidentV2Req.
+        r"""Gets the simple_description of this CreateOrderIncidentV2Req.
 
         问题描述
 
@@ -244,7 +244,7 @@ class CreateOrderIncidentV2Req:
 
     @simple_description.setter
     def simple_description(self, simple_description):
-        """Sets the simple_description of this CreateOrderIncidentV2Req.
+        r"""Sets the simple_description of this CreateOrderIncidentV2Req.
 
         问题描述
 
@@ -255,7 +255,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def source_id(self):
-        """Gets the source_id of this CreateOrderIncidentV2Req.
+        r"""Gets the source_id of this CreateOrderIncidentV2Req.
 
         工单来源，当前固定为83aeb0f2834c4df49826c781d32a963e
 
@@ -266,7 +266,7 @@ class CreateOrderIncidentV2Req:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this CreateOrderIncidentV2Req.
+        r"""Sets the source_id of this CreateOrderIncidentV2Req.
 
         工单来源，当前固定为83aeb0f2834c4df49826c781d32a963e
 
@@ -277,7 +277,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def remind_mobile(self):
-        """Gets the remind_mobile of this CreateOrderIncidentV2Req.
+        r"""Gets the remind_mobile of this CreateOrderIncidentV2Req.
 
         提醒手机号
 
@@ -288,7 +288,7 @@ class CreateOrderIncidentV2Req:
 
     @remind_mobile.setter
     def remind_mobile(self, remind_mobile):
-        """Sets the remind_mobile of this CreateOrderIncidentV2Req.
+        r"""Sets the remind_mobile of this CreateOrderIncidentV2Req.
 
         提醒手机号
 
@@ -299,7 +299,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def remind_mail(self):
-        """Gets the remind_mail of this CreateOrderIncidentV2Req.
+        r"""Gets the remind_mail of this CreateOrderIncidentV2Req.
 
         提醒邮箱
 
@@ -310,7 +310,7 @@ class CreateOrderIncidentV2Req:
 
     @remind_mail.setter
     def remind_mail(self, remind_mail):
-        """Sets the remind_mail of this CreateOrderIncidentV2Req.
+        r"""Sets the remind_mail of this CreateOrderIncidentV2Req.
 
         提醒邮箱
 
@@ -321,7 +321,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def remind_time(self):
-        """Gets the remind_time of this CreateOrderIncidentV2Req.
+        r"""Gets the remind_time of this CreateOrderIncidentV2Req.
 
         提醒时间，如果是任意时间传0，如果是指定时间，传客户首选项对应时区的时间，比如09:00-18:00
 
@@ -332,7 +332,7 @@ class CreateOrderIncidentV2Req:
 
     @remind_time.setter
     def remind_time(self, remind_time):
-        """Sets the remind_time of this CreateOrderIncidentV2Req.
+        r"""Sets the remind_time of this CreateOrderIncidentV2Req.
 
         提醒时间，如果是任意时间传0，如果是指定时间，传客户首选项对应时区的时间，比如09:00-18:00
 
@@ -343,7 +343,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateOrderIncidentV2Req.
+        r"""Gets the project_id of this CreateOrderIncidentV2Req.
 
         项目id
 
@@ -354,7 +354,7 @@ class CreateOrderIncidentV2Req:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateOrderIncidentV2Req.
+        r"""Sets the project_id of this CreateOrderIncidentV2Req.
 
         项目id
 
@@ -365,7 +365,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def accessory_ids(self):
-        """Gets the accessory_ids of this CreateOrderIncidentV2Req.
+        r"""Gets the accessory_ids of this CreateOrderIncidentV2Req.
 
         附件id列表，\"上传附件\"接口返回的id
 
@@ -376,7 +376,7 @@ class CreateOrderIncidentV2Req:
 
     @accessory_ids.setter
     def accessory_ids(self, accessory_ids):
-        """Sets the accessory_ids of this CreateOrderIncidentV2Req.
+        r"""Sets the accessory_ids of this CreateOrderIncidentV2Req.
 
         附件id列表，\"上传附件\"接口返回的id
 
@@ -387,7 +387,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def extends_map(self):
-        """Gets the extends_map of this CreateOrderIncidentV2Req.
+        r"""Gets the extends_map of this CreateOrderIncidentV2Req.
 
         附加参数
 
@@ -398,7 +398,7 @@ class CreateOrderIncidentV2Req:
 
     @extends_map.setter
     def extends_map(self, extends_map):
-        """Sets the extends_map of this CreateOrderIncidentV2Req.
+        r"""Sets the extends_map of this CreateOrderIncidentV2Req.
 
         附加参数
 
@@ -409,7 +409,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def extension_map(self):
-        """Gets the extension_map of this CreateOrderIncidentV2Req.
+        r"""Gets the extension_map of this CreateOrderIncidentV2Req.
 
         扩展参数
 
@@ -420,7 +420,7 @@ class CreateOrderIncidentV2Req:
 
     @extension_map.setter
     def extension_map(self, extension_map):
-        """Sets the extension_map of this CreateOrderIncidentV2Req.
+        r"""Sets the extension_map of this CreateOrderIncidentV2Req.
 
         扩展参数
 
@@ -431,7 +431,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def severity_id(self):
-        """Gets the severity_id of this CreateOrderIncidentV2Req.
+        r"""Gets the severity_id of this CreateOrderIncidentV2Req.
 
         严重性id，通过\"查询问题严重性列表\"接口获取
 
@@ -442,7 +442,7 @@ class CreateOrderIncidentV2Req:
 
     @severity_id.setter
     def severity_id(self, severity_id):
-        """Sets the severity_id of this CreateOrderIncidentV2Req.
+        r"""Sets the severity_id of this CreateOrderIncidentV2Req.
 
         严重性id，通过\"查询问题严重性列表\"接口获取
 
@@ -453,7 +453,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def verify_code(self):
-        """Gets the verify_code of this CreateOrderIncidentV2Req.
+        r"""Gets the verify_code of this CreateOrderIncidentV2Req.
 
         验证码，如果是非注册联系方式，需要通过\"获取验证码\"获取验证码
 
@@ -464,7 +464,7 @@ class CreateOrderIncidentV2Req:
 
     @verify_code.setter
     def verify_code(self, verify_code):
-        """Sets the verify_code of this CreateOrderIncidentV2Req.
+        r"""Sets the verify_code of this CreateOrderIncidentV2Req.
 
         验证码，如果是非注册联系方式，需要通过\"获取验证码\"获取验证码
 
@@ -475,7 +475,7 @@ class CreateOrderIncidentV2Req:
 
     @property
     def area_code(self):
-        """Gets the area_code of this CreateOrderIncidentV2Req.
+        r"""Gets the area_code of this CreateOrderIncidentV2Req.
 
         国家码
 
@@ -486,7 +486,7 @@ class CreateOrderIncidentV2Req:
 
     @area_code.setter
     def area_code(self, area_code):
-        """Sets the area_code of this CreateOrderIncidentV2Req.
+        r"""Sets the area_code of this CreateOrderIncidentV2Req.
 
         国家码
 

@@ -25,7 +25,7 @@ class UpdateInstanceRemarkRequestBody:
     }
 
     def __init__(self, remark=None):
-        """UpdateInstanceRemarkRequestBody
+        r"""UpdateInstanceRemarkRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateInstanceRemarkRequestBody:
 
     @property
     def remark(self):
-        """Gets the remark of this UpdateInstanceRemarkRequestBody.
+        r"""Gets the remark of this UpdateInstanceRemarkRequestBody.
 
         实例备注内容。 长度不能超过64位，不支持回车和>!<\"&'=特殊字符。
 
@@ -53,7 +53,7 @@ class UpdateInstanceRemarkRequestBody:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this UpdateInstanceRemarkRequestBody.
+        r"""Sets the remark of this UpdateInstanceRemarkRequestBody.
 
         实例备注内容。 长度不能超过64位，不支持回车和>!<\"&'=特殊字符。
 

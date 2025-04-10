@@ -32,7 +32,7 @@ class BatchSendDiffSmsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, description=None, result=None):
-        """BatchSendDiffSmsResponse
+        r"""BatchSendDiffSmsResponse
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class BatchSendDiffSmsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this BatchSendDiffSmsResponse.
+        r"""Gets the code of this BatchSendDiffSmsResponse.
 
         错误码
 
@@ -71,7 +71,7 @@ class BatchSendDiffSmsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this BatchSendDiffSmsResponse.
+        r"""Sets the code of this BatchSendDiffSmsResponse.
 
         错误码
 
@@ -82,7 +82,7 @@ class BatchSendDiffSmsResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this BatchSendDiffSmsResponse.
+        r"""Gets the description of this BatchSendDiffSmsResponse.
 
         错误描述
 
@@ -93,7 +93,7 @@ class BatchSendDiffSmsResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BatchSendDiffSmsResponse.
+        r"""Sets the description of this BatchSendDiffSmsResponse.
 
         错误描述
 
@@ -104,7 +104,7 @@ class BatchSendDiffSmsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this BatchSendDiffSmsResponse.
+        r"""Gets the result of this BatchSendDiffSmsResponse.
 
         短信状态
 
@@ -115,7 +115,7 @@ class BatchSendDiffSmsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this BatchSendDiffSmsResponse.
+        r"""Sets the result of this BatchSendDiffSmsResponse.
 
         短信状态
 

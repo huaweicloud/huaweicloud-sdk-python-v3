@@ -49,7 +49,7 @@ class RecordDetailInfo:
     }
 
     def __init__(self, operation_id=None, resource_type=None, operation_type=None, domain_id=None, project_id=None, blockchain_id=None, blockchain_name=None, cluster_info=None, operation_process=None, record_time=None, operation_status=None, message=None, desc=None):
-        """RecordDetailInfo
+        r"""RecordDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class RecordDetailInfo:
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this RecordDetailInfo.
+        r"""Gets the operation_id of this RecordDetailInfo.
 
         操作记录ID
 
@@ -138,7 +138,7 @@ class RecordDetailInfo:
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this RecordDetailInfo.
+        r"""Sets the operation_id of this RecordDetailInfo.
 
         操作记录ID
 
@@ -149,7 +149,7 @@ class RecordDetailInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this RecordDetailInfo.
+        r"""Gets the resource_type of this RecordDetailInfo.
 
         资源类型
 
@@ -160,7 +160,7 @@ class RecordDetailInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this RecordDetailInfo.
+        r"""Sets the resource_type of this RecordDetailInfo.
 
         资源类型
 
@@ -171,7 +171,7 @@ class RecordDetailInfo:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this RecordDetailInfo.
+        r"""Gets the operation_type of this RecordDetailInfo.
 
         操作类型
 
@@ -182,7 +182,7 @@ class RecordDetailInfo:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this RecordDetailInfo.
+        r"""Sets the operation_type of this RecordDetailInfo.
 
         操作类型
 
@@ -193,7 +193,7 @@ class RecordDetailInfo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this RecordDetailInfo.
+        r"""Gets the domain_id of this RecordDetailInfo.
 
         租户ID
 
@@ -204,7 +204,7 @@ class RecordDetailInfo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this RecordDetailInfo.
+        r"""Sets the domain_id of this RecordDetailInfo.
 
         租户ID
 
@@ -215,7 +215,7 @@ class RecordDetailInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RecordDetailInfo.
+        r"""Gets the project_id of this RecordDetailInfo.
 
         项目ID
 
@@ -226,7 +226,7 @@ class RecordDetailInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RecordDetailInfo.
+        r"""Sets the project_id of this RecordDetailInfo.
 
         项目ID
 
@@ -237,7 +237,7 @@ class RecordDetailInfo:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this RecordDetailInfo.
+        r"""Gets the blockchain_id of this RecordDetailInfo.
 
         区块链ID
 
@@ -248,7 +248,7 @@ class RecordDetailInfo:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this RecordDetailInfo.
+        r"""Sets the blockchain_id of this RecordDetailInfo.
 
         区块链ID
 
@@ -259,7 +259,7 @@ class RecordDetailInfo:
 
     @property
     def blockchain_name(self):
-        """Gets the blockchain_name of this RecordDetailInfo.
+        r"""Gets the blockchain_name of this RecordDetailInfo.
 
         区块链名称
 
@@ -270,7 +270,7 @@ class RecordDetailInfo:
 
     @blockchain_name.setter
     def blockchain_name(self, blockchain_name):
-        """Sets the blockchain_name of this RecordDetailInfo.
+        r"""Sets the blockchain_name of this RecordDetailInfo.
 
         区块链名称
 
@@ -281,7 +281,7 @@ class RecordDetailInfo:
 
     @property
     def cluster_info(self):
-        """Gets the cluster_info of this RecordDetailInfo.
+        r"""Gets the cluster_info of this RecordDetailInfo.
 
         :return: The cluster_info of this RecordDetailInfo.
         :rtype: :class:`huaweicloudsdkbcs.v2.OprecordCluster`
@@ -290,7 +290,7 @@ class RecordDetailInfo:
 
     @cluster_info.setter
     def cluster_info(self, cluster_info):
-        """Sets the cluster_info of this RecordDetailInfo.
+        r"""Sets the cluster_info of this RecordDetailInfo.
 
         :param cluster_info: The cluster_info of this RecordDetailInfo.
         :type cluster_info: :class:`huaweicloudsdkbcs.v2.OprecordCluster`
@@ -299,7 +299,7 @@ class RecordDetailInfo:
 
     @property
     def operation_process(self):
-        """Gets the operation_process of this RecordDetailInfo.
+        r"""Gets the operation_process of this RecordDetailInfo.
 
         操作流程，key为流程名，value为流程信息
 
@@ -310,7 +310,7 @@ class RecordDetailInfo:
 
     @operation_process.setter
     def operation_process(self, operation_process):
-        """Sets the operation_process of this RecordDetailInfo.
+        r"""Sets the operation_process of this RecordDetailInfo.
 
         操作流程，key为流程名，value为流程信息
 
@@ -321,7 +321,7 @@ class RecordDetailInfo:
 
     @property
     def record_time(self):
-        """Gets the record_time of this RecordDetailInfo.
+        r"""Gets the record_time of this RecordDetailInfo.
 
         记录更新时间
 
@@ -332,7 +332,7 @@ class RecordDetailInfo:
 
     @record_time.setter
     def record_time(self, record_time):
-        """Sets the record_time of this RecordDetailInfo.
+        r"""Sets the record_time of this RecordDetailInfo.
 
         记录更新时间
 
@@ -343,7 +343,7 @@ class RecordDetailInfo:
 
     @property
     def operation_status(self):
-        """Gets the operation_status of this RecordDetailInfo.
+        r"""Gets the operation_status of this RecordDetailInfo.
 
         操作状态
 
@@ -354,7 +354,7 @@ class RecordDetailInfo:
 
     @operation_status.setter
     def operation_status(self, operation_status):
-        """Sets the operation_status of this RecordDetailInfo.
+        r"""Sets the operation_status of this RecordDetailInfo.
 
         操作状态
 
@@ -365,7 +365,7 @@ class RecordDetailInfo:
 
     @property
     def message(self):
-        """Gets the message of this RecordDetailInfo.
+        r"""Gets the message of this RecordDetailInfo.
 
         操作过程信息记录
 
@@ -376,7 +376,7 @@ class RecordDetailInfo:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this RecordDetailInfo.
+        r"""Sets the message of this RecordDetailInfo.
 
         操作过程信息记录
 
@@ -387,7 +387,7 @@ class RecordDetailInfo:
 
     @property
     def desc(self):
-        """Gets the desc of this RecordDetailInfo.
+        r"""Gets the desc of this RecordDetailInfo.
 
         操作描述
 
@@ -398,7 +398,7 @@ class RecordDetailInfo:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this RecordDetailInfo.
+        r"""Sets the desc of this RecordDetailInfo.
 
         操作描述
 

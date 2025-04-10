@@ -26,7 +26,7 @@ class ShowAssetTempAuthorityResponse(SdkResponse):
     }
 
     def __init__(self, sign_str=None):
-        """ShowAssetTempAuthorityResponse
+        r"""ShowAssetTempAuthorityResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAssetTempAuthorityResponse(SdkResponse):
 
     @property
     def sign_str(self):
-        """Gets the sign_str of this ShowAssetTempAuthorityResponse.
+        r"""Gets the sign_str of this ShowAssetTempAuthorityResponse.
 
         带授权签名字符串的URL。具体调用示例请参见[示例2：媒资分段上传（20M以上）](https://support.huaweicloud.com/api-vod/vod_04_0216.html)。  示例：https://{obs_domain}/{bucket}?AWSAccessKeyId={AccessKeyID}&Expires={ExpiresValue}&Signature={Signature}
 
@@ -55,7 +55,7 @@ class ShowAssetTempAuthorityResponse(SdkResponse):
 
     @sign_str.setter
     def sign_str(self, sign_str):
-        """Sets the sign_str of this ShowAssetTempAuthorityResponse.
+        r"""Sets the sign_str of this ShowAssetTempAuthorityResponse.
 
         带授权签名字符串的URL。具体调用示例请参见[示例2：媒资分段上传（20M以上）](https://support.huaweicloud.com/api-vod/vod_04_0216.html)。  示例：https://{obs_domain}/{bucket}?AWSAccessKeyId={AccessKeyID}&Expires={ExpiresValue}&Signature={Signature}
 

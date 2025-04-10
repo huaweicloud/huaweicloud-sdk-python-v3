@@ -25,7 +25,7 @@ class Encryption:
     }
 
     def __init__(self, hls_encrypt=None):
-        """Encryption
+        r"""Encryption
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Encryption:
 
     @property
     def hls_encrypt(self):
-        """Gets the hls_encrypt of this Encryption.
+        r"""Gets the hls_encrypt of this Encryption.
 
         :return: The hls_encrypt of this Encryption.
         :rtype: :class:`huaweicloudsdkmpc.v1.HlsEncrypt`
@@ -52,7 +52,7 @@ class Encryption:
 
     @hls_encrypt.setter
     def hls_encrypt(self, hls_encrypt):
-        """Sets the hls_encrypt of this Encryption.
+        r"""Sets the hls_encrypt of this Encryption.
 
         :param hls_encrypt: The hls_encrypt of this Encryption.
         :type hls_encrypt: :class:`huaweicloudsdkmpc.v1.HlsEncrypt`

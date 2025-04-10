@@ -27,7 +27,7 @@ class NodePoolUpdate:
     }
 
     def __init__(self, metadata=None, spec=None):
-        """NodePoolUpdate
+        r"""NodePoolUpdate
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NodePoolUpdate:
 
     @property
     def metadata(self):
-        """Gets the metadata of this NodePoolUpdate.
+        r"""Gets the metadata of this NodePoolUpdate.
 
         :return: The metadata of this NodePoolUpdate.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolMetadataUpdate`
@@ -57,7 +57,7 @@ class NodePoolUpdate:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this NodePoolUpdate.
+        r"""Sets the metadata of this NodePoolUpdate.
 
         :param metadata: The metadata of this NodePoolUpdate.
         :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadataUpdate`
@@ -66,7 +66,7 @@ class NodePoolUpdate:
 
     @property
     def spec(self):
-        """Gets the spec of this NodePoolUpdate.
+        r"""Gets the spec of this NodePoolUpdate.
 
         :return: The spec of this NodePoolUpdate.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolSpecUpdate`
@@ -75,7 +75,7 @@ class NodePoolUpdate:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this NodePoolUpdate.
+        r"""Sets the spec of this NodePoolUpdate.
 
         :param spec: The spec of this NodePoolUpdate.
         :type spec: :class:`huaweicloudsdkcce.v3.NodePoolSpecUpdate`

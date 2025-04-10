@@ -31,7 +31,7 @@ class PermissionSetMemberCreateDTO2:
     }
 
     def __init__(self, member_type=None, member_id=None, member_name=None, workspace=None):
-        """PermissionSetMemberCreateDTO2
+        r"""PermissionSetMemberCreateDTO2
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PermissionSetMemberCreateDTO2:
 
     @property
     def member_type(self):
-        """Gets the member_type of this PermissionSetMemberCreateDTO2.
+        r"""Gets the member_type of this PermissionSetMemberCreateDTO2.
 
         成员类型, 用户/用户组/工作空间角色, USER, USER_GROUP, WORKSPACE_ROLE
 
@@ -75,7 +75,7 @@ class PermissionSetMemberCreateDTO2:
 
     @member_type.setter
     def member_type(self, member_type):
-        """Sets the member_type of this PermissionSetMemberCreateDTO2.
+        r"""Sets the member_type of this PermissionSetMemberCreateDTO2.
 
         成员类型, 用户/用户组/工作空间角色, USER, USER_GROUP, WORKSPACE_ROLE
 
@@ -86,7 +86,7 @@ class PermissionSetMemberCreateDTO2:
 
     @property
     def member_id(self):
-        """Gets the member_id of this PermissionSetMemberCreateDTO2.
+        r"""Gets the member_id of this PermissionSetMemberCreateDTO2.
 
         成员id
 
@@ -97,7 +97,7 @@ class PermissionSetMemberCreateDTO2:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this PermissionSetMemberCreateDTO2.
+        r"""Sets the member_id of this PermissionSetMemberCreateDTO2.
 
         成员id
 
@@ -108,7 +108,7 @@ class PermissionSetMemberCreateDTO2:
 
     @property
     def member_name(self):
-        """Gets the member_name of this PermissionSetMemberCreateDTO2.
+        r"""Gets the member_name of this PermissionSetMemberCreateDTO2.
 
         成员名称
 
@@ -119,7 +119,7 @@ class PermissionSetMemberCreateDTO2:
 
     @member_name.setter
     def member_name(self, member_name):
-        """Sets the member_name of this PermissionSetMemberCreateDTO2.
+        r"""Sets the member_name of this PermissionSetMemberCreateDTO2.
 
         成员名称
 
@@ -130,7 +130,7 @@ class PermissionSetMemberCreateDTO2:
 
     @property
     def workspace(self):
-        """Gets the workspace of this PermissionSetMemberCreateDTO2.
+        r"""Gets the workspace of this PermissionSetMemberCreateDTO2.
 
         工作空间
 
@@ -141,7 +141,7 @@ class PermissionSetMemberCreateDTO2:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this PermissionSetMemberCreateDTO2.
+        r"""Sets the workspace of this PermissionSetMemberCreateDTO2.
 
         工作空间
 

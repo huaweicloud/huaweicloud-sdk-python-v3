@@ -26,7 +26,7 @@ class DeleteTransitIpTagResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteTransitIpTagResponse
+        r"""DeleteTransitIpTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteTransitIpTagResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteTransitIpTagResponse.
+        r"""Gets the body of this DeleteTransitIpTagResponse.
 
         :return: The body of this DeleteTransitIpTagResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteTransitIpTagResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteTransitIpTagResponse.
+        r"""Sets the body of this DeleteTransitIpTagResponse.
 
         :param body: The body of this DeleteTransitIpTagResponse.
         :type body: str

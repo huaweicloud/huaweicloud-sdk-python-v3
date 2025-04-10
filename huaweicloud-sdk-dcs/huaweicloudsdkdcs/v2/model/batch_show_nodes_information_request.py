@@ -27,7 +27,7 @@ class BatchShowNodesInformationRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """BatchShowNodesInformationRequest
+        r"""BatchShowNodesInformationRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchShowNodesInformationRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchShowNodesInformationRequest.
+        r"""Gets the offset of this BatchShowNodesInformationRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -61,7 +61,7 @@ class BatchShowNodesInformationRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchShowNodesInformationRequest.
+        r"""Sets the offset of this BatchShowNodesInformationRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -72,7 +72,7 @@ class BatchShowNodesInformationRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchShowNodesInformationRequest.
+        r"""Gets the limit of this BatchShowNodesInformationRequest.
 
         每页显示的条目数量，当前最大值为100。若不设置该参数，则为10。 
 
@@ -83,7 +83,7 @@ class BatchShowNodesInformationRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchShowNodesInformationRequest.
+        r"""Sets the limit of this BatchShowNodesInformationRequest.
 
         每页显示的条目数量，当前最大值为100。若不设置该参数，则为10。 
 

@@ -32,7 +32,7 @@ class DeleteAntitamperRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, url=None, timestamp=None):
-        """DeleteAntitamperRuleResponse
+        r"""DeleteAntitamperRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class DeleteAntitamperRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this DeleteAntitamperRuleResponse.
+        r"""Gets the id of this DeleteAntitamperRuleResponse.
 
         规则id
 
@@ -76,7 +76,7 @@ class DeleteAntitamperRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteAntitamperRuleResponse.
+        r"""Sets the id of this DeleteAntitamperRuleResponse.
 
         规则id
 
@@ -87,7 +87,7 @@ class DeleteAntitamperRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this DeleteAntitamperRuleResponse.
+        r"""Gets the policyid of this DeleteAntitamperRuleResponse.
 
         策略id
 
@@ -98,7 +98,7 @@ class DeleteAntitamperRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this DeleteAntitamperRuleResponse.
+        r"""Sets the policyid of this DeleteAntitamperRuleResponse.
 
         策略id
 
@@ -109,7 +109,7 @@ class DeleteAntitamperRuleResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this DeleteAntitamperRuleResponse.
+        r"""Gets the url of this DeleteAntitamperRuleResponse.
 
         防篡改的url
 
@@ -120,7 +120,7 @@ class DeleteAntitamperRuleResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this DeleteAntitamperRuleResponse.
+        r"""Sets the url of this DeleteAntitamperRuleResponse.
 
         防篡改的url
 
@@ -131,7 +131,7 @@ class DeleteAntitamperRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this DeleteAntitamperRuleResponse.
+        r"""Gets the timestamp of this DeleteAntitamperRuleResponse.
 
         创建规则的时间戳
 
@@ -142,7 +142,7 @@ class DeleteAntitamperRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this DeleteAntitamperRuleResponse.
+        r"""Sets the timestamp of this DeleteAntitamperRuleResponse.
 
         创建规则的时间戳
 

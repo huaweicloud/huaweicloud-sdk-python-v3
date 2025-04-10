@@ -29,7 +29,7 @@ class UntagResourceRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """UntagResourceRequest
+        r"""UntagResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UntagResourceRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this UntagResourceRequest.
+        r"""Gets the resource_type of this UntagResourceRequest.
 
         资源类型。
 
@@ -66,7 +66,7 @@ class UntagResourceRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this UntagResourceRequest.
+        r"""Sets the resource_type of this UntagResourceRequest.
 
         资源类型。
 
@@ -77,7 +77,7 @@ class UntagResourceRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this UntagResourceRequest.
+        r"""Gets the resource_id of this UntagResourceRequest.
 
         资源的唯一标识符。
 
@@ -88,7 +88,7 @@ class UntagResourceRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this UntagResourceRequest.
+        r"""Sets the resource_id of this UntagResourceRequest.
 
         资源的唯一标识符。
 
@@ -99,7 +99,7 @@ class UntagResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UntagResourceRequest.
+        r"""Gets the body of this UntagResourceRequest.
 
         :return: The body of this UntagResourceRequest.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.UntagResourceReqBody`
@@ -108,7 +108,7 @@ class UntagResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UntagResourceRequest.
+        r"""Sets the body of this UntagResourceRequest.
 
         :param body: The body of this UntagResourceRequest.
         :type body: :class:`huaweicloudsdkiamaccessanalyzer.v1.UntagResourceReqBody`

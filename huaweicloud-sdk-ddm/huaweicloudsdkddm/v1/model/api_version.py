@@ -33,7 +33,7 @@ class ApiVersion:
     }
 
     def __init__(self, id=None, links=None, status=None, version=None, updated=None):
-        """ApiVersion
+        r"""ApiVersion
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ApiVersion:
 
     @property
     def id(self):
-        """Gets the id of this ApiVersion.
+        r"""Gets the id of this ApiVersion.
 
         API版本号，如v1、v3。
 
@@ -78,7 +78,7 @@ class ApiVersion:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiVersion.
+        r"""Sets the id of this ApiVersion.
 
         API版本号，如v1、v3。
 
@@ -89,7 +89,7 @@ class ApiVersion:
 
     @property
     def links(self):
-        """Gets the links of this ApiVersion.
+        r"""Gets the links of this ApiVersion.
 
         对应API的链接信息，v1、v3版本该字段为空。
 
@@ -100,7 +100,7 @@ class ApiVersion:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ApiVersion.
+        r"""Sets the links of this ApiVersion.
 
         对应API的链接信息，v1、v3版本该字段为空。
 
@@ -111,7 +111,7 @@ class ApiVersion:
 
     @property
     def status(self):
-        """Gets the status of this ApiVersion.
+        r"""Gets the status of this ApiVersion.
 
         版本状态。 取值“CURRENT”，表示该版本为主推版本。 取值“SUPPORTED”，表示为老版本，但是现在还继续支持 取值“DEPRECATED”，表示为废弃版本，存在后续删除的可能。
 
@@ -122,7 +122,7 @@ class ApiVersion:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ApiVersion.
+        r"""Sets the status of this ApiVersion.
 
         版本状态。 取值“CURRENT”，表示该版本为主推版本。 取值“SUPPORTED”，表示为老版本，但是现在还继续支持 取值“DEPRECATED”，表示为废弃版本，存在后续删除的可能。
 
@@ -133,7 +133,7 @@ class ApiVersion:
 
     @property
     def version(self):
-        """Gets the version of this ApiVersion.
+        r"""Gets the version of this ApiVersion.
 
         若该版本API支持微版本，则填支持的最大微版本号，如果不支持微版本，则填空
 
@@ -144,7 +144,7 @@ class ApiVersion:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApiVersion.
+        r"""Sets the version of this ApiVersion.
 
         若该版本API支持微版本，则填支持的最大微版本号，如果不支持微版本，则填空
 
@@ -155,7 +155,7 @@ class ApiVersion:
 
     @property
     def updated(self):
-        """Gets the updated of this ApiVersion.
+        r"""Gets the updated of this ApiVersion.
 
         版本更新时间。 格式为“yyyy-mm-dd Thh:mm:ssZ”。 其中，T指某个时间的开始；Z指UTC时间。
 
@@ -166,7 +166,7 @@ class ApiVersion:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ApiVersion.
+        r"""Sets the updated of this ApiVersion.
 
         版本更新时间。 格式为“yyyy-mm-dd Thh:mm:ssZ”。 其中，T指某个时间的开始；Z指UTC时间。
 

@@ -25,7 +25,7 @@ class ShowImageRequest:
     }
 
     def __init__(self, image_id=None):
-        """ShowImageRequest
+        r"""ShowImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowImageRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ShowImageRequest.
+        r"""Gets the image_id of this ShowImageRequest.
 
         镜像ID。
 
@@ -53,7 +53,7 @@ class ShowImageRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ShowImageRequest.
+        r"""Sets the image_id of this ShowImageRequest.
 
         镜像ID。
 

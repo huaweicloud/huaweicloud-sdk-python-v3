@@ -25,7 +25,7 @@ class CreateAutopilotClusterMasterSnapshotRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """CreateAutopilotClusterMasterSnapshotRequest
+        r"""CreateAutopilotClusterMasterSnapshotRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateAutopilotClusterMasterSnapshotRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateAutopilotClusterMasterSnapshotRequest.
+        r"""Gets the cluster_id of this CreateAutopilotClusterMasterSnapshotRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -53,7 +53,7 @@ class CreateAutopilotClusterMasterSnapshotRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateAutopilotClusterMasterSnapshotRequest.
+        r"""Sets the cluster_id of this CreateAutopilotClusterMasterSnapshotRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 

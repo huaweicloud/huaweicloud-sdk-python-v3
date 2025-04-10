@@ -95,7 +95,7 @@ class EndpointVO:
     }
 
     def __init__(self, id=None, obj_id=None, instance_name=None, db_type=None, db_user=None, db_password=None, manage_ip=None, traffic_ip=None, db_port=None, region=None, created_at=None, updated_at=None, ip=None, public_ip=None, az_code=None, security_group_id=None, subnet_id=None, vpc_id=None, volume_size=None, full_trans_user_pwd=None, increment_trans_user_pwd=None, ssl_link=None, ssl_cert_key=None, ssl_cert_name=None, ssl_cert_check_sum=None, ssl_cert_password=None, db_version=None, mongo_ha_mode=None, project_id=None, cluster_mode=None, instance_id=None, db_name=None, topic=None, safe_mode=None, kerberos_vo=None, multi_write_db_id=None):
-        """EndpointVO
+        r"""EndpointVO
 
         The model defined in huaweicloud sdk
 
@@ -288,7 +288,7 @@ class EndpointVO:
 
     @property
     def id(self):
-        """Gets the id of this EndpointVO.
+        r"""Gets the id of this EndpointVO.
 
         数据库id。
 
@@ -299,7 +299,7 @@ class EndpointVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EndpointVO.
+        r"""Sets the id of this EndpointVO.
 
         数据库id。
 
@@ -310,7 +310,7 @@ class EndpointVO:
 
     @property
     def obj_id(self):
-        """Gets the obj_id of this EndpointVO.
+        r"""Gets the obj_id of this EndpointVO.
 
         对象id。
 
@@ -321,7 +321,7 @@ class EndpointVO:
 
     @obj_id.setter
     def obj_id(self, obj_id):
-        """Sets the obj_id of this EndpointVO.
+        r"""Sets the obj_id of this EndpointVO.
 
         对象id。
 
@@ -332,7 +332,7 @@ class EndpointVO:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this EndpointVO.
+        r"""Gets the instance_name of this EndpointVO.
 
         RDS实例名称。
 
@@ -343,7 +343,7 @@ class EndpointVO:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this EndpointVO.
+        r"""Sets the instance_name of this EndpointVO.
 
         RDS实例名称。
 
@@ -354,7 +354,7 @@ class EndpointVO:
 
     @property
     def db_type(self):
-        """Gets the db_type of this EndpointVO.
+        r"""Gets the db_type of this EndpointVO.
 
         数据库类型
 
@@ -365,7 +365,7 @@ class EndpointVO:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this EndpointVO.
+        r"""Sets the db_type of this EndpointVO.
 
         数据库类型
 
@@ -376,7 +376,7 @@ class EndpointVO:
 
     @property
     def db_user(self):
-        """Gets the db_user of this EndpointVO.
+        r"""Gets the db_user of this EndpointVO.
 
         数据库用户。
 
@@ -387,7 +387,7 @@ class EndpointVO:
 
     @db_user.setter
     def db_user(self, db_user):
-        """Sets the db_user of this EndpointVO.
+        r"""Sets the db_user of this EndpointVO.
 
         数据库用户。
 
@@ -398,7 +398,7 @@ class EndpointVO:
 
     @property
     def db_password(self):
-        """Gets the db_password of this EndpointVO.
+        r"""Gets the db_password of this EndpointVO.
 
         数据库密码。
 
@@ -409,7 +409,7 @@ class EndpointVO:
 
     @db_password.setter
     def db_password(self, db_password):
-        """Sets the db_password of this EndpointVO.
+        r"""Sets the db_password of this EndpointVO.
 
         数据库密码。
 
@@ -420,7 +420,7 @@ class EndpointVO:
 
     @property
     def manage_ip(self):
-        """Gets the manage_ip of this EndpointVO.
+        r"""Gets the manage_ip of this EndpointVO.
 
         管理IP。
 
@@ -431,7 +431,7 @@ class EndpointVO:
 
     @manage_ip.setter
     def manage_ip(self, manage_ip):
-        """Sets the manage_ip of this EndpointVO.
+        r"""Sets the manage_ip of this EndpointVO.
 
         管理IP。
 
@@ -442,7 +442,7 @@ class EndpointVO:
 
     @property
     def traffic_ip(self):
-        """Gets the traffic_ip of this EndpointVO.
+        r"""Gets the traffic_ip of this EndpointVO.
 
         流量IP。
 
@@ -453,7 +453,7 @@ class EndpointVO:
 
     @traffic_ip.setter
     def traffic_ip(self, traffic_ip):
-        """Sets the traffic_ip of this EndpointVO.
+        r"""Sets the traffic_ip of this EndpointVO.
 
         流量IP。
 
@@ -464,7 +464,7 @@ class EndpointVO:
 
     @property
     def db_port(self):
-        """Gets the db_port of this EndpointVO.
+        r"""Gets the db_port of this EndpointVO.
 
         数据库端口。
 
@@ -475,7 +475,7 @@ class EndpointVO:
 
     @db_port.setter
     def db_port(self, db_port):
-        """Sets the db_port of this EndpointVO.
+        r"""Sets the db_port of this EndpointVO.
 
         数据库端口。
 
@@ -486,7 +486,7 @@ class EndpointVO:
 
     @property
     def region(self):
-        """Gets the region of this EndpointVO.
+        r"""Gets the region of this EndpointVO.
 
         RDS实例所在region。
 
@@ -497,7 +497,7 @@ class EndpointVO:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this EndpointVO.
+        r"""Sets the region of this EndpointVO.
 
         RDS实例所在region。
 
@@ -508,7 +508,7 @@ class EndpointVO:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EndpointVO.
+        r"""Gets the created_at of this EndpointVO.
 
         创建日期，格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -519,7 +519,7 @@ class EndpointVO:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EndpointVO.
+        r"""Sets the created_at of this EndpointVO.
 
         创建日期，格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -530,7 +530,7 @@ class EndpointVO:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EndpointVO.
+        r"""Gets the updated_at of this EndpointVO.
 
         修改日期，格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -541,7 +541,7 @@ class EndpointVO:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EndpointVO.
+        r"""Sets the updated_at of this EndpointVO.
 
         修改日期，格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -552,7 +552,7 @@ class EndpointVO:
 
     @property
     def ip(self):
-        """Gets the ip of this EndpointVO.
+        r"""Gets the ip of this EndpointVO.
 
         迁移实例所在的私有IP。
 
@@ -563,7 +563,7 @@ class EndpointVO:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this EndpointVO.
+        r"""Sets the ip of this EndpointVO.
 
         迁移实例所在的私有IP。
 
@@ -574,7 +574,7 @@ class EndpointVO:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this EndpointVO.
+        r"""Gets the public_ip of this EndpointVO.
 
         迁移实例所在的公网IP。
 
@@ -585,7 +585,7 @@ class EndpointVO:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this EndpointVO.
+        r"""Sets the public_ip of this EndpointVO.
 
         迁移实例所在的公网IP。
 
@@ -596,7 +596,7 @@ class EndpointVO:
 
     @property
     def az_code(self):
-        """Gets the az_code of this EndpointVO.
+        r"""Gets the az_code of this EndpointVO.
 
         可用区azCode。
 
@@ -607,7 +607,7 @@ class EndpointVO:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this EndpointVO.
+        r"""Sets the az_code of this EndpointVO.
 
         可用区azCode。
 
@@ -618,7 +618,7 @@ class EndpointVO:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this EndpointVO.
+        r"""Gets the security_group_id of this EndpointVO.
 
         源库所在的安全组id。
 
@@ -629,7 +629,7 @@ class EndpointVO:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this EndpointVO.
+        r"""Sets the security_group_id of this EndpointVO.
 
         源库所在的安全组id。
 
@@ -640,7 +640,7 @@ class EndpointVO:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this EndpointVO.
+        r"""Gets the subnet_id of this EndpointVO.
 
         源库所在的子网id。
 
@@ -651,7 +651,7 @@ class EndpointVO:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this EndpointVO.
+        r"""Sets the subnet_id of this EndpointVO.
 
         源库所在的子网id。
 
@@ -662,7 +662,7 @@ class EndpointVO:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this EndpointVO.
+        r"""Gets the vpc_id of this EndpointVO.
 
         源库所在的虚拟私有云id。
 
@@ -673,7 +673,7 @@ class EndpointVO:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this EndpointVO.
+        r"""Sets the vpc_id of this EndpointVO.
 
         源库所在的虚拟私有云id。
 
@@ -684,7 +684,7 @@ class EndpointVO:
 
     @property
     def volume_size(self):
-        """Gets the volume_size of this EndpointVO.
+        r"""Gets the volume_size of this EndpointVO.
 
         迁移实例的磁盘大小。
 
@@ -695,7 +695,7 @@ class EndpointVO:
 
     @volume_size.setter
     def volume_size(self, volume_size):
-        """Sets the volume_size of this EndpointVO.
+        r"""Sets the volume_size of this EndpointVO.
 
         迁移实例的磁盘大小。
 
@@ -706,7 +706,7 @@ class EndpointVO:
 
     @property
     def full_trans_user_pwd(self):
-        """Gets the full_trans_user_pwd of this EndpointVO.
+        r"""Gets the full_trans_user_pwd of this EndpointVO.
 
         全量迁移用户密码，密文。
 
@@ -717,7 +717,7 @@ class EndpointVO:
 
     @full_trans_user_pwd.setter
     def full_trans_user_pwd(self, full_trans_user_pwd):
-        """Sets the full_trans_user_pwd of this EndpointVO.
+        r"""Sets the full_trans_user_pwd of this EndpointVO.
 
         全量迁移用户密码，密文。
 
@@ -728,7 +728,7 @@ class EndpointVO:
 
     @property
     def increment_trans_user_pwd(self):
-        """Gets the increment_trans_user_pwd of this EndpointVO.
+        r"""Gets the increment_trans_user_pwd of this EndpointVO.
 
         增量迁移用户密码，密文。
 
@@ -739,7 +739,7 @@ class EndpointVO:
 
     @increment_trans_user_pwd.setter
     def increment_trans_user_pwd(self, increment_trans_user_pwd):
-        """Sets the increment_trans_user_pwd of this EndpointVO.
+        r"""Sets the increment_trans_user_pwd of this EndpointVO.
 
         增量迁移用户密码，密文。
 
@@ -750,7 +750,7 @@ class EndpointVO:
 
     @property
     def ssl_link(self):
-        """Gets the ssl_link of this EndpointVO.
+        r"""Gets the ssl_link of this EndpointVO.
 
         是否SSL安全连接。
 
@@ -761,7 +761,7 @@ class EndpointVO:
 
     @ssl_link.setter
     def ssl_link(self, ssl_link):
-        """Sets the ssl_link of this EndpointVO.
+        r"""Sets the ssl_link of this EndpointVO.
 
         是否SSL安全连接。
 
@@ -772,7 +772,7 @@ class EndpointVO:
 
     @property
     def ssl_cert_key(self):
-        """Gets the ssl_cert_key of this EndpointVO.
+        r"""Gets the ssl_cert_key of this EndpointVO.
 
         SSL证书内容。
 
@@ -783,7 +783,7 @@ class EndpointVO:
 
     @ssl_cert_key.setter
     def ssl_cert_key(self, ssl_cert_key):
-        """Sets the ssl_cert_key of this EndpointVO.
+        r"""Sets the ssl_cert_key of this EndpointVO.
 
         SSL证书内容。
 
@@ -794,7 +794,7 @@ class EndpointVO:
 
     @property
     def ssl_cert_name(self):
-        """Gets the ssl_cert_name of this EndpointVO.
+        r"""Gets the ssl_cert_name of this EndpointVO.
 
         SSL证书名字。
 
@@ -805,7 +805,7 @@ class EndpointVO:
 
     @ssl_cert_name.setter
     def ssl_cert_name(self, ssl_cert_name):
-        """Sets the ssl_cert_name of this EndpointVO.
+        r"""Sets the ssl_cert_name of this EndpointVO.
 
         SSL证书名字。
 
@@ -816,7 +816,7 @@ class EndpointVO:
 
     @property
     def ssl_cert_check_sum(self):
-        """Gets the ssl_cert_check_sum of this EndpointVO.
+        r"""Gets the ssl_cert_check_sum of this EndpointVO.
 
         SSL证书内容checksum值。
 
@@ -827,7 +827,7 @@ class EndpointVO:
 
     @ssl_cert_check_sum.setter
     def ssl_cert_check_sum(self, ssl_cert_check_sum):
-        """Sets the ssl_cert_check_sum of this EndpointVO.
+        r"""Sets the ssl_cert_check_sum of this EndpointVO.
 
         SSL证书内容checksum值。
 
@@ -838,7 +838,7 @@ class EndpointVO:
 
     @property
     def ssl_cert_password(self):
-        """Gets the ssl_cert_password of this EndpointVO.
+        r"""Gets the ssl_cert_password of this EndpointVO.
 
         SSL证书密码，密文。
 
@@ -849,7 +849,7 @@ class EndpointVO:
 
     @ssl_cert_password.setter
     def ssl_cert_password(self, ssl_cert_password):
-        """Sets the ssl_cert_password of this EndpointVO.
+        r"""Sets the ssl_cert_password of this EndpointVO.
 
         SSL证书密码，密文。
 
@@ -860,7 +860,7 @@ class EndpointVO:
 
     @property
     def db_version(self):
-        """Gets the db_version of this EndpointVO.
+        r"""Gets the db_version of this EndpointVO.
 
         数据库版本。
 
@@ -871,7 +871,7 @@ class EndpointVO:
 
     @db_version.setter
     def db_version(self, db_version):
-        """Sets the db_version of this EndpointVO.
+        r"""Sets the db_version of this EndpointVO.
 
         数据库版本。
 
@@ -882,7 +882,7 @@ class EndpointVO:
 
     @property
     def mongo_ha_mode(self):
-        """Gets the mongo_ha_mode of this EndpointVO.
+        r"""Gets the mongo_ha_mode of this EndpointVO.
 
         mongoHa模式。 - Sharding 集群 - ReplicaSet 副本集 - ReplicaSingle 单节点
 
@@ -893,7 +893,7 @@ class EndpointVO:
 
     @mongo_ha_mode.setter
     def mongo_ha_mode(self, mongo_ha_mode):
-        """Sets the mongo_ha_mode of this EndpointVO.
+        r"""Sets the mongo_ha_mode of this EndpointVO.
 
         mongoHa模式。 - Sharding 集群 - ReplicaSet 副本集 - ReplicaSingle 单节点
 
@@ -904,7 +904,7 @@ class EndpointVO:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EndpointVO.
+        r"""Gets the project_id of this EndpointVO.
 
         RDS实例projectId。
 
@@ -915,7 +915,7 @@ class EndpointVO:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EndpointVO.
+        r"""Sets the project_id of this EndpointVO.
 
         RDS实例projectId。
 
@@ -926,7 +926,7 @@ class EndpointVO:
 
     @property
     def cluster_mode(self):
-        """Gets the cluster_mode of this EndpointVO.
+        r"""Gets the cluster_mode of this EndpointVO.
 
         集群模式。 - Single：单节点RDS - Ha：主备RDS - GR：金融版RDS - Sharding：mongodb 集群或DDM的模式，均默认为分片 - Sharding4.0+：mongodb 集群版本4.0+，默认为不分片 - ReplicaSet：mongodb 副本集,Replica RDS只读副本 - ReplicaSingle：mongodb 单节点 - Cluster：集群 - Independent：gaussdbv5 independent模式 - Combined：gaussdbv5 Combined模式 - Distributed ：分布式taurus - NoSharding：非集群模式
 
@@ -937,7 +937,7 @@ class EndpointVO:
 
     @cluster_mode.setter
     def cluster_mode(self, cluster_mode):
-        """Sets the cluster_mode of this EndpointVO.
+        r"""Sets the cluster_mode of this EndpointVO.
 
         集群模式。 - Single：单节点RDS - Ha：主备RDS - GR：金融版RDS - Sharding：mongodb 集群或DDM的模式，均默认为分片 - Sharding4.0+：mongodb 集群版本4.0+，默认为不分片 - ReplicaSet：mongodb 副本集,Replica RDS只读副本 - ReplicaSingle：mongodb 单节点 - Cluster：集群 - Independent：gaussdbv5 independent模式 - Combined：gaussdbv5 Combined模式 - Distributed ：分布式taurus - NoSharding：非集群模式
 
@@ -948,7 +948,7 @@ class EndpointVO:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this EndpointVO.
+        r"""Gets the instance_id of this EndpointVO.
 
         RDS实例id。
 
@@ -959,7 +959,7 @@ class EndpointVO:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this EndpointVO.
+        r"""Sets the instance_id of this EndpointVO.
 
         RDS实例id。
 
@@ -970,7 +970,7 @@ class EndpointVO:
 
     @property
     def db_name(self):
-        """Gets the db_name of this EndpointVO.
+        r"""Gets the db_name of this EndpointVO.
 
         Oracle服务名serviceName。
 
@@ -981,7 +981,7 @@ class EndpointVO:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this EndpointVO.
+        r"""Sets the db_name of this EndpointVO.
 
         Oracle服务名serviceName。
 
@@ -992,7 +992,7 @@ class EndpointVO:
 
     @property
     def topic(self):
-        """Gets the topic of this EndpointVO.
+        r"""Gets the topic of this EndpointVO.
 
         mrskafka topic名称。
 
@@ -1003,7 +1003,7 @@ class EndpointVO:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this EndpointVO.
+        r"""Sets the topic of this EndpointVO.
 
         mrskafka topic名称。
 
@@ -1014,7 +1014,7 @@ class EndpointVO:
 
     @property
     def safe_mode(self):
-        """Gets the safe_mode of this EndpointVO.
+        r"""Gets the safe_mode of this EndpointVO.
 
         MRSkafka是否开启kerberos认证 - 0非安全认证 - 1安全认证
 
@@ -1025,7 +1025,7 @@ class EndpointVO:
 
     @safe_mode.setter
     def safe_mode(self, safe_mode):
-        """Sets the safe_mode of this EndpointVO.
+        r"""Sets the safe_mode of this EndpointVO.
 
         MRSkafka是否开启kerberos认证 - 0非安全认证 - 1安全认证
 
@@ -1036,7 +1036,7 @@ class EndpointVO:
 
     @property
     def kerberos_vo(self):
-        """Gets the kerberos_vo of this EndpointVO.
+        r"""Gets the kerberos_vo of this EndpointVO.
 
         :return: The kerberos_vo of this EndpointVO.
         :rtype: :class:`huaweicloudsdkdrs.v3.KerberosVO`
@@ -1045,7 +1045,7 @@ class EndpointVO:
 
     @kerberos_vo.setter
     def kerberos_vo(self, kerberos_vo):
-        """Sets the kerberos_vo of this EndpointVO.
+        r"""Sets the kerberos_vo of this EndpointVO.
 
         :param kerberos_vo: The kerberos_vo of this EndpointVO.
         :type kerberos_vo: :class:`huaweicloudsdkdrs.v3.KerberosVO`
@@ -1054,7 +1054,7 @@ class EndpointVO:
 
     @property
     def multi_write_db_id(self):
-        """Gets the multi_write_db_id of this EndpointVO.
+        r"""Gets the multi_write_db_id of this EndpointVO.
 
         多写数据库Id。
 
@@ -1065,7 +1065,7 @@ class EndpointVO:
 
     @multi_write_db_id.setter
     def multi_write_db_id(self, multi_write_db_id):
-        """Sets the multi_write_db_id of this EndpointVO.
+        r"""Sets the multi_write_db_id of this EndpointVO.
 
         多写数据库Id。
 

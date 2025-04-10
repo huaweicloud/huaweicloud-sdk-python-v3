@@ -27,7 +27,7 @@ class TopicAssignment:
     }
 
     def __init__(self, partition=None, partition_brokers=None):
-        """TopicAssignment
+        r"""TopicAssignment
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TopicAssignment:
 
     @property
     def partition(self):
-        """Gets the partition of this TopicAssignment.
+        r"""Gets the partition of this TopicAssignment.
 
         手动指定分配方案时的分区号。
 
@@ -61,7 +61,7 @@ class TopicAssignment:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this TopicAssignment.
+        r"""Sets the partition of this TopicAssignment.
 
         手动指定分配方案时的分区号。
 
@@ -72,7 +72,7 @@ class TopicAssignment:
 
     @property
     def partition_brokers(self):
-        """Gets the partition_brokers of this TopicAssignment.
+        r"""Gets the partition_brokers of this TopicAssignment.
 
         手动指定某个分区将要分配的broker列表
 
@@ -83,7 +83,7 @@ class TopicAssignment:
 
     @partition_brokers.setter
     def partition_brokers(self, partition_brokers):
-        """Sets the partition_brokers of this TopicAssignment.
+        r"""Sets the partition_brokers of this TopicAssignment.
 
         手动指定某个分区将要分配的broker列表
 

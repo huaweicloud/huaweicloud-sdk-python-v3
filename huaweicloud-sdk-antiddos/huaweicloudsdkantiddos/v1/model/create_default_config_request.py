@@ -25,7 +25,7 @@ class CreateDefaultConfigRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDefaultConfigRequest
+        r"""CreateDefaultConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDefaultConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDefaultConfigRequest.
+        r"""Gets the body of this CreateDefaultConfigRequest.
 
         :return: The body of this CreateDefaultConfigRequest.
         :rtype: :class:`huaweicloudsdkantiddos.v1.DdosConfig`
@@ -52,7 +52,7 @@ class CreateDefaultConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDefaultConfigRequest.
+        r"""Sets the body of this CreateDefaultConfigRequest.
 
         :param body: The body of this CreateDefaultConfigRequest.
         :type body: :class:`huaweicloudsdkantiddos.v1.DdosConfig`

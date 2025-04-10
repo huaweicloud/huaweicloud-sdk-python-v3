@@ -27,7 +27,7 @@ class DomainMigrate:
     }
 
     def __init__(self, all_regions=None, reservation=None):
-        """DomainMigrate
+        r"""DomainMigrate
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DomainMigrate:
 
     @property
     def all_regions(self):
-        """Gets the all_regions of this DomainMigrate.
+        r"""Gets the all_regions of this DomainMigrate.
 
         是否触发其他区域迁移
 
@@ -59,7 +59,7 @@ class DomainMigrate:
 
     @all_regions.setter
     def all_regions(self, all_regions):
-        """Sets the all_regions of this DomainMigrate.
+        r"""Sets the all_regions of this DomainMigrate.
 
         是否触发其他区域迁移
 
@@ -70,7 +70,7 @@ class DomainMigrate:
 
     @property
     def reservation(self):
-        """Gets the reservation of this DomainMigrate.
+        r"""Gets the reservation of this DomainMigrate.
 
         存储库默认扩容比，取值范围0到1
 
@@ -81,7 +81,7 @@ class DomainMigrate:
 
     @reservation.setter
     def reservation(self, reservation):
-        """Sets the reservation of this DomainMigrate.
+        r"""Sets the reservation of this DomainMigrate.
 
         存储库默认扩容比，取值范围0到1
 

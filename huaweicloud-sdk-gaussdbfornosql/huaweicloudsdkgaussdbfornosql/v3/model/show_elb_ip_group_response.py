@@ -30,7 +30,7 @@ class ShowElbIpGroupResponse(SdkResponse):
     }
 
     def __init__(self, type=None, ip_groups=None, enabled=None):
-        """ShowElbIpGroupResponse
+        r"""ShowElbIpGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowElbIpGroupResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowElbIpGroupResponse.
+        r"""Gets the type of this ShowElbIpGroupResponse.
 
         类型选项，取值： - whiteList：白名单，只允许指定ip或网段访问。 - blackList：黑名单，不允许指定ip或网段访问。
 
@@ -69,7 +69,7 @@ class ShowElbIpGroupResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowElbIpGroupResponse.
+        r"""Sets the type of this ShowElbIpGroupResponse.
 
         类型选项，取值： - whiteList：白名单，只允许指定ip或网段访问。 - blackList：黑名单，不允许指定ip或网段访问。
 
@@ -80,7 +80,7 @@ class ShowElbIpGroupResponse(SdkResponse):
 
     @property
     def ip_groups(self):
-        """Gets the ip_groups of this ShowElbIpGroupResponse.
+        r"""Gets the ip_groups of this ShowElbIpGroupResponse.
 
         IP地址组中包含的IP或网段列表。
 
@@ -91,7 +91,7 @@ class ShowElbIpGroupResponse(SdkResponse):
 
     @ip_groups.setter
     def ip_groups(self, ip_groups):
-        """Sets the ip_groups of this ShowElbIpGroupResponse.
+        r"""Sets the ip_groups of this ShowElbIpGroupResponse.
 
         IP地址组中包含的IP或网段列表。
 
@@ -102,7 +102,7 @@ class ShowElbIpGroupResponse(SdkResponse):
 
     @property
     def enabled(self):
-        """Gets the enabled of this ShowElbIpGroupResponse.
+        r"""Gets the enabled of this ShowElbIpGroupResponse.
 
         true：开启，false：关闭。
 
@@ -113,7 +113,7 @@ class ShowElbIpGroupResponse(SdkResponse):
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ShowElbIpGroupResponse.
+        r"""Sets the enabled of this ShowElbIpGroupResponse.
 
         true：开启，false：关闭。
 

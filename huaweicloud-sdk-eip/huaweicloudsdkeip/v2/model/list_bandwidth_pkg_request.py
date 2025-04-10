@@ -29,7 +29,7 @@ class ListBandwidthPkgRequest:
     }
 
     def __init__(self, limit=None, marker=None, offset=None):
-        """ListBandwidthPkgRequest
+        r"""ListBandwidthPkgRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListBandwidthPkgRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBandwidthPkgRequest.
+        r"""Gets the limit of this ListBandwidthPkgRequest.
 
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -68,7 +68,7 @@ class ListBandwidthPkgRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBandwidthPkgRequest.
+        r"""Sets the limit of this ListBandwidthPkgRequest.
 
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -79,7 +79,7 @@ class ListBandwidthPkgRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListBandwidthPkgRequest.
+        r"""Gets the marker of this ListBandwidthPkgRequest.
 
         分页查询起始的资源ID，为空时为查询第一页
 
@@ -90,7 +90,7 @@ class ListBandwidthPkgRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListBandwidthPkgRequest.
+        r"""Sets the marker of this ListBandwidthPkgRequest.
 
         分页查询起始的资源ID，为空时为查询第一页
 
@@ -101,7 +101,7 @@ class ListBandwidthPkgRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBandwidthPkgRequest.
+        r"""Gets the offset of this ListBandwidthPkgRequest.
 
         分页查询起始的资源序号
 
@@ -112,7 +112,7 @@ class ListBandwidthPkgRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBandwidthPkgRequest.
+        r"""Sets the offset of this ListBandwidthPkgRequest.
 
         分页查询起始的资源序号
 

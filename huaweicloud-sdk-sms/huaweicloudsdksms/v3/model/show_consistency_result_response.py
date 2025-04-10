@@ -28,7 +28,7 @@ class ShowConsistencyResultResponse(SdkResponse):
     }
 
     def __init__(self, result_list=None, task_id=None):
-        """ShowConsistencyResultResponse
+        r"""ShowConsistencyResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowConsistencyResultResponse(SdkResponse):
 
     @property
     def result_list(self):
-        """Gets the result_list of this ShowConsistencyResultResponse.
+        r"""Gets the result_list of this ShowConsistencyResultResponse.
 
         一致性校验结果列表
 
@@ -62,7 +62,7 @@ class ShowConsistencyResultResponse(SdkResponse):
 
     @result_list.setter
     def result_list(self, result_list):
-        """Sets the result_list of this ShowConsistencyResultResponse.
+        r"""Sets the result_list of this ShowConsistencyResultResponse.
 
         一致性校验结果列表
 
@@ -73,7 +73,7 @@ class ShowConsistencyResultResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowConsistencyResultResponse.
+        r"""Gets the task_id of this ShowConsistencyResultResponse.
 
         任务id
 
@@ -84,7 +84,7 @@ class ShowConsistencyResultResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowConsistencyResultResponse.
+        r"""Sets the task_id of this ShowConsistencyResultResponse.
 
         任务id
 

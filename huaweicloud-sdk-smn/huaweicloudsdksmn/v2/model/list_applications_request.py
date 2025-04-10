@@ -31,7 +31,7 @@ class ListApplicationsRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None, platform=None):
-        """ListApplicationsRequest
+        r"""ListApplicationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListApplicationsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListApplicationsRequest.
+        r"""Gets the offset of this ListApplicationsRequest.
 
         偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
@@ -75,7 +75,7 @@ class ListApplicationsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListApplicationsRequest.
+        r"""Sets the offset of this ListApplicationsRequest.
 
         偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
@@ -86,7 +86,7 @@ class ListApplicationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApplicationsRequest.
+        r"""Gets the limit of this ListApplicationsRequest.
 
         查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
@@ -97,7 +97,7 @@ class ListApplicationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApplicationsRequest.
+        r"""Sets the limit of this ListApplicationsRequest.
 
         查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
@@ -108,7 +108,7 @@ class ListApplicationsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListApplicationsRequest.
+        r"""Gets the name of this ListApplicationsRequest.
 
         检索应用名称。  支持后向模糊匹配，长度不得超过64个字符，只能包含英文字母、下划线和数字。
 
@@ -119,7 +119,7 @@ class ListApplicationsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListApplicationsRequest.
+        r"""Sets the name of this ListApplicationsRequest.
 
         检索应用名称。  支持后向模糊匹配，长度不得超过64个字符，只能包含英文字母、下划线和数字。
 
@@ -130,7 +130,7 @@ class ListApplicationsRequest:
 
     @property
     def platform(self):
-        """Gets the platform of this ListApplicationsRequest.
+        r"""Gets the platform of this ListApplicationsRequest.
 
         应用平台。  目前仅支持HMS、APNS、APNS_SANDBOX。  HMS是为开发者提供的消息推送平台。  APNS和APNS_SANDBOX是用于推送iOS消息的服务平台。
 
@@ -141,7 +141,7 @@ class ListApplicationsRequest:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this ListApplicationsRequest.
+        r"""Sets the platform of this ListApplicationsRequest.
 
         应用平台。  目前仅支持HMS、APNS、APNS_SANDBOX。  HMS是为开发者提供的消息推送平台。  APNS和APNS_SANDBOX是用于推送iOS消息的服务平台。
 

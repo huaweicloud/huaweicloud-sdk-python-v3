@@ -47,7 +47,7 @@ class ListAppChangeHistoriesRequest:
     }
 
     def __init__(self, host_id=None, host_ip=None, host_name=None, app_name=None, variation_type=None, enterprise_project_id=None, sort_key=None, sort_dir=None, limit=None, offset=None, start_time=None, end_time=None):
-        """ListAppChangeHistoriesRequest
+        r"""ListAppChangeHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListAppChangeHistoriesRequest:
         :type app_name: str
         :param variation_type: 变更类型:   - add ：新建   - delete ：删除   - modify ：修改
         :type variation_type: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param sort_key: 排序的key值，目前只支持按照recent_scan_time排序，按照recent_scan_time排序时，根据sort_dir的值决定升序还是降序
         :type sort_key: str
@@ -120,7 +120,7 @@ class ListAppChangeHistoriesRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListAppChangeHistoriesRequest.
+        r"""Gets the host_id of this ListAppChangeHistoriesRequest.
 
         主机id
 
@@ -131,7 +131,7 @@ class ListAppChangeHistoriesRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListAppChangeHistoriesRequest.
+        r"""Sets the host_id of this ListAppChangeHistoriesRequest.
 
         主机id
 
@@ -142,7 +142,7 @@ class ListAppChangeHistoriesRequest:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this ListAppChangeHistoriesRequest.
+        r"""Gets the host_ip of this ListAppChangeHistoriesRequest.
 
         主机ip
 
@@ -153,7 +153,7 @@ class ListAppChangeHistoriesRequest:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this ListAppChangeHistoriesRequest.
+        r"""Sets the host_ip of this ListAppChangeHistoriesRequest.
 
         主机ip
 
@@ -164,7 +164,7 @@ class ListAppChangeHistoriesRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListAppChangeHistoriesRequest.
+        r"""Gets the host_name of this ListAppChangeHistoriesRequest.
 
         主机名称
 
@@ -175,7 +175,7 @@ class ListAppChangeHistoriesRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListAppChangeHistoriesRequest.
+        r"""Sets the host_name of this ListAppChangeHistoriesRequest.
 
         主机名称
 
@@ -186,7 +186,7 @@ class ListAppChangeHistoriesRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListAppChangeHistoriesRequest.
+        r"""Gets the app_name of this ListAppChangeHistoriesRequest.
 
         软件名称
 
@@ -197,7 +197,7 @@ class ListAppChangeHistoriesRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListAppChangeHistoriesRequest.
+        r"""Sets the app_name of this ListAppChangeHistoriesRequest.
 
         软件名称
 
@@ -208,7 +208,7 @@ class ListAppChangeHistoriesRequest:
 
     @property
     def variation_type(self):
-        """Gets the variation_type of this ListAppChangeHistoriesRequest.
+        r"""Gets the variation_type of this ListAppChangeHistoriesRequest.
 
         变更类型:   - add ：新建   - delete ：删除   - modify ：修改
 
@@ -219,7 +219,7 @@ class ListAppChangeHistoriesRequest:
 
     @variation_type.setter
     def variation_type(self, variation_type):
-        """Sets the variation_type of this ListAppChangeHistoriesRequest.
+        r"""Sets the variation_type of this ListAppChangeHistoriesRequest.
 
         变更类型:   - add ：新建   - delete ：删除   - modify ：修改
 
@@ -230,9 +230,9 @@ class ListAppChangeHistoriesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAppChangeHistoriesRequest.
+        r"""Gets the enterprise_project_id of this ListAppChangeHistoriesRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListAppChangeHistoriesRequest.
         :rtype: str
@@ -241,9 +241,9 @@ class ListAppChangeHistoriesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAppChangeHistoriesRequest.
+        r"""Sets the enterprise_project_id of this ListAppChangeHistoriesRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListAppChangeHistoriesRequest.
         :type enterprise_project_id: str
@@ -252,7 +252,7 @@ class ListAppChangeHistoriesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListAppChangeHistoriesRequest.
+        r"""Gets the sort_key of this ListAppChangeHistoriesRequest.
 
         排序的key值，目前只支持按照recent_scan_time排序，按照recent_scan_time排序时，根据sort_dir的值决定升序还是降序
 
@@ -263,7 +263,7 @@ class ListAppChangeHistoriesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListAppChangeHistoriesRequest.
+        r"""Sets the sort_key of this ListAppChangeHistoriesRequest.
 
         排序的key值，目前只支持按照recent_scan_time排序，按照recent_scan_time排序时，根据sort_dir的值决定升序还是降序
 
@@ -274,7 +274,7 @@ class ListAppChangeHistoriesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListAppChangeHistoriesRequest.
+        r"""Gets the sort_dir of this ListAppChangeHistoriesRequest.
 
         排序方式，默认为降序，当sort_key为按照recent_scan_time排序时，根据当前值决定升序还是降序，当sort_key为其他值时均为降序   - asc ：升序   - desc ：降序
 
@@ -285,7 +285,7 @@ class ListAppChangeHistoriesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListAppChangeHistoriesRequest.
+        r"""Sets the sort_dir of this ListAppChangeHistoriesRequest.
 
         排序方式，默认为降序，当sort_key为按照recent_scan_time排序时，根据当前值决定升序还是降序，当sort_key为其他值时均为降序   - asc ：升序   - desc ：降序
 
@@ -296,7 +296,7 @@ class ListAppChangeHistoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppChangeHistoriesRequest.
+        r"""Gets the limit of this ListAppChangeHistoriesRequest.
 
         每页显示数量
 
@@ -307,7 +307,7 @@ class ListAppChangeHistoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppChangeHistoriesRequest.
+        r"""Sets the limit of this ListAppChangeHistoriesRequest.
 
         每页显示数量
 
@@ -318,7 +318,7 @@ class ListAppChangeHistoriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppChangeHistoriesRequest.
+        r"""Gets the offset of this ListAppChangeHistoriesRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -329,7 +329,7 @@ class ListAppChangeHistoriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppChangeHistoriesRequest.
+        r"""Sets the offset of this ListAppChangeHistoriesRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -340,7 +340,7 @@ class ListAppChangeHistoriesRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListAppChangeHistoriesRequest.
+        r"""Gets the start_time of this ListAppChangeHistoriesRequest.
 
         变更开始时间，13位时间戳
 
@@ -351,7 +351,7 @@ class ListAppChangeHistoriesRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListAppChangeHistoriesRequest.
+        r"""Sets the start_time of this ListAppChangeHistoriesRequest.
 
         变更开始时间，13位时间戳
 
@@ -362,7 +362,7 @@ class ListAppChangeHistoriesRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAppChangeHistoriesRequest.
+        r"""Gets the end_time of this ListAppChangeHistoriesRequest.
 
         变更结束时间，13位时间戳
 
@@ -373,7 +373,7 @@ class ListAppChangeHistoriesRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAppChangeHistoriesRequest.
+        r"""Sets the end_time of this ListAppChangeHistoriesRequest.
 
         变更结束时间，13位时间戳
 

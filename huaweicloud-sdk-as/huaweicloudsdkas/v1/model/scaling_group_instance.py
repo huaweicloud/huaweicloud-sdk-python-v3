@@ -43,7 +43,7 @@ class ScalingGroupInstance:
     }
 
     def __init__(self, instance_id=None, instance_name=None, scaling_group_id=None, scaling_group_name=None, life_cycle_state=None, health_status=None, scaling_configuration_name=None, scaling_configuration_id=None, create_time=None, protect_from_scaling_down=None):
-        """ScalingGroupInstance
+        r"""ScalingGroupInstance
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ScalingGroupInstance:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ScalingGroupInstance.
+        r"""Gets the instance_id of this ScalingGroupInstance.
 
         实例ID。
 
@@ -117,7 +117,7 @@ class ScalingGroupInstance:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ScalingGroupInstance.
+        r"""Sets the instance_id of this ScalingGroupInstance.
 
         实例ID。
 
@@ -128,7 +128,7 @@ class ScalingGroupInstance:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ScalingGroupInstance.
+        r"""Gets the instance_name of this ScalingGroupInstance.
 
         实例名称。
 
@@ -139,7 +139,7 @@ class ScalingGroupInstance:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ScalingGroupInstance.
+        r"""Sets the instance_name of this ScalingGroupInstance.
 
         实例名称。
 
@@ -150,7 +150,7 @@ class ScalingGroupInstance:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this ScalingGroupInstance.
+        r"""Gets the scaling_group_id of this ScalingGroupInstance.
 
         实例所在伸缩组ID。
 
@@ -161,7 +161,7 @@ class ScalingGroupInstance:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this ScalingGroupInstance.
+        r"""Sets the scaling_group_id of this ScalingGroupInstance.
 
         实例所在伸缩组ID。
 
@@ -172,7 +172,7 @@ class ScalingGroupInstance:
 
     @property
     def scaling_group_name(self):
-        """Gets the scaling_group_name of this ScalingGroupInstance.
+        r"""Gets the scaling_group_name of this ScalingGroupInstance.
 
         实例所在伸缩组名称。
 
@@ -183,7 +183,7 @@ class ScalingGroupInstance:
 
     @scaling_group_name.setter
     def scaling_group_name(self, scaling_group_name):
-        """Sets the scaling_group_name of this ScalingGroupInstance.
+        r"""Sets the scaling_group_name of this ScalingGroupInstance.
 
         实例所在伸缩组名称。
 
@@ -194,7 +194,7 @@ class ScalingGroupInstance:
 
     @property
     def life_cycle_state(self):
-        """Gets the life_cycle_state of this ScalingGroupInstance.
+        r"""Gets the life_cycle_state of this ScalingGroupInstance.
 
         实例在伸缩组中的生命周期状态：  - INSERVICE：已启用 - PENDING：正在加入伸缩组 - PENDING_WAIT：等待（正在加入伸缩组） - REMOVING：正在移出伸缩组 - REMOVING_WAIT：等待（正在移出伸缩组） - STANDBY：已备用 - ENTERING_STANDBY：进入备用状态
 
@@ -205,7 +205,7 @@ class ScalingGroupInstance:
 
     @life_cycle_state.setter
     def life_cycle_state(self, life_cycle_state):
-        """Sets the life_cycle_state of this ScalingGroupInstance.
+        r"""Sets the life_cycle_state of this ScalingGroupInstance.
 
         实例在伸缩组中的生命周期状态：  - INSERVICE：已启用 - PENDING：正在加入伸缩组 - PENDING_WAIT：等待（正在加入伸缩组） - REMOVING：正在移出伸缩组 - REMOVING_WAIT：等待（正在移出伸缩组） - STANDBY：已备用 - ENTERING_STANDBY：进入备用状态
 
@@ -216,7 +216,7 @@ class ScalingGroupInstance:
 
     @property
     def health_status(self):
-        """Gets the health_status of this ScalingGroupInstance.
+        r"""Gets the health_status of this ScalingGroupInstance.
 
         实例健康状态:INITAILIZING:初始化；NORMAL：正常；ERROR：错误。
 
@@ -227,7 +227,7 @@ class ScalingGroupInstance:
 
     @health_status.setter
     def health_status(self, health_status):
-        """Sets the health_status of this ScalingGroupInstance.
+        r"""Sets the health_status of this ScalingGroupInstance.
 
         实例健康状态:INITAILIZING:初始化；NORMAL：正常；ERROR：错误。
 
@@ -238,7 +238,7 @@ class ScalingGroupInstance:
 
     @property
     def scaling_configuration_name(self):
-        """Gets the scaling_configuration_name of this ScalingGroupInstance.
+        r"""Gets the scaling_configuration_name of this ScalingGroupInstance.
 
         伸缩配置名称。如果返回为空，表示伸缩配置已经被删除。如果返回MANNUAL_ADD，表示实例为手动加入。
 
@@ -249,7 +249,7 @@ class ScalingGroupInstance:
 
     @scaling_configuration_name.setter
     def scaling_configuration_name(self, scaling_configuration_name):
-        """Sets the scaling_configuration_name of this ScalingGroupInstance.
+        r"""Sets the scaling_configuration_name of this ScalingGroupInstance.
 
         伸缩配置名称。如果返回为空，表示伸缩配置已经被删除。如果返回MANNUAL_ADD，表示实例为手动加入。
 
@@ -260,7 +260,7 @@ class ScalingGroupInstance:
 
     @property
     def scaling_configuration_id(self):
-        """Gets the scaling_configuration_id of this ScalingGroupInstance.
+        r"""Gets the scaling_configuration_id of this ScalingGroupInstance.
 
         伸缩配置ID。
 
@@ -271,7 +271,7 @@ class ScalingGroupInstance:
 
     @scaling_configuration_id.setter
     def scaling_configuration_id(self, scaling_configuration_id):
-        """Sets the scaling_configuration_id of this ScalingGroupInstance.
+        r"""Sets the scaling_configuration_id of this ScalingGroupInstance.
 
         伸缩配置ID。
 
@@ -282,7 +282,7 @@ class ScalingGroupInstance:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ScalingGroupInstance.
+        r"""Gets the create_time of this ScalingGroupInstance.
 
         实例加入伸缩组的时间，遵循UTC时间。
 
@@ -293,7 +293,7 @@ class ScalingGroupInstance:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ScalingGroupInstance.
+        r"""Sets the create_time of this ScalingGroupInstance.
 
         实例加入伸缩组的时间，遵循UTC时间。
 
@@ -304,7 +304,7 @@ class ScalingGroupInstance:
 
     @property
     def protect_from_scaling_down(self):
-        """Gets the protect_from_scaling_down of this ScalingGroupInstance.
+        r"""Gets the protect_from_scaling_down of this ScalingGroupInstance.
 
         实例的实例保护属性。
 
@@ -315,7 +315,7 @@ class ScalingGroupInstance:
 
     @protect_from_scaling_down.setter
     def protect_from_scaling_down(self, protect_from_scaling_down):
-        """Sets the protect_from_scaling_down of this ScalingGroupInstance.
+        r"""Sets the protect_from_scaling_down of this ScalingGroupInstance.
 
         实例的实例保护属性。
 

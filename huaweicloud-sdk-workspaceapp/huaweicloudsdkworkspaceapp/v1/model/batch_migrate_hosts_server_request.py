@@ -25,7 +25,7 @@ class BatchMigrateHostsServerRequest:
     }
 
     def __init__(self, body=None):
-        """BatchMigrateHostsServerRequest
+        r"""BatchMigrateHostsServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchMigrateHostsServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchMigrateHostsServerRequest.
+        r"""Gets the body of this BatchMigrateHostsServerRequest.
 
         :return: The body of this BatchMigrateHostsServerRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchMigrateServerReq`
@@ -52,7 +52,7 @@ class BatchMigrateHostsServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchMigrateHostsServerRequest.
+        r"""Sets the body of this BatchMigrateHostsServerRequest.
 
         :param body: The body of this BatchMigrateHostsServerRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.BatchMigrateServerReq`

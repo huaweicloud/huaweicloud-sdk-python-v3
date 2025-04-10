@@ -26,7 +26,7 @@ class ListResizeFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, flavors=None):
-        """ListResizeFlavorsResponse
+        r"""ListResizeFlavorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListResizeFlavorsResponse(SdkResponse):
 
     @property
     def flavors(self):
-        """Gets the flavors of this ListResizeFlavorsResponse.
+        r"""Gets the flavors of this ListResizeFlavorsResponse.
 
         云服务器规格列表。
 
@@ -55,7 +55,7 @@ class ListResizeFlavorsResponse(SdkResponse):
 
     @flavors.setter
     def flavors(self, flavors):
-        """Sets the flavors of this ListResizeFlavorsResponse.
+        r"""Sets the flavors of this ListResizeFlavorsResponse.
 
         云服务器规格列表。
 

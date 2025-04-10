@@ -27,7 +27,7 @@ class CreateConfigurationRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateConfigurationRequest
+        r"""CreateConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateConfigurationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateConfigurationRequest.
+        r"""Gets the x_language of this CreateConfigurationRequest.
 
         语言
 
@@ -61,7 +61,7 @@ class CreateConfigurationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateConfigurationRequest.
+        r"""Sets the x_language of this CreateConfigurationRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class CreateConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConfigurationRequest.
+        r"""Gets the body of this CreateConfigurationRequest.
 
         :return: The body of this CreateConfigurationRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ConfigurationForCreation`
@@ -81,7 +81,7 @@ class CreateConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConfigurationRequest.
+        r"""Sets the body of this CreateConfigurationRequest.
 
         :param body: The body of this CreateConfigurationRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ConfigurationForCreation`

@@ -33,7 +33,7 @@ class ListPartitionNamesWithoutLimitRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name=None, limit=None):
-        """ListPartitionNamesWithoutLimitRequest
+        r"""ListPartitionNamesWithoutLimitRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ListPartitionNamesWithoutLimitRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPartitionNamesWithoutLimitRequest.
+        r"""Gets the instance_id of this ListPartitionNamesWithoutLimitRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -78,7 +78,7 @@ class ListPartitionNamesWithoutLimitRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPartitionNamesWithoutLimitRequest.
+        r"""Sets the instance_id of this ListPartitionNamesWithoutLimitRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -89,7 +89,7 @@ class ListPartitionNamesWithoutLimitRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ListPartitionNamesWithoutLimitRequest.
+        r"""Gets the catalog_name of this ListPartitionNamesWithoutLimitRequest.
 
         catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
@@ -100,7 +100,7 @@ class ListPartitionNamesWithoutLimitRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ListPartitionNamesWithoutLimitRequest.
+        r"""Sets the catalog_name of this ListPartitionNamesWithoutLimitRequest.
 
         catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
@@ -111,7 +111,7 @@ class ListPartitionNamesWithoutLimitRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListPartitionNamesWithoutLimitRequest.
+        r"""Gets the database_name of this ListPartitionNamesWithoutLimitRequest.
 
         数据库名称。只能包含中文、字母、数字和下划线，且长度为1~128个字符。
 
@@ -122,7 +122,7 @@ class ListPartitionNamesWithoutLimitRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListPartitionNamesWithoutLimitRequest.
+        r"""Sets the database_name of this ListPartitionNamesWithoutLimitRequest.
 
         数据库名称。只能包含中文、字母、数字和下划线，且长度为1~128个字符。
 
@@ -133,7 +133,7 @@ class ListPartitionNamesWithoutLimitRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListPartitionNamesWithoutLimitRequest.
+        r"""Gets the table_name of this ListPartitionNamesWithoutLimitRequest.
 
         表名称。只能包含中文、字母、数字和下划线，且长度为1~256个字符。
 
@@ -144,7 +144,7 @@ class ListPartitionNamesWithoutLimitRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListPartitionNamesWithoutLimitRequest.
+        r"""Sets the table_name of this ListPartitionNamesWithoutLimitRequest.
 
         表名称。只能包含中文、字母、数字和下划线，且长度为1~256个字符。
 
@@ -155,7 +155,7 @@ class ListPartitionNamesWithoutLimitRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPartitionNamesWithoutLimitRequest.
+        r"""Gets the limit of this ListPartitionNamesWithoutLimitRequest.
 
         查询返回条数。默认值为1000。最小值为-1，最大值为9999999。
 
@@ -166,7 +166,7 @@ class ListPartitionNamesWithoutLimitRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPartitionNamesWithoutLimitRequest.
+        r"""Sets the limit of this ListPartitionNamesWithoutLimitRequest.
 
         查询返回条数。默认值为1000。最小值为-1，最大值为9999999。
 

@@ -24,7 +24,7 @@ class SwitchClusterTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SwitchClusterTagsResponse
+        r"""SwitchClusterTagsResponse
 
         The model defined in huaweicloud sdk
 

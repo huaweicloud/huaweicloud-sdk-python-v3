@@ -43,7 +43,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     }
 
     def __init__(self, domain_name=None, https_switch=None, access_origin_way=None, force_redirect_https=None, force_redirect_config=None, http2=None, cert_name=None, certificate=None, certificate_type=None, expiration_time=None):
-        """UpdateDomainMultiCertificatesResponseBodyContent
+        r"""UpdateDomainMultiCertificatesResponseBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Gets the domain_name of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         域名列表。
 
@@ -116,7 +116,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Sets the domain_name of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         域名列表。
 
@@ -127,7 +127,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @property
     def https_switch(self):
-        """Gets the https_switch of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Gets the https_switch of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         https开关(0：\"关闭\"；1：\"设置证书\")。
 
@@ -138,7 +138,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @https_switch.setter
     def https_switch(self, https_switch):
-        """Sets the https_switch of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Sets the https_switch of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         https开关(0：\"关闭\"；1：\"设置证书\")。
 
@@ -149,7 +149,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @property
     def access_origin_way(self):
-        """Gets the access_origin_way of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Gets the access_origin_way of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         回源方式:1：\"回源跟随\"；2：\"HTTP\"(默认)，3：https（自建）。
 
@@ -160,7 +160,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @access_origin_way.setter
     def access_origin_way(self, access_origin_way):
-        """Sets the access_origin_way of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Sets the access_origin_way of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         回源方式:1：\"回源跟随\"；2：\"HTTP\"(默认)，3：https（自建）。
 
@@ -171,7 +171,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @property
     def force_redirect_https(self):
-        """Gets the force_redirect_https of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Gets the force_redirect_https of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         强制跳转HTTPS（0：不强制；1：强制） 。
 
@@ -182,7 +182,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @force_redirect_https.setter
     def force_redirect_https(self, force_redirect_https):
-        """Sets the force_redirect_https of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Sets the force_redirect_https of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         强制跳转HTTPS（0：不强制；1：强制） 。
 
@@ -193,7 +193,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @property
     def force_redirect_config(self):
-        """Gets the force_redirect_config of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Gets the force_redirect_config of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         :return: The force_redirect_config of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: :class:`huaweicloudsdkcdn.v2.ForceRedirect`
@@ -202,7 +202,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @force_redirect_config.setter
     def force_redirect_config(self, force_redirect_config):
-        """Sets the force_redirect_config of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Sets the force_redirect_config of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         :param force_redirect_config: The force_redirect_config of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type force_redirect_config: :class:`huaweicloudsdkcdn.v2.ForceRedirect`
@@ -211,7 +211,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @property
     def http2(self):
-        """Gets the http2 of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Gets the http2 of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         http2.0（0：关闭；1：开启）
 
@@ -222,7 +222,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @http2.setter
     def http2(self, http2):
-        """Sets the http2 of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Sets the http2 of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         http2.0（0：关闭；1：开启）
 
@@ -233,7 +233,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @property
     def cert_name(self):
-        """Gets the cert_name of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Gets the cert_name of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         证书名称。
 
@@ -244,7 +244,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @cert_name.setter
     def cert_name(self, cert_name):
-        """Sets the cert_name of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Sets the cert_name of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         证书名称。
 
@@ -255,7 +255,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @property
     def certificate(self):
-        """Gets the certificate of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Gets the certificate of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         证书内容。
 
@@ -266,7 +266,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Sets the certificate of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         证书内容。
 
@@ -277,7 +277,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @property
     def certificate_type(self):
-        """Gets the certificate_type of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Gets the certificate_type of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         证书类型（0为自有证书 ， 1为托管证书）。
 
@@ -288,7 +288,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @certificate_type.setter
     def certificate_type(self, certificate_type):
-        """Sets the certificate_type of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Sets the certificate_type of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         证书类型（0为自有证书 ， 1为托管证书）。
 
@@ -299,7 +299,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Gets the expiration_time of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         证书过期时间。
 
@@ -310,7 +310,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this UpdateDomainMultiCertificatesResponseBodyContent.
+        r"""Sets the expiration_time of this UpdateDomainMultiCertificatesResponseBodyContent.
 
         证书过期时间。
 

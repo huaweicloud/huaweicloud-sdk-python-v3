@@ -27,7 +27,7 @@ class DisassociateInstanceRequest:
     }
 
     def __init__(self, is_reserve_gcb=None, global_eip_id=None):
-        """DisassociateInstanceRequest
+        r"""DisassociateInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DisassociateInstanceRequest:
 
     @property
     def is_reserve_gcb(self):
-        """Gets the is_reserve_gcb of this DisassociateInstanceRequest.
+        r"""Gets the is_reserve_gcb of this DisassociateInstanceRequest.
 
         解绑实例后是否保留GCB，false表示解绑实例后会同时删除GCB
 
@@ -59,7 +59,7 @@ class DisassociateInstanceRequest:
 
     @is_reserve_gcb.setter
     def is_reserve_gcb(self, is_reserve_gcb):
-        """Sets the is_reserve_gcb of this DisassociateInstanceRequest.
+        r"""Sets the is_reserve_gcb of this DisassociateInstanceRequest.
 
         解绑实例后是否保留GCB，false表示解绑实例后会同时删除GCB
 
@@ -70,7 +70,7 @@ class DisassociateInstanceRequest:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this DisassociateInstanceRequest.
+        r"""Gets the global_eip_id of this DisassociateInstanceRequest.
 
         :return: The global_eip_id of this DisassociateInstanceRequest.
         :rtype: str
@@ -79,7 +79,7 @@ class DisassociateInstanceRequest:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this DisassociateInstanceRequest.
+        r"""Sets the global_eip_id of this DisassociateInstanceRequest.
 
         :param global_eip_id: The global_eip_id of this DisassociateInstanceRequest.
         :type global_eip_id: str

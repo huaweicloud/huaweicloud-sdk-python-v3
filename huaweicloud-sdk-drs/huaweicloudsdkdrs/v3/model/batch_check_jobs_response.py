@@ -28,7 +28,7 @@ class BatchCheckJobsResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchCheckJobsResponse
+        r"""BatchCheckJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchCheckJobsResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchCheckJobsResponse.
+        r"""Gets the results of this BatchCheckJobsResponse.
 
         预检查响应体
 
@@ -62,7 +62,7 @@ class BatchCheckJobsResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchCheckJobsResponse.
+        r"""Sets the results of this BatchCheckJobsResponse.
 
         预检查响应体
 
@@ -73,7 +73,7 @@ class BatchCheckJobsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchCheckJobsResponse.
+        r"""Gets the count of this BatchCheckJobsResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class BatchCheckJobsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchCheckJobsResponse.
+        r"""Sets the count of this BatchCheckJobsResponse.
 
         总数
 

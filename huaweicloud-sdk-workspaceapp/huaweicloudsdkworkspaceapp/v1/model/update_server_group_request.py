@@ -27,7 +27,7 @@ class UpdateServerGroupRequest:
     }
 
     def __init__(self, server_group_id=None, body=None):
-        """UpdateServerGroupRequest
+        r"""UpdateServerGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateServerGroupRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this UpdateServerGroupRequest.
+        r"""Gets the server_group_id of this UpdateServerGroupRequest.
 
         服务器组唯一标识。
 
@@ -60,7 +60,7 @@ class UpdateServerGroupRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this UpdateServerGroupRequest.
+        r"""Sets the server_group_id of this UpdateServerGroupRequest.
 
         服务器组唯一标识。
 
@@ -71,7 +71,7 @@ class UpdateServerGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateServerGroupRequest.
+        r"""Gets the body of this UpdateServerGroupRequest.
 
         :return: The body of this UpdateServerGroupRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdateServerGroupReq`
@@ -80,7 +80,7 @@ class UpdateServerGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateServerGroupRequest.
+        r"""Sets the body of this UpdateServerGroupRequest.
 
         :param body: The body of this UpdateServerGroupRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.UpdateServerGroupReq`

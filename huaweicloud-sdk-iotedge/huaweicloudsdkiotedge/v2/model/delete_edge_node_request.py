@@ -27,7 +27,7 @@ class DeleteEdgeNodeRequest:
     }
 
     def __init__(self, edge_node_id=None, delete_external_node=None):
-        """DeleteEdgeNodeRequest
+        r"""DeleteEdgeNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteEdgeNodeRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this DeleteEdgeNodeRequest.
+        r"""Gets the edge_node_id of this DeleteEdgeNodeRequest.
 
         边缘节点ID
 
@@ -60,7 +60,7 @@ class DeleteEdgeNodeRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this DeleteEdgeNodeRequest.
+        r"""Sets the edge_node_id of this DeleteEdgeNodeRequest.
 
         边缘节点ID
 
@@ -71,7 +71,7 @@ class DeleteEdgeNodeRequest:
 
     @property
     def delete_external_node(self):
-        """Gets the delete_external_node of this DeleteEdgeNodeRequest.
+        r"""Gets the delete_external_node of this DeleteEdgeNodeRequest.
 
         是否同时删除外部节点（仅对高级版有效），默认为false不删除IEF侧的边缘节点
 
@@ -82,7 +82,7 @@ class DeleteEdgeNodeRequest:
 
     @delete_external_node.setter
     def delete_external_node(self, delete_external_node):
-        """Sets the delete_external_node of this DeleteEdgeNodeRequest.
+        r"""Sets the delete_external_node of this DeleteEdgeNodeRequest.
 
         是否同时删除外部节点（仅对高级版有效），默认为false不删除IEF侧的边缘节点
 

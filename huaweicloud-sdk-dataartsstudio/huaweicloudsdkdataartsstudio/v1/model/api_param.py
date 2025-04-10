@@ -43,7 +43,7 @@ class ApiParam:
     }
 
     def __init__(self, name=None, create_user=None, description=None, tags=None, table_name=None, publish_status_type=None, api_specific_type_str=None, start_time=None, end_time=None, authorization_status_type=None):
-        """ApiParam
+        r"""ApiParam
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ApiParam:
 
     @property
     def name(self):
-        """Gets the name of this ApiParam.
+        r"""Gets the name of this ApiParam.
 
         API名称。
 
@@ -117,7 +117,7 @@ class ApiParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiParam.
+        r"""Sets the name of this ApiParam.
 
         API名称。
 
@@ -128,7 +128,7 @@ class ApiParam:
 
     @property
     def create_user(self):
-        """Gets the create_user of this ApiParam.
+        r"""Gets the create_user of this ApiParam.
 
         API创建人名称。
 
@@ -139,7 +139,7 @@ class ApiParam:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ApiParam.
+        r"""Sets the create_user of this ApiParam.
 
         API创建人名称。
 
@@ -150,7 +150,7 @@ class ApiParam:
 
     @property
     def description(self):
-        """Gets the description of this ApiParam.
+        r"""Gets the description of this ApiParam.
 
         API描述。
 
@@ -161,7 +161,7 @@ class ApiParam:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApiParam.
+        r"""Sets the description of this ApiParam.
 
         API描述。
 
@@ -172,7 +172,7 @@ class ApiParam:
 
     @property
     def tags(self):
-        """Gets the tags of this ApiParam.
+        r"""Gets the tags of this ApiParam.
 
         API标签列表。
 
@@ -183,7 +183,7 @@ class ApiParam:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ApiParam.
+        r"""Sets the tags of this ApiParam.
 
         API标签列表。
 
@@ -194,7 +194,7 @@ class ApiParam:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ApiParam.
+        r"""Gets the table_name of this ApiParam.
 
         API所使用到的数据库表名。
 
@@ -205,7 +205,7 @@ class ApiParam:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ApiParam.
+        r"""Sets the table_name of this ApiParam.
 
         API所使用到的数据库表名。
 
@@ -216,7 +216,7 @@ class ApiParam:
 
     @property
     def publish_status_type(self):
-        """Gets the publish_status_type of this ApiParam.
+        r"""Gets the publish_status_type of this ApiParam.
 
         API发布状态。
 
@@ -227,7 +227,7 @@ class ApiParam:
 
     @publish_status_type.setter
     def publish_status_type(self, publish_status_type):
-        """Sets the publish_status_type of this ApiParam.
+        r"""Sets the publish_status_type of this ApiParam.
 
         API发布状态。
 
@@ -238,7 +238,7 @@ class ApiParam:
 
     @property
     def api_specific_type_str(self):
-        """Gets the api_specific_type_str of this ApiParam.
+        r"""Gets the api_specific_type_str of this ApiParam.
 
         API取数方式。
 
@@ -249,7 +249,7 @@ class ApiParam:
 
     @api_specific_type_str.setter
     def api_specific_type_str(self, api_specific_type_str):
-        """Sets the api_specific_type_str of this ApiParam.
+        r"""Sets the api_specific_type_str of this ApiParam.
 
         API取数方式。
 
@@ -260,7 +260,7 @@ class ApiParam:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ApiParam.
+        r"""Gets the start_time of this ApiParam.
 
         API创建开始时间。
 
@@ -271,7 +271,7 @@ class ApiParam:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ApiParam.
+        r"""Sets the start_time of this ApiParam.
 
         API创建开始时间。
 
@@ -282,7 +282,7 @@ class ApiParam:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ApiParam.
+        r"""Gets the end_time of this ApiParam.
 
         API创建结束时间。
 
@@ -293,7 +293,7 @@ class ApiParam:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ApiParam.
+        r"""Sets the end_time of this ApiParam.
 
         API创建结束时间。
 
@@ -304,7 +304,7 @@ class ApiParam:
 
     @property
     def authorization_status_type(self):
-        """Gets the authorization_status_type of this ApiParam.
+        r"""Gets the authorization_status_type of this ApiParam.
 
         :return: The authorization_status_type of this ApiParam.
         :rtype: str
@@ -313,7 +313,7 @@ class ApiParam:
 
     @authorization_status_type.setter
     def authorization_status_type(self, authorization_status_type):
-        """Sets the authorization_status_type of this ApiParam.
+        r"""Sets the authorization_status_type of this ApiParam.
 
         :param authorization_status_type: The authorization_status_type of this ApiParam.
         :type authorization_status_type: str

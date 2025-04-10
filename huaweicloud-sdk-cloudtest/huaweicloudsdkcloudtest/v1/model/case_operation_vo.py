@@ -29,7 +29,7 @@ class CaseOperationVo:
     }
 
     def __init__(self, test_cases_info=None, set_up_cases_info=None, tear_down_cases_info=None):
-        """CaseOperationVo
+        r"""CaseOperationVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CaseOperationVo:
 
     @property
     def test_cases_info(self):
-        """Gets the test_cases_info of this CaseOperationVo.
+        r"""Gets the test_cases_info of this CaseOperationVo.
 
         用例关联信息
 
@@ -68,7 +68,7 @@ class CaseOperationVo:
 
     @test_cases_info.setter
     def test_cases_info(self, test_cases_info):
-        """Sets the test_cases_info of this CaseOperationVo.
+        r"""Sets the test_cases_info of this CaseOperationVo.
 
         用例关联信息
 
@@ -79,7 +79,7 @@ class CaseOperationVo:
 
     @property
     def set_up_cases_info(self):
-        """Gets the set_up_cases_info of this CaseOperationVo.
+        r"""Gets the set_up_cases_info of this CaseOperationVo.
 
         前置用例关联信息
 
@@ -90,7 +90,7 @@ class CaseOperationVo:
 
     @set_up_cases_info.setter
     def set_up_cases_info(self, set_up_cases_info):
-        """Sets the set_up_cases_info of this CaseOperationVo.
+        r"""Sets the set_up_cases_info of this CaseOperationVo.
 
         前置用例关联信息
 
@@ -101,7 +101,7 @@ class CaseOperationVo:
 
     @property
     def tear_down_cases_info(self):
-        """Gets the tear_down_cases_info of this CaseOperationVo.
+        r"""Gets the tear_down_cases_info of this CaseOperationVo.
 
         后置用例关联信息
 
@@ -112,7 +112,7 @@ class CaseOperationVo:
 
     @tear_down_cases_info.setter
     def tear_down_cases_info(self, tear_down_cases_info):
-        """Sets the tear_down_cases_info of this CaseOperationVo.
+        r"""Sets the tear_down_cases_info of this CaseOperationVo.
 
         后置用例关联信息
 

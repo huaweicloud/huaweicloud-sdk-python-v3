@@ -25,7 +25,7 @@ class DeleteWindowsBareMetalServerPasswordRequest:
     }
 
     def __init__(self, server_id=None):
-        """DeleteWindowsBareMetalServerPasswordRequest
+        r"""DeleteWindowsBareMetalServerPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteWindowsBareMetalServerPasswordRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this DeleteWindowsBareMetalServerPasswordRequest.
+        r"""Gets the server_id of this DeleteWindowsBareMetalServerPasswordRequest.
 
         裸金属服务器ID
 
@@ -53,7 +53,7 @@ class DeleteWindowsBareMetalServerPasswordRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this DeleteWindowsBareMetalServerPasswordRequest.
+        r"""Sets the server_id of this DeleteWindowsBareMetalServerPasswordRequest.
 
         裸金属服务器ID
 

@@ -29,7 +29,7 @@ class BackupPolicy:
     }
 
     def __init__(self, backup_type=None, save_days=None, periodical_backup_plan=None):
-        """BackupPolicy
+        r"""BackupPolicy
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BackupPolicy:
 
     @property
     def backup_type(self):
-        """Gets the backup_type of this BackupPolicy.
+        r"""Gets the backup_type of this BackupPolicy.
 
         备份类型。 - auto：自动备份 - manual：手动备份 
 
@@ -67,7 +67,7 @@ class BackupPolicy:
 
     @backup_type.setter
     def backup_type(self, backup_type):
-        """Sets the backup_type of this BackupPolicy.
+        r"""Sets the backup_type of this BackupPolicy.
 
         备份类型。 - auto：自动备份 - manual：手动备份 
 
@@ -78,7 +78,7 @@ class BackupPolicy:
 
     @property
     def save_days(self):
-        """Gets the save_days of this BackupPolicy.
+        r"""Gets the save_days of this BackupPolicy.
 
         当backup_type设置为auto时，该参数为必填。 保留天数，单位：天，取值范围：1-7。 
 
@@ -89,7 +89,7 @@ class BackupPolicy:
 
     @save_days.setter
     def save_days(self, save_days):
-        """Sets the save_days of this BackupPolicy.
+        r"""Sets the save_days of this BackupPolicy.
 
         当backup_type设置为auto时，该参数为必填。 保留天数，单位：天，取值范围：1-7。 
 
@@ -100,7 +100,7 @@ class BackupPolicy:
 
     @property
     def periodical_backup_plan(self):
-        """Gets the periodical_backup_plan of this BackupPolicy.
+        r"""Gets the periodical_backup_plan of this BackupPolicy.
 
         :return: The periodical_backup_plan of this BackupPolicy.
         :rtype: :class:`huaweicloudsdkdcs.v2.BackupPlan`
@@ -109,7 +109,7 @@ class BackupPolicy:
 
     @periodical_backup_plan.setter
     def periodical_backup_plan(self, periodical_backup_plan):
-        """Sets the periodical_backup_plan of this BackupPolicy.
+        r"""Sets the periodical_backup_plan of this BackupPolicy.
 
         :param periodical_backup_plan: The periodical_backup_plan of this BackupPolicy.
         :type periodical_backup_plan: :class:`huaweicloudsdkdcs.v2.BackupPlan`

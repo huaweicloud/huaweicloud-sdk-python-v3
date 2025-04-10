@@ -31,7 +31,7 @@ class PatchDetail:
     }
 
     def __init__(self, installed_time=None, patch_baseline_id=None, patch_baseline_name=None, patch_status=None):
-        """PatchDetail
+        r"""PatchDetail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PatchDetail:
 
     @property
     def installed_time(self):
-        """Gets the installed_time of this PatchDetail.
+        r"""Gets the installed_time of this PatchDetail.
 
         安装时间
 
@@ -75,7 +75,7 @@ class PatchDetail:
 
     @installed_time.setter
     def installed_time(self, installed_time):
-        """Sets the installed_time of this PatchDetail.
+        r"""Sets the installed_time of this PatchDetail.
 
         安装时间
 
@@ -86,7 +86,7 @@ class PatchDetail:
 
     @property
     def patch_baseline_id(self):
-        """Gets the patch_baseline_id of this PatchDetail.
+        r"""Gets the patch_baseline_id of this PatchDetail.
 
         补丁基线id
 
@@ -97,7 +97,7 @@ class PatchDetail:
 
     @patch_baseline_id.setter
     def patch_baseline_id(self, patch_baseline_id):
-        """Sets the patch_baseline_id of this PatchDetail.
+        r"""Sets the patch_baseline_id of this PatchDetail.
 
         补丁基线id
 
@@ -108,7 +108,7 @@ class PatchDetail:
 
     @property
     def patch_baseline_name(self):
-        """Gets the patch_baseline_name of this PatchDetail.
+        r"""Gets the patch_baseline_name of this PatchDetail.
 
         补丁基线名称
 
@@ -119,7 +119,7 @@ class PatchDetail:
 
     @patch_baseline_name.setter
     def patch_baseline_name(self, patch_baseline_name):
-        """Sets the patch_baseline_name of this PatchDetail.
+        r"""Sets the patch_baseline_name of this PatchDetail.
 
         补丁基线名称
 
@@ -130,7 +130,7 @@ class PatchDetail:
 
     @property
     def patch_status(self):
-        """Gets the patch_status of this PatchDetail.
+        r"""Gets the patch_status of this PatchDetail.
 
         补丁状态
 
@@ -141,7 +141,7 @@ class PatchDetail:
 
     @patch_status.setter
     def patch_status(self, patch_status):
-        """Sets the patch_status of this PatchDetail.
+        r"""Sets the patch_status of this PatchDetail.
 
         补丁状态
 

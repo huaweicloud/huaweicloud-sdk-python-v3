@@ -25,7 +25,7 @@ class UpdateParametersReq:
     }
 
     def __init__(self, values=None):
-        """UpdateParametersReq
+        r"""UpdateParametersReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateParametersReq:
 
     @property
     def values(self):
-        """Gets the values of this UpdateParametersReq.
+        r"""Gets the values of this UpdateParametersReq.
 
         :return: The values of this UpdateParametersReq.
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateParametersReqValues`
@@ -51,7 +51,7 @@ class UpdateParametersReq:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this UpdateParametersReq.
+        r"""Sets the values of this UpdateParametersReq.
 
         :param values: The values of this UpdateParametersReq.
         :type values: :class:`huaweicloudsdkddm.v1.UpdateParametersReqValues`

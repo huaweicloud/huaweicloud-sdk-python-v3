@@ -28,7 +28,7 @@ class ListFactoryAlarmInfoResponse(SdkResponse):
     }
 
     def __init__(self, alarm_info=None, total=None):
-        """ListFactoryAlarmInfoResponse
+        r"""ListFactoryAlarmInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFactoryAlarmInfoResponse(SdkResponse):
 
     @property
     def alarm_info(self):
-        """Gets the alarm_info of this ListFactoryAlarmInfoResponse.
+        r"""Gets the alarm_info of this ListFactoryAlarmInfoResponse.
 
         通知记录信息
 
@@ -62,7 +62,7 @@ class ListFactoryAlarmInfoResponse(SdkResponse):
 
     @alarm_info.setter
     def alarm_info(self, alarm_info):
-        """Sets the alarm_info of this ListFactoryAlarmInfoResponse.
+        r"""Sets the alarm_info of this ListFactoryAlarmInfoResponse.
 
         通知记录信息
 
@@ -73,7 +73,7 @@ class ListFactoryAlarmInfoResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListFactoryAlarmInfoResponse.
+        r"""Gets the total of this ListFactoryAlarmInfoResponse.
 
         通知记录数量
 
@@ -84,7 +84,7 @@ class ListFactoryAlarmInfoResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListFactoryAlarmInfoResponse.
+        r"""Sets the total of this ListFactoryAlarmInfoResponse.
 
         通知记录数量
 

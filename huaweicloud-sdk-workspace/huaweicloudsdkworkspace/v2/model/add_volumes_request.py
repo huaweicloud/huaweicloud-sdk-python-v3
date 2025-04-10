@@ -27,7 +27,7 @@ class AddVolumesRequest:
     }
 
     def __init__(self, service_transaction_id=None, body=None):
-        """AddVolumesRequest
+        r"""AddVolumesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddVolumesRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this AddVolumesRequest.
+        r"""Gets the service_transaction_id of this AddVolumesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -61,7 +61,7 @@ class AddVolumesRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this AddVolumesRequest.
+        r"""Sets the service_transaction_id of this AddVolumesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -72,7 +72,7 @@ class AddVolumesRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddVolumesRequest.
+        r"""Gets the body of this AddVolumesRequest.
 
         :return: The body of this AddVolumesRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AddDesktopsVolumesReq`
@@ -81,7 +81,7 @@ class AddVolumesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddVolumesRequest.
+        r"""Sets the body of this AddVolumesRequest.
 
         :param body: The body of this AddVolumesRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.AddDesktopsVolumesReq`

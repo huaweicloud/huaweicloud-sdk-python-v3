@@ -27,7 +27,7 @@ class CreateHttpCcRuleRequest:
     }
 
     def __init__(self, policy_id=None, body=None):
-        """CreateHttpCcRuleRequest
+        r"""CreateHttpCcRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateHttpCcRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CreateHttpCcRuleRequest.
+        r"""Gets the policy_id of this CreateHttpCcRuleRequest.
 
         策略id
 
@@ -60,7 +60,7 @@ class CreateHttpCcRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CreateHttpCcRuleRequest.
+        r"""Sets the policy_id of this CreateHttpCcRuleRequest.
 
         策略id
 
@@ -71,7 +71,7 @@ class CreateHttpCcRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHttpCcRuleRequest.
+        r"""Gets the body of this CreateHttpCcRuleRequest.
 
         :return: The body of this CreateHttpCcRuleRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.CreateHttpCcRuleRequestBody`
@@ -80,7 +80,7 @@ class CreateHttpCcRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHttpCcRuleRequest.
+        r"""Sets the body of this CreateHttpCcRuleRequest.
 
         :param body: The body of this CreateHttpCcRuleRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.CreateHttpCcRuleRequestBody`

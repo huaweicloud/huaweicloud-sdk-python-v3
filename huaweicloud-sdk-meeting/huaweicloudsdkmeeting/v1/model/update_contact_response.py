@@ -24,7 +24,7 @@ class UpdateContactResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateContactResponse
+        r"""UpdateContactResponse
 
         The model defined in huaweicloud sdk
 

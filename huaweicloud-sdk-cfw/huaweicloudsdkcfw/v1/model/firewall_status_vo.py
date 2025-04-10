@@ -37,7 +37,7 @@ class FirewallStatusVO:
     }
 
     def __init__(self, available_eip_count=None, beyond_max_count=None, eip_protected_self=None, eip_total=None, eip_un_protected=None, object_id=None, status=None):
-        """FirewallStatusVO
+        r"""FirewallStatusVO
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class FirewallStatusVO:
 
     @property
     def available_eip_count(self):
-        """Gets the available_eip_count of this FirewallStatusVO.
+        r"""Gets the available_eip_count of this FirewallStatusVO.
 
         可防护eip数量
 
@@ -96,7 +96,7 @@ class FirewallStatusVO:
 
     @available_eip_count.setter
     def available_eip_count(self, available_eip_count):
-        """Sets the available_eip_count of this FirewallStatusVO.
+        r"""Sets the available_eip_count of this FirewallStatusVO.
 
         可防护eip数量
 
@@ -107,7 +107,7 @@ class FirewallStatusVO:
 
     @property
     def beyond_max_count(self):
-        """Gets the beyond_max_count of this FirewallStatusVO.
+        r"""Gets the beyond_max_count of this FirewallStatusVO.
 
         是否超出eip数量限制
 
@@ -118,7 +118,7 @@ class FirewallStatusVO:
 
     @beyond_max_count.setter
     def beyond_max_count(self, beyond_max_count):
-        """Sets the beyond_max_count of this FirewallStatusVO.
+        r"""Sets the beyond_max_count of this FirewallStatusVO.
 
         是否超出eip数量限制
 
@@ -129,7 +129,7 @@ class FirewallStatusVO:
 
     @property
     def eip_protected_self(self):
-        """Gets the eip_protected_self of this FirewallStatusVO.
+        r"""Gets the eip_protected_self of this FirewallStatusVO.
 
         已防护eip数量
 
@@ -140,7 +140,7 @@ class FirewallStatusVO:
 
     @eip_protected_self.setter
     def eip_protected_self(self, eip_protected_self):
-        """Sets the eip_protected_self of this FirewallStatusVO.
+        r"""Sets the eip_protected_self of this FirewallStatusVO.
 
         已防护eip数量
 
@@ -151,7 +151,7 @@ class FirewallStatusVO:
 
     @property
     def eip_total(self):
-        """Gets the eip_total of this FirewallStatusVO.
+        r"""Gets the eip_total of this FirewallStatusVO.
 
         eip总数
 
@@ -162,7 +162,7 @@ class FirewallStatusVO:
 
     @eip_total.setter
     def eip_total(self, eip_total):
-        """Sets the eip_total of this FirewallStatusVO.
+        r"""Sets the eip_total of this FirewallStatusVO.
 
         eip总数
 
@@ -173,7 +173,7 @@ class FirewallStatusVO:
 
     @property
     def eip_un_protected(self):
-        """Gets the eip_un_protected of this FirewallStatusVO.
+        r"""Gets the eip_un_protected of this FirewallStatusVO.
 
         未防护eip数量
 
@@ -184,7 +184,7 @@ class FirewallStatusVO:
 
     @eip_un_protected.setter
     def eip_un_protected(self, eip_un_protected):
-        """Sets the eip_un_protected of this FirewallStatusVO.
+        r"""Sets the eip_un_protected of this FirewallStatusVO.
 
         未防护eip数量
 
@@ -195,7 +195,7 @@ class FirewallStatusVO:
 
     @property
     def object_id(self):
-        """Gets the object_id of this FirewallStatusVO.
+        r"""Gets the object_id of this FirewallStatusVO.
 
         防护对象id
 
@@ -206,7 +206,7 @@ class FirewallStatusVO:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this FirewallStatusVO.
+        r"""Sets the object_id of this FirewallStatusVO.
 
         防护对象id
 
@@ -217,7 +217,7 @@ class FirewallStatusVO:
 
     @property
     def status(self):
-        """Gets the status of this FirewallStatusVO.
+        r"""Gets the status of this FirewallStatusVO.
 
         是否开启新增eip自动防护，1；是，0：否
 
@@ -228,7 +228,7 @@ class FirewallStatusVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FirewallStatusVO.
+        r"""Sets the status of this FirewallStatusVO.
 
         是否开启新增eip自动防护，1；是，0：否
 

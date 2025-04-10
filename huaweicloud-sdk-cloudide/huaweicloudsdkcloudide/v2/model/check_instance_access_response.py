@@ -28,7 +28,7 @@ class CheckInstanceAccessResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """CheckInstanceAccessResponse
+        r"""CheckInstanceAccessResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CheckInstanceAccessResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CheckInstanceAccessResponse.
+        r"""Gets the result of this CheckInstanceAccessResponse.
 
         返回值
 
@@ -62,7 +62,7 @@ class CheckInstanceAccessResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CheckInstanceAccessResponse.
+        r"""Sets the result of this CheckInstanceAccessResponse.
 
         返回值
 
@@ -73,7 +73,7 @@ class CheckInstanceAccessResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CheckInstanceAccessResponse.
+        r"""Gets the status of this CheckInstanceAccessResponse.
 
         状态
 
@@ -84,7 +84,7 @@ class CheckInstanceAccessResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CheckInstanceAccessResponse.
+        r"""Sets the status of this CheckInstanceAccessResponse.
 
         状态
 

@@ -29,7 +29,7 @@ class Role:
     }
 
     def __init__(self, role_name=None, description=None, principal_source=None):
-        """Role
+        r"""Role
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Role:
 
     @property
     def role_name(self):
-        """Gets the role_name of this Role.
+        r"""Gets the role_name of this Role.
 
         角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
@@ -66,7 +66,7 @@ class Role:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this Role.
+        r"""Sets the role_name of this Role.
 
         角色名称。只能包含字母、数字和下划线，且长度为1~255个字符。
 
@@ -77,7 +77,7 @@ class Role:
 
     @property
     def description(self):
-        """Gets the description of this Role.
+        r"""Gets the description of this Role.
 
         描述信息。最大长度为4000个字符。当无描述信息时，则description值为null，当值为null时，响应Body无该参数。
 
@@ -88,7 +88,7 @@ class Role:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Role.
+        r"""Sets the description of this Role.
 
         描述信息。最大长度为4000个字符。当无描述信息时，则description值为null，当值为null时，响应Body无该参数。
 
@@ -99,7 +99,7 @@ class Role:
 
     @property
     def principal_source(self):
-        """Gets the principal_source of this Role.
+        r"""Gets the principal_source of this Role.
 
         主体来源 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户 AGENTTENANT 委托 OTHER 其它
 
@@ -110,7 +110,7 @@ class Role:
 
     @principal_source.setter
     def principal_source(self, principal_source):
-        """Sets the principal_source of this Role.
+        r"""Sets the principal_source of this Role.
 
         主体来源 IAM云用户 SAML联邦 LDAP ld用户 LOCAL 本地用户 AGENTTENANT 委托 OTHER 其它
 

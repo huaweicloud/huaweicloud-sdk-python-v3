@@ -25,7 +25,7 @@ class RestBulkDelAttendReqBody:
     }
 
     def __init__(self, bulk_del_attend_info=None):
-        """RestBulkDelAttendReqBody
+        r"""RestBulkDelAttendReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestBulkDelAttendReqBody:
 
     @property
     def bulk_del_attend_info(self):
-        """Gets the bulk_del_attend_info of this RestBulkDelAttendReqBody.
+        r"""Gets the bulk_del_attend_info of this RestBulkDelAttendReqBody.
 
         待删除会场列表。
 
@@ -53,7 +53,7 @@ class RestBulkDelAttendReqBody:
 
     @bulk_del_attend_info.setter
     def bulk_del_attend_info(self, bulk_del_attend_info):
-        """Sets the bulk_del_attend_info of this RestBulkDelAttendReqBody.
+        r"""Sets the bulk_del_attend_info of this RestBulkDelAttendReqBody.
 
         待删除会场列表。
 

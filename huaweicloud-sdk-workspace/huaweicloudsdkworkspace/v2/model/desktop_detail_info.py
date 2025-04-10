@@ -127,7 +127,7 @@ class DesktopDetailInfo:
     }
 
     def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, addresses=None, ip_addresses=None, ipv4=None, ipv6=None, user_list=None, user_group_list=None, desktop_type=None, resource_type=None, metadata=None, flavor=None, status=None, task_status=None, in_maintenance_mode=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, share_resource_sku=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, join_domain=None, order_id=None, tags=None, deh_id=None, platform_kind=None, is_support_internet=None, internet_mode=None, internet_mode_list=None, need_apply_adn=None, is_attaching_eip=None, desktop_isv=None, creation_type=None, attach_state=None, enterprise_project_id=None, subnet_id=None, bill_resource_id=None, process=None, root_resource_id=None, hour_package_info=None):
-        """DesktopDetailInfo
+        r"""DesktopDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -400,7 +400,7 @@ class DesktopDetailInfo:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this DesktopDetailInfo.
+        r"""Gets the desktop_id of this DesktopDetailInfo.
 
         桌面ID。
 
@@ -411,7 +411,7 @@ class DesktopDetailInfo:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this DesktopDetailInfo.
+        r"""Sets the desktop_id of this DesktopDetailInfo.
 
         桌面ID。
 
@@ -422,7 +422,7 @@ class DesktopDetailInfo:
 
     @property
     def computer_name(self):
-        """Gets the computer_name of this DesktopDetailInfo.
+        r"""Gets the computer_name of this DesktopDetailInfo.
 
         桌面名。
 
@@ -433,7 +433,7 @@ class DesktopDetailInfo:
 
     @computer_name.setter
     def computer_name(self, computer_name):
-        """Sets the computer_name of this DesktopDetailInfo.
+        r"""Sets the computer_name of this DesktopDetailInfo.
 
         桌面名。
 
@@ -444,7 +444,7 @@ class DesktopDetailInfo:
 
     @property
     def os_host_name(self):
-        """Gets the os_host_name of this DesktopDetailInfo.
+        r"""Gets the os_host_name of this DesktopDetailInfo.
 
         系统计算机名。
 
@@ -455,7 +455,7 @@ class DesktopDetailInfo:
 
     @os_host_name.setter
     def os_host_name(self, os_host_name):
-        """Sets the os_host_name of this DesktopDetailInfo.
+        r"""Sets the os_host_name of this DesktopDetailInfo.
 
         系统计算机名。
 
@@ -466,7 +466,7 @@ class DesktopDetailInfo:
 
     @property
     def addresses(self):
-        """Gets the addresses of this DesktopDetailInfo.
+        r"""Gets the addresses of this DesktopDetailInfo.
 
         桌面IP地址列表。
 
@@ -477,7 +477,7 @@ class DesktopDetailInfo:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this DesktopDetailInfo.
+        r"""Sets the addresses of this DesktopDetailInfo.
 
         桌面IP地址列表。
 
@@ -488,7 +488,7 @@ class DesktopDetailInfo:
 
     @property
     def ip_addresses(self):
-        """Gets the ip_addresses of this DesktopDetailInfo.
+        r"""Gets the ip_addresses of this DesktopDetailInfo.
 
         IP地址列表。
 
@@ -499,7 +499,7 @@ class DesktopDetailInfo:
 
     @ip_addresses.setter
     def ip_addresses(self, ip_addresses):
-        """Sets the ip_addresses of this DesktopDetailInfo.
+        r"""Sets the ip_addresses of this DesktopDetailInfo.
 
         IP地址列表。
 
@@ -510,7 +510,7 @@ class DesktopDetailInfo:
 
     @property
     def ipv4(self):
-        """Gets the ipv4 of this DesktopDetailInfo.
+        r"""Gets the ipv4 of this DesktopDetailInfo.
 
         系统计算机IPV4。
 
@@ -521,7 +521,7 @@ class DesktopDetailInfo:
 
     @ipv4.setter
     def ipv4(self, ipv4):
-        """Sets the ipv4 of this DesktopDetailInfo.
+        r"""Sets the ipv4 of this DesktopDetailInfo.
 
         系统计算机IPV4。
 
@@ -532,7 +532,7 @@ class DesktopDetailInfo:
 
     @property
     def ipv6(self):
-        """Gets the ipv6 of this DesktopDetailInfo.
+        r"""Gets the ipv6 of this DesktopDetailInfo.
 
         系统计算机IPV6。
 
@@ -543,7 +543,7 @@ class DesktopDetailInfo:
 
     @ipv6.setter
     def ipv6(self, ipv6):
-        """Sets the ipv6 of this DesktopDetailInfo.
+        r"""Sets the ipv6 of this DesktopDetailInfo.
 
         系统计算机IPV6。
 
@@ -554,7 +554,7 @@ class DesktopDetailInfo:
 
     @property
     def user_list(self):
-        """Gets the user_list of this DesktopDetailInfo.
+        r"""Gets the user_list of this DesktopDetailInfo.
 
         用户列表
 
@@ -565,7 +565,7 @@ class DesktopDetailInfo:
 
     @user_list.setter
     def user_list(self, user_list):
-        """Sets the user_list of this DesktopDetailInfo.
+        r"""Sets the user_list of this DesktopDetailInfo.
 
         用户列表
 
@@ -576,7 +576,7 @@ class DesktopDetailInfo:
 
     @property
     def user_group_list(self):
-        """Gets the user_group_list of this DesktopDetailInfo.
+        r"""Gets the user_group_list of this DesktopDetailInfo.
 
         用户组列表
 
@@ -587,7 +587,7 @@ class DesktopDetailInfo:
 
     @user_group_list.setter
     def user_group_list(self, user_group_list):
-        """Sets the user_group_list of this DesktopDetailInfo.
+        r"""Sets the user_group_list of this DesktopDetailInfo.
 
         用户组列表
 
@@ -598,7 +598,7 @@ class DesktopDetailInfo:
 
     @property
     def desktop_type(self):
-        """Gets the desktop_type of this DesktopDetailInfo.
+        r"""Gets the desktop_type of this DesktopDetailInfo.
 
         桌面类型。  - DEDICATED：专属桌面。
 
@@ -609,7 +609,7 @@ class DesktopDetailInfo:
 
     @desktop_type.setter
     def desktop_type(self, desktop_type):
-        """Sets the desktop_type of this DesktopDetailInfo.
+        r"""Sets the desktop_type of this DesktopDetailInfo.
 
         桌面类型。  - DEDICATED：专属桌面。
 
@@ -620,7 +620,7 @@ class DesktopDetailInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this DesktopDetailInfo.
+        r"""Gets the resource_type of this DesktopDetailInfo.
 
         resource_type字段，分别表示：专属桌面（DEDICATED_DESKTOP）、池桌面（POOLED_DESKTOP）、渲染桌面（RENDER_DESKTOP）、专享主机（EXCLUSIVE_HOST）、多用户桌面(SHARED_DESKTOP)
 
@@ -631,7 +631,7 @@ class DesktopDetailInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this DesktopDetailInfo.
+        r"""Sets the resource_type of this DesktopDetailInfo.
 
         resource_type字段，分别表示：专属桌面（DEDICATED_DESKTOP）、池桌面（POOLED_DESKTOP）、渲染桌面（RENDER_DESKTOP）、专享主机（EXCLUSIVE_HOST）、多用户桌面(SHARED_DESKTOP)
 
@@ -642,7 +642,7 @@ class DesktopDetailInfo:
 
     @property
     def metadata(self):
-        """Gets the metadata of this DesktopDetailInfo.
+        r"""Gets the metadata of this DesktopDetailInfo.
 
         桌面元数据。  - charging_mode 周期套餐标识，1表示包周期，0表示按需。 - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
 
@@ -653,7 +653,7 @@ class DesktopDetailInfo:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this DesktopDetailInfo.
+        r"""Sets the metadata of this DesktopDetailInfo.
 
         桌面元数据。  - charging_mode 周期套餐标识，1表示包周期，0表示按需。 - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
 
@@ -664,7 +664,7 @@ class DesktopDetailInfo:
 
     @property
     def flavor(self):
-        """Gets the flavor of this DesktopDetailInfo.
+        r"""Gets the flavor of this DesktopDetailInfo.
 
         :return: The flavor of this DesktopDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.FlavorInfo`
@@ -673,7 +673,7 @@ class DesktopDetailInfo:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this DesktopDetailInfo.
+        r"""Sets the flavor of this DesktopDetailInfo.
 
         :param flavor: The flavor of this DesktopDetailInfo.
         :type flavor: :class:`huaweicloudsdkworkspace.v2.FlavorInfo`
@@ -682,7 +682,7 @@ class DesktopDetailInfo:
 
     @property
     def status(self):
-        """Gets the status of this DesktopDetailInfo.
+        r"""Gets the status of this DesktopDetailInfo.
 
         桌面状态。
 
@@ -693,7 +693,7 @@ class DesktopDetailInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DesktopDetailInfo.
+        r"""Sets the status of this DesktopDetailInfo.
 
         桌面状态。
 
@@ -704,7 +704,7 @@ class DesktopDetailInfo:
 
     @property
     def task_status(self):
-        """Gets the task_status of this DesktopDetailInfo.
+        r"""Gets the task_status of this DesktopDetailInfo.
 
         任务状态。  - scheduling：创建中，正在进行调度。 - block_device_mapping：创建中，正在准备磁盘。 - networking：创建中，正在准备网络。 - spawning：创建中，正在内部创建。 - rebooting：重启中。 - reboot_pending：重启中，正在下发重启。 - reboot_started：重启中，开始内部重启。 - rebooting_hard：强制重启中。 - reboot_pending_hard：强制重启中，正在下发重启。 - reboot_started_hard：强制重启中，开始内部重启。 - rebuilding：重建中。 - rebuild_block_device_mapping：重建中，正在准备磁盘。 - rebuild_spawning：重建中，正在内部重建。 - migrating：热迁移中。 - resize_prep：调整规格中，正在准备阶段。 - resize_migrating：调整规格中，正在迁移阶段。 - resize_migrated：调整规格中，已经完成迁移。 - resize_finish：调整规格中，正在完成调整。 - resize_reverting：调整规格中，正在回退调整。 - powering-off：停止中。 - powering-on：启动中。 - deleting：删除中。 - deleteFailed：删除失败。 - updating: 更新中。 - desktopNetworkChanging: 切换网络中。
 
@@ -715,7 +715,7 @@ class DesktopDetailInfo:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this DesktopDetailInfo.
+        r"""Sets the task_status of this DesktopDetailInfo.
 
         任务状态。  - scheduling：创建中，正在进行调度。 - block_device_mapping：创建中，正在准备磁盘。 - networking：创建中，正在准备网络。 - spawning：创建中，正在内部创建。 - rebooting：重启中。 - reboot_pending：重启中，正在下发重启。 - reboot_started：重启中，开始内部重启。 - rebooting_hard：强制重启中。 - reboot_pending_hard：强制重启中，正在下发重启。 - reboot_started_hard：强制重启中，开始内部重启。 - rebuilding：重建中。 - rebuild_block_device_mapping：重建中，正在准备磁盘。 - rebuild_spawning：重建中，正在内部重建。 - migrating：热迁移中。 - resize_prep：调整规格中，正在准备阶段。 - resize_migrating：调整规格中，正在迁移阶段。 - resize_migrated：调整规格中，已经完成迁移。 - resize_finish：调整规格中，正在完成调整。 - resize_reverting：调整规格中，正在回退调整。 - powering-off：停止中。 - powering-on：启动中。 - deleting：删除中。 - deleteFailed：删除失败。 - updating: 更新中。 - desktopNetworkChanging: 切换网络中。
 
@@ -726,7 +726,7 @@ class DesktopDetailInfo:
 
     @property
     def in_maintenance_mode(self):
-        """Gets the in_maintenance_mode of this DesktopDetailInfo.
+        r"""Gets the in_maintenance_mode of this DesktopDetailInfo.
 
         是否处于维护模式,true表示维护模式，false表示不处于维护模式
 
@@ -737,7 +737,7 @@ class DesktopDetailInfo:
 
     @in_maintenance_mode.setter
     def in_maintenance_mode(self, in_maintenance_mode):
-        """Sets the in_maintenance_mode of this DesktopDetailInfo.
+        r"""Sets the in_maintenance_mode of this DesktopDetailInfo.
 
         是否处于维护模式,true表示维护模式，false表示不处于维护模式
 
@@ -748,7 +748,7 @@ class DesktopDetailInfo:
 
     @property
     def created(self):
-        """Gets the created of this DesktopDetailInfo.
+        r"""Gets the created of this DesktopDetailInfo.
 
         桌面创建时间。
 
@@ -759,7 +759,7 @@ class DesktopDetailInfo:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this DesktopDetailInfo.
+        r"""Sets the created of this DesktopDetailInfo.
 
         桌面创建时间。
 
@@ -770,7 +770,7 @@ class DesktopDetailInfo:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this DesktopDetailInfo.
+        r"""Gets the security_groups of this DesktopDetailInfo.
 
         桌面安全组。
 
@@ -781,7 +781,7 @@ class DesktopDetailInfo:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this DesktopDetailInfo.
+        r"""Sets the security_groups of this DesktopDetailInfo.
 
         桌面安全组。
 
@@ -792,7 +792,7 @@ class DesktopDetailInfo:
 
     @property
     def login_status(self):
-        """Gets the login_status of this DesktopDetailInfo.
+        r"""Gets the login_status of this DesktopDetailInfo.
 
         桌面的登录状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功登录，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
 
@@ -803,7 +803,7 @@ class DesktopDetailInfo:
 
     @login_status.setter
     def login_status(self, login_status):
-        """Sets the login_status of this DesktopDetailInfo.
+        r"""Sets the login_status of this DesktopDetailInfo.
 
         桌面的登录状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功登录，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
 
@@ -814,7 +814,7 @@ class DesktopDetailInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this DesktopDetailInfo.
+        r"""Gets the user_name of this DesktopDetailInfo.
 
         桌面所属用户。
 
@@ -825,7 +825,7 @@ class DesktopDetailInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this DesktopDetailInfo.
+        r"""Sets the user_name of this DesktopDetailInfo.
 
         桌面所属用户。
 
@@ -836,7 +836,7 @@ class DesktopDetailInfo:
 
     @property
     def attach_user_infos(self):
-        """Gets the attach_user_infos of this DesktopDetailInfo.
+        r"""Gets the attach_user_infos of this DesktopDetailInfo.
 
         桌面已分配的用户信息列表。
 
@@ -847,7 +847,7 @@ class DesktopDetailInfo:
 
     @attach_user_infos.setter
     def attach_user_infos(self, attach_user_infos):
-        """Sets the attach_user_infos of this DesktopDetailInfo.
+        r"""Sets the attach_user_infos of this DesktopDetailInfo.
 
         桌面已分配的用户信息列表。
 
@@ -858,7 +858,7 @@ class DesktopDetailInfo:
 
     @property
     def product_id(self):
-        """Gets the product_id of this DesktopDetailInfo.
+        r"""Gets the product_id of this DesktopDetailInfo.
 
         产品ID。
 
@@ -869,7 +869,7 @@ class DesktopDetailInfo:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this DesktopDetailInfo.
+        r"""Sets the product_id of this DesktopDetailInfo.
 
         产品ID。
 
@@ -880,7 +880,7 @@ class DesktopDetailInfo:
 
     @property
     def share_resource_sku(self):
-        """Gets the share_resource_sku of this DesktopDetailInfo.
+        r"""Gets the share_resource_sku of this DesktopDetailInfo.
 
         桌面协同资源SKU码
 
@@ -891,7 +891,7 @@ class DesktopDetailInfo:
 
     @share_resource_sku.setter
     def share_resource_sku(self, share_resource_sku):
-        """Sets the share_resource_sku of this DesktopDetailInfo.
+        r"""Sets the share_resource_sku of this DesktopDetailInfo.
 
         桌面协同资源SKU码
 
@@ -902,7 +902,7 @@ class DesktopDetailInfo:
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this DesktopDetailInfo.
+        r"""Gets the root_volume of this DesktopDetailInfo.
 
         :return: The root_volume of this DesktopDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.VolumeDetail`
@@ -911,7 +911,7 @@ class DesktopDetailInfo:
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this DesktopDetailInfo.
+        r"""Sets the root_volume of this DesktopDetailInfo.
 
         :param root_volume: The root_volume of this DesktopDetailInfo.
         :type root_volume: :class:`huaweicloudsdkworkspace.v2.VolumeDetail`
@@ -920,7 +920,7 @@ class DesktopDetailInfo:
 
     @property
     def data_volumes(self):
-        """Gets the data_volumes of this DesktopDetailInfo.
+        r"""Gets the data_volumes of this DesktopDetailInfo.
 
         数据盘列表。
 
@@ -931,7 +931,7 @@ class DesktopDetailInfo:
 
     @data_volumes.setter
     def data_volumes(self, data_volumes):
-        """Sets the data_volumes of this DesktopDetailInfo.
+        r"""Sets the data_volumes of this DesktopDetailInfo.
 
         数据盘列表。
 
@@ -942,7 +942,7 @@ class DesktopDetailInfo:
 
     @property
     def user_group(self):
-        """Gets the user_group of this DesktopDetailInfo.
+        r"""Gets the user_group of this DesktopDetailInfo.
 
         桌面用户所属的用户组。  - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
 
@@ -953,7 +953,7 @@ class DesktopDetailInfo:
 
     @user_group.setter
     def user_group(self, user_group):
-        """Sets the user_group of this DesktopDetailInfo.
+        r"""Sets the user_group of this DesktopDetailInfo.
 
         桌面用户所属的用户组。  - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
 
@@ -964,7 +964,7 @@ class DesktopDetailInfo:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this DesktopDetailInfo.
+        r"""Gets the availability_zone of this DesktopDetailInfo.
 
         可用分区。
 
@@ -975,7 +975,7 @@ class DesktopDetailInfo:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this DesktopDetailInfo.
+        r"""Sets the availability_zone of this DesktopDetailInfo.
 
         可用分区。
 
@@ -986,7 +986,7 @@ class DesktopDetailInfo:
 
     @property
     def site_type(self):
-        """Gets the site_type of this DesktopDetailInfo.
+        r"""Gets the site_type of this DesktopDetailInfo.
 
         站点类型
 
@@ -997,7 +997,7 @@ class DesktopDetailInfo:
 
     @site_type.setter
     def site_type(self, site_type):
-        """Sets the site_type of this DesktopDetailInfo.
+        r"""Sets the site_type of this DesktopDetailInfo.
 
         站点类型
 
@@ -1008,7 +1008,7 @@ class DesktopDetailInfo:
 
     @property
     def site_name(self):
-        """Gets the site_name of this DesktopDetailInfo.
+        r"""Gets the site_name of this DesktopDetailInfo.
 
         站点名字
 
@@ -1019,7 +1019,7 @@ class DesktopDetailInfo:
 
     @site_name.setter
     def site_name(self, site_name):
-        """Sets the site_name of this DesktopDetailInfo.
+        r"""Sets the site_name of this DesktopDetailInfo.
 
         站点名字
 
@@ -1030,7 +1030,7 @@ class DesktopDetailInfo:
 
     @property
     def product(self):
-        """Gets the product of this DesktopDetailInfo.
+        r"""Gets the product of this DesktopDetailInfo.
 
         :return: The product of this DesktopDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ProductInfo`
@@ -1039,7 +1039,7 @@ class DesktopDetailInfo:
 
     @product.setter
     def product(self, product):
-        """Sets the product of this DesktopDetailInfo.
+        r"""Sets the product of this DesktopDetailInfo.
 
         :param product: The product of this DesktopDetailInfo.
         :type product: :class:`huaweicloudsdkworkspace.v2.ProductInfo`
@@ -1048,7 +1048,7 @@ class DesktopDetailInfo:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this DesktopDetailInfo.
+        r"""Gets the ou_name of this DesktopDetailInfo.
 
         创建桌面时加入的OU名称。
 
@@ -1059,7 +1059,7 @@ class DesktopDetailInfo:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this DesktopDetailInfo.
+        r"""Sets the ou_name of this DesktopDetailInfo.
 
         创建桌面时加入的OU名称。
 
@@ -1070,7 +1070,7 @@ class DesktopDetailInfo:
 
     @property
     def os_version(self):
-        """Gets the os_version of this DesktopDetailInfo.
+        r"""Gets the os_version of this DesktopDetailInfo.
 
         操作系统版本号。
 
@@ -1081,7 +1081,7 @@ class DesktopDetailInfo:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this DesktopDetailInfo.
+        r"""Sets the os_version of this DesktopDetailInfo.
 
         操作系统版本号。
 
@@ -1092,7 +1092,7 @@ class DesktopDetailInfo:
 
     @property
     def sid(self):
-        """Gets the sid of this DesktopDetailInfo.
+        r"""Gets the sid of this DesktopDetailInfo.
 
         SID
 
@@ -1103,7 +1103,7 @@ class DesktopDetailInfo:
 
     @sid.setter
     def sid(self, sid):
-        """Sets the sid of this DesktopDetailInfo.
+        r"""Sets the sid of this DesktopDetailInfo.
 
         SID
 
@@ -1114,7 +1114,7 @@ class DesktopDetailInfo:
 
     @property
     def join_domain(self):
-        """Gets the join_domain of this DesktopDetailInfo.
+        r"""Gets the join_domain of this DesktopDetailInfo.
 
         计算机是否加入域。  - 0：不加入域。 - 1：加入域。
 
@@ -1125,7 +1125,7 @@ class DesktopDetailInfo:
 
     @join_domain.setter
     def join_domain(self, join_domain):
-        """Sets the join_domain of this DesktopDetailInfo.
+        r"""Sets the join_domain of this DesktopDetailInfo.
 
         计算机是否加入域。  - 0：不加入域。 - 1：加入域。
 
@@ -1136,7 +1136,7 @@ class DesktopDetailInfo:
 
     @property
     def order_id(self):
-        """Gets the order_id of this DesktopDetailInfo.
+        r"""Gets the order_id of this DesktopDetailInfo.
 
         包周期产品的订单ID。
 
@@ -1147,7 +1147,7 @@ class DesktopDetailInfo:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this DesktopDetailInfo.
+        r"""Sets the order_id of this DesktopDetailInfo.
 
         包周期产品的订单ID。
 
@@ -1158,7 +1158,7 @@ class DesktopDetailInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this DesktopDetailInfo.
+        r"""Gets the tags of this DesktopDetailInfo.
 
         桌面标签列表。
 
@@ -1169,7 +1169,7 @@ class DesktopDetailInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this DesktopDetailInfo.
+        r"""Sets the tags of this DesktopDetailInfo.
 
         桌面标签列表。
 
@@ -1180,7 +1180,7 @@ class DesktopDetailInfo:
 
     @property
     def deh_id(self):
-        """Gets the deh_id of this DesktopDetailInfo.
+        r"""Gets the deh_id of this DesktopDetailInfo.
 
         云办公主机id。
 
@@ -1191,7 +1191,7 @@ class DesktopDetailInfo:
 
     @deh_id.setter
     def deh_id(self, deh_id):
-        """Sets the deh_id of this DesktopDetailInfo.
+        r"""Sets the deh_id of this DesktopDetailInfo.
 
         云办公主机id。
 
@@ -1202,7 +1202,7 @@ class DesktopDetailInfo:
 
     @property
     def platform_kind(self):
-        """Gets the platform_kind of this DesktopDetailInfo.
+        r"""Gets the platform_kind of this DesktopDetailInfo.
 
         平台类型，0:fc fusioncompute平台 1:physical 物理机 2:openstack 3:workspace_manager 1.0平台 5:graphics_workstation 图形工作站 6:sce 容器桌面 10:other 其它平台。
 
@@ -1213,7 +1213,7 @@ class DesktopDetailInfo:
 
     @platform_kind.setter
     def platform_kind(self, platform_kind):
-        """Sets the platform_kind of this DesktopDetailInfo.
+        r"""Sets the platform_kind of this DesktopDetailInfo.
 
         平台类型，0:fc fusioncompute平台 1:physical 物理机 2:openstack 3:workspace_manager 1.0平台 5:graphics_workstation 图形工作站 6:sce 容器桌面 10:other 其它平台。
 
@@ -1224,7 +1224,7 @@ class DesktopDetailInfo:
 
     @property
     def is_support_internet(self):
-        """Gets the is_support_internet of this DesktopDetailInfo.
+        r"""Gets the is_support_internet of this DesktopDetailInfo.
 
         是否开通互联网，true：已开通，false：未开通
 
@@ -1235,7 +1235,7 @@ class DesktopDetailInfo:
 
     @is_support_internet.setter
     def is_support_internet(self, is_support_internet):
-        """Sets the is_support_internet of this DesktopDetailInfo.
+        r"""Sets the is_support_internet of this DesktopDetailInfo.
 
         是否开通互联网，true：已开通，false：未开通
 
@@ -1246,7 +1246,7 @@ class DesktopDetailInfo:
 
     @property
     def internet_mode(self):
-        """Gets the internet_mode of this DesktopDetailInfo.
+        r"""Gets the internet_mode of this DesktopDetailInfo.
 
         上网方式。 - NAT：表示NAT上网方式。 - EIP：表示EIP上网方式。 - BOTH：表示两种上网方式都支持。
 
@@ -1257,7 +1257,7 @@ class DesktopDetailInfo:
 
     @internet_mode.setter
     def internet_mode(self, internet_mode):
-        """Sets the internet_mode of this DesktopDetailInfo.
+        r"""Sets the internet_mode of this DesktopDetailInfo.
 
         上网方式。 - NAT：表示NAT上网方式。 - EIP：表示EIP上网方式。 - BOTH：表示两种上网方式都支持。
 
@@ -1268,7 +1268,7 @@ class DesktopDetailInfo:
 
     @property
     def internet_mode_list(self):
-        """Gets the internet_mode_list of this DesktopDetailInfo.
+        r"""Gets the internet_mode_list of this DesktopDetailInfo.
 
         桌面使用的上网方式列表。
 
@@ -1279,7 +1279,7 @@ class DesktopDetailInfo:
 
     @internet_mode_list.setter
     def internet_mode_list(self, internet_mode_list):
-        """Sets the internet_mode_list of this DesktopDetailInfo.
+        r"""Sets the internet_mode_list of this DesktopDetailInfo.
 
         桌面使用的上网方式列表。
 
@@ -1290,7 +1290,7 @@ class DesktopDetailInfo:
 
     @property
     def need_apply_adn(self):
-        """Gets the need_apply_adn of this DesktopDetailInfo.
+        r"""Gets the need_apply_adn of this DesktopDetailInfo.
 
         是否需要开通云办公带宽。
 
@@ -1301,7 +1301,7 @@ class DesktopDetailInfo:
 
     @need_apply_adn.setter
     def need_apply_adn(self, need_apply_adn):
-        """Sets the need_apply_adn of this DesktopDetailInfo.
+        r"""Sets the need_apply_adn of this DesktopDetailInfo.
 
         是否需要开通云办公带宽。
 
@@ -1312,7 +1312,7 @@ class DesktopDetailInfo:
 
     @property
     def is_attaching_eip(self):
-        """Gets the is_attaching_eip of this DesktopDetailInfo.
+        r"""Gets the is_attaching_eip of this DesktopDetailInfo.
 
         桌面是否正在绑定EIP。
 
@@ -1323,7 +1323,7 @@ class DesktopDetailInfo:
 
     @is_attaching_eip.setter
     def is_attaching_eip(self, is_attaching_eip):
-        """Sets the is_attaching_eip of this DesktopDetailInfo.
+        r"""Sets the is_attaching_eip of this DesktopDetailInfo.
 
         桌面是否正在绑定EIP。
 
@@ -1334,7 +1334,7 @@ class DesktopDetailInfo:
 
     @property
     def desktop_isv(self):
-        """Gets the desktop_isv of this DesktopDetailInfo.
+        r"""Gets the desktop_isv of this DesktopDetailInfo.
 
         桌面来源。  - DEFAULT：默认桌面来源。 - ONEMOBILE：协同办公云桌面OneMobile。
 
@@ -1345,7 +1345,7 @@ class DesktopDetailInfo:
 
     @desktop_isv.setter
     def desktop_isv(self, desktop_isv):
-        """Sets the desktop_isv of this DesktopDetailInfo.
+        r"""Sets the desktop_isv of this DesktopDetailInfo.
 
         桌面来源。  - DEFAULT：默认桌面来源。 - ONEMOBILE：协同办公云桌面OneMobile。
 
@@ -1356,7 +1356,7 @@ class DesktopDetailInfo:
 
     @property
     def creation_type(self):
-        """Gets the creation_type of this DesktopDetailInfo.
+        r"""Gets the creation_type of this DesktopDetailInfo.
 
         桌面创建类型，null或者MANUALLY表示基础创建出来，AUTOSCALE：表示自动扩容出来的。
 
@@ -1367,7 +1367,7 @@ class DesktopDetailInfo:
 
     @creation_type.setter
     def creation_type(self, creation_type):
-        """Sets the creation_type of this DesktopDetailInfo.
+        r"""Sets the creation_type of this DesktopDetailInfo.
 
         桌面创建类型，null或者MANUALLY表示基础创建出来，AUTOSCALE：表示自动扩容出来的。
 
@@ -1378,7 +1378,7 @@ class DesktopDetailInfo:
 
     @property
     def attach_state(self):
-        """Gets the attach_state of this DesktopDetailInfo.
+        r"""Gets the attach_state of this DesktopDetailInfo.
 
         分配状态。 - ATTACHED：已分配。 - UNATTACH：未分配 表示未关联。 - DEATTACHED：已解分配。 - ATTACHING：分配中。 - DEATTACHING：解分配中。 - ATTACHFAIL：分配失败。 - DEATTACHFAIL：解分配失败。 - WAITING：等待被分配中,描述从批量分配（解分配）下发到转入分配（解分配）的中间状态 同时方便单个关联流程的状态独立性。 - ATTACH_FAIL_CAN_ATTACH_AGAIN：分配失败,还可以再关联。 - DEATTACH_FAIL_CAN_DEATTACH_AGAIN：解分配失败,还可以再解分配。
 
@@ -1389,7 +1389,7 @@ class DesktopDetailInfo:
 
     @attach_state.setter
     def attach_state(self, attach_state):
-        """Sets the attach_state of this DesktopDetailInfo.
+        r"""Sets the attach_state of this DesktopDetailInfo.
 
         分配状态。 - ATTACHED：已分配。 - UNATTACH：未分配 表示未关联。 - DEATTACHED：已解分配。 - ATTACHING：分配中。 - DEATTACHING：解分配中。 - ATTACHFAIL：分配失败。 - DEATTACHFAIL：解分配失败。 - WAITING：等待被分配中,描述从批量分配（解分配）下发到转入分配（解分配）的中间状态 同时方便单个关联流程的状态独立性。 - ATTACH_FAIL_CAN_ATTACH_AGAIN：分配失败,还可以再关联。 - DEATTACH_FAIL_CAN_DEATTACH_AGAIN：解分配失败,还可以再解分配。
 
@@ -1400,7 +1400,7 @@ class DesktopDetailInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DesktopDetailInfo.
+        r"""Gets the enterprise_project_id of this DesktopDetailInfo.
 
         企业项目ID
 
@@ -1411,7 +1411,7 @@ class DesktopDetailInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DesktopDetailInfo.
+        r"""Sets the enterprise_project_id of this DesktopDetailInfo.
 
         企业项目ID
 
@@ -1422,7 +1422,7 @@ class DesktopDetailInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this DesktopDetailInfo.
+        r"""Gets the subnet_id of this DesktopDetailInfo.
 
         桌面的子网ID。
 
@@ -1433,7 +1433,7 @@ class DesktopDetailInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this DesktopDetailInfo.
+        r"""Sets the subnet_id of this DesktopDetailInfo.
 
         桌面的子网ID。
 
@@ -1444,7 +1444,7 @@ class DesktopDetailInfo:
 
     @property
     def bill_resource_id(self):
-        """Gets the bill_resource_id of this DesktopDetailInfo.
+        r"""Gets the bill_resource_id of this DesktopDetailInfo.
 
         桌面计费资源ID
 
@@ -1455,7 +1455,7 @@ class DesktopDetailInfo:
 
     @bill_resource_id.setter
     def bill_resource_id(self, bill_resource_id):
-        """Sets the bill_resource_id of this DesktopDetailInfo.
+        r"""Sets the bill_resource_id of this DesktopDetailInfo.
 
         桌面计费资源ID
 
@@ -1466,7 +1466,7 @@ class DesktopDetailInfo:
 
     @property
     def process(self):
-        """Gets the process of this DesktopDetailInfo.
+        r"""Gets the process of this DesktopDetailInfo.
 
         桌面任务进度， 取值范围0-100以及null，null表示该桌面无任务，0-100表明该任务进度的百分比。
 
@@ -1477,7 +1477,7 @@ class DesktopDetailInfo:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this DesktopDetailInfo.
+        r"""Sets the process of this DesktopDetailInfo.
 
         桌面任务进度， 取值范围0-100以及null，null表示该桌面无任务，0-100表明该任务进度的百分比。
 
@@ -1488,7 +1488,7 @@ class DesktopDetailInfo:
 
     @property
     def root_resource_id(self):
-        """Gets the root_resource_id of this DesktopDetailInfo.
+        r"""Gets the root_resource_id of this DesktopDetailInfo.
 
         整机实例根资源ID。
 
@@ -1499,7 +1499,7 @@ class DesktopDetailInfo:
 
     @root_resource_id.setter
     def root_resource_id(self, root_resource_id):
-        """Sets the root_resource_id of this DesktopDetailInfo.
+        r"""Sets the root_resource_id of this DesktopDetailInfo.
 
         整机实例根资源ID。
 
@@ -1510,7 +1510,7 @@ class DesktopDetailInfo:
 
     @property
     def hour_package_info(self):
-        """Gets the hour_package_info of this DesktopDetailInfo.
+        r"""Gets the hour_package_info of this DesktopDetailInfo.
 
         :return: The hour_package_info of this DesktopDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.HourPackageInfo`
@@ -1519,7 +1519,7 @@ class DesktopDetailInfo:
 
     @hour_package_info.setter
     def hour_package_info(self, hour_package_info):
-        """Sets the hour_package_info of this DesktopDetailInfo.
+        r"""Sets the hour_package_info of this DesktopDetailInfo.
 
         :param hour_package_info: The hour_package_info of this DesktopDetailInfo.
         :type hour_package_info: :class:`huaweicloudsdkworkspace.v2.HourPackageInfo`

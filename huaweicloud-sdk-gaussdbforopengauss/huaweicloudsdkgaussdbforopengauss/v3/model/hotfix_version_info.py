@@ -27,7 +27,7 @@ class HotfixVersionInfo:
     }
 
     def __init__(self, version=None, upgrade_finished_time=None):
-        """HotfixVersionInfo
+        r"""HotfixVersionInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class HotfixVersionInfo:
 
     @property
     def version(self):
-        """Gets the version of this HotfixVersionInfo.
+        r"""Gets the version of this HotfixVersionInfo.
 
         热补丁版本。
 
@@ -60,7 +60,7 @@ class HotfixVersionInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this HotfixVersionInfo.
+        r"""Sets the version of this HotfixVersionInfo.
 
         热补丁版本。
 
@@ -71,7 +71,7 @@ class HotfixVersionInfo:
 
     @property
     def upgrade_finished_time(self):
-        """Gets the upgrade_finished_time of this HotfixVersionInfo.
+        r"""Gets the upgrade_finished_time of this HotfixVersionInfo.
 
         热补丁升级完成时间列表。  热补丁升级完成时间，格式为“yyyy-mm-dd hh:mm:ss timezone”。  其中timezone是指时区。
 
@@ -82,7 +82,7 @@ class HotfixVersionInfo:
 
     @upgrade_finished_time.setter
     def upgrade_finished_time(self, upgrade_finished_time):
-        """Sets the upgrade_finished_time of this HotfixVersionInfo.
+        r"""Sets the upgrade_finished_time of this HotfixVersionInfo.
 
         热补丁升级完成时间列表。  热补丁升级完成时间，格式为“yyyy-mm-dd hh:mm:ss timezone”。  其中timezone是指时区。
 

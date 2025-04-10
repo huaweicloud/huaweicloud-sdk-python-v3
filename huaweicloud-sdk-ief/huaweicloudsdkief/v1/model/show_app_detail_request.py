@@ -27,7 +27,7 @@ class ShowAppDetailRequest:
     }
 
     def __init__(self, ief_instance_id=None, app_id=None):
-        """ShowAppDetailRequest
+        r"""ShowAppDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowAppDetailRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ShowAppDetailRequest.
+        r"""Gets the ief_instance_id of this ShowAppDetailRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -60,7 +60,7 @@ class ShowAppDetailRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ShowAppDetailRequest.
+        r"""Sets the ief_instance_id of this ShowAppDetailRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -71,7 +71,7 @@ class ShowAppDetailRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowAppDetailRequest.
+        r"""Gets the app_id of this ShowAppDetailRequest.
 
         应用模板ID
 
@@ -82,7 +82,7 @@ class ShowAppDetailRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowAppDetailRequest.
+        r"""Sets the app_id of this ShowAppDetailRequest.
 
         应用模板ID
 

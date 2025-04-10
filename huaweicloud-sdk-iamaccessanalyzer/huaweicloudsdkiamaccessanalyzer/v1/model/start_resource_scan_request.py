@@ -27,7 +27,7 @@ class StartResourceScanRequest:
     }
 
     def __init__(self, analyzer_id=None, body=None):
-        """StartResourceScanRequest
+        r"""StartResourceScanRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartResourceScanRequest:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this StartResourceScanRequest.
+        r"""Gets the analyzer_id of this StartResourceScanRequest.
 
         分析器的唯一标识符。
 
@@ -60,7 +60,7 @@ class StartResourceScanRequest:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this StartResourceScanRequest.
+        r"""Sets the analyzer_id of this StartResourceScanRequest.
 
         分析器的唯一标识符。
 
@@ -71,7 +71,7 @@ class StartResourceScanRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartResourceScanRequest.
+        r"""Gets the body of this StartResourceScanRequest.
 
         :return: The body of this StartResourceScanRequest.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.StartResourceScanReqBody`
@@ -80,7 +80,7 @@ class StartResourceScanRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartResourceScanRequest.
+        r"""Sets the body of this StartResourceScanRequest.
 
         :param body: The body of this StartResourceScanRequest.
         :type body: :class:`huaweicloudsdkiamaccessanalyzer.v1.StartResourceScanReqBody`

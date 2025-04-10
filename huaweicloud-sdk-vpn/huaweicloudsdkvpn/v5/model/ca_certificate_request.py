@@ -28,7 +28,7 @@ class CaCertificateRequest:
     }
 
     def __init__(self, id=None, content=None):
-        """CaCertificateRequest
+        r"""CaCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CaCertificateRequest:
 
     @property
     def id(self):
-        """Gets the id of this CaCertificateRequest.
+        r"""Gets the id of this CaCertificateRequest.
 
         使用已有证书ID
 
@@ -62,7 +62,7 @@ class CaCertificateRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CaCertificateRequest.
+        r"""Sets the id of this CaCertificateRequest.
 
         使用已有证书ID
 
@@ -73,7 +73,7 @@ class CaCertificateRequest:
 
     @property
     def content(self):
-        """Gets the content of this CaCertificateRequest.
+        r"""Gets the content of this CaCertificateRequest.
 
         对端网关CA证书内容
 
@@ -84,7 +84,7 @@ class CaCertificateRequest:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CaCertificateRequest.
+        r"""Sets the content of this CaCertificateRequest.
 
         对端网关CA证书内容
 

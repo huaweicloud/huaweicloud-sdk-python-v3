@@ -32,7 +32,7 @@ class ShowGeipSegmentTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, tags=None, sys_tags=None, x_request_id=None):
-        """ShowGeipSegmentTagsResponse
+        r"""ShowGeipSegmentTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowGeipSegmentTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowGeipSegmentTagsResponse.
+        r"""Gets the request_id of this ShowGeipSegmentTagsResponse.
 
         本次请求的编号
 
@@ -76,7 +76,7 @@ class ShowGeipSegmentTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowGeipSegmentTagsResponse.
+        r"""Sets the request_id of this ShowGeipSegmentTagsResponse.
 
         本次请求的编号
 
@@ -87,7 +87,7 @@ class ShowGeipSegmentTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowGeipSegmentTagsResponse.
+        r"""Gets the tags of this ShowGeipSegmentTagsResponse.
 
         单个资源的租户标签列表。
 
@@ -98,7 +98,7 @@ class ShowGeipSegmentTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowGeipSegmentTagsResponse.
+        r"""Sets the tags of this ShowGeipSegmentTagsResponse.
 
         单个资源的租户标签列表。
 
@@ -109,7 +109,7 @@ class ShowGeipSegmentTagsResponse(SdkResponse):
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ShowGeipSegmentTagsResponse.
+        r"""Gets the sys_tags of this ShowGeipSegmentTagsResponse.
 
         单个资源的系统标签列表。
 
@@ -120,7 +120,7 @@ class ShowGeipSegmentTagsResponse(SdkResponse):
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ShowGeipSegmentTagsResponse.
+        r"""Sets the sys_tags of this ShowGeipSegmentTagsResponse.
 
         单个资源的系统标签列表。
 
@@ -131,7 +131,7 @@ class ShowGeipSegmentTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowGeipSegmentTagsResponse.
+        r"""Gets the x_request_id of this ShowGeipSegmentTagsResponse.
 
         :return: The x_request_id of this ShowGeipSegmentTagsResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class ShowGeipSegmentTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowGeipSegmentTagsResponse.
+        r"""Sets the x_request_id of this ShowGeipSegmentTagsResponse.
 
         :param x_request_id: The x_request_id of this ShowGeipSegmentTagsResponse.
         :type x_request_id: str

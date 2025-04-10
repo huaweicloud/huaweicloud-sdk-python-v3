@@ -26,7 +26,7 @@ class DeleteDisasterRecoveryResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteDisasterRecoveryResponse
+        r"""DeleteDisasterRecoveryResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDisasterRecoveryResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteDisasterRecoveryResponse.
+        r"""Gets the body of this DeleteDisasterRecoveryResponse.
 
         :return: The body of this DeleteDisasterRecoveryResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteDisasterRecoveryResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDisasterRecoveryResponse.
+        r"""Sets the body of this DeleteDisasterRecoveryResponse.
 
         :param body: The body of this DeleteDisasterRecoveryResponse.
         :type body: str

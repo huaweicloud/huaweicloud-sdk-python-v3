@@ -30,7 +30,7 @@ class ShowAgreementResponse(SdkResponse):
     }
 
     def __init__(self, agreements=None, is_agency=None, x_request_id=None):
-        """ShowAgreementResponse
+        r"""ShowAgreementResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowAgreementResponse(SdkResponse):
 
     @property
     def agreements(self):
-        """Gets the agreements of this ShowAgreementResponse.
+        r"""Gets the agreements of this ShowAgreementResponse.
 
         租户协议列表
 
@@ -69,7 +69,7 @@ class ShowAgreementResponse(SdkResponse):
 
     @agreements.setter
     def agreements(self, agreements):
-        """Sets the agreements of this ShowAgreementResponse.
+        r"""Sets the agreements of this ShowAgreementResponse.
 
         租户协议列表
 
@@ -80,7 +80,7 @@ class ShowAgreementResponse(SdkResponse):
 
     @property
     def is_agency(self):
-        """Gets the is_agency of this ShowAgreementResponse.
+        r"""Gets the is_agency of this ShowAgreementResponse.
 
         是否绑定了委托
 
@@ -91,7 +91,7 @@ class ShowAgreementResponse(SdkResponse):
 
     @is_agency.setter
     def is_agency(self, is_agency):
-        """Sets the is_agency of this ShowAgreementResponse.
+        r"""Sets the is_agency of this ShowAgreementResponse.
 
         是否绑定了委托
 
@@ -102,7 +102,7 @@ class ShowAgreementResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowAgreementResponse.
+        r"""Gets the x_request_id of this ShowAgreementResponse.
 
         :return: The x_request_id of this ShowAgreementResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ShowAgreementResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowAgreementResponse.
+        r"""Sets the x_request_id of this ShowAgreementResponse.
 
         :param x_request_id: The x_request_id of this ShowAgreementResponse.
         :type x_request_id: str

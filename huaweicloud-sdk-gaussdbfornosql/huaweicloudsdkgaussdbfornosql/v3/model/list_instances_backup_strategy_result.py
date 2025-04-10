@@ -27,7 +27,7 @@ class ListInstancesBackupStrategyResult:
     }
 
     def __init__(self, start_time=None, keep_days=None):
-        """ListInstancesBackupStrategyResult
+        r"""ListInstancesBackupStrategyResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListInstancesBackupStrategyResult:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListInstancesBackupStrategyResult.
+        r"""Gets the start_time of this ListInstancesBackupStrategyResult.
 
         备份时间段。自动备份将在该时间段内触发。当前时间指UTC时间。
 
@@ -59,7 +59,7 @@ class ListInstancesBackupStrategyResult:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListInstancesBackupStrategyResult.
+        r"""Sets the start_time of this ListInstancesBackupStrategyResult.
 
         备份时间段。自动备份将在该时间段内触发。当前时间指UTC时间。
 
@@ -70,7 +70,7 @@ class ListInstancesBackupStrategyResult:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this ListInstancesBackupStrategyResult.
+        r"""Gets the keep_days of this ListInstancesBackupStrategyResult.
 
         已生成备份文件可以保存的天数。取值范围：0~35。
 
@@ -81,7 +81,7 @@ class ListInstancesBackupStrategyResult:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this ListInstancesBackupStrategyResult.
+        r"""Sets the keep_days of this ListInstancesBackupStrategyResult.
 
         已生成备份文件可以保存的天数。取值范围：0~35。
 

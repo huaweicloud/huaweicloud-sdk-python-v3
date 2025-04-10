@@ -26,7 +26,7 @@ class ShowDatasetStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowDatasetStatisticsResponse
+        r"""ShowDatasetStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDatasetStatisticsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowDatasetStatisticsResponse.
+        r"""Gets the body of this ShowDatasetStatisticsResponse.
 
         :return: The body of this ShowDatasetStatisticsResponse.
         :rtype: list[:class:`huaweicloudsdktics.v1.LeagueDatasetStatisticsVo`]
@@ -53,7 +53,7 @@ class ShowDatasetStatisticsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowDatasetStatisticsResponse.
+        r"""Sets the body of this ShowDatasetStatisticsResponse.
 
         :param body: The body of this ShowDatasetStatisticsResponse.
         :type body: list[:class:`huaweicloudsdktics.v1.LeagueDatasetStatisticsVo`]

@@ -51,7 +51,7 @@ class NamespaceVo:
     }
 
     def __init__(self, created_date=None, data_sync_statistics=None, datasource_statistics=None, description=None, enterprise_project_id=None, id=None, is_used=None, multi_active_zone=None, name=None, project_id=None, tenant_id=None, type=None, updated_date=None, user_id=None):
-        """NamespaceVo
+        r"""NamespaceVo
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class NamespaceVo:
 
     @property
     def created_date(self):
-        """Gets the created_date of this NamespaceVo.
+        r"""Gets the created_date of this NamespaceVo.
 
         :return: The created_date of this NamespaceVo.
         :rtype: datetime
@@ -143,7 +143,7 @@ class NamespaceVo:
 
     @created_date.setter
     def created_date(self, created_date):
-        """Sets the created_date of this NamespaceVo.
+        r"""Sets the created_date of this NamespaceVo.
 
         :param created_date: The created_date of this NamespaceVo.
         :type created_date: datetime
@@ -152,7 +152,7 @@ class NamespaceVo:
 
     @property
     def data_sync_statistics(self):
-        """Gets the data_sync_statistics of this NamespaceVo.
+        r"""Gets the data_sync_statistics of this NamespaceVo.
 
         :return: The data_sync_statistics of this NamespaceVo.
         :rtype: :class:`huaweicloudsdkmas.v1.DataSyncStatistics`
@@ -161,7 +161,7 @@ class NamespaceVo:
 
     @data_sync_statistics.setter
     def data_sync_statistics(self, data_sync_statistics):
-        """Sets the data_sync_statistics of this NamespaceVo.
+        r"""Sets the data_sync_statistics of this NamespaceVo.
 
         :param data_sync_statistics: The data_sync_statistics of this NamespaceVo.
         :type data_sync_statistics: :class:`huaweicloudsdkmas.v1.DataSyncStatistics`
@@ -170,7 +170,7 @@ class NamespaceVo:
 
     @property
     def datasource_statistics(self):
-        """Gets the datasource_statistics of this NamespaceVo.
+        r"""Gets the datasource_statistics of this NamespaceVo.
 
         :return: The datasource_statistics of this NamespaceVo.
         :rtype: :class:`huaweicloudsdkmas.v1.DatasourceStatistics`
@@ -179,7 +179,7 @@ class NamespaceVo:
 
     @datasource_statistics.setter
     def datasource_statistics(self, datasource_statistics):
-        """Sets the datasource_statistics of this NamespaceVo.
+        r"""Sets the datasource_statistics of this NamespaceVo.
 
         :param datasource_statistics: The datasource_statistics of this NamespaceVo.
         :type datasource_statistics: :class:`huaweicloudsdkmas.v1.DatasourceStatistics`
@@ -188,7 +188,7 @@ class NamespaceVo:
 
     @property
     def description(self):
-        """Gets the description of this NamespaceVo.
+        r"""Gets the description of this NamespaceVo.
 
         :return: The description of this NamespaceVo.
         :rtype: str
@@ -197,7 +197,7 @@ class NamespaceVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NamespaceVo.
+        r"""Sets the description of this NamespaceVo.
 
         :param description: The description of this NamespaceVo.
         :type description: str
@@ -206,7 +206,7 @@ class NamespaceVo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this NamespaceVo.
+        r"""Gets the enterprise_project_id of this NamespaceVo.
 
         :return: The enterprise_project_id of this NamespaceVo.
         :rtype: str
@@ -215,7 +215,7 @@ class NamespaceVo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this NamespaceVo.
+        r"""Sets the enterprise_project_id of this NamespaceVo.
 
         :param enterprise_project_id: The enterprise_project_id of this NamespaceVo.
         :type enterprise_project_id: str
@@ -224,7 +224,7 @@ class NamespaceVo:
 
     @property
     def id(self):
-        """Gets the id of this NamespaceVo.
+        r"""Gets the id of this NamespaceVo.
 
         :return: The id of this NamespaceVo.
         :rtype: str
@@ -233,7 +233,7 @@ class NamespaceVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NamespaceVo.
+        r"""Sets the id of this NamespaceVo.
 
         :param id: The id of this NamespaceVo.
         :type id: str
@@ -242,7 +242,7 @@ class NamespaceVo:
 
     @property
     def is_used(self):
-        """Gets the is_used of this NamespaceVo.
+        r"""Gets the is_used of this NamespaceVo.
 
         :return: The is_used of this NamespaceVo.
         :rtype: bool
@@ -251,7 +251,7 @@ class NamespaceVo:
 
     @is_used.setter
     def is_used(self, is_used):
-        """Sets the is_used of this NamespaceVo.
+        r"""Sets the is_used of this NamespaceVo.
 
         :param is_used: The is_used of this NamespaceVo.
         :type is_used: bool
@@ -260,7 +260,7 @@ class NamespaceVo:
 
     @property
     def multi_active_zone(self):
-        """Gets the multi_active_zone of this NamespaceVo.
+        r"""Gets the multi_active_zone of this NamespaceVo.
 
         :return: The multi_active_zone of this NamespaceVo.
         :rtype: list[:class:`huaweicloudsdkmas.v1.MultiActiveZoneVo`]
@@ -269,7 +269,7 @@ class NamespaceVo:
 
     @multi_active_zone.setter
     def multi_active_zone(self, multi_active_zone):
-        """Sets the multi_active_zone of this NamespaceVo.
+        r"""Sets the multi_active_zone of this NamespaceVo.
 
         :param multi_active_zone: The multi_active_zone of this NamespaceVo.
         :type multi_active_zone: list[:class:`huaweicloudsdkmas.v1.MultiActiveZoneVo`]
@@ -278,7 +278,7 @@ class NamespaceVo:
 
     @property
     def name(self):
-        """Gets the name of this NamespaceVo.
+        r"""Gets the name of this NamespaceVo.
 
         :return: The name of this NamespaceVo.
         :rtype: str
@@ -287,7 +287,7 @@ class NamespaceVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NamespaceVo.
+        r"""Sets the name of this NamespaceVo.
 
         :param name: The name of this NamespaceVo.
         :type name: str
@@ -296,7 +296,7 @@ class NamespaceVo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this NamespaceVo.
+        r"""Gets the project_id of this NamespaceVo.
 
         :return: The project_id of this NamespaceVo.
         :rtype: str
@@ -305,7 +305,7 @@ class NamespaceVo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this NamespaceVo.
+        r"""Sets the project_id of this NamespaceVo.
 
         :param project_id: The project_id of this NamespaceVo.
         :type project_id: str
@@ -314,7 +314,7 @@ class NamespaceVo:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NamespaceVo.
+        r"""Gets the tenant_id of this NamespaceVo.
 
         :return: The tenant_id of this NamespaceVo.
         :rtype: str
@@ -323,7 +323,7 @@ class NamespaceVo:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NamespaceVo.
+        r"""Sets the tenant_id of this NamespaceVo.
 
         :param tenant_id: The tenant_id of this NamespaceVo.
         :type tenant_id: str
@@ -332,7 +332,7 @@ class NamespaceVo:
 
     @property
     def type(self):
-        """Gets the type of this NamespaceVo.
+        r"""Gets the type of this NamespaceVo.
 
         :return: The type of this NamespaceVo.
         :rtype: int
@@ -341,7 +341,7 @@ class NamespaceVo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NamespaceVo.
+        r"""Sets the type of this NamespaceVo.
 
         :param type: The type of this NamespaceVo.
         :type type: int
@@ -350,7 +350,7 @@ class NamespaceVo:
 
     @property
     def updated_date(self):
-        """Gets the updated_date of this NamespaceVo.
+        r"""Gets the updated_date of this NamespaceVo.
 
         :return: The updated_date of this NamespaceVo.
         :rtype: datetime
@@ -359,7 +359,7 @@ class NamespaceVo:
 
     @updated_date.setter
     def updated_date(self, updated_date):
-        """Sets the updated_date of this NamespaceVo.
+        r"""Sets the updated_date of this NamespaceVo.
 
         :param updated_date: The updated_date of this NamespaceVo.
         :type updated_date: datetime
@@ -368,7 +368,7 @@ class NamespaceVo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this NamespaceVo.
+        r"""Gets the user_id of this NamespaceVo.
 
         :return: The user_id of this NamespaceVo.
         :rtype: str
@@ -377,7 +377,7 @@ class NamespaceVo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this NamespaceVo.
+        r"""Sets the user_id of this NamespaceVo.
 
         :param user_id: The user_id of this NamespaceVo.
         :type user_id: str

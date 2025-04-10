@@ -37,7 +37,7 @@ class CreatePublicZoneReq:
     }
 
     def __init__(self, name=None, description=None, zone_type=None, email=None, ttl=None, enterprise_project_id=None, tags=None):
-        """CreatePublicZoneReq
+        r"""CreatePublicZoneReq
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class CreatePublicZoneReq:
 
     @property
     def name(self):
-        """Gets the name of this CreatePublicZoneReq.
+        r"""Gets the name of this CreatePublicZoneReq.
 
         Zone名称
 
@@ -95,7 +95,7 @@ class CreatePublicZoneReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePublicZoneReq.
+        r"""Sets the name of this CreatePublicZoneReq.
 
         Zone名称
 
@@ -106,7 +106,7 @@ class CreatePublicZoneReq:
 
     @property
     def description(self):
-        """Gets the description of this CreatePublicZoneReq.
+        r"""Gets the description of this CreatePublicZoneReq.
 
         描述
 
@@ -117,7 +117,7 @@ class CreatePublicZoneReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePublicZoneReq.
+        r"""Sets the description of this CreatePublicZoneReq.
 
         描述
 
@@ -128,7 +128,7 @@ class CreatePublicZoneReq:
 
     @property
     def zone_type(self):
-        """Gets the zone_type of this CreatePublicZoneReq.
+        r"""Gets the zone_type of this CreatePublicZoneReq.
 
         域名类型。取值：public。
 
@@ -139,7 +139,7 @@ class CreatePublicZoneReq:
 
     @zone_type.setter
     def zone_type(self, zone_type):
-        """Sets the zone_type of this CreatePublicZoneReq.
+        r"""Sets the zone_type of this CreatePublicZoneReq.
 
         域名类型。取值：public。
 
@@ -150,7 +150,7 @@ class CreatePublicZoneReq:
 
     @property
     def email(self):
-        """Gets the email of this CreatePublicZoneReq.
+        r"""Gets the email of this CreatePublicZoneReq.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -161,7 +161,7 @@ class CreatePublicZoneReq:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this CreatePublicZoneReq.
+        r"""Sets the email of this CreatePublicZoneReq.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -172,7 +172,7 @@ class CreatePublicZoneReq:
 
     @property
     def ttl(self):
-        """Gets the ttl of this CreatePublicZoneReq.
+        r"""Gets the ttl of this CreatePublicZoneReq.
 
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位.
 
@@ -183,7 +183,7 @@ class CreatePublicZoneReq:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this CreatePublicZoneReq.
+        r"""Sets the ttl of this CreatePublicZoneReq.
 
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位.
 
@@ -194,7 +194,7 @@ class CreatePublicZoneReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreatePublicZoneReq.
+        r"""Gets the enterprise_project_id of this CreatePublicZoneReq.
 
         域名关联的企业项目ID，长度不超过36个字符.
 
@@ -205,7 +205,7 @@ class CreatePublicZoneReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreatePublicZoneReq.
+        r"""Sets the enterprise_project_id of this CreatePublicZoneReq.
 
         域名关联的企业项目ID，长度不超过36个字符.
 
@@ -216,7 +216,7 @@ class CreatePublicZoneReq:
 
     @property
     def tags(self):
-        """Gets the tags of this CreatePublicZoneReq.
+        r"""Gets the tags of this CreatePublicZoneReq.
 
         资源标签。
 
@@ -227,7 +227,7 @@ class CreatePublicZoneReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreatePublicZoneReq.
+        r"""Sets the tags of this CreatePublicZoneReq.
 
         资源标签。
 

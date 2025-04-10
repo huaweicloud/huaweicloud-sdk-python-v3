@@ -27,7 +27,7 @@ class RemoveIssuesInfo:
     }
 
     def __init__(self, workitem_list=None, is_delete_case=None):
-        """RemoveIssuesInfo
+        r"""RemoveIssuesInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RemoveIssuesInfo:
 
     @property
     def workitem_list(self):
-        """Gets the workitem_list of this RemoveIssuesInfo.
+        r"""Gets the workitem_list of this RemoveIssuesInfo.
 
         关联需求
 
@@ -60,7 +60,7 @@ class RemoveIssuesInfo:
 
     @workitem_list.setter
     def workitem_list(self, workitem_list):
-        """Sets the workitem_list of this RemoveIssuesInfo.
+        r"""Sets the workitem_list of this RemoveIssuesInfo.
 
         关联需求
 
@@ -71,7 +71,7 @@ class RemoveIssuesInfo:
 
     @property
     def is_delete_case(self):
-        """Gets the is_delete_case of this RemoveIssuesInfo.
+        r"""Gets the is_delete_case of this RemoveIssuesInfo.
 
         是否删除需求关联的用例
 
@@ -82,7 +82,7 @@ class RemoveIssuesInfo:
 
     @is_delete_case.setter
     def is_delete_case(self, is_delete_case):
-        """Sets the is_delete_case of this RemoveIssuesInfo.
+        r"""Sets the is_delete_case of this RemoveIssuesInfo.
 
         是否删除需求关联的用例
 

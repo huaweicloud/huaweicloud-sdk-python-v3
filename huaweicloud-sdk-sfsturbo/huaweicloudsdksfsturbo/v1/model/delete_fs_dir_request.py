@@ -27,7 +27,7 @@ class DeleteFsDirRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """DeleteFsDirRequest
+        r"""DeleteFsDirRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteFsDirRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this DeleteFsDirRequest.
+        r"""Gets the share_id of this DeleteFsDirRequest.
 
         文件系统id
 
@@ -60,7 +60,7 @@ class DeleteFsDirRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this DeleteFsDirRequest.
+        r"""Sets the share_id of this DeleteFsDirRequest.
 
         文件系统id
 
@@ -71,7 +71,7 @@ class DeleteFsDirRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteFsDirRequest.
+        r"""Gets the body of this DeleteFsDirRequest.
 
         :return: The body of this DeleteFsDirRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.DeleteFsDirRequestBody`
@@ -80,7 +80,7 @@ class DeleteFsDirRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteFsDirRequest.
+        r"""Sets the body of this DeleteFsDirRequest.
 
         :param body: The body of this DeleteFsDirRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.DeleteFsDirRequestBody`

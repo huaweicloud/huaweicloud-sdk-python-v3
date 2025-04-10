@@ -39,7 +39,7 @@ class ShowApisDashboardRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, instance_id=None, start_time=None, end_time=None, time_unit=None, limit=None, offset=None):
-        """ShowApisDashboardRequest
+        r"""ShowApisDashboardRequest
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class ShowApisDashboardRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowApisDashboardRequest.
+        r"""Gets the workspace of this ShowApisDashboardRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -99,7 +99,7 @@ class ShowApisDashboardRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowApisDashboardRequest.
+        r"""Sets the workspace of this ShowApisDashboardRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -110,7 +110,7 @@ class ShowApisDashboardRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ShowApisDashboardRequest.
+        r"""Gets the dlm_type of this ShowApisDashboardRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -121,7 +121,7 @@ class ShowApisDashboardRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ShowApisDashboardRequest.
+        r"""Sets the dlm_type of this ShowApisDashboardRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -132,7 +132,7 @@ class ShowApisDashboardRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowApisDashboardRequest.
+        r"""Gets the instance_id of this ShowApisDashboardRequest.
 
         集群编号。
 
@@ -143,7 +143,7 @@ class ShowApisDashboardRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowApisDashboardRequest.
+        r"""Sets the instance_id of this ShowApisDashboardRequest.
 
         集群编号。
 
@@ -154,7 +154,7 @@ class ShowApisDashboardRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowApisDashboardRequest.
+        r"""Gets the start_time of this ShowApisDashboardRequest.
 
         开始时间（13位时间戳）。
 
@@ -165,7 +165,7 @@ class ShowApisDashboardRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowApisDashboardRequest.
+        r"""Sets the start_time of this ShowApisDashboardRequest.
 
         开始时间（13位时间戳）。
 
@@ -176,7 +176,7 @@ class ShowApisDashboardRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowApisDashboardRequest.
+        r"""Gets the end_time of this ShowApisDashboardRequest.
 
         结束时间（13位时间戳）。
 
@@ -187,7 +187,7 @@ class ShowApisDashboardRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowApisDashboardRequest.
+        r"""Sets the end_time of this ShowApisDashboardRequest.
 
         结束时间（13位时间戳）。
 
@@ -198,7 +198,7 @@ class ShowApisDashboardRequest:
 
     @property
     def time_unit(self):
-        """Gets the time_unit of this ShowApisDashboardRequest.
+        r"""Gets the time_unit of this ShowApisDashboardRequest.
 
         时间单位。
 
@@ -209,7 +209,7 @@ class ShowApisDashboardRequest:
 
     @time_unit.setter
     def time_unit(self, time_unit):
-        """Sets the time_unit of this ShowApisDashboardRequest.
+        r"""Sets the time_unit of this ShowApisDashboardRequest.
 
         时间单位。
 
@@ -220,7 +220,7 @@ class ShowApisDashboardRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowApisDashboardRequest.
+        r"""Gets the limit of this ShowApisDashboardRequest.
 
         limit。
 
@@ -231,7 +231,7 @@ class ShowApisDashboardRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowApisDashboardRequest.
+        r"""Sets the limit of this ShowApisDashboardRequest.
 
         limit。
 
@@ -242,7 +242,7 @@ class ShowApisDashboardRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowApisDashboardRequest.
+        r"""Gets the offset of this ShowApisDashboardRequest.
 
         offset。
 
@@ -253,7 +253,7 @@ class ShowApisDashboardRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowApisDashboardRequest.
+        r"""Sets the offset of this ShowApisDashboardRequest.
 
         offset。
 

@@ -27,7 +27,7 @@ class DeleteProtectedInstanceRequestBody:
     }
 
     def __init__(self, delete_target_server=None, delete_target_eip=None):
-        """DeleteProtectedInstanceRequestBody
+        r"""DeleteProtectedInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteProtectedInstanceRequestBody:
 
     @property
     def delete_target_server(self):
-        """Gets the delete_target_server of this DeleteProtectedInstanceRequestBody.
+        r"""Gets the delete_target_server of this DeleteProtectedInstanceRequestBody.
 
         是否删除容灾站点服务器，默认值为false。
 
@@ -61,7 +61,7 @@ class DeleteProtectedInstanceRequestBody:
 
     @delete_target_server.setter
     def delete_target_server(self, delete_target_server):
-        """Sets the delete_target_server of this DeleteProtectedInstanceRequestBody.
+        r"""Sets the delete_target_server of this DeleteProtectedInstanceRequestBody.
 
         是否删除容灾站点服务器，默认值为false。
 
@@ -72,7 +72,7 @@ class DeleteProtectedInstanceRequestBody:
 
     @property
     def delete_target_eip(self):
-        """Gets the delete_target_eip of this DeleteProtectedInstanceRequestBody.
+        r"""Gets the delete_target_eip of this DeleteProtectedInstanceRequestBody.
 
         是否删除容灾站点弹性IP，默认值为false。
 
@@ -83,7 +83,7 @@ class DeleteProtectedInstanceRequestBody:
 
     @delete_target_eip.setter
     def delete_target_eip(self, delete_target_eip):
-        """Sets the delete_target_eip of this DeleteProtectedInstanceRequestBody.
+        r"""Sets the delete_target_eip of this DeleteProtectedInstanceRequestBody.
 
         是否删除容灾站点弹性IP，默认值为false。
 

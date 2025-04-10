@@ -145,7 +145,7 @@ class DimensionLogicTableVO:
     }
 
     def __init__(self, id=None, tb_name=None, tb_logic_name=None, l1_id=None, l2_id=None, l3_id=None, create_by=None, description=None, dimension_id=None, owner=None, dimension_type=None, code_table_id=None, code_table=None, queue_name=None, dw_id=None, reversed=None, partition_conf=None, dirty_out_switch=None, dirty_out_database=None, dirty_out_prefix=None, dirty_out_suffix=None, db_name=None, tb_id=None, schema=None, table_type=None, status=None, tb_guid=None, tb_logic_guid=None, dimension_name=None, attributes=None, dw_type=None, dw_name=None, l1=None, l2=None, l3=None, create_time=None, update_time=None, approval_info=None, new_biz=None, physical_table=None, dev_physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, materialization=None, summary_status=None, distribute=None, distribute_column=None, quality_id=None, alias=None, self_defined_fields=None, obs_location=None, configs=None, dev_version=None, prod_version=None, dev_version_name=None, prod_version_name=None, env_type=None, model_id=None, model=None):
-        """DimensionLogicTableVO
+        r"""DimensionLogicTableVO
 
         The model defined in huaweicloud sdk
 
@@ -463,7 +463,7 @@ class DimensionLogicTableVO:
 
     @property
     def id(self):
-        """Gets the id of this DimensionLogicTableVO.
+        r"""Gets the id of this DimensionLogicTableVO.
 
         表ID
 
@@ -474,7 +474,7 @@ class DimensionLogicTableVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DimensionLogicTableVO.
+        r"""Sets the id of this DimensionLogicTableVO.
 
         表ID
 
@@ -485,7 +485,7 @@ class DimensionLogicTableVO:
 
     @property
     def tb_name(self):
-        """Gets the tb_name of this DimensionLogicTableVO.
+        r"""Gets the tb_name of this DimensionLogicTableVO.
 
         表名称。
 
@@ -496,7 +496,7 @@ class DimensionLogicTableVO:
 
     @tb_name.setter
     def tb_name(self, tb_name):
-        """Sets the tb_name of this DimensionLogicTableVO.
+        r"""Sets the tb_name of this DimensionLogicTableVO.
 
         表名称。
 
@@ -507,7 +507,7 @@ class DimensionLogicTableVO:
 
     @property
     def tb_logic_name(self):
-        """Gets the tb_logic_name of this DimensionLogicTableVO.
+        r"""Gets the tb_logic_name of this DimensionLogicTableVO.
 
         逻辑实体名。
 
@@ -518,7 +518,7 @@ class DimensionLogicTableVO:
 
     @tb_logic_name.setter
     def tb_logic_name(self, tb_logic_name):
-        """Sets the tb_logic_name of this DimensionLogicTableVO.
+        r"""Sets the tb_logic_name of this DimensionLogicTableVO.
 
         逻辑实体名。
 
@@ -529,7 +529,7 @@ class DimensionLogicTableVO:
 
     @property
     def l1_id(self):
-        """Gets the l1_id of this DimensionLogicTableVO.
+        r"""Gets the l1_id of this DimensionLogicTableVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -540,7 +540,7 @@ class DimensionLogicTableVO:
 
     @l1_id.setter
     def l1_id(self, l1_id):
-        """Sets the l1_id of this DimensionLogicTableVO.
+        r"""Sets the l1_id of this DimensionLogicTableVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -551,7 +551,7 @@ class DimensionLogicTableVO:
 
     @property
     def l2_id(self):
-        """Gets the l2_id of this DimensionLogicTableVO.
+        r"""Gets the l2_id of this DimensionLogicTableVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -562,7 +562,7 @@ class DimensionLogicTableVO:
 
     @l2_id.setter
     def l2_id(self, l2_id):
-        """Sets the l2_id of this DimensionLogicTableVO.
+        r"""Sets the l2_id of this DimensionLogicTableVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -573,7 +573,7 @@ class DimensionLogicTableVO:
 
     @property
     def l3_id(self):
-        """Gets the l3_id of this DimensionLogicTableVO.
+        r"""Gets the l3_id of this DimensionLogicTableVO.
 
         业务对象ID，ID字符串。
 
@@ -584,7 +584,7 @@ class DimensionLogicTableVO:
 
     @l3_id.setter
     def l3_id(self, l3_id):
-        """Sets the l3_id of this DimensionLogicTableVO.
+        r"""Sets the l3_id of this DimensionLogicTableVO.
 
         业务对象ID，ID字符串。
 
@@ -595,7 +595,7 @@ class DimensionLogicTableVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this DimensionLogicTableVO.
+        r"""Gets the create_by of this DimensionLogicTableVO.
 
         创建人。
 
@@ -606,7 +606,7 @@ class DimensionLogicTableVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this DimensionLogicTableVO.
+        r"""Sets the create_by of this DimensionLogicTableVO.
 
         创建人。
 
@@ -617,7 +617,7 @@ class DimensionLogicTableVO:
 
     @property
     def description(self):
-        """Gets the description of this DimensionLogicTableVO.
+        r"""Gets the description of this DimensionLogicTableVO.
 
         描述。
 
@@ -628,7 +628,7 @@ class DimensionLogicTableVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DimensionLogicTableVO.
+        r"""Sets the description of this DimensionLogicTableVO.
 
         描述。
 
@@ -639,7 +639,7 @@ class DimensionLogicTableVO:
 
     @property
     def dimension_id(self):
-        """Gets the dimension_id of this DimensionLogicTableVO.
+        r"""Gets the dimension_id of this DimensionLogicTableVO.
 
         所属维度ID，ID字符串。
 
@@ -650,7 +650,7 @@ class DimensionLogicTableVO:
 
     @dimension_id.setter
     def dimension_id(self, dimension_id):
-        """Sets the dimension_id of this DimensionLogicTableVO.
+        r"""Sets the dimension_id of this DimensionLogicTableVO.
 
         所属维度ID，ID字符串。
 
@@ -661,7 +661,7 @@ class DimensionLogicTableVO:
 
     @property
     def owner(self):
-        """Gets the owner of this DimensionLogicTableVO.
+        r"""Gets the owner of this DimensionLogicTableVO.
 
         资产责任人。
 
@@ -672,7 +672,7 @@ class DimensionLogicTableVO:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this DimensionLogicTableVO.
+        r"""Sets the owner of this DimensionLogicTableVO.
 
         资产责任人。
 
@@ -683,7 +683,7 @@ class DimensionLogicTableVO:
 
     @property
     def dimension_type(self):
-        """Gets the dimension_type of this DimensionLogicTableVO.
+        r"""Gets the dimension_type of this DimensionLogicTableVO.
 
         维度类型。 枚举值：   - COMMON: 普通维度   - LOOKUP: 码表维度   - HIERARCHIES: 层级维度 
 
@@ -694,7 +694,7 @@ class DimensionLogicTableVO:
 
     @dimension_type.setter
     def dimension_type(self, dimension_type):
-        """Sets the dimension_type of this DimensionLogicTableVO.
+        r"""Sets the dimension_type of this DimensionLogicTableVO.
 
         维度类型。 枚举值：   - COMMON: 普通维度   - LOOKUP: 码表维度   - HIERARCHIES: 层级维度 
 
@@ -705,7 +705,7 @@ class DimensionLogicTableVO:
 
     @property
     def code_table_id(self):
-        """Gets the code_table_id of this DimensionLogicTableVO.
+        r"""Gets the code_table_id of this DimensionLogicTableVO.
 
         引用码表ID，ID字符串。
 
@@ -716,7 +716,7 @@ class DimensionLogicTableVO:
 
     @code_table_id.setter
     def code_table_id(self, code_table_id):
-        """Sets the code_table_id of this DimensionLogicTableVO.
+        r"""Sets the code_table_id of this DimensionLogicTableVO.
 
         引用码表ID，ID字符串。
 
@@ -727,7 +727,7 @@ class DimensionLogicTableVO:
 
     @property
     def code_table(self):
-        """Gets the code_table of this DimensionLogicTableVO.
+        r"""Gets the code_table of this DimensionLogicTableVO.
 
         :return: The code_table of this DimensionLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CodeTableVO`
@@ -736,7 +736,7 @@ class DimensionLogicTableVO:
 
     @code_table.setter
     def code_table(self, code_table):
-        """Sets the code_table of this DimensionLogicTableVO.
+        r"""Sets the code_table of this DimensionLogicTableVO.
 
         :param code_table: The code_table of this DimensionLogicTableVO.
         :type code_table: :class:`huaweicloudsdkdataartsstudio.v1.CodeTableVO`
@@ -745,7 +745,7 @@ class DimensionLogicTableVO:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this DimensionLogicTableVO.
+        r"""Gets the queue_name of this DimensionLogicTableVO.
 
         dli数据连接执行sql所需的队列，数据连接类型为DLI时必须。
 
@@ -756,7 +756,7 @@ class DimensionLogicTableVO:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this DimensionLogicTableVO.
+        r"""Sets the queue_name of this DimensionLogicTableVO.
 
         dli数据连接执行sql所需的队列，数据连接类型为DLI时必须。
 
@@ -767,7 +767,7 @@ class DimensionLogicTableVO:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this DimensionLogicTableVO.
+        r"""Gets the dw_id of this DimensionLogicTableVO.
 
         数据连接ID。
 
@@ -778,7 +778,7 @@ class DimensionLogicTableVO:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this DimensionLogicTableVO.
+        r"""Sets the dw_id of this DimensionLogicTableVO.
 
         数据连接ID。
 
@@ -789,7 +789,7 @@ class DimensionLogicTableVO:
 
     @property
     def reversed(self):
-        """Gets the reversed of this DimensionLogicTableVO.
+        r"""Gets the reversed of this DimensionLogicTableVO.
 
         是否是逆向的。
 
@@ -800,7 +800,7 @@ class DimensionLogicTableVO:
 
     @reversed.setter
     def reversed(self, reversed):
-        """Sets the reversed of this DimensionLogicTableVO.
+        r"""Sets the reversed of this DimensionLogicTableVO.
 
         是否是逆向的。
 
@@ -811,7 +811,7 @@ class DimensionLogicTableVO:
 
     @property
     def partition_conf(self):
-        """Gets the partition_conf of this DimensionLogicTableVO.
+        r"""Gets the partition_conf of this DimensionLogicTableVO.
 
         分区表达式。
 
@@ -822,7 +822,7 @@ class DimensionLogicTableVO:
 
     @partition_conf.setter
     def partition_conf(self, partition_conf):
-        """Sets the partition_conf of this DimensionLogicTableVO.
+        r"""Sets the partition_conf of this DimensionLogicTableVO.
 
         分区表达式。
 
@@ -833,7 +833,7 @@ class DimensionLogicTableVO:
 
     @property
     def dirty_out_switch(self):
-        """Gets the dirty_out_switch of this DimensionLogicTableVO.
+        r"""Gets the dirty_out_switch of this DimensionLogicTableVO.
 
         异常数据输出开关。
 
@@ -844,7 +844,7 @@ class DimensionLogicTableVO:
 
     @dirty_out_switch.setter
     def dirty_out_switch(self, dirty_out_switch):
-        """Sets the dirty_out_switch of this DimensionLogicTableVO.
+        r"""Sets the dirty_out_switch of this DimensionLogicTableVO.
 
         异常数据输出开关。
 
@@ -855,7 +855,7 @@ class DimensionLogicTableVO:
 
     @property
     def dirty_out_database(self):
-        """Gets the dirty_out_database of this DimensionLogicTableVO.
+        r"""Gets the dirty_out_database of this DimensionLogicTableVO.
 
         异常数据输出库。
 
@@ -866,7 +866,7 @@ class DimensionLogicTableVO:
 
     @dirty_out_database.setter
     def dirty_out_database(self, dirty_out_database):
-        """Sets the dirty_out_database of this DimensionLogicTableVO.
+        r"""Sets the dirty_out_database of this DimensionLogicTableVO.
 
         异常数据输出库。
 
@@ -877,7 +877,7 @@ class DimensionLogicTableVO:
 
     @property
     def dirty_out_prefix(self):
-        """Gets the dirty_out_prefix of this DimensionLogicTableVO.
+        r"""Gets the dirty_out_prefix of this DimensionLogicTableVO.
 
         异常表前缀。
 
@@ -888,7 +888,7 @@ class DimensionLogicTableVO:
 
     @dirty_out_prefix.setter
     def dirty_out_prefix(self, dirty_out_prefix):
-        """Sets the dirty_out_prefix of this DimensionLogicTableVO.
+        r"""Sets the dirty_out_prefix of this DimensionLogicTableVO.
 
         异常表前缀。
 
@@ -899,7 +899,7 @@ class DimensionLogicTableVO:
 
     @property
     def dirty_out_suffix(self):
-        """Gets the dirty_out_suffix of this DimensionLogicTableVO.
+        r"""Gets the dirty_out_suffix of this DimensionLogicTableVO.
 
         异常表后缀。
 
@@ -910,7 +910,7 @@ class DimensionLogicTableVO:
 
     @dirty_out_suffix.setter
     def dirty_out_suffix(self, dirty_out_suffix):
-        """Sets the dirty_out_suffix of this DimensionLogicTableVO.
+        r"""Sets the dirty_out_suffix of this DimensionLogicTableVO.
 
         异常表后缀。
 
@@ -921,7 +921,7 @@ class DimensionLogicTableVO:
 
     @property
     def db_name(self):
-        """Gets the db_name of this DimensionLogicTableVO.
+        r"""Gets the db_name of this DimensionLogicTableVO.
 
         库名。
 
@@ -932,7 +932,7 @@ class DimensionLogicTableVO:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this DimensionLogicTableVO.
+        r"""Sets the db_name of this DimensionLogicTableVO.
 
         库名。
 
@@ -943,7 +943,7 @@ class DimensionLogicTableVO:
 
     @property
     def tb_id(self):
-        """Gets the tb_id of this DimensionLogicTableVO.
+        r"""Gets the tb_id of this DimensionLogicTableVO.
 
         数据表ID，只读。
 
@@ -954,7 +954,7 @@ class DimensionLogicTableVO:
 
     @tb_id.setter
     def tb_id(self, tb_id):
-        """Sets the tb_id of this DimensionLogicTableVO.
+        r"""Sets the tb_id of this DimensionLogicTableVO.
 
         数据表ID，只读。
 
@@ -965,7 +965,7 @@ class DimensionLogicTableVO:
 
     @property
     def schema(self):
-        """Gets the schema of this DimensionLogicTableVO.
+        r"""Gets the schema of this DimensionLogicTableVO.
 
         DWS类型需要。
 
@@ -976,7 +976,7 @@ class DimensionLogicTableVO:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this DimensionLogicTableVO.
+        r"""Sets the schema of this DimensionLogicTableVO.
 
         DWS类型需要。
 
@@ -987,7 +987,7 @@ class DimensionLogicTableVO:
 
     @property
     def table_type(self):
-        """Gets the table_type of this DimensionLogicTableVO.
+        r"""Gets the table_type of this DimensionLogicTableVO.
 
         表类型。
 
@@ -998,7 +998,7 @@ class DimensionLogicTableVO:
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this DimensionLogicTableVO.
+        r"""Sets the table_type of this DimensionLogicTableVO.
 
         表类型。
 
@@ -1009,7 +1009,7 @@ class DimensionLogicTableVO:
 
     @property
     def status(self):
-        """Gets the status of this DimensionLogicTableVO.
+        r"""Gets the status of this DimensionLogicTableVO.
 
         :return: The status of this DimensionLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -1018,7 +1018,7 @@ class DimensionLogicTableVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DimensionLogicTableVO.
+        r"""Sets the status of this DimensionLogicTableVO.
 
         :param status: The status of this DimensionLogicTableVO.
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -1027,7 +1027,7 @@ class DimensionLogicTableVO:
 
     @property
     def tb_guid(self):
-        """Gets the tb_guid of this DimensionLogicTableVO.
+        r"""Gets the tb_guid of this DimensionLogicTableVO.
 
         表发布后，创建的数据目录技术资产guid，只读，创建和更新时无需填写。
 
@@ -1038,7 +1038,7 @@ class DimensionLogicTableVO:
 
     @tb_guid.setter
     def tb_guid(self, tb_guid):
-        """Sets the tb_guid of this DimensionLogicTableVO.
+        r"""Sets the tb_guid of this DimensionLogicTableVO.
 
         表发布后，创建的数据目录技术资产guid，只读，创建和更新时无需填写。
 
@@ -1049,7 +1049,7 @@ class DimensionLogicTableVO:
 
     @property
     def tb_logic_guid(self):
-        """Gets the tb_logic_guid of this DimensionLogicTableVO.
+        r"""Gets the tb_logic_guid of this DimensionLogicTableVO.
 
         表发布后，创建的数据目录业务资产guid，只读，创建和更新时无需填写。
 
@@ -1060,7 +1060,7 @@ class DimensionLogicTableVO:
 
     @tb_logic_guid.setter
     def tb_logic_guid(self, tb_logic_guid):
-        """Sets the tb_logic_guid of this DimensionLogicTableVO.
+        r"""Sets the tb_logic_guid of this DimensionLogicTableVO.
 
         表发布后，创建的数据目录业务资产guid，只读，创建和更新时无需填写。
 
@@ -1071,7 +1071,7 @@ class DimensionLogicTableVO:
 
     @property
     def dimension_name(self):
-        """Gets the dimension_name of this DimensionLogicTableVO.
+        r"""Gets the dimension_name of this DimensionLogicTableVO.
 
         关联维度名称，只读。
 
@@ -1082,7 +1082,7 @@ class DimensionLogicTableVO:
 
     @dimension_name.setter
     def dimension_name(self, dimension_name):
-        """Sets the dimension_name of this DimensionLogicTableVO.
+        r"""Sets the dimension_name of this DimensionLogicTableVO.
 
         关联维度名称，只读。
 
@@ -1093,7 +1093,7 @@ class DimensionLogicTableVO:
 
     @property
     def attributes(self):
-        """Gets the attributes of this DimensionLogicTableVO.
+        r"""Gets the attributes of this DimensionLogicTableVO.
 
         字段属性。
 
@@ -1104,7 +1104,7 @@ class DimensionLogicTableVO:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this DimensionLogicTableVO.
+        r"""Sets the attributes of this DimensionLogicTableVO.
 
         字段属性。
 
@@ -1115,7 +1115,7 @@ class DimensionLogicTableVO:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this DimensionLogicTableVO.
+        r"""Gets the dw_type of this DimensionLogicTableVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -1126,7 +1126,7 @@ class DimensionLogicTableVO:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this DimensionLogicTableVO.
+        r"""Sets the dw_type of this DimensionLogicTableVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -1137,7 +1137,7 @@ class DimensionLogicTableVO:
 
     @property
     def dw_name(self):
-        """Gets the dw_name of this DimensionLogicTableVO.
+        r"""Gets the dw_name of this DimensionLogicTableVO.
 
         数据连接名称，只读，创建和更新时无需填写。
 
@@ -1148,7 +1148,7 @@ class DimensionLogicTableVO:
 
     @dw_name.setter
     def dw_name(self, dw_name):
-        """Sets the dw_name of this DimensionLogicTableVO.
+        r"""Sets the dw_name of this DimensionLogicTableVO.
 
         数据连接名称，只读，创建和更新时无需填写。
 
@@ -1159,7 +1159,7 @@ class DimensionLogicTableVO:
 
     @property
     def l1(self):
-        """Gets the l1 of this DimensionLogicTableVO.
+        r"""Gets the l1 of this DimensionLogicTableVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -1170,7 +1170,7 @@ class DimensionLogicTableVO:
 
     @l1.setter
     def l1(self, l1):
-        """Sets the l1 of this DimensionLogicTableVO.
+        r"""Sets the l1 of this DimensionLogicTableVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -1181,7 +1181,7 @@ class DimensionLogicTableVO:
 
     @property
     def l2(self):
-        """Gets the l2 of this DimensionLogicTableVO.
+        r"""Gets the l2 of this DimensionLogicTableVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -1192,7 +1192,7 @@ class DimensionLogicTableVO:
 
     @l2.setter
     def l2(self, l2):
-        """Sets the l2 of this DimensionLogicTableVO.
+        r"""Sets the l2 of this DimensionLogicTableVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -1203,7 +1203,7 @@ class DimensionLogicTableVO:
 
     @property
     def l3(self):
-        """Gets the l3 of this DimensionLogicTableVO.
+        r"""Gets the l3 of this DimensionLogicTableVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -1214,7 +1214,7 @@ class DimensionLogicTableVO:
 
     @l3.setter
     def l3(self, l3):
-        """Sets the l3 of this DimensionLogicTableVO.
+        r"""Sets the l3 of this DimensionLogicTableVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -1225,7 +1225,7 @@ class DimensionLogicTableVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DimensionLogicTableVO.
+        r"""Gets the create_time of this DimensionLogicTableVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -1236,7 +1236,7 @@ class DimensionLogicTableVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DimensionLogicTableVO.
+        r"""Sets the create_time of this DimensionLogicTableVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -1247,7 +1247,7 @@ class DimensionLogicTableVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DimensionLogicTableVO.
+        r"""Gets the update_time of this DimensionLogicTableVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -1258,7 +1258,7 @@ class DimensionLogicTableVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DimensionLogicTableVO.
+        r"""Sets the update_time of this DimensionLogicTableVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -1269,7 +1269,7 @@ class DimensionLogicTableVO:
 
     @property
     def approval_info(self):
-        """Gets the approval_info of this DimensionLogicTableVO.
+        r"""Gets the approval_info of this DimensionLogicTableVO.
 
         :return: The approval_info of this DimensionLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -1278,7 +1278,7 @@ class DimensionLogicTableVO:
 
     @approval_info.setter
     def approval_info(self, approval_info):
-        """Sets the approval_info of this DimensionLogicTableVO.
+        r"""Sets the approval_info of this DimensionLogicTableVO.
 
         :param approval_info: The approval_info of this DimensionLogicTableVO.
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -1287,7 +1287,7 @@ class DimensionLogicTableVO:
 
     @property
     def new_biz(self):
-        """Gets the new_biz of this DimensionLogicTableVO.
+        r"""Gets the new_biz of this DimensionLogicTableVO.
 
         :return: The new_biz of this DimensionLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -1296,7 +1296,7 @@ class DimensionLogicTableVO:
 
     @new_biz.setter
     def new_biz(self, new_biz):
-        """Sets the new_biz of this DimensionLogicTableVO.
+        r"""Sets the new_biz of this DimensionLogicTableVO.
 
         :param new_biz: The new_biz of this DimensionLogicTableVO.
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -1305,7 +1305,7 @@ class DimensionLogicTableVO:
 
     @property
     def physical_table(self):
-        """Gets the physical_table of this DimensionLogicTableVO.
+        r"""Gets the physical_table of this DimensionLogicTableVO.
 
         :return: The physical_table of this DimensionLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1314,7 +1314,7 @@ class DimensionLogicTableVO:
 
     @physical_table.setter
     def physical_table(self, physical_table):
-        """Sets the physical_table of this DimensionLogicTableVO.
+        r"""Sets the physical_table of this DimensionLogicTableVO.
 
         :param physical_table: The physical_table of this DimensionLogicTableVO.
         :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1323,7 +1323,7 @@ class DimensionLogicTableVO:
 
     @property
     def dev_physical_table(self):
-        """Gets the dev_physical_table of this DimensionLogicTableVO.
+        r"""Gets the dev_physical_table of this DimensionLogicTableVO.
 
         :return: The dev_physical_table of this DimensionLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1332,7 +1332,7 @@ class DimensionLogicTableVO:
 
     @dev_physical_table.setter
     def dev_physical_table(self, dev_physical_table):
-        """Sets the dev_physical_table of this DimensionLogicTableVO.
+        r"""Sets the dev_physical_table of this DimensionLogicTableVO.
 
         :param dev_physical_table: The dev_physical_table of this DimensionLogicTableVO.
         :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1341,7 +1341,7 @@ class DimensionLogicTableVO:
 
     @property
     def technical_asset(self):
-        """Gets the technical_asset of this DimensionLogicTableVO.
+        r"""Gets the technical_asset of this DimensionLogicTableVO.
 
         :return: The technical_asset of this DimensionLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1350,7 +1350,7 @@ class DimensionLogicTableVO:
 
     @technical_asset.setter
     def technical_asset(self, technical_asset):
-        """Sets the technical_asset of this DimensionLogicTableVO.
+        r"""Sets the technical_asset of this DimensionLogicTableVO.
 
         :param technical_asset: The technical_asset of this DimensionLogicTableVO.
         :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1359,7 +1359,7 @@ class DimensionLogicTableVO:
 
     @property
     def business_asset(self):
-        """Gets the business_asset of this DimensionLogicTableVO.
+        r"""Gets the business_asset of this DimensionLogicTableVO.
 
         :return: The business_asset of this DimensionLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1368,7 +1368,7 @@ class DimensionLogicTableVO:
 
     @business_asset.setter
     def business_asset(self, business_asset):
-        """Sets the business_asset of this DimensionLogicTableVO.
+        r"""Sets the business_asset of this DimensionLogicTableVO.
 
         :param business_asset: The business_asset of this DimensionLogicTableVO.
         :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1377,7 +1377,7 @@ class DimensionLogicTableVO:
 
     @property
     def meta_data_link(self):
-        """Gets the meta_data_link of this DimensionLogicTableVO.
+        r"""Gets the meta_data_link of this DimensionLogicTableVO.
 
         :return: The meta_data_link of this DimensionLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1386,7 +1386,7 @@ class DimensionLogicTableVO:
 
     @meta_data_link.setter
     def meta_data_link(self, meta_data_link):
-        """Sets the meta_data_link of this DimensionLogicTableVO.
+        r"""Sets the meta_data_link of this DimensionLogicTableVO.
 
         :param meta_data_link: The meta_data_link of this DimensionLogicTableVO.
         :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1395,7 +1395,7 @@ class DimensionLogicTableVO:
 
     @property
     def data_quality(self):
-        """Gets the data_quality of this DimensionLogicTableVO.
+        r"""Gets the data_quality of this DimensionLogicTableVO.
 
         :return: The data_quality of this DimensionLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1404,7 +1404,7 @@ class DimensionLogicTableVO:
 
     @data_quality.setter
     def data_quality(self, data_quality):
-        """Sets the data_quality of this DimensionLogicTableVO.
+        r"""Sets the data_quality of this DimensionLogicTableVO.
 
         :param data_quality: The data_quality of this DimensionLogicTableVO.
         :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1413,7 +1413,7 @@ class DimensionLogicTableVO:
 
     @property
     def materialization(self):
-        """Gets the materialization of this DimensionLogicTableVO.
+        r"""Gets the materialization of this DimensionLogicTableVO.
 
         :return: The materialization of this DimensionLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1422,7 +1422,7 @@ class DimensionLogicTableVO:
 
     @materialization.setter
     def materialization(self, materialization):
-        """Sets the materialization of this DimensionLogicTableVO.
+        r"""Sets the materialization of this DimensionLogicTableVO.
 
         :param materialization: The materialization of this DimensionLogicTableVO.
         :type materialization: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1431,7 +1431,7 @@ class DimensionLogicTableVO:
 
     @property
     def summary_status(self):
-        """Gets the summary_status of this DimensionLogicTableVO.
+        r"""Gets the summary_status of this DimensionLogicTableVO.
 
         :return: The summary_status of this DimensionLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1440,7 +1440,7 @@ class DimensionLogicTableVO:
 
     @summary_status.setter
     def summary_status(self, summary_status):
-        """Sets the summary_status of this DimensionLogicTableVO.
+        r"""Sets the summary_status of this DimensionLogicTableVO.
 
         :param summary_status: The summary_status of this DimensionLogicTableVO.
         :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1449,7 +1449,7 @@ class DimensionLogicTableVO:
 
     @property
     def distribute(self):
-        """Gets the distribute of this DimensionLogicTableVO.
+        r"""Gets the distribute of this DimensionLogicTableVO.
 
         DISTRIBUTE BY [HASH(column)|REPLICATION]。 枚举值：   - HASH: 对指定的列进行Hash，通过映射，把数据分布到指定DN   - REPLICATION: 表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据 
 
@@ -1460,7 +1460,7 @@ class DimensionLogicTableVO:
 
     @distribute.setter
     def distribute(self, distribute):
-        """Sets the distribute of this DimensionLogicTableVO.
+        r"""Sets the distribute of this DimensionLogicTableVO.
 
         DISTRIBUTE BY [HASH(column)|REPLICATION]。 枚举值：   - HASH: 对指定的列进行Hash，通过映射，把数据分布到指定DN   - REPLICATION: 表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据 
 
@@ -1471,7 +1471,7 @@ class DimensionLogicTableVO:
 
     @property
     def distribute_column(self):
-        """Gets the distribute_column of this DimensionLogicTableVO.
+        r"""Gets the distribute_column of this DimensionLogicTableVO.
 
         DISTRIBUTE BY HASH column.
 
@@ -1482,7 +1482,7 @@ class DimensionLogicTableVO:
 
     @distribute_column.setter
     def distribute_column(self, distribute_column):
-        """Sets the distribute_column of this DimensionLogicTableVO.
+        r"""Sets the distribute_column of this DimensionLogicTableVO.
 
         DISTRIBUTE BY HASH column.
 
@@ -1493,7 +1493,7 @@ class DimensionLogicTableVO:
 
     @property
     def quality_id(self):
-        """Gets the quality_id of this DimensionLogicTableVO.
+        r"""Gets the quality_id of this DimensionLogicTableVO.
 
         质量ID，ID字符串。
 
@@ -1504,7 +1504,7 @@ class DimensionLogicTableVO:
 
     @quality_id.setter
     def quality_id(self, quality_id):
-        """Sets the quality_id of this DimensionLogicTableVO.
+        r"""Sets the quality_id of this DimensionLogicTableVO.
 
         质量ID，ID字符串。
 
@@ -1515,7 +1515,7 @@ class DimensionLogicTableVO:
 
     @property
     def alias(self):
-        """Gets the alias of this DimensionLogicTableVO.
+        r"""Gets the alias of this DimensionLogicTableVO.
 
         别名。
 
@@ -1526,7 +1526,7 @@ class DimensionLogicTableVO:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this DimensionLogicTableVO.
+        r"""Sets the alias of this DimensionLogicTableVO.
 
         别名。
 
@@ -1537,7 +1537,7 @@ class DimensionLogicTableVO:
 
     @property
     def self_defined_fields(self):
-        """Gets the self_defined_fields of this DimensionLogicTableVO.
+        r"""Gets the self_defined_fields of this DimensionLogicTableVO.
 
         自定义项。
 
@@ -1548,7 +1548,7 @@ class DimensionLogicTableVO:
 
     @self_defined_fields.setter
     def self_defined_fields(self, self_defined_fields):
-        """Sets the self_defined_fields of this DimensionLogicTableVO.
+        r"""Sets the self_defined_fields of this DimensionLogicTableVO.
 
         自定义项。
 
@@ -1559,7 +1559,7 @@ class DimensionLogicTableVO:
 
     @property
     def obs_location(self):
-        """Gets the obs_location of this DimensionLogicTableVO.
+        r"""Gets the obs_location of this DimensionLogicTableVO.
 
         外表路径
 
@@ -1570,7 +1570,7 @@ class DimensionLogicTableVO:
 
     @obs_location.setter
     def obs_location(self, obs_location):
-        """Sets the obs_location of this DimensionLogicTableVO.
+        r"""Sets the obs_location of this DimensionLogicTableVO.
 
         外表路径
 
@@ -1581,7 +1581,7 @@ class DimensionLogicTableVO:
 
     @property
     def configs(self):
-        """Gets the configs of this DimensionLogicTableVO.
+        r"""Gets the configs of this DimensionLogicTableVO.
 
         其他配置
 
@@ -1592,7 +1592,7 @@ class DimensionLogicTableVO:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this DimensionLogicTableVO.
+        r"""Sets the configs of this DimensionLogicTableVO.
 
         其他配置
 
@@ -1603,7 +1603,7 @@ class DimensionLogicTableVO:
 
     @property
     def dev_version(self):
-        """Gets the dev_version of this DimensionLogicTableVO.
+        r"""Gets the dev_version of this DimensionLogicTableVO.
 
         开发环境版本，ID字符串。
 
@@ -1614,7 +1614,7 @@ class DimensionLogicTableVO:
 
     @dev_version.setter
     def dev_version(self, dev_version):
-        """Sets the dev_version of this DimensionLogicTableVO.
+        r"""Sets the dev_version of this DimensionLogicTableVO.
 
         开发环境版本，ID字符串。
 
@@ -1625,7 +1625,7 @@ class DimensionLogicTableVO:
 
     @property
     def prod_version(self):
-        """Gets the prod_version of this DimensionLogicTableVO.
+        r"""Gets the prod_version of this DimensionLogicTableVO.
 
         生产环境版本，ID字符串
 
@@ -1636,7 +1636,7 @@ class DimensionLogicTableVO:
 
     @prod_version.setter
     def prod_version(self, prod_version):
-        """Sets the prod_version of this DimensionLogicTableVO.
+        r"""Sets the prod_version of this DimensionLogicTableVO.
 
         生产环境版本，ID字符串
 
@@ -1647,7 +1647,7 @@ class DimensionLogicTableVO:
 
     @property
     def dev_version_name(self):
-        """Gets the dev_version_name of this DimensionLogicTableVO.
+        r"""Gets the dev_version_name of this DimensionLogicTableVO.
 
         开发环境版本名称
 
@@ -1658,7 +1658,7 @@ class DimensionLogicTableVO:
 
     @dev_version_name.setter
     def dev_version_name(self, dev_version_name):
-        """Sets the dev_version_name of this DimensionLogicTableVO.
+        r"""Sets the dev_version_name of this DimensionLogicTableVO.
 
         开发环境版本名称
 
@@ -1669,7 +1669,7 @@ class DimensionLogicTableVO:
 
     @property
     def prod_version_name(self):
-        """Gets the prod_version_name of this DimensionLogicTableVO.
+        r"""Gets the prod_version_name of this DimensionLogicTableVO.
 
         生产环境版本名称
 
@@ -1680,7 +1680,7 @@ class DimensionLogicTableVO:
 
     @prod_version_name.setter
     def prod_version_name(self, prod_version_name):
-        """Sets the prod_version_name of this DimensionLogicTableVO.
+        r"""Sets the prod_version_name of this DimensionLogicTableVO.
 
         生产环境版本名称
 
@@ -1691,7 +1691,7 @@ class DimensionLogicTableVO:
 
     @property
     def env_type(self):
-        """Gets the env_type of this DimensionLogicTableVO.
+        r"""Gets the env_type of this DimensionLogicTableVO.
 
         :return: The env_type of this DimensionLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
@@ -1700,7 +1700,7 @@ class DimensionLogicTableVO:
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this DimensionLogicTableVO.
+        r"""Sets the env_type of this DimensionLogicTableVO.
 
         :param env_type: The env_type of this DimensionLogicTableVO.
         :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
@@ -1709,7 +1709,7 @@ class DimensionLogicTableVO:
 
     @property
     def model_id(self):
-        """Gets the model_id of this DimensionLogicTableVO.
+        r"""Gets the model_id of this DimensionLogicTableVO.
 
         所属模型ID，ID字符串。
 
@@ -1720,7 +1720,7 @@ class DimensionLogicTableVO:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this DimensionLogicTableVO.
+        r"""Sets the model_id of this DimensionLogicTableVO.
 
         所属模型ID，ID字符串。
 
@@ -1731,7 +1731,7 @@ class DimensionLogicTableVO:
 
     @property
     def model(self):
-        """Gets the model of this DimensionLogicTableVO.
+        r"""Gets the model of this DimensionLogicTableVO.
 
         :return: The model of this DimensionLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
@@ -1740,7 +1740,7 @@ class DimensionLogicTableVO:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this DimensionLogicTableVO.
+        r"""Sets the model of this DimensionLogicTableVO.
 
         :param model: The model of this DimensionLogicTableVO.
         :type model: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`

@@ -25,7 +25,7 @@ class BatchCreateCn:
     }
 
     def __init__(self, num=None):
-        """BatchCreateCn
+        r"""BatchCreateCn
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchCreateCn:
 
     @property
     def num(self):
-        """Gets the num of this BatchCreateCn.
+        r"""Gets the num of this BatchCreateCn.
 
         批量增加CN节点任务完成，集群总CN数量。集群支持的CN节点数量与集群当前版本和节点数量相关，具体支持范围可根据“查询集群CN节点”查询，“min_num”为支持的最小数量，max_num为支持的最大数量。
 
@@ -53,7 +53,7 @@ class BatchCreateCn:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this BatchCreateCn.
+        r"""Sets the num of this BatchCreateCn.
 
         批量增加CN节点任务完成，集群总CN数量。集群支持的CN节点数量与集群当前版本和节点数量相关，具体支持范围可根据“查询集群CN节点”查询，“min_num”为支持的最小数量，max_num为支持的最大数量。
 

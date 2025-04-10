@@ -25,7 +25,7 @@ class NovaAvailabilityZoneState:
     }
 
     def __init__(self, available=None):
-        """NovaAvailabilityZoneState
+        r"""NovaAvailabilityZoneState
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NovaAvailabilityZoneState:
 
     @property
     def available(self):
-        """Gets the available of this NovaAvailabilityZoneState.
+        r"""Gets the available of this NovaAvailabilityZoneState.
 
         可用域状态。
 
@@ -53,7 +53,7 @@ class NovaAvailabilityZoneState:
 
     @available.setter
     def available(self, available):
-        """Sets the available of this NovaAvailabilityZoneState.
+        r"""Sets the available of this NovaAvailabilityZoneState.
 
         可用域状态。
 

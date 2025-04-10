@@ -37,7 +37,7 @@ class DimensionHierarchiesVO:
     }
 
     def __init__(self, id=None, name=None, attrs=None, create_time=None, update_time=None, create_by=None, update_by=None):
-        """DimensionHierarchiesVO
+        r"""DimensionHierarchiesVO
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DimensionHierarchiesVO:
 
     @property
     def id(self):
-        """Gets the id of this DimensionHierarchiesVO.
+        r"""Gets the id of this DimensionHierarchiesVO.
 
         编码，ID字符串。
 
@@ -96,7 +96,7 @@ class DimensionHierarchiesVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DimensionHierarchiesVO.
+        r"""Sets the id of this DimensionHierarchiesVO.
 
         编码，ID字符串。
 
@@ -107,7 +107,7 @@ class DimensionHierarchiesVO:
 
     @property
     def name(self):
-        """Gets the name of this DimensionHierarchiesVO.
+        r"""Gets the name of this DimensionHierarchiesVO.
 
         层级名称。
 
@@ -118,7 +118,7 @@ class DimensionHierarchiesVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DimensionHierarchiesVO.
+        r"""Sets the name of this DimensionHierarchiesVO.
 
         层级名称。
 
@@ -129,7 +129,7 @@ class DimensionHierarchiesVO:
 
     @property
     def attrs(self):
-        """Gets the attrs of this DimensionHierarchiesVO.
+        r"""Gets the attrs of this DimensionHierarchiesVO.
 
         层级包含的属性。
 
@@ -140,7 +140,7 @@ class DimensionHierarchiesVO:
 
     @attrs.setter
     def attrs(self, attrs):
-        """Sets the attrs of this DimensionHierarchiesVO.
+        r"""Sets the attrs of this DimensionHierarchiesVO.
 
         层级包含的属性。
 
@@ -151,7 +151,7 @@ class DimensionHierarchiesVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DimensionHierarchiesVO.
+        r"""Gets the create_time of this DimensionHierarchiesVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -162,7 +162,7 @@ class DimensionHierarchiesVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DimensionHierarchiesVO.
+        r"""Sets the create_time of this DimensionHierarchiesVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -173,7 +173,7 @@ class DimensionHierarchiesVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DimensionHierarchiesVO.
+        r"""Gets the update_time of this DimensionHierarchiesVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -184,7 +184,7 @@ class DimensionHierarchiesVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DimensionHierarchiesVO.
+        r"""Sets the update_time of this DimensionHierarchiesVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -195,7 +195,7 @@ class DimensionHierarchiesVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this DimensionHierarchiesVO.
+        r"""Gets the create_by of this DimensionHierarchiesVO.
 
         创建人。
 
@@ -206,7 +206,7 @@ class DimensionHierarchiesVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this DimensionHierarchiesVO.
+        r"""Sets the create_by of this DimensionHierarchiesVO.
 
         创建人。
 
@@ -217,7 +217,7 @@ class DimensionHierarchiesVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this DimensionHierarchiesVO.
+        r"""Gets the update_by of this DimensionHierarchiesVO.
 
         更新人。
 
@@ -228,7 +228,7 @@ class DimensionHierarchiesVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this DimensionHierarchiesVO.
+        r"""Sets the update_by of this DimensionHierarchiesVO.
 
         更新人。
 

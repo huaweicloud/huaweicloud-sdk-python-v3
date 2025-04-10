@@ -28,7 +28,7 @@ class UpdateHttpsInfoResponse(SdkResponse):
     }
 
     def __init__(self, https=None, x_request_id=None):
-        """UpdateHttpsInfoResponse
+        r"""UpdateHttpsInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateHttpsInfoResponse(SdkResponse):
 
     @property
     def https(self):
-        """Gets the https of this UpdateHttpsInfoResponse.
+        r"""Gets the https of this UpdateHttpsInfoResponse.
 
         :return: The https of this UpdateHttpsInfoResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.HttpInfoResponseBody`
@@ -60,7 +60,7 @@ class UpdateHttpsInfoResponse(SdkResponse):
 
     @https.setter
     def https(self, https):
-        """Sets the https of this UpdateHttpsInfoResponse.
+        r"""Sets the https of this UpdateHttpsInfoResponse.
 
         :param https: The https of this UpdateHttpsInfoResponse.
         :type https: :class:`huaweicloudsdkcdn.v1.HttpInfoResponseBody`
@@ -69,7 +69,7 @@ class UpdateHttpsInfoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateHttpsInfoResponse.
+        r"""Gets the x_request_id of this UpdateHttpsInfoResponse.
 
         :return: The x_request_id of this UpdateHttpsInfoResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class UpdateHttpsInfoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateHttpsInfoResponse.
+        r"""Sets the x_request_id of this UpdateHttpsInfoResponse.
 
         :param x_request_id: The x_request_id of this UpdateHttpsInfoResponse.
         :type x_request_id: str

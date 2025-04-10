@@ -29,7 +29,7 @@ class ListDataServiceInstanceAccesslogsRequest:
     }
 
     def __init__(self, workspace=None, instance_id=None, is_api=None):
-        """ListDataServiceInstanceAccesslogsRequest
+        r"""ListDataServiceInstanceAccesslogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListDataServiceInstanceAccesslogsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListDataServiceInstanceAccesslogsRequest.
+        r"""Gets the workspace of this ListDataServiceInstanceAccesslogsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -66,7 +66,7 @@ class ListDataServiceInstanceAccesslogsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListDataServiceInstanceAccesslogsRequest.
+        r"""Sets the workspace of this ListDataServiceInstanceAccesslogsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -77,7 +77,7 @@ class ListDataServiceInstanceAccesslogsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDataServiceInstanceAccesslogsRequest.
+        r"""Gets the instance_id of this ListDataServiceInstanceAccesslogsRequest.
 
         集群ID编号。
 
@@ -88,7 +88,7 @@ class ListDataServiceInstanceAccesslogsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDataServiceInstanceAccesslogsRequest.
+        r"""Sets the instance_id of this ListDataServiceInstanceAccesslogsRequest.
 
         集群ID编号。
 
@@ -99,7 +99,7 @@ class ListDataServiceInstanceAccesslogsRequest:
 
     @property
     def is_api(self):
-        """Gets the is_api of this ListDataServiceInstanceAccesslogsRequest.
+        r"""Gets the is_api of this ListDataServiceInstanceAccesslogsRequest.
 
         是否查询API的访问日志，true表示查询API的访问日志，false表示查询应用的访问日志。
 
@@ -110,7 +110,7 @@ class ListDataServiceInstanceAccesslogsRequest:
 
     @is_api.setter
     def is_api(self, is_api):
-        """Sets the is_api of this ListDataServiceInstanceAccesslogsRequest.
+        r"""Sets the is_api of this ListDataServiceInstanceAccesslogsRequest.
 
         是否查询API的访问日志，true表示查询API的访问日志，false表示查询应用的访问日志。
 

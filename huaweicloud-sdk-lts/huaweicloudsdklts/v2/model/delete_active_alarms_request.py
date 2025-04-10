@@ -27,7 +27,7 @@ class DeleteActiveAlarmsRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """DeleteActiveAlarmsRequest
+        r"""DeleteActiveAlarmsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteActiveAlarmsRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DeleteActiveAlarmsRequest.
+        r"""Gets the domain_id of this DeleteActiveAlarmsRequest.
 
         domainId
 
@@ -60,7 +60,7 @@ class DeleteActiveAlarmsRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DeleteActiveAlarmsRequest.
+        r"""Sets the domain_id of this DeleteActiveAlarmsRequest.
 
         domainId
 
@@ -71,7 +71,7 @@ class DeleteActiveAlarmsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteActiveAlarmsRequest.
+        r"""Gets the body of this DeleteActiveAlarmsRequest.
 
         :return: The body of this DeleteActiveAlarmsRequest.
         :rtype: :class:`huaweicloudsdklts.v2.DeleteActiveAlarmsRequestBody`
@@ -80,7 +80,7 @@ class DeleteActiveAlarmsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteActiveAlarmsRequest.
+        r"""Sets the body of this DeleteActiveAlarmsRequest.
 
         :param body: The body of this DeleteActiveAlarmsRequest.
         :type body: :class:`huaweicloudsdklts.v2.DeleteActiveAlarmsRequestBody`

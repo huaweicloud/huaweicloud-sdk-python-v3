@@ -27,7 +27,7 @@ class CancelAsyncInvocationRequest:
     }
 
     def __init__(self, function_urn=None, body=None):
-        """CancelAsyncInvocationRequest
+        r"""CancelAsyncInvocationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CancelAsyncInvocationRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this CancelAsyncInvocationRequest.
+        r"""Gets the function_urn of this CancelAsyncInvocationRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -60,7 +60,7 @@ class CancelAsyncInvocationRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this CancelAsyncInvocationRequest.
+        r"""Sets the function_urn of this CancelAsyncInvocationRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -71,7 +71,7 @@ class CancelAsyncInvocationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CancelAsyncInvocationRequest.
+        r"""Gets the body of this CancelAsyncInvocationRequest.
 
         :return: The body of this CancelAsyncInvocationRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CancelAsyncInvocationRequestBody`
@@ -80,7 +80,7 @@ class CancelAsyncInvocationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CancelAsyncInvocationRequest.
+        r"""Sets the body of this CancelAsyncInvocationRequest.
 
         :param body: The body of this CancelAsyncInvocationRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.CancelAsyncInvocationRequestBody`

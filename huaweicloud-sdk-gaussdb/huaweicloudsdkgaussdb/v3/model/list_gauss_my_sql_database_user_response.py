@@ -28,7 +28,7 @@ class ListGaussMySqlDatabaseUserResponse(SdkResponse):
     }
 
     def __init__(self, users=None, total_count=None):
-        """ListGaussMySqlDatabaseUserResponse
+        r"""ListGaussMySqlDatabaseUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListGaussMySqlDatabaseUserResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this ListGaussMySqlDatabaseUserResponse.
+        r"""Gets the users of this ListGaussMySqlDatabaseUserResponse.
 
         数据库用户列表。
 
@@ -62,7 +62,7 @@ class ListGaussMySqlDatabaseUserResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ListGaussMySqlDatabaseUserResponse.
+        r"""Sets the users of this ListGaussMySqlDatabaseUserResponse.
 
         数据库用户列表。
 
@@ -73,7 +73,7 @@ class ListGaussMySqlDatabaseUserResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListGaussMySqlDatabaseUserResponse.
+        r"""Gets the total_count of this ListGaussMySqlDatabaseUserResponse.
 
         实例的数据库用户总数
 
@@ -84,7 +84,7 @@ class ListGaussMySqlDatabaseUserResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListGaussMySqlDatabaseUserResponse.
+        r"""Sets the total_count of this ListGaussMySqlDatabaseUserResponse.
 
         实例的数据库用户总数
 

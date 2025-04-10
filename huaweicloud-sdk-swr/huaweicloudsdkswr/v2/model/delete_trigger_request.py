@@ -29,7 +29,7 @@ class DeleteTriggerRequest:
     }
 
     def __init__(self, namespace=None, repository=None, trigger=None):
-        """DeleteTriggerRequest
+        r"""DeleteTriggerRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteTriggerRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this DeleteTriggerRequest.
+        r"""Gets the namespace of this DeleteTriggerRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -65,7 +65,7 @@ class DeleteTriggerRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this DeleteTriggerRequest.
+        r"""Sets the namespace of this DeleteTriggerRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -76,7 +76,7 @@ class DeleteTriggerRequest:
 
     @property
     def repository(self):
-        """Gets the repository of this DeleteTriggerRequest.
+        r"""Gets the repository of this DeleteTriggerRequest.
 
         镜像仓库名称
 
@@ -87,7 +87,7 @@ class DeleteTriggerRequest:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this DeleteTriggerRequest.
+        r"""Sets the repository of this DeleteTriggerRequest.
 
         镜像仓库名称
 
@@ -98,7 +98,7 @@ class DeleteTriggerRequest:
 
     @property
     def trigger(self):
-        """Gets the trigger of this DeleteTriggerRequest.
+        r"""Gets the trigger of this DeleteTriggerRequest.
 
         触发器名称
 
@@ -109,7 +109,7 @@ class DeleteTriggerRequest:
 
     @trigger.setter
     def trigger(self, trigger):
-        """Sets the trigger of this DeleteTriggerRequest.
+        r"""Sets the trigger of this DeleteTriggerRequest.
 
         触发器名称
 

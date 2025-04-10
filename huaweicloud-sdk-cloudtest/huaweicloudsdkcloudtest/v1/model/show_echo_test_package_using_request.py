@@ -25,7 +25,7 @@ class ShowEchoTestPackageUsingRequest:
     }
 
     def __init__(self, service_id=None):
-        """ShowEchoTestPackageUsingRequest
+        r"""ShowEchoTestPackageUsingRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowEchoTestPackageUsingRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ShowEchoTestPackageUsingRequest.
+        r"""Gets the service_id of this ShowEchoTestPackageUsingRequest.
 
         服务id
 
@@ -53,7 +53,7 @@ class ShowEchoTestPackageUsingRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ShowEchoTestPackageUsingRequest.
+        r"""Sets the service_id of this ShowEchoTestPackageUsingRequest.
 
         服务id
 

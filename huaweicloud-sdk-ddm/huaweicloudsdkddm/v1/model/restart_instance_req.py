@@ -25,7 +25,7 @@ class RestartInstanceReq:
     }
 
     def __init__(self, restart=None):
-        """RestartInstanceReq
+        r"""RestartInstanceReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RestartInstanceReq:
 
     @property
     def restart(self):
-        """Gets the restart of this RestartInstanceReq.
+        r"""Gets the restart of this RestartInstanceReq.
 
         :return: The restart of this RestartInstanceReq.
         :rtype: :class:`huaweicloudsdkddm.v1.RestarInstanceInfo`
@@ -52,7 +52,7 @@ class RestartInstanceReq:
 
     @restart.setter
     def restart(self, restart):
-        """Sets the restart of this RestartInstanceReq.
+        r"""Sets the restart of this RestartInstanceReq.
 
         :param restart: The restart of this RestartInstanceReq.
         :type restart: :class:`huaweicloudsdkddm.v1.RestarInstanceInfo`

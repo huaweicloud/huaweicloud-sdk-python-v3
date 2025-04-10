@@ -27,7 +27,7 @@ class DisassociateRouterRequest:
     }
 
     def __init__(self, zone_id=None, body=None):
-        """DisassociateRouterRequest
+        r"""DisassociateRouterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DisassociateRouterRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this DisassociateRouterRequest.
+        r"""Gets the zone_id of this DisassociateRouterRequest.
 
         待解关联zone的ID。
 
@@ -60,7 +60,7 @@ class DisassociateRouterRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this DisassociateRouterRequest.
+        r"""Sets the zone_id of this DisassociateRouterRequest.
 
         待解关联zone的ID。
 
@@ -71,7 +71,7 @@ class DisassociateRouterRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisassociateRouterRequest.
+        r"""Gets the body of this DisassociateRouterRequest.
 
         :return: The body of this DisassociateRouterRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.DisassociaterouterRequestBody`
@@ -80,7 +80,7 @@ class DisassociateRouterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisassociateRouterRequest.
+        r"""Sets the body of this DisassociateRouterRequest.
 
         :param body: The body of this DisassociateRouterRequest.
         :type body: :class:`huaweicloudsdkdns.v2.DisassociaterouterRequestBody`

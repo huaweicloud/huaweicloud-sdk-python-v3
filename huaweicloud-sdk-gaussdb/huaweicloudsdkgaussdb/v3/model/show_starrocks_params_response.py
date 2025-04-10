@@ -30,7 +30,7 @@ class ShowStarrocksParamsResponse(SdkResponse):
     }
 
     def __init__(self, configurations=None, total_count=None, parameter_values=None):
-        """ShowStarrocksParamsResponse
+        r"""ShowStarrocksParamsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowStarrocksParamsResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this ShowStarrocksParamsResponse.
+        r"""Gets the configurations of this ShowStarrocksParamsResponse.
 
         :return: The configurations of this ShowStarrocksParamsResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ParameterConfigurationInfo`
@@ -67,7 +67,7 @@ class ShowStarrocksParamsResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ShowStarrocksParamsResponse.
+        r"""Sets the configurations of this ShowStarrocksParamsResponse.
 
         :param configurations: The configurations of this ShowStarrocksParamsResponse.
         :type configurations: :class:`huaweicloudsdkgaussdb.v3.ParameterConfigurationInfo`
@@ -76,7 +76,7 @@ class ShowStarrocksParamsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowStarrocksParamsResponse.
+        r"""Gets the total_count of this ShowStarrocksParamsResponse.
 
         参数信息的总数。
 
@@ -87,7 +87,7 @@ class ShowStarrocksParamsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowStarrocksParamsResponse.
+        r"""Sets the total_count of this ShowStarrocksParamsResponse.
 
         参数信息的总数。
 
@@ -98,7 +98,7 @@ class ShowStarrocksParamsResponse(SdkResponse):
 
     @property
     def parameter_values(self):
-        """Gets the parameter_values of this ShowStarrocksParamsResponse.
+        r"""Gets the parameter_values of this ShowStarrocksParamsResponse.
 
         参数对象。
 
@@ -109,7 +109,7 @@ class ShowStarrocksParamsResponse(SdkResponse):
 
     @parameter_values.setter
     def parameter_values(self, parameter_values):
-        """Sets the parameter_values of this ShowStarrocksParamsResponse.
+        r"""Sets the parameter_values of this ShowStarrocksParamsResponse.
 
         参数对象。
 

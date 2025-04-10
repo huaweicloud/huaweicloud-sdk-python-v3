@@ -30,7 +30,7 @@ class ShowResultResponse(SdkResponse):
     }
 
     def __init__(self, request_status=None, tasks=None, request_type=None):
-        """ShowResultResponse
+        r"""ShowResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowResultResponse(SdkResponse):
 
     @property
     def request_status(self):
-        """Gets the request_status of this ShowResultResponse.
+        r"""Gets the request_status of this ShowResultResponse.
 
         :return: The request_status of this ShowResultResponse.
         :rtype: :class:`huaweicloudsdkcloudide.v2.RequestStatus`
@@ -67,7 +67,7 @@ class ShowResultResponse(SdkResponse):
 
     @request_status.setter
     def request_status(self, request_status):
-        """Sets the request_status of this ShowResultResponse.
+        r"""Sets the request_status of this ShowResultResponse.
 
         :param request_status: The request_status of this ShowResultResponse.
         :type request_status: :class:`huaweicloudsdkcloudide.v2.RequestStatus`
@@ -76,7 +76,7 @@ class ShowResultResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ShowResultResponse.
+        r"""Gets the tasks of this ShowResultResponse.
 
         task list
 
@@ -87,7 +87,7 @@ class ShowResultResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ShowResultResponse.
+        r"""Sets the tasks of this ShowResultResponse.
 
         task list
 
@@ -98,7 +98,7 @@ class ShowResultResponse(SdkResponse):
 
     @property
     def request_type(self):
-        """Gets the request_type of this ShowResultResponse.
+        r"""Gets the request_type of this ShowResultResponse.
 
         the type of the request
 
@@ -109,7 +109,7 @@ class ShowResultResponse(SdkResponse):
 
     @request_type.setter
     def request_type(self, request_type):
-        """Sets the request_type of this ShowResultResponse.
+        r"""Sets the request_type of this ShowResultResponse.
 
         the type of the request
 

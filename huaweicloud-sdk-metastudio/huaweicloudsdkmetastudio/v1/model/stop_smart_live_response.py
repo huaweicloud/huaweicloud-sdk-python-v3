@@ -26,7 +26,7 @@ class StopSmartLiveResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """StopSmartLiveResponse
+        r"""StopSmartLiveResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopSmartLiveResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this StopSmartLiveResponse.
+        r"""Gets the x_request_id of this StopSmartLiveResponse.
 
         :return: The x_request_id of this StopSmartLiveResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class StopSmartLiveResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this StopSmartLiveResponse.
+        r"""Sets the x_request_id of this StopSmartLiveResponse.
 
         :param x_request_id: The x_request_id of this StopSmartLiveResponse.
         :type x_request_id: str

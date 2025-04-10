@@ -26,7 +26,7 @@ class CopyImageCrossRegionResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """CopyImageCrossRegionResponse
+        r"""CopyImageCrossRegionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CopyImageCrossRegionResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CopyImageCrossRegionResponse.
+        r"""Gets the job_id of this CopyImageCrossRegionResponse.
 
         异步任务ID。
 
@@ -55,7 +55,7 @@ class CopyImageCrossRegionResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CopyImageCrossRegionResponse.
+        r"""Sets the job_id of this CopyImageCrossRegionResponse.
 
         异步任务ID。
 

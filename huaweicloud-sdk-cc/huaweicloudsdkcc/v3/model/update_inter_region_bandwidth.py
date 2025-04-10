@@ -25,7 +25,7 @@ class UpdateInterRegionBandwidth:
     }
 
     def __init__(self, bandwidth=None):
-        """UpdateInterRegionBandwidth
+        r"""UpdateInterRegionBandwidth
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateInterRegionBandwidth:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this UpdateInterRegionBandwidth.
+        r"""Gets the bandwidth of this UpdateInterRegionBandwidth.
 
         域间带宽值。
 
@@ -53,7 +53,7 @@ class UpdateInterRegionBandwidth:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this UpdateInterRegionBandwidth.
+        r"""Sets the bandwidth of this UpdateInterRegionBandwidth.
 
         域间带宽值。
 

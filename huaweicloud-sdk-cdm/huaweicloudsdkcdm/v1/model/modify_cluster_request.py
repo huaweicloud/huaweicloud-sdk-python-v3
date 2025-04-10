@@ -31,7 +31,7 @@ class ModifyClusterRequest:
     }
 
     def __init__(self, cluster_id=None, content_type=None, x_language=None, body=None):
-        """ModifyClusterRequest
+        r"""ModifyClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ModifyClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ModifyClusterRequest.
+        r"""Gets the cluster_id of this ModifyClusterRequest.
 
         集群ID
 
@@ -72,7 +72,7 @@ class ModifyClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ModifyClusterRequest.
+        r"""Sets the cluster_id of this ModifyClusterRequest.
 
         集群ID
 
@@ -83,7 +83,7 @@ class ModifyClusterRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ModifyClusterRequest.
+        r"""Gets the content_type of this ModifyClusterRequest.
 
         消息体的类型（格式），有Body体的情况下必选，没有Body体无需填写。如果请求消息体中含有中文字符，则需要通过charset=utf8指定中文字符集，例如取值为：application/json;charset=utf8。
 
@@ -94,7 +94,7 @@ class ModifyClusterRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ModifyClusterRequest.
+        r"""Sets the content_type of this ModifyClusterRequest.
 
         消息体的类型（格式），有Body体的情况下必选，没有Body体无需填写。如果请求消息体中含有中文字符，则需要通过charset=utf8指定中文字符集，例如取值为：application/json;charset=utf8。
 
@@ -105,7 +105,7 @@ class ModifyClusterRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ModifyClusterRequest.
+        r"""Gets the x_language of this ModifyClusterRequest.
 
         请求语言。
 
@@ -116,7 +116,7 @@ class ModifyClusterRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ModifyClusterRequest.
+        r"""Sets the x_language of this ModifyClusterRequest.
 
         请求语言。
 
@@ -127,7 +127,7 @@ class ModifyClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyClusterRequest.
+        r"""Gets the body of this ModifyClusterRequest.
 
         :return: The body of this ModifyClusterRequest.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmModifyClusterReq`
@@ -136,7 +136,7 @@ class ModifyClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyClusterRequest.
+        r"""Sets the body of this ModifyClusterRequest.
 
         :param body: The body of this ModifyClusterRequest.
         :type body: :class:`huaweicloudsdkcdm.v1.CdmModifyClusterReq`

@@ -24,7 +24,7 @@ class ExecuteAssetActionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ExecuteAssetActionResponse
+        r"""ExecuteAssetActionResponse
 
         The model defined in huaweicloud sdk
 

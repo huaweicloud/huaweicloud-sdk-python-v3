@@ -29,7 +29,7 @@ class CreateProjectRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, body=None):
-        """CreateProjectRequest
+        r"""CreateProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateProjectRequest:
 
     @property
     def x_repo_auth(self):
-        """Gets the x_repo_auth of this CreateProjectRequest.
+        r"""Gets the x_repo_auth of this CreateProjectRequest.
 
         授权名称。
 
@@ -66,7 +66,7 @@ class CreateProjectRequest:
 
     @x_repo_auth.setter
     def x_repo_auth(self, x_repo_auth):
-        """Sets the x_repo_auth of this CreateProjectRequest.
+        r"""Sets the x_repo_auth of this CreateProjectRequest.
 
         授权名称。
 
@@ -77,7 +77,7 @@ class CreateProjectRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this CreateProjectRequest.
+        r"""Gets the namespace of this CreateProjectRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -88,7 +88,7 @@ class CreateProjectRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this CreateProjectRequest.
+        r"""Sets the namespace of this CreateProjectRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -99,7 +99,7 @@ class CreateProjectRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateProjectRequest.
+        r"""Gets the body of this CreateProjectRequest.
 
         :return: The body of this CreateProjectRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ProjectCreate`
@@ -108,7 +108,7 @@ class CreateProjectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateProjectRequest.
+        r"""Sets the body of this CreateProjectRequest.
 
         :param body: The body of this CreateProjectRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.ProjectCreate`

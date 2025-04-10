@@ -35,7 +35,7 @@ class PublicipBandwidthInfo:
     }
 
     def __init__(self, id=None, size=None, share_type=None, charge_mode=None, name=None, billing_info=None):
-        """PublicipBandwidthInfo
+        r"""PublicipBandwidthInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PublicipBandwidthInfo:
 
     @property
     def id(self):
-        """Gets the id of this PublicipBandwidthInfo.
+        r"""Gets the id of this PublicipBandwidthInfo.
 
         带宽ID
 
@@ -89,7 +89,7 @@ class PublicipBandwidthInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublicipBandwidthInfo.
+        r"""Sets the id of this PublicipBandwidthInfo.
 
         带宽ID
 
@@ -100,7 +100,7 @@ class PublicipBandwidthInfo:
 
     @property
     def size(self):
-        """Gets the size of this PublicipBandwidthInfo.
+        r"""Gets the size of this PublicipBandwidthInfo.
 
         功能描述：带宽大小 取值范围：默认5Mbit/s~2000Mbit/s
 
@@ -111,7 +111,7 @@ class PublicipBandwidthInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this PublicipBandwidthInfo.
+        r"""Sets the size of this PublicipBandwidthInfo.
 
         功能描述：带宽大小 取值范围：默认5Mbit/s~2000Mbit/s
 
@@ -122,7 +122,7 @@ class PublicipBandwidthInfo:
 
     @property
     def share_type(self):
-        """Gets the share_type of this PublicipBandwidthInfo.
+        r"""Gets the share_type of this PublicipBandwidthInfo.
 
         功能说明：带宽类型,标识是否是共享带宽 取值范围：PER，WHOLE。   PER：独享带宽   WHOLE：共享带宽 约束：其中IPv6暂不支持WHOLE类型带宽。
 
@@ -133,7 +133,7 @@ class PublicipBandwidthInfo:
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this PublicipBandwidthInfo.
+        r"""Sets the share_type of this PublicipBandwidthInfo.
 
         功能说明：带宽类型,标识是否是共享带宽 取值范围：PER，WHOLE。   PER：独享带宽   WHOLE：共享带宽 约束：其中IPv6暂不支持WHOLE类型带宽。
 
@@ -144,7 +144,7 @@ class PublicipBandwidthInfo:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this PublicipBandwidthInfo.
+        r"""Gets the charge_mode of this PublicipBandwidthInfo.
 
         功能说明：按流量计费还是按带宽计费 取值范围： bandwidth：按带宽计费 traffic：按流量计费 95peak_plus：按增强型95计费
 
@@ -155,7 +155,7 @@ class PublicipBandwidthInfo:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this PublicipBandwidthInfo.
+        r"""Sets the charge_mode of this PublicipBandwidthInfo.
 
         功能说明：按流量计费还是按带宽计费 取值范围： bandwidth：按带宽计费 traffic：按流量计费 95peak_plus：按增强型95计费
 
@@ -166,7 +166,7 @@ class PublicipBandwidthInfo:
 
     @property
     def name(self):
-        """Gets the name of this PublicipBandwidthInfo.
+        r"""Gets the name of this PublicipBandwidthInfo.
 
         功能说明：带宽名称 取值范围：1-64个字符,支持数字、字母、中文、_(下划线)、-(中划线)、.(点)
 
@@ -177,7 +177,7 @@ class PublicipBandwidthInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublicipBandwidthInfo.
+        r"""Sets the name of this PublicipBandwidthInfo.
 
         功能说明：带宽名称 取值范围：1-64个字符,支持数字、字母、中文、_(下划线)、-(中划线)、.(点)
 
@@ -188,7 +188,7 @@ class PublicipBandwidthInfo:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this PublicipBandwidthInfo.
+        r"""Gets the billing_info of this PublicipBandwidthInfo.
 
         功能说明：账单信息。如果billinginfo不为空，说明是包周期的带宽
 
@@ -199,7 +199,7 @@ class PublicipBandwidthInfo:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this PublicipBandwidthInfo.
+        r"""Sets the billing_info of this PublicipBandwidthInfo.
 
         功能说明：账单信息。如果billinginfo不为空，说明是包周期的带宽
 

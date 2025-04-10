@@ -33,7 +33,7 @@ class SqlLimitRule:
     }
 
     def __init__(self, id=None, sql_type=None, pattern=None, max_concurrency=None, max_waiting=None):
-        """SqlLimitRule
+        r"""SqlLimitRule
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class SqlLimitRule:
 
     @property
     def id(self):
-        """Gets the id of this SqlLimitRule.
+        r"""Gets the id of this SqlLimitRule.
 
         SQL限流规则ID
 
@@ -78,7 +78,7 @@ class SqlLimitRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SqlLimitRule.
+        r"""Sets the id of this SqlLimitRule.
 
         SQL限流规则ID
 
@@ -89,7 +89,7 @@ class SqlLimitRule:
 
     @property
     def sql_type(self):
-        """Gets the sql_type of this SqlLimitRule.
+        r"""Gets the sql_type of this SqlLimitRule.
 
         SQL类型
 
@@ -100,7 +100,7 @@ class SqlLimitRule:
 
     @sql_type.setter
     def sql_type(self, sql_type):
-        """Sets the sql_type of this SqlLimitRule.
+        r"""Sets the sql_type of this SqlLimitRule.
 
         SQL类型
 
@@ -111,7 +111,7 @@ class SqlLimitRule:
 
     @property
     def pattern(self):
-        """Gets the pattern of this SqlLimitRule.
+        r"""Gets the pattern of this SqlLimitRule.
 
         限流规则
 
@@ -122,7 +122,7 @@ class SqlLimitRule:
 
     @pattern.setter
     def pattern(self, pattern):
-        """Sets the pattern of this SqlLimitRule.
+        r"""Sets the pattern of this SqlLimitRule.
 
         限流规则
 
@@ -133,7 +133,7 @@ class SqlLimitRule:
 
     @property
     def max_concurrency(self):
-        """Gets the max_concurrency of this SqlLimitRule.
+        r"""Gets the max_concurrency of this SqlLimitRule.
 
         最大并发数
 
@@ -144,7 +144,7 @@ class SqlLimitRule:
 
     @max_concurrency.setter
     def max_concurrency(self, max_concurrency):
-        """Sets the max_concurrency of this SqlLimitRule.
+        r"""Sets the max_concurrency of this SqlLimitRule.
 
         最大并发数
 
@@ -155,7 +155,7 @@ class SqlLimitRule:
 
     @property
     def max_waiting(self):
-        """Gets the max_waiting of this SqlLimitRule.
+        r"""Gets the max_waiting of this SqlLimitRule.
 
         最大等待时间
 
@@ -166,7 +166,7 @@ class SqlLimitRule:
 
     @max_waiting.setter
     def max_waiting(self, max_waiting):
-        """Sets the max_waiting of this SqlLimitRule.
+        r"""Sets the max_waiting of this SqlLimitRule.
 
         最大等待时间
 

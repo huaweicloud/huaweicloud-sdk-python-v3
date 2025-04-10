@@ -23,7 +23,7 @@ class ChangeNodesStartStopStatusResp:
     }
 
     def __init__(self):
-        """ChangeNodesStartStopStatusResp
+        r"""ChangeNodesStartStopStatusResp
 
         The model defined in huaweicloud sdk
 

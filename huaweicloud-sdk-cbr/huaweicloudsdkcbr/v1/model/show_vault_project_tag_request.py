@@ -23,7 +23,7 @@ class ShowVaultProjectTagRequest:
     }
 
     def __init__(self):
-        """ShowVaultProjectTagRequest
+        r"""ShowVaultProjectTagRequest
 
         The model defined in huaweicloud sdk
 

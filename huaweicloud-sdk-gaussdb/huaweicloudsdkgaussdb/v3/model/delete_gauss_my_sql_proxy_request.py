@@ -29,7 +29,7 @@ class DeleteGaussMySqlProxyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """DeleteGaussMySqlProxyRequest
+        r"""DeleteGaussMySqlProxyRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteGaussMySqlProxyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteGaussMySqlProxyRequest.
+        r"""Gets the x_language of this DeleteGaussMySqlProxyRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class DeleteGaussMySqlProxyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteGaussMySqlProxyRequest.
+        r"""Sets the x_language of this DeleteGaussMySqlProxyRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class DeleteGaussMySqlProxyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteGaussMySqlProxyRequest.
+        r"""Gets the instance_id of this DeleteGaussMySqlProxyRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class DeleteGaussMySqlProxyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteGaussMySqlProxyRequest.
+        r"""Sets the instance_id of this DeleteGaussMySqlProxyRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class DeleteGaussMySqlProxyRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteGaussMySqlProxyRequest.
+        r"""Gets the body of this DeleteGaussMySqlProxyRequest.
 
         :return: The body of this DeleteGaussMySqlProxyRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CloseMysqlProxyRequestBody`
@@ -109,7 +109,7 @@ class DeleteGaussMySqlProxyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteGaussMySqlProxyRequest.
+        r"""Sets the body of this DeleteGaussMySqlProxyRequest.
 
         :param body: The body of this DeleteGaussMySqlProxyRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.CloseMysqlProxyRequestBody`

@@ -28,7 +28,7 @@ class UninstallApkResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, jobs=None):
-        """UninstallApkResponse
+        r"""UninstallApkResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UninstallApkResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UninstallApkResponse.
+        r"""Gets the request_id of this UninstallApkResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class UninstallApkResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UninstallApkResponse.
+        r"""Sets the request_id of this UninstallApkResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class UninstallApkResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this UninstallApkResponse.
+        r"""Gets the jobs of this UninstallApkResponse.
 
         任务列表。
 
@@ -84,7 +84,7 @@ class UninstallApkResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this UninstallApkResponse.
+        r"""Sets the jobs of this UninstallApkResponse.
 
         任务列表。
 

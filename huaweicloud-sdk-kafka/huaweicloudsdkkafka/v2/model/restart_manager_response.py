@@ -28,7 +28,7 @@ class RestartManagerResponse(SdkResponse):
     }
 
     def __init__(self, result=None, instance_id=None):
-        """RestartManagerResponse
+        r"""RestartManagerResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RestartManagerResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RestartManagerResponse.
+        r"""Gets the result of this RestartManagerResponse.
 
         执行结果。
 
@@ -62,7 +62,7 @@ class RestartManagerResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RestartManagerResponse.
+        r"""Sets the result of this RestartManagerResponse.
 
         执行结果。
 
@@ -73,7 +73,7 @@ class RestartManagerResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RestartManagerResponse.
+        r"""Gets the instance_id of this RestartManagerResponse.
 
         实例ID。
 
@@ -84,7 +84,7 @@ class RestartManagerResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RestartManagerResponse.
+        r"""Sets the instance_id of this RestartManagerResponse.
 
         实例ID。
 

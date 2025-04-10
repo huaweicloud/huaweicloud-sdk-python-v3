@@ -41,7 +41,7 @@ class Grants:
     }
 
     def __init__(self, key_id=None, grant_id=None, grantee_principal=None, grantee_principal_type=None, operations=None, issuing_principal=None, creation_date=None, name=None, retiring_principal=None):
-        """Grants
+        r"""Grants
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class Grants:
 
     @property
     def key_id(self):
-        """Gets the key_id of this Grants.
+        r"""Gets the key_id of this Grants.
 
         密钥ID。
 
@@ -110,7 +110,7 @@ class Grants:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this Grants.
+        r"""Sets the key_id of this Grants.
 
         密钥ID。
 
@@ -121,7 +121,7 @@ class Grants:
 
     @property
     def grant_id(self):
-        """Gets the grant_id of this Grants.
+        r"""Gets the grant_id of this Grants.
 
         授权ID，64字节。
 
@@ -132,7 +132,7 @@ class Grants:
 
     @grant_id.setter
     def grant_id(self, grant_id):
-        """Sets the grant_id of this Grants.
+        r"""Sets the grant_id of this Grants.
 
         授权ID，64字节。
 
@@ -143,7 +143,7 @@ class Grants:
 
     @property
     def grantee_principal(self):
-        """Gets the grantee_principal of this Grants.
+        r"""Gets the grantee_principal of this Grants.
 
         被授权用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
 
@@ -154,7 +154,7 @@ class Grants:
 
     @grantee_principal.setter
     def grantee_principal(self, grantee_principal):
-        """Sets the grantee_principal of this Grants.
+        r"""Sets the grantee_principal of this Grants.
 
         被授权用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
 
@@ -165,7 +165,7 @@ class Grants:
 
     @property
     def grantee_principal_type(self):
-        """Gets the grantee_principal_type of this Grants.
+        r"""Gets the grantee_principal_type of this Grants.
 
         授权类型。 有效值：“user”，“domain”。
 
@@ -176,7 +176,7 @@ class Grants:
 
     @grantee_principal_type.setter
     def grantee_principal_type(self, grantee_principal_type):
-        """Sets the grantee_principal_type of this Grants.
+        r"""Sets the grantee_principal_type of this Grants.
 
         授权类型。 有效值：“user”，“domain”。
 
@@ -187,7 +187,7 @@ class Grants:
 
     @property
     def operations(self):
-        """Gets the operations of this Grants.
+        r"""Gets the operations of this Grants.
 
         授权允许的操作列表。 有效的值：“create-datakey”，“create-datakey-without-plaintext”，“encrypt-datakey”，“decrypt-datakey”，“describe-key”，“create-grant”，“retire-grant”，“encrypt-data”，“decrypt-data”。 有效值不能仅为“create-grant”。  - “create-datakey” 创建数据密钥  - “create-datakey-without-plaintext” 创建不含明文数据密钥  - “encrypt-datakey” 加密数据密钥  - “decrypt-datakey” 解密数据密钥  - “describe-key” 查询密钥信息  - “retire-grant” 退役授权  - “encrypt-data” 加密数据  - “decrypt-data” 解密数据
 
@@ -198,7 +198,7 @@ class Grants:
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this Grants.
+        r"""Sets the operations of this Grants.
 
         授权允许的操作列表。 有效的值：“create-datakey”，“create-datakey-without-plaintext”，“encrypt-datakey”，“decrypt-datakey”，“describe-key”，“create-grant”，“retire-grant”，“encrypt-data”，“decrypt-data”。 有效值不能仅为“create-grant”。  - “create-datakey” 创建数据密钥  - “create-datakey-without-plaintext” 创建不含明文数据密钥  - “encrypt-datakey” 加密数据密钥  - “decrypt-datakey” 解密数据密钥  - “describe-key” 查询密钥信息  - “retire-grant” 退役授权  - “encrypt-data” 加密数据  - “decrypt-data” 解密数据
 
@@ -209,7 +209,7 @@ class Grants:
 
     @property
     def issuing_principal(self):
-        """Gets the issuing_principal of this Grants.
+        r"""Gets the issuing_principal of this Grants.
 
         创建授权用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
 
@@ -220,7 +220,7 @@ class Grants:
 
     @issuing_principal.setter
     def issuing_principal(self, issuing_principal):
-        """Sets the issuing_principal of this Grants.
+        r"""Sets the issuing_principal of this Grants.
 
         创建授权用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
 
@@ -231,7 +231,7 @@ class Grants:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this Grants.
+        r"""Gets the creation_date of this Grants.
 
         创建时间，时间戳，即从1970年1月1日至该时间的总秒数。 例如：1497341531000
 
@@ -242,7 +242,7 @@ class Grants:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this Grants.
+        r"""Sets the creation_date of this Grants.
 
         创建时间，时间戳，即从1970年1月1日至该时间的总秒数。 例如：1497341531000
 
@@ -253,7 +253,7 @@ class Grants:
 
     @property
     def name(self):
-        """Gets the name of this Grants.
+        r"""Gets the name of this Grants.
 
         授权名字，取值1到255字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”。
 
@@ -264,7 +264,7 @@ class Grants:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Grants.
+        r"""Sets the name of this Grants.
 
         授权名字，取值1到255字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”。
 
@@ -275,7 +275,7 @@ class Grants:
 
     @property
     def retiring_principal(self):
-        """Gets the retiring_principal of this Grants.
+        r"""Gets the retiring_principal of this Grants.
 
         可退役授权的用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
 
@@ -286,7 +286,7 @@ class Grants:
 
     @retiring_principal.setter
     def retiring_principal(self, retiring_principal):
-        """Sets the retiring_principal of this Grants.
+        r"""Sets the retiring_principal of this Grants.
 
         可退役授权的用户ID，1~64字节，满足正则匹配“^[a-zA-Z0-9]{1，64}$”。 例如：0d0466b00d0466b00d0466b00d0466b0
 

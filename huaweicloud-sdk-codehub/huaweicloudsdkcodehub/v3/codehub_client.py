@@ -34,7 +34,7 @@ class CodeHubClient(Client):
         return client_builder
 
     def create_commit(self, request):
-        """创建提交
+        r"""创建提交
 
         能够一次提交位于不同目录的多个文件，目录不存在时，能自动创建目录。支持强制覆盖选项，当选择强制覆盖标志为true时，忽略冲突，强制提交。
         
@@ -101,7 +101,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_commits(self, request):
-        """查询某个仓库的提交信息
+        r"""查询某个仓库的提交信息
 
         根据仓库短ID获取提交信息，支持根据文件路径，查询这个路径下所有的commits列表。
         
@@ -182,7 +182,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_diff_commit(self, request):
-        """查询某个仓库的提交差异信息
+        r"""查询某个仓库的提交差异信息
 
         根据commit id查询提交差异信息。
         
@@ -249,7 +249,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_single_commit(self, request):
-        """查询某个仓库的特定提交信息
+        r"""查询某个仓库的特定提交信息
 
         获取由commit id或分支或标记的名称标识的特定提交。
         
@@ -318,7 +318,7 @@ class CodeHubClient(Client):
         return http_info
 
     def create_merge_request_discussion(self, request):
-        """创建MR检视意见
+        r"""创建MR检视意见
 
         创建MR检视意见
         
@@ -387,7 +387,7 @@ class CodeHubClient(Client):
         return http_info
 
     def create_merge_request_discussion_note(self, request):
-        """回复MR检视意见
+        r"""回复MR检视意见
 
         回复MR检视意见
         
@@ -458,7 +458,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_review_setting(self, request):
-        """获取检视意见设置
+        r"""获取检视意见设置
 
         获取检视意见设置
         
@@ -523,7 +523,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_files_by_query(self, request):
-        """查询某个仓库的文件信息
+        r"""查询某个仓库的文件信息
 
         获取仓库中文件的信息，如名称、大小、内容。请注意，文件内容是Base64编码的。
         
@@ -592,7 +592,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_file(self, request):
-        """查询某个仓库的文件信息
+        r"""查询某个仓库的文件信息
 
         获取仓库中文件的信息，如名称、大小、内容。请注意，文件内容是Base64编码的。
         
@@ -663,7 +663,7 @@ class CodeHubClient(Client):
         return http_info
 
     def get_all_repository_by_project_id(self, request):
-        """获取项目下所有仓库信息
+        r"""获取项目下所有仓库信息
 
         获取仓库列表 模糊查询支持范围,如果未传入project_id，则支持按仓库名或项目名模糊查询，否则，只按仓库名模糊匹配。
         
@@ -736,7 +736,7 @@ class CodeHubClient(Client):
         return http_info
 
     def get_product_templates(self, request):
-        """获取一个项目下可以设置为公开状态的仓库列表
+        r"""获取一个项目下可以设置为公开状态的仓库列表
 
         获取一个项目下可以设置为公开状态的仓库列表
         
@@ -807,7 +807,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_product_two_templates(self, request):
-        """获取一个项目下可以设置为公开状态的仓库列表
+        r"""获取一个项目下可以设置为公开状态的仓库列表
 
         获取一个项目下可以设置为公开状态的仓库列表
         
@@ -876,7 +876,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_repository_name_exist(self, request):
-        """校验指定项目下的仓库名
+        r"""校验指定项目下的仓库名
 
         一般创建仓库时调用。通过传入项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。,仓库名，来判断仓库是否重名。仓库存在result:false,仓库不存在result:true。
         
@@ -943,7 +943,7 @@ class CodeHubClient(Client):
         return http_info
 
     def add_repo_members(self, request):
-        """添加仓库成员
+        r"""添加仓库成员
 
         添加仓库成员。
         
@@ -1010,7 +1010,7 @@ class CodeHubClient(Client):
         return http_info
 
     def delete_repo_member(self, request):
-        """删除仓库成员
+        r"""删除仓库成员
 
         删除仓库成员
         
@@ -1077,7 +1077,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_repo_members(self, request):
-        """获取仓库所有成员记录
+        r"""获取仓库所有成员记录
 
         获取仓库成员列表,可通过关键字搜索某成员。
         
@@ -1148,7 +1148,7 @@ class CodeHubClient(Client):
         return http_info
 
     def set_repo_role(self, request):
-        """设置成员在仓库中的角色
+        r"""设置成员在仓库中的角色
 
         给仓库中成员设置仓库的操作权限，
         
@@ -1217,7 +1217,7 @@ class CodeHubClient(Client):
         return http_info
 
     def add_deploy_key(self, request):
-        """添加部署密钥
+        r"""添加部署密钥
 
         添加部署密钥
         
@@ -1286,7 +1286,7 @@ class CodeHubClient(Client):
         return http_info
 
     def add_deploy_key_v2(self, request):
-        """添加部署密钥
+        r"""添加部署密钥
 
         添加部署密钥
         
@@ -1353,7 +1353,7 @@ class CodeHubClient(Client):
         return http_info
 
     def add_protect_branch_v2(self, request):
-        """新建保护分支
+        r"""新建保护分支
 
         新建保护分支
         
@@ -1422,7 +1422,7 @@ class CodeHubClient(Client):
         return http_info
 
     def add_tag_v2(self, request):
-        """新建标签
+        r"""新建标签
 
         新建标签
         
@@ -1489,7 +1489,7 @@ class CodeHubClient(Client):
         return http_info
 
     def create_repository(self, request):
-        """创建仓库
+        r"""创建仓库
 
         用指定的名称在指定项目上创建仓库。传入参数：仓库名、模板id、是否导入项目成员、归属项目
         
@@ -1554,7 +1554,7 @@ class CodeHubClient(Client):
         return http_info
 
     def delete_deploy_key(self, request):
-        """删除仓库部署密钥
+        r"""删除仓库部署密钥
 
         删除仓库部署密钥
         
@@ -1623,7 +1623,7 @@ class CodeHubClient(Client):
         return http_info
 
     def delete_deploy_key_v2(self, request):
-        """删除仓库部署密钥
+        r"""删除仓库部署密钥
 
         删除仓库部署密钥
         
@@ -1690,7 +1690,7 @@ class CodeHubClient(Client):
         return http_info
 
     def delete_repository(self, request):
-        """删除仓库
+        r"""删除仓库
 
         根据仓库32位uuid删除指定的仓库
         
@@ -1755,7 +1755,7 @@ class CodeHubClient(Client):
         return http_info
 
     def get_repository_by_project_id(self, request):
-        """查询项目下的某个仓库
+        r"""查询项目下的某个仓库
 
         不建议再使用,建议使用/{repository_uuid}/status
         
@@ -1822,7 +1822,7 @@ class CodeHubClient(Client):
         return http_info
 
     def get_templates(self, request):
-        """获取公开示例模板列表
+        r"""获取公开示例模板列表
 
         获取公开示例模板列表
         
@@ -1909,7 +1909,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_branches_by_repository_id(self, request):
-        """获取仓库分支列表
+        r"""获取仓库分支列表
 
         获取仓库分支列表
         
@@ -1980,7 +1980,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_commit_statistics(self, request):
-        """获取仓库上一次的提交统计信息
+        r"""获取仓库上一次的提交统计信息
 
         获取仓库上一次的提交统计信息
         
@@ -2047,7 +2047,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_files(self, request):
-        """获取一个仓库下特定分支指定文件内容
+        r"""获取一个仓库下特定分支指定文件内容
 
         获取一个仓库下特定分支指定文件内容
         
@@ -2116,7 +2116,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_merge_changes(self, request):
-        """获取变更文件
+        r"""获取变更文件
 
         获取变更文件
         
@@ -2193,7 +2193,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_merge_changes_trees(self, request):
-        """获取变更文件列表
+        r"""获取变更文件列表
 
         获取变更文件列表
         
@@ -2264,7 +2264,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_merge_request(self, request):
-        """获取仓库合并请求列表
+        r"""获取仓库合并请求列表
 
         获取仓库合并请求列表
         
@@ -2337,7 +2337,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_merge_request_reviewers(self, request):
-        """根据仓库短ID和合并请求短ID获取检视人信息
+        r"""根据仓库短ID和合并请求短ID获取检视人信息
 
         根据仓库短ID和合并请求短ID获取检视人信息
         
@@ -2408,7 +2408,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_related_commits(self, request):
-        """获取关联工作项信息
+        r"""获取关联工作项信息
 
         获取关联工作项信息
         
@@ -2481,7 +2481,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_repository_status(self, request):
-        """查看仓库的创建状态
+        r"""查看仓库的创建状态
 
         获取仓库状态。
         
@@ -2546,7 +2546,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_subfiles(self, request):
-        """获取分支目录下的文件
+        r"""获取分支目录下的文件
 
         获取分支目录下的文件
         
@@ -2619,7 +2619,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_templates_two(self, request):
-        """设置仓库是公开状态还是私有状态
+        r"""设置仓库是公开状态还是私有状态
 
         设置仓库是公开状态还是私有状态
         
@@ -2686,7 +2686,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_two_templates(self, request):
-        """获取公开示例模板列表
+        r"""获取公开示例模板列表
 
         获取公开示例模板列表
         
@@ -2771,7 +2771,7 @@ class CodeHubClient(Client):
         return http_info
 
     def share_templates(self, request):
-        """设置仓库是公开状态还是私有状态
+        r"""设置仓库是公开状态还是私有状态
 
         设置仓库是公开状态还是私有状态
         
@@ -2840,7 +2840,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_branches_by_repository_id(self, request):
-        """查询某仓库对应的分支
+        r"""查询某仓库对应的分支
 
         根据仓库id获取指定仓库的分支列表.
         
@@ -2905,7 +2905,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_branches_by_two_repository_id(self, request):
-        """查询某仓库的标签列表
+        r"""查询某仓库的标签列表
 
         查询指定仓库对应的分支。
         
@@ -2970,7 +2970,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_commits_by_branch(self, request):
-        """根据组名和仓库名查询某仓库某分支对应的提交
+        r"""根据组名和仓库名查询某仓库某分支对应的提交
 
         根据仓库组名、仓库名和分支获取提交列表。
         
@@ -3043,7 +3043,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_commits_by_repo_id(self, request):
-        """根据仓库id查询仓库某分支对应的提交，提供更多可选参数
+        r"""根据仓库id查询仓库某分支对应的提交，提供更多可选参数
 
         根据仓库id查询仓库某分支对应的提交.
         
@@ -3126,7 +3126,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_has_pipeline(self, request):
-        """修改被流水线引用的仓库状态
+        r"""修改被流水线引用的仓库状态
 
         修改被流水线引用的仓库状态
         
@@ -3191,7 +3191,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_image_blob(self, request):
-        """获取一个仓库下特定分支的图片文件
+        r"""获取一个仓库下特定分支的图片文件
 
         获取一个仓库下特定分支的图片文件
         
@@ -3260,7 +3260,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_master(self, request):
-        """判断用户是否有仓库的管理员权限
+        r"""判断用户是否有仓库的管理员权限
 
         判断用户是否有仓库的管理员权限
         
@@ -3325,7 +3325,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_merge_request(self, request):
-        """获取仓库合并请求详情
+        r"""获取仓库合并请求详情
 
         获取仓库合并请求详情
         
@@ -3392,7 +3392,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_repo_id(self, request):
-        """根据仓库名组名获取仓库短id，用以拼接与commitid对应提交详情页面url
+        r"""根据仓库名组名获取仓库短id，用以拼接与commitid对应提交详情页面url
 
         获取仓库短id,用于获取仓库详情页面url
         
@@ -3459,7 +3459,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_repository_archive(self, request):
-        """下载仓库
+        r"""下载仓库
 
         按照指定格式下载仓库
         
@@ -3528,7 +3528,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_repository_by_uuid(self, request):
-        """查询某个仓库的详细信息
+        r"""查询某个仓库的详细信息
 
         根据仓库UUID(由CreateRepository接口返回)获取仓库信息仓库信息。返回 包含id，name，组名，仓库访问URL。
         
@@ -3593,7 +3593,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_repository_statistics(self, request):
-        """仓库统计
+        r"""仓库统计
 
         根据仓库短id，查询仓库的代码提交记录统计
         
@@ -3660,7 +3660,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_statistic_commit(self, request):
-        """获取代码提交行数
+        r"""获取代码提交行数
 
         获取指定日期内代码仓指定分支的代码提交行数
         
@@ -3733,7 +3733,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_statistic_commit_v3(self, request):
-        """获取代码提交行数
+        r"""获取代码提交行数
 
         获取指定日期内代码仓指定分支的代码提交行数
         
@@ -3804,7 +3804,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_statistical_data(self, request):
-        """获取仓库统计数据
+        r"""获取仓库统计数据
 
         获取仓库统计数据
         
@@ -3869,7 +3869,7 @@ class CodeHubClient(Client):
         return http_info
 
     def update_merge_request_approval_state(self, request):
-        """合并请求代码审核
+        r"""合并请求代码审核
 
         合并请求代码审核
         
@@ -3938,7 +3938,7 @@ class CodeHubClient(Client):
         return http_info
 
     def add_ssh_key(self, request):
-        """添加ssh key
+        r"""添加ssh key
 
         添加ssh key
         
@@ -4003,7 +4003,7 @@ class CodeHubClient(Client):
         return http_info
 
     def delete_s_shkey(self, request):
-        """删除用户公钥
+        r"""删除用户公钥
 
         删除用户公钥。
         
@@ -4070,7 +4070,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_ssh_keys(self, request):
-        """获取ssh key列表
+        r"""获取ssh key列表
 
         获取ssh key列表。
         
@@ -4133,7 +4133,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_private_key_verify(self, request):
-        """检验私钥是否有拉取代码的权限
+        r"""检验私钥是否有拉取代码的权限
 
         检验私钥是否有拉取代码的权限
         
@@ -4198,7 +4198,7 @@ class CodeHubClient(Client):
         return http_info
 
     def validate_https_info(self, request):
-        """ https账号密码校验
+        r""" https账号密码校验
 
         判断用户使用 https 上传/下载代码时输入的用户名和密码是否合法。
         
@@ -4267,7 +4267,7 @@ class CodeHubClient(Client):
         return http_info
 
     def validate_https_info_v2(self, request):
-        """https账号密码校验
+        r"""https账号密码校验
 
         判断用户使用 https 上传/下载代码时输入的用户名和密码是否合法。
         
@@ -4334,7 +4334,7 @@ class CodeHubClient(Client):
         return http_info
 
     def associate_issues(self, request):
-        """分支关联工作项
+        r"""分支关联工作项
 
         分支关联工作项
         
@@ -4399,7 +4399,7 @@ class CodeHubClient(Client):
         return http_info
 
     def create_project_and_repositories(self, request):
-        """创建项目、仓库
+        r"""创建项目、仓库
 
         创建项目后，创建仓库组由后台生成方式 传入参数：仓库名、模板id、是否导入项目成员、归属项目
         
@@ -4464,7 +4464,7 @@ class CodeHubClient(Client):
         return http_info
 
     def create_project_andfork_repositories(self, request):
-        """创建项目并fork仓库
+        r"""创建项目并fork仓库
 
         创建仓库后fork仓库 传入参数：仓库名、是否导入项目成员、归属项目
         
@@ -4529,7 +4529,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_user_all_repositories(self, request):
-        """查询用户的所有仓库
+        r"""查询用户的所有仓库
 
         获取用户的所有仓库信息
         
@@ -4598,7 +4598,7 @@ class CodeHubClient(Client):
         return http_info
 
     def show_all_repository_by_two_project_id(self, request):
-        """查询项目下的所有仓库
+        r"""查询项目下的所有仓库
 
         获取仓库列表,模糊查询支持范围,如果未传入project uuid，则支持按仓库名或项目名模糊查询，否则，只按仓库名模糊匹配
         
@@ -4669,7 +4669,7 @@ class CodeHubClient(Client):
         return http_info
 
     def add_hooks(self, request):
-        """为指定仓库添加hook
+        r"""为指定仓库添加hook
 
         提交代码自动触发编译构建，添加仓库钩子
         
@@ -4738,7 +4738,7 @@ class CodeHubClient(Client):
         return http_info
 
     def delete_hooks(self, request):
-        """删除指定仓库的 hook
+        r"""删除指定仓库的 hook
 
         提交代码自动触发编译构建，删除仓库钩子
         
@@ -4807,7 +4807,7 @@ class CodeHubClient(Client):
         return http_info
 
     def list_hooks(self, request):
-        """查询指定仓库的webhook
+        r"""查询指定仓库的webhook
 
         获取仓库webhook
         
@@ -4876,7 +4876,7 @@ class CodeHubClient(Client):
         return http_info
 
     def create_new_branch(self, request):
-        """创建分支
+        r"""创建分支
 
         根据仓库id在指定仓库中创建分支
         

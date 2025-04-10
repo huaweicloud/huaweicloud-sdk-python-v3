@@ -36,7 +36,7 @@ class CreateAuthRandomResponse(SdkResponse):
     }
 
     def __init__(self, random=None, subject=None, conf_mode=None, webinar=None, need_password=None, support_applets=None):
-        """CreateAuthRandomResponse
+        r"""CreateAuthRandomResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateAuthRandomResponse(SdkResponse):
 
     @property
     def random(self):
-        """Gets the random of this CreateAuthRandomResponse.
+        r"""Gets the random of this CreateAuthRandomResponse.
 
         鉴权随机数
 
@@ -90,7 +90,7 @@ class CreateAuthRandomResponse(SdkResponse):
 
     @random.setter
     def random(self, random):
-        """Sets the random of this CreateAuthRandomResponse.
+        r"""Sets the random of this CreateAuthRandomResponse.
 
         鉴权随机数
 
@@ -101,7 +101,7 @@ class CreateAuthRandomResponse(SdkResponse):
 
     @property
     def subject(self):
-        """Gets the subject of this CreateAuthRandomResponse.
+        r"""Gets the subject of this CreateAuthRandomResponse.
 
         会议主题
 
@@ -112,7 +112,7 @@ class CreateAuthRandomResponse(SdkResponse):
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this CreateAuthRandomResponse.
+        r"""Sets the subject of this CreateAuthRandomResponse.
 
         会议主题
 
@@ -123,7 +123,7 @@ class CreateAuthRandomResponse(SdkResponse):
 
     @property
     def conf_mode(self):
-        """Gets the conf_mode of this CreateAuthRandomResponse.
+        r"""Gets the conf_mode of this CreateAuthRandomResponse.
 
         会议类型模型。 * COMMON：MCU会议 * RTC：MMR会议 
 
@@ -134,7 +134,7 @@ class CreateAuthRandomResponse(SdkResponse):
 
     @conf_mode.setter
     def conf_mode(self, conf_mode):
-        """Sets the conf_mode of this CreateAuthRandomResponse.
+        r"""Sets the conf_mode of this CreateAuthRandomResponse.
 
         会议类型模型。 * COMMON：MCU会议 * RTC：MMR会议 
 
@@ -145,7 +145,7 @@ class CreateAuthRandomResponse(SdkResponse):
 
     @property
     def webinar(self):
-        """Gets the webinar of this CreateAuthRandomResponse.
+        r"""Gets the webinar of this CreateAuthRandomResponse.
 
         是否为网络研讨会
 
@@ -156,7 +156,7 @@ class CreateAuthRandomResponse(SdkResponse):
 
     @webinar.setter
     def webinar(self, webinar):
-        """Sets the webinar of this CreateAuthRandomResponse.
+        r"""Sets the webinar of this CreateAuthRandomResponse.
 
         是否为网络研讨会
 
@@ -167,7 +167,7 @@ class CreateAuthRandomResponse(SdkResponse):
 
     @property
     def need_password(self):
-        """Gets the need_password of this CreateAuthRandomResponse.
+        r"""Gets the need_password of this CreateAuthRandomResponse.
 
         是否需要密码
 
@@ -178,7 +178,7 @@ class CreateAuthRandomResponse(SdkResponse):
 
     @need_password.setter
     def need_password(self, need_password):
-        """Sets the need_password of this CreateAuthRandomResponse.
+        r"""Sets the need_password of this CreateAuthRandomResponse.
 
         是否需要密码
 
@@ -189,7 +189,7 @@ class CreateAuthRandomResponse(SdkResponse):
 
     @property
     def support_applets(self):
-        """Gets the support_applets of this CreateAuthRandomResponse.
+        r"""Gets the support_applets of this CreateAuthRandomResponse.
 
         是否支持小程序
 
@@ -200,7 +200,7 @@ class CreateAuthRandomResponse(SdkResponse):
 
     @support_applets.setter
     def support_applets(self, support_applets):
-        """Sets the support_applets of this CreateAuthRandomResponse.
+        r"""Sets the support_applets of this CreateAuthRandomResponse.
 
         是否支持小程序
 

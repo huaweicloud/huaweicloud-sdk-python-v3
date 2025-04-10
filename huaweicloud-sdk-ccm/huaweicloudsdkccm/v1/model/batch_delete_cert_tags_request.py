@@ -27,7 +27,7 @@ class BatchDeleteCertTagsRequest:
     }
 
     def __init__(self, certificate_id=None, body=None):
-        """BatchDeleteCertTagsRequest
+        r"""BatchDeleteCertTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteCertTagsRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this BatchDeleteCertTagsRequest.
+        r"""Gets the certificate_id of this BatchDeleteCertTagsRequest.
 
         所需要批量删除标签的证书ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteCertTagsRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this BatchDeleteCertTagsRequest.
+        r"""Sets the certificate_id of this BatchDeleteCertTagsRequest.
 
         所需要批量删除标签的证书ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteCertTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteCertTagsRequest.
+        r"""Gets the body of this BatchDeleteCertTagsRequest.
 
         :return: The body of this BatchDeleteCertTagsRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.BatchOperateTagRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteCertTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteCertTagsRequest.
+        r"""Sets the body of this BatchDeleteCertTagsRequest.
 
         :param body: The body of this BatchDeleteCertTagsRequest.
         :type body: :class:`huaweicloudsdkccm.v1.BatchOperateTagRequestBody`

@@ -27,7 +27,7 @@ class OperateWindow:
     }
 
     def __init__(self, start_time=None, end_time=None):
-        """OperateWindow
+        r"""OperateWindow
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OperateWindow:
 
     @property
     def start_time(self):
-        """Gets the start_time of this OperateWindow.
+        r"""Gets the start_time of this OperateWindow.
 
         **参数说明**：变更时间窗开始时间，UTC时间，格式为：\"HH:mm\" 
 
@@ -59,7 +59,7 @@ class OperateWindow:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this OperateWindow.
+        r"""Sets the start_time of this OperateWindow.
 
         **参数说明**：变更时间窗开始时间，UTC时间，格式为：\"HH:mm\" 
 
@@ -70,7 +70,7 @@ class OperateWindow:
 
     @property
     def end_time(self):
-        """Gets the end_time of this OperateWindow.
+        r"""Gets the end_time of this OperateWindow.
 
         **参数说明**：变更时间窗结束时间，UTC时间，格式为：\"HH:mm\" 
 
@@ -81,7 +81,7 @@ class OperateWindow:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this OperateWindow.
+        r"""Sets the end_time of this OperateWindow.
 
         **参数说明**：变更时间窗结束时间，UTC时间，格式为：\"HH:mm\" 
 

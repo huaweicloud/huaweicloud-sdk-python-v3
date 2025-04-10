@@ -25,7 +25,7 @@ class NovaRemoveSecurityGroupOption:
     }
 
     def __init__(self, name=None):
-        """NovaRemoveSecurityGroupOption
+        r"""NovaRemoveSecurityGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NovaRemoveSecurityGroupOption:
 
     @property
     def name(self):
-        """Gets the name of this NovaRemoveSecurityGroupOption.
+        r"""Gets the name of this NovaRemoveSecurityGroupOption.
 
         弹性云服务器移除的安全组名称，会对云服务器中配置的网卡生效。
 
@@ -53,7 +53,7 @@ class NovaRemoveSecurityGroupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NovaRemoveSecurityGroupOption.
+        r"""Sets the name of this NovaRemoveSecurityGroupOption.
 
         弹性云服务器移除的安全组名称，会对云服务器中配置的网卡生效。
 

@@ -25,7 +25,7 @@ class ShowInterRegionBandwidthRequest:
     }
 
     def __init__(self, id=None):
-        """ShowInterRegionBandwidthRequest
+        r"""ShowInterRegionBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowInterRegionBandwidthRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowInterRegionBandwidthRequest.
+        r"""Gets the id of this ShowInterRegionBandwidthRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowInterRegionBandwidthRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowInterRegionBandwidthRequest.
+        r"""Sets the id of this ShowInterRegionBandwidthRequest.
 
         实例ID。
 

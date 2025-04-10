@@ -30,7 +30,7 @@ class ListL7PoliciesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, l7policies=None):
-        """ListL7PoliciesResponse
+        r"""ListL7PoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListL7PoliciesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListL7PoliciesResponse.
+        r"""Gets the request_id of this ListL7PoliciesResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -69,7 +69,7 @@ class ListL7PoliciesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListL7PoliciesResponse.
+        r"""Sets the request_id of this ListL7PoliciesResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -80,7 +80,7 @@ class ListL7PoliciesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListL7PoliciesResponse.
+        r"""Gets the page_info of this ListL7PoliciesResponse.
 
         :return: The page_info of this ListL7PoliciesResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListL7PoliciesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListL7PoliciesResponse.
+        r"""Sets the page_info of this ListL7PoliciesResponse.
 
         :param page_info: The page_info of this ListL7PoliciesResponse.
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListL7PoliciesResponse(SdkResponse):
 
     @property
     def l7policies(self):
-        """Gets the l7policies of this ListL7PoliciesResponse.
+        r"""Gets the l7policies of this ListL7PoliciesResponse.
 
         参数解释：转发策略对象列表。
 
@@ -109,7 +109,7 @@ class ListL7PoliciesResponse(SdkResponse):
 
     @l7policies.setter
     def l7policies(self, l7policies):
-        """Sets the l7policies of this ListL7PoliciesResponse.
+        r"""Sets the l7policies of this ListL7PoliciesResponse.
 
         参数解释：转发策略对象列表。
 

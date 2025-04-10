@@ -32,7 +32,7 @@ class PreviewTableResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, schema=None, rows=None):
-        """PreviewTableResponse
+        r"""PreviewTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class PreviewTableResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this PreviewTableResponse.
+        r"""Gets the is_success of this PreviewTableResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -76,7 +76,7 @@ class PreviewTableResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this PreviewTableResponse.
+        r"""Sets the is_success of this PreviewTableResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -87,7 +87,7 @@ class PreviewTableResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this PreviewTableResponse.
+        r"""Gets the message of this PreviewTableResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -98,7 +98,7 @@ class PreviewTableResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this PreviewTableResponse.
+        r"""Sets the message of this PreviewTableResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -109,7 +109,7 @@ class PreviewTableResponse(SdkResponse):
 
     @property
     def schema(self):
-        """Gets the schema of this PreviewTableResponse.
+        r"""Gets the schema of this PreviewTableResponse.
 
         表的列名称和类型。
 
@@ -120,7 +120,7 @@ class PreviewTableResponse(SdkResponse):
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this PreviewTableResponse.
+        r"""Sets the schema of this PreviewTableResponse.
 
         表的列名称和类型。
 
@@ -131,7 +131,7 @@ class PreviewTableResponse(SdkResponse):
 
     @property
     def rows(self):
-        """Gets the rows of this PreviewTableResponse.
+        r"""Gets the rows of this PreviewTableResponse.
 
         预览的表内容。
 
@@ -142,7 +142,7 @@ class PreviewTableResponse(SdkResponse):
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this PreviewTableResponse.
+        r"""Sets the rows of this PreviewTableResponse.
 
         预览的表内容。
 

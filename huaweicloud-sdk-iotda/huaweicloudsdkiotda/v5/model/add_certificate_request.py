@@ -33,7 +33,7 @@ class AddCertificateRequest:
     }
 
     def __init__(self, sp_auth_token=None, stage_auth_token=None, instance_id=None, body=None):
-        """AddCertificateRequest
+        r"""AddCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class AddCertificateRequest:
 
     @property
     def sp_auth_token(self):
-        """Gets the sp_auth_token of this AddCertificateRequest.
+        r"""Gets the sp_auth_token of this AddCertificateRequest.
 
         Sp用户Token。通过调用IoBPS服务获取SP用户Token
 
@@ -77,7 +77,7 @@ class AddCertificateRequest:
 
     @sp_auth_token.setter
     def sp_auth_token(self, sp_auth_token):
-        """Sets the sp_auth_token of this AddCertificateRequest.
+        r"""Sets the sp_auth_token of this AddCertificateRequest.
 
         Sp用户Token。通过调用IoBPS服务获取SP用户Token
 
@@ -88,7 +88,7 @@ class AddCertificateRequest:
 
     @property
     def stage_auth_token(self):
-        """Gets the stage_auth_token of this AddCertificateRequest.
+        r"""Gets the stage_auth_token of this AddCertificateRequest.
 
         Stage用户的Token, 仅提供给IoStage服务使用
 
@@ -99,7 +99,7 @@ class AddCertificateRequest:
 
     @stage_auth_token.setter
     def stage_auth_token(self, stage_auth_token):
-        """Sets the stage_auth_token of this AddCertificateRequest.
+        r"""Sets the stage_auth_token of this AddCertificateRequest.
 
         Stage用户的Token, 仅提供给IoStage服务使用
 
@@ -110,7 +110,7 @@ class AddCertificateRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddCertificateRequest.
+        r"""Gets the instance_id of this AddCertificateRequest.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -121,7 +121,7 @@ class AddCertificateRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddCertificateRequest.
+        r"""Sets the instance_id of this AddCertificateRequest.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -132,7 +132,7 @@ class AddCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddCertificateRequest.
+        r"""Gets the body of this AddCertificateRequest.
 
         :return: The body of this AddCertificateRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.CreateCertificateDTO`
@@ -141,7 +141,7 @@ class AddCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddCertificateRequest.
+        r"""Sets the body of this AddCertificateRequest.
 
         :param body: The body of this AddCertificateRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.CreateCertificateDTO`

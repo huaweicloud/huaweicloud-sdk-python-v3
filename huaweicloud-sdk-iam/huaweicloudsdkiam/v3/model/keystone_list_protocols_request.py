@@ -25,7 +25,7 @@ class KeystoneListProtocolsRequest:
     }
 
     def __init__(self, idp_id=None):
-        """KeystoneListProtocolsRequest
+        r"""KeystoneListProtocolsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneListProtocolsRequest:
 
     @property
     def idp_id(self):
-        """Gets the idp_id of this KeystoneListProtocolsRequest.
+        r"""Gets the idp_id of this KeystoneListProtocolsRequest.
 
         身份提供商ID。
 
@@ -53,7 +53,7 @@ class KeystoneListProtocolsRequest:
 
     @idp_id.setter
     def idp_id(self, idp_id):
-        """Sets the idp_id of this KeystoneListProtocolsRequest.
+        r"""Sets the idp_id of this KeystoneListProtocolsRequest.
 
         身份提供商ID。
 

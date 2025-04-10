@@ -29,7 +29,7 @@ class ShowDeptAndChildDeptRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, dept_code=None):
-        """ShowDeptAndChildDeptRequest
+        r"""ShowDeptAndChildDeptRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowDeptAndChildDeptRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowDeptAndChildDeptRequest.
+        r"""Gets the x_request_id of this ShowDeptAndChildDeptRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -67,7 +67,7 @@ class ShowDeptAndChildDeptRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowDeptAndChildDeptRequest.
+        r"""Sets the x_request_id of this ShowDeptAndChildDeptRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -78,7 +78,7 @@ class ShowDeptAndChildDeptRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this ShowDeptAndChildDeptRequest.
+        r"""Gets the accept_language of this ShowDeptAndChildDeptRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -89,7 +89,7 @@ class ShowDeptAndChildDeptRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this ShowDeptAndChildDeptRequest.
+        r"""Sets the accept_language of this ShowDeptAndChildDeptRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -100,7 +100,7 @@ class ShowDeptAndChildDeptRequest:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this ShowDeptAndChildDeptRequest.
+        r"""Gets the dept_code of this ShowDeptAndChildDeptRequest.
 
         部门编码。 > 根部门的部门编码是1。
 
@@ -111,7 +111,7 @@ class ShowDeptAndChildDeptRequest:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this ShowDeptAndChildDeptRequest.
+        r"""Sets the dept_code of this ShowDeptAndChildDeptRequest.
 
         部门编码。 > 根部门的部门编码是1。
 

@@ -27,7 +27,7 @@ class ShowDomainQuotaRequest:
     }
 
     def __init__(self, domain_id=None, type=None):
-        """ShowDomainQuotaRequest
+        r"""ShowDomainQuotaRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowDomainQuotaRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowDomainQuotaRequest.
+        r"""Gets the domain_id of this ShowDomainQuotaRequest.
 
         待查询的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -60,7 +60,7 @@ class ShowDomainQuotaRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowDomainQuotaRequest.
+        r"""Sets the domain_id of this ShowDomainQuotaRequest.
 
         待查询的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -71,7 +71,7 @@ class ShowDomainQuotaRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowDomainQuotaRequest.
+        r"""Gets the type of this ShowDomainQuotaRequest.
 
         查询配额的类型，取值范围为：user, group, idp, agency, policy, assigment_group_mp, assigment_agency_mp, assigment_group_ep, assigment_user_ep, mapping。
 
@@ -82,7 +82,7 @@ class ShowDomainQuotaRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDomainQuotaRequest.
+        r"""Sets the type of this ShowDomainQuotaRequest.
 
         查询配额的类型，取值范围为：user, group, idp, agency, policy, assigment_group_mp, assigment_agency_mp, assigment_group_ep, assigment_user_ep, mapping。
 

@@ -47,7 +47,7 @@ class WatermarkOptions:
     }
 
     def __init__(self, show_style=None, color=None, font_size=None, opacity_setting=None, content_item_count=None, display_format=None, lean=None, content_customized=None, content_color=None, watermark_security_access=None, user_extend_info_switch=None, user_extend_info=None):
-        """WatermarkOptions
+        r"""WatermarkOptions
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class WatermarkOptions:
 
     @property
     def show_style(self):
-        """Gets the show_style of this WatermarkOptions.
+        r"""Gets the show_style of this WatermarkOptions.
 
         展示方式。取值为：FIXED：固定位置。RANDOM：随机运动。
 
@@ -131,7 +131,7 @@ class WatermarkOptions:
 
     @show_style.setter
     def show_style(self, show_style):
-        """Sets the show_style of this WatermarkOptions.
+        r"""Sets the show_style of this WatermarkOptions.
 
         展示方式。取值为：FIXED：固定位置。RANDOM：随机运动。
 
@@ -142,7 +142,7 @@ class WatermarkOptions:
 
     @property
     def color(self):
-        """Gets the color of this WatermarkOptions.
+        r"""Gets the color of this WatermarkOptions.
 
         颜色。格式：RRGGBB。默认：2a2a2a
 
@@ -153,7 +153,7 @@ class WatermarkOptions:
 
     @color.setter
     def color(self, color):
-        """Sets the color of this WatermarkOptions.
+        r"""Sets the color of this WatermarkOptions.
 
         颜色。格式：RRGGBB。默认：2a2a2a
 
@@ -164,7 +164,7 @@ class WatermarkOptions:
 
     @property
     def font_size(self):
-        """Gets the font_size of this WatermarkOptions.
+        r"""Gets the font_size of this WatermarkOptions.
 
         字体大小。取值范围为[1-200]。默认：30。
 
@@ -175,7 +175,7 @@ class WatermarkOptions:
 
     @font_size.setter
     def font_size(self, font_size):
-        """Sets the font_size of this WatermarkOptions.
+        r"""Sets the font_size of this WatermarkOptions.
 
         字体大小。取值范围为[1-200]。默认：30。
 
@@ -186,7 +186,7 @@ class WatermarkOptions:
 
     @property
     def opacity_setting(self):
-        """Gets the opacity_setting of this WatermarkOptions.
+        r"""Gets the opacity_setting of this WatermarkOptions.
 
         不透明度（%）。取值范围为[0-100]。默认：\"12.5\"。
 
@@ -197,7 +197,7 @@ class WatermarkOptions:
 
     @opacity_setting.setter
     def opacity_setting(self, opacity_setting):
-        """Sets the opacity_setting of this WatermarkOptions.
+        r"""Sets the opacity_setting of this WatermarkOptions.
 
         不透明度（%）。取值范围为[0-100]。默认：\"12.5\"。
 
@@ -208,7 +208,7 @@ class WatermarkOptions:
 
     @property
     def content_item_count(self):
-        """Gets the content_item_count of this WatermarkOptions.
+        r"""Gets the content_item_count of this WatermarkOptions.
 
         条目数量。取值范围为[1-30]。默认：1。
 
@@ -219,7 +219,7 @@ class WatermarkOptions:
 
     @content_item_count.setter
     def content_item_count(self, content_item_count):
-        """Sets the content_item_count of this WatermarkOptions.
+        r"""Sets the content_item_count of this WatermarkOptions.
 
         条目数量。取值范围为[1-30]。默认：1。
 
@@ -230,7 +230,7 @@ class WatermarkOptions:
 
     @property
     def display_format(self):
-        """Gets the display_format of this WatermarkOptions.
+        r"""Gets the display_format of this WatermarkOptions.
 
         水印内容显示格式。
 
@@ -241,7 +241,7 @@ class WatermarkOptions:
 
     @display_format.setter
     def display_format(self, display_format):
-        """Sets the display_format of this WatermarkOptions.
+        r"""Sets the display_format of this WatermarkOptions.
 
         水印内容显示格式。
 
@@ -252,7 +252,7 @@ class WatermarkOptions:
 
     @property
     def lean(self):
-        """Gets the lean of this WatermarkOptions.
+        r"""Gets the lean of this WatermarkOptions.
 
         倾斜度。取值范围为[-90-90]。默认：-45。
 
@@ -263,7 +263,7 @@ class WatermarkOptions:
 
     @lean.setter
     def lean(self, lean):
-        """Sets the lean of this WatermarkOptions.
+        r"""Sets the lean of this WatermarkOptions.
 
         倾斜度。取值范围为[-90-90]。默认：-45。
 
@@ -274,7 +274,7 @@ class WatermarkOptions:
 
     @property
     def content_customized(self):
-        """Gets the content_customized of this WatermarkOptions.
+        r"""Gets the content_customized of this WatermarkOptions.
 
         自定义内容。内容不得带有类似'>'的特殊字符。
 
@@ -285,7 +285,7 @@ class WatermarkOptions:
 
     @content_customized.setter
     def content_customized(self, content_customized):
-        """Sets the content_customized of this WatermarkOptions.
+        r"""Sets the content_customized of this WatermarkOptions.
 
         自定义内容。内容不得带有类似'>'的特殊字符。
 
@@ -296,7 +296,7 @@ class WatermarkOptions:
 
     @property
     def content_color(self):
-        """Gets the content_color of this WatermarkOptions.
+        r"""Gets the content_color of this WatermarkOptions.
 
         内容颜色。
 
@@ -307,7 +307,7 @@ class WatermarkOptions:
 
     @content_color.setter
     def content_color(self, content_color):
-        """Sets the content_color of this WatermarkOptions.
+        r"""Sets the content_color of this WatermarkOptions.
 
         内容颜色。
 
@@ -318,7 +318,7 @@ class WatermarkOptions:
 
     @property
     def watermark_security_access(self):
-        """Gets the watermark_security_access of this WatermarkOptions.
+        r"""Gets the watermark_security_access of this WatermarkOptions.
 
         安全优先开关。
 
@@ -329,7 +329,7 @@ class WatermarkOptions:
 
     @watermark_security_access.setter
     def watermark_security_access(self, watermark_security_access):
-        """Sets the watermark_security_access of this WatermarkOptions.
+        r"""Sets the watermark_security_access of this WatermarkOptions.
 
         安全优先开关。
 
@@ -340,7 +340,7 @@ class WatermarkOptions:
 
     @property
     def user_extend_info_switch(self):
-        """Gets the user_extend_info_switch of this WatermarkOptions.
+        r"""Gets the user_extend_info_switch of this WatermarkOptions.
 
         用户扩展信息开关。false：表示关闭。true：表示开启。
 
@@ -351,7 +351,7 @@ class WatermarkOptions:
 
     @user_extend_info_switch.setter
     def user_extend_info_switch(self, user_extend_info_switch):
-        """Sets the user_extend_info_switch of this WatermarkOptions.
+        r"""Sets the user_extend_info_switch of this WatermarkOptions.
 
         用户扩展信息开关。false：表示关闭。true：表示开启。
 
@@ -362,7 +362,7 @@ class WatermarkOptions:
 
     @property
     def user_extend_info(self):
-        """Gets the user_extend_info of this WatermarkOptions.
+        r"""Gets the user_extend_info of this WatermarkOptions.
 
         用户扩展信息。
 
@@ -373,7 +373,7 @@ class WatermarkOptions:
 
     @user_extend_info.setter
     def user_extend_info(self, user_extend_info):
-        """Sets the user_extend_info of this WatermarkOptions.
+        r"""Sets the user_extend_info of this WatermarkOptions.
 
         用户扩展信息。
 

@@ -73,7 +73,7 @@ class CentralNetworkAttachment:
     }
 
     def __init__(self, id=None, name=None, description=None, domain_id=None, state=None, created_at=None, updated_at=None, central_network_id=None, central_network_plane_id=None, global_connection_bandwidth_id=None, bandwidth_type=None, bandwidth_size=None, is_frozen=None, enterprise_router_id=None, enterprise_router_project_id=None, enterprise_router_region_id=None, enterprise_router_attachment_id=None, attachment_instance_type=None, attachment_instance_id=None, attachment_id=None, attachment_instance_project_id=None, attachment_instance_region_id=None, attachment_instance_site_code=None, enterprise_router_site_code=None, specification_value=None):
-        """CentralNetworkAttachment
+        r"""CentralNetworkAttachment
 
         The model defined in huaweicloud sdk
 
@@ -192,7 +192,7 @@ class CentralNetworkAttachment:
 
     @property
     def id(self):
-        """Gets the id of this CentralNetworkAttachment.
+        r"""Gets the id of this CentralNetworkAttachment.
 
         实例ID。
 
@@ -203,7 +203,7 @@ class CentralNetworkAttachment:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CentralNetworkAttachment.
+        r"""Sets the id of this CentralNetworkAttachment.
 
         实例ID。
 
@@ -214,7 +214,7 @@ class CentralNetworkAttachment:
 
     @property
     def name(self):
-        """Gets the name of this CentralNetworkAttachment.
+        r"""Gets the name of this CentralNetworkAttachment.
 
         实例名字。
 
@@ -225,7 +225,7 @@ class CentralNetworkAttachment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CentralNetworkAttachment.
+        r"""Sets the name of this CentralNetworkAttachment.
 
         实例名字。
 
@@ -236,7 +236,7 @@ class CentralNetworkAttachment:
 
     @property
     def description(self):
-        """Gets the description of this CentralNetworkAttachment.
+        r"""Gets the description of this CentralNetworkAttachment.
 
         实例描述。不支持 <>。
 
@@ -247,7 +247,7 @@ class CentralNetworkAttachment:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CentralNetworkAttachment.
+        r"""Sets the description of this CentralNetworkAttachment.
 
         实例描述。不支持 <>。
 
@@ -258,7 +258,7 @@ class CentralNetworkAttachment:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CentralNetworkAttachment.
+        r"""Gets the domain_id of this CentralNetworkAttachment.
 
         实例所属账号ID。
 
@@ -269,7 +269,7 @@ class CentralNetworkAttachment:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CentralNetworkAttachment.
+        r"""Sets the domain_id of this CentralNetworkAttachment.
 
         实例所属账号ID。
 
@@ -280,7 +280,7 @@ class CentralNetworkAttachment:
 
     @property
     def state(self):
-        """Gets the state of this CentralNetworkAttachment.
+        r"""Gets the state of this CentralNetworkAttachment.
 
         :return: The state of this CentralNetworkAttachment.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
@@ -289,7 +289,7 @@ class CentralNetworkAttachment:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CentralNetworkAttachment.
+        r"""Sets the state of this CentralNetworkAttachment.
 
         :param state: The state of this CentralNetworkAttachment.
         :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
@@ -298,7 +298,7 @@ class CentralNetworkAttachment:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CentralNetworkAttachment.
+        r"""Gets the created_at of this CentralNetworkAttachment.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -309,7 +309,7 @@ class CentralNetworkAttachment:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CentralNetworkAttachment.
+        r"""Sets the created_at of this CentralNetworkAttachment.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -320,7 +320,7 @@ class CentralNetworkAttachment:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CentralNetworkAttachment.
+        r"""Gets the updated_at of this CentralNetworkAttachment.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -331,7 +331,7 @@ class CentralNetworkAttachment:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CentralNetworkAttachment.
+        r"""Sets the updated_at of this CentralNetworkAttachment.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -342,7 +342,7 @@ class CentralNetworkAttachment:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this CentralNetworkAttachment.
+        r"""Gets the central_network_id of this CentralNetworkAttachment.
 
         中心网络ID。
 
@@ -353,7 +353,7 @@ class CentralNetworkAttachment:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this CentralNetworkAttachment.
+        r"""Sets the central_network_id of this CentralNetworkAttachment.
 
         中心网络ID。
 
@@ -364,7 +364,7 @@ class CentralNetworkAttachment:
 
     @property
     def central_network_plane_id(self):
-        """Gets the central_network_plane_id of this CentralNetworkAttachment.
+        r"""Gets the central_network_plane_id of this CentralNetworkAttachment.
 
         中心网络平面ID。
 
@@ -375,7 +375,7 @@ class CentralNetworkAttachment:
 
     @central_network_plane_id.setter
     def central_network_plane_id(self, central_network_plane_id):
-        """Sets the central_network_plane_id of this CentralNetworkAttachment.
+        r"""Sets the central_network_plane_id of this CentralNetworkAttachment.
 
         中心网络平面ID。
 
@@ -386,7 +386,7 @@ class CentralNetworkAttachment:
 
     @property
     def global_connection_bandwidth_id(self):
-        """Gets the global_connection_bandwidth_id of this CentralNetworkAttachment.
+        r"""Gets the global_connection_bandwidth_id of this CentralNetworkAttachment.
 
         全域互联带宽ID。
 
@@ -397,7 +397,7 @@ class CentralNetworkAttachment:
 
     @global_connection_bandwidth_id.setter
     def global_connection_bandwidth_id(self, global_connection_bandwidth_id):
-        """Sets the global_connection_bandwidth_id of this CentralNetworkAttachment.
+        r"""Sets the global_connection_bandwidth_id of this CentralNetworkAttachment.
 
         全域互联带宽ID。
 
@@ -408,7 +408,7 @@ class CentralNetworkAttachment:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this CentralNetworkAttachment.
+        r"""Gets the bandwidth_type of this CentralNetworkAttachment.
 
         :return: The bandwidth_type of this CentralNetworkAttachment.
         :rtype: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
@@ -417,7 +417,7 @@ class CentralNetworkAttachment:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this CentralNetworkAttachment.
+        r"""Sets the bandwidth_type of this CentralNetworkAttachment.
 
         :param bandwidth_type: The bandwidth_type of this CentralNetworkAttachment.
         :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
@@ -426,7 +426,7 @@ class CentralNetworkAttachment:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this CentralNetworkAttachment.
+        r"""Gets the bandwidth_size of this CentralNetworkAttachment.
 
         带宽值，单位Mbps。
 
@@ -437,7 +437,7 @@ class CentralNetworkAttachment:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this CentralNetworkAttachment.
+        r"""Sets the bandwidth_size of this CentralNetworkAttachment.
 
         带宽值，单位Mbps。
 
@@ -448,7 +448,7 @@ class CentralNetworkAttachment:
 
     @property
     def is_frozen(self):
-        """Gets the is_frozen of this CentralNetworkAttachment.
+        r"""Gets the is_frozen of this CentralNetworkAttachment.
 
         是否冻结
 
@@ -459,7 +459,7 @@ class CentralNetworkAttachment:
 
     @is_frozen.setter
     def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this CentralNetworkAttachment.
+        r"""Sets the is_frozen of this CentralNetworkAttachment.
 
         是否冻结
 
@@ -470,7 +470,7 @@ class CentralNetworkAttachment:
 
     @property
     def enterprise_router_id(self):
-        """Gets the enterprise_router_id of this CentralNetworkAttachment.
+        r"""Gets the enterprise_router_id of this CentralNetworkAttachment.
 
         企业路由器的ID。
 
@@ -481,7 +481,7 @@ class CentralNetworkAttachment:
 
     @enterprise_router_id.setter
     def enterprise_router_id(self, enterprise_router_id):
-        """Sets the enterprise_router_id of this CentralNetworkAttachment.
+        r"""Sets the enterprise_router_id of this CentralNetworkAttachment.
 
         企业路由器的ID。
 
@@ -492,7 +492,7 @@ class CentralNetworkAttachment:
 
     @property
     def enterprise_router_project_id(self):
-        """Gets the enterprise_router_project_id of this CentralNetworkAttachment.
+        r"""Gets the enterprise_router_project_id of this CentralNetworkAttachment.
 
         企业路由器的项目ID。
 
@@ -503,7 +503,7 @@ class CentralNetworkAttachment:
 
     @enterprise_router_project_id.setter
     def enterprise_router_project_id(self, enterprise_router_project_id):
-        """Sets the enterprise_router_project_id of this CentralNetworkAttachment.
+        r"""Sets the enterprise_router_project_id of this CentralNetworkAttachment.
 
         企业路由器的项目ID。
 
@@ -514,7 +514,7 @@ class CentralNetworkAttachment:
 
     @property
     def enterprise_router_region_id(self):
-        """Gets the enterprise_router_region_id of this CentralNetworkAttachment.
+        r"""Gets the enterprise_router_region_id of this CentralNetworkAttachment.
 
         ER路由器的regionID。
 
@@ -525,7 +525,7 @@ class CentralNetworkAttachment:
 
     @enterprise_router_region_id.setter
     def enterprise_router_region_id(self, enterprise_router_region_id):
-        """Sets the enterprise_router_region_id of this CentralNetworkAttachment.
+        r"""Sets the enterprise_router_region_id of this CentralNetworkAttachment.
 
         ER路由器的regionID。
 
@@ -536,7 +536,7 @@ class CentralNetworkAttachment:
 
     @property
     def enterprise_router_attachment_id(self):
-        """Gets the enterprise_router_attachment_id of this CentralNetworkAttachment.
+        r"""Gets the enterprise_router_attachment_id of this CentralNetworkAttachment.
 
         企业路由器的连接ID。
 
@@ -547,7 +547,7 @@ class CentralNetworkAttachment:
 
     @enterprise_router_attachment_id.setter
     def enterprise_router_attachment_id(self, enterprise_router_attachment_id):
-        """Sets the enterprise_router_attachment_id of this CentralNetworkAttachment.
+        r"""Sets the enterprise_router_attachment_id of this CentralNetworkAttachment.
 
         企业路由器的连接ID。
 
@@ -558,7 +558,7 @@ class CentralNetworkAttachment:
 
     @property
     def attachment_instance_type(self):
-        """Gets the attachment_instance_type of this CentralNetworkAttachment.
+        r"""Gets the attachment_instance_type of this CentralNetworkAttachment.
 
         :return: The attachment_instance_type of this CentralNetworkAttachment.
         :rtype: :class:`huaweicloudsdkcc.v3.AttachmentInstanceTypeEnum`
@@ -567,7 +567,7 @@ class CentralNetworkAttachment:
 
     @attachment_instance_type.setter
     def attachment_instance_type(self, attachment_instance_type):
-        """Sets the attachment_instance_type of this CentralNetworkAttachment.
+        r"""Sets the attachment_instance_type of this CentralNetworkAttachment.
 
         :param attachment_instance_type: The attachment_instance_type of this CentralNetworkAttachment.
         :type attachment_instance_type: :class:`huaweicloudsdkcc.v3.AttachmentInstanceTypeEnum`
@@ -576,7 +576,7 @@ class CentralNetworkAttachment:
 
     @property
     def attachment_instance_id(self):
-        """Gets the attachment_instance_id of this CentralNetworkAttachment.
+        r"""Gets the attachment_instance_id of this CentralNetworkAttachment.
 
         中心网络附件对端实例ID，企业路由器的路由表ID或者GDGW的ID。
 
@@ -587,7 +587,7 @@ class CentralNetworkAttachment:
 
     @attachment_instance_id.setter
     def attachment_instance_id(self, attachment_instance_id):
-        """Sets the attachment_instance_id of this CentralNetworkAttachment.
+        r"""Sets the attachment_instance_id of this CentralNetworkAttachment.
 
         中心网络附件对端实例ID，企业路由器的路由表ID或者GDGW的ID。
 
@@ -598,7 +598,7 @@ class CentralNetworkAttachment:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this CentralNetworkAttachment.
+        r"""Gets the attachment_id of this CentralNetworkAttachment.
 
         中心网络附件对端实例的连接ID，企业路由器的连接ID或者GDGW的连接ID。
 
@@ -609,7 +609,7 @@ class CentralNetworkAttachment:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this CentralNetworkAttachment.
+        r"""Sets the attachment_id of this CentralNetworkAttachment.
 
         中心网络附件对端实例的连接ID，企业路由器的连接ID或者GDGW的连接ID。
 
@@ -620,7 +620,7 @@ class CentralNetworkAttachment:
 
     @property
     def attachment_instance_project_id(self):
-        """Gets the attachment_instance_project_id of this CentralNetworkAttachment.
+        r"""Gets the attachment_instance_project_id of this CentralNetworkAttachment.
 
         中心网络附件对端实例的项目ID。
 
@@ -631,7 +631,7 @@ class CentralNetworkAttachment:
 
     @attachment_instance_project_id.setter
     def attachment_instance_project_id(self, attachment_instance_project_id):
-        """Sets the attachment_instance_project_id of this CentralNetworkAttachment.
+        r"""Sets the attachment_instance_project_id of this CentralNetworkAttachment.
 
         中心网络附件对端实例的项目ID。
 
@@ -642,7 +642,7 @@ class CentralNetworkAttachment:
 
     @property
     def attachment_instance_region_id(self):
-        """Gets the attachment_instance_region_id of this CentralNetworkAttachment.
+        r"""Gets the attachment_instance_region_id of this CentralNetworkAttachment.
 
         中心网络附件对端实例的regionID。
 
@@ -653,7 +653,7 @@ class CentralNetworkAttachment:
 
     @attachment_instance_region_id.setter
     def attachment_instance_region_id(self, attachment_instance_region_id):
-        """Sets the attachment_instance_region_id of this CentralNetworkAttachment.
+        r"""Sets the attachment_instance_region_id of this CentralNetworkAttachment.
 
         中心网络附件对端实例的regionID。
 
@@ -664,7 +664,7 @@ class CentralNetworkAttachment:
 
     @property
     def attachment_instance_site_code(self):
-        """Gets the attachment_instance_site_code of this CentralNetworkAttachment.
+        r"""Gets the attachment_instance_site_code of this CentralNetworkAttachment.
 
         中心网络附件对端实例的站点编码。
 
@@ -675,7 +675,7 @@ class CentralNetworkAttachment:
 
     @attachment_instance_site_code.setter
     def attachment_instance_site_code(self, attachment_instance_site_code):
-        """Sets the attachment_instance_site_code of this CentralNetworkAttachment.
+        r"""Sets the attachment_instance_site_code of this CentralNetworkAttachment.
 
         中心网络附件对端实例的站点编码。
 
@@ -686,7 +686,7 @@ class CentralNetworkAttachment:
 
     @property
     def enterprise_router_site_code(self):
-        """Gets the enterprise_router_site_code of this CentralNetworkAttachment.
+        r"""Gets the enterprise_router_site_code of this CentralNetworkAttachment.
 
         中心网络企业路由器的站点编码。
 
@@ -697,7 +697,7 @@ class CentralNetworkAttachment:
 
     @enterprise_router_site_code.setter
     def enterprise_router_site_code(self, enterprise_router_site_code):
-        """Sets the enterprise_router_site_code of this CentralNetworkAttachment.
+        r"""Sets the enterprise_router_site_code of this CentralNetworkAttachment.
 
         中心网络企业路由器的站点编码。
 
@@ -708,7 +708,7 @@ class CentralNetworkAttachment:
 
     @property
     def specification_value(self):
-        """Gets the specification_value of this CentralNetworkAttachment.
+        r"""Gets the specification_value of this CentralNetworkAttachment.
 
         :return: The specification_value of this CentralNetworkAttachment.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkAttachmentSpecificationValueInfo`
@@ -717,7 +717,7 @@ class CentralNetworkAttachment:
 
     @specification_value.setter
     def specification_value(self, specification_value):
-        """Sets the specification_value of this CentralNetworkAttachment.
+        r"""Sets the specification_value of this CentralNetworkAttachment.
 
         :param specification_value: The specification_value of this CentralNetworkAttachment.
         :type specification_value: :class:`huaweicloudsdkcc.v3.CentralNetworkAttachmentSpecificationValueInfo`

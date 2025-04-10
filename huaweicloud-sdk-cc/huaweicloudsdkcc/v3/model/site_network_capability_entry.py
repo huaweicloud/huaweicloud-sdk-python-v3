@@ -51,7 +51,7 @@ class SiteNetworkCapabilityEntry:
     }
 
     def __init__(self, id=None, domain_id=None, specification=None, is_support=None, is_support_enterprise_project=None, is_support_tag=None, is_support_intra_region=None, support_topologies=None, support_regions=None, support_dscp_regions=None, support_freeze_regions=None, support_locations=None, size_range=None, charge_mode=None):
-        """SiteNetworkCapabilityEntry
+        r"""SiteNetworkCapabilityEntry
 
         The model defined in huaweicloud sdk
 
@@ -131,7 +131,7 @@ class SiteNetworkCapabilityEntry:
 
     @property
     def id(self):
-        """Gets the id of this SiteNetworkCapabilityEntry.
+        r"""Gets the id of this SiteNetworkCapabilityEntry.
 
         实例ID。
 
@@ -142,7 +142,7 @@ class SiteNetworkCapabilityEntry:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SiteNetworkCapabilityEntry.
+        r"""Sets the id of this SiteNetworkCapabilityEntry.
 
         实例ID。
 
@@ -153,7 +153,7 @@ class SiteNetworkCapabilityEntry:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this SiteNetworkCapabilityEntry.
+        r"""Gets the domain_id of this SiteNetworkCapabilityEntry.
 
         实例所属账号ID。
 
@@ -164,7 +164,7 @@ class SiteNetworkCapabilityEntry:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this SiteNetworkCapabilityEntry.
+        r"""Sets the domain_id of this SiteNetworkCapabilityEntry.
 
         实例所属账号ID。
 
@@ -175,7 +175,7 @@ class SiteNetworkCapabilityEntry:
 
     @property
     def specification(self):
-        """Gets the specification of this SiteNetworkCapabilityEntry.
+        r"""Gets the specification of this SiteNetworkCapabilityEntry.
 
         :return: The specification of this SiteNetworkCapabilityEntry.
         :rtype: :class:`huaweicloudsdkcc.v3.SiteNetworkSpecificationEnum`
@@ -184,7 +184,7 @@ class SiteNetworkCapabilityEntry:
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this SiteNetworkCapabilityEntry.
+        r"""Sets the specification of this SiteNetworkCapabilityEntry.
 
         :param specification: The specification of this SiteNetworkCapabilityEntry.
         :type specification: :class:`huaweicloudsdkcc.v3.SiteNetworkSpecificationEnum`
@@ -193,7 +193,7 @@ class SiteNetworkCapabilityEntry:
 
     @property
     def is_support(self):
-        """Gets the is_support of this SiteNetworkCapabilityEntry.
+        r"""Gets the is_support of this SiteNetworkCapabilityEntry.
 
         是否支持分支网络。
 
@@ -204,7 +204,7 @@ class SiteNetworkCapabilityEntry:
 
     @is_support.setter
     def is_support(self, is_support):
-        """Sets the is_support of this SiteNetworkCapabilityEntry.
+        r"""Sets the is_support of this SiteNetworkCapabilityEntry.
 
         是否支持分支网络。
 
@@ -215,7 +215,7 @@ class SiteNetworkCapabilityEntry:
 
     @property
     def is_support_enterprise_project(self):
-        """Gets the is_support_enterprise_project of this SiteNetworkCapabilityEntry.
+        r"""Gets the is_support_enterprise_project of this SiteNetworkCapabilityEntry.
 
         是否支持分支网络企业项目。
 
@@ -226,7 +226,7 @@ class SiteNetworkCapabilityEntry:
 
     @is_support_enterprise_project.setter
     def is_support_enterprise_project(self, is_support_enterprise_project):
-        """Sets the is_support_enterprise_project of this SiteNetworkCapabilityEntry.
+        r"""Sets the is_support_enterprise_project of this SiteNetworkCapabilityEntry.
 
         是否支持分支网络企业项目。
 
@@ -237,7 +237,7 @@ class SiteNetworkCapabilityEntry:
 
     @property
     def is_support_tag(self):
-        """Gets the is_support_tag of this SiteNetworkCapabilityEntry.
+        r"""Gets the is_support_tag of this SiteNetworkCapabilityEntry.
 
         是否支持分支网络标签。
 
@@ -248,7 +248,7 @@ class SiteNetworkCapabilityEntry:
 
     @is_support_tag.setter
     def is_support_tag(self, is_support_tag):
-        """Sets the is_support_tag of this SiteNetworkCapabilityEntry.
+        r"""Sets the is_support_tag of this SiteNetworkCapabilityEntry.
 
         是否支持分支网络标签。
 
@@ -259,7 +259,7 @@ class SiteNetworkCapabilityEntry:
 
     @property
     def is_support_intra_region(self):
-        """Gets the is_support_intra_region of this SiteNetworkCapabilityEntry.
+        r"""Gets the is_support_intra_region of this SiteNetworkCapabilityEntry.
 
         是否支持创建同region分支网络。
 
@@ -270,7 +270,7 @@ class SiteNetworkCapabilityEntry:
 
     @is_support_intra_region.setter
     def is_support_intra_region(self, is_support_intra_region):
-        """Sets the is_support_intra_region of this SiteNetworkCapabilityEntry.
+        r"""Sets the is_support_intra_region of this SiteNetworkCapabilityEntry.
 
         是否支持创建同region分支网络。
 
@@ -281,7 +281,7 @@ class SiteNetworkCapabilityEntry:
 
     @property
     def support_topologies(self):
-        """Gets the support_topologies of this SiteNetworkCapabilityEntry.
+        r"""Gets the support_topologies of this SiteNetworkCapabilityEntry.
 
         分支网络的拓扑列表。
 
@@ -292,7 +292,7 @@ class SiteNetworkCapabilityEntry:
 
     @support_topologies.setter
     def support_topologies(self, support_topologies):
-        """Sets the support_topologies of this SiteNetworkCapabilityEntry.
+        r"""Sets the support_topologies of this SiteNetworkCapabilityEntry.
 
         分支网络的拓扑列表。
 
@@ -303,7 +303,7 @@ class SiteNetworkCapabilityEntry:
 
     @property
     def support_regions(self):
-        """Gets the support_regions of this SiteNetworkCapabilityEntry.
+        r"""Gets the support_regions of this SiteNetworkCapabilityEntry.
 
         list类型
 
@@ -314,7 +314,7 @@ class SiteNetworkCapabilityEntry:
 
     @support_regions.setter
     def support_regions(self, support_regions):
-        """Sets the support_regions of this SiteNetworkCapabilityEntry.
+        r"""Sets the support_regions of this SiteNetworkCapabilityEntry.
 
         list类型
 
@@ -325,7 +325,7 @@ class SiteNetworkCapabilityEntry:
 
     @property
     def support_dscp_regions(self):
-        """Gets the support_dscp_regions of this SiteNetworkCapabilityEntry.
+        r"""Gets the support_dscp_regions of this SiteNetworkCapabilityEntry.
 
         list类型
 
@@ -336,7 +336,7 @@ class SiteNetworkCapabilityEntry:
 
     @support_dscp_regions.setter
     def support_dscp_regions(self, support_dscp_regions):
-        """Sets the support_dscp_regions of this SiteNetworkCapabilityEntry.
+        r"""Sets the support_dscp_regions of this SiteNetworkCapabilityEntry.
 
         list类型
 
@@ -347,7 +347,7 @@ class SiteNetworkCapabilityEntry:
 
     @property
     def support_freeze_regions(self):
-        """Gets the support_freeze_regions of this SiteNetworkCapabilityEntry.
+        r"""Gets the support_freeze_regions of this SiteNetworkCapabilityEntry.
 
         list类型
 
@@ -358,7 +358,7 @@ class SiteNetworkCapabilityEntry:
 
     @support_freeze_regions.setter
     def support_freeze_regions(self, support_freeze_regions):
-        """Sets the support_freeze_regions of this SiteNetworkCapabilityEntry.
+        r"""Sets the support_freeze_regions of this SiteNetworkCapabilityEntry.
 
         list类型
 
@@ -369,7 +369,7 @@ class SiteNetworkCapabilityEntry:
 
     @property
     def support_locations(self):
-        """Gets the support_locations of this SiteNetworkCapabilityEntry.
+        r"""Gets the support_locations of this SiteNetworkCapabilityEntry.
 
         list类型
 
@@ -380,7 +380,7 @@ class SiteNetworkCapabilityEntry:
 
     @support_locations.setter
     def support_locations(self, support_locations):
-        """Sets the support_locations of this SiteNetworkCapabilityEntry.
+        r"""Sets the support_locations of this SiteNetworkCapabilityEntry.
 
         list类型
 
@@ -391,7 +391,7 @@ class SiteNetworkCapabilityEntry:
 
     @property
     def size_range(self):
-        """Gets the size_range of this SiteNetworkCapabilityEntry.
+        r"""Gets the size_range of this SiteNetworkCapabilityEntry.
 
         :return: The size_range of this SiteNetworkCapabilityEntry.
         :rtype: :class:`huaweicloudsdkcc.v3.ConnectionBandwidthSizeRange`
@@ -400,7 +400,7 @@ class SiteNetworkCapabilityEntry:
 
     @size_range.setter
     def size_range(self, size_range):
-        """Sets the size_range of this SiteNetworkCapabilityEntry.
+        r"""Sets the size_range of this SiteNetworkCapabilityEntry.
 
         :param size_range: The size_range of this SiteNetworkCapabilityEntry.
         :type size_range: :class:`huaweicloudsdkcc.v3.ConnectionBandwidthSizeRange`
@@ -409,7 +409,7 @@ class SiteNetworkCapabilityEntry:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this SiteNetworkCapabilityEntry.
+        r"""Gets the charge_mode of this SiteNetworkCapabilityEntry.
 
         list类型
 
@@ -420,7 +420,7 @@ class SiteNetworkCapabilityEntry:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this SiteNetworkCapabilityEntry.
+        r"""Sets the charge_mode of this SiteNetworkCapabilityEntry.
 
         list类型
 

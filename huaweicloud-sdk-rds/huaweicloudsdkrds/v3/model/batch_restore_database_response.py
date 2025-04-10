@@ -26,7 +26,7 @@ class BatchRestoreDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, restore_result=None):
-        """BatchRestoreDatabaseResponse
+        r"""BatchRestoreDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchRestoreDatabaseResponse(SdkResponse):
 
     @property
     def restore_result(self):
-        """Gets the restore_result of this BatchRestoreDatabaseResponse.
+        r"""Gets the restore_result of this BatchRestoreDatabaseResponse.
 
         表信息
 
@@ -55,7 +55,7 @@ class BatchRestoreDatabaseResponse(SdkResponse):
 
     @restore_result.setter
     def restore_result(self, restore_result):
-        """Sets the restore_result of this BatchRestoreDatabaseResponse.
+        r"""Sets the restore_result of this BatchRestoreDatabaseResponse.
 
         表信息
 

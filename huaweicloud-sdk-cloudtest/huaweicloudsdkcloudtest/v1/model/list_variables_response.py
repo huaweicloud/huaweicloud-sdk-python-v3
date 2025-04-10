@@ -34,7 +34,7 @@ class ListVariablesResponse(SdkResponse):
     }
 
     def __init__(self, code=None, error=None, reason=None, result=None, status=None):
-        """ListVariablesResponse
+        r"""ListVariablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListVariablesResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListVariablesResponse.
+        r"""Gets the code of this ListVariablesResponse.
 
         错误码
 
@@ -83,7 +83,7 @@ class ListVariablesResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListVariablesResponse.
+        r"""Sets the code of this ListVariablesResponse.
 
         错误码
 
@@ -94,7 +94,7 @@ class ListVariablesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListVariablesResponse.
+        r"""Gets the error of this ListVariablesResponse.
 
         :return: The error of this ListVariablesResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorOfAPITest`
@@ -103,7 +103,7 @@ class ListVariablesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListVariablesResponse.
+        r"""Sets the error of this ListVariablesResponse.
 
         :param error: The error of this ListVariablesResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorOfAPITest`
@@ -112,7 +112,7 @@ class ListVariablesResponse(SdkResponse):
 
     @property
     def reason(self):
-        """Gets the reason of this ListVariablesResponse.
+        r"""Gets the reason of this ListVariablesResponse.
 
         失败原因
 
@@ -123,7 +123,7 @@ class ListVariablesResponse(SdkResponse):
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ListVariablesResponse.
+        r"""Sets the reason of this ListVariablesResponse.
 
         失败原因
 
@@ -134,7 +134,7 @@ class ListVariablesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListVariablesResponse.
+        r"""Gets the result of this ListVariablesResponse.
 
         :return: The result of this ListVariablesResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.PageResults`
@@ -143,7 +143,7 @@ class ListVariablesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListVariablesResponse.
+        r"""Sets the result of this ListVariablesResponse.
 
         :param result: The result of this ListVariablesResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.PageResults`
@@ -152,7 +152,7 @@ class ListVariablesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListVariablesResponse.
+        r"""Gets the status of this ListVariablesResponse.
 
         状态
 
@@ -163,7 +163,7 @@ class ListVariablesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListVariablesResponse.
+        r"""Sets the status of this ListVariablesResponse.
 
         状态
 

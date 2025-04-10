@@ -33,7 +33,7 @@ class VolumeTransfer:
     }
 
     def __init__(self, created_at=None, id=None, links=None, name=None, volume_id=None):
-        """VolumeTransfer
+        r"""VolumeTransfer
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class VolumeTransfer:
 
     @property
     def created_at(self):
-        """Gets the created_at of this VolumeTransfer.
+        r"""Gets the created_at of this VolumeTransfer.
 
         云硬盘过户记录的创建时间。  时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
@@ -77,7 +77,7 @@ class VolumeTransfer:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this VolumeTransfer.
+        r"""Sets the created_at of this VolumeTransfer.
 
         云硬盘过户记录的创建时间。  时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
@@ -88,7 +88,7 @@ class VolumeTransfer:
 
     @property
     def id(self):
-        """Gets the id of this VolumeTransfer.
+        r"""Gets the id of this VolumeTransfer.
 
         云硬盘过户记录的ID。
 
@@ -99,7 +99,7 @@ class VolumeTransfer:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VolumeTransfer.
+        r"""Sets the id of this VolumeTransfer.
 
         云硬盘过户记录的ID。
 
@@ -110,7 +110,7 @@ class VolumeTransfer:
 
     @property
     def links(self):
-        """Gets the links of this VolumeTransfer.
+        r"""Gets the links of this VolumeTransfer.
 
         云硬盘过户记录的链接。
 
@@ -121,7 +121,7 @@ class VolumeTransfer:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this VolumeTransfer.
+        r"""Sets the links of this VolumeTransfer.
 
         云硬盘过户记录的链接。
 
@@ -132,7 +132,7 @@ class VolumeTransfer:
 
     @property
     def name(self):
-        """Gets the name of this VolumeTransfer.
+        r"""Gets the name of this VolumeTransfer.
 
         云硬盘过户记录的名称。
 
@@ -143,7 +143,7 @@ class VolumeTransfer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VolumeTransfer.
+        r"""Sets the name of this VolumeTransfer.
 
         云硬盘过户记录的名称。
 
@@ -154,7 +154,7 @@ class VolumeTransfer:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this VolumeTransfer.
+        r"""Gets the volume_id of this VolumeTransfer.
 
         云硬盘ID。
 
@@ -165,7 +165,7 @@ class VolumeTransfer:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this VolumeTransfer.
+        r"""Sets the volume_id of this VolumeTransfer.
 
         云硬盘ID。
 

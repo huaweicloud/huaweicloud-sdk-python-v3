@@ -25,7 +25,7 @@ class ShowFactoryEnvRequest:
     }
 
     def __init__(self, workspace=None):
-        """ShowFactoryEnvRequest
+        r"""ShowFactoryEnvRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowFactoryEnvRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowFactoryEnvRequest.
+        r"""Gets the workspace of this ShowFactoryEnvRequest.
 
         工作空间ID
 
@@ -54,7 +54,7 @@ class ShowFactoryEnvRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowFactoryEnvRequest.
+        r"""Sets the workspace of this ShowFactoryEnvRequest.
 
         工作空间ID
 

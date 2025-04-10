@@ -29,7 +29,7 @@ class ListGcbResourceByTagRequest:
     }
 
     def __init__(self, limit=None, offset=None, body=None):
-        """ListGcbResourceByTagRequest
+        r"""ListGcbResourceByTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListGcbResourceByTagRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGcbResourceByTagRequest.
+        r"""Gets the limit of this ListGcbResourceByTagRequest.
 
         查询记录数。
 
@@ -68,7 +68,7 @@ class ListGcbResourceByTagRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGcbResourceByTagRequest.
+        r"""Sets the limit of this ListGcbResourceByTagRequest.
 
         查询记录数。
 
@@ -79,7 +79,7 @@ class ListGcbResourceByTagRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGcbResourceByTagRequest.
+        r"""Gets the offset of this ListGcbResourceByTagRequest.
 
         索引位置，偏移量。
 
@@ -90,7 +90,7 @@ class ListGcbResourceByTagRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGcbResourceByTagRequest.
+        r"""Sets the offset of this ListGcbResourceByTagRequest.
 
         索引位置，偏移量。
 
@@ -101,7 +101,7 @@ class ListGcbResourceByTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListGcbResourceByTagRequest.
+        r"""Gets the body of this ListGcbResourceByTagRequest.
 
         :return: The body of this ListGcbResourceByTagRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.QueryResourceByTagRequestBody`
@@ -110,7 +110,7 @@ class ListGcbResourceByTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListGcbResourceByTagRequest.
+        r"""Sets the body of this ListGcbResourceByTagRequest.
 
         :param body: The body of this ListGcbResourceByTagRequest.
         :type body: :class:`huaweicloudsdkcc.v3.QueryResourceByTagRequestBody`

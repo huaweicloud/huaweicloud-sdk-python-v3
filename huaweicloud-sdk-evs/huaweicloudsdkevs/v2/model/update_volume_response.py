@@ -64,7 +64,7 @@ class UpdateVolumeResponse(SdkResponse):
     }
 
     def __init__(self, attachments=None, availability_zone=None, bootable=None, created_at=None, id=None, links=None, metadata=None, multiattach=None, name=None, os_vol_host_attrhost=None, os_vol_tenant_attrtenant_id=None, shareable=None, size=None, snapshot_id=None, source_volid=None, status=None, volume_image_metadata=None, volume_type=None, description=None, os_volume_replicationextended_status=None):
-        """UpdateVolumeResponse
+        r"""UpdateVolumeResponse
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def attachments(self):
-        """Gets the attachments of this UpdateVolumeResponse.
+        r"""Gets the attachments of this UpdateVolumeResponse.
 
         是否挂载信息。
 
@@ -188,7 +188,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @attachments.setter
     def attachments(self, attachments):
-        """Sets the attachments of this UpdateVolumeResponse.
+        r"""Sets the attachments of this UpdateVolumeResponse.
 
         是否挂载信息。
 
@@ -199,7 +199,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this UpdateVolumeResponse.
+        r"""Gets the availability_zone of this UpdateVolumeResponse.
 
         云硬盘所属AZ。
 
@@ -210,7 +210,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this UpdateVolumeResponse.
+        r"""Sets the availability_zone of this UpdateVolumeResponse.
 
         云硬盘所属AZ。
 
@@ -221,7 +221,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def bootable(self):
-        """Gets the bootable of this UpdateVolumeResponse.
+        r"""Gets the bootable of this UpdateVolumeResponse.
 
         是否为可启动云硬盘。
 
@@ -232,7 +232,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @bootable.setter
     def bootable(self, bootable):
-        """Sets the bootable of this UpdateVolumeResponse.
+        r"""Sets the bootable of this UpdateVolumeResponse.
 
         是否为可启动云硬盘。
 
@@ -243,7 +243,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateVolumeResponse.
+        r"""Gets the created_at of this UpdateVolumeResponse.
 
         创建云硬盘的时间。
 
@@ -254,7 +254,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateVolumeResponse.
+        r"""Sets the created_at of this UpdateVolumeResponse.
 
         创建云硬盘的时间。
 
@@ -265,7 +265,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateVolumeResponse.
+        r"""Gets the id of this UpdateVolumeResponse.
 
         云硬盘ID。
 
@@ -276,7 +276,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateVolumeResponse.
+        r"""Sets the id of this UpdateVolumeResponse.
 
         云硬盘ID。
 
@@ -287,7 +287,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this UpdateVolumeResponse.
+        r"""Gets the links of this UpdateVolumeResponse.
 
         云硬盘uri自描述信息
 
@@ -298,7 +298,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this UpdateVolumeResponse.
+        r"""Sets the links of this UpdateVolumeResponse.
 
         云硬盘uri自描述信息
 
@@ -309,7 +309,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpdateVolumeResponse.
+        r"""Gets the metadata of this UpdateVolumeResponse.
 
         :return: The metadata of this UpdateVolumeResponse.
         :rtype: :class:`huaweicloudsdkevs.v2.VolumeMetadata`
@@ -318,7 +318,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpdateVolumeResponse.
+        r"""Sets the metadata of this UpdateVolumeResponse.
 
         :param metadata: The metadata of this UpdateVolumeResponse.
         :type metadata: :class:`huaweicloudsdkevs.v2.VolumeMetadata`
@@ -327,7 +327,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def multiattach(self):
-        """Gets the multiattach of this UpdateVolumeResponse.
+        r"""Gets the multiattach of this UpdateVolumeResponse.
 
         是否为可共享云硬盘。
 
@@ -338,7 +338,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @multiattach.setter
     def multiattach(self, multiattach):
-        """Sets the multiattach of this UpdateVolumeResponse.
+        r"""Sets the multiattach of this UpdateVolumeResponse.
 
         是否为可共享云硬盘。
 
@@ -349,7 +349,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateVolumeResponse.
+        r"""Gets the name of this UpdateVolumeResponse.
 
         云硬盘名称
 
@@ -360,7 +360,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVolumeResponse.
+        r"""Sets the name of this UpdateVolumeResponse.
 
         云硬盘名称
 
@@ -371,7 +371,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def os_vol_host_attrhost(self):
-        """Gets the os_vol_host_attrhost of this UpdateVolumeResponse.
+        r"""Gets the os_vol_host_attrhost of this UpdateVolumeResponse.
 
         预留属性。
 
@@ -382,7 +382,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @os_vol_host_attrhost.setter
     def os_vol_host_attrhost(self, os_vol_host_attrhost):
-        """Sets the os_vol_host_attrhost of this UpdateVolumeResponse.
+        r"""Sets the os_vol_host_attrhost of this UpdateVolumeResponse.
 
         预留属性。
 
@@ -393,7 +393,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def os_vol_tenant_attrtenant_id(self):
-        """Gets the os_vol_tenant_attrtenant_id of this UpdateVolumeResponse.
+        r"""Gets the os_vol_tenant_attrtenant_id of this UpdateVolumeResponse.
 
         云硬盘所属的项目ID。
 
@@ -404,7 +404,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @os_vol_tenant_attrtenant_id.setter
     def os_vol_tenant_attrtenant_id(self, os_vol_tenant_attrtenant_id):
-        """Sets the os_vol_tenant_attrtenant_id of this UpdateVolumeResponse.
+        r"""Sets the os_vol_tenant_attrtenant_id of this UpdateVolumeResponse.
 
         云硬盘所属的项目ID。
 
@@ -415,7 +415,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def shareable(self):
-        """Gets the shareable of this UpdateVolumeResponse.
+        r"""Gets the shareable of this UpdateVolumeResponse.
 
         是否为共享云硬盘。
 
@@ -426,7 +426,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @shareable.setter
     def shareable(self, shareable):
-        """Sets the shareable of this UpdateVolumeResponse.
+        r"""Sets the shareable of this UpdateVolumeResponse.
 
         是否为共享云硬盘。
 
@@ -437,7 +437,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this UpdateVolumeResponse.
+        r"""Gets the size of this UpdateVolumeResponse.
 
         云硬盘大小。
 
@@ -448,7 +448,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this UpdateVolumeResponse.
+        r"""Sets the size of this UpdateVolumeResponse.
 
         云硬盘大小。
 
@@ -459,7 +459,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def snapshot_id(self):
-        """Gets the snapshot_id of this UpdateVolumeResponse.
+        r"""Gets the snapshot_id of this UpdateVolumeResponse.
 
         快照ID。
 
@@ -470,7 +470,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @snapshot_id.setter
     def snapshot_id(self, snapshot_id):
-        """Sets the snapshot_id of this UpdateVolumeResponse.
+        r"""Sets the snapshot_id of this UpdateVolumeResponse.
 
         快照ID。
 
@@ -481,7 +481,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def source_volid(self):
-        """Gets the source_volid of this UpdateVolumeResponse.
+        r"""Gets the source_volid of this UpdateVolumeResponse.
 
         预留字段。
 
@@ -492,7 +492,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @source_volid.setter
     def source_volid(self, source_volid):
-        """Sets the source_volid of this UpdateVolumeResponse.
+        r"""Sets the source_volid of this UpdateVolumeResponse.
 
         预留字段。
 
@@ -503,7 +503,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateVolumeResponse.
+        r"""Gets the status of this UpdateVolumeResponse.
 
         云硬盘状态。
 
@@ -514,7 +514,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateVolumeResponse.
+        r"""Sets the status of this UpdateVolumeResponse.
 
         云硬盘状态。
 
@@ -525,7 +525,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def volume_image_metadata(self):
-        """Gets the volume_image_metadata of this UpdateVolumeResponse.
+        r"""Gets the volume_image_metadata of this UpdateVolumeResponse.
 
         云硬盘镜像的元数据。 > 说明： >  > 关于“volume_image_metadata”字段的详细说明，具体请参见：\"[查询镜像详情](https://support.huaweicloud.com/api-ims/ims_03_0703.html)\"。
 
@@ -536,7 +536,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @volume_image_metadata.setter
     def volume_image_metadata(self, volume_image_metadata):
-        """Sets the volume_image_metadata of this UpdateVolumeResponse.
+        r"""Sets the volume_image_metadata of this UpdateVolumeResponse.
 
         云硬盘镜像的元数据。 > 说明： >  > 关于“volume_image_metadata”字段的详细说明，具体请参见：\"[查询镜像详情](https://support.huaweicloud.com/api-ims/ims_03_0703.html)\"。
 
@@ -547,7 +547,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this UpdateVolumeResponse.
+        r"""Gets the volume_type of this UpdateVolumeResponse.
 
         云硬盘类型。
 
@@ -558,7 +558,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this UpdateVolumeResponse.
+        r"""Sets the volume_type of this UpdateVolumeResponse.
 
         云硬盘类型。
 
@@ -569,7 +569,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateVolumeResponse.
+        r"""Gets the description of this UpdateVolumeResponse.
 
         云硬盘描述。
 
@@ -580,7 +580,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateVolumeResponse.
+        r"""Sets the description of this UpdateVolumeResponse.
 
         云硬盘描述。
 
@@ -591,7 +591,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @property
     def os_volume_replicationextended_status(self):
-        """Gets the os_volume_replicationextended_status of this UpdateVolumeResponse.
+        r"""Gets the os_volume_replicationextended_status of this UpdateVolumeResponse.
 
         预留属性。
 
@@ -602,7 +602,7 @@ class UpdateVolumeResponse(SdkResponse):
 
     @os_volume_replicationextended_status.setter
     def os_volume_replicationextended_status(self, os_volume_replicationextended_status):
-        """Sets the os_volume_replicationextended_status of this UpdateVolumeResponse.
+        r"""Sets the os_volume_replicationextended_status of this UpdateVolumeResponse.
 
         预留属性。
 

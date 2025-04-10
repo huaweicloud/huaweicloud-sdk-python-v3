@@ -25,7 +25,7 @@ class InstancesResourceDetail:
     }
 
     def __init__(self, vault=None):
-        """InstancesResourceDetail
+        r"""InstancesResourceDetail
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class InstancesResourceDetail:
 
     @property
     def vault(self):
-        """Gets the vault of this InstancesResourceDetail.
+        r"""Gets the vault of this InstancesResourceDetail.
 
         :return: The vault of this InstancesResourceDetail.
         :rtype: :class:`huaweicloudsdkcbr.v1.Vault`
@@ -52,7 +52,7 @@ class InstancesResourceDetail:
 
     @vault.setter
     def vault(self, vault):
-        """Sets the vault of this InstancesResourceDetail.
+        r"""Sets the vault of this InstancesResourceDetail.
 
         :param vault: The vault of this InstancesResourceDetail.
         :type vault: :class:`huaweicloudsdkcbr.v1.Vault`

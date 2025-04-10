@@ -31,7 +31,7 @@ class ResourceBasicInfo:
     }
 
     def __init__(self, resource_type_code=None, product_owner_service=None, name=None, description=None):
-        """ResourceBasicInfo
+        r"""ResourceBasicInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ResourceBasicInfo:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this ResourceBasicInfo.
+        r"""Gets the resource_type_code of this ResourceBasicInfo.
 
         资源类型编码。例如：hws.resource.type.general。
 
@@ -75,7 +75,7 @@ class ResourceBasicInfo:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this ResourceBasicInfo.
+        r"""Sets the resource_type_code of this ResourceBasicInfo.
 
         资源类型编码。例如：hws.resource.type.general。
 
@@ -86,7 +86,7 @@ class ResourceBasicInfo:
 
     @property
     def product_owner_service(self):
-        """Gets the product_owner_service of this ResourceBasicInfo.
+        r"""Gets the product_owner_service of this ResourceBasicInfo.
 
         资源类型归属的服务类型编码。例如：hws.service.type.offline。
 
@@ -97,7 +97,7 @@ class ResourceBasicInfo:
 
     @product_owner_service.setter
     def product_owner_service(self, product_owner_service):
-        """Sets the product_owner_service of this ResourceBasicInfo.
+        r"""Sets the product_owner_service of this ResourceBasicInfo.
 
         资源类型归属的服务类型编码。例如：hws.service.type.offline。
 
@@ -108,7 +108,7 @@ class ResourceBasicInfo:
 
     @property
     def name(self):
-        """Gets the name of this ResourceBasicInfo.
+        r"""Gets the name of this ResourceBasicInfo.
 
         资源类型名称。例如：通用规格。
 
@@ -119,7 +119,7 @@ class ResourceBasicInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ResourceBasicInfo.
+        r"""Sets the name of this ResourceBasicInfo.
 
         资源类型名称。例如：通用规格。
 
@@ -130,7 +130,7 @@ class ResourceBasicInfo:
 
     @property
     def description(self):
-        """Gets the description of this ResourceBasicInfo.
+        r"""Gets the description of this ResourceBasicInfo.
 
         资源类型描述。
 
@@ -141,7 +141,7 @@ class ResourceBasicInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ResourceBasicInfo.
+        r"""Sets the description of this ResourceBasicInfo.
 
         资源类型描述。
 

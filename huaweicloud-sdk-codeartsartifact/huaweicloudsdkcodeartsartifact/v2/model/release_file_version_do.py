@@ -29,7 +29,7 @@ class ReleaseFileVersionDo:
     }
 
     def __init__(self, version=None, path=None, download_url=None):
-        """ReleaseFileVersionDo
+        r"""ReleaseFileVersionDo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ReleaseFileVersionDo:
 
     @property
     def version(self):
-        """Gets the version of this ReleaseFileVersionDo.
+        r"""Gets the version of this ReleaseFileVersionDo.
 
         发布库文件的版本
 
@@ -68,7 +68,7 @@ class ReleaseFileVersionDo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ReleaseFileVersionDo.
+        r"""Sets the version of this ReleaseFileVersionDo.
 
         发布库文件的版本
 
@@ -79,7 +79,7 @@ class ReleaseFileVersionDo:
 
     @property
     def path(self):
-        """Gets the path of this ReleaseFileVersionDo.
+        r"""Gets the path of this ReleaseFileVersionDo.
 
         发布库文件的路径
 
@@ -90,7 +90,7 @@ class ReleaseFileVersionDo:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ReleaseFileVersionDo.
+        r"""Sets the path of this ReleaseFileVersionDo.
 
         发布库文件的路径
 
@@ -101,7 +101,7 @@ class ReleaseFileVersionDo:
 
     @property
     def download_url(self):
-        """Gets the download_url of this ReleaseFileVersionDo.
+        r"""Gets the download_url of this ReleaseFileVersionDo.
 
         发布库文件的下载链接
 
@@ -112,7 +112,7 @@ class ReleaseFileVersionDo:
 
     @download_url.setter
     def download_url(self, download_url):
-        """Sets the download_url of this ReleaseFileVersionDo.
+        r"""Sets the download_url of this ReleaseFileVersionDo.
 
         发布库文件的下载链接
 

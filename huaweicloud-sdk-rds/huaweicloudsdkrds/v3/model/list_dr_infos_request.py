@@ -27,7 +27,7 @@ class ListDrInfosRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListDrInfosRequest
+        r"""ListDrInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListDrInfosRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListDrInfosRequest.
+        r"""Gets the x_language of this ListDrInfosRequest.
 
         语言。默认en-us。
 
@@ -61,7 +61,7 @@ class ListDrInfosRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListDrInfosRequest.
+        r"""Sets the x_language of this ListDrInfosRequest.
 
         语言。默认en-us。
 
@@ -72,7 +72,7 @@ class ListDrInfosRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListDrInfosRequest.
+        r"""Gets the body of this ListDrInfosRequest.
 
         :return: The body of this ListDrInfosRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.QueryDRInfoRequest`
@@ -81,7 +81,7 @@ class ListDrInfosRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListDrInfosRequest.
+        r"""Sets the body of this ListDrInfosRequest.
 
         :param body: The body of this ListDrInfosRequest.
         :type body: :class:`huaweicloudsdkrds.v3.QueryDRInfoRequest`

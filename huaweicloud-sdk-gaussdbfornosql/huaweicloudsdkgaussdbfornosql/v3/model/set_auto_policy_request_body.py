@@ -29,7 +29,7 @@ class SetAutoPolicyRequestBody:
     }
 
     def __init__(self, instance_ids=None, switch_option=None, policy=None):
-        """SetAutoPolicyRequestBody
+        r"""SetAutoPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SetAutoPolicyRequestBody:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this SetAutoPolicyRequestBody.
+        r"""Gets the instance_ids of this SetAutoPolicyRequestBody.
 
         设置磁盘自动扩容的实例组ID。
 
@@ -66,7 +66,7 @@ class SetAutoPolicyRequestBody:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this SetAutoPolicyRequestBody.
+        r"""Sets the instance_ids of this SetAutoPolicyRequestBody.
 
         设置磁盘自动扩容的实例组ID。
 
@@ -77,7 +77,7 @@ class SetAutoPolicyRequestBody:
 
     @property
     def switch_option(self):
-        """Gets the switch_option of this SetAutoPolicyRequestBody.
+        r"""Gets the switch_option of this SetAutoPolicyRequestBody.
 
         自动扩容开关。  “on”，表示开启磁盘自动扩容策略。  “off”，表示关闭磁盘自动扩容策略。 默认值为“on”。
 
@@ -88,7 +88,7 @@ class SetAutoPolicyRequestBody:
 
     @switch_option.setter
     def switch_option(self, switch_option):
-        """Sets the switch_option of this SetAutoPolicyRequestBody.
+        r"""Sets the switch_option of this SetAutoPolicyRequestBody.
 
         自动扩容开关。  “on”，表示开启磁盘自动扩容策略。  “off”，表示关闭磁盘自动扩容策略。 默认值为“on”。
 
@@ -99,7 +99,7 @@ class SetAutoPolicyRequestBody:
 
     @property
     def policy(self):
-        """Gets the policy of this SetAutoPolicyRequestBody.
+        r"""Gets the policy of this SetAutoPolicyRequestBody.
 
         磁盘自动扩容策略
 
@@ -110,7 +110,7 @@ class SetAutoPolicyRequestBody:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this SetAutoPolicyRequestBody.
+        r"""Sets the policy of this SetAutoPolicyRequestBody.
 
         磁盘自动扩容策略
 

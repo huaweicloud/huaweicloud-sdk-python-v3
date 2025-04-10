@@ -25,7 +25,7 @@ class BatchCopyDomainRequest:
     }
 
     def __init__(self, body=None):
-        """BatchCopyDomainRequest
+        r"""BatchCopyDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchCopyDomainRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCopyDomainRequest.
+        r"""Gets the body of this BatchCopyDomainRequest.
 
         :return: The body of this BatchCopyDomainRequest.
         :rtype: :class:`huaweicloudsdkcdn.v2.BatchCopyDRequestBody`
@@ -52,7 +52,7 @@ class BatchCopyDomainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCopyDomainRequest.
+        r"""Sets the body of this BatchCopyDomainRequest.
 
         :param body: The body of this BatchCopyDomainRequest.
         :type body: :class:`huaweicloudsdkcdn.v2.BatchCopyDRequestBody`

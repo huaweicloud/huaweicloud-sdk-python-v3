@@ -31,7 +31,7 @@ class GaussDBforOpenGaussUserForList:
     }
 
     def __init__(self, name=None, attribute=None, memberof=None, lock_status=None):
-        """GaussDBforOpenGaussUserForList
+        r"""GaussDBforOpenGaussUserForList
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class GaussDBforOpenGaussUserForList:
 
     @property
     def name(self):
-        """Gets the name of this GaussDBforOpenGaussUserForList.
+        r"""Gets the name of this GaussDBforOpenGaussUserForList.
 
         帐号名。
 
@@ -74,7 +74,7 @@ class GaussDBforOpenGaussUserForList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GaussDBforOpenGaussUserForList.
+        r"""Sets the name of this GaussDBforOpenGaussUserForList.
 
         帐号名。
 
@@ -85,7 +85,7 @@ class GaussDBforOpenGaussUserForList:
 
     @property
     def attribute(self):
-        """Gets the attribute of this GaussDBforOpenGaussUserForList.
+        r"""Gets the attribute of this GaussDBforOpenGaussUserForList.
 
         :return: The attribute of this GaussDBforOpenGaussUserForList.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussUserForListAttribute`
@@ -94,7 +94,7 @@ class GaussDBforOpenGaussUserForList:
 
     @attribute.setter
     def attribute(self, attribute):
-        """Sets the attribute of this GaussDBforOpenGaussUserForList.
+        r"""Sets the attribute of this GaussDBforOpenGaussUserForList.
 
         :param attribute: The attribute of this GaussDBforOpenGaussUserForList.
         :type attribute: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussUserForListAttribute`
@@ -103,7 +103,7 @@ class GaussDBforOpenGaussUserForList:
 
     @property
     def memberof(self):
-        """Gets the memberof of this GaussDBforOpenGaussUserForList.
+        r"""Gets the memberof of this GaussDBforOpenGaussUserForList.
 
         用户的默认权限。
 
@@ -114,7 +114,7 @@ class GaussDBforOpenGaussUserForList:
 
     @memberof.setter
     def memberof(self, memberof):
-        """Sets the memberof of this GaussDBforOpenGaussUserForList.
+        r"""Sets the memberof of this GaussDBforOpenGaussUserForList.
 
         用户的默认权限。
 
@@ -125,7 +125,7 @@ class GaussDBforOpenGaussUserForList:
 
     @property
     def lock_status(self):
-        """Gets the lock_status of this GaussDBforOpenGaussUserForList.
+        r"""Gets the lock_status of this GaussDBforOpenGaussUserForList.
 
         用户是否被锁，取值为“true”或“false”。
 
@@ -136,7 +136,7 @@ class GaussDBforOpenGaussUserForList:
 
     @lock_status.setter
     def lock_status(self, lock_status):
-        """Sets the lock_status of this GaussDBforOpenGaussUserForList.
+        r"""Sets the lock_status of this GaussDBforOpenGaussUserForList.
 
         用户是否被锁，取值为“true”或“false”。
 

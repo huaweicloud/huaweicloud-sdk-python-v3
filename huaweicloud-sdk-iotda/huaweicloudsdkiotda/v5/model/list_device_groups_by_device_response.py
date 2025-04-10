@@ -26,7 +26,7 @@ class ListDeviceGroupsByDeviceResponse(SdkResponse):
     }
 
     def __init__(self, device_groups=None):
-        """ListDeviceGroupsByDeviceResponse
+        r"""ListDeviceGroupsByDeviceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDeviceGroupsByDeviceResponse(SdkResponse):
 
     @property
     def device_groups(self):
-        """Gets the device_groups of this ListDeviceGroupsByDeviceResponse.
+        r"""Gets the device_groups of this ListDeviceGroupsByDeviceResponse.
 
         设备组信息列表。
 
@@ -55,7 +55,7 @@ class ListDeviceGroupsByDeviceResponse(SdkResponse):
 
     @device_groups.setter
     def device_groups(self, device_groups):
-        """Sets the device_groups of this ListDeviceGroupsByDeviceResponse.
+        r"""Sets the device_groups of this ListDeviceGroupsByDeviceResponse.
 
         设备组信息列表。
 

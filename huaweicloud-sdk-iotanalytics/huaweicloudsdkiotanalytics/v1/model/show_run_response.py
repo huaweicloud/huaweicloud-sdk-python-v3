@@ -38,7 +38,7 @@ class ShowRunResponse(SdkResponse):
     }
 
     def __init__(self, run_id=None, job_id=None, job_type=None, status=None, created_time=None, message=None, details=None):
-        """ShowRunResponse
+        r"""ShowRunResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowRunResponse(SdkResponse):
 
     @property
     def run_id(self):
-        """Gets the run_id of this ShowRunResponse.
+        r"""Gets the run_id of this ShowRunResponse.
 
         作业运行ID。
 
@@ -97,7 +97,7 @@ class ShowRunResponse(SdkResponse):
 
     @run_id.setter
     def run_id(self, run_id):
-        """Sets the run_id of this ShowRunResponse.
+        r"""Sets the run_id of this ShowRunResponse.
 
         作业运行ID。
 
@@ -108,7 +108,7 @@ class ShowRunResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowRunResponse.
+        r"""Gets the job_id of this ShowRunResponse.
 
         作业ID。
 
@@ -119,7 +119,7 @@ class ShowRunResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowRunResponse.
+        r"""Sets the job_id of this ShowRunResponse.
 
         作业ID。
 
@@ -130,7 +130,7 @@ class ShowRunResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowRunResponse.
+        r"""Gets the job_type of this ShowRunResponse.
 
         作业类型。
 
@@ -141,7 +141,7 @@ class ShowRunResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowRunResponse.
+        r"""Sets the job_type of this ShowRunResponse.
 
         作业类型。
 
@@ -152,7 +152,7 @@ class ShowRunResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowRunResponse.
+        r"""Gets the status of this ShowRunResponse.
 
         此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
 
@@ -163,7 +163,7 @@ class ShowRunResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowRunResponse.
+        r"""Sets the status of this ShowRunResponse.
 
         此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
 
@@ -174,7 +174,7 @@ class ShowRunResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowRunResponse.
+        r"""Gets the created_time of this ShowRunResponse.
 
         创建运行时间。
 
@@ -185,7 +185,7 @@ class ShowRunResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowRunResponse.
+        r"""Sets the created_time of this ShowRunResponse.
 
         创建运行时间。
 
@@ -196,7 +196,7 @@ class ShowRunResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowRunResponse.
+        r"""Gets the message of this ShowRunResponse.
 
         系统提示信息。运行失败时，失败原因。
 
@@ -207,7 +207,7 @@ class ShowRunResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowRunResponse.
+        r"""Sets the message of this ShowRunResponse.
 
         系统提示信息。运行失败时，失败原因。
 
@@ -218,7 +218,7 @@ class ShowRunResponse(SdkResponse):
 
     @property
     def details(self):
-        """Gets the details of this ShowRunResponse.
+        r"""Gets the details of this ShowRunResponse.
 
         作业运行详情。
 
@@ -229,7 +229,7 @@ class ShowRunResponse(SdkResponse):
 
     @details.setter
     def details(self, details):
-        """Sets the details of this ShowRunResponse.
+        r"""Sets the details of this ShowRunResponse.
 
         作业运行详情。
 

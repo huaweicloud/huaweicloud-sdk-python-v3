@@ -25,7 +25,7 @@ class CountStandardsResultData:
     }
 
     def __init__(self, value=None):
-        """CountStandardsResultData
+        r"""CountStandardsResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CountStandardsResultData:
 
     @property
     def value(self):
-        """Gets the value of this CountStandardsResultData.
+        r"""Gets the value of this CountStandardsResultData.
 
         :return: The value of this CountStandardsResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StatisticStandardCoverageVO`
@@ -52,7 +52,7 @@ class CountStandardsResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CountStandardsResultData.
+        r"""Sets the value of this CountStandardsResultData.
 
         :param value: The value of this CountStandardsResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.StatisticStandardCoverageVO`

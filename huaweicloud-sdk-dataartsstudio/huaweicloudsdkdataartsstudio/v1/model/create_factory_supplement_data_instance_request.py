@@ -27,7 +27,7 @@ class CreateFactorySupplementDataInstanceRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateFactorySupplementDataInstanceRequest
+        r"""CreateFactorySupplementDataInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateFactorySupplementDataInstanceRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateFactorySupplementDataInstanceRequest.
+        r"""Gets the workspace of this CreateFactorySupplementDataInstanceRequest.
 
         当前作业的空间ID
 
@@ -61,7 +61,7 @@ class CreateFactorySupplementDataInstanceRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateFactorySupplementDataInstanceRequest.
+        r"""Sets the workspace of this CreateFactorySupplementDataInstanceRequest.
 
         当前作业的空间ID
 
@@ -72,7 +72,7 @@ class CreateFactorySupplementDataInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFactorySupplementDataInstanceRequest.
+        r"""Gets the body of this CreateFactorySupplementDataInstanceRequest.
 
         :return: The body of this CreateFactorySupplementDataInstanceRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactorySupplementDataInstanceRequestBody`
@@ -81,7 +81,7 @@ class CreateFactorySupplementDataInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFactorySupplementDataInstanceRequest.
+        r"""Sets the body of this CreateFactorySupplementDataInstanceRequest.
 
         :param body: The body of this CreateFactorySupplementDataInstanceRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactorySupplementDataInstanceRequestBody`

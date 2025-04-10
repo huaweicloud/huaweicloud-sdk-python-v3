@@ -26,7 +26,7 @@ class ListEcnWithVpcResponse(SdkResponse):
     }
 
     def __init__(self, ecn_vpc_relationships=None):
-        """ListEcnWithVpcResponse
+        r"""ListEcnWithVpcResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListEcnWithVpcResponse(SdkResponse):
 
     @property
     def ecn_vpc_relationships(self):
-        """Gets the ecn_vpc_relationships of this ListEcnWithVpcResponse.
+        r"""Gets the ecn_vpc_relationships of this ListEcnWithVpcResponse.
 
         企业连接网络与虚拟私有云的绑定关系列表
 
@@ -55,7 +55,7 @@ class ListEcnWithVpcResponse(SdkResponse):
 
     @ecn_vpc_relationships.setter
     def ecn_vpc_relationships(self, ecn_vpc_relationships):
-        """Sets the ecn_vpc_relationships of this ListEcnWithVpcResponse.
+        r"""Sets the ecn_vpc_relationships of this ListEcnWithVpcResponse.
 
         企业连接网络与虚拟私有云的绑定关系列表
 

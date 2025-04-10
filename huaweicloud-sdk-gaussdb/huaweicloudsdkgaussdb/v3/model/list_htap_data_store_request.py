@@ -27,7 +27,7 @@ class ListHtapDataStoreRequest:
     }
 
     def __init__(self, engine_name=None, x_language=None):
-        """ListHtapDataStoreRequest
+        r"""ListHtapDataStoreRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListHtapDataStoreRequest:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this ListHtapDataStoreRequest.
+        r"""Gets the engine_name of this ListHtapDataStoreRequest.
 
         HTAP引擎名。 取值范围： - star-rocks - click-house
 
@@ -60,7 +60,7 @@ class ListHtapDataStoreRequest:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this ListHtapDataStoreRequest.
+        r"""Sets the engine_name of this ListHtapDataStoreRequest.
 
         HTAP引擎名。 取值范围： - star-rocks - click-house
 
@@ -71,7 +71,7 @@ class ListHtapDataStoreRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListHtapDataStoreRequest.
+        r"""Gets the x_language of this ListHtapDataStoreRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -82,7 +82,7 @@ class ListHtapDataStoreRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListHtapDataStoreRequest.
+        r"""Sets the x_language of this ListHtapDataStoreRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

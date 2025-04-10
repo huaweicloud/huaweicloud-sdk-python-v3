@@ -61,7 +61,7 @@ class CreateAlertRuleRequestBody:
     }
 
     def __init__(self, pipe_id=None, rule_name=None, description=None, query=None, query_type=None, status=None, severity=None, custom_properties=None, alert_type=None, event_grouping=None, suspression=None, simulation=None, schedule=None, triggers=None, pipe_name=None, alert_name=None, alert_description=None, alert_remediation=None, accumulated_times=None):
-        """CreateAlertRuleRequestBody
+        r"""CreateAlertRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def pipe_id(self):
-        """Gets the pipe_id of this CreateAlertRuleRequestBody.
+        r"""Gets the pipe_id of this CreateAlertRuleRequestBody.
 
         数据管道 ID。Pipe ID.
 
@@ -173,7 +173,7 @@ class CreateAlertRuleRequestBody:
 
     @pipe_id.setter
     def pipe_id(self, pipe_id):
-        """Sets the pipe_id of this CreateAlertRuleRequestBody.
+        r"""Sets the pipe_id of this CreateAlertRuleRequestBody.
 
         数据管道 ID。Pipe ID.
 
@@ -184,7 +184,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this CreateAlertRuleRequestBody.
+        r"""Gets the rule_name of this CreateAlertRuleRequestBody.
 
         告警规则名称。Alert rule name.
 
@@ -195,7 +195,7 @@ class CreateAlertRuleRequestBody:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this CreateAlertRuleRequestBody.
+        r"""Sets the rule_name of this CreateAlertRuleRequestBody.
 
         告警规则名称。Alert rule name.
 
@@ -206,7 +206,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateAlertRuleRequestBody.
+        r"""Gets the description of this CreateAlertRuleRequestBody.
 
         描述。Description.
 
@@ -217,7 +217,7 @@ class CreateAlertRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAlertRuleRequestBody.
+        r"""Sets the description of this CreateAlertRuleRequestBody.
 
         描述。Description.
 
@@ -228,7 +228,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def query(self):
-        """Gets the query of this CreateAlertRuleRequestBody.
+        r"""Gets the query of this CreateAlertRuleRequestBody.
 
         查询语句。Query.
 
@@ -239,7 +239,7 @@ class CreateAlertRuleRequestBody:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this CreateAlertRuleRequestBody.
+        r"""Sets the query of this CreateAlertRuleRequestBody.
 
         查询语句。Query.
 
@@ -250,7 +250,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def query_type(self):
-        """Gets the query_type of this CreateAlertRuleRequestBody.
+        r"""Gets the query_type of this CreateAlertRuleRequestBody.
 
         查询语法，SQL。Query type. SQL.
 
@@ -261,7 +261,7 @@ class CreateAlertRuleRequestBody:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this CreateAlertRuleRequestBody.
+        r"""Sets the query_type of this CreateAlertRuleRequestBody.
 
         查询语法，SQL。Query type. SQL.
 
@@ -272,7 +272,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this CreateAlertRuleRequestBody.
+        r"""Gets the status of this CreateAlertRuleRequestBody.
 
         启用状态，启用、停用。Status, enabled, disabled.
 
@@ -283,7 +283,7 @@ class CreateAlertRuleRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateAlertRuleRequestBody.
+        r"""Sets the status of this CreateAlertRuleRequestBody.
 
         启用状态，启用、停用。Status, enabled, disabled.
 
@@ -294,7 +294,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def severity(self):
-        """Gets the severity of this CreateAlertRuleRequestBody.
+        r"""Gets the severity of this CreateAlertRuleRequestBody.
 
         严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -305,7 +305,7 @@ class CreateAlertRuleRequestBody:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this CreateAlertRuleRequestBody.
+        r"""Sets the severity of this CreateAlertRuleRequestBody.
 
         严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -316,7 +316,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def custom_properties(self):
-        """Gets the custom_properties of this CreateAlertRuleRequestBody.
+        r"""Gets the custom_properties of this CreateAlertRuleRequestBody.
 
         自定义扩展信息。Custom properties.
 
@@ -327,7 +327,7 @@ class CreateAlertRuleRequestBody:
 
     @custom_properties.setter
     def custom_properties(self, custom_properties):
-        """Sets the custom_properties of this CreateAlertRuleRequestBody.
+        r"""Sets the custom_properties of this CreateAlertRuleRequestBody.
 
         自定义扩展信息。Custom properties.
 
@@ -338,7 +338,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def alert_type(self):
-        """Gets the alert_type of this CreateAlertRuleRequestBody.
+        r"""Gets the alert_type of this CreateAlertRuleRequestBody.
 
         告警类型。Alert type.
 
@@ -349,7 +349,7 @@ class CreateAlertRuleRequestBody:
 
     @alert_type.setter
     def alert_type(self, alert_type):
-        """Sets the alert_type of this CreateAlertRuleRequestBody.
+        r"""Sets the alert_type of this CreateAlertRuleRequestBody.
 
         告警类型。Alert type.
 
@@ -360,7 +360,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def event_grouping(self):
-        """Gets the event_grouping of this CreateAlertRuleRequestBody.
+        r"""Gets the event_grouping of this CreateAlertRuleRequestBody.
 
         告警分组。Event grouping.
 
@@ -371,7 +371,7 @@ class CreateAlertRuleRequestBody:
 
     @event_grouping.setter
     def event_grouping(self, event_grouping):
-        """Sets the event_grouping of this CreateAlertRuleRequestBody.
+        r"""Sets the event_grouping of this CreateAlertRuleRequestBody.
 
         告警分组。Event grouping.
 
@@ -382,7 +382,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def suspression(self):
-        """Gets the suspression of this CreateAlertRuleRequestBody.
+        r"""Gets the suspression of this CreateAlertRuleRequestBody.
 
         告警抑制。Suspression.
 
@@ -393,7 +393,7 @@ class CreateAlertRuleRequestBody:
 
     @suspression.setter
     def suspression(self, suspression):
-        """Sets the suspression of this CreateAlertRuleRequestBody.
+        r"""Sets the suspression of this CreateAlertRuleRequestBody.
 
         告警抑制。Suspression.
 
@@ -404,7 +404,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def simulation(self):
-        """Gets the simulation of this CreateAlertRuleRequestBody.
+        r"""Gets the simulation of this CreateAlertRuleRequestBody.
 
         模拟告警。Simulation.
 
@@ -415,7 +415,7 @@ class CreateAlertRuleRequestBody:
 
     @simulation.setter
     def simulation(self, simulation):
-        """Sets the simulation of this CreateAlertRuleRequestBody.
+        r"""Sets the simulation of this CreateAlertRuleRequestBody.
 
         模拟告警。Simulation.
 
@@ -426,7 +426,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def schedule(self):
-        """Gets the schedule of this CreateAlertRuleRequestBody.
+        r"""Gets the schedule of this CreateAlertRuleRequestBody.
 
         :return: The schedule of this CreateAlertRuleRequestBody.
         :rtype: :class:`huaweicloudsdksecmaster.v2.Schedule`
@@ -435,7 +435,7 @@ class CreateAlertRuleRequestBody:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this CreateAlertRuleRequestBody.
+        r"""Sets the schedule of this CreateAlertRuleRequestBody.
 
         :param schedule: The schedule of this CreateAlertRuleRequestBody.
         :type schedule: :class:`huaweicloudsdksecmaster.v2.Schedule`
@@ -444,7 +444,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def triggers(self):
-        """Gets the triggers of this CreateAlertRuleRequestBody.
+        r"""Gets the triggers of this CreateAlertRuleRequestBody.
 
         告警触发规则。Alert triggers.
 
@@ -455,7 +455,7 @@ class CreateAlertRuleRequestBody:
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this CreateAlertRuleRequestBody.
+        r"""Sets the triggers of this CreateAlertRuleRequestBody.
 
         告警触发规则。Alert triggers.
 
@@ -466,7 +466,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def pipe_name(self):
-        """Gets the pipe_name of this CreateAlertRuleRequestBody.
+        r"""Gets the pipe_name of this CreateAlertRuleRequestBody.
 
         管道名称
 
@@ -477,7 +477,7 @@ class CreateAlertRuleRequestBody:
 
     @pipe_name.setter
     def pipe_name(self, pipe_name):
-        """Sets the pipe_name of this CreateAlertRuleRequestBody.
+        r"""Sets the pipe_name of this CreateAlertRuleRequestBody.
 
         管道名称
 
@@ -488,7 +488,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def alert_name(self):
-        """Gets the alert_name of this CreateAlertRuleRequestBody.
+        r"""Gets the alert_name of this CreateAlertRuleRequestBody.
 
         告警名称
 
@@ -499,7 +499,7 @@ class CreateAlertRuleRequestBody:
 
     @alert_name.setter
     def alert_name(self, alert_name):
-        """Sets the alert_name of this CreateAlertRuleRequestBody.
+        r"""Sets the alert_name of this CreateAlertRuleRequestBody.
 
         告警名称
 
@@ -510,7 +510,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def alert_description(self):
-        """Gets the alert_description of this CreateAlertRuleRequestBody.
+        r"""Gets the alert_description of this CreateAlertRuleRequestBody.
 
         告警描述
 
@@ -521,7 +521,7 @@ class CreateAlertRuleRequestBody:
 
     @alert_description.setter
     def alert_description(self, alert_description):
-        """Sets the alert_description of this CreateAlertRuleRequestBody.
+        r"""Sets the alert_description of this CreateAlertRuleRequestBody.
 
         告警描述
 
@@ -532,7 +532,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def alert_remediation(self):
-        """Gets the alert_remediation of this CreateAlertRuleRequestBody.
+        r"""Gets the alert_remediation of this CreateAlertRuleRequestBody.
 
         修复建议
 
@@ -543,7 +543,7 @@ class CreateAlertRuleRequestBody:
 
     @alert_remediation.setter
     def alert_remediation(self, alert_remediation):
-        """Sets the alert_remediation of this CreateAlertRuleRequestBody.
+        r"""Sets the alert_remediation of this CreateAlertRuleRequestBody.
 
         修复建议
 
@@ -554,7 +554,7 @@ class CreateAlertRuleRequestBody:
 
     @property
     def accumulated_times(self):
-        """Gets the accumulated_times of this CreateAlertRuleRequestBody.
+        r"""Gets the accumulated_times of this CreateAlertRuleRequestBody.
 
         执行次数
 
@@ -565,7 +565,7 @@ class CreateAlertRuleRequestBody:
 
     @accumulated_times.setter
     def accumulated_times(self, accumulated_times):
-        """Sets the accumulated_times of this CreateAlertRuleRequestBody.
+        r"""Sets the accumulated_times of this CreateAlertRuleRequestBody.
 
         执行次数
 

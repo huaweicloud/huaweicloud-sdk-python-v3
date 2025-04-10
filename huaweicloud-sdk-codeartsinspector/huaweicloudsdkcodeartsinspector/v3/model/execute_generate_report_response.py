@@ -28,7 +28,7 @@ class ExecuteGenerateReportResponse(SdkResponse):
     }
 
     def __init__(self, info_code=None, info_description=None):
-        """ExecuteGenerateReportResponse
+        r"""ExecuteGenerateReportResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExecuteGenerateReportResponse(SdkResponse):
 
     @property
     def info_code(self):
-        """Gets the info_code of this ExecuteGenerateReportResponse.
+        r"""Gets the info_code of this ExecuteGenerateReportResponse.
 
         状态码:   * success - 成功   * failure - 失败 
 
@@ -62,7 +62,7 @@ class ExecuteGenerateReportResponse(SdkResponse):
 
     @info_code.setter
     def info_code(self, info_code):
-        """Sets the info_code of this ExecuteGenerateReportResponse.
+        r"""Sets the info_code of this ExecuteGenerateReportResponse.
 
         状态码:   * success - 成功   * failure - 失败 
 
@@ -73,7 +73,7 @@ class ExecuteGenerateReportResponse(SdkResponse):
 
     @property
     def info_description(self):
-        """Gets the info_description of this ExecuteGenerateReportResponse.
+        r"""Gets the info_description of this ExecuteGenerateReportResponse.
 
         返回的提示信息
 
@@ -84,7 +84,7 @@ class ExecuteGenerateReportResponse(SdkResponse):
 
     @info_description.setter
     def info_description(self, info_description):
-        """Sets the info_description of this ExecuteGenerateReportResponse.
+        r"""Sets the info_description of this ExecuteGenerateReportResponse.
 
         返回的提示信息
 

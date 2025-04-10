@@ -27,7 +27,7 @@ class ListVmsTemplateStatusResponseMode:
     }
 
     def __init__(self, templates=None, page_info=None):
-        """ListVmsTemplateStatusResponseMode
+        r"""ListVmsTemplateStatusResponseMode
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListVmsTemplateStatusResponseMode:
 
     @property
     def templates(self):
-        """Gets the templates of this ListVmsTemplateStatusResponseMode.
+        r"""Gets the templates of this ListVmsTemplateStatusResponseMode.
 
         智能信息基础版模板列表。
 
@@ -61,7 +61,7 @@ class ListVmsTemplateStatusResponseMode:
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this ListVmsTemplateStatusResponseMode.
+        r"""Sets the templates of this ListVmsTemplateStatusResponseMode.
 
         智能信息基础版模板列表。
 
@@ -72,7 +72,7 @@ class ListVmsTemplateStatusResponseMode:
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListVmsTemplateStatusResponseMode.
+        r"""Gets the page_info of this ListVmsTemplateStatusResponseMode.
 
         :return: The page_info of this ListVmsTemplateStatusResponseMode.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.Page`
@@ -81,7 +81,7 @@ class ListVmsTemplateStatusResponseMode:
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListVmsTemplateStatusResponseMode.
+        r"""Sets the page_info of this ListVmsTemplateStatusResponseMode.
 
         :param page_info: The page_info of this ListVmsTemplateStatusResponseMode.
         :type page_info: :class:`huaweicloudsdkkoomessage.v1.Page`

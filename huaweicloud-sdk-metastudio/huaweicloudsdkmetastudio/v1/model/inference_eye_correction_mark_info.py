@@ -27,7 +27,7 @@ class InferenceEyeCorrectionMarkInfo:
     }
 
     def __init__(self, eye_correction_start_time=None, eye_correction_end_time=None):
-        """InferenceEyeCorrectionMarkInfo
+        r"""InferenceEyeCorrectionMarkInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InferenceEyeCorrectionMarkInfo:
 
     @property
     def eye_correction_start_time(self):
-        """Gets the eye_correction_start_time of this InferenceEyeCorrectionMarkInfo.
+        r"""Gets the eye_correction_start_time of this InferenceEyeCorrectionMarkInfo.
 
         选取推理数据预处理眼神矫正起始时间。格式：“HH:MM:SS.mmm”。
 
@@ -61,7 +61,7 @@ class InferenceEyeCorrectionMarkInfo:
 
     @eye_correction_start_time.setter
     def eye_correction_start_time(self, eye_correction_start_time):
-        """Sets the eye_correction_start_time of this InferenceEyeCorrectionMarkInfo.
+        r"""Sets the eye_correction_start_time of this InferenceEyeCorrectionMarkInfo.
 
         选取推理数据预处理眼神矫正起始时间。格式：“HH:MM:SS.mmm”。
 
@@ -72,7 +72,7 @@ class InferenceEyeCorrectionMarkInfo:
 
     @property
     def eye_correction_end_time(self):
-        """Gets the eye_correction_end_time of this InferenceEyeCorrectionMarkInfo.
+        r"""Gets the eye_correction_end_time of this InferenceEyeCorrectionMarkInfo.
 
         选取推理数据预处理眼神矫正结束时间。格式：“HH:MM:SS.mmm”。
 
@@ -83,7 +83,7 @@ class InferenceEyeCorrectionMarkInfo:
 
     @eye_correction_end_time.setter
     def eye_correction_end_time(self, eye_correction_end_time):
-        """Sets the eye_correction_end_time of this InferenceEyeCorrectionMarkInfo.
+        r"""Sets the eye_correction_end_time of this InferenceEyeCorrectionMarkInfo.
 
         选取推理数据预处理眼神矫正结束时间。格式：“HH:MM:SS.mmm”。
 

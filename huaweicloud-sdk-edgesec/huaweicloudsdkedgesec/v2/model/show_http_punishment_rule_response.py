@@ -36,7 +36,7 @@ class ShowHttpPunishmentRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policy_id=None, timestamp=None, description=None, category=None, block_time=None):
-        """ShowHttpPunishmentRuleResponse
+        r"""ShowHttpPunishmentRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowHttpPunishmentRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowHttpPunishmentRuleResponse.
+        r"""Gets the id of this ShowHttpPunishmentRuleResponse.
 
         规则id
 
@@ -90,7 +90,7 @@ class ShowHttpPunishmentRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowHttpPunishmentRuleResponse.
+        r"""Sets the id of this ShowHttpPunishmentRuleResponse.
 
         规则id
 
@@ -101,7 +101,7 @@ class ShowHttpPunishmentRuleResponse(SdkResponse):
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowHttpPunishmentRuleResponse.
+        r"""Gets the policy_id of this ShowHttpPunishmentRuleResponse.
 
         规则所在策略id
 
@@ -112,7 +112,7 @@ class ShowHttpPunishmentRuleResponse(SdkResponse):
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowHttpPunishmentRuleResponse.
+        r"""Sets the policy_id of this ShowHttpPunishmentRuleResponse.
 
         规则所在策略id
 
@@ -123,7 +123,7 @@ class ShowHttpPunishmentRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ShowHttpPunishmentRuleResponse.
+        r"""Gets the timestamp of this ShowHttpPunishmentRuleResponse.
 
         创建规则时间戳
 
@@ -134,7 +134,7 @@ class ShowHttpPunishmentRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowHttpPunishmentRuleResponse.
+        r"""Sets the timestamp of this ShowHttpPunishmentRuleResponse.
 
         创建规则时间戳
 
@@ -145,7 +145,7 @@ class ShowHttpPunishmentRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowHttpPunishmentRuleResponse.
+        r"""Gets the description of this ShowHttpPunishmentRuleResponse.
 
         规则描述
 
@@ -156,7 +156,7 @@ class ShowHttpPunishmentRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowHttpPunishmentRuleResponse.
+        r"""Sets the description of this ShowHttpPunishmentRuleResponse.
 
         规则描述
 
@@ -167,7 +167,7 @@ class ShowHttpPunishmentRuleResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this ShowHttpPunishmentRuleResponse.
+        r"""Gets the category of this ShowHttpPunishmentRuleResponse.
 
         拦截类型，可选值为：long_ip_block（长时间IP拦截）、long_cookie_block（长时间Cookie拦截）、long_params_block（长时间Params拦截）、short_ip_block（短时间IP拦截）、short_cookie_block（短时间Cookie拦截）、short_params_block（短时间Params拦截）
 
@@ -178,7 +178,7 @@ class ShowHttpPunishmentRuleResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ShowHttpPunishmentRuleResponse.
+        r"""Sets the category of this ShowHttpPunishmentRuleResponse.
 
         拦截类型，可选值为：long_ip_block（长时间IP拦截）、long_cookie_block（长时间Cookie拦截）、long_params_block（长时间Params拦截）、short_ip_block（短时间IP拦截）、short_cookie_block（短时间Cookie拦截）、short_params_block（短时间Params拦截）
 
@@ -189,7 +189,7 @@ class ShowHttpPunishmentRuleResponse(SdkResponse):
 
     @property
     def block_time(self):
-        """Gets the block_time of this ShowHttpPunishmentRuleResponse.
+        r"""Gets the block_time of this ShowHttpPunishmentRuleResponse.
 
         拦截时长
 
@@ -200,7 +200,7 @@ class ShowHttpPunishmentRuleResponse(SdkResponse):
 
     @block_time.setter
     def block_time(self, block_time):
-        """Sets the block_time of this ShowHttpPunishmentRuleResponse.
+        r"""Sets the block_time of this ShowHttpPunishmentRuleResponse.
 
         拦截时长
 

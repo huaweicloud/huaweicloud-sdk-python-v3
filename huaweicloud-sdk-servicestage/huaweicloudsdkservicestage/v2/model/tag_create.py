@@ -27,7 +27,7 @@ class TagCreate:
     }
 
     def __init__(self, name=None, description=None):
-        """TagCreate
+        r"""TagCreate
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TagCreate:
 
     @property
     def name(self):
-        """Gets the name of this TagCreate.
+        r"""Gets the name of this TagCreate.
 
         tag标签名称。
 
@@ -59,7 +59,7 @@ class TagCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TagCreate.
+        r"""Sets the name of this TagCreate.
 
         tag标签名称。
 
@@ -70,7 +70,7 @@ class TagCreate:
 
     @property
     def description(self):
-        """Gets the description of this TagCreate.
+        r"""Gets the description of this TagCreate.
 
         tag标签描述信息。
 
@@ -81,7 +81,7 @@ class TagCreate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TagCreate.
+        r"""Sets the description of this TagCreate.
 
         tag标签描述信息。
 

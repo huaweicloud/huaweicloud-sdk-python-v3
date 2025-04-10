@@ -26,7 +26,7 @@ class CheckProjectNameV4Response(SdkResponse):
     }
 
     def __init__(self, exist=None):
-        """CheckProjectNameV4Response
+        r"""CheckProjectNameV4Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CheckProjectNameV4Response(SdkResponse):
 
     @property
     def exist(self):
-        """Gets the exist of this CheckProjectNameV4Response.
+        r"""Gets the exist of this CheckProjectNameV4Response.
 
         是否存在相同的项目名称 true 存在， false 不存在
 
@@ -55,7 +55,7 @@ class CheckProjectNameV4Response(SdkResponse):
 
     @exist.setter
     def exist(self, exist):
-        """Sets the exist of this CheckProjectNameV4Response.
+        r"""Sets the exist of this CheckProjectNameV4Response.
 
         是否存在相同的项目名称 true 存在， false 不存在
 

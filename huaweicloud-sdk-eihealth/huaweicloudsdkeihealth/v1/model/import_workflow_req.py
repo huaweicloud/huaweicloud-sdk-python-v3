@@ -31,7 +31,7 @@ class ImportWorkflowReq:
     }
 
     def __init__(self, source_project_id=None, source_workflow_id=None, destination_workflow_name=None, destination_workflow_version=None):
-        """ImportWorkflowReq
+        r"""ImportWorkflowReq
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ImportWorkflowReq:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this ImportWorkflowReq.
+        r"""Gets the source_project_id of this ImportWorkflowReq.
 
         源项目id
 
@@ -71,7 +71,7 @@ class ImportWorkflowReq:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this ImportWorkflowReq.
+        r"""Sets the source_project_id of this ImportWorkflowReq.
 
         源项目id
 
@@ -82,7 +82,7 @@ class ImportWorkflowReq:
 
     @property
     def source_workflow_id(self):
-        """Gets the source_workflow_id of this ImportWorkflowReq.
+        r"""Gets the source_workflow_id of this ImportWorkflowReq.
 
         源流程id
 
@@ -93,7 +93,7 @@ class ImportWorkflowReq:
 
     @source_workflow_id.setter
     def source_workflow_id(self, source_workflow_id):
-        """Sets the source_workflow_id of this ImportWorkflowReq.
+        r"""Sets the source_workflow_id of this ImportWorkflowReq.
 
         源流程id
 
@@ -104,7 +104,7 @@ class ImportWorkflowReq:
 
     @property
     def destination_workflow_name(self):
-        """Gets the destination_workflow_name of this ImportWorkflowReq.
+        r"""Gets the destination_workflow_name of this ImportWorkflowReq.
 
         目标流程名称 取值范围[1,56]，允许大小写字母、数字、以及特殊字符中划线(-)和下划线(_)。
 
@@ -115,7 +115,7 @@ class ImportWorkflowReq:
 
     @destination_workflow_name.setter
     def destination_workflow_name(self, destination_workflow_name):
-        """Sets the destination_workflow_name of this ImportWorkflowReq.
+        r"""Sets the destination_workflow_name of this ImportWorkflowReq.
 
         目标流程名称 取值范围[1,56]，允许大小写字母、数字、以及特殊字符中划线(-)和下划线(_)。
 
@@ -126,7 +126,7 @@ class ImportWorkflowReq:
 
     @property
     def destination_workflow_version(self):
-        """Gets the destination_workflow_version of this ImportWorkflowReq.
+        r"""Gets the destination_workflow_version of this ImportWorkflowReq.
 
         目标流程版本 取值范围[1,24]，以小写字母或数字或大写字母开头，允许出现中划线，必须以小写字母或数字或大写字母结尾。
 
@@ -137,7 +137,7 @@ class ImportWorkflowReq:
 
     @destination_workflow_version.setter
     def destination_workflow_version(self, destination_workflow_version):
-        """Sets the destination_workflow_version of this ImportWorkflowReq.
+        r"""Sets the destination_workflow_version of this ImportWorkflowReq.
 
         目标流程版本 取值范围[1,24]，以小写字母或数字或大写字母开头，允许出现中划线，必须以小写字母或数字或大写字母结尾。
 

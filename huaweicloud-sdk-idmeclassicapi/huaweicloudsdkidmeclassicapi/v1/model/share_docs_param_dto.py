@@ -37,7 +37,7 @@ class ShareDocsParamDto:
     }
 
     def __init__(self, structured_doc_id=None, shared_user_id=None, shared_user_name=None, share_user_id=None, share_user_name=None, auth_type=None, modifier=None):
-        """ShareDocsParamDto
+        r"""ShareDocsParamDto
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ShareDocsParamDto:
 
     @property
     def structured_doc_id(self):
-        """Gets the structured_doc_id of this ShareDocsParamDto.
+        r"""Gets the structured_doc_id of this ShareDocsParamDto.
 
         **参数解释**：  结构化文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -96,7 +96,7 @@ class ShareDocsParamDto:
 
     @structured_doc_id.setter
     def structured_doc_id(self, structured_doc_id):
-        """Sets the structured_doc_id of this ShareDocsParamDto.
+        r"""Sets the structured_doc_id of this ShareDocsParamDto.
 
         **参数解释**：  结构化文档ID。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -107,7 +107,7 @@ class ShareDocsParamDto:
 
     @property
     def shared_user_id(self):
-        """Gets the shared_user_id of this ShareDocsParamDto.
+        r"""Gets the shared_user_id of this ShareDocsParamDto.
 
         **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
@@ -118,7 +118,7 @@ class ShareDocsParamDto:
 
     @shared_user_id.setter
     def shared_user_id(self, shared_user_id):
-        """Sets the shared_user_id of this ShareDocsParamDto.
+        r"""Sets the shared_user_id of this ShareDocsParamDto.
 
         **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
@@ -129,7 +129,7 @@ class ShareDocsParamDto:
 
     @property
     def shared_user_name(self):
-        """Gets the shared_user_name of this ShareDocsParamDto.
+        r"""Gets the shared_user_name of this ShareDocsParamDto.
 
         **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
@@ -140,7 +140,7 @@ class ShareDocsParamDto:
 
     @shared_user_name.setter
     def shared_user_name(self, shared_user_name):
-        """Sets the shared_user_name of this ShareDocsParamDto.
+        r"""Sets the shared_user_name of this ShareDocsParamDto.
 
         **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
@@ -151,7 +151,7 @@ class ShareDocsParamDto:
 
     @property
     def share_user_id(self):
-        """Gets the share_user_id of this ShareDocsParamDto.
+        r"""Gets the share_user_id of this ShareDocsParamDto.
 
         **参数解释**：  分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -162,7 +162,7 @@ class ShareDocsParamDto:
 
     @share_user_id.setter
     def share_user_id(self, share_user_id):
-        """Sets the share_user_id of this ShareDocsParamDto.
+        r"""Sets the share_user_id of this ShareDocsParamDto.
 
         **参数解释**：  分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -173,7 +173,7 @@ class ShareDocsParamDto:
 
     @property
     def share_user_name(self):
-        """Gets the share_user_name of this ShareDocsParamDto.
+        r"""Gets the share_user_name of this ShareDocsParamDto.
 
         **参数解释**：  分享用户名。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -184,7 +184,7 @@ class ShareDocsParamDto:
 
     @share_user_name.setter
     def share_user_name(self, share_user_name):
-        """Sets the share_user_name of this ShareDocsParamDto.
+        r"""Sets the share_user_name of this ShareDocsParamDto.
 
         **参数解释**：  分享用户名。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -195,7 +195,7 @@ class ShareDocsParamDto:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ShareDocsParamDto.
+        r"""Gets the auth_type of this ShareDocsParamDto.
 
         **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
 
@@ -206,7 +206,7 @@ class ShareDocsParamDto:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ShareDocsParamDto.
+        r"""Sets the auth_type of this ShareDocsParamDto.
 
         **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
 
@@ -217,7 +217,7 @@ class ShareDocsParamDto:
 
     @property
     def modifier(self):
-        """Gets the modifier of this ShareDocsParamDto.
+        r"""Gets the modifier of this ShareDocsParamDto.
 
         **参数解释**：  修改人。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -228,7 +228,7 @@ class ShareDocsParamDto:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this ShareDocsParamDto.
+        r"""Sets the modifier of this ShareDocsParamDto.
 
         **参数解释**：  修改人。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 

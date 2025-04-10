@@ -33,7 +33,7 @@ class ProvisioningTemplateSimple:
     }
 
     def __init__(self, template_id=None, template_name=None, description=None, create_time=None, update_time=None):
-        """ProvisioningTemplateSimple
+        r"""ProvisioningTemplateSimple
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ProvisioningTemplateSimple:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ProvisioningTemplateSimple.
+        r"""Gets the template_id of this ProvisioningTemplateSimple.
 
         **参数说明**：预调配模板ID。
 
@@ -82,7 +82,7 @@ class ProvisioningTemplateSimple:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ProvisioningTemplateSimple.
+        r"""Sets the template_id of this ProvisioningTemplateSimple.
 
         **参数说明**：预调配模板ID。
 
@@ -93,7 +93,7 @@ class ProvisioningTemplateSimple:
 
     @property
     def template_name(self):
-        """Gets the template_name of this ProvisioningTemplateSimple.
+        r"""Gets the template_name of this ProvisioningTemplateSimple.
 
         **参数说明**：预调配模板名称。 **取值范围**：长度不超过128，只允许中文、字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -104,7 +104,7 @@ class ProvisioningTemplateSimple:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ProvisioningTemplateSimple.
+        r"""Sets the template_name of this ProvisioningTemplateSimple.
 
         **参数说明**：预调配模板名称。 **取值范围**：长度不超过128，只允许中文、字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -115,7 +115,7 @@ class ProvisioningTemplateSimple:
 
     @property
     def description(self):
-        """Gets the description of this ProvisioningTemplateSimple.
+        r"""Gets the description of this ProvisioningTemplateSimple.
 
         **参数说明**：预调配模板的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
@@ -126,7 +126,7 @@ class ProvisioningTemplateSimple:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProvisioningTemplateSimple.
+        r"""Sets the description of this ProvisioningTemplateSimple.
 
         **参数说明**：预调配模板的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
@@ -137,7 +137,7 @@ class ProvisioningTemplateSimple:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ProvisioningTemplateSimple.
+        r"""Gets the create_time of this ProvisioningTemplateSimple.
 
         在物联网平台创建预调配模板的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -148,7 +148,7 @@ class ProvisioningTemplateSimple:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ProvisioningTemplateSimple.
+        r"""Sets the create_time of this ProvisioningTemplateSimple.
 
         在物联网平台创建预调配模板的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -159,7 +159,7 @@ class ProvisioningTemplateSimple:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ProvisioningTemplateSimple.
+        r"""Gets the update_time of this ProvisioningTemplateSimple.
 
         在物联网平台更新预调配模板的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -170,7 +170,7 @@ class ProvisioningTemplateSimple:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ProvisioningTemplateSimple.
+        r"""Sets the update_time of this ProvisioningTemplateSimple.
 
         在物联网平台更新预调配模板的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 

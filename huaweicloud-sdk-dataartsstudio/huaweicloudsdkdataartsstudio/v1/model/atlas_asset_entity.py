@@ -49,7 +49,7 @@ class AtlasAssetEntity:
     }
 
     def __init__(self, type_name=None, guid=None, version=None, update_time=None, update_user=None, create_time=None, create_user=None, display_text=None, status=None, classifications=None, meanings=None, relation_ship_attributes=None, attributes=None):
-        """AtlasAssetEntity
+        r"""AtlasAssetEntity
 
         The model defined in huaweicloud sdk
 
@@ -125,7 +125,7 @@ class AtlasAssetEntity:
 
     @property
     def type_name(self):
-        """Gets the type_name of this AtlasAssetEntity.
+        r"""Gets the type_name of this AtlasAssetEntity.
 
         类型名称
 
@@ -136,7 +136,7 @@ class AtlasAssetEntity:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this AtlasAssetEntity.
+        r"""Sets the type_name of this AtlasAssetEntity.
 
         类型名称
 
@@ -147,7 +147,7 @@ class AtlasAssetEntity:
 
     @property
     def guid(self):
-        """Gets the guid of this AtlasAssetEntity.
+        r"""Gets the guid of this AtlasAssetEntity.
 
         guid
 
@@ -158,7 +158,7 @@ class AtlasAssetEntity:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this AtlasAssetEntity.
+        r"""Sets the guid of this AtlasAssetEntity.
 
         guid
 
@@ -169,7 +169,7 @@ class AtlasAssetEntity:
 
     @property
     def version(self):
-        """Gets the version of this AtlasAssetEntity.
+        r"""Gets the version of this AtlasAssetEntity.
 
         版本
 
@@ -180,7 +180,7 @@ class AtlasAssetEntity:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AtlasAssetEntity.
+        r"""Sets the version of this AtlasAssetEntity.
 
         版本
 
@@ -191,7 +191,7 @@ class AtlasAssetEntity:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AtlasAssetEntity.
+        r"""Gets the update_time of this AtlasAssetEntity.
 
         修改时间
 
@@ -202,7 +202,7 @@ class AtlasAssetEntity:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AtlasAssetEntity.
+        r"""Sets the update_time of this AtlasAssetEntity.
 
         修改时间
 
@@ -213,7 +213,7 @@ class AtlasAssetEntity:
 
     @property
     def update_user(self):
-        """Gets the update_user of this AtlasAssetEntity.
+        r"""Gets the update_user of this AtlasAssetEntity.
 
         修改人
 
@@ -224,7 +224,7 @@ class AtlasAssetEntity:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this AtlasAssetEntity.
+        r"""Sets the update_user of this AtlasAssetEntity.
 
         修改人
 
@@ -235,7 +235,7 @@ class AtlasAssetEntity:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AtlasAssetEntity.
+        r"""Gets the create_time of this AtlasAssetEntity.
 
         创建时间
 
@@ -246,7 +246,7 @@ class AtlasAssetEntity:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AtlasAssetEntity.
+        r"""Sets the create_time of this AtlasAssetEntity.
 
         创建时间
 
@@ -257,7 +257,7 @@ class AtlasAssetEntity:
 
     @property
     def create_user(self):
-        """Gets the create_user of this AtlasAssetEntity.
+        r"""Gets the create_user of this AtlasAssetEntity.
 
         创建人
 
@@ -268,7 +268,7 @@ class AtlasAssetEntity:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this AtlasAssetEntity.
+        r"""Sets the create_user of this AtlasAssetEntity.
 
         创建人
 
@@ -279,7 +279,7 @@ class AtlasAssetEntity:
 
     @property
     def display_text(self):
-        """Gets the display_text of this AtlasAssetEntity.
+        r"""Gets the display_text of this AtlasAssetEntity.
 
         展示
 
@@ -290,7 +290,7 @@ class AtlasAssetEntity:
 
     @display_text.setter
     def display_text(self, display_text):
-        """Sets the display_text of this AtlasAssetEntity.
+        r"""Sets the display_text of this AtlasAssetEntity.
 
         展示
 
@@ -301,7 +301,7 @@ class AtlasAssetEntity:
 
     @property
     def status(self):
-        """Gets the status of this AtlasAssetEntity.
+        r"""Gets the status of this AtlasAssetEntity.
 
         状态 枚举值：ACTIVE、DELETED
 
@@ -312,7 +312,7 @@ class AtlasAssetEntity:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AtlasAssetEntity.
+        r"""Sets the status of this AtlasAssetEntity.
 
         状态 枚举值：ACTIVE、DELETED
 
@@ -323,7 +323,7 @@ class AtlasAssetEntity:
 
     @property
     def classifications(self):
-        """Gets the classifications of this AtlasAssetEntity.
+        r"""Gets the classifications of this AtlasAssetEntity.
 
         分类信息
 
@@ -334,7 +334,7 @@ class AtlasAssetEntity:
 
     @classifications.setter
     def classifications(self, classifications):
-        """Sets the classifications of this AtlasAssetEntity.
+        r"""Sets the classifications of this AtlasAssetEntity.
 
         分类信息
 
@@ -345,7 +345,7 @@ class AtlasAssetEntity:
 
     @property
     def meanings(self):
-        """Gets the meanings of this AtlasAssetEntity.
+        r"""Gets the meanings of this AtlasAssetEntity.
 
         关联任务
 
@@ -356,7 +356,7 @@ class AtlasAssetEntity:
 
     @meanings.setter
     def meanings(self, meanings):
-        """Sets the meanings of this AtlasAssetEntity.
+        r"""Sets the meanings of this AtlasAssetEntity.
 
         关联任务
 
@@ -367,7 +367,7 @@ class AtlasAssetEntity:
 
     @property
     def relation_ship_attributes(self):
-        """Gets the relation_ship_attributes of this AtlasAssetEntity.
+        r"""Gets the relation_ship_attributes of this AtlasAssetEntity.
 
         实体map Map<String, Object>
 
@@ -378,7 +378,7 @@ class AtlasAssetEntity:
 
     @relation_ship_attributes.setter
     def relation_ship_attributes(self, relation_ship_attributes):
-        """Sets the relation_ship_attributes of this AtlasAssetEntity.
+        r"""Sets the relation_ship_attributes of this AtlasAssetEntity.
 
         实体map Map<String, Object>
 
@@ -389,7 +389,7 @@ class AtlasAssetEntity:
 
     @property
     def attributes(self):
-        """Gets the attributes of this AtlasAssetEntity.
+        r"""Gets the attributes of this AtlasAssetEntity.
 
         实体map Map<String, Object>
 
@@ -400,7 +400,7 @@ class AtlasAssetEntity:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this AtlasAssetEntity.
+        r"""Sets the attributes of this AtlasAssetEntity.
 
         实体map Map<String, Object>
 

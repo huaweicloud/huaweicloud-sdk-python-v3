@@ -28,7 +28,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, name=None):
-        """CreateConsumerGroupOrBatchDeleteConsumerGroupResponse
+        r"""CreateConsumerGroupOrBatchDeleteConsumerGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
+        r"""Gets the job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
 
         删除消费组的任务ID
 
@@ -62,7 +62,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
+        r"""Sets the job_id of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
 
         删除消费组的任务ID
 
@@ -73,7 +73,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
+        r"""Gets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
 
         创建成功的消费组名称。
 
@@ -84,7 +84,7 @@ class CreateConsumerGroupOrBatchDeleteConsumerGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
+        r"""Sets the name of this CreateConsumerGroupOrBatchDeleteConsumerGroupResponse.
 
         创建成功的消费组名称。
 

@@ -25,7 +25,7 @@ class DownloadTaskReportRequest:
     }
 
     def __init__(self, task_id=None):
-        """DownloadTaskReportRequest
+        r"""DownloadTaskReportRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DownloadTaskReportRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DownloadTaskReportRequest.
+        r"""Gets the task_id of this DownloadTaskReportRequest.
 
         任务ID
 
@@ -53,7 +53,7 @@ class DownloadTaskReportRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DownloadTaskReportRequest.
+        r"""Sets the task_id of this DownloadTaskReportRequest.
 
         任务ID
 

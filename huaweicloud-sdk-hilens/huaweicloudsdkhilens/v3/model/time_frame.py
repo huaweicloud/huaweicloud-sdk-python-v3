@@ -27,7 +27,7 @@ class TimeFrame:
     }
 
     def __init__(self, start=None, stop=None):
-        """TimeFrame
+        r"""TimeFrame
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TimeFrame:
 
     @property
     def start(self):
-        """Gets the start of this TimeFrame.
+        r"""Gets the start of this TimeFrame.
 
         任务开始时间
 
@@ -59,7 +59,7 @@ class TimeFrame:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this TimeFrame.
+        r"""Sets the start of this TimeFrame.
 
         任务开始时间
 
@@ -70,7 +70,7 @@ class TimeFrame:
 
     @property
     def stop(self):
-        """Gets the stop of this TimeFrame.
+        r"""Gets the stop of this TimeFrame.
 
         任务结束时间
 
@@ -81,7 +81,7 @@ class TimeFrame:
 
     @stop.setter
     def stop(self, stop):
-        """Sets the stop of this TimeFrame.
+        r"""Sets the stop of this TimeFrame.
 
         任务结束时间
 

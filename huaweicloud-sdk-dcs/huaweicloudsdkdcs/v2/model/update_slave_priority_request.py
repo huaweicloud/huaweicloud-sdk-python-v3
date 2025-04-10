@@ -31,7 +31,7 @@ class UpdateSlavePriorityRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None, node_id=None, body=None):
-        """UpdateSlavePriorityRequest
+        r"""UpdateSlavePriorityRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateSlavePriorityRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateSlavePriorityRequest.
+        r"""Gets the instance_id of this UpdateSlavePriorityRequest.
 
         实例ID。
 
@@ -72,7 +72,7 @@ class UpdateSlavePriorityRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateSlavePriorityRequest.
+        r"""Sets the instance_id of this UpdateSlavePriorityRequest.
 
         实例ID。
 
@@ -83,7 +83,7 @@ class UpdateSlavePriorityRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateSlavePriorityRequest.
+        r"""Gets the group_id of this UpdateSlavePriorityRequest.
 
         分片ID。
 
@@ -94,7 +94,7 @@ class UpdateSlavePriorityRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateSlavePriorityRequest.
+        r"""Sets the group_id of this UpdateSlavePriorityRequest.
 
         分片ID。
 
@@ -105,7 +105,7 @@ class UpdateSlavePriorityRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this UpdateSlavePriorityRequest.
+        r"""Gets the node_id of this UpdateSlavePriorityRequest.
 
         节点ID。
 
@@ -116,7 +116,7 @@ class UpdateSlavePriorityRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this UpdateSlavePriorityRequest.
+        r"""Sets the node_id of this UpdateSlavePriorityRequest.
 
         节点ID。
 
@@ -127,7 +127,7 @@ class UpdateSlavePriorityRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSlavePriorityRequest.
+        r"""Gets the body of this UpdateSlavePriorityRequest.
 
         :return: The body of this UpdateSlavePriorityRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.PriorityBody`
@@ -136,7 +136,7 @@ class UpdateSlavePriorityRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSlavePriorityRequest.
+        r"""Sets the body of this UpdateSlavePriorityRequest.
 
         :param body: The body of this UpdateSlavePriorityRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.PriorityBody`

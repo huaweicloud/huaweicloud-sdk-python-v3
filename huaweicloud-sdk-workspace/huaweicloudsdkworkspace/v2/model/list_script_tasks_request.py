@@ -45,7 +45,7 @@ class ListScriptTasksRequest:
     }
 
     def __init__(self, offset=None, limit=None, resource_group_id=None, script_id=None, script_name=None, status=None, resource_group_type=None, task_id=None, task_type=None, execute_time_start=None, execute_time_end=None):
-        """ListScriptTasksRequest
+        r"""ListScriptTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListScriptTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListScriptTasksRequest.
+        r"""Gets the offset of this ListScriptTasksRequest.
 
         查询的偏移量。
 
@@ -124,7 +124,7 @@ class ListScriptTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListScriptTasksRequest.
+        r"""Sets the offset of this ListScriptTasksRequest.
 
         查询的偏移量。
 
@@ -135,7 +135,7 @@ class ListScriptTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScriptTasksRequest.
+        r"""Gets the limit of this ListScriptTasksRequest.
 
         单次查询的大小[1-100]。
 
@@ -146,7 +146,7 @@ class ListScriptTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScriptTasksRequest.
+        r"""Sets the limit of this ListScriptTasksRequest.
 
         单次查询的大小[1-100]。
 
@@ -157,7 +157,7 @@ class ListScriptTasksRequest:
 
     @property
     def resource_group_id(self):
-        """Gets the resource_group_id of this ListScriptTasksRequest.
+        r"""Gets the resource_group_id of this ListScriptTasksRequest.
 
         执行脚本的资源组ID。
 
@@ -168,7 +168,7 @@ class ListScriptTasksRequest:
 
     @resource_group_id.setter
     def resource_group_id(self, resource_group_id):
-        """Sets the resource_group_id of this ListScriptTasksRequest.
+        r"""Sets the resource_group_id of this ListScriptTasksRequest.
 
         执行脚本的资源组ID。
 
@@ -179,7 +179,7 @@ class ListScriptTasksRequest:
 
     @property
     def script_id(self):
-        """Gets the script_id of this ListScriptTasksRequest.
+        r"""Gets the script_id of this ListScriptTasksRequest.
 
         脚本ID
 
@@ -190,7 +190,7 @@ class ListScriptTasksRequest:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this ListScriptTasksRequest.
+        r"""Sets the script_id of this ListScriptTasksRequest.
 
         脚本ID
 
@@ -201,7 +201,7 @@ class ListScriptTasksRequest:
 
     @property
     def script_name(self):
-        """Gets the script_name of this ListScriptTasksRequest.
+        r"""Gets the script_name of this ListScriptTasksRequest.
 
         脚本名。
 
@@ -212,7 +212,7 @@ class ListScriptTasksRequest:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this ListScriptTasksRequest.
+        r"""Sets the script_name of this ListScriptTasksRequest.
 
         脚本名。
 
@@ -223,7 +223,7 @@ class ListScriptTasksRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListScriptTasksRequest.
+        r"""Gets the status of this ListScriptTasksRequest.
 
         执行情况。
 
@@ -234,7 +234,7 @@ class ListScriptTasksRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListScriptTasksRequest.
+        r"""Sets the status of this ListScriptTasksRequest.
 
         执行情况。
 
@@ -245,7 +245,7 @@ class ListScriptTasksRequest:
 
     @property
     def resource_group_type(self):
-        """Gets the resource_group_type of this ListScriptTasksRequest.
+        r"""Gets the resource_group_type of this ListScriptTasksRequest.
 
         资源组类型。
 
@@ -256,7 +256,7 @@ class ListScriptTasksRequest:
 
     @resource_group_type.setter
     def resource_group_type(self, resource_group_type):
-        """Sets the resource_group_type of this ListScriptTasksRequest.
+        r"""Sets the resource_group_type of this ListScriptTasksRequest.
 
         资源组类型。
 
@@ -267,7 +267,7 @@ class ListScriptTasksRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListScriptTasksRequest.
+        r"""Gets the task_id of this ListScriptTasksRequest.
 
         执行脚本的任务ID。
 
@@ -278,7 +278,7 @@ class ListScriptTasksRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListScriptTasksRequest.
+        r"""Sets the task_id of this ListScriptTasksRequest.
 
         执行脚本的任务ID。
 
@@ -289,7 +289,7 @@ class ListScriptTasksRequest:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ListScriptTasksRequest.
+        r"""Gets the task_type of this ListScriptTasksRequest.
 
         任务类型(SCRIPT/COMMAND)。
 
@@ -300,7 +300,7 @@ class ListScriptTasksRequest:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ListScriptTasksRequest.
+        r"""Sets the task_type of this ListScriptTasksRequest.
 
         任务类型(SCRIPT/COMMAND)。
 
@@ -311,7 +311,7 @@ class ListScriptTasksRequest:
 
     @property
     def execute_time_start(self):
-        """Gets the execute_time_start of this ListScriptTasksRequest.
+        r"""Gets the execute_time_start of this ListScriptTasksRequest.
 
         按执行时间查询的起始时间。指定该参数后，返回的结果为此时间之后的所有任务记录。时间格式如：“2021-10-01T12:00:00Z”。
 
@@ -322,7 +322,7 @@ class ListScriptTasksRequest:
 
     @execute_time_start.setter
     def execute_time_start(self, execute_time_start):
-        """Sets the execute_time_start of this ListScriptTasksRequest.
+        r"""Sets the execute_time_start of this ListScriptTasksRequest.
 
         按执行时间查询的起始时间。指定该参数后，返回的结果为此时间之后的所有任务记录。时间格式如：“2021-10-01T12:00:00Z”。
 
@@ -333,7 +333,7 @@ class ListScriptTasksRequest:
 
     @property
     def execute_time_end(self):
-        """Gets the execute_time_end of this ListScriptTasksRequest.
+        r"""Gets the execute_time_end of this ListScriptTasksRequest.
 
         按执行时间查询的终止时间。指定该参数后，返回的结果为此时间之前的所有任务记录。时间格式如：“2021-10-01T12:00:00Z”。
 
@@ -344,7 +344,7 @@ class ListScriptTasksRequest:
 
     @execute_time_end.setter
     def execute_time_end(self, execute_time_end):
-        """Sets the execute_time_end of this ListScriptTasksRequest.
+        r"""Sets the execute_time_end of this ListScriptTasksRequest.
 
         按执行时间查询的终止时间。指定该参数后，返回的结果为此时间之前的所有任务记录。时间格式如：“2021-10-01T12:00:00Z”。
 

@@ -51,11 +51,11 @@ class ListVulHostsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, vul_id=None, type=None, host_name=None, host_ip=None, status=None, limit=None, offset=None, asset_value=None, group_name=None, handle_status=None, severity_level=None, is_affect_business=None, repair_priority=None):
-        """ListVulHostsRequest
+        r"""ListVulHostsRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param vul_id: 漏洞ID
         :type vul_id: str
@@ -132,9 +132,9 @@ class ListVulHostsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListVulHostsRequest.
+        r"""Gets the enterprise_project_id of this ListVulHostsRequest.
 
-        企业项目ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListVulHostsRequest.
         :rtype: str
@@ -143,9 +143,9 @@ class ListVulHostsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListVulHostsRequest.
+        r"""Sets the enterprise_project_id of this ListVulHostsRequest.
 
-        企业项目ID，“0”表示默认企业项目，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListVulHostsRequest.
         :type enterprise_project_id: str
@@ -154,7 +154,7 @@ class ListVulHostsRequest:
 
     @property
     def vul_id(self):
-        """Gets the vul_id of this ListVulHostsRequest.
+        r"""Gets the vul_id of this ListVulHostsRequest.
 
         漏洞ID
 
@@ -165,7 +165,7 @@ class ListVulHostsRequest:
 
     @vul_id.setter
     def vul_id(self, vul_id):
-        """Sets the vul_id of this ListVulHostsRequest.
+        r"""Sets the vul_id of this ListVulHostsRequest.
 
         漏洞ID
 
@@ -176,7 +176,7 @@ class ListVulHostsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListVulHostsRequest.
+        r"""Gets the type of this ListVulHostsRequest.
 
         漏洞类型   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
 
@@ -187,7 +187,7 @@ class ListVulHostsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListVulHostsRequest.
+        r"""Sets the type of this ListVulHostsRequest.
 
         漏洞类型   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
 
@@ -198,7 +198,7 @@ class ListVulHostsRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListVulHostsRequest.
+        r"""Gets the host_name of this ListVulHostsRequest.
 
         受影响主机名称
 
@@ -209,7 +209,7 @@ class ListVulHostsRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListVulHostsRequest.
+        r"""Sets the host_name of this ListVulHostsRequest.
 
         受影响主机名称
 
@@ -220,7 +220,7 @@ class ListVulHostsRequest:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this ListVulHostsRequest.
+        r"""Gets the host_ip of this ListVulHostsRequest.
 
         受影响主机ip
 
@@ -231,7 +231,7 @@ class ListVulHostsRequest:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this ListVulHostsRequest.
+        r"""Sets the host_ip of this ListVulHostsRequest.
 
         受影响主机ip
 
@@ -242,7 +242,7 @@ class ListVulHostsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListVulHostsRequest.
+        r"""Gets the status of this ListVulHostsRequest.
 
         漏洞状态   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
 
@@ -253,7 +253,7 @@ class ListVulHostsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListVulHostsRequest.
+        r"""Sets the status of this ListVulHostsRequest.
 
         漏洞状态   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
 
@@ -264,7 +264,7 @@ class ListVulHostsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVulHostsRequest.
+        r"""Gets the limit of this ListVulHostsRequest.
 
         每页条数
 
@@ -275,7 +275,7 @@ class ListVulHostsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVulHostsRequest.
+        r"""Sets the limit of this ListVulHostsRequest.
 
         每页条数
 
@@ -286,7 +286,7 @@ class ListVulHostsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListVulHostsRequest.
+        r"""Gets the offset of this ListVulHostsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -297,7 +297,7 @@ class ListVulHostsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListVulHostsRequest.
+        r"""Sets the offset of this ListVulHostsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -308,7 +308,7 @@ class ListVulHostsRequest:
 
     @property
     def asset_value(self):
-        """Gets the asset_value of this ListVulHostsRequest.
+        r"""Gets the asset_value of this ListVulHostsRequest.
 
         资产重要性 important:重要 common：一般 test：测试
 
@@ -319,7 +319,7 @@ class ListVulHostsRequest:
 
     @asset_value.setter
     def asset_value(self, asset_value):
-        """Sets the asset_value of this ListVulHostsRequest.
+        r"""Sets the asset_value of this ListVulHostsRequest.
 
         资产重要性 important:重要 common：一般 test：测试
 
@@ -330,7 +330,7 @@ class ListVulHostsRequest:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ListVulHostsRequest.
+        r"""Gets the group_name of this ListVulHostsRequest.
 
         服务器组名称
 
@@ -341,7 +341,7 @@ class ListVulHostsRequest:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ListVulHostsRequest.
+        r"""Sets the group_name of this ListVulHostsRequest.
 
         服务器组名称
 
@@ -352,7 +352,7 @@ class ListVulHostsRequest:
 
     @property
     def handle_status(self):
-        """Gets the handle_status of this ListVulHostsRequest.
+        r"""Gets the handle_status of this ListVulHostsRequest.
 
         处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
 
@@ -363,7 +363,7 @@ class ListVulHostsRequest:
 
     @handle_status.setter
     def handle_status(self, handle_status):
-        """Sets the handle_status of this ListVulHostsRequest.
+        r"""Sets the handle_status of this ListVulHostsRequest.
 
         处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
 
@@ -374,7 +374,7 @@ class ListVulHostsRequest:
 
     @property
     def severity_level(self):
-        """Gets the severity_level of this ListVulHostsRequest.
+        r"""Gets the severity_level of this ListVulHostsRequest.
 
         危险程度 ，Critical，High，Medium，Low
 
@@ -385,7 +385,7 @@ class ListVulHostsRequest:
 
     @severity_level.setter
     def severity_level(self, severity_level):
-        """Sets the severity_level of this ListVulHostsRequest.
+        r"""Sets the severity_level of this ListVulHostsRequest.
 
         危险程度 ，Critical，High，Medium，Low
 
@@ -396,7 +396,7 @@ class ListVulHostsRequest:
 
     @property
     def is_affect_business(self):
-        """Gets the is_affect_business of this ListVulHostsRequest.
+        r"""Gets the is_affect_business of this ListVulHostsRequest.
 
         是否影响业务
 
@@ -407,7 +407,7 @@ class ListVulHostsRequest:
 
     @is_affect_business.setter
     def is_affect_business(self, is_affect_business):
-        """Sets the is_affect_business of this ListVulHostsRequest.
+        r"""Sets the is_affect_business of this ListVulHostsRequest.
 
         是否影响业务
 
@@ -418,7 +418,7 @@ class ListVulHostsRequest:
 
     @property
     def repair_priority(self):
-        """Gets the repair_priority of this ListVulHostsRequest.
+        r"""Gets the repair_priority of this ListVulHostsRequest.
 
         修复优先级,包含如下 - Critical 紧急  - High 高 - Medium 中 - Low 低
 
@@ -429,7 +429,7 @@ class ListVulHostsRequest:
 
     @repair_priority.setter
     def repair_priority(self, repair_priority):
-        """Sets the repair_priority of this ListVulHostsRequest.
+        r"""Sets the repair_priority of this ListVulHostsRequest.
 
         修复优先级,包含如下 - Critical 紧急  - High 高 - Medium 中 - Low 低
 

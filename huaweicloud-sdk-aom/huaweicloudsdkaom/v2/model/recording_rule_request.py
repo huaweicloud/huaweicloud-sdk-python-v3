@@ -25,7 +25,7 @@ class RecordingRuleRequest:
     }
 
     def __init__(self, recording_rule=None):
-        """RecordingRuleRequest
+        r"""RecordingRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RecordingRuleRequest:
 
     @property
     def recording_rule(self):
-        """Gets the recording_rule of this RecordingRuleRequest.
+        r"""Gets the recording_rule of this RecordingRuleRequest.
 
         预聚合规则。
 
@@ -53,7 +53,7 @@ class RecordingRuleRequest:
 
     @recording_rule.setter
     def recording_rule(self, recording_rule):
-        """Sets the recording_rule of this RecordingRuleRequest.
+        r"""Sets the recording_rule of this RecordingRuleRequest.
 
         预聚合规则。
 

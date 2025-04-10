@@ -42,7 +42,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
     }
 
     def __init__(self, pacify_words_id=None, pacify_words=None, language=None, robot_id=None, pacify_words_type=None, intent=None, create_time=None, update_time=None, x_request_id=None):
-        """UpdatePacifyWordsResponse
+        r"""UpdatePacifyWordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @property
     def pacify_words_id(self):
-        """Gets the pacify_words_id of this UpdatePacifyWordsResponse.
+        r"""Gets the pacify_words_id of this UpdatePacifyWordsResponse.
 
         安抚话术ID。
 
@@ -111,7 +111,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @pacify_words_id.setter
     def pacify_words_id(self, pacify_words_id):
-        """Sets the pacify_words_id of this UpdatePacifyWordsResponse.
+        r"""Sets the pacify_words_id of this UpdatePacifyWordsResponse.
 
         安抚话术ID。
 
@@ -122,7 +122,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @property
     def pacify_words(self):
-        """Gets the pacify_words of this UpdatePacifyWordsResponse.
+        r"""Gets the pacify_words of this UpdatePacifyWordsResponse.
 
         安抚话术。
 
@@ -133,7 +133,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @pacify_words.setter
     def pacify_words(self, pacify_words):
-        """Sets the pacify_words of this UpdatePacifyWordsResponse.
+        r"""Sets the pacify_words of this UpdatePacifyWordsResponse.
 
         安抚话术。
 
@@ -144,7 +144,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this UpdatePacifyWordsResponse.
+        r"""Gets the language of this UpdatePacifyWordsResponse.
 
         :return: The language of this UpdatePacifyWordsResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -153,7 +153,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this UpdatePacifyWordsResponse.
+        r"""Sets the language of this UpdatePacifyWordsResponse.
 
         :param language: The language of this UpdatePacifyWordsResponse.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -162,7 +162,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this UpdatePacifyWordsResponse.
+        r"""Gets the robot_id of this UpdatePacifyWordsResponse.
 
         应用ID。
 
@@ -173,7 +173,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this UpdatePacifyWordsResponse.
+        r"""Sets the robot_id of this UpdatePacifyWordsResponse.
 
         应用ID。
 
@@ -184,7 +184,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @property
     def pacify_words_type(self):
-        """Gets the pacify_words_type of this UpdatePacifyWordsResponse.
+        r"""Gets the pacify_words_type of this UpdatePacifyWordsResponse.
 
         安抚话术类型 > 0:通用安抚话术, 1:基于意图匹配安抚话术
 
@@ -195,7 +195,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @pacify_words_type.setter
     def pacify_words_type(self, pacify_words_type):
-        """Sets the pacify_words_type of this UpdatePacifyWordsResponse.
+        r"""Sets the pacify_words_type of this UpdatePacifyWordsResponse.
 
         安抚话术类型 > 0:通用安抚话术, 1:基于意图匹配安抚话术
 
@@ -206,7 +206,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @property
     def intent(self):
-        """Gets the intent of this UpdatePacifyWordsResponse.
+        r"""Gets the intent of this UpdatePacifyWordsResponse.
 
         意图名称
 
@@ -217,7 +217,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @intent.setter
     def intent(self, intent):
-        """Sets the intent of this UpdatePacifyWordsResponse.
+        r"""Sets the intent of this UpdatePacifyWordsResponse.
 
         意图名称
 
@@ -228,7 +228,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdatePacifyWordsResponse.
+        r"""Gets the create_time of this UpdatePacifyWordsResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -239,7 +239,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdatePacifyWordsResponse.
+        r"""Sets the create_time of this UpdatePacifyWordsResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -250,7 +250,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdatePacifyWordsResponse.
+        r"""Gets the update_time of this UpdatePacifyWordsResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -261,7 +261,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdatePacifyWordsResponse.
+        r"""Sets the update_time of this UpdatePacifyWordsResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -272,7 +272,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdatePacifyWordsResponse.
+        r"""Gets the x_request_id of this UpdatePacifyWordsResponse.
 
         :return: The x_request_id of this UpdatePacifyWordsResponse.
         :rtype: str
@@ -281,7 +281,7 @@ class UpdatePacifyWordsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdatePacifyWordsResponse.
+        r"""Sets the x_request_id of this UpdatePacifyWordsResponse.
 
         :param x_request_id: The x_request_id of this UpdatePacifyWordsResponse.
         :type x_request_id: str

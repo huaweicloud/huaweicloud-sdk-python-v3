@@ -27,7 +27,7 @@ class LtsConfigsV3:
     }
 
     def __init__(self, lts_configs=None, instance=None):
-        """LtsConfigsV3
+        r"""LtsConfigsV3
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LtsConfigsV3:
 
     @property
     def lts_configs(self):
-        """Gets the lts_configs of this LtsConfigsV3.
+        r"""Gets the lts_configs of this LtsConfigsV3.
 
         LTS配置列表
 
@@ -61,7 +61,7 @@ class LtsConfigsV3:
 
     @lts_configs.setter
     def lts_configs(self, lts_configs):
-        """Sets the lts_configs of this LtsConfigsV3.
+        r"""Sets the lts_configs of this LtsConfigsV3.
 
         LTS配置列表
 
@@ -72,7 +72,7 @@ class LtsConfigsV3:
 
     @property
     def instance(self):
-        """Gets the instance of this LtsConfigsV3.
+        r"""Gets the instance of this LtsConfigsV3.
 
         :return: The instance of this LtsConfigsV3.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.InstanceLtsBasicInfo`
@@ -81,7 +81,7 @@ class LtsConfigsV3:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this LtsConfigsV3.
+        r"""Sets the instance of this LtsConfigsV3.
 
         :param instance: The instance of this LtsConfigsV3.
         :type instance: :class:`huaweicloudsdkgaussdb.v3.InstanceLtsBasicInfo`

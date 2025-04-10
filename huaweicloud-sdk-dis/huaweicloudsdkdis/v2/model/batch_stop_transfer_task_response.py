@@ -24,7 +24,7 @@ class BatchStopTransferTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchStopTransferTaskResponse
+        r"""BatchStopTransferTaskResponse
 
         The model defined in huaweicloud sdk
 

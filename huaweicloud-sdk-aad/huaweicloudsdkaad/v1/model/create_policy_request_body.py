@@ -29,7 +29,7 @@ class CreatePolicyRequestBody:
     }
 
     def __init__(self, name=None, package_id=None, description=None):
-        """CreatePolicyRequestBody
+        r"""CreatePolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreatePolicyRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreatePolicyRequestBody.
+        r"""Gets the name of this CreatePolicyRequestBody.
 
         策略名
 
@@ -66,7 +66,7 @@ class CreatePolicyRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePolicyRequestBody.
+        r"""Sets the name of this CreatePolicyRequestBody.
 
         策略名
 
@@ -77,7 +77,7 @@ class CreatePolicyRequestBody:
 
     @property
     def package_id(self):
-        """Gets the package_id of this CreatePolicyRequestBody.
+        r"""Gets the package_id of this CreatePolicyRequestBody.
 
         防护包id
 
@@ -88,7 +88,7 @@ class CreatePolicyRequestBody:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this CreatePolicyRequestBody.
+        r"""Sets the package_id of this CreatePolicyRequestBody.
 
         防护包id
 
@@ -99,7 +99,7 @@ class CreatePolicyRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreatePolicyRequestBody.
+        r"""Gets the description of this CreatePolicyRequestBody.
 
         描述
 
@@ -110,7 +110,7 @@ class CreatePolicyRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePolicyRequestBody.
+        r"""Sets the description of this CreatePolicyRequestBody.
 
         描述
 

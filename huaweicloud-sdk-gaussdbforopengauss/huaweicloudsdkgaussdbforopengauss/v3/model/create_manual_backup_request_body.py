@@ -29,7 +29,7 @@ class CreateManualBackupRequestBody:
     }
 
     def __init__(self, instance_id=None, name=None, description=None):
-        """CreateManualBackupRequestBody
+        r"""CreateManualBackupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateManualBackupRequestBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateManualBackupRequestBody.
+        r"""Gets the instance_id of this CreateManualBackupRequestBody.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class CreateManualBackupRequestBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateManualBackupRequestBody.
+        r"""Sets the instance_id of this CreateManualBackupRequestBody.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class CreateManualBackupRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateManualBackupRequestBody.
+        r"""Gets the name of this CreateManualBackupRequestBody.
 
         备份名称，不可重复，4~64个字符，必须以英文字母开头，区分大小写，可以包含英文字母、数字、中划线或者下划线，不能包含其他特殊字符。
 
@@ -88,7 +88,7 @@ class CreateManualBackupRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateManualBackupRequestBody.
+        r"""Sets the name of this CreateManualBackupRequestBody.
 
         备份名称，不可重复，4~64个字符，必须以英文字母开头，区分大小写，可以包含英文字母、数字、中划线或者下划线，不能包含其他特殊字符。
 
@@ -99,7 +99,7 @@ class CreateManualBackupRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateManualBackupRequestBody.
+        r"""Gets the description of this CreateManualBackupRequestBody.
 
         备份描述，不能包含>!<\"&'=特殊字符，不大于256个字符。
 
@@ -110,7 +110,7 @@ class CreateManualBackupRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateManualBackupRequestBody.
+        r"""Sets the description of this CreateManualBackupRequestBody.
 
         备份描述，不能包含>!<\"&'=特殊字符，不大于256个字符。
 

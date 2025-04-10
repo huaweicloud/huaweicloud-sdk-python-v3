@@ -28,7 +28,7 @@ class UpdateNetworkInstanceResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, network_instance=None):
-        """UpdateNetworkInstanceResponse
+        r"""UpdateNetworkInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateNetworkInstanceResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateNetworkInstanceResponse.
+        r"""Gets the request_id of this UpdateNetworkInstanceResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class UpdateNetworkInstanceResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateNetworkInstanceResponse.
+        r"""Sets the request_id of this UpdateNetworkInstanceResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class UpdateNetworkInstanceResponse(SdkResponse):
 
     @property
     def network_instance(self):
-        """Gets the network_instance of this UpdateNetworkInstanceResponse.
+        r"""Gets the network_instance of this UpdateNetworkInstanceResponse.
 
         :return: The network_instance of this UpdateNetworkInstanceResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.NetworkInstance`
@@ -80,7 +80,7 @@ class UpdateNetworkInstanceResponse(SdkResponse):
 
     @network_instance.setter
     def network_instance(self, network_instance):
-        """Sets the network_instance of this UpdateNetworkInstanceResponse.
+        r"""Sets the network_instance of this UpdateNetworkInstanceResponse.
 
         :param network_instance: The network_instance of this UpdateNetworkInstanceResponse.
         :type network_instance: :class:`huaweicloudsdkcc.v3.NetworkInstance`

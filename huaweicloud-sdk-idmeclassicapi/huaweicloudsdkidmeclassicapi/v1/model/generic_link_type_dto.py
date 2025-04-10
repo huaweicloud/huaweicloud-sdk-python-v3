@@ -29,7 +29,7 @@ class GenericLinkTypeDTO:
     }
 
     def __init__(self, latest_only=None, source_id=None, target_type=None):
-        """GenericLinkTypeDTO
+        r"""GenericLinkTypeDTO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GenericLinkTypeDTO:
 
     @property
     def latest_only(self):
-        """Gets the latest_only of this GenericLinkTypeDTO.
+        r"""Gets the latest_only of this GenericLinkTypeDTO.
 
         **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。  **默认取值：**  false。 
 
@@ -68,7 +68,7 @@ class GenericLinkTypeDTO:
 
     @latest_only.setter
     def latest_only(self, latest_only):
-        """Sets the latest_only of this GenericLinkTypeDTO.
+        r"""Sets the latest_only of this GenericLinkTypeDTO.
 
         **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。默认为false。  **默认取值：**  false。 
 
@@ -79,7 +79,7 @@ class GenericLinkTypeDTO:
 
     @property
     def source_id(self):
-        """Gets the source_id of this GenericLinkTypeDTO.
+        r"""Gets the source_id of this GenericLinkTypeDTO.
 
         **参数解释：**  源模型数据实例的ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -90,7 +90,7 @@ class GenericLinkTypeDTO:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this GenericLinkTypeDTO.
+        r"""Sets the source_id of this GenericLinkTypeDTO.
 
         **参数解释：**  源模型数据实例的ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -101,7 +101,7 @@ class GenericLinkTypeDTO:
 
     @property
     def target_type(self):
-        """Gets the target_type of this GenericLinkTypeDTO.
+        r"""Gets the target_type of this GenericLinkTypeDTO.
 
         **参数解释：**  目标模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -112,7 +112,7 @@ class GenericLinkTypeDTO:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this GenericLinkTypeDTO.
+        r"""Sets the target_type of this GenericLinkTypeDTO.
 
         **参数解释：**  目标模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

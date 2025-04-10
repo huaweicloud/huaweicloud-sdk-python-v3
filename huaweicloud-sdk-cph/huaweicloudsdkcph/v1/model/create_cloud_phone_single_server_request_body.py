@@ -45,7 +45,7 @@ class CreateCloudPhoneSingleServerRequestBody:
     }
 
     def __init__(self, server_name=None, server_model_name=None, count=None, order_param=None, nics=None, public_ip=None, availability_zone=None, data_volume=None, keypair_name=None, enterprise_project_id=None, image_id=None):
-        """CreateCloudPhoneSingleServerRequestBody
+        r"""CreateCloudPhoneSingleServerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @property
     def server_name(self):
-        """Gets the server_name of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Gets the server_name of this CreateCloudPhoneSingleServerRequestBody.
 
         云手机裸服务器名称，不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。批量购买会在云手机裸服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机裸服务器名称会自动按序增加数字后缀，比如为server-1-0001。
 
@@ -117,7 +117,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Sets the server_name of this CreateCloudPhoneSingleServerRequestBody.
 
         云手机裸服务器名称，不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。批量购买会在云手机裸服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机裸服务器名称会自动按序增加数字后缀，比如为server-1-0001。
 
@@ -128,7 +128,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @property
     def server_model_name(self):
-        """Gets the server_model_name of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Gets the server_model_name of this CreateCloudPhoneSingleServerRequestBody.
 
         云手机裸服务器规格名称。
 
@@ -139,7 +139,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @server_model_name.setter
     def server_model_name(self, server_model_name):
-        """Sets the server_model_name of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Sets the server_model_name of this CreateCloudPhoneSingleServerRequestBody.
 
         云手机裸服务器规格名称。
 
@@ -150,7 +150,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @property
     def count(self):
-        """Gets the count of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Gets the count of this CreateCloudPhoneSingleServerRequestBody.
 
         购买的云手机裸服务器个数，最多可购买10台。
 
@@ -161,7 +161,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Sets the count of this CreateCloudPhoneSingleServerRequestBody.
 
         购买的云手机裸服务器个数，最多可购买10台。
 
@@ -172,7 +172,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @property
     def order_param(self):
-        """Gets the order_param of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Gets the order_param of this CreateCloudPhoneSingleServerRequestBody.
 
         :return: The order_param of this CreateCloudPhoneSingleServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneSingleServerRequestBodyOrderParam`
@@ -181,7 +181,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @order_param.setter
     def order_param(self, order_param):
-        """Sets the order_param of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Sets the order_param of this CreateCloudPhoneSingleServerRequestBody.
 
         :param order_param: The order_param of this CreateCloudPhoneSingleServerRequestBody.
         :type order_param: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneSingleServerRequestBodyOrderParam`
@@ -190,7 +190,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @property
     def nics(self):
-        """Gets the nics of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Gets the nics of this CreateCloudPhoneSingleServerRequestBody.
 
         租户自定义的网卡的结构体，为待创建的云手机裸服务器的网卡信息。
 
@@ -201,7 +201,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Sets the nics of this CreateCloudPhoneSingleServerRequestBody.
 
         租户自定义的网卡的结构体，为待创建的云手机裸服务器的网卡信息。
 
@@ -212,7 +212,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Gets the public_ip of this CreateCloudPhoneSingleServerRequestBody.
 
         :return: The public_ip of this CreateCloudPhoneSingleServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneSingleServerRequestBodyPublicIp`
@@ -221,7 +221,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Sets the public_ip of this CreateCloudPhoneSingleServerRequestBody.
 
         :param public_ip: The public_ip of this CreateCloudPhoneSingleServerRequestBody.
         :type public_ip: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneSingleServerRequestBodyPublicIp`
@@ -230,7 +230,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Gets the availability_zone of this CreateCloudPhoneSingleServerRequestBody.
 
         待创建云手机裸服务器所在的可用区（AZ）的名称。如上海一可用区1为cn-east-3a。
 
@@ -241,7 +241,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Sets the availability_zone of this CreateCloudPhoneSingleServerRequestBody.
 
         待创建云手机裸服务器所在的可用区（AZ）的名称。如上海一可用区1为cn-east-3a。
 
@@ -252,7 +252,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @property
     def data_volume(self):
-        """Gets the data_volume of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Gets the data_volume of this CreateCloudPhoneSingleServerRequestBody.
 
         :return: The data_volume of this CreateCloudPhoneSingleServerRequestBody.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneSingleServerRequestBodyDataVolume`
@@ -261,7 +261,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @data_volume.setter
     def data_volume(self, data_volume):
-        """Sets the data_volume of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Sets the data_volume of this CreateCloudPhoneSingleServerRequestBody.
 
         :param data_volume: The data_volume of this CreateCloudPhoneSingleServerRequestBody.
         :type data_volume: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneSingleServerRequestBodyDataVolume`
@@ -270,7 +270,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Gets the keypair_name of this CreateCloudPhoneSingleServerRequestBody.
 
         指定登录云手机裸服务器已有密钥的名称。
 
@@ -281,7 +281,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Sets the keypair_name of this CreateCloudPhoneSingleServerRequestBody.
 
         指定登录云手机裸服务器已有密钥的名称。
 
@@ -292,7 +292,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Gets the enterprise_project_id of this CreateCloudPhoneSingleServerRequestBody.
 
         企业项目ID。 该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。
 
@@ -303,7 +303,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Sets the enterprise_project_id of this CreateCloudPhoneSingleServerRequestBody.
 
         企业项目ID。 该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。
 
@@ -314,7 +314,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @property
     def image_id(self):
-        """Gets the image_id of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Gets the image_id of this CreateCloudPhoneSingleServerRequestBody.
 
         云手机裸服务器镜像ID，不超过36个字节。未指定时使用默认云手机裸服务器镜像。
 
@@ -325,7 +325,7 @@ class CreateCloudPhoneSingleServerRequestBody:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this CreateCloudPhoneSingleServerRequestBody.
+        r"""Sets the image_id of this CreateCloudPhoneSingleServerRequestBody.
 
         云手机裸服务器镜像ID，不超过36个字节。未指定时使用默认云手机裸服务器镜像。
 

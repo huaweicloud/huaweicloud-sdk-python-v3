@@ -27,7 +27,7 @@ class CreateInstanceReq:
     }
 
     def __init__(self, instance=None, extend_param=None):
-        """CreateInstanceReq
+        r"""CreateInstanceReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateInstanceReq:
 
     @property
     def instance(self):
-        """Gets the instance of this CreateInstanceReq.
+        r"""Gets the instance of this CreateInstanceReq.
 
         :return: The instance of this CreateInstanceReq.
         :rtype: :class:`huaweicloudsdkddm.v1.CreateInstanceDetail`
@@ -58,7 +58,7 @@ class CreateInstanceReq:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this CreateInstanceReq.
+        r"""Sets the instance of this CreateInstanceReq.
 
         :param instance: The instance of this CreateInstanceReq.
         :type instance: :class:`huaweicloudsdkddm.v1.CreateInstanceDetail`
@@ -67,7 +67,7 @@ class CreateInstanceReq:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this CreateInstanceReq.
+        r"""Gets the extend_param of this CreateInstanceReq.
 
         :return: The extend_param of this CreateInstanceReq.
         :rtype: :class:`huaweicloudsdkddm.v1.CreateInstanceExtendParam`
@@ -76,7 +76,7 @@ class CreateInstanceReq:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this CreateInstanceReq.
+        r"""Sets the extend_param of this CreateInstanceReq.
 
         :param extend_param: The extend_param of this CreateInstanceReq.
         :type extend_param: :class:`huaweicloudsdkddm.v1.CreateInstanceExtendParam`

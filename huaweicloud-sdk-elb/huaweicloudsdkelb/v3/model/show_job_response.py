@@ -28,7 +28,7 @@ class ShowJobResponse(SdkResponse):
     }
 
     def __init__(self, job=None, request_id=None):
-        """ShowJobResponse
+        r"""ShowJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def job(self):
-        """Gets the job of this ShowJobResponse.
+        r"""Gets the job of this ShowJobResponse.
 
         :return: The job of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.MainJob`
@@ -60,7 +60,7 @@ class ShowJobResponse(SdkResponse):
 
     @job.setter
     def job(self, job):
-        """Sets the job of this ShowJobResponse.
+        r"""Sets the job of this ShowJobResponse.
 
         :param job: The job of this ShowJobResponse.
         :type job: :class:`huaweicloudsdkelb.v3.MainJob`
@@ -69,7 +69,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowJobResponse.
+        r"""Gets the request_id of this ShowJobResponse.
 
         请求ID。 注：自动生成 。
 
@@ -80,7 +80,7 @@ class ShowJobResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowJobResponse.
+        r"""Sets the request_id of this ShowJobResponse.
 
         请求ID。 注：自动生成 。
 

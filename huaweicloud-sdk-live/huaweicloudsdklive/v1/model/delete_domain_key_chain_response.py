@@ -24,7 +24,7 @@ class DeleteDomainKeyChainResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteDomainKeyChainResponse
+        r"""DeleteDomainKeyChainResponse
 
         The model defined in huaweicloud sdk
 

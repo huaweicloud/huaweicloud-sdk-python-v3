@@ -25,7 +25,7 @@ class AuthorizeDomainsRequest:
     }
 
     def __init__(self, body=None):
-        """AuthorizeDomainsRequest
+        r"""AuthorizeDomainsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AuthorizeDomainsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AuthorizeDomainsRequest.
+        r"""Gets the body of this AuthorizeDomainsRequest.
 
         :return: The body of this AuthorizeDomainsRequest.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.AuthorizeDomainsRequestBody`
@@ -52,7 +52,7 @@ class AuthorizeDomainsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AuthorizeDomainsRequest.
+        r"""Sets the body of this AuthorizeDomainsRequest.
 
         :param body: The body of this AuthorizeDomainsRequest.
         :type body: :class:`huaweicloudsdkcodeartsinspector.v3.AuthorizeDomainsRequestBody`

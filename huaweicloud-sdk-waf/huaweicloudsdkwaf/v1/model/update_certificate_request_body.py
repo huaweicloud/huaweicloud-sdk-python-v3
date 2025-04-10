@@ -29,7 +29,7 @@ class UpdateCertificateRequestBody:
     }
 
     def __init__(self, name=None, content=None, key=None):
-        """UpdateCertificateRequestBody
+        r"""UpdateCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateCertificateRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateCertificateRequestBody.
+        r"""Gets the name of this UpdateCertificateRequestBody.
 
         证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过256位字符
 
@@ -67,7 +67,7 @@ class UpdateCertificateRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCertificateRequestBody.
+        r"""Sets the name of this UpdateCertificateRequestBody.
 
         证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过256位字符
 
@@ -78,7 +78,7 @@ class UpdateCertificateRequestBody:
 
     @property
     def content(self):
-        """Gets the content of this UpdateCertificateRequestBody.
+        r"""Gets the content of this UpdateCertificateRequestBody.
 
         证书文件，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
 
@@ -89,7 +89,7 @@ class UpdateCertificateRequestBody:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this UpdateCertificateRequestBody.
+        r"""Sets the content of this UpdateCertificateRequestBody.
 
         证书文件，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
 
@@ -100,7 +100,7 @@ class UpdateCertificateRequestBody:
 
     @property
     def key(self):
-        """Gets the key of this UpdateCertificateRequestBody.
+        r"""Gets the key of this UpdateCertificateRequestBody.
 
         证书私钥，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
 
@@ -111,7 +111,7 @@ class UpdateCertificateRequestBody:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this UpdateCertificateRequestBody.
+        r"""Sets the key of this UpdateCertificateRequestBody.
 
         证书私钥，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
 

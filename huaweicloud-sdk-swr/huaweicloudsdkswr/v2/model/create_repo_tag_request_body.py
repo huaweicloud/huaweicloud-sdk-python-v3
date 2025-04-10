@@ -29,7 +29,7 @@ class CreateRepoTagRequestBody:
     }
 
     def __init__(self, source_tag=None, destination_tag=None, override=None):
-        """CreateRepoTagRequestBody
+        r"""CreateRepoTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateRepoTagRequestBody:
 
     @property
     def source_tag(self):
-        """Gets the source_tag of this CreateRepoTagRequestBody.
+        r"""Gets the source_tag of this CreateRepoTagRequestBody.
 
         源镜像版本名称
 
@@ -66,7 +66,7 @@ class CreateRepoTagRequestBody:
 
     @source_tag.setter
     def source_tag(self, source_tag):
-        """Sets the source_tag of this CreateRepoTagRequestBody.
+        r"""Sets the source_tag of this CreateRepoTagRequestBody.
 
         源镜像版本名称
 
@@ -77,7 +77,7 @@ class CreateRepoTagRequestBody:
 
     @property
     def destination_tag(self):
-        """Gets the destination_tag of this CreateRepoTagRequestBody.
+        r"""Gets the destination_tag of this CreateRepoTagRequestBody.
 
         目标镜像版本名称
 
@@ -88,7 +88,7 @@ class CreateRepoTagRequestBody:
 
     @destination_tag.setter
     def destination_tag(self, destination_tag):
-        """Sets the destination_tag of this CreateRepoTagRequestBody.
+        r"""Sets the destination_tag of this CreateRepoTagRequestBody.
 
         目标镜像版本名称
 
@@ -99,7 +99,7 @@ class CreateRepoTagRequestBody:
 
     @property
     def override(self):
-        """Gets the override of this CreateRepoTagRequestBody.
+        r"""Gets the override of this CreateRepoTagRequestBody.
 
         是否覆盖
 
@@ -110,7 +110,7 @@ class CreateRepoTagRequestBody:
 
     @override.setter
     def override(self, override):
-        """Sets the override of this CreateRepoTagRequestBody.
+        r"""Sets the override of this CreateRepoTagRequestBody.
 
         是否覆盖
 

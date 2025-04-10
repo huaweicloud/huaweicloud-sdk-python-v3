@@ -39,7 +39,7 @@ class ServerModel:
     }
 
     def __init__(self, server_model_name=None, server_type=None, cpu=None, memory=None, extend_spec=None, disk_max_num=None, product_type=None, free_size=None):
-        """ServerModel
+        r"""ServerModel
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ServerModel:
 
     @property
     def server_model_name(self):
-        """Gets the server_model_name of this ServerModel.
+        r"""Gets the server_model_name of this ServerModel.
 
         云手机服务器的规格名称，不超过64字节。
 
@@ -103,7 +103,7 @@ class ServerModel:
 
     @server_model_name.setter
     def server_model_name(self, server_model_name):
-        """Sets the server_model_name of this ServerModel.
+        r"""Sets the server_model_name of this ServerModel.
 
         云手机服务器的规格名称，不超过64字节。
 
@@ -114,7 +114,7 @@ class ServerModel:
 
     @property
     def server_type(self):
-        """Gets the server_type of this ServerModel.
+        r"""Gets the server_type of this ServerModel.
 
         云手机服务器的型号，如Hi1616。不超过32字节。
 
@@ -125,7 +125,7 @@ class ServerModel:
 
     @server_type.setter
     def server_type(self, server_type):
-        """Sets the server_type of this ServerModel.
+        r"""Sets the server_type of this ServerModel.
 
         云手机服务器的型号，如Hi1616。不超过32字节。
 
@@ -136,7 +136,7 @@ class ServerModel:
 
     @property
     def cpu(self):
-        """Gets the cpu of this ServerModel.
+        r"""Gets the cpu of this ServerModel.
 
         云手机服务器的CPU核数。
 
@@ -147,7 +147,7 @@ class ServerModel:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this ServerModel.
+        r"""Sets the cpu of this ServerModel.
 
         云手机服务器的CPU核数。
 
@@ -158,7 +158,7 @@ class ServerModel:
 
     @property
     def memory(self):
-        """Gets the memory of this ServerModel.
+        r"""Gets the memory of this ServerModel.
 
         云手机服务器的内存大小，单位G。
 
@@ -169,7 +169,7 @@ class ServerModel:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this ServerModel.
+        r"""Sets the memory of this ServerModel.
 
         云手机服务器的内存大小，单位G。
 
@@ -180,7 +180,7 @@ class ServerModel:
 
     @property
     def extend_spec(self):
-        """Gets the extend_spec of this ServerModel.
+        r"""Gets the extend_spec of this ServerModel.
 
         :return: The extend_spec of this ServerModel.
         :rtype: :class:`huaweicloudsdkcph.v1.ServerModelExtendSpec`
@@ -189,7 +189,7 @@ class ServerModel:
 
     @extend_spec.setter
     def extend_spec(self, extend_spec):
-        """Sets the extend_spec of this ServerModel.
+        r"""Sets the extend_spec of this ServerModel.
 
         :param extend_spec: The extend_spec of this ServerModel.
         :type extend_spec: :class:`huaweicloudsdkcph.v1.ServerModelExtendSpec`
@@ -198,7 +198,7 @@ class ServerModel:
 
     @property
     def disk_max_num(self):
-        """Gets the disk_max_num of this ServerModel.
+        r"""Gets the disk_max_num of this ServerModel.
 
         云手机服务器最大挂载磁盘数量。值为0时表示该机型磁盘为本地盘。
 
@@ -209,7 +209,7 @@ class ServerModel:
 
     @disk_max_num.setter
     def disk_max_num(self, disk_max_num):
-        """Sets the disk_max_num of this ServerModel.
+        r"""Sets the disk_max_num of this ServerModel.
 
         云手机服务器最大挂载磁盘数量。值为0时表示该机型磁盘为本地盘。
 
@@ -220,7 +220,7 @@ class ServerModel:
 
     @property
     def product_type(self):
-        """Gets the product_type of this ServerModel.
+        r"""Gets the product_type of this ServerModel.
 
         产品类型。 - 0：云手机 - 1：云手游
 
@@ -231,7 +231,7 @@ class ServerModel:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this ServerModel.
+        r"""Sets the product_type of this ServerModel.
 
         产品类型。 - 0：云手机 - 1：云手游
 
@@ -242,7 +242,7 @@ class ServerModel:
 
     @property
     def free_size(self):
-        """Gets the free_size of this ServerModel.
+        r"""Gets the free_size of this ServerModel.
 
         服务器磁盘的免费配额，单位G。
 
@@ -253,7 +253,7 @@ class ServerModel:
 
     @free_size.setter
     def free_size(self, free_size):
-        """Sets the free_size of this ServerModel.
+        r"""Sets the free_size of this ServerModel.
 
         服务器磁盘的免费配额，单位G。
 

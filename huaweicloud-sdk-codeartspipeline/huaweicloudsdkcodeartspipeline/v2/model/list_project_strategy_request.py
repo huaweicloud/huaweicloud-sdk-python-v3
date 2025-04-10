@@ -37,7 +37,7 @@ class ListProjectStrategyRequest:
     }
 
     def __init__(self, project_id=None, offset=None, limit=None, include_tenant_rule_set=None, name=None, is_valid=None, type=None):
-        """ListProjectStrategyRequest
+        r"""ListProjectStrategyRequest
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class ListProjectStrategyRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListProjectStrategyRequest.
+        r"""Gets the project_id of this ListProjectStrategyRequest.
 
         项目ID
 
@@ -92,7 +92,7 @@ class ListProjectStrategyRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListProjectStrategyRequest.
+        r"""Sets the project_id of this ListProjectStrategyRequest.
 
         项目ID
 
@@ -103,7 +103,7 @@ class ListProjectStrategyRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProjectStrategyRequest.
+        r"""Gets the offset of this ListProjectStrategyRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -114,7 +114,7 @@ class ListProjectStrategyRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProjectStrategyRequest.
+        r"""Sets the offset of this ListProjectStrategyRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -125,7 +125,7 @@ class ListProjectStrategyRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProjectStrategyRequest.
+        r"""Gets the limit of this ListProjectStrategyRequest.
 
         每页显示的条目数量
 
@@ -136,7 +136,7 @@ class ListProjectStrategyRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProjectStrategyRequest.
+        r"""Sets the limit of this ListProjectStrategyRequest.
 
         每页显示的条目数量
 
@@ -147,7 +147,7 @@ class ListProjectStrategyRequest:
 
     @property
     def include_tenant_rule_set(self):
-        """Gets the include_tenant_rule_set of this ListProjectStrategyRequest.
+        r"""Gets the include_tenant_rule_set of this ListProjectStrategyRequest.
 
         是否包含租户级规则
 
@@ -158,7 +158,7 @@ class ListProjectStrategyRequest:
 
     @include_tenant_rule_set.setter
     def include_tenant_rule_set(self, include_tenant_rule_set):
-        """Sets the include_tenant_rule_set of this ListProjectStrategyRequest.
+        r"""Sets the include_tenant_rule_set of this ListProjectStrategyRequest.
 
         是否包含租户级规则
 
@@ -169,7 +169,7 @@ class ListProjectStrategyRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListProjectStrategyRequest.
+        r"""Gets the name of this ListProjectStrategyRequest.
 
         策略名称，用于模糊查询
 
@@ -180,7 +180,7 @@ class ListProjectStrategyRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListProjectStrategyRequest.
+        r"""Sets the name of this ListProjectStrategyRequest.
 
         策略名称，用于模糊查询
 
@@ -191,7 +191,7 @@ class ListProjectStrategyRequest:
 
     @property
     def is_valid(self):
-        """Gets the is_valid of this ListProjectStrategyRequest.
+        r"""Gets the is_valid of this ListProjectStrategyRequest.
 
         是否有效
 
@@ -202,7 +202,7 @@ class ListProjectStrategyRequest:
 
     @is_valid.setter
     def is_valid(self, is_valid):
-        """Sets the is_valid of this ListProjectStrategyRequest.
+        r"""Sets the is_valid of this ListProjectStrategyRequest.
 
         是否有效
 
@@ -213,7 +213,7 @@ class ListProjectStrategyRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListProjectStrategyRequest.
+        r"""Gets the type of this ListProjectStrategyRequest.
 
         策略类型
 
@@ -224,7 +224,7 @@ class ListProjectStrategyRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListProjectStrategyRequest.
+        r"""Sets the type of this ListProjectStrategyRequest.
 
         策略类型
 

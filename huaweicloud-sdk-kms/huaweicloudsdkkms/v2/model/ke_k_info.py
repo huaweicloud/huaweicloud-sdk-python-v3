@@ -27,7 +27,7 @@ class KeKInfo:
     }
 
     def __init__(self, key_id=None, domain_id=None):
-        """KeKInfo
+        r"""KeKInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class KeKInfo:
 
     @property
     def key_id(self):
-        """Gets the key_id of this KeKInfo.
+        r"""Gets the key_id of this KeKInfo.
 
         密钥ID。
 
@@ -61,7 +61,7 @@ class KeKInfo:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this KeKInfo.
+        r"""Sets the key_id of this KeKInfo.
 
         密钥ID。
 
@@ -72,7 +72,7 @@ class KeKInfo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeKInfo.
+        r"""Gets the domain_id of this KeKInfo.
 
         用户域ID。
 
@@ -83,7 +83,7 @@ class KeKInfo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeKInfo.
+        r"""Sets the domain_id of this KeKInfo.
 
         用户域ID。
 

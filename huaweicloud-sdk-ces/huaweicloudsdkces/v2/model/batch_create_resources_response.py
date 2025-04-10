@@ -26,7 +26,7 @@ class BatchCreateResourcesResponse(SdkResponse):
     }
 
     def __init__(self, succeed_count=None):
-        """BatchCreateResourcesResponse
+        r"""BatchCreateResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchCreateResourcesResponse(SdkResponse):
 
     @property
     def succeed_count(self):
-        """Gets the succeed_count of this BatchCreateResourcesResponse.
+        r"""Gets the succeed_count of this BatchCreateResourcesResponse.
 
         成功添加的资源数目
 
@@ -55,7 +55,7 @@ class BatchCreateResourcesResponse(SdkResponse):
 
     @succeed_count.setter
     def succeed_count(self, succeed_count):
-        """Sets the succeed_count of this BatchCreateResourcesResponse.
+        r"""Sets the succeed_count of this BatchCreateResourcesResponse.
 
         成功添加的资源数目
 

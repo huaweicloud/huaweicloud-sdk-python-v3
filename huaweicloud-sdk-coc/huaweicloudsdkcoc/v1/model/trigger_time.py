@@ -37,7 +37,7 @@ class TriggerTime:
     }
 
     def __init__(self, time_zone=None, policy=None, single_scheduled_time=None, periodic_scheduled_time=None, period=None, cron=None, scheduled_close_time=None):
-        """TriggerTime
+        r"""TriggerTime
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class TriggerTime:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this TriggerTime.
+        r"""Gets the time_zone of this TriggerTime.
 
         时区
 
@@ -94,7 +94,7 @@ class TriggerTime:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this TriggerTime.
+        r"""Sets the time_zone of this TriggerTime.
 
         时区
 
@@ -105,7 +105,7 @@ class TriggerTime:
 
     @property
     def policy(self):
-        """Gets the policy of this TriggerTime.
+        r"""Gets the policy of this TriggerTime.
 
         策略
 
@@ -116,7 +116,7 @@ class TriggerTime:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this TriggerTime.
+        r"""Sets the policy of this TriggerTime.
 
         策略
 
@@ -127,7 +127,7 @@ class TriggerTime:
 
     @property
     def single_scheduled_time(self):
-        """Gets the single_scheduled_time of this TriggerTime.
+        r"""Gets the single_scheduled_time of this TriggerTime.
 
         单次执行的执行时间戳
 
@@ -138,7 +138,7 @@ class TriggerTime:
 
     @single_scheduled_time.setter
     def single_scheduled_time(self, single_scheduled_time):
-        """Sets the single_scheduled_time of this TriggerTime.
+        r"""Sets the single_scheduled_time of this TriggerTime.
 
         单次执行的执行时间戳
 
@@ -149,7 +149,7 @@ class TriggerTime:
 
     @property
     def periodic_scheduled_time(self):
-        """Gets the periodic_scheduled_time of this TriggerTime.
+        r"""Gets the periodic_scheduled_time of this TriggerTime.
 
         周期执行的执行当天的时间 \"00:00:00\"
 
@@ -160,7 +160,7 @@ class TriggerTime:
 
     @periodic_scheduled_time.setter
     def periodic_scheduled_time(self, periodic_scheduled_time):
-        """Sets the periodic_scheduled_time of this TriggerTime.
+        r"""Sets the periodic_scheduled_time of this TriggerTime.
 
         周期执行的执行当天的时间 \"00:00:00\"
 
@@ -171,7 +171,7 @@ class TriggerTime:
 
     @property
     def period(self):
-        """Gets the period of this TriggerTime.
+        r"""Gets the period of this TriggerTime.
 
         周期执行时的具体星期列表按逗号分割, 如星期日为\"1\",星期一为\"2\"
 
@@ -182,7 +182,7 @@ class TriggerTime:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this TriggerTime.
+        r"""Sets the period of this TriggerTime.
 
         周期执行时的具体星期列表按逗号分割, 如星期日为\"1\",星期一为\"2\"
 
@@ -193,7 +193,7 @@ class TriggerTime:
 
     @property
     def cron(self):
-        """Gets the cron of this TriggerTime.
+        r"""Gets the cron of this TriggerTime.
 
         cron表达式
 
@@ -204,7 +204,7 @@ class TriggerTime:
 
     @cron.setter
     def cron(self, cron):
-        """Sets the cron of this TriggerTime.
+        r"""Sets the cron of this TriggerTime.
 
         cron表达式
 
@@ -215,7 +215,7 @@ class TriggerTime:
 
     @property
     def scheduled_close_time(self):
-        """Gets the scheduled_close_time of this TriggerTime.
+        r"""Gets the scheduled_close_time of this TriggerTime.
 
         定时任务规则截止日期时间戳
 
@@ -226,7 +226,7 @@ class TriggerTime:
 
     @scheduled_close_time.setter
     def scheduled_close_time(self, scheduled_close_time):
-        """Sets the scheduled_close_time of this TriggerTime.
+        r"""Sets the scheduled_close_time of this TriggerTime.
 
         定时任务规则截止日期时间戳
 

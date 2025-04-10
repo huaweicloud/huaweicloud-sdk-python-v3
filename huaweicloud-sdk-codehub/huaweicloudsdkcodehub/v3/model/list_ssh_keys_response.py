@@ -30,7 +30,7 @@ class ListSshKeysResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListSshKeysResponse
+        r"""ListSshKeysResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSshKeysResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListSshKeysResponse.
+        r"""Gets the error of this ListSshKeysResponse.
 
         :return: The error of this ListSshKeysResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ListSshKeysResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListSshKeysResponse.
+        r"""Sets the error of this ListSshKeysResponse.
 
         :param error: The error of this ListSshKeysResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ListSshKeysResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListSshKeysResponse.
+        r"""Gets the result of this ListSshKeysResponse.
 
         :return: The result of this ListSshKeysResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.PublicKeyList`
@@ -85,7 +85,7 @@ class ListSshKeysResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListSshKeysResponse.
+        r"""Sets the result of this ListSshKeysResponse.
 
         :param result: The result of this ListSshKeysResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.PublicKeyList`
@@ -94,7 +94,7 @@ class ListSshKeysResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListSshKeysResponse.
+        r"""Gets the status of this ListSshKeysResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ListSshKeysResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSshKeysResponse.
+        r"""Sets the status of this ListSshKeysResponse.
 
         响应状态
 

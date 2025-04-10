@@ -27,7 +27,7 @@ class StatisticTypeData:
     }
 
     def __init__(self, data_type=None, data=None):
-        """StatisticTypeData
+        r"""StatisticTypeData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StatisticTypeData:
 
     @property
     def data_type(self):
-        """Gets the data_type of this StatisticTypeData.
+        r"""Gets the data_type of this StatisticTypeData.
 
         统计数据类型： REQUEST：请求对象数 SUCCESS：成功对象数 FAILURE：失败对象数 SKIP：跳过对象数 SIZE：对象容量(Byte)
 
@@ -61,7 +61,7 @@ class StatisticTypeData:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this StatisticTypeData.
+        r"""Sets the data_type of this StatisticTypeData.
 
         统计数据类型： REQUEST：请求对象数 SUCCESS：成功对象数 FAILURE：失败对象数 SKIP：跳过对象数 SIZE：对象容量(Byte)
 
@@ -72,7 +72,7 @@ class StatisticTypeData:
 
     @property
     def data(self):
-        """Gets the data of this StatisticTypeData.
+        r"""Gets the data of this StatisticTypeData.
 
         查询的同步任务统计结果集
 
@@ -83,7 +83,7 @@ class StatisticTypeData:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this StatisticTypeData.
+        r"""Sets the data of this StatisticTypeData.
 
         查询的同步任务统计结果集
 

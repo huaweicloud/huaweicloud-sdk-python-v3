@@ -28,7 +28,7 @@ class ShowHotWordsSwitchResponse(SdkResponse):
     }
 
     def __init__(self, enable_hot_words=None, x_request_id=None):
-        """ShowHotWordsSwitchResponse
+        r"""ShowHotWordsSwitchResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowHotWordsSwitchResponse(SdkResponse):
 
     @property
     def enable_hot_words(self):
-        """Gets the enable_hot_words of this ShowHotWordsSwitchResponse.
+        r"""Gets the enable_hot_words of this ShowHotWordsSwitchResponse.
 
         热词功能开关。
 
@@ -62,7 +62,7 @@ class ShowHotWordsSwitchResponse(SdkResponse):
 
     @enable_hot_words.setter
     def enable_hot_words(self, enable_hot_words):
-        """Sets the enable_hot_words of this ShowHotWordsSwitchResponse.
+        r"""Sets the enable_hot_words of this ShowHotWordsSwitchResponse.
 
         热词功能开关。
 
@@ -73,7 +73,7 @@ class ShowHotWordsSwitchResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowHotWordsSwitchResponse.
+        r"""Gets the x_request_id of this ShowHotWordsSwitchResponse.
 
         :return: The x_request_id of this ShowHotWordsSwitchResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowHotWordsSwitchResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowHotWordsSwitchResponse.
+        r"""Sets the x_request_id of this ShowHotWordsSwitchResponse.
 
         :param x_request_id: The x_request_id of this ShowHotWordsSwitchResponse.
         :type x_request_id: str

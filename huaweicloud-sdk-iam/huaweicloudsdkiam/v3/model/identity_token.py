@@ -27,7 +27,7 @@ class IdentityToken:
     }
 
     def __init__(self, id=None, duration_seconds=None):
-        """IdentityToken
+        r"""IdentityToken
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IdentityToken:
 
     @property
     def id(self):
-        """Gets the id of this IdentityToken.
+        r"""Gets the id of this IdentityToken.
 
         token的ID。与请求头中的X-Auth-Token含义相同，待废弃。
 
@@ -61,7 +61,7 @@ class IdentityToken:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IdentityToken.
+        r"""Sets the id of this IdentityToken.
 
         token的ID。与请求头中的X-Auth-Token含义相同，待废弃。
 
@@ -72,7 +72,7 @@ class IdentityToken:
 
     @property
     def duration_seconds(self):
-        """Gets the duration_seconds of this IdentityToken.
+        r"""Gets the duration_seconds of this IdentityToken.
 
         AK/SK和securitytoken的有效期，时间单位为秒。取值范围：15min ~ 24h ，默认为15min。
 
@@ -83,7 +83,7 @@ class IdentityToken:
 
     @duration_seconds.setter
     def duration_seconds(self, duration_seconds):
-        """Sets the duration_seconds of this IdentityToken.
+        r"""Sets the duration_seconds of this IdentityToken.
 
         AK/SK和securitytoken的有效期，时间单位为秒。取值范围：15min ~ 24h ，默认为15min。
 

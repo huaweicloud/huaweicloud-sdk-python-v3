@@ -28,7 +28,7 @@ class ListAlarmHandleHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, alarm_handle_histories=None):
-        """ListAlarmHandleHistoriesResponse
+        r"""ListAlarmHandleHistoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAlarmHandleHistoriesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAlarmHandleHistoriesResponse.
+        r"""Gets the count of this ListAlarmHandleHistoriesResponse.
 
         总数量
 
@@ -62,7 +62,7 @@ class ListAlarmHandleHistoriesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAlarmHandleHistoriesResponse.
+        r"""Sets the count of this ListAlarmHandleHistoriesResponse.
 
         总数量
 
@@ -73,7 +73,7 @@ class ListAlarmHandleHistoriesResponse(SdkResponse):
 
     @property
     def alarm_handle_histories(self):
-        """Gets the alarm_handle_histories of this ListAlarmHandleHistoriesResponse.
+        r"""Gets the alarm_handle_histories of this ListAlarmHandleHistoriesResponse.
 
         告警工单执行结果
 
@@ -84,7 +84,7 @@ class ListAlarmHandleHistoriesResponse(SdkResponse):
 
     @alarm_handle_histories.setter
     def alarm_handle_histories(self, alarm_handle_histories):
-        """Sets the alarm_handle_histories of this ListAlarmHandleHistoriesResponse.
+        r"""Sets the alarm_handle_histories of this ListAlarmHandleHistoriesResponse.
 
         告警工单执行结果
 

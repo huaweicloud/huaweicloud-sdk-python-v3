@@ -25,7 +25,7 @@ class AlterWafProductInfo:
     }
 
     def __init__(self, resource_spec_code=None):
-        """AlterWafProductInfo
+        r"""AlterWafProductInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AlterWafProductInfo:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this AlterWafProductInfo.
+        r"""Gets the resource_spec_code of this AlterWafProductInfo.
 
         waf规格   - professional：标准版   - enterprise：专业版   ultimate：铂金版
 
@@ -54,7 +54,7 @@ class AlterWafProductInfo:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this AlterWafProductInfo.
+        r"""Sets the resource_spec_code of this AlterWafProductInfo.
 
         waf规格   - professional：标准版   - enterprise：专业版   ultimate：铂金版
 

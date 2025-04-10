@@ -45,7 +45,7 @@ class DataJobRsp:
     }
 
     def __init__(self, creator=None, end_time=None, id=None, name=None, create_time=None, status=None, finish_count=None, total_count=None, type=None, failed_reason=None, additions=None):
-        """DataJobRsp
+        r"""DataJobRsp
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class DataJobRsp:
 
     @property
     def creator(self):
-        """Gets the creator of this DataJobRsp.
+        r"""Gets the creator of this DataJobRsp.
 
         数据作业创建者
 
@@ -124,7 +124,7 @@ class DataJobRsp:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this DataJobRsp.
+        r"""Sets the creator of this DataJobRsp.
 
         数据作业创建者
 
@@ -135,7 +135,7 @@ class DataJobRsp:
 
     @property
     def end_time(self):
-        """Gets the end_time of this DataJobRsp.
+        r"""Gets the end_time of this DataJobRsp.
 
         数据作业结束时间
 
@@ -146,7 +146,7 @@ class DataJobRsp:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this DataJobRsp.
+        r"""Sets the end_time of this DataJobRsp.
 
         数据作业结束时间
 
@@ -157,7 +157,7 @@ class DataJobRsp:
 
     @property
     def id(self):
-        """Gets the id of this DataJobRsp.
+        r"""Gets the id of this DataJobRsp.
 
         数据作业ID
 
@@ -168,7 +168,7 @@ class DataJobRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DataJobRsp.
+        r"""Sets the id of this DataJobRsp.
 
         数据作业ID
 
@@ -179,7 +179,7 @@ class DataJobRsp:
 
     @property
     def name(self):
-        """Gets the name of this DataJobRsp.
+        r"""Gets the name of this DataJobRsp.
 
         数据作业名称
 
@@ -190,7 +190,7 @@ class DataJobRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataJobRsp.
+        r"""Sets the name of this DataJobRsp.
 
         数据作业名称
 
@@ -201,7 +201,7 @@ class DataJobRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DataJobRsp.
+        r"""Gets the create_time of this DataJobRsp.
 
         数据作业创建时间
 
@@ -212,7 +212,7 @@ class DataJobRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DataJobRsp.
+        r"""Sets the create_time of this DataJobRsp.
 
         数据作业创建时间
 
@@ -223,7 +223,7 @@ class DataJobRsp:
 
     @property
     def status(self):
-        """Gets the status of this DataJobRsp.
+        r"""Gets the status of this DataJobRsp.
 
         数据作业状态
 
@@ -234,7 +234,7 @@ class DataJobRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DataJobRsp.
+        r"""Sets the status of this DataJobRsp.
 
         数据作业状态
 
@@ -245,7 +245,7 @@ class DataJobRsp:
 
     @property
     def finish_count(self):
-        """Gets the finish_count of this DataJobRsp.
+        r"""Gets the finish_count of this DataJobRsp.
 
         数据作业完成数
 
@@ -256,7 +256,7 @@ class DataJobRsp:
 
     @finish_count.setter
     def finish_count(self, finish_count):
-        """Sets the finish_count of this DataJobRsp.
+        r"""Sets the finish_count of this DataJobRsp.
 
         数据作业完成数
 
@@ -267,7 +267,7 @@ class DataJobRsp:
 
     @property
     def total_count(self):
-        """Gets the total_count of this DataJobRsp.
+        r"""Gets the total_count of this DataJobRsp.
 
         数据作业总数
 
@@ -278,7 +278,7 @@ class DataJobRsp:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this DataJobRsp.
+        r"""Sets the total_count of this DataJobRsp.
 
         数据作业总数
 
@@ -289,7 +289,7 @@ class DataJobRsp:
 
     @property
     def type(self):
-        """Gets the type of this DataJobRsp.
+        r"""Gets the type of this DataJobRsp.
 
         数据作业类型
 
@@ -300,7 +300,7 @@ class DataJobRsp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DataJobRsp.
+        r"""Sets the type of this DataJobRsp.
 
         数据作业类型
 
@@ -311,7 +311,7 @@ class DataJobRsp:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this DataJobRsp.
+        r"""Gets the failed_reason of this DataJobRsp.
 
         数据作业失败原因
 
@@ -322,7 +322,7 @@ class DataJobRsp:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this DataJobRsp.
+        r"""Sets the failed_reason of this DataJobRsp.
 
         数据作业失败原因
 
@@ -333,7 +333,7 @@ class DataJobRsp:
 
     @property
     def additions(self):
-        """Gets the additions of this DataJobRsp.
+        r"""Gets the additions of this DataJobRsp.
 
         附加信息
 
@@ -344,7 +344,7 @@ class DataJobRsp:
 
     @additions.setter
     def additions(self, additions):
-        """Sets the additions of this DataJobRsp.
+        r"""Sets the additions of this DataJobRsp.
 
         附加信息
 

@@ -35,7 +35,7 @@ class CheckChDatabaseTableConfigRequestBody:
     }
 
     def __init__(self, source_instance_id=None, source_node_id=None, source_database_name=None, db_configs=None, tables_configs=None, table_repl_config=None):
-        """CheckChDatabaseTableConfigRequestBody
+        r"""CheckChDatabaseTableConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class CheckChDatabaseTableConfigRequestBody:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this CheckChDatabaseTableConfigRequestBody.
+        r"""Gets the source_instance_id of this CheckChDatabaseTableConfigRequestBody.
 
         源实例ID。
 
@@ -84,7 +84,7 @@ class CheckChDatabaseTableConfigRequestBody:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this CheckChDatabaseTableConfigRequestBody.
+        r"""Sets the source_instance_id of this CheckChDatabaseTableConfigRequestBody.
 
         源实例ID。
 
@@ -95,7 +95,7 @@ class CheckChDatabaseTableConfigRequestBody:
 
     @property
     def source_node_id(self):
-        """Gets the source_node_id of this CheckChDatabaseTableConfigRequestBody.
+        r"""Gets the source_node_id of this CheckChDatabaseTableConfigRequestBody.
 
         源节点ID。TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID。
 
@@ -106,7 +106,7 @@ class CheckChDatabaseTableConfigRequestBody:
 
     @source_node_id.setter
     def source_node_id(self, source_node_id):
-        """Sets the source_node_id of this CheckChDatabaseTableConfigRequestBody.
+        r"""Sets the source_node_id of this CheckChDatabaseTableConfigRequestBody.
 
         源节点ID。TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID。
 
@@ -117,7 +117,7 @@ class CheckChDatabaseTableConfigRequestBody:
 
     @property
     def source_database_name(self):
-        """Gets the source_database_name of this CheckChDatabaseTableConfigRequestBody.
+        r"""Gets the source_database_name of this CheckChDatabaseTableConfigRequestBody.
 
         源数据库名。
 
@@ -128,7 +128,7 @@ class CheckChDatabaseTableConfigRequestBody:
 
     @source_database_name.setter
     def source_database_name(self, source_database_name):
-        """Sets the source_database_name of this CheckChDatabaseTableConfigRequestBody.
+        r"""Sets the source_database_name of this CheckChDatabaseTableConfigRequestBody.
 
         源数据库名。
 
@@ -139,7 +139,7 @@ class CheckChDatabaseTableConfigRequestBody:
 
     @property
     def db_configs(self):
-        """Gets the db_configs of this CheckChDatabaseTableConfigRequestBody.
+        r"""Gets the db_configs of this CheckChDatabaseTableConfigRequestBody.
 
         库配置列表。
 
@@ -150,7 +150,7 @@ class CheckChDatabaseTableConfigRequestBody:
 
     @db_configs.setter
     def db_configs(self, db_configs):
-        """Sets the db_configs of this CheckChDatabaseTableConfigRequestBody.
+        r"""Sets the db_configs of this CheckChDatabaseTableConfigRequestBody.
 
         库配置列表。
 
@@ -161,7 +161,7 @@ class CheckChDatabaseTableConfigRequestBody:
 
     @property
     def tables_configs(self):
-        """Gets the tables_configs of this CheckChDatabaseTableConfigRequestBody.
+        r"""Gets the tables_configs of this CheckChDatabaseTableConfigRequestBody.
 
         表配置信息。
 
@@ -172,7 +172,7 @@ class CheckChDatabaseTableConfigRequestBody:
 
     @tables_configs.setter
     def tables_configs(self, tables_configs):
-        """Sets the tables_configs of this CheckChDatabaseTableConfigRequestBody.
+        r"""Sets the tables_configs of this CheckChDatabaseTableConfigRequestBody.
 
         表配置信息。
 
@@ -183,7 +183,7 @@ class CheckChDatabaseTableConfigRequestBody:
 
     @property
     def table_repl_config(self):
-        """Gets the table_repl_config of this CheckChDatabaseTableConfigRequestBody.
+        r"""Gets the table_repl_config of this CheckChDatabaseTableConfigRequestBody.
 
         :return: The table_repl_config of this CheckChDatabaseTableConfigRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChDatabaseTableReplConfigInfo`
@@ -192,7 +192,7 @@ class CheckChDatabaseTableConfigRequestBody:
 
     @table_repl_config.setter
     def table_repl_config(self, table_repl_config):
-        """Sets the table_repl_config of this CheckChDatabaseTableConfigRequestBody.
+        r"""Sets the table_repl_config of this CheckChDatabaseTableConfigRequestBody.
 
         :param table_repl_config: The table_repl_config of this CheckChDatabaseTableConfigRequestBody.
         :type table_repl_config: :class:`huaweicloudsdkgaussdb.v3.ChDatabaseTableReplConfigInfo`

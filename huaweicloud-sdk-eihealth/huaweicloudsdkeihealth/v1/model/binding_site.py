@@ -27,7 +27,7 @@ class BindingSite:
     }
 
     def __init__(self, protein=None, bounding_box=None):
-        """BindingSite
+        r"""BindingSite
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BindingSite:
 
     @property
     def protein(self):
-        """Gets the protein of this BindingSite.
+        r"""Gets the protein of this BindingSite.
 
         蛋白质3D结构，使用gzip压缩然后转base64格式
 
@@ -61,7 +61,7 @@ class BindingSite:
 
     @protein.setter
     def protein(self, protein):
-        """Sets the protein of this BindingSite.
+        r"""Sets the protein of this BindingSite.
 
         蛋白质3D结构，使用gzip压缩然后转base64格式
 
@@ -72,7 +72,7 @@ class BindingSite:
 
     @property
     def bounding_box(self):
-        """Gets the bounding_box of this BindingSite.
+        r"""Gets the bounding_box of this BindingSite.
 
         :return: The bounding_box of this BindingSite.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BoundingBox`
@@ -81,7 +81,7 @@ class BindingSite:
 
     @bounding_box.setter
     def bounding_box(self, bounding_box):
-        """Sets the bounding_box of this BindingSite.
+        r"""Sets the bounding_box of this BindingSite.
 
         :param bounding_box: The bounding_box of this BindingSite.
         :type bounding_box: :class:`huaweicloudsdkeihealth.v1.BoundingBox`

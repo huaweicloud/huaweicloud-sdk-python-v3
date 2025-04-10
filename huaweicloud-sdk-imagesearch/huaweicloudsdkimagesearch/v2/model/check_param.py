@@ -33,7 +33,7 @@ class CheckParam:
     }
 
     def __init__(self, item_id=None, limit=None, last_item=None, custom_tags=None, custom_num_tags=None):
-        """CheckParam
+        r"""CheckParam
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CheckParam:
 
     @property
     def item_id(self):
-        """Gets the item_id of this CheckParam.
+        r"""Gets the item_id of this CheckParam.
 
         数据的服务实例级唯一标识，字符长度范围为[1, 256]。 - item_id/custom_tags/custom_num_tags中必须给定至少一个参数，以支持对服务实例中的数据进行指定ID检查或条件检查。 - 如给定item_id参数，则进行指定ID检查，否则进行条件检查。
 
@@ -82,7 +82,7 @@ class CheckParam:
 
     @item_id.setter
     def item_id(self, item_id):
-        """Sets the item_id of this CheckParam.
+        r"""Sets the item_id of this CheckParam.
 
         数据的服务实例级唯一标识，字符长度范围为[1, 256]。 - item_id/custom_tags/custom_num_tags中必须给定至少一个参数，以支持对服务实例中的数据进行指定ID检查或条件检查。 - 如给定item_id参数，则进行指定ID检查，否则进行条件检查。
 
@@ -93,7 +93,7 @@ class CheckParam:
 
     @property
     def limit(self):
-        """Gets the limit of this CheckParam.
+        r"""Gets the limit of this CheckParam.
 
         返回检查结果的数量，默认为10，取值范围为[1, 100]。仅对条件检查生效。
 
@@ -104,7 +104,7 @@ class CheckParam:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this CheckParam.
+        r"""Sets the limit of this CheckParam.
 
         返回检查结果的数量，默认为10，取值范围为[1, 100]。仅对条件检查生效。
 
@@ -115,7 +115,7 @@ class CheckParam:
 
     @property
     def last_item(self):
-        """Gets the last_item of this CheckParam.
+        r"""Gets the last_item of this CheckParam.
 
         :return: The last_item of this CheckParam.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.SearchAfterParam`
@@ -124,7 +124,7 @@ class CheckParam:
 
     @last_item.setter
     def last_item(self, last_item):
-        """Sets the last_item of this CheckParam.
+        r"""Sets the last_item of this CheckParam.
 
         :param last_item: The last_item of this CheckParam.
         :type last_item: :class:`huaweicloudsdkimagesearch.v2.SearchAfterParam`
@@ -133,7 +133,7 @@ class CheckParam:
 
     @property
     def custom_tags(self):
-        """Gets the custom_tags of this CheckParam.
+        r"""Gets the custom_tags of this CheckParam.
 
         自定义字符标签，用于对服务实例中的数据进行条件查找。格式为键值对{key:value}。 - key: 必须为服务实例custom_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。 - value: 标签值列表，列表内多个标签值为“或”关系，即满足一个即可。列表长度范围为[1, 32]，标签值类型为字符串，字符长度范围为[1, 64]。
 
@@ -144,7 +144,7 @@ class CheckParam:
 
     @custom_tags.setter
     def custom_tags(self, custom_tags):
-        """Sets the custom_tags of this CheckParam.
+        r"""Sets the custom_tags of this CheckParam.
 
         自定义字符标签，用于对服务实例中的数据进行条件查找。格式为键值对{key:value}。 - key: 必须为服务实例custom_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。 - value: 标签值列表，列表内多个标签值为“或”关系，即满足一个即可。列表长度范围为[1, 32]，标签值类型为字符串，字符长度范围为[1, 64]。
 
@@ -155,7 +155,7 @@ class CheckParam:
 
     @property
     def custom_num_tags(self):
-        """Gets the custom_num_tags of this CheckParam.
+        r"""Gets the custom_num_tags of this CheckParam.
 
         自定义数值标签，用于对服务实例中的数据进行条件查找。格式为键值对{key:value}。 - key: 必须为服务实例custom_num_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。针对没有设置该数值标签的数据，会直接过滤。 - value: 标签值的取值范围，标签值在给定的取值范围内即视为符合条件。
 
@@ -166,7 +166,7 @@ class CheckParam:
 
     @custom_num_tags.setter
     def custom_num_tags(self, custom_num_tags):
-        """Sets the custom_num_tags of this CheckParam.
+        r"""Sets the custom_num_tags of this CheckParam.
 
         自定义数值标签，用于对服务实例中的数据进行条件查找。格式为键值对{key:value}。 - key: 必须为服务实例custom_num_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。针对没有设置该数值标签的数据，会直接过滤。 - value: 标签值的取值范围，标签值在给定的取值范围内即视为符合条件。
 

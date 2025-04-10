@@ -32,7 +32,7 @@ class SearchCorpVmrResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchCorpVmrResponse
+        r"""SearchCorpVmrResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchCorpVmrResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchCorpVmrResponse.
+        r"""Gets the offset of this SearchCorpVmrResponse.
 
         页面起始页，从0开始。
 
@@ -76,7 +76,7 @@ class SearchCorpVmrResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchCorpVmrResponse.
+        r"""Sets the offset of this SearchCorpVmrResponse.
 
         页面起始页，从0开始。
 
@@ -87,7 +87,7 @@ class SearchCorpVmrResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchCorpVmrResponse.
+        r"""Gets the limit of this SearchCorpVmrResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -98,7 +98,7 @@ class SearchCorpVmrResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchCorpVmrResponse.
+        r"""Sets the limit of this SearchCorpVmrResponse.
 
         每页显示的条目数量。 默认值：10。 
 
@@ -109,7 +109,7 @@ class SearchCorpVmrResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchCorpVmrResponse.
+        r"""Gets the count of this SearchCorpVmrResponse.
 
         总数量。
 
@@ -120,7 +120,7 @@ class SearchCorpVmrResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchCorpVmrResponse.
+        r"""Sets the count of this SearchCorpVmrResponse.
 
         总数量。
 
@@ -131,7 +131,7 @@ class SearchCorpVmrResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchCorpVmrResponse.
+        r"""Gets the data of this SearchCorpVmrResponse.
 
         查询到的云会议室列表。
 
@@ -142,7 +142,7 @@ class SearchCorpVmrResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchCorpVmrResponse.
+        r"""Sets the data of this SearchCorpVmrResponse.
 
         查询到的云会议室列表。
 

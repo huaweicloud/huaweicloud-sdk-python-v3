@@ -27,7 +27,7 @@ class DeleteProductRequest:
     }
 
     def __init__(self, x_app_user_id=None, product_id=None):
-        """DeleteProductRequest
+        r"""DeleteProductRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteProductRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this DeleteProductRequest.
+        r"""Gets the x_app_user_id of this DeleteProductRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -60,7 +60,7 @@ class DeleteProductRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this DeleteProductRequest.
+        r"""Sets the x_app_user_id of this DeleteProductRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -71,7 +71,7 @@ class DeleteProductRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this DeleteProductRequest.
+        r"""Gets the product_id of this DeleteProductRequest.
 
         商品ID。
 
@@ -82,7 +82,7 @@ class DeleteProductRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this DeleteProductRequest.
+        r"""Sets the product_id of this DeleteProductRequest.
 
         商品ID。
 

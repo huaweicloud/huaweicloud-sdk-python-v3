@@ -31,7 +31,7 @@ class HttpGetAclTagResponseData:
     }
 
     def __init__(self, offset=None, limit=None, total=None, records=None):
-        """HttpGetAclTagResponseData
+        r"""HttpGetAclTagResponseData
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class HttpGetAclTagResponseData:
 
     @property
     def offset(self):
-        """Gets the offset of this HttpGetAclTagResponseData.
+        r"""Gets the offset of this HttpGetAclTagResponseData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -75,7 +75,7 @@ class HttpGetAclTagResponseData:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this HttpGetAclTagResponseData.
+        r"""Sets the offset of this HttpGetAclTagResponseData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -86,7 +86,7 @@ class HttpGetAclTagResponseData:
 
     @property
     def limit(self):
-        """Gets the limit of this HttpGetAclTagResponseData.
+        r"""Gets the limit of this HttpGetAclTagResponseData.
 
         每页显示个数，范围为1-1024
 
@@ -97,7 +97,7 @@ class HttpGetAclTagResponseData:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this HttpGetAclTagResponseData.
+        r"""Sets the limit of this HttpGetAclTagResponseData.
 
         每页显示个数，范围为1-1024
 
@@ -108,7 +108,7 @@ class HttpGetAclTagResponseData:
 
     @property
     def total(self):
-        """Gets the total of this HttpGetAclTagResponseData.
+        r"""Gets the total of this HttpGetAclTagResponseData.
 
         规则标签总数
 
@@ -119,7 +119,7 @@ class HttpGetAclTagResponseData:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this HttpGetAclTagResponseData.
+        r"""Sets the total of this HttpGetAclTagResponseData.
 
         规则标签总数
 
@@ -130,7 +130,7 @@ class HttpGetAclTagResponseData:
 
     @property
     def records(self):
-        """Gets the records of this HttpGetAclTagResponseData.
+        r"""Gets the records of this HttpGetAclTagResponseData.
 
         规则标签列表
 
@@ -141,7 +141,7 @@ class HttpGetAclTagResponseData:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this HttpGetAclTagResponseData.
+        r"""Sets the records of this HttpGetAclTagResponseData.
 
         规则标签列表
 

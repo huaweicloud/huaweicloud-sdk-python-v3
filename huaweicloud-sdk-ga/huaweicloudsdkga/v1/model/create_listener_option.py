@@ -37,7 +37,7 @@ class CreateListenerOption:
     }
 
     def __init__(self, name=None, description=None, protocol=None, port_ranges=None, client_affinity=None, accelerator_id=None, tags=None):
-        """CreateListenerOption
+        r"""CreateListenerOption
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class CreateListenerOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateListenerOption.
+        r"""Gets the name of this CreateListenerOption.
 
         监听器名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -92,7 +92,7 @@ class CreateListenerOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateListenerOption.
+        r"""Sets the name of this CreateListenerOption.
 
         监听器名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -103,7 +103,7 @@ class CreateListenerOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateListenerOption.
+        r"""Gets the description of this CreateListenerOption.
 
         监听器的描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -114,7 +114,7 @@ class CreateListenerOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateListenerOption.
+        r"""Sets the description of this CreateListenerOption.
 
         监听器的描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -125,7 +125,7 @@ class CreateListenerOption:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreateListenerOption.
+        r"""Gets the protocol of this CreateListenerOption.
 
         :return: The protocol of this CreateListenerOption.
         :rtype: :class:`huaweicloudsdkga.v1.ListenerProtocol`
@@ -134,7 +134,7 @@ class CreateListenerOption:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreateListenerOption.
+        r"""Sets the protocol of this CreateListenerOption.
 
         :param protocol: The protocol of this CreateListenerOption.
         :type protocol: :class:`huaweicloudsdkga.v1.ListenerProtocol`
@@ -143,7 +143,7 @@ class CreateListenerOption:
 
     @property
     def port_ranges(self):
-        """Gets the port_ranges of this CreateListenerOption.
+        r"""Gets the port_ranges of this CreateListenerOption.
 
         监听端口范围列表。
 
@@ -154,7 +154,7 @@ class CreateListenerOption:
 
     @port_ranges.setter
     def port_ranges(self, port_ranges):
-        """Sets the port_ranges of this CreateListenerOption.
+        r"""Sets the port_ranges of this CreateListenerOption.
 
         监听端口范围列表。
 
@@ -165,7 +165,7 @@ class CreateListenerOption:
 
     @property
     def client_affinity(self):
-        """Gets the client_affinity of this CreateListenerOption.
+        r"""Gets the client_affinity of this CreateListenerOption.
 
         :return: The client_affinity of this CreateListenerOption.
         :rtype: :class:`huaweicloudsdkga.v1.ClientAffinity`
@@ -174,7 +174,7 @@ class CreateListenerOption:
 
     @client_affinity.setter
     def client_affinity(self, client_affinity):
-        """Sets the client_affinity of this CreateListenerOption.
+        r"""Sets the client_affinity of this CreateListenerOption.
 
         :param client_affinity: The client_affinity of this CreateListenerOption.
         :type client_affinity: :class:`huaweicloudsdkga.v1.ClientAffinity`
@@ -183,7 +183,7 @@ class CreateListenerOption:
 
     @property
     def accelerator_id(self):
-        """Gets the accelerator_id of this CreateListenerOption.
+        r"""Gets the accelerator_id of this CreateListenerOption.
 
         全球加速实例ID。
 
@@ -194,7 +194,7 @@ class CreateListenerOption:
 
     @accelerator_id.setter
     def accelerator_id(self, accelerator_id):
-        """Sets the accelerator_id of this CreateListenerOption.
+        r"""Sets the accelerator_id of this CreateListenerOption.
 
         全球加速实例ID。
 
@@ -205,7 +205,7 @@ class CreateListenerOption:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateListenerOption.
+        r"""Gets the tags of this CreateListenerOption.
 
         标签列表。
 
@@ -216,7 +216,7 @@ class CreateListenerOption:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateListenerOption.
+        r"""Sets the tags of this CreateListenerOption.
 
         标签列表。
 

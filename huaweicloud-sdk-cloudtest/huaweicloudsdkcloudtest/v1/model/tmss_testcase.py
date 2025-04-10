@@ -155,7 +155,7 @@ class TmssTestcase:
     }
 
     def __init__(self, activity_id=None, applied_product=None, author=None, auto_type=None, cata_id=None, creation_date=None, custom_field_1=None, custom_field_10=None, custom_field_11=None, custom_field_12=None, custom_field_13=None, custom_field_14=None, custom_field_15=None, custom_field_16=None, custom_field_17=None, custom_field_18=None, custom_field_19=None, custom_field_2=None, custom_field_20=None, custom_field_21=None, custom_field_22=None, custom_field_23=None, custom_field_24=None, custom_field_25=None, custom_field_3=None, custom_field_4=None, custom_field_5=None, custom_field_6=None, custom_field_7=None, custom_field_8=None, custom_field_9=None, description=None, dr_relationid=None, env_type=None, exe_platform=None, expect_output=None, feature_path=None, is_key_word=None, is_contract_testcase=None, is_para_validator_testcase=None, label_id=None, last_modified=None, last_modifier=None, last_result=None, level=None, market=None, module_id=None, name=None, network_script_name=None, node_name=None, number=None, origin_uri=None, owner=None, owner_id=None, preparation=None, release_dev=None, release_id=None, remark=None, stage=None, steps=None, svn_script_path=None, tags=None, test_feature=None, test_step=None, test_type=None, uri=None):
-        """TmssTestcase
+        r"""TmssTestcase
 
         The model defined in huaweicloud sdk
 
@@ -498,7 +498,7 @@ class TmssTestcase:
 
     @property
     def activity_id(self):
-        """Gets the activity_id of this TmssTestcase.
+        r"""Gets the activity_id of this TmssTestcase.
 
         活动id
 
@@ -509,7 +509,7 @@ class TmssTestcase:
 
     @activity_id.setter
     def activity_id(self, activity_id):
-        """Sets the activity_id of this TmssTestcase.
+        r"""Sets the activity_id of this TmssTestcase.
 
         活动id
 
@@ -520,7 +520,7 @@ class TmssTestcase:
 
     @property
     def applied_product(self):
-        """Gets the applied_product of this TmssTestcase.
+        r"""Gets the applied_product of this TmssTestcase.
 
         应用产品
 
@@ -531,7 +531,7 @@ class TmssTestcase:
 
     @applied_product.setter
     def applied_product(self, applied_product):
-        """Sets the applied_product of this TmssTestcase.
+        r"""Sets the applied_product of this TmssTestcase.
 
         应用产品
 
@@ -542,7 +542,7 @@ class TmssTestcase:
 
     @property
     def author(self):
-        """Gets the author of this TmssTestcase.
+        r"""Gets the author of this TmssTestcase.
 
         创建人
 
@@ -553,7 +553,7 @@ class TmssTestcase:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this TmssTestcase.
+        r"""Sets the author of this TmssTestcase.
 
         创建人
 
@@ -564,7 +564,7 @@ class TmssTestcase:
 
     @property
     def auto_type(self):
-        """Gets the auto_type of this TmssTestcase.
+        r"""Gets the auto_type of this TmssTestcase.
 
         自动化类型
 
@@ -575,7 +575,7 @@ class TmssTestcase:
 
     @auto_type.setter
     def auto_type(self, auto_type):
-        """Sets the auto_type of this TmssTestcase.
+        r"""Sets the auto_type of this TmssTestcase.
 
         自动化类型
 
@@ -586,7 +586,7 @@ class TmssTestcase:
 
     @property
     def cata_id(self):
-        """Gets the cata_id of this TmssTestcase.
+        r"""Gets the cata_id of this TmssTestcase.
 
         用例分类ID
 
@@ -597,7 +597,7 @@ class TmssTestcase:
 
     @cata_id.setter
     def cata_id(self, cata_id):
-        """Sets the cata_id of this TmssTestcase.
+        r"""Sets the cata_id of this TmssTestcase.
 
         用例分类ID
 
@@ -608,7 +608,7 @@ class TmssTestcase:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this TmssTestcase.
+        r"""Gets the creation_date of this TmssTestcase.
 
         创建日期
 
@@ -619,7 +619,7 @@ class TmssTestcase:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this TmssTestcase.
+        r"""Sets the creation_date of this TmssTestcase.
 
         创建日期
 
@@ -630,7 +630,7 @@ class TmssTestcase:
 
     @property
     def custom_field_1(self):
-        """Gets the custom_field_1 of this TmssTestcase.
+        r"""Gets the custom_field_1 of this TmssTestcase.
 
         :return: The custom_field_1 of this TmssTestcase.
         :rtype: str
@@ -639,7 +639,7 @@ class TmssTestcase:
 
     @custom_field_1.setter
     def custom_field_1(self, custom_field_1):
-        """Sets the custom_field_1 of this TmssTestcase.
+        r"""Sets the custom_field_1 of this TmssTestcase.
 
         :param custom_field_1: The custom_field_1 of this TmssTestcase.
         :type custom_field_1: str
@@ -648,7 +648,7 @@ class TmssTestcase:
 
     @property
     def custom_field_10(self):
-        """Gets the custom_field_10 of this TmssTestcase.
+        r"""Gets the custom_field_10 of this TmssTestcase.
 
         :return: The custom_field_10 of this TmssTestcase.
         :rtype: str
@@ -657,7 +657,7 @@ class TmssTestcase:
 
     @custom_field_10.setter
     def custom_field_10(self, custom_field_10):
-        """Sets the custom_field_10 of this TmssTestcase.
+        r"""Sets the custom_field_10 of this TmssTestcase.
 
         :param custom_field_10: The custom_field_10 of this TmssTestcase.
         :type custom_field_10: str
@@ -666,7 +666,7 @@ class TmssTestcase:
 
     @property
     def custom_field_11(self):
-        """Gets the custom_field_11 of this TmssTestcase.
+        r"""Gets the custom_field_11 of this TmssTestcase.
 
         :return: The custom_field_11 of this TmssTestcase.
         :rtype: str
@@ -675,7 +675,7 @@ class TmssTestcase:
 
     @custom_field_11.setter
     def custom_field_11(self, custom_field_11):
-        """Sets the custom_field_11 of this TmssTestcase.
+        r"""Sets the custom_field_11 of this TmssTestcase.
 
         :param custom_field_11: The custom_field_11 of this TmssTestcase.
         :type custom_field_11: str
@@ -684,7 +684,7 @@ class TmssTestcase:
 
     @property
     def custom_field_12(self):
-        """Gets the custom_field_12 of this TmssTestcase.
+        r"""Gets the custom_field_12 of this TmssTestcase.
 
         :return: The custom_field_12 of this TmssTestcase.
         :rtype: str
@@ -693,7 +693,7 @@ class TmssTestcase:
 
     @custom_field_12.setter
     def custom_field_12(self, custom_field_12):
-        """Sets the custom_field_12 of this TmssTestcase.
+        r"""Sets the custom_field_12 of this TmssTestcase.
 
         :param custom_field_12: The custom_field_12 of this TmssTestcase.
         :type custom_field_12: str
@@ -702,7 +702,7 @@ class TmssTestcase:
 
     @property
     def custom_field_13(self):
-        """Gets the custom_field_13 of this TmssTestcase.
+        r"""Gets the custom_field_13 of this TmssTestcase.
 
         :return: The custom_field_13 of this TmssTestcase.
         :rtype: str
@@ -711,7 +711,7 @@ class TmssTestcase:
 
     @custom_field_13.setter
     def custom_field_13(self, custom_field_13):
-        """Sets the custom_field_13 of this TmssTestcase.
+        r"""Sets the custom_field_13 of this TmssTestcase.
 
         :param custom_field_13: The custom_field_13 of this TmssTestcase.
         :type custom_field_13: str
@@ -720,7 +720,7 @@ class TmssTestcase:
 
     @property
     def custom_field_14(self):
-        """Gets the custom_field_14 of this TmssTestcase.
+        r"""Gets the custom_field_14 of this TmssTestcase.
 
         :return: The custom_field_14 of this TmssTestcase.
         :rtype: str
@@ -729,7 +729,7 @@ class TmssTestcase:
 
     @custom_field_14.setter
     def custom_field_14(self, custom_field_14):
-        """Sets the custom_field_14 of this TmssTestcase.
+        r"""Sets the custom_field_14 of this TmssTestcase.
 
         :param custom_field_14: The custom_field_14 of this TmssTestcase.
         :type custom_field_14: str
@@ -738,7 +738,7 @@ class TmssTestcase:
 
     @property
     def custom_field_15(self):
-        """Gets the custom_field_15 of this TmssTestcase.
+        r"""Gets the custom_field_15 of this TmssTestcase.
 
         :return: The custom_field_15 of this TmssTestcase.
         :rtype: str
@@ -747,7 +747,7 @@ class TmssTestcase:
 
     @custom_field_15.setter
     def custom_field_15(self, custom_field_15):
-        """Sets the custom_field_15 of this TmssTestcase.
+        r"""Sets the custom_field_15 of this TmssTestcase.
 
         :param custom_field_15: The custom_field_15 of this TmssTestcase.
         :type custom_field_15: str
@@ -756,7 +756,7 @@ class TmssTestcase:
 
     @property
     def custom_field_16(self):
-        """Gets the custom_field_16 of this TmssTestcase.
+        r"""Gets the custom_field_16 of this TmssTestcase.
 
         :return: The custom_field_16 of this TmssTestcase.
         :rtype: str
@@ -765,7 +765,7 @@ class TmssTestcase:
 
     @custom_field_16.setter
     def custom_field_16(self, custom_field_16):
-        """Sets the custom_field_16 of this TmssTestcase.
+        r"""Sets the custom_field_16 of this TmssTestcase.
 
         :param custom_field_16: The custom_field_16 of this TmssTestcase.
         :type custom_field_16: str
@@ -774,7 +774,7 @@ class TmssTestcase:
 
     @property
     def custom_field_17(self):
-        """Gets the custom_field_17 of this TmssTestcase.
+        r"""Gets the custom_field_17 of this TmssTestcase.
 
         :return: The custom_field_17 of this TmssTestcase.
         :rtype: str
@@ -783,7 +783,7 @@ class TmssTestcase:
 
     @custom_field_17.setter
     def custom_field_17(self, custom_field_17):
-        """Sets the custom_field_17 of this TmssTestcase.
+        r"""Sets the custom_field_17 of this TmssTestcase.
 
         :param custom_field_17: The custom_field_17 of this TmssTestcase.
         :type custom_field_17: str
@@ -792,7 +792,7 @@ class TmssTestcase:
 
     @property
     def custom_field_18(self):
-        """Gets the custom_field_18 of this TmssTestcase.
+        r"""Gets the custom_field_18 of this TmssTestcase.
 
         :return: The custom_field_18 of this TmssTestcase.
         :rtype: str
@@ -801,7 +801,7 @@ class TmssTestcase:
 
     @custom_field_18.setter
     def custom_field_18(self, custom_field_18):
-        """Sets the custom_field_18 of this TmssTestcase.
+        r"""Sets the custom_field_18 of this TmssTestcase.
 
         :param custom_field_18: The custom_field_18 of this TmssTestcase.
         :type custom_field_18: str
@@ -810,7 +810,7 @@ class TmssTestcase:
 
     @property
     def custom_field_19(self):
-        """Gets the custom_field_19 of this TmssTestcase.
+        r"""Gets the custom_field_19 of this TmssTestcase.
 
         :return: The custom_field_19 of this TmssTestcase.
         :rtype: str
@@ -819,7 +819,7 @@ class TmssTestcase:
 
     @custom_field_19.setter
     def custom_field_19(self, custom_field_19):
-        """Sets the custom_field_19 of this TmssTestcase.
+        r"""Sets the custom_field_19 of this TmssTestcase.
 
         :param custom_field_19: The custom_field_19 of this TmssTestcase.
         :type custom_field_19: str
@@ -828,7 +828,7 @@ class TmssTestcase:
 
     @property
     def custom_field_2(self):
-        """Gets the custom_field_2 of this TmssTestcase.
+        r"""Gets the custom_field_2 of this TmssTestcase.
 
         :return: The custom_field_2 of this TmssTestcase.
         :rtype: str
@@ -837,7 +837,7 @@ class TmssTestcase:
 
     @custom_field_2.setter
     def custom_field_2(self, custom_field_2):
-        """Sets the custom_field_2 of this TmssTestcase.
+        r"""Sets the custom_field_2 of this TmssTestcase.
 
         :param custom_field_2: The custom_field_2 of this TmssTestcase.
         :type custom_field_2: str
@@ -846,7 +846,7 @@ class TmssTestcase:
 
     @property
     def custom_field_20(self):
-        """Gets the custom_field_20 of this TmssTestcase.
+        r"""Gets the custom_field_20 of this TmssTestcase.
 
         :return: The custom_field_20 of this TmssTestcase.
         :rtype: str
@@ -855,7 +855,7 @@ class TmssTestcase:
 
     @custom_field_20.setter
     def custom_field_20(self, custom_field_20):
-        """Sets the custom_field_20 of this TmssTestcase.
+        r"""Sets the custom_field_20 of this TmssTestcase.
 
         :param custom_field_20: The custom_field_20 of this TmssTestcase.
         :type custom_field_20: str
@@ -864,7 +864,7 @@ class TmssTestcase:
 
     @property
     def custom_field_21(self):
-        """Gets the custom_field_21 of this TmssTestcase.
+        r"""Gets the custom_field_21 of this TmssTestcase.
 
         :return: The custom_field_21 of this TmssTestcase.
         :rtype: str
@@ -873,7 +873,7 @@ class TmssTestcase:
 
     @custom_field_21.setter
     def custom_field_21(self, custom_field_21):
-        """Sets the custom_field_21 of this TmssTestcase.
+        r"""Sets the custom_field_21 of this TmssTestcase.
 
         :param custom_field_21: The custom_field_21 of this TmssTestcase.
         :type custom_field_21: str
@@ -882,7 +882,7 @@ class TmssTestcase:
 
     @property
     def custom_field_22(self):
-        """Gets the custom_field_22 of this TmssTestcase.
+        r"""Gets the custom_field_22 of this TmssTestcase.
 
         :return: The custom_field_22 of this TmssTestcase.
         :rtype: str
@@ -891,7 +891,7 @@ class TmssTestcase:
 
     @custom_field_22.setter
     def custom_field_22(self, custom_field_22):
-        """Sets the custom_field_22 of this TmssTestcase.
+        r"""Sets the custom_field_22 of this TmssTestcase.
 
         :param custom_field_22: The custom_field_22 of this TmssTestcase.
         :type custom_field_22: str
@@ -900,7 +900,7 @@ class TmssTestcase:
 
     @property
     def custom_field_23(self):
-        """Gets the custom_field_23 of this TmssTestcase.
+        r"""Gets the custom_field_23 of this TmssTestcase.
 
         :return: The custom_field_23 of this TmssTestcase.
         :rtype: str
@@ -909,7 +909,7 @@ class TmssTestcase:
 
     @custom_field_23.setter
     def custom_field_23(self, custom_field_23):
-        """Sets the custom_field_23 of this TmssTestcase.
+        r"""Sets the custom_field_23 of this TmssTestcase.
 
         :param custom_field_23: The custom_field_23 of this TmssTestcase.
         :type custom_field_23: str
@@ -918,7 +918,7 @@ class TmssTestcase:
 
     @property
     def custom_field_24(self):
-        """Gets the custom_field_24 of this TmssTestcase.
+        r"""Gets the custom_field_24 of this TmssTestcase.
 
         :return: The custom_field_24 of this TmssTestcase.
         :rtype: str
@@ -927,7 +927,7 @@ class TmssTestcase:
 
     @custom_field_24.setter
     def custom_field_24(self, custom_field_24):
-        """Sets the custom_field_24 of this TmssTestcase.
+        r"""Sets the custom_field_24 of this TmssTestcase.
 
         :param custom_field_24: The custom_field_24 of this TmssTestcase.
         :type custom_field_24: str
@@ -936,7 +936,7 @@ class TmssTestcase:
 
     @property
     def custom_field_25(self):
-        """Gets the custom_field_25 of this TmssTestcase.
+        r"""Gets the custom_field_25 of this TmssTestcase.
 
         :return: The custom_field_25 of this TmssTestcase.
         :rtype: str
@@ -945,7 +945,7 @@ class TmssTestcase:
 
     @custom_field_25.setter
     def custom_field_25(self, custom_field_25):
-        """Sets the custom_field_25 of this TmssTestcase.
+        r"""Sets the custom_field_25 of this TmssTestcase.
 
         :param custom_field_25: The custom_field_25 of this TmssTestcase.
         :type custom_field_25: str
@@ -954,7 +954,7 @@ class TmssTestcase:
 
     @property
     def custom_field_3(self):
-        """Gets the custom_field_3 of this TmssTestcase.
+        r"""Gets the custom_field_3 of this TmssTestcase.
 
         :return: The custom_field_3 of this TmssTestcase.
         :rtype: str
@@ -963,7 +963,7 @@ class TmssTestcase:
 
     @custom_field_3.setter
     def custom_field_3(self, custom_field_3):
-        """Sets the custom_field_3 of this TmssTestcase.
+        r"""Sets the custom_field_3 of this TmssTestcase.
 
         :param custom_field_3: The custom_field_3 of this TmssTestcase.
         :type custom_field_3: str
@@ -972,7 +972,7 @@ class TmssTestcase:
 
     @property
     def custom_field_4(self):
-        """Gets the custom_field_4 of this TmssTestcase.
+        r"""Gets the custom_field_4 of this TmssTestcase.
 
         :return: The custom_field_4 of this TmssTestcase.
         :rtype: str
@@ -981,7 +981,7 @@ class TmssTestcase:
 
     @custom_field_4.setter
     def custom_field_4(self, custom_field_4):
-        """Sets the custom_field_4 of this TmssTestcase.
+        r"""Sets the custom_field_4 of this TmssTestcase.
 
         :param custom_field_4: The custom_field_4 of this TmssTestcase.
         :type custom_field_4: str
@@ -990,7 +990,7 @@ class TmssTestcase:
 
     @property
     def custom_field_5(self):
-        """Gets the custom_field_5 of this TmssTestcase.
+        r"""Gets the custom_field_5 of this TmssTestcase.
 
         :return: The custom_field_5 of this TmssTestcase.
         :rtype: str
@@ -999,7 +999,7 @@ class TmssTestcase:
 
     @custom_field_5.setter
     def custom_field_5(self, custom_field_5):
-        """Sets the custom_field_5 of this TmssTestcase.
+        r"""Sets the custom_field_5 of this TmssTestcase.
 
         :param custom_field_5: The custom_field_5 of this TmssTestcase.
         :type custom_field_5: str
@@ -1008,7 +1008,7 @@ class TmssTestcase:
 
     @property
     def custom_field_6(self):
-        """Gets the custom_field_6 of this TmssTestcase.
+        r"""Gets the custom_field_6 of this TmssTestcase.
 
         :return: The custom_field_6 of this TmssTestcase.
         :rtype: str
@@ -1017,7 +1017,7 @@ class TmssTestcase:
 
     @custom_field_6.setter
     def custom_field_6(self, custom_field_6):
-        """Sets the custom_field_6 of this TmssTestcase.
+        r"""Sets the custom_field_6 of this TmssTestcase.
 
         :param custom_field_6: The custom_field_6 of this TmssTestcase.
         :type custom_field_6: str
@@ -1026,7 +1026,7 @@ class TmssTestcase:
 
     @property
     def custom_field_7(self):
-        """Gets the custom_field_7 of this TmssTestcase.
+        r"""Gets the custom_field_7 of this TmssTestcase.
 
         :return: The custom_field_7 of this TmssTestcase.
         :rtype: str
@@ -1035,7 +1035,7 @@ class TmssTestcase:
 
     @custom_field_7.setter
     def custom_field_7(self, custom_field_7):
-        """Sets the custom_field_7 of this TmssTestcase.
+        r"""Sets the custom_field_7 of this TmssTestcase.
 
         :param custom_field_7: The custom_field_7 of this TmssTestcase.
         :type custom_field_7: str
@@ -1044,7 +1044,7 @@ class TmssTestcase:
 
     @property
     def custom_field_8(self):
-        """Gets the custom_field_8 of this TmssTestcase.
+        r"""Gets the custom_field_8 of this TmssTestcase.
 
         :return: The custom_field_8 of this TmssTestcase.
         :rtype: str
@@ -1053,7 +1053,7 @@ class TmssTestcase:
 
     @custom_field_8.setter
     def custom_field_8(self, custom_field_8):
-        """Sets the custom_field_8 of this TmssTestcase.
+        r"""Sets the custom_field_8 of this TmssTestcase.
 
         :param custom_field_8: The custom_field_8 of this TmssTestcase.
         :type custom_field_8: str
@@ -1062,7 +1062,7 @@ class TmssTestcase:
 
     @property
     def custom_field_9(self):
-        """Gets the custom_field_9 of this TmssTestcase.
+        r"""Gets the custom_field_9 of this TmssTestcase.
 
         :return: The custom_field_9 of this TmssTestcase.
         :rtype: str
@@ -1071,7 +1071,7 @@ class TmssTestcase:
 
     @custom_field_9.setter
     def custom_field_9(self, custom_field_9):
-        """Sets the custom_field_9 of this TmssTestcase.
+        r"""Sets the custom_field_9 of this TmssTestcase.
 
         :param custom_field_9: The custom_field_9 of this TmssTestcase.
         :type custom_field_9: str
@@ -1080,7 +1080,7 @@ class TmssTestcase:
 
     @property
     def description(self):
-        """Gets the description of this TmssTestcase.
+        r"""Gets the description of this TmssTestcase.
 
         描述
 
@@ -1091,7 +1091,7 @@ class TmssTestcase:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TmssTestcase.
+        r"""Sets the description of this TmssTestcase.
 
         描述
 
@@ -1102,7 +1102,7 @@ class TmssTestcase:
 
     @property
     def dr_relationid(self):
-        """Gets the dr_relationid of this TmssTestcase.
+        r"""Gets the dr_relationid of this TmssTestcase.
 
         dr关系ID
 
@@ -1113,7 +1113,7 @@ class TmssTestcase:
 
     @dr_relationid.setter
     def dr_relationid(self, dr_relationid):
-        """Sets the dr_relationid of this TmssTestcase.
+        r"""Sets the dr_relationid of this TmssTestcase.
 
         dr关系ID
 
@@ -1124,7 +1124,7 @@ class TmssTestcase:
 
     @property
     def env_type(self):
-        """Gets the env_type of this TmssTestcase.
+        r"""Gets the env_type of this TmssTestcase.
 
         环境类型
 
@@ -1135,7 +1135,7 @@ class TmssTestcase:
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this TmssTestcase.
+        r"""Sets the env_type of this TmssTestcase.
 
         环境类型
 
@@ -1146,7 +1146,7 @@ class TmssTestcase:
 
     @property
     def exe_platform(self):
-        """Gets the exe_platform of this TmssTestcase.
+        r"""Gets the exe_platform of this TmssTestcase.
 
         执行平台
 
@@ -1157,7 +1157,7 @@ class TmssTestcase:
 
     @exe_platform.setter
     def exe_platform(self, exe_platform):
-        """Sets the exe_platform of this TmssTestcase.
+        r"""Sets the exe_platform of this TmssTestcase.
 
         执行平台
 
@@ -1168,7 +1168,7 @@ class TmssTestcase:
 
     @property
     def expect_output(self):
-        """Gets the expect_output of this TmssTestcase.
+        r"""Gets the expect_output of this TmssTestcase.
 
         内部预期输出
 
@@ -1179,7 +1179,7 @@ class TmssTestcase:
 
     @expect_output.setter
     def expect_output(self, expect_output):
-        """Sets the expect_output of this TmssTestcase.
+        r"""Sets the expect_output of this TmssTestcase.
 
         内部预期输出
 
@@ -1190,7 +1190,7 @@ class TmssTestcase:
 
     @property
     def feature_path(self):
-        """Gets the feature_path of this TmssTestcase.
+        r"""Gets the feature_path of this TmssTestcase.
 
         特性路径
 
@@ -1201,7 +1201,7 @@ class TmssTestcase:
 
     @feature_path.setter
     def feature_path(self, feature_path):
-        """Sets the feature_path of this TmssTestcase.
+        r"""Sets the feature_path of this TmssTestcase.
 
         特性路径
 
@@ -1212,7 +1212,7 @@ class TmssTestcase:
 
     @property
     def is_key_word(self):
-        """Gets the is_key_word of this TmssTestcase.
+        r"""Gets the is_key_word of this TmssTestcase.
 
         是否为关键字
 
@@ -1223,7 +1223,7 @@ class TmssTestcase:
 
     @is_key_word.setter
     def is_key_word(self, is_key_word):
-        """Sets the is_key_word of this TmssTestcase.
+        r"""Sets the is_key_word of this TmssTestcase.
 
         是否为关键字
 
@@ -1234,7 +1234,7 @@ class TmssTestcase:
 
     @property
     def is_contract_testcase(self):
-        """Gets the is_contract_testcase of this TmssTestcase.
+        r"""Gets the is_contract_testcase of this TmssTestcase.
 
         是否为合同测试用例
 
@@ -1245,7 +1245,7 @@ class TmssTestcase:
 
     @is_contract_testcase.setter
     def is_contract_testcase(self, is_contract_testcase):
-        """Sets the is_contract_testcase of this TmssTestcase.
+        r"""Sets the is_contract_testcase of this TmssTestcase.
 
         是否为合同测试用例
 
@@ -1256,7 +1256,7 @@ class TmssTestcase:
 
     @property
     def is_para_validator_testcase(self):
-        """Gets the is_para_validator_testcase of this TmssTestcase.
+        r"""Gets the is_para_validator_testcase of this TmssTestcase.
 
         是否为参数校验测试用例
 
@@ -1267,7 +1267,7 @@ class TmssTestcase:
 
     @is_para_validator_testcase.setter
     def is_para_validator_testcase(self, is_para_validator_testcase):
-        """Sets the is_para_validator_testcase of this TmssTestcase.
+        r"""Sets the is_para_validator_testcase of this TmssTestcase.
 
         是否为参数校验测试用例
 
@@ -1278,7 +1278,7 @@ class TmssTestcase:
 
     @property
     def label_id(self):
-        """Gets the label_id of this TmssTestcase.
+        r"""Gets the label_id of this TmssTestcase.
 
         标签ID列表
 
@@ -1289,7 +1289,7 @@ class TmssTestcase:
 
     @label_id.setter
     def label_id(self, label_id):
-        """Sets the label_id of this TmssTestcase.
+        r"""Sets the label_id of this TmssTestcase.
 
         标签ID列表
 
@@ -1300,7 +1300,7 @@ class TmssTestcase:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this TmssTestcase.
+        r"""Gets the last_modified of this TmssTestcase.
 
         最后修改时间
 
@@ -1311,7 +1311,7 @@ class TmssTestcase:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this TmssTestcase.
+        r"""Sets the last_modified of this TmssTestcase.
 
         最后修改时间
 
@@ -1322,7 +1322,7 @@ class TmssTestcase:
 
     @property
     def last_modifier(self):
-        """Gets the last_modifier of this TmssTestcase.
+        r"""Gets the last_modifier of this TmssTestcase.
 
         最后修改人
 
@@ -1333,7 +1333,7 @@ class TmssTestcase:
 
     @last_modifier.setter
     def last_modifier(self, last_modifier):
-        """Sets the last_modifier of this TmssTestcase.
+        r"""Sets the last_modifier of this TmssTestcase.
 
         最后修改人
 
@@ -1344,7 +1344,7 @@ class TmssTestcase:
 
     @property
     def last_result(self):
-        """Gets the last_result of this TmssTestcase.
+        r"""Gets the last_result of this TmssTestcase.
 
         最后的结果
 
@@ -1355,7 +1355,7 @@ class TmssTestcase:
 
     @last_result.setter
     def last_result(self, last_result):
-        """Sets the last_result of this TmssTestcase.
+        r"""Sets the last_result of this TmssTestcase.
 
         最后的结果
 
@@ -1366,7 +1366,7 @@ class TmssTestcase:
 
     @property
     def level(self):
-        """Gets the level of this TmssTestcase.
+        r"""Gets the level of this TmssTestcase.
 
         用例级别
 
@@ -1377,7 +1377,7 @@ class TmssTestcase:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this TmssTestcase.
+        r"""Sets the level of this TmssTestcase.
 
         用例级别
 
@@ -1388,7 +1388,7 @@ class TmssTestcase:
 
     @property
     def market(self):
-        """Gets the market of this TmssTestcase.
+        r"""Gets the market of this TmssTestcase.
 
         市场
 
@@ -1399,7 +1399,7 @@ class TmssTestcase:
 
     @market.setter
     def market(self, market):
-        """Sets the market of this TmssTestcase.
+        r"""Sets the market of this TmssTestcase.
 
         市场
 
@@ -1410,7 +1410,7 @@ class TmssTestcase:
 
     @property
     def module_id(self):
-        """Gets the module_id of this TmssTestcase.
+        r"""Gets the module_id of this TmssTestcase.
 
         模块ID
 
@@ -1421,7 +1421,7 @@ class TmssTestcase:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this TmssTestcase.
+        r"""Sets the module_id of this TmssTestcase.
 
         模块ID
 
@@ -1432,7 +1432,7 @@ class TmssTestcase:
 
     @property
     def name(self):
-        """Gets the name of this TmssTestcase.
+        r"""Gets the name of this TmssTestcase.
 
         用例名称
 
@@ -1443,7 +1443,7 @@ class TmssTestcase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TmssTestcase.
+        r"""Sets the name of this TmssTestcase.
 
         用例名称
 
@@ -1454,7 +1454,7 @@ class TmssTestcase:
 
     @property
     def network_script_name(self):
-        """Gets the network_script_name of this TmssTestcase.
+        r"""Gets the network_script_name of this TmssTestcase.
 
         公共aw和项目的关联关系
 
@@ -1465,7 +1465,7 @@ class TmssTestcase:
 
     @network_script_name.setter
     def network_script_name(self, network_script_name):
-        """Sets the network_script_name of this TmssTestcase.
+        r"""Sets the network_script_name of this TmssTestcase.
 
         公共aw和项目的关联关系
 
@@ -1476,7 +1476,7 @@ class TmssTestcase:
 
     @property
     def node_name(self):
-        """Gets the node_name of this TmssTestcase.
+        r"""Gets the node_name of this TmssTestcase.
 
         节点名称
 
@@ -1487,7 +1487,7 @@ class TmssTestcase:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this TmssTestcase.
+        r"""Sets the node_name of this TmssTestcase.
 
         节点名称
 
@@ -1498,7 +1498,7 @@ class TmssTestcase:
 
     @property
     def number(self):
-        """Gets the number of this TmssTestcase.
+        r"""Gets the number of this TmssTestcase.
 
         用例编号
 
@@ -1509,7 +1509,7 @@ class TmssTestcase:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this TmssTestcase.
+        r"""Sets the number of this TmssTestcase.
 
         用例编号
 
@@ -1520,7 +1520,7 @@ class TmssTestcase:
 
     @property
     def origin_uri(self):
-        """Gets the origin_uri of this TmssTestcase.
+        r"""Gets the origin_uri of this TmssTestcase.
 
         原始的uri
 
@@ -1531,7 +1531,7 @@ class TmssTestcase:
 
     @origin_uri.setter
     def origin_uri(self, origin_uri):
-        """Sets the origin_uri of this TmssTestcase.
+        r"""Sets the origin_uri of this TmssTestcase.
 
         原始的uri
 
@@ -1542,7 +1542,7 @@ class TmssTestcase:
 
     @property
     def owner(self):
-        """Gets the owner of this TmssTestcase.
+        r"""Gets the owner of this TmssTestcase.
 
         测试的所有者
 
@@ -1553,7 +1553,7 @@ class TmssTestcase:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TmssTestcase.
+        r"""Sets the owner of this TmssTestcase.
 
         测试的所有者
 
@@ -1564,7 +1564,7 @@ class TmssTestcase:
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this TmssTestcase.
+        r"""Gets the owner_id of this TmssTestcase.
 
         所有者ID
 
@@ -1575,7 +1575,7 @@ class TmssTestcase:
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this TmssTestcase.
+        r"""Sets the owner_id of this TmssTestcase.
 
         所有者ID
 
@@ -1586,7 +1586,7 @@ class TmssTestcase:
 
     @property
     def preparation(self):
-        """Gets the preparation of this TmssTestcase.
+        r"""Gets the preparation of this TmssTestcase.
 
         测试前置条件
 
@@ -1597,7 +1597,7 @@ class TmssTestcase:
 
     @preparation.setter
     def preparation(self, preparation):
-        """Sets the preparation of this TmssTestcase.
+        r"""Sets the preparation of this TmssTestcase.
 
         测试前置条件
 
@@ -1608,7 +1608,7 @@ class TmssTestcase:
 
     @property
     def release_dev(self):
-        """Gets the release_dev of this TmssTestcase.
+        r"""Gets the release_dev of this TmssTestcase.
 
         新服务新建用例版本号
 
@@ -1619,7 +1619,7 @@ class TmssTestcase:
 
     @release_dev.setter
     def release_dev(self, release_dev):
-        """Sets the release_dev of this TmssTestcase.
+        r"""Sets the release_dev of this TmssTestcase.
 
         新服务新建用例版本号
 
@@ -1630,7 +1630,7 @@ class TmssTestcase:
 
     @property
     def release_id(self):
-        """Gets the release_id of this TmssTestcase.
+        r"""Gets the release_id of this TmssTestcase.
 
         发布ID
 
@@ -1641,7 +1641,7 @@ class TmssTestcase:
 
     @release_id.setter
     def release_id(self, release_id):
-        """Sets the release_id of this TmssTestcase.
+        r"""Sets the release_id of this TmssTestcase.
 
         发布ID
 
@@ -1652,7 +1652,7 @@ class TmssTestcase:
 
     @property
     def remark(self):
-        """Gets the remark of this TmssTestcase.
+        r"""Gets the remark of this TmssTestcase.
 
         备注
 
@@ -1663,7 +1663,7 @@ class TmssTestcase:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this TmssTestcase.
+        r"""Sets the remark of this TmssTestcase.
 
         备注
 
@@ -1674,7 +1674,7 @@ class TmssTestcase:
 
     @property
     def stage(self):
-        """Gets the stage of this TmssTestcase.
+        r"""Gets the stage of this TmssTestcase.
 
         阶段
 
@@ -1685,7 +1685,7 @@ class TmssTestcase:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this TmssTestcase.
+        r"""Sets the stage of this TmssTestcase.
 
         阶段
 
@@ -1696,7 +1696,7 @@ class TmssTestcase:
 
     @property
     def steps(self):
-        """Gets the steps of this TmssTestcase.
+        r"""Gets the steps of this TmssTestcase.
 
         存储测试步骤和预期结果值对象
 
@@ -1707,7 +1707,7 @@ class TmssTestcase:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this TmssTestcase.
+        r"""Sets the steps of this TmssTestcase.
 
         存储测试步骤和预期结果值对象
 
@@ -1718,7 +1718,7 @@ class TmssTestcase:
 
     @property
     def svn_script_path(self):
-        """Gets the svn_script_path of this TmssTestcase.
+        r"""Gets the svn_script_path of this TmssTestcase.
 
         脚本路径
 
@@ -1729,7 +1729,7 @@ class TmssTestcase:
 
     @svn_script_path.setter
     def svn_script_path(self, svn_script_path):
-        """Sets the svn_script_path of this TmssTestcase.
+        r"""Sets the svn_script_path of this TmssTestcase.
 
         脚本路径
 
@@ -1740,7 +1740,7 @@ class TmssTestcase:
 
     @property
     def tags(self):
-        """Gets the tags of this TmssTestcase.
+        r"""Gets the tags of this TmssTestcase.
 
         标签
 
@@ -1751,7 +1751,7 @@ class TmssTestcase:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TmssTestcase.
+        r"""Sets the tags of this TmssTestcase.
 
         标签
 
@@ -1762,7 +1762,7 @@ class TmssTestcase:
 
     @property
     def test_feature(self):
-        """Gets the test_feature of this TmssTestcase.
+        r"""Gets the test_feature of this TmssTestcase.
 
         测试特性
 
@@ -1773,7 +1773,7 @@ class TmssTestcase:
 
     @test_feature.setter
     def test_feature(self, test_feature):
-        """Sets the test_feature of this TmssTestcase.
+        r"""Sets the test_feature of this TmssTestcase.
 
         测试特性
 
@@ -1784,7 +1784,7 @@ class TmssTestcase:
 
     @property
     def test_step(self):
-        """Gets the test_step of this TmssTestcase.
+        r"""Gets the test_step of this TmssTestcase.
 
         内部测试步骤
 
@@ -1795,7 +1795,7 @@ class TmssTestcase:
 
     @test_step.setter
     def test_step(self, test_step):
-        """Sets the test_step of this TmssTestcase.
+        r"""Sets the test_step of this TmssTestcase.
 
         内部测试步骤
 
@@ -1806,7 +1806,7 @@ class TmssTestcase:
 
     @property
     def test_type(self):
-        """Gets the test_type of this TmssTestcase.
+        r"""Gets the test_type of this TmssTestcase.
 
         测试类型
 
@@ -1817,7 +1817,7 @@ class TmssTestcase:
 
     @test_type.setter
     def test_type(self, test_type):
-        """Sets the test_type of this TmssTestcase.
+        r"""Sets the test_type of this TmssTestcase.
 
         测试类型
 
@@ -1828,7 +1828,7 @@ class TmssTestcase:
 
     @property
     def uri(self):
-        """Gets the uri of this TmssTestcase.
+        r"""Gets the uri of this TmssTestcase.
 
         用例基线Uri(BAM 接口覆盖率迭代下用例信息获取用)
 
@@ -1839,7 +1839,7 @@ class TmssTestcase:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this TmssTestcase.
+        r"""Sets the uri of this TmssTestcase.
 
         用例基线Uri(BAM 接口覆盖率迭代下用例信息获取用)
 

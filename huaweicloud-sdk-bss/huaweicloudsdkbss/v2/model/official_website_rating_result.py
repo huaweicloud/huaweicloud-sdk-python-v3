@@ -33,7 +33,7 @@ class OfficialWebsiteRatingResult:
     }
 
     def __init__(self, official_website_amount=None, installment_official_website_amount=None, installment_period_type=None, measure_id=None, product_rating_results=None):
-        """OfficialWebsiteRatingResult
+        r"""OfficialWebsiteRatingResult
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def official_website_amount(self):
-        """Gets the official_website_amount of this OfficialWebsiteRatingResult.
+        r"""Gets the official_website_amount of this OfficialWebsiteRatingResult.
 
         包年/包月产品的官网价。
 
@@ -82,7 +82,7 @@ class OfficialWebsiteRatingResult:
 
     @official_website_amount.setter
     def official_website_amount(self, official_website_amount):
-        """Sets the official_website_amount of this OfficialWebsiteRatingResult.
+        r"""Sets the official_website_amount of this OfficialWebsiteRatingResult.
 
         包年/包月产品的官网价。
 
@@ -93,7 +93,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def installment_official_website_amount(self):
-        """Gets the installment_official_website_amount of this OfficialWebsiteRatingResult.
+        r"""Gets the installment_official_website_amount of this OfficialWebsiteRatingResult.
 
         分期金额的官网价。  说明： 暂只支持CloudPond产品。
 
@@ -104,7 +104,7 @@ class OfficialWebsiteRatingResult:
 
     @installment_official_website_amount.setter
     def installment_official_website_amount(self, installment_official_website_amount):
-        """Sets the installment_official_website_amount of this OfficialWebsiteRatingResult.
+        r"""Sets the installment_official_website_amount of this OfficialWebsiteRatingResult.
 
         分期金额的官网价。  说明： 暂只支持CloudPond产品。
 
@@ -115,7 +115,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def installment_period_type(self):
-        """Gets the installment_period_type of this OfficialWebsiteRatingResult.
+        r"""Gets the installment_period_type of this OfficialWebsiteRatingResult.
 
         分期付款的周期类型。 2：月 3：年  说明： 暂只支持CloudPond产品。
 
@@ -126,7 +126,7 @@ class OfficialWebsiteRatingResult:
 
     @installment_period_type.setter
     def installment_period_type(self, installment_period_type):
-        """Sets the installment_period_type of this OfficialWebsiteRatingResult.
+        r"""Sets the installment_period_type of this OfficialWebsiteRatingResult.
 
         分期付款的周期类型。 2：月 3：年  说明： 暂只支持CloudPond产品。
 
@@ -137,7 +137,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this OfficialWebsiteRatingResult.
+        r"""Gets the measure_id of this OfficialWebsiteRatingResult.
 
         价格度量单位标识。 1：元
 
@@ -148,7 +148,7 @@ class OfficialWebsiteRatingResult:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this OfficialWebsiteRatingResult.
+        r"""Sets the measure_id of this OfficialWebsiteRatingResult.
 
         价格度量单位标识。 1：元
 
@@ -159,7 +159,7 @@ class OfficialWebsiteRatingResult:
 
     @property
     def product_rating_results(self):
-        """Gets the product_rating_results of this OfficialWebsiteRatingResult.
+        r"""Gets the product_rating_results of this OfficialWebsiteRatingResult.
 
         产品询价结果，具体参见表5。
 
@@ -170,7 +170,7 @@ class OfficialWebsiteRatingResult:
 
     @product_rating_results.setter
     def product_rating_results(self, product_rating_results):
-        """Sets the product_rating_results of this OfficialWebsiteRatingResult.
+        r"""Sets the product_rating_results of this OfficialWebsiteRatingResult.
 
         产品询价结果，具体参见表5。
 

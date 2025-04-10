@@ -35,7 +35,7 @@ class ShowNameSpaceListRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None, type=None, is_used=None, enterprise_project_id=None):
-        """ShowNameSpaceListRequest
+        r"""ShowNameSpaceListRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ShowNameSpaceListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowNameSpaceListRequest.
+        r"""Gets the offset of this ShowNameSpaceListRequest.
 
         偏移量
 
@@ -89,7 +89,7 @@ class ShowNameSpaceListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowNameSpaceListRequest.
+        r"""Sets the offset of this ShowNameSpaceListRequest.
 
         偏移量
 
@@ -100,7 +100,7 @@ class ShowNameSpaceListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowNameSpaceListRequest.
+        r"""Gets the limit of this ShowNameSpaceListRequest.
 
         每页显示的条目数量
 
@@ -111,7 +111,7 @@ class ShowNameSpaceListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowNameSpaceListRequest.
+        r"""Sets the limit of this ShowNameSpaceListRequest.
 
         每页显示的条目数量
 
@@ -122,7 +122,7 @@ class ShowNameSpaceListRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowNameSpaceListRequest.
+        r"""Gets the name of this ShowNameSpaceListRequest.
 
         命名空间名称
 
@@ -133,7 +133,7 @@ class ShowNameSpaceListRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowNameSpaceListRequest.
+        r"""Sets the name of this ShowNameSpaceListRequest.
 
         命名空间名称
 
@@ -144,7 +144,7 @@ class ShowNameSpaceListRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowNameSpaceListRequest.
+        r"""Gets the type of this ShowNameSpaceListRequest.
 
         多活类型，1：同城多活，2：异地多活
 
@@ -155,7 +155,7 @@ class ShowNameSpaceListRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowNameSpaceListRequest.
+        r"""Sets the type of this ShowNameSpaceListRequest.
 
         多活类型，1：同城多活，2：异地多活
 
@@ -166,7 +166,7 @@ class ShowNameSpaceListRequest:
 
     @property
     def is_used(self):
-        """Gets the is_used of this ShowNameSpaceListRequest.
+        r"""Gets the is_used of this ShowNameSpaceListRequest.
 
         是否已被使用   true  ：是   false  ：否
 
@@ -177,7 +177,7 @@ class ShowNameSpaceListRequest:
 
     @is_used.setter
     def is_used(self, is_used):
-        """Sets the is_used of this ShowNameSpaceListRequest.
+        r"""Sets the is_used of this ShowNameSpaceListRequest.
 
         是否已被使用   true  ：是   false  ：否
 
@@ -188,7 +188,7 @@ class ShowNameSpaceListRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowNameSpaceListRequest.
+        r"""Gets the enterprise_project_id of this ShowNameSpaceListRequest.
 
         企业项目ID
 
@@ -199,7 +199,7 @@ class ShowNameSpaceListRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowNameSpaceListRequest.
+        r"""Sets the enterprise_project_id of this ShowNameSpaceListRequest.
 
         企业项目ID
 

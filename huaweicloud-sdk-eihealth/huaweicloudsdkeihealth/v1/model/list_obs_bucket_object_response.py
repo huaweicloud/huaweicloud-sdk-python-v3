@@ -28,7 +28,7 @@ class ListObsBucketObjectResponse(SdkResponse):
     }
 
     def __init__(self, count=None, objects=None):
-        """ListObsBucketObjectResponse
+        r"""ListObsBucketObjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListObsBucketObjectResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListObsBucketObjectResponse.
+        r"""Gets the count of this ListObsBucketObjectResponse.
 
         数据（文件夹、文件）总数量
 
@@ -62,7 +62,7 @@ class ListObsBucketObjectResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListObsBucketObjectResponse.
+        r"""Sets the count of this ListObsBucketObjectResponse.
 
         数据（文件夹、文件）总数量
 
@@ -73,7 +73,7 @@ class ListObsBucketObjectResponse(SdkResponse):
 
     @property
     def objects(self):
-        """Gets the objects of this ListObsBucketObjectResponse.
+        r"""Gets the objects of this ListObsBucketObjectResponse.
 
         数据列表
 
@@ -84,7 +84,7 @@ class ListObsBucketObjectResponse(SdkResponse):
 
     @objects.setter
     def objects(self, objects):
-        """Sets the objects of this ListObsBucketObjectResponse.
+        r"""Sets the objects of this ListObsBucketObjectResponse.
 
         数据列表
 

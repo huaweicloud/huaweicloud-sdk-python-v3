@@ -30,7 +30,7 @@ class ListHealthMonitorsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, healthmonitors=None):
-        """ListHealthMonitorsResponse
+        r"""ListHealthMonitorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListHealthMonitorsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListHealthMonitorsResponse.
+        r"""Gets the request_id of this ListHealthMonitorsResponse.
 
         请求ID。  注：自动生成 。
 
@@ -69,7 +69,7 @@ class ListHealthMonitorsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListHealthMonitorsResponse.
+        r"""Sets the request_id of this ListHealthMonitorsResponse.
 
         请求ID。  注：自动生成 。
 
@@ -80,7 +80,7 @@ class ListHealthMonitorsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListHealthMonitorsResponse.
+        r"""Gets the page_info of this ListHealthMonitorsResponse.
 
         :return: The page_info of this ListHealthMonitorsResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListHealthMonitorsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListHealthMonitorsResponse.
+        r"""Sets the page_info of this ListHealthMonitorsResponse.
 
         :param page_info: The page_info of this ListHealthMonitorsResponse.
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListHealthMonitorsResponse(SdkResponse):
 
     @property
     def healthmonitors(self):
-        """Gets the healthmonitors of this ListHealthMonitorsResponse.
+        r"""Gets the healthmonitors of this ListHealthMonitorsResponse.
 
         健康检查对象。
 
@@ -109,7 +109,7 @@ class ListHealthMonitorsResponse(SdkResponse):
 
     @healthmonitors.setter
     def healthmonitors(self, healthmonitors):
-        """Sets the healthmonitors of this ListHealthMonitorsResponse.
+        r"""Sets the healthmonitors of this ListHealthMonitorsResponse.
 
         健康检查对象。
 

@@ -25,7 +25,7 @@ class BatchDeletePersistentStorageRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeletePersistentStorageRequest
+        r"""BatchDeletePersistentStorageRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeletePersistentStorageRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeletePersistentStorageRequest.
+        r"""Gets the body of this BatchDeletePersistentStorageRequest.
 
         :return: The body of this BatchDeletePersistentStorageRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeletePersistentStorageReq`
@@ -52,7 +52,7 @@ class BatchDeletePersistentStorageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeletePersistentStorageRequest.
+        r"""Sets the body of this BatchDeletePersistentStorageRequest.
 
         :param body: The body of this BatchDeletePersistentStorageRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeletePersistentStorageReq`

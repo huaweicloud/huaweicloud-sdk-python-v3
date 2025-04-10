@@ -31,7 +31,7 @@ class InstanceRequest:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None):
-        """InstanceRequest
+        r"""InstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class InstanceRequest:
 
     @property
     def kind(self):
-        """Gets the kind of this InstanceRequest.
+        r"""Gets the kind of this InstanceRequest.
 
         API类型，固定值“Addon”，该值不可修改，该字段传入无效。
 
@@ -71,7 +71,7 @@ class InstanceRequest:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this InstanceRequest.
+        r"""Sets the kind of this InstanceRequest.
 
         API类型，固定值“Addon”，该值不可修改，该字段传入无效。
 
@@ -82,7 +82,7 @@ class InstanceRequest:
 
     @property
     def api_version(self):
-        """Gets the api_version of this InstanceRequest.
+        r"""Gets the api_version of this InstanceRequest.
 
         API版本，固定值“v3”，该值不可修改，该字段传入无效。
 
@@ -93,7 +93,7 @@ class InstanceRequest:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this InstanceRequest.
+        r"""Sets the api_version of this InstanceRequest.
 
         API版本，固定值“v3”，该值不可修改，该字段传入无效。
 
@@ -104,7 +104,7 @@ class InstanceRequest:
 
     @property
     def metadata(self):
-        """Gets the metadata of this InstanceRequest.
+        r"""Gets the metadata of this InstanceRequest.
 
         :return: The metadata of this InstanceRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.AddonMetadata`
@@ -113,7 +113,7 @@ class InstanceRequest:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this InstanceRequest.
+        r"""Sets the metadata of this InstanceRequest.
 
         :param metadata: The metadata of this InstanceRequest.
         :type metadata: :class:`huaweicloudsdkcce.v3.AddonMetadata`
@@ -122,7 +122,7 @@ class InstanceRequest:
 
     @property
     def spec(self):
-        """Gets the spec of this InstanceRequest.
+        r"""Gets the spec of this InstanceRequest.
 
         :return: The spec of this InstanceRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.InstanceRequestSpec`
@@ -131,7 +131,7 @@ class InstanceRequest:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this InstanceRequest.
+        r"""Sets the spec of this InstanceRequest.
 
         :param spec: The spec of this InstanceRequest.
         :type spec: :class:`huaweicloudsdkcce.v3.InstanceRequestSpec`

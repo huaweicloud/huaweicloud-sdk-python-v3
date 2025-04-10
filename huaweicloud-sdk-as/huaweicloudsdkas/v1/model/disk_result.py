@@ -41,7 +41,7 @@ class DiskResult:
     }
 
     def __init__(self, size=None, volume_type=None, disk_type=None, dedicated_storage_id=None, data_disk_image_id=None, snapshot_id=None, metadata=None, iops=None, throughput=None):
-        """DiskResult
+        r"""DiskResult
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class DiskResult:
 
     @property
     def size(self):
-        """Gets the size of this DiskResult.
+        r"""Gets the size of this DiskResult.
 
         磁盘大小，容量单位为GB。
 
@@ -110,7 +110,7 @@ class DiskResult:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this DiskResult.
+        r"""Sets the size of this DiskResult.
 
         磁盘大小，容量单位为GB。
 
@@ -121,7 +121,7 @@ class DiskResult:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this DiskResult.
+        r"""Gets the volume_type of this DiskResult.
 
         磁盘类型。
 
@@ -132,7 +132,7 @@ class DiskResult:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this DiskResult.
+        r"""Sets the volume_type of this DiskResult.
 
         磁盘类型。
 
@@ -143,7 +143,7 @@ class DiskResult:
 
     @property
     def disk_type(self):
-        """Gets the disk_type of this DiskResult.
+        r"""Gets the disk_type of this DiskResult.
 
         系统盘还是数据盘，DATA表示为数据盘，SYS表示为系统盘。
 
@@ -154,7 +154,7 @@ class DiskResult:
 
     @disk_type.setter
     def disk_type(self, disk_type):
-        """Sets the disk_type of this DiskResult.
+        r"""Sets the disk_type of this DiskResult.
 
         系统盘还是数据盘，DATA表示为数据盘，SYS表示为系统盘。
 
@@ -165,7 +165,7 @@ class DiskResult:
 
     @property
     def dedicated_storage_id(self):
-        """Gets the dedicated_storage_id of this DiskResult.
+        r"""Gets the dedicated_storage_id of this DiskResult.
 
         磁盘所属的专属存储ID。
 
@@ -176,7 +176,7 @@ class DiskResult:
 
     @dedicated_storage_id.setter
     def dedicated_storage_id(self, dedicated_storage_id):
-        """Sets the dedicated_storage_id of this DiskResult.
+        r"""Sets the dedicated_storage_id of this DiskResult.
 
         磁盘所属的专属存储ID。
 
@@ -187,7 +187,7 @@ class DiskResult:
 
     @property
     def data_disk_image_id(self):
-        """Gets the data_disk_image_id of this DiskResult.
+        r"""Gets the data_disk_image_id of this DiskResult.
 
         导入数据盘的数据盘镜像ID。
 
@@ -198,7 +198,7 @@ class DiskResult:
 
     @data_disk_image_id.setter
     def data_disk_image_id(self, data_disk_image_id):
-        """Sets the data_disk_image_id of this DiskResult.
+        r"""Sets the data_disk_image_id of this DiskResult.
 
         导入数据盘的数据盘镜像ID。
 
@@ -209,7 +209,7 @@ class DiskResult:
 
     @property
     def snapshot_id(self):
-        """Gets the snapshot_id of this DiskResult.
+        r"""Gets the snapshot_id of this DiskResult.
 
         磁盘备份的快照ID。
 
@@ -220,7 +220,7 @@ class DiskResult:
 
     @snapshot_id.setter
     def snapshot_id(self, snapshot_id):
-        """Sets the snapshot_id of this DiskResult.
+        r"""Sets the snapshot_id of this DiskResult.
 
         磁盘备份的快照ID。
 
@@ -231,7 +231,7 @@ class DiskResult:
 
     @property
     def metadata(self):
-        """Gets the metadata of this DiskResult.
+        r"""Gets the metadata of this DiskResult.
 
         :return: The metadata of this DiskResult.
         :rtype: :class:`huaweicloudsdkas.v1.MetaData`
@@ -240,7 +240,7 @@ class DiskResult:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this DiskResult.
+        r"""Sets the metadata of this DiskResult.
 
         :param metadata: The metadata of this DiskResult.
         :type metadata: :class:`huaweicloudsdkas.v1.MetaData`
@@ -249,7 +249,7 @@ class DiskResult:
 
     @property
     def iops(self):
-        """Gets the iops of this DiskResult.
+        r"""Gets the iops of this DiskResult.
 
         云硬盘iops
 
@@ -260,7 +260,7 @@ class DiskResult:
 
     @iops.setter
     def iops(self, iops):
-        """Sets the iops of this DiskResult.
+        r"""Sets the iops of this DiskResult.
 
         云硬盘iops
 
@@ -271,7 +271,7 @@ class DiskResult:
 
     @property
     def throughput(self):
-        """Gets the throughput of this DiskResult.
+        r"""Gets the throughput of this DiskResult.
 
         云硬盘吞吐量
 
@@ -282,7 +282,7 @@ class DiskResult:
 
     @throughput.setter
     def throughput(self, throughput):
-        """Sets the throughput of this DiskResult.
+        r"""Sets the throughput of this DiskResult.
 
         云硬盘吞吐量
 

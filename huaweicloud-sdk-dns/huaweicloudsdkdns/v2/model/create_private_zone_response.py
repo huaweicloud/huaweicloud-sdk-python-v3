@@ -58,7 +58,7 @@ class CreatePrivateZoneResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, proxy_pattern=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, masters=None, router=None):
-        """CreatePrivateZoneResponse
+        r"""CreatePrivateZoneResponse
 
         The model defined in huaweicloud sdk
 
@@ -156,7 +156,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreatePrivateZoneResponse.
+        r"""Gets the id of this CreatePrivateZoneResponse.
 
         zone的ID，uuid形式的一个资源标识。
 
@@ -167,7 +167,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreatePrivateZoneResponse.
+        r"""Sets the id of this CreatePrivateZoneResponse.
 
         zone的ID，uuid形式的一个资源标识。
 
@@ -178,7 +178,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreatePrivateZoneResponse.
+        r"""Gets the name of this CreatePrivateZoneResponse.
 
         zone名称。
 
@@ -189,7 +189,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePrivateZoneResponse.
+        r"""Sets the name of this CreatePrivateZoneResponse.
 
         zone名称。
 
@@ -200,7 +200,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreatePrivateZoneResponse.
+        r"""Gets the description of this CreatePrivateZoneResponse.
 
         对zone的描述信息。
 
@@ -211,7 +211,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePrivateZoneResponse.
+        r"""Sets the description of this CreatePrivateZoneResponse.
 
         对zone的描述信息。
 
@@ -222,7 +222,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def email(self):
-        """Gets the email of this CreatePrivateZoneResponse.
+        r"""Gets the email of this CreatePrivateZoneResponse.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -233,7 +233,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @email.setter
     def email(self, email):
-        """Sets the email of this CreatePrivateZoneResponse.
+        r"""Sets the email of this CreatePrivateZoneResponse.
 
         管理该zone的管理员邮箱，用于生成该Zone的SOA记录。
 
@@ -244,7 +244,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def zone_type(self):
-        """Gets the zone_type of this CreatePrivateZoneResponse.
+        r"""Gets the zone_type of this CreatePrivateZoneResponse.
 
         zone类型，内网（private）。
 
@@ -255,7 +255,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @zone_type.setter
     def zone_type(self, zone_type):
-        """Sets the zone_type of this CreatePrivateZoneResponse.
+        r"""Sets the zone_type of this CreatePrivateZoneResponse.
 
         zone类型，内网（private）。
 
@@ -266,7 +266,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def ttl(self):
-        """Gets the ttl of this CreatePrivateZoneResponse.
+        r"""Gets the ttl of this CreatePrivateZoneResponse.
 
         该zone下SOA记录中的ttl值。
 
@@ -277,7 +277,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this CreatePrivateZoneResponse.
+        r"""Sets the ttl of this CreatePrivateZoneResponse.
 
         该zone下SOA记录中的ttl值。
 
@@ -288,7 +288,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def serial(self):
-        """Gets the serial of this CreatePrivateZoneResponse.
+        r"""Gets the serial of this CreatePrivateZoneResponse.
 
         该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。  该参数暂未使用。
 
@@ -299,7 +299,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @serial.setter
     def serial(self, serial):
-        """Sets the serial of this CreatePrivateZoneResponse.
+        r"""Sets the serial of this CreatePrivateZoneResponse.
 
         该zone下SOA记录中用于标识zone文件变更的序列值，用于主从节点同步。  该参数暂未使用。
 
@@ -310,7 +310,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreatePrivateZoneResponse.
+        r"""Gets the status of this CreatePrivateZoneResponse.
 
         资源状态。
 
@@ -321,7 +321,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreatePrivateZoneResponse.
+        r"""Sets the status of this CreatePrivateZoneResponse.
 
         资源状态。
 
@@ -332,7 +332,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def record_num(self):
-        """Gets the record_num of this CreatePrivateZoneResponse.
+        r"""Gets the record_num of this CreatePrivateZoneResponse.
 
         该zone下的recordset个数。
 
@@ -343,7 +343,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @record_num.setter
     def record_num(self, record_num):
-        """Sets the record_num of this CreatePrivateZoneResponse.
+        r"""Sets the record_num of this CreatePrivateZoneResponse.
 
         该zone下的recordset个数。
 
@@ -354,7 +354,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def proxy_pattern(self):
-        """Gets the proxy_pattern of this CreatePrivateZoneResponse.
+        r"""Gets the proxy_pattern of this CreatePrivateZoneResponse.
 
         内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
 
@@ -365,7 +365,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @proxy_pattern.setter
     def proxy_pattern(self, proxy_pattern):
-        """Sets the proxy_pattern of this CreatePrivateZoneResponse.
+        r"""Sets the proxy_pattern of this CreatePrivateZoneResponse.
 
         内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone未开启递归解析代理 RECURSIVE：当前Zone已开启递归解析代理
 
@@ -376,7 +376,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this CreatePrivateZoneResponse.
+        r"""Gets the pool_id of this CreatePrivateZoneResponse.
 
         托管该zone的pool，由系统分配。
 
@@ -387,7 +387,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this CreatePrivateZoneResponse.
+        r"""Sets the pool_id of this CreatePrivateZoneResponse.
 
         托管该zone的pool，由系统分配。
 
@@ -398,7 +398,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreatePrivateZoneResponse.
+        r"""Gets the project_id of this CreatePrivateZoneResponse.
 
         zone所属的项目ID。
 
@@ -409,7 +409,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreatePrivateZoneResponse.
+        r"""Sets the project_id of this CreatePrivateZoneResponse.
 
         zone所属的项目ID。
 
@@ -420,7 +420,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreatePrivateZoneResponse.
+        r"""Gets the created_at of this CreatePrivateZoneResponse.
 
         创建时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -431,7 +431,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreatePrivateZoneResponse.
+        r"""Sets the created_at of this CreatePrivateZoneResponse.
 
         创建时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -442,7 +442,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CreatePrivateZoneResponse.
+        r"""Gets the updated_at of this CreatePrivateZoneResponse.
 
         更新时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -453,7 +453,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CreatePrivateZoneResponse.
+        r"""Sets the updated_at of this CreatePrivateZoneResponse.
 
         更新时间。  采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -464,7 +464,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this CreatePrivateZoneResponse.
+        r"""Gets the links of this CreatePrivateZoneResponse.
 
         :return: The links of this CreatePrivateZoneResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -473,7 +473,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this CreatePrivateZoneResponse.
+        r"""Sets the links of this CreatePrivateZoneResponse.
 
         :param links: The links of this CreatePrivateZoneResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -482,7 +482,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def masters(self):
-        """Gets the masters of this CreatePrivateZoneResponse.
+        r"""Gets the masters of this CreatePrivateZoneResponse.
 
         主从模式中，从DNS服务器获取DNS信息。
 
@@ -493,7 +493,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @masters.setter
     def masters(self, masters):
-        """Sets the masters of this CreatePrivateZoneResponse.
+        r"""Sets the masters of this CreatePrivateZoneResponse.
 
         主从模式中，从DNS服务器获取DNS信息。
 
@@ -504,7 +504,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @property
     def router(self):
-        """Gets the router of this CreatePrivateZoneResponse.
+        r"""Gets the router of this CreatePrivateZoneResponse.
 
         :return: The router of this CreatePrivateZoneResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.RouterWithStatus`
@@ -513,7 +513,7 @@ class CreatePrivateZoneResponse(SdkResponse):
 
     @router.setter
     def router(self, router):
-        """Sets the router of this CreatePrivateZoneResponse.
+        r"""Sets the router of this CreatePrivateZoneResponse.
 
         :param router: The router of this CreatePrivateZoneResponse.
         :type router: :class:`huaweicloudsdkdns.v2.RouterWithStatus`

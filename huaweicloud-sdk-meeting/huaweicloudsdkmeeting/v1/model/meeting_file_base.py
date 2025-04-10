@@ -45,7 +45,7 @@ class MeetingFileBase:
     }
 
     def __init__(self, file_code=None, topic=None, file_id=None, file_name=None, file_size=None, thumbnail_file_id=None, thumbnail_file_name=None, thumbnail_file_size=None, pdf_file_id=None, pdf_file_name=None, pdf_file_size=None):
-        """MeetingFileBase
+        r"""MeetingFileBase
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class MeetingFileBase:
 
     @property
     def file_code(self):
-        """Gets the file_code of this MeetingFileBase.
+        r"""Gets the file_code of this MeetingFileBase.
 
         会议纪要文件码。
 
@@ -124,7 +124,7 @@ class MeetingFileBase:
 
     @file_code.setter
     def file_code(self, file_code):
-        """Sets the file_code of this MeetingFileBase.
+        r"""Sets the file_code of this MeetingFileBase.
 
         会议纪要文件码。
 
@@ -135,7 +135,7 @@ class MeetingFileBase:
 
     @property
     def topic(self):
-        """Gets the topic of this MeetingFileBase.
+        r"""Gets the topic of this MeetingFileBase.
 
         文件主题。
 
@@ -146,7 +146,7 @@ class MeetingFileBase:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this MeetingFileBase.
+        r"""Sets the topic of this MeetingFileBase.
 
         文件主题。
 
@@ -157,7 +157,7 @@ class MeetingFileBase:
 
     @property
     def file_id(self):
-        """Gets the file_id of this MeetingFileBase.
+        r"""Gets the file_id of this MeetingFileBase.
 
         文件Id。
 
@@ -168,7 +168,7 @@ class MeetingFileBase:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this MeetingFileBase.
+        r"""Sets the file_id of this MeetingFileBase.
 
         文件Id。
 
@@ -179,7 +179,7 @@ class MeetingFileBase:
 
     @property
     def file_name(self):
-        """Gets the file_name of this MeetingFileBase.
+        r"""Gets the file_name of this MeetingFileBase.
 
         文件名。
 
@@ -190,7 +190,7 @@ class MeetingFileBase:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this MeetingFileBase.
+        r"""Sets the file_name of this MeetingFileBase.
 
         文件名。
 
@@ -201,7 +201,7 @@ class MeetingFileBase:
 
     @property
     def file_size(self):
-        """Gets the file_size of this MeetingFileBase.
+        r"""Gets the file_size of this MeetingFileBase.
 
         文件大小，单位字节。
 
@@ -212,7 +212,7 @@ class MeetingFileBase:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this MeetingFileBase.
+        r"""Sets the file_size of this MeetingFileBase.
 
         文件大小，单位字节。
 
@@ -223,7 +223,7 @@ class MeetingFileBase:
 
     @property
     def thumbnail_file_id(self):
-        """Gets the thumbnail_file_id of this MeetingFileBase.
+        r"""Gets the thumbnail_file_id of this MeetingFileBase.
 
         缩略图文件Id。
 
@@ -234,7 +234,7 @@ class MeetingFileBase:
 
     @thumbnail_file_id.setter
     def thumbnail_file_id(self, thumbnail_file_id):
-        """Sets the thumbnail_file_id of this MeetingFileBase.
+        r"""Sets the thumbnail_file_id of this MeetingFileBase.
 
         缩略图文件Id。
 
@@ -245,7 +245,7 @@ class MeetingFileBase:
 
     @property
     def thumbnail_file_name(self):
-        """Gets the thumbnail_file_name of this MeetingFileBase.
+        r"""Gets the thumbnail_file_name of this MeetingFileBase.
 
         缩略图文件名。
 
@@ -256,7 +256,7 @@ class MeetingFileBase:
 
     @thumbnail_file_name.setter
     def thumbnail_file_name(self, thumbnail_file_name):
-        """Sets the thumbnail_file_name of this MeetingFileBase.
+        r"""Sets the thumbnail_file_name of this MeetingFileBase.
 
         缩略图文件名。
 
@@ -267,7 +267,7 @@ class MeetingFileBase:
 
     @property
     def thumbnail_file_size(self):
-        """Gets the thumbnail_file_size of this MeetingFileBase.
+        r"""Gets the thumbnail_file_size of this MeetingFileBase.
 
         缩略图文件大小，单位字节。
 
@@ -278,7 +278,7 @@ class MeetingFileBase:
 
     @thumbnail_file_size.setter
     def thumbnail_file_size(self, thumbnail_file_size):
-        """Sets the thumbnail_file_size of this MeetingFileBase.
+        r"""Sets the thumbnail_file_size of this MeetingFileBase.
 
         缩略图文件大小，单位字节。
 
@@ -289,7 +289,7 @@ class MeetingFileBase:
 
     @property
     def pdf_file_id(self):
-        """Gets the pdf_file_id of this MeetingFileBase.
+        r"""Gets the pdf_file_id of this MeetingFileBase.
 
         pdf文件Id。
 
@@ -300,7 +300,7 @@ class MeetingFileBase:
 
     @pdf_file_id.setter
     def pdf_file_id(self, pdf_file_id):
-        """Sets the pdf_file_id of this MeetingFileBase.
+        r"""Sets the pdf_file_id of this MeetingFileBase.
 
         pdf文件Id。
 
@@ -311,7 +311,7 @@ class MeetingFileBase:
 
     @property
     def pdf_file_name(self):
-        """Gets the pdf_file_name of this MeetingFileBase.
+        r"""Gets the pdf_file_name of this MeetingFileBase.
 
         pdf文件名。
 
@@ -322,7 +322,7 @@ class MeetingFileBase:
 
     @pdf_file_name.setter
     def pdf_file_name(self, pdf_file_name):
-        """Sets the pdf_file_name of this MeetingFileBase.
+        r"""Sets the pdf_file_name of this MeetingFileBase.
 
         pdf文件名。
 
@@ -333,7 +333,7 @@ class MeetingFileBase:
 
     @property
     def pdf_file_size(self):
-        """Gets the pdf_file_size of this MeetingFileBase.
+        r"""Gets the pdf_file_size of this MeetingFileBase.
 
         pdf文件大小，单位字节。
 
@@ -344,7 +344,7 @@ class MeetingFileBase:
 
     @pdf_file_size.setter
     def pdf_file_size(self, pdf_file_size):
-        """Sets the pdf_file_size of this MeetingFileBase.
+        r"""Sets the pdf_file_size of this MeetingFileBase.
 
         pdf文件大小，单位字节。
 

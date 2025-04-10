@@ -32,7 +32,7 @@ class CreateParametersForImportResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, import_token=None, expiration_time=None, public_key=None):
-        """CreateParametersForImportResponse
+        r"""CreateParametersForImportResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateParametersForImportResponse(SdkResponse):
 
     @property
     def key_id(self):
-        """Gets the key_id of this CreateParametersForImportResponse.
+        r"""Gets the key_id of this CreateParametersForImportResponse.
 
         密钥ID。
 
@@ -76,7 +76,7 @@ class CreateParametersForImportResponse(SdkResponse):
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this CreateParametersForImportResponse.
+        r"""Sets the key_id of this CreateParametersForImportResponse.
 
         密钥ID。
 
@@ -87,7 +87,7 @@ class CreateParametersForImportResponse(SdkResponse):
 
     @property
     def import_token(self):
-        """Gets the import_token of this CreateParametersForImportResponse.
+        r"""Gets the import_token of this CreateParametersForImportResponse.
 
         密钥导入令牌。
 
@@ -98,7 +98,7 @@ class CreateParametersForImportResponse(SdkResponse):
 
     @import_token.setter
     def import_token(self, import_token):
-        """Sets the import_token of this CreateParametersForImportResponse.
+        r"""Sets the import_token of this CreateParametersForImportResponse.
 
         密钥导入令牌。
 
@@ -109,7 +109,7 @@ class CreateParametersForImportResponse(SdkResponse):
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this CreateParametersForImportResponse.
+        r"""Gets the expiration_time of this CreateParametersForImportResponse.
 
         导入参数到期时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -120,7 +120,7 @@ class CreateParametersForImportResponse(SdkResponse):
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this CreateParametersForImportResponse.
+        r"""Sets the expiration_time of this CreateParametersForImportResponse.
 
         导入参数到期时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -131,7 +131,7 @@ class CreateParametersForImportResponse(SdkResponse):
 
     @property
     def public_key(self):
-        """Gets the public_key of this CreateParametersForImportResponse.
+        r"""Gets the public_key of this CreateParametersForImportResponse.
 
         加密密钥材料的公钥，base64格式。
 
@@ -142,7 +142,7 @@ class CreateParametersForImportResponse(SdkResponse):
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this CreateParametersForImportResponse.
+        r"""Sets the public_key of this CreateParametersForImportResponse.
 
         加密密钥材料的公钥，base64格式。
 

@@ -25,7 +25,7 @@ class ShowTraceEventsRequest:
     }
 
     def __init__(self, trace_id=None):
-        """ShowTraceEventsRequest
+        r"""ShowTraceEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowTraceEventsRequest:
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this ShowTraceEventsRequest.
+        r"""Gets the trace_id of this ShowTraceEventsRequest.
 
         调用链ID。
 
@@ -53,7 +53,7 @@ class ShowTraceEventsRequest:
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this ShowTraceEventsRequest.
+        r"""Sets the trace_id of this ShowTraceEventsRequest.
 
         调用链ID。
 

@@ -37,7 +37,7 @@ class PostgresqlHbaConf:
     }
 
     def __init__(self, type=None, database=None, user=None, address=None, mask=None, method=None, priority=None):
-        """PostgresqlHbaConf
+        r"""PostgresqlHbaConf
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class PostgresqlHbaConf:
 
     @property
     def type(self):
-        """Gets the type of this PostgresqlHbaConf.
+        r"""Gets the type of this PostgresqlHbaConf.
 
         连接类型，枚举，host、hostssl、hostnossl
 
@@ -90,7 +90,7 @@ class PostgresqlHbaConf:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PostgresqlHbaConf.
+        r"""Sets the type of this PostgresqlHbaConf.
 
         连接类型，枚举，host、hostssl、hostnossl
 
@@ -101,7 +101,7 @@ class PostgresqlHbaConf:
 
     @property
     def database(self):
-        """Gets the database of this PostgresqlHbaConf.
+        r"""Gets the database of this PostgresqlHbaConf.
 
         数据库名，除template0，template1的数据库名，多个以逗号隔开
 
@@ -112,7 +112,7 @@ class PostgresqlHbaConf:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this PostgresqlHbaConf.
+        r"""Sets the database of this PostgresqlHbaConf.
 
         数据库名，除template0，template1的数据库名，多个以逗号隔开
 
@@ -123,7 +123,7 @@ class PostgresqlHbaConf:
 
     @property
     def user(self):
-        """Gets the user of this PostgresqlHbaConf.
+        r"""Gets the user of this PostgresqlHbaConf.
 
         用户名，all，除内置用户（rdsAdmin, rdsMetric, rdsBackup, rdsRepl, rdsProxy）以外，多个以逗号隔开
 
@@ -134,7 +134,7 @@ class PostgresqlHbaConf:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this PostgresqlHbaConf.
+        r"""Sets the user of this PostgresqlHbaConf.
 
         用户名，all，除内置用户（rdsAdmin, rdsMetric, rdsBackup, rdsRepl, rdsProxy）以外，多个以逗号隔开
 
@@ -145,7 +145,7 @@ class PostgresqlHbaConf:
 
     @property
     def address(self):
-        """Gets the address of this PostgresqlHbaConf.
+        r"""Gets the address of this PostgresqlHbaConf.
 
         客户端IP地址。0.0.0.0/0表示允许用户从任意IP地址访问数据库
 
@@ -156,7 +156,7 @@ class PostgresqlHbaConf:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this PostgresqlHbaConf.
+        r"""Sets the address of this PostgresqlHbaConf.
 
         客户端IP地址。0.0.0.0/0表示允许用户从任意IP地址访问数据库
 
@@ -167,7 +167,7 @@ class PostgresqlHbaConf:
 
     @property
     def mask(self):
-        """Gets the mask of this PostgresqlHbaConf.
+        r"""Gets the mask of this PostgresqlHbaConf.
 
         掩码，默认为空字符串
 
@@ -178,7 +178,7 @@ class PostgresqlHbaConf:
 
     @mask.setter
     def mask(self, mask):
-        """Sets the mask of this PostgresqlHbaConf.
+        r"""Sets the mask of this PostgresqlHbaConf.
 
         掩码，默认为空字符串
 
@@ -189,7 +189,7 @@ class PostgresqlHbaConf:
 
     @property
     def method(self):
-        """Gets the method of this PostgresqlHbaConf.
+        r"""Gets the method of this PostgresqlHbaConf.
 
         认证方式。枚举：reject、md5、scram-sha-256
 
@@ -200,7 +200,7 @@ class PostgresqlHbaConf:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this PostgresqlHbaConf.
+        r"""Sets the method of this PostgresqlHbaConf.
 
         认证方式。枚举：reject、md5、scram-sha-256
 
@@ -211,7 +211,7 @@ class PostgresqlHbaConf:
 
     @property
     def priority(self):
-        """Gets the priority of this PostgresqlHbaConf.
+        r"""Gets the priority of this PostgresqlHbaConf.
 
         优先级，表示配置的先后
 
@@ -222,7 +222,7 @@ class PostgresqlHbaConf:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this PostgresqlHbaConf.
+        r"""Sets the priority of this PostgresqlHbaConf.
 
         优先级，表示配置的先后
 

@@ -32,7 +32,7 @@ class UploadFromObsResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, id=None, name=None):
-        """UploadFromObsResponse
+        r"""UploadFromObsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UploadFromObsResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this UploadFromObsResponse.
+        r"""Gets the error_message of this UploadFromObsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -76,7 +76,7 @@ class UploadFromObsResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this UploadFromObsResponse.
+        r"""Sets the error_message of this UploadFromObsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -87,7 +87,7 @@ class UploadFromObsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this UploadFromObsResponse.
+        r"""Gets the error_code of this UploadFromObsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -98,7 +98,7 @@ class UploadFromObsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this UploadFromObsResponse.
+        r"""Sets the error_code of this UploadFromObsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -109,7 +109,7 @@ class UploadFromObsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UploadFromObsResponse.
+        r"""Gets the id of this UploadFromObsResponse.
 
         元数据的id。
 
@@ -120,7 +120,7 @@ class UploadFromObsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UploadFromObsResponse.
+        r"""Sets the id of this UploadFromObsResponse.
 
         元数据的id。
 
@@ -131,7 +131,7 @@ class UploadFromObsResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UploadFromObsResponse.
+        r"""Gets the name of this UploadFromObsResponse.
 
         元数据的名字。
 
@@ -142,7 +142,7 @@ class UploadFromObsResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UploadFromObsResponse.
+        r"""Sets the name of this UploadFromObsResponse.
 
         元数据的名字。
 

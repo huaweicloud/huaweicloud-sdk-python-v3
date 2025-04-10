@@ -25,7 +25,7 @@ class ShowAppGroupDetailRequest:
     }
 
     def __init__(self, app_group_id=None):
-        """ShowAppGroupDetailRequest
+        r"""ShowAppGroupDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAppGroupDetailRequest:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this ShowAppGroupDetailRequest.
+        r"""Gets the app_group_id of this ShowAppGroupDetailRequest.
 
         应用组ID。
 
@@ -53,7 +53,7 @@ class ShowAppGroupDetailRequest:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this ShowAppGroupDetailRequest.
+        r"""Sets the app_group_id of this ShowAppGroupDetailRequest.
 
         应用组ID。
 

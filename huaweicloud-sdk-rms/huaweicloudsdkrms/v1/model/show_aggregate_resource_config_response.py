@@ -52,7 +52,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
     }
 
     def __init__(self, resource_id=None, aggregator_id=None, aggregator_domain_id=None, domain_id=None, ep_id=None, provider=None, type=None, name=None, region_id=None, project_id=None, created=None, updated=None, tags=None, properties=None):
-        """ShowAggregateResourceConfigResponse
+        r"""ShowAggregateResourceConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowAggregateResourceConfigResponse.
+        r"""Gets the resource_id of this ShowAggregateResourceConfigResponse.
 
         资源ID。
 
@@ -146,7 +146,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowAggregateResourceConfigResponse.
+        r"""Sets the resource_id of this ShowAggregateResourceConfigResponse.
 
         资源ID。
 
@@ -157,7 +157,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @property
     def aggregator_id(self):
-        """Gets the aggregator_id of this ShowAggregateResourceConfigResponse.
+        r"""Gets the aggregator_id of this ShowAggregateResourceConfigResponse.
 
         聚合器ID。
 
@@ -168,7 +168,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @aggregator_id.setter
     def aggregator_id(self, aggregator_id):
-        """Sets the aggregator_id of this ShowAggregateResourceConfigResponse.
+        r"""Sets the aggregator_id of this ShowAggregateResourceConfigResponse.
 
         聚合器ID。
 
@@ -179,7 +179,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @property
     def aggregator_domain_id(self):
-        """Gets the aggregator_domain_id of this ShowAggregateResourceConfigResponse.
+        r"""Gets the aggregator_domain_id of this ShowAggregateResourceConfigResponse.
 
         聚合器帐号。
 
@@ -190,7 +190,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @aggregator_domain_id.setter
     def aggregator_domain_id(self, aggregator_domain_id):
-        """Sets the aggregator_domain_id of this ShowAggregateResourceConfigResponse.
+        r"""Sets the aggregator_domain_id of this ShowAggregateResourceConfigResponse.
 
         聚合器帐号。
 
@@ -201,7 +201,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowAggregateResourceConfigResponse.
+        r"""Gets the domain_id of this ShowAggregateResourceConfigResponse.
 
         聚合资源所属帐号的ID。
 
@@ -212,7 +212,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowAggregateResourceConfigResponse.
+        r"""Sets the domain_id of this ShowAggregateResourceConfigResponse.
 
         聚合资源所属帐号的ID。
 
@@ -223,7 +223,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this ShowAggregateResourceConfigResponse.
+        r"""Gets the ep_id of this ShowAggregateResourceConfigResponse.
 
         企业项目ID。
 
@@ -234,7 +234,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this ShowAggregateResourceConfigResponse.
+        r"""Sets the ep_id of this ShowAggregateResourceConfigResponse.
 
         企业项目ID。
 
@@ -245,7 +245,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @property
     def provider(self):
-        """Gets the provider of this ShowAggregateResourceConfigResponse.
+        r"""Gets the provider of this ShowAggregateResourceConfigResponse.
 
         云服务名称。
 
@@ -256,7 +256,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ShowAggregateResourceConfigResponse.
+        r"""Sets the provider of this ShowAggregateResourceConfigResponse.
 
         云服务名称。
 
@@ -267,7 +267,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowAggregateResourceConfigResponse.
+        r"""Gets the type of this ShowAggregateResourceConfigResponse.
 
         资源类型。
 
@@ -278,7 +278,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowAggregateResourceConfigResponse.
+        r"""Sets the type of this ShowAggregateResourceConfigResponse.
 
         资源类型。
 
@@ -289,7 +289,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowAggregateResourceConfigResponse.
+        r"""Gets the name of this ShowAggregateResourceConfigResponse.
 
         资源名称。
 
@@ -300,7 +300,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAggregateResourceConfigResponse.
+        r"""Sets the name of this ShowAggregateResourceConfigResponse.
 
         资源名称。
 
@@ -311,7 +311,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @property
     def region_id(self):
-        """Gets the region_id of this ShowAggregateResourceConfigResponse.
+        r"""Gets the region_id of this ShowAggregateResourceConfigResponse.
 
         区域ID。
 
@@ -322,7 +322,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ShowAggregateResourceConfigResponse.
+        r"""Sets the region_id of this ShowAggregateResourceConfigResponse.
 
         区域ID。
 
@@ -333,7 +333,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowAggregateResourceConfigResponse.
+        r"""Gets the project_id of this ShowAggregateResourceConfigResponse.
 
         Openstack中的项目ID。
 
@@ -344,7 +344,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowAggregateResourceConfigResponse.
+        r"""Sets the project_id of this ShowAggregateResourceConfigResponse.
 
         Openstack中的项目ID。
 
@@ -355,7 +355,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this ShowAggregateResourceConfigResponse.
+        r"""Gets the created of this ShowAggregateResourceConfigResponse.
 
         资源创建时间。
 
@@ -366,7 +366,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowAggregateResourceConfigResponse.
+        r"""Sets the created of this ShowAggregateResourceConfigResponse.
 
         资源创建时间。
 
@@ -377,7 +377,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowAggregateResourceConfigResponse.
+        r"""Gets the updated of this ShowAggregateResourceConfigResponse.
 
         资源更新时间。
 
@@ -388,7 +388,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowAggregateResourceConfigResponse.
+        r"""Sets the updated of this ShowAggregateResourceConfigResponse.
 
         资源更新时间。
 
@@ -399,7 +399,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowAggregateResourceConfigResponse.
+        r"""Gets the tags of this ShowAggregateResourceConfigResponse.
 
         资源标签。
 
@@ -410,7 +410,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowAggregateResourceConfigResponse.
+        r"""Sets the tags of this ShowAggregateResourceConfigResponse.
 
         资源标签。
 
@@ -421,7 +421,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this ShowAggregateResourceConfigResponse.
+        r"""Gets the properties of this ShowAggregateResourceConfigResponse.
 
         资源详细属性。
 
@@ -432,7 +432,7 @@ class ShowAggregateResourceConfigResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ShowAggregateResourceConfigResponse.
+        r"""Sets the properties of this ShowAggregateResourceConfigResponse.
 
         资源详细属性。
 

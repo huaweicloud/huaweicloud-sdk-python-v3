@@ -25,7 +25,7 @@ class DeleteRestrictedRuleRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteRestrictedRuleRequest
+        r"""DeleteRestrictedRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteRestrictedRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteRestrictedRuleRequest.
+        r"""Gets the body of this DeleteRestrictedRuleRequest.
 
         :return: The body of this DeleteRestrictedRuleRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchOperateAppRulesReq`
@@ -52,7 +52,7 @@ class DeleteRestrictedRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteRestrictedRuleRequest.
+        r"""Sets the body of this DeleteRestrictedRuleRequest.
 
         :param body: The body of this DeleteRestrictedRuleRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchOperateAppRulesReq`

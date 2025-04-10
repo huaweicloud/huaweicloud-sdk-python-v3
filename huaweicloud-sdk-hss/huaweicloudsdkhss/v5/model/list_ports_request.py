@@ -22,6 +22,7 @@ class ListPortsRequest:
         'host_ip': 'str',
         'port': 'int',
         'type': 'str',
+        'status': 'str',
         'enterprise_project_id': 'str',
         'limit': 'int',
         'offset': 'int',
@@ -34,14 +35,15 @@ class ListPortsRequest:
         'host_ip': 'host_ip',
         'port': 'port',
         'type': 'type',
+        'status': 'status',
         'enterprise_project_id': 'enterprise_project_id',
         'limit': 'limit',
         'offset': 'offset',
         'category': 'category'
     }
 
-    def __init__(self, host_id=None, host_name=None, host_ip=None, port=None, type=None, enterprise_project_id=None, limit=None, offset=None, category=None):
-        """ListPortsRequest
+    def __init__(self, host_id=None, host_name=None, host_ip=None, port=None, type=None, status=None, enterprise_project_id=None, limit=None, offset=None, category=None):
+        r"""ListPortsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +57,9 @@ class ListPortsRequest:
         :type port: int
         :param type: 端口类型：目前包括TCP，UDP两种
         :type type: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param status: 端口状态，包含如下： - danger：危险端口 - unknow: 无已知危险的端口
+        :type status: str
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param limit: 每页显示数量
         :type limit: int
@@ -72,6 +76,7 @@ class ListPortsRequest:
         self._host_ip = None
         self._port = None
         self._type = None
+        self._status = None
         self._enterprise_project_id = None
         self._limit = None
         self._offset = None
@@ -87,6 +92,8 @@ class ListPortsRequest:
             self.port = port
         if type is not None:
             self.type = type
+        if status is not None:
+            self.status = status
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if limit is not None:
@@ -98,7 +105,7 @@ class ListPortsRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListPortsRequest.
+        r"""Gets the host_id of this ListPortsRequest.
 
         主机id
 
@@ -109,7 +116,7 @@ class ListPortsRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListPortsRequest.
+        r"""Sets the host_id of this ListPortsRequest.
 
         主机id
 
@@ -120,7 +127,7 @@ class ListPortsRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListPortsRequest.
+        r"""Gets the host_name of this ListPortsRequest.
 
         主机名称
 
@@ -131,7 +138,7 @@ class ListPortsRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListPortsRequest.
+        r"""Sets the host_name of this ListPortsRequest.
 
         主机名称
 
@@ -142,7 +149,7 @@ class ListPortsRequest:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this ListPortsRequest.
+        r"""Gets the host_ip of this ListPortsRequest.
 
         主机ip
 
@@ -153,7 +160,7 @@ class ListPortsRequest:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this ListPortsRequest.
+        r"""Sets the host_ip of this ListPortsRequest.
 
         主机ip
 
@@ -164,7 +171,7 @@ class ListPortsRequest:
 
     @property
     def port(self):
-        """Gets the port of this ListPortsRequest.
+        r"""Gets the port of this ListPortsRequest.
 
         端口号
 
@@ -175,7 +182,7 @@ class ListPortsRequest:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ListPortsRequest.
+        r"""Sets the port of this ListPortsRequest.
 
         端口号
 
@@ -186,7 +193,7 @@ class ListPortsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListPortsRequest.
+        r"""Gets the type of this ListPortsRequest.
 
         端口类型：目前包括TCP，UDP两种
 
@@ -197,7 +204,7 @@ class ListPortsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListPortsRequest.
+        r"""Sets the type of this ListPortsRequest.
 
         端口类型：目前包括TCP，UDP两种
 
@@ -207,10 +214,32 @@ class ListPortsRequest:
         self._type = type
 
     @property
-    def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPortsRequest.
+    def status(self):
+        r"""Gets the status of this ListPortsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        端口状态，包含如下： - danger：危险端口 - unknow: 无已知危险的端口
+
+        :return: The status of this ListPortsRequest.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this ListPortsRequest.
+
+        端口状态，包含如下： - danger：危险端口 - unknow: 无已知危险的端口
+
+        :param status: The status of this ListPortsRequest.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this ListPortsRequest.
+
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListPortsRequest.
         :rtype: str
@@ -219,9 +248,9 @@ class ListPortsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPortsRequest.
+        r"""Sets the enterprise_project_id of this ListPortsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPortsRequest.
         :type enterprise_project_id: str
@@ -230,7 +259,7 @@ class ListPortsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPortsRequest.
+        r"""Gets the limit of this ListPortsRequest.
 
         每页显示数量
 
@@ -241,7 +270,7 @@ class ListPortsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPortsRequest.
+        r"""Sets the limit of this ListPortsRequest.
 
         每页显示数量
 
@@ -252,7 +281,7 @@ class ListPortsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPortsRequest.
+        r"""Gets the offset of this ListPortsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -263,7 +292,7 @@ class ListPortsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPortsRequest.
+        r"""Sets the offset of this ListPortsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -274,7 +303,7 @@ class ListPortsRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListPortsRequest.
+        r"""Gets the category of this ListPortsRequest.
 
         类别，默认为host，包含如下： - host：主机 - container：容器
 
@@ -285,7 +314,7 @@ class ListPortsRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListPortsRequest.
+        r"""Sets the category of this ListPortsRequest.
 
         类别，默认为host，包含如下： - host：主机 - container：容器
 

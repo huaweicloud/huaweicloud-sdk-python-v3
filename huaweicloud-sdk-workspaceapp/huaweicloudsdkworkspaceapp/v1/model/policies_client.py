@@ -29,7 +29,7 @@ class PoliciesClient:
     }
 
     def __init__(self, automatic_reconnection_interval=None, session_persistence_time=None, forbid_screen_capture=None):
-        """PoliciesClient
+        r"""PoliciesClient
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PoliciesClient:
 
     @property
     def automatic_reconnection_interval(self):
-        """Gets the automatic_reconnection_interval of this PoliciesClient.
+        r"""Gets the automatic_reconnection_interval of this PoliciesClient.
 
         自动重连间隔（秒）。取值范围为[1-50]。默认：5。
 
@@ -68,7 +68,7 @@ class PoliciesClient:
 
     @automatic_reconnection_interval.setter
     def automatic_reconnection_interval(self, automatic_reconnection_interval):
-        """Sets the automatic_reconnection_interval of this PoliciesClient.
+        r"""Sets the automatic_reconnection_interval of this PoliciesClient.
 
         自动重连间隔（秒）。取值范围为[1-50]。默认：5。
 
@@ -79,7 +79,7 @@ class PoliciesClient:
 
     @property
     def session_persistence_time(self):
-        """Gets the session_persistence_time of this PoliciesClient.
+        r"""Gets the session_persistence_time of this PoliciesClient.
 
         自动重连会话保持时长（秒）。取值范围为[0-180]。默认：180。
 
@@ -90,7 +90,7 @@ class PoliciesClient:
 
     @session_persistence_time.setter
     def session_persistence_time(self, session_persistence_time):
-        """Sets the session_persistence_time of this PoliciesClient.
+        r"""Sets the session_persistence_time of this PoliciesClient.
 
         自动重连会话保持时长（秒）。取值范围为[0-180]。默认：180。
 
@@ -101,7 +101,7 @@ class PoliciesClient:
 
     @property
     def forbid_screen_capture(self):
-        """Gets the forbid_screen_capture of this PoliciesClient.
+        r"""Gets the forbid_screen_capture of this PoliciesClient.
 
         防截屏策略开关。 false：表示关闭。 true：表示开启。
 
@@ -112,7 +112,7 @@ class PoliciesClient:
 
     @forbid_screen_capture.setter
     def forbid_screen_capture(self, forbid_screen_capture):
-        """Sets the forbid_screen_capture of this PoliciesClient.
+        r"""Sets the forbid_screen_capture of this PoliciesClient.
 
         防截屏策略开关。 false：表示关闭。 true：表示开启。
 

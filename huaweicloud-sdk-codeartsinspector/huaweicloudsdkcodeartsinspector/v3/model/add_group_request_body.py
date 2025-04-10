@@ -25,7 +25,7 @@ class AddGroupRequestBody:
     }
 
     def __init__(self, name=None):
-        """AddGroupRequestBody
+        r"""AddGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddGroupRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this AddGroupRequestBody.
+        r"""Gets the name of this AddGroupRequestBody.
 
         群组名称
 
@@ -54,7 +54,7 @@ class AddGroupRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddGroupRequestBody.
+        r"""Sets the name of this AddGroupRequestBody.
 
         群组名称
 

@@ -25,7 +25,7 @@ class ShowCustomPropsTaskResultRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowCustomPropsTaskResultRequest
+        r"""ShowCustomPropsTaskResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCustomPropsTaskResultRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowCustomPropsTaskResultRequest.
+        r"""Gets the task_id of this ShowCustomPropsTaskResultRequest.
 
         自定义属性任务ID
 
@@ -53,7 +53,7 @@ class ShowCustomPropsTaskResultRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowCustomPropsTaskResultRequest.
+        r"""Sets the task_id of this ShowCustomPropsTaskResultRequest.
 
         自定义属性任务ID
 

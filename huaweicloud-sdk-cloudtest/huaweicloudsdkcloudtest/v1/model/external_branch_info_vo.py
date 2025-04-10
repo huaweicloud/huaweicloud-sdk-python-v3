@@ -47,7 +47,7 @@ class ExternalBranchInfoVo:
     }
 
     def __init__(self, id=None, type=None, author=None, name=None, region=None, last_modifier=None, last_modified=None, last_modified_timestamp=None, creation_date=None, creation_date_timestamp=None, author_name=None, is_base_branch=None):
-        """ExternalBranchInfoVo
+        r"""ExternalBranchInfoVo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ExternalBranchInfoVo:
 
     @property
     def id(self):
-        """Gets the id of this ExternalBranchInfoVo.
+        r"""Gets the id of this ExternalBranchInfoVo.
 
         分支ID
 
@@ -131,7 +131,7 @@ class ExternalBranchInfoVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExternalBranchInfoVo.
+        r"""Sets the id of this ExternalBranchInfoVo.
 
         分支ID
 
@@ -142,7 +142,7 @@ class ExternalBranchInfoVo:
 
     @property
     def type(self):
-        """Gets the type of this ExternalBranchInfoVo.
+        r"""Gets the type of this ExternalBranchInfoVo.
 
         资源类型
 
@@ -153,7 +153,7 @@ class ExternalBranchInfoVo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExternalBranchInfoVo.
+        r"""Sets the type of this ExternalBranchInfoVo.
 
         资源类型
 
@@ -164,7 +164,7 @@ class ExternalBranchInfoVo:
 
     @property
     def author(self):
-        """Gets the author of this ExternalBranchInfoVo.
+        r"""Gets the author of this ExternalBranchInfoVo.
 
         创建人
 
@@ -175,7 +175,7 @@ class ExternalBranchInfoVo:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this ExternalBranchInfoVo.
+        r"""Sets the author of this ExternalBranchInfoVo.
 
         创建人
 
@@ -186,7 +186,7 @@ class ExternalBranchInfoVo:
 
     @property
     def name(self):
-        """Gets the name of this ExternalBranchInfoVo.
+        r"""Gets the name of this ExternalBranchInfoVo.
 
         名称
 
@@ -197,7 +197,7 @@ class ExternalBranchInfoVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExternalBranchInfoVo.
+        r"""Sets the name of this ExternalBranchInfoVo.
 
         名称
 
@@ -208,7 +208,7 @@ class ExternalBranchInfoVo:
 
     @property
     def region(self):
-        """Gets the region of this ExternalBranchInfoVo.
+        r"""Gets the region of this ExternalBranchInfoVo.
 
         区域
 
@@ -219,7 +219,7 @@ class ExternalBranchInfoVo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ExternalBranchInfoVo.
+        r"""Sets the region of this ExternalBranchInfoVo.
 
         区域
 
@@ -230,7 +230,7 @@ class ExternalBranchInfoVo:
 
     @property
     def last_modifier(self):
-        """Gets the last_modifier of this ExternalBranchInfoVo.
+        r"""Gets the last_modifier of this ExternalBranchInfoVo.
 
         最后修改人
 
@@ -241,7 +241,7 @@ class ExternalBranchInfoVo:
 
     @last_modifier.setter
     def last_modifier(self, last_modifier):
-        """Sets the last_modifier of this ExternalBranchInfoVo.
+        r"""Sets the last_modifier of this ExternalBranchInfoVo.
 
         最后修改人
 
@@ -252,7 +252,7 @@ class ExternalBranchInfoVo:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this ExternalBranchInfoVo.
+        r"""Gets the last_modified of this ExternalBranchInfoVo.
 
         最后修改时间
 
@@ -263,7 +263,7 @@ class ExternalBranchInfoVo:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this ExternalBranchInfoVo.
+        r"""Sets the last_modified of this ExternalBranchInfoVo.
 
         最后修改时间
 
@@ -274,7 +274,7 @@ class ExternalBranchInfoVo:
 
     @property
     def last_modified_timestamp(self):
-        """Gets the last_modified_timestamp of this ExternalBranchInfoVo.
+        r"""Gets the last_modified_timestamp of this ExternalBranchInfoVo.
 
         修改时间时间戳
 
@@ -285,7 +285,7 @@ class ExternalBranchInfoVo:
 
     @last_modified_timestamp.setter
     def last_modified_timestamp(self, last_modified_timestamp):
-        """Sets the last_modified_timestamp of this ExternalBranchInfoVo.
+        r"""Sets the last_modified_timestamp of this ExternalBranchInfoVo.
 
         修改时间时间戳
 
@@ -296,7 +296,7 @@ class ExternalBranchInfoVo:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this ExternalBranchInfoVo.
+        r"""Gets the creation_date of this ExternalBranchInfoVo.
 
         创建时间
 
@@ -307,7 +307,7 @@ class ExternalBranchInfoVo:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this ExternalBranchInfoVo.
+        r"""Sets the creation_date of this ExternalBranchInfoVo.
 
         创建时间
 
@@ -318,7 +318,7 @@ class ExternalBranchInfoVo:
 
     @property
     def creation_date_timestamp(self):
-        """Gets the creation_date_timestamp of this ExternalBranchInfoVo.
+        r"""Gets the creation_date_timestamp of this ExternalBranchInfoVo.
 
         创建时间时间戳
 
@@ -329,7 +329,7 @@ class ExternalBranchInfoVo:
 
     @creation_date_timestamp.setter
     def creation_date_timestamp(self, creation_date_timestamp):
-        """Sets the creation_date_timestamp of this ExternalBranchInfoVo.
+        r"""Sets the creation_date_timestamp of this ExternalBranchInfoVo.
 
         创建时间时间戳
 
@@ -340,7 +340,7 @@ class ExternalBranchInfoVo:
 
     @property
     def author_name(self):
-        """Gets the author_name of this ExternalBranchInfoVo.
+        r"""Gets the author_name of this ExternalBranchInfoVo.
 
         创建人名称
 
@@ -351,7 +351,7 @@ class ExternalBranchInfoVo:
 
     @author_name.setter
     def author_name(self, author_name):
-        """Sets the author_name of this ExternalBranchInfoVo.
+        r"""Sets the author_name of this ExternalBranchInfoVo.
 
         创建人名称
 
@@ -362,7 +362,7 @@ class ExternalBranchInfoVo:
 
     @property
     def is_base_branch(self):
-        """Gets the is_base_branch of this ExternalBranchInfoVo.
+        r"""Gets the is_base_branch of this ExternalBranchInfoVo.
 
         是否为基线分支。0表示不是基线分支，1表示是基线分支。
 
@@ -373,7 +373,7 @@ class ExternalBranchInfoVo:
 
     @is_base_branch.setter
     def is_base_branch(self, is_base_branch):
-        """Sets the is_base_branch of this ExternalBranchInfoVo.
+        r"""Sets the is_base_branch of this ExternalBranchInfoVo.
 
         是否为基线分支。0表示不是基线分支，1表示是基线分支。
 

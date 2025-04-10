@@ -43,7 +43,7 @@ class UpdateNodeReqDTO:
     }
 
     def __init__(self, name=None, storage_period=None, log_configs=None, ha_config=None, hardware_model=None, npu_library_path=None, automatic_upgrade=None, device_data_record=None, metric_report=None, offline_cache_configs=None):
-        """UpdateNodeReqDTO
+        r"""UpdateNodeReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class UpdateNodeReqDTO:
 
     @property
     def name(self):
-        """Gets the name of this UpdateNodeReqDTO.
+        r"""Gets the name of this UpdateNodeReqDTO.
 
         边缘节点名称，只允许中、数字、英文大小写、中划线、下划线
 
@@ -117,7 +117,7 @@ class UpdateNodeReqDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateNodeReqDTO.
+        r"""Sets the name of this UpdateNodeReqDTO.
 
         边缘节点名称，只允许中、数字、英文大小写、中划线、下划线
 
@@ -128,7 +128,7 @@ class UpdateNodeReqDTO:
 
     @property
     def storage_period(self):
-        """Gets the storage_period of this UpdateNodeReqDTO.
+        r"""Gets the storage_period of this UpdateNodeReqDTO.
 
         节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
 
@@ -139,7 +139,7 @@ class UpdateNodeReqDTO:
 
     @storage_period.setter
     def storage_period(self, storage_period):
-        """Sets the storage_period of this UpdateNodeReqDTO.
+        r"""Sets the storage_period of this UpdateNodeReqDTO.
 
         节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
 
@@ -150,7 +150,7 @@ class UpdateNodeReqDTO:
 
     @property
     def log_configs(self):
-        """Gets the log_configs of this UpdateNodeReqDTO.
+        r"""Gets the log_configs of this UpdateNodeReqDTO.
 
         边缘节点在IEF日志配置参数
 
@@ -161,7 +161,7 @@ class UpdateNodeReqDTO:
 
     @log_configs.setter
     def log_configs(self, log_configs):
-        """Sets the log_configs of this UpdateNodeReqDTO.
+        r"""Sets the log_configs of this UpdateNodeReqDTO.
 
         边缘节点在IEF日志配置参数
 
@@ -172,7 +172,7 @@ class UpdateNodeReqDTO:
 
     @property
     def ha_config(self):
-        """Gets the ha_config of this UpdateNodeReqDTO.
+        r"""Gets the ha_config of this UpdateNodeReqDTO.
 
         :return: The ha_config of this UpdateNodeReqDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.HaConfigDTO`
@@ -181,7 +181,7 @@ class UpdateNodeReqDTO:
 
     @ha_config.setter
     def ha_config(self, ha_config):
-        """Sets the ha_config of this UpdateNodeReqDTO.
+        r"""Sets the ha_config of this UpdateNodeReqDTO.
 
         :param ha_config: The ha_config of this UpdateNodeReqDTO.
         :type ha_config: :class:`huaweicloudsdkiotedge.v2.HaConfigDTO`
@@ -190,7 +190,7 @@ class UpdateNodeReqDTO:
 
     @property
     def hardware_model(self):
-        """Gets the hardware_model of this UpdateNodeReqDTO.
+        r"""Gets the hardware_model of this UpdateNodeReqDTO.
 
         网关型号
 
@@ -201,7 +201,7 @@ class UpdateNodeReqDTO:
 
     @hardware_model.setter
     def hardware_model(self, hardware_model):
-        """Sets the hardware_model of this UpdateNodeReqDTO.
+        r"""Sets the hardware_model of this UpdateNodeReqDTO.
 
         网关型号
 
@@ -212,7 +212,7 @@ class UpdateNodeReqDTO:
 
     @property
     def npu_library_path(self):
-        """Gets the npu_library_path of this UpdateNodeReqDTO.
+        r"""Gets the npu_library_path of this UpdateNodeReqDTO.
 
         npu驱动动态库路径
 
@@ -223,7 +223,7 @@ class UpdateNodeReqDTO:
 
     @npu_library_path.setter
     def npu_library_path(self, npu_library_path):
-        """Sets the npu_library_path of this UpdateNodeReqDTO.
+        r"""Sets the npu_library_path of this UpdateNodeReqDTO.
 
         npu驱动动态库路径
 
@@ -234,7 +234,7 @@ class UpdateNodeReqDTO:
 
     @property
     def automatic_upgrade(self):
-        """Gets the automatic_upgrade of this UpdateNodeReqDTO.
+        r"""Gets the automatic_upgrade of this UpdateNodeReqDTO.
 
         自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
 
@@ -245,7 +245,7 @@ class UpdateNodeReqDTO:
 
     @automatic_upgrade.setter
     def automatic_upgrade(self, automatic_upgrade):
-        """Sets the automatic_upgrade of this UpdateNodeReqDTO.
+        r"""Sets the automatic_upgrade of this UpdateNodeReqDTO.
 
         自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
 
@@ -256,7 +256,7 @@ class UpdateNodeReqDTO:
 
     @property
     def device_data_record(self):
-        """Gets the device_data_record of this UpdateNodeReqDTO.
+        r"""Gets the device_data_record of this UpdateNodeReqDTO.
 
         :return: The device_data_record of this UpdateNodeReqDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
@@ -265,7 +265,7 @@ class UpdateNodeReqDTO:
 
     @device_data_record.setter
     def device_data_record(self, device_data_record):
-        """Sets the device_data_record of this UpdateNodeReqDTO.
+        r"""Sets the device_data_record of this UpdateNodeReqDTO.
 
         :param device_data_record: The device_data_record of this UpdateNodeReqDTO.
         :type device_data_record: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
@@ -274,7 +274,7 @@ class UpdateNodeReqDTO:
 
     @property
     def metric_report(self):
-        """Gets the metric_report of this UpdateNodeReqDTO.
+        r"""Gets the metric_report of this UpdateNodeReqDTO.
 
         omagent监控运维工具是否上报指标
 
@@ -285,7 +285,7 @@ class UpdateNodeReqDTO:
 
     @metric_report.setter
     def metric_report(self, metric_report):
-        """Sets the metric_report of this UpdateNodeReqDTO.
+        r"""Sets the metric_report of this UpdateNodeReqDTO.
 
         omagent监控运维工具是否上报指标
 
@@ -296,7 +296,7 @@ class UpdateNodeReqDTO:
 
     @property
     def offline_cache_configs(self):
-        """Gets the offline_cache_configs of this UpdateNodeReqDTO.
+        r"""Gets the offline_cache_configs of this UpdateNodeReqDTO.
 
         :return: The offline_cache_configs of this UpdateNodeReqDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateOfflineCacheConfigsDTO`
@@ -305,7 +305,7 @@ class UpdateNodeReqDTO:
 
     @offline_cache_configs.setter
     def offline_cache_configs(self, offline_cache_configs):
-        """Sets the offline_cache_configs of this UpdateNodeReqDTO.
+        r"""Sets the offline_cache_configs of this UpdateNodeReqDTO.
 
         :param offline_cache_configs: The offline_cache_configs of this UpdateNodeReqDTO.
         :type offline_cache_configs: :class:`huaweicloudsdkiotedge.v2.UpdateOfflineCacheConfigsDTO`

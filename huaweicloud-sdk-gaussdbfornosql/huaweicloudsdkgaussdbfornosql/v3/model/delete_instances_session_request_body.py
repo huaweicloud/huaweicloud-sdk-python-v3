@@ -27,7 +27,7 @@ class DeleteInstancesSessionRequestBody:
     }
 
     def __init__(self, is_all=None, session_ids=None):
-        """DeleteInstancesSessionRequestBody
+        r"""DeleteInstancesSessionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteInstancesSessionRequestBody:
 
     @property
     def is_all(self):
-        """Gets the is_all of this DeleteInstancesSessionRequestBody.
+        r"""Gets the is_all of this DeleteInstancesSessionRequestBody.
 
         是否删除全部会话。
 
@@ -60,7 +60,7 @@ class DeleteInstancesSessionRequestBody:
 
     @is_all.setter
     def is_all(self, is_all):
-        """Sets the is_all of this DeleteInstancesSessionRequestBody.
+        r"""Sets the is_all of this DeleteInstancesSessionRequestBody.
 
         是否删除全部会话。
 
@@ -71,7 +71,7 @@ class DeleteInstancesSessionRequestBody:
 
     @property
     def session_ids(self):
-        """Gets the session_ids of this DeleteInstancesSessionRequestBody.
+        r"""Gets the session_ids of this DeleteInstancesSessionRequestBody.
 
         需要删除的会话id。is_all为false的时候，session_ids为必填，不能为空。
 
@@ -82,7 +82,7 @@ class DeleteInstancesSessionRequestBody:
 
     @session_ids.setter
     def session_ids(self, session_ids):
-        """Sets the session_ids of this DeleteInstancesSessionRequestBody.
+        r"""Sets the session_ids of this DeleteInstancesSessionRequestBody.
 
         需要删除的会话id。is_all为false的时候，session_ids为必填，不能为空。
 

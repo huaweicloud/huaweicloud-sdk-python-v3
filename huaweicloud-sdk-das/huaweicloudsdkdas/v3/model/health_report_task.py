@@ -39,7 +39,7 @@ class HealthReportTask:
     }
 
     def __init__(self, task_id=None, instance_id=None, create_at=None, report_status=None, risk_count=None, origin=None, start_at=None, end_at=None):
-        """HealthReportTask
+        r"""HealthReportTask
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class HealthReportTask:
 
     @property
     def task_id(self):
-        """Gets the task_id of this HealthReportTask.
+        r"""Gets the task_id of this HealthReportTask.
 
         报告ID
 
@@ -95,7 +95,7 @@ class HealthReportTask:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this HealthReportTask.
+        r"""Sets the task_id of this HealthReportTask.
 
         报告ID
 
@@ -106,7 +106,7 @@ class HealthReportTask:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this HealthReportTask.
+        r"""Gets the instance_id of this HealthReportTask.
 
         实例ID
 
@@ -117,7 +117,7 @@ class HealthReportTask:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this HealthReportTask.
+        r"""Sets the instance_id of this HealthReportTask.
 
         实例ID
 
@@ -128,7 +128,7 @@ class HealthReportTask:
 
     @property
     def create_at(self):
-        """Gets the create_at of this HealthReportTask.
+        r"""Gets the create_at of this HealthReportTask.
 
         创建时间（Unix timestamp），单位：毫秒。
 
@@ -139,7 +139,7 @@ class HealthReportTask:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this HealthReportTask.
+        r"""Sets the create_at of this HealthReportTask.
 
         创建时间（Unix timestamp），单位：毫秒。
 
@@ -150,7 +150,7 @@ class HealthReportTask:
 
     @property
     def report_status(self):
-        """Gets the report_status of this HealthReportTask.
+        r"""Gets the report_status of this HealthReportTask.
 
         诊断状态
 
@@ -161,7 +161,7 @@ class HealthReportTask:
 
     @report_status.setter
     def report_status(self, report_status):
-        """Sets the report_status of this HealthReportTask.
+        r"""Sets the report_status of this HealthReportTask.
 
         诊断状态
 
@@ -172,7 +172,7 @@ class HealthReportTask:
 
     @property
     def risk_count(self):
-        """Gets the risk_count of this HealthReportTask.
+        r"""Gets the risk_count of this HealthReportTask.
 
         风险点数量
 
@@ -183,7 +183,7 @@ class HealthReportTask:
 
     @risk_count.setter
     def risk_count(self, risk_count):
-        """Sets the risk_count of this HealthReportTask.
+        r"""Sets the risk_count of this HealthReportTask.
 
         风险点数量
 
@@ -194,7 +194,7 @@ class HealthReportTask:
 
     @property
     def origin(self):
-        """Gets the origin of this HealthReportTask.
+        r"""Gets the origin of this HealthReportTask.
 
         触发源
 
@@ -205,7 +205,7 @@ class HealthReportTask:
 
     @origin.setter
     def origin(self, origin):
-        """Sets the origin of this HealthReportTask.
+        r"""Sets the origin of this HealthReportTask.
 
         触发源
 
@@ -216,7 +216,7 @@ class HealthReportTask:
 
     @property
     def start_at(self):
-        """Gets the start_at of this HealthReportTask.
+        r"""Gets the start_at of this HealthReportTask.
 
         日报诊断区间的起始时间（Unix timestamp），单位：毫秒。
 
@@ -227,7 +227,7 @@ class HealthReportTask:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this HealthReportTask.
+        r"""Sets the start_at of this HealthReportTask.
 
         日报诊断区间的起始时间（Unix timestamp），单位：毫秒。
 
@@ -238,7 +238,7 @@ class HealthReportTask:
 
     @property
     def end_at(self):
-        """Gets the end_at of this HealthReportTask.
+        r"""Gets the end_at of this HealthReportTask.
 
         日报诊断区间的结束时间（Unix timestamp），单位：毫秒。
 
@@ -249,7 +249,7 @@ class HealthReportTask:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this HealthReportTask.
+        r"""Sets the end_at of this HealthReportTask.
 
         日报诊断区间的结束时间（Unix timestamp），单位：毫秒。
 

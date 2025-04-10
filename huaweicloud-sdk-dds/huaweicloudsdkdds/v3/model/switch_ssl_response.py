@@ -28,7 +28,7 @@ class SwitchSslResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, ssl_option=None):
-        """SwitchSslResponse
+        r"""SwitchSslResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SwitchSslResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this SwitchSslResponse.
+        r"""Gets the job_id of this SwitchSslResponse.
 
         任务ID。
 
@@ -62,7 +62,7 @@ class SwitchSslResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SwitchSslResponse.
+        r"""Sets the job_id of this SwitchSslResponse.
 
         任务ID。
 
@@ -73,7 +73,7 @@ class SwitchSslResponse(SdkResponse):
 
     @property
     def ssl_option(self):
-        """Gets the ssl_option of this SwitchSslResponse.
+        r"""Gets the ssl_option of this SwitchSslResponse.
 
         SSL开关状态。
 
@@ -84,7 +84,7 @@ class SwitchSslResponse(SdkResponse):
 
     @ssl_option.setter
     def ssl_option(self, ssl_option):
-        """Sets the ssl_option of this SwitchSslResponse.
+        r"""Sets the ssl_option of this SwitchSslResponse.
 
         SSL开关状态。
 

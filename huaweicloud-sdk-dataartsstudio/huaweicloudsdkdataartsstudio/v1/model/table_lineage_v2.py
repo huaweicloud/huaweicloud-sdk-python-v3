@@ -29,7 +29,7 @@ class TableLineageV2:
     }
 
     def __init__(self, input_tables=None, output_tables=None, column_lineages=None):
-        """TableLineageV2
+        r"""TableLineageV2
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TableLineageV2:
 
     @property
     def input_tables(self):
-        """Gets the input_tables of this TableLineageV2.
+        r"""Gets the input_tables of this TableLineageV2.
 
         上游血缘表列表，列表大小：1至100
 
@@ -66,7 +66,7 @@ class TableLineageV2:
 
     @input_tables.setter
     def input_tables(self, input_tables):
-        """Sets the input_tables of this TableLineageV2.
+        r"""Sets the input_tables of this TableLineageV2.
 
         上游血缘表列表，列表大小：1至100
 
@@ -77,7 +77,7 @@ class TableLineageV2:
 
     @property
     def output_tables(self):
-        """Gets the output_tables of this TableLineageV2.
+        r"""Gets the output_tables of this TableLineageV2.
 
         下游血缘表列表，列表大小：1至100
 
@@ -88,7 +88,7 @@ class TableLineageV2:
 
     @output_tables.setter
     def output_tables(self, output_tables):
-        """Sets the output_tables of this TableLineageV2.
+        r"""Sets the output_tables of this TableLineageV2.
 
         下游血缘表列表，列表大小：1至100
 
@@ -99,7 +99,7 @@ class TableLineageV2:
 
     @property
     def column_lineages(self):
-        """Gets the column_lineages of this TableLineageV2.
+        r"""Gets the column_lineages of this TableLineageV2.
 
         字段血缘列表，列表大小：0至100
 
@@ -110,7 +110,7 @@ class TableLineageV2:
 
     @column_lineages.setter
     def column_lineages(self, column_lineages):
-        """Sets the column_lineages of this TableLineageV2.
+        r"""Sets the column_lineages of this TableLineageV2.
 
         字段血缘列表，列表大小：0至100
 

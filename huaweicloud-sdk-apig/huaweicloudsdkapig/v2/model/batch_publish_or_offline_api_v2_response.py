@@ -28,7 +28,7 @@ class BatchPublishOrOfflineApiV2Response(SdkResponse):
     }
 
     def __init__(self, success=None, failure=None):
-        """BatchPublishOrOfflineApiV2Response
+        r"""BatchPublishOrOfflineApiV2Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchPublishOrOfflineApiV2Response(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this BatchPublishOrOfflineApiV2Response.
+        r"""Gets the success of this BatchPublishOrOfflineApiV2Response.
 
         发布或下线成功的信息
 
@@ -62,7 +62,7 @@ class BatchPublishOrOfflineApiV2Response(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this BatchPublishOrOfflineApiV2Response.
+        r"""Sets the success of this BatchPublishOrOfflineApiV2Response.
 
         发布或下线成功的信息
 
@@ -73,7 +73,7 @@ class BatchPublishOrOfflineApiV2Response(SdkResponse):
 
     @property
     def failure(self):
-        """Gets the failure of this BatchPublishOrOfflineApiV2Response.
+        r"""Gets the failure of this BatchPublishOrOfflineApiV2Response.
 
         发布或下线失败的API及错误信息
 
@@ -84,7 +84,7 @@ class BatchPublishOrOfflineApiV2Response(SdkResponse):
 
     @failure.setter
     def failure(self, failure):
-        """Sets the failure of this BatchPublishOrOfflineApiV2Response.
+        r"""Sets the failure of this BatchPublishOrOfflineApiV2Response.
 
         发布或下线失败的API及错误信息
 

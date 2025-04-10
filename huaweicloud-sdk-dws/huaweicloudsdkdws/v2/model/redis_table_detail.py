@@ -27,7 +27,7 @@ class RedisTableDetail:
     }
 
     def __init__(self, data=None, total=None):
-        """RedisTableDetail
+        r"""RedisTableDetail
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RedisTableDetail:
 
     @property
     def data(self):
-        """Gets the data of this RedisTableDetail.
+        r"""Gets the data of this RedisTableDetail.
 
         具体数据
 
@@ -61,7 +61,7 @@ class RedisTableDetail:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this RedisTableDetail.
+        r"""Sets the data of this RedisTableDetail.
 
         具体数据
 
@@ -72,7 +72,7 @@ class RedisTableDetail:
 
     @property
     def total(self):
-        """Gets the total of this RedisTableDetail.
+        r"""Gets the total of this RedisTableDetail.
 
         总条数
 
@@ -83,7 +83,7 @@ class RedisTableDetail:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this RedisTableDetail.
+        r"""Sets the total of this RedisTableDetail.
 
         总条数
 

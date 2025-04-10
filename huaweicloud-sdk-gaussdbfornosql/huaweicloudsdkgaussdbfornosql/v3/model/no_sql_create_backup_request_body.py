@@ -27,7 +27,7 @@ class NoSqlCreateBackupRequestBody:
     }
 
     def __init__(self, name=None, description=None):
-        """NoSqlCreateBackupRequestBody
+        r"""NoSqlCreateBackupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NoSqlCreateBackupRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this NoSqlCreateBackupRequestBody.
+        r"""Gets the name of this NoSqlCreateBackupRequestBody.
 
         手动备份名称。  取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
@@ -59,7 +59,7 @@ class NoSqlCreateBackupRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NoSqlCreateBackupRequestBody.
+        r"""Sets the name of this NoSqlCreateBackupRequestBody.
 
         手动备份名称。  取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
@@ -70,7 +70,7 @@ class NoSqlCreateBackupRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this NoSqlCreateBackupRequestBody.
+        r"""Gets the description of this NoSqlCreateBackupRequestBody.
 
         手动备份描述。  取值范围：长度不超过256位，且不能包含>!<\"&'=特殊字符。
 
@@ -81,7 +81,7 @@ class NoSqlCreateBackupRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NoSqlCreateBackupRequestBody.
+        r"""Sets the description of this NoSqlCreateBackupRequestBody.
 
         手动备份描述。  取值范围：长度不超过256位，且不能包含>!<\"&'=特殊字符。
 

@@ -25,7 +25,7 @@ class ExtendClusterGrowReq:
     }
 
     def __init__(self, modify_size=None):
-        """ExtendClusterGrowReq
+        r"""ExtendClusterGrowReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExtendClusterGrowReq:
 
     @property
     def modify_size(self):
-        """Gets the modify_size of this ExtendClusterGrowReq.
+        r"""Gets the modify_size of this ExtendClusterGrowReq.
 
         扩容实例个数。  集群已有实例个数和扩容实例个数总和不能超过32。
 
@@ -53,7 +53,7 @@ class ExtendClusterGrowReq:
 
     @modify_size.setter
     def modify_size(self, modify_size):
-        """Sets the modify_size of this ExtendClusterGrowReq.
+        r"""Sets the modify_size of this ExtendClusterGrowReq.
 
         扩容实例个数。  集群已有实例个数和扩容实例个数总和不能超过32。
 

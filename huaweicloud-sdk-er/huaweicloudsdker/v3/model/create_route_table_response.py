@@ -30,7 +30,7 @@ class CreateRouteTableResponse(SdkResponse):
     }
 
     def __init__(self, route_table=None, request_id=None, x_client_token=None):
-        """CreateRouteTableResponse
+        r"""CreateRouteTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateRouteTableResponse(SdkResponse):
 
     @property
     def route_table(self):
-        """Gets the route_table of this CreateRouteTableResponse.
+        r"""Gets the route_table of this CreateRouteTableResponse.
 
         :return: The route_table of this CreateRouteTableResponse.
         :rtype: :class:`huaweicloudsdker.v3.RouteTable`
@@ -67,7 +67,7 @@ class CreateRouteTableResponse(SdkResponse):
 
     @route_table.setter
     def route_table(self, route_table):
-        """Sets the route_table of this CreateRouteTableResponse.
+        r"""Sets the route_table of this CreateRouteTableResponse.
 
         :param route_table: The route_table of this CreateRouteTableResponse.
         :type route_table: :class:`huaweicloudsdker.v3.RouteTable`
@@ -76,7 +76,7 @@ class CreateRouteTableResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateRouteTableResponse.
+        r"""Gets the request_id of this CreateRouteTableResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class CreateRouteTableResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateRouteTableResponse.
+        r"""Sets the request_id of this CreateRouteTableResponse.
 
         请求ID
 
@@ -98,7 +98,7 @@ class CreateRouteTableResponse(SdkResponse):
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateRouteTableResponse.
+        r"""Gets the x_client_token of this CreateRouteTableResponse.
 
         :return: The x_client_token of this CreateRouteTableResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateRouteTableResponse(SdkResponse):
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateRouteTableResponse.
+        r"""Sets the x_client_token of this CreateRouteTableResponse.
 
         :param x_client_token: The x_client_token of this CreateRouteTableResponse.
         :type x_client_token: str

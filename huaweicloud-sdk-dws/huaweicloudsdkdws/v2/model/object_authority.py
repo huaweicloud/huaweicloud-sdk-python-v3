@@ -27,7 +27,7 @@ class ObjectAuthority:
     }
 
     def __init__(self, name=None, role_authority=None):
-        """ObjectAuthority
+        r"""ObjectAuthority
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ObjectAuthority:
 
     @property
     def name(self):
-        """Gets the name of this ObjectAuthority.
+        r"""Gets the name of this ObjectAuthority.
 
         对象名称
 
@@ -61,7 +61,7 @@ class ObjectAuthority:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ObjectAuthority.
+        r"""Sets the name of this ObjectAuthority.
 
         对象名称
 
@@ -72,7 +72,7 @@ class ObjectAuthority:
 
     @property
     def role_authority(self):
-        """Gets the role_authority of this ObjectAuthority.
+        r"""Gets the role_authority of this ObjectAuthority.
 
         角色权限集合
 
@@ -83,7 +83,7 @@ class ObjectAuthority:
 
     @role_authority.setter
     def role_authority(self, role_authority):
-        """Sets the role_authority of this ObjectAuthority.
+        r"""Sets the role_authority of this ObjectAuthority.
 
         角色权限集合
 

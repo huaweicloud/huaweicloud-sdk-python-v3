@@ -26,7 +26,7 @@ class RestoreBatchJobResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """RestoreBatchJobResponse
+        r"""RestoreBatchJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RestoreBatchJobResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this RestoreBatchJobResponse.
+        r"""Gets the body of this RestoreBatchJobResponse.
 
         :return: The body of this RestoreBatchJobResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class RestoreBatchJobResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestoreBatchJobResponse.
+        r"""Sets the body of this RestoreBatchJobResponse.
 
         :param body: The body of this RestoreBatchJobResponse.
         :type body: str

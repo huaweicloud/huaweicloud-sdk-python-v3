@@ -48,7 +48,7 @@ class ShowJobResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, job_id=None, status=None, job_type=None, job_name=None, related_graph=None, begin_time=None, end_time=None, job_detail=None, fail_reason=None, job_progress=None):
-        """ShowJobResponse
+        r"""ShowJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ShowJobResponse.
+        r"""Gets the error_message of this ShowJobResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -132,7 +132,7 @@ class ShowJobResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ShowJobResponse.
+        r"""Sets the error_message of this ShowJobResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -143,7 +143,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowJobResponse.
+        r"""Gets the error_code of this ShowJobResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -154,7 +154,7 @@ class ShowJobResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowJobResponse.
+        r"""Sets the error_code of this ShowJobResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -165,7 +165,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobResponse.
+        r"""Gets the job_id of this ShowJobResponse.
 
         任务ID。
 
@@ -176,7 +176,7 @@ class ShowJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobResponse.
+        r"""Sets the job_id of this ShowJobResponse.
 
         任务ID。
 
@@ -187,7 +187,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowJobResponse.
+        r"""Gets the status of this ShowJobResponse.
 
         任务状态。  - pending:等待中 - running:运行中 - success:成功 - failed:失败
 
@@ -198,7 +198,7 @@ class ShowJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowJobResponse.
+        r"""Sets the status of this ShowJobResponse.
 
         任务状态。  - pending:等待中 - running:运行中 - success:成功 - failed:失败
 
@@ -209,7 +209,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowJobResponse.
+        r"""Gets the job_type of this ShowJobResponse.
 
         任务类型。
 
@@ -220,7 +220,7 @@ class ShowJobResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowJobResponse.
+        r"""Sets the job_type of this ShowJobResponse.
 
         任务类型。
 
@@ -231,7 +231,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def job_name(self):
-        """Gets the job_name of this ShowJobResponse.
+        r"""Gets the job_name of this ShowJobResponse.
 
         任务名称。
 
@@ -242,7 +242,7 @@ class ShowJobResponse(SdkResponse):
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ShowJobResponse.
+        r"""Sets the job_name of this ShowJobResponse.
 
         任务名称。
 
@@ -253,7 +253,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def related_graph(self):
-        """Gets the related_graph of this ShowJobResponse.
+        r"""Gets the related_graph of this ShowJobResponse.
 
         关联图名称。
 
@@ -264,7 +264,7 @@ class ShowJobResponse(SdkResponse):
 
     @related_graph.setter
     def related_graph(self, related_graph):
-        """Sets the related_graph of this ShowJobResponse.
+        r"""Sets the related_graph of this ShowJobResponse.
 
         关联图名称。
 
@@ -275,7 +275,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowJobResponse.
+        r"""Gets the begin_time of this ShowJobResponse.
 
         任务开始时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"
 
@@ -286,7 +286,7 @@ class ShowJobResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowJobResponse.
+        r"""Sets the begin_time of this ShowJobResponse.
 
         任务开始时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"
 
@@ -297,7 +297,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowJobResponse.
+        r"""Gets the end_time of this ShowJobResponse.
 
         任务结束时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"
 
@@ -308,7 +308,7 @@ class ShowJobResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowJobResponse.
+        r"""Sets the end_time of this ShowJobResponse.
 
         任务结束时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"
 
@@ -319,7 +319,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def job_detail(self):
-        """Gets the job_detail of this ShowJobResponse.
+        r"""Gets the job_detail of this ShowJobResponse.
 
         :return: The job_detail of this ShowJobResponse.
         :rtype: :class:`huaweicloudsdkges.v1.JobDetail`
@@ -328,7 +328,7 @@ class ShowJobResponse(SdkResponse):
 
     @job_detail.setter
     def job_detail(self, job_detail):
-        """Sets the job_detail of this ShowJobResponse.
+        r"""Sets the job_detail of this ShowJobResponse.
 
         :param job_detail: The job_detail of this ShowJobResponse.
         :type job_detail: :class:`huaweicloudsdkges.v1.JobDetail`
@@ -337,7 +337,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ShowJobResponse.
+        r"""Gets the fail_reason of this ShowJobResponse.
 
         任务失败原因
 
@@ -348,7 +348,7 @@ class ShowJobResponse(SdkResponse):
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ShowJobResponse.
+        r"""Sets the fail_reason of this ShowJobResponse.
 
         任务失败原因
 
@@ -359,7 +359,7 @@ class ShowJobResponse(SdkResponse):
 
     @property
     def job_progress(self):
-        """Gets the job_progress of this ShowJobResponse.
+        r"""Gets the job_progress of this ShowJobResponse.
 
         任务执行进度，预留字段，暂未使用。
 
@@ -370,7 +370,7 @@ class ShowJobResponse(SdkResponse):
 
     @job_progress.setter
     def job_progress(self, job_progress):
-        """Sets the job_progress of this ShowJobResponse.
+        r"""Sets the job_progress of this ShowJobResponse.
 
         任务执行进度，预留字段，暂未使用。
 

@@ -30,7 +30,7 @@ class CreateSecretResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """CreateSecretResponse
+        r"""CreateSecretResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateSecretResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateSecretResponse.
+        r"""Gets the api_version of this CreateSecretResponse.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -69,7 +69,7 @@ class CreateSecretResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateSecretResponse.
+        r"""Sets the api_version of this CreateSecretResponse.
 
         API版本，固定值“v1”，该值不可修改。
 
@@ -80,7 +80,7 @@ class CreateSecretResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this CreateSecretResponse.
+        r"""Gets the kind of this CreateSecretResponse.
 
         资源种类。
 
@@ -91,7 +91,7 @@ class CreateSecretResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateSecretResponse.
+        r"""Sets the kind of this CreateSecretResponse.
 
         资源种类。
 
@@ -102,7 +102,7 @@ class CreateSecretResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this CreateSecretResponse.
+        r"""Gets the spec of this CreateSecretResponse.
 
         :return: The spec of this CreateSecretResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.SecretDetail`
@@ -111,7 +111,7 @@ class CreateSecretResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CreateSecretResponse.
+        r"""Sets the spec of this CreateSecretResponse.
 
         :param spec: The spec of this CreateSecretResponse.
         :type spec: :class:`huaweicloudsdkcae.v1.SecretDetail`

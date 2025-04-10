@@ -28,7 +28,7 @@ class ListEncodeServersResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, encode_servers=None):
-        """ListEncodeServersResponse
+        r"""ListEncodeServersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEncodeServersResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListEncodeServersResponse.
+        r"""Gets the request_id of this ListEncodeServersResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class ListEncodeServersResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListEncodeServersResponse.
+        r"""Sets the request_id of this ListEncodeServersResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class ListEncodeServersResponse(SdkResponse):
 
     @property
     def encode_servers(self):
-        """Gets the encode_servers of this ListEncodeServersResponse.
+        r"""Gets the encode_servers of this ListEncodeServersResponse.
 
         编码服务信息。
 
@@ -84,7 +84,7 @@ class ListEncodeServersResponse(SdkResponse):
 
     @encode_servers.setter
     def encode_servers(self, encode_servers):
-        """Sets the encode_servers of this ListEncodeServersResponse.
+        r"""Sets the encode_servers of this ListEncodeServersResponse.
 
         编码服务信息。
 

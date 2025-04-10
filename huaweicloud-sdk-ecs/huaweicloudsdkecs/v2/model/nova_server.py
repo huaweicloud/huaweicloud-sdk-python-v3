@@ -109,7 +109,7 @@ class NovaServer:
     }
 
     def __init__(self, name=None, id=None, status=None, created=None, updated=None, flavor=None, image=None, tenant_id=None, key_name=None, user_id=None, metadata=None, host_id=None, addresses=None, security_groups=None, links=None, os_dc_fdisk_config=None, os_ext_a_zavailability_zone=None, os_ext_srv_att_rhost=None, os_ext_srv_att_rhypervisor_hostname=None, os_ext_srv_att_rinstance_name=None, os_ext_st_spower_state=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, fault=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, tags=None, locked=None, access_i_pv4=None, access_i_pv6=None, config_drive=None, progress=None, osscheduler_hints=None):
-        """NovaServer
+        r"""NovaServer
 
         The model defined in huaweicloud sdk
 
@@ -305,7 +305,7 @@ class NovaServer:
 
     @property
     def name(self):
-        """Gets the name of this NovaServer.
+        r"""Gets the name of this NovaServer.
 
         云服务器名称。
 
@@ -316,7 +316,7 @@ class NovaServer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NovaServer.
+        r"""Sets the name of this NovaServer.
 
         云服务器名称。
 
@@ -327,7 +327,7 @@ class NovaServer:
 
     @property
     def id(self):
-        """Gets the id of this NovaServer.
+        r"""Gets the id of this NovaServer.
 
         云服务器唯一标识。
 
@@ -338,7 +338,7 @@ class NovaServer:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NovaServer.
+        r"""Sets the id of this NovaServer.
 
         云服务器唯一标识。
 
@@ -349,7 +349,7 @@ class NovaServer:
 
     @property
     def status(self):
-        """Gets the status of this NovaServer.
+        r"""Gets the status of this NovaServer.
 
         云服务器当前状态信息。  取值范围： ACTIVE， BUILD，DELETED，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
 
@@ -360,7 +360,7 @@ class NovaServer:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NovaServer.
+        r"""Sets the status of this NovaServer.
 
         云服务器当前状态信息。  取值范围： ACTIVE， BUILD，DELETED，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
 
@@ -371,7 +371,7 @@ class NovaServer:
 
     @property
     def created(self):
-        """Gets the created of this NovaServer.
+        r"""Gets the created of this NovaServer.
 
         云服务器创建时间。 时间格式例如：2019-05-22T07:48:53Z
 
@@ -382,7 +382,7 @@ class NovaServer:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this NovaServer.
+        r"""Sets the created of this NovaServer.
 
         云服务器创建时间。 时间格式例如：2019-05-22T07:48:53Z
 
@@ -393,7 +393,7 @@ class NovaServer:
 
     @property
     def updated(self):
-        """Gets the updated of this NovaServer.
+        r"""Gets the updated of this NovaServer.
 
         云服务器上一次更新时间。时间格式例如：2019-05-22T07:48:53Z
 
@@ -404,7 +404,7 @@ class NovaServer:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this NovaServer.
+        r"""Sets the updated of this NovaServer.
 
         云服务器上一次更新时间。时间格式例如：2019-05-22T07:48:53Z
 
@@ -415,7 +415,7 @@ class NovaServer:
 
     @property
     def flavor(self):
-        """Gets the flavor of this NovaServer.
+        r"""Gets the flavor of this NovaServer.
 
         :return: The flavor of this NovaServer.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaServerFlavor`
@@ -424,7 +424,7 @@ class NovaServer:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this NovaServer.
+        r"""Sets the flavor of this NovaServer.
 
         :param flavor: The flavor of this NovaServer.
         :type flavor: :class:`huaweicloudsdkecs.v2.NovaServerFlavor`
@@ -433,7 +433,7 @@ class NovaServer:
 
     @property
     def image(self):
-        """Gets the image of this NovaServer.
+        r"""Gets the image of this NovaServer.
 
         :return: The image of this NovaServer.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaServerImage`
@@ -442,7 +442,7 @@ class NovaServer:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this NovaServer.
+        r"""Sets the image of this NovaServer.
 
         :param image: The image of this NovaServer.
         :type image: :class:`huaweicloudsdkecs.v2.NovaServerImage`
@@ -451,7 +451,7 @@ class NovaServer:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NovaServer.
+        r"""Gets the tenant_id of this NovaServer.
 
         云服务器所属租户ID。即项目id，与project_id表示相同的概念。
 
@@ -462,7 +462,7 @@ class NovaServer:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NovaServer.
+        r"""Sets the tenant_id of this NovaServer.
 
         云服务器所属租户ID。即项目id，与project_id表示相同的概念。
 
@@ -473,7 +473,7 @@ class NovaServer:
 
     @property
     def key_name(self):
-        """Gets the key_name of this NovaServer.
+        r"""Gets the key_name of this NovaServer.
 
         SSH密钥名称。
 
@@ -484,7 +484,7 @@ class NovaServer:
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this NovaServer.
+        r"""Sets the key_name of this NovaServer.
 
         SSH密钥名称。
 
@@ -495,7 +495,7 @@ class NovaServer:
 
     @property
     def user_id(self):
-        """Gets the user_id of this NovaServer.
+        r"""Gets the user_id of this NovaServer.
 
         云服务器所属用户ID。
 
@@ -506,7 +506,7 @@ class NovaServer:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this NovaServer.
+        r"""Sets the user_id of this NovaServer.
 
         云服务器所属用户ID。
 
@@ -517,7 +517,7 @@ class NovaServer:
 
     @property
     def metadata(self):
-        """Gets the metadata of this NovaServer.
+        r"""Gets the metadata of this NovaServer.
 
         云服务器元数据。
 
@@ -528,7 +528,7 @@ class NovaServer:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this NovaServer.
+        r"""Sets the metadata of this NovaServer.
 
         云服务器元数据。
 
@@ -539,7 +539,7 @@ class NovaServer:
 
     @property
     def host_id(self):
-        """Gets the host_id of this NovaServer.
+        r"""Gets the host_id of this NovaServer.
 
         云服务器对应的主机ID。
 
@@ -550,7 +550,7 @@ class NovaServer:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this NovaServer.
+        r"""Sets the host_id of this NovaServer.
 
         云服务器对应的主机ID。
 
@@ -561,7 +561,7 @@ class NovaServer:
 
     @property
     def addresses(self):
-        """Gets the addresses of this NovaServer.
+        r"""Gets the addresses of this NovaServer.
 
         云服务器对应的网络地址信息。
 
@@ -572,7 +572,7 @@ class NovaServer:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this NovaServer.
+        r"""Sets the addresses of this NovaServer.
 
         云服务器对应的网络地址信息。
 
@@ -583,7 +583,7 @@ class NovaServer:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this NovaServer.
+        r"""Gets the security_groups of this NovaServer.
 
         云服务器所属安全组列表。
 
@@ -594,7 +594,7 @@ class NovaServer:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this NovaServer.
+        r"""Sets the security_groups of this NovaServer.
 
         云服务器所属安全组列表。
 
@@ -605,7 +605,7 @@ class NovaServer:
 
     @property
     def links(self):
-        """Gets the links of this NovaServer.
+        r"""Gets the links of this NovaServer.
 
         云服务器相关标记快捷链接信息。
 
@@ -616,7 +616,7 @@ class NovaServer:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this NovaServer.
+        r"""Sets the links of this NovaServer.
 
         云服务器相关标记快捷链接信息。
 
@@ -627,7 +627,7 @@ class NovaServer:
 
     @property
     def os_dc_fdisk_config(self):
-        """Gets the os_dc_fdisk_config of this NovaServer.
+        r"""Gets the os_dc_fdisk_config of this NovaServer.
 
         扩展属性，磁盘配置方式。对镜像启动云服务器生效。  取值范围：  - AUTO: API使用单个分区构建目标磁盘大小的云服务器。 API会自动调整文件系统以适应整个分区。 - MANUAL：API使用源映像中的分区方案和文件系统构建服务器。如果目标磁盘较大，则API不分区剩余的磁盘空间。
 
@@ -638,7 +638,7 @@ class NovaServer:
 
     @os_dc_fdisk_config.setter
     def os_dc_fdisk_config(self, os_dc_fdisk_config):
-        """Sets the os_dc_fdisk_config of this NovaServer.
+        r"""Sets the os_dc_fdisk_config of this NovaServer.
 
         扩展属性，磁盘配置方式。对镜像启动云服务器生效。  取值范围：  - AUTO: API使用单个分区构建目标磁盘大小的云服务器。 API会自动调整文件系统以适应整个分区。 - MANUAL：API使用源映像中的分区方案和文件系统构建服务器。如果目标磁盘较大，则API不分区剩余的磁盘空间。
 
@@ -649,7 +649,7 @@ class NovaServer:
 
     @property
     def os_ext_a_zavailability_zone(self):
-        """Gets the os_ext_a_zavailability_zone of this NovaServer.
+        r"""Gets the os_ext_a_zavailability_zone of this NovaServer.
 
         扩展属性，可用分区编码。
 
@@ -660,7 +660,7 @@ class NovaServer:
 
     @os_ext_a_zavailability_zone.setter
     def os_ext_a_zavailability_zone(self, os_ext_a_zavailability_zone):
-        """Sets the os_ext_a_zavailability_zone of this NovaServer.
+        r"""Sets the os_ext_a_zavailability_zone of this NovaServer.
 
         扩展属性，可用分区编码。
 
@@ -671,7 +671,7 @@ class NovaServer:
 
     @property
     def os_ext_srv_att_rhost(self):
-        """Gets the os_ext_srv_att_rhost of this NovaServer.
+        r"""Gets the os_ext_srv_att_rhost of this NovaServer.
 
         扩展属性，与主机宿主名称。
 
@@ -682,7 +682,7 @@ class NovaServer:
 
     @os_ext_srv_att_rhost.setter
     def os_ext_srv_att_rhost(self, os_ext_srv_att_rhost):
-        """Sets the os_ext_srv_att_rhost of this NovaServer.
+        r"""Sets the os_ext_srv_att_rhost of this NovaServer.
 
         扩展属性，与主机宿主名称。
 
@@ -693,7 +693,7 @@ class NovaServer:
 
     @property
     def os_ext_srv_att_rhypervisor_hostname(self):
-        """Gets the os_ext_srv_att_rhypervisor_hostname of this NovaServer.
+        r"""Gets the os_ext_srv_att_rhypervisor_hostname of this NovaServer.
 
         扩展属性，hypervisor主机名。
 
@@ -704,7 +704,7 @@ class NovaServer:
 
     @os_ext_srv_att_rhypervisor_hostname.setter
     def os_ext_srv_att_rhypervisor_hostname(self, os_ext_srv_att_rhypervisor_hostname):
-        """Sets the os_ext_srv_att_rhypervisor_hostname of this NovaServer.
+        r"""Sets the os_ext_srv_att_rhypervisor_hostname of this NovaServer.
 
         扩展属性，hypervisor主机名。
 
@@ -715,7 +715,7 @@ class NovaServer:
 
     @property
     def os_ext_srv_att_rinstance_name(self):
-        """Gets the os_ext_srv_att_rinstance_name of this NovaServer.
+        r"""Gets the os_ext_srv_att_rinstance_name of this NovaServer.
 
         扩展属性，云服务器实例ID。
 
@@ -726,7 +726,7 @@ class NovaServer:
 
     @os_ext_srv_att_rinstance_name.setter
     def os_ext_srv_att_rinstance_name(self, os_ext_srv_att_rinstance_name):
-        """Sets the os_ext_srv_att_rinstance_name of this NovaServer.
+        r"""Sets the os_ext_srv_att_rinstance_name of this NovaServer.
 
         扩展属性，云服务器实例ID。
 
@@ -737,7 +737,7 @@ class NovaServer:
 
     @property
     def os_ext_st_spower_state(self):
-        """Gets the os_ext_st_spower_state of this NovaServer.
+        r"""Gets the os_ext_st_spower_state of this NovaServer.
 
         扩展属性，云服务器电源状态。  取值范围：0，1，2，3，4  - 0 : pending - 1 : running - 2 : paused - 3 : shutdown - 4 : crashed
 
@@ -748,7 +748,7 @@ class NovaServer:
 
     @os_ext_st_spower_state.setter
     def os_ext_st_spower_state(self, os_ext_st_spower_state):
-        """Sets the os_ext_st_spower_state of this NovaServer.
+        r"""Sets the os_ext_st_spower_state of this NovaServer.
 
         扩展属性，云服务器电源状态。  取值范围：0，1，2，3，4  - 0 : pending - 1 : running - 2 : paused - 3 : shutdown - 4 : crashed
 
@@ -759,7 +759,7 @@ class NovaServer:
 
     @property
     def os_ext_st_stask_state(self):
-        """Gets the os_ext_st_stask_state of this NovaServer.
+        r"""Gets the os_ext_st_stask_state of this NovaServer.
 
         扩展属性，云服务器任务状态。  取值范围：  SHOUTOFF, RESIZE, REBUILD, VERIFY_RESIZE, REVERT_RESIZE, PAUSED, MIGRATING, SUSPENDED, RESCUE, ERROR, DELETED,SOFT_DELETED,SHELVED,SHELVED_OFFLOADED  取值范围请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)表3。
 
@@ -770,7 +770,7 @@ class NovaServer:
 
     @os_ext_st_stask_state.setter
     def os_ext_st_stask_state(self, os_ext_st_stask_state):
-        """Sets the os_ext_st_stask_state of this NovaServer.
+        r"""Sets the os_ext_st_stask_state of this NovaServer.
 
         扩展属性，云服务器任务状态。  取值范围：  SHOUTOFF, RESIZE, REBUILD, VERIFY_RESIZE, REVERT_RESIZE, PAUSED, MIGRATING, SUSPENDED, RESCUE, ERROR, DELETED,SOFT_DELETED,SHELVED,SHELVED_OFFLOADED  取值范围请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)表3。
 
@@ -781,7 +781,7 @@ class NovaServer:
 
     @property
     def os_ext_st_svm_state(self):
-        """Gets the os_ext_st_svm_state of this NovaServer.
+        r"""Gets the os_ext_st_svm_state of this NovaServer.
 
         扩展属性，云服务器状态。  取值范围：  ACTIVE,BUILDING,STOPPED,RESIZED,PAUSED,SUSPENDED,RESCUED,ERROR,DELETED,SOFT_DELETED,SHELVED,SHELVED_OFFLOADED  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
 
@@ -792,7 +792,7 @@ class NovaServer:
 
     @os_ext_st_svm_state.setter
     def os_ext_st_svm_state(self, os_ext_st_svm_state):
-        """Sets the os_ext_st_svm_state of this NovaServer.
+        r"""Sets the os_ext_st_svm_state of this NovaServer.
 
         扩展属性，云服务器状态。  取值范围：  ACTIVE,BUILDING,STOPPED,RESIZED,PAUSED,SUSPENDED,RESCUED,ERROR,DELETED,SOFT_DELETED,SHELVED,SHELVED_OFFLOADED  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
 
@@ -803,7 +803,7 @@ class NovaServer:
 
     @property
     def os_srv_us_glaunched_at(self):
-        """Gets the os_srv_us_glaunched_at of this NovaServer.
+        r"""Gets the os_srv_us_glaunched_at of this NovaServer.
 
         扩展属性，云服务器启动时间。时间格式例如：2019-05-22T07:48:19.000000
 
@@ -814,7 +814,7 @@ class NovaServer:
 
     @os_srv_us_glaunched_at.setter
     def os_srv_us_glaunched_at(self, os_srv_us_glaunched_at):
-        """Sets the os_srv_us_glaunched_at of this NovaServer.
+        r"""Sets the os_srv_us_glaunched_at of this NovaServer.
 
         扩展属性，云服务器启动时间。时间格式例如：2019-05-22T07:48:19.000000
 
@@ -825,7 +825,7 @@ class NovaServer:
 
     @property
     def os_srv_us_gterminated_at(self):
-        """Gets the os_srv_us_gterminated_at of this NovaServer.
+        r"""Gets the os_srv_us_gterminated_at of this NovaServer.
 
         扩展属性，云服务器关闭时间。  时间格式例如：2019-05-22T07:48:19.000000
 
@@ -836,7 +836,7 @@ class NovaServer:
 
     @os_srv_us_gterminated_at.setter
     def os_srv_us_gterminated_at(self, os_srv_us_gterminated_at):
-        """Sets the os_srv_us_gterminated_at of this NovaServer.
+        r"""Sets the os_srv_us_gterminated_at of this NovaServer.
 
         扩展属性，云服务器关闭时间。  时间格式例如：2019-05-22T07:48:19.000000
 
@@ -847,7 +847,7 @@ class NovaServer:
 
     @property
     def os_extended_volumesvolumes_attached(self):
-        """Gets the os_extended_volumesvolumes_attached of this NovaServer.
+        r"""Gets the os_extended_volumesvolumes_attached of this NovaServer.
 
         云服务器挂载的云磁盘信息。
 
@@ -858,7 +858,7 @@ class NovaServer:
 
     @os_extended_volumesvolumes_attached.setter
     def os_extended_volumesvolumes_attached(self, os_extended_volumesvolumes_attached):
-        """Sets the os_extended_volumesvolumes_attached of this NovaServer.
+        r"""Sets the os_extended_volumesvolumes_attached of this NovaServer.
 
         云服务器挂载的云磁盘信息。
 
@@ -869,7 +869,7 @@ class NovaServer:
 
     @property
     def fault(self):
-        """Gets the fault of this NovaServer.
+        r"""Gets the fault of this NovaServer.
 
         :return: The fault of this NovaServer.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaServerFault`
@@ -878,7 +878,7 @@ class NovaServer:
 
     @fault.setter
     def fault(self, fault):
-        """Sets the fault of this NovaServer.
+        r"""Sets the fault of this NovaServer.
 
         :param fault: The fault of this NovaServer.
         :type fault: :class:`huaweicloudsdkecs.v2.NovaServerFault`
@@ -887,7 +887,7 @@ class NovaServer:
 
     @property
     def description(self):
-        """Gets the description of this NovaServer.
+        r"""Gets the description of this NovaServer.
 
         弹性云服务器的描述信息。  微版本2.19后支持
 
@@ -898,7 +898,7 @@ class NovaServer:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NovaServer.
+        r"""Sets the description of this NovaServer.
 
         弹性云服务器的描述信息。  微版本2.19后支持
 
@@ -909,7 +909,7 @@ class NovaServer:
 
     @property
     def host_status(self):
-        """Gets the host_status of this NovaServer.
+        r"""Gets the host_status of this NovaServer.
 
         nova-compute状态。  - UP：服务正常 - UNKNOWN：状态未知 - DOWN：服务异常 - MAINTENANCE：维护状态 - 空字符串：弹性云服务器无主机信息
 
@@ -920,7 +920,7 @@ class NovaServer:
 
     @host_status.setter
     def host_status(self, host_status):
-        """Sets the host_status of this NovaServer.
+        r"""Sets the host_status of this NovaServer.
 
         nova-compute状态。  - UP：服务正常 - UNKNOWN：状态未知 - DOWN：服务异常 - MAINTENANCE：维护状态 - 空字符串：弹性云服务器无主机信息
 
@@ -931,7 +931,7 @@ class NovaServer:
 
     @property
     def os_ext_srv_att_rhostname(self):
-        """Gets the os_ext_srv_att_rhostname of this NovaServer.
+        r"""Gets the os_ext_srv_att_rhostname of this NovaServer.
 
         弹性云服务器的主机名。  微版本2.3后支持
 
@@ -942,7 +942,7 @@ class NovaServer:
 
     @os_ext_srv_att_rhostname.setter
     def os_ext_srv_att_rhostname(self, os_ext_srv_att_rhostname):
-        """Sets the os_ext_srv_att_rhostname of this NovaServer.
+        r"""Sets the os_ext_srv_att_rhostname of this NovaServer.
 
         弹性云服务器的主机名。  微版本2.3后支持
 
@@ -953,7 +953,7 @@ class NovaServer:
 
     @property
     def os_ext_srv_att_rreservation_id(self):
-        """Gets the os_ext_srv_att_rreservation_id of this NovaServer.
+        r"""Gets the os_ext_srv_att_rreservation_id of this NovaServer.
 
         批量创建场景，弹性云服务器的预留ID。  微版本2.3后支持
 
@@ -964,7 +964,7 @@ class NovaServer:
 
     @os_ext_srv_att_rreservation_id.setter
     def os_ext_srv_att_rreservation_id(self, os_ext_srv_att_rreservation_id):
-        """Sets the os_ext_srv_att_rreservation_id of this NovaServer.
+        r"""Sets the os_ext_srv_att_rreservation_id of this NovaServer.
 
         批量创建场景，弹性云服务器的预留ID。  微版本2.3后支持
 
@@ -975,7 +975,7 @@ class NovaServer:
 
     @property
     def os_ext_srv_att_rlaunch_index(self):
-        """Gets the os_ext_srv_att_rlaunch_index of this NovaServer.
+        r"""Gets the os_ext_srv_att_rlaunch_index of this NovaServer.
 
         批量创建场景，弹性云服务器的启动顺序。  微版本2.3后支持
 
@@ -986,7 +986,7 @@ class NovaServer:
 
     @os_ext_srv_att_rlaunch_index.setter
     def os_ext_srv_att_rlaunch_index(self, os_ext_srv_att_rlaunch_index):
-        """Sets the os_ext_srv_att_rlaunch_index of this NovaServer.
+        r"""Sets the os_ext_srv_att_rlaunch_index of this NovaServer.
 
         批量创建场景，弹性云服务器的启动顺序。  微版本2.3后支持
 
@@ -997,7 +997,7 @@ class NovaServer:
 
     @property
     def os_ext_srv_att_rkernel_id(self):
-        """Gets the os_ext_srv_att_rkernel_id of this NovaServer.
+        r"""Gets the os_ext_srv_att_rkernel_id of this NovaServer.
 
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空。  微版本2.3后支持
 
@@ -1008,7 +1008,7 @@ class NovaServer:
 
     @os_ext_srv_att_rkernel_id.setter
     def os_ext_srv_att_rkernel_id(self, os_ext_srv_att_rkernel_id):
-        """Sets the os_ext_srv_att_rkernel_id of this NovaServer.
+        r"""Sets the os_ext_srv_att_rkernel_id of this NovaServer.
 
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空。  微版本2.3后支持
 
@@ -1019,7 +1019,7 @@ class NovaServer:
 
     @property
     def os_ext_srv_att_rramdisk_id(self):
-        """Gets the os_ext_srv_att_rramdisk_id of this NovaServer.
+        r"""Gets the os_ext_srv_att_rramdisk_id of this NovaServer.
 
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。  微版本2.3后支持
 
@@ -1030,7 +1030,7 @@ class NovaServer:
 
     @os_ext_srv_att_rramdisk_id.setter
     def os_ext_srv_att_rramdisk_id(self, os_ext_srv_att_rramdisk_id):
-        """Sets the os_ext_srv_att_rramdisk_id of this NovaServer.
+        r"""Sets the os_ext_srv_att_rramdisk_id of this NovaServer.
 
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。  微版本2.3后支持
 
@@ -1041,7 +1041,7 @@ class NovaServer:
 
     @property
     def os_ext_srv_att_rroot_device_name(self):
-        """Gets the os_ext_srv_att_rroot_device_name of this NovaServer.
+        r"""Gets the os_ext_srv_att_rroot_device_name of this NovaServer.
 
         弹性云服务器系统盘的设备名称。  微版本2.3后支持
 
@@ -1052,7 +1052,7 @@ class NovaServer:
 
     @os_ext_srv_att_rroot_device_name.setter
     def os_ext_srv_att_rroot_device_name(self, os_ext_srv_att_rroot_device_name):
-        """Sets the os_ext_srv_att_rroot_device_name of this NovaServer.
+        r"""Sets the os_ext_srv_att_rroot_device_name of this NovaServer.
 
         弹性云服务器系统盘的设备名称。  微版本2.3后支持
 
@@ -1063,7 +1063,7 @@ class NovaServer:
 
     @property
     def os_ext_srv_att_ruser_data(self):
-        """Gets the os_ext_srv_att_ruser_data of this NovaServer.
+        r"""Gets the os_ext_srv_att_ruser_data of this NovaServer.
 
         创建弹性云服务器时指定的user_data。  微版本2.3后支持
 
@@ -1074,7 +1074,7 @@ class NovaServer:
 
     @os_ext_srv_att_ruser_data.setter
     def os_ext_srv_att_ruser_data(self, os_ext_srv_att_ruser_data):
-        """Sets the os_ext_srv_att_ruser_data of this NovaServer.
+        r"""Sets the os_ext_srv_att_ruser_data of this NovaServer.
 
         创建弹性云服务器时指定的user_data。  微版本2.3后支持
 
@@ -1085,7 +1085,7 @@ class NovaServer:
 
     @property
     def tags(self):
-        """Gets the tags of this NovaServer.
+        r"""Gets the tags of this NovaServer.
 
         云服务器的标签列表。  系统近期对标签功能进行了升级，升级后，返回的tag值遵循如下规则：  - key与value使用“=”连接，如“key=value”。 - 如果value为空字符串，则仅返回key。
 
@@ -1096,7 +1096,7 @@ class NovaServer:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this NovaServer.
+        r"""Sets the tags of this NovaServer.
 
         云服务器的标签列表。  系统近期对标签功能进行了升级，升级后，返回的tag值遵循如下规则：  - key与value使用“=”连接，如“key=value”。 - 如果value为空字符串，则仅返回key。
 
@@ -1107,7 +1107,7 @@ class NovaServer:
 
     @property
     def locked(self):
-        """Gets the locked of this NovaServer.
+        r"""Gets the locked of this NovaServer.
 
         当云服务器被锁时为True，否则为False。  微版本2.9后支持
 
@@ -1118,7 +1118,7 @@ class NovaServer:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this NovaServer.
+        r"""Sets the locked of this NovaServer.
 
         当云服务器被锁时为True，否则为False。  微版本2.9后支持
 
@@ -1129,7 +1129,7 @@ class NovaServer:
 
     @property
     def access_i_pv4(self):
-        """Gets the access_i_pv4 of this NovaServer.
+        r"""Gets the access_i_pv4 of this NovaServer.
 
         预留属性。
 
@@ -1140,7 +1140,7 @@ class NovaServer:
 
     @access_i_pv4.setter
     def access_i_pv4(self, access_i_pv4):
-        """Sets the access_i_pv4 of this NovaServer.
+        r"""Sets the access_i_pv4 of this NovaServer.
 
         预留属性。
 
@@ -1151,7 +1151,7 @@ class NovaServer:
 
     @property
     def access_i_pv6(self):
-        """Gets the access_i_pv6 of this NovaServer.
+        r"""Gets the access_i_pv6 of this NovaServer.
 
         预留属性。
 
@@ -1162,7 +1162,7 @@ class NovaServer:
 
     @access_i_pv6.setter
     def access_i_pv6(self, access_i_pv6):
-        """Sets the access_i_pv6 of this NovaServer.
+        r"""Sets the access_i_pv6 of this NovaServer.
 
         预留属性。
 
@@ -1173,7 +1173,7 @@ class NovaServer:
 
     @property
     def config_drive(self):
-        """Gets the config_drive of this NovaServer.
+        r"""Gets the config_drive of this NovaServer.
 
         预留属性。
 
@@ -1184,7 +1184,7 @@ class NovaServer:
 
     @config_drive.setter
     def config_drive(self, config_drive):
-        """Sets the config_drive of this NovaServer.
+        r"""Sets the config_drive of this NovaServer.
 
         预留属性。
 
@@ -1195,7 +1195,7 @@ class NovaServer:
 
     @property
     def progress(self):
-        """Gets the progress of this NovaServer.
+        r"""Gets the progress of this NovaServer.
 
         预留属性
 
@@ -1206,7 +1206,7 @@ class NovaServer:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this NovaServer.
+        r"""Sets the progress of this NovaServer.
 
         预留属性
 
@@ -1217,7 +1217,7 @@ class NovaServer:
 
     @property
     def osscheduler_hints(self):
-        """Gets the osscheduler_hints of this NovaServer.
+        r"""Gets the osscheduler_hints of this NovaServer.
 
         :return: The osscheduler_hints of this NovaServer.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaServerSchedulerHints`
@@ -1226,7 +1226,7 @@ class NovaServer:
 
     @osscheduler_hints.setter
     def osscheduler_hints(self, osscheduler_hints):
-        """Sets the osscheduler_hints of this NovaServer.
+        r"""Sets the osscheduler_hints of this NovaServer.
 
         :param osscheduler_hints: The osscheduler_hints of this NovaServer.
         :type osscheduler_hints: :class:`huaweicloudsdkecs.v2.NovaServerSchedulerHints`

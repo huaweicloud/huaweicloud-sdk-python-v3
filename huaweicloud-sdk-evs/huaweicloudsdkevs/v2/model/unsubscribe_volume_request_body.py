@@ -25,7 +25,7 @@ class UnsubscribeVolumeRequestBody:
     }
 
     def __init__(self, volume_ids=None):
-        """UnsubscribeVolumeRequestBody
+        r"""UnsubscribeVolumeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UnsubscribeVolumeRequestBody:
 
     @property
     def volume_ids(self):
-        """Gets the volume_ids of this UnsubscribeVolumeRequestBody.
+        r"""Gets the volume_ids of this UnsubscribeVolumeRequestBody.
 
         退订包周期云硬盘的结果。
 
@@ -53,7 +53,7 @@ class UnsubscribeVolumeRequestBody:
 
     @volume_ids.setter
     def volume_ids(self, volume_ids):
-        """Sets the volume_ids of this UnsubscribeVolumeRequestBody.
+        r"""Sets the volume_ids of this UnsubscribeVolumeRequestBody.
 
         退订包周期云硬盘的结果。
 

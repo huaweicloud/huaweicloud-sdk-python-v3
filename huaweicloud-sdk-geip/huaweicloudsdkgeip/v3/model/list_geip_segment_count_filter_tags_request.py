@@ -25,7 +25,7 @@ class ListGeipSegmentCountFilterTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListGeipSegmentCountFilterTagsRequest
+        r"""ListGeipSegmentCountFilterTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListGeipSegmentCountFilterTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListGeipSegmentCountFilterTagsRequest.
+        r"""Gets the body of this ListGeipSegmentCountFilterTagsRequest.
 
         :return: The body of this ListGeipSegmentCountFilterTagsRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.ListResourcesByTagsRequestBody`
@@ -52,7 +52,7 @@ class ListGeipSegmentCountFilterTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListGeipSegmentCountFilterTagsRequest.
+        r"""Sets the body of this ListGeipSegmentCountFilterTagsRequest.
 
         :param body: The body of this ListGeipSegmentCountFilterTagsRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.ListResourcesByTagsRequestBody`

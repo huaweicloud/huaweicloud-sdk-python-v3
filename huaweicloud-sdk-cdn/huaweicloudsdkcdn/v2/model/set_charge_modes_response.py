@@ -36,7 +36,7 @@ class SetChargeModesResponse(SdkResponse):
     }
 
     def __init__(self, charge_mode=None, product_type=None, effective_time=None, create_time=None, service_area=None, status=None):
-        """SetChargeModesResponse
+        r"""SetChargeModesResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class SetChargeModesResponse(SdkResponse):
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this SetChargeModesResponse.
+        r"""Gets the charge_mode of this SetChargeModesResponse.
 
         账号的计费模式
 
@@ -90,7 +90,7 @@ class SetChargeModesResponse(SdkResponse):
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this SetChargeModesResponse.
+        r"""Sets the charge_mode of this SetChargeModesResponse.
 
         账号的计费模式
 
@@ -101,7 +101,7 @@ class SetChargeModesResponse(SdkResponse):
 
     @property
     def product_type(self):
-        """Gets the product_type of this SetChargeModesResponse.
+        r"""Gets the product_type of this SetChargeModesResponse.
 
         加速类型
 
@@ -112,7 +112,7 @@ class SetChargeModesResponse(SdkResponse):
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this SetChargeModesResponse.
+        r"""Sets the product_type of this SetChargeModesResponse.
 
         加速类型
 
@@ -123,7 +123,7 @@ class SetChargeModesResponse(SdkResponse):
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this SetChargeModesResponse.
+        r"""Gets the effective_time of this SetChargeModesResponse.
 
         该模式生效时间
 
@@ -134,7 +134,7 @@ class SetChargeModesResponse(SdkResponse):
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this SetChargeModesResponse.
+        r"""Sets the effective_time of this SetChargeModesResponse.
 
         该模式生效时间
 
@@ -145,7 +145,7 @@ class SetChargeModesResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this SetChargeModesResponse.
+        r"""Gets the create_time of this SetChargeModesResponse.
 
         创建时间
 
@@ -156,7 +156,7 @@ class SetChargeModesResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SetChargeModesResponse.
+        r"""Sets the create_time of this SetChargeModesResponse.
 
         创建时间
 
@@ -167,7 +167,7 @@ class SetChargeModesResponse(SdkResponse):
 
     @property
     def service_area(self):
-        """Gets the service_area of this SetChargeModesResponse.
+        r"""Gets the service_area of this SetChargeModesResponse.
 
         该模式的区域
 
@@ -178,7 +178,7 @@ class SetChargeModesResponse(SdkResponse):
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this SetChargeModesResponse.
+        r"""Sets the service_area of this SetChargeModesResponse.
 
         该模式的区域
 
@@ -189,7 +189,7 @@ class SetChargeModesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this SetChargeModesResponse.
+        r"""Gets the status of this SetChargeModesResponse.
 
         状态,首次开通状态为active,之后修改为upcoming
 
@@ -200,7 +200,7 @@ class SetChargeModesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SetChargeModesResponse.
+        r"""Sets the status of this SetChargeModesResponse.
 
         状态,首次开通状态为active,之后修改为upcoming
 

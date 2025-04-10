@@ -45,7 +45,7 @@ class GetTemplatesRequest:
     }
 
     def __init__(self, platform=None, language=None, pipeline=None, entertype=None, search=None, dateorder=None, usedtimeorder=None, type=None, region=None, page_no=None, page_size=None):
-        """GetTemplatesRequest
+        r"""GetTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class GetTemplatesRequest:
 
     @property
     def platform(self):
-        """Gets the platform of this GetTemplatesRequest.
+        r"""Gets the platform of this GetTemplatesRequest.
 
         模板平台类型
 
@@ -122,7 +122,7 @@ class GetTemplatesRequest:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this GetTemplatesRequest.
+        r"""Sets the platform of this GetTemplatesRequest.
 
         模板平台类型
 
@@ -133,7 +133,7 @@ class GetTemplatesRequest:
 
     @property
     def language(self):
-        """Gets the language of this GetTemplatesRequest.
+        r"""Gets the language of this GetTemplatesRequest.
 
         语言类型
 
@@ -144,7 +144,7 @@ class GetTemplatesRequest:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this GetTemplatesRequest.
+        r"""Sets the language of this GetTemplatesRequest.
 
         语言类型
 
@@ -155,7 +155,7 @@ class GetTemplatesRequest:
 
     @property
     def pipeline(self):
-        """Gets the pipeline of this GetTemplatesRequest.
+        r"""Gets the pipeline of this GetTemplatesRequest.
 
         是否支持流水线
 
@@ -166,7 +166,7 @@ class GetTemplatesRequest:
 
     @pipeline.setter
     def pipeline(self, pipeline):
-        """Sets the pipeline of this GetTemplatesRequest.
+        r"""Sets the pipeline of this GetTemplatesRequest.
 
         是否支持流水线
 
@@ -177,7 +177,7 @@ class GetTemplatesRequest:
 
     @property
     def entertype(self):
-        """Gets the entertype of this GetTemplatesRequest.
+        r"""Gets the entertype of this GetTemplatesRequest.
 
         模板分类
 
@@ -188,7 +188,7 @@ class GetTemplatesRequest:
 
     @entertype.setter
     def entertype(self, entertype):
-        """Sets the entertype of this GetTemplatesRequest.
+        r"""Sets the entertype of this GetTemplatesRequest.
 
         模板分类
 
@@ -199,7 +199,7 @@ class GetTemplatesRequest:
 
     @property
     def search(self):
-        """Gets the search of this GetTemplatesRequest.
+        r"""Gets the search of this GetTemplatesRequest.
 
         模板名称
 
@@ -210,7 +210,7 @@ class GetTemplatesRequest:
 
     @search.setter
     def search(self, search):
-        """Sets the search of this GetTemplatesRequest.
+        r"""Sets the search of this GetTemplatesRequest.
 
         模板名称
 
@@ -221,7 +221,7 @@ class GetTemplatesRequest:
 
     @property
     def dateorder(self):
-        """Gets the dateorder of this GetTemplatesRequest.
+        r"""Gets the dateorder of this GetTemplatesRequest.
 
         模板日期排序
 
@@ -232,7 +232,7 @@ class GetTemplatesRequest:
 
     @dateorder.setter
     def dateorder(self, dateorder):
-        """Sets the dateorder of this GetTemplatesRequest.
+        r"""Sets the dateorder of this GetTemplatesRequest.
 
         模板日期排序
 
@@ -243,7 +243,7 @@ class GetTemplatesRequest:
 
     @property
     def usedtimeorder(self):
-        """Gets the usedtimeorder of this GetTemplatesRequest.
+        r"""Gets the usedtimeorder of this GetTemplatesRequest.
 
         模板引用次数排序
 
@@ -254,7 +254,7 @@ class GetTemplatesRequest:
 
     @usedtimeorder.setter
     def usedtimeorder(self, usedtimeorder):
-        """Sets the usedtimeorder of this GetTemplatesRequest.
+        r"""Sets the usedtimeorder of this GetTemplatesRequest.
 
         模板引用次数排序
 
@@ -265,7 +265,7 @@ class GetTemplatesRequest:
 
     @property
     def type(self):
-        """Gets the type of this GetTemplatesRequest.
+        r"""Gets the type of this GetTemplatesRequest.
 
         模板公开类型
 
@@ -276,7 +276,7 @@ class GetTemplatesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GetTemplatesRequest.
+        r"""Sets the type of this GetTemplatesRequest.
 
         模板公开类型
 
@@ -287,7 +287,7 @@ class GetTemplatesRequest:
 
     @property
     def region(self):
-        """Gets the region of this GetTemplatesRequest.
+        r"""Gets the region of this GetTemplatesRequest.
 
         大区名称
 
@@ -298,7 +298,7 @@ class GetTemplatesRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this GetTemplatesRequest.
+        r"""Sets the region of this GetTemplatesRequest.
 
         大区名称
 
@@ -309,7 +309,7 @@ class GetTemplatesRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this GetTemplatesRequest.
+        r"""Gets the page_no of this GetTemplatesRequest.
 
         分页页数
 
@@ -320,7 +320,7 @@ class GetTemplatesRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this GetTemplatesRequest.
+        r"""Sets the page_no of this GetTemplatesRequest.
 
         分页页数
 
@@ -331,7 +331,7 @@ class GetTemplatesRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this GetTemplatesRequest.
+        r"""Gets the page_size of this GetTemplatesRequest.
 
         每页数据数
 
@@ -342,7 +342,7 @@ class GetTemplatesRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this GetTemplatesRequest.
+        r"""Sets the page_size of this GetTemplatesRequest.
 
         每页数据数
 

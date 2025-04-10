@@ -30,7 +30,7 @@ class ShowMetricsDataResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_message=None, metrics=None):
-        """ShowMetricsDataResponse
+        r"""ShowMetricsDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowMetricsDataResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowMetricsDataResponse.
+        r"""Gets the error_code of this ShowMetricsDataResponse.
 
         响应码。
 
@@ -69,7 +69,7 @@ class ShowMetricsDataResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowMetricsDataResponse.
+        r"""Sets the error_code of this ShowMetricsDataResponse.
 
         响应码。
 
@@ -80,7 +80,7 @@ class ShowMetricsDataResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ShowMetricsDataResponse.
+        r"""Gets the error_message of this ShowMetricsDataResponse.
 
         响应信息描述。
 
@@ -91,7 +91,7 @@ class ShowMetricsDataResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ShowMetricsDataResponse.
+        r"""Sets the error_message of this ShowMetricsDataResponse.
 
         响应信息描述。
 
@@ -102,7 +102,7 @@ class ShowMetricsDataResponse(SdkResponse):
 
     @property
     def metrics(self):
-        """Gets the metrics of this ShowMetricsDataResponse.
+        r"""Gets the metrics of this ShowMetricsDataResponse.
 
         指标对象列表。
 
@@ -113,7 +113,7 @@ class ShowMetricsDataResponse(SdkResponse):
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ShowMetricsDataResponse.
+        r"""Sets the metrics of this ShowMetricsDataResponse.
 
         指标对象列表。
 

@@ -25,7 +25,7 @@ class CheckClientCaCertificateRequest:
     }
 
     def __init__(self, body=None):
-        """CheckClientCaCertificateRequest
+        r"""CheckClientCaCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckClientCaCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckClientCaCertificateRequest.
+        r"""Gets the body of this CheckClientCaCertificateRequest.
 
         :return: The body of this CheckClientCaCertificateRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.ImportClientCaCertificateRequestBody`
@@ -52,7 +52,7 @@ class CheckClientCaCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckClientCaCertificateRequest.
+        r"""Sets the body of this CheckClientCaCertificateRequest.
 
         :param body: The body of this CheckClientCaCertificateRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.ImportClientCaCertificateRequestBody`

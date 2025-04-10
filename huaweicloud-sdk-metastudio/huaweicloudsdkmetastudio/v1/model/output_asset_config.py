@@ -25,7 +25,7 @@ class OutputAssetConfig:
     }
 
     def __init__(self, asset_name=None):
-        """OutputAssetConfig
+        r"""OutputAssetConfig
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OutputAssetConfig:
 
     @property
     def asset_name(self):
-        """Gets the asset_name of this OutputAssetConfig.
+        r"""Gets the asset_name of this OutputAssetConfig.
 
         **参数解释**： 输出视频资产名称。 > * 视频资产名称最大长度支持256；文件名称最大长度支持240（超过长度的会被舍弃）  **约束限制**： 不涉及。 **取值范围**： 字符长度0-256位。 **默认取值**： 不涉及。
 
@@ -53,7 +53,7 @@ class OutputAssetConfig:
 
     @asset_name.setter
     def asset_name(self, asset_name):
-        """Sets the asset_name of this OutputAssetConfig.
+        r"""Sets the asset_name of this OutputAssetConfig.
 
         **参数解释**： 输出视频资产名称。 > * 视频资产名称最大长度支持256；文件名称最大长度支持240（超过长度的会被舍弃）  **约束限制**： 不涉及。 **取值范围**： 字符长度0-256位。 **默认取值**： 不涉及。
 

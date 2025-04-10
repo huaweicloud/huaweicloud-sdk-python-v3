@@ -28,7 +28,7 @@ class ListQueryHttpCodeResponse(SdkResponse):
     }
 
     def __init__(self, data_series=None, x_request_id=None):
-        """ListQueryHttpCodeResponse
+        r"""ListQueryHttpCodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListQueryHttpCodeResponse(SdkResponse):
 
     @property
     def data_series(self):
-        """Gets the data_series of this ListQueryHttpCodeResponse.
+        r"""Gets the data_series of this ListQueryHttpCodeResponse.
 
         基于时间轴的状态码
 
@@ -62,7 +62,7 @@ class ListQueryHttpCodeResponse(SdkResponse):
 
     @data_series.setter
     def data_series(self, data_series):
-        """Sets the data_series of this ListQueryHttpCodeResponse.
+        r"""Sets the data_series of this ListQueryHttpCodeResponse.
 
         基于时间轴的状态码
 
@@ -73,7 +73,7 @@ class ListQueryHttpCodeResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListQueryHttpCodeResponse.
+        r"""Gets the x_request_id of this ListQueryHttpCodeResponse.
 
         :return: The x_request_id of this ListQueryHttpCodeResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListQueryHttpCodeResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListQueryHttpCodeResponse.
+        r"""Sets the x_request_id of this ListQueryHttpCodeResponse.
 
         :param x_request_id: The x_request_id of this ListQueryHttpCodeResponse.
         :type x_request_id: str

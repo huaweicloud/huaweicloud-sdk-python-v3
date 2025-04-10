@@ -29,7 +29,7 @@ class ResourcePolicyItem:
     }
 
     def __init__(self, resource_id=None, resource_name=None, resource_type=None):
-        """ResourcePolicyItem
+        r"""ResourcePolicyItem
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ResourcePolicyItem:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourcePolicyItem.
+        r"""Gets the resource_id of this ResourcePolicyItem.
 
         资源id
 
@@ -65,7 +65,7 @@ class ResourcePolicyItem:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourcePolicyItem.
+        r"""Sets the resource_id of this ResourcePolicyItem.
 
         资源id
 
@@ -76,7 +76,7 @@ class ResourcePolicyItem:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ResourcePolicyItem.
+        r"""Gets the resource_name of this ResourcePolicyItem.
 
         资源名称
 
@@ -87,7 +87,7 @@ class ResourcePolicyItem:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ResourcePolicyItem.
+        r"""Sets the resource_name of this ResourcePolicyItem.
 
         资源名称
 
@@ -98,7 +98,7 @@ class ResourcePolicyItem:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ResourcePolicyItem.
+        r"""Gets the resource_type of this ResourcePolicyItem.
 
         资源类型:DATA_CONNECTION,AGENCY
 
@@ -109,7 +109,7 @@ class ResourcePolicyItem:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ResourcePolicyItem.
+        r"""Sets the resource_type of this ResourcePolicyItem.
 
         资源类型:DATA_CONNECTION,AGENCY
 

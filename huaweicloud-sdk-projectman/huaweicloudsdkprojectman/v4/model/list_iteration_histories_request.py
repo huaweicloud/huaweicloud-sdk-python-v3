@@ -29,7 +29,7 @@ class ListIterationHistoriesRequest:
     }
 
     def __init__(self, iteration_id=None, offset=None, limit=None):
-        """ListIterationHistoriesRequest
+        r"""ListIterationHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListIterationHistoriesRequest:
 
     @property
     def iteration_id(self):
-        """Gets the iteration_id of this ListIterationHistoriesRequest.
+        r"""Gets the iteration_id of this ListIterationHistoriesRequest.
 
         迭代id
 
@@ -67,7 +67,7 @@ class ListIterationHistoriesRequest:
 
     @iteration_id.setter
     def iteration_id(self, iteration_id):
-        """Sets the iteration_id of this ListIterationHistoriesRequest.
+        r"""Sets the iteration_id of this ListIterationHistoriesRequest.
 
         迭代id
 
@@ -78,7 +78,7 @@ class ListIterationHistoriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListIterationHistoriesRequest.
+        r"""Gets the offset of this ListIterationHistoriesRequest.
 
         偏移量
 
@@ -89,7 +89,7 @@ class ListIterationHistoriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListIterationHistoriesRequest.
+        r"""Sets the offset of this ListIterationHistoriesRequest.
 
         偏移量
 
@@ -100,7 +100,7 @@ class ListIterationHistoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListIterationHistoriesRequest.
+        r"""Gets the limit of this ListIterationHistoriesRequest.
 
         每页数量，最大为100
 
@@ -111,7 +111,7 @@ class ListIterationHistoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListIterationHistoriesRequest.
+        r"""Sets the limit of this ListIterationHistoriesRequest.
 
         每页数量，最大为100
 

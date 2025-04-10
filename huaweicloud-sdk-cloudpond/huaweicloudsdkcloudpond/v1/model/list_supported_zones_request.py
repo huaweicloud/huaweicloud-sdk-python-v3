@@ -33,7 +33,7 @@ class ListSupportedZonesRequest:
     }
 
     def __init__(self, x_language=None, limit=None, marker=None, sort_key=None, sort_dir=None):
-        """ListSupportedZonesRequest
+        r"""ListSupportedZonesRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListSupportedZonesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListSupportedZonesRequest.
+        r"""Gets the x_language of this ListSupportedZonesRequest.
 
         选择接口返回信息的语言类型，默认为中文\"zh-cn\"
 
@@ -82,7 +82,7 @@ class ListSupportedZonesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListSupportedZonesRequest.
+        r"""Sets the x_language of this ListSupportedZonesRequest.
 
         选择接口返回信息的语言类型，默认为中文\"zh-cn\"
 
@@ -93,7 +93,7 @@ class ListSupportedZonesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSupportedZonesRequest.
+        r"""Gets the limit of this ListSupportedZonesRequest.
 
         每页的数量
 
@@ -104,7 +104,7 @@ class ListSupportedZonesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSupportedZonesRequest.
+        r"""Sets the limit of this ListSupportedZonesRequest.
 
         每页的数量
 
@@ -115,7 +115,7 @@ class ListSupportedZonesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSupportedZonesRequest.
+        r"""Gets the marker of this ListSupportedZonesRequest.
 
         分页标识
 
@@ -126,7 +126,7 @@ class ListSupportedZonesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSupportedZonesRequest.
+        r"""Sets the marker of this ListSupportedZonesRequest.
 
         分页标识
 
@@ -137,7 +137,7 @@ class ListSupportedZonesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListSupportedZonesRequest.
+        r"""Gets the sort_key of this ListSupportedZonesRequest.
 
         排序字段
 
@@ -148,7 +148,7 @@ class ListSupportedZonesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListSupportedZonesRequest.
+        r"""Sets the sort_key of this ListSupportedZonesRequest.
 
         排序字段
 
@@ -159,7 +159,7 @@ class ListSupportedZonesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListSupportedZonesRequest.
+        r"""Gets the sort_dir of this ListSupportedZonesRequest.
 
         排序方向，取值范围： - desc：降序 - acs：升序
 
@@ -170,7 +170,7 @@ class ListSupportedZonesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListSupportedZonesRequest.
+        r"""Sets the sort_dir of this ListSupportedZonesRequest.
 
         排序方向，取值范围： - desc：降序 - acs：升序
 

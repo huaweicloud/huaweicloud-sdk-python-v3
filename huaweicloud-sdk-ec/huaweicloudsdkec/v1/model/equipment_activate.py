@@ -31,7 +31,7 @@ class EquipmentActivate:
     }
 
     def __init__(self, name=None, type=None, esn=None, ha_type=None):
-        """EquipmentActivate
+        r"""EquipmentActivate
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class EquipmentActivate:
 
     @property
     def name(self):
-        """Gets the name of this EquipmentActivate.
+        r"""Gets the name of this EquipmentActivate.
 
         设备名称
 
@@ -71,7 +71,7 @@ class EquipmentActivate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EquipmentActivate.
+        r"""Sets the name of this EquipmentActivate.
 
         设备名称
 
@@ -82,7 +82,7 @@ class EquipmentActivate:
 
     @property
     def type(self):
-        """Gets the type of this EquipmentActivate.
+        r"""Gets the type of this EquipmentActivate.
 
         设备类型
 
@@ -93,7 +93,7 @@ class EquipmentActivate:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EquipmentActivate.
+        r"""Sets the type of this EquipmentActivate.
 
         设备类型
 
@@ -104,7 +104,7 @@ class EquipmentActivate:
 
     @property
     def esn(self):
-        """Gets the esn of this EquipmentActivate.
+        r"""Gets the esn of this EquipmentActivate.
 
         esn
 
@@ -115,7 +115,7 @@ class EquipmentActivate:
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this EquipmentActivate.
+        r"""Sets the esn of this EquipmentActivate.
 
         esn
 
@@ -126,7 +126,7 @@ class EquipmentActivate:
 
     @property
     def ha_type(self):
-        """Gets the ha_type of this EquipmentActivate.
+        r"""Gets the ha_type of this EquipmentActivate.
 
         高可用类型
 
@@ -137,7 +137,7 @@ class EquipmentActivate:
 
     @ha_type.setter
     def ha_type(self, ha_type):
-        """Sets the ha_type of this EquipmentActivate.
+        r"""Sets the ha_type of this EquipmentActivate.
 
         高可用类型
 

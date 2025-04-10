@@ -33,7 +33,7 @@ class PartitionResult:
     }
 
     def __init__(self, status=None, partition_id=None, hash_range=None, sequence_number_range=None, parent_partitions=None):
-        """PartitionResult
+        r"""PartitionResult
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PartitionResult:
 
     @property
     def status(self):
-        """Gets the status of this PartitionResult.
+        r"""Gets the status of this PartitionResult.
 
         分区的当前状态。  - CREATING：创建中 - ACTIVE：可用 - DELETED：删除中 - EXPIRED：已过期
 
@@ -82,7 +82,7 @@ class PartitionResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PartitionResult.
+        r"""Sets the status of this PartitionResult.
 
         分区的当前状态。  - CREATING：创建中 - ACTIVE：可用 - DELETED：删除中 - EXPIRED：已过期
 
@@ -93,7 +93,7 @@ class PartitionResult:
 
     @property
     def partition_id(self):
-        """Gets the partition_id of this PartitionResult.
+        r"""Gets the partition_id of this PartitionResult.
 
         分区的唯一标识符。
 
@@ -104,7 +104,7 @@ class PartitionResult:
 
     @partition_id.setter
     def partition_id(self, partition_id):
-        """Sets the partition_id of this PartitionResult.
+        r"""Sets the partition_id of this PartitionResult.
 
         分区的唯一标识符。
 
@@ -115,7 +115,7 @@ class PartitionResult:
 
     @property
     def hash_range(self):
-        """Gets the hash_range of this PartitionResult.
+        r"""Gets the hash_range of this PartitionResult.
 
         分区的可能哈希键值范围。
 
@@ -126,7 +126,7 @@ class PartitionResult:
 
     @hash_range.setter
     def hash_range(self, hash_range):
-        """Sets the hash_range of this PartitionResult.
+        r"""Sets the hash_range of this PartitionResult.
 
         分区的可能哈希键值范围。
 
@@ -137,7 +137,7 @@ class PartitionResult:
 
     @property
     def sequence_number_range(self):
-        """Gets the sequence_number_range of this PartitionResult.
+        r"""Gets the sequence_number_range of this PartitionResult.
 
         分区的序列号范围。
 
@@ -148,7 +148,7 @@ class PartitionResult:
 
     @sequence_number_range.setter
     def sequence_number_range(self, sequence_number_range):
-        """Sets the sequence_number_range of this PartitionResult.
+        r"""Sets the sequence_number_range of this PartitionResult.
 
         分区的序列号范围。
 
@@ -159,7 +159,7 @@ class PartitionResult:
 
     @property
     def parent_partitions(self):
-        """Gets the parent_partitions of this PartitionResult.
+        r"""Gets the parent_partitions of this PartitionResult.
 
         父分区。
 
@@ -170,7 +170,7 @@ class PartitionResult:
 
     @parent_partitions.setter
     def parent_partitions(self, parent_partitions):
-        """Sets the parent_partitions of this PartitionResult.
+        r"""Sets the parent_partitions of this PartitionResult.
 
         父分区。
 

@@ -44,7 +44,7 @@ class ShowHotWordsResponse(SdkResponse):
     }
 
     def __init__(self, hot_words_id=None, robot_id=None, hot_words_type=None, vocabulary_id=None, sis_project_id=None, region=None, language=None, create_time=None, update_time=None, x_request_id=None):
-        """ShowHotWordsResponse
+        r"""ShowHotWordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @property
     def hot_words_id(self):
-        """Gets the hot_words_id of this ShowHotWordsResponse.
+        r"""Gets the hot_words_id of this ShowHotWordsResponse.
 
         热词记录ID。
 
@@ -118,7 +118,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @hot_words_id.setter
     def hot_words_id(self, hot_words_id):
-        """Sets the hot_words_id of this ShowHotWordsResponse.
+        r"""Sets the hot_words_id of this ShowHotWordsResponse.
 
         热词记录ID。
 
@@ -129,7 +129,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this ShowHotWordsResponse.
+        r"""Gets the robot_id of this ShowHotWordsResponse.
 
         应用ID。
 
@@ -140,7 +140,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this ShowHotWordsResponse.
+        r"""Sets the robot_id of this ShowHotWordsResponse.
 
         应用ID。
 
@@ -151,7 +151,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @property
     def hot_words_type(self):
-        """Gets the hot_words_type of this ShowHotWordsResponse.
+        r"""Gets the hot_words_type of this ShowHotWordsResponse.
 
         :return: The hot_words_type of this ShowHotWordsResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
@@ -160,7 +160,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @hot_words_type.setter
     def hot_words_type(self, hot_words_type):
-        """Sets the hot_words_type of this ShowHotWordsResponse.
+        r"""Sets the hot_words_type of this ShowHotWordsResponse.
 
         :param hot_words_type: The hot_words_type of this ShowHotWordsResponse.
         :type hot_words_type: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
@@ -169,7 +169,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @property
     def vocabulary_id(self):
-        """Gets the vocabulary_id of this ShowHotWordsResponse.
+        r"""Gets the vocabulary_id of this ShowHotWordsResponse.
 
         热词ID(sis中配置)。
 
@@ -180,7 +180,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @vocabulary_id.setter
     def vocabulary_id(self, vocabulary_id):
-        """Sets the vocabulary_id of this ShowHotWordsResponse.
+        r"""Sets the vocabulary_id of this ShowHotWordsResponse.
 
         热词ID(sis中配置)。
 
@@ -191,7 +191,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @property
     def sis_project_id(self):
-        """Gets the sis_project_id of this ShowHotWordsResponse.
+        r"""Gets the sis_project_id of this ShowHotWordsResponse.
 
         SIS服务所在区域projectId
 
@@ -202,7 +202,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @sis_project_id.setter
     def sis_project_id(self, sis_project_id):
-        """Sets the sis_project_id of this ShowHotWordsResponse.
+        r"""Sets the sis_project_id of this ShowHotWordsResponse.
 
         SIS服务所在区域projectId
 
@@ -213,7 +213,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this ShowHotWordsResponse.
+        r"""Gets the region of this ShowHotWordsResponse.
 
         对接SIS服务的区域。 > 0：北京四；3：上海一；
 
@@ -224,7 +224,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowHotWordsResponse.
+        r"""Sets the region of this ShowHotWordsResponse.
 
         对接SIS服务的区域。 > 0：北京四；3：上海一；
 
@@ -235,7 +235,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this ShowHotWordsResponse.
+        r"""Gets the language of this ShowHotWordsResponse.
 
         :return: The language of this ShowHotWordsResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -244,7 +244,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ShowHotWordsResponse.
+        r"""Sets the language of this ShowHotWordsResponse.
 
         :param language: The language of this ShowHotWordsResponse.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -253,7 +253,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowHotWordsResponse.
+        r"""Gets the create_time of this ShowHotWordsResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -264,7 +264,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowHotWordsResponse.
+        r"""Sets the create_time of this ShowHotWordsResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -275,7 +275,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowHotWordsResponse.
+        r"""Gets the update_time of this ShowHotWordsResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -286,7 +286,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowHotWordsResponse.
+        r"""Sets the update_time of this ShowHotWordsResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -297,7 +297,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowHotWordsResponse.
+        r"""Gets the x_request_id of this ShowHotWordsResponse.
 
         :return: The x_request_id of this ShowHotWordsResponse.
         :rtype: str
@@ -306,7 +306,7 @@ class ShowHotWordsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowHotWordsResponse.
+        r"""Sets the x_request_id of this ShowHotWordsResponse.
 
         :param x_request_id: The x_request_id of this ShowHotWordsResponse.
         :type x_request_id: str

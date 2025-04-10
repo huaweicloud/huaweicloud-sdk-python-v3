@@ -27,7 +27,7 @@ class UserTopicPerms:
     }
 
     def __init__(self, name=None, perm=None):
-        """UserTopicPerms
+        r"""UserTopicPerms
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UserTopicPerms:
 
     @property
     def name(self):
-        """Gets the name of this UserTopicPerms.
+        r"""Gets the name of this UserTopicPerms.
 
         主题名称。
 
@@ -61,7 +61,7 @@ class UserTopicPerms:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UserTopicPerms.
+        r"""Sets the name of this UserTopicPerms.
 
         主题名称。
 
@@ -72,7 +72,7 @@ class UserTopicPerms:
 
     @property
     def perm(self):
-        """Gets the perm of this UserTopicPerms.
+        r"""Gets the perm of this UserTopicPerms.
 
         权限。
 
@@ -83,7 +83,7 @@ class UserTopicPerms:
 
     @perm.setter
     def perm(self, perm):
-        """Sets the perm of this UserTopicPerms.
+        r"""Sets the perm of this UserTopicPerms.
 
         权限。
 

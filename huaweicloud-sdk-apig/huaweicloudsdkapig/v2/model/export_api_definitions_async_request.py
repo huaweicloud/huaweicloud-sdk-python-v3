@@ -29,7 +29,7 @@ class ExportApiDefinitionsAsyncRequest:
     }
 
     def __init__(self, instance_id=None, oas_version=None, body=None):
-        """ExportApiDefinitionsAsyncRequest
+        r"""ExportApiDefinitionsAsyncRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ExportApiDefinitionsAsyncRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExportApiDefinitionsAsyncRequest.
+        r"""Gets the instance_id of this ExportApiDefinitionsAsyncRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -67,7 +67,7 @@ class ExportApiDefinitionsAsyncRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExportApiDefinitionsAsyncRequest.
+        r"""Sets the instance_id of this ExportApiDefinitionsAsyncRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -78,7 +78,7 @@ class ExportApiDefinitionsAsyncRequest:
 
     @property
     def oas_version(self):
-        """Gets the oas_version of this ExportApiDefinitionsAsyncRequest.
+        r"""Gets the oas_version of this ExportApiDefinitionsAsyncRequest.
 
         OpenAPI版本
 
@@ -89,7 +89,7 @@ class ExportApiDefinitionsAsyncRequest:
 
     @oas_version.setter
     def oas_version(self, oas_version):
-        """Sets the oas_version of this ExportApiDefinitionsAsyncRequest.
+        r"""Sets the oas_version of this ExportApiDefinitionsAsyncRequest.
 
         OpenAPI版本
 
@@ -100,7 +100,7 @@ class ExportApiDefinitionsAsyncRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExportApiDefinitionsAsyncRequest.
+        r"""Gets the body of this ExportApiDefinitionsAsyncRequest.
 
         :return: The body of this ExportApiDefinitionsAsyncRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.ExportOpenApiReq`
@@ -109,7 +109,7 @@ class ExportApiDefinitionsAsyncRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportApiDefinitionsAsyncRequest.
+        r"""Sets the body of this ExportApiDefinitionsAsyncRequest.
 
         :param body: The body of this ExportApiDefinitionsAsyncRequest.
         :type body: :class:`huaweicloudsdkapig.v2.ExportOpenApiReq`

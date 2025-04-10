@@ -25,7 +25,7 @@ class AddCorpResDTO:
     }
 
     def __init__(self, resource=None):
-        """AddCorpResDTO
+        r"""AddCorpResDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddCorpResDTO:
 
     @property
     def resource(self):
-        """Gets the resource of this AddCorpResDTO.
+        r"""Gets the resource of this AddCorpResDTO.
 
         企业待添加的资源列表。
 
@@ -54,7 +54,7 @@ class AddCorpResDTO:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this AddCorpResDTO.
+        r"""Sets the resource of this AddCorpResDTO.
 
         企业待添加的资源列表。
 

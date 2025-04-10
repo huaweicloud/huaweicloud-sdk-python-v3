@@ -55,7 +55,7 @@ class HostModel:
     }
 
     def __init__(self, id=None, name=None, ip=None, availability_zone_id=None, tags=None, status=None, resource_id=None, flavor=None, type=None, mem=None, cpu=None, root_volume_size=None, data_volume_type=None, data_volume_size=None, data_volume_count=None, node_group_name=None):
-        """HostModel
+        r"""HostModel
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class HostModel:
 
     @property
     def id(self):
-        """Gets the id of this HostModel.
+        r"""Gets the id of this HostModel.
 
         虚拟机ID
 
@@ -159,7 +159,7 @@ class HostModel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HostModel.
+        r"""Sets the id of this HostModel.
 
         虚拟机ID
 
@@ -170,7 +170,7 @@ class HostModel:
 
     @property
     def name(self):
-        """Gets the name of this HostModel.
+        r"""Gets the name of this HostModel.
 
         虚拟机名称
 
@@ -181,7 +181,7 @@ class HostModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HostModel.
+        r"""Sets the name of this HostModel.
 
         虚拟机名称
 
@@ -192,7 +192,7 @@ class HostModel:
 
     @property
     def ip(self):
-        """Gets the ip of this HostModel.
+        r"""Gets the ip of this HostModel.
 
         虚拟机IP地址
 
@@ -203,7 +203,7 @@ class HostModel:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this HostModel.
+        r"""Sets the ip of this HostModel.
 
         虚拟机IP地址
 
@@ -214,7 +214,7 @@ class HostModel:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this HostModel.
+        r"""Gets the availability_zone_id of this HostModel.
 
         可用区域
 
@@ -225,7 +225,7 @@ class HostModel:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this HostModel.
+        r"""Sets the availability_zone_id of this HostModel.
 
         可用区域
 
@@ -236,7 +236,7 @@ class HostModel:
 
     @property
     def tags(self):
-        """Gets the tags of this HostModel.
+        r"""Gets the tags of this HostModel.
 
         标签列表信息
 
@@ -247,7 +247,7 @@ class HostModel:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this HostModel.
+        r"""Sets the tags of this HostModel.
 
         标签列表信息
 
@@ -258,7 +258,7 @@ class HostModel:
 
     @property
     def status(self):
-        """Gets the status of this HostModel.
+        r"""Gets the status of this HostModel.
 
         虚拟机当前状态
 
@@ -269,7 +269,7 @@ class HostModel:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this HostModel.
+        r"""Sets the status of this HostModel.
 
         虚拟机当前状态
 
@@ -280,7 +280,7 @@ class HostModel:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this HostModel.
+        r"""Gets the resource_id of this HostModel.
 
         节点资源ID
 
@@ -291,7 +291,7 @@ class HostModel:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this HostModel.
+        r"""Sets the resource_id of this HostModel.
 
         节点资源ID
 
@@ -302,7 +302,7 @@ class HostModel:
 
     @property
     def flavor(self):
-        """Gets the flavor of this HostModel.
+        r"""Gets the flavor of this HostModel.
 
         虚拟机规格ID
 
@@ -313,7 +313,7 @@ class HostModel:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this HostModel.
+        r"""Sets the flavor of this HostModel.
 
         虚拟机规格ID
 
@@ -324,7 +324,7 @@ class HostModel:
 
     @property
     def type(self):
-        """Gets the type of this HostModel.
+        r"""Gets the type of this HostModel.
 
         虚拟机类型，当前支持MasterNode，CoreNode，TaskNode
 
@@ -335,7 +335,7 @@ class HostModel:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HostModel.
+        r"""Sets the type of this HostModel.
 
         虚拟机类型，当前支持MasterNode，CoreNode，TaskNode
 
@@ -346,7 +346,7 @@ class HostModel:
 
     @property
     def mem(self):
-        """Gets the mem of this HostModel.
+        r"""Gets the mem of this HostModel.
 
         内存
 
@@ -357,7 +357,7 @@ class HostModel:
 
     @mem.setter
     def mem(self, mem):
-        """Sets the mem of this HostModel.
+        r"""Sets the mem of this HostModel.
 
         内存
 
@@ -368,7 +368,7 @@ class HostModel:
 
     @property
     def cpu(self):
-        """Gets the cpu of this HostModel.
+        r"""Gets the cpu of this HostModel.
 
         CPU核数
 
@@ -379,7 +379,7 @@ class HostModel:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this HostModel.
+        r"""Sets the cpu of this HostModel.
 
         CPU核数
 
@@ -390,7 +390,7 @@ class HostModel:
 
     @property
     def root_volume_size(self):
-        """Gets the root_volume_size of this HostModel.
+        r"""Gets the root_volume_size of this HostModel.
 
         操作系统盘容量
 
@@ -401,7 +401,7 @@ class HostModel:
 
     @root_volume_size.setter
     def root_volume_size(self, root_volume_size):
-        """Sets the root_volume_size of this HostModel.
+        r"""Sets the root_volume_size of this HostModel.
 
         操作系统盘容量
 
@@ -412,7 +412,7 @@ class HostModel:
 
     @property
     def data_volume_type(self):
-        """Gets the data_volume_type of this HostModel.
+        r"""Gets the data_volume_type of this HostModel.
 
         数据盘类型
 
@@ -423,7 +423,7 @@ class HostModel:
 
     @data_volume_type.setter
     def data_volume_type(self, data_volume_type):
-        """Sets the data_volume_type of this HostModel.
+        r"""Sets the data_volume_type of this HostModel.
 
         数据盘类型
 
@@ -434,7 +434,7 @@ class HostModel:
 
     @property
     def data_volume_size(self):
-        """Gets the data_volume_size of this HostModel.
+        r"""Gets the data_volume_size of this HostModel.
 
         数据盘容量
 
@@ -445,7 +445,7 @@ class HostModel:
 
     @data_volume_size.setter
     def data_volume_size(self, data_volume_size):
-        """Sets the data_volume_size of this HostModel.
+        r"""Sets the data_volume_size of this HostModel.
 
         数据盘容量
 
@@ -456,7 +456,7 @@ class HostModel:
 
     @property
     def data_volume_count(self):
-        """Gets the data_volume_count of this HostModel.
+        r"""Gets the data_volume_count of this HostModel.
 
         数据盘个数
 
@@ -467,7 +467,7 @@ class HostModel:
 
     @data_volume_count.setter
     def data_volume_count(self, data_volume_count):
-        """Sets the data_volume_count of this HostModel.
+        r"""Sets the data_volume_count of this HostModel.
 
         数据盘个数
 
@@ -478,7 +478,7 @@ class HostModel:
 
     @property
     def node_group_name(self):
-        """Gets the node_group_name of this HostModel.
+        r"""Gets the node_group_name of this HostModel.
 
         节点组名称
 
@@ -489,7 +489,7 @@ class HostModel:
 
     @node_group_name.setter
     def node_group_name(self, node_group_name):
-        """Sets the node_group_name of this HostModel.
+        r"""Sets the node_group_name of this HostModel.
 
         节点组名称
 

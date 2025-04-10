@@ -37,7 +37,7 @@ class ListAppGroupRequest:
     }
 
     def __init__(self, limit=None, offset=None, app_server_group_id=None, app_group_id=None, name=None, authorization_type=None, app_type=None):
-        """ListAppGroupRequest
+        r"""ListAppGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListAppGroupRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppGroupRequest.
+        r"""Gets the limit of this ListAppGroupRequest.
 
         单次查询的大小[1-100]。
 
@@ -96,7 +96,7 @@ class ListAppGroupRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppGroupRequest.
+        r"""Sets the limit of this ListAppGroupRequest.
 
         单次查询的大小[1-100]。
 
@@ -107,7 +107,7 @@ class ListAppGroupRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppGroupRequest.
+        r"""Gets the offset of this ListAppGroupRequest.
 
         查询的偏移量。
 
@@ -118,7 +118,7 @@ class ListAppGroupRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppGroupRequest.
+        r"""Sets the offset of this ListAppGroupRequest.
 
         查询的偏移量。
 
@@ -129,7 +129,7 @@ class ListAppGroupRequest:
 
     @property
     def app_server_group_id(self):
-        """Gets the app_server_group_id of this ListAppGroupRequest.
+        r"""Gets the app_server_group_id of this ListAppGroupRequest.
 
         应用服务器组ID。
 
@@ -140,7 +140,7 @@ class ListAppGroupRequest:
 
     @app_server_group_id.setter
     def app_server_group_id(self, app_server_group_id):
-        """Sets the app_server_group_id of this ListAppGroupRequest.
+        r"""Sets the app_server_group_id of this ListAppGroupRequest.
 
         应用服务器组ID。
 
@@ -151,7 +151,7 @@ class ListAppGroupRequest:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this ListAppGroupRequest.
+        r"""Gets the app_group_id of this ListAppGroupRequest.
 
         应用组ID。
 
@@ -162,7 +162,7 @@ class ListAppGroupRequest:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this ListAppGroupRequest.
+        r"""Sets the app_group_id of this ListAppGroupRequest.
 
         应用组ID。
 
@@ -173,7 +173,7 @@ class ListAppGroupRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAppGroupRequest.
+        r"""Gets the name of this ListAppGroupRequest.
 
         应用组名称
 
@@ -184,7 +184,7 @@ class ListAppGroupRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAppGroupRequest.
+        r"""Sets the name of this ListAppGroupRequest.
 
         应用组名称
 
@@ -195,7 +195,7 @@ class ListAppGroupRequest:
 
     @property
     def authorization_type(self):
-        """Gets the authorization_type of this ListAppGroupRequest.
+        r"""Gets the authorization_type of this ListAppGroupRequest.
 
         授权类型： * `APP` - 应用 * `APP_GROUP` - 应用组
 
@@ -206,7 +206,7 @@ class ListAppGroupRequest:
 
     @authorization_type.setter
     def authorization_type(self, authorization_type):
-        """Sets the authorization_type of this ListAppGroupRequest.
+        r"""Sets the authorization_type of this ListAppGroupRequest.
 
         授权类型： * `APP` - 应用 * `APP_GROUP` - 应用组
 
@@ -217,7 +217,7 @@ class ListAppGroupRequest:
 
     @property
     def app_type(self):
-        """Gets the app_type of this ListAppGroupRequest.
+        r"""Gets the app_type of this ListAppGroupRequest.
 
         应用组类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
 
@@ -228,7 +228,7 @@ class ListAppGroupRequest:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ListAppGroupRequest.
+        r"""Sets the app_type of this ListAppGroupRequest.
 
         应用组类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
 

@@ -29,7 +29,7 @@ class PolicyEntity:
     }
 
     def __init__(self, owner=None, user_name=None, access_policy=None):
-        """PolicyEntity
+        r"""PolicyEntity
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PolicyEntity:
 
     @property
     def owner(self):
-        """Gets the owner of this PolicyEntity.
+        r"""Gets the owner of this PolicyEntity.
 
         是否为创建topic时所选择的用户。
 
@@ -68,7 +68,7 @@ class PolicyEntity:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this PolicyEntity.
+        r"""Sets the owner of this PolicyEntity.
 
         是否为创建topic时所选择的用户。
 
@@ -79,7 +79,7 @@ class PolicyEntity:
 
     @property
     def user_name(self):
-        """Gets the user_name of this PolicyEntity.
+        r"""Gets the user_name of this PolicyEntity.
 
         用户名。
 
@@ -90,7 +90,7 @@ class PolicyEntity:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this PolicyEntity.
+        r"""Sets the user_name of this PolicyEntity.
 
         用户名。
 
@@ -101,7 +101,7 @@ class PolicyEntity:
 
     @property
     def access_policy(self):
-        """Gets the access_policy of this PolicyEntity.
+        r"""Gets the access_policy of this PolicyEntity.
 
         权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。
 
@@ -112,7 +112,7 @@ class PolicyEntity:
 
     @access_policy.setter
     def access_policy(self, access_policy):
-        """Sets the access_policy of this PolicyEntity.
+        r"""Sets the access_policy of this PolicyEntity.
 
         权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。
 

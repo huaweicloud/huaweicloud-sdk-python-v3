@@ -27,7 +27,7 @@ class UpdateAutopilotChartRequest:
     }
 
     def __init__(self, chart_id=None, body=None):
-        """UpdateAutopilotChartRequest
+        r"""UpdateAutopilotChartRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAutopilotChartRequest:
 
     @property
     def chart_id(self):
-        """Gets the chart_id of this UpdateAutopilotChartRequest.
+        r"""Gets the chart_id of this UpdateAutopilotChartRequest.
 
         模板的ID
 
@@ -60,7 +60,7 @@ class UpdateAutopilotChartRequest:
 
     @chart_id.setter
     def chart_id(self, chart_id):
-        """Sets the chart_id of this UpdateAutopilotChartRequest.
+        r"""Sets the chart_id of this UpdateAutopilotChartRequest.
 
         模板的ID
 
@@ -71,7 +71,7 @@ class UpdateAutopilotChartRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAutopilotChartRequest.
+        r"""Gets the body of this UpdateAutopilotChartRequest.
 
         :return: The body of this UpdateAutopilotChartRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateAutopilotChartRequestBody`
@@ -80,7 +80,7 @@ class UpdateAutopilotChartRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAutopilotChartRequest.
+        r"""Sets the body of this UpdateAutopilotChartRequest.
 
         :param body: The body of this UpdateAutopilotChartRequest.
         :type body: :class:`huaweicloudsdkcce.v3.UpdateAutopilotChartRequestBody`

@@ -25,7 +25,7 @@ class CouchDBInfo:
     }
 
     def __init__(self, user=None):
-        """CouchDBInfo
+        r"""CouchDBInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CouchDBInfo:
 
     @property
     def user(self):
-        """Gets the user of this CouchDBInfo.
+        r"""Gets the user of this CouchDBInfo.
 
         couchDB用户名称
 
@@ -54,7 +54,7 @@ class CouchDBInfo:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this CouchDBInfo.
+        r"""Sets the user of this CouchDBInfo.
 
         couchDB用户名称
 

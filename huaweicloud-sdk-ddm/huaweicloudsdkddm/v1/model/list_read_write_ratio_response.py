@@ -28,7 +28,7 @@ class ListReadWriteRatioResponse(SdkResponse):
     }
 
     def __init__(self, total_record=None, read_write_ratio_list=None):
-        """ListReadWriteRatioResponse
+        r"""ListReadWriteRatioResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListReadWriteRatioResponse(SdkResponse):
 
     @property
     def total_record(self):
-        """Gets the total_record of this ListReadWriteRatioResponse.
+        r"""Gets the total_record of this ListReadWriteRatioResponse.
 
         DDM读写比例监控信息条数。
 
@@ -62,7 +62,7 @@ class ListReadWriteRatioResponse(SdkResponse):
 
     @total_record.setter
     def total_record(self, total_record):
-        """Sets the total_record of this ListReadWriteRatioResponse.
+        r"""Sets the total_record of this ListReadWriteRatioResponse.
 
         DDM读写比例监控信息条数。
 
@@ -73,7 +73,7 @@ class ListReadWriteRatioResponse(SdkResponse):
 
     @property
     def read_write_ratio_list(self):
-        """Gets the read_write_ratio_list of this ListReadWriteRatioResponse.
+        r"""Gets the read_write_ratio_list of this ListReadWriteRatioResponse.
 
         DDM实例读写次数信息列表的集合。
 
@@ -84,7 +84,7 @@ class ListReadWriteRatioResponse(SdkResponse):
 
     @read_write_ratio_list.setter
     def read_write_ratio_list(self, read_write_ratio_list):
-        """Sets the read_write_ratio_list of this ListReadWriteRatioResponse.
+        r"""Sets the read_write_ratio_list of this ListReadWriteRatioResponse.
 
         DDM实例读写次数信息列表的集合。
 

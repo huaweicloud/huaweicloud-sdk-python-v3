@@ -25,7 +25,7 @@ class CreateSnapshotConfigRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSnapshotConfigRequest
+        r"""CreateSnapshotConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSnapshotConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSnapshotConfigRequest.
+        r"""Gets the body of this CreateSnapshotConfigRequest.
 
         :return: The body of this CreateSnapshotConfigRequest.
         :rtype: :class:`huaweicloudsdklive.v1.LiveSnapshotConfig`
@@ -52,7 +52,7 @@ class CreateSnapshotConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSnapshotConfigRequest.
+        r"""Sets the body of this CreateSnapshotConfigRequest.
 
         :param body: The body of this CreateSnapshotConfigRequest.
         :type body: :class:`huaweicloudsdklive.v1.LiveSnapshotConfig`

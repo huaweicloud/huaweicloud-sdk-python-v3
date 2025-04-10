@@ -25,7 +25,7 @@ class UpdateOwnerRequestBody:
     }
 
     def __init__(self, new_owner=None):
-        """UpdateOwnerRequestBody
+        r"""UpdateOwnerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateOwnerRequestBody:
 
     @property
     def new_owner(self):
-        """Gets the new_owner of this UpdateOwnerRequestBody.
+        r"""Gets the new_owner of this UpdateOwnerRequestBody.
 
         新owner名称。
 
@@ -53,7 +53,7 @@ class UpdateOwnerRequestBody:
 
     @new_owner.setter
     def new_owner(self, new_owner):
-        """Sets the new_owner of this UpdateOwnerRequestBody.
+        r"""Sets the new_owner of this UpdateOwnerRequestBody.
 
         新owner名称。
 

@@ -27,7 +27,7 @@ class ModifyPostgresqlHbaConfRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ModifyPostgresqlHbaConfRequest
+        r"""ModifyPostgresqlHbaConfRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ModifyPostgresqlHbaConfRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ModifyPostgresqlHbaConfRequest.
+        r"""Gets the instance_id of this ModifyPostgresqlHbaConfRequest.
 
         实例id
 
@@ -60,7 +60,7 @@ class ModifyPostgresqlHbaConfRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ModifyPostgresqlHbaConfRequest.
+        r"""Sets the instance_id of this ModifyPostgresqlHbaConfRequest.
 
         实例id
 
@@ -71,7 +71,7 @@ class ModifyPostgresqlHbaConfRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyPostgresqlHbaConfRequest.
+        r"""Gets the body of this ModifyPostgresqlHbaConfRequest.
 
         :return: The body of this ModifyPostgresqlHbaConfRequest.
         :rtype: list[:class:`huaweicloudsdkrds.v3.PostgresqlHbaConf`]
@@ -80,7 +80,7 @@ class ModifyPostgresqlHbaConfRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyPostgresqlHbaConfRequest.
+        r"""Sets the body of this ModifyPostgresqlHbaConfRequest.
 
         :param body: The body of this ModifyPostgresqlHbaConfRequest.
         :type body: list[:class:`huaweicloudsdkrds.v3.PostgresqlHbaConf`]

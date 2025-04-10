@@ -31,7 +31,7 @@ class ShowTechnicalAssetsStatisticRequest:
     }
 
     def __init__(self, workspace=None, tag=None, offset=None, limit=None):
-        """ShowTechnicalAssetsStatisticRequest
+        r"""ShowTechnicalAssetsStatisticRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowTechnicalAssetsStatisticRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowTechnicalAssetsStatisticRequest.
+        r"""Gets the workspace of this ShowTechnicalAssetsStatisticRequest.
 
         DataArts Studio工作空间ID
 
@@ -74,7 +74,7 @@ class ShowTechnicalAssetsStatisticRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowTechnicalAssetsStatisticRequest.
+        r"""Sets the workspace of this ShowTechnicalAssetsStatisticRequest.
 
         DataArts Studio工作空间ID
 
@@ -85,7 +85,7 @@ class ShowTechnicalAssetsStatisticRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ShowTechnicalAssetsStatisticRequest.
+        r"""Gets the tag of this ShowTechnicalAssetsStatisticRequest.
 
         标签名，指定标签名称可以获取此标签对应技术资产的统计信息。
 
@@ -96,7 +96,7 @@ class ShowTechnicalAssetsStatisticRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ShowTechnicalAssetsStatisticRequest.
+        r"""Sets the tag of this ShowTechnicalAssetsStatisticRequest.
 
         标签名，指定标签名称可以获取此标签对应技术资产的统计信息。
 
@@ -107,7 +107,7 @@ class ShowTechnicalAssetsStatisticRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowTechnicalAssetsStatisticRequest.
+        r"""Gets the offset of this ShowTechnicalAssetsStatisticRequest.
 
         分页参数，查询偏移量，默认查询所有
 
@@ -118,7 +118,7 @@ class ShowTechnicalAssetsStatisticRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowTechnicalAssetsStatisticRequest.
+        r"""Sets the offset of this ShowTechnicalAssetsStatisticRequest.
 
         分页参数，查询偏移量，默认查询所有
 
@@ -129,7 +129,7 @@ class ShowTechnicalAssetsStatisticRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowTechnicalAssetsStatisticRequest.
+        r"""Gets the limit of this ShowTechnicalAssetsStatisticRequest.
 
         分页参数，每页数量，默认查询所有
 
@@ -140,7 +140,7 @@ class ShowTechnicalAssetsStatisticRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowTechnicalAssetsStatisticRequest.
+        r"""Sets the limit of this ShowTechnicalAssetsStatisticRequest.
 
         分页参数，每页数量，默认查询所有
 

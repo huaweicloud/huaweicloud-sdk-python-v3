@@ -25,7 +25,7 @@ class UpdateTrafficMirrorSessionRequestBody:
     }
 
     def __init__(self, traffic_mirror_session=None):
-        """UpdateTrafficMirrorSessionRequestBody
+        r"""UpdateTrafficMirrorSessionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateTrafficMirrorSessionRequestBody:
 
     @property
     def traffic_mirror_session(self):
-        """Gets the traffic_mirror_session of this UpdateTrafficMirrorSessionRequestBody.
+        r"""Gets the traffic_mirror_session of this UpdateTrafficMirrorSessionRequestBody.
 
         :return: The traffic_mirror_session of this UpdateTrafficMirrorSessionRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorSessionOption`
@@ -51,7 +51,7 @@ class UpdateTrafficMirrorSessionRequestBody:
 
     @traffic_mirror_session.setter
     def traffic_mirror_session(self, traffic_mirror_session):
-        """Sets the traffic_mirror_session of this UpdateTrafficMirrorSessionRequestBody.
+        r"""Sets the traffic_mirror_session of this UpdateTrafficMirrorSessionRequestBody.
 
         :param traffic_mirror_session: The traffic_mirror_session of this UpdateTrafficMirrorSessionRequestBody.
         :type traffic_mirror_session: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorSessionOption`

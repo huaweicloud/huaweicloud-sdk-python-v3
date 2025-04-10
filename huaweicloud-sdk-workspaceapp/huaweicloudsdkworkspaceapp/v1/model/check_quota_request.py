@@ -39,7 +39,7 @@ class CheckQuotaRequest:
     }
 
     def __init__(self, product_id=None, flavor_id=None, subscription_num=None, disk_size=None, disk_num=None, is_period=None, deh_id=None, cluster_id=None):
-        """CheckQuotaRequest
+        r"""CheckQuotaRequest
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class CheckQuotaRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CheckQuotaRequest.
+        r"""Gets the product_id of this CheckQuotaRequest.
 
         产品id。
 
@@ -99,7 +99,7 @@ class CheckQuotaRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CheckQuotaRequest.
+        r"""Sets the product_id of this CheckQuotaRequest.
 
         产品id。
 
@@ -110,7 +110,7 @@ class CheckQuotaRequest:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this CheckQuotaRequest.
+        r"""Gets the flavor_id of this CheckQuotaRequest.
 
         规格id。
 
@@ -121,7 +121,7 @@ class CheckQuotaRequest:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this CheckQuotaRequest.
+        r"""Sets the flavor_id of this CheckQuotaRequest.
 
         规格id。
 
@@ -132,7 +132,7 @@ class CheckQuotaRequest:
 
     @property
     def subscription_num(self):
-        """Gets the subscription_num of this CheckQuotaRequest.
+        r"""Gets the subscription_num of this CheckQuotaRequest.
 
         订单需要创建总实例数、订购数量。
 
@@ -143,7 +143,7 @@ class CheckQuotaRequest:
 
     @subscription_num.setter
     def subscription_num(self, subscription_num):
-        """Sets the subscription_num of this CheckQuotaRequest.
+        r"""Sets the subscription_num of this CheckQuotaRequest.
 
         订单需要创建总实例数、订购数量。
 
@@ -154,7 +154,7 @@ class CheckQuotaRequest:
 
     @property
     def disk_size(self):
-        """Gets the disk_size of this CheckQuotaRequest.
+        r"""Gets the disk_size of this CheckQuotaRequest.
 
         单台实例所需的磁盘大小（最大系统盘1块*1024、数据盘10块*32768）。
 
@@ -165,7 +165,7 @@ class CheckQuotaRequest:
 
     @disk_size.setter
     def disk_size(self, disk_size):
-        """Sets the disk_size of this CheckQuotaRequest.
+        r"""Sets the disk_size of this CheckQuotaRequest.
 
         单台实例所需的磁盘大小（最大系统盘1块*1024、数据盘10块*32768）。
 
@@ -176,7 +176,7 @@ class CheckQuotaRequest:
 
     @property
     def disk_num(self):
-        """Gets the disk_num of this CheckQuotaRequest.
+        r"""Gets the disk_num of this CheckQuotaRequest.
 
         单台实例所需的磁盘数量（最大系统盘1块、数据盘10块）。
 
@@ -187,7 +187,7 @@ class CheckQuotaRequest:
 
     @disk_num.setter
     def disk_num(self, disk_num):
-        """Sets the disk_num of this CheckQuotaRequest.
+        r"""Sets the disk_num of this CheckQuotaRequest.
 
         单台实例所需的磁盘数量（最大系统盘1块、数据盘10块）。
 
@@ -198,7 +198,7 @@ class CheckQuotaRequest:
 
     @property
     def is_period(self):
-        """Gets the is_period of this CheckQuotaRequest.
+        r"""Gets the is_period of this CheckQuotaRequest.
 
         是否包周期。
 
@@ -209,7 +209,7 @@ class CheckQuotaRequest:
 
     @is_period.setter
     def is_period(self, is_period):
-        """Sets the is_period of this CheckQuotaRequest.
+        r"""Sets the is_period of this CheckQuotaRequest.
 
         是否包周期。
 
@@ -220,7 +220,7 @@ class CheckQuotaRequest:
 
     @property
     def deh_id(self):
-        """Gets the deh_id of this CheckQuotaRequest.
+        r"""Gets the deh_id of this CheckQuotaRequest.
 
         主机id。
 
@@ -231,7 +231,7 @@ class CheckQuotaRequest:
 
     @deh_id.setter
     def deh_id(self, deh_id):
-        """Sets the deh_id of this CheckQuotaRequest.
+        r"""Sets the deh_id of this CheckQuotaRequest.
 
         主机id。
 
@@ -242,7 +242,7 @@ class CheckQuotaRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CheckQuotaRequest.
+        r"""Gets the cluster_id of this CheckQuotaRequest.
 
         云专属分布式存储池id。
 
@@ -253,7 +253,7 @@ class CheckQuotaRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CheckQuotaRequest.
+        r"""Sets the cluster_id of this CheckQuotaRequest.
 
         云专属分布式存储池id。
 

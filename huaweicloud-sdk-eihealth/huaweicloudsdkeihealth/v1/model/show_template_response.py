@@ -46,7 +46,7 @@ class ShowTemplateResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, source_project_name=None, source_project_id=None, source_template_id=None, creator=None, columns=None, create_time=None, primary_key=None, is_prefab=None):
-        """ShowTemplateResponse
+        r"""ShowTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowTemplateResponse.
+        r"""Gets the id of this ShowTemplateResponse.
 
         模板id
 
@@ -125,7 +125,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowTemplateResponse.
+        r"""Sets the id of this ShowTemplateResponse.
 
         模板id
 
@@ -136,7 +136,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowTemplateResponse.
+        r"""Gets the name of this ShowTemplateResponse.
 
         模板名称
 
@@ -147,7 +147,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowTemplateResponse.
+        r"""Sets the name of this ShowTemplateResponse.
 
         模板名称
 
@@ -158,7 +158,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowTemplateResponse.
+        r"""Gets the description of this ShowTemplateResponse.
 
         模板描述
 
@@ -169,7 +169,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowTemplateResponse.
+        r"""Sets the description of this ShowTemplateResponse.
 
         模板描述
 
@@ -180,7 +180,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def source_project_name(self):
-        """Gets the source_project_name of this ShowTemplateResponse.
+        r"""Gets the source_project_name of this ShowTemplateResponse.
 
         来源项目名称
 
@@ -191,7 +191,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @source_project_name.setter
     def source_project_name(self, source_project_name):
-        """Sets the source_project_name of this ShowTemplateResponse.
+        r"""Sets the source_project_name of this ShowTemplateResponse.
 
         来源项目名称
 
@@ -202,7 +202,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this ShowTemplateResponse.
+        r"""Gets the source_project_id of this ShowTemplateResponse.
 
         来源项目id
 
@@ -213,7 +213,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this ShowTemplateResponse.
+        r"""Sets the source_project_id of this ShowTemplateResponse.
 
         来源项目id
 
@@ -224,7 +224,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def source_template_id(self):
-        """Gets the source_template_id of this ShowTemplateResponse.
+        r"""Gets the source_template_id of this ShowTemplateResponse.
 
         来源模板id
 
@@ -235,7 +235,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @source_template_id.setter
     def source_template_id(self, source_template_id):
-        """Sets the source_template_id of this ShowTemplateResponse.
+        r"""Sets the source_template_id of this ShowTemplateResponse.
 
         来源模板id
 
@@ -246,7 +246,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowTemplateResponse.
+        r"""Gets the creator of this ShowTemplateResponse.
 
         创建者
 
@@ -257,7 +257,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowTemplateResponse.
+        r"""Sets the creator of this ShowTemplateResponse.
 
         创建者
 
@@ -268,7 +268,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def columns(self):
-        """Gets the columns of this ShowTemplateResponse.
+        r"""Gets the columns of this ShowTemplateResponse.
 
         数据库列信息列表
 
@@ -279,7 +279,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this ShowTemplateResponse.
+        r"""Sets the columns of this ShowTemplateResponse.
 
         数据库列信息列表
 
@@ -290,7 +290,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowTemplateResponse.
+        r"""Gets the create_time of this ShowTemplateResponse.
 
         创建时间
 
@@ -301,7 +301,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowTemplateResponse.
+        r"""Sets the create_time of this ShowTemplateResponse.
 
         创建时间
 
@@ -312,7 +312,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def primary_key(self):
-        """Gets the primary_key of this ShowTemplateResponse.
+        r"""Gets the primary_key of this ShowTemplateResponse.
 
         主键
 
@@ -323,7 +323,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @primary_key.setter
     def primary_key(self, primary_key):
-        """Sets the primary_key of this ShowTemplateResponse.
+        r"""Sets the primary_key of this ShowTemplateResponse.
 
         主键
 
@@ -334,7 +334,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @property
     def is_prefab(self):
-        """Gets the is_prefab of this ShowTemplateResponse.
+        r"""Gets the is_prefab of this ShowTemplateResponse.
 
         是否是预置模板
 
@@ -345,7 +345,7 @@ class ShowTemplateResponse(SdkResponse):
 
     @is_prefab.setter
     def is_prefab(self, is_prefab):
-        """Sets the is_prefab of this ShowTemplateResponse.
+        r"""Sets the is_prefab of this ShowTemplateResponse.
 
         是否是预置模板
 

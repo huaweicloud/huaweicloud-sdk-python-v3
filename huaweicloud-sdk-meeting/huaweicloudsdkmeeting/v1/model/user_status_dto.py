@@ -29,7 +29,7 @@ class UserStatusDTO:
     }
 
     def __init__(self, number=None, reg_status=None, call_status=None):
-        """UserStatusDTO
+        r"""UserStatusDTO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UserStatusDTO:
 
     @property
     def number(self):
-        """Gets the number of this UserStatusDTO.
+        r"""Gets the number of this UserStatusDTO.
 
         终端号码
 
@@ -68,7 +68,7 @@ class UserStatusDTO:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this UserStatusDTO.
+        r"""Sets the number of this UserStatusDTO.
 
         终端号码
 
@@ -79,7 +79,7 @@ class UserStatusDTO:
 
     @property
     def reg_status(self):
-        """Gets the reg_status of this UserStatusDTO.
+        r"""Gets the reg_status of this UserStatusDTO.
 
         注册状态。 * 1：是未注册上 * 0：是已注册 
 
@@ -90,7 +90,7 @@ class UserStatusDTO:
 
     @reg_status.setter
     def reg_status(self, reg_status):
-        """Sets the reg_status of this UserStatusDTO.
+        r"""Sets the reg_status of this UserStatusDTO.
 
         注册状态。 * 1：是未注册上 * 0：是已注册 
 
@@ -101,7 +101,7 @@ class UserStatusDTO:
 
     @property
     def call_status(self):
-        """Gets the call_status of this UserStatusDTO.
+        r"""Gets the call_status of this UserStatusDTO.
 
         呼叫状态。 * 0：未上线 * 1：空闲中 * 2：使用中 * 3：非会议硬终端统一的无效值 
 
@@ -112,7 +112,7 @@ class UserStatusDTO:
 
     @call_status.setter
     def call_status(self, call_status):
-        """Sets the call_status of this UserStatusDTO.
+        r"""Sets the call_status of this UserStatusDTO.
 
         呼叫状态。 * 0：未上线 * 1：空闲中 * 2：使用中 * 3：非会议硬终端统一的无效值 
 

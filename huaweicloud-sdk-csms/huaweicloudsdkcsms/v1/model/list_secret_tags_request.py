@@ -25,7 +25,7 @@ class ListSecretTagsRequest:
     }
 
     def __init__(self, secret_id=None):
-        """ListSecretTagsRequest
+        r"""ListSecretTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListSecretTagsRequest:
 
     @property
     def secret_id(self):
-        """Gets the secret_id of this ListSecretTagsRequest.
+        r"""Gets the secret_id of this ListSecretTagsRequest.
 
         凭据ID
 
@@ -53,7 +53,7 @@ class ListSecretTagsRequest:
 
     @secret_id.setter
     def secret_id(self, secret_id):
-        """Sets the secret_id of this ListSecretTagsRequest.
+        r"""Sets the secret_id of this ListSecretTagsRequest.
 
         凭据ID
 

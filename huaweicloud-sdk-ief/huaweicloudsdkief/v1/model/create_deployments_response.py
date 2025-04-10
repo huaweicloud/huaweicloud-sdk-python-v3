@@ -58,7 +58,7 @@ class CreateDeploymentsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, replicas=None, ready_replicas=None, description=None, group_id=None, node_ids=None, tags=None, api_version=None, source=None, project_id=None, created_at=None, updated_at=None, template=None, state=None, source_id=None, annotations=None):
-        """CreateDeploymentsResponse
+        r"""CreateDeploymentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -156,7 +156,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateDeploymentsResponse.
+        r"""Gets the id of this CreateDeploymentsResponse.
 
         应用部署uuid
 
@@ -167,7 +167,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDeploymentsResponse.
+        r"""Sets the id of this CreateDeploymentsResponse.
 
         应用部署uuid
 
@@ -178,7 +178,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateDeploymentsResponse.
+        r"""Gets the name of this CreateDeploymentsResponse.
 
         应用部署名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
@@ -189,7 +189,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDeploymentsResponse.
+        r"""Sets the name of this CreateDeploymentsResponse.
 
         应用部署名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
@@ -200,7 +200,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def replicas(self):
-        """Gets the replicas of this CreateDeploymentsResponse.
+        r"""Gets the replicas of this CreateDeploymentsResponse.
 
         应用部署总副本数
 
@@ -211,7 +211,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @replicas.setter
     def replicas(self, replicas):
-        """Sets the replicas of this CreateDeploymentsResponse.
+        r"""Sets the replicas of this CreateDeploymentsResponse.
 
         应用部署总副本数
 
@@ -222,7 +222,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def ready_replicas(self):
-        """Gets the ready_replicas of this CreateDeploymentsResponse.
+        r"""Gets the ready_replicas of this CreateDeploymentsResponse.
 
         应用部署正常副本数
 
@@ -233,7 +233,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @ready_replicas.setter
     def ready_replicas(self, ready_replicas):
-        """Sets the ready_replicas of this CreateDeploymentsResponse.
+        r"""Sets the ready_replicas of this CreateDeploymentsResponse.
 
         应用部署正常副本数
 
@@ -244,7 +244,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateDeploymentsResponse.
+        r"""Gets the description of this CreateDeploymentsResponse.
 
         应用部署描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -255,7 +255,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateDeploymentsResponse.
+        r"""Sets the description of this CreateDeploymentsResponse.
 
         应用部署描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -266,7 +266,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateDeploymentsResponse.
+        r"""Gets the group_id of this CreateDeploymentsResponse.
 
         应用部署到指定节点组，与node_ids二选一
 
@@ -277,7 +277,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateDeploymentsResponse.
+        r"""Sets the group_id of this CreateDeploymentsResponse.
 
         应用部署到指定节点组，与node_ids二选一
 
@@ -288,7 +288,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this CreateDeploymentsResponse.
+        r"""Gets the node_ids of this CreateDeploymentsResponse.
 
         应用部署到指定节点，当前只支持一个边缘节点
 
@@ -299,7 +299,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this CreateDeploymentsResponse.
+        r"""Sets the node_ids of this CreateDeploymentsResponse.
 
         应用部署到指定节点，当前只支持一个边缘节点
 
@@ -310,7 +310,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this CreateDeploymentsResponse.
+        r"""Gets the tags of this CreateDeploymentsResponse.
 
         节点属性
 
@@ -321,7 +321,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateDeploymentsResponse.
+        r"""Sets the tags of this CreateDeploymentsResponse.
 
         节点属性
 
@@ -332,7 +332,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateDeploymentsResponse.
+        r"""Gets the api_version of this CreateDeploymentsResponse.
 
         应用部署版本
 
@@ -343,7 +343,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateDeploymentsResponse.
+        r"""Sets the api_version of this CreateDeploymentsResponse.
 
         应用部署版本
 
@@ -354,7 +354,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def source(self):
-        """Gets the source of this CreateDeploymentsResponse.
+        r"""Gets the source of this CreateDeploymentsResponse.
 
         应用部署来源：边缘市场（iem）或自定义（userdefined）
 
@@ -365,7 +365,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @source.setter
     def source(self, source):
-        """Sets the source of this CreateDeploymentsResponse.
+        r"""Sets the source of this CreateDeploymentsResponse.
 
         应用部署来源：边缘市场（iem）或自定义（userdefined）
 
@@ -376,7 +376,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateDeploymentsResponse.
+        r"""Gets the project_id of this CreateDeploymentsResponse.
 
         项目ID
 
@@ -387,7 +387,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateDeploymentsResponse.
+        r"""Sets the project_id of this CreateDeploymentsResponse.
 
         项目ID
 
@@ -398,7 +398,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateDeploymentsResponse.
+        r"""Gets the created_at of this CreateDeploymentsResponse.
 
         应用部署创建时间
 
@@ -409,7 +409,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateDeploymentsResponse.
+        r"""Sets the created_at of this CreateDeploymentsResponse.
 
         应用部署创建时间
 
@@ -420,7 +420,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CreateDeploymentsResponse.
+        r"""Gets the updated_at of this CreateDeploymentsResponse.
 
         应用部署更新时间
 
@@ -431,7 +431,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CreateDeploymentsResponse.
+        r"""Sets the updated_at of this CreateDeploymentsResponse.
 
         应用部署更新时间
 
@@ -442,7 +442,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def template(self):
-        """Gets the template of this CreateDeploymentsResponse.
+        r"""Gets the template of this CreateDeploymentsResponse.
 
         :return: The template of this CreateDeploymentsResponse.
         :rtype: :class:`huaweicloudsdkief.v1.PodRequest`
@@ -451,7 +451,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @template.setter
     def template(self, template):
-        """Sets the template of this CreateDeploymentsResponse.
+        r"""Sets the template of this CreateDeploymentsResponse.
 
         :param template: The template of this CreateDeploymentsResponse.
         :type template: :class:`huaweicloudsdkief.v1.PodRequest`
@@ -460,7 +460,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this CreateDeploymentsResponse.
+        r"""Gets the state of this CreateDeploymentsResponse.
 
         应用状态，仅包括冻结（FREEZE）、删除中（PENDING_DELETE）、删除失败（DELETE_FAILED），保留字段
 
@@ -471,7 +471,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CreateDeploymentsResponse.
+        r"""Sets the state of this CreateDeploymentsResponse.
 
         应用状态，仅包括冻结（FREEZE）、删除中（PENDING_DELETE）、删除失败（DELETE_FAILED），保留字段
 
@@ -482,7 +482,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def source_id(self):
-        """Gets the source_id of this CreateDeploymentsResponse.
+        r"""Gets the source_id of this CreateDeploymentsResponse.
 
         预留字段
 
@@ -493,7 +493,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this CreateDeploymentsResponse.
+        r"""Sets the source_id of this CreateDeploymentsResponse.
 
         预留字段
 
@@ -504,7 +504,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @property
     def annotations(self):
-        """Gets the annotations of this CreateDeploymentsResponse.
+        r"""Gets the annotations of this CreateDeploymentsResponse.
 
         :return: The annotations of this CreateDeploymentsResponse.
         :rtype: :class:`huaweicloudsdkief.v1.Annotations`
@@ -513,7 +513,7 @@ class CreateDeploymentsResponse(SdkResponse):
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this CreateDeploymentsResponse.
+        r"""Sets the annotations of this CreateDeploymentsResponse.
 
         :param annotations: The annotations of this CreateDeploymentsResponse.
         :type annotations: :class:`huaweicloudsdkief.v1.Annotations`

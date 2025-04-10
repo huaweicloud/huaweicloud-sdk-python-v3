@@ -27,7 +27,7 @@ class MetaData:
     }
 
     def __init__(self, count=None, marker=None):
-        """MetaData
+        r"""MetaData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MetaData:
 
     @property
     def count(self):
-        """Gets the count of this MetaData.
+        r"""Gets the count of this MetaData.
 
         标识本次查询事件列表返回的事件记录的总条数。
 
@@ -61,7 +61,7 @@ class MetaData:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this MetaData.
+        r"""Sets the count of this MetaData.
 
         标识本次查询事件列表返回的事件记录的总条数。
 
@@ -72,7 +72,7 @@ class MetaData:
 
     @property
     def marker(self):
-        """Gets the marker of this MetaData.
+        r"""Gets the marker of this MetaData.
 
         标识本次查询事件列表返回的最后一个事件ID。可以使用这个参数返回值作为分页请求参数next的值，如果marker返回为null，则表示当前请求条件下查询事件列表已经全部返回没有下一页。
 
@@ -83,7 +83,7 @@ class MetaData:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this MetaData.
+        r"""Sets the marker of this MetaData.
 
         标识本次查询事件列表返回的最后一个事件ID。可以使用这个参数返回值作为分页请求参数next的值，如果marker返回为null，则表示当前请求条件下查询事件列表已经全部返回没有下一页。
 

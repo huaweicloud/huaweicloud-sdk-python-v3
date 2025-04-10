@@ -34,7 +34,7 @@ class ListRtcAbnormalEventResponse(SdkResponse):
     }
 
     def __init__(self, room_id=None, uid=None, exp_id=None, abnormal_list=None, x_request_id=None):
-        """ListRtcAbnormalEventResponse
+        r"""ListRtcAbnormalEventResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListRtcAbnormalEventResponse(SdkResponse):
 
     @property
     def room_id(self):
-        """Gets the room_id of this ListRtcAbnormalEventResponse.
+        r"""Gets the room_id of this ListRtcAbnormalEventResponse.
 
         房间ID 
 
@@ -83,7 +83,7 @@ class ListRtcAbnormalEventResponse(SdkResponse):
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ListRtcAbnormalEventResponse.
+        r"""Sets the room_id of this ListRtcAbnormalEventResponse.
 
         房间ID 
 
@@ -94,7 +94,7 @@ class ListRtcAbnormalEventResponse(SdkResponse):
 
     @property
     def uid(self):
-        """Gets the uid of this ListRtcAbnormalEventResponse.
+        r"""Gets the uid of this ListRtcAbnormalEventResponse.
 
         用户ID 
 
@@ -105,7 +105,7 @@ class ListRtcAbnormalEventResponse(SdkResponse):
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this ListRtcAbnormalEventResponse.
+        r"""Sets the uid of this ListRtcAbnormalEventResponse.
 
         用户ID 
 
@@ -116,7 +116,7 @@ class ListRtcAbnormalEventResponse(SdkResponse):
 
     @property
     def exp_id(self):
-        """Gets the exp_id of this ListRtcAbnormalEventResponse.
+        r"""Gets the exp_id of this ListRtcAbnormalEventResponse.
 
         体验ID 
 
@@ -127,7 +127,7 @@ class ListRtcAbnormalEventResponse(SdkResponse):
 
     @exp_id.setter
     def exp_id(self, exp_id):
-        """Sets the exp_id of this ListRtcAbnormalEventResponse.
+        r"""Sets the exp_id of this ListRtcAbnormalEventResponse.
 
         体验ID 
 
@@ -138,7 +138,7 @@ class ListRtcAbnormalEventResponse(SdkResponse):
 
     @property
     def abnormal_list(self):
-        """Gets the abnormal_list of this ListRtcAbnormalEventResponse.
+        r"""Gets the abnormal_list of this ListRtcAbnormalEventResponse.
 
         异常信息列表。注意：此字段可能返回null，表示取不到有效值。 
 
@@ -149,7 +149,7 @@ class ListRtcAbnormalEventResponse(SdkResponse):
 
     @abnormal_list.setter
     def abnormal_list(self, abnormal_list):
-        """Sets the abnormal_list of this ListRtcAbnormalEventResponse.
+        r"""Sets the abnormal_list of this ListRtcAbnormalEventResponse.
 
         异常信息列表。注意：此字段可能返回null，表示取不到有效值。 
 
@@ -160,7 +160,7 @@ class ListRtcAbnormalEventResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListRtcAbnormalEventResponse.
+        r"""Gets the x_request_id of this ListRtcAbnormalEventResponse.
 
         :return: The x_request_id of this ListRtcAbnormalEventResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class ListRtcAbnormalEventResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListRtcAbnormalEventResponse.
+        r"""Sets the x_request_id of this ListRtcAbnormalEventResponse.
 
         :param x_request_id: The x_request_id of this ListRtcAbnormalEventResponse.
         :type x_request_id: str

@@ -27,7 +27,7 @@ class RetryBatchJobRequest:
     }
 
     def __init__(self, job_id=None, ief_instance_id=None):
-        """RetryBatchJobRequest
+        r"""RetryBatchJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RetryBatchJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this RetryBatchJobRequest.
+        r"""Gets the job_id of this RetryBatchJobRequest.
 
         批量处理作业ID
 
@@ -60,7 +60,7 @@ class RetryBatchJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RetryBatchJobRequest.
+        r"""Sets the job_id of this RetryBatchJobRequest.
 
         批量处理作业ID
 
@@ -71,7 +71,7 @@ class RetryBatchJobRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this RetryBatchJobRequest.
+        r"""Gets the ief_instance_id of this RetryBatchJobRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -82,7 +82,7 @@ class RetryBatchJobRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this RetryBatchJobRequest.
+        r"""Sets the ief_instance_id of this RetryBatchJobRequest.
 
         铂金版实例ID，专业版实例为空值
 

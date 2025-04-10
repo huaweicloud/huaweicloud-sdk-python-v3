@@ -28,7 +28,7 @@ class CreateAutopilotClusterMasterSnapshotResponse(SdkResponse):
     }
 
     def __init__(self, uid=None, metadata=None):
-        """CreateAutopilotClusterMasterSnapshotResponse
+        r"""CreateAutopilotClusterMasterSnapshotResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateAutopilotClusterMasterSnapshotResponse(SdkResponse):
 
     @property
     def uid(self):
-        """Gets the uid of this CreateAutopilotClusterMasterSnapshotResponse.
+        r"""Gets the uid of this CreateAutopilotClusterMasterSnapshotResponse.
 
         任务ID
 
@@ -62,7 +62,7 @@ class CreateAutopilotClusterMasterSnapshotResponse(SdkResponse):
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this CreateAutopilotClusterMasterSnapshotResponse.
+        r"""Sets the uid of this CreateAutopilotClusterMasterSnapshotResponse.
 
         任务ID
 
@@ -73,7 +73,7 @@ class CreateAutopilotClusterMasterSnapshotResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateAutopilotClusterMasterSnapshotResponse.
+        r"""Gets the metadata of this CreateAutopilotClusterMasterSnapshotResponse.
 
         :return: The metadata of this CreateAutopilotClusterMasterSnapshotResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.SnapshotCluserResponseMetadata`
@@ -82,7 +82,7 @@ class CreateAutopilotClusterMasterSnapshotResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateAutopilotClusterMasterSnapshotResponse.
+        r"""Sets the metadata of this CreateAutopilotClusterMasterSnapshotResponse.
 
         :param metadata: The metadata of this CreateAutopilotClusterMasterSnapshotResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.SnapshotCluserResponseMetadata`

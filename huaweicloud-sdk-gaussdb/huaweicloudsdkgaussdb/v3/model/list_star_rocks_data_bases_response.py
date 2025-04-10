@@ -30,7 +30,7 @@ class ListStarRocksDataBasesResponse(SdkResponse):
     }
 
     def __init__(self, databases=None, total_count=None, timestamp=None):
-        """ListStarRocksDataBasesResponse
+        r"""ListStarRocksDataBasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListStarRocksDataBasesResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this ListStarRocksDataBasesResponse.
+        r"""Gets the databases of this ListStarRocksDataBasesResponse.
 
         数据库名称。
 
@@ -69,7 +69,7 @@ class ListStarRocksDataBasesResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ListStarRocksDataBasesResponse.
+        r"""Sets the databases of this ListStarRocksDataBasesResponse.
 
         数据库名称。
 
@@ -80,7 +80,7 @@ class ListStarRocksDataBasesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListStarRocksDataBasesResponse.
+        r"""Gets the total_count of this ListStarRocksDataBasesResponse.
 
         数据库数量。
 
@@ -91,7 +91,7 @@ class ListStarRocksDataBasesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListStarRocksDataBasesResponse.
+        r"""Sets the total_count of this ListStarRocksDataBasesResponse.
 
         数据库数量。
 
@@ -102,7 +102,7 @@ class ListStarRocksDataBasesResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ListStarRocksDataBasesResponse.
+        r"""Gets the timestamp of this ListStarRocksDataBasesResponse.
 
         查询时间戳。
 
@@ -113,7 +113,7 @@ class ListStarRocksDataBasesResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ListStarRocksDataBasesResponse.
+        r"""Sets the timestamp of this ListStarRocksDataBasesResponse.
 
         查询时间戳。
 

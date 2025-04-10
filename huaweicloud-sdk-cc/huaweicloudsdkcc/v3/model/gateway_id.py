@@ -25,7 +25,7 @@ class GatewayId:
     }
 
     def __init__(self, gateway_id=None):
-        """GatewayId
+        r"""GatewayId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GatewayId:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this GatewayId.
+        r"""Gets the gateway_id of this GatewayId.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class GatewayId:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this GatewayId.
+        r"""Sets the gateway_id of this GatewayId.
 
         实例ID。
 

@@ -26,7 +26,7 @@ class CreateChangeOrderResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None):
-        """CreateChangeOrderResponse
+        r"""CreateChangeOrderResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateChangeOrderResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateChangeOrderResponse.
+        r"""Gets the order_id of this CreateChangeOrderResponse.
 
         订单号，下单成功时返回订单ID。
 
@@ -55,7 +55,7 @@ class CreateChangeOrderResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateChangeOrderResponse.
+        r"""Sets the order_id of this CreateChangeOrderResponse.
 
         订单号，下单成功时返回订单ID。
 

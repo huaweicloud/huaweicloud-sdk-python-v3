@@ -29,7 +29,7 @@ class RestSubscriberInPic:
     }
 
     def __init__(self, index=None, subscriber=None, is_assist_stream=None):
-        """RestSubscriberInPic
+        r"""RestSubscriberInPic
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RestSubscriberInPic:
 
     @property
     def index(self):
-        """Gets the index of this RestSubscriberInPic.
+        r"""Gets the index of this RestSubscriberInPic.
 
         多画面中每个画面的编号。编号从1开始。默认值为“1”。
 
@@ -68,7 +68,7 @@ class RestSubscriberInPic:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this RestSubscriberInPic.
+        r"""Sets the index of this RestSubscriberInPic.
 
         多画面中每个画面的编号。编号从1开始。默认值为“1”。
 
@@ -79,7 +79,7 @@ class RestSubscriberInPic:
 
     @property
     def subscriber(self):
-        """Gets the subscriber of this RestSubscriberInPic.
+        r"""Gets the subscriber of this RestSubscriberInPic.
 
         每个画面中与会者号码，从[[查询会议实时信息](https://support.huaweicloud.com/api-meeting/meeting_21_0029.html)](tag:hws)[[查询会议实时信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0029.html)](tag:hk)接口返回participants中的phone中获取。
 
@@ -90,7 +90,7 @@ class RestSubscriberInPic:
 
     @subscriber.setter
     def subscriber(self, subscriber):
-        """Sets the subscriber of this RestSubscriberInPic.
+        r"""Sets the subscriber of this RestSubscriberInPic.
 
         每个画面中与会者号码，从[[查询会议实时信息](https://support.huaweicloud.com/api-meeting/meeting_21_0029.html)](tag:hws)[[查询会议实时信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0029.html)](tag:hk)接口返回participants中的phone中获取。
 
@@ -101,7 +101,7 @@ class RestSubscriberInPic:
 
     @property
     def is_assist_stream(self):
-        """Gets the is_assist_stream of this RestSubscriberInPic.
+        r"""Gets the is_assist_stream of this RestSubscriberInPic.
 
         是否为辅流。默认值为0。 * 0： 不是辅流 * 1： 是辅流 
 
@@ -112,7 +112,7 @@ class RestSubscriberInPic:
 
     @is_assist_stream.setter
     def is_assist_stream(self, is_assist_stream):
-        """Sets the is_assist_stream of this RestSubscriberInPic.
+        r"""Sets the is_assist_stream of this RestSubscriberInPic.
 
         是否为辅流。默认值为0。 * 0： 不是辅流 * 1： 是辅流 
 

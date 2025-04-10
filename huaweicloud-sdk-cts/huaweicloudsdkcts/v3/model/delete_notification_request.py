@@ -25,7 +25,7 @@ class DeleteNotificationRequest:
     }
 
     def __init__(self, notification_id=None):
-        """DeleteNotificationRequest
+        r"""DeleteNotificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteNotificationRequest:
 
     @property
     def notification_id(self):
-        """Gets the notification_id of this DeleteNotificationRequest.
+        r"""Gets the notification_id of this DeleteNotificationRequest.
 
         标识关键操作通知id。 批量删除请使用逗号隔开，notification_id=\"xxx1,cccc2\"
 
@@ -53,7 +53,7 @@ class DeleteNotificationRequest:
 
     @notification_id.setter
     def notification_id(self, notification_id):
-        """Sets the notification_id of this DeleteNotificationRequest.
+        r"""Sets the notification_id of this DeleteNotificationRequest.
 
         标识关键操作通知id。 批量删除请使用逗号隔开，notification_id=\"xxx1,cccc2\"
 

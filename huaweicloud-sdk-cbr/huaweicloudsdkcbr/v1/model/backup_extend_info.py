@@ -43,7 +43,7 @@ class BackupExtendInfo:
     }
 
     def __init__(self, auto_trigger=None, bootable=None, snapshot_id=None, support_lld=None, supported_restore_mode=None, os_images_data=None, contain_system_disk=None, encrypted=None, system_disk=None, is_multi_az=None):
-        """BackupExtendInfo
+        r"""BackupExtendInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class BackupExtendInfo:
 
     @property
     def auto_trigger(self):
-        """Gets the auto_trigger of this BackupExtendInfo.
+        r"""Gets the auto_trigger of this BackupExtendInfo.
 
         是否是自动生成的备份副本
 
@@ -117,7 +117,7 @@ class BackupExtendInfo:
 
     @auto_trigger.setter
     def auto_trigger(self, auto_trigger):
-        """Sets the auto_trigger of this BackupExtendInfo.
+        r"""Sets the auto_trigger of this BackupExtendInfo.
 
         是否是自动生成的备份副本
 
@@ -128,7 +128,7 @@ class BackupExtendInfo:
 
     @property
     def bootable(self):
-        """Gets the bootable of this BackupExtendInfo.
+        r"""Gets the bootable of this BackupExtendInfo.
 
         是否系统盘备份
 
@@ -139,7 +139,7 @@ class BackupExtendInfo:
 
     @bootable.setter
     def bootable(self, bootable):
-        """Sets the bootable of this BackupExtendInfo.
+        r"""Sets the bootable of this BackupExtendInfo.
 
         是否系统盘备份
 
@@ -150,7 +150,7 @@ class BackupExtendInfo:
 
     @property
     def snapshot_id(self):
-        """Gets the snapshot_id of this BackupExtendInfo.
+        r"""Gets the snapshot_id of this BackupExtendInfo.
 
         卷备份副本的快照id
 
@@ -161,7 +161,7 @@ class BackupExtendInfo:
 
     @snapshot_id.setter
     def snapshot_id(self, snapshot_id):
-        """Sets the snapshot_id of this BackupExtendInfo.
+        r"""Sets the snapshot_id of this BackupExtendInfo.
 
         卷备份副本的快照id
 
@@ -172,7 +172,7 @@ class BackupExtendInfo:
 
     @property
     def support_lld(self):
-        """Gets the support_lld of this BackupExtendInfo.
+        r"""Gets the support_lld of this BackupExtendInfo.
 
         是否支持lazyloading快速恢复
 
@@ -183,7 +183,7 @@ class BackupExtendInfo:
 
     @support_lld.setter
     def support_lld(self, support_lld):
-        """Sets the support_lld of this BackupExtendInfo.
+        r"""Sets the support_lld of this BackupExtendInfo.
 
         是否支持lazyloading快速恢复
 
@@ -194,7 +194,7 @@ class BackupExtendInfo:
 
     @property
     def supported_restore_mode(self):
-        """Gets the supported_restore_mode of this BackupExtendInfo.
+        r"""Gets the supported_restore_mode of this BackupExtendInfo.
 
         备份支持恢复的方式，当前取值包含na,snapshot和backup。如果该字段取值为snapshot，代表备份此时已经支持创建整机镜像；如果该字段取值为backup，备份支持通过云服务器上硬盘的备份进行恢复；如果该字段取值为na，备份不支持恢复。
 
@@ -205,7 +205,7 @@ class BackupExtendInfo:
 
     @supported_restore_mode.setter
     def supported_restore_mode(self, supported_restore_mode):
-        """Sets the supported_restore_mode of this BackupExtendInfo.
+        r"""Sets the supported_restore_mode of this BackupExtendInfo.
 
         备份支持恢复的方式，当前取值包含na,snapshot和backup。如果该字段取值为snapshot，代表备份此时已经支持创建整机镜像；如果该字段取值为backup，备份支持通过云服务器上硬盘的备份进行恢复；如果该字段取值为na，备份不支持恢复。
 
@@ -216,7 +216,7 @@ class BackupExtendInfo:
 
     @property
     def os_images_data(self):
-        """Gets the os_images_data of this BackupExtendInfo.
+        r"""Gets the os_images_data of this BackupExtendInfo.
 
         备份注册镜像ID列表
 
@@ -227,7 +227,7 @@ class BackupExtendInfo:
 
     @os_images_data.setter
     def os_images_data(self, os_images_data):
-        """Sets the os_images_data of this BackupExtendInfo.
+        r"""Sets the os_images_data of this BackupExtendInfo.
 
         备份注册镜像ID列表
 
@@ -238,7 +238,7 @@ class BackupExtendInfo:
 
     @property
     def contain_system_disk(self):
-        """Gets the contain_system_disk of this BackupExtendInfo.
+        r"""Gets the contain_system_disk of this BackupExtendInfo.
 
         整机备份是否包含系统盘
 
@@ -249,7 +249,7 @@ class BackupExtendInfo:
 
     @contain_system_disk.setter
     def contain_system_disk(self, contain_system_disk):
-        """Sets the contain_system_disk of this BackupExtendInfo.
+        r"""Sets the contain_system_disk of this BackupExtendInfo.
 
         整机备份是否包含系统盘
 
@@ -260,7 +260,7 @@ class BackupExtendInfo:
 
     @property
     def encrypted(self):
-        """Gets the encrypted of this BackupExtendInfo.
+        r"""Gets the encrypted of this BackupExtendInfo.
 
         是否加密
 
@@ -271,7 +271,7 @@ class BackupExtendInfo:
 
     @encrypted.setter
     def encrypted(self, encrypted):
-        """Sets the encrypted of this BackupExtendInfo.
+        r"""Sets the encrypted of this BackupExtendInfo.
 
         是否加密
 
@@ -282,7 +282,7 @@ class BackupExtendInfo:
 
     @property
     def system_disk(self):
-        """Gets the system_disk of this BackupExtendInfo.
+        r"""Gets the system_disk of this BackupExtendInfo.
 
         是否是系统盘
 
@@ -293,7 +293,7 @@ class BackupExtendInfo:
 
     @system_disk.setter
     def system_disk(self, system_disk):
-        """Sets the system_disk of this BackupExtendInfo.
+        r"""Sets the system_disk of this BackupExtendInfo.
 
         是否是系统盘
 
@@ -304,7 +304,7 @@ class BackupExtendInfo:
 
     @property
     def is_multi_az(self):
-        """Gets the is_multi_az of this BackupExtendInfo.
+        r"""Gets the is_multi_az of this BackupExtendInfo.
 
         备份类型是否为多AZ
 
@@ -315,7 +315,7 @@ class BackupExtendInfo:
 
     @is_multi_az.setter
     def is_multi_az(self, is_multi_az):
-        """Sets the is_multi_az of this BackupExtendInfo.
+        r"""Sets the is_multi_az of this BackupExtendInfo.
 
         备份类型是否为多AZ
 

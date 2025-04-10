@@ -28,7 +28,7 @@ class ListSiteConfigsResponse(SdkResponse):
     }
 
     def __init__(self, site_infos=None, total_count=None):
-        """ListSiteConfigsResponse
+        r"""ListSiteConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSiteConfigsResponse(SdkResponse):
 
     @property
     def site_infos(self):
-        """Gets the site_infos of this ListSiteConfigsResponse.
+        r"""Gets the site_infos of this ListSiteConfigsResponse.
 
         站点信息列表
 
@@ -62,7 +62,7 @@ class ListSiteConfigsResponse(SdkResponse):
 
     @site_infos.setter
     def site_infos(self, site_infos):
-        """Sets the site_infos of this ListSiteConfigsResponse.
+        r"""Sets the site_infos of this ListSiteConfigsResponse.
 
         站点信息列表
 
@@ -73,7 +73,7 @@ class ListSiteConfigsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListSiteConfigsResponse.
+        r"""Gets the total_count of this ListSiteConfigsResponse.
 
         站点总数
 
@@ -84,7 +84,7 @@ class ListSiteConfigsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListSiteConfigsResponse.
+        r"""Sets the total_count of this ListSiteConfigsResponse.
 
         站点总数
 

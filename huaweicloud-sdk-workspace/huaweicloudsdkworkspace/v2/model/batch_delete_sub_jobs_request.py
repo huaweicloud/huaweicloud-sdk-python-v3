@@ -25,7 +25,7 @@ class BatchDeleteSubJobsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteSubJobsRequest
+        r"""BatchDeleteSubJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteSubJobsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteSubJobsRequest.
+        r"""Gets the body of this BatchDeleteSubJobsRequest.
 
         :return: The body of this BatchDeleteSubJobsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteSubJobsReq`
@@ -52,7 +52,7 @@ class BatchDeleteSubJobsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteSubJobsRequest.
+        r"""Sets the body of this BatchDeleteSubJobsRequest.
 
         :param body: The body of this BatchDeleteSubJobsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.DeleteSubJobsReq`

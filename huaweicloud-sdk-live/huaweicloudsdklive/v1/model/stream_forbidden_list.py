@@ -29,7 +29,7 @@ class StreamForbiddenList:
     }
 
     def __init__(self, app_name=None, stream_name=None, resume_time=None):
-        """StreamForbiddenList
+        r"""StreamForbiddenList
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class StreamForbiddenList:
 
     @property
     def app_name(self):
-        """Gets the app_name of this StreamForbiddenList.
+        r"""Gets the app_name of this StreamForbiddenList.
 
         流应用名称
 
@@ -66,7 +66,7 @@ class StreamForbiddenList:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this StreamForbiddenList.
+        r"""Sets the app_name of this StreamForbiddenList.
 
         流应用名称
 
@@ -77,7 +77,7 @@ class StreamForbiddenList:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this StreamForbiddenList.
+        r"""Gets the stream_name of this StreamForbiddenList.
 
         流名称
 
@@ -88,7 +88,7 @@ class StreamForbiddenList:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this StreamForbiddenList.
+        r"""Sets the stream_name of this StreamForbiddenList.
 
         流名称
 
@@ -99,7 +99,7 @@ class StreamForbiddenList:
 
     @property
     def resume_time(self):
-        """Gets the resume_time of this StreamForbiddenList.
+        r"""Gets the resume_time of this StreamForbiddenList.
 
         恢复流时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间，不指定则默认7天，最大禁推为90天
 
@@ -110,7 +110,7 @@ class StreamForbiddenList:
 
     @resume_time.setter
     def resume_time(self, resume_time):
-        """Sets the resume_time of this StreamForbiddenList.
+        r"""Sets the resume_time of this StreamForbiddenList.
 
         恢复流时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间，不指定则默认7天，最大禁推为90天
 

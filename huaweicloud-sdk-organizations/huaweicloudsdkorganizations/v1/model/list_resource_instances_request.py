@@ -34,7 +34,7 @@ class ListResourceInstancesRequest:
     }
 
     def __init__(self, x_security_token=None, limit=None, offset=None, resource_type=None, body=None):
-        """ListResourceInstancesRequest
+        r"""ListResourceInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListResourceInstancesRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListResourceInstancesRequest.
+        r"""Gets the x_security_token of this ListResourceInstancesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -82,7 +82,7 @@ class ListResourceInstancesRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListResourceInstancesRequest.
+        r"""Sets the x_security_token of this ListResourceInstancesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -93,7 +93,7 @@ class ListResourceInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourceInstancesRequest.
+        r"""Gets the limit of this ListResourceInstancesRequest.
 
         页面中最大结果数量。
 
@@ -104,7 +104,7 @@ class ListResourceInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourceInstancesRequest.
+        r"""Sets the limit of this ListResourceInstancesRequest.
 
         页面中最大结果数量。
 
@@ -115,7 +115,7 @@ class ListResourceInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListResourceInstancesRequest.
+        r"""Gets the offset of this ListResourceInstancesRequest.
 
         分页标记。
 
@@ -126,7 +126,7 @@ class ListResourceInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListResourceInstancesRequest.
+        r"""Sets the offset of this ListResourceInstancesRequest.
 
         分页标记。
 
@@ -137,7 +137,7 @@ class ListResourceInstancesRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListResourceInstancesRequest.
+        r"""Gets the resource_type of this ListResourceInstancesRequest.
 
         资源类型。枚举值：organizations:policies（服务策略）、organizations:ous（组织OU）、organizations:accounts（账号信息） 、organizations:roots：（根）。
 
@@ -148,7 +148,7 @@ class ListResourceInstancesRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListResourceInstancesRequest.
+        r"""Sets the resource_type of this ListResourceInstancesRequest.
 
         资源类型。枚举值：organizations:policies（服务策略）、organizations:ous（组织OU）、organizations:accounts（账号信息） 、organizations:roots：（根）。
 
@@ -159,7 +159,7 @@ class ListResourceInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListResourceInstancesRequest.
+        r"""Gets the body of this ListResourceInstancesRequest.
 
         :return: The body of this ListResourceInstancesRequest.
         :rtype: :class:`huaweicloudsdkorganizations.v1.ResourceInstanceReqBody`
@@ -168,7 +168,7 @@ class ListResourceInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListResourceInstancesRequest.
+        r"""Sets the body of this ListResourceInstancesRequest.
 
         :param body: The body of this ListResourceInstancesRequest.
         :type body: :class:`huaweicloudsdkorganizations.v1.ResourceInstanceReqBody`

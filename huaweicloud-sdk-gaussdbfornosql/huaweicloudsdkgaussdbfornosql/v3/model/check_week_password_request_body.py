@@ -25,7 +25,7 @@ class CheckWeekPasswordRequestBody:
     }
 
     def __init__(self, password=None):
-        """CheckWeekPasswordRequestBody
+        r"""CheckWeekPasswordRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CheckWeekPasswordRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this CheckWeekPasswordRequestBody.
+        r"""Gets the password of this CheckWeekPasswordRequestBody.
 
         密码
 
@@ -53,7 +53,7 @@ class CheckWeekPasswordRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CheckWeekPasswordRequestBody.
+        r"""Sets the password of this CheckWeekPasswordRequestBody.
 
         密码
 

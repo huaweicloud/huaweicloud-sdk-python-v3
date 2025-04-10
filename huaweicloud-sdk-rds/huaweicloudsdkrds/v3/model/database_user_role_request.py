@@ -27,7 +27,7 @@ class DatabaseUserRoleRequest:
     }
 
     def __init__(self, user=None, roles=None):
-        """DatabaseUserRoleRequest
+        r"""DatabaseUserRoleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DatabaseUserRoleRequest:
 
     @property
     def user(self):
-        """Gets the user of this DatabaseUserRoleRequest.
+        r"""Gets the user of this DatabaseUserRoleRequest.
 
         用户名称
 
@@ -59,7 +59,7 @@ class DatabaseUserRoleRequest:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this DatabaseUserRoleRequest.
+        r"""Sets the user of this DatabaseUserRoleRequest.
 
         用户名称
 
@@ -70,7 +70,7 @@ class DatabaseUserRoleRequest:
 
     @property
     def roles(self):
-        """Gets the roles of this DatabaseUserRoleRequest.
+        r"""Gets the roles of this DatabaseUserRoleRequest.
 
         角色名称
 
@@ -81,7 +81,7 @@ class DatabaseUserRoleRequest:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this DatabaseUserRoleRequest.
+        r"""Sets the roles of this DatabaseUserRoleRequest.
 
         角色名称
 

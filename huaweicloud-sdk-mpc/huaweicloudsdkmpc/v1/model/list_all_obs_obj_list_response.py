@@ -26,7 +26,7 @@ class ListAllObsObjListResponse(SdkResponse):
     }
 
     def __init__(self, objects=None):
-        """ListAllObsObjListResponse
+        r"""ListAllObsObjListResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAllObsObjListResponse(SdkResponse):
 
     @property
     def objects(self):
-        """Gets the objects of this ListAllObsObjListResponse.
+        r"""Gets the objects of this ListAllObsObjListResponse.
 
         返回OBS对象组
 
@@ -55,7 +55,7 @@ class ListAllObsObjListResponse(SdkResponse):
 
     @objects.setter
     def objects(self, objects):
-        """Sets the objects of this ListAllObsObjListResponse.
+        r"""Sets the objects of this ListAllObsObjListResponse.
 
         返回OBS对象组
 

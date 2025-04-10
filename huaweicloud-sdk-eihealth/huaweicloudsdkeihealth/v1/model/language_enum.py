@@ -27,7 +27,7 @@ class LanguageEnum:
     }
 
     def __init__(self):
-        """LanguageEnum
+        r"""LanguageEnum
 
         The model defined in huaweicloud sdk
 

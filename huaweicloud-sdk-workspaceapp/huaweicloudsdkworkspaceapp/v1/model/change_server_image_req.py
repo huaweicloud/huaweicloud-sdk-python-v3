@@ -33,7 +33,7 @@ class ChangeServerImageReq:
     }
 
     def __init__(self, image_id=None, image_type=None, os_type=None, image_product_id=None, update_access_agent=None):
-        """ChangeServerImageReq
+        r"""ChangeServerImageReq
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ChangeServerImageReq:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ChangeServerImageReq.
+        r"""Gets the image_id of this ChangeServerImageReq.
 
         镜像id，要求与服务器原有镜像id不相同。
 
@@ -79,7 +79,7 @@ class ChangeServerImageReq:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ChangeServerImageReq.
+        r"""Sets the image_id of this ChangeServerImageReq.
 
         镜像id，要求与服务器原有镜像id不相同。
 
@@ -90,7 +90,7 @@ class ChangeServerImageReq:
 
     @property
     def image_type(self):
-        """Gets the image_type of this ChangeServerImageReq.
+        r"""Gets the image_type of this ChangeServerImageReq.
 
         :return: The image_type of this ChangeServerImageReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
@@ -99,7 +99,7 @@ class ChangeServerImageReq:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this ChangeServerImageReq.
+        r"""Sets the image_type of this ChangeServerImageReq.
 
         :param image_type: The image_type of this ChangeServerImageReq.
         :type image_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
@@ -108,7 +108,7 @@ class ChangeServerImageReq:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ChangeServerImageReq.
+        r"""Gets the os_type of this ChangeServerImageReq.
 
         :return: The os_type of this ChangeServerImageReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -117,7 +117,7 @@ class ChangeServerImageReq:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ChangeServerImageReq.
+        r"""Sets the os_type of this ChangeServerImageReq.
 
         :param os_type: The os_type of this ChangeServerImageReq.
         :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -126,7 +126,7 @@ class ChangeServerImageReq:
 
     @property
     def image_product_id(self):
-        """Gets the image_product_id of this ChangeServerImageReq.
+        r"""Gets the image_product_id of this ChangeServerImageReq.
 
         镜像的产品id，当镜像是市场镜像时候，该字段必传。
 
@@ -137,7 +137,7 @@ class ChangeServerImageReq:
 
     @image_product_id.setter
     def image_product_id(self, image_product_id):
-        """Sets the image_product_id of this ChangeServerImageReq.
+        r"""Sets the image_product_id of this ChangeServerImageReq.
 
         镜像的产品id，当镜像是市场镜像时候，该字段必传。
 
@@ -148,7 +148,7 @@ class ChangeServerImageReq:
 
     @property
     def update_access_agent(self):
-        """Gets the update_access_agent of this ChangeServerImageReq.
+        r"""Gets the update_access_agent of this ChangeServerImageReq.
 
         是否自动升级hda版本。
 
@@ -159,7 +159,7 @@ class ChangeServerImageReq:
 
     @update_access_agent.setter
     def update_access_agent(self, update_access_agent):
-        """Sets the update_access_agent of this ChangeServerImageReq.
+        r"""Sets the update_access_agent of this ChangeServerImageReq.
 
         是否自动升级hda版本。
 

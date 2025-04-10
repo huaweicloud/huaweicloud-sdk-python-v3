@@ -35,7 +35,7 @@ class AudioCreateRequest:
     }
 
     def __init__(self, data=None, biz_type=None, event_type=None, categories=None, param_callback=None, seed=None):
-        """AudioCreateRequest
+        r"""AudioCreateRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class AudioCreateRequest:
 
     @property
     def data(self):
-        """Gets the data of this AudioCreateRequest.
+        r"""Gets the data of this AudioCreateRequest.
 
         :return: The data of this AudioCreateRequest.
         :rtype: :class:`huaweicloudsdkmoderation.v3.AudioInputBody`
@@ -86,7 +86,7 @@ class AudioCreateRequest:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this AudioCreateRequest.
+        r"""Sets the data of this AudioCreateRequest.
 
         :param data: The data of this AudioCreateRequest.
         :type data: :class:`huaweicloudsdkmoderation.v3.AudioInputBody`
@@ -95,7 +95,7 @@ class AudioCreateRequest:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this AudioCreateRequest.
+        r"""Gets the biz_type of this AudioCreateRequest.
 
         用户在控制台界面创建的biz_type名称，如果请求参数中传了biz_type则优先使用biz_type；如果用户没传biz_type则event_type和categories必须传。
 
@@ -106,7 +106,7 @@ class AudioCreateRequest:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this AudioCreateRequest.
+        r"""Sets the biz_type of this AudioCreateRequest.
 
         用户在控制台界面创建的biz_type名称，如果请求参数中传了biz_type则优先使用biz_type；如果用户没传biz_type则event_type和categories必须传。
 
@@ -117,7 +117,7 @@ class AudioCreateRequest:
 
     @property
     def event_type(self):
-        """Gets the event_type of this AudioCreateRequest.
+        r"""Gets the event_type of this AudioCreateRequest.
 
         事件类型，可选值如下： default：默认事件 audiobook：有声书 education：教育音频 game：游戏语音房 live：秀场直播 ecommerce：电商直播 voiceroom：交友语音房 private：私密语音聊天
 
@@ -128,7 +128,7 @@ class AudioCreateRequest:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this AudioCreateRequest.
+        r"""Sets the event_type of this AudioCreateRequest.
 
         事件类型，可选值如下： default：默认事件 audiobook：有声书 education：教育音频 game：游戏语音房 live：秀场直播 ecommerce：电商直播 voiceroom：交友语音房 private：私密语音聊天
 
@@ -139,7 +139,7 @@ class AudioCreateRequest:
 
     @property
     def categories(self):
-        """Gets the categories of this AudioCreateRequest.
+        r"""Gets the categories of this AudioCreateRequest.
 
         需要检测的风险类型，列表不能为空。 风险类型如下： - porn：涉黄检测 - ad：广告检测 - moan：娇喘检测 - abuse：辱骂检测
 
@@ -150,7 +150,7 @@ class AudioCreateRequest:
 
     @categories.setter
     def categories(self, categories):
-        """Sets the categories of this AudioCreateRequest.
+        r"""Sets the categories of this AudioCreateRequest.
 
         需要检测的风险类型，列表不能为空。 风险类型如下： - porn：涉黄检测 - ad：广告检测 - moan：娇喘检测 - abuse：辱骂检测
 
@@ -161,7 +161,7 @@ class AudioCreateRequest:
 
     @property
     def param_callback(self):
-        """Gets the param_callback of this AudioCreateRequest.
+        r"""Gets the param_callback of this AudioCreateRequest.
 
         回调http接口：当该字段非空时，服务将根据该字段回调通知用户审核结果。
 
@@ -172,7 +172,7 @@ class AudioCreateRequest:
 
     @param_callback.setter
     def param_callback(self, param_callback):
-        """Sets the param_callback of this AudioCreateRequest.
+        r"""Sets the param_callback of this AudioCreateRequest.
 
         回调http接口：当该字段非空时，服务将根据该字段回调通知用户审核结果。
 
@@ -183,7 +183,7 @@ class AudioCreateRequest:
 
     @property
     def seed(self):
-        """Gets the seed of this AudioCreateRequest.
+        r"""Gets the seed of this AudioCreateRequest.
 
         用于回调通知时校验请求由华为云内容安全服务发起，由您自定义。随机字符串，由英文字母、数字、下划线组成，不超过64个字符。 说明：当seed非空时，headers中将包含X-Auth-Signature字段，字段的值使用HmacSHA256算法生成，待加密字符串由create_time、job_id、request_id、seed按照顺序拼接而成，密钥为seed。
 
@@ -194,7 +194,7 @@ class AudioCreateRequest:
 
     @seed.setter
     def seed(self, seed):
-        """Sets the seed of this AudioCreateRequest.
+        r"""Sets the seed of this AudioCreateRequest.
 
         用于回调通知时校验请求由华为云内容安全服务发起，由您自定义。随机字符串，由英文字母、数字、下划线组成，不超过64个字符。 说明：当seed非空时，headers中将包含X-Auth-Signature字段，字段的值使用HmacSHA256算法生成，待加密字符串由create_time、job_id、request_id、seed按照顺序拼接而成，密钥为seed。
 

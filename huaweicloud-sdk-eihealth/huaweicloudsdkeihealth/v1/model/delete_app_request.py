@@ -27,7 +27,7 @@ class DeleteAppRequest:
     }
 
     def __init__(self, app_id=None, eihealth_project_id=None):
-        """DeleteAppRequest
+        r"""DeleteAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteAppRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this DeleteAppRequest.
+        r"""Gets the app_id of this DeleteAppRequest.
 
         应用id
 
@@ -59,7 +59,7 @@ class DeleteAppRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this DeleteAppRequest.
+        r"""Sets the app_id of this DeleteAppRequest.
 
         应用id
 
@@ -70,7 +70,7 @@ class DeleteAppRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this DeleteAppRequest.
+        r"""Gets the eihealth_project_id of this DeleteAppRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -81,7 +81,7 @@ class DeleteAppRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this DeleteAppRequest.
+        r"""Sets the eihealth_project_id of this DeleteAppRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 

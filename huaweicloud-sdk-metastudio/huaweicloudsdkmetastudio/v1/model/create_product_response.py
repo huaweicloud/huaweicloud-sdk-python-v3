@@ -28,7 +28,7 @@ class CreateProductResponse(SdkResponse):
     }
 
     def __init__(self, product_id=None, x_request_id=None):
-        """CreateProductResponse
+        r"""CreateProductResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateProductResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateProductResponse.
+        r"""Gets the product_id of this CreateProductResponse.
 
         商品ID
 
@@ -62,7 +62,7 @@ class CreateProductResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateProductResponse.
+        r"""Sets the product_id of this CreateProductResponse.
 
         商品ID
 
@@ -73,7 +73,7 @@ class CreateProductResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateProductResponse.
+        r"""Gets the x_request_id of this CreateProductResponse.
 
         :return: The x_request_id of this CreateProductResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateProductResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateProductResponse.
+        r"""Sets the x_request_id of this CreateProductResponse.
 
         :param x_request_id: The x_request_id of this CreateProductResponse.
         :type x_request_id: str

@@ -37,7 +37,7 @@ class MicroServiceInfoCSE:
     }
 
     def __init__(self, engine_id=None, service_id=None, engine_name=None, service_name=None, register_address=None, cse_app_id=None, version=None):
-        """MicroServiceInfoCSE
+        r"""MicroServiceInfoCSE
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class MicroServiceInfoCSE:
 
     @property
     def engine_id(self):
-        """Gets the engine_id of this MicroServiceInfoCSE.
+        r"""Gets the engine_id of this MicroServiceInfoCSE.
 
         微服务引擎编号
 
@@ -94,7 +94,7 @@ class MicroServiceInfoCSE:
 
     @engine_id.setter
     def engine_id(self, engine_id):
-        """Sets the engine_id of this MicroServiceInfoCSE.
+        r"""Sets the engine_id of this MicroServiceInfoCSE.
 
         微服务引擎编号
 
@@ -105,7 +105,7 @@ class MicroServiceInfoCSE:
 
     @property
     def service_id(self):
-        """Gets the service_id of this MicroServiceInfoCSE.
+        r"""Gets the service_id of this MicroServiceInfoCSE.
 
         微服务编号
 
@@ -116,7 +116,7 @@ class MicroServiceInfoCSE:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this MicroServiceInfoCSE.
+        r"""Sets the service_id of this MicroServiceInfoCSE.
 
         微服务编号
 
@@ -127,7 +127,7 @@ class MicroServiceInfoCSE:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this MicroServiceInfoCSE.
+        r"""Gets the engine_name of this MicroServiceInfoCSE.
 
         微服务引擎名称
 
@@ -138,7 +138,7 @@ class MicroServiceInfoCSE:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this MicroServiceInfoCSE.
+        r"""Sets the engine_name of this MicroServiceInfoCSE.
 
         微服务引擎名称
 
@@ -149,7 +149,7 @@ class MicroServiceInfoCSE:
 
     @property
     def service_name(self):
-        """Gets the service_name of this MicroServiceInfoCSE.
+        r"""Gets the service_name of this MicroServiceInfoCSE.
 
         微服务名称
 
@@ -160,7 +160,7 @@ class MicroServiceInfoCSE:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this MicroServiceInfoCSE.
+        r"""Sets the service_name of this MicroServiceInfoCSE.
 
         微服务名称
 
@@ -171,7 +171,7 @@ class MicroServiceInfoCSE:
 
     @property
     def register_address(self):
-        """Gets the register_address of this MicroServiceInfoCSE.
+        r"""Gets the register_address of this MicroServiceInfoCSE.
 
         注册中心地址
 
@@ -182,7 +182,7 @@ class MicroServiceInfoCSE:
 
     @register_address.setter
     def register_address(self, register_address):
-        """Sets the register_address of this MicroServiceInfoCSE.
+        r"""Sets the register_address of this MicroServiceInfoCSE.
 
         注册中心地址
 
@@ -193,7 +193,7 @@ class MicroServiceInfoCSE:
 
     @property
     def cse_app_id(self):
-        """Gets the cse_app_id of this MicroServiceInfoCSE.
+        r"""Gets the cse_app_id of this MicroServiceInfoCSE.
 
         微服务所属的应用
 
@@ -204,7 +204,7 @@ class MicroServiceInfoCSE:
 
     @cse_app_id.setter
     def cse_app_id(self, cse_app_id):
-        """Sets the cse_app_id of this MicroServiceInfoCSE.
+        r"""Sets the cse_app_id of this MicroServiceInfoCSE.
 
         微服务所属的应用
 
@@ -215,7 +215,7 @@ class MicroServiceInfoCSE:
 
     @property
     def version(self):
-        """Gets the version of this MicroServiceInfoCSE.
+        r"""Gets the version of this MicroServiceInfoCSE.
 
         微服务的版本，已废弃，通过后端服务器组中的版本承载。
 
@@ -226,7 +226,7 @@ class MicroServiceInfoCSE:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this MicroServiceInfoCSE.
+        r"""Sets the version of this MicroServiceInfoCSE.
 
         微服务的版本，已废弃，通过后端服务器组中的版本承载。
 

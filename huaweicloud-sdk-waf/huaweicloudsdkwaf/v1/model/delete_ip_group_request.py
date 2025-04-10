@@ -27,7 +27,7 @@ class DeleteIpGroupRequest:
     }
 
     def __init__(self, enterprise_project_id=None, id=None):
-        """DeleteIpGroupRequest
+        r"""DeleteIpGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteIpGroupRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeleteIpGroupRequest.
+        r"""Gets the enterprise_project_id of this DeleteIpGroupRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -60,7 +60,7 @@ class DeleteIpGroupRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeleteIpGroupRequest.
+        r"""Sets the enterprise_project_id of this DeleteIpGroupRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -71,7 +71,7 @@ class DeleteIpGroupRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteIpGroupRequest.
+        r"""Gets the id of this DeleteIpGroupRequest.
 
         ip地址组id
 
@@ -82,7 +82,7 @@ class DeleteIpGroupRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteIpGroupRequest.
+        r"""Sets the id of this DeleteIpGroupRequest.
 
         ip地址组id
 

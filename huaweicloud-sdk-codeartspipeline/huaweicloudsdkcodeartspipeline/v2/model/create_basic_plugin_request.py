@@ -27,7 +27,7 @@ class CreateBasicPluginRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """CreateBasicPluginRequest
+        r"""CreateBasicPluginRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateBasicPluginRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateBasicPluginRequest.
+        r"""Gets the domain_id of this CreateBasicPluginRequest.
 
         租户ID
 
@@ -60,7 +60,7 @@ class CreateBasicPluginRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateBasicPluginRequest.
+        r"""Sets the domain_id of this CreateBasicPluginRequest.
 
         租户ID
 
@@ -71,7 +71,7 @@ class CreateBasicPluginRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateBasicPluginRequest.
+        r"""Gets the body of this CreateBasicPluginRequest.
 
         :return: The body of this CreateBasicPluginRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PluginBasicDTO`
@@ -80,7 +80,7 @@ class CreateBasicPluginRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateBasicPluginRequest.
+        r"""Sets the body of this CreateBasicPluginRequest.
 
         :param body: The body of this CreateBasicPluginRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.PluginBasicDTO`

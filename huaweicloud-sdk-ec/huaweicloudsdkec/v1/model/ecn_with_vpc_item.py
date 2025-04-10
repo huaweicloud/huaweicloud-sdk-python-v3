@@ -39,7 +39,7 @@ class EcnWithVpcItem:
     }
 
     def __init__(self, id=None, vpc_id=None, subnet_id=None, local_subnet_list=None, remote_subnet_list=None, region_id=None, status=None, created_at=None):
-        """EcnWithVpcItem
+        r"""EcnWithVpcItem
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class EcnWithVpcItem:
 
     @property
     def id(self):
-        """Gets the id of this EcnWithVpcItem.
+        r"""Gets the id of this EcnWithVpcItem.
 
         企业连接网络关联虚拟私有云ID
 
@@ -100,7 +100,7 @@ class EcnWithVpcItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EcnWithVpcItem.
+        r"""Sets the id of this EcnWithVpcItem.
 
         企业连接网络关联虚拟私有云ID
 
@@ -111,7 +111,7 @@ class EcnWithVpcItem:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this EcnWithVpcItem.
+        r"""Gets the vpc_id of this EcnWithVpcItem.
 
         虚拟私有云ID
 
@@ -122,7 +122,7 @@ class EcnWithVpcItem:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this EcnWithVpcItem.
+        r"""Sets the vpc_id of this EcnWithVpcItem.
 
         虚拟私有云ID
 
@@ -133,7 +133,7 @@ class EcnWithVpcItem:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this EcnWithVpcItem.
+        r"""Gets the subnet_id of this EcnWithVpcItem.
 
         子网ID
 
@@ -144,7 +144,7 @@ class EcnWithVpcItem:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this EcnWithVpcItem.
+        r"""Sets the subnet_id of this EcnWithVpcItem.
 
         子网ID
 
@@ -155,7 +155,7 @@ class EcnWithVpcItem:
 
     @property
     def local_subnet_list(self):
-        """Gets the local_subnet_list of this EcnWithVpcItem.
+        r"""Gets the local_subnet_list of this EcnWithVpcItem.
 
         本端子网列表
 
@@ -166,7 +166,7 @@ class EcnWithVpcItem:
 
     @local_subnet_list.setter
     def local_subnet_list(self, local_subnet_list):
-        """Sets the local_subnet_list of this EcnWithVpcItem.
+        r"""Sets the local_subnet_list of this EcnWithVpcItem.
 
         本端子网列表
 
@@ -177,7 +177,7 @@ class EcnWithVpcItem:
 
     @property
     def remote_subnet_list(self):
-        """Gets the remote_subnet_list of this EcnWithVpcItem.
+        r"""Gets the remote_subnet_list of this EcnWithVpcItem.
 
         对端子网列表
 
@@ -188,7 +188,7 @@ class EcnWithVpcItem:
 
     @remote_subnet_list.setter
     def remote_subnet_list(self, remote_subnet_list):
-        """Sets the remote_subnet_list of this EcnWithVpcItem.
+        r"""Sets the remote_subnet_list of this EcnWithVpcItem.
 
         对端子网列表
 
@@ -199,7 +199,7 @@ class EcnWithVpcItem:
 
     @property
     def region_id(self):
-        """Gets the region_id of this EcnWithVpcItem.
+        r"""Gets the region_id of this EcnWithVpcItem.
 
         区域ID
 
@@ -210,7 +210,7 @@ class EcnWithVpcItem:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this EcnWithVpcItem.
+        r"""Sets the region_id of this EcnWithVpcItem.
 
         区域ID
 
@@ -221,7 +221,7 @@ class EcnWithVpcItem:
 
     @property
     def status(self):
-        """Gets the status of this EcnWithVpcItem.
+        r"""Gets the status of this EcnWithVpcItem.
 
         状态
 
@@ -232,7 +232,7 @@ class EcnWithVpcItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EcnWithVpcItem.
+        r"""Sets the status of this EcnWithVpcItem.
 
         状态
 
@@ -243,7 +243,7 @@ class EcnWithVpcItem:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EcnWithVpcItem.
+        r"""Gets the created_at of this EcnWithVpcItem.
 
         创建时间
 
@@ -254,7 +254,7 @@ class EcnWithVpcItem:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EcnWithVpcItem.
+        r"""Sets the created_at of this EcnWithVpcItem.
 
         创建时间
 

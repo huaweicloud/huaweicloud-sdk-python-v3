@@ -33,7 +33,7 @@ class ListClusterSnapshotsRequest:
     }
 
     def __init__(self, cluster_id=None, limit=None, offset=None, sort_key=None, sort_dir=None):
-        """ListClusterSnapshotsRequest
+        r"""ListClusterSnapshotsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListClusterSnapshotsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListClusterSnapshotsRequest.
+        r"""Gets the cluster_id of this ListClusterSnapshotsRequest.
 
         集群ID
 
@@ -81,7 +81,7 @@ class ListClusterSnapshotsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListClusterSnapshotsRequest.
+        r"""Sets the cluster_id of this ListClusterSnapshotsRequest.
 
         集群ID
 
@@ -92,7 +92,7 @@ class ListClusterSnapshotsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListClusterSnapshotsRequest.
+        r"""Gets the limit of this ListClusterSnapshotsRequest.
 
         查询条数
 
@@ -103,7 +103,7 @@ class ListClusterSnapshotsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListClusterSnapshotsRequest.
+        r"""Sets the limit of this ListClusterSnapshotsRequest.
 
         查询条数
 
@@ -114,7 +114,7 @@ class ListClusterSnapshotsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListClusterSnapshotsRequest.
+        r"""Gets the offset of this ListClusterSnapshotsRequest.
 
         偏移量
 
@@ -125,7 +125,7 @@ class ListClusterSnapshotsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListClusterSnapshotsRequest.
+        r"""Sets the offset of this ListClusterSnapshotsRequest.
 
         偏移量
 
@@ -136,7 +136,7 @@ class ListClusterSnapshotsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListClusterSnapshotsRequest.
+        r"""Gets the sort_key of this ListClusterSnapshotsRequest.
 
         排序字段
 
@@ -147,7 +147,7 @@ class ListClusterSnapshotsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListClusterSnapshotsRequest.
+        r"""Sets the sort_key of this ListClusterSnapshotsRequest.
 
         排序字段
 
@@ -158,7 +158,7 @@ class ListClusterSnapshotsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListClusterSnapshotsRequest.
+        r"""Gets the sort_dir of this ListClusterSnapshotsRequest.
 
         排序规则
 
@@ -169,7 +169,7 @@ class ListClusterSnapshotsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListClusterSnapshotsRequest.
+        r"""Sets the sort_dir of this ListClusterSnapshotsRequest.
 
         排序规则
 

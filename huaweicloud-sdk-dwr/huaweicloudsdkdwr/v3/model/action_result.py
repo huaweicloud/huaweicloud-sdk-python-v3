@@ -33,7 +33,7 @@ class ActionResult:
     }
 
     def __init__(self, match=None, retry_interval=None, max_retry=None, next_state=None, is_terminal=None):
-        """ActionResult
+        r"""ActionResult
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ActionResult:
 
     @property
     def match(self):
-        """Gets the match of this ActionResult.
+        r"""Gets the match of this ActionResult.
 
         触发错误处理需符合的条件
 
@@ -79,7 +79,7 @@ class ActionResult:
 
     @match.setter
     def match(self, match):
-        """Sets the match of this ActionResult.
+        r"""Sets the match of this ActionResult.
 
         触发错误处理需符合的条件
 
@@ -90,7 +90,7 @@ class ActionResult:
 
     @property
     def retry_interval(self):
-        """Gets the retry_interval of this ActionResult.
+        r"""Gets the retry_interval of this ActionResult.
 
         每次重试间隔时间
 
@@ -101,7 +101,7 @@ class ActionResult:
 
     @retry_interval.setter
     def retry_interval(self, retry_interval):
-        """Sets the retry_interval of this ActionResult.
+        r"""Sets the retry_interval of this ActionResult.
 
         每次重试间隔时间
 
@@ -112,7 +112,7 @@ class ActionResult:
 
     @property
     def max_retry(self):
-        """Gets the max_retry of this ActionResult.
+        r"""Gets the max_retry of this ActionResult.
 
         最多重试次数
 
@@ -123,7 +123,7 @@ class ActionResult:
 
     @max_retry.setter
     def max_retry(self, max_retry):
-        """Sets the max_retry of this ActionResult.
+        r"""Sets the max_retry of this ActionResult.
 
         最多重试次数
 
@@ -134,7 +134,7 @@ class ActionResult:
 
     @property
     def next_state(self):
-        """Gets the next_state of this ActionResult.
+        r"""Gets the next_state of this ActionResult.
 
         下一个状态
 
@@ -145,7 +145,7 @@ class ActionResult:
 
     @next_state.setter
     def next_state(self, next_state):
-        """Sets the next_state of this ActionResult.
+        r"""Sets the next_state of this ActionResult.
 
         下一个状态
 
@@ -156,7 +156,7 @@ class ActionResult:
 
     @property
     def is_terminal(self):
-        """Gets the is_terminal of this ActionResult.
+        r"""Gets the is_terminal of this ActionResult.
 
         是否为结束状态
 
@@ -167,7 +167,7 @@ class ActionResult:
 
     @is_terminal.setter
     def is_terminal(self, is_terminal):
-        """Sets the is_terminal of this ActionResult.
+        r"""Sets the is_terminal of this ActionResult.
 
         是否为结束状态
 

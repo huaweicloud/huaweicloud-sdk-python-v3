@@ -32,7 +32,7 @@ class ListResourceSharesByTagsRequest:
     }
 
     def __init__(self, limit=None, offset=None, x_security_token=None, body=None):
-        """ListResourceSharesByTagsRequest
+        r"""ListResourceSharesByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListResourceSharesByTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResourceSharesByTagsRequest.
+        r"""Gets the limit of this ListResourceSharesByTagsRequest.
 
         分页页面的最大值。
 
@@ -76,7 +76,7 @@ class ListResourceSharesByTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResourceSharesByTagsRequest.
+        r"""Sets the limit of this ListResourceSharesByTagsRequest.
 
         分页页面的最大值。
 
@@ -87,7 +87,7 @@ class ListResourceSharesByTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListResourceSharesByTagsRequest.
+        r"""Gets the offset of this ListResourceSharesByTagsRequest.
 
         分页标记。
 
@@ -98,7 +98,7 @@ class ListResourceSharesByTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListResourceSharesByTagsRequest.
+        r"""Sets the offset of this ListResourceSharesByTagsRequest.
 
         分页标记。
 
@@ -109,7 +109,7 @@ class ListResourceSharesByTagsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListResourceSharesByTagsRequest.
+        r"""Gets the x_security_token of this ListResourceSharesByTagsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -120,7 +120,7 @@ class ListResourceSharesByTagsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListResourceSharesByTagsRequest.
+        r"""Sets the x_security_token of this ListResourceSharesByTagsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -131,7 +131,7 @@ class ListResourceSharesByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListResourceSharesByTagsRequest.
+        r"""Gets the body of this ListResourceSharesByTagsRequest.
 
         :return: The body of this ListResourceSharesByTagsRequest.
         :rtype: :class:`huaweicloudsdkram.v1.ResourceSharesByTagsReqBody`
@@ -140,7 +140,7 @@ class ListResourceSharesByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListResourceSharesByTagsRequest.
+        r"""Sets the body of this ListResourceSharesByTagsRequest.
 
         :param body: The body of this ListResourceSharesByTagsRequest.
         :type body: :class:`huaweicloudsdkram.v1.ResourceSharesByTagsReqBody`

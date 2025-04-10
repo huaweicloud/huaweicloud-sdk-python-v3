@@ -69,7 +69,7 @@ class VersionModelQueryViewDTO:
     }
 
     def __init__(self, branch=None, check_out_time=None, check_out_user_name=None, class_name=None, create_time=None, creator=None, description=None, id=None, iteration=None, last_update_time=None, latest=None, latest_iteration=None, latest_version=None, master=None, modifier=None, name=None, pre_version_id=None, rdm_extension_type=None, tenant=None, version=None, version_code=None, working_copy=None, working_state=None):
-        """VersionModelQueryViewDTO
+        r"""VersionModelQueryViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -197,7 +197,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def branch(self):
-        """Gets the branch of this VersionModelQueryViewDTO.
+        r"""Gets the branch of this VersionModelQueryViewDTO.
 
         :return: The branch of this VersionModelQueryViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.VersionObjectBranchQueryViewDTO`
@@ -206,7 +206,7 @@ class VersionModelQueryViewDTO:
 
     @branch.setter
     def branch(self, branch):
-        """Sets the branch of this VersionModelQueryViewDTO.
+        r"""Sets the branch of this VersionModelQueryViewDTO.
 
         :param branch: The branch of this VersionModelQueryViewDTO.
         :type branch: :class:`huaweicloudsdkidmeclassicapi.v1.VersionObjectBranchQueryViewDTO`
@@ -215,7 +215,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def check_out_time(self):
-        """Gets the check_out_time of this VersionModelQueryViewDTO.
+        r"""Gets the check_out_time of this VersionModelQueryViewDTO.
 
         **参数解释：**  检出时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -226,7 +226,7 @@ class VersionModelQueryViewDTO:
 
     @check_out_time.setter
     def check_out_time(self, check_out_time):
-        """Sets the check_out_time of this VersionModelQueryViewDTO.
+        r"""Sets the check_out_time of this VersionModelQueryViewDTO.
 
         **参数解释：**  检出时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -237,7 +237,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def check_out_user_name(self):
-        """Gets the check_out_user_name of this VersionModelQueryViewDTO.
+        r"""Gets the check_out_user_name of this VersionModelQueryViewDTO.
 
         **参数解释：**  检出人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -248,7 +248,7 @@ class VersionModelQueryViewDTO:
 
     @check_out_user_name.setter
     def check_out_user_name(self, check_out_user_name):
-        """Sets the check_out_user_name of this VersionModelQueryViewDTO.
+        r"""Sets the check_out_user_name of this VersionModelQueryViewDTO.
 
         **参数解释：**  检出人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -259,7 +259,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this VersionModelQueryViewDTO.
+        r"""Gets the class_name of this VersionModelQueryViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -270,7 +270,7 @@ class VersionModelQueryViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this VersionModelQueryViewDTO.
+        r"""Sets the class_name of this VersionModelQueryViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -281,7 +281,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this VersionModelQueryViewDTO.
+        r"""Gets the create_time of this VersionModelQueryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -292,7 +292,7 @@ class VersionModelQueryViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this VersionModelQueryViewDTO.
+        r"""Sets the create_time of this VersionModelQueryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -303,7 +303,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this VersionModelQueryViewDTO.
+        r"""Gets the creator of this VersionModelQueryViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -314,7 +314,7 @@ class VersionModelQueryViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this VersionModelQueryViewDTO.
+        r"""Sets the creator of this VersionModelQueryViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -325,7 +325,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def description(self):
-        """Gets the description of this VersionModelQueryViewDTO.
+        r"""Gets the description of this VersionModelQueryViewDTO.
 
         **参数解释：**  描述信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -336,7 +336,7 @@ class VersionModelQueryViewDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VersionModelQueryViewDTO.
+        r"""Sets the description of this VersionModelQueryViewDTO.
 
         **参数解释：**  描述信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -347,7 +347,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this VersionModelQueryViewDTO.
+        r"""Gets the id of this VersionModelQueryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -358,7 +358,7 @@ class VersionModelQueryViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VersionModelQueryViewDTO.
+        r"""Sets the id of this VersionModelQueryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -369,7 +369,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def iteration(self):
-        """Gets the iteration of this VersionModelQueryViewDTO.
+        r"""Gets the iteration of this VersionModelQueryViewDTO.
 
         **参数解释：**  迭代版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -380,7 +380,7 @@ class VersionModelQueryViewDTO:
 
     @iteration.setter
     def iteration(self, iteration):
-        """Sets the iteration of this VersionModelQueryViewDTO.
+        r"""Sets the iteration of this VersionModelQueryViewDTO.
 
         **参数解释：**  迭代版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -391,7 +391,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this VersionModelQueryViewDTO.
+        r"""Gets the last_update_time of this VersionModelQueryViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -402,7 +402,7 @@ class VersionModelQueryViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this VersionModelQueryViewDTO.
+        r"""Sets the last_update_time of this VersionModelQueryViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -413,7 +413,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def latest(self):
-        """Gets the latest of this VersionModelQueryViewDTO.
+        r"""Gets the latest of this VersionModelQueryViewDTO.
 
         **参数解释：**  是否为最新版本。  **取值范围：**  - true：是最新版本。 - false：不是最新版本。  **默认取值：**  false。 
 
@@ -424,7 +424,7 @@ class VersionModelQueryViewDTO:
 
     @latest.setter
     def latest(self, latest):
-        """Sets the latest of this VersionModelQueryViewDTO.
+        r"""Sets the latest of this VersionModelQueryViewDTO.
 
         **参数解释：**  是否为最新版本。  **取值范围：**  - true：是最新版本。 - false：不是最新版本。  **默认取值：**  false。 
 
@@ -435,7 +435,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def latest_iteration(self):
-        """Gets the latest_iteration of this VersionModelQueryViewDTO.
+        r"""Gets the latest_iteration of this VersionModelQueryViewDTO.
 
         **参数解释：**  是否为最新迭代版本。  **取值范围：**  - true：是最新迭代版本。 - false：不是最新迭代版本。  **默认取值：**  false。 
 
@@ -446,7 +446,7 @@ class VersionModelQueryViewDTO:
 
     @latest_iteration.setter
     def latest_iteration(self, latest_iteration):
-        """Sets the latest_iteration of this VersionModelQueryViewDTO.
+        r"""Sets the latest_iteration of this VersionModelQueryViewDTO.
 
         **参数解释：**  是否为最新迭代版本。  **取值范围：**  - true：是最新迭代版本。 - false：不是最新迭代版本。  **默认取值：**  false。 
 
@@ -457,7 +457,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def latest_version(self):
-        """Gets the latest_version of this VersionModelQueryViewDTO.
+        r"""Gets the latest_version of this VersionModelQueryViewDTO.
 
         **参数解释：**  是否为最新修订版本。  **取值范围：**  - true：是最新修订版本。 - false：不是最新修订版本。  **默认取值：**  false。 
 
@@ -468,7 +468,7 @@ class VersionModelQueryViewDTO:
 
     @latest_version.setter
     def latest_version(self, latest_version):
-        """Sets the latest_version of this VersionModelQueryViewDTO.
+        r"""Sets the latest_version of this VersionModelQueryViewDTO.
 
         **参数解释：**  是否为最新修订版本。  **取值范围：**  - true：是最新修订版本。 - false：不是最新修订版本。  **默认取值：**  false。 
 
@@ -479,7 +479,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def master(self):
-        """Gets the master of this VersionModelQueryViewDTO.
+        r"""Gets the master of this VersionModelQueryViewDTO.
 
         :return: The master of this VersionModelQueryViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.MasterObjectQueryViewDTO`
@@ -488,7 +488,7 @@ class VersionModelQueryViewDTO:
 
     @master.setter
     def master(self, master):
-        """Sets the master of this VersionModelQueryViewDTO.
+        r"""Sets the master of this VersionModelQueryViewDTO.
 
         :param master: The master of this VersionModelQueryViewDTO.
         :type master: :class:`huaweicloudsdkidmeclassicapi.v1.MasterObjectQueryViewDTO`
@@ -497,7 +497,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this VersionModelQueryViewDTO.
+        r"""Gets the modifier of this VersionModelQueryViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -508,7 +508,7 @@ class VersionModelQueryViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this VersionModelQueryViewDTO.
+        r"""Sets the modifier of this VersionModelQueryViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -519,7 +519,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def name(self):
-        """Gets the name of this VersionModelQueryViewDTO.
+        r"""Gets the name of this VersionModelQueryViewDTO.
 
         **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -530,7 +530,7 @@ class VersionModelQueryViewDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VersionModelQueryViewDTO.
+        r"""Sets the name of this VersionModelQueryViewDTO.
 
         **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -541,7 +541,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def pre_version_id(self):
-        """Gets the pre_version_id of this VersionModelQueryViewDTO.
+        r"""Gets the pre_version_id of this VersionModelQueryViewDTO.
 
         **参数解释：**  前序版本实例ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -552,7 +552,7 @@ class VersionModelQueryViewDTO:
 
     @pre_version_id.setter
     def pre_version_id(self, pre_version_id):
-        """Sets the pre_version_id of this VersionModelQueryViewDTO.
+        r"""Sets the pre_version_id of this VersionModelQueryViewDTO.
 
         **参数解释：**  前序版本实例ID。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -563,7 +563,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this VersionModelQueryViewDTO.
+        r"""Gets the rdm_extension_type of this VersionModelQueryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -574,7 +574,7 @@ class VersionModelQueryViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this VersionModelQueryViewDTO.
+        r"""Sets the rdm_extension_type of this VersionModelQueryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -585,7 +585,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this VersionModelQueryViewDTO.
+        r"""Gets the tenant of this VersionModelQueryViewDTO.
 
         :return: The tenant of this VersionModelQueryViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantQueryViewDTO`
@@ -594,7 +594,7 @@ class VersionModelQueryViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this VersionModelQueryViewDTO.
+        r"""Sets the tenant of this VersionModelQueryViewDTO.
 
         :param tenant: The tenant of this VersionModelQueryViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantQueryViewDTO`
@@ -603,7 +603,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def version(self):
-        """Gets the version of this VersionModelQueryViewDTO.
+        r"""Gets the version of this VersionModelQueryViewDTO.
 
         **参数解释：**  版本号。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -614,7 +614,7 @@ class VersionModelQueryViewDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this VersionModelQueryViewDTO.
+        r"""Sets the version of this VersionModelQueryViewDTO.
 
         **参数解释：**  版本号。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -625,7 +625,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def version_code(self):
-        """Gets the version_code of this VersionModelQueryViewDTO.
+        r"""Gets the version_code of this VersionModelQueryViewDTO.
 
         **参数解释：**  业务版本内码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -636,7 +636,7 @@ class VersionModelQueryViewDTO:
 
     @version_code.setter
     def version_code(self, version_code):
-        """Sets the version_code of this VersionModelQueryViewDTO.
+        r"""Sets the version_code of this VersionModelQueryViewDTO.
 
         **参数解释：**  业务版本内码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -647,7 +647,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def working_copy(self):
-        """Gets the working_copy of this VersionModelQueryViewDTO.
+        r"""Gets the working_copy of this VersionModelQueryViewDTO.
 
         **参数解释：**  是否已检出。  **取值范围：**  - true：已检出。 - false：未检出。  **默认取值：**  不涉及。 
 
@@ -658,7 +658,7 @@ class VersionModelQueryViewDTO:
 
     @working_copy.setter
     def working_copy(self, working_copy):
-        """Sets the working_copy of this VersionModelQueryViewDTO.
+        r"""Sets the working_copy of this VersionModelQueryViewDTO.
 
         **参数解释：**  是否已检出。  **取值范围：**  - true：已检出。 - false：未检出。  **默认取值：**  不涉及。 
 
@@ -669,7 +669,7 @@ class VersionModelQueryViewDTO:
 
     @property
     def working_state(self):
-        """Gets the working_state of this VersionModelQueryViewDTO.
+        r"""Gets the working_state of this VersionModelQueryViewDTO.
 
         :return: The working_state of this VersionModelQueryViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.WorkingState`
@@ -678,7 +678,7 @@ class VersionModelQueryViewDTO:
 
     @working_state.setter
     def working_state(self, working_state):
-        """Sets the working_state of this VersionModelQueryViewDTO.
+        r"""Sets the working_state of this VersionModelQueryViewDTO.
 
         :param working_state: The working_state of this VersionModelQueryViewDTO.
         :type working_state: :class:`huaweicloudsdkidmeclassicapi.v1.WorkingState`

@@ -33,7 +33,7 @@ class ShowJobInfoRequest:
     }
 
     def __init__(self, job_id=None, instance_id=None, limit=None, offset=None, desc=None):
-        """ShowJobInfoRequest
+        r"""ShowJobInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ShowJobInfoRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobInfoRequest.
+        r"""Gets the job_id of this ShowJobInfoRequest.
 
         任务id，能通过组件操作获取
 
@@ -81,7 +81,7 @@ class ShowJobInfoRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobInfoRequest.
+        r"""Sets the job_id of this ShowJobInfoRequest.
 
         任务id，能通过组件操作获取
 
@@ -92,7 +92,7 @@ class ShowJobInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowJobInfoRequest.
+        r"""Gets the instance_id of this ShowJobInfoRequest.
 
         组件实例id
 
@@ -103,7 +103,7 @@ class ShowJobInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowJobInfoRequest.
+        r"""Sets the instance_id of this ShowJobInfoRequest.
 
         组件实例id
 
@@ -114,7 +114,7 @@ class ShowJobInfoRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowJobInfoRequest.
+        r"""Gets the limit of this ShowJobInfoRequest.
 
         限制数量
 
@@ -125,7 +125,7 @@ class ShowJobInfoRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowJobInfoRequest.
+        r"""Sets the limit of this ShowJobInfoRequest.
 
         限制数量
 
@@ -136,7 +136,7 @@ class ShowJobInfoRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowJobInfoRequest.
+        r"""Gets the offset of this ShowJobInfoRequest.
 
         偏移量
 
@@ -147,7 +147,7 @@ class ShowJobInfoRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowJobInfoRequest.
+        r"""Sets the offset of this ShowJobInfoRequest.
 
         偏移量
 
@@ -158,7 +158,7 @@ class ShowJobInfoRequest:
 
     @property
     def desc(self):
-        """Gets the desc of this ShowJobInfoRequest.
+        r"""Gets the desc of this ShowJobInfoRequest.
 
         排序，true是倒序，false是正序
 
@@ -169,7 +169,7 @@ class ShowJobInfoRequest:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this ShowJobInfoRequest.
+        r"""Sets the desc of this ShowJobInfoRequest.
 
         排序，true是倒序，false是正序
 

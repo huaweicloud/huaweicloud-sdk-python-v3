@@ -27,7 +27,7 @@ class UpdateExtendClusterRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateExtendClusterRequest
+        r"""UpdateExtendClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateExtendClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateExtendClusterRequest.
+        r"""Gets the cluster_id of this UpdateExtendClusterRequest.
 
         指定待扩容的集群ID。
 
@@ -60,7 +60,7 @@ class UpdateExtendClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateExtendClusterRequest.
+        r"""Sets the cluster_id of this UpdateExtendClusterRequest.
 
         指定待扩容的集群ID。
 
@@ -71,7 +71,7 @@ class UpdateExtendClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateExtendClusterRequest.
+        r"""Gets the body of this UpdateExtendClusterRequest.
 
         :return: The body of this UpdateExtendClusterRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.ExtendClusterReq`
@@ -80,7 +80,7 @@ class UpdateExtendClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateExtendClusterRequest.
+        r"""Sets the body of this UpdateExtendClusterRequest.
 
         :param body: The body of this UpdateExtendClusterRequest.
         :type body: :class:`huaweicloudsdkcss.v1.ExtendClusterReq`

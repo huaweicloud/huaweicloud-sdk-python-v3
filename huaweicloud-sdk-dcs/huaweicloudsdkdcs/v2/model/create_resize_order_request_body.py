@@ -33,7 +33,7 @@ class CreateResizeOrderRequestBody:
     }
 
     def __init__(self, auto_open_security_group_rule=None, execute_immediately=None, new_capacity=None, password=None, spec_code=None):
-        """CreateResizeOrderRequestBody
+        r"""CreateResizeOrderRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CreateResizeOrderRequestBody:
 
     @property
     def auto_open_security_group_rule(self):
-        """Gets the auto_open_security_group_rule of this CreateResizeOrderRequestBody.
+        r"""Gets the auto_open_security_group_rule of this CreateResizeOrderRequestBody.
 
         自动开启安全组规则
 
@@ -82,7 +82,7 @@ class CreateResizeOrderRequestBody:
 
     @auto_open_security_group_rule.setter
     def auto_open_security_group_rule(self, auto_open_security_group_rule):
-        """Sets the auto_open_security_group_rule of this CreateResizeOrderRequestBody.
+        r"""Sets the auto_open_security_group_rule of this CreateResizeOrderRequestBody.
 
         自动开启安全组规则
 
@@ -93,7 +93,7 @@ class CreateResizeOrderRequestBody:
 
     @property
     def execute_immediately(self):
-        """Gets the execute_immediately of this CreateResizeOrderRequestBody.
+        r"""Gets the execute_immediately of this CreateResizeOrderRequestBody.
 
         启动迅速
 
@@ -104,7 +104,7 @@ class CreateResizeOrderRequestBody:
 
     @execute_immediately.setter
     def execute_immediately(self, execute_immediately):
-        """Sets the execute_immediately of this CreateResizeOrderRequestBody.
+        r"""Sets the execute_immediately of this CreateResizeOrderRequestBody.
 
         启动迅速
 
@@ -115,7 +115,7 @@ class CreateResizeOrderRequestBody:
 
     @property
     def new_capacity(self):
-        """Gets the new_capacity of this CreateResizeOrderRequestBody.
+        r"""Gets the new_capacity of this CreateResizeOrderRequestBody.
 
         新的容量，单位是GB
 
@@ -126,7 +126,7 @@ class CreateResizeOrderRequestBody:
 
     @new_capacity.setter
     def new_capacity(self, new_capacity):
-        """Sets the new_capacity of this CreateResizeOrderRequestBody.
+        r"""Sets the new_capacity of this CreateResizeOrderRequestBody.
 
         新的容量，单位是GB
 
@@ -137,7 +137,7 @@ class CreateResizeOrderRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this CreateResizeOrderRequestBody.
+        r"""Gets the password of this CreateResizeOrderRequestBody.
 
         密码
 
@@ -148,7 +148,7 @@ class CreateResizeOrderRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateResizeOrderRequestBody.
+        r"""Sets the password of this CreateResizeOrderRequestBody.
 
         密码
 
@@ -159,7 +159,7 @@ class CreateResizeOrderRequestBody:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this CreateResizeOrderRequestBody.
+        r"""Gets the spec_code of this CreateResizeOrderRequestBody.
 
         区域代码
 
@@ -170,7 +170,7 @@ class CreateResizeOrderRequestBody:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this CreateResizeOrderRequestBody.
+        r"""Sets the spec_code of this CreateResizeOrderRequestBody.
 
         区域代码
 

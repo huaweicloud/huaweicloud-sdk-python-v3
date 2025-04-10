@@ -23,7 +23,7 @@ class ListMaintenanceWindowsRequest:
     }
 
     def __init__(self):
-        """ListMaintenanceWindowsRequest
+        r"""ListMaintenanceWindowsRequest
 
         The model defined in huaweicloud sdk
 

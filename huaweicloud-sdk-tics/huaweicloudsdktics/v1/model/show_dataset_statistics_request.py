@@ -29,7 +29,7 @@ class ShowDatasetStatisticsRequest:
     }
 
     def __init__(self, league_id=None, start_date=None, end_date=None):
-        """ShowDatasetStatisticsRequest
+        r"""ShowDatasetStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowDatasetStatisticsRequest:
 
     @property
     def league_id(self):
-        """Gets the league_id of this ShowDatasetStatisticsRequest.
+        r"""Gets the league_id of this ShowDatasetStatisticsRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -67,7 +67,7 @@ class ShowDatasetStatisticsRequest:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this ShowDatasetStatisticsRequest.
+        r"""Sets the league_id of this ShowDatasetStatisticsRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -78,7 +78,7 @@ class ShowDatasetStatisticsRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ShowDatasetStatisticsRequest.
+        r"""Gets the start_date of this ShowDatasetStatisticsRequest.
 
         开始日期
 
@@ -89,7 +89,7 @@ class ShowDatasetStatisticsRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ShowDatasetStatisticsRequest.
+        r"""Sets the start_date of this ShowDatasetStatisticsRequest.
 
         开始日期
 
@@ -100,7 +100,7 @@ class ShowDatasetStatisticsRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ShowDatasetStatisticsRequest.
+        r"""Gets the end_date of this ShowDatasetStatisticsRequest.
 
         结束日期
 
@@ -111,7 +111,7 @@ class ShowDatasetStatisticsRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ShowDatasetStatisticsRequest.
+        r"""Sets the end_date of this ShowDatasetStatisticsRequest.
 
         结束日期
 

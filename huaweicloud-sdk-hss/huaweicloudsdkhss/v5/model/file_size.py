@@ -23,7 +23,7 @@ class FileSize:
     }
 
     def __init__(self):
-        """FileSize
+        r"""FileSize
 
         The model defined in huaweicloud sdk
 

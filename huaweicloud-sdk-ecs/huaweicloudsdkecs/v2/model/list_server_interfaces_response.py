@@ -28,7 +28,7 @@ class ListServerInterfacesResponse(SdkResponse):
     }
 
     def __init__(self, attachable_quantity=None, interface_attachments=None):
-        """ListServerInterfacesResponse
+        r"""ListServerInterfacesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListServerInterfacesResponse(SdkResponse):
 
     @property
     def attachable_quantity(self):
-        """Gets the attachable_quantity of this ListServerInterfacesResponse.
+        r"""Gets the attachable_quantity of this ListServerInterfacesResponse.
 
         :return: The attachable_quantity of this ListServerInterfacesResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.InterfaceAttachableQuantity`
@@ -60,7 +60,7 @@ class ListServerInterfacesResponse(SdkResponse):
 
     @attachable_quantity.setter
     def attachable_quantity(self, attachable_quantity):
-        """Sets the attachable_quantity of this ListServerInterfacesResponse.
+        r"""Sets the attachable_quantity of this ListServerInterfacesResponse.
 
         :param attachable_quantity: The attachable_quantity of this ListServerInterfacesResponse.
         :type attachable_quantity: :class:`huaweicloudsdkecs.v2.InterfaceAttachableQuantity`
@@ -69,7 +69,7 @@ class ListServerInterfacesResponse(SdkResponse):
 
     @property
     def interface_attachments(self):
-        """Gets the interface_attachments of this ListServerInterfacesResponse.
+        r"""Gets the interface_attachments of this ListServerInterfacesResponse.
 
         云服务器网卡信息列表
 
@@ -80,7 +80,7 @@ class ListServerInterfacesResponse(SdkResponse):
 
     @interface_attachments.setter
     def interface_attachments(self, interface_attachments):
-        """Sets the interface_attachments of this ListServerInterfacesResponse.
+        r"""Sets the interface_attachments of this ListServerInterfacesResponse.
 
         云服务器网卡信息列表
 

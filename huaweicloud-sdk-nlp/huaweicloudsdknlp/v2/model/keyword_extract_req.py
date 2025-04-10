@@ -29,7 +29,7 @@ class KeywordExtractReq:
     }
 
     def __init__(self, text=None, limit=None, lang=None):
-        """KeywordExtractReq
+        r"""KeywordExtractReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class KeywordExtractReq:
 
     @property
     def text(self):
-        """Gets the text of this KeywordExtractReq.
+        r"""Gets the text of this KeywordExtractReq.
 
         待分析文本，长度为1~512，文本编码为UTF-8。
 
@@ -67,7 +67,7 @@ class KeywordExtractReq:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this KeywordExtractReq.
+        r"""Sets the text of this KeywordExtractReq.
 
         待分析文本，长度为1~512，文本编码为UTF-8。
 
@@ -78,7 +78,7 @@ class KeywordExtractReq:
 
     @property
     def limit(self):
-        """Gets the limit of this KeywordExtractReq.
+        r"""Gets the limit of this KeywordExtractReq.
 
         返回关键词的最大数量，默认为5。
 
@@ -89,7 +89,7 @@ class KeywordExtractReq:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this KeywordExtractReq.
+        r"""Sets the limit of this KeywordExtractReq.
 
         返回关键词的最大数量，默认为5。
 
@@ -100,7 +100,7 @@ class KeywordExtractReq:
 
     @property
     def lang(self):
-        """Gets the lang of this KeywordExtractReq.
+        r"""Gets the lang of this KeywordExtractReq.
 
         支持的文本语言类型，目前只支持中文，默认为zh。
 
@@ -111,7 +111,7 @@ class KeywordExtractReq:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this KeywordExtractReq.
+        r"""Sets the lang of this KeywordExtractReq.
 
         支持的文本语言类型，目前只支持中文，默认为zh。
 

@@ -31,7 +31,7 @@ class EndpointCreateReq:
     }
 
     def __init__(self, name=None, vpc_id=None, subnet_id=None, description=None):
-        """EndpointCreateReq
+        r"""EndpointCreateReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class EndpointCreateReq:
 
     @property
     def name(self):
-        """Gets the name of this EndpointCreateReq.
+        r"""Gets the name of this EndpointCreateReq.
 
         endpoint名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须以字母或数字开头
 
@@ -72,7 +72,7 @@ class EndpointCreateReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EndpointCreateReq.
+        r"""Sets the name of this EndpointCreateReq.
 
         endpoint名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须以字母或数字开头
 
@@ -83,7 +83,7 @@ class EndpointCreateReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this EndpointCreateReq.
+        r"""Gets the vpc_id of this EndpointCreateReq.
 
         访问端点所在的VPC的ID
 
@@ -94,7 +94,7 @@ class EndpointCreateReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this EndpointCreateReq.
+        r"""Sets the vpc_id of this EndpointCreateReq.
 
         访问端点所在的VPC的ID
 
@@ -105,7 +105,7 @@ class EndpointCreateReq:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this EndpointCreateReq.
+        r"""Gets the subnet_id of this EndpointCreateReq.
 
         访问端点所在的子网的ID
 
@@ -116,7 +116,7 @@ class EndpointCreateReq:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this EndpointCreateReq.
+        r"""Sets the subnet_id of this EndpointCreateReq.
 
         访问端点所在的子网的ID
 
@@ -127,7 +127,7 @@ class EndpointCreateReq:
 
     @property
     def description(self):
-        """Gets the description of this EndpointCreateReq.
+        r"""Gets the description of this EndpointCreateReq.
 
         描述
 
@@ -138,7 +138,7 @@ class EndpointCreateReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EndpointCreateReq.
+        r"""Sets the description of this EndpointCreateReq.
 
         描述
 

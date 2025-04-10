@@ -26,7 +26,7 @@ class CreateLogDumpObsResponse(SdkResponse):
     }
 
     def __init__(self, log_dump_obs_id=None):
-        """CreateLogDumpObsResponse
+        r"""CreateLogDumpObsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateLogDumpObsResponse(SdkResponse):
 
     @property
     def log_dump_obs_id(self):
-        """Gets the log_dump_obs_id of this CreateLogDumpObsResponse.
+        r"""Gets the log_dump_obs_id of this CreateLogDumpObsResponse.
 
         转储id。
 
@@ -55,7 +55,7 @@ class CreateLogDumpObsResponse(SdkResponse):
 
     @log_dump_obs_id.setter
     def log_dump_obs_id(self, log_dump_obs_id):
-        """Sets the log_dump_obs_id of this CreateLogDumpObsResponse.
+        r"""Sets the log_dump_obs_id of this CreateLogDumpObsResponse.
 
         转储id。
 

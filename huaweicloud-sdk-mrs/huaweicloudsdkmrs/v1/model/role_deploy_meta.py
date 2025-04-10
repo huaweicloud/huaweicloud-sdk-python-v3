@@ -61,7 +61,7 @@ class RoleDeployMeta:
     }
 
     def __init__(self, other=None, name=None, code_name=None, component=None, node_preference=None, count=None, affinity=None, affinity_target=None, multi_instance=None, role_kind=None, constraints=None, multi_az_placement=None, arbitration_deployment=None, support_elb=None, multi_affinity_group_enable=None, local_disks_anti_affinity=None, multi_instance_name_pattern=None, private_ip=None, weight=None):
-        """RoleDeployMeta
+        r"""RoleDeployMeta
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class RoleDeployMeta:
 
     @property
     def other(self):
-        """Gets the other of this RoleDeployMeta.
+        r"""Gets the other of this RoleDeployMeta.
 
         其他扩展属性
 
@@ -180,7 +180,7 @@ class RoleDeployMeta:
 
     @other.setter
     def other(self, other):
-        """Sets the other of this RoleDeployMeta.
+        r"""Sets the other of this RoleDeployMeta.
 
         其他扩展属性
 
@@ -191,7 +191,7 @@ class RoleDeployMeta:
 
     @property
     def name(self):
-        """Gets the name of this RoleDeployMeta.
+        r"""Gets the name of this RoleDeployMeta.
 
         角色名称
 
@@ -202,7 +202,7 @@ class RoleDeployMeta:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RoleDeployMeta.
+        r"""Sets the name of this RoleDeployMeta.
 
         角色名称
 
@@ -213,7 +213,7 @@ class RoleDeployMeta:
 
     @property
     def code_name(self):
-        """Gets the code_name of this RoleDeployMeta.
+        r"""Gets the code_name of this RoleDeployMeta.
 
         角色简称
 
@@ -224,7 +224,7 @@ class RoleDeployMeta:
 
     @code_name.setter
     def code_name(self, code_name):
-        """Sets the code_name of this RoleDeployMeta.
+        r"""Sets the code_name of this RoleDeployMeta.
 
         角色简称
 
@@ -235,7 +235,7 @@ class RoleDeployMeta:
 
     @property
     def component(self):
-        """Gets the component of this RoleDeployMeta.
+        r"""Gets the component of this RoleDeployMeta.
 
         角色所属组件
 
@@ -246,7 +246,7 @@ class RoleDeployMeta:
 
     @component.setter
     def component(self, component):
-        """Sets the component of this RoleDeployMeta.
+        r"""Sets the component of this RoleDeployMeta.
 
         角色所属组件
 
@@ -257,7 +257,7 @@ class RoleDeployMeta:
 
     @property
     def node_preference(self):
-        """Gets the node_preference of this RoleDeployMeta.
+        r"""Gets the node_preference of this RoleDeployMeta.
 
         部署倾向
 
@@ -268,7 +268,7 @@ class RoleDeployMeta:
 
     @node_preference.setter
     def node_preference(self, node_preference):
-        """Sets the node_preference of this RoleDeployMeta.
+        r"""Sets the node_preference of this RoleDeployMeta.
 
         部署倾向
 
@@ -279,7 +279,7 @@ class RoleDeployMeta:
 
     @property
     def count(self):
-        """Gets the count of this RoleDeployMeta.
+        r"""Gets the count of this RoleDeployMeta.
 
         角色数量限制
 
@@ -290,7 +290,7 @@ class RoleDeployMeta:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this RoleDeployMeta.
+        r"""Sets the count of this RoleDeployMeta.
 
         角色数量限制
 
@@ -301,7 +301,7 @@ class RoleDeployMeta:
 
     @property
     def affinity(self):
-        """Gets the affinity of this RoleDeployMeta.
+        r"""Gets the affinity of this RoleDeployMeta.
 
         亲和
 
@@ -312,7 +312,7 @@ class RoleDeployMeta:
 
     @affinity.setter
     def affinity(self, affinity):
-        """Sets the affinity of this RoleDeployMeta.
+        r"""Sets the affinity of this RoleDeployMeta.
 
         亲和
 
@@ -323,7 +323,7 @@ class RoleDeployMeta:
 
     @property
     def affinity_target(self):
-        """Gets the affinity_target of this RoleDeployMeta.
+        r"""Gets the affinity_target of this RoleDeployMeta.
 
         亲和目标
 
@@ -334,7 +334,7 @@ class RoleDeployMeta:
 
     @affinity_target.setter
     def affinity_target(self, affinity_target):
-        """Sets the affinity_target of this RoleDeployMeta.
+        r"""Sets the affinity_target of this RoleDeployMeta.
 
         亲和目标
 
@@ -345,7 +345,7 @@ class RoleDeployMeta:
 
     @property
     def multi_instance(self):
-        """Gets the multi_instance of this RoleDeployMeta.
+        r"""Gets the multi_instance of this RoleDeployMeta.
 
         多实例
 
@@ -356,7 +356,7 @@ class RoleDeployMeta:
 
     @multi_instance.setter
     def multi_instance(self, multi_instance):
-        """Sets the multi_instance of this RoleDeployMeta.
+        r"""Sets the multi_instance of this RoleDeployMeta.
 
         多实例
 
@@ -367,7 +367,7 @@ class RoleDeployMeta:
 
     @property
     def role_kind(self):
-        """Gets the role_kind of this RoleDeployMeta.
+        r"""Gets the role_kind of this RoleDeployMeta.
 
         角色类型
 
@@ -378,7 +378,7 @@ class RoleDeployMeta:
 
     @role_kind.setter
     def role_kind(self, role_kind):
-        """Sets the role_kind of this RoleDeployMeta.
+        r"""Sets the role_kind of this RoleDeployMeta.
 
         角色类型
 
@@ -389,7 +389,7 @@ class RoleDeployMeta:
 
     @property
     def constraints(self):
-        """Gets the constraints of this RoleDeployMeta.
+        r"""Gets the constraints of this RoleDeployMeta.
 
         角色限制，包含当前组件角色的一些功能限制，例如：\"no_scale_in\"
 
@@ -400,7 +400,7 @@ class RoleDeployMeta:
 
     @constraints.setter
     def constraints(self, constraints):
-        """Sets the constraints of this RoleDeployMeta.
+        r"""Sets the constraints of this RoleDeployMeta.
 
         角色限制，包含当前组件角色的一些功能限制，例如：\"no_scale_in\"
 
@@ -411,7 +411,7 @@ class RoleDeployMeta:
 
     @property
     def multi_az_placement(self):
-        """Gets the multi_az_placement of this RoleDeployMeta.
+        r"""Gets the multi_az_placement of this RoleDeployMeta.
 
         多az部署
 
@@ -422,7 +422,7 @@ class RoleDeployMeta:
 
     @multi_az_placement.setter
     def multi_az_placement(self, multi_az_placement):
-        """Sets the multi_az_placement of this RoleDeployMeta.
+        r"""Sets the multi_az_placement of this RoleDeployMeta.
 
         多az部署
 
@@ -433,7 +433,7 @@ class RoleDeployMeta:
 
     @property
     def arbitration_deployment(self):
-        """Gets the arbitration_deployment of this RoleDeployMeta.
+        r"""Gets the arbitration_deployment of this RoleDeployMeta.
 
         仲裁部署
 
@@ -444,7 +444,7 @@ class RoleDeployMeta:
 
     @arbitration_deployment.setter
     def arbitration_deployment(self, arbitration_deployment):
-        """Sets the arbitration_deployment of this RoleDeployMeta.
+        r"""Sets the arbitration_deployment of this RoleDeployMeta.
 
         仲裁部署
 
@@ -455,7 +455,7 @@ class RoleDeployMeta:
 
     @property
     def support_elb(self):
-        """Gets the support_elb of this RoleDeployMeta.
+        r"""Gets the support_elb of this RoleDeployMeta.
 
         支持ELB
 
@@ -466,7 +466,7 @@ class RoleDeployMeta:
 
     @support_elb.setter
     def support_elb(self, support_elb):
-        """Sets the support_elb of this RoleDeployMeta.
+        r"""Sets the support_elb of this RoleDeployMeta.
 
         支持ELB
 
@@ -477,7 +477,7 @@ class RoleDeployMeta:
 
     @property
     def multi_affinity_group_enable(self):
-        """Gets the multi_affinity_group_enable of this RoleDeployMeta.
+        r"""Gets the multi_affinity_group_enable of this RoleDeployMeta.
 
         启用多亲和组
 
@@ -488,7 +488,7 @@ class RoleDeployMeta:
 
     @multi_affinity_group_enable.setter
     def multi_affinity_group_enable(self, multi_affinity_group_enable):
-        """Sets the multi_affinity_group_enable of this RoleDeployMeta.
+        r"""Sets the multi_affinity_group_enable of this RoleDeployMeta.
 
         启用多亲和组
 
@@ -499,7 +499,7 @@ class RoleDeployMeta:
 
     @property
     def local_disks_anti_affinity(self):
-        """Gets the local_disks_anti_affinity of this RoleDeployMeta.
+        r"""Gets the local_disks_anti_affinity of this RoleDeployMeta.
 
         本地盘反亲和
 
@@ -510,7 +510,7 @@ class RoleDeployMeta:
 
     @local_disks_anti_affinity.setter
     def local_disks_anti_affinity(self, local_disks_anti_affinity):
-        """Sets the local_disks_anti_affinity of this RoleDeployMeta.
+        r"""Sets the local_disks_anti_affinity of this RoleDeployMeta.
 
         本地盘反亲和
 
@@ -521,7 +521,7 @@ class RoleDeployMeta:
 
     @property
     def multi_instance_name_pattern(self):
-        """Gets the multi_instance_name_pattern of this RoleDeployMeta.
+        r"""Gets the multi_instance_name_pattern of this RoleDeployMeta.
 
         多实例名称模式
 
@@ -532,7 +532,7 @@ class RoleDeployMeta:
 
     @multi_instance_name_pattern.setter
     def multi_instance_name_pattern(self, multi_instance_name_pattern):
-        """Sets the multi_instance_name_pattern of this RoleDeployMeta.
+        r"""Sets the multi_instance_name_pattern of this RoleDeployMeta.
 
         多实例名称模式
 
@@ -543,7 +543,7 @@ class RoleDeployMeta:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this RoleDeployMeta.
+        r"""Gets the private_ip of this RoleDeployMeta.
 
         私有IP
 
@@ -554,7 +554,7 @@ class RoleDeployMeta:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this RoleDeployMeta.
+        r"""Sets the private_ip of this RoleDeployMeta.
 
         私有IP
 
@@ -565,7 +565,7 @@ class RoleDeployMeta:
 
     @property
     def weight(self):
-        """Gets the weight of this RoleDeployMeta.
+        r"""Gets the weight of this RoleDeployMeta.
 
         权重
 
@@ -576,7 +576,7 @@ class RoleDeployMeta:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this RoleDeployMeta.
+        r"""Sets the weight of this RoleDeployMeta.
 
         权重
 

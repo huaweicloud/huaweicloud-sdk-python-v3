@@ -31,7 +31,7 @@ class BackupTriggerInfo:
     }
 
     def __init__(self, id=None, name=None, type=None, properties=None):
-        """BackupTriggerInfo
+        r"""BackupTriggerInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BackupTriggerInfo:
 
     @property
     def id(self):
-        """Gets the id of this BackupTriggerInfo.
+        r"""Gets the id of this BackupTriggerInfo.
 
         调度器id
 
@@ -75,7 +75,7 @@ class BackupTriggerInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BackupTriggerInfo.
+        r"""Sets the id of this BackupTriggerInfo.
 
         调度器id
 
@@ -86,7 +86,7 @@ class BackupTriggerInfo:
 
     @property
     def name(self):
-        """Gets the name of this BackupTriggerInfo.
+        r"""Gets the name of this BackupTriggerInfo.
 
         调度器名称
 
@@ -97,7 +97,7 @@ class BackupTriggerInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BackupTriggerInfo.
+        r"""Sets the name of this BackupTriggerInfo.
 
         调度器名称
 
@@ -108,7 +108,7 @@ class BackupTriggerInfo:
 
     @property
     def type(self):
-        """Gets the type of this BackupTriggerInfo.
+        r"""Gets the type of this BackupTriggerInfo.
 
         调度器类型,目前只支持 time,定时调度。
 
@@ -119,7 +119,7 @@ class BackupTriggerInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BackupTriggerInfo.
+        r"""Sets the type of this BackupTriggerInfo.
 
         调度器类型,目前只支持 time,定时调度。
 
@@ -130,7 +130,7 @@ class BackupTriggerInfo:
 
     @property
     def properties(self):
-        """Gets the properties of this BackupTriggerInfo.
+        r"""Gets the properties of this BackupTriggerInfo.
 
         :return: The properties of this BackupTriggerInfo.
         :rtype: :class:`huaweicloudsdkhss.v5.BackupTriggerPropertiesInfo`
@@ -139,7 +139,7 @@ class BackupTriggerInfo:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this BackupTriggerInfo.
+        r"""Sets the properties of this BackupTriggerInfo.
 
         :param properties: The properties of this BackupTriggerInfo.
         :type properties: :class:`huaweicloudsdkhss.v5.BackupTriggerPropertiesInfo`

@@ -24,7 +24,7 @@ class DeleteEvent2alarmRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteEvent2alarmRuleResponse
+        r"""DeleteEvent2alarmRuleResponse
 
         The model defined in huaweicloud sdk
 

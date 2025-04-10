@@ -27,7 +27,7 @@ class BatchCreateInternetBandwidthTagsRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """BatchCreateInternetBandwidthTagsRequest
+        r"""BatchCreateInternetBandwidthTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateInternetBandwidthTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchCreateInternetBandwidthTagsRequest.
+        r"""Gets the resource_id of this BatchCreateInternetBandwidthTagsRequest.
 
         :return: The resource_id of this BatchCreateInternetBandwidthTagsRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class BatchCreateInternetBandwidthTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchCreateInternetBandwidthTagsRequest.
+        r"""Sets the resource_id of this BatchCreateInternetBandwidthTagsRequest.
 
         :param resource_id: The resource_id of this BatchCreateInternetBandwidthTagsRequest.
         :type resource_id: str
@@ -67,7 +67,7 @@ class BatchCreateInternetBandwidthTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateInternetBandwidthTagsRequest.
+        r"""Gets the body of this BatchCreateInternetBandwidthTagsRequest.
 
         :return: The body of this BatchCreateInternetBandwidthTagsRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.BatchCreateV2RequestBody`
@@ -76,7 +76,7 @@ class BatchCreateInternetBandwidthTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateInternetBandwidthTagsRequest.
+        r"""Sets the body of this BatchCreateInternetBandwidthTagsRequest.
 
         :param body: The body of this BatchCreateInternetBandwidthTagsRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.BatchCreateV2RequestBody`

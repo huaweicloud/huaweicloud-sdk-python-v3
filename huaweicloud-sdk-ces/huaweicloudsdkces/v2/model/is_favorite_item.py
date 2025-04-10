@@ -25,7 +25,7 @@ class IsFavoriteItem:
     }
 
     def __init__(self, is_favorite=None):
-        """IsFavoriteItem
+        r"""IsFavoriteItem
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class IsFavoriteItem:
 
     @property
     def is_favorite(self):
-        """Gets the is_favorite of this IsFavoriteItem.
+        r"""Gets the is_favorite of this IsFavoriteItem.
 
         监控看板是否标记收藏, true: 收藏, false: 未收藏
 
@@ -54,7 +54,7 @@ class IsFavoriteItem:
 
     @is_favorite.setter
     def is_favorite(self, is_favorite):
-        """Sets the is_favorite of this IsFavoriteItem.
+        r"""Sets the is_favorite of this IsFavoriteItem.
 
         监控看板是否标记收藏, true: 收藏, false: 未收藏
 

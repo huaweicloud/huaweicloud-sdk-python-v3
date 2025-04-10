@@ -28,7 +28,7 @@ class ListDomainResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None):
-        """ListDomainResponse
+        r"""ListDomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDomainResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDomainResponse.
+        r"""Gets the count of this ListDomainResponse.
 
         域名总数
 
@@ -62,7 +62,7 @@ class ListDomainResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDomainResponse.
+        r"""Sets the count of this ListDomainResponse.
 
         域名总数
 
@@ -73,7 +73,7 @@ class ListDomainResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListDomainResponse.
+        r"""Gets the items of this ListDomainResponse.
 
         域名列表
 
@@ -84,7 +84,7 @@ class ListDomainResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListDomainResponse.
+        r"""Sets the items of this ListDomainResponse.
 
         域名列表
 

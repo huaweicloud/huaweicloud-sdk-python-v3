@@ -32,7 +32,7 @@ class ShowApiVersionResponse(SdkResponse):
     }
 
     def __init__(self, id=None, links=None, status=None, updated=None):
-        """ShowApiVersionResponse
+        r"""ShowApiVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowApiVersionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowApiVersionResponse.
+        r"""Gets the id of this ShowApiVersionResponse.
 
         API版本号。
 
@@ -76,7 +76,7 @@ class ShowApiVersionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowApiVersionResponse.
+        r"""Sets the id of this ShowApiVersionResponse.
 
         API版本号。
 
@@ -87,7 +87,7 @@ class ShowApiVersionResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ShowApiVersionResponse.
+        r"""Gets the links of this ShowApiVersionResponse.
 
         API链接地址信息。
 
@@ -98,7 +98,7 @@ class ShowApiVersionResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowApiVersionResponse.
+        r"""Sets the links of this ShowApiVersionResponse.
 
         API链接地址信息。
 
@@ -109,7 +109,7 @@ class ShowApiVersionResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowApiVersionResponse.
+        r"""Gets the status of this ShowApiVersionResponse.
 
         版本状态。 SUPPORTED表示支持的版本
 
@@ -120,7 +120,7 @@ class ShowApiVersionResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowApiVersionResponse.
+        r"""Sets the status of this ShowApiVersionResponse.
 
         版本状态。 SUPPORTED表示支持的版本
 
@@ -131,7 +131,7 @@ class ShowApiVersionResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowApiVersionResponse.
+        r"""Gets the updated of this ShowApiVersionResponse.
 
         版本更新时间。 格式为“yyyy-mm-dd Thh:mm:ssZ”。 其中，T指某个时间的开始；Z指UTC时间。例如：2018-09-30T00:00:00Z
 
@@ -142,7 +142,7 @@ class ShowApiVersionResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowApiVersionResponse.
+        r"""Sets the updated of this ShowApiVersionResponse.
 
         版本更新时间。 格式为“yyyy-mm-dd Thh:mm:ssZ”。 其中，T指某个时间的开始；Z指UTC时间。例如：2018-09-30T00:00:00Z
 

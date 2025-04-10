@@ -39,7 +39,7 @@ class ListStylesRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None, state=None, sort_key=None, sort_dir=None, create_until=None, create_since=None):
-        """ListStylesRequest
+        r"""ListStylesRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListStylesRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListStylesRequest.
+        r"""Gets the x_app_user_id of this ListStylesRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -103,7 +103,7 @@ class ListStylesRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListStylesRequest.
+        r"""Sets the x_app_user_id of this ListStylesRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -114,7 +114,7 @@ class ListStylesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListStylesRequest.
+        r"""Gets the offset of this ListStylesRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -125,7 +125,7 @@ class ListStylesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListStylesRequest.
+        r"""Sets the offset of this ListStylesRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -136,7 +136,7 @@ class ListStylesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListStylesRequest.
+        r"""Gets the limit of this ListStylesRequest.
 
         每页显示的条目数量。
 
@@ -147,7 +147,7 @@ class ListStylesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListStylesRequest.
+        r"""Sets the limit of this ListStylesRequest.
 
         每页显示的条目数量。
 
@@ -158,7 +158,7 @@ class ListStylesRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListStylesRequest.
+        r"""Gets the state of this ListStylesRequest.
 
         任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
 
@@ -169,7 +169,7 @@ class ListStylesRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListStylesRequest.
+        r"""Sets the state of this ListStylesRequest.
 
         任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
 
@@ -180,7 +180,7 @@ class ListStylesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListStylesRequest.
+        r"""Gets the sort_key of this ListStylesRequest.
 
         排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
@@ -191,7 +191,7 @@ class ListStylesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListStylesRequest.
+        r"""Sets the sort_key of this ListStylesRequest.
 
         排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
@@ -202,7 +202,7 @@ class ListStylesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListStylesRequest.
+        r"""Gets the sort_dir of this ListStylesRequest.
 
         排序方式。 * asc：升序 * desc：降序  默认asc升序。
 
@@ -213,7 +213,7 @@ class ListStylesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListStylesRequest.
+        r"""Sets the sort_dir of this ListStylesRequest.
 
         排序方式。 * asc：升序 * desc：降序  默认asc升序。
 
@@ -224,7 +224,7 @@ class ListStylesRequest:
 
     @property
     def create_until(self):
-        """Gets the create_until of this ListStylesRequest.
+        r"""Gets the create_until of this ListStylesRequest.
 
         过滤创建时间<=输入时间的记录。
 
@@ -235,7 +235,7 @@ class ListStylesRequest:
 
     @create_until.setter
     def create_until(self, create_until):
-        """Sets the create_until of this ListStylesRequest.
+        r"""Sets the create_until of this ListStylesRequest.
 
         过滤创建时间<=输入时间的记录。
 
@@ -246,7 +246,7 @@ class ListStylesRequest:
 
     @property
     def create_since(self):
-        """Gets the create_since of this ListStylesRequest.
+        r"""Gets the create_since of this ListStylesRequest.
 
         过滤创建时间>=输入时间的记录。
 
@@ -257,7 +257,7 @@ class ListStylesRequest:
 
     @create_since.setter
     def create_since(self, create_since):
-        """Sets the create_since of this ListStylesRequest.
+        r"""Sets the create_since of this ListStylesRequest.
 
         过滤创建时间>=输入时间的记录。
 

@@ -29,7 +29,7 @@ class CreateDeleteSubResourcesOrderRequestBody:
     }
 
     def __init__(self, desktop_pool_id=None, desktop_ids=None, promotion_plan_id=None):
-        """CreateDeleteSubResourcesOrderRequestBody
+        r"""CreateDeleteSubResourcesOrderRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateDeleteSubResourcesOrderRequestBody:
 
     @property
     def desktop_pool_id(self):
-        """Gets the desktop_pool_id of this CreateDeleteSubResourcesOrderRequestBody.
+        r"""Gets the desktop_pool_id of this CreateDeleteSubResourcesOrderRequestBody.
 
         桌面池ID。当desktop_pool_id与desktop_ids同时存在时，取desktop_ids的值，两者不可同时为空。
 
@@ -68,7 +68,7 @@ class CreateDeleteSubResourcesOrderRequestBody:
 
     @desktop_pool_id.setter
     def desktop_pool_id(self, desktop_pool_id):
-        """Sets the desktop_pool_id of this CreateDeleteSubResourcesOrderRequestBody.
+        r"""Sets the desktop_pool_id of this CreateDeleteSubResourcesOrderRequestBody.
 
         桌面池ID。当desktop_pool_id与desktop_ids同时存在时，取desktop_ids的值，两者不可同时为空。
 
@@ -79,7 +79,7 @@ class CreateDeleteSubResourcesOrderRequestBody:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this CreateDeleteSubResourcesOrderRequestBody.
+        r"""Gets the desktop_ids of this CreateDeleteSubResourcesOrderRequestBody.
 
         包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
 
@@ -90,7 +90,7 @@ class CreateDeleteSubResourcesOrderRequestBody:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this CreateDeleteSubResourcesOrderRequestBody.
+        r"""Sets the desktop_ids of this CreateDeleteSubResourcesOrderRequestBody.
 
         包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
 
@@ -101,7 +101,7 @@ class CreateDeleteSubResourcesOrderRequestBody:
 
     @property
     def promotion_plan_id(self):
-        """Gets the promotion_plan_id of this CreateDeleteSubResourcesOrderRequestBody.
+        r"""Gets the promotion_plan_id of this CreateDeleteSubResourcesOrderRequestBody.
 
         促销计划ID
 
@@ -112,7 +112,7 @@ class CreateDeleteSubResourcesOrderRequestBody:
 
     @promotion_plan_id.setter
     def promotion_plan_id(self, promotion_plan_id):
-        """Sets the promotion_plan_id of this CreateDeleteSubResourcesOrderRequestBody.
+        r"""Sets the promotion_plan_id of this CreateDeleteSubResourcesOrderRequestBody.
 
         促销计划ID
 

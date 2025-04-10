@@ -28,7 +28,7 @@ class ListAllTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, page_info=None):
-        """ListAllTagsResponse
+        r"""ListAllTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAllTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListAllTagsResponse.
+        r"""Gets the tags of this ListAllTagsResponse.
 
         标签列表
 
@@ -62,7 +62,7 @@ class ListAllTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListAllTagsResponse.
+        r"""Sets the tags of this ListAllTagsResponse.
 
         标签列表
 
@@ -73,7 +73,7 @@ class ListAllTagsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAllTagsResponse.
+        r"""Gets the page_info of this ListAllTagsResponse.
 
         :return: The page_info of this ListAllTagsResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListAllTagsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAllTagsResponse.
+        r"""Sets the page_info of this ListAllTagsResponse.
 
         :param page_info: The page_info of this ListAllTagsResponse.
         :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`

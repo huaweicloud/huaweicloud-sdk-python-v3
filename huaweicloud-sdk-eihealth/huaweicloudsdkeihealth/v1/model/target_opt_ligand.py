@@ -27,7 +27,7 @@ class TargetOptLigand:
     }
 
     def __init__(self, file=None, force_field=None):
-        """TargetOptLigand
+        r"""TargetOptLigand
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TargetOptLigand:
 
     @property
     def file(self):
-        """Gets the file of this TargetOptLigand.
+        r"""Gets the file of this TargetOptLigand.
 
         :return: The file of this TargetOptLigand.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ProbeDrugFile`
@@ -58,7 +58,7 @@ class TargetOptLigand:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this TargetOptLigand.
+        r"""Sets the file of this TargetOptLigand.
 
         :param file: The file of this TargetOptLigand.
         :type file: :class:`huaweicloudsdkeihealth.v1.ProbeDrugFile`
@@ -67,7 +67,7 @@ class TargetOptLigand:
 
     @property
     def force_field(self):
-        """Gets the force_field of this TargetOptLigand.
+        r"""Gets the force_field of this TargetOptLigand.
 
         配体力场, 支持选择gaff, gaff2
 
@@ -78,7 +78,7 @@ class TargetOptLigand:
 
     @force_field.setter
     def force_field(self, force_field):
-        """Sets the force_field of this TargetOptLigand.
+        r"""Sets the force_field of this TargetOptLigand.
 
         配体力场, 支持选择gaff, gaff2
 

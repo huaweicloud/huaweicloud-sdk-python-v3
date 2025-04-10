@@ -30,7 +30,7 @@ class CreatePrePaidPublicipResponse(SdkResponse):
     }
 
     def __init__(self, publicip=None, order_id=None, publicip_id=None):
-        """CreatePrePaidPublicipResponse
+        r"""CreatePrePaidPublicipResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreatePrePaidPublicipResponse(SdkResponse):
 
     @property
     def publicip(self):
-        """Gets the publicip of this CreatePrePaidPublicipResponse.
+        r"""Gets the publicip of this CreatePrePaidPublicipResponse.
 
         :return: The publicip of this CreatePrePaidPublicipResponse.
         :rtype: :class:`huaweicloudsdkeip.v2.PublicipCreateResp`
@@ -67,7 +67,7 @@ class CreatePrePaidPublicipResponse(SdkResponse):
 
     @publicip.setter
     def publicip(self, publicip):
-        """Sets the publicip of this CreatePrePaidPublicipResponse.
+        r"""Sets the publicip of this CreatePrePaidPublicipResponse.
 
         :param publicip: The publicip of this CreatePrePaidPublicipResponse.
         :type publicip: :class:`huaweicloudsdkeip.v2.PublicipCreateResp`
@@ -76,7 +76,7 @@ class CreatePrePaidPublicipResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreatePrePaidPublicipResponse.
+        r"""Gets the order_id of this CreatePrePaidPublicipResponse.
 
         订单号（预付费场景返回该字段）
 
@@ -87,7 +87,7 @@ class CreatePrePaidPublicipResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreatePrePaidPublicipResponse.
+        r"""Sets the order_id of this CreatePrePaidPublicipResponse.
 
         订单号（预付费场景返回该字段）
 
@@ -98,7 +98,7 @@ class CreatePrePaidPublicipResponse(SdkResponse):
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this CreatePrePaidPublicipResponse.
+        r"""Gets the publicip_id of this CreatePrePaidPublicipResponse.
 
         弹性公网IP的ID（预付费场景返回该字段）
 
@@ -109,7 +109,7 @@ class CreatePrePaidPublicipResponse(SdkResponse):
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this CreatePrePaidPublicipResponse.
+        r"""Sets the publicip_id of this CreatePrePaidPublicipResponse.
 
         弹性公网IP的ID（预付费场景返回该字段）
 

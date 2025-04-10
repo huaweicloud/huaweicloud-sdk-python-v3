@@ -37,7 +37,7 @@ class RespcodeBrokens:
     }
 
     def __init__(self, check_point_failed=None, error=None, others_failed=None, parsed_failed=None, refused_failed=None, success=None, timeout=None):
-        """RespcodeBrokens
+        r"""RespcodeBrokens
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class RespcodeBrokens:
 
     @property
     def check_point_failed(self):
-        """Gets the check_point_failed of this RespcodeBrokens.
+        r"""Gets the check_point_failed of this RespcodeBrokens.
 
         校验失败
 
@@ -96,7 +96,7 @@ class RespcodeBrokens:
 
     @check_point_failed.setter
     def check_point_failed(self, check_point_failed):
-        """Sets the check_point_failed of this RespcodeBrokens.
+        r"""Sets the check_point_failed of this RespcodeBrokens.
 
         校验失败
 
@@ -107,7 +107,7 @@ class RespcodeBrokens:
 
     @property
     def error(self):
-        """Gets the error of this RespcodeBrokens.
+        r"""Gets the error of this RespcodeBrokens.
 
         异常请求
 
@@ -118,7 +118,7 @@ class RespcodeBrokens:
 
     @error.setter
     def error(self, error):
-        """Sets the error of this RespcodeBrokens.
+        r"""Sets the error of this RespcodeBrokens.
 
         异常请求
 
@@ -129,7 +129,7 @@ class RespcodeBrokens:
 
     @property
     def others_failed(self):
-        """Gets the others_failed of this RespcodeBrokens.
+        r"""Gets the others_failed of this RespcodeBrokens.
 
         其他失败
 
@@ -140,7 +140,7 @@ class RespcodeBrokens:
 
     @others_failed.setter
     def others_failed(self, others_failed):
-        """Sets the others_failed of this RespcodeBrokens.
+        r"""Sets the others_failed of this RespcodeBrokens.
 
         其他失败
 
@@ -151,7 +151,7 @@ class RespcodeBrokens:
 
     @property
     def parsed_failed(self):
-        """Gets the parsed_failed of this RespcodeBrokens.
+        r"""Gets the parsed_failed of this RespcodeBrokens.
 
         解析失败
 
@@ -162,7 +162,7 @@ class RespcodeBrokens:
 
     @parsed_failed.setter
     def parsed_failed(self, parsed_failed):
-        """Sets the parsed_failed of this RespcodeBrokens.
+        r"""Sets the parsed_failed of this RespcodeBrokens.
 
         解析失败
 
@@ -173,7 +173,7 @@ class RespcodeBrokens:
 
     @property
     def refused_failed(self):
-        """Gets the refused_failed of this RespcodeBrokens.
+        r"""Gets the refused_failed of this RespcodeBrokens.
 
         连接被拒
 
@@ -184,7 +184,7 @@ class RespcodeBrokens:
 
     @refused_failed.setter
     def refused_failed(self, refused_failed):
-        """Sets the refused_failed of this RespcodeBrokens.
+        r"""Sets the refused_failed of this RespcodeBrokens.
 
         连接被拒
 
@@ -195,7 +195,7 @@ class RespcodeBrokens:
 
     @property
     def success(self):
-        """Gets the success of this RespcodeBrokens.
+        r"""Gets the success of this RespcodeBrokens.
 
         成功请求
 
@@ -206,7 +206,7 @@ class RespcodeBrokens:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this RespcodeBrokens.
+        r"""Sets the success of this RespcodeBrokens.
 
         成功请求
 
@@ -217,7 +217,7 @@ class RespcodeBrokens:
 
     @property
     def timeout(self):
-        """Gets the timeout of this RespcodeBrokens.
+        r"""Gets the timeout of this RespcodeBrokens.
 
         超时失败
 
@@ -228,7 +228,7 @@ class RespcodeBrokens:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this RespcodeBrokens.
+        r"""Sets the timeout of this RespcodeBrokens.
 
         超时失败
 

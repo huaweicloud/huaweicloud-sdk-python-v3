@@ -25,7 +25,7 @@ class UpdateAccessAddressBackupConfigRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateAccessAddressBackupConfigRequest
+        r"""UpdateAccessAddressBackupConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateAccessAddressBackupConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAccessAddressBackupConfigRequest.
+        r"""Gets the body of this UpdateAccessAddressBackupConfigRequest.
 
         :return: The body of this UpdateAccessAddressBackupConfigRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateAccessAddressBackupConfigReq`
@@ -52,7 +52,7 @@ class UpdateAccessAddressBackupConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAccessAddressBackupConfigRequest.
+        r"""Sets the body of this UpdateAccessAddressBackupConfigRequest.
 
         :param body: The body of this UpdateAccessAddressBackupConfigRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateAccessAddressBackupConfigReq`

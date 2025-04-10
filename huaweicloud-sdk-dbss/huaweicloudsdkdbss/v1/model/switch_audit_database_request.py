@@ -27,7 +27,7 @@ class SwitchAuditDatabaseRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SwitchAuditDatabaseRequest
+        r"""SwitchAuditDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SwitchAuditDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchAuditDatabaseRequest.
+        r"""Gets the instance_id of this SwitchAuditDatabaseRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -60,7 +60,7 @@ class SwitchAuditDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchAuditDatabaseRequest.
+        r"""Sets the instance_id of this SwitchAuditDatabaseRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -71,7 +71,7 @@ class SwitchAuditDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchAuditDatabaseRequest.
+        r"""Gets the body of this SwitchAuditDatabaseRequest.
 
         :return: The body of this SwitchAuditDatabaseRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.SwitchAuditDbRequest`
@@ -80,7 +80,7 @@ class SwitchAuditDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchAuditDatabaseRequest.
+        r"""Sets the body of this SwitchAuditDatabaseRequest.
 
         :param body: The body of this SwitchAuditDatabaseRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.SwitchAuditDbRequest`

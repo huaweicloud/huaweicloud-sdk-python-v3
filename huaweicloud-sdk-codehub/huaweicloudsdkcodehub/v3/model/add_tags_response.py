@@ -29,7 +29,7 @@ class AddTagsResponse:
     }
 
     def __init__(self, name=None, message=None, commit=None):
-        """AddTagsResponse
+        r"""AddTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AddTagsResponse:
 
     @property
     def name(self):
-        """Gets the name of this AddTagsResponse.
+        r"""Gets the name of this AddTagsResponse.
 
         标签名称
 
@@ -68,7 +68,7 @@ class AddTagsResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddTagsResponse.
+        r"""Sets the name of this AddTagsResponse.
 
         标签名称
 
@@ -79,7 +79,7 @@ class AddTagsResponse:
 
     @property
     def message(self):
-        """Gets the message of this AddTagsResponse.
+        r"""Gets the message of this AddTagsResponse.
 
         备注
 
@@ -90,7 +90,7 @@ class AddTagsResponse:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this AddTagsResponse.
+        r"""Sets the message of this AddTagsResponse.
 
         备注
 
@@ -101,7 +101,7 @@ class AddTagsResponse:
 
     @property
     def commit(self):
-        """Gets the commit of this AddTagsResponse.
+        r"""Gets the commit of this AddTagsResponse.
 
         :return: The commit of this AddTagsResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CommitRepoV2`
@@ -110,7 +110,7 @@ class AddTagsResponse:
 
     @commit.setter
     def commit(self, commit):
-        """Sets the commit of this AddTagsResponse.
+        r"""Sets the commit of this AddTagsResponse.
 
         :param commit: The commit of this AddTagsResponse.
         :type commit: :class:`huaweicloudsdkcodehub.v3.CommitRepoV2`

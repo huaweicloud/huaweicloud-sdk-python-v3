@@ -54,7 +54,7 @@ class ShowResourceDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, provider=None, type=None, region_id=None, project_id=None, project_name=None, ep_id=None, ep_name=None, checksum=None, created=None, updated=None, provisioning_state=None, tags=None, properties=None):
-        """ShowResourceDetailResponse
+        r"""ShowResourceDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowResourceDetailResponse.
+        r"""Gets the id of this ShowResourceDetailResponse.
 
         资源id
 
@@ -153,7 +153,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowResourceDetailResponse.
+        r"""Sets the id of this ShowResourceDetailResponse.
 
         资源id
 
@@ -164,7 +164,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowResourceDetailResponse.
+        r"""Gets the name of this ShowResourceDetailResponse.
 
         资源名称
 
@@ -175,7 +175,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowResourceDetailResponse.
+        r"""Sets the name of this ShowResourceDetailResponse.
 
         资源名称
 
@@ -186,7 +186,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @property
     def provider(self):
-        """Gets the provider of this ShowResourceDetailResponse.
+        r"""Gets the provider of this ShowResourceDetailResponse.
 
         云服务名称
 
@@ -197,7 +197,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ShowResourceDetailResponse.
+        r"""Sets the provider of this ShowResourceDetailResponse.
 
         云服务名称
 
@@ -208,7 +208,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowResourceDetailResponse.
+        r"""Gets the type of this ShowResourceDetailResponse.
 
         资源类型
 
@@ -219,7 +219,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowResourceDetailResponse.
+        r"""Sets the type of this ShowResourceDetailResponse.
 
         资源类型
 
@@ -230,7 +230,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @property
     def region_id(self):
-        """Gets the region_id of this ShowResourceDetailResponse.
+        r"""Gets the region_id of this ShowResourceDetailResponse.
 
         区域id
 
@@ -241,7 +241,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ShowResourceDetailResponse.
+        r"""Sets the region_id of this ShowResourceDetailResponse.
 
         区域id
 
@@ -252,7 +252,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowResourceDetailResponse.
+        r"""Gets the project_id of this ShowResourceDetailResponse.
 
         Openstack中的项目id
 
@@ -263,7 +263,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowResourceDetailResponse.
+        r"""Sets the project_id of this ShowResourceDetailResponse.
 
         Openstack中的项目id
 
@@ -274,7 +274,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @property
     def project_name(self):
-        """Gets the project_name of this ShowResourceDetailResponse.
+        r"""Gets the project_name of this ShowResourceDetailResponse.
 
         Openstack中的项目名称
 
@@ -285,7 +285,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ShowResourceDetailResponse.
+        r"""Sets the project_name of this ShowResourceDetailResponse.
 
         Openstack中的项目名称
 
@@ -296,7 +296,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this ShowResourceDetailResponse.
+        r"""Gets the ep_id of this ShowResourceDetailResponse.
 
         企业项目id
 
@@ -307,7 +307,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this ShowResourceDetailResponse.
+        r"""Sets the ep_id of this ShowResourceDetailResponse.
 
         企业项目id
 
@@ -318,7 +318,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @property
     def ep_name(self):
-        """Gets the ep_name of this ShowResourceDetailResponse.
+        r"""Gets the ep_name of this ShowResourceDetailResponse.
 
         企业项目名称
 
@@ -329,7 +329,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @ep_name.setter
     def ep_name(self, ep_name):
-        """Sets the ep_name of this ShowResourceDetailResponse.
+        r"""Sets the ep_name of this ShowResourceDetailResponse.
 
         企业项目名称
 
@@ -340,7 +340,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @property
     def checksum(self):
-        """Gets the checksum of this ShowResourceDetailResponse.
+        r"""Gets the checksum of this ShowResourceDetailResponse.
 
         资源详情校验码
 
@@ -351,7 +351,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @checksum.setter
     def checksum(self, checksum):
-        """Sets the checksum of this ShowResourceDetailResponse.
+        r"""Sets the checksum of this ShowResourceDetailResponse.
 
         资源详情校验码
 
@@ -362,7 +362,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this ShowResourceDetailResponse.
+        r"""Gets the created of this ShowResourceDetailResponse.
 
         资源创建时间
 
@@ -373,7 +373,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowResourceDetailResponse.
+        r"""Sets the created of this ShowResourceDetailResponse.
 
         资源创建时间
 
@@ -384,7 +384,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowResourceDetailResponse.
+        r"""Gets the updated of this ShowResourceDetailResponse.
 
         资源更新时间
 
@@ -395,7 +395,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowResourceDetailResponse.
+        r"""Sets the updated of this ShowResourceDetailResponse.
 
         资源更新时间
 
@@ -406,7 +406,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @property
     def provisioning_state(self):
-        """Gets the provisioning_state of this ShowResourceDetailResponse.
+        r"""Gets the provisioning_state of this ShowResourceDetailResponse.
 
         资源操作状态
 
@@ -417,7 +417,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @provisioning_state.setter
     def provisioning_state(self, provisioning_state):
-        """Sets the provisioning_state of this ShowResourceDetailResponse.
+        r"""Sets the provisioning_state of this ShowResourceDetailResponse.
 
         资源操作状态
 
@@ -428,7 +428,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowResourceDetailResponse.
+        r"""Gets the tags of this ShowResourceDetailResponse.
 
         资源Tag
 
@@ -439,7 +439,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowResourceDetailResponse.
+        r"""Sets the tags of this ShowResourceDetailResponse.
 
         资源Tag
 
@@ -450,7 +450,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this ShowResourceDetailResponse.
+        r"""Gets the properties of this ShowResourceDetailResponse.
 
         资源详细属性
 
@@ -461,7 +461,7 @@ class ShowResourceDetailResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ShowResourceDetailResponse.
+        r"""Sets the properties of this ShowResourceDetailResponse.
 
         资源详细属性
 

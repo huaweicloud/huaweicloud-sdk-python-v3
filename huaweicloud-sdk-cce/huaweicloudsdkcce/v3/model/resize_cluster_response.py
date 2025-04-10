@@ -28,7 +28,7 @@ class ResizeClusterResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None):
-        """ResizeClusterResponse
+        r"""ResizeClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ResizeClusterResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ResizeClusterResponse.
+        r"""Gets the job_id of this ResizeClusterResponse.
 
         任务ID
 
@@ -62,7 +62,7 @@ class ResizeClusterResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ResizeClusterResponse.
+        r"""Sets the job_id of this ResizeClusterResponse.
 
         任务ID
 
@@ -73,7 +73,7 @@ class ResizeClusterResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ResizeClusterResponse.
+        r"""Gets the order_id of this ResizeClusterResponse.
 
         包周期集群变更规格订单ID
 
@@ -84,7 +84,7 @@ class ResizeClusterResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ResizeClusterResponse.
+        r"""Sets the order_id of this ResizeClusterResponse.
 
         包周期集群变更规格订单ID
 

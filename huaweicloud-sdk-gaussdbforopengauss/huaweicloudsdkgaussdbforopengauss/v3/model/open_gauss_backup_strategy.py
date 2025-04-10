@@ -27,7 +27,7 @@ class OpenGaussBackupStrategy:
     }
 
     def __init__(self, start_time=None, keep_days=None):
-        """OpenGaussBackupStrategy
+        r"""OpenGaussBackupStrategy
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class OpenGaussBackupStrategy:
 
     @property
     def start_time(self):
-        """Gets the start_time of this OpenGaussBackupStrategy.
+        r"""Gets the start_time of this OpenGaussBackupStrategy.
 
         备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  - HH取值必须比hh大1。 - mm和MM取值必须相同，且取值必须为00。 取值示例：  - 08:00-09:00 - 23:00-00:00
 
@@ -60,7 +60,7 @@ class OpenGaussBackupStrategy:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this OpenGaussBackupStrategy.
+        r"""Sets the start_time of this OpenGaussBackupStrategy.
 
         备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  - HH取值必须比hh大1。 - mm和MM取值必须相同，且取值必须为00。 取值示例：  - 08:00-09:00 - 23:00-00:00
 
@@ -71,7 +71,7 @@ class OpenGaussBackupStrategy:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this OpenGaussBackupStrategy.
+        r"""Gets the keep_days of this OpenGaussBackupStrategy.
 
         指定备份文件的可保存天数。  取值范围：0～732。该参数缺省或为0时，默认填写为7天。
 
@@ -82,7 +82,7 @@ class OpenGaussBackupStrategy:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this OpenGaussBackupStrategy.
+        r"""Sets the keep_days of this OpenGaussBackupStrategy.
 
         指定备份文件的可保存天数。  取值范围：0～732。该参数缺省或为0时，默认填写为7天。
 

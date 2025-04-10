@@ -30,7 +30,7 @@ class ListPrivateDnatsResponse(SdkResponse):
     }
 
     def __init__(self, dnat_rules=None, request_id=None, page_info=None):
-        """ListPrivateDnatsResponse
+        r"""ListPrivateDnatsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPrivateDnatsResponse(SdkResponse):
 
     @property
     def dnat_rules(self):
-        """Gets the dnat_rules of this ListPrivateDnatsResponse.
+        r"""Gets the dnat_rules of this ListPrivateDnatsResponse.
 
         查询DNAT规则列表的响应体。
 
@@ -69,7 +69,7 @@ class ListPrivateDnatsResponse(SdkResponse):
 
     @dnat_rules.setter
     def dnat_rules(self, dnat_rules):
-        """Sets the dnat_rules of this ListPrivateDnatsResponse.
+        r"""Sets the dnat_rules of this ListPrivateDnatsResponse.
 
         查询DNAT规则列表的响应体。
 
@@ -80,7 +80,7 @@ class ListPrivateDnatsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListPrivateDnatsResponse.
+        r"""Gets the request_id of this ListPrivateDnatsResponse.
 
         请求ID。
 
@@ -91,7 +91,7 @@ class ListPrivateDnatsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListPrivateDnatsResponse.
+        r"""Sets the request_id of this ListPrivateDnatsResponse.
 
         请求ID。
 
@@ -102,7 +102,7 @@ class ListPrivateDnatsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPrivateDnatsResponse.
+        r"""Gets the page_info of this ListPrivateDnatsResponse.
 
         :return: The page_info of this ListPrivateDnatsResponse.
         :rtype: :class:`huaweicloudsdknat.v2.PageInfo`
@@ -111,7 +111,7 @@ class ListPrivateDnatsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPrivateDnatsResponse.
+        r"""Sets the page_info of this ListPrivateDnatsResponse.
 
         :param page_info: The page_info of this ListPrivateDnatsResponse.
         :type page_info: :class:`huaweicloudsdknat.v2.PageInfo`

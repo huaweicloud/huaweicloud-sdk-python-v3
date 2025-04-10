@@ -26,7 +26,7 @@ class DescribePermissionSetProvisioningStatusResponse(SdkResponse):
     }
 
     def __init__(self, permission_set_provisioning_status=None):
-        """DescribePermissionSetProvisioningStatusResponse
+        r"""DescribePermissionSetProvisioningStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DescribePermissionSetProvisioningStatusResponse(SdkResponse):
 
     @property
     def permission_set_provisioning_status(self):
-        """Gets the permission_set_provisioning_status of this DescribePermissionSetProvisioningStatusResponse.
+        r"""Gets the permission_set_provisioning_status of this DescribePermissionSetProvisioningStatusResponse.
 
         :return: The permission_set_provisioning_status of this DescribePermissionSetProvisioningStatusResponse.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.PermissionSetProvisioningStatusDto`
@@ -53,7 +53,7 @@ class DescribePermissionSetProvisioningStatusResponse(SdkResponse):
 
     @permission_set_provisioning_status.setter
     def permission_set_provisioning_status(self, permission_set_provisioning_status):
-        """Sets the permission_set_provisioning_status of this DescribePermissionSetProvisioningStatusResponse.
+        r"""Sets the permission_set_provisioning_status of this DescribePermissionSetProvisioningStatusResponse.
 
         :param permission_set_provisioning_status: The permission_set_provisioning_status of this DescribePermissionSetProvisioningStatusResponse.
         :type permission_set_provisioning_status: :class:`huaweicloudsdkidentitycenter.v1.PermissionSetProvisioningStatusDto`

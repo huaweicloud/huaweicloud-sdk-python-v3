@@ -26,7 +26,7 @@ class ListPortsResponse(SdkResponse):
     }
 
     def __init__(self, ports=None):
-        """ListPortsResponse
+        r"""ListPortsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPortsResponse(SdkResponse):
 
     @property
     def ports(self):
-        """Gets the ports of this ListPortsResponse.
+        r"""Gets the ports of this ListPortsResponse.
 
         端口列表
 
@@ -55,7 +55,7 @@ class ListPortsResponse(SdkResponse):
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this ListPortsResponse.
+        r"""Sets the ports of this ListPortsResponse.
 
         端口列表
 

@@ -32,7 +32,7 @@ class ListBasePluginsNewPostResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, total=None, data=None):
-        """ListBasePluginsNewPostResponse
+        r"""ListBasePluginsNewPostResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListBasePluginsNewPostResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListBasePluginsNewPostResponse.
+        r"""Gets the offset of this ListBasePluginsNewPostResponse.
 
         偏移
 
@@ -76,7 +76,7 @@ class ListBasePluginsNewPostResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBasePluginsNewPostResponse.
+        r"""Sets the offset of this ListBasePluginsNewPostResponse.
 
         偏移
 
@@ -87,7 +87,7 @@ class ListBasePluginsNewPostResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListBasePluginsNewPostResponse.
+        r"""Gets the limit of this ListBasePluginsNewPostResponse.
 
         大小
 
@@ -98,7 +98,7 @@ class ListBasePluginsNewPostResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBasePluginsNewPostResponse.
+        r"""Sets the limit of this ListBasePluginsNewPostResponse.
 
         大小
 
@@ -109,7 +109,7 @@ class ListBasePluginsNewPostResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListBasePluginsNewPostResponse.
+        r"""Gets the total of this ListBasePluginsNewPostResponse.
 
         总数
 
@@ -120,7 +120,7 @@ class ListBasePluginsNewPostResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListBasePluginsNewPostResponse.
+        r"""Sets the total of this ListBasePluginsNewPostResponse.
 
         总数
 
@@ -131,7 +131,7 @@ class ListBasePluginsNewPostResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListBasePluginsNewPostResponse.
+        r"""Gets the data of this ListBasePluginsNewPostResponse.
 
         结果集
 
@@ -142,7 +142,7 @@ class ListBasePluginsNewPostResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListBasePluginsNewPostResponse.
+        r"""Sets the data of this ListBasePluginsNewPostResponse.
 
         结果集
 

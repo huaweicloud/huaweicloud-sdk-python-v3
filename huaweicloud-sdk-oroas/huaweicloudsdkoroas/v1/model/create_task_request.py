@@ -31,7 +31,7 @@ class CreateTaskRequest:
     }
 
     def __init__(self, x_apig_app_code=None, service_group=None, service_type=None, body=None):
-        """CreateTaskRequest
+        r"""CreateTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateTaskRequest:
 
     @property
     def x_apig_app_code(self):
-        """Gets the x_apig_app_code of this CreateTaskRequest.
+        r"""Gets the x_apig_app_code of this CreateTaskRequest.
 
         用户凭证
 
@@ -72,7 +72,7 @@ class CreateTaskRequest:
 
     @x_apig_app_code.setter
     def x_apig_app_code(self, x_apig_app_code):
-        """Sets the x_apig_app_code of this CreateTaskRequest.
+        r"""Sets the x_apig_app_code of this CreateTaskRequest.
 
         用户凭证
 
@@ -83,7 +83,7 @@ class CreateTaskRequest:
 
     @property
     def service_group(self):
-        """Gets the service_group of this CreateTaskRequest.
+        r"""Gets the service_group of this CreateTaskRequest.
 
         服务类别，针对不同服务类场景，为用户提前填充对应值，用户侧不需单独赋值；当前仅支持 二维切割 2dcut ，便于后续扩展
 
@@ -94,7 +94,7 @@ class CreateTaskRequest:
 
     @service_group.setter
     def service_group(self, service_group):
-        """Sets the service_group of this CreateTaskRequest.
+        r"""Sets the service_group of this CreateTaskRequest.
 
         服务类别，针对不同服务类场景，为用户提前填充对应值，用户侧不需单独赋值；当前仅支持 二维切割 2dcut ，便于后续扩展
 
@@ -105,7 +105,7 @@ class CreateTaskRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this CreateTaskRequest.
+        r"""Gets the service_type of this CreateTaskRequest.
 
         子服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；服装切割固定为 irregular-textile，雕刻机切割固定为 engraving-machine-cutting， 板材切割固定为 regular-plate
 
@@ -116,7 +116,7 @@ class CreateTaskRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this CreateTaskRequest.
+        r"""Sets the service_type of this CreateTaskRequest.
 
         子服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；服装切割固定为 irregular-textile，雕刻机切割固定为 engraving-machine-cutting， 板材切割固定为 regular-plate
 
@@ -127,7 +127,7 @@ class CreateTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTaskRequest.
+        r"""Gets the body of this CreateTaskRequest.
 
         :return: The body of this CreateTaskRequest.
         :rtype: :class:`huaweicloudsdkoroas.v1.TaskDto`
@@ -136,7 +136,7 @@ class CreateTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTaskRequest.
+        r"""Sets the body of this CreateTaskRequest.
 
         :param body: The body of this CreateTaskRequest.
         :type body: :class:`huaweicloudsdkoroas.v1.TaskDto`

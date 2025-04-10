@@ -25,7 +25,7 @@ class BatchUpdateAppReq:
     }
 
     def __init__(self, ids=None):
-        """BatchUpdateAppReq
+        r"""BatchUpdateAppReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchUpdateAppReq:
 
     @property
     def ids(self):
-        """Gets the ids of this BatchUpdateAppReq.
+        r"""Gets the ids of this BatchUpdateAppReq.
 
         应用ID列表,单次最多允许操作20条。
 
@@ -53,7 +53,7 @@ class BatchUpdateAppReq:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this BatchUpdateAppReq.
+        r"""Sets the ids of this BatchUpdateAppReq.
 
         应用ID列表,单次最多允许操作20条。
 

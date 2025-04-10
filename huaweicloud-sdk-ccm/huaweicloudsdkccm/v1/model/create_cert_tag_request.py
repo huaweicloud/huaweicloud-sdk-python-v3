@@ -27,7 +27,7 @@ class CreateCertTagRequest:
     }
 
     def __init__(self, certificate_id=None, body=None):
-        """CreateCertTagRequest
+        r"""CreateCertTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCertTagRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this CreateCertTagRequest.
+        r"""Gets the certificate_id of this CreateCertTagRequest.
 
         所需要创建标签的证书ID。
 
@@ -60,7 +60,7 @@ class CreateCertTagRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this CreateCertTagRequest.
+        r"""Sets the certificate_id of this CreateCertTagRequest.
 
         所需要创建标签的证书ID。
 
@@ -71,7 +71,7 @@ class CreateCertTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCertTagRequest.
+        r"""Gets the body of this CreateCertTagRequest.
 
         :return: The body of this CreateCertTagRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.ResourceTagRequestBody`
@@ -80,7 +80,7 @@ class CreateCertTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCertTagRequest.
+        r"""Sets the body of this CreateCertTagRequest.
 
         :param body: The body of this CreateCertTagRequest.
         :type body: :class:`huaweicloudsdkccm.v1.ResourceTagRequestBody`

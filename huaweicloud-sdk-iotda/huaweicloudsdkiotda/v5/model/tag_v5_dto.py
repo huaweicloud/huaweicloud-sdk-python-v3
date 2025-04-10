@@ -27,7 +27,7 @@ class TagV5DTO:
     }
 
     def __init__(self, tag_key=None, tag_value=None):
-        """TagV5DTO
+        r"""TagV5DTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TagV5DTO:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this TagV5DTO.
+        r"""Gets the tag_key of this TagV5DTO.
 
         **参数说明**：标签键，在同一资源下标签键唯一。绑定资源时，如果设置的键已存在，则将覆盖之前的标签值。如果设置的键值不存在，则新增标签。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_.-等字符的组合。
 
@@ -60,7 +60,7 @@ class TagV5DTO:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this TagV5DTO.
+        r"""Sets the tag_key of this TagV5DTO.
 
         **参数说明**：标签键，在同一资源下标签键唯一。绑定资源时，如果设置的键已存在，则将覆盖之前的标签值。如果设置的键值不存在，则新增标签。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_.-等字符的组合。
 
@@ -71,7 +71,7 @@ class TagV5DTO:
 
     @property
     def tag_value(self):
-        """Gets the tag_value of this TagV5DTO.
+        r"""Gets the tag_value of this TagV5DTO.
 
         **参数说明**：标签值。 **取值范围**：长度不超过128，只允许中文、字母、数字、以及_.-等字符的组合。
 
@@ -82,7 +82,7 @@ class TagV5DTO:
 
     @tag_value.setter
     def tag_value(self, tag_value):
-        """Sets the tag_value of this TagV5DTO.
+        r"""Sets the tag_value of this TagV5DTO.
 
         **参数说明**：标签值。 **取值范围**：长度不超过128，只允许中文、字母、数字、以及_.-等字符的组合。
 

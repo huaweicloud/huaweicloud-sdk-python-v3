@@ -27,7 +27,7 @@ class CreateFlowTemplateFromFlowRequest:
     }
 
     def __init__(self, flow_id=None, body=None):
-        """CreateFlowTemplateFromFlowRequest
+        r"""CreateFlowTemplateFromFlowRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateFlowTemplateFromFlowRequest:
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this CreateFlowTemplateFromFlowRequest.
+        r"""Gets the flow_id of this CreateFlowTemplateFromFlowRequest.
 
         ID of flow
 
@@ -60,7 +60,7 @@ class CreateFlowTemplateFromFlowRequest:
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this CreateFlowTemplateFromFlowRequest.
+        r"""Sets the flow_id of this CreateFlowTemplateFromFlowRequest.
 
         ID of flow
 
@@ -71,7 +71,7 @@ class CreateFlowTemplateFromFlowRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFlowTemplateFromFlowRequest.
+        r"""Gets the body of this CreateFlowTemplateFromFlowRequest.
 
         :return: The body of this CreateFlowTemplateFromFlowRequest.
         :rtype: :class:`huaweicloudsdkmssi.v1.TemplateMessage`
@@ -80,7 +80,7 @@ class CreateFlowTemplateFromFlowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFlowTemplateFromFlowRequest.
+        r"""Sets the body of this CreateFlowTemplateFromFlowRequest.
 
         :param body: The body of this CreateFlowTemplateFromFlowRequest.
         :type body: :class:`huaweicloudsdkmssi.v1.TemplateMessage`

@@ -27,7 +27,7 @@ class DeleteMsdtcLocalHostRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """DeleteMsdtcLocalHostRequest
+        r"""DeleteMsdtcLocalHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteMsdtcLocalHostRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteMsdtcLocalHostRequest.
+        r"""Gets the instance_id of this DeleteMsdtcLocalHostRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class DeleteMsdtcLocalHostRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteMsdtcLocalHostRequest.
+        r"""Sets the instance_id of this DeleteMsdtcLocalHostRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class DeleteMsdtcLocalHostRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteMsdtcLocalHostRequest.
+        r"""Gets the body of this DeleteMsdtcLocalHostRequest.
 
         :return: The body of this DeleteMsdtcLocalHostRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.DeleteMsdtcLocalHostRequestBody`
@@ -80,7 +80,7 @@ class DeleteMsdtcLocalHostRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteMsdtcLocalHostRequest.
+        r"""Sets the body of this DeleteMsdtcLocalHostRequest.
 
         :param body: The body of this DeleteMsdtcLocalHostRequest.
         :type body: :class:`huaweicloudsdkrds.v3.DeleteMsdtcLocalHostRequestBody`

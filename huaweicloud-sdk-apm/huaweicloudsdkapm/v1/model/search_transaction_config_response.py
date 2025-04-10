@@ -30,7 +30,7 @@ class SearchTransactionConfigResponse(SdkResponse):
     }
 
     def __init__(self, transaction_config_item_list=None, total_page=None, total_count=None):
-        """SearchTransactionConfigResponse
+        r"""SearchTransactionConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class SearchTransactionConfigResponse(SdkResponse):
 
     @property
     def transaction_config_item_list(self):
-        """Gets the transaction_config_item_list of this SearchTransactionConfigResponse.
+        r"""Gets the transaction_config_item_list of this SearchTransactionConfigResponse.
 
         URL跟踪视图配置列表。
 
@@ -69,7 +69,7 @@ class SearchTransactionConfigResponse(SdkResponse):
 
     @transaction_config_item_list.setter
     def transaction_config_item_list(self, transaction_config_item_list):
-        """Sets the transaction_config_item_list of this SearchTransactionConfigResponse.
+        r"""Sets the transaction_config_item_list of this SearchTransactionConfigResponse.
 
         URL跟踪视图配置列表。
 
@@ -80,7 +80,7 @@ class SearchTransactionConfigResponse(SdkResponse):
 
     @property
     def total_page(self):
-        """Gets the total_page of this SearchTransactionConfigResponse.
+        r"""Gets the total_page of this SearchTransactionConfigResponse.
 
         总页数。
 
@@ -91,7 +91,7 @@ class SearchTransactionConfigResponse(SdkResponse):
 
     @total_page.setter
     def total_page(self, total_page):
-        """Sets the total_page of this SearchTransactionConfigResponse.
+        r"""Sets the total_page of this SearchTransactionConfigResponse.
 
         总页数。
 
@@ -102,7 +102,7 @@ class SearchTransactionConfigResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this SearchTransactionConfigResponse.
+        r"""Gets the total_count of this SearchTransactionConfigResponse.
 
         总配置数。
 
@@ -113,7 +113,7 @@ class SearchTransactionConfigResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this SearchTransactionConfigResponse.
+        r"""Sets the total_count of this SearchTransactionConfigResponse.
 
         总配置数。
 

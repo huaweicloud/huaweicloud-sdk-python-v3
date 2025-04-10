@@ -28,7 +28,7 @@ class ShowNodeActivationRecordsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, records=None):
-        """ShowNodeActivationRecordsResponse
+        r"""ShowNodeActivationRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowNodeActivationRecordsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowNodeActivationRecordsResponse.
+        r"""Gets the count of this ShowNodeActivationRecordsResponse.
 
         满足条件的激活记录总数
 
@@ -62,7 +62,7 @@ class ShowNodeActivationRecordsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowNodeActivationRecordsResponse.
+        r"""Sets the count of this ShowNodeActivationRecordsResponse.
 
         满足条件的激活记录总数
 
@@ -73,7 +73,7 @@ class ShowNodeActivationRecordsResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ShowNodeActivationRecordsResponse.
+        r"""Gets the records of this ShowNodeActivationRecordsResponse.
 
         激活记录列表
 
@@ -84,7 +84,7 @@ class ShowNodeActivationRecordsResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ShowNodeActivationRecordsResponse.
+        r"""Sets the records of this ShowNodeActivationRecordsResponse.
 
         激活记录列表
 

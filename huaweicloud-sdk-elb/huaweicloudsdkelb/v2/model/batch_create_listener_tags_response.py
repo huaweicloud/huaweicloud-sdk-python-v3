@@ -24,7 +24,7 @@ class BatchCreateListenerTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateListenerTagsResponse
+        r"""BatchCreateListenerTagsResponse
 
         The model defined in huaweicloud sdk
 

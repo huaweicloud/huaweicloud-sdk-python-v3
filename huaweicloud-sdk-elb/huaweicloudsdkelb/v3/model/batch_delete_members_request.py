@@ -27,7 +27,7 @@ class BatchDeleteMembersRequest:
     }
 
     def __init__(self, pool_id=None, body=None):
-        """BatchDeleteMembersRequest
+        r"""BatchDeleteMembersRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteMembersRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this BatchDeleteMembersRequest.
+        r"""Gets the pool_id of this BatchDeleteMembersRequest.
 
         参数解释：后端服务器组ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteMembersRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this BatchDeleteMembersRequest.
+        r"""Sets the pool_id of this BatchDeleteMembersRequest.
 
         参数解释：后端服务器组ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteMembersRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteMembersRequest.
+        r"""Gets the body of this BatchDeleteMembersRequest.
 
         :return: The body of this BatchDeleteMembersRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteMembersRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteMembersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteMembersRequest.
+        r"""Sets the body of this BatchDeleteMembersRequest.
 
         :param body: The body of this BatchDeleteMembersRequest.
         :type body: :class:`huaweicloudsdkelb.v3.BatchDeleteMembersRequestBody`

@@ -29,7 +29,7 @@ class StartInstanceRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """StartInstanceRequest
+        r"""StartInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class StartInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this StartInstanceRequest.
+        r"""Gets the x_language of this StartInstanceRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class StartInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this StartInstanceRequest.
+        r"""Sets the x_language of this StartInstanceRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class StartInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StartInstanceRequest.
+        r"""Gets the instance_id of this StartInstanceRequest.
 
         需要启动的实例的ID
 
@@ -89,7 +89,7 @@ class StartInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StartInstanceRequest.
+        r"""Sets the instance_id of this StartInstanceRequest.
 
         需要启动的实例的ID
 
@@ -100,7 +100,7 @@ class StartInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartInstanceRequest.
+        r"""Gets the body of this StartInstanceRequest.
 
         :return: The body of this StartInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.StartInstanceRequestBody`
@@ -109,7 +109,7 @@ class StartInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartInstanceRequest.
+        r"""Sets the body of this StartInstanceRequest.
 
         :param body: The body of this StartInstanceRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.StartInstanceRequestBody`

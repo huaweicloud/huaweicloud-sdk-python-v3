@@ -34,7 +34,7 @@ class ListGroupMembershipsForMemberRequest:
     }
 
     def __init__(self, x_security_token=None, identity_store_id=None, limit=None, marker=None, user_id=None):
-        """ListGroupMembershipsForMemberRequest
+        r"""ListGroupMembershipsForMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListGroupMembershipsForMemberRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListGroupMembershipsForMemberRequest.
+        r"""Gets the x_security_token of this ListGroupMembershipsForMemberRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -81,7 +81,7 @@ class ListGroupMembershipsForMemberRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListGroupMembershipsForMemberRequest.
+        r"""Sets the x_security_token of this ListGroupMembershipsForMemberRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -92,7 +92,7 @@ class ListGroupMembershipsForMemberRequest:
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this ListGroupMembershipsForMemberRequest.
+        r"""Gets the identity_store_id of this ListGroupMembershipsForMemberRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -103,7 +103,7 @@ class ListGroupMembershipsForMemberRequest:
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this ListGroupMembershipsForMemberRequest.
+        r"""Sets the identity_store_id of this ListGroupMembershipsForMemberRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -114,7 +114,7 @@ class ListGroupMembershipsForMemberRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGroupMembershipsForMemberRequest.
+        r"""Gets the limit of this ListGroupMembershipsForMemberRequest.
 
         每个请求返回的最大结果数
 
@@ -125,7 +125,7 @@ class ListGroupMembershipsForMemberRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGroupMembershipsForMemberRequest.
+        r"""Sets the limit of this ListGroupMembershipsForMemberRequest.
 
         每个请求返回的最大结果数
 
@@ -136,7 +136,7 @@ class ListGroupMembershipsForMemberRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListGroupMembershipsForMemberRequest.
+        r"""Gets the marker of this ListGroupMembershipsForMemberRequest.
 
         分页标记
 
@@ -147,7 +147,7 @@ class ListGroupMembershipsForMemberRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListGroupMembershipsForMemberRequest.
+        r"""Sets the marker of this ListGroupMembershipsForMemberRequest.
 
         分页标记
 
@@ -158,7 +158,7 @@ class ListGroupMembershipsForMemberRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ListGroupMembershipsForMemberRequest.
+        r"""Gets the user_id of this ListGroupMembershipsForMemberRequest.
 
         用户唯一标识
 
@@ -169,7 +169,7 @@ class ListGroupMembershipsForMemberRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ListGroupMembershipsForMemberRequest.
+        r"""Sets the user_id of this ListGroupMembershipsForMemberRequest.
 
         用户唯一标识
 

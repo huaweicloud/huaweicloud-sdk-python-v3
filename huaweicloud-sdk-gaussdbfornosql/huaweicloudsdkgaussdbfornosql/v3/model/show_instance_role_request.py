@@ -25,7 +25,7 @@ class ShowInstanceRoleRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowInstanceRoleRequest
+        r"""ShowInstanceRoleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowInstanceRoleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceRoleRequest.
+        r"""Gets the instance_id of this ShowInstanceRoleRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowInstanceRoleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceRoleRequest.
+        r"""Sets the instance_id of this ShowInstanceRoleRequest.
 
         实例ID。
 

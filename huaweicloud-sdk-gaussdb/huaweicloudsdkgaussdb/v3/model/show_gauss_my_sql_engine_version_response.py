@@ -26,7 +26,7 @@ class ShowGaussMySqlEngineVersionResponse(SdkResponse):
     }
 
     def __init__(self, datastores=None):
-        """ShowGaussMySqlEngineVersionResponse
+        r"""ShowGaussMySqlEngineVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowGaussMySqlEngineVersionResponse(SdkResponse):
 
     @property
     def datastores(self):
-        """Gets the datastores of this ShowGaussMySqlEngineVersionResponse.
+        r"""Gets the datastores of this ShowGaussMySqlEngineVersionResponse.
 
         数据库版本信息列表
 
@@ -55,7 +55,7 @@ class ShowGaussMySqlEngineVersionResponse(SdkResponse):
 
     @datastores.setter
     def datastores(self, datastores):
-        """Sets the datastores of this ShowGaussMySqlEngineVersionResponse.
+        r"""Sets the datastores of this ShowGaussMySqlEngineVersionResponse.
 
         数据库版本信息列表
 

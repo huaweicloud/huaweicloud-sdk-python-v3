@@ -27,7 +27,7 @@ class NetworkConfigReq:
     }
 
     def __init__(self, vpc_id=None, subnet_ids=None):
-        """NetworkConfigReq
+        r"""NetworkConfigReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NetworkConfigReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this NetworkConfigReq.
+        r"""Gets the vpc_id of this NetworkConfigReq.
 
         VPC ID
 
@@ -61,7 +61,7 @@ class NetworkConfigReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this NetworkConfigReq.
+        r"""Sets the vpc_id of this NetworkConfigReq.
 
         VPC ID
 
@@ -72,7 +72,7 @@ class NetworkConfigReq:
 
     @property
     def subnet_ids(self):
-        """Gets the subnet_ids of this NetworkConfigReq.
+        r"""Gets the subnet_ids of this NetworkConfigReq.
 
         指定业务子网的网络id
 
@@ -83,7 +83,7 @@ class NetworkConfigReq:
 
     @subnet_ids.setter
     def subnet_ids(self, subnet_ids):
-        """Sets the subnet_ids of this NetworkConfigReq.
+        r"""Sets the subnet_ids of this NetworkConfigReq.
 
         指定业务子网的网络id
 

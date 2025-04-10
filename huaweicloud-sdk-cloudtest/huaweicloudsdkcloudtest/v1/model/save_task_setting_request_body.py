@@ -27,7 +27,7 @@ class SaveTaskSettingRequestBody:
     }
 
     def __init__(self, max_running_time=None, is_long_run=None):
-        """SaveTaskSettingRequestBody
+        r"""SaveTaskSettingRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SaveTaskSettingRequestBody:
 
     @property
     def max_running_time(self):
-        """Gets the max_running_time of this SaveTaskSettingRequestBody.
+        r"""Gets the max_running_time of this SaveTaskSettingRequestBody.
 
         自定义时长
 
@@ -61,7 +61,7 @@ class SaveTaskSettingRequestBody:
 
     @max_running_time.setter
     def max_running_time(self, max_running_time):
-        """Sets the max_running_time of this SaveTaskSettingRequestBody.
+        r"""Sets the max_running_time of this SaveTaskSettingRequestBody.
 
         自定义时长
 
@@ -72,7 +72,7 @@ class SaveTaskSettingRequestBody:
 
     @property
     def is_long_run(self):
-        """Gets the is_long_run of this SaveTaskSettingRequestBody.
+        r"""Gets the is_long_run of this SaveTaskSettingRequestBody.
 
         是否长期运行
 
@@ -83,7 +83,7 @@ class SaveTaskSettingRequestBody:
 
     @is_long_run.setter
     def is_long_run(self, is_long_run):
-        """Sets the is_long_run of this SaveTaskSettingRequestBody.
+        r"""Sets the is_long_run of this SaveTaskSettingRequestBody.
 
         是否长期运行
 

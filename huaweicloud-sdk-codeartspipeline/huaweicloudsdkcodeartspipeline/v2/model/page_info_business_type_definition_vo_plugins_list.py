@@ -57,7 +57,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     }
 
     def __init__(self, unique_id=None, display_name=None, plugin_name=None, disabled=None, group_name=None, group_type=None, plugin_attribution=None, plugin_composition_type=None, runtime_attribution=None, all_steps=None, description=None, version_attribution=None, icon_url=None, multi_step_editable=None, location=None, publisher_unique_id=None, manifest_version=None):
-        """PageInfoBusinessTypeDefinitionVOPluginsList
+        r"""PageInfoBusinessTypeDefinitionVOPluginsList
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def unique_id(self):
-        """Gets the unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         唯一ID
 
@@ -166,7 +166,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @unique_id.setter
     def unique_id(self, unique_id):
-        """Sets the unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         唯一ID
 
@@ -177,7 +177,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def display_name(self):
-        """Gets the display_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the display_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         展示名
 
@@ -188,7 +188,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the display_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         展示名
 
@@ -199,7 +199,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the plugin_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         插件名
 
@@ -210,7 +210,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the plugin_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         插件名
 
@@ -221,7 +221,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def disabled(self):
-        """Gets the disabled of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the disabled of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         禁用
 
@@ -232,7 +232,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the disabled of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         禁用
 
@@ -243,7 +243,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def group_name(self):
-        """Gets the group_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the group_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         组名
 
@@ -254,7 +254,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the group_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         组名
 
@@ -265,7 +265,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def group_type(self):
-        """Gets the group_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the group_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         组类型
 
@@ -276,7 +276,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the group_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         组类型
 
@@ -287,7 +287,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def plugin_attribution(self):
-        """Gets the plugin_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the plugin_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         属性
 
@@ -298,7 +298,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @plugin_attribution.setter
     def plugin_attribution(self, plugin_attribution):
-        """Sets the plugin_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the plugin_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         属性
 
@@ -309,7 +309,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def plugin_composition_type(self):
-        """Gets the plugin_composition_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the plugin_composition_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         组合插件
 
@@ -320,7 +320,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @plugin_composition_type.setter
     def plugin_composition_type(self, plugin_composition_type):
-        """Sets the plugin_composition_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the plugin_composition_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         组合插件
 
@@ -331,7 +331,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def runtime_attribution(self):
-        """Gets the runtime_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the runtime_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         运行属性
 
@@ -342,7 +342,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @runtime_attribution.setter
     def runtime_attribution(self, runtime_attribution):
-        """Sets the runtime_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the runtime_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         运行属性
 
@@ -353,7 +353,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def all_steps(self):
-        """Gets the all_steps of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the all_steps of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         基础插件列表
 
@@ -364,7 +364,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @all_steps.setter
     def all_steps(self, all_steps):
-        """Sets the all_steps of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the all_steps of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         基础插件列表
 
@@ -375,7 +375,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def description(self):
-        """Gets the description of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the description of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         描述
 
@@ -386,7 +386,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the description of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         描述
 
@@ -397,7 +397,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def version_attribution(self):
-        """Gets the version_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the version_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         版本属性
 
@@ -408,7 +408,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @version_attribution.setter
     def version_attribution(self, version_attribution):
-        """Sets the version_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the version_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         版本属性
 
@@ -419,7 +419,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def icon_url(self):
-        """Gets the icon_url of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the icon_url of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         图标URL
 
@@ -430,7 +430,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @icon_url.setter
     def icon_url(self, icon_url):
-        """Sets the icon_url of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the icon_url of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         图标URL
 
@@ -441,7 +441,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def multi_step_editable(self):
-        """Gets the multi_step_editable of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the multi_step_editable of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         可编辑
 
@@ -452,7 +452,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @multi_step_editable.setter
     def multi_step_editable(self, multi_step_editable):
-        """Sets the multi_step_editable of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the multi_step_editable of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         可编辑
 
@@ -463,7 +463,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def location(self):
-        """Gets the location of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the location of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         地址
 
@@ -474,7 +474,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the location of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         地址
 
@@ -485,7 +485,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def publisher_unique_id(self):
-        """Gets the publisher_unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the publisher_unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         发布商ID
 
@@ -496,7 +496,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @publisher_unique_id.setter
     def publisher_unique_id(self, publisher_unique_id):
-        """Sets the publisher_unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the publisher_unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         发布商ID
 
@@ -507,7 +507,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @property
     def manifest_version(self):
-        """Gets the manifest_version of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Gets the manifest_version of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         版本
 
@@ -518,7 +518,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
 
     @manifest_version.setter
     def manifest_version(self, manifest_version):
-        """Sets the manifest_version of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        r"""Sets the manifest_version of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
         版本
 

@@ -28,7 +28,7 @@ class BatchListAssociatedIssuesResponse(SdkResponse):
     }
 
     def __init__(self, issues=None, total=None):
-        """BatchListAssociatedIssuesResponse
+        r"""BatchListAssociatedIssuesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchListAssociatedIssuesResponse(SdkResponse):
 
     @property
     def issues(self):
-        """Gets the issues of this BatchListAssociatedIssuesResponse.
+        r"""Gets the issues of this BatchListAssociatedIssuesResponse.
 
         关联的工作项列表
 
@@ -62,7 +62,7 @@ class BatchListAssociatedIssuesResponse(SdkResponse):
 
     @issues.setter
     def issues(self, issues):
-        """Sets the issues of this BatchListAssociatedIssuesResponse.
+        r"""Sets the issues of this BatchListAssociatedIssuesResponse.
 
         关联的工作项列表
 
@@ -73,7 +73,7 @@ class BatchListAssociatedIssuesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this BatchListAssociatedIssuesResponse.
+        r"""Gets the total of this BatchListAssociatedIssuesResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class BatchListAssociatedIssuesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BatchListAssociatedIssuesResponse.
+        r"""Sets the total of this BatchListAssociatedIssuesResponse.
 
         总数
 

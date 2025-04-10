@@ -25,7 +25,7 @@ class UpdateDomainPasswordPolicyRequestBody:
     }
 
     def __init__(self, password_policy=None):
-        """UpdateDomainPasswordPolicyRequestBody
+        r"""UpdateDomainPasswordPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateDomainPasswordPolicyRequestBody:
 
     @property
     def password_policy(self):
-        """Gets the password_policy of this UpdateDomainPasswordPolicyRequestBody.
+        r"""Gets the password_policy of this UpdateDomainPasswordPolicyRequestBody.
 
         :return: The password_policy of this UpdateDomainPasswordPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.PasswordPolicyOption`
@@ -51,7 +51,7 @@ class UpdateDomainPasswordPolicyRequestBody:
 
     @password_policy.setter
     def password_policy(self, password_policy):
-        """Sets the password_policy of this UpdateDomainPasswordPolicyRequestBody.
+        r"""Sets the password_policy of this UpdateDomainPasswordPolicyRequestBody.
 
         :param password_policy: The password_policy of this UpdateDomainPasswordPolicyRequestBody.
         :type password_policy: :class:`huaweicloudsdkiam.v3.PasswordPolicyOption`

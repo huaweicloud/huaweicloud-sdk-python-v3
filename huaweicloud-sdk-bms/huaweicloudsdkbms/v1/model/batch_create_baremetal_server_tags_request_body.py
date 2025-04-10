@@ -27,7 +27,7 @@ class BatchCreateBaremetalServerTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchCreateBaremetalServerTagsRequestBody
+        r"""BatchCreateBaremetalServerTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchCreateBaremetalServerTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchCreateBaremetalServerTagsRequestBody.
+        r"""Gets the action of this BatchCreateBaremetalServerTagsRequestBody.
 
         操作标识（仅支持小写）：create（创建）。
 
@@ -59,7 +59,7 @@ class BatchCreateBaremetalServerTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchCreateBaremetalServerTagsRequestBody.
+        r"""Sets the action of this BatchCreateBaremetalServerTagsRequestBody.
 
         操作标识（仅支持小写）：create（创建）。
 
@@ -70,7 +70,7 @@ class BatchCreateBaremetalServerTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateBaremetalServerTagsRequestBody.
+        r"""Gets the tags of this BatchCreateBaremetalServerTagsRequestBody.
 
         标签列表。
 
@@ -81,7 +81,7 @@ class BatchCreateBaremetalServerTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateBaremetalServerTagsRequestBody.
+        r"""Sets the tags of this BatchCreateBaremetalServerTagsRequestBody.
 
         标签列表。
 

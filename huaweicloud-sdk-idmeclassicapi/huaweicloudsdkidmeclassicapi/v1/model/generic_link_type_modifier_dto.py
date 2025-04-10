@@ -31,7 +31,7 @@ class GenericLinkTypeModifierDTO:
     }
 
     def __init__(self, latest_only=None, modifier=None, source_id=None, target_type=None):
-        """GenericLinkTypeModifierDTO
+        r"""GenericLinkTypeModifierDTO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class GenericLinkTypeModifierDTO:
 
     @property
     def latest_only(self):
-        """Gets the latest_only of this GenericLinkTypeModifierDTO.
+        r"""Gets the latest_only of this GenericLinkTypeModifierDTO.
 
         **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。  **默认取值：**  false。 
 
@@ -75,7 +75,7 @@ class GenericLinkTypeModifierDTO:
 
     @latest_only.setter
     def latest_only(self, latest_only):
-        """Sets the latest_only of this GenericLinkTypeModifierDTO.
+        r"""Sets the latest_only of this GenericLinkTypeModifierDTO.
 
         **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。  **默认取值：**  false。 
 
@@ -86,7 +86,7 @@ class GenericLinkTypeModifierDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this GenericLinkTypeModifierDTO.
+        r"""Gets the modifier of this GenericLinkTypeModifierDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -97,7 +97,7 @@ class GenericLinkTypeModifierDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this GenericLinkTypeModifierDTO.
+        r"""Sets the modifier of this GenericLinkTypeModifierDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -108,7 +108,7 @@ class GenericLinkTypeModifierDTO:
 
     @property
     def source_id(self):
-        """Gets the source_id of this GenericLinkTypeModifierDTO.
+        r"""Gets the source_id of this GenericLinkTypeModifierDTO.
 
         **参数解释：**  源模型数据实例的ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -119,7 +119,7 @@ class GenericLinkTypeModifierDTO:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this GenericLinkTypeModifierDTO.
+        r"""Sets the source_id of this GenericLinkTypeModifierDTO.
 
         **参数解释：**  源模型数据实例的ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -130,7 +130,7 @@ class GenericLinkTypeModifierDTO:
 
     @property
     def target_type(self):
-        """Gets the target_type of this GenericLinkTypeModifierDTO.
+        r"""Gets the target_type of this GenericLinkTypeModifierDTO.
 
         **参数解释：**  目标模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -141,7 +141,7 @@ class GenericLinkTypeModifierDTO:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this GenericLinkTypeModifierDTO.
+        r"""Sets the target_type of this GenericLinkTypeModifierDTO.
 
         **参数解释：**  目标模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

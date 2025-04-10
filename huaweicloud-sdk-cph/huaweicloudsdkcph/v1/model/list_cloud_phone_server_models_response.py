@@ -28,7 +28,7 @@ class ListCloudPhoneServerModelsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, server_models=None):
-        """ListCloudPhoneServerModelsResponse
+        r"""ListCloudPhoneServerModelsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCloudPhoneServerModelsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCloudPhoneServerModelsResponse.
+        r"""Gets the request_id of this ListCloudPhoneServerModelsResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class ListCloudPhoneServerModelsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCloudPhoneServerModelsResponse.
+        r"""Sets the request_id of this ListCloudPhoneServerModelsResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class ListCloudPhoneServerModelsResponse(SdkResponse):
 
     @property
     def server_models(self):
-        """Gets the server_models of this ListCloudPhoneServerModelsResponse.
+        r"""Gets the server_models of this ListCloudPhoneServerModelsResponse.
 
         云手机服务器的规格信息。
 
@@ -84,7 +84,7 @@ class ListCloudPhoneServerModelsResponse(SdkResponse):
 
     @server_models.setter
     def server_models(self, server_models):
-        """Sets the server_models of this ListCloudPhoneServerModelsResponse.
+        r"""Sets the server_models of this ListCloudPhoneServerModelsResponse.
 
         云手机服务器的规格信息。
 

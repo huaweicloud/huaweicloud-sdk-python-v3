@@ -25,7 +25,7 @@ class BatchDeleteBody:
     }
 
     def __init__(self, name=None):
-        """BatchDeleteBody
+        r"""BatchDeleteBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteBody:
 
     @property
     def name(self):
-        """Gets the name of this BatchDeleteBody.
+        r"""Gets the name of this BatchDeleteBody.
 
         需要删除的资源名称列表
 
@@ -53,7 +53,7 @@ class BatchDeleteBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchDeleteBody.
+        r"""Sets the name of this BatchDeleteBody.
 
         需要删除的资源名称列表
 

@@ -25,7 +25,7 @@ class AgencyAssumedby:
     }
 
     def __init__(self, user=None):
-        """AgencyAssumedby
+        r"""AgencyAssumedby
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AgencyAssumedby:
 
     @property
     def user(self):
-        """Gets the user of this AgencyAssumedby.
+        r"""Gets the user of this AgencyAssumedby.
 
         :return: The user of this AgencyAssumedby.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyAssumedbyUser`
@@ -51,7 +51,7 @@ class AgencyAssumedby:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this AgencyAssumedby.
+        r"""Sets the user of this AgencyAssumedby.
 
         :param user: The user of this AgencyAssumedby.
         :type user: :class:`huaweicloudsdkiam.v3.AgencyAssumedbyUser`

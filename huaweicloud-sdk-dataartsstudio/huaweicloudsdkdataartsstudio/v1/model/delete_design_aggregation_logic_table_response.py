@@ -26,7 +26,7 @@ class DeleteDesignAggregationLogicTableResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """DeleteDesignAggregationLogicTableResponse
+        r"""DeleteDesignAggregationLogicTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDesignAggregationLogicTableResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteDesignAggregationLogicTableResponse.
+        r"""Gets the data of this DeleteDesignAggregationLogicTableResponse.
 
         :return: The data of this DeleteDesignAggregationLogicTableResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`
@@ -53,7 +53,7 @@ class DeleteDesignAggregationLogicTableResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteDesignAggregationLogicTableResponse.
+        r"""Sets the data of this DeleteDesignAggregationLogicTableResponse.
 
         :param data: The data of this DeleteDesignAggregationLogicTableResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`

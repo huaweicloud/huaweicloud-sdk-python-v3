@@ -38,7 +38,7 @@ class CreateValueListResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, type=None, description=None, timestamp=None, values=None, producer=None):
-        """CreateValueListResponse
+        r"""CreateValueListResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateValueListResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateValueListResponse.
+        r"""Gets the id of this CreateValueListResponse.
 
         引用表id
 
@@ -97,7 +97,7 @@ class CreateValueListResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateValueListResponse.
+        r"""Sets the id of this CreateValueListResponse.
 
         引用表id
 
@@ -108,7 +108,7 @@ class CreateValueListResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateValueListResponse.
+        r"""Gets the name of this CreateValueListResponse.
 
         引用表名称
 
@@ -119,7 +119,7 @@ class CreateValueListResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateValueListResponse.
+        r"""Sets the name of this CreateValueListResponse.
 
         引用表名称
 
@@ -130,7 +130,7 @@ class CreateValueListResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CreateValueListResponse.
+        r"""Gets the type of this CreateValueListResponse.
 
         引用表类型
 
@@ -141,7 +141,7 @@ class CreateValueListResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateValueListResponse.
+        r"""Sets the type of this CreateValueListResponse.
 
         引用表类型
 
@@ -152,7 +152,7 @@ class CreateValueListResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateValueListResponse.
+        r"""Gets the description of this CreateValueListResponse.
 
         引用表描述
 
@@ -163,7 +163,7 @@ class CreateValueListResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateValueListResponse.
+        r"""Sets the description of this CreateValueListResponse.
 
         引用表描述
 
@@ -174,7 +174,7 @@ class CreateValueListResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this CreateValueListResponse.
+        r"""Gets the timestamp of this CreateValueListResponse.
 
         引用表时间戳
 
@@ -185,7 +185,7 @@ class CreateValueListResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this CreateValueListResponse.
+        r"""Sets the timestamp of this CreateValueListResponse.
 
         引用表时间戳
 
@@ -196,7 +196,7 @@ class CreateValueListResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this CreateValueListResponse.
+        r"""Gets the values of this CreateValueListResponse.
 
         引用表的值
 
@@ -207,7 +207,7 @@ class CreateValueListResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this CreateValueListResponse.
+        r"""Sets the values of this CreateValueListResponse.
 
         引用表的值
 
@@ -218,7 +218,7 @@ class CreateValueListResponse(SdkResponse):
 
     @property
     def producer(self):
-        """Gets the producer of this CreateValueListResponse.
+        r"""Gets the producer of this CreateValueListResponse.
 
         引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于智能访问控制自动创建
 
@@ -229,7 +229,7 @@ class CreateValueListResponse(SdkResponse):
 
     @producer.setter
     def producer(self, producer):
-        """Sets the producer of this CreateValueListResponse.
+        r"""Sets the producer of this CreateValueListResponse.
 
         引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于智能访问控制自动创建
 

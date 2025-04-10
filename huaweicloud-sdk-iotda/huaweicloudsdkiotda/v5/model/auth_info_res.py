@@ -37,7 +37,7 @@ class AuthInfoRes:
     }
 
     def __init__(self, auth_type=None, secret=None, secondary_secret=None, fingerprint=None, secondary_fingerprint=None, secure_access=None, timeout=None):
-        """AuthInfoRes
+        r"""AuthInfoRes
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AuthInfoRes:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this AuthInfoRes.
+        r"""Gets the auth_type of this AuthInfoRes.
 
         **参数说明**：鉴权类型。注意：不填写auth_type默认为密钥认证接入方式(SECRET)。 **取值范围**： - SECRET:使用密钥认证接入方式。 - CERTIFICATES:使用证书认证接入方式。
 
@@ -96,7 +96,7 @@ class AuthInfoRes:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this AuthInfoRes.
+        r"""Sets the auth_type of this AuthInfoRes.
 
         **参数说明**：鉴权类型。注意：不填写auth_type默认为密钥认证接入方式(SECRET)。 **取值范围**： - SECRET:使用密钥认证接入方式。 - CERTIFICATES:使用证书认证接入方式。
 
@@ -107,7 +107,7 @@ class AuthInfoRes:
 
     @property
     def secret(self):
-        """Gets the secret of this AuthInfoRes.
+        r"""Gets the secret of this AuthInfoRes.
 
         **参数说明**：设备密钥，认证类型使用密钥认证接入(SECRET)可填写该字段。注意：NB设备密钥由于协议特殊性，只支持十六进制密钥接入；查询设备列表接口不返回该参数。 **取值范围**：长度不低于8不超过32，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -118,7 +118,7 @@ class AuthInfoRes:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this AuthInfoRes.
+        r"""Sets the secret of this AuthInfoRes.
 
         **参数说明**：设备密钥，认证类型使用密钥认证接入(SECRET)可填写该字段。注意：NB设备密钥由于协议特殊性，只支持十六进制密钥接入；查询设备列表接口不返回该参数。 **取值范围**：长度不低于8不超过32，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -129,7 +129,7 @@ class AuthInfoRes:
 
     @property
     def secondary_secret(self):
-        """Gets the secondary_secret of this AuthInfoRes.
+        r"""Gets the secondary_secret of this AuthInfoRes.
 
         **参数说明**：设备备用密钥，认证类型使用密钥认证接入(SECRET)该字段有效，当主密钥校验不通过时，会启用辅密钥校验，辅密钥与主密钥有相同的效力；辅密钥对coap协议接入的设备不生效。注意：NB设备密钥由于协议特殊性，只支持十六进制密钥接入；查询设备列表接口不返回该参数。 **取值范围**：长度不低于8不超过32，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -140,7 +140,7 @@ class AuthInfoRes:
 
     @secondary_secret.setter
     def secondary_secret(self, secondary_secret):
-        """Sets the secondary_secret of this AuthInfoRes.
+        r"""Sets the secondary_secret of this AuthInfoRes.
 
         **参数说明**：设备备用密钥，认证类型使用密钥认证接入(SECRET)该字段有效，当主密钥校验不通过时，会启用辅密钥校验，辅密钥与主密钥有相同的效力；辅密钥对coap协议接入的设备不生效。注意：NB设备密钥由于协议特殊性，只支持十六进制密钥接入；查询设备列表接口不返回该参数。 **取值范围**：长度不低于8不超过32，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -151,7 +151,7 @@ class AuthInfoRes:
 
     @property
     def fingerprint(self):
-        """Gets the fingerprint of this AuthInfoRes.
+        r"""Gets the fingerprint of this AuthInfoRes.
 
         **参数说明**：证书指纹，认证类型使用证书认证接入(CERTIFICATES)该字段有效，注册设备时不填写该字段则取第一次设备接入时的证书指纹。 **取值范围**：长度为40的十六进制字符串或者长度为64的十六进制字符串。
 
@@ -162,7 +162,7 @@ class AuthInfoRes:
 
     @fingerprint.setter
     def fingerprint(self, fingerprint):
-        """Sets the fingerprint of this AuthInfoRes.
+        r"""Sets the fingerprint of this AuthInfoRes.
 
         **参数说明**：证书指纹，认证类型使用证书认证接入(CERTIFICATES)该字段有效，注册设备时不填写该字段则取第一次设备接入时的证书指纹。 **取值范围**：长度为40的十六进制字符串或者长度为64的十六进制字符串。
 
@@ -173,7 +173,7 @@ class AuthInfoRes:
 
     @property
     def secondary_fingerprint(self):
-        """Gets the secondary_fingerprint of this AuthInfoRes.
+        r"""Gets the secondary_fingerprint of this AuthInfoRes.
 
         **参数说明**：证书备用指纹，认证类型使用证书认证接入(CERTIFICATES)该字段有效，当主指纹校验不通过时，会启用辅指纹校验，辅指纹与主指纹有相同的效力。 **取值范围**：长度为40的十六进制字符串或者长度为64的十六进制字符串。
 
@@ -184,7 +184,7 @@ class AuthInfoRes:
 
     @secondary_fingerprint.setter
     def secondary_fingerprint(self, secondary_fingerprint):
-        """Sets the secondary_fingerprint of this AuthInfoRes.
+        r"""Sets the secondary_fingerprint of this AuthInfoRes.
 
         **参数说明**：证书备用指纹，认证类型使用证书认证接入(CERTIFICATES)该字段有效，当主指纹校验不通过时，会启用辅指纹校验，辅指纹与主指纹有相同的效力。 **取值范围**：长度为40的十六进制字符串或者长度为64的十六进制字符串。
 
@@ -195,7 +195,7 @@ class AuthInfoRes:
 
     @property
     def secure_access(self):
-        """Gets the secure_access of this AuthInfoRes.
+        r"""Gets the secure_access of this AuthInfoRes.
 
         **参数说明**：指设备是否通过安全协议方式接入。 **取值范围**： - true：通过安全协议方式接入。 - false：通过非安全协议方式接入。非安全接入的设备存在被仿冒等安全风险，请谨慎使用。
 
@@ -206,7 +206,7 @@ class AuthInfoRes:
 
     @secure_access.setter
     def secure_access(self, secure_access):
-        """Sets the secure_access of this AuthInfoRes.
+        r"""Sets the secure_access of this AuthInfoRes.
 
         **参数说明**：指设备是否通过安全协议方式接入。 **取值范围**： - true：通过安全协议方式接入。 - false：通过非安全协议方式接入。非安全接入的设备存在被仿冒等安全风险，请谨慎使用。
 
@@ -217,7 +217,7 @@ class AuthInfoRes:
 
     @property
     def timeout(self):
-        """Gets the timeout of this AuthInfoRes.
+        r"""Gets the timeout of this AuthInfoRes.
 
         **参数说明**：设备接入的有效时间，单位：秒，默认值：0 若设备在有效时间内未接入物联网平台并激活，则平台会删除该设备的注册信息。若设置为“0”，则表示平台不会删除该设备的注册信息（建议填写为“0”）。 注意：该参数只对直连设备生效。
 
@@ -228,7 +228,7 @@ class AuthInfoRes:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this AuthInfoRes.
+        r"""Sets the timeout of this AuthInfoRes.
 
         **参数说明**：设备接入的有效时间，单位：秒，默认值：0 若设备在有效时间内未接入物联网平台并激活，则平台会删除该设备的注册信息。若设置为“0”，则表示平台不会删除该设备的注册信息（建议填写为“0”）。 注意：该参数只对直连设备生效。
 

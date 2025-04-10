@@ -33,7 +33,7 @@ class ConformancePackTemplate:
     }
 
     def __init__(self, id=None, template_key=None, description=None, template_body=None, parameters=None):
-        """ConformancePackTemplate
+        r"""ConformancePackTemplate
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ConformancePackTemplate:
 
     @property
     def id(self):
-        """Gets the id of this ConformancePackTemplate.
+        r"""Gets the id of this ConformancePackTemplate.
 
         预定义合规包模板ID。
 
@@ -82,7 +82,7 @@ class ConformancePackTemplate:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConformancePackTemplate.
+        r"""Sets the id of this ConformancePackTemplate.
 
         预定义合规包模板ID。
 
@@ -93,7 +93,7 @@ class ConformancePackTemplate:
 
     @property
     def template_key(self):
-        """Gets the template_key of this ConformancePackTemplate.
+        r"""Gets the template_key of this ConformancePackTemplate.
 
         预定义合规包模板名称。
 
@@ -104,7 +104,7 @@ class ConformancePackTemplate:
 
     @template_key.setter
     def template_key(self, template_key):
-        """Sets the template_key of this ConformancePackTemplate.
+        r"""Sets the template_key of this ConformancePackTemplate.
 
         预定义合规包模板名称。
 
@@ -115,7 +115,7 @@ class ConformancePackTemplate:
 
     @property
     def description(self):
-        """Gets the description of this ConformancePackTemplate.
+        r"""Gets the description of this ConformancePackTemplate.
 
         预定义合规包模板描述。
 
@@ -126,7 +126,7 @@ class ConformancePackTemplate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConformancePackTemplate.
+        r"""Sets the description of this ConformancePackTemplate.
 
         预定义合规包模板描述。
 
@@ -137,7 +137,7 @@ class ConformancePackTemplate:
 
     @property
     def template_body(self):
-        """Gets the template_body of this ConformancePackTemplate.
+        r"""Gets the template_body of this ConformancePackTemplate.
 
         预定义合规包模板内容。
 
@@ -148,7 +148,7 @@ class ConformancePackTemplate:
 
     @template_body.setter
     def template_body(self, template_body):
-        """Sets the template_body of this ConformancePackTemplate.
+        r"""Sets the template_body of this ConformancePackTemplate.
 
         预定义合规包模板内容。
 
@@ -159,7 +159,7 @@ class ConformancePackTemplate:
 
     @property
     def parameters(self):
-        """Gets the parameters of this ConformancePackTemplate.
+        r"""Gets the parameters of this ConformancePackTemplate.
 
         预定义合规包模板参数。
 
@@ -170,7 +170,7 @@ class ConformancePackTemplate:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ConformancePackTemplate.
+        r"""Sets the parameters of this ConformancePackTemplate.
 
         预定义合规包模板参数。
 

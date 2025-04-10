@@ -31,7 +31,7 @@ class ListBaseModelRequest:
     }
 
     def __init__(self, limit=None, offset=None, sort_dir=None, sort_key=None):
-        """ListBaseModelRequest
+        r"""ListBaseModelRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListBaseModelRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBaseModelRequest.
+        r"""Gets the limit of this ListBaseModelRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -75,7 +75,7 @@ class ListBaseModelRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBaseModelRequest.
+        r"""Sets the limit of this ListBaseModelRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -86,7 +86,7 @@ class ListBaseModelRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBaseModelRequest.
+        r"""Gets the offset of this ListBaseModelRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -97,7 +97,7 @@ class ListBaseModelRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBaseModelRequest.
+        r"""Sets the offset of this ListBaseModelRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -108,7 +108,7 @@ class ListBaseModelRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListBaseModelRequest.
+        r"""Gets the sort_dir of this ListBaseModelRequest.
 
         排序规则 目前默认时间升序
 
@@ -119,7 +119,7 @@ class ListBaseModelRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListBaseModelRequest.
+        r"""Sets the sort_dir of this ListBaseModelRequest.
 
         排序规则 目前默认时间升序
 
@@ -130,7 +130,7 @@ class ListBaseModelRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListBaseModelRequest.
+        r"""Gets the sort_key of this ListBaseModelRequest.
 
         排序规则 目前默认时间升序，支持根据create_time排序
 
@@ -141,7 +141,7 @@ class ListBaseModelRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListBaseModelRequest.
+        r"""Sets the sort_key of this ListBaseModelRequest.
 
         排序规则 目前默认时间升序，支持根据create_time排序
 

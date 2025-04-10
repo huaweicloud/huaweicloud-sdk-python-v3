@@ -28,7 +28,7 @@ class SearchSgcComputeDimensionsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, computes=None):
-        """SearchSgcComputeDimensionsResponse
+        r"""SearchSgcComputeDimensionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SearchSgcComputeDimensionsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchSgcComputeDimensionsResponse.
+        r"""Gets the count of this SearchSgcComputeDimensionsResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class SearchSgcComputeDimensionsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchSgcComputeDimensionsResponse.
+        r"""Sets the count of this SearchSgcComputeDimensionsResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class SearchSgcComputeDimensionsResponse(SdkResponse):
 
     @property
     def computes(self):
-        """Gets the computes of this SearchSgcComputeDimensionsResponse.
+        r"""Gets the computes of this SearchSgcComputeDimensionsResponse.
 
         计算成本实例列表
 
@@ -84,7 +84,7 @@ class SearchSgcComputeDimensionsResponse(SdkResponse):
 
     @computes.setter
     def computes(self, computes):
-        """Sets the computes of this SearchSgcComputeDimensionsResponse.
+        r"""Sets the computes of this SearchSgcComputeDimensionsResponse.
 
         计算成本实例列表
 

@@ -27,7 +27,7 @@ class NodePriority:
     }
 
     def __init__(self, node_selector=None, priority=None):
-        """NodePriority
+        r"""NodePriority
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NodePriority:
 
     @property
     def node_selector(self):
-        """Gets the node_selector of this NodePriority.
+        r"""Gets the node_selector of this NodePriority.
 
         :return: The node_selector of this NodePriority.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeSelector`
@@ -57,7 +57,7 @@ class NodePriority:
 
     @node_selector.setter
     def node_selector(self, node_selector):
-        """Sets the node_selector of this NodePriority.
+        r"""Sets the node_selector of this NodePriority.
 
         :param node_selector: The node_selector of this NodePriority.
         :type node_selector: :class:`huaweicloudsdkcce.v3.NodeSelector`
@@ -66,7 +66,7 @@ class NodePriority:
 
     @property
     def priority(self):
-        """Gets the priority of this NodePriority.
+        r"""Gets the priority of this NodePriority.
 
         该批次节点的优先级，默认值为0，优先级最低，数值越大优先级越高
 
@@ -77,7 +77,7 @@ class NodePriority:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this NodePriority.
+        r"""Sets the priority of this NodePriority.
 
         该批次节点的优先级，默认值为0，优先级最低，数值越大优先级越高
 

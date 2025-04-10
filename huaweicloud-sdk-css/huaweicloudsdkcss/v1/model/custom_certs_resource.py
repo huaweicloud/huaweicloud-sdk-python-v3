@@ -33,7 +33,7 @@ class CustomCertsResource:
     }
 
     def __init__(self, id=None, file_name=None, file_location=None, status=None, update_at=None):
-        """CustomCertsResource
+        r"""CustomCertsResource
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CustomCertsResource:
 
     @property
     def id(self):
-        """Gets the id of this CustomCertsResource.
+        r"""Gets the id of this CustomCertsResource.
 
         证书id。
 
@@ -82,7 +82,7 @@ class CustomCertsResource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CustomCertsResource.
+        r"""Sets the id of this CustomCertsResource.
 
         证书id。
 
@@ -93,7 +93,7 @@ class CustomCertsResource:
 
     @property
     def file_name(self):
-        """Gets the file_name of this CustomCertsResource.
+        r"""Gets the file_name of this CustomCertsResource.
 
         证书名称。
 
@@ -104,7 +104,7 @@ class CustomCertsResource:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this CustomCertsResource.
+        r"""Sets the file_name of this CustomCertsResource.
 
         证书名称。
 
@@ -115,7 +115,7 @@ class CustomCertsResource:
 
     @property
     def file_location(self):
-        """Gets the file_location of this CustomCertsResource.
+        r"""Gets the file_location of this CustomCertsResource.
 
         证书路径。
 
@@ -126,7 +126,7 @@ class CustomCertsResource:
 
     @file_location.setter
     def file_location(self, file_location):
-        """Sets the file_location of this CustomCertsResource.
+        r"""Sets the file_location of this CustomCertsResource.
 
         证书路径。
 
@@ -137,7 +137,7 @@ class CustomCertsResource:
 
     @property
     def status(self):
-        """Gets the status of this CustomCertsResource.
+        r"""Gets the status of this CustomCertsResource.
 
         证书状态。
 
@@ -148,7 +148,7 @@ class CustomCertsResource:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CustomCertsResource.
+        r"""Sets the status of this CustomCertsResource.
 
         证书状态。
 
@@ -159,7 +159,7 @@ class CustomCertsResource:
 
     @property
     def update_at(self):
-        """Gets the update_at of this CustomCertsResource.
+        r"""Gets the update_at of this CustomCertsResource.
 
         证书上传时间。
 
@@ -170,7 +170,7 @@ class CustomCertsResource:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this CustomCertsResource.
+        r"""Sets the update_at of this CustomCertsResource.
 
         证书上传时间。
 

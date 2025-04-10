@@ -25,7 +25,7 @@ class CreateEnterpriseRealnameAuthenticationRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEnterpriseRealnameAuthenticationRequest
+        r"""CreateEnterpriseRealnameAuthenticationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateEnterpriseRealnameAuthenticationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEnterpriseRealnameAuthenticationRequest.
+        r"""Gets the body of this CreateEnterpriseRealnameAuthenticationRequest.
 
         :return: The body of this CreateEnterpriseRealnameAuthenticationRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.ApplyEnterpriseRealnameAuthsReq`
@@ -52,7 +52,7 @@ class CreateEnterpriseRealnameAuthenticationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEnterpriseRealnameAuthenticationRequest.
+        r"""Sets the body of this CreateEnterpriseRealnameAuthenticationRequest.
 
         :param body: The body of this CreateEnterpriseRealnameAuthenticationRequest.
         :type body: :class:`huaweicloudsdkbss.v2.ApplyEnterpriseRealnameAuthsReq`

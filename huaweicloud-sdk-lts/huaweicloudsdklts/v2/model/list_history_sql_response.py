@@ -26,7 +26,7 @@ class ListHistorySqlResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """ListHistorySqlResponse
+        r"""ListHistorySqlResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListHistorySqlResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ListHistorySqlResponse.
+        r"""Gets the results of this ListHistorySqlResponse.
 
         :return: The results of this ListHistorySqlResponse.
         :rtype: list[:class:`huaweicloudsdklts.v2.QuertHistorySQLResultsBody`]
@@ -53,7 +53,7 @@ class ListHistorySqlResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ListHistorySqlResponse.
+        r"""Sets the results of this ListHistorySqlResponse.
 
         :param results: The results of this ListHistorySqlResponse.
         :type results: list[:class:`huaweicloudsdklts.v2.QuertHistorySQLResultsBody`]

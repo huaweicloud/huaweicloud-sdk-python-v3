@@ -24,7 +24,7 @@ class RegisterAuthorizationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RegisterAuthorizationResponse
+        r"""RegisterAuthorizationResponse
 
         The model defined in huaweicloud sdk
 

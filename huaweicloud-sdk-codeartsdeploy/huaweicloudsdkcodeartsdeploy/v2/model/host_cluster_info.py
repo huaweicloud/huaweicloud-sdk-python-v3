@@ -45,7 +45,7 @@ class HostClusterInfo:
     }
 
     def __init__(self, id=None, host_count=None, name=None, project_id=None, os=None, slave_cluster_id=None, description=None, permission=None, nick_name=None, env_count=None, is_proxy_mode=None):
-        """HostClusterInfo
+        r"""HostClusterInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class HostClusterInfo:
 
     @property
     def id(self):
-        """Gets the id of this HostClusterInfo.
+        r"""Gets the id of this HostClusterInfo.
 
         主机集群id
 
@@ -124,7 +124,7 @@ class HostClusterInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HostClusterInfo.
+        r"""Sets the id of this HostClusterInfo.
 
         主机集群id
 
@@ -135,7 +135,7 @@ class HostClusterInfo:
 
     @property
     def host_count(self):
-        """Gets the host_count of this HostClusterInfo.
+        r"""Gets the host_count of this HostClusterInfo.
 
         集群内主机数量，一个主机集群内最多可添加200台主机
 
@@ -146,7 +146,7 @@ class HostClusterInfo:
 
     @host_count.setter
     def host_count(self, host_count):
-        """Sets the host_count of this HostClusterInfo.
+        r"""Sets the host_count of this HostClusterInfo.
 
         集群内主机数量，一个主机集群内最多可添加200台主机
 
@@ -157,7 +157,7 @@ class HostClusterInfo:
 
     @property
     def name(self):
-        """Gets the name of this HostClusterInfo.
+        r"""Gets the name of this HostClusterInfo.
 
         主机集群名
 
@@ -168,7 +168,7 @@ class HostClusterInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HostClusterInfo.
+        r"""Sets the name of this HostClusterInfo.
 
         主机集群名
 
@@ -179,7 +179,7 @@ class HostClusterInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this HostClusterInfo.
+        r"""Gets the project_id of this HostClusterInfo.
 
         项目id
 
@@ -190,7 +190,7 @@ class HostClusterInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this HostClusterInfo.
+        r"""Sets the project_id of this HostClusterInfo.
 
         项目id
 
@@ -201,7 +201,7 @@ class HostClusterInfo:
 
     @property
     def os(self):
-        """Gets the os of this HostClusterInfo.
+        r"""Gets the os of this HostClusterInfo.
 
         操作系统：windows|linux
 
@@ -212,7 +212,7 @@ class HostClusterInfo:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this HostClusterInfo.
+        r"""Sets the os of this HostClusterInfo.
 
         操作系统：windows|linux
 
@@ -223,7 +223,7 @@ class HostClusterInfo:
 
     @property
     def slave_cluster_id(self):
-        """Gets the slave_cluster_id of this HostClusterInfo.
+        r"""Gets the slave_cluster_id of this HostClusterInfo.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -234,7 +234,7 @@ class HostClusterInfo:
 
     @slave_cluster_id.setter
     def slave_cluster_id(self, slave_cluster_id):
-        """Sets the slave_cluster_id of this HostClusterInfo.
+        r"""Sets the slave_cluster_id of this HostClusterInfo.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -245,7 +245,7 @@ class HostClusterInfo:
 
     @property
     def description(self):
-        """Gets the description of this HostClusterInfo.
+        r"""Gets the description of this HostClusterInfo.
 
         描述
 
@@ -256,7 +256,7 @@ class HostClusterInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this HostClusterInfo.
+        r"""Sets the description of this HostClusterInfo.
 
         描述
 
@@ -267,7 +267,7 @@ class HostClusterInfo:
 
     @property
     def permission(self):
-        """Gets the permission of this HostClusterInfo.
+        r"""Gets the permission of this HostClusterInfo.
 
         :return: The permission of this HostClusterInfo.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionClusterDetail`
@@ -276,7 +276,7 @@ class HostClusterInfo:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this HostClusterInfo.
+        r"""Sets the permission of this HostClusterInfo.
 
         :param permission: The permission of this HostClusterInfo.
         :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionClusterDetail`
@@ -285,7 +285,7 @@ class HostClusterInfo:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this HostClusterInfo.
+        r"""Gets the nick_name of this HostClusterInfo.
 
         创建人名称
 
@@ -296,7 +296,7 @@ class HostClusterInfo:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this HostClusterInfo.
+        r"""Sets the nick_name of this HostClusterInfo.
 
         创建人名称
 
@@ -307,7 +307,7 @@ class HostClusterInfo:
 
     @property
     def env_count(self):
-        """Gets the env_count of this HostClusterInfo.
+        r"""Gets the env_count of this HostClusterInfo.
 
         环境数量
 
@@ -318,7 +318,7 @@ class HostClusterInfo:
 
     @env_count.setter
     def env_count(self, env_count):
-        """Sets the env_count of this HostClusterInfo.
+        r"""Sets the env_count of this HostClusterInfo.
 
         环境数量
 
@@ -329,7 +329,7 @@ class HostClusterInfo:
 
     @property
     def is_proxy_mode(self):
-        """Gets the is_proxy_mode of this HostClusterInfo.
+        r"""Gets the is_proxy_mode of this HostClusterInfo.
 
         主机集群是否为代理机接入模式， 1：是 0：否
 
@@ -340,7 +340,7 @@ class HostClusterInfo:
 
     @is_proxy_mode.setter
     def is_proxy_mode(self, is_proxy_mode):
-        """Sets the is_proxy_mode of this HostClusterInfo.
+        r"""Sets the is_proxy_mode of this HostClusterInfo.
 
         主机集群是否为代理机接入模式， 1：是 0：否
 

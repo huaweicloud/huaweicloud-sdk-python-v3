@@ -27,7 +27,7 @@ class RoutetableInfoError:
     }
 
     def __init__(self, bind_failed=None, unbind_failed=None):
-        """RoutetableInfoError
+        r"""RoutetableInfoError
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RoutetableInfoError:
 
     @property
     def bind_failed(self):
-        """Gets the bind_failed of this RoutetableInfoError.
+        r"""Gets the bind_failed of this RoutetableInfoError.
 
         绑定终端节点子网路由表失败信息。
 
@@ -61,7 +61,7 @@ class RoutetableInfoError:
 
     @bind_failed.setter
     def bind_failed(self, bind_failed):
-        """Sets the bind_failed of this RoutetableInfoError.
+        r"""Sets the bind_failed of this RoutetableInfoError.
 
         绑定终端节点子网路由表失败信息。
 
@@ -72,7 +72,7 @@ class RoutetableInfoError:
 
     @property
     def unbind_failed(self):
-        """Gets the unbind_failed of this RoutetableInfoError.
+        r"""Gets the unbind_failed of this RoutetableInfoError.
 
         解绑终端节点子网路由表失败信息。
 
@@ -83,7 +83,7 @@ class RoutetableInfoError:
 
     @unbind_failed.setter
     def unbind_failed(self, unbind_failed):
-        """Sets the unbind_failed of this RoutetableInfoError.
+        r"""Sets the unbind_failed of this RoutetableInfoError.
 
         解绑终端节点子网路由表失败信息。
 

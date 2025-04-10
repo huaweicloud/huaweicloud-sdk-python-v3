@@ -74,7 +74,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None, host_name=None, ip=None, port=None, os=None, as_proxy=None, proxy_host_id=None, authorization=None, install_icagent=None, host_id=None, proxy_host=None, group_name=None, project_id=None, project_name=None, permission=None, update_time=None, lastest_connection_time=None, connection_status=None, owner_name=None, updator_id=None, create_time=None, nick_name=None, owner_id=None, updator_name=None, connection_result=None):
-        """ShowDeploymentHostDetailResponse
+        r"""ShowDeploymentHostDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -205,7 +205,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowDeploymentHostDetailResponse.
+        r"""Gets the group_id of this ShowDeploymentHostDetailResponse.
 
         主机集群id
 
@@ -216,7 +216,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowDeploymentHostDetailResponse.
+        r"""Sets the group_id of this ShowDeploymentHostDetailResponse.
 
         主机集群id
 
@@ -227,7 +227,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def host_name(self):
-        """Gets the host_name of this ShowDeploymentHostDetailResponse.
+        r"""Gets the host_name of this ShowDeploymentHostDetailResponse.
 
         主机名称
 
@@ -238,7 +238,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ShowDeploymentHostDetailResponse.
+        r"""Sets the host_name of this ShowDeploymentHostDetailResponse.
 
         主机名称
 
@@ -249,7 +249,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def ip(self):
-        """Gets the ip of this ShowDeploymentHostDetailResponse.
+        r"""Gets the ip of this ShowDeploymentHostDetailResponse.
 
         IP，请输入弹性ip格式：161.17.101.12
 
@@ -260,7 +260,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ShowDeploymentHostDetailResponse.
+        r"""Sets the ip of this ShowDeploymentHostDetailResponse.
 
         IP，请输入弹性ip格式：161.17.101.12
 
@@ -271,7 +271,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def port(self):
-        """Gets the port of this ShowDeploymentHostDetailResponse.
+        r"""Gets the port of this ShowDeploymentHostDetailResponse.
 
         ssh端口，如：22
 
@@ -282,7 +282,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ShowDeploymentHostDetailResponse.
+        r"""Sets the port of this ShowDeploymentHostDetailResponse.
 
         ssh端口，如：22
 
@@ -293,7 +293,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def os(self):
-        """Gets the os of this ShowDeploymentHostDetailResponse.
+        r"""Gets the os of this ShowDeploymentHostDetailResponse.
 
         操作系统：windows|linux，需要和主机集群保持一致
 
@@ -304,7 +304,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @os.setter
     def os(self, os):
-        """Sets the os of this ShowDeploymentHostDetailResponse.
+        r"""Sets the os of this ShowDeploymentHostDetailResponse.
 
         操作系统：windows|linux，需要和主机集群保持一致
 
@@ -315,7 +315,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def as_proxy(self):
-        """Gets the as_proxy of this ShowDeploymentHostDetailResponse.
+        r"""Gets the as_proxy of this ShowDeploymentHostDetailResponse.
 
         是否为代理机
 
@@ -326,7 +326,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @as_proxy.setter
     def as_proxy(self, as_proxy):
-        """Sets the as_proxy of this ShowDeploymentHostDetailResponse.
+        r"""Sets the as_proxy of this ShowDeploymentHostDetailResponse.
 
         是否为代理机
 
@@ -337,7 +337,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def proxy_host_id(self):
-        """Gets the proxy_host_id of this ShowDeploymentHostDetailResponse.
+        r"""Gets the proxy_host_id of this ShowDeploymentHostDetailResponse.
 
         代理机id
 
@@ -348,7 +348,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @proxy_host_id.setter
     def proxy_host_id(self, proxy_host_id):
-        """Sets the proxy_host_id of this ShowDeploymentHostDetailResponse.
+        r"""Sets the proxy_host_id of this ShowDeploymentHostDetailResponse.
 
         代理机id
 
@@ -359,7 +359,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def authorization(self):
-        """Gets the authorization of this ShowDeploymentHostDetailResponse.
+        r"""Gets the authorization of this ShowDeploymentHostDetailResponse.
 
         :return: The authorization of this ShowDeploymentHostDetailResponse.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostAuthorizationBody`
@@ -368,7 +368,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this ShowDeploymentHostDetailResponse.
+        r"""Sets the authorization of this ShowDeploymentHostDetailResponse.
 
         :param authorization: The authorization of this ShowDeploymentHostDetailResponse.
         :type authorization: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostAuthorizationBody`
@@ -377,7 +377,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def install_icagent(self):
-        """Gets the install_icagent of this ShowDeploymentHostDetailResponse.
+        r"""Gets the install_icagent of this ShowDeploymentHostDetailResponse.
 
         免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
 
@@ -388,7 +388,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @install_icagent.setter
     def install_icagent(self, install_icagent):
-        """Sets the install_icagent of this ShowDeploymentHostDetailResponse.
+        r"""Sets the install_icagent of this ShowDeploymentHostDetailResponse.
 
         免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
 
@@ -399,7 +399,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def host_id(self):
-        """Gets the host_id of this ShowDeploymentHostDetailResponse.
+        r"""Gets the host_id of this ShowDeploymentHostDetailResponse.
 
         主机id
 
@@ -410,7 +410,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ShowDeploymentHostDetailResponse.
+        r"""Sets the host_id of this ShowDeploymentHostDetailResponse.
 
         主机id
 
@@ -421,7 +421,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def proxy_host(self):
-        """Gets the proxy_host of this ShowDeploymentHostDetailResponse.
+        r"""Gets the proxy_host of this ShowDeploymentHostDetailResponse.
 
         :return: The proxy_host of this ShowDeploymentHostDetailResponse.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostDetail`
@@ -430,7 +430,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @proxy_host.setter
     def proxy_host(self, proxy_host):
-        """Sets the proxy_host of this ShowDeploymentHostDetailResponse.
+        r"""Sets the proxy_host of this ShowDeploymentHostDetailResponse.
 
         :param proxy_host: The proxy_host of this ShowDeploymentHostDetailResponse.
         :type proxy_host: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostDetail`
@@ -439,7 +439,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def group_name(self):
-        """Gets the group_name of this ShowDeploymentHostDetailResponse.
+        r"""Gets the group_name of this ShowDeploymentHostDetailResponse.
 
         主机集群名
 
@@ -450,7 +450,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ShowDeploymentHostDetailResponse.
+        r"""Sets the group_name of this ShowDeploymentHostDetailResponse.
 
         主机集群名
 
@@ -461,7 +461,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowDeploymentHostDetailResponse.
+        r"""Gets the project_id of this ShowDeploymentHostDetailResponse.
 
         项目id
 
@@ -472,7 +472,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowDeploymentHostDetailResponse.
+        r"""Sets the project_id of this ShowDeploymentHostDetailResponse.
 
         项目id
 
@@ -483,7 +483,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def project_name(self):
-        """Gets the project_name of this ShowDeploymentHostDetailResponse.
+        r"""Gets the project_name of this ShowDeploymentHostDetailResponse.
 
         项目名称
 
@@ -494,7 +494,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ShowDeploymentHostDetailResponse.
+        r"""Sets the project_name of this ShowDeploymentHostDetailResponse.
 
         项目名称
 
@@ -505,7 +505,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def permission(self):
-        """Gets the permission of this ShowDeploymentHostDetailResponse.
+        r"""Gets the permission of this ShowDeploymentHostDetailResponse.
 
         :return: The permission of this ShowDeploymentHostDetailResponse.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetail`
@@ -514,7 +514,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this ShowDeploymentHostDetailResponse.
+        r"""Sets the permission of this ShowDeploymentHostDetailResponse.
 
         :param permission: The permission of this ShowDeploymentHostDetailResponse.
         :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionHostDetail`
@@ -523,7 +523,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowDeploymentHostDetailResponse.
+        r"""Gets the update_time of this ShowDeploymentHostDetailResponse.
 
         更新时间
 
@@ -534,7 +534,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowDeploymentHostDetailResponse.
+        r"""Sets the update_time of this ShowDeploymentHostDetailResponse.
 
         更新时间
 
@@ -545,7 +545,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def lastest_connection_time(self):
-        """Gets the lastest_connection_time of this ShowDeploymentHostDetailResponse.
+        r"""Gets the lastest_connection_time of this ShowDeploymentHostDetailResponse.
 
         最后连接时间
 
@@ -556,7 +556,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @lastest_connection_time.setter
     def lastest_connection_time(self, lastest_connection_time):
-        """Sets the lastest_connection_time of this ShowDeploymentHostDetailResponse.
+        r"""Sets the lastest_connection_time of this ShowDeploymentHostDetailResponse.
 
         最后连接时间
 
@@ -567,7 +567,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def connection_status(self):
-        """Gets the connection_status of this ShowDeploymentHostDetailResponse.
+        r"""Gets the connection_status of this ShowDeploymentHostDetailResponse.
 
         连接状态
 
@@ -578,7 +578,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @connection_status.setter
     def connection_status(self, connection_status):
-        """Sets the connection_status of this ShowDeploymentHostDetailResponse.
+        r"""Sets the connection_status of this ShowDeploymentHostDetailResponse.
 
         连接状态
 
@@ -589,7 +589,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this ShowDeploymentHostDetailResponse.
+        r"""Gets the owner_name of this ShowDeploymentHostDetailResponse.
 
         拥有者名称
 
@@ -600,7 +600,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this ShowDeploymentHostDetailResponse.
+        r"""Sets the owner_name of this ShowDeploymentHostDetailResponse.
 
         拥有者名称
 
@@ -611,7 +611,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def updator_id(self):
-        """Gets the updator_id of this ShowDeploymentHostDetailResponse.
+        r"""Gets the updator_id of this ShowDeploymentHostDetailResponse.
 
         维护者id
 
@@ -622,7 +622,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @updator_id.setter
     def updator_id(self, updator_id):
-        """Sets the updator_id of this ShowDeploymentHostDetailResponse.
+        r"""Sets the updator_id of this ShowDeploymentHostDetailResponse.
 
         维护者id
 
@@ -633,7 +633,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowDeploymentHostDetailResponse.
+        r"""Gets the create_time of this ShowDeploymentHostDetailResponse.
 
         创建时间
 
@@ -644,7 +644,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowDeploymentHostDetailResponse.
+        r"""Sets the create_time of this ShowDeploymentHostDetailResponse.
 
         创建时间
 
@@ -655,7 +655,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this ShowDeploymentHostDetailResponse.
+        r"""Gets the nick_name of this ShowDeploymentHostDetailResponse.
 
         昵称
 
@@ -666,7 +666,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this ShowDeploymentHostDetailResponse.
+        r"""Sets the nick_name of this ShowDeploymentHostDetailResponse.
 
         昵称
 
@@ -677,7 +677,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this ShowDeploymentHostDetailResponse.
+        r"""Gets the owner_id of this ShowDeploymentHostDetailResponse.
 
         拥有者id
 
@@ -688,7 +688,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this ShowDeploymentHostDetailResponse.
+        r"""Sets the owner_id of this ShowDeploymentHostDetailResponse.
 
         拥有者id
 
@@ -699,7 +699,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def updator_name(self):
-        """Gets the updator_name of this ShowDeploymentHostDetailResponse.
+        r"""Gets the updator_name of this ShowDeploymentHostDetailResponse.
 
         维护者名称
 
@@ -710,7 +710,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @updator_name.setter
     def updator_name(self, updator_name):
-        """Sets the updator_name of this ShowDeploymentHostDetailResponse.
+        r"""Sets the updator_name of this ShowDeploymentHostDetailResponse.
 
         维护者名称
 
@@ -721,7 +721,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @property
     def connection_result(self):
-        """Gets the connection_result of this ShowDeploymentHostDetailResponse.
+        r"""Gets the connection_result of this ShowDeploymentHostDetailResponse.
 
         连接结果
 
@@ -732,7 +732,7 @@ class ShowDeploymentHostDetailResponse(SdkResponse):
 
     @connection_result.setter
     def connection_result(self, connection_result):
-        """Sets the connection_result of this ShowDeploymentHostDetailResponse.
+        r"""Sets the connection_result of this ShowDeploymentHostDetailResponse.
 
         连接结果
 

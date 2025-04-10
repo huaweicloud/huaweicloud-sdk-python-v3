@@ -24,7 +24,7 @@ class UpdateDomainResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateDomainResponse
+        r"""UpdateDomainResponse
 
         The model defined in huaweicloud sdk
 

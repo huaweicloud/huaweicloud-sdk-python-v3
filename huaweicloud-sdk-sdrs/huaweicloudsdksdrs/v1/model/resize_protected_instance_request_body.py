@@ -25,7 +25,7 @@ class ResizeProtectedInstanceRequestBody:
     }
 
     def __init__(self, resize=None):
-        """ResizeProtectedInstanceRequestBody
+        r"""ResizeProtectedInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ResizeProtectedInstanceRequestBody:
 
     @property
     def resize(self):
-        """Gets the resize of this ResizeProtectedInstanceRequestBody.
+        r"""Gets the resize of this ResizeProtectedInstanceRequestBody.
 
         :return: The resize of this ResizeProtectedInstanceRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.ResizeProtectedInstanceRequestParams`
@@ -51,7 +51,7 @@ class ResizeProtectedInstanceRequestBody:
 
     @resize.setter
     def resize(self, resize):
-        """Sets the resize of this ResizeProtectedInstanceRequestBody.
+        r"""Sets the resize of this ResizeProtectedInstanceRequestBody.
 
         :param resize: The resize of this ResizeProtectedInstanceRequestBody.
         :type resize: :class:`huaweicloudsdksdrs.v1.ResizeProtectedInstanceRequestParams`

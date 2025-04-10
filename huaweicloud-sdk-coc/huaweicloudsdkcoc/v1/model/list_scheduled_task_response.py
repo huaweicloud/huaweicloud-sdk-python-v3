@@ -30,7 +30,7 @@ class ListScheduledTaskResponse(SdkResponse):
     }
 
     def __init__(self, count=None, next_maker=None, scheduled_tasks=None):
-        """ListScheduledTaskResponse
+        r"""ListScheduledTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListScheduledTaskResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListScheduledTaskResponse.
+        r"""Gets the count of this ListScheduledTaskResponse.
 
         定时运维总数量
 
@@ -69,7 +69,7 @@ class ListScheduledTaskResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListScheduledTaskResponse.
+        r"""Sets the count of this ListScheduledTaskResponse.
 
         定时运维总数量
 
@@ -80,7 +80,7 @@ class ListScheduledTaskResponse(SdkResponse):
 
     @property
     def next_maker(self):
-        """Gets the next_maker of this ListScheduledTaskResponse.
+        r"""Gets the next_maker of this ListScheduledTaskResponse.
 
         下次起始点
 
@@ -91,7 +91,7 @@ class ListScheduledTaskResponse(SdkResponse):
 
     @next_maker.setter
     def next_maker(self, next_maker):
-        """Sets the next_maker of this ListScheduledTaskResponse.
+        r"""Sets the next_maker of this ListScheduledTaskResponse.
 
         下次起始点
 
@@ -102,7 +102,7 @@ class ListScheduledTaskResponse(SdkResponse):
 
     @property
     def scheduled_tasks(self):
-        """Gets the scheduled_tasks of this ListScheduledTaskResponse.
+        r"""Gets the scheduled_tasks of this ListScheduledTaskResponse.
 
         定时运维列表
 
@@ -113,7 +113,7 @@ class ListScheduledTaskResponse(SdkResponse):
 
     @scheduled_tasks.setter
     def scheduled_tasks(self, scheduled_tasks):
-        """Sets the scheduled_tasks of this ListScheduledTaskResponse.
+        r"""Sets the scheduled_tasks of this ListScheduledTaskResponse.
 
         定时运维列表
 

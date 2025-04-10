@@ -24,7 +24,7 @@ class DeleteCheckpointResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteCheckpointResponse
+        r"""DeleteCheckpointResponse
 
         The model defined in huaweicloud sdk
 

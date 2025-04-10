@@ -26,7 +26,7 @@ class DeleteServiceLinkedAgencyV5Response(SdkResponse):
     }
 
     def __init__(self, deletion_task_id=None):
-        """DeleteServiceLinkedAgencyV5Response
+        r"""DeleteServiceLinkedAgencyV5Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteServiceLinkedAgencyV5Response(SdkResponse):
 
     @property
     def deletion_task_id(self):
-        """Gets the deletion_task_id of this DeleteServiceLinkedAgencyV5Response.
+        r"""Gets the deletion_task_id of this DeleteServiceLinkedAgencyV5Response.
 
         删除任务ID。
 
@@ -55,7 +55,7 @@ class DeleteServiceLinkedAgencyV5Response(SdkResponse):
 
     @deletion_task_id.setter
     def deletion_task_id(self, deletion_task_id):
-        """Sets the deletion_task_id of this DeleteServiceLinkedAgencyV5Response.
+        r"""Sets the deletion_task_id of this DeleteServiceLinkedAgencyV5Response.
 
         删除任务ID。
 

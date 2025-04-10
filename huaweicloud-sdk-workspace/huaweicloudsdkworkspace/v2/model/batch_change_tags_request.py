@@ -27,7 +27,7 @@ class BatchChangeTagsRequest:
     }
 
     def __init__(self, desktop_id=None, body=None):
-        """BatchChangeTagsRequest
+        r"""BatchChangeTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchChangeTagsRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this BatchChangeTagsRequest.
+        r"""Gets the desktop_id of this BatchChangeTagsRequest.
 
         桌面id。
 
@@ -60,7 +60,7 @@ class BatchChangeTagsRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this BatchChangeTagsRequest.
+        r"""Sets the desktop_id of this BatchChangeTagsRequest.
 
         桌面id。
 
@@ -71,7 +71,7 @@ class BatchChangeTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchChangeTagsRequest.
+        r"""Gets the body of this BatchChangeTagsRequest.
 
         :return: The body of this BatchChangeTagsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.TagsReq`
@@ -80,7 +80,7 @@ class BatchChangeTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchChangeTagsRequest.
+        r"""Sets the body of this BatchChangeTagsRequest.
 
         :param body: The body of this BatchChangeTagsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.TagsReq`

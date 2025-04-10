@@ -26,7 +26,7 @@ class ComponentSnapshotKindObj:
     }
 
     def __init__(self):
-        """ComponentSnapshotKindObj
+        r"""ComponentSnapshotKindObj
 
         The model defined in huaweicloud sdk
 

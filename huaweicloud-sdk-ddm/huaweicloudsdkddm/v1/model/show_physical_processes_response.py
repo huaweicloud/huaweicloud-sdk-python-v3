@@ -28,7 +28,7 @@ class ShowPhysicalProcessesResponse(SdkResponse):
     }
 
     def __init__(self, physical_processes=None, total_count=None):
-        """ShowPhysicalProcessesResponse
+        r"""ShowPhysicalProcessesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPhysicalProcessesResponse(SdkResponse):
 
     @property
     def physical_processes(self):
-        """Gets the physical_processes of this ShowPhysicalProcessesResponse.
+        r"""Gets the physical_processes of this ShowPhysicalProcessesResponse.
 
         物理会话信息列表
 
@@ -62,7 +62,7 @@ class ShowPhysicalProcessesResponse(SdkResponse):
 
     @physical_processes.setter
     def physical_processes(self, physical_processes):
-        """Sets the physical_processes of this ShowPhysicalProcessesResponse.
+        r"""Sets the physical_processes of this ShowPhysicalProcessesResponse.
 
         物理会话信息列表
 
@@ -73,7 +73,7 @@ class ShowPhysicalProcessesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowPhysicalProcessesResponse.
+        r"""Gets the total_count of this ShowPhysicalProcessesResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ShowPhysicalProcessesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowPhysicalProcessesResponse.
+        r"""Sets the total_count of this ShowPhysicalProcessesResponse.
 
         总数
 

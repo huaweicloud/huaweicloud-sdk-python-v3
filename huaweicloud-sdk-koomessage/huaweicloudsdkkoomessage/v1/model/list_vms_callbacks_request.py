@@ -23,7 +23,7 @@ class ListVmsCallbacksRequest:
     }
 
     def __init__(self):
-        """ListVmsCallbacksRequest
+        r"""ListVmsCallbacksRequest
 
         The model defined in huaweicloud sdk
 

@@ -31,7 +31,7 @@ class LoginProfile:
     }
 
     def __init__(self, user_id=None, password_reset_required=None, password_expires_at=None, created_at=None):
-        """LoginProfile
+        r"""LoginProfile
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class LoginProfile:
 
     @property
     def user_id(self):
-        """Gets the user_id of this LoginProfile.
+        r"""Gets the user_id of this LoginProfile.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -72,7 +72,7 @@ class LoginProfile:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this LoginProfile.
+        r"""Sets the user_id of this LoginProfile.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -83,7 +83,7 @@ class LoginProfile:
 
     @property
     def password_reset_required(self):
-        """Gets the password_reset_required of this LoginProfile.
+        r"""Gets the password_reset_required of this LoginProfile.
 
         IAM用户下次登录时是否需要修改密码。
 
@@ -94,7 +94,7 @@ class LoginProfile:
 
     @password_reset_required.setter
     def password_reset_required(self, password_reset_required):
-        """Sets the password_reset_required of this LoginProfile.
+        r"""Sets the password_reset_required of this LoginProfile.
 
         IAM用户下次登录时是否需要修改密码。
 
@@ -105,7 +105,7 @@ class LoginProfile:
 
     @property
     def password_expires_at(self):
-        """Gets the password_expires_at of this LoginProfile.
+        r"""Gets the password_expires_at of this LoginProfile.
 
         IAM用户密码过期时间。
 
@@ -116,7 +116,7 @@ class LoginProfile:
 
     @password_expires_at.setter
     def password_expires_at(self, password_expires_at):
-        """Sets the password_expires_at of this LoginProfile.
+        r"""Sets the password_expires_at of this LoginProfile.
 
         IAM用户密码过期时间。
 
@@ -127,7 +127,7 @@ class LoginProfile:
 
     @property
     def created_at(self):
-        """Gets the created_at of this LoginProfile.
+        r"""Gets the created_at of this LoginProfile.
 
         IAM用户登录信息创建时间。
 
@@ -138,7 +138,7 @@ class LoginProfile:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this LoginProfile.
+        r"""Sets the created_at of this LoginProfile.
 
         IAM用户登录信息创建时间。
 

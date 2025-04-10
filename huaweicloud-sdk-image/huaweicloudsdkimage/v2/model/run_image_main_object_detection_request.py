@@ -25,7 +25,7 @@ class RunImageMainObjectDetectionRequest:
     }
 
     def __init__(self, body=None):
-        """RunImageMainObjectDetectionRequest
+        r"""RunImageMainObjectDetectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunImageMainObjectDetectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunImageMainObjectDetectionRequest.
+        r"""Gets the body of this RunImageMainObjectDetectionRequest.
 
         :return: The body of this RunImageMainObjectDetectionRequest.
         :rtype: :class:`huaweicloudsdkimage.v2.ImageMainObjectDetectionReq`
@@ -52,7 +52,7 @@ class RunImageMainObjectDetectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunImageMainObjectDetectionRequest.
+        r"""Sets the body of this RunImageMainObjectDetectionRequest.
 
         :param body: The body of this RunImageMainObjectDetectionRequest.
         :type body: :class:`huaweicloudsdkimage.v2.ImageMainObjectDetectionReq`

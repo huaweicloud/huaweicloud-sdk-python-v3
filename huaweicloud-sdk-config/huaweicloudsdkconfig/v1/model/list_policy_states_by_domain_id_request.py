@@ -33,7 +33,7 @@ class ListPolicyStatesByDomainIdRequest:
     }
 
     def __init__(self, compliance_state=None, resource_id=None, resource_name=None, limit=None, marker=None):
-        """ListPolicyStatesByDomainIdRequest
+        r"""ListPolicyStatesByDomainIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListPolicyStatesByDomainIdRequest:
 
     @property
     def compliance_state(self):
-        """Gets the compliance_state of this ListPolicyStatesByDomainIdRequest.
+        r"""Gets the compliance_state of this ListPolicyStatesByDomainIdRequest.
 
         合规状态
 
@@ -82,7 +82,7 @@ class ListPolicyStatesByDomainIdRequest:
 
     @compliance_state.setter
     def compliance_state(self, compliance_state):
-        """Sets the compliance_state of this ListPolicyStatesByDomainIdRequest.
+        r"""Sets the compliance_state of this ListPolicyStatesByDomainIdRequest.
 
         合规状态
 
@@ -93,7 +93,7 @@ class ListPolicyStatesByDomainIdRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListPolicyStatesByDomainIdRequest.
+        r"""Gets the resource_id of this ListPolicyStatesByDomainIdRequest.
 
         资源ID
 
@@ -104,7 +104,7 @@ class ListPolicyStatesByDomainIdRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListPolicyStatesByDomainIdRequest.
+        r"""Sets the resource_id of this ListPolicyStatesByDomainIdRequest.
 
         资源ID
 
@@ -115,7 +115,7 @@ class ListPolicyStatesByDomainIdRequest:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ListPolicyStatesByDomainIdRequest.
+        r"""Gets the resource_name of this ListPolicyStatesByDomainIdRequest.
 
         资源名称
 
@@ -126,7 +126,7 @@ class ListPolicyStatesByDomainIdRequest:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ListPolicyStatesByDomainIdRequest.
+        r"""Sets the resource_name of this ListPolicyStatesByDomainIdRequest.
 
         资源名称
 
@@ -137,7 +137,7 @@ class ListPolicyStatesByDomainIdRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPolicyStatesByDomainIdRequest.
+        r"""Gets the limit of this ListPolicyStatesByDomainIdRequest.
 
         最大的返回数量
 
@@ -148,7 +148,7 @@ class ListPolicyStatesByDomainIdRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPolicyStatesByDomainIdRequest.
+        r"""Sets the limit of this ListPolicyStatesByDomainIdRequest.
 
         最大的返回数量
 
@@ -159,7 +159,7 @@ class ListPolicyStatesByDomainIdRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPolicyStatesByDomainIdRequest.
+        r"""Gets the marker of this ListPolicyStatesByDomainIdRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -170,7 +170,7 @@ class ListPolicyStatesByDomainIdRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPolicyStatesByDomainIdRequest.
+        r"""Sets the marker of this ListPolicyStatesByDomainIdRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 

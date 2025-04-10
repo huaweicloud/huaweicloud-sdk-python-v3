@@ -32,7 +32,7 @@ class ExecuteTextCompletionResponse(SdkResponse):
     }
 
     def __init__(self, id=None, created=None, choices=None, usage=None):
-        """ExecuteTextCompletionResponse
+        r"""ExecuteTextCompletionResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ExecuteTextCompletionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ExecuteTextCompletionResponse.
+        r"""Gets the id of this ExecuteTextCompletionResponse.
 
         响应ID
 
@@ -76,7 +76,7 @@ class ExecuteTextCompletionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExecuteTextCompletionResponse.
+        r"""Sets the id of this ExecuteTextCompletionResponse.
 
         响应ID
 
@@ -87,7 +87,7 @@ class ExecuteTextCompletionResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this ExecuteTextCompletionResponse.
+        r"""Gets the created of this ExecuteTextCompletionResponse.
 
         响应时间
 
@@ -98,7 +98,7 @@ class ExecuteTextCompletionResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ExecuteTextCompletionResponse.
+        r"""Sets the created of this ExecuteTextCompletionResponse.
 
         响应时间
 
@@ -109,7 +109,7 @@ class ExecuteTextCompletionResponse(SdkResponse):
 
     @property
     def choices(self):
-        """Gets the choices of this ExecuteTextCompletionResponse.
+        r"""Gets the choices of this ExecuteTextCompletionResponse.
 
         模型回复
 
@@ -120,7 +120,7 @@ class ExecuteTextCompletionResponse(SdkResponse):
 
     @choices.setter
     def choices(self, choices):
-        """Sets the choices of this ExecuteTextCompletionResponse.
+        r"""Sets the choices of this ExecuteTextCompletionResponse.
 
         模型回复
 
@@ -131,7 +131,7 @@ class ExecuteTextCompletionResponse(SdkResponse):
 
     @property
     def usage(self):
-        """Gets the usage of this ExecuteTextCompletionResponse.
+        r"""Gets the usage of this ExecuteTextCompletionResponse.
 
         :return: The usage of this ExecuteTextCompletionResponse.
         :rtype: :class:`huaweicloudsdkpangulargemodels.v2.CompletionUsage`
@@ -140,7 +140,7 @@ class ExecuteTextCompletionResponse(SdkResponse):
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this ExecuteTextCompletionResponse.
+        r"""Sets the usage of this ExecuteTextCompletionResponse.
 
         :param usage: The usage of this ExecuteTextCompletionResponse.
         :type usage: :class:`huaweicloudsdkpangulargemodels.v2.CompletionUsage`

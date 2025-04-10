@@ -31,7 +31,7 @@ class NodeInfo:
     }
 
     def __init__(self, uid=None, name=None, status=None, node_type=None):
-        """NodeInfo
+        r"""NodeInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class NodeInfo:
 
     @property
     def uid(self):
-        """Gets the uid of this NodeInfo.
+        r"""Gets the uid of this NodeInfo.
 
         节点UID
 
@@ -75,7 +75,7 @@ class NodeInfo:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this NodeInfo.
+        r"""Sets the uid of this NodeInfo.
 
         节点UID
 
@@ -86,7 +86,7 @@ class NodeInfo:
 
     @property
     def name(self):
-        """Gets the name of this NodeInfo.
+        r"""Gets the name of this NodeInfo.
 
         节点名称
 
@@ -97,7 +97,7 @@ class NodeInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NodeInfo.
+        r"""Sets the name of this NodeInfo.
 
         节点名称
 
@@ -108,7 +108,7 @@ class NodeInfo:
 
     @property
     def status(self):
-        """Gets the status of this NodeInfo.
+        r"""Gets the status of this NodeInfo.
 
         状态
 
@@ -119,7 +119,7 @@ class NodeInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NodeInfo.
+        r"""Sets the status of this NodeInfo.
 
         状态
 
@@ -130,7 +130,7 @@ class NodeInfo:
 
     @property
     def node_type(self):
-        """Gets the node_type of this NodeInfo.
+        r"""Gets the node_type of this NodeInfo.
 
         节点类型
 
@@ -141,7 +141,7 @@ class NodeInfo:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this NodeInfo.
+        r"""Sets the node_type of this NodeInfo.
 
         节点类型
 

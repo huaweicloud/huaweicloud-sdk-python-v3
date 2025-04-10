@@ -33,7 +33,7 @@ class CronConfig:
     }
 
     def __init__(self, name=None, cron=None, count=None, start_time=None, expired_time=None):
-        """CronConfig
+        r"""CronConfig
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CronConfig:
 
     @property
     def name(self):
-        """Gets the name of this CronConfig.
+        r"""Gets the name of this CronConfig.
 
         定时配置名称
 
@@ -82,7 +82,7 @@ class CronConfig:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CronConfig.
+        r"""Sets the name of this CronConfig.
 
         定时配置名称
 
@@ -93,7 +93,7 @@ class CronConfig:
 
     @property
     def cron(self):
-        """Gets the cron of this CronConfig.
+        r"""Gets the cron of this CronConfig.
 
         定时表达式
 
@@ -104,7 +104,7 @@ class CronConfig:
 
     @cron.setter
     def cron(self, cron):
-        """Sets the cron of this CronConfig.
+        r"""Sets the cron of this CronConfig.
 
         定时表达式
 
@@ -115,7 +115,7 @@ class CronConfig:
 
     @property
     def count(self):
-        """Gets the count of this CronConfig.
+        r"""Gets the count of this CronConfig.
 
         拉起预留实例个数
 
@@ -126,7 +126,7 @@ class CronConfig:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CronConfig.
+        r"""Sets the count of this CronConfig.
 
         拉起预留实例个数
 
@@ -137,7 +137,7 @@ class CronConfig:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CronConfig.
+        r"""Gets the start_time of this CronConfig.
 
         开始时间戳
 
@@ -148,7 +148,7 @@ class CronConfig:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CronConfig.
+        r"""Sets the start_time of this CronConfig.
 
         开始时间戳
 
@@ -159,7 +159,7 @@ class CronConfig:
 
     @property
     def expired_time(self):
-        """Gets the expired_time of this CronConfig.
+        r"""Gets the expired_time of this CronConfig.
 
         失效时间戳
 
@@ -170,7 +170,7 @@ class CronConfig:
 
     @expired_time.setter
     def expired_time(self, expired_time):
-        """Sets the expired_time of this CronConfig.
+        r"""Sets the expired_time of this CronConfig.
 
         失效时间戳
 

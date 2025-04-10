@@ -27,7 +27,7 @@ class DeleteTaskRecordRequest:
     }
 
     def __init__(self, x_language=None, job_id=None):
-        """DeleteTaskRecordRequest
+        r"""DeleteTaskRecordRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteTaskRecordRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteTaskRecordRequest.
+        r"""Gets the x_language of this DeleteTaskRecordRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class DeleteTaskRecordRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteTaskRecordRequest.
+        r"""Sets the x_language of this DeleteTaskRecordRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class DeleteTaskRecordRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteTaskRecordRequest.
+        r"""Gets the job_id of this DeleteTaskRecordRequest.
 
         任务ID。
 
@@ -82,7 +82,7 @@ class DeleteTaskRecordRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteTaskRecordRequest.
+        r"""Sets the job_id of this DeleteTaskRecordRequest.
 
         任务ID。
 

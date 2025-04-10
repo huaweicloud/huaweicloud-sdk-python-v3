@@ -23,7 +23,7 @@ class UpdateBandwidthResp:
     }
 
     def __init__(self):
-        """UpdateBandwidthResp
+        r"""UpdateBandwidthResp
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class DatabaseDnInstances:
     }
 
     def __init__(self, id=None, user_name=None, user_password=None):
-        """DatabaseDnInstances
+        r"""DatabaseDnInstances
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DatabaseDnInstances:
 
     @property
     def id(self):
-        """Gets the id of this DatabaseDnInstances.
+        r"""Gets the id of this DatabaseDnInstances.
 
         逻辑库关联的DN实例的id
 
@@ -65,7 +65,7 @@ class DatabaseDnInstances:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DatabaseDnInstances.
+        r"""Sets the id of this DatabaseDnInstances.
 
         逻辑库关联的DN实例的id
 
@@ -76,7 +76,7 @@ class DatabaseDnInstances:
 
     @property
     def user_name(self):
-        """Gets the user_name of this DatabaseDnInstances.
+        r"""Gets the user_name of this DatabaseDnInstances.
 
         关联DN实例的用户名。
 
@@ -87,7 +87,7 @@ class DatabaseDnInstances:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this DatabaseDnInstances.
+        r"""Sets the user_name of this DatabaseDnInstances.
 
         关联DN实例的用户名。
 
@@ -98,7 +98,7 @@ class DatabaseDnInstances:
 
     @property
     def user_password(self):
-        """Gets the user_password of this DatabaseDnInstances.
+        r"""Gets the user_password of this DatabaseDnInstances.
 
         关联DN实例的用户密码。
 
@@ -109,7 +109,7 @@ class DatabaseDnInstances:
 
     @user_password.setter
     def user_password(self, user_password):
-        """Sets the user_password of this DatabaseDnInstances.
+        r"""Sets the user_password of this DatabaseDnInstances.
 
         关联DN实例的用户密码。
 

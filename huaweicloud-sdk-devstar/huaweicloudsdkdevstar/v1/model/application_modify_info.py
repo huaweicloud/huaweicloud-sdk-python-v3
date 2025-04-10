@@ -29,7 +29,7 @@ class ApplicationModifyInfo:
     }
 
     def __init__(self, name=None, description=None, icon=None):
-        """ApplicationModifyInfo
+        r"""ApplicationModifyInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ApplicationModifyInfo:
 
     @property
     def name(self):
-        """Gets the name of this ApplicationModifyInfo.
+        r"""Gets the name of this ApplicationModifyInfo.
 
         应用名称
 
@@ -68,7 +68,7 @@ class ApplicationModifyInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicationModifyInfo.
+        r"""Sets the name of this ApplicationModifyInfo.
 
         应用名称
 
@@ -79,7 +79,7 @@ class ApplicationModifyInfo:
 
     @property
     def description(self):
-        """Gets the description of this ApplicationModifyInfo.
+        r"""Gets the description of this ApplicationModifyInfo.
 
         应用描述
 
@@ -90,7 +90,7 @@ class ApplicationModifyInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApplicationModifyInfo.
+        r"""Sets the description of this ApplicationModifyInfo.
 
         应用描述
 
@@ -101,7 +101,7 @@ class ApplicationModifyInfo:
 
     @property
     def icon(self):
-        """Gets the icon of this ApplicationModifyInfo.
+        r"""Gets the icon of this ApplicationModifyInfo.
 
         应用图标(传入图片的Base64编码,大小限制15k)
 
@@ -112,7 +112,7 @@ class ApplicationModifyInfo:
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this ApplicationModifyInfo.
+        r"""Sets the icon of this ApplicationModifyInfo.
 
         应用图标(传入图片的Base64编码,大小限制15k)
 

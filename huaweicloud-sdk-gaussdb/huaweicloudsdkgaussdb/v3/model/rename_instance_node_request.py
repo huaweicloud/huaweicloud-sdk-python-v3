@@ -29,7 +29,7 @@ class RenameInstanceNodeRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """RenameInstanceNodeRequest
+        r"""RenameInstanceNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RenameInstanceNodeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RenameInstanceNodeRequest.
+        r"""Gets the x_language of this RenameInstanceNodeRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class RenameInstanceNodeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RenameInstanceNodeRequest.
+        r"""Sets the x_language of this RenameInstanceNodeRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class RenameInstanceNodeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RenameInstanceNodeRequest.
+        r"""Gets the instance_id of this RenameInstanceNodeRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class RenameInstanceNodeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RenameInstanceNodeRequest.
+        r"""Sets the instance_id of this RenameInstanceNodeRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class RenameInstanceNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this RenameInstanceNodeRequest.
+        r"""Gets the body of this RenameInstanceNodeRequest.
 
         :return: The body of this RenameInstanceNodeRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.RenameInstanceNodeRequestBody`
@@ -109,7 +109,7 @@ class RenameInstanceNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RenameInstanceNodeRequest.
+        r"""Sets the body of this RenameInstanceNodeRequest.
 
         :param body: The body of this RenameInstanceNodeRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.RenameInstanceNodeRequestBody`

@@ -27,7 +27,7 @@ class UpdatePoolRequest:
     }
 
     def __init__(self, pool_id=None, body=None):
-        """UpdatePoolRequest
+        r"""UpdatePoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePoolRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this UpdatePoolRequest.
+        r"""Gets the pool_id of this UpdatePoolRequest.
 
         后端云服务器组id
 
@@ -60,7 +60,7 @@ class UpdatePoolRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this UpdatePoolRequest.
+        r"""Sets the pool_id of this UpdatePoolRequest.
 
         后端云服务器组id
 
@@ -71,7 +71,7 @@ class UpdatePoolRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePoolRequest.
+        r"""Gets the body of this UpdatePoolRequest.
 
         :return: The body of this UpdatePoolRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.UpdatePoolRequestBody`
@@ -80,7 +80,7 @@ class UpdatePoolRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePoolRequest.
+        r"""Sets the body of this UpdatePoolRequest.
 
         :param body: The body of this UpdatePoolRequest.
         :type body: :class:`huaweicloudsdkelb.v2.UpdatePoolRequestBody`

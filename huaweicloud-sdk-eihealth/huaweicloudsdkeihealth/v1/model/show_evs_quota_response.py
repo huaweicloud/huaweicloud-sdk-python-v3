@@ -30,7 +30,7 @@ class ShowEvsQuotaResponse(SdkResponse):
     }
 
     def __init__(self, total=None, usage=None, unit=None):
-        """ShowEvsQuotaResponse
+        r"""ShowEvsQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowEvsQuotaResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowEvsQuotaResponse.
+        r"""Gets the total of this ShowEvsQuotaResponse.
 
         总配额
 
@@ -69,7 +69,7 @@ class ShowEvsQuotaResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowEvsQuotaResponse.
+        r"""Sets the total of this ShowEvsQuotaResponse.
 
         总配额
 
@@ -80,7 +80,7 @@ class ShowEvsQuotaResponse(SdkResponse):
 
     @property
     def usage(self):
-        """Gets the usage of this ShowEvsQuotaResponse.
+        r"""Gets the usage of this ShowEvsQuotaResponse.
 
         已使用
 
@@ -91,7 +91,7 @@ class ShowEvsQuotaResponse(SdkResponse):
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this ShowEvsQuotaResponse.
+        r"""Sets the usage of this ShowEvsQuotaResponse.
 
         已使用
 
@@ -102,7 +102,7 @@ class ShowEvsQuotaResponse(SdkResponse):
 
     @property
     def unit(self):
-        """Gets the unit of this ShowEvsQuotaResponse.
+        r"""Gets the unit of this ShowEvsQuotaResponse.
 
         单位
 
@@ -113,7 +113,7 @@ class ShowEvsQuotaResponse(SdkResponse):
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ShowEvsQuotaResponse.
+        r"""Sets the unit of this ShowEvsQuotaResponse.
 
         单位
 

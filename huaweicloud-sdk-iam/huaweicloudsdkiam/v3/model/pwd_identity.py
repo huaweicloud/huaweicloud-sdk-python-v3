@@ -27,7 +27,7 @@ class PwdIdentity:
     }
 
     def __init__(self, methods=None, password=None):
-        """PwdIdentity
+        r"""PwdIdentity
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PwdIdentity:
 
     @property
     def methods(self):
-        """Gets the methods of this PwdIdentity.
+        r"""Gets the methods of this PwdIdentity.
 
         认证方法，该字段内容为[\"password\"]。
 
@@ -59,7 +59,7 @@ class PwdIdentity:
 
     @methods.setter
     def methods(self, methods):
-        """Sets the methods of this PwdIdentity.
+        r"""Sets the methods of this PwdIdentity.
 
         认证方法，该字段内容为[\"password\"]。
 
@@ -70,7 +70,7 @@ class PwdIdentity:
 
     @property
     def password(self):
-        """Gets the password of this PwdIdentity.
+        r"""Gets the password of this PwdIdentity.
 
         :return: The password of this PwdIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.PwdPassword`
@@ -79,7 +79,7 @@ class PwdIdentity:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this PwdIdentity.
+        r"""Sets the password of this PwdIdentity.
 
         :param password: The password of this PwdIdentity.
         :type password: :class:`huaweicloudsdkiam.v3.PwdPassword`

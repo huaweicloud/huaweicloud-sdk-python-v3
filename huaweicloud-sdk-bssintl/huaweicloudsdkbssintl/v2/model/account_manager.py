@@ -25,7 +25,7 @@ class AccountManager:
     }
 
     def __init__(self, account_name=None):
-        """AccountManager
+        r"""AccountManager
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AccountManager:
 
     @property
     def account_name(self):
-        """Gets the account_name of this AccountManager.
+        r"""Gets the account_name of this AccountManager.
 
         客户经理登录名称。
 
@@ -54,7 +54,7 @@ class AccountManager:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this AccountManager.
+        r"""Sets the account_name of this AccountManager.
 
         客户经理登录名称。
 

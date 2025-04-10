@@ -35,7 +35,7 @@ class SearchKey:
     }
 
     def __init__(self, app_name=None, cluster_id=None, host_ip=None, name_space=None, path_file=None, pod_name=None):
-        """SearchKey
+        r"""SearchKey
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class SearchKey:
 
     @property
     def app_name(self):
-        """Gets the app_name of this SearchKey.
+        r"""Gets the app_name of this SearchKey.
 
         应用名称。
 
@@ -88,7 +88,7 @@ class SearchKey:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this SearchKey.
+        r"""Sets the app_name of this SearchKey.
 
         应用名称。
 
@@ -99,7 +99,7 @@ class SearchKey:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this SearchKey.
+        r"""Gets the cluster_id of this SearchKey.
 
         CCE集群ID。
 
@@ -110,7 +110,7 @@ class SearchKey:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this SearchKey.
+        r"""Sets the cluster_id of this SearchKey.
 
         CCE集群ID。
 
@@ -121,7 +121,7 @@ class SearchKey:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this SearchKey.
+        r"""Gets the host_ip of this SearchKey.
 
         日志所在虚拟机IP。
 
@@ -132,7 +132,7 @@ class SearchKey:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this SearchKey.
+        r"""Sets the host_ip of this SearchKey.
 
         日志所在虚拟机IP。
 
@@ -143,7 +143,7 @@ class SearchKey:
 
     @property
     def name_space(self):
-        """Gets the name_space of this SearchKey.
+        r"""Gets the name_space of this SearchKey.
 
         CCE容器集群的命名空间。
 
@@ -154,7 +154,7 @@ class SearchKey:
 
     @name_space.setter
     def name_space(self, name_space):
-        """Sets the name_space of this SearchKey.
+        r"""Sets the name_space of this SearchKey.
 
         CCE容器集群的命名空间。
 
@@ -165,7 +165,7 @@ class SearchKey:
 
     @property
     def path_file(self):
-        """Gets the path_file of this SearchKey.
+        r"""Gets the path_file of this SearchKey.
 
         日志文件名称。
 
@@ -176,7 +176,7 @@ class SearchKey:
 
     @path_file.setter
     def path_file(self, path_file):
-        """Sets the path_file of this SearchKey.
+        r"""Sets the path_file of this SearchKey.
 
         日志文件名称。
 
@@ -187,7 +187,7 @@ class SearchKey:
 
     @property
     def pod_name(self):
-        """Gets the pod_name of this SearchKey.
+        r"""Gets the pod_name of this SearchKey.
 
         容器实例名称。
 
@@ -198,7 +198,7 @@ class SearchKey:
 
     @pod_name.setter
     def pod_name(self, pod_name):
-        """Sets the pod_name of this SearchKey.
+        r"""Sets the pod_name of this SearchKey.
 
         容器实例名称。
 

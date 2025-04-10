@@ -30,7 +30,7 @@ class RunFileTranslationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, error_code=None, error_msg=None):
-        """RunFileTranslationResponse
+        r"""RunFileTranslationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunFileTranslationResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RunFileTranslationResponse.
+        r"""Gets the job_id of this RunFileTranslationResponse.
 
         创建的任务标识, 如果创建任务成功时必存在。调用失败时无此字段。
 
@@ -69,7 +69,7 @@ class RunFileTranslationResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RunFileTranslationResponse.
+        r"""Sets the job_id of this RunFileTranslationResponse.
 
         创建的任务标识, 如果创建任务成功时必存在。调用失败时无此字段。
 
@@ -80,7 +80,7 @@ class RunFileTranslationResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunFileTranslationResponse.
+        r"""Gets the error_code of this RunFileTranslationResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -91,7 +91,7 @@ class RunFileTranslationResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunFileTranslationResponse.
+        r"""Sets the error_code of this RunFileTranslationResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -102,7 +102,7 @@ class RunFileTranslationResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunFileTranslationResponse.
+        r"""Gets the error_msg of this RunFileTranslationResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -113,7 +113,7 @@ class RunFileTranslationResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunFileTranslationResponse.
+        r"""Sets the error_msg of this RunFileTranslationResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

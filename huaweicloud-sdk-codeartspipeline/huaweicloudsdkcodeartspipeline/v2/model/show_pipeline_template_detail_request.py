@@ -27,7 +27,7 @@ class ShowPipelineTemplateDetailRequest:
     }
 
     def __init__(self, tenant_id=None, template_id=None):
-        """ShowPipelineTemplateDetailRequest
+        r"""ShowPipelineTemplateDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowPipelineTemplateDetailRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ShowPipelineTemplateDetailRequest.
+        r"""Gets the tenant_id of this ShowPipelineTemplateDetailRequest.
 
         租户ID
 
@@ -59,7 +59,7 @@ class ShowPipelineTemplateDetailRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ShowPipelineTemplateDetailRequest.
+        r"""Sets the tenant_id of this ShowPipelineTemplateDetailRequest.
 
         租户ID
 
@@ -70,7 +70,7 @@ class ShowPipelineTemplateDetailRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowPipelineTemplateDetailRequest.
+        r"""Gets the template_id of this ShowPipelineTemplateDetailRequest.
 
         模板ID
 
@@ -81,7 +81,7 @@ class ShowPipelineTemplateDetailRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowPipelineTemplateDetailRequest.
+        r"""Sets the template_id of this ShowPipelineTemplateDetailRequest.
 
         模板ID
 

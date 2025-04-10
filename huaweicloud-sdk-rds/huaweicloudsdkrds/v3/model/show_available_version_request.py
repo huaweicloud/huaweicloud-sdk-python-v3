@@ -27,7 +27,7 @@ class ShowAvailableVersionRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None):
-        """ShowAvailableVersionRequest
+        r"""ShowAvailableVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowAvailableVersionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowAvailableVersionRequest.
+        r"""Gets the instance_id of this ShowAvailableVersionRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class ShowAvailableVersionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowAvailableVersionRequest.
+        r"""Sets the instance_id of this ShowAvailableVersionRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class ShowAvailableVersionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowAvailableVersionRequest.
+        r"""Gets the x_language of this ShowAvailableVersionRequest.
 
         语言。默认en-us。
 
@@ -82,7 +82,7 @@ class ShowAvailableVersionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowAvailableVersionRequest.
+        r"""Sets the x_language of this ShowAvailableVersionRequest.
 
         语言。默认en-us。
 

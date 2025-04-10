@@ -39,7 +39,7 @@ class MetricAlarmSpec:
     }
 
     def __init__(self, monitor_type=None, no_data_conditions=None, alarm_tags=None, monitor_objects=None, recovery_conditions=None, trigger_conditions=None, alarm_rule_template_bind_enable=None, alarm_rule_template_id=None):
-        """MetricAlarmSpec
+        r"""MetricAlarmSpec
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class MetricAlarmSpec:
 
     @property
     def monitor_type(self):
-        """Gets the monitor_type of this MetricAlarmSpec.
+        r"""Gets the monitor_type of this MetricAlarmSpec.
 
         监控类型。 - “all_metric”：全量指标 - “promql”：PromQL - “resource”：（日落）资源类型
 
@@ -99,7 +99,7 @@ class MetricAlarmSpec:
 
     @monitor_type.setter
     def monitor_type(self, monitor_type):
-        """Sets the monitor_type of this MetricAlarmSpec.
+        r"""Sets the monitor_type of this MetricAlarmSpec.
 
         监控类型。 - “all_metric”：全量指标 - “promql”：PromQL - “resource”：（日落）资源类型
 
@@ -110,7 +110,7 @@ class MetricAlarmSpec:
 
     @property
     def no_data_conditions(self):
-        """Gets the no_data_conditions of this MetricAlarmSpec.
+        r"""Gets the no_data_conditions of this MetricAlarmSpec.
 
         无数据处理。
 
@@ -121,7 +121,7 @@ class MetricAlarmSpec:
 
     @no_data_conditions.setter
     def no_data_conditions(self, no_data_conditions):
-        """Sets the no_data_conditions of this MetricAlarmSpec.
+        r"""Sets the no_data_conditions of this MetricAlarmSpec.
 
         无数据处理。
 
@@ -132,7 +132,7 @@ class MetricAlarmSpec:
 
     @property
     def alarm_tags(self):
-        """Gets the alarm_tags of this MetricAlarmSpec.
+        r"""Gets the alarm_tags of this MetricAlarmSpec.
 
         告警标签。
 
@@ -143,7 +143,7 @@ class MetricAlarmSpec:
 
     @alarm_tags.setter
     def alarm_tags(self, alarm_tags):
-        """Sets the alarm_tags of this MetricAlarmSpec.
+        r"""Sets the alarm_tags of this MetricAlarmSpec.
 
         告警标签。
 
@@ -154,7 +154,7 @@ class MetricAlarmSpec:
 
     @property
     def monitor_objects(self):
-        """Gets the monitor_objects of this MetricAlarmSpec.
+        r"""Gets the monitor_objects of this MetricAlarmSpec.
 
         监控对象列表。
 
@@ -165,7 +165,7 @@ class MetricAlarmSpec:
 
     @monitor_objects.setter
     def monitor_objects(self, monitor_objects):
-        """Sets the monitor_objects of this MetricAlarmSpec.
+        r"""Sets the monitor_objects of this MetricAlarmSpec.
 
         监控对象列表。
 
@@ -176,7 +176,7 @@ class MetricAlarmSpec:
 
     @property
     def recovery_conditions(self):
-        """Gets the recovery_conditions of this MetricAlarmSpec.
+        r"""Gets the recovery_conditions of this MetricAlarmSpec.
 
         :return: The recovery_conditions of this MetricAlarmSpec.
         :rtype: :class:`huaweicloudsdkaom.v2.RecoveryCondition`
@@ -185,7 +185,7 @@ class MetricAlarmSpec:
 
     @recovery_conditions.setter
     def recovery_conditions(self, recovery_conditions):
-        """Sets the recovery_conditions of this MetricAlarmSpec.
+        r"""Sets the recovery_conditions of this MetricAlarmSpec.
 
         :param recovery_conditions: The recovery_conditions of this MetricAlarmSpec.
         :type recovery_conditions: :class:`huaweicloudsdkaom.v2.RecoveryCondition`
@@ -194,7 +194,7 @@ class MetricAlarmSpec:
 
     @property
     def trigger_conditions(self):
-        """Gets the trigger_conditions of this MetricAlarmSpec.
+        r"""Gets the trigger_conditions of this MetricAlarmSpec.
 
         触发条件。
 
@@ -205,7 +205,7 @@ class MetricAlarmSpec:
 
     @trigger_conditions.setter
     def trigger_conditions(self, trigger_conditions):
-        """Sets the trigger_conditions of this MetricAlarmSpec.
+        r"""Sets the trigger_conditions of this MetricAlarmSpec.
 
         触发条件。
 
@@ -216,7 +216,7 @@ class MetricAlarmSpec:
 
     @property
     def alarm_rule_template_bind_enable(self):
-        """Gets the alarm_rule_template_bind_enable of this MetricAlarmSpec.
+        r"""Gets the alarm_rule_template_bind_enable of this MetricAlarmSpec.
 
         是否绑定告警规则模版（废弃）。
 
@@ -227,7 +227,7 @@ class MetricAlarmSpec:
 
     @alarm_rule_template_bind_enable.setter
     def alarm_rule_template_bind_enable(self, alarm_rule_template_bind_enable):
-        """Sets the alarm_rule_template_bind_enable of this MetricAlarmSpec.
+        r"""Sets the alarm_rule_template_bind_enable of this MetricAlarmSpec.
 
         是否绑定告警规则模版（废弃）。
 
@@ -238,7 +238,7 @@ class MetricAlarmSpec:
 
     @property
     def alarm_rule_template_id(self):
-        """Gets the alarm_rule_template_id of this MetricAlarmSpec.
+        r"""Gets the alarm_rule_template_id of this MetricAlarmSpec.
 
         告警规则模版id（废弃）。
 
@@ -249,7 +249,7 @@ class MetricAlarmSpec:
 
     @alarm_rule_template_id.setter
     def alarm_rule_template_id(self, alarm_rule_template_id):
-        """Sets the alarm_rule_template_id of this MetricAlarmSpec.
+        r"""Sets the alarm_rule_template_id of this MetricAlarmSpec.
 
         告警规则模版id（废弃）。
 

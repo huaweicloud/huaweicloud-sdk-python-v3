@@ -24,7 +24,7 @@ class UpdatePrivateModuleMetadataResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdatePrivateModuleMetadataResponse
+        r"""UpdatePrivateModuleMetadataResponse
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class QueryMatchItem:
     }
 
     def __init__(self, key=None, value=None):
-        """QueryMatchItem
+        r"""QueryMatchItem
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class QueryMatchItem:
 
     @property
     def key(self):
-        """Gets the key of this QueryMatchItem.
+        r"""Gets the key of this QueryMatchItem.
 
         取值为“instance_name”或“instance_id”，分别表示按实例名称或按实例ID匹配查询。
 
@@ -59,7 +59,7 @@ class QueryMatchItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this QueryMatchItem.
+        r"""Sets the key of this QueryMatchItem.
 
         取值为“instance_name”或“instance_id”，分别表示按实例名称或按实例ID匹配查询。
 
@@ -70,7 +70,7 @@ class QueryMatchItem:
 
     @property
     def value(self):
-        """Gets the value of this QueryMatchItem.
+        r"""Gets the value of this QueryMatchItem.
 
         待匹配的实例名称或实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -81,7 +81,7 @@ class QueryMatchItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this QueryMatchItem.
+        r"""Sets the value of this QueryMatchItem.
 
         待匹配的实例名称或实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 

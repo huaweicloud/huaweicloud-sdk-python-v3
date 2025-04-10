@@ -27,7 +27,7 @@ class AlarmStatisticsQuery:
     }
 
     def __init__(self, end_time=None, start_time=None):
-        """AlarmStatisticsQuery
+        r"""AlarmStatisticsQuery
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AlarmStatisticsQuery:
 
     @property
     def end_time(self):
-        """Gets the end_time of this AlarmStatisticsQuery.
+        r"""Gets the end_time of this AlarmStatisticsQuery.
 
         结束时间
 
@@ -61,7 +61,7 @@ class AlarmStatisticsQuery:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this AlarmStatisticsQuery.
+        r"""Sets the end_time of this AlarmStatisticsQuery.
 
         结束时间
 
@@ -72,7 +72,7 @@ class AlarmStatisticsQuery:
 
     @property
     def start_time(self):
-        """Gets the start_time of this AlarmStatisticsQuery.
+        r"""Gets the start_time of this AlarmStatisticsQuery.
 
         开始时间
 
@@ -83,7 +83,7 @@ class AlarmStatisticsQuery:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this AlarmStatisticsQuery.
+        r"""Sets the start_time of this AlarmStatisticsQuery.
 
         开始时间
 

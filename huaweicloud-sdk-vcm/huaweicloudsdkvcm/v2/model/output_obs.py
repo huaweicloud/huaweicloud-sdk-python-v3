@@ -27,7 +27,7 @@ class OutputObs:
     }
 
     def __init__(self, bucket=None, path=None):
-        """OutputObs
+        r"""OutputObs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OutputObs:
 
     @property
     def bucket(self):
-        """Gets the bucket of this OutputObs.
+        r"""Gets the bucket of this OutputObs.
 
         存储结果文件的OBS桶名。
 
@@ -61,7 +61,7 @@ class OutputObs:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this OutputObs.
+        r"""Sets the bucket of this OutputObs.
 
         存储结果文件的OBS桶名。
 
@@ -72,7 +72,7 @@ class OutputObs:
 
     @property
     def path(self):
-        """Gets the path of this OutputObs.
+        r"""Gets the path of this OutputObs.
 
         结果文件的OBS桶内路径，例如“output/”。
 
@@ -83,7 +83,7 @@ class OutputObs:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this OutputObs.
+        r"""Sets the path of this OutputObs.
 
         结果文件的OBS桶内路径，例如“output/”。
 

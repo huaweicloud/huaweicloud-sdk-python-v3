@@ -33,7 +33,7 @@ class UpgradePlan:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """UpgradePlan
+        r"""UpgradePlan
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class UpgradePlan:
 
     @property
     def kind(self):
-        """Gets the kind of this UpgradePlan.
+        r"""Gets the kind of this UpgradePlan.
 
         API类型，固定值“UpgradePlan”，该值不可修改。 
 
@@ -77,7 +77,7 @@ class UpgradePlan:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpgradePlan.
+        r"""Sets the kind of this UpgradePlan.
 
         API类型，固定值“UpgradePlan”，该值不可修改。 
 
@@ -88,7 +88,7 @@ class UpgradePlan:
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpgradePlan.
+        r"""Gets the api_version of this UpgradePlan.
 
         API版本，固定值“v3”，该值不可修改。 
 
@@ -99,7 +99,7 @@ class UpgradePlan:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpgradePlan.
+        r"""Sets the api_version of this UpgradePlan.
 
         API版本，固定值“v3”，该值不可修改。 
 
@@ -110,7 +110,7 @@ class UpgradePlan:
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpgradePlan.
+        r"""Gets the metadata of this UpgradePlan.
 
         :return: The metadata of this UpgradePlan.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -119,7 +119,7 @@ class UpgradePlan:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpgradePlan.
+        r"""Sets the metadata of this UpgradePlan.
 
         :param metadata: The metadata of this UpgradePlan.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -128,7 +128,7 @@ class UpgradePlan:
 
     @property
     def spec(self):
-        """Gets the spec of this UpgradePlan.
+        r"""Gets the spec of this UpgradePlan.
 
         :return: The spec of this UpgradePlan.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradePlanSpec`
@@ -137,7 +137,7 @@ class UpgradePlan:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpgradePlan.
+        r"""Sets the spec of this UpgradePlan.
 
         :param spec: The spec of this UpgradePlan.
         :type spec: :class:`huaweicloudsdkcce.v3.UpgradePlanSpec`
@@ -146,7 +146,7 @@ class UpgradePlan:
 
     @property
     def status(self):
-        """Gets the status of this UpgradePlan.
+        r"""Gets the status of this UpgradePlan.
 
         :return: The status of this UpgradePlan.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradePlanStatus`
@@ -155,7 +155,7 @@ class UpgradePlan:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpgradePlan.
+        r"""Sets the status of this UpgradePlan.
 
         :param status: The status of this UpgradePlan.
         :type status: :class:`huaweicloudsdkcce.v3.UpgradePlanStatus`

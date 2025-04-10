@@ -25,7 +25,7 @@ class PostcheckCluserResponseMetadata:
     }
 
     def __init__(self, uid=None):
-        """PostcheckCluserResponseMetadata
+        r"""PostcheckCluserResponseMetadata
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PostcheckCluserResponseMetadata:
 
     @property
     def uid(self):
-        """Gets the uid of this PostcheckCluserResponseMetadata.
+        r"""Gets the uid of this PostcheckCluserResponseMetadata.
 
         任务ID
 
@@ -54,7 +54,7 @@ class PostcheckCluserResponseMetadata:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this PostcheckCluserResponseMetadata.
+        r"""Sets the uid of this PostcheckCluserResponseMetadata.
 
         任务ID
 

@@ -25,7 +25,7 @@ class NodeTemplateRuntimeConfigRuntime:
     }
 
     def __init__(self, name=None):
-        """NodeTemplateRuntimeConfigRuntime
+        r"""NodeTemplateRuntimeConfigRuntime
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NodeTemplateRuntimeConfigRuntime:
 
     @property
     def name(self):
-        """Gets the name of this NodeTemplateRuntimeConfigRuntime.
+        r"""Gets the name of this NodeTemplateRuntimeConfigRuntime.
 
         :return: The name of this NodeTemplateRuntimeConfigRuntime.
         :rtype: str
@@ -52,7 +52,7 @@ class NodeTemplateRuntimeConfigRuntime:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NodeTemplateRuntimeConfigRuntime.
+        r"""Sets the name of this NodeTemplateRuntimeConfigRuntime.
 
         :param name: The name of this NodeTemplateRuntimeConfigRuntime.
         :type name: str

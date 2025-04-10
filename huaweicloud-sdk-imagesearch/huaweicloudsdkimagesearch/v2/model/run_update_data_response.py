@@ -26,7 +26,7 @@ class RunUpdateDataResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RunUpdateDataResponse
+        r"""RunUpdateDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RunUpdateDataResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunUpdateDataResponse.
+        r"""Gets the result of this RunUpdateDataResponse.
 
         更新数据完成返回success。
 
@@ -55,7 +55,7 @@ class RunUpdateDataResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunUpdateDataResponse.
+        r"""Sets the result of this RunUpdateDataResponse.
 
         更新数据完成返回success。
 

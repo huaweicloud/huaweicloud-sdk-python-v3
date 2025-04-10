@@ -31,7 +31,7 @@ class UpdateAntileakageRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, rule_id=None, body=None):
-        """UpdateAntileakageRuleRequest
+        r"""UpdateAntileakageRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateAntileakageRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateAntileakageRuleRequest.
+        r"""Gets the enterprise_project_id of this UpdateAntileakageRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -73,7 +73,7 @@ class UpdateAntileakageRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateAntileakageRuleRequest.
+        r"""Sets the enterprise_project_id of this UpdateAntileakageRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -84,7 +84,7 @@ class UpdateAntileakageRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateAntileakageRuleRequest.
+        r"""Gets the policy_id of this UpdateAntileakageRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -95,7 +95,7 @@ class UpdateAntileakageRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateAntileakageRuleRequest.
+        r"""Sets the policy_id of this UpdateAntileakageRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -106,7 +106,7 @@ class UpdateAntileakageRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateAntileakageRuleRequest.
+        r"""Gets the rule_id of this UpdateAntileakageRuleRequest.
 
         防敏感信息泄露规则id，通过查询防敏感信息泄露规则列表接口（ListAntileakageRules）获取
 
@@ -117,7 +117,7 @@ class UpdateAntileakageRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateAntileakageRuleRequest.
+        r"""Sets the rule_id of this UpdateAntileakageRuleRequest.
 
         防敏感信息泄露规则id，通过查询防敏感信息泄露规则列表接口（ListAntileakageRules）获取
 
@@ -128,7 +128,7 @@ class UpdateAntileakageRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAntileakageRuleRequest.
+        r"""Gets the body of this UpdateAntileakageRuleRequest.
 
         :return: The body of this UpdateAntileakageRuleRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAntileakageRuleRequestBody`
@@ -137,7 +137,7 @@ class UpdateAntileakageRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAntileakageRuleRequest.
+        r"""Sets the body of this UpdateAntileakageRuleRequest.
 
         :param body: The body of this UpdateAntileakageRuleRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.UpdateAntileakageRuleRequestBody`

@@ -30,7 +30,7 @@ class ListEnvironmentsResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, items=None):
-        """ListEnvironmentsResponse
+        r"""ListEnvironmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListEnvironmentsResponse.
+        r"""Gets the api_version of this ListEnvironmentsResponse.
 
         :return: The api_version of this ListEnvironmentsResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListEnvironmentsResponse.
+        r"""Sets the api_version of this ListEnvironmentsResponse.
 
         :param api_version: The api_version of this ListEnvironmentsResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListEnvironmentsResponse.
+        r"""Gets the kind of this ListEnvironmentsResponse.
 
         :return: The kind of this ListEnvironmentsResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.EnvironmentKindObj`
@@ -85,7 +85,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListEnvironmentsResponse.
+        r"""Sets the kind of this ListEnvironmentsResponse.
 
         :param kind: The kind of this ListEnvironmentsResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.EnvironmentKindObj`
@@ -94,7 +94,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListEnvironmentsResponse.
+        r"""Gets the items of this ListEnvironmentsResponse.
 
         环境列表。
 
@@ -105,7 +105,7 @@ class ListEnvironmentsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListEnvironmentsResponse.
+        r"""Sets the items of this ListEnvironmentsResponse.
 
         环境列表。
 

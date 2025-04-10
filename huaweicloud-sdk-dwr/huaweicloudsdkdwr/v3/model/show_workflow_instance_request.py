@@ -27,7 +27,7 @@ class ShowWorkflowInstanceRequest:
     }
 
     def __init__(self, execution_name=None, graph_name=None):
-        """ShowWorkflowInstanceRequest
+        r"""ShowWorkflowInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowWorkflowInstanceRequest:
 
     @property
     def execution_name(self):
-        """Gets the execution_name of this ShowWorkflowInstanceRequest.
+        r"""Gets the execution_name of this ShowWorkflowInstanceRequest.
 
         工作流实例名称。
 
@@ -59,7 +59,7 @@ class ShowWorkflowInstanceRequest:
 
     @execution_name.setter
     def execution_name(self, execution_name):
-        """Sets the execution_name of this ShowWorkflowInstanceRequest.
+        r"""Sets the execution_name of this ShowWorkflowInstanceRequest.
 
         工作流实例名称。
 
@@ -70,7 +70,7 @@ class ShowWorkflowInstanceRequest:
 
     @property
     def graph_name(self):
-        """Gets the graph_name of this ShowWorkflowInstanceRequest.
+        r"""Gets the graph_name of this ShowWorkflowInstanceRequest.
 
         工作流名称。
 
@@ -81,7 +81,7 @@ class ShowWorkflowInstanceRequest:
 
     @graph_name.setter
     def graph_name(self, graph_name):
-        """Sets the graph_name of this ShowWorkflowInstanceRequest.
+        r"""Sets the graph_name of this ShowWorkflowInstanceRequest.
 
         工作流名称。
 

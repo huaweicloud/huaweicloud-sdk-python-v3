@@ -29,7 +29,7 @@ class LiveAudioConfig:
     }
 
     def __init__(self, asset_id=None, audio_url=None, subtitle_url=None):
-        """LiveAudioConfig
+        r"""LiveAudioConfig
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LiveAudioConfig:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this LiveAudioConfig.
+        r"""Gets the asset_id of this LiveAudioConfig.
 
         **参数解释**： 插入音频资产的资产id，外部资产信息无需填写。若填写，可以从资产库中查询。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
@@ -68,7 +68,7 @@ class LiveAudioConfig:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this LiveAudioConfig.
+        r"""Sets the asset_id of this LiveAudioConfig.
 
         **参数解释**： 插入音频资产的资产id，外部资产信息无需填写。若填写，可以从资产库中查询。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
@@ -79,7 +79,7 @@ class LiveAudioConfig:
 
     @property
     def audio_url(self):
-        """Gets the audio_url of this LiveAudioConfig.
+        r"""Gets the audio_url of this LiveAudioConfig.
 
         **参数解释**： 音频URL。 **约束限制**： 仅支持MP3格式，大小<100MB。输出会自动转化为单声道16KHZ采样。 **取值范围**： 字符长度0-2048位。 **默认取值**： 不涉及。
 
@@ -90,7 +90,7 @@ class LiveAudioConfig:
 
     @audio_url.setter
     def audio_url(self, audio_url):
-        """Sets the audio_url of this LiveAudioConfig.
+        r"""Sets the audio_url of this LiveAudioConfig.
 
         **参数解释**： 音频URL。 **约束限制**： 仅支持MP3格式，大小<100MB。输出会自动转化为单声道16KHZ采样。 **取值范围**： 字符长度0-2048位。 **默认取值**： 不涉及。
 
@@ -101,7 +101,7 @@ class LiveAudioConfig:
 
     @property
     def subtitle_url(self):
-        """Gets the subtitle_url of this LiveAudioConfig.
+        r"""Gets the subtitle_url of this LiveAudioConfig.
 
         **参数解释**： 音频对应的字幕文件URL。 **约束限制**： 仅SRT格式，大小<1MB。 **取值范围**： 字符长度0-2048位。 **默认取值**： 不涉及。
 
@@ -112,7 +112,7 @@ class LiveAudioConfig:
 
     @subtitle_url.setter
     def subtitle_url(self, subtitle_url):
-        """Sets the subtitle_url of this LiveAudioConfig.
+        r"""Sets the subtitle_url of this LiveAudioConfig.
 
         **参数解释**： 音频对应的字幕文件URL。 **约束限制**： 仅SRT格式，大小<1MB。 **取值范围**： 字符长度0-2048位。 **默认取值**： 不涉及。
 

@@ -27,7 +27,7 @@ class FailoverConditions:
     }
 
     def __init__(self, input_loss_threshold_msec=None, input_preference=None):
-        """FailoverConditions
+        r"""FailoverConditions
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FailoverConditions:
 
     @property
     def input_loss_threshold_msec(self):
-        """Gets the input_loss_threshold_msec of this FailoverConditions.
+        r"""Gets the input_loss_threshold_msec of this FailoverConditions.
 
         入流停止的时长阈值。到达此阈值后，自动触发主备切换。  单位：毫秒，取值范围：0 - 3600000。  非必填，默认填2000ms。
 
@@ -61,7 +61,7 @@ class FailoverConditions:
 
     @input_loss_threshold_msec.setter
     def input_loss_threshold_msec(self, input_loss_threshold_msec):
-        """Sets the input_loss_threshold_msec of this FailoverConditions.
+        r"""Sets the input_loss_threshold_msec of this FailoverConditions.
 
         入流停止的时长阈值。到达此阈值后，自动触发主备切换。  单位：毫秒，取值范围：0 - 3600000。  非必填，默认填2000ms。
 
@@ -72,7 +72,7 @@ class FailoverConditions:
 
     @property
     def input_preference(self):
-        """Gets the input_preference of this FailoverConditions.
+        r"""Gets the input_preference of this FailoverConditions.
 
         以主入流URL为第一优先级（PRIMARY）或主备URL平等切换（EQUAL）。  如果是平等切换时，使用的是备URL，不会自动切换至主URL。  非必填，默认值为EQUAL。
 
@@ -83,7 +83,7 @@ class FailoverConditions:
 
     @input_preference.setter
     def input_preference(self, input_preference):
-        """Sets the input_preference of this FailoverConditions.
+        r"""Sets the input_preference of this FailoverConditions.
 
         以主入流URL为第一优先级（PRIMARY）或主备URL平等切换（EQUAL）。  如果是平等切换时，使用的是备URL，不会自动切换至主URL。  非必填，默认值为EQUAL。
 

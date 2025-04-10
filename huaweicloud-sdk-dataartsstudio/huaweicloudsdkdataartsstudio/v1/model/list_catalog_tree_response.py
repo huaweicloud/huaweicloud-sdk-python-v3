@@ -26,7 +26,7 @@ class ListCatalogTreeResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListCatalogTreeResponse
+        r"""ListCatalogTreeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListCatalogTreeResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListCatalogTreeResponse.
+        r"""Gets the data of this ListCatalogTreeResponse.
 
         :return: The data of this ListCatalogTreeResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListCatalogTreeResultData`
@@ -53,7 +53,7 @@ class ListCatalogTreeResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListCatalogTreeResponse.
+        r"""Sets the data of this ListCatalogTreeResponse.
 
         :param data: The data of this ListCatalogTreeResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListCatalogTreeResultData`

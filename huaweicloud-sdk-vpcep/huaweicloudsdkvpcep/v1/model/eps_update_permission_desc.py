@@ -25,7 +25,7 @@ class EpsUpdatePermissionDesc:
     }
 
     def __init__(self, description=None):
-        """EpsUpdatePermissionDesc
+        r"""EpsUpdatePermissionDesc
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EpsUpdatePermissionDesc:
 
     @property
     def description(self):
-        """Gets the description of this EpsUpdatePermissionDesc.
+        r"""Gets the description of this EpsUpdatePermissionDesc.
 
         终端节点服务白名单描述
 
@@ -53,7 +53,7 @@ class EpsUpdatePermissionDesc:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EpsUpdatePermissionDesc.
+        r"""Sets the description of this EpsUpdatePermissionDesc.
 
         终端节点服务白名单描述
 

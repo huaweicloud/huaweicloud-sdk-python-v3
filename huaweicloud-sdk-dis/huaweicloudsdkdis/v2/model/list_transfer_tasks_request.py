@@ -25,7 +25,7 @@ class ListTransferTasksRequest:
     }
 
     def __init__(self, stream_name=None):
-        """ListTransferTasksRequest
+        r"""ListTransferTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListTransferTasksRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this ListTransferTasksRequest.
+        r"""Gets the stream_name of this ListTransferTasksRequest.
 
         需要查询的通道名称。
 
@@ -53,7 +53,7 @@ class ListTransferTasksRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this ListTransferTasksRequest.
+        r"""Sets the stream_name of this ListTransferTasksRequest.
 
         需要查询的通道名称。
 

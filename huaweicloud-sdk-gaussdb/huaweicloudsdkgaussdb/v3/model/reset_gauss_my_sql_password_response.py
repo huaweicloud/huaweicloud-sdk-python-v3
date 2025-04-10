@@ -24,7 +24,7 @@ class ResetGaussMySqlPasswordResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ResetGaussMySqlPasswordResponse
+        r"""ResetGaussMySqlPasswordResponse
 
         The model defined in huaweicloud sdk
 

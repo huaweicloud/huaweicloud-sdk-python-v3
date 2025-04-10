@@ -69,7 +69,7 @@ class ListInternetBandwidths:
     }
 
     def __init__(self, id=None, name=None, isp=None, ingress_size=None, access_site=None, size=None, description=None, charge_mode=None, ratio_95peak=None, billing_info=None, freezen_info=None, domain_id=None, status=None, geip_count=None, geip_segment_count=None, created_at=None, updated_at=None, is_pre_paid=None, tags=None, sys_tags=None, enterprise_project_id=None, type=None, lock_infos=None):
-        """ListInternetBandwidths
+        r"""ListInternetBandwidths
 
         The model defined in huaweicloud sdk
 
@@ -197,7 +197,7 @@ class ListInternetBandwidths:
 
     @property
     def id(self):
-        """Gets the id of this ListInternetBandwidths.
+        r"""Gets the id of this ListInternetBandwidths.
 
         全域公网带宽的ID
 
@@ -208,7 +208,7 @@ class ListInternetBandwidths:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListInternetBandwidths.
+        r"""Sets the id of this ListInternetBandwidths.
 
         全域公网带宽的ID
 
@@ -219,7 +219,7 @@ class ListInternetBandwidths:
 
     @property
     def name(self):
-        """Gets the name of this ListInternetBandwidths.
+        r"""Gets the name of this ListInternetBandwidths.
 
         - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -230,7 +230,7 @@ class ListInternetBandwidths:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListInternetBandwidths.
+        r"""Sets the name of this ListInternetBandwidths.
 
         - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -241,7 +241,7 @@ class ListInternetBandwidths:
 
     @property
     def isp(self):
-        """Gets the isp of this ListInternetBandwidths.
+        r"""Gets the isp of this ListInternetBandwidths.
 
         全域弹性公网IP所属线路
 
@@ -252,7 +252,7 @@ class ListInternetBandwidths:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ListInternetBandwidths.
+        r"""Sets the isp of this ListInternetBandwidths.
 
         全域弹性公网IP所属线路
 
@@ -263,7 +263,7 @@ class ListInternetBandwidths:
 
     @property
     def ingress_size(self):
-        """Gets the ingress_size of this ListInternetBandwidths.
+        r"""Gets the ingress_size of this ListInternetBandwidths.
 
         全域公网带宽大小（入云方向）
 
@@ -274,7 +274,7 @@ class ListInternetBandwidths:
 
     @ingress_size.setter
     def ingress_size(self, ingress_size):
-        """Sets the ingress_size of this ListInternetBandwidths.
+        r"""Sets the ingress_size of this ListInternetBandwidths.
 
         全域公网带宽大小（入云方向）
 
@@ -285,7 +285,7 @@ class ListInternetBandwidths:
 
     @property
     def access_site(self):
-        """Gets the access_site of this ListInternetBandwidths.
+        r"""Gets the access_site of this ListInternetBandwidths.
 
         接入点信息
 
@@ -296,7 +296,7 @@ class ListInternetBandwidths:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this ListInternetBandwidths.
+        r"""Sets the access_site of this ListInternetBandwidths.
 
         接入点信息
 
@@ -307,7 +307,7 @@ class ListInternetBandwidths:
 
     @property
     def size(self):
-        """Gets the size of this ListInternetBandwidths.
+        r"""Gets the size of this ListInternetBandwidths.
 
         全域公网带宽大小（出云方向）
 
@@ -318,7 +318,7 @@ class ListInternetBandwidths:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListInternetBandwidths.
+        r"""Sets the size of this ListInternetBandwidths.
 
         全域公网带宽大小（出云方向）
 
@@ -329,7 +329,7 @@ class ListInternetBandwidths:
 
     @property
     def description(self):
-        """Gets the description of this ListInternetBandwidths.
+        r"""Gets the description of this ListInternetBandwidths.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -340,7 +340,7 @@ class ListInternetBandwidths:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListInternetBandwidths.
+        r"""Sets the description of this ListInternetBandwidths.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -351,7 +351,7 @@ class ListInternetBandwidths:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ListInternetBandwidths.
+        r"""Gets the charge_mode of this ListInternetBandwidths.
 
         计费模式
 
@@ -362,7 +362,7 @@ class ListInternetBandwidths:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ListInternetBandwidths.
+        r"""Sets the charge_mode of this ListInternetBandwidths.
 
         计费模式
 
@@ -373,7 +373,7 @@ class ListInternetBandwidths:
 
     @property
     def ratio_95peak(self):
-        """Gets the ratio_95peak of this ListInternetBandwidths.
+        r"""Gets the ratio_95peak of this ListInternetBandwidths.
 
         增强95保底率
 
@@ -384,7 +384,7 @@ class ListInternetBandwidths:
 
     @ratio_95peak.setter
     def ratio_95peak(self, ratio_95peak):
-        """Sets the ratio_95peak of this ListInternetBandwidths.
+        r"""Sets the ratio_95peak of this ListInternetBandwidths.
 
         增强95保底率
 
@@ -395,7 +395,7 @@ class ListInternetBandwidths:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this ListInternetBandwidths.
+        r"""Gets the billing_info of this ListInternetBandwidths.
 
         订单信息
 
@@ -406,7 +406,7 @@ class ListInternetBandwidths:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this ListInternetBandwidths.
+        r"""Sets the billing_info of this ListInternetBandwidths.
 
         订单信息
 
@@ -417,7 +417,7 @@ class ListInternetBandwidths:
 
     @property
     def freezen_info(self):
-        """Gets the freezen_info of this ListInternetBandwidths.
+        r"""Gets the freezen_info of this ListInternetBandwidths.
 
         冻结原因
 
@@ -428,7 +428,7 @@ class ListInternetBandwidths:
 
     @freezen_info.setter
     def freezen_info(self, freezen_info):
-        """Sets the freezen_info of this ListInternetBandwidths.
+        r"""Sets the freezen_info of this ListInternetBandwidths.
 
         冻结原因
 
@@ -439,7 +439,7 @@ class ListInternetBandwidths:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListInternetBandwidths.
+        r"""Gets the domain_id of this ListInternetBandwidths.
 
         - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
@@ -450,7 +450,7 @@ class ListInternetBandwidths:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListInternetBandwidths.
+        r"""Sets the domain_id of this ListInternetBandwidths.
 
         - 租户账号ID，获取租户账号ID请参见[租户账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)
 
@@ -461,7 +461,7 @@ class ListInternetBandwidths:
 
     @property
     def status(self):
-        """Gets the status of this ListInternetBandwidths.
+        r"""Gets the status of this ListInternetBandwidths.
 
         状态
 
@@ -472,7 +472,7 @@ class ListInternetBandwidths:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListInternetBandwidths.
+        r"""Sets the status of this ListInternetBandwidths.
 
         状态
 
@@ -483,7 +483,7 @@ class ListInternetBandwidths:
 
     @property
     def geip_count(self):
-        """Gets the geip_count of this ListInternetBandwidths.
+        r"""Gets the geip_count of this ListInternetBandwidths.
 
         全域弹性公网IP个数
 
@@ -494,7 +494,7 @@ class ListInternetBandwidths:
 
     @geip_count.setter
     def geip_count(self, geip_count):
-        """Sets the geip_count of this ListInternetBandwidths.
+        r"""Sets the geip_count of this ListInternetBandwidths.
 
         全域弹性公网IP个数
 
@@ -505,7 +505,7 @@ class ListInternetBandwidths:
 
     @property
     def geip_segment_count(self):
-        """Gets the geip_segment_count of this ListInternetBandwidths.
+        r"""Gets the geip_segment_count of this ListInternetBandwidths.
 
         全域弹性公网IP段个数
 
@@ -516,7 +516,7 @@ class ListInternetBandwidths:
 
     @geip_segment_count.setter
     def geip_segment_count(self, geip_segment_count):
-        """Sets the geip_segment_count of this ListInternetBandwidths.
+        r"""Sets the geip_segment_count of this ListInternetBandwidths.
 
         全域弹性公网IP段个数
 
@@ -527,7 +527,7 @@ class ListInternetBandwidths:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListInternetBandwidths.
+        r"""Gets the created_at of this ListInternetBandwidths.
 
         创建时间
 
@@ -538,7 +538,7 @@ class ListInternetBandwidths:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListInternetBandwidths.
+        r"""Sets the created_at of this ListInternetBandwidths.
 
         创建时间
 
@@ -549,7 +549,7 @@ class ListInternetBandwidths:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListInternetBandwidths.
+        r"""Gets the updated_at of this ListInternetBandwidths.
 
         更新时间
 
@@ -560,7 +560,7 @@ class ListInternetBandwidths:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListInternetBandwidths.
+        r"""Sets the updated_at of this ListInternetBandwidths.
 
         更新时间
 
@@ -571,7 +571,7 @@ class ListInternetBandwidths:
 
     @property
     def is_pre_paid(self):
-        """Gets the is_pre_paid of this ListInternetBandwidths.
+        r"""Gets the is_pre_paid of this ListInternetBandwidths.
 
         是否包周期
 
@@ -582,7 +582,7 @@ class ListInternetBandwidths:
 
     @is_pre_paid.setter
     def is_pre_paid(self, is_pre_paid):
-        """Sets the is_pre_paid of this ListInternetBandwidths.
+        r"""Sets the is_pre_paid of this ListInternetBandwidths.
 
         是否包周期
 
@@ -593,7 +593,7 @@ class ListInternetBandwidths:
 
     @property
     def tags(self):
-        """Gets the tags of this ListInternetBandwidths.
+        r"""Gets the tags of this ListInternetBandwidths.
 
         全域公网带宽标签
 
@@ -604,7 +604,7 @@ class ListInternetBandwidths:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListInternetBandwidths.
+        r"""Sets the tags of this ListInternetBandwidths.
 
         全域公网带宽标签
 
@@ -615,7 +615,7 @@ class ListInternetBandwidths:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ListInternetBandwidths.
+        r"""Gets the sys_tags of this ListInternetBandwidths.
 
         系统标签
 
@@ -626,7 +626,7 @@ class ListInternetBandwidths:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ListInternetBandwidths.
+        r"""Sets the sys_tags of this ListInternetBandwidths.
 
         系统标签
 
@@ -637,7 +637,7 @@ class ListInternetBandwidths:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListInternetBandwidths.
+        r"""Gets the enterprise_project_id of this ListInternetBandwidths.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -648,7 +648,7 @@ class ListInternetBandwidths:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListInternetBandwidths.
+        r"""Sets the enterprise_project_id of this ListInternetBandwidths.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -659,7 +659,7 @@ class ListInternetBandwidths:
 
     @property
     def type(self):
-        """Gets the type of this ListInternetBandwidths.
+        r"""Gets the type of this ListInternetBandwidths.
 
         全域公网带宽类型
 
@@ -670,7 +670,7 @@ class ListInternetBandwidths:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListInternetBandwidths.
+        r"""Sets the type of this ListInternetBandwidths.
 
         全域公网带宽类型
 
@@ -681,7 +681,7 @@ class ListInternetBandwidths:
 
     @property
     def lock_infos(self):
-        """Gets the lock_infos of this ListInternetBandwidths.
+        r"""Gets the lock_infos of this ListInternetBandwidths.
 
         全域公网带宽资源的锁状态
 
@@ -692,7 +692,7 @@ class ListInternetBandwidths:
 
     @lock_infos.setter
     def lock_infos(self, lock_infos):
-        """Sets the lock_infos of this ListInternetBandwidths.
+        r"""Sets the lock_infos of this ListInternetBandwidths.
 
         全域公网带宽资源的锁状态
 

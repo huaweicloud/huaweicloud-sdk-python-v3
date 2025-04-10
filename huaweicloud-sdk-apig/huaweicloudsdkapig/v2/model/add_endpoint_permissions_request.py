@@ -27,7 +27,7 @@ class AddEndpointPermissionsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """AddEndpointPermissionsRequest
+        r"""AddEndpointPermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddEndpointPermissionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddEndpointPermissionsRequest.
+        r"""Gets the instance_id of this AddEndpointPermissionsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -60,7 +60,7 @@ class AddEndpointPermissionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddEndpointPermissionsRequest.
+        r"""Sets the instance_id of this AddEndpointPermissionsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -71,7 +71,7 @@ class AddEndpointPermissionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddEndpointPermissionsRequest.
+        r"""Gets the body of this AddEndpointPermissionsRequest.
 
         :return: The body of this AddEndpointPermissionsRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.EndpointPermissionList`
@@ -80,7 +80,7 @@ class AddEndpointPermissionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddEndpointPermissionsRequest.
+        r"""Sets the body of this AddEndpointPermissionsRequest.
 
         :param body: The body of this AddEndpointPermissionsRequest.
         :type body: :class:`huaweicloudsdkapig.v2.EndpointPermissionList`

@@ -28,7 +28,7 @@ class ShowOriginHostResponse(SdkResponse):
     }
 
     def __init__(self, origin_host=None, x_request_id=None):
-        """ShowOriginHostResponse
+        r"""ShowOriginHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowOriginHostResponse(SdkResponse):
 
     @property
     def origin_host(self):
-        """Gets the origin_host of this ShowOriginHostResponse.
+        r"""Gets the origin_host of this ShowOriginHostResponse.
 
         :return: The origin_host of this ShowOriginHostResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
@@ -60,7 +60,7 @@ class ShowOriginHostResponse(SdkResponse):
 
     @origin_host.setter
     def origin_host(self, origin_host):
-        """Sets the origin_host of this ShowOriginHostResponse.
+        r"""Sets the origin_host of this ShowOriginHostResponse.
 
         :param origin_host: The origin_host of this ShowOriginHostResponse.
         :type origin_host: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
@@ -69,7 +69,7 @@ class ShowOriginHostResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowOriginHostResponse.
+        r"""Gets the x_request_id of this ShowOriginHostResponse.
 
         :return: The x_request_id of this ShowOriginHostResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowOriginHostResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowOriginHostResponse.
+        r"""Sets the x_request_id of this ShowOriginHostResponse.
 
         :param x_request_id: The x_request_id of this ShowOriginHostResponse.
         :type x_request_id: str

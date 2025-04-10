@@ -33,7 +33,7 @@ class ListUpStreamDetailRequest:
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None, start_time=None, end_time=None):
-        """ListUpStreamDetailRequest
+        r"""ListUpStreamDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListUpStreamDetailRequest:
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this ListUpStreamDetailRequest.
+        r"""Gets the publish_domain of this ListUpStreamDetailRequest.
 
         推流域名。 
 
@@ -79,7 +79,7 @@ class ListUpStreamDetailRequest:
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this ListUpStreamDetailRequest.
+        r"""Sets the publish_domain of this ListUpStreamDetailRequest.
 
         推流域名。 
 
@@ -90,7 +90,7 @@ class ListUpStreamDetailRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListUpStreamDetailRequest.
+        r"""Gets the app of this ListUpStreamDetailRequest.
 
         应用名。 
 
@@ -101,7 +101,7 @@ class ListUpStreamDetailRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListUpStreamDetailRequest.
+        r"""Sets the app of this ListUpStreamDetailRequest.
 
         应用名。 
 
@@ -112,7 +112,7 @@ class ListUpStreamDetailRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this ListUpStreamDetailRequest.
+        r"""Gets the stream of this ListUpStreamDetailRequest.
 
         流名。 
 
@@ -123,7 +123,7 @@ class ListUpStreamDetailRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ListUpStreamDetailRequest.
+        r"""Sets the stream of this ListUpStreamDetailRequest.
 
         流名。 
 
@@ -134,7 +134,7 @@ class ListUpStreamDetailRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListUpStreamDetailRequest.
+        r"""Gets the start_time of this ListUpStreamDetailRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认查询最近1小时数据。 
 
@@ -145,7 +145,7 @@ class ListUpStreamDetailRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListUpStreamDetailRequest.
+        r"""Sets the start_time of this ListUpStreamDetailRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认查询最近1小时数据。 
 
@@ -156,7 +156,7 @@ class ListUpStreamDetailRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListUpStreamDetailRequest.
+        r"""Gets the end_time of this ListUpStreamDetailRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
@@ -167,7 +167,7 @@ class ListUpStreamDetailRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListUpStreamDetailRequest.
+        r"""Sets the end_time of this ListUpStreamDetailRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 

@@ -25,7 +25,7 @@ class PostPaidServerSecurityGroup:
     }
 
     def __init__(self, id=None):
-        """PostPaidServerSecurityGroup
+        r"""PostPaidServerSecurityGroup
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PostPaidServerSecurityGroup:
 
     @property
     def id(self):
-        """Gets the id of this PostPaidServerSecurityGroup.
+        r"""Gets the id of this PostPaidServerSecurityGroup.
 
         可以为空，待创建云服务器的安全组，会对创建云服务器中配置的网卡生效。需要指定已有安全组的ID，UUID格式；若不传值，底层会按照空处理，不会创建安全组。
 
@@ -54,7 +54,7 @@ class PostPaidServerSecurityGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PostPaidServerSecurityGroup.
+        r"""Sets the id of this PostPaidServerSecurityGroup.
 
         可以为空，待创建云服务器的安全组，会对创建云服务器中配置的网卡生效。需要指定已有安全组的ID，UUID格式；若不传值，底层会按照空处理，不会创建安全组。
 

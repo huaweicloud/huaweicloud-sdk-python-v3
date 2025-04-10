@@ -28,7 +28,7 @@ class ListWtpProtectHostResponse(SdkResponse):
     }
 
     def __init__(self, data_list=None, total_num=None):
-        """ListWtpProtectHostResponse
+        r"""ListWtpProtectHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListWtpProtectHostResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListWtpProtectHostResponse.
+        r"""Gets the data_list of this ListWtpProtectHostResponse.
 
         data list
 
@@ -62,7 +62,7 @@ class ListWtpProtectHostResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListWtpProtectHostResponse.
+        r"""Sets the data_list of this ListWtpProtectHostResponse.
 
         data list
 
@@ -73,7 +73,7 @@ class ListWtpProtectHostResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListWtpProtectHostResponse.
+        r"""Gets the total_num of this ListWtpProtectHostResponse.
 
         total number of WTP protected servers
 
@@ -84,7 +84,7 @@ class ListWtpProtectHostResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListWtpProtectHostResponse.
+        r"""Sets the total_num of this ListWtpProtectHostResponse.
 
         total number of WTP protected servers
 

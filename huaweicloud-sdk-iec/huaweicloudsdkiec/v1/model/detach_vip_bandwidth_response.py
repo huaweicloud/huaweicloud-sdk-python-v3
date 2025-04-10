@@ -24,7 +24,7 @@ class DetachVipBandwidthResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DetachVipBandwidthResponse
+        r"""DetachVipBandwidthResponse
 
         The model defined in huaweicloud sdk
 

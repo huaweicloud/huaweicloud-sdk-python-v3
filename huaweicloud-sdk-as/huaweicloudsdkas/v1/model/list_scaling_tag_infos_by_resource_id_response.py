@@ -28,7 +28,7 @@ class ListScalingTagInfosByResourceIdResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, sys_tags=None):
-        """ListScalingTagInfosByResourceIdResponse
+        r"""ListScalingTagInfosByResourceIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListScalingTagInfosByResourceIdResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListScalingTagInfosByResourceIdResponse.
+        r"""Gets the tags of this ListScalingTagInfosByResourceIdResponse.
 
         资源标签列表。
 
@@ -62,7 +62,7 @@ class ListScalingTagInfosByResourceIdResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListScalingTagInfosByResourceIdResponse.
+        r"""Sets the tags of this ListScalingTagInfosByResourceIdResponse.
 
         资源标签列表。
 
@@ -73,7 +73,7 @@ class ListScalingTagInfosByResourceIdResponse(SdkResponse):
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ListScalingTagInfosByResourceIdResponse.
+        r"""Gets the sys_tags of this ListScalingTagInfosByResourceIdResponse.
 
         系统资源标签列表。
 
@@ -84,7 +84,7 @@ class ListScalingTagInfosByResourceIdResponse(SdkResponse):
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ListScalingTagInfosByResourceIdResponse.
+        r"""Sets the sys_tags of this ListScalingTagInfosByResourceIdResponse.
 
         系统资源标签列表。
 

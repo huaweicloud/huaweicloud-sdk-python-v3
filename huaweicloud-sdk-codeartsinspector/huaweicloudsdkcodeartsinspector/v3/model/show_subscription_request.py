@@ -25,7 +25,7 @@ class ShowSubscriptionRequest:
     }
 
     def __init__(self, service=None):
-        """ShowSubscriptionRequest
+        r"""ShowSubscriptionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSubscriptionRequest:
 
     @property
     def service(self):
-        """Gets the service of this ShowSubscriptionRequest.
+        r"""Gets the service of this ShowSubscriptionRequest.
 
         service
 
@@ -53,7 +53,7 @@ class ShowSubscriptionRequest:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this ShowSubscriptionRequest.
+        r"""Sets the service of this ShowSubscriptionRequest.
 
         service
 

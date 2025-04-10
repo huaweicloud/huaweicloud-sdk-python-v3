@@ -25,7 +25,7 @@ class CreateEdgeNodeRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEdgeNodeRequest
+        r"""CreateEdgeNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateEdgeNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEdgeNodeRequest.
+        r"""Gets the body of this CreateEdgeNodeRequest.
 
         :return: The body of this CreateEdgeNodeRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.EdgeNodeCreation`
@@ -52,7 +52,7 @@ class CreateEdgeNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEdgeNodeRequest.
+        r"""Sets the body of this CreateEdgeNodeRequest.
 
         :param body: The body of this CreateEdgeNodeRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.EdgeNodeCreation`

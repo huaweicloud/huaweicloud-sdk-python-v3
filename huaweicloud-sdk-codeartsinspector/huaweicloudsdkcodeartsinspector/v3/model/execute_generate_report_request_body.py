@@ -25,7 +25,7 @@ class ExecuteGenerateReportRequestBody:
     }
 
     def __init__(self, task_id=None):
-        """ExecuteGenerateReportRequestBody
+        r"""ExecuteGenerateReportRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExecuteGenerateReportRequestBody:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ExecuteGenerateReportRequestBody.
+        r"""Gets the task_id of this ExecuteGenerateReportRequestBody.
 
         任务ID
 
@@ -53,7 +53,7 @@ class ExecuteGenerateReportRequestBody:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ExecuteGenerateReportRequestBody.
+        r"""Sets the task_id of this ExecuteGenerateReportRequestBody.
 
         任务ID
 

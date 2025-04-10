@@ -35,7 +35,7 @@ class ShowSubscriptionResources:
     }
 
     def __init__(self, resource_id=None, resource_spec_code=None, resource_type=None, resource_size=None, expire_time=None, status=None):
-        """ShowSubscriptionResources
+        r"""ShowSubscriptionResources
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ShowSubscriptionResources:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowSubscriptionResources.
+        r"""Gets the resource_id of this ShowSubscriptionResources.
 
         resourceId
 
@@ -89,7 +89,7 @@ class ShowSubscriptionResources:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowSubscriptionResources.
+        r"""Sets the resource_id of this ShowSubscriptionResources.
 
         resourceId
 
@@ -100,7 +100,7 @@ class ShowSubscriptionResources:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ShowSubscriptionResources.
+        r"""Gets the resource_spec_code of this ShowSubscriptionResources.
 
         resourceSpecCode
 
@@ -111,7 +111,7 @@ class ShowSubscriptionResources:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ShowSubscriptionResources.
+        r"""Sets the resource_spec_code of this ShowSubscriptionResources.
 
         resourceSpecCode
 
@@ -122,7 +122,7 @@ class ShowSubscriptionResources:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ShowSubscriptionResources.
+        r"""Gets the resource_type of this ShowSubscriptionResources.
 
         resourceType
 
@@ -133,7 +133,7 @@ class ShowSubscriptionResources:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ShowSubscriptionResources.
+        r"""Sets the resource_type of this ShowSubscriptionResources.
 
         resourceType
 
@@ -144,7 +144,7 @@ class ShowSubscriptionResources:
 
     @property
     def resource_size(self):
-        """Gets the resource_size of this ShowSubscriptionResources.
+        r"""Gets the resource_size of this ShowSubscriptionResources.
 
         resourceSize
 
@@ -155,7 +155,7 @@ class ShowSubscriptionResources:
 
     @resource_size.setter
     def resource_size(self, resource_size):
-        """Sets the resource_size of this ShowSubscriptionResources.
+        r"""Sets the resource_size of this ShowSubscriptionResources.
 
         resourceSize
 
@@ -166,7 +166,7 @@ class ShowSubscriptionResources:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ShowSubscriptionResources.
+        r"""Gets the expire_time of this ShowSubscriptionResources.
 
         expireTime
 
@@ -177,7 +177,7 @@ class ShowSubscriptionResources:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ShowSubscriptionResources.
+        r"""Sets the expire_time of this ShowSubscriptionResources.
 
         expireTime
 
@@ -188,7 +188,7 @@ class ShowSubscriptionResources:
 
     @property
     def status(self):
-        """Gets the status of this ShowSubscriptionResources.
+        r"""Gets the status of this ShowSubscriptionResources.
 
         status
 
@@ -199,7 +199,7 @@ class ShowSubscriptionResources:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowSubscriptionResources.
+        r"""Sets the status of this ShowSubscriptionResources.
 
         status
 

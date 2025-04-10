@@ -28,7 +28,7 @@ class CreateDataSourceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, job_id=None):
-        """CreateDataSourceResponse
+        r"""CreateDataSourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateDataSourceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateDataSourceResponse.
+        r"""Gets the id of this CreateDataSourceResponse.
 
         数据源id。
 
@@ -62,7 +62,7 @@ class CreateDataSourceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDataSourceResponse.
+        r"""Sets the id of this CreateDataSourceResponse.
 
         数据源id。
 
@@ -73,7 +73,7 @@ class CreateDataSourceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateDataSourceResponse.
+        r"""Gets the job_id of this CreateDataSourceResponse.
 
         创建数据源job_id。
 
@@ -84,7 +84,7 @@ class CreateDataSourceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateDataSourceResponse.
+        r"""Sets the job_id of this CreateDataSourceResponse.
 
         创建数据源job_id。
 

@@ -35,7 +35,7 @@ class ListCloudConnectionRoutesRequest:
     }
 
     def __init__(self, limit=None, marker=None, cloud_connection_id=None, instance_id=None, region_id=None, id=None):
-        """ListCloudConnectionRoutesRequest
+        r"""ListCloudConnectionRoutesRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListCloudConnectionRoutesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCloudConnectionRoutesRequest.
+        r"""Gets the limit of this ListCloudConnectionRoutesRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -89,7 +89,7 @@ class ListCloudConnectionRoutesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCloudConnectionRoutesRequest.
+        r"""Sets the limit of this ListCloudConnectionRoutesRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -100,7 +100,7 @@ class ListCloudConnectionRoutesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListCloudConnectionRoutesRequest.
+        r"""Gets the marker of this ListCloudConnectionRoutesRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -111,7 +111,7 @@ class ListCloudConnectionRoutesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListCloudConnectionRoutesRequest.
+        r"""Sets the marker of this ListCloudConnectionRoutesRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -122,7 +122,7 @@ class ListCloudConnectionRoutesRequest:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this ListCloudConnectionRoutesRequest.
+        r"""Gets the cloud_connection_id of this ListCloudConnectionRoutesRequest.
 
         根据云连接的ID过滤列表。
 
@@ -133,7 +133,7 @@ class ListCloudConnectionRoutesRequest:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this ListCloudConnectionRoutesRequest.
+        r"""Sets the cloud_connection_id of this ListCloudConnectionRoutesRequest.
 
         根据云连接的ID过滤列表。
 
@@ -144,7 +144,7 @@ class ListCloudConnectionRoutesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListCloudConnectionRoutesRequest.
+        r"""Gets the instance_id of this ListCloudConnectionRoutesRequest.
 
         根据网络实例ID过滤云连接路由条目列表。
 
@@ -155,7 +155,7 @@ class ListCloudConnectionRoutesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListCloudConnectionRoutesRequest.
+        r"""Sets the instance_id of this ListCloudConnectionRoutesRequest.
 
         根据网络实例ID过滤云连接路由条目列表。
 
@@ -166,7 +166,7 @@ class ListCloudConnectionRoutesRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListCloudConnectionRoutesRequest.
+        r"""Gets the region_id of this ListCloudConnectionRoutesRequest.
 
         根据Region ID过滤云连接路由条目列表。
 
@@ -177,7 +177,7 @@ class ListCloudConnectionRoutesRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListCloudConnectionRoutesRequest.
+        r"""Sets the region_id of this ListCloudConnectionRoutesRequest.
 
         根据Region ID过滤云连接路由条目列表。
 
@@ -188,7 +188,7 @@ class ListCloudConnectionRoutesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListCloudConnectionRoutesRequest.
+        r"""Gets the id of this ListCloudConnectionRoutesRequest.
 
         根据id查询。
 
@@ -199,7 +199,7 @@ class ListCloudConnectionRoutesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListCloudConnectionRoutesRequest.
+        r"""Sets the id of this ListCloudConnectionRoutesRequest.
 
         根据id查询。
 

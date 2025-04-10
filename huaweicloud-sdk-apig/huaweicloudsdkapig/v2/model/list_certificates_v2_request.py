@@ -39,7 +39,7 @@ class ListCertificatesV2Request:
     }
 
     def __init__(self, offset=None, limit=None, name=None, common_name=None, signature_algorithm=None, type=None, instance_id=None, algorithm_type=None):
-        """ListCertificatesV2Request
+        r"""ListCertificatesV2Request
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListCertificatesV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCertificatesV2Request.
+        r"""Gets the offset of this ListCertificatesV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -102,7 +102,7 @@ class ListCertificatesV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCertificatesV2Request.
+        r"""Sets the offset of this ListCertificatesV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -113,7 +113,7 @@ class ListCertificatesV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCertificatesV2Request.
+        r"""Gets the limit of this ListCertificatesV2Request.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -124,7 +124,7 @@ class ListCertificatesV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCertificatesV2Request.
+        r"""Sets the limit of this ListCertificatesV2Request.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -135,7 +135,7 @@ class ListCertificatesV2Request:
 
     @property
     def name(self):
-        """Gets the name of this ListCertificatesV2Request.
+        r"""Gets the name of this ListCertificatesV2Request.
 
         证书名称
 
@@ -146,7 +146,7 @@ class ListCertificatesV2Request:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCertificatesV2Request.
+        r"""Sets the name of this ListCertificatesV2Request.
 
         证书名称
 
@@ -157,7 +157,7 @@ class ListCertificatesV2Request:
 
     @property
     def common_name(self):
-        """Gets the common_name of this ListCertificatesV2Request.
+        r"""Gets the common_name of this ListCertificatesV2Request.
 
         证书域名
 
@@ -168,7 +168,7 @@ class ListCertificatesV2Request:
 
     @common_name.setter
     def common_name(self, common_name):
-        """Sets the common_name of this ListCertificatesV2Request.
+        r"""Sets the common_name of this ListCertificatesV2Request.
 
         证书域名
 
@@ -179,7 +179,7 @@ class ListCertificatesV2Request:
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this ListCertificatesV2Request.
+        r"""Gets the signature_algorithm of this ListCertificatesV2Request.
 
         证书签名算法
 
@@ -190,7 +190,7 @@ class ListCertificatesV2Request:
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this ListCertificatesV2Request.
+        r"""Sets the signature_algorithm of this ListCertificatesV2Request.
 
         证书签名算法
 
@@ -201,7 +201,7 @@ class ListCertificatesV2Request:
 
     @property
     def type(self):
-        """Gets the type of this ListCertificatesV2Request.
+        r"""Gets the type of this ListCertificatesV2Request.
 
         证书可见范围
 
@@ -212,7 +212,7 @@ class ListCertificatesV2Request:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListCertificatesV2Request.
+        r"""Sets the type of this ListCertificatesV2Request.
 
         证书可见范围
 
@@ -223,7 +223,7 @@ class ListCertificatesV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListCertificatesV2Request.
+        r"""Gets the instance_id of this ListCertificatesV2Request.
 
         证书所属实例ID
 
@@ -234,7 +234,7 @@ class ListCertificatesV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListCertificatesV2Request.
+        r"""Sets the instance_id of this ListCertificatesV2Request.
 
         证书所属实例ID
 
@@ -245,7 +245,7 @@ class ListCertificatesV2Request:
 
     @property
     def algorithm_type(self):
-        """Gets the algorithm_type of this ListCertificatesV2Request.
+        r"""Gets the algorithm_type of this ListCertificatesV2Request.
 
         证书算法类型： - RSA。 - ECC。 - SM2。
 
@@ -256,7 +256,7 @@ class ListCertificatesV2Request:
 
     @algorithm_type.setter
     def algorithm_type(self, algorithm_type):
-        """Sets the algorithm_type of this ListCertificatesV2Request.
+        r"""Sets the algorithm_type of this ListCertificatesV2Request.
 
         证书算法类型： - RSA。 - ECC。 - SM2。
 

@@ -27,7 +27,7 @@ class CreateTransferTaskReq:
     }
 
     def __init__(self, destination_type=None, obs_destination_descriptor=None):
-        """CreateTransferTaskReq
+        r"""CreateTransferTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTransferTaskReq:
 
     @property
     def destination_type(self):
-        """Gets the destination_type of this CreateTransferTaskReq.
+        r"""Gets the destination_type of this CreateTransferTaskReq.
 
         转储任务类型。  - OBS：转储到OBS - MRS：转储到MRS - DLI：转储到DLI - CLOUDTABLE：转储到CloudTable - DWS：转储到DWS
 
@@ -60,7 +60,7 @@ class CreateTransferTaskReq:
 
     @destination_type.setter
     def destination_type(self, destination_type):
-        """Sets the destination_type of this CreateTransferTaskReq.
+        r"""Sets the destination_type of this CreateTransferTaskReq.
 
         转储任务类型。  - OBS：转储到OBS - MRS：转储到MRS - DLI：转储到DLI - CLOUDTABLE：转储到CloudTable - DWS：转储到DWS
 
@@ -71,7 +71,7 @@ class CreateTransferTaskReq:
 
     @property
     def obs_destination_descriptor(self):
-        """Gets the obs_destination_descriptor of this CreateTransferTaskReq.
+        r"""Gets the obs_destination_descriptor of this CreateTransferTaskReq.
 
         :return: The obs_destination_descriptor of this CreateTransferTaskReq.
         :rtype: :class:`huaweicloudsdkdis.v2.OBSDestinationDescriptorRequest`
@@ -80,7 +80,7 @@ class CreateTransferTaskReq:
 
     @obs_destination_descriptor.setter
     def obs_destination_descriptor(self, obs_destination_descriptor):
-        """Sets the obs_destination_descriptor of this CreateTransferTaskReq.
+        r"""Sets the obs_destination_descriptor of this CreateTransferTaskReq.
 
         :param obs_destination_descriptor: The obs_destination_descriptor of this CreateTransferTaskReq.
         :type obs_destination_descriptor: :class:`huaweicloudsdkdis.v2.OBSDestinationDescriptorRequest`

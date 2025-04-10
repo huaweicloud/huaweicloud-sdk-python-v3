@@ -27,7 +27,7 @@ class AlertUserInfo:
     }
 
     def __init__(self, user_id=None, user_name=None):
-        """AlertUserInfo
+        r"""AlertUserInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AlertUserInfo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this AlertUserInfo.
+        r"""Gets the user_id of this AlertUserInfo.
 
         用户uid
 
@@ -61,7 +61,7 @@ class AlertUserInfo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this AlertUserInfo.
+        r"""Sets the user_id of this AlertUserInfo.
 
         用户uid
 
@@ -72,7 +72,7 @@ class AlertUserInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this AlertUserInfo.
+        r"""Gets the user_name of this AlertUserInfo.
 
         用户名称
 
@@ -83,7 +83,7 @@ class AlertUserInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this AlertUserInfo.
+        r"""Sets the user_name of this AlertUserInfo.
 
         用户名称
 

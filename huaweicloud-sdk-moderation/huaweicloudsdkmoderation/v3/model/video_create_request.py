@@ -37,7 +37,7 @@ class VideoCreateRequest:
     }
 
     def __init__(self, data=None, biz_type=None, event_type=None, image_categories=None, audio_categories=None, param_callback=None, seed=None):
-        """VideoCreateRequest
+        r"""VideoCreateRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class VideoCreateRequest:
 
     @property
     def data(self):
-        """Gets the data of this VideoCreateRequest.
+        r"""Gets the data of this VideoCreateRequest.
 
         :return: The data of this VideoCreateRequest.
         :rtype: :class:`huaweicloudsdkmoderation.v3.VideoCreateRequestData`
@@ -93,7 +93,7 @@ class VideoCreateRequest:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this VideoCreateRequest.
+        r"""Sets the data of this VideoCreateRequest.
 
         :param data: The data of this VideoCreateRequest.
         :type data: :class:`huaweicloudsdkmoderation.v3.VideoCreateRequestData`
@@ -102,7 +102,7 @@ class VideoCreateRequest:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this VideoCreateRequest.
+        r"""Gets the biz_type of this VideoCreateRequest.
 
         用户在控制台界面创建的biz_type名称，如果请求参数中传了biz_type则优先使用biz_type；如果用户没传biz_type则event_type和image_categories必须传。
 
@@ -113,7 +113,7 @@ class VideoCreateRequest:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this VideoCreateRequest.
+        r"""Sets the biz_type of this VideoCreateRequest.
 
         用户在控制台界面创建的biz_type名称，如果请求参数中传了biz_type则优先使用biz_type；如果用户没传biz_type则event_type和image_categories必须传。
 
@@ -124,7 +124,7 @@ class VideoCreateRequest:
 
     @property
     def event_type(self):
-        """Gets the event_type of this VideoCreateRequest.
+        r"""Gets the event_type of this VideoCreateRequest.
 
         事件类型，可选值如下： default：默认事件
 
@@ -135,7 +135,7 @@ class VideoCreateRequest:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this VideoCreateRequest.
+        r"""Sets the event_type of this VideoCreateRequest.
 
         事件类型，可选值如下： default：默认事件
 
@@ -146,7 +146,7 @@ class VideoCreateRequest:
 
     @property
     def image_categories(self):
-        """Gets the image_categories of this VideoCreateRequest.
+        r"""Gets the image_categories of this VideoCreateRequest.
 
         视频中画面需要检测的风险类型，列表不能为空。 terrorism：涉政暴恐内容的检测 porn：鉴黄内容的检测 politics：政治敏感人物内容的检测 image_text：图文违规内容的检测（检测图片中出现的广告、色情、暴恐、涉政的文字违规内容以及二维码内容）
 
@@ -157,7 +157,7 @@ class VideoCreateRequest:
 
     @image_categories.setter
     def image_categories(self, image_categories):
-        """Sets the image_categories of this VideoCreateRequest.
+        r"""Sets the image_categories of this VideoCreateRequest.
 
         视频中画面需要检测的风险类型，列表不能为空。 terrorism：涉政暴恐内容的检测 porn：鉴黄内容的检测 politics：政治敏感人物内容的检测 image_text：图文违规内容的检测（检测图片中出现的广告、色情、暴恐、涉政的文字违规内容以及二维码内容）
 
@@ -168,7 +168,7 @@ class VideoCreateRequest:
 
     @property
     def audio_categories(self):
-        """Gets the audio_categories of this VideoCreateRequest.
+        r"""Gets the audio_categories of this VideoCreateRequest.
 
         视频中音频需要检测的风险类型，不传或为空时表示不审核音频维度。 politics: 涉政检测 porn：涉黄检测 ad: 广告检测 moan: 娇喘检测 abuse: 辱骂检测
 
@@ -179,7 +179,7 @@ class VideoCreateRequest:
 
     @audio_categories.setter
     def audio_categories(self, audio_categories):
-        """Sets the audio_categories of this VideoCreateRequest.
+        r"""Sets the audio_categories of this VideoCreateRequest.
 
         视频中音频需要检测的风险类型，不传或为空时表示不审核音频维度。 politics: 涉政检测 porn：涉黄检测 ad: 广告检测 moan: 娇喘检测 abuse: 辱骂检测
 
@@ -190,7 +190,7 @@ class VideoCreateRequest:
 
     @property
     def param_callback(self):
-        """Gets the param_callback of this VideoCreateRequest.
+        r"""Gets the param_callback of this VideoCreateRequest.
 
         回调http接口：当该字段非空时，服务将根据该字段回调通知用户审核结果。
 
@@ -201,7 +201,7 @@ class VideoCreateRequest:
 
     @param_callback.setter
     def param_callback(self, param_callback):
-        """Sets the param_callback of this VideoCreateRequest.
+        r"""Sets the param_callback of this VideoCreateRequest.
 
         回调http接口：当该字段非空时，服务将根据该字段回调通知用户审核结果。
 
@@ -212,7 +212,7 @@ class VideoCreateRequest:
 
     @property
     def seed(self):
-        """Gets the seed of this VideoCreateRequest.
+        r"""Gets the seed of this VideoCreateRequest.
 
         用于回调通知时校验请求由华为云内容安全服务发起，由您自定义。随机字符串，由英文字母、数字、下划线组成，不超过64个字符。 说明：当seed非空时，headers中将包含X-Auth-Signature字段，字段的值使用HmacSHA256算法生成，待加密字符串由create_time、job_id、request_id、seed按照顺序拼接而成，密钥为seed。
 
@@ -223,7 +223,7 @@ class VideoCreateRequest:
 
     @seed.setter
     def seed(self, seed):
-        """Sets the seed of this VideoCreateRequest.
+        r"""Sets the seed of this VideoCreateRequest.
 
         用于回调通知时校验请求由华为云内容安全服务发起，由您自定义。随机字符串，由英文字母、数字、下划线组成，不超过64个字符。 说明：当seed非空时，headers中将包含X-Auth-Signature字段，字段的值使用HmacSHA256算法生成，待加密字符串由create_time、job_id、request_id、seed按照顺序拼接而成，密钥为seed。
 

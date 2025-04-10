@@ -25,7 +25,7 @@ class DeleteMsdtcLocalHostRequestBody:
     }
 
     def __init__(self, hosts=None):
-        """DeleteMsdtcLocalHostRequestBody
+        r"""DeleteMsdtcLocalHostRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteMsdtcLocalHostRequestBody:
 
     @property
     def hosts(self):
-        """Gets the hosts of this DeleteMsdtcLocalHostRequestBody.
+        r"""Gets the hosts of this DeleteMsdtcLocalHostRequestBody.
 
         删除msdtc中的host
 
@@ -54,7 +54,7 @@ class DeleteMsdtcLocalHostRequestBody:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this DeleteMsdtcLocalHostRequestBody.
+        r"""Sets the hosts of this DeleteMsdtcLocalHostRequestBody.
 
         删除msdtc中的host
 

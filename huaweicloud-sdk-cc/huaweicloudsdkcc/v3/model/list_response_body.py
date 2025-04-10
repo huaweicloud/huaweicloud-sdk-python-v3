@@ -27,7 +27,7 @@ class ListResponseBody:
     }
 
     def __init__(self, request_id=None, page_info=None):
-        """ListResponseBody
+        r"""ListResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListResponseBody:
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListResponseBody.
+        r"""Gets the request_id of this ListResponseBody.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class ListResponseBody:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListResponseBody.
+        r"""Sets the request_id of this ListResponseBody.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class ListResponseBody:
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListResponseBody.
+        r"""Gets the page_info of this ListResponseBody.
 
         :return: The page_info of this ListResponseBody.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -80,7 +80,7 @@ class ListResponseBody:
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListResponseBody.
+        r"""Sets the page_info of this ListResponseBody.
 
         :param page_info: The page_info of this ListResponseBody.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`

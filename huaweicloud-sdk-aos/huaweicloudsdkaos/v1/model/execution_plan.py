@@ -41,7 +41,7 @@ class ExecutionPlan:
     }
 
     def __init__(self, stack_name=None, stack_id=None, execution_plan_id=None, execution_plan_name=None, description=None, status=None, status_message=None, create_time=None, apply_time=None):
-        """ExecutionPlan
+        r"""ExecutionPlan
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class ExecutionPlan:
 
     @property
     def stack_name(self):
-        """Gets the stack_name of this ExecutionPlan.
+        r"""Gets the stack_name of this ExecutionPlan.
 
         资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -108,7 +108,7 @@ class ExecutionPlan:
 
     @stack_name.setter
     def stack_name(self, stack_name):
-        """Sets the stack_name of this ExecutionPlan.
+        r"""Sets the stack_name of this ExecutionPlan.
 
         资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -119,7 +119,7 @@ class ExecutionPlan:
 
     @property
     def stack_id(self):
-        """Gets the stack_id of this ExecutionPlan.
+        r"""Gets the stack_id of this ExecutionPlan.
 
         资源栈（stack）的唯一ID。  此ID由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给予的stack_id和当前资源栈的ID不一致，则返回400
 
@@ -130,7 +130,7 @@ class ExecutionPlan:
 
     @stack_id.setter
     def stack_id(self, stack_id):
-        """Sets the stack_id of this ExecutionPlan.
+        r"""Sets the stack_id of this ExecutionPlan.
 
         资源栈（stack）的唯一ID。  此ID由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给予的stack_id和当前资源栈的ID不一致，则返回400
 
@@ -141,7 +141,7 @@ class ExecutionPlan:
 
     @property
     def execution_plan_id(self):
-        """Gets the execution_plan_id of this ExecutionPlan.
+        r"""Gets the execution_plan_id of this ExecutionPlan.
 
         执行计划（execution_plan）的唯一Id。  此Id由资源编排服务在生成执行计划的时候生成，为UUID。  由于执行计划名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的执行计划，删除，再重新创建一个同名执行计划。  对于团队并行开发，用户可能希望确保，当前我操作的执行计划就是我认为的那个，而不是其他队友删除后创建的同名执行计划。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的执行计划所对应的ID都不相同，更新不会影响ID。如果给予的execution_plan_id和当前执行计划的ID不一致，则返回400  **注意：** * 创建执行计划后，资源编排服务持久化请求并立即返回，客户端不等待请求最终处理完成，用户无法实时感知请求处理结果 * 资源编排服务最终会将异步部署请求排队，在服务端空闲的情况下逐个处理。用户最大等待时长为1小时
 
@@ -152,7 +152,7 @@ class ExecutionPlan:
 
     @execution_plan_id.setter
     def execution_plan_id(self, execution_plan_id):
-        """Sets the execution_plan_id of this ExecutionPlan.
+        r"""Sets the execution_plan_id of this ExecutionPlan.
 
         执行计划（execution_plan）的唯一Id。  此Id由资源编排服务在生成执行计划的时候生成，为UUID。  由于执行计划名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的执行计划，删除，再重新创建一个同名执行计划。  对于团队并行开发，用户可能希望确保，当前我操作的执行计划就是我认为的那个，而不是其他队友删除后创建的同名执行计划。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的执行计划所对应的ID都不相同，更新不会影响ID。如果给予的execution_plan_id和当前执行计划的ID不一致，则返回400  **注意：** * 创建执行计划后，资源编排服务持久化请求并立即返回，客户端不等待请求最终处理完成，用户无法实时感知请求处理结果 * 资源编排服务最终会将异步部署请求排队，在服务端空闲的情况下逐个处理。用户最大等待时长为1小时
 
@@ -163,7 +163,7 @@ class ExecutionPlan:
 
     @property
     def execution_plan_name(self):
-        """Gets the execution_plan_name of this ExecutionPlan.
+        r"""Gets the execution_plan_name of this ExecutionPlan.
 
         执行计划的名称。此名字在domain_id+区域+project_id+stack_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -174,7 +174,7 @@ class ExecutionPlan:
 
     @execution_plan_name.setter
     def execution_plan_name(self, execution_plan_name):
-        """Sets the execution_plan_name of this ExecutionPlan.
+        r"""Sets the execution_plan_name of this ExecutionPlan.
 
         执行计划的名称。此名字在domain_id+区域+project_id+stack_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -185,7 +185,7 @@ class ExecutionPlan:
 
     @property
     def description(self):
-        """Gets the description of this ExecutionPlan.
+        r"""Gets the description of this ExecutionPlan.
 
         执行计划的描述。可用于客户识别自己的执行计划。
 
@@ -196,7 +196,7 @@ class ExecutionPlan:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ExecutionPlan.
+        r"""Sets the description of this ExecutionPlan.
 
         执行计划的描述。可用于客户识别自己的执行计划。
 
@@ -207,7 +207,7 @@ class ExecutionPlan:
 
     @property
     def status(self):
-        """Gets the status of this ExecutionPlan.
+        r"""Gets the status of this ExecutionPlan.
 
         执行计划的状态    * `CREATION_IN_PROGRESS` - 正在创建，请等待    * `CREATION_FAILED` - 创建失败，请从status_message获取错误信息汇总    * `AVAILABLE` - 创建完成，可以调用ApplyExecutionPlan API进行执行    * `APPLY_IN_PROGRESS` - 执行中，可通过GetStackMetadata查询资源栈状态，通过ListStackEvents获取执行过程中产生的资源栈事件    * `APPLIED` - 已执行
 
@@ -218,7 +218,7 @@ class ExecutionPlan:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExecutionPlan.
+        r"""Sets the status of this ExecutionPlan.
 
         执行计划的状态    * `CREATION_IN_PROGRESS` - 正在创建，请等待    * `CREATION_FAILED` - 创建失败，请从status_message获取错误信息汇总    * `AVAILABLE` - 创建完成，可以调用ApplyExecutionPlan API进行执行    * `APPLY_IN_PROGRESS` - 执行中，可通过GetStackMetadata查询资源栈状态，通过ListStackEvents获取执行过程中产生的资源栈事件    * `APPLIED` - 已执行
 
@@ -229,7 +229,7 @@ class ExecutionPlan:
 
     @property
     def status_message(self):
-        """Gets the status_message of this ExecutionPlan.
+        r"""Gets the status_message of this ExecutionPlan.
 
         当执行计划的状态为创建失败状态（即为 `CREATION_FAILED` 时），将会展示简要的错误信息总结以供debug
 
@@ -240,7 +240,7 @@ class ExecutionPlan:
 
     @status_message.setter
     def status_message(self, status_message):
-        """Sets the status_message of this ExecutionPlan.
+        r"""Sets the status_message of this ExecutionPlan.
 
         当执行计划的状态为创建失败状态（即为 `CREATION_FAILED` 时），将会展示简要的错误信息总结以供debug
 
@@ -251,7 +251,7 @@ class ExecutionPlan:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ExecutionPlan.
+        r"""Gets the create_time of this ExecutionPlan.
 
         执行计划的生成时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -262,7 +262,7 @@ class ExecutionPlan:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ExecutionPlan.
+        r"""Sets the create_time of this ExecutionPlan.
 
         执行计划的生成时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -273,7 +273,7 @@ class ExecutionPlan:
 
     @property
     def apply_time(self):
-        """Gets the apply_time of this ExecutionPlan.
+        r"""Gets the apply_time of this ExecutionPlan.
 
         执行计划的执行时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -284,7 +284,7 @@ class ExecutionPlan:
 
     @apply_time.setter
     def apply_time(self, apply_time):
-        """Sets the apply_time of this ExecutionPlan.
+        r"""Sets the apply_time of this ExecutionPlan.
 
         执行计划的执行时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 

@@ -31,7 +31,7 @@ class ModifyNodePriorityRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, node_id=None, body=None):
-        """ModifyNodePriorityRequest
+        r"""ModifyNodePriorityRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ModifyNodePriorityRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ModifyNodePriorityRequest.
+        r"""Gets the x_language of this ModifyNodePriorityRequest.
 
         语言。
 
@@ -73,7 +73,7 @@ class ModifyNodePriorityRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ModifyNodePriorityRequest.
+        r"""Sets the x_language of this ModifyNodePriorityRequest.
 
         语言。
 
@@ -84,7 +84,7 @@ class ModifyNodePriorityRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ModifyNodePriorityRequest.
+        r"""Gets the instance_id of this ModifyNodePriorityRequest.
 
         实例ID。
 
@@ -95,7 +95,7 @@ class ModifyNodePriorityRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ModifyNodePriorityRequest.
+        r"""Sets the instance_id of this ModifyNodePriorityRequest.
 
         实例ID。
 
@@ -106,7 +106,7 @@ class ModifyNodePriorityRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ModifyNodePriorityRequest.
+        r"""Gets the node_id of this ModifyNodePriorityRequest.
 
         节点ID。
 
@@ -117,7 +117,7 @@ class ModifyNodePriorityRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ModifyNodePriorityRequest.
+        r"""Sets the node_id of this ModifyNodePriorityRequest.
 
         节点ID。
 
@@ -128,7 +128,7 @@ class ModifyNodePriorityRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyNodePriorityRequest.
+        r"""Gets the body of this ModifyNodePriorityRequest.
 
         :return: The body of this ModifyNodePriorityRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyNodePriorityRequestBody`
@@ -137,7 +137,7 @@ class ModifyNodePriorityRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyNodePriorityRequest.
+        r"""Sets the body of this ModifyNodePriorityRequest.
 
         :param body: The body of this ModifyNodePriorityRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ModifyNodePriorityRequestBody`

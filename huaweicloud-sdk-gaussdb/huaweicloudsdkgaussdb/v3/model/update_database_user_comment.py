@@ -29,7 +29,7 @@ class UpdateDatabaseUserComment:
     }
 
     def __init__(self, name=None, host=None, comment=None):
-        """UpdateDatabaseUserComment
+        r"""UpdateDatabaseUserComment
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateDatabaseUserComment:
 
     @property
     def name(self):
-        """Gets the name of this UpdateDatabaseUserComment.
+        r"""Gets the name of this UpdateDatabaseUserComment.
 
         数据库用户名。
 
@@ -65,7 +65,7 @@ class UpdateDatabaseUserComment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDatabaseUserComment.
+        r"""Sets the name of this UpdateDatabaseUserComment.
 
         数据库用户名。
 
@@ -76,7 +76,7 @@ class UpdateDatabaseUserComment:
 
     @property
     def host(self):
-        """Gets the host of this UpdateDatabaseUserComment.
+        r"""Gets the host of this UpdateDatabaseUserComment.
 
         主机地址。
 
@@ -87,7 +87,7 @@ class UpdateDatabaseUserComment:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this UpdateDatabaseUserComment.
+        r"""Sets the host of this UpdateDatabaseUserComment.
 
         主机地址。
 
@@ -98,7 +98,7 @@ class UpdateDatabaseUserComment:
 
     @property
     def comment(self):
-        """Gets the comment of this UpdateDatabaseUserComment.
+        r"""Gets the comment of this UpdateDatabaseUserComment.
 
         数据库用户备注,长度不能超过512个字符，不能包含回车和特殊字符!<\"='>&。  该字段只针对新版本的实例生效，必须大于等于指定的内核版本-2.0.13.0，如果不符合内核版本要求，参考升级内核版本升级至最新。
 
@@ -109,7 +109,7 @@ class UpdateDatabaseUserComment:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this UpdateDatabaseUserComment.
+        r"""Sets the comment of this UpdateDatabaseUserComment.
 
         数据库用户备注,长度不能超过512个字符，不能包含回车和特殊字符!<\"='>&。  该字段只针对新版本的实例生效，必须大于等于指定的内核版本-2.0.13.0，如果不符合内核版本要求，参考升级内核版本升级至最新。
 

@@ -33,7 +33,7 @@ class EsListenerResponse:
     }
 
     def __init__(self, protocol=None, id=None, name=None, protocol_port=None, ipgroup=None):
-        """EsListenerResponse
+        r"""EsListenerResponse
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class EsListenerResponse:
 
     @property
     def protocol(self):
-        """Gets the protocol of this EsListenerResponse.
+        r"""Gets the protocol of this EsListenerResponse.
 
         监听器的监听协议。
 
@@ -82,7 +82,7 @@ class EsListenerResponse:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this EsListenerResponse.
+        r"""Sets the protocol of this EsListenerResponse.
 
         监听器的监听协议。
 
@@ -93,7 +93,7 @@ class EsListenerResponse:
 
     @property
     def id(self):
-        """Gets the id of this EsListenerResponse.
+        r"""Gets the id of this EsListenerResponse.
 
         监听器ID。
 
@@ -104,7 +104,7 @@ class EsListenerResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EsListenerResponse.
+        r"""Sets the id of this EsListenerResponse.
 
         监听器ID。
 
@@ -115,7 +115,7 @@ class EsListenerResponse:
 
     @property
     def name(self):
-        """Gets the name of this EsListenerResponse.
+        r"""Gets the name of this EsListenerResponse.
 
         监听器的名称。
 
@@ -126,7 +126,7 @@ class EsListenerResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EsListenerResponse.
+        r"""Sets the name of this EsListenerResponse.
 
         监听器的名称。
 
@@ -137,7 +137,7 @@ class EsListenerResponse:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this EsListenerResponse.
+        r"""Gets the protocol_port of this EsListenerResponse.
 
         监听器的前端监听端口。
 
@@ -148,7 +148,7 @@ class EsListenerResponse:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this EsListenerResponse.
+        r"""Sets the protocol_port of this EsListenerResponse.
 
         监听器的前端监听端口。
 
@@ -159,7 +159,7 @@ class EsListenerResponse:
 
     @property
     def ipgroup(self):
-        """Gets the ipgroup of this EsListenerResponse.
+        r"""Gets the ipgroup of this EsListenerResponse.
 
         :return: The ipgroup of this EsListenerResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.EsIpgroupResource`
@@ -168,7 +168,7 @@ class EsListenerResponse:
 
     @ipgroup.setter
     def ipgroup(self, ipgroup):
-        """Sets the ipgroup of this EsListenerResponse.
+        r"""Sets the ipgroup of this EsListenerResponse.
 
         :param ipgroup: The ipgroup of this EsListenerResponse.
         :type ipgroup: :class:`huaweicloudsdkcss.v1.EsIpgroupResource`

@@ -32,7 +32,7 @@ class CreateWarRoomResponse(SdkResponse):
     }
 
     def __init__(self, provider_code=None, error_code=None, error_msg=None, data=None):
-        """CreateWarRoomResponse
+        r"""CreateWarRoomResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateWarRoomResponse(SdkResponse):
 
     @property
     def provider_code(self):
-        """Gets the provider_code of this CreateWarRoomResponse.
+        r"""Gets the provider_code of this CreateWarRoomResponse.
 
         服务标识
 
@@ -76,7 +76,7 @@ class CreateWarRoomResponse(SdkResponse):
 
     @provider_code.setter
     def provider_code(self, provider_code):
-        """Sets the provider_code of this CreateWarRoomResponse.
+        r"""Sets the provider_code of this CreateWarRoomResponse.
 
         服务标识
 
@@ -87,7 +87,7 @@ class CreateWarRoomResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateWarRoomResponse.
+        r"""Gets the error_code of this CreateWarRoomResponse.
 
         请求响应代码，范围：0000~9999，正常时取值：0
 
@@ -98,7 +98,7 @@ class CreateWarRoomResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateWarRoomResponse.
+        r"""Sets the error_code of this CreateWarRoomResponse.
 
         请求响应代码，范围：0000~9999，正常时取值：0
 
@@ -109,7 +109,7 @@ class CreateWarRoomResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateWarRoomResponse.
+        r"""Gets the error_msg of this CreateWarRoomResponse.
 
         请求响应描述
 
@@ -120,7 +120,7 @@ class CreateWarRoomResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateWarRoomResponse.
+        r"""Sets the error_msg of this CreateWarRoomResponse.
 
         请求响应描述
 
@@ -131,7 +131,7 @@ class CreateWarRoomResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateWarRoomResponse.
+        r"""Gets the data of this CreateWarRoomResponse.
 
         WarRoom id
 
@@ -142,7 +142,7 @@ class CreateWarRoomResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateWarRoomResponse.
+        r"""Sets the data of this CreateWarRoomResponse.
 
         WarRoom id
 

@@ -27,7 +27,7 @@ class BatchDeleteTagsRequest:
     }
 
     def __init__(self, protected_instance_id=None, body=None):
-        """BatchDeleteTagsRequest
+        r"""BatchDeleteTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteTagsRequest:
 
     @property
     def protected_instance_id(self):
-        """Gets the protected_instance_id of this BatchDeleteTagsRequest.
+        r"""Gets the protected_instance_id of this BatchDeleteTagsRequest.
 
         保护实例的ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteTagsRequest:
 
     @protected_instance_id.setter
     def protected_instance_id(self, protected_instance_id):
-        """Sets the protected_instance_id of this BatchDeleteTagsRequest.
+        r"""Sets the protected_instance_id of this BatchDeleteTagsRequest.
 
         保护实例的ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteTagsRequest.
+        r"""Gets the body of this BatchDeleteTagsRequest.
 
         :return: The body of this BatchDeleteTagsRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.BatchDeleteTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteTagsRequest.
+        r"""Sets the body of this BatchDeleteTagsRequest.
 
         :param body: The body of this BatchDeleteTagsRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.BatchDeleteTagsRequestBody`

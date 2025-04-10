@@ -31,7 +31,7 @@ class Namespace:
     }
 
     def __init__(self, namespace_name=None, namespace_guid=None, namespace_qualified_name=None, table_count=None):
-        """Namespace
+        r"""Namespace
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Namespace:
 
     @property
     def namespace_name(self):
-        """Gets the namespace_name of this Namespace.
+        r"""Gets the namespace_name of this Namespace.
 
         命名空间的名称
 
@@ -75,7 +75,7 @@ class Namespace:
 
     @namespace_name.setter
     def namespace_name(self, namespace_name):
-        """Sets the namespace_name of this Namespace.
+        r"""Sets the namespace_name of this Namespace.
 
         命名空间的名称
 
@@ -86,7 +86,7 @@ class Namespace:
 
     @property
     def namespace_guid(self):
-        """Gets the namespace_guid of this Namespace.
+        r"""Gets the namespace_guid of this Namespace.
 
         命名空间的guid
 
@@ -97,7 +97,7 @@ class Namespace:
 
     @namespace_guid.setter
     def namespace_guid(self, namespace_guid):
-        """Sets the namespace_guid of this Namespace.
+        r"""Sets the namespace_guid of this Namespace.
 
         命名空间的guid
 
@@ -108,7 +108,7 @@ class Namespace:
 
     @property
     def namespace_qualified_name(self):
-        """Gets the namespace_qualified_name of this Namespace.
+        r"""Gets the namespace_qualified_name of this Namespace.
 
         命名空间的唯一标识名称
 
@@ -119,7 +119,7 @@ class Namespace:
 
     @namespace_qualified_name.setter
     def namespace_qualified_name(self, namespace_qualified_name):
-        """Sets the namespace_qualified_name of this Namespace.
+        r"""Sets the namespace_qualified_name of this Namespace.
 
         命名空间的唯一标识名称
 
@@ -130,7 +130,7 @@ class Namespace:
 
     @property
     def table_count(self):
-        """Gets the table_count of this Namespace.
+        r"""Gets the table_count of this Namespace.
 
         命名空间下的表总数
 
@@ -141,7 +141,7 @@ class Namespace:
 
     @table_count.setter
     def table_count(self, table_count):
-        """Sets the table_count of this Namespace.
+        r"""Sets the table_count of this Namespace.
 
         命名空间下的表总数
 

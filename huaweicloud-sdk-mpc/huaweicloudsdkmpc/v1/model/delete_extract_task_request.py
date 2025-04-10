@@ -25,7 +25,7 @@ class DeleteExtractTaskRequest:
     }
 
     def __init__(self, task_id=None):
-        """DeleteExtractTaskRequest
+        r"""DeleteExtractTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteExtractTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteExtractTaskRequest.
+        r"""Gets the task_id of this DeleteExtractTaskRequest.
 
         任务ID 
 
@@ -53,7 +53,7 @@ class DeleteExtractTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteExtractTaskRequest.
+        r"""Sets the task_id of this DeleteExtractTaskRequest.
 
         任务ID 
 

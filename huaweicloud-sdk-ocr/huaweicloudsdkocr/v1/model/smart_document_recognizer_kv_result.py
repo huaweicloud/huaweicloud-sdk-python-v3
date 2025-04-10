@@ -27,7 +27,7 @@ class SmartDocumentRecognizerKvResult:
     }
 
     def __init__(self, kv_block_count=None, kv_block_list=None):
-        """SmartDocumentRecognizerKvResult
+        r"""SmartDocumentRecognizerKvResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SmartDocumentRecognizerKvResult:
 
     @property
     def kv_block_count(self):
-        """Gets the kv_block_count of this SmartDocumentRecognizerKvResult.
+        r"""Gets the kv_block_count of this SmartDocumentRecognizerKvResult.
 
         模型识别到的键值对数量。 
 
@@ -61,7 +61,7 @@ class SmartDocumentRecognizerKvResult:
 
     @kv_block_count.setter
     def kv_block_count(self, kv_block_count):
-        """Sets the kv_block_count of this SmartDocumentRecognizerKvResult.
+        r"""Sets the kv_block_count of this SmartDocumentRecognizerKvResult.
 
         模型识别到的键值对数量。 
 
@@ -72,7 +72,7 @@ class SmartDocumentRecognizerKvResult:
 
     @property
     def kv_block_list(self):
-        """Gets the kv_block_list of this SmartDocumentRecognizerKvResult.
+        r"""Gets the kv_block_list of this SmartDocumentRecognizerKvResult.
 
         键值对识别结果列表。 
 
@@ -83,7 +83,7 @@ class SmartDocumentRecognizerKvResult:
 
     @kv_block_list.setter
     def kv_block_list(self, kv_block_list):
-        """Sets the kv_block_list of this SmartDocumentRecognizerKvResult.
+        r"""Sets the kv_block_list of this SmartDocumentRecognizerKvResult.
 
         键值对识别结果列表。 
 

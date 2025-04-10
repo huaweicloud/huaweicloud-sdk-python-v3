@@ -41,7 +41,7 @@ class ResourceShareAssociation:
     }
 
     def __init__(self, associated_entity=None, association_type=None, created_at=None, updated_at=None, external=None, resource_share_id=None, resource_share_name=None, status=None, status_message=None):
-        """ResourceShareAssociation
+        r"""ResourceShareAssociation
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ResourceShareAssociation:
 
     @property
     def associated_entity(self):
-        """Gets the associated_entity of this ResourceShareAssociation.
+        r"""Gets the associated_entity of this ResourceShareAssociation.
 
         绑定的实体。这可以是共享资源的URN、账号ID、组织根的URN或OU的URN之一。
 
@@ -103,7 +103,7 @@ class ResourceShareAssociation:
 
     @associated_entity.setter
     def associated_entity(self, associated_entity):
-        """Sets the associated_entity of this ResourceShareAssociation.
+        r"""Sets the associated_entity of this ResourceShareAssociation.
 
         绑定的实体。这可以是共享资源的URN、账号ID、组织根的URN或OU的URN之一。
 
@@ -114,7 +114,7 @@ class ResourceShareAssociation:
 
     @property
     def association_type(self):
-        """Gets the association_type of this ResourceShareAssociation.
+        r"""Gets the association_type of this ResourceShareAssociation.
 
         绑定中包含的实体类型。
 
@@ -125,7 +125,7 @@ class ResourceShareAssociation:
 
     @association_type.setter
     def association_type(self, association_type):
-        """Sets the association_type of this ResourceShareAssociation.
+        r"""Sets the association_type of this ResourceShareAssociation.
 
         绑定中包含的实体类型。
 
@@ -136,7 +136,7 @@ class ResourceShareAssociation:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ResourceShareAssociation.
+        r"""Gets the created_at of this ResourceShareAssociation.
 
         绑定被创建的时间。
 
@@ -147,7 +147,7 @@ class ResourceShareAssociation:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ResourceShareAssociation.
+        r"""Sets the created_at of this ResourceShareAssociation.
 
         绑定被创建的时间。
 
@@ -158,7 +158,7 @@ class ResourceShareAssociation:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ResourceShareAssociation.
+        r"""Gets the updated_at of this ResourceShareAssociation.
 
         最后一次更新绑定的时间。
 
@@ -169,7 +169,7 @@ class ResourceShareAssociation:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ResourceShareAssociation.
+        r"""Sets the updated_at of this ResourceShareAssociation.
 
         最后一次更新绑定的时间。
 
@@ -180,7 +180,7 @@ class ResourceShareAssociation:
 
     @property
     def external(self):
-        """Gets the external of this ResourceShareAssociation.
+        r"""Gets the external of this ResourceShareAssociation.
 
         标识资源使用者是否和共享的拥有者属于同一个组织
 
@@ -191,7 +191,7 @@ class ResourceShareAssociation:
 
     @external.setter
     def external(self, external):
-        """Sets the external of this ResourceShareAssociation.
+        r"""Sets the external of this ResourceShareAssociation.
 
         标识资源使用者是否和共享的拥有者属于同一个组织
 
@@ -202,7 +202,7 @@ class ResourceShareAssociation:
 
     @property
     def resource_share_id(self):
-        """Gets the resource_share_id of this ResourceShareAssociation.
+        r"""Gets the resource_share_id of this ResourceShareAssociation.
 
         资源共享实例的ID。
 
@@ -213,7 +213,7 @@ class ResourceShareAssociation:
 
     @resource_share_id.setter
     def resource_share_id(self, resource_share_id):
-        """Sets the resource_share_id of this ResourceShareAssociation.
+        r"""Sets the resource_share_id of this ResourceShareAssociation.
 
         资源共享实例的ID。
 
@@ -224,7 +224,7 @@ class ResourceShareAssociation:
 
     @property
     def resource_share_name(self):
-        """Gets the resource_share_name of this ResourceShareAssociation.
+        r"""Gets the resource_share_name of this ResourceShareAssociation.
 
         资源共享实例的名称。
 
@@ -235,7 +235,7 @@ class ResourceShareAssociation:
 
     @resource_share_name.setter
     def resource_share_name(self, resource_share_name):
-        """Sets the resource_share_name of this ResourceShareAssociation.
+        r"""Sets the resource_share_name of this ResourceShareAssociation.
 
         资源共享实例的名称。
 
@@ -246,7 +246,7 @@ class ResourceShareAssociation:
 
     @property
     def status(self):
-        """Gets the status of this ResourceShareAssociation.
+        r"""Gets the status of this ResourceShareAssociation.
 
         绑定的当前状态。
 
@@ -257,7 +257,7 @@ class ResourceShareAssociation:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ResourceShareAssociation.
+        r"""Sets the status of this ResourceShareAssociation.
 
         绑定的当前状态。
 
@@ -268,7 +268,7 @@ class ResourceShareAssociation:
 
     @property
     def status_message(self):
-        """Gets the status_message of this ResourceShareAssociation.
+        r"""Gets the status_message of this ResourceShareAssociation.
 
         绑定的当前状态的描述。
 
@@ -279,7 +279,7 @@ class ResourceShareAssociation:
 
     @status_message.setter
     def status_message(self, status_message):
-        """Sets the status_message of this ResourceShareAssociation.
+        r"""Sets the status_message of this ResourceShareAssociation.
 
         绑定的当前状态的描述。
 

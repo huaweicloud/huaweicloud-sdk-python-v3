@@ -37,7 +37,7 @@ class AccountBalanceV3:
     }
 
     def __init__(self, account_id=None, account_type=None, amount=None, currency=None, designated_amount=None, credit_amount=None, measure_id=None):
-        """AccountBalanceV3
+        r"""AccountBalanceV3
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class AccountBalanceV3:
 
     @property
     def account_id(self):
-        """Gets the account_id of this AccountBalanceV3.
+        r"""Gets the account_id of this AccountBalanceV3.
 
         账户标识。
 
@@ -91,7 +91,7 @@ class AccountBalanceV3:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this AccountBalanceV3.
+        r"""Sets the account_id of this AccountBalanceV3.
 
         账户标识。
 
@@ -102,7 +102,7 @@ class AccountBalanceV3:
 
     @property
     def account_type(self):
-        """Gets the account_type of this AccountBalanceV3.
+        r"""Gets the account_type of this AccountBalanceV3.
 
         账户类型。 1：余额2：信用5：奖励金7：保证金
 
@@ -113,7 +113,7 @@ class AccountBalanceV3:
 
     @account_type.setter
     def account_type(self, account_type):
-        """Sets the account_type of this AccountBalanceV3.
+        r"""Sets the account_type of this AccountBalanceV3.
 
         账户类型。 1：余额2：信用5：奖励金7：保证金
 
@@ -124,7 +124,7 @@ class AccountBalanceV3:
 
     @property
     def amount(self):
-        """Gets the amount of this AccountBalanceV3.
+        r"""Gets the amount of this AccountBalanceV3.
 
         账户余额。
 
@@ -135,7 +135,7 @@ class AccountBalanceV3:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this AccountBalanceV3.
+        r"""Sets the amount of this AccountBalanceV3.
 
         账户余额。
 
@@ -146,7 +146,7 @@ class AccountBalanceV3:
 
     @property
     def currency(self):
-        """Gets the currency of this AccountBalanceV3.
+        r"""Gets the currency of this AccountBalanceV3.
 
         币种。 USD：美元。
 
@@ -157,7 +157,7 @@ class AccountBalanceV3:
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this AccountBalanceV3.
+        r"""Sets the currency of this AccountBalanceV3.
 
         币种。 USD：美元。
 
@@ -168,7 +168,7 @@ class AccountBalanceV3:
 
     @property
     def designated_amount(self):
-        """Gets the designated_amount of this AccountBalanceV3.
+        r"""Gets the designated_amount of this AccountBalanceV3.
 
         专款专用余额。
 
@@ -179,7 +179,7 @@ class AccountBalanceV3:
 
     @designated_amount.setter
     def designated_amount(self, designated_amount):
-        """Sets the designated_amount of this AccountBalanceV3.
+        r"""Sets the designated_amount of this AccountBalanceV3.
 
         专款专用余额。
 
@@ -190,7 +190,7 @@ class AccountBalanceV3:
 
     @property
     def credit_amount(self):
-        """Gets the credit_amount of this AccountBalanceV3.
+        r"""Gets the credit_amount of this AccountBalanceV3.
 
         总信用额度，仅信用账户存在该字段。
 
@@ -201,7 +201,7 @@ class AccountBalanceV3:
 
     @credit_amount.setter
     def credit_amount(self, credit_amount):
-        """Sets the credit_amount of this AccountBalanceV3.
+        r"""Sets the credit_amount of this AccountBalanceV3.
 
         总信用额度，仅信用账户存在该字段。
 
@@ -212,7 +212,7 @@ class AccountBalanceV3:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this AccountBalanceV3.
+        r"""Gets the measure_id of this AccountBalanceV3.
 
         度量单位。 1：元
 
@@ -223,7 +223,7 @@ class AccountBalanceV3:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this AccountBalanceV3.
+        r"""Sets the measure_id of this AccountBalanceV3.
 
         度量单位。 1：元
 

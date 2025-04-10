@@ -27,7 +27,7 @@ class SecurityGroupResult:
     }
 
     def __init__(self, result=None, security_group=None):
-        """SecurityGroupResult
+        r"""SecurityGroupResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SecurityGroupResult:
 
     @property
     def result(self):
-        """Gets the result of this SecurityGroupResult.
+        r"""Gets the result of this SecurityGroupResult.
 
         :return: The result of this SecurityGroupResult.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
@@ -59,7 +59,7 @@ class SecurityGroupResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this SecurityGroupResult.
+        r"""Sets the result of this SecurityGroupResult.
 
         :param result: The result of this SecurityGroupResult.
         :type result: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
@@ -68,7 +68,7 @@ class SecurityGroupResult:
 
     @property
     def security_group(self):
-        """Gets the security_group of this SecurityGroupResult.
+        r"""Gets the security_group of this SecurityGroupResult.
 
         kerberos信息
 
@@ -79,7 +79,7 @@ class SecurityGroupResult:
 
     @security_group.setter
     def security_group(self, security_group):
-        """Sets the security_group of this SecurityGroupResult.
+        r"""Sets the security_group of this SecurityGroupResult.
 
         kerberos信息
 

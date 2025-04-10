@@ -41,7 +41,7 @@ class ExtendProductPropertiesEntity:
     }
 
     def __init__(self, max_partition_per_broker=None, max_broker=None, max_storage_per_node=None, max_consumer_per_broker=None, min_broker=None, max_bandwidth_per_broker=None, min_storage_per_node=None, max_tps_per_broker=None, product_alias=None):
-        """ExtendProductPropertiesEntity
+        r"""ExtendProductPropertiesEntity
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ExtendProductPropertiesEntity:
 
     @property
     def max_partition_per_broker(self):
-        """Gets the max_partition_per_broker of this ExtendProductPropertiesEntity.
+        r"""Gets the max_partition_per_broker of this ExtendProductPropertiesEntity.
 
         每个Broker的最大分区数。
 
@@ -110,7 +110,7 @@ class ExtendProductPropertiesEntity:
 
     @max_partition_per_broker.setter
     def max_partition_per_broker(self, max_partition_per_broker):
-        """Sets the max_partition_per_broker of this ExtendProductPropertiesEntity.
+        r"""Sets the max_partition_per_broker of this ExtendProductPropertiesEntity.
 
         每个Broker的最大分区数。
 
@@ -121,7 +121,7 @@ class ExtendProductPropertiesEntity:
 
     @property
     def max_broker(self):
-        """Gets the max_broker of this ExtendProductPropertiesEntity.
+        r"""Gets the max_broker of this ExtendProductPropertiesEntity.
 
         Broker的最大个数。
 
@@ -132,7 +132,7 @@ class ExtendProductPropertiesEntity:
 
     @max_broker.setter
     def max_broker(self, max_broker):
-        """Sets the max_broker of this ExtendProductPropertiesEntity.
+        r"""Sets the max_broker of this ExtendProductPropertiesEntity.
 
         Broker的最大个数。
 
@@ -143,7 +143,7 @@ class ExtendProductPropertiesEntity:
 
     @property
     def max_storage_per_node(self):
-        """Gets the max_storage_per_node of this ExtendProductPropertiesEntity.
+        r"""Gets the max_storage_per_node of this ExtendProductPropertiesEntity.
 
         每个节点的最大存储。单位为GB。
 
@@ -154,7 +154,7 @@ class ExtendProductPropertiesEntity:
 
     @max_storage_per_node.setter
     def max_storage_per_node(self, max_storage_per_node):
-        """Sets the max_storage_per_node of this ExtendProductPropertiesEntity.
+        r"""Sets the max_storage_per_node of this ExtendProductPropertiesEntity.
 
         每个节点的最大存储。单位为GB。
 
@@ -165,7 +165,7 @@ class ExtendProductPropertiesEntity:
 
     @property
     def max_consumer_per_broker(self):
-        """Gets the max_consumer_per_broker of this ExtendProductPropertiesEntity.
+        r"""Gets the max_consumer_per_broker of this ExtendProductPropertiesEntity.
 
         每个Broker的最大消费者数。
 
@@ -176,7 +176,7 @@ class ExtendProductPropertiesEntity:
 
     @max_consumer_per_broker.setter
     def max_consumer_per_broker(self, max_consumer_per_broker):
-        """Sets the max_consumer_per_broker of this ExtendProductPropertiesEntity.
+        r"""Sets the max_consumer_per_broker of this ExtendProductPropertiesEntity.
 
         每个Broker的最大消费者数。
 
@@ -187,7 +187,7 @@ class ExtendProductPropertiesEntity:
 
     @property
     def min_broker(self):
-        """Gets the min_broker of this ExtendProductPropertiesEntity.
+        r"""Gets the min_broker of this ExtendProductPropertiesEntity.
 
         Broker的最小个数。
 
@@ -198,7 +198,7 @@ class ExtendProductPropertiesEntity:
 
     @min_broker.setter
     def min_broker(self, min_broker):
-        """Sets the min_broker of this ExtendProductPropertiesEntity.
+        r"""Sets the min_broker of this ExtendProductPropertiesEntity.
 
         Broker的最小个数。
 
@@ -209,7 +209,7 @@ class ExtendProductPropertiesEntity:
 
     @property
     def max_bandwidth_per_broker(self):
-        """Gets the max_bandwidth_per_broker of this ExtendProductPropertiesEntity.
+        r"""Gets the max_bandwidth_per_broker of this ExtendProductPropertiesEntity.
 
         每个Broker的最大带宽。
 
@@ -220,7 +220,7 @@ class ExtendProductPropertiesEntity:
 
     @max_bandwidth_per_broker.setter
     def max_bandwidth_per_broker(self, max_bandwidth_per_broker):
-        """Sets the max_bandwidth_per_broker of this ExtendProductPropertiesEntity.
+        r"""Sets the max_bandwidth_per_broker of this ExtendProductPropertiesEntity.
 
         每个Broker的最大带宽。
 
@@ -231,7 +231,7 @@ class ExtendProductPropertiesEntity:
 
     @property
     def min_storage_per_node(self):
-        """Gets the min_storage_per_node of this ExtendProductPropertiesEntity.
+        r"""Gets the min_storage_per_node of this ExtendProductPropertiesEntity.
 
         每个节点的最小存储。单位为GB。
 
@@ -242,7 +242,7 @@ class ExtendProductPropertiesEntity:
 
     @min_storage_per_node.setter
     def min_storage_per_node(self, min_storage_per_node):
-        """Sets the min_storage_per_node of this ExtendProductPropertiesEntity.
+        r"""Sets the min_storage_per_node of this ExtendProductPropertiesEntity.
 
         每个节点的最小存储。单位为GB。
 
@@ -253,7 +253,7 @@ class ExtendProductPropertiesEntity:
 
     @property
     def max_tps_per_broker(self):
-        """Gets the max_tps_per_broker of this ExtendProductPropertiesEntity.
+        r"""Gets the max_tps_per_broker of this ExtendProductPropertiesEntity.
 
         每个Broker的最大TPS。
 
@@ -264,7 +264,7 @@ class ExtendProductPropertiesEntity:
 
     @max_tps_per_broker.setter
     def max_tps_per_broker(self, max_tps_per_broker):
-        """Sets the max_tps_per_broker of this ExtendProductPropertiesEntity.
+        r"""Sets the max_tps_per_broker of this ExtendProductPropertiesEntity.
 
         每个Broker的最大TPS。
 
@@ -275,7 +275,7 @@ class ExtendProductPropertiesEntity:
 
     @property
     def product_alias(self):
-        """Gets the product_alias of this ExtendProductPropertiesEntity.
+        r"""Gets the product_alias of this ExtendProductPropertiesEntity.
 
         product_id的别名。
 
@@ -286,7 +286,7 @@ class ExtendProductPropertiesEntity:
 
     @product_alias.setter
     def product_alias(self, product_alias):
-        """Sets the product_alias of this ExtendProductPropertiesEntity.
+        r"""Sets the product_alias of this ExtendProductPropertiesEntity.
 
         product_id的别名。
 

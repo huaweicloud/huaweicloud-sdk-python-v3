@@ -71,7 +71,7 @@ class ListCloudImagesRequest:
     }
 
     def __init__(self, region_id=None, imagetype=None, isregistered=None, os_type=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, id=None, limit=None, marker=None, name=None, owner=None, protected=None, sort_dir=None, sort_key=None, status=None, virtual_env_type=None, visibility=None):
-        """ListCloudImagesRequest
+        r"""ListCloudImagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -203,7 +203,7 @@ class ListCloudImagesRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListCloudImagesRequest.
+        r"""Gets the region_id of this ListCloudImagesRequest.
 
         华为云区域ID
 
@@ -214,7 +214,7 @@ class ListCloudImagesRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListCloudImagesRequest.
+        r"""Sets the region_id of this ListCloudImagesRequest.
 
         华为云区域ID
 
@@ -225,7 +225,7 @@ class ListCloudImagesRequest:
 
     @property
     def imagetype(self):
-        """Gets the imagetype of this ListCloudImagesRequest.
+        r"""Gets the imagetype of this ListCloudImagesRequest.
 
         镜像类型，目前支持以下类型：  - 公共镜像：gold  - 私有镜像：private
 
@@ -236,7 +236,7 @@ class ListCloudImagesRequest:
 
     @imagetype.setter
     def imagetype(self, imagetype):
-        """Sets the imagetype of this ListCloudImagesRequest.
+        r"""Sets the imagetype of this ListCloudImagesRequest.
 
         镜像类型，目前支持以下类型：  - 公共镜像：gold  - 私有镜像：private
 
@@ -247,7 +247,7 @@ class ListCloudImagesRequest:
 
     @property
     def isregistered(self):
-        """Gets the isregistered of this ListCloudImagesRequest.
+        r"""Gets the isregistered of this ListCloudImagesRequest.
 
         镜像是否可用，取值为true/false。 > 查询公共镜像时，该参数无效。
 
@@ -258,7 +258,7 @@ class ListCloudImagesRequest:
 
     @isregistered.setter
     def isregistered(self, isregistered):
-        """Sets the isregistered of this ListCloudImagesRequest.
+        r"""Sets the isregistered of this ListCloudImagesRequest.
 
         镜像是否可用，取值为true/false。 > 查询公共镜像时，该参数无效。
 
@@ -269,7 +269,7 @@ class ListCloudImagesRequest:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ListCloudImagesRequest.
+        r"""Gets the os_type of this ListCloudImagesRequest.
 
         镜像系统类型，取值如下：  - Linux - Windows - Other
 
@@ -280,7 +280,7 @@ class ListCloudImagesRequest:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ListCloudImagesRequest.
+        r"""Sets the os_type of this ListCloudImagesRequest.
 
         镜像系统类型，取值如下：  - Linux - Windows - Other
 
@@ -291,7 +291,7 @@ class ListCloudImagesRequest:
 
     @property
     def support_diskintensive(self):
-        """Gets the support_diskintensive of this ListCloudImagesRequest.
+        r"""Gets the support_diskintensive of this ListCloudImagesRequest.
 
         表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性。
 
@@ -302,7 +302,7 @@ class ListCloudImagesRequest:
 
     @support_diskintensive.setter
     def support_diskintensive(self, support_diskintensive):
-        """Sets the support_diskintensive of this ListCloudImagesRequest.
+        r"""Sets the support_diskintensive of this ListCloudImagesRequest.
 
         表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性。
 
@@ -313,7 +313,7 @@ class ListCloudImagesRequest:
 
     @property
     def support_highperformance(self):
-        """Gets the support_highperformance of this ListCloudImagesRequest.
+        r"""Gets the support_highperformance of this ListCloudImagesRequest.
 
         表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性。
 
@@ -324,7 +324,7 @@ class ListCloudImagesRequest:
 
     @support_highperformance.setter
     def support_highperformance(self, support_highperformance):
-        """Sets the support_highperformance of this ListCloudImagesRequest.
+        r"""Sets the support_highperformance of this ListCloudImagesRequest.
 
         表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性。
 
@@ -335,7 +335,7 @@ class ListCloudImagesRequest:
 
     @property
     def support_kvm(self):
-        """Gets the support_kvm of this ListCloudImagesRequest.
+        r"""Gets the support_kvm of this ListCloudImagesRequest.
 
         如果镜像支持KVM，取值为true，否则无该属性。
 
@@ -346,7 +346,7 @@ class ListCloudImagesRequest:
 
     @support_kvm.setter
     def support_kvm(self, support_kvm):
-        """Sets the support_kvm of this ListCloudImagesRequest.
+        r"""Sets the support_kvm of this ListCloudImagesRequest.
 
         如果镜像支持KVM，取值为true，否则无该属性。
 
@@ -357,7 +357,7 @@ class ListCloudImagesRequest:
 
     @property
     def support_kvm_gpu_type(self):
-        """Gets the support_kvm_gpu_type of this ListCloudImagesRequest.
+        r"""Gets the support_kvm_gpu_type of this ListCloudImagesRequest.
 
         如果镜像是支持KVM虚拟化平台下的GPU类型，取值为“V100_vGPU”或者“RTX5000”，否则无该属性。
 
@@ -368,7 +368,7 @@ class ListCloudImagesRequest:
 
     @support_kvm_gpu_type.setter
     def support_kvm_gpu_type(self, support_kvm_gpu_type):
-        """Sets the support_kvm_gpu_type of this ListCloudImagesRequest.
+        r"""Sets the support_kvm_gpu_type of this ListCloudImagesRequest.
 
         如果镜像是支持KVM虚拟化平台下的GPU类型，取值为“V100_vGPU”或者“RTX5000”，否则无该属性。
 
@@ -379,7 +379,7 @@ class ListCloudImagesRequest:
 
     @property
     def support_kvm_infiniband(self):
-        """Gets the support_kvm_infiniband of this ListCloudImagesRequest.
+        r"""Gets the support_kvm_infiniband of this ListCloudImagesRequest.
 
         如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。  该属性与“__support_xen”属性不共存。
 
@@ -390,7 +390,7 @@ class ListCloudImagesRequest:
 
     @support_kvm_infiniband.setter
     def support_kvm_infiniband(self, support_kvm_infiniband):
-        """Sets the support_kvm_infiniband of this ListCloudImagesRequest.
+        r"""Sets the support_kvm_infiniband of this ListCloudImagesRequest.
 
         如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。  该属性与“__support_xen”属性不共存。
 
@@ -401,7 +401,7 @@ class ListCloudImagesRequest:
 
     @property
     def support_largememory(self):
-        """Gets the support_largememory of this ListCloudImagesRequest.
+        r"""Gets the support_largememory of this ListCloudImagesRequest.
 
         表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性。
 
@@ -412,7 +412,7 @@ class ListCloudImagesRequest:
 
     @support_largememory.setter
     def support_largememory(self, support_largememory):
-        """Sets the support_largememory of this ListCloudImagesRequest.
+        r"""Sets the support_largememory of this ListCloudImagesRequest.
 
         表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性。
 
@@ -423,7 +423,7 @@ class ListCloudImagesRequest:
 
     @property
     def support_xen(self):
-        """Gets the support_xen of this ListCloudImagesRequest.
+        r"""Gets the support_xen of this ListCloudImagesRequest.
 
         如果镜像支持XEN，取值为true，否则无需增加该属性。
 
@@ -434,7 +434,7 @@ class ListCloudImagesRequest:
 
     @support_xen.setter
     def support_xen(self, support_xen):
-        """Sets the support_xen of this ListCloudImagesRequest.
+        r"""Sets the support_xen of this ListCloudImagesRequest.
 
         如果镜像支持XEN，取值为true，否则无需增加该属性。
 
@@ -445,7 +445,7 @@ class ListCloudImagesRequest:
 
     @property
     def support_xen_gpu_type(self):
-        """Gets the support_xen_gpu_type of this ListCloudImagesRequest.
+        r"""Gets the support_xen_gpu_type of this ListCloudImagesRequest.
 
         表示该镜像是支持XEN虚拟化平台下的GPU优化类型。如果不支持XEN虚拟化下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -456,7 +456,7 @@ class ListCloudImagesRequest:
 
     @support_xen_gpu_type.setter
     def support_xen_gpu_type(self, support_xen_gpu_type):
-        """Sets the support_xen_gpu_type of this ListCloudImagesRequest.
+        r"""Sets the support_xen_gpu_type of this ListCloudImagesRequest.
 
         表示该镜像是支持XEN虚拟化平台下的GPU优化类型。如果不支持XEN虚拟化下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -467,7 +467,7 @@ class ListCloudImagesRequest:
 
     @property
     def support_xen_hana(self):
-        """Gets the support_xen_hana of this ListCloudImagesRequest.
+        r"""Gets the support_xen_hana of this ListCloudImagesRequest.
 
         如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。  该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -478,7 +478,7 @@ class ListCloudImagesRequest:
 
     @support_xen_hana.setter
     def support_xen_hana(self, support_xen_hana):
-        """Sets the support_xen_hana of this ListCloudImagesRequest.
+        r"""Sets the support_xen_hana of this ListCloudImagesRequest.
 
         如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。  该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -489,7 +489,7 @@ class ListCloudImagesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListCloudImagesRequest.
+        r"""Gets the id of this ListCloudImagesRequest.
 
         镜像ID，精确匹配。
 
@@ -500,7 +500,7 @@ class ListCloudImagesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListCloudImagesRequest.
+        r"""Sets the id of this ListCloudImagesRequest.
 
         镜像ID，精确匹配。
 
@@ -511,7 +511,7 @@ class ListCloudImagesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCloudImagesRequest.
+        r"""Gets the limit of this ListCloudImagesRequest.
 
         用于分页，表示查询几条镜像记录，取值为正整数，最大（默认）取值为500
 
@@ -522,7 +522,7 @@ class ListCloudImagesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCloudImagesRequest.
+        r"""Sets the limit of this ListCloudImagesRequest.
 
         用于分页，表示查询几条镜像记录，取值为正整数，最大（默认）取值为500
 
@@ -533,7 +533,7 @@ class ListCloudImagesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListCloudImagesRequest.
+        r"""Gets the marker of this ListCloudImagesRequest.
 
         用于分页，表示从哪个镜像开始查询，取值为镜像ID。
 
@@ -544,7 +544,7 @@ class ListCloudImagesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListCloudImagesRequest.
+        r"""Sets the marker of this ListCloudImagesRequest.
 
         用于分页，表示从哪个镜像开始查询，取值为镜像ID。
 
@@ -555,7 +555,7 @@ class ListCloudImagesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListCloudImagesRequest.
+        r"""Gets the name of this ListCloudImagesRequest.
 
         镜像名称，匹配规则为精确匹配。
 
@@ -566,7 +566,7 @@ class ListCloudImagesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListCloudImagesRequest.
+        r"""Sets the name of this ListCloudImagesRequest.
 
         镜像名称，匹配规则为精确匹配。
 
@@ -577,7 +577,7 @@ class ListCloudImagesRequest:
 
     @property
     def owner(self):
-        """Gets the owner of this ListCloudImagesRequest.
+        r"""Gets the owner of this ListCloudImagesRequest.
 
         镜像属于哪个租户。
 
@@ -588,7 +588,7 @@ class ListCloudImagesRequest:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ListCloudImagesRequest.
+        r"""Sets the owner of this ListCloudImagesRequest.
 
         镜像属于哪个租户。
 
@@ -599,7 +599,7 @@ class ListCloudImagesRequest:
 
     @property
     def protected(self):
-        """Gets the protected of this ListCloudImagesRequest.
+        r"""Gets the protected of this ListCloudImagesRequest.
 
         镜像是否是受保护，取值为true/false，一般查询公共镜像时候取值为true，查询私有镜像可以不指定。
 
@@ -610,7 +610,7 @@ class ListCloudImagesRequest:
 
     @protected.setter
     def protected(self, protected):
-        """Sets the protected of this ListCloudImagesRequest.
+        r"""Sets the protected of this ListCloudImagesRequest.
 
         镜像是否是受保护，取值为true/false，一般查询公共镜像时候取值为true，查询私有镜像可以不指定。
 
@@ -621,7 +621,7 @@ class ListCloudImagesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListCloudImagesRequest.
+        r"""Gets the sort_dir of this ListCloudImagesRequest.
 
         用于排序，表示升序还是降序，取值为asc和desc，与sort_key一起组合使用，默认为降序desc。
 
@@ -632,7 +632,7 @@ class ListCloudImagesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListCloudImagesRequest.
+        r"""Sets the sort_dir of this ListCloudImagesRequest.
 
         用于排序，表示升序还是降序，取值为asc和desc，与sort_key一起组合使用，默认为降序desc。
 
@@ -643,7 +643,7 @@ class ListCloudImagesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListCloudImagesRequest.
+        r"""Gets the sort_key of this ListCloudImagesRequest.
 
         用于排序，表示按照哪个字段排序，取值为镜像属性name、status、disk_format、created_at，默认取值为created_at。
 
@@ -654,7 +654,7 @@ class ListCloudImagesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListCloudImagesRequest.
+        r"""Sets the sort_key of this ListCloudImagesRequest.
 
         用于排序，表示按照哪个字段排序，取值为镜像属性name、status、disk_format、created_at，默认取值为created_at。
 
@@ -665,7 +665,7 @@ class ListCloudImagesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListCloudImagesRequest.
+        r"""Gets the status of this ListCloudImagesRequest.
 
         镜像状态。取值如下：  - saving：表示镜像正在上传文件到后端存储  - deleted：表示镜像已经删除  - killed：表示镜像上传错误  - active：表示镜像可以正常使用
 
@@ -676,7 +676,7 @@ class ListCloudImagesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListCloudImagesRequest.
+        r"""Sets the status of this ListCloudImagesRequest.
 
         镜像状态。取值如下：  - saving：表示镜像正在上传文件到后端存储  - deleted：表示镜像已经删除  - killed：表示镜像上传错误  - active：表示镜像可以正常使用
 
@@ -687,7 +687,7 @@ class ListCloudImagesRequest:
 
     @property
     def virtual_env_type(self):
-        """Gets the virtual_env_type of this ListCloudImagesRequest.
+        r"""Gets the virtual_env_type of this ListCloudImagesRequest.
 
         镜像使用环境类型。  目前仅支持系统盘镜像，取值为：FusionCompute
 
@@ -698,7 +698,7 @@ class ListCloudImagesRequest:
 
     @virtual_env_type.setter
     def virtual_env_type(self, virtual_env_type):
-        """Sets the virtual_env_type of this ListCloudImagesRequest.
+        r"""Sets the virtual_env_type of this ListCloudImagesRequest.
 
         镜像使用环境类型。  目前仅支持系统盘镜像，取值为：FusionCompute
 
@@ -709,7 +709,7 @@ class ListCloudImagesRequest:
 
     @property
     def visibility(self):
-        """Gets the visibility of this ListCloudImagesRequest.
+        r"""Gets the visibility of this ListCloudImagesRequest.
 
         是否被其他租户可见，取值如下：  - public：公共镜像  - private：私有镜像
 
@@ -720,7 +720,7 @@ class ListCloudImagesRequest:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this ListCloudImagesRequest.
+        r"""Sets the visibility of this ListCloudImagesRequest.
 
         是否被其他租户可见，取值如下：  - public：公共镜像  - private：私有镜像
 

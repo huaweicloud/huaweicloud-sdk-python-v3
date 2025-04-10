@@ -25,7 +25,7 @@ class CopyCheckpointRequest:
     }
 
     def __init__(self, body=None):
-        """CopyCheckpointRequest
+        r"""CopyCheckpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CopyCheckpointRequest:
 
     @property
     def body(self):
-        """Gets the body of this CopyCheckpointRequest.
+        r"""Gets the body of this CopyCheckpointRequest.
 
         :return: The body of this CopyCheckpointRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointReplicateReq`
@@ -52,7 +52,7 @@ class CopyCheckpointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CopyCheckpointRequest.
+        r"""Sets the body of this CopyCheckpointRequest.
 
         :param body: The body of this CopyCheckpointRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.CheckpointReplicateReq`

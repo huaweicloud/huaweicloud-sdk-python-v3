@@ -29,7 +29,7 @@ class BatchResult:
     }
 
     def __init__(self, code=None, message=None, subscription_urn=None):
-        """BatchResult
+        r"""BatchResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchResult:
 
     @property
     def code(self):
-        """Gets the code of this BatchResult.
+        r"""Gets the code of this BatchResult.
 
         执行结果code
 
@@ -68,7 +68,7 @@ class BatchResult:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this BatchResult.
+        r"""Sets the code of this BatchResult.
 
         执行结果code
 
@@ -79,7 +79,7 @@ class BatchResult:
 
     @property
     def message(self):
-        """Gets the message of this BatchResult.
+        r"""Gets the message of this BatchResult.
 
         执行结果message
 
@@ -90,7 +90,7 @@ class BatchResult:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this BatchResult.
+        r"""Sets the message of this BatchResult.
 
         执行结果message
 
@@ -101,7 +101,7 @@ class BatchResult:
 
     @property
     def subscription_urn(self):
-        """Gets the subscription_urn of this BatchResult.
+        r"""Gets the subscription_urn of this BatchResult.
 
         订阅者urn
 
@@ -112,7 +112,7 @@ class BatchResult:
 
     @subscription_urn.setter
     def subscription_urn(self, subscription_urn):
-        """Sets the subscription_urn of this BatchResult.
+        r"""Sets the subscription_urn of this BatchResult.
 
         订阅者urn
 

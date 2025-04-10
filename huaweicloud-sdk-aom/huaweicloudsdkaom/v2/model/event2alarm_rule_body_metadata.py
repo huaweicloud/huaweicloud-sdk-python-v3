@@ -25,7 +25,7 @@ class Event2alarmRuleBodyMetadata:
     }
 
     def __init__(self, custom_field=None):
-        """Event2alarmRuleBodyMetadata
+        r"""Event2alarmRuleBodyMetadata
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Event2alarmRuleBodyMetadata:
 
     @property
     def custom_field(self):
-        """Gets the custom_field of this Event2alarmRuleBodyMetadata.
+        r"""Gets the custom_field of this Event2alarmRuleBodyMetadata.
 
         用户自定义标签
 
@@ -54,7 +54,7 @@ class Event2alarmRuleBodyMetadata:
 
     @custom_field.setter
     def custom_field(self, custom_field):
-        """Sets the custom_field of this Event2alarmRuleBodyMetadata.
+        r"""Sets the custom_field of this Event2alarmRuleBodyMetadata.
 
         用户自定义标签
 

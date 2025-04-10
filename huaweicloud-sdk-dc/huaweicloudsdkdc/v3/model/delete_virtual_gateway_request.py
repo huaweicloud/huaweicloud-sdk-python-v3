@@ -25,7 +25,7 @@ class DeleteVirtualGatewayRequest:
     }
 
     def __init__(self, virtual_gateway_id=None):
-        """DeleteVirtualGatewayRequest
+        r"""DeleteVirtualGatewayRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteVirtualGatewayRequest:
 
     @property
     def virtual_gateway_id(self):
-        """Gets the virtual_gateway_id of this DeleteVirtualGatewayRequest.
+        r"""Gets the virtual_gateway_id of this DeleteVirtualGatewayRequest.
 
         虚拟网关ID
 
@@ -53,7 +53,7 @@ class DeleteVirtualGatewayRequest:
 
     @virtual_gateway_id.setter
     def virtual_gateway_id(self, virtual_gateway_id):
-        """Sets the virtual_gateway_id of this DeleteVirtualGatewayRequest.
+        r"""Sets the virtual_gateway_id of this DeleteVirtualGatewayRequest.
 
         虚拟网关ID
 

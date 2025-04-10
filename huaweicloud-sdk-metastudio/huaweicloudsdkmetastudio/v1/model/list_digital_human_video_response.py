@@ -30,7 +30,7 @@ class ListDigitalHumanVideoResponse(SdkResponse):
     }
 
     def __init__(self, count=None, jobs=None, x_request_id=None):
-        """ListDigitalHumanVideoResponse
+        r"""ListDigitalHumanVideoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDigitalHumanVideoResponse.
+        r"""Gets the count of this ListDigitalHumanVideoResponse.
 
         **参数解释**： 视频制作任务总数。
 
@@ -69,7 +69,7 @@ class ListDigitalHumanVideoResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDigitalHumanVideoResponse.
+        r"""Sets the count of this ListDigitalHumanVideoResponse.
 
         **参数解释**： 视频制作任务总数。
 
@@ -80,7 +80,7 @@ class ListDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ListDigitalHumanVideoResponse.
+        r"""Gets the jobs of this ListDigitalHumanVideoResponse.
 
         视频制作任务列表。
 
@@ -91,7 +91,7 @@ class ListDigitalHumanVideoResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ListDigitalHumanVideoResponse.
+        r"""Sets the jobs of this ListDigitalHumanVideoResponse.
 
         视频制作任务列表。
 
@@ -102,7 +102,7 @@ class ListDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListDigitalHumanVideoResponse.
+        r"""Gets the x_request_id of this ListDigitalHumanVideoResponse.
 
         :return: The x_request_id of this ListDigitalHumanVideoResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListDigitalHumanVideoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListDigitalHumanVideoResponse.
+        r"""Sets the x_request_id of this ListDigitalHumanVideoResponse.
 
         :param x_request_id: The x_request_id of this ListDigitalHumanVideoResponse.
         :type x_request_id: str

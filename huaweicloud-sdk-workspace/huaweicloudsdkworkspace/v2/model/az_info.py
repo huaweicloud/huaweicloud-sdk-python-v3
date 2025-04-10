@@ -29,7 +29,7 @@ class AzInfo:
     }
 
     def __init__(self, availability_zone=None, i18n=None, default_availability_zone=None):
-        """AzInfo
+        r"""AzInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AzInfo:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this AzInfo.
+        r"""Gets the availability_zone of this AzInfo.
 
         可用区名称。
 
@@ -68,7 +68,7 @@ class AzInfo:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this AzInfo.
+        r"""Sets the availability_zone of this AzInfo.
 
         可用区名称。
 
@@ -79,7 +79,7 @@ class AzInfo:
 
     @property
     def i18n(self):
-        """Gets the i18n of this AzInfo.
+        r"""Gets the i18n of this AzInfo.
 
         :return: The i18n of this AzInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.I18n`
@@ -88,7 +88,7 @@ class AzInfo:
 
     @i18n.setter
     def i18n(self, i18n):
-        """Sets the i18n of this AzInfo.
+        r"""Sets the i18n of this AzInfo.
 
         :param i18n: The i18n of this AzInfo.
         :type i18n: :class:`huaweicloudsdkworkspace.v2.I18n`
@@ -97,7 +97,7 @@ class AzInfo:
 
     @property
     def default_availability_zone(self):
-        """Gets the default_availability_zone of this AzInfo.
+        r"""Gets the default_availability_zone of this AzInfo.
 
         是否为默认可用分区。
 
@@ -108,7 +108,7 @@ class AzInfo:
 
     @default_availability_zone.setter
     def default_availability_zone(self, default_availability_zone):
-        """Sets the default_availability_zone of this AzInfo.
+        r"""Sets the default_availability_zone of this AzInfo.
 
         是否为默认可用分区。
 

@@ -23,6 +23,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
         'description': 'str',
         'datastore_version_name': 'str',
         'datastore_name': 'str',
+        'mode': 'str',
         'created': 'str',
         'updated': 'str',
         'configuration_parameters': 'list[ConfigurationParameterResult]'
@@ -34,13 +35,14 @@ class ShowConfigurationDetailResponse(SdkResponse):
         'description': 'description',
         'datastore_version_name': 'datastore_version_name',
         'datastore_name': 'datastore_name',
+        'mode': 'mode',
         'created': 'created',
         'updated': 'updated',
         'configuration_parameters': 'configuration_parameters'
     }
 
-    def __init__(self, id=None, name=None, description=None, datastore_version_name=None, datastore_name=None, created=None, updated=None, configuration_parameters=None):
-        """ShowConfigurationDetailResponse
+    def __init__(self, id=None, name=None, description=None, datastore_version_name=None, datastore_name=None, mode=None, created=None, updated=None, configuration_parameters=None):
+        r"""ShowConfigurationDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -54,6 +56,8 @@ class ShowConfigurationDetailResponse(SdkResponse):
         :type datastore_version_name: str
         :param datastore_name: 数据库名称。
         :type datastore_name: str
+        :param mode: 【参数解释】 数据库实例类型。 【取值范围】 GeminiDB Cassandra经典部署模式集群类型为\&quot;Cluster\&quot;。 GeminiDB Cassandra云原生部署模式集群类型为\&quot;CloudNativeCluster\&quot;。 GeminiDB Mongo副本集类型为\&quot;ReplicaSet\&quot;。 GeminiDB Mongo集群类型为\&quot;Sharding\&quot;。 GeminiDB Influx经典部署模式集群类型为\&quot;Cluster\&quot;。 GeminiDB Redis经典部署模式集群类型为“Cluster”。
+        :type mode: str
         :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
         :type created: str
         :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
@@ -69,6 +73,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
         self._description = None
         self._datastore_version_name = None
         self._datastore_name = None
+        self._mode = None
         self._created = None
         self._updated = None
         self._configuration_parameters = None
@@ -84,6 +89,8 @@ class ShowConfigurationDetailResponse(SdkResponse):
             self.datastore_version_name = datastore_version_name
         if datastore_name is not None:
             self.datastore_name = datastore_name
+        if mode is not None:
+            self.mode = mode
         if created is not None:
             self.created = created
         if updated is not None:
@@ -93,7 +100,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowConfigurationDetailResponse.
+        r"""Gets the id of this ShowConfigurationDetailResponse.
 
         参数模板ID。
 
@@ -104,7 +111,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowConfigurationDetailResponse.
+        r"""Sets the id of this ShowConfigurationDetailResponse.
 
         参数模板ID。
 
@@ -115,7 +122,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowConfigurationDetailResponse.
+        r"""Gets the name of this ShowConfigurationDetailResponse.
 
         参数模板名称。
 
@@ -126,7 +133,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowConfigurationDetailResponse.
+        r"""Sets the name of this ShowConfigurationDetailResponse.
 
         参数模板名称。
 
@@ -137,7 +144,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowConfigurationDetailResponse.
+        r"""Gets the description of this ShowConfigurationDetailResponse.
 
         参数模板描述。
 
@@ -148,7 +155,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowConfigurationDetailResponse.
+        r"""Sets the description of this ShowConfigurationDetailResponse.
 
         参数模板描述。
 
@@ -159,7 +166,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
 
     @property
     def datastore_version_name(self):
-        """Gets the datastore_version_name of this ShowConfigurationDetailResponse.
+        r"""Gets the datastore_version_name of this ShowConfigurationDetailResponse.
 
         数据库版本名称。
 
@@ -170,7 +177,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
 
     @datastore_version_name.setter
     def datastore_version_name(self, datastore_version_name):
-        """Sets the datastore_version_name of this ShowConfigurationDetailResponse.
+        r"""Sets the datastore_version_name of this ShowConfigurationDetailResponse.
 
         数据库版本名称。
 
@@ -181,7 +188,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this ShowConfigurationDetailResponse.
+        r"""Gets the datastore_name of this ShowConfigurationDetailResponse.
 
         数据库名称。
 
@@ -192,7 +199,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this ShowConfigurationDetailResponse.
+        r"""Sets the datastore_name of this ShowConfigurationDetailResponse.
 
         数据库名称。
 
@@ -202,8 +209,30 @@ class ShowConfigurationDetailResponse(SdkResponse):
         self._datastore_name = datastore_name
 
     @property
+    def mode(self):
+        r"""Gets the mode of this ShowConfigurationDetailResponse.
+
+        【参数解释】 数据库实例类型。 【取值范围】 GeminiDB Cassandra经典部署模式集群类型为\"Cluster\"。 GeminiDB Cassandra云原生部署模式集群类型为\"CloudNativeCluster\"。 GeminiDB Mongo副本集类型为\"ReplicaSet\"。 GeminiDB Mongo集群类型为\"Sharding\"。 GeminiDB Influx经典部署模式集群类型为\"Cluster\"。 GeminiDB Redis经典部署模式集群类型为“Cluster”。
+
+        :return: The mode of this ShowConfigurationDetailResponse.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        r"""Sets the mode of this ShowConfigurationDetailResponse.
+
+        【参数解释】 数据库实例类型。 【取值范围】 GeminiDB Cassandra经典部署模式集群类型为\"Cluster\"。 GeminiDB Cassandra云原生部署模式集群类型为\"CloudNativeCluster\"。 GeminiDB Mongo副本集类型为\"ReplicaSet\"。 GeminiDB Mongo集群类型为\"Sharding\"。 GeminiDB Influx经典部署模式集群类型为\"Cluster\"。 GeminiDB Redis经典部署模式集群类型为“Cluster”。
+
+        :param mode: The mode of this ShowConfigurationDetailResponse.
+        :type mode: str
+        """
+        self._mode = mode
+
+    @property
     def created(self):
-        """Gets the created of this ShowConfigurationDetailResponse.
+        r"""Gets the created of this ShowConfigurationDetailResponse.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -214,7 +243,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowConfigurationDetailResponse.
+        r"""Sets the created of this ShowConfigurationDetailResponse.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -225,7 +254,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowConfigurationDetailResponse.
+        r"""Gets the updated of this ShowConfigurationDetailResponse.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -236,7 +265,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowConfigurationDetailResponse.
+        r"""Sets the updated of this ShowConfigurationDetailResponse.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -247,7 +276,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
 
     @property
     def configuration_parameters(self):
-        """Gets the configuration_parameters of this ShowConfigurationDetailResponse.
+        r"""Gets the configuration_parameters of this ShowConfigurationDetailResponse.
 
         参数对象，用户基于默认参数模板自定义的参数配置。
 
@@ -258,7 +287,7 @@ class ShowConfigurationDetailResponse(SdkResponse):
 
     @configuration_parameters.setter
     def configuration_parameters(self, configuration_parameters):
-        """Sets the configuration_parameters of this ShowConfigurationDetailResponse.
+        r"""Sets the configuration_parameters of this ShowConfigurationDetailResponse.
 
         参数对象，用户基于默认参数模板自定义的参数配置。
 

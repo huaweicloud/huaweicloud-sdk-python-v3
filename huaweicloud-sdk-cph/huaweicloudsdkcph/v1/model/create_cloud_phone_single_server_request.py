@@ -25,7 +25,7 @@ class CreateCloudPhoneSingleServerRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCloudPhoneSingleServerRequest
+        r"""CreateCloudPhoneSingleServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCloudPhoneSingleServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCloudPhoneSingleServerRequest.
+        r"""Gets the body of this CreateCloudPhoneSingleServerRequest.
 
         :return: The body of this CreateCloudPhoneSingleServerRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneSingleServerRequestBody`
@@ -52,7 +52,7 @@ class CreateCloudPhoneSingleServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCloudPhoneSingleServerRequest.
+        r"""Sets the body of this CreateCloudPhoneSingleServerRequest.
 
         :param body: The body of this CreateCloudPhoneSingleServerRequest.
         :type body: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneSingleServerRequestBody`

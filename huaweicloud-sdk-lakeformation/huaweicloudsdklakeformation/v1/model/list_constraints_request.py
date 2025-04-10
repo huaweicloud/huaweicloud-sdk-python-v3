@@ -37,7 +37,7 @@ class ListConstraintsRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name=None, type=None, parent_db=None, parent_tbl=None):
-        """ListConstraintsRequest
+        r"""ListConstraintsRequest
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class ListConstraintsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListConstraintsRequest.
+        r"""Gets the instance_id of this ListConstraintsRequest.
 
         实例ID
 
@@ -91,7 +91,7 @@ class ListConstraintsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListConstraintsRequest.
+        r"""Sets the instance_id of this ListConstraintsRequest.
 
         实例ID
 
@@ -102,7 +102,7 @@ class ListConstraintsRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ListConstraintsRequest.
+        r"""Gets the catalog_name of this ListConstraintsRequest.
 
         catalog名字
 
@@ -113,7 +113,7 @@ class ListConstraintsRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ListConstraintsRequest.
+        r"""Sets the catalog_name of this ListConstraintsRequest.
 
         catalog名字
 
@@ -124,7 +124,7 @@ class ListConstraintsRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListConstraintsRequest.
+        r"""Gets the database_name of this ListConstraintsRequest.
 
         数据库名字
 
@@ -135,7 +135,7 @@ class ListConstraintsRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListConstraintsRequest.
+        r"""Sets the database_name of this ListConstraintsRequest.
 
         数据库名字
 
@@ -146,7 +146,7 @@ class ListConstraintsRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListConstraintsRequest.
+        r"""Gets the table_name of this ListConstraintsRequest.
 
         表名称
 
@@ -157,7 +157,7 @@ class ListConstraintsRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListConstraintsRequest.
+        r"""Sets the table_name of this ListConstraintsRequest.
 
         表名称
 
@@ -168,7 +168,7 @@ class ListConstraintsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListConstraintsRequest.
+        r"""Gets the type of this ListConstraintsRequest.
 
         列限制条件类型
 
@@ -179,7 +179,7 @@ class ListConstraintsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListConstraintsRequest.
+        r"""Sets the type of this ListConstraintsRequest.
 
         列限制条件类型
 
@@ -190,7 +190,7 @@ class ListConstraintsRequest:
 
     @property
     def parent_db(self):
-        """Gets the parent_db of this ListConstraintsRequest.
+        r"""Gets the parent_db of this ListConstraintsRequest.
 
         获取表外键时使用，指定外键被引用表所在的数据库名
 
@@ -201,7 +201,7 @@ class ListConstraintsRequest:
 
     @parent_db.setter
     def parent_db(self, parent_db):
-        """Sets the parent_db of this ListConstraintsRequest.
+        r"""Sets the parent_db of this ListConstraintsRequest.
 
         获取表外键时使用，指定外键被引用表所在的数据库名
 
@@ -212,7 +212,7 @@ class ListConstraintsRequest:
 
     @property
     def parent_tbl(self):
-        """Gets the parent_tbl of this ListConstraintsRequest.
+        r"""Gets the parent_tbl of this ListConstraintsRequest.
 
         获取表外键时使用，指定外键被引用表的表名
 
@@ -223,7 +223,7 @@ class ListConstraintsRequest:
 
     @parent_tbl.setter
     def parent_tbl(self, parent_tbl):
-        """Sets the parent_tbl of this ListConstraintsRequest.
+        r"""Sets the parent_tbl of this ListConstraintsRequest.
 
         获取表外键时使用，指定外键被引用表的表名
 

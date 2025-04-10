@@ -49,7 +49,7 @@ class SlowSqlTemplate:
     }
 
     def __init__(self, sql_template=None, sql_sample=None, sql_sample_user=None, db_names=None, execute_count=None, avg_execute_time=None, max_execute_time=None, avg_lock_wait_time=None, max_lock_wait_time=None, avg_rows_examined=None, max_rows_examined=None, avg_rows_sent=None, max_rows_sent=None):
-        """SlowSqlTemplate
+        r"""SlowSqlTemplate
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class SlowSqlTemplate:
 
     @property
     def sql_template(self):
-        """Gets the sql_template of this SlowSqlTemplate.
+        r"""Gets the sql_template of this SlowSqlTemplate.
 
         SQL模板。
 
@@ -127,7 +127,7 @@ class SlowSqlTemplate:
 
     @sql_template.setter
     def sql_template(self, sql_template):
-        """Sets the sql_template of this SlowSqlTemplate.
+        r"""Sets the sql_template of this SlowSqlTemplate.
 
         SQL模板。
 
@@ -138,7 +138,7 @@ class SlowSqlTemplate:
 
     @property
     def sql_sample(self):
-        """Gets the sql_sample of this SlowSqlTemplate.
+        r"""Gets the sql_sample of this SlowSqlTemplate.
 
         SQL样本。
 
@@ -149,7 +149,7 @@ class SlowSqlTemplate:
 
     @sql_sample.setter
     def sql_sample(self, sql_sample):
-        """Sets the sql_sample of this SlowSqlTemplate.
+        r"""Sets the sql_sample of this SlowSqlTemplate.
 
         SQL样本。
 
@@ -160,7 +160,7 @@ class SlowSqlTemplate:
 
     @property
     def sql_sample_user(self):
-        """Gets the sql_sample_user of this SlowSqlTemplate.
+        r"""Gets the sql_sample_user of this SlowSqlTemplate.
 
         SQL样本执行用户。
 
@@ -171,7 +171,7 @@ class SlowSqlTemplate:
 
     @sql_sample_user.setter
     def sql_sample_user(self, sql_sample_user):
-        """Sets the sql_sample_user of this SlowSqlTemplate.
+        r"""Sets the sql_sample_user of this SlowSqlTemplate.
 
         SQL样本执行用户。
 
@@ -182,7 +182,7 @@ class SlowSqlTemplate:
 
     @property
     def db_names(self):
-        """Gets the db_names of this SlowSqlTemplate.
+        r"""Gets the db_names of this SlowSqlTemplate.
 
         库名。
 
@@ -193,7 +193,7 @@ class SlowSqlTemplate:
 
     @db_names.setter
     def db_names(self, db_names):
-        """Sets the db_names of this SlowSqlTemplate.
+        r"""Sets the db_names of this SlowSqlTemplate.
 
         库名。
 
@@ -204,7 +204,7 @@ class SlowSqlTemplate:
 
     @property
     def execute_count(self):
-        """Gets the execute_count of this SlowSqlTemplate.
+        r"""Gets the execute_count of this SlowSqlTemplate.
 
         执行次数。
 
@@ -215,7 +215,7 @@ class SlowSqlTemplate:
 
     @execute_count.setter
     def execute_count(self, execute_count):
-        """Sets the execute_count of this SlowSqlTemplate.
+        r"""Sets the execute_count of this SlowSqlTemplate.
 
         执行次数。
 
@@ -226,7 +226,7 @@ class SlowSqlTemplate:
 
     @property
     def avg_execute_time(self):
-        """Gets the avg_execute_time of this SlowSqlTemplate.
+        r"""Gets the avg_execute_time of this SlowSqlTemplate.
 
         平均执行耗时(ms)。
 
@@ -237,7 +237,7 @@ class SlowSqlTemplate:
 
     @avg_execute_time.setter
     def avg_execute_time(self, avg_execute_time):
-        """Sets the avg_execute_time of this SlowSqlTemplate.
+        r"""Sets the avg_execute_time of this SlowSqlTemplate.
 
         平均执行耗时(ms)。
 
@@ -248,7 +248,7 @@ class SlowSqlTemplate:
 
     @property
     def max_execute_time(self):
-        """Gets the max_execute_time of this SlowSqlTemplate.
+        r"""Gets the max_execute_time of this SlowSqlTemplate.
 
         最大执行耗时(ms)。
 
@@ -259,7 +259,7 @@ class SlowSqlTemplate:
 
     @max_execute_time.setter
     def max_execute_time(self, max_execute_time):
-        """Sets the max_execute_time of this SlowSqlTemplate.
+        r"""Sets the max_execute_time of this SlowSqlTemplate.
 
         最大执行耗时(ms)。
 
@@ -270,7 +270,7 @@ class SlowSqlTemplate:
 
     @property
     def avg_lock_wait_time(self):
-        """Gets the avg_lock_wait_time of this SlowSqlTemplate.
+        r"""Gets the avg_lock_wait_time of this SlowSqlTemplate.
 
         平均锁等待时间(ms)。
 
@@ -281,7 +281,7 @@ class SlowSqlTemplate:
 
     @avg_lock_wait_time.setter
     def avg_lock_wait_time(self, avg_lock_wait_time):
-        """Sets the avg_lock_wait_time of this SlowSqlTemplate.
+        r"""Sets the avg_lock_wait_time of this SlowSqlTemplate.
 
         平均锁等待时间(ms)。
 
@@ -292,7 +292,7 @@ class SlowSqlTemplate:
 
     @property
     def max_lock_wait_time(self):
-        """Gets the max_lock_wait_time of this SlowSqlTemplate.
+        r"""Gets the max_lock_wait_time of this SlowSqlTemplate.
 
         最大锁等待时间(ms)。
 
@@ -303,7 +303,7 @@ class SlowSqlTemplate:
 
     @max_lock_wait_time.setter
     def max_lock_wait_time(self, max_lock_wait_time):
-        """Sets the max_lock_wait_time of this SlowSqlTemplate.
+        r"""Sets the max_lock_wait_time of this SlowSqlTemplate.
 
         最大锁等待时间(ms)。
 
@@ -314,7 +314,7 @@ class SlowSqlTemplate:
 
     @property
     def avg_rows_examined(self):
-        """Gets the avg_rows_examined of this SlowSqlTemplate.
+        r"""Gets the avg_rows_examined of this SlowSqlTemplate.
 
         平均扫描行数。
 
@@ -325,7 +325,7 @@ class SlowSqlTemplate:
 
     @avg_rows_examined.setter
     def avg_rows_examined(self, avg_rows_examined):
-        """Sets the avg_rows_examined of this SlowSqlTemplate.
+        r"""Sets the avg_rows_examined of this SlowSqlTemplate.
 
         平均扫描行数。
 
@@ -336,7 +336,7 @@ class SlowSqlTemplate:
 
     @property
     def max_rows_examined(self):
-        """Gets the max_rows_examined of this SlowSqlTemplate.
+        r"""Gets the max_rows_examined of this SlowSqlTemplate.
 
         最大扫描行数。
 
@@ -347,7 +347,7 @@ class SlowSqlTemplate:
 
     @max_rows_examined.setter
     def max_rows_examined(self, max_rows_examined):
-        """Sets the max_rows_examined of this SlowSqlTemplate.
+        r"""Sets the max_rows_examined of this SlowSqlTemplate.
 
         最大扫描行数。
 
@@ -358,7 +358,7 @@ class SlowSqlTemplate:
 
     @property
     def avg_rows_sent(self):
-        """Gets the avg_rows_sent of this SlowSqlTemplate.
+        r"""Gets the avg_rows_sent of this SlowSqlTemplate.
 
         平均返回行数。
 
@@ -369,7 +369,7 @@ class SlowSqlTemplate:
 
     @avg_rows_sent.setter
     def avg_rows_sent(self, avg_rows_sent):
-        """Sets the avg_rows_sent of this SlowSqlTemplate.
+        r"""Sets the avg_rows_sent of this SlowSqlTemplate.
 
         平均返回行数。
 
@@ -380,7 +380,7 @@ class SlowSqlTemplate:
 
     @property
     def max_rows_sent(self):
-        """Gets the max_rows_sent of this SlowSqlTemplate.
+        r"""Gets the max_rows_sent of this SlowSqlTemplate.
 
         最大返回行数。
 
@@ -391,7 +391,7 @@ class SlowSqlTemplate:
 
     @max_rows_sent.setter
     def max_rows_sent(self, max_rows_sent):
-        """Sets the max_rows_sent of this SlowSqlTemplate.
+        r"""Sets the max_rows_sent of this SlowSqlTemplate.
 
         最大返回行数。
 

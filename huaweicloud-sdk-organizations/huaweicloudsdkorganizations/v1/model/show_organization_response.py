@@ -26,7 +26,7 @@ class ShowOrganizationResponse(SdkResponse):
     }
 
     def __init__(self, organization=None):
-        """ShowOrganizationResponse
+        r"""ShowOrganizationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowOrganizationResponse(SdkResponse):
 
     @property
     def organization(self):
-        """Gets the organization of this ShowOrganizationResponse.
+        r"""Gets the organization of this ShowOrganizationResponse.
 
         :return: The organization of this ShowOrganizationResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.OrganizationDto`
@@ -53,7 +53,7 @@ class ShowOrganizationResponse(SdkResponse):
 
     @organization.setter
     def organization(self, organization):
-        """Sets the organization of this ShowOrganizationResponse.
+        r"""Sets the organization of this ShowOrganizationResponse.
 
         :param organization: The organization of this ShowOrganizationResponse.
         :type organization: :class:`huaweicloudsdkorganizations.v1.OrganizationDto`

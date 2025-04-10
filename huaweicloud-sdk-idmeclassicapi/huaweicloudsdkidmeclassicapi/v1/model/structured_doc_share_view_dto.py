@@ -55,7 +55,7 @@ class StructuredDocShareViewDTO:
     }
 
     def __init__(self, id=None, creator=None, modifier=None, create_time=None, last_update_time=None, rdm_version=None, rdm_delete_flag=None, rdm_extension_type=None, tenant=None, class_name=None, structured_doc=None, share_user_name=None, shared_user_name=None, shared_user_id=None, auth_type=None, share_user_id=None):
-        """StructuredDocShareViewDTO
+        r"""StructuredDocShareViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this StructuredDocShareViewDTO.
+        r"""Gets the id of this StructuredDocShareViewDTO.
 
         **参数解释**：  唯一标识。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -159,7 +159,7 @@ class StructuredDocShareViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StructuredDocShareViewDTO.
+        r"""Sets the id of this StructuredDocShareViewDTO.
 
         **参数解释**：  唯一标识。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -170,7 +170,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this StructuredDocShareViewDTO.
+        r"""Gets the creator of this StructuredDocShareViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -181,7 +181,7 @@ class StructuredDocShareViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this StructuredDocShareViewDTO.
+        r"""Sets the creator of this StructuredDocShareViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -192,7 +192,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this StructuredDocShareViewDTO.
+        r"""Gets the modifier of this StructuredDocShareViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -203,7 +203,7 @@ class StructuredDocShareViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this StructuredDocShareViewDTO.
+        r"""Sets the modifier of this StructuredDocShareViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -214,7 +214,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StructuredDocShareViewDTO.
+        r"""Gets the create_time of this StructuredDocShareViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -225,7 +225,7 @@ class StructuredDocShareViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StructuredDocShareViewDTO.
+        r"""Sets the create_time of this StructuredDocShareViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -236,7 +236,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this StructuredDocShareViewDTO.
+        r"""Gets the last_update_time of this StructuredDocShareViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -247,7 +247,7 @@ class StructuredDocShareViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this StructuredDocShareViewDTO.
+        r"""Sets the last_update_time of this StructuredDocShareViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -258,7 +258,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def rdm_version(self):
-        """Gets the rdm_version of this StructuredDocShareViewDTO.
+        r"""Gets the rdm_version of this StructuredDocShareViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -269,7 +269,7 @@ class StructuredDocShareViewDTO:
 
     @rdm_version.setter
     def rdm_version(self, rdm_version):
-        """Sets the rdm_version of this StructuredDocShareViewDTO.
+        r"""Sets the rdm_version of this StructuredDocShareViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -280,7 +280,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def rdm_delete_flag(self):
-        """Gets the rdm_delete_flag of this StructuredDocShareViewDTO.
+        r"""Gets the rdm_delete_flag of this StructuredDocShareViewDTO.
 
         **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。
 
@@ -291,7 +291,7 @@ class StructuredDocShareViewDTO:
 
     @rdm_delete_flag.setter
     def rdm_delete_flag(self, rdm_delete_flag):
-        """Sets the rdm_delete_flag of this StructuredDocShareViewDTO.
+        r"""Sets the rdm_delete_flag of this StructuredDocShareViewDTO.
 
         **参数解释：**  软删除标识。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。
 
@@ -302,7 +302,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this StructuredDocShareViewDTO.
+        r"""Gets the rdm_extension_type of this StructuredDocShareViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -313,7 +313,7 @@ class StructuredDocShareViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this StructuredDocShareViewDTO.
+        r"""Sets the rdm_extension_type of this StructuredDocShareViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -324,7 +324,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this StructuredDocShareViewDTO.
+        r"""Gets the tenant of this StructuredDocShareViewDTO.
 
         :return: The tenant of this StructuredDocShareViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -333,7 +333,7 @@ class StructuredDocShareViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this StructuredDocShareViewDTO.
+        r"""Sets the tenant of this StructuredDocShareViewDTO.
 
         :param tenant: The tenant of this StructuredDocShareViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -342,7 +342,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this StructuredDocShareViewDTO.
+        r"""Gets the class_name of this StructuredDocShareViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -353,7 +353,7 @@ class StructuredDocShareViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this StructuredDocShareViewDTO.
+        r"""Sets the class_name of this StructuredDocShareViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -364,7 +364,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def structured_doc(self):
-        """Gets the structured_doc of this StructuredDocShareViewDTO.
+        r"""Gets the structured_doc of this StructuredDocShareViewDTO.
 
         :return: The structured_doc of this StructuredDocShareViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.StructuredDocView`
@@ -373,7 +373,7 @@ class StructuredDocShareViewDTO:
 
     @structured_doc.setter
     def structured_doc(self, structured_doc):
-        """Sets the structured_doc of this StructuredDocShareViewDTO.
+        r"""Sets the structured_doc of this StructuredDocShareViewDTO.
 
         :param structured_doc: The structured_doc of this StructuredDocShareViewDTO.
         :type structured_doc: :class:`huaweicloudsdkidmeclassicapi.v1.StructuredDocView`
@@ -382,7 +382,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def share_user_name(self):
-        """Gets the share_user_name of this StructuredDocShareViewDTO.
+        r"""Gets the share_user_name of this StructuredDocShareViewDTO.
 
         **参数解释**：  分享用户名。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -393,7 +393,7 @@ class StructuredDocShareViewDTO:
 
     @share_user_name.setter
     def share_user_name(self, share_user_name):
-        """Sets the share_user_name of this StructuredDocShareViewDTO.
+        r"""Sets the share_user_name of this StructuredDocShareViewDTO.
 
         **参数解释**：  分享用户名。  **约束限制**：  不涉及。  **取值范围**：  不涉及。  **默认取值**：  不涉及。
 
@@ -404,7 +404,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def shared_user_name(self):
-        """Gets the shared_user_name of this StructuredDocShareViewDTO.
+        r"""Gets the shared_user_name of this StructuredDocShareViewDTO.
 
         **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
@@ -415,7 +415,7 @@ class StructuredDocShareViewDTO:
 
     @shared_user_name.setter
     def shared_user_name(self, shared_user_name):
-        """Sets the shared_user_name of this StructuredDocShareViewDTO.
+        r"""Sets the shared_user_name of this StructuredDocShareViewDTO.
 
         **参数解释**：  被分享用户名。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
@@ -426,7 +426,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def shared_user_id(self):
-        """Gets the shared_user_id of this StructuredDocShareViewDTO.
+        r"""Gets the shared_user_id of this StructuredDocShareViewDTO.
 
         **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
@@ -437,7 +437,7 @@ class StructuredDocShareViewDTO:
 
     @shared_user_id.setter
     def shared_user_id(self, shared_user_id):
-        """Sets the shared_user_id of this StructuredDocShareViewDTO.
+        r"""Sets the shared_user_id of this StructuredDocShareViewDTO.
 
         **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
@@ -448,7 +448,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this StructuredDocShareViewDTO.
+        r"""Gets the auth_type of this StructuredDocShareViewDTO.
 
         **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
 
@@ -459,7 +459,7 @@ class StructuredDocShareViewDTO:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this StructuredDocShareViewDTO.
+        r"""Sets the auth_type of this StructuredDocShareViewDTO.
 
         **参数解释**：  认证类型。  **约束限制**：  不涉及。  **取值范围**：  - read：只读。 - write：读写。  **默认取值**：  不涉及。
 
@@ -470,7 +470,7 @@ class StructuredDocShareViewDTO:
 
     @property
     def share_user_id(self):
-        """Gets the share_user_id of this StructuredDocShareViewDTO.
+        r"""Gets the share_user_id of this StructuredDocShareViewDTO.
 
         **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 
@@ -481,7 +481,7 @@ class StructuredDocShareViewDTO:
 
     @share_user_id.setter
     def share_user_id(self, share_user_id):
-        """Sets the share_user_id of this StructuredDocShareViewDTO.
+        r"""Sets the share_user_id of this StructuredDocShareViewDTO.
 
         **参数解释**：  被分享用户UserId。  **约束限制**：  不涉及。  **取值范围**：  all：表示所有人。  **默认取值**：  不涉及。
 

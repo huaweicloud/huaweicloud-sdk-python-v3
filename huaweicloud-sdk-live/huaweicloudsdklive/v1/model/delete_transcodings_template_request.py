@@ -27,7 +27,7 @@ class DeleteTranscodingsTemplateRequest:
     }
 
     def __init__(self, domain=None, app_name=None):
-        """DeleteTranscodingsTemplateRequest
+        r"""DeleteTranscodingsTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteTranscodingsTemplateRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this DeleteTranscodingsTemplateRequest.
+        r"""Gets the domain of this DeleteTranscodingsTemplateRequest.
 
         推流域名
 
@@ -59,7 +59,7 @@ class DeleteTranscodingsTemplateRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this DeleteTranscodingsTemplateRequest.
+        r"""Sets the domain of this DeleteTranscodingsTemplateRequest.
 
         推流域名
 
@@ -70,7 +70,7 @@ class DeleteTranscodingsTemplateRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this DeleteTranscodingsTemplateRequest.
+        r"""Gets the app_name of this DeleteTranscodingsTemplateRequest.
 
         应用名称
 
@@ -81,7 +81,7 @@ class DeleteTranscodingsTemplateRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this DeleteTranscodingsTemplateRequest.
+        r"""Sets the app_name of this DeleteTranscodingsTemplateRequest.
 
         应用名称
 

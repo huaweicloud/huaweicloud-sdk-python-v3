@@ -29,7 +29,7 @@ class UpdateKnowledgeIntentRequest:
     }
 
     def __init__(self, x_app_user_id=None, intent_id=None, body=None):
-        """UpdateKnowledgeIntentRequest
+        r"""UpdateKnowledgeIntentRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateKnowledgeIntentRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this UpdateKnowledgeIntentRequest.
+        r"""Gets the x_app_user_id of this UpdateKnowledgeIntentRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -67,7 +67,7 @@ class UpdateKnowledgeIntentRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this UpdateKnowledgeIntentRequest.
+        r"""Sets the x_app_user_id of this UpdateKnowledgeIntentRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -78,7 +78,7 @@ class UpdateKnowledgeIntentRequest:
 
     @property
     def intent_id(self):
-        """Gets the intent_id of this UpdateKnowledgeIntentRequest.
+        r"""Gets the intent_id of this UpdateKnowledgeIntentRequest.
 
         意图ID。
 
@@ -89,7 +89,7 @@ class UpdateKnowledgeIntentRequest:
 
     @intent_id.setter
     def intent_id(self, intent_id):
-        """Sets the intent_id of this UpdateKnowledgeIntentRequest.
+        r"""Sets the intent_id of this UpdateKnowledgeIntentRequest.
 
         意图ID。
 
@@ -100,7 +100,7 @@ class UpdateKnowledgeIntentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateKnowledgeIntentRequest.
+        r"""Gets the body of this UpdateKnowledgeIntentRequest.
 
         :return: The body of this UpdateKnowledgeIntentRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateKnowledgeIntentReq`
@@ -109,7 +109,7 @@ class UpdateKnowledgeIntentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateKnowledgeIntentRequest.
+        r"""Sets the body of this UpdateKnowledgeIntentRequest.
 
         :param body: The body of this UpdateKnowledgeIntentRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.UpdateKnowledgeIntentReq`

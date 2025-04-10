@@ -27,7 +27,7 @@ class BatchUpdateNodeLabelRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """BatchUpdateNodeLabelRequest
+        r"""BatchUpdateNodeLabelRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchUpdateNodeLabelRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this BatchUpdateNodeLabelRequest.
+        r"""Gets the server_id of this BatchUpdateNodeLabelRequest.
 
         节点id
 
@@ -60,7 +60,7 @@ class BatchUpdateNodeLabelRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this BatchUpdateNodeLabelRequest.
+        r"""Sets the server_id of this BatchUpdateNodeLabelRequest.
 
         节点id
 
@@ -71,7 +71,7 @@ class BatchUpdateNodeLabelRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateNodeLabelRequest.
+        r"""Gets the body of this BatchUpdateNodeLabelRequest.
 
         :return: The body of this BatchUpdateNodeLabelRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchUpdateNodeLabelReq`
@@ -80,7 +80,7 @@ class BatchUpdateNodeLabelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateNodeLabelRequest.
+        r"""Sets the body of this BatchUpdateNodeLabelRequest.
 
         :param body: The body of this BatchUpdateNodeLabelRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.BatchUpdateNodeLabelReq`

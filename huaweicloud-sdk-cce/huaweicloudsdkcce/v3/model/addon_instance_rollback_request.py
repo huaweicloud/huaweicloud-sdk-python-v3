@@ -25,7 +25,7 @@ class AddonInstanceRollbackRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """AddonInstanceRollbackRequest
+        r"""AddonInstanceRollbackRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddonInstanceRollbackRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this AddonInstanceRollbackRequest.
+        r"""Gets the cluster_id of this AddonInstanceRollbackRequest.
 
         集群ID
 
@@ -53,7 +53,7 @@ class AddonInstanceRollbackRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this AddonInstanceRollbackRequest.
+        r"""Sets the cluster_id of this AddonInstanceRollbackRequest.
 
         集群ID
 

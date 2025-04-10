@@ -27,7 +27,7 @@ class BatchCreateLoadbalancerTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchCreateLoadbalancerTagsRequestBody
+        r"""BatchCreateLoadbalancerTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchCreateLoadbalancerTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchCreateLoadbalancerTagsRequestBody.
+        r"""Gets the action of this BatchCreateLoadbalancerTagsRequestBody.
 
         操作类型。 取值范围：create - 创建标签。
 
@@ -59,7 +59,7 @@ class BatchCreateLoadbalancerTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchCreateLoadbalancerTagsRequestBody.
+        r"""Sets the action of this BatchCreateLoadbalancerTagsRequestBody.
 
         操作类型。 取值范围：create - 创建标签。
 
@@ -70,7 +70,7 @@ class BatchCreateLoadbalancerTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateLoadbalancerTagsRequestBody.
+        r"""Gets the tags of this BatchCreateLoadbalancerTagsRequestBody.
 
         标签对象列表。
 
@@ -81,7 +81,7 @@ class BatchCreateLoadbalancerTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateLoadbalancerTagsRequestBody.
+        r"""Sets the tags of this BatchCreateLoadbalancerTagsRequestBody.
 
         标签对象列表。
 

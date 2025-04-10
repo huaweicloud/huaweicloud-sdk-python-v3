@@ -27,7 +27,7 @@ class BatchDeleteTagsReq:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchDeleteTagsReq
+        r"""BatchDeleteTagsReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDeleteTagsReq:
 
     @property
     def action(self):
-        """Gets the action of this BatchDeleteTagsReq.
+        r"""Gets the action of this BatchDeleteTagsReq.
 
         操作标识：仅限于delete  - delete：批量删除
 
@@ -59,7 +59,7 @@ class BatchDeleteTagsReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchDeleteTagsReq.
+        r"""Sets the action of this BatchDeleteTagsReq.
 
         操作标识：仅限于delete  - delete：批量删除
 
@@ -70,7 +70,7 @@ class BatchDeleteTagsReq:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchDeleteTagsReq.
+        r"""Gets the tags of this BatchDeleteTagsReq.
 
         标签列表。
 
@@ -81,7 +81,7 @@ class BatchDeleteTagsReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchDeleteTagsReq.
+        r"""Sets the tags of this BatchDeleteTagsReq.
 
         标签列表。
 

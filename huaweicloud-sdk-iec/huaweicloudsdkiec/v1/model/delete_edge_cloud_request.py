@@ -25,7 +25,7 @@ class DeleteEdgeCloudRequest:
     }
 
     def __init__(self, edgecloud_id=None):
-        """DeleteEdgeCloudRequest
+        r"""DeleteEdgeCloudRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteEdgeCloudRequest:
 
     @property
     def edgecloud_id(self):
-        """Gets the edgecloud_id of this DeleteEdgeCloudRequest.
+        r"""Gets the edgecloud_id of this DeleteEdgeCloudRequest.
 
         边缘业务ID。
 
@@ -53,7 +53,7 @@ class DeleteEdgeCloudRequest:
 
     @edgecloud_id.setter
     def edgecloud_id(self, edgecloud_id):
-        """Sets the edgecloud_id of this DeleteEdgeCloudRequest.
+        r"""Sets the edgecloud_id of this DeleteEdgeCloudRequest.
 
         边缘业务ID。
 

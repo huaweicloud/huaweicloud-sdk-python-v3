@@ -28,7 +28,7 @@ class PayForDgcOneKeyResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None, resource_id=None):
-        """PayForDgcOneKeyResponse
+        r"""PayForDgcOneKeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class PayForDgcOneKeyResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this PayForDgcOneKeyResponse.
+        r"""Gets the order_id of this PayForDgcOneKeyResponse.
 
         订单Id
 
@@ -62,7 +62,7 @@ class PayForDgcOneKeyResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this PayForDgcOneKeyResponse.
+        r"""Sets the order_id of this PayForDgcOneKeyResponse.
 
         订单Id
 
@@ -73,7 +73,7 @@ class PayForDgcOneKeyResponse(SdkResponse):
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this PayForDgcOneKeyResponse.
+        r"""Gets the resource_id of this PayForDgcOneKeyResponse.
 
         实例Id
 
@@ -84,7 +84,7 @@ class PayForDgcOneKeyResponse(SdkResponse):
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this PayForDgcOneKeyResponse.
+        r"""Sets the resource_id of this PayForDgcOneKeyResponse.
 
         实例Id
 

@@ -25,7 +25,7 @@ class UpdateDriverReq:
     }
 
     def __init__(self, driver_name=None):
-        """UpdateDriverReq
+        r"""UpdateDriverReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateDriverReq:
 
     @property
     def driver_name(self):
-        """Gets the driver_name of this UpdateDriverReq.
+        r"""Gets the driver_name of this UpdateDriverReq.
 
         jdbc驱动文件名称，name的长度5-64，结尾以.jar结尾。
 
@@ -53,7 +53,7 @@ class UpdateDriverReq:
 
     @driver_name.setter
     def driver_name(self, driver_name):
-        """Sets the driver_name of this UpdateDriverReq.
+        r"""Sets the driver_name of this UpdateDriverReq.
 
         jdbc驱动文件名称，name的长度5-64，结尾以.jar结尾。
 

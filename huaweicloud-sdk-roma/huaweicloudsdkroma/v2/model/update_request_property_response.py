@@ -48,7 +48,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
     }
 
     def __init__(self, property_id=None, property_name=None, description=None, data_type=None, required=None, min=None, max=None, step=None, max_length=None, unit=None, enum_list=None, enum_dict=None):
-        """UpdateRequestPropertyResponse
+        r"""UpdateRequestPropertyResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @property
     def property_id(self):
-        """Gets the property_id of this UpdateRequestPropertyResponse.
+        r"""Gets the property_id of this UpdateRequestPropertyResponse.
 
         属性ID
 
@@ -132,7 +132,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @property_id.setter
     def property_id(self, property_id):
-        """Sets the property_id of this UpdateRequestPropertyResponse.
+        r"""Sets the property_id of this UpdateRequestPropertyResponse.
 
         属性ID
 
@@ -143,7 +143,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @property
     def property_name(self):
-        """Gets the property_name of this UpdateRequestPropertyResponse.
+        r"""Gets the property_name of this UpdateRequestPropertyResponse.
 
         属性名称，首位必须为字母，支持大小写字母，数字，中划线及下划线，长度2-50
 
@@ -154,7 +154,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this UpdateRequestPropertyResponse.
+        r"""Sets the property_name of this UpdateRequestPropertyResponse.
 
         属性名称，首位必须为字母，支持大小写字母，数字，中划线及下划线，长度2-50
 
@@ -165,7 +165,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateRequestPropertyResponse.
+        r"""Gets the description of this UpdateRequestPropertyResponse.
 
         属性描述，长度0-200
 
@@ -176,7 +176,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateRequestPropertyResponse.
+        r"""Sets the description of this UpdateRequestPropertyResponse.
 
         属性描述，长度0-200
 
@@ -187,7 +187,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @property
     def data_type(self):
-        """Gets the data_type of this UpdateRequestPropertyResponse.
+        r"""Gets the data_type of this UpdateRequestPropertyResponse.
 
         属性数据类型，boolean枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；string为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式; array为数组类型
 
@@ -198,7 +198,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this UpdateRequestPropertyResponse.
+        r"""Sets the data_type of this UpdateRequestPropertyResponse.
 
         属性数据类型，boolean枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；string为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式; array为数组类型
 
@@ -209,7 +209,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @property
     def required(self):
-        """Gets the required of this UpdateRequestPropertyResponse.
+        r"""Gets the required of this UpdateRequestPropertyResponse.
 
         是否必填 0-非必填 1-必填
 
@@ -220,7 +220,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @required.setter
     def required(self, required):
-        """Sets the required of this UpdateRequestPropertyResponse.
+        r"""Sets the required of this UpdateRequestPropertyResponse.
 
         是否必填 0-非必填 1-必填
 
@@ -231,7 +231,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @property
     def min(self):
-        """Gets the min of this UpdateRequestPropertyResponse.
+        r"""Gets the min of this UpdateRequestPropertyResponse.
 
         最小值，当data_type为integer或number时有效
 
@@ -242,7 +242,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @min.setter
     def min(self, min):
-        """Sets the min of this UpdateRequestPropertyResponse.
+        r"""Sets the min of this UpdateRequestPropertyResponse.
 
         最小值，当data_type为integer或number时有效
 
@@ -253,7 +253,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @property
     def max(self):
-        """Gets the max of this UpdateRequestPropertyResponse.
+        r"""Gets the max of this UpdateRequestPropertyResponse.
 
         最大值，当data_type为integer或number时有效
 
@@ -264,7 +264,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @max.setter
     def max(self, max):
-        """Sets the max of this UpdateRequestPropertyResponse.
+        r"""Sets the max of this UpdateRequestPropertyResponse.
 
         最大值，当data_type为integer或number时有效
 
@@ -275,7 +275,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @property
     def step(self):
-        """Gets the step of this UpdateRequestPropertyResponse.
+        r"""Gets the step of this UpdateRequestPropertyResponse.
 
         步长，当data_type为integer或number时有效
 
@@ -286,7 +286,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @step.setter
     def step(self, step):
-        """Sets the step of this UpdateRequestPropertyResponse.
+        r"""Sets the step of this UpdateRequestPropertyResponse.
 
         步长，当data_type为integer或number时有效
 
@@ -297,7 +297,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @property
     def max_length(self):
-        """Gets the max_length of this UpdateRequestPropertyResponse.
+        r"""Gets the max_length of this UpdateRequestPropertyResponse.
 
         字符串最大长度，当data_type为string, datetime, json时有效
 
@@ -308,7 +308,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @max_length.setter
     def max_length(self, max_length):
-        """Sets the max_length of this UpdateRequestPropertyResponse.
+        r"""Sets the max_length of this UpdateRequestPropertyResponse.
 
         字符串最大长度，当data_type为string, datetime, json时有效
 
@@ -319,7 +319,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @property
     def unit(self):
-        """Gets the unit of this UpdateRequestPropertyResponse.
+        r"""Gets the unit of this UpdateRequestPropertyResponse.
 
         属性单位
 
@@ -330,7 +330,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this UpdateRequestPropertyResponse.
+        r"""Sets the unit of this UpdateRequestPropertyResponse.
 
         属性单位
 
@@ -341,7 +341,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @property
     def enum_list(self):
-        """Gets the enum_list of this UpdateRequestPropertyResponse.
+        r"""Gets the enum_list of this UpdateRequestPropertyResponse.
 
         string的枚举值数组，使用逗号分隔
 
@@ -352,7 +352,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @enum_list.setter
     def enum_list(self, enum_list):
-        """Sets the enum_list of this UpdateRequestPropertyResponse.
+        r"""Sets the enum_list of this UpdateRequestPropertyResponse.
 
         string的枚举值数组，使用逗号分隔
 
@@ -363,7 +363,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @property
     def enum_dict(self):
-        """Gets the enum_dict of this UpdateRequestPropertyResponse.
+        r"""Gets the enum_dict of this UpdateRequestPropertyResponse.
 
         当数据类型为boolean枚举值时填写json格式数据，形如\"enum_dict\":{\"0\":\"xxx\",\"1\":\"xxx\"}
 
@@ -374,7 +374,7 @@ class UpdateRequestPropertyResponse(SdkResponse):
 
     @enum_dict.setter
     def enum_dict(self, enum_dict):
-        """Sets the enum_dict of this UpdateRequestPropertyResponse.
+        r"""Sets the enum_dict of this UpdateRequestPropertyResponse.
 
         当数据类型为boolean枚举值时填写json格式数据，形如\"enum_dict\":{\"0\":\"xxx\",\"1\":\"xxx\"}
 

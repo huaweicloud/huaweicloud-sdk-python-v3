@@ -28,7 +28,7 @@ class ListAgentDimensionInfoResponse(SdkResponse):
     }
 
     def __init__(self, dimensions=None, count=None):
-        """ListAgentDimensionInfoResponse
+        r"""ListAgentDimensionInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAgentDimensionInfoResponse(SdkResponse):
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this ListAgentDimensionInfoResponse.
+        r"""Gets the dimensions of this ListAgentDimensionInfoResponse.
 
         维度信息
 
@@ -62,7 +62,7 @@ class ListAgentDimensionInfoResponse(SdkResponse):
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this ListAgentDimensionInfoResponse.
+        r"""Sets the dimensions of this ListAgentDimensionInfoResponse.
 
         维度信息
 
@@ -73,7 +73,7 @@ class ListAgentDimensionInfoResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAgentDimensionInfoResponse.
+        r"""Gets the count of this ListAgentDimensionInfoResponse.
 
         维度信息总数
 
@@ -84,7 +84,7 @@ class ListAgentDimensionInfoResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAgentDimensionInfoResponse.
+        r"""Sets the count of this ListAgentDimensionInfoResponse.
 
         维度信息总数
 

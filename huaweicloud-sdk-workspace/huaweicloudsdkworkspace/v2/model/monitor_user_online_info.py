@@ -33,7 +33,7 @@ class MonitorUserOnlineInfo:
     }
 
     def __init__(self, error_code=None, error_msg=None, encoded_authorization_message=None, connection_setup_time=None, connection_end_time=None):
-        """MonitorUserOnlineInfo
+        r"""MonitorUserOnlineInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MonitorUserOnlineInfo:
 
     @property
     def error_code(self):
-        """Gets the error_code of this MonitorUserOnlineInfo.
+        r"""Gets the error_code of this MonitorUserOnlineInfo.
 
         错误码。
 
@@ -82,7 +82,7 @@ class MonitorUserOnlineInfo:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this MonitorUserOnlineInfo.
+        r"""Sets the error_code of this MonitorUserOnlineInfo.
 
         错误码。
 
@@ -93,7 +93,7 @@ class MonitorUserOnlineInfo:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this MonitorUserOnlineInfo.
+        r"""Gets the error_msg of this MonitorUserOnlineInfo.
 
         错误描述。
 
@@ -104,7 +104,7 @@ class MonitorUserOnlineInfo:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this MonitorUserOnlineInfo.
+        r"""Sets the error_msg of this MonitorUserOnlineInfo.
 
         错误描述。
 
@@ -115,7 +115,7 @@ class MonitorUserOnlineInfo:
 
     @property
     def encoded_authorization_message(self):
-        """Gets the encoded_authorization_message of this MonitorUserOnlineInfo.
+        r"""Gets the encoded_authorization_message of this MonitorUserOnlineInfo.
 
         加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
 
@@ -126,7 +126,7 @@ class MonitorUserOnlineInfo:
 
     @encoded_authorization_message.setter
     def encoded_authorization_message(self, encoded_authorization_message):
-        """Sets the encoded_authorization_message of this MonitorUserOnlineInfo.
+        r"""Sets the encoded_authorization_message of this MonitorUserOnlineInfo.
 
         加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
 
@@ -137,7 +137,7 @@ class MonitorUserOnlineInfo:
 
     @property
     def connection_setup_time(self):
-        """Gets the connection_setup_time of this MonitorUserOnlineInfo.
+        r"""Gets the connection_setup_time of this MonitorUserOnlineInfo.
 
         建立连接时间
 
@@ -148,7 +148,7 @@ class MonitorUserOnlineInfo:
 
     @connection_setup_time.setter
     def connection_setup_time(self, connection_setup_time):
-        """Sets the connection_setup_time of this MonitorUserOnlineInfo.
+        r"""Sets the connection_setup_time of this MonitorUserOnlineInfo.
 
         建立连接时间
 
@@ -159,7 +159,7 @@ class MonitorUserOnlineInfo:
 
     @property
     def connection_end_time(self):
-        """Gets the connection_end_time of this MonitorUserOnlineInfo.
+        r"""Gets the connection_end_time of this MonitorUserOnlineInfo.
 
         结束连接时间
 
@@ -170,7 +170,7 @@ class MonitorUserOnlineInfo:
 
     @connection_end_time.setter
     def connection_end_time(self, connection_end_time):
-        """Sets the connection_end_time of this MonitorUserOnlineInfo.
+        r"""Sets the connection_end_time of this MonitorUserOnlineInfo.
 
         结束连接时间
 

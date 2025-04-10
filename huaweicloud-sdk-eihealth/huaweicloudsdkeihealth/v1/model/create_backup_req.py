@@ -33,7 +33,7 @@ class CreateBackupReq:
     }
 
     def __init__(self, description=None, name=None, sub_paths=None, storage_type=None, delete_archived_data=None):
-        """CreateBackupReq
+        r"""CreateBackupReq
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateBackupReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateBackupReq.
+        r"""Gets the description of this CreateBackupReq.
 
         归档描述，最大长度为1000
 
@@ -80,7 +80,7 @@ class CreateBackupReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateBackupReq.
+        r"""Sets the description of this CreateBackupReq.
 
         归档描述，最大长度为1000
 
@@ -91,7 +91,7 @@ class CreateBackupReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateBackupReq.
+        r"""Gets the name of this CreateBackupReq.
 
         归档名称,最大长度为100
 
@@ -102,7 +102,7 @@ class CreateBackupReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateBackupReq.
+        r"""Sets the name of this CreateBackupReq.
 
         归档名称,最大长度为100
 
@@ -113,7 +113,7 @@ class CreateBackupReq:
 
     @property
     def sub_paths(self):
-        """Gets the sub_paths of this CreateBackupReq.
+        r"""Gets the sub_paths of this CreateBackupReq.
 
         归档路径集
 
@@ -124,7 +124,7 @@ class CreateBackupReq:
 
     @sub_paths.setter
     def sub_paths(self, sub_paths):
-        """Sets the sub_paths of this CreateBackupReq.
+        r"""Sets the sub_paths of this CreateBackupReq.
 
         归档路径集
 
@@ -135,7 +135,7 @@ class CreateBackupReq:
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this CreateBackupReq.
+        r"""Gets the storage_type of this CreateBackupReq.
 
         :return: The storage_type of this CreateBackupReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.StorageType`
@@ -144,7 +144,7 @@ class CreateBackupReq:
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this CreateBackupReq.
+        r"""Sets the storage_type of this CreateBackupReq.
 
         :param storage_type: The storage_type of this CreateBackupReq.
         :type storage_type: :class:`huaweicloudsdkeihealth.v1.StorageType`
@@ -153,7 +153,7 @@ class CreateBackupReq:
 
     @property
     def delete_archived_data(self):
-        """Gets the delete_archived_data of this CreateBackupReq.
+        r"""Gets the delete_archived_data of this CreateBackupReq.
 
         是否删除已归档数据
 
@@ -164,7 +164,7 @@ class CreateBackupReq:
 
     @delete_archived_data.setter
     def delete_archived_data(self, delete_archived_data):
-        """Sets the delete_archived_data of this CreateBackupReq.
+        r"""Sets the delete_archived_data of this CreateBackupReq.
 
         是否删除已归档数据
 

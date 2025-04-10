@@ -24,7 +24,7 @@ class ChangeCheckRuleActionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeCheckRuleActionResponse
+        r"""ChangeCheckRuleActionResponse
 
         The model defined in huaweicloud sdk
 

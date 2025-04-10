@@ -35,7 +35,7 @@ class IntervalAlarmActionsV2:
     }
 
     def __init__(self, operation=None, limits=None, size=None, lower_bound=None, upper_bound=None, percentage=None):
-        """IntervalAlarmActionsV2
+        r"""IntervalAlarmActionsV2
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class IntervalAlarmActionsV2:
 
     @property
     def operation(self):
-        """Gets the operation of this IntervalAlarmActionsV2.
+        r"""Gets the operation of this IntervalAlarmActionsV2.
 
         操作选项，默认为ADD。 当scaling_resource_type为SCALING_GROUP，支持如下操作： ADD：增加 REMOVE/REDUCE：减少 SET：设置为 当scaling_resource_type为BANDWIDTH，支持如下操作： ADD：增加 REDUCE：减少
 
@@ -89,7 +89,7 @@ class IntervalAlarmActionsV2:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this IntervalAlarmActionsV2.
+        r"""Sets the operation of this IntervalAlarmActionsV2.
 
         操作选项，默认为ADD。 当scaling_resource_type为SCALING_GROUP，支持如下操作： ADD：增加 REMOVE/REDUCE：减少 SET：设置为 当scaling_resource_type为BANDWIDTH，支持如下操作： ADD：增加 REDUCE：减少
 
@@ -100,7 +100,7 @@ class IntervalAlarmActionsV2:
 
     @property
     def limits(self):
-        """Gets the limits of this IntervalAlarmActionsV2.
+        r"""Gets the limits of this IntervalAlarmActionsV2.
 
         操作限制。当scaling_resource_type为BANDWIDTH，且operation不为SET时，limits参数生效，单位为Mbit/s。此时，当operation为ADD时，limits表示带宽可调整的上限；当operation为REDUCE时，limits表示带宽可调整的下限。
 
@@ -111,7 +111,7 @@ class IntervalAlarmActionsV2:
 
     @limits.setter
     def limits(self, limits):
-        """Sets the limits of this IntervalAlarmActionsV2.
+        r"""Sets the limits of this IntervalAlarmActionsV2.
 
         操作限制。当scaling_resource_type为BANDWIDTH，且operation不为SET时，limits参数生效，单位为Mbit/s。此时，当operation为ADD时，limits表示带宽可调整的上限；当operation为REDUCE时，limits表示带宽可调整的下限。
 
@@ -122,7 +122,7 @@ class IntervalAlarmActionsV2:
 
     @property
     def size(self):
-        """Gets the size of this IntervalAlarmActionsV2.
+        r"""Gets the size of this IntervalAlarmActionsV2.
 
         操作大小，取值范围为0到300的整数，默认为1。当scaling_resource_type为SCALING_GROUP时，size为实例个数,取值范围为0-300的整数，默认为1。当scaling_resource_type为BANDWIDTH时，size表示带宽大小，单位为Mbit/s，取值范围为1到300的整数，默认为1。当scaling_resource_type为SCALING_GROUP时，size和percentage参数只能选其中一个进行配置。
 
@@ -133,7 +133,7 @@ class IntervalAlarmActionsV2:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this IntervalAlarmActionsV2.
+        r"""Sets the size of this IntervalAlarmActionsV2.
 
         操作大小，取值范围为0到300的整数，默认为1。当scaling_resource_type为SCALING_GROUP时，size为实例个数,取值范围为0-300的整数，默认为1。当scaling_resource_type为BANDWIDTH时，size表示带宽大小，单位为Mbit/s，取值范围为1到300的整数，默认为1。当scaling_resource_type为SCALING_GROUP时，size和percentage参数只能选其中一个进行配置。
 
@@ -144,7 +144,7 @@ class IntervalAlarmActionsV2:
 
     @property
     def lower_bound(self):
-        """Gets the lower_bound of this IntervalAlarmActionsV2.
+        r"""Gets the lower_bound of this IntervalAlarmActionsV2.
 
         :return: The lower_bound of this IntervalAlarmActionsV2.
         :rtype: float
@@ -153,7 +153,7 @@ class IntervalAlarmActionsV2:
 
     @lower_bound.setter
     def lower_bound(self, lower_bound):
-        """Sets the lower_bound of this IntervalAlarmActionsV2.
+        r"""Sets the lower_bound of this IntervalAlarmActionsV2.
 
         :param lower_bound: The lower_bound of this IntervalAlarmActionsV2.
         :type lower_bound: float
@@ -162,7 +162,7 @@ class IntervalAlarmActionsV2:
 
     @property
     def upper_bound(self):
-        """Gets the upper_bound of this IntervalAlarmActionsV2.
+        r"""Gets the upper_bound of this IntervalAlarmActionsV2.
 
         :return: The upper_bound of this IntervalAlarmActionsV2.
         :rtype: float
@@ -171,7 +171,7 @@ class IntervalAlarmActionsV2:
 
     @upper_bound.setter
     def upper_bound(self, upper_bound):
-        """Sets the upper_bound of this IntervalAlarmActionsV2.
+        r"""Sets the upper_bound of this IntervalAlarmActionsV2.
 
         :param upper_bound: The upper_bound of this IntervalAlarmActionsV2.
         :type upper_bound: float
@@ -180,7 +180,7 @@ class IntervalAlarmActionsV2:
 
     @property
     def percentage(self):
-        """Gets the percentage of this IntervalAlarmActionsV2.
+        r"""Gets the percentage of this IntervalAlarmActionsV2.
 
         操作百分比，取值为0到20000的整数。当scaling_resource_type为SCALING_GROUP时，size和instance_percentage参数均无配置，则size默认为1。当scaling_resource_type为BANDWIDTH时，不支持配置instance_percentage参数。
 
@@ -191,7 +191,7 @@ class IntervalAlarmActionsV2:
 
     @percentage.setter
     def percentage(self, percentage):
-        """Sets the percentage of this IntervalAlarmActionsV2.
+        r"""Sets the percentage of this IntervalAlarmActionsV2.
 
         操作百分比，取值为0到20000的整数。当scaling_resource_type为SCALING_GROUP时，size和instance_percentage参数均无配置，则size默认为1。当scaling_resource_type为BANDWIDTH时，不支持配置instance_percentage参数。
 

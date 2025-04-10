@@ -45,7 +45,7 @@ class EdgeNode:
     }
 
     def __init__(self, name=None, description=None, enable_gpu=None, log_configs=None, device_infos=None, enable_npu=None, npu_type=None, attributes=None, enable_docker=None, tags=None, mqtt_config=None):
-        """EdgeNode
+        r"""EdgeNode
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class EdgeNode:
 
     @property
     def name(self):
-        """Gets the name of this EdgeNode.
+        r"""Gets the name of this EdgeNode.
 
         边缘节点名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64 Name为必填字段，且本账号中唯一。
 
@@ -123,7 +123,7 @@ class EdgeNode:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EdgeNode.
+        r"""Sets the name of this EdgeNode.
 
         边缘节点名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64 Name为必填字段，且本账号中唯一。
 
@@ -134,7 +134,7 @@ class EdgeNode:
 
     @property
     def description(self):
-        """Gets the description of this EdgeNode.
+        r"""Gets the description of this EdgeNode.
 
         边缘节点描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -145,7 +145,7 @@ class EdgeNode:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EdgeNode.
+        r"""Sets the description of this EdgeNode.
 
         边缘节点描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -156,7 +156,7 @@ class EdgeNode:
 
     @property
     def enable_gpu(self):
-        """Gets the enable_gpu of this EdgeNode.
+        r"""Gets the enable_gpu of this EdgeNode.
 
         边缘节点是否开启GPU，默认为false
 
@@ -167,7 +167,7 @@ class EdgeNode:
 
     @enable_gpu.setter
     def enable_gpu(self, enable_gpu):
-        """Sets the enable_gpu of this EdgeNode.
+        r"""Sets the enable_gpu of this EdgeNode.
 
         边缘节点是否开启GPU，默认为false
 
@@ -178,7 +178,7 @@ class EdgeNode:
 
     @property
     def log_configs(self):
-        """Gets the log_configs of this EdgeNode.
+        r"""Gets the log_configs of this EdgeNode.
 
         边缘节点日志配置，当用户未配置日志相关字段时，将默认打开日志上传到云端功能。
 
@@ -189,7 +189,7 @@ class EdgeNode:
 
     @log_configs.setter
     def log_configs(self, log_configs):
-        """Sets the log_configs of this EdgeNode.
+        r"""Sets the log_configs of this EdgeNode.
 
         边缘节点日志配置，当用户未配置日志相关字段时，将默认打开日志上传到云端功能。
 
@@ -200,7 +200,7 @@ class EdgeNode:
 
     @property
     def device_infos(self):
-        """Gets the device_infos of this EdgeNode.
+        r"""Gets the device_infos of this EdgeNode.
 
         关联设备信息
 
@@ -211,7 +211,7 @@ class EdgeNode:
 
     @device_infos.setter
     def device_infos(self, device_infos):
-        """Sets the device_infos of this EdgeNode.
+        r"""Sets the device_infos of this EdgeNode.
 
         关联设备信息
 
@@ -222,7 +222,7 @@ class EdgeNode:
 
     @property
     def enable_npu(self):
-        """Gets the enable_npu of this EdgeNode.
+        r"""Gets the enable_npu of this EdgeNode.
 
         边缘节点是否开启NPU，true表示开启，false表示不开启，默认为false
 
@@ -233,7 +233,7 @@ class EdgeNode:
 
     @enable_npu.setter
     def enable_npu(self, enable_npu):
-        """Sets the enable_npu of this EdgeNode.
+        r"""Sets the enable_npu of this EdgeNode.
 
         边缘节点是否开启NPU，true表示开启，false表示不开启，默认为false
 
@@ -244,7 +244,7 @@ class EdgeNode:
 
     @property
     def npu_type(self):
-        """Gets the npu_type of this EdgeNode.
+        r"""Gets the npu_type of this EdgeNode.
 
         NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 
@@ -255,7 +255,7 @@ class EdgeNode:
 
     @npu_type.setter
     def npu_type(self, npu_type):
-        """Sets the npu_type of this EdgeNode.
+        r"""Sets the npu_type of this EdgeNode.
 
         NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 
@@ -266,7 +266,7 @@ class EdgeNode:
 
     @property
     def attributes(self):
-        """Gets the attributes of this EdgeNode.
+        r"""Gets the attributes of this EdgeNode.
 
         边缘节点属性，关联属性个数最多为32个
 
@@ -277,7 +277,7 @@ class EdgeNode:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this EdgeNode.
+        r"""Sets the attributes of this EdgeNode.
 
         边缘节点属性，关联属性个数最多为32个
 
@@ -288,7 +288,7 @@ class EdgeNode:
 
     @property
     def enable_docker(self):
-        """Gets the enable_docker of this EdgeNode.
+        r"""Gets the enable_docker of this EdgeNode.
 
         边缘节点启用Docker，默认为true
 
@@ -299,7 +299,7 @@ class EdgeNode:
 
     @enable_docker.setter
     def enable_docker(self, enable_docker):
-        """Sets the enable_docker of this EdgeNode.
+        r"""Sets the enable_docker of this EdgeNode.
 
         边缘节点启用Docker，默认为true
 
@@ -310,7 +310,7 @@ class EdgeNode:
 
     @property
     def tags(self):
-        """Gets the tags of this EdgeNode.
+        r"""Gets the tags of this EdgeNode.
 
         边缘节点标签，标签个数最多为20个
 
@@ -321,7 +321,7 @@ class EdgeNode:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this EdgeNode.
+        r"""Sets the tags of this EdgeNode.
 
         边缘节点标签，标签个数最多为20个
 
@@ -332,7 +332,7 @@ class EdgeNode:
 
     @property
     def mqtt_config(self):
-        """Gets the mqtt_config of this EdgeNode.
+        r"""Gets the mqtt_config of this EdgeNode.
 
         :return: The mqtt_config of this EdgeNode.
         :rtype: :class:`huaweicloudsdkief.v1.MqttConfigs`
@@ -341,7 +341,7 @@ class EdgeNode:
 
     @mqtt_config.setter
     def mqtt_config(self, mqtt_config):
-        """Sets the mqtt_config of this EdgeNode.
+        r"""Sets the mqtt_config of this EdgeNode.
 
         :param mqtt_config: The mqtt_config of this EdgeNode.
         :type mqtt_config: :class:`huaweicloudsdkief.v1.MqttConfigs`

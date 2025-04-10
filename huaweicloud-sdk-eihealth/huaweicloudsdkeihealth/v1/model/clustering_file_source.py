@@ -28,7 +28,7 @@ class ClusteringFileSource:
     }
 
     def __init__(self):
-        """ClusteringFileSource
+        r"""ClusteringFileSource
 
         The model defined in huaweicloud sdk
 

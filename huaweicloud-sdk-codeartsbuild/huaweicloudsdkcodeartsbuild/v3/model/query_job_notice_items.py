@@ -29,7 +29,7 @@ class QueryJobNoticeItems:
     }
 
     def __init__(self, notice_type=None, enable_map=None, param_config=None):
-        """QueryJobNoticeItems
+        r"""QueryJobNoticeItems
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QueryJobNoticeItems:
 
     @property
     def notice_type(self):
-        """Gets the notice_type of this QueryJobNoticeItems.
+        r"""Gets the notice_type of this QueryJobNoticeItems.
 
         通知类型
 
@@ -68,7 +68,7 @@ class QueryJobNoticeItems:
 
     @notice_type.setter
     def notice_type(self, notice_type):
-        """Sets the notice_type of this QueryJobNoticeItems.
+        r"""Sets the notice_type of this QueryJobNoticeItems.
 
         通知类型
 
@@ -79,7 +79,7 @@ class QueryJobNoticeItems:
 
     @property
     def enable_map(self):
-        """Gets the enable_map of this QueryJobNoticeItems.
+        r"""Gets the enable_map of this QueryJobNoticeItems.
 
         通知品种开启详情的表
 
@@ -90,7 +90,7 @@ class QueryJobNoticeItems:
 
     @enable_map.setter
     def enable_map(self, enable_map):
-        """Sets the enable_map of this QueryJobNoticeItems.
+        r"""Sets the enable_map of this QueryJobNoticeItems.
 
         通知品种开启详情的表
 
@@ -101,7 +101,7 @@ class QueryJobNoticeItems:
 
     @property
     def param_config(self):
-        """Gets the param_config of this QueryJobNoticeItems.
+        r"""Gets the param_config of this QueryJobNoticeItems.
 
         参数配置
 
@@ -112,7 +112,7 @@ class QueryJobNoticeItems:
 
     @param_config.setter
     def param_config(self, param_config):
-        """Sets the param_config of this QueryJobNoticeItems.
+        r"""Sets the param_config of this QueryJobNoticeItems.
 
         参数配置
 

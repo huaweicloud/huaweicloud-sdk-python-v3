@@ -26,7 +26,7 @@ class CreateCertificateAuthorityObsAgencyResponse(SdkResponse):
     }
 
     def __init__(self, agency_id=None):
-        """CreateCertificateAuthorityObsAgencyResponse
+        r"""CreateCertificateAuthorityObsAgencyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateCertificateAuthorityObsAgencyResponse(SdkResponse):
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this CreateCertificateAuthorityObsAgencyResponse.
+        r"""Gets the agency_id of this CreateCertificateAuthorityObsAgencyResponse.
 
         创建OBS委托，由IAM返回的授权ID。
 
@@ -55,7 +55,7 @@ class CreateCertificateAuthorityObsAgencyResponse(SdkResponse):
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this CreateCertificateAuthorityObsAgencyResponse.
+        r"""Sets the agency_id of this CreateCertificateAuthorityObsAgencyResponse.
 
         创建OBS委托，由IAM返回的授权ID。
 

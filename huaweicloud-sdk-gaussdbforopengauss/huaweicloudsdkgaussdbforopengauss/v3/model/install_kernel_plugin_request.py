@@ -29,7 +29,7 @@ class InstallKernelPluginRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """InstallKernelPluginRequest
+        r"""InstallKernelPluginRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class InstallKernelPluginRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this InstallKernelPluginRequest.
+        r"""Gets the x_language of this InstallKernelPluginRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class InstallKernelPluginRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this InstallKernelPluginRequest.
+        r"""Sets the x_language of this InstallKernelPluginRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class InstallKernelPluginRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstallKernelPluginRequest.
+        r"""Gets the instance_id of this InstallKernelPluginRequest.
 
         需要安装插件的实例id
 
@@ -89,7 +89,7 @@ class InstallKernelPluginRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstallKernelPluginRequest.
+        r"""Sets the instance_id of this InstallKernelPluginRequest.
 
         需要安装插件的实例id
 
@@ -100,7 +100,7 @@ class InstallKernelPluginRequest:
 
     @property
     def body(self):
-        """Gets the body of this InstallKernelPluginRequest.
+        r"""Gets the body of this InstallKernelPluginRequest.
 
         :return: The body of this InstallKernelPluginRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.InstallKernelPluginRequestBody`
@@ -109,7 +109,7 @@ class InstallKernelPluginRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this InstallKernelPluginRequest.
+        r"""Sets the body of this InstallKernelPluginRequest.
 
         :param body: The body of this InstallKernelPluginRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.InstallKernelPluginRequestBody`

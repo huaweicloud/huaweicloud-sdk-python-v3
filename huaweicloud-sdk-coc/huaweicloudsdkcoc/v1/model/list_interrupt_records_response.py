@@ -28,7 +28,7 @@ class ListInterruptRecordsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, interrupt_record_list=None):
-        """ListInterruptRecordsResponse
+        r"""ListInterruptRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInterruptRecordsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListInterruptRecordsResponse.
+        r"""Gets the total of this ListInterruptRecordsResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListInterruptRecordsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListInterruptRecordsResponse.
+        r"""Sets the total of this ListInterruptRecordsResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListInterruptRecordsResponse(SdkResponse):
 
     @property
     def interrupt_record_list(self):
-        """Gets the interrupt_record_list of this ListInterruptRecordsResponse.
+        r"""Gets the interrupt_record_list of this ListInterruptRecordsResponse.
 
         列表信息
 
@@ -84,7 +84,7 @@ class ListInterruptRecordsResponse(SdkResponse):
 
     @interrupt_record_list.setter
     def interrupt_record_list(self, interrupt_record_list):
-        """Sets the interrupt_record_list of this ListInterruptRecordsResponse.
+        r"""Sets the interrupt_record_list of this ListInterruptRecordsResponse.
 
         列表信息
 

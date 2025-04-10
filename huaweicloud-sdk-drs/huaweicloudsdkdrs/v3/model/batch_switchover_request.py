@@ -27,7 +27,7 @@ class BatchSwitchoverRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchSwitchoverRequest
+        r"""BatchSwitchoverRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchSwitchoverRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchSwitchoverRequest.
+        r"""Gets the x_language of this BatchSwitchoverRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class BatchSwitchoverRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchSwitchoverRequest.
+        r"""Sets the x_language of this BatchSwitchoverRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class BatchSwitchoverRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchSwitchoverRequest.
+        r"""Gets the body of this BatchSwitchoverRequest.
 
         :return: The body of this BatchSwitchoverRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSwitchoverReq`
@@ -81,7 +81,7 @@ class BatchSwitchoverRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchSwitchoverRequest.
+        r"""Sets the body of this BatchSwitchoverRequest.
 
         :param body: The body of this BatchSwitchoverRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchSwitchoverReq`

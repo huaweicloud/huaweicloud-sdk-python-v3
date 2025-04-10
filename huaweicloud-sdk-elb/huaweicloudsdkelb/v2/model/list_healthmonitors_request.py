@@ -53,7 +53,7 @@ class ListHealthmonitorsRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, name=None, delay=None, max_retries=None, admin_state_up=None, timeout=None, type=None, monitor_port=None, expected_codes=None, domain_name=None, url_path=None, http_method=None):
-        """ListHealthmonitorsRequest
+        r"""ListHealthmonitorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ListHealthmonitorsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHealthmonitorsRequest.
+        r"""Gets the limit of this ListHealthmonitorsRequest.
 
         分页查询中每页的健康检查个数
 
@@ -152,7 +152,7 @@ class ListHealthmonitorsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHealthmonitorsRequest.
+        r"""Sets the limit of this ListHealthmonitorsRequest.
 
         分页查询中每页的健康检查个数
 
@@ -163,7 +163,7 @@ class ListHealthmonitorsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListHealthmonitorsRequest.
+        r"""Gets the marker of this ListHealthmonitorsRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的健康检查的id。不指定时表示查询第一页。
 
@@ -174,7 +174,7 @@ class ListHealthmonitorsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListHealthmonitorsRequest.
+        r"""Sets the marker of this ListHealthmonitorsRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的健康检查的id。不指定时表示查询第一页。
 
@@ -185,7 +185,7 @@ class ListHealthmonitorsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListHealthmonitorsRequest.
+        r"""Gets the page_reverse of this ListHealthmonitorsRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -196,7 +196,7 @@ class ListHealthmonitorsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListHealthmonitorsRequest.
+        r"""Sets the page_reverse of this ListHealthmonitorsRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -207,7 +207,7 @@ class ListHealthmonitorsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListHealthmonitorsRequest.
+        r"""Gets the id of this ListHealthmonitorsRequest.
 
         健康检查ID。
 
@@ -218,7 +218,7 @@ class ListHealthmonitorsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListHealthmonitorsRequest.
+        r"""Sets the id of this ListHealthmonitorsRequest.
 
         健康检查ID。
 
@@ -229,7 +229,7 @@ class ListHealthmonitorsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListHealthmonitorsRequest.
+        r"""Gets the name of this ListHealthmonitorsRequest.
 
         健康检查名称。
 
@@ -240,7 +240,7 @@ class ListHealthmonitorsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListHealthmonitorsRequest.
+        r"""Sets the name of this ListHealthmonitorsRequest.
 
         健康检查名称。
 
@@ -251,7 +251,7 @@ class ListHealthmonitorsRequest:
 
     @property
     def delay(self):
-        """Gets the delay of this ListHealthmonitorsRequest.
+        r"""Gets the delay of this ListHealthmonitorsRequest.
 
         健康检查间隔，单位秒，取值范围[1，50]。
 
@@ -262,7 +262,7 @@ class ListHealthmonitorsRequest:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this ListHealthmonitorsRequest.
+        r"""Sets the delay of this ListHealthmonitorsRequest.
 
         健康检查间隔，单位秒，取值范围[1，50]。
 
@@ -273,7 +273,7 @@ class ListHealthmonitorsRequest:
 
     @property
     def max_retries(self):
-        """Gets the max_retries of this ListHealthmonitorsRequest.
+        r"""Gets the max_retries of this ListHealthmonitorsRequest.
 
         健康检查最大重试次数，取值范围[1，10]。
 
@@ -284,7 +284,7 @@ class ListHealthmonitorsRequest:
 
     @max_retries.setter
     def max_retries(self, max_retries):
-        """Sets the max_retries of this ListHealthmonitorsRequest.
+        r"""Sets the max_retries of this ListHealthmonitorsRequest.
 
         健康检查最大重试次数，取值范围[1，10]。
 
@@ -295,7 +295,7 @@ class ListHealthmonitorsRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListHealthmonitorsRequest.
+        r"""Gets the admin_state_up of this ListHealthmonitorsRequest.
 
         健康检查的管理状态。取值范围：true/false。默认为true；true表示开启健康检查；false表示关闭健康检查。
 
@@ -306,7 +306,7 @@ class ListHealthmonitorsRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListHealthmonitorsRequest.
+        r"""Sets the admin_state_up of this ListHealthmonitorsRequest.
 
         健康检查的管理状态。取值范围：true/false。默认为true；true表示开启健康检查；false表示关闭健康检查。
 
@@ -317,7 +317,7 @@ class ListHealthmonitorsRequest:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ListHealthmonitorsRequest.
+        r"""Gets the timeout of this ListHealthmonitorsRequest.
 
         健康检查超时时间，单位秒，取值范围[1，50]。 建议该值小于delay的值。
 
@@ -328,7 +328,7 @@ class ListHealthmonitorsRequest:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ListHealthmonitorsRequest.
+        r"""Sets the timeout of this ListHealthmonitorsRequest.
 
         健康检查超时时间，单位秒，取值范围[1，50]。 建议该值小于delay的值。
 
@@ -339,7 +339,7 @@ class ListHealthmonitorsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListHealthmonitorsRequest.
+        r"""Gets the type of this ListHealthmonitorsRequest.
 
         健康检查的类型。取值范围：TCP、UDP_CONNECT、HTTP。
 
@@ -350,7 +350,7 @@ class ListHealthmonitorsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListHealthmonitorsRequest.
+        r"""Sets the type of this ListHealthmonitorsRequest.
 
         健康检查的类型。取值范围：TCP、UDP_CONNECT、HTTP。
 
@@ -361,7 +361,7 @@ class ListHealthmonitorsRequest:
 
     @property
     def monitor_port(self):
-        """Gets the monitor_port of this ListHealthmonitorsRequest.
+        r"""Gets the monitor_port of this ListHealthmonitorsRequest.
 
         健康检查端口号]。默认为空，表示使用后端云服务器的protocol_port作为健康检查的检查端口。
 
@@ -372,7 +372,7 @@ class ListHealthmonitorsRequest:
 
     @monitor_port.setter
     def monitor_port(self, monitor_port):
-        """Sets the monitor_port of this ListHealthmonitorsRequest.
+        r"""Sets the monitor_port of this ListHealthmonitorsRequest.
 
         健康检查端口号]。默认为空，表示使用后端云服务器的protocol_port作为健康检查的检查端口。
 
@@ -383,7 +383,7 @@ class ListHealthmonitorsRequest:
 
     @property
     def expected_codes(self):
-        """Gets the expected_codes of this ListHealthmonitorsRequest.
+        r"""Gets the expected_codes of this ListHealthmonitorsRequest.
 
         期望HTTP响应状态码；默认值：“200”。取值范围：单值，例如200；列表，例如200，202；区间，例如200-204。仅当type为HTTP时生效。 该字段为预留字段，暂未启用。
 
@@ -394,7 +394,7 @@ class ListHealthmonitorsRequest:
 
     @expected_codes.setter
     def expected_codes(self, expected_codes):
-        """Sets the expected_codes of this ListHealthmonitorsRequest.
+        r"""Sets the expected_codes of this ListHealthmonitorsRequest.
 
         期望HTTP响应状态码；默认值：“200”。取值范围：单值，例如200；列表，例如200，202；区间，例如200-204。仅当type为HTTP时生效。 该字段为预留字段，暂未启用。
 
@@ -405,7 +405,7 @@ class ListHealthmonitorsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ListHealthmonitorsRequest.
+        r"""Gets the domain_name of this ListHealthmonitorsRequest.
 
         健康检查时，发送的http请求的域名。仅当type为HTTP时生效。默认为空，表示使用负载均衡器的vip_address作为http请求的目的地址。以数字或字母开头，只能包含数字、字母、’-’、’.’。例如：www.huaweitest.com
 
@@ -416,7 +416,7 @@ class ListHealthmonitorsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ListHealthmonitorsRequest.
+        r"""Sets the domain_name of this ListHealthmonitorsRequest.
 
         健康检查时，发送的http请求的域名。仅当type为HTTP时生效。默认为空，表示使用负载均衡器的vip_address作为http请求的目的地址。以数字或字母开头，只能包含数字、字母、’-’、’.’。例如：www.huaweitest.com
 
@@ -427,7 +427,7 @@ class ListHealthmonitorsRequest:
 
     @property
     def url_path(self):
-        """Gets the url_path of this ListHealthmonitorsRequest.
+        r"""Gets the url_path of this ListHealthmonitorsRequest.
 
         健康检查时发送的http请求路径。默认为“/”。以“/”开头。仅当type为HTTP时生效。例如：“/test”
 
@@ -438,7 +438,7 @@ class ListHealthmonitorsRequest:
 
     @url_path.setter
     def url_path(self, url_path):
-        """Sets the url_path of this ListHealthmonitorsRequest.
+        r"""Sets the url_path of this ListHealthmonitorsRequest.
 
         健康检查时发送的http请求路径。默认为“/”。以“/”开头。仅当type为HTTP时生效。例如：“/test”
 
@@ -449,7 +449,7 @@ class ListHealthmonitorsRequest:
 
     @property
     def http_method(self):
-        """Gets the http_method of this ListHealthmonitorsRequest.
+        r"""Gets the http_method of this ListHealthmonitorsRequest.
 
         HTTP请求的方法；默认值：GET取值范围：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。
 
@@ -460,7 +460,7 @@ class ListHealthmonitorsRequest:
 
     @http_method.setter
     def http_method(self, http_method):
-        """Sets the http_method of this ListHealthmonitorsRequest.
+        r"""Sets the http_method of this ListHealthmonitorsRequest.
 
         HTTP请求的方法；默认值：GET取值范围：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。
 

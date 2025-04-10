@@ -29,7 +29,7 @@ class QuotaDetailSnapshotsSATA:
     }
 
     def __init__(self, in_use=None, limit=None, reserved=None):
-        """QuotaDetailSnapshotsSATA
+        r"""QuotaDetailSnapshotsSATA
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class QuotaDetailSnapshotsSATA:
 
     @property
     def in_use(self):
-        """Gets the in_use of this QuotaDetailSnapshotsSATA.
+        r"""Gets the in_use of this QuotaDetailSnapshotsSATA.
 
         已使用的数量。
 
@@ -65,7 +65,7 @@ class QuotaDetailSnapshotsSATA:
 
     @in_use.setter
     def in_use(self, in_use):
-        """Sets the in_use of this QuotaDetailSnapshotsSATA.
+        r"""Sets the in_use of this QuotaDetailSnapshotsSATA.
 
         已使用的数量。
 
@@ -76,7 +76,7 @@ class QuotaDetailSnapshotsSATA:
 
     @property
     def limit(self):
-        """Gets the limit of this QuotaDetailSnapshotsSATA.
+        r"""Gets the limit of this QuotaDetailSnapshotsSATA.
 
         最大的数量。
 
@@ -87,7 +87,7 @@ class QuotaDetailSnapshotsSATA:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QuotaDetailSnapshotsSATA.
+        r"""Sets the limit of this QuotaDetailSnapshotsSATA.
 
         最大的数量。
 
@@ -98,7 +98,7 @@ class QuotaDetailSnapshotsSATA:
 
     @property
     def reserved(self):
-        """Gets the reserved of this QuotaDetailSnapshotsSATA.
+        r"""Gets the reserved of this QuotaDetailSnapshotsSATA.
 
         预留属性。
 
@@ -109,7 +109,7 @@ class QuotaDetailSnapshotsSATA:
 
     @reserved.setter
     def reserved(self, reserved):
-        """Sets the reserved of this QuotaDetailSnapshotsSATA.
+        r"""Sets the reserved of this QuotaDetailSnapshotsSATA.
 
         预留属性。
 

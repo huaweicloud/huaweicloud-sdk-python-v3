@@ -29,7 +29,7 @@ class DetachInstancesDesktopInfo:
     }
 
     def __init__(self, desktop_id=None, is_detach_all_users=None, detach_user_infos=None):
-        """DetachInstancesDesktopInfo
+        r"""DetachInstancesDesktopInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DetachInstancesDesktopInfo:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this DetachInstancesDesktopInfo.
+        r"""Gets the desktop_id of this DetachInstancesDesktopInfo.
 
         分配的桌面ID。
 
@@ -68,7 +68,7 @@ class DetachInstancesDesktopInfo:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this DetachInstancesDesktopInfo.
+        r"""Sets the desktop_id of this DetachInstancesDesktopInfo.
 
         分配的桌面ID。
 
@@ -79,7 +79,7 @@ class DetachInstancesDesktopInfo:
 
     @property
     def is_detach_all_users(self):
-        """Gets the is_detach_all_users of this DetachInstancesDesktopInfo.
+        r"""Gets the is_detach_all_users of this DetachInstancesDesktopInfo.
 
         表示解关联所有用户：true，如果指定那么detach_user_infos会失效；指定解关联用户：false，通过detach_user_infos指定解关联的用户。
 
@@ -90,7 +90,7 @@ class DetachInstancesDesktopInfo:
 
     @is_detach_all_users.setter
     def is_detach_all_users(self, is_detach_all_users):
-        """Sets the is_detach_all_users of this DetachInstancesDesktopInfo.
+        r"""Sets the is_detach_all_users of this DetachInstancesDesktopInfo.
 
         表示解关联所有用户：true，如果指定那么detach_user_infos会失效；指定解关联用户：false，通过detach_user_infos指定解关联的用户。
 
@@ -101,7 +101,7 @@ class DetachInstancesDesktopInfo:
 
     @property
     def detach_user_infos(self):
-        """Gets the detach_user_infos of this DetachInstancesDesktopInfo.
+        r"""Gets the detach_user_infos of this DetachInstancesDesktopInfo.
 
         解分配的用户信息列表。
 
@@ -112,7 +112,7 @@ class DetachInstancesDesktopInfo:
 
     @detach_user_infos.setter
     def detach_user_infos(self, detach_user_infos):
-        """Sets the detach_user_infos of this DetachInstancesDesktopInfo.
+        r"""Sets the detach_user_infos of this DetachInstancesDesktopInfo.
 
         解分配的用户信息列表。
 

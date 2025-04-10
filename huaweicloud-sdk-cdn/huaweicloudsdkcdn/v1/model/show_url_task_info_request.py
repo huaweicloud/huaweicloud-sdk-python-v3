@@ -39,7 +39,7 @@ class ShowUrlTaskInfoRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, offset=None, limit=None, url=None, task_type=None, status=None, file_type=None):
-        """ShowUrlTaskInfoRequest
+        r"""ShowUrlTaskInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ShowUrlTaskInfoRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowUrlTaskInfoRequest.
+        r"""Gets the start_time of this ShowUrlTaskInfoRequest.
 
         起始时间戳（毫秒），默认当天00:00。
 
@@ -103,7 +103,7 @@ class ShowUrlTaskInfoRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowUrlTaskInfoRequest.
+        r"""Sets the start_time of this ShowUrlTaskInfoRequest.
 
         起始时间戳（毫秒），默认当天00:00。
 
@@ -114,7 +114,7 @@ class ShowUrlTaskInfoRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowUrlTaskInfoRequest.
+        r"""Gets the end_time of this ShowUrlTaskInfoRequest.
 
         结束时间戳（毫秒），默认次日00:00。
 
@@ -125,7 +125,7 @@ class ShowUrlTaskInfoRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowUrlTaskInfoRequest.
+        r"""Sets the end_time of this ShowUrlTaskInfoRequest.
 
         结束时间戳（毫秒），默认次日00:00。
 
@@ -136,7 +136,7 @@ class ShowUrlTaskInfoRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowUrlTaskInfoRequest.
+        r"""Gets the offset of this ShowUrlTaskInfoRequest.
 
         偏移量：特定数据字段与起始数据字段位置的距离。
 
@@ -147,7 +147,7 @@ class ShowUrlTaskInfoRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowUrlTaskInfoRequest.
+        r"""Sets the offset of this ShowUrlTaskInfoRequest.
 
         偏移量：特定数据字段与起始数据字段位置的距离。
 
@@ -158,7 +158,7 @@ class ShowUrlTaskInfoRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowUrlTaskInfoRequest.
+        r"""Gets the limit of this ShowUrlTaskInfoRequest.
 
         单次查询数据条数，上限为100。
 
@@ -169,7 +169,7 @@ class ShowUrlTaskInfoRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowUrlTaskInfoRequest.
+        r"""Sets the limit of this ShowUrlTaskInfoRequest.
 
         单次查询数据条数，上限为100。
 
@@ -180,7 +180,7 @@ class ShowUrlTaskInfoRequest:
 
     @property
     def url(self):
-        """Gets the url of this ShowUrlTaskInfoRequest.
+        r"""Gets the url of this ShowUrlTaskInfoRequest.
 
         刷新预热url。
 
@@ -191,7 +191,7 @@ class ShowUrlTaskInfoRequest:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowUrlTaskInfoRequest.
+        r"""Sets the url of this ShowUrlTaskInfoRequest.
 
         刷新预热url。
 
@@ -202,7 +202,7 @@ class ShowUrlTaskInfoRequest:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ShowUrlTaskInfoRequest.
+        r"""Gets the task_type of this ShowUrlTaskInfoRequest.
 
         任务类型，REFRESH：刷新任务；PREHEATING：预热任务。
 
@@ -213,7 +213,7 @@ class ShowUrlTaskInfoRequest:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ShowUrlTaskInfoRequest.
+        r"""Sets the task_type of this ShowUrlTaskInfoRequest.
 
         任务类型，REFRESH：刷新任务；PREHEATING：预热任务。
 
@@ -224,7 +224,7 @@ class ShowUrlTaskInfoRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowUrlTaskInfoRequest.
+        r"""Gets the status of this ShowUrlTaskInfoRequest.
 
         url状态，状态类型：processing：处理中；succeed：完成；failed：失败；waiting：等待；refreshing：刷新中; preheating : 预热中。
 
@@ -235,7 +235,7 @@ class ShowUrlTaskInfoRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowUrlTaskInfoRequest.
+        r"""Sets the status of this ShowUrlTaskInfoRequest.
 
         url状态，状态类型：processing：处理中；succeed：完成；failed：失败；waiting：等待；refreshing：刷新中; preheating : 预热中。
 
@@ -246,7 +246,7 @@ class ShowUrlTaskInfoRequest:
 
     @property
     def file_type(self):
-        """Gets the file_type of this ShowUrlTaskInfoRequest.
+        r"""Gets the file_type of this ShowUrlTaskInfoRequest.
 
         文件类型，file:文件;directory:目录。
 
@@ -257,7 +257,7 @@ class ShowUrlTaskInfoRequest:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this ShowUrlTaskInfoRequest.
+        r"""Sets the file_type of this ShowUrlTaskInfoRequest.
 
         文件类型，file:文件;directory:目录。
 

@@ -38,7 +38,7 @@ class ShowConfigurationAggregatorResponse(SdkResponse):
     }
 
     def __init__(self, aggregator_name=None, aggregator_id=None, aggregator_urn=None, aggregator_type=None, account_aggregation_sources=None, updated_at=None, created_at=None):
-        """ShowConfigurationAggregatorResponse
+        r"""ShowConfigurationAggregatorResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowConfigurationAggregatorResponse(SdkResponse):
 
     @property
     def aggregator_name(self):
-        """Gets the aggregator_name of this ShowConfigurationAggregatorResponse.
+        r"""Gets the aggregator_name of this ShowConfigurationAggregatorResponse.
 
         资源聚合器名称。
 
@@ -97,7 +97,7 @@ class ShowConfigurationAggregatorResponse(SdkResponse):
 
     @aggregator_name.setter
     def aggregator_name(self, aggregator_name):
-        """Sets the aggregator_name of this ShowConfigurationAggregatorResponse.
+        r"""Sets the aggregator_name of this ShowConfigurationAggregatorResponse.
 
         资源聚合器名称。
 
@@ -108,7 +108,7 @@ class ShowConfigurationAggregatorResponse(SdkResponse):
 
     @property
     def aggregator_id(self):
-        """Gets the aggregator_id of this ShowConfigurationAggregatorResponse.
+        r"""Gets the aggregator_id of this ShowConfigurationAggregatorResponse.
 
         资源聚合器ID。
 
@@ -119,7 +119,7 @@ class ShowConfigurationAggregatorResponse(SdkResponse):
 
     @aggregator_id.setter
     def aggregator_id(self, aggregator_id):
-        """Sets the aggregator_id of this ShowConfigurationAggregatorResponse.
+        r"""Sets the aggregator_id of this ShowConfigurationAggregatorResponse.
 
         资源聚合器ID。
 
@@ -130,7 +130,7 @@ class ShowConfigurationAggregatorResponse(SdkResponse):
 
     @property
     def aggregator_urn(self):
-        """Gets the aggregator_urn of this ShowConfigurationAggregatorResponse.
+        r"""Gets the aggregator_urn of this ShowConfigurationAggregatorResponse.
 
         资源聚合器标识符。
 
@@ -141,7 +141,7 @@ class ShowConfigurationAggregatorResponse(SdkResponse):
 
     @aggregator_urn.setter
     def aggregator_urn(self, aggregator_urn):
-        """Sets the aggregator_urn of this ShowConfigurationAggregatorResponse.
+        r"""Sets the aggregator_urn of this ShowConfigurationAggregatorResponse.
 
         资源聚合器标识符。
 
@@ -152,7 +152,7 @@ class ShowConfigurationAggregatorResponse(SdkResponse):
 
     @property
     def aggregator_type(self):
-        """Gets the aggregator_type of this ShowConfigurationAggregatorResponse.
+        r"""Gets the aggregator_type of this ShowConfigurationAggregatorResponse.
 
         聚合器类型。
 
@@ -163,7 +163,7 @@ class ShowConfigurationAggregatorResponse(SdkResponse):
 
     @aggregator_type.setter
     def aggregator_type(self, aggregator_type):
-        """Sets the aggregator_type of this ShowConfigurationAggregatorResponse.
+        r"""Sets the aggregator_type of this ShowConfigurationAggregatorResponse.
 
         聚合器类型。
 
@@ -174,7 +174,7 @@ class ShowConfigurationAggregatorResponse(SdkResponse):
 
     @property
     def account_aggregation_sources(self):
-        """Gets the account_aggregation_sources of this ShowConfigurationAggregatorResponse.
+        r"""Gets the account_aggregation_sources of this ShowConfigurationAggregatorResponse.
 
         :return: The account_aggregation_sources of this ShowConfigurationAggregatorResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.AccountAggregationSource`
@@ -183,7 +183,7 @@ class ShowConfigurationAggregatorResponse(SdkResponse):
 
     @account_aggregation_sources.setter
     def account_aggregation_sources(self, account_aggregation_sources):
-        """Sets the account_aggregation_sources of this ShowConfigurationAggregatorResponse.
+        r"""Sets the account_aggregation_sources of this ShowConfigurationAggregatorResponse.
 
         :param account_aggregation_sources: The account_aggregation_sources of this ShowConfigurationAggregatorResponse.
         :type account_aggregation_sources: :class:`huaweicloudsdkrms.v1.AccountAggregationSource`
@@ -192,7 +192,7 @@ class ShowConfigurationAggregatorResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowConfigurationAggregatorResponse.
+        r"""Gets the updated_at of this ShowConfigurationAggregatorResponse.
 
         资源聚合器更新时间。
 
@@ -203,7 +203,7 @@ class ShowConfigurationAggregatorResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowConfigurationAggregatorResponse.
+        r"""Sets the updated_at of this ShowConfigurationAggregatorResponse.
 
         资源聚合器更新时间。
 
@@ -214,7 +214,7 @@ class ShowConfigurationAggregatorResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowConfigurationAggregatorResponse.
+        r"""Gets the created_at of this ShowConfigurationAggregatorResponse.
 
         资源聚合器创建时间。
 
@@ -225,7 +225,7 @@ class ShowConfigurationAggregatorResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowConfigurationAggregatorResponse.
+        r"""Sets the created_at of this ShowConfigurationAggregatorResponse.
 
         资源聚合器创建时间。
 

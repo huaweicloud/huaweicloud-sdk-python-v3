@@ -27,7 +27,7 @@ class ShowDiskUsageRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """ShowDiskUsageRequest
+        r"""ShowDiskUsageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowDiskUsageRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowDiskUsageRequest.
+        r"""Gets the x_language of this ShowDiskUsageRequest.
 
         语言。
 
@@ -60,7 +60,7 @@ class ShowDiskUsageRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowDiskUsageRequest.
+        r"""Sets the x_language of this ShowDiskUsageRequest.
 
         语言。
 
@@ -71,7 +71,7 @@ class ShowDiskUsageRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDiskUsageRequest.
+        r"""Gets the instance_id of this ShowDiskUsageRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -82,7 +82,7 @@ class ShowDiskUsageRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDiskUsageRequest.
+        r"""Sets the instance_id of this ShowDiskUsageRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 

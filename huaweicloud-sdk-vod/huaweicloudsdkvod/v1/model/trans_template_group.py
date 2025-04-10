@@ -39,7 +39,7 @@ class TransTemplateGroup:
     }
 
     def __init__(self, name=None, status=None, type=None, auto_encrypt=None, quality_info_list=None, common=None, watermark_template_ids=None, description=None):
-        """TransTemplateGroup
+        r"""TransTemplateGroup
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class TransTemplateGroup:
 
     @property
     def name(self):
-        """Gets the name of this TransTemplateGroup.
+        r"""Gets the name of this TransTemplateGroup.
 
         模板组名称。
 
@@ -101,7 +101,7 @@ class TransTemplateGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TransTemplateGroup.
+        r"""Sets the name of this TransTemplateGroup.
 
         模板组名称。
 
@@ -112,7 +112,7 @@ class TransTemplateGroup:
 
     @property
     def status(self):
-        """Gets the status of this TransTemplateGroup.
+        r"""Gets the status of this TransTemplateGroup.
 
         是否设置默认。
 
@@ -123,7 +123,7 @@ class TransTemplateGroup:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TransTemplateGroup.
+        r"""Sets the status of this TransTemplateGroup.
 
         是否设置默认。
 
@@ -134,7 +134,7 @@ class TransTemplateGroup:
 
     @property
     def type(self):
-        """Gets the type of this TransTemplateGroup.
+        r"""Gets the type of this TransTemplateGroup.
 
         模板组类型。
 
@@ -145,7 +145,7 @@ class TransTemplateGroup:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TransTemplateGroup.
+        r"""Sets the type of this TransTemplateGroup.
 
         模板组类型。
 
@@ -156,7 +156,7 @@ class TransTemplateGroup:
 
     @property
     def auto_encrypt(self):
-        """Gets the auto_encrypt of this TransTemplateGroup.
+        r"""Gets the auto_encrypt of this TransTemplateGroup.
 
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
 
@@ -167,7 +167,7 @@ class TransTemplateGroup:
 
     @auto_encrypt.setter
     def auto_encrypt(self, auto_encrypt):
-        """Sets the auto_encrypt of this TransTemplateGroup.
+        r"""Sets the auto_encrypt of this TransTemplateGroup.
 
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
 
@@ -178,7 +178,7 @@ class TransTemplateGroup:
 
     @property
     def quality_info_list(self):
-        """Gets the quality_info_list of this TransTemplateGroup.
+        r"""Gets the quality_info_list of this TransTemplateGroup.
 
         画质配置信息列表。
 
@@ -189,7 +189,7 @@ class TransTemplateGroup:
 
     @quality_info_list.setter
     def quality_info_list(self, quality_info_list):
-        """Sets the quality_info_list of this TransTemplateGroup.
+        r"""Sets the quality_info_list of this TransTemplateGroup.
 
         画质配置信息列表。
 
@@ -200,7 +200,7 @@ class TransTemplateGroup:
 
     @property
     def common(self):
-        """Gets the common of this TransTemplateGroup.
+        r"""Gets the common of this TransTemplateGroup.
 
         :return: The common of this TransTemplateGroup.
         :rtype: :class:`huaweicloudsdkvod.v1.Common`
@@ -209,7 +209,7 @@ class TransTemplateGroup:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this TransTemplateGroup.
+        r"""Sets the common of this TransTemplateGroup.
 
         :param common: The common of this TransTemplateGroup.
         :type common: :class:`huaweicloudsdkvod.v1.Common`
@@ -218,7 +218,7 @@ class TransTemplateGroup:
 
     @property
     def watermark_template_ids(self):
-        """Gets the watermark_template_ids of this TransTemplateGroup.
+        r"""Gets the watermark_template_ids of this TransTemplateGroup.
 
         绑定的水印模板组ID数组。
 
@@ -229,7 +229,7 @@ class TransTemplateGroup:
 
     @watermark_template_ids.setter
     def watermark_template_ids(self, watermark_template_ids):
-        """Sets the watermark_template_ids of this TransTemplateGroup.
+        r"""Sets the watermark_template_ids of this TransTemplateGroup.
 
         绑定的水印模板组ID数组。
 
@@ -240,7 +240,7 @@ class TransTemplateGroup:
 
     @property
     def description(self):
-        """Gets the description of this TransTemplateGroup.
+        r"""Gets the description of this TransTemplateGroup.
 
         模板介绍。
 
@@ -251,7 +251,7 @@ class TransTemplateGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TransTemplateGroup.
+        r"""Sets the description of this TransTemplateGroup.
 
         模板介绍。
 

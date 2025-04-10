@@ -31,7 +31,7 @@ class ListUserJdbcDriversRequest:
     }
 
     def __init__(self, limit=None, offset=None, driver_type=None, x_language=None):
-        """ListUserJdbcDriversRequest
+        r"""ListUserJdbcDriversRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListUserJdbcDriversRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUserJdbcDriversRequest.
+        r"""Gets the limit of this ListUserJdbcDriversRequest.
 
         每页显示的条目数量。默认为10。
 
@@ -74,7 +74,7 @@ class ListUserJdbcDriversRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUserJdbcDriversRequest.
+        r"""Sets the limit of this ListUserJdbcDriversRequest.
 
         每页显示的条目数量。默认为10。
 
@@ -85,7 +85,7 @@ class ListUserJdbcDriversRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUserJdbcDriversRequest.
+        r"""Gets the offset of this ListUserJdbcDriversRequest.
 
         偏移量，表示从此偏移量开始查询， offset 大于等于 0。默认为0。
 
@@ -96,7 +96,7 @@ class ListUserJdbcDriversRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUserJdbcDriversRequest.
+        r"""Sets the offset of this ListUserJdbcDriversRequest.
 
         偏移量，表示从此偏移量开始查询， offset 大于等于 0。默认为0。
 
@@ -107,7 +107,7 @@ class ListUserJdbcDriversRequest:
 
     @property
     def driver_type(self):
-        """Gets the driver_type of this ListUserJdbcDriversRequest.
+        r"""Gets the driver_type of this ListUserJdbcDriversRequest.
 
         指定待查询的驱动文件类型。取值范围： - db2：DB2 for LUW - informix：Informix
 
@@ -118,7 +118,7 @@ class ListUserJdbcDriversRequest:
 
     @driver_type.setter
     def driver_type(self, driver_type):
-        """Sets the driver_type of this ListUserJdbcDriversRequest.
+        r"""Sets the driver_type of this ListUserJdbcDriversRequest.
 
         指定待查询的驱动文件类型。取值范围： - db2：DB2 for LUW - informix：Informix
 
@@ -129,7 +129,7 @@ class ListUserJdbcDriversRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListUserJdbcDriversRequest.
+        r"""Gets the x_language of this ListUserJdbcDriversRequest.
 
         请求语言类型。
 
@@ -140,7 +140,7 @@ class ListUserJdbcDriversRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListUserJdbcDriversRequest.
+        r"""Sets the x_language of this ListUserJdbcDriversRequest.
 
         请求语言类型。
 

@@ -31,7 +31,7 @@ class JobInfo:
     }
 
     def __init__(self, execution_status=None, job_id=None, job_type=None, rollback_enabled=None):
-        """JobInfo
+        r"""JobInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class JobInfo:
 
     @property
     def execution_status(self):
-        """Gets the execution_status of this JobInfo.
+        r"""Gets the execution_status of this JobInfo.
 
         :return: The execution_status of this JobInfo.
         :rtype: str
@@ -73,7 +73,7 @@ class JobInfo:
 
     @execution_status.setter
     def execution_status(self, execution_status):
-        """Sets the execution_status of this JobInfo.
+        r"""Sets the execution_status of this JobInfo.
 
         :param execution_status: The execution_status of this JobInfo.
         :type execution_status: str
@@ -82,7 +82,7 @@ class JobInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this JobInfo.
+        r"""Gets the job_id of this JobInfo.
 
         :return: The job_id of this JobInfo.
         :rtype: str
@@ -91,7 +91,7 @@ class JobInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this JobInfo.
+        r"""Sets the job_id of this JobInfo.
 
         :param job_id: The job_id of this JobInfo.
         :type job_id: str
@@ -100,7 +100,7 @@ class JobInfo:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobInfo.
+        r"""Gets the job_type of this JobInfo.
 
         :return: The job_type of this JobInfo.
         :rtype: str
@@ -109,7 +109,7 @@ class JobInfo:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobInfo.
+        r"""Sets the job_type of this JobInfo.
 
         :param job_type: The job_type of this JobInfo.
         :type job_type: str
@@ -118,7 +118,7 @@ class JobInfo:
 
     @property
     def rollback_enabled(self):
-        """Gets the rollback_enabled of this JobInfo.
+        r"""Gets the rollback_enabled of this JobInfo.
 
         :return: The rollback_enabled of this JobInfo.
         :rtype: bool
@@ -127,7 +127,7 @@ class JobInfo:
 
     @rollback_enabled.setter
     def rollback_enabled(self, rollback_enabled):
-        """Sets the rollback_enabled of this JobInfo.
+        r"""Sets the rollback_enabled of this JobInfo.
 
         :param rollback_enabled: The rollback_enabled of this JobInfo.
         :type rollback_enabled: bool

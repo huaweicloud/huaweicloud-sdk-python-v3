@@ -26,7 +26,7 @@ class ListApplicationModelResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListApplicationModelResponse
+        r"""ListApplicationModelResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListApplicationModelResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListApplicationModelResponse.
+        r"""Gets the data of this ListApplicationModelResponse.
 
         :return: The data of this ListApplicationModelResponse.
         :rtype: :class:`huaweicloudsdkcoc.v1.ApplicationModelQueryResponseData`
@@ -53,7 +53,7 @@ class ListApplicationModelResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListApplicationModelResponse.
+        r"""Sets the data of this ListApplicationModelResponse.
 
         :param data: The data of this ListApplicationModelResponse.
         :type data: :class:`huaweicloudsdkcoc.v1.ApplicationModelQueryResponseData`

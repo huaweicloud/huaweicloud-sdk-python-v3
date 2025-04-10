@@ -25,7 +25,7 @@ class CountInternetBandwidths:
     }
 
     def __init__(self, count=None):
-        """CountInternetBandwidths
+        r"""CountInternetBandwidths
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CountInternetBandwidths:
 
     @property
     def count(self):
-        """Gets the count of this CountInternetBandwidths.
+        r"""Gets the count of this CountInternetBandwidths.
 
         全域公网带宽的数目
 
@@ -53,7 +53,7 @@ class CountInternetBandwidths:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CountInternetBandwidths.
+        r"""Sets the count of this CountInternetBandwidths.
 
         全域公网带宽的数目
 

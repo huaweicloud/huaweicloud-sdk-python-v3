@@ -25,7 +25,7 @@ class MultiViewModelViewUpdateAttrDTO:
     }
 
     def __init__(self, item=None):
-        """MultiViewModelViewUpdateAttrDTO
+        r"""MultiViewModelViewUpdateAttrDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MultiViewModelViewUpdateAttrDTO:
 
     @property
     def item(self):
-        """Gets the item of this MultiViewModelViewUpdateAttrDTO.
+        r"""Gets the item of this MultiViewModelViewUpdateAttrDTO.
 
         :return: The item of this MultiViewModelViewUpdateAttrDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -52,7 +52,7 @@ class MultiViewModelViewUpdateAttrDTO:
 
     @item.setter
     def item(self, item):
-        """Sets the item of this MultiViewModelViewUpdateAttrDTO.
+        r"""Sets the item of this MultiViewModelViewUpdateAttrDTO.
 
         :param item: The item of this MultiViewModelViewUpdateAttrDTO.
         :type item: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`

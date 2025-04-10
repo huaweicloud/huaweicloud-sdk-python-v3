@@ -26,7 +26,7 @@ class ValidatePolicyResourceType:
     }
 
     def __init__(self):
-        """ValidatePolicyResourceType
+        r"""ValidatePolicyResourceType
 
         The model defined in huaweicloud sdk
 

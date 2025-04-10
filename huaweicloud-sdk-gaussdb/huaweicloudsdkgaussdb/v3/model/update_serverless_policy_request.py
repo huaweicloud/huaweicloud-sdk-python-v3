@@ -29,7 +29,7 @@ class UpdateServerlessPolicyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateServerlessPolicyRequest
+        r"""UpdateServerlessPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateServerlessPolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateServerlessPolicyRequest.
+        r"""Gets the x_language of this UpdateServerlessPolicyRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class UpdateServerlessPolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateServerlessPolicyRequest.
+        r"""Sets the x_language of this UpdateServerlessPolicyRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class UpdateServerlessPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateServerlessPolicyRequest.
+        r"""Gets the instance_id of this UpdateServerlessPolicyRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class UpdateServerlessPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateServerlessPolicyRequest.
+        r"""Sets the instance_id of this UpdateServerlessPolicyRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class UpdateServerlessPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateServerlessPolicyRequest.
+        r"""Gets the body of this UpdateServerlessPolicyRequest.
 
         :return: The body of this UpdateServerlessPolicyRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateServerlessPolicy`
@@ -109,7 +109,7 @@ class UpdateServerlessPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateServerlessPolicyRequest.
+        r"""Sets the body of this UpdateServerlessPolicyRequest.
 
         :param body: The body of this UpdateServerlessPolicyRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.UpdateServerlessPolicy`

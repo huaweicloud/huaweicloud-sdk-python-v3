@@ -29,7 +29,7 @@ class Version:
     }
 
     def __init__(self, version_metadata=None, secret_binary=None, secret_string=None):
-        """Version
+        r"""Version
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Version:
 
     @property
     def version_metadata(self):
-        """Gets the version_metadata of this Version.
+        r"""Gets the version_metadata of this Version.
 
         :return: The version_metadata of this Version.
         :rtype: :class:`huaweicloudsdkcsms.v1.VersionMetadata`
@@ -66,7 +66,7 @@ class Version:
 
     @version_metadata.setter
     def version_metadata(self, version_metadata):
-        """Sets the version_metadata of this Version.
+        r"""Sets the version_metadata of this Version.
 
         :param version_metadata: The version_metadata of this Version.
         :type version_metadata: :class:`huaweicloudsdkcsms.v1.VersionMetadata`
@@ -75,7 +75,7 @@ class Version:
 
     @property
     def secret_binary(self):
-        """Gets the secret_binary of this Version.
+        r"""Gets the secret_binary of this Version.
 
         二进制类型凭据在base64编码后的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  类型：base64编码的二进制数据对象。 
 
@@ -86,7 +86,7 @@ class Version:
 
     @secret_binary.setter
     def secret_binary(self, secret_binary):
-        """Sets the secret_binary of this Version.
+        r"""Sets the secret_binary of this Version.
 
         二进制类型凭据在base64编码后的明文，凭据管理服务将其加密后，存入凭据的初始版本中。  类型：base64编码的二进制数据对象。 
 
@@ -97,7 +97,7 @@ class Version:
 
     @property
     def secret_string(self):
-        """Gets the secret_string of this Version.
+        r"""Gets the secret_string of this Version.
 
         文本类型凭据的明文，凭据管理服务将其加密后，存入凭据的初始版本中。
 
@@ -108,7 +108,7 @@ class Version:
 
     @secret_string.setter
     def secret_string(self, secret_string):
-        """Sets the secret_string of this Version.
+        r"""Sets the secret_string of this Version.
 
         文本类型凭据的明文，凭据管理服务将其加密后，存入凭据的初始版本中。
 

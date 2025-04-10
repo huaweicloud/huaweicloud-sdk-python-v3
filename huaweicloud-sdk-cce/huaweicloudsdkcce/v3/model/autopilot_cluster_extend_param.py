@@ -27,7 +27,7 @@ class AutopilotClusterExtendParam:
     }
 
     def __init__(self, enterprise_project_id=None, upgradefrom=None):
-        """AutopilotClusterExtendParam
+        r"""AutopilotClusterExtendParam
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AutopilotClusterExtendParam:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this AutopilotClusterExtendParam.
+        r"""Gets the enterprise_project_id of this AutopilotClusterExtendParam.
 
         集群所属的企业项目ID。 >   - 需要开通企业项目功能后才可配置企业项目。 >   - 集群所属的企业项目与集群下所关联的其他云服务资源所属的企业项目必须保持一致。 
 
@@ -61,7 +61,7 @@ class AutopilotClusterExtendParam:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this AutopilotClusterExtendParam.
+        r"""Sets the enterprise_project_id of this AutopilotClusterExtendParam.
 
         集群所属的企业项目ID。 >   - 需要开通企业项目功能后才可配置企业项目。 >   - 集群所属的企业项目与集群下所关联的其他云服务资源所属的企业项目必须保持一致。 
 
@@ -72,7 +72,7 @@ class AutopilotClusterExtendParam:
 
     @property
     def upgradefrom(self):
-        """Gets the upgradefrom of this AutopilotClusterExtendParam.
+        r"""Gets the upgradefrom of this AutopilotClusterExtendParam.
 
         记录集群通过何种升级方式升级到当前版本。 
 
@@ -83,7 +83,7 @@ class AutopilotClusterExtendParam:
 
     @upgradefrom.setter
     def upgradefrom(self, upgradefrom):
-        """Sets the upgradefrom of this AutopilotClusterExtendParam.
+        r"""Sets the upgradefrom of this AutopilotClusterExtendParam.
 
         记录集群通过何种升级方式升级到当前版本。 
 

@@ -33,7 +33,7 @@ class AvailabilityZone:
     }
 
     def __init__(self, code=None, state=None, protocol=None, public_border_group=None, category=None):
-        """AvailabilityZone
+        r"""AvailabilityZone
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class AvailabilityZone:
 
     @property
     def code(self):
-        """Gets the code of this AvailabilityZone.
+        r"""Gets the code of this AvailabilityZone.
 
         参数解释：可用区唯一编码。
 
@@ -77,7 +77,7 @@ class AvailabilityZone:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this AvailabilityZone.
+        r"""Sets the code of this AvailabilityZone.
 
         参数解释：可用区唯一编码。
 
@@ -88,7 +88,7 @@ class AvailabilityZone:
 
     @property
     def state(self):
-        """Gets the state of this AvailabilityZone.
+        r"""Gets the state of this AvailabilityZone.
 
         参数解释：可用区状态。  取值范围：ACTIVE。
 
@@ -99,7 +99,7 @@ class AvailabilityZone:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this AvailabilityZone.
+        r"""Sets the state of this AvailabilityZone.
 
         参数解释：可用区状态。  取值范围：ACTIVE。
 
@@ -110,7 +110,7 @@ class AvailabilityZone:
 
     @property
     def protocol(self):
-        """Gets the protocol of this AvailabilityZone.
+        r"""Gets the protocol of this AvailabilityZone.
 
         [参数解释：未售罄的LB规格类别。  取值范围：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hws_hk,hws_eu,otc,tlf,ct,sbc,g42,hk_g42,mix,hk_sbc,hws_ocb,dt) [参数解释：LB规格类别。  取值范围：L4 表示网络型LB；L7 表示应用型LB。](tag:ctc,cmcc,ocb,tm,srg,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
 
@@ -121,7 +121,7 @@ class AvailabilityZone:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this AvailabilityZone.
+        r"""Sets the protocol of this AvailabilityZone.
 
         [参数解释：未售罄的LB规格类别。  取值范围：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。](tag:hws,hws_hk,hws_eu,otc,tlf,ct,sbc,g42,hk_g42,mix,hk_sbc,hws_ocb,dt) [参数解释：LB规格类别。  取值范围：L4 表示网络型LB；L7 表示应用型LB。](tag:ctc,cmcc,ocb,tm,srg,fcs,fcs_dt,hcso,hcso_dt,hk_vdf)
 
@@ -132,7 +132,7 @@ class AvailabilityZone:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this AvailabilityZone.
+        r"""Gets the public_border_group of this AvailabilityZone.
 
         参数解释：网络公共边界组，如：center
 
@@ -143,7 +143,7 @@ class AvailabilityZone:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this AvailabilityZone.
+        r"""Sets the public_border_group of this AvailabilityZone.
 
         参数解释：网络公共边界组，如：center
 
@@ -154,7 +154,7 @@ class AvailabilityZone:
 
     @property
     def category(self):
-        """Gets the category of this AvailabilityZone.
+        r"""Gets the category of this AvailabilityZone.
 
         参数解释：范围编码。  取值范围：0表示center，21表示homezone。
 
@@ -165,7 +165,7 @@ class AvailabilityZone:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this AvailabilityZone.
+        r"""Sets the category of this AvailabilityZone.
 
         参数解释：范围编码。  取值范围：0表示center，21表示homezone。
 

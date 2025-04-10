@@ -27,7 +27,7 @@ class ShowErrorLogSwitchStatusRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """ShowErrorLogSwitchStatusRequest
+        r"""ShowErrorLogSwitchStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowErrorLogSwitchStatusRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowErrorLogSwitchStatusRequest.
+        r"""Gets the x_language of this ShowErrorLogSwitchStatusRequest.
 
         语言
 
@@ -60,7 +60,7 @@ class ShowErrorLogSwitchStatusRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowErrorLogSwitchStatusRequest.
+        r"""Sets the x_language of this ShowErrorLogSwitchStatusRequest.
 
         语言
 
@@ -71,7 +71,7 @@ class ShowErrorLogSwitchStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowErrorLogSwitchStatusRequest.
+        r"""Gets the instance_id of this ShowErrorLogSwitchStatusRequest.
 
         实例ID。
 
@@ -82,7 +82,7 @@ class ShowErrorLogSwitchStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowErrorLogSwitchStatusRequest.
+        r"""Sets the instance_id of this ShowErrorLogSwitchStatusRequest.
 
         实例ID。
 

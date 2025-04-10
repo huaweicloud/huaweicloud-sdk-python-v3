@@ -25,7 +25,7 @@ class CreateCaseResultJson:
     }
 
     def __init__(self, task_case_id=None):
-        """CreateCaseResultJson
+        r"""CreateCaseResultJson
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCaseResultJson:
 
     @property
     def task_case_id(self):
-        """Gets the task_case_id of this CreateCaseResultJson.
+        r"""Gets the task_case_id of this CreateCaseResultJson.
 
         用例id
 
@@ -54,7 +54,7 @@ class CreateCaseResultJson:
 
     @task_case_id.setter
     def task_case_id(self, task_case_id):
-        """Sets the task_case_id of this CreateCaseResultJson.
+        r"""Sets the task_case_id of this CreateCaseResultJson.
 
         用例id
 

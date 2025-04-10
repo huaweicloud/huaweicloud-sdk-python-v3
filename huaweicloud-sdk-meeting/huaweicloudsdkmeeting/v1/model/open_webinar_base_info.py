@@ -73,7 +73,7 @@ class OpenWebinarBaseInfo:
     }
 
     def __init__(self, conference_id=None, corp_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, state=None, scheduser_id=None, dept_name=None, scheduser_name=None, vmr_pkg_name=None, call_restriction=None, scope=None, audience_scope=None, chair_join_uri=None, chair_passwd=None, guest_join_uri=None, guest_passwd=None, audience_join_uri=None, audience_passwd=None, enable_recording=None, live_address=None, aux_address=None, live_url=None):
-        """OpenWebinarBaseInfo
+        r"""OpenWebinarBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this OpenWebinarBaseInfo.
+        r"""Gets the conference_id of this OpenWebinarBaseInfo.
 
         网络研讨会ID。
 
@@ -222,7 +222,7 @@ class OpenWebinarBaseInfo:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this OpenWebinarBaseInfo.
+        r"""Sets the conference_id of this OpenWebinarBaseInfo.
 
         网络研讨会ID。
 
@@ -233,7 +233,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def corp_id(self):
-        """Gets the corp_id of this OpenWebinarBaseInfo.
+        r"""Gets the corp_id of this OpenWebinarBaseInfo.
 
         企业ID。
 
@@ -244,7 +244,7 @@ class OpenWebinarBaseInfo:
 
     @corp_id.setter
     def corp_id(self, corp_id):
-        """Sets the corp_id of this OpenWebinarBaseInfo.
+        r"""Sets the corp_id of this OpenWebinarBaseInfo.
 
         企业ID。
 
@@ -255,7 +255,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def subject(self):
-        """Gets the subject of this OpenWebinarBaseInfo.
+        r"""Gets the subject of this OpenWebinarBaseInfo.
 
         网络研讨会主题。
 
@@ -266,7 +266,7 @@ class OpenWebinarBaseInfo:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this OpenWebinarBaseInfo.
+        r"""Sets the subject of this OpenWebinarBaseInfo.
 
         网络研讨会主题。
 
@@ -277,7 +277,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def description(self):
-        """Gets the description of this OpenWebinarBaseInfo.
+        r"""Gets the description of this OpenWebinarBaseInfo.
 
         网络研讨会描述。
 
@@ -288,7 +288,7 @@ class OpenWebinarBaseInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OpenWebinarBaseInfo.
+        r"""Sets the description of this OpenWebinarBaseInfo.
 
         网络研讨会描述。
 
@@ -299,7 +299,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this OpenWebinarBaseInfo.
+        r"""Gets the start_time of this OpenWebinarBaseInfo.
 
         网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
@@ -310,7 +310,7 @@ class OpenWebinarBaseInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this OpenWebinarBaseInfo.
+        r"""Sets the start_time of this OpenWebinarBaseInfo.
 
         网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
@@ -321,7 +321,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def duration(self):
-        """Gets the duration of this OpenWebinarBaseInfo.
+        r"""Gets the duration of this OpenWebinarBaseInfo.
 
         网络研讨会持续时长，单位分钟，取值范围[15,1440]。
 
@@ -332,7 +332,7 @@ class OpenWebinarBaseInfo:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this OpenWebinarBaseInfo.
+        r"""Sets the duration of this OpenWebinarBaseInfo.
 
         网络研讨会持续时长，单位分钟，取值范围[15,1440]。
 
@@ -343,7 +343,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def time_zone_id(self):
-        """Gets the time_zone_id of this OpenWebinarBaseInfo.
+        r"""Gets the time_zone_id of this OpenWebinarBaseInfo.
 
         会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
@@ -354,7 +354,7 @@ class OpenWebinarBaseInfo:
 
     @time_zone_id.setter
     def time_zone_id(self, time_zone_id):
-        """Sets the time_zone_id of this OpenWebinarBaseInfo.
+        r"""Sets the time_zone_id of this OpenWebinarBaseInfo.
 
         会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
@@ -365,7 +365,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def state(self):
-        """Gets the state of this OpenWebinarBaseInfo.
+        r"""Gets the state of this OpenWebinarBaseInfo.
 
         :return: The state of this OpenWebinarBaseInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.MeetingStatus`
@@ -374,7 +374,7 @@ class OpenWebinarBaseInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this OpenWebinarBaseInfo.
+        r"""Sets the state of this OpenWebinarBaseInfo.
 
         :param state: The state of this OpenWebinarBaseInfo.
         :type state: :class:`huaweicloudsdkmeeting.v1.MeetingStatus`
@@ -383,7 +383,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def scheduser_id(self):
-        """Gets the scheduser_id of this OpenWebinarBaseInfo.
+        r"""Gets the scheduser_id of this OpenWebinarBaseInfo.
 
         网络研讨会预订者的用户UUID。
 
@@ -394,7 +394,7 @@ class OpenWebinarBaseInfo:
 
     @scheduser_id.setter
     def scheduser_id(self, scheduser_id):
-        """Sets the scheduser_id of this OpenWebinarBaseInfo.
+        r"""Sets the scheduser_id of this OpenWebinarBaseInfo.
 
         网络研讨会预订者的用户UUID。
 
@@ -405,7 +405,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this OpenWebinarBaseInfo.
+        r"""Gets the dept_name of this OpenWebinarBaseInfo.
 
         预订者部门命名。
 
@@ -416,7 +416,7 @@ class OpenWebinarBaseInfo:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this OpenWebinarBaseInfo.
+        r"""Sets the dept_name of this OpenWebinarBaseInfo.
 
         预订者部门命名。
 
@@ -427,7 +427,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def scheduser_name(self):
-        """Gets the scheduser_name of this OpenWebinarBaseInfo.
+        r"""Gets the scheduser_name of this OpenWebinarBaseInfo.
 
         预订者名称。
 
@@ -438,7 +438,7 @@ class OpenWebinarBaseInfo:
 
     @scheduser_name.setter
     def scheduser_name(self, scheduser_name):
-        """Sets the scheduser_name of this OpenWebinarBaseInfo.
+        r"""Sets the scheduser_name of this OpenWebinarBaseInfo.
 
         预订者名称。
 
@@ -449,7 +449,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def vmr_pkg_name(self):
-        """Gets the vmr_pkg_name of this OpenWebinarBaseInfo.
+        r"""Gets the vmr_pkg_name of this OpenWebinarBaseInfo.
 
         网络研讨会VMR名称。
 
@@ -460,7 +460,7 @@ class OpenWebinarBaseInfo:
 
     @vmr_pkg_name.setter
     def vmr_pkg_name(self, vmr_pkg_name):
-        """Sets the vmr_pkg_name of this OpenWebinarBaseInfo.
+        r"""Sets the vmr_pkg_name of this OpenWebinarBaseInfo.
 
         网络研讨会VMR名称。
 
@@ -471,7 +471,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def call_restriction(self):
-        """Gets the call_restriction of this OpenWebinarBaseInfo.
+        r"""Gets the call_restriction of this OpenWebinarBaseInfo.
 
         入会范围开关。
 
@@ -482,7 +482,7 @@ class OpenWebinarBaseInfo:
 
     @call_restriction.setter
     def call_restriction(self, call_restriction):
-        """Sets the call_restriction of this OpenWebinarBaseInfo.
+        r"""Sets the call_restriction of this OpenWebinarBaseInfo.
 
         入会范围开关。
 
@@ -493,7 +493,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def scope(self):
-        """Gets the scope of this OpenWebinarBaseInfo.
+        r"""Gets the scope of this OpenWebinarBaseInfo.
 
         主持人、嘉宾入会范围。 * 0: 所有用户 * 2: 企业内用户 * 3: 被邀请用户 
 
@@ -504,7 +504,7 @@ class OpenWebinarBaseInfo:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this OpenWebinarBaseInfo.
+        r"""Sets the scope of this OpenWebinarBaseInfo.
 
         主持人、嘉宾入会范围。 * 0: 所有用户 * 2: 企业内用户 * 3: 被邀请用户 
 
@@ -515,7 +515,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def audience_scope(self):
-        """Gets the audience_scope of this OpenWebinarBaseInfo.
+        r"""Gets the audience_scope of this OpenWebinarBaseInfo.
 
         观众入会范围。 * 0: 所有用户 * 2: 企业内用户 
 
@@ -526,7 +526,7 @@ class OpenWebinarBaseInfo:
 
     @audience_scope.setter
     def audience_scope(self, audience_scope):
-        """Sets the audience_scope of this OpenWebinarBaseInfo.
+        r"""Sets the audience_scope of this OpenWebinarBaseInfo.
 
         观众入会范围。 * 0: 所有用户 * 2: 企业内用户 
 
@@ -537,7 +537,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def chair_join_uri(self):
-        """Gets the chair_join_uri of this OpenWebinarBaseInfo.
+        r"""Gets the chair_join_uri of this OpenWebinarBaseInfo.
 
         主持人入会地址。
 
@@ -548,7 +548,7 @@ class OpenWebinarBaseInfo:
 
     @chair_join_uri.setter
     def chair_join_uri(self, chair_join_uri):
-        """Sets the chair_join_uri of this OpenWebinarBaseInfo.
+        r"""Sets the chair_join_uri of this OpenWebinarBaseInfo.
 
         主持人入会地址。
 
@@ -559,7 +559,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def chair_passwd(self):
-        """Gets the chair_passwd of this OpenWebinarBaseInfo.
+        r"""Gets the chair_passwd of this OpenWebinarBaseInfo.
 
         主持人入会密码。
 
@@ -570,7 +570,7 @@ class OpenWebinarBaseInfo:
 
     @chair_passwd.setter
     def chair_passwd(self, chair_passwd):
-        """Sets the chair_passwd of this OpenWebinarBaseInfo.
+        r"""Sets the chair_passwd of this OpenWebinarBaseInfo.
 
         主持人入会密码。
 
@@ -581,7 +581,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def guest_join_uri(self):
-        """Gets the guest_join_uri of this OpenWebinarBaseInfo.
+        r"""Gets the guest_join_uri of this OpenWebinarBaseInfo.
 
         嘉宾入会地址。
 
@@ -592,7 +592,7 @@ class OpenWebinarBaseInfo:
 
     @guest_join_uri.setter
     def guest_join_uri(self, guest_join_uri):
-        """Sets the guest_join_uri of this OpenWebinarBaseInfo.
+        r"""Sets the guest_join_uri of this OpenWebinarBaseInfo.
 
         嘉宾入会地址。
 
@@ -603,7 +603,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def guest_passwd(self):
-        """Gets the guest_passwd of this OpenWebinarBaseInfo.
+        r"""Gets the guest_passwd of this OpenWebinarBaseInfo.
 
         嘉宾入会密码。
 
@@ -614,7 +614,7 @@ class OpenWebinarBaseInfo:
 
     @guest_passwd.setter
     def guest_passwd(self, guest_passwd):
-        """Sets the guest_passwd of this OpenWebinarBaseInfo.
+        r"""Sets the guest_passwd of this OpenWebinarBaseInfo.
 
         嘉宾入会密码。
 
@@ -625,7 +625,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def audience_join_uri(self):
-        """Gets the audience_join_uri of this OpenWebinarBaseInfo.
+        r"""Gets the audience_join_uri of this OpenWebinarBaseInfo.
 
         观众入会地址。
 
@@ -636,7 +636,7 @@ class OpenWebinarBaseInfo:
 
     @audience_join_uri.setter
     def audience_join_uri(self, audience_join_uri):
-        """Sets the audience_join_uri of this OpenWebinarBaseInfo.
+        r"""Sets the audience_join_uri of this OpenWebinarBaseInfo.
 
         观众入会地址。
 
@@ -647,7 +647,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def audience_passwd(self):
-        """Gets the audience_passwd of this OpenWebinarBaseInfo.
+        r"""Gets the audience_passwd of this OpenWebinarBaseInfo.
 
         观众入会密码。
 
@@ -658,7 +658,7 @@ class OpenWebinarBaseInfo:
 
     @audience_passwd.setter
     def audience_passwd(self, audience_passwd):
-        """Sets the audience_passwd of this OpenWebinarBaseInfo.
+        r"""Sets the audience_passwd of this OpenWebinarBaseInfo.
 
         观众入会密码。
 
@@ -669,7 +669,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def enable_recording(self):
-        """Gets the enable_recording of this OpenWebinarBaseInfo.
+        r"""Gets the enable_recording of this OpenWebinarBaseInfo.
 
         :return: The enable_recording of this OpenWebinarBaseInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
@@ -678,7 +678,7 @@ class OpenWebinarBaseInfo:
 
     @enable_recording.setter
     def enable_recording(self, enable_recording):
-        """Sets the enable_recording of this OpenWebinarBaseInfo.
+        r"""Sets the enable_recording of this OpenWebinarBaseInfo.
 
         :param enable_recording: The enable_recording of this OpenWebinarBaseInfo.
         :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
@@ -687,7 +687,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def live_address(self):
-        """Gets the live_address of this OpenWebinarBaseInfo.
+        r"""Gets the live_address of this OpenWebinarBaseInfo.
 
         主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -698,7 +698,7 @@ class OpenWebinarBaseInfo:
 
     @live_address.setter
     def live_address(self, live_address):
-        """Sets the live_address of this OpenWebinarBaseInfo.
+        r"""Sets the live_address of this OpenWebinarBaseInfo.
 
         主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -709,7 +709,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def aux_address(self):
-        """Gets the aux_address of this OpenWebinarBaseInfo.
+        r"""Gets the aux_address of this OpenWebinarBaseInfo.
 
         辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -720,7 +720,7 @@ class OpenWebinarBaseInfo:
 
     @aux_address.setter
     def aux_address(self, aux_address):
-        """Sets the aux_address of this OpenWebinarBaseInfo.
+        r"""Sets the aux_address of this OpenWebinarBaseInfo.
 
         辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
 
@@ -731,7 +731,7 @@ class OpenWebinarBaseInfo:
 
     @property
     def live_url(self):
-        """Gets the live_url of this OpenWebinarBaseInfo.
+        r"""Gets the live_url of this OpenWebinarBaseInfo.
 
         直播房间地址，在录播类型为录播+直播推流时有效。最大不超过255个字符。
 
@@ -742,7 +742,7 @@ class OpenWebinarBaseInfo:
 
     @live_url.setter
     def live_url(self, live_url):
-        """Sets the live_url of this OpenWebinarBaseInfo.
+        r"""Sets the live_url of this OpenWebinarBaseInfo.
 
         直播房间地址，在录播类型为录播+直播推流时有效。最大不超过255个字符。
 

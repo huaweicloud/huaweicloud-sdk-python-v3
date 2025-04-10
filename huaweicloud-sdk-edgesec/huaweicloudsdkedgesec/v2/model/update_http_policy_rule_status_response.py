@@ -36,7 +36,7 @@ class UpdateHttpPolicyRuleStatusResponse(SdkResponse):
     }
 
     def __init__(self, category=None, description=None, id=None, policyid=None, status=None, timestamp=None):
-        """UpdateHttpPolicyRuleStatusResponse
+        r"""UpdateHttpPolicyRuleStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class UpdateHttpPolicyRuleStatusResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this UpdateHttpPolicyRuleStatusResponse.
+        r"""Gets the category of this UpdateHttpPolicyRuleStatusResponse.
 
         规则类别
 
@@ -90,7 +90,7 @@ class UpdateHttpPolicyRuleStatusResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this UpdateHttpPolicyRuleStatusResponse.
+        r"""Sets the category of this UpdateHttpPolicyRuleStatusResponse.
 
         规则类别
 
@@ -101,7 +101,7 @@ class UpdateHttpPolicyRuleStatusResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateHttpPolicyRuleStatusResponse.
+        r"""Gets the description of this UpdateHttpPolicyRuleStatusResponse.
 
         描述
 
@@ -112,7 +112,7 @@ class UpdateHttpPolicyRuleStatusResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateHttpPolicyRuleStatusResponse.
+        r"""Sets the description of this UpdateHttpPolicyRuleStatusResponse.
 
         描述
 
@@ -123,7 +123,7 @@ class UpdateHttpPolicyRuleStatusResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateHttpPolicyRuleStatusResponse.
+        r"""Gets the id of this UpdateHttpPolicyRuleStatusResponse.
 
         规则id
 
@@ -134,7 +134,7 @@ class UpdateHttpPolicyRuleStatusResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateHttpPolicyRuleStatusResponse.
+        r"""Sets the id of this UpdateHttpPolicyRuleStatusResponse.
 
         规则id
 
@@ -145,7 +145,7 @@ class UpdateHttpPolicyRuleStatusResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this UpdateHttpPolicyRuleStatusResponse.
+        r"""Gets the policyid of this UpdateHttpPolicyRuleStatusResponse.
 
         策略id
 
@@ -156,7 +156,7 @@ class UpdateHttpPolicyRuleStatusResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this UpdateHttpPolicyRuleStatusResponse.
+        r"""Sets the policyid of this UpdateHttpPolicyRuleStatusResponse.
 
         策略id
 
@@ -167,7 +167,7 @@ class UpdateHttpPolicyRuleStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateHttpPolicyRuleStatusResponse.
+        r"""Gets the status of this UpdateHttpPolicyRuleStatusResponse.
 
         规则状态
 
@@ -178,7 +178,7 @@ class UpdateHttpPolicyRuleStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateHttpPolicyRuleStatusResponse.
+        r"""Sets the status of this UpdateHttpPolicyRuleStatusResponse.
 
         规则状态
 
@@ -189,7 +189,7 @@ class UpdateHttpPolicyRuleStatusResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this UpdateHttpPolicyRuleStatusResponse.
+        r"""Gets the timestamp of this UpdateHttpPolicyRuleStatusResponse.
 
         规则添加时间
 
@@ -200,7 +200,7 @@ class UpdateHttpPolicyRuleStatusResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this UpdateHttpPolicyRuleStatusResponse.
+        r"""Sets the timestamp of this UpdateHttpPolicyRuleStatusResponse.
 
         规则添加时间
 

@@ -27,7 +27,7 @@ class CreateEdgeApplicationRequestDTO:
     }
 
     def __init__(self, edge_app_id=None, description=None):
-        """CreateEdgeApplicationRequestDTO
+        r"""CreateEdgeApplicationRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateEdgeApplicationRequestDTO:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this CreateEdgeApplicationRequestDTO.
+        r"""Gets the edge_app_id of this CreateEdgeApplicationRequestDTO.
 
         **参数说明**：用户自定义应用唯一ID。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）、美元符号（$）的组合。
 
@@ -60,7 +60,7 @@ class CreateEdgeApplicationRequestDTO:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this CreateEdgeApplicationRequestDTO.
+        r"""Sets the edge_app_id of this CreateEdgeApplicationRequestDTO.
 
         **参数说明**：用户自定义应用唯一ID。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）、美元符号（$）的组合。
 
@@ -71,7 +71,7 @@ class CreateEdgeApplicationRequestDTO:
 
     @property
     def description(self):
-        """Gets the description of this CreateEdgeApplicationRequestDTO.
+        r"""Gets the description of this CreateEdgeApplicationRequestDTO.
 
         **参数说明**：应用描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文引号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -82,7 +82,7 @@ class CreateEdgeApplicationRequestDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateEdgeApplicationRequestDTO.
+        r"""Sets the description of this CreateEdgeApplicationRequestDTO.
 
         **参数说明**：应用描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文引号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 

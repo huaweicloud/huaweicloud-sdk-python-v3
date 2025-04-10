@@ -27,7 +27,7 @@ class Nic:
     }
 
     def __init__(self, net_id=None, security_group_id=None):
-        """Nic
+        r"""Nic
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Nic:
 
     @property
     def net_id(self):
-        """Gets the net_id of this Nic.
+        r"""Gets the net_id of this Nic.
 
         子网ID
 
@@ -59,7 +59,7 @@ class Nic:
 
     @net_id.setter
     def net_id(self, net_id):
-        """Sets the net_id of this Nic.
+        r"""Sets the net_id of this Nic.
 
         子网ID
 
@@ -70,7 +70,7 @@ class Nic:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this Nic.
+        r"""Gets the security_group_id of this Nic.
 
         安全组ID
 
@@ -81,7 +81,7 @@ class Nic:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this Nic.
+        r"""Sets the security_group_id of this Nic.
 
         安全组ID
 

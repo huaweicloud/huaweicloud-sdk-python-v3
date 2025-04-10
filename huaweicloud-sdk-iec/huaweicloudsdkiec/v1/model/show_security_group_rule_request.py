@@ -25,7 +25,7 @@ class ShowSecurityGroupRuleRequest:
     }
 
     def __init__(self, security_group_rule_id=None):
-        """ShowSecurityGroupRuleRequest
+        r"""ShowSecurityGroupRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSecurityGroupRuleRequest:
 
     @property
     def security_group_rule_id(self):
-        """Gets the security_group_rule_id of this ShowSecurityGroupRuleRequest.
+        r"""Gets the security_group_rule_id of this ShowSecurityGroupRuleRequest.
 
         安全组规则ID。
 
@@ -53,7 +53,7 @@ class ShowSecurityGroupRuleRequest:
 
     @security_group_rule_id.setter
     def security_group_rule_id(self, security_group_rule_id):
-        """Sets the security_group_rule_id of this ShowSecurityGroupRuleRequest.
+        r"""Sets the security_group_rule_id of this ShowSecurityGroupRuleRequest.
 
         安全组规则ID。
 

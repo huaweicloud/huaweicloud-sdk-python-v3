@@ -25,7 +25,7 @@ class UpgradeWorkFlowUpdateRequestBody:
     }
 
     def __init__(self, status=None):
-        """UpgradeWorkFlowUpdateRequestBody
+        r"""UpgradeWorkFlowUpdateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpgradeWorkFlowUpdateRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpgradeWorkFlowUpdateRequestBody.
+        r"""Gets the status of this UpgradeWorkFlowUpdateRequestBody.
 
         :return: The status of this UpgradeWorkFlowUpdateRequestBody.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeWorkFlowUpdateRequestBodyStatus`
@@ -52,7 +52,7 @@ class UpgradeWorkFlowUpdateRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpgradeWorkFlowUpdateRequestBody.
+        r"""Sets the status of this UpgradeWorkFlowUpdateRequestBody.
 
         :param status: The status of this UpgradeWorkFlowUpdateRequestBody.
         :type status: :class:`huaweicloudsdkcce.v3.UpgradeWorkFlowUpdateRequestBodyStatus`

@@ -26,7 +26,7 @@ class UpdateRobotResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """UpdateRobotResponse
+        r"""UpdateRobotResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateRobotResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateRobotResponse.
+        r"""Gets the x_request_id of this UpdateRobotResponse.
 
         :return: The x_request_id of this UpdateRobotResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateRobotResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateRobotResponse.
+        r"""Sets the x_request_id of this UpdateRobotResponse.
 
         :param x_request_id: The x_request_id of this UpdateRobotResponse.
         :type x_request_id: str

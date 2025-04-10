@@ -25,7 +25,7 @@ class ExecuteGenerateReportRequest:
     }
 
     def __init__(self, body=None):
-        """ExecuteGenerateReportRequest
+        r"""ExecuteGenerateReportRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExecuteGenerateReportRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteGenerateReportRequest.
+        r"""Gets the body of this ExecuteGenerateReportRequest.
 
         :return: The body of this ExecuteGenerateReportRequest.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.ExecuteGenerateReportRequestBody`
@@ -52,7 +52,7 @@ class ExecuteGenerateReportRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteGenerateReportRequest.
+        r"""Sets the body of this ExecuteGenerateReportRequest.
 
         :param body: The body of this ExecuteGenerateReportRequest.
         :type body: :class:`huaweicloudsdkcodeartsinspector.v3.ExecuteGenerateReportRequestBody`

@@ -26,7 +26,7 @@ class ListUnreadNewInstantMessagesResponse(SdkResponse):
     }
 
     def __init__(self, imunread=None):
-        """ListUnreadNewInstantMessagesResponse
+        r"""ListUnreadNewInstantMessagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListUnreadNewInstantMessagesResponse(SdkResponse):
 
     @property
     def imunread(self):
-        """Gets the imunread of this ListUnreadNewInstantMessagesResponse.
+        r"""Gets the imunread of this ListUnreadNewInstantMessagesResponse.
 
         未读消息列表
 
@@ -55,7 +55,7 @@ class ListUnreadNewInstantMessagesResponse(SdkResponse):
 
     @imunread.setter
     def imunread(self, imunread):
-        """Sets the imunread of this ListUnreadNewInstantMessagesResponse.
+        r"""Sets the imunread of this ListUnreadNewInstantMessagesResponse.
 
         未读消息列表
 

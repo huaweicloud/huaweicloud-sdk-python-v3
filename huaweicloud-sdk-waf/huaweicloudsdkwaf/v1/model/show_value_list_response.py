@@ -38,7 +38,7 @@ class ShowValueListResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, type=None, description=None, values=None, producer=None, timestamp=None):
-        """ShowValueListResponse
+        r"""ShowValueListResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowValueListResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowValueListResponse.
+        r"""Gets the id of this ShowValueListResponse.
 
         引用表id
 
@@ -97,7 +97,7 @@ class ShowValueListResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowValueListResponse.
+        r"""Sets the id of this ShowValueListResponse.
 
         引用表id
 
@@ -108,7 +108,7 @@ class ShowValueListResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowValueListResponse.
+        r"""Gets the name of this ShowValueListResponse.
 
         引用表名称
 
@@ -119,7 +119,7 @@ class ShowValueListResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowValueListResponse.
+        r"""Sets the name of this ShowValueListResponse.
 
         引用表名称
 
@@ -130,7 +130,7 @@ class ShowValueListResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowValueListResponse.
+        r"""Gets the type of this ShowValueListResponse.
 
         引用表类型
 
@@ -141,7 +141,7 @@ class ShowValueListResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowValueListResponse.
+        r"""Sets the type of this ShowValueListResponse.
 
         引用表类型
 
@@ -152,7 +152,7 @@ class ShowValueListResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowValueListResponse.
+        r"""Gets the description of this ShowValueListResponse.
 
         引用表描述
 
@@ -163,7 +163,7 @@ class ShowValueListResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowValueListResponse.
+        r"""Sets the description of this ShowValueListResponse.
 
         引用表描述
 
@@ -174,7 +174,7 @@ class ShowValueListResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this ShowValueListResponse.
+        r"""Gets the values of this ShowValueListResponse.
 
         引用表的值
 
@@ -185,7 +185,7 @@ class ShowValueListResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ShowValueListResponse.
+        r"""Sets the values of this ShowValueListResponse.
 
         引用表的值
 
@@ -196,7 +196,7 @@ class ShowValueListResponse(SdkResponse):
 
     @property
     def producer(self):
-        """Gets the producer of this ShowValueListResponse.
+        r"""Gets the producer of this ShowValueListResponse.
 
         引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于智能访问控制自动创建
 
@@ -207,7 +207,7 @@ class ShowValueListResponse(SdkResponse):
 
     @producer.setter
     def producer(self, producer):
-        """Sets the producer of this ShowValueListResponse.
+        r"""Sets the producer of this ShowValueListResponse.
 
         引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于智能访问控制自动创建
 
@@ -218,7 +218,7 @@ class ShowValueListResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ShowValueListResponse.
+        r"""Gets the timestamp of this ShowValueListResponse.
 
         创建规则的时间，格式为13位毫秒时间戳
 
@@ -229,7 +229,7 @@ class ShowValueListResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowValueListResponse.
+        r"""Sets the timestamp of this ShowValueListResponse.
 
         创建规则的时间，格式为13位毫秒时间戳
 

@@ -27,7 +27,7 @@ class ResizePostPaidServerRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ResizePostPaidServerRequest
+        r"""ResizePostPaidServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResizePostPaidServerRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ResizePostPaidServerRequest.
+        r"""Gets the server_id of this ResizePostPaidServerRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class ResizePostPaidServerRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ResizePostPaidServerRequest.
+        r"""Sets the server_id of this ResizePostPaidServerRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class ResizePostPaidServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResizePostPaidServerRequest.
+        r"""Gets the body of this ResizePostPaidServerRequest.
 
         :return: The body of this ResizePostPaidServerRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.ResizePostPaidServerRequestBody`
@@ -80,7 +80,7 @@ class ResizePostPaidServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResizePostPaidServerRequest.
+        r"""Sets the body of this ResizePostPaidServerRequest.
 
         :param body: The body of this ResizePostPaidServerRequest.
         :type body: :class:`huaweicloudsdkecs.v2.ResizePostPaidServerRequestBody`

@@ -27,7 +27,7 @@ class UpdateCloudServiceCustomPolicyRequest:
     }
 
     def __init__(self, role_id=None, body=None):
-        """UpdateCloudServiceCustomPolicyRequest
+        r"""UpdateCloudServiceCustomPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateCloudServiceCustomPolicyRequest:
 
     @property
     def role_id(self):
-        """Gets the role_id of this UpdateCloudServiceCustomPolicyRequest.
+        r"""Gets the role_id of this UpdateCloudServiceCustomPolicyRequest.
 
         待修改的自定义策略ID，获取方式请参见：[自定义策略ID](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=ListCustomPolicies)。
 
@@ -60,7 +60,7 @@ class UpdateCloudServiceCustomPolicyRequest:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this UpdateCloudServiceCustomPolicyRequest.
+        r"""Sets the role_id of this UpdateCloudServiceCustomPolicyRequest.
 
         待修改的自定义策略ID，获取方式请参见：[自定义策略ID](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=ListCustomPolicies)。
 
@@ -71,7 +71,7 @@ class UpdateCloudServiceCustomPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCloudServiceCustomPolicyRequest.
+        r"""Gets the body of this UpdateCloudServiceCustomPolicyRequest.
 
         :return: The body of this UpdateCloudServiceCustomPolicyRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateCloudServiceCustomPolicyRequestBody`
@@ -80,7 +80,7 @@ class UpdateCloudServiceCustomPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCloudServiceCustomPolicyRequest.
+        r"""Sets the body of this UpdateCloudServiceCustomPolicyRequest.
 
         :param body: The body of this UpdateCloudServiceCustomPolicyRequest.
         :type body: :class:`huaweicloudsdkiam.v3.UpdateCloudServiceCustomPolicyRequestBody`

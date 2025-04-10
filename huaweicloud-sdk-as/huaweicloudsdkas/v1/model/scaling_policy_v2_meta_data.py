@@ -29,7 +29,7 @@ class ScalingPolicyV2MetaData:
     }
 
     def __init__(self, metadata_bandwidth_share_type=None, metadata_eip_id=None, metadata_eip_address=None):
-        """ScalingPolicyV2MetaData
+        r"""ScalingPolicyV2MetaData
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ScalingPolicyV2MetaData:
 
     @property
     def metadata_bandwidth_share_type(self):
-        """Gets the metadata_bandwidth_share_type of this ScalingPolicyV2MetaData.
+        r"""Gets the metadata_bandwidth_share_type of this ScalingPolicyV2MetaData.
 
         伸缩带宽策略中带宽对应的共享类型
 
@@ -68,7 +68,7 @@ class ScalingPolicyV2MetaData:
 
     @metadata_bandwidth_share_type.setter
     def metadata_bandwidth_share_type(self, metadata_bandwidth_share_type):
-        """Sets the metadata_bandwidth_share_type of this ScalingPolicyV2MetaData.
+        r"""Sets the metadata_bandwidth_share_type of this ScalingPolicyV2MetaData.
 
         伸缩带宽策略中带宽对应的共享类型
 
@@ -79,7 +79,7 @@ class ScalingPolicyV2MetaData:
 
     @property
     def metadata_eip_id(self):
-        """Gets the metadata_eip_id of this ScalingPolicyV2MetaData.
+        r"""Gets the metadata_eip_id of this ScalingPolicyV2MetaData.
 
         伸缩带宽策略中带宽对应的EIP的ID
 
@@ -90,7 +90,7 @@ class ScalingPolicyV2MetaData:
 
     @metadata_eip_id.setter
     def metadata_eip_id(self, metadata_eip_id):
-        """Sets the metadata_eip_id of this ScalingPolicyV2MetaData.
+        r"""Sets the metadata_eip_id of this ScalingPolicyV2MetaData.
 
         伸缩带宽策略中带宽对应的EIP的ID
 
@@ -101,7 +101,7 @@ class ScalingPolicyV2MetaData:
 
     @property
     def metadata_eip_address(self):
-        """Gets the metadata_eip_address of this ScalingPolicyV2MetaData.
+        r"""Gets the metadata_eip_address of this ScalingPolicyV2MetaData.
 
         伸缩带宽策略中带宽对应的EIP地址
 
@@ -112,7 +112,7 @@ class ScalingPolicyV2MetaData:
 
     @metadata_eip_address.setter
     def metadata_eip_address(self, metadata_eip_address):
-        """Sets the metadata_eip_address of this ScalingPolicyV2MetaData.
+        r"""Sets the metadata_eip_address of this ScalingPolicyV2MetaData.
 
         伸缩带宽策略中带宽对应的EIP地址
 

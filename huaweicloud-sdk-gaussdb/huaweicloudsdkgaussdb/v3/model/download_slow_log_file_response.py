@@ -28,7 +28,7 @@ class DownloadSlowLogFileResponse(SdkResponse):
     }
 
     def __init__(self, list=None, count=None):
-        """DownloadSlowLogFileResponse
+        r"""DownloadSlowLogFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DownloadSlowLogFileResponse(SdkResponse):
 
     @property
     def list(self):
-        """Gets the list of this DownloadSlowLogFileResponse.
+        r"""Gets the list of this DownloadSlowLogFileResponse.
 
         慢日志下载链接列表。
 
@@ -62,7 +62,7 @@ class DownloadSlowLogFileResponse(SdkResponse):
 
     @list.setter
     def list(self, list):
-        """Sets the list of this DownloadSlowLogFileResponse.
+        r"""Sets the list of this DownloadSlowLogFileResponse.
 
         慢日志下载链接列表。
 
@@ -73,7 +73,7 @@ class DownloadSlowLogFileResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this DownloadSlowLogFileResponse.
+        r"""Gets the count of this DownloadSlowLogFileResponse.
 
         条数。
 
@@ -84,7 +84,7 @@ class DownloadSlowLogFileResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this DownloadSlowLogFileResponse.
+        r"""Sets the count of this DownloadSlowLogFileResponse.
 
         条数。
 

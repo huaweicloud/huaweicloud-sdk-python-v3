@@ -44,7 +44,7 @@ class ShowBasicPluginResponse(SdkResponse):
     }
 
     def __init__(self, type=None, name=None, friendly_name=None, category=None, description=None, version=None, version_description=None, inputs=None, outputs=None, execution=None):
-        """ShowBasicPluginResponse
+        r"""ShowBasicPluginResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowBasicPluginResponse.
+        r"""Gets the type of this ShowBasicPluginResponse.
 
         类型
 
@@ -118,7 +118,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowBasicPluginResponse.
+        r"""Sets the type of this ShowBasicPluginResponse.
 
         类型
 
@@ -129,7 +129,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowBasicPluginResponse.
+        r"""Gets the name of this ShowBasicPluginResponse.
 
         名称
 
@@ -140,7 +140,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowBasicPluginResponse.
+        r"""Sets the name of this ShowBasicPluginResponse.
 
         名称
 
@@ -151,7 +151,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @property
     def friendly_name(self):
-        """Gets the friendly_name of this ShowBasicPluginResponse.
+        r"""Gets the friendly_name of this ShowBasicPluginResponse.
 
         展示名
 
@@ -162,7 +162,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @friendly_name.setter
     def friendly_name(self, friendly_name):
-        """Sets the friendly_name of this ShowBasicPluginResponse.
+        r"""Sets the friendly_name of this ShowBasicPluginResponse.
 
         展示名
 
@@ -173,7 +173,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this ShowBasicPluginResponse.
+        r"""Gets the category of this ShowBasicPluginResponse.
 
         业务类型
 
@@ -184,7 +184,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ShowBasicPluginResponse.
+        r"""Sets the category of this ShowBasicPluginResponse.
 
         业务类型
 
@@ -195,7 +195,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowBasicPluginResponse.
+        r"""Gets the description of this ShowBasicPluginResponse.
 
         描述
 
@@ -206,7 +206,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowBasicPluginResponse.
+        r"""Sets the description of this ShowBasicPluginResponse.
 
         描述
 
@@ -217,7 +217,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowBasicPluginResponse.
+        r"""Gets the version of this ShowBasicPluginResponse.
 
         版本
 
@@ -228,7 +228,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowBasicPluginResponse.
+        r"""Sets the version of this ShowBasicPluginResponse.
 
         版本
 
@@ -239,7 +239,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @property
     def version_description(self):
-        """Gets the version_description of this ShowBasicPluginResponse.
+        r"""Gets the version_description of this ShowBasicPluginResponse.
 
         版本说明
 
@@ -250,7 +250,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @version_description.setter
     def version_description(self, version_description):
-        """Sets the version_description of this ShowBasicPluginResponse.
+        r"""Sets the version_description of this ShowBasicPluginResponse.
 
         版本说明
 
@@ -261,7 +261,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @property
     def inputs(self):
-        """Gets the inputs of this ShowBasicPluginResponse.
+        r"""Gets the inputs of this ShowBasicPluginResponse.
 
         输入信息
 
@@ -272,7 +272,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this ShowBasicPluginResponse.
+        r"""Sets the inputs of this ShowBasicPluginResponse.
 
         输入信息
 
@@ -283,7 +283,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @property
     def outputs(self):
-        """Gets the outputs of this ShowBasicPluginResponse.
+        r"""Gets the outputs of this ShowBasicPluginResponse.
 
         输出信息
 
@@ -294,7 +294,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this ShowBasicPluginResponse.
+        r"""Sets the outputs of this ShowBasicPluginResponse.
 
         输出信息
 
@@ -305,7 +305,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @property
     def execution(self):
-        """Gets the execution of this ShowBasicPluginResponse.
+        r"""Gets the execution of this ShowBasicPluginResponse.
 
         :return: The execution of this ShowBasicPluginResponse.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.NewExtensionExecution`
@@ -314,7 +314,7 @@ class ShowBasicPluginResponse(SdkResponse):
 
     @execution.setter
     def execution(self, execution):
-        """Sets the execution of this ShowBasicPluginResponse.
+        r"""Sets the execution of this ShowBasicPluginResponse.
 
         :param execution: The execution of this ShowBasicPluginResponse.
         :type execution: :class:`huaweicloudsdkcodeartspipeline.v2.NewExtensionExecution`

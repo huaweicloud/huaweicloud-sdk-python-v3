@@ -26,7 +26,7 @@ class ListInstanceListResponse(SdkResponse):
     }
 
     def __init__(self, instances=None):
-        """ListInstanceListResponse
+        r"""ListInstanceListResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListInstanceListResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListInstanceListResponse.
+        r"""Gets the instances of this ListInstanceListResponse.
 
         api操作对应的实例列表
 
@@ -55,7 +55,7 @@ class ListInstanceListResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListInstanceListResponse.
+        r"""Sets the instances of this ListInstanceListResponse.
 
         api操作对应的实例列表
 

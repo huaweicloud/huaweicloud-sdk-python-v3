@@ -25,7 +25,7 @@ class ServiceItemIds:
     }
 
     def __init__(self, items=None):
-        """ServiceItemIds
+        r"""ServiceItemIds
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ServiceItemIds:
 
     @property
     def items(self):
-        """Gets the items of this ServiceItemIds.
+        r"""Gets the items of this ServiceItemIds.
 
         服务组成员id列表
 
@@ -54,7 +54,7 @@ class ServiceItemIds:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ServiceItemIds.
+        r"""Sets the items of this ServiceItemIds.
 
         服务组成员id列表
 

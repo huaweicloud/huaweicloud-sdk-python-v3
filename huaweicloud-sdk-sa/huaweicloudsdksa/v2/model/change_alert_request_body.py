@@ -25,7 +25,7 @@ class ChangeAlertRequestBody:
     }
 
     def __init__(self, data_object=None):
-        """ChangeAlertRequestBody
+        r"""ChangeAlertRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeAlertRequestBody:
 
     @property
     def data_object(self):
-        """Gets the data_object of this ChangeAlertRequestBody.
+        r"""Gets the data_object of this ChangeAlertRequestBody.
 
         :return: The data_object of this ChangeAlertRequestBody.
         :rtype: :class:`huaweicloudsdksa.v2.Alert`
@@ -52,7 +52,7 @@ class ChangeAlertRequestBody:
 
     @data_object.setter
     def data_object(self, data_object):
-        """Sets the data_object of this ChangeAlertRequestBody.
+        r"""Sets the data_object of this ChangeAlertRequestBody.
 
         :param data_object: The data_object of this ChangeAlertRequestBody.
         :type data_object: :class:`huaweicloudsdksa.v2.Alert`

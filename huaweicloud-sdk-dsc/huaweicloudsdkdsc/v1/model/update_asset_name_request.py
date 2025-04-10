@@ -27,7 +27,7 @@ class UpdateAssetNameRequest:
     }
 
     def __init__(self, asset_id=None, body=None):
-        """UpdateAssetNameRequest
+        r"""UpdateAssetNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAssetNameRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this UpdateAssetNameRequest.
+        r"""Gets the asset_id of this UpdateAssetNameRequest.
 
         资产ID
 
@@ -60,7 +60,7 @@ class UpdateAssetNameRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this UpdateAssetNameRequest.
+        r"""Sets the asset_id of this UpdateAssetNameRequest.
 
         资产ID
 
@@ -71,7 +71,7 @@ class UpdateAssetNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAssetNameRequest.
+        r"""Gets the body of this UpdateAssetNameRequest.
 
         :return: The body of this UpdateAssetNameRequest.
         :rtype: :class:`huaweicloudsdkdsc.v1.AssetNameRequest`
@@ -80,7 +80,7 @@ class UpdateAssetNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAssetNameRequest.
+        r"""Sets the body of this UpdateAssetNameRequest.
 
         :param body: The body of this UpdateAssetNameRequest.
         :type body: :class:`huaweicloudsdkdsc.v1.AssetNameRequest`

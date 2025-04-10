@@ -35,7 +35,7 @@ class KnowledgeIntentInfo:
     }
 
     def __init__(self, intent_id=None, name=None, identify=None, answer=None, create_time=None, update_time=None):
-        """KnowledgeIntentInfo
+        r"""KnowledgeIntentInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class KnowledgeIntentInfo:
 
     @property
     def intent_id(self):
-        """Gets the intent_id of this KnowledgeIntentInfo.
+        r"""Gets the intent_id of this KnowledgeIntentInfo.
 
         意图ID。
 
@@ -89,7 +89,7 @@ class KnowledgeIntentInfo:
 
     @intent_id.setter
     def intent_id(self, intent_id):
-        """Sets the intent_id of this KnowledgeIntentInfo.
+        r"""Sets the intent_id of this KnowledgeIntentInfo.
 
         意图ID。
 
@@ -100,7 +100,7 @@ class KnowledgeIntentInfo:
 
     @property
     def name(self):
-        """Gets the name of this KnowledgeIntentInfo.
+        r"""Gets the name of this KnowledgeIntentInfo.
 
         主题。
 
@@ -111,7 +111,7 @@ class KnowledgeIntentInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KnowledgeIntentInfo.
+        r"""Sets the name of this KnowledgeIntentInfo.
 
         主题。
 
@@ -122,7 +122,7 @@ class KnowledgeIntentInfo:
 
     @property
     def identify(self):
-        """Gets the identify of this KnowledgeIntentInfo.
+        r"""Gets the identify of this KnowledgeIntentInfo.
 
         意图标识。
 
@@ -133,7 +133,7 @@ class KnowledgeIntentInfo:
 
     @identify.setter
     def identify(self, identify):
-        """Sets the identify of this KnowledgeIntentInfo.
+        r"""Sets the identify of this KnowledgeIntentInfo.
 
         意图标识。
 
@@ -144,7 +144,7 @@ class KnowledgeIntentInfo:
 
     @property
     def answer(self):
-        """Gets the answer of this KnowledgeIntentInfo.
+        r"""Gets the answer of this KnowledgeIntentInfo.
 
         问题答案。
 
@@ -155,7 +155,7 @@ class KnowledgeIntentInfo:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this KnowledgeIntentInfo.
+        r"""Sets the answer of this KnowledgeIntentInfo.
 
         问题答案。
 
@@ -166,7 +166,7 @@ class KnowledgeIntentInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this KnowledgeIntentInfo.
+        r"""Gets the create_time of this KnowledgeIntentInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -177,7 +177,7 @@ class KnowledgeIntentInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this KnowledgeIntentInfo.
+        r"""Sets the create_time of this KnowledgeIntentInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -188,7 +188,7 @@ class KnowledgeIntentInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this KnowledgeIntentInfo.
+        r"""Gets the update_time of this KnowledgeIntentInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -199,7 +199,7 @@ class KnowledgeIntentInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this KnowledgeIntentInfo.
+        r"""Sets the update_time of this KnowledgeIntentInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 

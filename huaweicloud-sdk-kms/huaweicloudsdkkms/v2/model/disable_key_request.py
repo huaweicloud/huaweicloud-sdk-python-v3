@@ -25,7 +25,7 @@ class DisableKeyRequest:
     }
 
     def __init__(self, body=None):
-        """DisableKeyRequest
+        r"""DisableKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DisableKeyRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisableKeyRequest.
+        r"""Gets the body of this DisableKeyRequest.
 
         :return: The body of this DisableKeyRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
@@ -52,7 +52,7 @@ class DisableKeyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisableKeyRequest.
+        r"""Sets the body of this DisableKeyRequest.
 
         :param body: The body of this DisableKeyRequest.
         :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`

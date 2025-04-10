@@ -26,7 +26,7 @@ class MigrateDomainResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """MigrateDomainResponse
+        r"""MigrateDomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class MigrateDomainResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this MigrateDomainResponse.
+        r"""Gets the body of this MigrateDomainResponse.
 
         :return: The body of this MigrateDomainResponse.
         :rtype: dict(str, str)
@@ -53,7 +53,7 @@ class MigrateDomainResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this MigrateDomainResponse.
+        r"""Sets the body of this MigrateDomainResponse.
 
         :param body: The body of this MigrateDomainResponse.
         :type body: dict(str, str)

@@ -54,7 +54,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
     }
 
     def __init__(self, create_time=None, update_time=None, error_msg=None, id=None, name=None, progress=None, status=None, subtitle_url=None, video_url=None, video_shot=None, character_config=None, compose_actions=None, read_config=None, tts_config=None, video_config=None):
-        """ExecuteUpdateVideoInfoByIdResponse
+        r"""ExecuteUpdateVideoInfoByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Gets the create_time of this ExecuteUpdateVideoInfoByIdResponse.
 
         创建时间
 
@@ -143,7 +143,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Sets the create_time of this ExecuteUpdateVideoInfoByIdResponse.
 
         创建时间
 
@@ -154,7 +154,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Gets the update_time of this ExecuteUpdateVideoInfoByIdResponse.
 
         更新时间
 
@@ -165,7 +165,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Sets the update_time of this ExecuteUpdateVideoInfoByIdResponse.
 
         更新时间
 
@@ -176,7 +176,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Gets the error_msg of this ExecuteUpdateVideoInfoByIdResponse.
 
         错误信息 如: {\\\"error_code\\\":\\\"0001\\\",\\\"error_msg\\\":\\\"播报内容超过10分钟，请重新调整播报内容。\\\"}
 
@@ -187,7 +187,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Sets the error_msg of this ExecuteUpdateVideoInfoByIdResponse.
 
         错误信息 如: {\\\"error_code\\\":\\\"0001\\\",\\\"error_msg\\\":\\\"播报内容超过10分钟，请重新调整播报内容。\\\"}
 
@@ -198,7 +198,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Gets the id of this ExecuteUpdateVideoInfoByIdResponse.
 
         
 
@@ -209,7 +209,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Sets the id of this ExecuteUpdateVideoInfoByIdResponse.
 
         
 
@@ -220,7 +220,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Gets the name of this ExecuteUpdateVideoInfoByIdResponse.
 
         视频名称
 
@@ -231,7 +231,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Sets the name of this ExecuteUpdateVideoInfoByIdResponse.
 
         视频名称
 
@@ -242,7 +242,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @property
     def progress(self):
-        """Gets the progress of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Gets the progress of this ExecuteUpdateVideoInfoByIdResponse.
 
         视频生成进度 0~100
 
@@ -253,7 +253,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Sets the progress of this ExecuteUpdateVideoInfoByIdResponse.
 
         视频生成进度 0~100
 
@@ -264,7 +264,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Gets the status of this ExecuteUpdateVideoInfoByIdResponse.
 
         0：未初始化 1：生成中 2：生成成功 3：生成失败
 
@@ -275,7 +275,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Sets the status of this ExecuteUpdateVideoInfoByIdResponse.
 
         0：未初始化 1：生成中 2：生成成功 3：生成失败
 
@@ -286,7 +286,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @property
     def subtitle_url(self):
-        """Gets the subtitle_url of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Gets the subtitle_url of this ExecuteUpdateVideoInfoByIdResponse.
 
         字幕地址
 
@@ -297,7 +297,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @subtitle_url.setter
     def subtitle_url(self, subtitle_url):
-        """Sets the subtitle_url of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Sets the subtitle_url of this ExecuteUpdateVideoInfoByIdResponse.
 
         字幕地址
 
@@ -308,7 +308,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @property
     def video_url(self):
-        """Gets the video_url of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Gets the video_url of this ExecuteUpdateVideoInfoByIdResponse.
 
         视频的obs地址，当视频生成成功时返回
 
@@ -319,7 +319,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @video_url.setter
     def video_url(self, video_url):
-        """Sets the video_url of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Sets the video_url of this ExecuteUpdateVideoInfoByIdResponse.
 
         视频的obs地址，当视频生成成功时返回
 
@@ -330,7 +330,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @property
     def video_shot(self):
-        """Gets the video_shot of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Gets the video_shot of this ExecuteUpdateVideoInfoByIdResponse.
 
         视频截图地址，jpg格式 分辨率480 * 270 当status=2：生成成功时返回
 
@@ -341,7 +341,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @video_shot.setter
     def video_shot(self, video_shot):
-        """Sets the video_shot of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Sets the video_shot of this ExecuteUpdateVideoInfoByIdResponse.
 
         视频截图地址，jpg格式 分辨率480 * 270 当status=2：生成成功时返回
 
@@ -352,7 +352,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @property
     def character_config(self):
-        """Gets the character_config of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Gets the character_config of this ExecuteUpdateVideoInfoByIdResponse.
 
         :return: The character_config of this ExecuteUpdateVideoInfoByIdResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.CharacterConfig`
@@ -361,7 +361,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @character_config.setter
     def character_config(self, character_config):
-        """Sets the character_config of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Sets the character_config of this ExecuteUpdateVideoInfoByIdResponse.
 
         :param character_config: The character_config of this ExecuteUpdateVideoInfoByIdResponse.
         :type character_config: :class:`huaweicloudsdkcbs.v1.CharacterConfig`
@@ -370,7 +370,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @property
     def compose_actions(self):
-        """Gets the compose_actions of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Gets the compose_actions of this ExecuteUpdateVideoInfoByIdResponse.
 
         合成动作，如果不为空，则表示可以进行合成操作
 
@@ -381,7 +381,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @compose_actions.setter
     def compose_actions(self, compose_actions):
-        """Sets the compose_actions of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Sets the compose_actions of this ExecuteUpdateVideoInfoByIdResponse.
 
         合成动作，如果不为空，则表示可以进行合成操作
 
@@ -392,7 +392,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @property
     def read_config(self):
-        """Gets the read_config of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Gets the read_config of this ExecuteUpdateVideoInfoByIdResponse.
 
         :return: The read_config of this ExecuteUpdateVideoInfoByIdResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.ReadConfigResp`
@@ -401,7 +401,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @read_config.setter
     def read_config(self, read_config):
-        """Sets the read_config of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Sets the read_config of this ExecuteUpdateVideoInfoByIdResponse.
 
         :param read_config: The read_config of this ExecuteUpdateVideoInfoByIdResponse.
         :type read_config: :class:`huaweicloudsdkcbs.v1.ReadConfigResp`
@@ -410,7 +410,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @property
     def tts_config(self):
-        """Gets the tts_config of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Gets the tts_config of this ExecuteUpdateVideoInfoByIdResponse.
 
         :return: The tts_config of this ExecuteUpdateVideoInfoByIdResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.TtsConfig`
@@ -419,7 +419,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @tts_config.setter
     def tts_config(self, tts_config):
-        """Sets the tts_config of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Sets the tts_config of this ExecuteUpdateVideoInfoByIdResponse.
 
         :param tts_config: The tts_config of this ExecuteUpdateVideoInfoByIdResponse.
         :type tts_config: :class:`huaweicloudsdkcbs.v1.TtsConfig`
@@ -428,7 +428,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @property
     def video_config(self):
-        """Gets the video_config of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Gets the video_config of this ExecuteUpdateVideoInfoByIdResponse.
 
         :return: The video_config of this ExecuteUpdateVideoInfoByIdResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.VideoConfigResp`
@@ -437,7 +437,7 @@ class ExecuteUpdateVideoInfoByIdResponse(SdkResponse):
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this ExecuteUpdateVideoInfoByIdResponse.
+        r"""Sets the video_config of this ExecuteUpdateVideoInfoByIdResponse.
 
         :param video_config: The video_config of this ExecuteUpdateVideoInfoByIdResponse.
         :type video_config: :class:`huaweicloudsdkcbs.v1.VideoConfigResp`

@@ -31,7 +31,7 @@ class AlertSrcGeo:
     }
 
     def __init__(self, latitude=None, longitude=None, city_code=None, country_code=None):
-        """AlertSrcGeo
+        r"""AlertSrcGeo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AlertSrcGeo:
 
     @property
     def latitude(self):
-        """Gets the latitude of this AlertSrcGeo.
+        r"""Gets the latitude of this AlertSrcGeo.
 
         纬度
 
@@ -75,7 +75,7 @@ class AlertSrcGeo:
 
     @latitude.setter
     def latitude(self, latitude):
-        """Sets the latitude of this AlertSrcGeo.
+        r"""Sets the latitude of this AlertSrcGeo.
 
         纬度
 
@@ -86,7 +86,7 @@ class AlertSrcGeo:
 
     @property
     def longitude(self):
-        """Gets the longitude of this AlertSrcGeo.
+        r"""Gets the longitude of this AlertSrcGeo.
 
         经度
 
@@ -97,7 +97,7 @@ class AlertSrcGeo:
 
     @longitude.setter
     def longitude(self, longitude):
-        """Sets the longitude of this AlertSrcGeo.
+        r"""Sets the longitude of this AlertSrcGeo.
 
         经度
 
@@ -108,7 +108,7 @@ class AlertSrcGeo:
 
     @property
     def city_code(self):
-        """Gets the city_code of this AlertSrcGeo.
+        r"""Gets the city_code of this AlertSrcGeo.
 
         城市编码，Beijing | Shanghai
 
@@ -119,7 +119,7 @@ class AlertSrcGeo:
 
     @city_code.setter
     def city_code(self, city_code):
-        """Sets the city_code of this AlertSrcGeo.
+        r"""Sets the city_code of this AlertSrcGeo.
 
         城市编码，Beijing | Shanghai
 
@@ -130,7 +130,7 @@ class AlertSrcGeo:
 
     @property
     def country_code(self):
-        """Gets the country_code of this AlertSrcGeo.
+        r"""Gets the country_code of this AlertSrcGeo.
 
         国家简码，参考ISO 3166-1 alpha-2，例如：CN | US | DE | IT | SG
 
@@ -141,7 +141,7 @@ class AlertSrcGeo:
 
     @country_code.setter
     def country_code(self, country_code):
-        """Sets the country_code of this AlertSrcGeo.
+        r"""Sets the country_code of this AlertSrcGeo.
 
         国家简码，参考ISO 3166-1 alpha-2，例如：CN | US | DE | IT | SG
 

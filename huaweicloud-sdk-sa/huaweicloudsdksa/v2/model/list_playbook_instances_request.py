@@ -49,7 +49,7 @@ class ListPlaybookInstancesRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, status=None, date_type=None, name=None, playbook_name=None, dataclass_name=None, dataobject_name=None, trigger_type=None, from_date=None, to_date=None, limit=None, offset=None):
-        """ListPlaybookInstancesRequest
+        r"""ListPlaybookInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -125,7 +125,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListPlaybookInstancesRequest.
+        r"""Gets the project_id of this ListPlaybookInstancesRequest.
 
         ID of project
 
@@ -136,7 +136,7 @@ class ListPlaybookInstancesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListPlaybookInstancesRequest.
+        r"""Sets the project_id of this ListPlaybookInstancesRequest.
 
         ID of project
 
@@ -147,7 +147,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListPlaybookInstancesRequest.
+        r"""Gets the workspace_id of this ListPlaybookInstancesRequest.
 
         ID of workspace
 
@@ -158,7 +158,7 @@ class ListPlaybookInstancesRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListPlaybookInstancesRequest.
+        r"""Sets the workspace_id of this ListPlaybookInstancesRequest.
 
         ID of workspace
 
@@ -169,7 +169,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListPlaybookInstancesRequest.
+        r"""Gets the status of this ListPlaybookInstancesRequest.
 
         Playbook instance status. RUNNING、FINISHED、FAILED、RETRYING、 TERMINATING、TERMINATED
 
@@ -180,7 +180,7 @@ class ListPlaybookInstancesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPlaybookInstancesRequest.
+        r"""Sets the status of this ListPlaybookInstancesRequest.
 
         Playbook instance status. RUNNING、FINISHED、FAILED、RETRYING、 TERMINATING、TERMINATED
 
@@ -191,7 +191,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def date_type(self):
-        """Gets the date_type of this ListPlaybookInstancesRequest.
+        r"""Gets the date_type of this ListPlaybookInstancesRequest.
 
         date type, START END
 
@@ -202,7 +202,7 @@ class ListPlaybookInstancesRequest:
 
     @date_type.setter
     def date_type(self, date_type):
-        """Sets the date_type of this ListPlaybookInstancesRequest.
+        r"""Sets the date_type of this ListPlaybookInstancesRequest.
 
         date type, START END
 
@@ -213,7 +213,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPlaybookInstancesRequest.
+        r"""Gets the name of this ListPlaybookInstancesRequest.
 
         name
 
@@ -224,7 +224,7 @@ class ListPlaybookInstancesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPlaybookInstancesRequest.
+        r"""Sets the name of this ListPlaybookInstancesRequest.
 
         name
 
@@ -235,7 +235,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def playbook_name(self):
-        """Gets the playbook_name of this ListPlaybookInstancesRequest.
+        r"""Gets the playbook_name of this ListPlaybookInstancesRequest.
 
         Playbook name.
 
@@ -246,7 +246,7 @@ class ListPlaybookInstancesRequest:
 
     @playbook_name.setter
     def playbook_name(self, playbook_name):
-        """Sets the playbook_name of this ListPlaybookInstancesRequest.
+        r"""Sets the playbook_name of this ListPlaybookInstancesRequest.
 
         Playbook name.
 
@@ -257,7 +257,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def dataclass_name(self):
-        """Gets the dataclass_name of this ListPlaybookInstancesRequest.
+        r"""Gets the dataclass_name of this ListPlaybookInstancesRequest.
 
         Dataclass name.
 
@@ -268,7 +268,7 @@ class ListPlaybookInstancesRequest:
 
     @dataclass_name.setter
     def dataclass_name(self, dataclass_name):
-        """Sets the dataclass_name of this ListPlaybookInstancesRequest.
+        r"""Sets the dataclass_name of this ListPlaybookInstancesRequest.
 
         Dataclass name.
 
@@ -279,7 +279,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def dataobject_name(self):
-        """Gets the dataobject_name of this ListPlaybookInstancesRequest.
+        r"""Gets the dataobject_name of this ListPlaybookInstancesRequest.
 
         Dataobject name.
 
@@ -290,7 +290,7 @@ class ListPlaybookInstancesRequest:
 
     @dataobject_name.setter
     def dataobject_name(self, dataobject_name):
-        """Sets the dataobject_name of this ListPlaybookInstancesRequest.
+        r"""Sets the dataobject_name of this ListPlaybookInstancesRequest.
 
         Dataobject name.
 
@@ -301,7 +301,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this ListPlaybookInstancesRequest.
+        r"""Gets the trigger_type of this ListPlaybookInstancesRequest.
 
         trigger type. DEBUG, TIMER, EVENT, MANUAL
 
@@ -312,7 +312,7 @@ class ListPlaybookInstancesRequest:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this ListPlaybookInstancesRequest.
+        r"""Sets the trigger_type of this ListPlaybookInstancesRequest.
 
         trigger type. DEBUG, TIMER, EVENT, MANUAL
 
@@ -323,7 +323,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def from_date(self):
-        """Gets the from_date of this ListPlaybookInstancesRequest.
+        r"""Gets the from_date of this ListPlaybookInstancesRequest.
 
         起始时间
 
@@ -334,7 +334,7 @@ class ListPlaybookInstancesRequest:
 
     @from_date.setter
     def from_date(self, from_date):
-        """Sets the from_date of this ListPlaybookInstancesRequest.
+        r"""Sets the from_date of this ListPlaybookInstancesRequest.
 
         起始时间
 
@@ -345,7 +345,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def to_date(self):
-        """Gets the to_date of this ListPlaybookInstancesRequest.
+        r"""Gets the to_date of this ListPlaybookInstancesRequest.
 
         结束时间
 
@@ -356,7 +356,7 @@ class ListPlaybookInstancesRequest:
 
     @to_date.setter
     def to_date(self, to_date):
-        """Sets the to_date of this ListPlaybookInstancesRequest.
+        r"""Sets the to_date of this ListPlaybookInstancesRequest.
 
         结束时间
 
@@ -367,7 +367,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPlaybookInstancesRequest.
+        r"""Gets the limit of this ListPlaybookInstancesRequest.
 
         request limit size
 
@@ -378,7 +378,7 @@ class ListPlaybookInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPlaybookInstancesRequest.
+        r"""Sets the limit of this ListPlaybookInstancesRequest.
 
         request limit size
 
@@ -389,7 +389,7 @@ class ListPlaybookInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPlaybookInstancesRequest.
+        r"""Gets the offset of this ListPlaybookInstancesRequest.
 
         request offset, from 0
 
@@ -400,7 +400,7 @@ class ListPlaybookInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPlaybookInstancesRequest.
+        r"""Sets the offset of this ListPlaybookInstancesRequest.
 
         request offset, from 0
 

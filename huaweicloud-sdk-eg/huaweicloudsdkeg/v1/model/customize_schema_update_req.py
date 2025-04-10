@@ -27,7 +27,7 @@ class CustomizeSchemaUpdateReq:
     }
 
     def __init__(self, description=None, compatibility=None):
-        """CustomizeSchemaUpdateReq
+        r"""CustomizeSchemaUpdateReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CustomizeSchemaUpdateReq:
 
     @property
     def description(self):
-        """Gets the description of this CustomizeSchemaUpdateReq.
+        r"""Gets the description of this CustomizeSchemaUpdateReq.
 
         事件模型描述
 
@@ -61,7 +61,7 @@ class CustomizeSchemaUpdateReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CustomizeSchemaUpdateReq.
+        r"""Sets the description of this CustomizeSchemaUpdateReq.
 
         事件模型描述
 
@@ -72,7 +72,7 @@ class CustomizeSchemaUpdateReq:
 
     @property
     def compatibility(self):
-        """Gets the compatibility of this CustomizeSchemaUpdateReq.
+        r"""Gets the compatibility of this CustomizeSchemaUpdateReq.
 
         事件模型兼容性
 
@@ -83,7 +83,7 @@ class CustomizeSchemaUpdateReq:
 
     @compatibility.setter
     def compatibility(self, compatibility):
-        """Sets the compatibility of this CustomizeSchemaUpdateReq.
+        r"""Sets the compatibility of this CustomizeSchemaUpdateReq.
 
         事件模型兼容性
 

@@ -25,7 +25,7 @@ class RunQueryVideoModerationJobRequest:
     }
 
     def __init__(self, job_id=None):
-        """RunQueryVideoModerationJobRequest
+        r"""RunQueryVideoModerationJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RunQueryVideoModerationJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this RunQueryVideoModerationJobRequest.
+        r"""Gets the job_id of this RunQueryVideoModerationJobRequest.
 
         创建作业成功时，接口返回的job_id。
 
@@ -53,7 +53,7 @@ class RunQueryVideoModerationJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RunQueryVideoModerationJobRequest.
+        r"""Sets the job_id of this RunQueryVideoModerationJobRequest.
 
         创建作业成功时，接口返回的job_id。
 

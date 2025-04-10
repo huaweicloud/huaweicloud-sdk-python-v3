@@ -29,7 +29,7 @@ class PageInfo:
     }
 
     def __init__(self, offset=None, limit=None, total=None):
-        """PageInfo
+        r"""PageInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PageInfo:
 
     @property
     def offset(self):
-        """Gets the offset of this PageInfo.
+        r"""Gets the offset of this PageInfo.
 
         翻页页数，从1开始。
 
@@ -68,7 +68,7 @@ class PageInfo:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this PageInfo.
+        r"""Sets the offset of this PageInfo.
 
         翻页页数，从1开始。
 
@@ -79,7 +79,7 @@ class PageInfo:
 
     @property
     def limit(self):
-        """Gets the limit of this PageInfo.
+        r"""Gets the limit of this PageInfo.
 
         每页展示的条数。
 
@@ -90,7 +90,7 @@ class PageInfo:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this PageInfo.
+        r"""Sets the limit of this PageInfo.
 
         每页展示的条数。
 
@@ -101,7 +101,7 @@ class PageInfo:
 
     @property
     def total(self):
-        """Gets the total of this PageInfo.
+        r"""Gets the total of this PageInfo.
 
         总条数。
 
@@ -112,7 +112,7 @@ class PageInfo:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this PageInfo.
+        r"""Sets the total of this PageInfo.
 
         总条数。
 

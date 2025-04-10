@@ -35,7 +35,7 @@ class LogicalClusterTaskInfo:
     }
 
     def __init__(self, type=None, logical_cluster_name=None, start_time=None, end_time=None, result=None, log=None):
-        """LogicalClusterTaskInfo
+        r"""LogicalClusterTaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class LogicalClusterTaskInfo:
 
     @property
     def type(self):
-        """Gets the type of this LogicalClusterTaskInfo.
+        r"""Gets the type of this LogicalClusterTaskInfo.
 
         任务类型
 
@@ -89,7 +89,7 @@ class LogicalClusterTaskInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this LogicalClusterTaskInfo.
+        r"""Sets the type of this LogicalClusterTaskInfo.
 
         任务类型
 
@@ -100,7 +100,7 @@ class LogicalClusterTaskInfo:
 
     @property
     def logical_cluster_name(self):
-        """Gets the logical_cluster_name of this LogicalClusterTaskInfo.
+        r"""Gets the logical_cluster_name of this LogicalClusterTaskInfo.
 
         逻辑集群名称
 
@@ -111,7 +111,7 @@ class LogicalClusterTaskInfo:
 
     @logical_cluster_name.setter
     def logical_cluster_name(self, logical_cluster_name):
-        """Sets the logical_cluster_name of this LogicalClusterTaskInfo.
+        r"""Sets the logical_cluster_name of this LogicalClusterTaskInfo.
 
         逻辑集群名称
 
@@ -122,7 +122,7 @@ class LogicalClusterTaskInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this LogicalClusterTaskInfo.
+        r"""Gets the start_time of this LogicalClusterTaskInfo.
 
         任务开始时间
 
@@ -133,7 +133,7 @@ class LogicalClusterTaskInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this LogicalClusterTaskInfo.
+        r"""Sets the start_time of this LogicalClusterTaskInfo.
 
         任务开始时间
 
@@ -144,7 +144,7 @@ class LogicalClusterTaskInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this LogicalClusterTaskInfo.
+        r"""Gets the end_time of this LogicalClusterTaskInfo.
 
         任务结束时间
 
@@ -155,7 +155,7 @@ class LogicalClusterTaskInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this LogicalClusterTaskInfo.
+        r"""Sets the end_time of this LogicalClusterTaskInfo.
 
         任务结束时间
 
@@ -166,7 +166,7 @@ class LogicalClusterTaskInfo:
 
     @property
     def result(self):
-        """Gets the result of this LogicalClusterTaskInfo.
+        r"""Gets the result of this LogicalClusterTaskInfo.
 
         任务执行结果
 
@@ -177,7 +177,7 @@ class LogicalClusterTaskInfo:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this LogicalClusterTaskInfo.
+        r"""Sets the result of this LogicalClusterTaskInfo.
 
         任务执行结果
 
@@ -188,7 +188,7 @@ class LogicalClusterTaskInfo:
 
     @property
     def log(self):
-        """Gets the log of this LogicalClusterTaskInfo.
+        r"""Gets the log of this LogicalClusterTaskInfo.
 
         任务执行日志
 
@@ -199,7 +199,7 @@ class LogicalClusterTaskInfo:
 
     @log.setter
     def log(self, log):
-        """Sets the log of this LogicalClusterTaskInfo.
+        r"""Sets the log of this LogicalClusterTaskInfo.
 
         任务执行日志
 

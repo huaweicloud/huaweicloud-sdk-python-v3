@@ -27,7 +27,7 @@ class NumericalAttr:
     }
 
     def __init__(self, name=None, weight=None):
-        """NumericalAttr
+        r"""NumericalAttr
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NumericalAttr:
 
     @property
     def name(self):
-        """Gets the name of this NumericalAttr.
+        r"""Gets the name of this NumericalAttr.
 
         特征名。
 
@@ -59,7 +59,7 @@ class NumericalAttr:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NumericalAttr.
+        r"""Sets the name of this NumericalAttr.
 
         特征名。
 
@@ -70,7 +70,7 @@ class NumericalAttr:
 
     @property
     def weight(self):
-        """Gets the weight of this NumericalAttr.
+        r"""Gets the weight of this NumericalAttr.
 
         权重。
 
@@ -81,7 +81,7 @@ class NumericalAttr:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this NumericalAttr.
+        r"""Sets the weight of this NumericalAttr.
 
         权重。
 

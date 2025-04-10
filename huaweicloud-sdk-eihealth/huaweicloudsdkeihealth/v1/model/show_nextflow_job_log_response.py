@@ -30,7 +30,7 @@ class ShowNextflowJobLogResponse(SdkResponse):
     }
 
     def __init__(self, count=None, logs=None, download_url=None):
-        """ShowNextflowJobLogResponse
+        r"""ShowNextflowJobLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowNextflowJobLogResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowNextflowJobLogResponse.
+        r"""Gets the count of this ShowNextflowJobLogResponse.
 
         作业日志条数
 
@@ -69,7 +69,7 @@ class ShowNextflowJobLogResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowNextflowJobLogResponse.
+        r"""Sets the count of this ShowNextflowJobLogResponse.
 
         作业日志条数
 
@@ -80,7 +80,7 @@ class ShowNextflowJobLogResponse(SdkResponse):
 
     @property
     def logs(self):
-        """Gets the logs of this ShowNextflowJobLogResponse.
+        r"""Gets the logs of this ShowNextflowJobLogResponse.
 
         日志内容列表
 
@@ -91,7 +91,7 @@ class ShowNextflowJobLogResponse(SdkResponse):
 
     @logs.setter
     def logs(self, logs):
-        """Sets the logs of this ShowNextflowJobLogResponse.
+        r"""Sets the logs of this ShowNextflowJobLogResponse.
 
         日志内容列表
 
@@ -102,7 +102,7 @@ class ShowNextflowJobLogResponse(SdkResponse):
 
     @property
     def download_url(self):
-        """Gets the download_url of this ShowNextflowJobLogResponse.
+        r"""Gets the download_url of this ShowNextflowJobLogResponse.
 
         日志下载链接
 
@@ -113,7 +113,7 @@ class ShowNextflowJobLogResponse(SdkResponse):
 
     @download_url.setter
     def download_url(self, download_url):
-        """Sets the download_url of this ShowNextflowJobLogResponse.
+        r"""Sets the download_url of this ShowNextflowJobLogResponse.
 
         日志下载链接
 

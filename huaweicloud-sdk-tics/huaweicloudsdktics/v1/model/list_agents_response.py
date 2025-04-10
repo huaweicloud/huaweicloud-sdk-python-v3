@@ -28,7 +28,7 @@ class ListAgentsResponse(SdkResponse):
     }
 
     def __init__(self, lists=None, total=None):
-        """ListAgentsResponse
+        r"""ListAgentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAgentsResponse(SdkResponse):
 
     @property
     def lists(self):
-        """Gets the lists of this ListAgentsResponse.
+        r"""Gets the lists of this ListAgentsResponse.
 
         实例集合
 
@@ -62,7 +62,7 @@ class ListAgentsResponse(SdkResponse):
 
     @lists.setter
     def lists(self, lists):
-        """Sets the lists of this ListAgentsResponse.
+        r"""Sets the lists of this ListAgentsResponse.
 
         实例集合
 
@@ -73,7 +73,7 @@ class ListAgentsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAgentsResponse.
+        r"""Gets the total of this ListAgentsResponse.
 
         总记录数
 
@@ -84,7 +84,7 @@ class ListAgentsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAgentsResponse.
+        r"""Sets the total of this ListAgentsResponse.
 
         总记录数
 

@@ -27,7 +27,7 @@ class AccountTypeEnum:
     }
 
     def __init__(self):
-        """AccountTypeEnum
+        r"""AccountTypeEnum
 
         The model defined in huaweicloud sdk
 

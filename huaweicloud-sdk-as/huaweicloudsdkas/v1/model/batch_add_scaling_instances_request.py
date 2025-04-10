@@ -27,7 +27,7 @@ class BatchAddScalingInstancesRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """BatchAddScalingInstancesRequest
+        r"""BatchAddScalingInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAddScalingInstancesRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this BatchAddScalingInstancesRequest.
+        r"""Gets the scaling_group_id of this BatchAddScalingInstancesRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class BatchAddScalingInstancesRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this BatchAddScalingInstancesRequest.
+        r"""Sets the scaling_group_id of this BatchAddScalingInstancesRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class BatchAddScalingInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddScalingInstancesRequest.
+        r"""Gets the body of this BatchAddScalingInstancesRequest.
 
         :return: The body of this BatchAddScalingInstancesRequest.
         :rtype: :class:`huaweicloudsdkas.v1.BatchAddInstancesOption`
@@ -80,7 +80,7 @@ class BatchAddScalingInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddScalingInstancesRequest.
+        r"""Sets the body of this BatchAddScalingInstancesRequest.
 
         :param body: The body of this BatchAddScalingInstancesRequest.
         :type body: :class:`huaweicloudsdkas.v1.BatchAddInstancesOption`

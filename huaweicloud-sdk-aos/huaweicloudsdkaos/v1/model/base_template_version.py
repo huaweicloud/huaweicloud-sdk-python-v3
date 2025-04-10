@@ -31,7 +31,7 @@ class BaseTemplateVersion:
     }
 
     def __init__(self, template_id=None, template_name=None, version_description=None, create_time=None):
-        """BaseTemplateVersion
+        r"""BaseTemplateVersion
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class BaseTemplateVersion:
 
     @property
     def template_id(self):
-        """Gets the template_id of this BaseTemplateVersion.
+        r"""Gets the template_id of this BaseTemplateVersion.
 
         模板的唯一ID，由模板服务随机生成
 
@@ -72,7 +72,7 @@ class BaseTemplateVersion:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this BaseTemplateVersion.
+        r"""Sets the template_id of this BaseTemplateVersion.
 
         模板的唯一ID，由模板服务随机生成
 
@@ -83,7 +83,7 @@ class BaseTemplateVersion:
 
     @property
     def template_name(self):
-        """Gets the template_name of this BaseTemplateVersion.
+        r"""Gets the template_name of this BaseTemplateVersion.
 
         用户希望创建的模板名称
 
@@ -94,7 +94,7 @@ class BaseTemplateVersion:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this BaseTemplateVersion.
+        r"""Sets the template_name of this BaseTemplateVersion.
 
         用户希望创建的模板名称
 
@@ -105,7 +105,7 @@ class BaseTemplateVersion:
 
     @property
     def version_description(self):
-        """Gets the version_description of this BaseTemplateVersion.
+        r"""Gets the version_description of this BaseTemplateVersion.
 
         模板版本的描述。可用于客户识别自己的模板版本
 
@@ -116,7 +116,7 @@ class BaseTemplateVersion:
 
     @version_description.setter
     def version_description(self, version_description):
-        """Sets the version_description of this BaseTemplateVersion.
+        r"""Sets the version_description of this BaseTemplateVersion.
 
         模板版本的描述。可用于客户识别自己的模板版本
 
@@ -127,7 +127,7 @@ class BaseTemplateVersion:
 
     @property
     def create_time(self):
-        """Gets the create_time of this BaseTemplateVersion.
+        r"""Gets the create_time of this BaseTemplateVersion.
 
         版本创建时间，格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -138,7 +138,7 @@ class BaseTemplateVersion:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this BaseTemplateVersion.
+        r"""Sets the create_time of this BaseTemplateVersion.
 
         版本创建时间，格式遵循RFC3339，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 

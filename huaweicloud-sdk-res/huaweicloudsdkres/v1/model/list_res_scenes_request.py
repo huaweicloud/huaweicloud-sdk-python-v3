@@ -29,7 +29,7 @@ class ListResScenesRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, category=None):
-        """ListResScenesRequest
+        r"""ListResScenesRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListResScenesRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ListResScenesRequest.
+        r"""Gets the content_type of this ListResScenesRequest.
 
         内容类型，取值为application/json。
 
@@ -65,7 +65,7 @@ class ListResScenesRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ListResScenesRequest.
+        r"""Sets the content_type of this ListResScenesRequest.
 
         内容类型，取值为application/json。
 
@@ -76,7 +76,7 @@ class ListResScenesRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListResScenesRequest.
+        r"""Gets the workspace_id of this ListResScenesRequest.
 
         工作空间id。
 
@@ -87,7 +87,7 @@ class ListResScenesRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListResScenesRequest.
+        r"""Sets the workspace_id of this ListResScenesRequest.
 
         工作空间id。
 
@@ -98,7 +98,7 @@ class ListResScenesRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListResScenesRequest.
+        r"""Gets the category of this ListResScenesRequest.
 
         场景类型： - customize，自定义推荐 - intelligent，智能场景
 
@@ -109,7 +109,7 @@ class ListResScenesRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListResScenesRequest.
+        r"""Sets the category of this ListResScenesRequest.
 
         场景类型： - customize，自定义推荐 - intelligent，智能场景
 

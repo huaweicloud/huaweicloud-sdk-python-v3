@@ -29,7 +29,7 @@ class ExpandDesktopPoolVolumesRequest:
     }
 
     def __init__(self, service_transaction_id=None, pool_id=None, body=None):
-        """ExpandDesktopPoolVolumesRequest
+        r"""ExpandDesktopPoolVolumesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ExpandDesktopPoolVolumesRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this ExpandDesktopPoolVolumesRequest.
+        r"""Gets the service_transaction_id of this ExpandDesktopPoolVolumesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -67,7 +67,7 @@ class ExpandDesktopPoolVolumesRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this ExpandDesktopPoolVolumesRequest.
+        r"""Sets the service_transaction_id of this ExpandDesktopPoolVolumesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -78,7 +78,7 @@ class ExpandDesktopPoolVolumesRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ExpandDesktopPoolVolumesRequest.
+        r"""Gets the pool_id of this ExpandDesktopPoolVolumesRequest.
 
         桌面池ID。
 
@@ -89,7 +89,7 @@ class ExpandDesktopPoolVolumesRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ExpandDesktopPoolVolumesRequest.
+        r"""Sets the pool_id of this ExpandDesktopPoolVolumesRequest.
 
         桌面池ID。
 
@@ -100,7 +100,7 @@ class ExpandDesktopPoolVolumesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExpandDesktopPoolVolumesRequest.
+        r"""Gets the body of this ExpandDesktopPoolVolumesRequest.
 
         :return: The body of this ExpandDesktopPoolVolumesRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ExpandDesktopPoolVolumesReq`
@@ -109,7 +109,7 @@ class ExpandDesktopPoolVolumesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExpandDesktopPoolVolumesRequest.
+        r"""Sets the body of this ExpandDesktopPoolVolumesRequest.
 
         :param body: The body of this ExpandDesktopPoolVolumesRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ExpandDesktopPoolVolumesReq`

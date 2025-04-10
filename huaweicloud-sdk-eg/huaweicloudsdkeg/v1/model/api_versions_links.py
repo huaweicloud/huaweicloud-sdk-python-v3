@@ -27,7 +27,7 @@ class ApiVersionsLinks:
     }
 
     def __init__(self, href=None, rel=None):
-        """ApiVersionsLinks
+        r"""ApiVersionsLinks
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApiVersionsLinks:
 
     @property
     def href(self):
-        """Gets the href of this ApiVersionsLinks.
+        r"""Gets the href of this ApiVersionsLinks.
 
         href属性
 
@@ -61,7 +61,7 @@ class ApiVersionsLinks:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this ApiVersionsLinks.
+        r"""Sets the href of this ApiVersionsLinks.
 
         href属性
 
@@ -72,7 +72,7 @@ class ApiVersionsLinks:
 
     @property
     def rel(self):
-        """Gets the rel of this ApiVersionsLinks.
+        r"""Gets the rel of this ApiVersionsLinks.
 
         rel属性
 
@@ -83,7 +83,7 @@ class ApiVersionsLinks:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this ApiVersionsLinks.
+        r"""Sets the rel of this ApiVersionsLinks.
 
         rel属性
 

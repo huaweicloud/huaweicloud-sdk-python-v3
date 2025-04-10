@@ -37,7 +37,7 @@ class ScriptSimpleInfo:
     }
 
     def __init__(self, id=None, name=None, description=None, type=None, version=None, create_time=None, update_time=None):
-        """ScriptSimpleInfo
+        r"""ScriptSimpleInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ScriptSimpleInfo:
 
     @property
     def id(self):
-        """Gets the id of this ScriptSimpleInfo.
+        r"""Gets the id of this ScriptSimpleInfo.
 
         脚本ID。
 
@@ -96,7 +96,7 @@ class ScriptSimpleInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScriptSimpleInfo.
+        r"""Sets the id of this ScriptSimpleInfo.
 
         脚本ID。
 
@@ -107,7 +107,7 @@ class ScriptSimpleInfo:
 
     @property
     def name(self):
-        """Gets the name of this ScriptSimpleInfo.
+        r"""Gets the name of this ScriptSimpleInfo.
 
         脚本名称。
 
@@ -118,7 +118,7 @@ class ScriptSimpleInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScriptSimpleInfo.
+        r"""Sets the name of this ScriptSimpleInfo.
 
         脚本名称。
 
@@ -129,7 +129,7 @@ class ScriptSimpleInfo:
 
     @property
     def description(self):
-        """Gets the description of this ScriptSimpleInfo.
+        r"""Gets the description of this ScriptSimpleInfo.
 
         描述。
 
@@ -140,7 +140,7 @@ class ScriptSimpleInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ScriptSimpleInfo.
+        r"""Sets the description of this ScriptSimpleInfo.
 
         描述。
 
@@ -151,7 +151,7 @@ class ScriptSimpleInfo:
 
     @property
     def type(self):
-        """Gets the type of this ScriptSimpleInfo.
+        r"""Gets the type of this ScriptSimpleInfo.
 
         脚本类型：POWERSHELL/BAT/SHELL。
 
@@ -162,7 +162,7 @@ class ScriptSimpleInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ScriptSimpleInfo.
+        r"""Sets the type of this ScriptSimpleInfo.
 
         脚本类型：POWERSHELL/BAT/SHELL。
 
@@ -173,7 +173,7 @@ class ScriptSimpleInfo:
 
     @property
     def version(self):
-        """Gets the version of this ScriptSimpleInfo.
+        r"""Gets the version of this ScriptSimpleInfo.
 
         脚本版本。
 
@@ -184,7 +184,7 @@ class ScriptSimpleInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ScriptSimpleInfo.
+        r"""Sets the version of this ScriptSimpleInfo.
 
         脚本版本。
 
@@ -195,7 +195,7 @@ class ScriptSimpleInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ScriptSimpleInfo.
+        r"""Gets the create_time of this ScriptSimpleInfo.
 
         创建时间。
 
@@ -206,7 +206,7 @@ class ScriptSimpleInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ScriptSimpleInfo.
+        r"""Sets the create_time of this ScriptSimpleInfo.
 
         创建时间。
 
@@ -217,7 +217,7 @@ class ScriptSimpleInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ScriptSimpleInfo.
+        r"""Gets the update_time of this ScriptSimpleInfo.
 
         更新时间。
 
@@ -228,7 +228,7 @@ class ScriptSimpleInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ScriptSimpleInfo.
+        r"""Sets the update_time of this ScriptSimpleInfo.
 
         更新时间。
 

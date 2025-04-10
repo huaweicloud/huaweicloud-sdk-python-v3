@@ -26,7 +26,7 @@ class ShowInstanceConfigsResponse(SdkResponse):
     }
 
     def __init__(self, kafka_configs=None):
-        """ShowInstanceConfigsResponse
+        r"""ShowInstanceConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowInstanceConfigsResponse(SdkResponse):
 
     @property
     def kafka_configs(self):
-        """Gets the kafka_configs of this ShowInstanceConfigsResponse.
+        r"""Gets the kafka_configs of this ShowInstanceConfigsResponse.
 
         kafka配置列表。
 
@@ -55,7 +55,7 @@ class ShowInstanceConfigsResponse(SdkResponse):
 
     @kafka_configs.setter
     def kafka_configs(self, kafka_configs):
-        """Sets the kafka_configs of this ShowInstanceConfigsResponse.
+        r"""Sets the kafka_configs of this ShowInstanceConfigsResponse.
 
         kafka配置列表。
 

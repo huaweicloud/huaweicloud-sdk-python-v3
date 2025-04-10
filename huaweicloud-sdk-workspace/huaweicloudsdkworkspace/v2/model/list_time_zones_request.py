@@ -25,7 +25,7 @@ class ListTimeZonesRequest:
     }
 
     def __init__(self, time_zone_name=None):
-        """ListTimeZonesRequest
+        r"""ListTimeZonesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListTimeZonesRequest:
 
     @property
     def time_zone_name(self):
-        """Gets the time_zone_name of this ListTimeZonesRequest.
+        r"""Gets the time_zone_name of this ListTimeZonesRequest.
 
         按照时区name过滤
 
@@ -54,7 +54,7 @@ class ListTimeZonesRequest:
 
     @time_zone_name.setter
     def time_zone_name(self, time_zone_name):
-        """Sets the time_zone_name of this ListTimeZonesRequest.
+        r"""Sets the time_zone_name of this ListTimeZonesRequest.
 
         按照时区name过滤
 

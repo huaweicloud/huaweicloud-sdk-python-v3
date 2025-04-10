@@ -26,7 +26,7 @@ class ListPrivateModulesResponse(SdkResponse):
     }
 
     def __init__(self, modules=None):
-        """ListPrivateModulesResponse
+        r"""ListPrivateModulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPrivateModulesResponse(SdkResponse):
 
     @property
     def modules(self):
-        """Gets the modules of this ListPrivateModulesResponse.
+        r"""Gets the modules of this ListPrivateModulesResponse.
 
         私有模块的列表。默认以创建时间升序排序。
 
@@ -55,7 +55,7 @@ class ListPrivateModulesResponse(SdkResponse):
 
     @modules.setter
     def modules(self, modules):
-        """Sets the modules of this ListPrivateModulesResponse.
+        r"""Sets the modules of this ListPrivateModulesResponse.
 
         私有模块的列表。默认以创建时间升序排序。
 

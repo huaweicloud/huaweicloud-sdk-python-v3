@@ -26,7 +26,7 @@ class ShowImageQuotaResponse(SdkResponse):
     }
 
     def __init__(self, quotas=None):
-        """ShowImageQuotaResponse
+        r"""ShowImageQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowImageQuotaResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ShowImageQuotaResponse.
+        r"""Gets the quotas of this ShowImageQuotaResponse.
 
         :return: The quotas of this ShowImageQuotaResponse.
         :rtype: :class:`huaweicloudsdkims.v2.Quota`
@@ -53,7 +53,7 @@ class ShowImageQuotaResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ShowImageQuotaResponse.
+        r"""Sets the quotas of this ShowImageQuotaResponse.
 
         :param quotas: The quotas of this ShowImageQuotaResponse.
         :type quotas: :class:`huaweicloudsdkims.v2.Quota`

@@ -52,7 +52,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
     }
 
     def __init__(self, id=None, user_id=None, domain_id=None, ip_range=None, ip_type=None, ip_start=None, ip_end=None, view_flag=None, download_flag=None, upload_flag=None, remark=None, created_at=None, updated_at=None, order_flag=None):
-        """UpdateTenantTrustedIpAddressResponse
+        r"""UpdateTenantTrustedIpAddressResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateTenantTrustedIpAddressResponse.
+        r"""Gets the id of this UpdateTenantTrustedIpAddressResponse.
 
         关联结果
 
@@ -146,7 +146,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateTenantTrustedIpAddressResponse.
+        r"""Sets the id of this UpdateTenantTrustedIpAddressResponse.
 
         关联结果
 
@@ -157,7 +157,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateTenantTrustedIpAddressResponse.
+        r"""Gets the user_id of this UpdateTenantTrustedIpAddressResponse.
 
         用户id
 
@@ -168,7 +168,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateTenantTrustedIpAddressResponse.
+        r"""Sets the user_id of this UpdateTenantTrustedIpAddressResponse.
 
         用户id
 
@@ -179,7 +179,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateTenantTrustedIpAddressResponse.
+        r"""Gets the domain_id of this UpdateTenantTrustedIpAddressResponse.
 
         租户id
 
@@ -190,7 +190,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateTenantTrustedIpAddressResponse.
+        r"""Sets the domain_id of this UpdateTenantTrustedIpAddressResponse.
 
         租户id
 
@@ -201,7 +201,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @property
     def ip_range(self):
-        """Gets the ip_range of this UpdateTenantTrustedIpAddressResponse.
+        r"""Gets the ip_range of this UpdateTenantTrustedIpAddressResponse.
 
         ip范围
 
@@ -212,7 +212,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @ip_range.setter
     def ip_range(self, ip_range):
-        """Sets the ip_range of this UpdateTenantTrustedIpAddressResponse.
+        r"""Sets the ip_range of this UpdateTenantTrustedIpAddressResponse.
 
         ip范围
 
@@ -223,7 +223,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @property
     def ip_type(self):
-        """Gets the ip_type of this UpdateTenantTrustedIpAddressResponse.
+        r"""Gets the ip_type of this UpdateTenantTrustedIpAddressResponse.
 
         格式类型，指定ip，ip范围，CIDR
 
@@ -234,7 +234,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @ip_type.setter
     def ip_type(self, ip_type):
-        """Sets the ip_type of this UpdateTenantTrustedIpAddressResponse.
+        r"""Sets the ip_type of this UpdateTenantTrustedIpAddressResponse.
 
         格式类型，指定ip，ip范围，CIDR
 
@@ -245,7 +245,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @property
     def ip_start(self):
-        """Gets the ip_start of this UpdateTenantTrustedIpAddressResponse.
+        r"""Gets the ip_start of this UpdateTenantTrustedIpAddressResponse.
 
         起始ip
 
@@ -256,7 +256,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @ip_start.setter
     def ip_start(self, ip_start):
-        """Sets the ip_start of this UpdateTenantTrustedIpAddressResponse.
+        r"""Sets the ip_start of this UpdateTenantTrustedIpAddressResponse.
 
         起始ip
 
@@ -267,7 +267,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @property
     def ip_end(self):
-        """Gets the ip_end of this UpdateTenantTrustedIpAddressResponse.
+        r"""Gets the ip_end of this UpdateTenantTrustedIpAddressResponse.
 
         结束ip
 
@@ -278,7 +278,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @ip_end.setter
     def ip_end(self, ip_end):
-        """Sets the ip_end of this UpdateTenantTrustedIpAddressResponse.
+        r"""Sets the ip_end of this UpdateTenantTrustedIpAddressResponse.
 
         结束ip
 
@@ -289,7 +289,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @property
     def view_flag(self):
-        """Gets the view_flag of this UpdateTenantTrustedIpAddressResponse.
+        r"""Gets the view_flag of this UpdateTenantTrustedIpAddressResponse.
 
         是否允许访问代码仓库
 
@@ -300,7 +300,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @view_flag.setter
     def view_flag(self, view_flag):
-        """Sets the view_flag of this UpdateTenantTrustedIpAddressResponse.
+        r"""Sets the view_flag of this UpdateTenantTrustedIpAddressResponse.
 
         是否允许访问代码仓库
 
@@ -311,7 +311,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @property
     def download_flag(self):
-        """Gets the download_flag of this UpdateTenantTrustedIpAddressResponse.
+        r"""Gets the download_flag of this UpdateTenantTrustedIpAddressResponse.
 
         是否允许下载代码
 
@@ -322,7 +322,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @download_flag.setter
     def download_flag(self, download_flag):
-        """Sets the download_flag of this UpdateTenantTrustedIpAddressResponse.
+        r"""Sets the download_flag of this UpdateTenantTrustedIpAddressResponse.
 
         是否允许下载代码
 
@@ -333,7 +333,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @property
     def upload_flag(self):
-        """Gets the upload_flag of this UpdateTenantTrustedIpAddressResponse.
+        r"""Gets the upload_flag of this UpdateTenantTrustedIpAddressResponse.
 
         是否允许提交代码
 
@@ -344,7 +344,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @upload_flag.setter
     def upload_flag(self, upload_flag):
-        """Sets the upload_flag of this UpdateTenantTrustedIpAddressResponse.
+        r"""Sets the upload_flag of this UpdateTenantTrustedIpAddressResponse.
 
         是否允许提交代码
 
@@ -355,7 +355,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @property
     def remark(self):
-        """Gets the remark of this UpdateTenantTrustedIpAddressResponse.
+        r"""Gets the remark of this UpdateTenantTrustedIpAddressResponse.
 
         备注
 
@@ -366,7 +366,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this UpdateTenantTrustedIpAddressResponse.
+        r"""Sets the remark of this UpdateTenantTrustedIpAddressResponse.
 
         备注
 
@@ -377,7 +377,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateTenantTrustedIpAddressResponse.
+        r"""Gets the created_at of this UpdateTenantTrustedIpAddressResponse.
 
         创建时间
 
@@ -388,7 +388,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateTenantTrustedIpAddressResponse.
+        r"""Sets the created_at of this UpdateTenantTrustedIpAddressResponse.
 
         创建时间
 
@@ -399,7 +399,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateTenantTrustedIpAddressResponse.
+        r"""Gets the updated_at of this UpdateTenantTrustedIpAddressResponse.
 
         更新时间
 
@@ -410,7 +410,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateTenantTrustedIpAddressResponse.
+        r"""Sets the updated_at of this UpdateTenantTrustedIpAddressResponse.
 
         更新时间
 
@@ -421,7 +421,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @property
     def order_flag(self):
-        """Gets the order_flag of this UpdateTenantTrustedIpAddressResponse.
+        r"""Gets the order_flag of this UpdateTenantTrustedIpAddressResponse.
 
         排序
 
@@ -432,7 +432,7 @@ class UpdateTenantTrustedIpAddressResponse(SdkResponse):
 
     @order_flag.setter
     def order_flag(self, order_flag):
-        """Sets the order_flag of this UpdateTenantTrustedIpAddressResponse.
+        r"""Sets the order_flag of this UpdateTenantTrustedIpAddressResponse.
 
         排序
 

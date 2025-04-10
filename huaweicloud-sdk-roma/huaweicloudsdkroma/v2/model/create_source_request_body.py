@@ -33,7 +33,7 @@ class CreateSourceRequestBody:
     }
 
     def __init__(self, product_id=None, device_id=None, topic=None, is_base64=None, contain_device_info=None):
-        """CreateSourceRequestBody
+        r"""CreateSourceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateSourceRequestBody:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateSourceRequestBody.
+        r"""Gets the product_id of this CreateSourceRequestBody.
 
         产品ID，自动向下取整
 
@@ -80,7 +80,7 @@ class CreateSourceRequestBody:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateSourceRequestBody.
+        r"""Sets the product_id of this CreateSourceRequestBody.
 
         产品ID，自动向下取整
 
@@ -91,7 +91,7 @@ class CreateSourceRequestBody:
 
     @property
     def device_id(self):
-        """Gets the device_id of this CreateSourceRequestBody.
+        r"""Gets the device_id of this CreateSourceRequestBody.
 
         设备ID，自动向下取整，不填为全部设备
 
@@ -102,7 +102,7 @@ class CreateSourceRequestBody:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this CreateSourceRequestBody.
+        r"""Sets the device_id of this CreateSourceRequestBody.
 
         设备ID，自动向下取整，不填为全部设备
 
@@ -113,7 +113,7 @@ class CreateSourceRequestBody:
 
     @property
     def topic(self):
-        """Gets the topic of this CreateSourceRequestBody.
+        r"""Gets the topic of this CreateSourceRequestBody.
 
         主题，当设备ID为空时为产品级主题，设备ID不为空时为设备级主题
 
@@ -124,7 +124,7 @@ class CreateSourceRequestBody:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this CreateSourceRequestBody.
+        r"""Sets the topic of this CreateSourceRequestBody.
 
         主题，当设备ID为空时为产品级主题，设备ID不为空时为设备级主题
 
@@ -135,7 +135,7 @@ class CreateSourceRequestBody:
 
     @property
     def is_base64(self):
-        """Gets the is_base64 of this CreateSourceRequestBody.
+        r"""Gets the is_base64 of this CreateSourceRequestBody.
 
         是否payload使用base64，0-是 1-否
 
@@ -146,7 +146,7 @@ class CreateSourceRequestBody:
 
     @is_base64.setter
     def is_base64(self, is_base64):
-        """Sets the is_base64 of this CreateSourceRequestBody.
+        r"""Sets the is_base64 of this CreateSourceRequestBody.
 
         是否payload使用base64，0-是 1-否
 
@@ -157,7 +157,7 @@ class CreateSourceRequestBody:
 
     @property
     def contain_device_info(self):
-        """Gets the contain_device_info of this CreateSourceRequestBody.
+        r"""Gets the contain_device_info of this CreateSourceRequestBody.
 
         是否包含设备信息是否包含设备信息，0-是 1-否
 
@@ -168,7 +168,7 @@ class CreateSourceRequestBody:
 
     @contain_device_info.setter
     def contain_device_info(self, contain_device_info):
-        """Sets the contain_device_info of this CreateSourceRequestBody.
+        r"""Sets the contain_device_info of this CreateSourceRequestBody.
 
         是否包含设备信息是否包含设备信息，0-是 1-否
 

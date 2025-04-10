@@ -33,7 +33,7 @@ class ServerAddress:
     }
 
     def __init__(self, addr=None, version=None, os_ext_ips_ma_cmac_addr=None, os_ext_ip_stype=None, os_ext_ip_sport_id=None):
-        """ServerAddress
+        r"""ServerAddress
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ServerAddress:
 
     @property
     def addr(self):
-        """Gets the addr of this ServerAddress.
+        r"""Gets the addr of this ServerAddress.
 
         IP地址信息。
 
@@ -82,7 +82,7 @@ class ServerAddress:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this ServerAddress.
+        r"""Sets the addr of this ServerAddress.
 
         IP地址信息。
 
@@ -93,7 +93,7 @@ class ServerAddress:
 
     @property
     def version(self):
-        """Gets the version of this ServerAddress.
+        r"""Gets the version of this ServerAddress.
 
         IP地址类型： `4` - IPV4 `6` - IPV6
 
@@ -104,7 +104,7 @@ class ServerAddress:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ServerAddress.
+        r"""Sets the version of this ServerAddress.
 
         IP地址类型： `4` - IPV4 `6` - IPV6
 
@@ -115,7 +115,7 @@ class ServerAddress:
 
     @property
     def os_ext_ips_ma_cmac_addr(self):
-        """Gets the os_ext_ips_ma_cmac_addr of this ServerAddress.
+        r"""Gets the os_ext_ips_ma_cmac_addr of this ServerAddress.
 
         MAC地址。
 
@@ -126,7 +126,7 @@ class ServerAddress:
 
     @os_ext_ips_ma_cmac_addr.setter
     def os_ext_ips_ma_cmac_addr(self, os_ext_ips_ma_cmac_addr):
-        """Sets the os_ext_ips_ma_cmac_addr of this ServerAddress.
+        r"""Sets the os_ext_ips_ma_cmac_addr of this ServerAddress.
 
         MAC地址。
 
@@ -137,7 +137,7 @@ class ServerAddress:
 
     @property
     def os_ext_ip_stype(self):
-        """Gets the os_ext_ip_stype of this ServerAddress.
+        r"""Gets the os_ext_ip_stype of this ServerAddress.
 
         IP地址分配方式，字符串是大小写不敏感格式。 * `fixed` - 代表私有IP地址。 * `floating` - 代表浮动IP地址。
 
@@ -148,7 +148,7 @@ class ServerAddress:
 
     @os_ext_ip_stype.setter
     def os_ext_ip_stype(self, os_ext_ip_stype):
-        """Sets the os_ext_ip_stype of this ServerAddress.
+        r"""Sets the os_ext_ip_stype of this ServerAddress.
 
         IP地址分配方式，字符串是大小写不敏感格式。 * `fixed` - 代表私有IP地址。 * `floating` - 代表浮动IP地址。
 
@@ -159,7 +159,7 @@ class ServerAddress:
 
     @property
     def os_ext_ip_sport_id(self):
-        """Gets the os_ext_ip_sport_id of this ServerAddress.
+        r"""Gets the os_ext_ip_sport_id of this ServerAddress.
 
         IP地址对应的端口ID。
 
@@ -170,7 +170,7 @@ class ServerAddress:
 
     @os_ext_ip_sport_id.setter
     def os_ext_ip_sport_id(self, os_ext_ip_sport_id):
-        """Sets the os_ext_ip_sport_id of this ServerAddress.
+        r"""Sets the os_ext_ip_sport_id of this ServerAddress.
 
         IP地址对应的端口ID。
 

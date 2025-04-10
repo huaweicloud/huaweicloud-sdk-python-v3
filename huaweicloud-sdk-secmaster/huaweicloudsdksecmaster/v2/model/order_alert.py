@@ -27,7 +27,7 @@ class OrderAlert:
     }
 
     def __init__(self, ids=None, incident_content=None):
-        """OrderAlert
+        r"""OrderAlert
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OrderAlert:
 
     @property
     def ids(self):
-        """Gets the ids of this OrderAlert.
+        r"""Gets the ids of this OrderAlert.
 
         转事件的告警id列表
 
@@ -61,7 +61,7 @@ class OrderAlert:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this OrderAlert.
+        r"""Sets the ids of this OrderAlert.
 
         转事件的告警id列表
 
@@ -72,7 +72,7 @@ class OrderAlert:
 
     @property
     def incident_content(self):
-        """Gets the incident_content of this OrderAlert.
+        r"""Gets the incident_content of this OrderAlert.
 
         :return: The incident_content of this OrderAlert.
         :rtype: :class:`huaweicloudsdksecmaster.v2.OrderAlertIncidentContent`
@@ -81,7 +81,7 @@ class OrderAlert:
 
     @incident_content.setter
     def incident_content(self, incident_content):
-        """Sets the incident_content of this OrderAlert.
+        r"""Sets the incident_content of this OrderAlert.
 
         :param incident_content: The incident_content of this OrderAlert.
         :type incident_content: :class:`huaweicloudsdksecmaster.v2.OrderAlertIncidentContent`

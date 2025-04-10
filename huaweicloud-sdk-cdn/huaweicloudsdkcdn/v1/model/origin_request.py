@@ -25,7 +25,7 @@ class OriginRequest:
     }
 
     def __init__(self, origin=None):
-        """OriginRequest
+        r"""OriginRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OriginRequest:
 
     @property
     def origin(self):
-        """Gets the origin of this OriginRequest.
+        r"""Gets the origin of this OriginRequest.
 
         :return: The origin of this OriginRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.ResourceBody`
@@ -51,7 +51,7 @@ class OriginRequest:
 
     @origin.setter
     def origin(self, origin):
-        """Sets the origin of this OriginRequest.
+        r"""Sets the origin of this OriginRequest.
 
         :param origin: The origin of this OriginRequest.
         :type origin: :class:`huaweicloudsdkcdn.v1.ResourceBody`

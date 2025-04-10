@@ -29,7 +29,7 @@ class ShowWorkloadQueueRequest:
     }
 
     def __init__(self, cluster_id=None, queue_name=None, logical_cluster_name=None):
-        """ShowWorkloadQueueRequest
+        r"""ShowWorkloadQueueRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowWorkloadQueueRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowWorkloadQueueRequest.
+        r"""Gets the cluster_id of this ShowWorkloadQueueRequest.
 
         集群ID
 
@@ -66,7 +66,7 @@ class ShowWorkloadQueueRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowWorkloadQueueRequest.
+        r"""Sets the cluster_id of this ShowWorkloadQueueRequest.
 
         集群ID
 
@@ -77,7 +77,7 @@ class ShowWorkloadQueueRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ShowWorkloadQueueRequest.
+        r"""Gets the queue_name of this ShowWorkloadQueueRequest.
 
         资源队列名
 
@@ -88,7 +88,7 @@ class ShowWorkloadQueueRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ShowWorkloadQueueRequest.
+        r"""Sets the queue_name of this ShowWorkloadQueueRequest.
 
         资源队列名
 
@@ -99,7 +99,7 @@ class ShowWorkloadQueueRequest:
 
     @property
     def logical_cluster_name(self):
-        """Gets the logical_cluster_name of this ShowWorkloadQueueRequest.
+        r"""Gets the logical_cluster_name of this ShowWorkloadQueueRequest.
 
         逻辑集群名称。非逻辑集群模式下该字段不填,逻辑集群模式下需指定逻辑集群名称。
 
@@ -110,7 +110,7 @@ class ShowWorkloadQueueRequest:
 
     @logical_cluster_name.setter
     def logical_cluster_name(self, logical_cluster_name):
-        """Sets the logical_cluster_name of this ShowWorkloadQueueRequest.
+        r"""Sets the logical_cluster_name of this ShowWorkloadQueueRequest.
 
         逻辑集群名称。非逻辑集群模式下该字段不填,逻辑集群模式下需指定逻辑集群名称。
 

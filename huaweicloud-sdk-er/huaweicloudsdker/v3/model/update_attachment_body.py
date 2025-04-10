@@ -27,7 +27,7 @@ class UpdateAttachmentBody:
     }
 
     def __init__(self, description=None, name=None):
-        """UpdateAttachmentBody
+        r"""UpdateAttachmentBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateAttachmentBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAttachmentBody.
+        r"""Gets the description of this UpdateAttachmentBody.
 
         连接描述信息，取值范围：最大长度36字节，带“-”连字符的UUID格式
 
@@ -61,7 +61,7 @@ class UpdateAttachmentBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAttachmentBody.
+        r"""Sets the description of this UpdateAttachmentBody.
 
         连接描述信息，取值范围：最大长度36字节，带“-”连字符的UUID格式
 
@@ -72,7 +72,7 @@ class UpdateAttachmentBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAttachmentBody.
+        r"""Gets the name of this UpdateAttachmentBody.
 
         连接名称，取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -83,7 +83,7 @@ class UpdateAttachmentBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAttachmentBody.
+        r"""Sets the name of this UpdateAttachmentBody.
 
         连接名称，取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 

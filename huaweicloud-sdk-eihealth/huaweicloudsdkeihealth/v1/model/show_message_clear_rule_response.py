@@ -26,7 +26,7 @@ class ShowMessageClearRuleResponse(SdkResponse):
     }
 
     def __init__(self, message_retain_number=None):
-        """ShowMessageClearRuleResponse
+        r"""ShowMessageClearRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowMessageClearRuleResponse(SdkResponse):
 
     @property
     def message_retain_number(self):
-        """Gets the message_retain_number of this ShowMessageClearRuleResponse.
+        r"""Gets the message_retain_number of this ShowMessageClearRuleResponse.
 
         最多保留记录数
 
@@ -55,7 +55,7 @@ class ShowMessageClearRuleResponse(SdkResponse):
 
     @message_retain_number.setter
     def message_retain_number(self, message_retain_number):
-        """Sets the message_retain_number of this ShowMessageClearRuleResponse.
+        r"""Sets the message_retain_number of this ShowMessageClearRuleResponse.
 
         最多保留记录数
 

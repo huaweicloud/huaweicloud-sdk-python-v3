@@ -26,7 +26,7 @@ class UploadAimMsgSignatureFileResponse(SdkResponse):
     }
 
     def __init__(self, file_id=None):
-        """UploadAimMsgSignatureFileResponse
+        r"""UploadAimMsgSignatureFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UploadAimMsgSignatureFileResponse(SdkResponse):
 
     @property
     def file_id(self):
-        """Gets the file_id of this UploadAimMsgSignatureFileResponse.
+        r"""Gets the file_id of this UploadAimMsgSignatureFileResponse.
 
         文件ID。
 
@@ -55,7 +55,7 @@ class UploadAimMsgSignatureFileResponse(SdkResponse):
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this UploadAimMsgSignatureFileResponse.
+        r"""Sets the file_id of this UploadAimMsgSignatureFileResponse.
 
         文件ID。
 

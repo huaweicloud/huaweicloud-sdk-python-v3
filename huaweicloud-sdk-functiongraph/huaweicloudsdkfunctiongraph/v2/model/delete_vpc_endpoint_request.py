@@ -27,7 +27,7 @@ class DeleteVpcEndpointRequest:
     }
 
     def __init__(self, vpc_id=None, subnet_id=None):
-        """DeleteVpcEndpointRequest
+        r"""DeleteVpcEndpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteVpcEndpointRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this DeleteVpcEndpointRequest.
+        r"""Gets the vpc_id of this DeleteVpcEndpointRequest.
 
         vpc ID
 
@@ -59,7 +59,7 @@ class DeleteVpcEndpointRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this DeleteVpcEndpointRequest.
+        r"""Sets the vpc_id of this DeleteVpcEndpointRequest.
 
         vpc ID
 
@@ -70,7 +70,7 @@ class DeleteVpcEndpointRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this DeleteVpcEndpointRequest.
+        r"""Gets the subnet_id of this DeleteVpcEndpointRequest.
 
         子网编号
 
@@ -81,7 +81,7 @@ class DeleteVpcEndpointRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this DeleteVpcEndpointRequest.
+        r"""Sets the subnet_id of this DeleteVpcEndpointRequest.
 
         子网编号
 

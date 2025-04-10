@@ -27,7 +27,7 @@ class BindInstanceTagsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BindInstanceTagsRequest
+        r"""BindInstanceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BindInstanceTagsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BindInstanceTagsRequest.
+        r"""Gets the instance_id of this BindInstanceTagsRequest.
 
         **参数说明**：实例ID。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 
@@ -60,7 +60,7 @@ class BindInstanceTagsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BindInstanceTagsRequest.
+        r"""Sets the instance_id of this BindInstanceTagsRequest.
 
         **参数说明**：实例ID。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 
@@ -71,7 +71,7 @@ class BindInstanceTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BindInstanceTagsRequest.
+        r"""Gets the body of this BindInstanceTagsRequest.
 
         :return: The body of this BindInstanceTagsRequest.
         :rtype: :class:`huaweicloudsdkiotdm.v5.BindInstanceTags`
@@ -80,7 +80,7 @@ class BindInstanceTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BindInstanceTagsRequest.
+        r"""Sets the body of this BindInstanceTagsRequest.
 
         :param body: The body of this BindInstanceTagsRequest.
         :type body: :class:`huaweicloudsdkiotdm.v5.BindInstanceTags`

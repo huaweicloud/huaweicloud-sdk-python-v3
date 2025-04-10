@@ -27,7 +27,7 @@ class ExternalKeyMessage:
     }
 
     def __init__(self, external_key_message=None, external_service=None):
-        """ExternalKeyMessage
+        r"""ExternalKeyMessage
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExternalKeyMessage:
 
     @property
     def external_key_message(self):
-        """Gets the external_key_message of this ExternalKeyMessage.
+        r"""Gets the external_key_message of this ExternalKeyMessage.
 
         第三方保存在代码托管的关键信息
 
@@ -61,7 +61,7 @@ class ExternalKeyMessage:
 
     @external_key_message.setter
     def external_key_message(self, external_key_message):
-        """Sets the external_key_message of this ExternalKeyMessage.
+        r"""Sets the external_key_message of this ExternalKeyMessage.
 
         第三方保存在代码托管的关键信息
 
@@ -72,7 +72,7 @@ class ExternalKeyMessage:
 
     @property
     def external_service(self):
-        """Gets the external_service of this ExternalKeyMessage.
+        r"""Gets the external_service of this ExternalKeyMessage.
 
         外部服务名称
 
@@ -83,7 +83,7 @@ class ExternalKeyMessage:
 
     @external_service.setter
     def external_service(self, external_service):
-        """Sets the external_service of this ExternalKeyMessage.
+        r"""Sets the external_service of this ExternalKeyMessage.
 
         外部服务名称
 

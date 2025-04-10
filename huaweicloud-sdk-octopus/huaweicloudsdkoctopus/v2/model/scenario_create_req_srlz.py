@@ -49,7 +49,7 @@ class ScenarioCreateReqSrlz:
     }
 
     def __init__(self, gen_scenario=None, description=None, file=None, simulator=None, version=None, map_filename=None, model_filename=None, user_id=None, user_name=None, name=None, priority=None, map=None, model=None):
-        """ScenarioCreateReqSrlz
+        r"""ScenarioCreateReqSrlz
 
         The model defined in huaweicloud sdk
 
@@ -115,7 +115,7 @@ class ScenarioCreateReqSrlz:
 
     @property
     def gen_scenario(self):
-        """Gets the gen_scenario of this ScenarioCreateReqSrlz.
+        r"""Gets the gen_scenario of this ScenarioCreateReqSrlz.
 
         泛化场景
 
@@ -126,7 +126,7 @@ class ScenarioCreateReqSrlz:
 
     @gen_scenario.setter
     def gen_scenario(self, gen_scenario):
-        """Sets the gen_scenario of this ScenarioCreateReqSrlz.
+        r"""Sets the gen_scenario of this ScenarioCreateReqSrlz.
 
         泛化场景
 
@@ -137,7 +137,7 @@ class ScenarioCreateReqSrlz:
 
     @property
     def description(self):
-        """Gets the description of this ScenarioCreateReqSrlz.
+        r"""Gets the description of this ScenarioCreateReqSrlz.
 
         :return: The description of this ScenarioCreateReqSrlz.
         :rtype: :class:`huaweicloudsdkoctopus.v2.MutableFileSrlz`
@@ -146,7 +146,7 @@ class ScenarioCreateReqSrlz:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ScenarioCreateReqSrlz.
+        r"""Sets the description of this ScenarioCreateReqSrlz.
 
         :param description: The description of this ScenarioCreateReqSrlz.
         :type description: :class:`huaweicloudsdkoctopus.v2.MutableFileSrlz`
@@ -155,7 +155,7 @@ class ScenarioCreateReqSrlz:
 
     @property
     def file(self):
-        """Gets the file of this ScenarioCreateReqSrlz.
+        r"""Gets the file of this ScenarioCreateReqSrlz.
 
         文件
 
@@ -166,7 +166,7 @@ class ScenarioCreateReqSrlz:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this ScenarioCreateReqSrlz.
+        r"""Sets the file of this ScenarioCreateReqSrlz.
 
         文件
 
@@ -177,7 +177,7 @@ class ScenarioCreateReqSrlz:
 
     @property
     def simulator(self):
-        """Gets the simulator of this ScenarioCreateReqSrlz.
+        r"""Gets the simulator of this ScenarioCreateReqSrlz.
 
         :return: The simulator of this ScenarioCreateReqSrlz.
         :rtype: :class:`huaweicloudsdkoctopus.v2.SimulatorEnum`
@@ -186,7 +186,7 @@ class ScenarioCreateReqSrlz:
 
     @simulator.setter
     def simulator(self, simulator):
-        """Sets the simulator of this ScenarioCreateReqSrlz.
+        r"""Sets the simulator of this ScenarioCreateReqSrlz.
 
         :param simulator: The simulator of this ScenarioCreateReqSrlz.
         :type simulator: :class:`huaweicloudsdkoctopus.v2.SimulatorEnum`
@@ -195,7 +195,7 @@ class ScenarioCreateReqSrlz:
 
     @property
     def version(self):
-        """Gets the version of this ScenarioCreateReqSrlz.
+        r"""Gets the version of this ScenarioCreateReqSrlz.
 
         :return: The version of this ScenarioCreateReqSrlz.
         :rtype: :class:`huaweicloudsdkoctopus.v2.ScenarioVersionEnum`
@@ -204,7 +204,7 @@ class ScenarioCreateReqSrlz:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ScenarioCreateReqSrlz.
+        r"""Sets the version of this ScenarioCreateReqSrlz.
 
         :param version: The version of this ScenarioCreateReqSrlz.
         :type version: :class:`huaweicloudsdkoctopus.v2.ScenarioVersionEnum`
@@ -213,7 +213,7 @@ class ScenarioCreateReqSrlz:
 
     @property
     def map_filename(self):
-        """Gets the map_filename of this ScenarioCreateReqSrlz.
+        r"""Gets the map_filename of this ScenarioCreateReqSrlz.
 
         地图文件名
 
@@ -224,7 +224,7 @@ class ScenarioCreateReqSrlz:
 
     @map_filename.setter
     def map_filename(self, map_filename):
-        """Sets the map_filename of this ScenarioCreateReqSrlz.
+        r"""Sets the map_filename of this ScenarioCreateReqSrlz.
 
         地图文件名
 
@@ -235,7 +235,7 @@ class ScenarioCreateReqSrlz:
 
     @property
     def model_filename(self):
-        """Gets the model_filename of this ScenarioCreateReqSrlz.
+        r"""Gets the model_filename of this ScenarioCreateReqSrlz.
 
         模型文件名
 
@@ -246,7 +246,7 @@ class ScenarioCreateReqSrlz:
 
     @model_filename.setter
     def model_filename(self, model_filename):
-        """Sets the model_filename of this ScenarioCreateReqSrlz.
+        r"""Sets the model_filename of this ScenarioCreateReqSrlz.
 
         模型文件名
 
@@ -257,7 +257,7 @@ class ScenarioCreateReqSrlz:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ScenarioCreateReqSrlz.
+        r"""Gets the user_id of this ScenarioCreateReqSrlz.
 
         用户id
 
@@ -268,7 +268,7 @@ class ScenarioCreateReqSrlz:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ScenarioCreateReqSrlz.
+        r"""Sets the user_id of this ScenarioCreateReqSrlz.
 
         用户id
 
@@ -279,7 +279,7 @@ class ScenarioCreateReqSrlz:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ScenarioCreateReqSrlz.
+        r"""Gets the user_name of this ScenarioCreateReqSrlz.
 
         用户名
 
@@ -290,7 +290,7 @@ class ScenarioCreateReqSrlz:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ScenarioCreateReqSrlz.
+        r"""Sets the user_name of this ScenarioCreateReqSrlz.
 
         用户名
 
@@ -301,7 +301,7 @@ class ScenarioCreateReqSrlz:
 
     @property
     def name(self):
-        """Gets the name of this ScenarioCreateReqSrlz.
+        r"""Gets the name of this ScenarioCreateReqSrlz.
 
         名称
 
@@ -312,7 +312,7 @@ class ScenarioCreateReqSrlz:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScenarioCreateReqSrlz.
+        r"""Sets the name of this ScenarioCreateReqSrlz.
 
         名称
 
@@ -323,7 +323,7 @@ class ScenarioCreateReqSrlz:
 
     @property
     def priority(self):
-        """Gets the priority of this ScenarioCreateReqSrlz.
+        r"""Gets the priority of this ScenarioCreateReqSrlz.
 
         :return: The priority of this ScenarioCreateReqSrlz.
         :rtype: :class:`huaweicloudsdkoctopus.v2.PriorityEnum`
@@ -332,7 +332,7 @@ class ScenarioCreateReqSrlz:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ScenarioCreateReqSrlz.
+        r"""Sets the priority of this ScenarioCreateReqSrlz.
 
         :param priority: The priority of this ScenarioCreateReqSrlz.
         :type priority: :class:`huaweicloudsdkoctopus.v2.PriorityEnum`
@@ -341,7 +341,7 @@ class ScenarioCreateReqSrlz:
 
     @property
     def map(self):
-        """Gets the map of this ScenarioCreateReqSrlz.
+        r"""Gets the map of this ScenarioCreateReqSrlz.
 
         地图
 
@@ -352,7 +352,7 @@ class ScenarioCreateReqSrlz:
 
     @map.setter
     def map(self, map):
-        """Sets the map of this ScenarioCreateReqSrlz.
+        r"""Sets the map of this ScenarioCreateReqSrlz.
 
         地图
 
@@ -363,7 +363,7 @@ class ScenarioCreateReqSrlz:
 
     @property
     def model(self):
-        """Gets the model of this ScenarioCreateReqSrlz.
+        r"""Gets the model of this ScenarioCreateReqSrlz.
 
         模型
 
@@ -374,7 +374,7 @@ class ScenarioCreateReqSrlz:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this ScenarioCreateReqSrlz.
+        r"""Sets the model of this ScenarioCreateReqSrlz.
 
         模型
 

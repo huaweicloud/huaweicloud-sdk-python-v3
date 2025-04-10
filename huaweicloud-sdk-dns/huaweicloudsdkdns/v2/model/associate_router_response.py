@@ -30,7 +30,7 @@ class AssociateRouterResponse(SdkResponse):
     }
 
     def __init__(self, router_id=None, router_region=None, status=None):
-        """AssociateRouterResponse
+        r"""AssociateRouterResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class AssociateRouterResponse(SdkResponse):
 
     @property
     def router_id(self):
-        """Gets the router_id of this AssociateRouterResponse.
+        r"""Gets the router_id of this AssociateRouterResponse.
 
         关联VPC的ID。
 
@@ -69,7 +69,7 @@ class AssociateRouterResponse(SdkResponse):
 
     @router_id.setter
     def router_id(self, router_id):
-        """Sets the router_id of this AssociateRouterResponse.
+        r"""Sets the router_id of this AssociateRouterResponse.
 
         关联VPC的ID。
 
@@ -80,7 +80,7 @@ class AssociateRouterResponse(SdkResponse):
 
     @property
     def router_region(self):
-        """Gets the router_region of this AssociateRouterResponse.
+        r"""Gets the router_region of this AssociateRouterResponse.
 
         关联VPC所在的region。
 
@@ -91,7 +91,7 @@ class AssociateRouterResponse(SdkResponse):
 
     @router_region.setter
     def router_region(self, router_region):
-        """Sets the router_region of this AssociateRouterResponse.
+        r"""Sets the router_region of this AssociateRouterResponse.
 
         关联VPC所在的region。
 
@@ -102,7 +102,7 @@ class AssociateRouterResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AssociateRouterResponse.
+        r"""Gets the status of this AssociateRouterResponse.
 
         资源状态。
 
@@ -113,7 +113,7 @@ class AssociateRouterResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AssociateRouterResponse.
+        r"""Sets the status of this AssociateRouterResponse.
 
         资源状态。
 

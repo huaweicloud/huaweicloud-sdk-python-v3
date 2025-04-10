@@ -41,7 +41,7 @@ class InstanceStatistic:
     }
 
     def __init__(self, input_kbps=None, output_kbps=None, instance_id=None, keys=None, used_memory=None, max_memory=None, cmd_get_count=None, cmd_set_count=None, used_cpu=None):
-        """InstanceStatistic
+        r"""InstanceStatistic
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class InstanceStatistic:
 
     @property
     def input_kbps(self):
-        """Gets the input_kbps of this InstanceStatistic.
+        r"""Gets the input_kbps of this InstanceStatistic.
 
         缓存实例网络入流量，单位：Kbps。
 
@@ -110,7 +110,7 @@ class InstanceStatistic:
 
     @input_kbps.setter
     def input_kbps(self, input_kbps):
-        """Sets the input_kbps of this InstanceStatistic.
+        r"""Sets the input_kbps of this InstanceStatistic.
 
         缓存实例网络入流量，单位：Kbps。
 
@@ -121,7 +121,7 @@ class InstanceStatistic:
 
     @property
     def output_kbps(self):
-        """Gets the output_kbps of this InstanceStatistic.
+        r"""Gets the output_kbps of this InstanceStatistic.
 
         缓存实例网络出流量，单位：Kbps。
 
@@ -132,7 +132,7 @@ class InstanceStatistic:
 
     @output_kbps.setter
     def output_kbps(self, output_kbps):
-        """Sets the output_kbps of this InstanceStatistic.
+        r"""Sets the output_kbps of this InstanceStatistic.
 
         缓存实例网络出流量，单位：Kbps。
 
@@ -143,7 +143,7 @@ class InstanceStatistic:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceStatistic.
+        r"""Gets the instance_id of this InstanceStatistic.
 
         实例ID。
 
@@ -154,7 +154,7 @@ class InstanceStatistic:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceStatistic.
+        r"""Sets the instance_id of this InstanceStatistic.
 
         实例ID。
 
@@ -165,7 +165,7 @@ class InstanceStatistic:
 
     @property
     def keys(self):
-        """Gets the keys of this InstanceStatistic.
+        r"""Gets the keys of this InstanceStatistic.
 
         缓存存储的数据条数。
 
@@ -176,7 +176,7 @@ class InstanceStatistic:
 
     @keys.setter
     def keys(self, keys):
-        """Sets the keys of this InstanceStatistic.
+        r"""Sets the keys of this InstanceStatistic.
 
         缓存存储的数据条数。
 
@@ -187,7 +187,7 @@ class InstanceStatistic:
 
     @property
     def used_memory(self):
-        """Gets the used_memory of this InstanceStatistic.
+        r"""Gets the used_memory of this InstanceStatistic.
 
         缓存已经使用内存，单位：MB。
 
@@ -198,7 +198,7 @@ class InstanceStatistic:
 
     @used_memory.setter
     def used_memory(self, used_memory):
-        """Sets the used_memory of this InstanceStatistic.
+        r"""Sets the used_memory of this InstanceStatistic.
 
         缓存已经使用内存，单位：MB。
 
@@ -209,7 +209,7 @@ class InstanceStatistic:
 
     @property
     def max_memory(self):
-        """Gets the max_memory of this InstanceStatistic.
+        r"""Gets the max_memory of this InstanceStatistic.
 
         缓存的总内存，单位：MB。
 
@@ -220,7 +220,7 @@ class InstanceStatistic:
 
     @max_memory.setter
     def max_memory(self, max_memory):
-        """Sets the max_memory of this InstanceStatistic.
+        r"""Sets the max_memory of this InstanceStatistic.
 
         缓存的总内存，单位：MB。
 
@@ -231,7 +231,7 @@ class InstanceStatistic:
 
     @property
     def cmd_get_count(self):
-        """Gets the cmd_get_count of this InstanceStatistic.
+        r"""Gets the cmd_get_count of this InstanceStatistic.
 
         缓存get命令被调用次数。
 
@@ -242,7 +242,7 @@ class InstanceStatistic:
 
     @cmd_get_count.setter
     def cmd_get_count(self, cmd_get_count):
-        """Sets the cmd_get_count of this InstanceStatistic.
+        r"""Sets the cmd_get_count of this InstanceStatistic.
 
         缓存get命令被调用次数。
 
@@ -253,7 +253,7 @@ class InstanceStatistic:
 
     @property
     def cmd_set_count(self):
-        """Gets the cmd_set_count of this InstanceStatistic.
+        r"""Gets the cmd_set_count of this InstanceStatistic.
 
         缓存set命令被调用次数。
 
@@ -264,7 +264,7 @@ class InstanceStatistic:
 
     @cmd_set_count.setter
     def cmd_set_count(self, cmd_set_count):
-        """Sets the cmd_set_count of this InstanceStatistic.
+        r"""Sets the cmd_set_count of this InstanceStatistic.
 
         缓存set命令被调用次数。
 
@@ -275,7 +275,7 @@ class InstanceStatistic:
 
     @property
     def used_cpu(self):
-        """Gets the used_cpu of this InstanceStatistic.
+        r"""Gets the used_cpu of this InstanceStatistic.
 
         CPU使用率，单位：百分比。
 
@@ -286,7 +286,7 @@ class InstanceStatistic:
 
     @used_cpu.setter
     def used_cpu(self, used_cpu):
-        """Sets the used_cpu of this InstanceStatistic.
+        r"""Sets the used_cpu of this InstanceStatistic.
 
         CPU使用率，单位：百分比。
 

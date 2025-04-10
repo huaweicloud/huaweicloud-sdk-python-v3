@@ -33,7 +33,7 @@ class AgencyPolicy:
     }
 
     def __init__(self, policy_type=None, is_required=None, is_enable=None, actions=None, description=None):
-        """AgencyPolicy
+        r"""AgencyPolicy
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class AgencyPolicy:
 
     @property
     def policy_type(self):
-        """Gets the policy_type of this AgencyPolicy.
+        r"""Gets the policy_type of this AgencyPolicy.
 
         权限类型列表，使用Fabric的功能，可能需要授权一些权限策略，可以在policy_types中加入策略类型来授权权限。FABRIC_COMMON_POLICY：基础通用服务相关权限策略，是委托必需的权限策略；FABRIC_SMN_POLICY：消息通知功能相关权限策略，用来将系统通知消息转发到SMN；FABRIC_LAKEFORMATION_POLICY：LakeFormation功能相关权限策略；FABRIC_AOM_POLICY：AOM功能相关权限策略。
 
@@ -77,7 +77,7 @@ class AgencyPolicy:
 
     @policy_type.setter
     def policy_type(self, policy_type):
-        """Sets the policy_type of this AgencyPolicy.
+        r"""Sets the policy_type of this AgencyPolicy.
 
         权限类型列表，使用Fabric的功能，可能需要授权一些权限策略，可以在policy_types中加入策略类型来授权权限。FABRIC_COMMON_POLICY：基础通用服务相关权限策略，是委托必需的权限策略；FABRIC_SMN_POLICY：消息通知功能相关权限策略，用来将系统通知消息转发到SMN；FABRIC_LAKEFORMATION_POLICY：LakeFormation功能相关权限策略；FABRIC_AOM_POLICY：AOM功能相关权限策略。
 
@@ -88,7 +88,7 @@ class AgencyPolicy:
 
     @property
     def is_required(self):
-        """Gets the is_required of this AgencyPolicy.
+        r"""Gets the is_required of this AgencyPolicy.
 
         是否是必需的。
 
@@ -99,7 +99,7 @@ class AgencyPolicy:
 
     @is_required.setter
     def is_required(self, is_required):
-        """Sets the is_required of this AgencyPolicy.
+        r"""Sets the is_required of this AgencyPolicy.
 
         是否是必需的。
 
@@ -110,7 +110,7 @@ class AgencyPolicy:
 
     @property
     def is_enable(self):
-        """Gets the is_enable of this AgencyPolicy.
+        r"""Gets the is_enable of this AgencyPolicy.
 
         是否已开启。
 
@@ -121,7 +121,7 @@ class AgencyPolicy:
 
     @is_enable.setter
     def is_enable(self, is_enable):
-        """Sets the is_enable of this AgencyPolicy.
+        r"""Sets the is_enable of this AgencyPolicy.
 
         是否已开启。
 
@@ -132,7 +132,7 @@ class AgencyPolicy:
 
     @property
     def actions(self):
-        """Gets the actions of this AgencyPolicy.
+        r"""Gets the actions of this AgencyPolicy.
 
         权限列表
 
@@ -143,7 +143,7 @@ class AgencyPolicy:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this AgencyPolicy.
+        r"""Sets the actions of this AgencyPolicy.
 
         权限列表
 
@@ -154,7 +154,7 @@ class AgencyPolicy:
 
     @property
     def description(self):
-        """Gets the description of this AgencyPolicy.
+        r"""Gets the description of this AgencyPolicy.
 
         策略描述
 
@@ -165,7 +165,7 @@ class AgencyPolicy:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AgencyPolicy.
+        r"""Sets the description of this AgencyPolicy.
 
         策略描述
 

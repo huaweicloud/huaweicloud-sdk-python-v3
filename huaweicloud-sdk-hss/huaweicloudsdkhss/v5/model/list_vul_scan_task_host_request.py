@@ -33,13 +33,13 @@ class ListVulScanTaskHostRequest:
     }
 
     def __init__(self, task_id=None, enterprise_project_id=None, limit=None, offset=None, scan_status=None):
-        """ListVulScanTaskHostRequest
+        r"""ListVulScanTaskHostRequest
 
         The model defined in huaweicloud sdk
 
         :param task_id: 任务ID
         :type task_id: str
-        :param enterprise_project_id: 企业租户ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param limit: 每页显示个数
         :type limit: int
@@ -70,7 +70,7 @@ class ListVulScanTaskHostRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListVulScanTaskHostRequest.
+        r"""Gets the task_id of this ListVulScanTaskHostRequest.
 
         任务ID
 
@@ -81,7 +81,7 @@ class ListVulScanTaskHostRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListVulScanTaskHostRequest.
+        r"""Sets the task_id of this ListVulScanTaskHostRequest.
 
         任务ID
 
@@ -92,9 +92,9 @@ class ListVulScanTaskHostRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListVulScanTaskHostRequest.
+        r"""Gets the enterprise_project_id of this ListVulScanTaskHostRequest.
 
-        企业租户ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListVulScanTaskHostRequest.
         :rtype: str
@@ -103,9 +103,9 @@ class ListVulScanTaskHostRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListVulScanTaskHostRequest.
+        r"""Sets the enterprise_project_id of this ListVulScanTaskHostRequest.
 
-        企业租户ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListVulScanTaskHostRequest.
         :type enterprise_project_id: str
@@ -114,7 +114,7 @@ class ListVulScanTaskHostRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVulScanTaskHostRequest.
+        r"""Gets the limit of this ListVulScanTaskHostRequest.
 
         每页显示个数
 
@@ -125,7 +125,7 @@ class ListVulScanTaskHostRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVulScanTaskHostRequest.
+        r"""Sets the limit of this ListVulScanTaskHostRequest.
 
         每页显示个数
 
@@ -136,7 +136,7 @@ class ListVulScanTaskHostRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListVulScanTaskHostRequest.
+        r"""Gets the offset of this ListVulScanTaskHostRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -147,7 +147,7 @@ class ListVulScanTaskHostRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListVulScanTaskHostRequest.
+        r"""Sets the offset of this ListVulScanTaskHostRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -158,7 +158,7 @@ class ListVulScanTaskHostRequest:
 
     @property
     def scan_status(self):
-        """Gets the scan_status of this ListVulScanTaskHostRequest.
+        r"""Gets the scan_status of this ListVulScanTaskHostRequest.
 
         主机的扫描状态，包含如下：   -scanning : 扫描中   -success : 扫描成功   -failed : 扫描失败
 
@@ -169,7 +169,7 @@ class ListVulScanTaskHostRequest:
 
     @scan_status.setter
     def scan_status(self, scan_status):
-        """Sets the scan_status of this ListVulScanTaskHostRequest.
+        r"""Sets the scan_status of this ListVulScanTaskHostRequest.
 
         主机的扫描状态，包含如下：   -scanning : 扫描中   -success : 扫描成功   -failed : 扫描失败
 

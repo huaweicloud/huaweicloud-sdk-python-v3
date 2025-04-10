@@ -29,7 +29,7 @@ class ListInstanceTopicsRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ListInstanceTopicsRequest
+        r"""ListInstanceTopicsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListInstanceTopicsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceTopicsRequest.
+        r"""Gets the instance_id of this ListInstanceTopicsRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class ListInstanceTopicsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceTopicsRequest.
+        r"""Sets the instance_id of this ListInstanceTopicsRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class ListInstanceTopicsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstanceTopicsRequest.
+        r"""Gets the offset of this ListInstanceTopicsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -89,7 +89,7 @@ class ListInstanceTopicsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstanceTopicsRequest.
+        r"""Sets the offset of this ListInstanceTopicsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -100,7 +100,7 @@ class ListInstanceTopicsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstanceTopicsRequest.
+        r"""Gets the limit of this ListInstanceTopicsRequest.
 
         当次查询返回的最大实例个数，默认值为10，取值范围为1~50。
 
@@ -111,7 +111,7 @@ class ListInstanceTopicsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstanceTopicsRequest.
+        r"""Sets the limit of this ListInstanceTopicsRequest.
 
         当次查询返回的最大实例个数，默认值为10，取值范围为1~50。
 

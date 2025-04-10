@@ -45,7 +45,7 @@ class PolicyDefinition:
     }
 
     def __init__(self, id=None, name=None, display_name=None, policy_type=None, description=None, policy_rule_type=None, policy_rule=None, trigger_type=None, keywords=None, default_resource_types=None, parameters=None):
-        """PolicyDefinition
+        r"""PolicyDefinition
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class PolicyDefinition:
 
     @property
     def id(self):
-        """Gets the id of this PolicyDefinition.
+        r"""Gets the id of this PolicyDefinition.
 
         策略id
 
@@ -124,7 +124,7 @@ class PolicyDefinition:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PolicyDefinition.
+        r"""Sets the id of this PolicyDefinition.
 
         策略id
 
@@ -135,7 +135,7 @@ class PolicyDefinition:
 
     @property
     def name(self):
-        """Gets the name of this PolicyDefinition.
+        r"""Gets the name of this PolicyDefinition.
 
         策略名字
 
@@ -146,7 +146,7 @@ class PolicyDefinition:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PolicyDefinition.
+        r"""Sets the name of this PolicyDefinition.
 
         策略名字
 
@@ -157,7 +157,7 @@ class PolicyDefinition:
 
     @property
     def display_name(self):
-        """Gets the display_name of this PolicyDefinition.
+        r"""Gets the display_name of this PolicyDefinition.
 
         策略展示名
 
@@ -168,7 +168,7 @@ class PolicyDefinition:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this PolicyDefinition.
+        r"""Sets the display_name of this PolicyDefinition.
 
         策略展示名
 
@@ -179,7 +179,7 @@ class PolicyDefinition:
 
     @property
     def policy_type(self):
-        """Gets the policy_type of this PolicyDefinition.
+        r"""Gets the policy_type of this PolicyDefinition.
 
         策略类型
 
@@ -190,7 +190,7 @@ class PolicyDefinition:
 
     @policy_type.setter
     def policy_type(self, policy_type):
-        """Sets the policy_type of this PolicyDefinition.
+        r"""Sets the policy_type of this PolicyDefinition.
 
         策略类型
 
@@ -201,7 +201,7 @@ class PolicyDefinition:
 
     @property
     def description(self):
-        """Gets the description of this PolicyDefinition.
+        r"""Gets the description of this PolicyDefinition.
 
         策略描述
 
@@ -212,7 +212,7 @@ class PolicyDefinition:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PolicyDefinition.
+        r"""Sets the description of this PolicyDefinition.
 
         策略描述
 
@@ -223,7 +223,7 @@ class PolicyDefinition:
 
     @property
     def policy_rule_type(self):
-        """Gets the policy_rule_type of this PolicyDefinition.
+        r"""Gets the policy_rule_type of this PolicyDefinition.
 
         策略语法类型
 
@@ -234,7 +234,7 @@ class PolicyDefinition:
 
     @policy_rule_type.setter
     def policy_rule_type(self, policy_rule_type):
-        """Sets the policy_rule_type of this PolicyDefinition.
+        r"""Sets the policy_rule_type of this PolicyDefinition.
 
         策略语法类型
 
@@ -245,7 +245,7 @@ class PolicyDefinition:
 
     @property
     def policy_rule(self):
-        """Gets the policy_rule of this PolicyDefinition.
+        r"""Gets the policy_rule of this PolicyDefinition.
 
         策略规则
 
@@ -256,7 +256,7 @@ class PolicyDefinition:
 
     @policy_rule.setter
     def policy_rule(self, policy_rule):
-        """Sets the policy_rule of this PolicyDefinition.
+        r"""Sets the policy_rule of this PolicyDefinition.
 
         策略规则
 
@@ -267,7 +267,7 @@ class PolicyDefinition:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this PolicyDefinition.
+        r"""Gets the trigger_type of this PolicyDefinition.
 
         触发器类型，可选值：resource, period
 
@@ -278,7 +278,7 @@ class PolicyDefinition:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this PolicyDefinition.
+        r"""Sets the trigger_type of this PolicyDefinition.
 
         触发器类型，可选值：resource, period
 
@@ -289,7 +289,7 @@ class PolicyDefinition:
 
     @property
     def keywords(self):
-        """Gets the keywords of this PolicyDefinition.
+        r"""Gets the keywords of this PolicyDefinition.
 
         关键词列表
 
@@ -300,7 +300,7 @@ class PolicyDefinition:
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this PolicyDefinition.
+        r"""Sets the keywords of this PolicyDefinition.
 
         关键词列表
 
@@ -311,7 +311,7 @@ class PolicyDefinition:
 
     @property
     def default_resource_types(self):
-        """Gets the default_resource_types of this PolicyDefinition.
+        r"""Gets the default_resource_types of this PolicyDefinition.
 
         默认资源类型列表
 
@@ -322,7 +322,7 @@ class PolicyDefinition:
 
     @default_resource_types.setter
     def default_resource_types(self, default_resource_types):
-        """Sets the default_resource_types of this PolicyDefinition.
+        r"""Sets the default_resource_types of this PolicyDefinition.
 
         默认资源类型列表
 
@@ -333,7 +333,7 @@ class PolicyDefinition:
 
     @property
     def parameters(self):
-        """Gets the parameters of this PolicyDefinition.
+        r"""Gets the parameters of this PolicyDefinition.
 
         策略参数
 
@@ -344,7 +344,7 @@ class PolicyDefinition:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this PolicyDefinition.
+        r"""Sets the parameters of this PolicyDefinition.
 
         策略参数
 

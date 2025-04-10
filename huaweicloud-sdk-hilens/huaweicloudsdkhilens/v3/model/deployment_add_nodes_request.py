@@ -31,7 +31,7 @@ class DeploymentAddNodesRequest:
     }
 
     def __init__(self, node_ids=None, deployment_id=None, node_tags=None, node_num=None):
-        """DeploymentAddNodesRequest
+        r"""DeploymentAddNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class DeploymentAddNodesRequest:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this DeploymentAddNodesRequest.
+        r"""Gets the node_ids of this DeploymentAddNodesRequest.
 
         应用部署到指定节点
 
@@ -73,7 +73,7 @@ class DeploymentAddNodesRequest:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this DeploymentAddNodesRequest.
+        r"""Sets the node_ids of this DeploymentAddNodesRequest.
 
         应用部署到指定节点
 
@@ -84,7 +84,7 @@ class DeploymentAddNodesRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this DeploymentAddNodesRequest.
+        r"""Gets the deployment_id of this DeploymentAddNodesRequest.
 
         应用部署ID
 
@@ -95,7 +95,7 @@ class DeploymentAddNodesRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this DeploymentAddNodesRequest.
+        r"""Sets the deployment_id of this DeploymentAddNodesRequest.
 
         应用部署ID
 
@@ -106,7 +106,7 @@ class DeploymentAddNodesRequest:
 
     @property
     def node_tags(self):
-        """Gets the node_tags of this DeploymentAddNodesRequest.
+        r"""Gets the node_tags of this DeploymentAddNodesRequest.
 
         添加节点的标签
 
@@ -117,7 +117,7 @@ class DeploymentAddNodesRequest:
 
     @node_tags.setter
     def node_tags(self, node_tags):
-        """Sets the node_tags of this DeploymentAddNodesRequest.
+        r"""Sets the node_tags of this DeploymentAddNodesRequest.
 
         添加节点的标签
 
@@ -128,7 +128,7 @@ class DeploymentAddNodesRequest:
 
     @property
     def node_num(self):
-        """Gets the node_num of this DeploymentAddNodesRequest.
+        r"""Gets the node_num of this DeploymentAddNodesRequest.
 
         添加的节点数量
 
@@ -139,7 +139,7 @@ class DeploymentAddNodesRequest:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this DeploymentAddNodesRequest.
+        r"""Sets the node_num of this DeploymentAddNodesRequest.
 
         添加的节点数量
 

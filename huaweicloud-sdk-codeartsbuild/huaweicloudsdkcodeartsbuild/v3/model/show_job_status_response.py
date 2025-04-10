@@ -26,7 +26,7 @@ class ShowJobStatusResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """ShowJobStatusResponse
+        r"""ShowJobStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowJobStatusResponse.
+        r"""Gets the result of this ShowJobStatusResponse.
 
         任务运行结果
 
@@ -55,7 +55,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowJobStatusResponse.
+        r"""Sets the result of this ShowJobStatusResponse.
 
         任务运行结果
 

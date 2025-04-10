@@ -35,7 +35,7 @@ class RtmpBrokens:
     }
 
     def __init__(self, audio_rec_bytes=None, audio_sent_bytes=None, rtmp_received_packets=None, rtmp_sent_packets=None, video_rec_bytes=None, video_sent_bytes=None):
-        """RtmpBrokens
+        r"""RtmpBrokens
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RtmpBrokens:
 
     @property
     def audio_rec_bytes(self):
-        """Gets the audio_rec_bytes of this RtmpBrokens.
+        r"""Gets the audio_rec_bytes of this RtmpBrokens.
 
         音频接收字节数
 
@@ -89,7 +89,7 @@ class RtmpBrokens:
 
     @audio_rec_bytes.setter
     def audio_rec_bytes(self, audio_rec_bytes):
-        """Sets the audio_rec_bytes of this RtmpBrokens.
+        r"""Sets the audio_rec_bytes of this RtmpBrokens.
 
         音频接收字节数
 
@@ -100,7 +100,7 @@ class RtmpBrokens:
 
     @property
     def audio_sent_bytes(self):
-        """Gets the audio_sent_bytes of this RtmpBrokens.
+        r"""Gets the audio_sent_bytes of this RtmpBrokens.
 
         音频发送字节数
 
@@ -111,7 +111,7 @@ class RtmpBrokens:
 
     @audio_sent_bytes.setter
     def audio_sent_bytes(self, audio_sent_bytes):
-        """Sets the audio_sent_bytes of this RtmpBrokens.
+        r"""Sets the audio_sent_bytes of this RtmpBrokens.
 
         音频发送字节数
 
@@ -122,7 +122,7 @@ class RtmpBrokens:
 
     @property
     def rtmp_received_packets(self):
-        """Gets the rtmp_received_packets of this RtmpBrokens.
+        r"""Gets the rtmp_received_packets of this RtmpBrokens.
 
         RTMP接收数据包数
 
@@ -133,7 +133,7 @@ class RtmpBrokens:
 
     @rtmp_received_packets.setter
     def rtmp_received_packets(self, rtmp_received_packets):
-        """Sets the rtmp_received_packets of this RtmpBrokens.
+        r"""Sets the rtmp_received_packets of this RtmpBrokens.
 
         RTMP接收数据包数
 
@@ -144,7 +144,7 @@ class RtmpBrokens:
 
     @property
     def rtmp_sent_packets(self):
-        """Gets the rtmp_sent_packets of this RtmpBrokens.
+        r"""Gets the rtmp_sent_packets of this RtmpBrokens.
 
         RTMP发送数据包数
 
@@ -155,7 +155,7 @@ class RtmpBrokens:
 
     @rtmp_sent_packets.setter
     def rtmp_sent_packets(self, rtmp_sent_packets):
-        """Sets the rtmp_sent_packets of this RtmpBrokens.
+        r"""Sets the rtmp_sent_packets of this RtmpBrokens.
 
         RTMP发送数据包数
 
@@ -166,7 +166,7 @@ class RtmpBrokens:
 
     @property
     def video_rec_bytes(self):
-        """Gets the video_rec_bytes of this RtmpBrokens.
+        r"""Gets the video_rec_bytes of this RtmpBrokens.
 
         视频接收字节数
 
@@ -177,7 +177,7 @@ class RtmpBrokens:
 
     @video_rec_bytes.setter
     def video_rec_bytes(self, video_rec_bytes):
-        """Sets the video_rec_bytes of this RtmpBrokens.
+        r"""Sets the video_rec_bytes of this RtmpBrokens.
 
         视频接收字节数
 
@@ -188,7 +188,7 @@ class RtmpBrokens:
 
     @property
     def video_sent_bytes(self):
-        """Gets the video_sent_bytes of this RtmpBrokens.
+        r"""Gets the video_sent_bytes of this RtmpBrokens.
 
         视频发送字节数
 
@@ -199,7 +199,7 @@ class RtmpBrokens:
 
     @video_sent_bytes.setter
     def video_sent_bytes(self, video_sent_bytes):
-        """Sets the video_sent_bytes of this RtmpBrokens.
+        r"""Sets the video_sent_bytes of this RtmpBrokens.
 
         视频发送字节数
 

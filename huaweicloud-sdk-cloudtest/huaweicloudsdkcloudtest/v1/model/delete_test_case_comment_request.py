@@ -31,7 +31,7 @@ class DeleteTestCaseCommentRequest:
     }
 
     def __init__(self, project_id=None, testcase_id=None, comment_id=None, version_uri=None):
-        """DeleteTestCaseCommentRequest
+        r"""DeleteTestCaseCommentRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class DeleteTestCaseCommentRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteTestCaseCommentRequest.
+        r"""Gets the project_id of this DeleteTestCaseCommentRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -72,7 +72,7 @@ class DeleteTestCaseCommentRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteTestCaseCommentRequest.
+        r"""Sets the project_id of this DeleteTestCaseCommentRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -83,7 +83,7 @@ class DeleteTestCaseCommentRequest:
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this DeleteTestCaseCommentRequest.
+        r"""Gets the testcase_id of this DeleteTestCaseCommentRequest.
 
         用例uri
 
@@ -94,7 +94,7 @@ class DeleteTestCaseCommentRequest:
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this DeleteTestCaseCommentRequest.
+        r"""Sets the testcase_id of this DeleteTestCaseCommentRequest.
 
         用例uri
 
@@ -105,7 +105,7 @@ class DeleteTestCaseCommentRequest:
 
     @property
     def comment_id(self):
-        """Gets the comment_id of this DeleteTestCaseCommentRequest.
+        r"""Gets the comment_id of this DeleteTestCaseCommentRequest.
 
         评论uri
 
@@ -116,7 +116,7 @@ class DeleteTestCaseCommentRequest:
 
     @comment_id.setter
     def comment_id(self, comment_id):
-        """Sets the comment_id of this DeleteTestCaseCommentRequest.
+        r"""Sets the comment_id of this DeleteTestCaseCommentRequest.
 
         评论uri
 
@@ -127,7 +127,7 @@ class DeleteTestCaseCommentRequest:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this DeleteTestCaseCommentRequest.
+        r"""Gets the version_uri of this DeleteTestCaseCommentRequest.
 
         分支或者测试计划uri
 
@@ -138,7 +138,7 @@ class DeleteTestCaseCommentRequest:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this DeleteTestCaseCommentRequest.
+        r"""Sets the version_uri of this DeleteTestCaseCommentRequest.
 
         分支或者测试计划uri
 

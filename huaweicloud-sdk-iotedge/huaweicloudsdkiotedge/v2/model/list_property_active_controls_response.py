@@ -36,7 +36,7 @@ class ListPropertyActiveControlsResponse(SdkResponse):
     }
 
     def __init__(self, device_id=None, service_id=None, _property=None, active_controls=None, result_code=None, result_desc=None):
-        """ListPropertyActiveControlsResponse
+        r"""ListPropertyActiveControlsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListPropertyActiveControlsResponse(SdkResponse):
 
     @property
     def device_id(self):
-        """Gets the device_id of this ListPropertyActiveControlsResponse.
+        r"""Gets the device_id of this ListPropertyActiveControlsResponse.
 
         设备id
 
@@ -90,7 +90,7 @@ class ListPropertyActiveControlsResponse(SdkResponse):
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ListPropertyActiveControlsResponse.
+        r"""Sets the device_id of this ListPropertyActiveControlsResponse.
 
         设备id
 
@@ -101,7 +101,7 @@ class ListPropertyActiveControlsResponse(SdkResponse):
 
     @property
     def service_id(self):
-        """Gets the service_id of this ListPropertyActiveControlsResponse.
+        r"""Gets the service_id of this ListPropertyActiveControlsResponse.
 
         设备的服务id
 
@@ -112,7 +112,7 @@ class ListPropertyActiveControlsResponse(SdkResponse):
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ListPropertyActiveControlsResponse.
+        r"""Sets the service_id of this ListPropertyActiveControlsResponse.
 
         设备的服务id
 
@@ -123,7 +123,7 @@ class ListPropertyActiveControlsResponse(SdkResponse):
 
     @property
     def _property(self):
-        """Gets the _property of this ListPropertyActiveControlsResponse.
+        r"""Gets the _property of this ListPropertyActiveControlsResponse.
 
         设备的属性
 
@@ -134,7 +134,7 @@ class ListPropertyActiveControlsResponse(SdkResponse):
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this ListPropertyActiveControlsResponse.
+        r"""Sets the _property of this ListPropertyActiveControlsResponse.
 
         设备的属性
 
@@ -145,7 +145,7 @@ class ListPropertyActiveControlsResponse(SdkResponse):
 
     @property
     def active_controls(self):
-        """Gets the active_controls of this ListPropertyActiveControlsResponse.
+        r"""Gets the active_controls of this ListPropertyActiveControlsResponse.
 
         正在执行中的控制列表
 
@@ -156,7 +156,7 @@ class ListPropertyActiveControlsResponse(SdkResponse):
 
     @active_controls.setter
     def active_controls(self, active_controls):
-        """Sets the active_controls of this ListPropertyActiveControlsResponse.
+        r"""Sets the active_controls of this ListPropertyActiveControlsResponse.
 
         正在执行中的控制列表
 
@@ -167,7 +167,7 @@ class ListPropertyActiveControlsResponse(SdkResponse):
 
     @property
     def result_code(self):
-        """Gets the result_code of this ListPropertyActiveControlsResponse.
+        r"""Gets the result_code of this ListPropertyActiveControlsResponse.
 
         结果响应码，大于等于400表示失败，小于400表示成功
 
@@ -178,7 +178,7 @@ class ListPropertyActiveControlsResponse(SdkResponse):
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this ListPropertyActiveControlsResponse.
+        r"""Sets the result_code of this ListPropertyActiveControlsResponse.
 
         结果响应码，大于等于400表示失败，小于400表示成功
 
@@ -189,7 +189,7 @@ class ListPropertyActiveControlsResponse(SdkResponse):
 
     @property
     def result_desc(self):
-        """Gets the result_desc of this ListPropertyActiveControlsResponse.
+        r"""Gets the result_desc of this ListPropertyActiveControlsResponse.
 
         结果描述
 
@@ -200,7 +200,7 @@ class ListPropertyActiveControlsResponse(SdkResponse):
 
     @result_desc.setter
     def result_desc(self, result_desc):
-        """Sets the result_desc of this ListPropertyActiveControlsResponse.
+        r"""Sets the result_desc of this ListPropertyActiveControlsResponse.
 
         结果描述
 

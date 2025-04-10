@@ -24,7 +24,7 @@ class KeystoneUpdateUserPasswordResponse(SdkResponse):
     }
 
     def __init__(self):
-        """KeystoneUpdateUserPasswordResponse
+        r"""KeystoneUpdateUserPasswordResponse
 
         The model defined in huaweicloud sdk
 

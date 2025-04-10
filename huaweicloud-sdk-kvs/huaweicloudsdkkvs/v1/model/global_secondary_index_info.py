@@ -27,7 +27,7 @@ class GlobalSecondaryIndexInfo:
     }
 
     def __init__(self, index_name=None, index_status=None):
-        """GlobalSecondaryIndexInfo
+        r"""GlobalSecondaryIndexInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GlobalSecondaryIndexInfo:
 
     @property
     def index_name(self):
-        """Gets the index_name of this GlobalSecondaryIndexInfo.
+        r"""Gets the index_name of this GlobalSecondaryIndexInfo.
 
         二级索引名称。
 
@@ -59,7 +59,7 @@ class GlobalSecondaryIndexInfo:
 
     @index_name.setter
     def index_name(self, index_name):
-        """Sets the index_name of this GlobalSecondaryIndexInfo.
+        r"""Sets the index_name of this GlobalSecondaryIndexInfo.
 
         二级索引名称。
 
@@ -70,7 +70,7 @@ class GlobalSecondaryIndexInfo:
 
     @property
     def index_status(self):
-        """Gets the index_status of this GlobalSecondaryIndexInfo.
+        r"""Gets the index_status of this GlobalSecondaryIndexInfo.
 
         二级索引名称。 - \"creating\" - \"active\" - \"deleting\"
 
@@ -81,7 +81,7 @@ class GlobalSecondaryIndexInfo:
 
     @index_status.setter
     def index_status(self, index_status):
-        """Sets the index_status of this GlobalSecondaryIndexInfo.
+        r"""Sets the index_status of this GlobalSecondaryIndexInfo.
 
         二级索引名称。 - \"creating\" - \"active\" - \"deleting\"
 

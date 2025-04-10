@@ -29,7 +29,7 @@ class CaptureFile:
     }
 
     def __init__(self, file_name=None, url=None, file_path=None):
-        """CaptureFile
+        r"""CaptureFile
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CaptureFile:
 
     @property
     def file_name(self):
-        """Gets the file_name of this CaptureFile.
+        r"""Gets the file_name of this CaptureFile.
 
         文件名称
 
@@ -68,7 +68,7 @@ class CaptureFile:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this CaptureFile.
+        r"""Sets the file_name of this CaptureFile.
 
         文件名称
 
@@ -79,7 +79,7 @@ class CaptureFile:
 
     @property
     def url(self):
-        """Gets the url of this CaptureFile.
+        r"""Gets the url of this CaptureFile.
 
         下载链接
 
@@ -90,7 +90,7 @@ class CaptureFile:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CaptureFile.
+        r"""Sets the url of this CaptureFile.
 
         下载链接
 
@@ -101,7 +101,7 @@ class CaptureFile:
 
     @property
     def file_path(self):
-        """Gets the file_path of this CaptureFile.
+        r"""Gets the file_path of this CaptureFile.
 
         文件路径
 
@@ -112,7 +112,7 @@ class CaptureFile:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this CaptureFile.
+        r"""Sets the file_path of this CaptureFile.
 
         文件路径
 

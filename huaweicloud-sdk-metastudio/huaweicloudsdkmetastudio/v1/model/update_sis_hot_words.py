@@ -31,7 +31,7 @@ class UpdateSisHotWords:
     }
 
     def __init__(self, vocabulary_id=None, sis_project_id=None, region=None, language=None):
-        """UpdateSisHotWords
+        r"""UpdateSisHotWords
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateSisHotWords:
 
     @property
     def vocabulary_id(self):
-        """Gets the vocabulary_id of this UpdateSisHotWords.
+        r"""Gets the vocabulary_id of this UpdateSisHotWords.
 
         热词ID。
 
@@ -75,7 +75,7 @@ class UpdateSisHotWords:
 
     @vocabulary_id.setter
     def vocabulary_id(self, vocabulary_id):
-        """Sets the vocabulary_id of this UpdateSisHotWords.
+        r"""Sets the vocabulary_id of this UpdateSisHotWords.
 
         热词ID。
 
@@ -86,7 +86,7 @@ class UpdateSisHotWords:
 
     @property
     def sis_project_id(self):
-        """Gets the sis_project_id of this UpdateSisHotWords.
+        r"""Gets the sis_project_id of this UpdateSisHotWords.
 
         SIS服务所在区域projectId
 
@@ -97,7 +97,7 @@ class UpdateSisHotWords:
 
     @sis_project_id.setter
     def sis_project_id(self, sis_project_id):
-        """Sets the sis_project_id of this UpdateSisHotWords.
+        r"""Sets the sis_project_id of this UpdateSisHotWords.
 
         SIS服务所在区域projectId
 
@@ -108,7 +108,7 @@ class UpdateSisHotWords:
 
     @property
     def region(self):
-        """Gets the region of this UpdateSisHotWords.
+        r"""Gets the region of this UpdateSisHotWords.
 
         对接SIS服务的区域。 > 0：北京四；3：上海一；
 
@@ -119,7 +119,7 @@ class UpdateSisHotWords:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this UpdateSisHotWords.
+        r"""Sets the region of this UpdateSisHotWords.
 
         对接SIS服务的区域。 > 0：北京四；3：上海一；
 
@@ -130,7 +130,7 @@ class UpdateSisHotWords:
 
     @property
     def language(self):
-        """Gets the language of this UpdateSisHotWords.
+        r"""Gets the language of this UpdateSisHotWords.
 
         :return: The language of this UpdateSisHotWords.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -139,7 +139,7 @@ class UpdateSisHotWords:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this UpdateSisHotWords.
+        r"""Sets the language of this UpdateSisHotWords.
 
         :param language: The language of this UpdateSisHotWords.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`

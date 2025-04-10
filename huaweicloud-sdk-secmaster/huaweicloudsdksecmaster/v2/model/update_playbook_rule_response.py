@@ -32,7 +32,7 @@ class UpdatePlaybookRuleResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """UpdatePlaybookRuleResponse
+        r"""UpdatePlaybookRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdatePlaybookRuleResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this UpdatePlaybookRuleResponse.
+        r"""Gets the code of this UpdatePlaybookRuleResponse.
 
         错误码
 
@@ -76,7 +76,7 @@ class UpdatePlaybookRuleResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this UpdatePlaybookRuleResponse.
+        r"""Sets the code of this UpdatePlaybookRuleResponse.
 
         错误码
 
@@ -87,7 +87,7 @@ class UpdatePlaybookRuleResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this UpdatePlaybookRuleResponse.
+        r"""Gets the message of this UpdatePlaybookRuleResponse.
 
         错误信息
 
@@ -98,7 +98,7 @@ class UpdatePlaybookRuleResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this UpdatePlaybookRuleResponse.
+        r"""Sets the message of this UpdatePlaybookRuleResponse.
 
         错误信息
 
@@ -109,7 +109,7 @@ class UpdatePlaybookRuleResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdatePlaybookRuleResponse.
+        r"""Gets the data of this UpdatePlaybookRuleResponse.
 
         :return: The data of this UpdatePlaybookRuleResponse.
         :rtype: :class:`huaweicloudsdksecmaster.v2.RuleInfo`
@@ -118,7 +118,7 @@ class UpdatePlaybookRuleResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdatePlaybookRuleResponse.
+        r"""Sets the data of this UpdatePlaybookRuleResponse.
 
         :param data: The data of this UpdatePlaybookRuleResponse.
         :type data: :class:`huaweicloudsdksecmaster.v2.RuleInfo`
@@ -127,7 +127,7 @@ class UpdatePlaybookRuleResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdatePlaybookRuleResponse.
+        r"""Gets the x_request_id of this UpdatePlaybookRuleResponse.
 
         :return: The x_request_id of this UpdatePlaybookRuleResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class UpdatePlaybookRuleResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdatePlaybookRuleResponse.
+        r"""Sets the x_request_id of this UpdatePlaybookRuleResponse.
 
         :param x_request_id: The x_request_id of this UpdatePlaybookRuleResponse.
         :type x_request_id: str

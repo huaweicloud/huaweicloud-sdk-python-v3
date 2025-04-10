@@ -29,7 +29,7 @@ class AssociateInstanceRequest:
     }
 
     def __init__(self, binding_instance_service=None, global_eip_id=None, body=None):
-        """AssociateInstanceRequest
+        r"""AssociateInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AssociateInstanceRequest:
 
     @property
     def binding_instance_service(self):
-        """Gets the binding_instance_service of this AssociateInstanceRequest.
+        r"""Gets the binding_instance_service of this AssociateInstanceRequest.
 
         绑定接口可以加，标识请求是从哪个服务调过来的
 
@@ -67,7 +67,7 @@ class AssociateInstanceRequest:
 
     @binding_instance_service.setter
     def binding_instance_service(self, binding_instance_service):
-        """Sets the binding_instance_service of this AssociateInstanceRequest.
+        r"""Sets the binding_instance_service of this AssociateInstanceRequest.
 
         绑定接口可以加，标识请求是从哪个服务调过来的
 
@@ -78,7 +78,7 @@ class AssociateInstanceRequest:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this AssociateInstanceRequest.
+        r"""Gets the global_eip_id of this AssociateInstanceRequest.
 
         :return: The global_eip_id of this AssociateInstanceRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class AssociateInstanceRequest:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this AssociateInstanceRequest.
+        r"""Sets the global_eip_id of this AssociateInstanceRequest.
 
         :param global_eip_id: The global_eip_id of this AssociateInstanceRequest.
         :type global_eip_id: str
@@ -96,7 +96,7 @@ class AssociateInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateInstanceRequest.
+        r"""Gets the body of this AssociateInstanceRequest.
 
         :return: The body of this AssociateInstanceRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBody`
@@ -105,7 +105,7 @@ class AssociateInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateInstanceRequest.
+        r"""Sets the body of this AssociateInstanceRequest.
 
         :param body: The body of this AssociateInstanceRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBody`

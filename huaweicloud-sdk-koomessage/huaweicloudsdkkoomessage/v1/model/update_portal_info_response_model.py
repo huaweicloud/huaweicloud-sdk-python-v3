@@ -25,7 +25,7 @@ class UpdatePortalInfoResponseModel:
     }
 
     def __init__(self, portal=None):
-        """UpdatePortalInfoResponseModel
+        r"""UpdatePortalInfoResponseModel
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdatePortalInfoResponseModel:
 
     @property
     def portal(self):
-        """Gets the portal of this UpdatePortalInfoResponseModel.
+        r"""Gets the portal of this UpdatePortalInfoResponseModel.
 
         :return: The portal of this UpdatePortalInfoResponseModel.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.PortalModel`
@@ -52,7 +52,7 @@ class UpdatePortalInfoResponseModel:
 
     @portal.setter
     def portal(self, portal):
-        """Sets the portal of this UpdatePortalInfoResponseModel.
+        r"""Sets the portal of this UpdatePortalInfoResponseModel.
 
         :param portal: The portal of this UpdatePortalInfoResponseModel.
         :type portal: :class:`huaweicloudsdkkoomessage.v1.PortalModel`

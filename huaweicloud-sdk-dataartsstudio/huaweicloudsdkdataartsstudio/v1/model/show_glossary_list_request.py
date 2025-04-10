@@ -43,7 +43,7 @@ class ShowGlossaryListRequest:
     }
 
     def __init__(self, workspace=None, type=None, name=None, create_user=None, start=None, end=None, limit=None, offset=None, sort_by=None, sort_order=None):
-        """ShowGlossaryListRequest
+        r"""ShowGlossaryListRequest
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class ShowGlossaryListRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowGlossaryListRequest.
+        r"""Gets the workspace of this ShowGlossaryListRequest.
 
         DataArts Studio工作空间ID
 
@@ -116,7 +116,7 @@ class ShowGlossaryListRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowGlossaryListRequest.
+        r"""Sets the workspace of this ShowGlossaryListRequest.
 
         DataArts Studio工作空间ID
 
@@ -127,7 +127,7 @@ class ShowGlossaryListRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowGlossaryListRequest.
+        r"""Gets the type of this ShowGlossaryListRequest.
 
         标签类型 缺省值：all
 
@@ -138,7 +138,7 @@ class ShowGlossaryListRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowGlossaryListRequest.
+        r"""Sets the type of this ShowGlossaryListRequest.
 
         标签类型 缺省值：all
 
@@ -149,7 +149,7 @@ class ShowGlossaryListRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowGlossaryListRequest.
+        r"""Gets the name of this ShowGlossaryListRequest.
 
         标签名
 
@@ -160,7 +160,7 @@ class ShowGlossaryListRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowGlossaryListRequest.
+        r"""Sets the name of this ShowGlossaryListRequest.
 
         标签名
 
@@ -171,7 +171,7 @@ class ShowGlossaryListRequest:
 
     @property
     def create_user(self):
-        """Gets the create_user of this ShowGlossaryListRequest.
+        r"""Gets the create_user of this ShowGlossaryListRequest.
 
         标签创建用户
 
@@ -182,7 +182,7 @@ class ShowGlossaryListRequest:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ShowGlossaryListRequest.
+        r"""Sets the create_user of this ShowGlossaryListRequest.
 
         标签创建用户
 
@@ -193,7 +193,7 @@ class ShowGlossaryListRequest:
 
     @property
     def start(self):
-        """Gets the start of this ShowGlossaryListRequest.
+        r"""Gets the start of this ShowGlossaryListRequest.
 
         开始时间
 
@@ -204,7 +204,7 @@ class ShowGlossaryListRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ShowGlossaryListRequest.
+        r"""Sets the start of this ShowGlossaryListRequest.
 
         开始时间
 
@@ -215,7 +215,7 @@ class ShowGlossaryListRequest:
 
     @property
     def end(self):
-        """Gets the end of this ShowGlossaryListRequest.
+        r"""Gets the end of this ShowGlossaryListRequest.
 
         结束时间
 
@@ -226,7 +226,7 @@ class ShowGlossaryListRequest:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this ShowGlossaryListRequest.
+        r"""Sets the end of this ShowGlossaryListRequest.
 
         结束时间
 
@@ -237,7 +237,7 @@ class ShowGlossaryListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowGlossaryListRequest.
+        r"""Gets the limit of this ShowGlossaryListRequest.
 
         分页参数:每页限定数量 缺省值：10
 
@@ -248,7 +248,7 @@ class ShowGlossaryListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowGlossaryListRequest.
+        r"""Sets the limit of this ShowGlossaryListRequest.
 
         分页参数:每页限定数量 缺省值：10
 
@@ -259,7 +259,7 @@ class ShowGlossaryListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowGlossaryListRequest.
+        r"""Gets the offset of this ShowGlossaryListRequest.
 
         分页参数：页数 缺省值：0
 
@@ -270,7 +270,7 @@ class ShowGlossaryListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowGlossaryListRequest.
+        r"""Sets the offset of this ShowGlossaryListRequest.
 
         分页参数：页数 缺省值：0
 
@@ -281,7 +281,7 @@ class ShowGlossaryListRequest:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this ShowGlossaryListRequest.
+        r"""Gets the sort_by of this ShowGlossaryListRequest.
 
         排序字段 默认为createTime 缺省值：createTime
 
@@ -292,7 +292,7 @@ class ShowGlossaryListRequest:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this ShowGlossaryListRequest.
+        r"""Sets the sort_by of this ShowGlossaryListRequest.
 
         排序字段 默认为createTime 缺省值：createTime
 
@@ -303,7 +303,7 @@ class ShowGlossaryListRequest:
 
     @property
     def sort_order(self):
-        """Gets the sort_order of this ShowGlossaryListRequest.
+        r"""Gets the sort_order of this ShowGlossaryListRequest.
 
         排序方式 默认排序字段为降序 缺省值：desc
 
@@ -314,7 +314,7 @@ class ShowGlossaryListRequest:
 
     @sort_order.setter
     def sort_order(self, sort_order):
-        """Sets the sort_order of this ShowGlossaryListRequest.
+        r"""Sets the sort_order of this ShowGlossaryListRequest.
 
         排序方式 默认排序字段为降序 缺省值：desc
 

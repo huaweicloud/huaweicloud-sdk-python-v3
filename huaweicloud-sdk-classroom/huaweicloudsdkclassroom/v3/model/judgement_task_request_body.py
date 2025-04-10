@@ -39,7 +39,7 @@ class JudgementTaskRequestBody:
     }
 
     def __init__(self, notify_url=None, code_type=None, source_code=None, description=None, runtime_type=None, timeout=None, output_type=None, testcases=None):
-        """JudgementTaskRequestBody
+        r"""JudgementTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class JudgementTaskRequestBody:
 
     @property
     def notify_url(self):
-        """Gets the notify_url of this JudgementTaskRequestBody.
+        r"""Gets the notify_url of this JudgementTaskRequestBody.
 
         第三方指定的判题结果回调url，取值来源于伙伴通道“判题管理配置”-“接口管理”中设置的回调地址相同
 
@@ -98,7 +98,7 @@ class JudgementTaskRequestBody:
 
     @notify_url.setter
     def notify_url(self, notify_url):
-        """Sets the notify_url of this JudgementTaskRequestBody.
+        r"""Sets the notify_url of this JudgementTaskRequestBody.
 
         第三方指定的判题结果回调url，取值来源于伙伴通道“判题管理配置”-“接口管理”中设置的回调地址相同
 
@@ -109,7 +109,7 @@ class JudgementTaskRequestBody:
 
     @property
     def code_type(self):
-        """Gets the code_type of this JudgementTaskRequestBody.
+        r"""Gets the code_type of this JudgementTaskRequestBody.
 
         代码来源：inline（源代码）
 
@@ -120,7 +120,7 @@ class JudgementTaskRequestBody:
 
     @code_type.setter
     def code_type(self, code_type):
-        """Sets the code_type of this JudgementTaskRequestBody.
+        r"""Sets the code_type of this JudgementTaskRequestBody.
 
         代码来源：inline（源代码）
 
@@ -131,7 +131,7 @@ class JudgementTaskRequestBody:
 
     @property
     def source_code(self):
-        """Gets the source_code of this JudgementTaskRequestBody.
+        r"""Gets the source_code of this JudgementTaskRequestBody.
 
         源代码，需Base64编码
 
@@ -142,7 +142,7 @@ class JudgementTaskRequestBody:
 
     @source_code.setter
     def source_code(self, source_code):
-        """Sets the source_code of this JudgementTaskRequestBody.
+        r"""Sets the source_code of this JudgementTaskRequestBody.
 
         源代码，需Base64编码
 
@@ -153,7 +153,7 @@ class JudgementTaskRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this JudgementTaskRequestBody.
+        r"""Gets the description of this JudgementTaskRequestBody.
 
         任务描述
 
@@ -164,7 +164,7 @@ class JudgementTaskRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this JudgementTaskRequestBody.
+        r"""Sets the description of this JudgementTaskRequestBody.
 
         任务描述
 
@@ -175,7 +175,7 @@ class JudgementTaskRequestBody:
 
     @property
     def runtime_type(self):
-        """Gets the runtime_type of this JudgementTaskRequestBody.
+        r"""Gets the runtime_type of this JudgementTaskRequestBody.
 
         支持语言类型：java、c、cpp、python、javaScript
 
@@ -186,7 +186,7 @@ class JudgementTaskRequestBody:
 
     @runtime_type.setter
     def runtime_type(self, runtime_type):
-        """Sets the runtime_type of this JudgementTaskRequestBody.
+        r"""Sets the runtime_type of this JudgementTaskRequestBody.
 
         支持语言类型：java、c、cpp、python、javaScript
 
@@ -197,7 +197,7 @@ class JudgementTaskRequestBody:
 
     @property
     def timeout(self):
-        """Gets the timeout of this JudgementTaskRequestBody.
+        r"""Gets the timeout of this JudgementTaskRequestBody.
 
         代码运行超时时间，单位为秒
 
@@ -208,7 +208,7 @@ class JudgementTaskRequestBody:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this JudgementTaskRequestBody.
+        r"""Sets the timeout of this JudgementTaskRequestBody.
 
         代码运行超时时间，单位为秒
 
@@ -219,7 +219,7 @@ class JudgementTaskRequestBody:
 
     @property
     def output_type(self):
-        """Gets the output_type of this JudgementTaskRequestBody.
+        r"""Gets the output_type of this JudgementTaskRequestBody.
 
         结果返回类型：sysout（标准输出）、fileout（以文件形式输出）、imgout（以图片形式输出）、caseout（用例运行返回）、judgeout（用例对比返回）
 
@@ -230,7 +230,7 @@ class JudgementTaskRequestBody:
 
     @output_type.setter
     def output_type(self, output_type):
-        """Sets the output_type of this JudgementTaskRequestBody.
+        r"""Sets the output_type of this JudgementTaskRequestBody.
 
         结果返回类型：sysout（标准输出）、fileout（以文件形式输出）、imgout（以图片形式输出）、caseout（用例运行返回）、judgeout（用例对比返回）
 
@@ -241,7 +241,7 @@ class JudgementTaskRequestBody:
 
     @property
     def testcases(self):
-        """Gets the testcases of this JudgementTaskRequestBody.
+        r"""Gets the testcases of this JudgementTaskRequestBody.
 
         当判题结果类型是caseout和judgeout类型才需要传的字段，表示用例数据
 
@@ -252,7 +252,7 @@ class JudgementTaskRequestBody:
 
     @testcases.setter
     def testcases(self, testcases):
-        """Sets the testcases of this JudgementTaskRequestBody.
+        r"""Sets the testcases of this JudgementTaskRequestBody.
 
         当判题结果类型是caseout和judgeout类型才需要传的字段，表示用例数据
 

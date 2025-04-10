@@ -26,7 +26,7 @@ class ShowLoadbalancersStatusResponse(SdkResponse):
     }
 
     def __init__(self, statuses=None):
-        """ShowLoadbalancersStatusResponse
+        r"""ShowLoadbalancersStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowLoadbalancersStatusResponse(SdkResponse):
 
     @property
     def statuses(self):
-        """Gets the statuses of this ShowLoadbalancersStatusResponse.
+        r"""Gets the statuses of this ShowLoadbalancersStatusResponse.
 
         :return: The statuses of this ShowLoadbalancersStatusResponse.
         :rtype: :class:`huaweicloudsdkelb.v2.StatusResp`
@@ -53,7 +53,7 @@ class ShowLoadbalancersStatusResponse(SdkResponse):
 
     @statuses.setter
     def statuses(self, statuses):
-        """Sets the statuses of this ShowLoadbalancersStatusResponse.
+        r"""Sets the statuses of this ShowLoadbalancersStatusResponse.
 
         :param statuses: The statuses of this ShowLoadbalancersStatusResponse.
         :type statuses: :class:`huaweicloudsdkelb.v2.StatusResp`

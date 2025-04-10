@@ -53,7 +53,7 @@ class ListTrafficMirrorSessionsRequest:
     }
 
     def __init__(self, id=None, name=None, description=None, traffic_mirror_filter_id=None, traffic_mirror_target_id=None, traffic_mirror_target_type=None, virtual_network_id=None, packet_length=None, priority=None, enabled=None, type=None, created_at=None, updated_at=None, limit=None, marker=None):
-        """ListTrafficMirrorSessionsRequest
+        r"""ListTrafficMirrorSessionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListTrafficMirrorSessionsRequest.
+        r"""Gets the id of this ListTrafficMirrorSessionsRequest.
 
         使用镜像会话ID过滤或排序
 
@@ -152,7 +152,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListTrafficMirrorSessionsRequest.
+        r"""Sets the id of this ListTrafficMirrorSessionsRequest.
 
         使用镜像会话ID过滤或排序
 
@@ -163,7 +163,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListTrafficMirrorSessionsRequest.
+        r"""Gets the name of this ListTrafficMirrorSessionsRequest.
 
         使用镜像会话名称过滤或排序
 
@@ -174,7 +174,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTrafficMirrorSessionsRequest.
+        r"""Sets the name of this ListTrafficMirrorSessionsRequest.
 
         使用镜像会话名称过滤或排序
 
@@ -185,7 +185,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListTrafficMirrorSessionsRequest.
+        r"""Gets the description of this ListTrafficMirrorSessionsRequest.
 
         使用镜像会话描述过滤
 
@@ -196,7 +196,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListTrafficMirrorSessionsRequest.
+        r"""Sets the description of this ListTrafficMirrorSessionsRequest.
 
         使用镜像会话描述过滤
 
@@ -207,7 +207,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @property
     def traffic_mirror_filter_id(self):
-        """Gets the traffic_mirror_filter_id of this ListTrafficMirrorSessionsRequest.
+        r"""Gets the traffic_mirror_filter_id of this ListTrafficMirrorSessionsRequest.
 
         使用筛选条件ID过滤
 
@@ -218,7 +218,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @traffic_mirror_filter_id.setter
     def traffic_mirror_filter_id(self, traffic_mirror_filter_id):
-        """Sets the traffic_mirror_filter_id of this ListTrafficMirrorSessionsRequest.
+        r"""Sets the traffic_mirror_filter_id of this ListTrafficMirrorSessionsRequest.
 
         使用筛选条件ID过滤
 
@@ -229,7 +229,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @property
     def traffic_mirror_target_id(self):
-        """Gets the traffic_mirror_target_id of this ListTrafficMirrorSessionsRequest.
+        r"""Gets the traffic_mirror_target_id of this ListTrafficMirrorSessionsRequest.
 
         使用镜像目的ID过滤
 
@@ -240,7 +240,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @traffic_mirror_target_id.setter
     def traffic_mirror_target_id(self, traffic_mirror_target_id):
-        """Sets the traffic_mirror_target_id of this ListTrafficMirrorSessionsRequest.
+        r"""Sets the traffic_mirror_target_id of this ListTrafficMirrorSessionsRequest.
 
         使用镜像目的ID过滤
 
@@ -251,7 +251,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @property
     def traffic_mirror_target_type(self):
-        """Gets the traffic_mirror_target_type of this ListTrafficMirrorSessionsRequest.
+        r"""Gets the traffic_mirror_target_type of this ListTrafficMirrorSessionsRequest.
 
         使用镜像目的类型过滤
 
@@ -262,7 +262,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @traffic_mirror_target_type.setter
     def traffic_mirror_target_type(self, traffic_mirror_target_type):
-        """Sets the traffic_mirror_target_type of this ListTrafficMirrorSessionsRequest.
+        r"""Sets the traffic_mirror_target_type of this ListTrafficMirrorSessionsRequest.
 
         使用镜像目的类型过滤
 
@@ -273,7 +273,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @property
     def virtual_network_id(self):
-        """Gets the virtual_network_id of this ListTrafficMirrorSessionsRequest.
+        r"""Gets the virtual_network_id of this ListTrafficMirrorSessionsRequest.
 
         使用VNI过滤
 
@@ -284,7 +284,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @virtual_network_id.setter
     def virtual_network_id(self, virtual_network_id):
-        """Sets the virtual_network_id of this ListTrafficMirrorSessionsRequest.
+        r"""Sets the virtual_network_id of this ListTrafficMirrorSessionsRequest.
 
         使用VNI过滤
 
@@ -295,7 +295,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @property
     def packet_length(self):
-        """Gets the packet_length of this ListTrafficMirrorSessionsRequest.
+        r"""Gets the packet_length of this ListTrafficMirrorSessionsRequest.
 
         使用最大传输单元MTU过滤
 
@@ -306,7 +306,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @packet_length.setter
     def packet_length(self, packet_length):
-        """Sets the packet_length of this ListTrafficMirrorSessionsRequest.
+        r"""Sets the packet_length of this ListTrafficMirrorSessionsRequest.
 
         使用最大传输单元MTU过滤
 
@@ -317,7 +317,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @property
     def priority(self):
-        """Gets the priority of this ListTrafficMirrorSessionsRequest.
+        r"""Gets the priority of this ListTrafficMirrorSessionsRequest.
 
         使用镜像会话优先级过滤
 
@@ -328,7 +328,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ListTrafficMirrorSessionsRequest.
+        r"""Sets the priority of this ListTrafficMirrorSessionsRequest.
 
         使用镜像会话优先级过滤
 
@@ -339,7 +339,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListTrafficMirrorSessionsRequest.
+        r"""Gets the enabled of this ListTrafficMirrorSessionsRequest.
 
         使用enabled过滤
 
@@ -350,7 +350,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListTrafficMirrorSessionsRequest.
+        r"""Sets the enabled of this ListTrafficMirrorSessionsRequest.
 
         使用enabled过滤
 
@@ -361,7 +361,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListTrafficMirrorSessionsRequest.
+        r"""Gets the type of this ListTrafficMirrorSessionsRequest.
 
         使用镜像源类型过滤
 
@@ -372,7 +372,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListTrafficMirrorSessionsRequest.
+        r"""Sets the type of this ListTrafficMirrorSessionsRequest.
 
         使用镜像源类型过滤
 
@@ -383,7 +383,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListTrafficMirrorSessionsRequest.
+        r"""Gets the created_at of this ListTrafficMirrorSessionsRequest.
 
         使用创建时间戳排序
 
@@ -394,7 +394,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListTrafficMirrorSessionsRequest.
+        r"""Sets the created_at of this ListTrafficMirrorSessionsRequest.
 
         使用创建时间戳排序
 
@@ -405,7 +405,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListTrafficMirrorSessionsRequest.
+        r"""Gets the updated_at of this ListTrafficMirrorSessionsRequest.
 
         使用更新时间戳排序
 
@@ -416,7 +416,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListTrafficMirrorSessionsRequest.
+        r"""Sets the updated_at of this ListTrafficMirrorSessionsRequest.
 
         使用更新时间戳排序
 
@@ -427,7 +427,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTrafficMirrorSessionsRequest.
+        r"""Gets the limit of this ListTrafficMirrorSessionsRequest.
 
         功能说明：每页返回的个数 取值范围：0-2000
 
@@ -438,7 +438,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTrafficMirrorSessionsRequest.
+        r"""Sets the limit of this ListTrafficMirrorSessionsRequest.
 
         功能说明：每页返回的个数 取值范围：0-2000
 
@@ -449,7 +449,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListTrafficMirrorSessionsRequest.
+        r"""Gets the marker of this ListTrafficMirrorSessionsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -460,7 +460,7 @@ class ListTrafficMirrorSessionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListTrafficMirrorSessionsRequest.
+        r"""Sets the marker of this ListTrafficMirrorSessionsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 

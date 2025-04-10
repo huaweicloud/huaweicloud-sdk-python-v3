@@ -25,7 +25,7 @@ class LockPortRequest:
     }
 
     def __init__(self, body=None):
-        """LockPortRequest
+        r"""LockPortRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class LockPortRequest:
 
     @property
     def body(self):
-        """Gets the body of this LockPortRequest.
+        r"""Gets the body of this LockPortRequest.
 
         :return: The body of this LockPortRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.LockPortRequestBody`
@@ -52,7 +52,7 @@ class LockPortRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this LockPortRequest.
+        r"""Sets the body of this LockPortRequest.
 
         :param body: The body of this LockPortRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.LockPortRequestBody`

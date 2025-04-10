@@ -29,7 +29,7 @@ class AttributeChange:
     }
 
     def __init__(self, new_value=None, old_value=None, attribute_type=None):
-        """AttributeChange
+        r"""AttributeChange
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AttributeChange:
 
     @property
     def new_value(self):
-        """Gets the new_value of this AttributeChange.
+        r"""Gets the new_value of this AttributeChange.
 
         变更后的取值
 
@@ -68,7 +68,7 @@ class AttributeChange:
 
     @new_value.setter
     def new_value(self, new_value):
-        """Sets the new_value of this AttributeChange.
+        r"""Sets the new_value of this AttributeChange.
 
         变更后的取值
 
@@ -79,7 +79,7 @@ class AttributeChange:
 
     @property
     def old_value(self):
-        """Gets the old_value of this AttributeChange.
+        r"""Gets the old_value of this AttributeChange.
 
         变更前的取值
 
@@ -90,7 +90,7 @@ class AttributeChange:
 
     @old_value.setter
     def old_value(self, old_value):
-        """Sets the old_value of this AttributeChange.
+        r"""Sets the old_value of this AttributeChange.
 
         变更前的取值
 
@@ -101,7 +101,7 @@ class AttributeChange:
 
     @property
     def attribute_type(self):
-        """Gets the attribute_type of this AttributeChange.
+        r"""Gets the attribute_type of this AttributeChange.
 
         发生变更的测试计划属性
 
@@ -112,7 +112,7 @@ class AttributeChange:
 
     @attribute_type.setter
     def attribute_type(self, attribute_type):
-        """Sets the attribute_type of this AttributeChange.
+        r"""Sets the attribute_type of this AttributeChange.
 
         发生变更的测试计划属性
 

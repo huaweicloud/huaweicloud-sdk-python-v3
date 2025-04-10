@@ -28,7 +28,7 @@ class DeleteCentralNetworkAttachmentResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, central_network_attachment=None):
-        """DeleteCentralNetworkAttachmentResponse
+        r"""DeleteCentralNetworkAttachmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteCentralNetworkAttachmentResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DeleteCentralNetworkAttachmentResponse.
+        r"""Gets the request_id of this DeleteCentralNetworkAttachmentResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class DeleteCentralNetworkAttachmentResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DeleteCentralNetworkAttachmentResponse.
+        r"""Sets the request_id of this DeleteCentralNetworkAttachmentResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class DeleteCentralNetworkAttachmentResponse(SdkResponse):
 
     @property
     def central_network_attachment(self):
-        """Gets the central_network_attachment of this DeleteCentralNetworkAttachmentResponse.
+        r"""Gets the central_network_attachment of this DeleteCentralNetworkAttachmentResponse.
 
         :return: The central_network_attachment of this DeleteCentralNetworkAttachmentResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkAttachment`
@@ -80,7 +80,7 @@ class DeleteCentralNetworkAttachmentResponse(SdkResponse):
 
     @central_network_attachment.setter
     def central_network_attachment(self, central_network_attachment):
-        """Sets the central_network_attachment of this DeleteCentralNetworkAttachmentResponse.
+        r"""Sets the central_network_attachment of this DeleteCentralNetworkAttachmentResponse.
 
         :param central_network_attachment: The central_network_attachment of this DeleteCentralNetworkAttachmentResponse.
         :type central_network_attachment: :class:`huaweicloudsdkcc.v3.CentralNetworkAttachment`

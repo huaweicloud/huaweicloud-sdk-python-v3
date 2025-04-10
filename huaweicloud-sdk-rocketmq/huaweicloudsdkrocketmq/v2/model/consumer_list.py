@@ -27,7 +27,7 @@ class ConsumerList:
     }
 
     def __init__(self, topics=None, total=None):
-        """ConsumerList
+        r"""ConsumerList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ConsumerList:
 
     @property
     def topics(self):
-        """Gets the topics of this ConsumerList.
+        r"""Gets the topics of this ConsumerList.
 
         Topic列表（当查询Topic消费“列表”时才显示此参数）。
 
@@ -61,7 +61,7 @@ class ConsumerList:
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this ConsumerList.
+        r"""Sets the topics of this ConsumerList.
 
         Topic列表（当查询Topic消费“列表”时才显示此参数）。
 
@@ -72,7 +72,7 @@ class ConsumerList:
 
     @property
     def total(self):
-        """Gets the total of this ConsumerList.
+        r"""Gets the total of this ConsumerList.
 
         Topic总数（当查询Topic消费“列表”时才显示此参数）。
 
@@ -83,7 +83,7 @@ class ConsumerList:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ConsumerList.
+        r"""Sets the total of this ConsumerList.
 
         Topic总数（当查询Topic消费“列表”时才显示此参数）。
 

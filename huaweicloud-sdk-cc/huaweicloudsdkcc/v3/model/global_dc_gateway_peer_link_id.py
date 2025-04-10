@@ -25,7 +25,7 @@ class GlobalDcGatewayPeerLinkId:
     }
 
     def __init__(self, global_dc_gateway_peer_link_id=None):
-        """GlobalDcGatewayPeerLinkId
+        r"""GlobalDcGatewayPeerLinkId
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GlobalDcGatewayPeerLinkId:
 
     @property
     def global_dc_gateway_peer_link_id(self):
-        """Gets the global_dc_gateway_peer_link_id of this GlobalDcGatewayPeerLinkId.
+        r"""Gets the global_dc_gateway_peer_link_id of this GlobalDcGatewayPeerLinkId.
 
         GDGW的连接ID。
 
@@ -54,7 +54,7 @@ class GlobalDcGatewayPeerLinkId:
 
     @global_dc_gateway_peer_link_id.setter
     def global_dc_gateway_peer_link_id(self, global_dc_gateway_peer_link_id):
-        """Sets the global_dc_gateway_peer_link_id of this GlobalDcGatewayPeerLinkId.
+        r"""Sets the global_dc_gateway_peer_link_id of this GlobalDcGatewayPeerLinkId.
 
         GDGW的连接ID。
 

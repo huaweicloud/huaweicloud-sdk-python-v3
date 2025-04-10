@@ -29,7 +29,7 @@ class DeleteTagRequest:
     }
 
     def __init__(self, resource_id=None, tag_key=None, resource_type=None):
-        """DeleteTagRequest
+        r"""DeleteTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteTagRequest.
+        r"""Gets the resource_id of this DeleteTagRequest.
 
         资源ID
 
@@ -65,7 +65,7 @@ class DeleteTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteTagRequest.
+        r"""Sets the resource_id of this DeleteTagRequest.
 
         资源ID
 
@@ -76,7 +76,7 @@ class DeleteTagRequest:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this DeleteTagRequest.
+        r"""Gets the tag_key of this DeleteTagRequest.
 
         待删除资源标签的key
 
@@ -87,7 +87,7 @@ class DeleteTagRequest:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this DeleteTagRequest.
+        r"""Sets the tag_key of this DeleteTagRequest.
 
         待删除资源标签的key
 
@@ -98,7 +98,7 @@ class DeleteTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this DeleteTagRequest.
+        r"""Gets the resource_type of this DeleteTagRequest.
 
         资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 
@@ -109,7 +109,7 @@ class DeleteTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this DeleteTagRequest.
+        r"""Sets the resource_type of this DeleteTagRequest.
 
         资源类型: - cloud-connection: 云连接 - bandwidth-package: 带宽包
 

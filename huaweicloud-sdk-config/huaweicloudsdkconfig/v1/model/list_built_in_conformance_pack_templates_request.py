@@ -31,7 +31,7 @@ class ListBuiltInConformancePackTemplatesRequest:
     }
 
     def __init__(self, limit=None, marker=None, template_key=None, x_language=None):
-        """ListBuiltInConformancePackTemplatesRequest
+        r"""ListBuiltInConformancePackTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListBuiltInConformancePackTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBuiltInConformancePackTemplatesRequest.
+        r"""Gets the limit of this ListBuiltInConformancePackTemplatesRequest.
 
         最大的返回数量
 
@@ -75,7 +75,7 @@ class ListBuiltInConformancePackTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBuiltInConformancePackTemplatesRequest.
+        r"""Sets the limit of this ListBuiltInConformancePackTemplatesRequest.
 
         最大的返回数量
 
@@ -86,7 +86,7 @@ class ListBuiltInConformancePackTemplatesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListBuiltInConformancePackTemplatesRequest.
+        r"""Gets the marker of this ListBuiltInConformancePackTemplatesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -97,7 +97,7 @@ class ListBuiltInConformancePackTemplatesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListBuiltInConformancePackTemplatesRequest.
+        r"""Sets the marker of this ListBuiltInConformancePackTemplatesRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -108,7 +108,7 @@ class ListBuiltInConformancePackTemplatesRequest:
 
     @property
     def template_key(self):
-        """Gets the template_key of this ListBuiltInConformancePackTemplatesRequest.
+        r"""Gets the template_key of this ListBuiltInConformancePackTemplatesRequest.
 
         预定义合规包模板名称。
 
@@ -119,7 +119,7 @@ class ListBuiltInConformancePackTemplatesRequest:
 
     @template_key.setter
     def template_key(self, template_key):
-        """Sets the template_key of this ListBuiltInConformancePackTemplatesRequest.
+        r"""Sets the template_key of this ListBuiltInConformancePackTemplatesRequest.
 
         预定义合规包模板名称。
 
@@ -130,7 +130,7 @@ class ListBuiltInConformancePackTemplatesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListBuiltInConformancePackTemplatesRequest.
+        r"""Gets the x_language of this ListBuiltInConformancePackTemplatesRequest.
 
         选择接口返回的信息的语言，默认为\"zh-cn\"中文
 
@@ -141,7 +141,7 @@ class ListBuiltInConformancePackTemplatesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListBuiltInConformancePackTemplatesRequest.
+        r"""Sets the x_language of this ListBuiltInConformancePackTemplatesRequest.
 
         选择接口返回的信息的语言，默认为\"zh-cn\"中文
 

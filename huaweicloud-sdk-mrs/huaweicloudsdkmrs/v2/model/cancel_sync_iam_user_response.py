@@ -26,7 +26,7 @@ class CancelSyncIamUserResponse(SdkResponse):
     }
 
     def __init__(self, state=None):
-        """CancelSyncIamUserResponse
+        r"""CancelSyncIamUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CancelSyncIamUserResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this CancelSyncIamUserResponse.
+        r"""Gets the state of this CancelSyncIamUserResponse.
 
         请求下发的结果
 
@@ -55,7 +55,7 @@ class CancelSyncIamUserResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CancelSyncIamUserResponse.
+        r"""Sets the state of this CancelSyncIamUserResponse.
 
         请求下发的结果
 

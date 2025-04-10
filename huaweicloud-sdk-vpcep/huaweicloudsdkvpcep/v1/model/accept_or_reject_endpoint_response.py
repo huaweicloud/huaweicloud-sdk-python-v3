@@ -26,7 +26,7 @@ class AcceptOrRejectEndpointResponse(SdkResponse):
     }
 
     def __init__(self, connections=None):
-        """AcceptOrRejectEndpointResponse
+        r"""AcceptOrRejectEndpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AcceptOrRejectEndpointResponse(SdkResponse):
 
     @property
     def connections(self):
-        """Gets the connections of this AcceptOrRejectEndpointResponse.
+        r"""Gets the connections of this AcceptOrRejectEndpointResponse.
 
         连接列表
 
@@ -55,7 +55,7 @@ class AcceptOrRejectEndpointResponse(SdkResponse):
 
     @connections.setter
     def connections(self, connections):
-        """Sets the connections of this AcceptOrRejectEndpointResponse.
+        r"""Sets the connections of this AcceptOrRejectEndpointResponse.
 
         连接列表
 

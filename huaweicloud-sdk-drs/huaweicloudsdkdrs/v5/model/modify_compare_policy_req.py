@@ -37,7 +37,7 @@ class ModifyComparePolicyReq:
     }
 
     def __init__(self, action=None, period=None, begin_time=None, end_time=None, compare_type=None, compare_policy=None, interval_hour=None):
-        """ModifyComparePolicyReq
+        r"""ModifyComparePolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ModifyComparePolicyReq:
 
     @property
     def action(self):
-        """Gets the action of this ModifyComparePolicyReq.
+        r"""Gets the action of this ModifyComparePolicyReq.
 
         对比策略开关-open|close。
 
@@ -95,7 +95,7 @@ class ModifyComparePolicyReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ModifyComparePolicyReq.
+        r"""Sets the action of this ModifyComparePolicyReq.
 
         对比策略开关-open|close。
 
@@ -106,7 +106,7 @@ class ModifyComparePolicyReq:
 
     @property
     def period(self):
-        """Gets the period of this ModifyComparePolicyReq.
+        r"""Gets the period of this ModifyComparePolicyReq.
 
         对比策略周期。 - 每周对比：格式示例：“* * 1,3,5” ，其中“1,3,5”对应星期一、星期三、星期五，根据实际填写。 - 每天对比：固定填写“* * 1,2,3,4,5,6,7”。 - 按小时对比：固定填写“* * 1,2,3,4,5,6,7”。
 
@@ -117,7 +117,7 @@ class ModifyComparePolicyReq:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ModifyComparePolicyReq.
+        r"""Sets the period of this ModifyComparePolicyReq.
 
         对比策略周期。 - 每周对比：格式示例：“* * 1,3,5” ，其中“1,3,5”对应星期一、星期三、星期五，根据实际填写。 - 每天对比：固定填写“* * 1,2,3,4,5,6,7”。 - 按小时对比：固定填写“* * 1,2,3,4,5,6,7”。
 
@@ -128,7 +128,7 @@ class ModifyComparePolicyReq:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ModifyComparePolicyReq.
+        r"""Gets the begin_time of this ModifyComparePolicyReq.
 
         对比策略生效开始时间，UTC时间，24小时制，时间格式HH:mm:ss，例如：00:00:00，表示UTC时间的00:00:00，北京时间（UTC+08:00）的08:00:00。
 
@@ -139,7 +139,7 @@ class ModifyComparePolicyReq:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ModifyComparePolicyReq.
+        r"""Sets the begin_time of this ModifyComparePolicyReq.
 
         对比策略生效开始时间，UTC时间，24小时制，时间格式HH:mm:ss，例如：00:00:00，表示UTC时间的00:00:00，北京时间（UTC+08:00）的08:00:00。
 
@@ -150,7 +150,7 @@ class ModifyComparePolicyReq:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ModifyComparePolicyReq.
+        r"""Gets the end_time of this ModifyComparePolicyReq.
 
         对比策略生效结束时间，UTC时间，24小时制，时间格式HH:mm:ss，例如：04:00:00，表示UTC时间的04:00:00，北京时间（UTC+08:00）的12:00:00。
 
@@ -161,7 +161,7 @@ class ModifyComparePolicyReq:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ModifyComparePolicyReq.
+        r"""Sets the end_time of this ModifyComparePolicyReq.
 
         对比策略生效结束时间，UTC时间，24小时制，时间格式HH:mm:ss，例如：04:00:00，表示UTC时间的04:00:00，北京时间（UTC+08:00）的12:00:00。
 
@@ -172,7 +172,7 @@ class ModifyComparePolicyReq:
 
     @property
     def compare_type(self):
-        """Gets the compare_type of this ModifyComparePolicyReq.
+        r"""Gets the compare_type of this ModifyComparePolicyReq.
 
         对比类型列表： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。
 
@@ -183,7 +183,7 @@ class ModifyComparePolicyReq:
 
     @compare_type.setter
     def compare_type(self, compare_type):
-        """Sets the compare_type of this ModifyComparePolicyReq.
+        r"""Sets the compare_type of this ModifyComparePolicyReq.
 
         对比类型列表： - object_comparison：对象对比。 - lines：行对比。 - account：用户对比。
 
@@ -194,7 +194,7 @@ class ModifyComparePolicyReq:
 
     @property
     def compare_policy(self):
-        """Gets the compare_policy of this ModifyComparePolicyReq.
+        r"""Gets the compare_policy of this ModifyComparePolicyReq.
 
         对比策略： - normal：普通对比。 - manyToOne：多对一对比。
 
@@ -205,7 +205,7 @@ class ModifyComparePolicyReq:
 
     @compare_policy.setter
     def compare_policy(self, compare_policy):
-        """Sets the compare_policy of this ModifyComparePolicyReq.
+        r"""Sets the compare_policy of this ModifyComparePolicyReq.
 
         对比策略： - normal：普通对比。 - manyToOne：多对一对比。
 
@@ -216,7 +216,7 @@ class ModifyComparePolicyReq:
 
     @property
     def interval_hour(self):
-        """Gets the interval_hour of this ModifyComparePolicyReq.
+        r"""Gets the interval_hour of this ModifyComparePolicyReq.
 
         间隔时间，按小时对比时填写，表示每隔多久执行一次对比，单位是小时。
 
@@ -227,7 +227,7 @@ class ModifyComparePolicyReq:
 
     @interval_hour.setter
     def interval_hour(self, interval_hour):
-        """Sets the interval_hour of this ModifyComparePolicyReq.
+        r"""Sets the interval_hour of this ModifyComparePolicyReq.
 
         间隔时间，按小时对比时填写，表示每隔多久执行一次对比，单位是小时。
 

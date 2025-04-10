@@ -29,7 +29,7 @@ class CheckClickHouseDataBaseConfigRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """CheckClickHouseDataBaseConfigRequest
+        r"""CheckClickHouseDataBaseConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CheckClickHouseDataBaseConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CheckClickHouseDataBaseConfigRequest.
+        r"""Gets the instance_id of this CheckClickHouseDataBaseConfigRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -67,7 +67,7 @@ class CheckClickHouseDataBaseConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CheckClickHouseDataBaseConfigRequest.
+        r"""Sets the instance_id of this CheckClickHouseDataBaseConfigRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -78,7 +78,7 @@ class CheckClickHouseDataBaseConfigRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CheckClickHouseDataBaseConfigRequest.
+        r"""Gets the x_language of this CheckClickHouseDataBaseConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -89,7 +89,7 @@ class CheckClickHouseDataBaseConfigRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CheckClickHouseDataBaseConfigRequest.
+        r"""Sets the x_language of this CheckClickHouseDataBaseConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -100,7 +100,7 @@ class CheckClickHouseDataBaseConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckClickHouseDataBaseConfigRequest.
+        r"""Gets the body of this CheckClickHouseDataBaseConfigRequest.
 
         :return: The body of this CheckClickHouseDataBaseConfigRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CheckChDatabaseConfigRequestBody`
@@ -109,7 +109,7 @@ class CheckClickHouseDataBaseConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckClickHouseDataBaseConfigRequest.
+        r"""Sets the body of this CheckClickHouseDataBaseConfigRequest.
 
         :param body: The body of this CheckClickHouseDataBaseConfigRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.CheckChDatabaseConfigRequestBody`

@@ -24,7 +24,7 @@ class UpdateDesktopUsernameResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateDesktopUsernameResponse
+        r"""UpdateDesktopUsernameResponse
 
         The model defined in huaweicloud sdk
 

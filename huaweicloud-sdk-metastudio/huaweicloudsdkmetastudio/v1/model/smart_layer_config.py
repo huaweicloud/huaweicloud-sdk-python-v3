@@ -37,7 +37,7 @@ class SmartLayerConfig:
     }
 
     def __init__(self, layer_type=None, asset_id=None, position=None, size=None, image_config=None, video_config=None, text_config=None):
-        """SmartLayerConfig
+        r"""SmartLayerConfig
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class SmartLayerConfig:
 
     @property
     def layer_type(self):
-        """Gets the layer_type of this SmartLayerConfig.
+        r"""Gets the layer_type of this SmartLayerConfig.
 
         图层类型。 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层 - TEXT: 文本图层
 
@@ -95,7 +95,7 @@ class SmartLayerConfig:
 
     @layer_type.setter
     def layer_type(self, layer_type):
-        """Sets the layer_type of this SmartLayerConfig.
+        r"""Sets the layer_type of this SmartLayerConfig.
 
         图层类型。 - IMAGE： 素材图片图层 - VIDEO： 素材视频图层 - TEXT: 文本图层
 
@@ -106,7 +106,7 @@ class SmartLayerConfig:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this SmartLayerConfig.
+        r"""Gets the asset_id of this SmartLayerConfig.
 
         图层所需资产的资产id，外部资产信息无需填写
 
@@ -117,7 +117,7 @@ class SmartLayerConfig:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this SmartLayerConfig.
+        r"""Sets the asset_id of this SmartLayerConfig.
 
         图层所需资产的资产id，外部资产信息无需填写
 
@@ -128,7 +128,7 @@ class SmartLayerConfig:
 
     @property
     def position(self):
-        """Gets the position of this SmartLayerConfig.
+        r"""Gets the position of this SmartLayerConfig.
 
         :return: The position of this SmartLayerConfig.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LayerPositionConfig`
@@ -137,7 +137,7 @@ class SmartLayerConfig:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this SmartLayerConfig.
+        r"""Sets the position of this SmartLayerConfig.
 
         :param position: The position of this SmartLayerConfig.
         :type position: :class:`huaweicloudsdkmetastudio.v1.LayerPositionConfig`
@@ -146,7 +146,7 @@ class SmartLayerConfig:
 
     @property
     def size(self):
-        """Gets the size of this SmartLayerConfig.
+        r"""Gets the size of this SmartLayerConfig.
 
         :return: The size of this SmartLayerConfig.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LayerSizeConfig`
@@ -155,7 +155,7 @@ class SmartLayerConfig:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this SmartLayerConfig.
+        r"""Sets the size of this SmartLayerConfig.
 
         :param size: The size of this SmartLayerConfig.
         :type size: :class:`huaweicloudsdkmetastudio.v1.LayerSizeConfig`
@@ -164,7 +164,7 @@ class SmartLayerConfig:
 
     @property
     def image_config(self):
-        """Gets the image_config of this SmartLayerConfig.
+        r"""Gets the image_config of this SmartLayerConfig.
 
         :return: The image_config of this SmartLayerConfig.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SmartImageLayerConfig`
@@ -173,7 +173,7 @@ class SmartLayerConfig:
 
     @image_config.setter
     def image_config(self, image_config):
-        """Sets the image_config of this SmartLayerConfig.
+        r"""Sets the image_config of this SmartLayerConfig.
 
         :param image_config: The image_config of this SmartLayerConfig.
         :type image_config: :class:`huaweicloudsdkmetastudio.v1.SmartImageLayerConfig`
@@ -182,7 +182,7 @@ class SmartLayerConfig:
 
     @property
     def video_config(self):
-        """Gets the video_config of this SmartLayerConfig.
+        r"""Gets the video_config of this SmartLayerConfig.
 
         :return: The video_config of this SmartLayerConfig.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SmartVideoLayerConfig`
@@ -191,7 +191,7 @@ class SmartLayerConfig:
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this SmartLayerConfig.
+        r"""Sets the video_config of this SmartLayerConfig.
 
         :param video_config: The video_config of this SmartLayerConfig.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.SmartVideoLayerConfig`
@@ -200,7 +200,7 @@ class SmartLayerConfig:
 
     @property
     def text_config(self):
-        """Gets the text_config of this SmartLayerConfig.
+        r"""Gets the text_config of this SmartLayerConfig.
 
         :return: The text_config of this SmartLayerConfig.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SmartTextLayerConfig`
@@ -209,7 +209,7 @@ class SmartLayerConfig:
 
     @text_config.setter
     def text_config(self, text_config):
-        """Sets the text_config of this SmartLayerConfig.
+        r"""Sets the text_config of this SmartLayerConfig.
 
         :param text_config: The text_config of this SmartLayerConfig.
         :type text_config: :class:`huaweicloudsdkmetastudio.v1.SmartTextLayerConfig`

@@ -24,7 +24,7 @@ class SetProfileImageResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetProfileImageResponse
+        r"""SetProfileImageResponse
 
         The model defined in huaweicloud sdk
 

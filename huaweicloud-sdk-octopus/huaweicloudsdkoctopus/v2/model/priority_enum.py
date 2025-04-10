@@ -30,7 +30,7 @@ class PriorityEnum:
     }
 
     def __init__(self):
-        """PriorityEnum
+        r"""PriorityEnum
 
         The model defined in huaweicloud sdk
 

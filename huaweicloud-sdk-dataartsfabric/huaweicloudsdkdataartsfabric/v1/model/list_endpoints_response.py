@@ -30,7 +30,7 @@ class ListEndpointsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, endpoints=None, x_request_id=None):
-        """ListEndpointsResponse
+        r"""ListEndpointsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListEndpointsResponse.
+        r"""Gets the total of this ListEndpointsResponse.
 
         符合条件的endpoint总数
 
@@ -69,7 +69,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListEndpointsResponse.
+        r"""Sets the total of this ListEndpointsResponse.
 
         符合条件的endpoint总数
 
@@ -80,7 +80,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this ListEndpointsResponse.
+        r"""Gets the endpoints of this ListEndpointsResponse.
 
         符合条件的Endpoint简要信息列表
 
@@ -91,7 +91,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this ListEndpointsResponse.
+        r"""Sets the endpoints of this ListEndpointsResponse.
 
         符合条件的Endpoint简要信息列表
 
@@ -102,7 +102,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListEndpointsResponse.
+        r"""Gets the x_request_id of this ListEndpointsResponse.
 
         :return: The x_request_id of this ListEndpointsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListEndpointsResponse.
+        r"""Sets the x_request_id of this ListEndpointsResponse.
 
         :param x_request_id: The x_request_id of this ListEndpointsResponse.
         :type x_request_id: str

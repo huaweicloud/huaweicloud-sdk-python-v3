@@ -32,7 +32,7 @@ class ListPlanExecLogsResponse(SdkResponse):
     }
 
     def __init__(self, workload_res_code=None, workload_res_str=None, plan_logs=None, count=None):
-        """ListPlanExecLogsResponse
+        r"""ListPlanExecLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListPlanExecLogsResponse(SdkResponse):
 
     @property
     def workload_res_code(self):
-        """Gets the workload_res_code of this ListPlanExecLogsResponse.
+        r"""Gets the workload_res_code of this ListPlanExecLogsResponse.
 
         结果状态码。
 
@@ -76,7 +76,7 @@ class ListPlanExecLogsResponse(SdkResponse):
 
     @workload_res_code.setter
     def workload_res_code(self, workload_res_code):
-        """Sets the workload_res_code of this ListPlanExecLogsResponse.
+        r"""Sets the workload_res_code of this ListPlanExecLogsResponse.
 
         结果状态码。
 
@@ -87,7 +87,7 @@ class ListPlanExecLogsResponse(SdkResponse):
 
     @property
     def workload_res_str(self):
-        """Gets the workload_res_str of this ListPlanExecLogsResponse.
+        r"""Gets the workload_res_str of this ListPlanExecLogsResponse.
 
         结果描述。
 
@@ -98,7 +98,7 @@ class ListPlanExecLogsResponse(SdkResponse):
 
     @workload_res_str.setter
     def workload_res_str(self, workload_res_str):
-        """Sets the workload_res_str of this ListPlanExecLogsResponse.
+        r"""Sets the workload_res_str of this ListPlanExecLogsResponse.
 
         结果描述。
 
@@ -109,7 +109,7 @@ class ListPlanExecLogsResponse(SdkResponse):
 
     @property
     def plan_logs(self):
-        """Gets the plan_logs of this ListPlanExecLogsResponse.
+        r"""Gets the plan_logs of this ListPlanExecLogsResponse.
 
         资源池名称。
 
@@ -120,7 +120,7 @@ class ListPlanExecLogsResponse(SdkResponse):
 
     @plan_logs.setter
     def plan_logs(self, plan_logs):
-        """Sets the plan_logs of this ListPlanExecLogsResponse.
+        r"""Sets the plan_logs of this ListPlanExecLogsResponse.
 
         资源池名称。
 
@@ -131,7 +131,7 @@ class ListPlanExecLogsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListPlanExecLogsResponse.
+        r"""Gets the count of this ListPlanExecLogsResponse.
 
         总数量
 
@@ -142,7 +142,7 @@ class ListPlanExecLogsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListPlanExecLogsResponse.
+        r"""Sets the count of this ListPlanExecLogsResponse.
 
         总数量
 

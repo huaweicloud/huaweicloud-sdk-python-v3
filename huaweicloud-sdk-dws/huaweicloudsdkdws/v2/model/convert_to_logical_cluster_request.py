@@ -27,7 +27,7 @@ class ConvertToLogicalClusterRequest:
     }
 
     def __init__(self, cluster_id=None, name=None):
-        """ConvertToLogicalClusterRequest
+        r"""ConvertToLogicalClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ConvertToLogicalClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ConvertToLogicalClusterRequest.
+        r"""Gets the cluster_id of this ConvertToLogicalClusterRequest.
 
         集群ID
 
@@ -59,7 +59,7 @@ class ConvertToLogicalClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ConvertToLogicalClusterRequest.
+        r"""Sets the cluster_id of this ConvertToLogicalClusterRequest.
 
         集群ID
 
@@ -70,7 +70,7 @@ class ConvertToLogicalClusterRequest:
 
     @property
     def name(self):
-        """Gets the name of this ConvertToLogicalClusterRequest.
+        r"""Gets the name of this ConvertToLogicalClusterRequest.
 
         逻辑集群名称
 
@@ -81,7 +81,7 @@ class ConvertToLogicalClusterRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConvertToLogicalClusterRequest.
+        r"""Sets the name of this ConvertToLogicalClusterRequest.
 
         逻辑集群名称
 

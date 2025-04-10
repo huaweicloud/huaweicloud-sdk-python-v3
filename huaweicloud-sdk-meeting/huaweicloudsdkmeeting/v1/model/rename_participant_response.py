@@ -24,7 +24,7 @@ class RenameParticipantResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RenameParticipantResponse
+        r"""RenameParticipantResponse
 
         The model defined in huaweicloud sdk
 

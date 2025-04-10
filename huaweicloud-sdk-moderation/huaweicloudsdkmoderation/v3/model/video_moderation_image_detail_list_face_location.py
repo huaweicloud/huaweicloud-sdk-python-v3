@@ -31,7 +31,7 @@ class VideoModerationImageDetailListFaceLocation:
     }
 
     def __init__(self, top_left_x=None, top_left_y=None, bottom_right_x=None, bottom_right_y=None):
-        """VideoModerationImageDetailListFaceLocation
+        r"""VideoModerationImageDetailListFaceLocation
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class VideoModerationImageDetailListFaceLocation:
 
     @property
     def top_left_x(self):
-        """Gets the top_left_x of this VideoModerationImageDetailListFaceLocation.
+        r"""Gets the top_left_x of this VideoModerationImageDetailListFaceLocation.
 
         检测出人脸的左上角横坐标。
 
@@ -75,7 +75,7 @@ class VideoModerationImageDetailListFaceLocation:
 
     @top_left_x.setter
     def top_left_x(self, top_left_x):
-        """Sets the top_left_x of this VideoModerationImageDetailListFaceLocation.
+        r"""Sets the top_left_x of this VideoModerationImageDetailListFaceLocation.
 
         检测出人脸的左上角横坐标。
 
@@ -86,7 +86,7 @@ class VideoModerationImageDetailListFaceLocation:
 
     @property
     def top_left_y(self):
-        """Gets the top_left_y of this VideoModerationImageDetailListFaceLocation.
+        r"""Gets the top_left_y of this VideoModerationImageDetailListFaceLocation.
 
         检测出人脸的左上角纵坐标。
 
@@ -97,7 +97,7 @@ class VideoModerationImageDetailListFaceLocation:
 
     @top_left_y.setter
     def top_left_y(self, top_left_y):
-        """Sets the top_left_y of this VideoModerationImageDetailListFaceLocation.
+        r"""Sets the top_left_y of this VideoModerationImageDetailListFaceLocation.
 
         检测出人脸的左上角纵坐标。
 
@@ -108,7 +108,7 @@ class VideoModerationImageDetailListFaceLocation:
 
     @property
     def bottom_right_x(self):
-        """Gets the bottom_right_x of this VideoModerationImageDetailListFaceLocation.
+        r"""Gets the bottom_right_x of this VideoModerationImageDetailListFaceLocation.
 
         检测出人脸的右下角横坐标。
 
@@ -119,7 +119,7 @@ class VideoModerationImageDetailListFaceLocation:
 
     @bottom_right_x.setter
     def bottom_right_x(self, bottom_right_x):
-        """Sets the bottom_right_x of this VideoModerationImageDetailListFaceLocation.
+        r"""Sets the bottom_right_x of this VideoModerationImageDetailListFaceLocation.
 
         检测出人脸的右下角横坐标。
 
@@ -130,7 +130,7 @@ class VideoModerationImageDetailListFaceLocation:
 
     @property
     def bottom_right_y(self):
-        """Gets the bottom_right_y of this VideoModerationImageDetailListFaceLocation.
+        r"""Gets the bottom_right_y of this VideoModerationImageDetailListFaceLocation.
 
         检测出人脸的右下角纵坐标。
 
@@ -141,7 +141,7 @@ class VideoModerationImageDetailListFaceLocation:
 
     @bottom_right_y.setter
     def bottom_right_y(self, bottom_right_y):
-        """Sets the bottom_right_y of this VideoModerationImageDetailListFaceLocation.
+        r"""Sets the bottom_right_y of this VideoModerationImageDetailListFaceLocation.
 
         检测出人脸的右下角纵坐标。
 

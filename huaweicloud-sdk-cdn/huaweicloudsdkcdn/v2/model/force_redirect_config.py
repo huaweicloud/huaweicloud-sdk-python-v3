@@ -29,7 +29,7 @@ class ForceRedirectConfig:
     }
 
     def __init__(self, status=None, type=None, redirect_code=None):
-        """ForceRedirectConfig
+        r"""ForceRedirectConfig
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ForceRedirectConfig:
 
     @property
     def status(self):
-        """Gets the status of this ForceRedirectConfig.
+        r"""Gets the status of this ForceRedirectConfig.
 
         强制跳转开关（on：打开，off：关闭）。
 
@@ -67,7 +67,7 @@ class ForceRedirectConfig:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ForceRedirectConfig.
+        r"""Sets the status of this ForceRedirectConfig.
 
         强制跳转开关（on：打开，off：关闭）。
 
@@ -78,7 +78,7 @@ class ForceRedirectConfig:
 
     @property
     def type(self):
-        """Gets the type of this ForceRedirectConfig.
+        r"""Gets the type of this ForceRedirectConfig.
 
         强制跳转类型（http：强制跳转HTTP，https：强制跳转HTTPS）。
 
@@ -89,7 +89,7 @@ class ForceRedirectConfig:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ForceRedirectConfig.
+        r"""Sets the type of this ForceRedirectConfig.
 
         强制跳转类型（http：强制跳转HTTP，https：强制跳转HTTPS）。
 
@@ -100,7 +100,7 @@ class ForceRedirectConfig:
 
     @property
     def redirect_code(self):
-        """Gets the redirect_code of this ForceRedirectConfig.
+        r"""Gets the redirect_code of this ForceRedirectConfig.
 
         重定向跳转码301,302。
 
@@ -111,7 +111,7 @@ class ForceRedirectConfig:
 
     @redirect_code.setter
     def redirect_code(self, redirect_code):
-        """Sets the redirect_code of this ForceRedirectConfig.
+        r"""Sets the redirect_code of this ForceRedirectConfig.
 
         重定向跳转码301,302。
 

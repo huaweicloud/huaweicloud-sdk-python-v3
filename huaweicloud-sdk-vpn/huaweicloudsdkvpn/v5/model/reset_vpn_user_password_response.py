@@ -28,7 +28,7 @@ class ResetVpnUserPasswordResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, header_response_token=None):
-        """ResetVpnUserPasswordResponse
+        r"""ResetVpnUserPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ResetVpnUserPasswordResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ResetVpnUserPasswordResponse.
+        r"""Gets the request_id of this ResetVpnUserPasswordResponse.
 
         请求ID
 
@@ -62,7 +62,7 @@ class ResetVpnUserPasswordResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ResetVpnUserPasswordResponse.
+        r"""Sets the request_id of this ResetVpnUserPasswordResponse.
 
         请求ID
 
@@ -73,7 +73,7 @@ class ResetVpnUserPasswordResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this ResetVpnUserPasswordResponse.
+        r"""Gets the header_response_token of this ResetVpnUserPasswordResponse.
 
         :return: The header_response_token of this ResetVpnUserPasswordResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ResetVpnUserPasswordResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this ResetVpnUserPasswordResponse.
+        r"""Sets the header_response_token of this ResetVpnUserPasswordResponse.
 
         :param header_response_token: The header_response_token of this ResetVpnUserPasswordResponse.
         :type header_response_token: str

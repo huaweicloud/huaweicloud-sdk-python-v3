@@ -29,7 +29,7 @@ class ShowBackupPolicyResult:
     }
 
     def __init__(self, keep_days=None, start_time=None, period=None):
-        """ShowBackupPolicyResult
+        r"""ShowBackupPolicyResult
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowBackupPolicyResult:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this ShowBackupPolicyResult.
+        r"""Gets the keep_days of this ShowBackupPolicyResult.
 
         备份文件可以保存的天数。
 
@@ -67,7 +67,7 @@ class ShowBackupPolicyResult:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this ShowBackupPolicyResult.
+        r"""Sets the keep_days of this ShowBackupPolicyResult.
 
         备份文件可以保存的天数。
 
@@ -78,7 +78,7 @@ class ShowBackupPolicyResult:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowBackupPolicyResult.
+        r"""Gets the start_time of this ShowBackupPolicyResult.
 
         备份时间段。自动备份将在该时间段内触发。
 
@@ -89,7 +89,7 @@ class ShowBackupPolicyResult:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowBackupPolicyResult.
+        r"""Sets the start_time of this ShowBackupPolicyResult.
 
         备份时间段。自动备份将在该时间段内触发。
 
@@ -100,7 +100,7 @@ class ShowBackupPolicyResult:
 
     @property
     def period(self):
-        """Gets the period of this ShowBackupPolicyResult.
+        r"""Gets the period of this ShowBackupPolicyResult.
 
         备份周期配置。自动备份将在每星期指定的天进行。
 
@@ -111,7 +111,7 @@ class ShowBackupPolicyResult:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ShowBackupPolicyResult.
+        r"""Sets the period of this ShowBackupPolicyResult.
 
         备份周期配置。自动备份将在每星期指定的天进行。
 

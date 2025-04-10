@@ -26,7 +26,7 @@ class CreateServiceLinkedAgencyV5Response(SdkResponse):
     }
 
     def __init__(self, agency=None):
-        """CreateServiceLinkedAgencyV5Response
+        r"""CreateServiceLinkedAgencyV5Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateServiceLinkedAgencyV5Response(SdkResponse):
 
     @property
     def agency(self):
-        """Gets the agency of this CreateServiceLinkedAgencyV5Response.
+        r"""Gets the agency of this CreateServiceLinkedAgencyV5Response.
 
         :return: The agency of this CreateServiceLinkedAgencyV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.Agency`
@@ -53,7 +53,7 @@ class CreateServiceLinkedAgencyV5Response(SdkResponse):
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this CreateServiceLinkedAgencyV5Response.
+        r"""Sets the agency of this CreateServiceLinkedAgencyV5Response.
 
         :param agency: The agency of this CreateServiceLinkedAgencyV5Response.
         :type agency: :class:`huaweicloudsdkiam.v5.Agency`

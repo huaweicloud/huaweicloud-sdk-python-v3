@@ -43,7 +43,7 @@ class ListTasksDetailsRequest:
     }
 
     def __init__(self, service_name=None, service_version=None, state=None, name_like=None, id_like=None, created_since=None, created_until=None, order=None, offset=None, limit=None):
-        """ListTasksDetailsRequest
+        r"""ListTasksDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class ListTasksDetailsRequest:
 
     @property
     def service_name(self):
-        """Gets the service_name of this ListTasksDetailsRequest.
+        r"""Gets the service_name of this ListTasksDetailsRequest.
 
         服务名称
 
@@ -116,7 +116,7 @@ class ListTasksDetailsRequest:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this ListTasksDetailsRequest.
+        r"""Sets the service_name of this ListTasksDetailsRequest.
 
         服务名称
 
@@ -127,7 +127,7 @@ class ListTasksDetailsRequest:
 
     @property
     def service_version(self):
-        """Gets the service_version of this ListTasksDetailsRequest.
+        r"""Gets the service_version of this ListTasksDetailsRequest.
 
         目标服务作业对应的服务版本号
 
@@ -138,7 +138,7 @@ class ListTasksDetailsRequest:
 
     @service_version.setter
     def service_version(self, service_version):
-        """Sets the service_version of this ListTasksDetailsRequest.
+        r"""Sets the service_version of this ListTasksDetailsRequest.
 
         目标服务作业对应的服务版本号
 
@@ -149,7 +149,7 @@ class ListTasksDetailsRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListTasksDetailsRequest.
+        r"""Gets the state of this ListTasksDetailsRequest.
 
         目标服务作业的状态，分别为PENDING（等待中），RECOVERING（恢复中），STARTING（启动中），UPGRADING（升级中），CREATE_FAILED（创建失败），START_FAILED（启动失败），RUNNING（运行中），STOPPING（停止中），STOPPED（已停止），ABNORMAL（异常），SUCCEEDED（运行成功），FAILED（运行失败），DELETING（删除中），FREEZING（冻结中），FROZEN（已冻结）
 
@@ -160,7 +160,7 @@ class ListTasksDetailsRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListTasksDetailsRequest.
+        r"""Sets the state of this ListTasksDetailsRequest.
 
         目标服务作业的状态，分别为PENDING（等待中），RECOVERING（恢复中），STARTING（启动中），UPGRADING（升级中），CREATE_FAILED（创建失败），START_FAILED（启动失败），RUNNING（运行中），STOPPING（停止中），STOPPED（已停止），ABNORMAL（异常），SUCCEEDED（运行成功），FAILED（运行失败），DELETING（删除中），FREEZING（冻结中），FROZEN（已冻结）
 
@@ -171,7 +171,7 @@ class ListTasksDetailsRequest:
 
     @property
     def name_like(self):
-        """Gets the name_like of this ListTasksDetailsRequest.
+        r"""Gets the name_like of this ListTasksDetailsRequest.
 
         目标服务作业的名称，支持模糊匹配
 
@@ -182,7 +182,7 @@ class ListTasksDetailsRequest:
 
     @name_like.setter
     def name_like(self, name_like):
-        """Sets the name_like of this ListTasksDetailsRequest.
+        r"""Sets the name_like of this ListTasksDetailsRequest.
 
         目标服务作业的名称，支持模糊匹配
 
@@ -193,7 +193,7 @@ class ListTasksDetailsRequest:
 
     @property
     def id_like(self):
-        """Gets the id_like of this ListTasksDetailsRequest.
+        r"""Gets the id_like of this ListTasksDetailsRequest.
 
         目标服务作业的ID，支持模糊匹配
 
@@ -204,7 +204,7 @@ class ListTasksDetailsRequest:
 
     @id_like.setter
     def id_like(self, id_like):
-        """Sets the id_like of this ListTasksDetailsRequest.
+        r"""Sets the id_like of this ListTasksDetailsRequest.
 
         目标服务作业的ID，支持模糊匹配
 
@@ -215,7 +215,7 @@ class ListTasksDetailsRequest:
 
     @property
     def created_since(self):
-        """Gets the created_since of this ListTasksDetailsRequest.
+        r"""Gets the created_since of this ListTasksDetailsRequest.
 
         目标服务作业的创建起始时间
 
@@ -226,7 +226,7 @@ class ListTasksDetailsRequest:
 
     @created_since.setter
     def created_since(self, created_since):
-        """Sets the created_since of this ListTasksDetailsRequest.
+        r"""Sets the created_since of this ListTasksDetailsRequest.
 
         目标服务作业的创建起始时间
 
@@ -237,7 +237,7 @@ class ListTasksDetailsRequest:
 
     @property
     def created_until(self):
-        """Gets the created_until of this ListTasksDetailsRequest.
+        r"""Gets the created_until of this ListTasksDetailsRequest.
 
         目标服务作业的创建截止时间
 
@@ -248,7 +248,7 @@ class ListTasksDetailsRequest:
 
     @created_until.setter
     def created_until(self, created_until):
-        """Sets the created_until of this ListTasksDetailsRequest.
+        r"""Sets the created_until of this ListTasksDetailsRequest.
 
         目标服务作业的创建截止时间
 
@@ -259,7 +259,7 @@ class ListTasksDetailsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListTasksDetailsRequest.
+        r"""Gets the order of this ListTasksDetailsRequest.
 
         展示服务作业时的排序字段和顺序，分别为name:ASC（按名称顺序排序），name:DESC（按名称倒序排序），created_at:ASC（按创建时间正序排序），created_at:DESC（按创建时间倒序排序），updated_at:ASC（按更新时间正序排序），updated_at:DESC（按更新时间倒序排序）
 
@@ -270,7 +270,7 @@ class ListTasksDetailsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListTasksDetailsRequest.
+        r"""Sets the order of this ListTasksDetailsRequest.
 
         展示服务作业时的排序字段和顺序，分别为name:ASC（按名称顺序排序），name:DESC（按名称倒序排序），created_at:ASC（按创建时间正序排序），created_at:DESC（按创建时间倒序排序），updated_at:ASC（按更新时间正序排序），updated_at:DESC（按更新时间倒序排序）
 
@@ -281,7 +281,7 @@ class ListTasksDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTasksDetailsRequest.
+        r"""Gets the offset of this ListTasksDetailsRequest.
 
         首个展示的服务作业的偏移量
 
@@ -292,7 +292,7 @@ class ListTasksDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTasksDetailsRequest.
+        r"""Sets the offset of this ListTasksDetailsRequest.
 
         首个展示的服务作业的偏移量
 
@@ -303,7 +303,7 @@ class ListTasksDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTasksDetailsRequest.
+        r"""Gets the limit of this ListTasksDetailsRequest.
 
         展示服务作业的数量
 
@@ -314,7 +314,7 @@ class ListTasksDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTasksDetailsRequest.
+        r"""Sets the limit of this ListTasksDetailsRequest.
 
         展示服务作业的数量
 

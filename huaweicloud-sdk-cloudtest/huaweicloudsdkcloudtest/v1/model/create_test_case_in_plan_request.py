@@ -29,7 +29,7 @@ class CreateTestCaseInPlanRequest:
     }
 
     def __init__(self, project_id=None, plan_id=None, body=None):
-        """CreateTestCaseInPlanRequest
+        r"""CreateTestCaseInPlanRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateTestCaseInPlanRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateTestCaseInPlanRequest.
+        r"""Gets the project_id of this CreateTestCaseInPlanRequest.
 
         项目唯一标识，固定长度32位字符
 
@@ -66,7 +66,7 @@ class CreateTestCaseInPlanRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateTestCaseInPlanRequest.
+        r"""Sets the project_id of this CreateTestCaseInPlanRequest.
 
         项目唯一标识，固定长度32位字符
 
@@ -77,7 +77,7 @@ class CreateTestCaseInPlanRequest:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this CreateTestCaseInPlanRequest.
+        r"""Gets the plan_id of this CreateTestCaseInPlanRequest.
 
         计划唯一标识，长度11-34位字符
 
@@ -88,7 +88,7 @@ class CreateTestCaseInPlanRequest:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this CreateTestCaseInPlanRequest.
+        r"""Sets the plan_id of this CreateTestCaseInPlanRequest.
 
         计划唯一标识，长度11-34位字符
 
@@ -99,7 +99,7 @@ class CreateTestCaseInPlanRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTestCaseInPlanRequest.
+        r"""Gets the body of this CreateTestCaseInPlanRequest.
 
         :return: The body of this CreateTestCaseInPlanRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseInPlanRequestBody`
@@ -108,7 +108,7 @@ class CreateTestCaseInPlanRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTestCaseInPlanRequest.
+        r"""Sets the body of this CreateTestCaseInPlanRequest.
 
         :param body: The body of this CreateTestCaseInPlanRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseInPlanRequestBody`

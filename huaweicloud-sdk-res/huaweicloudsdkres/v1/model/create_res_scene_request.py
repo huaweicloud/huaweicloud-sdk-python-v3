@@ -29,7 +29,7 @@ class CreateResSceneRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, body=None):
-        """CreateResSceneRequest
+        r"""CreateResSceneRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateResSceneRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this CreateResSceneRequest.
+        r"""Gets the content_type of this CreateResSceneRequest.
 
         内容类型，取值为application/json。
 
@@ -66,7 +66,7 @@ class CreateResSceneRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this CreateResSceneRequest.
+        r"""Sets the content_type of this CreateResSceneRequest.
 
         内容类型，取值为application/json。
 
@@ -77,7 +77,7 @@ class CreateResSceneRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateResSceneRequest.
+        r"""Gets the workspace_id of this CreateResSceneRequest.
 
         工作空间id。
 
@@ -88,7 +88,7 @@ class CreateResSceneRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateResSceneRequest.
+        r"""Sets the workspace_id of this CreateResSceneRequest.
 
         工作空间id。
 
@@ -99,7 +99,7 @@ class CreateResSceneRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResSceneRequest.
+        r"""Gets the body of this CreateResSceneRequest.
 
         :return: The body of this CreateResSceneRequest.
         :rtype: :class:`huaweicloudsdkres.v1.CreateResSceneRequestBody`
@@ -108,7 +108,7 @@ class CreateResSceneRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResSceneRequest.
+        r"""Sets the body of this CreateResSceneRequest.
 
         :param body: The body of this CreateResSceneRequest.
         :type body: :class:`huaweicloudsdkres.v1.CreateResSceneRequestBody`

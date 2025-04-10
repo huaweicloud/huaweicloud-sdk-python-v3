@@ -23,7 +23,7 @@ class ListAccessAddressBackupConfigRequest:
     }
 
     def __init__(self):
-        """ListAccessAddressBackupConfigRequest
+        r"""ListAccessAddressBackupConfigRequest
 
         The model defined in huaweicloud sdk
 

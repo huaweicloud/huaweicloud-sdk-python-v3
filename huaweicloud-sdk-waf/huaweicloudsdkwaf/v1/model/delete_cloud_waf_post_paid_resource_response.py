@@ -30,7 +30,7 @@ class DeleteCloudWafPostPaidResourceResponse(SdkResponse):
     }
 
     def __init__(self, type=None, resources=None, is_new_user=None):
-        """DeleteCloudWafPostPaidResourceResponse
+        r"""DeleteCloudWafPostPaidResourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteCloudWafPostPaidResourceResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this DeleteCloudWafPostPaidResourceResponse.
+        r"""Gets the type of this DeleteCloudWafPostPaidResourceResponse.
 
         云模式版本   - -2：已冻结   - -1：未订购   - 2：标准版   - 3：专业版   - 4：铂金版   - 7: 入门版   - 22：按需版本
 
@@ -69,7 +69,7 @@ class DeleteCloudWafPostPaidResourceResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DeleteCloudWafPostPaidResourceResponse.
+        r"""Sets the type of this DeleteCloudWafPostPaidResourceResponse.
 
         云模式版本   - -2：已冻结   - -1：未订购   - 2：标准版   - 3：专业版   - 4：铂金版   - 7: 入门版   - 22：按需版本
 
@@ -80,7 +80,7 @@ class DeleteCloudWafPostPaidResourceResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this DeleteCloudWafPostPaidResourceResponse.
+        r"""Gets the resources of this DeleteCloudWafPostPaidResourceResponse.
 
         资源列表
 
@@ -91,7 +91,7 @@ class DeleteCloudWafPostPaidResourceResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this DeleteCloudWafPostPaidResourceResponse.
+        r"""Sets the resources of this DeleteCloudWafPostPaidResourceResponse.
 
         资源列表
 
@@ -102,7 +102,7 @@ class DeleteCloudWafPostPaidResourceResponse(SdkResponse):
 
     @property
     def is_new_user(self):
-        """Gets the is_new_user of this DeleteCloudWafPostPaidResourceResponse.
+        r"""Gets the is_new_user of this DeleteCloudWafPostPaidResourceResponse.
 
         是否为新用户
 
@@ -113,7 +113,7 @@ class DeleteCloudWafPostPaidResourceResponse(SdkResponse):
 
     @is_new_user.setter
     def is_new_user(self, is_new_user):
-        """Sets the is_new_user of this DeleteCloudWafPostPaidResourceResponse.
+        r"""Sets the is_new_user of this DeleteCloudWafPostPaidResourceResponse.
 
         是否为新用户
 

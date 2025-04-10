@@ -41,7 +41,7 @@ class ReportOutline:
     }
 
     def __init__(self, core_index=None, exception_response_sum=None, network_traffic=None, response_code_sum=None, task_basic_attribute=None, task_basic_execution_data=None, response_code_details=None, sla_statistic=None, streaming_media=None):
-        """ReportOutline
+        r"""ReportOutline
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ReportOutline:
 
     @property
     def core_index(self):
-        """Gets the core_index of this ReportOutline.
+        r"""Gets the core_index of this ReportOutline.
 
         :return: The core_index of this ReportOutline.
         :rtype: :class:`huaweicloudsdkcpts.v1.CoreIndex`
@@ -108,7 +108,7 @@ class ReportOutline:
 
     @core_index.setter
     def core_index(self, core_index):
-        """Sets the core_index of this ReportOutline.
+        r"""Sets the core_index of this ReportOutline.
 
         :param core_index: The core_index of this ReportOutline.
         :type core_index: :class:`huaweicloudsdkcpts.v1.CoreIndex`
@@ -117,7 +117,7 @@ class ReportOutline:
 
     @property
     def exception_response_sum(self):
-        """Gets the exception_response_sum of this ReportOutline.
+        r"""Gets the exception_response_sum of this ReportOutline.
 
         :return: The exception_response_sum of this ReportOutline.
         :rtype: :class:`huaweicloudsdkcpts.v1.ExceptionResponseSum`
@@ -126,7 +126,7 @@ class ReportOutline:
 
     @exception_response_sum.setter
     def exception_response_sum(self, exception_response_sum):
-        """Sets the exception_response_sum of this ReportOutline.
+        r"""Sets the exception_response_sum of this ReportOutline.
 
         :param exception_response_sum: The exception_response_sum of this ReportOutline.
         :type exception_response_sum: :class:`huaweicloudsdkcpts.v1.ExceptionResponseSum`
@@ -135,7 +135,7 @@ class ReportOutline:
 
     @property
     def network_traffic(self):
-        """Gets the network_traffic of this ReportOutline.
+        r"""Gets the network_traffic of this ReportOutline.
 
         :return: The network_traffic of this ReportOutline.
         :rtype: :class:`huaweicloudsdkcpts.v1.NetworkTraffic`
@@ -144,7 +144,7 @@ class ReportOutline:
 
     @network_traffic.setter
     def network_traffic(self, network_traffic):
-        """Sets the network_traffic of this ReportOutline.
+        r"""Sets the network_traffic of this ReportOutline.
 
         :param network_traffic: The network_traffic of this ReportOutline.
         :type network_traffic: :class:`huaweicloudsdkcpts.v1.NetworkTraffic`
@@ -153,7 +153,7 @@ class ReportOutline:
 
     @property
     def response_code_sum(self):
-        """Gets the response_code_sum of this ReportOutline.
+        r"""Gets the response_code_sum of this ReportOutline.
 
         :return: The response_code_sum of this ReportOutline.
         :rtype: :class:`huaweicloudsdkcpts.v1.ResponseCodeSum`
@@ -162,7 +162,7 @@ class ReportOutline:
 
     @response_code_sum.setter
     def response_code_sum(self, response_code_sum):
-        """Sets the response_code_sum of this ReportOutline.
+        r"""Sets the response_code_sum of this ReportOutline.
 
         :param response_code_sum: The response_code_sum of this ReportOutline.
         :type response_code_sum: :class:`huaweicloudsdkcpts.v1.ResponseCodeSum`
@@ -171,7 +171,7 @@ class ReportOutline:
 
     @property
     def task_basic_attribute(self):
-        """Gets the task_basic_attribute of this ReportOutline.
+        r"""Gets the task_basic_attribute of this ReportOutline.
 
         :return: The task_basic_attribute of this ReportOutline.
         :rtype: :class:`huaweicloudsdkcpts.v1.TaskBasicAttribute`
@@ -180,7 +180,7 @@ class ReportOutline:
 
     @task_basic_attribute.setter
     def task_basic_attribute(self, task_basic_attribute):
-        """Sets the task_basic_attribute of this ReportOutline.
+        r"""Sets the task_basic_attribute of this ReportOutline.
 
         :param task_basic_attribute: The task_basic_attribute of this ReportOutline.
         :type task_basic_attribute: :class:`huaweicloudsdkcpts.v1.TaskBasicAttribute`
@@ -189,7 +189,7 @@ class ReportOutline:
 
     @property
     def task_basic_execution_data(self):
-        """Gets the task_basic_execution_data of this ReportOutline.
+        r"""Gets the task_basic_execution_data of this ReportOutline.
 
         :return: The task_basic_execution_data of this ReportOutline.
         :rtype: :class:`huaweicloudsdkcpts.v1.TaskBasicExecutionData`
@@ -198,7 +198,7 @@ class ReportOutline:
 
     @task_basic_execution_data.setter
     def task_basic_execution_data(self, task_basic_execution_data):
-        """Sets the task_basic_execution_data of this ReportOutline.
+        r"""Sets the task_basic_execution_data of this ReportOutline.
 
         :param task_basic_execution_data: The task_basic_execution_data of this ReportOutline.
         :type task_basic_execution_data: :class:`huaweicloudsdkcpts.v1.TaskBasicExecutionData`
@@ -207,7 +207,7 @@ class ReportOutline:
 
     @property
     def response_code_details(self):
-        """Gets the response_code_details of this ReportOutline.
+        r"""Gets the response_code_details of this ReportOutline.
 
         响应码详细信息
 
@@ -218,7 +218,7 @@ class ReportOutline:
 
     @response_code_details.setter
     def response_code_details(self, response_code_details):
-        """Sets the response_code_details of this ReportOutline.
+        r"""Sets the response_code_details of this ReportOutline.
 
         响应码详细信息
 
@@ -229,7 +229,7 @@ class ReportOutline:
 
     @property
     def sla_statistic(self):
-        """Gets the sla_statistic of this ReportOutline.
+        r"""Gets the sla_statistic of this ReportOutline.
 
         SLA数据
 
@@ -240,7 +240,7 @@ class ReportOutline:
 
     @sla_statistic.setter
     def sla_statistic(self, sla_statistic):
-        """Sets the sla_statistic of this ReportOutline.
+        r"""Sets the sla_statistic of this ReportOutline.
 
         SLA数据
 
@@ -251,7 +251,7 @@ class ReportOutline:
 
     @property
     def streaming_media(self):
-        """Gets the streaming_media of this ReportOutline.
+        r"""Gets the streaming_media of this ReportOutline.
 
         流媒体相关数据
 
@@ -262,7 +262,7 @@ class ReportOutline:
 
     @streaming_media.setter
     def streaming_media(self, streaming_media):
-        """Sets the streaming_media of this ReportOutline.
+        r"""Sets the streaming_media of this ReportOutline.
 
         流媒体相关数据
 

@@ -25,7 +25,7 @@ class UserRequest:
     }
 
     def __init__(self, user_id=None):
-        """UserRequest
+        r"""UserRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UserRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UserRequest.
+        r"""Gets the user_id of this UserRequest.
 
         用户32位字符串id
 
@@ -53,7 +53,7 @@ class UserRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UserRequest.
+        r"""Sets the user_id of this UserRequest.
 
         用户32位字符串id
 

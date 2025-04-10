@@ -37,7 +37,7 @@ class ReceptorLigandInfoDto:
     }
 
     def __init__(self, index=None, name=None, success=None, smiles=None, formula=None, structure=None, bounding_box=None):
-        """ReceptorLigandInfoDto
+        r"""ReceptorLigandInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ReceptorLigandInfoDto:
 
     @property
     def index(self):
-        """Gets the index of this ReceptorLigandInfoDto.
+        r"""Gets the index of this ReceptorLigandInfoDto.
 
         配体索引（从0起编号）
 
@@ -93,7 +93,7 @@ class ReceptorLigandInfoDto:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this ReceptorLigandInfoDto.
+        r"""Sets the index of this ReceptorLigandInfoDto.
 
         配体索引（从0起编号）
 
@@ -104,7 +104,7 @@ class ReceptorLigandInfoDto:
 
     @property
     def name(self):
-        """Gets the name of this ReceptorLigandInfoDto.
+        r"""Gets the name of this ReceptorLigandInfoDto.
 
         配体名称，即配体所在的残基表示
 
@@ -115,7 +115,7 @@ class ReceptorLigandInfoDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ReceptorLigandInfoDto.
+        r"""Sets the name of this ReceptorLigandInfoDto.
 
         配体名称，即配体所在的残基表示
 
@@ -126,7 +126,7 @@ class ReceptorLigandInfoDto:
 
     @property
     def success(self):
-        """Gets the success of this ReceptorLigandInfoDto.
+        r"""Gets the success of this ReceptorLigandInfoDto.
 
         解析是否成功
 
@@ -137,7 +137,7 @@ class ReceptorLigandInfoDto:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this ReceptorLigandInfoDto.
+        r"""Sets the success of this ReceptorLigandInfoDto.
 
         解析是否成功
 
@@ -148,7 +148,7 @@ class ReceptorLigandInfoDto:
 
     @property
     def smiles(self):
-        """Gets the smiles of this ReceptorLigandInfoDto.
+        r"""Gets the smiles of this ReceptorLigandInfoDto.
 
         分子SMILES表达式
 
@@ -159,7 +159,7 @@ class ReceptorLigandInfoDto:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this ReceptorLigandInfoDto.
+        r"""Sets the smiles of this ReceptorLigandInfoDto.
 
         分子SMILES表达式
 
@@ -170,7 +170,7 @@ class ReceptorLigandInfoDto:
 
     @property
     def formula(self):
-        """Gets the formula of this ReceptorLigandInfoDto.
+        r"""Gets the formula of this ReceptorLigandInfoDto.
 
         配体分子的化学式
 
@@ -181,7 +181,7 @@ class ReceptorLigandInfoDto:
 
     @formula.setter
     def formula(self, formula):
-        """Sets the formula of this ReceptorLigandInfoDto.
+        r"""Sets the formula of this ReceptorLigandInfoDto.
 
         配体分子的化学式
 
@@ -192,7 +192,7 @@ class ReceptorLigandInfoDto:
 
     @property
     def structure(self):
-        """Gets the structure of this ReceptorLigandInfoDto.
+        r"""Gets the structure of this ReceptorLigandInfoDto.
 
         :return: The structure of this ReceptorLigandInfoDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.LigandStructureDto`
@@ -201,7 +201,7 @@ class ReceptorLigandInfoDto:
 
     @structure.setter
     def structure(self, structure):
-        """Sets the structure of this ReceptorLigandInfoDto.
+        r"""Sets the structure of this ReceptorLigandInfoDto.
 
         :param structure: The structure of this ReceptorLigandInfoDto.
         :type structure: :class:`huaweicloudsdkeihealth.v1.LigandStructureDto`
@@ -210,7 +210,7 @@ class ReceptorLigandInfoDto:
 
     @property
     def bounding_box(self):
-        """Gets the bounding_box of this ReceptorLigandInfoDto.
+        r"""Gets the bounding_box of this ReceptorLigandInfoDto.
 
         :return: The bounding_box of this ReceptorLigandInfoDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugBoundingBoxDto`
@@ -219,7 +219,7 @@ class ReceptorLigandInfoDto:
 
     @bounding_box.setter
     def bounding_box(self, bounding_box):
-        """Sets the bounding_box of this ReceptorLigandInfoDto.
+        r"""Sets the bounding_box of this ReceptorLigandInfoDto.
 
         :param bounding_box: The bounding_box of this ReceptorLigandInfoDto.
         :type bounding_box: :class:`huaweicloudsdkeihealth.v1.DrugBoundingBoxDto`

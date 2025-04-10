@@ -28,7 +28,7 @@ class AddFirewallRulesResponse(SdkResponse):
     }
 
     def __init__(self, firewall=None, request_id=None):
-        """AddFirewallRulesResponse
+        r"""AddFirewallRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddFirewallRulesResponse(SdkResponse):
 
     @property
     def firewall(self):
-        """Gets the firewall of this AddFirewallRulesResponse.
+        r"""Gets the firewall of this AddFirewallRulesResponse.
 
         :return: The firewall of this AddFirewallRulesResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.FirewallDetail`
@@ -60,7 +60,7 @@ class AddFirewallRulesResponse(SdkResponse):
 
     @firewall.setter
     def firewall(self, firewall):
-        """Sets the firewall of this AddFirewallRulesResponse.
+        r"""Sets the firewall of this AddFirewallRulesResponse.
 
         :param firewall: The firewall of this AddFirewallRulesResponse.
         :type firewall: :class:`huaweicloudsdkvpc.v3.FirewallDetail`
@@ -69,7 +69,7 @@ class AddFirewallRulesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this AddFirewallRulesResponse.
+        r"""Gets the request_id of this AddFirewallRulesResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class AddFirewallRulesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AddFirewallRulesResponse.
+        r"""Sets the request_id of this AddFirewallRulesResponse.
 
         请求ID
 

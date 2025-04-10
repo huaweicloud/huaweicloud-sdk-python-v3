@@ -33,7 +33,7 @@ class Mesh:
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
-        """Mesh
+        r"""Mesh
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class Mesh:
 
     @property
     def api_version(self):
-        """Gets the api_version of this Mesh.
+        r"""Gets the api_version of this Mesh.
 
         API版本，固定值“v1”，该值不可修改
 
@@ -78,7 +78,7 @@ class Mesh:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this Mesh.
+        r"""Sets the api_version of this Mesh.
 
         API版本，固定值“v1”，该值不可修改
 
@@ -89,7 +89,7 @@ class Mesh:
 
     @property
     def kind(self):
-        """Gets the kind of this Mesh.
+        r"""Gets the kind of this Mesh.
 
         API类型，固定值“Mesh”或“mesh”，该值不可修改
 
@@ -100,7 +100,7 @@ class Mesh:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this Mesh.
+        r"""Sets the kind of this Mesh.
 
         API类型，固定值“Mesh”或“mesh”，该值不可修改
 
@@ -111,7 +111,7 @@ class Mesh:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Mesh.
+        r"""Gets the metadata of this Mesh.
 
         :return: The metadata of this Mesh.
         :rtype: :class:`huaweicloudsdkasm.v1.MeshMetadata`
@@ -120,7 +120,7 @@ class Mesh:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Mesh.
+        r"""Sets the metadata of this Mesh.
 
         :param metadata: The metadata of this Mesh.
         :type metadata: :class:`huaweicloudsdkasm.v1.MeshMetadata`
@@ -129,7 +129,7 @@ class Mesh:
 
     @property
     def spec(self):
-        """Gets the spec of this Mesh.
+        r"""Gets the spec of this Mesh.
 
         :return: The spec of this Mesh.
         :rtype: :class:`huaweicloudsdkasm.v1.MeshSpec`
@@ -138,7 +138,7 @@ class Mesh:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this Mesh.
+        r"""Sets the spec of this Mesh.
 
         :param spec: The spec of this Mesh.
         :type spec: :class:`huaweicloudsdkasm.v1.MeshSpec`
@@ -147,7 +147,7 @@ class Mesh:
 
     @property
     def status(self):
-        """Gets the status of this Mesh.
+        r"""Gets the status of this Mesh.
 
         :return: The status of this Mesh.
         :rtype: :class:`huaweicloudsdkasm.v1.MeshStatus`
@@ -156,7 +156,7 @@ class Mesh:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Mesh.
+        r"""Sets the status of this Mesh.
 
         :param status: The status of this Mesh.
         :type status: :class:`huaweicloudsdkasm.v1.MeshStatus`

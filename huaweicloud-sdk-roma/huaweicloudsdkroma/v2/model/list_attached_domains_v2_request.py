@@ -31,7 +31,7 @@ class ListAttachedDomainsV2Request:
     }
 
     def __init__(self, certificate_id=None, offset=None, limit=None, url_domain=None):
-        """ListAttachedDomainsV2Request
+        r"""ListAttachedDomainsV2Request
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListAttachedDomainsV2Request:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this ListAttachedDomainsV2Request.
+        r"""Gets the certificate_id of this ListAttachedDomainsV2Request.
 
         证书的编号
 
@@ -74,7 +74,7 @@ class ListAttachedDomainsV2Request:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this ListAttachedDomainsV2Request.
+        r"""Sets the certificate_id of this ListAttachedDomainsV2Request.
 
         证书的编号
 
@@ -85,7 +85,7 @@ class ListAttachedDomainsV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAttachedDomainsV2Request.
+        r"""Gets the offset of this ListAttachedDomainsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -96,7 +96,7 @@ class ListAttachedDomainsV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAttachedDomainsV2Request.
+        r"""Sets the offset of this ListAttachedDomainsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -107,7 +107,7 @@ class ListAttachedDomainsV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAttachedDomainsV2Request.
+        r"""Gets the limit of this ListAttachedDomainsV2Request.
 
         每页显示的条目数量
 
@@ -118,7 +118,7 @@ class ListAttachedDomainsV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAttachedDomainsV2Request.
+        r"""Sets the limit of this ListAttachedDomainsV2Request.
 
         每页显示的条目数量
 
@@ -129,7 +129,7 @@ class ListAttachedDomainsV2Request:
 
     @property
     def url_domain(self):
-        """Gets the url_domain of this ListAttachedDomainsV2Request.
+        r"""Gets the url_domain of this ListAttachedDomainsV2Request.
 
         独立域名
 
@@ -140,7 +140,7 @@ class ListAttachedDomainsV2Request:
 
     @url_domain.setter
     def url_domain(self, url_domain):
-        """Sets the url_domain of this ListAttachedDomainsV2Request.
+        r"""Sets the url_domain of this ListAttachedDomainsV2Request.
 
         独立域名
 

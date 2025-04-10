@@ -39,7 +39,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
     }
 
     def __init__(self, alarm_notifications=None, alarm_rule_description=None, alarm_rule_enable=None, alarm_rule_name=None, alarm_rule_type=None, event_alarm_spec=None, metric_alarm_spec=None, prom_instance_id=None):
-        """AddOrUpdateAlarmRuleV4RequestBody
+        r"""AddOrUpdateAlarmRuleV4RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @property
     def alarm_notifications(self):
-        """Gets the alarm_notifications of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Gets the alarm_notifications of this AddOrUpdateAlarmRuleV4RequestBody.
 
         :return: The alarm_notifications of this AddOrUpdateAlarmRuleV4RequestBody.
         :rtype: :class:`huaweicloudsdkaom.v2.AlarmNotification`
@@ -99,7 +99,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @alarm_notifications.setter
     def alarm_notifications(self, alarm_notifications):
-        """Sets the alarm_notifications of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Sets the alarm_notifications of this AddOrUpdateAlarmRuleV4RequestBody.
 
         :param alarm_notifications: The alarm_notifications of this AddOrUpdateAlarmRuleV4RequestBody.
         :type alarm_notifications: :class:`huaweicloudsdkaom.v2.AlarmNotification`
@@ -108,7 +108,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @property
     def alarm_rule_description(self):
-        """Gets the alarm_rule_description of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Gets the alarm_rule_description of this AddOrUpdateAlarmRuleV4RequestBody.
 
         告警规则描述。
 
@@ -119,7 +119,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @alarm_rule_description.setter
     def alarm_rule_description(self, alarm_rule_description):
-        """Sets the alarm_rule_description of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Sets the alarm_rule_description of this AddOrUpdateAlarmRuleV4RequestBody.
 
         告警规则描述。
 
@@ -130,7 +130,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @property
     def alarm_rule_enable(self):
-        """Gets the alarm_rule_enable of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Gets the alarm_rule_enable of this AddOrUpdateAlarmRuleV4RequestBody.
 
         是否启用。
 
@@ -141,7 +141,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @alarm_rule_enable.setter
     def alarm_rule_enable(self, alarm_rule_enable):
-        """Sets the alarm_rule_enable of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Sets the alarm_rule_enable of this AddOrUpdateAlarmRuleV4RequestBody.
 
         是否启用。
 
@@ -152,7 +152,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @property
     def alarm_rule_name(self):
-        """Gets the alarm_rule_name of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Gets the alarm_rule_name of this AddOrUpdateAlarmRuleV4RequestBody.
 
         告警规则名称。
 
@@ -163,7 +163,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @alarm_rule_name.setter
     def alarm_rule_name(self, alarm_rule_name):
-        """Sets the alarm_rule_name of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Sets the alarm_rule_name of this AddOrUpdateAlarmRuleV4RequestBody.
 
         告警规则名称。
 
@@ -174,7 +174,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @property
     def alarm_rule_type(self):
-        """Gets the alarm_rule_type of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Gets the alarm_rule_type of this AddOrUpdateAlarmRuleV4RequestBody.
 
         告警规则类型。 - “metric”：指标告警规则 - “event”：事件告警规则
 
@@ -185,7 +185,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @alarm_rule_type.setter
     def alarm_rule_type(self, alarm_rule_type):
-        """Sets the alarm_rule_type of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Sets the alarm_rule_type of this AddOrUpdateAlarmRuleV4RequestBody.
 
         告警规则类型。 - “metric”：指标告警规则 - “event”：事件告警规则
 
@@ -196,7 +196,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @property
     def event_alarm_spec(self):
-        """Gets the event_alarm_spec of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Gets the event_alarm_spec of this AddOrUpdateAlarmRuleV4RequestBody.
 
         :return: The event_alarm_spec of this AddOrUpdateAlarmRuleV4RequestBody.
         :rtype: :class:`huaweicloudsdkaom.v2.EventAlarmSpec`
@@ -205,7 +205,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @event_alarm_spec.setter
     def event_alarm_spec(self, event_alarm_spec):
-        """Sets the event_alarm_spec of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Sets the event_alarm_spec of this AddOrUpdateAlarmRuleV4RequestBody.
 
         :param event_alarm_spec: The event_alarm_spec of this AddOrUpdateAlarmRuleV4RequestBody.
         :type event_alarm_spec: :class:`huaweicloudsdkaom.v2.EventAlarmSpec`
@@ -214,7 +214,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @property
     def metric_alarm_spec(self):
-        """Gets the metric_alarm_spec of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Gets the metric_alarm_spec of this AddOrUpdateAlarmRuleV4RequestBody.
 
         :return: The metric_alarm_spec of this AddOrUpdateAlarmRuleV4RequestBody.
         :rtype: :class:`huaweicloudsdkaom.v2.MetricAlarmSpec`
@@ -223,7 +223,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @metric_alarm_spec.setter
     def metric_alarm_spec(self, metric_alarm_spec):
-        """Sets the metric_alarm_spec of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Sets the metric_alarm_spec of this AddOrUpdateAlarmRuleV4RequestBody.
 
         :param metric_alarm_spec: The metric_alarm_spec of this AddOrUpdateAlarmRuleV4RequestBody.
         :type metric_alarm_spec: :class:`huaweicloudsdkaom.v2.MetricAlarmSpec`
@@ -232,7 +232,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @property
     def prom_instance_id(self):
-        """Gets the prom_instance_id of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Gets the prom_instance_id of this AddOrUpdateAlarmRuleV4RequestBody.
 
         Prometheus实例id。
 
@@ -243,7 +243,7 @@ class AddOrUpdateAlarmRuleV4RequestBody:
 
     @prom_instance_id.setter
     def prom_instance_id(self, prom_instance_id):
-        """Sets the prom_instance_id of this AddOrUpdateAlarmRuleV4RequestBody.
+        r"""Sets the prom_instance_id of this AddOrUpdateAlarmRuleV4RequestBody.
 
         Prometheus实例id。
 

@@ -39,7 +39,7 @@ class ListScheduleRecordTasksRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, domain=None, app=None, stream=None, task_id=None, offset=None, limit=None):
-        """ListScheduleRecordTasksRequest
+        r"""ListScheduleRecordTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListScheduleRecordTasksRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListScheduleRecordTasksRequest.
+        r"""Gets the start_time of this ListScheduleRecordTasksRequest.
 
         查询任务开始时间，Unix 时间戳。设置时间不早于当前时间之前90天的时间，且查询时间跨度不超过一周。
 
@@ -102,7 +102,7 @@ class ListScheduleRecordTasksRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListScheduleRecordTasksRequest.
+        r"""Sets the start_time of this ListScheduleRecordTasksRequest.
 
         查询任务开始时间，Unix 时间戳。设置时间不早于当前时间之前90天的时间，且查询时间跨度不超过一周。
 
@@ -113,7 +113,7 @@ class ListScheduleRecordTasksRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListScheduleRecordTasksRequest.
+        r"""Gets the end_time of this ListScheduleRecordTasksRequest.
 
         查询任务结束时间，Unix 时间戳。EndTime 必须大于 StartTime，设置时间不早于当前时间之前90天的时间，且查询时间跨度不超过一周。（任务开始结束时间必须在查询时间范围内）。
 
@@ -124,7 +124,7 @@ class ListScheduleRecordTasksRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListScheduleRecordTasksRequest.
+        r"""Sets the end_time of this ListScheduleRecordTasksRequest.
 
         查询任务结束时间，Unix 时间戳。EndTime 必须大于 StartTime，设置时间不早于当前时间之前90天的时间，且查询时间跨度不超过一周。（任务开始结束时间必须在查询时间范围内）。
 
@@ -135,7 +135,7 @@ class ListScheduleRecordTasksRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ListScheduleRecordTasksRequest.
+        r"""Gets the domain of this ListScheduleRecordTasksRequest.
 
         推流域名
 
@@ -146,7 +146,7 @@ class ListScheduleRecordTasksRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListScheduleRecordTasksRequest.
+        r"""Sets the domain of this ListScheduleRecordTasksRequest.
 
         推流域名
 
@@ -157,7 +157,7 @@ class ListScheduleRecordTasksRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListScheduleRecordTasksRequest.
+        r"""Gets the app of this ListScheduleRecordTasksRequest.
 
         应用名称，在domain有值的情况下生效
 
@@ -168,7 +168,7 @@ class ListScheduleRecordTasksRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListScheduleRecordTasksRequest.
+        r"""Sets the app of this ListScheduleRecordTasksRequest.
 
         应用名称，在domain有值的情况下生效
 
@@ -179,7 +179,7 @@ class ListScheduleRecordTasksRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this ListScheduleRecordTasksRequest.
+        r"""Gets the stream of this ListScheduleRecordTasksRequest.
 
         流名称，在domain和app有值的情况下生效
 
@@ -190,7 +190,7 @@ class ListScheduleRecordTasksRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ListScheduleRecordTasksRequest.
+        r"""Sets the stream of this ListScheduleRecordTasksRequest.
 
         流名称，在domain和app有值的情况下生效
 
@@ -201,7 +201,7 @@ class ListScheduleRecordTasksRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListScheduleRecordTasksRequest.
+        r"""Gets the task_id of this ListScheduleRecordTasksRequest.
 
         录制任务ID
 
@@ -212,7 +212,7 @@ class ListScheduleRecordTasksRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListScheduleRecordTasksRequest.
+        r"""Sets the task_id of this ListScheduleRecordTasksRequest.
 
         录制任务ID
 
@@ -223,7 +223,7 @@ class ListScheduleRecordTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListScheduleRecordTasksRequest.
+        r"""Gets the offset of this ListScheduleRecordTasksRequest.
 
         分页场景下的偏移量，表示从此偏移量开始查询，offset大于等于0，缺省值为0，需要每次查询增加limit的值才能查询全部数据
 
@@ -234,7 +234,7 @@ class ListScheduleRecordTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListScheduleRecordTasksRequest.
+        r"""Sets the offset of this ListScheduleRecordTasksRequest.
 
         分页场景下的偏移量，表示从此偏移量开始查询，offset大于等于0，缺省值为0，需要每次查询增加limit的值才能查询全部数据
 
@@ -245,7 +245,7 @@ class ListScheduleRecordTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScheduleRecordTasksRequest.
+        r"""Gets the limit of this ListScheduleRecordTasksRequest.
 
         分页场景下的每页记录数，取值范围[1,100]，缺省值10
 
@@ -256,7 +256,7 @@ class ListScheduleRecordTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScheduleRecordTasksRequest.
+        r"""Sets the limit of this ListScheduleRecordTasksRequest.
 
         分页场景下的每页记录数，取值范围[1,100]，缺省值10
 

@@ -25,7 +25,7 @@ class DeleteEventSourceRequest:
     }
 
     def __init__(self, source_id=None):
-        """DeleteEventSourceRequest
+        r"""DeleteEventSourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteEventSourceRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this DeleteEventSourceRequest.
+        r"""Gets the source_id of this DeleteEventSourceRequest.
 
         指定查询的事件源ID
 
@@ -53,7 +53,7 @@ class DeleteEventSourceRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this DeleteEventSourceRequest.
+        r"""Sets the source_id of this DeleteEventSourceRequest.
 
         指定查询的事件源ID
 

@@ -25,7 +25,7 @@ class GesQuotaResp:
     }
 
     def __init__(self, resources=None):
-        """GesQuotaResp
+        r"""GesQuotaResp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GesQuotaResp:
 
     @property
     def resources(self):
-        """Gets the resources of this GesQuotaResp.
+        r"""Gets the resources of this GesQuotaResp.
 
         GES资源配额列表。
 
@@ -54,7 +54,7 @@ class GesQuotaResp:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this GesQuotaResp.
+        r"""Sets the resources of this GesQuotaResp.
 
         GES资源配额列表。
 

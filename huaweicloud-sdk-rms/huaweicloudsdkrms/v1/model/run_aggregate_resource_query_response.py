@@ -28,7 +28,7 @@ class RunAggregateResourceQueryResponse(SdkResponse):
     }
 
     def __init__(self, query_info=None, results=None):
-        """RunAggregateResourceQueryResponse
+        r"""RunAggregateResourceQueryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RunAggregateResourceQueryResponse(SdkResponse):
 
     @property
     def query_info(self):
-        """Gets the query_info of this RunAggregateResourceQueryResponse.
+        r"""Gets the query_info of this RunAggregateResourceQueryResponse.
 
         :return: The query_info of this RunAggregateResourceQueryResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.QueryInfo`
@@ -60,7 +60,7 @@ class RunAggregateResourceQueryResponse(SdkResponse):
 
     @query_info.setter
     def query_info(self, query_info):
-        """Sets the query_info of this RunAggregateResourceQueryResponse.
+        r"""Sets the query_info of this RunAggregateResourceQueryResponse.
 
         :param query_info: The query_info of this RunAggregateResourceQueryResponse.
         :type query_info: :class:`huaweicloudsdkrms.v1.QueryInfo`
@@ -69,7 +69,7 @@ class RunAggregateResourceQueryResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this RunAggregateResourceQueryResponse.
+        r"""Gets the results of this RunAggregateResourceQueryResponse.
 
         ResourceQL 查询结果.
 
@@ -80,7 +80,7 @@ class RunAggregateResourceQueryResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this RunAggregateResourceQueryResponse.
+        r"""Sets the results of this RunAggregateResourceQueryResponse.
 
         ResourceQL 查询结果.
 

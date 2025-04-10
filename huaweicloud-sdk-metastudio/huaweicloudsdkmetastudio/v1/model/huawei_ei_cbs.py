@@ -35,7 +35,7 @@ class HuaweiEiCbs:
     }
 
     def __init__(self, app_id=None, region=None, cbs_project_id=None, sis_region=None, sis_project_id=None, enable_hot_words=None):
-        """HuaweiEiCbs
+        r"""HuaweiEiCbs
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class HuaweiEiCbs:
 
     @property
     def app_id(self):
-        """Gets the app_id of this HuaweiEiCbs.
+        r"""Gets the app_id of this HuaweiEiCbs.
 
         CBS应用ID。
 
@@ -89,7 +89,7 @@ class HuaweiEiCbs:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this HuaweiEiCbs.
+        r"""Sets the app_id of this HuaweiEiCbs.
 
         CBS应用ID。
 
@@ -100,7 +100,7 @@ class HuaweiEiCbs:
 
     @property
     def region(self):
-        """Gets the region of this HuaweiEiCbs.
+        r"""Gets the region of this HuaweiEiCbs.
 
         CBS所在区域
 
@@ -111,7 +111,7 @@ class HuaweiEiCbs:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this HuaweiEiCbs.
+        r"""Sets the region of this HuaweiEiCbs.
 
         CBS所在区域
 
@@ -122,7 +122,7 @@ class HuaweiEiCbs:
 
     @property
     def cbs_project_id(self):
-        """Gets the cbs_project_id of this HuaweiEiCbs.
+        r"""Gets the cbs_project_id of this HuaweiEiCbs.
 
         CBS所在区域的projectId
 
@@ -133,7 +133,7 @@ class HuaweiEiCbs:
 
     @cbs_project_id.setter
     def cbs_project_id(self, cbs_project_id):
-        """Sets the cbs_project_id of this HuaweiEiCbs.
+        r"""Sets the cbs_project_id of this HuaweiEiCbs.
 
         CBS所在区域的projectId
 
@@ -144,7 +144,7 @@ class HuaweiEiCbs:
 
     @property
     def sis_region(self):
-        """Gets the sis_region of this HuaweiEiCbs.
+        r"""Gets the sis_region of this HuaweiEiCbs.
 
         SIS所在区域
 
@@ -155,7 +155,7 @@ class HuaweiEiCbs:
 
     @sis_region.setter
     def sis_region(self, sis_region):
-        """Sets the sis_region of this HuaweiEiCbs.
+        r"""Sets the sis_region of this HuaweiEiCbs.
 
         SIS所在区域
 
@@ -166,7 +166,7 @@ class HuaweiEiCbs:
 
     @property
     def sis_project_id(self):
-        """Gets the sis_project_id of this HuaweiEiCbs.
+        r"""Gets the sis_project_id of this HuaweiEiCbs.
 
         SIS所在区域的projectId
 
@@ -177,7 +177,7 @@ class HuaweiEiCbs:
 
     @sis_project_id.setter
     def sis_project_id(self, sis_project_id):
-        """Sets the sis_project_id of this HuaweiEiCbs.
+        r"""Sets the sis_project_id of this HuaweiEiCbs.
 
         SIS所在区域的projectId
 
@@ -188,7 +188,7 @@ class HuaweiEiCbs:
 
     @property
     def enable_hot_words(self):
-        """Gets the enable_hot_words of this HuaweiEiCbs.
+        r"""Gets the enable_hot_words of this HuaweiEiCbs.
 
         是否开启热词
 
@@ -199,7 +199,7 @@ class HuaweiEiCbs:
 
     @enable_hot_words.setter
     def enable_hot_words(self, enable_hot_words):
-        """Sets the enable_hot_words of this HuaweiEiCbs.
+        r"""Sets the enable_hot_words of this HuaweiEiCbs.
 
         是否开启热词
 

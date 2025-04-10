@@ -33,7 +33,7 @@ class ListSupportMasks:
     }
 
     def __init__(self, id=None, ip_version=None, mask=None, created_at=None, updated_at=None):
-        """ListSupportMasks
+        r"""ListSupportMasks
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListSupportMasks:
 
     @property
     def id(self):
-        """Gets the id of this ListSupportMasks.
+        r"""Gets the id of this ListSupportMasks.
 
         全域弹性公网IP段支持的掩码的ID
 
@@ -82,7 +82,7 @@ class ListSupportMasks:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSupportMasks.
+        r"""Sets the id of this ListSupportMasks.
 
         全域弹性公网IP段支持的掩码的ID
 
@@ -93,7 +93,7 @@ class ListSupportMasks:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this ListSupportMasks.
+        r"""Gets the ip_version of this ListSupportMasks.
 
         - 功能说明：全域弹性公网IP的版本 - 取值范围：4、6
 
@@ -104,7 +104,7 @@ class ListSupportMasks:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this ListSupportMasks.
+        r"""Sets the ip_version of this ListSupportMasks.
 
         - 功能说明：全域弹性公网IP的版本 - 取值范围：4、6
 
@@ -115,7 +115,7 @@ class ListSupportMasks:
 
     @property
     def mask(self):
-        """Gets the mask of this ListSupportMasks.
+        r"""Gets the mask of this ListSupportMasks.
 
         掩码长度
 
@@ -126,7 +126,7 @@ class ListSupportMasks:
 
     @mask.setter
     def mask(self, mask):
-        """Sets the mask of this ListSupportMasks.
+        r"""Sets the mask of this ListSupportMasks.
 
         掩码长度
 
@@ -137,7 +137,7 @@ class ListSupportMasks:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListSupportMasks.
+        r"""Gets the created_at of this ListSupportMasks.
 
         创建时间
 
@@ -148,7 +148,7 @@ class ListSupportMasks:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListSupportMasks.
+        r"""Sets the created_at of this ListSupportMasks.
 
         创建时间
 
@@ -159,7 +159,7 @@ class ListSupportMasks:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListSupportMasks.
+        r"""Gets the updated_at of this ListSupportMasks.
 
         更新时间
 
@@ -170,7 +170,7 @@ class ListSupportMasks:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListSupportMasks.
+        r"""Sets the updated_at of this ListSupportMasks.
 
         更新时间
 

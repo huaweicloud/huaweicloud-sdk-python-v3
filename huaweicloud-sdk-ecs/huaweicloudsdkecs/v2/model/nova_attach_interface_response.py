@@ -26,7 +26,7 @@ class NovaAttachInterfaceResponse(SdkResponse):
     }
 
     def __init__(self, interface_attachment=None):
-        """NovaAttachInterfaceResponse
+        r"""NovaAttachInterfaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NovaAttachInterfaceResponse(SdkResponse):
 
     @property
     def interface_attachment(self):
-        """Gets the interface_attachment of this NovaAttachInterfaceResponse.
+        r"""Gets the interface_attachment of this NovaAttachInterfaceResponse.
 
         :return: The interface_attachment of this NovaAttachInterfaceResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaServerInterfaceDetail`
@@ -53,7 +53,7 @@ class NovaAttachInterfaceResponse(SdkResponse):
 
     @interface_attachment.setter
     def interface_attachment(self, interface_attachment):
-        """Sets the interface_attachment of this NovaAttachInterfaceResponse.
+        r"""Sets the interface_attachment of this NovaAttachInterfaceResponse.
 
         :param interface_attachment: The interface_attachment of this NovaAttachInterfaceResponse.
         :type interface_attachment: :class:`huaweicloudsdkecs.v2.NovaServerInterfaceDetail`

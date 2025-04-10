@@ -25,7 +25,7 @@ class QueryImageByTagsResourceDetail:
     }
 
     def __init__(self, status=None):
-        """QueryImageByTagsResourceDetail
+        r"""QueryImageByTagsResourceDetail
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class QueryImageByTagsResourceDetail:
 
     @property
     def status(self):
-        """Gets the status of this QueryImageByTagsResourceDetail.
+        r"""Gets the status of this QueryImageByTagsResourceDetail.
 
         镜像状态
 
@@ -53,7 +53,7 @@ class QueryImageByTagsResourceDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryImageByTagsResourceDetail.
+        r"""Sets the status of this QueryImageByTagsResourceDetail.
 
         镜像状态
 

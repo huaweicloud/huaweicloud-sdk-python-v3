@@ -29,7 +29,7 @@ class LayerPath:
     }
 
     def __init__(self, catalog_id=None, name=None, order=None):
-        """LayerPath
+        r"""LayerPath
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LayerPath:
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this LayerPath.
+        r"""Gets the catalog_id of this LayerPath.
 
         目录编号
 
@@ -68,7 +68,7 @@ class LayerPath:
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this LayerPath.
+        r"""Sets the catalog_id of this LayerPath.
 
         目录编号
 
@@ -79,7 +79,7 @@ class LayerPath:
 
     @property
     def name(self):
-        """Gets the name of this LayerPath.
+        r"""Gets the name of this LayerPath.
 
         路径名
 
@@ -90,7 +90,7 @@ class LayerPath:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LayerPath.
+        r"""Sets the name of this LayerPath.
 
         路径名
 
@@ -101,7 +101,7 @@ class LayerPath:
 
     @property
     def order(self):
-        """Gets the order of this LayerPath.
+        r"""Gets the order of this LayerPath.
 
         路径层级
 
@@ -112,7 +112,7 @@ class LayerPath:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this LayerPath.
+        r"""Sets the order of this LayerPath.
 
         路径层级
 

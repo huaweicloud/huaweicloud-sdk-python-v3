@@ -25,7 +25,7 @@ class UpdateHttpPolicyRuleStatusRequestBody:
     }
 
     def __init__(self, status=None):
-        """UpdateHttpPolicyRuleStatusRequestBody
+        r"""UpdateHttpPolicyRuleStatusRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateHttpPolicyRuleStatusRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateHttpPolicyRuleStatusRequestBody.
+        r"""Gets the status of this UpdateHttpPolicyRuleStatusRequestBody.
 
         0-关闭 1-开启
 
@@ -53,7 +53,7 @@ class UpdateHttpPolicyRuleStatusRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateHttpPolicyRuleStatusRequestBody.
+        r"""Sets the status of this UpdateHttpPolicyRuleStatusRequestBody.
 
         0-关闭 1-开启
 

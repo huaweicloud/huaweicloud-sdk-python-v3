@@ -24,7 +24,7 @@ class ReclaimSubEnterpriseAmountResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ReclaimSubEnterpriseAmountResponse
+        r"""ReclaimSubEnterpriseAmountResponse
 
         The model defined in huaweicloud sdk
 

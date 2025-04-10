@@ -26,7 +26,7 @@ class ShowCaseDetailResponse(SdkResponse):
     }
 
     def __init__(self, incident_detail_info=None):
-        """ShowCaseDetailResponse
+        r"""ShowCaseDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowCaseDetailResponse(SdkResponse):
 
     @property
     def incident_detail_info(self):
-        """Gets the incident_detail_info of this ShowCaseDetailResponse.
+        r"""Gets the incident_detail_info of this ShowCaseDetailResponse.
 
         :return: The incident_detail_info of this ShowCaseDetailResponse.
         :rtype: :class:`huaweicloudsdkosm.v2.IncidentDetailInfoV2`
@@ -53,7 +53,7 @@ class ShowCaseDetailResponse(SdkResponse):
 
     @incident_detail_info.setter
     def incident_detail_info(self, incident_detail_info):
-        """Sets the incident_detail_info of this ShowCaseDetailResponse.
+        r"""Sets the incident_detail_info of this ShowCaseDetailResponse.
 
         :param incident_detail_info: The incident_detail_info of this ShowCaseDetailResponse.
         :type incident_detail_info: :class:`huaweicloudsdkosm.v2.IncidentDetailInfoV2`

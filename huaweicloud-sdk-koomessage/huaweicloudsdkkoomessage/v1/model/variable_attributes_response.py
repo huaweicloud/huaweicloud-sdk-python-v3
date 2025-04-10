@@ -33,7 +33,7 @@ class VariableAttributesResponse:
     }
 
     def __init__(self, id=None, variable_index=None, variable_length=None, variable_type=None, variable_desc=None):
-        """VariableAttributesResponse
+        r"""VariableAttributesResponse
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class VariableAttributesResponse:
 
     @property
     def id(self):
-        """Gets the id of this VariableAttributesResponse.
+        r"""Gets the id of this VariableAttributesResponse.
 
         ID。
 
@@ -82,7 +82,7 @@ class VariableAttributesResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VariableAttributesResponse.
+        r"""Sets the id of this VariableAttributesResponse.
 
         ID。
 
@@ -93,7 +93,7 @@ class VariableAttributesResponse:
 
     @property
     def variable_index(self):
-        """Gets the variable_index of this VariableAttributesResponse.
+        r"""Gets the variable_index of this VariableAttributesResponse.
 
         变量索引。
 
@@ -104,7 +104,7 @@ class VariableAttributesResponse:
 
     @variable_index.setter
     def variable_index(self, variable_index):
-        """Sets the variable_index of this VariableAttributesResponse.
+        r"""Sets the variable_index of this VariableAttributesResponse.
 
         变量索引。
 
@@ -115,7 +115,7 @@ class VariableAttributesResponse:
 
     @property
     def variable_length(self):
-        """Gets the variable_length of this VariableAttributesResponse.
+        r"""Gets the variable_length of this VariableAttributesResponse.
 
         变量长度。
 
@@ -126,7 +126,7 @@ class VariableAttributesResponse:
 
     @variable_length.setter
     def variable_length(self, variable_length):
-        """Sets the variable_length of this VariableAttributesResponse.
+        r"""Sets the variable_length of this VariableAttributesResponse.
 
         变量长度。
 
@@ -137,7 +137,7 @@ class VariableAttributesResponse:
 
     @property
     def variable_type(self):
-        """Gets the variable_type of this VariableAttributesResponse.
+        r"""Gets the variable_type of this VariableAttributesResponse.
 
         变量类型。
 
@@ -148,7 +148,7 @@ class VariableAttributesResponse:
 
     @variable_type.setter
     def variable_type(self, variable_type):
-        """Sets the variable_type of this VariableAttributesResponse.
+        r"""Sets the variable_type of this VariableAttributesResponse.
 
         变量类型。
 
@@ -159,7 +159,7 @@ class VariableAttributesResponse:
 
     @property
     def variable_desc(self):
-        """Gets the variable_desc of this VariableAttributesResponse.
+        r"""Gets the variable_desc of this VariableAttributesResponse.
 
         变量描述。
 
@@ -170,7 +170,7 @@ class VariableAttributesResponse:
 
     @variable_desc.setter
     def variable_desc(self, variable_desc):
-        """Sets the variable_desc of this VariableAttributesResponse.
+        r"""Sets the variable_desc of this VariableAttributesResponse.
 
         变量描述。
 

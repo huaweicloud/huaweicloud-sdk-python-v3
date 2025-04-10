@@ -55,7 +55,7 @@ class Flow:
     }
 
     def __init__(self, flow_id=None, attr_pair_rules_filter=None, attr_pair_rules_reserve=None, deduplication_list=None, attribute_info=None, bloom_filter_conf=None, group_attr=None, pre_deal=None, rank_setting=None, rules=None, filter_sets=None, attr_value_rules_filter=None, attr_value_rules_reserve=None, ctr_job=None, ratio=None, toppings=None):
-        """Flow
+        r"""Flow
 
         The model defined in huaweicloud sdk
 
@@ -147,7 +147,7 @@ class Flow:
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this Flow.
+        r"""Gets the flow_id of this Flow.
 
         流程id。
 
@@ -158,7 +158,7 @@ class Flow:
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this Flow.
+        r"""Sets the flow_id of this Flow.
 
         流程id。
 
@@ -169,7 +169,7 @@ class Flow:
 
     @property
     def attr_pair_rules_filter(self):
-        """Gets the attr_pair_rules_filter of this Flow.
+        r"""Gets the attr_pair_rules_filter of this Flow.
 
         属性对过滤。
 
@@ -180,7 +180,7 @@ class Flow:
 
     @attr_pair_rules_filter.setter
     def attr_pair_rules_filter(self, attr_pair_rules_filter):
-        """Sets the attr_pair_rules_filter of this Flow.
+        r"""Sets the attr_pair_rules_filter of this Flow.
 
         属性对过滤。
 
@@ -191,7 +191,7 @@ class Flow:
 
     @property
     def attr_pair_rules_reserve(self):
-        """Gets the attr_pair_rules_reserve of this Flow.
+        r"""Gets the attr_pair_rules_reserve of this Flow.
 
         属性对保留。
 
@@ -202,7 +202,7 @@ class Flow:
 
     @attr_pair_rules_reserve.setter
     def attr_pair_rules_reserve(self, attr_pair_rules_reserve):
-        """Sets the attr_pair_rules_reserve of this Flow.
+        r"""Sets the attr_pair_rules_reserve of this Flow.
 
         属性对保留。
 
@@ -213,7 +213,7 @@ class Flow:
 
     @property
     def deduplication_list(self):
-        """Gets the deduplication_list of this Flow.
+        r"""Gets the deduplication_list of this Flow.
 
         属性去重。
 
@@ -224,7 +224,7 @@ class Flow:
 
     @deduplication_list.setter
     def deduplication_list(self, deduplication_list):
-        """Sets the deduplication_list of this Flow.
+        r"""Sets the deduplication_list of this Flow.
 
         属性去重。
 
@@ -235,7 +235,7 @@ class Flow:
 
     @property
     def attribute_info(self):
-        """Gets the attribute_info of this Flow.
+        r"""Gets the attribute_info of this Flow.
 
         :return: The attribute_info of this Flow.
         :rtype: :class:`huaweicloudsdkres.v1.AttributeInfo`
@@ -244,7 +244,7 @@ class Flow:
 
     @attribute_info.setter
     def attribute_info(self, attribute_info):
-        """Sets the attribute_info of this Flow.
+        r"""Sets the attribute_info of this Flow.
 
         :param attribute_info: The attribute_info of this Flow.
         :type attribute_info: :class:`huaweicloudsdkres.v1.AttributeInfo`
@@ -253,7 +253,7 @@ class Flow:
 
     @property
     def bloom_filter_conf(self):
-        """Gets the bloom_filter_conf of this Flow.
+        r"""Gets the bloom_filter_conf of this Flow.
 
         :return: The bloom_filter_conf of this Flow.
         :rtype: :class:`huaweicloudsdkres.v1.BloomFilterConf`
@@ -262,7 +262,7 @@ class Flow:
 
     @bloom_filter_conf.setter
     def bloom_filter_conf(self, bloom_filter_conf):
-        """Sets the bloom_filter_conf of this Flow.
+        r"""Sets the bloom_filter_conf of this Flow.
 
         :param bloom_filter_conf: The bloom_filter_conf of this Flow.
         :type bloom_filter_conf: :class:`huaweicloudsdkres.v1.BloomFilterConf`
@@ -271,7 +271,7 @@ class Flow:
 
     @property
     def group_attr(self):
-        """Gets the group_attr of this Flow.
+        r"""Gets the group_attr of this Flow.
 
         分组打散属性。
 
@@ -282,7 +282,7 @@ class Flow:
 
     @group_attr.setter
     def group_attr(self, group_attr):
-        """Sets the group_attr of this Flow.
+        r"""Sets the group_attr of this Flow.
 
         分组打散属性。
 
@@ -293,7 +293,7 @@ class Flow:
 
     @property
     def pre_deal(self):
-        """Gets the pre_deal of this Flow.
+        r"""Gets the pre_deal of this Flow.
 
         在排序前去重。
 
@@ -304,7 +304,7 @@ class Flow:
 
     @pre_deal.setter
     def pre_deal(self, pre_deal):
-        """Sets the pre_deal of this Flow.
+        r"""Sets the pre_deal of this Flow.
 
         在排序前去重。
 
@@ -315,7 +315,7 @@ class Flow:
 
     @property
     def rank_setting(self):
-        """Gets the rank_setting of this Flow.
+        r"""Gets the rank_setting of this Flow.
 
         排序配置信息。
 
@@ -326,7 +326,7 @@ class Flow:
 
     @rank_setting.setter
     def rank_setting(self, rank_setting):
-        """Sets the rank_setting of this Flow.
+        r"""Sets the rank_setting of this Flow.
 
         排序配置信息。
 
@@ -337,7 +337,7 @@ class Flow:
 
     @property
     def rules(self):
-        """Gets the rules of this Flow.
+        r"""Gets the rules of this Flow.
 
         :return: The rules of this Flow.
         :rtype: :class:`huaweicloudsdkres.v1.Rule`
@@ -346,7 +346,7 @@ class Flow:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this Flow.
+        r"""Sets the rules of this Flow.
 
         :param rules: The rules of this Flow.
         :type rules: :class:`huaweicloudsdkres.v1.Rule`
@@ -355,7 +355,7 @@ class Flow:
 
     @property
     def filter_sets(self):
-        """Gets the filter_sets of this Flow.
+        r"""Gets the filter_sets of this Flow.
 
         过滤配置信息。
 
@@ -366,7 +366,7 @@ class Flow:
 
     @filter_sets.setter
     def filter_sets(self, filter_sets):
-        """Sets the filter_sets of this Flow.
+        r"""Sets the filter_sets of this Flow.
 
         过滤配置信息。
 
@@ -377,7 +377,7 @@ class Flow:
 
     @property
     def attr_value_rules_filter(self):
-        """Gets the attr_value_rules_filter of this Flow.
+        r"""Gets the attr_value_rules_filter of this Flow.
 
         属性值过滤。
 
@@ -388,7 +388,7 @@ class Flow:
 
     @attr_value_rules_filter.setter
     def attr_value_rules_filter(self, attr_value_rules_filter):
-        """Sets the attr_value_rules_filter of this Flow.
+        r"""Sets the attr_value_rules_filter of this Flow.
 
         属性值过滤。
 
@@ -399,7 +399,7 @@ class Flow:
 
     @property
     def attr_value_rules_reserve(self):
-        """Gets the attr_value_rules_reserve of this Flow.
+        r"""Gets the attr_value_rules_reserve of this Flow.
 
         属性值保留。
 
@@ -410,7 +410,7 @@ class Flow:
 
     @attr_value_rules_reserve.setter
     def attr_value_rules_reserve(self, attr_value_rules_reserve):
-        """Sets the attr_value_rules_reserve of this Flow.
+        r"""Sets the attr_value_rules_reserve of this Flow.
 
         属性值保留。
 
@@ -421,7 +421,7 @@ class Flow:
 
     @property
     def ctr_job(self):
-        """Gets the ctr_job of this Flow.
+        r"""Gets the ctr_job of this Flow.
 
         排序作业（使用点击率预估时需要提供此参数）。
 
@@ -432,7 +432,7 @@ class Flow:
 
     @ctr_job.setter
     def ctr_job(self, ctr_job):
-        """Sets the ctr_job of this Flow.
+        r"""Sets the ctr_job of this Flow.
 
         排序作业（使用点击率预估时需要提供此参数）。
 
@@ -443,7 +443,7 @@ class Flow:
 
     @property
     def ratio(self):
-        """Gets the ratio of this Flow.
+        r"""Gets the ratio of this Flow.
 
         流量占比。
 
@@ -454,7 +454,7 @@ class Flow:
 
     @ratio.setter
     def ratio(self, ratio):
-        """Sets the ratio of this Flow.
+        r"""Sets the ratio of this Flow.
 
         流量占比。
 
@@ -465,7 +465,7 @@ class Flow:
 
     @property
     def toppings(self):
-        """Gets the toppings of this Flow.
+        r"""Gets the toppings of this Flow.
 
         需要置顶的候选集列表。
 
@@ -476,7 +476,7 @@ class Flow:
 
     @toppings.setter
     def toppings(self, toppings):
-        """Sets the toppings of this Flow.
+        r"""Sets the toppings of this Flow.
 
         需要置顶的候选集列表。
 

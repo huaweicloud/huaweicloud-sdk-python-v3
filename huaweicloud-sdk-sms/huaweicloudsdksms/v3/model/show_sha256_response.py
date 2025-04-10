@@ -26,7 +26,7 @@ class ShowSha256Response(SdkResponse):
     }
 
     def __init__(self, value=None):
-        """ShowSha256Response
+        r"""ShowSha256Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSha256Response(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this ShowSha256Response.
+        r"""Gets the value of this ShowSha256Response.
 
         Sha256值
 
@@ -55,7 +55,7 @@ class ShowSha256Response(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ShowSha256Response.
+        r"""Sets the value of this ShowSha256Response.
 
         Sha256值
 

@@ -27,7 +27,7 @@ class PreviewSqlJobResultRequest:
     }
 
     def __init__(self, job_id=None, queue_name=None):
-        """PreviewSqlJobResultRequest
+        r"""PreviewSqlJobResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PreviewSqlJobResultRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this PreviewSqlJobResultRequest.
+        r"""Gets the job_id of this PreviewSqlJobResultRequest.
 
         作业ID。
 
@@ -60,7 +60,7 @@ class PreviewSqlJobResultRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this PreviewSqlJobResultRequest.
+        r"""Sets the job_id of this PreviewSqlJobResultRequest.
 
         作业ID。
 
@@ -71,7 +71,7 @@ class PreviewSqlJobResultRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this PreviewSqlJobResultRequest.
+        r"""Gets the queue_name of this PreviewSqlJobResultRequest.
 
         指定获取作业结果的执行队列名称。若不指定则使用默认的系统队列
 
@@ -82,7 +82,7 @@ class PreviewSqlJobResultRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this PreviewSqlJobResultRequest.
+        r"""Sets the queue_name of this PreviewSqlJobResultRequest.
 
         指定获取作业结果的执行队列名称。若不指定则使用默认的系统队列
 

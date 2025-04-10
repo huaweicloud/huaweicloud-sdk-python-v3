@@ -25,7 +25,7 @@ class RollbackInstanceRequestBody:
     }
 
     def __init__(self, server_id=None):
-        """RollbackInstanceRequestBody
+        r"""RollbackInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RollbackInstanceRequestBody:
 
     @property
     def server_id(self):
-        """Gets the server_id of this RollbackInstanceRequestBody.
+        r"""Gets the server_id of this RollbackInstanceRequestBody.
 
         需要回退的实例id
 
@@ -53,7 +53,7 @@ class RollbackInstanceRequestBody:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this RollbackInstanceRequestBody.
+        r"""Sets the server_id of this RollbackInstanceRequestBody.
 
         需要回退的实例id
 

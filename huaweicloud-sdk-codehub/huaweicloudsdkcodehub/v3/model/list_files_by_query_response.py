@@ -30,7 +30,7 @@ class ListFilesByQueryResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListFilesByQueryResponse
+        r"""ListFilesByQueryResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFilesByQueryResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListFilesByQueryResponse.
+        r"""Gets the error of this ListFilesByQueryResponse.
 
         :return: The error of this ListFilesByQueryResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ListFilesByQueryResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListFilesByQueryResponse.
+        r"""Sets the error of this ListFilesByQueryResponse.
 
         :param error: The error of this ListFilesByQueryResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ListFilesByQueryResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListFilesByQueryResponse.
+        r"""Gets the result of this ListFilesByQueryResponse.
 
         :return: The result of this ListFilesByQueryResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.FileContentInfo`
@@ -85,7 +85,7 @@ class ListFilesByQueryResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListFilesByQueryResponse.
+        r"""Sets the result of this ListFilesByQueryResponse.
 
         :param result: The result of this ListFilesByQueryResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.FileContentInfo`
@@ -94,7 +94,7 @@ class ListFilesByQueryResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListFilesByQueryResponse.
+        r"""Gets the status of this ListFilesByQueryResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ListFilesByQueryResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListFilesByQueryResponse.
+        r"""Sets the status of this ListFilesByQueryResponse.
 
         响应状态
 

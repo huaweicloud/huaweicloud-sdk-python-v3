@@ -33,7 +33,7 @@ class ShowTestCaseReviewsRequest:
     }
 
     def __init__(self, project_uuid=None, version_uri=None, page_no=None, page_size=None, testcase_uri=None):
-        """ShowTestCaseReviewsRequest
+        r"""ShowTestCaseReviewsRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ShowTestCaseReviewsRequest:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this ShowTestCaseReviewsRequest.
+        r"""Gets the project_uuid of this ShowTestCaseReviewsRequest.
 
         项目id
 
@@ -77,7 +77,7 @@ class ShowTestCaseReviewsRequest:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ShowTestCaseReviewsRequest.
+        r"""Sets the project_uuid of this ShowTestCaseReviewsRequest.
 
         项目id
 
@@ -88,7 +88,7 @@ class ShowTestCaseReviewsRequest:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this ShowTestCaseReviewsRequest.
+        r"""Gets the version_uri of this ShowTestCaseReviewsRequest.
 
         版本URI
 
@@ -99,7 +99,7 @@ class ShowTestCaseReviewsRequest:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this ShowTestCaseReviewsRequest.
+        r"""Sets the version_uri of this ShowTestCaseReviewsRequest.
 
         版本URI
 
@@ -110,7 +110,7 @@ class ShowTestCaseReviewsRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ShowTestCaseReviewsRequest.
+        r"""Gets the page_no of this ShowTestCaseReviewsRequest.
 
         当前页数
 
@@ -121,7 +121,7 @@ class ShowTestCaseReviewsRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ShowTestCaseReviewsRequest.
+        r"""Sets the page_no of this ShowTestCaseReviewsRequest.
 
         当前页数
 
@@ -132,7 +132,7 @@ class ShowTestCaseReviewsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowTestCaseReviewsRequest.
+        r"""Gets the page_size of this ShowTestCaseReviewsRequest.
 
         每页条数
 
@@ -143,7 +143,7 @@ class ShowTestCaseReviewsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowTestCaseReviewsRequest.
+        r"""Sets the page_size of this ShowTestCaseReviewsRequest.
 
         每页条数
 
@@ -154,7 +154,7 @@ class ShowTestCaseReviewsRequest:
 
     @property
     def testcase_uri(self):
-        """Gets the testcase_uri of this ShowTestCaseReviewsRequest.
+        r"""Gets the testcase_uri of this ShowTestCaseReviewsRequest.
 
         分支用例URI
 
@@ -165,7 +165,7 @@ class ShowTestCaseReviewsRequest:
 
     @testcase_uri.setter
     def testcase_uri(self, testcase_uri):
-        """Sets the testcase_uri of this ShowTestCaseReviewsRequest.
+        r"""Sets the testcase_uri of this ShowTestCaseReviewsRequest.
 
         分支用例URI
 

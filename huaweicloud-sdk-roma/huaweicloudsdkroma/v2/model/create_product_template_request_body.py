@@ -29,7 +29,7 @@ class CreateProductTemplateRequestBody:
     }
 
     def __init__(self, name=None, description=None, status=None):
-        """CreateProductTemplateRequestBody
+        r"""CreateProductTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateProductTemplateRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateProductTemplateRequestBody.
+        r"""Gets the name of this CreateProductTemplateRequestBody.
 
         产品模板名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
 
@@ -66,7 +66,7 @@ class CreateProductTemplateRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateProductTemplateRequestBody.
+        r"""Sets the name of this CreateProductTemplateRequestBody.
 
         产品模板名称，支持中文,英文大小写，数字，下划线和中划线,长度2-64
 
@@ -77,7 +77,7 @@ class CreateProductTemplateRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateProductTemplateRequestBody.
+        r"""Gets the description of this CreateProductTemplateRequestBody.
 
         产品模板描述，长度0-200
 
@@ -88,7 +88,7 @@ class CreateProductTemplateRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateProductTemplateRequestBody.
+        r"""Sets the description of this CreateProductTemplateRequestBody.
 
         产品模板描述，长度0-200
 
@@ -99,7 +99,7 @@ class CreateProductTemplateRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this CreateProductTemplateRequestBody.
+        r"""Gets the status of this CreateProductTemplateRequestBody.
 
         产品模板状态 0-启用 1-禁用
 
@@ -110,7 +110,7 @@ class CreateProductTemplateRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateProductTemplateRequestBody.
+        r"""Sets the status of this CreateProductTemplateRequestBody.
 
         产品模板状态 0-启用 1-禁用
 

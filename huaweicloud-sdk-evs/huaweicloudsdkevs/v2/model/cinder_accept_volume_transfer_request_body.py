@@ -25,7 +25,7 @@ class CinderAcceptVolumeTransferRequestBody:
     }
 
     def __init__(self, accept=None):
-        """CinderAcceptVolumeTransferRequestBody
+        r"""CinderAcceptVolumeTransferRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CinderAcceptVolumeTransferRequestBody:
 
     @property
     def accept(self):
-        """Gets the accept of this CinderAcceptVolumeTransferRequestBody.
+        r"""Gets the accept of this CinderAcceptVolumeTransferRequestBody.
 
         :return: The accept of this CinderAcceptVolumeTransferRequestBody.
         :rtype: :class:`huaweicloudsdkevs.v2.CinderAcceptVolumeTransferOption`
@@ -51,7 +51,7 @@ class CinderAcceptVolumeTransferRequestBody:
 
     @accept.setter
     def accept(self, accept):
-        """Sets the accept of this CinderAcceptVolumeTransferRequestBody.
+        r"""Sets the accept of this CinderAcceptVolumeTransferRequestBody.
 
         :param accept: The accept of this CinderAcceptVolumeTransferRequestBody.
         :type accept: :class:`huaweicloudsdkevs.v2.CinderAcceptVolumeTransferOption`

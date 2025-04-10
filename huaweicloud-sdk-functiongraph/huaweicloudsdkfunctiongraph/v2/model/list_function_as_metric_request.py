@@ -31,7 +31,7 @@ class ListFunctionAsMetricRequest:
     }
 
     def __init__(self, type=None, start_time=None, end_time=None, limit=None):
-        """ListFunctionAsMetricRequest
+        r"""ListFunctionAsMetricRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListFunctionAsMetricRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListFunctionAsMetricRequest.
+        r"""Gets the type of this ListFunctionAsMetricRequest.
 
         指标类型，默认值为failcount。
 
@@ -75,7 +75,7 @@ class ListFunctionAsMetricRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListFunctionAsMetricRequest.
+        r"""Sets the type of this ListFunctionAsMetricRequest.
 
         指标类型，默认值为failcount。
 
@@ -86,7 +86,7 @@ class ListFunctionAsMetricRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListFunctionAsMetricRequest.
+        r"""Gets the start_time of this ListFunctionAsMetricRequest.
 
         起始时间。
 
@@ -97,7 +97,7 @@ class ListFunctionAsMetricRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListFunctionAsMetricRequest.
+        r"""Sets the start_time of this ListFunctionAsMetricRequest.
 
         起始时间。
 
@@ -108,7 +108,7 @@ class ListFunctionAsMetricRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListFunctionAsMetricRequest.
+        r"""Gets the end_time of this ListFunctionAsMetricRequest.
 
         结束时间。
 
@@ -119,7 +119,7 @@ class ListFunctionAsMetricRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListFunctionAsMetricRequest.
+        r"""Sets the end_time of this ListFunctionAsMetricRequest.
 
         结束时间。
 
@@ -130,7 +130,7 @@ class ListFunctionAsMetricRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFunctionAsMetricRequest.
+        r"""Gets the limit of this ListFunctionAsMetricRequest.
 
         指标类型，默认值为failcount。
 
@@ -141,7 +141,7 @@ class ListFunctionAsMetricRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFunctionAsMetricRequest.
+        r"""Sets the limit of this ListFunctionAsMetricRequest.
 
         指标类型，默认值为failcount。
 

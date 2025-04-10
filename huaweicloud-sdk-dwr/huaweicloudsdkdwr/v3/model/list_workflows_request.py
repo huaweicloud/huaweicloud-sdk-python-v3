@@ -29,7 +29,7 @@ class ListWorkflowsRequest:
     }
 
     def __init__(self, prefix=None, offset=None, limit=None):
-        """ListWorkflowsRequest
+        r"""ListWorkflowsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListWorkflowsRequest:
 
     @property
     def prefix(self):
-        """Gets the prefix of this ListWorkflowsRequest.
+        r"""Gets the prefix of this ListWorkflowsRequest.
 
         工作流的名称前缀。名称必须以字母或数字开头，只能由字母、数字、下划线和中划线组成，长度小于等于64个字符。
 
@@ -68,7 +68,7 @@ class ListWorkflowsRequest:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this ListWorkflowsRequest.
+        r"""Sets the prefix of this ListWorkflowsRequest.
 
         工作流的名称前缀。名称必须以字母或数字开头，只能由字母、数字、下划线和中划线组成，长度小于等于64个字符。
 
@@ -79,7 +79,7 @@ class ListWorkflowsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkflowsRequest.
+        r"""Gets the offset of this ListWorkflowsRequest.
 
         查询的起始位置。start大于等于1，最大1000，不设置则取默认值1。
 
@@ -90,7 +90,7 @@ class ListWorkflowsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkflowsRequest.
+        r"""Sets the offset of this ListWorkflowsRequest.
 
         查询的起始位置。start大于等于1，最大1000，不设置则取默认值1。
 
@@ -101,7 +101,7 @@ class ListWorkflowsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkflowsRequest.
+        r"""Gets the limit of this ListWorkflowsRequest.
 
         请求返回的最大记录条数。limit取值最小1，最大1000，不设置则取默认值10。
 
@@ -112,7 +112,7 @@ class ListWorkflowsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkflowsRequest.
+        r"""Sets the limit of this ListWorkflowsRequest.
 
         请求返回的最大记录条数。limit取值最小1，最大1000，不设置则取默认值10。
 

@@ -35,7 +35,7 @@ class ExecutionResultList:
     }
 
     def __init__(self, node_id=None, begin_time=None, end_time=None, function_execution_id=None, output=None, status=None):
-        """ExecutionResultList
+        r"""ExecutionResultList
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ExecutionResultList:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ExecutionResultList.
+        r"""Gets the node_id of this ExecutionResultList.
 
         流程节点ID。
 
@@ -89,7 +89,7 @@ class ExecutionResultList:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ExecutionResultList.
+        r"""Sets the node_id of this ExecutionResultList.
 
         流程节点ID。
 
@@ -100,7 +100,7 @@ class ExecutionResultList:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ExecutionResultList.
+        r"""Gets the begin_time of this ExecutionResultList.
 
         节点开始执行时间。
 
@@ -111,7 +111,7 @@ class ExecutionResultList:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ExecutionResultList.
+        r"""Sets the begin_time of this ExecutionResultList.
 
         节点开始执行时间。
 
@@ -122,7 +122,7 @@ class ExecutionResultList:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ExecutionResultList.
+        r"""Gets the end_time of this ExecutionResultList.
 
         节点执行结束时间。
 
@@ -133,7 +133,7 @@ class ExecutionResultList:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ExecutionResultList.
+        r"""Sets the end_time of this ExecutionResultList.
 
         节点执行结束时间。
 
@@ -144,7 +144,7 @@ class ExecutionResultList:
 
     @property
     def function_execution_id(self):
-        """Gets the function_execution_id of this ExecutionResultList.
+        r"""Gets the function_execution_id of this ExecutionResultList.
 
         FunctionGraph的执行id。
 
@@ -155,7 +155,7 @@ class ExecutionResultList:
 
     @function_execution_id.setter
     def function_execution_id(self, function_execution_id):
-        """Sets the function_execution_id of this ExecutionResultList.
+        r"""Sets the function_execution_id of this ExecutionResultList.
 
         FunctionGraph的执行id。
 
@@ -166,7 +166,7 @@ class ExecutionResultList:
 
     @property
     def output(self):
-        """Gets the output of this ExecutionResultList.
+        r"""Gets the output of this ExecutionResultList.
 
         节点输出。
 
@@ -177,7 +177,7 @@ class ExecutionResultList:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this ExecutionResultList.
+        r"""Sets the output of this ExecutionResultList.
 
         节点输出。
 
@@ -188,7 +188,7 @@ class ExecutionResultList:
 
     @property
     def status(self):
-        """Gets the status of this ExecutionResultList.
+        r"""Gets the status of this ExecutionResultList.
 
         节点状态。
 
@@ -199,7 +199,7 @@ class ExecutionResultList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExecutionResultList.
+        r"""Sets the status of this ExecutionResultList.
 
         节点状态。
 

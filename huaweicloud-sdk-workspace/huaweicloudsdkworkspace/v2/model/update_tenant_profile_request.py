@@ -25,7 +25,7 @@ class UpdateTenantProfileRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateTenantProfileRequest
+        r"""UpdateTenantProfileRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateTenantProfileRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTenantProfileRequest.
+        r"""Gets the body of this UpdateTenantProfileRequest.
 
         修改租户功能开关。
 
@@ -54,7 +54,7 @@ class UpdateTenantProfileRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTenantProfileRequest.
+        r"""Sets the body of this UpdateTenantProfileRequest.
 
         修改租户功能开关。
 

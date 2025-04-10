@@ -25,7 +25,7 @@ class ListComputingResourceFlavorsRequest:
     }
 
     def __init__(self, availability_zone_id=None):
-        """ListComputingResourceFlavorsRequest
+        r"""ListComputingResourceFlavorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListComputingResourceFlavorsRequest:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this ListComputingResourceFlavorsRequest.
+        r"""Gets the availability_zone_id of this ListComputingResourceFlavorsRequest.
 
         可用区
 
@@ -54,7 +54,7 @@ class ListComputingResourceFlavorsRequest:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this ListComputingResourceFlavorsRequest.
+        r"""Sets the availability_zone_id of this ListComputingResourceFlavorsRequest.
 
         可用区
 

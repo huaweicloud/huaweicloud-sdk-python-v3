@@ -27,7 +27,7 @@ class ShowMemberDetailRequest:
     }
 
     def __init__(self, backup_id=None, member_id=None):
-        """ShowMemberDetailRequest
+        r"""ShowMemberDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowMemberDetailRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ShowMemberDetailRequest.
+        r"""Gets the backup_id of this ShowMemberDetailRequest.
 
         备份副本id
 
@@ -59,7 +59,7 @@ class ShowMemberDetailRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ShowMemberDetailRequest.
+        r"""Sets the backup_id of this ShowMemberDetailRequest.
 
         备份副本id
 
@@ -70,7 +70,7 @@ class ShowMemberDetailRequest:
 
     @property
     def member_id(self):
-        """Gets the member_id of this ShowMemberDetailRequest.
+        r"""Gets the member_id of this ShowMemberDetailRequest.
 
         成员id，为接收方的project_id
 
@@ -81,7 +81,7 @@ class ShowMemberDetailRequest:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this ShowMemberDetailRequest.
+        r"""Sets the member_id of this ShowMemberDetailRequest.
 
         成员id，为接收方的project_id
 

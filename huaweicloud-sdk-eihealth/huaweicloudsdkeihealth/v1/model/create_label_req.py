@@ -27,7 +27,7 @@ class CreateLabelReq:
     }
 
     def __init__(self, name=None, description=None):
-        """CreateLabelReq
+        r"""CreateLabelReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateLabelReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateLabelReq.
+        r"""Gets the name of this CreateLabelReq.
 
         标签名称
 
@@ -60,7 +60,7 @@ class CreateLabelReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateLabelReq.
+        r"""Sets the name of this CreateLabelReq.
 
         标签名称
 
@@ -71,7 +71,7 @@ class CreateLabelReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateLabelReq.
+        r"""Gets the description of this CreateLabelReq.
 
         标签描述
 
@@ -82,7 +82,7 @@ class CreateLabelReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateLabelReq.
+        r"""Sets the description of this CreateLabelReq.
 
         标签描述
 

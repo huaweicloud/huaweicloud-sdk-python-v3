@@ -28,7 +28,7 @@ class AssociateIssuesResponse(SdkResponse):
     }
 
     def __init__(self, error=None, status=None):
-        """AssociateIssuesResponse
+        r"""AssociateIssuesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AssociateIssuesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this AssociateIssuesResponse.
+        r"""Gets the error of this AssociateIssuesResponse.
 
         :return: The error of this AssociateIssuesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -60,7 +60,7 @@ class AssociateIssuesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this AssociateIssuesResponse.
+        r"""Sets the error of this AssociateIssuesResponse.
 
         :param error: The error of this AssociateIssuesResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -69,7 +69,7 @@ class AssociateIssuesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AssociateIssuesResponse.
+        r"""Gets the status of this AssociateIssuesResponse.
 
         响应状态
 
@@ -80,7 +80,7 @@ class AssociateIssuesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AssociateIssuesResponse.
+        r"""Sets the status of this AssociateIssuesResponse.
 
         响应状态
 

@@ -26,7 +26,7 @@ class ListAliasesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListAliasesResponse
+        r"""ListAliasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAliasesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListAliasesResponse.
+        r"""Gets the body of this ListAliasesResponse.
 
         :return: The body of this ListAliasesResponse.
         :rtype: list[:class:`huaweicloudsdkkms.v2.ListAliasResponseBody`]
@@ -53,7 +53,7 @@ class ListAliasesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAliasesResponse.
+        r"""Sets the body of this ListAliasesResponse.
 
         :param body: The body of this ListAliasesResponse.
         :type body: list[:class:`huaweicloudsdkkms.v2.ListAliasResponseBody`]

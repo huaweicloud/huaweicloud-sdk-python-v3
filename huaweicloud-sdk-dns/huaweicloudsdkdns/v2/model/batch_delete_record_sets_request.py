@@ -25,7 +25,7 @@ class BatchDeleteRecordSetsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteRecordSetsRequest
+        r"""BatchDeleteRecordSetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteRecordSetsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteRecordSetsRequest.
+        r"""Gets the body of this BatchDeleteRecordSetsRequest.
 
         :return: The body of this BatchDeleteRecordSetsRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetsRequestBody`
@@ -52,7 +52,7 @@ class BatchDeleteRecordSetsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteRecordSetsRequest.
+        r"""Sets the body of this BatchDeleteRecordSetsRequest.
 
         :param body: The body of this BatchDeleteRecordSetsRequest.
         :type body: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetsRequestBody`

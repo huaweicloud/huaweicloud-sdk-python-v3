@@ -37,7 +37,7 @@ class QueryAdminResultDTO:
     }
 
     def __init__(self, id=None, account=None, name=None, admin_type=None, email=None, phone=None, country=None):
-        """QueryAdminResultDTO
+        r"""QueryAdminResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class QueryAdminResultDTO:
 
     @property
     def id(self):
-        """Gets the id of this QueryAdminResultDTO.
+        r"""Gets the id of this QueryAdminResultDTO.
 
         用户UUID。
 
@@ -96,7 +96,7 @@ class QueryAdminResultDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryAdminResultDTO.
+        r"""Sets the id of this QueryAdminResultDTO.
 
         用户UUID。
 
@@ -107,7 +107,7 @@ class QueryAdminResultDTO:
 
     @property
     def account(self):
-        """Gets the account of this QueryAdminResultDTO.
+        r"""Gets the account of this QueryAdminResultDTO.
 
         用户华为云会议帐号。
 
@@ -118,7 +118,7 @@ class QueryAdminResultDTO:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this QueryAdminResultDTO.
+        r"""Sets the account of this QueryAdminResultDTO.
 
         用户华为云会议帐号。
 
@@ -129,7 +129,7 @@ class QueryAdminResultDTO:
 
     @property
     def name(self):
-        """Gets the name of this QueryAdminResultDTO.
+        r"""Gets the name of this QueryAdminResultDTO.
 
         名称。
 
@@ -140,7 +140,7 @@ class QueryAdminResultDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryAdminResultDTO.
+        r"""Sets the name of this QueryAdminResultDTO.
 
         名称。
 
@@ -151,7 +151,7 @@ class QueryAdminResultDTO:
 
     @property
     def admin_type(self):
-        """Gets the admin_type of this QueryAdminResultDTO.
+        r"""Gets the admin_type of this QueryAdminResultDTO.
 
         管理员类型。 - 0：默认管理员 - 1：普通管理员
 
@@ -162,7 +162,7 @@ class QueryAdminResultDTO:
 
     @admin_type.setter
     def admin_type(self, admin_type):
-        """Sets the admin_type of this QueryAdminResultDTO.
+        r"""Sets the admin_type of this QueryAdminResultDTO.
 
         管理员类型。 - 0：默认管理员 - 1：普通管理员
 
@@ -173,7 +173,7 @@ class QueryAdminResultDTO:
 
     @property
     def email(self):
-        """Gets the email of this QueryAdminResultDTO.
+        r"""Gets the email of this QueryAdminResultDTO.
 
         邮箱地址。
 
@@ -184,7 +184,7 @@ class QueryAdminResultDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this QueryAdminResultDTO.
+        r"""Sets the email of this QueryAdminResultDTO.
 
         邮箱地址。
 
@@ -195,7 +195,7 @@ class QueryAdminResultDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this QueryAdminResultDTO.
+        r"""Gets the phone of this QueryAdminResultDTO.
 
         联系电话。
 
@@ -206,7 +206,7 @@ class QueryAdminResultDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this QueryAdminResultDTO.
+        r"""Sets the phone of this QueryAdminResultDTO.
 
         联系电话。
 
@@ -217,7 +217,7 @@ class QueryAdminResultDTO:
 
     @property
     def country(self):
-        """Gets the country of this QueryAdminResultDTO.
+        r"""Gets the country of this QueryAdminResultDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -228,7 +228,7 @@ class QueryAdminResultDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this QueryAdminResultDTO.
+        r"""Sets the country of this QueryAdminResultDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 

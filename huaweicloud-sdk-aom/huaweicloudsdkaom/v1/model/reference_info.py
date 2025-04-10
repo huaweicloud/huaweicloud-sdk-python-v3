@@ -27,7 +27,7 @@ class ReferenceInfo:
     }
 
     def __init__(self, job_id=None, job_name=None):
-        """ReferenceInfo
+        r"""ReferenceInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ReferenceInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ReferenceInfo.
+        r"""Gets the job_id of this ReferenceInfo.
 
         作业ID。
 
@@ -59,7 +59,7 @@ class ReferenceInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ReferenceInfo.
+        r"""Sets the job_id of this ReferenceInfo.
 
         作业ID。
 
@@ -70,7 +70,7 @@ class ReferenceInfo:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ReferenceInfo.
+        r"""Gets the job_name of this ReferenceInfo.
 
         作业名称。
 
@@ -81,7 +81,7 @@ class ReferenceInfo:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ReferenceInfo.
+        r"""Sets the job_name of this ReferenceInfo.
 
         作业名称。
 

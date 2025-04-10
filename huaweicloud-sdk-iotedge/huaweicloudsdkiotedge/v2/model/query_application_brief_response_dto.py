@@ -43,7 +43,7 @@ class QueryApplicationBriefResponseDTO:
     }
 
     def __init__(self, edge_app_id=None, description=None, create_time=None, update_time=None, last_published_version=None, app_type=None, function_type=None, deploy_type=None, protocol=None, edge_app_name=None):
-        """QueryApplicationBriefResponseDTO
+        r"""QueryApplicationBriefResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class QueryApplicationBriefResponseDTO:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this QueryApplicationBriefResponseDTO.
+        r"""Gets the edge_app_id of this QueryApplicationBriefResponseDTO.
 
         应用id
 
@@ -117,7 +117,7 @@ class QueryApplicationBriefResponseDTO:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this QueryApplicationBriefResponseDTO.
+        r"""Sets the edge_app_id of this QueryApplicationBriefResponseDTO.
 
         应用id
 
@@ -128,7 +128,7 @@ class QueryApplicationBriefResponseDTO:
 
     @property
     def description(self):
-        """Gets the description of this QueryApplicationBriefResponseDTO.
+        r"""Gets the description of this QueryApplicationBriefResponseDTO.
 
         应用描述
 
@@ -139,7 +139,7 @@ class QueryApplicationBriefResponseDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryApplicationBriefResponseDTO.
+        r"""Sets the description of this QueryApplicationBriefResponseDTO.
 
         应用描述
 
@@ -150,7 +150,7 @@ class QueryApplicationBriefResponseDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryApplicationBriefResponseDTO.
+        r"""Gets the create_time of this QueryApplicationBriefResponseDTO.
 
         创建时间
 
@@ -161,7 +161,7 @@ class QueryApplicationBriefResponseDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryApplicationBriefResponseDTO.
+        r"""Sets the create_time of this QueryApplicationBriefResponseDTO.
 
         创建时间
 
@@ -172,7 +172,7 @@ class QueryApplicationBriefResponseDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this QueryApplicationBriefResponseDTO.
+        r"""Gets the update_time of this QueryApplicationBriefResponseDTO.
 
         最后一次修改时间
 
@@ -183,7 +183,7 @@ class QueryApplicationBriefResponseDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this QueryApplicationBriefResponseDTO.
+        r"""Sets the update_time of this QueryApplicationBriefResponseDTO.
 
         最后一次修改时间
 
@@ -194,7 +194,7 @@ class QueryApplicationBriefResponseDTO:
 
     @property
     def last_published_version(self):
-        """Gets the last_published_version of this QueryApplicationBriefResponseDTO.
+        r"""Gets the last_published_version of this QueryApplicationBriefResponseDTO.
 
         最新发布版本
 
@@ -205,7 +205,7 @@ class QueryApplicationBriefResponseDTO:
 
     @last_published_version.setter
     def last_published_version(self, last_published_version):
-        """Sets the last_published_version of this QueryApplicationBriefResponseDTO.
+        r"""Sets the last_published_version of this QueryApplicationBriefResponseDTO.
 
         最新发布版本
 
@@ -216,7 +216,7 @@ class QueryApplicationBriefResponseDTO:
 
     @property
     def app_type(self):
-        """Gets the app_type of this QueryApplicationBriefResponseDTO.
+        r"""Gets the app_type of this QueryApplicationBriefResponseDTO.
 
         应用类型SYSTEM_REQUIRED|SYSTEM_OPTIONAL|USER
 
@@ -227,7 +227,7 @@ class QueryApplicationBriefResponseDTO:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this QueryApplicationBriefResponseDTO.
+        r"""Sets the app_type of this QueryApplicationBriefResponseDTO.
 
         应用类型SYSTEM_REQUIRED|SYSTEM_OPTIONAL|USER
 
@@ -238,7 +238,7 @@ class QueryApplicationBriefResponseDTO:
 
     @property
     def function_type(self):
-        """Gets the function_type of this QueryApplicationBriefResponseDTO.
+        r"""Gets the function_type of this QueryApplicationBriefResponseDTO.
 
         应用类型DATA_PROCESSING|PROTOCOL_PARSING
 
@@ -249,7 +249,7 @@ class QueryApplicationBriefResponseDTO:
 
     @function_type.setter
     def function_type(self, function_type):
-        """Sets the function_type of this QueryApplicationBriefResponseDTO.
+        r"""Sets the function_type of this QueryApplicationBriefResponseDTO.
 
         应用类型DATA_PROCESSING|PROTOCOL_PARSING
 
@@ -260,7 +260,7 @@ class QueryApplicationBriefResponseDTO:
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this QueryApplicationBriefResponseDTO.
+        r"""Gets the deploy_type of this QueryApplicationBriefResponseDTO.
 
         部署类型docker|process
 
@@ -271,7 +271,7 @@ class QueryApplicationBriefResponseDTO:
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this QueryApplicationBriefResponseDTO.
+        r"""Sets the deploy_type of this QueryApplicationBriefResponseDTO.
 
         部署类型docker|process
 
@@ -282,7 +282,7 @@ class QueryApplicationBriefResponseDTO:
 
     @property
     def protocol(self):
-        """Gets the protocol of this QueryApplicationBriefResponseDTO.
+        r"""Gets the protocol of this QueryApplicationBriefResponseDTO.
 
         驱动协议类型OPCUA|Modbus-TCP
 
@@ -293,7 +293,7 @@ class QueryApplicationBriefResponseDTO:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this QueryApplicationBriefResponseDTO.
+        r"""Sets the protocol of this QueryApplicationBriefResponseDTO.
 
         驱动协议类型OPCUA|Modbus-TCP
 
@@ -304,7 +304,7 @@ class QueryApplicationBriefResponseDTO:
 
     @property
     def edge_app_name(self):
-        """Gets the edge_app_name of this QueryApplicationBriefResponseDTO.
+        r"""Gets the edge_app_name of this QueryApplicationBriefResponseDTO.
 
         应用名称
 
@@ -315,7 +315,7 @@ class QueryApplicationBriefResponseDTO:
 
     @edge_app_name.setter
     def edge_app_name(self, edge_app_name):
-        """Sets the edge_app_name of this QueryApplicationBriefResponseDTO.
+        r"""Sets the edge_app_name of this QueryApplicationBriefResponseDTO.
 
         应用名称
 

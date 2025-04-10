@@ -25,7 +25,7 @@ class ShowMigrationTaskRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowMigrationTaskRequest
+        r"""ShowMigrationTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowMigrationTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowMigrationTaskRequest.
+        r"""Gets the task_id of this ShowMigrationTaskRequest.
 
         任务ID。
 
@@ -53,7 +53,7 @@ class ShowMigrationTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowMigrationTaskRequest.
+        r"""Sets the task_id of this ShowMigrationTaskRequest.
 
         任务ID。
 

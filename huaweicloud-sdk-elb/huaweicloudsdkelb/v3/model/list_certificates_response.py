@@ -30,7 +30,7 @@ class ListCertificatesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, certificates=None):
-        """ListCertificatesResponse
+        r"""ListCertificatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCertificatesResponse.
+        r"""Gets the request_id of this ListCertificatesResponse.
 
         请求ID。  注：自动生成 。
 
@@ -69,7 +69,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCertificatesResponse.
+        r"""Sets the request_id of this ListCertificatesResponse.
 
         请求ID。  注：自动生成 。
 
@@ -80,7 +80,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListCertificatesResponse.
+        r"""Gets the page_info of this ListCertificatesResponse.
 
         :return: The page_info of this ListCertificatesResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListCertificatesResponse.
+        r"""Sets the page_info of this ListCertificatesResponse.
 
         :param page_info: The page_info of this ListCertificatesResponse.
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @property
     def certificates(self):
-        """Gets the certificates of this ListCertificatesResponse.
+        r"""Gets the certificates of this ListCertificatesResponse.
 
         证书对象列表。
 
@@ -109,7 +109,7 @@ class ListCertificatesResponse(SdkResponse):
 
     @certificates.setter
     def certificates(self, certificates):
-        """Sets the certificates of this ListCertificatesResponse.
+        r"""Sets the certificates of this ListCertificatesResponse.
 
         证书对象列表。
 

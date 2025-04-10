@@ -34,7 +34,7 @@ class IdentityCenterOIDCAsyncClient(Client):
         return client_builder
 
     def register_client_async(self, request):
-        """注册客户端
+        r"""注册客户端
 
         向IAM身份中心注册客户端，这允许客户端启动设备授权，输出应该持久化以便于身份验证请求重用
         
@@ -99,7 +99,7 @@ class IdentityCenterOIDCAsyncClient(Client):
         return http_info
 
     def start_device_authorization_async(self, request):
-        """请求设备授权
+        r"""请求设备授权
 
         发起设备授权请求
         
@@ -164,7 +164,7 @@ class IdentityCenterOIDCAsyncClient(Client):
         return http_info
 
     def create_token_async(self, request):
-        """创建令牌
+        r"""创建令牌
 
         获取访问令牌
         

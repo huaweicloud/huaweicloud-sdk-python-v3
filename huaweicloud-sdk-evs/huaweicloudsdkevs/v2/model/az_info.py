@@ -27,7 +27,7 @@ class AzInfo:
     }
 
     def __init__(self, zone_name=None, zone_state=None):
-        """AzInfo
+        r"""AzInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AzInfo:
 
     @property
     def zone_name(self):
-        """Gets the zone_name of this AzInfo.
+        r"""Gets the zone_name of this AzInfo.
 
         可用分区的名字。
 
@@ -59,7 +59,7 @@ class AzInfo:
 
     @zone_name.setter
     def zone_name(self, zone_name):
-        """Sets the zone_name of this AzInfo.
+        r"""Sets the zone_name of this AzInfo.
 
         可用分区的名字。
 
@@ -70,7 +70,7 @@ class AzInfo:
 
     @property
     def zone_state(self):
-        """Gets the zone_state of this AzInfo.
+        r"""Gets the zone_state of this AzInfo.
 
         :return: The zone_state of this AzInfo.
         :rtype: :class:`huaweicloudsdkevs.v2.ZoneState`
@@ -79,7 +79,7 @@ class AzInfo:
 
     @zone_state.setter
     def zone_state(self, zone_state):
-        """Sets the zone_state of this AzInfo.
+        r"""Sets the zone_state of this AzInfo.
 
         :param zone_state: The zone_state of this AzInfo.
         :type zone_state: :class:`huaweicloudsdkevs.v2.ZoneState`

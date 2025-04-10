@@ -28,7 +28,7 @@ class ListEdgeGroupsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, edge_groups=None):
-        """ListEdgeGroupsResponse
+        r"""ListEdgeGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEdgeGroupsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListEdgeGroupsResponse.
+        r"""Gets the count of this ListEdgeGroupsResponse.
 
         边缘节点组数目
 
@@ -62,7 +62,7 @@ class ListEdgeGroupsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListEdgeGroupsResponse.
+        r"""Sets the count of this ListEdgeGroupsResponse.
 
         边缘节点组数目
 
@@ -73,7 +73,7 @@ class ListEdgeGroupsResponse(SdkResponse):
 
     @property
     def edge_groups(self):
-        """Gets the edge_groups of this ListEdgeGroupsResponse.
+        r"""Gets the edge_groups of this ListEdgeGroupsResponse.
 
         边缘节点组详情
 
@@ -84,7 +84,7 @@ class ListEdgeGroupsResponse(SdkResponse):
 
     @edge_groups.setter
     def edge_groups(self, edge_groups):
-        """Sets the edge_groups of this ListEdgeGroupsResponse.
+        r"""Sets the edge_groups of this ListEdgeGroupsResponse.
 
         边缘节点组详情
 

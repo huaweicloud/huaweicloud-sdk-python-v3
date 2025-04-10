@@ -35,7 +35,7 @@ class CurrentNodeDetail:
     }
 
     def __init__(self, order=None, name=None, status=None, desc=None, begin_time=None, end_time=None):
-        """CurrentNodeDetail
+        r"""CurrentNodeDetail
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CurrentNodeDetail:
 
     @property
     def order(self):
-        """Gets the order of this CurrentNodeDetail.
+        r"""Gets the order of this CurrentNodeDetail.
 
         升级任务序号。
 
@@ -89,7 +89,7 @@ class CurrentNodeDetail:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this CurrentNodeDetail.
+        r"""Sets the order of this CurrentNodeDetail.
 
         升级任务序号。
 
@@ -100,7 +100,7 @@ class CurrentNodeDetail:
 
     @property
     def name(self):
-        """Gets the name of this CurrentNodeDetail.
+        r"""Gets the name of this CurrentNodeDetail.
 
         升级任务名称。
 
@@ -111,7 +111,7 @@ class CurrentNodeDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CurrentNodeDetail.
+        r"""Sets the name of this CurrentNodeDetail.
 
         升级任务名称。
 
@@ -122,7 +122,7 @@ class CurrentNodeDetail:
 
     @property
     def status(self):
-        """Gets the status of this CurrentNodeDetail.
+        r"""Gets the status of this CurrentNodeDetail.
 
         当前任务状态。
 
@@ -133,7 +133,7 @@ class CurrentNodeDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CurrentNodeDetail.
+        r"""Sets the status of this CurrentNodeDetail.
 
         当前任务状态。
 
@@ -144,7 +144,7 @@ class CurrentNodeDetail:
 
     @property
     def desc(self):
-        """Gets the desc of this CurrentNodeDetail.
+        r"""Gets the desc of this CurrentNodeDetail.
 
         当前任务描述。
 
@@ -155,7 +155,7 @@ class CurrentNodeDetail:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this CurrentNodeDetail.
+        r"""Sets the desc of this CurrentNodeDetail.
 
         当前任务描述。
 
@@ -166,7 +166,7 @@ class CurrentNodeDetail:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this CurrentNodeDetail.
+        r"""Gets the begin_time of this CurrentNodeDetail.
 
         当前任务开始时间。
 
@@ -177,7 +177,7 @@ class CurrentNodeDetail:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this CurrentNodeDetail.
+        r"""Sets the begin_time of this CurrentNodeDetail.
 
         当前任务开始时间。
 
@@ -188,7 +188,7 @@ class CurrentNodeDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CurrentNodeDetail.
+        r"""Gets the end_time of this CurrentNodeDetail.
 
         当前任务结束时间。
 
@@ -199,7 +199,7 @@ class CurrentNodeDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CurrentNodeDetail.
+        r"""Sets the end_time of this CurrentNodeDetail.
 
         当前任务结束时间。
 

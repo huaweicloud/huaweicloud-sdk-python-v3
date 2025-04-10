@@ -27,7 +27,7 @@ class DeleteResourceTag:
     }
 
     def __init__(self, key=None, value=None):
-        """DeleteResourceTag
+        r"""DeleteResourceTag
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteResourceTag:
 
     @property
     def key(self):
-        """Gets the key of this DeleteResourceTag.
+        r"""Gets the key of this DeleteResourceTag.
 
         键。
 
@@ -60,7 +60,7 @@ class DeleteResourceTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteResourceTag.
+        r"""Sets the key of this DeleteResourceTag.
 
         键。
 
@@ -71,7 +71,7 @@ class DeleteResourceTag:
 
     @property
     def value(self):
-        """Gets the value of this DeleteResourceTag.
+        r"""Gets the value of this DeleteResourceTag.
 
         值。
 
@@ -82,7 +82,7 @@ class DeleteResourceTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DeleteResourceTag.
+        r"""Sets the value of this DeleteResourceTag.
 
         值。
 

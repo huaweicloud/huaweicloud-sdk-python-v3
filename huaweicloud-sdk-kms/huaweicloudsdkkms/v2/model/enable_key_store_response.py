@@ -26,7 +26,7 @@ class EnableKeyStoreResponse(SdkResponse):
     }
 
     def __init__(self, keystore=None):
-        """EnableKeyStoreResponse
+        r"""EnableKeyStoreResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class EnableKeyStoreResponse(SdkResponse):
 
     @property
     def keystore(self):
-        """Gets the keystore of this EnableKeyStoreResponse.
+        r"""Gets the keystore of this EnableKeyStoreResponse.
 
         :return: The keystore of this EnableKeyStoreResponse.
         :rtype: :class:`huaweicloudsdkkms.v2.KeyStoreStateInfo`
@@ -53,7 +53,7 @@ class EnableKeyStoreResponse(SdkResponse):
 
     @keystore.setter
     def keystore(self, keystore):
-        """Sets the keystore of this EnableKeyStoreResponse.
+        r"""Sets the keystore of this EnableKeyStoreResponse.
 
         :param keystore: The keystore of this EnableKeyStoreResponse.
         :type keystore: :class:`huaweicloudsdkkms.v2.KeyStoreStateInfo`

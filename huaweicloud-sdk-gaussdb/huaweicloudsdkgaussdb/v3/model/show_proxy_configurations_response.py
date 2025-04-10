@@ -28,7 +28,7 @@ class ShowProxyConfigurationsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, configurations=None):
-        """ShowProxyConfigurationsResponse
+        r"""ShowProxyConfigurationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowProxyConfigurationsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowProxyConfigurationsResponse.
+        r"""Gets the total_count of this ShowProxyConfigurationsResponse.
 
         数据总数
 
@@ -62,7 +62,7 @@ class ShowProxyConfigurationsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowProxyConfigurationsResponse.
+        r"""Sets the total_count of this ShowProxyConfigurationsResponse.
 
         数据总数
 
@@ -73,7 +73,7 @@ class ShowProxyConfigurationsResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this ShowProxyConfigurationsResponse.
+        r"""Gets the configurations of this ShowProxyConfigurationsResponse.
 
         内核可配置的参数列表
 
@@ -84,7 +84,7 @@ class ShowProxyConfigurationsResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ShowProxyConfigurationsResponse.
+        r"""Sets the configurations of this ShowProxyConfigurationsResponse.
 
         内核可配置的参数列表
 

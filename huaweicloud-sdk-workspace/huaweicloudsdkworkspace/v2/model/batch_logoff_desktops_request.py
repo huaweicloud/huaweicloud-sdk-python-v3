@@ -27,7 +27,7 @@ class BatchLogoffDesktopsRequest:
     }
 
     def __init__(self, service_transaction_id=None, body=None):
-        """BatchLogoffDesktopsRequest
+        r"""BatchLogoffDesktopsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchLogoffDesktopsRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this BatchLogoffDesktopsRequest.
+        r"""Gets the service_transaction_id of this BatchLogoffDesktopsRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -61,7 +61,7 @@ class BatchLogoffDesktopsRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this BatchLogoffDesktopsRequest.
+        r"""Sets the service_transaction_id of this BatchLogoffDesktopsRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -72,7 +72,7 @@ class BatchLogoffDesktopsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchLogoffDesktopsRequest.
+        r"""Gets the body of this BatchLogoffDesktopsRequest.
 
         :return: The body of this BatchLogoffDesktopsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.LogoffDesktopsReq`
@@ -81,7 +81,7 @@ class BatchLogoffDesktopsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchLogoffDesktopsRequest.
+        r"""Sets the body of this BatchLogoffDesktopsRequest.
 
         :param body: The body of this BatchLogoffDesktopsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.LogoffDesktopsReq`

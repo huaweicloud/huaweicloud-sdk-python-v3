@@ -32,7 +32,7 @@ class ListSparkJobTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, count=None, templates=None):
-        """ListSparkJobTemplatesResponse
+        r"""ListSparkJobTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListSparkJobTemplatesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListSparkJobTemplatesResponse.
+        r"""Gets the is_success of this ListSparkJobTemplatesResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -76,7 +76,7 @@ class ListSparkJobTemplatesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListSparkJobTemplatesResponse.
+        r"""Sets the is_success of this ListSparkJobTemplatesResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -87,7 +87,7 @@ class ListSparkJobTemplatesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListSparkJobTemplatesResponse.
+        r"""Gets the message of this ListSparkJobTemplatesResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -98,7 +98,7 @@ class ListSparkJobTemplatesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListSparkJobTemplatesResponse.
+        r"""Sets the message of this ListSparkJobTemplatesResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -109,7 +109,7 @@ class ListSparkJobTemplatesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSparkJobTemplatesResponse.
+        r"""Gets the count of this ListSparkJobTemplatesResponse.
 
         返回的模板个数
 
@@ -120,7 +120,7 @@ class ListSparkJobTemplatesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSparkJobTemplatesResponse.
+        r"""Sets the count of this ListSparkJobTemplatesResponse.
 
         返回的模板个数
 
@@ -131,7 +131,7 @@ class ListSparkJobTemplatesResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this ListSparkJobTemplatesResponse.
+        r"""Gets the templates of this ListSparkJobTemplatesResponse.
 
         模板信息列表。
 
@@ -142,7 +142,7 @@ class ListSparkJobTemplatesResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this ListSparkJobTemplatesResponse.
+        r"""Sets the templates of this ListSparkJobTemplatesResponse.
 
         模板信息列表。
 

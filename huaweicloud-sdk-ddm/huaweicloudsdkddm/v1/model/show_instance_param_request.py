@@ -31,7 +31,7 @@ class ShowInstanceParamRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, x_language=None):
-        """ShowInstanceParamRequest
+        r"""ShowInstanceParamRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowInstanceParamRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceParamRequest.
+        r"""Gets the instance_id of this ShowInstanceParamRequest.
 
         DDM实例ID
 
@@ -74,7 +74,7 @@ class ShowInstanceParamRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceParamRequest.
+        r"""Sets the instance_id of this ShowInstanceParamRequest.
 
         DDM实例ID
 
@@ -85,7 +85,7 @@ class ShowInstanceParamRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowInstanceParamRequest.
+        r"""Gets the offset of this ShowInstanceParamRequest.
 
         分页参数：起始值 [大于等于0] 。默认值是0。
 
@@ -96,7 +96,7 @@ class ShowInstanceParamRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowInstanceParamRequest.
+        r"""Sets the offset of this ShowInstanceParamRequest.
 
         分页参数：起始值 [大于等于0] 。默认值是0。
 
@@ -107,7 +107,7 @@ class ShowInstanceParamRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowInstanceParamRequest.
+        r"""Gets the limit of this ShowInstanceParamRequest.
 
         分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
 
@@ -118,7 +118,7 @@ class ShowInstanceParamRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowInstanceParamRequest.
+        r"""Sets the limit of this ShowInstanceParamRequest.
 
         分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
 
@@ -129,7 +129,7 @@ class ShowInstanceParamRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowInstanceParamRequest.
+        r"""Gets the x_language of this ShowInstanceParamRequest.
 
         语种，默认中文。中文:zh-cn;英文:en-us
 
@@ -140,7 +140,7 @@ class ShowInstanceParamRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowInstanceParamRequest.
+        r"""Sets the x_language of this ShowInstanceParamRequest.
 
         语种，默认中文。中文:zh-cn;英文:en-us
 

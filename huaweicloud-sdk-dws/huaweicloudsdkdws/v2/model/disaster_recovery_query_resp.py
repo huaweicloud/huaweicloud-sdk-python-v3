@@ -41,7 +41,7 @@ class DisasterRecoveryQueryResp:
     }
 
     def __init__(self, id=None, name=None, dr_type=None, status=None, primary_cluster=None, standby_cluster=None, dr_sync_period=None, start_time=None, create_time=None):
-        """DisasterRecoveryQueryResp
+        r"""DisasterRecoveryQueryResp
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class DisasterRecoveryQueryResp:
 
     @property
     def id(self):
-        """Gets the id of this DisasterRecoveryQueryResp.
+        r"""Gets the id of this DisasterRecoveryQueryResp.
 
         容灾ID
 
@@ -110,7 +110,7 @@ class DisasterRecoveryQueryResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DisasterRecoveryQueryResp.
+        r"""Sets the id of this DisasterRecoveryQueryResp.
 
         容灾ID
 
@@ -121,7 +121,7 @@ class DisasterRecoveryQueryResp:
 
     @property
     def name(self):
-        """Gets the name of this DisasterRecoveryQueryResp.
+        r"""Gets the name of this DisasterRecoveryQueryResp.
 
         容灾名称
 
@@ -132,7 +132,7 @@ class DisasterRecoveryQueryResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DisasterRecoveryQueryResp.
+        r"""Sets the name of this DisasterRecoveryQueryResp.
 
         容灾名称
 
@@ -143,7 +143,7 @@ class DisasterRecoveryQueryResp:
 
     @property
     def dr_type(self):
-        """Gets the dr_type of this DisasterRecoveryQueryResp.
+        r"""Gets the dr_type of this DisasterRecoveryQueryResp.
 
         容灾类型
 
@@ -154,7 +154,7 @@ class DisasterRecoveryQueryResp:
 
     @dr_type.setter
     def dr_type(self, dr_type):
-        """Sets the dr_type of this DisasterRecoveryQueryResp.
+        r"""Sets the dr_type of this DisasterRecoveryQueryResp.
 
         容灾类型
 
@@ -165,7 +165,7 @@ class DisasterRecoveryQueryResp:
 
     @property
     def status(self):
-        """Gets the status of this DisasterRecoveryQueryResp.
+        r"""Gets the status of this DisasterRecoveryQueryResp.
 
         容灾状态
 
@@ -176,7 +176,7 @@ class DisasterRecoveryQueryResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DisasterRecoveryQueryResp.
+        r"""Sets the status of this DisasterRecoveryQueryResp.
 
         容灾状态
 
@@ -187,7 +187,7 @@ class DisasterRecoveryQueryResp:
 
     @property
     def primary_cluster(self):
-        """Gets the primary_cluster of this DisasterRecoveryQueryResp.
+        r"""Gets the primary_cluster of this DisasterRecoveryQueryResp.
 
         :return: The primary_cluster of this DisasterRecoveryQueryResp.
         :rtype: :class:`huaweicloudsdkdws.v2.DisasterRecoveryCluster`
@@ -196,7 +196,7 @@ class DisasterRecoveryQueryResp:
 
     @primary_cluster.setter
     def primary_cluster(self, primary_cluster):
-        """Sets the primary_cluster of this DisasterRecoveryQueryResp.
+        r"""Sets the primary_cluster of this DisasterRecoveryQueryResp.
 
         :param primary_cluster: The primary_cluster of this DisasterRecoveryQueryResp.
         :type primary_cluster: :class:`huaweicloudsdkdws.v2.DisasterRecoveryCluster`
@@ -205,7 +205,7 @@ class DisasterRecoveryQueryResp:
 
     @property
     def standby_cluster(self):
-        """Gets the standby_cluster of this DisasterRecoveryQueryResp.
+        r"""Gets the standby_cluster of this DisasterRecoveryQueryResp.
 
         :return: The standby_cluster of this DisasterRecoveryQueryResp.
         :rtype: :class:`huaweicloudsdkdws.v2.DisasterRecoveryCluster`
@@ -214,7 +214,7 @@ class DisasterRecoveryQueryResp:
 
     @standby_cluster.setter
     def standby_cluster(self, standby_cluster):
-        """Sets the standby_cluster of this DisasterRecoveryQueryResp.
+        r"""Sets the standby_cluster of this DisasterRecoveryQueryResp.
 
         :param standby_cluster: The standby_cluster of this DisasterRecoveryQueryResp.
         :type standby_cluster: :class:`huaweicloudsdkdws.v2.DisasterRecoveryCluster`
@@ -223,7 +223,7 @@ class DisasterRecoveryQueryResp:
 
     @property
     def dr_sync_period(self):
-        """Gets the dr_sync_period of this DisasterRecoveryQueryResp.
+        r"""Gets the dr_sync_period of this DisasterRecoveryQueryResp.
 
         容灾同步周期
 
@@ -234,7 +234,7 @@ class DisasterRecoveryQueryResp:
 
     @dr_sync_period.setter
     def dr_sync_period(self, dr_sync_period):
-        """Sets the dr_sync_period of this DisasterRecoveryQueryResp.
+        r"""Sets the dr_sync_period of this DisasterRecoveryQueryResp.
 
         容灾同步周期
 
@@ -245,7 +245,7 @@ class DisasterRecoveryQueryResp:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DisasterRecoveryQueryResp.
+        r"""Gets the start_time of this DisasterRecoveryQueryResp.
 
         容灾启动时间
 
@@ -256,7 +256,7 @@ class DisasterRecoveryQueryResp:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DisasterRecoveryQueryResp.
+        r"""Sets the start_time of this DisasterRecoveryQueryResp.
 
         容灾启动时间
 
@@ -267,7 +267,7 @@ class DisasterRecoveryQueryResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DisasterRecoveryQueryResp.
+        r"""Gets the create_time of this DisasterRecoveryQueryResp.
 
         容灾创建时间
 
@@ -278,7 +278,7 @@ class DisasterRecoveryQueryResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DisasterRecoveryQueryResp.
+        r"""Sets the create_time of this DisasterRecoveryQueryResp.
 
         容灾创建时间
 

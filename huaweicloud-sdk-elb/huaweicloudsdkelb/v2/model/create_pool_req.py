@@ -45,7 +45,7 @@ class CreatePoolReq:
     }
 
     def __init__(self, protocol=None, lb_algorithm=None, loadbalancer_id=None, listener_id=None, tenant_id=None, name=None, description=None, admin_state_up=None, session_persistence=None, protection_status=None, protection_reason=None):
-        """CreatePoolReq
+        r"""CreatePoolReq
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class CreatePoolReq:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreatePoolReq.
+        r"""Gets the protocol of this CreatePoolReq.
 
         后端云服务器组的后端协议。取值：UDP、TCP、HTTP。当指定istener_id创建后端云服务器组时，后端云服务器组的protocol和它关联的监听器的protocol有如下关系：监听器的protocol为TCP时，后端云服务器组的protocol必须为TCP。监听器的protocol为UDP时，后端云服务器组的protocol必须为UDP。监听器的protocol为HTTP或TERMINATED_HTTPS时，后端云服务器组的protocol必须为HTTP。
 
@@ -122,7 +122,7 @@ class CreatePoolReq:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreatePoolReq.
+        r"""Sets the protocol of this CreatePoolReq.
 
         后端云服务器组的后端协议。取值：UDP、TCP、HTTP。当指定istener_id创建后端云服务器组时，后端云服务器组的protocol和它关联的监听器的protocol有如下关系：监听器的protocol为TCP时，后端云服务器组的protocol必须为TCP。监听器的protocol为UDP时，后端云服务器组的protocol必须为UDP。监听器的protocol为HTTP或TERMINATED_HTTPS时，后端云服务器组的protocol必须为HTTP。
 
@@ -133,7 +133,7 @@ class CreatePoolReq:
 
     @property
     def lb_algorithm(self):
-        """Gets the lb_algorithm of this CreatePoolReq.
+        r"""Gets the lb_algorithm of this CreatePoolReq.
 
         后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法；当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
 
@@ -144,7 +144,7 @@ class CreatePoolReq:
 
     @lb_algorithm.setter
     def lb_algorithm(self, lb_algorithm):
-        """Sets the lb_algorithm of this CreatePoolReq.
+        r"""Sets the lb_algorithm of this CreatePoolReq.
 
         后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法；当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
 
@@ -155,7 +155,7 @@ class CreatePoolReq:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this CreatePoolReq.
+        r"""Gets the loadbalancer_id of this CreatePoolReq.
 
         后端云服务器组关联的负载均衡器ID。listener_id和loadbalancer_id中至少指定一个。
 
@@ -166,7 +166,7 @@ class CreatePoolReq:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this CreatePoolReq.
+        r"""Sets the loadbalancer_id of this CreatePoolReq.
 
         后端云服务器组关联的负载均衡器ID。listener_id和loadbalancer_id中至少指定一个。
 
@@ -177,7 +177,7 @@ class CreatePoolReq:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this CreatePoolReq.
+        r"""Gets the listener_id of this CreatePoolReq.
 
         后端云服务器组关联的监听器的ID。listener_id和loadbalancer_id中至少指定一个。
 
@@ -188,7 +188,7 @@ class CreatePoolReq:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this CreatePoolReq.
+        r"""Sets the listener_id of this CreatePoolReq.
 
         后端云服务器组关联的监听器的ID。listener_id和loadbalancer_id中至少指定一个。
 
@@ -199,7 +199,7 @@ class CreatePoolReq:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CreatePoolReq.
+        r"""Gets the tenant_id of this CreatePoolReq.
 
         后端云服务器组所在的项目ID。
 
@@ -210,7 +210,7 @@ class CreatePoolReq:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CreatePoolReq.
+        r"""Sets the tenant_id of this CreatePoolReq.
 
         后端云服务器组所在的项目ID。
 
@@ -221,7 +221,7 @@ class CreatePoolReq:
 
     @property
     def name(self):
-        """Gets the name of this CreatePoolReq.
+        r"""Gets the name of this CreatePoolReq.
 
         后端云服务器组的名称。
 
@@ -232,7 +232,7 @@ class CreatePoolReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePoolReq.
+        r"""Sets the name of this CreatePoolReq.
 
         后端云服务器组的名称。
 
@@ -243,7 +243,7 @@ class CreatePoolReq:
 
     @property
     def description(self):
-        """Gets the description of this CreatePoolReq.
+        r"""Gets the description of this CreatePoolReq.
 
         后端云服务器组的描述信息
 
@@ -254,7 +254,7 @@ class CreatePoolReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePoolReq.
+        r"""Sets the description of this CreatePoolReq.
 
         后端云服务器组的描述信息
 
@@ -265,7 +265,7 @@ class CreatePoolReq:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CreatePoolReq.
+        r"""Gets the admin_state_up of this CreatePoolReq.
 
         后端云服务器组的管理状态。只支持设定为true，该字段的值无实际意义。
 
@@ -276,7 +276,7 @@ class CreatePoolReq:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CreatePoolReq.
+        r"""Sets the admin_state_up of this CreatePoolReq.
 
         后端云服务器组的管理状态。只支持设定为true，该字段的值无实际意义。
 
@@ -287,7 +287,7 @@ class CreatePoolReq:
 
     @property
     def session_persistence(self):
-        """Gets the session_persistence of this CreatePoolReq.
+        r"""Gets the session_persistence of this CreatePoolReq.
 
         :return: The session_persistence of this CreatePoolReq.
         :rtype: :class:`huaweicloudsdkelb.v2.SessionPersistence`
@@ -296,7 +296,7 @@ class CreatePoolReq:
 
     @session_persistence.setter
     def session_persistence(self, session_persistence):
-        """Sets the session_persistence of this CreatePoolReq.
+        r"""Sets the session_persistence of this CreatePoolReq.
 
         :param session_persistence: The session_persistence of this CreatePoolReq.
         :type session_persistence: :class:`huaweicloudsdkelb.v2.SessionPersistence`
@@ -305,7 +305,7 @@ class CreatePoolReq:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this CreatePoolReq.
+        r"""Gets the protection_status of this CreatePoolReq.
 
         修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
 
@@ -316,7 +316,7 @@ class CreatePoolReq:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this CreatePoolReq.
+        r"""Sets the protection_status of this CreatePoolReq.
 
         修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
 
@@ -327,7 +327,7 @@ class CreatePoolReq:
 
     @property
     def protection_reason(self):
-        """Gets the protection_reason of this CreatePoolReq.
+        r"""Gets the protection_reason of this CreatePoolReq.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 
@@ -338,7 +338,7 @@ class CreatePoolReq:
 
     @protection_reason.setter
     def protection_reason(self, protection_reason):
-        """Sets the protection_reason of this CreatePoolReq.
+        r"""Sets the protection_reason of this CreatePoolReq.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 

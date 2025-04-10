@@ -29,7 +29,7 @@ class ShowTaskRequest:
     }
 
     def __init__(self, service_type=None, task_id=None, input_enable=None):
-        """ShowTaskRequest
+        r"""ShowTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowTaskRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ShowTaskRequest.
+        r"""Gets the service_type of this ShowTaskRequest.
 
         服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；二维切割-方形件固定为 regular-plate，二维切割-异形件固定为 irregular-textile， 数学规划求解器固定为 optverse-mpsolver
 
@@ -66,7 +66,7 @@ class ShowTaskRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ShowTaskRequest.
+        r"""Sets the service_type of this ShowTaskRequest.
 
         服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；二维切割-方形件固定为 regular-plate，二维切割-异形件固定为 irregular-textile， 数学规划求解器固定为 optverse-mpsolver
 
@@ -77,7 +77,7 @@ class ShowTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTaskRequest.
+        r"""Gets the task_id of this ShowTaskRequest.
 
         任务id
 
@@ -88,7 +88,7 @@ class ShowTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTaskRequest.
+        r"""Sets the task_id of this ShowTaskRequest.
 
         任务id
 
@@ -99,7 +99,7 @@ class ShowTaskRequest:
 
     @property
     def input_enable(self):
-        """Gets the input_enable of this ShowTaskRequest.
+        r"""Gets the input_enable of this ShowTaskRequest.
 
         是否返回输入信息，默认为false； 当前暂不支持该功能，后续扩展
 
@@ -110,7 +110,7 @@ class ShowTaskRequest:
 
     @input_enable.setter
     def input_enable(self, input_enable):
-        """Sets the input_enable of this ShowTaskRequest.
+        r"""Sets the input_enable of this ShowTaskRequest.
 
         是否返回输入信息，默认为false； 当前暂不支持该功能，后续扩展
 

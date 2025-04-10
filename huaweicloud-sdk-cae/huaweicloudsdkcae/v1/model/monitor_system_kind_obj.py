@@ -26,7 +26,7 @@ class MonitorSystemKindObj:
     }
 
     def __init__(self):
-        """MonitorSystemKindObj
+        r"""MonitorSystemKindObj
 
         The model defined in huaweicloud sdk
 

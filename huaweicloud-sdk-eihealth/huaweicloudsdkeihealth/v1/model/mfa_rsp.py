@@ -27,7 +27,7 @@ class MfaRsp:
     }
 
     def __init__(self, method=None, info=None):
-        """MfaRsp
+        r"""MfaRsp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MfaRsp:
 
     @property
     def method(self):
-        """Gets the method of this MfaRsp.
+        r"""Gets the method of this MfaRsp.
 
         mfa方法
 
@@ -61,7 +61,7 @@ class MfaRsp:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this MfaRsp.
+        r"""Sets the method of this MfaRsp.
 
         mfa方法
 
@@ -72,7 +72,7 @@ class MfaRsp:
 
     @property
     def info(self):
-        """Gets the info of this MfaRsp.
+        r"""Gets the info of this MfaRsp.
 
         mfa信息
 
@@ -83,7 +83,7 @@ class MfaRsp:
 
     @info.setter
     def info(self, info):
-        """Sets the info of this MfaRsp.
+        r"""Sets the info of this MfaRsp.
 
         mfa信息
 

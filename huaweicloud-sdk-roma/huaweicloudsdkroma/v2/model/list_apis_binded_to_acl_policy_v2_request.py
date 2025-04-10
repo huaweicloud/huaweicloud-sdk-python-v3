@@ -37,7 +37,7 @@ class ListApisBindedToAclPolicyV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, acl_id=None, api_name=None, env_id=None, group_id=None):
-        """ListApisBindedToAclPolicyV2Request
+        r"""ListApisBindedToAclPolicyV2Request
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListApisBindedToAclPolicyV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListApisBindedToAclPolicyV2Request.
+        r"""Gets the instance_id of this ListApisBindedToAclPolicyV2Request.
 
         实例ID
 
@@ -94,7 +94,7 @@ class ListApisBindedToAclPolicyV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListApisBindedToAclPolicyV2Request.
+        r"""Sets the instance_id of this ListApisBindedToAclPolicyV2Request.
 
         实例ID
 
@@ -105,7 +105,7 @@ class ListApisBindedToAclPolicyV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListApisBindedToAclPolicyV2Request.
+        r"""Gets the offset of this ListApisBindedToAclPolicyV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -116,7 +116,7 @@ class ListApisBindedToAclPolicyV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListApisBindedToAclPolicyV2Request.
+        r"""Sets the offset of this ListApisBindedToAclPolicyV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -127,7 +127,7 @@ class ListApisBindedToAclPolicyV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApisBindedToAclPolicyV2Request.
+        r"""Gets the limit of this ListApisBindedToAclPolicyV2Request.
 
         每页显示的条目数量
 
@@ -138,7 +138,7 @@ class ListApisBindedToAclPolicyV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApisBindedToAclPolicyV2Request.
+        r"""Sets the limit of this ListApisBindedToAclPolicyV2Request.
 
         每页显示的条目数量
 
@@ -149,7 +149,7 @@ class ListApisBindedToAclPolicyV2Request:
 
     @property
     def acl_id(self):
-        """Gets the acl_id of this ListApisBindedToAclPolicyV2Request.
+        r"""Gets the acl_id of this ListApisBindedToAclPolicyV2Request.
 
         ACL编号
 
@@ -160,7 +160,7 @@ class ListApisBindedToAclPolicyV2Request:
 
     @acl_id.setter
     def acl_id(self, acl_id):
-        """Sets the acl_id of this ListApisBindedToAclPolicyV2Request.
+        r"""Sets the acl_id of this ListApisBindedToAclPolicyV2Request.
 
         ACL编号
 
@@ -171,7 +171,7 @@ class ListApisBindedToAclPolicyV2Request:
 
     @property
     def api_name(self):
-        """Gets the api_name of this ListApisBindedToAclPolicyV2Request.
+        r"""Gets the api_name of this ListApisBindedToAclPolicyV2Request.
 
         API名称
 
@@ -182,7 +182,7 @@ class ListApisBindedToAclPolicyV2Request:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this ListApisBindedToAclPolicyV2Request.
+        r"""Sets the api_name of this ListApisBindedToAclPolicyV2Request.
 
         API名称
 
@@ -193,7 +193,7 @@ class ListApisBindedToAclPolicyV2Request:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ListApisBindedToAclPolicyV2Request.
+        r"""Gets the env_id of this ListApisBindedToAclPolicyV2Request.
 
         环境编号
 
@@ -204,7 +204,7 @@ class ListApisBindedToAclPolicyV2Request:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ListApisBindedToAclPolicyV2Request.
+        r"""Sets the env_id of this ListApisBindedToAclPolicyV2Request.
 
         环境编号
 
@@ -215,7 +215,7 @@ class ListApisBindedToAclPolicyV2Request:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListApisBindedToAclPolicyV2Request.
+        r"""Gets the group_id of this ListApisBindedToAclPolicyV2Request.
 
         API分组编号
 
@@ -226,7 +226,7 @@ class ListApisBindedToAclPolicyV2Request:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListApisBindedToAclPolicyV2Request.
+        r"""Sets the group_id of this ListApisBindedToAclPolicyV2Request.
 
         API分组编号
 

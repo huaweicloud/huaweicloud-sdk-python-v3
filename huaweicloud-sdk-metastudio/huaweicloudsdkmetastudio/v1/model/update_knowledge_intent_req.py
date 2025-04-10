@@ -27,7 +27,7 @@ class UpdateKnowledgeIntentReq:
     }
 
     def __init__(self, name=None, answer=None):
-        """UpdateKnowledgeIntentReq
+        r"""UpdateKnowledgeIntentReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateKnowledgeIntentReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateKnowledgeIntentReq.
+        r"""Gets the name of this UpdateKnowledgeIntentReq.
 
         意图名称。
 
@@ -61,7 +61,7 @@ class UpdateKnowledgeIntentReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateKnowledgeIntentReq.
+        r"""Sets the name of this UpdateKnowledgeIntentReq.
 
         意图名称。
 
@@ -72,7 +72,7 @@ class UpdateKnowledgeIntentReq:
 
     @property
     def answer(self):
-        """Gets the answer of this UpdateKnowledgeIntentReq.
+        r"""Gets the answer of this UpdateKnowledgeIntentReq.
 
         问题答案。
 
@@ -83,7 +83,7 @@ class UpdateKnowledgeIntentReq:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this UpdateKnowledgeIntentReq.
+        r"""Sets the answer of this UpdateKnowledgeIntentReq.
 
         问题答案。
 

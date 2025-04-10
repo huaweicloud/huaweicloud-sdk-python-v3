@@ -28,7 +28,7 @@ class ListLakeFormationInstanceTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, x_request_id=None):
-        """ListLakeFormationInstanceTagsResponse
+        r"""ListLakeFormationInstanceTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListLakeFormationInstanceTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListLakeFormationInstanceTagsResponse.
+        r"""Gets the tags of this ListLakeFormationInstanceTagsResponse.
 
         标签
 
@@ -62,7 +62,7 @@ class ListLakeFormationInstanceTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListLakeFormationInstanceTagsResponse.
+        r"""Sets the tags of this ListLakeFormationInstanceTagsResponse.
 
         标签
 
@@ -73,7 +73,7 @@ class ListLakeFormationInstanceTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListLakeFormationInstanceTagsResponse.
+        r"""Gets the x_request_id of this ListLakeFormationInstanceTagsResponse.
 
         :return: The x_request_id of this ListLakeFormationInstanceTagsResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListLakeFormationInstanceTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListLakeFormationInstanceTagsResponse.
+        r"""Sets the x_request_id of this ListLakeFormationInstanceTagsResponse.
 
         :param x_request_id: The x_request_id of this ListLakeFormationInstanceTagsResponse.
         :type x_request_id: str

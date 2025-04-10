@@ -25,7 +25,7 @@ class AssociateRoleToAgencyOnEnterpriseProjectRequest:
     }
 
     def __init__(self, body=None):
-        """AssociateRoleToAgencyOnEnterpriseProjectRequest
+        r"""AssociateRoleToAgencyOnEnterpriseProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AssociateRoleToAgencyOnEnterpriseProjectRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateRoleToAgencyOnEnterpriseProjectRequest.
+        r"""Gets the body of this AssociateRoleToAgencyOnEnterpriseProjectRequest.
 
         :return: The body of this AssociateRoleToAgencyOnEnterpriseProjectRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateAgencyEpPolicyAssignmentReqBody`
@@ -52,7 +52,7 @@ class AssociateRoleToAgencyOnEnterpriseProjectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateRoleToAgencyOnEnterpriseProjectRequest.
+        r"""Sets the body of this AssociateRoleToAgencyOnEnterpriseProjectRequest.
 
         :param body: The body of this AssociateRoleToAgencyOnEnterpriseProjectRequest.
         :type body: :class:`huaweicloudsdkiam.v3.CreateAgencyEpPolicyAssignmentReqBody`

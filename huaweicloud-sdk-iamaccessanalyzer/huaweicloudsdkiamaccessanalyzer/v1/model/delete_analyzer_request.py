@@ -25,7 +25,7 @@ class DeleteAnalyzerRequest:
     }
 
     def __init__(self, analyzer_id=None):
-        """DeleteAnalyzerRequest
+        r"""DeleteAnalyzerRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAnalyzerRequest:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this DeleteAnalyzerRequest.
+        r"""Gets the analyzer_id of this DeleteAnalyzerRequest.
 
         分析器的唯一标识符。
 
@@ -53,7 +53,7 @@ class DeleteAnalyzerRequest:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this DeleteAnalyzerRequest.
+        r"""Sets the analyzer_id of this DeleteAnalyzerRequest.
 
         分析器的唯一标识符。
 

@@ -35,7 +35,7 @@ class StatUsageSummaryInfo:
     }
 
     def __init__(self, resource_id=None, actual_days=None, band_width=None, monthly_guaranteed_band_width=None, monthly_peak_band_width=None, band_width_measure_id=None):
-        """StatUsageSummaryInfo
+        r"""StatUsageSummaryInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class StatUsageSummaryInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this StatUsageSummaryInfo.
+        r"""Gets the resource_id of this StatUsageSummaryInfo.
 
         资源ID。
 
@@ -89,7 +89,7 @@ class StatUsageSummaryInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this StatUsageSummaryInfo.
+        r"""Sets the resource_id of this StatUsageSummaryInfo.
 
         资源ID。
 
@@ -100,7 +100,7 @@ class StatUsageSummaryInfo:
 
     @property
     def actual_days(self):
-        """Gets the actual_days of this StatUsageSummaryInfo.
+        r"""Gets the actual_days of this StatUsageSummaryInfo.
 
         有效天数，精度最高返回小数点后20位。  说明： 计算方式为上报的点数/288所得出的值。其中288为一天的点数，5分钟为一个点数单位。计算95费用时，因95费用是按月定价，若实际不足月，则是使用官网价*折扣*actual_days/当月天数，来计算费用明细。
 
@@ -111,7 +111,7 @@ class StatUsageSummaryInfo:
 
     @actual_days.setter
     def actual_days(self, actual_days):
-        """Sets the actual_days of this StatUsageSummaryInfo.
+        r"""Sets the actual_days of this StatUsageSummaryInfo.
 
         有效天数，精度最高返回小数点后20位。  说明： 计算方式为上报的点数/288所得出的值。其中288为一天的点数，5分钟为一个点数单位。计算95费用时，因95费用是按月定价，若实际不足月，则是使用官网价*折扣*actual_days/当月天数，来计算费用明细。
 
@@ -122,7 +122,7 @@ class StatUsageSummaryInfo:
 
     @property
     def band_width(self):
-        """Gets the band_width of this StatUsageSummaryInfo.
+        r"""Gets the band_width of this StatUsageSummaryInfo.
 
         计费带宽的按月汇总。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。
 
@@ -133,7 +133,7 @@ class StatUsageSummaryInfo:
 
     @band_width.setter
     def band_width(self, band_width):
-        """Sets the band_width of this StatUsageSummaryInfo.
+        r"""Sets the band_width of this StatUsageSummaryInfo.
 
         计费带宽的按月汇总。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。
 
@@ -144,7 +144,7 @@ class StatUsageSummaryInfo:
 
     @property
     def monthly_guaranteed_band_width(self):
-        """Gets the monthly_guaranteed_band_width of this StatUsageSummaryInfo.
+        r"""Gets the monthly_guaranteed_band_width of this StatUsageSummaryInfo.
 
         月保底带宽的按月汇总。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
 
@@ -155,7 +155,7 @@ class StatUsageSummaryInfo:
 
     @monthly_guaranteed_band_width.setter
     def monthly_guaranteed_band_width(self, monthly_guaranteed_band_width):
-        """Sets the monthly_guaranteed_band_width of this StatUsageSummaryInfo.
+        r"""Sets the monthly_guaranteed_band_width of this StatUsageSummaryInfo.
 
         月保底带宽的按月汇总。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
 
@@ -166,7 +166,7 @@ class StatUsageSummaryInfo:
 
     @property
     def monthly_peak_band_width(self):
-        """Gets the monthly_peak_band_width of this StatUsageSummaryInfo.
+        r"""Gets the monthly_peak_band_width of this StatUsageSummaryInfo.
 
         月峰值带宽。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
 
@@ -177,7 +177,7 @@ class StatUsageSummaryInfo:
 
     @monthly_peak_band_width.setter
     def monthly_peak_band_width(self, monthly_peak_band_width):
-        """Sets the monthly_peak_band_width of this StatUsageSummaryInfo.
+        r"""Sets the monthly_peak_band_width of this StatUsageSummaryInfo.
 
         月峰值带宽。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则为空。该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
 
@@ -188,7 +188,7 @@ class StatUsageSummaryInfo:
 
     @property
     def band_width_measure_id(self):
-        """Gets the band_width_measure_id of this StatUsageSummaryInfo.
+        r"""Gets the band_width_measure_id of this StatUsageSummaryInfo.
 
         带宽单位，您可以调用查询度量单位列表接口获取。若所有带宽为空，则该字段为空。
 
@@ -199,7 +199,7 @@ class StatUsageSummaryInfo:
 
     @band_width_measure_id.setter
     def band_width_measure_id(self, band_width_measure_id):
-        """Sets the band_width_measure_id of this StatUsageSummaryInfo.
+        r"""Sets the band_width_measure_id of this StatUsageSummaryInfo.
 
         带宽单位，您可以调用查询度量单位列表接口获取。若所有带宽为空，则该字段为空。
 

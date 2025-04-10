@@ -27,7 +27,7 @@ class ApiCatalogUpdateParaDTO:
     }
 
     def __init__(self, name=None, description=None):
-        """ApiCatalogUpdateParaDTO
+        r"""ApiCatalogUpdateParaDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApiCatalogUpdateParaDTO:
 
     @property
     def name(self):
-        """Gets the name of this ApiCatalogUpdateParaDTO.
+        r"""Gets the name of this ApiCatalogUpdateParaDTO.
 
         名称
 
@@ -61,7 +61,7 @@ class ApiCatalogUpdateParaDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiCatalogUpdateParaDTO.
+        r"""Sets the name of this ApiCatalogUpdateParaDTO.
 
         名称
 
@@ -72,7 +72,7 @@ class ApiCatalogUpdateParaDTO:
 
     @property
     def description(self):
-        """Gets the description of this ApiCatalogUpdateParaDTO.
+        r"""Gets the description of this ApiCatalogUpdateParaDTO.
 
         描述
 
@@ -83,7 +83,7 @@ class ApiCatalogUpdateParaDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApiCatalogUpdateParaDTO.
+        r"""Sets the description of this ApiCatalogUpdateParaDTO.
 
         描述
 

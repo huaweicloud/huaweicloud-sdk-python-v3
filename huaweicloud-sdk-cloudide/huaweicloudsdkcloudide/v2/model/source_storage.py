@@ -29,7 +29,7 @@ class SourceStorage:
     }
 
     def __init__(self, location=None, parameters=None, type=None):
-        """SourceStorage
+        r"""SourceStorage
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SourceStorage:
 
     @property
     def location(self):
-        """Gets the location of this SourceStorage.
+        r"""Gets the location of this SourceStorage.
 
         位置
 
@@ -68,7 +68,7 @@ class SourceStorage:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this SourceStorage.
+        r"""Sets the location of this SourceStorage.
 
         位置
 
@@ -79,7 +79,7 @@ class SourceStorage:
 
     @property
     def parameters(self):
-        """Gets the parameters of this SourceStorage.
+        r"""Gets the parameters of this SourceStorage.
 
         参数值
 
@@ -90,7 +90,7 @@ class SourceStorage:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this SourceStorage.
+        r"""Sets the parameters of this SourceStorage.
 
         参数值
 
@@ -101,7 +101,7 @@ class SourceStorage:
 
     @property
     def type(self):
-        """Gets the type of this SourceStorage.
+        r"""Gets the type of this SourceStorage.
 
         类型
 
@@ -112,7 +112,7 @@ class SourceStorage:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SourceStorage.
+        r"""Sets the type of this SourceStorage.
 
         类型
 

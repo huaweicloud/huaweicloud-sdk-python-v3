@@ -31,7 +31,7 @@ class Res:
     }
 
     def __init__(self, cpu=None, gpu=None, memory=None, npu=None):
-        """Res
+        r"""Res
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Res:
 
     @property
     def cpu(self):
-        """Gets the cpu of this Res.
+        r"""Gets the cpu of this Res.
 
         cpu数量，字符串所对应的数值在0.01到1000之间
 
@@ -75,7 +75,7 @@ class Res:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this Res.
+        r"""Sets the cpu of this Res.
 
         cpu数量，字符串所对应的数值在0.01到1000之间
 
@@ -86,7 +86,7 @@ class Res:
 
     @property
     def gpu(self):
-        """Gets the gpu of this Res.
+        r"""Gets the gpu of this Res.
 
         gpu数量，值在0到1000
 
@@ -97,7 +97,7 @@ class Res:
 
     @gpu.setter
     def gpu(self, gpu):
-        """Sets the gpu of this Res.
+        r"""Sets the gpu of this Res.
 
         gpu数量，值在0到1000
 
@@ -108,7 +108,7 @@ class Res:
 
     @property
     def memory(self):
-        """Gets the memory of this Res.
+        r"""Gets the memory of this Res.
 
         内存数量，如果是资源限制，其值范围在4到1024000之间，否则在0.01到1024000之间
 
@@ -119,7 +119,7 @@ class Res:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this Res.
+        r"""Sets the memory of this Res.
 
         内存数量，如果是资源限制，其值范围在4到1024000之间，否则在0.01到1024000之间
 
@@ -130,7 +130,7 @@ class Res:
 
     @property
     def npu(self):
-        """Gets the npu of this Res.
+        r"""Gets the npu of this Res.
 
         npu数量，字符串所对应的数值在0.到1000之间
 
@@ -141,7 +141,7 @@ class Res:
 
     @npu.setter
     def npu(self, npu):
-        """Sets the npu of this Res.
+        r"""Sets the npu of this Res.
 
         npu数量，字符串所对应的数值在0.到1000之间
 

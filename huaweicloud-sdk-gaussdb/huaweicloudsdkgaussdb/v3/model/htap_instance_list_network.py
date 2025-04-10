@@ -29,7 +29,7 @@ class HtapInstanceListNetwork:
     }
 
     def __init__(self, vpc_id=None, sub_net_id=None, security_group_id=None):
-        """HtapInstanceListNetwork
+        r"""HtapInstanceListNetwork
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class HtapInstanceListNetwork:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this HtapInstanceListNetwork.
+        r"""Gets the vpc_id of this HtapInstanceListNetwork.
 
         虚拟私有云ID。
 
@@ -68,7 +68,7 @@ class HtapInstanceListNetwork:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this HtapInstanceListNetwork.
+        r"""Sets the vpc_id of this HtapInstanceListNetwork.
 
         虚拟私有云ID。
 
@@ -79,7 +79,7 @@ class HtapInstanceListNetwork:
 
     @property
     def sub_net_id(self):
-        """Gets the sub_net_id of this HtapInstanceListNetwork.
+        r"""Gets the sub_net_id of this HtapInstanceListNetwork.
 
         子网ID。
 
@@ -90,7 +90,7 @@ class HtapInstanceListNetwork:
 
     @sub_net_id.setter
     def sub_net_id(self, sub_net_id):
-        """Sets the sub_net_id of this HtapInstanceListNetwork.
+        r"""Sets the sub_net_id of this HtapInstanceListNetwork.
 
         子网ID。
 
@@ -101,7 +101,7 @@ class HtapInstanceListNetwork:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this HtapInstanceListNetwork.
+        r"""Gets the security_group_id of this HtapInstanceListNetwork.
 
         安全组ID。
 
@@ -112,7 +112,7 @@ class HtapInstanceListNetwork:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this HtapInstanceListNetwork.
+        r"""Sets the security_group_id of this HtapInstanceListNetwork.
 
         安全组ID。
 

@@ -24,7 +24,7 @@ class ExpandClusterComponentResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ExpandClusterComponentResponse
+        r"""ExpandClusterComponentResponse
 
         The model defined in huaweicloud sdk
 

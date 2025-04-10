@@ -35,7 +35,7 @@ class UpdateBlackWhiteListDto:
     }
 
     def __init__(self, direction=None, address_type=None, address=None, protocol=None, port=None, description=None):
-        """UpdateBlackWhiteListDto
+        r"""UpdateBlackWhiteListDto
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class UpdateBlackWhiteListDto:
 
     @property
     def direction(self):
-        """Gets the direction of this UpdateBlackWhiteListDto.
+        r"""Gets the direction of this UpdateBlackWhiteListDto.
 
         地址方向0：源地址1：目的地址
 
@@ -88,7 +88,7 @@ class UpdateBlackWhiteListDto:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this UpdateBlackWhiteListDto.
+        r"""Sets the direction of this UpdateBlackWhiteListDto.
 
         地址方向0：源地址1：目的地址
 
@@ -99,7 +99,7 @@ class UpdateBlackWhiteListDto:
 
     @property
     def address_type(self):
-        """Gets the address_type of this UpdateBlackWhiteListDto.
+        r"""Gets the address_type of this UpdateBlackWhiteListDto.
 
         地址类型0：ipv4，1:ipv6
 
@@ -110,7 +110,7 @@ class UpdateBlackWhiteListDto:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this UpdateBlackWhiteListDto.
+        r"""Sets the address_type of this UpdateBlackWhiteListDto.
 
         地址类型0：ipv4，1:ipv6
 
@@ -121,7 +121,7 @@ class UpdateBlackWhiteListDto:
 
     @property
     def address(self):
-        """Gets the address of this UpdateBlackWhiteListDto.
+        r"""Gets the address of this UpdateBlackWhiteListDto.
 
         ip地址
 
@@ -132,7 +132,7 @@ class UpdateBlackWhiteListDto:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this UpdateBlackWhiteListDto.
+        r"""Sets the address of this UpdateBlackWhiteListDto.
 
         ip地址
 
@@ -143,7 +143,7 @@ class UpdateBlackWhiteListDto:
 
     @property
     def protocol(self):
-        """Gets the protocol of this UpdateBlackWhiteListDto.
+        r"""Gets the protocol of this UpdateBlackWhiteListDto.
 
         协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1
 
@@ -154,7 +154,7 @@ class UpdateBlackWhiteListDto:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this UpdateBlackWhiteListDto.
+        r"""Sets the protocol of this UpdateBlackWhiteListDto.
 
         协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1
 
@@ -165,7 +165,7 @@ class UpdateBlackWhiteListDto:
 
     @property
     def port(self):
-        """Gets the port of this UpdateBlackWhiteListDto.
+        r"""Gets the port of this UpdateBlackWhiteListDto.
 
         端口
 
@@ -176,7 +176,7 @@ class UpdateBlackWhiteListDto:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this UpdateBlackWhiteListDto.
+        r"""Sets the port of this UpdateBlackWhiteListDto.
 
         端口
 
@@ -187,7 +187,7 @@ class UpdateBlackWhiteListDto:
 
     @property
     def description(self):
-        """Gets the description of this UpdateBlackWhiteListDto.
+        r"""Gets the description of this UpdateBlackWhiteListDto.
 
         描述
 
@@ -198,7 +198,7 @@ class UpdateBlackWhiteListDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateBlackWhiteListDto.
+        r"""Sets the description of this UpdateBlackWhiteListDto.
 
         描述
 

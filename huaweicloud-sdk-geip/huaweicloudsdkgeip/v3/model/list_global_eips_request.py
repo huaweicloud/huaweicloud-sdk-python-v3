@@ -87,7 +87,7 @@ class ListGlobalEipsRequest:
     }
 
     def __init__(self, limit=None, offset=None, marker=None, page_reverse=None, fields=None, sort_key=None, sort_dir=None, id=None, internet_bandwidth_id=None, name=None, name_like=None, access_site=None, geip_pool_name=None, isp=None, ip_version=None, ip_address=None, ipv6_address=None, freezen=None, polluted=None, internet_bandwidth_is_null=None, gcb_bandwidth_is_null=None, status=None, associate_instance_info_region=None, associate_instance_info_instance_type=None, associate_instance_info_public_border_group=None, associate_instance_info_instance_site=None, associate_instance_info_instance_id=None, associate_instance_info_project_id=None, associate_instance_info_service_id=None, associate_instance_info_service_type=None, enterprise_project_id=None, tags=None):
-        """ListGlobalEipsRequest
+        r"""ListGlobalEipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -260,7 +260,7 @@ class ListGlobalEipsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGlobalEipsRequest.
+        r"""Gets the limit of this ListGlobalEipsRequest.
 
         每页条数
 
@@ -271,7 +271,7 @@ class ListGlobalEipsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGlobalEipsRequest.
+        r"""Sets the limit of this ListGlobalEipsRequest.
 
         每页条数
 
@@ -282,7 +282,7 @@ class ListGlobalEipsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGlobalEipsRequest.
+        r"""Gets the offset of this ListGlobalEipsRequest.
 
         分页起始点
 
@@ -293,7 +293,7 @@ class ListGlobalEipsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGlobalEipsRequest.
+        r"""Sets the offset of this ListGlobalEipsRequest.
 
         分页起始点
 
@@ -304,7 +304,7 @@ class ListGlobalEipsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListGlobalEipsRequest.
+        r"""Gets the marker of this ListGlobalEipsRequest.
 
         分页起始点
 
@@ -315,7 +315,7 @@ class ListGlobalEipsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListGlobalEipsRequest.
+        r"""Sets the marker of this ListGlobalEipsRequest.
 
         分页起始点
 
@@ -326,7 +326,7 @@ class ListGlobalEipsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListGlobalEipsRequest.
+        r"""Gets the page_reverse of this ListGlobalEipsRequest.
 
         翻页方向
 
@@ -337,7 +337,7 @@ class ListGlobalEipsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListGlobalEipsRequest.
+        r"""Sets the page_reverse of this ListGlobalEipsRequest.
 
         翻页方向
 
@@ -348,7 +348,7 @@ class ListGlobalEipsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListGlobalEipsRequest.
+        r"""Gets the fields of this ListGlobalEipsRequest.
 
         :return: The fields of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -357,7 +357,7 @@ class ListGlobalEipsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListGlobalEipsRequest.
+        r"""Sets the fields of this ListGlobalEipsRequest.
 
         :param fields: The fields of this ListGlobalEipsRequest.
         :type fields: list[str]
@@ -366,7 +366,7 @@ class ListGlobalEipsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListGlobalEipsRequest.
+        r"""Gets the sort_key of this ListGlobalEipsRequest.
 
         按照sort_key指定的字段排序
 
@@ -377,7 +377,7 @@ class ListGlobalEipsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListGlobalEipsRequest.
+        r"""Sets the sort_key of this ListGlobalEipsRequest.
 
         按照sort_key指定的字段排序
 
@@ -388,7 +388,7 @@ class ListGlobalEipsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListGlobalEipsRequest.
+        r"""Gets the sort_dir of this ListGlobalEipsRequest.
 
         排序的方向，倒序或者正序
 
@@ -399,7 +399,7 @@ class ListGlobalEipsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListGlobalEipsRequest.
+        r"""Sets the sort_dir of this ListGlobalEipsRequest.
 
         排序的方向，倒序或者正序
 
@@ -410,7 +410,7 @@ class ListGlobalEipsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListGlobalEipsRequest.
+        r"""Gets the id of this ListGlobalEipsRequest.
 
         :return: The id of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -419,7 +419,7 @@ class ListGlobalEipsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListGlobalEipsRequest.
+        r"""Sets the id of this ListGlobalEipsRequest.
 
         :param id: The id of this ListGlobalEipsRequest.
         :type id: list[str]
@@ -428,7 +428,7 @@ class ListGlobalEipsRequest:
 
     @property
     def internet_bandwidth_id(self):
-        """Gets the internet_bandwidth_id of this ListGlobalEipsRequest.
+        r"""Gets the internet_bandwidth_id of this ListGlobalEipsRequest.
 
         :return: The internet_bandwidth_id of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -437,7 +437,7 @@ class ListGlobalEipsRequest:
 
     @internet_bandwidth_id.setter
     def internet_bandwidth_id(self, internet_bandwidth_id):
-        """Sets the internet_bandwidth_id of this ListGlobalEipsRequest.
+        r"""Sets the internet_bandwidth_id of this ListGlobalEipsRequest.
 
         :param internet_bandwidth_id: The internet_bandwidth_id of this ListGlobalEipsRequest.
         :type internet_bandwidth_id: list[str]
@@ -446,7 +446,7 @@ class ListGlobalEipsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListGlobalEipsRequest.
+        r"""Gets the name of this ListGlobalEipsRequest.
 
         :return: The name of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -455,7 +455,7 @@ class ListGlobalEipsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListGlobalEipsRequest.
+        r"""Sets the name of this ListGlobalEipsRequest.
 
         :param name: The name of this ListGlobalEipsRequest.
         :type name: list[str]
@@ -464,7 +464,7 @@ class ListGlobalEipsRequest:
 
     @property
     def name_like(self):
-        """Gets the name_like of this ListGlobalEipsRequest.
+        r"""Gets the name_like of this ListGlobalEipsRequest.
 
         :return: The name_like of this ListGlobalEipsRequest.
         :rtype: str
@@ -473,7 +473,7 @@ class ListGlobalEipsRequest:
 
     @name_like.setter
     def name_like(self, name_like):
-        """Sets the name_like of this ListGlobalEipsRequest.
+        r"""Sets the name_like of this ListGlobalEipsRequest.
 
         :param name_like: The name_like of this ListGlobalEipsRequest.
         :type name_like: str
@@ -482,7 +482,7 @@ class ListGlobalEipsRequest:
 
     @property
     def access_site(self):
-        """Gets the access_site of this ListGlobalEipsRequest.
+        r"""Gets the access_site of this ListGlobalEipsRequest.
 
         :return: The access_site of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -491,7 +491,7 @@ class ListGlobalEipsRequest:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this ListGlobalEipsRequest.
+        r"""Sets the access_site of this ListGlobalEipsRequest.
 
         :param access_site: The access_site of this ListGlobalEipsRequest.
         :type access_site: list[str]
@@ -500,7 +500,7 @@ class ListGlobalEipsRequest:
 
     @property
     def geip_pool_name(self):
-        """Gets the geip_pool_name of this ListGlobalEipsRequest.
+        r"""Gets the geip_pool_name of this ListGlobalEipsRequest.
 
         :return: The geip_pool_name of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -509,7 +509,7 @@ class ListGlobalEipsRequest:
 
     @geip_pool_name.setter
     def geip_pool_name(self, geip_pool_name):
-        """Sets the geip_pool_name of this ListGlobalEipsRequest.
+        r"""Sets the geip_pool_name of this ListGlobalEipsRequest.
 
         :param geip_pool_name: The geip_pool_name of this ListGlobalEipsRequest.
         :type geip_pool_name: list[str]
@@ -518,7 +518,7 @@ class ListGlobalEipsRequest:
 
     @property
     def isp(self):
-        """Gets the isp of this ListGlobalEipsRequest.
+        r"""Gets the isp of this ListGlobalEipsRequest.
 
         :return: The isp of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -527,7 +527,7 @@ class ListGlobalEipsRequest:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ListGlobalEipsRequest.
+        r"""Sets the isp of this ListGlobalEipsRequest.
 
         :param isp: The isp of this ListGlobalEipsRequest.
         :type isp: list[str]
@@ -536,7 +536,7 @@ class ListGlobalEipsRequest:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this ListGlobalEipsRequest.
+        r"""Gets the ip_version of this ListGlobalEipsRequest.
 
         :return: The ip_version of this ListGlobalEipsRequest.
         :rtype: list[int]
@@ -545,7 +545,7 @@ class ListGlobalEipsRequest:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this ListGlobalEipsRequest.
+        r"""Sets the ip_version of this ListGlobalEipsRequest.
 
         :param ip_version: The ip_version of this ListGlobalEipsRequest.
         :type ip_version: list[int]
@@ -554,7 +554,7 @@ class ListGlobalEipsRequest:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this ListGlobalEipsRequest.
+        r"""Gets the ip_address of this ListGlobalEipsRequest.
 
         :return: The ip_address of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -563,7 +563,7 @@ class ListGlobalEipsRequest:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this ListGlobalEipsRequest.
+        r"""Sets the ip_address of this ListGlobalEipsRequest.
 
         :param ip_address: The ip_address of this ListGlobalEipsRequest.
         :type ip_address: list[str]
@@ -572,7 +572,7 @@ class ListGlobalEipsRequest:
 
     @property
     def ipv6_address(self):
-        """Gets the ipv6_address of this ListGlobalEipsRequest.
+        r"""Gets the ipv6_address of this ListGlobalEipsRequest.
 
         :return: The ipv6_address of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -581,7 +581,7 @@ class ListGlobalEipsRequest:
 
     @ipv6_address.setter
     def ipv6_address(self, ipv6_address):
-        """Sets the ipv6_address of this ListGlobalEipsRequest.
+        r"""Sets the ipv6_address of this ListGlobalEipsRequest.
 
         :param ipv6_address: The ipv6_address of this ListGlobalEipsRequest.
         :type ipv6_address: list[str]
@@ -590,7 +590,7 @@ class ListGlobalEipsRequest:
 
     @property
     def freezen(self):
-        """Gets the freezen of this ListGlobalEipsRequest.
+        r"""Gets the freezen of this ListGlobalEipsRequest.
 
         :return: The freezen of this ListGlobalEipsRequest.
         :rtype: list[bool]
@@ -599,7 +599,7 @@ class ListGlobalEipsRequest:
 
     @freezen.setter
     def freezen(self, freezen):
-        """Sets the freezen of this ListGlobalEipsRequest.
+        r"""Sets the freezen of this ListGlobalEipsRequest.
 
         :param freezen: The freezen of this ListGlobalEipsRequest.
         :type freezen: list[bool]
@@ -608,7 +608,7 @@ class ListGlobalEipsRequest:
 
     @property
     def polluted(self):
-        """Gets the polluted of this ListGlobalEipsRequest.
+        r"""Gets the polluted of this ListGlobalEipsRequest.
 
         :return: The polluted of this ListGlobalEipsRequest.
         :rtype: list[bool]
@@ -617,7 +617,7 @@ class ListGlobalEipsRequest:
 
     @polluted.setter
     def polluted(self, polluted):
-        """Sets the polluted of this ListGlobalEipsRequest.
+        r"""Sets the polluted of this ListGlobalEipsRequest.
 
         :param polluted: The polluted of this ListGlobalEipsRequest.
         :type polluted: list[bool]
@@ -626,7 +626,7 @@ class ListGlobalEipsRequest:
 
     @property
     def internet_bandwidth_is_null(self):
-        """Gets the internet_bandwidth_is_null of this ListGlobalEipsRequest.
+        r"""Gets the internet_bandwidth_is_null of this ListGlobalEipsRequest.
 
         :return: The internet_bandwidth_is_null of this ListGlobalEipsRequest.
         :rtype: list[bool]
@@ -635,7 +635,7 @@ class ListGlobalEipsRequest:
 
     @internet_bandwidth_is_null.setter
     def internet_bandwidth_is_null(self, internet_bandwidth_is_null):
-        """Sets the internet_bandwidth_is_null of this ListGlobalEipsRequest.
+        r"""Sets the internet_bandwidth_is_null of this ListGlobalEipsRequest.
 
         :param internet_bandwidth_is_null: The internet_bandwidth_is_null of this ListGlobalEipsRequest.
         :type internet_bandwidth_is_null: list[bool]
@@ -644,7 +644,7 @@ class ListGlobalEipsRequest:
 
     @property
     def gcb_bandwidth_is_null(self):
-        """Gets the gcb_bandwidth_is_null of this ListGlobalEipsRequest.
+        r"""Gets the gcb_bandwidth_is_null of this ListGlobalEipsRequest.
 
         :return: The gcb_bandwidth_is_null of this ListGlobalEipsRequest.
         :rtype: list[bool]
@@ -653,7 +653,7 @@ class ListGlobalEipsRequest:
 
     @gcb_bandwidth_is_null.setter
     def gcb_bandwidth_is_null(self, gcb_bandwidth_is_null):
-        """Sets the gcb_bandwidth_is_null of this ListGlobalEipsRequest.
+        r"""Sets the gcb_bandwidth_is_null of this ListGlobalEipsRequest.
 
         :param gcb_bandwidth_is_null: The gcb_bandwidth_is_null of this ListGlobalEipsRequest.
         :type gcb_bandwidth_is_null: list[bool]
@@ -662,7 +662,7 @@ class ListGlobalEipsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListGlobalEipsRequest.
+        r"""Gets the status of this ListGlobalEipsRequest.
 
         :return: The status of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -671,7 +671,7 @@ class ListGlobalEipsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListGlobalEipsRequest.
+        r"""Sets the status of this ListGlobalEipsRequest.
 
         :param status: The status of this ListGlobalEipsRequest.
         :type status: list[str]
@@ -680,7 +680,7 @@ class ListGlobalEipsRequest:
 
     @property
     def associate_instance_info_region(self):
-        """Gets the associate_instance_info_region of this ListGlobalEipsRequest.
+        r"""Gets the associate_instance_info_region of this ListGlobalEipsRequest.
 
         :return: The associate_instance_info_region of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -689,7 +689,7 @@ class ListGlobalEipsRequest:
 
     @associate_instance_info_region.setter
     def associate_instance_info_region(self, associate_instance_info_region):
-        """Sets the associate_instance_info_region of this ListGlobalEipsRequest.
+        r"""Sets the associate_instance_info_region of this ListGlobalEipsRequest.
 
         :param associate_instance_info_region: The associate_instance_info_region of this ListGlobalEipsRequest.
         :type associate_instance_info_region: list[str]
@@ -698,7 +698,7 @@ class ListGlobalEipsRequest:
 
     @property
     def associate_instance_info_instance_type(self):
-        """Gets the associate_instance_info_instance_type of this ListGlobalEipsRequest.
+        r"""Gets the associate_instance_info_instance_type of this ListGlobalEipsRequest.
 
         :return: The associate_instance_info_instance_type of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -707,7 +707,7 @@ class ListGlobalEipsRequest:
 
     @associate_instance_info_instance_type.setter
     def associate_instance_info_instance_type(self, associate_instance_info_instance_type):
-        """Sets the associate_instance_info_instance_type of this ListGlobalEipsRequest.
+        r"""Sets the associate_instance_info_instance_type of this ListGlobalEipsRequest.
 
         :param associate_instance_info_instance_type: The associate_instance_info_instance_type of this ListGlobalEipsRequest.
         :type associate_instance_info_instance_type: list[str]
@@ -716,7 +716,7 @@ class ListGlobalEipsRequest:
 
     @property
     def associate_instance_info_public_border_group(self):
-        """Gets the associate_instance_info_public_border_group of this ListGlobalEipsRequest.
+        r"""Gets the associate_instance_info_public_border_group of this ListGlobalEipsRequest.
 
         :return: The associate_instance_info_public_border_group of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -725,7 +725,7 @@ class ListGlobalEipsRequest:
 
     @associate_instance_info_public_border_group.setter
     def associate_instance_info_public_border_group(self, associate_instance_info_public_border_group):
-        """Sets the associate_instance_info_public_border_group of this ListGlobalEipsRequest.
+        r"""Sets the associate_instance_info_public_border_group of this ListGlobalEipsRequest.
 
         :param associate_instance_info_public_border_group: The associate_instance_info_public_border_group of this ListGlobalEipsRequest.
         :type associate_instance_info_public_border_group: list[str]
@@ -734,7 +734,7 @@ class ListGlobalEipsRequest:
 
     @property
     def associate_instance_info_instance_site(self):
-        """Gets the associate_instance_info_instance_site of this ListGlobalEipsRequest.
+        r"""Gets the associate_instance_info_instance_site of this ListGlobalEipsRequest.
 
         :return: The associate_instance_info_instance_site of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -743,7 +743,7 @@ class ListGlobalEipsRequest:
 
     @associate_instance_info_instance_site.setter
     def associate_instance_info_instance_site(self, associate_instance_info_instance_site):
-        """Sets the associate_instance_info_instance_site of this ListGlobalEipsRequest.
+        r"""Sets the associate_instance_info_instance_site of this ListGlobalEipsRequest.
 
         :param associate_instance_info_instance_site: The associate_instance_info_instance_site of this ListGlobalEipsRequest.
         :type associate_instance_info_instance_site: list[str]
@@ -752,7 +752,7 @@ class ListGlobalEipsRequest:
 
     @property
     def associate_instance_info_instance_id(self):
-        """Gets the associate_instance_info_instance_id of this ListGlobalEipsRequest.
+        r"""Gets the associate_instance_info_instance_id of this ListGlobalEipsRequest.
 
         :return: The associate_instance_info_instance_id of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -761,7 +761,7 @@ class ListGlobalEipsRequest:
 
     @associate_instance_info_instance_id.setter
     def associate_instance_info_instance_id(self, associate_instance_info_instance_id):
-        """Sets the associate_instance_info_instance_id of this ListGlobalEipsRequest.
+        r"""Sets the associate_instance_info_instance_id of this ListGlobalEipsRequest.
 
         :param associate_instance_info_instance_id: The associate_instance_info_instance_id of this ListGlobalEipsRequest.
         :type associate_instance_info_instance_id: list[str]
@@ -770,7 +770,7 @@ class ListGlobalEipsRequest:
 
     @property
     def associate_instance_info_project_id(self):
-        """Gets the associate_instance_info_project_id of this ListGlobalEipsRequest.
+        r"""Gets the associate_instance_info_project_id of this ListGlobalEipsRequest.
 
         :return: The associate_instance_info_project_id of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -779,7 +779,7 @@ class ListGlobalEipsRequest:
 
     @associate_instance_info_project_id.setter
     def associate_instance_info_project_id(self, associate_instance_info_project_id):
-        """Sets the associate_instance_info_project_id of this ListGlobalEipsRequest.
+        r"""Sets the associate_instance_info_project_id of this ListGlobalEipsRequest.
 
         :param associate_instance_info_project_id: The associate_instance_info_project_id of this ListGlobalEipsRequest.
         :type associate_instance_info_project_id: list[str]
@@ -788,7 +788,7 @@ class ListGlobalEipsRequest:
 
     @property
     def associate_instance_info_service_id(self):
-        """Gets the associate_instance_info_service_id of this ListGlobalEipsRequest.
+        r"""Gets the associate_instance_info_service_id of this ListGlobalEipsRequest.
 
         :return: The associate_instance_info_service_id of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -797,7 +797,7 @@ class ListGlobalEipsRequest:
 
     @associate_instance_info_service_id.setter
     def associate_instance_info_service_id(self, associate_instance_info_service_id):
-        """Sets the associate_instance_info_service_id of this ListGlobalEipsRequest.
+        r"""Sets the associate_instance_info_service_id of this ListGlobalEipsRequest.
 
         :param associate_instance_info_service_id: The associate_instance_info_service_id of this ListGlobalEipsRequest.
         :type associate_instance_info_service_id: list[str]
@@ -806,7 +806,7 @@ class ListGlobalEipsRequest:
 
     @property
     def associate_instance_info_service_type(self):
-        """Gets the associate_instance_info_service_type of this ListGlobalEipsRequest.
+        r"""Gets the associate_instance_info_service_type of this ListGlobalEipsRequest.
 
         :return: The associate_instance_info_service_type of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -815,7 +815,7 @@ class ListGlobalEipsRequest:
 
     @associate_instance_info_service_type.setter
     def associate_instance_info_service_type(self, associate_instance_info_service_type):
-        """Sets the associate_instance_info_service_type of this ListGlobalEipsRequest.
+        r"""Sets the associate_instance_info_service_type of this ListGlobalEipsRequest.
 
         :param associate_instance_info_service_type: The associate_instance_info_service_type of this ListGlobalEipsRequest.
         :type associate_instance_info_service_type: list[str]
@@ -824,7 +824,7 @@ class ListGlobalEipsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListGlobalEipsRequest.
+        r"""Gets the enterprise_project_id of this ListGlobalEipsRequest.
 
         :return: The enterprise_project_id of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -833,7 +833,7 @@ class ListGlobalEipsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListGlobalEipsRequest.
+        r"""Sets the enterprise_project_id of this ListGlobalEipsRequest.
 
         :param enterprise_project_id: The enterprise_project_id of this ListGlobalEipsRequest.
         :type enterprise_project_id: list[str]
@@ -842,7 +842,7 @@ class ListGlobalEipsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListGlobalEipsRequest.
+        r"""Gets the tags of this ListGlobalEipsRequest.
 
         :return: The tags of this ListGlobalEipsRequest.
         :rtype: list[str]
@@ -851,7 +851,7 @@ class ListGlobalEipsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListGlobalEipsRequest.
+        r"""Sets the tags of this ListGlobalEipsRequest.
 
         :param tags: The tags of this ListGlobalEipsRequest.
         :type tags: list[str]

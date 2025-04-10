@@ -25,7 +25,7 @@ class ShowCatalogRequest:
     }
 
     def __init__(self, catalog_name=None):
-        """ShowCatalogRequest
+        r"""ShowCatalogRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCatalogRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ShowCatalogRequest.
+        r"""Gets the catalog_name of this ShowCatalogRequest.
 
         catalog名称。
 
@@ -53,7 +53,7 @@ class ShowCatalogRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ShowCatalogRequest.
+        r"""Sets the catalog_name of this ShowCatalogRequest.
 
         catalog名称。
 

@@ -29,7 +29,7 @@ class LinkedEntity:
     }
 
     def __init__(self, mention=None, offset=None, entity_title=None):
-        """LinkedEntity
+        r"""LinkedEntity
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class LinkedEntity:
 
     @property
     def mention(self):
-        """Gets the mention of this LinkedEntity.
+        r"""Gets the mention of this LinkedEntity.
 
         实体指称
 
@@ -65,7 +65,7 @@ class LinkedEntity:
 
     @mention.setter
     def mention(self, mention):
-        """Sets the mention of this LinkedEntity.
+        r"""Sets the mention of this LinkedEntity.
 
         实体指称
 
@@ -76,7 +76,7 @@ class LinkedEntity:
 
     @property
     def offset(self):
-        """Gets the offset of this LinkedEntity.
+        r"""Gets the offset of this LinkedEntity.
 
         偏移量
 
@@ -87,7 +87,7 @@ class LinkedEntity:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this LinkedEntity.
+        r"""Sets the offset of this LinkedEntity.
 
         偏移量
 
@@ -98,7 +98,7 @@ class LinkedEntity:
 
     @property
     def entity_title(self):
-        """Gets the entity_title of this LinkedEntity.
+        r"""Gets the entity_title of this LinkedEntity.
 
         实体名称
 
@@ -109,7 +109,7 @@ class LinkedEntity:
 
     @entity_title.setter
     def entity_title(self, entity_title):
-        """Sets the entity_title of this LinkedEntity.
+        r"""Sets the entity_title of this LinkedEntity.
 
         实体名称
 

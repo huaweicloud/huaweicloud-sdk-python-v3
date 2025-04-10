@@ -27,7 +27,7 @@ class AlterTableInput:
     }
 
     def __init__(self, alter_params=None, table=None):
-        """AlterTableInput
+        r"""AlterTableInput
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AlterTableInput:
 
     @property
     def alter_params(self):
-        """Gets the alter_params of this AlterTableInput.
+        r"""Gets the alter_params of this AlterTableInput.
 
         修改表参数映射信息，支持的参数如下： CASADE: 级联删除列，如果为true则会把partition中的列也删除；如果为false则不会 DO_NOT_UPDATE_STATS: 不更新文件级别统计信息。true则不更新；false则更新。 STATS_GENERATED：记录本次更新的发起者。可填：TASK/USET。具体作用未明确。
 
@@ -60,7 +60,7 @@ class AlterTableInput:
 
     @alter_params.setter
     def alter_params(self, alter_params):
-        """Sets the alter_params of this AlterTableInput.
+        r"""Sets the alter_params of this AlterTableInput.
 
         修改表参数映射信息，支持的参数如下： CASADE: 级联删除列，如果为true则会把partition中的列也删除；如果为false则不会 DO_NOT_UPDATE_STATS: 不更新文件级别统计信息。true则不更新；false则更新。 STATS_GENERATED：记录本次更新的发起者。可填：TASK/USET。具体作用未明确。
 
@@ -71,7 +71,7 @@ class AlterTableInput:
 
     @property
     def table(self):
-        """Gets the table of this AlterTableInput.
+        r"""Gets the table of this AlterTableInput.
 
         :return: The table of this AlterTableInput.
         :rtype: :class:`huaweicloudsdklakeformation.v1.TableInput`
@@ -80,7 +80,7 @@ class AlterTableInput:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this AlterTableInput.
+        r"""Sets the table of this AlterTableInput.
 
         :param table: The table of this AlterTableInput.
         :type table: :class:`huaweicloudsdklakeformation.v1.TableInput`

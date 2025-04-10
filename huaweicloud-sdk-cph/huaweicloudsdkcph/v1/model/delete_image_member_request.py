@@ -27,7 +27,7 @@ class DeleteImageMemberRequest:
     }
 
     def __init__(self, image_id=None, member_id=None):
-        """DeleteImageMemberRequest
+        r"""DeleteImageMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteImageMemberRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this DeleteImageMemberRequest.
+        r"""Gets the image_id of this DeleteImageMemberRequest.
 
         镜像id。
 
@@ -59,7 +59,7 @@ class DeleteImageMemberRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this DeleteImageMemberRequest.
+        r"""Sets the image_id of this DeleteImageMemberRequest.
 
         镜像id。
 
@@ -70,7 +70,7 @@ class DeleteImageMemberRequest:
 
     @property
     def member_id(self):
-        """Gets the member_id of this DeleteImageMemberRequest.
+        r"""Gets the member_id of this DeleteImageMemberRequest.
 
         被共享账号的PROJECT_ID。
 
@@ -81,7 +81,7 @@ class DeleteImageMemberRequest:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this DeleteImageMemberRequest.
+        r"""Sets the member_id of this DeleteImageMemberRequest.
 
         被共享账号的PROJECT_ID。
 

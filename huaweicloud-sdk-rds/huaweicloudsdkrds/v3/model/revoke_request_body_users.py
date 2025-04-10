@@ -25,7 +25,7 @@ class RevokeRequestBodyUsers:
     }
 
     def __init__(self, name=None):
-        """RevokeRequestBodyUsers
+        r"""RevokeRequestBodyUsers
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RevokeRequestBodyUsers:
 
     @property
     def name(self):
-        """Gets the name of this RevokeRequestBodyUsers.
+        r"""Gets the name of this RevokeRequestBodyUsers.
 
         数据库用户名称。
 
@@ -53,7 +53,7 @@ class RevokeRequestBodyUsers:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RevokeRequestBodyUsers.
+        r"""Sets the name of this RevokeRequestBodyUsers.
 
         数据库用户名称。
 

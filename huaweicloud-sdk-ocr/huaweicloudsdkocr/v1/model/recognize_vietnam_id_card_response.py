@@ -28,7 +28,7 @@ class RecognizeVietnamIdCardResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeVietnamIdCardResponse
+        r"""RecognizeVietnamIdCardResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeVietnamIdCardResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeVietnamIdCardResponse.
+        r"""Gets the result of this RecognizeVietnamIdCardResponse.
 
         :return: The result of this RecognizeVietnamIdCardResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.VietnamIdCardResult`
@@ -60,7 +60,7 @@ class RecognizeVietnamIdCardResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeVietnamIdCardResponse.
+        r"""Sets the result of this RecognizeVietnamIdCardResponse.
 
         :param result: The result of this RecognizeVietnamIdCardResponse.
         :type result: :class:`huaweicloudsdkocr.v1.VietnamIdCardResult`
@@ -69,7 +69,7 @@ class RecognizeVietnamIdCardResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeVietnamIdCardResponse.
+        r"""Gets the x_request_id of this RecognizeVietnamIdCardResponse.
 
         :return: The x_request_id of this RecognizeVietnamIdCardResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeVietnamIdCardResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeVietnamIdCardResponse.
+        r"""Sets the x_request_id of this RecognizeVietnamIdCardResponse.
 
         :param x_request_id: The x_request_id of this RecognizeVietnamIdCardResponse.
         :type x_request_id: str

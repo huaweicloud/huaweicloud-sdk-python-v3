@@ -27,7 +27,7 @@ class ShowQuotaDetailsRequest:
     }
 
     def __init__(self, site_id=None, az_code=None):
-        """ShowQuotaDetailsRequest
+        r"""ShowQuotaDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowQuotaDetailsRequest:
 
     @property
     def site_id(self):
-        """Gets the site_id of this ShowQuotaDetailsRequest.
+        r"""Gets the site_id of this ShowQuotaDetailsRequest.
 
         站点ID
 
@@ -61,7 +61,7 @@ class ShowQuotaDetailsRequest:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ShowQuotaDetailsRequest.
+        r"""Sets the site_id of this ShowQuotaDetailsRequest.
 
         站点ID
 
@@ -72,7 +72,7 @@ class ShowQuotaDetailsRequest:
 
     @property
     def az_code(self):
-        """Gets the az_code of this ShowQuotaDetailsRequest.
+        r"""Gets the az_code of this ShowQuotaDetailsRequest.
 
         可用分区code
 
@@ -83,7 +83,7 @@ class ShowQuotaDetailsRequest:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this ShowQuotaDetailsRequest.
+        r"""Sets the az_code of this ShowQuotaDetailsRequest.
 
         可用分区code
 

@@ -27,7 +27,7 @@ class TagReq:
     }
 
     def __init__(self, key=None, values=None):
-        """TagReq
+        r"""TagReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TagReq:
 
     @property
     def key(self):
-        """Gets the key of this TagReq.
+        r"""Gets the key of this TagReq.
 
         键。最大长度127个unicode字符。 key不能为空。(搜索时不对此参数做校验)
 
@@ -59,7 +59,7 @@ class TagReq:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagReq.
+        r"""Sets the key of this TagReq.
 
         键。最大长度127个unicode字符。 key不能为空。(搜索时不对此参数做校验)
 
@@ -70,7 +70,7 @@ class TagReq:
 
     @property
     def values(self):
-        """Gets the values of this TagReq.
+        r"""Gets the values of this TagReq.
 
         值列表。每个值最大长度255个unicode字符，如果values为空列表，则表示any_value。value之间为或的关系。
 
@@ -81,7 +81,7 @@ class TagReq:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this TagReq.
+        r"""Sets the values of this TagReq.
 
         值列表。每个值最大长度255个unicode字符，如果values为空列表，则表示any_value。value之间为或的关系。
 

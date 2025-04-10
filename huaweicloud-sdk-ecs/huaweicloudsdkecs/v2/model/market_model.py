@@ -27,7 +27,7 @@ class MarketModel:
     }
 
     def __init__(self, charge_mode=None, prepaid_info=None):
-        """MarketModel
+        r"""MarketModel
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MarketModel:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this MarketModel.
+        r"""Gets the charge_mode of this MarketModel.
 
         计费类型
 
@@ -61,7 +61,7 @@ class MarketModel:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this MarketModel.
+        r"""Sets the charge_mode of this MarketModel.
 
         计费类型
 
@@ -72,7 +72,7 @@ class MarketModel:
 
     @property
     def prepaid_info(self):
-        """Gets the prepaid_info of this MarketModel.
+        r"""Gets the prepaid_info of this MarketModel.
 
         :return: The prepaid_info of this MarketModel.
         :rtype: :class:`huaweicloudsdkecs.v2.MarketModelPrepaidInfo`
@@ -81,7 +81,7 @@ class MarketModel:
 
     @prepaid_info.setter
     def prepaid_info(self, prepaid_info):
-        """Sets the prepaid_info of this MarketModel.
+        r"""Sets the prepaid_info of this MarketModel.
 
         :param prepaid_info: The prepaid_info of this MarketModel.
         :type prepaid_info: :class:`huaweicloudsdkecs.v2.MarketModelPrepaidInfo`

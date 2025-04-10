@@ -30,7 +30,7 @@ class ListImagesResponse(SdkResponse):
     }
 
     def __init__(self, image_infos=None, total=None, request_id=None):
-        """ListImagesResponse
+        r"""ListImagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListImagesResponse(SdkResponse):
 
     @property
     def image_infos(self):
-        """Gets the image_infos of this ListImagesResponse.
+        r"""Gets the image_infos of this ListImagesResponse.
 
         镜像详情
 
@@ -69,7 +69,7 @@ class ListImagesResponse(SdkResponse):
 
     @image_infos.setter
     def image_infos(self, image_infos):
-        """Sets the image_infos of this ListImagesResponse.
+        r"""Sets the image_infos of this ListImagesResponse.
 
         镜像详情
 
@@ -80,7 +80,7 @@ class ListImagesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListImagesResponse.
+        r"""Gets the total of this ListImagesResponse.
 
         总条数
 
@@ -91,7 +91,7 @@ class ListImagesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListImagesResponse.
+        r"""Sets the total of this ListImagesResponse.
 
         总条数
 
@@ -102,7 +102,7 @@ class ListImagesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListImagesResponse.
+        r"""Gets the request_id of this ListImagesResponse.
 
         请求的唯一标识ID。
 
@@ -113,7 +113,7 @@ class ListImagesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListImagesResponse.
+        r"""Sets the request_id of this ListImagesResponse.
 
         请求的唯一标识ID。
 

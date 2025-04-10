@@ -30,7 +30,7 @@ class ListScheduledTaskHistoryResponse(SdkResponse):
     }
 
     def __init__(self, count=None, next_maker=None, scheduled_task_history_list=None):
-        """ListScheduledTaskHistoryResponse
+        r"""ListScheduledTaskHistoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListScheduledTaskHistoryResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListScheduledTaskHistoryResponse.
+        r"""Gets the count of this ListScheduledTaskHistoryResponse.
 
         定时运维历史记录总数量
 
@@ -69,7 +69,7 @@ class ListScheduledTaskHistoryResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListScheduledTaskHistoryResponse.
+        r"""Sets the count of this ListScheduledTaskHistoryResponse.
 
         定时运维历史记录总数量
 
@@ -80,7 +80,7 @@ class ListScheduledTaskHistoryResponse(SdkResponse):
 
     @property
     def next_maker(self):
-        """Gets the next_maker of this ListScheduledTaskHistoryResponse.
+        r"""Gets the next_maker of this ListScheduledTaskHistoryResponse.
 
         分页标记
 
@@ -91,7 +91,7 @@ class ListScheduledTaskHistoryResponse(SdkResponse):
 
     @next_maker.setter
     def next_maker(self, next_maker):
-        """Sets the next_maker of this ListScheduledTaskHistoryResponse.
+        r"""Sets the next_maker of this ListScheduledTaskHistoryResponse.
 
         分页标记
 
@@ -102,7 +102,7 @@ class ListScheduledTaskHistoryResponse(SdkResponse):
 
     @property
     def scheduled_task_history_list(self):
-        """Gets the scheduled_task_history_list of this ListScheduledTaskHistoryResponse.
+        r"""Gets the scheduled_task_history_list of this ListScheduledTaskHistoryResponse.
 
         定时运维历史记录列表
 
@@ -113,7 +113,7 @@ class ListScheduledTaskHistoryResponse(SdkResponse):
 
     @scheduled_task_history_list.setter
     def scheduled_task_history_list(self, scheduled_task_history_list):
-        """Sets the scheduled_task_history_list of this ListScheduledTaskHistoryResponse.
+        r"""Sets the scheduled_task_history_list of this ListScheduledTaskHistoryResponse.
 
         定时运维历史记录列表
 

@@ -43,7 +43,7 @@ class SubJobs:
     }
 
     def __init__(self, status=None, entities=None, job_id=None, job_type=None, begin_time=None, end_time=None, error_code=None, fail_reason=None, message=None, code=None):
-        """SubJobs
+        r"""SubJobs
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class SubJobs:
 
     @property
     def status(self):
-        """Gets the status of this SubJobs.
+        r"""Gets the status of this SubJobs.
 
         Job的状态。SUCCESS：成功RUNNING：运行中FAIL：失败INIT：正在初始化
 
@@ -117,7 +117,7 @@ class SubJobs:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SubJobs.
+        r"""Sets the status of this SubJobs.
 
         Job的状态。SUCCESS：成功RUNNING：运行中FAIL：失败INIT：正在初始化
 
@@ -128,7 +128,7 @@ class SubJobs:
 
     @property
     def entities(self):
-        """Gets the entities of this SubJobs.
+        r"""Gets the entities of this SubJobs.
 
         :return: The entities of this SubJobs.
         :rtype: :class:`huaweicloudsdkbms.v1.Entitie`
@@ -137,7 +137,7 @@ class SubJobs:
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this SubJobs.
+        r"""Sets the entities of this SubJobs.
 
         :param entities: The entities of this SubJobs.
         :type entities: :class:`huaweicloudsdkbms.v1.Entitie`
@@ -146,7 +146,7 @@ class SubJobs:
 
     @property
     def job_id(self):
-        """Gets the job_id of this SubJobs.
+        r"""Gets the job_id of this SubJobs.
 
         Job ID
 
@@ -157,7 +157,7 @@ class SubJobs:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SubJobs.
+        r"""Sets the job_id of this SubJobs.
 
         Job ID
 
@@ -168,7 +168,7 @@ class SubJobs:
 
     @property
     def job_type(self):
-        """Gets the job_type of this SubJobs.
+        r"""Gets the job_type of this SubJobs.
 
         Job的类型，包含以下类型：baremetalSingleCreate：创建单个裸金属服务器；baremetalSingleOperate：修改单个裸金属服务器电源状态；baremetalAttachSingleVolume：挂载单个共享磁盘
 
@@ -179,7 +179,7 @@ class SubJobs:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this SubJobs.
+        r"""Sets the job_type of this SubJobs.
 
         Job的类型，包含以下类型：baremetalSingleCreate：创建单个裸金属服务器；baremetalSingleOperate：修改单个裸金属服务器电源状态；baremetalAttachSingleVolume：挂载单个共享磁盘
 
@@ -190,7 +190,7 @@ class SubJobs:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this SubJobs.
+        r"""Gets the begin_time of this SubJobs.
 
         开始时间。时间戳格式为ISO 8601，例如：2019-04-25T20:04:47.591Z
 
@@ -201,7 +201,7 @@ class SubJobs:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this SubJobs.
+        r"""Sets the begin_time of this SubJobs.
 
         开始时间。时间戳格式为ISO 8601，例如：2019-04-25T20:04:47.591Z
 
@@ -212,7 +212,7 @@ class SubJobs:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SubJobs.
+        r"""Gets the end_time of this SubJobs.
 
         结束时间。时间戳格式为ISO 8601，例如：2019-04-26T20:04:47.591Z
 
@@ -223,7 +223,7 @@ class SubJobs:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SubJobs.
+        r"""Sets the end_time of this SubJobs.
 
         结束时间。时间戳格式为ISO 8601，例如：2019-04-26T20:04:47.591Z
 
@@ -234,7 +234,7 @@ class SubJobs:
 
     @property
     def error_code(self):
-        """Gets the error_code of this SubJobs.
+        r"""Gets the error_code of this SubJobs.
 
         Job执行失败时的错误码
 
@@ -245,7 +245,7 @@ class SubJobs:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this SubJobs.
+        r"""Sets the error_code of this SubJobs.
 
         Job执行失败时的错误码
 
@@ -256,7 +256,7 @@ class SubJobs:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this SubJobs.
+        r"""Gets the fail_reason of this SubJobs.
 
         Job执行失败时的错误原因
 
@@ -267,7 +267,7 @@ class SubJobs:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this SubJobs.
+        r"""Sets the fail_reason of this SubJobs.
 
         Job执行失败时的错误原因
 
@@ -278,7 +278,7 @@ class SubJobs:
 
     @property
     def message(self):
-        """Gets the message of this SubJobs.
+        r"""Gets the message of this SubJobs.
 
         出现错误时，返回的错误消息
 
@@ -289,7 +289,7 @@ class SubJobs:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this SubJobs.
+        r"""Sets the message of this SubJobs.
 
         出现错误时，返回的错误消息
 
@@ -300,7 +300,7 @@ class SubJobs:
 
     @property
     def code(self):
-        """Gets the code of this SubJobs.
+        r"""Gets the code of this SubJobs.
 
         出现错误时，返回的错误码
 
@@ -311,7 +311,7 @@ class SubJobs:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this SubJobs.
+        r"""Sets the code of this SubJobs.
 
         出现错误时，返回的错误码
 

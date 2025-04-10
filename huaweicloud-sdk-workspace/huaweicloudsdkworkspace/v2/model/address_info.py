@@ -31,7 +31,7 @@ class AddressInfo:
     }
 
     def __init__(self, addr=None, version=None, os_ext_ips_ma_cmac_addr=None, os_ext_ip_stype=None):
-        """AddressInfo
+        r"""AddressInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AddressInfo:
 
     @property
     def addr(self):
-        """Gets the addr of this AddressInfo.
+        r"""Gets the addr of this AddressInfo.
 
         IP地址信息。
 
@@ -75,7 +75,7 @@ class AddressInfo:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this AddressInfo.
+        r"""Sets the addr of this AddressInfo.
 
         IP地址信息。
 
@@ -86,7 +86,7 @@ class AddressInfo:
 
     @property
     def version(self):
-        """Gets the version of this AddressInfo.
+        r"""Gets the version of this AddressInfo.
 
         IP地址类型，值为4或6，分别表示IPV4和IPV6。
 
@@ -97,7 +97,7 @@ class AddressInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AddressInfo.
+        r"""Sets the version of this AddressInfo.
 
         IP地址类型，值为4或6，分别表示IPV4和IPV6。
 
@@ -108,7 +108,7 @@ class AddressInfo:
 
     @property
     def os_ext_ips_ma_cmac_addr(self):
-        """Gets the os_ext_ips_ma_cmac_addr of this AddressInfo.
+        r"""Gets the os_ext_ips_ma_cmac_addr of this AddressInfo.
 
         MAC地址。
 
@@ -119,7 +119,7 @@ class AddressInfo:
 
     @os_ext_ips_ma_cmac_addr.setter
     def os_ext_ips_ma_cmac_addr(self, os_ext_ips_ma_cmac_addr):
-        """Sets the os_ext_ips_ma_cmac_addr of this AddressInfo.
+        r"""Sets the os_ext_ips_ma_cmac_addr of this AddressInfo.
 
         MAC地址。
 
@@ -130,7 +130,7 @@ class AddressInfo:
 
     @property
     def os_ext_ip_stype(self):
-        """Gets the os_ext_ip_stype of this AddressInfo.
+        r"""Gets the os_ext_ip_stype of this AddressInfo.
 
         IP地址分配方式。 -fixed  私有IP地址。 -floating 浮动IP地址。
 
@@ -141,7 +141,7 @@ class AddressInfo:
 
     @os_ext_ip_stype.setter
     def os_ext_ip_stype(self, os_ext_ip_stype):
-        """Sets the os_ext_ip_stype of this AddressInfo.
+        r"""Sets the os_ext_ip_stype of this AddressInfo.
 
         IP地址分配方式。 -fixed  私有IP地址。 -floating 浮动IP地址。
 

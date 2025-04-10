@@ -29,7 +29,7 @@ class CreatePrivateModuleVersionRequest:
     }
 
     def __init__(self, client_request_id=None, module_name=None, body=None):
-        """CreatePrivateModuleVersionRequest
+        r"""CreatePrivateModuleVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreatePrivateModuleVersionRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this CreatePrivateModuleVersionRequest.
+        r"""Gets the client_request_id of this CreatePrivateModuleVersionRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -66,7 +66,7 @@ class CreatePrivateModuleVersionRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this CreatePrivateModuleVersionRequest.
+        r"""Sets the client_request_id of this CreatePrivateModuleVersionRequest.
 
         用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
 
@@ -77,7 +77,7 @@ class CreatePrivateModuleVersionRequest:
 
     @property
     def module_name(self):
-        """Gets the module_name of this CreatePrivateModuleVersionRequest.
+        r"""Gets the module_name of this CreatePrivateModuleVersionRequest.
 
         私有模块（private-module）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -88,7 +88,7 @@ class CreatePrivateModuleVersionRequest:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this CreatePrivateModuleVersionRequest.
+        r"""Sets the module_name of this CreatePrivateModuleVersionRequest.
 
         私有模块（private-module）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -99,7 +99,7 @@ class CreatePrivateModuleVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePrivateModuleVersionRequest.
+        r"""Gets the body of this CreatePrivateModuleVersionRequest.
 
         :return: The body of this CreatePrivateModuleVersionRequest.
         :rtype: :class:`huaweicloudsdkaos.v1.CreatePrivateModuleVersionRequestBody`
@@ -108,7 +108,7 @@ class CreatePrivateModuleVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePrivateModuleVersionRequest.
+        r"""Sets the body of this CreatePrivateModuleVersionRequest.
 
         :param body: The body of this CreatePrivateModuleVersionRequest.
         :type body: :class:`huaweicloudsdkaos.v1.CreatePrivateModuleVersionRequestBody`

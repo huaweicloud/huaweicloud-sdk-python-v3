@@ -26,7 +26,7 @@ class ListSmnTopicsResponse(SdkResponse):
     }
 
     def __init__(self, topics_name=None):
-        """ListSmnTopicsResponse
+        r"""ListSmnTopicsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSmnTopicsResponse(SdkResponse):
 
     @property
     def topics_name(self):
-        """Gets the topics_name of this ListSmnTopicsResponse.
+        r"""Gets the topics_name of this ListSmnTopicsResponse.
 
         SMN主题名称列表。
 
@@ -55,7 +55,7 @@ class ListSmnTopicsResponse(SdkResponse):
 
     @topics_name.setter
     def topics_name(self, topics_name):
-        """Sets the topics_name of this ListSmnTopicsResponse.
+        r"""Sets the topics_name of this ListSmnTopicsResponse.
 
         SMN主题名称列表。
 

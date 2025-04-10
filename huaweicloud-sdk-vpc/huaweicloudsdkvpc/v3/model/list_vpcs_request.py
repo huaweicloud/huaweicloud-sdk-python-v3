@@ -37,7 +37,7 @@ class ListVpcsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, enterprise_project_id=None, name=None, description=None, cidr=None):
-        """ListVpcsRequest
+        r"""ListVpcsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListVpcsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVpcsRequest.
+        r"""Gets the limit of this ListVpcsRequest.
 
         功能说明：每页返回的个数 取值范围：0-2000
 
@@ -96,7 +96,7 @@ class ListVpcsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVpcsRequest.
+        r"""Sets the limit of this ListVpcsRequest.
 
         功能说明：每页返回的个数 取值范围：0-2000
 
@@ -107,7 +107,7 @@ class ListVpcsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListVpcsRequest.
+        r"""Gets the marker of this ListVpcsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -118,7 +118,7 @@ class ListVpcsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListVpcsRequest.
+        r"""Sets the marker of this ListVpcsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -129,7 +129,7 @@ class ListVpcsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListVpcsRequest.
+        r"""Gets the id of this ListVpcsRequest.
 
         VPC资源ID。可以使用该字段过滤VPC
 
@@ -140,7 +140,7 @@ class ListVpcsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListVpcsRequest.
+        r"""Sets the id of this ListVpcsRequest.
 
         VPC资源ID。可以使用该字段过滤VPC
 
@@ -151,7 +151,7 @@ class ListVpcsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListVpcsRequest.
+        r"""Gets the enterprise_project_id of this ListVpcsRequest.
 
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的VPC。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的VPC，请传参all_granted_eps。
 
@@ -162,7 +162,7 @@ class ListVpcsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListVpcsRequest.
+        r"""Sets the enterprise_project_id of this ListVpcsRequest.
 
         功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的VPC。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的VPC，请传参all_granted_eps。
 
@@ -173,7 +173,7 @@ class ListVpcsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListVpcsRequest.
+        r"""Gets the name of this ListVpcsRequest.
 
         VPC的name信息，可以使用该字段过滤VPC
 
@@ -184,7 +184,7 @@ class ListVpcsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListVpcsRequest.
+        r"""Sets the name of this ListVpcsRequest.
 
         VPC的name信息，可以使用该字段过滤VPC
 
@@ -195,7 +195,7 @@ class ListVpcsRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListVpcsRequest.
+        r"""Gets the description of this ListVpcsRequest.
 
         VPC的描述信息。可以使用该字段过滤VPC
 
@@ -206,7 +206,7 @@ class ListVpcsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListVpcsRequest.
+        r"""Sets the description of this ListVpcsRequest.
 
         VPC的描述信息。可以使用该字段过滤VPC
 
@@ -217,7 +217,7 @@ class ListVpcsRequest:
 
     @property
     def cidr(self):
-        """Gets the cidr of this ListVpcsRequest.
+        r"""Gets the cidr of this ListVpcsRequest.
 
         VPC的CIDR。可以使用该字段过滤VPC
 
@@ -228,7 +228,7 @@ class ListVpcsRequest:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this ListVpcsRequest.
+        r"""Sets the cidr of this ListVpcsRequest.
 
         VPC的CIDR。可以使用该字段过滤VPC
 

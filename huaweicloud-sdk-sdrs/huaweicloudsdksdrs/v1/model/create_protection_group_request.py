@@ -25,7 +25,7 @@ class CreateProtectionGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateProtectionGroupRequest
+        r"""CreateProtectionGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateProtectionGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateProtectionGroupRequest.
+        r"""Gets the body of this CreateProtectionGroupRequest.
 
         :return: The body of this CreateProtectionGroupRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.CreateProtectionGroupRequestBody`
@@ -52,7 +52,7 @@ class CreateProtectionGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateProtectionGroupRequest.
+        r"""Sets the body of this CreateProtectionGroupRequest.
 
         :param body: The body of this CreateProtectionGroupRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.CreateProtectionGroupRequestBody`

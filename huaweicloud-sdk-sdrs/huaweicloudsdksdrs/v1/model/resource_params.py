@@ -31,7 +31,7 @@ class ResourceParams:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
-        """ResourceParams
+        r"""ResourceParams
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ResourceParams:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourceParams.
+        r"""Gets the resource_id of this ResourceParams.
 
         保护实例ID。
 
@@ -72,7 +72,7 @@ class ResourceParams:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourceParams.
+        r"""Sets the resource_id of this ResourceParams.
 
         保护实例ID。
 
@@ -83,7 +83,7 @@ class ResourceParams:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this ResourceParams.
+        r"""Gets the resource_detail of this ResourceParams.
 
         :return: The resource_detail of this ResourceParams.
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceParams`
@@ -92,7 +92,7 @@ class ResourceParams:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this ResourceParams.
+        r"""Sets the resource_detail of this ResourceParams.
 
         :param resource_detail: The resource_detail of this ResourceParams.
         :type resource_detail: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceParams`
@@ -101,7 +101,7 @@ class ResourceParams:
 
     @property
     def tags(self):
-        """Gets the tags of this ResourceParams.
+        r"""Gets the tags of this ResourceParams.
 
         标签列表，没有标签默认为空数组。
 
@@ -112,7 +112,7 @@ class ResourceParams:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ResourceParams.
+        r"""Sets the tags of this ResourceParams.
 
         标签列表，没有标签默认为空数组。
 
@@ -123,7 +123,7 @@ class ResourceParams:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ResourceParams.
+        r"""Gets the resource_name of this ResourceParams.
 
         保护实例名称，没有名称时默认为空字符串。
 
@@ -134,7 +134,7 @@ class ResourceParams:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ResourceParams.
+        r"""Sets the resource_name of this ResourceParams.
 
         保护实例名称，没有名称时默认为空字符串。
 

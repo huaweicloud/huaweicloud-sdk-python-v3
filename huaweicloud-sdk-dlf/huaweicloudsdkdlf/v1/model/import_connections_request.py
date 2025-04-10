@@ -27,7 +27,7 @@ class ImportConnectionsRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """ImportConnectionsRequest
+        r"""ImportConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImportConnectionsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ImportConnectionsRequest.
+        r"""Gets the workspace of this ImportConnectionsRequest.
 
         工作空间id
 
@@ -61,7 +61,7 @@ class ImportConnectionsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ImportConnectionsRequest.
+        r"""Sets the workspace of this ImportConnectionsRequest.
 
         工作空间id
 
@@ -72,7 +72,7 @@ class ImportConnectionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportConnectionsRequest.
+        r"""Gets the body of this ImportConnectionsRequest.
 
         :return: The body of this ImportConnectionsRequest.
         :rtype: :class:`huaweicloudsdkdlf.v1.ImportConnectionReq`
@@ -81,7 +81,7 @@ class ImportConnectionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportConnectionsRequest.
+        r"""Sets the body of this ImportConnectionsRequest.
 
         :param body: The body of this ImportConnectionsRequest.
         :type body: :class:`huaweicloudsdkdlf.v1.ImportConnectionReq`

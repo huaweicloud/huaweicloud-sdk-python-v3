@@ -28,7 +28,7 @@ class ShowVpnGatewayCertificateResponse(SdkResponse):
     }
 
     def __init__(self, certificate=None, request_id=None):
-        """ShowVpnGatewayCertificateResponse
+        r"""ShowVpnGatewayCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowVpnGatewayCertificateResponse(SdkResponse):
 
     @property
     def certificate(self):
-        """Gets the certificate of this ShowVpnGatewayCertificateResponse.
+        r"""Gets the certificate of this ShowVpnGatewayCertificateResponse.
 
         :return: The certificate of this ShowVpnGatewayCertificateResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.VpnGatewayCertificate`
@@ -60,7 +60,7 @@ class ShowVpnGatewayCertificateResponse(SdkResponse):
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this ShowVpnGatewayCertificateResponse.
+        r"""Sets the certificate of this ShowVpnGatewayCertificateResponse.
 
         :param certificate: The certificate of this ShowVpnGatewayCertificateResponse.
         :type certificate: :class:`huaweicloudsdkvpn.v5.VpnGatewayCertificate`
@@ -69,7 +69,7 @@ class ShowVpnGatewayCertificateResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowVpnGatewayCertificateResponse.
+        r"""Gets the request_id of this ShowVpnGatewayCertificateResponse.
 
         请求id
 
@@ -80,7 +80,7 @@ class ShowVpnGatewayCertificateResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowVpnGatewayCertificateResponse.
+        r"""Sets the request_id of this ShowVpnGatewayCertificateResponse.
 
         请求id
 

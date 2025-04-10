@@ -31,7 +31,7 @@ class TaskSettings:
     }
 
     def __init__(self, timer=None, trigger_time=None, task_period=None, task_config=None):
-        """TaskSettings
+        r"""TaskSettings
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TaskSettings:
 
     @property
     def timer(self):
-        """Gets the timer of this TaskSettings.
+        r"""Gets the timer of this TaskSettings.
 
         普通任务的定时启动时间
 
@@ -75,7 +75,7 @@ class TaskSettings:
 
     @timer.setter
     def timer(self, timer):
-        """Sets the timer of this TaskSettings.
+        r"""Sets the timer of this TaskSettings.
 
         普通任务的定时启动时间
 
@@ -86,7 +86,7 @@ class TaskSettings:
 
     @property
     def trigger_time(self):
-        """Gets the trigger_time of this TaskSettings.
+        r"""Gets the trigger_time of this TaskSettings.
 
         监测任务的定时触发时间
 
@@ -97,7 +97,7 @@ class TaskSettings:
 
     @trigger_time.setter
     def trigger_time(self, trigger_time):
-        """Sets the trigger_time of this TaskSettings.
+        r"""Sets the trigger_time of this TaskSettings.
 
         监测任务的定时触发时间
 
@@ -108,7 +108,7 @@ class TaskSettings:
 
     @property
     def task_period(self):
-        """Gets the task_period of this TaskSettings.
+        r"""Gets the task_period of this TaskSettings.
 
         监测任务的定时触发周期:   * everyday - 每日   * threedays - 每三天   * everyweek - 每星期   * everymonth - 每月 
 
@@ -119,7 +119,7 @@ class TaskSettings:
 
     @task_period.setter
     def task_period(self, task_period):
-        """Sets the task_period of this TaskSettings.
+        r"""Sets the task_period of this TaskSettings.
 
         监测任务的定时触发周期:   * everyday - 每日   * threedays - 每三天   * everyweek - 每星期   * everymonth - 每月 
 
@@ -130,7 +130,7 @@ class TaskSettings:
 
     @property
     def task_config(self):
-        """Gets the task_config of this TaskSettings.
+        r"""Gets the task_config of this TaskSettings.
 
         :return: The task_config of this TaskSettings.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.TaskSettingsTaskConfig`
@@ -139,7 +139,7 @@ class TaskSettings:
 
     @task_config.setter
     def task_config(self, task_config):
-        """Sets the task_config of this TaskSettings.
+        r"""Sets the task_config of this TaskSettings.
 
         :param task_config: The task_config of this TaskSettings.
         :type task_config: :class:`huaweicloudsdkcodeartsinspector.v3.TaskSettingsTaskConfig`

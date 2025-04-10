@@ -30,7 +30,7 @@ class ListObsBucketsResponse(SdkResponse):
     }
 
     def __init__(self, buckets=None, total=None, x_request_id=None):
-        """ListObsBucketsResponse
+        r"""ListObsBucketsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListObsBucketsResponse(SdkResponse):
 
     @property
     def buckets(self):
-        """Gets the buckets of this ListObsBucketsResponse.
+        r"""Gets the buckets of this ListObsBucketsResponse.
 
         obs桶列表
 
@@ -69,7 +69,7 @@ class ListObsBucketsResponse(SdkResponse):
 
     @buckets.setter
     def buckets(self, buckets):
-        """Sets the buckets of this ListObsBucketsResponse.
+        r"""Sets the buckets of this ListObsBucketsResponse.
 
         obs桶列表
 
@@ -80,7 +80,7 @@ class ListObsBucketsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListObsBucketsResponse.
+        r"""Gets the total of this ListObsBucketsResponse.
 
         obs桶总数
 
@@ -91,7 +91,7 @@ class ListObsBucketsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListObsBucketsResponse.
+        r"""Sets the total of this ListObsBucketsResponse.
 
         obs桶总数
 
@@ -102,7 +102,7 @@ class ListObsBucketsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListObsBucketsResponse.
+        r"""Gets the x_request_id of this ListObsBucketsResponse.
 
         :return: The x_request_id of this ListObsBucketsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListObsBucketsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListObsBucketsResponse.
+        r"""Sets the x_request_id of this ListObsBucketsResponse.
 
         :param x_request_id: The x_request_id of this ListObsBucketsResponse.
         :type x_request_id: str

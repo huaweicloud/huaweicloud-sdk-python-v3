@@ -31,7 +31,7 @@ class UpdateSqlJobTemplateRequestBody:
     }
 
     def __init__(self, sql=None, sql_name=None, description=None, group=None):
-        """UpdateSqlJobTemplateRequestBody
+        r"""UpdateSqlJobTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateSqlJobTemplateRequestBody:
 
     @property
     def sql(self):
-        """Gets the sql of this UpdateSqlJobTemplateRequestBody.
+        r"""Gets the sql of this UpdateSqlJobTemplateRequestBody.
 
         更新后SQL模板文本。
 
@@ -75,7 +75,7 @@ class UpdateSqlJobTemplateRequestBody:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this UpdateSqlJobTemplateRequestBody.
+        r"""Sets the sql of this UpdateSqlJobTemplateRequestBody.
 
         更新后SQL模板文本。
 
@@ -86,7 +86,7 @@ class UpdateSqlJobTemplateRequestBody:
 
     @property
     def sql_name(self):
-        """Gets the sql_name of this UpdateSqlJobTemplateRequestBody.
+        r"""Gets the sql_name of this UpdateSqlJobTemplateRequestBody.
 
         更新后SQL模板名称，该名称在当前工程下必须唯一。
 
@@ -97,7 +97,7 @@ class UpdateSqlJobTemplateRequestBody:
 
     @sql_name.setter
     def sql_name(self, sql_name):
-        """Sets the sql_name of this UpdateSqlJobTemplateRequestBody.
+        r"""Sets the sql_name of this UpdateSqlJobTemplateRequestBody.
 
         更新后SQL模板名称，该名称在当前工程下必须唯一。
 
@@ -108,7 +108,7 @@ class UpdateSqlJobTemplateRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateSqlJobTemplateRequestBody.
+        r"""Gets the description of this UpdateSqlJobTemplateRequestBody.
 
         SQL模板的描述信息，可以为空。
 
@@ -119,7 +119,7 @@ class UpdateSqlJobTemplateRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateSqlJobTemplateRequestBody.
+        r"""Sets the description of this UpdateSqlJobTemplateRequestBody.
 
         SQL模板的描述信息，可以为空。
 
@@ -130,7 +130,7 @@ class UpdateSqlJobTemplateRequestBody:
 
     @property
     def group(self):
-        """Gets the group of this UpdateSqlJobTemplateRequestBody.
+        r"""Gets the group of this UpdateSqlJobTemplateRequestBody.
 
         分组名称。
 
@@ -141,7 +141,7 @@ class UpdateSqlJobTemplateRequestBody:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this UpdateSqlJobTemplateRequestBody.
+        r"""Sets the group of this UpdateSqlJobTemplateRequestBody.
 
         分组名称。
 

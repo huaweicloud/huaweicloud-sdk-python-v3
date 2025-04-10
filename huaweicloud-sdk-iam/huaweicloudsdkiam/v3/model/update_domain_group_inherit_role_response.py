@@ -24,7 +24,7 @@ class UpdateDomainGroupInheritRoleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateDomainGroupInheritRoleResponse
+        r"""UpdateDomainGroupInheritRoleResponse
 
         The model defined in huaweicloud sdk
 

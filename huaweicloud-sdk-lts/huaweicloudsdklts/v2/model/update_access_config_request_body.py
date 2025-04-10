@@ -57,7 +57,7 @@ class UpdateAccessConfigRequestBody:
     }
 
     def __init__(self, access_config_id=None, access_config_name=None, access_config_detail=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None, cluster_id=None, incremental_collect=None, encoding_format=None, processor_type=None, demo_log=None, demo_fields=None, processors=None, application_id=None, environment_id=None, component_id=None):
-        """UpdateAccessConfigRequestBody
+        r"""UpdateAccessConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -154,7 +154,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def access_config_id(self):
-        """Gets the access_config_id of this UpdateAccessConfigRequestBody.
+        r"""Gets the access_config_id of this UpdateAccessConfigRequestBody.
 
         日志接入ID
 
@@ -165,7 +165,7 @@ class UpdateAccessConfigRequestBody:
 
     @access_config_id.setter
     def access_config_id(self, access_config_id):
-        """Sets the access_config_id of this UpdateAccessConfigRequestBody.
+        r"""Sets the access_config_id of this UpdateAccessConfigRequestBody.
 
         日志接入ID
 
@@ -176,7 +176,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def access_config_name(self):
-        """Gets the access_config_name of this UpdateAccessConfigRequestBody.
+        r"""Gets the access_config_name of this UpdateAccessConfigRequestBody.
 
         日志接入名称。 满足正则表达式：^(?!.)(?!)(?!.*?.$)[\\u4e00-\\u9fa5a-zA-Z0-9-.]{1,64}$
 
@@ -187,7 +187,7 @@ class UpdateAccessConfigRequestBody:
 
     @access_config_name.setter
     def access_config_name(self, access_config_name):
-        """Sets the access_config_name of this UpdateAccessConfigRequestBody.
+        r"""Sets the access_config_name of this UpdateAccessConfigRequestBody.
 
         日志接入名称。 满足正则表达式：^(?!.)(?!)(?!.*?.$)[\\u4e00-\\u9fa5a-zA-Z0-9-.]{1,64}$
 
@@ -198,7 +198,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def access_config_detail(self):
-        """Gets the access_config_detail of this UpdateAccessConfigRequestBody.
+        r"""Gets the access_config_detail of this UpdateAccessConfigRequestBody.
 
         :return: The access_config_detail of this UpdateAccessConfigRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigDeatilUpdate`
@@ -207,7 +207,7 @@ class UpdateAccessConfigRequestBody:
 
     @access_config_detail.setter
     def access_config_detail(self, access_config_detail):
-        """Sets the access_config_detail of this UpdateAccessConfigRequestBody.
+        r"""Sets the access_config_detail of this UpdateAccessConfigRequestBody.
 
         :param access_config_detail: The access_config_detail of this UpdateAccessConfigRequestBody.
         :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatilUpdate`
@@ -216,7 +216,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def host_group_info(self):
-        """Gets the host_group_info of this UpdateAccessConfigRequestBody.
+        r"""Gets the host_group_info of this UpdateAccessConfigRequestBody.
 
         :return: The host_group_info of this UpdateAccessConfigRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
@@ -225,7 +225,7 @@ class UpdateAccessConfigRequestBody:
 
     @host_group_info.setter
     def host_group_info(self, host_group_info):
-        """Sets the host_group_info of this UpdateAccessConfigRequestBody.
+        r"""Sets the host_group_info of this UpdateAccessConfigRequestBody.
 
         :param host_group_info: The host_group_info of this UpdateAccessConfigRequestBody.
         :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdList`
@@ -234,7 +234,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def access_config_tag(self):
-        """Gets the access_config_tag of this UpdateAccessConfigRequestBody.
+        r"""Gets the access_config_tag of this UpdateAccessConfigRequestBody.
 
         标签信息。KEY不能重复,最多20个标签
 
@@ -245,7 +245,7 @@ class UpdateAccessConfigRequestBody:
 
     @access_config_tag.setter
     def access_config_tag(self, access_config_tag):
-        """Sets the access_config_tag of this UpdateAccessConfigRequestBody.
+        r"""Sets the access_config_tag of this UpdateAccessConfigRequestBody.
 
         标签信息。KEY不能重复,最多20个标签
 
@@ -256,7 +256,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def log_split(self):
-        """Gets the log_split of this UpdateAccessConfigRequestBody.
+        r"""Gets the log_split of this UpdateAccessConfigRequestBody.
 
         日志拆分
 
@@ -267,7 +267,7 @@ class UpdateAccessConfigRequestBody:
 
     @log_split.setter
     def log_split(self, log_split):
-        """Sets the log_split of this UpdateAccessConfigRequestBody.
+        r"""Sets the log_split of this UpdateAccessConfigRequestBody.
 
         日志拆分
 
@@ -278,7 +278,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def binary_collect(self):
-        """Gets the binary_collect of this UpdateAccessConfigRequestBody.
+        r"""Gets the binary_collect of this UpdateAccessConfigRequestBody.
 
         二进制采集
 
@@ -289,7 +289,7 @@ class UpdateAccessConfigRequestBody:
 
     @binary_collect.setter
     def binary_collect(self, binary_collect):
-        """Sets the binary_collect of this UpdateAccessConfigRequestBody.
+        r"""Sets the binary_collect of this UpdateAccessConfigRequestBody.
 
         二进制采集
 
@@ -300,7 +300,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateAccessConfigRequestBody.
+        r"""Gets the cluster_id of this UpdateAccessConfigRequestBody.
 
         CCE集群ID，CCE类型时，为必填
 
@@ -311,7 +311,7 @@ class UpdateAccessConfigRequestBody:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateAccessConfigRequestBody.
+        r"""Sets the cluster_id of this UpdateAccessConfigRequestBody.
 
         CCE集群ID，CCE类型时，为必填
 
@@ -322,7 +322,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def incremental_collect(self):
-        """Gets the incremental_collect of this UpdateAccessConfigRequestBody.
+        r"""Gets the incremental_collect of this UpdateAccessConfigRequestBody.
 
         是否增量采集 true为是 false为否（全量采集）
 
@@ -333,7 +333,7 @@ class UpdateAccessConfigRequestBody:
 
     @incremental_collect.setter
     def incremental_collect(self, incremental_collect):
-        """Sets the incremental_collect of this UpdateAccessConfigRequestBody.
+        r"""Sets the incremental_collect of this UpdateAccessConfigRequestBody.
 
         是否增量采集 true为是 false为否（全量采集）
 
@@ -344,7 +344,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def encoding_format(self):
-        """Gets the encoding_format of this UpdateAccessConfigRequestBody.
+        r"""Gets the encoding_format of this UpdateAccessConfigRequestBody.
 
         编码格式，默认UTF-8
 
@@ -355,7 +355,7 @@ class UpdateAccessConfigRequestBody:
 
     @encoding_format.setter
     def encoding_format(self, encoding_format):
-        """Sets the encoding_format of this UpdateAccessConfigRequestBody.
+        r"""Sets the encoding_format of this UpdateAccessConfigRequestBody.
 
         编码格式，默认UTF-8
 
@@ -366,7 +366,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def processor_type(self):
-        """Gets the processor_type of this UpdateAccessConfigRequestBody.
+        r"""Gets the processor_type of this UpdateAccessConfigRequestBody.
 
         IC结构化解析类型
 
@@ -377,7 +377,7 @@ class UpdateAccessConfigRequestBody:
 
     @processor_type.setter
     def processor_type(self, processor_type):
-        """Sets the processor_type of this UpdateAccessConfigRequestBody.
+        r"""Sets the processor_type of this UpdateAccessConfigRequestBody.
 
         IC结构化解析类型
 
@@ -388,7 +388,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def demo_log(self):
-        """Gets the demo_log of this UpdateAccessConfigRequestBody.
+        r"""Gets the demo_log of this UpdateAccessConfigRequestBody.
 
         示例日志
 
@@ -399,7 +399,7 @@ class UpdateAccessConfigRequestBody:
 
     @demo_log.setter
     def demo_log(self, demo_log):
-        """Sets the demo_log of this UpdateAccessConfigRequestBody.
+        r"""Sets the demo_log of this UpdateAccessConfigRequestBody.
 
         示例日志
 
@@ -410,7 +410,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def demo_fields(self):
-        """Gets the demo_fields of this UpdateAccessConfigRequestBody.
+        r"""Gets the demo_fields of this UpdateAccessConfigRequestBody.
 
         示例日志解析字段
 
@@ -421,7 +421,7 @@ class UpdateAccessConfigRequestBody:
 
     @demo_fields.setter
     def demo_fields(self, demo_fields):
-        """Sets the demo_fields of this UpdateAccessConfigRequestBody.
+        r"""Sets the demo_fields of this UpdateAccessConfigRequestBody.
 
         示例日志解析字段
 
@@ -432,7 +432,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def processors(self):
-        """Gets the processors of this UpdateAccessConfigRequestBody.
+        r"""Gets the processors of this UpdateAccessConfigRequestBody.
 
         IC结构化解析器
 
@@ -443,7 +443,7 @@ class UpdateAccessConfigRequestBody:
 
     @processors.setter
     def processors(self, processors):
-        """Sets the processors of this UpdateAccessConfigRequestBody.
+        r"""Sets the processors of this UpdateAccessConfigRequestBody.
 
         IC结构化解析器
 
@@ -454,7 +454,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def application_id(self):
-        """Gets the application_id of this UpdateAccessConfigRequestBody.
+        r"""Gets the application_id of this UpdateAccessConfigRequestBody.
 
         ServiceStage应用ID
 
@@ -465,7 +465,7 @@ class UpdateAccessConfigRequestBody:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this UpdateAccessConfigRequestBody.
+        r"""Sets the application_id of this UpdateAccessConfigRequestBody.
 
         ServiceStage应用ID
 
@@ -476,7 +476,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this UpdateAccessConfigRequestBody.
+        r"""Gets the environment_id of this UpdateAccessConfigRequestBody.
 
         ServiceStage环境ID
 
@@ -487,7 +487,7 @@ class UpdateAccessConfigRequestBody:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this UpdateAccessConfigRequestBody.
+        r"""Sets the environment_id of this UpdateAccessConfigRequestBody.
 
         ServiceStage环境ID
 
@@ -498,7 +498,7 @@ class UpdateAccessConfigRequestBody:
 
     @property
     def component_id(self):
-        """Gets the component_id of this UpdateAccessConfigRequestBody.
+        r"""Gets the component_id of this UpdateAccessConfigRequestBody.
 
         ServiceStage组件ID
 
@@ -509,7 +509,7 @@ class UpdateAccessConfigRequestBody:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this UpdateAccessConfigRequestBody.
+        r"""Sets the component_id of this UpdateAccessConfigRequestBody.
 
         ServiceStage组件ID
 

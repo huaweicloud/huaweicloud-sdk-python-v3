@@ -39,7 +39,7 @@ class DeploymentHostRequest:
     }
 
     def __init__(self, host_name=None, ip=None, port=None, as_proxy=None, proxy_host_id=None, authorization=None, install_icagent=None, sync=None):
-        """DeploymentHostRequest
+        r"""DeploymentHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class DeploymentHostRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this DeploymentHostRequest.
+        r"""Gets the host_name of this DeploymentHostRequest.
 
         主机名称
 
@@ -98,7 +98,7 @@ class DeploymentHostRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this DeploymentHostRequest.
+        r"""Sets the host_name of this DeploymentHostRequest.
 
         主机名称
 
@@ -109,7 +109,7 @@ class DeploymentHostRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this DeploymentHostRequest.
+        r"""Gets the ip of this DeploymentHostRequest.
 
         IP，请输入弹性ip格式：161.17.101.12
 
@@ -120,7 +120,7 @@ class DeploymentHostRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this DeploymentHostRequest.
+        r"""Sets the ip of this DeploymentHostRequest.
 
         IP，请输入弹性ip格式：161.17.101.12
 
@@ -131,7 +131,7 @@ class DeploymentHostRequest:
 
     @property
     def port(self):
-        """Gets the port of this DeploymentHostRequest.
+        r"""Gets the port of this DeploymentHostRequest.
 
         ssh端口，如：22
 
@@ -142,7 +142,7 @@ class DeploymentHostRequest:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this DeploymentHostRequest.
+        r"""Sets the port of this DeploymentHostRequest.
 
         ssh端口，如：22
 
@@ -153,7 +153,7 @@ class DeploymentHostRequest:
 
     @property
     def as_proxy(self):
-        """Gets the as_proxy of this DeploymentHostRequest.
+        r"""Gets the as_proxy of this DeploymentHostRequest.
 
         是否为代理机
 
@@ -164,7 +164,7 @@ class DeploymentHostRequest:
 
     @as_proxy.setter
     def as_proxy(self, as_proxy):
-        """Sets the as_proxy of this DeploymentHostRequest.
+        r"""Sets the as_proxy of this DeploymentHostRequest.
 
         是否为代理机
 
@@ -175,7 +175,7 @@ class DeploymentHostRequest:
 
     @property
     def proxy_host_id(self):
-        """Gets the proxy_host_id of this DeploymentHostRequest.
+        r"""Gets the proxy_host_id of this DeploymentHostRequest.
 
         代理机id
 
@@ -186,7 +186,7 @@ class DeploymentHostRequest:
 
     @proxy_host_id.setter
     def proxy_host_id(self, proxy_host_id):
-        """Sets the proxy_host_id of this DeploymentHostRequest.
+        r"""Sets the proxy_host_id of this DeploymentHostRequest.
 
         代理机id
 
@@ -197,7 +197,7 @@ class DeploymentHostRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this DeploymentHostRequest.
+        r"""Gets the authorization of this DeploymentHostRequest.
 
         :return: The authorization of this DeploymentHostRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostAuthorizationBody`
@@ -206,7 +206,7 @@ class DeploymentHostRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this DeploymentHostRequest.
+        r"""Sets the authorization of this DeploymentHostRequest.
 
         :param authorization: The authorization of this DeploymentHostRequest.
         :type authorization: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostAuthorizationBody`
@@ -215,7 +215,7 @@ class DeploymentHostRequest:
 
     @property
     def install_icagent(self):
-        """Gets the install_icagent of this DeploymentHostRequest.
+        r"""Gets the install_icagent of this DeploymentHostRequest.
 
         免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
 
@@ -226,7 +226,7 @@ class DeploymentHostRequest:
 
     @install_icagent.setter
     def install_icagent(self, install_icagent):
-        """Sets the install_icagent of this DeploymentHostRequest.
+        r"""Sets the install_icagent of this DeploymentHostRequest.
 
         免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
 
@@ -237,7 +237,7 @@ class DeploymentHostRequest:
 
     @property
     def sync(self):
-        """Gets the sync of this DeploymentHostRequest.
+        r"""Gets the sync of this DeploymentHostRequest.
 
         是否将当前主机的密码信息同步到同一项目下其他主机集群中具有相同IP、用户名、端口的主机。
 
@@ -248,7 +248,7 @@ class DeploymentHostRequest:
 
     @sync.setter
     def sync(self, sync):
-        """Sets the sync of this DeploymentHostRequest.
+        r"""Sets the sync of this DeploymentHostRequest.
 
         是否将当前主机的密码信息同步到同一项目下其他主机集群中具有相同IP、用户名、端口的主机。
 

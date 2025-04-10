@@ -35,7 +35,7 @@ class ShowFileTreeRequest:
     }
 
     def __init__(self, tenant_id=None, project_id=None, repo_name=None, path=None, instance_id=None, is_recycle_bin=None):
-        """ShowFileTreeRequest
+        r"""ShowFileTreeRequest
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class ShowFileTreeRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ShowFileTreeRequest.
+        r"""Gets the tenant_id of this ShowFileTreeRequest.
 
         租户id
 
@@ -85,7 +85,7 @@ class ShowFileTreeRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ShowFileTreeRequest.
+        r"""Sets the tenant_id of this ShowFileTreeRequest.
 
         租户id
 
@@ -96,7 +96,7 @@ class ShowFileTreeRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowFileTreeRequest.
+        r"""Gets the project_id of this ShowFileTreeRequest.
 
         项目id
 
@@ -107,7 +107,7 @@ class ShowFileTreeRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowFileTreeRequest.
+        r"""Sets the project_id of this ShowFileTreeRequest.
 
         项目id
 
@@ -118,7 +118,7 @@ class ShowFileTreeRequest:
 
     @property
     def repo_name(self):
-        """Gets the repo_name of this ShowFileTreeRequest.
+        r"""Gets the repo_name of this ShowFileTreeRequest.
 
         仓库名称
 
@@ -129,7 +129,7 @@ class ShowFileTreeRequest:
 
     @repo_name.setter
     def repo_name(self, repo_name):
-        """Sets the repo_name of this ShowFileTreeRequest.
+        r"""Sets the repo_name of this ShowFileTreeRequest.
 
         仓库名称
 
@@ -140,7 +140,7 @@ class ShowFileTreeRequest:
 
     @property
     def path(self):
-        """Gets the path of this ShowFileTreeRequest.
+        r"""Gets the path of this ShowFileTreeRequest.
 
         仓库中路径
 
@@ -151,7 +151,7 @@ class ShowFileTreeRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowFileTreeRequest.
+        r"""Sets the path of this ShowFileTreeRequest.
 
         仓库中路径
 
@@ -162,7 +162,7 @@ class ShowFileTreeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowFileTreeRequest.
+        r"""Gets the instance_id of this ShowFileTreeRequest.
 
         实例id
 
@@ -173,7 +173,7 @@ class ShowFileTreeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowFileTreeRequest.
+        r"""Sets the instance_id of this ShowFileTreeRequest.
 
         实例id
 
@@ -184,7 +184,7 @@ class ShowFileTreeRequest:
 
     @property
     def is_recycle_bin(self):
-        """Gets the is_recycle_bin of this ShowFileTreeRequest.
+        r"""Gets the is_recycle_bin of this ShowFileTreeRequest.
 
         是否是回收站文件
 
@@ -195,7 +195,7 @@ class ShowFileTreeRequest:
 
     @is_recycle_bin.setter
     def is_recycle_bin(self, is_recycle_bin):
-        """Sets the is_recycle_bin of this ShowFileTreeRequest.
+        r"""Sets the is_recycle_bin of this ShowFileTreeRequest.
 
         是否是回收站文件
 

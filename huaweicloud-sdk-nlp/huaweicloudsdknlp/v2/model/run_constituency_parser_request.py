@@ -25,7 +25,7 @@ class RunConstituencyParserRequest:
     }
 
     def __init__(self, body=None):
-        """RunConstituencyParserRequest
+        r"""RunConstituencyParserRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunConstituencyParserRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunConstituencyParserRequest.
+        r"""Gets the body of this RunConstituencyParserRequest.
 
         :return: The body of this RunConstituencyParserRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.ConstituencyParserReq`
@@ -52,7 +52,7 @@ class RunConstituencyParserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunConstituencyParserRequest.
+        r"""Sets the body of this RunConstituencyParserRequest.
 
         :param body: The body of this RunConstituencyParserRequest.
         :type body: :class:`huaweicloudsdknlp.v2.ConstituencyParserReq`

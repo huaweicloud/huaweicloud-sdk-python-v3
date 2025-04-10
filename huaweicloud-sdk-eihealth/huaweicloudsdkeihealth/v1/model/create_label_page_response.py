@@ -26,7 +26,7 @@ class CreateLabelPageResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateLabelPageResponse
+        r"""CreateLabelPageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateLabelPageResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateLabelPageResponse.
+        r"""Gets the id of this CreateLabelPageResponse.
 
         标签页面id
 
@@ -55,7 +55,7 @@ class CreateLabelPageResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateLabelPageResponse.
+        r"""Sets the id of this CreateLabelPageResponse.
 
         标签页面id
 

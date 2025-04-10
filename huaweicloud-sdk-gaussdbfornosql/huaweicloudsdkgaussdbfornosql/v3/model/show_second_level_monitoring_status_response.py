@@ -26,7 +26,7 @@ class ShowSecondLevelMonitoringStatusResponse(SdkResponse):
     }
 
     def __init__(self, enabled=None):
-        """ShowSecondLevelMonitoringStatusResponse
+        r"""ShowSecondLevelMonitoringStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSecondLevelMonitoringStatusResponse(SdkResponse):
 
     @property
     def enabled(self):
-        """Gets the enabled of this ShowSecondLevelMonitoringStatusResponse.
+        r"""Gets the enabled of this ShowSecondLevelMonitoringStatusResponse.
 
         秒级监控开启状态。 - true: 开启; - false: 关闭。
 
@@ -55,7 +55,7 @@ class ShowSecondLevelMonitoringStatusResponse(SdkResponse):
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ShowSecondLevelMonitoringStatusResponse.
+        r"""Sets the enabled of this ShowSecondLevelMonitoringStatusResponse.
 
         秒级监控开启状态。 - true: 开启; - false: 关闭。
 

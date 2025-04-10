@@ -35,7 +35,7 @@ class RuleProperty:
     }
 
     def __init__(self, key=None, type=None, name=None, operator=None, value=None, value_type=None):
-        """RuleProperty
+        r"""RuleProperty
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class RuleProperty:
 
     @property
     def key(self):
-        """Gets the key of this RuleProperty.
+        r"""Gets the key of this RuleProperty.
 
         属性键
 
@@ -84,7 +84,7 @@ class RuleProperty:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this RuleProperty.
+        r"""Sets the key of this RuleProperty.
 
         属性键
 
@@ -95,7 +95,7 @@ class RuleProperty:
 
     @property
     def type(self):
-        """Gets the type of this RuleProperty.
+        r"""Gets the type of this RuleProperty.
 
         类型
 
@@ -106,7 +106,7 @@ class RuleProperty:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RuleProperty.
+        r"""Sets the type of this RuleProperty.
 
         类型
 
@@ -117,7 +117,7 @@ class RuleProperty:
 
     @property
     def name(self):
-        """Gets the name of this RuleProperty.
+        r"""Gets the name of this RuleProperty.
 
         展示名称
 
@@ -128,7 +128,7 @@ class RuleProperty:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RuleProperty.
+        r"""Sets the name of this RuleProperty.
 
         展示名称
 
@@ -139,7 +139,7 @@ class RuleProperty:
 
     @property
     def operator(self):
-        """Gets the operator of this RuleProperty.
+        r"""Gets the operator of this RuleProperty.
 
         比较运算符
 
@@ -150,7 +150,7 @@ class RuleProperty:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this RuleProperty.
+        r"""Sets the operator of this RuleProperty.
 
         比较运算符
 
@@ -161,7 +161,7 @@ class RuleProperty:
 
     @property
     def value(self):
-        """Gets the value of this RuleProperty.
+        r"""Gets the value of this RuleProperty.
 
         属性值
 
@@ -172,7 +172,7 @@ class RuleProperty:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RuleProperty.
+        r"""Sets the value of this RuleProperty.
 
         属性值
 
@@ -183,7 +183,7 @@ class RuleProperty:
 
     @property
     def value_type(self):
-        """Gets the value_type of this RuleProperty.
+        r"""Gets the value_type of this RuleProperty.
 
         数据类型
 
@@ -194,7 +194,7 @@ class RuleProperty:
 
     @value_type.setter
     def value_type(self, value_type):
-        """Sets the value_type of this RuleProperty.
+        r"""Sets the value_type of this RuleProperty.
 
         数据类型
 

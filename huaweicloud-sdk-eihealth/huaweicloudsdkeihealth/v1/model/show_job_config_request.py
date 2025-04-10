@@ -23,7 +23,7 @@ class ShowJobConfigRequest:
     }
 
     def __init__(self):
-        """ShowJobConfigRequest
+        r"""ShowJobConfigRequest
 
         The model defined in huaweicloud sdk
 

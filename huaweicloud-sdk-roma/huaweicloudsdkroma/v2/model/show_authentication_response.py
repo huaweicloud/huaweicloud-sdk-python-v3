@@ -28,7 +28,7 @@ class ShowAuthenticationResponse(SdkResponse):
     }
 
     def __init__(self, user_name=None, password=None):
-        """ShowAuthenticationResponse
+        r"""ShowAuthenticationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAuthenticationResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowAuthenticationResponse.
+        r"""Gets the user_name of this ShowAuthenticationResponse.
 
         一型一密/一机一密的用户名
 
@@ -62,7 +62,7 @@ class ShowAuthenticationResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowAuthenticationResponse.
+        r"""Sets the user_name of this ShowAuthenticationResponse.
 
         一型一密/一机一密的用户名
 
@@ -73,7 +73,7 @@ class ShowAuthenticationResponse(SdkResponse):
 
     @property
     def password(self):
-        """Gets the password of this ShowAuthenticationResponse.
+        r"""Gets the password of this ShowAuthenticationResponse.
 
         一型一密/一机一密的密码，输入要求：至少1个数字，1个大写字母，1个小写字母，1个特殊字符(~!@#$%^&*()-_=+|[{}];:<>/?)，长度8-32个字符
 
@@ -84,7 +84,7 @@ class ShowAuthenticationResponse(SdkResponse):
 
     @password.setter
     def password(self, password):
-        """Sets the password of this ShowAuthenticationResponse.
+        r"""Sets the password of this ShowAuthenticationResponse.
 
         一型一密/一机一密的密码，输入要求：至少1个数字，1个大写字母，1个小写字母，1个特殊字符(~!@#$%^&*()-_=+|[{}];:<>/?)，长度8-32个字符
 

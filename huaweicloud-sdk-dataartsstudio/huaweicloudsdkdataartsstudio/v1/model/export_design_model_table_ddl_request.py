@@ -33,7 +33,7 @@ class ExportDesignModelTableDdlRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, model_id=None, tb_names=None, with_db=None):
-        """ExportDesignModelTableDdlRequest
+        r"""ExportDesignModelTableDdlRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ExportDesignModelTableDdlRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ExportDesignModelTableDdlRequest.
+        r"""Gets the workspace of this ExportDesignModelTableDdlRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -80,7 +80,7 @@ class ExportDesignModelTableDdlRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ExportDesignModelTableDdlRequest.
+        r"""Sets the workspace of this ExportDesignModelTableDdlRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -91,7 +91,7 @@ class ExportDesignModelTableDdlRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ExportDesignModelTableDdlRequest.
+        r"""Gets the x_project_id of this ExportDesignModelTableDdlRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -102,7 +102,7 @@ class ExportDesignModelTableDdlRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ExportDesignModelTableDdlRequest.
+        r"""Sets the x_project_id of this ExportDesignModelTableDdlRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -113,7 +113,7 @@ class ExportDesignModelTableDdlRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this ExportDesignModelTableDdlRequest.
+        r"""Gets the model_id of this ExportDesignModelTableDdlRequest.
 
         所属关系建模的模型ID，ID字符串。
 
@@ -124,7 +124,7 @@ class ExportDesignModelTableDdlRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this ExportDesignModelTableDdlRequest.
+        r"""Sets the model_id of this ExportDesignModelTableDdlRequest.
 
         所属关系建模的模型ID，ID字符串。
 
@@ -135,7 +135,7 @@ class ExportDesignModelTableDdlRequest:
 
     @property
     def tb_names(self):
-        """Gets the tb_names of this ExportDesignModelTableDdlRequest.
+        r"""Gets the tb_names of this ExportDesignModelTableDdlRequest.
 
         待导出的表名。
 
@@ -146,7 +146,7 @@ class ExportDesignModelTableDdlRequest:
 
     @tb_names.setter
     def tb_names(self, tb_names):
-        """Sets the tb_names of this ExportDesignModelTableDdlRequest.
+        r"""Sets the tb_names of this ExportDesignModelTableDdlRequest.
 
         待导出的表名。
 
@@ -157,7 +157,7 @@ class ExportDesignModelTableDdlRequest:
 
     @property
     def with_db(self):
-        """Gets the with_db of this ExportDesignModelTableDdlRequest.
+        r"""Gets the with_db of this ExportDesignModelTableDdlRequest.
 
         导出的DDL包不包括数据库名。
 
@@ -168,7 +168,7 @@ class ExportDesignModelTableDdlRequest:
 
     @with_db.setter
     def with_db(self, with_db):
-        """Sets the with_db of this ExportDesignModelTableDdlRequest.
+        r"""Sets the with_db of this ExportDesignModelTableDdlRequest.
 
         导出的DDL包不包括数据库名。
 

@@ -57,7 +57,7 @@ class CreateTranscodingReq:
     }
 
     def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, additional_manifests=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, priority=None, subtitle=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None):
-        """CreateTranscodingReq
+        r"""CreateTranscodingReq
 
         The model defined in huaweicloud sdk
 
@@ -154,7 +154,7 @@ class CreateTranscodingReq:
 
     @property
     def input(self):
-        """Gets the input of this CreateTranscodingReq.
+        r"""Gets the input of this CreateTranscodingReq.
 
         :return: The input of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -163,7 +163,7 @@ class CreateTranscodingReq:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CreateTranscodingReq.
+        r"""Sets the input of this CreateTranscodingReq.
 
         :param input: The input of this CreateTranscodingReq.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -172,7 +172,7 @@ class CreateTranscodingReq:
 
     @property
     def output(self):
-        """Gets the output of this CreateTranscodingReq.
+        r"""Gets the output of this CreateTranscodingReq.
 
         :return: The output of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -181,7 +181,7 @@ class CreateTranscodingReq:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CreateTranscodingReq.
+        r"""Sets the output of this CreateTranscodingReq.
 
         :param output: The output of this CreateTranscodingReq.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -190,7 +190,7 @@ class CreateTranscodingReq:
 
     @property
     def trans_template_id(self):
-        """Gets the trans_template_id of this CreateTranscodingReq.
+        r"""Gets the trans_template_id of this CreateTranscodingReq.
 
         转码模板ID，没带av_parameter参数时，必须带该参数，数组，每一路转码输出对应一个转码配置模板ID，最多支持9个模板ID。  多个转码模板中如下参数可变，其他都必须一致：  视频bitrate，height，width。 
 
@@ -201,7 +201,7 @@ class CreateTranscodingReq:
 
     @trans_template_id.setter
     def trans_template_id(self, trans_template_id):
-        """Sets the trans_template_id of this CreateTranscodingReq.
+        r"""Sets the trans_template_id of this CreateTranscodingReq.
 
         转码模板ID，没带av_parameter参数时，必须带该参数，数组，每一路转码输出对应一个转码配置模板ID，最多支持9个模板ID。  多个转码模板中如下参数可变，其他都必须一致：  视频bitrate，height，width。 
 
@@ -212,7 +212,7 @@ class CreateTranscodingReq:
 
     @property
     def av_parameters(self):
-        """Gets the av_parameters of this CreateTranscodingReq.
+        r"""Gets the av_parameters of this CreateTranscodingReq.
 
         转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码，不带trans_template_id时，该参数必选。 
 
@@ -223,7 +223,7 @@ class CreateTranscodingReq:
 
     @av_parameters.setter
     def av_parameters(self, av_parameters):
-        """Sets the av_parameters of this CreateTranscodingReq.
+        r"""Sets the av_parameters of this CreateTranscodingReq.
 
         转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码，不带trans_template_id时，该参数必选。 
 
@@ -234,7 +234,7 @@ class CreateTranscodingReq:
 
     @property
     def additional_manifests(self):
-        """Gets the additional_manifests of this CreateTranscodingReq.
+        r"""Gets the additional_manifests of this CreateTranscodingReq.
 
         主索引定制参数。 
 
@@ -245,7 +245,7 @@ class CreateTranscodingReq:
 
     @additional_manifests.setter
     def additional_manifests(self, additional_manifests):
-        """Sets the additional_manifests of this CreateTranscodingReq.
+        r"""Sets the additional_manifests of this CreateTranscodingReq.
 
         主索引定制参数。 
 
@@ -256,7 +256,7 @@ class CreateTranscodingReq:
 
     @property
     def output_filenames(self):
-        """Gets the output_filenames of this CreateTranscodingReq.
+        r"""Gets the output_filenames of this CreateTranscodingReq.
 
         输出文件名称，每一路转码输出对应一个名称，需要与转码模板ID数组的顺序对应。  - 若设置该参数，表示输出文件按该参数命名。 - 若不设置该参数，表示输出文件按默认方式命名。 
 
@@ -267,7 +267,7 @@ class CreateTranscodingReq:
 
     @output_filenames.setter
     def output_filenames(self, output_filenames):
-        """Sets the output_filenames of this CreateTranscodingReq.
+        r"""Sets the output_filenames of this CreateTranscodingReq.
 
         输出文件名称，每一路转码输出对应一个名称，需要与转码模板ID数组的顺序对应。  - 若设置该参数，表示输出文件按该参数命名。 - 若不设置该参数，表示输出文件按默认方式命名。 
 
@@ -278,7 +278,7 @@ class CreateTranscodingReq:
 
     @property
     def user_data(self):
-        """Gets the user_data of this CreateTranscodingReq.
+        r"""Gets the user_data of this CreateTranscodingReq.
 
         用户自定义数据，该字段可在查询接口或消息通知中按原内容透传给用户。 
 
@@ -289,7 +289,7 @@ class CreateTranscodingReq:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this CreateTranscodingReq.
+        r"""Sets the user_data of this CreateTranscodingReq.
 
         用户自定义数据，该字段可在查询接口或消息通知中按原内容透传给用户。 
 
@@ -300,7 +300,7 @@ class CreateTranscodingReq:
 
     @property
     def watermarks(self):
-        """Gets the watermarks of this CreateTranscodingReq.
+        r"""Gets the watermarks of this CreateTranscodingReq.
 
         图片水印参数，数组，最多支持20个成员。 
 
@@ -311,7 +311,7 @@ class CreateTranscodingReq:
 
     @watermarks.setter
     def watermarks(self, watermarks):
-        """Sets the watermarks of this CreateTranscodingReq.
+        r"""Sets the watermarks of this CreateTranscodingReq.
 
         图片水印参数，数组，最多支持20个成员。 
 
@@ -322,7 +322,7 @@ class CreateTranscodingReq:
 
     @property
     def thumbnail(self):
-        """Gets the thumbnail of this CreateTranscodingReq.
+        r"""Gets the thumbnail of this CreateTranscodingReq.
 
         :return: The thumbnail of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Thumbnail`
@@ -331,7 +331,7 @@ class CreateTranscodingReq:
 
     @thumbnail.setter
     def thumbnail(self, thumbnail):
-        """Sets the thumbnail of this CreateTranscodingReq.
+        r"""Sets the thumbnail of this CreateTranscodingReq.
 
         :param thumbnail: The thumbnail of this CreateTranscodingReq.
         :type thumbnail: :class:`huaweicloudsdkmpc.v1.Thumbnail`
@@ -340,7 +340,7 @@ class CreateTranscodingReq:
 
     @property
     def priority(self):
-        """Gets the priority of this CreateTranscodingReq.
+        r"""Gets the priority of this CreateTranscodingReq.
 
         任务优先级，取值如下： - 9代表高优先级。 - 6代表中优先级，默认为6。  暂时只支持6和9。 
 
@@ -351,7 +351,7 @@ class CreateTranscodingReq:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this CreateTranscodingReq.
+        r"""Sets the priority of this CreateTranscodingReq.
 
         任务优先级，取值如下： - 9代表高优先级。 - 6代表中优先级，默认为6。  暂时只支持6和9。 
 
@@ -362,7 +362,7 @@ class CreateTranscodingReq:
 
     @property
     def subtitle(self):
-        """Gets the subtitle of this CreateTranscodingReq.
+        r"""Gets the subtitle of this CreateTranscodingReq.
 
         :return: The subtitle of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Subtitle`
@@ -371,7 +371,7 @@ class CreateTranscodingReq:
 
     @subtitle.setter
     def subtitle(self, subtitle):
-        """Sets the subtitle of this CreateTranscodingReq.
+        r"""Sets the subtitle of this CreateTranscodingReq.
 
         :param subtitle: The subtitle of this CreateTranscodingReq.
         :type subtitle: :class:`huaweicloudsdkmpc.v1.Subtitle`
@@ -380,7 +380,7 @@ class CreateTranscodingReq:
 
     @property
     def encryption(self):
-        """Gets the encryption of this CreateTranscodingReq.
+        r"""Gets the encryption of this CreateTranscodingReq.
 
         :return: The encryption of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Encryption`
@@ -389,7 +389,7 @@ class CreateTranscodingReq:
 
     @encryption.setter
     def encryption(self, encryption):
-        """Sets the encryption of this CreateTranscodingReq.
+        r"""Sets the encryption of this CreateTranscodingReq.
 
         :param encryption: The encryption of this CreateTranscodingReq.
         :type encryption: :class:`huaweicloudsdkmpc.v1.Encryption`
@@ -398,7 +398,7 @@ class CreateTranscodingReq:
 
     @property
     def crop(self):
-        """Gets the crop of this CreateTranscodingReq.
+        r"""Gets the crop of this CreateTranscodingReq.
 
         :return: The crop of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.Crop`
@@ -407,7 +407,7 @@ class CreateTranscodingReq:
 
     @crop.setter
     def crop(self, crop):
-        """Sets the crop of this CreateTranscodingReq.
+        r"""Sets the crop of this CreateTranscodingReq.
 
         :param crop: The crop of this CreateTranscodingReq.
         :type crop: :class:`huaweicloudsdkmpc.v1.Crop`
@@ -416,7 +416,7 @@ class CreateTranscodingReq:
 
     @property
     def audio_track(self):
-        """Gets the audio_track of this CreateTranscodingReq.
+        r"""Gets the audio_track of this CreateTranscodingReq.
 
         :return: The audio_track of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.AudioTrack`
@@ -425,7 +425,7 @@ class CreateTranscodingReq:
 
     @audio_track.setter
     def audio_track(self, audio_track):
-        """Sets the audio_track of this CreateTranscodingReq.
+        r"""Sets the audio_track of this CreateTranscodingReq.
 
         :param audio_track: The audio_track of this CreateTranscodingReq.
         :type audio_track: :class:`huaweicloudsdkmpc.v1.AudioTrack`
@@ -434,7 +434,7 @@ class CreateTranscodingReq:
 
     @property
     def multi_audio(self):
-        """Gets the multi_audio of this CreateTranscodingReq.
+        r"""Gets the multi_audio of this CreateTranscodingReq.
 
         :return: The multi_audio of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.MultiAudio`
@@ -443,7 +443,7 @@ class CreateTranscodingReq:
 
     @multi_audio.setter
     def multi_audio(self, multi_audio):
-        """Sets the multi_audio of this CreateTranscodingReq.
+        r"""Sets the multi_audio of this CreateTranscodingReq.
 
         :param multi_audio: The multi_audio of this CreateTranscodingReq.
         :type multi_audio: :class:`huaweicloudsdkmpc.v1.MultiAudio`
@@ -452,7 +452,7 @@ class CreateTranscodingReq:
 
     @property
     def video_process(self):
-        """Gets the video_process of this CreateTranscodingReq.
+        r"""Gets the video_process of this CreateTranscodingReq.
 
         :return: The video_process of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.VideoProcess`
@@ -461,7 +461,7 @@ class CreateTranscodingReq:
 
     @video_process.setter
     def video_process(self, video_process):
-        """Sets the video_process of this CreateTranscodingReq.
+        r"""Sets the video_process of this CreateTranscodingReq.
 
         :param video_process: The video_process of this CreateTranscodingReq.
         :type video_process: :class:`huaweicloudsdkmpc.v1.VideoProcess`
@@ -470,7 +470,7 @@ class CreateTranscodingReq:
 
     @property
     def audio_process(self):
-        """Gets the audio_process of this CreateTranscodingReq.
+        r"""Gets the audio_process of this CreateTranscodingReq.
 
         :return: The audio_process of this CreateTranscodingReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.AudioProcess`
@@ -479,7 +479,7 @@ class CreateTranscodingReq:
 
     @audio_process.setter
     def audio_process(self, audio_process):
-        """Sets the audio_process of this CreateTranscodingReq.
+        r"""Sets the audio_process of this CreateTranscodingReq.
 
         :param audio_process: The audio_process of this CreateTranscodingReq.
         :type audio_process: :class:`huaweicloudsdkmpc.v1.AudioProcess`

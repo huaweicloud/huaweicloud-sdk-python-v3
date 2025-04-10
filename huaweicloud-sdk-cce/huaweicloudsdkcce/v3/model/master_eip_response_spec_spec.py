@@ -29,7 +29,7 @@ class MasterEIPResponseSpecSpec:
     }
 
     def __init__(self, id=None, eip=None, is_dynamic=None):
-        """MasterEIPResponseSpecSpec
+        r"""MasterEIPResponseSpecSpec
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MasterEIPResponseSpecSpec:
 
     @property
     def id(self):
-        """Gets the id of this MasterEIPResponseSpecSpec.
+        r"""Gets the id of this MasterEIPResponseSpecSpec.
 
         弹性网卡ID
 
@@ -68,7 +68,7 @@ class MasterEIPResponseSpecSpec:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MasterEIPResponseSpecSpec.
+        r"""Sets the id of this MasterEIPResponseSpecSpec.
 
         弹性网卡ID
 
@@ -79,7 +79,7 @@ class MasterEIPResponseSpecSpec:
 
     @property
     def eip(self):
-        """Gets the eip of this MasterEIPResponseSpecSpec.
+        r"""Gets the eip of this MasterEIPResponseSpecSpec.
 
         :return: The eip of this MasterEIPResponseSpecSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.EipSpec`
@@ -88,7 +88,7 @@ class MasterEIPResponseSpecSpec:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this MasterEIPResponseSpecSpec.
+        r"""Sets the eip of this MasterEIPResponseSpecSpec.
 
         :param eip: The eip of this MasterEIPResponseSpecSpec.
         :type eip: :class:`huaweicloudsdkcce.v3.EipSpec`
@@ -97,7 +97,7 @@ class MasterEIPResponseSpecSpec:
 
     @property
     def is_dynamic(self):
-        """Gets the is_dynamic of this MasterEIPResponseSpecSpec.
+        r"""Gets the is_dynamic of this MasterEIPResponseSpecSpec.
 
         是否动态创建
 
@@ -108,7 +108,7 @@ class MasterEIPResponseSpecSpec:
 
     @is_dynamic.setter
     def is_dynamic(self, is_dynamic):
-        """Sets the is_dynamic of this MasterEIPResponseSpecSpec.
+        r"""Sets the is_dynamic of this MasterEIPResponseSpecSpec.
 
         是否动态创建
 

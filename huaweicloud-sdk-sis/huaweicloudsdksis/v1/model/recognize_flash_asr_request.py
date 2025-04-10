@@ -41,7 +41,7 @@ class RecognizeFlashAsrRequest:
     }
 
     def __init__(self, _property=None, audio_format=None, obs_bucket_name=None, obs_object_key=None, add_punc=None, digit_norm=None, need_word_info=None, vocabulary_id=None, first_channel_only=None):
-        """RecognizeFlashAsrRequest
+        r"""RecognizeFlashAsrRequest
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class RecognizeFlashAsrRequest:
 
     @property
     def _property(self):
-        """Gets the _property of this RecognizeFlashAsrRequest.
+        r"""Gets the _property of this RecognizeFlashAsrRequest.
 
         所使用的模型特征串。通常是 “语种_采样率_领域”的形式。 采样率需要与音频采样率保持一致。 当前支持如下模型特征串： chinese_8k_common chinese_16k_conversation
 
@@ -106,7 +106,7 @@ class RecognizeFlashAsrRequest:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this RecognizeFlashAsrRequest.
+        r"""Sets the _property of this RecognizeFlashAsrRequest.
 
         所使用的模型特征串。通常是 “语种_采样率_领域”的形式。 采样率需要与音频采样率保持一致。 当前支持如下模型特征串： chinese_8k_common chinese_16k_conversation
 
@@ -117,7 +117,7 @@ class RecognizeFlashAsrRequest:
 
     @property
     def audio_format(self):
-        """Gets the audio_format of this RecognizeFlashAsrRequest.
+        r"""Gets the audio_format of this RecognizeFlashAsrRequest.
 
         音频格式，audio_format取值范围： wav,mp3,m4a,aac,opus
 
@@ -128,7 +128,7 @@ class RecognizeFlashAsrRequest:
 
     @audio_format.setter
     def audio_format(self, audio_format):
-        """Sets the audio_format of this RecognizeFlashAsrRequest.
+        r"""Sets the audio_format of this RecognizeFlashAsrRequest.
 
         音频格式，audio_format取值范围： wav,mp3,m4a,aac,opus
 
@@ -139,7 +139,7 @@ class RecognizeFlashAsrRequest:
 
     @property
     def obs_bucket_name(self):
-        """Gets the obs_bucket_name of this RecognizeFlashAsrRequest.
+        r"""Gets the obs_bucket_name of this RecognizeFlashAsrRequest.
 
         obs桶名
 
@@ -150,7 +150,7 @@ class RecognizeFlashAsrRequest:
 
     @obs_bucket_name.setter
     def obs_bucket_name(self, obs_bucket_name):
-        """Sets the obs_bucket_name of this RecognizeFlashAsrRequest.
+        r"""Sets the obs_bucket_name of this RecognizeFlashAsrRequest.
 
         obs桶名
 
@@ -161,7 +161,7 @@ class RecognizeFlashAsrRequest:
 
     @property
     def obs_object_key(self):
-        """Gets the obs_object_key of this RecognizeFlashAsrRequest.
+        r"""Gets the obs_object_key of this RecognizeFlashAsrRequest.
 
         obs对象key，经过urlencode编码，长度不超过1024个字符
 
@@ -172,7 +172,7 @@ class RecognizeFlashAsrRequest:
 
     @obs_object_key.setter
     def obs_object_key(self, obs_object_key):
-        """Sets the obs_object_key of this RecognizeFlashAsrRequest.
+        r"""Sets the obs_object_key of this RecognizeFlashAsrRequest.
 
         obs对象key，经过urlencode编码，长度不超过1024个字符
 
@@ -183,7 +183,7 @@ class RecognizeFlashAsrRequest:
 
     @property
     def add_punc(self):
-        """Gets the add_punc of this RecognizeFlashAsrRequest.
+        r"""Gets the add_punc of this RecognizeFlashAsrRequest.
 
         是否加标点， 可以为 yes, 默认no
 
@@ -194,7 +194,7 @@ class RecognizeFlashAsrRequest:
 
     @add_punc.setter
     def add_punc(self, add_punc):
-        """Sets the add_punc of this RecognizeFlashAsrRequest.
+        r"""Sets the add_punc of this RecognizeFlashAsrRequest.
 
         是否加标点， 可以为 yes, 默认no
 
@@ -205,7 +205,7 @@ class RecognizeFlashAsrRequest:
 
     @property
     def digit_norm(self):
-        """Gets the digit_norm of this RecognizeFlashAsrRequest.
+        r"""Gets the digit_norm of this RecognizeFlashAsrRequest.
 
         是否将音频中的数字使用阿拉伯数字的形式呈现，取值为yes，no，默认为yes
 
@@ -216,7 +216,7 @@ class RecognizeFlashAsrRequest:
 
     @digit_norm.setter
     def digit_norm(self, digit_norm):
-        """Sets the digit_norm of this RecognizeFlashAsrRequest.
+        r"""Sets the digit_norm of this RecognizeFlashAsrRequest.
 
         是否将音频中的数字使用阿拉伯数字的形式呈现，取值为yes，no，默认为yes
 
@@ -227,7 +227,7 @@ class RecognizeFlashAsrRequest:
 
     @property
     def need_word_info(self):
-        """Gets the need_word_info of this RecognizeFlashAsrRequest.
+        r"""Gets the need_word_info of this RecognizeFlashAsrRequest.
 
         表示是否在识别结果中输出分词结果信息，取值为yes，no，默认no
 
@@ -238,7 +238,7 @@ class RecognizeFlashAsrRequest:
 
     @need_word_info.setter
     def need_word_info(self, need_word_info):
-        """Sets the need_word_info of this RecognizeFlashAsrRequest.
+        r"""Sets the need_word_info of this RecognizeFlashAsrRequest.
 
         表示是否在识别结果中输出分词结果信息，取值为yes，no，默认no
 
@@ -249,7 +249,7 @@ class RecognizeFlashAsrRequest:
 
     @property
     def vocabulary_id(self):
-        """Gets the vocabulary_id of this RecognizeFlashAsrRequest.
+        r"""Gets the vocabulary_id of this RecognizeFlashAsrRequest.
 
         热词表id
 
@@ -260,7 +260,7 @@ class RecognizeFlashAsrRequest:
 
     @vocabulary_id.setter
     def vocabulary_id(self, vocabulary_id):
-        """Sets the vocabulary_id of this RecognizeFlashAsrRequest.
+        r"""Sets the vocabulary_id of this RecognizeFlashAsrRequest.
 
         热词表id
 
@@ -271,7 +271,7 @@ class RecognizeFlashAsrRequest:
 
     @property
     def first_channel_only(self):
-        """Gets the first_channel_only of this RecognizeFlashAsrRequest.
+        r"""Gets the first_channel_only of this RecognizeFlashAsrRequest.
 
         表示是否在识别中只识别首个声道的音频数据，取值为“yes”和“no”，默认为“no”。
 
@@ -282,7 +282,7 @@ class RecognizeFlashAsrRequest:
 
     @first_channel_only.setter
     def first_channel_only(self, first_channel_only):
-        """Sets the first_channel_only of this RecognizeFlashAsrRequest.
+        r"""Sets the first_channel_only of this RecognizeFlashAsrRequest.
 
         表示是否在识别中只识别首个声道的音频数据，取值为“yes”和“no”，默认为“no”。
 

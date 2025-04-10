@@ -31,7 +31,7 @@ class UpdateTriggerRequest:
     }
 
     def __init__(self, function_urn=None, trigger_type_code=None, trigger_id=None, body=None):
-        """UpdateTriggerRequest
+        r"""UpdateTriggerRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateTriggerRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this UpdateTriggerRequest.
+        r"""Gets the function_urn of this UpdateTriggerRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -72,7 +72,7 @@ class UpdateTriggerRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this UpdateTriggerRequest.
+        r"""Sets the function_urn of this UpdateTriggerRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -83,7 +83,7 @@ class UpdateTriggerRequest:
 
     @property
     def trigger_type_code(self):
-        """Gets the trigger_type_code of this UpdateTriggerRequest.
+        r"""Gets the trigger_type_code of this UpdateTriggerRequest.
 
         触发器类型代码。
 
@@ -94,7 +94,7 @@ class UpdateTriggerRequest:
 
     @trigger_type_code.setter
     def trigger_type_code(self, trigger_type_code):
-        """Sets the trigger_type_code of this UpdateTriggerRequest.
+        r"""Sets the trigger_type_code of this UpdateTriggerRequest.
 
         触发器类型代码。
 
@@ -105,7 +105,7 @@ class UpdateTriggerRequest:
 
     @property
     def trigger_id(self):
-        """Gets the trigger_id of this UpdateTriggerRequest.
+        r"""Gets the trigger_id of this UpdateTriggerRequest.
 
         触发器编码。
 
@@ -116,7 +116,7 @@ class UpdateTriggerRequest:
 
     @trigger_id.setter
     def trigger_id(self, trigger_id):
-        """Sets the trigger_id of this UpdateTriggerRequest.
+        r"""Sets the trigger_id of this UpdateTriggerRequest.
 
         触发器编码。
 
@@ -127,7 +127,7 @@ class UpdateTriggerRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTriggerRequest.
+        r"""Gets the body of this UpdateTriggerRequest.
 
         :return: The body of this UpdateTriggerRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTriggerRequestBody`
@@ -136,7 +136,7 @@ class UpdateTriggerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTriggerRequest.
+        r"""Sets the body of this UpdateTriggerRequest.
 
         :param body: The body of this UpdateTriggerRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateTriggerRequestBody`

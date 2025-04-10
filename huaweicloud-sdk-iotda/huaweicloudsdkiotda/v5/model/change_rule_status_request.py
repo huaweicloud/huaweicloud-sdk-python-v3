@@ -29,7 +29,7 @@ class ChangeRuleStatusRequest:
     }
 
     def __init__(self, instance_id=None, rule_id=None, body=None):
-        """ChangeRuleStatusRequest
+        r"""ChangeRuleStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ChangeRuleStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeRuleStatusRequest.
+        r"""Gets the instance_id of this ChangeRuleStatusRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
@@ -67,7 +67,7 @@ class ChangeRuleStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeRuleStatusRequest.
+        r"""Sets the instance_id of this ChangeRuleStatusRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID。
 
@@ -78,7 +78,7 @@ class ChangeRuleStatusRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ChangeRuleStatusRequest.
+        r"""Gets the rule_id of this ChangeRuleStatusRequest.
 
         **参数说明**：规则Id。 **取值范围**：长度不超过32，只允许字母、数字的组合。
 
@@ -89,7 +89,7 @@ class ChangeRuleStatusRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ChangeRuleStatusRequest.
+        r"""Sets the rule_id of this ChangeRuleStatusRequest.
 
         **参数说明**：规则Id。 **取值范围**：长度不超过32，只允许字母、数字的组合。
 
@@ -100,7 +100,7 @@ class ChangeRuleStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeRuleStatusRequest.
+        r"""Gets the body of this ChangeRuleStatusRequest.
 
         :return: The body of this ChangeRuleStatusRequest.
         :rtype: :class:`huaweicloudsdkiotda.v5.RuleStatus`
@@ -109,7 +109,7 @@ class ChangeRuleStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeRuleStatusRequest.
+        r"""Sets the body of this ChangeRuleStatusRequest.
 
         :param body: The body of this ChangeRuleStatusRequest.
         :type body: :class:`huaweicloudsdkiotda.v5.RuleStatus`

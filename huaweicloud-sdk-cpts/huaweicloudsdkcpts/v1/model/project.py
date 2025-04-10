@@ -37,7 +37,7 @@ class Project:
     }
 
     def __init__(self, create_time=None, description=None, group=None, id=None, name=None, source=None, update_time=None):
-        """Project
+        r"""Project
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Project:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Project.
+        r"""Gets the create_time of this Project.
 
         创建时间
 
@@ -96,7 +96,7 @@ class Project:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Project.
+        r"""Sets the create_time of this Project.
 
         创建时间
 
@@ -107,7 +107,7 @@ class Project:
 
     @property
     def description(self):
-        """Gets the description of this Project.
+        r"""Gets the description of this Project.
 
         描述
 
@@ -118,7 +118,7 @@ class Project:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Project.
+        r"""Sets the description of this Project.
 
         描述
 
@@ -129,7 +129,7 @@ class Project:
 
     @property
     def group(self):
-        """Gets the group of this Project.
+        r"""Gets the group of this Project.
 
         租户id（domain_id）
 
@@ -140,7 +140,7 @@ class Project:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this Project.
+        r"""Sets the group of this Project.
 
         租户id（domain_id）
 
@@ -151,7 +151,7 @@ class Project:
 
     @property
     def id(self):
-        """Gets the id of this Project.
+        r"""Gets the id of this Project.
 
         工程id
 
@@ -162,7 +162,7 @@ class Project:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Project.
+        r"""Sets the id of this Project.
 
         工程id
 
@@ -173,7 +173,7 @@ class Project:
 
     @property
     def name(self):
-        """Gets the name of this Project.
+        r"""Gets the name of this Project.
 
         工程名称
 
@@ -184,7 +184,7 @@ class Project:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Project.
+        r"""Sets the name of this Project.
 
         工程名称
 
@@ -195,7 +195,7 @@ class Project:
 
     @property
     def source(self):
-        """Gets the source of this Project.
+        r"""Gets the source of this Project.
 
         来源（0-PerfTest；2-CloudTest）
 
@@ -206,7 +206,7 @@ class Project:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this Project.
+        r"""Sets the source of this Project.
 
         来源（0-PerfTest；2-CloudTest）
 
@@ -217,7 +217,7 @@ class Project:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Project.
+        r"""Gets the update_time of this Project.
 
         更新时间
 
@@ -228,7 +228,7 @@ class Project:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Project.
+        r"""Sets the update_time of this Project.
 
         更新时间
 

@@ -29,7 +29,7 @@ class MysqlInstanceNodeVolumeInfo:
     }
 
     def __init__(self, type=None, used=None, size=None):
-        """MysqlInstanceNodeVolumeInfo
+        r"""MysqlInstanceNodeVolumeInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class MysqlInstanceNodeVolumeInfo:
 
     @property
     def type(self):
-        """Gets the type of this MysqlInstanceNodeVolumeInfo.
+        r"""Gets the type of this MysqlInstanceNodeVolumeInfo.
 
         磁盘类型。
 
@@ -65,7 +65,7 @@ class MysqlInstanceNodeVolumeInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MysqlInstanceNodeVolumeInfo.
+        r"""Sets the type of this MysqlInstanceNodeVolumeInfo.
 
         磁盘类型。
 
@@ -76,7 +76,7 @@ class MysqlInstanceNodeVolumeInfo:
 
     @property
     def used(self):
-        """Gets the used of this MysqlInstanceNodeVolumeInfo.
+        r"""Gets the used of this MysqlInstanceNodeVolumeInfo.
 
         已使用磁盘大小，单位GB。
 
@@ -87,7 +87,7 @@ class MysqlInstanceNodeVolumeInfo:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this MysqlInstanceNodeVolumeInfo.
+        r"""Sets the used of this MysqlInstanceNodeVolumeInfo.
 
         已使用磁盘大小，单位GB。
 
@@ -98,7 +98,7 @@ class MysqlInstanceNodeVolumeInfo:
 
     @property
     def size(self):
-        """Gets the size of this MysqlInstanceNodeVolumeInfo.
+        r"""Gets the size of this MysqlInstanceNodeVolumeInfo.
 
         包周期购买的存储空间大小，单位GB。
 
@@ -109,7 +109,7 @@ class MysqlInstanceNodeVolumeInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this MysqlInstanceNodeVolumeInfo.
+        r"""Sets the size of this MysqlInstanceNodeVolumeInfo.
 
         包周期购买的存储空间大小，单位GB。
 

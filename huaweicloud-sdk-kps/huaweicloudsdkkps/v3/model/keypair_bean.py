@@ -25,7 +25,7 @@ class KeypairBean:
     }
 
     def __init__(self, name=None):
-        """KeypairBean
+        r"""KeypairBean
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeypairBean:
 
     @property
     def name(self):
-        """Gets the name of this KeypairBean.
+        r"""Gets the name of this KeypairBean.
 
         SSH密钥对名称。
 
@@ -53,7 +53,7 @@ class KeypairBean:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KeypairBean.
+        r"""Sets the name of this KeypairBean.
 
         SSH密钥对名称。
 

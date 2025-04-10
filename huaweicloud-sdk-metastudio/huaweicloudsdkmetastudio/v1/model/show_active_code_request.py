@@ -27,7 +27,7 @@ class ShowActiveCodeRequest:
     }
 
     def __init__(self, x_app_user_id=None, active_code_id=None):
-        """ShowActiveCodeRequest
+        r"""ShowActiveCodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowActiveCodeRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowActiveCodeRequest.
+        r"""Gets the x_app_user_id of this ShowActiveCodeRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -60,7 +60,7 @@ class ShowActiveCodeRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowActiveCodeRequest.
+        r"""Sets the x_app_user_id of this ShowActiveCodeRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -71,7 +71,7 @@ class ShowActiveCodeRequest:
 
     @property
     def active_code_id(self):
-        """Gets the active_code_id of this ShowActiveCodeRequest.
+        r"""Gets the active_code_id of this ShowActiveCodeRequest.
 
         激活码ID。
 
@@ -82,7 +82,7 @@ class ShowActiveCodeRequest:
 
     @active_code_id.setter
     def active_code_id(self, active_code_id):
-        """Sets the active_code_id of this ShowActiveCodeRequest.
+        r"""Sets the active_code_id of this ShowActiveCodeRequest.
 
         激活码ID。
 

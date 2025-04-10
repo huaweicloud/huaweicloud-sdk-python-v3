@@ -31,7 +31,7 @@ class CreateModelInput:
     }
 
     def __init__(self, name=None, description=None, type=None, version=None):
-        """CreateModelInput
+        r"""CreateModelInput
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateModelInput:
 
     @property
     def name(self):
-        """Gets the name of this CreateModelInput.
+        r"""Gets the name of this CreateModelInput.
 
         一个Model的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -72,7 +72,7 @@ class CreateModelInput:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateModelInput.
+        r"""Sets the name of this CreateModelInput.
 
         一个Model的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -83,7 +83,7 @@ class CreateModelInput:
 
     @property
     def description(self):
-        """Gets the description of this CreateModelInput.
+        r"""Gets the description of this CreateModelInput.
 
         描述信息
 
@@ -94,7 +94,7 @@ class CreateModelInput:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateModelInput.
+        r"""Sets the description of this CreateModelInput.
 
         描述信息
 
@@ -105,7 +105,7 @@ class CreateModelInput:
 
     @property
     def type(self):
-        """Gets the type of this CreateModelInput.
+        r"""Gets the type of this CreateModelInput.
 
         :return: The type of this CreateModelInput.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ModelType`
@@ -114,7 +114,7 @@ class CreateModelInput:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateModelInput.
+        r"""Sets the type of this CreateModelInput.
 
         :param type: The type of this CreateModelInput.
         :type type: :class:`huaweicloudsdkdataartsfabric.v1.ModelType`
@@ -123,7 +123,7 @@ class CreateModelInput:
 
     @property
     def version(self):
-        """Gets the version of this CreateModelInput.
+        r"""Gets the version of this CreateModelInput.
 
         :return: The version of this CreateModelInput.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ModelVersionInput`
@@ -132,7 +132,7 @@ class CreateModelInput:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateModelInput.
+        r"""Sets the version of this CreateModelInput.
 
         :param version: The version of this CreateModelInput.
         :type version: :class:`huaweicloudsdkdataartsfabric.v1.ModelVersionInput`

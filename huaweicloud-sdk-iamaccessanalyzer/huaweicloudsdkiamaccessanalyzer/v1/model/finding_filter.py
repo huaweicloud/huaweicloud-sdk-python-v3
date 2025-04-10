@@ -27,7 +27,7 @@ class FindingFilter:
     }
 
     def __init__(self, criterion=None, key=None):
-        """FindingFilter
+        r"""FindingFilter
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FindingFilter:
 
     @property
     def criterion(self):
-        """Gets the criterion of this FindingFilter.
+        r"""Gets the criterion of this FindingFilter.
 
         :return: The criterion of this FindingFilter.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.Criterion`
@@ -57,7 +57,7 @@ class FindingFilter:
 
     @criterion.setter
     def criterion(self, criterion):
-        """Sets the criterion of this FindingFilter.
+        r"""Sets the criterion of this FindingFilter.
 
         :param criterion: The criterion of this FindingFilter.
         :type criterion: :class:`huaweicloudsdkiamaccessanalyzer.v1.Criterion`
@@ -66,7 +66,7 @@ class FindingFilter:
 
     @property
     def key(self):
-        """Gets the key of this FindingFilter.
+        r"""Gets the key of this FindingFilter.
 
         过滤键。
 
@@ -77,7 +77,7 @@ class FindingFilter:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this FindingFilter.
+        r"""Sets the key of this FindingFilter.
 
         过滤键。
 

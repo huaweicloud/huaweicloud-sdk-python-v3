@@ -25,7 +25,7 @@ class CreateStreamRequest:
     }
 
     def __init__(self, body=None):
-        """CreateStreamRequest
+        r"""CreateStreamRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateStreamRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateStreamRequest.
+        r"""Gets the body of this CreateStreamRequest.
 
         :return: The body of this CreateStreamRequest.
         :rtype: :class:`huaweicloudsdkdis.v2.CreateStreamReq`
@@ -52,7 +52,7 @@ class CreateStreamRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateStreamRequest.
+        r"""Sets the body of this CreateStreamRequest.
 
         :param body: The body of this CreateStreamRequest.
         :type body: :class:`huaweicloudsdkdis.v2.CreateStreamReq`

@@ -26,7 +26,7 @@ class ListProtectedVpcsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListProtectedVpcsResponse
+        r"""ListProtectedVpcsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListProtectedVpcsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListProtectedVpcsResponse.
+        r"""Gets the data of this ListProtectedVpcsResponse.
 
         :return: The data of this ListProtectedVpcsResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.VPCProtectsVo`
@@ -53,7 +53,7 @@ class ListProtectedVpcsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListProtectedVpcsResponse.
+        r"""Sets the data of this ListProtectedVpcsResponse.
 
         :param data: The data of this ListProtectedVpcsResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.VPCProtectsVo`

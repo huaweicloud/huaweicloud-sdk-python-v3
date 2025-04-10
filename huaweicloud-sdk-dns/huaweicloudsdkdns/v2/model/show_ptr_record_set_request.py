@@ -27,7 +27,7 @@ class ShowPtrRecordSetRequest:
     }
 
     def __init__(self, region=None, floatingip_id=None):
-        """ShowPtrRecordSetRequest
+        r"""ShowPtrRecordSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowPtrRecordSetRequest:
 
     @property
     def region(self):
-        """Gets the region of this ShowPtrRecordSetRequest.
+        r"""Gets the region of this ShowPtrRecordSetRequest.
 
         租户的区域信息。 
 
@@ -59,7 +59,7 @@ class ShowPtrRecordSetRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowPtrRecordSetRequest.
+        r"""Sets the region of this ShowPtrRecordSetRequest.
 
         租户的区域信息。 
 
@@ -70,7 +70,7 @@ class ShowPtrRecordSetRequest:
 
     @property
     def floatingip_id(self):
-        """Gets the floatingip_id of this ShowPtrRecordSetRequest.
+        r"""Gets the floatingip_id of this ShowPtrRecordSetRequest.
 
         弹性公网IP（EIP）的ID。
 
@@ -81,7 +81,7 @@ class ShowPtrRecordSetRequest:
 
     @floatingip_id.setter
     def floatingip_id(self, floatingip_id):
-        """Sets the floatingip_id of this ShowPtrRecordSetRequest.
+        r"""Sets the floatingip_id of this ShowPtrRecordSetRequest.
 
         弹性公网IP（EIP）的ID。
 

@@ -29,7 +29,7 @@ class Project:
     }
 
     def __init__(self, id=None, name=None, clone_url=None):
-        """Project
+        r"""Project
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Project:
 
     @property
     def id(self):
-        """Gets the id of this Project.
+        r"""Gets the id of this Project.
 
         项目ID。
 
@@ -65,7 +65,7 @@ class Project:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Project.
+        r"""Sets the id of this Project.
 
         项目ID。
 
@@ -76,7 +76,7 @@ class Project:
 
     @property
     def name(self):
-        """Gets the name of this Project.
+        r"""Gets the name of this Project.
 
         项目名称。
 
@@ -87,7 +87,7 @@ class Project:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Project.
+        r"""Sets the name of this Project.
 
         项目名称。
 
@@ -98,7 +98,7 @@ class Project:
 
     @property
     def clone_url(self):
-        """Gets the clone_url of this Project.
+        r"""Gets the clone_url of this Project.
 
         项目的clone url路径。
 
@@ -109,7 +109,7 @@ class Project:
 
     @clone_url.setter
     def clone_url(self, clone_url):
-        """Sets the clone_url of this Project.
+        r"""Sets the clone_url of this Project.
 
         项目的clone url路径。
 

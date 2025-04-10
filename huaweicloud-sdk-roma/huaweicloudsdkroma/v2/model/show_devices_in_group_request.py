@@ -35,7 +35,7 @@ class ShowDevicesInGroupRequest:
     }
 
     def __init__(self, instance_id=None, group_id=None, limit=None, product_name=None, device_name=None, offset=None):
-        """ShowDevicesInGroupRequest
+        r"""ShowDevicesInGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ShowDevicesInGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDevicesInGroupRequest.
+        r"""Gets the instance_id of this ShowDevicesInGroupRequest.
 
         实例ID
 
@@ -87,7 +87,7 @@ class ShowDevicesInGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDevicesInGroupRequest.
+        r"""Sets the instance_id of this ShowDevicesInGroupRequest.
 
         实例ID
 
@@ -98,7 +98,7 @@ class ShowDevicesInGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowDevicesInGroupRequest.
+        r"""Gets the group_id of this ShowDevicesInGroupRequest.
 
         设备分组ID
 
@@ -109,7 +109,7 @@ class ShowDevicesInGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowDevicesInGroupRequest.
+        r"""Sets the group_id of this ShowDevicesInGroupRequest.
 
         设备分组ID
 
@@ -120,7 +120,7 @@ class ShowDevicesInGroupRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowDevicesInGroupRequest.
+        r"""Gets the limit of this ShowDevicesInGroupRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -131,7 +131,7 @@ class ShowDevicesInGroupRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowDevicesInGroupRequest.
+        r"""Sets the limit of this ShowDevicesInGroupRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -142,7 +142,7 @@ class ShowDevicesInGroupRequest:
 
     @property
     def product_name(self):
-        """Gets the product_name of this ShowDevicesInGroupRequest.
+        r"""Gets the product_name of this ShowDevicesInGroupRequest.
 
         产品名称
 
@@ -153,7 +153,7 @@ class ShowDevicesInGroupRequest:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this ShowDevicesInGroupRequest.
+        r"""Sets the product_name of this ShowDevicesInGroupRequest.
 
         产品名称
 
@@ -164,7 +164,7 @@ class ShowDevicesInGroupRequest:
 
     @property
     def device_name(self):
-        """Gets the device_name of this ShowDevicesInGroupRequest.
+        r"""Gets the device_name of this ShowDevicesInGroupRequest.
 
         设备名称
 
@@ -175,7 +175,7 @@ class ShowDevicesInGroupRequest:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this ShowDevicesInGroupRequest.
+        r"""Sets the device_name of this ShowDevicesInGroupRequest.
 
         设备名称
 
@@ -186,7 +186,7 @@ class ShowDevicesInGroupRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowDevicesInGroupRequest.
+        r"""Gets the offset of this ShowDevicesInGroupRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -197,7 +197,7 @@ class ShowDevicesInGroupRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowDevicesInGroupRequest.
+        r"""Sets the offset of this ShowDevicesInGroupRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 

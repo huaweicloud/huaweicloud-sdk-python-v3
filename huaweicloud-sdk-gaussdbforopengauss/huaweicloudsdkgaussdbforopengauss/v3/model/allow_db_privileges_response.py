@@ -24,7 +24,7 @@ class AllowDbPrivilegesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AllowDbPrivilegesResponse
+        r"""AllowDbPrivilegesResponse
 
         The model defined in huaweicloud sdk
 

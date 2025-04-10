@@ -27,7 +27,7 @@ class CreatePurchaseOrderRequest:
     }
 
     def __init__(self, service=None, body=None):
-        """CreatePurchaseOrderRequest
+        r"""CreatePurchaseOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePurchaseOrderRequest:
 
     @property
     def service(self):
-        """Gets the service of this CreatePurchaseOrderRequest.
+        r"""Gets the service of this CreatePurchaseOrderRequest.
 
         servicename,购买vss服务时使用\"webscan\"
 
@@ -60,7 +60,7 @@ class CreatePurchaseOrderRequest:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this CreatePurchaseOrderRequest.
+        r"""Sets the service of this CreatePurchaseOrderRequest.
 
         servicename,购买vss服务时使用\"webscan\"
 
@@ -71,7 +71,7 @@ class CreatePurchaseOrderRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePurchaseOrderRequest.
+        r"""Gets the body of this CreatePurchaseOrderRequest.
 
         :return: The body of this CreatePurchaseOrderRequest.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v2.CreateCbcOrderRequestBody`
@@ -80,7 +80,7 @@ class CreatePurchaseOrderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePurchaseOrderRequest.
+        r"""Sets the body of this CreatePurchaseOrderRequest.
 
         :param body: The body of this CreatePurchaseOrderRequest.
         :type body: :class:`huaweicloudsdkcodeartsinspector.v2.CreateCbcOrderRequestBody`

@@ -37,7 +37,7 @@ class RequestLimitRules:
     }
 
     def __init__(self, status=None, priority=None, match_type=None, match_value=None, type=None, limit_rate_after=None, limit_rate_value=None):
-        """RequestLimitRules
+        r"""RequestLimitRules
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class RequestLimitRules:
 
     @property
     def status(self):
-        """Gets the status of this RequestLimitRules.
+        r"""Gets the status of this RequestLimitRules.
 
         status只支持on，off无效。  > request_limit_rules字段置空时代表关闭请求限速功能。  > 旧接口中的参数，后续将下线。
 
@@ -91,7 +91,7 @@ class RequestLimitRules:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RequestLimitRules.
+        r"""Sets the status of this RequestLimitRules.
 
         status只支持on，off无效。  > request_limit_rules字段置空时代表关闭请求限速功能。  > 旧接口中的参数，后续将下线。
 
@@ -102,7 +102,7 @@ class RequestLimitRules:
 
     @property
     def priority(self):
-        """Gets the priority of this RequestLimitRules.
+        r"""Gets the priority of this RequestLimitRules.
 
         优先级，值越大，优先级越高,取值范围：1-100。
 
@@ -113,7 +113,7 @@ class RequestLimitRules:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this RequestLimitRules.
+        r"""Sets the priority of this RequestLimitRules.
 
         优先级，值越大，优先级越高,取值范围：1-100。
 
@@ -124,7 +124,7 @@ class RequestLimitRules:
 
     @property
     def match_type(self):
-        """Gets the match_type of this RequestLimitRules.
+        r"""Gets the match_type of this RequestLimitRules.
 
         匹配类型，all：所有文件，catalog：目录。
 
@@ -135,7 +135,7 @@ class RequestLimitRules:
 
     @match_type.setter
     def match_type(self, match_type):
-        """Sets the match_type of this RequestLimitRules.
+        r"""Sets the match_type of this RequestLimitRules.
 
         匹配类型，all：所有文件，catalog：目录。
 
@@ -146,7 +146,7 @@ class RequestLimitRules:
 
     @property
     def match_value(self):
-        """Gets the match_value of this RequestLimitRules.
+        r"""Gets the match_value of this RequestLimitRules.
 
         匹配类型值。 当match_type为all时传空值，例如：\"\"； 当match_type为catalog时传目录地址，以“/”作为首字符,例如：\"/test\"。  > 值为catalog的时候必填
 
@@ -157,7 +157,7 @@ class RequestLimitRules:
 
     @match_value.setter
     def match_value(self, match_value):
-        """Sets the match_value of this RequestLimitRules.
+        r"""Sets the match_value of this RequestLimitRules.
 
         匹配类型值。 当match_type为all时传空值，例如：\"\"； 当match_type为catalog时传目录地址，以“/”作为首字符,例如：\"/test\"。  > 值为catalog的时候必填
 
@@ -168,7 +168,7 @@ class RequestLimitRules:
 
     @property
     def type(self):
-        """Gets the type of this RequestLimitRules.
+        r"""Gets the type of this RequestLimitRules.
 
         限速方式，当前仅支持按流量大小限速，取值为size。
 
@@ -179,7 +179,7 @@ class RequestLimitRules:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RequestLimitRules.
+        r"""Sets the type of this RequestLimitRules.
 
         限速方式，当前仅支持按流量大小限速，取值为size。
 
@@ -190,7 +190,7 @@ class RequestLimitRules:
 
     @property
     def limit_rate_after(self):
-        """Gets the limit_rate_after of this RequestLimitRules.
+        r"""Gets the limit_rate_after of this RequestLimitRules.
 
         限速条件,type=size,limit_rate_after=50表示从传输表示传输50个字节后开始限速且限速值为limit_rate_value， 单位byte，取值范围：0-1073741824。
 
@@ -201,7 +201,7 @@ class RequestLimitRules:
 
     @limit_rate_after.setter
     def limit_rate_after(self, limit_rate_after):
-        """Sets the limit_rate_after of this RequestLimitRules.
+        r"""Sets the limit_rate_after of this RequestLimitRules.
 
         限速条件,type=size,limit_rate_after=50表示从传输表示传输50个字节后开始限速且限速值为limit_rate_value， 单位byte，取值范围：0-1073741824。
 
@@ -212,7 +212,7 @@ class RequestLimitRules:
 
     @property
     def limit_rate_value(self):
-        """Gets the limit_rate_value of this RequestLimitRules.
+        r"""Gets the limit_rate_value of this RequestLimitRules.
 
         限速值,单位Bps，取值范围 0-104857600。
 
@@ -223,7 +223,7 @@ class RequestLimitRules:
 
     @limit_rate_value.setter
     def limit_rate_value(self, limit_rate_value):
-        """Sets the limit_rate_value of this RequestLimitRules.
+        r"""Sets the limit_rate_value of this RequestLimitRules.
 
         限速值,单位Bps，取值范围 0-104857600。
 

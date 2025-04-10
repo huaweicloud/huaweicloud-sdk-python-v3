@@ -33,7 +33,7 @@ class ShowHttpIpGroupsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, page=None, pagesize=None, name=None, ip=None):
-        """ShowHttpIpGroupsRequest
+        r"""ShowHttpIpGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowHttpIpGroupsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowHttpIpGroupsRequest.
+        r"""Gets the enterprise_project_id of this ShowHttpIpGroupsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -82,7 +82,7 @@ class ShowHttpIpGroupsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowHttpIpGroupsRequest.
+        r"""Sets the enterprise_project_id of this ShowHttpIpGroupsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -93,7 +93,7 @@ class ShowHttpIpGroupsRequest:
 
     @property
     def page(self):
-        """Gets the page of this ShowHttpIpGroupsRequest.
+        r"""Gets the page of this ShowHttpIpGroupsRequest.
 
         分页查询参数，第page页
 
@@ -104,7 +104,7 @@ class ShowHttpIpGroupsRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowHttpIpGroupsRequest.
+        r"""Sets the page of this ShowHttpIpGroupsRequest.
 
         分页查询参数，第page页
 
@@ -115,7 +115,7 @@ class ShowHttpIpGroupsRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ShowHttpIpGroupsRequest.
+        r"""Gets the pagesize of this ShowHttpIpGroupsRequest.
 
         分页查询参数，每页显示pagesize条记录
 
@@ -126,7 +126,7 @@ class ShowHttpIpGroupsRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ShowHttpIpGroupsRequest.
+        r"""Sets the pagesize of this ShowHttpIpGroupsRequest.
 
         分页查询参数，每页显示pagesize条记录
 
@@ -137,7 +137,7 @@ class ShowHttpIpGroupsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowHttpIpGroupsRequest.
+        r"""Gets the name of this ShowHttpIpGroupsRequest.
 
         IP地址组名称
 
@@ -148,7 +148,7 @@ class ShowHttpIpGroupsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowHttpIpGroupsRequest.
+        r"""Sets the name of this ShowHttpIpGroupsRequest.
 
         IP地址组名称
 
@@ -159,7 +159,7 @@ class ShowHttpIpGroupsRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ShowHttpIpGroupsRequest.
+        r"""Gets the ip of this ShowHttpIpGroupsRequest.
 
         IP地址/地址段
 
@@ -170,7 +170,7 @@ class ShowHttpIpGroupsRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ShowHttpIpGroupsRequest.
+        r"""Sets the ip of this ShowHttpIpGroupsRequest.
 
         IP地址/地址段
 

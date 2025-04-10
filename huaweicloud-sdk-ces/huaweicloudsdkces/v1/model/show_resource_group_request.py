@@ -35,7 +35,7 @@ class ShowResourceGroupRequest:
     }
 
     def __init__(self, group_id=None, status=None, namespace=None, dname=None, start=None, limit=None):
-        """ShowResourceGroupRequest
+        r"""ShowResourceGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ShowResourceGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowResourceGroupRequest.
+        r"""Gets the group_id of this ShowResourceGroupRequest.
 
         资源分组ID。
 
@@ -88,7 +88,7 @@ class ShowResourceGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowResourceGroupRequest.
+        r"""Sets the group_id of this ShowResourceGroupRequest.
 
         资源分组ID。
 
@@ -99,7 +99,7 @@ class ShowResourceGroupRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowResourceGroupRequest.
+        r"""Gets the status of this ShowResourceGroupRequest.
 
         资源健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，
 
@@ -110,7 +110,7 @@ class ShowResourceGroupRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowResourceGroupRequest.
+        r"""Sets the status of this ShowResourceGroupRequest.
 
         资源健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，
 
@@ -121,7 +121,7 @@ class ShowResourceGroupRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ShowResourceGroupRequest.
+        r"""Gets the namespace of this ShowResourceGroupRequest.
 
         资源类型，即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -132,7 +132,7 @@ class ShowResourceGroupRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ShowResourceGroupRequest.
+        r"""Sets the namespace of this ShowResourceGroupRequest.
 
         资源类型，即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -143,7 +143,7 @@ class ShowResourceGroupRequest:
 
     @property
     def dname(self):
-        """Gets the dname of this ShowResourceGroupRequest.
+        r"""Gets the dname of this ShowResourceGroupRequest.
 
         资源维度，如：弹性云服务器，则维度为instance_id，各资源的监控维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -154,7 +154,7 @@ class ShowResourceGroupRequest:
 
     @dname.setter
     def dname(self, dname):
-        """Sets the dname of this ShowResourceGroupRequest.
+        r"""Sets the dname of this ShowResourceGroupRequest.
 
         资源维度，如：弹性云服务器，则维度为instance_id，各资源的监控维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -165,7 +165,7 @@ class ShowResourceGroupRequest:
 
     @property
     def start(self):
-        """Gets the start of this ShowResourceGroupRequest.
+        r"""Gets the start of this ShowResourceGroupRequest.
 
         分页起始值，类型为integer，默认值为0。
 
@@ -176,7 +176,7 @@ class ShowResourceGroupRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ShowResourceGroupRequest.
+        r"""Sets the start of this ShowResourceGroupRequest.
 
         分页起始值，类型为integer，默认值为0。
 
@@ -187,7 +187,7 @@ class ShowResourceGroupRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowResourceGroupRequest.
+        r"""Gets the limit of this ShowResourceGroupRequest.
 
         单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
 
@@ -198,7 +198,7 @@ class ShowResourceGroupRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowResourceGroupRequest.
+        r"""Sets the limit of this ShowResourceGroupRequest.
 
         单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
 

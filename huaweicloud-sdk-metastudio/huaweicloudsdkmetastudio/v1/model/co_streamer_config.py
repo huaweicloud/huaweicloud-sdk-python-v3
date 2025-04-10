@@ -27,7 +27,7 @@ class CoStreamerConfig:
     }
 
     def __init__(self, voice_config=None, streamer_action=None):
-        """CoStreamerConfig
+        r"""CoStreamerConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CoStreamerConfig:
 
     @property
     def voice_config(self):
-        """Gets the voice_config of this CoStreamerConfig.
+        r"""Gets the voice_config of this CoStreamerConfig.
 
         :return: The voice_config of this CoStreamerConfig.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -59,7 +59,7 @@ class CoStreamerConfig:
 
     @voice_config.setter
     def voice_config(self, voice_config):
-        """Sets the voice_config of this CoStreamerConfig.
+        r"""Sets the voice_config of this CoStreamerConfig.
 
         :param voice_config: The voice_config of this CoStreamerConfig.
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -68,7 +68,7 @@ class CoStreamerConfig:
 
     @property
     def streamer_action(self):
-        """Gets the streamer_action of this CoStreamerConfig.
+        r"""Gets the streamer_action of this CoStreamerConfig.
 
         **参数解释**： 助播出声时主播行为设置。 **约束限制**： 不涉及 **取值范围**： * SILENCE：静默 * VOLUME_DOWN：音量降低  **默认取值**： 不涉及。
 
@@ -79,7 +79,7 @@ class CoStreamerConfig:
 
     @streamer_action.setter
     def streamer_action(self, streamer_action):
-        """Sets the streamer_action of this CoStreamerConfig.
+        r"""Sets the streamer_action of this CoStreamerConfig.
 
         **参数解释**： 助播出声时主播行为设置。 **约束限制**： 不涉及 **取值范围**： * SILENCE：静默 * VOLUME_DOWN：音量降低  **默认取值**： 不涉及。
 

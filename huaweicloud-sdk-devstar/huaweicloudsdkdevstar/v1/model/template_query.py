@@ -57,7 +57,7 @@ class TemplateQuery:
     }
 
     def __init__(self, category=None, keyword=None, sort_key=None, sort_dir=None, label=None, my_templates=None, status=None, status_array=None, has_notices=None, productshorts=None, offset=None, limit=None, tag_ids=None, types=None, is_static=None, platform_source=None, tag_names=None):
-        """TemplateQuery
+        r"""TemplateQuery
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class TemplateQuery:
 
     @property
     def category(self):
-        """Gets the category of this TemplateQuery.
+        r"""Gets the category of this TemplateQuery.
 
         模板分类数组。
 
@@ -166,7 +166,7 @@ class TemplateQuery:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this TemplateQuery.
+        r"""Sets the category of this TemplateQuery.
 
         模板分类数组。
 
@@ -177,7 +177,7 @@ class TemplateQuery:
 
     @property
     def keyword(self):
-        """Gets the keyword of this TemplateQuery.
+        r"""Gets the keyword of this TemplateQuery.
 
         搜索关键字，支持按名称和描述搜索，默认null。
 
@@ -188,7 +188,7 @@ class TemplateQuery:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this TemplateQuery.
+        r"""Sets the keyword of this TemplateQuery.
 
         搜索关键字，支持按名称和描述搜索，默认null。
 
@@ -199,7 +199,7 @@ class TemplateQuery:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this TemplateQuery.
+        r"""Gets the sort_key of this TemplateQuery.
 
         排序字段。
 
@@ -210,7 +210,7 @@ class TemplateQuery:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this TemplateQuery.
+        r"""Sets the sort_key of this TemplateQuery.
 
         排序字段。
 
@@ -221,7 +221,7 @@ class TemplateQuery:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this TemplateQuery.
+        r"""Gets the sort_dir of this TemplateQuery.
 
         指定排序使用升序还是降序。 - asc 升序 - desc 降序 
 
@@ -232,7 +232,7 @@ class TemplateQuery:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this TemplateQuery.
+        r"""Sets the sort_dir of this TemplateQuery.
 
         指定排序使用升序还是降序。 - asc 升序 - desc 降序 
 
@@ -243,7 +243,7 @@ class TemplateQuery:
 
     @property
     def label(self):
-        """Gets the label of this TemplateQuery.
+        r"""Gets the label of this TemplateQuery.
 
         标签： - all：全部 - new：最新 - hot：热门 - recommend：推荐 
 
@@ -254,7 +254,7 @@ class TemplateQuery:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this TemplateQuery.
+        r"""Sets the label of this TemplateQuery.
 
         标签： - all：全部 - new：最新 - hot：热门 - recommend：推荐 
 
@@ -265,7 +265,7 @@ class TemplateQuery:
 
     @property
     def my_templates(self):
-        """Gets the my_templates of this TemplateQuery.
+        r"""Gets the my_templates of this TemplateQuery.
 
         是否查询用户自己创建的模板，默认查所有模板。
 
@@ -276,7 +276,7 @@ class TemplateQuery:
 
     @my_templates.setter
     def my_templates(self, my_templates):
-        """Sets the my_templates of this TemplateQuery.
+        r"""Sets the my_templates of this TemplateQuery.
 
         是否查询用户自己创建的模板，默认查所有模板。
 
@@ -287,7 +287,7 @@ class TemplateQuery:
 
     @property
     def status(self):
-        """Gets the status of this TemplateQuery.
+        r"""Gets the status of this TemplateQuery.
 
         查所有模板时只处理上架的；查用户模板，需支持按状态查询，状态： - 0：审核中 - 1：上架 - 2：下架 不传表示查所有的（默认） 
 
@@ -298,7 +298,7 @@ class TemplateQuery:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TemplateQuery.
+        r"""Sets the status of this TemplateQuery.
 
         查所有模板时只处理上架的；查用户模板，需支持按状态查询，状态： - 0：审核中 - 1：上架 - 2：下架 不传表示查所有的（默认） 
 
@@ -309,7 +309,7 @@ class TemplateQuery:
 
     @property
     def status_array(self):
-        """Gets the status_array of this TemplateQuery.
+        r"""Gets the status_array of this TemplateQuery.
 
         模板状态数组。
 
@@ -320,7 +320,7 @@ class TemplateQuery:
 
     @status_array.setter
     def status_array(self, status_array):
-        """Sets the status_array of this TemplateQuery.
+        r"""Sets the status_array of this TemplateQuery.
 
         模板状态数组。
 
@@ -331,7 +331,7 @@ class TemplateQuery:
 
     @property
     def has_notices(self):
-        """Gets the has_notices of this TemplateQuery.
+        r"""Gets the has_notices of this TemplateQuery.
 
         是否查询有消息的模板，默认查所有模板。
 
@@ -342,7 +342,7 @@ class TemplateQuery:
 
     @has_notices.setter
     def has_notices(self, has_notices):
-        """Sets the has_notices of this TemplateQuery.
+        r"""Sets the has_notices of this TemplateQuery.
 
         是否查询有消息的模板，默认查所有模板。
 
@@ -353,7 +353,7 @@ class TemplateQuery:
 
     @property
     def productshorts(self):
-        """Gets the productshorts of this TemplateQuery.
+        r"""Gets the productshorts of this TemplateQuery.
 
         模板关联的云产品(产品短名)列表。
 
@@ -364,7 +364,7 @@ class TemplateQuery:
 
     @productshorts.setter
     def productshorts(self, productshorts):
-        """Sets the productshorts of this TemplateQuery.
+        r"""Sets the productshorts of this TemplateQuery.
 
         模板关联的云产品(产品短名)列表。
 
@@ -375,7 +375,7 @@ class TemplateQuery:
 
     @property
     def offset(self):
-        """Gets the offset of this TemplateQuery.
+        r"""Gets the offset of this TemplateQuery.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -386,7 +386,7 @@ class TemplateQuery:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this TemplateQuery.
+        r"""Sets the offset of this TemplateQuery.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -397,7 +397,7 @@ class TemplateQuery:
 
     @property
     def limit(self):
-        """Gets the limit of this TemplateQuery.
+        r"""Gets the limit of this TemplateQuery.
 
         每页的模板条数。
 
@@ -408,7 +408,7 @@ class TemplateQuery:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this TemplateQuery.
+        r"""Sets the limit of this TemplateQuery.
 
         每页的模板条数。
 
@@ -419,7 +419,7 @@ class TemplateQuery:
 
     @property
     def tag_ids(self):
-        """Gets the tag_ids of this TemplateQuery.
+        r"""Gets the tag_ids of this TemplateQuery.
 
         模板关联的自定义标签列表。
 
@@ -430,7 +430,7 @@ class TemplateQuery:
 
     @tag_ids.setter
     def tag_ids(self, tag_ids):
-        """Sets the tag_ids of this TemplateQuery.
+        r"""Sets the tag_ids of this TemplateQuery.
 
         模板关联的自定义标签列表。
 
@@ -441,7 +441,7 @@ class TemplateQuery:
 
     @property
     def types(self):
-        """Gets the types of this TemplateQuery.
+        r"""Gets the types of this TemplateQuery.
 
         模板类型： - 0：doc - 1：code - 2：pipeline - 3：devops 
 
@@ -452,7 +452,7 @@ class TemplateQuery:
 
     @types.setter
     def types(self, types):
-        """Sets the types of this TemplateQuery.
+        r"""Sets the types of this TemplateQuery.
 
         模板类型： - 0：doc - 1：code - 2：pipeline - 3：devops 
 
@@ -463,7 +463,7 @@ class TemplateQuery:
 
     @property
     def is_static(self):
-        """Gets the is_static of this TemplateQuery.
+        r"""Gets the is_static of this TemplateQuery.
 
         动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
 
@@ -474,7 +474,7 @@ class TemplateQuery:
 
     @is_static.setter
     def is_static(self, is_static):
-        """Sets the is_static of this TemplateQuery.
+        r"""Sets the is_static of this TemplateQuery.
 
         动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
 
@@ -485,7 +485,7 @@ class TemplateQuery:
 
     @property
     def platform_source(self):
-        """Gets the platform_source of this TemplateQuery.
+        r"""Gets the platform_source of this TemplateQuery.
 
         平台来源： - 0：codelabs - 1：devstar 
 
@@ -496,7 +496,7 @@ class TemplateQuery:
 
     @platform_source.setter
     def platform_source(self, platform_source):
-        """Sets the platform_source of this TemplateQuery.
+        r"""Sets the platform_source of this TemplateQuery.
 
         平台来源： - 0：codelabs - 1：devstar 
 
@@ -507,7 +507,7 @@ class TemplateQuery:
 
     @property
     def tag_names(self):
-        """Gets the tag_names of this TemplateQuery.
+        r"""Gets the tag_names of this TemplateQuery.
 
         模板关联的标签名称列表。
 
@@ -518,7 +518,7 @@ class TemplateQuery:
 
     @tag_names.setter
     def tag_names(self, tag_names):
-        """Sets the tag_names of this TemplateQuery.
+        r"""Sets the tag_names of this TemplateQuery.
 
         模板关联的标签名称列表。
 

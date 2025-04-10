@@ -25,7 +25,7 @@ class RunDependencyParserRequest:
     }
 
     def __init__(self, body=None):
-        """RunDependencyParserRequest
+        r"""RunDependencyParserRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunDependencyParserRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunDependencyParserRequest.
+        r"""Gets the body of this RunDependencyParserRequest.
 
         :return: The body of this RunDependencyParserRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.DependencyParserRequest`
@@ -52,7 +52,7 @@ class RunDependencyParserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunDependencyParserRequest.
+        r"""Sets the body of this RunDependencyParserRequest.
 
         :param body: The body of this RunDependencyParserRequest.
         :type body: :class:`huaweicloudsdknlp.v2.DependencyParserRequest`

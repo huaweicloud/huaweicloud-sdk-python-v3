@@ -37,7 +37,7 @@ class LdDatasourceCreate:
     }
 
     def __init__(self, name=None, type=None, description=None, url=None, user=None, password=None, remotepath=None):
-        """LdDatasourceCreate
+        r"""LdDatasourceCreate
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class LdDatasourceCreate:
 
     @property
     def name(self):
-        """Gets the name of this LdDatasourceCreate.
+        r"""Gets the name of this LdDatasourceCreate.
 
         数据源名称
 
@@ -96,7 +96,7 @@ class LdDatasourceCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LdDatasourceCreate.
+        r"""Sets the name of this LdDatasourceCreate.
 
         数据源名称
 
@@ -107,7 +107,7 @@ class LdDatasourceCreate:
 
     @property
     def type(self):
-        """Gets the type of this LdDatasourceCreate.
+        r"""Gets the type of this LdDatasourceCreate.
 
         数据源类型：  - oracle：oracle数据源类型  - mysql：mysql数据源类型  - mongodb：mongodb数据源类型  - redis：redis数据源类型  - postgresql：postgresql/opengauss数据源类型  - hive：hive数据源类型  - mssql：sqlserver数据源类型  - sqlserver：sqlserver数据源类型  - dws：dws数据源类型  - gauss100：gauss100数据源类型  - zenith：zenith数据源类型
 
@@ -118,7 +118,7 @@ class LdDatasourceCreate:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this LdDatasourceCreate.
+        r"""Sets the type of this LdDatasourceCreate.
 
         数据源类型：  - oracle：oracle数据源类型  - mysql：mysql数据源类型  - mongodb：mongodb数据源类型  - redis：redis数据源类型  - postgresql：postgresql/opengauss数据源类型  - hive：hive数据源类型  - mssql：sqlserver数据源类型  - sqlserver：sqlserver数据源类型  - dws：dws数据源类型  - gauss100：gauss100数据源类型  - zenith：zenith数据源类型
 
@@ -129,7 +129,7 @@ class LdDatasourceCreate:
 
     @property
     def description(self):
-        """Gets the description of this LdDatasourceCreate.
+        r"""Gets the description of this LdDatasourceCreate.
 
         数据源描述
 
@@ -140,7 +140,7 @@ class LdDatasourceCreate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this LdDatasourceCreate.
+        r"""Sets the description of this LdDatasourceCreate.
 
         数据源描述
 
@@ -151,7 +151,7 @@ class LdDatasourceCreate:
 
     @property
     def url(self):
-        """Gets the url of this LdDatasourceCreate.
+        r"""Gets the url of this LdDatasourceCreate.
 
         数据源连接字符串
 
@@ -162,7 +162,7 @@ class LdDatasourceCreate:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this LdDatasourceCreate.
+        r"""Sets the url of this LdDatasourceCreate.
 
         数据源连接字符串
 
@@ -173,7 +173,7 @@ class LdDatasourceCreate:
 
     @property
     def user(self):
-        """Gets the user of this LdDatasourceCreate.
+        r"""Gets the user of this LdDatasourceCreate.
 
         用户名
 
@@ -184,7 +184,7 @@ class LdDatasourceCreate:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this LdDatasourceCreate.
+        r"""Sets the user of this LdDatasourceCreate.
 
         用户名
 
@@ -195,7 +195,7 @@ class LdDatasourceCreate:
 
     @property
     def password(self):
-        """Gets the password of this LdDatasourceCreate.
+        r"""Gets the password of this LdDatasourceCreate.
 
         密码。  敏感信息不作为响应返回
 
@@ -206,7 +206,7 @@ class LdDatasourceCreate:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this LdDatasourceCreate.
+        r"""Sets the password of this LdDatasourceCreate.
 
         密码。  敏感信息不作为响应返回
 
@@ -217,7 +217,7 @@ class LdDatasourceCreate:
 
     @property
     def remotepath(self):
-        """Gets the remotepath of this LdDatasourceCreate.
+        r"""Gets the remotepath of this LdDatasourceCreate.
 
         ftp上传路径  预留字段，暂不支持。
 
@@ -228,7 +228,7 @@ class LdDatasourceCreate:
 
     @remotepath.setter
     def remotepath(self, remotepath):
-        """Sets the remotepath of this LdDatasourceCreate.
+        r"""Sets the remotepath of this LdDatasourceCreate.
 
         ftp上传路径  预留字段，暂不支持。
 

@@ -57,7 +57,7 @@ class PublicipPoolShowResp:
     }
 
     def __init__(self, id=None, name=None, status=None, type=None, description=None, project_id=None, size=None, used=None, created_at=None, updated_at=None, billing_info=None, public_border_group=None, shared=None, is_common=None, tags=None, enterprise_project_id=None, allow_share_bandwidth_types=None):
-        """PublicipPoolShowResp
+        r"""PublicipPoolShowResp
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class PublicipPoolShowResp:
 
     @property
     def id(self):
-        """Gets the id of this PublicipPoolShowResp.
+        r"""Gets the id of this PublicipPoolShowResp.
 
         公网IP池id
 
@@ -166,7 +166,7 @@ class PublicipPoolShowResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublicipPoolShowResp.
+        r"""Sets the id of this PublicipPoolShowResp.
 
         公网IP池id
 
@@ -177,7 +177,7 @@ class PublicipPoolShowResp:
 
     @property
     def name(self):
-        """Gets the name of this PublicipPoolShowResp.
+        r"""Gets the name of this PublicipPoolShowResp.
 
         公网IP池名字
 
@@ -188,7 +188,7 @@ class PublicipPoolShowResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PublicipPoolShowResp.
+        r"""Sets the name of this PublicipPoolShowResp.
 
         公网IP池名字
 
@@ -199,7 +199,7 @@ class PublicipPoolShowResp:
 
     @property
     def status(self):
-        """Gets the status of this PublicipPoolShowResp.
+        r"""Gets the status of this PublicipPoolShowResp.
 
         状态
 
@@ -210,7 +210,7 @@ class PublicipPoolShowResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PublicipPoolShowResp.
+        r"""Sets the status of this PublicipPoolShowResp.
 
         状态
 
@@ -221,7 +221,7 @@ class PublicipPoolShowResp:
 
     @property
     def type(self):
-        """Gets the type of this PublicipPoolShowResp.
+        r"""Gets the type of this PublicipPoolShowResp.
 
         取值, spec_bgp(专属离散动态), spec_sbgp(专属离散静态)
 
@@ -232,7 +232,7 @@ class PublicipPoolShowResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PublicipPoolShowResp.
+        r"""Sets the type of this PublicipPoolShowResp.
 
         取值, spec_bgp(专属离散动态), spec_sbgp(专属离散静态)
 
@@ -243,7 +243,7 @@ class PublicipPoolShowResp:
 
     @property
     def description(self):
-        """Gets the description of this PublicipPoolShowResp.
+        r"""Gets the description of this PublicipPoolShowResp.
 
         描述
 
@@ -254,7 +254,7 @@ class PublicipPoolShowResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PublicipPoolShowResp.
+        r"""Sets the description of this PublicipPoolShowResp.
 
         描述
 
@@ -265,7 +265,7 @@ class PublicipPoolShowResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PublicipPoolShowResp.
+        r"""Gets the project_id of this PublicipPoolShowResp.
 
         租户id
 
@@ -276,7 +276,7 @@ class PublicipPoolShowResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PublicipPoolShowResp.
+        r"""Sets the project_id of this PublicipPoolShowResp.
 
         租户id
 
@@ -287,7 +287,7 @@ class PublicipPoolShowResp:
 
     @property
     def size(self):
-        """Gets the size of this PublicipPoolShowResp.
+        r"""Gets the size of this PublicipPoolShowResp.
 
         池子大小
 
@@ -298,7 +298,7 @@ class PublicipPoolShowResp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this PublicipPoolShowResp.
+        r"""Sets the size of this PublicipPoolShowResp.
 
         池子大小
 
@@ -309,7 +309,7 @@ class PublicipPoolShowResp:
 
     @property
     def used(self):
-        """Gets the used of this PublicipPoolShowResp.
+        r"""Gets the used of this PublicipPoolShowResp.
 
         已经使用的ip数量
 
@@ -320,7 +320,7 @@ class PublicipPoolShowResp:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this PublicipPoolShowResp.
+        r"""Sets the used of this PublicipPoolShowResp.
 
         已经使用的ip数量
 
@@ -331,7 +331,7 @@ class PublicipPoolShowResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this PublicipPoolShowResp.
+        r"""Gets the created_at of this PublicipPoolShowResp.
 
         公网IP池创建时间
 
@@ -342,7 +342,7 @@ class PublicipPoolShowResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PublicipPoolShowResp.
+        r"""Sets the created_at of this PublicipPoolShowResp.
 
         公网IP池创建时间
 
@@ -353,7 +353,7 @@ class PublicipPoolShowResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this PublicipPoolShowResp.
+        r"""Gets the updated_at of this PublicipPoolShowResp.
 
         公网IP池更新时间
 
@@ -364,7 +364,7 @@ class PublicipPoolShowResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this PublicipPoolShowResp.
+        r"""Sets the updated_at of this PublicipPoolShowResp.
 
         公网IP池更新时间
 
@@ -375,7 +375,7 @@ class PublicipPoolShowResp:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this PublicipPoolShowResp.
+        r"""Gets the billing_info of this PublicipPoolShowResp.
 
         :return: The billing_info of this PublicipPoolShowResp.
         :rtype: :class:`huaweicloudsdkeip.v3.BillingInfoDict`
@@ -384,7 +384,7 @@ class PublicipPoolShowResp:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this PublicipPoolShowResp.
+        r"""Sets the billing_info of this PublicipPoolShowResp.
 
         :param billing_info: The billing_info of this PublicipPoolShowResp.
         :type billing_info: :class:`huaweicloudsdkeip.v3.BillingInfoDict`
@@ -393,7 +393,7 @@ class PublicipPoolShowResp:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this PublicipPoolShowResp.
+        r"""Gets the public_border_group of this PublicipPoolShowResp.
 
         功能说明：中心还是边缘。公网IP池取值为center
 
@@ -404,7 +404,7 @@ class PublicipPoolShowResp:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this PublicipPoolShowResp.
+        r"""Sets the public_border_group of this PublicipPoolShowResp.
 
         功能说明：中心还是边缘。公网IP池取值为center
 
@@ -415,7 +415,7 @@ class PublicipPoolShowResp:
 
     @property
     def shared(self):
-        """Gets the shared of this PublicipPoolShowResp.
+        r"""Gets the shared of this PublicipPoolShowResp.
 
         功能说明：是否共享
 
@@ -426,7 +426,7 @@ class PublicipPoolShowResp:
 
     @shared.setter
     def shared(self, shared):
-        """Sets the shared of this PublicipPoolShowResp.
+        r"""Sets the shared of this PublicipPoolShowResp.
 
         功能说明：是否共享
 
@@ -437,7 +437,7 @@ class PublicipPoolShowResp:
 
     @property
     def is_common(self):
-        """Gets the is_common of this PublicipPoolShowResp.
+        r"""Gets the is_common of this PublicipPoolShowResp.
 
         功能说明：是否公共池
 
@@ -448,7 +448,7 @@ class PublicipPoolShowResp:
 
     @is_common.setter
     def is_common(self, is_common):
-        """Sets the is_common of this PublicipPoolShowResp.
+        r"""Sets the is_common of this PublicipPoolShowResp.
 
         功能说明：是否公共池
 
@@ -459,7 +459,7 @@ class PublicipPoolShowResp:
 
     @property
     def tags(self):
-        """Gets the tags of this PublicipPoolShowResp.
+        r"""Gets the tags of this PublicipPoolShowResp.
 
         默认不显示。用户标签
 
@@ -470,7 +470,7 @@ class PublicipPoolShowResp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this PublicipPoolShowResp.
+        r"""Sets the tags of this PublicipPoolShowResp.
 
         默认不显示。用户标签
 
@@ -481,7 +481,7 @@ class PublicipPoolShowResp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PublicipPoolShowResp.
+        r"""Gets the enterprise_project_id of this PublicipPoolShowResp.
 
         功能说明：企业项目ID。最大长度36字节,带“-”连字符的UUID格式,或者是字符串“0”。创建弹性公网IP时,给弹性公网IP绑定企业项目ID。
 
@@ -492,7 +492,7 @@ class PublicipPoolShowResp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PublicipPoolShowResp.
+        r"""Sets the enterprise_project_id of this PublicipPoolShowResp.
 
         功能说明：企业项目ID。最大长度36字节,带“-”连字符的UUID格式,或者是字符串“0”。创建弹性公网IP时,给弹性公网IP绑定企业项目ID。
 
@@ -503,7 +503,7 @@ class PublicipPoolShowResp:
 
     @property
     def allow_share_bandwidth_types(self):
-        """Gets the allow_share_bandwidth_types of this PublicipPoolShowResp.
+        r"""Gets the allow_share_bandwidth_types of this PublicipPoolShowResp.
 
         功能说明：表示此publicip可以加入的共享带宽类型列表，如果为空列表，则表示该           publicip不能加入任何共享带宽 约束：publicip只能加入到有该带宽类型的共享带宽中
 
@@ -514,7 +514,7 @@ class PublicipPoolShowResp:
 
     @allow_share_bandwidth_types.setter
     def allow_share_bandwidth_types(self, allow_share_bandwidth_types):
-        """Sets the allow_share_bandwidth_types of this PublicipPoolShowResp.
+        r"""Sets the allow_share_bandwidth_types of this PublicipPoolShowResp.
 
         功能说明：表示此publicip可以加入的共享带宽类型列表，如果为空列表，则表示该           publicip不能加入任何共享带宽 约束：publicip只能加入到有该带宽类型的共享带宽中
 

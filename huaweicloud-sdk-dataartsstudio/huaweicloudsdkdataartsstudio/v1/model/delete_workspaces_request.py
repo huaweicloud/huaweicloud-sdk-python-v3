@@ -29,7 +29,7 @@ class DeleteWorkspacesRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, ids=None):
-        """DeleteWorkspacesRequest
+        r"""DeleteWorkspacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteWorkspacesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteWorkspacesRequest.
+        r"""Gets the workspace of this DeleteWorkspacesRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -66,7 +66,7 @@ class DeleteWorkspacesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteWorkspacesRequest.
+        r"""Sets the workspace of this DeleteWorkspacesRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -77,7 +77,7 @@ class DeleteWorkspacesRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this DeleteWorkspacesRequest.
+        r"""Gets the x_project_id of this DeleteWorkspacesRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -88,7 +88,7 @@ class DeleteWorkspacesRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this DeleteWorkspacesRequest.
+        r"""Sets the x_project_id of this DeleteWorkspacesRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -99,7 +99,7 @@ class DeleteWorkspacesRequest:
 
     @property
     def ids(self):
-        """Gets the ids of this DeleteWorkspacesRequest.
+        r"""Gets the ids of this DeleteWorkspacesRequest.
 
         实体ID数组，ID字符串。
 
@@ -110,7 +110,7 @@ class DeleteWorkspacesRequest:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this DeleteWorkspacesRequest.
+        r"""Sets the ids of this DeleteWorkspacesRequest.
 
         实体ID数组，ID字符串。
 

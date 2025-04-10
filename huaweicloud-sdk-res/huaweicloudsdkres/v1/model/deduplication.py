@@ -25,7 +25,7 @@ class Deduplication:
     }
 
     def __init__(self, attributes=None):
-        """Deduplication
+        r"""Deduplication
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Deduplication:
 
     @property
     def attributes(self):
-        """Gets the attributes of this Deduplication.
+        r"""Gets the attributes of this Deduplication.
 
         属性。
 
@@ -54,7 +54,7 @@ class Deduplication:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this Deduplication.
+        r"""Sets the attributes of this Deduplication.
 
         属性。
 

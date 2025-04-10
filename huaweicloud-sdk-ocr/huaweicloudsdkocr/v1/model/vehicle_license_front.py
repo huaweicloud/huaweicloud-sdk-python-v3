@@ -47,7 +47,7 @@ class VehicleLicenseFront:
     }
 
     def __init__(self, number=None, vehicle_type=None, name=None, address=None, use_character=None, model=None, vin=None, engine_no=None, register_date=None, issue_date=None, issuing_authority=None, text_location=None):
-        """VehicleLicenseFront
+        r"""VehicleLicenseFront
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class VehicleLicenseFront:
 
     @property
     def number(self):
-        """Gets the number of this VehicleLicenseFront.
+        r"""Gets the number of this VehicleLicenseFront.
 
         号牌号码。
 
@@ -131,7 +131,7 @@ class VehicleLicenseFront:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this VehicleLicenseFront.
+        r"""Sets the number of this VehicleLicenseFront.
 
         号牌号码。
 
@@ -142,7 +142,7 @@ class VehicleLicenseFront:
 
     @property
     def vehicle_type(self):
-        """Gets the vehicle_type of this VehicleLicenseFront.
+        r"""Gets the vehicle_type of this VehicleLicenseFront.
 
         车辆类型。
 
@@ -153,7 +153,7 @@ class VehicleLicenseFront:
 
     @vehicle_type.setter
     def vehicle_type(self, vehicle_type):
-        """Sets the vehicle_type of this VehicleLicenseFront.
+        r"""Sets the vehicle_type of this VehicleLicenseFront.
 
         车辆类型。
 
@@ -164,7 +164,7 @@ class VehicleLicenseFront:
 
     @property
     def name(self):
-        """Gets the name of this VehicleLicenseFront.
+        r"""Gets the name of this VehicleLicenseFront.
 
         所有人。
 
@@ -175,7 +175,7 @@ class VehicleLicenseFront:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VehicleLicenseFront.
+        r"""Sets the name of this VehicleLicenseFront.
 
         所有人。
 
@@ -186,7 +186,7 @@ class VehicleLicenseFront:
 
     @property
     def address(self):
-        """Gets the address of this VehicleLicenseFront.
+        r"""Gets the address of this VehicleLicenseFront.
 
         住址。
 
@@ -197,7 +197,7 @@ class VehicleLicenseFront:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this VehicleLicenseFront.
+        r"""Sets the address of this VehicleLicenseFront.
 
         住址。
 
@@ -208,7 +208,7 @@ class VehicleLicenseFront:
 
     @property
     def use_character(self):
-        """Gets the use_character of this VehicleLicenseFront.
+        r"""Gets the use_character of this VehicleLicenseFront.
 
         使用性质。
 
@@ -219,7 +219,7 @@ class VehicleLicenseFront:
 
     @use_character.setter
     def use_character(self, use_character):
-        """Sets the use_character of this VehicleLicenseFront.
+        r"""Sets the use_character of this VehicleLicenseFront.
 
         使用性质。
 
@@ -230,7 +230,7 @@ class VehicleLicenseFront:
 
     @property
     def model(self):
-        """Gets the model of this VehicleLicenseFront.
+        r"""Gets the model of this VehicleLicenseFront.
 
         品牌型号。
 
@@ -241,7 +241,7 @@ class VehicleLicenseFront:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this VehicleLicenseFront.
+        r"""Sets the model of this VehicleLicenseFront.
 
         品牌型号。
 
@@ -252,7 +252,7 @@ class VehicleLicenseFront:
 
     @property
     def vin(self):
-        """Gets the vin of this VehicleLicenseFront.
+        r"""Gets the vin of this VehicleLicenseFront.
 
         车辆识别代号。
 
@@ -263,7 +263,7 @@ class VehicleLicenseFront:
 
     @vin.setter
     def vin(self, vin):
-        """Sets the vin of this VehicleLicenseFront.
+        r"""Sets the vin of this VehicleLicenseFront.
 
         车辆识别代号。
 
@@ -274,7 +274,7 @@ class VehicleLicenseFront:
 
     @property
     def engine_no(self):
-        """Gets the engine_no of this VehicleLicenseFront.
+        r"""Gets the engine_no of this VehicleLicenseFront.
 
         发动机号码。
 
@@ -285,7 +285,7 @@ class VehicleLicenseFront:
 
     @engine_no.setter
     def engine_no(self, engine_no):
-        """Sets the engine_no of this VehicleLicenseFront.
+        r"""Sets the engine_no of this VehicleLicenseFront.
 
         发动机号码。
 
@@ -296,7 +296,7 @@ class VehicleLicenseFront:
 
     @property
     def register_date(self):
-        """Gets the register_date of this VehicleLicenseFront.
+        r"""Gets the register_date of this VehicleLicenseFront.
 
         注册日期。
 
@@ -307,7 +307,7 @@ class VehicleLicenseFront:
 
     @register_date.setter
     def register_date(self, register_date):
-        """Sets the register_date of this VehicleLicenseFront.
+        r"""Sets the register_date of this VehicleLicenseFront.
 
         注册日期。
 
@@ -318,7 +318,7 @@ class VehicleLicenseFront:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this VehicleLicenseFront.
+        r"""Gets the issue_date of this VehicleLicenseFront.
 
         发证日期。
 
@@ -329,7 +329,7 @@ class VehicleLicenseFront:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this VehicleLicenseFront.
+        r"""Sets the issue_date of this VehicleLicenseFront.
 
         发证日期。
 
@@ -340,7 +340,7 @@ class VehicleLicenseFront:
 
     @property
     def issuing_authority(self):
-        """Gets the issuing_authority of this VehicleLicenseFront.
+        r"""Gets the issuing_authority of this VehicleLicenseFront.
 
         发证机关。
 
@@ -351,7 +351,7 @@ class VehicleLicenseFront:
 
     @issuing_authority.setter
     def issuing_authority(self, issuing_authority):
-        """Sets the issuing_authority of this VehicleLicenseFront.
+        r"""Sets the issuing_authority of this VehicleLicenseFront.
 
         发证机关。
 
@@ -362,7 +362,7 @@ class VehicleLicenseFront:
 
     @property
     def text_location(self):
-        """Gets the text_location of this VehicleLicenseFront.
+        r"""Gets the text_location of this VehicleLicenseFront.
 
         文本框在原图位置。输出左上、右上、右下、左下四个点坐标。  当“return_text_location”设置为“true”时才返回。
 
@@ -373,7 +373,7 @@ class VehicleLicenseFront:
 
     @text_location.setter
     def text_location(self, text_location):
-        """Sets the text_location of this VehicleLicenseFront.
+        r"""Sets the text_location of this VehicleLicenseFront.
 
         文本框在原图位置。输出左上、右上、右下、左下四个点坐标。  当“return_text_location”设置为“true”时才返回。
 

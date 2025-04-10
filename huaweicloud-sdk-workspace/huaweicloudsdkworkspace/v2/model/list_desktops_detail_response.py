@@ -28,7 +28,7 @@ class ListDesktopsDetailResponse(SdkResponse):
     }
 
     def __init__(self, desktops=None, total_count=None):
-        """ListDesktopsDetailResponse
+        r"""ListDesktopsDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDesktopsDetailResponse(SdkResponse):
 
     @property
     def desktops(self):
-        """Gets the desktops of this ListDesktopsDetailResponse.
+        r"""Gets the desktops of this ListDesktopsDetailResponse.
 
         桌面详情列表。
 
@@ -62,7 +62,7 @@ class ListDesktopsDetailResponse(SdkResponse):
 
     @desktops.setter
     def desktops(self, desktops):
-        """Sets the desktops of this ListDesktopsDetailResponse.
+        r"""Sets the desktops of this ListDesktopsDetailResponse.
 
         桌面详情列表。
 
@@ -73,7 +73,7 @@ class ListDesktopsDetailResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDesktopsDetailResponse.
+        r"""Gets the total_count of this ListDesktopsDetailResponse.
 
         桌面总数。
 
@@ -84,7 +84,7 @@ class ListDesktopsDetailResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDesktopsDetailResponse.
+        r"""Sets the total_count of this ListDesktopsDetailResponse.
 
         桌面总数。
 

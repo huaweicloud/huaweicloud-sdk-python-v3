@@ -27,7 +27,7 @@ class FlowGraphResultEdges:
     }
 
     def __init__(self, _from=None, to=None):
-        """FlowGraphResultEdges
+        r"""FlowGraphResultEdges
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FlowGraphResultEdges:
 
     @property
     def _from(self):
-        """Gets the _from of this FlowGraphResultEdges.
+        r"""Gets the _from of this FlowGraphResultEdges.
 
         依赖子任务ID
 
@@ -61,7 +61,7 @@ class FlowGraphResultEdges:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this FlowGraphResultEdges.
+        r"""Sets the _from of this FlowGraphResultEdges.
 
         依赖子任务ID
 
@@ -72,7 +72,7 @@ class FlowGraphResultEdges:
 
     @property
     def to(self):
-        """Gets the to of this FlowGraphResultEdges.
+        r"""Gets the to of this FlowGraphResultEdges.
 
         被依赖的子任务ID
 
@@ -83,7 +83,7 @@ class FlowGraphResultEdges:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this FlowGraphResultEdges.
+        r"""Sets the to of this FlowGraphResultEdges.
 
         被依赖的子任务ID
 

@@ -26,7 +26,7 @@ class ConfirmRestoredDataResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ConfirmRestoredDataResponse
+        r"""ConfirmRestoredDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ConfirmRestoredDataResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ConfirmRestoredDataResponse.
+        r"""Gets the job_id of this ConfirmRestoredDataResponse.
 
         任务id,可以通过接口查询任务信息
 
@@ -55,7 +55,7 @@ class ConfirmRestoredDataResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ConfirmRestoredDataResponse.
+        r"""Sets the job_id of this ConfirmRestoredDataResponse.
 
         任务id,可以通过接口查询任务信息
 

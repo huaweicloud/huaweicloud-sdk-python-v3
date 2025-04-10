@@ -24,7 +24,7 @@ class StopSystemEventResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StopSystemEventResponse
+        r"""StopSystemEventResponse
 
         The model defined in huaweicloud sdk
 

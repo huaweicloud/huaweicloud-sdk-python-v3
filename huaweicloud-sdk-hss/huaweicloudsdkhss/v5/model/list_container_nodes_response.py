@@ -28,7 +28,7 @@ class ListContainerNodesResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        """ListContainerNodesResponse
+        r"""ListContainerNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListContainerNodesResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListContainerNodesResponse.
+        r"""Gets the total_num of this ListContainerNodesResponse.
 
         容器节点总数
 
@@ -62,7 +62,7 @@ class ListContainerNodesResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListContainerNodesResponse.
+        r"""Sets the total_num of this ListContainerNodesResponse.
 
         容器节点总数
 
@@ -73,7 +73,7 @@ class ListContainerNodesResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListContainerNodesResponse.
+        r"""Gets the data_list of this ListContainerNodesResponse.
 
         容器节点列表
 
@@ -84,7 +84,7 @@ class ListContainerNodesResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListContainerNodesResponse.
+        r"""Sets the data_list of this ListContainerNodesResponse.
 
         容器节点列表
 

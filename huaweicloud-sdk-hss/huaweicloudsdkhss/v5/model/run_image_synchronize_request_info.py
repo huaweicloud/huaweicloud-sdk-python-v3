@@ -25,7 +25,7 @@ class RunImageSynchronizeRequestInfo:
     }
 
     def __init__(self, image_type=None):
-        """RunImageSynchronizeRequestInfo
+        r"""RunImageSynchronizeRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RunImageSynchronizeRequestInfo:
 
     @property
     def image_type(self):
-        """Gets the image_type of this RunImageSynchronizeRequestInfo.
+        r"""Gets the image_type of this RunImageSynchronizeRequestInfo.
 
         镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
 
@@ -53,7 +53,7 @@ class RunImageSynchronizeRequestInfo:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this RunImageSynchronizeRequestInfo.
+        r"""Sets the image_type of this RunImageSynchronizeRequestInfo.
 
         镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
 

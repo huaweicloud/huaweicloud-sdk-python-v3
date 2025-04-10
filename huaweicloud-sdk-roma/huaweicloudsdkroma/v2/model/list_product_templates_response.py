@@ -30,7 +30,7 @@ class ListProductTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListProductTemplatesResponse
+        r"""ListProductTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListProductTemplatesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListProductTemplatesResponse.
+        r"""Gets the total of this ListProductTemplatesResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListProductTemplatesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListProductTemplatesResponse.
+        r"""Sets the total of this ListProductTemplatesResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListProductTemplatesResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListProductTemplatesResponse.
+        r"""Gets the size of this ListProductTemplatesResponse.
 
         本次返回数量
 
@@ -91,7 +91,7 @@ class ListProductTemplatesResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListProductTemplatesResponse.
+        r"""Sets the size of this ListProductTemplatesResponse.
 
         本次返回数量
 
@@ -102,7 +102,7 @@ class ListProductTemplatesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListProductTemplatesResponse.
+        r"""Gets the items of this ListProductTemplatesResponse.
 
         产品模板信息
 
@@ -113,7 +113,7 @@ class ListProductTemplatesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListProductTemplatesResponse.
+        r"""Sets the items of this ListProductTemplatesResponse.
 
         产品模板信息
 

@@ -29,7 +29,7 @@ class TestPlanDetailDesignStage:
     }
 
     def __init__(self, case_count=None, issue_count=None, issue_covered_count=None):
-        """TestPlanDetailDesignStage
+        r"""TestPlanDetailDesignStage
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TestPlanDetailDesignStage:
 
     @property
     def case_count(self):
-        """Gets the case_count of this TestPlanDetailDesignStage.
+        r"""Gets the case_count of this TestPlanDetailDesignStage.
 
         用例个数
 
@@ -68,7 +68,7 @@ class TestPlanDetailDesignStage:
 
     @case_count.setter
     def case_count(self, case_count):
-        """Sets the case_count of this TestPlanDetailDesignStage.
+        r"""Sets the case_count of this TestPlanDetailDesignStage.
 
         用例个数
 
@@ -79,7 +79,7 @@ class TestPlanDetailDesignStage:
 
     @property
     def issue_count(self):
-        """Gets the issue_count of this TestPlanDetailDesignStage.
+        r"""Gets the issue_count of this TestPlanDetailDesignStage.
 
         需求个数
 
@@ -90,7 +90,7 @@ class TestPlanDetailDesignStage:
 
     @issue_count.setter
     def issue_count(self, issue_count):
-        """Sets the issue_count of this TestPlanDetailDesignStage.
+        r"""Sets the issue_count of this TestPlanDetailDesignStage.
 
         需求个数
 
@@ -101,7 +101,7 @@ class TestPlanDetailDesignStage:
 
     @property
     def issue_covered_count(self):
-        """Gets the issue_covered_count of this TestPlanDetailDesignStage.
+        r"""Gets the issue_covered_count of this TestPlanDetailDesignStage.
 
         已被用例关联的需求个数
 
@@ -112,7 +112,7 @@ class TestPlanDetailDesignStage:
 
     @issue_covered_count.setter
     def issue_covered_count(self, issue_covered_count):
-        """Sets the issue_covered_count of this TestPlanDetailDesignStage.
+        r"""Sets the issue_covered_count of this TestPlanDetailDesignStage.
 
         已被用例关联的需求个数
 

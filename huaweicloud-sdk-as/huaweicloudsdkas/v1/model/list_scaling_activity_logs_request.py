@@ -33,7 +33,7 @@ class ListScalingActivityLogsRequest:
     }
 
     def __init__(self, scaling_group_id=None, start_time=None, end_time=None, start_number=None, limit=None):
-        """ListScalingActivityLogsRequest
+        r"""ListScalingActivityLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListScalingActivityLogsRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this ListScalingActivityLogsRequest.
+        r"""Gets the scaling_group_id of this ListScalingActivityLogsRequest.
 
         伸缩组ID。
 
@@ -81,7 +81,7 @@ class ListScalingActivityLogsRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this ListScalingActivityLogsRequest.
+        r"""Sets the scaling_group_id of this ListScalingActivityLogsRequest.
 
         伸缩组ID。
 
@@ -92,7 +92,7 @@ class ListScalingActivityLogsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListScalingActivityLogsRequest.
+        r"""Gets the start_time of this ListScalingActivityLogsRequest.
 
         查询的起始时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
@@ -103,7 +103,7 @@ class ListScalingActivityLogsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListScalingActivityLogsRequest.
+        r"""Sets the start_time of this ListScalingActivityLogsRequest.
 
         查询的起始时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
@@ -114,7 +114,7 @@ class ListScalingActivityLogsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListScalingActivityLogsRequest.
+        r"""Gets the end_time of this ListScalingActivityLogsRequest.
 
         查询的截止时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
@@ -125,7 +125,7 @@ class ListScalingActivityLogsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListScalingActivityLogsRequest.
+        r"""Sets the end_time of this ListScalingActivityLogsRequest.
 
         查询的截止时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
@@ -136,7 +136,7 @@ class ListScalingActivityLogsRequest:
 
     @property
     def start_number(self):
-        """Gets the start_number of this ListScalingActivityLogsRequest.
+        r"""Gets the start_number of this ListScalingActivityLogsRequest.
 
         查询的起始行号，默认为0。
 
@@ -147,7 +147,7 @@ class ListScalingActivityLogsRequest:
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this ListScalingActivityLogsRequest.
+        r"""Sets the start_number of this ListScalingActivityLogsRequest.
 
         查询的起始行号，默认为0。
 
@@ -158,7 +158,7 @@ class ListScalingActivityLogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScalingActivityLogsRequest.
+        r"""Gets the limit of this ListScalingActivityLogsRequest.
 
         查询记录数，默认20，最大100。
 
@@ -169,7 +169,7 @@ class ListScalingActivityLogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScalingActivityLogsRequest.
+        r"""Sets the limit of this ListScalingActivityLogsRequest.
 
         查询记录数，默认20，最大100。
 

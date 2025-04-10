@@ -31,7 +31,7 @@ class DeleteObjectsRequestBody:
     }
 
     def __init__(self, quiet=None, encoding_type=None, object=None):
-        """DeleteObjectsRequestBody
+        r"""DeleteObjectsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -59,7 +59,7 @@ class DeleteObjectsRequestBody:
 
     @property
     def quiet(self):
-        """Gets the quiet of this DeleteObjectsRequestBody.
+        r"""Gets the quiet of this DeleteObjectsRequestBody.
 
         Specifies the **quiet** mode that makes OBS only return the list of objects whose deletion failed. This field is valid when set to **true**, or OBS ignores it.
 
@@ -70,7 +70,7 @@ class DeleteObjectsRequestBody:
 
     @quiet.setter
     def quiet(self, quiet):
-        """Sets the quiet of this DeleteObjectsRequestBody.
+        r"""Sets the quiet of this DeleteObjectsRequestBody.
 
         Specifies the **quiet** mode that makes OBS only return the list of objects whose deletion failed. This field is valid when set to **true**, or OBS ignores it.
 
@@ -81,7 +81,7 @@ class DeleteObjectsRequestBody:
 
     @property
     def encoding_type(self):
-        """Gets the encoding_type of this DeleteObjectsRequestBody.
+        r"""Gets the encoding_type of this DeleteObjectsRequestBody.
 
         Specifies the encoding type of the object key to delete and that in the response. If an object key contains control characters that are not supported by XML 1.0 standards, you can set this element to specify how the object key is encoded.
 
@@ -92,7 +92,7 @@ class DeleteObjectsRequestBody:
 
     @encoding_type.setter
     def encoding_type(self, encoding_type):
-        """Sets the encoding_type of this DeleteObjectsRequestBody.
+        r"""Sets the encoding_type of this DeleteObjectsRequestBody.
 
         Specifies the encoding type of the object key to delete and that in the response. If an object key contains control characters that are not supported by XML 1.0 standards, you can set this element to specify how the object key is encoded.
 
@@ -103,7 +103,7 @@ class DeleteObjectsRequestBody:
 
     @property
     def object(self):
-        """Gets the object of this DeleteObjectsRequestBody.
+        r"""Gets the object of this DeleteObjectsRequestBody.
 
         :return: The object of this DeleteObjectsRequestBody.
         :rtype: list[:class:`huaweicloudsdkobs.v1.DeleteObject`]
@@ -112,7 +112,7 @@ class DeleteObjectsRequestBody:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this DeleteObjectsRequestBody.
+        r"""Sets the object of this DeleteObjectsRequestBody.
 
         :param object: The object of this DeleteObjectsRequestBody.
         :type object: list[:class:`huaweicloudsdkobs.v1.DeleteObject`]

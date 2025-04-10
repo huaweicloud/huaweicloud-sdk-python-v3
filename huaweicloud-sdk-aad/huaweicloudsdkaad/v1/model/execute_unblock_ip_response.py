@@ -28,7 +28,7 @@ class ExecuteUnblockIpResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, message=None):
-        """ExecuteUnblockIpResponse
+        r"""ExecuteUnblockIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExecuteUnblockIpResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ExecuteUnblockIpResponse.
+        r"""Gets the error_code of this ExecuteUnblockIpResponse.
 
         业务错误码
 
@@ -62,7 +62,7 @@ class ExecuteUnblockIpResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ExecuteUnblockIpResponse.
+        r"""Sets the error_code of this ExecuteUnblockIpResponse.
 
         业务错误码
 
@@ -73,7 +73,7 @@ class ExecuteUnblockIpResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ExecuteUnblockIpResponse.
+        r"""Gets the message of this ExecuteUnblockIpResponse.
 
         描述信息
 
@@ -84,7 +84,7 @@ class ExecuteUnblockIpResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ExecuteUnblockIpResponse.
+        r"""Sets the message of this ExecuteUnblockIpResponse.
 
         描述信息
 

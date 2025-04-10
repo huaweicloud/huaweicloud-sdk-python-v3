@@ -31,7 +31,7 @@ class AllowClientRecordRequest:
     }
 
     def __init__(self, conference_id=None, x_conference_authorization=None, participant_id=None, body=None):
-        """AllowClientRecordRequest
+        r"""AllowClientRecordRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class AllowClientRecordRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this AllowClientRecordRequest.
+        r"""Gets the conference_id of this AllowClientRecordRequest.
 
         会议ID。
 
@@ -72,7 +72,7 @@ class AllowClientRecordRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this AllowClientRecordRequest.
+        r"""Sets the conference_id of this AllowClientRecordRequest.
 
         会议ID。
 
@@ -83,7 +83,7 @@ class AllowClientRecordRequest:
 
     @property
     def x_conference_authorization(self):
-        """Gets the x_conference_authorization of this AllowClientRecordRequest.
+        r"""Gets the x_conference_authorization of this AllowClientRecordRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -94,7 +94,7 @@ class AllowClientRecordRequest:
 
     @x_conference_authorization.setter
     def x_conference_authorization(self, x_conference_authorization):
-        """Sets the x_conference_authorization of this AllowClientRecordRequest.
+        r"""Sets the x_conference_authorization of this AllowClientRecordRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -105,7 +105,7 @@ class AllowClientRecordRequest:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this AllowClientRecordRequest.
+        r"""Gets the participant_id of this AllowClientRecordRequest.
 
         与会者标识。
 
@@ -116,7 +116,7 @@ class AllowClientRecordRequest:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this AllowClientRecordRequest.
+        r"""Sets the participant_id of this AllowClientRecordRequest.
 
         与会者标识。
 
@@ -127,7 +127,7 @@ class AllowClientRecordRequest:
 
     @property
     def body(self):
-        """Gets the body of this AllowClientRecordRequest.
+        r"""Gets the body of this AllowClientRecordRequest.
 
         :return: The body of this AllowClientRecordRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestAllowClientRecordReqBody`
@@ -136,7 +136,7 @@ class AllowClientRecordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AllowClientRecordRequest.
+        r"""Sets the body of this AllowClientRecordRequest.
 
         :param body: The body of this AllowClientRecordRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestAllowClientRecordReqBody`

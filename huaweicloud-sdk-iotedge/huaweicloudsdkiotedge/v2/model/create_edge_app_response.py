@@ -44,7 +44,7 @@ class CreateEdgeAppResponse(SdkResponse):
     }
 
     def __init__(self, edge_app_id=None, description=None, create_time=None, update_time=None, last_published_version=None, app_type=None, function_type=None, deploy_type=None, protocol=None, edge_app_name=None):
-        """CreateEdgeAppResponse
+        r"""CreateEdgeAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this CreateEdgeAppResponse.
+        r"""Gets the edge_app_id of this CreateEdgeAppResponse.
 
         应用id
 
@@ -118,7 +118,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this CreateEdgeAppResponse.
+        r"""Sets the edge_app_id of this CreateEdgeAppResponse.
 
         应用id
 
@@ -129,7 +129,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateEdgeAppResponse.
+        r"""Gets the description of this CreateEdgeAppResponse.
 
         应用描述
 
@@ -140,7 +140,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateEdgeAppResponse.
+        r"""Sets the description of this CreateEdgeAppResponse.
 
         应用描述
 
@@ -151,7 +151,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateEdgeAppResponse.
+        r"""Gets the create_time of this CreateEdgeAppResponse.
 
         创建时间
 
@@ -162,7 +162,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateEdgeAppResponse.
+        r"""Sets the create_time of this CreateEdgeAppResponse.
 
         创建时间
 
@@ -173,7 +173,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateEdgeAppResponse.
+        r"""Gets the update_time of this CreateEdgeAppResponse.
 
         最后一次修改时间
 
@@ -184,7 +184,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateEdgeAppResponse.
+        r"""Sets the update_time of this CreateEdgeAppResponse.
 
         最后一次修改时间
 
@@ -195,7 +195,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @property
     def last_published_version(self):
-        """Gets the last_published_version of this CreateEdgeAppResponse.
+        r"""Gets the last_published_version of this CreateEdgeAppResponse.
 
         最新发布版本
 
@@ -206,7 +206,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @last_published_version.setter
     def last_published_version(self, last_published_version):
-        """Sets the last_published_version of this CreateEdgeAppResponse.
+        r"""Sets the last_published_version of this CreateEdgeAppResponse.
 
         最新发布版本
 
@@ -217,7 +217,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @property
     def app_type(self):
-        """Gets the app_type of this CreateEdgeAppResponse.
+        r"""Gets the app_type of this CreateEdgeAppResponse.
 
         应用类型SYSTEM_REQUIRED|SYSTEM_OPTIONAL|USER
 
@@ -228,7 +228,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this CreateEdgeAppResponse.
+        r"""Sets the app_type of this CreateEdgeAppResponse.
 
         应用类型SYSTEM_REQUIRED|SYSTEM_OPTIONAL|USER
 
@@ -239,7 +239,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @property
     def function_type(self):
-        """Gets the function_type of this CreateEdgeAppResponse.
+        r"""Gets the function_type of this CreateEdgeAppResponse.
 
         应用类型DATA_PROCESSING|PROTOCOL_PARSING
 
@@ -250,7 +250,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @function_type.setter
     def function_type(self, function_type):
-        """Sets the function_type of this CreateEdgeAppResponse.
+        r"""Sets the function_type of this CreateEdgeAppResponse.
 
         应用类型DATA_PROCESSING|PROTOCOL_PARSING
 
@@ -261,7 +261,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this CreateEdgeAppResponse.
+        r"""Gets the deploy_type of this CreateEdgeAppResponse.
 
         部署类型docker|process
 
@@ -272,7 +272,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this CreateEdgeAppResponse.
+        r"""Sets the deploy_type of this CreateEdgeAppResponse.
 
         部署类型docker|process
 
@@ -283,7 +283,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreateEdgeAppResponse.
+        r"""Gets the protocol of this CreateEdgeAppResponse.
 
         驱动协议类型OPCUA|Modbus-TCP
 
@@ -294,7 +294,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreateEdgeAppResponse.
+        r"""Sets the protocol of this CreateEdgeAppResponse.
 
         驱动协议类型OPCUA|Modbus-TCP
 
@@ -305,7 +305,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @property
     def edge_app_name(self):
-        """Gets the edge_app_name of this CreateEdgeAppResponse.
+        r"""Gets the edge_app_name of this CreateEdgeAppResponse.
 
         应用名称
 
@@ -316,7 +316,7 @@ class CreateEdgeAppResponse(SdkResponse):
 
     @edge_app_name.setter
     def edge_app_name(self, edge_app_name):
-        """Sets the edge_app_name of this CreateEdgeAppResponse.
+        r"""Sets the edge_app_name of this CreateEdgeAppResponse.
 
         应用名称
 

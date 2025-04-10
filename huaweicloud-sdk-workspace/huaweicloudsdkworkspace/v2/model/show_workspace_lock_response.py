@@ -30,7 +30,7 @@ class ShowWorkspaceLockResponse(SdkResponse):
     }
 
     def __init__(self, is_lock=None, lock_time=None, lock_reason=None):
-        """ShowWorkspaceLockResponse
+        r"""ShowWorkspaceLockResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowWorkspaceLockResponse(SdkResponse):
 
     @property
     def is_lock(self):
-        """Gets the is_lock of this ShowWorkspaceLockResponse.
+        r"""Gets the is_lock of this ShowWorkspaceLockResponse.
 
         云办公服务是否被锁定，0代表未锁定，1代表锁定。
 
@@ -69,7 +69,7 @@ class ShowWorkspaceLockResponse(SdkResponse):
 
     @is_lock.setter
     def is_lock(self, is_lock):
-        """Sets the is_lock of this ShowWorkspaceLockResponse.
+        r"""Sets the is_lock of this ShowWorkspaceLockResponse.
 
         云办公服务是否被锁定，0代表未锁定，1代表锁定。
 
@@ -80,7 +80,7 @@ class ShowWorkspaceLockResponse(SdkResponse):
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this ShowWorkspaceLockResponse.
+        r"""Gets the lock_time of this ShowWorkspaceLockResponse.
 
         云办公服务锁定时间，格式：yyyy-MM-dd HH:mm:ss，时区：UTC。
 
@@ -91,7 +91,7 @@ class ShowWorkspaceLockResponse(SdkResponse):
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this ShowWorkspaceLockResponse.
+        r"""Sets the lock_time of this ShowWorkspaceLockResponse.
 
         云办公服务锁定时间，格式：yyyy-MM-dd HH:mm:ss，时区：UTC。
 
@@ -102,7 +102,7 @@ class ShowWorkspaceLockResponse(SdkResponse):
 
     @property
     def lock_reason(self):
-        """Gets the lock_reason of this ShowWorkspaceLockResponse.
+        r"""Gets the lock_reason of this ShowWorkspaceLockResponse.
 
         云办公服务锁定原因。
 
@@ -113,7 +113,7 @@ class ShowWorkspaceLockResponse(SdkResponse):
 
     @lock_reason.setter
     def lock_reason(self, lock_reason):
-        """Sets the lock_reason of this ShowWorkspaceLockResponse.
+        r"""Sets the lock_reason of this ShowWorkspaceLockResponse.
 
         云办公服务锁定原因。
 

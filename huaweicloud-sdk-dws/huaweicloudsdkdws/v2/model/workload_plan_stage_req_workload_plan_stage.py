@@ -35,7 +35,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
     }
 
     def __init__(self, day=None, month=None, stage_name=None, start_time=None, end_time=None, queue_list=None):
-        """WorkloadPlanStageReqWorkloadPlanStage
+        r"""WorkloadPlanStageReqWorkloadPlanStage
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
 
     @property
     def day(self):
-        """Gets the day of this WorkloadPlanStageReqWorkloadPlanStage.
+        r"""Gets the day of this WorkloadPlanStageReqWorkloadPlanStage.
 
         日期
 
@@ -89,7 +89,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
 
     @day.setter
     def day(self, day):
-        """Sets the day of this WorkloadPlanStageReqWorkloadPlanStage.
+        r"""Sets the day of this WorkloadPlanStageReqWorkloadPlanStage.
 
         日期
 
@@ -100,7 +100,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
 
     @property
     def month(self):
-        """Gets the month of this WorkloadPlanStageReqWorkloadPlanStage.
+        r"""Gets the month of this WorkloadPlanStageReqWorkloadPlanStage.
 
         月份
 
@@ -111,7 +111,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
 
     @month.setter
     def month(self, month):
-        """Sets the month of this WorkloadPlanStageReqWorkloadPlanStage.
+        r"""Sets the month of this WorkloadPlanStageReqWorkloadPlanStage.
 
         月份
 
@@ -122,7 +122,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
 
     @property
     def stage_name(self):
-        """Gets the stage_name of this WorkloadPlanStageReqWorkloadPlanStage.
+        r"""Gets the stage_name of this WorkloadPlanStageReqWorkloadPlanStage.
 
         计划阶段
 
@@ -133,7 +133,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
 
     @stage_name.setter
     def stage_name(self, stage_name):
-        """Sets the stage_name of this WorkloadPlanStageReqWorkloadPlanStage.
+        r"""Sets the stage_name of this WorkloadPlanStageReqWorkloadPlanStage.
 
         计划阶段
 
@@ -144,7 +144,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
 
     @property
     def start_time(self):
-        """Gets the start_time of this WorkloadPlanStageReqWorkloadPlanStage.
+        r"""Gets the start_time of this WorkloadPlanStageReqWorkloadPlanStage.
 
         开始时间
 
@@ -155,7 +155,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this WorkloadPlanStageReqWorkloadPlanStage.
+        r"""Sets the start_time of this WorkloadPlanStageReqWorkloadPlanStage.
 
         开始时间
 
@@ -166,7 +166,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
 
     @property
     def end_time(self):
-        """Gets the end_time of this WorkloadPlanStageReqWorkloadPlanStage.
+        r"""Gets the end_time of this WorkloadPlanStageReqWorkloadPlanStage.
 
         结束时间
 
@@ -177,7 +177,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this WorkloadPlanStageReqWorkloadPlanStage.
+        r"""Sets the end_time of this WorkloadPlanStageReqWorkloadPlanStage.
 
         结束时间
 
@@ -188,7 +188,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
 
     @property
     def queue_list(self):
-        """Gets the queue_list of this WorkloadPlanStageReqWorkloadPlanStage.
+        r"""Gets the queue_list of this WorkloadPlanStageReqWorkloadPlanStage.
 
         资源队列
 
@@ -199,7 +199,7 @@ class WorkloadPlanStageReqWorkloadPlanStage:
 
     @queue_list.setter
     def queue_list(self, queue_list):
-        """Sets the queue_list of this WorkloadPlanStageReqWorkloadPlanStage.
+        r"""Sets the queue_list of this WorkloadPlanStageReqWorkloadPlanStage.
 
         资源队列
 

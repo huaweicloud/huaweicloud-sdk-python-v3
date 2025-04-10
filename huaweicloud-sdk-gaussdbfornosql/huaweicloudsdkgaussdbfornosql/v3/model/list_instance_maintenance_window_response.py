@@ -26,7 +26,7 @@ class ListInstanceMaintenanceWindowResponse(SdkResponse):
     }
 
     def __init__(self, maintenance_window=None):
-        """ListInstanceMaintenanceWindowResponse
+        r"""ListInstanceMaintenanceWindowResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListInstanceMaintenanceWindowResponse(SdkResponse):
 
     @property
     def maintenance_window(self):
-        """Gets the maintenance_window of this ListInstanceMaintenanceWindowResponse.
+        r"""Gets the maintenance_window of this ListInstanceMaintenanceWindowResponse.
 
         参数解释： 实例的可维护时间窗。
 
@@ -55,7 +55,7 @@ class ListInstanceMaintenanceWindowResponse(SdkResponse):
 
     @maintenance_window.setter
     def maintenance_window(self, maintenance_window):
-        """Sets the maintenance_window of this ListInstanceMaintenanceWindowResponse.
+        r"""Sets the maintenance_window of this ListInstanceMaintenanceWindowResponse.
 
         参数解释： 实例的可维护时间窗。
 

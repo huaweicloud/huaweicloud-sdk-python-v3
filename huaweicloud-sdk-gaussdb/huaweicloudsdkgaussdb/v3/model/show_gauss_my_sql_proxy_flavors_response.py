@@ -26,7 +26,7 @@ class ShowGaussMySqlProxyFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, proxy_flavor_groups=None):
-        """ShowGaussMySqlProxyFlavorsResponse
+        r"""ShowGaussMySqlProxyFlavorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowGaussMySqlProxyFlavorsResponse(SdkResponse):
 
     @property
     def proxy_flavor_groups(self):
-        """Gets the proxy_flavor_groups of this ShowGaussMySqlProxyFlavorsResponse.
+        r"""Gets the proxy_flavor_groups of this ShowGaussMySqlProxyFlavorsResponse.
 
         规格组信息。
 
@@ -55,7 +55,7 @@ class ShowGaussMySqlProxyFlavorsResponse(SdkResponse):
 
     @proxy_flavor_groups.setter
     def proxy_flavor_groups(self, proxy_flavor_groups):
-        """Sets the proxy_flavor_groups of this ShowGaussMySqlProxyFlavorsResponse.
+        r"""Sets the proxy_flavor_groups of this ShowGaussMySqlProxyFlavorsResponse.
 
         规格组信息。
 

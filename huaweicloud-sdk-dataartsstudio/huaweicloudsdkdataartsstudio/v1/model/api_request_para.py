@@ -29,7 +29,7 @@ class ApiRequestPara:
     }
 
     def __init__(self, name=None, mapping=None, condition=None):
-        """ApiRequestPara
+        r"""ApiRequestPara
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ApiRequestPara:
 
     @property
     def name(self):
-        """Gets the name of this ApiRequestPara.
+        r"""Gets the name of this ApiRequestPara.
 
         参数名称
 
@@ -68,7 +68,7 @@ class ApiRequestPara:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiRequestPara.
+        r"""Sets the name of this ApiRequestPara.
 
         参数名称
 
@@ -79,7 +79,7 @@ class ApiRequestPara:
 
     @property
     def mapping(self):
-        """Gets the mapping of this ApiRequestPara.
+        r"""Gets the mapping of this ApiRequestPara.
 
         映射字段
 
@@ -90,7 +90,7 @@ class ApiRequestPara:
 
     @mapping.setter
     def mapping(self, mapping):
-        """Sets the mapping of this ApiRequestPara.
+        r"""Sets the mapping of this ApiRequestPara.
 
         映射字段
 
@@ -101,7 +101,7 @@ class ApiRequestPara:
 
     @property
     def condition(self):
-        """Gets the condition of this ApiRequestPara.
+        r"""Gets the condition of this ApiRequestPara.
 
         操作符
 
@@ -112,7 +112,7 @@ class ApiRequestPara:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this ApiRequestPara.
+        r"""Sets the condition of this ApiRequestPara.
 
         操作符
 

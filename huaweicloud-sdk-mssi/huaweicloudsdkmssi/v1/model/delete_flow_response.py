@@ -30,7 +30,7 @@ class DeleteFlowResponse(SdkResponse):
     }
 
     def __init__(self, res_code=None, res_log=None, res_msg=None):
-        """DeleteFlowResponse
+        r"""DeleteFlowResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteFlowResponse(SdkResponse):
 
     @property
     def res_code(self):
-        """Gets the res_code of this DeleteFlowResponse.
+        r"""Gets the res_code of this DeleteFlowResponse.
 
         状态码
 
@@ -69,7 +69,7 @@ class DeleteFlowResponse(SdkResponse):
 
     @res_code.setter
     def res_code(self, res_code):
-        """Sets the res_code of this DeleteFlowResponse.
+        r"""Sets the res_code of this DeleteFlowResponse.
 
         状态码
 
@@ -80,7 +80,7 @@ class DeleteFlowResponse(SdkResponse):
 
     @property
     def res_log(self):
-        """Gets the res_log of this DeleteFlowResponse.
+        r"""Gets the res_log of this DeleteFlowResponse.
 
         成功信息
 
@@ -91,7 +91,7 @@ class DeleteFlowResponse(SdkResponse):
 
     @res_log.setter
     def res_log(self, res_log):
-        """Sets the res_log of this DeleteFlowResponse.
+        r"""Sets the res_log of this DeleteFlowResponse.
 
         成功信息
 
@@ -102,7 +102,7 @@ class DeleteFlowResponse(SdkResponse):
 
     @property
     def res_msg(self):
-        """Gets the res_msg of this DeleteFlowResponse.
+        r"""Gets the res_msg of this DeleteFlowResponse.
 
         成功信息
 
@@ -113,7 +113,7 @@ class DeleteFlowResponse(SdkResponse):
 
     @res_msg.setter
     def res_msg(self, res_msg):
-        """Sets the res_msg of this DeleteFlowResponse.
+        r"""Sets the res_msg of this DeleteFlowResponse.
 
         成功信息
 

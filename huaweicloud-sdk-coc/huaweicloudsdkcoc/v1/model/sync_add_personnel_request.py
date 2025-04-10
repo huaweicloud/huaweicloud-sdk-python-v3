@@ -25,7 +25,7 @@ class SyncAddPersonnelRequest:
     }
 
     def __init__(self, domain_id=None):
-        """SyncAddPersonnelRequest
+        r"""SyncAddPersonnelRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SyncAddPersonnelRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this SyncAddPersonnelRequest.
+        r"""Gets the domain_id of this SyncAddPersonnelRequest.
 
         租户Id
 
@@ -53,7 +53,7 @@ class SyncAddPersonnelRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this SyncAddPersonnelRequest.
+        r"""Sets the domain_id of this SyncAddPersonnelRequest.
 
         租户Id
 

@@ -29,7 +29,7 @@ class ClassificationResult:
     }
 
     def __init__(self, content=None, label=None, confidence=None):
-        """ClassificationResult
+        r"""ClassificationResult
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ClassificationResult:
 
     @property
     def content(self):
-        """Gets the content of this ClassificationResult.
+        r"""Gets the content of this ClassificationResult.
 
         待分析文本。
 
@@ -65,7 +65,7 @@ class ClassificationResult:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ClassificationResult.
+        r"""Sets the content of this ClassificationResult.
 
         待分析文本。
 
@@ -76,7 +76,7 @@ class ClassificationResult:
 
     @property
     def label(self):
-        """Gets the label of this ClassificationResult.
+        r"""Gets the label of this ClassificationResult.
 
         分类标签。 1：广告 0：非广告
 
@@ -87,7 +87,7 @@ class ClassificationResult:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this ClassificationResult.
+        r"""Sets the label of this ClassificationResult.
 
         分类标签。 1：广告 0：非广告
 
@@ -98,7 +98,7 @@ class ClassificationResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ClassificationResult.
+        r"""Gets the confidence of this ClassificationResult.
 
         标签label的置信度。
 
@@ -109,7 +109,7 @@ class ClassificationResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ClassificationResult.
+        r"""Sets the confidence of this ClassificationResult.
 
         标签label的置信度。
 

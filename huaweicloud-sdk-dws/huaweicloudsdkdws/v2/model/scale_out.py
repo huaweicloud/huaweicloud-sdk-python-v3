@@ -27,7 +27,7 @@ class ScaleOut:
     }
 
     def __init__(self, count=None, subnet_id=None):
-        """ScaleOut
+        r"""ScaleOut
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ScaleOut:
 
     @property
     def count(self):
-        """Gets the count of this ScaleOut.
+        r"""Gets the count of this ScaleOut.
 
         扩容节点数。
 
@@ -60,7 +60,7 @@ class ScaleOut:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ScaleOut.
+        r"""Sets the count of this ScaleOut.
 
         扩容节点数。
 
@@ -71,7 +71,7 @@ class ScaleOut:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ScaleOut.
+        r"""Gets the subnet_id of this ScaleOut.
 
         指定子网ID。
 
@@ -82,7 +82,7 @@ class ScaleOut:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ScaleOut.
+        r"""Sets the subnet_id of this ScaleOut.
 
         指定子网ID。
 

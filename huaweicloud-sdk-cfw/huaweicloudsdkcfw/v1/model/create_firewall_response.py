@@ -30,7 +30,7 @@ class CreateFirewallResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None, data=None):
-        """CreateFirewallResponse
+        r"""CreateFirewallResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateFirewallResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateFirewallResponse.
+        r"""Gets the job_id of this CreateFirewallResponse.
 
         实例创建的任务id。仅创建按需实例时会返回该参数。
 
@@ -69,7 +69,7 @@ class CreateFirewallResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateFirewallResponse.
+        r"""Sets the job_id of this CreateFirewallResponse.
 
         实例创建的任务id。仅创建按需实例时会返回该参数。
 
@@ -80,7 +80,7 @@ class CreateFirewallResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateFirewallResponse.
+        r"""Gets the order_id of this CreateFirewallResponse.
 
         订单号，创建包年包月时返回该参数。
 
@@ -91,7 +91,7 @@ class CreateFirewallResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateFirewallResponse.
+        r"""Sets the order_id of this CreateFirewallResponse.
 
         订单号，创建包年包月时返回该参数。
 
@@ -102,7 +102,7 @@ class CreateFirewallResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateFirewallResponse.
+        r"""Gets the data of this CreateFirewallResponse.
 
         :return: The data of this CreateFirewallResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.CreateFirewallReq`
@@ -111,7 +111,7 @@ class CreateFirewallResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateFirewallResponse.
+        r"""Sets the data of this CreateFirewallResponse.
 
         :param data: The data of this CreateFirewallResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.CreateFirewallReq`

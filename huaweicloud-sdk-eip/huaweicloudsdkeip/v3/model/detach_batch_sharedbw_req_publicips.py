@@ -27,7 +27,7 @@ class DetachBatchSharedbwReqPublicips:
     }
 
     def __init__(self, publicip_id=None, bandwidth=None):
-        """DetachBatchSharedbwReqPublicips
+        r"""DetachBatchSharedbwReqPublicips
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DetachBatchSharedbwReqPublicips:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this DetachBatchSharedbwReqPublicips.
+        r"""Gets the publicip_id of this DetachBatchSharedbwReqPublicips.
 
         - 功能说明：EIP ID
 
@@ -59,7 +59,7 @@ class DetachBatchSharedbwReqPublicips:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this DetachBatchSharedbwReqPublicips.
+        r"""Sets the publicip_id of this DetachBatchSharedbwReqPublicips.
 
         - 功能说明：EIP ID
 
@@ -70,7 +70,7 @@ class DetachBatchSharedbwReqPublicips:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this DetachBatchSharedbwReqPublicips.
+        r"""Gets the bandwidth of this DetachBatchSharedbwReqPublicips.
 
         :return: The bandwidth of this DetachBatchSharedbwReqPublicips.
         :rtype: :class:`huaweicloudsdkeip.v3.DetachSharedbwDict`
@@ -79,7 +79,7 @@ class DetachBatchSharedbwReqPublicips:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this DetachBatchSharedbwReqPublicips.
+        r"""Sets the bandwidth of this DetachBatchSharedbwReqPublicips.
 
         :param bandwidth: The bandwidth of this DetachBatchSharedbwReqPublicips.
         :type bandwidth: :class:`huaweicloudsdkeip.v3.DetachSharedbwDict`

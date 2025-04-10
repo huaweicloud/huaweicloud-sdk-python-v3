@@ -26,7 +26,7 @@ class BatchShowIpBelongsResponse(SdkResponse):
     }
 
     def __init__(self, cdn_ips=None):
-        """BatchShowIpBelongsResponse
+        r"""BatchShowIpBelongsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchShowIpBelongsResponse(SdkResponse):
 
     @property
     def cdn_ips(self):
-        """Gets the cdn_ips of this BatchShowIpBelongsResponse.
+        r"""Gets the cdn_ips of this BatchShowIpBelongsResponse.
 
         IP归属信息列表。
 
@@ -55,7 +55,7 @@ class BatchShowIpBelongsResponse(SdkResponse):
 
     @cdn_ips.setter
     def cdn_ips(self, cdn_ips):
-        """Sets the cdn_ips of this BatchShowIpBelongsResponse.
+        r"""Sets the cdn_ips of this BatchShowIpBelongsResponse.
 
         IP归属信息列表。
 

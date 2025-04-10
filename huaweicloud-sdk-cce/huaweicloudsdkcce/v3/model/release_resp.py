@@ -55,7 +55,7 @@ class ReleaseResp:
     }
 
     def __init__(self, chart_name=None, chart_public=None, chart_version=None, cluster_id=None, cluster_name=None, create_at=None, description=None, name=None, namespace=None, parameters=None, resources=None, status=None, status_description=None, update_at=None, values=None, version=None):
-        """ReleaseResp
+        r"""ReleaseResp
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class ReleaseResp:
 
     @property
     def chart_name(self):
-        """Gets the chart_name of this ReleaseResp.
+        r"""Gets the chart_name of this ReleaseResp.
 
         模板名称
 
@@ -159,7 +159,7 @@ class ReleaseResp:
 
     @chart_name.setter
     def chart_name(self, chart_name):
-        """Sets the chart_name of this ReleaseResp.
+        r"""Sets the chart_name of this ReleaseResp.
 
         模板名称
 
@@ -170,7 +170,7 @@ class ReleaseResp:
 
     @property
     def chart_public(self):
-        """Gets the chart_public of this ReleaseResp.
+        r"""Gets the chart_public of this ReleaseResp.
 
         是否公开模板
 
@@ -181,7 +181,7 @@ class ReleaseResp:
 
     @chart_public.setter
     def chart_public(self, chart_public):
-        """Sets the chart_public of this ReleaseResp.
+        r"""Sets the chart_public of this ReleaseResp.
 
         是否公开模板
 
@@ -192,7 +192,7 @@ class ReleaseResp:
 
     @property
     def chart_version(self):
-        """Gets the chart_version of this ReleaseResp.
+        r"""Gets the chart_version of this ReleaseResp.
 
         模板版本
 
@@ -203,7 +203,7 @@ class ReleaseResp:
 
     @chart_version.setter
     def chart_version(self, chart_version):
-        """Sets the chart_version of this ReleaseResp.
+        r"""Sets the chart_version of this ReleaseResp.
 
         模板版本
 
@@ -214,7 +214,7 @@ class ReleaseResp:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ReleaseResp.
+        r"""Gets the cluster_id of this ReleaseResp.
 
         集群ID
 
@@ -225,7 +225,7 @@ class ReleaseResp:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ReleaseResp.
+        r"""Sets the cluster_id of this ReleaseResp.
 
         集群ID
 
@@ -236,7 +236,7 @@ class ReleaseResp:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ReleaseResp.
+        r"""Gets the cluster_name of this ReleaseResp.
 
         集群名称
 
@@ -247,7 +247,7 @@ class ReleaseResp:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ReleaseResp.
+        r"""Sets the cluster_name of this ReleaseResp.
 
         集群名称
 
@@ -258,7 +258,7 @@ class ReleaseResp:
 
     @property
     def create_at(self):
-        """Gets the create_at of this ReleaseResp.
+        r"""Gets the create_at of this ReleaseResp.
 
         创建时间
 
@@ -269,7 +269,7 @@ class ReleaseResp:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this ReleaseResp.
+        r"""Sets the create_at of this ReleaseResp.
 
         创建时间
 
@@ -280,7 +280,7 @@ class ReleaseResp:
 
     @property
     def description(self):
-        """Gets the description of this ReleaseResp.
+        r"""Gets the description of this ReleaseResp.
 
         模板实例描述
 
@@ -291,7 +291,7 @@ class ReleaseResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ReleaseResp.
+        r"""Sets the description of this ReleaseResp.
 
         模板实例描述
 
@@ -302,7 +302,7 @@ class ReleaseResp:
 
     @property
     def name(self):
-        """Gets the name of this ReleaseResp.
+        r"""Gets the name of this ReleaseResp.
 
         模板实例名称
 
@@ -313,7 +313,7 @@ class ReleaseResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ReleaseResp.
+        r"""Sets the name of this ReleaseResp.
 
         模板实例名称
 
@@ -324,7 +324,7 @@ class ReleaseResp:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ReleaseResp.
+        r"""Gets the namespace of this ReleaseResp.
 
         模板实例所在的命名空间
 
@@ -335,7 +335,7 @@ class ReleaseResp:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ReleaseResp.
+        r"""Sets the namespace of this ReleaseResp.
 
         模板实例所在的命名空间
 
@@ -346,7 +346,7 @@ class ReleaseResp:
 
     @property
     def parameters(self):
-        """Gets the parameters of this ReleaseResp.
+        r"""Gets the parameters of this ReleaseResp.
 
         模板实例参数
 
@@ -357,7 +357,7 @@ class ReleaseResp:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ReleaseResp.
+        r"""Sets the parameters of this ReleaseResp.
 
         模板实例参数
 
@@ -368,7 +368,7 @@ class ReleaseResp:
 
     @property
     def resources(self):
-        """Gets the resources of this ReleaseResp.
+        r"""Gets the resources of this ReleaseResp.
 
         模板实例需要的资源
 
@@ -379,7 +379,7 @@ class ReleaseResp:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ReleaseResp.
+        r"""Sets the resources of this ReleaseResp.
 
         模板实例需要的资源
 
@@ -390,7 +390,7 @@ class ReleaseResp:
 
     @property
     def status(self):
-        """Gets the status of this ReleaseResp.
+        r"""Gets the status of this ReleaseResp.
 
         模板实例状态
 
@@ -401,7 +401,7 @@ class ReleaseResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ReleaseResp.
+        r"""Sets the status of this ReleaseResp.
 
         模板实例状态
 
@@ -412,7 +412,7 @@ class ReleaseResp:
 
     @property
     def status_description(self):
-        """Gets the status_description of this ReleaseResp.
+        r"""Gets the status_description of this ReleaseResp.
 
         模板实例状态描述
 
@@ -423,7 +423,7 @@ class ReleaseResp:
 
     @status_description.setter
     def status_description(self, status_description):
-        """Sets the status_description of this ReleaseResp.
+        r"""Sets the status_description of this ReleaseResp.
 
         模板实例状态描述
 
@@ -434,7 +434,7 @@ class ReleaseResp:
 
     @property
     def update_at(self):
-        """Gets the update_at of this ReleaseResp.
+        r"""Gets the update_at of this ReleaseResp.
 
         更新时间
 
@@ -445,7 +445,7 @@ class ReleaseResp:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this ReleaseResp.
+        r"""Sets the update_at of this ReleaseResp.
 
         更新时间
 
@@ -456,7 +456,7 @@ class ReleaseResp:
 
     @property
     def values(self):
-        """Gets the values of this ReleaseResp.
+        r"""Gets the values of this ReleaseResp.
 
         模板实例的值
 
@@ -467,7 +467,7 @@ class ReleaseResp:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ReleaseResp.
+        r"""Sets the values of this ReleaseResp.
 
         模板实例的值
 
@@ -478,7 +478,7 @@ class ReleaseResp:
 
     @property
     def version(self):
-        """Gets the version of this ReleaseResp.
+        r"""Gets the version of this ReleaseResp.
 
         模板实例版本
 
@@ -489,7 +489,7 @@ class ReleaseResp:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ReleaseResp.
+        r"""Sets the version of this ReleaseResp.
 
         模板实例版本
 

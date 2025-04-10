@@ -29,7 +29,7 @@ class EsHealthIpgroupResource:
     }
 
     def __init__(self, ipgroup_id=None, enable_ipgroup=None, type=None):
-        """EsHealthIpgroupResource
+        r"""EsHealthIpgroupResource
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EsHealthIpgroupResource:
 
     @property
     def ipgroup_id(self):
-        """Gets the ipgroup_id of this EsHealthIpgroupResource.
+        r"""Gets the ipgroup_id of this EsHealthIpgroupResource.
 
         监听器关联的访问控制组的id。
 
@@ -68,7 +68,7 @@ class EsHealthIpgroupResource:
 
     @ipgroup_id.setter
     def ipgroup_id(self, ipgroup_id):
-        """Sets the ipgroup_id of this EsHealthIpgroupResource.
+        r"""Sets the ipgroup_id of this EsHealthIpgroupResource.
 
         监听器关联的访问控制组的id。
 
@@ -79,7 +79,7 @@ class EsHealthIpgroupResource:
 
     @property
     def enable_ipgroup(self):
-        """Gets the enable_ipgroup of this EsHealthIpgroupResource.
+        r"""Gets the enable_ipgroup of this EsHealthIpgroupResource.
 
         访问控制组的状态。
 
@@ -90,7 +90,7 @@ class EsHealthIpgroupResource:
 
     @enable_ipgroup.setter
     def enable_ipgroup(self, enable_ipgroup):
-        """Sets the enable_ipgroup of this EsHealthIpgroupResource.
+        r"""Sets the enable_ipgroup of this EsHealthIpgroupResource.
 
         访问控制组的状态。
 
@@ -101,7 +101,7 @@ class EsHealthIpgroupResource:
 
     @property
     def type(self):
-        """Gets the type of this EsHealthIpgroupResource.
+        r"""Gets the type of this EsHealthIpgroupResource.
 
         访问控制组的类型。
 
@@ -112,7 +112,7 @@ class EsHealthIpgroupResource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EsHealthIpgroupResource.
+        r"""Sets the type of this EsHealthIpgroupResource.
 
         访问控制组的类型。
 

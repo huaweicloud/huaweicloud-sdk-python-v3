@@ -29,7 +29,7 @@ class EnvironmentResourceModify:
     }
 
     def __init__(self, add_base_resources=None, add_optional_resources=None, remove_resources=None):
-        """EnvironmentResourceModify
+        r"""EnvironmentResourceModify
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EnvironmentResourceModify:
 
     @property
     def add_base_resources(self):
-        """Gets the add_base_resources of this EnvironmentResourceModify.
+        r"""Gets the add_base_resources of this EnvironmentResourceModify.
 
         添加基础资源。
 
@@ -68,7 +68,7 @@ class EnvironmentResourceModify:
 
     @add_base_resources.setter
     def add_base_resources(self, add_base_resources):
-        """Sets the add_base_resources of this EnvironmentResourceModify.
+        r"""Sets the add_base_resources of this EnvironmentResourceModify.
 
         添加基础资源。
 
@@ -79,7 +79,7 @@ class EnvironmentResourceModify:
 
     @property
     def add_optional_resources(self):
-        """Gets the add_optional_resources of this EnvironmentResourceModify.
+        r"""Gets the add_optional_resources of this EnvironmentResourceModify.
 
         添加其他资源。
 
@@ -90,7 +90,7 @@ class EnvironmentResourceModify:
 
     @add_optional_resources.setter
     def add_optional_resources(self, add_optional_resources):
-        """Sets the add_optional_resources of this EnvironmentResourceModify.
+        r"""Sets the add_optional_resources of this EnvironmentResourceModify.
 
         添加其他资源。
 
@@ -101,7 +101,7 @@ class EnvironmentResourceModify:
 
     @property
     def remove_resources(self):
-        """Gets the remove_resources of this EnvironmentResourceModify.
+        r"""Gets the remove_resources of this EnvironmentResourceModify.
 
         移除资源。
 
@@ -112,7 +112,7 @@ class EnvironmentResourceModify:
 
     @remove_resources.setter
     def remove_resources(self, remove_resources):
-        """Sets the remove_resources of this EnvironmentResourceModify.
+        r"""Sets the remove_resources of this EnvironmentResourceModify.
 
         移除资源。
 

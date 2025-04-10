@@ -25,7 +25,7 @@ class ShowCeshierarchyRespNodes:
     }
 
     def __init__(self, name=None):
-        """ShowCeshierarchyRespNodes
+        r"""ShowCeshierarchyRespNodes
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowCeshierarchyRespNodes:
 
     @property
     def name(self):
-        """Gets the name of this ShowCeshierarchyRespNodes.
+        r"""Gets the name of this ShowCeshierarchyRespNodes.
 
         节点名称。
 
@@ -54,7 +54,7 @@ class ShowCeshierarchyRespNodes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCeshierarchyRespNodes.
+        r"""Sets the name of this ShowCeshierarchyRespNodes.
 
         节点名称。
 

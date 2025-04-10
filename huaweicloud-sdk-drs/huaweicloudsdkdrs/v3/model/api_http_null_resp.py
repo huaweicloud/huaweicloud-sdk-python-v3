@@ -23,7 +23,7 @@ class ApiHttpNullResp:
     }
 
     def __init__(self):
-        """ApiHttpNullResp
+        r"""ApiHttpNullResp
 
         The model defined in huaweicloud sdk
 

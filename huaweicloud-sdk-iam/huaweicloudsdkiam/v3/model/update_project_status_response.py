@@ -24,7 +24,7 @@ class UpdateProjectStatusResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateProjectStatusResponse
+        r"""UpdateProjectStatusResponse
 
         The model defined in huaweicloud sdk
 

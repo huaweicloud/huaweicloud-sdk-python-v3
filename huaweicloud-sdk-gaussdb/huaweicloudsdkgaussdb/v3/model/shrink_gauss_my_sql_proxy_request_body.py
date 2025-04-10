@@ -25,7 +25,7 @@ class ShrinkGaussMySqlProxyRequestBody:
     }
 
     def __init__(self, node_num=None):
-        """ShrinkGaussMySqlProxyRequestBody
+        r"""ShrinkGaussMySqlProxyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShrinkGaussMySqlProxyRequestBody:
 
     @property
     def node_num(self):
-        """Gets the node_num of this ShrinkGaussMySqlProxyRequestBody.
+        r"""Gets the node_num of this ShrinkGaussMySqlProxyRequestBody.
 
         数据库代理节点缩容操作需要减少的节点数。  缩容的节点数的取值范围：1~30之间的整数。  限制条件：该实例的数据库代理节点的总数量小于等于32，大于等于2。
 
@@ -53,7 +53,7 @@ class ShrinkGaussMySqlProxyRequestBody:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this ShrinkGaussMySqlProxyRequestBody.
+        r"""Sets the node_num of this ShrinkGaussMySqlProxyRequestBody.
 
         数据库代理节点缩容操作需要减少的节点数。  缩容的节点数的取值范围：1~30之间的整数。  限制条件：该实例的数据库代理节点的总数量小于等于32，大于等于2。
 

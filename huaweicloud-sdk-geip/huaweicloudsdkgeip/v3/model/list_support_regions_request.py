@@ -51,7 +51,7 @@ class ListSupportRegionsRequest:
     }
 
     def __init__(self, limit=None, offset=None, marker=None, page_reverse=None, fields=None, sort_key=None, sort_dir=None, id=None, instance_type=None, public_border_group=None, access_site=None, region_id=None, remote_endpoint=None, status=None):
-        """ListSupportRegionsRequest
+        r"""ListSupportRegionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ListSupportRegionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSupportRegionsRequest.
+        r"""Gets the limit of this ListSupportRegionsRequest.
 
         每页条数
 
@@ -145,7 +145,7 @@ class ListSupportRegionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSupportRegionsRequest.
+        r"""Sets the limit of this ListSupportRegionsRequest.
 
         每页条数
 
@@ -156,7 +156,7 @@ class ListSupportRegionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSupportRegionsRequest.
+        r"""Gets the offset of this ListSupportRegionsRequest.
 
         分页起始点
 
@@ -167,7 +167,7 @@ class ListSupportRegionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSupportRegionsRequest.
+        r"""Sets the offset of this ListSupportRegionsRequest.
 
         分页起始点
 
@@ -178,7 +178,7 @@ class ListSupportRegionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSupportRegionsRequest.
+        r"""Gets the marker of this ListSupportRegionsRequest.
 
         分页起始点
 
@@ -189,7 +189,7 @@ class ListSupportRegionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSupportRegionsRequest.
+        r"""Sets the marker of this ListSupportRegionsRequest.
 
         分页起始点
 
@@ -200,7 +200,7 @@ class ListSupportRegionsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListSupportRegionsRequest.
+        r"""Gets the page_reverse of this ListSupportRegionsRequest.
 
         翻页方向
 
@@ -211,7 +211,7 @@ class ListSupportRegionsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListSupportRegionsRequest.
+        r"""Sets the page_reverse of this ListSupportRegionsRequest.
 
         翻页方向
 
@@ -222,7 +222,7 @@ class ListSupportRegionsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListSupportRegionsRequest.
+        r"""Gets the fields of this ListSupportRegionsRequest.
 
         :return: The fields of this ListSupportRegionsRequest.
         :rtype: list[str]
@@ -231,7 +231,7 @@ class ListSupportRegionsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListSupportRegionsRequest.
+        r"""Sets the fields of this ListSupportRegionsRequest.
 
         :param fields: The fields of this ListSupportRegionsRequest.
         :type fields: list[str]
@@ -240,7 +240,7 @@ class ListSupportRegionsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListSupportRegionsRequest.
+        r"""Gets the sort_key of this ListSupportRegionsRequest.
 
         按照sort_key指定的字段排序
 
@@ -251,7 +251,7 @@ class ListSupportRegionsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListSupportRegionsRequest.
+        r"""Sets the sort_key of this ListSupportRegionsRequest.
 
         按照sort_key指定的字段排序
 
@@ -262,7 +262,7 @@ class ListSupportRegionsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListSupportRegionsRequest.
+        r"""Gets the sort_dir of this ListSupportRegionsRequest.
 
         排序的方向，倒序或者正序
 
@@ -273,7 +273,7 @@ class ListSupportRegionsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListSupportRegionsRequest.
+        r"""Sets the sort_dir of this ListSupportRegionsRequest.
 
         排序的方向，倒序或者正序
 
@@ -284,7 +284,7 @@ class ListSupportRegionsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListSupportRegionsRequest.
+        r"""Gets the id of this ListSupportRegionsRequest.
 
         :return: The id of this ListSupportRegionsRequest.
         :rtype: list[str]
@@ -293,7 +293,7 @@ class ListSupportRegionsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSupportRegionsRequest.
+        r"""Sets the id of this ListSupportRegionsRequest.
 
         :param id: The id of this ListSupportRegionsRequest.
         :type id: list[str]
@@ -302,7 +302,7 @@ class ListSupportRegionsRequest:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this ListSupportRegionsRequest.
+        r"""Gets the instance_type of this ListSupportRegionsRequest.
 
         :return: The instance_type of this ListSupportRegionsRequest.
         :rtype: list[str]
@@ -311,7 +311,7 @@ class ListSupportRegionsRequest:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this ListSupportRegionsRequest.
+        r"""Sets the instance_type of this ListSupportRegionsRequest.
 
         :param instance_type: The instance_type of this ListSupportRegionsRequest.
         :type instance_type: list[str]
@@ -320,7 +320,7 @@ class ListSupportRegionsRequest:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ListSupportRegionsRequest.
+        r"""Gets the public_border_group of this ListSupportRegionsRequest.
 
         :return: The public_border_group of this ListSupportRegionsRequest.
         :rtype: list[str]
@@ -329,7 +329,7 @@ class ListSupportRegionsRequest:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListSupportRegionsRequest.
+        r"""Sets the public_border_group of this ListSupportRegionsRequest.
 
         :param public_border_group: The public_border_group of this ListSupportRegionsRequest.
         :type public_border_group: list[str]
@@ -338,7 +338,7 @@ class ListSupportRegionsRequest:
 
     @property
     def access_site(self):
-        """Gets the access_site of this ListSupportRegionsRequest.
+        r"""Gets the access_site of this ListSupportRegionsRequest.
 
         :return: The access_site of this ListSupportRegionsRequest.
         :rtype: list[str]
@@ -347,7 +347,7 @@ class ListSupportRegionsRequest:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this ListSupportRegionsRequest.
+        r"""Sets the access_site of this ListSupportRegionsRequest.
 
         :param access_site: The access_site of this ListSupportRegionsRequest.
         :type access_site: list[str]
@@ -356,7 +356,7 @@ class ListSupportRegionsRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListSupportRegionsRequest.
+        r"""Gets the region_id of this ListSupportRegionsRequest.
 
         :return: The region_id of this ListSupportRegionsRequest.
         :rtype: list[str]
@@ -365,7 +365,7 @@ class ListSupportRegionsRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListSupportRegionsRequest.
+        r"""Sets the region_id of this ListSupportRegionsRequest.
 
         :param region_id: The region_id of this ListSupportRegionsRequest.
         :type region_id: list[str]
@@ -374,7 +374,7 @@ class ListSupportRegionsRequest:
 
     @property
     def remote_endpoint(self):
-        """Gets the remote_endpoint of this ListSupportRegionsRequest.
+        r"""Gets the remote_endpoint of this ListSupportRegionsRequest.
 
         :return: The remote_endpoint of this ListSupportRegionsRequest.
         :rtype: list[str]
@@ -383,7 +383,7 @@ class ListSupportRegionsRequest:
 
     @remote_endpoint.setter
     def remote_endpoint(self, remote_endpoint):
-        """Sets the remote_endpoint of this ListSupportRegionsRequest.
+        r"""Sets the remote_endpoint of this ListSupportRegionsRequest.
 
         :param remote_endpoint: The remote_endpoint of this ListSupportRegionsRequest.
         :type remote_endpoint: list[str]
@@ -392,7 +392,7 @@ class ListSupportRegionsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListSupportRegionsRequest.
+        r"""Gets the status of this ListSupportRegionsRequest.
 
         :return: The status of this ListSupportRegionsRequest.
         :rtype: list[str]
@@ -401,7 +401,7 @@ class ListSupportRegionsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSupportRegionsRequest.
+        r"""Sets the status of this ListSupportRegionsRequest.
 
         :param status: The status of this ListSupportRegionsRequest.
         :type status: list[str]

@@ -25,7 +25,7 @@ class ShowServerGroupTagRequest:
     }
 
     def __init__(self, server_group_id=None):
-        """ShowServerGroupTagRequest
+        r"""ShowServerGroupTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowServerGroupTagRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ShowServerGroupTagRequest.
+        r"""Gets the server_group_id of this ShowServerGroupTagRequest.
 
         服务器组唯一标识。
 
@@ -53,7 +53,7 @@ class ShowServerGroupTagRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ShowServerGroupTagRequest.
+        r"""Sets the server_group_id of this ShowServerGroupTagRequest.
 
         服务器组唯一标识。
 

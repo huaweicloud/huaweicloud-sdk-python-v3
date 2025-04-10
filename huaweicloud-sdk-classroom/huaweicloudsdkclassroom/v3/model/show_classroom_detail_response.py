@@ -58,7 +58,7 @@ class ShowClassroomDetailResponse(SdkResponse):
     }
 
     def __init__(self, name=None, description=None, announcement=None, announcement_time=None, create_time=None, update_time=None, teacher=None, credit=None, start_time=None, end_time=None, role=None, school=None, content_count=None, courseware_count=None, job_count=None, member_count=None, status=None):
-        """ShowClassroomDetailResponse
+        r"""ShowClassroomDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -156,7 +156,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowClassroomDetailResponse.
+        r"""Gets the name of this ShowClassroomDetailResponse.
 
         课堂名称
 
@@ -167,7 +167,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowClassroomDetailResponse.
+        r"""Sets the name of this ShowClassroomDetailResponse.
 
         课堂名称
 
@@ -178,7 +178,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowClassroomDetailResponse.
+        r"""Gets the description of this ShowClassroomDetailResponse.
 
         课堂描述
 
@@ -189,7 +189,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowClassroomDetailResponse.
+        r"""Sets the description of this ShowClassroomDetailResponse.
 
         课堂描述
 
@@ -200,7 +200,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def announcement(self):
-        """Gets the announcement of this ShowClassroomDetailResponse.
+        r"""Gets the announcement of this ShowClassroomDetailResponse.
 
         课堂公告
 
@@ -211,7 +211,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @announcement.setter
     def announcement(self, announcement):
-        """Sets the announcement of this ShowClassroomDetailResponse.
+        r"""Sets the announcement of this ShowClassroomDetailResponse.
 
         课堂公告
 
@@ -222,7 +222,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def announcement_time(self):
-        """Gets the announcement_time of this ShowClassroomDetailResponse.
+        r"""Gets the announcement_time of this ShowClassroomDetailResponse.
 
         课堂公告创建时间，日期格式：yyyy-MM-dd
 
@@ -233,7 +233,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @announcement_time.setter
     def announcement_time(self, announcement_time):
-        """Sets the announcement_time of this ShowClassroomDetailResponse.
+        r"""Sets the announcement_time of this ShowClassroomDetailResponse.
 
         课堂公告创建时间，日期格式：yyyy-MM-dd
 
@@ -244,7 +244,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowClassroomDetailResponse.
+        r"""Gets the create_time of this ShowClassroomDetailResponse.
 
         课堂创建时间，日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -255,7 +255,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowClassroomDetailResponse.
+        r"""Sets the create_time of this ShowClassroomDetailResponse.
 
         课堂创建时间，日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -266,7 +266,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowClassroomDetailResponse.
+        r"""Gets the update_time of this ShowClassroomDetailResponse.
 
         课堂最新更新时间，日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -277,7 +277,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowClassroomDetailResponse.
+        r"""Sets the update_time of this ShowClassroomDetailResponse.
 
         课堂最新更新时间，日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -288,7 +288,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def teacher(self):
-        """Gets the teacher of this ShowClassroomDetailResponse.
+        r"""Gets the teacher of this ShowClassroomDetailResponse.
 
         当前课堂的授课人
 
@@ -299,7 +299,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @teacher.setter
     def teacher(self, teacher):
-        """Sets the teacher of this ShowClassroomDetailResponse.
+        r"""Sets the teacher of this ShowClassroomDetailResponse.
 
         当前课堂的授课人
 
@@ -310,7 +310,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def credit(self):
-        """Gets the credit of this ShowClassroomDetailResponse.
+        r"""Gets the credit of this ShowClassroomDetailResponse.
 
         课堂学分
 
@@ -321,7 +321,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @credit.setter
     def credit(self, credit):
-        """Sets the credit of this ShowClassroomDetailResponse.
+        r"""Sets the credit of this ShowClassroomDetailResponse.
 
         课堂学分
 
@@ -332,7 +332,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowClassroomDetailResponse.
+        r"""Gets the start_time of this ShowClassroomDetailResponse.
 
         课堂开始时间，日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -343,7 +343,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowClassroomDetailResponse.
+        r"""Sets the start_time of this ShowClassroomDetailResponse.
 
         课堂开始时间，日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -354,7 +354,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowClassroomDetailResponse.
+        r"""Gets the end_time of this ShowClassroomDetailResponse.
 
         课堂结束时间，日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -365,7 +365,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowClassroomDetailResponse.
+        r"""Sets the end_time of this ShowClassroomDetailResponse.
 
         课堂结束时间，日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -376,7 +376,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def role(self):
-        """Gets the role of this ShowClassroomDetailResponse.
+        r"""Gets the role of this ShowClassroomDetailResponse.
 
         当前用户在课堂下角色，取值范围：teacher：老师，student：学生
 
@@ -387,7 +387,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ShowClassroomDetailResponse.
+        r"""Sets the role of this ShowClassroomDetailResponse.
 
         当前用户在课堂下角色，取值范围：teacher：老师，student：学生
 
@@ -398,7 +398,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def school(self):
-        """Gets the school of this ShowClassroomDetailResponse.
+        r"""Gets the school of this ShowClassroomDetailResponse.
 
         授课学校
 
@@ -409,7 +409,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @school.setter
     def school(self, school):
-        """Sets the school of this ShowClassroomDetailResponse.
+        r"""Sets the school of this ShowClassroomDetailResponse.
 
         授课学校
 
@@ -420,7 +420,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def content_count(self):
-        """Gets the content_count of this ShowClassroomDetailResponse.
+        r"""Gets the content_count of this ShowClassroomDetailResponse.
 
         课堂下目录数量
 
@@ -431,7 +431,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @content_count.setter
     def content_count(self, content_count):
-        """Sets the content_count of this ShowClassroomDetailResponse.
+        r"""Sets the content_count of this ShowClassroomDetailResponse.
 
         课堂下目录数量
 
@@ -442,7 +442,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def courseware_count(self):
-        """Gets the courseware_count of this ShowClassroomDetailResponse.
+        r"""Gets the courseware_count of this ShowClassroomDetailResponse.
 
         课堂下课件数量
 
@@ -453,7 +453,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @courseware_count.setter
     def courseware_count(self, courseware_count):
-        """Sets the courseware_count of this ShowClassroomDetailResponse.
+        r"""Sets the courseware_count of this ShowClassroomDetailResponse.
 
         课堂下课件数量
 
@@ -464,7 +464,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def job_count(self):
-        """Gets the job_count of this ShowClassroomDetailResponse.
+        r"""Gets the job_count of this ShowClassroomDetailResponse.
 
         课堂下作业数量
 
@@ -475,7 +475,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @job_count.setter
     def job_count(self, job_count):
-        """Sets the job_count of this ShowClassroomDetailResponse.
+        r"""Sets the job_count of this ShowClassroomDetailResponse.
 
         课堂下作业数量
 
@@ -486,7 +486,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def member_count(self):
-        """Gets the member_count of this ShowClassroomDetailResponse.
+        r"""Gets the member_count of this ShowClassroomDetailResponse.
 
         课堂下成员数量
 
@@ -497,7 +497,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @member_count.setter
     def member_count(self, member_count):
-        """Sets the member_count of this ShowClassroomDetailResponse.
+        r"""Sets the member_count of this ShowClassroomDetailResponse.
 
         课堂下成员数量
 
@@ -508,7 +508,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowClassroomDetailResponse.
+        r"""Gets the status of this ShowClassroomDetailResponse.
 
         课堂当前的状态，normal：课堂处于正常状态，archive：课堂已归档
 
@@ -519,7 +519,7 @@ class ShowClassroomDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowClassroomDetailResponse.
+        r"""Sets the status of this ShowClassroomDetailResponse.
 
         课堂当前的状态，normal：课堂处于正常状态，archive：课堂已归档
 

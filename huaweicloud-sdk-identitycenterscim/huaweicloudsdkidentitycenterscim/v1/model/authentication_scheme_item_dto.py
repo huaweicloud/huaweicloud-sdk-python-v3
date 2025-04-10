@@ -35,7 +35,7 @@ class AuthenticationSchemeItemDto:
     }
 
     def __init__(self, type=None, name=None, description=None, spec_uri=None, documentation_uri=None, primary=None):
-        """AuthenticationSchemeItemDto
+        r"""AuthenticationSchemeItemDto
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AuthenticationSchemeItemDto:
 
     @property
     def type(self):
-        """Gets the type of this AuthenticationSchemeItemDto.
+        r"""Gets the type of this AuthenticationSchemeItemDto.
 
         认证类型，指定鉴权的方式
 
@@ -89,7 +89,7 @@ class AuthenticationSchemeItemDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AuthenticationSchemeItemDto.
+        r"""Sets the type of this AuthenticationSchemeItemDto.
 
         认证类型，指定鉴权的方式
 
@@ -100,7 +100,7 @@ class AuthenticationSchemeItemDto:
 
     @property
     def name(self):
-        """Gets the name of this AuthenticationSchemeItemDto.
+        r"""Gets the name of this AuthenticationSchemeItemDto.
 
         认证概要名称
 
@@ -111,7 +111,7 @@ class AuthenticationSchemeItemDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AuthenticationSchemeItemDto.
+        r"""Sets the name of this AuthenticationSchemeItemDto.
 
         认证概要名称
 
@@ -122,7 +122,7 @@ class AuthenticationSchemeItemDto:
 
     @property
     def description(self):
-        """Gets the description of this AuthenticationSchemeItemDto.
+        r"""Gets the description of this AuthenticationSchemeItemDto.
 
         认证概要的描述信息
 
@@ -133,7 +133,7 @@ class AuthenticationSchemeItemDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AuthenticationSchemeItemDto.
+        r"""Sets the description of this AuthenticationSchemeItemDto.
 
         认证概要的描述信息
 
@@ -144,7 +144,7 @@ class AuthenticationSchemeItemDto:
 
     @property
     def spec_uri(self):
-        """Gets the spec_uri of this AuthenticationSchemeItemDto.
+        r"""Gets the spec_uri of this AuthenticationSchemeItemDto.
 
         规范链接
 
@@ -155,7 +155,7 @@ class AuthenticationSchemeItemDto:
 
     @spec_uri.setter
     def spec_uri(self, spec_uri):
-        """Sets the spec_uri of this AuthenticationSchemeItemDto.
+        r"""Sets the spec_uri of this AuthenticationSchemeItemDto.
 
         规范链接
 
@@ -166,7 +166,7 @@ class AuthenticationSchemeItemDto:
 
     @property
     def documentation_uri(self):
-        """Gets the documentation_uri of this AuthenticationSchemeItemDto.
+        r"""Gets the documentation_uri of this AuthenticationSchemeItemDto.
 
         帮助文档链接
 
@@ -177,7 +177,7 @@ class AuthenticationSchemeItemDto:
 
     @documentation_uri.setter
     def documentation_uri(self, documentation_uri):
-        """Sets the documentation_uri of this AuthenticationSchemeItemDto.
+        r"""Sets the documentation_uri of this AuthenticationSchemeItemDto.
 
         帮助文档链接
 
@@ -188,7 +188,7 @@ class AuthenticationSchemeItemDto:
 
     @property
     def primary(self):
-        """Gets the primary of this AuthenticationSchemeItemDto.
+        r"""Gets the primary of this AuthenticationSchemeItemDto.
 
         是否为主要的认证方式
 
@@ -199,7 +199,7 @@ class AuthenticationSchemeItemDto:
 
     @primary.setter
     def primary(self, primary):
-        """Sets the primary of this AuthenticationSchemeItemDto.
+        r"""Sets the primary of this AuthenticationSchemeItemDto.
 
         是否为主要的认证方式
 

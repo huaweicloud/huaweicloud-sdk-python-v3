@@ -31,7 +31,7 @@ class ToPeriodReq:
     }
 
     def __init__(self, period_type=None, period_num=None, auto_pay_policy=None, auto_renew_policy=None):
-        """ToPeriodReq
+        r"""ToPeriodReq
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ToPeriodReq:
 
     @property
     def period_type(self):
-        """Gets the period_type of this ToPeriodReq.
+        r"""Gets the period_type of this ToPeriodReq.
 
         周期类型。MONTH：月；YEAR：年
 
@@ -73,7 +73,7 @@ class ToPeriodReq:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ToPeriodReq.
+        r"""Sets the period_type of this ToPeriodReq.
 
         周期类型。MONTH：月；YEAR：年
 
@@ -84,7 +84,7 @@ class ToPeriodReq:
 
     @property
     def period_num(self):
-        """Gets the period_num of this ToPeriodReq.
+        r"""Gets the period_num of this ToPeriodReq.
 
         周期数。
 
@@ -95,7 +95,7 @@ class ToPeriodReq:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this ToPeriodReq.
+        r"""Sets the period_num of this ToPeriodReq.
 
         周期数。
 
@@ -106,7 +106,7 @@ class ToPeriodReq:
 
     @property
     def auto_pay_policy(self):
-        """Gets the auto_pay_policy of this ToPeriodReq.
+        r"""Gets the auto_pay_policy of this ToPeriodReq.
 
         是否自动支付。YES：自动扣费；NO：手动支付（默认）
 
@@ -117,7 +117,7 @@ class ToPeriodReq:
 
     @auto_pay_policy.setter
     def auto_pay_policy(self, auto_pay_policy):
-        """Sets the auto_pay_policy of this ToPeriodReq.
+        r"""Sets the auto_pay_policy of this ToPeriodReq.
 
         是否自动支付。YES：自动扣费；NO：手动支付（默认）
 
@@ -128,7 +128,7 @@ class ToPeriodReq:
 
     @property
     def auto_renew_policy(self):
-        """Gets the auto_renew_policy of this ToPeriodReq.
+        r"""Gets the auto_renew_policy of this ToPeriodReq.
 
         是否到期自动续期。YES：自动续费；NO：不自动续费（默认）
 
@@ -139,7 +139,7 @@ class ToPeriodReq:
 
     @auto_renew_policy.setter
     def auto_renew_policy(self, auto_renew_policy):
-        """Sets the auto_renew_policy of this ToPeriodReq.
+        r"""Sets the auto_renew_policy of this ToPeriodReq.
 
         是否到期自动续期。YES：自动续费；NO：不自动续费（默认）
 

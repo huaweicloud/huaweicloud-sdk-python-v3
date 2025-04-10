@@ -25,7 +25,7 @@ class UnusedIamUserPasswordDetails:
     }
 
     def __init__(self, last_accessed=None):
-        """UnusedIamUserPasswordDetails
+        r"""UnusedIamUserPasswordDetails
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UnusedIamUserPasswordDetails:
 
     @property
     def last_accessed(self):
-        """Gets the last_accessed of this UnusedIamUserPasswordDetails.
+        r"""Gets the last_accessed of this UnusedIamUserPasswordDetails.
 
         用户密码的最后访问时间。
 
@@ -54,7 +54,7 @@ class UnusedIamUserPasswordDetails:
 
     @last_accessed.setter
     def last_accessed(self, last_accessed):
-        """Sets the last_accessed of this UnusedIamUserPasswordDetails.
+        r"""Sets the last_accessed of this UnusedIamUserPasswordDetails.
 
         用户密码的最后访问时间。
 

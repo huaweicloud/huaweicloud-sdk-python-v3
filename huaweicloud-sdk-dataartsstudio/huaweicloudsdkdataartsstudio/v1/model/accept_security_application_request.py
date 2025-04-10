@@ -29,7 +29,7 @@ class AcceptSecurityApplicationRequest:
     }
 
     def __init__(self, workspace=None, id=None, body=None):
-        """AcceptSecurityApplicationRequest
+        r"""AcceptSecurityApplicationRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AcceptSecurityApplicationRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this AcceptSecurityApplicationRequest.
+        r"""Gets the workspace of this AcceptSecurityApplicationRequest.
 
         DataArts Studio工作空间ID
 
@@ -66,7 +66,7 @@ class AcceptSecurityApplicationRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this AcceptSecurityApplicationRequest.
+        r"""Sets the workspace of this AcceptSecurityApplicationRequest.
 
         DataArts Studio工作空间ID
 
@@ -77,7 +77,7 @@ class AcceptSecurityApplicationRequest:
 
     @property
     def id(self):
-        """Gets the id of this AcceptSecurityApplicationRequest.
+        r"""Gets the id of this AcceptSecurityApplicationRequest.
 
         工单id
 
@@ -88,7 +88,7 @@ class AcceptSecurityApplicationRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AcceptSecurityApplicationRequest.
+        r"""Sets the id of this AcceptSecurityApplicationRequest.
 
         工单id
 
@@ -99,7 +99,7 @@ class AcceptSecurityApplicationRequest:
 
     @property
     def body(self):
-        """Gets the body of this AcceptSecurityApplicationRequest.
+        r"""Gets the body of this AcceptSecurityApplicationRequest.
 
         :return: The body of this AcceptSecurityApplicationRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ReasonDTO`
@@ -108,7 +108,7 @@ class AcceptSecurityApplicationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AcceptSecurityApplicationRequest.
+        r"""Sets the body of this AcceptSecurityApplicationRequest.
 
         :param body: The body of this AcceptSecurityApplicationRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ReasonDTO`

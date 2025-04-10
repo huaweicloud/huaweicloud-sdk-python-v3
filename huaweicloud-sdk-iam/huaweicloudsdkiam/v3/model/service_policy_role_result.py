@@ -47,7 +47,7 @@ class ServicePolicyRoleResult:
     }
 
     def __init__(self, catalog=None, display_name=None, description=None, links=None, policy=None, description_cn=None, domain_id=None, type=None, id=None, name=None, updated_time=None, created_time=None):
-        """ServicePolicyRoleResult
+        r"""ServicePolicyRoleResult
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class ServicePolicyRoleResult:
 
     @property
     def catalog(self):
-        """Gets the catalog of this ServicePolicyRoleResult.
+        r"""Gets the catalog of this ServicePolicyRoleResult.
 
         自定义策略所在目录。
 
@@ -122,7 +122,7 @@ class ServicePolicyRoleResult:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this ServicePolicyRoleResult.
+        r"""Sets the catalog of this ServicePolicyRoleResult.
 
         自定义策略所在目录。
 
@@ -133,7 +133,7 @@ class ServicePolicyRoleResult:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ServicePolicyRoleResult.
+        r"""Gets the display_name of this ServicePolicyRoleResult.
 
         自定义策略展示名。
 
@@ -144,7 +144,7 @@ class ServicePolicyRoleResult:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ServicePolicyRoleResult.
+        r"""Sets the display_name of this ServicePolicyRoleResult.
 
         自定义策略展示名。
 
@@ -155,7 +155,7 @@ class ServicePolicyRoleResult:
 
     @property
     def description(self):
-        """Gets the description of this ServicePolicyRoleResult.
+        r"""Gets the description of this ServicePolicyRoleResult.
 
         自定义策略的描述信息。
 
@@ -166,7 +166,7 @@ class ServicePolicyRoleResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServicePolicyRoleResult.
+        r"""Sets the description of this ServicePolicyRoleResult.
 
         自定义策略的描述信息。
 
@@ -177,7 +177,7 @@ class ServicePolicyRoleResult:
 
     @property
     def links(self):
-        """Gets the links of this ServicePolicyRoleResult.
+        r"""Gets the links of this ServicePolicyRoleResult.
 
         :return: The links of this ServicePolicyRoleResult.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -186,7 +186,7 @@ class ServicePolicyRoleResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ServicePolicyRoleResult.
+        r"""Sets the links of this ServicePolicyRoleResult.
 
         :param links: The links of this ServicePolicyRoleResult.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -195,7 +195,7 @@ class ServicePolicyRoleResult:
 
     @property
     def policy(self):
-        """Gets the policy of this ServicePolicyRoleResult.
+        r"""Gets the policy of this ServicePolicyRoleResult.
 
         :return: The policy of this ServicePolicyRoleResult.
         :rtype: :class:`huaweicloudsdkiam.v3.ServicePolicy`
@@ -204,7 +204,7 @@ class ServicePolicyRoleResult:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this ServicePolicyRoleResult.
+        r"""Sets the policy of this ServicePolicyRoleResult.
 
         :param policy: The policy of this ServicePolicyRoleResult.
         :type policy: :class:`huaweicloudsdkiam.v3.ServicePolicy`
@@ -213,7 +213,7 @@ class ServicePolicyRoleResult:
 
     @property
     def description_cn(self):
-        """Gets the description_cn of this ServicePolicyRoleResult.
+        r"""Gets the description_cn of this ServicePolicyRoleResult.
 
         自定义策略的中文描述信息。
 
@@ -224,7 +224,7 @@ class ServicePolicyRoleResult:
 
     @description_cn.setter
     def description_cn(self, description_cn):
-        """Sets the description_cn of this ServicePolicyRoleResult.
+        r"""Sets the description_cn of this ServicePolicyRoleResult.
 
         自定义策略的中文描述信息。
 
@@ -235,7 +235,7 @@ class ServicePolicyRoleResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ServicePolicyRoleResult.
+        r"""Gets the domain_id of this ServicePolicyRoleResult.
 
         自定义策略所属账号ID。
 
@@ -246,7 +246,7 @@ class ServicePolicyRoleResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ServicePolicyRoleResult.
+        r"""Sets the domain_id of this ServicePolicyRoleResult.
 
         自定义策略所属账号ID。
 
@@ -257,7 +257,7 @@ class ServicePolicyRoleResult:
 
     @property
     def type(self):
-        """Gets the type of this ServicePolicyRoleResult.
+        r"""Gets the type of this ServicePolicyRoleResult.
 
         自定义策略的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
@@ -268,7 +268,7 @@ class ServicePolicyRoleResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ServicePolicyRoleResult.
+        r"""Sets the type of this ServicePolicyRoleResult.
 
         自定义策略的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
@@ -279,7 +279,7 @@ class ServicePolicyRoleResult:
 
     @property
     def id(self):
-        """Gets the id of this ServicePolicyRoleResult.
+        r"""Gets the id of this ServicePolicyRoleResult.
 
         自定义策略ID。
 
@@ -290,7 +290,7 @@ class ServicePolicyRoleResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServicePolicyRoleResult.
+        r"""Sets the id of this ServicePolicyRoleResult.
 
         自定义策略ID。
 
@@ -301,7 +301,7 @@ class ServicePolicyRoleResult:
 
     @property
     def name(self):
-        """Gets the name of this ServicePolicyRoleResult.
+        r"""Gets the name of this ServicePolicyRoleResult.
 
         自定义策略名。
 
@@ -312,7 +312,7 @@ class ServicePolicyRoleResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ServicePolicyRoleResult.
+        r"""Sets the name of this ServicePolicyRoleResult.
 
         自定义策略名。
 
@@ -323,7 +323,7 @@ class ServicePolicyRoleResult:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ServicePolicyRoleResult.
+        r"""Gets the updated_time of this ServicePolicyRoleResult.
 
         自定义策略更新时间。
 
@@ -334,7 +334,7 @@ class ServicePolicyRoleResult:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ServicePolicyRoleResult.
+        r"""Sets the updated_time of this ServicePolicyRoleResult.
 
         自定义策略更新时间。
 
@@ -345,7 +345,7 @@ class ServicePolicyRoleResult:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ServicePolicyRoleResult.
+        r"""Gets the created_time of this ServicePolicyRoleResult.
 
         自定义策略创建时间。
 
@@ -356,7 +356,7 @@ class ServicePolicyRoleResult:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ServicePolicyRoleResult.
+        r"""Sets the created_time of this ServicePolicyRoleResult.
 
         自定义策略创建时间。
 

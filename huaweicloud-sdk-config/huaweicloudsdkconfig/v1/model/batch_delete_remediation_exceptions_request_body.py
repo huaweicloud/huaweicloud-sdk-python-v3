@@ -25,7 +25,7 @@ class BatchDeleteRemediationExceptionsRequestBody:
     }
 
     def __init__(self, exceptions=None):
-        """BatchDeleteRemediationExceptionsRequestBody
+        r"""BatchDeleteRemediationExceptionsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteRemediationExceptionsRequestBody:
 
     @property
     def exceptions(self):
-        """Gets the exceptions of this BatchDeleteRemediationExceptionsRequestBody.
+        r"""Gets the exceptions of this BatchDeleteRemediationExceptionsRequestBody.
 
         批量删除合规规则修正例外的详情。
 
@@ -53,7 +53,7 @@ class BatchDeleteRemediationExceptionsRequestBody:
 
     @exceptions.setter
     def exceptions(self, exceptions):
-        """Sets the exceptions of this BatchDeleteRemediationExceptionsRequestBody.
+        r"""Sets the exceptions of this BatchDeleteRemediationExceptionsRequestBody.
 
         批量删除合规规则修正例外的详情。
 

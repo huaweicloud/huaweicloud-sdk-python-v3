@@ -31,7 +31,7 @@ class PeriodBatchUpChangeResourceRsp:
     }
 
     def __init__(self, currency=None, extend_params=None, official_website_rating_result=None, optional_discount_rating_results=None):
-        """PeriodBatchUpChangeResourceRsp
+        r"""PeriodBatchUpChangeResourceRsp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PeriodBatchUpChangeResourceRsp:
 
     @property
     def currency(self):
-        """Gets the currency of this PeriodBatchUpChangeResourceRsp.
+        r"""Gets the currency of this PeriodBatchUpChangeResourceRsp.
 
         币种，比如CNY
 
@@ -75,7 +75,7 @@ class PeriodBatchUpChangeResourceRsp:
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this PeriodBatchUpChangeResourceRsp.
+        r"""Sets the currency of this PeriodBatchUpChangeResourceRsp.
 
         币种，比如CNY
 
@@ -86,7 +86,7 @@ class PeriodBatchUpChangeResourceRsp:
 
     @property
     def extend_params(self):
-        """Gets the extend_params of this PeriodBatchUpChangeResourceRsp.
+        r"""Gets the extend_params of this PeriodBatchUpChangeResourceRsp.
 
         扩展参数
 
@@ -97,7 +97,7 @@ class PeriodBatchUpChangeResourceRsp:
 
     @extend_params.setter
     def extend_params(self, extend_params):
-        """Sets the extend_params of this PeriodBatchUpChangeResourceRsp.
+        r"""Sets the extend_params of this PeriodBatchUpChangeResourceRsp.
 
         扩展参数
 
@@ -108,7 +108,7 @@ class PeriodBatchUpChangeResourceRsp:
 
     @property
     def official_website_rating_result(self):
-        """Gets the official_website_rating_result of this PeriodBatchUpChangeResourceRsp.
+        r"""Gets the official_website_rating_result of this PeriodBatchUpChangeResourceRsp.
 
         :return: The official_website_rating_result of this PeriodBatchUpChangeResourceRsp.
         :rtype: :class:`huaweicloudsdkworkspace.v2.OfficialWebsiteRatingResult`
@@ -117,7 +117,7 @@ class PeriodBatchUpChangeResourceRsp:
 
     @official_website_rating_result.setter
     def official_website_rating_result(self, official_website_rating_result):
-        """Sets the official_website_rating_result of this PeriodBatchUpChangeResourceRsp.
+        r"""Sets the official_website_rating_result of this PeriodBatchUpChangeResourceRsp.
 
         :param official_website_rating_result: The official_website_rating_result of this PeriodBatchUpChangeResourceRsp.
         :type official_website_rating_result: :class:`huaweicloudsdkworkspace.v2.OfficialWebsiteRatingResult`
@@ -126,7 +126,7 @@ class PeriodBatchUpChangeResourceRsp:
 
     @property
     def optional_discount_rating_results(self):
-        """Gets the optional_discount_rating_results of this PeriodBatchUpChangeResourceRsp.
+        r"""Gets the optional_discount_rating_results of this PeriodBatchUpChangeResourceRsp.
 
         存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果
 
@@ -137,7 +137,7 @@ class PeriodBatchUpChangeResourceRsp:
 
     @optional_discount_rating_results.setter
     def optional_discount_rating_results(self, optional_discount_rating_results):
-        """Sets the optional_discount_rating_results of this PeriodBatchUpChangeResourceRsp.
+        r"""Sets the optional_discount_rating_results of this PeriodBatchUpChangeResourceRsp.
 
         存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果
 

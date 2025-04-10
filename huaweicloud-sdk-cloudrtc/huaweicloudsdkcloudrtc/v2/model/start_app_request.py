@@ -33,7 +33,7 @@ class StartAppRequest:
     }
 
     def __init__(self, content_type=None, authorization=None, x_sdk_date=None, x_project_id=None, app_id=None):
-        """StartAppRequest
+        r"""StartAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class StartAppRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this StartAppRequest.
+        r"""Gets the content_type of this StartAppRequest.
 
         内容类型。
 
@@ -80,7 +80,7 @@ class StartAppRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this StartAppRequest.
+        r"""Sets the content_type of this StartAppRequest.
 
         内容类型。
 
@@ -91,7 +91,7 @@ class StartAppRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this StartAppRequest.
+        r"""Gets the authorization of this StartAppRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
@@ -102,7 +102,7 @@ class StartAppRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this StartAppRequest.
+        r"""Sets the authorization of this StartAppRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。
 
@@ -113,7 +113,7 @@ class StartAppRequest:
 
     @property
     def x_sdk_date(self):
-        """Gets the x_sdk_date of this StartAppRequest.
+        r"""Gets the x_sdk_date of this StartAppRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。
 
@@ -124,7 +124,7 @@ class StartAppRequest:
 
     @x_sdk_date.setter
     def x_sdk_date(self, x_sdk_date):
-        """Sets the x_sdk_date of this StartAppRequest.
+        r"""Sets the x_sdk_date of this StartAppRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。
 
@@ -135,7 +135,7 @@ class StartAppRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this StartAppRequest.
+        r"""Gets the x_project_id of this StartAppRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息。
 
@@ -146,7 +146,7 @@ class StartAppRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this StartAppRequest.
+        r"""Sets the x_project_id of this StartAppRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息。
 
@@ -157,7 +157,7 @@ class StartAppRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this StartAppRequest.
+        r"""Gets the app_id of this StartAppRequest.
 
         应用id
 
@@ -168,7 +168,7 @@ class StartAppRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this StartAppRequest.
+        r"""Sets the app_id of this StartAppRequest.
 
         应用id
 

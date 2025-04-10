@@ -33,7 +33,7 @@ class CreateRsaDatakeyPairRequestBody:
     }
 
     def __init__(self, key_id=None, key_spec=None, with_plain_text=None, additional_authenticated_data=None, sequence=None):
-        """CreateRsaDatakeyPairRequestBody
+        r"""CreateRsaDatakeyPairRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateRsaDatakeyPairRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this CreateRsaDatakeyPairRequestBody.
+        r"""Gets the key_id of this CreateRsaDatakeyPairRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -80,7 +80,7 @@ class CreateRsaDatakeyPairRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this CreateRsaDatakeyPairRequestBody.
+        r"""Sets the key_id of this CreateRsaDatakeyPairRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -91,7 +91,7 @@ class CreateRsaDatakeyPairRequestBody:
 
     @property
     def key_spec(self):
-        """Gets the key_spec of this CreateRsaDatakeyPairRequestBody.
+        r"""Gets the key_spec of this CreateRsaDatakeyPairRequestBody.
 
         需要包含算法、长度、曲线信息。可选值有RSA_2048 | RSA_3072 | RSA_4096
 
@@ -102,7 +102,7 @@ class CreateRsaDatakeyPairRequestBody:
 
     @key_spec.setter
     def key_spec(self, key_spec):
-        """Sets the key_spec of this CreateRsaDatakeyPairRequestBody.
+        r"""Sets the key_spec of this CreateRsaDatakeyPairRequestBody.
 
         需要包含算法、长度、曲线信息。可选值有RSA_2048 | RSA_3072 | RSA_4096
 
@@ -113,7 +113,7 @@ class CreateRsaDatakeyPairRequestBody:
 
     @property
     def with_plain_text(self):
-        """Gets the with_plain_text of this CreateRsaDatakeyPairRequestBody.
+        r"""Gets the with_plain_text of this CreateRsaDatakeyPairRequestBody.
 
         是否返回明文私钥，默认为true
 
@@ -124,7 +124,7 @@ class CreateRsaDatakeyPairRequestBody:
 
     @with_plain_text.setter
     def with_plain_text(self, with_plain_text):
-        """Sets the with_plain_text of this CreateRsaDatakeyPairRequestBody.
+        r"""Sets the with_plain_text of this CreateRsaDatakeyPairRequestBody.
 
         是否返回明文私钥，默认为true
 
@@ -135,7 +135,7 @@ class CreateRsaDatakeyPairRequestBody:
 
     @property
     def additional_authenticated_data(self):
-        """Gets the additional_authenticated_data of this CreateRsaDatakeyPairRequestBody.
+        r"""Gets the additional_authenticated_data of this CreateRsaDatakeyPairRequestBody.
 
         认证加密的额外信息，请不要填写敏感信息
 
@@ -146,7 +146,7 @@ class CreateRsaDatakeyPairRequestBody:
 
     @additional_authenticated_data.setter
     def additional_authenticated_data(self, additional_authenticated_data):
-        """Sets the additional_authenticated_data of this CreateRsaDatakeyPairRequestBody.
+        r"""Sets the additional_authenticated_data of this CreateRsaDatakeyPairRequestBody.
 
         认证加密的额外信息，请不要填写敏感信息
 
@@ -157,7 +157,7 @@ class CreateRsaDatakeyPairRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this CreateRsaDatakeyPairRequestBody.
+        r"""Gets the sequence of this CreateRsaDatakeyPairRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -168,7 +168,7 @@ class CreateRsaDatakeyPairRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this CreateRsaDatakeyPairRequestBody.
+        r"""Sets the sequence of this CreateRsaDatakeyPairRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

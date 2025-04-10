@@ -31,7 +31,7 @@ class ShowResourceRelationsRequest:
     }
 
     def __init__(self, resource_id=None, direction=None, limit=None, marker=None):
-        """ShowResourceRelationsRequest
+        r"""ShowResourceRelationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowResourceRelationsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowResourceRelationsRequest.
+        r"""Gets the resource_id of this ShowResourceRelationsRequest.
 
         资源ID
 
@@ -73,7 +73,7 @@ class ShowResourceRelationsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowResourceRelationsRequest.
+        r"""Sets the resource_id of this ShowResourceRelationsRequest.
 
         资源ID
 
@@ -84,7 +84,7 @@ class ShowResourceRelationsRequest:
 
     @property
     def direction(self):
-        """Gets the direction of this ShowResourceRelationsRequest.
+        r"""Gets the direction of this ShowResourceRelationsRequest.
 
         资源关系的指向
 
@@ -95,7 +95,7 @@ class ShowResourceRelationsRequest:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this ShowResourceRelationsRequest.
+        r"""Sets the direction of this ShowResourceRelationsRequest.
 
         资源关系的指向
 
@@ -106,7 +106,7 @@ class ShowResourceRelationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowResourceRelationsRequest.
+        r"""Gets the limit of this ShowResourceRelationsRequest.
 
         最大的返回数量
 
@@ -117,7 +117,7 @@ class ShowResourceRelationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowResourceRelationsRequest.
+        r"""Sets the limit of this ShowResourceRelationsRequest.
 
         最大的返回数量
 
@@ -128,7 +128,7 @@ class ShowResourceRelationsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ShowResourceRelationsRequest.
+        r"""Gets the marker of this ShowResourceRelationsRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -139,7 +139,7 @@ class ShowResourceRelationsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ShowResourceRelationsRequest.
+        r"""Sets the marker of this ShowResourceRelationsRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 

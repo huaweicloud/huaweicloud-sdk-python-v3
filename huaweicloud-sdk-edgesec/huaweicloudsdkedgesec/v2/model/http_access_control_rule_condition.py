@@ -37,7 +37,7 @@ class HttpAccessControlRuleCondition:
     }
 
     def __init__(self, category=None, index=None, contents=None, logic_operation=None, value_list_id=None, size=None, check_all_indexes_logic=None):
-        """HttpAccessControlRuleCondition
+        r"""HttpAccessControlRuleCondition
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class HttpAccessControlRuleCondition:
 
     @property
     def category(self):
-        """Gets the category of this HttpAccessControlRuleCondition.
+        r"""Gets the category of this HttpAccessControlRuleCondition.
 
         字段类型。可选值为：url、custom_asn、custom_geoip、robot、user-agent、ip、params、cookie、referer、header、method、request_line、request、response_code、response_length、response_time、response_header、response_body
 
@@ -96,7 +96,7 @@ class HttpAccessControlRuleCondition:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this HttpAccessControlRuleCondition.
+        r"""Sets the category of this HttpAccessControlRuleCondition.
 
         字段类型。可选值为：url、custom_asn、custom_geoip、robot、user-agent、ip、params、cookie、referer、header、method、request_line、request、response_code、response_length、response_time、response_header、response_body
 
@@ -107,7 +107,7 @@ class HttpAccessControlRuleCondition:
 
     @property
     def index(self):
-        """Gets the index of this HttpAccessControlRuleCondition.
+        r"""Gets the index of this HttpAccessControlRuleCondition.
 
         子字段：  - 字段类型为url、custom_asn、custom_geoip、robot、user-agent、referer、request_line、method、request、response_code、response_length、response_time、response_body时，不需要传index参数    - 字段类型为params、cookie、header、response_header并且子字段为自定义时，index的值为自定义子字段
 
@@ -118,7 +118,7 @@ class HttpAccessControlRuleCondition:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this HttpAccessControlRuleCondition.
+        r"""Sets the index of this HttpAccessControlRuleCondition.
 
         子字段：  - 字段类型为url、custom_asn、custom_geoip、robot、user-agent、referer、request_line、method、request、response_code、response_length、response_time、response_body时，不需要传index参数    - 字段类型为params、cookie、header、response_header并且子字段为自定义时，index的值为自定义子字段
 
@@ -129,7 +129,7 @@ class HttpAccessControlRuleCondition:
 
     @property
     def contents(self):
-        """Gets the contents of this HttpAccessControlRuleCondition.
+        r"""Gets the contents of this HttpAccessControlRuleCondition.
 
         内容列表
 
@@ -140,7 +140,7 @@ class HttpAccessControlRuleCondition:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this HttpAccessControlRuleCondition.
+        r"""Sets the contents of this HttpAccessControlRuleCondition.
 
         内容列表
 
@@ -151,7 +151,7 @@ class HttpAccessControlRuleCondition:
 
     @property
     def logic_operation(self):
-        """Gets the logic_operation of this HttpAccessControlRuleCondition.
+        r"""Gets the logic_operation of this HttpAccessControlRuleCondition.
 
         处理逻辑
 
@@ -162,7 +162,7 @@ class HttpAccessControlRuleCondition:
 
     @logic_operation.setter
     def logic_operation(self, logic_operation):
-        """Sets the logic_operation of this HttpAccessControlRuleCondition.
+        r"""Sets the logic_operation of this HttpAccessControlRuleCondition.
 
         处理逻辑
 
@@ -173,7 +173,7 @@ class HttpAccessControlRuleCondition:
 
     @property
     def value_list_id(self):
-        """Gets the value_list_id of this HttpAccessControlRuleCondition.
+        r"""Gets the value_list_id of this HttpAccessControlRuleCondition.
 
         引用表id
 
@@ -184,7 +184,7 @@ class HttpAccessControlRuleCondition:
 
     @value_list_id.setter
     def value_list_id(self, value_list_id):
-        """Sets the value_list_id of this HttpAccessControlRuleCondition.
+        r"""Sets the value_list_id of this HttpAccessControlRuleCondition.
 
         引用表id
 
@@ -195,7 +195,7 @@ class HttpAccessControlRuleCondition:
 
     @property
     def size(self):
-        """Gets the size of this HttpAccessControlRuleCondition.
+        r"""Gets the size of this HttpAccessControlRuleCondition.
 
         若防护规则涉及阈值，即使用该字段
 
@@ -206,7 +206,7 @@ class HttpAccessControlRuleCondition:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this HttpAccessControlRuleCondition.
+        r"""Sets the size of this HttpAccessControlRuleCondition.
 
         若防护规则涉及阈值，即使用该字段
 
@@ -217,7 +217,7 @@ class HttpAccessControlRuleCondition:
 
     @property
     def check_all_indexes_logic(self):
-        """Gets the check_all_indexes_logic of this HttpAccessControlRuleCondition.
+        r"""Gets the check_all_indexes_logic of this HttpAccessControlRuleCondition.
 
         1.所有子字段/2.任意子字段
 
@@ -228,7 +228,7 @@ class HttpAccessControlRuleCondition:
 
     @check_all_indexes_logic.setter
     def check_all_indexes_logic(self, check_all_indexes_logic):
-        """Sets the check_all_indexes_logic of this HttpAccessControlRuleCondition.
+        r"""Sets the check_all_indexes_logic of this HttpAccessControlRuleCondition.
 
         1.所有子字段/2.任意子字段
 

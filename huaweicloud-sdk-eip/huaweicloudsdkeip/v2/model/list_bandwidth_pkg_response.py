@@ -28,7 +28,7 @@ class ListBandwidthPkgResponse(SdkResponse):
     }
 
     def __init__(self, bandwidthpkgs=None, bandwidthpkgs_links=None):
-        """ListBandwidthPkgResponse
+        r"""ListBandwidthPkgResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBandwidthPkgResponse(SdkResponse):
 
     @property
     def bandwidthpkgs(self):
-        """Gets the bandwidthpkgs of this ListBandwidthPkgResponse.
+        r"""Gets the bandwidthpkgs of this ListBandwidthPkgResponse.
 
         bandwidthpkg对象列表
 
@@ -62,7 +62,7 @@ class ListBandwidthPkgResponse(SdkResponse):
 
     @bandwidthpkgs.setter
     def bandwidthpkgs(self, bandwidthpkgs):
-        """Sets the bandwidthpkgs of this ListBandwidthPkgResponse.
+        r"""Sets the bandwidthpkgs of this ListBandwidthPkgResponse.
 
         bandwidthpkg对象列表
 
@@ -73,7 +73,7 @@ class ListBandwidthPkgResponse(SdkResponse):
 
     @property
     def bandwidthpkgs_links(self):
-        """Gets the bandwidthpkgs_links of this ListBandwidthPkgResponse.
+        r"""Gets the bandwidthpkgs_links of this ListBandwidthPkgResponse.
 
         翻页展示
 
@@ -84,7 +84,7 @@ class ListBandwidthPkgResponse(SdkResponse):
 
     @bandwidthpkgs_links.setter
     def bandwidthpkgs_links(self, bandwidthpkgs_links):
-        """Sets the bandwidthpkgs_links of this ListBandwidthPkgResponse.
+        r"""Sets the bandwidthpkgs_links of this ListBandwidthPkgResponse.
 
         翻页展示
 

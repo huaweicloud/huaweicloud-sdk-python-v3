@@ -28,7 +28,7 @@ class ShowHttpIgnoreRulesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ShowHttpIgnoreRulesResponse
+        r"""ShowHttpIgnoreRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowHttpIgnoreRulesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowHttpIgnoreRulesResponse.
+        r"""Gets the total of this ShowHttpIgnoreRulesResponse.
 
         策略下防护规则数量
 
@@ -62,7 +62,7 @@ class ShowHttpIgnoreRulesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowHttpIgnoreRulesResponse.
+        r"""Sets the total of this ShowHttpIgnoreRulesResponse.
 
         策略下防护规则数量
 
@@ -73,7 +73,7 @@ class ShowHttpIgnoreRulesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ShowHttpIgnoreRulesResponse.
+        r"""Gets the items of this ShowHttpIgnoreRulesResponse.
 
         防护规则列表
 
@@ -84,7 +84,7 @@ class ShowHttpIgnoreRulesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ShowHttpIgnoreRulesResponse.
+        r"""Sets the items of this ShowHttpIgnoreRulesResponse.
 
         防护规则列表
 

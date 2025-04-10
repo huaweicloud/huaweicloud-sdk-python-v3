@@ -29,7 +29,7 @@ class QuotaRemainderData:
     }
 
     def __init__(self, type=None, remainder=None, need=None):
-        """QuotaRemainderData
+        r"""QuotaRemainderData
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QuotaRemainderData:
 
     @property
     def type(self):
-        """Gets the type of this QuotaRemainderData.
+        r"""Gets the type of this QuotaRemainderData.
 
         :return: The type of this QuotaRemainderData.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.QuotaResourceTypeEnum`
@@ -66,7 +66,7 @@ class QuotaRemainderData:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuotaRemainderData.
+        r"""Sets the type of this QuotaRemainderData.
 
         :param type: The type of this QuotaRemainderData.
         :type type: :class:`huaweicloudsdkworkspaceapp.v1.QuotaResourceTypeEnum`
@@ -75,7 +75,7 @@ class QuotaRemainderData:
 
     @property
     def remainder(self):
-        """Gets the remainder of this QuotaRemainderData.
+        r"""Gets the remainder of this QuotaRemainderData.
 
         剩余配额。
 
@@ -86,7 +86,7 @@ class QuotaRemainderData:
 
     @remainder.setter
     def remainder(self, remainder):
-        """Sets the remainder of this QuotaRemainderData.
+        r"""Sets the remainder of this QuotaRemainderData.
 
         剩余配额。
 
@@ -97,7 +97,7 @@ class QuotaRemainderData:
 
     @property
     def need(self):
-        """Gets the need of this QuotaRemainderData.
+        r"""Gets the need of this QuotaRemainderData.
 
         所需配额。
 
@@ -108,7 +108,7 @@ class QuotaRemainderData:
 
     @need.setter
     def need(self, need):
-        """Sets the need of this QuotaRemainderData.
+        r"""Sets the need of this QuotaRemainderData.
 
         所需配额。
 

@@ -24,7 +24,7 @@ class DeleteWorkspaceusersResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteWorkspaceusersResponse
+        r"""DeleteWorkspaceusersResponse
 
         The model defined in huaweicloud sdk
 

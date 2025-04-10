@@ -33,7 +33,7 @@ class OutputInfo:
     }
 
     def __init__(self, face_addr=None, body_addr=None, audio_addr=None, session_id=None, output_data_version=None):
-        """OutputInfo
+        r"""OutputInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class OutputInfo:
 
     @property
     def face_addr(self):
-        """Gets the face_addr of this OutputInfo.
+        r"""Gets the face_addr of this OutputInfo.
 
         面部表情输入地址。
 
@@ -82,7 +82,7 @@ class OutputInfo:
 
     @face_addr.setter
     def face_addr(self, face_addr):
-        """Sets the face_addr of this OutputInfo.
+        r"""Sets the face_addr of this OutputInfo.
 
         面部表情输入地址。
 
@@ -93,7 +93,7 @@ class OutputInfo:
 
     @property
     def body_addr(self):
-        """Gets the body_addr of this OutputInfo.
+        r"""Gets the body_addr of this OutputInfo.
 
         身体动作输入地址。
 
@@ -104,7 +104,7 @@ class OutputInfo:
 
     @body_addr.setter
     def body_addr(self, body_addr):
-        """Sets the body_addr of this OutputInfo.
+        r"""Sets the body_addr of this OutputInfo.
 
         身体动作输入地址。
 
@@ -115,7 +115,7 @@ class OutputInfo:
 
     @property
     def audio_addr(self):
-        """Gets the audio_addr of this OutputInfo.
+        r"""Gets the audio_addr of this OutputInfo.
 
         音频输入地址。
 
@@ -126,7 +126,7 @@ class OutputInfo:
 
     @audio_addr.setter
     def audio_addr(self, audio_addr):
-        """Sets the audio_addr of this OutputInfo.
+        r"""Sets the audio_addr of this OutputInfo.
 
         音频输入地址。
 
@@ -137,7 +137,7 @@ class OutputInfo:
 
     @property
     def session_id(self):
-        """Gets the session_id of this OutputInfo.
+        r"""Gets the session_id of this OutputInfo.
 
         会话ID。
 
@@ -148,7 +148,7 @@ class OutputInfo:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this OutputInfo.
+        r"""Sets the session_id of this OutputInfo.
 
         会话ID。
 
@@ -159,7 +159,7 @@ class OutputInfo:
 
     @property
     def output_data_version(self):
-        """Gets the output_data_version of this OutputInfo.
+        r"""Gets the output_data_version of this OutputInfo.
 
         输出数据的格式版本，如请求中无此参数，则输出数据格式为1.0，可选值有： 1.0: 对应的输出为：         动作数据：75个骨骼旋转值         表情数据：52ARkit表情及参数 2.0: 对应的输出为：         动作数据：55个骨骼旋转值+骨骼3D坐标         表情数据：178个控制器的数据
 
@@ -170,7 +170,7 @@ class OutputInfo:
 
     @output_data_version.setter
     def output_data_version(self, output_data_version):
-        """Sets the output_data_version of this OutputInfo.
+        r"""Sets the output_data_version of this OutputInfo.
 
         输出数据的格式版本，如请求中无此参数，则输出数据格式为1.0，可选值有： 1.0: 对应的输出为：         动作数据：75个骨骼旋转值         表情数据：52ARkit表情及参数 2.0: 对应的输出为：         动作数据：55个骨骼旋转值+骨骼3D坐标         表情数据：178个控制器的数据
 

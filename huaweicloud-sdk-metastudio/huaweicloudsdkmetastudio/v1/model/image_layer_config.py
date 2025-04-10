@@ -25,7 +25,7 @@ class ImageLayerConfig:
     }
 
     def __init__(self, image_url=None):
-        """ImageLayerConfig
+        r"""ImageLayerConfig
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImageLayerConfig:
 
     @property
     def image_url(self):
-        """Gets the image_url of this ImageLayerConfig.
+        r"""Gets the image_url of this ImageLayerConfig.
 
         **参数解释**： 图片文件的URL。 **约束限制**： * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及
 
@@ -54,7 +54,7 @@ class ImageLayerConfig:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this ImageLayerConfig.
+        r"""Sets the image_url of this ImageLayerConfig.
 
         **参数解释**： 图片文件的URL。 **约束限制**： * 仅直播支持外部URL，其他业务通过资产库查询获取，不支持外部URL。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及
 

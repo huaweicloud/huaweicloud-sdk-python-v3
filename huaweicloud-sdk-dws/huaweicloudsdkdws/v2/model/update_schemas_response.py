@@ -26,7 +26,7 @@ class UpdateSchemasResponse(SdkResponse):
     }
 
     def __init__(self, ret_code=None):
-        """UpdateSchemasResponse
+        r"""UpdateSchemasResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateSchemasResponse(SdkResponse):
 
     @property
     def ret_code(self):
-        """Gets the ret_code of this UpdateSchemasResponse.
+        r"""Gets the ret_code of this UpdateSchemasResponse.
 
         响应编码。
 
@@ -55,7 +55,7 @@ class UpdateSchemasResponse(SdkResponse):
 
     @ret_code.setter
     def ret_code(self, ret_code):
-        """Sets the ret_code of this UpdateSchemasResponse.
+        r"""Sets the ret_code of this UpdateSchemasResponse.
 
         响应编码。
 

@@ -24,7 +24,7 @@ class InviteShareResponse(SdkResponse):
     }
 
     def __init__(self):
-        """InviteShareResponse
+        r"""InviteShareResponse
 
         The model defined in huaweicloud sdk
 

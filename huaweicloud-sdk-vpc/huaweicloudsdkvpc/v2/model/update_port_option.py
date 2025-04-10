@@ -31,7 +31,7 @@ class UpdatePortOption:
     }
 
     def __init__(self, name=None, security_groups=None, allowed_address_pairs=None, extra_dhcp_opts=None):
-        """UpdatePortOption
+        r"""UpdatePortOption
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdatePortOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdatePortOption.
+        r"""Gets the name of this UpdatePortOption.
 
         功能说明：端口名称 取值范围：0~255个字符，支持中文、英文、字母、_(下划线)、-（中划线）
 
@@ -75,7 +75,7 @@ class UpdatePortOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdatePortOption.
+        r"""Sets the name of this UpdatePortOption.
 
         功能说明：端口名称 取值范围：0~255个字符，支持中文、英文、字母、_(下划线)、-（中划线）
 
@@ -86,7 +86,7 @@ class UpdatePortOption:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this UpdatePortOption.
+        r"""Gets the security_groups of this UpdatePortOption.
 
         安全组的ID列表
 
@@ -97,7 +97,7 @@ class UpdatePortOption:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this UpdatePortOption.
+        r"""Sets the security_groups of this UpdatePortOption.
 
         安全组的ID列表
 
@@ -108,7 +108,7 @@ class UpdatePortOption:
 
     @property
     def allowed_address_pairs(self):
-        """Gets the allowed_address_pairs of this UpdatePortOption.
+        r"""Gets the allowed_address_pairs of this UpdatePortOption.
 
         功能说明：IP/Mac对列表 约束： - IP地址不允许为 “0.0.0.0”。 - 如果配置地址池较大（CIDR掩码小于24位），建议为该port配置一个单独的安全组。 - 为虚拟IP配置后端ECS场景，allowed_address_pairs中配置的IP地址，必须为ECS网卡已有的IP地址，否则可能会导致虚拟IP通信异常。
 
@@ -119,7 +119,7 @@ class UpdatePortOption:
 
     @allowed_address_pairs.setter
     def allowed_address_pairs(self, allowed_address_pairs):
-        """Sets the allowed_address_pairs of this UpdatePortOption.
+        r"""Sets the allowed_address_pairs of this UpdatePortOption.
 
         功能说明：IP/Mac对列表 约束： - IP地址不允许为 “0.0.0.0”。 - 如果配置地址池较大（CIDR掩码小于24位），建议为该port配置一个单独的安全组。 - 为虚拟IP配置后端ECS场景，allowed_address_pairs中配置的IP地址，必须为ECS网卡已有的IP地址，否则可能会导致虚拟IP通信异常。
 
@@ -130,7 +130,7 @@ class UpdatePortOption:
 
     @property
     def extra_dhcp_opts(self):
-        """Gets the extra_dhcp_opts of this UpdatePortOption.
+        r"""Gets the extra_dhcp_opts of this UpdatePortOption.
 
         功能说明：DHCP的扩展Option(扩展属性)
 
@@ -141,7 +141,7 @@ class UpdatePortOption:
 
     @extra_dhcp_opts.setter
     def extra_dhcp_opts(self, extra_dhcp_opts):
-        """Sets the extra_dhcp_opts of this UpdatePortOption.
+        r"""Sets the extra_dhcp_opts of this UpdatePortOption.
 
         功能说明：DHCP的扩展Option(扩展属性)
 

@@ -29,7 +29,7 @@ class TaskLogInfo:
     }
 
     def __init__(self, level=None, message=None, create_time=None):
-        """TaskLogInfo
+        r"""TaskLogInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TaskLogInfo:
 
     @property
     def level(self):
-        """Gets the level of this TaskLogInfo.
+        r"""Gets the level of this TaskLogInfo.
 
         日志级别。
 
@@ -68,7 +68,7 @@ class TaskLogInfo:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this TaskLogInfo.
+        r"""Sets the level of this TaskLogInfo.
 
         日志级别。
 
@@ -79,7 +79,7 @@ class TaskLogInfo:
 
     @property
     def message(self):
-        """Gets the message of this TaskLogInfo.
+        r"""Gets the message of this TaskLogInfo.
 
         日志信息。
 
@@ -90,7 +90,7 @@ class TaskLogInfo:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this TaskLogInfo.
+        r"""Sets the message of this TaskLogInfo.
 
         日志信息。
 
@@ -101,7 +101,7 @@ class TaskLogInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TaskLogInfo.
+        r"""Gets the create_time of this TaskLogInfo.
 
         日志时间。
 
@@ -112,7 +112,7 @@ class TaskLogInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TaskLogInfo.
+        r"""Sets the create_time of this TaskLogInfo.
 
         日志时间。
 

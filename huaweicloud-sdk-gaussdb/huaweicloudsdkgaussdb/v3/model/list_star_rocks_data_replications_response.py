@@ -30,7 +30,7 @@ class ListStarRocksDataReplicationsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, replications=None, ext_text=None):
-        """ListStarRocksDataReplicationsResponse
+        r"""ListStarRocksDataReplicationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListStarRocksDataReplicationsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListStarRocksDataReplicationsResponse.
+        r"""Gets the total_count of this ListStarRocksDataReplicationsResponse.
 
         查询数据同步任务数。
 
@@ -69,7 +69,7 @@ class ListStarRocksDataReplicationsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListStarRocksDataReplicationsResponse.
+        r"""Sets the total_count of this ListStarRocksDataReplicationsResponse.
 
         查询数据同步任务数。
 
@@ -80,7 +80,7 @@ class ListStarRocksDataReplicationsResponse(SdkResponse):
 
     @property
     def replications(self):
-        """Gets the replications of this ListStarRocksDataReplicationsResponse.
+        r"""Gets the replications of this ListStarRocksDataReplicationsResponse.
 
         数据同步任务信息。
 
@@ -91,7 +91,7 @@ class ListStarRocksDataReplicationsResponse(SdkResponse):
 
     @replications.setter
     def replications(self, replications):
-        """Sets the replications of this ListStarRocksDataReplicationsResponse.
+        r"""Sets the replications of this ListStarRocksDataReplicationsResponse.
 
         数据同步任务信息。
 
@@ -102,7 +102,7 @@ class ListStarRocksDataReplicationsResponse(SdkResponse):
 
     @property
     def ext_text(self):
-        """Gets the ext_text of this ListStarRocksDataReplicationsResponse.
+        r"""Gets the ext_text of this ListStarRocksDataReplicationsResponse.
 
         扩展字段。
 
@@ -113,7 +113,7 @@ class ListStarRocksDataReplicationsResponse(SdkResponse):
 
     @ext_text.setter
     def ext_text(self, ext_text):
-        """Sets the ext_text of this ListStarRocksDataReplicationsResponse.
+        r"""Sets the ext_text of this ListStarRocksDataReplicationsResponse.
 
         扩展字段。
 

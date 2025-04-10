@@ -77,7 +77,7 @@ class CocIssuesTicketDetailInfoResponseData:
     }
 
     def __init__(self, ticket_type=None, level=None, impacted_cloud_services=None, root_cause_cloud_service=None, root_cause_type=None, root_cause_comment=None, solution=None, issue_contact_person=None, reproduce_probability=None, issue_version=None, title=None, virtual_schedule_type=None, regions=None, description=None, fount_time=None, is_common_issue=None, is_need_change=None, creator=None, operator=None, ticket_id=None, assignee=None, work_flow_status=None, phase=None, update_time=None, create_time=None, is_deleted=None, enum_data_list=None):
-        """CocIssuesTicketDetailInfoResponseData
+        r"""CocIssuesTicketDetailInfoResponseData
 
         The model defined in huaweicloud sdk
 
@@ -225,7 +225,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def ticket_type(self):
-        """Gets the ticket_type of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the ticket_type of this CocIssuesTicketDetailInfoResponseData.
 
         问题类型
 
@@ -236,7 +236,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @ticket_type.setter
     def ticket_type(self, ticket_type):
-        """Sets the ticket_type of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the ticket_type of this CocIssuesTicketDetailInfoResponseData.
 
         问题类型
 
@@ -247,7 +247,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def level(self):
-        """Gets the level of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the level of this CocIssuesTicketDetailInfoResponseData.
 
         问题等级
 
@@ -258,7 +258,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the level of this CocIssuesTicketDetailInfoResponseData.
 
         问题等级
 
@@ -269,7 +269,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def impacted_cloud_services(self):
-        """Gets the impacted_cloud_services of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the impacted_cloud_services of this CocIssuesTicketDetailInfoResponseData.
 
         影响服务
 
@@ -280,7 +280,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @impacted_cloud_services.setter
     def impacted_cloud_services(self, impacted_cloud_services):
-        """Sets the impacted_cloud_services of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the impacted_cloud_services of this CocIssuesTicketDetailInfoResponseData.
 
         影响服务
 
@@ -291,7 +291,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def root_cause_cloud_service(self):
-        """Gets the root_cause_cloud_service of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the root_cause_cloud_service of this CocIssuesTicketDetailInfoResponseData.
 
         责任服务
 
@@ -302,7 +302,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @root_cause_cloud_service.setter
     def root_cause_cloud_service(self, root_cause_cloud_service):
-        """Sets the root_cause_cloud_service of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the root_cause_cloud_service of this CocIssuesTicketDetailInfoResponseData.
 
         责任服务
 
@@ -313,7 +313,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def root_cause_type(self):
-        """Gets the root_cause_type of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the root_cause_type of this CocIssuesTicketDetailInfoResponseData.
 
         根因类型
 
@@ -324,7 +324,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @root_cause_type.setter
     def root_cause_type(self, root_cause_type):
-        """Sets the root_cause_type of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the root_cause_type of this CocIssuesTicketDetailInfoResponseData.
 
         根因类型
 
@@ -335,7 +335,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def root_cause_comment(self):
-        """Gets the root_cause_comment of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the root_cause_comment of this CocIssuesTicketDetailInfoResponseData.
 
         根因分析
 
@@ -346,7 +346,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @root_cause_comment.setter
     def root_cause_comment(self, root_cause_comment):
-        """Sets the root_cause_comment of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the root_cause_comment of this CocIssuesTicketDetailInfoResponseData.
 
         根因分析
 
@@ -357,7 +357,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def solution(self):
-        """Gets the solution of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the solution of this CocIssuesTicketDetailInfoResponseData.
 
         解决方案
 
@@ -368,7 +368,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @solution.setter
     def solution(self, solution):
-        """Sets the solution of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the solution of this CocIssuesTicketDetailInfoResponseData.
 
         解决方案
 
@@ -379,7 +379,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def issue_contact_person(self):
-        """Gets the issue_contact_person of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the issue_contact_person of this CocIssuesTicketDetailInfoResponseData.
 
         问题接口人id
 
@@ -390,7 +390,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @issue_contact_person.setter
     def issue_contact_person(self, issue_contact_person):
-        """Sets the issue_contact_person of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the issue_contact_person of this CocIssuesTicketDetailInfoResponseData.
 
         问题接口人id
 
@@ -401,7 +401,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def reproduce_probability(self):
-        """Gets the reproduce_probability of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the reproduce_probability of this CocIssuesTicketDetailInfoResponseData.
 
         重现概率
 
@@ -412,7 +412,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @reproduce_probability.setter
     def reproduce_probability(self, reproduce_probability):
-        """Sets the reproduce_probability of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the reproduce_probability of this CocIssuesTicketDetailInfoResponseData.
 
         重现概率
 
@@ -423,7 +423,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def issue_version(self):
-        """Gets the issue_version of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the issue_version of this CocIssuesTicketDetailInfoResponseData.
 
         发现问题的版本号
 
@@ -434,7 +434,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @issue_version.setter
     def issue_version(self, issue_version):
-        """Sets the issue_version of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the issue_version of this CocIssuesTicketDetailInfoResponseData.
 
         发现问题的版本号
 
@@ -445,7 +445,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def title(self):
-        """Gets the title of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the title of this CocIssuesTicketDetailInfoResponseData.
 
         问题标题
 
@@ -456,7 +456,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the title of this CocIssuesTicketDetailInfoResponseData.
 
         问题标题
 
@@ -467,7 +467,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def virtual_schedule_type(self):
-        """Gets the virtual_schedule_type of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the virtual_schedule_type of this CocIssuesTicketDetailInfoResponseData.
 
         排班类型
 
@@ -478,7 +478,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @virtual_schedule_type.setter
     def virtual_schedule_type(self, virtual_schedule_type):
-        """Sets the virtual_schedule_type of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the virtual_schedule_type of this CocIssuesTicketDetailInfoResponseData.
 
         排班类型
 
@@ -489,7 +489,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def regions(self):
-        """Gets the regions of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the regions of this CocIssuesTicketDetailInfoResponseData.
 
         区域
 
@@ -500,7 +500,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @regions.setter
     def regions(self, regions):
-        """Sets the regions of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the regions of this CocIssuesTicketDetailInfoResponseData.
 
         区域
 
@@ -511,7 +511,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def description(self):
-        """Gets the description of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the description of this CocIssuesTicketDetailInfoResponseData.
 
         描述
 
@@ -522,7 +522,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the description of this CocIssuesTicketDetailInfoResponseData.
 
         描述
 
@@ -533,7 +533,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def fount_time(self):
-        """Gets the fount_time of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the fount_time of this CocIssuesTicketDetailInfoResponseData.
 
         发现时间
 
@@ -544,7 +544,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @fount_time.setter
     def fount_time(self, fount_time):
-        """Sets the fount_time of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the fount_time of this CocIssuesTicketDetailInfoResponseData.
 
         发现时间
 
@@ -555,7 +555,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def is_common_issue(self):
-        """Gets the is_common_issue of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the is_common_issue of this CocIssuesTicketDetailInfoResponseData.
 
         是否共性问题
 
@@ -566,7 +566,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @is_common_issue.setter
     def is_common_issue(self, is_common_issue):
-        """Sets the is_common_issue of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the is_common_issue of this CocIssuesTicketDetailInfoResponseData.
 
         是否共性问题
 
@@ -577,7 +577,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def is_need_change(self):
-        """Gets the is_need_change of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the is_need_change of this CocIssuesTicketDetailInfoResponseData.
 
         是否需要变更
 
@@ -588,7 +588,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @is_need_change.setter
     def is_need_change(self, is_need_change):
-        """Sets the is_need_change of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the is_need_change of this CocIssuesTicketDetailInfoResponseData.
 
         是否需要变更
 
@@ -599,7 +599,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def creator(self):
-        """Gets the creator of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the creator of this CocIssuesTicketDetailInfoResponseData.
 
         创建人
 
@@ -610,7 +610,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the creator of this CocIssuesTicketDetailInfoResponseData.
 
         创建人
 
@@ -621,7 +621,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def operator(self):
-        """Gets the operator of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the operator of this CocIssuesTicketDetailInfoResponseData.
 
         操作人
 
@@ -632,7 +632,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the operator of this CocIssuesTicketDetailInfoResponseData.
 
         操作人
 
@@ -643,7 +643,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def ticket_id(self):
-        """Gets the ticket_id of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the ticket_id of this CocIssuesTicketDetailInfoResponseData.
 
         问题单id
 
@@ -654,7 +654,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @ticket_id.setter
     def ticket_id(self, ticket_id):
-        """Sets the ticket_id of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the ticket_id of this CocIssuesTicketDetailInfoResponseData.
 
         问题单id
 
@@ -665,7 +665,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def assignee(self):
-        """Gets the assignee of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the assignee of this CocIssuesTicketDetailInfoResponseData.
 
         责任人
 
@@ -676,7 +676,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @assignee.setter
     def assignee(self, assignee):
-        """Sets the assignee of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the assignee of this CocIssuesTicketDetailInfoResponseData.
 
         责任人
 
@@ -687,7 +687,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def work_flow_status(self):
-        """Gets the work_flow_status of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the work_flow_status of this CocIssuesTicketDetailInfoResponseData.
 
         问题单状态
 
@@ -698,7 +698,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @work_flow_status.setter
     def work_flow_status(self, work_flow_status):
-        """Sets the work_flow_status of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the work_flow_status of this CocIssuesTicketDetailInfoResponseData.
 
         问题单状态
 
@@ -709,7 +709,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def phase(self):
-        """Gets the phase of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the phase of this CocIssuesTicketDetailInfoResponseData.
 
         阶段
 
@@ -720,7 +720,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the phase of this CocIssuesTicketDetailInfoResponseData.
 
         阶段
 
@@ -731,7 +731,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def update_time(self):
-        """Gets the update_time of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the update_time of this CocIssuesTicketDetailInfoResponseData.
 
         更新时间
 
@@ -742,7 +742,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the update_time of this CocIssuesTicketDetailInfoResponseData.
 
         更新时间
 
@@ -753,7 +753,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the create_time of this CocIssuesTicketDetailInfoResponseData.
 
         创建时间
 
@@ -764,7 +764,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the create_time of this CocIssuesTicketDetailInfoResponseData.
 
         创建时间
 
@@ -775,7 +775,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def is_deleted(self):
-        """Gets the is_deleted of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the is_deleted of this CocIssuesTicketDetailInfoResponseData.
 
         是否删除
 
@@ -786,7 +786,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @is_deleted.setter
     def is_deleted(self, is_deleted):
-        """Sets the is_deleted of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the is_deleted of this CocIssuesTicketDetailInfoResponseData.
 
         是否删除
 
@@ -797,7 +797,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @property
     def enum_data_list(self):
-        """Gets the enum_data_list of this CocIssuesTicketDetailInfoResponseData.
+        r"""Gets the enum_data_list of this CocIssuesTicketDetailInfoResponseData.
 
         枚举列表
 
@@ -808,7 +808,7 @@ class CocIssuesTicketDetailInfoResponseData:
 
     @enum_data_list.setter
     def enum_data_list(self, enum_data_list):
-        """Sets the enum_data_list of this CocIssuesTicketDetailInfoResponseData.
+        r"""Sets the enum_data_list of this CocIssuesTicketDetailInfoResponseData.
 
         枚举列表
 

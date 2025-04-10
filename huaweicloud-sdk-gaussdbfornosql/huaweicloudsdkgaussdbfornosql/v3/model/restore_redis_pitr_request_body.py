@@ -25,7 +25,7 @@ class RestoreRedisPitrRequestBody:
     }
 
     def __init__(self, restore_time=None):
-        """RestoreRedisPitrRequestBody
+        r"""RestoreRedisPitrRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestoreRedisPitrRequestBody:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this RestoreRedisPitrRequestBody.
+        r"""Gets the restore_time of this RestoreRedisPitrRequestBody.
 
         恢复的指定时间点, 格式为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。  获取方法请参见 查询Redis可恢复时间点 中响应“restore_time”字段下参数的值。
 
@@ -53,7 +53,7 @@ class RestoreRedisPitrRequestBody:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this RestoreRedisPitrRequestBody.
+        r"""Sets the restore_time of this RestoreRedisPitrRequestBody.
 
         恢复的指定时间点, 格式为yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。  获取方法请参见 查询Redis可恢复时间点 中响应“restore_time”字段下参数的值。
 

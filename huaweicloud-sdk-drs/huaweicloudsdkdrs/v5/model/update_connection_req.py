@@ -41,7 +41,7 @@ class UpdateConnectionReq:
     }
 
     def __init__(self, name=None, db_type=None, config=None, description=None, endpoint=None, vpc=None, ssl=None, cloud=None, enterprise_project_id=None):
-        """UpdateConnectionReq
+        r"""UpdateConnectionReq
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class UpdateConnectionReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateConnectionReq.
+        r"""Gets the name of this UpdateConnectionReq.
 
         连接名称。
 
@@ -110,7 +110,7 @@ class UpdateConnectionReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateConnectionReq.
+        r"""Sets the name of this UpdateConnectionReq.
 
         连接名称。
 
@@ -121,7 +121,7 @@ class UpdateConnectionReq:
 
     @property
     def db_type(self):
-        """Gets the db_type of this UpdateConnectionReq.
+        r"""Gets the db_type of this UpdateConnectionReq.
 
         数据库类型。
 
@@ -132,7 +132,7 @@ class UpdateConnectionReq:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this UpdateConnectionReq.
+        r"""Sets the db_type of this UpdateConnectionReq.
 
         数据库类型。
 
@@ -143,7 +143,7 @@ class UpdateConnectionReq:
 
     @property
     def config(self):
-        """Gets the config of this UpdateConnectionReq.
+        r"""Gets the config of this UpdateConnectionReq.
 
         :return: The config of this UpdateConnectionReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.ConnectionConfig`
@@ -152,7 +152,7 @@ class UpdateConnectionReq:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this UpdateConnectionReq.
+        r"""Sets the config of this UpdateConnectionReq.
 
         :param config: The config of this UpdateConnectionReq.
         :type config: :class:`huaweicloudsdkdrs.v5.ConnectionConfig`
@@ -161,7 +161,7 @@ class UpdateConnectionReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateConnectionReq.
+        r"""Gets the description of this UpdateConnectionReq.
 
         连接描述。
 
@@ -172,7 +172,7 @@ class UpdateConnectionReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateConnectionReq.
+        r"""Sets the description of this UpdateConnectionReq.
 
         连接描述。
 
@@ -183,7 +183,7 @@ class UpdateConnectionReq:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this UpdateConnectionReq.
+        r"""Gets the endpoint of this UpdateConnectionReq.
 
         :return: The endpoint of this UpdateConnectionReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.BaseEndpoint`
@@ -192,7 +192,7 @@ class UpdateConnectionReq:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this UpdateConnectionReq.
+        r"""Sets the endpoint of this UpdateConnectionReq.
 
         :param endpoint: The endpoint of this UpdateConnectionReq.
         :type endpoint: :class:`huaweicloudsdkdrs.v5.BaseEndpoint`
@@ -201,7 +201,7 @@ class UpdateConnectionReq:
 
     @property
     def vpc(self):
-        """Gets the vpc of this UpdateConnectionReq.
+        r"""Gets the vpc of this UpdateConnectionReq.
 
         :return: The vpc of this UpdateConnectionReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.CloudVpcInfo`
@@ -210,7 +210,7 @@ class UpdateConnectionReq:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this UpdateConnectionReq.
+        r"""Sets the vpc of this UpdateConnectionReq.
 
         :param vpc: The vpc of this UpdateConnectionReq.
         :type vpc: :class:`huaweicloudsdkdrs.v5.CloudVpcInfo`
@@ -219,7 +219,7 @@ class UpdateConnectionReq:
 
     @property
     def ssl(self):
-        """Gets the ssl of this UpdateConnectionReq.
+        r"""Gets the ssl of this UpdateConnectionReq.
 
         :return: The ssl of this UpdateConnectionReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.EndpointSslConfig`
@@ -228,7 +228,7 @@ class UpdateConnectionReq:
 
     @ssl.setter
     def ssl(self, ssl):
-        """Sets the ssl of this UpdateConnectionReq.
+        r"""Sets the ssl of this UpdateConnectionReq.
 
         :param ssl: The ssl of this UpdateConnectionReq.
         :type ssl: :class:`huaweicloudsdkdrs.v5.EndpointSslConfig`
@@ -237,7 +237,7 @@ class UpdateConnectionReq:
 
     @property
     def cloud(self):
-        """Gets the cloud of this UpdateConnectionReq.
+        r"""Gets the cloud of this UpdateConnectionReq.
 
         :return: The cloud of this UpdateConnectionReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.CloudBaseInfo`
@@ -246,7 +246,7 @@ class UpdateConnectionReq:
 
     @cloud.setter
     def cloud(self, cloud):
-        """Sets the cloud of this UpdateConnectionReq.
+        r"""Sets the cloud of this UpdateConnectionReq.
 
         :param cloud: The cloud of this UpdateConnectionReq.
         :type cloud: :class:`huaweicloudsdkdrs.v5.CloudBaseInfo`
@@ -255,7 +255,7 @@ class UpdateConnectionReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateConnectionReq.
+        r"""Gets the enterprise_project_id of this UpdateConnectionReq.
 
         企业项目ID。
 
@@ -266,7 +266,7 @@ class UpdateConnectionReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateConnectionReq.
+        r"""Sets the enterprise_project_id of this UpdateConnectionReq.
 
         企业项目ID。
 

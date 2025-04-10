@@ -27,7 +27,7 @@ class ShowDiffCommitRequest:
     }
 
     def __init__(self, repo_id=None, sha=None):
-        """ShowDiffCommitRequest
+        r"""ShowDiffCommitRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDiffCommitRequest:
 
     @property
     def repo_id(self):
-        """Gets the repo_id of this ShowDiffCommitRequest.
+        r"""Gets the repo_id of this ShowDiffCommitRequest.
 
         仓库短id
 
@@ -59,7 +59,7 @@ class ShowDiffCommitRequest:
 
     @repo_id.setter
     def repo_id(self, repo_id):
-        """Sets the repo_id of this ShowDiffCommitRequest.
+        r"""Sets the repo_id of this ShowDiffCommitRequest.
 
         仓库短id
 
@@ -70,7 +70,7 @@ class ShowDiffCommitRequest:
 
     @property
     def sha(self):
-        """Gets the sha of this ShowDiffCommitRequest.
+        r"""Gets the sha of this ShowDiffCommitRequest.
 
         commit id，仓库的branch名或tag名
 
@@ -81,7 +81,7 @@ class ShowDiffCommitRequest:
 
     @sha.setter
     def sha(self, sha):
-        """Sets the sha of this ShowDiffCommitRequest.
+        r"""Sets the sha of this ShowDiffCommitRequest.
 
         commit id，仓库的branch名或tag名
 

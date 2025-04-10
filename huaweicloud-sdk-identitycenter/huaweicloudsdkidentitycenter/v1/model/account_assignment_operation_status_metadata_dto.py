@@ -29,7 +29,7 @@ class AccountAssignmentOperationStatusMetadataDto:
     }
 
     def __init__(self, created_date=None, request_id=None, status=None):
-        """AccountAssignmentOperationStatusMetadataDto
+        r"""AccountAssignmentOperationStatusMetadataDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AccountAssignmentOperationStatusMetadataDto:
 
     @property
     def created_date(self):
-        """Gets the created_date of this AccountAssignmentOperationStatusMetadataDto.
+        r"""Gets the created_date of this AccountAssignmentOperationStatusMetadataDto.
 
         创建日期
 
@@ -68,7 +68,7 @@ class AccountAssignmentOperationStatusMetadataDto:
 
     @created_date.setter
     def created_date(self, created_date):
-        """Sets the created_date of this AccountAssignmentOperationStatusMetadataDto.
+        r"""Sets the created_date of this AccountAssignmentOperationStatusMetadataDto.
 
         创建日期
 
@@ -79,7 +79,7 @@ class AccountAssignmentOperationStatusMetadataDto:
 
     @property
     def request_id(self):
-        """Gets the request_id of this AccountAssignmentOperationStatusMetadataDto.
+        r"""Gets the request_id of this AccountAssignmentOperationStatusMetadataDto.
 
         请求唯一标识
 
@@ -90,7 +90,7 @@ class AccountAssignmentOperationStatusMetadataDto:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AccountAssignmentOperationStatusMetadataDto.
+        r"""Sets the request_id of this AccountAssignmentOperationStatusMetadataDto.
 
         请求唯一标识
 
@@ -101,7 +101,7 @@ class AccountAssignmentOperationStatusMetadataDto:
 
     @property
     def status(self):
-        """Gets the status of this AccountAssignmentOperationStatusMetadataDto.
+        r"""Gets the status of this AccountAssignmentOperationStatusMetadataDto.
 
         权限集授权状态
 
@@ -112,7 +112,7 @@ class AccountAssignmentOperationStatusMetadataDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AccountAssignmentOperationStatusMetadataDto.
+        r"""Sets the status of this AccountAssignmentOperationStatusMetadataDto.
 
         权限集授权状态
 

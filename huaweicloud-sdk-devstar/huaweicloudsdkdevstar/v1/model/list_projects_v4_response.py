@@ -28,7 +28,7 @@ class ListProjectsV4Response(SdkResponse):
     }
 
     def __init__(self, projects=None, count=None):
-        """ListProjectsV4Response
+        r"""ListProjectsV4Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProjectsV4Response(SdkResponse):
 
     @property
     def projects(self):
-        """Gets the projects of this ListProjectsV4Response.
+        r"""Gets the projects of this ListProjectsV4Response.
 
         项目列表
 
@@ -62,7 +62,7 @@ class ListProjectsV4Response(SdkResponse):
 
     @projects.setter
     def projects(self, projects):
-        """Sets the projects of this ListProjectsV4Response.
+        r"""Sets the projects of this ListProjectsV4Response.
 
         项目列表
 
@@ -73,7 +73,7 @@ class ListProjectsV4Response(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListProjectsV4Response.
+        r"""Gets the count of this ListProjectsV4Response.
 
         总数
 
@@ -84,7 +84,7 @@ class ListProjectsV4Response(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListProjectsV4Response.
+        r"""Sets the count of this ListProjectsV4Response.
 
         总数
 

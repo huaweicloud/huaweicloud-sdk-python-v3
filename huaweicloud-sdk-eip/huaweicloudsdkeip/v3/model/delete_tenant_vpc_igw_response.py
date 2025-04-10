@@ -24,7 +24,7 @@ class DeleteTenantVpcIgwResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteTenantVpcIgwResponse
+        r"""DeleteTenantVpcIgwResponse
 
         The model defined in huaweicloud sdk
 

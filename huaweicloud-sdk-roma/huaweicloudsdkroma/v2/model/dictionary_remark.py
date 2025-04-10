@@ -23,7 +23,7 @@ class DictionaryRemark:
     }
 
     def __init__(self):
-        """DictionaryRemark
+        r"""DictionaryRemark
 
         The model defined in huaweicloud sdk
 

@@ -31,7 +31,7 @@ class ListSourcesRequest:
     }
 
     def __init__(self, instance_id=None, rule_id=None, limit=None, offset=None):
-        """ListSourcesRequest
+        r"""ListSourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListSourcesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSourcesRequest.
+        r"""Gets the instance_id of this ListSourcesRequest.
 
         实例ID
 
@@ -73,7 +73,7 @@ class ListSourcesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSourcesRequest.
+        r"""Sets the instance_id of this ListSourcesRequest.
 
         实例ID
 
@@ -84,7 +84,7 @@ class ListSourcesRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ListSourcesRequest.
+        r"""Gets the rule_id of this ListSourcesRequest.
 
         规则ID
 
@@ -95,7 +95,7 @@ class ListSourcesRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ListSourcesRequest.
+        r"""Sets the rule_id of this ListSourcesRequest.
 
         规则ID
 
@@ -106,7 +106,7 @@ class ListSourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSourcesRequest.
+        r"""Gets the limit of this ListSourcesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -117,7 +117,7 @@ class ListSourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSourcesRequest.
+        r"""Sets the limit of this ListSourcesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -128,7 +128,7 @@ class ListSourcesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSourcesRequest.
+        r"""Gets the offset of this ListSourcesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -139,7 +139,7 @@ class ListSourcesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSourcesRequest.
+        r"""Sets the offset of this ListSourcesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 

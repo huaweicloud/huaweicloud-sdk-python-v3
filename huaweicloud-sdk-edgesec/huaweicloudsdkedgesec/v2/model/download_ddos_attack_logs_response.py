@@ -24,7 +24,7 @@ class DownloadDdosAttackLogsResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """DownloadDdosAttackLogsResponse
+        r"""DownloadDdosAttackLogsResponse
 
         The model defined in huaweicloud sdk
 

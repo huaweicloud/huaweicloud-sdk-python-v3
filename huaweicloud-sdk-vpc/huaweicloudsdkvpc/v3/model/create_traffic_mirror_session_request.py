@@ -25,7 +25,7 @@ class CreateTrafficMirrorSessionRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTrafficMirrorSessionRequest
+        r"""CreateTrafficMirrorSessionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTrafficMirrorSessionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTrafficMirrorSessionRequest.
+        r"""Gets the body of this CreateTrafficMirrorSessionRequest.
 
         :return: The body of this CreateTrafficMirrorSessionRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorSessionRequestBody`
@@ -52,7 +52,7 @@ class CreateTrafficMirrorSessionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTrafficMirrorSessionRequest.
+        r"""Sets the body of this CreateTrafficMirrorSessionRequest.
 
         :param body: The body of this CreateTrafficMirrorSessionRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorSessionRequestBody`

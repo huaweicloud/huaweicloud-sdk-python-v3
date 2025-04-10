@@ -29,7 +29,7 @@ class ShowDisasterRecoverySettingsRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ShowDisasterRecoverySettingsRequest
+        r"""ShowDisasterRecoverySettingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowDisasterRecoverySettingsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDisasterRecoverySettingsRequest.
+        r"""Gets the instance_id of this ShowDisasterRecoverySettingsRequest.
 
         实例ID。
 
@@ -68,7 +68,7 @@ class ShowDisasterRecoverySettingsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDisasterRecoverySettingsRequest.
+        r"""Sets the instance_id of this ShowDisasterRecoverySettingsRequest.
 
         实例ID。
 
@@ -79,7 +79,7 @@ class ShowDisasterRecoverySettingsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowDisasterRecoverySettingsRequest.
+        r"""Gets the offset of this ShowDisasterRecoverySettingsRequest.
 
         索引位置偏移量，表示从指定offset条数据后查询对应的实例信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
@@ -90,7 +90,7 @@ class ShowDisasterRecoverySettingsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowDisasterRecoverySettingsRequest.
+        r"""Sets the offset of this ShowDisasterRecoverySettingsRequest.
 
         索引位置偏移量，表示从指定offset条数据后查询对应的实例信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
@@ -101,7 +101,7 @@ class ShowDisasterRecoverySettingsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowDisasterRecoverySettingsRequest.
+        r"""Gets the limit of this ShowDisasterRecoverySettingsRequest.
 
         查询实例个数上限值。 取值范围：1~50。不传该参数时，默认查询前50条实例信息。
 
@@ -112,7 +112,7 @@ class ShowDisasterRecoverySettingsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowDisasterRecoverySettingsRequest.
+        r"""Sets the limit of this ShowDisasterRecoverySettingsRequest.
 
         查询实例个数上限值。 取值范围：1~50。不传该参数时，默认查询前50条实例信息。
 

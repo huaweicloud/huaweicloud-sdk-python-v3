@@ -29,7 +29,7 @@ class TaskOutputHostingForDisplay:
     }
 
     def __init__(self, obs=None, result_json_overdue_at=None, data_category=None):
-        """TaskOutputHostingForDisplay
+        r"""TaskOutputHostingForDisplay
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TaskOutputHostingForDisplay:
 
     @property
     def obs(self):
-        """Gets the obs of this TaskOutputHostingForDisplay.
+        r"""Gets the obs of this TaskOutputHostingForDisplay.
 
         作业所有结果文件所在的OBS桶和路径
 
@@ -68,7 +68,7 @@ class TaskOutputHostingForDisplay:
 
     @obs.setter
     def obs(self, obs):
-        """Sets the obs of this TaskOutputHostingForDisplay.
+        r"""Sets the obs of this TaskOutputHostingForDisplay.
 
         作业所有结果文件所在的OBS桶和路径
 
@@ -79,7 +79,7 @@ class TaskOutputHostingForDisplay:
 
     @property
     def result_json_overdue_at(self):
-        """Gets the result_json_overdue_at of this TaskOutputHostingForDisplay.
+        r"""Gets the result_json_overdue_at of this TaskOutputHostingForDisplay.
 
         作业结果文件的过期时间
 
@@ -90,7 +90,7 @@ class TaskOutputHostingForDisplay:
 
     @result_json_overdue_at.setter
     def result_json_overdue_at(self, result_json_overdue_at):
-        """Sets the result_json_overdue_at of this TaskOutputHostingForDisplay.
+        r"""Sets the result_json_overdue_at of this TaskOutputHostingForDisplay.
 
         作业结果文件的过期时间
 
@@ -101,7 +101,7 @@ class TaskOutputHostingForDisplay:
 
     @property
     def data_category(self):
-        """Gets the data_category of this TaskOutputHostingForDisplay.
+        r"""Gets the data_category of this TaskOutputHostingForDisplay.
 
         作业输出数据类别的列表，当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据，部分服务需要
 
@@ -112,7 +112,7 @@ class TaskOutputHostingForDisplay:
 
     @data_category.setter
     def data_category(self, data_category):
-        """Sets the data_category of this TaskOutputHostingForDisplay.
+        r"""Sets the data_category of this TaskOutputHostingForDisplay.
 
         作业输出数据类别的列表，当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据，部分服务需要
 

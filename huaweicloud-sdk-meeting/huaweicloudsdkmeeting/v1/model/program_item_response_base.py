@@ -31,7 +31,7 @@ class ProgramItemResponseBase:
     }
 
     def __init__(self, material_id=None, material_name=None, file_path=None, play_time=None):
-        """ProgramItemResponseBase
+        r"""ProgramItemResponseBase
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ProgramItemResponseBase:
 
     @property
     def material_id(self):
-        """Gets the material_id of this ProgramItemResponseBase.
+        r"""Gets the material_id of this ProgramItemResponseBase.
 
         素材ID。
 
@@ -75,7 +75,7 @@ class ProgramItemResponseBase:
 
     @material_id.setter
     def material_id(self, material_id):
-        """Sets the material_id of this ProgramItemResponseBase.
+        r"""Sets the material_id of this ProgramItemResponseBase.
 
         素材ID。
 
@@ -86,7 +86,7 @@ class ProgramItemResponseBase:
 
     @property
     def material_name(self):
-        """Gets the material_name of this ProgramItemResponseBase.
+        r"""Gets the material_name of this ProgramItemResponseBase.
 
         素材名称。
 
@@ -97,7 +97,7 @@ class ProgramItemResponseBase:
 
     @material_name.setter
     def material_name(self, material_name):
-        """Sets the material_name of this ProgramItemResponseBase.
+        r"""Sets the material_name of this ProgramItemResponseBase.
 
         素材名称。
 
@@ -108,7 +108,7 @@ class ProgramItemResponseBase:
 
     @property
     def file_path(self):
-        """Gets the file_path of this ProgramItemResponseBase.
+        r"""Gets the file_path of this ProgramItemResponseBase.
 
         素材云盘文件下载路径。
 
@@ -119,7 +119,7 @@ class ProgramItemResponseBase:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this ProgramItemResponseBase.
+        r"""Sets the file_path of this ProgramItemResponseBase.
 
         素材云盘文件下载路径。
 
@@ -130,7 +130,7 @@ class ProgramItemResponseBase:
 
     @property
     def play_time(self):
-        """Gets the play_time of this ProgramItemResponseBase.
+        r"""Gets the play_time of this ProgramItemResponseBase.
 
         播放时长。
 
@@ -141,7 +141,7 @@ class ProgramItemResponseBase:
 
     @play_time.setter
     def play_time(self, play_time):
-        """Sets the play_time of this ProgramItemResponseBase.
+        r"""Sets the play_time of this ProgramItemResponseBase.
 
         播放时长。
 

@@ -26,7 +26,7 @@ class UpdateMigprojectResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateMigprojectResponse
+        r"""UpdateMigprojectResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateMigprojectResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateMigprojectResponse.
+        r"""Gets the body of this UpdateMigprojectResponse.
 
         修改默认迁移项目信息成功
 
@@ -55,7 +55,7 @@ class UpdateMigprojectResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMigprojectResponse.
+        r"""Sets the body of this UpdateMigprojectResponse.
 
         修改默认迁移项目信息成功
 

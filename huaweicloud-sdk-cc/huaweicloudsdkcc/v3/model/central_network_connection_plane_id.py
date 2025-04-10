@@ -25,7 +25,7 @@ class CentralNetworkConnectionPlaneId:
     }
 
     def __init__(self, plane_id=None):
-        """CentralNetworkConnectionPlaneId
+        r"""CentralNetworkConnectionPlaneId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CentralNetworkConnectionPlaneId:
 
     @property
     def plane_id(self):
-        """Gets the plane_id of this CentralNetworkConnectionPlaneId.
+        r"""Gets the plane_id of this CentralNetworkConnectionPlaneId.
 
         中心网络平面ID。
 
@@ -53,7 +53,7 @@ class CentralNetworkConnectionPlaneId:
 
     @plane_id.setter
     def plane_id(self, plane_id):
-        """Sets the plane_id of this CentralNetworkConnectionPlaneId.
+        r"""Sets the plane_id of this CentralNetworkConnectionPlaneId.
 
         中心网络平面ID。
 

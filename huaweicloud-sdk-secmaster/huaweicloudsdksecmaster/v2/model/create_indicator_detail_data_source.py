@@ -35,7 +35,7 @@ class CreateIndicatorDetailDataSource:
     }
 
     def __init__(self, source_type=None, domain_id=None, project_id=None, region_id=None, product_name=None, product_feature=None):
-        """CreateIndicatorDetailDataSource
+        r"""CreateIndicatorDetailDataSource
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateIndicatorDetailDataSource:
 
     @property
     def source_type(self):
-        """Gets the source_type of this CreateIndicatorDetailDataSource.
+        r"""Gets the source_type of this CreateIndicatorDetailDataSource.
 
         current page count
 
@@ -83,7 +83,7 @@ class CreateIndicatorDetailDataSource:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this CreateIndicatorDetailDataSource.
+        r"""Sets the source_type of this CreateIndicatorDetailDataSource.
 
         current page count
 
@@ -94,7 +94,7 @@ class CreateIndicatorDetailDataSource:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateIndicatorDetailDataSource.
+        r"""Gets the domain_id of this CreateIndicatorDetailDataSource.
 
         Id value
 
@@ -105,7 +105,7 @@ class CreateIndicatorDetailDataSource:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateIndicatorDetailDataSource.
+        r"""Sets the domain_id of this CreateIndicatorDetailDataSource.
 
         Id value
 
@@ -116,7 +116,7 @@ class CreateIndicatorDetailDataSource:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateIndicatorDetailDataSource.
+        r"""Gets the project_id of this CreateIndicatorDetailDataSource.
 
         Id value
 
@@ -127,7 +127,7 @@ class CreateIndicatorDetailDataSource:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateIndicatorDetailDataSource.
+        r"""Sets the project_id of this CreateIndicatorDetailDataSource.
 
         Id value
 
@@ -138,7 +138,7 @@ class CreateIndicatorDetailDataSource:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateIndicatorDetailDataSource.
+        r"""Gets the region_id of this CreateIndicatorDetailDataSource.
 
         Id value
 
@@ -149,7 +149,7 @@ class CreateIndicatorDetailDataSource:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateIndicatorDetailDataSource.
+        r"""Sets the region_id of this CreateIndicatorDetailDataSource.
 
         Id value
 
@@ -160,7 +160,7 @@ class CreateIndicatorDetailDataSource:
 
     @property
     def product_name(self):
-        """Gets the product_name of this CreateIndicatorDetailDataSource.
+        r"""Gets the product_name of this CreateIndicatorDetailDataSource.
 
         Id value
 
@@ -171,7 +171,7 @@ class CreateIndicatorDetailDataSource:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this CreateIndicatorDetailDataSource.
+        r"""Sets the product_name of this CreateIndicatorDetailDataSource.
 
         Id value
 
@@ -182,7 +182,7 @@ class CreateIndicatorDetailDataSource:
 
     @property
     def product_feature(self):
-        """Gets the product_feature of this CreateIndicatorDetailDataSource.
+        r"""Gets the product_feature of this CreateIndicatorDetailDataSource.
 
         Id value
 
@@ -193,7 +193,7 @@ class CreateIndicatorDetailDataSource:
 
     @product_feature.setter
     def product_feature(self, product_feature):
-        """Sets the product_feature of this CreateIndicatorDetailDataSource.
+        r"""Sets the product_feature of this CreateIndicatorDetailDataSource.
 
         Id value
 

@@ -29,7 +29,7 @@ class QuotaDetail:
     }
 
     def __init__(self, type=None, quota=None, used=None):
-        """QuotaDetail
+        r"""QuotaDetail
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QuotaDetail:
 
     @property
     def type(self):
-        """Gets the type of this QuotaDetail.
+        r"""Gets the type of this QuotaDetail.
 
         资源类型 取值范围：  - edge_site：边缘小站  - compute_device：计算设备
 
@@ -68,7 +68,7 @@ class QuotaDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuotaDetail.
+        r"""Sets the type of this QuotaDetail.
 
         资源类型 取值范围：  - edge_site：边缘小站  - compute_device：计算设备
 
@@ -79,7 +79,7 @@ class QuotaDetail:
 
     @property
     def quota(self):
-        """Gets the quota of this QuotaDetail.
+        r"""Gets the quota of this QuotaDetail.
 
         资源的总配额 约束：资源的默认配额数可以修改，默认配置：边缘小站（10）
 
@@ -90,7 +90,7 @@ class QuotaDetail:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this QuotaDetail.
+        r"""Sets the quota of this QuotaDetail.
 
         资源的总配额 约束：资源的默认配额数可以修改，默认配置：边缘小站（10）
 
@@ -101,7 +101,7 @@ class QuotaDetail:
 
     @property
     def used(self):
-        """Gets the used of this QuotaDetail.
+        r"""Gets the used of this QuotaDetail.
 
         已创建的资源个数 取值范围：0~quota值
 
@@ -112,7 +112,7 @@ class QuotaDetail:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this QuotaDetail.
+        r"""Sets the used of this QuotaDetail.
 
         已创建的资源个数 取值范围：0~quota值
 

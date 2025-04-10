@@ -27,7 +27,7 @@ class UpdateSubscriptionUserRequestBody:
     }
 
     def __init__(self, name=None, group=None):
-        """UpdateSubscriptionUserRequestBody
+        r"""UpdateSubscriptionUserRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateSubscriptionUserRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateSubscriptionUserRequestBody.
+        r"""Gets the name of this UpdateSubscriptionUserRequestBody.
 
         订阅用户名称。
 
@@ -61,7 +61,7 @@ class UpdateSubscriptionUserRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateSubscriptionUserRequestBody.
+        r"""Sets the name of this UpdateSubscriptionUserRequestBody.
 
         订阅用户名称。
 
@@ -72,7 +72,7 @@ class UpdateSubscriptionUserRequestBody:
 
     @property
     def group(self):
-        """Gets the group of this UpdateSubscriptionUserRequestBody.
+        r"""Gets the group of this UpdateSubscriptionUserRequestBody.
 
         订阅用户分组。每个订阅分组只能包含小写英文字母([a-z])、数字([0-9])、下划线(_)，下划线不能出现在开始或结尾，下划线不能连续出现，长度为1到32个字符。
 
@@ -83,7 +83,7 @@ class UpdateSubscriptionUserRequestBody:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this UpdateSubscriptionUserRequestBody.
+        r"""Sets the group of this UpdateSubscriptionUserRequestBody.
 
         订阅用户分组。每个订阅分组只能包含小写英文字母([a-z])、数字([0-9])、下划线(_)，下划线不能出现在开始或结尾，下划线不能连续出现，长度为1到32个字符。
 

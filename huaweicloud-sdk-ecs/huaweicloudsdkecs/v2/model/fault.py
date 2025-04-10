@@ -31,7 +31,7 @@ class Fault:
     }
 
     def __init__(self, code=None, created=None, message=None, details=None):
-        """Fault
+        r"""Fault
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Fault:
 
     @property
     def code(self):
-        """Gets the code of this Fault.
+        r"""Gets the code of this Fault.
 
         错误码。
 
@@ -75,7 +75,7 @@ class Fault:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this Fault.
+        r"""Sets the code of this Fault.
 
         错误码。
 
@@ -86,7 +86,7 @@ class Fault:
 
     @property
     def created(self):
-        """Gets the created of this Fault.
+        r"""Gets the created of this Fault.
 
         异常出现的时间。
 
@@ -97,7 +97,7 @@ class Fault:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this Fault.
+        r"""Sets the created of this Fault.
 
         异常出现的时间。
 
@@ -108,7 +108,7 @@ class Fault:
 
     @property
     def message(self):
-        """Gets the message of this Fault.
+        r"""Gets the message of this Fault.
 
         异常描述信息。
 
@@ -119,7 +119,7 @@ class Fault:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this Fault.
+        r"""Sets the message of this Fault.
 
         异常描述信息。
 
@@ -130,7 +130,7 @@ class Fault:
 
     @property
     def details(self):
-        """Gets the details of this Fault.
+        r"""Gets the details of this Fault.
 
         异常详情信息。
 
@@ -141,7 +141,7 @@ class Fault:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this Fault.
+        r"""Sets the details of this Fault.
 
         异常详情信息。
 

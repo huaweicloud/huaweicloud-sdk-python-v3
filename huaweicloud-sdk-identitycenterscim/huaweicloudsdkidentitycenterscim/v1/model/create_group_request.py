@@ -29,7 +29,7 @@ class CreateGroupRequest:
     }
 
     def __init__(self, authorization=None, tenant_id=None, body=None):
-        """CreateGroupRequest
+        r"""CreateGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateGroupRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this CreateGroupRequest.
+        r"""Gets the authorization of this CreateGroupRequest.
 
         承载令牌
 
@@ -66,7 +66,7 @@ class CreateGroupRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this CreateGroupRequest.
+        r"""Sets the authorization of this CreateGroupRequest.
 
         承载令牌
 
@@ -77,7 +77,7 @@ class CreateGroupRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CreateGroupRequest.
+        r"""Gets the tenant_id of this CreateGroupRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -88,7 +88,7 @@ class CreateGroupRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CreateGroupRequest.
+        r"""Sets the tenant_id of this CreateGroupRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -99,7 +99,7 @@ class CreateGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGroupRequest.
+        r"""Gets the body of this CreateGroupRequest.
 
         :return: The body of this CreateGroupRequest.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.CreateGroupReqBody`
@@ -108,7 +108,7 @@ class CreateGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGroupRequest.
+        r"""Sets the body of this CreateGroupRequest.
 
         :param body: The body of this CreateGroupRequest.
         :type body: :class:`huaweicloudsdkidentitycenterscim.v1.CreateGroupReqBody`

@@ -25,7 +25,7 @@ class ProxyUpdateProxyConnectionPoolTypeRequest:
     }
 
     def __init__(self, connection_pool_type=None):
-        """ProxyUpdateProxyConnectionPoolTypeRequest
+        r"""ProxyUpdateProxyConnectionPoolTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ProxyUpdateProxyConnectionPoolTypeRequest:
 
     @property
     def connection_pool_type(self):
-        """Gets the connection_pool_type of this ProxyUpdateProxyConnectionPoolTypeRequest.
+        r"""Gets the connection_pool_type of this ProxyUpdateProxyConnectionPoolTypeRequest.
 
         连接池类型。 - CLOSED：关闭连接池。 - SESSION：开启会话级连接池
 
@@ -53,7 +53,7 @@ class ProxyUpdateProxyConnectionPoolTypeRequest:
 
     @connection_pool_type.setter
     def connection_pool_type(self, connection_pool_type):
-        """Sets the connection_pool_type of this ProxyUpdateProxyConnectionPoolTypeRequest.
+        r"""Sets the connection_pool_type of this ProxyUpdateProxyConnectionPoolTypeRequest.
 
         连接池类型。 - CLOSED：关闭连接池。 - SESSION：开启会话级连接池
 

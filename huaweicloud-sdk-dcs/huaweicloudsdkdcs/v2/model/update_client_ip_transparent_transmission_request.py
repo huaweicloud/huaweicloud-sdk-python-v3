@@ -27,7 +27,7 @@ class UpdateClientIpTransparentTransmissionRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateClientIpTransparentTransmissionRequest
+        r"""UpdateClientIpTransparentTransmissionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateClientIpTransparentTransmissionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateClientIpTransparentTransmissionRequest.
+        r"""Gets the instance_id of this UpdateClientIpTransparentTransmissionRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class UpdateClientIpTransparentTransmissionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateClientIpTransparentTransmissionRequest.
+        r"""Sets the instance_id of this UpdateClientIpTransparentTransmissionRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class UpdateClientIpTransparentTransmissionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateClientIpTransparentTransmissionRequest.
+        r"""Gets the body of this UpdateClientIpTransparentTransmissionRequest.
 
         :return: The body of this UpdateClientIpTransparentTransmissionRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateClientIpTransparentTransmissionRequestBody`
@@ -80,7 +80,7 @@ class UpdateClientIpTransparentTransmissionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateClientIpTransparentTransmissionRequest.
+        r"""Sets the body of this UpdateClientIpTransparentTransmissionRequest.
 
         :param body: The body of this UpdateClientIpTransparentTransmissionRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.UpdateClientIpTransparentTransmissionRequestBody`

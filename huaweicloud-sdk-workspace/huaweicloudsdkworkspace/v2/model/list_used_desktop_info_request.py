@@ -25,7 +25,7 @@ class ListUsedDesktopInfoRequest:
     }
 
     def __init__(self, body=None):
-        """ListUsedDesktopInfoRequest
+        r"""ListUsedDesktopInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListUsedDesktopInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListUsedDesktopInfoRequest.
+        r"""Gets the body of this ListUsedDesktopInfoRequest.
 
         :return: The body of this ListUsedDesktopInfoRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListUsedDesktopInfoReq`
@@ -52,7 +52,7 @@ class ListUsedDesktopInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListUsedDesktopInfoRequest.
+        r"""Sets the body of this ListUsedDesktopInfoRequest.
 
         :param body: The body of this ListUsedDesktopInfoRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ListUsedDesktopInfoReq`

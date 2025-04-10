@@ -27,7 +27,7 @@ class BatchDeleteSubnetTagsRequest:
     }
 
     def __init__(self, subnet_id=None, body=None):
-        """BatchDeleteSubnetTagsRequest
+        r"""BatchDeleteSubnetTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteSubnetTagsRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this BatchDeleteSubnetTagsRequest.
+        r"""Gets the subnet_id of this BatchDeleteSubnetTagsRequest.
 
         子网ID
 
@@ -60,7 +60,7 @@ class BatchDeleteSubnetTagsRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this BatchDeleteSubnetTagsRequest.
+        r"""Sets the subnet_id of this BatchDeleteSubnetTagsRequest.
 
         子网ID
 
@@ -71,7 +71,7 @@ class BatchDeleteSubnetTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteSubnetTagsRequest.
+        r"""Gets the body of this BatchDeleteSubnetTagsRequest.
 
         :return: The body of this BatchDeleteSubnetTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.BatchDeleteSubnetTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteSubnetTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteSubnetTagsRequest.
+        r"""Sets the body of this BatchDeleteSubnetTagsRequest.
 
         :param body: The body of this BatchDeleteSubnetTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.BatchDeleteSubnetTagsRequestBody`

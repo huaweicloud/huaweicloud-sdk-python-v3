@@ -27,7 +27,7 @@ class TagInfo:
     }
 
     def __init__(self, id=None, name=None):
-        """TagInfo
+        r"""TagInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TagInfo:
 
     @property
     def id(self):
-        """Gets the id of this TagInfo.
+        r"""Gets the id of this TagInfo.
 
         自定义标签id。
 
@@ -61,7 +61,7 @@ class TagInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TagInfo.
+        r"""Sets the id of this TagInfo.
 
         自定义标签id。
 
@@ -72,7 +72,7 @@ class TagInfo:
 
     @property
     def name(self):
-        """Gets the name of this TagInfo.
+        r"""Gets the name of this TagInfo.
 
         自定义标签名称。
 
@@ -83,7 +83,7 @@ class TagInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TagInfo.
+        r"""Sets the name of this TagInfo.
 
         自定义标签名称。
 

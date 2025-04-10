@@ -41,7 +41,7 @@ class RouteTable:
     }
 
     def __init__(self, id=None, name=None, description=None, is_default_association=None, is_default_propagation=None, state=None, tags=None, created_at=None, updated_at=None):
-        """RouteTable
+        r"""RouteTable
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class RouteTable:
 
     @property
     def id(self):
-        """Gets the id of this RouteTable.
+        r"""Gets the id of this RouteTable.
 
         路由表的id
 
@@ -105,7 +105,7 @@ class RouteTable:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RouteTable.
+        r"""Sets the id of this RouteTable.
 
         路由表的id
 
@@ -116,7 +116,7 @@ class RouteTable:
 
     @property
     def name(self):
-        """Gets the name of this RouteTable.
+        r"""Gets the name of this RouteTable.
 
         路由表名字
 
@@ -127,7 +127,7 @@ class RouteTable:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RouteTable.
+        r"""Sets the name of this RouteTable.
 
         路由表名字
 
@@ -138,7 +138,7 @@ class RouteTable:
 
     @property
     def description(self):
-        """Gets the description of this RouteTable.
+        r"""Gets the description of this RouteTable.
 
         描述信息
 
@@ -149,7 +149,7 @@ class RouteTable:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RouteTable.
+        r"""Sets the description of this RouteTable.
 
         描述信息
 
@@ -160,7 +160,7 @@ class RouteTable:
 
     @property
     def is_default_association(self):
-        """Gets the is_default_association of this RouteTable.
+        r"""Gets the is_default_association of this RouteTable.
 
         是否为默认关联的路由表
 
@@ -171,7 +171,7 @@ class RouteTable:
 
     @is_default_association.setter
     def is_default_association(self, is_default_association):
-        """Sets the is_default_association of this RouteTable.
+        r"""Sets the is_default_association of this RouteTable.
 
         是否为默认关联的路由表
 
@@ -182,7 +182,7 @@ class RouteTable:
 
     @property
     def is_default_propagation(self):
-        """Gets the is_default_propagation of this RouteTable.
+        r"""Gets the is_default_propagation of this RouteTable.
 
         是否为默认传递路由表
 
@@ -193,7 +193,7 @@ class RouteTable:
 
     @is_default_propagation.setter
     def is_default_propagation(self, is_default_propagation):
-        """Sets the is_default_propagation of this RouteTable.
+        r"""Sets the is_default_propagation of this RouteTable.
 
         是否为默认传递路由表
 
@@ -204,7 +204,7 @@ class RouteTable:
 
     @property
     def state(self):
-        """Gets the state of this RouteTable.
+        r"""Gets the state of this RouteTable.
 
         路由表状态，支持的状态有pending | available | deleting | deleted | failed
 
@@ -215,7 +215,7 @@ class RouteTable:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this RouteTable.
+        r"""Sets the state of this RouteTable.
 
         路由表状态，支持的状态有pending | available | deleting | deleted | failed
 
@@ -226,7 +226,7 @@ class RouteTable:
 
     @property
     def tags(self):
-        """Gets the tags of this RouteTable.
+        r"""Gets the tags of this RouteTable.
 
         标签
 
@@ -237,7 +237,7 @@ class RouteTable:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this RouteTable.
+        r"""Sets the tags of this RouteTable.
 
         标签
 
@@ -248,7 +248,7 @@ class RouteTable:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RouteTable.
+        r"""Gets the created_at of this RouteTable.
 
         创建时间
 
@@ -259,7 +259,7 @@ class RouteTable:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RouteTable.
+        r"""Sets the created_at of this RouteTable.
 
         创建时间
 
@@ -270,7 +270,7 @@ class RouteTable:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this RouteTable.
+        r"""Gets the updated_at of this RouteTable.
 
         更新时间
 
@@ -281,7 +281,7 @@ class RouteTable:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this RouteTable.
+        r"""Sets the updated_at of this RouteTable.
 
         更新时间
 

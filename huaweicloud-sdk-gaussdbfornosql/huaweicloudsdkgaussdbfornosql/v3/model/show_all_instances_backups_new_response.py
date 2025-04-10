@@ -28,7 +28,7 @@ class ShowAllInstancesBackupsNewResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, backups=None):
-        """ShowAllInstancesBackupsNewResponse
+        r"""ShowAllInstancesBackupsNewResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAllInstancesBackupsNewResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowAllInstancesBackupsNewResponse.
+        r"""Gets the total_count of this ShowAllInstancesBackupsNewResponse.
 
         备份总数量。
 
@@ -62,7 +62,7 @@ class ShowAllInstancesBackupsNewResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowAllInstancesBackupsNewResponse.
+        r"""Sets the total_count of this ShowAllInstancesBackupsNewResponse.
 
         备份总数量。
 
@@ -73,7 +73,7 @@ class ShowAllInstancesBackupsNewResponse(SdkResponse):
 
     @property
     def backups(self):
-        """Gets the backups of this ShowAllInstancesBackupsNewResponse.
+        r"""Gets the backups of this ShowAllInstancesBackupsNewResponse.
 
         :return: The backups of this ShowAllInstancesBackupsNewResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.Backup`]
@@ -82,7 +82,7 @@ class ShowAllInstancesBackupsNewResponse(SdkResponse):
 
     @backups.setter
     def backups(self, backups):
-        """Sets the backups of this ShowAllInstancesBackupsNewResponse.
+        r"""Sets the backups of this ShowAllInstancesBackupsNewResponse.
 
         :param backups: The backups of this ShowAllInstancesBackupsNewResponse.
         :type backups: list[:class:`huaweicloudsdkgaussdbfornosql.v3.Backup`]

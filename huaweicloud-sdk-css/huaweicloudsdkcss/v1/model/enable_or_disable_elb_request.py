@@ -27,7 +27,7 @@ class EnableOrDisableElbRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """EnableOrDisableElbRequest
+        r"""EnableOrDisableElbRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class EnableOrDisableElbRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this EnableOrDisableElbRequest.
+        r"""Gets the cluster_id of this EnableOrDisableElbRequest.
 
         指定待更改的集群ID。
 
@@ -60,7 +60,7 @@ class EnableOrDisableElbRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this EnableOrDisableElbRequest.
+        r"""Sets the cluster_id of this EnableOrDisableElbRequest.
 
         指定待更改的集群ID。
 
@@ -71,7 +71,7 @@ class EnableOrDisableElbRequest:
 
     @property
     def body(self):
-        """Gets the body of this EnableOrDisableElbRequest.
+        r"""Gets the body of this EnableOrDisableElbRequest.
 
         :return: The body of this EnableOrDisableElbRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateEsElbRequestBody`
@@ -80,7 +80,7 @@ class EnableOrDisableElbRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EnableOrDisableElbRequest.
+        r"""Sets the body of this EnableOrDisableElbRequest.
 
         :param body: The body of this EnableOrDisableElbRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UpdateEsElbRequestBody`

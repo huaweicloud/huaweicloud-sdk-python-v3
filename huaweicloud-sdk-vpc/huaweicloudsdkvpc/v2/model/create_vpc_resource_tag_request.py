@@ -27,7 +27,7 @@ class CreateVpcResourceTagRequest:
     }
 
     def __init__(self, vpc_id=None, body=None):
-        """CreateVpcResourceTagRequest
+        r"""CreateVpcResourceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateVpcResourceTagRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateVpcResourceTagRequest.
+        r"""Gets the vpc_id of this CreateVpcResourceTagRequest.
 
         功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
 
@@ -60,7 +60,7 @@ class CreateVpcResourceTagRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateVpcResourceTagRequest.
+        r"""Sets the vpc_id of this CreateVpcResourceTagRequest.
 
         功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
 
@@ -71,7 +71,7 @@ class CreateVpcResourceTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVpcResourceTagRequest.
+        r"""Gets the body of this CreateVpcResourceTagRequest.
 
         :return: The body of this CreateVpcResourceTagRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateVpcResourceTagRequestBody`
@@ -80,7 +80,7 @@ class CreateVpcResourceTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVpcResourceTagRequest.
+        r"""Sets the body of this CreateVpcResourceTagRequest.
 
         :param body: The body of this CreateVpcResourceTagRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.CreateVpcResourceTagRequestBody`

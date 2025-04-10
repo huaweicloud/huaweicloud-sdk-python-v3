@@ -29,7 +29,7 @@ class CreateExternalPeerLinkRequestBodyPeerLink:
     }
 
     def __init__(self, name=None, description=None, peer_site=None):
-        """CreateExternalPeerLinkRequestBodyPeerLink
+        r"""CreateExternalPeerLinkRequestBodyPeerLink
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateExternalPeerLinkRequestBodyPeerLink:
 
     @property
     def name(self):
-        """Gets the name of this CreateExternalPeerLinkRequestBodyPeerLink.
+        r"""Gets the name of this CreateExternalPeerLinkRequestBodyPeerLink.
 
         关联连接的名字
 
@@ -66,7 +66,7 @@ class CreateExternalPeerLinkRequestBodyPeerLink:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateExternalPeerLinkRequestBodyPeerLink.
+        r"""Sets the name of this CreateExternalPeerLinkRequestBodyPeerLink.
 
         关联连接的名字
 
@@ -77,7 +77,7 @@ class CreateExternalPeerLinkRequestBodyPeerLink:
 
     @property
     def description(self):
-        """Gets the description of this CreateExternalPeerLinkRequestBodyPeerLink.
+        r"""Gets the description of this CreateExternalPeerLinkRequestBodyPeerLink.
 
         描述信息
 
@@ -88,7 +88,7 @@ class CreateExternalPeerLinkRequestBodyPeerLink:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateExternalPeerLinkRequestBodyPeerLink.
+        r"""Sets the description of this CreateExternalPeerLinkRequestBodyPeerLink.
 
         描述信息
 
@@ -99,7 +99,7 @@ class CreateExternalPeerLinkRequestBodyPeerLink:
 
     @property
     def peer_site(self):
-        """Gets the peer_site of this CreateExternalPeerLinkRequestBodyPeerLink.
+        r"""Gets the peer_site of this CreateExternalPeerLinkRequestBodyPeerLink.
 
         :return: The peer_site of this CreateExternalPeerLinkRequestBodyPeerLink.
         :rtype: :class:`huaweicloudsdkdc.v3.CreateExternalPeerLinkRequestBodyPeerLinkPeerSite`
@@ -108,7 +108,7 @@ class CreateExternalPeerLinkRequestBodyPeerLink:
 
     @peer_site.setter
     def peer_site(self, peer_site):
-        """Sets the peer_site of this CreateExternalPeerLinkRequestBodyPeerLink.
+        r"""Sets the peer_site of this CreateExternalPeerLinkRequestBodyPeerLink.
 
         :param peer_site: The peer_site of this CreateExternalPeerLinkRequestBodyPeerLink.
         :type peer_site: :class:`huaweicloudsdkdc.v3.CreateExternalPeerLinkRequestBodyPeerLinkPeerSite`

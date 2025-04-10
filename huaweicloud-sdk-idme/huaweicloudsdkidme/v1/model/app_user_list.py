@@ -27,7 +27,7 @@ class AppUserList:
     }
 
     def __init__(self, id=None, name=None):
-        """AppUserList
+        r"""AppUserList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AppUserList:
 
     @property
     def id(self):
-        """Gets the id of this AppUserList.
+        r"""Gets the id of this AppUserList.
 
         用户ID。
 
@@ -61,7 +61,7 @@ class AppUserList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppUserList.
+        r"""Sets the id of this AppUserList.
 
         用户ID。
 
@@ -72,7 +72,7 @@ class AppUserList:
 
     @property
     def name(self):
-        """Gets the name of this AppUserList.
+        r"""Gets the name of this AppUserList.
 
         用户名。
 
@@ -83,7 +83,7 @@ class AppUserList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppUserList.
+        r"""Sets the name of this AppUserList.
 
         用户名。
 

@@ -26,7 +26,7 @@ class ChangeTheDelayThresholdResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """ChangeTheDelayThresholdResponse
+        r"""ChangeTheDelayThresholdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeTheDelayThresholdResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ChangeTheDelayThresholdResponse.
+        r"""Gets the result of this ChangeTheDelayThresholdResponse.
 
         修改读写分离权重或延时阈值的结果。
 
@@ -55,7 +55,7 @@ class ChangeTheDelayThresholdResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ChangeTheDelayThresholdResponse.
+        r"""Sets the result of this ChangeTheDelayThresholdResponse.
 
         修改读写分离权重或延时阈值的结果。
 

@@ -28,7 +28,7 @@ class ParseDrugReceptorInfoResponse(SdkResponse):
     }
 
     def __init__(self, residues=None, ligands=None):
-        """ParseDrugReceptorInfoResponse
+        r"""ParseDrugReceptorInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ParseDrugReceptorInfoResponse(SdkResponse):
 
     @property
     def residues(self):
-        """Gets the residues of this ParseDrugReceptorInfoResponse.
+        r"""Gets the residues of this ParseDrugReceptorInfoResponse.
 
         受体中的氨基酸残基列表
 
@@ -62,7 +62,7 @@ class ParseDrugReceptorInfoResponse(SdkResponse):
 
     @residues.setter
     def residues(self, residues):
-        """Sets the residues of this ParseDrugReceptorInfoResponse.
+        r"""Sets the residues of this ParseDrugReceptorInfoResponse.
 
         受体中的氨基酸残基列表
 
@@ -73,7 +73,7 @@ class ParseDrugReceptorInfoResponse(SdkResponse):
 
     @property
     def ligands(self):
-        """Gets the ligands of this ParseDrugReceptorInfoResponse.
+        r"""Gets the ligands of this ParseDrugReceptorInfoResponse.
 
         受体中的配体列表
 
@@ -84,7 +84,7 @@ class ParseDrugReceptorInfoResponse(SdkResponse):
 
     @ligands.setter
     def ligands(self, ligands):
-        """Sets the ligands of this ParseDrugReceptorInfoResponse.
+        r"""Sets the ligands of this ParseDrugReceptorInfoResponse.
 
         受体中的配体列表
 

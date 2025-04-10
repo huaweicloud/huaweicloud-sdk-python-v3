@@ -25,7 +25,7 @@ class MixInfoLayout:
     }
 
     def __init__(self, panes=None):
-        """MixInfoLayout
+        r"""MixInfoLayout
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MixInfoLayout:
 
     @property
     def panes(self):
-        """Gets the panes of this MixInfoLayout.
+        r"""Gets the panes of this MixInfoLayout.
 
         原视频在合成视频中的位置布局配置
 
@@ -53,7 +53,7 @@ class MixInfoLayout:
 
     @panes.setter
     def panes(self, panes):
-        """Sets the panes of this MixInfoLayout.
+        r"""Sets the panes of this MixInfoLayout.
 
         原视频在合成视频中的位置布局配置
 

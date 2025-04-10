@@ -35,7 +35,7 @@ class PatchRule:
     }
 
     def __init__(self, patch_filters=None, rule_name=None, compliance_level=None, approve_after_days=None, approve_until_date=None, enable_non_security=None):
-        """PatchRule
+        r"""PatchRule
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class PatchRule:
 
     @property
     def patch_filters(self):
-        """Gets the patch_filters of this PatchRule.
+        r"""Gets the patch_filters of this PatchRule.
 
         批准规则过滤
 
@@ -86,7 +86,7 @@ class PatchRule:
 
     @patch_filters.setter
     def patch_filters(self, patch_filters):
-        """Sets the patch_filters of this PatchRule.
+        r"""Sets the patch_filters of this PatchRule.
 
         批准规则过滤
 
@@ -97,7 +97,7 @@ class PatchRule:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this PatchRule.
+        r"""Gets the rule_name of this PatchRule.
 
         规则名称
 
@@ -108,7 +108,7 @@ class PatchRule:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this PatchRule.
+        r"""Sets the rule_name of this PatchRule.
 
         规则名称
 
@@ -119,7 +119,7 @@ class PatchRule:
 
     @property
     def compliance_level(self):
-        """Gets the compliance_level of this PatchRule.
+        r"""Gets the compliance_level of this PatchRule.
 
         合规性报告级别
 
@@ -130,7 +130,7 @@ class PatchRule:
 
     @compliance_level.setter
     def compliance_level(self, compliance_level):
-        """Sets the compliance_level of this PatchRule.
+        r"""Sets the compliance_level of this PatchRule.
 
         合规性报告级别
 
@@ -141,7 +141,7 @@ class PatchRule:
 
     @property
     def approve_after_days(self):
-        """Gets the approve_after_days of this PatchRule.
+        r"""Gets the approve_after_days of this PatchRule.
 
         指定天数后批准补丁，指定的天数
 
@@ -152,7 +152,7 @@ class PatchRule:
 
     @approve_after_days.setter
     def approve_after_days(self, approve_after_days):
-        """Sets the approve_after_days of this PatchRule.
+        r"""Sets the approve_after_days of this PatchRule.
 
         指定天数后批准补丁，指定的天数
 
@@ -163,7 +163,7 @@ class PatchRule:
 
     @property
     def approve_until_date(self):
-        """Gets the approve_until_date of this PatchRule.
+        r"""Gets the approve_until_date of this PatchRule.
 
         批准指定日期之前发布的补丁,指定的日期时间戳
 
@@ -174,7 +174,7 @@ class PatchRule:
 
     @approve_until_date.setter
     def approve_until_date(self, approve_until_date):
-        """Sets the approve_until_date of this PatchRule.
+        r"""Sets the approve_until_date of this PatchRule.
 
         批准指定日期之前发布的补丁,指定的日期时间戳
 
@@ -185,7 +185,7 @@ class PatchRule:
 
     @property
     def enable_non_security(self):
-        """Gets the enable_non_security of this PatchRule.
+        r"""Gets the enable_non_security of this PatchRule.
 
         是否包括非安全性更新
 
@@ -196,7 +196,7 @@ class PatchRule:
 
     @enable_non_security.setter
     def enable_non_security(self, enable_non_security):
-        """Sets the enable_non_security of this PatchRule.
+        r"""Sets the enable_non_security of this PatchRule.
 
         是否包括非安全性更新
 

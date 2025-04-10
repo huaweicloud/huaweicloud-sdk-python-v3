@@ -37,7 +37,7 @@ class ListSlowlogRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, start_time=None, end_time=None):
-        """ListSlowlogRequest
+        r"""ListSlowlogRequest
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ListSlowlogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSlowlogRequest.
+        r"""Gets the instance_id of this ListSlowlogRequest.
 
         实例ID。
 
@@ -93,7 +93,7 @@ class ListSlowlogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSlowlogRequest.
+        r"""Sets the instance_id of this ListSlowlogRequest.
 
         实例ID。
 
@@ -104,7 +104,7 @@ class ListSlowlogRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSlowlogRequest.
+        r"""Gets the offset of this ListSlowlogRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -115,7 +115,7 @@ class ListSlowlogRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSlowlogRequest.
+        r"""Sets the offset of this ListSlowlogRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -126,7 +126,7 @@ class ListSlowlogRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSlowlogRequest.
+        r"""Gets the limit of this ListSlowlogRequest.
 
         每页显示的条目数量。
 
@@ -137,7 +137,7 @@ class ListSlowlogRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSlowlogRequest.
+        r"""Sets the limit of this ListSlowlogRequest.
 
         每页显示的条目数量。
 
@@ -148,7 +148,7 @@ class ListSlowlogRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListSlowlogRequest.
+        r"""Gets the sort_key of this ListSlowlogRequest.
 
         返回结果按该关键字排序，支持start_time，duration，默认为“start_time”
 
@@ -159,7 +159,7 @@ class ListSlowlogRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListSlowlogRequest.
+        r"""Sets the sort_key of this ListSlowlogRequest.
 
         返回结果按该关键字排序，支持start_time，duration，默认为“start_time”
 
@@ -170,7 +170,7 @@ class ListSlowlogRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListSlowlogRequest.
+        r"""Gets the sort_dir of this ListSlowlogRequest.
 
         降序或升序（分别对应desc和asc，默认为“desc”）
 
@@ -181,7 +181,7 @@ class ListSlowlogRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListSlowlogRequest.
+        r"""Sets the sort_dir of this ListSlowlogRequest.
 
         降序或升序（分别对应desc和asc，默认为“desc”）
 
@@ -192,7 +192,7 @@ class ListSlowlogRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListSlowlogRequest.
+        r"""Gets the start_time of this ListSlowlogRequest.
 
         查询开始时间，时间为UTC时间的Unix时间戳。如：1598803200000。
 
@@ -203,7 +203,7 @@ class ListSlowlogRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListSlowlogRequest.
+        r"""Sets the start_time of this ListSlowlogRequest.
 
         查询开始时间，时间为UTC时间的Unix时间戳。如：1598803200000。
 
@@ -214,7 +214,7 @@ class ListSlowlogRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListSlowlogRequest.
+        r"""Gets the end_time of this ListSlowlogRequest.
 
         查询结束时间，时间为UTC时间的Unix时间戳。如：1599494399000。
 
@@ -225,7 +225,7 @@ class ListSlowlogRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListSlowlogRequest.
+        r"""Sets the end_time of this ListSlowlogRequest.
 
         查询结束时间，时间为UTC时间的Unix时间戳。如：1599494399000。
 

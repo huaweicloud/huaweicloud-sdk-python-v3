@@ -25,7 +25,7 @@ class DeleteStructTemplateReqBody:
     }
 
     def __init__(self, id=None):
-        """DeleteStructTemplateReqBody
+        r"""DeleteStructTemplateReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteStructTemplateReqBody:
 
     @property
     def id(self):
-        """Gets the id of this DeleteStructTemplateReqBody.
+        r"""Gets the id of this DeleteStructTemplateReqBody.
 
         结构化规则ID
 
@@ -53,7 +53,7 @@ class DeleteStructTemplateReqBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteStructTemplateReqBody.
+        r"""Sets the id of this DeleteStructTemplateReqBody.
 
         结构化规则ID
 

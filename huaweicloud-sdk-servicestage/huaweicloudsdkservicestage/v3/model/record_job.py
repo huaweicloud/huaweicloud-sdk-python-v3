@@ -31,7 +31,7 @@ class RecordJob:
     }
 
     def __init__(self, sequence=None, deploy_type=None, job_id=None, job_info=None):
-        """RecordJob
+        r"""RecordJob
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class RecordJob:
 
     @property
     def sequence(self):
-        """Gets the sequence of this RecordJob.
+        r"""Gets the sequence of this RecordJob.
 
         :return: The sequence of this RecordJob.
         :rtype: int
@@ -73,7 +73,7 @@ class RecordJob:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this RecordJob.
+        r"""Sets the sequence of this RecordJob.
 
         :param sequence: The sequence of this RecordJob.
         :type sequence: int
@@ -82,7 +82,7 @@ class RecordJob:
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this RecordJob.
+        r"""Gets the deploy_type of this RecordJob.
 
         :return: The deploy_type of this RecordJob.
         :rtype: str
@@ -91,7 +91,7 @@ class RecordJob:
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this RecordJob.
+        r"""Sets the deploy_type of this RecordJob.
 
         :param deploy_type: The deploy_type of this RecordJob.
         :type deploy_type: str
@@ -100,7 +100,7 @@ class RecordJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this RecordJob.
+        r"""Gets the job_id of this RecordJob.
 
         :return: The job_id of this RecordJob.
         :rtype: str
@@ -109,7 +109,7 @@ class RecordJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RecordJob.
+        r"""Sets the job_id of this RecordJob.
 
         :param job_id: The job_id of this RecordJob.
         :type job_id: str
@@ -118,7 +118,7 @@ class RecordJob:
 
     @property
     def job_info(self):
-        """Gets the job_info of this RecordJob.
+        r"""Gets the job_info of this RecordJob.
 
         :return: The job_info of this RecordJob.
         :rtype: :class:`huaweicloudsdkservicestage.v3.RecordJobInfo`
@@ -127,7 +127,7 @@ class RecordJob:
 
     @job_info.setter
     def job_info(self, job_info):
-        """Sets the job_info of this RecordJob.
+        r"""Sets the job_info of this RecordJob.
 
         :param job_info: The job_info of this RecordJob.
         :type job_info: :class:`huaweicloudsdkservicestage.v3.RecordJobInfo`

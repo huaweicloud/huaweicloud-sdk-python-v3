@@ -27,7 +27,7 @@ class CloudStorageLogPathInfo:
     }
 
     def __init__(self, dir_path=None, file_name_pattern=None):
-        """CloudStorageLogPathInfo
+        r"""CloudStorageLogPathInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CloudStorageLogPathInfo:
 
     @property
     def dir_path(self):
-        """Gets the dir_path of this CloudStorageLogPathInfo.
+        r"""Gets the dir_path of this CloudStorageLogPathInfo.
 
         容器挂载路径。
 
@@ -61,7 +61,7 @@ class CloudStorageLogPathInfo:
 
     @dir_path.setter
     def dir_path(self, dir_path):
-        """Sets the dir_path of this CloudStorageLogPathInfo.
+        r"""Sets the dir_path of this CloudStorageLogPathInfo.
 
         容器挂载路径。
 
@@ -72,7 +72,7 @@ class CloudStorageLogPathInfo:
 
     @property
     def file_name_pattern(self):
-        """Gets the file_name_pattern of this CloudStorageLogPathInfo.
+        r"""Gets the file_name_pattern of this CloudStorageLogPathInfo.
 
         日志文件名匹配模式。
 
@@ -83,7 +83,7 @@ class CloudStorageLogPathInfo:
 
     @file_name_pattern.setter
     def file_name_pattern(self, file_name_pattern):
-        """Sets the file_name_pattern of this CloudStorageLogPathInfo.
+        r"""Sets the file_name_pattern of this CloudStorageLogPathInfo.
 
         日志文件名匹配模式。
 

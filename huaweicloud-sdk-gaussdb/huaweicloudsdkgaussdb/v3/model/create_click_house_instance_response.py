@@ -28,7 +28,7 @@ class CreateClickHouseInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance=None, job_id=None):
-        """CreateClickHouseInstanceResponse
+        r"""CreateClickHouseInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateClickHouseInstanceResponse(SdkResponse):
 
     @property
     def instance(self):
-        """Gets the instance of this CreateClickHouseInstanceResponse.
+        r"""Gets the instance of this CreateClickHouseInstanceResponse.
 
         :return: The instance of this CreateClickHouseInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceInfo`
@@ -60,7 +60,7 @@ class CreateClickHouseInstanceResponse(SdkResponse):
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this CreateClickHouseInstanceResponse.
+        r"""Sets the instance of this CreateClickHouseInstanceResponse.
 
         :param instance: The instance of this CreateClickHouseInstanceResponse.
         :type instance: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceInfo`
@@ -69,7 +69,7 @@ class CreateClickHouseInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateClickHouseInstanceResponse.
+        r"""Gets the job_id of this CreateClickHouseInstanceResponse.
 
         工作ID。
 
@@ -80,7 +80,7 @@ class CreateClickHouseInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateClickHouseInstanceResponse.
+        r"""Sets the job_id of this CreateClickHouseInstanceResponse.
 
         工作ID。
 

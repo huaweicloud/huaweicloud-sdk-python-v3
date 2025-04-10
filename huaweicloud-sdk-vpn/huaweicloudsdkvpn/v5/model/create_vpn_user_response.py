@@ -30,7 +30,7 @@ class CreateVpnUserResponse(SdkResponse):
     }
 
     def __init__(self, user=None, request_id=None, header_response_token=None):
-        """CreateVpnUserResponse
+        r"""CreateVpnUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateVpnUserResponse(SdkResponse):
 
     @property
     def user(self):
-        """Gets the user of this CreateVpnUserResponse.
+        r"""Gets the user of this CreateVpnUserResponse.
 
         :return: The user of this CreateVpnUserResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnUserResponseBodyUser`
@@ -67,7 +67,7 @@ class CreateVpnUserResponse(SdkResponse):
 
     @user.setter
     def user(self, user):
-        """Sets the user of this CreateVpnUserResponse.
+        r"""Sets the user of this CreateVpnUserResponse.
 
         :param user: The user of this CreateVpnUserResponse.
         :type user: :class:`huaweicloudsdkvpn.v5.CreateVpnUserResponseBodyUser`
@@ -76,7 +76,7 @@ class CreateVpnUserResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateVpnUserResponse.
+        r"""Gets the request_id of this CreateVpnUserResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class CreateVpnUserResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateVpnUserResponse.
+        r"""Sets the request_id of this CreateVpnUserResponse.
 
         请求ID
 
@@ -98,7 +98,7 @@ class CreateVpnUserResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this CreateVpnUserResponse.
+        r"""Gets the header_response_token of this CreateVpnUserResponse.
 
         :return: The header_response_token of this CreateVpnUserResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateVpnUserResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this CreateVpnUserResponse.
+        r"""Sets the header_response_token of this CreateVpnUserResponse.
 
         :param header_response_token: The header_response_token of this CreateVpnUserResponse.
         :type header_response_token: str

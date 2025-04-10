@@ -39,7 +39,7 @@ class ListContentCompareDetailRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, compare_job_id=None, target_db_name=None, db_name=None, type=None, limit=None, offset=None):
-        """ListContentCompareDetailRequest
+        r"""ListContentCompareDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ListContentCompareDetailRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListContentCompareDetailRequest.
+        r"""Gets the x_language of this ListContentCompareDetailRequest.
 
         请求语言类型。
 
@@ -101,7 +101,7 @@ class ListContentCompareDetailRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListContentCompareDetailRequest.
+        r"""Sets the x_language of this ListContentCompareDetailRequest.
 
         请求语言类型。
 
@@ -112,7 +112,7 @@ class ListContentCompareDetailRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListContentCompareDetailRequest.
+        r"""Gets the job_id of this ListContentCompareDetailRequest.
 
         任务ID。
 
@@ -123,7 +123,7 @@ class ListContentCompareDetailRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListContentCompareDetailRequest.
+        r"""Sets the job_id of this ListContentCompareDetailRequest.
 
         任务ID。
 
@@ -134,7 +134,7 @@ class ListContentCompareDetailRequest:
 
     @property
     def compare_job_id(self):
-        """Gets the compare_job_id of this ListContentCompareDetailRequest.
+        r"""Gets the compare_job_id of this ListContentCompareDetailRequest.
 
         对比任务ID。
 
@@ -145,7 +145,7 @@ class ListContentCompareDetailRequest:
 
     @compare_job_id.setter
     def compare_job_id(self, compare_job_id):
-        """Sets the compare_job_id of this ListContentCompareDetailRequest.
+        r"""Sets the compare_job_id of this ListContentCompareDetailRequest.
 
         对比任务ID。
 
@@ -156,7 +156,7 @@ class ListContentCompareDetailRequest:
 
     @property
     def target_db_name(self):
-        """Gets the target_db_name of this ListContentCompareDetailRequest.
+        r"""Gets the target_db_name of this ListContentCompareDetailRequest.
 
         目标库名称。
 
@@ -167,7 +167,7 @@ class ListContentCompareDetailRequest:
 
     @target_db_name.setter
     def target_db_name(self, target_db_name):
-        """Sets the target_db_name of this ListContentCompareDetailRequest.
+        r"""Sets the target_db_name of this ListContentCompareDetailRequest.
 
         目标库名称。
 
@@ -178,7 +178,7 @@ class ListContentCompareDetailRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ListContentCompareDetailRequest.
+        r"""Gets the db_name of this ListContentCompareDetailRequest.
 
         源库名称。
 
@@ -189,7 +189,7 @@ class ListContentCompareDetailRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ListContentCompareDetailRequest.
+        r"""Sets the db_name of this ListContentCompareDetailRequest.
 
         源库名称。
 
@@ -200,7 +200,7 @@ class ListContentCompareDetailRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListContentCompareDetailRequest.
+        r"""Gets the type of this ListContentCompareDetailRequest.
 
         类型。 compare：对比 unCompare：无法对比
 
@@ -211,7 +211,7 @@ class ListContentCompareDetailRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListContentCompareDetailRequest.
+        r"""Sets the type of this ListContentCompareDetailRequest.
 
         类型。 compare：对比 unCompare：无法对比
 
@@ -222,7 +222,7 @@ class ListContentCompareDetailRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListContentCompareDetailRequest.
+        r"""Gets the limit of this ListContentCompareDetailRequest.
 
         每页显示的条目数量，最大值1000。
 
@@ -233,7 +233,7 @@ class ListContentCompareDetailRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListContentCompareDetailRequest.
+        r"""Sets the limit of this ListContentCompareDetailRequest.
 
         每页显示的条目数量，最大值1000。
 
@@ -244,7 +244,7 @@ class ListContentCompareDetailRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListContentCompareDetailRequest.
+        r"""Gets the offset of this ListContentCompareDetailRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -255,7 +255,7 @@ class ListContentCompareDetailRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListContentCompareDetailRequest.
+        r"""Sets the offset of this ListContentCompareDetailRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 

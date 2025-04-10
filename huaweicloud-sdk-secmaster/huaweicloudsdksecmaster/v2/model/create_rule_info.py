@@ -25,7 +25,7 @@ class CreateRuleInfo:
     }
 
     def __init__(self, rule=None):
-        """CreateRuleInfo
+        r"""CreateRuleInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateRuleInfo:
 
     @property
     def rule(self):
-        """Gets the rule of this CreateRuleInfo.
+        r"""Gets the rule of this CreateRuleInfo.
 
         :return: The rule of this CreateRuleInfo.
         :rtype: :class:`huaweicloudsdksecmaster.v2.ConditionInfo`
@@ -51,7 +51,7 @@ class CreateRuleInfo:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this CreateRuleInfo.
+        r"""Sets the rule of this CreateRuleInfo.
 
         :param rule: The rule of this CreateRuleInfo.
         :type rule: :class:`huaweicloudsdksecmaster.v2.ConditionInfo`

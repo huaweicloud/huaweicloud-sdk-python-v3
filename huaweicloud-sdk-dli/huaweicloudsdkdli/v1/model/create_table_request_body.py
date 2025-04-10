@@ -51,7 +51,7 @@ class CreateTableRequestBody:
     }
 
     def __init__(self, table_name=None, data_location=None, description=None, columns=None, data_type=None, data_path=None, with_column_header=None, delimiter=None, quote_char=None, escape_char=None, date_format=None, timestamp_format=None, select_statement=None, tags=None):
-        """CreateTableRequestBody
+        r"""CreateTableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -131,7 +131,7 @@ class CreateTableRequestBody:
 
     @property
     def table_name(self):
-        """Gets the table_name of this CreateTableRequestBody.
+        r"""Gets the table_name of this CreateTableRequestBody.
 
         新增表名称。
 
@@ -142,7 +142,7 @@ class CreateTableRequestBody:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this CreateTableRequestBody.
+        r"""Sets the table_name of this CreateTableRequestBody.
 
         新增表名称。
 
@@ -153,7 +153,7 @@ class CreateTableRequestBody:
 
     @property
     def data_location(self):
-        """Gets the data_location of this CreateTableRequestBody.
+        r"""Gets the data_location of this CreateTableRequestBody.
 
         数据存储的地方，分VIEW视图，OBS表和DLI表。
 
@@ -164,7 +164,7 @@ class CreateTableRequestBody:
 
     @data_location.setter
     def data_location(self, data_location):
-        """Sets the data_location of this CreateTableRequestBody.
+        r"""Sets the data_location of this CreateTableRequestBody.
 
         数据存储的地方，分VIEW视图，OBS表和DLI表。
 
@@ -175,7 +175,7 @@ class CreateTableRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateTableRequestBody.
+        r"""Gets the description of this CreateTableRequestBody.
 
         新增表的描述信息。
 
@@ -186,7 +186,7 @@ class CreateTableRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateTableRequestBody.
+        r"""Sets the description of this CreateTableRequestBody.
 
         新增表的描述信息。
 
@@ -197,7 +197,7 @@ class CreateTableRequestBody:
 
     @property
     def columns(self):
-        """Gets the columns of this CreateTableRequestBody.
+        r"""Gets the columns of this CreateTableRequestBody.
 
         OBS表和DLI表必选参数。新增表的列。
 
@@ -208,7 +208,7 @@ class CreateTableRequestBody:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this CreateTableRequestBody.
+        r"""Sets the columns of this CreateTableRequestBody.
 
         OBS表和DLI表必选参数。新增表的列。
 
@@ -219,7 +219,7 @@ class CreateTableRequestBody:
 
     @property
     def data_type(self):
-        """Gets the data_type of this CreateTableRequestBody.
+        r"""Gets the data_type of this CreateTableRequestBody.
 
         OBS表必选参数。新增OBS表数据的类型，目前支持：Parquet、ORC、CSV、JSON、Carbon和Avro格式。
 
@@ -230,7 +230,7 @@ class CreateTableRequestBody:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this CreateTableRequestBody.
+        r"""Sets the data_type of this CreateTableRequestBody.
 
         OBS表必选参数。新增OBS表数据的类型，目前支持：Parquet、ORC、CSV、JSON、Carbon和Avro格式。
 
@@ -241,7 +241,7 @@ class CreateTableRequestBody:
 
     @property
     def data_path(self):
-        """Gets the data_path of this CreateTableRequestBody.
+        r"""Gets the data_path of this CreateTableRequestBody.
 
         OBS表必选参数。新增OBS表数据的存储路径，必须是OBS上的路径，以s3a开头。
 
@@ -252,7 +252,7 @@ class CreateTableRequestBody:
 
     @data_path.setter
     def data_path(self, data_path):
-        """Sets the data_path of this CreateTableRequestBody.
+        r"""Sets the data_path of this CreateTableRequestBody.
 
         OBS表必选参数。新增OBS表数据的存储路径，必须是OBS上的路径，以s3a开头。
 
@@ -263,7 +263,7 @@ class CreateTableRequestBody:
 
     @property
     def with_column_header(self):
-        """Gets the with_column_header of this CreateTableRequestBody.
+        r"""Gets the with_column_header of this CreateTableRequestBody.
 
         OBS表非必选参数。OBS表数据是否包含表头。只有CSV类型数据具有该属性。
 
@@ -274,7 +274,7 @@ class CreateTableRequestBody:
 
     @with_column_header.setter
     def with_column_header(self, with_column_header):
-        """Sets the with_column_header of this CreateTableRequestBody.
+        r"""Sets the with_column_header of this CreateTableRequestBody.
 
         OBS表非必选参数。OBS表数据是否包含表头。只有CSV类型数据具有该属性。
 
@@ -285,7 +285,7 @@ class CreateTableRequestBody:
 
     @property
     def delimiter(self):
-        """Gets the delimiter of this CreateTableRequestBody.
+        r"""Gets the delimiter of this CreateTableRequestBody.
 
         OBS表非必选参数。用户自定义数据分隔符。只有CSV类型数据具有该属性。
 
@@ -296,7 +296,7 @@ class CreateTableRequestBody:
 
     @delimiter.setter
     def delimiter(self, delimiter):
-        """Sets the delimiter of this CreateTableRequestBody.
+        r"""Sets the delimiter of this CreateTableRequestBody.
 
         OBS表非必选参数。用户自定义数据分隔符。只有CSV类型数据具有该属性。
 
@@ -307,7 +307,7 @@ class CreateTableRequestBody:
 
     @property
     def quote_char(self):
-        """Gets the quote_char of this CreateTableRequestBody.
+        r"""Gets the quote_char of this CreateTableRequestBody.
 
         OBS表非必选参数。用户自定义引用字符，默认为双引号（即“\\\"”）。只有CSV类型数据具有该属性。
 
@@ -318,7 +318,7 @@ class CreateTableRequestBody:
 
     @quote_char.setter
     def quote_char(self, quote_char):
-        """Sets the quote_char of this CreateTableRequestBody.
+        r"""Sets the quote_char of this CreateTableRequestBody.
 
         OBS表非必选参数。用户自定义引用字符，默认为双引号（即“\\\"”）。只有CSV类型数据具有该属性。
 
@@ -329,7 +329,7 @@ class CreateTableRequestBody:
 
     @property
     def escape_char(self):
-        """Gets the escape_char of this CreateTableRequestBody.
+        r"""Gets the escape_char of this CreateTableRequestBody.
 
         OBS表非必选参数。用户自定义转义字符，默认为反斜杠（即\"\\\\\"）。只有CSV类型数据具有该属性。
 
@@ -340,7 +340,7 @@ class CreateTableRequestBody:
 
     @escape_char.setter
     def escape_char(self, escape_char):
-        """Sets the escape_char of this CreateTableRequestBody.
+        r"""Sets the escape_char of this CreateTableRequestBody.
 
         OBS表非必选参数。用户自定义转义字符，默认为反斜杠（即\"\\\\\"）。只有CSV类型数据具有该属性。
 
@@ -351,7 +351,7 @@ class CreateTableRequestBody:
 
     @property
     def date_format(self):
-        """Gets the date_format of this CreateTableRequestBody.
+        r"""Gets the date_format of this CreateTableRequestBody.
 
         OBS表非必选参数。用户自定义日期类型，默认格式为“yyyy-MM-dd”。只有CSV和JSON类型数据具有该属性。
 
@@ -362,7 +362,7 @@ class CreateTableRequestBody:
 
     @date_format.setter
     def date_format(self, date_format):
-        """Sets the date_format of this CreateTableRequestBody.
+        r"""Sets the date_format of this CreateTableRequestBody.
 
         OBS表非必选参数。用户自定义日期类型，默认格式为“yyyy-MM-dd”。只有CSV和JSON类型数据具有该属性。
 
@@ -373,7 +373,7 @@ class CreateTableRequestBody:
 
     @property
     def timestamp_format(self):
-        """Gets the timestamp_format of this CreateTableRequestBody.
+        r"""Gets the timestamp_format of this CreateTableRequestBody.
 
         OBS表非必选参数。用户自定义时间类型。默认格式为“yyyy-MM-dd HH:mm:ss”。只有CSV和JSON类型数据具有该属性。
 
@@ -384,7 +384,7 @@ class CreateTableRequestBody:
 
     @timestamp_format.setter
     def timestamp_format(self, timestamp_format):
-        """Sets the timestamp_format of this CreateTableRequestBody.
+        r"""Sets the timestamp_format of this CreateTableRequestBody.
 
         OBS表非必选参数。用户自定义时间类型。默认格式为“yyyy-MM-dd HH:mm:ss”。只有CSV和JSON类型数据具有该属性。
 
@@ -395,7 +395,7 @@ class CreateTableRequestBody:
 
     @property
     def select_statement(self):
-        """Gets the select_statement of this CreateTableRequestBody.
+        r"""Gets the select_statement of this CreateTableRequestBody.
 
         VIEW视图必选参数，创建视图时的数据选择语句。语句中涉及表需要使用“表=库名.表名”的格式
 
@@ -406,7 +406,7 @@ class CreateTableRequestBody:
 
     @select_statement.setter
     def select_statement(self, select_statement):
-        """Sets the select_statement of this CreateTableRequestBody.
+        r"""Sets the select_statement of this CreateTableRequestBody.
 
         VIEW视图必选参数，创建视图时的数据选择语句。语句中涉及表需要使用“表=库名.表名”的格式
 
@@ -417,7 +417,7 @@ class CreateTableRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateTableRequestBody.
+        r"""Gets the tags of this CreateTableRequestBody.
 
         标签
 
@@ -428,7 +428,7 @@ class CreateTableRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateTableRequestBody.
+        r"""Sets the tags of this CreateTableRequestBody.
 
         标签
 

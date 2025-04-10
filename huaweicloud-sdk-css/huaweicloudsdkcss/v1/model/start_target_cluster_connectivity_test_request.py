@@ -27,7 +27,7 @@ class StartTargetClusterConnectivityTestRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """StartTargetClusterConnectivityTestRequest
+        r"""StartTargetClusterConnectivityTestRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartTargetClusterConnectivityTestRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StartTargetClusterConnectivityTestRequest.
+        r"""Gets the cluster_id of this StartTargetClusterConnectivityTestRequest.
 
         指定待测试的集群ID。
 
@@ -60,7 +60,7 @@ class StartTargetClusterConnectivityTestRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StartTargetClusterConnectivityTestRequest.
+        r"""Sets the cluster_id of this StartTargetClusterConnectivityTestRequest.
 
         指定待测试的集群ID。
 
@@ -71,7 +71,7 @@ class StartTargetClusterConnectivityTestRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartTargetClusterConnectivityTestRequest.
+        r"""Gets the body of this StartTargetClusterConnectivityTestRequest.
 
         :return: The body of this StartTargetClusterConnectivityTestRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.StartTargetClusterConnectivityTestReq`
@@ -80,7 +80,7 @@ class StartTargetClusterConnectivityTestRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartTargetClusterConnectivityTestRequest.
+        r"""Sets the body of this StartTargetClusterConnectivityTestRequest.
 
         :param body: The body of this StartTargetClusterConnectivityTestRequest.
         :type body: :class:`huaweicloudsdkcss.v1.StartTargetClusterConnectivityTestReq`

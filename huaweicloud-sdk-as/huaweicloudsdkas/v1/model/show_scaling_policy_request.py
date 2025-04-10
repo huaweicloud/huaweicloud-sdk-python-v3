@@ -25,7 +25,7 @@ class ShowScalingPolicyRequest:
     }
 
     def __init__(self, scaling_policy_id=None):
-        """ShowScalingPolicyRequest
+        r"""ShowScalingPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowScalingPolicyRequest:
 
     @property
     def scaling_policy_id(self):
-        """Gets the scaling_policy_id of this ShowScalingPolicyRequest.
+        r"""Gets the scaling_policy_id of this ShowScalingPolicyRequest.
 
         伸缩组ID。
 
@@ -53,7 +53,7 @@ class ShowScalingPolicyRequest:
 
     @scaling_policy_id.setter
     def scaling_policy_id(self, scaling_policy_id):
-        """Sets the scaling_policy_id of this ShowScalingPolicyRequest.
+        r"""Sets the scaling_policy_id of this ShowScalingPolicyRequest.
 
         伸缩组ID。
 

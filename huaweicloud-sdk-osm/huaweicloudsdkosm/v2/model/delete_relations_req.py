@@ -27,7 +27,7 @@ class DeleteRelationsReq:
     }
 
     def __init__(self, related_id=None, group_id=None):
-        """DeleteRelationsReq
+        r"""DeleteRelationsReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteRelationsReq:
 
     @property
     def related_id(self):
-        """Gets the related_id of this DeleteRelationsReq.
+        r"""Gets the related_id of this DeleteRelationsReq.
 
         要解除关联的工单id
 
@@ -60,7 +60,7 @@ class DeleteRelationsReq:
 
     @related_id.setter
     def related_id(self, related_id):
-        """Sets the related_id of this DeleteRelationsReq.
+        r"""Sets the related_id of this DeleteRelationsReq.
 
         要解除关联的工单id
 
@@ -71,7 +71,7 @@ class DeleteRelationsReq:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeleteRelationsReq.
+        r"""Gets the group_id of this DeleteRelationsReq.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 
@@ -82,7 +82,7 @@ class DeleteRelationsReq:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeleteRelationsReq.
+        r"""Sets the group_id of this DeleteRelationsReq.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 

@@ -27,7 +27,7 @@ class ResumeScalingGroupRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """ResumeScalingGroupRequest
+        r"""ResumeScalingGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResumeScalingGroupRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this ResumeScalingGroupRequest.
+        r"""Gets the scaling_group_id of this ResumeScalingGroupRequest.
 
         伸缩组ID
 
@@ -60,7 +60,7 @@ class ResumeScalingGroupRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this ResumeScalingGroupRequest.
+        r"""Sets the scaling_group_id of this ResumeScalingGroupRequest.
 
         伸缩组ID
 
@@ -71,7 +71,7 @@ class ResumeScalingGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResumeScalingGroupRequest.
+        r"""Gets the body of this ResumeScalingGroupRequest.
 
         :return: The body of this ResumeScalingGroupRequest.
         :rtype: :class:`huaweicloudsdkas.v1.ResumeScalingGroupOption`
@@ -80,7 +80,7 @@ class ResumeScalingGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResumeScalingGroupRequest.
+        r"""Sets the body of this ResumeScalingGroupRequest.
 
         :param body: The body of this ResumeScalingGroupRequest.
         :type body: :class:`huaweicloudsdkas.v1.ResumeScalingGroupOption`

@@ -35,7 +35,7 @@ class ResultValueQueryTaskTestCasesVo:
     }
 
     def __init__(self, total=None, value=None, reason=None, page_size=None, page_no=None, has_more=None):
-        """ResultValueQueryTaskTestCasesVo
+        r"""ResultValueQueryTaskTestCasesVo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ResultValueQueryTaskTestCasesVo:
 
     @property
     def total(self):
-        """Gets the total of this ResultValueQueryTaskTestCasesVo.
+        r"""Gets the total of this ResultValueQueryTaskTestCasesVo.
 
         起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
 
@@ -89,7 +89,7 @@ class ResultValueQueryTaskTestCasesVo:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ResultValueQueryTaskTestCasesVo.
+        r"""Sets the total of this ResultValueQueryTaskTestCasesVo.
 
         起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
 
@@ -100,7 +100,7 @@ class ResultValueQueryTaskTestCasesVo:
 
     @property
     def value(self):
-        """Gets the value of this ResultValueQueryTaskTestCasesVo.
+        r"""Gets the value of this ResultValueQueryTaskTestCasesVo.
 
         :return: The value of this ResultValueQueryTaskTestCasesVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.QueryTaskTestCasesVo`
@@ -109,7 +109,7 @@ class ResultValueQueryTaskTestCasesVo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResultValueQueryTaskTestCasesVo.
+        r"""Sets the value of this ResultValueQueryTaskTestCasesVo.
 
         :param value: The value of this ResultValueQueryTaskTestCasesVo.
         :type value: :class:`huaweicloudsdkcloudtest.v1.QueryTaskTestCasesVo`
@@ -118,7 +118,7 @@ class ResultValueQueryTaskTestCasesVo:
 
     @property
     def reason(self):
-        """Gets the reason of this ResultValueQueryTaskTestCasesVo.
+        r"""Gets the reason of this ResultValueQueryTaskTestCasesVo.
 
         业务失败的提示内容，对内接口才有此值
 
@@ -129,7 +129,7 @@ class ResultValueQueryTaskTestCasesVo:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ResultValueQueryTaskTestCasesVo.
+        r"""Sets the reason of this ResultValueQueryTaskTestCasesVo.
 
         业务失败的提示内容，对内接口才有此值
 
@@ -140,7 +140,7 @@ class ResultValueQueryTaskTestCasesVo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ResultValueQueryTaskTestCasesVo.
+        r"""Gets the page_size of this ResultValueQueryTaskTestCasesVo.
 
         :return: The page_size of this ResultValueQueryTaskTestCasesVo.
         :rtype: int
@@ -149,7 +149,7 @@ class ResultValueQueryTaskTestCasesVo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ResultValueQueryTaskTestCasesVo.
+        r"""Sets the page_size of this ResultValueQueryTaskTestCasesVo.
 
         :param page_size: The page_size of this ResultValueQueryTaskTestCasesVo.
         :type page_size: int
@@ -158,7 +158,7 @@ class ResultValueQueryTaskTestCasesVo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ResultValueQueryTaskTestCasesVo.
+        r"""Gets the page_no of this ResultValueQueryTaskTestCasesVo.
 
         :return: The page_no of this ResultValueQueryTaskTestCasesVo.
         :rtype: int
@@ -167,7 +167,7 @@ class ResultValueQueryTaskTestCasesVo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ResultValueQueryTaskTestCasesVo.
+        r"""Sets the page_no of this ResultValueQueryTaskTestCasesVo.
 
         :param page_no: The page_no of this ResultValueQueryTaskTestCasesVo.
         :type page_no: int
@@ -176,7 +176,7 @@ class ResultValueQueryTaskTestCasesVo:
 
     @property
     def has_more(self):
-        """Gets the has_more of this ResultValueQueryTaskTestCasesVo.
+        r"""Gets the has_more of this ResultValueQueryTaskTestCasesVo.
 
         :return: The has_more of this ResultValueQueryTaskTestCasesVo.
         :rtype: bool
@@ -185,7 +185,7 @@ class ResultValueQueryTaskTestCasesVo:
 
     @has_more.setter
     def has_more(self, has_more):
-        """Sets the has_more of this ResultValueQueryTaskTestCasesVo.
+        r"""Sets the has_more of this ResultValueQueryTaskTestCasesVo.
 
         :param has_more: The has_more of this ResultValueQueryTaskTestCasesVo.
         :type has_more: bool

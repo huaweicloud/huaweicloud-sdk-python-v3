@@ -26,7 +26,7 @@ class ShowMeteringResponse(SdkResponse):
     }
 
     def __init__(self, product_info_list=None):
-        """ShowMeteringResponse
+        r"""ShowMeteringResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowMeteringResponse(SdkResponse):
 
     @property
     def product_info_list(self):
-        """Gets the product_info_list of this ShowMeteringResponse.
+        r"""Gets the product_info_list of this ShowMeteringResponse.
 
         资源信息列表。
 
@@ -55,7 +55,7 @@ class ShowMeteringResponse(SdkResponse):
 
     @product_info_list.setter
     def product_info_list(self, product_info_list):
-        """Sets the product_info_list of this ShowMeteringResponse.
+        r"""Sets the product_info_list of this ShowMeteringResponse.
 
         资源信息列表。
 

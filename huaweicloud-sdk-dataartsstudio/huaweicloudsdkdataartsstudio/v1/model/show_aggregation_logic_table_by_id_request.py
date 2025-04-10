@@ -31,7 +31,7 @@ class ShowAggregationLogicTableByIdRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, id=None, latest=None):
-        """ShowAggregationLogicTableByIdRequest
+        r"""ShowAggregationLogicTableByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowAggregationLogicTableByIdRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowAggregationLogicTableByIdRequest.
+        r"""Gets the workspace of this ShowAggregationLogicTableByIdRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -73,7 +73,7 @@ class ShowAggregationLogicTableByIdRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowAggregationLogicTableByIdRequest.
+        r"""Sets the workspace of this ShowAggregationLogicTableByIdRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -84,7 +84,7 @@ class ShowAggregationLogicTableByIdRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ShowAggregationLogicTableByIdRequest.
+        r"""Gets the x_project_id of this ShowAggregationLogicTableByIdRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -95,7 +95,7 @@ class ShowAggregationLogicTableByIdRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ShowAggregationLogicTableByIdRequest.
+        r"""Sets the x_project_id of this ShowAggregationLogicTableByIdRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -106,7 +106,7 @@ class ShowAggregationLogicTableByIdRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowAggregationLogicTableByIdRequest.
+        r"""Gets the id of this ShowAggregationLogicTableByIdRequest.
 
         实体ID，ID字符串。
 
@@ -117,7 +117,7 @@ class ShowAggregationLogicTableByIdRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAggregationLogicTableByIdRequest.
+        r"""Sets the id of this ShowAggregationLogicTableByIdRequest.
 
         实体ID，ID字符串。
 
@@ -128,7 +128,7 @@ class ShowAggregationLogicTableByIdRequest:
 
     @property
     def latest(self):
-        """Gets the latest of this ShowAggregationLogicTableByIdRequest.
+        r"""Gets the latest of this ShowAggregationLogicTableByIdRequest.
 
         是否查询最新的。
 
@@ -139,7 +139,7 @@ class ShowAggregationLogicTableByIdRequest:
 
     @latest.setter
     def latest(self, latest):
-        """Sets the latest of this ShowAggregationLogicTableByIdRequest.
+        r"""Sets the latest of this ShowAggregationLogicTableByIdRequest.
 
         是否查询最新的。
 

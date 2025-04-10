@@ -28,7 +28,7 @@ class ShowResInstanceInfoResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ShowResInstanceInfoResponse
+        r"""ShowResInstanceInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowResInstanceInfoResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ShowResInstanceInfoResponse.
+        r"""Gets the resources of this ShowResInstanceInfoResponse.
 
         企业项目列表
 
@@ -62,7 +62,7 @@ class ShowResInstanceInfoResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowResInstanceInfoResponse.
+        r"""Sets the resources of this ShowResInstanceInfoResponse.
 
         企业项目列表
 
@@ -73,7 +73,7 @@ class ShowResInstanceInfoResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowResInstanceInfoResponse.
+        r"""Gets the total_count of this ShowResInstanceInfoResponse.
 
         资源数
 
@@ -84,7 +84,7 @@ class ShowResInstanceInfoResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowResInstanceInfoResponse.
+        r"""Sets the total_count of this ShowResInstanceInfoResponse.
 
         资源数
 

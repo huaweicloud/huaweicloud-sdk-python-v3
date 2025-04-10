@@ -31,7 +31,7 @@ class QaGraphAnswer:
     }
 
     def __init__(self, answer=None, score=None, type=None, options=None):
-        """QaGraphAnswer
+        r"""QaGraphAnswer
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class QaGraphAnswer:
 
     @property
     def answer(self):
-        """Gets the answer of this QaGraphAnswer.
+        r"""Gets the answer of this QaGraphAnswer.
 
         答案
 
@@ -75,7 +75,7 @@ class QaGraphAnswer:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this QaGraphAnswer.
+        r"""Sets the answer of this QaGraphAnswer.
 
         答案
 
@@ -86,7 +86,7 @@ class QaGraphAnswer:
 
     @property
     def score(self):
-        """Gets the score of this QaGraphAnswer.
+        r"""Gets the score of this QaGraphAnswer.
 
         评分
 
@@ -97,7 +97,7 @@ class QaGraphAnswer:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this QaGraphAnswer.
+        r"""Sets the score of this QaGraphAnswer.
 
         评分
 
@@ -108,7 +108,7 @@ class QaGraphAnswer:
 
     @property
     def type(self):
-        """Gets the type of this QaGraphAnswer.
+        r"""Gets the type of this QaGraphAnswer.
 
         类型
 
@@ -119,7 +119,7 @@ class QaGraphAnswer:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QaGraphAnswer.
+        r"""Sets the type of this QaGraphAnswer.
 
         类型
 
@@ -130,7 +130,7 @@ class QaGraphAnswer:
 
     @property
     def options(self):
-        """Gets the options of this QaGraphAnswer.
+        r"""Gets the options of this QaGraphAnswer.
 
         列表
 
@@ -141,7 +141,7 @@ class QaGraphAnswer:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this QaGraphAnswer.
+        r"""Sets the options of this QaGraphAnswer.
 
         列表
 

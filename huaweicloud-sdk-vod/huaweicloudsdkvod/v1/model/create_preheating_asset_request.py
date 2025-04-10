@@ -25,7 +25,7 @@ class CreatePreheatingAssetRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePreheatingAssetRequest
+        r"""CreatePreheatingAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreatePreheatingAssetRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePreheatingAssetRequest.
+        r"""Gets the body of this CreatePreheatingAssetRequest.
 
         :return: The body of this CreatePreheatingAssetRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.CreatePreheatingAssetReq`
@@ -52,7 +52,7 @@ class CreatePreheatingAssetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePreheatingAssetRequest.
+        r"""Sets the body of this CreatePreheatingAssetRequest.
 
         :param body: The body of this CreatePreheatingAssetRequest.
         :type body: :class:`huaweicloudsdkvod.v1.CreatePreheatingAssetReq`

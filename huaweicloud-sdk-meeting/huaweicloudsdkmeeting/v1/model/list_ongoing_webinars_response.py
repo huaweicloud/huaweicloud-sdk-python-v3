@@ -32,7 +32,7 @@ class ListOngoingWebinarsResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """ListOngoingWebinarsResponse
+        r"""ListOngoingWebinarsResponse
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListOngoingWebinarsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListOngoingWebinarsResponse.
+        r"""Gets the offset of this ListOngoingWebinarsResponse.
 
         偏移量。
 
@@ -73,7 +73,7 @@ class ListOngoingWebinarsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListOngoingWebinarsResponse.
+        r"""Sets the offset of this ListOngoingWebinarsResponse.
 
         偏移量。
 
@@ -84,7 +84,7 @@ class ListOngoingWebinarsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListOngoingWebinarsResponse.
+        r"""Gets the limit of this ListOngoingWebinarsResponse.
 
         每页的记录数。
 
@@ -95,7 +95,7 @@ class ListOngoingWebinarsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListOngoingWebinarsResponse.
+        r"""Sets the limit of this ListOngoingWebinarsResponse.
 
         每页的记录数。
 
@@ -106,7 +106,7 @@ class ListOngoingWebinarsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListOngoingWebinarsResponse.
+        r"""Gets the count of this ListOngoingWebinarsResponse.
 
         总记录数。
 
@@ -117,7 +117,7 @@ class ListOngoingWebinarsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListOngoingWebinarsResponse.
+        r"""Sets the count of this ListOngoingWebinarsResponse.
 
         总记录数。
 
@@ -128,7 +128,7 @@ class ListOngoingWebinarsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListOngoingWebinarsResponse.
+        r"""Gets the data of this ListOngoingWebinarsResponse.
 
         正在召开网络研讨会信息列表。
 
@@ -139,7 +139,7 @@ class ListOngoingWebinarsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListOngoingWebinarsResponse.
+        r"""Sets the data of this ListOngoingWebinarsResponse.
 
         正在召开网络研讨会信息列表。
 

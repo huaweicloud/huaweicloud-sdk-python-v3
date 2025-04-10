@@ -23,7 +23,7 @@ class ShowClustersRequest:
     }
 
     def __init__(self):
-        """ShowClustersRequest
+        r"""ShowClustersRequest
 
         The model defined in huaweicloud sdk
 

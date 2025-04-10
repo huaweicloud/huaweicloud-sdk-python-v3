@@ -33,7 +33,7 @@ class ShowTaskPathTreeRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, current_path=None, offset=None, limit=None):
-        """ShowTaskPathTreeRequest
+        r"""ShowTaskPathTreeRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ShowTaskPathTreeRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowTaskPathTreeRequest.
+        r"""Gets the project_id of this ShowTaskPathTreeRequest.
 
         项目id
 
@@ -80,7 +80,7 @@ class ShowTaskPathTreeRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowTaskPathTreeRequest.
+        r"""Sets the project_id of this ShowTaskPathTreeRequest.
 
         项目id
 
@@ -91,7 +91,7 @@ class ShowTaskPathTreeRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTaskPathTreeRequest.
+        r"""Gets the task_id of this ShowTaskPathTreeRequest.
 
         任务id
 
@@ -102,7 +102,7 @@ class ShowTaskPathTreeRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTaskPathTreeRequest.
+        r"""Sets the task_id of this ShowTaskPathTreeRequest.
 
         任务id
 
@@ -113,7 +113,7 @@ class ShowTaskPathTreeRequest:
 
     @property
     def current_path(self):
-        """Gets the current_path of this ShowTaskPathTreeRequest.
+        r"""Gets the current_path of this ShowTaskPathTreeRequest.
 
         目录或文件的路径
 
@@ -124,7 +124,7 @@ class ShowTaskPathTreeRequest:
 
     @current_path.setter
     def current_path(self, current_path):
-        """Sets the current_path of this ShowTaskPathTreeRequest.
+        r"""Sets the current_path of this ShowTaskPathTreeRequest.
 
         目录或文件的路径
 
@@ -135,7 +135,7 @@ class ShowTaskPathTreeRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowTaskPathTreeRequest.
+        r"""Gets the offset of this ShowTaskPathTreeRequest.
 
         分页索引，偏移量
 
@@ -146,7 +146,7 @@ class ShowTaskPathTreeRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowTaskPathTreeRequest.
+        r"""Sets the offset of this ShowTaskPathTreeRequest.
 
         分页索引，偏移量
 
@@ -157,7 +157,7 @@ class ShowTaskPathTreeRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowTaskPathTreeRequest.
+        r"""Gets the limit of this ShowTaskPathTreeRequest.
 
         每页显示的数量,每页最多显示1000条
 
@@ -168,7 +168,7 @@ class ShowTaskPathTreeRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowTaskPathTreeRequest.
+        r"""Sets the limit of this ShowTaskPathTreeRequest.
 
         每页显示的数量,每页最多显示1000条
 

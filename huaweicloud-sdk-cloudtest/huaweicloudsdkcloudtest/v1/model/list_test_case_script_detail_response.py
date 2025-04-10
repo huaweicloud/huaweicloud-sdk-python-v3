@@ -26,7 +26,7 @@ class ListTestCaseScriptDetailResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListTestCaseScriptDetailResponse
+        r"""ListTestCaseScriptDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTestCaseScriptDetailResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListTestCaseScriptDetailResponse.
+        r"""Gets the body of this ListTestCaseScriptDetailResponse.
 
         :return: The body of this ListTestCaseScriptDetailResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ListTestCaseScriptDetailResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTestCaseScriptDetailResponse.
+        r"""Sets the body of this ListTestCaseScriptDetailResponse.
 
         :param body: The body of this ListTestCaseScriptDetailResponse.
         :type body: str

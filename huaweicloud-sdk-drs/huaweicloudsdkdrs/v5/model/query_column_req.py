@@ -27,7 +27,7 @@ class QueryColumnReq:
     }
 
     def __init__(self, is_force_refresh=None, db_object_infos=None):
-        """QueryColumnReq
+        r"""QueryColumnReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class QueryColumnReq:
 
     @property
     def is_force_refresh(self):
-        """Gets the is_force_refresh of this QueryColumnReq.
+        r"""Gets the is_force_refresh of this QueryColumnReq.
 
         是否从Node获取最新的列信息
 
@@ -60,7 +60,7 @@ class QueryColumnReq:
 
     @is_force_refresh.setter
     def is_force_refresh(self, is_force_refresh):
-        """Sets the is_force_refresh of this QueryColumnReq.
+        r"""Sets the is_force_refresh of this QueryColumnReq.
 
         是否从Node获取最新的列信息
 
@@ -71,7 +71,7 @@ class QueryColumnReq:
 
     @property
     def db_object_infos(self):
-        """Gets the db_object_infos of this QueryColumnReq.
+        r"""Gets the db_object_infos of this QueryColumnReq.
 
         指定数据库表信息
 
@@ -82,7 +82,7 @@ class QueryColumnReq:
 
     @db_object_infos.setter
     def db_object_infos(self, db_object_infos):
-        """Sets the db_object_infos of this QueryColumnReq.
+        r"""Sets the db_object_infos of this QueryColumnReq.
 
         指定数据库表信息
 

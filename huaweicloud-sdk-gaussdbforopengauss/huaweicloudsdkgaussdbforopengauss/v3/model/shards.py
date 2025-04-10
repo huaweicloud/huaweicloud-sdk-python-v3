@@ -27,7 +27,7 @@ class Shards:
     }
 
     def __init__(self, node_id=None, component_id=None):
-        """Shards
+        r"""Shards
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Shards:
 
     @property
     def node_id(self):
-        """Gets the node_id of this Shards.
+        r"""Gets the node_id of this Shards.
 
         节点Id。
 
@@ -59,7 +59,7 @@ class Shards:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this Shards.
+        r"""Sets the node_id of this Shards.
 
         节点Id。
 
@@ -70,7 +70,7 @@ class Shards:
 
     @property
     def component_id(self):
-        """Gets the component_id of this Shards.
+        r"""Gets the component_id of this Shards.
 
         组件Id。最大长度7个字符，不能为null或者空字符串，不能为空格，校验和使用之前会自动过滤掉前后空格。至少包含大写字母（A-Z），小写字母（a-z），数字（0-9），非字母数字字符（限定为_）四类字符中的三类字符。组件id通过查询实例的组件列表接口（ListComponentInfos）获取
 
@@ -81,7 +81,7 @@ class Shards:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this Shards.
+        r"""Sets the component_id of this Shards.
 
         组件Id。最大长度7个字符，不能为null或者空字符串，不能为空格，校验和使用之前会自动过滤掉前后空格。至少包含大写字母（A-Z），小写字母（a-z），数字（0-9），非字母数字字符（限定为_）四类字符中的三类字符。组件id通过查询实例的组件列表接口（ListComponentInfos）获取
 

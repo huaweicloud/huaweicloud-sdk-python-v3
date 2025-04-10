@@ -23,7 +23,7 @@ class ShowAkSksRequest:
     }
 
     def __init__(self):
-        """ShowAkSksRequest
+        r"""ShowAkSksRequest
 
         The model defined in huaweicloud sdk
 

@@ -35,7 +35,7 @@ class AddDeviceGroupDTO:
     }
 
     def __init__(self, name=None, description=None, super_group_id=None, app_id=None, group_type=None, dynamic_group_rule=None):
-        """AddDeviceGroupDTO
+        r"""AddDeviceGroupDTO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AddDeviceGroupDTO:
 
     @property
     def name(self):
-        """Gets the name of this AddDeviceGroupDTO.
+        r"""Gets the name of this AddDeviceGroupDTO.
 
         **参数说明**：设备组名称，单个资源空间下不可重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 
@@ -89,7 +89,7 @@ class AddDeviceGroupDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddDeviceGroupDTO.
+        r"""Sets the name of this AddDeviceGroupDTO.
 
         **参数说明**：设备组名称，单个资源空间下不可重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 
@@ -100,7 +100,7 @@ class AddDeviceGroupDTO:
 
     @property
     def description(self):
-        """Gets the description of this AddDeviceGroupDTO.
+        r"""Gets the description of this AddDeviceGroupDTO.
 
         **参数说明**：设备组描述。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 
@@ -111,7 +111,7 @@ class AddDeviceGroupDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddDeviceGroupDTO.
+        r"""Sets the description of this AddDeviceGroupDTO.
 
         **参数说明**：设备组描述。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 
@@ -122,7 +122,7 @@ class AddDeviceGroupDTO:
 
     @property
     def super_group_id(self):
-        """Gets the super_group_id of this AddDeviceGroupDTO.
+        r"""Gets the super_group_id of this AddDeviceGroupDTO.
 
         **参数说明**：父设备组ID，携带该参数时表示在该设备组下创建一个子设备组,动态群组不支持该参数。 **取值范围**：长度不超过36，十六进制字符串和连接符（-）的组合。
 
@@ -133,7 +133,7 @@ class AddDeviceGroupDTO:
 
     @super_group_id.setter
     def super_group_id(self, super_group_id):
-        """Sets the super_group_id of this AddDeviceGroupDTO.
+        r"""Sets the super_group_id of this AddDeviceGroupDTO.
 
         **参数说明**：父设备组ID，携带该参数时表示在该设备组下创建一个子设备组,动态群组不支持该参数。 **取值范围**：长度不超过36，十六进制字符串和连接符（-）的组合。
 
@@ -144,7 +144,7 @@ class AddDeviceGroupDTO:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AddDeviceGroupDTO.
+        r"""Gets the app_id of this AddDeviceGroupDTO.
 
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的设备组归属到哪个资源空间下，否则创建的设备组将会归属到[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -155,7 +155,7 @@ class AddDeviceGroupDTO:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AddDeviceGroupDTO.
+        r"""Sets the app_id of this AddDeviceGroupDTO.
 
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的设备组归属到哪个资源空间下，否则创建的设备组将会归属到[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -166,7 +166,7 @@ class AddDeviceGroupDTO:
 
     @property
     def group_type(self):
-        """Gets the group_type of this AddDeviceGroupDTO.
+        r"""Gets the group_type of this AddDeviceGroupDTO.
 
         **参数说明**：设备组类型，默认为静态设备组；当设备组类型为动态设备组时，需要填写动态设备组组规则
 
@@ -177,7 +177,7 @@ class AddDeviceGroupDTO:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this AddDeviceGroupDTO.
+        r"""Sets the group_type of this AddDeviceGroupDTO.
 
         **参数说明**：设备组类型，默认为静态设备组；当设备组类型为动态设备组时，需要填写动态设备组组规则
 
@@ -188,7 +188,7 @@ class AddDeviceGroupDTO:
 
     @property
     def dynamic_group_rule(self):
-        """Gets the dynamic_group_rule of this AddDeviceGroupDTO.
+        r"""Gets the dynamic_group_rule of this AddDeviceGroupDTO.
 
         **参数说明**：动态设备组规则语法和高级搜索保持一致，只需要填写where 子句内容，其余子句无需填写，todo补充说明
 
@@ -199,7 +199,7 @@ class AddDeviceGroupDTO:
 
     @dynamic_group_rule.setter
     def dynamic_group_rule(self, dynamic_group_rule):
-        """Sets the dynamic_group_rule of this AddDeviceGroupDTO.
+        r"""Sets the dynamic_group_rule of this AddDeviceGroupDTO.
 
         **参数说明**：动态设备组规则语法和高级搜索保持一致，只需要填写where 子句内容，其余子句无需填写，todo补充说明
 

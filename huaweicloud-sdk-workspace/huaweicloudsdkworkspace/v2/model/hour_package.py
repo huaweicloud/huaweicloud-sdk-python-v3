@@ -39,7 +39,7 @@ class HourPackage:
     }
 
     def __init__(self, cloud_service_type=None, resource_type=None, resource_spec_code=None, desktop_resource_spec_code=None, descriptions=None, package_duration=None, domain_ids=None, status=None):
-        """HourPackage
+        r"""HourPackage
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class HourPackage:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this HourPackage.
+        r"""Gets the cloud_service_type of this HourPackage.
 
         资源所属云服务类型编码。
 
@@ -103,7 +103,7 @@ class HourPackage:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this HourPackage.
+        r"""Sets the cloud_service_type of this HourPackage.
 
         资源所属云服务类型编码。
 
@@ -114,7 +114,7 @@ class HourPackage:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this HourPackage.
+        r"""Gets the resource_type of this HourPackage.
 
         资源类型。
 
@@ -125,7 +125,7 @@ class HourPackage:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this HourPackage.
+        r"""Sets the resource_type of this HourPackage.
 
         资源类型。
 
@@ -136,7 +136,7 @@ class HourPackage:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this HourPackage.
+        r"""Gets the resource_spec_code of this HourPackage.
 
         小时包的资源规格编码。
 
@@ -147,7 +147,7 @@ class HourPackage:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this HourPackage.
+        r"""Sets the resource_spec_code of this HourPackage.
 
         小时包的资源规格编码。
 
@@ -158,7 +158,7 @@ class HourPackage:
 
     @property
     def desktop_resource_spec_code(self):
-        """Gets the desktop_resource_spec_code of this HourPackage.
+        r"""Gets the desktop_resource_spec_code of this HourPackage.
 
         小时包对应的按需桌面的资源规格编码。
 
@@ -169,7 +169,7 @@ class HourPackage:
 
     @desktop_resource_spec_code.setter
     def desktop_resource_spec_code(self, desktop_resource_spec_code):
-        """Sets the desktop_resource_spec_code of this HourPackage.
+        r"""Sets the desktop_resource_spec_code of this HourPackage.
 
         小时包对应的按需桌面的资源规格编码。
 
@@ -180,7 +180,7 @@ class HourPackage:
 
     @property
     def descriptions(self):
-        """Gets the descriptions of this HourPackage.
+        r"""Gets the descriptions of this HourPackage.
 
         :return: The descriptions of this HourPackage.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ResourcePackageDescription`
@@ -189,7 +189,7 @@ class HourPackage:
 
     @descriptions.setter
     def descriptions(self, descriptions):
-        """Sets the descriptions of this HourPackage.
+        r"""Sets the descriptions of this HourPackage.
 
         :param descriptions: The descriptions of this HourPackage.
         :type descriptions: :class:`huaweicloudsdkworkspace.v2.ResourcePackageDescription`
@@ -198,7 +198,7 @@ class HourPackage:
 
     @property
     def package_duration(self):
-        """Gets the package_duration of this HourPackage.
+        r"""Gets the package_duration of this HourPackage.
 
         套餐可使用时长，单位：小时。
 
@@ -209,7 +209,7 @@ class HourPackage:
 
     @package_duration.setter
     def package_duration(self, package_duration):
-        """Sets the package_duration of this HourPackage.
+        r"""Sets the package_duration of this HourPackage.
 
         套餐可使用时长，单位：小时。
 
@@ -220,7 +220,7 @@ class HourPackage:
 
     @property
     def domain_ids(self):
-        """Gets the domain_ids of this HourPackage.
+        r"""Gets the domain_ids of this HourPackage.
 
         该产品套餐支持的专有域id（domainId）。
 
@@ -231,7 +231,7 @@ class HourPackage:
 
     @domain_ids.setter
     def domain_ids(self, domain_ids):
-        """Sets the domain_ids of this HourPackage.
+        r"""Sets the domain_ids of this HourPackage.
 
         该产品套餐支持的专有域id（domainId）。
 
@@ -242,7 +242,7 @@ class HourPackage:
 
     @property
     def status(self):
-        """Gets the status of this HourPackage.
+        r"""Gets the status of this HourPackage.
 
         产品状态，normal：正常、sellout：售空、abandon：下线。
 
@@ -253,7 +253,7 @@ class HourPackage:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this HourPackage.
+        r"""Sets the status of this HourPackage.
 
         产品状态，normal：正常、sellout：售空、abandon：下线。
 

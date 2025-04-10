@@ -34,7 +34,7 @@ class ListPublicLibAndAwsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, error=None, reason=None, result=None, status=None):
-        """ListPublicLibAndAwsResponse
+        r"""ListPublicLibAndAwsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListPublicLibAndAwsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListPublicLibAndAwsResponse.
+        r"""Gets the code of this ListPublicLibAndAwsResponse.
 
         错误码
 
@@ -83,7 +83,7 @@ class ListPublicLibAndAwsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListPublicLibAndAwsResponse.
+        r"""Sets the code of this ListPublicLibAndAwsResponse.
 
         错误码
 
@@ -94,7 +94,7 @@ class ListPublicLibAndAwsResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListPublicLibAndAwsResponse.
+        r"""Gets the error of this ListPublicLibAndAwsResponse.
 
         :return: The error of this ListPublicLibAndAwsResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorOfAPITest`
@@ -103,7 +103,7 @@ class ListPublicLibAndAwsResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListPublicLibAndAwsResponse.
+        r"""Sets the error of this ListPublicLibAndAwsResponse.
 
         :param error: The error of this ListPublicLibAndAwsResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorOfAPITest`
@@ -112,7 +112,7 @@ class ListPublicLibAndAwsResponse(SdkResponse):
 
     @property
     def reason(self):
-        """Gets the reason of this ListPublicLibAndAwsResponse.
+        r"""Gets the reason of this ListPublicLibAndAwsResponse.
 
         失败原因
 
@@ -123,7 +123,7 @@ class ListPublicLibAndAwsResponse(SdkResponse):
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ListPublicLibAndAwsResponse.
+        r"""Sets the reason of this ListPublicLibAndAwsResponse.
 
         失败原因
 
@@ -134,7 +134,7 @@ class ListPublicLibAndAwsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListPublicLibAndAwsResponse.
+        r"""Gets the result of this ListPublicLibAndAwsResponse.
 
         公共aw信息
 
@@ -145,7 +145,7 @@ class ListPublicLibAndAwsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListPublicLibAndAwsResponse.
+        r"""Sets the result of this ListPublicLibAndAwsResponse.
 
         公共aw信息
 
@@ -156,7 +156,7 @@ class ListPublicLibAndAwsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListPublicLibAndAwsResponse.
+        r"""Gets the status of this ListPublicLibAndAwsResponse.
 
         状态
 
@@ -167,7 +167,7 @@ class ListPublicLibAndAwsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPublicLibAndAwsResponse.
+        r"""Sets the status of this ListPublicLibAndAwsResponse.
 
         状态
 

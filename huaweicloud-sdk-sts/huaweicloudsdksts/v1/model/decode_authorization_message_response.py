@@ -26,7 +26,7 @@ class DecodeAuthorizationMessageResponse(SdkResponse):
     }
 
     def __init__(self, decoded_message=None):
-        """DecodeAuthorizationMessageResponse
+        r"""DecodeAuthorizationMessageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DecodeAuthorizationMessageResponse(SdkResponse):
 
     @property
     def decoded_message(self):
-        """Gets the decoded_message of this DecodeAuthorizationMessageResponse.
+        r"""Gets the decoded_message of this DecodeAuthorizationMessageResponse.
 
         鉴权失败原因的明文。
 
@@ -55,7 +55,7 @@ class DecodeAuthorizationMessageResponse(SdkResponse):
 
     @decoded_message.setter
     def decoded_message(self, decoded_message):
-        """Sets the decoded_message of this DecodeAuthorizationMessageResponse.
+        r"""Sets the decoded_message of this DecodeAuthorizationMessageResponse.
 
         鉴权失败原因的明文。
 

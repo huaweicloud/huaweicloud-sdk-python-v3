@@ -27,7 +27,7 @@ class TimeSpanDT:
     }
 
     def __init__(self, _from=None, to=None):
-        """TimeSpanDT
+        r"""TimeSpanDT
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TimeSpanDT:
 
     @property
     def _from(self):
-        """Gets the _from of this TimeSpanDT.
+        r"""Gets the _from of this TimeSpanDT.
 
         起始时间, 使用UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',示例：2021-02-01T00:00:00.123Z
 
@@ -61,7 +61,7 @@ class TimeSpanDT:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this TimeSpanDT.
+        r"""Sets the _from of this TimeSpanDT.
 
         起始时间, 使用UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',示例：2021-02-01T00:00:00.123Z
 
@@ -72,7 +72,7 @@ class TimeSpanDT:
 
     @property
     def to(self):
-        """Gets the to of this TimeSpanDT.
+        r"""Gets the to of this TimeSpanDT.
 
         结束时间，使用UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',示例：2021-02-01T00:00:00.123Z
 
@@ -83,7 +83,7 @@ class TimeSpanDT:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this TimeSpanDT.
+        r"""Sets the to of this TimeSpanDT.
 
         结束时间，使用UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z',示例：2021-02-01T00:00:00.123Z
 

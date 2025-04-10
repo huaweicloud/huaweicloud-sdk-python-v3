@@ -27,7 +27,7 @@ class CreateImageRequestBody:
     }
 
     def __init__(self, name=None, instance_id=None):
-        """CreateImageRequestBody
+        r"""CreateImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateImageRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateImageRequestBody.
+        r"""Gets the name of this CreateImageRequestBody.
 
         边缘私有镜像名称。
 
@@ -59,7 +59,7 @@ class CreateImageRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateImageRequestBody.
+        r"""Sets the name of this CreateImageRequestBody.
 
         边缘私有镜像名称。
 
@@ -70,7 +70,7 @@ class CreateImageRequestBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateImageRequestBody.
+        r"""Gets the instance_id of this CreateImageRequestBody.
 
         边缘实例名称。
 
@@ -81,7 +81,7 @@ class CreateImageRequestBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateImageRequestBody.
+        r"""Sets the instance_id of this CreateImageRequestBody.
 
         边缘实例名称。
 

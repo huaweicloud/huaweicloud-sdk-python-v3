@@ -27,7 +27,7 @@ class SimpleResourceNoUsed:
     }
 
     def __init__(self, type=None, quota=None):
-        """SimpleResourceNoUsed
+        r"""SimpleResourceNoUsed
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SimpleResourceNoUsed:
 
     @property
     def type(self):
-        """Gets the type of this SimpleResourceNoUsed.
+        r"""Gets the type of this SimpleResourceNoUsed.
 
         资源类别。 general_instances：普通桌面 Memory：内存 cores：CPU volumes：磁盘数量 volume_gigabytes：磁盘容量 gpu_instances：GPU桌面 deh：云办公主机 users：用户 policy_groups: 策略组 Cores: CPU(配额工具使用)
 
@@ -61,7 +61,7 @@ class SimpleResourceNoUsed:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SimpleResourceNoUsed.
+        r"""Sets the type of this SimpleResourceNoUsed.
 
         资源类别。 general_instances：普通桌面 Memory：内存 cores：CPU volumes：磁盘数量 volume_gigabytes：磁盘容量 gpu_instances：GPU桌面 deh：云办公主机 users：用户 policy_groups: 策略组 Cores: CPU(配额工具使用)
 
@@ -72,7 +72,7 @@ class SimpleResourceNoUsed:
 
     @property
     def quota(self):
-        """Gets the quota of this SimpleResourceNoUsed.
+        r"""Gets the quota of this SimpleResourceNoUsed.
 
         配额数
 
@@ -83,7 +83,7 @@ class SimpleResourceNoUsed:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this SimpleResourceNoUsed.
+        r"""Sets the quota of this SimpleResourceNoUsed.
 
         配额数
 

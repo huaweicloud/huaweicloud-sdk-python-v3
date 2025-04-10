@@ -27,7 +27,7 @@ class InstancePlatformType:
     }
 
     def __init__(self):
-        """InstancePlatformType
+        r"""InstancePlatformType
 
         The model defined in huaweicloud sdk
 

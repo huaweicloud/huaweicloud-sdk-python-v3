@@ -29,7 +29,7 @@ class CreateOrganizationalUnitReqBody:
     }
 
     def __init__(self, name=None, parent_id=None, tags=None):
-        """CreateOrganizationalUnitReqBody
+        r"""CreateOrganizationalUnitReqBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateOrganizationalUnitReqBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateOrganizationalUnitReqBody.
+        r"""Gets the name of this CreateOrganizationalUnitReqBody.
 
         要分配给新组织单元的名称。
 
@@ -66,7 +66,7 @@ class CreateOrganizationalUnitReqBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateOrganizationalUnitReqBody.
+        r"""Sets the name of this CreateOrganizationalUnitReqBody.
 
         要分配给新组织单元的名称。
 
@@ -77,7 +77,7 @@ class CreateOrganizationalUnitReqBody:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this CreateOrganizationalUnitReqBody.
+        r"""Gets the parent_id of this CreateOrganizationalUnitReqBody.
 
         要在其中创建新组织单元的根或组织单元的唯一标识符。
 
@@ -88,7 +88,7 @@ class CreateOrganizationalUnitReqBody:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this CreateOrganizationalUnitReqBody.
+        r"""Sets the parent_id of this CreateOrganizationalUnitReqBody.
 
         要在其中创建新组织单元的根或组织单元的唯一标识符。
 
@@ -99,7 +99,7 @@ class CreateOrganizationalUnitReqBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateOrganizationalUnitReqBody.
+        r"""Gets the tags of this CreateOrganizationalUnitReqBody.
 
         要附加到新创建的组织单元的标签列表。
 
@@ -110,7 +110,7 @@ class CreateOrganizationalUnitReqBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateOrganizationalUnitReqBody.
+        r"""Sets the tags of this CreateOrganizationalUnitReqBody.
 
         要附加到新创建的组织单元的标签列表。
 

@@ -35,7 +35,7 @@ class ListArtifactoryComponentRequest:
     }
 
     def __init__(self, tenant_id=None, project_id=None, repo_name=None, path=None, format=None, instance_id=None):
-        """ListArtifactoryComponentRequest
+        r"""ListArtifactoryComponentRequest
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class ListArtifactoryComponentRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ListArtifactoryComponentRequest.
+        r"""Gets the tenant_id of this ListArtifactoryComponentRequest.
 
         租户id
 
@@ -84,7 +84,7 @@ class ListArtifactoryComponentRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ListArtifactoryComponentRequest.
+        r"""Sets the tenant_id of this ListArtifactoryComponentRequest.
 
         租户id
 
@@ -95,7 +95,7 @@ class ListArtifactoryComponentRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListArtifactoryComponentRequest.
+        r"""Gets the project_id of this ListArtifactoryComponentRequest.
 
         项目id
 
@@ -106,7 +106,7 @@ class ListArtifactoryComponentRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListArtifactoryComponentRequest.
+        r"""Sets the project_id of this ListArtifactoryComponentRequest.
 
         项目id
 
@@ -117,7 +117,7 @@ class ListArtifactoryComponentRequest:
 
     @property
     def repo_name(self):
-        """Gets the repo_name of this ListArtifactoryComponentRequest.
+        r"""Gets the repo_name of this ListArtifactoryComponentRequest.
 
         仓库名称
 
@@ -128,7 +128,7 @@ class ListArtifactoryComponentRequest:
 
     @repo_name.setter
     def repo_name(self, repo_name):
-        """Sets the repo_name of this ListArtifactoryComponentRequest.
+        r"""Sets the repo_name of this ListArtifactoryComponentRequest.
 
         仓库名称
 
@@ -139,7 +139,7 @@ class ListArtifactoryComponentRequest:
 
     @property
     def path(self):
-        """Gets the path of this ListArtifactoryComponentRequest.
+        r"""Gets the path of this ListArtifactoryComponentRequest.
 
         仓库中路径
 
@@ -150,7 +150,7 @@ class ListArtifactoryComponentRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ListArtifactoryComponentRequest.
+        r"""Sets the path of this ListArtifactoryComponentRequest.
 
         仓库中路径
 
@@ -161,7 +161,7 @@ class ListArtifactoryComponentRequest:
 
     @property
     def format(self):
-        """Gets the format of this ListArtifactoryComponentRequest.
+        r"""Gets the format of this ListArtifactoryComponentRequest.
 
         仓库格式
 
@@ -172,7 +172,7 @@ class ListArtifactoryComponentRequest:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this ListArtifactoryComponentRequest.
+        r"""Sets the format of this ListArtifactoryComponentRequest.
 
         仓库格式
 
@@ -183,7 +183,7 @@ class ListArtifactoryComponentRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListArtifactoryComponentRequest.
+        r"""Gets the instance_id of this ListArtifactoryComponentRequest.
 
         实例id
 
@@ -194,7 +194,7 @@ class ListArtifactoryComponentRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListArtifactoryComponentRequest.
+        r"""Sets the instance_id of this ListArtifactoryComponentRequest.
 
         实例id
 

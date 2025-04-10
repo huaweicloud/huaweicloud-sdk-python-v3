@@ -30,7 +30,7 @@ class UploadDbObjectTemplateResponse(SdkResponse):
     }
 
     def __init__(self, send_success=None, process_status=None, parsed_success_number=None):
-        """UploadDbObjectTemplateResponse
+        r"""UploadDbObjectTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UploadDbObjectTemplateResponse(SdkResponse):
 
     @property
     def send_success(self):
-        """Gets the send_success of this UploadDbObjectTemplateResponse.
+        r"""Gets the send_success of this UploadDbObjectTemplateResponse.
 
         是否上传完成。
 
@@ -69,7 +69,7 @@ class UploadDbObjectTemplateResponse(SdkResponse):
 
     @send_success.setter
     def send_success(self, send_success):
-        """Sets the send_success of this UploadDbObjectTemplateResponse.
+        r"""Sets the send_success of this UploadDbObjectTemplateResponse.
 
         是否上传完成。
 
@@ -80,7 +80,7 @@ class UploadDbObjectTemplateResponse(SdkResponse):
 
     @property
     def process_status(self):
-        """Gets the process_status of this UploadDbObjectTemplateResponse.
+        r"""Gets the process_status of this UploadDbObjectTemplateResponse.
 
         文件解析状态。
 
@@ -91,7 +91,7 @@ class UploadDbObjectTemplateResponse(SdkResponse):
 
     @process_status.setter
     def process_status(self, process_status):
-        """Sets the process_status of this UploadDbObjectTemplateResponse.
+        r"""Sets the process_status of this UploadDbObjectTemplateResponse.
 
         文件解析状态。
 
@@ -102,7 +102,7 @@ class UploadDbObjectTemplateResponse(SdkResponse):
 
     @property
     def parsed_success_number(self):
-        """Gets the parsed_success_number of this UploadDbObjectTemplateResponse.
+        r"""Gets the parsed_success_number of this UploadDbObjectTemplateResponse.
 
         解析成功的行数。
 
@@ -113,7 +113,7 @@ class UploadDbObjectTemplateResponse(SdkResponse):
 
     @parsed_success_number.setter
     def parsed_success_number(self, parsed_success_number):
-        """Sets the parsed_success_number of this UploadDbObjectTemplateResponse.
+        r"""Sets the parsed_success_number of this UploadDbObjectTemplateResponse.
 
         解析成功的行数。
 

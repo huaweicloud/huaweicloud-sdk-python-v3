@@ -36,7 +36,7 @@ class ShowNextflowResponse(SdkResponse):
     }
 
     def __init__(self, version=None, workspace=None, status=None, progress=None, failed_reason=None, cache_status=None):
-        """ShowNextflowResponse
+        r"""ShowNextflowResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowNextflowResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowNextflowResponse.
+        r"""Gets the version of this ShowNextflowResponse.
 
         引擎版本号
 
@@ -90,7 +90,7 @@ class ShowNextflowResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowNextflowResponse.
+        r"""Sets the version of this ShowNextflowResponse.
 
         引擎版本号
 
@@ -101,7 +101,7 @@ class ShowNextflowResponse(SdkResponse):
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowNextflowResponse.
+        r"""Gets the workspace of this ShowNextflowResponse.
 
         用作路径用量，单位：byte
 
@@ -112,7 +112,7 @@ class ShowNextflowResponse(SdkResponse):
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowNextflowResponse.
+        r"""Sets the workspace of this ShowNextflowResponse.
 
         用作路径用量，单位：byte
 
@@ -123,7 +123,7 @@ class ShowNextflowResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowNextflowResponse.
+        r"""Gets the status of this ShowNextflowResponse.
 
         状态
 
@@ -134,7 +134,7 @@ class ShowNextflowResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowNextflowResponse.
+        r"""Sets the status of this ShowNextflowResponse.
 
         状态
 
@@ -145,7 +145,7 @@ class ShowNextflowResponse(SdkResponse):
 
     @property
     def progress(self):
-        """Gets the progress of this ShowNextflowResponse.
+        r"""Gets the progress of this ShowNextflowResponse.
 
         进度
 
@@ -156,7 +156,7 @@ class ShowNextflowResponse(SdkResponse):
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ShowNextflowResponse.
+        r"""Sets the progress of this ShowNextflowResponse.
 
         进度
 
@@ -167,7 +167,7 @@ class ShowNextflowResponse(SdkResponse):
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this ShowNextflowResponse.
+        r"""Gets the failed_reason of this ShowNextflowResponse.
 
         失败原因
 
@@ -178,7 +178,7 @@ class ShowNextflowResponse(SdkResponse):
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this ShowNextflowResponse.
+        r"""Sets the failed_reason of this ShowNextflowResponse.
 
         失败原因
 
@@ -189,7 +189,7 @@ class ShowNextflowResponse(SdkResponse):
 
     @property
     def cache_status(self):
-        """Gets the cache_status of this ShowNextflowResponse.
+        r"""Gets the cache_status of this ShowNextflowResponse.
 
         缓存清理状态
 
@@ -200,7 +200,7 @@ class ShowNextflowResponse(SdkResponse):
 
     @cache_status.setter
     def cache_status(self, cache_status):
-        """Sets the cache_status of this ShowNextflowResponse.
+        r"""Sets the cache_status of this ShowNextflowResponse.
 
         缓存清理状态
 

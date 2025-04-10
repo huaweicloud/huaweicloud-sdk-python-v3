@@ -31,7 +31,7 @@ class TestReportInfoRequestBody:
     }
 
     def __init__(self, plan_id=None, branch_id=None, module_id=None, fixed_version_id=None):
-        """TestReportInfoRequestBody
+        r"""TestReportInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TestReportInfoRequestBody:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this TestReportInfoRequestBody.
+        r"""Gets the plan_id of this TestReportInfoRequestBody.
 
         测试计划id,(plan_id和branch_id不能同时为空，优先取plan_id)
 
@@ -75,7 +75,7 @@ class TestReportInfoRequestBody:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this TestReportInfoRequestBody.
+        r"""Sets the plan_id of this TestReportInfoRequestBody.
 
         测试计划id,(plan_id和branch_id不能同时为空，优先取plan_id)
 
@@ -86,7 +86,7 @@ class TestReportInfoRequestBody:
 
     @property
     def branch_id(self):
-        """Gets the branch_id of this TestReportInfoRequestBody.
+        r"""Gets the branch_id of this TestReportInfoRequestBody.
 
         分支id,(plan_id和branch_id不能同时为空，优先取plan_id)
 
@@ -97,7 +97,7 @@ class TestReportInfoRequestBody:
 
     @branch_id.setter
     def branch_id(self, branch_id):
-        """Sets the branch_id of this TestReportInfoRequestBody.
+        r"""Sets the branch_id of this TestReportInfoRequestBody.
 
         分支id,(plan_id和branch_id不能同时为空，优先取plan_id)
 
@@ -108,7 +108,7 @@ class TestReportInfoRequestBody:
 
     @property
     def module_id(self):
-        """Gets the module_id of this TestReportInfoRequestBody.
+        r"""Gets the module_id of this TestReportInfoRequestBody.
 
         模块ID(查询未设置传入-2)
 
@@ -119,7 +119,7 @@ class TestReportInfoRequestBody:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this TestReportInfoRequestBody.
+        r"""Sets the module_id of this TestReportInfoRequestBody.
 
         模块ID(查询未设置传入-2)
 
@@ -130,7 +130,7 @@ class TestReportInfoRequestBody:
 
     @property
     def fixed_version_id(self):
-        """Gets the fixed_version_id of this TestReportInfoRequestBody.
+        r"""Gets the fixed_version_id of this TestReportInfoRequestBody.
 
         筛选迭代ID(查询未设置传入-2)
 
@@ -141,7 +141,7 @@ class TestReportInfoRequestBody:
 
     @fixed_version_id.setter
     def fixed_version_id(self, fixed_version_id):
-        """Sets the fixed_version_id of this TestReportInfoRequestBody.
+        r"""Sets the fixed_version_id of this TestReportInfoRequestBody.
 
         筛选迭代ID(查询未设置传入-2)
 

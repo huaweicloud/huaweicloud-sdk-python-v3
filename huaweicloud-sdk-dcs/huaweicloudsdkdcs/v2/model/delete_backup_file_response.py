@@ -24,7 +24,7 @@ class DeleteBackupFileResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteBackupFileResponse
+        r"""DeleteBackupFileResponse
 
         The model defined in huaweicloud sdk
 

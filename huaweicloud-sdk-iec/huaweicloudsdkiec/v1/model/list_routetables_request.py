@@ -33,7 +33,7 @@ class ListRoutetablesRequest:
     }
 
     def __init__(self, id=None, limit=None, name=None, offset=None, vpc_id=None):
-        """ListRoutetablesRequest
+        r"""ListRoutetablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListRoutetablesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListRoutetablesRequest.
+        r"""Gets the id of this ListRoutetablesRequest.
 
         路由表ID
 
@@ -82,7 +82,7 @@ class ListRoutetablesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListRoutetablesRequest.
+        r"""Sets the id of this ListRoutetablesRequest.
 
         路由表ID
 
@@ -93,7 +93,7 @@ class ListRoutetablesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRoutetablesRequest.
+        r"""Gets the limit of this ListRoutetablesRequest.
 
         每页的最大数
 
@@ -104,7 +104,7 @@ class ListRoutetablesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRoutetablesRequest.
+        r"""Sets the limit of this ListRoutetablesRequest.
 
         每页的最大数
 
@@ -115,7 +115,7 @@ class ListRoutetablesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListRoutetablesRequest.
+        r"""Gets the name of this ListRoutetablesRequest.
 
         路由表名称。
 
@@ -126,7 +126,7 @@ class ListRoutetablesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListRoutetablesRequest.
+        r"""Sets the name of this ListRoutetablesRequest.
 
         路由表名称。
 
@@ -137,7 +137,7 @@ class ListRoutetablesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRoutetablesRequest.
+        r"""Gets the offset of this ListRoutetablesRequest.
 
         偏移量
 
@@ -148,7 +148,7 @@ class ListRoutetablesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRoutetablesRequest.
+        r"""Sets the offset of this ListRoutetablesRequest.
 
         偏移量
 
@@ -159,7 +159,7 @@ class ListRoutetablesRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListRoutetablesRequest.
+        r"""Gets the vpc_id of this ListRoutetablesRequest.
 
         vpc的ID
 
@@ -170,7 +170,7 @@ class ListRoutetablesRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListRoutetablesRequest.
+        r"""Sets the vpc_id of this ListRoutetablesRequest.
 
         vpc的ID
 

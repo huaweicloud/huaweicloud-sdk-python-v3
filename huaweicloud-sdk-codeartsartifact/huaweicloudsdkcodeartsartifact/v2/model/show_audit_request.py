@@ -39,7 +39,7 @@ class ShowAuditRequest:
     }
 
     def __init__(self, tenant_id=None, project_id=None, module=None, repo=None, user_id=None, instance_id=None, page_num=None, page_size=None):
-        """ShowAuditRequest
+        r"""ShowAuditRequest
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class ShowAuditRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ShowAuditRequest.
+        r"""Gets the tenant_id of this ShowAuditRequest.
 
         租户id
 
@@ -99,7 +99,7 @@ class ShowAuditRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ShowAuditRequest.
+        r"""Sets the tenant_id of this ShowAuditRequest.
 
         租户id
 
@@ -110,7 +110,7 @@ class ShowAuditRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowAuditRequest.
+        r"""Gets the project_id of this ShowAuditRequest.
 
         项目id
 
@@ -121,7 +121,7 @@ class ShowAuditRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowAuditRequest.
+        r"""Sets the project_id of this ShowAuditRequest.
 
         项目id
 
@@ -132,7 +132,7 @@ class ShowAuditRequest:
 
     @property
     def module(self):
-        """Gets the module of this ShowAuditRequest.
+        r"""Gets the module of this ShowAuditRequest.
 
         模块
 
@@ -143,7 +143,7 @@ class ShowAuditRequest:
 
     @module.setter
     def module(self, module):
-        """Sets the module of this ShowAuditRequest.
+        r"""Sets the module of this ShowAuditRequest.
 
         模块
 
@@ -154,7 +154,7 @@ class ShowAuditRequest:
 
     @property
     def repo(self):
-        """Gets the repo of this ShowAuditRequest.
+        r"""Gets the repo of this ShowAuditRequest.
 
         仓库id
 
@@ -165,7 +165,7 @@ class ShowAuditRequest:
 
     @repo.setter
     def repo(self, repo):
-        """Sets the repo of this ShowAuditRequest.
+        r"""Sets the repo of this ShowAuditRequest.
 
         仓库id
 
@@ -176,7 +176,7 @@ class ShowAuditRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowAuditRequest.
+        r"""Gets the user_id of this ShowAuditRequest.
 
         用户id
 
@@ -187,7 +187,7 @@ class ShowAuditRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowAuditRequest.
+        r"""Sets the user_id of this ShowAuditRequest.
 
         用户id
 
@@ -198,7 +198,7 @@ class ShowAuditRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowAuditRequest.
+        r"""Gets the instance_id of this ShowAuditRequest.
 
         实例id
 
@@ -209,7 +209,7 @@ class ShowAuditRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowAuditRequest.
+        r"""Sets the instance_id of this ShowAuditRequest.
 
         实例id
 
@@ -220,7 +220,7 @@ class ShowAuditRequest:
 
     @property
     def page_num(self):
-        """Gets the page_num of this ShowAuditRequest.
+        r"""Gets the page_num of this ShowAuditRequest.
 
         页码
 
@@ -231,7 +231,7 @@ class ShowAuditRequest:
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this ShowAuditRequest.
+        r"""Sets the page_num of this ShowAuditRequest.
 
         页码
 
@@ -242,7 +242,7 @@ class ShowAuditRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowAuditRequest.
+        r"""Gets the page_size of this ShowAuditRequest.
 
         每页大小
 
@@ -253,7 +253,7 @@ class ShowAuditRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowAuditRequest.
+        r"""Sets the page_size of this ShowAuditRequest.
 
         每页大小
 

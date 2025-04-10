@@ -27,7 +27,7 @@ class UpdateDomainRequestBody:
     }
 
     def __init__(self, protect_status=None, description=None):
-        """UpdateDomainRequestBody
+        r"""UpdateDomainRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateDomainRequestBody:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this UpdateDomainRequestBody.
+        r"""Gets the protect_status of this UpdateDomainRequestBody.
 
         防护状态:防护中-on;未防护-off
 
@@ -61,7 +61,7 @@ class UpdateDomainRequestBody:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this UpdateDomainRequestBody.
+        r"""Sets the protect_status of this UpdateDomainRequestBody.
 
         防护状态:防护中-on;未防护-off
 
@@ -72,7 +72,7 @@ class UpdateDomainRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateDomainRequestBody.
+        r"""Gets the description of this UpdateDomainRequestBody.
 
         域名描述
 
@@ -83,7 +83,7 @@ class UpdateDomainRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateDomainRequestBody.
+        r"""Sets the description of this UpdateDomainRequestBody.
 
         域名描述
 

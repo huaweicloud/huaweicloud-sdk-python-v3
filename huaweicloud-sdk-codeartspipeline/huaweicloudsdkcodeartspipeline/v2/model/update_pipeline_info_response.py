@@ -26,7 +26,7 @@ class UpdatePipelineInfoResponse(SdkResponse):
     }
 
     def __init__(self, pipeline_id=None):
-        """UpdatePipelineInfoResponse
+        r"""UpdatePipelineInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdatePipelineInfoResponse(SdkResponse):
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this UpdatePipelineInfoResponse.
+        r"""Gets the pipeline_id of this UpdatePipelineInfoResponse.
 
         流水线ID
 
@@ -55,7 +55,7 @@ class UpdatePipelineInfoResponse(SdkResponse):
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this UpdatePipelineInfoResponse.
+        r"""Sets the pipeline_id of this UpdatePipelineInfoResponse.
 
         流水线ID
 

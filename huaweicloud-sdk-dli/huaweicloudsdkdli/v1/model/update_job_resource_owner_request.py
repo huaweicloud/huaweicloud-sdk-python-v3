@@ -25,7 +25,7 @@ class UpdateJobResourceOwnerRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateJobResourceOwnerRequest
+        r"""UpdateJobResourceOwnerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateJobResourceOwnerRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateJobResourceOwnerRequest.
+        r"""Gets the body of this UpdateJobResourceOwnerRequest.
 
         :return: The body of this UpdateJobResourceOwnerRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateJobResourceOwnerRequestBody`
@@ -52,7 +52,7 @@ class UpdateJobResourceOwnerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateJobResourceOwnerRequest.
+        r"""Sets the body of this UpdateJobResourceOwnerRequest.
 
         :param body: The body of this UpdateJobResourceOwnerRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateJobResourceOwnerRequestBody`

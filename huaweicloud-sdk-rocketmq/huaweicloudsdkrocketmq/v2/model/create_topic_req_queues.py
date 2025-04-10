@@ -27,7 +27,7 @@ class CreateTopicReqQueues:
     }
 
     def __init__(self, broker=None, queue_num=None):
-        """CreateTopicReqQueues
+        r"""CreateTopicReqQueues
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateTopicReqQueues:
 
     @property
     def broker(self):
-        """Gets the broker of this CreateTopicReqQueues.
+        r"""Gets the broker of this CreateTopicReqQueues.
 
         关联的代理。
 
@@ -61,7 +61,7 @@ class CreateTopicReqQueues:
 
     @broker.setter
     def broker(self, broker):
-        """Sets the broker of this CreateTopicReqQueues.
+        r"""Sets the broker of this CreateTopicReqQueues.
 
         关联的代理。
 
@@ -72,7 +72,7 @@ class CreateTopicReqQueues:
 
     @property
     def queue_num(self):
-        """Gets the queue_num of this CreateTopicReqQueues.
+        r"""Gets the queue_num of this CreateTopicReqQueues.
 
         队列数，范围1~50。
 
@@ -83,7 +83,7 @@ class CreateTopicReqQueues:
 
     @queue_num.setter
     def queue_num(self, queue_num):
-        """Sets the queue_num of this CreateTopicReqQueues.
+        r"""Sets the queue_num of this CreateTopicReqQueues.
 
         队列数，范围1~50。
 

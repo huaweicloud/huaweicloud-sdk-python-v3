@@ -31,7 +31,7 @@ class QaFlowHitResult:
     }
 
     def __init__(self, session_id=None, current_node=None, candidate_nodes=None, is_completed=None):
-        """QaFlowHitResult
+        r"""QaFlowHitResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class QaFlowHitResult:
 
     @property
     def session_id(self):
-        """Gets the session_id of this QaFlowHitResult.
+        r"""Gets the session_id of this QaFlowHitResult.
 
         seesionID
 
@@ -75,7 +75,7 @@ class QaFlowHitResult:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this QaFlowHitResult.
+        r"""Sets the session_id of this QaFlowHitResult.
 
         seesionID
 
@@ -86,7 +86,7 @@ class QaFlowHitResult:
 
     @property
     def current_node(self):
-        """Gets the current_node of this QaFlowHitResult.
+        r"""Gets the current_node of this QaFlowHitResult.
 
         :return: The current_node of this QaFlowHitResult.
         :rtype: :class:`huaweicloudsdkosm.v2.QaFlowHitNodeVo`
@@ -95,7 +95,7 @@ class QaFlowHitResult:
 
     @current_node.setter
     def current_node(self, current_node):
-        """Sets the current_node of this QaFlowHitResult.
+        r"""Sets the current_node of this QaFlowHitResult.
 
         :param current_node: The current_node of this QaFlowHitResult.
         :type current_node: :class:`huaweicloudsdkosm.v2.QaFlowHitNodeVo`
@@ -104,7 +104,7 @@ class QaFlowHitResult:
 
     @property
     def candidate_nodes(self):
-        """Gets the candidate_nodes of this QaFlowHitResult.
+        r"""Gets the candidate_nodes of this QaFlowHitResult.
 
         备用节点
 
@@ -115,7 +115,7 @@ class QaFlowHitResult:
 
     @candidate_nodes.setter
     def candidate_nodes(self, candidate_nodes):
-        """Sets the candidate_nodes of this QaFlowHitResult.
+        r"""Sets the candidate_nodes of this QaFlowHitResult.
 
         备用节点
 
@@ -126,7 +126,7 @@ class QaFlowHitResult:
 
     @property
     def is_completed(self):
-        """Gets the is_completed of this QaFlowHitResult.
+        r"""Gets the is_completed of this QaFlowHitResult.
 
         是否完整
 
@@ -137,7 +137,7 @@ class QaFlowHitResult:
 
     @is_completed.setter
     def is_completed(self, is_completed):
-        """Sets the is_completed of this QaFlowHitResult.
+        r"""Sets the is_completed of this QaFlowHitResult.
 
         是否完整
 

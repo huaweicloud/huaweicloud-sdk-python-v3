@@ -27,7 +27,7 @@ class ListRdSforMySqlProxyRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None):
-        """ListRdSforMySqlProxyRequest
+        r"""ListRdSforMySqlProxyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListRdSforMySqlProxyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListRdSforMySqlProxyRequest.
+        r"""Gets the instance_id of this ListRdSforMySqlProxyRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -60,7 +60,7 @@ class ListRdSforMySqlProxyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListRdSforMySqlProxyRequest.
+        r"""Sets the instance_id of this ListRdSforMySqlProxyRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -71,7 +71,7 @@ class ListRdSforMySqlProxyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListRdSforMySqlProxyRequest.
+        r"""Gets the x_language of this ListRdSforMySqlProxyRequest.
 
         语言。
 
@@ -82,7 +82,7 @@ class ListRdSforMySqlProxyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListRdSforMySqlProxyRequest.
+        r"""Sets the x_language of this ListRdSforMySqlProxyRequest.
 
         语言。
 

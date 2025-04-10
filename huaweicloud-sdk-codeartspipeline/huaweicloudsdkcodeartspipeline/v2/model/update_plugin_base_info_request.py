@@ -27,7 +27,7 @@ class UpdatePluginBaseInfoRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """UpdatePluginBaseInfoRequest
+        r"""UpdatePluginBaseInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePluginBaseInfoRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdatePluginBaseInfoRequest.
+        r"""Gets the domain_id of this UpdatePluginBaseInfoRequest.
 
         租户ID
 
@@ -60,7 +60,7 @@ class UpdatePluginBaseInfoRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdatePluginBaseInfoRequest.
+        r"""Sets the domain_id of this UpdatePluginBaseInfoRequest.
 
         租户ID
 
@@ -71,7 +71,7 @@ class UpdatePluginBaseInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePluginBaseInfoRequest.
+        r"""Gets the body of this UpdatePluginBaseInfoRequest.
 
         :return: The body of this UpdatePluginBaseInfoRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PluginBasicDTO`
@@ -80,7 +80,7 @@ class UpdatePluginBaseInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePluginBaseInfoRequest.
+        r"""Sets the body of this UpdatePluginBaseInfoRequest.
 
         :param body: The body of this UpdatePluginBaseInfoRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.PluginBasicDTO`

@@ -73,7 +73,7 @@ class AppDetailInfo:
     }
 
     def __init__(self, id=None, name=None, region=None, description=None, is_disable=None, create_type=None, project_id=None, project_name=None, slave_cluster_id=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, can_create_env=None, can_disable=None, owner_tenant_id=None, create_user_id=None, create_tenant_id=None, create_time=None, update_time=None, permission_level=None, arrange_infos=None):
-        """AppDetailInfo
+        r"""AppDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class AppDetailInfo:
 
     @property
     def id(self):
-        """Gets the id of this AppDetailInfo.
+        r"""Gets the id of this AppDetailInfo.
 
         应用id
 
@@ -222,7 +222,7 @@ class AppDetailInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppDetailInfo.
+        r"""Sets the id of this AppDetailInfo.
 
         应用id
 
@@ -233,7 +233,7 @@ class AppDetailInfo:
 
     @property
     def name(self):
-        """Gets the name of this AppDetailInfo.
+        r"""Gets the name of this AppDetailInfo.
 
         应用名称
 
@@ -244,7 +244,7 @@ class AppDetailInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppDetailInfo.
+        r"""Sets the name of this AppDetailInfo.
 
         应用名称
 
@@ -255,7 +255,7 @@ class AppDetailInfo:
 
     @property
     def region(self):
-        """Gets the region of this AppDetailInfo.
+        r"""Gets the region of this AppDetailInfo.
 
         应用所属区域
 
@@ -266,7 +266,7 @@ class AppDetailInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AppDetailInfo.
+        r"""Sets the region of this AppDetailInfo.
 
         应用所属区域
 
@@ -277,7 +277,7 @@ class AppDetailInfo:
 
     @property
     def description(self):
-        """Gets the description of this AppDetailInfo.
+        r"""Gets the description of this AppDetailInfo.
 
         描述
 
@@ -288,7 +288,7 @@ class AppDetailInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppDetailInfo.
+        r"""Sets the description of this AppDetailInfo.
 
         描述
 
@@ -299,7 +299,7 @@ class AppDetailInfo:
 
     @property
     def is_disable(self):
-        """Gets the is_disable of this AppDetailInfo.
+        r"""Gets the is_disable of this AppDetailInfo.
 
         当前应用是否被禁用
 
@@ -310,7 +310,7 @@ class AppDetailInfo:
 
     @is_disable.setter
     def is_disable(self, is_disable):
-        """Sets the is_disable of this AppDetailInfo.
+        r"""Sets the is_disable of this AppDetailInfo.
 
         当前应用是否被禁用
 
@@ -321,7 +321,7 @@ class AppDetailInfo:
 
     @property
     def create_type(self):
-        """Gets the create_type of this AppDetailInfo.
+        r"""Gets the create_type of this AppDetailInfo.
 
         创建方式
 
@@ -332,7 +332,7 @@ class AppDetailInfo:
 
     @create_type.setter
     def create_type(self, create_type):
-        """Sets the create_type of this AppDetailInfo.
+        r"""Sets the create_type of this AppDetailInfo.
 
         创建方式
 
@@ -343,7 +343,7 @@ class AppDetailInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AppDetailInfo.
+        r"""Gets the project_id of this AppDetailInfo.
 
         项目id
 
@@ -354,7 +354,7 @@ class AppDetailInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AppDetailInfo.
+        r"""Sets the project_id of this AppDetailInfo.
 
         项目id
 
@@ -365,7 +365,7 @@ class AppDetailInfo:
 
     @property
     def project_name(self):
-        """Gets the project_name of this AppDetailInfo.
+        r"""Gets the project_name of this AppDetailInfo.
 
         项目名称
 
@@ -376,7 +376,7 @@ class AppDetailInfo:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this AppDetailInfo.
+        r"""Sets the project_name of this AppDetailInfo.
 
         项目名称
 
@@ -387,7 +387,7 @@ class AppDetailInfo:
 
     @property
     def slave_cluster_id(self):
-        """Gets the slave_cluster_id of this AppDetailInfo.
+        r"""Gets the slave_cluster_id of this AppDetailInfo.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -398,7 +398,7 @@ class AppDetailInfo:
 
     @slave_cluster_id.setter
     def slave_cluster_id(self, slave_cluster_id):
-        """Sets the slave_cluster_id of this AppDetailInfo.
+        r"""Sets the slave_cluster_id of this AppDetailInfo.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -409,7 +409,7 @@ class AppDetailInfo:
 
     @property
     def is_care(self):
-        """Gets the is_care of this AppDetailInfo.
+        r"""Gets the is_care of this AppDetailInfo.
 
         当前用户是否已收藏
 
@@ -420,7 +420,7 @@ class AppDetailInfo:
 
     @is_care.setter
     def is_care(self, is_care):
-        """Sets the is_care of this AppDetailInfo.
+        r"""Sets the is_care of this AppDetailInfo.
 
         当前用户是否已收藏
 
@@ -431,7 +431,7 @@ class AppDetailInfo:
 
     @property
     def can_modify(self):
-        """Gets the can_modify of this AppDetailInfo.
+        r"""Gets the can_modify of this AppDetailInfo.
 
         是否有编辑权限
 
@@ -442,7 +442,7 @@ class AppDetailInfo:
 
     @can_modify.setter
     def can_modify(self, can_modify):
-        """Sets the can_modify of this AppDetailInfo.
+        r"""Sets the can_modify of this AppDetailInfo.
 
         是否有编辑权限
 
@@ -453,7 +453,7 @@ class AppDetailInfo:
 
     @property
     def can_delete(self):
-        """Gets the can_delete of this AppDetailInfo.
+        r"""Gets the can_delete of this AppDetailInfo.
 
         是否有删除的权限
 
@@ -464,7 +464,7 @@ class AppDetailInfo:
 
     @can_delete.setter
     def can_delete(self, can_delete):
-        """Sets the can_delete of this AppDetailInfo.
+        r"""Sets the can_delete of this AppDetailInfo.
 
         是否有删除的权限
 
@@ -475,7 +475,7 @@ class AppDetailInfo:
 
     @property
     def can_view(self):
-        """Gets the can_view of this AppDetailInfo.
+        r"""Gets the can_view of this AppDetailInfo.
 
         是否有查看权限
 
@@ -486,7 +486,7 @@ class AppDetailInfo:
 
     @can_view.setter
     def can_view(self, can_view):
-        """Sets the can_view of this AppDetailInfo.
+        r"""Sets the can_view of this AppDetailInfo.
 
         是否有查看权限
 
@@ -497,7 +497,7 @@ class AppDetailInfo:
 
     @property
     def can_execute(self):
-        """Gets the can_execute of this AppDetailInfo.
+        r"""Gets the can_execute of this AppDetailInfo.
 
         是否有部署权限
 
@@ -508,7 +508,7 @@ class AppDetailInfo:
 
     @can_execute.setter
     def can_execute(self, can_execute):
-        """Sets the can_execute of this AppDetailInfo.
+        r"""Sets the can_execute of this AppDetailInfo.
 
         是否有部署权限
 
@@ -519,7 +519,7 @@ class AppDetailInfo:
 
     @property
     def can_copy(self):
-        """Gets the can_copy of this AppDetailInfo.
+        r"""Gets the can_copy of this AppDetailInfo.
 
         是否有复制权限
 
@@ -530,7 +530,7 @@ class AppDetailInfo:
 
     @can_copy.setter
     def can_copy(self, can_copy):
-        """Sets the can_copy of this AppDetailInfo.
+        r"""Sets the can_copy of this AppDetailInfo.
 
         是否有复制权限
 
@@ -541,7 +541,7 @@ class AppDetailInfo:
 
     @property
     def can_manage(self):
-        """Gets the can_manage of this AppDetailInfo.
+        r"""Gets the can_manage of this AppDetailInfo.
 
         是否有编辑应用权限矩阵的权限
 
@@ -552,7 +552,7 @@ class AppDetailInfo:
 
     @can_manage.setter
     def can_manage(self, can_manage):
-        """Sets the can_manage of this AppDetailInfo.
+        r"""Sets the can_manage of this AppDetailInfo.
 
         是否有编辑应用权限矩阵的权限
 
@@ -563,7 +563,7 @@ class AppDetailInfo:
 
     @property
     def can_create_env(self):
-        """Gets the can_create_env of this AppDetailInfo.
+        r"""Gets the can_create_env of this AppDetailInfo.
 
         是否有创建环境的权限
 
@@ -574,7 +574,7 @@ class AppDetailInfo:
 
     @can_create_env.setter
     def can_create_env(self, can_create_env):
-        """Sets the can_create_env of this AppDetailInfo.
+        r"""Sets the can_create_env of this AppDetailInfo.
 
         是否有创建环境的权限
 
@@ -585,7 +585,7 @@ class AppDetailInfo:
 
     @property
     def can_disable(self):
-        """Gets the can_disable of this AppDetailInfo.
+        r"""Gets the can_disable of this AppDetailInfo.
 
         是否有禁用应用的权限
 
@@ -596,7 +596,7 @@ class AppDetailInfo:
 
     @can_disable.setter
     def can_disable(self, can_disable):
-        """Sets the can_disable of this AppDetailInfo.
+        r"""Sets the can_disable of this AppDetailInfo.
 
         是否有禁用应用的权限
 
@@ -607,7 +607,7 @@ class AppDetailInfo:
 
     @property
     def owner_tenant_id(self):
-        """Gets the owner_tenant_id of this AppDetailInfo.
+        r"""Gets the owner_tenant_id of this AppDetailInfo.
 
         应用所属人租户id
 
@@ -618,7 +618,7 @@ class AppDetailInfo:
 
     @owner_tenant_id.setter
     def owner_tenant_id(self, owner_tenant_id):
-        """Sets the owner_tenant_id of this AppDetailInfo.
+        r"""Sets the owner_tenant_id of this AppDetailInfo.
 
         应用所属人租户id
 
@@ -629,7 +629,7 @@ class AppDetailInfo:
 
     @property
     def create_user_id(self):
-        """Gets the create_user_id of this AppDetailInfo.
+        r"""Gets the create_user_id of this AppDetailInfo.
 
         应用创建者用户名
 
@@ -640,7 +640,7 @@ class AppDetailInfo:
 
     @create_user_id.setter
     def create_user_id(self, create_user_id):
-        """Sets the create_user_id of this AppDetailInfo.
+        r"""Sets the create_user_id of this AppDetailInfo.
 
         应用创建者用户名
 
@@ -651,7 +651,7 @@ class AppDetailInfo:
 
     @property
     def create_tenant_id(self):
-        """Gets the create_tenant_id of this AppDetailInfo.
+        r"""Gets the create_tenant_id of this AppDetailInfo.
 
         应用创建人租户id
 
@@ -662,7 +662,7 @@ class AppDetailInfo:
 
     @create_tenant_id.setter
     def create_tenant_id(self, create_tenant_id):
-        """Sets the create_tenant_id of this AppDetailInfo.
+        r"""Sets the create_tenant_id of this AppDetailInfo.
 
         应用创建人租户id
 
@@ -673,7 +673,7 @@ class AppDetailInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AppDetailInfo.
+        r"""Gets the create_time of this AppDetailInfo.
 
         创建时间
 
@@ -684,7 +684,7 @@ class AppDetailInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AppDetailInfo.
+        r"""Sets the create_time of this AppDetailInfo.
 
         创建时间
 
@@ -695,7 +695,7 @@ class AppDetailInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppDetailInfo.
+        r"""Gets the update_time of this AppDetailInfo.
 
         修改时间
 
@@ -706,7 +706,7 @@ class AppDetailInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppDetailInfo.
+        r"""Sets the update_time of this AppDetailInfo.
 
         修改时间
 
@@ -717,7 +717,7 @@ class AppDetailInfo:
 
     @property
     def permission_level(self):
-        """Gets the permission_level of this AppDetailInfo.
+        r"""Gets the permission_level of this AppDetailInfo.
 
         权限等级
 
@@ -728,7 +728,7 @@ class AppDetailInfo:
 
     @permission_level.setter
     def permission_level(self, permission_level):
-        """Sets the permission_level of this AppDetailInfo.
+        r"""Sets the permission_level of this AppDetailInfo.
 
         权限等级
 
@@ -739,7 +739,7 @@ class AppDetailInfo:
 
     @property
     def arrange_infos(self):
-        """Gets the arrange_infos of this AppDetailInfo.
+        r"""Gets the arrange_infos of this AppDetailInfo.
 
         部署任务信息
 
@@ -750,7 +750,7 @@ class AppDetailInfo:
 
     @arrange_infos.setter
     def arrange_infos(self, arrange_infos):
-        """Sets the arrange_infos of this AppDetailInfo.
+        r"""Sets the arrange_infos of this AppDetailInfo.
 
         部署任务信息
 

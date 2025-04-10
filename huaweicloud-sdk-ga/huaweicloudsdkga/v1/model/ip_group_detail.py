@@ -39,7 +39,7 @@ class IpGroupDetail:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, ip_list=None, associated_listeners=None, created_at=None, updated_at=None):
-        """IpGroupDetail
+        r"""IpGroupDetail
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class IpGroupDetail:
 
     @property
     def id(self):
-        """Gets the id of this IpGroupDetail.
+        r"""Gets the id of this IpGroupDetail.
 
         IP地址组ID。
 
@@ -103,7 +103,7 @@ class IpGroupDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IpGroupDetail.
+        r"""Sets the id of this IpGroupDetail.
 
         IP地址组ID。
 
@@ -114,7 +114,7 @@ class IpGroupDetail:
 
     @property
     def name(self):
-        """Gets the name of this IpGroupDetail.
+        r"""Gets the name of this IpGroupDetail.
 
         IP地址组名称。
 
@@ -125,7 +125,7 @@ class IpGroupDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IpGroupDetail.
+        r"""Sets the name of this IpGroupDetail.
 
         IP地址组名称。
 
@@ -136,7 +136,7 @@ class IpGroupDetail:
 
     @property
     def description(self):
-        """Gets the description of this IpGroupDetail.
+        r"""Gets the description of this IpGroupDetail.
 
         IP地址组描述。
 
@@ -147,7 +147,7 @@ class IpGroupDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IpGroupDetail.
+        r"""Sets the description of this IpGroupDetail.
 
         IP地址组描述。
 
@@ -158,7 +158,7 @@ class IpGroupDetail:
 
     @property
     def status(self):
-        """Gets the status of this IpGroupDetail.
+        r"""Gets the status of this IpGroupDetail.
 
         :return: The status of this IpGroupDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -167,7 +167,7 @@ class IpGroupDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IpGroupDetail.
+        r"""Sets the status of this IpGroupDetail.
 
         :param status: The status of this IpGroupDetail.
         :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -176,7 +176,7 @@ class IpGroupDetail:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this IpGroupDetail.
+        r"""Gets the ip_list of this IpGroupDetail.
 
         IP地址组中的IP网段列表。
 
@@ -187,7 +187,7 @@ class IpGroupDetail:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this IpGroupDetail.
+        r"""Sets the ip_list of this IpGroupDetail.
 
         IP地址组中的IP网段列表。
 
@@ -198,7 +198,7 @@ class IpGroupDetail:
 
     @property
     def associated_listeners(self):
-        """Gets the associated_listeners of this IpGroupDetail.
+        r"""Gets the associated_listeners of this IpGroupDetail.
 
         :return: The associated_listeners of this IpGroupDetail.
         :rtype: list[:class:`huaweicloudsdkga.v1.ListenerAccessControlPolicy`]
@@ -207,7 +207,7 @@ class IpGroupDetail:
 
     @associated_listeners.setter
     def associated_listeners(self, associated_listeners):
-        """Sets the associated_listeners of this IpGroupDetail.
+        r"""Sets the associated_listeners of this IpGroupDetail.
 
         :param associated_listeners: The associated_listeners of this IpGroupDetail.
         :type associated_listeners: list[:class:`huaweicloudsdkga.v1.ListenerAccessControlPolicy`]
@@ -216,7 +216,7 @@ class IpGroupDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this IpGroupDetail.
+        r"""Gets the created_at of this IpGroupDetail.
 
         创建时间。
 
@@ -227,7 +227,7 @@ class IpGroupDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this IpGroupDetail.
+        r"""Sets the created_at of this IpGroupDetail.
 
         创建时间。
 
@@ -238,7 +238,7 @@ class IpGroupDetail:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this IpGroupDetail.
+        r"""Gets the updated_at of this IpGroupDetail.
 
         更新时间。
 
@@ -249,7 +249,7 @@ class IpGroupDetail:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this IpGroupDetail.
+        r"""Sets the updated_at of this IpGroupDetail.
 
         更新时间。
 

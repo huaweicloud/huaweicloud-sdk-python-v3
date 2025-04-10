@@ -31,7 +31,7 @@ class PictureModelingByUrlReq:
     }
 
     def __init__(self, picture_url=None, style_id=None, name=None, notify_url=None):
-        """PictureModelingByUrlReq
+        r"""PictureModelingByUrlReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class PictureModelingByUrlReq:
 
     @property
     def picture_url(self):
-        """Gets the picture_url of this PictureModelingByUrlReq.
+        r"""Gets the picture_url of this PictureModelingByUrlReq.
 
         图片URL
 
@@ -72,7 +72,7 @@ class PictureModelingByUrlReq:
 
     @picture_url.setter
     def picture_url(self, picture_url):
-        """Sets the picture_url of this PictureModelingByUrlReq.
+        r"""Sets the picture_url of this PictureModelingByUrlReq.
 
         图片URL
 
@@ -83,7 +83,7 @@ class PictureModelingByUrlReq:
 
     @property
     def style_id(self):
-        """Gets the style_id of this PictureModelingByUrlReq.
+        r"""Gets the style_id of this PictureModelingByUrlReq.
 
         风格ID
 
@@ -94,7 +94,7 @@ class PictureModelingByUrlReq:
 
     @style_id.setter
     def style_id(self, style_id):
-        """Sets the style_id of this PictureModelingByUrlReq.
+        r"""Sets the style_id of this PictureModelingByUrlReq.
 
         风格ID
 
@@ -105,7 +105,7 @@ class PictureModelingByUrlReq:
 
     @property
     def name(self):
-        """Gets the name of this PictureModelingByUrlReq.
+        r"""Gets the name of this PictureModelingByUrlReq.
 
         模型名称
 
@@ -116,7 +116,7 @@ class PictureModelingByUrlReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PictureModelingByUrlReq.
+        r"""Sets the name of this PictureModelingByUrlReq.
 
         模型名称
 
@@ -127,7 +127,7 @@ class PictureModelingByUrlReq:
 
     @property
     def notify_url(self):
-        """Gets the notify_url of this PictureModelingByUrlReq.
+        r"""Gets the notify_url of this PictureModelingByUrlReq.
 
         照片建模任务结束的回调地址。
 
@@ -138,7 +138,7 @@ class PictureModelingByUrlReq:
 
     @notify_url.setter
     def notify_url(self, notify_url):
-        """Sets the notify_url of this PictureModelingByUrlReq.
+        r"""Sets the notify_url of this PictureModelingByUrlReq.
 
         照片建模任务结束的回调地址。
 

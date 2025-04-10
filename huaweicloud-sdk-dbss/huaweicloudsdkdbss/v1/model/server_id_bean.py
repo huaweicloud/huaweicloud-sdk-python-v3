@@ -25,7 +25,7 @@ class ServerIdBean:
     }
 
     def __init__(self, instance_id=None):
-        """ServerIdBean
+        r"""ServerIdBean
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ServerIdBean:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ServerIdBean.
+        r"""Gets the instance_id of this ServerIdBean.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -53,7 +53,7 @@ class ServerIdBean:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ServerIdBean.
+        r"""Sets the instance_id of this ServerIdBean.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 

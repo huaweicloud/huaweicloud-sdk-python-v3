@@ -25,7 +25,7 @@ class SetWebHookConfigRequest:
     }
 
     def __init__(self, body=None):
-        """SetWebHookConfigRequest
+        r"""SetWebHookConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SetWebHookConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetWebHookConfigRequest.
+        r"""Gets the body of this SetWebHookConfigRequest.
 
         :return: The body of this SetWebHookConfigRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.WebHookConfigRequest`
@@ -52,7 +52,7 @@ class SetWebHookConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetWebHookConfigRequest.
+        r"""Sets the body of this SetWebHookConfigRequest.
 
         :param body: The body of this SetWebHookConfigRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.WebHookConfigRequest`

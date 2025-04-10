@@ -27,7 +27,7 @@ class ListCocTicketOperationHistoriesRequest:
     }
 
     def __init__(self, ticket_type=None, body=None):
-        """ListCocTicketOperationHistoriesRequest
+        r"""ListCocTicketOperationHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListCocTicketOperationHistoriesRequest:
 
     @property
     def ticket_type(self):
-        """Gets the ticket_type of this ListCocTicketOperationHistoriesRequest.
+        r"""Gets the ticket_type of this ListCocTicketOperationHistoriesRequest.
 
         工单类型:incident,issues_mgmt
 
@@ -60,7 +60,7 @@ class ListCocTicketOperationHistoriesRequest:
 
     @ticket_type.setter
     def ticket_type(self, ticket_type):
-        """Sets the ticket_type of this ListCocTicketOperationHistoriesRequest.
+        r"""Sets the ticket_type of this ListCocTicketOperationHistoriesRequest.
 
         工单类型:incident,issues_mgmt
 
@@ -71,7 +71,7 @@ class ListCocTicketOperationHistoriesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListCocTicketOperationHistoriesRequest.
+        r"""Gets the body of this ListCocTicketOperationHistoriesRequest.
 
         :return: The body of this ListCocTicketOperationHistoriesRequest.
         :rtype: :class:`huaweicloudsdkcoc.v1.ListTicketParams`
@@ -80,7 +80,7 @@ class ListCocTicketOperationHistoriesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListCocTicketOperationHistoriesRequest.
+        r"""Sets the body of this ListCocTicketOperationHistoriesRequest.
 
         :param body: The body of this ListCocTicketOperationHistoriesRequest.
         :type body: :class:`huaweicloudsdkcoc.v1.ListTicketParams`

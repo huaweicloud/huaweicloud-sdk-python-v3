@@ -25,7 +25,7 @@ class PresetLabelRsp:
     }
 
     def __init__(self, name=None):
-        """PresetLabelRsp
+        r"""PresetLabelRsp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PresetLabelRsp:
 
     @property
     def name(self):
-        """Gets the name of this PresetLabelRsp.
+        r"""Gets the name of this PresetLabelRsp.
 
         标签名称
 
@@ -54,7 +54,7 @@ class PresetLabelRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PresetLabelRsp.
+        r"""Sets the name of this PresetLabelRsp.
 
         标签名称
 

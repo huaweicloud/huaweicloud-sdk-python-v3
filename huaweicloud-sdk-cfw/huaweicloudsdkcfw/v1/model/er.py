@@ -27,7 +27,7 @@ class Er:
     }
 
     def __init__(self, er_id=None, er_attach_id=None):
-        """Er
+        r"""Er
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Er:
 
     @property
     def er_id(self):
-        """Gets the er_id of this Er.
+        r"""Gets the er_id of this Er.
 
         ER ID，创建东西向防护引用的 ID
 
@@ -61,7 +61,7 @@ class Er:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this Er.
+        r"""Sets the er_id of this Er.
 
         ER ID，创建东西向防护引用的 ID
 
@@ -72,7 +72,7 @@ class Er:
 
     @property
     def er_attach_id(self):
-        """Gets the er_attach_id of this Er.
+        r"""Gets the er_attach_id of this Er.
 
         企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。
 
@@ -83,7 +83,7 @@ class Er:
 
     @er_attach_id.setter
     def er_attach_id(self, er_attach_id):
-        """Sets the er_attach_id of this Er.
+        r"""Sets the er_attach_id of this Er.
 
         企业路由器连接id，该连接用于连接防火墙和企业路由器，此字段可在通过id在ER界面查询指定er后在管理连接界面查询连接了解连接具体情况。
 

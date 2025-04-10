@@ -57,7 +57,7 @@ class VirtualGateway:
     }
 
     def __init__(self, id=None, vpc_id=None, enterprise_router_id=None, tenant_id=None, name=None, description=None, type=None, local_ep_group=None, local_ep_group_ipv6=None, admin_state_up=None, status=None, bgp_asn=None, enterprise_project_id=None, device_id=None, redundant_device_id=None, public_border_group=None, tags=None):
-        """VirtualGateway
+        r"""VirtualGateway
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class VirtualGateway:
 
     @property
     def id(self):
-        """Gets the id of this VirtualGateway.
+        r"""Gets the id of this VirtualGateway.
 
         虚拟网关的ID
 
@@ -166,7 +166,7 @@ class VirtualGateway:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VirtualGateway.
+        r"""Sets the id of this VirtualGateway.
 
         虚拟网关的ID
 
@@ -177,7 +177,7 @@ class VirtualGateway:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this VirtualGateway.
+        r"""Gets the vpc_id of this VirtualGateway.
 
         虚拟网关接入的VPC的ID
 
@@ -188,7 +188,7 @@ class VirtualGateway:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this VirtualGateway.
+        r"""Sets the vpc_id of this VirtualGateway.
 
         虚拟网关接入的VPC的ID
 
@@ -199,7 +199,7 @@ class VirtualGateway:
 
     @property
     def enterprise_router_id(self):
-        """Gets the enterprise_router_id of this VirtualGateway.
+        r"""Gets the enterprise_router_id of this VirtualGateway.
 
         虚拟网关接入的ER的ID
 
@@ -210,7 +210,7 @@ class VirtualGateway:
 
     @enterprise_router_id.setter
     def enterprise_router_id(self, enterprise_router_id):
-        """Sets the enterprise_router_id of this VirtualGateway.
+        r"""Sets the enterprise_router_id of this VirtualGateway.
 
         虚拟网关接入的ER的ID
 
@@ -221,7 +221,7 @@ class VirtualGateway:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this VirtualGateway.
+        r"""Gets the tenant_id of this VirtualGateway.
 
         实例所属项目ID。
 
@@ -232,7 +232,7 @@ class VirtualGateway:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this VirtualGateway.
+        r"""Sets the tenant_id of this VirtualGateway.
 
         实例所属项目ID。
 
@@ -243,7 +243,7 @@ class VirtualGateway:
 
     @property
     def name(self):
-        """Gets the name of this VirtualGateway.
+        r"""Gets the name of this VirtualGateway.
 
         虚拟网关的名字
 
@@ -254,7 +254,7 @@ class VirtualGateway:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VirtualGateway.
+        r"""Sets the name of this VirtualGateway.
 
         虚拟网关的名字
 
@@ -265,7 +265,7 @@ class VirtualGateway:
 
     @property
     def description(self):
-        """Gets the description of this VirtualGateway.
+        r"""Gets the description of this VirtualGateway.
 
         虚拟网关的描述
 
@@ -276,7 +276,7 @@ class VirtualGateway:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VirtualGateway.
+        r"""Sets the description of this VirtualGateway.
 
         虚拟网关的描述
 
@@ -287,7 +287,7 @@ class VirtualGateway:
 
     @property
     def type(self):
-        """Gets the type of this VirtualGateway.
+        r"""Gets the type of this VirtualGateway.
 
         虚拟网关类型：default
 
@@ -298,7 +298,7 @@ class VirtualGateway:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VirtualGateway.
+        r"""Sets the type of this VirtualGateway.
 
         虚拟网关类型：default
 
@@ -309,7 +309,7 @@ class VirtualGateway:
 
     @property
     def local_ep_group(self):
-        """Gets the local_ep_group of this VirtualGateway.
+        r"""Gets the local_ep_group of this VirtualGateway.
 
         虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs
 
@@ -320,7 +320,7 @@ class VirtualGateway:
 
     @local_ep_group.setter
     def local_ep_group(self, local_ep_group):
-        """Sets the local_ep_group of this VirtualGateway.
+        r"""Sets the local_ep_group of this VirtualGateway.
 
         虚拟网关到访问云上服务IPv4子网列表，通常是vpc的cidrs
 
@@ -331,7 +331,7 @@ class VirtualGateway:
 
     @property
     def local_ep_group_ipv6(self):
-        """Gets the local_ep_group_ipv6 of this VirtualGateway.
+        r"""Gets the local_ep_group_ipv6 of this VirtualGateway.
 
         预留字段用于虚拟网关到访问云上服务IPv6子网列表，通常是vpc的cidrs
 
@@ -342,7 +342,7 @@ class VirtualGateway:
 
     @local_ep_group_ipv6.setter
     def local_ep_group_ipv6(self, local_ep_group_ipv6):
-        """Sets the local_ep_group_ipv6 of this VirtualGateway.
+        r"""Sets the local_ep_group_ipv6 of this VirtualGateway.
 
         预留字段用于虚拟网关到访问云上服务IPv6子网列表，通常是vpc的cidrs
 
@@ -353,7 +353,7 @@ class VirtualGateway:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this VirtualGateway.
+        r"""Gets the admin_state_up of this VirtualGateway.
 
         管理状态：true或false
 
@@ -364,7 +364,7 @@ class VirtualGateway:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this VirtualGateway.
+        r"""Sets the admin_state_up of this VirtualGateway.
 
         管理状态：true或false
 
@@ -375,7 +375,7 @@ class VirtualGateway:
 
     @property
     def status(self):
-        """Gets the status of this VirtualGateway.
+        r"""Gets the status of this VirtualGateway.
 
         操作状态，合法值是：ACTIVE，DOWN，BUILD，ERROR，PENDING_CREATE，PENDING_UPDATE，PENDING_DELETE
 
@@ -386,7 +386,7 @@ class VirtualGateway:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VirtualGateway.
+        r"""Sets the status of this VirtualGateway.
 
         操作状态，合法值是：ACTIVE，DOWN，BUILD，ERROR，PENDING_CREATE，PENDING_UPDATE，PENDING_DELETE
 
@@ -397,7 +397,7 @@ class VirtualGateway:
 
     @property
     def bgp_asn(self):
-        """Gets the bgp_asn of this VirtualGateway.
+        r"""Gets the bgp_asn of this VirtualGateway.
 
         虚拟网关本地的BGP自冶域号(asn)
 
@@ -408,7 +408,7 @@ class VirtualGateway:
 
     @bgp_asn.setter
     def bgp_asn(self, bgp_asn):
-        """Sets the bgp_asn of this VirtualGateway.
+        r"""Sets the bgp_asn of this VirtualGateway.
 
         虚拟网关本地的BGP自冶域号(asn)
 
@@ -419,7 +419,7 @@ class VirtualGateway:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this VirtualGateway.
+        r"""Gets the enterprise_project_id of this VirtualGateway.
 
         实例所属企业项目ID
 
@@ -430,7 +430,7 @@ class VirtualGateway:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this VirtualGateway.
+        r"""Sets the enterprise_project_id of this VirtualGateway.
 
         实例所属企业项目ID
 
@@ -441,7 +441,7 @@ class VirtualGateway:
 
     @property
     def device_id(self):
-        """Gets the device_id of this VirtualGateway.
+        r"""Gets the device_id of this VirtualGateway.
 
         归属的设备ID
 
@@ -452,7 +452,7 @@ class VirtualGateway:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this VirtualGateway.
+        r"""Sets the device_id of this VirtualGateway.
 
         归属的设备ID
 
@@ -463,7 +463,7 @@ class VirtualGateway:
 
     @property
     def redundant_device_id(self):
-        """Gets the redundant_device_id of this VirtualGateway.
+        r"""Gets the redundant_device_id of this VirtualGateway.
 
         归属的冗余设备ID
 
@@ -474,7 +474,7 @@ class VirtualGateway:
 
     @redundant_device_id.setter
     def redundant_device_id(self, redundant_device_id):
-        """Sets the redundant_device_id of this VirtualGateway.
+        r"""Sets the redundant_device_id of this VirtualGateway.
 
         归属的冗余设备ID
 
@@ -485,7 +485,7 @@ class VirtualGateway:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this VirtualGateway.
+        r"""Gets the public_border_group of this VirtualGateway.
 
         归属的可用区对应的边界组(public border group)，标识是否homezone局点。
 
@@ -496,7 +496,7 @@ class VirtualGateway:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this VirtualGateway.
+        r"""Sets the public_border_group of this VirtualGateway.
 
         归属的可用区对应的边界组(public border group)，标识是否homezone局点。
 
@@ -507,7 +507,7 @@ class VirtualGateway:
 
     @property
     def tags(self):
-        """Gets the tags of this VirtualGateway.
+        r"""Gets the tags of this VirtualGateway.
 
         标签信息
 
@@ -518,7 +518,7 @@ class VirtualGateway:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this VirtualGateway.
+        r"""Sets the tags of this VirtualGateway.
 
         标签信息
 

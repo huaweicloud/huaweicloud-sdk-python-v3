@@ -31,7 +31,7 @@ class BandwidthResult:
     }
 
     def __init__(self, size=None, share_type=None, charging_mode=None, id=None):
-        """BandwidthResult
+        r"""BandwidthResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BandwidthResult:
 
     @property
     def size(self):
-        """Gets the size of this BandwidthResult.
+        r"""Gets the size of this BandwidthResult.
 
         带宽（Mbit/s）。
 
@@ -75,7 +75,7 @@ class BandwidthResult:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BandwidthResult.
+        r"""Sets the size of this BandwidthResult.
 
         带宽（Mbit/s）。
 
@@ -86,7 +86,7 @@ class BandwidthResult:
 
     @property
     def share_type(self):
-        """Gets the share_type of this BandwidthResult.
+        r"""Gets the share_type of this BandwidthResult.
 
         带宽的共享类型。共享类型枚举：PER，表示独享。目前只支持独享。
 
@@ -97,7 +97,7 @@ class BandwidthResult:
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this BandwidthResult.
+        r"""Sets the share_type of this BandwidthResult.
 
         带宽的共享类型。共享类型枚举：PER，表示独享。目前只支持独享。
 
@@ -108,7 +108,7 @@ class BandwidthResult:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this BandwidthResult.
+        r"""Gets the charging_mode of this BandwidthResult.
 
         带宽的计费类型。字段值为“bandwidth”，表示按带宽计费。字段值为“traffic”，表示按流量计费。
 
@@ -119,7 +119,7 @@ class BandwidthResult:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this BandwidthResult.
+        r"""Sets the charging_mode of this BandwidthResult.
 
         带宽的计费类型。字段值为“bandwidth”，表示按带宽计费。字段值为“traffic”，表示按流量计费。
 
@@ -130,7 +130,7 @@ class BandwidthResult:
 
     @property
     def id(self):
-        """Gets the id of this BandwidthResult.
+        r"""Gets the id of this BandwidthResult.
 
         带宽ID，创建WHOLE类型带宽的弹性IP时指定的共享带宽。
 
@@ -141,7 +141,7 @@ class BandwidthResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BandwidthResult.
+        r"""Sets the id of this BandwidthResult.
 
         带宽ID，创建WHOLE类型带宽的弹性IP时指定的共享带宽。
 

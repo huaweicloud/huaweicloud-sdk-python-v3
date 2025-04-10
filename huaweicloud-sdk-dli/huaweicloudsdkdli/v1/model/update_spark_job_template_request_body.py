@@ -31,7 +31,7 @@ class UpdateSparkJobTemplateRequestBody:
     }
 
     def __init__(self, name=None, body=None, group=None, description=None):
-        """UpdateSparkJobTemplateRequestBody
+        r"""UpdateSparkJobTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateSparkJobTemplateRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateSparkJobTemplateRequestBody.
+        r"""Gets the name of this UpdateSparkJobTemplateRequestBody.
 
         名字
 
@@ -73,7 +73,7 @@ class UpdateSparkJobTemplateRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateSparkJobTemplateRequestBody.
+        r"""Sets the name of this UpdateSparkJobTemplateRequestBody.
 
         名字
 
@@ -84,7 +84,7 @@ class UpdateSparkJobTemplateRequestBody:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSparkJobTemplateRequestBody.
+        r"""Gets the body of this UpdateSparkJobTemplateRequestBody.
 
         模板内容
 
@@ -95,7 +95,7 @@ class UpdateSparkJobTemplateRequestBody:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSparkJobTemplateRequestBody.
+        r"""Sets the body of this UpdateSparkJobTemplateRequestBody.
 
         模板内容
 
@@ -106,7 +106,7 @@ class UpdateSparkJobTemplateRequestBody:
 
     @property
     def group(self):
-        """Gets the group of this UpdateSparkJobTemplateRequestBody.
+        r"""Gets the group of this UpdateSparkJobTemplateRequestBody.
 
         分组
 
@@ -117,7 +117,7 @@ class UpdateSparkJobTemplateRequestBody:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this UpdateSparkJobTemplateRequestBody.
+        r"""Sets the group of this UpdateSparkJobTemplateRequestBody.
 
         分组
 
@@ -128,7 +128,7 @@ class UpdateSparkJobTemplateRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateSparkJobTemplateRequestBody.
+        r"""Gets the description of this UpdateSparkJobTemplateRequestBody.
 
         描述信息
 
@@ -139,7 +139,7 @@ class UpdateSparkJobTemplateRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateSparkJobTemplateRequestBody.
+        r"""Sets the description of this UpdateSparkJobTemplateRequestBody.
 
         描述信息
 

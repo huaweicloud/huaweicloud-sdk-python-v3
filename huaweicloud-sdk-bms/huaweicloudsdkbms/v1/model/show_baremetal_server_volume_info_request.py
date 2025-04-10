@@ -25,7 +25,7 @@ class ShowBaremetalServerVolumeInfoRequest:
     }
 
     def __init__(self, server_id=None):
-        """ShowBaremetalServerVolumeInfoRequest
+        r"""ShowBaremetalServerVolumeInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowBaremetalServerVolumeInfoRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowBaremetalServerVolumeInfoRequest.
+        r"""Gets the server_id of this ShowBaremetalServerVolumeInfoRequest.
 
         裸金属服务器ID。可以从裸金属服务器控制台查询，或者通过调用7.3.4-查询裸金属服务器列表（OpenStack原生）API获取。
 
@@ -53,7 +53,7 @@ class ShowBaremetalServerVolumeInfoRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowBaremetalServerVolumeInfoRequest.
+        r"""Sets the server_id of this ShowBaremetalServerVolumeInfoRequest.
 
         裸金属服务器ID。可以从裸金属服务器控制台查询，或者通过调用7.3.4-查询裸金属服务器列表（OpenStack原生）API获取。
 

@@ -29,7 +29,7 @@ class UpdateGaussMySqlInstanceNameRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateGaussMySqlInstanceNameRequest
+        r"""UpdateGaussMySqlInstanceNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateGaussMySqlInstanceNameRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateGaussMySqlInstanceNameRequest.
+        r"""Gets the x_language of this UpdateGaussMySqlInstanceNameRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class UpdateGaussMySqlInstanceNameRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateGaussMySqlInstanceNameRequest.
+        r"""Sets the x_language of this UpdateGaussMySqlInstanceNameRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class UpdateGaussMySqlInstanceNameRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateGaussMySqlInstanceNameRequest.
+        r"""Gets the instance_id of this UpdateGaussMySqlInstanceNameRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -89,7 +89,7 @@ class UpdateGaussMySqlInstanceNameRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateGaussMySqlInstanceNameRequest.
+        r"""Sets the instance_id of this UpdateGaussMySqlInstanceNameRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -100,7 +100,7 @@ class UpdateGaussMySqlInstanceNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGaussMySqlInstanceNameRequest.
+        r"""Gets the body of this UpdateGaussMySqlInstanceNameRequest.
 
         :return: The body of this UpdateGaussMySqlInstanceNameRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlUpdateInstanceNameRequest`
@@ -109,7 +109,7 @@ class UpdateGaussMySqlInstanceNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGaussMySqlInstanceNameRequest.
+        r"""Sets the body of this UpdateGaussMySqlInstanceNameRequest.
 
         :param body: The body of this UpdateGaussMySqlInstanceNameRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.MysqlUpdateInstanceNameRequest`

@@ -29,7 +29,7 @@ class ImportEventsRequest:
     }
 
     def __init__(self, x_language=None, project_id=None, body=None):
-        """ImportEventsRequest
+        r"""ImportEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ImportEventsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ImportEventsRequest.
+        r"""Gets the x_language of this ImportEventsRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class ImportEventsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ImportEventsRequest.
+        r"""Sets the x_language of this ImportEventsRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class ImportEventsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ImportEventsRequest.
+        r"""Gets the project_id of this ImportEventsRequest.
 
         租户项目ID。
 
@@ -89,7 +89,7 @@ class ImportEventsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ImportEventsRequest.
+        r"""Sets the project_id of this ImportEventsRequest.
 
         租户项目ID。
 
@@ -100,7 +100,7 @@ class ImportEventsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportEventsRequest.
+        r"""Gets the body of this ImportEventsRequest.
 
         :return: The body of this ImportEventsRequest.
         :rtype: :class:`huaweicloudsdksa.v1.Events`
@@ -109,7 +109,7 @@ class ImportEventsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportEventsRequest.
+        r"""Sets the body of this ImportEventsRequest.
 
         :param body: The body of this ImportEventsRequest.
         :type body: :class:`huaweicloudsdksa.v1.Events`

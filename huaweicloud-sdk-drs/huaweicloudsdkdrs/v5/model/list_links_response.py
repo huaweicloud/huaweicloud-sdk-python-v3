@@ -28,7 +28,7 @@ class ListLinksResponse(SdkResponse):
     }
 
     def __init__(self, job_links=None, total_count=None):
-        """ListLinksResponse
+        r"""ListLinksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListLinksResponse(SdkResponse):
 
     @property
     def job_links(self):
-        """Gets the job_links of this ListLinksResponse.
+        r"""Gets the job_links of this ListLinksResponse.
 
         可用链路信息。
 
@@ -62,7 +62,7 @@ class ListLinksResponse(SdkResponse):
 
     @job_links.setter
     def job_links(self, job_links):
-        """Sets the job_links of this ListLinksResponse.
+        r"""Sets the job_links of this ListLinksResponse.
 
         可用链路信息。
 
@@ -73,7 +73,7 @@ class ListLinksResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListLinksResponse.
+        r"""Gets the total_count of this ListLinksResponse.
 
         可用链路总条数。
 
@@ -84,7 +84,7 @@ class ListLinksResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListLinksResponse.
+        r"""Sets the total_count of this ListLinksResponse.
 
         可用链路总条数。
 

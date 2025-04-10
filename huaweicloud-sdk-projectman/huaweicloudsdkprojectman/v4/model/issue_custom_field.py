@@ -35,7 +35,7 @@ class IssueCustomField:
     }
 
     def __init__(self, name=None, custom_field=None, options=None, type=None, tracker_ids=None, create_time=None):
-        """IssueCustomField
+        r"""IssueCustomField
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class IssueCustomField:
 
     @property
     def name(self):
-        """Gets the name of this IssueCustomField.
+        r"""Gets the name of this IssueCustomField.
 
         自定义字段
 
@@ -89,7 +89,7 @@ class IssueCustomField:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IssueCustomField.
+        r"""Sets the name of this IssueCustomField.
 
         自定义字段
 
@@ -100,7 +100,7 @@ class IssueCustomField:
 
     @property
     def custom_field(self):
-        """Gets the custom_field of this IssueCustomField.
+        r"""Gets the custom_field of this IssueCustomField.
 
         自定义字段
 
@@ -111,7 +111,7 @@ class IssueCustomField:
 
     @custom_field.setter
     def custom_field(self, custom_field):
-        """Sets the custom_field of this IssueCustomField.
+        r"""Sets the custom_field of this IssueCustomField.
 
         自定义字段
 
@@ -122,7 +122,7 @@ class IssueCustomField:
 
     @property
     def options(self):
-        """Gets the options of this IssueCustomField.
+        r"""Gets the options of this IssueCustomField.
 
         自定义字段的可选值，多个值以英文逗号区分
 
@@ -133,7 +133,7 @@ class IssueCustomField:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this IssueCustomField.
+        r"""Sets the options of this IssueCustomField.
 
         自定义字段的可选值，多个值以英文逗号区分
 
@@ -144,7 +144,7 @@ class IssueCustomField:
 
     @property
     def type(self):
-        """Gets the type of this IssueCustomField.
+        r"""Gets the type of this IssueCustomField.
 
         自定义字段类型， textArea 多行文本，只能包含汉字、英文大小写字母、数字、下划线和连接符，不能超过500字符； text 单行文本， 只能包含汉字、英文大小写字母、数字、下划线和连接符，不能超过500字符； select 下拉框，只能包含汉字、英文大小写字母、数字、下划线和连接符，每个选项最大长度40个字符，最多可定义60个选项； number 数字，取值范围由用户创建自定义字段时设置； date 日期 精确到年月日， time_date 日期 精确到时分秒， 长整型时间戳； checkbox 多选框，只能包含汉字、英文大小写字母、数字、下划线和连接符，每个选项最大长度40个字符，最多可定义60个选项； radio 单选框，只能包含汉字、英文大小写字母、数字、下划线和连接符，每个选项最大长度40个字符，最多可定义60个选项；
 
@@ -155,7 +155,7 @@ class IssueCustomField:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this IssueCustomField.
+        r"""Sets the type of this IssueCustomField.
 
         自定义字段类型， textArea 多行文本，只能包含汉字、英文大小写字母、数字、下划线和连接符，不能超过500字符； text 单行文本， 只能包含汉字、英文大小写字母、数字、下划线和连接符，不能超过500字符； select 下拉框，只能包含汉字、英文大小写字母、数字、下划线和连接符，每个选项最大长度40个字符，最多可定义60个选项； number 数字，取值范围由用户创建自定义字段时设置； date 日期 精确到年月日， time_date 日期 精确到时分秒， 长整型时间戳； checkbox 多选框，只能包含汉字、英文大小写字母、数字、下划线和连接符，每个选项最大长度40个字符，最多可定义60个选项； radio 单选框，只能包含汉字、英文大小写字母、数字、下划线和连接符，每个选项最大长度40个字符，最多可定义60个选项；
 
@@ -166,7 +166,7 @@ class IssueCustomField:
 
     @property
     def tracker_ids(self):
-        """Gets the tracker_ids of this IssueCustomField.
+        r"""Gets the tracker_ids of this IssueCustomField.
 
         自定义字段支持的工作项类型 2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 
@@ -177,7 +177,7 @@ class IssueCustomField:
 
     @tracker_ids.setter
     def tracker_ids(self, tracker_ids):
-        """Sets the tracker_ids of this IssueCustomField.
+        r"""Sets the tracker_ids of this IssueCustomField.
 
         自定义字段支持的工作项类型 2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 
@@ -188,7 +188,7 @@ class IssueCustomField:
 
     @property
     def create_time(self):
-        """Gets the create_time of this IssueCustomField.
+        r"""Gets the create_time of this IssueCustomField.
 
         自定义字段创建时间
 
@@ -199,7 +199,7 @@ class IssueCustomField:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this IssueCustomField.
+        r"""Sets the create_time of this IssueCustomField.
 
         自定义字段创建时间
 

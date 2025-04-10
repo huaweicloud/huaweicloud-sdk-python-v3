@@ -29,7 +29,7 @@ class PreBatchAttachInstancesReq:
     }
 
     def __init__(self, desktops=None, users=None, assign_model=None):
-        """PreBatchAttachInstancesReq
+        r"""PreBatchAttachInstancesReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PreBatchAttachInstancesReq:
 
     @property
     def desktops(self):
-        """Gets the desktops of this PreBatchAttachInstancesReq.
+        r"""Gets the desktops of this PreBatchAttachInstancesReq.
 
         桌面信息列表。
 
@@ -68,7 +68,7 @@ class PreBatchAttachInstancesReq:
 
     @desktops.setter
     def desktops(self, desktops):
-        """Sets the desktops of this PreBatchAttachInstancesReq.
+        r"""Sets the desktops of this PreBatchAttachInstancesReq.
 
         桌面信息列表。
 
@@ -79,7 +79,7 @@ class PreBatchAttachInstancesReq:
 
     @property
     def users(self):
-        """Gets the users of this PreBatchAttachInstancesReq.
+        r"""Gets the users of this PreBatchAttachInstancesReq.
 
         用户信息列表。
 
@@ -90,7 +90,7 @@ class PreBatchAttachInstancesReq:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this PreBatchAttachInstancesReq.
+        r"""Sets the users of this PreBatchAttachInstancesReq.
 
         用户信息列表。
 
@@ -101,7 +101,7 @@ class PreBatchAttachInstancesReq:
 
     @property
     def assign_model(self):
-        """Gets the assign_model of this PreBatchAttachInstancesReq.
+        r"""Gets the assign_model of this PreBatchAttachInstancesReq.
 
         :return: The assign_model of this PreBatchAttachInstancesReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AssignModelInfo`
@@ -110,7 +110,7 @@ class PreBatchAttachInstancesReq:
 
     @assign_model.setter
     def assign_model(self, assign_model):
-        """Sets the assign_model of this PreBatchAttachInstancesReq.
+        r"""Sets the assign_model of this PreBatchAttachInstancesReq.
 
         :param assign_model: The assign_model of this PreBatchAttachInstancesReq.
         :type assign_model: :class:`huaweicloudsdkworkspace.v2.AssignModelInfo`

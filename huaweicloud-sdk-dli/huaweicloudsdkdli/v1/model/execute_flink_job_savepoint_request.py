@@ -27,7 +27,7 @@ class ExecuteFlinkJobSavepointRequest:
     }
 
     def __init__(self, job_id=None, body=None):
-        """ExecuteFlinkJobSavepointRequest
+        r"""ExecuteFlinkJobSavepointRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteFlinkJobSavepointRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExecuteFlinkJobSavepointRequest.
+        r"""Gets the job_id of this ExecuteFlinkJobSavepointRequest.
 
         正在运行的Flink作业的作业ID。
 
@@ -60,7 +60,7 @@ class ExecuteFlinkJobSavepointRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExecuteFlinkJobSavepointRequest.
+        r"""Sets the job_id of this ExecuteFlinkJobSavepointRequest.
 
         正在运行的Flink作业的作业ID。
 
@@ -71,7 +71,7 @@ class ExecuteFlinkJobSavepointRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteFlinkJobSavepointRequest.
+        r"""Gets the body of this ExecuteFlinkJobSavepointRequest.
 
         :return: The body of this ExecuteFlinkJobSavepointRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.ExecuteFlinkJobSavepointRequestBody`
@@ -80,7 +80,7 @@ class ExecuteFlinkJobSavepointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteFlinkJobSavepointRequest.
+        r"""Sets the body of this ExecuteFlinkJobSavepointRequest.
 
         :param body: The body of this ExecuteFlinkJobSavepointRequest.
         :type body: :class:`huaweicloudsdkdli.v1.ExecuteFlinkJobSavepointRequestBody`

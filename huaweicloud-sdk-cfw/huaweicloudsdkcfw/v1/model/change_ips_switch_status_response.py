@@ -26,7 +26,7 @@ class ChangeIpsSwitchStatusResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ChangeIpsSwitchStatusResponse
+        r"""ChangeIpsSwitchStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeIpsSwitchStatusResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ChangeIpsSwitchStatusResponse.
+        r"""Gets the data of this ChangeIpsSwitchStatusResponse.
 
         :return: The data of this ChangeIpsSwitchStatusResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.CommonResponseDTOData`
@@ -53,7 +53,7 @@ class ChangeIpsSwitchStatusResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ChangeIpsSwitchStatusResponse.
+        r"""Sets the data of this ChangeIpsSwitchStatusResponse.
 
         :param data: The data of this ChangeIpsSwitchStatusResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.CommonResponseDTOData`

@@ -25,7 +25,7 @@ class GetDefaultTemplateParam:
     }
 
     def __init__(self, name=None):
-        """GetDefaultTemplateParam
+        r"""GetDefaultTemplateParam
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GetDefaultTemplateParam:
 
     @property
     def name(self):
-        """Gets the name of this GetDefaultTemplateParam.
+        r"""Gets the name of this GetDefaultTemplateParam.
 
         脑图模板名称
 
@@ -54,7 +54,7 @@ class GetDefaultTemplateParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetDefaultTemplateParam.
+        r"""Sets the name of this GetDefaultTemplateParam.
 
         脑图模板名称
 

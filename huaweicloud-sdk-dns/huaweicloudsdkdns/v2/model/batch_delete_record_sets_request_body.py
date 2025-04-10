@@ -27,7 +27,7 @@ class BatchDeleteRecordSetsRequestBody:
     }
 
     def __init__(self, zone_type=None, recordset_ids=None):
-        """BatchDeleteRecordSetsRequestBody
+        r"""BatchDeleteRecordSetsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDeleteRecordSetsRequestBody:
 
     @property
     def zone_type(self):
-        """Gets the zone_type of this BatchDeleteRecordSetsRequestBody.
+        r"""Gets the zone_type of this BatchDeleteRecordSetsRequestBody.
 
         Zone的类型，取值为public或private。
 
@@ -59,7 +59,7 @@ class BatchDeleteRecordSetsRequestBody:
 
     @zone_type.setter
     def zone_type(self, zone_type):
-        """Sets the zone_type of this BatchDeleteRecordSetsRequestBody.
+        r"""Sets the zone_type of this BatchDeleteRecordSetsRequestBody.
 
         Zone的类型，取值为public或private。
 
@@ -70,7 +70,7 @@ class BatchDeleteRecordSetsRequestBody:
 
     @property
     def recordset_ids(self):
-        """Gets the recordset_ids of this BatchDeleteRecordSetsRequestBody.
+        r"""Gets the recordset_ids of this BatchDeleteRecordSetsRequestBody.
 
         待删除的Record Set ID列表。 最多支持100个。
 
@@ -81,7 +81,7 @@ class BatchDeleteRecordSetsRequestBody:
 
     @recordset_ids.setter
     def recordset_ids(self, recordset_ids):
-        """Sets the recordset_ids of this BatchDeleteRecordSetsRequestBody.
+        r"""Sets the recordset_ids of this BatchDeleteRecordSetsRequestBody.
 
         待删除的Record Set ID列表。 最多支持100个。
 

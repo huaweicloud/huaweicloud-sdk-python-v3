@@ -26,7 +26,7 @@ class UpdateBaremetalServerMetadataResponse(SdkResponse):
     }
 
     def __init__(self, metadata=None):
-        """UpdateBaremetalServerMetadataResponse
+        r"""UpdateBaremetalServerMetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateBaremetalServerMetadataResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpdateBaremetalServerMetadataResponse.
+        r"""Gets the metadata of this UpdateBaremetalServerMetadataResponse.
 
         
 
@@ -55,7 +55,7 @@ class UpdateBaremetalServerMetadataResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpdateBaremetalServerMetadataResponse.
+        r"""Sets the metadata of this UpdateBaremetalServerMetadataResponse.
 
         
 

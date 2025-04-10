@@ -37,7 +37,7 @@ class ImageBatchSyncDetectionResult:
     }
 
     def __init__(self, suggestion=None, category=None, details=None, ocr_text=None, data_id=None, error_code=None, error_msg=None):
-        """ImageBatchSyncDetectionResult
+        r"""ImageBatchSyncDetectionResult
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ImageBatchSyncDetectionResult:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this ImageBatchSyncDetectionResult.
+        r"""Gets the suggestion of this ImageBatchSyncDetectionResult.
 
         审核结果是否通过。 - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过 。 - review：需要人工复检。
 
@@ -95,7 +95,7 @@ class ImageBatchSyncDetectionResult:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this ImageBatchSyncDetectionResult.
+        r"""Sets the suggestion of this ImageBatchSyncDetectionResult.
 
         审核结果是否通过。 - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过 。 - review：需要人工复检。
 
@@ -106,7 +106,7 @@ class ImageBatchSyncDetectionResult:
 
     @property
     def category(self):
-        """Gets the category of this ImageBatchSyncDetectionResult.
+        r"""Gets the category of this ImageBatchSyncDetectionResult.
 
         检测结果的一级标签。支持category列表如下： - terrorism: 暴恐 - porn: 色情 - image_text: 图文审核
 
@@ -117,7 +117,7 @@ class ImageBatchSyncDetectionResult:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ImageBatchSyncDetectionResult.
+        r"""Sets the category of this ImageBatchSyncDetectionResult.
 
         检测结果的一级标签。支持category列表如下： - terrorism: 暴恐 - porn: 色情 - image_text: 图文审核
 
@@ -128,7 +128,7 @@ class ImageBatchSyncDetectionResult:
 
     @property
     def details(self):
-        """Gets the details of this ImageBatchSyncDetectionResult.
+        r"""Gets the details of this ImageBatchSyncDetectionResult.
 
         检测详情。
 
@@ -139,7 +139,7 @@ class ImageBatchSyncDetectionResult:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this ImageBatchSyncDetectionResult.
+        r"""Sets the details of this ImageBatchSyncDetectionResult.
 
         检测详情。
 
@@ -150,7 +150,7 @@ class ImageBatchSyncDetectionResult:
 
     @property
     def ocr_text(self):
-        """Gets the ocr_text of this ImageBatchSyncDetectionResult.
+        r"""Gets the ocr_text of this ImageBatchSyncDetectionResult.
 
         图文审核检测出的文本，只有在category参数配置image_text且检测出文本时展示该字段。
 
@@ -161,7 +161,7 @@ class ImageBatchSyncDetectionResult:
 
     @ocr_text.setter
     def ocr_text(self, ocr_text):
-        """Sets the ocr_text of this ImageBatchSyncDetectionResult.
+        r"""Sets the ocr_text of this ImageBatchSyncDetectionResult.
 
         图文审核检测出的文本，只有在category参数配置image_text且检测出文本时展示该字段。
 
@@ -172,7 +172,7 @@ class ImageBatchSyncDetectionResult:
 
     @property
     def data_id(self):
-        """Gets the data_id of this ImageBatchSyncDetectionResult.
+        r"""Gets the data_id of this ImageBatchSyncDetectionResult.
 
         图片唯一标识。同一次请求中不可重复，由大小写英文字母、数字、下划线（_）、中划线（-）组成，不超过30个字符。
 
@@ -183,7 +183,7 @@ class ImageBatchSyncDetectionResult:
 
     @data_id.setter
     def data_id(self, data_id):
-        """Sets the data_id of this ImageBatchSyncDetectionResult.
+        r"""Sets the data_id of this ImageBatchSyncDetectionResult.
 
         图片唯一标识。同一次请求中不可重复，由大小写英文字母、数字、下划线（_）、中划线（-）组成，不超过30个字符。
 
@@ -194,7 +194,7 @@ class ImageBatchSyncDetectionResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ImageBatchSyncDetectionResult.
+        r"""Gets the error_code of this ImageBatchSyncDetectionResult.
 
         调用失败时的错误码，具体请参见错误码。 调用成功时无此字段。
 
@@ -205,7 +205,7 @@ class ImageBatchSyncDetectionResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ImageBatchSyncDetectionResult.
+        r"""Sets the error_code of this ImageBatchSyncDetectionResult.
 
         调用失败时的错误码，具体请参见错误码。 调用成功时无此字段。
 
@@ -216,7 +216,7 @@ class ImageBatchSyncDetectionResult:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ImageBatchSyncDetectionResult.
+        r"""Gets the error_msg of this ImageBatchSyncDetectionResult.
 
         调用失败时的错误信息。 调用成功时无此字段。
 
@@ -227,7 +227,7 @@ class ImageBatchSyncDetectionResult:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ImageBatchSyncDetectionResult.
+        r"""Sets the error_msg of this ImageBatchSyncDetectionResult.
 
         调用失败时的错误信息。 调用成功时无此字段。
 

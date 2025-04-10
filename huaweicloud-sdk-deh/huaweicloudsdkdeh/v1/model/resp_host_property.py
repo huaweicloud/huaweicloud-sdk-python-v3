@@ -37,7 +37,7 @@ class RespHostProperty:
     }
 
     def __init__(self, host_type=None, host_type_name=None, vcpus=None, cores=None, sockets=None, memory=None, available_instance_capacities=None):
-        """RespHostProperty
+        r"""RespHostProperty
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RespHostProperty:
 
     @property
     def host_type(self):
-        """Gets the host_type of this RespHostProperty.
+        r"""Gets the host_type of this RespHostProperty.
 
         专属主机类型。
 
@@ -89,7 +89,7 @@ class RespHostProperty:
 
     @host_type.setter
     def host_type(self, host_type):
-        """Sets the host_type of this RespHostProperty.
+        r"""Sets the host_type of this RespHostProperty.
 
         专属主机类型。
 
@@ -100,7 +100,7 @@ class RespHostProperty:
 
     @property
     def host_type_name(self):
-        """Gets the host_type_name of this RespHostProperty.
+        r"""Gets the host_type_name of this RespHostProperty.
 
         专属主机类型的名称。
 
@@ -111,7 +111,7 @@ class RespHostProperty:
 
     @host_type_name.setter
     def host_type_name(self, host_type_name):
-        """Sets the host_type_name of this RespHostProperty.
+        r"""Sets the host_type_name of this RespHostProperty.
 
         专属主机类型的名称。
 
@@ -122,7 +122,7 @@ class RespHostProperty:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this RespHostProperty.
+        r"""Gets the vcpus of this RespHostProperty.
 
         专属主机的vCPUs个数。
 
@@ -133,7 +133,7 @@ class RespHostProperty:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this RespHostProperty.
+        r"""Sets the vcpus of this RespHostProperty.
 
         专属主机的vCPUs个数。
 
@@ -144,7 +144,7 @@ class RespHostProperty:
 
     @property
     def cores(self):
-        """Gets the cores of this RespHostProperty.
+        r"""Gets the cores of this RespHostProperty.
 
         专属主机的物理核数。
 
@@ -155,7 +155,7 @@ class RespHostProperty:
 
     @cores.setter
     def cores(self, cores):
-        """Sets the cores of this RespHostProperty.
+        r"""Sets the cores of this RespHostProperty.
 
         专属主机的物理核数。
 
@@ -166,7 +166,7 @@ class RespHostProperty:
 
     @property
     def sockets(self):
-        """Gets the sockets of this RespHostProperty.
+        r"""Gets the sockets of this RespHostProperty.
 
         专属主机的物理套接字数量。
 
@@ -177,7 +177,7 @@ class RespHostProperty:
 
     @sockets.setter
     def sockets(self, sockets):
-        """Sets the sockets of this RespHostProperty.
+        r"""Sets the sockets of this RespHostProperty.
 
         专属主机的物理套接字数量。
 
@@ -188,7 +188,7 @@ class RespHostProperty:
 
     @property
     def memory(self):
-        """Gets the memory of this RespHostProperty.
+        r"""Gets the memory of this RespHostProperty.
 
         专属主机的物理内存大小。
 
@@ -199,7 +199,7 @@ class RespHostProperty:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this RespHostProperty.
+        r"""Sets the memory of this RespHostProperty.
 
         专属主机的物理内存大小。
 
@@ -210,7 +210,7 @@ class RespHostProperty:
 
     @property
     def available_instance_capacities(self):
-        """Gets the available_instance_capacities of this RespHostProperty.
+        r"""Gets the available_instance_capacities of this RespHostProperty.
 
         专属主机上创建的云服务器规格。
 
@@ -221,7 +221,7 @@ class RespHostProperty:
 
     @available_instance_capacities.setter
     def available_instance_capacities(self, available_instance_capacities):
-        """Sets the available_instance_capacities of this RespHostProperty.
+        r"""Sets the available_instance_capacities of this RespHostProperty.
 
         专属主机上创建的云服务器规格。
 

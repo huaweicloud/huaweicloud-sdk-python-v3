@@ -25,7 +25,7 @@ class RedisDeleteDbUserRequest:
     }
 
     def __init__(self, names=None):
-        """RedisDeleteDbUserRequest
+        r"""RedisDeleteDbUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RedisDeleteDbUserRequest:
 
     @property
     def names(self):
-        """Gets the names of this RedisDeleteDbUserRequest.
+        r"""Gets the names of this RedisDeleteDbUserRequest.
 
         需要删除的数据库账号名称列表。
 
@@ -53,7 +53,7 @@ class RedisDeleteDbUserRequest:
 
     @names.setter
     def names(self, names):
-        """Sets the names of this RedisDeleteDbUserRequest.
+        r"""Sets the names of this RedisDeleteDbUserRequest.
 
         需要删除的数据库账号名称列表。
 

@@ -28,7 +28,7 @@ class ListRangeQueryAomPromPostResponse(SdkResponse):
     }
 
     def __init__(self, status=None, data=None):
-        """ListRangeQueryAomPromPostResponse
+        r"""ListRangeQueryAomPromPostResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRangeQueryAomPromPostResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListRangeQueryAomPromPostResponse.
+        r"""Gets the status of this ListRangeQueryAomPromPostResponse.
 
         响应状态。
 
@@ -62,7 +62,7 @@ class ListRangeQueryAomPromPostResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListRangeQueryAomPromPostResponse.
+        r"""Sets the status of this ListRangeQueryAomPromPostResponse.
 
         响应状态。
 
@@ -73,7 +73,7 @@ class ListRangeQueryAomPromPostResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListRangeQueryAomPromPostResponse.
+        r"""Gets the data of this ListRangeQueryAomPromPostResponse.
 
         响应数据。
 
@@ -84,7 +84,7 @@ class ListRangeQueryAomPromPostResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListRangeQueryAomPromPostResponse.
+        r"""Sets the data of this ListRangeQueryAomPromPostResponse.
 
         响应数据。
 

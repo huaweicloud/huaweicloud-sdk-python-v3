@@ -25,7 +25,7 @@ class ListJobRequest:
     }
 
     def __init__(self, job_id=None):
-        """ListJobRequest
+        r"""ListJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListJobRequest.
+        r"""Gets the job_id of this ListJobRequest.
 
         创建按需防火墙返回的任务ID，可通过调用[创建防火墙接口](CreateFirewall.xml)返回值获得。返回值中job_id即为此处的job_id
 
@@ -53,7 +53,7 @@ class ListJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListJobRequest.
+        r"""Sets the job_id of this ListJobRequest.
 
         创建按需防火墙返回的任务ID，可通过调用[创建防火墙接口](CreateFirewall.xml)返回值获得。返回值中job_id即为此处的job_id
 

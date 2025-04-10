@@ -34,7 +34,7 @@ class MsgsmsClient(Client):
         return client_builder
 
     def create_app(self, request):
-        """创建短信应用
+        r"""创建短信应用
 
         该接口用于用户创建应用信息。
         
@@ -99,7 +99,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def list_app_details(self, request):
-        """查询短信应用
+        r"""查询短信应用
 
         该接口用于用户查询已创建的应用信息。
         
@@ -180,7 +180,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def show_app(self, request):
-        """获取应用详情
+        r"""获取应用详情
 
         该接口用于用户查询应用详情信息。
         
@@ -245,7 +245,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def show_app_count(self, request):
-        """查询应用数量
+        r"""查询应用数量
 
         该接口用于用户查询应用使用的数量信息。
         
@@ -310,7 +310,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def update_app(self, request):
-        """修改短信应用
+        r"""修改短信应用
 
         该接口用于用户修改应用信息。
         
@@ -377,7 +377,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def create_signature(self, request):
-        """创建短信签名
+        r"""创建短信签名
 
         该接口用于用户创建签名。
         
@@ -442,7 +442,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def delete_signature(self, request):
-        """删除短信签名
+        r"""删除短信签名
 
         该接口用于用户删除已创建的签名信息息。
         
@@ -507,7 +507,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def enable_signature(self, request):
-        """申请激活签名
+        r"""申请激活签名
 
         该接口用于用户申请激活签名信息。
         
@@ -572,7 +572,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def list_signature_details(self, request):
-        """查询签名信息
+        r"""查询签名信息
 
         该接口用于用户查询已创建的短信签名信息。
         
@@ -659,7 +659,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def show_signature(self, request):
-        """获取签名详情
+        r"""获取签名详情
 
         该接口用于用户查询签名详情信息。
         
@@ -724,7 +724,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def show_signature_file(self, request):
-        """查询申请文件
+        r"""查询申请文件
 
         该接口用于用户查询上传的文件信息。
         
@@ -789,7 +789,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def update_signature(self, request):
-        """修改短信签名
+        r"""修改短信签名
 
         该接口用于用户更新签名信息，目前仅支持审核不通过的短信签名重新修改。
         
@@ -856,7 +856,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def upload_signature_file(self, request):
-        """上传申请文件
+        r"""上传申请文件
 
         该接口用于用户上传文件信息。
         
@@ -925,7 +925,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def create_template(self, request):
-        """创建短信模板
+        r"""创建短信模板
 
         该接口用于用户创建模板。
         
@@ -990,7 +990,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def delete_template(self, request):
-        """删除短信模板
+        r"""删除短信模板
 
         该接口用于用户删除已创建的模板信息。
         
@@ -1055,7 +1055,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def list_send_country_details(self, request):
-        """查询发送国家
+        r"""查询发送国家
 
         该接口用于用户查询短信发送的国家信息
         
@@ -1122,7 +1122,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def list_template_details(self, request):
-        """查询短信模板
+        r"""查询短信模板
 
         该接口用于用户查询已创建的模板信息。
         
@@ -1215,7 +1215,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def list_template_varilable_details(self, request):
-        """查询模板变量
+        r"""查询模板变量
 
         该接口用于用户查询模板参数。
         
@@ -1280,7 +1280,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def show_template(self, request):
-        """获取模板详情
+        r"""获取模板详情
 
         该接口用于用户查询已创建的模板详情。
         
@@ -1345,7 +1345,7 @@ class MsgsmsClient(Client):
         return http_info
 
     def update_template(self, request):
-        """修改短信模板
+        r"""修改短信模板
 
         该接口用于用户修改模板信息，目前仅支持审核不通过的短信模板重新修改
         

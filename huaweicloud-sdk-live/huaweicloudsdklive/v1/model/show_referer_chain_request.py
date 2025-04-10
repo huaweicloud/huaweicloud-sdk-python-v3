@@ -25,7 +25,7 @@ class ShowRefererChainRequest:
     }
 
     def __init__(self, domain=None):
-        """ShowRefererChainRequest
+        r"""ShowRefererChainRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowRefererChainRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ShowRefererChainRequest.
+        r"""Gets the domain of this ShowRefererChainRequest.
 
         直播播放域名
 
@@ -53,7 +53,7 @@ class ShowRefererChainRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ShowRefererChainRequest.
+        r"""Sets the domain of this ShowRefererChainRequest.
 
         直播播放域名
 

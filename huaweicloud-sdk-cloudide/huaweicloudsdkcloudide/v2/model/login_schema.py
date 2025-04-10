@@ -29,7 +29,7 @@ class LoginSchema:
     }
 
     def __init__(self, ide_type=None, ide_version=None, plugin_version=None):
-        """LoginSchema
+        r"""LoginSchema
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class LoginSchema:
 
     @property
     def ide_type(self):
-        """Gets the ide_type of this LoginSchema.
+        r"""Gets the ide_type of this LoginSchema.
 
         ide_type
 
@@ -65,7 +65,7 @@ class LoginSchema:
 
     @ide_type.setter
     def ide_type(self, ide_type):
-        """Sets the ide_type of this LoginSchema.
+        r"""Sets the ide_type of this LoginSchema.
 
         ide_type
 
@@ -76,7 +76,7 @@ class LoginSchema:
 
     @property
     def ide_version(self):
-        """Gets the ide_version of this LoginSchema.
+        r"""Gets the ide_version of this LoginSchema.
 
         ide_version
 
@@ -87,7 +87,7 @@ class LoginSchema:
 
     @ide_version.setter
     def ide_version(self, ide_version):
-        """Sets the ide_version of this LoginSchema.
+        r"""Sets the ide_version of this LoginSchema.
 
         ide_version
 
@@ -98,7 +98,7 @@ class LoginSchema:
 
     @property
     def plugin_version(self):
-        """Gets the plugin_version of this LoginSchema.
+        r"""Gets the plugin_version of this LoginSchema.
 
         plugin_version
 
@@ -109,7 +109,7 @@ class LoginSchema:
 
     @plugin_version.setter
     def plugin_version(self, plugin_version):
-        """Sets the plugin_version of this LoginSchema.
+        r"""Sets the plugin_version of this LoginSchema.
 
         plugin_version
 

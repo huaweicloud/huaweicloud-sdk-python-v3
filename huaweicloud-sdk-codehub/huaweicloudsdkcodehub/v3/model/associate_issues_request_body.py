@@ -31,7 +31,7 @@ class AssociateIssuesRequestBody:
     }
 
     def __init__(self, branch=None, project_id=None, related_id=None, repo_id=None):
-        """AssociateIssuesRequestBody
+        r"""AssociateIssuesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class AssociateIssuesRequestBody:
 
     @property
     def branch(self):
-        """Gets the branch of this AssociateIssuesRequestBody.
+        r"""Gets the branch of this AssociateIssuesRequestBody.
 
         分支名
 
@@ -71,7 +71,7 @@ class AssociateIssuesRequestBody:
 
     @branch.setter
     def branch(self, branch):
-        """Sets the branch of this AssociateIssuesRequestBody.
+        r"""Sets the branch of this AssociateIssuesRequestBody.
 
         分支名
 
@@ -82,7 +82,7 @@ class AssociateIssuesRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AssociateIssuesRequestBody.
+        r"""Gets the project_id of this AssociateIssuesRequestBody.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -93,7 +93,7 @@ class AssociateIssuesRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AssociateIssuesRequestBody.
+        r"""Sets the project_id of this AssociateIssuesRequestBody.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -104,7 +104,7 @@ class AssociateIssuesRequestBody:
 
     @property
     def related_id(self):
-        """Gets the related_id of this AssociateIssuesRequestBody.
+        r"""Gets the related_id of this AssociateIssuesRequestBody.
 
         工作项集合
 
@@ -115,7 +115,7 @@ class AssociateIssuesRequestBody:
 
     @related_id.setter
     def related_id(self, related_id):
-        """Sets the related_id of this AssociateIssuesRequestBody.
+        r"""Sets the related_id of this AssociateIssuesRequestBody.
 
         工作项集合
 
@@ -126,7 +126,7 @@ class AssociateIssuesRequestBody:
 
     @property
     def repo_id(self):
-        """Gets the repo_id of this AssociateIssuesRequestBody.
+        r"""Gets the repo_id of this AssociateIssuesRequestBody.
 
         仓库id
 
@@ -137,7 +137,7 @@ class AssociateIssuesRequestBody:
 
     @repo_id.setter
     def repo_id(self, repo_id):
-        """Sets the repo_id of this AssociateIssuesRequestBody.
+        r"""Sets the repo_id of this AssociateIssuesRequestBody.
 
         仓库id
 

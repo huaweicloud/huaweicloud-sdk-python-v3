@@ -31,7 +31,7 @@ class SupportMetricNameListSupportMetricNames:
     }
 
     def __init__(self, datastore_type=None, metric_name=None, unit=None, description=None):
-        """SupportMetricNameListSupportMetricNames
+        r"""SupportMetricNameListSupportMetricNames
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SupportMetricNameListSupportMetricNames:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this SupportMetricNameListSupportMetricNames.
+        r"""Gets the datastore_type of this SupportMetricNameListSupportMetricNames.
 
         数据库类型
 
@@ -75,7 +75,7 @@ class SupportMetricNameListSupportMetricNames:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this SupportMetricNameListSupportMetricNames.
+        r"""Sets the datastore_type of this SupportMetricNameListSupportMetricNames.
 
         数据库类型
 
@@ -86,7 +86,7 @@ class SupportMetricNameListSupportMetricNames:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this SupportMetricNameListSupportMetricNames.
+        r"""Gets the metric_name of this SupportMetricNameListSupportMetricNames.
 
         指标名称
 
@@ -97,7 +97,7 @@ class SupportMetricNameListSupportMetricNames:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this SupportMetricNameListSupportMetricNames.
+        r"""Sets the metric_name of this SupportMetricNameListSupportMetricNames.
 
         指标名称
 
@@ -108,7 +108,7 @@ class SupportMetricNameListSupportMetricNames:
 
     @property
     def unit(self):
-        """Gets the unit of this SupportMetricNameListSupportMetricNames.
+        r"""Gets the unit of this SupportMetricNameListSupportMetricNames.
 
         单位
 
@@ -119,7 +119,7 @@ class SupportMetricNameListSupportMetricNames:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this SupportMetricNameListSupportMetricNames.
+        r"""Sets the unit of this SupportMetricNameListSupportMetricNames.
 
         单位
 
@@ -130,7 +130,7 @@ class SupportMetricNameListSupportMetricNames:
 
     @property
     def description(self):
-        """Gets the description of this SupportMetricNameListSupportMetricNames.
+        r"""Gets the description of this SupportMetricNameListSupportMetricNames.
 
         描述
 
@@ -141,7 +141,7 @@ class SupportMetricNameListSupportMetricNames:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SupportMetricNameListSupportMetricNames.
+        r"""Sets the description of this SupportMetricNameListSupportMetricNames.
 
         描述
 

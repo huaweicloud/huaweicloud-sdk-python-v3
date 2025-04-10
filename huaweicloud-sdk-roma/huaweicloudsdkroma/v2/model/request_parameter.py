@@ -27,7 +27,7 @@ class RequestParameter:
     }
 
     def __init__(self, parameter_name=None, parameter_value=None):
-        """RequestParameter
+        r"""RequestParameter
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RequestParameter:
 
     @property
     def parameter_name(self):
-        """Gets the parameter_name of this RequestParameter.
+        r"""Gets the parameter_name of this RequestParameter.
 
         请求参数名
 
@@ -61,7 +61,7 @@ class RequestParameter:
 
     @parameter_name.setter
     def parameter_name(self, parameter_name):
-        """Sets the parameter_name of this RequestParameter.
+        r"""Sets the parameter_name of this RequestParameter.
 
         请求参数名
 
@@ -72,7 +72,7 @@ class RequestParameter:
 
     @property
     def parameter_value(self):
-        """Gets the parameter_value of this RequestParameter.
+        r"""Gets the parameter_value of this RequestParameter.
 
         请求参数值
 
@@ -83,7 +83,7 @@ class RequestParameter:
 
     @parameter_value.setter
     def parameter_value(self, parameter_value):
-        """Sets the parameter_value of this RequestParameter.
+        r"""Sets the parameter_value of this RequestParameter.
 
         请求参数值
 

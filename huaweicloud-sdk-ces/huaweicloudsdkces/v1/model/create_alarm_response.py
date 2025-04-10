@@ -26,7 +26,7 @@ class CreateAlarmResponse(SdkResponse):
     }
 
     def __init__(self, alarm_id=None):
-        """CreateAlarmResponse
+        r"""CreateAlarmResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateAlarmResponse(SdkResponse):
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this CreateAlarmResponse.
+        r"""Gets the alarm_id of this CreateAlarmResponse.
 
         告警规则的ID。
 
@@ -55,7 +55,7 @@ class CreateAlarmResponse(SdkResponse):
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this CreateAlarmResponse.
+        r"""Sets the alarm_id of this CreateAlarmResponse.
 
         告警规则的ID。
 

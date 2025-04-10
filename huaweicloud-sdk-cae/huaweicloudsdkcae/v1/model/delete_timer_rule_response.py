@@ -24,7 +24,7 @@ class DeleteTimerRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteTimerRuleResponse
+        r"""DeleteTimerRuleResponse
 
         The model defined in huaweicloud sdk
 

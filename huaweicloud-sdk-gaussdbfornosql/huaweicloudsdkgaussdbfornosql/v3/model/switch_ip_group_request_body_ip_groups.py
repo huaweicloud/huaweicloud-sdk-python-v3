@@ -27,7 +27,7 @@ class SwitchIpGroupRequestBodyIpGroups:
     }
 
     def __init__(self, ip=None, description=None):
-        """SwitchIpGroupRequestBodyIpGroups
+        r"""SwitchIpGroupRequestBodyIpGroups
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SwitchIpGroupRequestBodyIpGroups:
 
     @property
     def ip(self):
-        """Gets the ip of this SwitchIpGroupRequestBodyIpGroups.
+        r"""Gets the ip of this SwitchIpGroupRequestBodyIpGroups.
 
         IP地址或网段。支持IPv4、IPv6。
 
@@ -60,7 +60,7 @@ class SwitchIpGroupRequestBodyIpGroups:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this SwitchIpGroupRequestBodyIpGroups.
+        r"""Sets the ip of this SwitchIpGroupRequestBodyIpGroups.
 
         IP地址或网段。支持IPv4、IPv6。
 
@@ -71,7 +71,7 @@ class SwitchIpGroupRequestBodyIpGroups:
 
     @property
     def description(self):
-        """Gets the description of this SwitchIpGroupRequestBodyIpGroups.
+        r"""Gets the description of this SwitchIpGroupRequestBodyIpGroups.
 
         备注信息，最长255字符。
 
@@ -82,7 +82,7 @@ class SwitchIpGroupRequestBodyIpGroups:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SwitchIpGroupRequestBodyIpGroups.
+        r"""Sets the description of this SwitchIpGroupRequestBodyIpGroups.
 
         备注信息，最长255字符。
 

@@ -25,7 +25,7 @@ class UpdateDbPortRequest:
     }
 
     def __init__(self, port=None):
-        """UpdateDbPortRequest
+        r"""UpdateDbPortRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateDbPortRequest:
 
     @property
     def port(self):
-        """Gets the port of this UpdateDbPortRequest.
+        r"""Gets the port of this UpdateDbPortRequest.
 
         MySQL端口号范围：大于等于1024，小于等于65535，不包含12017和33071。
 
@@ -53,7 +53,7 @@ class UpdateDbPortRequest:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this UpdateDbPortRequest.
+        r"""Sets the port of this UpdateDbPortRequest.
 
         MySQL端口号范围：大于等于1024，小于等于65535，不包含12017和33071。
 

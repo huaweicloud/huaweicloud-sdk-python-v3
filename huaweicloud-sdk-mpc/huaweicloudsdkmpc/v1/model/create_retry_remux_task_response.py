@@ -24,7 +24,7 @@ class CreateRetryRemuxTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateRetryRemuxTaskResponse
+        r"""CreateRetryRemuxTaskResponse
 
         The model defined in huaweicloud sdk
 

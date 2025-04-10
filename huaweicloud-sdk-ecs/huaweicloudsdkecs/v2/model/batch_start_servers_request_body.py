@@ -25,7 +25,7 @@ class BatchStartServersRequestBody:
     }
 
     def __init__(self, os_start=None):
-        """BatchStartServersRequestBody
+        r"""BatchStartServersRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchStartServersRequestBody:
 
     @property
     def os_start(self):
-        """Gets the os_start of this BatchStartServersRequestBody.
+        r"""Gets the os_start of this BatchStartServersRequestBody.
 
         :return: The os_start of this BatchStartServersRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.BatchStartServersOption`
@@ -51,7 +51,7 @@ class BatchStartServersRequestBody:
 
     @os_start.setter
     def os_start(self, os_start):
-        """Sets the os_start of this BatchStartServersRequestBody.
+        r"""Sets the os_start of this BatchStartServersRequestBody.
 
         :param os_start: The os_start of this BatchStartServersRequestBody.
         :type os_start: :class:`huaweicloudsdkecs.v2.BatchStartServersOption`

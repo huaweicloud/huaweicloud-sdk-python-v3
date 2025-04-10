@@ -111,7 +111,7 @@ class ServerDetails:
     }
 
     def __init__(self, id=None, user_id=None, name=None, created=None, updated=None, tenant_id=None, host_id=None, addresses=None, key_name=None, image=None, flavor=None, security_groups=None, access_i_pv4=None, access_i_pv6=None, status=None, progress=None, config_drive=None, metadata=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_ext_srv_att_rhost=None, os_ext_srv_att_rinstance_name=None, os_ext_st_spower_state=None, os_ext_srv_att_rhypervisor_hostname=None, os_ext_a_zavailability_zone=None, os_dc_fdisk_config=None, fault=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, osscheduler_hints=None, enterprise_project_id=None, sys_tags=None):
-        """ServerDetails
+        r"""ServerDetails
 
         The model defined in huaweicloud sdk
 
@@ -339,7 +339,7 @@ class ServerDetails:
 
     @property
     def id(self):
-        """Gets the id of this ServerDetails.
+        r"""Gets the id of this ServerDetails.
 
         裸金属服务器ID，格式为UUID
 
@@ -350,7 +350,7 @@ class ServerDetails:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServerDetails.
+        r"""Sets the id of this ServerDetails.
 
         裸金属服务器ID，格式为UUID
 
@@ -361,7 +361,7 @@ class ServerDetails:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ServerDetails.
+        r"""Gets the user_id of this ServerDetails.
 
         创建裸金属服务器的用户ID，格式为UUID。
 
@@ -372,7 +372,7 @@ class ServerDetails:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ServerDetails.
+        r"""Sets the user_id of this ServerDetails.
 
         创建裸金属服务器的用户ID，格式为UUID。
 
@@ -383,7 +383,7 @@ class ServerDetails:
 
     @property
     def name(self):
-        """Gets the name of this ServerDetails.
+        r"""Gets the name of this ServerDetails.
 
         裸金属服务器名称
 
@@ -394,7 +394,7 @@ class ServerDetails:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ServerDetails.
+        r"""Sets the name of this ServerDetails.
 
         裸金属服务器名称
 
@@ -405,7 +405,7 @@ class ServerDetails:
 
     @property
     def created(self):
-        """Gets the created of this ServerDetails.
+        r"""Gets the created of this ServerDetails.
 
         裸金属服务器创建时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T03:30:52Z
 
@@ -416,7 +416,7 @@ class ServerDetails:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ServerDetails.
+        r"""Sets the created of this ServerDetails.
 
         裸金属服务器创建时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T03:30:52Z
 
@@ -427,7 +427,7 @@ class ServerDetails:
 
     @property
     def updated(self):
-        """Gets the updated of this ServerDetails.
+        r"""Gets the updated of this ServerDetails.
 
         裸金属服务器更新时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T04:30:52Z
 
@@ -438,7 +438,7 @@ class ServerDetails:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ServerDetails.
+        r"""Sets the updated of this ServerDetails.
 
         裸金属服务器更新时间。时间戳格式为ISO 8601：YYYY-MM-DDTHH:MM:SSZ，例如：2019-05-22T04:30:52Z
 
@@ -449,7 +449,7 @@ class ServerDetails:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ServerDetails.
+        r"""Gets the tenant_id of this ServerDetails.
 
         裸金属服务器所属租户ID，格式为UUID。该参数和project_id表示相同的概念。
 
@@ -460,7 +460,7 @@ class ServerDetails:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ServerDetails.
+        r"""Sets the tenant_id of this ServerDetails.
 
         裸金属服务器所属租户ID，格式为UUID。该参数和project_id表示相同的概念。
 
@@ -471,7 +471,7 @@ class ServerDetails:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ServerDetails.
+        r"""Gets the host_id of this ServerDetails.
 
         裸金属服务器对应的主机ID
 
@@ -482,7 +482,7 @@ class ServerDetails:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ServerDetails.
+        r"""Sets the host_id of this ServerDetails.
 
         裸金属服务器对应的主机ID
 
@@ -493,7 +493,7 @@ class ServerDetails:
 
     @property
     def addresses(self):
-        """Gets the addresses of this ServerDetails.
+        r"""Gets the addresses of this ServerDetails.
 
         裸金属服务器的网络属性。详情请参见表3 addresses数据结构说明。
 
@@ -504,7 +504,7 @@ class ServerDetails:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this ServerDetails.
+        r"""Sets the addresses of this ServerDetails.
 
         裸金属服务器的网络属性。详情请参见表3 addresses数据结构说明。
 
@@ -515,7 +515,7 @@ class ServerDetails:
 
     @property
     def key_name(self):
-        """Gets the key_name of this ServerDetails.
+        r"""Gets the key_name of this ServerDetails.
 
         裸金属服务器使用的密钥对名称
 
@@ -526,7 +526,7 @@ class ServerDetails:
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this ServerDetails.
+        r"""Sets the key_name of this ServerDetails.
 
         裸金属服务器使用的密钥对名称
 
@@ -537,7 +537,7 @@ class ServerDetails:
 
     @property
     def image(self):
-        """Gets the image of this ServerDetails.
+        r"""Gets the image of this ServerDetails.
 
         :return: The image of this ServerDetails.
         :rtype: :class:`huaweicloudsdkbms.v1.ImageInfo`
@@ -546,7 +546,7 @@ class ServerDetails:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this ServerDetails.
+        r"""Sets the image of this ServerDetails.
 
         :param image: The image of this ServerDetails.
         :type image: :class:`huaweicloudsdkbms.v1.ImageInfo`
@@ -555,7 +555,7 @@ class ServerDetails:
 
     @property
     def flavor(self):
-        """Gets the flavor of this ServerDetails.
+        r"""Gets the flavor of this ServerDetails.
 
         :return: The flavor of this ServerDetails.
         :rtype: :class:`huaweicloudsdkbms.v1.FlavorInfos`
@@ -564,7 +564,7 @@ class ServerDetails:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ServerDetails.
+        r"""Sets the flavor of this ServerDetails.
 
         :param flavor: The flavor of this ServerDetails.
         :type flavor: :class:`huaweicloudsdkbms.v1.FlavorInfos`
@@ -573,7 +573,7 @@ class ServerDetails:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ServerDetails.
+        r"""Gets the security_groups of this ServerDetails.
 
         裸金属服务器所属安全组。详情请参见表7 security_groups数据结构说明。
 
@@ -584,7 +584,7 @@ class ServerDetails:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ServerDetails.
+        r"""Sets the security_groups of this ServerDetails.
 
         裸金属服务器所属安全组。详情请参见表7 security_groups数据结构说明。
 
@@ -595,7 +595,7 @@ class ServerDetails:
 
     @property
     def access_i_pv4(self):
-        """Gets the access_i_pv4 of this ServerDetails.
+        r"""Gets the access_i_pv4 of this ServerDetails.
 
         预留属性
 
@@ -606,7 +606,7 @@ class ServerDetails:
 
     @access_i_pv4.setter
     def access_i_pv4(self, access_i_pv4):
-        """Sets the access_i_pv4 of this ServerDetails.
+        r"""Sets the access_i_pv4 of this ServerDetails.
 
         预留属性
 
@@ -617,7 +617,7 @@ class ServerDetails:
 
     @property
     def access_i_pv6(self):
-        """Gets the access_i_pv6 of this ServerDetails.
+        r"""Gets the access_i_pv6 of this ServerDetails.
 
         预留属性
 
@@ -628,7 +628,7 @@ class ServerDetails:
 
     @access_i_pv6.setter
     def access_i_pv6(self, access_i_pv6):
-        """Sets the access_i_pv6 of this ServerDetails.
+        r"""Sets the access_i_pv6 of this ServerDetails.
 
         预留属性
 
@@ -639,7 +639,7 @@ class ServerDetails:
 
     @property
     def status(self):
-        """Gets the status of this ServerDetails.
+        r"""Gets the status of this ServerDetails.
 
         裸金属服务器当前状态信息。  取值范围：  ACTIVE：运行中/正在关机/删除中 BUILD：创建中 ERROR：故障 HARD_REBOOT：强制重启中 REBOOT：重启中 DELETED：实例已被正常删除 SHUTOFF：关机/正在开机/删除中/重建中/重装操作系统中/重装操作系统失败/冻结
 
@@ -650,7 +650,7 @@ class ServerDetails:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ServerDetails.
+        r"""Sets the status of this ServerDetails.
 
         裸金属服务器当前状态信息。  取值范围：  ACTIVE：运行中/正在关机/删除中 BUILD：创建中 ERROR：故障 HARD_REBOOT：强制重启中 REBOOT：重启中 DELETED：实例已被正常删除 SHUTOFF：关机/正在开机/删除中/重建中/重装操作系统中/重装操作系统失败/冻结
 
@@ -661,7 +661,7 @@ class ServerDetails:
 
     @property
     def progress(self):
-        """Gets the progress of this ServerDetails.
+        r"""Gets the progress of this ServerDetails.
 
         预留属性
 
@@ -672,7 +672,7 @@ class ServerDetails:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ServerDetails.
+        r"""Sets the progress of this ServerDetails.
 
         预留属性
 
@@ -683,7 +683,7 @@ class ServerDetails:
 
     @property
     def config_drive(self):
-        """Gets the config_drive of this ServerDetails.
+        r"""Gets the config_drive of this ServerDetails.
 
         是否为裸金属服务器配置config drive分区。取值为：True或空字符串
 
@@ -694,7 +694,7 @@ class ServerDetails:
 
     @config_drive.setter
     def config_drive(self, config_drive):
-        """Sets the config_drive of this ServerDetails.
+        r"""Sets the config_drive of this ServerDetails.
 
         是否为裸金属服务器配置config drive分区。取值为：True或空字符串
 
@@ -705,7 +705,7 @@ class ServerDetails:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ServerDetails.
+        r"""Gets the metadata of this ServerDetails.
 
         :return: The metadata of this ServerDetails.
         :rtype: :class:`huaweicloudsdkbms.v1.MetadataList`
@@ -714,7 +714,7 @@ class ServerDetails:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ServerDetails.
+        r"""Sets the metadata of this ServerDetails.
 
         :param metadata: The metadata of this ServerDetails.
         :type metadata: :class:`huaweicloudsdkbms.v1.MetadataList`
@@ -723,7 +723,7 @@ class ServerDetails:
 
     @property
     def os_ext_st_stask_state(self):
-        """Gets the os_ext_st_stask_state of this ServerDetails.
+        r"""Gets the os_ext_st_stask_state of this ServerDetails.
 
         扩展属性，裸金属服务器当前的任务状态。例如：rebooting：重启中reboot_started：普通重启reboot_started_hard：强制重启powering-off：关机中powering-on：开机中rebuilding：重建中scheduling：调度中deleting：删除中
 
@@ -734,7 +734,7 @@ class ServerDetails:
 
     @os_ext_st_stask_state.setter
     def os_ext_st_stask_state(self, os_ext_st_stask_state):
-        """Sets the os_ext_st_stask_state of this ServerDetails.
+        r"""Sets the os_ext_st_stask_state of this ServerDetails.
 
         扩展属性，裸金属服务器当前的任务状态。例如：rebooting：重启中reboot_started：普通重启reboot_started_hard：强制重启powering-off：关机中powering-on：开机中rebuilding：重建中scheduling：调度中deleting：删除中
 
@@ -745,7 +745,7 @@ class ServerDetails:
 
     @property
     def os_ext_st_svm_state(self):
-        """Gets the os_ext_st_svm_state of this ServerDetails.
+        r"""Gets the os_ext_st_svm_state of this ServerDetails.
 
         扩展属性，裸金属服务器的稳定状态。例如：active：运行中shutoff：关机reboot：重启
 
@@ -756,7 +756,7 @@ class ServerDetails:
 
     @os_ext_st_svm_state.setter
     def os_ext_st_svm_state(self, os_ext_st_svm_state):
-        """Sets the os_ext_st_svm_state of this ServerDetails.
+        r"""Sets the os_ext_st_svm_state of this ServerDetails.
 
         扩展属性，裸金属服务器的稳定状态。例如：active：运行中shutoff：关机reboot：重启
 
@@ -767,7 +767,7 @@ class ServerDetails:
 
     @property
     def os_ext_srv_att_rhost(self):
-        """Gets the os_ext_srv_att_rhost of this ServerDetails.
+        r"""Gets the os_ext_srv_att_rhost of this ServerDetails.
 
         扩展属性，裸金属服务器宿主名称
 
@@ -778,7 +778,7 @@ class ServerDetails:
 
     @os_ext_srv_att_rhost.setter
     def os_ext_srv_att_rhost(self, os_ext_srv_att_rhost):
-        """Sets the os_ext_srv_att_rhost of this ServerDetails.
+        r"""Sets the os_ext_srv_att_rhost of this ServerDetails.
 
         扩展属性，裸金属服务器宿主名称
 
@@ -789,7 +789,7 @@ class ServerDetails:
 
     @property
     def os_ext_srv_att_rinstance_name(self):
-        """Gets the os_ext_srv_att_rinstance_name of this ServerDetails.
+        r"""Gets the os_ext_srv_att_rinstance_name of this ServerDetails.
 
         扩展属性，裸金属服务器实例ID
 
@@ -800,7 +800,7 @@ class ServerDetails:
 
     @os_ext_srv_att_rinstance_name.setter
     def os_ext_srv_att_rinstance_name(self, os_ext_srv_att_rinstance_name):
-        """Sets the os_ext_srv_att_rinstance_name of this ServerDetails.
+        r"""Sets the os_ext_srv_att_rinstance_name of this ServerDetails.
 
         扩展属性，裸金属服务器实例ID
 
@@ -811,7 +811,7 @@ class ServerDetails:
 
     @property
     def os_ext_st_spower_state(self):
-        """Gets the os_ext_st_spower_state of this ServerDetails.
+        r"""Gets the os_ext_st_spower_state of this ServerDetails.
 
         扩展属性，裸金属服务器电源状态。例如：0表示“NO STATE”1表示“RUNNING”4表示“SHUTDOWN”
 
@@ -822,7 +822,7 @@ class ServerDetails:
 
     @os_ext_st_spower_state.setter
     def os_ext_st_spower_state(self, os_ext_st_spower_state):
-        """Sets the os_ext_st_spower_state of this ServerDetails.
+        r"""Sets the os_ext_st_spower_state of this ServerDetails.
 
         扩展属性，裸金属服务器电源状态。例如：0表示“NO STATE”1表示“RUNNING”4表示“SHUTDOWN”
 
@@ -833,7 +833,7 @@ class ServerDetails:
 
     @property
     def os_ext_srv_att_rhypervisor_hostname(self):
-        """Gets the os_ext_srv_att_rhypervisor_hostname of this ServerDetails.
+        r"""Gets the os_ext_srv_att_rhypervisor_hostname of this ServerDetails.
 
         扩展属性，裸金属服务器所在虚拟化主机名。
 
@@ -844,7 +844,7 @@ class ServerDetails:
 
     @os_ext_srv_att_rhypervisor_hostname.setter
     def os_ext_srv_att_rhypervisor_hostname(self, os_ext_srv_att_rhypervisor_hostname):
-        """Sets the os_ext_srv_att_rhypervisor_hostname of this ServerDetails.
+        r"""Sets the os_ext_srv_att_rhypervisor_hostname of this ServerDetails.
 
         扩展属性，裸金属服务器所在虚拟化主机名。
 
@@ -855,7 +855,7 @@ class ServerDetails:
 
     @property
     def os_ext_a_zavailability_zone(self):
-        """Gets the os_ext_a_zavailability_zone of this ServerDetails.
+        r"""Gets the os_ext_a_zavailability_zone of this ServerDetails.
 
         扩展属性，裸金属服务器所在可用分区名称。
 
@@ -866,7 +866,7 @@ class ServerDetails:
 
     @os_ext_a_zavailability_zone.setter
     def os_ext_a_zavailability_zone(self, os_ext_a_zavailability_zone):
-        """Sets the os_ext_a_zavailability_zone of this ServerDetails.
+        r"""Sets the os_ext_a_zavailability_zone of this ServerDetails.
 
         扩展属性，裸金属服务器所在可用分区名称。
 
@@ -877,7 +877,7 @@ class ServerDetails:
 
     @property
     def os_dc_fdisk_config(self):
-        """Gets the os_dc_fdisk_config of this ServerDetails.
+        r"""Gets the os_dc_fdisk_config of this ServerDetails.
 
         扩展属性，磁盘配置，取值为以下两种：MANUAL：API使用镜像中的分区方案和文件系统创建裸金属服务器。如果目标flavor磁盘较大，则API不会对剩余磁盘空间进行分区。AUTO：API使用与目标flavor磁盘大小相同的单个分区创建裸金属服务器，API会自动调整文件系统以适应整个分区。
 
@@ -888,7 +888,7 @@ class ServerDetails:
 
     @os_dc_fdisk_config.setter
     def os_dc_fdisk_config(self, os_dc_fdisk_config):
-        """Sets the os_dc_fdisk_config of this ServerDetails.
+        r"""Sets the os_dc_fdisk_config of this ServerDetails.
 
         扩展属性，磁盘配置，取值为以下两种：MANUAL：API使用镜像中的分区方案和文件系统创建裸金属服务器。如果目标flavor磁盘较大，则API不会对剩余磁盘空间进行分区。AUTO：API使用与目标flavor磁盘大小相同的单个分区创建裸金属服务器，API会自动调整文件系统以适应整个分区。
 
@@ -899,7 +899,7 @@ class ServerDetails:
 
     @property
     def fault(self):
-        """Gets the fault of this ServerDetails.
+        r"""Gets the fault of this ServerDetails.
 
         :return: The fault of this ServerDetails.
         :rtype: :class:`huaweicloudsdkbms.v1.Fault`
@@ -908,7 +908,7 @@ class ServerDetails:
 
     @fault.setter
     def fault(self, fault):
-        """Sets the fault of this ServerDetails.
+        r"""Sets the fault of this ServerDetails.
 
         :param fault: The fault of this ServerDetails.
         :type fault: :class:`huaweicloudsdkbms.v1.Fault`
@@ -917,7 +917,7 @@ class ServerDetails:
 
     @property
     def os_srv_us_glaunched_at(self):
-        """Gets the os_srv_us_glaunched_at of this ServerDetails.
+        r"""Gets the os_srv_us_glaunched_at of this ServerDetails.
 
         裸金属服务器启动时间。时间戳格式为ISO 8601，例如：2019-05-22T03:23:59.000000
 
@@ -928,7 +928,7 @@ class ServerDetails:
 
     @os_srv_us_glaunched_at.setter
     def os_srv_us_glaunched_at(self, os_srv_us_glaunched_at):
-        """Sets the os_srv_us_glaunched_at of this ServerDetails.
+        r"""Sets the os_srv_us_glaunched_at of this ServerDetails.
 
         裸金属服务器启动时间。时间戳格式为ISO 8601，例如：2019-05-22T03:23:59.000000
 
@@ -939,7 +939,7 @@ class ServerDetails:
 
     @property
     def os_srv_us_gterminated_at(self):
-        """Gets the os_srv_us_gterminated_at of this ServerDetails.
+        r"""Gets the os_srv_us_gterminated_at of this ServerDetails.
 
         裸金属服务器删除时间。时间戳格式为ISO 8601，例如：2019-05-22T04:23:59.000000
 
@@ -950,7 +950,7 @@ class ServerDetails:
 
     @os_srv_us_gterminated_at.setter
     def os_srv_us_gterminated_at(self, os_srv_us_gterminated_at):
-        """Sets the os_srv_us_gterminated_at of this ServerDetails.
+        r"""Sets the os_srv_us_gterminated_at of this ServerDetails.
 
         裸金属服务器删除时间。时间戳格式为ISO 8601，例如：2019-05-22T04:23:59.000000
 
@@ -961,7 +961,7 @@ class ServerDetails:
 
     @property
     def os_extended_volumesvolumes_attached(self):
-        """Gets the os_extended_volumesvolumes_attached of this ServerDetails.
+        r"""Gets the os_extended_volumesvolumes_attached of this ServerDetails.
 
         挂载到裸金属服务器上的磁盘。详情请参见表9 os-extended-volumes:volumes_attached 数据结构说明。
 
@@ -972,7 +972,7 @@ class ServerDetails:
 
     @os_extended_volumesvolumes_attached.setter
     def os_extended_volumesvolumes_attached(self, os_extended_volumesvolumes_attached):
-        """Sets the os_extended_volumesvolumes_attached of this ServerDetails.
+        r"""Sets the os_extended_volumesvolumes_attached of this ServerDetails.
 
         挂载到裸金属服务器上的磁盘。详情请参见表9 os-extended-volumes:volumes_attached 数据结构说明。
 
@@ -983,7 +983,7 @@ class ServerDetails:
 
     @property
     def description(self):
-        """Gets the description of this ServerDetails.
+        r"""Gets the description of this ServerDetails.
 
         裸金属服务器的描述信息
 
@@ -994,7 +994,7 @@ class ServerDetails:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServerDetails.
+        r"""Sets the description of this ServerDetails.
 
         裸金属服务器的描述信息
 
@@ -1005,7 +1005,7 @@ class ServerDetails:
 
     @property
     def host_status(self):
-        """Gets the host_status of this ServerDetails.
+        r"""Gets the host_status of this ServerDetails.
 
         裸金属服务器宿主机状态。UP：服务正常UNKNOWN：状态未知DOWN：服务异常MAINTENANCE：维护状态空字符串：裸金属服务器无主机信息
 
@@ -1016,7 +1016,7 @@ class ServerDetails:
 
     @host_status.setter
     def host_status(self, host_status):
-        """Sets the host_status of this ServerDetails.
+        r"""Sets the host_status of this ServerDetails.
 
         裸金属服务器宿主机状态。UP：服务正常UNKNOWN：状态未知DOWN：服务异常MAINTENANCE：维护状态空字符串：裸金属服务器无主机信息
 
@@ -1027,7 +1027,7 @@ class ServerDetails:
 
     @property
     def os_ext_srv_att_rhostname(self):
-        """Gets the os_ext_srv_att_rhostname of this ServerDetails.
+        r"""Gets the os_ext_srv_att_rhostname of this ServerDetails.
 
         裸金属服务器的主机名
 
@@ -1038,7 +1038,7 @@ class ServerDetails:
 
     @os_ext_srv_att_rhostname.setter
     def os_ext_srv_att_rhostname(self, os_ext_srv_att_rhostname):
-        """Sets the os_ext_srv_att_rhostname of this ServerDetails.
+        r"""Sets the os_ext_srv_att_rhostname of this ServerDetails.
 
         裸金属服务器的主机名
 
@@ -1049,7 +1049,7 @@ class ServerDetails:
 
     @property
     def os_ext_srv_att_rreservation_id(self):
-        """Gets the os_ext_srv_att_rreservation_id of this ServerDetails.
+        r"""Gets the os_ext_srv_att_rreservation_id of this ServerDetails.
 
         批量创建场景，裸金属服务器的预留ID。当批量创建裸金属服务器时，这些服务器将拥有相同的reservation_id。您可以使用6.3.3-查询裸金属服务器详情列表API并指定reservation_id来过滤查询同一批创建的所有裸金属服务器。
 
@@ -1060,7 +1060,7 @@ class ServerDetails:
 
     @os_ext_srv_att_rreservation_id.setter
     def os_ext_srv_att_rreservation_id(self, os_ext_srv_att_rreservation_id):
-        """Sets the os_ext_srv_att_rreservation_id of this ServerDetails.
+        r"""Sets the os_ext_srv_att_rreservation_id of this ServerDetails.
 
         批量创建场景，裸金属服务器的预留ID。当批量创建裸金属服务器时，这些服务器将拥有相同的reservation_id。您可以使用6.3.3-查询裸金属服务器详情列表API并指定reservation_id来过滤查询同一批创建的所有裸金属服务器。
 
@@ -1071,7 +1071,7 @@ class ServerDetails:
 
     @property
     def os_ext_srv_att_rlaunch_index(self):
-        """Gets the os_ext_srv_att_rlaunch_index of this ServerDetails.
+        r"""Gets the os_ext_srv_att_rlaunch_index of this ServerDetails.
 
         批量创建场景，裸金属服务器的启动顺序
 
@@ -1082,7 +1082,7 @@ class ServerDetails:
 
     @os_ext_srv_att_rlaunch_index.setter
     def os_ext_srv_att_rlaunch_index(self, os_ext_srv_att_rlaunch_index):
-        """Sets the os_ext_srv_att_rlaunch_index of this ServerDetails.
+        r"""Sets the os_ext_srv_att_rlaunch_index of this ServerDetails.
 
         批量创建场景，裸金属服务器的启动顺序
 
@@ -1093,7 +1093,7 @@ class ServerDetails:
 
     @property
     def os_ext_srv_att_rkernel_id(self):
-        """Gets the os_ext_srv_att_rkernel_id of this ServerDetails.
+        r"""Gets the os_ext_srv_att_rkernel_id of this ServerDetails.
 
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空
 
@@ -1104,7 +1104,7 @@ class ServerDetails:
 
     @os_ext_srv_att_rkernel_id.setter
     def os_ext_srv_att_rkernel_id(self, os_ext_srv_att_rkernel_id):
-        """Sets the os_ext_srv_att_rkernel_id of this ServerDetails.
+        r"""Sets the os_ext_srv_att_rkernel_id of this ServerDetails.
 
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空
 
@@ -1115,7 +1115,7 @@ class ServerDetails:
 
     @property
     def os_ext_srv_att_rramdisk_id(self):
-        """Gets the os_ext_srv_att_rramdisk_id of this ServerDetails.
+        r"""Gets the os_ext_srv_att_rramdisk_id of this ServerDetails.
 
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
 
@@ -1126,7 +1126,7 @@ class ServerDetails:
 
     @os_ext_srv_att_rramdisk_id.setter
     def os_ext_srv_att_rramdisk_id(self, os_ext_srv_att_rramdisk_id):
-        """Sets the os_ext_srv_att_rramdisk_id of this ServerDetails.
+        r"""Sets the os_ext_srv_att_rramdisk_id of this ServerDetails.
 
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
 
@@ -1137,7 +1137,7 @@ class ServerDetails:
 
     @property
     def os_ext_srv_att_rroot_device_name(self):
-        """Gets the os_ext_srv_att_rroot_device_name of this ServerDetails.
+        r"""Gets the os_ext_srv_att_rroot_device_name of this ServerDetails.
 
         裸金属服务器系统盘的设备名称，例如“/dev/sda”。
 
@@ -1148,7 +1148,7 @@ class ServerDetails:
 
     @os_ext_srv_att_rroot_device_name.setter
     def os_ext_srv_att_rroot_device_name(self, os_ext_srv_att_rroot_device_name):
-        """Sets the os_ext_srv_att_rroot_device_name of this ServerDetails.
+        r"""Sets the os_ext_srv_att_rroot_device_name of this ServerDetails.
 
         裸金属服务器系统盘的设备名称，例如“/dev/sda”。
 
@@ -1159,7 +1159,7 @@ class ServerDetails:
 
     @property
     def os_ext_srv_att_ruser_data(self):
-        """Gets the os_ext_srv_att_ruser_data of this ServerDetails.
+        r"""Gets the os_ext_srv_att_ruser_data of this ServerDetails.
 
         创建裸金属服务器时指定的user_data，取值为base64编码后的结果或空字符串。
 
@@ -1170,7 +1170,7 @@ class ServerDetails:
 
     @os_ext_srv_att_ruser_data.setter
     def os_ext_srv_att_ruser_data(self, os_ext_srv_att_ruser_data):
-        """Sets the os_ext_srv_att_ruser_data of this ServerDetails.
+        r"""Sets the os_ext_srv_att_ruser_data of this ServerDetails.
 
         创建裸金属服务器时指定的user_data，取值为base64编码后的结果或空字符串。
 
@@ -1181,7 +1181,7 @@ class ServerDetails:
 
     @property
     def locked(self):
-        """Gets the locked of this ServerDetails.
+        r"""Gets the locked of this ServerDetails.
 
         裸金属服务器是否为锁定状态。true：锁定false：未锁定
 
@@ -1192,7 +1192,7 @@ class ServerDetails:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this ServerDetails.
+        r"""Sets the locked of this ServerDetails.
 
         裸金属服务器是否为锁定状态。true：锁定false：未锁定
 
@@ -1203,7 +1203,7 @@ class ServerDetails:
 
     @property
     def tags(self):
-        """Gets the tags of this ServerDetails.
+        r"""Gets the tags of this ServerDetails.
 
         裸金属服务器标签。
 
@@ -1214,7 +1214,7 @@ class ServerDetails:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ServerDetails.
+        r"""Sets the tags of this ServerDetails.
 
         裸金属服务器标签。
 
@@ -1225,7 +1225,7 @@ class ServerDetails:
 
     @property
     def osscheduler_hints(self):
-        """Gets the osscheduler_hints of this ServerDetails.
+        r"""Gets the osscheduler_hints of this ServerDetails.
 
         :return: The osscheduler_hints of this ServerDetails.
         :rtype: :class:`huaweicloudsdkbms.v1.SchedulerHints`
@@ -1234,7 +1234,7 @@ class ServerDetails:
 
     @osscheduler_hints.setter
     def osscheduler_hints(self, osscheduler_hints):
-        """Sets the osscheduler_hints of this ServerDetails.
+        r"""Sets the osscheduler_hints of this ServerDetails.
 
         :param osscheduler_hints: The osscheduler_hints of this ServerDetails.
         :type osscheduler_hints: :class:`huaweicloudsdkbms.v1.SchedulerHints`
@@ -1243,7 +1243,7 @@ class ServerDetails:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ServerDetails.
+        r"""Gets the enterprise_project_id of this ServerDetails.
 
         裸金属服务器所属的企业项目ID
 
@@ -1254,7 +1254,7 @@ class ServerDetails:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ServerDetails.
+        r"""Sets the enterprise_project_id of this ServerDetails.
 
         裸金属服务器所属的企业项目ID
 
@@ -1265,7 +1265,7 @@ class ServerDetails:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ServerDetails.
+        r"""Gets the sys_tags of this ServerDetails.
 
         裸金属服务器系统标签。详情请参见表12 sys_tags数据结构说明。
 
@@ -1276,7 +1276,7 @@ class ServerDetails:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ServerDetails.
+        r"""Sets the sys_tags of this ServerDetails.
 
         裸金属服务器系统标签。详情请参见表12 sys_tags数据结构说明。
 

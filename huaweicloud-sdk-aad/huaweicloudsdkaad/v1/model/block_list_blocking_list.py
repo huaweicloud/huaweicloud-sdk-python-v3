@@ -31,7 +31,7 @@ class BlockListBlockingList:
     }
 
     def __init__(self, ip=None, blocking_time=None, estimated_unblocking_time=None, status=None):
-        """BlockListBlockingList
+        r"""BlockListBlockingList
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class BlockListBlockingList:
 
     @property
     def ip(self):
-        """Gets the ip of this BlockListBlockingList.
+        r"""Gets the ip of this BlockListBlockingList.
 
         ip地址
 
@@ -71,7 +71,7 @@ class BlockListBlockingList:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this BlockListBlockingList.
+        r"""Sets the ip of this BlockListBlockingList.
 
         ip地址
 
@@ -82,7 +82,7 @@ class BlockListBlockingList:
 
     @property
     def blocking_time(self):
-        """Gets the blocking_time of this BlockListBlockingList.
+        r"""Gets the blocking_time of this BlockListBlockingList.
 
         封堵时间
 
@@ -93,7 +93,7 @@ class BlockListBlockingList:
 
     @blocking_time.setter
     def blocking_time(self, blocking_time):
-        """Sets the blocking_time of this BlockListBlockingList.
+        r"""Sets the blocking_time of this BlockListBlockingList.
 
         封堵时间
 
@@ -104,7 +104,7 @@ class BlockListBlockingList:
 
     @property
     def estimated_unblocking_time(self):
-        """Gets the estimated_unblocking_time of this BlockListBlockingList.
+        r"""Gets the estimated_unblocking_time of this BlockListBlockingList.
 
         预计解封时间
 
@@ -115,7 +115,7 @@ class BlockListBlockingList:
 
     @estimated_unblocking_time.setter
     def estimated_unblocking_time(self, estimated_unblocking_time):
-        """Sets the estimated_unblocking_time of this BlockListBlockingList.
+        r"""Sets the estimated_unblocking_time of this BlockListBlockingList.
 
         预计解封时间
 
@@ -126,7 +126,7 @@ class BlockListBlockingList:
 
     @property
     def status(self):
-        """Gets the status of this BlockListBlockingList.
+        r"""Gets the status of this BlockListBlockingList.
 
         状态。unblocking：解封中；success：成功；failed：失败
 
@@ -137,7 +137,7 @@ class BlockListBlockingList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BlockListBlockingList.
+        r"""Sets the status of this BlockListBlockingList.
 
         状态。unblocking：解封中；success：成功；failed：失败
 

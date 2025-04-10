@@ -29,7 +29,7 @@ class ListProjectCofigsV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ListProjectCofigsV2Request
+        r"""ListProjectCofigsV2Request
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListProjectCofigsV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListProjectCofigsV2Request.
+        r"""Gets the instance_id of this ListProjectCofigsV2Request.
 
         实例ID
 
@@ -67,7 +67,7 @@ class ListProjectCofigsV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListProjectCofigsV2Request.
+        r"""Sets the instance_id of this ListProjectCofigsV2Request.
 
         实例ID
 
@@ -78,7 +78,7 @@ class ListProjectCofigsV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProjectCofigsV2Request.
+        r"""Gets the offset of this ListProjectCofigsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -89,7 +89,7 @@ class ListProjectCofigsV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProjectCofigsV2Request.
+        r"""Sets the offset of this ListProjectCofigsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -100,7 +100,7 @@ class ListProjectCofigsV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProjectCofigsV2Request.
+        r"""Gets the limit of this ListProjectCofigsV2Request.
 
         每页显示的条目数量
 
@@ -111,7 +111,7 @@ class ListProjectCofigsV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProjectCofigsV2Request.
+        r"""Sets the limit of this ListProjectCofigsV2Request.
 
         每页显示的条目数量
 

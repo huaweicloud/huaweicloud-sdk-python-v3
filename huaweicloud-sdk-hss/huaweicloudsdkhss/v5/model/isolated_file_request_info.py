@@ -31,7 +31,7 @@ class IsolatedFileRequestInfo:
     }
 
     def __init__(self, host_id=None, file_hash=None, file_path=None, file_attr=None):
-        """IsolatedFileRequestInfo
+        r"""IsolatedFileRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class IsolatedFileRequestInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this IsolatedFileRequestInfo.
+        r"""Gets the host_id of this IsolatedFileRequestInfo.
 
         主机ID
 
@@ -75,7 +75,7 @@ class IsolatedFileRequestInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this IsolatedFileRequestInfo.
+        r"""Sets the host_id of this IsolatedFileRequestInfo.
 
         主机ID
 
@@ -86,7 +86,7 @@ class IsolatedFileRequestInfo:
 
     @property
     def file_hash(self):
-        """Gets the file_hash of this IsolatedFileRequestInfo.
+        r"""Gets the file_hash of this IsolatedFileRequestInfo.
 
         文件哈希
 
@@ -97,7 +97,7 @@ class IsolatedFileRequestInfo:
 
     @file_hash.setter
     def file_hash(self, file_hash):
-        """Sets the file_hash of this IsolatedFileRequestInfo.
+        r"""Sets the file_hash of this IsolatedFileRequestInfo.
 
         文件哈希
 
@@ -108,7 +108,7 @@ class IsolatedFileRequestInfo:
 
     @property
     def file_path(self):
-        """Gets the file_path of this IsolatedFileRequestInfo.
+        r"""Gets the file_path of this IsolatedFileRequestInfo.
 
         文件路径
 
@@ -119,7 +119,7 @@ class IsolatedFileRequestInfo:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this IsolatedFileRequestInfo.
+        r"""Sets the file_path of this IsolatedFileRequestInfo.
 
         文件路径
 
@@ -130,7 +130,7 @@ class IsolatedFileRequestInfo:
 
     @property
     def file_attr(self):
-        """Gets the file_attr of this IsolatedFileRequestInfo.
+        r"""Gets the file_attr of this IsolatedFileRequestInfo.
 
         文件属性
 
@@ -141,7 +141,7 @@ class IsolatedFileRequestInfo:
 
     @file_attr.setter
     def file_attr(self, file_attr):
-        """Sets the file_attr of this IsolatedFileRequestInfo.
+        r"""Sets the file_attr of this IsolatedFileRequestInfo.
 
         文件属性
 

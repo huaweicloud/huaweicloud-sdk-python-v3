@@ -26,7 +26,7 @@ class ListPrivateHooksResponse(SdkResponse):
     }
 
     def __init__(self, hooks=None):
-        """ListPrivateHooksResponse
+        r"""ListPrivateHooksResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPrivateHooksResponse(SdkResponse):
 
     @property
     def hooks(self):
-        """Gets the hooks of this ListPrivateHooksResponse.
+        r"""Gets the hooks of this ListPrivateHooksResponse.
 
         私有hook的列表。默认以创建时间降序排序。
 
@@ -55,7 +55,7 @@ class ListPrivateHooksResponse(SdkResponse):
 
     @hooks.setter
     def hooks(self, hooks):
-        """Sets the hooks of this ListPrivateHooksResponse.
+        r"""Sets the hooks of this ListPrivateHooksResponse.
 
         私有hook的列表。默认以创建时间降序排序。
 

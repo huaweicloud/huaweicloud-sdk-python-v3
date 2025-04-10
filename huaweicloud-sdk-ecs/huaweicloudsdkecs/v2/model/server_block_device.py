@@ -39,7 +39,7 @@ class ServerBlockDevice:
     }
 
     def __init__(self, boot_index=None, pci_address=None, volume_id=None, device=None, server_id=None, id=None, size=None, bus=None):
-        """ServerBlockDevice
+        r"""ServerBlockDevice
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ServerBlockDevice:
 
     @property
     def boot_index(self):
-        """Gets the boot_index of this ServerBlockDevice.
+        r"""Gets the boot_index of this ServerBlockDevice.
 
         云硬盘启动顺序。  - 0为系统盘。  - 非0为数据盘
 
@@ -103,7 +103,7 @@ class ServerBlockDevice:
 
     @boot_index.setter
     def boot_index(self, boot_index):
-        """Sets the boot_index of this ServerBlockDevice.
+        r"""Sets the boot_index of this ServerBlockDevice.
 
         云硬盘启动顺序。  - 0为系统盘。  - 非0为数据盘
 
@@ -114,7 +114,7 @@ class ServerBlockDevice:
 
     @property
     def pci_address(self):
-        """Gets the pci_address of this ServerBlockDevice.
+        r"""Gets the pci_address of this ServerBlockDevice.
 
         pci地址。
 
@@ -125,7 +125,7 @@ class ServerBlockDevice:
 
     @pci_address.setter
     def pci_address(self, pci_address):
-        """Sets the pci_address of this ServerBlockDevice.
+        r"""Sets the pci_address of this ServerBlockDevice.
 
         pci地址。
 
@@ -136,7 +136,7 @@ class ServerBlockDevice:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this ServerBlockDevice.
+        r"""Gets the volume_id of this ServerBlockDevice.
 
         云硬盘ID，UUID格式。
 
@@ -147,7 +147,7 @@ class ServerBlockDevice:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this ServerBlockDevice.
+        r"""Sets the volume_id of this ServerBlockDevice.
 
         云硬盘ID，UUID格式。
 
@@ -158,7 +158,7 @@ class ServerBlockDevice:
 
     @property
     def device(self):
-        """Gets the device of this ServerBlockDevice.
+        r"""Gets the device of this ServerBlockDevice.
 
         云硬盘挂载盘符，即磁盘挂载点。
 
@@ -169,7 +169,7 @@ class ServerBlockDevice:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this ServerBlockDevice.
+        r"""Sets the device of this ServerBlockDevice.
 
         云硬盘挂载盘符，即磁盘挂载点。
 
@@ -180,7 +180,7 @@ class ServerBlockDevice:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ServerBlockDevice.
+        r"""Gets the server_id of this ServerBlockDevice.
 
         弹性云服务器ID，UUID格式。
 
@@ -191,7 +191,7 @@ class ServerBlockDevice:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ServerBlockDevice.
+        r"""Sets the server_id of this ServerBlockDevice.
 
         弹性云服务器ID，UUID格式。
 
@@ -202,7 +202,7 @@ class ServerBlockDevice:
 
     @property
     def id(self):
-        """Gets the id of this ServerBlockDevice.
+        r"""Gets the id of this ServerBlockDevice.
 
         挂载ID，与云硬盘ID相同。UUID格式。
 
@@ -213,7 +213,7 @@ class ServerBlockDevice:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServerBlockDevice.
+        r"""Sets the id of this ServerBlockDevice.
 
         挂载ID，与云硬盘ID相同。UUID格式。
 
@@ -224,7 +224,7 @@ class ServerBlockDevice:
 
     @property
     def size(self):
-        """Gets the size of this ServerBlockDevice.
+        r"""Gets the size of this ServerBlockDevice.
 
         云硬盘大小，单位GB。
 
@@ -235,7 +235,7 @@ class ServerBlockDevice:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ServerBlockDevice.
+        r"""Sets the size of this ServerBlockDevice.
 
         云硬盘大小，单位GB。
 
@@ -246,7 +246,7 @@ class ServerBlockDevice:
 
     @property
     def bus(self):
-        """Gets the bus of this ServerBlockDevice.
+        r"""Gets the bus of this ServerBlockDevice.
 
         磁盘总线类型 。  取值范围：virtio、scsi
 
@@ -257,7 +257,7 @@ class ServerBlockDevice:
 
     @bus.setter
     def bus(self, bus):
-        """Sets the bus of this ServerBlockDevice.
+        r"""Sets the bus of this ServerBlockDevice.
 
         磁盘总线类型 。  取值范围：virtio、scsi
 

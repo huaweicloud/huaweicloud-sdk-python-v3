@@ -35,7 +35,7 @@ class VideoInfo:
     }
 
     def __init__(self, width=None, height=None, bitrate=None, bitrate_bps=None, frame_rate=None, codec=None):
-        """VideoInfo
+        r"""VideoInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class VideoInfo:
 
     @property
     def width(self):
-        """Gets the width of this VideoInfo.
+        r"""Gets the width of this VideoInfo.
 
         视频宽度
 
@@ -89,7 +89,7 @@ class VideoInfo:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this VideoInfo.
+        r"""Sets the width of this VideoInfo.
 
         视频宽度
 
@@ -100,7 +100,7 @@ class VideoInfo:
 
     @property
     def height(self):
-        """Gets the height of this VideoInfo.
+        r"""Gets the height of this VideoInfo.
 
         视频高度
 
@@ -111,7 +111,7 @@ class VideoInfo:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this VideoInfo.
+        r"""Sets the height of this VideoInfo.
 
         视频高度
 
@@ -122,7 +122,7 @@ class VideoInfo:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this VideoInfo.
+        r"""Gets the bitrate of this VideoInfo.
 
         视频码率，单位: kbit/s 
 
@@ -133,7 +133,7 @@ class VideoInfo:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this VideoInfo.
+        r"""Sets the bitrate of this VideoInfo.
 
         视频码率，单位: kbit/s 
 
@@ -144,7 +144,7 @@ class VideoInfo:
 
     @property
     def bitrate_bps(self):
-        """Gets the bitrate_bps of this VideoInfo.
+        r"""Gets the bitrate_bps of this VideoInfo.
 
         视频码率，单位: bit/s 
 
@@ -155,7 +155,7 @@ class VideoInfo:
 
     @bitrate_bps.setter
     def bitrate_bps(self, bitrate_bps):
-        """Sets the bitrate_bps of this VideoInfo.
+        r"""Sets the bitrate_bps of this VideoInfo.
 
         视频码率，单位: bit/s 
 
@@ -166,7 +166,7 @@ class VideoInfo:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this VideoInfo.
+        r"""Gets the frame_rate of this VideoInfo.
 
         帧率。    取值范围：0或[5,60]，0表示自适应。    单位：帧每秒。    > 若设置的帧率不在取值范围内，则自动调整为0，若设置的帧率高于片源帧率，则自动调整为片源帧率。 
 
@@ -177,7 +177,7 @@ class VideoInfo:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this VideoInfo.
+        r"""Sets the frame_rate of this VideoInfo.
 
         帧率。    取值范围：0或[5,60]，0表示自适应。    单位：帧每秒。    > 若设置的帧率不在取值范围内，则自动调整为0，若设置的帧率高于片源帧率，则自动调整为片源帧率。 
 
@@ -188,7 +188,7 @@ class VideoInfo:
 
     @property
     def codec(self):
-        """Gets the codec of this VideoInfo.
+        r"""Gets the codec of this VideoInfo.
 
         视频编码格式
 
@@ -199,7 +199,7 @@ class VideoInfo:
 
     @codec.setter
     def codec(self, codec):
-        """Sets the codec of this VideoInfo.
+        r"""Sets the codec of this VideoInfo.
 
         视频编码格式
 

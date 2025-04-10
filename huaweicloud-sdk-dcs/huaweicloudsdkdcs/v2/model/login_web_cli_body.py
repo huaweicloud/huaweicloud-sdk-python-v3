@@ -25,7 +25,7 @@ class LoginWebCliBody:
     }
 
     def __init__(self, password=None):
-        """LoginWebCliBody
+        r"""LoginWebCliBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class LoginWebCliBody:
 
     @property
     def password(self):
-        """Gets the password of this LoginWebCliBody.
+        r"""Gets the password of this LoginWebCliBody.
 
         登录Redis密码
 
@@ -54,7 +54,7 @@ class LoginWebCliBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this LoginWebCliBody.
+        r"""Sets the password of this LoginWebCliBody.
 
         登录Redis密码
 

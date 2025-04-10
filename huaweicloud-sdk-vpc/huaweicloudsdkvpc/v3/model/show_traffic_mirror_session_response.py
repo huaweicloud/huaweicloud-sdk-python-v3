@@ -28,7 +28,7 @@ class ShowTrafficMirrorSessionResponse(SdkResponse):
     }
 
     def __init__(self, traffic_mirror_session=None, request_id=None):
-        """ShowTrafficMirrorSessionResponse
+        r"""ShowTrafficMirrorSessionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTrafficMirrorSessionResponse(SdkResponse):
 
     @property
     def traffic_mirror_session(self):
-        """Gets the traffic_mirror_session of this ShowTrafficMirrorSessionResponse.
+        r"""Gets the traffic_mirror_session of this ShowTrafficMirrorSessionResponse.
 
         :return: The traffic_mirror_session of this ShowTrafficMirrorSessionResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.TrafficMirrorSession`
@@ -60,7 +60,7 @@ class ShowTrafficMirrorSessionResponse(SdkResponse):
 
     @traffic_mirror_session.setter
     def traffic_mirror_session(self, traffic_mirror_session):
-        """Sets the traffic_mirror_session of this ShowTrafficMirrorSessionResponse.
+        r"""Sets the traffic_mirror_session of this ShowTrafficMirrorSessionResponse.
 
         :param traffic_mirror_session: The traffic_mirror_session of this ShowTrafficMirrorSessionResponse.
         :type traffic_mirror_session: :class:`huaweicloudsdkvpc.v3.TrafficMirrorSession`
@@ -69,7 +69,7 @@ class ShowTrafficMirrorSessionResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowTrafficMirrorSessionResponse.
+        r"""Gets the request_id of this ShowTrafficMirrorSessionResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class ShowTrafficMirrorSessionResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowTrafficMirrorSessionResponse.
+        r"""Sets the request_id of this ShowTrafficMirrorSessionResponse.
 
         请求ID
 

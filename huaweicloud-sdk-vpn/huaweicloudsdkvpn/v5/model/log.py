@@ -27,7 +27,7 @@ class Log:
     }
 
     def __init__(self, time=None, raw_message=None):
-        """Log
+        r"""Log
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Log:
 
     @property
     def time(self):
-        """Gets the time of this Log.
+        r"""Gets the time of this Log.
 
         时间戳
 
@@ -61,7 +61,7 @@ class Log:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this Log.
+        r"""Sets the time of this Log.
 
         时间戳
 
@@ -72,7 +72,7 @@ class Log:
 
     @property
     def raw_message(self):
-        """Gets the raw_message of this Log.
+        r"""Gets the raw_message of this Log.
 
         日志信息
 
@@ -83,7 +83,7 @@ class Log:
 
     @raw_message.setter
     def raw_message(self, raw_message):
-        """Sets the raw_message of this Log.
+        r"""Sets the raw_message of this Log.
 
         日志信息
 

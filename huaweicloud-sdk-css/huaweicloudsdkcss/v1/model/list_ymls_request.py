@@ -25,7 +25,7 @@ class ListYmlsRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ListYmlsRequest
+        r"""ListYmlsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListYmlsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListYmlsRequest.
+        r"""Gets the cluster_id of this ListYmlsRequest.
 
         指定查询集群ID。
 
@@ -53,7 +53,7 @@ class ListYmlsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListYmlsRequest.
+        r"""Sets the cluster_id of this ListYmlsRequest.
 
         指定查询集群ID。
 

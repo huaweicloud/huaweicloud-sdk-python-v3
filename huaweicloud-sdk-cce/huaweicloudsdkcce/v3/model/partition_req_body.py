@@ -31,7 +31,7 @@ class PartitionReqBody:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None):
-        """PartitionReqBody
+        r"""PartitionReqBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PartitionReqBody:
 
     @property
     def kind(self):
-        """Gets the kind of this PartitionReqBody.
+        r"""Gets the kind of this PartitionReqBody.
 
         资源类型
 
@@ -75,7 +75,7 @@ class PartitionReqBody:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this PartitionReqBody.
+        r"""Sets the kind of this PartitionReqBody.
 
         资源类型
 
@@ -86,7 +86,7 @@ class PartitionReqBody:
 
     @property
     def api_version(self):
-        """Gets the api_version of this PartitionReqBody.
+        r"""Gets the api_version of this PartitionReqBody.
 
         API版本
 
@@ -97,7 +97,7 @@ class PartitionReqBody:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this PartitionReqBody.
+        r"""Sets the api_version of this PartitionReqBody.
 
         API版本
 
@@ -108,7 +108,7 @@ class PartitionReqBody:
 
     @property
     def metadata(self):
-        """Gets the metadata of this PartitionReqBody.
+        r"""Gets the metadata of this PartitionReqBody.
 
         :return: The metadata of this PartitionReqBody.
         :rtype: :class:`huaweicloudsdkcce.v3.PartitionReqBodyMetadata`
@@ -117,7 +117,7 @@ class PartitionReqBody:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this PartitionReqBody.
+        r"""Sets the metadata of this PartitionReqBody.
 
         :param metadata: The metadata of this PartitionReqBody.
         :type metadata: :class:`huaweicloudsdkcce.v3.PartitionReqBodyMetadata`
@@ -126,7 +126,7 @@ class PartitionReqBody:
 
     @property
     def spec(self):
-        """Gets the spec of this PartitionReqBody.
+        r"""Gets the spec of this PartitionReqBody.
 
         :return: The spec of this PartitionReqBody.
         :rtype: :class:`huaweicloudsdkcce.v3.PartitionSpec`
@@ -135,7 +135,7 @@ class PartitionReqBody:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this PartitionReqBody.
+        r"""Sets the spec of this PartitionReqBody.
 
         :param spec: The spec of this PartitionReqBody.
         :type spec: :class:`huaweicloudsdkcce.v3.PartitionSpec`

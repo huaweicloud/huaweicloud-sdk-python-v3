@@ -39,7 +39,7 @@ class SqlRuleResponseRules:
     }
 
     def __init__(self, id=None, name=None, status=None, risk_level=None, type=None, rank=None, feature=None, regex=None):
-        """SqlRuleResponseRules
+        r"""SqlRuleResponseRules
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class SqlRuleResponseRules:
 
     @property
     def id(self):
-        """Gets the id of this SqlRuleResponseRules.
+        r"""Gets the id of this SqlRuleResponseRules.
 
         SQL规则ID
 
@@ -103,7 +103,7 @@ class SqlRuleResponseRules:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SqlRuleResponseRules.
+        r"""Sets the id of this SqlRuleResponseRules.
 
         SQL规则ID
 
@@ -114,7 +114,7 @@ class SqlRuleResponseRules:
 
     @property
     def name(self):
-        """Gets the name of this SqlRuleResponseRules.
+        r"""Gets the name of this SqlRuleResponseRules.
 
         SQL规则名称
 
@@ -125,7 +125,7 @@ class SqlRuleResponseRules:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SqlRuleResponseRules.
+        r"""Sets the name of this SqlRuleResponseRules.
 
         SQL规则名称
 
@@ -136,7 +136,7 @@ class SqlRuleResponseRules:
 
     @property
     def status(self):
-        """Gets the status of this SqlRuleResponseRules.
+        r"""Gets the status of this SqlRuleResponseRules.
 
         规则的状态： - ON - OFF
 
@@ -147,7 +147,7 @@ class SqlRuleResponseRules:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SqlRuleResponseRules.
+        r"""Sets the status of this SqlRuleResponseRules.
 
         规则的状态： - ON - OFF
 
@@ -158,7 +158,7 @@ class SqlRuleResponseRules:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this SqlRuleResponseRules.
+        r"""Gets the risk_level of this SqlRuleResponseRules.
 
         风险级别 - HIGH - MEDIUM - LOW
 
@@ -169,7 +169,7 @@ class SqlRuleResponseRules:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this SqlRuleResponseRules.
+        r"""Sets the risk_level of this SqlRuleResponseRules.
 
         风险级别 - HIGH - MEDIUM - LOW
 
@@ -180,7 +180,7 @@ class SqlRuleResponseRules:
 
     @property
     def type(self):
-        """Gets the type of this SqlRuleResponseRules.
+        r"""Gets the type of this SqlRuleResponseRules.
 
         风险类型
 
@@ -191,7 +191,7 @@ class SqlRuleResponseRules:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SqlRuleResponseRules.
+        r"""Sets the type of this SqlRuleResponseRules.
 
         风险类型
 
@@ -202,7 +202,7 @@ class SqlRuleResponseRules:
 
     @property
     def rank(self):
-        """Gets the rank of this SqlRuleResponseRules.
+        r"""Gets the rank of this SqlRuleResponseRules.
 
         优先级。数字越小优先级越高。
 
@@ -213,7 +213,7 @@ class SqlRuleResponseRules:
 
     @rank.setter
     def rank(self, rank):
-        """Sets the rank of this SqlRuleResponseRules.
+        r"""Sets the rank of this SqlRuleResponseRules.
 
         优先级。数字越小优先级越高。
 
@@ -224,7 +224,7 @@ class SqlRuleResponseRules:
 
     @property
     def feature(self):
-        """Gets the feature of this SqlRuleResponseRules.
+        r"""Gets the feature of this SqlRuleResponseRules.
 
         SQL命令特征
 
@@ -235,7 +235,7 @@ class SqlRuleResponseRules:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this SqlRuleResponseRules.
+        r"""Sets the feature of this SqlRuleResponseRules.
 
         SQL命令特征
 
@@ -246,7 +246,7 @@ class SqlRuleResponseRules:
 
     @property
     def regex(self):
-        """Gets the regex of this SqlRuleResponseRules.
+        r"""Gets the regex of this SqlRuleResponseRules.
 
         正则表达式
 
@@ -257,7 +257,7 @@ class SqlRuleResponseRules:
 
     @regex.setter
     def regex(self, regex):
-        """Sets the regex of this SqlRuleResponseRules.
+        r"""Sets the regex of this SqlRuleResponseRules.
 
         正则表达式
 

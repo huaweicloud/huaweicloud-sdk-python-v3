@@ -35,7 +35,7 @@ class Channel:
     }
 
     def __init__(self, name=None, description=None, create_time=None, consensus=None, peers=None, consensus_nodes=None):
-        """Channel
+        r"""Channel
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Channel:
 
     @property
     def name(self):
-        """Gets the name of this Channel.
+        r"""Gets the name of this Channel.
 
         通道名
 
@@ -89,7 +89,7 @@ class Channel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Channel.
+        r"""Sets the name of this Channel.
 
         通道名
 
@@ -100,7 +100,7 @@ class Channel:
 
     @property
     def description(self):
-        """Gets the description of this Channel.
+        r"""Gets the description of this Channel.
 
         通道细节描述
 
@@ -111,7 +111,7 @@ class Channel:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Channel.
+        r"""Sets the description of this Channel.
 
         通道细节描述
 
@@ -122,7 +122,7 @@ class Channel:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Channel.
+        r"""Gets the create_time of this Channel.
 
         通道创建时间
 
@@ -133,7 +133,7 @@ class Channel:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Channel.
+        r"""Sets the create_time of this Channel.
 
         通道创建时间
 
@@ -144,7 +144,7 @@ class Channel:
 
     @property
     def consensus(self):
-        """Gets the consensus of this Channel.
+        r"""Gets the consensus of this Channel.
 
         共识策略
 
@@ -155,7 +155,7 @@ class Channel:
 
     @consensus.setter
     def consensus(self, consensus):
-        """Sets the consensus of this Channel.
+        r"""Sets the consensus of this Channel.
 
         共识策略
 
@@ -166,7 +166,7 @@ class Channel:
 
     @property
     def peers(self):
-        """Gets the peers of this Channel.
+        r"""Gets the peers of this Channel.
 
         key:组织名，value:节点名称列表
 
@@ -177,7 +177,7 @@ class Channel:
 
     @peers.setter
     def peers(self, peers):
-        """Sets the peers of this Channel.
+        r"""Sets the peers of this Channel.
 
         key:组织名，value:节点名称列表
 
@@ -188,7 +188,7 @@ class Channel:
 
     @property
     def consensus_nodes(self):
-        """Gets the consensus_nodes of this Channel.
+        r"""Gets the consensus_nodes of this Channel.
 
         key:组织名，value:节点名称列表
 
@@ -199,7 +199,7 @@ class Channel:
 
     @consensus_nodes.setter
     def consensus_nodes(self, consensus_nodes):
-        """Sets the consensus_nodes of this Channel.
+        r"""Sets the consensus_nodes of this Channel.
 
         key:组织名，value:节点名称列表
 

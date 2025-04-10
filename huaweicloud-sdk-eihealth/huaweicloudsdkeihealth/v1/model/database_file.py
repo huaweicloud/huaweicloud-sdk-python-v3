@@ -29,7 +29,7 @@ class DatabaseFile:
     }
 
     def __init__(self, source=None, url=None, eihealth_project_id=None):
-        """DatabaseFile
+        r"""DatabaseFile
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DatabaseFile:
 
     @property
     def source(self):
-        """Gets the source of this DatabaseFile.
+        r"""Gets the source of this DatabaseFile.
 
         :return: The source of this DatabaseFile.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DatabaseFileSource`
@@ -64,7 +64,7 @@ class DatabaseFile:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this DatabaseFile.
+        r"""Sets the source of this DatabaseFile.
 
         :param source: The source of this DatabaseFile.
         :type source: :class:`huaweicloudsdkeihealth.v1.DatabaseFileSource`
@@ -73,7 +73,7 @@ class DatabaseFile:
 
     @property
     def url(self):
-        """Gets the url of this DatabaseFile.
+        r"""Gets the url of this DatabaseFile.
 
         文件URL，用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -84,7 +84,7 @@ class DatabaseFile:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this DatabaseFile.
+        r"""Sets the url of this DatabaseFile.
 
         文件URL，用户私有数据中心为项目路径、公共数据场景为obs地址
 
@@ -95,7 +95,7 @@ class DatabaseFile:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this DatabaseFile.
+        r"""Gets the eihealth_project_id of this DatabaseFile.
 
         数据库文件所在项目id，仅文件为数据中心时填写
 
@@ -106,7 +106,7 @@ class DatabaseFile:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this DatabaseFile.
+        r"""Sets the eihealth_project_id of this DatabaseFile.
 
         数据库文件所在项目id，仅文件为数据中心时填写
 

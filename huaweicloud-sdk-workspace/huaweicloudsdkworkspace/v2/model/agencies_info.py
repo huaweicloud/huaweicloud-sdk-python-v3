@@ -27,7 +27,7 @@ class AgenciesInfo:
     }
 
     def __init__(self, name=None, permissions=None):
-        """AgenciesInfo
+        r"""AgenciesInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AgenciesInfo:
 
     @property
     def name(self):
-        """Gets the name of this AgenciesInfo.
+        r"""Gets the name of this AgenciesInfo.
 
         名称
 
@@ -61,7 +61,7 @@ class AgenciesInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgenciesInfo.
+        r"""Sets the name of this AgenciesInfo.
 
         名称
 
@@ -72,7 +72,7 @@ class AgenciesInfo:
 
     @property
     def permissions(self):
-        """Gets the permissions of this AgenciesInfo.
+        r"""Gets the permissions of this AgenciesInfo.
 
         委托权限信息
 
@@ -83,7 +83,7 @@ class AgenciesInfo:
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this AgenciesInfo.
+        r"""Sets the permissions of this AgenciesInfo.
 
         委托权限信息
 

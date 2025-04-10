@@ -28,7 +28,7 @@ class CreateDigitalAssetResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, x_request_id=None):
-        """CreateDigitalAssetResponse
+        r"""CreateDigitalAssetResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateDigitalAssetResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this CreateDigitalAssetResponse.
+        r"""Gets the asset_id of this CreateDigitalAssetResponse.
 
         数字资产ID。
 
@@ -62,7 +62,7 @@ class CreateDigitalAssetResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this CreateDigitalAssetResponse.
+        r"""Sets the asset_id of this CreateDigitalAssetResponse.
 
         数字资产ID。
 
@@ -73,7 +73,7 @@ class CreateDigitalAssetResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateDigitalAssetResponse.
+        r"""Gets the x_request_id of this CreateDigitalAssetResponse.
 
         :return: The x_request_id of this CreateDigitalAssetResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateDigitalAssetResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateDigitalAssetResponse.
+        r"""Sets the x_request_id of this CreateDigitalAssetResponse.
 
         :param x_request_id: The x_request_id of this CreateDigitalAssetResponse.
         :type x_request_id: str

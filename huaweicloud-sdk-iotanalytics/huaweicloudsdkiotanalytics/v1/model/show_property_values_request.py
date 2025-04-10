@@ -27,7 +27,7 @@ class ShowPropertyValuesRequest:
     }
 
     def __init__(self, data_store_id=None, body=None):
-        """ShowPropertyValuesRequest
+        r"""ShowPropertyValuesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowPropertyValuesRequest:
 
     @property
     def data_store_id(self):
-        """Gets the data_store_id of this ShowPropertyValuesRequest.
+        r"""Gets the data_store_id of this ShowPropertyValuesRequest.
 
         存储ID
 
@@ -60,7 +60,7 @@ class ShowPropertyValuesRequest:
 
     @data_store_id.setter
     def data_store_id(self, data_store_id):
-        """Sets the data_store_id of this ShowPropertyValuesRequest.
+        r"""Sets the data_store_id of this ShowPropertyValuesRequest.
 
         存储ID
 
@@ -71,7 +71,7 @@ class ShowPropertyValuesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowPropertyValuesRequest.
+        r"""Gets the body of this ShowPropertyValuesRequest.
 
         :return: The body of this ShowPropertyValuesRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.GetPropertyRequest`
@@ -80,7 +80,7 @@ class ShowPropertyValuesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowPropertyValuesRequest.
+        r"""Sets the body of this ShowPropertyValuesRequest.
 
         :param body: The body of this ShowPropertyValuesRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.GetPropertyRequest`

@@ -31,7 +31,7 @@ class BatchPauseScalingPoliciesOption:
     }
 
     def __init__(self, scaling_policy_id=None, force_delete=None, action=None, delete_alarm=None):
-        """BatchPauseScalingPoliciesOption
+        r"""BatchPauseScalingPoliciesOption
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class BatchPauseScalingPoliciesOption:
 
     @property
     def scaling_policy_id(self):
-        """Gets the scaling_policy_id of this BatchPauseScalingPoliciesOption.
+        r"""Gets the scaling_policy_id of this BatchPauseScalingPoliciesOption.
 
         伸缩策略ID。
 
@@ -73,7 +73,7 @@ class BatchPauseScalingPoliciesOption:
 
     @scaling_policy_id.setter
     def scaling_policy_id(self, scaling_policy_id):
-        """Sets the scaling_policy_id of this BatchPauseScalingPoliciesOption.
+        r"""Sets the scaling_policy_id of this BatchPauseScalingPoliciesOption.
 
         伸缩策略ID。
 
@@ -84,7 +84,7 @@ class BatchPauseScalingPoliciesOption:
 
     @property
     def force_delete(self):
-        """Gets the force_delete of this BatchPauseScalingPoliciesOption.
+        r"""Gets the force_delete of this BatchPauseScalingPoliciesOption.
 
         是否强制删除伸缩策略。默认为no，可选值为yes或no。只有action为delete时，该字段才生效。
 
@@ -95,7 +95,7 @@ class BatchPauseScalingPoliciesOption:
 
     @force_delete.setter
     def force_delete(self, force_delete):
-        """Sets the force_delete of this BatchPauseScalingPoliciesOption.
+        r"""Sets the force_delete of this BatchPauseScalingPoliciesOption.
 
         是否强制删除伸缩策略。默认为no，可选值为yes或no。只有action为delete时，该字段才生效。
 
@@ -106,7 +106,7 @@ class BatchPauseScalingPoliciesOption:
 
     @property
     def action(self):
-        """Gets the action of this BatchPauseScalingPoliciesOption.
+        r"""Gets the action of this BatchPauseScalingPoliciesOption.
 
         批量操作伸缩策略action标识：删除：delete。启用：resume。停止：pause。
 
@@ -117,7 +117,7 @@ class BatchPauseScalingPoliciesOption:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchPauseScalingPoliciesOption.
+        r"""Sets the action of this BatchPauseScalingPoliciesOption.
 
         批量操作伸缩策略action标识：删除：delete。启用：resume。停止：pause。
 
@@ -128,7 +128,7 @@ class BatchPauseScalingPoliciesOption:
 
     @property
     def delete_alarm(self):
-        """Gets the delete_alarm of this BatchPauseScalingPoliciesOption.
+        r"""Gets the delete_alarm of this BatchPauseScalingPoliciesOption.
 
         是否删除告警策略使用的告警规则。可选值为yes或no，默认为no。 只有action为delete时，该字段才生效。
 
@@ -139,7 +139,7 @@ class BatchPauseScalingPoliciesOption:
 
     @delete_alarm.setter
     def delete_alarm(self, delete_alarm):
-        """Sets the delete_alarm of this BatchPauseScalingPoliciesOption.
+        r"""Sets the delete_alarm of this BatchPauseScalingPoliciesOption.
 
         是否删除告警策略使用的告警规则。可选值为yes或no，默认为no。 只有action为delete时，该字段才生效。
 

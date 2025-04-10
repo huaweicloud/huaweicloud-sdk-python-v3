@@ -27,7 +27,7 @@ class ResizeVolumeRequest:
     }
 
     def __init__(self, volume_id=None, body=None):
-        """ResizeVolumeRequest
+        r"""ResizeVolumeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResizeVolumeRequest:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this ResizeVolumeRequest.
+        r"""Gets the volume_id of this ResizeVolumeRequest.
 
         云硬盘ID。
 
@@ -60,7 +60,7 @@ class ResizeVolumeRequest:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this ResizeVolumeRequest.
+        r"""Sets the volume_id of this ResizeVolumeRequest.
 
         云硬盘ID。
 
@@ -71,7 +71,7 @@ class ResizeVolumeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResizeVolumeRequest.
+        r"""Gets the body of this ResizeVolumeRequest.
 
         :return: The body of this ResizeVolumeRequest.
         :rtype: :class:`huaweicloudsdkevs.v2.ResizeVolumeRequestBody`
@@ -80,7 +80,7 @@ class ResizeVolumeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResizeVolumeRequest.
+        r"""Sets the body of this ResizeVolumeRequest.
 
         :param body: The body of this ResizeVolumeRequest.
         :type body: :class:`huaweicloudsdkevs.v2.ResizeVolumeRequestBody`

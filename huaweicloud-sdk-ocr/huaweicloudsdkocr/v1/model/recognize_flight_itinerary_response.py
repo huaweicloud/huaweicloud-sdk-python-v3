@@ -28,7 +28,7 @@ class RecognizeFlightItineraryResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeFlightItineraryResponse
+        r"""RecognizeFlightItineraryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeFlightItineraryResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeFlightItineraryResponse.
+        r"""Gets the result of this RecognizeFlightItineraryResponse.
 
         :return: The result of this RecognizeFlightItineraryResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.FlightItineraryResult`
@@ -60,7 +60,7 @@ class RecognizeFlightItineraryResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeFlightItineraryResponse.
+        r"""Sets the result of this RecognizeFlightItineraryResponse.
 
         :param result: The result of this RecognizeFlightItineraryResponse.
         :type result: :class:`huaweicloudsdkocr.v1.FlightItineraryResult`
@@ -69,7 +69,7 @@ class RecognizeFlightItineraryResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeFlightItineraryResponse.
+        r"""Gets the x_request_id of this RecognizeFlightItineraryResponse.
 
         :return: The x_request_id of this RecognizeFlightItineraryResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeFlightItineraryResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeFlightItineraryResponse.
+        r"""Sets the x_request_id of this RecognizeFlightItineraryResponse.
 
         :param x_request_id: The x_request_id of this RecognizeFlightItineraryResponse.
         :type x_request_id: str

@@ -27,7 +27,7 @@ class HttpPolicyBindHost:
     }
 
     def __init__(self, id=None, hostname=None):
-        """HttpPolicyBindHost
+        r"""HttpPolicyBindHost
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HttpPolicyBindHost:
 
     @property
     def id(self):
-        """Gets the id of this HttpPolicyBindHost.
+        r"""Gets the id of this HttpPolicyBindHost.
 
         域名ID
 
@@ -61,7 +61,7 @@ class HttpPolicyBindHost:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HttpPolicyBindHost.
+        r"""Sets the id of this HttpPolicyBindHost.
 
         域名ID
 
@@ -72,7 +72,7 @@ class HttpPolicyBindHost:
 
     @property
     def hostname(self):
-        """Gets the hostname of this HttpPolicyBindHost.
+        r"""Gets the hostname of this HttpPolicyBindHost.
 
         域名
 
@@ -83,7 +83,7 @@ class HttpPolicyBindHost:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this HttpPolicyBindHost.
+        r"""Sets the hostname of this HttpPolicyBindHost.
 
         域名
 

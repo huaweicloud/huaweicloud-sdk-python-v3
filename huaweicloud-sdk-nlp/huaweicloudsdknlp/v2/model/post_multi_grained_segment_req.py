@@ -29,7 +29,7 @@ class PostMultiGrainedSegmentReq:
     }
 
     def __init__(self, text=None, lang=None, granularity=None):
-        """PostMultiGrainedSegmentReq
+        r"""PostMultiGrainedSegmentReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class PostMultiGrainedSegmentReq:
 
     @property
     def text(self):
-        """Gets the text of this PostMultiGrainedSegmentReq.
+        r"""Gets the text of this PostMultiGrainedSegmentReq.
 
         待分词文本，长度为1~64，文本编码为UTF-8。
 
@@ -67,7 +67,7 @@ class PostMultiGrainedSegmentReq:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this PostMultiGrainedSegmentReq.
+        r"""Sets the text of this PostMultiGrainedSegmentReq.
 
         待分词文本，长度为1~64，文本编码为UTF-8。
 
@@ -78,7 +78,7 @@ class PostMultiGrainedSegmentReq:
 
     @property
     def lang(self):
-        """Gets the lang of this PostMultiGrainedSegmentReq.
+        r"""Gets the lang of this PostMultiGrainedSegmentReq.
 
         支持的文本语言类型，目前只支持中文，默认为zh。
 
@@ -89,7 +89,7 @@ class PostMultiGrainedSegmentReq:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this PostMultiGrainedSegmentReq.
+        r"""Sets the lang of this PostMultiGrainedSegmentReq.
 
         支持的文本语言类型，目前只支持中文，默认为zh。
 
@@ -100,7 +100,7 @@ class PostMultiGrainedSegmentReq:
 
     @property
     def granularity(self):
-        """Gets the granularity of this PostMultiGrainedSegmentReq.
+        r"""Gets the granularity of this PostMultiGrainedSegmentReq.
 
         分词粒度，1为最细粒度，2为最粗粒度，其它情况默认返回全部粒度分词树结果。
 
@@ -111,7 +111,7 @@ class PostMultiGrainedSegmentReq:
 
     @granularity.setter
     def granularity(self, granularity):
-        """Sets the granularity of this PostMultiGrainedSegmentReq.
+        r"""Sets the granularity of this PostMultiGrainedSegmentReq.
 
         分词粒度，1为最细粒度，2为最粗粒度，其它情况默认返回全部粒度分词树结果。
 

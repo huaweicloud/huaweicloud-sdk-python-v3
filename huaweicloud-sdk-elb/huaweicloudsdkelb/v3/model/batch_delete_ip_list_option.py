@@ -25,7 +25,7 @@ class BatchDeleteIpListOption:
     }
 
     def __init__(self, ip_list=None):
-        """BatchDeleteIpListOption
+        r"""BatchDeleteIpListOption
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteIpListOption:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this BatchDeleteIpListOption.
+        r"""Gets the ip_list of this BatchDeleteIpListOption.
 
         参数解释：IP列表。
 
@@ -54,7 +54,7 @@ class BatchDeleteIpListOption:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this BatchDeleteIpListOption.
+        r"""Sets the ip_list of this BatchDeleteIpListOption.
 
         参数解释：IP列表。
 

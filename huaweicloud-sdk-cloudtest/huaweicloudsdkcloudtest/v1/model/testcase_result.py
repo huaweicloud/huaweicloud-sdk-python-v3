@@ -41,7 +41,7 @@ class TestcaseResult:
     }
 
     def __init__(self, execute_result_id=None, execute_status=None, failure_cause=None, task_id=None, plan_id=None, start_time=None, end_time=None, executor_id=None, executor_name=None):
-        """TestcaseResult
+        r"""TestcaseResult
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class TestcaseResult:
 
     @property
     def execute_result_id(self):
-        """Gets the execute_result_id of this TestcaseResult.
+        r"""Gets the execute_result_id of this TestcaseResult.
 
         结果
 
@@ -110,7 +110,7 @@ class TestcaseResult:
 
     @execute_result_id.setter
     def execute_result_id(self, execute_result_id):
-        """Sets the execute_result_id of this TestcaseResult.
+        r"""Sets the execute_result_id of this TestcaseResult.
 
         结果
 
@@ -121,7 +121,7 @@ class TestcaseResult:
 
     @property
     def execute_status(self):
-        """Gets the execute_status of this TestcaseResult.
+        r"""Gets the execute_status of this TestcaseResult.
 
         测试用例状态
 
@@ -132,7 +132,7 @@ class TestcaseResult:
 
     @execute_status.setter
     def execute_status(self, execute_status):
-        """Sets the execute_status of this TestcaseResult.
+        r"""Sets the execute_status of this TestcaseResult.
 
         测试用例状态
 
@@ -143,7 +143,7 @@ class TestcaseResult:
 
     @property
     def failure_cause(self):
-        """Gets the failure_cause of this TestcaseResult.
+        r"""Gets the failure_cause of this TestcaseResult.
 
         失败原因
 
@@ -154,7 +154,7 @@ class TestcaseResult:
 
     @failure_cause.setter
     def failure_cause(self, failure_cause):
-        """Sets the failure_cause of this TestcaseResult.
+        r"""Sets the failure_cause of this TestcaseResult.
 
         失败原因
 
@@ -165,7 +165,7 @@ class TestcaseResult:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TestcaseResult.
+        r"""Gets the task_id of this TestcaseResult.
 
         任务id
 
@@ -176,7 +176,7 @@ class TestcaseResult:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TestcaseResult.
+        r"""Sets the task_id of this TestcaseResult.
 
         任务id
 
@@ -187,7 +187,7 @@ class TestcaseResult:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this TestcaseResult.
+        r"""Gets the plan_id of this TestcaseResult.
 
         测试计划id
 
@@ -198,7 +198,7 @@ class TestcaseResult:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this TestcaseResult.
+        r"""Sets the plan_id of this TestcaseResult.
 
         测试计划id
 
@@ -209,7 +209,7 @@ class TestcaseResult:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TestcaseResult.
+        r"""Gets the start_time of this TestcaseResult.
 
         开始时间
 
@@ -220,7 +220,7 @@ class TestcaseResult:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TestcaseResult.
+        r"""Sets the start_time of this TestcaseResult.
 
         开始时间
 
@@ -231,7 +231,7 @@ class TestcaseResult:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TestcaseResult.
+        r"""Gets the end_time of this TestcaseResult.
 
         结束时间
 
@@ -242,7 +242,7 @@ class TestcaseResult:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TestcaseResult.
+        r"""Sets the end_time of this TestcaseResult.
 
         结束时间
 
@@ -253,7 +253,7 @@ class TestcaseResult:
 
     @property
     def executor_id(self):
-        """Gets the executor_id of this TestcaseResult.
+        r"""Gets the executor_id of this TestcaseResult.
 
         执行测试用例用户id
 
@@ -264,7 +264,7 @@ class TestcaseResult:
 
     @executor_id.setter
     def executor_id(self, executor_id):
-        """Sets the executor_id of this TestcaseResult.
+        r"""Sets the executor_id of this TestcaseResult.
 
         执行测试用例用户id
 
@@ -275,7 +275,7 @@ class TestcaseResult:
 
     @property
     def executor_name(self):
-        """Gets the executor_name of this TestcaseResult.
+        r"""Gets the executor_name of this TestcaseResult.
 
         执行测试用例用户name
 
@@ -286,7 +286,7 @@ class TestcaseResult:
 
     @executor_name.setter
     def executor_name(self, executor_name):
-        """Sets the executor_name of this TestcaseResult.
+        r"""Sets the executor_name of this TestcaseResult.
 
         执行测试用例用户name
 

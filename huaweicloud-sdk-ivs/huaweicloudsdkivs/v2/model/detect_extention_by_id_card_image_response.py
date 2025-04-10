@@ -30,7 +30,7 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
     }
 
     def __init__(self, meta=None, result=None, x_request_id=None):
-        """DetectExtentionByIdCardImageResponse
+        r"""DetectExtentionByIdCardImageResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
 
     @property
     def meta(self):
-        """Gets the meta of this DetectExtentionByIdCardImageResponse.
+        r"""Gets the meta of this DetectExtentionByIdCardImageResponse.
 
         :return: The meta of this DetectExtentionByIdCardImageResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.Meta`
@@ -67,7 +67,7 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
 
     @meta.setter
     def meta(self, meta):
-        """Sets the meta of this DetectExtentionByIdCardImageResponse.
+        r"""Sets the meta of this DetectExtentionByIdCardImageResponse.
 
         :param meta: The meta of this DetectExtentionByIdCardImageResponse.
         :type meta: :class:`huaweicloudsdkivs.v2.Meta`
@@ -76,7 +76,7 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DetectExtentionByIdCardImageResponse.
+        r"""Gets the result of this DetectExtentionByIdCardImageResponse.
 
         :return: The result of this DetectExtentionByIdCardImageResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsExtentionByIdCardImageResponseBodyResult`
@@ -85,7 +85,7 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DetectExtentionByIdCardImageResponse.
+        r"""Sets the result of this DetectExtentionByIdCardImageResponse.
 
         :param result: The result of this DetectExtentionByIdCardImageResponse.
         :type result: :class:`huaweicloudsdkivs.v2.IvsExtentionByIdCardImageResponseBodyResult`
@@ -94,7 +94,7 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DetectExtentionByIdCardImageResponse.
+        r"""Gets the x_request_id of this DetectExtentionByIdCardImageResponse.
 
         :return: The x_request_id of this DetectExtentionByIdCardImageResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class DetectExtentionByIdCardImageResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DetectExtentionByIdCardImageResponse.
+        r"""Sets the x_request_id of this DetectExtentionByIdCardImageResponse.
 
         :param x_request_id: The x_request_id of this DetectExtentionByIdCardImageResponse.
         :type x_request_id: str

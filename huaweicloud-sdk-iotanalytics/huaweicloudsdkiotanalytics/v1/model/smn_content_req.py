@@ -29,7 +29,7 @@ class SmnContentReq:
     }
 
     def __init__(self, project_id=None, ak=None, sk=None):
-        """SmnContentReq
+        r"""SmnContentReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SmnContentReq:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SmnContentReq.
+        r"""Gets the project_id of this SmnContentReq.
 
         项目id
 
@@ -65,7 +65,7 @@ class SmnContentReq:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SmnContentReq.
+        r"""Sets the project_id of this SmnContentReq.
 
         项目id
 
@@ -76,7 +76,7 @@ class SmnContentReq:
 
     @property
     def ak(self):
-        """Gets the ak of this SmnContentReq.
+        r"""Gets the ak of this SmnContentReq.
 
         租户的AK
 
@@ -87,7 +87,7 @@ class SmnContentReq:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this SmnContentReq.
+        r"""Sets the ak of this SmnContentReq.
 
         租户的AK
 
@@ -98,7 +98,7 @@ class SmnContentReq:
 
     @property
     def sk(self):
-        """Gets the sk of this SmnContentReq.
+        r"""Gets the sk of this SmnContentReq.
 
         租户的SK
 
@@ -109,7 +109,7 @@ class SmnContentReq:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this SmnContentReq.
+        r"""Sets the sk of this SmnContentReq.
 
         租户的SK
 

@@ -29,7 +29,7 @@ class RelationType:
     }
 
     def __init__(self):
-        """RelationType
+        r"""RelationType
 
         The model defined in huaweicloud sdk
 

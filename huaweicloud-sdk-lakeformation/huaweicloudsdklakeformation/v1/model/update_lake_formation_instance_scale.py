@@ -25,7 +25,7 @@ class UpdateLakeFormationInstanceScale:
     }
 
     def __init__(self, specs=None):
-        """UpdateLakeFormationInstanceScale
+        r"""UpdateLakeFormationInstanceScale
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateLakeFormationInstanceScale:
 
     @property
     def specs(self):
-        """Gets the specs of this UpdateLakeFormationInstanceScale.
+        r"""Gets the specs of this UpdateLakeFormationInstanceScale.
 
         规格列表
 
@@ -54,7 +54,7 @@ class UpdateLakeFormationInstanceScale:
 
     @specs.setter
     def specs(self, specs):
-        """Sets the specs of this UpdateLakeFormationInstanceScale.
+        r"""Sets the specs of this UpdateLakeFormationInstanceScale.
 
         规格列表
 

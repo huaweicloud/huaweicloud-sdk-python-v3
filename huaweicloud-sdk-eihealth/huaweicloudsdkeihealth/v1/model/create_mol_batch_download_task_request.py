@@ -27,7 +27,7 @@ class CreateMolBatchDownloadTaskRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateMolBatchDownloadTaskRequest
+        r"""CreateMolBatchDownloadTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateMolBatchDownloadTaskRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateMolBatchDownloadTaskRequest.
+        r"""Gets the eihealth_project_id of this CreateMolBatchDownloadTaskRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class CreateMolBatchDownloadTaskRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateMolBatchDownloadTaskRequest.
+        r"""Sets the eihealth_project_id of this CreateMolBatchDownloadTaskRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class CreateMolBatchDownloadTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMolBatchDownloadTaskRequest.
+        r"""Gets the body of this CreateMolBatchDownloadTaskRequest.
 
         :return: The body of this CreateMolBatchDownloadTaskRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateMolBatchDownloadTaskReq`
@@ -80,7 +80,7 @@ class CreateMolBatchDownloadTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMolBatchDownloadTaskRequest.
+        r"""Sets the body of this CreateMolBatchDownloadTaskRequest.
 
         :param body: The body of this CreateMolBatchDownloadTaskRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateMolBatchDownloadTaskReq`

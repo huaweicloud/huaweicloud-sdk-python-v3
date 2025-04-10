@@ -29,7 +29,7 @@ class PermissionApprovalDetailDTOProposers:
     }
 
     def __init__(self, id=None, name=None, type=None):
-        """PermissionApprovalDetailDTOProposers
+        r"""PermissionApprovalDetailDTOProposers
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PermissionApprovalDetailDTOProposers:
 
     @property
     def id(self):
-        """Gets the id of this PermissionApprovalDetailDTOProposers.
+        r"""Gets the id of this PermissionApprovalDetailDTOProposers.
 
         申请人id
 
@@ -68,7 +68,7 @@ class PermissionApprovalDetailDTOProposers:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PermissionApprovalDetailDTOProposers.
+        r"""Sets the id of this PermissionApprovalDetailDTOProposers.
 
         申请人id
 
@@ -79,7 +79,7 @@ class PermissionApprovalDetailDTOProposers:
 
     @property
     def name(self):
-        """Gets the name of this PermissionApprovalDetailDTOProposers.
+        r"""Gets the name of this PermissionApprovalDetailDTOProposers.
 
         申请人名称
 
@@ -90,7 +90,7 @@ class PermissionApprovalDetailDTOProposers:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PermissionApprovalDetailDTOProposers.
+        r"""Sets the name of this PermissionApprovalDetailDTOProposers.
 
         申请人名称
 
@@ -101,7 +101,7 @@ class PermissionApprovalDetailDTOProposers:
 
     @property
     def type(self):
-        """Gets the type of this PermissionApprovalDetailDTOProposers.
+        r"""Gets the type of this PermissionApprovalDetailDTOProposers.
 
         申请人类型,USER,USER_GROUP,ROLE,WORKSPACE_ACCOUNT
 
@@ -112,7 +112,7 @@ class PermissionApprovalDetailDTOProposers:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PermissionApprovalDetailDTOProposers.
+        r"""Sets the type of this PermissionApprovalDetailDTOProposers.
 
         申请人类型,USER,USER_GROUP,ROLE,WORKSPACE_ACCOUNT
 

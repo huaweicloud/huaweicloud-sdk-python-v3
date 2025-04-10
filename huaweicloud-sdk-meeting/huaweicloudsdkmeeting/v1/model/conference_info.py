@@ -119,7 +119,7 @@ class ConferenceInfo:
     }
 
     def __init__(self, conference_id=None, subject=None, size=None, time_zone_id=None, start_time=None, end_time=None, media_types=None, conference_state=None, language=None, access_number=None, password_entry=None, user_uuid=None, scheduser_name=None, conference_type=None, conf_type=None, cycle_params=None, is_auto_mute=None, is_auto_record=None, chair_join_uri=None, guest_join_uri=None, audience_join_uri=None, record_type=None, aux_address=None, live_address=None, record_aux_stream=None, record_auth_type=None, live_url=None, conf_config_info=None, vmr_flag=None, is_has_record_file=None, vmr_conference_id=None, conf_uuid=None, part_attendee_info=None, terminl_count=None, normal_count=None, dept_name=None, vmr_id=None, role=None, webinar=None, online_attendee_amount=None, multi_stream_flag=None, conf_mode=None, schedule_vmr=None, concurrent_participants=None, support_simultaneous_interpretation=None, pic_display=None, sub_confs=None, cycle_sub_conf_id=None):
-        """ConferenceInfo
+        r"""ConferenceInfo
 
         The model defined in huaweicloud sdk
 
@@ -372,7 +372,7 @@ class ConferenceInfo:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this ConferenceInfo.
+        r"""Gets the conference_id of this ConferenceInfo.
 
         会议ID。
 
@@ -383,7 +383,7 @@ class ConferenceInfo:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this ConferenceInfo.
+        r"""Sets the conference_id of this ConferenceInfo.
 
         会议ID。
 
@@ -394,7 +394,7 @@ class ConferenceInfo:
 
     @property
     def subject(self):
-        """Gets the subject of this ConferenceInfo.
+        r"""Gets the subject of this ConferenceInfo.
 
         会议主题。
 
@@ -405,7 +405,7 @@ class ConferenceInfo:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this ConferenceInfo.
+        r"""Sets the subject of this ConferenceInfo.
 
         会议主题。
 
@@ -416,7 +416,7 @@ class ConferenceInfo:
 
     @property
     def size(self):
-        """Gets the size of this ConferenceInfo.
+        r"""Gets the size of this ConferenceInfo.
 
         会议预约时添加的会议者数量。
 
@@ -427,7 +427,7 @@ class ConferenceInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ConferenceInfo.
+        r"""Sets the size of this ConferenceInfo.
 
         会议预约时添加的会议者数量。
 
@@ -438,7 +438,7 @@ class ConferenceInfo:
 
     @property
     def time_zone_id(self):
-        """Gets the time_zone_id of this ConferenceInfo.
+        r"""Gets the time_zone_id of this ConferenceInfo.
 
         会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。
 
@@ -449,7 +449,7 @@ class ConferenceInfo:
 
     @time_zone_id.setter
     def time_zone_id(self, time_zone_id):
-        """Sets the time_zone_id of this ConferenceInfo.
+        r"""Sets the time_zone_id of this ConferenceInfo.
 
         会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。
 
@@ -460,7 +460,7 @@ class ConferenceInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ConferenceInfo.
+        r"""Gets the start_time of this ConferenceInfo.
 
         会议起始时间 (YYYY-MM-DD HH:MM )。
 
@@ -471,7 +471,7 @@ class ConferenceInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ConferenceInfo.
+        r"""Sets the start_time of this ConferenceInfo.
 
         会议起始时间 (YYYY-MM-DD HH:MM )。
 
@@ -482,7 +482,7 @@ class ConferenceInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ConferenceInfo.
+        r"""Gets the end_time of this ConferenceInfo.
 
         会议结束时间 (YYYY-MM-DD HH:MM )。
 
@@ -493,7 +493,7 @@ class ConferenceInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ConferenceInfo.
+        r"""Sets the end_time of this ConferenceInfo.
 
         会议结束时间 (YYYY-MM-DD HH:MM )。
 
@@ -504,7 +504,7 @@ class ConferenceInfo:
 
     @property
     def media_types(self):
-        """Gets the media_types of this ConferenceInfo.
+        r"""Gets the media_types of this ConferenceInfo.
 
         会议的媒体类型。 由1个或多个枚举String组成，多个枚举时，每个枚举值之间通过”,”逗号分隔。 - Voice: 语音 - Video: 标清视频 - HDVideo: 高清视频 - Data: 数据
 
@@ -515,7 +515,7 @@ class ConferenceInfo:
 
     @media_types.setter
     def media_types(self, media_types):
-        """Sets the media_types of this ConferenceInfo.
+        r"""Sets the media_types of this ConferenceInfo.
 
         会议的媒体类型。 由1个或多个枚举String组成，多个枚举时，每个枚举值之间通过”,”逗号分隔。 - Voice: 语音 - Video: 标清视频 - HDVideo: 高清视频 - Data: 数据
 
@@ -526,7 +526,7 @@ class ConferenceInfo:
 
     @property
     def conference_state(self):
-        """Gets the conference_state of this ConferenceInfo.
+        r"""Gets the conference_state of this ConferenceInfo.
 
         会议状态。 - Schedule: 预定状态 - Creating: 正在创建状态 - Created: 会议已经被创建，并正在召开 - Destroyed: 会议已经关闭
 
@@ -537,7 +537,7 @@ class ConferenceInfo:
 
     @conference_state.setter
     def conference_state(self, conference_state):
-        """Sets the conference_state of this ConferenceInfo.
+        r"""Sets the conference_state of this ConferenceInfo.
 
         会议状态。 - Schedule: 预定状态 - Creating: 正在创建状态 - Created: 会议已经被创建，并正在召开 - Destroyed: 会议已经关闭
 
@@ -548,7 +548,7 @@ class ConferenceInfo:
 
     @property
     def language(self):
-        """Gets the language of this ConferenceInfo.
+        r"""Gets the language of this ConferenceInfo.
 
         会议通知短信或邮件的语言。默认中文。 * zh-CN：中文 * en-US：英文 
 
@@ -559,7 +559,7 @@ class ConferenceInfo:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ConferenceInfo.
+        r"""Sets the language of this ConferenceInfo.
 
         会议通知短信或邮件的语言。默认中文。 * zh-CN：中文 * en-US：英文 
 
@@ -570,7 +570,7 @@ class ConferenceInfo:
 
     @property
     def access_number(self):
-        """Gets the access_number of this ConferenceInfo.
+        r"""Gets the access_number of this ConferenceInfo.
 
         会议接入的SIP号码。
 
@@ -581,7 +581,7 @@ class ConferenceInfo:
 
     @access_number.setter
     def access_number(self, access_number):
-        """Sets the access_number of this ConferenceInfo.
+        r"""Sets the access_number of this ConferenceInfo.
 
         会议接入的SIP号码。
 
@@ -592,7 +592,7 @@ class ConferenceInfo:
 
     @property
     def password_entry(self):
-        """Gets the password_entry of this ConferenceInfo.
+        r"""Gets the password_entry of this ConferenceInfo.
 
         会议密码。 > * 创建会议时，返回主持人密码和来宾密码 > * 主持人查询会议时，返回主持人密码和来宾密码来 > * 宾查询会议时，返回来宾密码
 
@@ -603,7 +603,7 @@ class ConferenceInfo:
 
     @password_entry.setter
     def password_entry(self, password_entry):
-        """Sets the password_entry of this ConferenceInfo.
+        r"""Sets the password_entry of this ConferenceInfo.
 
         会议密码。 > * 创建会议时，返回主持人密码和来宾密码 > * 主持人查询会议时，返回主持人密码和来宾密码来 > * 宾查询会议时，返回来宾密码
 
@@ -614,7 +614,7 @@ class ConferenceInfo:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this ConferenceInfo.
+        r"""Gets the user_uuid of this ConferenceInfo.
 
         会议预订者的用户UUID。
 
@@ -625,7 +625,7 @@ class ConferenceInfo:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this ConferenceInfo.
+        r"""Sets the user_uuid of this ConferenceInfo.
 
         会议预订者的用户UUID。
 
@@ -636,7 +636,7 @@ class ConferenceInfo:
 
     @property
     def scheduser_name(self):
-        """Gets the scheduser_name of this ConferenceInfo.
+        r"""Gets the scheduser_name of this ConferenceInfo.
 
         会议预订者名称。
 
@@ -647,7 +647,7 @@ class ConferenceInfo:
 
     @scheduser_name.setter
     def scheduser_name(self, scheduser_name):
-        """Sets the scheduser_name of this ConferenceInfo.
+        r"""Sets the scheduser_name of this ConferenceInfo.
 
         会议预订者名称。
 
@@ -658,7 +658,7 @@ class ConferenceInfo:
 
     @property
     def conference_type(self):
-        """Gets the conference_type of this ConferenceInfo.
+        r"""Gets the conference_type of this ConferenceInfo.
 
         会议类型。 - 0: 普通会议 - 2: 周期性会议
 
@@ -669,7 +669,7 @@ class ConferenceInfo:
 
     @conference_type.setter
     def conference_type(self, conference_type):
-        """Sets the conference_type of this ConferenceInfo.
+        r"""Sets the conference_type of this ConferenceInfo.
 
         会议类型。 - 0: 普通会议 - 2: 周期性会议
 
@@ -680,7 +680,7 @@ class ConferenceInfo:
 
     @property
     def conf_type(self):
-        """Gets the conf_type of this ConferenceInfo.
+        r"""Gets the conf_type of this ConferenceInfo.
 
         会议类型。 - FUTURE：将来开始的会议（创建时） - IMMEDIATELY：立即开始的会议（创建时） - CYCLE：周期会议
 
@@ -691,7 +691,7 @@ class ConferenceInfo:
 
     @conf_type.setter
     def conf_type(self, conf_type):
-        """Sets the conf_type of this ConferenceInfo.
+        r"""Sets the conf_type of this ConferenceInfo.
 
         会议类型。 - FUTURE：将来开始的会议（创建时） - IMMEDIATELY：立即开始的会议（创建时） - CYCLE：周期会议
 
@@ -702,7 +702,7 @@ class ConferenceInfo:
 
     @property
     def cycle_params(self):
-        """Gets the cycle_params of this ConferenceInfo.
+        r"""Gets the cycle_params of this ConferenceInfo.
 
         :return: The cycle_params of this ConferenceInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CycleParams`
@@ -711,7 +711,7 @@ class ConferenceInfo:
 
     @cycle_params.setter
     def cycle_params(self, cycle_params):
-        """Sets the cycle_params of this ConferenceInfo.
+        r"""Sets the cycle_params of this ConferenceInfo.
 
         :param cycle_params: The cycle_params of this ConferenceInfo.
         :type cycle_params: :class:`huaweicloudsdkmeeting.v1.CycleParams`
@@ -720,7 +720,7 @@ class ConferenceInfo:
 
     @property
     def is_auto_mute(self):
-        """Gets the is_auto_mute of this ConferenceInfo.
+        r"""Gets the is_auto_mute of this ConferenceInfo.
 
         是否入会自动静音。 - 0: 不自动静音 - 1: 自动静音
 
@@ -731,7 +731,7 @@ class ConferenceInfo:
 
     @is_auto_mute.setter
     def is_auto_mute(self, is_auto_mute):
-        """Sets the is_auto_mute of this ConferenceInfo.
+        r"""Sets the is_auto_mute of this ConferenceInfo.
 
         是否入会自动静音。 - 0: 不自动静音 - 1: 自动静音
 
@@ -742,7 +742,7 @@ class ConferenceInfo:
 
     @property
     def is_auto_record(self):
-        """Gets the is_auto_record of this ConferenceInfo.
+        r"""Gets the is_auto_record of this ConferenceInfo.
 
         是否自动开启云录制。 - 0: 不自动启动 - 1: 自动启动
 
@@ -753,7 +753,7 @@ class ConferenceInfo:
 
     @is_auto_record.setter
     def is_auto_record(self, is_auto_record):
-        """Sets the is_auto_record of this ConferenceInfo.
+        r"""Sets the is_auto_record of this ConferenceInfo.
 
         是否自动开启云录制。 - 0: 不自动启动 - 1: 自动启动
 
@@ -764,7 +764,7 @@ class ConferenceInfo:
 
     @property
     def chair_join_uri(self):
-        """Gets the chair_join_uri of this ConferenceInfo.
+        r"""Gets the chair_join_uri of this ConferenceInfo.
 
         主持人会议链接地址。
 
@@ -775,7 +775,7 @@ class ConferenceInfo:
 
     @chair_join_uri.setter
     def chair_join_uri(self, chair_join_uri):
-        """Sets the chair_join_uri of this ConferenceInfo.
+        r"""Sets the chair_join_uri of this ConferenceInfo.
 
         主持人会议链接地址。
 
@@ -786,7 +786,7 @@ class ConferenceInfo:
 
     @property
     def guest_join_uri(self):
-        """Gets the guest_join_uri of this ConferenceInfo.
+        r"""Gets the guest_join_uri of this ConferenceInfo.
 
         普通与会者会议链接地址。
 
@@ -797,7 +797,7 @@ class ConferenceInfo:
 
     @guest_join_uri.setter
     def guest_join_uri(self, guest_join_uri):
-        """Sets the guest_join_uri of this ConferenceInfo.
+        r"""Sets the guest_join_uri of this ConferenceInfo.
 
         普通与会者会议链接地址。
 
@@ -808,7 +808,7 @@ class ConferenceInfo:
 
     @property
     def audience_join_uri(self):
-        """Gets the audience_join_uri of this ConferenceInfo.
+        r"""Gets the audience_join_uri of this ConferenceInfo.
 
         网络研讨会观众会议链接地址。
 
@@ -819,7 +819,7 @@ class ConferenceInfo:
 
     @audience_join_uri.setter
     def audience_join_uri(self, audience_join_uri):
-        """Sets the audience_join_uri of this ConferenceInfo.
+        r"""Sets the audience_join_uri of this ConferenceInfo.
 
         网络研讨会观众会议链接地址。
 
@@ -830,7 +830,7 @@ class ConferenceInfo:
 
     @property
     def record_type(self):
-        """Gets the record_type of this ConferenceInfo.
+        r"""Gets the record_type of this ConferenceInfo.
 
         录播类型。 - 0: 禁用 - 1: 直播 - 2: 录播 - 3: 直播+录播
 
@@ -841,7 +841,7 @@ class ConferenceInfo:
 
     @record_type.setter
     def record_type(self, record_type):
-        """Sets the record_type of this ConferenceInfo.
+        r"""Sets the record_type of this ConferenceInfo.
 
         录播类型。 - 0: 禁用 - 1: 直播 - 2: 录播 - 3: 直播+录播
 
@@ -852,7 +852,7 @@ class ConferenceInfo:
 
     @property
     def aux_address(self):
-        """Gets the aux_address of this ConferenceInfo.
+        r"""Gets the aux_address of this ConferenceInfo.
 
         辅流直播推流地址。
 
@@ -863,7 +863,7 @@ class ConferenceInfo:
 
     @aux_address.setter
     def aux_address(self, aux_address):
-        """Sets the aux_address of this ConferenceInfo.
+        r"""Sets the aux_address of this ConferenceInfo.
 
         辅流直播推流地址。
 
@@ -874,7 +874,7 @@ class ConferenceInfo:
 
     @property
     def live_address(self):
-        """Gets the live_address of this ConferenceInfo.
+        r"""Gets the live_address of this ConferenceInfo.
 
         主流直播推流地址。
 
@@ -885,7 +885,7 @@ class ConferenceInfo:
 
     @live_address.setter
     def live_address(self, live_address):
-        """Sets the live_address of this ConferenceInfo.
+        r"""Sets the live_address of this ConferenceInfo.
 
         主流直播推流地址。
 
@@ -896,7 +896,7 @@ class ConferenceInfo:
 
     @property
     def record_aux_stream(self):
-        """Gets the record_aux_stream of this ConferenceInfo.
+        r"""Gets the record_aux_stream of this ConferenceInfo.
 
         是否录制辅流。  - 0: 否  - 1: 是
 
@@ -907,7 +907,7 @@ class ConferenceInfo:
 
     @record_aux_stream.setter
     def record_aux_stream(self, record_aux_stream):
-        """Sets the record_aux_stream of this ConferenceInfo.
+        r"""Sets the record_aux_stream of this ConferenceInfo.
 
         是否录制辅流。  - 0: 否  - 1: 是
 
@@ -918,7 +918,7 @@ class ConferenceInfo:
 
     @property
     def record_auth_type(self):
-        """Gets the record_auth_type of this ConferenceInfo.
+        r"""Gets the record_auth_type of this ConferenceInfo.
 
         观看/下载录播的鉴权方式。  - 0: 可通过链接观看/下载  - 1: 企业用户可观看/下载  - 2: 与会者可观看/下载
 
@@ -929,7 +929,7 @@ class ConferenceInfo:
 
     @record_auth_type.setter
     def record_auth_type(self, record_auth_type):
-        """Sets the record_auth_type of this ConferenceInfo.
+        r"""Sets the record_auth_type of this ConferenceInfo.
 
         观看/下载录播的鉴权方式。  - 0: 可通过链接观看/下载  - 1: 企业用户可观看/下载  - 2: 与会者可观看/下载
 
@@ -940,7 +940,7 @@ class ConferenceInfo:
 
     @property
     def live_url(self):
-        """Gets the live_url of this ConferenceInfo.
+        r"""Gets the live_url of this ConferenceInfo.
 
         直播观看地址。
 
@@ -951,7 +951,7 @@ class ConferenceInfo:
 
     @live_url.setter
     def live_url(self, live_url):
-        """Sets the live_url of this ConferenceInfo.
+        r"""Sets the live_url of this ConferenceInfo.
 
         直播观看地址。
 
@@ -962,7 +962,7 @@ class ConferenceInfo:
 
     @property
     def conf_config_info(self):
-        """Gets the conf_config_info of this ConferenceInfo.
+        r"""Gets the conf_config_info of this ConferenceInfo.
 
         :return: The conf_config_info of this ConferenceInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestConfConfigDTO`
@@ -971,7 +971,7 @@ class ConferenceInfo:
 
     @conf_config_info.setter
     def conf_config_info(self, conf_config_info):
-        """Sets the conf_config_info of this ConferenceInfo.
+        r"""Sets the conf_config_info of this ConferenceInfo.
 
         :param conf_config_info: The conf_config_info of this ConferenceInfo.
         :type conf_config_info: :class:`huaweicloudsdkmeeting.v1.RestConfConfigDTO`
@@ -980,7 +980,7 @@ class ConferenceInfo:
 
     @property
     def vmr_flag(self):
-        """Gets the vmr_flag of this ConferenceInfo.
+        r"""Gets the vmr_flag of this ConferenceInfo.
 
         是否使用云会议室或个人会议ID召开预约会议。 - 0: 不使用云会议室或个人会议ID - 1: 使用云会议室或个人会议ID
 
@@ -991,7 +991,7 @@ class ConferenceInfo:
 
     @vmr_flag.setter
     def vmr_flag(self, vmr_flag):
-        """Sets the vmr_flag of this ConferenceInfo.
+        r"""Sets the vmr_flag of this ConferenceInfo.
 
         是否使用云会议室或个人会议ID召开预约会议。 - 0: 不使用云会议室或个人会议ID - 1: 使用云会议室或个人会议ID
 
@@ -1002,7 +1002,7 @@ class ConferenceInfo:
 
     @property
     def is_has_record_file(self):
-        """Gets the is_has_record_file of this ConferenceInfo.
+        r"""Gets the is_has_record_file of this ConferenceInfo.
 
         是否有会议录制文件。仅历史会议查询时返回。 - true: 有录制文件 - false: 没有录制文件
 
@@ -1013,7 +1013,7 @@ class ConferenceInfo:
 
     @is_has_record_file.setter
     def is_has_record_file(self, is_has_record_file):
-        """Sets the is_has_record_file of this ConferenceInfo.
+        r"""Sets the is_has_record_file of this ConferenceInfo.
 
         是否有会议录制文件。仅历史会议查询时返回。 - true: 有录制文件 - false: 没有录制文件
 
@@ -1024,7 +1024,7 @@ class ConferenceInfo:
 
     @property
     def vmr_conference_id(self):
-        """Gets the vmr_conference_id of this ConferenceInfo.
+        r"""Gets the vmr_conference_id of this ConferenceInfo.
 
         云会议室会议ID或个人会议ID，如果vmrFlag为\"1\"，则该字段不为空。
 
@@ -1035,7 +1035,7 @@ class ConferenceInfo:
 
     @vmr_conference_id.setter
     def vmr_conference_id(self, vmr_conference_id):
-        """Sets the vmr_conference_id of this ConferenceInfo.
+        r"""Sets the vmr_conference_id of this ConferenceInfo.
 
         云会议室会议ID或个人会议ID，如果vmrFlag为\"1\"，则该字段不为空。
 
@@ -1046,7 +1046,7 @@ class ConferenceInfo:
 
     @property
     def conf_uuid(self):
-        """Gets the conf_uuid of this ConferenceInfo.
+        r"""Gets the conf_uuid of this ConferenceInfo.
 
         会议的UUID。 > * 只有创建立即开始的会议才返回UUID，如果是预约未来的会议，不会返回UUID > * 可以通过[[查询历史会议列表](https://support.huaweicloud.com/api-meeting/meeting_21_0051.html)](tag:hws)[[查询历史会议列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0051.html)](tag:hk)获取历史会议的UUID 
 
@@ -1057,7 +1057,7 @@ class ConferenceInfo:
 
     @conf_uuid.setter
     def conf_uuid(self, conf_uuid):
-        """Sets the conf_uuid of this ConferenceInfo.
+        r"""Sets the conf_uuid of this ConferenceInfo.
 
         会议的UUID。 > * 只有创建立即开始的会议才返回UUID，如果是预约未来的会议，不会返回UUID > * 可以通过[[查询历史会议列表](https://support.huaweicloud.com/api-meeting/meeting_21_0051.html)](tag:hws)[[查询历史会议列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0051.html)](tag:hk)获取历史会议的UUID 
 
@@ -1068,7 +1068,7 @@ class ConferenceInfo:
 
     @property
     def part_attendee_info(self):
-        """Gets the part_attendee_info of this ConferenceInfo.
+        r"""Gets the part_attendee_info of this ConferenceInfo.
 
         被邀请的部分与会者信息。 > * 只返回被邀请的前20条软终端与会者信息和前20条硬终端与会者信息 > * 不返回会中主动加入的与会者信息 > * “[[查询会议列表](https://support.huaweicloud.com/api-meeting/meeting_21_0017.html)](tag:hws)[[查询会议列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0017.html)](tag:hk)”和“[[查询会议详情](https://support.huaweicloud.com/api-meeting/meeting_21_0018.html)](tag:hws)[[查询会议详情](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0018.html)](tag:hk)”接口，返回预约会议时邀请的与会者和会中主持人邀请的与会者 > * “[[查询在线会议列表](https://support.huaweicloud.com/api-meeting/meeting_21_0025.html)](tag:hws)[[查询在线会议列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0025.html)](tag:hk)”、“[[查询在线会议详情](https://support.huaweicloud.com/api-meeting/meeting_21_0026.html)](tag:hws)[[查询在线会议详情](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0026.html)](tag:hk)”、“[[查询历史会议列表](https://support.huaweicloud.com/api-meeting/meeting_21_0051.html)](tag:hws)[[查询历史会议列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0051.html)](tag:hk)”和“[[查询历史会议详情](https://support.huaweicloud.com/api-meeting/meeting_21_0052.html)](tag:hws)[[查询历史会议详情](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0052.html)](tag:hk)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ”接口返回预约会议时邀请的与会者。不返回会中主持人邀请的与会者 
 
@@ -1079,7 +1079,7 @@ class ConferenceInfo:
 
     @part_attendee_info.setter
     def part_attendee_info(self, part_attendee_info):
-        """Sets the part_attendee_info of this ConferenceInfo.
+        r"""Sets the part_attendee_info of this ConferenceInfo.
 
         被邀请的部分与会者信息。 > * 只返回被邀请的前20条软终端与会者信息和前20条硬终端与会者信息 > * 不返回会中主动加入的与会者信息 > * “[[查询会议列表](https://support.huaweicloud.com/api-meeting/meeting_21_0017.html)](tag:hws)[[查询会议列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0017.html)](tag:hk)”和“[[查询会议详情](https://support.huaweicloud.com/api-meeting/meeting_21_0018.html)](tag:hws)[[查询会议详情](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0018.html)](tag:hk)”接口，返回预约会议时邀请的与会者和会中主持人邀请的与会者 > * “[[查询在线会议列表](https://support.huaweicloud.com/api-meeting/meeting_21_0025.html)](tag:hws)[[查询在线会议列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0025.html)](tag:hk)”、“[[查询在线会议详情](https://support.huaweicloud.com/api-meeting/meeting_21_0026.html)](tag:hws)[[查询在线会议详情](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0026.html)](tag:hk)”、“[[查询历史会议列表](https://support.huaweicloud.com/api-meeting/meeting_21_0051.html)](tag:hws)[[查询历史会议列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0051.html)](tag:hk)”和“[[查询历史会议详情](https://support.huaweicloud.com/api-meeting/meeting_21_0052.html)](tag:hws)[[查询历史会议详情](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0052.html)](tag:hk)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ”接口返回预约会议时邀请的与会者。不返回会中主持人邀请的与会者 
 
@@ -1090,7 +1090,7 @@ class ConferenceInfo:
 
     @property
     def terminl_count(self):
-        """Gets the terminl_count of this ConferenceInfo.
+        r"""Gets the terminl_count of this ConferenceInfo.
 
         硬终端个数，如IdeaHub，TE30等。
 
@@ -1101,7 +1101,7 @@ class ConferenceInfo:
 
     @terminl_count.setter
     def terminl_count(self, terminl_count):
-        """Sets the terminl_count of this ConferenceInfo.
+        r"""Sets the terminl_count of this ConferenceInfo.
 
         硬终端个数，如IdeaHub，TE30等。
 
@@ -1112,7 +1112,7 @@ class ConferenceInfo:
 
     @property
     def normal_count(self):
-        """Gets the normal_count of this ConferenceInfo.
+        r"""Gets the normal_count of this ConferenceInfo.
 
         软终端个数，如PC端、手机端App等。
 
@@ -1123,7 +1123,7 @@ class ConferenceInfo:
 
     @normal_count.setter
     def normal_count(self, normal_count):
-        """Sets the normal_count of this ConferenceInfo.
+        r"""Sets the normal_count of this ConferenceInfo.
 
         软终端个数，如PC端、手机端App等。
 
@@ -1134,7 +1134,7 @@ class ConferenceInfo:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this ConferenceInfo.
+        r"""Gets the dept_name of this ConferenceInfo.
 
         会议预定者的企业名称。
 
@@ -1145,7 +1145,7 @@ class ConferenceInfo:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this ConferenceInfo.
+        r"""Sets the dept_name of this ConferenceInfo.
 
         会议预定者的企业名称。
 
@@ -1156,7 +1156,7 @@ class ConferenceInfo:
 
     @property
     def vmr_id(self):
-        """Gets the vmr_id of this ConferenceInfo.
+        r"""Gets the vmr_id of this ConferenceInfo.
 
         云会议室的ID。
 
@@ -1167,7 +1167,7 @@ class ConferenceInfo:
 
     @vmr_id.setter
     def vmr_id(self, vmr_id):
-        """Sets the vmr_id of this ConferenceInfo.
+        r"""Sets the vmr_id of this ConferenceInfo.
 
         云会议室的ID。
 
@@ -1178,7 +1178,7 @@ class ConferenceInfo:
 
     @property
     def role(self):
-        """Gets the role of this ConferenceInfo.
+        r"""Gets the role of this ConferenceInfo.
 
         与会者角色。 * chair ：主持人 * general ：来宾 * audience ： 观众 > * 仅在查询会议详情时返回 > * 返回查询者本身的角色 
 
@@ -1189,7 +1189,7 @@ class ConferenceInfo:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ConferenceInfo.
+        r"""Sets the role of this ConferenceInfo.
 
         与会者角色。 * chair ：主持人 * general ：来宾 * audience ： 观众 > * 仅在查询会议详情时返回 > * 返回查询者本身的角色 
 
@@ -1200,7 +1200,7 @@ class ConferenceInfo:
 
     @property
     def webinar(self):
-        """Gets the webinar of this ConferenceInfo.
+        r"""Gets the webinar of this ConferenceInfo.
 
         是否是网络研讨会。
 
@@ -1211,7 +1211,7 @@ class ConferenceInfo:
 
     @webinar.setter
     def webinar(self, webinar):
-        """Sets the webinar of this ConferenceInfo.
+        r"""Sets the webinar of this ConferenceInfo.
 
         是否是网络研讨会。
 
@@ -1222,7 +1222,7 @@ class ConferenceInfo:
 
     @property
     def online_attendee_amount(self):
-        """Gets the online_attendee_amount of this ConferenceInfo.
+        r"""Gets the online_attendee_amount of this ConferenceInfo.
 
         当前在线与会人数。包含被邀入会和主动入会的与会者。 > 仅在“[[查询在线会议列表](https://support.huaweicloud.com/api-meeting/meeting_21_0025.html)](tag:hws)[[查询在线会议列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0025.html)](tag:hk)”接口中返回。 
 
@@ -1233,7 +1233,7 @@ class ConferenceInfo:
 
     @online_attendee_amount.setter
     def online_attendee_amount(self, online_attendee_amount):
-        """Sets the online_attendee_amount of this ConferenceInfo.
+        r"""Sets the online_attendee_amount of this ConferenceInfo.
 
         当前在线与会人数。包含被邀入会和主动入会的与会者。 > 仅在“[[查询在线会议列表](https://support.huaweicloud.com/api-meeting/meeting_21_0025.html)](tag:hws)[[查询在线会议列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0025.html)](tag:hk)”接口中返回。 
 
@@ -1244,7 +1244,7 @@ class ConferenceInfo:
 
     @property
     def multi_stream_flag(self):
-        """Gets the multi_stream_flag of this ConferenceInfo.
+        r"""Gets the multi_stream_flag of this ConferenceInfo.
 
         标识是否为多流视频会议。 * 1：多流会议 
 
@@ -1255,7 +1255,7 @@ class ConferenceInfo:
 
     @multi_stream_flag.setter
     def multi_stream_flag(self, multi_stream_flag):
-        """Sets the multi_stream_flag of this ConferenceInfo.
+        r"""Sets the multi_stream_flag of this ConferenceInfo.
 
         标识是否为多流视频会议。 * 1：多流会议 
 
@@ -1266,7 +1266,7 @@ class ConferenceInfo:
 
     @property
     def conf_mode(self):
-        """Gets the conf_mode of this ConferenceInfo.
+        r"""Gets the conf_mode of this ConferenceInfo.
 
         会议类型模型。 * COMMON：MCU会议 * RTC：MMR会议 
 
@@ -1277,7 +1277,7 @@ class ConferenceInfo:
 
     @conf_mode.setter
     def conf_mode(self, conf_mode):
-        """Sets the conf_mode of this ConferenceInfo.
+        r"""Sets the conf_mode of this ConferenceInfo.
 
         会议类型模型。 * COMMON：MCU会议 * RTC：MMR会议 
 
@@ -1288,7 +1288,7 @@ class ConferenceInfo:
 
     @property
     def schedule_vmr(self):
-        """Gets the schedule_vmr of this ConferenceInfo.
+        r"""Gets the schedule_vmr of this ConferenceInfo.
 
         VMR预约记录。 true: VMR预约记录 false：普通会议 > 该参数将废弃，请勿使用。 
 
@@ -1299,7 +1299,7 @@ class ConferenceInfo:
 
     @schedule_vmr.setter
     def schedule_vmr(self, schedule_vmr):
-        """Sets the schedule_vmr of this ConferenceInfo.
+        r"""Sets the schedule_vmr of this ConferenceInfo.
 
         VMR预约记录。 true: VMR预约记录 false：普通会议 > 该参数将废弃，请勿使用。 
 
@@ -1310,7 +1310,7 @@ class ConferenceInfo:
 
     @property
     def concurrent_participants(self):
-        """Gets the concurrent_participants of this ConferenceInfo.
+        r"""Gets the concurrent_participants of this ConferenceInfo.
 
         会议最大与会人数。默认值0。 * 0：无限制 * 大于0：会议最大与会人数 
 
@@ -1321,7 +1321,7 @@ class ConferenceInfo:
 
     @concurrent_participants.setter
     def concurrent_participants(self, concurrent_participants):
-        """Sets the concurrent_participants of this ConferenceInfo.
+        r"""Sets the concurrent_participants of this ConferenceInfo.
 
         会议最大与会人数。默认值0。 * 0：无限制 * 大于0：会议最大与会人数 
 
@@ -1332,7 +1332,7 @@ class ConferenceInfo:
 
     @property
     def support_simultaneous_interpretation(self):
-        """Gets the support_simultaneous_interpretation of this ConferenceInfo.
+        r"""Gets the support_simultaneous_interpretation of this ConferenceInfo.
 
         会议是否支持同声传译。默认值false。 * true:支持 * false:不支持 
 
@@ -1343,7 +1343,7 @@ class ConferenceInfo:
 
     @support_simultaneous_interpretation.setter
     def support_simultaneous_interpretation(self, support_simultaneous_interpretation):
-        """Sets the support_simultaneous_interpretation of this ConferenceInfo.
+        r"""Sets the support_simultaneous_interpretation of this ConferenceInfo.
 
         会议是否支持同声传译。默认值false。 * true:支持 * false:不支持 
 
@@ -1354,7 +1354,7 @@ class ConferenceInfo:
 
     @property
     def pic_display(self):
-        """Gets the pic_display of this ConferenceInfo.
+        r"""Gets the pic_display of this ConferenceInfo.
 
         :return: The pic_display of this ConferenceInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.MultiPicDisplayDO`
@@ -1363,7 +1363,7 @@ class ConferenceInfo:
 
     @pic_display.setter
     def pic_display(self, pic_display):
-        """Sets the pic_display of this ConferenceInfo.
+        r"""Sets the pic_display of this ConferenceInfo.
 
         :param pic_display: The pic_display of this ConferenceInfo.
         :type pic_display: :class:`huaweicloudsdkmeeting.v1.MultiPicDisplayDO`
@@ -1372,7 +1372,7 @@ class ConferenceInfo:
 
     @property
     def sub_confs(self):
-        """Gets the sub_confs of this ConferenceInfo.
+        r"""Gets the sub_confs of this ConferenceInfo.
 
         周期子会议列表。
 
@@ -1383,7 +1383,7 @@ class ConferenceInfo:
 
     @sub_confs.setter
     def sub_confs(self, sub_confs):
-        """Sets the sub_confs of this ConferenceInfo.
+        r"""Sets the sub_confs of this ConferenceInfo.
 
         周期子会议列表。
 
@@ -1394,7 +1394,7 @@ class ConferenceInfo:
 
     @property
     def cycle_sub_conf_id(self):
-        """Gets the cycle_sub_conf_id of this ConferenceInfo.
+        r"""Gets the cycle_sub_conf_id of this ConferenceInfo.
 
         第一个周期子会议的UUID。
 
@@ -1405,7 +1405,7 @@ class ConferenceInfo:
 
     @cycle_sub_conf_id.setter
     def cycle_sub_conf_id(self, cycle_sub_conf_id):
-        """Sets the cycle_sub_conf_id of this ConferenceInfo.
+        r"""Sets the cycle_sub_conf_id of this ConferenceInfo.
 
         第一个周期子会议的UUID。
 

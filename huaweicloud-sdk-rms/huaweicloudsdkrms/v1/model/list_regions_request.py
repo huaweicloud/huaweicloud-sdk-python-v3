@@ -25,7 +25,7 @@ class ListRegionsRequest:
     }
 
     def __init__(self, x_language=None):
-        """ListRegionsRequest
+        r"""ListRegionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListRegionsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListRegionsRequest.
+        r"""Gets the x_language of this ListRegionsRequest.
 
         选择接口返回的信息的语言，默认为\"zh-cn\"中文
 
@@ -54,7 +54,7 @@ class ListRegionsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListRegionsRequest.
+        r"""Sets the x_language of this ListRegionsRequest.
 
         选择接口返回的信息的语言，默认为\"zh-cn\"中文
 

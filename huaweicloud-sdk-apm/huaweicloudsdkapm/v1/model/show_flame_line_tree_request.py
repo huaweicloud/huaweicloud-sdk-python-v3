@@ -25,7 +25,7 @@ class ShowFlameLineTreeRequest:
     }
 
     def __init__(self, body=None):
-        """ShowFlameLineTreeRequest
+        r"""ShowFlameLineTreeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowFlameLineTreeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowFlameLineTreeRequest.
+        r"""Gets the body of this ShowFlameLineTreeRequest.
 
         :return: The body of this ShowFlameLineTreeRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.FlameLineTreeInfo`
@@ -52,7 +52,7 @@ class ShowFlameLineTreeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowFlameLineTreeRequest.
+        r"""Sets the body of this ShowFlameLineTreeRequest.
 
         :param body: The body of this ShowFlameLineTreeRequest.
         :type body: :class:`huaweicloudsdkapm.v1.FlameLineTreeInfo`

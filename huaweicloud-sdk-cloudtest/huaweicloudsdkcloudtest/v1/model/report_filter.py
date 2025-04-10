@@ -45,7 +45,7 @@ class ReportFilter:
     }
 
     def __init__(self, creator_ids=None, owner_ids=None, ranks=None, release_ids=None, status=None, module_ids=None, results=None, label_ids=None, start_time=None, end_time=None, is_associate_issue=None):
-        """ReportFilter
+        r"""ReportFilter
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ReportFilter:
 
     @property
     def creator_ids(self):
-        """Gets the creator_ids of this ReportFilter.
+        r"""Gets the creator_ids of this ReportFilter.
 
         创建人
 
@@ -124,7 +124,7 @@ class ReportFilter:
 
     @creator_ids.setter
     def creator_ids(self, creator_ids):
-        """Sets the creator_ids of this ReportFilter.
+        r"""Sets the creator_ids of this ReportFilter.
 
         创建人
 
@@ -135,7 +135,7 @@ class ReportFilter:
 
     @property
     def owner_ids(self):
-        """Gets the owner_ids of this ReportFilter.
+        r"""Gets the owner_ids of this ReportFilter.
 
         所属人
 
@@ -146,7 +146,7 @@ class ReportFilter:
 
     @owner_ids.setter
     def owner_ids(self, owner_ids):
-        """Sets the owner_ids of this ReportFilter.
+        r"""Sets the owner_ids of this ReportFilter.
 
         所属人
 
@@ -157,7 +157,7 @@ class ReportFilter:
 
     @property
     def ranks(self):
-        """Gets the ranks of this ReportFilter.
+        r"""Gets the ranks of this ReportFilter.
 
         级别
 
@@ -168,7 +168,7 @@ class ReportFilter:
 
     @ranks.setter
     def ranks(self, ranks):
-        """Sets the ranks of this ReportFilter.
+        r"""Sets the ranks of this ReportFilter.
 
         级别
 
@@ -179,7 +179,7 @@ class ReportFilter:
 
     @property
     def release_ids(self):
-        """Gets the release_ids of this ReportFilter.
+        r"""Gets the release_ids of this ReportFilter.
 
         releaseId
 
@@ -190,7 +190,7 @@ class ReportFilter:
 
     @release_ids.setter
     def release_ids(self, release_ids):
-        """Sets the release_ids of this ReportFilter.
+        r"""Sets the release_ids of this ReportFilter.
 
         releaseId
 
@@ -201,7 +201,7 @@ class ReportFilter:
 
     @property
     def status(self):
-        """Gets the status of this ReportFilter.
+        r"""Gets the status of this ReportFilter.
 
         状态
 
@@ -212,7 +212,7 @@ class ReportFilter:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ReportFilter.
+        r"""Sets the status of this ReportFilter.
 
         状态
 
@@ -223,7 +223,7 @@ class ReportFilter:
 
     @property
     def module_ids(self):
-        """Gets the module_ids of this ReportFilter.
+        r"""Gets the module_ids of this ReportFilter.
 
         级别
 
@@ -234,7 +234,7 @@ class ReportFilter:
 
     @module_ids.setter
     def module_ids(self, module_ids):
-        """Sets the module_ids of this ReportFilter.
+        r"""Sets the module_ids of this ReportFilter.
 
         级别
 
@@ -245,7 +245,7 @@ class ReportFilter:
 
     @property
     def results(self):
-        """Gets the results of this ReportFilter.
+        r"""Gets the results of this ReportFilter.
 
         结果
 
@@ -256,7 +256,7 @@ class ReportFilter:
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ReportFilter.
+        r"""Sets the results of this ReportFilter.
 
         结果
 
@@ -267,7 +267,7 @@ class ReportFilter:
 
     @property
     def label_ids(self):
-        """Gets the label_ids of this ReportFilter.
+        r"""Gets the label_ids of this ReportFilter.
 
         标签
 
@@ -278,7 +278,7 @@ class ReportFilter:
 
     @label_ids.setter
     def label_ids(self, label_ids):
-        """Sets the label_ids of this ReportFilter.
+        r"""Sets the label_ids of this ReportFilter.
 
         标签
 
@@ -289,7 +289,7 @@ class ReportFilter:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ReportFilter.
+        r"""Gets the start_time of this ReportFilter.
 
         开始时间
 
@@ -300,7 +300,7 @@ class ReportFilter:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ReportFilter.
+        r"""Sets the start_time of this ReportFilter.
 
         开始时间
 
@@ -311,7 +311,7 @@ class ReportFilter:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ReportFilter.
+        r"""Gets the end_time of this ReportFilter.
 
         结束时间
 
@@ -322,7 +322,7 @@ class ReportFilter:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ReportFilter.
+        r"""Sets the end_time of this ReportFilter.
 
         结束时间
 
@@ -333,7 +333,7 @@ class ReportFilter:
 
     @property
     def is_associate_issue(self):
-        """Gets the is_associate_issue of this ReportFilter.
+        r"""Gets the is_associate_issue of this ReportFilter.
 
         是否关联需求
 
@@ -344,7 +344,7 @@ class ReportFilter:
 
     @is_associate_issue.setter
     def is_associate_issue(self, is_associate_issue):
-        """Sets the is_associate_issue of this ReportFilter.
+        r"""Sets the is_associate_issue of this ReportFilter.
 
         是否关联需求
 

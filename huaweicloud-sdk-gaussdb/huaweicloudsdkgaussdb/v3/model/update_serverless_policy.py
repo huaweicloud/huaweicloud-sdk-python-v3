@@ -27,7 +27,7 @@ class UpdateServerlessPolicy:
     }
 
     def __init__(self, min_vcpus=None, max_vcpus=None):
-        """UpdateServerlessPolicy
+        r"""UpdateServerlessPolicy
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateServerlessPolicy:
 
     @property
     def min_vcpus(self):
-        """Gets the min_vcpus of this UpdateServerlessPolicy.
+        r"""Gets the min_vcpus of this UpdateServerlessPolicy.
 
         单节点VCPUs伸缩下限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlFlavors.html)接口获取。
 
@@ -59,7 +59,7 @@ class UpdateServerlessPolicy:
 
     @min_vcpus.setter
     def min_vcpus(self, min_vcpus):
-        """Sets the min_vcpus of this UpdateServerlessPolicy.
+        r"""Sets the min_vcpus of this UpdateServerlessPolicy.
 
         单节点VCPUs伸缩下限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlFlavors.html)接口获取。
 
@@ -70,7 +70,7 @@ class UpdateServerlessPolicy:
 
     @property
     def max_vcpus(self):
-        """Gets the max_vcpus of this UpdateServerlessPolicy.
+        r"""Gets the max_vcpus of this UpdateServerlessPolicy.
 
         单节点VCPUs伸缩上限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlFlavors.html)接口获取。
 
@@ -81,7 +81,7 @@ class UpdateServerlessPolicy:
 
     @max_vcpus.setter
     def max_vcpus(self, max_vcpus):
-        """Sets the max_vcpus of this UpdateServerlessPolicy.
+        r"""Sets the max_vcpus of this UpdateServerlessPolicy.
 
         单节点VCPUs伸缩上限，取值范围可根据[查询数据库规格](https://support.huaweicloud.com/api-gaussdb/ShowGaussMySqlFlavors.html)接口获取。
 

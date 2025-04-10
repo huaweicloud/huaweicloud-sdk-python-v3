@@ -29,7 +29,7 @@ class CreateDatabaseRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CreateDatabaseRequest
+        r"""CreateDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateDatabaseRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateDatabaseRequest.
+        r"""Gets the x_language of this CreateDatabaseRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class CreateDatabaseRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateDatabaseRequest.
+        r"""Sets the x_language of this CreateDatabaseRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class CreateDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateDatabaseRequest.
+        r"""Gets the instance_id of this CreateDatabaseRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class CreateDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateDatabaseRequest.
+        r"""Sets the instance_id of this CreateDatabaseRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class CreateDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDatabaseRequest.
+        r"""Gets the body of this CreateDatabaseRequest.
 
         :return: The body of this CreateDatabaseRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenDatabaseForCreation`
@@ -109,7 +109,7 @@ class CreateDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDatabaseRequest.
+        r"""Sets the body of this CreateDatabaseRequest.
 
         :param body: The body of this CreateDatabaseRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenDatabaseForCreation`

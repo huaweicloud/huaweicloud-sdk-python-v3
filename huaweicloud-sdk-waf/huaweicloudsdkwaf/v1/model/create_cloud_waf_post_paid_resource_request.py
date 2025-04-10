@@ -29,7 +29,7 @@ class CreateCloudWafPostPaidResourceRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, body=None):
-        """CreateCloudWafPostPaidResourceRequest
+        r"""CreateCloudWafPostPaidResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateCloudWafPostPaidResourceRequest:
 
     @property
     def region(self):
-        """Gets the region of this CreateCloudWafPostPaidResourceRequest.
+        r"""Gets the region of this CreateCloudWafPostPaidResourceRequest.
 
         区域id
 
@@ -67,7 +67,7 @@ class CreateCloudWafPostPaidResourceRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreateCloudWafPostPaidResourceRequest.
+        r"""Sets the region of this CreateCloudWafPostPaidResourceRequest.
 
         区域id
 
@@ -78,7 +78,7 @@ class CreateCloudWafPostPaidResourceRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateCloudWafPostPaidResourceRequest.
+        r"""Gets the enterprise_project_id of this CreateCloudWafPostPaidResourceRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -89,7 +89,7 @@ class CreateCloudWafPostPaidResourceRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateCloudWafPostPaidResourceRequest.
+        r"""Sets the enterprise_project_id of this CreateCloudWafPostPaidResourceRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -100,7 +100,7 @@ class CreateCloudWafPostPaidResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCloudWafPostPaidResourceRequest.
+        r"""Gets the body of this CreateCloudWafPostPaidResourceRequest.
 
         :return: The body of this CreateCloudWafPostPaidResourceRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateCloudWafPostPaidResourceRequestbody`
@@ -109,7 +109,7 @@ class CreateCloudWafPostPaidResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCloudWafPostPaidResourceRequest.
+        r"""Sets the body of this CreateCloudWafPostPaidResourceRequest.
 
         :param body: The body of this CreateCloudWafPostPaidResourceRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreateCloudWafPostPaidResourceRequestbody`

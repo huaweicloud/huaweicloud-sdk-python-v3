@@ -35,7 +35,7 @@ class ActiveControlRspDTO:
     }
 
     def __init__(self, control_type=None, control_id=None, priority=None, value=None, end_time=None, create_time=None):
-        """ActiveControlRspDTO
+        r"""ActiveControlRspDTO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ActiveControlRspDTO:
 
     @property
     def control_type(self):
-        """Gets the control_type of this ActiveControlRspDTO.
+        r"""Gets the control_type of this ActiveControlRspDTO.
 
         控制类型，包括control、schedule、local_control
 
@@ -89,7 +89,7 @@ class ActiveControlRspDTO:
 
     @control_type.setter
     def control_type(self, control_type):
-        """Sets the control_type of this ActiveControlRspDTO.
+        r"""Sets the control_type of this ActiveControlRspDTO.
 
         控制类型，包括control、schedule、local_control
 
@@ -100,7 +100,7 @@ class ActiveControlRspDTO:
 
     @property
     def control_id(self):
-        """Gets the control_id of this ActiveControlRspDTO.
+        r"""Gets the control_id of this ActiveControlRspDTO.
 
         控制id
 
@@ -111,7 +111,7 @@ class ActiveControlRspDTO:
 
     @control_id.setter
     def control_id(self, control_id):
-        """Sets the control_id of this ActiveControlRspDTO.
+        r"""Sets the control_id of this ActiveControlRspDTO.
 
         控制id
 
@@ -122,7 +122,7 @@ class ActiveControlRspDTO:
 
     @property
     def priority(self):
-        """Gets the priority of this ActiveControlRspDTO.
+        r"""Gets the priority of this ActiveControlRspDTO.
 
         控制的优先级
 
@@ -133,7 +133,7 @@ class ActiveControlRspDTO:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ActiveControlRspDTO.
+        r"""Sets the priority of this ActiveControlRspDTO.
 
         控制的优先级
 
@@ -144,7 +144,7 @@ class ActiveControlRspDTO:
 
     @property
     def value(self):
-        """Gets the value of this ActiveControlRspDTO.
+        r"""Gets the value of this ActiveControlRspDTO.
 
         此次控制的值
 
@@ -155,7 +155,7 @@ class ActiveControlRspDTO:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ActiveControlRspDTO.
+        r"""Sets the value of this ActiveControlRspDTO.
 
         此次控制的值
 
@@ -166,7 +166,7 @@ class ActiveControlRspDTO:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ActiveControlRspDTO.
+        r"""Gets the end_time of this ActiveControlRspDTO.
 
         控制的结束时间
 
@@ -177,7 +177,7 @@ class ActiveControlRspDTO:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ActiveControlRspDTO.
+        r"""Sets the end_time of this ActiveControlRspDTO.
 
         控制的结束时间
 
@@ -188,7 +188,7 @@ class ActiveControlRspDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ActiveControlRspDTO.
+        r"""Gets the create_time of this ActiveControlRspDTO.
 
         记录创建的时间
 
@@ -199,7 +199,7 @@ class ActiveControlRspDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ActiveControlRspDTO.
+        r"""Sets the create_time of this ActiveControlRspDTO.
 
         记录创建的时间
 

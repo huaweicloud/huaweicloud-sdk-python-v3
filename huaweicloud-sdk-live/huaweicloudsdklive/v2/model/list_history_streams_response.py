@@ -30,7 +30,7 @@ class ListHistoryStreamsResponse(SdkResponse):
     }
 
     def __init__(self, history_stream_list=None, total=None, x_request_id=None):
-        """ListHistoryStreamsResponse
+        r"""ListHistoryStreamsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListHistoryStreamsResponse(SdkResponse):
 
     @property
     def history_stream_list(self):
-        """Gets the history_stream_list of this ListHistoryStreamsResponse.
+        r"""Gets the history_stream_list of this ListHistoryStreamsResponse.
 
         历史流信息列表。
 
@@ -69,7 +69,7 @@ class ListHistoryStreamsResponse(SdkResponse):
 
     @history_stream_list.setter
     def history_stream_list(self, history_stream_list):
-        """Sets the history_stream_list of this ListHistoryStreamsResponse.
+        r"""Sets the history_stream_list of this ListHistoryStreamsResponse.
 
         历史流信息列表。
 
@@ -80,7 +80,7 @@ class ListHistoryStreamsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListHistoryStreamsResponse.
+        r"""Gets the total of this ListHistoryStreamsResponse.
 
         总记录数。
 
@@ -91,7 +91,7 @@ class ListHistoryStreamsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListHistoryStreamsResponse.
+        r"""Sets the total of this ListHistoryStreamsResponse.
 
         总记录数。
 
@@ -102,7 +102,7 @@ class ListHistoryStreamsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListHistoryStreamsResponse.
+        r"""Gets the x_request_id of this ListHistoryStreamsResponse.
 
         :return: The x_request_id of this ListHistoryStreamsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListHistoryStreamsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListHistoryStreamsResponse.
+        r"""Sets the x_request_id of this ListHistoryStreamsResponse.
 
         :param x_request_id: The x_request_id of this ListHistoryStreamsResponse.
         :type x_request_id: str

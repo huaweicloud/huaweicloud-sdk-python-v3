@@ -33,7 +33,7 @@ class BatchShowRadarsRequest:
     }
 
     def __init__(self, instance_id=None, esn=None, offset=None, limit=None, status=None):
-        """BatchShowRadarsRequest
+        r"""BatchShowRadarsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BatchShowRadarsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchShowRadarsRequest.
+        r"""Gets the instance_id of this BatchShowRadarsRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -82,7 +82,7 @@ class BatchShowRadarsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchShowRadarsRequest.
+        r"""Sets the instance_id of this BatchShowRadarsRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -93,7 +93,7 @@ class BatchShowRadarsRequest:
 
     @property
     def esn(self):
-        """Gets the esn of this BatchShowRadarsRequest.
+        r"""Gets the esn of this BatchShowRadarsRequest.
 
         **参数说明**：设备序列号。
 
@@ -104,7 +104,7 @@ class BatchShowRadarsRequest:
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this BatchShowRadarsRequest.
+        r"""Sets the esn of this BatchShowRadarsRequest.
 
         **参数说明**：设备序列号。
 
@@ -115,7 +115,7 @@ class BatchShowRadarsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchShowRadarsRequest.
+        r"""Gets the offset of this BatchShowRadarsRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -126,7 +126,7 @@ class BatchShowRadarsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchShowRadarsRequest.
+        r"""Sets the offset of this BatchShowRadarsRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -137,7 +137,7 @@ class BatchShowRadarsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchShowRadarsRequest.
+        r"""Gets the limit of this BatchShowRadarsRequest.
 
         **参数说明**：分页查询时每页显示的记录数。
 
@@ -148,7 +148,7 @@ class BatchShowRadarsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchShowRadarsRequest.
+        r"""Sets the limit of this BatchShowRadarsRequest.
 
         **参数说明**：分页查询时每页显示的记录数。
 
@@ -159,7 +159,7 @@ class BatchShowRadarsRequest:
 
     @property
     def status(self):
-        """Gets the status of this BatchShowRadarsRequest.
+        r"""Gets the status of this BatchShowRadarsRequest.
 
         **参数说明**：状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - UNKNOWN：未知 - SLEEP：睡眠 
 
@@ -170,7 +170,7 @@ class BatchShowRadarsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchShowRadarsRequest.
+        r"""Sets the status of this BatchShowRadarsRequest.
 
         **参数说明**：状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - UNKNOWN：未知 - SLEEP：睡眠 
 

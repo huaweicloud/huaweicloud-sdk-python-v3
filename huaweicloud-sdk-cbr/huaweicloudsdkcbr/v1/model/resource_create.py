@@ -31,7 +31,7 @@ class ResourceCreate:
     }
 
     def __init__(self, extra_info=None, id=None, type=None, name=None):
-        """ResourceCreate
+        r"""ResourceCreate
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ResourceCreate:
 
     @property
     def extra_info(self):
-        """Gets the extra_info of this ResourceCreate.
+        r"""Gets the extra_info of this ResourceCreate.
 
         :return: The extra_info of this ResourceCreate.
         :rtype: :class:`huaweicloudsdkcbr.v1.ResourceExtraInfo`
@@ -71,7 +71,7 @@ class ResourceCreate:
 
     @extra_info.setter
     def extra_info(self, extra_info):
-        """Sets the extra_info of this ResourceCreate.
+        r"""Sets the extra_info of this ResourceCreate.
 
         :param extra_info: The extra_info of this ResourceCreate.
         :type extra_info: :class:`huaweicloudsdkcbr.v1.ResourceExtraInfo`
@@ -80,7 +80,7 @@ class ResourceCreate:
 
     @property
     def id(self):
-        """Gets the id of this ResourceCreate.
+        r"""Gets the id of this ResourceCreate.
 
         待备份资源id
 
@@ -91,7 +91,7 @@ class ResourceCreate:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResourceCreate.
+        r"""Sets the id of this ResourceCreate.
 
         待备份资源id
 
@@ -102,7 +102,7 @@ class ResourceCreate:
 
     @property
     def type(self):
-        """Gets the type of this ResourceCreate.
+        r"""Gets the type of this ResourceCreate.
 
         待备份资源的类型, 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 裸金属服务器: OS::Ironic::BareMetalServer, 线下本地服务器: OS::Native::Server, 弹性文件系统: OS::Sfs::Turbo, 云桌面：OS::Workspace::DesktopV2
 
@@ -113,7 +113,7 @@ class ResourceCreate:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourceCreate.
+        r"""Sets the type of this ResourceCreate.
 
         待备份资源的类型, 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 裸金属服务器: OS::Ironic::BareMetalServer, 线下本地服务器: OS::Native::Server, 弹性文件系统: OS::Sfs::Turbo, 云桌面：OS::Workspace::DesktopV2
 
@@ -124,7 +124,7 @@ class ResourceCreate:
 
     @property
     def name(self):
-        """Gets the name of this ResourceCreate.
+        r"""Gets the name of this ResourceCreate.
 
         名称
 
@@ -135,7 +135,7 @@ class ResourceCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ResourceCreate.
+        r"""Sets the name of this ResourceCreate.
 
         名称
 

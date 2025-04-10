@@ -29,7 +29,7 @@ class BatchCreateTagRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """BatchCreateTagRequest
+        r"""BatchCreateTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchCreateTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this BatchCreateTagRequest.
+        r"""Gets the resource_type of this BatchCreateTagRequest.
 
         资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。
 
@@ -66,7 +66,7 @@ class BatchCreateTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this BatchCreateTagRequest.
+        r"""Sets the resource_type of this BatchCreateTagRequest.
 
         资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。
 
@@ -77,7 +77,7 @@ class BatchCreateTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchCreateTagRequest.
+        r"""Gets the resource_id of this BatchCreateTagRequest.
 
         资源id。
 
@@ -88,7 +88,7 @@ class BatchCreateTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchCreateTagRequest.
+        r"""Sets the resource_id of this BatchCreateTagRequest.
 
         资源id。
 
@@ -99,7 +99,7 @@ class BatchCreateTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateTagRequest.
+        r"""Gets the body of this BatchCreateTagRequest.
 
         :return: The body of this BatchCreateTagRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.BatchHandTags`
@@ -108,7 +108,7 @@ class BatchCreateTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateTagRequest.
+        r"""Sets the body of this BatchCreateTagRequest.
 
         :param body: The body of this BatchCreateTagRequest.
         :type body: :class:`huaweicloudsdkdns.v2.BatchHandTags`

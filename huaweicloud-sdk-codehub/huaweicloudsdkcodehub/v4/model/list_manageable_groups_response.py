@@ -28,7 +28,7 @@ class ListManageableGroupsResponse(SdkResponse):
     }
 
     def __init__(self, body=None, x_total=None):
-        """ListManageableGroupsResponse
+        r"""ListManageableGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListManageableGroupsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListManageableGroupsResponse.
+        r"""Gets the body of this ListManageableGroupsResponse.
 
         仓库ip白名单列表
 
@@ -62,7 +62,7 @@ class ListManageableGroupsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListManageableGroupsResponse.
+        r"""Sets the body of this ListManageableGroupsResponse.
 
         仓库ip白名单列表
 
@@ -73,7 +73,7 @@ class ListManageableGroupsResponse(SdkResponse):
 
     @property
     def x_total(self):
-        """Gets the x_total of this ListManageableGroupsResponse.
+        r"""Gets the x_total of this ListManageableGroupsResponse.
 
         :return: The x_total of this ListManageableGroupsResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListManageableGroupsResponse(SdkResponse):
 
     @x_total.setter
     def x_total(self, x_total):
-        """Sets the x_total of this ListManageableGroupsResponse.
+        r"""Sets the x_total of this ListManageableGroupsResponse.
 
         :param x_total: The x_total of this ListManageableGroupsResponse.
         :type x_total: str

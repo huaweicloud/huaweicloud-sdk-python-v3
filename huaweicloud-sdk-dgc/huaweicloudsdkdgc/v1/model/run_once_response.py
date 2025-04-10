@@ -26,7 +26,7 @@ class RunOnceResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None):
-        """RunOnceResponse
+        r"""RunOnceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RunOnceResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RunOnceResponse.
+        r"""Gets the instance_id of this RunOnceResponse.
 
         作业实例id
 
@@ -55,7 +55,7 @@ class RunOnceResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RunOnceResponse.
+        r"""Sets the instance_id of this RunOnceResponse.
 
         作业实例id
 

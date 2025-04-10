@@ -31,7 +31,7 @@ class StacksAttribute:
     }
 
     def __init__(self, specs=None, suggest=None, suggest_title=None, volumes=None):
-        """StacksAttribute
+        r"""StacksAttribute
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class StacksAttribute:
 
     @property
     def specs(self):
-        """Gets the specs of this StacksAttribute.
+        r"""Gets the specs of this StacksAttribute.
 
         规格列表
 
@@ -75,7 +75,7 @@ class StacksAttribute:
 
     @specs.setter
     def specs(self, specs):
-        """Sets the specs of this StacksAttribute.
+        r"""Sets the specs of this StacksAttribute.
 
         规格列表
 
@@ -86,7 +86,7 @@ class StacksAttribute:
 
     @property
     def suggest(self):
-        """Gets the suggest of this StacksAttribute.
+        r"""Gets the suggest of this StacksAttribute.
 
         提示id
 
@@ -97,7 +97,7 @@ class StacksAttribute:
 
     @suggest.setter
     def suggest(self, suggest):
-        """Sets the suggest of this StacksAttribute.
+        r"""Sets the suggest of this StacksAttribute.
 
         提示id
 
@@ -108,7 +108,7 @@ class StacksAttribute:
 
     @property
     def suggest_title(self):
-        """Gets the suggest_title of this StacksAttribute.
+        r"""Gets the suggest_title of this StacksAttribute.
 
         提示信息
 
@@ -119,7 +119,7 @@ class StacksAttribute:
 
     @suggest_title.setter
     def suggest_title(self, suggest_title):
-        """Sets the suggest_title of this StacksAttribute.
+        r"""Sets the suggest_title of this StacksAttribute.
 
         提示信息
 
@@ -130,7 +130,7 @@ class StacksAttribute:
 
     @property
     def volumes(self):
-        """Gets the volumes of this StacksAttribute.
+        r"""Gets the volumes of this StacksAttribute.
 
         卷容量列表
 
@@ -141,7 +141,7 @@ class StacksAttribute:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this StacksAttribute.
+        r"""Sets the volumes of this StacksAttribute.
 
         卷容量列表
 

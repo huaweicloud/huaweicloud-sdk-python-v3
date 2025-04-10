@@ -25,7 +25,7 @@ class EnvVariableBase:
     }
 
     def __init__(self, variable_value=None):
-        """EnvVariableBase
+        r"""EnvVariableBase
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnvVariableBase:
 
     @property
     def variable_value(self):
-        """Gets the variable_value of this EnvVariableBase.
+        r"""Gets the variable_value of this EnvVariableBase.
 
         变量值支持英文字母、数字、英文格式的下划线、中划线，斜线（/）、点、冒号，1 ~ 255个字符。
 
@@ -53,7 +53,7 @@ class EnvVariableBase:
 
     @variable_value.setter
     def variable_value(self, variable_value):
-        """Sets the variable_value of this EnvVariableBase.
+        r"""Sets the variable_value of this EnvVariableBase.
 
         变量值支持英文字母、数字、英文格式的下划线、中划线，斜线（/）、点、冒号，1 ~ 255个字符。
 

@@ -27,7 +27,7 @@ class UpdatePacifyWordsSwitchRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """UpdatePacifyWordsSwitchRequest
+        r"""UpdatePacifyWordsSwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdatePacifyWordsSwitchRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this UpdatePacifyWordsSwitchRequest.
+        r"""Gets the x_app_user_id of this UpdatePacifyWordsSwitchRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class UpdatePacifyWordsSwitchRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this UpdatePacifyWordsSwitchRequest.
+        r"""Sets the x_app_user_id of this UpdatePacifyWordsSwitchRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class UpdatePacifyWordsSwitchRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePacifyWordsSwitchRequest.
+        r"""Gets the body of this UpdatePacifyWordsSwitchRequest.
 
         :return: The body of this UpdatePacifyWordsSwitchRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdatePacifyWordsSwitchReq`
@@ -81,7 +81,7 @@ class UpdatePacifyWordsSwitchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePacifyWordsSwitchRequest.
+        r"""Sets the body of this UpdatePacifyWordsSwitchRequest.
 
         :param body: The body of this UpdatePacifyWordsSwitchRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.UpdatePacifyWordsSwitchReq`

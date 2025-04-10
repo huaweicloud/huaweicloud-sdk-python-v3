@@ -27,7 +27,7 @@ class CdmQueryClusterInstanceDetailFlavor:
     }
 
     def __init__(self, id=None, links=None):
-        """CdmQueryClusterInstanceDetailFlavor
+        r"""CdmQueryClusterInstanceDetailFlavor
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CdmQueryClusterInstanceDetailFlavor:
 
     @property
     def id(self):
-        """Gets the id of this CdmQueryClusterInstanceDetailFlavor.
+        r"""Gets the id of this CdmQueryClusterInstanceDetailFlavor.
 
         节点虚拟机的规格ID。
 
@@ -61,7 +61,7 @@ class CdmQueryClusterInstanceDetailFlavor:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CdmQueryClusterInstanceDetailFlavor.
+        r"""Sets the id of this CdmQueryClusterInstanceDetailFlavor.
 
         节点虚拟机的规格ID。
 
@@ -72,7 +72,7 @@ class CdmQueryClusterInstanceDetailFlavor:
 
     @property
     def links(self):
-        """Gets the links of this CdmQueryClusterInstanceDetailFlavor.
+        r"""Gets the links of this CdmQueryClusterInstanceDetailFlavor.
 
         链接信息
 
@@ -83,7 +83,7 @@ class CdmQueryClusterInstanceDetailFlavor:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this CdmQueryClusterInstanceDetailFlavor.
+        r"""Sets the links of this CdmQueryClusterInstanceDetailFlavor.
 
         链接信息
 

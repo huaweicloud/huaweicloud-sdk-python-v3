@@ -35,7 +35,7 @@ class ListAuditlogsResult:
     }
 
     def __init__(self, node_id=None, id=None, name=None, size=None, start_time=None, end_time=None):
-        """ListAuditlogsResult
+        r"""ListAuditlogsResult
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListAuditlogsResult:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListAuditlogsResult.
+        r"""Gets the node_id of this ListAuditlogsResult.
 
         节点ID。
 
@@ -83,7 +83,7 @@ class ListAuditlogsResult:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListAuditlogsResult.
+        r"""Sets the node_id of this ListAuditlogsResult.
 
         节点ID。
 
@@ -94,7 +94,7 @@ class ListAuditlogsResult:
 
     @property
     def id(self):
-        """Gets the id of this ListAuditlogsResult.
+        r"""Gets the id of this ListAuditlogsResult.
 
         审计日志ID。
 
@@ -105,7 +105,7 @@ class ListAuditlogsResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListAuditlogsResult.
+        r"""Sets the id of this ListAuditlogsResult.
 
         审计日志ID。
 
@@ -116,7 +116,7 @@ class ListAuditlogsResult:
 
     @property
     def name(self):
-        """Gets the name of this ListAuditlogsResult.
+        r"""Gets the name of this ListAuditlogsResult.
 
         审计日志文件名。
 
@@ -127,7 +127,7 @@ class ListAuditlogsResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAuditlogsResult.
+        r"""Sets the name of this ListAuditlogsResult.
 
         审计日志文件名。
 
@@ -138,7 +138,7 @@ class ListAuditlogsResult:
 
     @property
     def size(self):
-        """Gets the size of this ListAuditlogsResult.
+        r"""Gets the size of this ListAuditlogsResult.
 
         审计日志大小，单位：byte。
 
@@ -149,7 +149,7 @@ class ListAuditlogsResult:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListAuditlogsResult.
+        r"""Sets the size of this ListAuditlogsResult.
 
         审计日志大小，单位：byte。
 
@@ -160,7 +160,7 @@ class ListAuditlogsResult:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListAuditlogsResult.
+        r"""Gets the start_time of this ListAuditlogsResult.
 
         审计日志开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -171,7 +171,7 @@ class ListAuditlogsResult:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListAuditlogsResult.
+        r"""Sets the start_time of this ListAuditlogsResult.
 
         审计日志开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -182,7 +182,7 @@ class ListAuditlogsResult:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAuditlogsResult.
+        r"""Gets the end_time of this ListAuditlogsResult.
 
         审计日志结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -193,7 +193,7 @@ class ListAuditlogsResult:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAuditlogsResult.
+        r"""Sets the end_time of this ListAuditlogsResult.
 
         审计日志结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 

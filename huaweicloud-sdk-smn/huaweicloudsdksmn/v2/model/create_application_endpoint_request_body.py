@@ -27,7 +27,7 @@ class CreateApplicationEndpointRequestBody:
     }
 
     def __init__(self, token=None, user_data=None):
-        """CreateApplicationEndpointRequestBody
+        r"""CreateApplicationEndpointRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateApplicationEndpointRequestBody:
 
     @property
     def token(self):
-        """Gets the token of this CreateApplicationEndpointRequestBody.
+        r"""Gets the token of this CreateApplicationEndpointRequestBody.
 
         移动应用设备token，最大长度512个字节。
 
@@ -59,7 +59,7 @@ class CreateApplicationEndpointRequestBody:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this CreateApplicationEndpointRequestBody.
+        r"""Sets the token of this CreateApplicationEndpointRequestBody.
 
         移动应用设备token，最大长度512个字节。
 
@@ -70,7 +70,7 @@ class CreateApplicationEndpointRequestBody:
 
     @property
     def user_data(self):
-        """Gets the user_data of this CreateApplicationEndpointRequestBody.
+        r"""Gets the user_data of this CreateApplicationEndpointRequestBody.
 
         用户自定义数据，最大长度支持UTF-8编码后2048字节。
 
@@ -81,7 +81,7 @@ class CreateApplicationEndpointRequestBody:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this CreateApplicationEndpointRequestBody.
+        r"""Sets the user_data of this CreateApplicationEndpointRequestBody.
 
         用户自定义数据，最大长度支持UTF-8编码后2048字节。
 

@@ -27,7 +27,7 @@ class ShowCeshierarchyRespNodes:
     }
 
     def __init__(self, name=None, available_zone=None):
-        """ShowCeshierarchyRespNodes
+        r"""ShowCeshierarchyRespNodes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowCeshierarchyRespNodes:
 
     @property
     def name(self):
-        """Gets the name of this ShowCeshierarchyRespNodes.
+        r"""Gets the name of this ShowCeshierarchyRespNodes.
 
         节点名称。
 
@@ -61,7 +61,7 @@ class ShowCeshierarchyRespNodes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCeshierarchyRespNodes.
+        r"""Sets the name of this ShowCeshierarchyRespNodes.
 
         节点名称。
 
@@ -72,7 +72,7 @@ class ShowCeshierarchyRespNodes:
 
     @property
     def available_zone(self):
-        """Gets the available_zone of this ShowCeshierarchyRespNodes.
+        r"""Gets the available_zone of this ShowCeshierarchyRespNodes.
 
         可用区。
 
@@ -83,7 +83,7 @@ class ShowCeshierarchyRespNodes:
 
     @available_zone.setter
     def available_zone(self, available_zone):
-        """Sets the available_zone of this ShowCeshierarchyRespNodes.
+        r"""Sets the available_zone of this ShowCeshierarchyRespNodes.
 
         可用区。
 

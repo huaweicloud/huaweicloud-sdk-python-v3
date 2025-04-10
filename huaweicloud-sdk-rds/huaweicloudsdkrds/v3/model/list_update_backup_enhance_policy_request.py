@@ -27,7 +27,7 @@ class ListUpdateBackupEnhancePolicyRequest:
     }
 
     def __init__(self, instance_id=None, time_zone=None):
-        """ListUpdateBackupEnhancePolicyRequest
+        r"""ListUpdateBackupEnhancePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListUpdateBackupEnhancePolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListUpdateBackupEnhancePolicyRequest.
+        r"""Gets the instance_id of this ListUpdateBackupEnhancePolicyRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class ListUpdateBackupEnhancePolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListUpdateBackupEnhancePolicyRequest.
+        r"""Sets the instance_id of this ListUpdateBackupEnhancePolicyRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class ListUpdateBackupEnhancePolicyRequest:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ListUpdateBackupEnhancePolicyRequest.
+        r"""Gets the time_zone of this ListUpdateBackupEnhancePolicyRequest.
 
         用户当前时区，例：plus08
 
@@ -82,7 +82,7 @@ class ListUpdateBackupEnhancePolicyRequest:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ListUpdateBackupEnhancePolicyRequest.
+        r"""Sets the time_zone of this ListUpdateBackupEnhancePolicyRequest.
 
         用户当前时区，例：plus08
 

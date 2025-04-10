@@ -29,7 +29,7 @@ class UpgradeNodePoolRequest:
     }
 
     def __init__(self, cluster_id=None, nodepool_id=None, body=None):
-        """UpgradeNodePoolRequest
+        r"""UpgradeNodePoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpgradeNodePoolRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpgradeNodePoolRequest.
+        r"""Gets the cluster_id of this UpgradeNodePoolRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -66,7 +66,7 @@ class UpgradeNodePoolRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpgradeNodePoolRequest.
+        r"""Sets the cluster_id of this UpgradeNodePoolRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -77,7 +77,7 @@ class UpgradeNodePoolRequest:
 
     @property
     def nodepool_id(self):
-        """Gets the nodepool_id of this UpgradeNodePoolRequest.
+        r"""Gets the nodepool_id of this UpgradeNodePoolRequest.
 
         节点池ID
 
@@ -88,7 +88,7 @@ class UpgradeNodePoolRequest:
 
     @nodepool_id.setter
     def nodepool_id(self, nodepool_id):
-        """Sets the nodepool_id of this UpgradeNodePoolRequest.
+        r"""Sets the nodepool_id of this UpgradeNodePoolRequest.
 
         节点池ID
 
@@ -99,7 +99,7 @@ class UpgradeNodePoolRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpgradeNodePoolRequest.
+        r"""Gets the body of this UpgradeNodePoolRequest.
 
         :return: The body of this UpgradeNodePoolRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeNodePool`
@@ -108,7 +108,7 @@ class UpgradeNodePoolRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpgradeNodePoolRequest.
+        r"""Sets the body of this UpgradeNodePoolRequest.
 
         :param body: The body of this UpgradeNodePoolRequest.
         :type body: :class:`huaweicloudsdkcce.v3.UpgradeNodePool`

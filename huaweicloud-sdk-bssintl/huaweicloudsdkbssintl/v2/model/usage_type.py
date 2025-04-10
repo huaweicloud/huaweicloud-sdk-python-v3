@@ -35,7 +35,7 @@ class UsageType:
     }
 
     def __init__(self, code=None, name=None, resource_type_code=None, service_type_code=None, resource_type_name=None, service_type_name=None):
-        """UsageType
+        r"""UsageType
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UsageType:
 
     @property
     def code(self):
-        """Gets the code of this UsageType.
+        r"""Gets the code of this UsageType.
 
         使用量类型编码。如：reqNumber。
 
@@ -89,7 +89,7 @@ class UsageType:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this UsageType.
+        r"""Sets the code of this UsageType.
 
         使用量类型编码。如：reqNumber。
 
@@ -100,7 +100,7 @@ class UsageType:
 
     @property
     def name(self):
-        """Gets the name of this UsageType.
+        r"""Gets the name of this UsageType.
 
         使用量类型名称。如：调用次数。
 
@@ -111,7 +111,7 @@ class UsageType:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UsageType.
+        r"""Sets the name of this UsageType.
 
         使用量类型名称。如：调用次数。
 
@@ -122,7 +122,7 @@ class UsageType:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this UsageType.
+        r"""Gets the resource_type_code of this UsageType.
 
         资源类型编码。例如ECS的VM为“hws.resource.type.vm”。
 
@@ -133,7 +133,7 @@ class UsageType:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this UsageType.
+        r"""Sets the resource_type_code of this UsageType.
 
         资源类型编码。例如ECS的VM为“hws.resource.type.vm”。
 
@@ -144,7 +144,7 @@ class UsageType:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this UsageType.
+        r"""Gets the service_type_code of this UsageType.
 
         云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。
 
@@ -155,7 +155,7 @@ class UsageType:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this UsageType.
+        r"""Sets the service_type_code of this UsageType.
 
         云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。
 
@@ -166,7 +166,7 @@ class UsageType:
 
     @property
     def resource_type_name(self):
-        """Gets the resource_type_name of this UsageType.
+        r"""Gets the resource_type_name of this UsageType.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -177,7 +177,7 @@ class UsageType:
 
     @resource_type_name.setter
     def resource_type_name(self, resource_type_name):
-        """Sets the resource_type_name of this UsageType.
+        r"""Sets the resource_type_name of this UsageType.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -188,7 +188,7 @@ class UsageType:
 
     @property
     def service_type_name(self):
-        """Gets the service_type_name of this UsageType.
+        r"""Gets the service_type_name of this UsageType.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -199,7 +199,7 @@ class UsageType:
 
     @service_type_name.setter
     def service_type_name(self, service_type_name):
-        """Sets the service_type_name of this UsageType.
+        r"""Sets the service_type_name of this UsageType.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 

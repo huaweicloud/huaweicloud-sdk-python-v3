@@ -25,7 +25,7 @@ class UpdateCSRRequestBody:
     }
 
     def __init__(self, name=None):
-        """UpdateCSRRequestBody
+        r"""UpdateCSRRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateCSRRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateCSRRequestBody.
+        r"""Gets the name of this UpdateCSRRequestBody.
 
         CSR名称。
 
@@ -53,7 +53,7 @@ class UpdateCSRRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCSRRequestBody.
+        r"""Sets the name of this UpdateCSRRequestBody.
 
         CSR名称。
 

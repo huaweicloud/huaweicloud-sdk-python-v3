@@ -43,7 +43,7 @@ class TopoInstanceInfo:
     }
 
     def __init__(self, id=None, name=None, manage_ip=None, traffic_ip=None, internal_ip=None, internal_mgnt_ip=None, eip=None, elb=None, status=None, az_code=None):
-        """TopoInstanceInfo
+        r"""TopoInstanceInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class TopoInstanceInfo:
 
     @property
     def id(self):
-        """Gets the id of this TopoInstanceInfo.
+        r"""Gets the id of this TopoInstanceInfo.
 
         实例ID
 
@@ -117,7 +117,7 @@ class TopoInstanceInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TopoInstanceInfo.
+        r"""Sets the id of this TopoInstanceInfo.
 
         实例ID
 
@@ -128,7 +128,7 @@ class TopoInstanceInfo:
 
     @property
     def name(self):
-        """Gets the name of this TopoInstanceInfo.
+        r"""Gets the name of this TopoInstanceInfo.
 
         实例名称
 
@@ -139,7 +139,7 @@ class TopoInstanceInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TopoInstanceInfo.
+        r"""Sets the name of this TopoInstanceInfo.
 
         实例名称
 
@@ -150,7 +150,7 @@ class TopoInstanceInfo:
 
     @property
     def manage_ip(self):
-        """Gets the manage_ip of this TopoInstanceInfo.
+        r"""Gets the manage_ip of this TopoInstanceInfo.
 
         实例管理IP
 
@@ -161,7 +161,7 @@ class TopoInstanceInfo:
 
     @manage_ip.setter
     def manage_ip(self, manage_ip):
-        """Sets the manage_ip of this TopoInstanceInfo.
+        r"""Sets the manage_ip of this TopoInstanceInfo.
 
         实例管理IP
 
@@ -172,7 +172,7 @@ class TopoInstanceInfo:
 
     @property
     def traffic_ip(self):
-        """Gets the traffic_ip of this TopoInstanceInfo.
+        r"""Gets the traffic_ip of this TopoInstanceInfo.
 
         业务IP
 
@@ -183,7 +183,7 @@ class TopoInstanceInfo:
 
     @traffic_ip.setter
     def traffic_ip(self, traffic_ip):
-        """Sets the traffic_ip of this TopoInstanceInfo.
+        r"""Sets the traffic_ip of this TopoInstanceInfo.
 
         业务IP
 
@@ -194,7 +194,7 @@ class TopoInstanceInfo:
 
     @property
     def internal_ip(self):
-        """Gets the internal_ip of this TopoInstanceInfo.
+        r"""Gets the internal_ip of this TopoInstanceInfo.
 
         内部通信IP
 
@@ -205,7 +205,7 @@ class TopoInstanceInfo:
 
     @internal_ip.setter
     def internal_ip(self, internal_ip):
-        """Sets the internal_ip of this TopoInstanceInfo.
+        r"""Sets the internal_ip of this TopoInstanceInfo.
 
         内部通信IP
 
@@ -216,7 +216,7 @@ class TopoInstanceInfo:
 
     @property
     def internal_mgnt_ip(self):
-        """Gets the internal_mgnt_ip of this TopoInstanceInfo.
+        r"""Gets the internal_mgnt_ip of this TopoInstanceInfo.
 
         内部管理IP
 
@@ -227,7 +227,7 @@ class TopoInstanceInfo:
 
     @internal_mgnt_ip.setter
     def internal_mgnt_ip(self, internal_mgnt_ip):
-        """Sets the internal_mgnt_ip of this TopoInstanceInfo.
+        r"""Sets the internal_mgnt_ip of this TopoInstanceInfo.
 
         内部管理IP
 
@@ -238,7 +238,7 @@ class TopoInstanceInfo:
 
     @property
     def eip(self):
-        """Gets the eip of this TopoInstanceInfo.
+        r"""Gets the eip of this TopoInstanceInfo.
 
         EIP
 
@@ -249,7 +249,7 @@ class TopoInstanceInfo:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this TopoInstanceInfo.
+        r"""Sets the eip of this TopoInstanceInfo.
 
         EIP
 
@@ -260,7 +260,7 @@ class TopoInstanceInfo:
 
     @property
     def elb(self):
-        """Gets the elb of this TopoInstanceInfo.
+        r"""Gets the elb of this TopoInstanceInfo.
 
         elb地址
 
@@ -271,7 +271,7 @@ class TopoInstanceInfo:
 
     @elb.setter
     def elb(self, elb):
-        """Sets the elb of this TopoInstanceInfo.
+        r"""Sets the elb of this TopoInstanceInfo.
 
         elb地址
 
@@ -282,7 +282,7 @@ class TopoInstanceInfo:
 
     @property
     def status(self):
-        """Gets the status of this TopoInstanceInfo.
+        r"""Gets the status of this TopoInstanceInfo.
 
         实例状态
 
@@ -293,7 +293,7 @@ class TopoInstanceInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TopoInstanceInfo.
+        r"""Sets the status of this TopoInstanceInfo.
 
         实例状态
 
@@ -304,7 +304,7 @@ class TopoInstanceInfo:
 
     @property
     def az_code(self):
-        """Gets the az_code of this TopoInstanceInfo.
+        r"""Gets the az_code of this TopoInstanceInfo.
 
         可用区编码
 
@@ -315,7 +315,7 @@ class TopoInstanceInfo:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this TopoInstanceInfo.
+        r"""Sets the az_code of this TopoInstanceInfo.
 
         可用区编码
 

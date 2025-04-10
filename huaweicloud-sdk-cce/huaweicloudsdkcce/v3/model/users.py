@@ -27,7 +27,7 @@ class Users:
     }
 
     def __init__(self, name=None, user=None):
-        """Users
+        r"""Users
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Users:
 
     @property
     def name(self):
-        """Gets the name of this Users.
+        r"""Gets the name of this Users.
 
         当前为固定值“user“。
 
@@ -61,7 +61,7 @@ class Users:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Users.
+        r"""Sets the name of this Users.
 
         当前为固定值“user“。
 
@@ -72,7 +72,7 @@ class Users:
 
     @property
     def user(self):
-        """Gets the user of this Users.
+        r"""Gets the user of this Users.
 
         :return: The user of this Users.
         :rtype: :class:`huaweicloudsdkcce.v3.User`
@@ -81,7 +81,7 @@ class Users:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this Users.
+        r"""Sets the user of this Users.
 
         :param user: The user of this Users.
         :type user: :class:`huaweicloudsdkcce.v3.User`

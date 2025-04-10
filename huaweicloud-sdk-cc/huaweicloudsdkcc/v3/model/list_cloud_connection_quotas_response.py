@@ -28,7 +28,7 @@ class ListCloudConnectionQuotasResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, quotas=None):
-        """ListCloudConnectionQuotasResponse
+        r"""ListCloudConnectionQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListCloudConnectionQuotasResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCloudConnectionQuotasResponse.
+        r"""Gets the request_id of this ListCloudConnectionQuotasResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class ListCloudConnectionQuotasResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCloudConnectionQuotasResponse.
+        r"""Sets the request_id of this ListCloudConnectionQuotasResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class ListCloudConnectionQuotasResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ListCloudConnectionQuotasResponse.
+        r"""Gets the quotas of this ListCloudConnectionQuotasResponse.
 
         配额列表。
 
@@ -82,7 +82,7 @@ class ListCloudConnectionQuotasResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ListCloudConnectionQuotasResponse.
+        r"""Sets the quotas of this ListCloudConnectionQuotasResponse.
 
         配额列表。
 

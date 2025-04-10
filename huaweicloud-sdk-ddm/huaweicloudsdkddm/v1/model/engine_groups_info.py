@@ -31,7 +31,7 @@ class EngineGroupsInfo:
     }
 
     def __init__(self, id=None, name=None, version=None, support_azs=None):
-        """EngineGroupsInfo
+        r"""EngineGroupsInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class EngineGroupsInfo:
 
     @property
     def id(self):
-        """Gets the id of this EngineGroupsInfo.
+        r"""Gets the id of this EngineGroupsInfo.
 
         引擎id。
 
@@ -75,7 +75,7 @@ class EngineGroupsInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EngineGroupsInfo.
+        r"""Sets the id of this EngineGroupsInfo.
 
         引擎id。
 
@@ -86,7 +86,7 @@ class EngineGroupsInfo:
 
     @property
     def name(self):
-        """Gets the name of this EngineGroupsInfo.
+        r"""Gets the name of this EngineGroupsInfo.
 
         引擎名称。
 
@@ -97,7 +97,7 @@ class EngineGroupsInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EngineGroupsInfo.
+        r"""Sets the name of this EngineGroupsInfo.
 
         引擎名称。
 
@@ -108,7 +108,7 @@ class EngineGroupsInfo:
 
     @property
     def version(self):
-        """Gets the version of this EngineGroupsInfo.
+        r"""Gets the version of this EngineGroupsInfo.
 
         引擎版本。
 
@@ -119,7 +119,7 @@ class EngineGroupsInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this EngineGroupsInfo.
+        r"""Sets the version of this EngineGroupsInfo.
 
         引擎版本。
 
@@ -130,7 +130,7 @@ class EngineGroupsInfo:
 
     @property
     def support_azs(self):
-        """Gets the support_azs of this EngineGroupsInfo.
+        r"""Gets the support_azs of this EngineGroupsInfo.
 
         可用区列表。
 
@@ -141,7 +141,7 @@ class EngineGroupsInfo:
 
     @support_azs.setter
     def support_azs(self, support_azs):
-        """Sets the support_azs of this EngineGroupsInfo.
+        r"""Sets the support_azs of this EngineGroupsInfo.
 
         可用区列表。
 

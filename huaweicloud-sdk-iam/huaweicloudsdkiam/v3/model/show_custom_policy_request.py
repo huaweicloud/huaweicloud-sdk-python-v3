@@ -25,7 +25,7 @@ class ShowCustomPolicyRequest:
     }
 
     def __init__(self, role_id=None):
-        """ShowCustomPolicyRequest
+        r"""ShowCustomPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCustomPolicyRequest:
 
     @property
     def role_id(self):
-        """Gets the role_id of this ShowCustomPolicyRequest.
+        r"""Gets the role_id of this ShowCustomPolicyRequest.
 
         待查询的自定义策略ID，获取方式请参见：[自定义策略ID](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=ListCustomPolicies)。
 
@@ -53,7 +53,7 @@ class ShowCustomPolicyRequest:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this ShowCustomPolicyRequest.
+        r"""Sets the role_id of this ShowCustomPolicyRequest.
 
         待查询的自定义策略ID，获取方式请参见：[自定义策略ID](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=ListCustomPolicies)。
 

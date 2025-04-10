@@ -27,7 +27,7 @@ class DeleteEncryptdatasRequest:
     }
 
     def __init__(self, encryptdata_id=None, ief_instance_id=None):
-        """DeleteEncryptdatasRequest
+        r"""DeleteEncryptdatasRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteEncryptdatasRequest:
 
     @property
     def encryptdata_id(self):
-        """Gets the encryptdata_id of this DeleteEncryptdatasRequest.
+        r"""Gets the encryptdata_id of this DeleteEncryptdatasRequest.
 
         加密数据ID
 
@@ -60,7 +60,7 @@ class DeleteEncryptdatasRequest:
 
     @encryptdata_id.setter
     def encryptdata_id(self, encryptdata_id):
-        """Sets the encryptdata_id of this DeleteEncryptdatasRequest.
+        r"""Sets the encryptdata_id of this DeleteEncryptdatasRequest.
 
         加密数据ID
 
@@ -71,7 +71,7 @@ class DeleteEncryptdatasRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this DeleteEncryptdatasRequest.
+        r"""Gets the ief_instance_id of this DeleteEncryptdatasRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -82,7 +82,7 @@ class DeleteEncryptdatasRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this DeleteEncryptdatasRequest.
+        r"""Sets the ief_instance_id of this DeleteEncryptdatasRequest.
 
         铂金版实例ID，专业版实例为空值
 

@@ -28,7 +28,7 @@ class ListBaseModelResponse(SdkResponse):
     }
 
     def __init__(self, models=None, count=None):
-        """ListBaseModelResponse
+        r"""ListBaseModelResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBaseModelResponse(SdkResponse):
 
     @property
     def models(self):
-        """Gets the models of this ListBaseModelResponse.
+        r"""Gets the models of this ListBaseModelResponse.
 
         模型列表
 
@@ -62,7 +62,7 @@ class ListBaseModelResponse(SdkResponse):
 
     @models.setter
     def models(self, models):
-        """Sets the models of this ListBaseModelResponse.
+        r"""Sets the models of this ListBaseModelResponse.
 
         模型列表
 
@@ -73,7 +73,7 @@ class ListBaseModelResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListBaseModelResponse.
+        r"""Gets the count of this ListBaseModelResponse.
 
         模型总数
 
@@ -84,7 +84,7 @@ class ListBaseModelResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListBaseModelResponse.
+        r"""Sets the count of this ListBaseModelResponse.
 
         模型总数
 

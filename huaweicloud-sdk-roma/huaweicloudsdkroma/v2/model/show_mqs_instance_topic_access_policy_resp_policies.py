@@ -33,7 +33,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
     }
 
     def __init__(self, owner=None, user_name=None, access_policy=None, app_name=None, tag=None):
-        """ShowMqsInstanceTopicAccessPolicyRespPolicies
+        r"""ShowMqsInstanceTopicAccessPolicyRespPolicies
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
 
     @property
     def owner(self):
-        """Gets the owner of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
+        r"""Gets the owner of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
 
         是否为创建topic时所选择的应用。
 
@@ -82,7 +82,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
+        r"""Sets the owner of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
 
         是否为创建topic时所选择的应用。
 
@@ -93,7 +93,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
+        r"""Gets the user_name of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
 
         应用ID。
 
@@ -104,7 +104,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
+        r"""Sets the user_name of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
 
         应用ID。
 
@@ -115,7 +115,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
 
     @property
     def access_policy(self):
-        """Gets the access_policy of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
+        r"""Gets the access_policy of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
 
         权限类型。   - all：发布+订阅   - pub：发布   - sub：订阅
 
@@ -126,7 +126,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
 
     @access_policy.setter
     def access_policy(self, access_policy):
-        """Sets the access_policy of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
+        r"""Sets the access_policy of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
 
         权限类型。   - all：发布+订阅   - pub：发布   - sub：订阅
 
@@ -137,7 +137,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
+        r"""Gets the app_name of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
 
         应用名称。
 
@@ -148,7 +148,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
+        r"""Sets the app_name of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
 
         应用名称。
 
@@ -159,7 +159,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
 
     @property
     def tag(self):
-        """Gets the tag of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
+        r"""Gets the tag of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
 
         权限类型对应的标签。
 
@@ -170,7 +170,7 @@ class ShowMqsInstanceTopicAccessPolicyRespPolicies:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
+        r"""Sets the tag of this ShowMqsInstanceTopicAccessPolicyRespPolicies.
 
         权限类型对应的标签。
 

@@ -53,7 +53,7 @@ class PerformanceResourceRsp:
     }
 
     def __init__(self, id=None, resource_id=None, name=None, spec=None, availability_zone_id=None, space=None, free_space=None, charge_mode=None, period_num=None, running_job_count=None, job_quota=None, create_time=None, failure_reason=None, status=None, schedulable=None):
-        """PerformanceResourceRsp
+        r"""PerformanceResourceRsp
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class PerformanceResourceRsp:
 
     @property
     def id(self):
-        """Gets the id of this PerformanceResourceRsp.
+        r"""Gets the id of this PerformanceResourceRsp.
 
         实例ID
 
@@ -139,7 +139,7 @@ class PerformanceResourceRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PerformanceResourceRsp.
+        r"""Sets the id of this PerformanceResourceRsp.
 
         实例ID
 
@@ -150,7 +150,7 @@ class PerformanceResourceRsp:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this PerformanceResourceRsp.
+        r"""Gets the resource_id of this PerformanceResourceRsp.
 
         资源ID
 
@@ -161,7 +161,7 @@ class PerformanceResourceRsp:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this PerformanceResourceRsp.
+        r"""Sets the resource_id of this PerformanceResourceRsp.
 
         资源ID
 
@@ -172,7 +172,7 @@ class PerformanceResourceRsp:
 
     @property
     def name(self):
-        """Gets the name of this PerformanceResourceRsp.
+        r"""Gets the name of this PerformanceResourceRsp.
 
         实例名称
 
@@ -183,7 +183,7 @@ class PerformanceResourceRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PerformanceResourceRsp.
+        r"""Sets the name of this PerformanceResourceRsp.
 
         实例名称
 
@@ -194,7 +194,7 @@ class PerformanceResourceRsp:
 
     @property
     def spec(self):
-        """Gets the spec of this PerformanceResourceRsp.
+        r"""Gets the spec of this PerformanceResourceRsp.
 
         :return: The spec of this PerformanceResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SpecDto`
@@ -203,7 +203,7 @@ class PerformanceResourceRsp:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this PerformanceResourceRsp.
+        r"""Sets the spec of this PerformanceResourceRsp.
 
         :param spec: The spec of this PerformanceResourceRsp.
         :type spec: :class:`huaweicloudsdkeihealth.v1.SpecDto`
@@ -212,7 +212,7 @@ class PerformanceResourceRsp:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this PerformanceResourceRsp.
+        r"""Gets the availability_zone_id of this PerformanceResourceRsp.
 
         可用区
 
@@ -223,7 +223,7 @@ class PerformanceResourceRsp:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this PerformanceResourceRsp.
+        r"""Sets the availability_zone_id of this PerformanceResourceRsp.
 
         可用区
 
@@ -234,7 +234,7 @@ class PerformanceResourceRsp:
 
     @property
     def space(self):
-        """Gets the space of this PerformanceResourceRsp.
+        r"""Gets the space of this PerformanceResourceRsp.
 
         最大容量, 单位GB
 
@@ -245,7 +245,7 @@ class PerformanceResourceRsp:
 
     @space.setter
     def space(self, space):
-        """Sets the space of this PerformanceResourceRsp.
+        r"""Sets the space of this PerformanceResourceRsp.
 
         最大容量, 单位GB
 
@@ -256,7 +256,7 @@ class PerformanceResourceRsp:
 
     @property
     def free_space(self):
-        """Gets the free_space of this PerformanceResourceRsp.
+        r"""Gets the free_space of this PerformanceResourceRsp.
 
         可用容量，单位GB
 
@@ -267,7 +267,7 @@ class PerformanceResourceRsp:
 
     @free_space.setter
     def free_space(self, free_space):
-        """Sets the free_space of this PerformanceResourceRsp.
+        r"""Sets the free_space of this PerformanceResourceRsp.
 
         可用容量，单位GB
 
@@ -278,7 +278,7 @@ class PerformanceResourceRsp:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this PerformanceResourceRsp.
+        r"""Gets the charge_mode of this PerformanceResourceRsp.
 
         计费模式
 
@@ -289,7 +289,7 @@ class PerformanceResourceRsp:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this PerformanceResourceRsp.
+        r"""Sets the charge_mode of this PerformanceResourceRsp.
 
         计费模式
 
@@ -300,7 +300,7 @@ class PerformanceResourceRsp:
 
     @property
     def period_num(self):
-        """Gets the period_num of this PerformanceResourceRsp.
+        r"""Gets the period_num of this PerformanceResourceRsp.
 
         购买周期
 
@@ -311,7 +311,7 @@ class PerformanceResourceRsp:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this PerformanceResourceRsp.
+        r"""Sets the period_num of this PerformanceResourceRsp.
 
         购买周期
 
@@ -322,7 +322,7 @@ class PerformanceResourceRsp:
 
     @property
     def running_job_count(self):
-        """Gets the running_job_count of this PerformanceResourceRsp.
+        r"""Gets the running_job_count of this PerformanceResourceRsp.
 
         作业运行数
 
@@ -333,7 +333,7 @@ class PerformanceResourceRsp:
 
     @running_job_count.setter
     def running_job_count(self, running_job_count):
-        """Sets the running_job_count of this PerformanceResourceRsp.
+        r"""Sets the running_job_count of this PerformanceResourceRsp.
 
         作业运行数
 
@@ -344,7 +344,7 @@ class PerformanceResourceRsp:
 
     @property
     def job_quota(self):
-        """Gets the job_quota of this PerformanceResourceRsp.
+        r"""Gets the job_quota of this PerformanceResourceRsp.
 
         运行的最大作业数量
 
@@ -355,7 +355,7 @@ class PerformanceResourceRsp:
 
     @job_quota.setter
     def job_quota(self, job_quota):
-        """Sets the job_quota of this PerformanceResourceRsp.
+        r"""Sets the job_quota of this PerformanceResourceRsp.
 
         运行的最大作业数量
 
@@ -366,7 +366,7 @@ class PerformanceResourceRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PerformanceResourceRsp.
+        r"""Gets the create_time of this PerformanceResourceRsp.
 
         购买时间
 
@@ -377,7 +377,7 @@ class PerformanceResourceRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PerformanceResourceRsp.
+        r"""Sets the create_time of this PerformanceResourceRsp.
 
         购买时间
 
@@ -388,7 +388,7 @@ class PerformanceResourceRsp:
 
     @property
     def failure_reason(self):
-        """Gets the failure_reason of this PerformanceResourceRsp.
+        r"""Gets the failure_reason of this PerformanceResourceRsp.
 
         失败原因
 
@@ -399,7 +399,7 @@ class PerformanceResourceRsp:
 
     @failure_reason.setter
     def failure_reason(self, failure_reason):
-        """Sets the failure_reason of this PerformanceResourceRsp.
+        r"""Sets the failure_reason of this PerformanceResourceRsp.
 
         失败原因
 
@@ -410,7 +410,7 @@ class PerformanceResourceRsp:
 
     @property
     def status(self):
-        """Gets the status of this PerformanceResourceRsp.
+        r"""Gets the status of this PerformanceResourceRsp.
 
         状态
 
@@ -421,7 +421,7 @@ class PerformanceResourceRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PerformanceResourceRsp.
+        r"""Sets the status of this PerformanceResourceRsp.
 
         状态
 
@@ -432,7 +432,7 @@ class PerformanceResourceRsp:
 
     @property
     def schedulable(self):
-        """Gets the schedulable of this PerformanceResourceRsp.
+        r"""Gets the schedulable of this PerformanceResourceRsp.
 
         资源是否可调度
 
@@ -443,7 +443,7 @@ class PerformanceResourceRsp:
 
     @schedulable.setter
     def schedulable(self, schedulable):
-        """Sets the schedulable of this PerformanceResourceRsp.
+        r"""Sets the schedulable of this PerformanceResourceRsp.
 
         资源是否可调度
 

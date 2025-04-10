@@ -27,7 +27,7 @@ class Channel:
     }
 
     def __init__(self, by_lte_pc5=None, by_lte_uu=None):
-        """Channel
+        r"""Channel
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Channel:
 
     @property
     def by_lte_pc5(self):
-        """Gets the by_lte_pc5 of this Channel.
+        r"""Gets the by_lte_pc5 of this Channel.
 
         **参数说明**：LTE-PC5传输通道。若通过LTE-PC5传输通道下发事件，该字段为true。
 
@@ -61,7 +61,7 @@ class Channel:
 
     @by_lte_pc5.setter
     def by_lte_pc5(self, by_lte_pc5):
-        """Sets the by_lte_pc5 of this Channel.
+        r"""Sets the by_lte_pc5 of this Channel.
 
         **参数说明**：LTE-PC5传输通道。若通过LTE-PC5传输通道下发事件，该字段为true。
 
@@ -72,7 +72,7 @@ class Channel:
 
     @property
     def by_lte_uu(self):
-        """Gets the by_lte_uu of this Channel.
+        r"""Gets the by_lte_uu of this Channel.
 
         **参数说明**：LTE-Uu的传输通道。若通过LTE-Uu的传输通道下发事件，该字段为true。
 
@@ -83,7 +83,7 @@ class Channel:
 
     @by_lte_uu.setter
     def by_lte_uu(self, by_lte_uu):
-        """Sets the by_lte_uu of this Channel.
+        r"""Sets the by_lte_uu of this Channel.
 
         **参数说明**：LTE-Uu的传输通道。若通过LTE-Uu的传输通道下发事件，该字段为true。
 

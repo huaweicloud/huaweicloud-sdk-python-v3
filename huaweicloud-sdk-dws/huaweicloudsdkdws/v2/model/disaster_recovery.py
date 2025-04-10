@@ -61,7 +61,7 @@ class DisasterRecovery:
     }
 
     def __init__(self, id=None, status=None, name=None, dr_type=None, primary_cluster_id=None, primary_cluster_name=None, standby_cluster_id=None, standby_cluster_name=None, primary_cluster_role=None, standby_cluster_role=None, primary_cluster_status=None, standby_cluster_status=None, primary_cluster_region=None, standby_cluster_region=None, primary_cluster_project_id=None, standby_cluster_project_id=None, last_disaster_time=None, start_time=None, create_time=None):
-        """DisasterRecovery
+        r"""DisasterRecovery
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class DisasterRecovery:
 
     @property
     def id(self):
-        """Gets the id of this DisasterRecovery.
+        r"""Gets the id of this DisasterRecovery.
 
         ID
 
@@ -180,7 +180,7 @@ class DisasterRecovery:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DisasterRecovery.
+        r"""Sets the id of this DisasterRecovery.
 
         ID
 
@@ -191,7 +191,7 @@ class DisasterRecovery:
 
     @property
     def status(self):
-        """Gets the status of this DisasterRecovery.
+        r"""Gets the status of this DisasterRecovery.
 
         状态
 
@@ -202,7 +202,7 @@ class DisasterRecovery:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DisasterRecovery.
+        r"""Sets the status of this DisasterRecovery.
 
         状态
 
@@ -213,7 +213,7 @@ class DisasterRecovery:
 
     @property
     def name(self):
-        """Gets the name of this DisasterRecovery.
+        r"""Gets the name of this DisasterRecovery.
 
         名称
 
@@ -224,7 +224,7 @@ class DisasterRecovery:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DisasterRecovery.
+        r"""Sets the name of this DisasterRecovery.
 
         名称
 
@@ -235,7 +235,7 @@ class DisasterRecovery:
 
     @property
     def dr_type(self):
-        """Gets the dr_type of this DisasterRecovery.
+        r"""Gets the dr_type of this DisasterRecovery.
 
         容灾类型
 
@@ -246,7 +246,7 @@ class DisasterRecovery:
 
     @dr_type.setter
     def dr_type(self, dr_type):
-        """Sets the dr_type of this DisasterRecovery.
+        r"""Sets the dr_type of this DisasterRecovery.
 
         容灾类型
 
@@ -257,7 +257,7 @@ class DisasterRecovery:
 
     @property
     def primary_cluster_id(self):
-        """Gets the primary_cluster_id of this DisasterRecovery.
+        r"""Gets the primary_cluster_id of this DisasterRecovery.
 
         主集群ID
 
@@ -268,7 +268,7 @@ class DisasterRecovery:
 
     @primary_cluster_id.setter
     def primary_cluster_id(self, primary_cluster_id):
-        """Sets the primary_cluster_id of this DisasterRecovery.
+        r"""Sets the primary_cluster_id of this DisasterRecovery.
 
         主集群ID
 
@@ -279,7 +279,7 @@ class DisasterRecovery:
 
     @property
     def primary_cluster_name(self):
-        """Gets the primary_cluster_name of this DisasterRecovery.
+        r"""Gets the primary_cluster_name of this DisasterRecovery.
 
         主集群名称
 
@@ -290,7 +290,7 @@ class DisasterRecovery:
 
     @primary_cluster_name.setter
     def primary_cluster_name(self, primary_cluster_name):
-        """Sets the primary_cluster_name of this DisasterRecovery.
+        r"""Sets the primary_cluster_name of this DisasterRecovery.
 
         主集群名称
 
@@ -301,7 +301,7 @@ class DisasterRecovery:
 
     @property
     def standby_cluster_id(self):
-        """Gets the standby_cluster_id of this DisasterRecovery.
+        r"""Gets the standby_cluster_id of this DisasterRecovery.
 
         备集群ID
 
@@ -312,7 +312,7 @@ class DisasterRecovery:
 
     @standby_cluster_id.setter
     def standby_cluster_id(self, standby_cluster_id):
-        """Sets the standby_cluster_id of this DisasterRecovery.
+        r"""Sets the standby_cluster_id of this DisasterRecovery.
 
         备集群ID
 
@@ -323,7 +323,7 @@ class DisasterRecovery:
 
     @property
     def standby_cluster_name(self):
-        """Gets the standby_cluster_name of this DisasterRecovery.
+        r"""Gets the standby_cluster_name of this DisasterRecovery.
 
         备集群名称
 
@@ -334,7 +334,7 @@ class DisasterRecovery:
 
     @standby_cluster_name.setter
     def standby_cluster_name(self, standby_cluster_name):
-        """Sets the standby_cluster_name of this DisasterRecovery.
+        r"""Sets the standby_cluster_name of this DisasterRecovery.
 
         备集群名称
 
@@ -345,7 +345,7 @@ class DisasterRecovery:
 
     @property
     def primary_cluster_role(self):
-        """Gets the primary_cluster_role of this DisasterRecovery.
+        r"""Gets the primary_cluster_role of this DisasterRecovery.
 
         主集群角色
 
@@ -356,7 +356,7 @@ class DisasterRecovery:
 
     @primary_cluster_role.setter
     def primary_cluster_role(self, primary_cluster_role):
-        """Sets the primary_cluster_role of this DisasterRecovery.
+        r"""Sets the primary_cluster_role of this DisasterRecovery.
 
         主集群角色
 
@@ -367,7 +367,7 @@ class DisasterRecovery:
 
     @property
     def standby_cluster_role(self):
-        """Gets the standby_cluster_role of this DisasterRecovery.
+        r"""Gets the standby_cluster_role of this DisasterRecovery.
 
         备集群角色
 
@@ -378,7 +378,7 @@ class DisasterRecovery:
 
     @standby_cluster_role.setter
     def standby_cluster_role(self, standby_cluster_role):
-        """Sets the standby_cluster_role of this DisasterRecovery.
+        r"""Sets the standby_cluster_role of this DisasterRecovery.
 
         备集群角色
 
@@ -389,7 +389,7 @@ class DisasterRecovery:
 
     @property
     def primary_cluster_status(self):
-        """Gets the primary_cluster_status of this DisasterRecovery.
+        r"""Gets the primary_cluster_status of this DisasterRecovery.
 
         主集群状态
 
@@ -400,7 +400,7 @@ class DisasterRecovery:
 
     @primary_cluster_status.setter
     def primary_cluster_status(self, primary_cluster_status):
-        """Sets the primary_cluster_status of this DisasterRecovery.
+        r"""Sets the primary_cluster_status of this DisasterRecovery.
 
         主集群状态
 
@@ -411,7 +411,7 @@ class DisasterRecovery:
 
     @property
     def standby_cluster_status(self):
-        """Gets the standby_cluster_status of this DisasterRecovery.
+        r"""Gets the standby_cluster_status of this DisasterRecovery.
 
         备集群状态
 
@@ -422,7 +422,7 @@ class DisasterRecovery:
 
     @standby_cluster_status.setter
     def standby_cluster_status(self, standby_cluster_status):
-        """Sets the standby_cluster_status of this DisasterRecovery.
+        r"""Sets the standby_cluster_status of this DisasterRecovery.
 
         备集群状态
 
@@ -433,7 +433,7 @@ class DisasterRecovery:
 
     @property
     def primary_cluster_region(self):
-        """Gets the primary_cluster_region of this DisasterRecovery.
+        r"""Gets the primary_cluster_region of this DisasterRecovery.
 
         主集群region
 
@@ -444,7 +444,7 @@ class DisasterRecovery:
 
     @primary_cluster_region.setter
     def primary_cluster_region(self, primary_cluster_region):
-        """Sets the primary_cluster_region of this DisasterRecovery.
+        r"""Sets the primary_cluster_region of this DisasterRecovery.
 
         主集群region
 
@@ -455,7 +455,7 @@ class DisasterRecovery:
 
     @property
     def standby_cluster_region(self):
-        """Gets the standby_cluster_region of this DisasterRecovery.
+        r"""Gets the standby_cluster_region of this DisasterRecovery.
 
         备集群region
 
@@ -466,7 +466,7 @@ class DisasterRecovery:
 
     @standby_cluster_region.setter
     def standby_cluster_region(self, standby_cluster_region):
-        """Sets the standby_cluster_region of this DisasterRecovery.
+        r"""Sets the standby_cluster_region of this DisasterRecovery.
 
         备集群region
 
@@ -477,7 +477,7 @@ class DisasterRecovery:
 
     @property
     def primary_cluster_project_id(self):
-        """Gets the primary_cluster_project_id of this DisasterRecovery.
+        r"""Gets the primary_cluster_project_id of this DisasterRecovery.
 
         主集群project_id
 
@@ -488,7 +488,7 @@ class DisasterRecovery:
 
     @primary_cluster_project_id.setter
     def primary_cluster_project_id(self, primary_cluster_project_id):
-        """Sets the primary_cluster_project_id of this DisasterRecovery.
+        r"""Sets the primary_cluster_project_id of this DisasterRecovery.
 
         主集群project_id
 
@@ -499,7 +499,7 @@ class DisasterRecovery:
 
     @property
     def standby_cluster_project_id(self):
-        """Gets the standby_cluster_project_id of this DisasterRecovery.
+        r"""Gets the standby_cluster_project_id of this DisasterRecovery.
 
         备集群project_id
 
@@ -510,7 +510,7 @@ class DisasterRecovery:
 
     @standby_cluster_project_id.setter
     def standby_cluster_project_id(self, standby_cluster_project_id):
-        """Sets the standby_cluster_project_id of this DisasterRecovery.
+        r"""Sets the standby_cluster_project_id of this DisasterRecovery.
 
         备集群project_id
 
@@ -521,7 +521,7 @@ class DisasterRecovery:
 
     @property
     def last_disaster_time(self):
-        """Gets the last_disaster_time of this DisasterRecovery.
+        r"""Gets the last_disaster_time of this DisasterRecovery.
 
         最近同步时间
 
@@ -532,7 +532,7 @@ class DisasterRecovery:
 
     @last_disaster_time.setter
     def last_disaster_time(self, last_disaster_time):
-        """Sets the last_disaster_time of this DisasterRecovery.
+        r"""Sets the last_disaster_time of this DisasterRecovery.
 
         最近同步时间
 
@@ -543,7 +543,7 @@ class DisasterRecovery:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DisasterRecovery.
+        r"""Gets the start_time of this DisasterRecovery.
 
         启动时间
 
@@ -554,7 +554,7 @@ class DisasterRecovery:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DisasterRecovery.
+        r"""Sets the start_time of this DisasterRecovery.
 
         启动时间
 
@@ -565,7 +565,7 @@ class DisasterRecovery:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DisasterRecovery.
+        r"""Gets the create_time of this DisasterRecovery.
 
         创建时间
 
@@ -576,7 +576,7 @@ class DisasterRecovery:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DisasterRecovery.
+        r"""Sets the create_time of this DisasterRecovery.
 
         创建时间
 

@@ -27,7 +27,7 @@ class RestoreExistInstanceRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """RestoreExistInstanceRequest
+        r"""RestoreExistInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RestoreExistInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RestoreExistInstanceRequest.
+        r"""Gets the x_language of this RestoreExistInstanceRequest.
 
         语言
 
@@ -61,7 +61,7 @@ class RestoreExistInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RestoreExistInstanceRequest.
+        r"""Sets the x_language of this RestoreExistInstanceRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class RestoreExistInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this RestoreExistInstanceRequest.
+        r"""Gets the body of this RestoreExistInstanceRequest.
 
         :return: The body of this RestoreExistInstanceRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.RestoreExistingInstanceRequestBody`
@@ -81,7 +81,7 @@ class RestoreExistInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestoreExistInstanceRequest.
+        r"""Sets the body of this RestoreExistInstanceRequest.
 
         :param body: The body of this RestoreExistInstanceRequest.
         :type body: :class:`huaweicloudsdkrds.v3.RestoreExistingInstanceRequestBody`

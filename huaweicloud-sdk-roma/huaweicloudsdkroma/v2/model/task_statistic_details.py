@@ -31,7 +31,7 @@ class TaskStatisticDetails:
     }
 
     def __init__(self, running_tasks_count=None, abnormal_tasks_count=None, terminated_tasks_count=None, completed_tasks_count=None):
-        """TaskStatisticDetails
+        r"""TaskStatisticDetails
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TaskStatisticDetails:
 
     @property
     def running_tasks_count(self):
-        """Gets the running_tasks_count of this TaskStatisticDetails.
+        r"""Gets the running_tasks_count of this TaskStatisticDetails.
 
         运行任务数量
 
@@ -75,7 +75,7 @@ class TaskStatisticDetails:
 
     @running_tasks_count.setter
     def running_tasks_count(self, running_tasks_count):
-        """Sets the running_tasks_count of this TaskStatisticDetails.
+        r"""Sets the running_tasks_count of this TaskStatisticDetails.
 
         运行任务数量
 
@@ -86,7 +86,7 @@ class TaskStatisticDetails:
 
     @property
     def abnormal_tasks_count(self):
-        """Gets the abnormal_tasks_count of this TaskStatisticDetails.
+        r"""Gets the abnormal_tasks_count of this TaskStatisticDetails.
 
         异常任务数量
 
@@ -97,7 +97,7 @@ class TaskStatisticDetails:
 
     @abnormal_tasks_count.setter
     def abnormal_tasks_count(self, abnormal_tasks_count):
-        """Sets the abnormal_tasks_count of this TaskStatisticDetails.
+        r"""Sets the abnormal_tasks_count of this TaskStatisticDetails.
 
         异常任务数量
 
@@ -108,7 +108,7 @@ class TaskStatisticDetails:
 
     @property
     def terminated_tasks_count(self):
-        """Gets the terminated_tasks_count of this TaskStatisticDetails.
+        r"""Gets the terminated_tasks_count of this TaskStatisticDetails.
 
         终止任务数量
 
@@ -119,7 +119,7 @@ class TaskStatisticDetails:
 
     @terminated_tasks_count.setter
     def terminated_tasks_count(self, terminated_tasks_count):
-        """Sets the terminated_tasks_count of this TaskStatisticDetails.
+        r"""Sets the terminated_tasks_count of this TaskStatisticDetails.
 
         终止任务数量
 
@@ -130,7 +130,7 @@ class TaskStatisticDetails:
 
     @property
     def completed_tasks_count(self):
-        """Gets the completed_tasks_count of this TaskStatisticDetails.
+        r"""Gets the completed_tasks_count of this TaskStatisticDetails.
 
         成功任务数量
 
@@ -141,7 +141,7 @@ class TaskStatisticDetails:
 
     @completed_tasks_count.setter
     def completed_tasks_count(self, completed_tasks_count):
-        """Sets the completed_tasks_count of this TaskStatisticDetails.
+        r"""Sets the completed_tasks_count of this TaskStatisticDetails.
 
         成功任务数量
 

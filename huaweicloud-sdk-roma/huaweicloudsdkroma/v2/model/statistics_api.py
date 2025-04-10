@@ -65,7 +65,7 @@ class StatisticsAPI:
     }
 
     def __init__(self, max_latency=None, avg_latency=None, req_count=None, req_count2xx=None, req_count4xx=None, req_count5xx=None, req_count_error=None, max_inner_latency=None, avg_inner_latency=None, max_backend_latency=None, avg_backend_latency=None, output_throughput=None, input_throughput=None, current_minute=None, cycle=None, api_id=None, group_id=None, provider=None, req_time=None, register_time=None, status=None):
-        """StatisticsAPI
+        r"""StatisticsAPI
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class StatisticsAPI:
 
     @property
     def max_latency(self):
-        """Gets the max_latency of this StatisticsAPI.
+        r"""Gets the max_latency of this StatisticsAPI.
 
         最大延时
 
@@ -194,7 +194,7 @@ class StatisticsAPI:
 
     @max_latency.setter
     def max_latency(self, max_latency):
-        """Sets the max_latency of this StatisticsAPI.
+        r"""Sets the max_latency of this StatisticsAPI.
 
         最大延时
 
@@ -205,7 +205,7 @@ class StatisticsAPI:
 
     @property
     def avg_latency(self):
-        """Gets the avg_latency of this StatisticsAPI.
+        r"""Gets the avg_latency of this StatisticsAPI.
 
         平均延时
 
@@ -216,7 +216,7 @@ class StatisticsAPI:
 
     @avg_latency.setter
     def avg_latency(self, avg_latency):
-        """Sets the avg_latency of this StatisticsAPI.
+        r"""Sets the avg_latency of this StatisticsAPI.
 
         平均延时
 
@@ -227,7 +227,7 @@ class StatisticsAPI:
 
     @property
     def req_count(self):
-        """Gets the req_count of this StatisticsAPI.
+        r"""Gets the req_count of this StatisticsAPI.
 
         请求总次数
 
@@ -238,7 +238,7 @@ class StatisticsAPI:
 
     @req_count.setter
     def req_count(self, req_count):
-        """Sets the req_count of this StatisticsAPI.
+        r"""Sets the req_count of this StatisticsAPI.
 
         请求总次数
 
@@ -249,7 +249,7 @@ class StatisticsAPI:
 
     @property
     def req_count2xx(self):
-        """Gets the req_count2xx of this StatisticsAPI.
+        r"""Gets the req_count2xx of this StatisticsAPI.
 
         2xx响应码总次数
 
@@ -260,7 +260,7 @@ class StatisticsAPI:
 
     @req_count2xx.setter
     def req_count2xx(self, req_count2xx):
-        """Sets the req_count2xx of this StatisticsAPI.
+        r"""Sets the req_count2xx of this StatisticsAPI.
 
         2xx响应码总次数
 
@@ -271,7 +271,7 @@ class StatisticsAPI:
 
     @property
     def req_count4xx(self):
-        """Gets the req_count4xx of this StatisticsAPI.
+        r"""Gets the req_count4xx of this StatisticsAPI.
 
         4xx响应码总次数
 
@@ -282,7 +282,7 @@ class StatisticsAPI:
 
     @req_count4xx.setter
     def req_count4xx(self, req_count4xx):
-        """Sets the req_count4xx of this StatisticsAPI.
+        r"""Sets the req_count4xx of this StatisticsAPI.
 
         4xx响应码总次数
 
@@ -293,7 +293,7 @@ class StatisticsAPI:
 
     @property
     def req_count5xx(self):
-        """Gets the req_count5xx of this StatisticsAPI.
+        r"""Gets the req_count5xx of this StatisticsAPI.
 
         5xx响应码总次数
 
@@ -304,7 +304,7 @@ class StatisticsAPI:
 
     @req_count5xx.setter
     def req_count5xx(self, req_count5xx):
-        """Sets the req_count5xx of this StatisticsAPI.
+        r"""Sets the req_count5xx of this StatisticsAPI.
 
         5xx响应码总次数
 
@@ -315,7 +315,7 @@ class StatisticsAPI:
 
     @property
     def req_count_error(self):
-        """Gets the req_count_error of this StatisticsAPI.
+        r"""Gets the req_count_error of this StatisticsAPI.
 
         错误次数
 
@@ -326,7 +326,7 @@ class StatisticsAPI:
 
     @req_count_error.setter
     def req_count_error(self, req_count_error):
-        """Sets the req_count_error of this StatisticsAPI.
+        r"""Sets the req_count_error of this StatisticsAPI.
 
         错误次数
 
@@ -337,7 +337,7 @@ class StatisticsAPI:
 
     @property
     def max_inner_latency(self):
-        """Gets the max_inner_latency of this StatisticsAPI.
+        r"""Gets the max_inner_latency of this StatisticsAPI.
 
         最大网关内部延时
 
@@ -348,7 +348,7 @@ class StatisticsAPI:
 
     @max_inner_latency.setter
     def max_inner_latency(self, max_inner_latency):
-        """Sets the max_inner_latency of this StatisticsAPI.
+        r"""Sets the max_inner_latency of this StatisticsAPI.
 
         最大网关内部延时
 
@@ -359,7 +359,7 @@ class StatisticsAPI:
 
     @property
     def avg_inner_latency(self):
-        """Gets the avg_inner_latency of this StatisticsAPI.
+        r"""Gets the avg_inner_latency of this StatisticsAPI.
 
         平均网关内部延时
 
@@ -370,7 +370,7 @@ class StatisticsAPI:
 
     @avg_inner_latency.setter
     def avg_inner_latency(self, avg_inner_latency):
-        """Sets the avg_inner_latency of this StatisticsAPI.
+        r"""Sets the avg_inner_latency of this StatisticsAPI.
 
         平均网关内部延时
 
@@ -381,7 +381,7 @@ class StatisticsAPI:
 
     @property
     def max_backend_latency(self):
-        """Gets the max_backend_latency of this StatisticsAPI.
+        r"""Gets the max_backend_latency of this StatisticsAPI.
 
         最大后端延时
 
@@ -392,7 +392,7 @@ class StatisticsAPI:
 
     @max_backend_latency.setter
     def max_backend_latency(self, max_backend_latency):
-        """Sets the max_backend_latency of this StatisticsAPI.
+        r"""Sets the max_backend_latency of this StatisticsAPI.
 
         最大后端延时
 
@@ -403,7 +403,7 @@ class StatisticsAPI:
 
     @property
     def avg_backend_latency(self):
-        """Gets the avg_backend_latency of this StatisticsAPI.
+        r"""Gets the avg_backend_latency of this StatisticsAPI.
 
         平均后端延时
 
@@ -414,7 +414,7 @@ class StatisticsAPI:
 
     @avg_backend_latency.setter
     def avg_backend_latency(self, avg_backend_latency):
-        """Sets the avg_backend_latency of this StatisticsAPI.
+        r"""Sets the avg_backend_latency of this StatisticsAPI.
 
         平均后端延时
 
@@ -425,7 +425,7 @@ class StatisticsAPI:
 
     @property
     def output_throughput(self):
-        """Gets the output_throughput of this StatisticsAPI.
+        r"""Gets the output_throughput of this StatisticsAPI.
 
         下行吞吐量（byte）
 
@@ -436,7 +436,7 @@ class StatisticsAPI:
 
     @output_throughput.setter
     def output_throughput(self, output_throughput):
-        """Sets the output_throughput of this StatisticsAPI.
+        r"""Sets the output_throughput of this StatisticsAPI.
 
         下行吞吐量（byte）
 
@@ -447,7 +447,7 @@ class StatisticsAPI:
 
     @property
     def input_throughput(self):
-        """Gets the input_throughput of this StatisticsAPI.
+        r"""Gets the input_throughput of this StatisticsAPI.
 
         上行吞吐量（byte）
 
@@ -458,7 +458,7 @@ class StatisticsAPI:
 
     @input_throughput.setter
     def input_throughput(self, input_throughput):
-        """Sets the input_throughput of this StatisticsAPI.
+        r"""Sets the input_throughput of this StatisticsAPI.
 
         上行吞吐量（byte）
 
@@ -469,7 +469,7 @@ class StatisticsAPI:
 
     @property
     def current_minute(self):
-        """Gets the current_minute of this StatisticsAPI.
+        r"""Gets the current_minute of this StatisticsAPI.
 
         API访问的UTC时间戳
 
@@ -480,7 +480,7 @@ class StatisticsAPI:
 
     @current_minute.setter
     def current_minute(self, current_minute):
-        """Sets the current_minute of this StatisticsAPI.
+        r"""Sets the current_minute of this StatisticsAPI.
 
         API访问的UTC时间戳
 
@@ -491,7 +491,7 @@ class StatisticsAPI:
 
     @property
     def cycle(self):
-        """Gets the cycle of this StatisticsAPI.
+        r"""Gets the cycle of this StatisticsAPI.
 
         查询统计周期
 
@@ -502,7 +502,7 @@ class StatisticsAPI:
 
     @cycle.setter
     def cycle(self, cycle):
-        """Sets the cycle of this StatisticsAPI.
+        r"""Sets the cycle of this StatisticsAPI.
 
         查询统计周期
 
@@ -513,7 +513,7 @@ class StatisticsAPI:
 
     @property
     def api_id(self):
-        """Gets the api_id of this StatisticsAPI.
+        r"""Gets the api_id of this StatisticsAPI.
 
         API编号
 
@@ -524,7 +524,7 @@ class StatisticsAPI:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this StatisticsAPI.
+        r"""Sets the api_id of this StatisticsAPI.
 
         API编号
 
@@ -535,7 +535,7 @@ class StatisticsAPI:
 
     @property
     def group_id(self):
-        """Gets the group_id of this StatisticsAPI.
+        r"""Gets the group_id of this StatisticsAPI.
 
         API分组编号
 
@@ -546,7 +546,7 @@ class StatisticsAPI:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this StatisticsAPI.
+        r"""Sets the group_id of this StatisticsAPI.
 
         API分组编号
 
@@ -557,7 +557,7 @@ class StatisticsAPI:
 
     @property
     def provider(self):
-        """Gets the provider of this StatisticsAPI.
+        r"""Gets the provider of this StatisticsAPI.
 
         API拥有者
 
@@ -568,7 +568,7 @@ class StatisticsAPI:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this StatisticsAPI.
+        r"""Sets the provider of this StatisticsAPI.
 
         API拥有者
 
@@ -579,7 +579,7 @@ class StatisticsAPI:
 
     @property
     def req_time(self):
-        """Gets the req_time of this StatisticsAPI.
+        r"""Gets the req_time of this StatisticsAPI.
 
         API请求时间
 
@@ -590,7 +590,7 @@ class StatisticsAPI:
 
     @req_time.setter
     def req_time(self, req_time):
-        """Sets the req_time of this StatisticsAPI.
+        r"""Sets the req_time of this StatisticsAPI.
 
         API请求时间
 
@@ -601,7 +601,7 @@ class StatisticsAPI:
 
     @property
     def register_time(self):
-        """Gets the register_time of this StatisticsAPI.
+        r"""Gets the register_time of this StatisticsAPI.
 
         记录时间
 
@@ -612,7 +612,7 @@ class StatisticsAPI:
 
     @register_time.setter
     def register_time(self, register_time):
-        """Sets the register_time of this StatisticsAPI.
+        r"""Sets the register_time of this StatisticsAPI.
 
         记录时间
 
@@ -623,7 +623,7 @@ class StatisticsAPI:
 
     @property
     def status(self):
-        """Gets the status of this StatisticsAPI.
+        r"""Gets the status of this StatisticsAPI.
 
         状态值： - 1：调度中，未上报CES - 2：已经成功上报CES  预留字段，暂不支持
 
@@ -634,7 +634,7 @@ class StatisticsAPI:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StatisticsAPI.
+        r"""Sets the status of this StatisticsAPI.
 
         状态值： - 1：调度中，未上报CES - 2：已经成功上报CES  预留字段，暂不支持
 

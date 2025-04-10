@@ -27,7 +27,7 @@ class ShowCatalogRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None):
-        """ShowCatalogRequest
+        r"""ShowCatalogRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowCatalogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowCatalogRequest.
+        r"""Gets the instance_id of this ShowCatalogRequest.
 
         实例ID
 
@@ -59,7 +59,7 @@ class ShowCatalogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowCatalogRequest.
+        r"""Sets the instance_id of this ShowCatalogRequest.
 
         实例ID
 
@@ -70,7 +70,7 @@ class ShowCatalogRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ShowCatalogRequest.
+        r"""Gets the catalog_name of this ShowCatalogRequest.
 
         被查询的catalog名字
 
@@ -81,7 +81,7 @@ class ShowCatalogRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ShowCatalogRequest.
+        r"""Sets the catalog_name of this ShowCatalogRequest.
 
         被查询的catalog名字
 

@@ -26,7 +26,7 @@ class CreateGaussMySqlConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, configurations=None):
-        """CreateGaussMySqlConfigurationResponse
+        r"""CreateGaussMySqlConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateGaussMySqlConfigurationResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this CreateGaussMySqlConfigurationResponse.
+        r"""Gets the configurations of this CreateGaussMySqlConfigurationResponse.
 
         :return: The configurations of this CreateGaussMySqlConfigurationResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ConfigurationSummary2`
@@ -53,7 +53,7 @@ class CreateGaussMySqlConfigurationResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this CreateGaussMySqlConfigurationResponse.
+        r"""Sets the configurations of this CreateGaussMySqlConfigurationResponse.
 
         :param configurations: The configurations of this CreateGaussMySqlConfigurationResponse.
         :type configurations: :class:`huaweicloudsdkgaussdb.v3.ConfigurationSummary2`

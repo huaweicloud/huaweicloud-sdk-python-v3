@@ -25,7 +25,7 @@ class CommRequestListString:
     }
 
     def __init__(self, params=None):
-        """CommRequestListString
+        r"""CommRequestListString
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CommRequestListString:
 
     @property
     def params(self):
-        """Gets the params of this CommRequestListString.
+        r"""Gets the params of this CommRequestListString.
 
         :return: The params of this CommRequestListString.
         :rtype: list[str]
@@ -51,7 +51,7 @@ class CommRequestListString:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CommRequestListString.
+        r"""Sets the params of this CommRequestListString.
 
         :param params: The params of this CommRequestListString.
         :type params: list[str]

@@ -33,7 +33,7 @@ class ListBranchesRequest:
     }
 
     def __init__(self, project_id=None, sort_field=None, sort_type=None, offset=None, limit=None):
-        """ListBranchesRequest
+        r"""ListBranchesRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListBranchesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListBranchesRequest.
+        r"""Gets the project_id of this ListBranchesRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -79,7 +79,7 @@ class ListBranchesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListBranchesRequest.
+        r"""Sets the project_id of this ListBranchesRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -90,7 +90,7 @@ class ListBranchesRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ListBranchesRequest.
+        r"""Gets the sort_field of this ListBranchesRequest.
 
         排序字段
 
@@ -101,7 +101,7 @@ class ListBranchesRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ListBranchesRequest.
+        r"""Sets the sort_field of this ListBranchesRequest.
 
         排序字段
 
@@ -112,7 +112,7 @@ class ListBranchesRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this ListBranchesRequest.
+        r"""Gets the sort_type of this ListBranchesRequest.
 
         排序方式
 
@@ -123,7 +123,7 @@ class ListBranchesRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this ListBranchesRequest.
+        r"""Sets the sort_type of this ListBranchesRequest.
 
         排序方式
 
@@ -134,7 +134,7 @@ class ListBranchesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBranchesRequest.
+        r"""Gets the offset of this ListBranchesRequest.
 
         起始偏移量，表示从此偏移量开始查询， offset大于等于0，小于等于20000
 
@@ -145,7 +145,7 @@ class ListBranchesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBranchesRequest.
+        r"""Sets the offset of this ListBranchesRequest.
 
         起始偏移量，表示从此偏移量开始查询， offset大于等于0，小于等于20000
 
@@ -156,7 +156,7 @@ class ListBranchesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBranchesRequest.
+        r"""Gets the limit of this ListBranchesRequest.
 
         每页显示的条目数量，最大支持200条
 
@@ -167,7 +167,7 @@ class ListBranchesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBranchesRequest.
+        r"""Sets the limit of this ListBranchesRequest.
 
         每页显示的条目数量，最大支持200条
 

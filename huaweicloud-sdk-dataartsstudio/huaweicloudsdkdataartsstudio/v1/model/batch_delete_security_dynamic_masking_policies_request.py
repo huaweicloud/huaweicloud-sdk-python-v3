@@ -27,7 +27,7 @@ class BatchDeleteSecurityDynamicMaskingPoliciesRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """BatchDeleteSecurityDynamicMaskingPoliciesRequest
+        r"""BatchDeleteSecurityDynamicMaskingPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteSecurityDynamicMaskingPoliciesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this BatchDeleteSecurityDynamicMaskingPoliciesRequest.
+        r"""Gets the workspace of this BatchDeleteSecurityDynamicMaskingPoliciesRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class BatchDeleteSecurityDynamicMaskingPoliciesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this BatchDeleteSecurityDynamicMaskingPoliciesRequest.
+        r"""Sets the workspace of this BatchDeleteSecurityDynamicMaskingPoliciesRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class BatchDeleteSecurityDynamicMaskingPoliciesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteSecurityDynamicMaskingPoliciesRequest.
+        r"""Gets the body of this BatchDeleteSecurityDynamicMaskingPoliciesRequest.
 
         :return: The body of this BatchDeleteSecurityDynamicMaskingPoliciesRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeletePolicySetsDTO`
@@ -80,7 +80,7 @@ class BatchDeleteSecurityDynamicMaskingPoliciesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteSecurityDynamicMaskingPoliciesRequest.
+        r"""Sets the body of this BatchDeleteSecurityDynamicMaskingPoliciesRequest.
 
         :param body: The body of this BatchDeleteSecurityDynamicMaskingPoliciesRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeletePolicySetsDTO`

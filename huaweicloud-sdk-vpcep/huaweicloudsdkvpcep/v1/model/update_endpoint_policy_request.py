@@ -27,7 +27,7 @@ class UpdateEndpointPolicyRequest:
     }
 
     def __init__(self, vpc_endpoint_id=None, body=None):
-        """UpdateEndpointPolicyRequest
+        r"""UpdateEndpointPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEndpointPolicyRequest:
 
     @property
     def vpc_endpoint_id(self):
-        """Gets the vpc_endpoint_id of this UpdateEndpointPolicyRequest.
+        r"""Gets the vpc_endpoint_id of this UpdateEndpointPolicyRequest.
 
         终端节点的ID。
 
@@ -60,7 +60,7 @@ class UpdateEndpointPolicyRequest:
 
     @vpc_endpoint_id.setter
     def vpc_endpoint_id(self, vpc_endpoint_id):
-        """Sets the vpc_endpoint_id of this UpdateEndpointPolicyRequest.
+        r"""Sets the vpc_endpoint_id of this UpdateEndpointPolicyRequest.
 
         终端节点的ID。
 
@@ -71,7 +71,7 @@ class UpdateEndpointPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEndpointPolicyRequest.
+        r"""Gets the body of this UpdateEndpointPolicyRequest.
 
         :return: The body of this UpdateEndpointPolicyRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointPolicyRequestBody`
@@ -80,7 +80,7 @@ class UpdateEndpointPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEndpointPolicyRequest.
+        r"""Sets the body of this UpdateEndpointPolicyRequest.
 
         :param body: The body of this UpdateEndpointPolicyRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointPolicyRequestBody`

@@ -45,7 +45,7 @@ class Spec:
     }
 
     def __init__(self, spec_code=None, resource_type=None, stride=None, unit=None, min_stride_num=None, max_stride_num=None, usage_measure_id=None, usage_factor=None, usage_value=None, free_usage_value=None, stride_num_whitelist=None):
-        """Spec
+        r"""Spec
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class Spec:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this Spec.
+        r"""Gets the spec_code of this Spec.
 
         规格编码。lakeformation.unit.basic.qps：每秒查询率（QPS）产品
 
@@ -124,7 +124,7 @@ class Spec:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this Spec.
+        r"""Sets the spec_code of this Spec.
 
         规格编码。lakeformation.unit.basic.qps：每秒查询率（QPS）产品
 
@@ -135,7 +135,7 @@ class Spec:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Spec.
+        r"""Gets the resource_type of this Spec.
 
         资源编码
 
@@ -146,7 +146,7 @@ class Spec:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Spec.
+        r"""Sets the resource_type of this Spec.
 
         资源编码
 
@@ -157,7 +157,7 @@ class Spec:
 
     @property
     def stride(self):
-        """Gets the stride of this Spec.
+        r"""Gets the stride of this Spec.
 
         步长
 
@@ -168,7 +168,7 @@ class Spec:
 
     @stride.setter
     def stride(self, stride):
-        """Sets the stride of this Spec.
+        r"""Sets the stride of this Spec.
 
         步长
 
@@ -179,7 +179,7 @@ class Spec:
 
     @property
     def unit(self):
-        """Gets the unit of this Spec.
+        r"""Gets the unit of this Spec.
 
         单位
 
@@ -190,7 +190,7 @@ class Spec:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this Spec.
+        r"""Sets the unit of this Spec.
 
         单位
 
@@ -201,7 +201,7 @@ class Spec:
 
     @property
     def min_stride_num(self):
-        """Gets the min_stride_num of this Spec.
+        r"""Gets the min_stride_num of this Spec.
 
         最小步数
 
@@ -212,7 +212,7 @@ class Spec:
 
     @min_stride_num.setter
     def min_stride_num(self, min_stride_num):
-        """Sets the min_stride_num of this Spec.
+        r"""Sets the min_stride_num of this Spec.
 
         最小步数
 
@@ -223,7 +223,7 @@ class Spec:
 
     @property
     def max_stride_num(self):
-        """Gets the max_stride_num of this Spec.
+        r"""Gets the max_stride_num of this Spec.
 
         最大步数
 
@@ -234,7 +234,7 @@ class Spec:
 
     @max_stride_num.setter
     def max_stride_num(self, max_stride_num):
-        """Sets the max_stride_num of this Spec.
+        r"""Sets the max_stride_num of this Spec.
 
         最大步数
 
@@ -245,7 +245,7 @@ class Spec:
 
     @property
     def usage_measure_id(self):
-        """Gets the usage_measure_id of this Spec.
+        r"""Gets the usage_measure_id of this Spec.
 
         使用量单位标识
 
@@ -256,7 +256,7 @@ class Spec:
 
     @usage_measure_id.setter
     def usage_measure_id(self, usage_measure_id):
-        """Sets the usage_measure_id of this Spec.
+        r"""Sets the usage_measure_id of this Spec.
 
         使用量单位标识
 
@@ -267,7 +267,7 @@ class Spec:
 
     @property
     def usage_factor(self):
-        """Gets the usage_factor of this Spec.
+        r"""Gets the usage_factor of this Spec.
 
         使用量因子
 
@@ -278,7 +278,7 @@ class Spec:
 
     @usage_factor.setter
     def usage_factor(self, usage_factor):
-        """Sets the usage_factor of this Spec.
+        r"""Sets the usage_factor of this Spec.
 
         使用量因子
 
@@ -289,7 +289,7 @@ class Spec:
 
     @property
     def usage_value(self):
-        """Gets the usage_value of this Spec.
+        r"""Gets the usage_value of this Spec.
 
         使用量，包含免费额度和单位额度，例如api调用次数，单位是次，前100万次调用免费，计费标准是5元每100万次，这里返回200万，元数据个数，单位是万个，前100万个免费，计费标准是5元每10万个，这里返回110
 
@@ -300,7 +300,7 @@ class Spec:
 
     @usage_value.setter
     def usage_value(self, usage_value):
-        """Sets the usage_value of this Spec.
+        r"""Sets the usage_value of this Spec.
 
         使用量，包含免费额度和单位额度，例如api调用次数，单位是次，前100万次调用免费，计费标准是5元每100万次，这里返回200万，元数据个数，单位是万个，前100万个免费，计费标准是5元每10万个，这里返回110
 
@@ -311,7 +311,7 @@ class Spec:
 
     @property
     def free_usage_value(self):
-        """Gets the free_usage_value of this Spec.
+        r"""Gets the free_usage_value of this Spec.
 
         免费使用额度，例如api调用次数，单位是次，前100万次调用免费，这里返回100万，元数据个数，单位是万个，前100万个免费，这里返回100
 
@@ -322,7 +322,7 @@ class Spec:
 
     @free_usage_value.setter
     def free_usage_value(self, free_usage_value):
-        """Sets the free_usage_value of this Spec.
+        r"""Sets the free_usage_value of this Spec.
 
         免费使用额度，例如api调用次数，单位是次，前100万次调用免费，这里返回100万，元数据个数，单位是万个，前100万个免费，这里返回100
 
@@ -333,7 +333,7 @@ class Spec:
 
     @property
     def stride_num_whitelist(self):
-        """Gets the stride_num_whitelist of this Spec.
+        r"""Gets the stride_num_whitelist of this Spec.
 
         步数白名单，返回时，步数必须是白名单中的值
 
@@ -344,7 +344,7 @@ class Spec:
 
     @stride_num_whitelist.setter
     def stride_num_whitelist(self, stride_num_whitelist):
-        """Sets the stride_num_whitelist of this Spec.
+        r"""Sets the stride_num_whitelist of this Spec.
 
         步数白名单，返回时，步数必须是白名单中的值
 

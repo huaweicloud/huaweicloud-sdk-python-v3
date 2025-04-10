@@ -25,7 +25,7 @@ class BatchRebootServersRequestBody:
     }
 
     def __init__(self, reboot=None):
-        """BatchRebootServersRequestBody
+        r"""BatchRebootServersRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchRebootServersRequestBody:
 
     @property
     def reboot(self):
-        """Gets the reboot of this BatchRebootServersRequestBody.
+        r"""Gets the reboot of this BatchRebootServersRequestBody.
 
         :return: The reboot of this BatchRebootServersRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.BatchRebootSeversOption`
@@ -51,7 +51,7 @@ class BatchRebootServersRequestBody:
 
     @reboot.setter
     def reboot(self, reboot):
-        """Sets the reboot of this BatchRebootServersRequestBody.
+        r"""Sets the reboot of this BatchRebootServersRequestBody.
 
         :param reboot: The reboot of this BatchRebootServersRequestBody.
         :type reboot: :class:`huaweicloudsdkecs.v2.BatchRebootSeversOption`

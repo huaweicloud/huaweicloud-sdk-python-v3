@@ -26,7 +26,7 @@ class ImportNetworkDataResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """ImportNetworkDataResponse
+        r"""ImportNetworkDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportNetworkDataResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ImportNetworkDataResponse.
+        r"""Gets the id of this ImportNetworkDataResponse.
 
         数据作业ID
 
@@ -55,7 +55,7 @@ class ImportNetworkDataResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImportNetworkDataResponse.
+        r"""Sets the id of this ImportNetworkDataResponse.
 
         数据作业ID
 

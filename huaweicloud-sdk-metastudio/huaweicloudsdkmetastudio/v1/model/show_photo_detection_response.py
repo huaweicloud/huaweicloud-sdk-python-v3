@@ -34,7 +34,7 @@ class ShowPhotoDetectionResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, state=None, error_info=None, create_time=None, x_request_id=None):
-        """ShowPhotoDetectionResponse
+        r"""ShowPhotoDetectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowPhotoDetectionResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowPhotoDetectionResponse.
+        r"""Gets the job_id of this ShowPhotoDetectionResponse.
 
         任务ID。
 
@@ -83,7 +83,7 @@ class ShowPhotoDetectionResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowPhotoDetectionResponse.
+        r"""Sets the job_id of this ShowPhotoDetectionResponse.
 
         任务ID。
 
@@ -94,7 +94,7 @@ class ShowPhotoDetectionResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowPhotoDetectionResponse.
+        r"""Gets the state of this ShowPhotoDetectionResponse.
 
         任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
 
@@ -105,7 +105,7 @@ class ShowPhotoDetectionResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowPhotoDetectionResponse.
+        r"""Sets the state of this ShowPhotoDetectionResponse.
 
         任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消
 
@@ -116,7 +116,7 @@ class ShowPhotoDetectionResponse(SdkResponse):
 
     @property
     def error_info(self):
-        """Gets the error_info of this ShowPhotoDetectionResponse.
+        r"""Gets the error_info of this ShowPhotoDetectionResponse.
 
         :return: The error_info of this ShowPhotoDetectionResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -125,7 +125,7 @@ class ShowPhotoDetectionResponse(SdkResponse):
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this ShowPhotoDetectionResponse.
+        r"""Sets the error_info of this ShowPhotoDetectionResponse.
 
         :param error_info: The error_info of this ShowPhotoDetectionResponse.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -134,7 +134,7 @@ class ShowPhotoDetectionResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowPhotoDetectionResponse.
+        r"""Gets the create_time of this ShowPhotoDetectionResponse.
 
         任务创建时间。
 
@@ -145,7 +145,7 @@ class ShowPhotoDetectionResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowPhotoDetectionResponse.
+        r"""Sets the create_time of this ShowPhotoDetectionResponse.
 
         任务创建时间。
 
@@ -156,7 +156,7 @@ class ShowPhotoDetectionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowPhotoDetectionResponse.
+        r"""Gets the x_request_id of this ShowPhotoDetectionResponse.
 
         :return: The x_request_id of this ShowPhotoDetectionResponse.
         :rtype: str
@@ -165,7 +165,7 @@ class ShowPhotoDetectionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowPhotoDetectionResponse.
+        r"""Sets the x_request_id of this ShowPhotoDetectionResponse.
 
         :param x_request_id: The x_request_id of this ShowPhotoDetectionResponse.
         :type x_request_id: str

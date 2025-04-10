@@ -32,7 +32,7 @@ class ListResWorkspacesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, workspaces=None, message=None, error_code=None):
-        """ListResWorkspacesResponse
+        r"""ListResWorkspacesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListResWorkspacesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListResWorkspacesResponse.
+        r"""Gets the is_success of this ListResWorkspacesResponse.
 
         是否成功。
 
@@ -76,7 +76,7 @@ class ListResWorkspacesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListResWorkspacesResponse.
+        r"""Sets the is_success of this ListResWorkspacesResponse.
 
         是否成功。
 
@@ -87,7 +87,7 @@ class ListResWorkspacesResponse(SdkResponse):
 
     @property
     def workspaces(self):
-        """Gets the workspaces of this ListResWorkspacesResponse.
+        r"""Gets the workspaces of this ListResWorkspacesResponse.
 
         工作空间列表。
 
@@ -98,7 +98,7 @@ class ListResWorkspacesResponse(SdkResponse):
 
     @workspaces.setter
     def workspaces(self, workspaces):
-        """Sets the workspaces of this ListResWorkspacesResponse.
+        r"""Sets the workspaces of this ListResWorkspacesResponse.
 
         工作空间列表。
 
@@ -109,7 +109,7 @@ class ListResWorkspacesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListResWorkspacesResponse.
+        r"""Gets the message of this ListResWorkspacesResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -120,7 +120,7 @@ class ListResWorkspacesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListResWorkspacesResponse.
+        r"""Sets the message of this ListResWorkspacesResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -131,7 +131,7 @@ class ListResWorkspacesResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListResWorkspacesResponse.
+        r"""Gets the error_code of this ListResWorkspacesResponse.
 
         错误码（请求成功时，不返回此字段）。
 
@@ -142,7 +142,7 @@ class ListResWorkspacesResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListResWorkspacesResponse.
+        r"""Sets the error_code of this ListResWorkspacesResponse.
 
         错误码（请求成功时，不返回此字段）。
 

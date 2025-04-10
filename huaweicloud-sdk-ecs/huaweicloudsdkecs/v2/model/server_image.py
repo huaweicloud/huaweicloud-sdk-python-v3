@@ -25,7 +25,7 @@ class ServerImage:
     }
 
     def __init__(self, id=None):
-        """ServerImage
+        r"""ServerImage
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ServerImage:
 
     @property
     def id(self):
-        """Gets the id of this ServerImage.
+        r"""Gets the id of this ServerImage.
 
         镜像id
 
@@ -53,7 +53,7 @@ class ServerImage:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServerImage.
+        r"""Sets the id of this ServerImage.
 
         镜像id
 

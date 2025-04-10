@@ -24,7 +24,7 @@ class DeleteClickHouseLtsConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteClickHouseLtsConfigResponse
+        r"""DeleteClickHouseLtsConfigResponse
 
         The model defined in huaweicloud sdk
 

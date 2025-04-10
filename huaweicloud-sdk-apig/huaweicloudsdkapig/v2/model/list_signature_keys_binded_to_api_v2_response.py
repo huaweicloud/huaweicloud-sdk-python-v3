@@ -30,7 +30,7 @@ class ListSignatureKeysBindedToApiV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, bindings=None):
-        """ListSignatureKeysBindedToApiV2Response
+        r"""ListSignatureKeysBindedToApiV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListSignatureKeysBindedToApiV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListSignatureKeysBindedToApiV2Response.
+        r"""Gets the size of this ListSignatureKeysBindedToApiV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListSignatureKeysBindedToApiV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListSignatureKeysBindedToApiV2Response.
+        r"""Sets the size of this ListSignatureKeysBindedToApiV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListSignatureKeysBindedToApiV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSignatureKeysBindedToApiV2Response.
+        r"""Gets the total of this ListSignatureKeysBindedToApiV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListSignatureKeysBindedToApiV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSignatureKeysBindedToApiV2Response.
+        r"""Sets the total of this ListSignatureKeysBindedToApiV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListSignatureKeysBindedToApiV2Response(SdkResponse):
 
     @property
     def bindings(self):
-        """Gets the bindings of this ListSignatureKeysBindedToApiV2Response.
+        r"""Gets the bindings of this ListSignatureKeysBindedToApiV2Response.
 
         API与签名密钥的绑定关系列表
 
@@ -111,7 +111,7 @@ class ListSignatureKeysBindedToApiV2Response(SdkResponse):
 
     @bindings.setter
     def bindings(self, bindings):
-        """Sets the bindings of this ListSignatureKeysBindedToApiV2Response.
+        r"""Sets the bindings of this ListSignatureKeysBindedToApiV2Response.
 
         API与签名密钥的绑定关系列表
 

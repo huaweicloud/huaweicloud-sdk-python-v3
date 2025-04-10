@@ -37,7 +37,7 @@ class CfgRequestBody:
     }
 
     def __init__(self, chaincode_name=None, cert_path=None, channel_name=None, peer_orgs=None, union_info=None, is_multi_chan=None, channel_chaincode=None):
-        """CfgRequestBody
+        r"""CfgRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class CfgRequestBody:
 
     @property
     def chaincode_name(self):
-        """Gets the chaincode_name of this CfgRequestBody.
+        r"""Gets the chaincode_name of this CfgRequestBody.
 
         链代码名称，以小写字母开头，支持小写字母和数字，长度6-25位
 
@@ -92,7 +92,7 @@ class CfgRequestBody:
 
     @chaincode_name.setter
     def chaincode_name(self, chaincode_name):
-        """Sets the chaincode_name of this CfgRequestBody.
+        r"""Sets the chaincode_name of this CfgRequestBody.
 
         链代码名称，以小写字母开头，支持小写字母和数字，长度6-25位
 
@@ -103,7 +103,7 @@ class CfgRequestBody:
 
     @property
     def cert_path(self):
-        """Gets the cert_path of this CfgRequestBody.
+        r"""Gets the cert_path of this CfgRequestBody.
 
         SDK配置文件存放路径
 
@@ -114,7 +114,7 @@ class CfgRequestBody:
 
     @cert_path.setter
     def cert_path(self, cert_path):
-        """Sets the cert_path of this CfgRequestBody.
+        r"""Sets the cert_path of this CfgRequestBody.
 
         SDK配置文件存放路径
 
@@ -125,7 +125,7 @@ class CfgRequestBody:
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this CfgRequestBody.
+        r"""Gets the channel_name of this CfgRequestBody.
 
         通道名称
 
@@ -136,7 +136,7 @@ class CfgRequestBody:
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this CfgRequestBody.
+        r"""Sets the channel_name of this CfgRequestBody.
 
         通道名称
 
@@ -147,7 +147,7 @@ class CfgRequestBody:
 
     @property
     def peer_orgs(self):
-        """Gets the peer_orgs of this CfgRequestBody.
+        r"""Gets the peer_orgs of this CfgRequestBody.
 
         key：组织名，value：该组织下需要下载的peer节点信息，peer节点请按照0,1,2的顺序升序填写
 
@@ -158,7 +158,7 @@ class CfgRequestBody:
 
     @peer_orgs.setter
     def peer_orgs(self, peer_orgs):
-        """Sets the peer_orgs of this CfgRequestBody.
+        r"""Sets the peer_orgs of this CfgRequestBody.
 
         key：组织名，value：该组织下需要下载的peer节点信息，peer节点请按照0,1,2的顺序升序填写
 
@@ -169,7 +169,7 @@ class CfgRequestBody:
 
     @property
     def union_info(self):
-        """Gets the union_info of this CfgRequestBody.
+        r"""Gets the union_info of this CfgRequestBody.
 
         key：联盟成员名称，value：该联盟成员peer组织名称hash值数组
 
@@ -180,7 +180,7 @@ class CfgRequestBody:
 
     @union_info.setter
     def union_info(self, union_info):
-        """Sets the union_info of this CfgRequestBody.
+        r"""Sets the union_info of this CfgRequestBody.
 
         key：联盟成员名称，value：该联盟成员peer组织名称hash值数组
 
@@ -191,7 +191,7 @@ class CfgRequestBody:
 
     @property
     def is_multi_chan(self):
-        """Gets the is_multi_chan of this CfgRequestBody.
+        r"""Gets the is_multi_chan of this CfgRequestBody.
 
         是否是多通道请求，如此处设成true则必须传入channel_chaincode，chaincode_name和channel_name设为空即可
 
@@ -202,7 +202,7 @@ class CfgRequestBody:
 
     @is_multi_chan.setter
     def is_multi_chan(self, is_multi_chan):
-        """Sets the is_multi_chan of this CfgRequestBody.
+        r"""Sets the is_multi_chan of this CfgRequestBody.
 
         是否是多通道请求，如此处设成true则必须传入channel_chaincode，chaincode_name和channel_name设为空即可
 
@@ -213,7 +213,7 @@ class CfgRequestBody:
 
     @property
     def channel_chaincode(self):
-        """Gets the channel_chaincode of this CfgRequestBody.
+        r"""Gets the channel_chaincode of this CfgRequestBody.
 
         key：通道名称，value：该通道对应的链代码数组
 
@@ -224,7 +224,7 @@ class CfgRequestBody:
 
     @channel_chaincode.setter
     def channel_chaincode(self, channel_chaincode):
-        """Sets the channel_chaincode of this CfgRequestBody.
+        r"""Sets the channel_chaincode of this CfgRequestBody.
 
         key：通道名称，value：该通道对应的链代码数组
 

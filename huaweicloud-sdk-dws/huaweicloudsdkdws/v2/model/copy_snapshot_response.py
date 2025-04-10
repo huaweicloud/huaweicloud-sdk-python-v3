@@ -26,7 +26,7 @@ class CopySnapshotResponse(SdkResponse):
     }
 
     def __init__(self, snapshot_id=None):
-        """CopySnapshotResponse
+        r"""CopySnapshotResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CopySnapshotResponse(SdkResponse):
 
     @property
     def snapshot_id(self):
-        """Gets the snapshot_id of this CopySnapshotResponse.
+        r"""Gets the snapshot_id of this CopySnapshotResponse.
 
         快照id。
 
@@ -55,7 +55,7 @@ class CopySnapshotResponse(SdkResponse):
 
     @snapshot_id.setter
     def snapshot_id(self, snapshot_id):
-        """Sets the snapshot_id of this CopySnapshotResponse.
+        r"""Sets the snapshot_id of this CopySnapshotResponse.
 
         快照id。
 

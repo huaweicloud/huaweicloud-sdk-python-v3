@@ -31,7 +31,7 @@ class TagQuota:
     }
 
     def __init__(self, quota_key=None, quota_limit=None, used=None, unit=None):
-        """TagQuota
+        r"""TagQuota
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class TagQuota:
 
     @property
     def quota_key(self):
-        """Gets the quota_key of this TagQuota.
+        r"""Gets the quota_key of this TagQuota.
 
         配额键
 
@@ -71,7 +71,7 @@ class TagQuota:
 
     @quota_key.setter
     def quota_key(self, quota_key):
-        """Sets the quota_key of this TagQuota.
+        r"""Sets the quota_key of this TagQuota.
 
         配额键
 
@@ -82,7 +82,7 @@ class TagQuota:
 
     @property
     def quota_limit(self):
-        """Gets the quota_limit of this TagQuota.
+        r"""Gets the quota_limit of this TagQuota.
 
         配额值
 
@@ -93,7 +93,7 @@ class TagQuota:
 
     @quota_limit.setter
     def quota_limit(self, quota_limit):
-        """Sets the quota_limit of this TagQuota.
+        r"""Sets the quota_limit of this TagQuota.
 
         配额值
 
@@ -104,7 +104,7 @@ class TagQuota:
 
     @property
     def used(self):
-        """Gets the used of this TagQuota.
+        r"""Gets the used of this TagQuota.
 
         已使用
 
@@ -115,7 +115,7 @@ class TagQuota:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this TagQuota.
+        r"""Sets the used of this TagQuota.
 
         已使用
 
@@ -126,7 +126,7 @@ class TagQuota:
 
     @property
     def unit(self):
-        """Gets the unit of this TagQuota.
+        r"""Gets the unit of this TagQuota.
 
         单位
 
@@ -137,7 +137,7 @@ class TagQuota:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this TagQuota.
+        r"""Sets the unit of this TagQuota.
 
         单位
 

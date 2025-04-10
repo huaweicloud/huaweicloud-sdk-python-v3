@@ -30,7 +30,7 @@ class DisassociateInstanceResponse(SdkResponse):
     }
 
     def __init__(self, global_eip=None, job_id=None, x_request_id=None):
-        """DisassociateInstanceResponse
+        r"""DisassociateInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DisassociateInstanceResponse(SdkResponse):
 
     @property
     def global_eip(self):
-        """Gets the global_eip of this DisassociateInstanceResponse.
+        r"""Gets the global_eip of this DisassociateInstanceResponse.
 
         :return: The global_eip of this DisassociateInstanceResponse.
         :rtype: :class:`huaweicloudsdkgeip.v3.UpdateGlobalEip`
@@ -67,7 +67,7 @@ class DisassociateInstanceResponse(SdkResponse):
 
     @global_eip.setter
     def global_eip(self, global_eip):
-        """Sets the global_eip of this DisassociateInstanceResponse.
+        r"""Sets the global_eip of this DisassociateInstanceResponse.
 
         :param global_eip: The global_eip of this DisassociateInstanceResponse.
         :type global_eip: :class:`huaweicloudsdkgeip.v3.UpdateGlobalEip`
@@ -76,7 +76,7 @@ class DisassociateInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DisassociateInstanceResponse.
+        r"""Gets the job_id of this DisassociateInstanceResponse.
 
         本次请求的job id
 
@@ -87,7 +87,7 @@ class DisassociateInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DisassociateInstanceResponse.
+        r"""Sets the job_id of this DisassociateInstanceResponse.
 
         本次请求的job id
 
@@ -98,7 +98,7 @@ class DisassociateInstanceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DisassociateInstanceResponse.
+        r"""Gets the x_request_id of this DisassociateInstanceResponse.
 
         :return: The x_request_id of this DisassociateInstanceResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class DisassociateInstanceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DisassociateInstanceResponse.
+        r"""Sets the x_request_id of this DisassociateInstanceResponse.
 
         :param x_request_id: The x_request_id of this DisassociateInstanceResponse.
         :type x_request_id: str

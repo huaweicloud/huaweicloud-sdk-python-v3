@@ -28,7 +28,7 @@ class AcceptResourceShareInvitationRequest:
     }
 
     def __init__(self, x_security_token=None, resource_share_invitation_id=None):
-        """AcceptResourceShareInvitationRequest
+        r"""AcceptResourceShareInvitationRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AcceptResourceShareInvitationRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this AcceptResourceShareInvitationRequest.
+        r"""Gets the x_security_token of this AcceptResourceShareInvitationRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -61,7 +61,7 @@ class AcceptResourceShareInvitationRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this AcceptResourceShareInvitationRequest.
+        r"""Sets the x_security_token of this AcceptResourceShareInvitationRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -72,7 +72,7 @@ class AcceptResourceShareInvitationRequest:
 
     @property
     def resource_share_invitation_id(self):
-        """Gets the resource_share_invitation_id of this AcceptResourceShareInvitationRequest.
+        r"""Gets the resource_share_invitation_id of this AcceptResourceShareInvitationRequest.
 
         资源共享邀请的ID。
 
@@ -83,7 +83,7 @@ class AcceptResourceShareInvitationRequest:
 
     @resource_share_invitation_id.setter
     def resource_share_invitation_id(self, resource_share_invitation_id):
-        """Sets the resource_share_invitation_id of this AcceptResourceShareInvitationRequest.
+        r"""Sets the resource_share_invitation_id of this AcceptResourceShareInvitationRequest.
 
         资源共享邀请的ID。
 

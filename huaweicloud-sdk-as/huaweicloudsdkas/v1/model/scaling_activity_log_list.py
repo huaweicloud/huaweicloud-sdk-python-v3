@@ -45,7 +45,7 @@ class ScalingActivityLogList:
     }
 
     def __init__(self, status=None, start_time=None, end_time=None, id=None, instance_removed_list=None, instance_deleted_list=None, instance_added_list=None, scaling_value=None, description=None, instance_value=None, desire_value=None):
-        """ScalingActivityLogList
+        r"""ScalingActivityLogList
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ScalingActivityLogList:
 
     @property
     def status(self):
-        """Gets the status of this ScalingActivityLogList.
+        r"""Gets the status of this ScalingActivityLogList.
 
         伸缩活动状态：SUCCESS：成功。FAIL：失败。DOING：伸缩过程中。
 
@@ -124,7 +124,7 @@ class ScalingActivityLogList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScalingActivityLogList.
+        r"""Sets the status of this ScalingActivityLogList.
 
         伸缩活动状态：SUCCESS：成功。FAIL：失败。DOING：伸缩过程中。
 
@@ -135,7 +135,7 @@ class ScalingActivityLogList:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScalingActivityLogList.
+        r"""Gets the start_time of this ScalingActivityLogList.
 
         伸缩活动触发时间，遵循UTC时间。
 
@@ -146,7 +146,7 @@ class ScalingActivityLogList:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScalingActivityLogList.
+        r"""Sets the start_time of this ScalingActivityLogList.
 
         伸缩活动触发时间，遵循UTC时间。
 
@@ -157,7 +157,7 @@ class ScalingActivityLogList:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ScalingActivityLogList.
+        r"""Gets the end_time of this ScalingActivityLogList.
 
         伸缩活动结束时间，遵循UTC时间。
 
@@ -168,7 +168,7 @@ class ScalingActivityLogList:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ScalingActivityLogList.
+        r"""Sets the end_time of this ScalingActivityLogList.
 
         伸缩活动结束时间，遵循UTC时间。
 
@@ -179,7 +179,7 @@ class ScalingActivityLogList:
 
     @property
     def id(self):
-        """Gets the id of this ScalingActivityLogList.
+        r"""Gets the id of this ScalingActivityLogList.
 
         伸缩活动日志ID。
 
@@ -190,7 +190,7 @@ class ScalingActivityLogList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScalingActivityLogList.
+        r"""Sets the id of this ScalingActivityLogList.
 
         伸缩活动日志ID。
 
@@ -201,7 +201,7 @@ class ScalingActivityLogList:
 
     @property
     def instance_removed_list(self):
-        """Gets the instance_removed_list of this ScalingActivityLogList.
+        r"""Gets the instance_removed_list of this ScalingActivityLogList.
 
         完成伸缩活动且只被移出弹性伸缩组的云服务器名称列表，云服务器名之间以逗号分隔。
 
@@ -212,7 +212,7 @@ class ScalingActivityLogList:
 
     @instance_removed_list.setter
     def instance_removed_list(self, instance_removed_list):
-        """Sets the instance_removed_list of this ScalingActivityLogList.
+        r"""Sets the instance_removed_list of this ScalingActivityLogList.
 
         完成伸缩活动且只被移出弹性伸缩组的云服务器名称列表，云服务器名之间以逗号分隔。
 
@@ -223,7 +223,7 @@ class ScalingActivityLogList:
 
     @property
     def instance_deleted_list(self):
-        """Gets the instance_deleted_list of this ScalingActivityLogList.
+        r"""Gets the instance_deleted_list of this ScalingActivityLogList.
 
         完成伸缩活动且被移出弹性伸缩组并删除的云服务器名称列表，云服务器名之间以逗号分隔。
 
@@ -234,7 +234,7 @@ class ScalingActivityLogList:
 
     @instance_deleted_list.setter
     def instance_deleted_list(self, instance_deleted_list):
-        """Sets the instance_deleted_list of this ScalingActivityLogList.
+        r"""Sets the instance_deleted_list of this ScalingActivityLogList.
 
         完成伸缩活动且被移出弹性伸缩组并删除的云服务器名称列表，云服务器名之间以逗号分隔。
 
@@ -245,7 +245,7 @@ class ScalingActivityLogList:
 
     @property
     def instance_added_list(self):
-        """Gets the instance_added_list of this ScalingActivityLogList.
+        r"""Gets the instance_added_list of this ScalingActivityLogList.
 
         完成伸缩活动且被加入弹性伸缩组的云服务器名称列表，云服务器名之间以逗号分割。
 
@@ -256,7 +256,7 @@ class ScalingActivityLogList:
 
     @instance_added_list.setter
     def instance_added_list(self, instance_added_list):
-        """Sets the instance_added_list of this ScalingActivityLogList.
+        r"""Sets the instance_added_list of this ScalingActivityLogList.
 
         完成伸缩活动且被加入弹性伸缩组的云服务器名称列表，云服务器名之间以逗号分割。
 
@@ -267,7 +267,7 @@ class ScalingActivityLogList:
 
     @property
     def scaling_value(self):
-        """Gets the scaling_value of this ScalingActivityLogList.
+        r"""Gets the scaling_value of this ScalingActivityLogList.
 
         伸缩活动中变化（增加或减少）的云服务器数量。
 
@@ -278,7 +278,7 @@ class ScalingActivityLogList:
 
     @scaling_value.setter
     def scaling_value(self, scaling_value):
-        """Sets the scaling_value of this ScalingActivityLogList.
+        r"""Sets the scaling_value of this ScalingActivityLogList.
 
         伸缩活动中变化（增加或减少）的云服务器数量。
 
@@ -289,7 +289,7 @@ class ScalingActivityLogList:
 
     @property
     def description(self):
-        """Gets the description of this ScalingActivityLogList.
+        r"""Gets the description of this ScalingActivityLogList.
 
         伸缩活动的描述信息。
 
@@ -300,7 +300,7 @@ class ScalingActivityLogList:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ScalingActivityLogList.
+        r"""Sets the description of this ScalingActivityLogList.
 
         伸缩活动的描述信息。
 
@@ -311,7 +311,7 @@ class ScalingActivityLogList:
 
     @property
     def instance_value(self):
-        """Gets the instance_value of this ScalingActivityLogList.
+        r"""Gets the instance_value of this ScalingActivityLogList.
 
         伸缩组当前instance值。
 
@@ -322,7 +322,7 @@ class ScalingActivityLogList:
 
     @instance_value.setter
     def instance_value(self, instance_value):
-        """Sets the instance_value of this ScalingActivityLogList.
+        r"""Sets the instance_value of this ScalingActivityLogList.
 
         伸缩组当前instance值。
 
@@ -333,7 +333,7 @@ class ScalingActivityLogList:
 
     @property
     def desire_value(self):
-        """Gets the desire_value of this ScalingActivityLogList.
+        r"""Gets the desire_value of this ScalingActivityLogList.
 
         伸缩活动最终desire值。
 
@@ -344,7 +344,7 @@ class ScalingActivityLogList:
 
     @desire_value.setter
     def desire_value(self, desire_value):
-        """Sets the desire_value of this ScalingActivityLogList.
+        r"""Sets the desire_value of this ScalingActivityLogList.
 
         伸缩活动最终desire值。
 

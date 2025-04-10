@@ -27,7 +27,7 @@ class DeleteAppQuotaRequest:
     }
 
     def __init__(self, instance_id=None, app_quota_id=None):
-        """DeleteAppQuotaRequest
+        r"""DeleteAppQuotaRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteAppQuotaRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteAppQuotaRequest.
+        r"""Gets the instance_id of this DeleteAppQuotaRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -59,7 +59,7 @@ class DeleteAppQuotaRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteAppQuotaRequest.
+        r"""Sets the instance_id of this DeleteAppQuotaRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -70,7 +70,7 @@ class DeleteAppQuotaRequest:
 
     @property
     def app_quota_id(self):
-        """Gets the app_quota_id of this DeleteAppQuotaRequest.
+        r"""Gets the app_quota_id of this DeleteAppQuotaRequest.
 
         凭据配额编号
 
@@ -81,7 +81,7 @@ class DeleteAppQuotaRequest:
 
     @app_quota_id.setter
     def app_quota_id(self, app_quota_id):
-        """Sets the app_quota_id of this DeleteAppQuotaRequest.
+        r"""Sets the app_quota_id of this DeleteAppQuotaRequest.
 
         凭据配额编号
 

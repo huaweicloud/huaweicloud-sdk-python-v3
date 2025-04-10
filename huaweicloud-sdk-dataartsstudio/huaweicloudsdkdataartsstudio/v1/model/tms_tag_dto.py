@@ -27,7 +27,7 @@ class TmsTagDTO:
     }
 
     def __init__(self, key=None, value=None):
-        """TmsTagDTO
+        r"""TmsTagDTO
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TmsTagDTO:
 
     @property
     def key(self):
-        """Gets the key of this TmsTagDTO.
+        r"""Gets the key of this TmsTagDTO.
 
         key值
 
@@ -59,7 +59,7 @@ class TmsTagDTO:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TmsTagDTO.
+        r"""Sets the key of this TmsTagDTO.
 
         key值
 
@@ -70,7 +70,7 @@ class TmsTagDTO:
 
     @property
     def value(self):
-        """Gets the value of this TmsTagDTO.
+        r"""Gets the value of this TmsTagDTO.
 
         value值
 
@@ -81,7 +81,7 @@ class TmsTagDTO:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TmsTagDTO.
+        r"""Sets the value of this TmsTagDTO.
 
         value值
 

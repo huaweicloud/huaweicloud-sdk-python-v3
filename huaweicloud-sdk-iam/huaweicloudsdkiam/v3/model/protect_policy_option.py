@@ -35,7 +35,7 @@ class ProtectPolicyOption:
     }
 
     def __init__(self, operation_protection=None, allow_user=None, mobile=None, admin_check=None, email=None, scene=None):
-        """ProtectPolicyOption
+        r"""ProtectPolicyOption
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ProtectPolicyOption:
 
     @property
     def operation_protection(self):
-        """Gets the operation_protection of this ProtectPolicyOption.
+        r"""Gets the operation_protection of this ProtectPolicyOption.
 
         是否开启操作保护，开启为\"true\"，未开启为\"false\"。
 
@@ -88,7 +88,7 @@ class ProtectPolicyOption:
 
     @operation_protection.setter
     def operation_protection(self, operation_protection):
-        """Sets the operation_protection of this ProtectPolicyOption.
+        r"""Sets the operation_protection of this ProtectPolicyOption.
 
         是否开启操作保护，开启为\"true\"，未开启为\"false\"。
 
@@ -99,7 +99,7 @@ class ProtectPolicyOption:
 
     @property
     def allow_user(self):
-        """Gets the allow_user of this ProtectPolicyOption.
+        r"""Gets the allow_user of this ProtectPolicyOption.
 
         :return: The allow_user of this ProtectPolicyOption.
         :rtype: :class:`huaweicloudsdkiam.v3.AllowUserBody`
@@ -108,7 +108,7 @@ class ProtectPolicyOption:
 
     @allow_user.setter
     def allow_user(self, allow_user):
-        """Sets the allow_user of this ProtectPolicyOption.
+        r"""Sets the allow_user of this ProtectPolicyOption.
 
         :param allow_user: The allow_user of this ProtectPolicyOption.
         :type allow_user: :class:`huaweicloudsdkiam.v3.AllowUserBody`
@@ -117,7 +117,7 @@ class ProtectPolicyOption:
 
     @property
     def mobile(self):
-        """Gets the mobile of this ProtectPolicyOption.
+        r"""Gets the mobile of this ProtectPolicyOption.
 
         操作保护验证指定手机号码。示例：0086-123456789。
 
@@ -128,7 +128,7 @@ class ProtectPolicyOption:
 
     @mobile.setter
     def mobile(self, mobile):
-        """Sets the mobile of this ProtectPolicyOption.
+        r"""Sets the mobile of this ProtectPolicyOption.
 
         操作保护验证指定手机号码。示例：0086-123456789。
 
@@ -139,7 +139,7 @@ class ProtectPolicyOption:
 
     @property
     def admin_check(self):
-        """Gets the admin_check of this ProtectPolicyOption.
+        r"""Gets the admin_check of this ProtectPolicyOption.
 
         是否指定人员验证。on为指定人员验证，必须填写scene参数。off为操作员验证。
 
@@ -150,7 +150,7 @@ class ProtectPolicyOption:
 
     @admin_check.setter
     def admin_check(self, admin_check):
-        """Sets the admin_check of this ProtectPolicyOption.
+        r"""Sets the admin_check of this ProtectPolicyOption.
 
         是否指定人员验证。on为指定人员验证，必须填写scene参数。off为操作员验证。
 
@@ -161,7 +161,7 @@ class ProtectPolicyOption:
 
     @property
     def email(self):
-        """Gets the email of this ProtectPolicyOption.
+        r"""Gets the email of this ProtectPolicyOption.
 
         操作保护验证指定邮件地址。示例：example@email.com。
 
@@ -172,7 +172,7 @@ class ProtectPolicyOption:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ProtectPolicyOption.
+        r"""Sets the email of this ProtectPolicyOption.
 
         操作保护验证指定邮件地址。示例：example@email.com。
 
@@ -183,7 +183,7 @@ class ProtectPolicyOption:
 
     @property
     def scene(self):
-        """Gets the scene of this ProtectPolicyOption.
+        r"""Gets the scene of this ProtectPolicyOption.
 
         操作保护指定人员验证方式，admin_check为on时，必须填写。包括mobile、email。
 
@@ -194,7 +194,7 @@ class ProtectPolicyOption:
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this ProtectPolicyOption.
+        r"""Sets the scene of this ProtectPolicyOption.
 
         操作保护指定人员验证方式，admin_check为on时，必须填写。包括mobile、email。
 

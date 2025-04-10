@@ -27,7 +27,7 @@ class EdgeContentRuleReq:
     }
 
     def __init__(self, app_id=None, products=None):
-        """EdgeContentRuleReq
+        r"""EdgeContentRuleReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class EdgeContentRuleReq:
 
     @property
     def app_id(self):
-        """Gets the app_id of this EdgeContentRuleReq.
+        r"""Gets the app_id of this EdgeContentRuleReq.
 
         Edge中的资源空间Id
 
@@ -59,7 +59,7 @@ class EdgeContentRuleReq:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this EdgeContentRuleReq.
+        r"""Sets the app_id of this EdgeContentRuleReq.
 
         Edge中的资源空间Id
 
@@ -70,7 +70,7 @@ class EdgeContentRuleReq:
 
     @property
     def products(self):
-        """Gets the products of this EdgeContentRuleReq.
+        r"""Gets the products of this EdgeContentRuleReq.
 
         Edge中某资源空间Id下的产品列表
 
@@ -81,7 +81,7 @@ class EdgeContentRuleReq:
 
     @products.setter
     def products(self, products):
-        """Sets the products of this EdgeContentRuleReq.
+        r"""Sets the products of this EdgeContentRuleReq.
 
         Edge中某资源空间Id下的产品列表
 

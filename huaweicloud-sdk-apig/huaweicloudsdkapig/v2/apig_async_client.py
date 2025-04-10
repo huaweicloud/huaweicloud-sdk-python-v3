@@ -34,7 +34,7 @@ class ApigAsyncClient(Client):
         return client_builder
 
     def accept_or_reject_endpoint_connections_async(self, request):
-        """接受或拒绝终端节点连接
+        r"""接受或拒绝终端节点连接
 
         接受或拒绝实例节点连接。
         
@@ -101,7 +101,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def add_custom_ingress_port_async(self, request):
-        """新增实例的自定义入方向端口
+        r"""新增实例的自定义入方向端口
 
         新增实例的自定义入方向端口，在同个实例中，一个端口仅能支持一种协议。
         
@@ -168,7 +168,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def add_eip_v2_async(self, request):
-        """实例更新或绑定EIP
+        r"""实例更新或绑定EIP
 
         实例更新或绑定EIP(仅当实例为LVS类型时支持)
         
@@ -235,7 +235,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def add_endpoint_permissions_async(self, request):
-        """批量添加实例终端节点连接白名单
+        r"""批量添加实例终端节点连接白名单
 
         批量添加实例终端节点连接白名单。
         
@@ -302,7 +302,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def add_engress_eip_v2_async(self, request):
-        """开启实例公网出口
+        r"""开启实例公网出口
 
         实例开启公网出口
         
@@ -369,7 +369,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def add_ingress_eip_v2_async(self, request):
-        """开启实例公网入口
+        r"""开启实例公网入口
 
         开启实例开启公网入口，仅当实例为ELB类型时支持
         
@@ -436,7 +436,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def associate_apps_for_app_quota_async(self, request):
-        """凭据配额绑定凭据列表
+        r"""凭据配额绑定凭据列表
 
         凭据配额绑定凭据列表
         
@@ -505,7 +505,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def associate_certificate_v2_async(self, request):
-        """绑定域名证书
+        r"""绑定域名证书
 
         如果创建API时，“定义API请求”使用HTTPS请求协议，那么在独立域名中需要添加SSL证书。
         使用实例自定义入方向端口的特性时，相同的域名会同时绑定证书，注意开启/关闭客户端校验会对相同域名的不同端口同时生效。
@@ -578,7 +578,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def associate_domain_v2_async(self, request):
-        """绑定域名
+        r"""绑定域名
 
         用户自定义的域名，需要增加A记录才能生效，具体方法请参见《云解析服务用户指南》的“添加A类型记录集”章节。
         
@@ -649,7 +649,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def associate_signature_key_v2_async(self, request):
-        """绑定签名密钥
+        r"""绑定签名密钥
 
         签名密钥创建后，需要绑定到API才能生效。
         
@@ -722,7 +722,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def attach_api_to_plugin_async(self, request):
-        """插件绑定API
+        r"""插件绑定API
 
         绑定插件到API上。
         - 只能选择发布状态的API
@@ -795,7 +795,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def attach_plugin_to_api_async(self, request):
-        """API绑定插件
+        r"""API绑定插件
 
         绑定插件到API上。
         - 只能选择发布状态的API
@@ -868,7 +868,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def batch_create_or_delete_instance_tags_async(self, request):
-        """批量添加或删除单个实例的标签
+        r"""批量添加或删除单个实例的标签
 
         批量添加或删除单个实例的标签。
         
@@ -935,7 +935,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def check_app_v2_async(self, request):
-        """校验APP
+        r"""校验APP
 
         校验app是否存在，非APP所有者可以调用该接口校验APP是否真实存在。这个接口只展示app的基本信息id 、name、
         remark，其他信息不显示。
@@ -1003,7 +1003,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_an_app_v2_async(self, request):
-        """创建APP
+        r"""创建APP
 
         APP即应用，是一个可以访问API的身份标识。将API授权给APP后，APP即可调用API。
         创建一个APP。
@@ -1071,7 +1071,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_app_code_auto_v2_async(self, request):
-        """自动生成APP Code
+        r"""自动生成APP Code
 
         创建App Code时，可以不指定具体值，由后台自动生成随机字符串填充。
         
@@ -1138,7 +1138,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_app_code_v2_async(self, request):
-        """创建APP Code
+        r"""创建APP Code
 
         App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
         
@@ -1207,7 +1207,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_app_quota_async(self, request):
-        """创建凭据配额
+        r"""创建凭据配额
 
         创建凭据配额
         
@@ -1274,7 +1274,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_custom_authorizer_v2_async(self, request):
-        """创建自定义认证
+        r"""创建自定义认证
 
         创建自定义认证
         
@@ -1341,7 +1341,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_environment_v2_async(self, request):
-        """创建环境
+        r"""创建环境
 
         在实际的生产中，API提供者可能有多个环境，如开发环境、测试环境、生产环境等，用户可以自由将API发布到某个环境，供调用者调用。
         
@@ -1414,7 +1414,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_environment_variable_v2_async(self, request):
-        """新建变量
+        r"""新建变量
 
         将API发布到不同的环境后，对于不同的环境，可能会有不同的环境变量，比如，API的服务部署地址，请求的版本号等。
         
@@ -1492,7 +1492,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_feature_v2_async(self, request):
-        """实例配置特性
+        r"""实例配置特性
 
         为实例配置需要的特性。
         
@@ -1561,7 +1561,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_gateway_response_v2_async(self, request):
-        """创建分组自定义响应
+        r"""创建分组自定义响应
 
         新增分组下自定义响应
         
@@ -1630,7 +1630,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_instance_v2_async(self, request):
-        """创建专享版实例（按需）
+        r"""创建专享版实例（按需）
 
         创建按需专享版实例
         
@@ -1695,7 +1695,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_orchestration_async(self, request):
-        """创建编排规则
+        r"""创建编排规则
 
         创建编排规则
         
@@ -1762,7 +1762,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_order_async(self, request):
-        """创建专享版实例（包周期）
+        r"""创建专享版实例（包周期）
 
         创建包周期专享版实例。
         
@@ -1827,7 +1827,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_plugin_async(self, request):
-        """创建插件
+        r"""创建插件
 
         创建插件信息。
         - 插件不允许重名
@@ -1896,7 +1896,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_post_pay_resize_order_async(self, request):
-        """按需规格变更
+        r"""按需规格变更
 
         创建按需规格变更订单。
         
@@ -1963,7 +1963,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_prepay_resize_async(self, request):
-        """创建包周期规格变更订单
+        r"""创建包周期规格变更订单
 
         创建包周期规格变更订单。
         
@@ -2030,7 +2030,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_request_throttling_policy_v2_async(self, request):
-        """创建流控策略
+        r"""创建流控策略
 
         当API上线后，系统会默认给每个API提供一个流控策略，API提供者可以根据自身API的服务能力及负载情况变更这个流控策略。
         流控策略即限制API在一定长度的时间内，能够允许被访问的最大次数。
@@ -2098,7 +2098,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_signature_key_v2_async(self, request):
-        """创建签名密钥
+        r"""创建签名密钥
 
         为了保护API的安全性，建议租户为API的访问提供一套保护机制，即租户开放的API，需要对请求来源进行认证，不符合认证的请求直接拒绝访问。
         
@@ -2171,7 +2171,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_special_throttling_configuration_v2_async(self, request):
-        """创建特殊设置
+        r"""创建特殊设置
 
         流控策略可以限制一段时间内可以访问API的最大次数，也可以限制一段时间内单个租户和单个APP可以访问API的最大次数。
         
@@ -2244,7 +2244,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_app_acl_async(self, request):
-        """删除APP的访问控制
+        r"""删除APP的访问控制
 
         删除凭据的访问控制信息。
         
@@ -2311,7 +2311,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_app_code_v2_async(self, request):
-        """删除APP Code
+        r"""删除APP Code
 
         删除App Code，App Code删除后，将无法再通过简易认证访问对应的API。
         
@@ -2380,7 +2380,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_app_quota_async(self, request):
-        """删除凭据配额
+        r"""删除凭据配额
 
         删除凭据配额。删除凭据配额时，同时删除凭据配额和凭据的关联关系
         
@@ -2447,7 +2447,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_app_v2_async(self, request):
-        """删除APP
+        r"""删除APP
 
         删除指定的APP。
         APP删除后，将无法再调用任何API[；其中，云商店自动创建的APP无法被删除](tag:hws)。
@@ -2515,7 +2515,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_custom_authorizer_v2_async(self, request):
-        """删除自定义认证
+        r"""删除自定义认证
 
         删除自定义认证
         
@@ -2582,7 +2582,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_custom_ingress_port_async(self, request):
-        """删除实例指定的自定义入方向端口
+        r"""删除实例指定的自定义入方向端口
 
         删除实例指定的自定义入方向端口，不包含默认端口80和443。
         
@@ -2649,7 +2649,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_endpoint_permissions_async(self, request):
-        """批量删除实例终端节点连接白名单
+        r"""批量删除实例终端节点连接白名单
 
         批量删除实例终端节点连接白名单。
         
@@ -2716,7 +2716,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_environment_v2_async(self, request):
-        """删除环境
+        r"""删除环境
 
         删除指定的环境。
         
@@ -2787,7 +2787,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_environment_variable_v2_async(self, request):
-        """删除变量
+        r"""删除变量
 
         删除指定的环境变量。
         
@@ -2854,7 +2854,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_gateway_response_type_v2_async(self, request):
-        """删除分组指定错误类型的自定义响应配置
+        r"""删除分组指定错误类型的自定义响应配置
 
         删除分组指定错误类型的自定义响应配置，还原为使用默认值的配置。
         
@@ -2925,7 +2925,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_gateway_response_v2_async(self, request):
-        """删除分组自定义响应
+        r"""删除分组自定义响应
 
         删除分组自定义响应
         
@@ -2994,7 +2994,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_instances_v2_async(self, request):
-        """删除专享版实例
+        r"""删除专享版实例
 
         删除专享版实例
         
@@ -3059,7 +3059,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_orchestration_async(self, request):
-        """删除编排规则
+        r"""删除编排规则
 
         删除编排规则
         
@@ -3126,7 +3126,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_plugin_async(self, request):
-        """删除插件
+        r"""删除插件
 
         删除插件。
         - 必须先解除API和插件的绑定关系，否则删除报错
@@ -3194,7 +3194,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_request_throttling_policy_v2_async(self, request):
-        """删除流控策略
+        r"""删除流控策略
 
         删除指定的流控策略，以及该流控策略与API的所有绑定关系。
         
@@ -3261,7 +3261,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_signature_key_v2_async(self, request):
-        """删除签名密钥
+        r"""删除签名密钥
 
         删除指定的签名密钥，删除签名密钥时，其配置的绑定关系会一并删除，相应的签名密钥会失效。
         
@@ -3328,7 +3328,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_special_throttling_configuration_v2_async(self, request):
-        """删除特殊设置
+        r"""删除特殊设置
 
         删除某个流控策略的某个特殊配置。
         
@@ -3397,7 +3397,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def detach_api_from_plugin_async(self, request):
-        """解除绑定插件的API
+        r"""解除绑定插件的API
 
         解除绑定在插件上的API。
         - 解绑及时生效
@@ -3467,7 +3467,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def detach_plugin_from_api_async(self, request):
-        """解除绑定API的插件
+        r"""解除绑定API的插件
 
         解除绑定在API上的插件。
         - 解绑及时生效
@@ -3537,7 +3537,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def disassociate_app_quota_with_app_async(self, request):
-        """解除凭据配额和凭据的绑定
+        r"""解除凭据配额和凭据的绑定
 
         解除凭据配额和凭据的绑定
         
@@ -3606,7 +3606,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def disassociate_certificate_v2_async(self, request):
-        """删除域名证书
+        r"""删除域名证书
 
         如果域名证书不再需要或者已过期，则可以删除证书内容。在使用自定义入方向端口的特性时，相同的域名会同时解绑证书。
         
@@ -3677,7 +3677,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def disassociate_domain_v2_async(self, request):
-        """解绑域名
+        r"""解绑域名
 
         如果API分组不再需要绑定某个自定义域名，则可以为此API分组解绑此域名。
         
@@ -3746,7 +3746,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def disassociate_signature_key_v2_async(self, request):
-        """解除API与签名密钥的绑定关系
+        r"""解除API与签名密钥的绑定关系
 
         解除API与签名密钥的绑定关系。
         
@@ -3813,7 +3813,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def export_api_definitions_async_async(self, request):
-        """异步导出API
+        r"""异步导出API
 
         导出分组下API的定义信息。导出文件内容符合swagger标准规范，API网关自定义扩展字段请参考《API网关用户指南》的“导入导出API：扩展定义”章节。
         
@@ -3882,7 +3882,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def import_api_definitions_async_async(self, request):
-        """异步导入API
+        r"""异步导入API
 
         导入API。导入文件内容需要符合swagger标准规范，API网关自定义扩展字段请参考《API网关用户指南》的“导入导出API：扩展定义”章节。
         
@@ -3963,7 +3963,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def import_microservice_async(self, request):
-        """导入微服务
+        r"""导入微服务
 
         导入微服务。
         
@@ -4030,7 +4030,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_api_attachable_plugins_async(self, request):
-        """查询可绑定当前API的插件
+        r"""查询可绑定当前API的插件
 
         查询可绑定当前API的插件信息。
         - 支持分页返回
@@ -4111,7 +4111,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_api_attached_plugins_async(self, request):
-        """查询API下绑定的插件
+        r"""查询API下绑定的插件
 
         查询指定API下绑定的插件信息。
         - 用于查询指定API下已经绑定的插件列表信息
@@ -4195,7 +4195,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_api_groups_quantities_v2_async(self, request):
-        """查询API分组概况
+        r"""查询API分组概况
 
         查询租户名下的API分组概况。
         
@@ -4260,7 +4260,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_api_quantities_v2_async(self, request):
-        """查询API概况
+        r"""查询API概况
 
         查询租户名下的API概况：已发布到RELEASE环境的API个数，未发布到RELEASE环境的API个数。
         
@@ -4325,7 +4325,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_binded_to_signature_key_v2_async(self, request):
-        """查看签名密钥绑定的API列表
+        r"""查看签名密钥绑定的API列表
 
         查询某个签名密钥上已经绑定的API列表。
         
@@ -4406,7 +4406,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_not_bound_with_signature_key_v2_async(self, request):
-        """查看签名密钥未绑定的API列表
+        r"""查看签名密钥未绑定的API列表
 
         查询所有未绑定到该签名密钥上的API列表。需要API已经发布，未发布的API不予展示。
         
@@ -4487,7 +4487,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_app_codes_v2_async(self, request):
-        """查询APP Code列表
+        r"""查询APP Code列表
 
         查询App Code列表。
         
@@ -4558,7 +4558,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_app_quantities_v2_async(self, request):
-        """查询APP概况
+        r"""查询APP概况
 
         查询租户名下的APP概况：已进行API访问授权的APP个数，未进行API访问授权的APP个数。
         
@@ -4623,7 +4623,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_app_quota_bindable_apps_async(self, request):
-        """查询凭据配额可绑定的凭据列表
+        r"""查询凭据配额可绑定的凭据列表
 
         查询凭据配额可绑定的凭据列表。支持按凭据名称模糊搜索
         
@@ -4696,7 +4696,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_app_quota_bound_apps_async(self, request):
-        """查询凭据配额已绑定的凭据列表
+        r"""查询凭据配额已绑定的凭据列表
 
         查询凭据配额已绑定的凭据列表。支持按凭据名称模糊匹配
         
@@ -4769,7 +4769,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_app_quotas_async(self, request):
-        """获取凭据配额列表
+        r"""获取凭据配额列表
 
         获取凭据配额列表。支持根据名称模糊查询
         
@@ -4840,7 +4840,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apps_v2_async(self, request):
-        """查询APP列表
+        r"""查询APP列表
 
         查询APP列表。
         
@@ -4921,7 +4921,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_available_zones_v2_async(self, request):
-        """查看可用区信息
+        r"""查看可用区信息
 
         查看可用区信息
         
@@ -4984,7 +4984,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_custom_authorizers_v2_async(self, request):
-        """查询自定义认证列表
+        r"""查询自定义认证列表
 
         查询自定义认证列表
         
@@ -5059,7 +5059,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_custom_ingress_port_domains_async(self, request):
-        """查询实例指定的自定义入方向端口绑定的域名信息
+        r"""查询实例指定的自定义入方向端口绑定的域名信息
 
         查询实例指定的自定义入方向端口绑定的域名信息。
         
@@ -5132,7 +5132,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_custom_ingress_ports_async(self, request):
-        """查询实例的自定义入方向端口列表
+        r"""查询实例的自定义入方向端口列表
 
         查询实例的自定义入方向端口列表。
         
@@ -5205,7 +5205,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_endpoint_connections_async(self, request):
-        """查询实例终端节点连接列表
+        r"""查询实例终端节点连接列表
 
         查询实例终端节点连接列表。
         
@@ -5280,7 +5280,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_endpoint_permissions_async(self, request):
-        """查询实例的终端节点服务的白名单列表
+        r"""查询实例的终端节点服务的白名单列表
 
         查询当前实例终端节点服务的白名单列表。
         
@@ -5351,7 +5351,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_environment_variables_v2_async(self, request):
-        """查询变量列表
+        r"""查询变量列表
 
         查询分组下的所有环境变量的列表。
         
@@ -5428,7 +5428,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_environments_v2_async(self, request):
-        """查询环境列表
+        r"""查询环境列表
 
         查询符合条件的环境列表。
         
@@ -5499,7 +5499,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_features_v2_async(self, request):
-        """查看实例特性列表
+        r"""查看实例特性列表
 
         查看实例特性列表。注意：实例不支持以下特性的需要联系技术支持升级实例版本。
         
@@ -5570,7 +5570,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_gateway_responses_v2_async(self, request):
-        """查询分组自定义响应列表
+        r"""查询分组自定义响应列表
 
         查询分组自定义响应列表
         
@@ -5641,7 +5641,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_instance_configs_v2_async(self, request):
-        """查询租户实例配置列表
+        r"""查询租户实例配置列表
 
         查询租户实例配置列表
         
@@ -5708,7 +5708,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_instance_features_async(self, request):
-        """查询实例支持的特性列表
+        r"""查询实例支持的特性列表
 
         查询实例支持的特性列表。
         
@@ -5777,7 +5777,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_instance_tags_async(self, request):
-        """查询单个实例标签
+        r"""查询单个实例标签
 
         查询单个实例的标签。
         
@@ -5842,7 +5842,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_instances_by_tags_async(self, request):
-        """通过标签查询实例列表
+        r"""通过标签查询实例列表
 
         通过标签查询实例列表
         
@@ -5911,7 +5911,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_instances_v2_async(self, request):
-        """查询专享版实例列表
+        r"""查询专享版实例列表
 
         查询专享版实例列表
         
@@ -5984,7 +5984,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_lately_api_statistics_v2_async(self, request):
-        """API统计信息查询-最近一段时间
+        r"""API统计信息查询-最近一段时间
 
         根据API的id和最近的一段时间查询API被调用的次数，统计周期为1分钟。查询范围一小时以内，一分钟一个样本，其样本值为一分钟内的累计值。
         &gt; 为了安全起见，在服务器上使用curl命令调用接口查询信息后，需要清理历史操作记录，包括但不限于“~/.bash_history”、“/var/log/messages”（如有）。
@@ -6054,7 +6054,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_lately_group_statistics_v2_async(self, request):
-        """分组统计信息查询-最近一小时内
+        r"""分组统计信息查询-最近一小时内
 
         根据API分组的编号查询该分组下所有API被调用的总次数，统计周期为1分钟。查询范围一小时以内，一分钟一个样本，其样本值为一分钟内的累计值。
         &gt; 为了安全起见，在服务器上使用curl命令调用接口查询信息后，需要清理历史操作记录，包括但不限于“~/.bash_history”、“/var/log/messages”（如有）。
@@ -6122,7 +6122,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_metric_data_async(self, request):
-        """查询监控数据
+        r"""查询监控数据
 
         查询指定时间范围指定指标的指定粒度的监控数据，可以通过参数指定需要查询的数据维度。
         
@@ -6199,7 +6199,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_orchestration_attached_apis_async(self, request):
-        """查询编排规则绑定的API
+        r"""查询编排规则绑定的API
 
         查询指定插件下绑定的API信息
         - 用于查询指定插件下已经绑定的API列表信息
@@ -6277,7 +6277,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_orchestrations_async(self, request):
-        """查看编排规则列表
+        r"""查看编排规则列表
 
         查看编排规则列表
         
@@ -6352,7 +6352,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_plugin_attachable_apis_async(self, request):
-        """查询可绑定当前插件的API
+        r"""查询可绑定当前插件的API
 
         查询可绑定当前插件的API信息。
         - 支持分页返回
@@ -6440,7 +6440,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_plugin_attached_apis_async(self, request):
-        """查询插件下绑定的API
+        r"""查询插件下绑定的API
 
         查询指定插件下绑定的API信息。
         - 用于查询指定插件下已经绑定的API列表信息
@@ -6529,7 +6529,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_plugins_async(self, request):
-        """查询插件列表
+        r"""查询插件列表
 
         查询一组符合条件的API网关插件详情。
         - 支持分页
@@ -6613,7 +6613,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_project_cofigs_v2_async(self, request):
-        """查询某个实例的租户配置列表
+        r"""查询某个实例的租户配置列表
 
         查询某个实例的租户配置列表，用户可以通过此接口查看各类型资源配置及使用情况。
         
@@ -6682,7 +6682,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_project_instance_tags_async(self, request):
-        """查询项目下所有实例标签
+        r"""查询项目下所有实例标签
 
         查询项目下所有实例标签。
         
@@ -6745,7 +6745,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_request_throttling_policy_v2_async(self, request):
-        """查询流控策略列表
+        r"""查询流控策略列表
 
         查询所有流控策略的信息。
         
@@ -6820,7 +6820,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_signature_keys_binded_to_api_v2_async(self, request):
-        """查看API绑定的签名密钥列表
+        r"""查看API绑定的签名密钥列表
 
         查询某个API绑定的签名密钥列表。每个API在每个环境上应该最多只会绑定一个签名密钥。
         
@@ -6897,7 +6897,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_signature_keys_v2_async(self, request):
-        """查询签名密钥列表
+        r"""查询签名密钥列表
 
         查询所有签名密钥的信息。
         
@@ -6972,7 +6972,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_special_throttling_configurations_v2_async(self, request):
-        """查看特殊设置列表
+        r"""查看特殊设置列表
 
         查看给流控策略设置的特殊配置。
         
@@ -7049,7 +7049,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_tags_v2_async(self, request):
-        """查询标签列表
+        r"""查询标签列表
 
         查询标签列表
         
@@ -7118,7 +7118,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def remove_eip_v2_async(self, request):
-        """实例解绑EIP
+        r"""实例解绑EIP
 
         实例解绑EIP
         
@@ -7183,7 +7183,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def remove_engress_eip_v2_async(self, request):
-        """关闭实例公网出口
+        r"""关闭实例公网出口
 
         关闭实例公网出口
         
@@ -7248,7 +7248,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def remove_ingress_eip_v2_async(self, request):
-        """关闭实例公网入口
+        r"""关闭实例公网入口
 
         关闭实例公网入口，仅当实例为ELB类型时支持
         
@@ -7313,7 +7313,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def resetting_app_secret_v2_async(self, request):
-        """重置密钥
+        r"""重置密钥
 
         重置指定APP的密钥。
         
@@ -7382,7 +7382,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_app_bound_app_quota_async(self, request):
-        """查询凭据关联的凭据配额
+        r"""查询凭据关联的凭据配额
 
         查看指定凭据关联的凭据配额。
         
@@ -7449,7 +7449,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_app_quota_async(self, request):
-        """获取凭据配额详情
+        r"""获取凭据配额详情
 
         获取凭据配额详情
         
@@ -7516,7 +7516,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_async_task_result_async(self, request):
-        """获取异步任务结果
+        r"""获取异步任务结果
 
         获取异步任务结果。
         
@@ -7583,7 +7583,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_app_acl_async(self, request):
-        """查看APP的访问控制详情
+        r"""查看APP的访问控制详情
 
         查看APP的访问控制详情。
         
@@ -7650,7 +7650,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_app_code_v2_async(self, request):
-        """查看APP Code详情
+        r"""查看APP Code详情
 
         App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
         
@@ -7719,7 +7719,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_app_v2_async(self, request):
-        """查看APP详情
+        r"""查看APP详情
 
         查看指定APP的详细信息。
         
@@ -7786,7 +7786,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_custom_authorizers_v2_async(self, request):
-        """查看自定义认证详情
+        r"""查看自定义认证详情
 
         查看自定义认证详情
         
@@ -7853,7 +7853,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_domain_name_certificate_v2_async(self, request):
-        """查看域名证书
+        r"""查看域名证书
 
         查看域名下绑定的证书详情。
         
@@ -7924,7 +7924,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_environment_variable_v2_async(self, request):
-        """查看变量详情
+        r"""查看变量详情
 
         查看指定的环境变量的详情。
         
@@ -7991,7 +7991,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_gateway_response_type_v2_async(self, request):
-        """查看分组下指定错误类型的自定义响应
+        r"""查看分组下指定错误类型的自定义响应
 
         查看分组下指定错误类型的自定义响应
         
@@ -8062,7 +8062,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_gateway_response_v2_async(self, request):
-        """查询分组自定义响应详情
+        r"""查询分组自定义响应详情
 
         查询分组自定义响应详情
         
@@ -8131,7 +8131,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_instance_progress_v2_async(self, request):
-        """查看专享版实例创建进度
+        r"""查看专享版实例创建进度
 
         查看专享版实例创建进度
         
@@ -8196,7 +8196,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_instance_v2_async(self, request):
-        """查看专享版实例详情
+        r"""查看专享版实例详情
 
         查看专享版实例详情
         
@@ -8261,7 +8261,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_orchestration_async(self, request):
-        """查询编排规则详情
+        r"""查询编排规则详情
 
         查询编排规则详情
         
@@ -8328,7 +8328,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_request_throttling_policy_v2_async(self, request):
-        """查看流控策略详情
+        r"""查看流控策略详情
 
         查看指定流控策略的详细信息。
         
@@ -8395,7 +8395,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_instances_num_by_tags_async(self, request):
-        """查询包含指定标签的实例数量
+        r"""查询包含指定标签的实例数量
 
         查询包含指定标签的实例数量。
         
@@ -8460,7 +8460,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_plugin_async(self, request):
-        """查询插件详情
+        r"""查询插件详情
 
         查询插件详情。
         
@@ -8527,7 +8527,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_restriction_of_instance_v2_async(self, request):
-        """查看实例约束信息
+        r"""查看实例约束信息
 
         查看实例约束信息
         
@@ -8592,7 +8592,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_app_acl_async(self, request):
-        """设置APP的访问控制
+        r"""设置APP的访问控制
 
         设置凭据的访问控制。
         
@@ -8661,7 +8661,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_app_quota_async(self, request):
-        """修改凭据配额
+        r"""修改凭据配额
 
         修改凭据配额
         
@@ -8730,7 +8730,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_app_v2_async(self, request):
-        """修改APP
+        r"""修改APP
 
         修改指定APP的信息。其中可修改的属性为：name、remark，当支持用户自定义key和secret的开关开启时，app_key和app_secret也支持修改，其它属性不可修改。
         
@@ -8799,7 +8799,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_custom_authorizer_v2_async(self, request):
-        """修改自定义认证
+        r"""修改自定义认证
 
         修改自定义认证
         
@@ -8868,7 +8868,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_domain_v2_async(self, request):
-        """修改域名
+        r"""修改域名
 
         修改绑定的域名所对应的配置信息。使用实例自定义入方向端口的特性时，注意开启/关闭客户端校验会对相同域名的不同端口同时生效。
         
@@ -8939,7 +8939,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_engress_eip_v2_async(self, request):
-        """更新实例出公网带宽
+        r"""更新实例出公网带宽
 
         更新实例出公网带宽
         
@@ -9006,7 +9006,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_environment_v2_async(self, request):
-        """修改环境
+        r"""修改环境
 
         修改指定环境的信息。其中可修改的属性为：name、remark，其它属性不可修改。
         
@@ -9075,7 +9075,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_environment_variable_v2_async(self, request):
-        """修改变量
+        r"""修改变量
 
         修改环境变量。环境变量引用位置为api的后端服务地址时，修改对应环境变量会将使用该变量的所有api重新发布。
         
@@ -9144,7 +9144,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_gateway_response_type_v2_async(self, request):
-        """修改分组下指定错误类型的自定义响应
+        r"""修改分组下指定错误类型的自定义响应
 
         修改分组下指定错误类型的自定义响应。
         
@@ -9217,7 +9217,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_gateway_response_v2_async(self, request):
-        """修改分组自定义响应
+        r"""修改分组自定义响应
 
         修改分组自定义响应
         
@@ -9288,7 +9288,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_ingress_eip_v2_async(self, request):
-        """更新实例入公网带宽
+        r"""更新实例入公网带宽
 
         更新实例入公网带宽，仅当实例为ELB类型时支持
         
@@ -9355,7 +9355,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_instance_v2_async(self, request):
-        """更新专享版实例
+        r"""更新专享版实例
 
         更新专享版实例
         
@@ -9422,7 +9422,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_orchestration_async(self, request):
-        """更新编排规则
+        r"""更新编排规则
 
         更新编排规则
         
@@ -9491,7 +9491,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_plugin_async(self, request):
-        """修改插件
+        r"""修改插件
 
         修改插件信息。
         - 插件不允许重名
@@ -9562,7 +9562,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_request_throttling_policy_v2_async(self, request):
-        """修改流控策略
+        r"""修改流控策略
 
         修改指定流控策略的详细信息。
         
@@ -9631,7 +9631,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_signature_key_v2_async(self, request):
-        """修改签名密钥
+        r"""修改签名密钥
 
         修改指定签名密钥的详细信息。
         
@@ -9700,7 +9700,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_sl_domain_setting_v2_async(self, request):
-        """设置调试域名是否可以访问
+        r"""设置调试域名是否可以访问
 
         禁用或启用API分组绑定的调试域名
         
@@ -9769,7 +9769,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_special_throttling_configuration_v2_async(self, request):
-        """修改特殊设置
+        r"""修改特殊设置
 
         修改某个流控策略下的某个特殊设置。
         
@@ -9840,7 +9840,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def batch_delete_acl_v2_async(self, request):
-        """批量删除ACL策略
+        r"""批量删除ACL策略
 
         批量删除指定的多个ACL策略。
         
@@ -9911,7 +9911,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_acl_strategy_v2_async(self, request):
-        """创建ACL策略
+        r"""创建ACL策略
 
         增加一个ACL策略，策略类型通过字段acl_type来确定（permit或者deny），限制的对象的类型可以为IP或者DOMAIN，这里的DOMAIN对应的acl_value的值为租户名称，而非“www.exampleDomain.com”之类的网络域名。
         
@@ -9978,7 +9978,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_acl_v2_async(self, request):
-        """删除ACL策略
+        r"""删除ACL策略
 
         删除指定的ACL策略， 如果存在api与该ACL策略的绑定关系，则无法删除
         
@@ -10045,7 +10045,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_acl_strategies_v2_async(self, request):
-        """查看ACL策略列表
+        r"""查看ACL策略列表
 
         查询所有的ACL策略列表。
         
@@ -10124,7 +10124,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_acl_policy_v2_async(self, request):
-        """查看ACL策略详情
+        r"""查看ACL策略详情
 
         查询指定ACL策略的详情。
         
@@ -10191,7 +10191,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_acl_strategy_v2_async(self, request):
-        """修改ACL策略
+        r"""修改ACL策略
 
         修改指定的ACL策略，其中可修改的属性为：acl_name、acl_type、acl_value，其它属性不可修改。
         
@@ -10260,7 +10260,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def associate_request_throttling_policy_v2_async(self, request):
-        """绑定流控策略
+        r"""绑定流控策略
 
         将流控策略应用于API，则所有对该API的访问将会受到该流控策略的限制。
         
@@ -10333,7 +10333,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def batch_disassociate_throttling_policy_v2_async(self, request):
-        """批量解绑流控策略
+        r"""批量解绑流控策略
 
         批量解除API与流控策略的绑定关系
         
@@ -10402,7 +10402,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def batch_publish_or_offline_api_v2_async(self, request):
-        """批量发布或下线API
+        r"""批量发布或下线API
 
         将多个API发布到一个指定的环境，或将多个API从指定的环境下线。
         
@@ -10471,7 +10471,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def change_api_version_v2_async(self, request):
-        """切换API版本
+        r"""切换API版本
 
         API每次发布时，会基于当前的API定义生成一个版本。版本记录了API发布时的各种定义及状态。
         
@@ -10542,7 +10542,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def check_api_groups_v2_async(self, request):
-        """校验API分组名称是否存在
+        r"""校验API分组名称是否存在
 
         校验API分组名称是否存在。
         
@@ -10609,7 +10609,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def check_apis_v2_async(self, request):
-        """校验API定义
+        r"""校验API定义
 
         校验API定义。校验API的路径或名称是否已存在
         
@@ -10676,7 +10676,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_api_group_v2_async(self, request):
-        """创建API分组
+        r"""创建API分组
 
         API分组是API的管理单元，一个API分组等同于一个服务入口，创建API分组时，返回一个子域名作为访问入口。建议一个API分组下的API具有一定的相关性。
         
@@ -10743,7 +10743,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_api_v2_async(self, request):
-        """创建API
+        r"""创建API
 
         添加一个API，API即一个服务接口，具体的服务能力。
         
@@ -10813,7 +10813,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_or_delete_publish_record_for_api_v2_async(self, request):
-        """发布或下线API
+        r"""发布或下线API
 
         对API进行发布或下线。
         
@@ -10884,7 +10884,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def debug_api_v2_async(self, request):
-        """调试API
+        r"""调试API
 
         调试一个API在指定运行环境下的定义，接口调用者需要具有操作该API的权限。
         
@@ -10953,7 +10953,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_api_by_version_id_v2_async(self, request):
-        """根据版本编号下线API
+        r"""根据版本编号下线API
 
         对某个生效中的API版本进行下线操作，下线后，API在该版本生效的环境中将不再能够被调用。
         
@@ -11020,7 +11020,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_api_group_v2_async(self, request):
-        """删除API分组
+        r"""删除API分组
 
         删除指定的API分组。
         
@@ -11091,7 +11091,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_api_v2_async(self, request):
-        """删除API
+        r"""删除API
 
         删除指定的API。
         
@@ -11160,7 +11160,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def disassociate_request_throttling_policy_v2_async(self, request):
-        """解除API与流控策略的绑定关系
+        r"""解除API与流控策略的绑定关系
 
         解除API与流控策略的绑定关系。
         
@@ -11227,7 +11227,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_api_groups_v2_async(self, request):
-        """查询分组列表
+        r"""查询分组列表
 
         查询API分组列表。
         
@@ -11304,7 +11304,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_api_runtime_definition_v2_async(self, request):
-        """查询API运行时定义
+        r"""查询API运行时定义
 
         查看指定的API在指定的环境上的运行时定义，默认查询RELEASE环境上的运行时定义。
         
@@ -11379,7 +11379,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_api_version_detail_v2_async(self, request):
-        """查看版本详情
+        r"""查看版本详情
 
         查询某个指定的版本详情。
         
@@ -11446,7 +11446,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_api_versions_v2_async(self, request):
-        """查询API历史版本列表
+        r"""查询API历史版本列表
 
         查询某个API的历史版本。每个API在一个环境上最多存在10个历史版本。
         
@@ -11521,7 +11521,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_binded_to_request_throttling_policy_v2_async(self, request):
-        """查看流控策略绑定的API列表
+        r"""查看流控策略绑定的API列表
 
         查询某个流控策略上已经绑定的API列表。
         
@@ -11600,7 +11600,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_unbinded_to_request_throttling_policy_v2_async(self, request):
-        """查看流控策略未绑定的API列表
+        r"""查看流控策略未绑定的API列表
 
         查询所有未绑定到该流控策略上的自有API列表。需要API已经发布，未发布的API不予展示。
         
@@ -11681,7 +11681,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_v2_async(self, request):
-        """查询API列表
+        r"""查询API列表
 
         查看API列表，返回API详细信息、发布信息等，但不能查看到后端服务信息和API请求参数信息
         
@@ -11776,7 +11776,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_request_throttling_policies_binded_to_api_v2_async(self, request):
-        """查看API绑定的流控策略列表
+        r"""查看API绑定的流控策略列表
 
         查询某个API绑定的流控策略列表。每个环境上应该最多只有一个流控策略。
         
@@ -11853,7 +11853,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_api_group_v2_async(self, request):
-        """查询分组详情
+        r"""查询分组详情
 
         查询指定分组的详细信息。
         
@@ -11920,7 +11920,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_api_v2_async(self, request):
-        """查询API详情
+        r"""查询API详情
 
         查看指定的API的详细信息。
         
@@ -11987,7 +11987,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_api_group_v2_async(self, request):
-        """修改API分组
+        r"""修改API分组
 
         修改API分组属性。其中name和remark可修改，其他属性不可修改。
         
@@ -12056,7 +12056,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_api_v2_async(self, request):
-        """修改API
+        r"""修改API
 
         修改指定API的信息，包括后端服务信息。
         
@@ -12125,7 +12125,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def batch_delete_api_acl_binding_v2_async(self, request):
-        """批量解除API与ACL策略的绑定
+        r"""批量解除API与ACL策略的绑定
 
         批量解除API与ACL策略的绑定
         
@@ -12194,7 +12194,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_api_acl_binding_v2_async(self, request):
-        """将API与ACL策略进行绑定
+        r"""将API与ACL策略进行绑定
 
         将API与ACL策略进行绑定。
         
@@ -12263,7 +12263,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_api_acl_binding_v2_async(self, request):
-        """解除API与ACL策略的绑定
+        r"""解除API与ACL策略的绑定
 
         解除某条API与ACL策略的绑定关系
         
@@ -12330,7 +12330,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_acl_policy_binded_to_api_v2_async(self, request):
-        """查看API绑定的ACL策略列表
+        r"""查看API绑定的ACL策略列表
 
         查看API绑定的ACL策略列表
         
@@ -12409,7 +12409,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_binded_to_acl_policy_v2_async(self, request):
-        """查看ACL策略绑定的API列表
+        r"""查看ACL策略绑定的API列表
 
         查看ACL策略绑定的API列表
         
@@ -12490,7 +12490,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_unbinded_to_acl_policy_v2_async(self, request):
-        """查看ACL策略未绑定的API列表
+        r"""查看ACL策略未绑定的API列表
 
         查看ACL策略未绑定的API列表，需要API已发布
         
@@ -12571,7 +12571,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def canceling_authorization_v2_async(self, request):
-        """解除授权
+        r"""解除授权
 
         解除API对APP的授权关系。解除授权后，APP将不再能够调用该API。
         
@@ -12638,7 +12638,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_authorizing_apps_v2_async(self, request):
-        """APP授权
+        r"""APP授权
 
         APP创建成功后，还不能访问API，如果想要访问某个环境上的API，需要将该API在该环境上授权给APP。授权成功后，APP即可访问该环境上的这个API。
         
@@ -12705,7 +12705,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_binded_to_app_v2_async(self, request):
-        """查看APP已绑定的API列表
+        r"""查看APP已绑定的API列表
 
         查询APP已经绑定的API列表。
         
@@ -12788,7 +12788,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apis_unbinded_to_app_v2_async(self, request):
-        """查看APP未绑定的API列表
+        r"""查看APP未绑定的API列表
 
         查询指定环境上某个APP未绑定的API列表[，包括自有API和从云商店购买的API](tag:hws)。
         
@@ -12869,7 +12869,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_apps_binded_to_api_v2_async(self, request):
-        """查看API已绑定的APP列表
+        r"""查看API已绑定的APP列表
 
         查询API绑定的APP列表。
         
@@ -12946,7 +12946,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def export_api_definitions_v2_async(self, request):
-        """导出API
+        r"""导出API
 
         导出分组下API的定义信息。导出文件内容符合swagger标准规范，API网关自定义扩展字段请参考《API网关用户指南》的“导入导出API：扩展定义”章节。
         
@@ -13015,7 +13015,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def import_api_definitions_v2_async(self, request):
-        """导入API
+        r"""导入API
 
         导入API。导入文件内容需要符合swagger标准规范，API网关自定义扩展字段请参考《API网关用户指南》的“导入导出API：扩展定义”章节。
         
@@ -13096,7 +13096,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def batch_associate_certs_v2_async(self, request):
-        """域名绑定SSL证书
+        r"""域名绑定SSL证书
 
         域名绑定SSL证书。目前暂时仅支持单个绑定，请求体当中的certificate_ids里面有且只能有一个证书ID。使用实例自定义入方向端口的特性时，相同的域名会同时绑定证书，注意开启/关闭客户端校验会对相同域名的不同端口同时生效。
         
@@ -13167,7 +13167,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def batch_associate_domains_v2_async(self, request):
-        """SSL证书绑定域名
+        r"""SSL证书绑定域名
 
         SSL证书绑定域名。使用实例自定义入方向端口的特性时，相同的域名会同时绑定证书，注意开启/关闭客户端校验会对相同域名的不同端口同时生效。
         
@@ -13234,7 +13234,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def batch_disassociate_certs_v2_async(self, request):
-        """域名解绑SSL证书
+        r"""域名解绑SSL证书
 
         域名解绑SSL证书。目前暂时仅支持单个解绑，请求体当中的certificate_ids里面有且只能有一个证书ID。在使用自定义入方向端口的特性时，相同的域名会同时解绑证书。
         
@@ -13305,7 +13305,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def batch_disassociate_domains_v2_async(self, request):
-        """SSL证书解绑域名
+        r"""SSL证书解绑域名
 
         SSL证书解绑域名。在使用自定义入方向端口的特性时，相同的域名会同时解绑证书。
         
@@ -13372,7 +13372,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_certificate_v2_async(self, request):
-        """创建SSL证书
+        r"""创建SSL证书
 
         创建SSL证书。
         
@@ -13437,7 +13437,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_certificate_v2_async(self, request):
-        """删除SSL证书
+        r"""删除SSL证书
 
         删除ssl证书接口，删除时只有没有关联域名的证书才能被删除。
         
@@ -13502,7 +13502,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_attached_domains_v2_async(self, request):
-        """获取SSL证书已绑定域名列表
+        r"""获取SSL证书已绑定域名列表
 
         获取SSL证书已绑定域名列表。
         
@@ -13573,7 +13573,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_certificates_v2_async(self, request):
-        """获取SSL证书列表
+        r"""获取SSL证书列表
 
         获取SSL证书列表。
         
@@ -13652,7 +13652,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_certificate_v2_async(self, request):
-        """查看证书详情
+        r"""查看证书详情
 
         查看证书详情。
         
@@ -13717,7 +13717,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_certificate_v2_async(self, request):
-        """修改SSL证书
+        r"""修改SSL证书
 
         修改SSL证书。
         
@@ -13784,7 +13784,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def adding_backend_instances_v2_async(self, request):
-        """添加或更新后端实例
+        r"""添加或更新后端实例
 
         为指定的VPC通道添加后端实例
         
@@ -13857,7 +13857,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def batch_disable_members_async(self, request):
-        """批量修改后端服务器状态不可用
+        r"""批量修改后端服务器状态不可用
 
         批量修改后端服务器状态不可用。
         
@@ -13928,7 +13928,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def batch_enable_members_async(self, request):
-        """批量修改后端服务器状态可用
+        r"""批量修改后端服务器状态可用
 
         批量修改后端服务器状态可用。
         
@@ -13999,7 +13999,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_member_group_async(self, request):
-        """添加或更新VPC通道后端服务器组
+        r"""添加或更新VPC通道后端服务器组
 
         在APIG中创建VPC通道后端服务器组，VPC通道后端实例可以选择是否关联后端实例服务器组，以便管理后端服务器节点。
         
@@ -14070,7 +14070,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def create_vpc_channel_v2_async(self, request):
-        """创建VPC通道
+        r"""创建VPC通道
 
         在API网关中创建连接私有VPC资源的通道，并在创建API时将后端节点配置为使用这些VPC通道，以便API网关直接访问私有VPC资源。
         &gt; 每个用户最多创建30个VPC通道。
@@ -14138,7 +14138,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_backend_instance_v2_async(self, request):
-        """删除后端实例
+        r"""删除后端实例
 
         删除指定VPC通道中的后端实例
         
@@ -14209,7 +14209,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_member_group_async(self, request):
-        """删除VPC通道后端服务器组
+        r"""删除VPC通道后端服务器组
 
         删除指定的VPC通道后端服务器组
         
@@ -14278,7 +14278,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def delete_vpc_channel_v2_async(self, request):
-        """删除VPC通道
+        r"""删除VPC通道
 
         删除指定的VPC通道
         
@@ -14345,7 +14345,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_backend_instances_v2_async(self, request):
-        """查看后端实例列表
+        r"""查看后端实例列表
 
         查看指定VPC通道的后端实例列表。
         
@@ -14424,7 +14424,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_member_groups_async(self, request):
-        """查询VPC通道后端云服务组列表
+        r"""查询VPC通道后端云服务组列表
 
         查询VPC通道后端云服务组列表
         
@@ -14501,7 +14501,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def list_vpc_channels_v2_async(self, request):
-        """查询VPC通道列表
+        r"""查询VPC通道列表
 
         查看VPC通道列表
         
@@ -14588,7 +14588,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_member_group_async(self, request):
-        """查看VPC通道后端服务器组详情
+        r"""查看VPC通道后端服务器组详情
 
         查看指定的VPC通道后端服务器组详情
         
@@ -14657,7 +14657,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def show_details_of_vpc_channel_v2_async(self, request):
-        """查看VPC通道详情
+        r"""查看VPC通道详情
 
         查看指定的VPC通道详情
         
@@ -14724,7 +14724,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_backend_instances_v2_async(self, request):
-        """更新后端实例
+        r"""更新后端实例
 
         更新指定的VPC通道的后端实例。更新时，使用传入的请求参数对对应云服务组的后端实例进行全量覆盖修改。如果未指定修改的云服务器组，则进行全量覆盖。
         
@@ -14795,7 +14795,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_health_check_async(self, request):
-        """修改VPC通道健康检查
+        r"""修改VPC通道健康检查
 
         修改VPC通道健康检查。
         
@@ -14864,7 +14864,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_member_group_async(self, request):
-        """更新VPC通道后端服务器组
+        r"""更新VPC通道后端服务器组
 
         更新指定VPC通道后端服务器组。当负载通道为nacos微服务类型时，不支持修改服务器组权重。
         
@@ -14935,7 +14935,7 @@ class ApigAsyncClient(Client):
         return http_info
 
     def update_vpc_channel_v2_async(self, request):
-        """更新VPC通道
+        r"""更新VPC通道
 
         更新指定VPC通道的参数
         

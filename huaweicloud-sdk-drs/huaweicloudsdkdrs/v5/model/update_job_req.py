@@ -27,7 +27,7 @@ class UpdateJobReq:
     }
 
     def __init__(self, type=None, params=None):
-        """UpdateJobReq
+        r"""UpdateJobReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateJobReq:
 
     @property
     def type(self):
-        """Gets the type of this UpdateJobReq.
+        r"""Gets the type of this UpdateJobReq.
 
         更新指定ID任务详情类型。  场景一：更新单个任务详情，取值： - name：更新该任务名称。 - description：更新该任务描述。 - re_create：配置中任务三天以后虚拟机删除后重建。 - expired_days：更新任务异常自动结束时间，单位为天。 - notify：更新任务异常通知信息。  场景二：更新批量异步任务详情，取值： - all：批量异步创建的任务，参数校验不通过，需要指定全部参数进行更新时。 - network：批量异步创建的任务，测试连接不通过，需要更新源库/目标库信息时。 - policy：批量异步创建的任务，需要更新任务配置时。 - db_object：批量异步创建的任务，需要更新对象信息时。 - precheck：批量异步创建的任务，需要重新预检查时。
 
@@ -59,7 +59,7 @@ class UpdateJobReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateJobReq.
+        r"""Sets the type of this UpdateJobReq.
 
         更新指定ID任务详情类型。  场景一：更新单个任务详情，取值： - name：更新该任务名称。 - description：更新该任务描述。 - re_create：配置中任务三天以后虚拟机删除后重建。 - expired_days：更新任务异常自动结束时间，单位为天。 - notify：更新任务异常通知信息。  场景二：更新批量异步任务详情，取值： - all：批量异步创建的任务，参数校验不通过，需要指定全部参数进行更新时。 - network：批量异步创建的任务，测试连接不通过，需要更新源库/目标库信息时。 - policy：批量异步创建的任务，需要更新任务配置时。 - db_object：批量异步创建的任务，需要更新对象信息时。 - precheck：批量异步创建的任务，需要重新预检查时。
 
@@ -70,7 +70,7 @@ class UpdateJobReq:
 
     @property
     def params(self):
-        """Gets the params of this UpdateJobReq.
+        r"""Gets the params of this UpdateJobReq.
 
         :return: The params of this UpdateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.UpdateJob`
@@ -79,7 +79,7 @@ class UpdateJobReq:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this UpdateJobReq.
+        r"""Sets the params of this UpdateJobReq.
 
         :param params: The params of this UpdateJobReq.
         :type params: :class:`huaweicloudsdkdrs.v5.UpdateJob`

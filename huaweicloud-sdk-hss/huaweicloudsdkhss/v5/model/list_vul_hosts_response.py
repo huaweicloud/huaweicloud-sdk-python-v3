@@ -28,7 +28,7 @@ class ListVulHostsResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        """ListVulHostsResponse
+        r"""ListVulHostsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListVulHostsResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListVulHostsResponse.
+        r"""Gets the total_num of this ListVulHostsResponse.
 
         受影响的云服务器总数
 
@@ -62,7 +62,7 @@ class ListVulHostsResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListVulHostsResponse.
+        r"""Sets the total_num of this ListVulHostsResponse.
 
         受影响的云服务器总数
 
@@ -73,7 +73,7 @@ class ListVulHostsResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListVulHostsResponse.
+        r"""Gets the data_list of this ListVulHostsResponse.
 
         受影响的云服务器列表
 
@@ -84,7 +84,7 @@ class ListVulHostsResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListVulHostsResponse.
+        r"""Sets the data_list of this ListVulHostsResponse.
 
         受影响的云服务器列表
 

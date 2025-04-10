@@ -25,7 +25,7 @@ class RestoreDatabaseTableInfo:
     }
 
     def __init__(self, name=None):
-        """RestoreDatabaseTableInfo
+        r"""RestoreDatabaseTableInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RestoreDatabaseTableInfo:
 
     @property
     def name(self):
-        """Gets the name of this RestoreDatabaseTableInfo.
+        r"""Gets the name of this RestoreDatabaseTableInfo.
 
         表名。
 
@@ -54,7 +54,7 @@ class RestoreDatabaseTableInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RestoreDatabaseTableInfo.
+        r"""Sets the name of this RestoreDatabaseTableInfo.
 
         表名。
 

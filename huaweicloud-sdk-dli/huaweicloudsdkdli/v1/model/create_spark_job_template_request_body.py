@@ -35,7 +35,7 @@ class CreateSparkJobTemplateRequestBody:
     }
 
     def __init__(self, type=None, name=None, body=None, group=None, description=None, language=None):
-        """CreateSparkJobTemplateRequestBody
+        r"""CreateSparkJobTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class CreateSparkJobTemplateRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateSparkJobTemplateRequestBody.
+        r"""Gets the type of this CreateSparkJobTemplateRequestBody.
 
         类型。SQL：sql模板。SPARK：spark模板。
 
@@ -86,7 +86,7 @@ class CreateSparkJobTemplateRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateSparkJobTemplateRequestBody.
+        r"""Sets the type of this CreateSparkJobTemplateRequestBody.
 
         类型。SQL：sql模板。SPARK：spark模板。
 
@@ -97,7 +97,7 @@ class CreateSparkJobTemplateRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateSparkJobTemplateRequestBody.
+        r"""Gets the name of this CreateSparkJobTemplateRequestBody.
 
         名字
 
@@ -108,7 +108,7 @@ class CreateSparkJobTemplateRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateSparkJobTemplateRequestBody.
+        r"""Sets the name of this CreateSparkJobTemplateRequestBody.
 
         名字
 
@@ -119,7 +119,7 @@ class CreateSparkJobTemplateRequestBody:
 
     @property
     def body(self):
-        """Gets the body of this CreateSparkJobTemplateRequestBody.
+        r"""Gets the body of this CreateSparkJobTemplateRequestBody.
 
         模板内容
 
@@ -130,7 +130,7 @@ class CreateSparkJobTemplateRequestBody:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSparkJobTemplateRequestBody.
+        r"""Sets the body of this CreateSparkJobTemplateRequestBody.
 
         模板内容
 
@@ -141,7 +141,7 @@ class CreateSparkJobTemplateRequestBody:
 
     @property
     def group(self):
-        """Gets the group of this CreateSparkJobTemplateRequestBody.
+        r"""Gets the group of this CreateSparkJobTemplateRequestBody.
 
         分组
 
@@ -152,7 +152,7 @@ class CreateSparkJobTemplateRequestBody:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this CreateSparkJobTemplateRequestBody.
+        r"""Sets the group of this CreateSparkJobTemplateRequestBody.
 
         分组
 
@@ -163,7 +163,7 @@ class CreateSparkJobTemplateRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateSparkJobTemplateRequestBody.
+        r"""Gets the description of this CreateSparkJobTemplateRequestBody.
 
         描述信息
 
@@ -174,7 +174,7 @@ class CreateSparkJobTemplateRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateSparkJobTemplateRequestBody.
+        r"""Sets the description of this CreateSparkJobTemplateRequestBody.
 
         描述信息
 
@@ -185,7 +185,7 @@ class CreateSparkJobTemplateRequestBody:
 
     @property
     def language(self):
-        """Gets the language of this CreateSparkJobTemplateRequestBody.
+        r"""Gets the language of this CreateSparkJobTemplateRequestBody.
 
         语言
 
@@ -196,7 +196,7 @@ class CreateSparkJobTemplateRequestBody:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this CreateSparkJobTemplateRequestBody.
+        r"""Sets the language of this CreateSparkJobTemplateRequestBody.
 
         语言
 

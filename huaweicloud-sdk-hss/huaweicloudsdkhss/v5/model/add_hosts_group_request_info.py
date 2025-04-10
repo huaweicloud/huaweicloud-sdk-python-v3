@@ -27,7 +27,7 @@ class AddHostsGroupRequestInfo:
     }
 
     def __init__(self, group_name=None, host_id_list=None):
-        """AddHostsGroupRequestInfo
+        r"""AddHostsGroupRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AddHostsGroupRequestInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this AddHostsGroupRequestInfo.
+        r"""Gets the group_name of this AddHostsGroupRequestInfo.
 
         服务器组名称
 
@@ -59,7 +59,7 @@ class AddHostsGroupRequestInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this AddHostsGroupRequestInfo.
+        r"""Sets the group_name of this AddHostsGroupRequestInfo.
 
         服务器组名称
 
@@ -70,7 +70,7 @@ class AddHostsGroupRequestInfo:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this AddHostsGroupRequestInfo.
+        r"""Gets the host_id_list of this AddHostsGroupRequestInfo.
 
         服务器ID列表
 
@@ -81,7 +81,7 @@ class AddHostsGroupRequestInfo:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this AddHostsGroupRequestInfo.
+        r"""Sets the host_id_list of this AddHostsGroupRequestInfo.
 
         服务器ID列表
 

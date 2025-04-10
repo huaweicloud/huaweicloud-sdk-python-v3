@@ -25,7 +25,7 @@ class GlanceCreateImageMetadataRequest:
     }
 
     def __init__(self, body=None):
-        """GlanceCreateImageMetadataRequest
+        r"""GlanceCreateImageMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GlanceCreateImageMetadataRequest:
 
     @property
     def body(self):
-        """Gets the body of this GlanceCreateImageMetadataRequest.
+        r"""Gets the body of this GlanceCreateImageMetadataRequest.
 
         :return: The body of this GlanceCreateImageMetadataRequest.
         :rtype: :class:`huaweicloudsdkims.v2.GlanceCreateImageMetadataRequestBody`
@@ -52,7 +52,7 @@ class GlanceCreateImageMetadataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this GlanceCreateImageMetadataRequest.
+        r"""Sets the body of this GlanceCreateImageMetadataRequest.
 
         :param body: The body of this GlanceCreateImageMetadataRequest.
         :type body: :class:`huaweicloudsdkims.v2.GlanceCreateImageMetadataRequestBody`

@@ -27,7 +27,7 @@ class PersistableModelUniqueKeyDTO:
     }
 
     def __init__(self, decrypt=None, unique_key=None):
-        """PersistableModelUniqueKeyDTO
+        r"""PersistableModelUniqueKeyDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PersistableModelUniqueKeyDTO:
 
     @property
     def decrypt(self):
-        """Gets the decrypt of this PersistableModelUniqueKeyDTO.
+        r"""Gets the decrypt of this PersistableModelUniqueKeyDTO.
 
         **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
@@ -60,7 +60,7 @@ class PersistableModelUniqueKeyDTO:
 
     @decrypt.setter
     def decrypt(self, decrypt):
-        """Sets the decrypt of this PersistableModelUniqueKeyDTO.
+        r"""Sets the decrypt of this PersistableModelUniqueKeyDTO.
 
         **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
@@ -71,7 +71,7 @@ class PersistableModelUniqueKeyDTO:
 
     @property
     def unique_key(self):
-        """Gets the unique_key of this PersistableModelUniqueKeyDTO.
+        r"""Gets the unique_key of this PersistableModelUniqueKeyDTO.
 
         **参数解释：**  示例模型的唯一键约束属性值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -82,7 +82,7 @@ class PersistableModelUniqueKeyDTO:
 
     @unique_key.setter
     def unique_key(self, unique_key):
-        """Sets the unique_key of this PersistableModelUniqueKeyDTO.
+        r"""Sets the unique_key of this PersistableModelUniqueKeyDTO.
 
         **参数解释：**  示例模型的唯一键约束属性值。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

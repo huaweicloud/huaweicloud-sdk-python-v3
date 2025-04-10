@@ -29,7 +29,7 @@ class ListGeipSegmentFilterTagsRequest:
     }
 
     def __init__(self, limit=None, offset=None, body=None):
-        """ListGeipSegmentFilterTagsRequest
+        r"""ListGeipSegmentFilterTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListGeipSegmentFilterTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGeipSegmentFilterTagsRequest.
+        r"""Gets the limit of this ListGeipSegmentFilterTagsRequest.
 
         每页条数
 
@@ -68,7 +68,7 @@ class ListGeipSegmentFilterTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGeipSegmentFilterTagsRequest.
+        r"""Sets the limit of this ListGeipSegmentFilterTagsRequest.
 
         每页条数
 
@@ -79,7 +79,7 @@ class ListGeipSegmentFilterTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGeipSegmentFilterTagsRequest.
+        r"""Gets the offset of this ListGeipSegmentFilterTagsRequest.
 
         分页起始点
 
@@ -90,7 +90,7 @@ class ListGeipSegmentFilterTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGeipSegmentFilterTagsRequest.
+        r"""Sets the offset of this ListGeipSegmentFilterTagsRequest.
 
         分页起始点
 
@@ -101,7 +101,7 @@ class ListGeipSegmentFilterTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListGeipSegmentFilterTagsRequest.
+        r"""Gets the body of this ListGeipSegmentFilterTagsRequest.
 
         :return: The body of this ListGeipSegmentFilterTagsRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.ListResourcesByTagsRequestBody`
@@ -110,7 +110,7 @@ class ListGeipSegmentFilterTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListGeipSegmentFilterTagsRequest.
+        r"""Sets the body of this ListGeipSegmentFilterTagsRequest.
 
         :param body: The body of this ListGeipSegmentFilterTagsRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.ListResourcesByTagsRequestBody`

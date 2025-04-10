@@ -27,7 +27,7 @@ class LayerSizeConfig:
     }
 
     def __init__(self, width=None, height=None):
-        """LayerSizeConfig
+        r"""LayerSizeConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LayerSizeConfig:
 
     @property
     def width(self):
-        """Gets the width of this LayerSizeConfig.
+        r"""Gets the width of this LayerSizeConfig.
 
         **参数解释**： 图层图片左上角像素点的Y轴位置值图层图片宽度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**： 该值为相对于画布的像素值，仅表示布局位置关系，与输出画面分辨率无关。
 
@@ -61,7 +61,7 @@ class LayerSizeConfig:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this LayerSizeConfig.
+        r"""Sets the width of this LayerSizeConfig.
 
         **参数解释**： 图层图片左上角像素点的Y轴位置值图层图片宽度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**： 该值为相对于画布的像素值，仅表示布局位置关系，与输出画面分辨率无关。
 
@@ -72,7 +72,7 @@ class LayerSizeConfig:
 
     @property
     def height(self):
-        """Gets the height of this LayerSizeConfig.
+        r"""Gets the height of this LayerSizeConfig.
 
         **参数解释**： 图层图片高度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**： 该值为相对于画布的像素值，仅表示布局位置关系，与输出画面分辨率无关。|
 
@@ -83,7 +83,7 @@ class LayerSizeConfig:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this LayerSizeConfig.
+        r"""Sets the height of this LayerSizeConfig.
 
         **参数解释**： 图层图片高度像素值（相对画布大小）。 横屏（16:9）画布像素为1920x1080；竖屏（9:16）画布像素为1080x1920。  **约束限制**： 该值为相对于画布的像素值，仅表示布局位置关系，与输出画面分辨率无关。|
 

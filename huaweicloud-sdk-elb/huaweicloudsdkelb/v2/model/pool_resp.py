@@ -53,7 +53,7 @@ class PoolResp:
     }
 
     def __init__(self, id=None, project_id=None, tenant_id=None, name=None, description=None, admin_state_up=None, loadbalancers=None, listeners=None, members=None, healthmonitor_id=None, session_persistence=None, protocol=None, lb_algorithm=None, protection_status=None, protection_reason=None):
-        """PoolResp
+        r"""PoolResp
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class PoolResp:
 
     @property
     def id(self):
-        """Gets the id of this PoolResp.
+        r"""Gets the id of this PoolResp.
 
         后端云服务器组的ID
 
@@ -139,7 +139,7 @@ class PoolResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PoolResp.
+        r"""Sets the id of this PoolResp.
 
         后端云服务器组的ID
 
@@ -150,7 +150,7 @@ class PoolResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PoolResp.
+        r"""Gets the project_id of this PoolResp.
 
         后端云服务器组所在的项目ID。
 
@@ -161,7 +161,7 @@ class PoolResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PoolResp.
+        r"""Sets the project_id of this PoolResp.
 
         后端云服务器组所在的项目ID。
 
@@ -172,7 +172,7 @@ class PoolResp:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this PoolResp.
+        r"""Gets the tenant_id of this PoolResp.
 
         后端云服务器组所在的项目ID。
 
@@ -183,7 +183,7 @@ class PoolResp:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this PoolResp.
+        r"""Sets the tenant_id of this PoolResp.
 
         后端云服务器组所在的项目ID。
 
@@ -194,7 +194,7 @@ class PoolResp:
 
     @property
     def name(self):
-        """Gets the name of this PoolResp.
+        r"""Gets the name of this PoolResp.
 
         后端云服务器组的名称。
 
@@ -205,7 +205,7 @@ class PoolResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PoolResp.
+        r"""Sets the name of this PoolResp.
 
         后端云服务器组的名称。
 
@@ -216,7 +216,7 @@ class PoolResp:
 
     @property
     def description(self):
-        """Gets the description of this PoolResp.
+        r"""Gets the description of this PoolResp.
 
         后端云服务器组的描述信息
 
@@ -227,7 +227,7 @@ class PoolResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PoolResp.
+        r"""Sets the description of this PoolResp.
 
         后端云服务器组的描述信息
 
@@ -238,7 +238,7 @@ class PoolResp:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this PoolResp.
+        r"""Gets the admin_state_up of this PoolResp.
 
         后端云服务器组的管理状态。只支持设定为true，该字段的值无实际意义。
 
@@ -249,7 +249,7 @@ class PoolResp:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this PoolResp.
+        r"""Sets the admin_state_up of this PoolResp.
 
         后端云服务器组的管理状态。只支持设定为true，该字段的值无实际意义。
 
@@ -260,7 +260,7 @@ class PoolResp:
 
     @property
     def loadbalancers(self):
-        """Gets the loadbalancers of this PoolResp.
+        r"""Gets the loadbalancers of this PoolResp.
 
         后端云服务器组绑定的负载均衡器ID的列表。
 
@@ -271,7 +271,7 @@ class PoolResp:
 
     @loadbalancers.setter
     def loadbalancers(self, loadbalancers):
-        """Sets the loadbalancers of this PoolResp.
+        r"""Sets the loadbalancers of this PoolResp.
 
         后端云服务器组绑定的负载均衡器ID的列表。
 
@@ -282,7 +282,7 @@ class PoolResp:
 
     @property
     def listeners(self):
-        """Gets the listeners of this PoolResp.
+        r"""Gets the listeners of this PoolResp.
 
         后端云服务器组关联的监听器ID的列表。
 
@@ -293,7 +293,7 @@ class PoolResp:
 
     @listeners.setter
     def listeners(self, listeners):
-        """Sets the listeners of this PoolResp.
+        r"""Sets the listeners of this PoolResp.
 
         后端云服务器组关联的监听器ID的列表。
 
@@ -304,7 +304,7 @@ class PoolResp:
 
     @property
     def members(self):
-        """Gets the members of this PoolResp.
+        r"""Gets the members of this PoolResp.
 
         后端云服务器组关联的后端云服务器ID的列表。
 
@@ -315,7 +315,7 @@ class PoolResp:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this PoolResp.
+        r"""Sets the members of this PoolResp.
 
         后端云服务器组关联的后端云服务器ID的列表。
 
@@ -326,7 +326,7 @@ class PoolResp:
 
     @property
     def healthmonitor_id(self):
-        """Gets the healthmonitor_id of this PoolResp.
+        r"""Gets the healthmonitor_id of this PoolResp.
 
         后端云服务器组关联的健康检查的ID。
 
@@ -337,7 +337,7 @@ class PoolResp:
 
     @healthmonitor_id.setter
     def healthmonitor_id(self, healthmonitor_id):
-        """Sets the healthmonitor_id of this PoolResp.
+        r"""Sets the healthmonitor_id of this PoolResp.
 
         后端云服务器组关联的健康检查的ID。
 
@@ -348,7 +348,7 @@ class PoolResp:
 
     @property
     def session_persistence(self):
-        """Gets the session_persistence of this PoolResp.
+        r"""Gets the session_persistence of this PoolResp.
 
         :return: The session_persistence of this PoolResp.
         :rtype: :class:`huaweicloudsdkelb.v2.SessionPersistence`
@@ -357,7 +357,7 @@ class PoolResp:
 
     @session_persistence.setter
     def session_persistence(self, session_persistence):
-        """Sets the session_persistence of this PoolResp.
+        r"""Sets the session_persistence of this PoolResp.
 
         :param session_persistence: The session_persistence of this PoolResp.
         :type session_persistence: :class:`huaweicloudsdkelb.v2.SessionPersistence`
@@ -366,7 +366,7 @@ class PoolResp:
 
     @property
     def protocol(self):
-        """Gets the protocol of this PoolResp.
+        r"""Gets the protocol of this PoolResp.
 
         后端云服务器组的后端协议。
 
@@ -377,7 +377,7 @@ class PoolResp:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this PoolResp.
+        r"""Sets the protocol of this PoolResp.
 
         后端云服务器组的后端协议。
 
@@ -388,7 +388,7 @@ class PoolResp:
 
     @property
     def lb_algorithm(self):
-        """Gets the lb_algorithm of this PoolResp.
+        r"""Gets the lb_algorithm of this PoolResp.
 
         后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法。当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
 
@@ -399,7 +399,7 @@ class PoolResp:
 
     @lb_algorithm.setter
     def lb_algorithm(self, lb_algorithm):
-        """Sets the lb_algorithm of this PoolResp.
+        r"""Sets the lb_algorithm of this PoolResp.
 
         后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法。当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
 
@@ -410,7 +410,7 @@ class PoolResp:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this PoolResp.
+        r"""Gets the protection_status of this PoolResp.
 
         修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
 
@@ -421,7 +421,7 @@ class PoolResp:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this PoolResp.
+        r"""Sets the protection_status of this PoolResp.
 
         修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
 
@@ -432,7 +432,7 @@ class PoolResp:
 
     @property
     def protection_reason(self):
-        """Gets the protection_reason of this PoolResp.
+        r"""Gets the protection_reason of this PoolResp.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 
@@ -443,7 +443,7 @@ class PoolResp:
 
     @protection_reason.setter
     def protection_reason(self, protection_reason):
-        """Sets the protection_reason of this PoolResp.
+        r"""Sets the protection_reason of this PoolResp.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 

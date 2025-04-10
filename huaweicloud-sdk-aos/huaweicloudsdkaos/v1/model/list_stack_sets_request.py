@@ -33,7 +33,7 @@ class ListStackSetsRequest:
     }
 
     def __init__(self, client_request_id=None, filter=None, sort_key=None, sort_dir=None, call_identity=None):
-        """ListStackSetsRequest
+        r"""ListStackSetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListStackSetsRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this ListStackSetsRequest.
+        r"""Gets the client_request_id of this ListStackSetsRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -81,7 +81,7 @@ class ListStackSetsRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this ListStackSetsRequest.
+        r"""Sets the client_request_id of this ListStackSetsRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -92,7 +92,7 @@ class ListStackSetsRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListStackSetsRequest.
+        r"""Gets the filter of this ListStackSetsRequest.
 
         过滤条件  * 与（AND）运算符使用逗号（，）定义 * 或（OR）运算符使用竖线（|）定义，OR运算符优先级高于AND运算符 * 不支持括号 * 过滤运算符仅支持双等号（==） * 过滤参数名及其值仅支持包含大小写英文、数字和下划线 * 过滤条件中禁止使用分号，如果有分号，则此条过滤会被忽略 * 一个过滤参数仅能与一个与条件相关，一个与条件中的多个或条件仅能与一个过滤参数相关
 
@@ -103,7 +103,7 @@ class ListStackSetsRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListStackSetsRequest.
+        r"""Sets the filter of this ListStackSetsRequest.
 
         过滤条件  * 与（AND）运算符使用逗号（，）定义 * 或（OR）运算符使用竖线（|）定义，OR运算符优先级高于AND运算符 * 不支持括号 * 过滤运算符仅支持双等号（==） * 过滤参数名及其值仅支持包含大小写英文、数字和下划线 * 过滤条件中禁止使用分号，如果有分号，则此条过滤会被忽略 * 一个过滤参数仅能与一个与条件相关，一个与条件中的多个或条件仅能与一个过滤参数相关
 
@@ -114,7 +114,7 @@ class ListStackSetsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListStackSetsRequest.
+        r"""Gets the sort_key of this ListStackSetsRequest.
 
         排序字段，仅支持给予create_time
 
@@ -125,7 +125,7 @@ class ListStackSetsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListStackSetsRequest.
+        r"""Sets the sort_key of this ListStackSetsRequest.
 
         排序字段，仅支持给予create_time
 
@@ -136,7 +136,7 @@ class ListStackSetsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListStackSetsRequest.
+        r"""Gets the sort_dir of this ListStackSetsRequest.
 
         指定升序还是降序   * `asc` - 升序   * `desc` - 降序
 
@@ -147,7 +147,7 @@ class ListStackSetsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListStackSetsRequest.
+        r"""Sets the sort_dir of this ListStackSetsRequest.
 
         指定升序还是降序   * `asc` - 升序   * `desc` - 降序
 
@@ -158,7 +158,7 @@ class ListStackSetsRequest:
 
     @property
     def call_identity(self):
-        """Gets the call_identity of this ListStackSetsRequest.
+        r"""Gets the call_identity of this ListStackSetsRequest.
 
         仅支持资源栈集权限模式为SERVICE_MANAGED时指定该参数。用于指定用户是以组织管理账号还是成员账号中的服务委托管理员身份调用资源栈集。默认为SELF。 * 无论指定何种用户身份，创建或部署的资源栈集始终在组织管理账号名下。*   * `SELF` - 以组织管理账号身份调用。   * `DELEGATED_ADMIN` - 以服务委托管理员身份调用。用户的华为云账号必须在组织中已经被注册为”资源编排资源栈集服务“的委托管理员。
 
@@ -169,7 +169,7 @@ class ListStackSetsRequest:
 
     @call_identity.setter
     def call_identity(self, call_identity):
-        """Sets the call_identity of this ListStackSetsRequest.
+        r"""Sets the call_identity of this ListStackSetsRequest.
 
         仅支持资源栈集权限模式为SERVICE_MANAGED时指定该参数。用于指定用户是以组织管理账号还是成员账号中的服务委托管理员身份调用资源栈集。默认为SELF。 * 无论指定何种用户身份，创建或部署的资源栈集始终在组织管理账号名下。*   * `SELF` - 以组织管理账号身份调用。   * `DELEGATED_ADMIN` - 以服务委托管理员身份调用。用户的华为云账号必须在组织中已经被注册为”资源编排资源栈集服务“的委托管理员。
 

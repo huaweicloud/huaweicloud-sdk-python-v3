@@ -24,7 +24,7 @@ class ResetParamGroupTemplateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ResetParamGroupTemplateResponse
+        r"""ResetParamGroupTemplateResponse
 
         The model defined in huaweicloud sdk
 

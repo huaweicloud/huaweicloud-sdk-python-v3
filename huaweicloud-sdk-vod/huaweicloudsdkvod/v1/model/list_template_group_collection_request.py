@@ -29,7 +29,7 @@ class ListTemplateGroupCollectionRequest:
     }
 
     def __init__(self, group_collection_id=None, offset=None, limit=None):
-        """ListTemplateGroupCollectionRequest
+        r"""ListTemplateGroupCollectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListTemplateGroupCollectionRequest:
 
     @property
     def group_collection_id(self):
-        """Gets the group_collection_id of this ListTemplateGroupCollectionRequest.
+        r"""Gets the group_collection_id of this ListTemplateGroupCollectionRequest.
 
         模板组集合id 
 
@@ -68,7 +68,7 @@ class ListTemplateGroupCollectionRequest:
 
     @group_collection_id.setter
     def group_collection_id(self, group_collection_id):
-        """Sets the group_collection_id of this ListTemplateGroupCollectionRequest.
+        r"""Sets the group_collection_id of this ListTemplateGroupCollectionRequest.
 
         模板组集合id 
 
@@ -79,7 +79,7 @@ class ListTemplateGroupCollectionRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTemplateGroupCollectionRequest.
+        r"""Gets the offset of this ListTemplateGroupCollectionRequest.
 
         偏移量。默认为0。指定group_collection_id时该参数无效。<br/> 
 
@@ -90,7 +90,7 @@ class ListTemplateGroupCollectionRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTemplateGroupCollectionRequest.
+        r"""Sets the offset of this ListTemplateGroupCollectionRequest.
 
         偏移量。默认为0。指定group_collection_id时该参数无效。<br/> 
 
@@ -101,7 +101,7 @@ class ListTemplateGroupCollectionRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTemplateGroupCollectionRequest.
+        r"""Gets the limit of this ListTemplateGroupCollectionRequest.
 
         每页记录数。默认为10，范围[1,100]。指定group_collection_id时该参数无效。<br/> 
 
@@ -112,7 +112,7 @@ class ListTemplateGroupCollectionRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTemplateGroupCollectionRequest.
+        r"""Sets the limit of this ListTemplateGroupCollectionRequest.
 
         每页记录数。默认为10，范围[1,100]。指定group_collection_id时该参数无效。<br/> 
 

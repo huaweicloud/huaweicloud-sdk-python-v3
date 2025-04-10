@@ -29,7 +29,7 @@ class BackupInfo:
     }
 
     def __init__(self, file_source=None, bucket_name=None, files=None):
-        """BackupInfo
+        r"""BackupInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BackupInfo:
 
     @property
     def file_source(self):
-        """Gets the file_source of this BackupInfo.
+        r"""Gets the file_source of this BackupInfo.
 
         备份文件来源：（全部大写） - OBS：存放在OBS中的备份文件。 - RDS：RDS实例的备份文件。
 
@@ -66,7 +66,7 @@ class BackupInfo:
 
     @file_source.setter
     def file_source(self, file_source):
-        """Sets the file_source of this BackupInfo.
+        r"""Sets the file_source of this BackupInfo.
 
         备份文件来源：（全部大写） - OBS：存放在OBS中的备份文件。 - RDS：RDS实例的备份文件。
 
@@ -77,7 +77,7 @@ class BackupInfo:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this BackupInfo.
+        r"""Gets the bucket_name of this BackupInfo.
 
         OBS桶名称，使用OBS桶备份文件恢复时必填。 约束：长度范围为3～63个字符，仅支持小写字母、数字、中划线（-）、点（.），且只能以字母或数字开头和结尾，禁止使用IP地址。 如果选择从OBS桶获取备份文件必填，参考登录[客户端登录](https://support.huaweicloud.com/clientogw-obs/zh-cn_topic_0045829058.html)OBS Browser客户端，首页为OBS桶列表，可以获取到备份文件所在桶的名称。
 
@@ -88,7 +88,7 @@ class BackupInfo:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this BackupInfo.
+        r"""Sets the bucket_name of this BackupInfo.
 
         OBS桶名称，使用OBS桶备份文件恢复时必填。 约束：长度范围为3～63个字符，仅支持小写字母、数字、中划线（-）、点（.），且只能以字母或数字开头和结尾，禁止使用IP地址。 如果选择从OBS桶获取备份文件必填，参考登录[客户端登录](https://support.huaweicloud.com/clientogw-obs/zh-cn_topic_0045829058.html)OBS Browser客户端，首页为OBS桶列表，可以获取到备份文件所在桶的名称。
 
@@ -99,7 +99,7 @@ class BackupInfo:
 
     @property
     def files(self):
-        """Gets the files of this BackupInfo.
+        r"""Gets the files of this BackupInfo.
 
         备份文件信息列表。
 
@@ -110,7 +110,7 @@ class BackupInfo:
 
     @files.setter
     def files(self, files):
-        """Sets the files of this BackupInfo.
+        r"""Sets the files of this BackupInfo.
 
         备份文件信息列表。
 

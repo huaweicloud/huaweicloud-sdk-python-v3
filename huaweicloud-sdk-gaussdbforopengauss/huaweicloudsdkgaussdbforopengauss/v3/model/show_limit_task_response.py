@@ -46,7 +46,7 @@ class ShowLimitTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_name=None, limit_type=None, parallel_size=None, start_time=None, end_time=None, task_running_time=None, limit_count=None, rule_name=None, memory_utilization=None, cpu_utilization=None, limit_task_rule_info_list=None):
-        """ShowLimitTaskResponse
+        r"""ShowLimitTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this ShowLimitTaskResponse.
+        r"""Gets the task_name of this ShowLimitTaskResponse.
 
         限流任务名传。
 
@@ -125,7 +125,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ShowLimitTaskResponse.
+        r"""Sets the task_name of this ShowLimitTaskResponse.
 
         限流任务名传。
 
@@ -136,7 +136,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @property
     def limit_type(self):
-        """Gets the limit_type of this ShowLimitTaskResponse.
+        r"""Gets the limit_type of this ShowLimitTaskResponse.
 
         任务限流类型。
 
@@ -147,7 +147,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @limit_type.setter
     def limit_type(self, limit_type):
-        """Sets the limit_type of this ShowLimitTaskResponse.
+        r"""Sets the limit_type of this ShowLimitTaskResponse.
 
         任务限流类型。
 
@@ -158,7 +158,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @property
     def parallel_size(self):
-        """Gets the parallel_size of this ShowLimitTaskResponse.
+        r"""Gets the parallel_size of this ShowLimitTaskResponse.
 
         并发数。
 
@@ -169,7 +169,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @parallel_size.setter
     def parallel_size(self, parallel_size):
-        """Sets the parallel_size of this ShowLimitTaskResponse.
+        r"""Sets the parallel_size of this ShowLimitTaskResponse.
 
         并发数。
 
@@ -180,7 +180,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowLimitTaskResponse.
+        r"""Gets the start_time of this ShowLimitTaskResponse.
 
         限流任务开始时间,格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -191,7 +191,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowLimitTaskResponse.
+        r"""Sets the start_time of this ShowLimitTaskResponse.
 
         限流任务开始时间,格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -202,7 +202,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowLimitTaskResponse.
+        r"""Gets the end_time of this ShowLimitTaskResponse.
 
         限流任务结束时间,格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -213,7 +213,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowLimitTaskResponse.
+        r"""Sets the end_time of this ShowLimitTaskResponse.
 
         限流任务结束时间,格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -224,7 +224,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @property
     def task_running_time(self):
-        """Gets the task_running_time of this ShowLimitTaskResponse.
+        r"""Gets the task_running_time of this ShowLimitTaskResponse.
 
         限流任务已执行时间，单位秒。
 
@@ -235,7 +235,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @task_running_time.setter
     def task_running_time(self, task_running_time):
-        """Sets the task_running_time of this ShowLimitTaskResponse.
+        r"""Sets the task_running_time of this ShowLimitTaskResponse.
 
         限流任务已执行时间，单位秒。
 
@@ -246,7 +246,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @property
     def limit_count(self):
-        """Gets the limit_count of this ShowLimitTaskResponse.
+        r"""Gets the limit_count of this ShowLimitTaskResponse.
 
         限流任务拦截次数。
 
@@ -257,7 +257,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @limit_count.setter
     def limit_count(self, limit_count):
-        """Sets the limit_count of this ShowLimitTaskResponse.
+        r"""Sets the limit_count of this ShowLimitTaskResponse.
 
         限流任务拦截次数。
 
@@ -268,7 +268,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this ShowLimitTaskResponse.
+        r"""Gets the rule_name of this ShowLimitTaskResponse.
 
         规则名。
 
@@ -279,7 +279,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this ShowLimitTaskResponse.
+        r"""Sets the rule_name of this ShowLimitTaskResponse.
 
         规则名。
 
@@ -290,7 +290,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @property
     def memory_utilization(self):
-        """Gets the memory_utilization of this ShowLimitTaskResponse.
+        r"""Gets the memory_utilization of this ShowLimitTaskResponse.
 
         内存利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且与请求参数相同。
 
@@ -301,7 +301,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @memory_utilization.setter
     def memory_utilization(self, memory_utilization):
-        """Sets the memory_utilization of this ShowLimitTaskResponse.
+        r"""Sets the memory_utilization of this ShowLimitTaskResponse.
 
         内存利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且与请求参数相同。
 
@@ -312,7 +312,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @property
     def cpu_utilization(self):
-        """Gets the cpu_utilization of this ShowLimitTaskResponse.
+        r"""Gets the cpu_utilization of this ShowLimitTaskResponse.
 
         cpu利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且与请求参数相同。
 
@@ -323,7 +323,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @cpu_utilization.setter
     def cpu_utilization(self, cpu_utilization):
-        """Sets the cpu_utilization of this ShowLimitTaskResponse.
+        r"""Sets the cpu_utilization of this ShowLimitTaskResponse.
 
         cpu利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且与请求参数相同。
 
@@ -334,7 +334,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @property
     def limit_task_rule_info_list(self):
-        """Gets the limit_task_rule_info_list of this ShowLimitTaskResponse.
+        r"""Gets the limit_task_rule_info_list of this ShowLimitTaskResponse.
 
         限流任务列表
 
@@ -345,7 +345,7 @@ class ShowLimitTaskResponse(SdkResponse):
 
     @limit_task_rule_info_list.setter
     def limit_task_rule_info_list(self, limit_task_rule_info_list):
-        """Sets the limit_task_rule_info_list of this ShowLimitTaskResponse.
+        r"""Sets the limit_task_rule_info_list of this ShowLimitTaskResponse.
 
         限流任务列表
 

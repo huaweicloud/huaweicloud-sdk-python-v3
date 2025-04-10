@@ -29,7 +29,7 @@ class LabelInfo:
     }
 
     def __init__(self, label_id=None, name=None, color=None):
-        """LabelInfo
+        r"""LabelInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LabelInfo:
 
     @property
     def label_id(self):
-        """Gets the label_id of this LabelInfo.
+        r"""Gets the label_id of this LabelInfo.
 
         标签id
 
@@ -68,7 +68,7 @@ class LabelInfo:
 
     @label_id.setter
     def label_id(self, label_id):
-        """Sets the label_id of this LabelInfo.
+        r"""Sets the label_id of this LabelInfo.
 
         标签id
 
@@ -79,7 +79,7 @@ class LabelInfo:
 
     @property
     def name(self):
-        """Gets the name of this LabelInfo.
+        r"""Gets the name of this LabelInfo.
 
         标签描述
 
@@ -90,7 +90,7 @@ class LabelInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LabelInfo.
+        r"""Sets the name of this LabelInfo.
 
         标签描述
 
@@ -101,7 +101,7 @@ class LabelInfo:
 
     @property
     def color(self):
-        """Gets the color of this LabelInfo.
+        r"""Gets the color of this LabelInfo.
 
         颜色id
 
@@ -112,7 +112,7 @@ class LabelInfo:
 
     @color.setter
     def color(self, color):
-        """Sets the color of this LabelInfo.
+        r"""Sets the color of this LabelInfo.
 
         颜色id
 

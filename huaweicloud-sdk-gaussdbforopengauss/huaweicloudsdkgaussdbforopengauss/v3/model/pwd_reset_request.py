@@ -25,7 +25,7 @@ class PwdResetRequest:
     }
 
     def __init__(self, password=None):
-        """PwdResetRequest
+        r"""PwdResetRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PwdResetRequest:
 
     @property
     def password(self):
-        """Gets the password of this PwdResetRequest.
+        r"""Gets the password of this PwdResetRequest.
 
         数据库root用户密码。  - 8~32个字符。 - 至少包含以下字符中的三种： - 大写字母、小写字母、数字和特殊字符~!@#%^*-_=+?,  - 弱密码校验。
 
@@ -53,7 +53,7 @@ class PwdResetRequest:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this PwdResetRequest.
+        r"""Sets the password of this PwdResetRequest.
 
         数据库root用户密码。  - 8~32个字符。 - 至少包含以下字符中的三种： - 大写字母、小写字母、数字和特殊字符~!@#%^*-_=+?,  - 弱密码校验。
 

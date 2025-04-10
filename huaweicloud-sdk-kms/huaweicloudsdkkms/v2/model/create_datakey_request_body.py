@@ -33,7 +33,7 @@ class CreateDatakeyRequestBody:
     }
 
     def __init__(self, key_id=None, key_spec=None, datakey_length=None, additional_authenticated_data=None, sequence=None):
-        """CreateDatakeyRequestBody
+        r"""CreateDatakeyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateDatakeyRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this CreateDatakeyRequestBody.
+        r"""Gets the key_id of this CreateDatakeyRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -81,7 +81,7 @@ class CreateDatakeyRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this CreateDatakeyRequestBody.
+        r"""Sets the key_id of this CreateDatakeyRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -92,7 +92,7 @@ class CreateDatakeyRequestBody:
 
     @property
     def key_spec(self):
-        """Gets the key_spec of this CreateDatakeyRequestBody.
+        r"""Gets the key_spec of this CreateDatakeyRequestBody.
 
         指定生成的密钥bit位长度。有效值：AES_256、AES_128。  - AES_256：表示256比特的对称密钥。  - AES_128：表示128比特的对称密钥。 说明：  datakey_length和key_spec二选一。   - 若datakey_length和key_spec都为空，默认生成256bit的密钥。   - 若datakey_length和key_spec都指定了值，仅datakey_length生效。
 
@@ -103,7 +103,7 @@ class CreateDatakeyRequestBody:
 
     @key_spec.setter
     def key_spec(self, key_spec):
-        """Sets the key_spec of this CreateDatakeyRequestBody.
+        r"""Sets the key_spec of this CreateDatakeyRequestBody.
 
         指定生成的密钥bit位长度。有效值：AES_256、AES_128。  - AES_256：表示256比特的对称密钥。  - AES_128：表示128比特的对称密钥。 说明：  datakey_length和key_spec二选一。   - 若datakey_length和key_spec都为空，默认生成256bit的密钥。   - 若datakey_length和key_spec都指定了值，仅datakey_length生效。
 
@@ -114,7 +114,7 @@ class CreateDatakeyRequestBody:
 
     @property
     def datakey_length(self):
-        """Gets the datakey_length of this CreateDatakeyRequestBody.
+        r"""Gets the datakey_length of this CreateDatakeyRequestBody.
 
         密钥bit位长度。取值为8的倍数，取值范围为8~8192。 说明：  datakey_length和key_spec二选一。   - 若datakey_length和key_spec都为空，默认生成256bit的密钥。   - 若datakey_length和key_spec都指定了值，仅datakey_length生效。
 
@@ -125,7 +125,7 @@ class CreateDatakeyRequestBody:
 
     @datakey_length.setter
     def datakey_length(self, datakey_length):
-        """Sets the datakey_length of this CreateDatakeyRequestBody.
+        r"""Sets the datakey_length of this CreateDatakeyRequestBody.
 
         密钥bit位长度。取值为8的倍数，取值范围为8~8192。 说明：  datakey_length和key_spec二选一。   - 若datakey_length和key_spec都为空，默认生成256bit的密钥。   - 若datakey_length和key_spec都指定了值，仅datakey_length生效。
 
@@ -136,7 +136,7 @@ class CreateDatakeyRequestBody:
 
     @property
     def additional_authenticated_data(self):
-        """Gets the additional_authenticated_data of this CreateDatakeyRequestBody.
+        r"""Gets the additional_authenticated_data of this CreateDatakeyRequestBody.
 
         身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
 
@@ -147,7 +147,7 @@ class CreateDatakeyRequestBody:
 
     @additional_authenticated_data.setter
     def additional_authenticated_data(self, additional_authenticated_data):
-        """Sets the additional_authenticated_data of this CreateDatakeyRequestBody.
+        r"""Sets the additional_authenticated_data of this CreateDatakeyRequestBody.
 
         身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
 
@@ -158,7 +158,7 @@ class CreateDatakeyRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this CreateDatakeyRequestBody.
+        r"""Gets the sequence of this CreateDatakeyRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -169,7 +169,7 @@ class CreateDatakeyRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this CreateDatakeyRequestBody.
+        r"""Sets the sequence of this CreateDatakeyRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

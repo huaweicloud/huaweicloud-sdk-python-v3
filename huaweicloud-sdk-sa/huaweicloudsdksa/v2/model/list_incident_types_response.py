@@ -38,7 +38,7 @@ class ListIncidentTypesResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, total=None, size=None, page=None, x_request_id=None):
-        """ListIncidentTypesResponse
+        r"""ListIncidentTypesResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ListIncidentTypesResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListIncidentTypesResponse.
+        r"""Gets the code of this ListIncidentTypesResponse.
 
         Error code
 
@@ -97,7 +97,7 @@ class ListIncidentTypesResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListIncidentTypesResponse.
+        r"""Sets the code of this ListIncidentTypesResponse.
 
         Error code
 
@@ -108,7 +108,7 @@ class ListIncidentTypesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListIncidentTypesResponse.
+        r"""Gets the message of this ListIncidentTypesResponse.
 
         Error message
 
@@ -119,7 +119,7 @@ class ListIncidentTypesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListIncidentTypesResponse.
+        r"""Sets the message of this ListIncidentTypesResponse.
 
         Error message
 
@@ -130,7 +130,7 @@ class ListIncidentTypesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListIncidentTypesResponse.
+        r"""Gets the data of this ListIncidentTypesResponse.
 
         Response of dataclass detail
 
@@ -141,7 +141,7 @@ class ListIncidentTypesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListIncidentTypesResponse.
+        r"""Sets the data of this ListIncidentTypesResponse.
 
         Response of dataclass detail
 
@@ -152,7 +152,7 @@ class ListIncidentTypesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListIncidentTypesResponse.
+        r"""Gets the total of this ListIncidentTypesResponse.
 
         tatal count
 
@@ -163,7 +163,7 @@ class ListIncidentTypesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListIncidentTypesResponse.
+        r"""Sets the total of this ListIncidentTypesResponse.
 
         tatal count
 
@@ -174,7 +174,7 @@ class ListIncidentTypesResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListIncidentTypesResponse.
+        r"""Gets the size of this ListIncidentTypesResponse.
 
         current page size
 
@@ -185,7 +185,7 @@ class ListIncidentTypesResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListIncidentTypesResponse.
+        r"""Sets the size of this ListIncidentTypesResponse.
 
         current page size
 
@@ -196,7 +196,7 @@ class ListIncidentTypesResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ListIncidentTypesResponse.
+        r"""Gets the page of this ListIncidentTypesResponse.
 
         current page count
 
@@ -207,7 +207,7 @@ class ListIncidentTypesResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListIncidentTypesResponse.
+        r"""Sets the page of this ListIncidentTypesResponse.
 
         current page count
 
@@ -218,7 +218,7 @@ class ListIncidentTypesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListIncidentTypesResponse.
+        r"""Gets the x_request_id of this ListIncidentTypesResponse.
 
         :return: The x_request_id of this ListIncidentTypesResponse.
         :rtype: str
@@ -227,7 +227,7 @@ class ListIncidentTypesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListIncidentTypesResponse.
+        r"""Sets the x_request_id of this ListIncidentTypesResponse.
 
         :param x_request_id: The x_request_id of this ListIncidentTypesResponse.
         :type x_request_id: str

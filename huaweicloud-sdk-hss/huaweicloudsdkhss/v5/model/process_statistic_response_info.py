@@ -27,7 +27,7 @@ class ProcessStatisticResponseInfo:
     }
 
     def __init__(self, path=None, num=None):
-        """ProcessStatisticResponseInfo
+        r"""ProcessStatisticResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProcessStatisticResponseInfo:
 
     @property
     def path(self):
-        """Gets the path of this ProcessStatisticResponseInfo.
+        r"""Gets the path of this ProcessStatisticResponseInfo.
 
         进程的可执行文件路径
 
@@ -61,7 +61,7 @@ class ProcessStatisticResponseInfo:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ProcessStatisticResponseInfo.
+        r"""Sets the path of this ProcessStatisticResponseInfo.
 
         进程的可执行文件路径
 
@@ -72,7 +72,7 @@ class ProcessStatisticResponseInfo:
 
     @property
     def num(self):
-        """Gets the num of this ProcessStatisticResponseInfo.
+        r"""Gets the num of this ProcessStatisticResponseInfo.
 
         进程数量
 
@@ -83,7 +83,7 @@ class ProcessStatisticResponseInfo:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this ProcessStatisticResponseInfo.
+        r"""Sets the num of this ProcessStatisticResponseInfo.
 
         进程数量
 

@@ -31,7 +31,7 @@ class AgencyCredentials:
     }
 
     def __init__(self, access_key_id=None, expiration=None, secret_access_key=None, session_token=None):
-        """AgencyCredentials
+        r"""AgencyCredentials
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AgencyCredentials:
 
     @property
     def access_key_id(self):
-        """Gets the access_key_id of this AgencyCredentials.
+        r"""Gets the access_key_id of this AgencyCredentials.
 
         用于临时安全凭证的标识符
 
@@ -75,7 +75,7 @@ class AgencyCredentials:
 
     @access_key_id.setter
     def access_key_id(self, access_key_id):
-        """Sets the access_key_id of this AgencyCredentials.
+        r"""Sets the access_key_id of this AgencyCredentials.
 
         用于临时安全凭证的标识符
 
@@ -86,7 +86,7 @@ class AgencyCredentials:
 
     @property
     def expiration(self):
-        """Gets the expiration of this AgencyCredentials.
+        r"""Gets the expiration of this AgencyCredentials.
 
         临时安全凭证到期的日期
 
@@ -97,7 +97,7 @@ class AgencyCredentials:
 
     @expiration.setter
     def expiration(self, expiration):
-        """Sets the expiration of this AgencyCredentials.
+        r"""Sets the expiration of this AgencyCredentials.
 
         临时安全凭证到期的日期
 
@@ -108,7 +108,7 @@ class AgencyCredentials:
 
     @property
     def secret_access_key(self):
-        """Gets the secret_access_key of this AgencyCredentials.
+        r"""Gets the secret_access_key of this AgencyCredentials.
 
         用于对请求进行签名的密钥
 
@@ -119,7 +119,7 @@ class AgencyCredentials:
 
     @secret_access_key.setter
     def secret_access_key(self, secret_access_key):
-        """Sets the secret_access_key of this AgencyCredentials.
+        r"""Sets the secret_access_key of this AgencyCredentials.
 
         用于对请求进行签名的密钥
 
@@ -130,7 +130,7 @@ class AgencyCredentials:
 
     @property
     def session_token(self):
-        """Gets the session_token of this AgencyCredentials.
+        r"""Gets the session_token of this AgencyCredentials.
 
         用于临时凭证的令牌
 
@@ -141,7 +141,7 @@ class AgencyCredentials:
 
     @session_token.setter
     def session_token(self, session_token):
-        """Sets the session_token of this AgencyCredentials.
+        r"""Sets the session_token of this AgencyCredentials.
 
         用于临时凭证的令牌
 

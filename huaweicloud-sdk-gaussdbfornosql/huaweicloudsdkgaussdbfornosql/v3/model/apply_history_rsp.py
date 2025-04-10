@@ -33,7 +33,7 @@ class ApplyHistoryRsp:
     }
 
     def __init__(self, instance_id=None, instance_name=None, applied_at=None, apply_result=None, failure_reason=None):
-        """ApplyHistoryRsp
+        r"""ApplyHistoryRsp
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ApplyHistoryRsp:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ApplyHistoryRsp.
+        r"""Gets the instance_id of this ApplyHistoryRsp.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class ApplyHistoryRsp:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ApplyHistoryRsp.
+        r"""Sets the instance_id of this ApplyHistoryRsp.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class ApplyHistoryRsp:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ApplyHistoryRsp.
+        r"""Gets the instance_name of this ApplyHistoryRsp.
 
         实例名称
 
@@ -100,7 +100,7 @@ class ApplyHistoryRsp:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ApplyHistoryRsp.
+        r"""Sets the instance_name of this ApplyHistoryRsp.
 
         实例名称
 
@@ -111,7 +111,7 @@ class ApplyHistoryRsp:
 
     @property
     def applied_at(self):
-        """Gets the applied_at of this ApplyHistoryRsp.
+        r"""Gets the applied_at of this ApplyHistoryRsp.
 
         生效时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  [其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。](tag:hc)  [其中，T指某个时间的开始；Z指时区偏移量。](tag:hk)
 
@@ -122,7 +122,7 @@ class ApplyHistoryRsp:
 
     @applied_at.setter
     def applied_at(self, applied_at):
-        """Sets the applied_at of this ApplyHistoryRsp.
+        r"""Sets the applied_at of this ApplyHistoryRsp.
 
         生效时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  [其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。](tag:hc)  [其中，T指某个时间的开始；Z指时区偏移量。](tag:hk)
 
@@ -133,7 +133,7 @@ class ApplyHistoryRsp:
 
     @property
     def apply_result(self):
-        """Gets the apply_result of this ApplyHistoryRsp.
+        r"""Gets the apply_result of this ApplyHistoryRsp.
 
         - SUCCESS：应用成功。 - FAILED:应用失败。
 
@@ -144,7 +144,7 @@ class ApplyHistoryRsp:
 
     @apply_result.setter
     def apply_result(self, apply_result):
-        """Sets the apply_result of this ApplyHistoryRsp.
+        r"""Sets the apply_result of this ApplyHistoryRsp.
 
         - SUCCESS：应用成功。 - FAILED:应用失败。
 
@@ -155,7 +155,7 @@ class ApplyHistoryRsp:
 
     @property
     def failure_reason(self):
-        """Gets the failure_reason of this ApplyHistoryRsp.
+        r"""Gets the failure_reason of this ApplyHistoryRsp.
 
         失败原因
 
@@ -166,7 +166,7 @@ class ApplyHistoryRsp:
 
     @failure_reason.setter
     def failure_reason(self, failure_reason):
-        """Sets the failure_reason of this ApplyHistoryRsp.
+        r"""Sets the failure_reason of this ApplyHistoryRsp.
 
         失败原因
 

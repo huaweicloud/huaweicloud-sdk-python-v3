@@ -27,7 +27,7 @@ class DeleteNatGatewayTagRequest:
     }
 
     def __init__(self, nat_gateway_id=None, key=None):
-        """DeleteNatGatewayTagRequest
+        r"""DeleteNatGatewayTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteNatGatewayTagRequest:
 
     @property
     def nat_gateway_id(self):
-        """Gets the nat_gateway_id of this DeleteNatGatewayTagRequest.
+        r"""Gets the nat_gateway_id of this DeleteNatGatewayTagRequest.
 
         公网NAT网关id。
 
@@ -59,7 +59,7 @@ class DeleteNatGatewayTagRequest:
 
     @nat_gateway_id.setter
     def nat_gateway_id(self, nat_gateway_id):
-        """Sets the nat_gateway_id of this DeleteNatGatewayTagRequest.
+        r"""Sets the nat_gateway_id of this DeleteNatGatewayTagRequest.
 
         公网NAT网关id。
 
@@ -70,7 +70,7 @@ class DeleteNatGatewayTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteNatGatewayTagRequest.
+        r"""Gets the key of this DeleteNatGatewayTagRequest.
 
         标签key。
 
@@ -81,7 +81,7 @@ class DeleteNatGatewayTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteNatGatewayTagRequest.
+        r"""Sets the key of this DeleteNatGatewayTagRequest.
 
         标签key。
 

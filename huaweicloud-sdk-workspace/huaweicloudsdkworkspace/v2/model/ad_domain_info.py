@@ -29,7 +29,7 @@ class AdDomainInfo:
     }
 
     def __init__(self, domain_type=None, domain_admin_account=None, domain_password=None):
-        """AdDomainInfo
+        r"""AdDomainInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AdDomainInfo:
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this AdDomainInfo.
+        r"""Gets the domain_type of this AdDomainInfo.
 
         域类型。 - LITE_AS：LiteAS。 - LOCAL_AD：本地AD。 说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与“LOCAL_AD”所属网络可连通。
 
@@ -65,7 +65,7 @@ class AdDomainInfo:
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this AdDomainInfo.
+        r"""Sets the domain_type of this AdDomainInfo.
 
         域类型。 - LITE_AS：LiteAS。 - LOCAL_AD：本地AD。 说明：域类型为“LOCAL_AD”时，请确保所选VPC网络与“LOCAL_AD”所属网络可连通。
 
@@ -76,7 +76,7 @@ class AdDomainInfo:
 
     @property
     def domain_admin_account(self):
-        """Gets the domain_admin_account of this AdDomainInfo.
+        r"""Gets the domain_admin_account of this AdDomainInfo.
 
         域管理员帐号。
 
@@ -87,7 +87,7 @@ class AdDomainInfo:
 
     @domain_admin_account.setter
     def domain_admin_account(self, domain_admin_account):
-        """Sets the domain_admin_account of this AdDomainInfo.
+        r"""Sets the domain_admin_account of this AdDomainInfo.
 
         域管理员帐号。
 
@@ -98,7 +98,7 @@ class AdDomainInfo:
 
     @property
     def domain_password(self):
-        """Gets the domain_password of this AdDomainInfo.
+        r"""Gets the domain_password of this AdDomainInfo.
 
         域管理员账号密码。
 
@@ -109,7 +109,7 @@ class AdDomainInfo:
 
     @domain_password.setter
     def domain_password(self, domain_password):
-        """Sets the domain_password of this AdDomainInfo.
+        r"""Sets the domain_password of this AdDomainInfo.
 
         域管理员账号密码。
 

@@ -31,7 +31,7 @@ class UnSupportedItem:
     }
 
     def __init__(self, reason=None, suggestion=None, line_number=None, position=None):
-        """UnSupportedItem
+        r"""UnSupportedItem
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UnSupportedItem:
 
     @property
     def reason(self):
-        """Gets the reason of this UnSupportedItem.
+        r"""Gets the reason of this UnSupportedItem.
 
         SQL语句不支持转换的原因。
 
@@ -75,7 +75,7 @@ class UnSupportedItem:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this UnSupportedItem.
+        r"""Sets the reason of this UnSupportedItem.
 
         SQL语句不支持转换的原因。
 
@@ -86,7 +86,7 @@ class UnSupportedItem:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this UnSupportedItem.
+        r"""Gets the suggestion of this UnSupportedItem.
 
         SQL语句不支持转换的建议。
 
@@ -97,7 +97,7 @@ class UnSupportedItem:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this UnSupportedItem.
+        r"""Sets the suggestion of this UnSupportedItem.
 
         SQL语句不支持转换的建议。
 
@@ -108,7 +108,7 @@ class UnSupportedItem:
 
     @property
     def line_number(self):
-        """Gets the line_number of this UnSupportedItem.
+        r"""Gets the line_number of this UnSupportedItem.
 
         行号。
 
@@ -119,7 +119,7 @@ class UnSupportedItem:
 
     @line_number.setter
     def line_number(self, line_number):
-        """Sets the line_number of this UnSupportedItem.
+        r"""Sets the line_number of this UnSupportedItem.
 
         行号。
 
@@ -130,7 +130,7 @@ class UnSupportedItem:
 
     @property
     def position(self):
-        """Gets the position of this UnSupportedItem.
+        r"""Gets the position of this UnSupportedItem.
 
         位置。
 
@@ -141,7 +141,7 @@ class UnSupportedItem:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this UnSupportedItem.
+        r"""Sets the position of this UnSupportedItem.
 
         位置。
 

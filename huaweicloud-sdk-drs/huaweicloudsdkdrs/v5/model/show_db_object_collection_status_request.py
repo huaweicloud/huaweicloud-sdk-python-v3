@@ -29,7 +29,7 @@ class ShowDbObjectCollectionStatusRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, query_id=None):
-        """ShowDbObjectCollectionStatusRequest
+        r"""ShowDbObjectCollectionStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowDbObjectCollectionStatusRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowDbObjectCollectionStatusRequest.
+        r"""Gets the job_id of this ShowDbObjectCollectionStatusRequest.
 
         任务ID。
 
@@ -66,7 +66,7 @@ class ShowDbObjectCollectionStatusRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowDbObjectCollectionStatusRequest.
+        r"""Sets the job_id of this ShowDbObjectCollectionStatusRequest.
 
         任务ID。
 
@@ -77,7 +77,7 @@ class ShowDbObjectCollectionStatusRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowDbObjectCollectionStatusRequest.
+        r"""Gets the x_language of this ShowDbObjectCollectionStatusRequest.
 
         请求语言类型。
 
@@ -88,7 +88,7 @@ class ShowDbObjectCollectionStatusRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowDbObjectCollectionStatusRequest.
+        r"""Sets the x_language of this ShowDbObjectCollectionStatusRequest.
 
         请求语言类型。
 
@@ -99,7 +99,7 @@ class ShowDbObjectCollectionStatusRequest:
 
     @property
     def query_id(self):
-        """Gets the query_id of this ShowDbObjectCollectionStatusRequest.
+        r"""Gets the query_id of this ShowDbObjectCollectionStatusRequest.
 
         对象信息采集的ID，提交查询数据库对象信息接口返回的ID。
 
@@ -110,7 +110,7 @@ class ShowDbObjectCollectionStatusRequest:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this ShowDbObjectCollectionStatusRequest.
+        r"""Sets the query_id of this ShowDbObjectCollectionStatusRequest.
 
         对象信息采集的ID，提交查询数据库对象信息接口返回的ID。
 

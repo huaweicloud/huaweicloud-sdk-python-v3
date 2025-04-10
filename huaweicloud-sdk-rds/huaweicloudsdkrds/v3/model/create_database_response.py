@@ -26,7 +26,7 @@ class CreateDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """CreateDatabaseResponse
+        r"""CreateDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDatabaseResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this CreateDatabaseResponse.
+        r"""Gets the resp of this CreateDatabaseResponse.
 
         操作结果。
 
@@ -55,7 +55,7 @@ class CreateDatabaseResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this CreateDatabaseResponse.
+        r"""Sets the resp of this CreateDatabaseResponse.
 
         操作结果。
 

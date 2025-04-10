@@ -30,7 +30,7 @@ class ChangeBandwidthToPeriodResponse(SdkResponse):
     }
 
     def __init__(self, bandwidth_ids=None, order_id=None, request_id=None):
-        """ChangeBandwidthToPeriodResponse
+        r"""ChangeBandwidthToPeriodResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ChangeBandwidthToPeriodResponse(SdkResponse):
 
     @property
     def bandwidth_ids(self):
-        """Gets the bandwidth_ids of this ChangeBandwidthToPeriodResponse.
+        r"""Gets the bandwidth_ids of this ChangeBandwidthToPeriodResponse.
 
         转包带宽列表
 
@@ -69,7 +69,7 @@ class ChangeBandwidthToPeriodResponse(SdkResponse):
 
     @bandwidth_ids.setter
     def bandwidth_ids(self, bandwidth_ids):
-        """Sets the bandwidth_ids of this ChangeBandwidthToPeriodResponse.
+        r"""Sets the bandwidth_ids of this ChangeBandwidthToPeriodResponse.
 
         转包带宽列表
 
@@ -80,7 +80,7 @@ class ChangeBandwidthToPeriodResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ChangeBandwidthToPeriodResponse.
+        r"""Gets the order_id of this ChangeBandwidthToPeriodResponse.
 
         订单ID
 
@@ -91,7 +91,7 @@ class ChangeBandwidthToPeriodResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ChangeBandwidthToPeriodResponse.
+        r"""Sets the order_id of this ChangeBandwidthToPeriodResponse.
 
         订单ID
 
@@ -102,7 +102,7 @@ class ChangeBandwidthToPeriodResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ChangeBandwidthToPeriodResponse.
+        r"""Gets the request_id of this ChangeBandwidthToPeriodResponse.
 
         请求ID
 
@@ -113,7 +113,7 @@ class ChangeBandwidthToPeriodResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ChangeBandwidthToPeriodResponse.
+        r"""Sets the request_id of this ChangeBandwidthToPeriodResponse.
 
         请求ID
 

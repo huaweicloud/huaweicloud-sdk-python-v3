@@ -25,7 +25,7 @@ class ShowWorkFlowRequest:
     }
 
     def __init__(self, workflow_id=None):
-        """ShowWorkFlowRequest
+        r"""ShowWorkFlowRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowWorkFlowRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this ShowWorkFlowRequest.
+        r"""Gets the workflow_id of this ShowWorkFlowRequest.
 
         函数工作流ID
 
@@ -53,7 +53,7 @@ class ShowWorkFlowRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this ShowWorkFlowRequest.
+        r"""Sets the workflow_id of this ShowWorkFlowRequest.
 
         函数工作流ID
 

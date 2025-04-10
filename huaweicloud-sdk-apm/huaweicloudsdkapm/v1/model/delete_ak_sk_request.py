@@ -25,7 +25,7 @@ class DeleteAkSkRequest:
     }
 
     def __init__(self, ak=None):
-        """DeleteAkSkRequest
+        r"""DeleteAkSkRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAkSkRequest:
 
     @property
     def ak(self):
-        """Gets the ak of this DeleteAkSkRequest.
+        r"""Gets the ak of this DeleteAkSkRequest.
 
         需要删除的ak信息。
 
@@ -53,7 +53,7 @@ class DeleteAkSkRequest:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this DeleteAkSkRequest.
+        r"""Sets the ak of this DeleteAkSkRequest.
 
         需要删除的ak信息。
 

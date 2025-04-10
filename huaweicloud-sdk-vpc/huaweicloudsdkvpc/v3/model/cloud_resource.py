@@ -27,7 +27,7 @@ class CloudResource:
     }
 
     def __init__(self, resource_type=None, resource_count=None):
-        """CloudResource
+        r"""CloudResource
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CloudResource:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CloudResource.
+        r"""Gets the resource_type of this CloudResource.
 
         功能描述：资源类型
 
@@ -59,7 +59,7 @@ class CloudResource:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CloudResource.
+        r"""Sets the resource_type of this CloudResource.
 
         功能描述：资源类型
 
@@ -70,7 +70,7 @@ class CloudResource:
 
     @property
     def resource_count(self):
-        """Gets the resource_count of this CloudResource.
+        r"""Gets the resource_count of this CloudResource.
 
         功能说明：资源数量
 
@@ -81,7 +81,7 @@ class CloudResource:
 
     @resource_count.setter
     def resource_count(self, resource_count):
-        """Sets the resource_count of this CloudResource.
+        r"""Sets the resource_count of this CloudResource.
 
         功能说明：资源数量
 

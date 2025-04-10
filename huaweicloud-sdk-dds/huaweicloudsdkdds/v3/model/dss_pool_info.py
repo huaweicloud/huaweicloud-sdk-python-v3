@@ -33,7 +33,7 @@ class DssPoolInfo:
     }
 
     def __init__(self, az_name=None, free_capacity_gb=None, dss_pool_volume_type=None, dss_pool_id=None, dss_pool_status=None):
-        """DssPoolInfo
+        r"""DssPoolInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class DssPoolInfo:
 
     @property
     def az_name(self):
-        """Gets the az_name of this DssPoolInfo.
+        r"""Gets the az_name of this DssPoolInfo.
 
         专属存储池所在az
 
@@ -77,7 +77,7 @@ class DssPoolInfo:
 
     @az_name.setter
     def az_name(self, az_name):
-        """Sets the az_name of this DssPoolInfo.
+        r"""Sets the az_name of this DssPoolInfo.
 
         专属存储池所在az
 
@@ -88,7 +88,7 @@ class DssPoolInfo:
 
     @property
     def free_capacity_gb(self):
-        """Gets the free_capacity_gb of this DssPoolInfo.
+        r"""Gets the free_capacity_gb of this DssPoolInfo.
 
         专属存储池免费空间大小，单位GB
 
@@ -99,7 +99,7 @@ class DssPoolInfo:
 
     @free_capacity_gb.setter
     def free_capacity_gb(self, free_capacity_gb):
-        """Sets the free_capacity_gb of this DssPoolInfo.
+        r"""Sets the free_capacity_gb of this DssPoolInfo.
 
         专属存储池免费空间大小，单位GB
 
@@ -110,7 +110,7 @@ class DssPoolInfo:
 
     @property
     def dss_pool_volume_type(self):
-        """Gets the dss_pool_volume_type of this DssPoolInfo.
+        r"""Gets the dss_pool_volume_type of this DssPoolInfo.
 
         专属存储池磁盘类型名称，可能取值如下：  - ULTRAHIGH，表示SSD。
 
@@ -121,7 +121,7 @@ class DssPoolInfo:
 
     @dss_pool_volume_type.setter
     def dss_pool_volume_type(self, dss_pool_volume_type):
-        """Sets the dss_pool_volume_type of this DssPoolInfo.
+        r"""Sets the dss_pool_volume_type of this DssPoolInfo.
 
         专属存储池磁盘类型名称，可能取值如下：  - ULTRAHIGH，表示SSD。
 
@@ -132,7 +132,7 @@ class DssPoolInfo:
 
     @property
     def dss_pool_id(self):
-        """Gets the dss_pool_id of this DssPoolInfo.
+        r"""Gets the dss_pool_id of this DssPoolInfo.
 
         专属存储池ID
 
@@ -143,7 +143,7 @@ class DssPoolInfo:
 
     @dss_pool_id.setter
     def dss_pool_id(self, dss_pool_id):
-        """Sets the dss_pool_id of this DssPoolInfo.
+        r"""Sets the dss_pool_id of this DssPoolInfo.
 
         专属存储池ID
 
@@ -154,7 +154,7 @@ class DssPoolInfo:
 
     @property
     def dss_pool_status(self):
-        """Gets the dss_pool_status of this DssPoolInfo.
+        r"""Gets the dss_pool_status of this DssPoolInfo.
 
         专属存储池当前状态，可能取值如下： - available，表示可用。 - deploying，表示正在部署。 - enlarging，表示正在扩容。 - frozen，表示冻结。 - sellout，表示售罄。
 
@@ -165,7 +165,7 @@ class DssPoolInfo:
 
     @dss_pool_status.setter
     def dss_pool_status(self, dss_pool_status):
-        """Sets the dss_pool_status of this DssPoolInfo.
+        r"""Sets the dss_pool_status of this DssPoolInfo.
 
         专属存储池当前状态，可能取值如下： - available，表示可用。 - deploying，表示正在部署。 - enlarging，表示正在扩容。 - frozen，表示冻结。 - sellout，表示售罄。
 

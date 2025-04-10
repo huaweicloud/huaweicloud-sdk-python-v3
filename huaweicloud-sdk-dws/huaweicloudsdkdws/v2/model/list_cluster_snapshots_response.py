@@ -32,7 +32,7 @@ class ListClusterSnapshotsResponse(SdkResponse):
     }
 
     def __init__(self, snapshots=None, project_id=None, cluster_id=None, count=None):
-        """ListClusterSnapshotsResponse
+        r"""ListClusterSnapshotsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListClusterSnapshotsResponse(SdkResponse):
 
     @property
     def snapshots(self):
-        """Gets the snapshots of this ListClusterSnapshotsResponse.
+        r"""Gets the snapshots of this ListClusterSnapshotsResponse.
 
         快照对象列表。
 
@@ -76,7 +76,7 @@ class ListClusterSnapshotsResponse(SdkResponse):
 
     @snapshots.setter
     def snapshots(self, snapshots):
-        """Sets the snapshots of this ListClusterSnapshotsResponse.
+        r"""Sets the snapshots of this ListClusterSnapshotsResponse.
 
         快照对象列表。
 
@@ -87,7 +87,7 @@ class ListClusterSnapshotsResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListClusterSnapshotsResponse.
+        r"""Gets the project_id of this ListClusterSnapshotsResponse.
 
         项目ID。
 
@@ -98,7 +98,7 @@ class ListClusterSnapshotsResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListClusterSnapshotsResponse.
+        r"""Sets the project_id of this ListClusterSnapshotsResponse.
 
         项目ID。
 
@@ -109,7 +109,7 @@ class ListClusterSnapshotsResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListClusterSnapshotsResponse.
+        r"""Gets the cluster_id of this ListClusterSnapshotsResponse.
 
         集群ID。
 
@@ -120,7 +120,7 @@ class ListClusterSnapshotsResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListClusterSnapshotsResponse.
+        r"""Sets the cluster_id of this ListClusterSnapshotsResponse.
 
         集群ID。
 
@@ -131,7 +131,7 @@ class ListClusterSnapshotsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListClusterSnapshotsResponse.
+        r"""Gets the count of this ListClusterSnapshotsResponse.
 
         快照对象列表总数
 
@@ -142,7 +142,7 @@ class ListClusterSnapshotsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListClusterSnapshotsResponse.
+        r"""Sets the count of this ListClusterSnapshotsResponse.
 
         快照对象列表总数
 

@@ -24,7 +24,7 @@ class UpdateSlavePriorityResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateSlavePriorityResponse
+        r"""UpdateSlavePriorityResponse
 
         The model defined in huaweicloud sdk
 

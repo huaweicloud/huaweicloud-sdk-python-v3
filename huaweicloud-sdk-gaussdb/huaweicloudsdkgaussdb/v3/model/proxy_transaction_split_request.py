@@ -27,7 +27,7 @@ class ProxyTransactionSplitRequest:
     }
 
     def __init__(self, transaction_split=None, proxy_id_list=None):
-        """ProxyTransactionSplitRequest
+        r"""ProxyTransactionSplitRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ProxyTransactionSplitRequest:
 
     @property
     def transaction_split(self):
-        """Gets the transaction_split of this ProxyTransactionSplitRequest.
+        r"""Gets the transaction_split of this ProxyTransactionSplitRequest.
 
         开启/关闭事务拆分，取值范围是[ON/OFF]
 
@@ -59,7 +59,7 @@ class ProxyTransactionSplitRequest:
 
     @transaction_split.setter
     def transaction_split(self, transaction_split):
-        """Sets the transaction_split of this ProxyTransactionSplitRequest.
+        r"""Sets the transaction_split of this ProxyTransactionSplitRequest.
 
         开启/关闭事务拆分，取值范围是[ON/OFF]
 
@@ -70,7 +70,7 @@ class ProxyTransactionSplitRequest:
 
     @property
     def proxy_id_list(self):
-        """Gets the proxy_id_list of this ProxyTransactionSplitRequest.
+        r"""Gets the proxy_id_list of this ProxyTransactionSplitRequest.
 
         实例的数据库代理列表，仅支持单proxy使用。
 
@@ -81,7 +81,7 @@ class ProxyTransactionSplitRequest:
 
     @proxy_id_list.setter
     def proxy_id_list(self, proxy_id_list):
-        """Sets the proxy_id_list of this ProxyTransactionSplitRequest.
+        r"""Sets the proxy_id_list of this ProxyTransactionSplitRequest.
 
         实例的数据库代理列表，仅支持单proxy使用。
 

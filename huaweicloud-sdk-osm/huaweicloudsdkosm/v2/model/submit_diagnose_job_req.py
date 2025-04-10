@@ -29,7 +29,7 @@ class SubmitDiagnoseJobReq:
     }
 
     def __init__(self, type=None, params=None, region_id=None):
-        """SubmitDiagnoseJobReq
+        r"""SubmitDiagnoseJobReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SubmitDiagnoseJobReq:
 
     @property
     def type(self):
-        """Gets the type of this SubmitDiagnoseJobReq.
+        r"""Gets the type of this SubmitDiagnoseJobReq.
 
         任务类型，例如 ecs诊断任务 1，rds诊断任务 2
 
@@ -67,7 +67,7 @@ class SubmitDiagnoseJobReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SubmitDiagnoseJobReq.
+        r"""Sets the type of this SubmitDiagnoseJobReq.
 
         任务类型，例如 ecs诊断任务 1，rds诊断任务 2
 
@@ -78,7 +78,7 @@ class SubmitDiagnoseJobReq:
 
     @property
     def params(self):
-        """Gets the params of this SubmitDiagnoseJobReq.
+        r"""Gets the params of this SubmitDiagnoseJobReq.
 
         类型对应的特有参数，例如ecs需要传eip,rds 需要传输instanceId
 
@@ -89,7 +89,7 @@ class SubmitDiagnoseJobReq:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this SubmitDiagnoseJobReq.
+        r"""Sets the params of this SubmitDiagnoseJobReq.
 
         类型对应的特有参数，例如ecs需要传eip,rds 需要传输instanceId
 
@@ -100,7 +100,7 @@ class SubmitDiagnoseJobReq:
 
     @property
     def region_id(self):
-        """Gets the region_id of this SubmitDiagnoseJobReq.
+        r"""Gets the region_id of this SubmitDiagnoseJobReq.
 
         节点id
 
@@ -111,7 +111,7 @@ class SubmitDiagnoseJobReq:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this SubmitDiagnoseJobReq.
+        r"""Sets the region_id of this SubmitDiagnoseJobReq.
 
         节点id
 

@@ -25,7 +25,7 @@ class UploadDbObjectTemplateRequestBody:
     }
 
     def __init__(self, file=None):
-        """UploadDbObjectTemplateRequestBody
+        r"""UploadDbObjectTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UploadDbObjectTemplateRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this UploadDbObjectTemplateRequestBody.
+        r"""Gets the file of this UploadDbObjectTemplateRequestBody.
 
         待上传的模板文件。
 
@@ -53,7 +53,7 @@ class UploadDbObjectTemplateRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this UploadDbObjectTemplateRequestBody.
+        r"""Sets the file of this UploadDbObjectTemplateRequestBody.
 
         待上传的模板文件。
 

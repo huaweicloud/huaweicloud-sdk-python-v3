@@ -71,7 +71,7 @@ class VulHostInfo:
     }
 
     def __init__(self, host_id=None, severity_level=None, host_name=None, host_ip=None, agent_id=None, version=None, cve_num=None, cve_id_list=None, status=None, repair_cmd=None, app_path=None, region_name=None, public_ip=None, private_ip=None, group_id=None, group_name=None, os_type=None, asset_value=None, is_affect_business=None, first_scan_time=None, scan_time=None, support_restore=None, disabled_operate_types=None, repair_priority=None):
-        """VulHostInfo
+        r"""VulHostInfo
 
         The model defined in huaweicloud sdk
 
@@ -204,7 +204,7 @@ class VulHostInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this VulHostInfo.
+        r"""Gets the host_id of this VulHostInfo.
 
         受漏洞影响的服务器id
 
@@ -215,7 +215,7 @@ class VulHostInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this VulHostInfo.
+        r"""Sets the host_id of this VulHostInfo.
 
         受漏洞影响的服务器id
 
@@ -226,7 +226,7 @@ class VulHostInfo:
 
     @property
     def severity_level(self):
-        """Gets the severity_level of this VulHostInfo.
+        r"""Gets the severity_level of this VulHostInfo.
 
         危险程度   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
 
@@ -237,7 +237,7 @@ class VulHostInfo:
 
     @severity_level.setter
     def severity_level(self, severity_level):
-        """Sets the severity_level of this VulHostInfo.
+        r"""Sets the severity_level of this VulHostInfo.
 
         危险程度   - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危   - High : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危   - Medium : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危   - Low : 漏洞cvss评分小于4；对应控制台页面的低危
 
@@ -248,7 +248,7 @@ class VulHostInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this VulHostInfo.
+        r"""Gets the host_name of this VulHostInfo.
 
         受影响主机名称
 
@@ -259,7 +259,7 @@ class VulHostInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this VulHostInfo.
+        r"""Sets the host_name of this VulHostInfo.
 
         受影响主机名称
 
@@ -270,7 +270,7 @@ class VulHostInfo:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this VulHostInfo.
+        r"""Gets the host_ip of this VulHostInfo.
 
         受影响主机ip
 
@@ -281,7 +281,7 @@ class VulHostInfo:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this VulHostInfo.
+        r"""Sets the host_ip of this VulHostInfo.
 
         受影响主机ip
 
@@ -292,7 +292,7 @@ class VulHostInfo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this VulHostInfo.
+        r"""Gets the agent_id of this VulHostInfo.
 
         Agent ID
 
@@ -303,7 +303,7 @@ class VulHostInfo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this VulHostInfo.
+        r"""Sets the agent_id of this VulHostInfo.
 
         Agent ID
 
@@ -314,7 +314,7 @@ class VulHostInfo:
 
     @property
     def version(self):
-        """Gets the version of this VulHostInfo.
+        r"""Gets the version of this VulHostInfo.
 
         主机绑定的配额版本
 
@@ -325,7 +325,7 @@ class VulHostInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this VulHostInfo.
+        r"""Sets the version of this VulHostInfo.
 
         主机绑定的配额版本
 
@@ -336,7 +336,7 @@ class VulHostInfo:
 
     @property
     def cve_num(self):
-        """Gets the cve_num of this VulHostInfo.
+        r"""Gets the cve_num of this VulHostInfo.
 
         漏洞cve总数
 
@@ -347,7 +347,7 @@ class VulHostInfo:
 
     @cve_num.setter
     def cve_num(self, cve_num):
-        """Sets the cve_num of this VulHostInfo.
+        r"""Sets the cve_num of this VulHostInfo.
 
         漏洞cve总数
 
@@ -358,7 +358,7 @@ class VulHostInfo:
 
     @property
     def cve_id_list(self):
-        """Gets the cve_id_list of this VulHostInfo.
+        r"""Gets the cve_id_list of this VulHostInfo.
 
         漏洞对应的cve id列表
 
@@ -369,7 +369,7 @@ class VulHostInfo:
 
     @cve_id_list.setter
     def cve_id_list(self, cve_id_list):
-        """Sets the cve_id_list of this VulHostInfo.
+        r"""Sets the cve_id_list of this VulHostInfo.
 
         漏洞对应的cve id列表
 
@@ -380,7 +380,7 @@ class VulHostInfo:
 
     @property
     def status(self):
-        """Gets the status of this VulHostInfo.
+        r"""Gets the status of this VulHostInfo.
 
         漏洞状态   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
 
@@ -391,7 +391,7 @@ class VulHostInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VulHostInfo.
+        r"""Sets the status of this VulHostInfo.
 
         漏洞状态   - vul_status_unfix : 未处理   - vul_status_ignored : 已忽略   - vul_status_verified : 验证中   - vul_status_fixing : 修复中   - vul_status_fixed : 修复成功   - vul_status_reboot : 修复成功待重启   - vul_status_failed : 修复失败   - vul_status_fix_after_reboot : 请重启主机再次修复
 
@@ -402,7 +402,7 @@ class VulHostInfo:
 
     @property
     def repair_cmd(self):
-        """Gets the repair_cmd of this VulHostInfo.
+        r"""Gets the repair_cmd of this VulHostInfo.
 
         修复漏洞需要执行的命令行（只有Linux漏洞有该字段）
 
@@ -413,7 +413,7 @@ class VulHostInfo:
 
     @repair_cmd.setter
     def repair_cmd(self, repair_cmd):
-        """Sets the repair_cmd of this VulHostInfo.
+        r"""Sets the repair_cmd of this VulHostInfo.
 
         修复漏洞需要执行的命令行（只有Linux漏洞有该字段）
 
@@ -424,7 +424,7 @@ class VulHostInfo:
 
     @property
     def app_path(self):
-        """Gets the app_path of this VulHostInfo.
+        r"""Gets the app_path of this VulHostInfo.
 
         应用软件的路径（只有应用漏洞有该字段）
 
@@ -435,7 +435,7 @@ class VulHostInfo:
 
     @app_path.setter
     def app_path(self, app_path):
-        """Sets the app_path of this VulHostInfo.
+        r"""Sets the app_path of this VulHostInfo.
 
         应用软件的路径（只有应用漏洞有该字段）
 
@@ -446,7 +446,7 @@ class VulHostInfo:
 
     @property
     def region_name(self):
-        """Gets the region_name of this VulHostInfo.
+        r"""Gets the region_name of this VulHostInfo.
 
         地域
 
@@ -457,7 +457,7 @@ class VulHostInfo:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this VulHostInfo.
+        r"""Sets the region_name of this VulHostInfo.
 
         地域
 
@@ -468,7 +468,7 @@ class VulHostInfo:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this VulHostInfo.
+        r"""Gets the public_ip of this VulHostInfo.
 
         服务器公网ip
 
@@ -479,7 +479,7 @@ class VulHostInfo:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this VulHostInfo.
+        r"""Sets the public_ip of this VulHostInfo.
 
         服务器公网ip
 
@@ -490,7 +490,7 @@ class VulHostInfo:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this VulHostInfo.
+        r"""Gets the private_ip of this VulHostInfo.
 
         服务器私网ip
 
@@ -501,7 +501,7 @@ class VulHostInfo:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this VulHostInfo.
+        r"""Sets the private_ip of this VulHostInfo.
 
         服务器私网ip
 
@@ -512,7 +512,7 @@ class VulHostInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this VulHostInfo.
+        r"""Gets the group_id of this VulHostInfo.
 
         服务器组id
 
@@ -523,7 +523,7 @@ class VulHostInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this VulHostInfo.
+        r"""Sets the group_id of this VulHostInfo.
 
         服务器组id
 
@@ -534,7 +534,7 @@ class VulHostInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this VulHostInfo.
+        r"""Gets the group_name of this VulHostInfo.
 
         服务器组名称
 
@@ -545,7 +545,7 @@ class VulHostInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this VulHostInfo.
+        r"""Sets the group_name of this VulHostInfo.
 
         服务器组名称
 
@@ -556,7 +556,7 @@ class VulHostInfo:
 
     @property
     def os_type(self):
-        """Gets the os_type of this VulHostInfo.
+        r"""Gets the os_type of this VulHostInfo.
 
         操作系统
 
@@ -567,7 +567,7 @@ class VulHostInfo:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this VulHostInfo.
+        r"""Sets the os_type of this VulHostInfo.
 
         操作系统
 
@@ -578,7 +578,7 @@ class VulHostInfo:
 
     @property
     def asset_value(self):
-        """Gets the asset_value of this VulHostInfo.
+        r"""Gets the asset_value of this VulHostInfo.
 
         资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
 
@@ -589,7 +589,7 @@ class VulHostInfo:
 
     @asset_value.setter
     def asset_value(self, asset_value):
-        """Sets the asset_value of this VulHostInfo.
+        r"""Sets the asset_value of this VulHostInfo.
 
         资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
 
@@ -600,7 +600,7 @@ class VulHostInfo:
 
     @property
     def is_affect_business(self):
-        """Gets the is_affect_business of this VulHostInfo.
+        r"""Gets the is_affect_business of this VulHostInfo.
 
         是否影响业务
 
@@ -611,7 +611,7 @@ class VulHostInfo:
 
     @is_affect_business.setter
     def is_affect_business(self, is_affect_business):
-        """Sets the is_affect_business of this VulHostInfo.
+        r"""Sets the is_affect_business of this VulHostInfo.
 
         是否影响业务
 
@@ -622,7 +622,7 @@ class VulHostInfo:
 
     @property
     def first_scan_time(self):
-        """Gets the first_scan_time of this VulHostInfo.
+        r"""Gets the first_scan_time of this VulHostInfo.
 
         首次扫描时间
 
@@ -633,7 +633,7 @@ class VulHostInfo:
 
     @first_scan_time.setter
     def first_scan_time(self, first_scan_time):
-        """Sets the first_scan_time of this VulHostInfo.
+        r"""Sets the first_scan_time of this VulHostInfo.
 
         首次扫描时间
 
@@ -644,7 +644,7 @@ class VulHostInfo:
 
     @property
     def scan_time(self):
-        """Gets the scan_time of this VulHostInfo.
+        r"""Gets the scan_time of this VulHostInfo.
 
         扫描时间，时间戳单位：毫秒
 
@@ -655,7 +655,7 @@ class VulHostInfo:
 
     @scan_time.setter
     def scan_time(self, scan_time):
-        """Sets the scan_time of this VulHostInfo.
+        r"""Sets the scan_time of this VulHostInfo.
 
         扫描时间，时间戳单位：毫秒
 
@@ -666,7 +666,7 @@ class VulHostInfo:
 
     @property
     def support_restore(self):
-        """Gets the support_restore of this VulHostInfo.
+        r"""Gets the support_restore of this VulHostInfo.
 
         是否可以回滚到修复漏洞时创建的备份
 
@@ -677,7 +677,7 @@ class VulHostInfo:
 
     @support_restore.setter
     def support_restore(self, support_restore):
-        """Sets the support_restore of this VulHostInfo.
+        r"""Sets the support_restore of this VulHostInfo.
 
         是否可以回滚到修复漏洞时创建的备份
 
@@ -688,7 +688,7 @@ class VulHostInfo:
 
     @property
     def disabled_operate_types(self):
-        """Gets the disabled_operate_types of this VulHostInfo.
+        r"""Gets the disabled_operate_types of this VulHostInfo.
 
         漏洞在当前主机上不可进行的操作类型列表
 
@@ -699,7 +699,7 @@ class VulHostInfo:
 
     @disabled_operate_types.setter
     def disabled_operate_types(self, disabled_operate_types):
-        """Sets the disabled_operate_types of this VulHostInfo.
+        r"""Sets the disabled_operate_types of this VulHostInfo.
 
         漏洞在当前主机上不可进行的操作类型列表
 
@@ -710,7 +710,7 @@ class VulHostInfo:
 
     @property
     def repair_priority(self):
-        """Gets the repair_priority of this VulHostInfo.
+        r"""Gets the repair_priority of this VulHostInfo.
 
         修复优先级,包含如下  - Critical 紧急  - High 高  - Medium 中  - Low 低
 
@@ -721,7 +721,7 @@ class VulHostInfo:
 
     @repair_priority.setter
     def repair_priority(self, repair_priority):
-        """Sets the repair_priority of this VulHostInfo.
+        r"""Sets the repair_priority of this VulHostInfo.
 
         修复优先级,包含如下  - Critical 紧急  - High 高  - Medium 中  - Low 低
 

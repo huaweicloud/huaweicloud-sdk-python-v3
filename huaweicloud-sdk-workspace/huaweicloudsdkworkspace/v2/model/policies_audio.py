@@ -73,7 +73,7 @@ class PoliciesAudio:
     }
 
     def __init__(self, audio_redirection_enable=None, play_volume=None, play_volume_ratio=None, record_volume=None, record_volume_ratio=None, audio_transmission_mode=None, play_redirection_enable=None, play_classification=None, play_quality=None, play_denoising=None, play_agc=None, play_crc=None, play_device_mode=None, play_delay_threshold=None, play_amplitude_threshold=None, play_prefill_data=None, record_redirection_enable=None, record_classification=None, record_quality=None, record_denoising=None, record_agc=None, record_crc=None, record_device_mode=None, record_delay_threshold=None, record_amplitude_threshold=None):
-        """PoliciesAudio
+        r"""PoliciesAudio
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class PoliciesAudio:
 
     @property
     def audio_redirection_enable(self):
-        """Gets the audio_redirection_enable of this PoliciesAudio.
+        r"""Gets the audio_redirection_enable of this PoliciesAudio.
 
         是否开启音频重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -222,7 +222,7 @@ class PoliciesAudio:
 
     @audio_redirection_enable.setter
     def audio_redirection_enable(self, audio_redirection_enable):
-        """Sets the audio_redirection_enable of this PoliciesAudio.
+        r"""Sets the audio_redirection_enable of this PoliciesAudio.
 
         是否开启音频重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -233,7 +233,7 @@ class PoliciesAudio:
 
     @property
     def play_volume(self):
-        """Gets the play_volume of this PoliciesAudio.
+        r"""Gets the play_volume of this PoliciesAudio.
 
         播音设置音量。 不设置音量取值为：Do Not Set Volume。 音量设置，最小值为10，最大值为100，中间取值，间隔为5的递增序列。如：10、15、20、25等。
 
@@ -244,7 +244,7 @@ class PoliciesAudio:
 
     @play_volume.setter
     def play_volume(self, play_volume):
-        """Sets the play_volume of this PoliciesAudio.
+        r"""Sets the play_volume of this PoliciesAudio.
 
         播音设置音量。 不设置音量取值为：Do Not Set Volume。 音量设置，最小值为10，最大值为100，中间取值，间隔为5的递增序列。如：10、15、20、25等。
 
@@ -255,7 +255,7 @@ class PoliciesAudio:
 
     @property
     def play_volume_ratio(self):
-        """Gets the play_volume_ratio of this PoliciesAudio.
+        r"""Gets the play_volume_ratio of this PoliciesAudio.
 
         播音设置音量线性系数。取值为： 不设置：Do Not Set Volume Ratio。 低：Low。 中：Middle。 高：High。
 
@@ -266,7 +266,7 @@ class PoliciesAudio:
 
     @play_volume_ratio.setter
     def play_volume_ratio(self, play_volume_ratio):
-        """Sets the play_volume_ratio of this PoliciesAudio.
+        r"""Sets the play_volume_ratio of this PoliciesAudio.
 
         播音设置音量线性系数。取值为： 不设置：Do Not Set Volume Ratio。 低：Low。 中：Middle。 高：High。
 
@@ -277,7 +277,7 @@ class PoliciesAudio:
 
     @property
     def record_volume(self):
-        """Gets the record_volume of this PoliciesAudio.
+        r"""Gets the record_volume of this PoliciesAudio.
 
         录音设置音量。 不设置取值为：Do Not Set Volume。 音量设置，最小值为10，最大值为100，中间取值，间隔为5的递增序列。如：10、15、20、25等。
 
@@ -288,7 +288,7 @@ class PoliciesAudio:
 
     @record_volume.setter
     def record_volume(self, record_volume):
-        """Sets the record_volume of this PoliciesAudio.
+        r"""Sets the record_volume of this PoliciesAudio.
 
         录音设置音量。 不设置取值为：Do Not Set Volume。 音量设置，最小值为10，最大值为100，中间取值，间隔为5的递增序列。如：10、15、20、25等。
 
@@ -299,7 +299,7 @@ class PoliciesAudio:
 
     @property
     def record_volume_ratio(self):
-        """Gets the record_volume_ratio of this PoliciesAudio.
+        r"""Gets the record_volume_ratio of this PoliciesAudio.
 
         录音设置音量线性系数。取值为： 不设置：Do Not Set Volume Ratio。 低：Low。 中：Middle。 高：High。
 
@@ -310,7 +310,7 @@ class PoliciesAudio:
 
     @record_volume_ratio.setter
     def record_volume_ratio(self, record_volume_ratio):
-        """Sets the record_volume_ratio of this PoliciesAudio.
+        r"""Sets the record_volume_ratio of this PoliciesAudio.
 
         录音设置音量线性系数。取值为： 不设置：Do Not Set Volume Ratio。 低：Low。 中：Middle。 高：High。
 
@@ -321,7 +321,7 @@ class PoliciesAudio:
 
     @property
     def audio_transmission_mode(self):
-        """Gets the audio_transmission_mode of this PoliciesAudio.
+        r"""Gets the audio_transmission_mode of this PoliciesAudio.
 
         音频传输方式。取值为： 可靠传输：Reliable Transmission。 实时传输：Real Time Transmission。
 
@@ -332,7 +332,7 @@ class PoliciesAudio:
 
     @audio_transmission_mode.setter
     def audio_transmission_mode(self, audio_transmission_mode):
-        """Sets the audio_transmission_mode of this PoliciesAudio.
+        r"""Sets the audio_transmission_mode of this PoliciesAudio.
 
         音频传输方式。取值为： 可靠传输：Reliable Transmission。 实时传输：Real Time Transmission。
 
@@ -343,7 +343,7 @@ class PoliciesAudio:
 
     @property
     def play_redirection_enable(self):
-        """Gets the play_redirection_enable of this PoliciesAudio.
+        r"""Gets the play_redirection_enable of this PoliciesAudio.
 
         是否开启播音重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -354,7 +354,7 @@ class PoliciesAudio:
 
     @play_redirection_enable.setter
     def play_redirection_enable(self, play_redirection_enable):
-        """Sets the play_redirection_enable of this PoliciesAudio.
+        r"""Sets the play_redirection_enable of this PoliciesAudio.
 
         是否开启播音重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -365,7 +365,7 @@ class PoliciesAudio:
 
     @property
     def play_classification(self):
-        """Gets the play_classification of this PoliciesAudio.
+        r"""Gets the play_classification of this PoliciesAudio.
 
         播音场景。取值为： 无损播音：LossLess。 语音通话：Speech Call。 音乐播音：Music Play。 自动识别：Automatic Identification。
 
@@ -376,7 +376,7 @@ class PoliciesAudio:
 
     @play_classification.setter
     def play_classification(self, play_classification):
-        """Sets the play_classification of this PoliciesAudio.
+        r"""Sets the play_classification of this PoliciesAudio.
 
         播音场景。取值为： 无损播音：LossLess。 语音通话：Speech Call。 音乐播音：Music Play。 自动识别：Automatic Identification。
 
@@ -387,7 +387,7 @@ class PoliciesAudio:
 
     @property
     def play_quality(self):
-        """Gets the play_quality of this PoliciesAudio.
+        r"""Gets the play_quality of this PoliciesAudio.
 
         播音质量。取值为： 低：Low。 中：Middle。 高：High
 
@@ -398,7 +398,7 @@ class PoliciesAudio:
 
     @play_quality.setter
     def play_quality(self, play_quality):
-        """Sets the play_quality of this PoliciesAudio.
+        r"""Sets the play_quality of this PoliciesAudio.
 
         播音质量。取值为： 低：Low。 中：Middle。 高：High
 
@@ -409,7 +409,7 @@ class PoliciesAudio:
 
     @property
     def play_denoising(self):
-        """Gets the play_denoising of this PoliciesAudio.
+        r"""Gets the play_denoising of this PoliciesAudio.
 
         播音降噪。取值为： 不开启降噪：Disable Denoising。 开启降噪，最小值为-100，最大值为-5，中间取值，间隔为5的递增序列。如：-100、-95、-90、-85等。
 
@@ -420,7 +420,7 @@ class PoliciesAudio:
 
     @play_denoising.setter
     def play_denoising(self, play_denoising):
-        """Sets the play_denoising of this PoliciesAudio.
+        r"""Sets the play_denoising of this PoliciesAudio.
 
         播音降噪。取值为： 不开启降噪：Disable Denoising。 开启降噪，最小值为-100，最大值为-5，中间取值，间隔为5的递增序列。如：-100、-95、-90、-85等。
 
@@ -431,7 +431,7 @@ class PoliciesAudio:
 
     @property
     def play_agc(self):
-        """Gets the play_agc of this PoliciesAudio.
+        r"""Gets the play_agc of this PoliciesAudio.
 
         播音增益。取值为：不开启增益：Disable AGC。开启增益，最小值为4000，最大值为32000，中间取值，从10000开始间隔为1000的递增序列。如：4000、6000、8000、10000、11000、12000、13000等。
 
@@ -442,7 +442,7 @@ class PoliciesAudio:
 
     @play_agc.setter
     def play_agc(self, play_agc):
-        """Sets the play_agc of this PoliciesAudio.
+        r"""Sets the play_agc of this PoliciesAudio.
 
         播音增益。取值为：不开启增益：Disable AGC。开启增益，最小值为4000，最大值为32000，中间取值，从10000开始间隔为1000的递增序列。如：4000、6000、8000、10000、11000、12000、13000等。
 
@@ -453,7 +453,7 @@ class PoliciesAudio:
 
     @property
     def play_crc(self):
-        """Gets the play_crc of this PoliciesAudio.
+        r"""Gets the play_crc of this PoliciesAudio.
 
         播音设置冗余。取值为： 不开启冗余：Disable CRC。 开启冗余：Enable CRC。
 
@@ -464,7 +464,7 @@ class PoliciesAudio:
 
     @play_crc.setter
     def play_crc(self, play_crc):
-        """Sets the play_crc of this PoliciesAudio.
+        r"""Sets the play_crc of this PoliciesAudio.
 
         播音设置冗余。取值为： 不开启冗余：Disable CRC。 开启冗余：Enable CRC。
 
@@ -475,7 +475,7 @@ class PoliciesAudio:
 
     @property
     def play_device_mode(self):
-        """Gets the play_device_mode of this PoliciesAudio.
+        r"""Gets the play_device_mode of this PoliciesAudio.
 
         播音设置模式。取值为： 播音设备共享模式：Play Device In Shared Mode。 播音设备独占模式：Play Device In Exclusive Mode。
 
@@ -486,7 +486,7 @@ class PoliciesAudio:
 
     @play_device_mode.setter
     def play_device_mode(self, play_device_mode):
-        """Sets the play_device_mode of this PoliciesAudio.
+        r"""Sets the play_device_mode of this PoliciesAudio.
 
         播音设置模式。取值为： 播音设备共享模式：Play Device In Shared Mode。 播音设备独占模式：Play Device In Exclusive Mode。
 
@@ -497,7 +497,7 @@ class PoliciesAudio:
 
     @property
     def play_delay_threshold(self):
-        """Gets the play_delay_threshold of this PoliciesAudio.
+        r"""Gets the play_delay_threshold of this PoliciesAudio.
 
         播音控制时延阈值。取值为：最小值为160，最大值为2500。中间取值，400以下为40的递增序列，1000以下为50的递增序列。从高到低为：2500、2000、1800、1500、1200、1000、950、900、850等。
 
@@ -508,7 +508,7 @@ class PoliciesAudio:
 
     @play_delay_threshold.setter
     def play_delay_threshold(self, play_delay_threshold):
-        """Sets the play_delay_threshold of this PoliciesAudio.
+        r"""Sets the play_delay_threshold of this PoliciesAudio.
 
         播音控制时延阈值。取值为：最小值为160，最大值为2500。中间取值，400以下为40的递增序列，1000以下为50的递增序列。从高到低为：2500、2000、1800、1500、1200、1000、950、900、850等。
 
@@ -519,7 +519,7 @@ class PoliciesAudio:
 
     @property
     def play_amplitude_threshold(self):
-        """Gets the play_amplitude_threshold of this PoliciesAudio.
+        r"""Gets the play_amplitude_threshold of this PoliciesAudio.
 
         播音检测振幅阈值。取值为：2048、4096、5120、6144、7168、8192。
 
@@ -530,7 +530,7 @@ class PoliciesAudio:
 
     @play_amplitude_threshold.setter
     def play_amplitude_threshold(self, play_amplitude_threshold):
-        """Sets the play_amplitude_threshold of this PoliciesAudio.
+        r"""Sets the play_amplitude_threshold of this PoliciesAudio.
 
         播音检测振幅阈值。取值为：2048、4096、5120、6144、7168、8192。
 
@@ -541,7 +541,7 @@ class PoliciesAudio:
 
     @property
     def play_prefill_data(self):
-        """Gets the play_prefill_data of this PoliciesAudio.
+        r"""Gets the play_prefill_data of this PoliciesAudio.
 
         播音音乐预充数据。取值为：不预充：Do Not Prefill Data。预充取值：最小值为50，最大值为2000，250以前为50的递增序列，500以前为100的递增序列。从高到低取值如：2000、1500、1000、500、400、300、250。
 
@@ -552,7 +552,7 @@ class PoliciesAudio:
 
     @play_prefill_data.setter
     def play_prefill_data(self, play_prefill_data):
-        """Sets the play_prefill_data of this PoliciesAudio.
+        r"""Sets the play_prefill_data of this PoliciesAudio.
 
         播音音乐预充数据。取值为：不预充：Do Not Prefill Data。预充取值：最小值为50，最大值为2000，250以前为50的递增序列，500以前为100的递增序列。从高到低取值如：2000、1500、1000、500、400、300、250。
 
@@ -563,7 +563,7 @@ class PoliciesAudio:
 
     @property
     def record_redirection_enable(self):
-        """Gets the record_redirection_enable of this PoliciesAudio.
+        r"""Gets the record_redirection_enable of this PoliciesAudio.
 
         是否开启录音重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -574,7 +574,7 @@ class PoliciesAudio:
 
     @record_redirection_enable.setter
     def record_redirection_enable(self, record_redirection_enable):
-        """Sets the record_redirection_enable of this PoliciesAudio.
+        r"""Sets the record_redirection_enable of this PoliciesAudio.
 
         是否开启录音重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -585,7 +585,7 @@ class PoliciesAudio:
 
     @property
     def record_classification(self):
-        """Gets the record_classification of this PoliciesAudio.
+        r"""Gets the record_classification of this PoliciesAudio.
 
         录音场景。取值为： 无损录音：LossLess。 语音通话：Speech Call。 音乐录音：Music Record。 自动识别：Automatic Identification。
 
@@ -596,7 +596,7 @@ class PoliciesAudio:
 
     @record_classification.setter
     def record_classification(self, record_classification):
-        """Sets the record_classification of this PoliciesAudio.
+        r"""Sets the record_classification of this PoliciesAudio.
 
         录音场景。取值为： 无损录音：LossLess。 语音通话：Speech Call。 音乐录音：Music Record。 自动识别：Automatic Identification。
 
@@ -607,7 +607,7 @@ class PoliciesAudio:
 
     @property
     def record_quality(self):
-        """Gets the record_quality of this PoliciesAudio.
+        r"""Gets the record_quality of this PoliciesAudio.
 
         录音质量。取值为： 低：Low。 中：Middle。 高：High。
 
@@ -618,7 +618,7 @@ class PoliciesAudio:
 
     @record_quality.setter
     def record_quality(self, record_quality):
-        """Sets the record_quality of this PoliciesAudio.
+        r"""Sets the record_quality of this PoliciesAudio.
 
         录音质量。取值为： 低：Low。 中：Middle。 高：High。
 
@@ -629,7 +629,7 @@ class PoliciesAudio:
 
     @property
     def record_denoising(self):
-        """Gets the record_denoising of this PoliciesAudio.
+        r"""Gets the record_denoising of this PoliciesAudio.
 
         录音降噪。取值为： 不开启降噪：Disable Denoising。 开启降噪，最小值为-100，最大值为-5，中间取值，间隔为5的递增序列。如：-100、-95、-90、-85等。
 
@@ -640,7 +640,7 @@ class PoliciesAudio:
 
     @record_denoising.setter
     def record_denoising(self, record_denoising):
-        """Sets the record_denoising of this PoliciesAudio.
+        r"""Sets the record_denoising of this PoliciesAudio.
 
         录音降噪。取值为： 不开启降噪：Disable Denoising。 开启降噪，最小值为-100，最大值为-5，中间取值，间隔为5的递增序列。如：-100、-95、-90、-85等。
 
@@ -651,7 +651,7 @@ class PoliciesAudio:
 
     @property
     def record_agc(self):
-        """Gets the record_agc of this PoliciesAudio.
+        r"""Gets the record_agc of this PoliciesAudio.
 
         录音增益。取值为：不开启增益：Disable AGC。开启增益，最小值为4000，最大值为32000，中间取值，从10000开始间隔为1000的递增序列。如：4000、6000、8000、10000、11000、12000、13000等。
 
@@ -662,7 +662,7 @@ class PoliciesAudio:
 
     @record_agc.setter
     def record_agc(self, record_agc):
-        """Sets the record_agc of this PoliciesAudio.
+        r"""Sets the record_agc of this PoliciesAudio.
 
         录音增益。取值为：不开启增益：Disable AGC。开启增益，最小值为4000，最大值为32000，中间取值，从10000开始间隔为1000的递增序列。如：4000、6000、8000、10000、11000、12000、13000等。
 
@@ -673,7 +673,7 @@ class PoliciesAudio:
 
     @property
     def record_crc(self):
-        """Gets the record_crc of this PoliciesAudio.
+        r"""Gets the record_crc of this PoliciesAudio.
 
         录音设置冗余。取值为： 不开启冗余：Disable CRC。 开启冗余：Enable CRC。
 
@@ -684,7 +684,7 @@ class PoliciesAudio:
 
     @record_crc.setter
     def record_crc(self, record_crc):
-        """Sets the record_crc of this PoliciesAudio.
+        r"""Sets the record_crc of this PoliciesAudio.
 
         录音设置冗余。取值为： 不开启冗余：Disable CRC。 开启冗余：Enable CRC。
 
@@ -695,7 +695,7 @@ class PoliciesAudio:
 
     @property
     def record_device_mode(self):
-        """Gets the record_device_mode of this PoliciesAudio.
+        r"""Gets the record_device_mode of this PoliciesAudio.
 
         录音设置模式。取值为： 播音设备共享模式：Record Device In Shared Mode。 播音设备独占模式：Record Device In Exclusive Mode。
 
@@ -706,7 +706,7 @@ class PoliciesAudio:
 
     @record_device_mode.setter
     def record_device_mode(self, record_device_mode):
-        """Sets the record_device_mode of this PoliciesAudio.
+        r"""Sets the record_device_mode of this PoliciesAudio.
 
         录音设置模式。取值为： 播音设备共享模式：Record Device In Shared Mode。 播音设备独占模式：Record Device In Exclusive Mode。
 
@@ -717,7 +717,7 @@ class PoliciesAudio:
 
     @property
     def record_delay_threshold(self):
-        """Gets the record_delay_threshold of this PoliciesAudio.
+        r"""Gets the record_delay_threshold of this PoliciesAudio.
 
         录音控制时延阈值。取值为：最小值为160，最大值为2500。中间取值，400以下为40的递增序列，1000以下为50的递增序列。从高到低为：2500、2000、1800、1500、1200、1000、950、900、850等。
 
@@ -728,7 +728,7 @@ class PoliciesAudio:
 
     @record_delay_threshold.setter
     def record_delay_threshold(self, record_delay_threshold):
-        """Sets the record_delay_threshold of this PoliciesAudio.
+        r"""Sets the record_delay_threshold of this PoliciesAudio.
 
         录音控制时延阈值。取值为：最小值为160，最大值为2500。中间取值，400以下为40的递增序列，1000以下为50的递增序列。从高到低为：2500、2000、1800、1500、1200、1000、950、900、850等。
 
@@ -739,7 +739,7 @@ class PoliciesAudio:
 
     @property
     def record_amplitude_threshold(self):
-        """Gets the record_amplitude_threshold of this PoliciesAudio.
+        r"""Gets the record_amplitude_threshold of this PoliciesAudio.
 
         录音检测振幅阈值。取值为：2048、4096、5120、6144、7168、8192。
 
@@ -750,7 +750,7 @@ class PoliciesAudio:
 
     @record_amplitude_threshold.setter
     def record_amplitude_threshold(self, record_amplitude_threshold):
-        """Sets the record_amplitude_threshold of this PoliciesAudio.
+        r"""Sets the record_amplitude_threshold of this PoliciesAudio.
 
         录音检测振幅阈值。取值为：2048、4096、5120、6144、7168、8192。
 

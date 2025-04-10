@@ -31,7 +31,7 @@ class TargetRect:
     }
 
     def __init__(self, camera_code=None, camera_ip=None, target_pos=None, time_stamp_diff=None):
-        """TargetRect
+        r"""TargetRect
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class TargetRect:
 
     @property
     def camera_code(self):
-        """Gets the camera_code of this TargetRect.
+        r"""Gets the camera_code of this TargetRect.
 
         **参数说明**：摄像头编码。
 
@@ -75,7 +75,7 @@ class TargetRect:
 
     @camera_code.setter
     def camera_code(self, camera_code):
-        """Sets the camera_code of this TargetRect.
+        r"""Sets the camera_code of this TargetRect.
 
         **参数说明**：摄像头编码。
 
@@ -86,7 +86,7 @@ class TargetRect:
 
     @property
     def camera_ip(self):
-        """Gets the camera_ip of this TargetRect.
+        r"""Gets the camera_ip of this TargetRect.
 
         **参数说明**：摄像头IP地址。
 
@@ -97,7 +97,7 @@ class TargetRect:
 
     @camera_ip.setter
     def camera_ip(self, camera_ip):
-        """Sets the camera_ip of this TargetRect.
+        r"""Sets the camera_ip of this TargetRect.
 
         **参数说明**：摄像头IP地址。
 
@@ -108,7 +108,7 @@ class TargetRect:
 
     @property
     def target_pos(self):
-        """Gets the target_pos of this TargetRect.
+        r"""Gets the target_pos of this TargetRect.
 
         :return: The target_pos of this TargetRect.
         :rtype: :class:`huaweicloudsdkdris.v1.TargetPos`
@@ -117,7 +117,7 @@ class TargetRect:
 
     @target_pos.setter
     def target_pos(self, target_pos):
-        """Sets the target_pos of this TargetRect.
+        r"""Sets the target_pos of this TargetRect.
 
         :param target_pos: The target_pos of this TargetRect.
         :type target_pos: :class:`huaweicloudsdkdris.v1.TargetPos`
@@ -126,7 +126,7 @@ class TargetRect:
 
     @property
     def time_stamp_diff(self):
-        """Gets the time_stamp_diff of this TargetRect.
+        r"""Gets the time_stamp_diff of this TargetRect.
 
         **参数说明**：与SnapTime的时间差值：当前检测框所在相机的时间戳减去雷视拟合轨迹中的SnapTime的差值。
 
@@ -137,7 +137,7 @@ class TargetRect:
 
     @time_stamp_diff.setter
     def time_stamp_diff(self, time_stamp_diff):
-        """Sets the time_stamp_diff of this TargetRect.
+        r"""Sets the time_stamp_diff of this TargetRect.
 
         **参数说明**：与SnapTime的时间差值：当前检测框所在相机的时间戳减去雷视拟合轨迹中的SnapTime的差值。
 

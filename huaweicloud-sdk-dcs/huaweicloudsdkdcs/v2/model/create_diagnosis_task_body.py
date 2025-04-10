@@ -29,7 +29,7 @@ class CreateDiagnosisTaskBody:
     }
 
     def __init__(self, begin_time=None, end_time=None, node_ip_list=None):
-        """CreateDiagnosisTaskBody
+        r"""CreateDiagnosisTaskBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateDiagnosisTaskBody:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this CreateDiagnosisTaskBody.
+        r"""Gets the begin_time of this CreateDiagnosisTaskBody.
 
         诊断开始时间。UNIX时间戳，单位毫秒。
 
@@ -66,7 +66,7 @@ class CreateDiagnosisTaskBody:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this CreateDiagnosisTaskBody.
+        r"""Sets the begin_time of this CreateDiagnosisTaskBody.
 
         诊断开始时间。UNIX时间戳，单位毫秒。
 
@@ -77,7 +77,7 @@ class CreateDiagnosisTaskBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CreateDiagnosisTaskBody.
+        r"""Gets the end_time of this CreateDiagnosisTaskBody.
 
         诊断结束时间。UNIX时间戳，单位毫秒。
 
@@ -88,7 +88,7 @@ class CreateDiagnosisTaskBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CreateDiagnosisTaskBody.
+        r"""Sets the end_time of this CreateDiagnosisTaskBody.
 
         诊断结束时间。UNIX时间戳，单位毫秒。
 
@@ -99,7 +99,7 @@ class CreateDiagnosisTaskBody:
 
     @property
     def node_ip_list(self):
-        """Gets the node_ip_list of this CreateDiagnosisTaskBody.
+        r"""Gets the node_ip_list of this CreateDiagnosisTaskBody.
 
         诊断节点IP列表。默认诊断所有节点。 非读写分离实例查询方法如下：   - 方法一：参考[查看实例信息](https://support.huaweicloud.com/usermanual-dcs/dcs-ug-0312016.html)。   - 方法二：调用[查询指定实例](https://support.huaweicloud.com/api-dcs/ShowInstance.html)查询。  读写分离实例查询方法：调用[查询分片信息](https://support.huaweicloud.com/api-dcs/ListGroupReplicationInfo.html#ListGroupReplicationInfo__response_InstanceReplicationListInfo)。 
 
@@ -110,7 +110,7 @@ class CreateDiagnosisTaskBody:
 
     @node_ip_list.setter
     def node_ip_list(self, node_ip_list):
-        """Sets the node_ip_list of this CreateDiagnosisTaskBody.
+        r"""Sets the node_ip_list of this CreateDiagnosisTaskBody.
 
         诊断节点IP列表。默认诊断所有节点。 非读写分离实例查询方法如下：   - 方法一：参考[查看实例信息](https://support.huaweicloud.com/usermanual-dcs/dcs-ug-0312016.html)。   - 方法二：调用[查询指定实例](https://support.huaweicloud.com/api-dcs/ShowInstance.html)查询。  读写分离实例查询方法：调用[查询分片信息](https://support.huaweicloud.com/api-dcs/ListGroupReplicationInfo.html#ListGroupReplicationInfo__response_InstanceReplicationListInfo)。 
 

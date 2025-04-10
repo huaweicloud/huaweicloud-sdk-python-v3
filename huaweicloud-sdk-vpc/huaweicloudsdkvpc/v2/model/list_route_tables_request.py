@@ -33,7 +33,7 @@ class ListRouteTablesRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, vpc_id=None, subnet_id=None):
-        """ListRouteTablesRequest
+        r"""ListRouteTablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListRouteTablesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRouteTablesRequest.
+        r"""Gets the limit of this ListRouteTablesRequest.
 
         每页返回的个数
 
@@ -82,7 +82,7 @@ class ListRouteTablesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRouteTablesRequest.
+        r"""Sets the limit of this ListRouteTablesRequest.
 
         每页返回的个数
 
@@ -93,7 +93,7 @@ class ListRouteTablesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListRouteTablesRequest.
+        r"""Gets the marker of this ListRouteTablesRequest.
 
         分页查询起始的资源ID，为空时为查询第一页
 
@@ -104,7 +104,7 @@ class ListRouteTablesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRouteTablesRequest.
+        r"""Sets the marker of this ListRouteTablesRequest.
 
         分页查询起始的资源ID，为空时为查询第一页
 
@@ -115,7 +115,7 @@ class ListRouteTablesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListRouteTablesRequest.
+        r"""Gets the id of this ListRouteTablesRequest.
 
         路由表ID，可过滤对应ID的路由表
 
@@ -126,7 +126,7 @@ class ListRouteTablesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListRouteTablesRequest.
+        r"""Sets the id of this ListRouteTablesRequest.
 
         路由表ID，可过滤对应ID的路由表
 
@@ -137,7 +137,7 @@ class ListRouteTablesRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListRouteTablesRequest.
+        r"""Gets the vpc_id of this ListRouteTablesRequest.
 
         虚拟私有云ID，可过滤对应虚拟私有云包含的路由表
 
@@ -148,7 +148,7 @@ class ListRouteTablesRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListRouteTablesRequest.
+        r"""Sets the vpc_id of this ListRouteTablesRequest.
 
         虚拟私有云ID，可过滤对应虚拟私有云包含的路由表
 
@@ -159,7 +159,7 @@ class ListRouteTablesRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListRouteTablesRequest.
+        r"""Gets the subnet_id of this ListRouteTablesRequest.
 
         子网ID，可过滤对应子网关联的路由表
 
@@ -170,7 +170,7 @@ class ListRouteTablesRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListRouteTablesRequest.
+        r"""Sets the subnet_id of this ListRouteTablesRequest.
 
         子网ID，可过滤对应子网关联的路由表
 

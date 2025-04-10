@@ -25,7 +25,7 @@ class ShowExpireAutoScanConfigRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowExpireAutoScanConfigRequest
+        r"""ShowExpireAutoScanConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowExpireAutoScanConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowExpireAutoScanConfigRequest.
+        r"""Gets the instance_id of this ShowExpireAutoScanConfigRequest.
 
         实例ID
 
@@ -53,7 +53,7 @@ class ShowExpireAutoScanConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowExpireAutoScanConfigRequest.
+        r"""Sets the instance_id of this ShowExpireAutoScanConfigRequest.
 
         实例ID
 

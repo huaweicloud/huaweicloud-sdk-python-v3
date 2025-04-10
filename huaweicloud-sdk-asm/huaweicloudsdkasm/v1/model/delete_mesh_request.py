@@ -29,7 +29,7 @@ class DeleteMeshRequest:
     }
 
     def __init__(self, mesh_id=None, content_type=None, x_apply_project_id=None):
-        """DeleteMeshRequest
+        r"""DeleteMeshRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteMeshRequest:
 
     @property
     def mesh_id(self):
-        """Gets the mesh_id of this DeleteMeshRequest.
+        r"""Gets the mesh_id of this DeleteMeshRequest.
 
         网格ID
 
@@ -66,7 +66,7 @@ class DeleteMeshRequest:
 
     @mesh_id.setter
     def mesh_id(self, mesh_id):
-        """Sets the mesh_id of this DeleteMeshRequest.
+        r"""Sets the mesh_id of this DeleteMeshRequest.
 
         网格ID
 
@@ -77,7 +77,7 @@ class DeleteMeshRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this DeleteMeshRequest.
+        r"""Gets the content_type of this DeleteMeshRequest.
 
         消息体的类型（格式）
 
@@ -88,7 +88,7 @@ class DeleteMeshRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this DeleteMeshRequest.
+        r"""Sets the content_type of this DeleteMeshRequest.
 
         消息体的类型（格式）
 
@@ -99,7 +99,7 @@ class DeleteMeshRequest:
 
     @property
     def x_apply_project_id(self):
-        """Gets the x_apply_project_id of this DeleteMeshRequest.
+        r"""Gets the x_apply_project_id of this DeleteMeshRequest.
 
         网格所属ProjectID
 
@@ -110,7 +110,7 @@ class DeleteMeshRequest:
 
     @x_apply_project_id.setter
     def x_apply_project_id(self, x_apply_project_id):
-        """Sets the x_apply_project_id of this DeleteMeshRequest.
+        r"""Sets the x_apply_project_id of this DeleteMeshRequest.
 
         网格所属ProjectID
 

@@ -30,7 +30,7 @@ class CreateUserDisclaimerResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, user_disclaimer_record=None, x_request_id=None):
-        """CreateUserDisclaimerResponse
+        r"""CreateUserDisclaimerResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateUserDisclaimerResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateUserDisclaimerResponse.
+        r"""Gets the request_id of this CreateUserDisclaimerResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class CreateUserDisclaimerResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateUserDisclaimerResponse.
+        r"""Sets the request_id of this CreateUserDisclaimerResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class CreateUserDisclaimerResponse(SdkResponse):
 
     @property
     def user_disclaimer_record(self):
-        """Gets the user_disclaimer_record of this CreateUserDisclaimerResponse.
+        r"""Gets the user_disclaimer_record of this CreateUserDisclaimerResponse.
 
         :return: The user_disclaimer_record of this CreateUserDisclaimerResponse.
         :rtype: :class:`huaweicloudsdkgeip.v3.CreateUserDisclaimerRecord`
@@ -89,7 +89,7 @@ class CreateUserDisclaimerResponse(SdkResponse):
 
     @user_disclaimer_record.setter
     def user_disclaimer_record(self, user_disclaimer_record):
-        """Sets the user_disclaimer_record of this CreateUserDisclaimerResponse.
+        r"""Sets the user_disclaimer_record of this CreateUserDisclaimerResponse.
 
         :param user_disclaimer_record: The user_disclaimer_record of this CreateUserDisclaimerResponse.
         :type user_disclaimer_record: :class:`huaweicloudsdkgeip.v3.CreateUserDisclaimerRecord`
@@ -98,7 +98,7 @@ class CreateUserDisclaimerResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateUserDisclaimerResponse.
+        r"""Gets the x_request_id of this CreateUserDisclaimerResponse.
 
         :return: The x_request_id of this CreateUserDisclaimerResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateUserDisclaimerResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateUserDisclaimerResponse.
+        r"""Sets the x_request_id of this CreateUserDisclaimerResponse.
 
         :param x_request_id: The x_request_id of this CreateUserDisclaimerResponse.
         :type x_request_id: str

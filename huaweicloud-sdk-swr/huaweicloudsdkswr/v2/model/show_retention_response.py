@@ -32,7 +32,7 @@ class ShowRetentionResponse(SdkResponse):
     }
 
     def __init__(self, algorithm=None, id=None, rules=None, scope=None):
-        """ShowRetentionResponse
+        r"""ShowRetentionResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowRetentionResponse(SdkResponse):
 
     @property
     def algorithm(self):
-        """Gets the algorithm of this ShowRetentionResponse.
+        r"""Gets the algorithm of this ShowRetentionResponse.
 
         回收规则匹配策略，or
 
@@ -76,7 +76,7 @@ class ShowRetentionResponse(SdkResponse):
 
     @algorithm.setter
     def algorithm(self, algorithm):
-        """Sets the algorithm of this ShowRetentionResponse.
+        r"""Sets the algorithm of this ShowRetentionResponse.
 
         回收规则匹配策略，or
 
@@ -87,7 +87,7 @@ class ShowRetentionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowRetentionResponse.
+        r"""Gets the id of this ShowRetentionResponse.
 
         ID
 
@@ -98,7 +98,7 @@ class ShowRetentionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowRetentionResponse.
+        r"""Sets the id of this ShowRetentionResponse.
 
         ID
 
@@ -109,7 +109,7 @@ class ShowRetentionResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this ShowRetentionResponse.
+        r"""Gets the rules of this ShowRetentionResponse.
 
         镜像老化规则
 
@@ -120,7 +120,7 @@ class ShowRetentionResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this ShowRetentionResponse.
+        r"""Sets the rules of this ShowRetentionResponse.
 
         镜像老化规则
 
@@ -131,7 +131,7 @@ class ShowRetentionResponse(SdkResponse):
 
     @property
     def scope(self):
-        """Gets the scope of this ShowRetentionResponse.
+        r"""Gets the scope of this ShowRetentionResponse.
 
         保留字段
 
@@ -142,7 +142,7 @@ class ShowRetentionResponse(SdkResponse):
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this ShowRetentionResponse.
+        r"""Sets the scope of this ShowRetentionResponse.
 
         保留字段
 

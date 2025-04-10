@@ -28,7 +28,7 @@ class CreateStarrocksInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance=None, job_id=None):
-        """CreateStarrocksInstanceResponse
+        r"""CreateStarrocksInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateStarrocksInstanceResponse(SdkResponse):
 
     @property
     def instance(self):
-        """Gets the instance of this CreateStarrocksInstanceResponse.
+        r"""Gets the instance of this CreateStarrocksInstanceResponse.
 
         :return: The instance of this CreateStarrocksInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SrCreateInstanceRspInstance`
@@ -60,7 +60,7 @@ class CreateStarrocksInstanceResponse(SdkResponse):
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this CreateStarrocksInstanceResponse.
+        r"""Sets the instance of this CreateStarrocksInstanceResponse.
 
         :param instance: The instance of this CreateStarrocksInstanceResponse.
         :type instance: :class:`huaweicloudsdkgaussdb.v3.SrCreateInstanceRspInstance`
@@ -69,7 +69,7 @@ class CreateStarrocksInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateStarrocksInstanceResponse.
+        r"""Gets the job_id of this CreateStarrocksInstanceResponse.
 
         工作流ID。
 
@@ -80,7 +80,7 @@ class CreateStarrocksInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateStarrocksInstanceResponse.
+        r"""Sets the job_id of this CreateStarrocksInstanceResponse.
 
         工作流ID。
 

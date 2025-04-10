@@ -27,7 +27,7 @@ class PropagationRequestBody:
     }
 
     def __init__(self, attachment_id=None, route_policy=None):
-        """PropagationRequestBody
+        r"""PropagationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PropagationRequestBody:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this PropagationRequestBody.
+        r"""Gets the attachment_id of this PropagationRequestBody.
 
         连接唯一标识
 
@@ -61,7 +61,7 @@ class PropagationRequestBody:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this PropagationRequestBody.
+        r"""Sets the attachment_id of this PropagationRequestBody.
 
         连接唯一标识
 
@@ -72,7 +72,7 @@ class PropagationRequestBody:
 
     @property
     def route_policy(self):
-        """Gets the route_policy of this PropagationRequestBody.
+        r"""Gets the route_policy of this PropagationRequestBody.
 
         :return: The route_policy of this PropagationRequestBody.
         :rtype: :class:`huaweicloudsdker.v3.ImportRoutePolicy`
@@ -81,7 +81,7 @@ class PropagationRequestBody:
 
     @route_policy.setter
     def route_policy(self, route_policy):
-        """Sets the route_policy of this PropagationRequestBody.
+        r"""Sets the route_policy of this PropagationRequestBody.
 
         :param route_policy: The route_policy of this PropagationRequestBody.
         :type route_policy: :class:`huaweicloudsdker.v3.ImportRoutePolicy`

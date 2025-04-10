@@ -30,7 +30,7 @@ class ListAimSendReportsResponse(SdkResponse):
     }
 
     def __init__(self, status=None, message=None, data=None):
-        """ListAimSendReportsResponse
+        r"""ListAimSendReportsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAimSendReportsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListAimSendReportsResponse.
+        r"""Gets the status of this ListAimSendReportsResponse.
 
         响应码。
 
@@ -69,7 +69,7 @@ class ListAimSendReportsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAimSendReportsResponse.
+        r"""Sets the status of this ListAimSendReportsResponse.
 
         响应码。
 
@@ -80,7 +80,7 @@ class ListAimSendReportsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListAimSendReportsResponse.
+        r"""Gets the message of this ListAimSendReportsResponse.
 
         响应信息。
 
@@ -91,7 +91,7 @@ class ListAimSendReportsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListAimSendReportsResponse.
+        r"""Sets the message of this ListAimSendReportsResponse.
 
         响应信息。
 
@@ -102,7 +102,7 @@ class ListAimSendReportsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListAimSendReportsResponse.
+        r"""Gets the data of this ListAimSendReportsResponse.
 
         :return: The data of this ListAimSendReportsResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimSendReportsMode`
@@ -111,7 +111,7 @@ class ListAimSendReportsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListAimSendReportsResponse.
+        r"""Sets the data of this ListAimSendReportsResponse.
 
         :param data: The data of this ListAimSendReportsResponse.
         :type data: :class:`huaweicloudsdkkoomessage.v1.ListAimSendReportsMode`

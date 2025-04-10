@@ -25,7 +25,7 @@ class ResourceTypePrimitiveTypeHolder:
     }
 
     def __init__(self, resource_type=None):
-        """ResourceTypePrimitiveTypeHolder
+        r"""ResourceTypePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResourceTypePrimitiveTypeHolder:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ResourceTypePrimitiveTypeHolder.
+        r"""Gets the resource_type of this ResourceTypePrimitiveTypeHolder.
 
         资源的类型  以HCL格式的模板为例，resource_type 为 huaweicloud_vpc  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   name = \"test_vpc\" } ```  以json格式的模板为例，resource_type 为 huaweicloud_vpc  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"name\": \"test_vpc\"       }     }   } } ```
 
@@ -54,7 +54,7 @@ class ResourceTypePrimitiveTypeHolder:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ResourceTypePrimitiveTypeHolder.
+        r"""Sets the resource_type of this ResourceTypePrimitiveTypeHolder.
 
         资源的类型  以HCL格式的模板为例，resource_type 为 huaweicloud_vpc  ```hcl resource \"huaweicloud_vpc\" \"my_hello_world_vpc\" {   name = \"test_vpc\" } ```  以json格式的模板为例，resource_type 为 huaweicloud_vpc  ```json {   \"resource\": {     \"huaweicloud_vpc\": {       \"my_hello_world_vpc\": {         \"name\": \"test_vpc\"       }     }   } } ```
 

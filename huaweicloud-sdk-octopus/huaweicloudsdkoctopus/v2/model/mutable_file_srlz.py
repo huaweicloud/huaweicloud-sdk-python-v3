@@ -25,7 +25,7 @@ class MutableFileSrlz:
     }
 
     def __init__(self, content=None):
-        """MutableFileSrlz
+        r"""MutableFileSrlz
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MutableFileSrlz:
 
     @property
     def content(self):
-        """Gets the content of this MutableFileSrlz.
+        r"""Gets the content of this MutableFileSrlz.
 
         内容
 
@@ -53,7 +53,7 @@ class MutableFileSrlz:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this MutableFileSrlz.
+        r"""Sets the content of this MutableFileSrlz.
 
         内容
 

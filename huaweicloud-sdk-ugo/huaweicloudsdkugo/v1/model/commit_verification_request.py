@@ -25,7 +25,7 @@ class CommitVerificationRequest:
     }
 
     def __init__(self, migration_project_id=None):
-        """CommitVerificationRequest
+        r"""CommitVerificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CommitVerificationRequest:
 
     @property
     def migration_project_id(self):
-        """Gets the migration_project_id of this CommitVerificationRequest.
+        r"""Gets the migration_project_id of this CommitVerificationRequest.
 
         迁移项目ID。
 
@@ -53,7 +53,7 @@ class CommitVerificationRequest:
 
     @migration_project_id.setter
     def migration_project_id(self, migration_project_id):
-        """Sets the migration_project_id of this CommitVerificationRequest.
+        r"""Sets the migration_project_id of this CommitVerificationRequest.
 
         迁移项目ID。
 

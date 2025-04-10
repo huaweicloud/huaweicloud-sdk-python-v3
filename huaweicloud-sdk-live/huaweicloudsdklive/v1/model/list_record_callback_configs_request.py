@@ -31,7 +31,7 @@ class ListRecordCallbackConfigsRequest:
     }
 
     def __init__(self, publish_domain=None, app=None, offset=None, limit=None):
-        """ListRecordCallbackConfigsRequest
+        r"""ListRecordCallbackConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListRecordCallbackConfigsRequest:
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this ListRecordCallbackConfigsRequest.
+        r"""Gets the publish_domain of this ListRecordCallbackConfigsRequest.
 
         直播推流域名
 
@@ -75,7 +75,7 @@ class ListRecordCallbackConfigsRequest:
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this ListRecordCallbackConfigsRequest.
+        r"""Sets the publish_domain of this ListRecordCallbackConfigsRequest.
 
         直播推流域名
 
@@ -86,7 +86,7 @@ class ListRecordCallbackConfigsRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListRecordCallbackConfigsRequest.
+        r"""Gets the app of this ListRecordCallbackConfigsRequest.
 
         流应用名称
 
@@ -97,7 +97,7 @@ class ListRecordCallbackConfigsRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListRecordCallbackConfigsRequest.
+        r"""Sets the app of this ListRecordCallbackConfigsRequest.
 
         流应用名称
 
@@ -108,7 +108,7 @@ class ListRecordCallbackConfigsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRecordCallbackConfigsRequest.
+        r"""Gets the offset of this ListRecordCallbackConfigsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -119,7 +119,7 @@ class ListRecordCallbackConfigsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRecordCallbackConfigsRequest.
+        r"""Sets the offset of this ListRecordCallbackConfigsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -130,7 +130,7 @@ class ListRecordCallbackConfigsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRecordCallbackConfigsRequest.
+        r"""Gets the limit of this ListRecordCallbackConfigsRequest.
 
         每页记录数，取值范围[1,100]，默认值10
 
@@ -141,7 +141,7 @@ class ListRecordCallbackConfigsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRecordCallbackConfigsRequest.
+        r"""Sets the limit of this ListRecordCallbackConfigsRequest.
 
         每页记录数，取值范围[1,100]，默认值10
 

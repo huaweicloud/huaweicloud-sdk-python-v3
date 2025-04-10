@@ -27,7 +27,7 @@ class CopyConfigurationRequest:
     }
 
     def __init__(self, config_id=None, body=None):
-        """CopyConfigurationRequest
+        r"""CopyConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CopyConfigurationRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this CopyConfigurationRequest.
+        r"""Gets the config_id of this CopyConfigurationRequest.
 
         参数模板ID。
 
@@ -60,7 +60,7 @@ class CopyConfigurationRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this CopyConfigurationRequest.
+        r"""Sets the config_id of this CopyConfigurationRequest.
 
         参数模板ID。
 
@@ -71,7 +71,7 @@ class CopyConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CopyConfigurationRequest.
+        r"""Gets the body of this CopyConfigurationRequest.
 
         :return: The body of this CopyConfigurationRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CopyConfigurationRequestBody`
@@ -80,7 +80,7 @@ class CopyConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CopyConfigurationRequest.
+        r"""Sets the body of this CopyConfigurationRequest.
 
         :param body: The body of this CopyConfigurationRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.CopyConfigurationRequestBody`

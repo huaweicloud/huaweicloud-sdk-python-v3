@@ -27,7 +27,7 @@ class SendEmailRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """SendEmailRequest
+        r"""SendEmailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SendEmailRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this SendEmailRequest.
+        r"""Gets the user_id of this SendEmailRequest.
 
         用户ID。
 
@@ -60,7 +60,7 @@ class SendEmailRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this SendEmailRequest.
+        r"""Sets the user_id of this SendEmailRequest.
 
         用户ID。
 
@@ -71,7 +71,7 @@ class SendEmailRequest:
 
     @property
     def body(self):
-        """Gets the body of this SendEmailRequest.
+        r"""Gets the body of this SendEmailRequest.
 
         :return: The body of this SendEmailRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ResendEmailReq`
@@ -80,7 +80,7 @@ class SendEmailRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SendEmailRequest.
+        r"""Sets the body of this SendEmailRequest.
 
         :param body: The body of this SendEmailRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ResendEmailReq`

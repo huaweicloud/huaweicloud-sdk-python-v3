@@ -57,7 +57,7 @@ class UploadFileRes:
     }
 
     def __init__(self, aw_ins_id=None, create_time=None, create_time_stamp=None, create_time_string=None, create_user=None, current_size=None, file_path=None, id=None, name=None, origin_name=None, project_id=None, region=None, testcase_id=None, update_time=None, update_time_stamp=None, update_time_string=None, update_user=None):
-        """UploadFileRes
+        r"""UploadFileRes
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class UploadFileRes:
 
     @property
     def aw_ins_id(self):
-        """Gets the aw_ins_id of this UploadFileRes.
+        r"""Gets the aw_ins_id of this UploadFileRes.
 
         所属的AWInstance的ID
 
@@ -166,7 +166,7 @@ class UploadFileRes:
 
     @aw_ins_id.setter
     def aw_ins_id(self, aw_ins_id):
-        """Sets the aw_ins_id of this UploadFileRes.
+        r"""Sets the aw_ins_id of this UploadFileRes.
 
         所属的AWInstance的ID
 
@@ -177,7 +177,7 @@ class UploadFileRes:
 
     @property
     def create_time(self):
-        """Gets the create_time of this UploadFileRes.
+        r"""Gets the create_time of this UploadFileRes.
 
         创建时间
 
@@ -188,7 +188,7 @@ class UploadFileRes:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UploadFileRes.
+        r"""Sets the create_time of this UploadFileRes.
 
         创建时间
 
@@ -199,7 +199,7 @@ class UploadFileRes:
 
     @property
     def create_time_stamp(self):
-        """Gets the create_time_stamp of this UploadFileRes.
+        r"""Gets the create_time_stamp of this UploadFileRes.
 
         创建时间戳
 
@@ -210,7 +210,7 @@ class UploadFileRes:
 
     @create_time_stamp.setter
     def create_time_stamp(self, create_time_stamp):
-        """Sets the create_time_stamp of this UploadFileRes.
+        r"""Sets the create_time_stamp of this UploadFileRes.
 
         创建时间戳
 
@@ -221,7 +221,7 @@ class UploadFileRes:
 
     @property
     def create_time_string(self):
-        """Gets the create_time_string of this UploadFileRes.
+        r"""Gets the create_time_string of this UploadFileRes.
 
         创建时间字符串
 
@@ -232,7 +232,7 @@ class UploadFileRes:
 
     @create_time_string.setter
     def create_time_string(self, create_time_string):
-        """Sets the create_time_string of this UploadFileRes.
+        r"""Sets the create_time_string of this UploadFileRes.
 
         创建时间字符串
 
@@ -243,7 +243,7 @@ class UploadFileRes:
 
     @property
     def create_user(self):
-        """Gets the create_user of this UploadFileRes.
+        r"""Gets the create_user of this UploadFileRes.
 
         创建人
 
@@ -254,7 +254,7 @@ class UploadFileRes:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this UploadFileRes.
+        r"""Sets the create_user of this UploadFileRes.
 
         创建人
 
@@ -265,7 +265,7 @@ class UploadFileRes:
 
     @property
     def current_size(self):
-        """Gets the current_size of this UploadFileRes.
+        r"""Gets the current_size of this UploadFileRes.
 
         当前大小
 
@@ -276,7 +276,7 @@ class UploadFileRes:
 
     @current_size.setter
     def current_size(self, current_size):
-        """Sets the current_size of this UploadFileRes.
+        r"""Sets the current_size of this UploadFileRes.
 
         当前大小
 
@@ -287,7 +287,7 @@ class UploadFileRes:
 
     @property
     def file_path(self):
-        """Gets the file_path of this UploadFileRes.
+        r"""Gets the file_path of this UploadFileRes.
 
         文件路径
 
@@ -298,7 +298,7 @@ class UploadFileRes:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this UploadFileRes.
+        r"""Sets the file_path of this UploadFileRes.
 
         文件路径
 
@@ -309,7 +309,7 @@ class UploadFileRes:
 
     @property
     def id(self):
-        """Gets the id of this UploadFileRes.
+        r"""Gets the id of this UploadFileRes.
 
         id
 
@@ -320,7 +320,7 @@ class UploadFileRes:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UploadFileRes.
+        r"""Sets the id of this UploadFileRes.
 
         id
 
@@ -331,7 +331,7 @@ class UploadFileRes:
 
     @property
     def name(self):
-        """Gets the name of this UploadFileRes.
+        r"""Gets the name of this UploadFileRes.
 
         文件在系统中的名字
 
@@ -342,7 +342,7 @@ class UploadFileRes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UploadFileRes.
+        r"""Sets the name of this UploadFileRes.
 
         文件在系统中的名字
 
@@ -353,7 +353,7 @@ class UploadFileRes:
 
     @property
     def origin_name(self):
-        """Gets the origin_name of this UploadFileRes.
+        r"""Gets the origin_name of this UploadFileRes.
 
         文件的原名
 
@@ -364,7 +364,7 @@ class UploadFileRes:
 
     @origin_name.setter
     def origin_name(self, origin_name):
-        """Sets the origin_name of this UploadFileRes.
+        r"""Sets the origin_name of this UploadFileRes.
 
         文件的原名
 
@@ -375,7 +375,7 @@ class UploadFileRes:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UploadFileRes.
+        r"""Gets the project_id of this UploadFileRes.
 
         项目ID
 
@@ -386,7 +386,7 @@ class UploadFileRes:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UploadFileRes.
+        r"""Sets the project_id of this UploadFileRes.
 
         项目ID
 
@@ -397,7 +397,7 @@ class UploadFileRes:
 
     @property
     def region(self):
-        """Gets the region of this UploadFileRes.
+        r"""Gets the region of this UploadFileRes.
 
         区域名称
 
@@ -408,7 +408,7 @@ class UploadFileRes:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this UploadFileRes.
+        r"""Sets the region of this UploadFileRes.
 
         区域名称
 
@@ -419,7 +419,7 @@ class UploadFileRes:
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this UploadFileRes.
+        r"""Gets the testcase_id of this UploadFileRes.
 
         测试用例的唯一标识符
 
@@ -430,7 +430,7 @@ class UploadFileRes:
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this UploadFileRes.
+        r"""Sets the testcase_id of this UploadFileRes.
 
         测试用例的唯一标识符
 
@@ -441,7 +441,7 @@ class UploadFileRes:
 
     @property
     def update_time(self):
-        """Gets the update_time of this UploadFileRes.
+        r"""Gets the update_time of this UploadFileRes.
 
         更新时间
 
@@ -452,7 +452,7 @@ class UploadFileRes:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UploadFileRes.
+        r"""Sets the update_time of this UploadFileRes.
 
         更新时间
 
@@ -463,7 +463,7 @@ class UploadFileRes:
 
     @property
     def update_time_stamp(self):
-        """Gets the update_time_stamp of this UploadFileRes.
+        r"""Gets the update_time_stamp of this UploadFileRes.
 
         更新时间戳
 
@@ -474,7 +474,7 @@ class UploadFileRes:
 
     @update_time_stamp.setter
     def update_time_stamp(self, update_time_stamp):
-        """Sets the update_time_stamp of this UploadFileRes.
+        r"""Sets the update_time_stamp of this UploadFileRes.
 
         更新时间戳
 
@@ -485,7 +485,7 @@ class UploadFileRes:
 
     @property
     def update_time_string(self):
-        """Gets the update_time_string of this UploadFileRes.
+        r"""Gets the update_time_string of this UploadFileRes.
 
         更新时间字符串
 
@@ -496,7 +496,7 @@ class UploadFileRes:
 
     @update_time_string.setter
     def update_time_string(self, update_time_string):
-        """Sets the update_time_string of this UploadFileRes.
+        r"""Sets the update_time_string of this UploadFileRes.
 
         更新时间字符串
 
@@ -507,7 +507,7 @@ class UploadFileRes:
 
     @property
     def update_user(self):
-        """Gets the update_user of this UploadFileRes.
+        r"""Gets the update_user of this UploadFileRes.
 
         更新人
 
@@ -518,7 +518,7 @@ class UploadFileRes:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this UploadFileRes.
+        r"""Sets the update_user of this UploadFileRes.
 
         更新人
 

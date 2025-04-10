@@ -57,7 +57,7 @@ class IncidentOrderAuthV2:
     }
 
     def __init__(self, id=None, status=None, incident_id=None, simple_description=None, auth_describe=None, resource_type_id=None, resource_type_name=None, visit_type_id=None, visit_type_name=None, create_time=None, auth_effective_time=None, auth_expire_time=None, reject_reason=None, customer_id=None, x_customer_id=None, xcustomer_name=None, content_of_auth_letter=None):
-        """IncidentOrderAuthV2
+        r"""IncidentOrderAuthV2
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class IncidentOrderAuthV2:
 
     @property
     def id(self):
-        """Gets the id of this IncidentOrderAuthV2.
+        r"""Gets the id of this IncidentOrderAuthV2.
 
         授权id
 
@@ -166,7 +166,7 @@ class IncidentOrderAuthV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IncidentOrderAuthV2.
+        r"""Sets the id of this IncidentOrderAuthV2.
 
         授权id
 
@@ -177,7 +177,7 @@ class IncidentOrderAuthV2:
 
     @property
     def status(self):
-        """Gets the status of this IncidentOrderAuthV2.
+        r"""Gets the status of this IncidentOrderAuthV2.
 
         授权状态
 
@@ -188,7 +188,7 @@ class IncidentOrderAuthV2:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IncidentOrderAuthV2.
+        r"""Sets the status of this IncidentOrderAuthV2.
 
         授权状态
 
@@ -199,7 +199,7 @@ class IncidentOrderAuthV2:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this IncidentOrderAuthV2.
+        r"""Gets the incident_id of this IncidentOrderAuthV2.
 
         工单id
 
@@ -210,7 +210,7 @@ class IncidentOrderAuthV2:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this IncidentOrderAuthV2.
+        r"""Sets the incident_id of this IncidentOrderAuthV2.
 
         工单id
 
@@ -221,7 +221,7 @@ class IncidentOrderAuthV2:
 
     @property
     def simple_description(self):
-        """Gets the simple_description of this IncidentOrderAuthV2.
+        r"""Gets the simple_description of this IncidentOrderAuthV2.
 
         简要描述
 
@@ -232,7 +232,7 @@ class IncidentOrderAuthV2:
 
     @simple_description.setter
     def simple_description(self, simple_description):
-        """Sets the simple_description of this IncidentOrderAuthV2.
+        r"""Sets the simple_description of this IncidentOrderAuthV2.
 
         简要描述
 
@@ -243,7 +243,7 @@ class IncidentOrderAuthV2:
 
     @property
     def auth_describe(self):
-        """Gets the auth_describe of this IncidentOrderAuthV2.
+        r"""Gets the auth_describe of this IncidentOrderAuthV2.
 
         授权描述
 
@@ -254,7 +254,7 @@ class IncidentOrderAuthV2:
 
     @auth_describe.setter
     def auth_describe(self, auth_describe):
-        """Sets the auth_describe of this IncidentOrderAuthV2.
+        r"""Sets the auth_describe of this IncidentOrderAuthV2.
 
         授权描述
 
@@ -265,7 +265,7 @@ class IncidentOrderAuthV2:
 
     @property
     def resource_type_id(self):
-        """Gets the resource_type_id of this IncidentOrderAuthV2.
+        r"""Gets the resource_type_id of this IncidentOrderAuthV2.
 
         授权资源类型id
 
@@ -276,7 +276,7 @@ class IncidentOrderAuthV2:
 
     @resource_type_id.setter
     def resource_type_id(self, resource_type_id):
-        """Sets the resource_type_id of this IncidentOrderAuthV2.
+        r"""Sets the resource_type_id of this IncidentOrderAuthV2.
 
         授权资源类型id
 
@@ -287,7 +287,7 @@ class IncidentOrderAuthV2:
 
     @property
     def resource_type_name(self):
-        """Gets the resource_type_name of this IncidentOrderAuthV2.
+        r"""Gets the resource_type_name of this IncidentOrderAuthV2.
 
         授权资源类型名称
 
@@ -298,7 +298,7 @@ class IncidentOrderAuthV2:
 
     @resource_type_name.setter
     def resource_type_name(self, resource_type_name):
-        """Sets the resource_type_name of this IncidentOrderAuthV2.
+        r"""Sets the resource_type_name of this IncidentOrderAuthV2.
 
         授权资源类型名称
 
@@ -309,7 +309,7 @@ class IncidentOrderAuthV2:
 
     @property
     def visit_type_id(self):
-        """Gets the visit_type_id of this IncidentOrderAuthV2.
+        r"""Gets the visit_type_id of this IncidentOrderAuthV2.
 
         授权访问类型id
 
@@ -320,7 +320,7 @@ class IncidentOrderAuthV2:
 
     @visit_type_id.setter
     def visit_type_id(self, visit_type_id):
-        """Sets the visit_type_id of this IncidentOrderAuthV2.
+        r"""Sets the visit_type_id of this IncidentOrderAuthV2.
 
         授权访问类型id
 
@@ -331,7 +331,7 @@ class IncidentOrderAuthV2:
 
     @property
     def visit_type_name(self):
-        """Gets the visit_type_name of this IncidentOrderAuthV2.
+        r"""Gets the visit_type_name of this IncidentOrderAuthV2.
 
         授权访问类型名称
 
@@ -342,7 +342,7 @@ class IncidentOrderAuthV2:
 
     @visit_type_name.setter
     def visit_type_name(self, visit_type_name):
-        """Sets the visit_type_name of this IncidentOrderAuthV2.
+        r"""Sets the visit_type_name of this IncidentOrderAuthV2.
 
         授权访问类型名称
 
@@ -353,7 +353,7 @@ class IncidentOrderAuthV2:
 
     @property
     def create_time(self):
-        """Gets the create_time of this IncidentOrderAuthV2.
+        r"""Gets the create_time of this IncidentOrderAuthV2.
 
         创建时间
 
@@ -364,7 +364,7 @@ class IncidentOrderAuthV2:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this IncidentOrderAuthV2.
+        r"""Sets the create_time of this IncidentOrderAuthV2.
 
         创建时间
 
@@ -375,7 +375,7 @@ class IncidentOrderAuthV2:
 
     @property
     def auth_effective_time(self):
-        """Gets the auth_effective_time of this IncidentOrderAuthV2.
+        r"""Gets the auth_effective_time of this IncidentOrderAuthV2.
 
         授权生效时间
 
@@ -386,7 +386,7 @@ class IncidentOrderAuthV2:
 
     @auth_effective_time.setter
     def auth_effective_time(self, auth_effective_time):
-        """Sets the auth_effective_time of this IncidentOrderAuthV2.
+        r"""Sets the auth_effective_time of this IncidentOrderAuthV2.
 
         授权生效时间
 
@@ -397,7 +397,7 @@ class IncidentOrderAuthV2:
 
     @property
     def auth_expire_time(self):
-        """Gets the auth_expire_time of this IncidentOrderAuthV2.
+        r"""Gets the auth_expire_time of this IncidentOrderAuthV2.
 
         授权到期时间
 
@@ -408,7 +408,7 @@ class IncidentOrderAuthV2:
 
     @auth_expire_time.setter
     def auth_expire_time(self, auth_expire_time):
-        """Sets the auth_expire_time of this IncidentOrderAuthV2.
+        r"""Sets the auth_expire_time of this IncidentOrderAuthV2.
 
         授权到期时间
 
@@ -419,7 +419,7 @@ class IncidentOrderAuthV2:
 
     @property
     def reject_reason(self):
-        """Gets the reject_reason of this IncidentOrderAuthV2.
+        r"""Gets the reject_reason of this IncidentOrderAuthV2.
 
         拒绝原因
 
@@ -430,7 +430,7 @@ class IncidentOrderAuthV2:
 
     @reject_reason.setter
     def reject_reason(self, reject_reason):
-        """Sets the reject_reason of this IncidentOrderAuthV2.
+        r"""Sets the reject_reason of this IncidentOrderAuthV2.
 
         拒绝原因
 
@@ -441,7 +441,7 @@ class IncidentOrderAuthV2:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this IncidentOrderAuthV2.
+        r"""Gets the customer_id of this IncidentOrderAuthV2.
 
         主账号id
 
@@ -452,7 +452,7 @@ class IncidentOrderAuthV2:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this IncidentOrderAuthV2.
+        r"""Sets the customer_id of this IncidentOrderAuthV2.
 
         主账号id
 
@@ -463,7 +463,7 @@ class IncidentOrderAuthV2:
 
     @property
     def x_customer_id(self):
-        """Gets the x_customer_id of this IncidentOrderAuthV2.
+        r"""Gets the x_customer_id of this IncidentOrderAuthV2.
 
         子用户id
 
@@ -474,7 +474,7 @@ class IncidentOrderAuthV2:
 
     @x_customer_id.setter
     def x_customer_id(self, x_customer_id):
-        """Sets the x_customer_id of this IncidentOrderAuthV2.
+        r"""Sets the x_customer_id of this IncidentOrderAuthV2.
 
         子用户id
 
@@ -485,7 +485,7 @@ class IncidentOrderAuthV2:
 
     @property
     def xcustomer_name(self):
-        """Gets the xcustomer_name of this IncidentOrderAuthV2.
+        r"""Gets the xcustomer_name of this IncidentOrderAuthV2.
 
         子用户名称
 
@@ -496,7 +496,7 @@ class IncidentOrderAuthV2:
 
     @xcustomer_name.setter
     def xcustomer_name(self, xcustomer_name):
-        """Sets the xcustomer_name of this IncidentOrderAuthV2.
+        r"""Sets the xcustomer_name of this IncidentOrderAuthV2.
 
         子用户名称
 
@@ -507,7 +507,7 @@ class IncidentOrderAuthV2:
 
     @property
     def content_of_auth_letter(self):
-        """Gets the content_of_auth_letter of this IncidentOrderAuthV2.
+        r"""Gets the content_of_auth_letter of this IncidentOrderAuthV2.
 
         承诺书内容
 
@@ -518,7 +518,7 @@ class IncidentOrderAuthV2:
 
     @content_of_auth_letter.setter
     def content_of_auth_letter(self, content_of_auth_letter):
-        """Sets the content_of_auth_letter of this IncidentOrderAuthV2.
+        r"""Sets the content_of_auth_letter of this IncidentOrderAuthV2.
 
         承诺书内容
 

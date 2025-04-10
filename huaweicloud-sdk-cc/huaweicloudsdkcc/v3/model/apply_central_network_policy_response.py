@@ -30,7 +30,7 @@ class ApplyCentralNetworkPolicyResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, central_network_policy=None, central_network_policy_change_set=None):
-        """ApplyCentralNetworkPolicyResponse
+        r"""ApplyCentralNetworkPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ApplyCentralNetworkPolicyResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ApplyCentralNetworkPolicyResponse.
+        r"""Gets the request_id of this ApplyCentralNetworkPolicyResponse.
 
         请求ID。
 
@@ -66,7 +66,7 @@ class ApplyCentralNetworkPolicyResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ApplyCentralNetworkPolicyResponse.
+        r"""Sets the request_id of this ApplyCentralNetworkPolicyResponse.
 
         请求ID。
 
@@ -77,7 +77,7 @@ class ApplyCentralNetworkPolicyResponse(SdkResponse):
 
     @property
     def central_network_policy(self):
-        """Gets the central_network_policy of this ApplyCentralNetworkPolicyResponse.
+        r"""Gets the central_network_policy of this ApplyCentralNetworkPolicyResponse.
 
         :return: The central_network_policy of this ApplyCentralNetworkPolicyResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicy`
@@ -86,7 +86,7 @@ class ApplyCentralNetworkPolicyResponse(SdkResponse):
 
     @central_network_policy.setter
     def central_network_policy(self, central_network_policy):
-        """Sets the central_network_policy of this ApplyCentralNetworkPolicyResponse.
+        r"""Sets the central_network_policy of this ApplyCentralNetworkPolicyResponse.
 
         :param central_network_policy: The central_network_policy of this ApplyCentralNetworkPolicyResponse.
         :type central_network_policy: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicy`
@@ -95,7 +95,7 @@ class ApplyCentralNetworkPolicyResponse(SdkResponse):
 
     @property
     def central_network_policy_change_set(self):
-        """Gets the central_network_policy_change_set of this ApplyCentralNetworkPolicyResponse.
+        r"""Gets the central_network_policy_change_set of this ApplyCentralNetworkPolicyResponse.
 
         网络策略变化列表。
 
@@ -106,7 +106,7 @@ class ApplyCentralNetworkPolicyResponse(SdkResponse):
 
     @central_network_policy_change_set.setter
     def central_network_policy_change_set(self, central_network_policy_change_set):
-        """Sets the central_network_policy_change_set of this ApplyCentralNetworkPolicyResponse.
+        r"""Sets the central_network_policy_change_set of this ApplyCentralNetworkPolicyResponse.
 
         网络策略变化列表。
 

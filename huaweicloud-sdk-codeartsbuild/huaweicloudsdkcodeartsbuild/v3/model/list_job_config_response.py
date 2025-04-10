@@ -30,7 +30,7 @@ class ListJobConfigResponse(SdkResponse):
     }
 
     def __init__(self, result=None, error=None, status=None):
-        """ListJobConfigResponse
+        r"""ListJobConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListJobConfigResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListJobConfigResponse.
+        r"""Gets the result of this ListJobConfigResponse.
 
         :return: The result of this ListJobConfigResponse.
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.CreateBuildJobRequestBody`
@@ -67,7 +67,7 @@ class ListJobConfigResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListJobConfigResponse.
+        r"""Sets the result of this ListJobConfigResponse.
 
         :param result: The result of this ListJobConfigResponse.
         :type result: :class:`huaweicloudsdkcodeartsbuild.v3.CreateBuildJobRequestBody`
@@ -76,7 +76,7 @@ class ListJobConfigResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListJobConfigResponse.
+        r"""Gets the error of this ListJobConfigResponse.
 
         返回错误信息
 
@@ -87,7 +87,7 @@ class ListJobConfigResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListJobConfigResponse.
+        r"""Sets the error of this ListJobConfigResponse.
 
         返回错误信息
 
@@ -98,7 +98,7 @@ class ListJobConfigResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListJobConfigResponse.
+        r"""Gets the status of this ListJobConfigResponse.
 
         返回状态信息
 
@@ -109,7 +109,7 @@ class ListJobConfigResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListJobConfigResponse.
+        r"""Sets the status of this ListJobConfigResponse.
 
         返回状态信息
 

@@ -27,7 +27,7 @@ class CreateTagRequest:
     }
 
     def __init__(self, fw_instance_id=None, body=None):
-        """CreateTagRequest
+        r"""CreateTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTagRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this CreateTagRequest.
+        r"""Gets the fw_instance_id of this CreateTagRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -60,7 +60,7 @@ class CreateTagRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this CreateTagRequest.
+        r"""Sets the fw_instance_id of this CreateTagRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -71,7 +71,7 @@ class CreateTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTagRequest.
+        r"""Gets the body of this CreateTagRequest.
 
         :return: The body of this CreateTagRequest.
         :rtype: :class:`huaweicloudsdkcfw.v1.CreateTagsDto`
@@ -80,7 +80,7 @@ class CreateTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTagRequest.
+        r"""Sets the body of this CreateTagRequest.
 
         :param body: The body of this CreateTagRequest.
         :type body: :class:`huaweicloudsdkcfw.v1.CreateTagsDto`

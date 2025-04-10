@@ -33,7 +33,7 @@ class DdosAttackLog:
     }
 
     def __init__(self, attack_time=None, avg_bps=None, avg_pps=None, max_bps=None, max_pps=None):
-        """DdosAttackLog
+        r"""DdosAttackLog
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DdosAttackLog:
 
     @property
     def attack_time(self):
-        """Gets the attack_time of this DdosAttackLog.
+        r"""Gets the attack_time of this DdosAttackLog.
 
         ddos攻击时间
 
@@ -82,7 +82,7 @@ class DdosAttackLog:
 
     @attack_time.setter
     def attack_time(self, attack_time):
-        """Sets the attack_time of this DdosAttackLog.
+        r"""Sets the attack_time of this DdosAttackLog.
 
         ddos攻击时间
 
@@ -93,7 +93,7 @@ class DdosAttackLog:
 
     @property
     def avg_bps(self):
-        """Gets the avg_bps of this DdosAttackLog.
+        r"""Gets the avg_bps of this DdosAttackLog.
 
         攻击流量带宽平均值
 
@@ -104,7 +104,7 @@ class DdosAttackLog:
 
     @avg_bps.setter
     def avg_bps(self, avg_bps):
-        """Sets the avg_bps of this DdosAttackLog.
+        r"""Sets the avg_bps of this DdosAttackLog.
 
         攻击流量带宽平均值
 
@@ -115,7 +115,7 @@ class DdosAttackLog:
 
     @property
     def avg_pps(self):
-        """Gets the avg_pps of this DdosAttackLog.
+        r"""Gets the avg_pps of this DdosAttackLog.
 
         攻击流量带宽峰值
 
@@ -126,7 +126,7 @@ class DdosAttackLog:
 
     @avg_pps.setter
     def avg_pps(self, avg_pps):
-        """Sets the avg_pps of this DdosAttackLog.
+        r"""Sets the avg_pps of this DdosAttackLog.
 
         攻击流量带宽峰值
 
@@ -137,7 +137,7 @@ class DdosAttackLog:
 
     @property
     def max_bps(self):
-        """Gets the max_bps of this DdosAttackLog.
+        r"""Gets the max_bps of this DdosAttackLog.
 
         包转发率平均值
 
@@ -148,7 +148,7 @@ class DdosAttackLog:
 
     @max_bps.setter
     def max_bps(self, max_bps):
-        """Sets the max_bps of this DdosAttackLog.
+        r"""Sets the max_bps of this DdosAttackLog.
 
         包转发率平均值
 
@@ -159,7 +159,7 @@ class DdosAttackLog:
 
     @property
     def max_pps(self):
-        """Gets the max_pps of this DdosAttackLog.
+        r"""Gets the max_pps of this DdosAttackLog.
 
         包转发率峰值
 
@@ -170,7 +170,7 @@ class DdosAttackLog:
 
     @max_pps.setter
     def max_pps(self, max_pps):
-        """Sets the max_pps of this DdosAttackLog.
+        r"""Sets the max_pps of this DdosAttackLog.
 
         包转发率峰值
 

@@ -27,7 +27,7 @@ class ShowKnowledgeSkillRequest:
     }
 
     def __init__(self, x_app_user_id=None, skill_id=None):
-        """ShowKnowledgeSkillRequest
+        r"""ShowKnowledgeSkillRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowKnowledgeSkillRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ShowKnowledgeSkillRequest.
+        r"""Gets the x_app_user_id of this ShowKnowledgeSkillRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -60,7 +60,7 @@ class ShowKnowledgeSkillRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ShowKnowledgeSkillRequest.
+        r"""Sets the x_app_user_id of this ShowKnowledgeSkillRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -71,7 +71,7 @@ class ShowKnowledgeSkillRequest:
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this ShowKnowledgeSkillRequest.
+        r"""Gets the skill_id of this ShowKnowledgeSkillRequest.
 
         技能ID。
 
@@ -82,7 +82,7 @@ class ShowKnowledgeSkillRequest:
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this ShowKnowledgeSkillRequest.
+        r"""Sets the skill_id of this ShowKnowledgeSkillRequest.
 
         技能ID。
 

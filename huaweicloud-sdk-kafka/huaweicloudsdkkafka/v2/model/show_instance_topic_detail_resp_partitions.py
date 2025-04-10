@@ -37,7 +37,7 @@ class ShowInstanceTopicDetailRespPartitions:
     }
 
     def __init__(self, partition=None, leader=None, leo=None, hw=None, lso=None, last_update_timestamp=None, replicas=None):
-        """ShowInstanceTopicDetailRespPartitions
+        r"""ShowInstanceTopicDetailRespPartitions
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ShowInstanceTopicDetailRespPartitions:
 
     @property
     def partition(self):
-        """Gets the partition of this ShowInstanceTopicDetailRespPartitions.
+        r"""Gets the partition of this ShowInstanceTopicDetailRespPartitions.
 
         分区ID。
 
@@ -96,7 +96,7 @@ class ShowInstanceTopicDetailRespPartitions:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ShowInstanceTopicDetailRespPartitions.
+        r"""Sets the partition of this ShowInstanceTopicDetailRespPartitions.
 
         分区ID。
 
@@ -107,7 +107,7 @@ class ShowInstanceTopicDetailRespPartitions:
 
     @property
     def leader(self):
-        """Gets the leader of this ShowInstanceTopicDetailRespPartitions.
+        r"""Gets the leader of this ShowInstanceTopicDetailRespPartitions.
 
         leader副本所在节点的id。
 
@@ -118,7 +118,7 @@ class ShowInstanceTopicDetailRespPartitions:
 
     @leader.setter
     def leader(self, leader):
-        """Sets the leader of this ShowInstanceTopicDetailRespPartitions.
+        r"""Sets the leader of this ShowInstanceTopicDetailRespPartitions.
 
         leader副本所在节点的id。
 
@@ -129,7 +129,7 @@ class ShowInstanceTopicDetailRespPartitions:
 
     @property
     def leo(self):
-        """Gets the leo of this ShowInstanceTopicDetailRespPartitions.
+        r"""Gets the leo of this ShowInstanceTopicDetailRespPartitions.
 
         分区leader副本的LEO（Log End Offset）。
 
@@ -140,7 +140,7 @@ class ShowInstanceTopicDetailRespPartitions:
 
     @leo.setter
     def leo(self, leo):
-        """Sets the leo of this ShowInstanceTopicDetailRespPartitions.
+        r"""Sets the leo of this ShowInstanceTopicDetailRespPartitions.
 
         分区leader副本的LEO（Log End Offset）。
 
@@ -151,7 +151,7 @@ class ShowInstanceTopicDetailRespPartitions:
 
     @property
     def hw(self):
-        """Gets the hw of this ShowInstanceTopicDetailRespPartitions.
+        r"""Gets the hw of this ShowInstanceTopicDetailRespPartitions.
 
         分区高水位（HW，High Watermark）。
 
@@ -162,7 +162,7 @@ class ShowInstanceTopicDetailRespPartitions:
 
     @hw.setter
     def hw(self, hw):
-        """Sets the hw of this ShowInstanceTopicDetailRespPartitions.
+        r"""Sets the hw of this ShowInstanceTopicDetailRespPartitions.
 
         分区高水位（HW，High Watermark）。
 
@@ -173,7 +173,7 @@ class ShowInstanceTopicDetailRespPartitions:
 
     @property
     def lso(self):
-        """Gets the lso of this ShowInstanceTopicDetailRespPartitions.
+        r"""Gets the lso of this ShowInstanceTopicDetailRespPartitions.
 
         分区leader副本的LSO（Log Start Offset）。
 
@@ -184,7 +184,7 @@ class ShowInstanceTopicDetailRespPartitions:
 
     @lso.setter
     def lso(self, lso):
-        """Sets the lso of this ShowInstanceTopicDetailRespPartitions.
+        r"""Sets the lso of this ShowInstanceTopicDetailRespPartitions.
 
         分区leader副本的LSO（Log Start Offset）。
 
@@ -195,7 +195,7 @@ class ShowInstanceTopicDetailRespPartitions:
 
     @property
     def last_update_timestamp(self):
-        """Gets the last_update_timestamp of this ShowInstanceTopicDetailRespPartitions.
+        r"""Gets the last_update_timestamp of this ShowInstanceTopicDetailRespPartitions.
 
         分区上次写入消息的时间。  格式为Unix时间戳。  单位：毫秒。
 
@@ -206,7 +206,7 @@ class ShowInstanceTopicDetailRespPartitions:
 
     @last_update_timestamp.setter
     def last_update_timestamp(self, last_update_timestamp):
-        """Sets the last_update_timestamp of this ShowInstanceTopicDetailRespPartitions.
+        r"""Sets the last_update_timestamp of this ShowInstanceTopicDetailRespPartitions.
 
         分区上次写入消息的时间。  格式为Unix时间戳。  单位：毫秒。
 
@@ -217,7 +217,7 @@ class ShowInstanceTopicDetailRespPartitions:
 
     @property
     def replicas(self):
-        """Gets the replicas of this ShowInstanceTopicDetailRespPartitions.
+        r"""Gets the replicas of this ShowInstanceTopicDetailRespPartitions.
 
         副本列表。
 
@@ -228,7 +228,7 @@ class ShowInstanceTopicDetailRespPartitions:
 
     @replicas.setter
     def replicas(self, replicas):
-        """Sets the replicas of this ShowInstanceTopicDetailRespPartitions.
+        r"""Sets the replicas of this ShowInstanceTopicDetailRespPartitions.
 
         副本列表。
 

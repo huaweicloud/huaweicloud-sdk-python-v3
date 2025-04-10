@@ -27,7 +27,7 @@ class NodeNicSpec:
     }
 
     def __init__(self, primary_nic=None, ext_nics=None):
-        """NodeNicSpec
+        r"""NodeNicSpec
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodeNicSpec:
 
     @property
     def primary_nic(self):
-        """Gets the primary_nic of this NodeNicSpec.
+        r"""Gets the primary_nic of this NodeNicSpec.
 
         :return: The primary_nic of this NodeNicSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.NicSpec`
@@ -59,7 +59,7 @@ class NodeNicSpec:
 
     @primary_nic.setter
     def primary_nic(self, primary_nic):
-        """Sets the primary_nic of this NodeNicSpec.
+        r"""Sets the primary_nic of this NodeNicSpec.
 
         :param primary_nic: The primary_nic of this NodeNicSpec.
         :type primary_nic: :class:`huaweicloudsdkcce.v3.NicSpec`
@@ -68,7 +68,7 @@ class NodeNicSpec:
 
     @property
     def ext_nics(self):
-        """Gets the ext_nics of this NodeNicSpec.
+        r"""Gets the ext_nics of this NodeNicSpec.
 
         扩展网卡 >创建节点池添加节点时不支持该参数。
 
@@ -79,7 +79,7 @@ class NodeNicSpec:
 
     @ext_nics.setter
     def ext_nics(self, ext_nics):
-        """Sets the ext_nics of this NodeNicSpec.
+        r"""Sets the ext_nics of this NodeNicSpec.
 
         扩展网卡 >创建节点池添加节点时不支持该参数。
 

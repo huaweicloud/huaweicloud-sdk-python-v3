@@ -25,7 +25,7 @@ class CancelExtractAudioTaskRequest:
     }
 
     def __init__(self, asset_id=None):
-        """CancelExtractAudioTaskRequest
+        r"""CancelExtractAudioTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CancelExtractAudioTaskRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this CancelExtractAudioTaskRequest.
+        r"""Gets the asset_id of this CancelExtractAudioTaskRequest.
 
         媒资ID。
 
@@ -53,7 +53,7 @@ class CancelExtractAudioTaskRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this CancelExtractAudioTaskRequest.
+        r"""Sets the asset_id of this CancelExtractAudioTaskRequest.
 
         媒资ID。
 

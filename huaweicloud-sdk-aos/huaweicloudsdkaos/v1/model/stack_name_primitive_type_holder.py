@@ -25,7 +25,7 @@ class StackNamePrimitiveTypeHolder:
     }
 
     def __init__(self, stack_name=None):
-        """StackNamePrimitiveTypeHolder
+        r"""StackNamePrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StackNamePrimitiveTypeHolder:
 
     @property
     def stack_name(self):
-        """Gets the stack_name of this StackNamePrimitiveTypeHolder.
+        r"""Gets the stack_name of this StackNamePrimitiveTypeHolder.
 
         资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -53,7 +53,7 @@ class StackNamePrimitiveTypeHolder:
 
     @stack_name.setter
     def stack_name(self, stack_name):
-        """Sets the stack_name of this StackNamePrimitiveTypeHolder.
+        r"""Sets the stack_name of this StackNamePrimitiveTypeHolder.
 
         资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 

@@ -25,7 +25,7 @@ class OrderExtendParam:
     }
 
     def __init__(self, is_auto_pay=None):
-        """OrderExtendParam
+        r"""OrderExtendParam
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class OrderExtendParam:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this OrderExtendParam.
+        r"""Gets the is_auto_pay of this OrderExtendParam.
 
         是否自动付款。true:自动支付; false：不自动支付;默认false
 
@@ -54,7 +54,7 @@ class OrderExtendParam:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this OrderExtendParam.
+        r"""Sets the is_auto_pay of this OrderExtendParam.
 
         是否自动付款。true:自动支付; false：不自动支付;默认false
 

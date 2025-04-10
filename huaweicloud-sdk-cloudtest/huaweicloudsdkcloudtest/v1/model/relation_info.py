@@ -37,7 +37,7 @@ class RelationInfo:
     }
 
     def __init__(self, dr_number=None, test_case_uri=None, relate_type=None, resource_type=None, source_system=None, association_number=None, region=None):
-        """RelationInfo
+        r"""RelationInfo
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class RelationInfo:
 
     @property
     def dr_number(self):
-        """Gets the dr_number of this RelationInfo.
+        r"""Gets the dr_number of this RelationInfo.
 
         需求id
 
@@ -94,7 +94,7 @@ class RelationInfo:
 
     @dr_number.setter
     def dr_number(self, dr_number):
-        """Sets the dr_number of this RelationInfo.
+        r"""Sets the dr_number of this RelationInfo.
 
         需求id
 
@@ -105,7 +105,7 @@ class RelationInfo:
 
     @property
     def test_case_uri(self):
-        """Gets the test_case_uri of this RelationInfo.
+        r"""Gets the test_case_uri of this RelationInfo.
 
         用例uri
 
@@ -116,7 +116,7 @@ class RelationInfo:
 
     @test_case_uri.setter
     def test_case_uri(self, test_case_uri):
-        """Sets the test_case_uri of this RelationInfo.
+        r"""Sets the test_case_uri of this RelationInfo.
 
         用例uri
 
@@ -127,7 +127,7 @@ class RelationInfo:
 
     @property
     def relate_type(self):
-        """Gets the relate_type of this RelationInfo.
+        r"""Gets the relate_type of this RelationInfo.
 
         资源类型
 
@@ -138,7 +138,7 @@ class RelationInfo:
 
     @relate_type.setter
     def relate_type(self, relate_type):
-        """Sets the relate_type of this RelationInfo.
+        r"""Sets the relate_type of this RelationInfo.
 
         资源类型
 
@@ -149,7 +149,7 @@ class RelationInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this RelationInfo.
+        r"""Gets the resource_type of this RelationInfo.
 
         资源类型
 
@@ -160,7 +160,7 @@ class RelationInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this RelationInfo.
+        r"""Sets the resource_type of this RelationInfo.
 
         资源类型
 
@@ -171,7 +171,7 @@ class RelationInfo:
 
     @property
     def source_system(self):
-        """Gets the source_system of this RelationInfo.
+        r"""Gets the source_system of this RelationInfo.
 
         来源系统
 
@@ -182,7 +182,7 @@ class RelationInfo:
 
     @source_system.setter
     def source_system(self, source_system):
-        """Sets the source_system of this RelationInfo.
+        r"""Sets the source_system of this RelationInfo.
 
         来源系统
 
@@ -193,7 +193,7 @@ class RelationInfo:
 
     @property
     def association_number(self):
-        """Gets the association_number of this RelationInfo.
+        r"""Gets the association_number of this RelationInfo.
 
         关联资源编号
 
@@ -204,7 +204,7 @@ class RelationInfo:
 
     @association_number.setter
     def association_number(self, association_number):
-        """Sets the association_number of this RelationInfo.
+        r"""Sets the association_number of this RelationInfo.
 
         关联资源编号
 
@@ -215,7 +215,7 @@ class RelationInfo:
 
     @property
     def region(self):
-        """Gets the region of this RelationInfo.
+        r"""Gets the region of this RelationInfo.
 
         逻辑region，外部使用公有云实际区域，内部使用默认值
 
@@ -226,7 +226,7 @@ class RelationInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this RelationInfo.
+        r"""Sets the region of this RelationInfo.
 
         逻辑region，外部使用公有云实际区域，内部使用默认值
 

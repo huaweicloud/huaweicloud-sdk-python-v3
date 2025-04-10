@@ -29,7 +29,7 @@ class ModifyPublicIpRequestBody:
     }
 
     def __init__(self, action=None, public_ip=None, public_ip_id=None):
-        """ModifyPublicIpRequestBody
+        r"""ModifyPublicIpRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ModifyPublicIpRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this ModifyPublicIpRequestBody.
+        r"""Gets the action of this ModifyPublicIpRequestBody.
 
         操作标识。取值： - BIND，表示绑定弹性公网IP。 - UNBIND，表示解绑弹性公网IP。
 
@@ -67,7 +67,7 @@ class ModifyPublicIpRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ModifyPublicIpRequestBody.
+        r"""Sets the action of this ModifyPublicIpRequestBody.
 
         操作标识。取值： - BIND，表示绑定弹性公网IP。 - UNBIND，表示解绑弹性公网IP。
 
@@ -78,7 +78,7 @@ class ModifyPublicIpRequestBody:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ModifyPublicIpRequestBody.
+        r"""Gets the public_ip of this ModifyPublicIpRequestBody.
 
         弹性公网IP。
 
@@ -89,7 +89,7 @@ class ModifyPublicIpRequestBody:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ModifyPublicIpRequestBody.
+        r"""Sets the public_ip of this ModifyPublicIpRequestBody.
 
         弹性公网IP。
 
@@ -100,7 +100,7 @@ class ModifyPublicIpRequestBody:
 
     @property
     def public_ip_id(self):
-        """Gets the public_ip_id of this ModifyPublicIpRequestBody.
+        r"""Gets the public_ip_id of this ModifyPublicIpRequestBody.
 
         弹性公网IP的ID。
 
@@ -111,7 +111,7 @@ class ModifyPublicIpRequestBody:
 
     @public_ip_id.setter
     def public_ip_id(self, public_ip_id):
-        """Sets the public_ip_id of this ModifyPublicIpRequestBody.
+        r"""Sets the public_ip_id of this ModifyPublicIpRequestBody.
 
         弹性公网IP的ID。
 

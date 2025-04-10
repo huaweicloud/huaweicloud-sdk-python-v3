@@ -25,7 +25,7 @@ class CloseKafkaManagerRequest:
     }
 
     def __init__(self, instance_id=None):
-        """CloseKafkaManagerRequest
+        r"""CloseKafkaManagerRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CloseKafkaManagerRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CloseKafkaManagerRequest.
+        r"""Gets the instance_id of this CloseKafkaManagerRequest.
 
         实例id
 
@@ -53,7 +53,7 @@ class CloseKafkaManagerRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CloseKafkaManagerRequest.
+        r"""Sets the instance_id of this CloseKafkaManagerRequest.
 
         实例id
 

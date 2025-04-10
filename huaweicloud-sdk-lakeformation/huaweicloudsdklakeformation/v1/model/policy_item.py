@@ -35,7 +35,7 @@ class PolicyItem:
     }
 
     def __init__(self, accesses=None, conditions=None, delegate_admin=None, groups=None, roles=None, users=None):
-        """PolicyItem
+        r"""PolicyItem
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PolicyItem:
 
     @property
     def accesses(self):
-        """Gets the accesses of this PolicyItem.
+        r"""Gets the accesses of this PolicyItem.
 
         访问控制数据
 
@@ -89,7 +89,7 @@ class PolicyItem:
 
     @accesses.setter
     def accesses(self, accesses):
-        """Sets the accesses of this PolicyItem.
+        r"""Sets the accesses of this PolicyItem.
 
         访问控制数据
 
@@ -100,7 +100,7 @@ class PolicyItem:
 
     @property
     def conditions(self):
-        """Gets the conditions of this PolicyItem.
+        r"""Gets the conditions of this PolicyItem.
 
         条件
 
@@ -111,7 +111,7 @@ class PolicyItem:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this PolicyItem.
+        r"""Sets the conditions of this PolicyItem.
 
         条件
 
@@ -122,7 +122,7 @@ class PolicyItem:
 
     @property
     def delegate_admin(self):
-        """Gets the delegate_admin of this PolicyItem.
+        r"""Gets the delegate_admin of this PolicyItem.
 
         是否传递
 
@@ -133,7 +133,7 @@ class PolicyItem:
 
     @delegate_admin.setter
     def delegate_admin(self, delegate_admin):
-        """Sets the delegate_admin of this PolicyItem.
+        r"""Sets the delegate_admin of this PolicyItem.
 
         是否传递
 
@@ -144,7 +144,7 @@ class PolicyItem:
 
     @property
     def groups(self):
-        """Gets the groups of this PolicyItem.
+        r"""Gets the groups of this PolicyItem.
 
         组
 
@@ -155,7 +155,7 @@ class PolicyItem:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this PolicyItem.
+        r"""Sets the groups of this PolicyItem.
 
         组
 
@@ -166,7 +166,7 @@ class PolicyItem:
 
     @property
     def roles(self):
-        """Gets the roles of this PolicyItem.
+        r"""Gets the roles of this PolicyItem.
 
         角色
 
@@ -177,7 +177,7 @@ class PolicyItem:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this PolicyItem.
+        r"""Sets the roles of this PolicyItem.
 
         角色
 
@@ -188,7 +188,7 @@ class PolicyItem:
 
     @property
     def users(self):
-        """Gets the users of this PolicyItem.
+        r"""Gets the users of this PolicyItem.
 
         用户
 
@@ -199,7 +199,7 @@ class PolicyItem:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this PolicyItem.
+        r"""Sets the users of this PolicyItem.
 
         用户
 

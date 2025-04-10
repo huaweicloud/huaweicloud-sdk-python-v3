@@ -32,7 +32,7 @@ class ListGlobalEipFilterTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None, request_id=None, x_request_id=None):
-        """ListGlobalEipFilterTagsResponse
+        r"""ListGlobalEipFilterTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListGlobalEipFilterTagsResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListGlobalEipFilterTagsResponse.
+        r"""Gets the resources of this ListGlobalEipFilterTagsResponse.
 
         资源列表
 
@@ -76,7 +76,7 @@ class ListGlobalEipFilterTagsResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListGlobalEipFilterTagsResponse.
+        r"""Sets the resources of this ListGlobalEipFilterTagsResponse.
 
         资源列表
 
@@ -87,7 +87,7 @@ class ListGlobalEipFilterTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListGlobalEipFilterTagsResponse.
+        r"""Gets the total_count of this ListGlobalEipFilterTagsResponse.
 
         当前列表中资源数量。
 
@@ -98,7 +98,7 @@ class ListGlobalEipFilterTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListGlobalEipFilterTagsResponse.
+        r"""Sets the total_count of this ListGlobalEipFilterTagsResponse.
 
         当前列表中资源数量。
 
@@ -109,7 +109,7 @@ class ListGlobalEipFilterTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGlobalEipFilterTagsResponse.
+        r"""Gets the request_id of this ListGlobalEipFilterTagsResponse.
 
         本次请求的编号
 
@@ -120,7 +120,7 @@ class ListGlobalEipFilterTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGlobalEipFilterTagsResponse.
+        r"""Sets the request_id of this ListGlobalEipFilterTagsResponse.
 
         本次请求的编号
 
@@ -131,7 +131,7 @@ class ListGlobalEipFilterTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListGlobalEipFilterTagsResponse.
+        r"""Gets the x_request_id of this ListGlobalEipFilterTagsResponse.
 
         :return: The x_request_id of this ListGlobalEipFilterTagsResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class ListGlobalEipFilterTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListGlobalEipFilterTagsResponse.
+        r"""Sets the x_request_id of this ListGlobalEipFilterTagsResponse.
 
         :param x_request_id: The x_request_id of this ListGlobalEipFilterTagsResponse.
         :type x_request_id: str

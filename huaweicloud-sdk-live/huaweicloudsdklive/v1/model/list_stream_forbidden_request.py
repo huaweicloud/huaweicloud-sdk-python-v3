@@ -33,7 +33,7 @@ class ListStreamForbiddenRequest:
     }
 
     def __init__(self, domain=None, app_name=None, stream_name=None, page=None, size=None):
-        """ListStreamForbiddenRequest
+        r"""ListStreamForbiddenRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListStreamForbiddenRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ListStreamForbiddenRequest.
+        r"""Gets the domain of this ListStreamForbiddenRequest.
 
         推流域名
 
@@ -81,7 +81,7 @@ class ListStreamForbiddenRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListStreamForbiddenRequest.
+        r"""Sets the domain of this ListStreamForbiddenRequest.
 
         推流域名
 
@@ -92,7 +92,7 @@ class ListStreamForbiddenRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListStreamForbiddenRequest.
+        r"""Gets the app_name of this ListStreamForbiddenRequest.
 
         应用名称，不指定则查询domain下所有应用的禁止直播推流信息
 
@@ -103,7 +103,7 @@ class ListStreamForbiddenRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListStreamForbiddenRequest.
+        r"""Sets the app_name of this ListStreamForbiddenRequest.
 
         应用名称，不指定则查询domain下所有应用的禁止直播推流信息
 
@@ -114,7 +114,7 @@ class ListStreamForbiddenRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this ListStreamForbiddenRequest.
+        r"""Gets the stream_name of this ListStreamForbiddenRequest.
 
         流名称
 
@@ -125,7 +125,7 @@ class ListStreamForbiddenRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this ListStreamForbiddenRequest.
+        r"""Sets the stream_name of this ListStreamForbiddenRequest.
 
         流名称
 
@@ -136,7 +136,7 @@ class ListStreamForbiddenRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListStreamForbiddenRequest.
+        r"""Gets the page of this ListStreamForbiddenRequest.
 
         分页编号。 默认为0。 
 
@@ -147,7 +147,7 @@ class ListStreamForbiddenRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListStreamForbiddenRequest.
+        r"""Sets the page of this ListStreamForbiddenRequest.
 
         分页编号。 默认为0。 
 
@@ -158,7 +158,7 @@ class ListStreamForbiddenRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListStreamForbiddenRequest.
+        r"""Gets the size of this ListStreamForbiddenRequest.
 
         每页记录数。  取值范围：1-100。  默认为10。 
 
@@ -169,7 +169,7 @@ class ListStreamForbiddenRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListStreamForbiddenRequest.
+        r"""Sets the size of this ListStreamForbiddenRequest.
 
         每页记录数。  取值范围：1-100。  默认为10。 
 

@@ -39,7 +39,7 @@ class PacifyWordsInfo:
     }
 
     def __init__(self, pacify_words_id=None, pacify_words=None, language=None, robot_id=None, pacify_words_type=None, intent=None, create_time=None, update_time=None):
-        """PacifyWordsInfo
+        r"""PacifyWordsInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class PacifyWordsInfo:
 
     @property
     def pacify_words_id(self):
-        """Gets the pacify_words_id of this PacifyWordsInfo.
+        r"""Gets the pacify_words_id of this PacifyWordsInfo.
 
         安抚话术ID。
 
@@ -103,7 +103,7 @@ class PacifyWordsInfo:
 
     @pacify_words_id.setter
     def pacify_words_id(self, pacify_words_id):
-        """Sets the pacify_words_id of this PacifyWordsInfo.
+        r"""Sets the pacify_words_id of this PacifyWordsInfo.
 
         安抚话术ID。
 
@@ -114,7 +114,7 @@ class PacifyWordsInfo:
 
     @property
     def pacify_words(self):
-        """Gets the pacify_words of this PacifyWordsInfo.
+        r"""Gets the pacify_words of this PacifyWordsInfo.
 
         安抚话术。
 
@@ -125,7 +125,7 @@ class PacifyWordsInfo:
 
     @pacify_words.setter
     def pacify_words(self, pacify_words):
-        """Sets the pacify_words of this PacifyWordsInfo.
+        r"""Sets the pacify_words of this PacifyWordsInfo.
 
         安抚话术。
 
@@ -136,7 +136,7 @@ class PacifyWordsInfo:
 
     @property
     def language(self):
-        """Gets the language of this PacifyWordsInfo.
+        r"""Gets the language of this PacifyWordsInfo.
 
         :return: The language of this PacifyWordsInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -145,7 +145,7 @@ class PacifyWordsInfo:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this PacifyWordsInfo.
+        r"""Sets the language of this PacifyWordsInfo.
 
         :param language: The language of this PacifyWordsInfo.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -154,7 +154,7 @@ class PacifyWordsInfo:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this PacifyWordsInfo.
+        r"""Gets the robot_id of this PacifyWordsInfo.
 
         应用ID。
 
@@ -165,7 +165,7 @@ class PacifyWordsInfo:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this PacifyWordsInfo.
+        r"""Sets the robot_id of this PacifyWordsInfo.
 
         应用ID。
 
@@ -176,7 +176,7 @@ class PacifyWordsInfo:
 
     @property
     def pacify_words_type(self):
-        """Gets the pacify_words_type of this PacifyWordsInfo.
+        r"""Gets the pacify_words_type of this PacifyWordsInfo.
 
         安抚话术类型 > 0:通用安抚话术, 1:基于意图匹配安抚话术
 
@@ -187,7 +187,7 @@ class PacifyWordsInfo:
 
     @pacify_words_type.setter
     def pacify_words_type(self, pacify_words_type):
-        """Sets the pacify_words_type of this PacifyWordsInfo.
+        r"""Sets the pacify_words_type of this PacifyWordsInfo.
 
         安抚话术类型 > 0:通用安抚话术, 1:基于意图匹配安抚话术
 
@@ -198,7 +198,7 @@ class PacifyWordsInfo:
 
     @property
     def intent(self):
-        """Gets the intent of this PacifyWordsInfo.
+        r"""Gets the intent of this PacifyWordsInfo.
 
         意图名称
 
@@ -209,7 +209,7 @@ class PacifyWordsInfo:
 
     @intent.setter
     def intent(self, intent):
-        """Sets the intent of this PacifyWordsInfo.
+        r"""Sets the intent of this PacifyWordsInfo.
 
         意图名称
 
@@ -220,7 +220,7 @@ class PacifyWordsInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PacifyWordsInfo.
+        r"""Gets the create_time of this PacifyWordsInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -231,7 +231,7 @@ class PacifyWordsInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PacifyWordsInfo.
+        r"""Sets the create_time of this PacifyWordsInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -242,7 +242,7 @@ class PacifyWordsInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PacifyWordsInfo.
+        r"""Gets the update_time of this PacifyWordsInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -253,7 +253,7 @@ class PacifyWordsInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PacifyWordsInfo.
+        r"""Sets the update_time of this PacifyWordsInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 

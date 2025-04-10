@@ -29,7 +29,7 @@ class SeverityV2Do:
     }
 
     def __init__(self, language=None, severity_name=None, severity_id=None):
-        """SeverityV2Do
+        r"""SeverityV2Do
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SeverityV2Do:
 
     @property
     def language(self):
-        """Gets the language of this SeverityV2Do.
+        r"""Gets the language of this SeverityV2Do.
 
         语言
 
@@ -68,7 +68,7 @@ class SeverityV2Do:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this SeverityV2Do.
+        r"""Sets the language of this SeverityV2Do.
 
         语言
 
@@ -79,7 +79,7 @@ class SeverityV2Do:
 
     @property
     def severity_name(self):
-        """Gets the severity_name of this SeverityV2Do.
+        r"""Gets the severity_name of this SeverityV2Do.
 
         严重性名称
 
@@ -90,7 +90,7 @@ class SeverityV2Do:
 
     @severity_name.setter
     def severity_name(self, severity_name):
-        """Sets the severity_name of this SeverityV2Do.
+        r"""Sets the severity_name of this SeverityV2Do.
 
         严重性名称
 
@@ -101,7 +101,7 @@ class SeverityV2Do:
 
     @property
     def severity_id(self):
-        """Gets the severity_id of this SeverityV2Do.
+        r"""Gets the severity_id of this SeverityV2Do.
 
         严重性id
 
@@ -112,7 +112,7 @@ class SeverityV2Do:
 
     @severity_id.setter
     def severity_id(self, severity_id):
-        """Sets the severity_id of this SeverityV2Do.
+        r"""Sets the severity_id of this SeverityV2Do.
 
         严重性id
 

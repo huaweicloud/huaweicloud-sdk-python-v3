@@ -53,7 +53,7 @@ class BaseResourceEntity:
     }
 
     def __init__(self, id=None, name=None, provider=None, type=None, region_id=None, project_id=None, project_name=None, ep_id=None, ep_name=None, checksum=None, created=None, updated=None, provisioning_state=None, tags=None, properties=None):
-        """BaseResourceEntity
+        r"""BaseResourceEntity
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class BaseResourceEntity:
 
     @property
     def id(self):
-        """Gets the id of this BaseResourceEntity.
+        r"""Gets the id of this BaseResourceEntity.
 
         资源id
 
@@ -152,7 +152,7 @@ class BaseResourceEntity:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BaseResourceEntity.
+        r"""Sets the id of this BaseResourceEntity.
 
         资源id
 
@@ -163,7 +163,7 @@ class BaseResourceEntity:
 
     @property
     def name(self):
-        """Gets the name of this BaseResourceEntity.
+        r"""Gets the name of this BaseResourceEntity.
 
         资源名称
 
@@ -174,7 +174,7 @@ class BaseResourceEntity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BaseResourceEntity.
+        r"""Sets the name of this BaseResourceEntity.
 
         资源名称
 
@@ -185,7 +185,7 @@ class BaseResourceEntity:
 
     @property
     def provider(self):
-        """Gets the provider of this BaseResourceEntity.
+        r"""Gets the provider of this BaseResourceEntity.
 
         云服务名称
 
@@ -196,7 +196,7 @@ class BaseResourceEntity:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this BaseResourceEntity.
+        r"""Sets the provider of this BaseResourceEntity.
 
         云服务名称
 
@@ -207,7 +207,7 @@ class BaseResourceEntity:
 
     @property
     def type(self):
-        """Gets the type of this BaseResourceEntity.
+        r"""Gets the type of this BaseResourceEntity.
 
         资源类型
 
@@ -218,7 +218,7 @@ class BaseResourceEntity:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BaseResourceEntity.
+        r"""Sets the type of this BaseResourceEntity.
 
         资源类型
 
@@ -229,7 +229,7 @@ class BaseResourceEntity:
 
     @property
     def region_id(self):
-        """Gets the region_id of this BaseResourceEntity.
+        r"""Gets the region_id of this BaseResourceEntity.
 
         区域id
 
@@ -240,7 +240,7 @@ class BaseResourceEntity:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this BaseResourceEntity.
+        r"""Sets the region_id of this BaseResourceEntity.
 
         区域id
 
@@ -251,7 +251,7 @@ class BaseResourceEntity:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BaseResourceEntity.
+        r"""Gets the project_id of this BaseResourceEntity.
 
         Openstack中的项目id
 
@@ -262,7 +262,7 @@ class BaseResourceEntity:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BaseResourceEntity.
+        r"""Sets the project_id of this BaseResourceEntity.
 
         Openstack中的项目id
 
@@ -273,7 +273,7 @@ class BaseResourceEntity:
 
     @property
     def project_name(self):
-        """Gets the project_name of this BaseResourceEntity.
+        r"""Gets the project_name of this BaseResourceEntity.
 
         Openstack中的项目名称
 
@@ -284,7 +284,7 @@ class BaseResourceEntity:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this BaseResourceEntity.
+        r"""Sets the project_name of this BaseResourceEntity.
 
         Openstack中的项目名称
 
@@ -295,7 +295,7 @@ class BaseResourceEntity:
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this BaseResourceEntity.
+        r"""Gets the ep_id of this BaseResourceEntity.
 
         企业项目id
 
@@ -306,7 +306,7 @@ class BaseResourceEntity:
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this BaseResourceEntity.
+        r"""Sets the ep_id of this BaseResourceEntity.
 
         企业项目id
 
@@ -317,7 +317,7 @@ class BaseResourceEntity:
 
     @property
     def ep_name(self):
-        """Gets the ep_name of this BaseResourceEntity.
+        r"""Gets the ep_name of this BaseResourceEntity.
 
         企业项目名称
 
@@ -328,7 +328,7 @@ class BaseResourceEntity:
 
     @ep_name.setter
     def ep_name(self, ep_name):
-        """Sets the ep_name of this BaseResourceEntity.
+        r"""Sets the ep_name of this BaseResourceEntity.
 
         企业项目名称
 
@@ -339,7 +339,7 @@ class BaseResourceEntity:
 
     @property
     def checksum(self):
-        """Gets the checksum of this BaseResourceEntity.
+        r"""Gets the checksum of this BaseResourceEntity.
 
         资源详情校验码
 
@@ -350,7 +350,7 @@ class BaseResourceEntity:
 
     @checksum.setter
     def checksum(self, checksum):
-        """Sets the checksum of this BaseResourceEntity.
+        r"""Sets the checksum of this BaseResourceEntity.
 
         资源详情校验码
 
@@ -361,7 +361,7 @@ class BaseResourceEntity:
 
     @property
     def created(self):
-        """Gets the created of this BaseResourceEntity.
+        r"""Gets the created of this BaseResourceEntity.
 
         资源创建时间
 
@@ -372,7 +372,7 @@ class BaseResourceEntity:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this BaseResourceEntity.
+        r"""Sets the created of this BaseResourceEntity.
 
         资源创建时间
 
@@ -383,7 +383,7 @@ class BaseResourceEntity:
 
     @property
     def updated(self):
-        """Gets the updated of this BaseResourceEntity.
+        r"""Gets the updated of this BaseResourceEntity.
 
         资源更新时间
 
@@ -394,7 +394,7 @@ class BaseResourceEntity:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this BaseResourceEntity.
+        r"""Sets the updated of this BaseResourceEntity.
 
         资源更新时间
 
@@ -405,7 +405,7 @@ class BaseResourceEntity:
 
     @property
     def provisioning_state(self):
-        """Gets the provisioning_state of this BaseResourceEntity.
+        r"""Gets the provisioning_state of this BaseResourceEntity.
 
         资源操作状态
 
@@ -416,7 +416,7 @@ class BaseResourceEntity:
 
     @provisioning_state.setter
     def provisioning_state(self, provisioning_state):
-        """Sets the provisioning_state of this BaseResourceEntity.
+        r"""Sets the provisioning_state of this BaseResourceEntity.
 
         资源操作状态
 
@@ -427,7 +427,7 @@ class BaseResourceEntity:
 
     @property
     def tags(self):
-        """Gets the tags of this BaseResourceEntity.
+        r"""Gets the tags of this BaseResourceEntity.
 
         资源Tag
 
@@ -438,7 +438,7 @@ class BaseResourceEntity:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BaseResourceEntity.
+        r"""Sets the tags of this BaseResourceEntity.
 
         资源Tag
 
@@ -449,7 +449,7 @@ class BaseResourceEntity:
 
     @property
     def properties(self):
-        """Gets the properties of this BaseResourceEntity.
+        r"""Gets the properties of this BaseResourceEntity.
 
         资源详细属性
 
@@ -460,7 +460,7 @@ class BaseResourceEntity:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this BaseResourceEntity.
+        r"""Sets the properties of this BaseResourceEntity.
 
         资源详细属性
 

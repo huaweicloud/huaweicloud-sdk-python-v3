@@ -30,7 +30,7 @@ class ListComponentInstancesResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, items=None):
-        """ListComponentInstancesResponse
+        r"""ListComponentInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListComponentInstancesResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListComponentInstancesResponse.
+        r"""Gets the api_version of this ListComponentInstancesResponse.
 
         :return: The api_version of this ListComponentInstancesResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class ListComponentInstancesResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListComponentInstancesResponse.
+        r"""Sets the api_version of this ListComponentInstancesResponse.
 
         :param api_version: The api_version of this ListComponentInstancesResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class ListComponentInstancesResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListComponentInstancesResponse.
+        r"""Gets the kind of this ListComponentInstancesResponse.
 
         :return: The kind of this ListComponentInstancesResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ComponentConfigurationKindObj`
@@ -85,7 +85,7 @@ class ListComponentInstancesResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListComponentInstancesResponse.
+        r"""Sets the kind of this ListComponentInstancesResponse.
 
         :param kind: The kind of this ListComponentInstancesResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.ComponentConfigurationKindObj`
@@ -94,7 +94,7 @@ class ListComponentInstancesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListComponentInstancesResponse.
+        r"""Gets the items of this ListComponentInstancesResponse.
 
         组件实例列表。
 
@@ -105,7 +105,7 @@ class ListComponentInstancesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListComponentInstancesResponse.
+        r"""Sets the items of this ListComponentInstancesResponse.
 
         组件实例列表。
 

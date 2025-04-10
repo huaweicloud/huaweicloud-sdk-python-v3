@@ -25,7 +25,7 @@ class CreateWarehouseAppRequest:
     }
 
     def __init__(self, body=None):
-        """CreateWarehouseAppRequest
+        r"""CreateWarehouseAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateWarehouseAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateWarehouseAppRequest.
+        r"""Gets the body of this CreateWarehouseAppRequest.
 
         :return: The body of this CreateWarehouseAppRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateWarehouseAppReq`
@@ -52,7 +52,7 @@ class CreateWarehouseAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateWarehouseAppRequest.
+        r"""Sets the body of this CreateWarehouseAppRequest.
 
         :param body: The body of this CreateWarehouseAppRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.CreateWarehouseAppReq`

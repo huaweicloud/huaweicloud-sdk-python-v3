@@ -29,7 +29,7 @@ class UpdateEquipmentEsnRequest:
     }
 
     def __init__(self, ieg_id=None, equipment_id=None, body=None):
-        """UpdateEquipmentEsnRequest
+        r"""UpdateEquipmentEsnRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEquipmentEsnRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this UpdateEquipmentEsnRequest.
+        r"""Gets the ieg_id of this UpdateEquipmentEsnRequest.
 
         智能企业网关ID
 
@@ -66,7 +66,7 @@ class UpdateEquipmentEsnRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this UpdateEquipmentEsnRequest.
+        r"""Sets the ieg_id of this UpdateEquipmentEsnRequest.
 
         智能企业网关ID
 
@@ -77,7 +77,7 @@ class UpdateEquipmentEsnRequest:
 
     @property
     def equipment_id(self):
-        """Gets the equipment_id of this UpdateEquipmentEsnRequest.
+        r"""Gets the equipment_id of this UpdateEquipmentEsnRequest.
 
         智能企业网关设备ID
 
@@ -88,7 +88,7 @@ class UpdateEquipmentEsnRequest:
 
     @equipment_id.setter
     def equipment_id(self, equipment_id):
-        """Sets the equipment_id of this UpdateEquipmentEsnRequest.
+        r"""Sets the equipment_id of this UpdateEquipmentEsnRequest.
 
         智能企业网关设备ID
 
@@ -99,7 +99,7 @@ class UpdateEquipmentEsnRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEquipmentEsnRequest.
+        r"""Gets the body of this UpdateEquipmentEsnRequest.
 
         :return: The body of this UpdateEquipmentEsnRequest.
         :rtype: :class:`huaweicloudsdkec.v1.EquipmentEsn`
@@ -108,7 +108,7 @@ class UpdateEquipmentEsnRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEquipmentEsnRequest.
+        r"""Sets the body of this UpdateEquipmentEsnRequest.
 
         :param body: The body of this UpdateEquipmentEsnRequest.
         :type body: :class:`huaweicloudsdkec.v1.EquipmentEsn`

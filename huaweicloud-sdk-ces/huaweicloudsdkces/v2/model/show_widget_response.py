@@ -46,7 +46,7 @@ class ShowWidgetResponse(SdkResponse):
     }
 
     def __init__(self, widget_id=None, metrics=None, title=None, threshold=None, threshold_enabled=None, view=None, metric_display_mode=None, properties=None, location=None, unit=None, create_time=None):
-        """ShowWidgetResponse
+        r"""ShowWidgetResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @property
     def widget_id(self):
-        """Gets the widget_id of this ShowWidgetResponse.
+        r"""Gets the widget_id of this ShowWidgetResponse.
 
         视图id
 
@@ -125,7 +125,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @widget_id.setter
     def widget_id(self, widget_id):
-        """Sets the widget_id of this ShowWidgetResponse.
+        r"""Sets the widget_id of this ShowWidgetResponse.
 
         视图id
 
@@ -136,7 +136,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @property
     def metrics(self):
-        """Gets the metrics of this ShowWidgetResponse.
+        r"""Gets the metrics of this ShowWidgetResponse.
 
         指标列表
 
@@ -147,7 +147,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ShowWidgetResponse.
+        r"""Sets the metrics of this ShowWidgetResponse.
 
         指标列表
 
@@ -158,7 +158,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @property
     def title(self):
-        """Gets the title of this ShowWidgetResponse.
+        r"""Gets the title of this ShowWidgetResponse.
 
         监控视图标题
 
@@ -169,7 +169,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ShowWidgetResponse.
+        r"""Sets the title of this ShowWidgetResponse.
 
         监控视图标题
 
@@ -180,7 +180,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @property
     def threshold(self):
-        """Gets the threshold of this ShowWidgetResponse.
+        r"""Gets the threshold of this ShowWidgetResponse.
 
         监控视图指标的阈值
 
@@ -191,7 +191,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this ShowWidgetResponse.
+        r"""Sets the threshold of this ShowWidgetResponse.
 
         监控视图指标的阈值
 
@@ -202,7 +202,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @property
     def threshold_enabled(self):
-        """Gets the threshold_enabled of this ShowWidgetResponse.
+        r"""Gets the threshold_enabled of this ShowWidgetResponse.
 
         阈值是否展示，true:展示，false:不展示
 
@@ -213,7 +213,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @threshold_enabled.setter
     def threshold_enabled(self, threshold_enabled):
-        """Sets the threshold_enabled of this ShowWidgetResponse.
+        r"""Sets the threshold_enabled of this ShowWidgetResponse.
 
         阈值是否展示，true:展示，false:不展示
 
@@ -224,7 +224,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @property
     def view(self):
-        """Gets the view of this ShowWidgetResponse.
+        r"""Gets the view of this ShowWidgetResponse.
 
         监控视图图表类型, bar柱状图，line折线图
 
@@ -235,7 +235,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @view.setter
     def view(self, view):
-        """Sets the view of this ShowWidgetResponse.
+        r"""Sets the view of this ShowWidgetResponse.
 
         监控视图图表类型, bar柱状图，line折线图
 
@@ -246,7 +246,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @property
     def metric_display_mode(self):
-        """Gets the metric_display_mode of this ShowWidgetResponse.
+        r"""Gets the metric_display_mode of this ShowWidgetResponse.
 
         指标展示类型，single 单指标展示，multiple 多指标展示
 
@@ -257,7 +257,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @metric_display_mode.setter
     def metric_display_mode(self, metric_display_mode):
-        """Sets the metric_display_mode of this ShowWidgetResponse.
+        r"""Sets the metric_display_mode of this ShowWidgetResponse.
 
         指标展示类型，single 单指标展示，multiple 多指标展示
 
@@ -268,7 +268,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this ShowWidgetResponse.
+        r"""Gets the properties of this ShowWidgetResponse.
 
         :return: The properties of this ShowWidgetResponse.
         :rtype: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoProperties`
@@ -277,7 +277,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ShowWidgetResponse.
+        r"""Sets the properties of this ShowWidgetResponse.
 
         :param properties: The properties of this ShowWidgetResponse.
         :type properties: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoProperties`
@@ -286,7 +286,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @property
     def location(self):
-        """Gets the location of this ShowWidgetResponse.
+        r"""Gets the location of this ShowWidgetResponse.
 
         :return: The location of this ShowWidgetResponse.
         :rtype: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
@@ -295,7 +295,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ShowWidgetResponse.
+        r"""Sets the location of this ShowWidgetResponse.
 
         :param location: The location of this ShowWidgetResponse.
         :type location: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoLocation`
@@ -304,7 +304,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @property
     def unit(self):
-        """Gets the unit of this ShowWidgetResponse.
+        r"""Gets the unit of this ShowWidgetResponse.
 
         单位
 
@@ -315,7 +315,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ShowWidgetResponse.
+        r"""Sets the unit of this ShowWidgetResponse.
 
         单位
 
@@ -326,7 +326,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowWidgetResponse.
+        r"""Gets the create_time of this ShowWidgetResponse.
 
         监控看板创建时间
 
@@ -337,7 +337,7 @@ class ShowWidgetResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowWidgetResponse.
+        r"""Sets the create_time of this ShowWidgetResponse.
 
         监控看板创建时间
 

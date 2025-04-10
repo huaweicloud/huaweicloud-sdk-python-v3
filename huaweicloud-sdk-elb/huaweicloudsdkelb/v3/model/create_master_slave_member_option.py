@@ -35,7 +35,7 @@ class CreateMasterSlaveMemberOption:
     }
 
     def __init__(self, address=None, admin_state_up=None, name=None, protocol_port=None, subnet_cidr_id=None, role=None):
-        """CreateMasterSlaveMemberOption
+        r"""CreateMasterSlaveMemberOption
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class CreateMasterSlaveMemberOption:
 
     @property
     def address(self):
-        """Gets the address of this CreateMasterSlaveMemberOption.
+        r"""Gets the address of this CreateMasterSlaveMemberOption.
 
         后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。 该IP地址可以是私网IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
@@ -87,7 +87,7 @@ class CreateMasterSlaveMemberOption:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this CreateMasterSlaveMemberOption.
+        r"""Sets the address of this CreateMasterSlaveMemberOption.
 
         后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。 该IP地址可以是私网IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
@@ -98,7 +98,7 @@ class CreateMasterSlaveMemberOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CreateMasterSlaveMemberOption.
+        r"""Gets the admin_state_up of this CreateMasterSlaveMemberOption.
 
         后端服务器的管理状态。  取值：true。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
@@ -109,7 +109,7 @@ class CreateMasterSlaveMemberOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CreateMasterSlaveMemberOption.
+        r"""Sets the admin_state_up of this CreateMasterSlaveMemberOption.
 
         后端服务器的管理状态。  取值：true。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
@@ -120,7 +120,7 @@ class CreateMasterSlaveMemberOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateMasterSlaveMemberOption.
+        r"""Gets the name of this CreateMasterSlaveMemberOption.
 
         后端服务器名称。
 
@@ -131,7 +131,7 @@ class CreateMasterSlaveMemberOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateMasterSlaveMemberOption.
+        r"""Sets the name of this CreateMasterSlaveMemberOption.
 
         后端服务器名称。
 
@@ -142,7 +142,7 @@ class CreateMasterSlaveMemberOption:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this CreateMasterSlaveMemberOption.
+        r"""Gets the protocol_port of this CreateMasterSlaveMemberOption.
 
         后端服务器业务端口。 >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
@@ -153,7 +153,7 @@ class CreateMasterSlaveMemberOption:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this CreateMasterSlaveMemberOption.
+        r"""Sets the protocol_port of this CreateMasterSlaveMemberOption.
 
         后端服务器业务端口。 >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
@@ -164,7 +164,7 @@ class CreateMasterSlaveMemberOption:
 
     @property
     def subnet_cidr_id(self):
-        """Gets the subnet_cidr_id of this CreateMasterSlaveMemberOption.
+        r"""Gets the subnet_cidr_id of this CreateMasterSlaveMemberOption.
 
         后端服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
 
@@ -175,7 +175,7 @@ class CreateMasterSlaveMemberOption:
 
     @subnet_cidr_id.setter
     def subnet_cidr_id(self, subnet_cidr_id):
-        """Sets the subnet_cidr_id of this CreateMasterSlaveMemberOption.
+        r"""Sets the subnet_cidr_id of this CreateMasterSlaveMemberOption.
 
         后端服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
 
@@ -186,7 +186,7 @@ class CreateMasterSlaveMemberOption:
 
     @property
     def role(self):
-        """Gets the role of this CreateMasterSlaveMemberOption.
+        r"""Gets the role of this CreateMasterSlaveMemberOption.
 
         后端服务器的主备状态。  取值范围： - master：主后端服务器。 - slave：备后端服务器。
 
@@ -197,7 +197,7 @@ class CreateMasterSlaveMemberOption:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this CreateMasterSlaveMemberOption.
+        r"""Sets the role of this CreateMasterSlaveMemberOption.
 
         后端服务器的主备状态。  取值范围： - master：主后端服务器。 - slave：备后端服务器。
 

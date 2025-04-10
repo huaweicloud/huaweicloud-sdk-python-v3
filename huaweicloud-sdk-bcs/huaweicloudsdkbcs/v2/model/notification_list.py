@@ -43,7 +43,7 @@ class NotificationList:
     }
 
     def __init__(self, channel_name=None, status=None, updated_time=None, tc3_need=None, invitor_info=None, invitee_info=None, hide=None, invitee_orgs=None, read_status=None, cross_version_upgrade=None):
-        """NotificationList
+        r"""NotificationList
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class NotificationList:
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this NotificationList.
+        r"""Gets the channel_name of this NotificationList.
 
         通道名称
 
@@ -117,7 +117,7 @@ class NotificationList:
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this NotificationList.
+        r"""Sets the channel_name of this NotificationList.
 
         通道名称
 
@@ -128,7 +128,7 @@ class NotificationList:
 
     @property
     def status(self):
-        """Gets the status of this NotificationList.
+        r"""Gets the status of this NotificationList.
 
         当前状态
 
@@ -139,7 +139,7 @@ class NotificationList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NotificationList.
+        r"""Sets the status of this NotificationList.
 
         当前状态
 
@@ -150,7 +150,7 @@ class NotificationList:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this NotificationList.
+        r"""Gets the updated_time of this NotificationList.
 
         更新时间
 
@@ -161,7 +161,7 @@ class NotificationList:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this NotificationList.
+        r"""Sets the updated_time of this NotificationList.
 
         更新时间
 
@@ -172,7 +172,7 @@ class NotificationList:
 
     @property
     def tc3_need(self):
-        """Gets the tc3_need of this NotificationList.
+        r"""Gets the tc3_need of this NotificationList.
 
         是否开启可信
 
@@ -183,7 +183,7 @@ class NotificationList:
 
     @tc3_need.setter
     def tc3_need(self, tc3_need):
-        """Sets the tc3_need of this NotificationList.
+        r"""Sets the tc3_need of this NotificationList.
 
         是否开启可信
 
@@ -194,7 +194,7 @@ class NotificationList:
 
     @property
     def invitor_info(self):
-        """Gets the invitor_info of this NotificationList.
+        r"""Gets the invitor_info of this NotificationList.
 
         :return: The invitor_info of this NotificationList.
         :rtype: :class:`huaweicloudsdkbcs.v2.InvitorInfo`
@@ -203,7 +203,7 @@ class NotificationList:
 
     @invitor_info.setter
     def invitor_info(self, invitor_info):
-        """Sets the invitor_info of this NotificationList.
+        r"""Sets the invitor_info of this NotificationList.
 
         :param invitor_info: The invitor_info of this NotificationList.
         :type invitor_info: :class:`huaweicloudsdkbcs.v2.InvitorInfo`
@@ -212,7 +212,7 @@ class NotificationList:
 
     @property
     def invitee_info(self):
-        """Gets the invitee_info of this NotificationList.
+        r"""Gets the invitee_info of this NotificationList.
 
         :return: The invitee_info of this NotificationList.
         :rtype: :class:`huaweicloudsdkbcs.v2.InviteeInfo`
@@ -221,7 +221,7 @@ class NotificationList:
 
     @invitee_info.setter
     def invitee_info(self, invitee_info):
-        """Sets the invitee_info of this NotificationList.
+        r"""Sets the invitee_info of this NotificationList.
 
         :param invitee_info: The invitee_info of this NotificationList.
         :type invitee_info: :class:`huaweicloudsdkbcs.v2.InviteeInfo`
@@ -230,7 +230,7 @@ class NotificationList:
 
     @property
     def hide(self):
-        """Gets the hide of this NotificationList.
+        r"""Gets the hide of this NotificationList.
 
         是否删除
 
@@ -241,7 +241,7 @@ class NotificationList:
 
     @hide.setter
     def hide(self, hide):
-        """Sets the hide of this NotificationList.
+        r"""Sets the hide of this NotificationList.
 
         是否删除
 
@@ -252,7 +252,7 @@ class NotificationList:
 
     @property
     def invitee_orgs(self):
-        """Gets the invitee_orgs of this NotificationList.
+        r"""Gets the invitee_orgs of this NotificationList.
 
         被邀请的组织信息
 
@@ -263,7 +263,7 @@ class NotificationList:
 
     @invitee_orgs.setter
     def invitee_orgs(self, invitee_orgs):
-        """Sets the invitee_orgs of this NotificationList.
+        r"""Sets the invitee_orgs of this NotificationList.
 
         被邀请的组织信息
 
@@ -274,7 +274,7 @@ class NotificationList:
 
     @property
     def read_status(self):
-        """Gets the read_status of this NotificationList.
+        r"""Gets the read_status of this NotificationList.
 
         阅读状态值
 
@@ -285,7 +285,7 @@ class NotificationList:
 
     @read_status.setter
     def read_status(self, read_status):
-        """Sets the read_status of this NotificationList.
+        r"""Sets the read_status of this NotificationList.
 
         阅读状态值
 
@@ -296,7 +296,7 @@ class NotificationList:
 
     @property
     def cross_version_upgrade(self):
-        """Gets the cross_version_upgrade of this NotificationList.
+        r"""Gets the cross_version_upgrade of this NotificationList.
 
         跨版本进行升级
 
@@ -307,7 +307,7 @@ class NotificationList:
 
     @cross_version_upgrade.setter
     def cross_version_upgrade(self, cross_version_upgrade):
-        """Sets the cross_version_upgrade of this NotificationList.
+        r"""Sets the cross_version_upgrade of this NotificationList.
 
         跨版本进行升级
 

@@ -35,7 +35,7 @@ class NovaKeypair:
     }
 
     def __init__(self, fingerprint=None, name=None, public_key=None, private_key=None, user_id=None, type=None):
-        """NovaKeypair
+        r"""NovaKeypair
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class NovaKeypair:
 
     @property
     def fingerprint(self):
-        """Gets the fingerprint of this NovaKeypair.
+        r"""Gets the fingerprint of this NovaKeypair.
 
         密钥对应指纹信息。
 
@@ -84,7 +84,7 @@ class NovaKeypair:
 
     @fingerprint.setter
     def fingerprint(self, fingerprint):
-        """Sets the fingerprint of this NovaKeypair.
+        r"""Sets the fingerprint of this NovaKeypair.
 
         密钥对应指纹信息。
 
@@ -95,7 +95,7 @@ class NovaKeypair:
 
     @property
     def name(self):
-        """Gets the name of this NovaKeypair.
+        r"""Gets the name of this NovaKeypair.
 
         密钥名称。
 
@@ -106,7 +106,7 @@ class NovaKeypair:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NovaKeypair.
+        r"""Sets the name of this NovaKeypair.
 
         密钥名称。
 
@@ -117,7 +117,7 @@ class NovaKeypair:
 
     @property
     def public_key(self):
-        """Gets the public_key of this NovaKeypair.
+        r"""Gets the public_key of this NovaKeypair.
 
         密钥对应publicKey信息。
 
@@ -128,7 +128,7 @@ class NovaKeypair:
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this NovaKeypair.
+        r"""Sets the public_key of this NovaKeypair.
 
         密钥对应publicKey信息。
 
@@ -139,7 +139,7 @@ class NovaKeypair:
 
     @property
     def private_key(self):
-        """Gets the private_key of this NovaKeypair.
+        r"""Gets the private_key of this NovaKeypair.
 
         密钥对应privateKey信息。  - 创建SSH密钥时，响应中包括private_key的信息。 - 导入SSH密钥时，响应中不包括private_key的信息。
 
@@ -150,7 +150,7 @@ class NovaKeypair:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this NovaKeypair.
+        r"""Sets the private_key of this NovaKeypair.
 
         密钥对应privateKey信息。  - 创建SSH密钥时，响应中包括private_key的信息。 - 导入SSH密钥时，响应中不包括private_key的信息。
 
@@ -161,7 +161,7 @@ class NovaKeypair:
 
     @property
     def user_id(self):
-        """Gets the user_id of this NovaKeypair.
+        r"""Gets the user_id of this NovaKeypair.
 
         密钥所属用户ID。
 
@@ -172,7 +172,7 @@ class NovaKeypair:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this NovaKeypair.
+        r"""Sets the user_id of this NovaKeypair.
 
         密钥所属用户ID。
 
@@ -183,7 +183,7 @@ class NovaKeypair:
 
     @property
     def type(self):
-        """Gets the type of this NovaKeypair.
+        r"""Gets the type of this NovaKeypair.
 
         密钥类型，默认“ssh”  微版本2.2以上支持
 
@@ -194,7 +194,7 @@ class NovaKeypair:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NovaKeypair.
+        r"""Sets the type of this NovaKeypair.
 
         密钥类型，默认“ssh”  微版本2.2以上支持
 

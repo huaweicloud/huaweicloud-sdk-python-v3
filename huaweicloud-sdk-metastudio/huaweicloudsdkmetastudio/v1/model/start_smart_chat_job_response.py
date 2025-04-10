@@ -50,7 +50,7 @@ class StartSmartChatJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, language=None, rtc_room_info=None, chat_subtitle_config=None, video_config=None, voice_config_list=None, chat_video_type=None, region=None, chat_access_address=None, chat_access_rest_address=None, is_transparent=None, default_language=None, x_request_id=None):
-        """StartSmartChatJobResponse
+        r"""StartSmartChatJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this StartSmartChatJobResponse.
+        r"""Gets the job_id of this StartSmartChatJobResponse.
 
         智能交互对话任务ID。
 
@@ -139,7 +139,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StartSmartChatJobResponse.
+        r"""Sets the job_id of this StartSmartChatJobResponse.
 
         智能交互对话任务ID。
 
@@ -150,7 +150,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this StartSmartChatJobResponse.
+        r"""Gets the language of this StartSmartChatJobResponse.
 
         :return: The language of this StartSmartChatJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -159,7 +159,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this StartSmartChatJobResponse.
+        r"""Sets the language of this StartSmartChatJobResponse.
 
         :param language: The language of this StartSmartChatJobResponse.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -168,7 +168,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @property
     def rtc_room_info(self):
-        """Gets the rtc_room_info of this StartSmartChatJobResponse.
+        r"""Gets the rtc_room_info of this StartSmartChatJobResponse.
 
         :return: The rtc_room_info of this StartSmartChatJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
@@ -177,7 +177,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @rtc_room_info.setter
     def rtc_room_info(self, rtc_room_info):
-        """Sets the rtc_room_info of this StartSmartChatJobResponse.
+        r"""Sets the rtc_room_info of this StartSmartChatJobResponse.
 
         :param rtc_room_info: The rtc_room_info of this StartSmartChatJobResponse.
         :type rtc_room_info: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
@@ -186,7 +186,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @property
     def chat_subtitle_config(self):
-        """Gets the chat_subtitle_config of this StartSmartChatJobResponse.
+        r"""Gets the chat_subtitle_config of this StartSmartChatJobResponse.
 
         :return: The chat_subtitle_config of this StartSmartChatJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SmartChatSubtitleConfig`
@@ -195,7 +195,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @chat_subtitle_config.setter
     def chat_subtitle_config(self, chat_subtitle_config):
-        """Sets the chat_subtitle_config of this StartSmartChatJobResponse.
+        r"""Sets the chat_subtitle_config of this StartSmartChatJobResponse.
 
         :param chat_subtitle_config: The chat_subtitle_config of this StartSmartChatJobResponse.
         :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.SmartChatSubtitleConfig`
@@ -204,7 +204,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @property
     def video_config(self):
-        """Gets the video_config of this StartSmartChatJobResponse.
+        r"""Gets the video_config of this StartSmartChatJobResponse.
 
         :return: The video_config of this StartSmartChatJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SmartChatVideoConfig`
@@ -213,7 +213,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this StartSmartChatJobResponse.
+        r"""Sets the video_config of this StartSmartChatJobResponse.
 
         :param video_config: The video_config of this StartSmartChatJobResponse.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.SmartChatVideoConfig`
@@ -222,7 +222,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @property
     def voice_config_list(self):
-        """Gets the voice_config_list of this StartSmartChatJobResponse.
+        r"""Gets the voice_config_list of this StartSmartChatJobResponse.
 
         语音配置参数列表。
 
@@ -233,7 +233,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @voice_config_list.setter
     def voice_config_list(self, voice_config_list):
-        """Sets the voice_config_list of this StartSmartChatJobResponse.
+        r"""Sets the voice_config_list of this StartSmartChatJobResponse.
 
         语音配置参数列表。
 
@@ -244,7 +244,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @property
     def chat_video_type(self):
-        """Gets the chat_video_type of this StartSmartChatJobResponse.
+        r"""Gets the chat_video_type of this StartSmartChatJobResponse.
 
         智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
 
@@ -255,7 +255,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @chat_video_type.setter
     def chat_video_type(self, chat_video_type):
-        """Sets the chat_video_type of this StartSmartChatJobResponse.
+        r"""Sets the chat_video_type of this StartSmartChatJobResponse.
 
         智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
 
@@ -266,7 +266,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this StartSmartChatJobResponse.
+        r"""Gets the region of this StartSmartChatJobResponse.
 
         算力所在region。 * cn-north-4: 北京4 * cn-southwest-2: 贵阳1
 
@@ -277,7 +277,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this StartSmartChatJobResponse.
+        r"""Sets the region of this StartSmartChatJobResponse.
 
         算力所在region。 * cn-north-4: 北京4 * cn-southwest-2: 贵阳1
 
@@ -288,7 +288,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @property
     def chat_access_address(self):
-        """Gets the chat_access_address of this StartSmartChatJobResponse.
+        r"""Gets the chat_access_address of this StartSmartChatJobResponse.
 
         智能交互接入地址。
 
@@ -299,7 +299,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @chat_access_address.setter
     def chat_access_address(self, chat_access_address):
-        """Sets the chat_access_address of this StartSmartChatJobResponse.
+        r"""Sets the chat_access_address of this StartSmartChatJobResponse.
 
         智能交互接入地址。
 
@@ -310,7 +310,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @property
     def chat_access_rest_address(self):
-        """Gets the chat_access_rest_address of this StartSmartChatJobResponse.
+        r"""Gets the chat_access_rest_address of this StartSmartChatJobResponse.
 
         智能交互Rest接口接入地址。
 
@@ -321,7 +321,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @chat_access_rest_address.setter
     def chat_access_rest_address(self, chat_access_rest_address):
-        """Sets the chat_access_rest_address of this StartSmartChatJobResponse.
+        r"""Sets the chat_access_rest_address of this StartSmartChatJobResponse.
 
         智能交互Rest接口接入地址。
 
@@ -332,7 +332,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @property
     def is_transparent(self):
-        """Gets the is_transparent of this StartSmartChatJobResponse.
+        r"""Gets the is_transparent of this StartSmartChatJobResponse.
 
         是否透明背景
 
@@ -343,7 +343,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @is_transparent.setter
     def is_transparent(self, is_transparent):
-        """Sets the is_transparent of this StartSmartChatJobResponse.
+        r"""Sets the is_transparent of this StartSmartChatJobResponse.
 
         是否透明背景
 
@@ -354,7 +354,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @property
     def default_language(self):
-        """Gets the default_language of this StartSmartChatJobResponse.
+        r"""Gets the default_language of this StartSmartChatJobResponse.
 
         默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。
 
@@ -365,7 +365,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @default_language.setter
     def default_language(self, default_language):
-        """Sets the default_language of this StartSmartChatJobResponse.
+        r"""Sets the default_language of this StartSmartChatJobResponse.
 
         默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。
 
@@ -376,7 +376,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this StartSmartChatJobResponse.
+        r"""Gets the x_request_id of this StartSmartChatJobResponse.
 
         :return: The x_request_id of this StartSmartChatJobResponse.
         :rtype: str
@@ -385,7 +385,7 @@ class StartSmartChatJobResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this StartSmartChatJobResponse.
+        r"""Sets the x_request_id of this StartSmartChatJobResponse.
 
         :param x_request_id: The x_request_id of this StartSmartChatJobResponse.
         :type x_request_id: str

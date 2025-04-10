@@ -27,7 +27,7 @@ class CompliantSummary:
     }
 
     def __init__(self, compliant_count=None, severity_summary=None):
-        """CompliantSummary
+        r"""CompliantSummary
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CompliantSummary:
 
     @property
     def compliant_count(self):
-        """Gets the compliant_count of this CompliantSummary.
+        r"""Gets the compliant_count of this CompliantSummary.
 
         合规补丁数量
 
@@ -61,7 +61,7 @@ class CompliantSummary:
 
     @compliant_count.setter
     def compliant_count(self, compliant_count):
-        """Sets the compliant_count of this CompliantSummary.
+        r"""Sets the compliant_count of this CompliantSummary.
 
         合规补丁数量
 
@@ -72,7 +72,7 @@ class CompliantSummary:
 
     @property
     def severity_summary(self):
-        """Gets the severity_summary of this CompliantSummary.
+        r"""Gets the severity_summary of this CompliantSummary.
 
         :return: The severity_summary of this CompliantSummary.
         :rtype: :class:`huaweicloudsdkcoc.v1.SeveritySummary`
@@ -81,7 +81,7 @@ class CompliantSummary:
 
     @severity_summary.setter
     def severity_summary(self, severity_summary):
-        """Sets the severity_summary of this CompliantSummary.
+        r"""Sets the severity_summary of this CompliantSummary.
 
         :param severity_summary: The severity_summary of this CompliantSummary.
         :type severity_summary: :class:`huaweicloudsdkcoc.v1.SeveritySummary`

@@ -28,7 +28,7 @@ class ShowApplicationDependentResourcesResponse(SdkResponse):
     }
 
     def __init__(self, dependent_services=None, count=None):
-        """ShowApplicationDependentResourcesResponse
+        r"""ShowApplicationDependentResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowApplicationDependentResourcesResponse(SdkResponse):
 
     @property
     def dependent_services(self):
-        """Gets the dependent_services of this ShowApplicationDependentResourcesResponse.
+        r"""Gets the dependent_services of this ShowApplicationDependentResourcesResponse.
 
         依赖云资源信息
 
@@ -62,7 +62,7 @@ class ShowApplicationDependentResourcesResponse(SdkResponse):
 
     @dependent_services.setter
     def dependent_services(self, dependent_services):
-        """Sets the dependent_services of this ShowApplicationDependentResourcesResponse.
+        r"""Sets the dependent_services of this ShowApplicationDependentResourcesResponse.
 
         依赖云资源信息
 
@@ -73,7 +73,7 @@ class ShowApplicationDependentResourcesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowApplicationDependentResourcesResponse.
+        r"""Gets the count of this ShowApplicationDependentResourcesResponse.
 
         资源总个数
 
@@ -84,7 +84,7 @@ class ShowApplicationDependentResourcesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowApplicationDependentResourcesResponse.
+        r"""Sets the count of this ShowApplicationDependentResourcesResponse.
 
         资源总个数
 

@@ -35,7 +35,7 @@ class MongodbErrorLogDetail:
     }
 
     def __init__(self, node_name=None, node_id=None, raw_message=None, severity=None, log_time=None, line_num=None):
-        """MongodbErrorLogDetail
+        r"""MongodbErrorLogDetail
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class MongodbErrorLogDetail:
 
     @property
     def node_name(self):
-        """Gets the node_name of this MongodbErrorLogDetail.
+        r"""Gets the node_name of this MongodbErrorLogDetail.
 
         节点名称。
 
@@ -83,7 +83,7 @@ class MongodbErrorLogDetail:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this MongodbErrorLogDetail.
+        r"""Sets the node_name of this MongodbErrorLogDetail.
 
         节点名称。
 
@@ -94,7 +94,7 @@ class MongodbErrorLogDetail:
 
     @property
     def node_id(self):
-        """Gets the node_id of this MongodbErrorLogDetail.
+        r"""Gets the node_id of this MongodbErrorLogDetail.
 
         节点ID。
 
@@ -105,7 +105,7 @@ class MongodbErrorLogDetail:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this MongodbErrorLogDetail.
+        r"""Sets the node_id of this MongodbErrorLogDetail.
 
         节点ID。
 
@@ -116,7 +116,7 @@ class MongodbErrorLogDetail:
 
     @property
     def raw_message(self):
-        """Gets the raw_message of this MongodbErrorLogDetail.
+        r"""Gets the raw_message of this MongodbErrorLogDetail.
 
         描述信息。
 
@@ -127,7 +127,7 @@ class MongodbErrorLogDetail:
 
     @raw_message.setter
     def raw_message(self, raw_message):
-        """Sets the raw_message of this MongodbErrorLogDetail.
+        r"""Sets the raw_message of this MongodbErrorLogDetail.
 
         描述信息。
 
@@ -138,7 +138,7 @@ class MongodbErrorLogDetail:
 
     @property
     def severity(self):
-        """Gets the severity of this MongodbErrorLogDetail.
+        r"""Gets the severity of this MongodbErrorLogDetail.
 
         日志级别。
 
@@ -149,7 +149,7 @@ class MongodbErrorLogDetail:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this MongodbErrorLogDetail.
+        r"""Sets the severity of this MongodbErrorLogDetail.
 
         日志级别。
 
@@ -160,7 +160,7 @@ class MongodbErrorLogDetail:
 
     @property
     def log_time(self):
-        """Gets the log_time of this MongodbErrorLogDetail.
+        r"""Gets the log_time of this MongodbErrorLogDetail.
 
         日志产生时间，UTC时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -171,7 +171,7 @@ class MongodbErrorLogDetail:
 
     @log_time.setter
     def log_time(self, log_time):
-        """Sets the log_time of this MongodbErrorLogDetail.
+        r"""Sets the log_time of this MongodbErrorLogDetail.
 
         日志产生时间，UTC时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -182,7 +182,7 @@ class MongodbErrorLogDetail:
 
     @property
     def line_num(self):
-        """Gets the line_num of this MongodbErrorLogDetail.
+        r"""Gets the line_num of this MongodbErrorLogDetail.
 
         日志单行序列号
 
@@ -193,7 +193,7 @@ class MongodbErrorLogDetail:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this MongodbErrorLogDetail.
+        r"""Sets the line_num of this MongodbErrorLogDetail.
 
         日志单行序列号
 

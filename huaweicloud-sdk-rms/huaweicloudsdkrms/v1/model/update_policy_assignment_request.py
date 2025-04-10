@@ -27,7 +27,7 @@ class UpdatePolicyAssignmentRequest:
     }
 
     def __init__(self, policy_assignment_id=None, body=None):
-        """UpdatePolicyAssignmentRequest
+        r"""UpdatePolicyAssignmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePolicyAssignmentRequest:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this UpdatePolicyAssignmentRequest.
+        r"""Gets the policy_assignment_id of this UpdatePolicyAssignmentRequest.
 
         规则ID
 
@@ -60,7 +60,7 @@ class UpdatePolicyAssignmentRequest:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this UpdatePolicyAssignmentRequest.
+        r"""Sets the policy_assignment_id of this UpdatePolicyAssignmentRequest.
 
         规则ID
 
@@ -71,7 +71,7 @@ class UpdatePolicyAssignmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePolicyAssignmentRequest.
+        r"""Gets the body of this UpdatePolicyAssignmentRequest.
 
         :return: The body of this UpdatePolicyAssignmentRequest.
         :rtype: :class:`huaweicloudsdkrms.v1.PolicyAssignmentRequestBody`
@@ -80,7 +80,7 @@ class UpdatePolicyAssignmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePolicyAssignmentRequest.
+        r"""Sets the body of this UpdatePolicyAssignmentRequest.
 
         :param body: The body of this UpdatePolicyAssignmentRequest.
         :type body: :class:`huaweicloudsdkrms.v1.PolicyAssignmentRequestBody`

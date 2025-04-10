@@ -40,7 +40,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
     }
 
     def __init__(self, keepday=None, period=None, prefix=None, bucket=None, base_path=None, agency=None, enable=None, frequency=None):
-        """ShowAutoCreatePolicyResponse
+        r"""ShowAutoCreatePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @property
     def keepday(self):
-        """Gets the keepday of this ShowAutoCreatePolicyResponse.
+        r"""Gets the keepday of this ShowAutoCreatePolicyResponse.
 
         快照保留的天数。
 
@@ -104,7 +104,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @keepday.setter
     def keepday(self, keepday):
-        """Sets the keepday of this ShowAutoCreatePolicyResponse.
+        r"""Sets the keepday of this ShowAutoCreatePolicyResponse.
 
         快照保留的天数。
 
@@ -115,7 +115,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @property
     def period(self):
-        """Gets the period of this ShowAutoCreatePolicyResponse.
+        r"""Gets the period of this ShowAutoCreatePolicyResponse.
 
         每天快照创建时刻。
 
@@ -126,7 +126,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ShowAutoCreatePolicyResponse.
+        r"""Sets the period of this ShowAutoCreatePolicyResponse.
 
         每天快照创建时刻。
 
@@ -137,7 +137,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @property
     def prefix(self):
-        """Gets the prefix of this ShowAutoCreatePolicyResponse.
+        r"""Gets the prefix of this ShowAutoCreatePolicyResponse.
 
         快照命名前缀，需要用户自己手动输入。
 
@@ -148,7 +148,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this ShowAutoCreatePolicyResponse.
+        r"""Sets the prefix of this ShowAutoCreatePolicyResponse.
 
         快照命名前缀，需要用户自己手动输入。
 
@@ -159,7 +159,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @property
     def bucket(self):
-        """Gets the bucket of this ShowAutoCreatePolicyResponse.
+        r"""Gets the bucket of this ShowAutoCreatePolicyResponse.
 
         快照存放的OBS桶的桶名。
 
@@ -170,7 +170,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ShowAutoCreatePolicyResponse.
+        r"""Sets the bucket of this ShowAutoCreatePolicyResponse.
 
         快照存放的OBS桶的桶名。
 
@@ -181,7 +181,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @property
     def base_path(self):
-        """Gets the base_path of this ShowAutoCreatePolicyResponse.
+        r"""Gets the base_path of this ShowAutoCreatePolicyResponse.
 
         快照在OBS桶中的存放路径。
 
@@ -192,7 +192,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @base_path.setter
     def base_path(self, base_path):
-        """Sets the base_path of this ShowAutoCreatePolicyResponse.
+        r"""Sets the base_path of this ShowAutoCreatePolicyResponse.
 
         快照在OBS桶中的存放路径。
 
@@ -203,7 +203,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @property
     def agency(self):
-        """Gets the agency of this ShowAutoCreatePolicyResponse.
+        r"""Gets the agency of this ShowAutoCreatePolicyResponse.
 
         访问OBS桶用到的委托。
 
@@ -214,7 +214,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this ShowAutoCreatePolicyResponse.
+        r"""Sets the agency of this ShowAutoCreatePolicyResponse.
 
         访问OBS桶用到的委托。
 
@@ -225,7 +225,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @property
     def enable(self):
-        """Gets the enable of this ShowAutoCreatePolicyResponse.
+        r"""Gets the enable of this ShowAutoCreatePolicyResponse.
 
         是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略。
 
@@ -236,7 +236,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this ShowAutoCreatePolicyResponse.
+        r"""Sets the enable of this ShowAutoCreatePolicyResponse.
 
         是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略。
 
@@ -247,7 +247,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @property
     def frequency(self):
-        """Gets the frequency of this ShowAutoCreatePolicyResponse.
+        r"""Gets the frequency of this ShowAutoCreatePolicyResponse.
 
         自动创建快照的执行频次。
 
@@ -258,7 +258,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
 
     @frequency.setter
     def frequency(self, frequency):
-        """Sets the frequency of this ShowAutoCreatePolicyResponse.
+        r"""Sets the frequency of this ShowAutoCreatePolicyResponse.
 
         自动创建快照的执行频次。
 

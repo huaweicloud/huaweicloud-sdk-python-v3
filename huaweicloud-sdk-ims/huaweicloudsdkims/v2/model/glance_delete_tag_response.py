@@ -24,7 +24,7 @@ class GlanceDeleteTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """GlanceDeleteTagResponse
+        r"""GlanceDeleteTagResponse
 
         The model defined in huaweicloud sdk
 

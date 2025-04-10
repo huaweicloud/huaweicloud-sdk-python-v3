@@ -25,7 +25,7 @@ class PolicyInstanceQuotas:
     }
 
     def __init__(self, resources=None):
-        """PolicyInstanceQuotas
+        r"""PolicyInstanceQuotas
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PolicyInstanceQuotas:
 
     @property
     def resources(self):
-        """Gets the resources of this PolicyInstanceQuotas.
+        r"""Gets the resources of this PolicyInstanceQuotas.
 
         配额资源详情。
 
@@ -54,7 +54,7 @@ class PolicyInstanceQuotas:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this PolicyInstanceQuotas.
+        r"""Sets the resources of this PolicyInstanceQuotas.
 
         配额资源详情。
 

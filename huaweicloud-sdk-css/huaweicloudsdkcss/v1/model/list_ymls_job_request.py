@@ -29,7 +29,7 @@ class ListYmlsJobRequest:
     }
 
     def __init__(self, cluster_id=None, start=None, limit=None):
-        """ListYmlsJobRequest
+        r"""ListYmlsJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListYmlsJobRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListYmlsJobRequest.
+        r"""Gets the cluster_id of this ListYmlsJobRequest.
 
         指定查询集群ID。
 
@@ -67,7 +67,7 @@ class ListYmlsJobRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListYmlsJobRequest.
+        r"""Sets the cluster_id of this ListYmlsJobRequest.
 
         指定查询集群ID。
 
@@ -78,7 +78,7 @@ class ListYmlsJobRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListYmlsJobRequest.
+        r"""Gets the start of this ListYmlsJobRequest.
 
         指定查询起始值，默认值为1，即从第1个任务开始查询。
 
@@ -89,7 +89,7 @@ class ListYmlsJobRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListYmlsJobRequest.
+        r"""Sets the start of this ListYmlsJobRequest.
 
         指定查询起始值，默认值为1，即从第1个任务开始查询。
 
@@ -100,7 +100,7 @@ class ListYmlsJobRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListYmlsJobRequest.
+        r"""Gets the limit of this ListYmlsJobRequest.
 
         指定查询个数，默认值为10，即一次查询10个任务信息。
 
@@ -111,7 +111,7 @@ class ListYmlsJobRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListYmlsJobRequest.
+        r"""Sets the limit of this ListYmlsJobRequest.
 
         指定查询个数，默认值为10，即一次查询10个任务信息。
 

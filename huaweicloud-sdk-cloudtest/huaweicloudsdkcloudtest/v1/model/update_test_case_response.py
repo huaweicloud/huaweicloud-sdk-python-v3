@@ -50,7 +50,7 @@ class UpdateTestCaseResponse(SdkResponse):
     }
 
     def __init__(self, testcase_id=None, project_id=None, service_id=None, name=None, testcase_number=None, rank_id=None, status_id=None, assigned_user=None, execute_count=None, result_id=None, extend_info=None, error_code=None, error_msg=None):
-        """UpdateTestCaseResponse
+        r"""UpdateTestCaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this UpdateTestCaseResponse.
+        r"""Gets the testcase_id of this UpdateTestCaseResponse.
 
         测试用例唯一标识
 
@@ -139,7 +139,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this UpdateTestCaseResponse.
+        r"""Sets the testcase_id of this UpdateTestCaseResponse.
 
         测试用例唯一标识
 
@@ -150,7 +150,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateTestCaseResponse.
+        r"""Gets the project_id of this UpdateTestCaseResponse.
 
         软开云项目唯一标识
 
@@ -161,7 +161,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateTestCaseResponse.
+        r"""Sets the project_id of this UpdateTestCaseResponse.
 
         软开云项目唯一标识
 
@@ -172,7 +172,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @property
     def service_id(self):
-        """Gets the service_id of this UpdateTestCaseResponse.
+        r"""Gets the service_id of this UpdateTestCaseResponse.
 
         注册测试类型服务接口返回的服务id
 
@@ -183,7 +183,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this UpdateTestCaseResponse.
+        r"""Sets the service_id of this UpdateTestCaseResponse.
 
         注册测试类型服务接口返回的服务id
 
@@ -194,7 +194,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateTestCaseResponse.
+        r"""Gets the name of this UpdateTestCaseResponse.
 
         测试用例名称
 
@@ -205,7 +205,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTestCaseResponse.
+        r"""Sets the name of this UpdateTestCaseResponse.
 
         测试用例名称
 
@@ -216,7 +216,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @property
     def testcase_number(self):
-        """Gets the testcase_number of this UpdateTestCaseResponse.
+        r"""Gets the testcase_number of this UpdateTestCaseResponse.
 
         测试用例编号
 
@@ -227,7 +227,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @testcase_number.setter
     def testcase_number(self, testcase_number):
-        """Sets the testcase_number of this UpdateTestCaseResponse.
+        r"""Sets the testcase_number of this UpdateTestCaseResponse.
 
         测试用例编号
 
@@ -238,7 +238,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @property
     def rank_id(self):
-        """Gets the rank_id of this UpdateTestCaseResponse.
+        r"""Gets the rank_id of this UpdateTestCaseResponse.
 
         测试用例等级
 
@@ -249,7 +249,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @rank_id.setter
     def rank_id(self, rank_id):
-        """Sets the rank_id of this UpdateTestCaseResponse.
+        r"""Sets the rank_id of this UpdateTestCaseResponse.
 
         测试用例等级
 
@@ -260,7 +260,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @property
     def status_id(self):
-        """Gets the status_id of this UpdateTestCaseResponse.
+        r"""Gets the status_id of this UpdateTestCaseResponse.
 
         测试用例状态
 
@@ -271,7 +271,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @status_id.setter
     def status_id(self, status_id):
-        """Sets the status_id of this UpdateTestCaseResponse.
+        r"""Sets the status_id of this UpdateTestCaseResponse.
 
         测试用例状态
 
@@ -282,7 +282,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @property
     def assigned_user(self):
-        """Gets the assigned_user of this UpdateTestCaseResponse.
+        r"""Gets the assigned_user of this UpdateTestCaseResponse.
 
         :return: The assigned_user of this UpdateTestCaseResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
@@ -291,7 +291,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @assigned_user.setter
     def assigned_user(self, assigned_user):
-        """Sets the assigned_user of this UpdateTestCaseResponse.
+        r"""Sets the assigned_user of this UpdateTestCaseResponse.
 
         :param assigned_user: The assigned_user of this UpdateTestCaseResponse.
         :type assigned_user: :class:`huaweicloudsdkcloudtest.v1.AssignedUserInfo`
@@ -300,7 +300,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @property
     def execute_count(self):
-        """Gets the execute_count of this UpdateTestCaseResponse.
+        r"""Gets the execute_count of this UpdateTestCaseResponse.
 
         测试用例执行次数
 
@@ -311,7 +311,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @execute_count.setter
     def execute_count(self, execute_count):
-        """Sets the execute_count of this UpdateTestCaseResponse.
+        r"""Sets the execute_count of this UpdateTestCaseResponse.
 
         测试用例执行次数
 
@@ -322,7 +322,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @property
     def result_id(self):
-        """Gets the result_id of this UpdateTestCaseResponse.
+        r"""Gets the result_id of this UpdateTestCaseResponse.
 
         测试用例执行结果
 
@@ -333,7 +333,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @result_id.setter
     def result_id(self, result_id):
-        """Sets the result_id of this UpdateTestCaseResponse.
+        r"""Sets the result_id of this UpdateTestCaseResponse.
 
         测试用例执行结果
 
@@ -344,7 +344,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @property
     def extend_info(self):
-        """Gets the extend_info of this UpdateTestCaseResponse.
+        r"""Gets the extend_info of this UpdateTestCaseResponse.
 
         :return: The extend_info of this UpdateTestCaseResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ExtendInfo`
@@ -353,7 +353,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @extend_info.setter
     def extend_info(self, extend_info):
-        """Sets the extend_info of this UpdateTestCaseResponse.
+        r"""Sets the extend_info of this UpdateTestCaseResponse.
 
         :param extend_info: The extend_info of this UpdateTestCaseResponse.
         :type extend_info: :class:`huaweicloudsdkcloudtest.v1.ExtendInfo`
@@ -362,7 +362,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this UpdateTestCaseResponse.
+        r"""Gets the error_code of this UpdateTestCaseResponse.
 
         接口调用失败错误码
 
@@ -373,7 +373,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this UpdateTestCaseResponse.
+        r"""Sets the error_code of this UpdateTestCaseResponse.
 
         接口调用失败错误码
 
@@ -384,7 +384,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this UpdateTestCaseResponse.
+        r"""Gets the error_msg of this UpdateTestCaseResponse.
 
         接口调用失败错误信息
 
@@ -395,7 +395,7 @@ class UpdateTestCaseResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this UpdateTestCaseResponse.
+        r"""Sets the error_msg of this UpdateTestCaseResponse.
 
         接口调用失败错误信息
 

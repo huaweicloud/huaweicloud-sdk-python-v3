@@ -25,7 +25,7 @@ class ConfigurationStrategy:
     }
 
     def __init__(self, upgrade=None):
-        """ConfigurationStrategy
+        r"""ConfigurationStrategy
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ConfigurationStrategy:
 
     @property
     def upgrade(self):
-        """Gets the upgrade of this ConfigurationStrategy.
+        r"""Gets the upgrade of this ConfigurationStrategy.
 
         部署策略
 
@@ -54,7 +54,7 @@ class ConfigurationStrategy:
 
     @upgrade.setter
     def upgrade(self, upgrade):
-        """Sets the upgrade of this ConfigurationStrategy.
+        r"""Sets the upgrade of this ConfigurationStrategy.
 
         部署策略
 

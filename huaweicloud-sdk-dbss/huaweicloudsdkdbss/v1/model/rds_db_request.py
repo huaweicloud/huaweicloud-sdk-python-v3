@@ -25,7 +25,7 @@ class RdsDbRequest:
     }
 
     def __init__(self, databases=None):
-        """RdsDbRequest
+        r"""RdsDbRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RdsDbRequest:
 
     @property
     def databases(self):
-        """Gets the databases of this RdsDbRequest.
+        r"""Gets the databases of this RdsDbRequest.
 
         数据库列表
 
@@ -53,7 +53,7 @@ class RdsDbRequest:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this RdsDbRequest.
+        r"""Sets the databases of this RdsDbRequest.
 
         数据库列表
 

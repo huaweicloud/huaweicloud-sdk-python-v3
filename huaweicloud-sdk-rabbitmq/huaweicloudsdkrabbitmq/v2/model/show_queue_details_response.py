@@ -44,7 +44,7 @@ class ShowQueueDetailsResponse(SdkResponse):
     }
 
     def __init__(self, vhost=None, name=None, durable=None, auto_delete=None, messages=None, consumers=None, policy=None, arguments=None, consumer_details=None, queue_bindings=None):
-        """ShowQueueDetailsResponse
+        r"""ShowQueueDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @property
     def vhost(self):
-        """Gets the vhost of this ShowQueueDetailsResponse.
+        r"""Gets the vhost of this ShowQueueDetailsResponse.
 
         Queue所属Vhost名称
 
@@ -118,7 +118,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this ShowQueueDetailsResponse.
+        r"""Sets the vhost of this ShowQueueDetailsResponse.
 
         Queue所属Vhost名称
 
@@ -129,7 +129,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowQueueDetailsResponse.
+        r"""Gets the name of this ShowQueueDetailsResponse.
 
         Queue名称
 
@@ -140,7 +140,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowQueueDetailsResponse.
+        r"""Sets the name of this ShowQueueDetailsResponse.
 
         Queue名称
 
@@ -151,7 +151,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @property
     def durable(self):
-        """Gets the durable of this ShowQueueDetailsResponse.
+        r"""Gets the durable of this ShowQueueDetailsResponse.
 
         是否持久化
 
@@ -162,7 +162,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @durable.setter
     def durable(self, durable):
-        """Sets the durable of this ShowQueueDetailsResponse.
+        r"""Sets the durable of this ShowQueueDetailsResponse.
 
         是否持久化
 
@@ -173,7 +173,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @property
     def auto_delete(self):
-        """Gets the auto_delete of this ShowQueueDetailsResponse.
+        r"""Gets the auto_delete of this ShowQueueDetailsResponse.
 
         是否自动删除
 
@@ -184,7 +184,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @auto_delete.setter
     def auto_delete(self, auto_delete):
-        """Sets the auto_delete of this ShowQueueDetailsResponse.
+        r"""Sets the auto_delete of this ShowQueueDetailsResponse.
 
         是否自动删除
 
@@ -195,7 +195,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @property
     def messages(self):
-        """Gets the messages of this ShowQueueDetailsResponse.
+        r"""Gets the messages of this ShowQueueDetailsResponse.
 
         待消费消息数
 
@@ -206,7 +206,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @messages.setter
     def messages(self, messages):
-        """Sets the messages of this ShowQueueDetailsResponse.
+        r"""Sets the messages of this ShowQueueDetailsResponse.
 
         待消费消息数
 
@@ -217,7 +217,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @property
     def consumers(self):
-        """Gets the consumers of this ShowQueueDetailsResponse.
+        r"""Gets the consumers of this ShowQueueDetailsResponse.
 
         连接的消费者数
 
@@ -228,7 +228,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @consumers.setter
     def consumers(self, consumers):
-        """Sets the consumers of this ShowQueueDetailsResponse.
+        r"""Sets the consumers of this ShowQueueDetailsResponse.
 
         连接的消费者数
 
@@ -239,7 +239,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @property
     def policy(self):
-        """Gets the policy of this ShowQueueDetailsResponse.
+        r"""Gets the policy of this ShowQueueDetailsResponse.
 
         策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk)
 
@@ -250,7 +250,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this ShowQueueDetailsResponse.
+        r"""Sets the policy of this ShowQueueDetailsResponse.
 
         策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk)
 
@@ -261,7 +261,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @property
     def arguments(self):
-        """Gets the arguments of this ShowQueueDetailsResponse.
+        r"""Gets the arguments of this ShowQueueDetailsResponse.
 
         :return: The arguments of this ShowQueueDetailsResponse.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.QueueArguments`
@@ -270,7 +270,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @arguments.setter
     def arguments(self, arguments):
-        """Sets the arguments of this ShowQueueDetailsResponse.
+        r"""Sets the arguments of this ShowQueueDetailsResponse.
 
         :param arguments: The arguments of this ShowQueueDetailsResponse.
         :type arguments: :class:`huaweicloudsdkrabbitmq.v2.QueueArguments`
@@ -279,7 +279,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @property
     def consumer_details(self):
-        """Gets the consumer_details of this ShowQueueDetailsResponse.
+        r"""Gets the consumer_details of this ShowQueueDetailsResponse.
 
         订阅该Queue的消费者信息。
 
@@ -290,7 +290,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @consumer_details.setter
     def consumer_details(self, consumer_details):
-        """Sets the consumer_details of this ShowQueueDetailsResponse.
+        r"""Sets the consumer_details of this ShowQueueDetailsResponse.
 
         订阅该Queue的消费者信息。
 
@@ -301,7 +301,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @property
     def queue_bindings(self):
-        """Gets the queue_bindings of this ShowQueueDetailsResponse.
+        r"""Gets the queue_bindings of this ShowQueueDetailsResponse.
 
         以此Queue为目标的绑定信息列表。
 
@@ -312,7 +312,7 @@ class ShowQueueDetailsResponse(SdkResponse):
 
     @queue_bindings.setter
     def queue_bindings(self, queue_bindings):
-        """Sets the queue_bindings of this ShowQueueDetailsResponse.
+        r"""Sets the queue_bindings of this ShowQueueDetailsResponse.
 
         以此Queue为目标的绑定信息列表。
 

@@ -33,7 +33,7 @@ class BatchShowIpcsRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, status=None, v2x_edge_id=None):
-        """BatchShowIpcsRequest
+        r"""BatchShowIpcsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BatchShowIpcsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchShowIpcsRequest.
+        r"""Gets the instance_id of this BatchShowIpcsRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -82,7 +82,7 @@ class BatchShowIpcsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchShowIpcsRequest.
+        r"""Sets the instance_id of this BatchShowIpcsRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -93,7 +93,7 @@ class BatchShowIpcsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchShowIpcsRequest.
+        r"""Gets the offset of this BatchShowIpcsRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -104,7 +104,7 @@ class BatchShowIpcsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchShowIpcsRequest.
+        r"""Sets the offset of this BatchShowIpcsRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -115,7 +115,7 @@ class BatchShowIpcsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchShowIpcsRequest.
+        r"""Gets the limit of this BatchShowIpcsRequest.
 
         **参数说明**：分页查询时每页显示的记录数。
 
@@ -126,7 +126,7 @@ class BatchShowIpcsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchShowIpcsRequest.
+        r"""Sets the limit of this BatchShowIpcsRequest.
 
         **参数说明**：分页查询时每页显示的记录数。
 
@@ -137,7 +137,7 @@ class BatchShowIpcsRequest:
 
     @property
     def status(self):
-        """Gets the status of this BatchShowIpcsRequest.
+        r"""Gets the status of this BatchShowIpcsRequest.
 
         **参数说明**：摄像机的状态。  **取值范围**：  - ONLINE：在线   - OFFLINE：离线  - INITIAL：初始化  - UNKNOWN：未知   - SLEEP：休眠 
 
@@ -148,7 +148,7 @@ class BatchShowIpcsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchShowIpcsRequest.
+        r"""Sets the status of this BatchShowIpcsRequest.
 
         **参数说明**：摄像机的状态。  **取值范围**：  - ONLINE：在线   - OFFLINE：离线  - INITIAL：初始化  - UNKNOWN：未知   - SLEEP：休眠 
 
@@ -159,7 +159,7 @@ class BatchShowIpcsRequest:
 
     @property
     def v2x_edge_id(self):
-        """Gets the v2x_edge_id of this BatchShowIpcsRequest.
+        r"""Gets the v2x_edge_id of this BatchShowIpcsRequest.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge，创建Edge后获得。方法参见 [创建Edge](https://support.huaweicloud.com/api-v2x/v2x_04_0078.html)。
 
@@ -170,7 +170,7 @@ class BatchShowIpcsRequest:
 
     @v2x_edge_id.setter
     def v2x_edge_id(self, v2x_edge_id):
-        """Sets the v2x_edge_id of this BatchShowIpcsRequest.
+        r"""Sets the v2x_edge_id of this BatchShowIpcsRequest.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge，创建Edge后获得。方法参见 [创建Edge](https://support.huaweicloud.com/api-v2x/v2x_04_0078.html)。
 

@@ -49,7 +49,7 @@ class ShowPolicyRoleResult:
     }
 
     def __init__(self, domain_id=None, references=None, updated_time=None, created_time=None, description_cn=None, catalog=None, name=None, description=None, links=None, id=None, display_name=None, type=None, policy=None):
-        """ShowPolicyRoleResult
+        r"""ShowPolicyRoleResult
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class ShowPolicyRoleResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowPolicyRoleResult.
+        r"""Gets the domain_id of this ShowPolicyRoleResult.
 
         自定义策略所属账号ID。
 
@@ -129,7 +129,7 @@ class ShowPolicyRoleResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowPolicyRoleResult.
+        r"""Sets the domain_id of this ShowPolicyRoleResult.
 
         自定义策略所属账号ID。
 
@@ -140,7 +140,7 @@ class ShowPolicyRoleResult:
 
     @property
     def references(self):
-        """Gets the references of this ShowPolicyRoleResult.
+        r"""Gets the references of this ShowPolicyRoleResult.
 
         自定义策略的引用次数。
 
@@ -151,7 +151,7 @@ class ShowPolicyRoleResult:
 
     @references.setter
     def references(self, references):
-        """Sets the references of this ShowPolicyRoleResult.
+        r"""Sets the references of this ShowPolicyRoleResult.
 
         自定义策略的引用次数。
 
@@ -162,7 +162,7 @@ class ShowPolicyRoleResult:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ShowPolicyRoleResult.
+        r"""Gets the updated_time of this ShowPolicyRoleResult.
 
         自定义策略更新时间。
 
@@ -173,7 +173,7 @@ class ShowPolicyRoleResult:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ShowPolicyRoleResult.
+        r"""Sets the updated_time of this ShowPolicyRoleResult.
 
         自定义策略更新时间。
 
@@ -184,7 +184,7 @@ class ShowPolicyRoleResult:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowPolicyRoleResult.
+        r"""Gets the created_time of this ShowPolicyRoleResult.
 
         自定义策略创建时间。
 
@@ -195,7 +195,7 @@ class ShowPolicyRoleResult:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowPolicyRoleResult.
+        r"""Sets the created_time of this ShowPolicyRoleResult.
 
         自定义策略创建时间。
 
@@ -206,7 +206,7 @@ class ShowPolicyRoleResult:
 
     @property
     def description_cn(self):
-        """Gets the description_cn of this ShowPolicyRoleResult.
+        r"""Gets the description_cn of this ShowPolicyRoleResult.
 
         自定义策略的中文描述信息。
 
@@ -217,7 +217,7 @@ class ShowPolicyRoleResult:
 
     @description_cn.setter
     def description_cn(self, description_cn):
-        """Sets the description_cn of this ShowPolicyRoleResult.
+        r"""Sets the description_cn of this ShowPolicyRoleResult.
 
         自定义策略的中文描述信息。
 
@@ -228,7 +228,7 @@ class ShowPolicyRoleResult:
 
     @property
     def catalog(self):
-        """Gets the catalog of this ShowPolicyRoleResult.
+        r"""Gets the catalog of this ShowPolicyRoleResult.
 
         自定义策略所在目录。
 
@@ -239,7 +239,7 @@ class ShowPolicyRoleResult:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this ShowPolicyRoleResult.
+        r"""Sets the catalog of this ShowPolicyRoleResult.
 
         自定义策略所在目录。
 
@@ -250,7 +250,7 @@ class ShowPolicyRoleResult:
 
     @property
     def name(self):
-        """Gets the name of this ShowPolicyRoleResult.
+        r"""Gets the name of this ShowPolicyRoleResult.
 
         自定义策略名。
 
@@ -261,7 +261,7 @@ class ShowPolicyRoleResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowPolicyRoleResult.
+        r"""Sets the name of this ShowPolicyRoleResult.
 
         自定义策略名。
 
@@ -272,7 +272,7 @@ class ShowPolicyRoleResult:
 
     @property
     def description(self):
-        """Gets the description of this ShowPolicyRoleResult.
+        r"""Gets the description of this ShowPolicyRoleResult.
 
         自定义策略的描述信息。
 
@@ -283,7 +283,7 @@ class ShowPolicyRoleResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowPolicyRoleResult.
+        r"""Sets the description of this ShowPolicyRoleResult.
 
         自定义策略的描述信息。
 
@@ -294,7 +294,7 @@ class ShowPolicyRoleResult:
 
     @property
     def links(self):
-        """Gets the links of this ShowPolicyRoleResult.
+        r"""Gets the links of this ShowPolicyRoleResult.
 
         :return: The links of this ShowPolicyRoleResult.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -303,7 +303,7 @@ class ShowPolicyRoleResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowPolicyRoleResult.
+        r"""Sets the links of this ShowPolicyRoleResult.
 
         :param links: The links of this ShowPolicyRoleResult.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -312,7 +312,7 @@ class ShowPolicyRoleResult:
 
     @property
     def id(self):
-        """Gets the id of this ShowPolicyRoleResult.
+        r"""Gets the id of this ShowPolicyRoleResult.
 
         自定义策略ID。
 
@@ -323,7 +323,7 @@ class ShowPolicyRoleResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowPolicyRoleResult.
+        r"""Sets the id of this ShowPolicyRoleResult.
 
         自定义策略ID。
 
@@ -334,7 +334,7 @@ class ShowPolicyRoleResult:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ShowPolicyRoleResult.
+        r"""Gets the display_name of this ShowPolicyRoleResult.
 
         自定义策略展示名。
 
@@ -345,7 +345,7 @@ class ShowPolicyRoleResult:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ShowPolicyRoleResult.
+        r"""Sets the display_name of this ShowPolicyRoleResult.
 
         自定义策略展示名。
 
@@ -356,7 +356,7 @@ class ShowPolicyRoleResult:
 
     @property
     def type(self):
-        """Gets the type of this ShowPolicyRoleResult.
+        r"""Gets the type of this ShowPolicyRoleResult.
 
         自定义策略的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
@@ -367,7 +367,7 @@ class ShowPolicyRoleResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowPolicyRoleResult.
+        r"""Sets the type of this ShowPolicyRoleResult.
 
         自定义策略的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
@@ -378,7 +378,7 @@ class ShowPolicyRoleResult:
 
     @property
     def policy(self):
-        """Gets the policy of this ShowPolicyRoleResult.
+        r"""Gets the policy of this ShowPolicyRoleResult.
 
         :return: The policy of this ShowPolicyRoleResult.
         :rtype: :class:`huaweicloudsdkiam.v3.CustomPolicy`
@@ -387,7 +387,7 @@ class ShowPolicyRoleResult:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this ShowPolicyRoleResult.
+        r"""Sets the policy of this ShowPolicyRoleResult.
 
         :param policy: The policy of this ShowPolicyRoleResult.
         :type policy: :class:`huaweicloudsdkiam.v3.CustomPolicy`

@@ -25,7 +25,7 @@ class DeleteBandwidthRequest:
     }
 
     def __init__(self, bandwidth_id=None):
-        """DeleteBandwidthRequest
+        r"""DeleteBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteBandwidthRequest:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this DeleteBandwidthRequest.
+        r"""Gets the bandwidth_id of this DeleteBandwidthRequest.
 
         带宽ID。
 
@@ -53,7 +53,7 @@ class DeleteBandwidthRequest:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this DeleteBandwidthRequest.
+        r"""Sets the bandwidth_id of this DeleteBandwidthRequest.
 
         带宽ID。
 

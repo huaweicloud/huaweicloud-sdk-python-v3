@@ -25,7 +25,7 @@ class ListImageCachesRequest:
     }
 
     def __init__(self, name=None):
-        """ListImageCachesRequest
+        r"""ListImageCachesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListImageCachesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListImageCachesRequest.
+        r"""Gets the name of this ListImageCachesRequest.
 
         **参数解释：** 按单个镜像缓存名称进行过滤，不支持模糊匹配。 **约束限制：** 不涉及 **取值范围：** 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-128位，且不能以中划线(-)结尾。 **默认取值：** 无 
 
@@ -54,7 +54,7 @@ class ListImageCachesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListImageCachesRequest.
+        r"""Sets the name of this ListImageCachesRequest.
 
         **参数解释：** 按单个镜像缓存名称进行过滤，不支持模糊匹配。 **约束限制：** 不涉及 **取值范围：** 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-128位，且不能以中划线(-)结尾。 **默认取值：** 无 
 

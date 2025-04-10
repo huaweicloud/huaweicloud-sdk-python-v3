@@ -29,7 +29,7 @@ class StreamDetail:
     }
 
     def __init__(self, start_time=None, end_time=None, data_list=None):
-        """StreamDetail
+        r"""StreamDetail
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class StreamDetail:
 
     @property
     def start_time(self):
-        """Gets the start_time of this StreamDetail.
+        r"""Gets the start_time of this StreamDetail.
 
         采样开始时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -65,7 +65,7 @@ class StreamDetail:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this StreamDetail.
+        r"""Sets the start_time of this StreamDetail.
 
         采样开始时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -76,7 +76,7 @@ class StreamDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this StreamDetail.
+        r"""Gets the end_time of this StreamDetail.
 
         采样结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -87,7 +87,7 @@ class StreamDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this StreamDetail.
+        r"""Sets the end_time of this StreamDetail.
 
         采样结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -98,7 +98,7 @@ class StreamDetail:
 
     @property
     def data_list(self):
-        """Gets the data_list of this StreamDetail.
+        r"""Gets the data_list of this StreamDetail.
 
         流监控数据列表。
 
@@ -109,7 +109,7 @@ class StreamDetail:
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this StreamDetail.
+        r"""Sets the data_list of this StreamDetail.
 
         流监控数据列表。
 

@@ -31,7 +31,7 @@ class Catalog:
     }
 
     def __init__(self, endpoints=None, id=None, name=None, type=None):
-        """Catalog
+        r"""Catalog
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class Catalog:
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this Catalog.
+        r"""Gets the endpoints of this Catalog.
 
         终端节点信息。
 
@@ -71,7 +71,7 @@ class Catalog:
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this Catalog.
+        r"""Sets the endpoints of this Catalog.
 
         终端节点信息。
 
@@ -82,7 +82,7 @@ class Catalog:
 
     @property
     def id(self):
-        """Gets the id of this Catalog.
+        r"""Gets the id of this Catalog.
 
         服务ID。
 
@@ -93,7 +93,7 @@ class Catalog:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Catalog.
+        r"""Sets the id of this Catalog.
 
         服务ID。
 
@@ -104,7 +104,7 @@ class Catalog:
 
     @property
     def name(self):
-        """Gets the name of this Catalog.
+        r"""Gets the name of this Catalog.
 
         服务名。
 
@@ -115,7 +115,7 @@ class Catalog:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Catalog.
+        r"""Sets the name of this Catalog.
 
         服务名。
 
@@ -126,7 +126,7 @@ class Catalog:
 
     @property
     def type(self):
-        """Gets the type of this Catalog.
+        r"""Gets the type of this Catalog.
 
         服务类型。
 
@@ -137,7 +137,7 @@ class Catalog:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Catalog.
+        r"""Sets the type of this Catalog.
 
         服务类型。
 

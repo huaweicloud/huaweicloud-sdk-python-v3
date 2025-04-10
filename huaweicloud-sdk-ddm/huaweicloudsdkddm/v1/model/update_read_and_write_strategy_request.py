@@ -27,7 +27,7 @@ class UpdateReadAndWriteStrategyRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateReadAndWriteStrategyRequest
+        r"""UpdateReadAndWriteStrategyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateReadAndWriteStrategyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateReadAndWriteStrategyRequest.
+        r"""Gets the instance_id of this UpdateReadAndWriteStrategyRequest.
 
         DDM实例ID
 
@@ -60,7 +60,7 @@ class UpdateReadAndWriteStrategyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateReadAndWriteStrategyRequest.
+        r"""Sets the instance_id of this UpdateReadAndWriteStrategyRequest.
 
         DDM实例ID
 
@@ -71,7 +71,7 @@ class UpdateReadAndWriteStrategyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateReadAndWriteStrategyRequest.
+        r"""Gets the body of this UpdateReadAndWriteStrategyRequest.
 
         :return: The body of this UpdateReadAndWriteStrategyRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.ModifyReadAndWriteStrategyReq`
@@ -80,7 +80,7 @@ class UpdateReadAndWriteStrategyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateReadAndWriteStrategyRequest.
+        r"""Sets the body of this UpdateReadAndWriteStrategyRequest.
 
         :param body: The body of this UpdateReadAndWriteStrategyRequest.
         :type body: :class:`huaweicloudsdkddm.v1.ModifyReadAndWriteStrategyReq`

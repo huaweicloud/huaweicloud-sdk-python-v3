@@ -35,7 +35,7 @@ class ListArtifactoryStorageStatisticRequest:
     }
 
     def __init__(self, tenant_id=None, project_id=None, repo=None, start_time=None, end_time=None, instance_id=None):
-        """ListArtifactoryStorageStatisticRequest
+        r"""ListArtifactoryStorageStatisticRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListArtifactoryStorageStatisticRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ListArtifactoryStorageStatisticRequest.
+        r"""Gets the tenant_id of this ListArtifactoryStorageStatisticRequest.
 
         租户id
 
@@ -87,7 +87,7 @@ class ListArtifactoryStorageStatisticRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ListArtifactoryStorageStatisticRequest.
+        r"""Sets the tenant_id of this ListArtifactoryStorageStatisticRequest.
 
         租户id
 
@@ -98,7 +98,7 @@ class ListArtifactoryStorageStatisticRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListArtifactoryStorageStatisticRequest.
+        r"""Gets the project_id of this ListArtifactoryStorageStatisticRequest.
 
         项目id
 
@@ -109,7 +109,7 @@ class ListArtifactoryStorageStatisticRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListArtifactoryStorageStatisticRequest.
+        r"""Sets the project_id of this ListArtifactoryStorageStatisticRequest.
 
         项目id
 
@@ -120,7 +120,7 @@ class ListArtifactoryStorageStatisticRequest:
 
     @property
     def repo(self):
-        """Gets the repo of this ListArtifactoryStorageStatisticRequest.
+        r"""Gets the repo of this ListArtifactoryStorageStatisticRequest.
 
         仓库id
 
@@ -131,7 +131,7 @@ class ListArtifactoryStorageStatisticRequest:
 
     @repo.setter
     def repo(self, repo):
-        """Sets the repo of this ListArtifactoryStorageStatisticRequest.
+        r"""Sets the repo of this ListArtifactoryStorageStatisticRequest.
 
         仓库id
 
@@ -142,7 +142,7 @@ class ListArtifactoryStorageStatisticRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListArtifactoryStorageStatisticRequest.
+        r"""Gets the start_time of this ListArtifactoryStorageStatisticRequest.
 
         起始时间
 
@@ -153,7 +153,7 @@ class ListArtifactoryStorageStatisticRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListArtifactoryStorageStatisticRequest.
+        r"""Sets the start_time of this ListArtifactoryStorageStatisticRequest.
 
         起始时间
 
@@ -164,7 +164,7 @@ class ListArtifactoryStorageStatisticRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListArtifactoryStorageStatisticRequest.
+        r"""Gets the end_time of this ListArtifactoryStorageStatisticRequest.
 
         终止时间
 
@@ -175,7 +175,7 @@ class ListArtifactoryStorageStatisticRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListArtifactoryStorageStatisticRequest.
+        r"""Sets the end_time of this ListArtifactoryStorageStatisticRequest.
 
         终止时间
 
@@ -186,7 +186,7 @@ class ListArtifactoryStorageStatisticRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListArtifactoryStorageStatisticRequest.
+        r"""Gets the instance_id of this ListArtifactoryStorageStatisticRequest.
 
         实例id
 
@@ -197,7 +197,7 @@ class ListArtifactoryStorageStatisticRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListArtifactoryStorageStatisticRequest.
+        r"""Sets the instance_id of this ListArtifactoryStorageStatisticRequest.
 
         实例id
 

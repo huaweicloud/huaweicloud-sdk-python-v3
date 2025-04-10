@@ -36,7 +36,7 @@ class ShowInstanceVersionResponse(SdkResponse):
     }
 
     def __init__(self, engine_minor_version=None, latest_engine_minor_version=None, proxy_minor_version=None, latest_proxy_minor_version=None, engine_minor_version_upgradable=None, proxy_minor_version_upgradable=None):
-        """ShowInstanceVersionResponse
+        r"""ShowInstanceVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowInstanceVersionResponse(SdkResponse):
 
     @property
     def engine_minor_version(self):
-        """Gets the engine_minor_version of this ShowInstanceVersionResponse.
+        r"""Gets the engine_minor_version of this ShowInstanceVersionResponse.
 
         当前实例内核小版本信息。
 
@@ -90,7 +90,7 @@ class ShowInstanceVersionResponse(SdkResponse):
 
     @engine_minor_version.setter
     def engine_minor_version(self, engine_minor_version):
-        """Sets the engine_minor_version of this ShowInstanceVersionResponse.
+        r"""Sets the engine_minor_version of this ShowInstanceVersionResponse.
 
         当前实例内核小版本信息。
 
@@ -101,7 +101,7 @@ class ShowInstanceVersionResponse(SdkResponse):
 
     @property
     def latest_engine_minor_version(self):
-        """Gets the latest_engine_minor_version of this ShowInstanceVersionResponse.
+        r"""Gets the latest_engine_minor_version of this ShowInstanceVersionResponse.
 
         DCS实例最新的内核小版本信息。
 
@@ -112,7 +112,7 @@ class ShowInstanceVersionResponse(SdkResponse):
 
     @latest_engine_minor_version.setter
     def latest_engine_minor_version(self, latest_engine_minor_version):
-        """Sets the latest_engine_minor_version of this ShowInstanceVersionResponse.
+        r"""Sets the latest_engine_minor_version of this ShowInstanceVersionResponse.
 
         DCS实例最新的内核小版本信息。
 
@@ -123,7 +123,7 @@ class ShowInstanceVersionResponse(SdkResponse):
 
     @property
     def proxy_minor_version(self):
-        """Gets the proxy_minor_version of this ShowInstanceVersionResponse.
+        r"""Gets the proxy_minor_version of this ShowInstanceVersionResponse.
 
         当前实例proxy代理节点版本信息。
 
@@ -134,7 +134,7 @@ class ShowInstanceVersionResponse(SdkResponse):
 
     @proxy_minor_version.setter
     def proxy_minor_version(self, proxy_minor_version):
-        """Sets the proxy_minor_version of this ShowInstanceVersionResponse.
+        r"""Sets the proxy_minor_version of this ShowInstanceVersionResponse.
 
         当前实例proxy代理节点版本信息。
 
@@ -145,7 +145,7 @@ class ShowInstanceVersionResponse(SdkResponse):
 
     @property
     def latest_proxy_minor_version(self):
-        """Gets the latest_proxy_minor_version of this ShowInstanceVersionResponse.
+        r"""Gets the latest_proxy_minor_version of this ShowInstanceVersionResponse.
 
         DCS实例最新的proxy代理节点版本信息。
 
@@ -156,7 +156,7 @@ class ShowInstanceVersionResponse(SdkResponse):
 
     @latest_proxy_minor_version.setter
     def latest_proxy_minor_version(self, latest_proxy_minor_version):
-        """Sets the latest_proxy_minor_version of this ShowInstanceVersionResponse.
+        r"""Sets the latest_proxy_minor_version of this ShowInstanceVersionResponse.
 
         DCS实例最新的proxy代理节点版本信息。
 
@@ -167,7 +167,7 @@ class ShowInstanceVersionResponse(SdkResponse):
 
     @property
     def engine_minor_version_upgradable(self):
-        """Gets the engine_minor_version_upgradable of this ShowInstanceVersionResponse.
+        r"""Gets the engine_minor_version_upgradable of this ShowInstanceVersionResponse.
 
         当前实例内核是否可以升级。
 
@@ -178,7 +178,7 @@ class ShowInstanceVersionResponse(SdkResponse):
 
     @engine_minor_version_upgradable.setter
     def engine_minor_version_upgradable(self, engine_minor_version_upgradable):
-        """Sets the engine_minor_version_upgradable of this ShowInstanceVersionResponse.
+        r"""Sets the engine_minor_version_upgradable of this ShowInstanceVersionResponse.
 
         当前实例内核是否可以升级。
 
@@ -189,7 +189,7 @@ class ShowInstanceVersionResponse(SdkResponse):
 
     @property
     def proxy_minor_version_upgradable(self):
-        """Gets the proxy_minor_version_upgradable of this ShowInstanceVersionResponse.
+        r"""Gets the proxy_minor_version_upgradable of this ShowInstanceVersionResponse.
 
         当前实例proxy代理节点是否可以升级。
 
@@ -200,7 +200,7 @@ class ShowInstanceVersionResponse(SdkResponse):
 
     @proxy_minor_version_upgradable.setter
     def proxy_minor_version_upgradable(self, proxy_minor_version_upgradable):
-        """Sets the proxy_minor_version_upgradable of this ShowInstanceVersionResponse.
+        r"""Sets the proxy_minor_version_upgradable of this ShowInstanceVersionResponse.
 
         当前实例proxy代理节点是否可以升级。
 

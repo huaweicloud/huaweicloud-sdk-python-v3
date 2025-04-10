@@ -29,7 +29,7 @@ class CreateUserGroupReq:
     }
 
     def __init__(self, group_name=None, platform_type=None, description=None):
-        """CreateUserGroupReq
+        r"""CreateUserGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateUserGroupReq:
 
     @property
     def group_name(self):
-        """Gets the group_name of this CreateUserGroupReq.
+        r"""Gets the group_name of this CreateUserGroupReq.
 
         用户组名称。
 
@@ -66,7 +66,7 @@ class CreateUserGroupReq:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this CreateUserGroupReq.
+        r"""Sets the group_name of this CreateUserGroupReq.
 
         用户组名称。
 
@@ -77,7 +77,7 @@ class CreateUserGroupReq:
 
     @property
     def platform_type(self):
-        """Gets the platform_type of this CreateUserGroupReq.
+        r"""Gets the platform_type of this CreateUserGroupReq.
 
         用户组类型。 * AD： AD域用户组 * LOCAL： 本地liteAs用户组
 
@@ -88,7 +88,7 @@ class CreateUserGroupReq:
 
     @platform_type.setter
     def platform_type(self, platform_type):
-        """Sets the platform_type of this CreateUserGroupReq.
+        r"""Sets the platform_type of this CreateUserGroupReq.
 
         用户组类型。 * AD： AD域用户组 * LOCAL： 本地liteAs用户组
 
@@ -99,7 +99,7 @@ class CreateUserGroupReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateUserGroupReq.
+        r"""Gets the description of this CreateUserGroupReq.
 
         用户组描述。
 
@@ -110,7 +110,7 @@ class CreateUserGroupReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateUserGroupReq.
+        r"""Sets the description of this CreateUserGroupReq.
 
         用户组描述。
 

@@ -27,7 +27,7 @@ class DeletePolicyBlackAndWhiteIpListRequest:
     }
 
     def __init__(self, policy_id=None, body=None):
-        """DeletePolicyBlackAndWhiteIpListRequest
+        r"""DeletePolicyBlackAndWhiteIpListRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeletePolicyBlackAndWhiteIpListRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DeletePolicyBlackAndWhiteIpListRequest.
+        r"""Gets the policy_id of this DeletePolicyBlackAndWhiteIpListRequest.
 
         策略id
 
@@ -60,7 +60,7 @@ class DeletePolicyBlackAndWhiteIpListRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DeletePolicyBlackAndWhiteIpListRequest.
+        r"""Sets the policy_id of this DeletePolicyBlackAndWhiteIpListRequest.
 
         策略id
 
@@ -71,7 +71,7 @@ class DeletePolicyBlackAndWhiteIpListRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeletePolicyBlackAndWhiteIpListRequest.
+        r"""Gets the body of this DeletePolicyBlackAndWhiteIpListRequest.
 
         :return: The body of this DeletePolicyBlackAndWhiteIpListRequest.
         :rtype: :class:`huaweicloudsdkaad.v1.BlackWhiteIpRequestBody`
@@ -80,7 +80,7 @@ class DeletePolicyBlackAndWhiteIpListRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeletePolicyBlackAndWhiteIpListRequest.
+        r"""Sets the body of this DeletePolicyBlackAndWhiteIpListRequest.
 
         :param body: The body of this DeletePolicyBlackAndWhiteIpListRequest.
         :type body: :class:`huaweicloudsdkaad.v1.BlackWhiteIpRequestBody`

@@ -30,7 +30,7 @@ class ListDomainsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, top_level_domain_num=None, domains=None):
-        """ListDomainsResponse
+        r"""ListDomainsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDomainsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDomainsResponse.
+        r"""Gets the total of this ListDomainsResponse.
 
         网站域名总数
 
@@ -69,7 +69,7 @@ class ListDomainsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDomainsResponse.
+        r"""Sets the total of this ListDomainsResponse.
 
         网站域名总数
 
@@ -80,7 +80,7 @@ class ListDomainsResponse(SdkResponse):
 
     @property
     def top_level_domain_num(self):
-        """Gets the top_level_domain_num of this ListDomainsResponse.
+        r"""Gets the top_level_domain_num of this ListDomainsResponse.
 
         网站一级域名总数
 
@@ -91,7 +91,7 @@ class ListDomainsResponse(SdkResponse):
 
     @top_level_domain_num.setter
     def top_level_domain_num(self, top_level_domain_num):
-        """Sets the top_level_domain_num of this ListDomainsResponse.
+        r"""Sets the top_level_domain_num of this ListDomainsResponse.
 
         网站一级域名总数
 
@@ -102,7 +102,7 @@ class ListDomainsResponse(SdkResponse):
 
     @property
     def domains(self):
-        """Gets the domains of this ListDomainsResponse.
+        r"""Gets the domains of this ListDomainsResponse.
 
         网站域名列表
 
@@ -113,7 +113,7 @@ class ListDomainsResponse(SdkResponse):
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this ListDomainsResponse.
+        r"""Sets the domains of this ListDomainsResponse.
 
         网站域名列表
 

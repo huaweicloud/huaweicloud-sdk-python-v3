@@ -25,7 +25,7 @@ class CreateOrUpdateTagsRequest:
     }
 
     def __init__(self, body=None):
-        """CreateOrUpdateTagsRequest
+        r"""CreateOrUpdateTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateOrUpdateTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOrUpdateTagsRequest.
+        r"""Gets the body of this CreateOrUpdateTagsRequest.
 
         :return: The body of this CreateOrUpdateTagsRequest.
         :rtype: :class:`huaweicloudsdkims.v2.AddOrUpdateTagsRequestBody`
@@ -52,7 +52,7 @@ class CreateOrUpdateTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOrUpdateTagsRequest.
+        r"""Sets the body of this CreateOrUpdateTagsRequest.
 
         :param body: The body of this CreateOrUpdateTagsRequest.
         :type body: :class:`huaweicloudsdkims.v2.AddOrUpdateTagsRequestBody`

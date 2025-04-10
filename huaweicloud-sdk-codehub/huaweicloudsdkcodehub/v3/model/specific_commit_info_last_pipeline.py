@@ -33,7 +33,7 @@ class SpecificCommitInfoLastPipeline:
     }
 
     def __init__(self, id=None, sha=None, ref=None, status=None, web_url=None):
-        """SpecificCommitInfoLastPipeline
+        r"""SpecificCommitInfoLastPipeline
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SpecificCommitInfoLastPipeline:
 
     @property
     def id(self):
-        """Gets the id of this SpecificCommitInfoLastPipeline.
+        r"""Gets the id of this SpecificCommitInfoLastPipeline.
 
         流水线id
 
@@ -82,7 +82,7 @@ class SpecificCommitInfoLastPipeline:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SpecificCommitInfoLastPipeline.
+        r"""Sets the id of this SpecificCommitInfoLastPipeline.
 
         流水线id
 
@@ -93,7 +93,7 @@ class SpecificCommitInfoLastPipeline:
 
     @property
     def sha(self):
-        """Gets the sha of this SpecificCommitInfoLastPipeline.
+        r"""Gets the sha of this SpecificCommitInfoLastPipeline.
 
         提交对应的SHA id
 
@@ -104,7 +104,7 @@ class SpecificCommitInfoLastPipeline:
 
     @sha.setter
     def sha(self, sha):
-        """Sets the sha of this SpecificCommitInfoLastPipeline.
+        r"""Sets the sha of this SpecificCommitInfoLastPipeline.
 
         提交对应的SHA id
 
@@ -115,7 +115,7 @@ class SpecificCommitInfoLastPipeline:
 
     @property
     def ref(self):
-        """Gets the ref of this SpecificCommitInfoLastPipeline.
+        r"""Gets the ref of this SpecificCommitInfoLastPipeline.
 
         分支名
 
@@ -126,7 +126,7 @@ class SpecificCommitInfoLastPipeline:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this SpecificCommitInfoLastPipeline.
+        r"""Sets the ref of this SpecificCommitInfoLastPipeline.
 
         分支名
 
@@ -137,7 +137,7 @@ class SpecificCommitInfoLastPipeline:
 
     @property
     def status(self):
-        """Gets the status of this SpecificCommitInfoLastPipeline.
+        r"""Gets the status of this SpecificCommitInfoLastPipeline.
 
         流水线状态
 
@@ -148,7 +148,7 @@ class SpecificCommitInfoLastPipeline:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SpecificCommitInfoLastPipeline.
+        r"""Sets the status of this SpecificCommitInfoLastPipeline.
 
         流水线状态
 
@@ -159,7 +159,7 @@ class SpecificCommitInfoLastPipeline:
 
     @property
     def web_url(self):
-        """Gets the web_url of this SpecificCommitInfoLastPipeline.
+        r"""Gets the web_url of this SpecificCommitInfoLastPipeline.
 
         流水线url
 
@@ -170,7 +170,7 @@ class SpecificCommitInfoLastPipeline:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this SpecificCommitInfoLastPipeline.
+        r"""Sets the web_url of this SpecificCommitInfoLastPipeline.
 
         流水线url
 

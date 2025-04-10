@@ -38,7 +38,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
     }
 
     def __init__(self, target_id=None, creation_time=None, file_system_path=None, failure_details=None, lifecycle=None, obs=None, x_request_id=None):
-        """ShowBackendTargetInfoResponse
+        r"""ShowBackendTargetInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
 
     @property
     def target_id(self):
-        """Gets the target_id of this ShowBackendTargetInfoResponse.
+        r"""Gets the target_id of this ShowBackendTargetInfoResponse.
 
         绑定关系id
 
@@ -97,7 +97,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this ShowBackendTargetInfoResponse.
+        r"""Sets the target_id of this ShowBackendTargetInfoResponse.
 
         绑定关系id
 
@@ -108,7 +108,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
 
     @property
     def creation_time(self):
-        """Gets the creation_time of this ShowBackendTargetInfoResponse.
+        r"""Gets the creation_time of this ShowBackendTargetInfoResponse.
 
         绑定关系创建时间
 
@@ -119,7 +119,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
 
     @creation_time.setter
     def creation_time(self, creation_time):
-        """Sets the creation_time of this ShowBackendTargetInfoResponse.
+        r"""Sets the creation_time of this ShowBackendTargetInfoResponse.
 
         绑定关系创建时间
 
@@ -130,7 +130,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
 
     @property
     def file_system_path(self):
-        """Gets the file_system_path of this ShowBackendTargetInfoResponse.
+        r"""Gets the file_system_path of this ShowBackendTargetInfoResponse.
 
         联动目录名称
 
@@ -141,7 +141,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
 
     @file_system_path.setter
     def file_system_path(self, file_system_path):
-        """Sets the file_system_path of this ShowBackendTargetInfoResponse.
+        r"""Sets the file_system_path of this ShowBackendTargetInfoResponse.
 
         联动目录名称
 
@@ -152,7 +152,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
 
     @property
     def failure_details(self):
-        """Gets the failure_details of this ShowBackendTargetInfoResponse.
+        r"""Gets the failure_details of this ShowBackendTargetInfoResponse.
 
         :return: The failure_details of this ShowBackendTargetInfoResponse.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.FailureDetailsMessage`
@@ -161,7 +161,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
 
     @failure_details.setter
     def failure_details(self, failure_details):
-        """Sets the failure_details of this ShowBackendTargetInfoResponse.
+        r"""Sets the failure_details of this ShowBackendTargetInfoResponse.
 
         :param failure_details: The failure_details of this ShowBackendTargetInfoResponse.
         :type failure_details: :class:`huaweicloudsdksfsturbo.v1.FailureDetailsMessage`
@@ -170,7 +170,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
 
     @property
     def lifecycle(self):
-        """Gets the lifecycle of this ShowBackendTargetInfoResponse.
+        r"""Gets the lifecycle of this ShowBackendTargetInfoResponse.
 
         绑定状态
 
@@ -181,7 +181,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
 
     @lifecycle.setter
     def lifecycle(self, lifecycle):
-        """Sets the lifecycle of this ShowBackendTargetInfoResponse.
+        r"""Sets the lifecycle of this ShowBackendTargetInfoResponse.
 
         绑定状态
 
@@ -192,7 +192,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
 
     @property
     def obs(self):
-        """Gets the obs of this ShowBackendTargetInfoResponse.
+        r"""Gets the obs of this ShowBackendTargetInfoResponse.
 
         :return: The obs of this ShowBackendTargetInfoResponse.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepository`
@@ -201,7 +201,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
 
     @obs.setter
     def obs(self, obs):
-        """Sets the obs of this ShowBackendTargetInfoResponse.
+        r"""Sets the obs of this ShowBackendTargetInfoResponse.
 
         :param obs: The obs of this ShowBackendTargetInfoResponse.
         :type obs: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepository`
@@ -210,7 +210,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowBackendTargetInfoResponse.
+        r"""Gets the x_request_id of this ShowBackendTargetInfoResponse.
 
         :return: The x_request_id of this ShowBackendTargetInfoResponse.
         :rtype: str
@@ -219,7 +219,7 @@ class ShowBackendTargetInfoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowBackendTargetInfoResponse.
+        r"""Sets the x_request_id of this ShowBackendTargetInfoResponse.
 
         :param x_request_id: The x_request_id of this ShowBackendTargetInfoResponse.
         :type x_request_id: str

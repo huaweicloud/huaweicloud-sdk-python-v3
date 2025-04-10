@@ -25,7 +25,7 @@ class ClipboardBandwidthControlOptions:
     }
 
     def __init__(self, clipboard_bandwidth_control_value=None):
-        """ClipboardBandwidthControlOptions
+        r"""ClipboardBandwidthControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ClipboardBandwidthControlOptions:
 
     @property
     def clipboard_bandwidth_control_value(self):
-        """Gets the clipboard_bandwidth_control_value of this ClipboardBandwidthControlOptions.
+        r"""Gets the clipboard_bandwidth_control_value of this ClipboardBandwidthControlOptions.
 
         剪切板带宽控制量（Kbps）。取值范围为[100-2000]。默认：1000。
 
@@ -54,7 +54,7 @@ class ClipboardBandwidthControlOptions:
 
     @clipboard_bandwidth_control_value.setter
     def clipboard_bandwidth_control_value(self, clipboard_bandwidth_control_value):
-        """Sets the clipboard_bandwidth_control_value of this ClipboardBandwidthControlOptions.
+        r"""Sets the clipboard_bandwidth_control_value of this ClipboardBandwidthControlOptions.
 
         剪切板带宽控制量（Kbps）。取值范围为[100-2000]。默认：1000。
 

@@ -27,7 +27,7 @@ class CreateSecuritySecrecyLevelRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateSecuritySecrecyLevelRequest
+        r"""CreateSecuritySecrecyLevelRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSecuritySecrecyLevelRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateSecuritySecrecyLevelRequest.
+        r"""Gets the workspace of this CreateSecuritySecrecyLevelRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class CreateSecuritySecrecyLevelRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateSecuritySecrecyLevelRequest.
+        r"""Sets the workspace of this CreateSecuritySecrecyLevelRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class CreateSecuritySecrecyLevelRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSecuritySecrecyLevelRequest.
+        r"""Gets the body of this CreateSecuritySecrecyLevelRequest.
 
         :return: The body of this CreateSecuritySecrecyLevelRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecrecyLevelDTO`
@@ -80,7 +80,7 @@ class CreateSecuritySecrecyLevelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSecuritySecrecyLevelRequest.
+        r"""Sets the body of this CreateSecuritySecrecyLevelRequest.
 
         :param body: The body of this CreateSecuritySecrecyLevelRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.CreateSecrecyLevelDTO`

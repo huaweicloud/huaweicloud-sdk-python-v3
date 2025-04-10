@@ -53,7 +53,7 @@ class TableInput:
     }
 
     def __init__(self, table_name=None, table_type=None, owner=None, owner_type=None, create_time=None, last_access_time=None, last_analyzed_time=None, partition_keys=None, retention=None, storage_descriptor=None, parameters=None, comments=None, view_expanded_text=None, view_original_text=None, ignore_obs_checked=None):
-        """TableInput
+        r"""TableInput
 
         The model defined in huaweicloud sdk
 
@@ -136,7 +136,7 @@ class TableInput:
 
     @property
     def table_name(self):
-        """Gets the table_name of this TableInput.
+        r"""Gets the table_name of this TableInput.
 
         表名称。只能包含中文、字母、数字和下划线，且长度为1~256个字符。
 
@@ -147,7 +147,7 @@ class TableInput:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this TableInput.
+        r"""Sets the table_name of this TableInput.
 
         表名称。只能包含中文、字母、数字和下划线，且长度为1~256个字符。
 
@@ -158,7 +158,7 @@ class TableInput:
 
     @property
     def table_type(self):
-        """Gets the table_type of this TableInput.
+        r"""Gets the table_type of this TableInput.
 
         表类型,MANAGED_TABLE-内表,EXTERNAL_TABLE-外表,VIRTUAL_VIEW-视图,MATERIALIZED_VIEW-物化视图
 
@@ -169,7 +169,7 @@ class TableInput:
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this TableInput.
+        r"""Sets the table_type of this TableInput.
 
         表类型,MANAGED_TABLE-内表,EXTERNAL_TABLE-外表,VIRTUAL_VIEW-视图,MATERIALIZED_VIEW-物化视图
 
@@ -180,7 +180,7 @@ class TableInput:
 
     @property
     def owner(self):
-        """Gets the owner of this TableInput.
+        r"""Gets the owner of this TableInput.
 
         表所有者。只能包含字母、数字和下划线，且长度为1~49个字符。
 
@@ -191,7 +191,7 @@ class TableInput:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TableInput.
+        r"""Sets the owner of this TableInput.
 
         表所有者。只能包含字母、数字和下划线，且长度为1~49个字符。
 
@@ -202,7 +202,7 @@ class TableInput:
 
     @property
     def owner_type(self):
-        """Gets the owner_type of this TableInput.
+        r"""Gets the owner_type of this TableInput.
 
         所有者类型,USER-用户,GROUP-组,ROLE-角色
 
@@ -213,7 +213,7 @@ class TableInput:
 
     @owner_type.setter
     def owner_type(self, owner_type):
-        """Sets the owner_type of this TableInput.
+        r"""Sets the owner_type of this TableInput.
 
         所有者类型,USER-用户,GROUP-组,ROLE-角色
 
@@ -224,7 +224,7 @@ class TableInput:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TableInput.
+        r"""Gets the create_time of this TableInput.
 
         表创建时间
 
@@ -235,7 +235,7 @@ class TableInput:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TableInput.
+        r"""Sets the create_time of this TableInput.
 
         表创建时间
 
@@ -246,7 +246,7 @@ class TableInput:
 
     @property
     def last_access_time(self):
-        """Gets the last_access_time of this TableInput.
+        r"""Gets the last_access_time of this TableInput.
 
         最近一次访问时间
 
@@ -257,7 +257,7 @@ class TableInput:
 
     @last_access_time.setter
     def last_access_time(self, last_access_time):
-        """Sets the last_access_time of this TableInput.
+        r"""Sets the last_access_time of this TableInput.
 
         最近一次访问时间
 
@@ -268,7 +268,7 @@ class TableInput:
 
     @property
     def last_analyzed_time(self):
-        """Gets the last_analyzed_time of this TableInput.
+        r"""Gets the last_analyzed_time of this TableInput.
 
         最近一次分析统计时间
 
@@ -279,7 +279,7 @@ class TableInput:
 
     @last_analyzed_time.setter
     def last_analyzed_time(self, last_analyzed_time):
-        """Sets the last_analyzed_time of this TableInput.
+        r"""Sets the last_analyzed_time of this TableInput.
 
         最近一次分析统计时间
 
@@ -290,7 +290,7 @@ class TableInput:
 
     @property
     def partition_keys(self):
-        """Gets the partition_keys of this TableInput.
+        r"""Gets the partition_keys of this TableInput.
 
         分区列的信息
 
@@ -301,7 +301,7 @@ class TableInput:
 
     @partition_keys.setter
     def partition_keys(self, partition_keys):
-        """Sets the partition_keys of this TableInput.
+        r"""Sets the partition_keys of this TableInput.
 
         分区列的信息
 
@@ -312,7 +312,7 @@ class TableInput:
 
     @property
     def retention(self):
-        """Gets the retention of this TableInput.
+        r"""Gets the retention of this TableInput.
 
         表保留时间
 
@@ -323,7 +323,7 @@ class TableInput:
 
     @retention.setter
     def retention(self, retention):
-        """Sets the retention of this TableInput.
+        r"""Sets the retention of this TableInput.
 
         表保留时间
 
@@ -334,7 +334,7 @@ class TableInput:
 
     @property
     def storage_descriptor(self):
-        """Gets the storage_descriptor of this TableInput.
+        r"""Gets the storage_descriptor of this TableInput.
 
         :return: The storage_descriptor of this TableInput.
         :rtype: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`
@@ -343,7 +343,7 @@ class TableInput:
 
     @storage_descriptor.setter
     def storage_descriptor(self, storage_descriptor):
-        """Sets the storage_descriptor of this TableInput.
+        r"""Sets the storage_descriptor of this TableInput.
 
         :param storage_descriptor: The storage_descriptor of this TableInput.
         :type storage_descriptor: :class:`huaweicloudsdklakeformation.v1.StorageDescriptor`
@@ -352,7 +352,7 @@ class TableInput:
 
     @property
     def parameters(self):
-        """Gets the parameters of this TableInput.
+        r"""Gets the parameters of this TableInput.
 
         表参数信息，每个键是一个键字符串，不少于 1 个字节或超过 255 个字节 每个值是一个 UTF-8 字符串，不超过 4000 个字节
 
@@ -363,7 +363,7 @@ class TableInput:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this TableInput.
+        r"""Sets the parameters of this TableInput.
 
         表参数信息，每个键是一个键字符串，不少于 1 个字节或超过 255 个字节 每个值是一个 UTF-8 字符串，不超过 4000 个字节
 
@@ -374,7 +374,7 @@ class TableInput:
 
     @property
     def comments(self):
-        """Gets the comments of this TableInput.
+        r"""Gets the comments of this TableInput.
 
         表描述信息。由用户创建表时输入，最大长度为4000个字符。
 
@@ -385,7 +385,7 @@ class TableInput:
 
     @comments.setter
     def comments(self, comments):
-        """Sets the comments of this TableInput.
+        r"""Sets the comments of this TableInput.
 
         表描述信息。由用户创建表时输入，最大长度为4000个字符。
 
@@ -396,7 +396,7 @@ class TableInput:
 
     @property
     def view_expanded_text(self):
-        """Gets the view_expanded_text of this TableInput.
+        r"""Gets the view_expanded_text of this TableInput.
 
         如果表是视图，则为视图的扩展文本；否则为 null
 
@@ -407,7 +407,7 @@ class TableInput:
 
     @view_expanded_text.setter
     def view_expanded_text(self, view_expanded_text):
-        """Sets the view_expanded_text of this TableInput.
+        r"""Sets the view_expanded_text of this TableInput.
 
         如果表是视图，则为视图的扩展文本；否则为 null
 
@@ -418,7 +418,7 @@ class TableInput:
 
     @property
     def view_original_text(self):
-        """Gets the view_original_text of this TableInput.
+        r"""Gets the view_original_text of this TableInput.
 
         如果表是视图，则为视图的原始文本；否则为 null
 
@@ -429,7 +429,7 @@ class TableInput:
 
     @view_original_text.setter
     def view_original_text(self, view_original_text):
-        """Sets the view_original_text of this TableInput.
+        r"""Sets the view_original_text of this TableInput.
 
         如果表是视图，则为视图的原始文本；否则为 null
 
@@ -440,7 +440,7 @@ class TableInput:
 
     @property
     def ignore_obs_checked(self):
-        """Gets the ignore_obs_checked of this TableInput.
+        r"""Gets the ignore_obs_checked of this TableInput.
 
         是否忽略内表建表时对Obs路径的限制
 
@@ -451,7 +451,7 @@ class TableInput:
 
     @ignore_obs_checked.setter
     def ignore_obs_checked(self, ignore_obs_checked):
-        """Sets the ignore_obs_checked of this TableInput.
+        r"""Sets the ignore_obs_checked of this TableInput.
 
         是否忽略内表建表时对Obs路径的限制
 

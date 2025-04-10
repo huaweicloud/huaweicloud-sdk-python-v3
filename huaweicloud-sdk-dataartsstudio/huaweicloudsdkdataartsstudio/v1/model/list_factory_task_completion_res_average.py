@@ -27,7 +27,7 @@ class ListFactoryTaskCompletionResAverage:
     }
 
     def __init__(self, record_time=None, task_completion_num=None):
-        """ListFactoryTaskCompletionResAverage
+        r"""ListFactoryTaskCompletionResAverage
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListFactoryTaskCompletionResAverage:
 
     @property
     def record_time(self):
-        """Gets the record_time of this ListFactoryTaskCompletionResAverage.
+        r"""Gets the record_time of this ListFactoryTaskCompletionResAverage.
 
         整时的时间点
 
@@ -61,7 +61,7 @@ class ListFactoryTaskCompletionResAverage:
 
     @record_time.setter
     def record_time(self, record_time):
-        """Sets the record_time of this ListFactoryTaskCompletionResAverage.
+        r"""Sets the record_time of this ListFactoryTaskCompletionResAverage.
 
         整时的时间点
 
@@ -72,7 +72,7 @@ class ListFactoryTaskCompletionResAverage:
 
     @property
     def task_completion_num(self):
-        """Gets the task_completion_num of this ListFactoryTaskCompletionResAverage.
+        r"""Gets the task_completion_num of this ListFactoryTaskCompletionResAverage.
 
         到当前时间点完成的任务数量
 
@@ -83,7 +83,7 @@ class ListFactoryTaskCompletionResAverage:
 
     @task_completion_num.setter
     def task_completion_num(self, task_completion_num):
-        """Sets the task_completion_num of this ListFactoryTaskCompletionResAverage.
+        r"""Sets the task_completion_num of this ListFactoryTaskCompletionResAverage.
 
         到当前时间点完成的任务数量
 

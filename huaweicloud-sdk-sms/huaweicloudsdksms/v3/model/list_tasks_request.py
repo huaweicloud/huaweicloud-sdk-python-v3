@@ -37,7 +37,7 @@ class ListTasksRequest:
     }
 
     def __init__(self, state=None, name=None, id=None, source_server_id=None, limit=None, offset=None, enterprise_project_id=None):
-        """ListTasksRequest
+        r"""ListTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListTasksRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListTasksRequest.
+        r"""Gets the state of this ListTasksRequest.
 
         迁移任务状态 READY:准备就绪 RUNNING:迁移中 SYNCING:同步中 MIGRATE_SUCCESS:迁移成功 MIGRATE_FAIL:迁移失败 ABORTING:中止中 ABORT:中止 DELETING::删除中 SYNC_F_ROLLBACKING:同步失败回滚中 SYNC_F_ROLLBACK_SUCCESS:同步失败回滚成功
 
@@ -96,7 +96,7 @@ class ListTasksRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListTasksRequest.
+        r"""Sets the state of this ListTasksRequest.
 
         迁移任务状态 READY:准备就绪 RUNNING:迁移中 SYNCING:同步中 MIGRATE_SUCCESS:迁移成功 MIGRATE_FAIL:迁移失败 ABORTING:中止中 ABORT:中止 DELETING::删除中 SYNC_F_ROLLBACKING:同步失败回滚中 SYNC_F_ROLLBACK_SUCCESS:同步失败回滚成功
 
@@ -107,7 +107,7 @@ class ListTasksRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListTasksRequest.
+        r"""Gets the name of this ListTasksRequest.
 
         任务的名称
 
@@ -118,7 +118,7 @@ class ListTasksRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTasksRequest.
+        r"""Sets the name of this ListTasksRequest.
 
         任务的名称
 
@@ -129,7 +129,7 @@ class ListTasksRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListTasksRequest.
+        r"""Gets the id of this ListTasksRequest.
 
         任务的ID
 
@@ -140,7 +140,7 @@ class ListTasksRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListTasksRequest.
+        r"""Sets the id of this ListTasksRequest.
 
         任务的ID
 
@@ -151,7 +151,7 @@ class ListTasksRequest:
 
     @property
     def source_server_id(self):
-        """Gets the source_server_id of this ListTasksRequest.
+        r"""Gets the source_server_id of this ListTasksRequest.
 
         源端服务器的ID
 
@@ -162,7 +162,7 @@ class ListTasksRequest:
 
     @source_server_id.setter
     def source_server_id(self, source_server_id):
-        """Sets the source_server_id of this ListTasksRequest.
+        r"""Sets the source_server_id of this ListTasksRequest.
 
         源端服务器的ID
 
@@ -173,7 +173,7 @@ class ListTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTasksRequest.
+        r"""Gets the limit of this ListTasksRequest.
 
         每一页记录的任务数量
 
@@ -184,7 +184,7 @@ class ListTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTasksRequest.
+        r"""Sets the limit of this ListTasksRequest.
 
         每一页记录的任务数量
 
@@ -195,7 +195,7 @@ class ListTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTasksRequest.
+        r"""Gets the offset of this ListTasksRequest.
 
         偏移量
 
@@ -206,7 +206,7 @@ class ListTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTasksRequest.
+        r"""Sets the offset of this ListTasksRequest.
 
         偏移量
 
@@ -217,7 +217,7 @@ class ListTasksRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListTasksRequest.
+        r"""Gets the enterprise_project_id of this ListTasksRequest.
 
         需要查询的企业项目ID
 
@@ -228,7 +228,7 @@ class ListTasksRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListTasksRequest.
+        r"""Sets the enterprise_project_id of this ListTasksRequest.
 
         需要查询的企业项目ID
 

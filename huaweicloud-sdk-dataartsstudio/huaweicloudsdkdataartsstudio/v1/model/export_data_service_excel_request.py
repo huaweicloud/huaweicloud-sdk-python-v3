@@ -29,7 +29,7 @@ class ExportDataServiceExcelRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, body=None):
-        """ExportDataServiceExcelRequest
+        r"""ExportDataServiceExcelRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ExportDataServiceExcelRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ExportDataServiceExcelRequest.
+        r"""Gets the workspace of this ExportDataServiceExcelRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -67,7 +67,7 @@ class ExportDataServiceExcelRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ExportDataServiceExcelRequest.
+        r"""Sets the workspace of this ExportDataServiceExcelRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -78,7 +78,7 @@ class ExportDataServiceExcelRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ExportDataServiceExcelRequest.
+        r"""Gets the dlm_type of this ExportDataServiceExcelRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -89,7 +89,7 @@ class ExportDataServiceExcelRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ExportDataServiceExcelRequest.
+        r"""Sets the dlm_type of this ExportDataServiceExcelRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -100,7 +100,7 @@ class ExportDataServiceExcelRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExportDataServiceExcelRequest.
+        r"""Gets the body of this ExportDataServiceExcelRequest.
 
         API导出ID列表。
 
@@ -111,7 +111,7 @@ class ExportDataServiceExcelRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportDataServiceExcelRequest.
+        r"""Sets the body of this ExportDataServiceExcelRequest.
 
         API导出ID列表。
 

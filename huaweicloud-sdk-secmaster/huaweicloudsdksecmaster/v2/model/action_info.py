@@ -39,7 +39,7 @@ class ActionInfo:
     }
 
     def __init__(self, id=None, name=None, description=None, action_type=None, action_id=None, playbook_id=None, playbook_version_id=None, project_id=None):
-        """ActionInfo
+        r"""ActionInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ActionInfo:
 
     @property
     def id(self):
-        """Gets the id of this ActionInfo.
+        r"""Gets the id of this ActionInfo.
 
         剧本流程动作ID
 
@@ -103,7 +103,7 @@ class ActionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ActionInfo.
+        r"""Sets the id of this ActionInfo.
 
         剧本流程动作ID
 
@@ -114,7 +114,7 @@ class ActionInfo:
 
     @property
     def name(self):
-        """Gets the name of this ActionInfo.
+        r"""Gets the name of this ActionInfo.
 
         流程动作名称
 
@@ -125,7 +125,7 @@ class ActionInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ActionInfo.
+        r"""Sets the name of this ActionInfo.
 
         流程动作名称
 
@@ -136,7 +136,7 @@ class ActionInfo:
 
     @property
     def description(self):
-        """Gets the description of this ActionInfo.
+        r"""Gets the description of this ActionInfo.
 
         描述
 
@@ -147,7 +147,7 @@ class ActionInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ActionInfo.
+        r"""Sets the description of this ActionInfo.
 
         描述
 
@@ -158,7 +158,7 @@ class ActionInfo:
 
     @property
     def action_type(self):
-        """Gets the action_type of this ActionInfo.
+        r"""Gets the action_type of this ActionInfo.
 
         流程动作类型
 
@@ -169,7 +169,7 @@ class ActionInfo:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this ActionInfo.
+        r"""Sets the action_type of this ActionInfo.
 
         流程动作类型
 
@@ -180,7 +180,7 @@ class ActionInfo:
 
     @property
     def action_id(self):
-        """Gets the action_id of this ActionInfo.
+        r"""Gets the action_id of this ActionInfo.
 
         流程ID
 
@@ -191,7 +191,7 @@ class ActionInfo:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this ActionInfo.
+        r"""Sets the action_id of this ActionInfo.
 
         流程ID
 
@@ -202,7 +202,7 @@ class ActionInfo:
 
     @property
     def playbook_id(self):
-        """Gets the playbook_id of this ActionInfo.
+        r"""Gets the playbook_id of this ActionInfo.
 
         剧本ID
 
@@ -213,7 +213,7 @@ class ActionInfo:
 
     @playbook_id.setter
     def playbook_id(self, playbook_id):
-        """Sets the playbook_id of this ActionInfo.
+        r"""Sets the playbook_id of this ActionInfo.
 
         剧本ID
 
@@ -224,7 +224,7 @@ class ActionInfo:
 
     @property
     def playbook_version_id(self):
-        """Gets the playbook_version_id of this ActionInfo.
+        r"""Gets the playbook_version_id of this ActionInfo.
 
         剧本版本ID
 
@@ -235,7 +235,7 @@ class ActionInfo:
 
     @playbook_version_id.setter
     def playbook_version_id(self, playbook_version_id):
-        """Sets the playbook_version_id of this ActionInfo.
+        r"""Sets the playbook_version_id of this ActionInfo.
 
         剧本版本ID
 
@@ -246,7 +246,7 @@ class ActionInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ActionInfo.
+        r"""Gets the project_id of this ActionInfo.
 
         项目ID
 
@@ -257,7 +257,7 @@ class ActionInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ActionInfo.
+        r"""Sets the project_id of this ActionInfo.
 
         项目ID
 

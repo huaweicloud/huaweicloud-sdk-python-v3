@@ -27,7 +27,7 @@ class UpdateConfigMapRequest:
     }
 
     def __init__(self, config_map_id=None, body=None):
-        """UpdateConfigMapRequest
+        r"""UpdateConfigMapRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateConfigMapRequest:
 
     @property
     def config_map_id(self):
-        """Gets the config_map_id of this UpdateConfigMapRequest.
+        r"""Gets the config_map_id of this UpdateConfigMapRequest.
 
         配置项ID，从专业版HiLens控制台配置项管理[获取配置项列表](listConfigMapUsingGET.xml)获取
 
@@ -60,7 +60,7 @@ class UpdateConfigMapRequest:
 
     @config_map_id.setter
     def config_map_id(self, config_map_id):
-        """Sets the config_map_id of this UpdateConfigMapRequest.
+        r"""Sets the config_map_id of this UpdateConfigMapRequest.
 
         配置项ID，从专业版HiLens控制台配置项管理[获取配置项列表](listConfigMapUsingGET.xml)获取
 
@@ -71,7 +71,7 @@ class UpdateConfigMapRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateConfigMapRequest.
+        r"""Gets the body of this UpdateConfigMapRequest.
 
         :return: The body of this UpdateConfigMapRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.ConfigMapModelBoxDTO`
@@ -80,7 +80,7 @@ class UpdateConfigMapRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateConfigMapRequest.
+        r"""Sets the body of this UpdateConfigMapRequest.
 
         :param body: The body of this UpdateConfigMapRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.ConfigMapModelBoxDTO`

@@ -105,7 +105,7 @@ class CreateAlert:
     }
 
     def __init__(self, version=None, environment=None, data_source=None, first_observed_time=None, last_observed_time=None, create_time=None, arrive_time=None, title=None, label=None, description=None, source_url=None, count=None, confidence=None, severity=None, criticality=None, alert_type=None, network_list=None, resource_list=None, remediation=None, verification_state=None, handle_status=None, sla=None, update_time=None, close_time=None, chop_phase=None, ipdrr_phase=None, ppdr_phase=None, simulation=None, actor=None, owner=None, cteator=None, close_reason=None, close_comment=None, malware=None, system_info=None, process=None, user_info=None, file_info=None, system_alert_table=None, id=None, workspace_id=None):
-        """CreateAlert
+        r"""CreateAlert
 
         The model defined in huaweicloud sdk
 
@@ -323,7 +323,7 @@ class CreateAlert:
 
     @property
     def version(self):
-        """Gets the version of this CreateAlert.
+        r"""Gets the version of this CreateAlert.
 
         版本
 
@@ -334,7 +334,7 @@ class CreateAlert:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateAlert.
+        r"""Sets the version of this CreateAlert.
 
         版本
 
@@ -345,7 +345,7 @@ class CreateAlert:
 
     @property
     def environment(self):
-        """Gets the environment of this CreateAlert.
+        r"""Gets the environment of this CreateAlert.
 
         :return: The environment of this CreateAlert.
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertRspEnvironment`
@@ -354,7 +354,7 @@ class CreateAlert:
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this CreateAlert.
+        r"""Sets the environment of this CreateAlert.
 
         :param environment: The environment of this CreateAlert.
         :type environment: :class:`huaweicloudsdksa.v2.ShowAlertRspEnvironment`
@@ -363,7 +363,7 @@ class CreateAlert:
 
     @property
     def data_source(self):
-        """Gets the data_source of this CreateAlert.
+        r"""Gets the data_source of this CreateAlert.
 
         :return: The data_source of this CreateAlert.
         :rtype: :class:`huaweicloudsdksa.v2.CreateAlertDataSource`
@@ -372,7 +372,7 @@ class CreateAlert:
 
     @data_source.setter
     def data_source(self, data_source):
-        """Sets the data_source of this CreateAlert.
+        r"""Sets the data_source of this CreateAlert.
 
         :param data_source: The data_source of this CreateAlert.
         :type data_source: :class:`huaweicloudsdksa.v2.CreateAlertDataSource`
@@ -381,7 +381,7 @@ class CreateAlert:
 
     @property
     def first_observed_time(self):
-        """Gets the first_observed_time of this CreateAlert.
+        r"""Gets the first_observed_time of this CreateAlert.
 
         Update time
 
@@ -392,7 +392,7 @@ class CreateAlert:
 
     @first_observed_time.setter
     def first_observed_time(self, first_observed_time):
-        """Sets the first_observed_time of this CreateAlert.
+        r"""Sets the first_observed_time of this CreateAlert.
 
         Update time
 
@@ -403,7 +403,7 @@ class CreateAlert:
 
     @property
     def last_observed_time(self):
-        """Gets the last_observed_time of this CreateAlert.
+        r"""Gets the last_observed_time of this CreateAlert.
 
         Update time
 
@@ -414,7 +414,7 @@ class CreateAlert:
 
     @last_observed_time.setter
     def last_observed_time(self, last_observed_time):
-        """Sets the last_observed_time of this CreateAlert.
+        r"""Sets the last_observed_time of this CreateAlert.
 
         Update time
 
@@ -425,7 +425,7 @@ class CreateAlert:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateAlert.
+        r"""Gets the create_time of this CreateAlert.
 
         Create time
 
@@ -436,7 +436,7 @@ class CreateAlert:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateAlert.
+        r"""Sets the create_time of this CreateAlert.
 
         Create time
 
@@ -447,7 +447,7 @@ class CreateAlert:
 
     @property
     def arrive_time(self):
-        """Gets the arrive_time of this CreateAlert.
+        r"""Gets the arrive_time of this CreateAlert.
 
         Update time
 
@@ -458,7 +458,7 @@ class CreateAlert:
 
     @arrive_time.setter
     def arrive_time(self, arrive_time):
-        """Sets the arrive_time of this CreateAlert.
+        r"""Sets the arrive_time of this CreateAlert.
 
         Update time
 
@@ -469,7 +469,7 @@ class CreateAlert:
 
     @property
     def title(self):
-        """Gets the title of this CreateAlert.
+        r"""Gets the title of this CreateAlert.
 
         The name, display only
 
@@ -480,7 +480,7 @@ class CreateAlert:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this CreateAlert.
+        r"""Sets the title of this CreateAlert.
 
         The name, display only
 
@@ -491,7 +491,7 @@ class CreateAlert:
 
     @property
     def label(self):
-        """Gets the label of this CreateAlert.
+        r"""Gets the label of this CreateAlert.
 
         The name, display only
 
@@ -502,7 +502,7 @@ class CreateAlert:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this CreateAlert.
+        r"""Sets the label of this CreateAlert.
 
         The name, display only
 
@@ -513,7 +513,7 @@ class CreateAlert:
 
     @property
     def description(self):
-        """Gets the description of this CreateAlert.
+        r"""Gets the description of this CreateAlert.
 
         The description, display only
 
@@ -524,7 +524,7 @@ class CreateAlert:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAlert.
+        r"""Sets the description of this CreateAlert.
 
         The description, display only
 
@@ -535,7 +535,7 @@ class CreateAlert:
 
     @property
     def source_url(self):
-        """Gets the source_url of this CreateAlert.
+        r"""Gets the source_url of this CreateAlert.
 
         事件URL链接
 
@@ -546,7 +546,7 @@ class CreateAlert:
 
     @source_url.setter
     def source_url(self, source_url):
-        """Sets the source_url of this CreateAlert.
+        r"""Sets the source_url of this CreateAlert.
 
         事件URL链接
 
@@ -557,7 +557,7 @@ class CreateAlert:
 
     @property
     def count(self):
-        """Gets the count of this CreateAlert.
+        r"""Gets the count of this CreateAlert.
 
         事件发生次数
 
@@ -568,7 +568,7 @@ class CreateAlert:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CreateAlert.
+        r"""Sets the count of this CreateAlert.
 
         事件发生次数
 
@@ -579,7 +579,7 @@ class CreateAlert:
 
     @property
     def confidence(self):
-        """Gets the confidence of this CreateAlert.
+        r"""Gets the confidence of this CreateAlert.
 
         置信度
 
@@ -590,7 +590,7 @@ class CreateAlert:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this CreateAlert.
+        r"""Sets the confidence of this CreateAlert.
 
         置信度
 
@@ -601,7 +601,7 @@ class CreateAlert:
 
     @property
     def severity(self):
-        """Gets the severity of this CreateAlert.
+        r"""Gets the severity of this CreateAlert.
 
         严重性等级
 
@@ -612,7 +612,7 @@ class CreateAlert:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this CreateAlert.
+        r"""Sets the severity of this CreateAlert.
 
         严重性等级
 
@@ -623,7 +623,7 @@ class CreateAlert:
 
     @property
     def criticality(self):
-        """Gets the criticality of this CreateAlert.
+        r"""Gets the criticality of this CreateAlert.
 
         关键性，是指事件涉及的资源的重要性级别。
 
@@ -634,7 +634,7 @@ class CreateAlert:
 
     @criticality.setter
     def criticality(self, criticality):
-        """Sets the criticality of this CreateAlert.
+        r"""Sets the criticality of this CreateAlert.
 
         关键性，是指事件涉及的资源的重要性级别。
 
@@ -645,7 +645,7 @@ class CreateAlert:
 
     @property
     def alert_type(self):
-        """Gets the alert_type of this CreateAlert.
+        r"""Gets the alert_type of this CreateAlert.
 
         事件分类
 
@@ -656,7 +656,7 @@ class CreateAlert:
 
     @alert_type.setter
     def alert_type(self, alert_type):
-        """Sets the alert_type of this CreateAlert.
+        r"""Sets the alert_type of this CreateAlert.
 
         事件分类
 
@@ -667,7 +667,7 @@ class CreateAlert:
 
     @property
     def network_list(self):
-        """Gets the network_list of this CreateAlert.
+        r"""Gets the network_list of this CreateAlert.
 
         network_list
 
@@ -678,7 +678,7 @@ class CreateAlert:
 
     @network_list.setter
     def network_list(self, network_list):
-        """Sets the network_list of this CreateAlert.
+        r"""Sets the network_list of this CreateAlert.
 
         network_list
 
@@ -689,7 +689,7 @@ class CreateAlert:
 
     @property
     def resource_list(self):
-        """Gets the resource_list of this CreateAlert.
+        r"""Gets the resource_list of this CreateAlert.
 
         network_list
 
@@ -700,7 +700,7 @@ class CreateAlert:
 
     @resource_list.setter
     def resource_list(self, resource_list):
-        """Sets the resource_list of this CreateAlert.
+        r"""Sets the resource_list of this CreateAlert.
 
         network_list
 
@@ -711,7 +711,7 @@ class CreateAlert:
 
     @property
     def remediation(self):
-        """Gets the remediation of this CreateAlert.
+        r"""Gets the remediation of this CreateAlert.
 
         :return: The remediation of this CreateAlert.
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertRspRemediation`
@@ -720,7 +720,7 @@ class CreateAlert:
 
     @remediation.setter
     def remediation(self, remediation):
-        """Sets the remediation of this CreateAlert.
+        r"""Sets the remediation of this CreateAlert.
 
         :param remediation: The remediation of this CreateAlert.
         :type remediation: :class:`huaweicloudsdksa.v2.ShowAlertRspRemediation`
@@ -729,7 +729,7 @@ class CreateAlert:
 
     @property
     def verification_state(self):
-        """Gets the verification_state of this CreateAlert.
+        r"""Gets the verification_state of this CreateAlert.
 
         验证状态
 
@@ -740,7 +740,7 @@ class CreateAlert:
 
     @verification_state.setter
     def verification_state(self, verification_state):
-        """Sets the verification_state of this CreateAlert.
+        r"""Sets the verification_state of this CreateAlert.
 
         验证状态
 
@@ -751,7 +751,7 @@ class CreateAlert:
 
     @property
     def handle_status(self):
-        """Gets the handle_status of this CreateAlert.
+        r"""Gets the handle_status of this CreateAlert.
 
         事件处理状态
 
@@ -762,7 +762,7 @@ class CreateAlert:
 
     @handle_status.setter
     def handle_status(self, handle_status):
-        """Sets the handle_status of this CreateAlert.
+        r"""Sets the handle_status of this CreateAlert.
 
         事件处理状态
 
@@ -773,7 +773,7 @@ class CreateAlert:
 
     @property
     def sla(self):
-        """Gets the sla of this CreateAlert.
+        r"""Gets the sla of this CreateAlert.
 
         sla
 
@@ -784,7 +784,7 @@ class CreateAlert:
 
     @sla.setter
     def sla(self, sla):
-        """Sets the sla of this CreateAlert.
+        r"""Sets the sla of this CreateAlert.
 
         sla
 
@@ -795,7 +795,7 @@ class CreateAlert:
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateAlert.
+        r"""Gets the update_time of this CreateAlert.
 
         Create time
 
@@ -806,7 +806,7 @@ class CreateAlert:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateAlert.
+        r"""Sets the update_time of this CreateAlert.
 
         Create time
 
@@ -817,7 +817,7 @@ class CreateAlert:
 
     @property
     def close_time(self):
-        """Gets the close_time of this CreateAlert.
+        r"""Gets the close_time of this CreateAlert.
 
         Create time
 
@@ -828,7 +828,7 @@ class CreateAlert:
 
     @close_time.setter
     def close_time(self, close_time):
-        """Sets the close_time of this CreateAlert.
+        r"""Sets the close_time of this CreateAlert.
 
         Create time
 
@@ -839,7 +839,7 @@ class CreateAlert:
 
     @property
     def chop_phase(self):
-        """Gets the chop_phase of this CreateAlert.
+        r"""Gets the chop_phase of this CreateAlert.
 
         周期/处置阶段编号
 
@@ -850,7 +850,7 @@ class CreateAlert:
 
     @chop_phase.setter
     def chop_phase(self, chop_phase):
-        """Sets the chop_phase of this CreateAlert.
+        r"""Sets the chop_phase of this CreateAlert.
 
         周期/处置阶段编号
 
@@ -861,7 +861,7 @@ class CreateAlert:
 
     @property
     def ipdrr_phase(self):
-        """Gets the ipdrr_phase of this CreateAlert.
+        r"""Gets the ipdrr_phase of this CreateAlert.
 
         周期/处置阶段编号
 
@@ -872,7 +872,7 @@ class CreateAlert:
 
     @ipdrr_phase.setter
     def ipdrr_phase(self, ipdrr_phase):
-        """Sets the ipdrr_phase of this CreateAlert.
+        r"""Sets the ipdrr_phase of this CreateAlert.
 
         周期/处置阶段编号
 
@@ -883,7 +883,7 @@ class CreateAlert:
 
     @property
     def ppdr_phase(self):
-        """Gets the ppdr_phase of this CreateAlert.
+        r"""Gets the ppdr_phase of this CreateAlert.
 
         周期/处置阶段编号
 
@@ -894,7 +894,7 @@ class CreateAlert:
 
     @ppdr_phase.setter
     def ppdr_phase(self, ppdr_phase):
-        """Sets the ppdr_phase of this CreateAlert.
+        r"""Sets the ppdr_phase of this CreateAlert.
 
         周期/处置阶段编号
 
@@ -905,7 +905,7 @@ class CreateAlert:
 
     @property
     def simulation(self):
-        """Gets the simulation of this CreateAlert.
+        r"""Gets the simulation of this CreateAlert.
 
         是否为调试事件.
 
@@ -916,7 +916,7 @@ class CreateAlert:
 
     @simulation.setter
     def simulation(self, simulation):
-        """Sets the simulation of this CreateAlert.
+        r"""Sets the simulation of this CreateAlert.
 
         是否为调试事件.
 
@@ -927,7 +927,7 @@ class CreateAlert:
 
     @property
     def actor(self):
-        """Gets the actor of this CreateAlert.
+        r"""Gets the actor of this CreateAlert.
 
         委托人
 
@@ -938,7 +938,7 @@ class CreateAlert:
 
     @actor.setter
     def actor(self, actor):
-        """Sets the actor of this CreateAlert.
+        r"""Sets the actor of this CreateAlert.
 
         委托人
 
@@ -949,7 +949,7 @@ class CreateAlert:
 
     @property
     def owner(self):
-        """Gets the owner of this CreateAlert.
+        r"""Gets the owner of this CreateAlert.
 
         The name, display only
 
@@ -960,7 +960,7 @@ class CreateAlert:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this CreateAlert.
+        r"""Sets the owner of this CreateAlert.
 
         The name, display only
 
@@ -971,7 +971,7 @@ class CreateAlert:
 
     @property
     def cteator(self):
-        """Gets the cteator of this CreateAlert.
+        r"""Gets the cteator of this CreateAlert.
 
         The name, display only
 
@@ -982,7 +982,7 @@ class CreateAlert:
 
     @cteator.setter
     def cteator(self, cteator):
-        """Sets the cteator of this CreateAlert.
+        r"""Sets the cteator of this CreateAlert.
 
         The name, display only
 
@@ -993,7 +993,7 @@ class CreateAlert:
 
     @property
     def close_reason(self):
-        """Gets the close_reason of this CreateAlert.
+        r"""Gets the close_reason of this CreateAlert.
 
         关闭原因
 
@@ -1004,7 +1004,7 @@ class CreateAlert:
 
     @close_reason.setter
     def close_reason(self, close_reason):
-        """Sets the close_reason of this CreateAlert.
+        r"""Sets the close_reason of this CreateAlert.
 
         关闭原因
 
@@ -1015,7 +1015,7 @@ class CreateAlert:
 
     @property
     def close_comment(self):
-        """Gets the close_comment of this CreateAlert.
+        r"""Gets the close_comment of this CreateAlert.
 
         关闭原因
 
@@ -1026,7 +1026,7 @@ class CreateAlert:
 
     @close_comment.setter
     def close_comment(self, close_comment):
-        """Sets the close_comment of this CreateAlert.
+        r"""Sets the close_comment of this CreateAlert.
 
         关闭原因
 
@@ -1037,7 +1037,7 @@ class CreateAlert:
 
     @property
     def malware(self):
-        """Gets the malware of this CreateAlert.
+        r"""Gets the malware of this CreateAlert.
 
         :return: The malware of this CreateAlert.
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertRspMalware`
@@ -1046,7 +1046,7 @@ class CreateAlert:
 
     @malware.setter
     def malware(self, malware):
-        """Sets the malware of this CreateAlert.
+        r"""Sets the malware of this CreateAlert.
 
         :param malware: The malware of this CreateAlert.
         :type malware: :class:`huaweicloudsdksa.v2.ShowAlertRspMalware`
@@ -1055,7 +1055,7 @@ class CreateAlert:
 
     @property
     def system_info(self):
-        """Gets the system_info of this CreateAlert.
+        r"""Gets the system_info of this CreateAlert.
 
         系统信息
 
@@ -1066,7 +1066,7 @@ class CreateAlert:
 
     @system_info.setter
     def system_info(self, system_info):
-        """Sets the system_info of this CreateAlert.
+        r"""Sets the system_info of this CreateAlert.
 
         系统信息
 
@@ -1077,7 +1077,7 @@ class CreateAlert:
 
     @property
     def process(self):
-        """Gets the process of this CreateAlert.
+        r"""Gets the process of this CreateAlert.
 
         进程信息
 
@@ -1088,7 +1088,7 @@ class CreateAlert:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this CreateAlert.
+        r"""Sets the process of this CreateAlert.
 
         进程信息
 
@@ -1099,7 +1099,7 @@ class CreateAlert:
 
     @property
     def user_info(self):
-        """Gets the user_info of this CreateAlert.
+        r"""Gets the user_info of this CreateAlert.
 
         用户信息
 
@@ -1110,7 +1110,7 @@ class CreateAlert:
 
     @user_info.setter
     def user_info(self, user_info):
-        """Sets the user_info of this CreateAlert.
+        r"""Sets the user_info of this CreateAlert.
 
         用户信息
 
@@ -1121,7 +1121,7 @@ class CreateAlert:
 
     @property
     def file_info(self):
-        """Gets the file_info of this CreateAlert.
+        r"""Gets the file_info of this CreateAlert.
 
         文件信息
 
@@ -1132,7 +1132,7 @@ class CreateAlert:
 
     @file_info.setter
     def file_info(self, file_info):
-        """Sets the file_info of this CreateAlert.
+        r"""Sets the file_info of this CreateAlert.
 
         文件信息
 
@@ -1143,7 +1143,7 @@ class CreateAlert:
 
     @property
     def system_alert_table(self):
-        """Gets the system_alert_table of this CreateAlert.
+        r"""Gets the system_alert_table of this CreateAlert.
 
         系统信息
 
@@ -1154,7 +1154,7 @@ class CreateAlert:
 
     @system_alert_table.setter
     def system_alert_table(self, system_alert_table):
-        """Sets the system_alert_table of this CreateAlert.
+        r"""Sets the system_alert_table of this CreateAlert.
 
         系统信息
 
@@ -1165,7 +1165,7 @@ class CreateAlert:
 
     @property
     def id(self):
-        """Gets the id of this CreateAlert.
+        r"""Gets the id of this CreateAlert.
 
         Id value
 
@@ -1176,7 +1176,7 @@ class CreateAlert:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateAlert.
+        r"""Sets the id of this CreateAlert.
 
         Id value
 
@@ -1187,7 +1187,7 @@ class CreateAlert:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateAlert.
+        r"""Gets the workspace_id of this CreateAlert.
 
         workspace id
 
@@ -1198,7 +1198,7 @@ class CreateAlert:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateAlert.
+        r"""Sets the workspace_id of this CreateAlert.
 
         workspace id
 

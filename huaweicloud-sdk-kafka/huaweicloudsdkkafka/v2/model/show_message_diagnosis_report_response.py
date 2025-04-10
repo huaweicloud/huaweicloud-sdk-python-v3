@@ -32,7 +32,7 @@ class ShowMessageDiagnosisReportResponse(SdkResponse):
     }
 
     def __init__(self, abnormal_item_num=None, failed_item_num=None, normal_item_num=None, diagnosis_dimension_list=None):
-        """ShowMessageDiagnosisReportResponse
+        r"""ShowMessageDiagnosisReportResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowMessageDiagnosisReportResponse(SdkResponse):
 
     @property
     def abnormal_item_num(self):
-        """Gets the abnormal_item_num of this ShowMessageDiagnosisReportResponse.
+        r"""Gets the abnormal_item_num of this ShowMessageDiagnosisReportResponse.
 
         诊断异常的诊断项总和
 
@@ -76,7 +76,7 @@ class ShowMessageDiagnosisReportResponse(SdkResponse):
 
     @abnormal_item_num.setter
     def abnormal_item_num(self, abnormal_item_num):
-        """Sets the abnormal_item_num of this ShowMessageDiagnosisReportResponse.
+        r"""Sets the abnormal_item_num of this ShowMessageDiagnosisReportResponse.
 
         诊断异常的诊断项总和
 
@@ -87,7 +87,7 @@ class ShowMessageDiagnosisReportResponse(SdkResponse):
 
     @property
     def failed_item_num(self):
-        """Gets the failed_item_num of this ShowMessageDiagnosisReportResponse.
+        r"""Gets the failed_item_num of this ShowMessageDiagnosisReportResponse.
 
         诊断失败的诊断项总和
 
@@ -98,7 +98,7 @@ class ShowMessageDiagnosisReportResponse(SdkResponse):
 
     @failed_item_num.setter
     def failed_item_num(self, failed_item_num):
-        """Sets the failed_item_num of this ShowMessageDiagnosisReportResponse.
+        r"""Sets the failed_item_num of this ShowMessageDiagnosisReportResponse.
 
         诊断失败的诊断项总和
 
@@ -109,7 +109,7 @@ class ShowMessageDiagnosisReportResponse(SdkResponse):
 
     @property
     def normal_item_num(self):
-        """Gets the normal_item_num of this ShowMessageDiagnosisReportResponse.
+        r"""Gets the normal_item_num of this ShowMessageDiagnosisReportResponse.
 
         诊断正常的诊断项总和
 
@@ -120,7 +120,7 @@ class ShowMessageDiagnosisReportResponse(SdkResponse):
 
     @normal_item_num.setter
     def normal_item_num(self, normal_item_num):
-        """Sets the normal_item_num of this ShowMessageDiagnosisReportResponse.
+        r"""Sets the normal_item_num of this ShowMessageDiagnosisReportResponse.
 
         诊断正常的诊断项总和
 
@@ -131,7 +131,7 @@ class ShowMessageDiagnosisReportResponse(SdkResponse):
 
     @property
     def diagnosis_dimension_list(self):
-        """Gets the diagnosis_dimension_list of this ShowMessageDiagnosisReportResponse.
+        r"""Gets the diagnosis_dimension_list of this ShowMessageDiagnosisReportResponse.
 
         诊断维度列表
 
@@ -142,7 +142,7 @@ class ShowMessageDiagnosisReportResponse(SdkResponse):
 
     @diagnosis_dimension_list.setter
     def diagnosis_dimension_list(self, diagnosis_dimension_list):
-        """Sets the diagnosis_dimension_list of this ShowMessageDiagnosisReportResponse.
+        r"""Sets the diagnosis_dimension_list of this ShowMessageDiagnosisReportResponse.
 
         诊断维度列表
 

@@ -27,7 +27,7 @@ class CreateMfaDevice:
     }
 
     def __init__(self, name=None, user_id=None):
-        """CreateMfaDevice
+        r"""CreateMfaDevice
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateMfaDevice:
 
     @property
     def name(self):
-        """Gets the name of this CreateMfaDevice.
+        r"""Gets the name of this CreateMfaDevice.
 
         设备名称。 最小长度：1 最大长度：64
 
@@ -59,7 +59,7 @@ class CreateMfaDevice:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateMfaDevice.
+        r"""Sets the name of this CreateMfaDevice.
 
         设备名称。 最小长度：1 最大长度：64
 
@@ -70,7 +70,7 @@ class CreateMfaDevice:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateMfaDevice.
+        r"""Gets the user_id of this CreateMfaDevice.
 
         创建MFA设备的IAM用户ID。
 
@@ -81,7 +81,7 @@ class CreateMfaDevice:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateMfaDevice.
+        r"""Sets the user_id of this CreateMfaDevice.
 
         创建MFA设备的IAM用户ID。
 

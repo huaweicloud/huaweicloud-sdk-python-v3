@@ -27,7 +27,7 @@ class ListPipelineTemplatesRequest:
     }
 
     def __init__(self, tenant_id=None, body=None):
-        """ListPipelineTemplatesRequest
+        r"""ListPipelineTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListPipelineTemplatesRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ListPipelineTemplatesRequest.
+        r"""Gets the tenant_id of this ListPipelineTemplatesRequest.
 
         租户ID
 
@@ -60,7 +60,7 @@ class ListPipelineTemplatesRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ListPipelineTemplatesRequest.
+        r"""Sets the tenant_id of this ListPipelineTemplatesRequest.
 
         租户ID
 
@@ -71,7 +71,7 @@ class ListPipelineTemplatesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListPipelineTemplatesRequest.
+        r"""Gets the body of this ListPipelineTemplatesRequest.
 
         :return: The body of this ListPipelineTemplatesRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelineTemplatesQuery`
@@ -80,7 +80,7 @@ class ListPipelineTemplatesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPipelineTemplatesRequest.
+        r"""Sets the body of this ListPipelineTemplatesRequest.
 
         :param body: The body of this ListPipelineTemplatesRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelineTemplatesQuery`

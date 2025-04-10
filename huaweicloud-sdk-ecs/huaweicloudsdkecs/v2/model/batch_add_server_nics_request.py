@@ -27,7 +27,7 @@ class BatchAddServerNicsRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """BatchAddServerNicsRequest
+        r"""BatchAddServerNicsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAddServerNicsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this BatchAddServerNicsRequest.
+        r"""Gets the server_id of this BatchAddServerNicsRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class BatchAddServerNicsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this BatchAddServerNicsRequest.
+        r"""Sets the server_id of this BatchAddServerNicsRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class BatchAddServerNicsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddServerNicsRequest.
+        r"""Gets the body of this BatchAddServerNicsRequest.
 
         :return: The body of this BatchAddServerNicsRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.BatchAddServerNicsRequestBody`
@@ -80,7 +80,7 @@ class BatchAddServerNicsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddServerNicsRequest.
+        r"""Sets the body of this BatchAddServerNicsRequest.
 
         :param body: The body of this BatchAddServerNicsRequest.
         :type body: :class:`huaweicloudsdkecs.v2.BatchAddServerNicsRequestBody`

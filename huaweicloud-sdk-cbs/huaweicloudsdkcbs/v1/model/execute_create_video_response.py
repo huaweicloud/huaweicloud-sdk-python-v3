@@ -26,7 +26,7 @@ class ExecuteCreateVideoResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """ExecuteCreateVideoResponse
+        r"""ExecuteCreateVideoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExecuteCreateVideoResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ExecuteCreateVideoResponse.
+        r"""Gets the id of this ExecuteCreateVideoResponse.
 
         视频id
 
@@ -55,7 +55,7 @@ class ExecuteCreateVideoResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExecuteCreateVideoResponse.
+        r"""Sets the id of this ExecuteCreateVideoResponse.
 
         视频id
 

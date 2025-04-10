@@ -25,7 +25,7 @@ class ListDataSourceRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ListDataSourceRequest
+        r"""ListDataSourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListDataSourceRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListDataSourceRequest.
+        r"""Gets the cluster_id of this ListDataSourceRequest.
 
         集群ID
 
@@ -53,7 +53,7 @@ class ListDataSourceRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListDataSourceRequest.
+        r"""Sets the cluster_id of this ListDataSourceRequest.
 
         集群ID
 

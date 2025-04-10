@@ -26,7 +26,7 @@ class ListOsVersionsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListOsVersionsResponse
+        r"""ListOsVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListOsVersionsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListOsVersionsResponse.
+        r"""Gets the body of this ListOsVersionsResponse.
 
         :return: The body of this ListOsVersionsResponse.
         :rtype: list[:class:`huaweicloudsdkims.v2.ListOsVersionsResponseBody`]
@@ -53,7 +53,7 @@ class ListOsVersionsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListOsVersionsResponse.
+        r"""Sets the body of this ListOsVersionsResponse.
 
         :param body: The body of this ListOsVersionsResponse.
         :type body: list[:class:`huaweicloudsdkims.v2.ListOsVersionsResponseBody`]

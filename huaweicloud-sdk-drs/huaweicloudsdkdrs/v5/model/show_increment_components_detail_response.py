@@ -28,7 +28,7 @@ class ShowIncrementComponentsDetailResponse(SdkResponse):
     }
 
     def __init__(self, update_time=None, increment_components_list=None):
-        """ShowIncrementComponentsDetailResponse
+        r"""ShowIncrementComponentsDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowIncrementComponentsDetailResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowIncrementComponentsDetailResponse.
+        r"""Gets the update_time of this ShowIncrementComponentsDetailResponse.
 
         更新时间。
 
@@ -62,7 +62,7 @@ class ShowIncrementComponentsDetailResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowIncrementComponentsDetailResponse.
+        r"""Sets the update_time of this ShowIncrementComponentsDetailResponse.
 
         更新时间。
 
@@ -73,7 +73,7 @@ class ShowIncrementComponentsDetailResponse(SdkResponse):
 
     @property
     def increment_components_list(self):
-        """Gets the increment_components_list of this ShowIncrementComponentsDetailResponse.
+        r"""Gets the increment_components_list of this ShowIncrementComponentsDetailResponse.
 
         增量组件详情。
 
@@ -84,7 +84,7 @@ class ShowIncrementComponentsDetailResponse(SdkResponse):
 
     @increment_components_list.setter
     def increment_components_list(self, increment_components_list):
-        """Sets the increment_components_list of this ShowIncrementComponentsDetailResponse.
+        r"""Sets the increment_components_list of this ShowIncrementComponentsDetailResponse.
 
         增量组件详情。
 

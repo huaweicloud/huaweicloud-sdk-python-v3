@@ -23,7 +23,7 @@ class ListLabelsAomPromPostRequest:
     }
 
     def __init__(self):
-        """ListLabelsAomPromPostRequest
+        r"""ListLabelsAomPromPostRequest
 
         The model defined in huaweicloud sdk
 

@@ -38,7 +38,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
     }
 
     def __init__(self, play_domain=None, source_type=None, sources=None, sources_ip=None, source_port=None, scheme=None, additional_args=None):
-        """ShowPullSourcesConfigResponse
+        r"""ShowPullSourcesConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
 
     @property
     def play_domain(self):
-        """Gets the play_domain of this ShowPullSourcesConfigResponse.
+        r"""Gets the play_domain of this ShowPullSourcesConfigResponse.
 
         播放域名
 
@@ -97,7 +97,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
 
     @play_domain.setter
     def play_domain(self, play_domain):
-        """Sets the play_domain of this ShowPullSourcesConfigResponse.
+        r"""Sets the play_domain of this ShowPullSourcesConfigResponse.
 
         播放域名
 
@@ -108,7 +108,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
 
     @property
     def source_type(self):
-        """Gets the source_type of this ShowPullSourcesConfigResponse.
+        r"""Gets the source_type of this ShowPullSourcesConfigResponse.
 
         回源方式。 - domain: 回源客户源站，源站地址是域名格式。回源域名，可配置多个，如果回源失败，将按照配置顺序进行轮循。 - ipaddr: 回源客户源站，源站地址是IP格式。回源IP，可配置多个，如果回源失败，将按照配置顺序进行轮循。同时，最多可以配置一个回源域名，如果配置，回源时httpflv HOST头填该域名，RTMP tcurl字段填该域名，否则按当前IP作为HOST。 - huawei: 回源华为源站，域名创建后的默认值。
 
@@ -119,7 +119,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this ShowPullSourcesConfigResponse.
+        r"""Sets the source_type of this ShowPullSourcesConfigResponse.
 
         回源方式。 - domain: 回源客户源站，源站地址是域名格式。回源域名，可配置多个，如果回源失败，将按照配置顺序进行轮循。 - ipaddr: 回源客户源站，源站地址是IP格式。回源IP，可配置多个，如果回源失败，将按照配置顺序进行轮循。同时，最多可以配置一个回源域名，如果配置，回源时httpflv HOST头填该域名，RTMP tcurl字段填该域名，否则按当前IP作为HOST。 - huawei: 回源华为源站，域名创建后的默认值。
 
@@ -130,7 +130,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
 
     @property
     def sources(self):
-        """Gets the sources of this ShowPullSourcesConfigResponse.
+        r"""Gets the sources of this ShowPullSourcesConfigResponse.
 
         回源域名列表，最多可配置10个。 - 当回源方式是“domain”时，此参数必选，域名配置多个时，如果回源失败，将按照配置顺序进行轮循。 - 当回源方式是“ipaddr”时，最多可以配置一个回源域名，如果配置，回源时httpflv HOST头填该域名，RTMP tcurl 字段填该域名，否则按当前IP作为HOST。
 
@@ -141,7 +141,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this ShowPullSourcesConfigResponse.
+        r"""Sets the sources of this ShowPullSourcesConfigResponse.
 
         回源域名列表，最多可配置10个。 - 当回源方式是“domain”时，此参数必选，域名配置多个时，如果回源失败，将按照配置顺序进行轮循。 - 当回源方式是“ipaddr”时，最多可以配置一个回源域名，如果配置，回源时httpflv HOST头填该域名，RTMP tcurl 字段填该域名，否则按当前IP作为HOST。
 
@@ -152,7 +152,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
 
     @property
     def sources_ip(self):
-        """Gets the sources_ip of this ShowPullSourcesConfigResponse.
+        r"""Gets the sources_ip of this ShowPullSourcesConfigResponse.
 
         回源IP地址列表，最多可配置10个。当回源方式是“ipaddr”时，此参数必选，IP配置多个时，如果回源失败，将按照配置顺序进行轮循。
 
@@ -163,7 +163,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
 
     @sources_ip.setter
     def sources_ip(self, sources_ip):
-        """Sets the sources_ip of this ShowPullSourcesConfigResponse.
+        r"""Sets the sources_ip of this ShowPullSourcesConfigResponse.
 
         回源IP地址列表，最多可配置10个。当回源方式是“ipaddr”时，此参数必选，IP配置多个时，如果回源失败，将按照配置顺序进行轮循。
 
@@ -174,7 +174,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
 
     @property
     def source_port(self):
-        """Gets the source_port of this ShowPullSourcesConfigResponse.
+        r"""Gets the source_port of this ShowPullSourcesConfigResponse.
 
         回源端口。 
 
@@ -185,7 +185,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this ShowPullSourcesConfigResponse.
+        r"""Sets the source_port of this ShowPullSourcesConfigResponse.
 
         回源端口。 
 
@@ -196,7 +196,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
 
     @property
     def scheme(self):
-        """Gets the scheme of this ShowPullSourcesConfigResponse.
+        r"""Gets the scheme of this ShowPullSourcesConfigResponse.
 
         回源协议，回源方式非“huawei”时必选。
 
@@ -207,7 +207,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
 
     @scheme.setter
     def scheme(self, scheme):
-        """Sets the scheme of this ShowPullSourcesConfigResponse.
+        r"""Sets the scheme of this ShowPullSourcesConfigResponse.
 
         回源协议，回源方式非“huawei”时必选。
 
@@ -218,7 +218,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
 
     @property
     def additional_args(self):
-        """Gets the additional_args of this ShowPullSourcesConfigResponse.
+        r"""Gets the additional_args of this ShowPullSourcesConfigResponse.
 
         回源客户源站时在URL携带的参数。
 
@@ -229,7 +229,7 @@ class ShowPullSourcesConfigResponse(SdkResponse):
 
     @additional_args.setter
     def additional_args(self, additional_args):
-        """Sets the additional_args of this ShowPullSourcesConfigResponse.
+        r"""Sets the additional_args of this ShowPullSourcesConfigResponse.
 
         回源客户源站时在URL携带的参数。
 

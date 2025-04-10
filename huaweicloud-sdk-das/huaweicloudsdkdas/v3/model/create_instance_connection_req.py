@@ -43,7 +43,7 @@ class CreateInstanceConnectionReq:
     }
 
     def __init__(self, engine_type=None, network_type=None, username=None, is_save_password=None, password=None, node_ids=None, remarks=None, port=None, database_name=None, sql_record_flag=None):
-        """CreateInstanceConnectionReq
+        r"""CreateInstanceConnectionReq
 
         The model defined in huaweicloud sdk
 
@@ -101,7 +101,7 @@ class CreateInstanceConnectionReq:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this CreateInstanceConnectionReq.
+        r"""Gets the engine_type of this CreateInstanceConnectionReq.
 
         数据库引擎类型。
 
@@ -112,7 +112,7 @@ class CreateInstanceConnectionReq:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this CreateInstanceConnectionReq.
+        r"""Sets the engine_type of this CreateInstanceConnectionReq.
 
         数据库引擎类型。
 
@@ -123,7 +123,7 @@ class CreateInstanceConnectionReq:
 
     @property
     def network_type(self):
-        """Gets the network_type of this CreateInstanceConnectionReq.
+        r"""Gets the network_type of this CreateInstanceConnectionReq.
 
         网络类型。
 
@@ -134,7 +134,7 @@ class CreateInstanceConnectionReq:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this CreateInstanceConnectionReq.
+        r"""Sets the network_type of this CreateInstanceConnectionReq.
 
         网络类型。
 
@@ -145,7 +145,7 @@ class CreateInstanceConnectionReq:
 
     @property
     def username(self):
-        """Gets the username of this CreateInstanceConnectionReq.
+        r"""Gets the username of this CreateInstanceConnectionReq.
 
         用户名。
 
@@ -156,7 +156,7 @@ class CreateInstanceConnectionReq:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this CreateInstanceConnectionReq.
+        r"""Sets the username of this CreateInstanceConnectionReq.
 
         用户名。
 
@@ -167,7 +167,7 @@ class CreateInstanceConnectionReq:
 
     @property
     def is_save_password(self):
-        """Gets the is_save_password of this CreateInstanceConnectionReq.
+        r"""Gets the is_save_password of this CreateInstanceConnectionReq.
 
         是否保存密码。
 
@@ -178,7 +178,7 @@ class CreateInstanceConnectionReq:
 
     @is_save_password.setter
     def is_save_password(self, is_save_password):
-        """Sets the is_save_password of this CreateInstanceConnectionReq.
+        r"""Sets the is_save_password of this CreateInstanceConnectionReq.
 
         是否保存密码。
 
@@ -189,7 +189,7 @@ class CreateInstanceConnectionReq:
 
     @property
     def password(self):
-        """Gets the password of this CreateInstanceConnectionReq.
+        r"""Gets the password of this CreateInstanceConnectionReq.
 
         密码。
 
@@ -200,7 +200,7 @@ class CreateInstanceConnectionReq:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateInstanceConnectionReq.
+        r"""Sets the password of this CreateInstanceConnectionReq.
 
         密码。
 
@@ -211,7 +211,7 @@ class CreateInstanceConnectionReq:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this CreateInstanceConnectionReq.
+        r"""Gets the node_ids of this CreateInstanceConnectionReq.
 
         节点编号。
 
@@ -222,7 +222,7 @@ class CreateInstanceConnectionReq:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this CreateInstanceConnectionReq.
+        r"""Sets the node_ids of this CreateInstanceConnectionReq.
 
         节点编号。
 
@@ -233,7 +233,7 @@ class CreateInstanceConnectionReq:
 
     @property
     def remarks(self):
-        """Gets the remarks of this CreateInstanceConnectionReq.
+        r"""Gets the remarks of this CreateInstanceConnectionReq.
 
         备注。
 
@@ -244,7 +244,7 @@ class CreateInstanceConnectionReq:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this CreateInstanceConnectionReq.
+        r"""Sets the remarks of this CreateInstanceConnectionReq.
 
         备注。
 
@@ -255,7 +255,7 @@ class CreateInstanceConnectionReq:
 
     @property
     def port(self):
-        """Gets the port of this CreateInstanceConnectionReq.
+        r"""Gets the port of this CreateInstanceConnectionReq.
 
         端口。
 
@@ -266,7 +266,7 @@ class CreateInstanceConnectionReq:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this CreateInstanceConnectionReq.
+        r"""Sets the port of this CreateInstanceConnectionReq.
 
         端口。
 
@@ -277,7 +277,7 @@ class CreateInstanceConnectionReq:
 
     @property
     def database_name(self):
-        """Gets the database_name of this CreateInstanceConnectionReq.
+        r"""Gets the database_name of this CreateInstanceConnectionReq.
 
         数据库名字。
 
@@ -288,7 +288,7 @@ class CreateInstanceConnectionReq:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this CreateInstanceConnectionReq.
+        r"""Sets the database_name of this CreateInstanceConnectionReq.
 
         数据库名字。
 
@@ -299,7 +299,7 @@ class CreateInstanceConnectionReq:
 
     @property
     def sql_record_flag(self):
-        """Gets the sql_record_flag of this CreateInstanceConnectionReq.
+        r"""Gets the sql_record_flag of this CreateInstanceConnectionReq.
 
         sql记录开关。
 
@@ -310,7 +310,7 @@ class CreateInstanceConnectionReq:
 
     @sql_record_flag.setter
     def sql_record_flag(self, sql_record_flag):
-        """Sets the sql_record_flag of this CreateInstanceConnectionReq.
+        r"""Sets the sql_record_flag of this CreateInstanceConnectionReq.
 
         sql记录开关。
 

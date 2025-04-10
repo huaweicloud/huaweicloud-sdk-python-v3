@@ -49,7 +49,7 @@ class DynamicMaskingPolicyCreateDTO:
     }
 
     def __init__(self, name=None, datasource_type=None, cluster_id=None, cluster_name=None, database_name=None, table_id=None, table_name=None, user_groups=None, users=None, conn_name=None, conn_id=None, schema_name=None, policy_list=None):
-        """DynamicMaskingPolicyCreateDTO
+        r"""DynamicMaskingPolicyCreateDTO
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @property
     def name(self):
-        """Gets the name of this DynamicMaskingPolicyCreateDTO.
+        r"""Gets the name of this DynamicMaskingPolicyCreateDTO.
 
         策略名称。英文和汉字开头, 支持英文、汉字、数字、下划线, 2-64字符。
 
@@ -129,7 +129,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DynamicMaskingPolicyCreateDTO.
+        r"""Sets the name of this DynamicMaskingPolicyCreateDTO.
 
         策略名称。英文和汉字开头, 支持英文、汉字、数字、下划线, 2-64字符。
 
@@ -140,7 +140,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this DynamicMaskingPolicyCreateDTO.
+        r"""Gets the datasource_type of this DynamicMaskingPolicyCreateDTO.
 
         数据源类型 - HIVE数据源 - DWS数据源 - [DLI数据源](tag:nohcs)
 
@@ -151,7 +151,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this DynamicMaskingPolicyCreateDTO.
+        r"""Sets the datasource_type of this DynamicMaskingPolicyCreateDTO.
 
         数据源类型 - HIVE数据源 - DWS数据源 - [DLI数据源](tag:nohcs)
 
@@ -162,7 +162,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DynamicMaskingPolicyCreateDTO.
+        r"""Gets the cluster_id of this DynamicMaskingPolicyCreateDTO.
 
         集群id。请于集群管理页面查看集群ID信息。[当数据源类型为DLI时，该参数需要填写为DLI](tag:nohcs)。
 
@@ -173,7 +173,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DynamicMaskingPolicyCreateDTO.
+        r"""Sets the cluster_id of this DynamicMaskingPolicyCreateDTO.
 
         集群id。请于集群管理页面查看集群ID信息。[当数据源类型为DLI时，该参数需要填写为DLI](tag:nohcs)。
 
@@ -184,7 +184,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this DynamicMaskingPolicyCreateDTO.
+        r"""Gets the cluster_name of this DynamicMaskingPolicyCreateDTO.
 
         集群名称。请于集群管理页面查看集群名称信息。[当数据源类型为DLI时，该参数需要填写为DLI](tag:nohcs)。
 
@@ -195,7 +195,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this DynamicMaskingPolicyCreateDTO.
+        r"""Sets the cluster_name of this DynamicMaskingPolicyCreateDTO.
 
         集群名称。请于集群管理页面查看集群名称信息。[当数据源类型为DLI时，该参数需要填写为DLI](tag:nohcs)。
 
@@ -206,7 +206,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DynamicMaskingPolicyCreateDTO.
+        r"""Gets the database_name of this DynamicMaskingPolicyCreateDTO.
 
         数据库名称。获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -217,7 +217,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DynamicMaskingPolicyCreateDTO.
+        r"""Sets the database_name of this DynamicMaskingPolicyCreateDTO.
 
         数据库名称。获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -228,7 +228,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @property
     def table_id(self):
-        """Gets the table_id of this DynamicMaskingPolicyCreateDTO.
+        r"""Gets the table_id of this DynamicMaskingPolicyCreateDTO.
 
         数据表id，获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -239,7 +239,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this DynamicMaskingPolicyCreateDTO.
+        r"""Sets the table_id of this DynamicMaskingPolicyCreateDTO.
 
         数据表id，获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -250,7 +250,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DynamicMaskingPolicyCreateDTO.
+        r"""Gets the table_name of this DynamicMaskingPolicyCreateDTO.
 
         数据表名称, 获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -261,7 +261,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DynamicMaskingPolicyCreateDTO.
+        r"""Sets the table_name of this DynamicMaskingPolicyCreateDTO.
 
         数据表名称, 获取方法请参见[获取数据源中的表](getDataTables.html)。
 
@@ -272,7 +272,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @property
     def user_groups(self):
-        """Gets the user_groups of this DynamicMaskingPolicyCreateDTO.
+        r"""Gets the user_groups of this DynamicMaskingPolicyCreateDTO.
 
         用户组列表，用户组名称逗号分隔（非必填项，但用户、用户组必须二选其一进行配置）。例如：\"userGroup1,userGroup2\"。
 
@@ -283,7 +283,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @user_groups.setter
     def user_groups(self, user_groups):
-        """Sets the user_groups of this DynamicMaskingPolicyCreateDTO.
+        r"""Sets the user_groups of this DynamicMaskingPolicyCreateDTO.
 
         用户组列表，用户组名称逗号分隔（非必填项，但用户、用户组必须二选其一进行配置）。例如：\"userGroup1,userGroup2\"。
 
@@ -294,7 +294,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @property
     def users(self):
-        """Gets the users of this DynamicMaskingPolicyCreateDTO.
+        r"""Gets the users of this DynamicMaskingPolicyCreateDTO.
 
         用户列表，用户名称逗号分隔（非必填项，但用户、用户组必须二选其一进行配置），例如：\"user1,user2\"。
 
@@ -305,7 +305,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this DynamicMaskingPolicyCreateDTO.
+        r"""Sets the users of this DynamicMaskingPolicyCreateDTO.
 
         用户列表，用户名称逗号分隔（非必填项，但用户、用户组必须二选其一进行配置），例如：\"user1,user2\"。
 
@@ -316,7 +316,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @property
     def conn_name(self):
-        """Gets the conn_name of this DynamicMaskingPolicyCreateDTO.
+        r"""Gets the conn_name of this DynamicMaskingPolicyCreateDTO.
 
         数据连接名称，获取方法请参见[查询数据连接列表](ListDataconnections.html)。
 
@@ -327,7 +327,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @conn_name.setter
     def conn_name(self, conn_name):
-        """Sets the conn_name of this DynamicMaskingPolicyCreateDTO.
+        r"""Sets the conn_name of this DynamicMaskingPolicyCreateDTO.
 
         数据连接名称，获取方法请参见[查询数据连接列表](ListDataconnections.html)。
 
@@ -338,7 +338,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @property
     def conn_id(self):
-        """Gets the conn_id of this DynamicMaskingPolicyCreateDTO.
+        r"""Gets the conn_id of this DynamicMaskingPolicyCreateDTO.
 
         数据连接id，获取方法请参见[查询数据连接列表](ListDataconnections.html)。
 
@@ -349,7 +349,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @conn_id.setter
     def conn_id(self, conn_id):
-        """Sets the conn_id of this DynamicMaskingPolicyCreateDTO.
+        r"""Sets the conn_id of this DynamicMaskingPolicyCreateDTO.
 
         数据连接id，获取方法请参见[查询数据连接列表](ListDataconnections.html)。
 
@@ -360,7 +360,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this DynamicMaskingPolicyCreateDTO.
+        r"""Gets the schema_name of this DynamicMaskingPolicyCreateDTO.
 
         DWS数据源的模式名称。
 
@@ -371,7 +371,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this DynamicMaskingPolicyCreateDTO.
+        r"""Sets the schema_name of this DynamicMaskingPolicyCreateDTO.
 
         DWS数据源的模式名称。
 
@@ -382,7 +382,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @property
     def policy_list(self):
-        """Gets the policy_list of this DynamicMaskingPolicyCreateDTO.
+        r"""Gets the policy_list of this DynamicMaskingPolicyCreateDTO.
 
         动态数据脱敏策略列表。
 
@@ -393,7 +393,7 @@ class DynamicMaskingPolicyCreateDTO:
 
     @policy_list.setter
     def policy_list(self, policy_list):
-        """Sets the policy_list of this DynamicMaskingPolicyCreateDTO.
+        r"""Sets the policy_list of this DynamicMaskingPolicyCreateDTO.
 
         动态数据脱敏策略列表。
 

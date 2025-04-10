@@ -24,7 +24,7 @@ class ListDownloadExportedFileResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """ListDownloadExportedFileResponse
+        r"""ListDownloadExportedFileResponse
 
         The model defined in huaweicloud sdk
 

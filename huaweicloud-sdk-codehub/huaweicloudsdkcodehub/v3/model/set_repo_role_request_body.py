@@ -25,7 +25,7 @@ class SetRepoRoleRequestBody:
     }
 
     def __init__(self, role=None):
-        """SetRepoRoleRequestBody
+        r"""SetRepoRoleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SetRepoRoleRequestBody:
 
     @property
     def role(self):
-        """Gets the role of this SetRepoRoleRequestBody.
+        r"""Gets the role of this SetRepoRoleRequestBody.
 
         设置仓库的成员权限，取值范围：20 -> 只读成员 30->普通成员，40->管理员
 
@@ -53,7 +53,7 @@ class SetRepoRoleRequestBody:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this SetRepoRoleRequestBody.
+        r"""Sets the role of this SetRepoRoleRequestBody.
 
         设置仓库的成员权限，取值范围：20 -> 只读成员 30->普通成员，40->管理员
 

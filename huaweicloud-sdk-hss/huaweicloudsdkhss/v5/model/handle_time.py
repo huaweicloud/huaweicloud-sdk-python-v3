@@ -23,7 +23,7 @@ class HandleTime:
     }
 
     def __init__(self):
-        """HandleTime
+        r"""HandleTime
 
         The model defined in huaweicloud sdk
 

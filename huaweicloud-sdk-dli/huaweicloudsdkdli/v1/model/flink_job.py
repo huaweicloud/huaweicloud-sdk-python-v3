@@ -75,7 +75,7 @@ class FlinkJob:
     }
 
     def __init__(self, job_id=None, name=None, desc=None, user_name=None, job_type=None, status=None, status_desc=None, create_time=None, start_time=None, duration=None, root_id=None, user_id=None, project_id=None, sql_body=None, run_mode=None, main_class=None, entrypoint_args=None, execution_graph=None, update_time=None, graph_editor_enabled=None, has_savepoint=None, queue_name=None, edge_group_ids=None, restart_times=None, savepoint_path=None, job_config=None):
-        """FlinkJob
+        r"""FlinkJob
 
         The model defined in huaweicloud sdk
 
@@ -216,7 +216,7 @@ class FlinkJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this FlinkJob.
+        r"""Gets the job_id of this FlinkJob.
 
         作业ID。
 
@@ -227,7 +227,7 @@ class FlinkJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this FlinkJob.
+        r"""Sets the job_id of this FlinkJob.
 
         作业ID。
 
@@ -238,7 +238,7 @@ class FlinkJob:
 
     @property
     def name(self):
-        """Gets the name of this FlinkJob.
+        r"""Gets the name of this FlinkJob.
 
         作业名称。长度限制：0-57个字符。
 
@@ -249,7 +249,7 @@ class FlinkJob:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlinkJob.
+        r"""Sets the name of this FlinkJob.
 
         作业名称。长度限制：0-57个字符。
 
@@ -260,7 +260,7 @@ class FlinkJob:
 
     @property
     def desc(self):
-        """Gets the desc of this FlinkJob.
+        r"""Gets the desc of this FlinkJob.
 
         作业描述。长度限制：0-2048个字符。
 
@@ -271,7 +271,7 @@ class FlinkJob:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this FlinkJob.
+        r"""Sets the desc of this FlinkJob.
 
         作业描述。长度限制：0-2048个字符。
 
@@ -282,7 +282,7 @@ class FlinkJob:
 
     @property
     def user_name(self):
-        """Gets the user_name of this FlinkJob.
+        r"""Gets the user_name of this FlinkJob.
 
         用户名，当“show_detail”为“false”时独有。
 
@@ -293,7 +293,7 @@ class FlinkJob:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this FlinkJob.
+        r"""Sets the user_name of this FlinkJob.
 
         用户名，当“show_detail”为“false”时独有。
 
@@ -304,7 +304,7 @@ class FlinkJob:
 
     @property
     def job_type(self):
-        """Gets the job_type of this FlinkJob.
+        r"""Gets the job_type of this FlinkJob.
 
         作业类型。
 
@@ -315,7 +315,7 @@ class FlinkJob:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this FlinkJob.
+        r"""Sets the job_type of this FlinkJob.
 
         作业类型。
 
@@ -326,7 +326,7 @@ class FlinkJob:
 
     @property
     def status(self):
-        """Gets the status of this FlinkJob.
+        r"""Gets the status of this FlinkJob.
 
         作业状态。
 
@@ -337,7 +337,7 @@ class FlinkJob:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FlinkJob.
+        r"""Sets the status of this FlinkJob.
 
         作业状态。
 
@@ -348,7 +348,7 @@ class FlinkJob:
 
     @property
     def status_desc(self):
-        """Gets the status_desc of this FlinkJob.
+        r"""Gets the status_desc of this FlinkJob.
 
         作业状态描述。
 
@@ -359,7 +359,7 @@ class FlinkJob:
 
     @status_desc.setter
     def status_desc(self, status_desc):
-        """Sets the status_desc of this FlinkJob.
+        r"""Sets the status_desc of this FlinkJob.
 
         作业状态描述。
 
@@ -370,7 +370,7 @@ class FlinkJob:
 
     @property
     def create_time(self):
-        """Gets the create_time of this FlinkJob.
+        r"""Gets the create_time of this FlinkJob.
 
         作业创建时间。
 
@@ -381,7 +381,7 @@ class FlinkJob:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this FlinkJob.
+        r"""Sets the create_time of this FlinkJob.
 
         作业创建时间。
 
@@ -392,7 +392,7 @@ class FlinkJob:
 
     @property
     def start_time(self):
-        """Gets the start_time of this FlinkJob.
+        r"""Gets the start_time of this FlinkJob.
 
         作业开始时间。
 
@@ -403,7 +403,7 @@ class FlinkJob:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this FlinkJob.
+        r"""Sets the start_time of this FlinkJob.
 
         作业开始时间。
 
@@ -414,7 +414,7 @@ class FlinkJob:
 
     @property
     def duration(self):
-        """Gets the duration of this FlinkJob.
+        r"""Gets the duration of this FlinkJob.
 
         作业运行时长, 单位ms，当“show_detail”为“false”时独有。
 
@@ -425,7 +425,7 @@ class FlinkJob:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this FlinkJob.
+        r"""Sets the duration of this FlinkJob.
 
         作业运行时长, 单位ms，当“show_detail”为“false”时独有。
 
@@ -436,7 +436,7 @@ class FlinkJob:
 
     @property
     def root_id(self):
-        """Gets the root_id of this FlinkJob.
+        r"""Gets the root_id of this FlinkJob.
 
         父作业ID，“show_detail”为“false”时独有。
 
@@ -447,7 +447,7 @@ class FlinkJob:
 
     @root_id.setter
     def root_id(self, root_id):
-        """Sets the root_id of this FlinkJob.
+        r"""Sets the root_id of this FlinkJob.
 
         父作业ID，“show_detail”为“false”时独有。
 
@@ -458,7 +458,7 @@ class FlinkJob:
 
     @property
     def user_id(self):
-        """Gets the user_id of this FlinkJob.
+        r"""Gets the user_id of this FlinkJob.
 
         作业所属用户标识，“show_detail”为“true”时独有。
 
@@ -469,7 +469,7 @@ class FlinkJob:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this FlinkJob.
+        r"""Sets the user_id of this FlinkJob.
 
         作业所属用户标识，“show_detail”为“true”时独有。
 
@@ -480,7 +480,7 @@ class FlinkJob:
 
     @property
     def project_id(self):
-        """Gets the project_id of this FlinkJob.
+        r"""Gets the project_id of this FlinkJob.
 
         作业所属项目标识，“show_detail”为“true”时独有。
 
@@ -491,7 +491,7 @@ class FlinkJob:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this FlinkJob.
+        r"""Sets the project_id of this FlinkJob.
 
         作业所属项目标识，“show_detail”为“true”时独有。
 
@@ -502,7 +502,7 @@ class FlinkJob:
 
     @property
     def sql_body(self):
-        """Gets the sql_body of this FlinkJob.
+        r"""Gets the sql_body of this FlinkJob.
 
         Stream SQL语句，“show_detail”为“false”时独有。
 
@@ -513,7 +513,7 @@ class FlinkJob:
 
     @sql_body.setter
     def sql_body(self, sql_body):
-        """Sets the sql_body of this FlinkJob.
+        r"""Sets the sql_body of this FlinkJob.
 
         Stream SQL语句，“show_detail”为“false”时独有。
 
@@ -524,7 +524,7 @@ class FlinkJob:
 
     @property
     def run_mode(self):
-        """Gets the run_mode of this FlinkJob.
+        r"""Gets the run_mode of this FlinkJob.
 
         作业运行模式： shared_cluster：共享。 exclusive_cluster：独享。 edge_node：边缘节点。 show_detail为true时独有.
 
@@ -535,7 +535,7 @@ class FlinkJob:
 
     @run_mode.setter
     def run_mode(self, run_mode):
-        """Sets the run_mode of this FlinkJob.
+        r"""Sets the run_mode of this FlinkJob.
 
         作业运行模式： shared_cluster：共享。 exclusive_cluster：独享。 edge_node：边缘节点。 show_detail为true时独有.
 
@@ -546,7 +546,7 @@ class FlinkJob:
 
     @property
     def main_class(self):
-        """Gets the main_class of this FlinkJob.
+        r"""Gets the main_class of this FlinkJob.
 
         jar包主类，“show_detail”为“false”时独有。
 
@@ -557,7 +557,7 @@ class FlinkJob:
 
     @main_class.setter
     def main_class(self, main_class):
-        """Sets the main_class of this FlinkJob.
+        r"""Sets the main_class of this FlinkJob.
 
         jar包主类，“show_detail”为“false”时独有。
 
@@ -568,7 +568,7 @@ class FlinkJob:
 
     @property
     def entrypoint_args(self):
-        """Gets the entrypoint_args of this FlinkJob.
+        r"""Gets the entrypoint_args of this FlinkJob.
 
         jar包作业运行参数，多个参数之间用空格分隔。show_detail为true时独有的。
 
@@ -579,7 +579,7 @@ class FlinkJob:
 
     @entrypoint_args.setter
     def entrypoint_args(self, entrypoint_args):
-        """Sets the entrypoint_args of this FlinkJob.
+        r"""Sets the entrypoint_args of this FlinkJob.
 
         jar包作业运行参数，多个参数之间用空格分隔。show_detail为true时独有的。
 
@@ -590,7 +590,7 @@ class FlinkJob:
 
     @property
     def execution_graph(self):
-        """Gets the execution_graph of this FlinkJob.
+        r"""Gets the execution_graph of this FlinkJob.
 
         作业执行计划，“show_detail”为“false”时独有。
 
@@ -601,7 +601,7 @@ class FlinkJob:
 
     @execution_graph.setter
     def execution_graph(self, execution_graph):
-        """Sets the execution_graph of this FlinkJob.
+        r"""Sets the execution_graph of this FlinkJob.
 
         作业执行计划，“show_detail”为“false”时独有。
 
@@ -612,7 +612,7 @@ class FlinkJob:
 
     @property
     def update_time(self):
-        """Gets the update_time of this FlinkJob.
+        r"""Gets the update_time of this FlinkJob.
 
         作业更新时间，“show_detail”为“false”时独有。
 
@@ -623,7 +623,7 @@ class FlinkJob:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this FlinkJob.
+        r"""Sets the update_time of this FlinkJob.
 
         作业更新时间，“show_detail”为“false”时独有。
 
@@ -634,7 +634,7 @@ class FlinkJob:
 
     @property
     def graph_editor_enabled(self):
-        """Gets the graph_editor_enabled of this FlinkJob.
+        r"""Gets the graph_editor_enabled of this FlinkJob.
 
         作业的流图是否可编辑。“true”表示作业的流图可以编辑，“false”表示作业的流图不可以编辑。
 
@@ -645,7 +645,7 @@ class FlinkJob:
 
     @graph_editor_enabled.setter
     def graph_editor_enabled(self, graph_editor_enabled):
-        """Sets the graph_editor_enabled of this FlinkJob.
+        r"""Sets the graph_editor_enabled of this FlinkJob.
 
         作业的流图是否可编辑。“true”表示作业的流图可以编辑，“false”表示作业的流图不可以编辑。
 
@@ -656,7 +656,7 @@ class FlinkJob:
 
     @property
     def has_savepoint(self):
-        """Gets the has_savepoint of this FlinkJob.
+        r"""Gets the has_savepoint of this FlinkJob.
 
         作业是否有保存点。“true”表示作业有保存点，“false”表示作业没有保存点。
 
@@ -667,7 +667,7 @@ class FlinkJob:
 
     @has_savepoint.setter
     def has_savepoint(self, has_savepoint):
-        """Sets the has_savepoint of this FlinkJob.
+        r"""Sets the has_savepoint of this FlinkJob.
 
         作业是否有保存点。“true”表示作业有保存点，“false”表示作业没有保存点。
 
@@ -678,7 +678,7 @@ class FlinkJob:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this FlinkJob.
+        r"""Gets the queue_name of this FlinkJob.
 
         队列名字。
 
@@ -689,7 +689,7 @@ class FlinkJob:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this FlinkJob.
+        r"""Sets the queue_name of this FlinkJob.
 
         队列名字。
 
@@ -700,7 +700,7 @@ class FlinkJob:
 
     @property
     def edge_group_ids(self):
-        """Gets the edge_group_ids of this FlinkJob.
+        r"""Gets the edge_group_ids of this FlinkJob.
 
         边缘计算组ID列表。
 
@@ -711,7 +711,7 @@ class FlinkJob:
 
     @edge_group_ids.setter
     def edge_group_ids(self, edge_group_ids):
-        """Sets the edge_group_ids of this FlinkJob.
+        r"""Sets the edge_group_ids of this FlinkJob.
 
         边缘计算组ID列表。
 
@@ -722,7 +722,7 @@ class FlinkJob:
 
     @property
     def restart_times(self):
-        """Gets the restart_times of this FlinkJob.
+        r"""Gets the restart_times of this FlinkJob.
 
         重启次数。
 
@@ -733,7 +733,7 @@ class FlinkJob:
 
     @restart_times.setter
     def restart_times(self, restart_times):
-        """Sets the restart_times of this FlinkJob.
+        r"""Sets the restart_times of this FlinkJob.
 
         重启次数。
 
@@ -744,7 +744,7 @@ class FlinkJob:
 
     @property
     def savepoint_path(self):
-        """Gets the savepoint_path of this FlinkJob.
+        r"""Gets the savepoint_path of this FlinkJob.
 
         保存点路径。
 
@@ -755,7 +755,7 @@ class FlinkJob:
 
     @savepoint_path.setter
     def savepoint_path(self, savepoint_path):
-        """Sets the savepoint_path of this FlinkJob.
+        r"""Sets the savepoint_path of this FlinkJob.
 
         保存点路径。
 
@@ -766,7 +766,7 @@ class FlinkJob:
 
     @property
     def job_config(self):
-        """Gets the job_config of this FlinkJob.
+        r"""Gets the job_config of this FlinkJob.
 
         :return: The job_config of this FlinkJob.
         :rtype: :class:`huaweicloudsdkdli.v1.FlinkJobConfig`
@@ -775,7 +775,7 @@ class FlinkJob:
 
     @job_config.setter
     def job_config(self, job_config):
-        """Sets the job_config of this FlinkJob.
+        r"""Sets the job_config of this FlinkJob.
 
         :param job_config: The job_config of this FlinkJob.
         :type job_config: :class:`huaweicloudsdkdli.v1.FlinkJobConfig`

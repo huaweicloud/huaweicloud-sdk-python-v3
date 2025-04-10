@@ -43,7 +43,7 @@ class VpcHealthConfigBase:
     }
 
     def __init__(self, protocol=None, path=None, method=None, port=None, threshold_normal=None, threshold_abnormal=None, time_interval=None, http_code=None, enable_client_ssl=None, status=None):
-        """VpcHealthConfigBase
+        r"""VpcHealthConfigBase
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class VpcHealthConfigBase:
 
     @property
     def protocol(self):
-        """Gets the protocol of this VpcHealthConfigBase.
+        r"""Gets the protocol of this VpcHealthConfigBase.
 
         使用以下协议，对VPC中主机执行健康检查： - TCP - HTTP - HTTPS
 
@@ -113,7 +113,7 @@ class VpcHealthConfigBase:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this VpcHealthConfigBase.
+        r"""Sets the protocol of this VpcHealthConfigBase.
 
         使用以下协议，对VPC中主机执行健康检查： - TCP - HTTP - HTTPS
 
@@ -124,7 +124,7 @@ class VpcHealthConfigBase:
 
     @property
     def path(self):
-        """Gets the path of this VpcHealthConfigBase.
+        r"""Gets the path of this VpcHealthConfigBase.
 
         健康检查时的目标路径。protocol = http或https时必选
 
@@ -135,7 +135,7 @@ class VpcHealthConfigBase:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this VpcHealthConfigBase.
+        r"""Sets the path of this VpcHealthConfigBase.
 
         健康检查时的目标路径。protocol = http或https时必选
 
@@ -146,7 +146,7 @@ class VpcHealthConfigBase:
 
     @property
     def method(self):
-        """Gets the method of this VpcHealthConfigBase.
+        r"""Gets the method of this VpcHealthConfigBase.
 
         健康检查时的请求方法
 
@@ -157,7 +157,7 @@ class VpcHealthConfigBase:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this VpcHealthConfigBase.
+        r"""Sets the method of this VpcHealthConfigBase.
 
         健康检查时的请求方法
 
@@ -168,7 +168,7 @@ class VpcHealthConfigBase:
 
     @property
     def port(self):
-        """Gets the port of this VpcHealthConfigBase.
+        r"""Gets the port of this VpcHealthConfigBase.
 
         健康检查的目标端口，缺少或port = 0时为VPC中主机的端口号。  如果此端口存在非0值，则使用此端口进行健康检查。
 
@@ -179,7 +179,7 @@ class VpcHealthConfigBase:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this VpcHealthConfigBase.
+        r"""Sets the port of this VpcHealthConfigBase.
 
         健康检查的目标端口，缺少或port = 0时为VPC中主机的端口号。  如果此端口存在非0值，则使用此端口进行健康检查。
 
@@ -190,7 +190,7 @@ class VpcHealthConfigBase:
 
     @property
     def threshold_normal(self):
-        """Gets the threshold_normal of this VpcHealthConfigBase.
+        r"""Gets the threshold_normal of this VpcHealthConfigBase.
 
         正常阈值。判定VPC通道中主机正常的依据为：连续检查x成功，x为您设置的正常阈值。
 
@@ -201,7 +201,7 @@ class VpcHealthConfigBase:
 
     @threshold_normal.setter
     def threshold_normal(self, threshold_normal):
-        """Sets the threshold_normal of this VpcHealthConfigBase.
+        r"""Sets the threshold_normal of this VpcHealthConfigBase.
 
         正常阈值。判定VPC通道中主机正常的依据为：连续检查x成功，x为您设置的正常阈值。
 
@@ -212,7 +212,7 @@ class VpcHealthConfigBase:
 
     @property
     def threshold_abnormal(self):
-        """Gets the threshold_abnormal of this VpcHealthConfigBase.
+        r"""Gets the threshold_abnormal of this VpcHealthConfigBase.
 
         异常阈值。判定VPC通道中主机异常的依据为：连续检查x失败，x为您设置的异常阈值。
 
@@ -223,7 +223,7 @@ class VpcHealthConfigBase:
 
     @threshold_abnormal.setter
     def threshold_abnormal(self, threshold_abnormal):
-        """Sets the threshold_abnormal of this VpcHealthConfigBase.
+        r"""Sets the threshold_abnormal of this VpcHealthConfigBase.
 
         异常阈值。判定VPC通道中主机异常的依据为：连续检查x失败，x为您设置的异常阈值。
 
@@ -234,7 +234,7 @@ class VpcHealthConfigBase:
 
     @property
     def time_interval(self):
-        """Gets the time_interval of this VpcHealthConfigBase.
+        r"""Gets the time_interval of this VpcHealthConfigBase.
 
         间隔时间：连续两次检查的间隔时间，单位为秒。必须大于timeout字段取值。
 
@@ -245,7 +245,7 @@ class VpcHealthConfigBase:
 
     @time_interval.setter
     def time_interval(self, time_interval):
-        """Sets the time_interval of this VpcHealthConfigBase.
+        r"""Sets the time_interval of this VpcHealthConfigBase.
 
         间隔时间：连续两次检查的间隔时间，单位为秒。必须大于timeout字段取值。
 
@@ -256,7 +256,7 @@ class VpcHealthConfigBase:
 
     @property
     def http_code(self):
-        """Gets the http_code of this VpcHealthConfigBase.
+        r"""Gets the http_code of this VpcHealthConfigBase.
 
         检查目标HTTP响应时，判断成功使用的HTTP响应码。取值范围为100到599之前的任意整数值，支持如下三种格式： - 多个值，如：200,201,202 - 一系列值，如：200-299 - 组合值，如：201,202,210-299 protocol = http时必选
 
@@ -267,7 +267,7 @@ class VpcHealthConfigBase:
 
     @http_code.setter
     def http_code(self, http_code):
-        """Sets the http_code of this VpcHealthConfigBase.
+        r"""Sets the http_code of this VpcHealthConfigBase.
 
         检查目标HTTP响应时，判断成功使用的HTTP响应码。取值范围为100到599之前的任意整数值，支持如下三种格式： - 多个值，如：200,201,202 - 一系列值，如：200-299 - 组合值，如：201,202,210-299 protocol = http时必选
 
@@ -278,7 +278,7 @@ class VpcHealthConfigBase:
 
     @property
     def enable_client_ssl(self):
-        """Gets the enable_client_ssl of this VpcHealthConfigBase.
+        r"""Gets the enable_client_ssl of this VpcHealthConfigBase.
 
         是否开启双向认证。如果开启，则使用实例配置中的backend_client_certificate配置项的证书
 
@@ -289,7 +289,7 @@ class VpcHealthConfigBase:
 
     @enable_client_ssl.setter
     def enable_client_ssl(self, enable_client_ssl):
-        """Sets the enable_client_ssl of this VpcHealthConfigBase.
+        r"""Sets the enable_client_ssl of this VpcHealthConfigBase.
 
         是否开启双向认证。如果开启，则使用实例配置中的backend_client_certificate配置项的证书
 
@@ -300,7 +300,7 @@ class VpcHealthConfigBase:
 
     @property
     def status(self):
-        """Gets the status of this VpcHealthConfigBase.
+        r"""Gets the status of this VpcHealthConfigBase.
 
         健康检查状态   - 1：可用   - 2：不可用
 
@@ -311,7 +311,7 @@ class VpcHealthConfigBase:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VpcHealthConfigBase.
+        r"""Sets the status of this VpcHealthConfigBase.
 
         健康检查状态   - 1：可用   - 2：不可用
 

@@ -31,7 +31,7 @@ class StartPausingWorkflowExecutionsRequest:
     }
 
     def __init__(self, workflow_id=None, execution_id=None, action=None, node_id=None):
-        """StartPausingWorkflowExecutionsRequest
+        r"""StartPausingWorkflowExecutionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class StartPausingWorkflowExecutionsRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this StartPausingWorkflowExecutionsRequest.
+        r"""Gets the workflow_id of this StartPausingWorkflowExecutionsRequest.
 
         工作流ID，唯一标识，根据project_id和workflow_name生成。
 
@@ -71,7 +71,7 @@ class StartPausingWorkflowExecutionsRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this StartPausingWorkflowExecutionsRequest.
+        r"""Sets the workflow_id of this StartPausingWorkflowExecutionsRequest.
 
         工作流ID，唯一标识，根据project_id和workflow_name生成。
 
@@ -82,7 +82,7 @@ class StartPausingWorkflowExecutionsRequest:
 
     @property
     def execution_id(self):
-        """Gets the execution_id of this StartPausingWorkflowExecutionsRequest.
+        r"""Gets the execution_id of this StartPausingWorkflowExecutionsRequest.
 
         工作流执行ID。
 
@@ -93,7 +93,7 @@ class StartPausingWorkflowExecutionsRequest:
 
     @execution_id.setter
     def execution_id(self, execution_id):
-        """Sets the execution_id of this StartPausingWorkflowExecutionsRequest.
+        r"""Sets the execution_id of this StartPausingWorkflowExecutionsRequest.
 
         工作流执行ID。
 
@@ -104,7 +104,7 @@ class StartPausingWorkflowExecutionsRequest:
 
     @property
     def action(self):
-        """Gets the action of this StartPausingWorkflowExecutionsRequest.
+        r"""Gets the action of this StartPausingWorkflowExecutionsRequest.
 
         对当前节点的操作：失败重试，失败跳过，暂停继续。 restart可重新执行失败的节点，skip可跳过失败的节点进入下个节点的执行，continue可通过暂停节点进入下一个节点。
 
@@ -115,7 +115,7 @@ class StartPausingWorkflowExecutionsRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this StartPausingWorkflowExecutionsRequest.
+        r"""Sets the action of this StartPausingWorkflowExecutionsRequest.
 
         对当前节点的操作：失败重试，失败跳过，暂停继续。 restart可重新执行失败的节点，skip可跳过失败的节点进入下个节点的执行，continue可通过暂停节点进入下一个节点。
 
@@ -126,7 +126,7 @@ class StartPausingWorkflowExecutionsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this StartPausingWorkflowExecutionsRequest.
+        r"""Gets the node_id of this StartPausingWorkflowExecutionsRequest.
 
         当前节点的id。
 
@@ -137,7 +137,7 @@ class StartPausingWorkflowExecutionsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this StartPausingWorkflowExecutionsRequest.
+        r"""Sets the node_id of this StartPausingWorkflowExecutionsRequest.
 
         当前节点的id。
 

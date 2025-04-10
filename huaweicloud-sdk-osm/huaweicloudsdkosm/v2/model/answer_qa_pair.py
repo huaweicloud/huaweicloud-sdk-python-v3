@@ -39,7 +39,7 @@ class AnswerQaPair:
     }
 
     def __init__(self, score=None, answer=None, domain=None, link=None, question=None, qa_pair_id=None, relevance_details=None, task_complete=None):
-        """AnswerQaPair
+        r"""AnswerQaPair
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class AnswerQaPair:
 
     @property
     def score(self):
-        """Gets the score of this AnswerQaPair.
+        r"""Gets the score of this AnswerQaPair.
 
         相似度得分
 
@@ -103,7 +103,7 @@ class AnswerQaPair:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this AnswerQaPair.
+        r"""Sets the score of this AnswerQaPair.
 
         相似度得分
 
@@ -114,7 +114,7 @@ class AnswerQaPair:
 
     @property
     def answer(self):
-        """Gets the answer of this AnswerQaPair.
+        r"""Gets the answer of this AnswerQaPair.
 
         答案
 
@@ -125,7 +125,7 @@ class AnswerQaPair:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this AnswerQaPair.
+        r"""Sets the answer of this AnswerQaPair.
 
         答案
 
@@ -136,7 +136,7 @@ class AnswerQaPair:
 
     @property
     def domain(self):
-        """Gets the domain of this AnswerQaPair.
+        r"""Gets the domain of this AnswerQaPair.
 
         主题
 
@@ -147,7 +147,7 @@ class AnswerQaPair:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AnswerQaPair.
+        r"""Sets the domain of this AnswerQaPair.
 
         主题
 
@@ -158,7 +158,7 @@ class AnswerQaPair:
 
     @property
     def link(self):
-        """Gets the link of this AnswerQaPair.
+        r"""Gets the link of this AnswerQaPair.
 
         链接
 
@@ -169,7 +169,7 @@ class AnswerQaPair:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this AnswerQaPair.
+        r"""Sets the link of this AnswerQaPair.
 
         链接
 
@@ -180,7 +180,7 @@ class AnswerQaPair:
 
     @property
     def question(self):
-        """Gets the question of this AnswerQaPair.
+        r"""Gets the question of this AnswerQaPair.
 
         问题
 
@@ -191,7 +191,7 @@ class AnswerQaPair:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this AnswerQaPair.
+        r"""Sets the question of this AnswerQaPair.
 
         问题
 
@@ -202,7 +202,7 @@ class AnswerQaPair:
 
     @property
     def qa_pair_id(self):
-        """Gets the qa_pair_id of this AnswerQaPair.
+        r"""Gets the qa_pair_id of this AnswerQaPair.
 
         语料Id
 
@@ -213,7 +213,7 @@ class AnswerQaPair:
 
     @qa_pair_id.setter
     def qa_pair_id(self, qa_pair_id):
-        """Sets the qa_pair_id of this AnswerQaPair.
+        r"""Sets the qa_pair_id of this AnswerQaPair.
 
         语料Id
 
@@ -224,7 +224,7 @@ class AnswerQaPair:
 
     @property
     def relevance_details(self):
-        """Gets the relevance_details of this AnswerQaPair.
+        r"""Gets the relevance_details of this AnswerQaPair.
 
         相关问题详情列表
 
@@ -235,7 +235,7 @@ class AnswerQaPair:
 
     @relevance_details.setter
     def relevance_details(self, relevance_details):
-        """Sets the relevance_details of this AnswerQaPair.
+        r"""Sets the relevance_details of this AnswerQaPair.
 
         相关问题详情列表
 
@@ -246,7 +246,7 @@ class AnswerQaPair:
 
     @property
     def task_complete(self):
-        """Gets the task_complete of this AnswerQaPair.
+        r"""Gets the task_complete of this AnswerQaPair.
 
         技能意图识别是否结束
 
@@ -257,7 +257,7 @@ class AnswerQaPair:
 
     @task_complete.setter
     def task_complete(self, task_complete):
-        """Sets the task_complete of this AnswerQaPair.
+        r"""Sets the task_complete of this AnswerQaPair.
 
         技能意图识别是否结束
 

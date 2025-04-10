@@ -37,7 +37,7 @@ class InterpreterInfo:
     }
 
     def __init__(self, login_account=None, user_id=None, call_number=None, name=None, interpreter_id=None, interpreter_type=None, ai_digital_info=None):
-        """InterpreterInfo
+        r"""InterpreterInfo
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class InterpreterInfo:
 
     @property
     def login_account(self):
-        """Gets the login_account of this InterpreterInfo.
+        r"""Gets the login_account of this InterpreterInfo.
 
         用户登录账号，可以是账号、手机、邮箱其中一个,loginAccount和userID必须二选一。
 
@@ -95,7 +95,7 @@ class InterpreterInfo:
 
     @login_account.setter
     def login_account(self, login_account):
-        """Sets the login_account of this InterpreterInfo.
+        r"""Sets the login_account of this InterpreterInfo.
 
         用户登录账号，可以是账号、手机、邮箱其中一个,loginAccount和userID必须二选一。
 
@@ -106,7 +106,7 @@ class InterpreterInfo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this InterpreterInfo.
+        r"""Gets the user_id of this InterpreterInfo.
 
         用户的userUUID。
 
@@ -117,7 +117,7 @@ class InterpreterInfo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this InterpreterInfo.
+        r"""Sets the user_id of this InterpreterInfo.
 
         用户的userUUID。
 
@@ -128,7 +128,7 @@ class InterpreterInfo:
 
     @property
     def call_number(self):
-        """Gets the call_number of this InterpreterInfo.
+        r"""Gets the call_number of this InterpreterInfo.
 
         呼叫号码。
 
@@ -139,7 +139,7 @@ class InterpreterInfo:
 
     @call_number.setter
     def call_number(self, call_number):
-        """Sets the call_number of this InterpreterInfo.
+        r"""Sets the call_number of this InterpreterInfo.
 
         呼叫号码。
 
@@ -150,7 +150,7 @@ class InterpreterInfo:
 
     @property
     def name(self):
-        """Gets the name of this InterpreterInfo.
+        r"""Gets the name of this InterpreterInfo.
 
         用户名。
 
@@ -161,7 +161,7 @@ class InterpreterInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InterpreterInfo.
+        r"""Sets the name of this InterpreterInfo.
 
         用户名。
 
@@ -172,7 +172,7 @@ class InterpreterInfo:
 
     @property
     def interpreter_id(self):
-        """Gets the interpreter_id of this InterpreterInfo.
+        r"""Gets the interpreter_id of this InterpreterInfo.
 
         传译员序号，AI传译组下传译员唯一标识。
 
@@ -183,7 +183,7 @@ class InterpreterInfo:
 
     @interpreter_id.setter
     def interpreter_id(self, interpreter_id):
-        """Sets the interpreter_id of this InterpreterInfo.
+        r"""Sets the interpreter_id of this InterpreterInfo.
 
         传译员序号，AI传译组下传译员唯一标识。
 
@@ -194,7 +194,7 @@ class InterpreterInfo:
 
     @property
     def interpreter_type(self):
-        """Gets the interpreter_type of this InterpreterInfo.
+        r"""Gets the interpreter_type of this InterpreterInfo.
 
         传译员类型，MANUAL：人工传译，AI：AI传译。默认MANUAL。
 
@@ -205,7 +205,7 @@ class InterpreterInfo:
 
     @interpreter_type.setter
     def interpreter_type(self, interpreter_type):
-        """Sets the interpreter_type of this InterpreterInfo.
+        r"""Sets the interpreter_type of this InterpreterInfo.
 
         传译员类型，MANUAL：人工传译，AI：AI传译。默认MANUAL。
 
@@ -216,7 +216,7 @@ class InterpreterInfo:
 
     @property
     def ai_digital_info(self):
-        """Gets the ai_digital_info of this InterpreterInfo.
+        r"""Gets the ai_digital_info of this InterpreterInfo.
 
         :return: The ai_digital_info of this InterpreterInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.InterpreterAiDigitalInfo`
@@ -225,7 +225,7 @@ class InterpreterInfo:
 
     @ai_digital_info.setter
     def ai_digital_info(self, ai_digital_info):
-        """Sets the ai_digital_info of this InterpreterInfo.
+        r"""Sets the ai_digital_info of this InterpreterInfo.
 
         :param ai_digital_info: The ai_digital_info of this InterpreterInfo.
         :type ai_digital_info: :class:`huaweicloudsdkmeeting.v1.InterpreterAiDigitalInfo`

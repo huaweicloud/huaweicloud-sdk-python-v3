@@ -32,7 +32,7 @@ class CreateCommandResponse(SdkResponse):
     }
 
     def __init__(self, command_id=None, response=None, error_code=None, error_msg=None):
-        """CreateCommandResponse
+        r"""CreateCommandResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateCommandResponse(SdkResponse):
 
     @property
     def command_id(self):
-        """Gets the command_id of this CreateCommandResponse.
+        r"""Gets the command_id of this CreateCommandResponse.
 
         设备命令ID，用于唯一标识一条命令，在下发设备命令时由物联网平台分配获得。
 
@@ -76,7 +76,7 @@ class CreateCommandResponse(SdkResponse):
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this CreateCommandResponse.
+        r"""Sets the command_id of this CreateCommandResponse.
 
         设备命令ID，用于唯一标识一条命令，在下发设备命令时由物联网平台分配获得。
 
@@ -87,7 +87,7 @@ class CreateCommandResponse(SdkResponse):
 
     @property
     def response(self):
-        """Gets the response of this CreateCommandResponse.
+        r"""Gets the response of this CreateCommandResponse.
 
         设备上报的命令执行结果。Json格式，具体格式需要应用和设备约定。
 
@@ -98,7 +98,7 @@ class CreateCommandResponse(SdkResponse):
 
     @response.setter
     def response(self, response):
-        """Sets the response of this CreateCommandResponse.
+        r"""Sets the response of this CreateCommandResponse.
 
         设备上报的命令执行结果。Json格式，具体格式需要应用和设备约定。
 
@@ -109,7 +109,7 @@ class CreateCommandResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateCommandResponse.
+        r"""Gets the error_code of this CreateCommandResponse.
 
         命令下发异常错误码。
 
@@ -120,7 +120,7 @@ class CreateCommandResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateCommandResponse.
+        r"""Sets the error_code of this CreateCommandResponse.
 
         命令下发异常错误码。
 
@@ -131,7 +131,7 @@ class CreateCommandResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateCommandResponse.
+        r"""Gets the error_msg of this CreateCommandResponse.
 
         命令下发异常错误信息。
 
@@ -142,7 +142,7 @@ class CreateCommandResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateCommandResponse.
+        r"""Sets the error_msg of this CreateCommandResponse.
 
         命令下发异常错误信息。
 

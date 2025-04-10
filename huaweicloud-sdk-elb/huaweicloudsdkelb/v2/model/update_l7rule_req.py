@@ -33,7 +33,7 @@ class UpdateL7ruleReq:
     }
 
     def __init__(self, compare_type=None, admin_state_up=None, invert=None, key=None, value=None):
-        """UpdateL7ruleReq
+        r"""UpdateL7ruleReq
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateL7ruleReq:
 
     @property
     def compare_type(self):
-        """Gets the compare_type of this UpdateL7ruleReq.
+        r"""Gets the compare_type of this UpdateL7ruleReq.
 
         转发匹配方式： type为HOST_NAME时，取值范围：EQUAL_TO：精确匹配；t ype为PATH时，取值范围：REGEX：正则匹配；STARTS_WITH：前缀匹配；EQUAL_TO：精确匹配。
 
@@ -82,7 +82,7 @@ class UpdateL7ruleReq:
 
     @compare_type.setter
     def compare_type(self, compare_type):
-        """Sets the compare_type of this UpdateL7ruleReq.
+        r"""Sets the compare_type of this UpdateL7ruleReq.
 
         转发匹配方式： type为HOST_NAME时，取值范围：EQUAL_TO：精确匹配；t ype为PATH时，取值范围：REGEX：正则匹配；STARTS_WITH：前缀匹配；EQUAL_TO：精确匹配。
 
@@ -93,7 +93,7 @@ class UpdateL7ruleReq:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this UpdateL7ruleReq.
+        r"""Gets the admin_state_up of this UpdateL7ruleReq.
 
         转发规则的管理状态；取值范围： true/false。该字段为预留字段，暂未启用。默认为true。
 
@@ -104,7 +104,7 @@ class UpdateL7ruleReq:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this UpdateL7ruleReq.
+        r"""Sets the admin_state_up of this UpdateL7ruleReq.
 
         转发规则的管理状态；取值范围： true/false。该字段为预留字段，暂未启用。默认为true。
 
@@ -115,7 +115,7 @@ class UpdateL7ruleReq:
 
     @property
     def invert(self):
-        """Gets the invert of this UpdateL7ruleReq.
+        r"""Gets the invert of this UpdateL7ruleReq.
 
         是否反向匹配；取值范围：true/false。默认值：false；该字段为预留字段，暂未启用。
 
@@ -126,7 +126,7 @@ class UpdateL7ruleReq:
 
     @invert.setter
     def invert(self, invert):
-        """Sets the invert of this UpdateL7ruleReq.
+        r"""Sets the invert of this UpdateL7ruleReq.
 
         是否反向匹配；取值范围：true/false。默认值：false；该字段为预留字段，暂未启用。
 
@@ -137,7 +137,7 @@ class UpdateL7ruleReq:
 
     @property
     def key(self):
-        """Gets the key of this UpdateL7ruleReq.
+        r"""Gets the key of this UpdateL7ruleReq.
 
         匹配内容的键值。默认为null。该字段为预留字段，暂未启用。
 
@@ -148,7 +148,7 @@ class UpdateL7ruleReq:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this UpdateL7ruleReq.
+        r"""Sets the key of this UpdateL7ruleReq.
 
         匹配内容的键值。默认为null。该字段为预留字段，暂未启用。
 
@@ -159,7 +159,7 @@ class UpdateL7ruleReq:
 
     @property
     def value(self):
-        """Gets the value of this UpdateL7ruleReq.
+        r"""Gets the value of this UpdateL7ruleReq.
 
         匹配内容的值。不能包含空格。 当type为HOST_NAME时，取值范围：String (100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。 当type为PATH时，取值范围：String (128)。当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:| /()[]{}，且必须以\"/\"开头。
 
@@ -170,7 +170,7 @@ class UpdateL7ruleReq:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this UpdateL7ruleReq.
+        r"""Sets the value of this UpdateL7ruleReq.
 
         匹配内容的值。不能包含空格。 当type为HOST_NAME时，取值范围：String (100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。 当type为PATH时，取值范围：String (128)。当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:| /()[]{}，且必须以\"/\"开头。
 

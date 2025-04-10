@@ -37,7 +37,7 @@ class ListJobHistoryParametersRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, offset=None, limit=None, begin_time=None, end_time=None, name=None):
-        """ListJobHistoryParametersRequest
+        r"""ListJobHistoryParametersRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListJobHistoryParametersRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListJobHistoryParametersRequest.
+        r"""Gets the job_id of this ListJobHistoryParametersRequest.
 
         任务ID。
 
@@ -95,7 +95,7 @@ class ListJobHistoryParametersRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListJobHistoryParametersRequest.
+        r"""Sets the job_id of this ListJobHistoryParametersRequest.
 
         任务ID。
 
@@ -106,7 +106,7 @@ class ListJobHistoryParametersRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListJobHistoryParametersRequest.
+        r"""Gets the x_language of this ListJobHistoryParametersRequest.
 
         请求语言类型。
 
@@ -117,7 +117,7 @@ class ListJobHistoryParametersRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListJobHistoryParametersRequest.
+        r"""Sets the x_language of this ListJobHistoryParametersRequest.
 
         请求语言类型。
 
@@ -128,7 +128,7 @@ class ListJobHistoryParametersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJobHistoryParametersRequest.
+        r"""Gets the offset of this ListJobHistoryParametersRequest.
 
         偏移量，表示从此偏移量开始查询，offset 大于等于 0。默认为0
 
@@ -139,7 +139,7 @@ class ListJobHistoryParametersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJobHistoryParametersRequest.
+        r"""Sets the offset of this ListJobHistoryParametersRequest.
 
         偏移量，表示从此偏移量开始查询，offset 大于等于 0。默认为0
 
@@ -150,7 +150,7 @@ class ListJobHistoryParametersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJobHistoryParametersRequest.
+        r"""Gets the limit of this ListJobHistoryParametersRequest.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 
@@ -161,7 +161,7 @@ class ListJobHistoryParametersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJobHistoryParametersRequest.
+        r"""Sets the limit of this ListJobHistoryParametersRequest.
 
         每页显示的条目数量。默认为10，取值范围【1-1000】
 
@@ -172,7 +172,7 @@ class ListJobHistoryParametersRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListJobHistoryParametersRequest.
+        r"""Gets the begin_time of this ListJobHistoryParametersRequest.
 
         开始时间，UTC时间，例如：2020-09-01T18:50:20Z
 
@@ -183,7 +183,7 @@ class ListJobHistoryParametersRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListJobHistoryParametersRequest.
+        r"""Sets the begin_time of this ListJobHistoryParametersRequest.
 
         开始时间，UTC时间，例如：2020-09-01T18:50:20Z
 
@@ -194,7 +194,7 @@ class ListJobHistoryParametersRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListJobHistoryParametersRequest.
+        r"""Gets the end_time of this ListJobHistoryParametersRequest.
 
         结束时间，UTC时间，例如：2020-09-01T19:50:20Z
 
@@ -205,7 +205,7 @@ class ListJobHistoryParametersRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListJobHistoryParametersRequest.
+        r"""Sets the end_time of this ListJobHistoryParametersRequest.
 
         结束时间，UTC时间，例如：2020-09-01T19:50:20Z
 
@@ -216,7 +216,7 @@ class ListJobHistoryParametersRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListJobHistoryParametersRequest.
+        r"""Gets the name of this ListJobHistoryParametersRequest.
 
         参数名称。
 
@@ -227,7 +227,7 @@ class ListJobHistoryParametersRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListJobHistoryParametersRequest.
+        r"""Sets the name of this ListJobHistoryParametersRequest.
 
         参数名称。
 

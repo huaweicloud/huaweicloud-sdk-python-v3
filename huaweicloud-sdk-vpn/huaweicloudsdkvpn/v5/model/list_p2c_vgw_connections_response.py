@@ -30,7 +30,7 @@ class ListP2cVgwConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, connections=None, total_count=None, request_id=None):
-        """ListP2cVgwConnectionsResponse
+        r"""ListP2cVgwConnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListP2cVgwConnectionsResponse(SdkResponse):
 
     @property
     def connections(self):
-        """Gets the connections of this ListP2cVgwConnectionsResponse.
+        r"""Gets the connections of this ListP2cVgwConnectionsResponse.
 
         :return: The connections of this ListP2cVgwConnectionsResponse.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.Connection`]
@@ -67,7 +67,7 @@ class ListP2cVgwConnectionsResponse(SdkResponse):
 
     @connections.setter
     def connections(self, connections):
-        """Sets the connections of this ListP2cVgwConnectionsResponse.
+        r"""Sets the connections of this ListP2cVgwConnectionsResponse.
 
         :param connections: The connections of this ListP2cVgwConnectionsResponse.
         :type connections: list[:class:`huaweicloudsdkvpn.v5.Connection`]
@@ -76,7 +76,7 @@ class ListP2cVgwConnectionsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListP2cVgwConnectionsResponse.
+        r"""Gets the total_count of this ListP2cVgwConnectionsResponse.
 
         总计数量
 
@@ -87,7 +87,7 @@ class ListP2cVgwConnectionsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListP2cVgwConnectionsResponse.
+        r"""Sets the total_count of this ListP2cVgwConnectionsResponse.
 
         总计数量
 
@@ -98,7 +98,7 @@ class ListP2cVgwConnectionsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListP2cVgwConnectionsResponse.
+        r"""Gets the request_id of this ListP2cVgwConnectionsResponse.
 
         请求ID
 
@@ -109,7 +109,7 @@ class ListP2cVgwConnectionsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListP2cVgwConnectionsResponse.
+        r"""Sets the request_id of this ListP2cVgwConnectionsResponse.
 
         请求ID
 

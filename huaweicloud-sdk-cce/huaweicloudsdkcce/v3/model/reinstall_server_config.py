@@ -27,7 +27,7 @@ class ReinstallServerConfig:
     }
 
     def __init__(self, user_tags=None, root_volume=None):
-        """ReinstallServerConfig
+        r"""ReinstallServerConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ReinstallServerConfig:
 
     @property
     def user_tags(self):
-        """Gets the user_tags of this ReinstallServerConfig.
+        r"""Gets the user_tags of this ReinstallServerConfig.
 
         云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为5个。
 
@@ -61,7 +61,7 @@ class ReinstallServerConfig:
 
     @user_tags.setter
     def user_tags(self, user_tags):
-        """Sets the user_tags of this ReinstallServerConfig.
+        r"""Sets the user_tags of this ReinstallServerConfig.
 
         云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为5个。
 
@@ -72,7 +72,7 @@ class ReinstallServerConfig:
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this ReinstallServerConfig.
+        r"""Gets the root_volume of this ReinstallServerConfig.
 
         :return: The root_volume of this ReinstallServerConfig.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallVolumeSpec`
@@ -81,7 +81,7 @@ class ReinstallServerConfig:
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this ReinstallServerConfig.
+        r"""Sets the root_volume of this ReinstallServerConfig.
 
         :param root_volume: The root_volume of this ReinstallServerConfig.
         :type root_volume: :class:`huaweicloudsdkcce.v3.ReinstallVolumeSpec`

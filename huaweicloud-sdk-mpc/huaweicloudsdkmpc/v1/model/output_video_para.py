@@ -41,7 +41,7 @@ class OutputVideoPara:
     }
 
     def __init__(self, template_id=None, size=None, pack=None, video=None, audio=None, file_name=None, manifest_name=None, conver_duration=None, error=None):
-        """OutputVideoPara
+        r"""OutputVideoPara
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class OutputVideoPara:
 
     @property
     def template_id(self):
-        """Gets the template_id of this OutputVideoPara.
+        r"""Gets the template_id of this OutputVideoPara.
 
         输出视频对应的模板ID 
 
@@ -110,7 +110,7 @@ class OutputVideoPara:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this OutputVideoPara.
+        r"""Sets the template_id of this OutputVideoPara.
 
         输出视频对应的模板ID 
 
@@ -121,7 +121,7 @@ class OutputVideoPara:
 
     @property
     def size(self):
-        """Gets the size of this OutputVideoPara.
+        r"""Gets the size of this OutputVideoPara.
 
         视频大小 
 
@@ -132,7 +132,7 @@ class OutputVideoPara:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this OutputVideoPara.
+        r"""Sets the size of this OutputVideoPara.
 
         视频大小 
 
@@ -143,7 +143,7 @@ class OutputVideoPara:
 
     @property
     def pack(self):
-        """Gets the pack of this OutputVideoPara.
+        r"""Gets the pack of this OutputVideoPara.
 
         视频封装格式 
 
@@ -154,7 +154,7 @@ class OutputVideoPara:
 
     @pack.setter
     def pack(self, pack):
-        """Sets the pack of this OutputVideoPara.
+        r"""Sets the pack of this OutputVideoPara.
 
         视频封装格式 
 
@@ -165,7 +165,7 @@ class OutputVideoPara:
 
     @property
     def video(self):
-        """Gets the video of this OutputVideoPara.
+        r"""Gets the video of this OutputVideoPara.
 
         :return: The video of this OutputVideoPara.
         :rtype: :class:`huaweicloudsdkmpc.v1.VideoInfo`
@@ -174,7 +174,7 @@ class OutputVideoPara:
 
     @video.setter
     def video(self, video):
-        """Sets the video of this OutputVideoPara.
+        r"""Sets the video of this OutputVideoPara.
 
         :param video: The video of this OutputVideoPara.
         :type video: :class:`huaweicloudsdkmpc.v1.VideoInfo`
@@ -183,7 +183,7 @@ class OutputVideoPara:
 
     @property
     def audio(self):
-        """Gets the audio of this OutputVideoPara.
+        r"""Gets the audio of this OutputVideoPara.
 
         :return: The audio of this OutputVideoPara.
         :rtype: :class:`huaweicloudsdkmpc.v1.AudioInfo`
@@ -192,7 +192,7 @@ class OutputVideoPara:
 
     @audio.setter
     def audio(self, audio):
-        """Sets the audio of this OutputVideoPara.
+        r"""Sets the audio of this OutputVideoPara.
 
         :param audio: The audio of this OutputVideoPara.
         :type audio: :class:`huaweicloudsdkmpc.v1.AudioInfo`
@@ -201,7 +201,7 @@ class OutputVideoPara:
 
     @property
     def file_name(self):
-        """Gets the file_name of this OutputVideoPara.
+        r"""Gets the file_name of this OutputVideoPara.
 
         输出片源文件名 
 
@@ -212,7 +212,7 @@ class OutputVideoPara:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this OutputVideoPara.
+        r"""Sets the file_name of this OutputVideoPara.
 
         输出片源文件名 
 
@@ -223,7 +223,7 @@ class OutputVideoPara:
 
     @property
     def manifest_name(self):
-        """Gets the manifest_name of this OutputVideoPara.
+        r"""Gets the manifest_name of this OutputVideoPara.
 
         独立mpd索引文件名 
 
@@ -234,7 +234,7 @@ class OutputVideoPara:
 
     @manifest_name.setter
     def manifest_name(self, manifest_name):
-        """Sets the manifest_name of this OutputVideoPara.
+        r"""Sets the manifest_name of this OutputVideoPara.
 
         独立mpd索引文件名 
 
@@ -245,7 +245,7 @@ class OutputVideoPara:
 
     @property
     def conver_duration(self):
-        """Gets the conver_duration of this OutputVideoPara.
+        r"""Gets the conver_duration of this OutputVideoPara.
 
         折算后视频时长 
 
@@ -256,7 +256,7 @@ class OutputVideoPara:
 
     @conver_duration.setter
     def conver_duration(self, conver_duration):
-        """Sets the conver_duration of this OutputVideoPara.
+        r"""Sets the conver_duration of this OutputVideoPara.
 
         折算后视频时长 
 
@@ -267,7 +267,7 @@ class OutputVideoPara:
 
     @property
     def error(self):
-        """Gets the error of this OutputVideoPara.
+        r"""Gets the error of this OutputVideoPara.
 
         :return: The error of this OutputVideoPara.
         :rtype: :class:`huaweicloudsdkmpc.v1.XCodeError`
@@ -276,7 +276,7 @@ class OutputVideoPara:
 
     @error.setter
     def error(self, error):
-        """Sets the error of this OutputVideoPara.
+        r"""Sets the error of this OutputVideoPara.
 
         :param error: The error of this OutputVideoPara.
         :type error: :class:`huaweicloudsdkmpc.v1.XCodeError`

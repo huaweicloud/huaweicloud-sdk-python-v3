@@ -24,7 +24,7 @@ class SetWebHookConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetWebHookConfigResponse
+        r"""SetWebHookConfigResponse
 
         The model defined in huaweicloud sdk
 

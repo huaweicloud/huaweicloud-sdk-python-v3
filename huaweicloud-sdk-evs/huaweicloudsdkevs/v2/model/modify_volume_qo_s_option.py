@@ -27,7 +27,7 @@ class ModifyVolumeQoSOption:
     }
 
     def __init__(self, iops=None, throughput=None):
-        """ModifyVolumeQoSOption
+        r"""ModifyVolumeQoSOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ModifyVolumeQoSOption:
 
     @property
     def iops(self):
-        """Gets the iops of this ModifyVolumeQoSOption.
+        r"""Gets the iops of this ModifyVolumeQoSOption.
 
         修改后的云硬盘iops，只支持GPSSD2、ESSD2类型的云硬盘。  说明： 了解GPSSD2、ESSD2类型的iops大小范围，请参见 [云硬盘类型及性能介绍里面的云硬盘性能数据表](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
 
@@ -60,7 +60,7 @@ class ModifyVolumeQoSOption:
 
     @iops.setter
     def iops(self, iops):
-        """Sets the iops of this ModifyVolumeQoSOption.
+        r"""Sets the iops of this ModifyVolumeQoSOption.
 
         修改后的云硬盘iops，只支持GPSSD2、ESSD2类型的云硬盘。  说明： 了解GPSSD2、ESSD2类型的iops大小范围，请参见 [云硬盘类型及性能介绍里面的云硬盘性能数据表](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
 
@@ -71,7 +71,7 @@ class ModifyVolumeQoSOption:
 
     @property
     def throughput(self):
-        """Gets the throughput of this ModifyVolumeQoSOption.
+        r"""Gets the throughput of this ModifyVolumeQoSOption.
 
         修改后的云硬盘吞吐量，单位是MiB/s，GPSSD2类型云盘必须填写，其他类型不能填写。  说明： 了解GPSSD2类型的吞吐量大小范围，请参见 [云硬盘类型及性能介绍里面的云硬盘性能数据表](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
 
@@ -82,7 +82,7 @@ class ModifyVolumeQoSOption:
 
     @throughput.setter
     def throughput(self, throughput):
-        """Sets the throughput of this ModifyVolumeQoSOption.
+        r"""Sets the throughput of this ModifyVolumeQoSOption.
 
         修改后的云硬盘吞吐量，单位是MiB/s，GPSSD2类型云盘必须填写，其他类型不能填写。  说明： 了解GPSSD2类型的吞吐量大小范围，请参见 [云硬盘类型及性能介绍里面的云硬盘性能数据表](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
 

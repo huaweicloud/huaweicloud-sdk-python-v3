@@ -27,7 +27,7 @@ class AssociateSubnetRequest:
     }
 
     def __init__(self, routetable_id=None, body=None):
-        """AssociateSubnetRequest
+        r"""AssociateSubnetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociateSubnetRequest:
 
     @property
     def routetable_id(self):
-        """Gets the routetable_id of this AssociateSubnetRequest.
+        r"""Gets the routetable_id of this AssociateSubnetRequest.
 
         路由表ID
 
@@ -60,7 +60,7 @@ class AssociateSubnetRequest:
 
     @routetable_id.setter
     def routetable_id(self, routetable_id):
-        """Sets the routetable_id of this AssociateSubnetRequest.
+        r"""Sets the routetable_id of this AssociateSubnetRequest.
 
         路由表ID
 
@@ -71,7 +71,7 @@ class AssociateSubnetRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateSubnetRequest.
+        r"""Gets the body of this AssociateSubnetRequest.
 
         :return: The body of this AssociateSubnetRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.AssociateSubnetRequestBody`
@@ -80,7 +80,7 @@ class AssociateSubnetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateSubnetRequest.
+        r"""Sets the body of this AssociateSubnetRequest.
 
         :param body: The body of this AssociateSubnetRequest.
         :type body: :class:`huaweicloudsdkiec.v1.AssociateSubnetRequestBody`

@@ -30,7 +30,7 @@ class UpdateSecurityRuleEnableStatusResponse(SdkResponse):
     }
 
     def __init__(self, rule_id=None, rule_name=None, enabled=None):
-        """UpdateSecurityRuleEnableStatusResponse
+        r"""UpdateSecurityRuleEnableStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateSecurityRuleEnableStatusResponse(SdkResponse):
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateSecurityRuleEnableStatusResponse.
+        r"""Gets the rule_id of this UpdateSecurityRuleEnableStatusResponse.
 
         识别规则id
 
@@ -69,7 +69,7 @@ class UpdateSecurityRuleEnableStatusResponse(SdkResponse):
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateSecurityRuleEnableStatusResponse.
+        r"""Sets the rule_id of this UpdateSecurityRuleEnableStatusResponse.
 
         识别规则id
 
@@ -80,7 +80,7 @@ class UpdateSecurityRuleEnableStatusResponse(SdkResponse):
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this UpdateSecurityRuleEnableStatusResponse.
+        r"""Gets the rule_name of this UpdateSecurityRuleEnableStatusResponse.
 
         识别规则名称
 
@@ -91,7 +91,7 @@ class UpdateSecurityRuleEnableStatusResponse(SdkResponse):
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this UpdateSecurityRuleEnableStatusResponse.
+        r"""Sets the rule_name of this UpdateSecurityRuleEnableStatusResponse.
 
         识别规则名称
 
@@ -102,7 +102,7 @@ class UpdateSecurityRuleEnableStatusResponse(SdkResponse):
 
     @property
     def enabled(self):
-        """Gets the enabled of this UpdateSecurityRuleEnableStatusResponse.
+        r"""Gets the enabled of this UpdateSecurityRuleEnableStatusResponse.
 
         识别规则是否开启
 
@@ -113,7 +113,7 @@ class UpdateSecurityRuleEnableStatusResponse(SdkResponse):
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this UpdateSecurityRuleEnableStatusResponse.
+        r"""Sets the enabled of this UpdateSecurityRuleEnableStatusResponse.
 
         识别规则是否开启
 

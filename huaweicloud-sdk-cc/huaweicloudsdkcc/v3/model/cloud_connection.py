@@ -51,7 +51,7 @@ class CloudConnection:
     }
 
     def __init__(self, id=None, name=None, description=None, domain_id=None, enterprise_project_id=None, created_at=None, updated_at=None, tags=None, status=None, admin_state_up=None, used_scene=None, network_instance_number=None, bandwidth_package_number=None, inter_region_bandwidth_number=None):
-        """CloudConnection
+        r"""CloudConnection
 
         The model defined in huaweicloud sdk
 
@@ -129,7 +129,7 @@ class CloudConnection:
 
     @property
     def id(self):
-        """Gets the id of this CloudConnection.
+        r"""Gets the id of this CloudConnection.
 
         实例ID。
 
@@ -140,7 +140,7 @@ class CloudConnection:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CloudConnection.
+        r"""Sets the id of this CloudConnection.
 
         实例ID。
 
@@ -151,7 +151,7 @@ class CloudConnection:
 
     @property
     def name(self):
-        """Gets the name of this CloudConnection.
+        r"""Gets the name of this CloudConnection.
 
         实例名字。
 
@@ -162,7 +162,7 @@ class CloudConnection:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CloudConnection.
+        r"""Sets the name of this CloudConnection.
 
         实例名字。
 
@@ -173,7 +173,7 @@ class CloudConnection:
 
     @property
     def description(self):
-        """Gets the description of this CloudConnection.
+        r"""Gets the description of this CloudConnection.
 
         实例描述。不支持 <>。
 
@@ -184,7 +184,7 @@ class CloudConnection:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CloudConnection.
+        r"""Sets the description of this CloudConnection.
 
         实例描述。不支持 <>。
 
@@ -195,7 +195,7 @@ class CloudConnection:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CloudConnection.
+        r"""Gets the domain_id of this CloudConnection.
 
         实例所属账号ID。
 
@@ -206,7 +206,7 @@ class CloudConnection:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CloudConnection.
+        r"""Sets the domain_id of this CloudConnection.
 
         实例所属账号ID。
 
@@ -217,7 +217,7 @@ class CloudConnection:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CloudConnection.
+        r"""Gets the enterprise_project_id of this CloudConnection.
 
         实例所属企业项目ID。
 
@@ -228,7 +228,7 @@ class CloudConnection:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CloudConnection.
+        r"""Sets the enterprise_project_id of this CloudConnection.
 
         实例所属企业项目ID。
 
@@ -239,7 +239,7 @@ class CloudConnection:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CloudConnection.
+        r"""Gets the created_at of this CloudConnection.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -250,7 +250,7 @@ class CloudConnection:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CloudConnection.
+        r"""Sets the created_at of this CloudConnection.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -261,7 +261,7 @@ class CloudConnection:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CloudConnection.
+        r"""Gets the updated_at of this CloudConnection.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -272,7 +272,7 @@ class CloudConnection:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CloudConnection.
+        r"""Sets the updated_at of this CloudConnection.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -283,7 +283,7 @@ class CloudConnection:
 
     @property
     def tags(self):
-        """Gets the tags of this CloudConnection.
+        r"""Gets the tags of this CloudConnection.
 
         实例标签。
 
@@ -294,7 +294,7 @@ class CloudConnection:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CloudConnection.
+        r"""Sets the tags of this CloudConnection.
 
         实例标签。
 
@@ -305,7 +305,7 @@ class CloudConnection:
 
     @property
     def status(self):
-        """Gets the status of this CloudConnection.
+        r"""Gets the status of this CloudConnection.
 
         云连接实例的状态。ACTIVE：表示状态可用。
 
@@ -316,7 +316,7 @@ class CloudConnection:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CloudConnection.
+        r"""Sets the status of this CloudConnection.
 
         云连接实例的状态。ACTIVE：表示状态可用。
 
@@ -327,7 +327,7 @@ class CloudConnection:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CloudConnection.
+        r"""Gets the admin_state_up of this CloudConnection.
 
         云连接实例的管理状态。
 
@@ -338,7 +338,7 @@ class CloudConnection:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CloudConnection.
+        r"""Sets the admin_state_up of this CloudConnection.
 
         云连接实例的管理状态。
 
@@ -349,7 +349,7 @@ class CloudConnection:
 
     @property
     def used_scene(self):
-        """Gets the used_scene of this CloudConnection.
+        r"""Gets the used_scene of this CloudConnection.
 
         云连接使用场景。 - VPC：虚拟私有云。
 
@@ -360,7 +360,7 @@ class CloudConnection:
 
     @used_scene.setter
     def used_scene(self, used_scene):
-        """Sets the used_scene of this CloudConnection.
+        r"""Sets the used_scene of this CloudConnection.
 
         云连接使用场景。 - VPC：虚拟私有云。
 
@@ -371,7 +371,7 @@ class CloudConnection:
 
     @property
     def network_instance_number(self):
-        """Gets the network_instance_number of this CloudConnection.
+        r"""Gets the network_instance_number of this CloudConnection.
 
         云连接实例关联网络实例的个数。
 
@@ -382,7 +382,7 @@ class CloudConnection:
 
     @network_instance_number.setter
     def network_instance_number(self, network_instance_number):
-        """Sets the network_instance_number of this CloudConnection.
+        r"""Sets the network_instance_number of this CloudConnection.
 
         云连接实例关联网络实例的个数。
 
@@ -393,7 +393,7 @@ class CloudConnection:
 
     @property
     def bandwidth_package_number(self):
-        """Gets the bandwidth_package_number of this CloudConnection.
+        r"""Gets the bandwidth_package_number of this CloudConnection.
 
         云连接实例关联带宽包的个数。
 
@@ -404,7 +404,7 @@ class CloudConnection:
 
     @bandwidth_package_number.setter
     def bandwidth_package_number(self, bandwidth_package_number):
-        """Sets the bandwidth_package_number of this CloudConnection.
+        r"""Sets the bandwidth_package_number of this CloudConnection.
 
         云连接实例关联带宽包的个数。
 
@@ -415,7 +415,7 @@ class CloudConnection:
 
     @property
     def inter_region_bandwidth_number(self):
-        """Gets the inter_region_bandwidth_number of this CloudConnection.
+        r"""Gets the inter_region_bandwidth_number of this CloudConnection.
 
         云连接实例关联域间带宽的个数。
 
@@ -426,7 +426,7 @@ class CloudConnection:
 
     @inter_region_bandwidth_number.setter
     def inter_region_bandwidth_number(self, inter_region_bandwidth_number):
-        """Sets the inter_region_bandwidth_number of this CloudConnection.
+        r"""Sets the inter_region_bandwidth_number of this CloudConnection.
 
         云连接实例关联域间带宽的个数。
 

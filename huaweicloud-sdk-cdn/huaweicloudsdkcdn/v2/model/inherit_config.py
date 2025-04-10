@@ -29,7 +29,7 @@ class InheritConfig:
     }
 
     def __init__(self, status=None, inherit_type=None, inherit_time_type=None):
-        """InheritConfig
+        r"""InheritConfig
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class InheritConfig:
 
     @property
     def status(self):
-        """Gets the status of this InheritConfig.
+        r"""Gets the status of this InheritConfig.
 
         是否开启鉴权继承，on：开启,off：关闭。
 
@@ -67,7 +67,7 @@ class InheritConfig:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InheritConfig.
+        r"""Sets the status of this InheritConfig.
 
         是否开启鉴权继承，on：开启,off：关闭。
 
@@ -78,7 +78,7 @@ class InheritConfig:
 
     @property
     def inherit_type(self):
-        """Gets the inherit_type of this InheritConfig.
+        r"""Gets the inherit_type of this InheritConfig.
 
         鉴权继承配置， m3u8：M3U8,mpd：MPD,输入多个时用“,”分开，例如“m3u8,mpd”  > 开启鉴权继承时，该参数必填。
 
@@ -89,7 +89,7 @@ class InheritConfig:
 
     @inherit_type.setter
     def inherit_type(self, inherit_type):
-        """Sets the inherit_type of this InheritConfig.
+        r"""Sets the inherit_type of this InheritConfig.
 
         鉴权继承配置， m3u8：M3U8,mpd：MPD,输入多个时用“,”分开，例如“m3u8,mpd”  > 开启鉴权继承时，该参数必填。
 
@@ -100,7 +100,7 @@ class InheritConfig:
 
     @property
     def inherit_time_type(self):
-        """Gets the inherit_time_type of this InheritConfig.
+        r"""Gets the inherit_time_type of this InheritConfig.
 
         鉴权继承的文件类型时间, sys_time：当前系统时间，parent_url_time：与m3u8和mpd访问链接保持一致。  > 开启鉴权继承时，该参数必填。
 
@@ -111,7 +111,7 @@ class InheritConfig:
 
     @inherit_time_type.setter
     def inherit_time_type(self, inherit_time_type):
-        """Sets the inherit_time_type of this InheritConfig.
+        r"""Sets the inherit_time_type of this InheritConfig.
 
         鉴权继承的文件类型时间, sys_time：当前系统时间，parent_url_time：与m3u8和mpd访问链接保持一致。  > 开启鉴权继承时，该参数必填。
 

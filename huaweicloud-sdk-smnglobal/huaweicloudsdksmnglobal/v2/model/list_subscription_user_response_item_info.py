@@ -45,7 +45,7 @@ class ListSubscriptionUserResponseItemInfo:
     }
 
     def __init__(self, id=None, domain_id=None, name=None, status=None, group=None, create_time=None, update_time=None, http=None, https=None, sms=None, email=None):
-        """ListSubscriptionUserResponseItemInfo
+        r"""ListSubscriptionUserResponseItemInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @property
     def id(self):
-        """Gets the id of this ListSubscriptionUserResponseItemInfo.
+        r"""Gets the id of this ListSubscriptionUserResponseItemInfo.
 
         订阅用户ID。
 
@@ -117,7 +117,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSubscriptionUserResponseItemInfo.
+        r"""Sets the id of this ListSubscriptionUserResponseItemInfo.
 
         订阅用户ID。
 
@@ -128,7 +128,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListSubscriptionUserResponseItemInfo.
+        r"""Gets the domain_id of this ListSubscriptionUserResponseItemInfo.
 
         租户账号ID。
 
@@ -139,7 +139,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListSubscriptionUserResponseItemInfo.
+        r"""Sets the domain_id of this ListSubscriptionUserResponseItemInfo.
 
         租户账号ID。
 
@@ -150,7 +150,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @property
     def name(self):
-        """Gets the name of this ListSubscriptionUserResponseItemInfo.
+        r"""Gets the name of this ListSubscriptionUserResponseItemInfo.
 
         订阅用户名称。
 
@@ -161,7 +161,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSubscriptionUserResponseItemInfo.
+        r"""Sets the name of this ListSubscriptionUserResponseItemInfo.
 
         订阅用户名称。
 
@@ -172,7 +172,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @property
     def status(self):
-        """Gets the status of this ListSubscriptionUserResponseItemInfo.
+        r"""Gets the status of this ListSubscriptionUserResponseItemInfo.
 
         订阅用户状态。 UNCONFIRMED：未确认 CONFIRMED：已确认 CANCELLED：已取消
 
@@ -183,7 +183,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSubscriptionUserResponseItemInfo.
+        r"""Sets the status of this ListSubscriptionUserResponseItemInfo.
 
         订阅用户状态。 UNCONFIRMED：未确认 CONFIRMED：已确认 CANCELLED：已取消
 
@@ -194,7 +194,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @property
     def group(self):
-        """Gets the group of this ListSubscriptionUserResponseItemInfo.
+        r"""Gets the group of this ListSubscriptionUserResponseItemInfo.
 
         订阅用户分组。
 
@@ -205,7 +205,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ListSubscriptionUserResponseItemInfo.
+        r"""Sets the group of this ListSubscriptionUserResponseItemInfo.
 
         订阅用户分组。
 
@@ -216,7 +216,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListSubscriptionUserResponseItemInfo.
+        r"""Gets the create_time of this ListSubscriptionUserResponseItemInfo.
 
         创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -227,7 +227,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListSubscriptionUserResponseItemInfo.
+        r"""Sets the create_time of this ListSubscriptionUserResponseItemInfo.
 
         创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -238,7 +238,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ListSubscriptionUserResponseItemInfo.
+        r"""Gets the update_time of this ListSubscriptionUserResponseItemInfo.
 
         更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -249,7 +249,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ListSubscriptionUserResponseItemInfo.
+        r"""Sets the update_time of this ListSubscriptionUserResponseItemInfo.
 
         更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -260,7 +260,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @property
     def http(self):
-        """Gets the http of this ListSubscriptionUserResponseItemInfo.
+        r"""Gets the http of this ListSubscriptionUserResponseItemInfo.
 
         :return: The http of this ListSubscriptionUserResponseItemInfo.
         :rtype: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseHttpEndpointInfo`
@@ -269,7 +269,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @http.setter
     def http(self, http):
-        """Sets the http of this ListSubscriptionUserResponseItemInfo.
+        r"""Sets the http of this ListSubscriptionUserResponseItemInfo.
 
         :param http: The http of this ListSubscriptionUserResponseItemInfo.
         :type http: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseHttpEndpointInfo`
@@ -278,7 +278,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @property
     def https(self):
-        """Gets the https of this ListSubscriptionUserResponseItemInfo.
+        r"""Gets the https of this ListSubscriptionUserResponseItemInfo.
 
         :return: The https of this ListSubscriptionUserResponseItemInfo.
         :rtype: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseHttpsEndpointInfo`
@@ -287,7 +287,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @https.setter
     def https(self, https):
-        """Sets the https of this ListSubscriptionUserResponseItemInfo.
+        r"""Sets the https of this ListSubscriptionUserResponseItemInfo.
 
         :param https: The https of this ListSubscriptionUserResponseItemInfo.
         :type https: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseHttpsEndpointInfo`
@@ -296,7 +296,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @property
     def sms(self):
-        """Gets the sms of this ListSubscriptionUserResponseItemInfo.
+        r"""Gets the sms of this ListSubscriptionUserResponseItemInfo.
 
         :return: The sms of this ListSubscriptionUserResponseItemInfo.
         :rtype: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseSmsEndpointInfo`
@@ -305,7 +305,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @sms.setter
     def sms(self, sms):
-        """Sets the sms of this ListSubscriptionUserResponseItemInfo.
+        r"""Sets the sms of this ListSubscriptionUserResponseItemInfo.
 
         :param sms: The sms of this ListSubscriptionUserResponseItemInfo.
         :type sms: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseSmsEndpointInfo`
@@ -314,7 +314,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @property
     def email(self):
-        """Gets the email of this ListSubscriptionUserResponseItemInfo.
+        r"""Gets the email of this ListSubscriptionUserResponseItemInfo.
 
         :return: The email of this ListSubscriptionUserResponseItemInfo.
         :rtype: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseEmailEndpointInfo`
@@ -323,7 +323,7 @@ class ListSubscriptionUserResponseItemInfo:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ListSubscriptionUserResponseItemInfo.
+        r"""Sets the email of this ListSubscriptionUserResponseItemInfo.
 
         :param email: The email of this ListSubscriptionUserResponseItemInfo.
         :type email: :class:`huaweicloudsdksmnglobal.v2.ListSubscriptionUserResponseEmailEndpointInfo`

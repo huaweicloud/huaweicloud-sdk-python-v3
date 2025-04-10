@@ -29,7 +29,7 @@ class AsyncInvokeFunctionRequest:
     }
 
     def __init__(self, function_urn=None, x_cff_instance_memory=None, body=None):
-        """AsyncInvokeFunctionRequest
+        r"""AsyncInvokeFunctionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AsyncInvokeFunctionRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this AsyncInvokeFunctionRequest.
+        r"""Gets the function_urn of this AsyncInvokeFunctionRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -67,7 +67,7 @@ class AsyncInvokeFunctionRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this AsyncInvokeFunctionRequest.
+        r"""Sets the function_urn of this AsyncInvokeFunctionRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -78,7 +78,7 @@ class AsyncInvokeFunctionRequest:
 
     @property
     def x_cff_instance_memory(self):
-        """Gets the x_cff_instance_memory of this AsyncInvokeFunctionRequest.
+        r"""Gets the x_cff_instance_memory of this AsyncInvokeFunctionRequest.
 
         设置本次执行函数使用的内存规格,取值： 128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096、8192、10240
 
@@ -89,7 +89,7 @@ class AsyncInvokeFunctionRequest:
 
     @x_cff_instance_memory.setter
     def x_cff_instance_memory(self, x_cff_instance_memory):
-        """Sets the x_cff_instance_memory of this AsyncInvokeFunctionRequest.
+        r"""Sets the x_cff_instance_memory of this AsyncInvokeFunctionRequest.
 
         设置本次执行函数使用的内存规格,取值： 128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096、8192、10240
 
@@ -100,7 +100,7 @@ class AsyncInvokeFunctionRequest:
 
     @property
     def body(self):
-        """Gets the body of this AsyncInvokeFunctionRequest.
+        r"""Gets the body of this AsyncInvokeFunctionRequest.
 
         执行函数请求体，为json格式。
 
@@ -111,7 +111,7 @@ class AsyncInvokeFunctionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AsyncInvokeFunctionRequest.
+        r"""Sets the body of this AsyncInvokeFunctionRequest.
 
         执行函数请求体，为json格式。
 

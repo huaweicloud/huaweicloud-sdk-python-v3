@@ -24,7 +24,7 @@ class DeleteTransitIpResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteTransitIpResponse
+        r"""DeleteTransitIpResponse
 
         The model defined in huaweicloud sdk
 

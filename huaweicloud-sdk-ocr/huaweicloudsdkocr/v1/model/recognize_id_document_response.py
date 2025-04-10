@@ -28,7 +28,7 @@ class RecognizeIdDocumentResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeIdDocumentResponse
+        r"""RecognizeIdDocumentResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeIdDocumentResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeIdDocumentResponse.
+        r"""Gets the result of this RecognizeIdDocumentResponse.
 
         :return: The result of this RecognizeIdDocumentResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.IdDocumentItem`
@@ -60,7 +60,7 @@ class RecognizeIdDocumentResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeIdDocumentResponse.
+        r"""Sets the result of this RecognizeIdDocumentResponse.
 
         :param result: The result of this RecognizeIdDocumentResponse.
         :type result: :class:`huaweicloudsdkocr.v1.IdDocumentItem`
@@ -69,7 +69,7 @@ class RecognizeIdDocumentResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeIdDocumentResponse.
+        r"""Gets the x_request_id of this RecognizeIdDocumentResponse.
 
         :return: The x_request_id of this RecognizeIdDocumentResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeIdDocumentResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeIdDocumentResponse.
+        r"""Sets the x_request_id of this RecognizeIdDocumentResponse.
 
         :param x_request_id: The x_request_id of this RecognizeIdDocumentResponse.
         :type x_request_id: str

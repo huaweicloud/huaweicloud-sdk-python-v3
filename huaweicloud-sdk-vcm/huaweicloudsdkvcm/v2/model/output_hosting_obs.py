@@ -27,7 +27,7 @@ class OutputHostingObs:
     }
 
     def __init__(self, bucket=None, path=None):
-        """OutputHostingObs
+        r"""OutputHostingObs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OutputHostingObs:
 
     @property
     def bucket(self):
-        """Gets the bucket of this OutputHostingObs.
+        r"""Gets the bucket of this OutputHostingObs.
 
         obs桶名称
 
@@ -61,7 +61,7 @@ class OutputHostingObs:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this OutputHostingObs.
+        r"""Sets the bucket of this OutputHostingObs.
 
         obs桶名称
 
@@ -72,7 +72,7 @@ class OutputHostingObs:
 
     @property
     def path(self):
-        """Gets the path of this OutputHostingObs.
+        r"""Gets the path of this OutputHostingObs.
 
         输出obs路径
 
@@ -83,7 +83,7 @@ class OutputHostingObs:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this OutputHostingObs.
+        r"""Sets the path of this OutputHostingObs.
 
         输出obs路径
 

@@ -35,7 +35,7 @@ class NextflowTaskResourceRequested:
     }
 
     def __init__(self, container=None, queue=None, cpus=None, memory=None, disk=None, time=None):
-        """NextflowTaskResourceRequested
+        r"""NextflowTaskResourceRequested
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class NextflowTaskResourceRequested:
 
     @property
     def container(self):
-        """Gets the container of this NextflowTaskResourceRequested.
+        r"""Gets the container of this NextflowTaskResourceRequested.
 
         容器名称
 
@@ -89,7 +89,7 @@ class NextflowTaskResourceRequested:
 
     @container.setter
     def container(self, container):
-        """Sets the container of this NextflowTaskResourceRequested.
+        r"""Sets the container of this NextflowTaskResourceRequested.
 
         容器名称
 
@@ -100,7 +100,7 @@ class NextflowTaskResourceRequested:
 
     @property
     def queue(self):
-        """Gets the queue of this NextflowTaskResourceRequested.
+        r"""Gets the queue of this NextflowTaskResourceRequested.
 
         执行队列，使用','分隔多个值
 
@@ -111,7 +111,7 @@ class NextflowTaskResourceRequested:
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this NextflowTaskResourceRequested.
+        r"""Sets the queue of this NextflowTaskResourceRequested.
 
         执行队列，使用','分隔多个值
 
@@ -122,7 +122,7 @@ class NextflowTaskResourceRequested:
 
     @property
     def cpus(self):
-        """Gets the cpus of this NextflowTaskResourceRequested.
+        r"""Gets the cpus of this NextflowTaskResourceRequested.
 
         指定task执行需要的cpu数量
 
@@ -133,7 +133,7 @@ class NextflowTaskResourceRequested:
 
     @cpus.setter
     def cpus(self, cpus):
-        """Sets the cpus of this NextflowTaskResourceRequested.
+        r"""Sets the cpus of this NextflowTaskResourceRequested.
 
         指定task执行需要的cpu数量
 
@@ -144,7 +144,7 @@ class NextflowTaskResourceRequested:
 
     @property
     def memory(self):
-        """Gets the memory of this NextflowTaskResourceRequested.
+        r"""Gets the memory of this NextflowTaskResourceRequested.
 
         指定task执行需要的内存大小
 
@@ -155,7 +155,7 @@ class NextflowTaskResourceRequested:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this NextflowTaskResourceRequested.
+        r"""Sets the memory of this NextflowTaskResourceRequested.
 
         指定task执行需要的内存大小
 
@@ -166,7 +166,7 @@ class NextflowTaskResourceRequested:
 
     @property
     def disk(self):
-        """Gets the disk of this NextflowTaskResourceRequested.
+        r"""Gets the disk of this NextflowTaskResourceRequested.
 
         指定task执行需要的磁盘大小
 
@@ -177,7 +177,7 @@ class NextflowTaskResourceRequested:
 
     @disk.setter
     def disk(self, disk):
-        """Sets the disk of this NextflowTaskResourceRequested.
+        r"""Sets the disk of this NextflowTaskResourceRequested.
 
         指定task执行需要的磁盘大小
 
@@ -188,7 +188,7 @@ class NextflowTaskResourceRequested:
 
     @property
     def time(self):
-        """Gets the time of this NextflowTaskResourceRequested.
+        r"""Gets the time of this NextflowTaskResourceRequested.
 
         指定task执行需要的时间
 
@@ -199,7 +199,7 @@ class NextflowTaskResourceRequested:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this NextflowTaskResourceRequested.
+        r"""Sets the time of this NextflowTaskResourceRequested.
 
         指定task执行需要的时间
 

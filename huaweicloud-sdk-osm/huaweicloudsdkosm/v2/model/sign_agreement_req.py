@@ -25,7 +25,7 @@ class SignAgreementReq:
     }
 
     def __init__(self, relation_id=None):
-        """SignAgreementReq
+        r"""SignAgreementReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SignAgreementReq:
 
     @property
     def relation_id(self):
-        """Gets the relation_id of this SignAgreementReq.
+        r"""Gets the relation_id of this SignAgreementReq.
 
         关联id
 
@@ -54,7 +54,7 @@ class SignAgreementReq:
 
     @relation_id.setter
     def relation_id(self, relation_id):
-        """Sets the relation_id of this SignAgreementReq.
+        r"""Sets the relation_id of this SignAgreementReq.
 
         关联id
 

@@ -30,7 +30,7 @@ class ListEnvironmentHostsResponse(SdkResponse):
     }
 
     def __init__(self, status=None, total=None, result=None):
-        """ListEnvironmentHostsResponse
+        r"""ListEnvironmentHostsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEnvironmentHostsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListEnvironmentHostsResponse.
+        r"""Gets the status of this ListEnvironmentHostsResponse.
 
         请求成功失败状态
 
@@ -69,7 +69,7 @@ class ListEnvironmentHostsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListEnvironmentHostsResponse.
+        r"""Sets the status of this ListEnvironmentHostsResponse.
 
         请求成功失败状态
 
@@ -80,7 +80,7 @@ class ListEnvironmentHostsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListEnvironmentHostsResponse.
+        r"""Gets the total of this ListEnvironmentHostsResponse.
 
         总数量
 
@@ -91,7 +91,7 @@ class ListEnvironmentHostsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListEnvironmentHostsResponse.
+        r"""Sets the total of this ListEnvironmentHostsResponse.
 
         总数量
 
@@ -102,7 +102,7 @@ class ListEnvironmentHostsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListEnvironmentHostsResponse.
+        r"""Gets the result of this ListEnvironmentHostsResponse.
 
         环境下主机信息列表
 
@@ -113,7 +113,7 @@ class ListEnvironmentHostsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListEnvironmentHostsResponse.
+        r"""Sets the result of this ListEnvironmentHostsResponse.
 
         环境下主机信息列表
 

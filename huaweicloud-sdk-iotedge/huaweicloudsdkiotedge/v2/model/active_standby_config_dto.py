@@ -33,7 +33,7 @@ class ActiveStandbyConfigDTO:
     }
 
     def __init__(self, work_node=None, master_interface_name=None, slave_interface_name=None, virtual_ip_address=None, virtual_ipv6_address=None):
-        """ActiveStandbyConfigDTO
+        r"""ActiveStandbyConfigDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ActiveStandbyConfigDTO:
 
     @property
     def work_node(self):
-        """Gets the work_node of this ActiveStandbyConfigDTO.
+        r"""Gets the work_node of this ActiveStandbyConfigDTO.
 
         当前的工作节点，主节点还是备节点在工作，初始创建时工作节点为DEFAULT节点，(DEFAULT|MASTER|SLAVE)
 
@@ -82,7 +82,7 @@ class ActiveStandbyConfigDTO:
 
     @work_node.setter
     def work_node(self, work_node):
-        """Sets the work_node of this ActiveStandbyConfigDTO.
+        r"""Sets the work_node of this ActiveStandbyConfigDTO.
 
         当前的工作节点，主节点还是备节点在工作，初始创建时工作节点为DEFAULT节点，(DEFAULT|MASTER|SLAVE)
 
@@ -93,7 +93,7 @@ class ActiveStandbyConfigDTO:
 
     @property
     def master_interface_name(self):
-        """Gets the master_interface_name of this ActiveStandbyConfigDTO.
+        r"""Gets the master_interface_name of this ActiveStandbyConfigDTO.
 
         主节点网卡名称
 
@@ -104,7 +104,7 @@ class ActiveStandbyConfigDTO:
 
     @master_interface_name.setter
     def master_interface_name(self, master_interface_name):
-        """Sets the master_interface_name of this ActiveStandbyConfigDTO.
+        r"""Sets the master_interface_name of this ActiveStandbyConfigDTO.
 
         主节点网卡名称
 
@@ -115,7 +115,7 @@ class ActiveStandbyConfigDTO:
 
     @property
     def slave_interface_name(self):
-        """Gets the slave_interface_name of this ActiveStandbyConfigDTO.
+        r"""Gets the slave_interface_name of this ActiveStandbyConfigDTO.
 
         备节点网卡名称
 
@@ -126,7 +126,7 @@ class ActiveStandbyConfigDTO:
 
     @slave_interface_name.setter
     def slave_interface_name(self, slave_interface_name):
-        """Sets the slave_interface_name of this ActiveStandbyConfigDTO.
+        r"""Sets the slave_interface_name of this ActiveStandbyConfigDTO.
 
         备节点网卡名称
 
@@ -137,7 +137,7 @@ class ActiveStandbyConfigDTO:
 
     @property
     def virtual_ip_address(self):
-        """Gets the virtual_ip_address of this ActiveStandbyConfigDTO.
+        r"""Gets the virtual_ip_address of this ActiveStandbyConfigDTO.
 
         网卡ip
 
@@ -148,7 +148,7 @@ class ActiveStandbyConfigDTO:
 
     @virtual_ip_address.setter
     def virtual_ip_address(self, virtual_ip_address):
-        """Sets the virtual_ip_address of this ActiveStandbyConfigDTO.
+        r"""Sets the virtual_ip_address of this ActiveStandbyConfigDTO.
 
         网卡ip
 
@@ -159,7 +159,7 @@ class ActiveStandbyConfigDTO:
 
     @property
     def virtual_ipv6_address(self):
-        """Gets the virtual_ipv6_address of this ActiveStandbyConfigDTO.
+        r"""Gets the virtual_ipv6_address of this ActiveStandbyConfigDTO.
 
         网卡ipv6地址
 
@@ -170,7 +170,7 @@ class ActiveStandbyConfigDTO:
 
     @virtual_ipv6_address.setter
     def virtual_ipv6_address(self, virtual_ipv6_address):
-        """Sets the virtual_ipv6_address of this ActiveStandbyConfigDTO.
+        r"""Sets the virtual_ipv6_address of this ActiveStandbyConfigDTO.
 
         网卡ipv6地址
 

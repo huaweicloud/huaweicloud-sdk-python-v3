@@ -27,7 +27,7 @@ class ListVmsSendTasksResponseMode:
     }
 
     def __init__(self, aim_basic_send_tasks=None, page_info=None):
-        """ListVmsSendTasksResponseMode
+        r"""ListVmsSendTasksResponseMode
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListVmsSendTasksResponseMode:
 
     @property
     def aim_basic_send_tasks(self):
-        """Gets the aim_basic_send_tasks of this ListVmsSendTasksResponseMode.
+        r"""Gets the aim_basic_send_tasks of this ListVmsSendTasksResponseMode.
 
         智能信息基础版任务查询列表。
 
@@ -61,7 +61,7 @@ class ListVmsSendTasksResponseMode:
 
     @aim_basic_send_tasks.setter
     def aim_basic_send_tasks(self, aim_basic_send_tasks):
-        """Sets the aim_basic_send_tasks of this ListVmsSendTasksResponseMode.
+        r"""Sets the aim_basic_send_tasks of this ListVmsSendTasksResponseMode.
 
         智能信息基础版任务查询列表。
 
@@ -72,7 +72,7 @@ class ListVmsSendTasksResponseMode:
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListVmsSendTasksResponseMode.
+        r"""Gets the page_info of this ListVmsSendTasksResponseMode.
 
         :return: The page_info of this ListVmsSendTasksResponseMode.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.Page`
@@ -81,7 +81,7 @@ class ListVmsSendTasksResponseMode:
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListVmsSendTasksResponseMode.
+        r"""Sets the page_info of this ListVmsSendTasksResponseMode.
 
         :param page_info: The page_info of this ListVmsSendTasksResponseMode.
         :type page_info: :class:`huaweicloudsdkkoomessage.v1.Page`

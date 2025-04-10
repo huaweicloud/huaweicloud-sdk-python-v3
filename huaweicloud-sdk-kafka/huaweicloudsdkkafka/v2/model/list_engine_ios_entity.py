@@ -31,7 +31,7 @@ class ListEngineIosEntity:
     }
 
     def __init__(self, io_spec=None, type=None, available_zones=None, unavailable_zones=None):
-        """ListEngineIosEntity
+        r"""ListEngineIosEntity
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListEngineIosEntity:
 
     @property
     def io_spec(self):
-        """Gets the io_spec of this ListEngineIosEntity.
+        r"""Gets the io_spec of this ListEngineIosEntity.
 
         磁盘IO编码。
 
@@ -75,7 +75,7 @@ class ListEngineIosEntity:
 
     @io_spec.setter
     def io_spec(self, io_spec):
-        """Sets the io_spec of this ListEngineIosEntity.
+        r"""Sets the io_spec of this ListEngineIosEntity.
 
         磁盘IO编码。
 
@@ -86,7 +86,7 @@ class ListEngineIosEntity:
 
     @property
     def type(self):
-        """Gets the type of this ListEngineIosEntity.
+        r"""Gets the type of this ListEngineIosEntity.
 
         磁盘类型。
 
@@ -97,7 +97,7 @@ class ListEngineIosEntity:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListEngineIosEntity.
+        r"""Sets the type of this ListEngineIosEntity.
 
         磁盘类型。
 
@@ -108,7 +108,7 @@ class ListEngineIosEntity:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this ListEngineIosEntity.
+        r"""Gets the available_zones of this ListEngineIosEntity.
 
         可用区。
 
@@ -119,7 +119,7 @@ class ListEngineIosEntity:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this ListEngineIosEntity.
+        r"""Sets the available_zones of this ListEngineIosEntity.
 
         可用区。
 
@@ -130,7 +130,7 @@ class ListEngineIosEntity:
 
     @property
     def unavailable_zones(self):
-        """Gets the unavailable_zones of this ListEngineIosEntity.
+        r"""Gets the unavailable_zones of this ListEngineIosEntity.
 
         不可用区。
 
@@ -141,7 +141,7 @@ class ListEngineIosEntity:
 
     @unavailable_zones.setter
     def unavailable_zones(self, unavailable_zones):
-        """Sets the unavailable_zones of this ListEngineIosEntity.
+        r"""Sets the unavailable_zones of this ListEngineIosEntity.
 
         不可用区。
 

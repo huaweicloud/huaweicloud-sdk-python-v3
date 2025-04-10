@@ -27,7 +27,7 @@ class UpdatePodDeployment:
     }
 
     def __init__(self, replicas=None, template=None):
-        """UpdatePodDeployment
+        r"""UpdatePodDeployment
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePodDeployment:
 
     @property
     def replicas(self):
-        """Gets the replicas of this UpdatePodDeployment.
+        r"""Gets the replicas of this UpdatePodDeployment.
 
         应用部署副本数
 
@@ -60,7 +60,7 @@ class UpdatePodDeployment:
 
     @replicas.setter
     def replicas(self, replicas):
-        """Sets the replicas of this UpdatePodDeployment.
+        r"""Sets the replicas of this UpdatePodDeployment.
 
         应用部署副本数
 
@@ -71,7 +71,7 @@ class UpdatePodDeployment:
 
     @property
     def template(self):
-        """Gets the template of this UpdatePodDeployment.
+        r"""Gets the template of this UpdatePodDeployment.
 
         :return: The template of this UpdatePodDeployment.
         :rtype: :class:`huaweicloudsdkief.v1.PodRequest`
@@ -80,7 +80,7 @@ class UpdatePodDeployment:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this UpdatePodDeployment.
+        r"""Sets the template of this UpdatePodDeployment.
 
         :param template: The template of this UpdatePodDeployment.
         :type template: :class:`huaweicloudsdkief.v1.PodRequest`

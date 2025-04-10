@@ -25,7 +25,7 @@ class BatchUpdateRecordSetWithLineRequestBody:
     }
 
     def __init__(self, recordsets=None):
-        """BatchUpdateRecordSetWithLineRequestBody
+        r"""BatchUpdateRecordSetWithLineRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchUpdateRecordSetWithLineRequestBody:
 
     @property
     def recordsets(self):
-        """Gets the recordsets of this BatchUpdateRecordSetWithLineRequestBody.
+        r"""Gets the recordsets of this BatchUpdateRecordSetWithLineRequestBody.
 
         RecordSet 列表。
 
@@ -53,7 +53,7 @@ class BatchUpdateRecordSetWithLineRequestBody:
 
     @recordsets.setter
     def recordsets(self, recordsets):
-        """Sets the recordsets of this BatchUpdateRecordSetWithLineRequestBody.
+        r"""Sets the recordsets of this BatchUpdateRecordSetWithLineRequestBody.
 
         RecordSet 列表。
 

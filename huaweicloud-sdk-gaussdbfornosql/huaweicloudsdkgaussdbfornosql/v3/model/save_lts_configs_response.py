@@ -24,7 +24,7 @@ class SaveLtsConfigsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SaveLtsConfigsResponse
+        r"""SaveLtsConfigsResponse
 
         The model defined in huaweicloud sdk
 

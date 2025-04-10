@@ -57,7 +57,7 @@ class TaskCaseResponseTimeDetailVo:
     }
 
     def __init__(self, case_id=None, case_name=None, end_time=None, error_reason=None, response_time=None, service_id=None, service_name=None, start_time=None, state=None, sub_task_id=None, tag_id=None, tag_name=None, task_case_id=None, task_id=None, task_name=None, task_type_id=None, test_suite_type=None):
-        """TaskCaseResponseTimeDetailVo
+        r"""TaskCaseResponseTimeDetailVo
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def case_id(self):
-        """Gets the case_id of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the case_id of this TaskCaseResponseTimeDetailVo.
 
         用例ID
 
@@ -166,7 +166,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @case_id.setter
     def case_id(self, case_id):
-        """Sets the case_id of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the case_id of this TaskCaseResponseTimeDetailVo.
 
         用例ID
 
@@ -177,7 +177,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def case_name(self):
-        """Gets the case_name of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the case_name of this TaskCaseResponseTimeDetailVo.
 
         用例名称
 
@@ -188,7 +188,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @case_name.setter
     def case_name(self, case_name):
-        """Sets the case_name of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the case_name of this TaskCaseResponseTimeDetailVo.
 
         用例名称
 
@@ -199,7 +199,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the end_time of this TaskCaseResponseTimeDetailVo.
 
         用例结束时间
 
@@ -210,7 +210,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the end_time of this TaskCaseResponseTimeDetailVo.
 
         用例结束时间
 
@@ -221,7 +221,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def error_reason(self):
-        """Gets the error_reason of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the error_reason of this TaskCaseResponseTimeDetailVo.
 
         用例状态
 
@@ -232,7 +232,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @error_reason.setter
     def error_reason(self, error_reason):
-        """Sets the error_reason of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the error_reason of this TaskCaseResponseTimeDetailVo.
 
         用例状态
 
@@ -243,7 +243,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def response_time(self):
-        """Gets the response_time of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the response_time of this TaskCaseResponseTimeDetailVo.
 
         用例响应时间
 
@@ -254,7 +254,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @response_time.setter
     def response_time(self, response_time):
-        """Sets the response_time of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the response_time of this TaskCaseResponseTimeDetailVo.
 
         用例响应时间
 
@@ -265,7 +265,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def service_id(self):
-        """Gets the service_id of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the service_id of this TaskCaseResponseTimeDetailVo.
 
         服务ID
 
@@ -276,7 +276,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the service_id of this TaskCaseResponseTimeDetailVo.
 
         服务ID
 
@@ -287,7 +287,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def service_name(self):
-        """Gets the service_name of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the service_name of this TaskCaseResponseTimeDetailVo.
 
         服务名称
 
@@ -298,7 +298,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the service_name of this TaskCaseResponseTimeDetailVo.
 
         服务名称
 
@@ -309,7 +309,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the start_time of this TaskCaseResponseTimeDetailVo.
 
         用例开始时间
 
@@ -320,7 +320,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the start_time of this TaskCaseResponseTimeDetailVo.
 
         用例开始时间
 
@@ -331,7 +331,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def state(self):
-        """Gets the state of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the state of this TaskCaseResponseTimeDetailVo.
 
         用例状态
 
@@ -342,7 +342,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the state of this TaskCaseResponseTimeDetailVo.
 
         用例状态
 
@@ -353,7 +353,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def sub_task_id(self):
-        """Gets the sub_task_id of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the sub_task_id of this TaskCaseResponseTimeDetailVo.
 
         子任务ID
 
@@ -364,7 +364,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @sub_task_id.setter
     def sub_task_id(self, sub_task_id):
-        """Sets the sub_task_id of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the sub_task_id of this TaskCaseResponseTimeDetailVo.
 
         子任务ID
 
@@ -375,7 +375,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def tag_id(self):
-        """Gets the tag_id of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the tag_id of this TaskCaseResponseTimeDetailVo.
 
         已废弃
 
@@ -386,7 +386,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @tag_id.setter
     def tag_id(self, tag_id):
-        """Sets the tag_id of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the tag_id of this TaskCaseResponseTimeDetailVo.
 
         已废弃
 
@@ -397,7 +397,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def tag_name(self):
-        """Gets the tag_name of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the tag_name of this TaskCaseResponseTimeDetailVo.
 
         已废弃
 
@@ -408,7 +408,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @tag_name.setter
     def tag_name(self, tag_name):
-        """Sets the tag_name of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the tag_name of this TaskCaseResponseTimeDetailVo.
 
         已废弃
 
@@ -419,7 +419,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def task_case_id(self):
-        """Gets the task_case_id of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the task_case_id of this TaskCaseResponseTimeDetailVo.
 
         任务和用例关联关系的ID
 
@@ -430,7 +430,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @task_case_id.setter
     def task_case_id(self, task_case_id):
-        """Sets the task_case_id of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the task_case_id of this TaskCaseResponseTimeDetailVo.
 
         任务和用例关联关系的ID
 
@@ -441,7 +441,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the task_id of this TaskCaseResponseTimeDetailVo.
 
         任务ID
 
@@ -452,7 +452,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the task_id of this TaskCaseResponseTimeDetailVo.
 
         任务ID
 
@@ -463,7 +463,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the task_name of this TaskCaseResponseTimeDetailVo.
 
         任务名称
 
@@ -474,7 +474,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the task_name of this TaskCaseResponseTimeDetailVo.
 
         任务名称
 
@@ -485,7 +485,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def task_type_id(self):
-        """Gets the task_type_id of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the task_type_id of this TaskCaseResponseTimeDetailVo.
 
         任务类型，1=拨测，2=冒烟，4=部署测试，5=小网拨测
 
@@ -496,7 +496,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @task_type_id.setter
     def task_type_id(self, task_type_id):
-        """Sets the task_type_id of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the task_type_id of this TaskCaseResponseTimeDetailVo.
 
         任务类型，1=拨测，2=冒烟，4=部署测试，5=小网拨测
 
@@ -507,7 +507,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @property
     def test_suite_type(self):
-        """Gets the test_suite_type of this TaskCaseResponseTimeDetailVo.
+        r"""Gets the test_suite_type of this TaskCaseResponseTimeDetailVo.
 
         测试套类型
 
@@ -518,7 +518,7 @@ class TaskCaseResponseTimeDetailVo:
 
     @test_suite_type.setter
     def test_suite_type(self, test_suite_type):
-        """Sets the test_suite_type of this TaskCaseResponseTimeDetailVo.
+        r"""Sets the test_suite_type of this TaskCaseResponseTimeDetailVo.
 
         测试套类型
 

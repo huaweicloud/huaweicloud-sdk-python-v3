@@ -37,7 +37,7 @@ class PackageCard:
     }
 
     def __init__(self, id=None, name=None, tag_name=None, school=None, teacher_name=None, order_count=None, image_url=None):
-        """PackageCard
+        r"""PackageCard
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PackageCard:
 
     @property
     def id(self):
-        """Gets the id of this PackageCard.
+        r"""Gets the id of this PackageCard.
 
         习题库id
 
@@ -96,7 +96,7 @@ class PackageCard:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PackageCard.
+        r"""Sets the id of this PackageCard.
 
         习题库id
 
@@ -107,7 +107,7 @@ class PackageCard:
 
     @property
     def name(self):
-        """Gets the name of this PackageCard.
+        r"""Gets the name of this PackageCard.
 
         习题库名称
 
@@ -118,7 +118,7 @@ class PackageCard:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PackageCard.
+        r"""Sets the name of this PackageCard.
 
         习题库名称
 
@@ -129,7 +129,7 @@ class PackageCard:
 
     @property
     def tag_name(self):
-        """Gets the tag_name of this PackageCard.
+        r"""Gets the tag_name of this PackageCard.
 
         标签名称
 
@@ -140,7 +140,7 @@ class PackageCard:
 
     @tag_name.setter
     def tag_name(self, tag_name):
-        """Sets the tag_name of this PackageCard.
+        r"""Sets the tag_name of this PackageCard.
 
         标签名称
 
@@ -151,7 +151,7 @@ class PackageCard:
 
     @property
     def school(self):
-        """Gets the school of this PackageCard.
+        r"""Gets the school of this PackageCard.
 
         学习名称
 
@@ -162,7 +162,7 @@ class PackageCard:
 
     @school.setter
     def school(self, school):
-        """Sets the school of this PackageCard.
+        r"""Sets the school of this PackageCard.
 
         学习名称
 
@@ -173,7 +173,7 @@ class PackageCard:
 
     @property
     def teacher_name(self):
-        """Gets the teacher_name of this PackageCard.
+        r"""Gets the teacher_name of this PackageCard.
 
         教师名称
 
@@ -184,7 +184,7 @@ class PackageCard:
 
     @teacher_name.setter
     def teacher_name(self, teacher_name):
-        """Sets the teacher_name of this PackageCard.
+        r"""Sets the teacher_name of this PackageCard.
 
         教师名称
 
@@ -195,7 +195,7 @@ class PackageCard:
 
     @property
     def order_count(self):
-        """Gets the order_count of this PackageCard.
+        r"""Gets the order_count of this PackageCard.
 
         租户习题库编号
 
@@ -206,7 +206,7 @@ class PackageCard:
 
     @order_count.setter
     def order_count(self, order_count):
-        """Sets the order_count of this PackageCard.
+        r"""Sets the order_count of this PackageCard.
 
         租户习题库编号
 
@@ -217,7 +217,7 @@ class PackageCard:
 
     @property
     def image_url(self):
-        """Gets the image_url of this PackageCard.
+        r"""Gets the image_url of this PackageCard.
 
         背景图url
 
@@ -228,7 +228,7 @@ class PackageCard:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this PackageCard.
+        r"""Sets the image_url of this PackageCard.
 
         背景图url
 

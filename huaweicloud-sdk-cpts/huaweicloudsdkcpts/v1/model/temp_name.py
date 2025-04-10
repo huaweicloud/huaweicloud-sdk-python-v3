@@ -25,7 +25,7 @@ class TempName:
     }
 
     def __init__(self, name=None):
-        """TempName
+        r"""TempName
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TempName:
 
     @property
     def name(self):
-        """Gets the name of this TempName.
+        r"""Gets the name of this TempName.
 
         名称
 
@@ -54,7 +54,7 @@ class TempName:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TempName.
+        r"""Sets the name of this TempName.
 
         名称
 

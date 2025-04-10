@@ -31,7 +31,7 @@ class ResourcesFilters:
     }
 
     def __init__(self, account_id=None, region_id=None, resource_id=None, resource_name=None):
-        """ResourcesFilters
+        r"""ResourcesFilters
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ResourcesFilters:
 
     @property
     def account_id(self):
-        """Gets the account_id of this ResourcesFilters.
+        r"""Gets the account_id of this ResourcesFilters.
 
         帐号ID。
 
@@ -75,7 +75,7 @@ class ResourcesFilters:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this ResourcesFilters.
+        r"""Sets the account_id of this ResourcesFilters.
 
         帐号ID。
 
@@ -86,7 +86,7 @@ class ResourcesFilters:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ResourcesFilters.
+        r"""Gets the region_id of this ResourcesFilters.
 
         区域ID。
 
@@ -97,7 +97,7 @@ class ResourcesFilters:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ResourcesFilters.
+        r"""Sets the region_id of this ResourcesFilters.
 
         区域ID。
 
@@ -108,7 +108,7 @@ class ResourcesFilters:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourcesFilters.
+        r"""Gets the resource_id of this ResourcesFilters.
 
         资源ID。
 
@@ -119,7 +119,7 @@ class ResourcesFilters:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourcesFilters.
+        r"""Sets the resource_id of this ResourcesFilters.
 
         资源ID。
 
@@ -130,7 +130,7 @@ class ResourcesFilters:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ResourcesFilters.
+        r"""Gets the resource_name of this ResourcesFilters.
 
         资源名称。
 
@@ -141,7 +141,7 @@ class ResourcesFilters:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ResourcesFilters.
+        r"""Sets the resource_name of this ResourcesFilters.
 
         资源名称。
 

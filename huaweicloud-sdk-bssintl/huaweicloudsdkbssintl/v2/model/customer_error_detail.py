@@ -29,7 +29,7 @@ class CustomerErrorDetail:
     }
 
     def __init__(self, error_code=None, error_msg=None, id=None):
-        """CustomerErrorDetail
+        r"""CustomerErrorDetail
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CustomerErrorDetail:
 
     @property
     def error_code(self):
-        """Gets the error_code of this CustomerErrorDetail.
+        r"""Gets the error_code of this CustomerErrorDetail.
 
         返回码。具体请参见状态码。 注意，此时返回的状态码全部为200。
 
@@ -68,7 +68,7 @@ class CustomerErrorDetail:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CustomerErrorDetail.
+        r"""Sets the error_code of this CustomerErrorDetail.
 
         返回码。具体请参见状态码。 注意，此时返回的状态码全部为200。
 
@@ -79,7 +79,7 @@ class CustomerErrorDetail:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CustomerErrorDetail.
+        r"""Gets the error_msg of this CustomerErrorDetail.
 
         返回码的描述信息。
 
@@ -90,7 +90,7 @@ class CustomerErrorDetail:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CustomerErrorDetail.
+        r"""Sets the error_msg of this CustomerErrorDetail.
 
         返回码的描述信息。
 
@@ -101,7 +101,7 @@ class CustomerErrorDetail:
 
     @property
     def id(self):
-        """Gets the id of this CustomerErrorDetail.
+        r"""Gets the id of this CustomerErrorDetail.
 
         标识ID。该参数对应的是customer_ids。
 
@@ -112,7 +112,7 @@ class CustomerErrorDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CustomerErrorDetail.
+        r"""Sets the id of this CustomerErrorDetail.
 
         标识ID。该参数对应的是customer_ids。
 

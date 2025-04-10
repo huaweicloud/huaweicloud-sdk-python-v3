@@ -29,7 +29,7 @@ class ImportDatabaseDataReq:
     }
 
     def __init__(self, files=None, delimiter=None, skip_lines=None):
-        """ImportDatabaseDataReq
+        r"""ImportDatabaseDataReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ImportDatabaseDataReq:
 
     @property
     def files(self):
-        """Gets the files of this ImportDatabaseDataReq.
+        r"""Gets the files of this ImportDatabaseDataReq.
 
         导入文件l路径列表
 
@@ -65,7 +65,7 @@ class ImportDatabaseDataReq:
 
     @files.setter
     def files(self, files):
-        """Sets the files of this ImportDatabaseDataReq.
+        r"""Sets the files of this ImportDatabaseDataReq.
 
         导入文件l路径列表
 
@@ -76,7 +76,7 @@ class ImportDatabaseDataReq:
 
     @property
     def delimiter(self):
-        """Gets the delimiter of this ImportDatabaseDataReq.
+        r"""Gets the delimiter of this ImportDatabaseDataReq.
 
         分隔符，常见分隔符为, ;
 
@@ -87,7 +87,7 @@ class ImportDatabaseDataReq:
 
     @delimiter.setter
     def delimiter(self, delimiter):
-        """Sets the delimiter of this ImportDatabaseDataReq.
+        r"""Sets the delimiter of this ImportDatabaseDataReq.
 
         分隔符，常见分隔符为, ;
 
@@ -98,7 +98,7 @@ class ImportDatabaseDataReq:
 
     @property
     def skip_lines(self):
-        """Gets the skip_lines of this ImportDatabaseDataReq.
+        r"""Gets the skip_lines of this ImportDatabaseDataReq.
 
         跳过的header行数
 
@@ -109,7 +109,7 @@ class ImportDatabaseDataReq:
 
     @skip_lines.setter
     def skip_lines(self, skip_lines):
-        """Sets the skip_lines of this ImportDatabaseDataReq.
+        r"""Sets the skip_lines of this ImportDatabaseDataReq.
 
         跳过的header行数
 

@@ -26,7 +26,7 @@ class DeleteDesktopPoolVolumesResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteDesktopPoolVolumesResponse
+        r"""DeleteDesktopPoolVolumesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDesktopPoolVolumesResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteDesktopPoolVolumesResponse.
+        r"""Gets the job_id of this DeleteDesktopPoolVolumesResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class DeleteDesktopPoolVolumesResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteDesktopPoolVolumesResponse.
+        r"""Sets the job_id of this DeleteDesktopPoolVolumesResponse.
 
         任务ID。
 

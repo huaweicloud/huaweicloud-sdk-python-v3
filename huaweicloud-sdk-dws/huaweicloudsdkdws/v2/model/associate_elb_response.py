@@ -26,7 +26,7 @@ class AssociateElbResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """AssociateElbResponse
+        r"""AssociateElbResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AssociateElbResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this AssociateElbResponse.
+        r"""Gets the job_id of this AssociateElbResponse.
 
         任务ID
 
@@ -55,7 +55,7 @@ class AssociateElbResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AssociateElbResponse.
+        r"""Sets the job_id of this AssociateElbResponse.
 
         任务ID
 

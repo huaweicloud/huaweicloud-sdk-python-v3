@@ -28,7 +28,7 @@ class RecognizeMainlandTravelPermitResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeMainlandTravelPermitResponse
+        r"""RecognizeMainlandTravelPermitResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeMainlandTravelPermitResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeMainlandTravelPermitResponse.
+        r"""Gets the result of this RecognizeMainlandTravelPermitResponse.
 
         :return: The result of this RecognizeMainlandTravelPermitResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.MainlandTravelPermitResult`
@@ -60,7 +60,7 @@ class RecognizeMainlandTravelPermitResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeMainlandTravelPermitResponse.
+        r"""Sets the result of this RecognizeMainlandTravelPermitResponse.
 
         :param result: The result of this RecognizeMainlandTravelPermitResponse.
         :type result: :class:`huaweicloudsdkocr.v1.MainlandTravelPermitResult`
@@ -69,7 +69,7 @@ class RecognizeMainlandTravelPermitResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeMainlandTravelPermitResponse.
+        r"""Gets the x_request_id of this RecognizeMainlandTravelPermitResponse.
 
         :return: The x_request_id of this RecognizeMainlandTravelPermitResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeMainlandTravelPermitResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeMainlandTravelPermitResponse.
+        r"""Sets the x_request_id of this RecognizeMainlandTravelPermitResponse.
 
         :param x_request_id: The x_request_id of this RecognizeMainlandTravelPermitResponse.
         :type x_request_id: str

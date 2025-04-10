@@ -26,7 +26,7 @@ class DeleteInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """DeleteInstanceResponse
+        r"""DeleteInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteInstanceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this DeleteInstanceResponse.
+        r"""Gets the id of this DeleteInstanceResponse.
 
         DDM实例ID。
 
@@ -55,7 +55,7 @@ class DeleteInstanceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteInstanceResponse.
+        r"""Sets the id of this DeleteInstanceResponse.
 
         DDM实例ID。
 

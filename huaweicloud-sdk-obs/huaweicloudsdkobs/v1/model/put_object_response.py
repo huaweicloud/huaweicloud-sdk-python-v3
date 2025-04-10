@@ -50,7 +50,7 @@ class PutObjectResponse(SdkResponse):
     }
 
     def __init__(self, x_obs_id_2=None, x_obs_request_id=None, e_tag=None, x_obs_server_side_encryption=None, x_obs_server_side_encryption_customer_algorithm=None, x_obs_storage_class=None, connection=None, x_obs_server_side_encryption_customer_key_md5=None, x_obs_server_side_encryption_kms_key_id=None, content_length=None, date=None, x_obs_version_id=None):
-        """PutObjectResponse
+        r"""PutObjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -123,7 +123,7 @@ class PutObjectResponse(SdkResponse):
 
     @property
     def x_obs_id_2(self):
-        """Gets the x_obs_id_2 of this PutObjectResponse.
+        r"""Gets the x_obs_id_2 of this PutObjectResponse.
 
         :return: The x_obs_id_2 of this PutObjectResponse.
         :rtype: str
@@ -132,7 +132,7 @@ class PutObjectResponse(SdkResponse):
 
     @x_obs_id_2.setter
     def x_obs_id_2(self, x_obs_id_2):
-        """Sets the x_obs_id_2 of this PutObjectResponse.
+        r"""Sets the x_obs_id_2 of this PutObjectResponse.
 
         :param x_obs_id_2: The x_obs_id_2 of this PutObjectResponse.
         :type x_obs_id_2: str
@@ -141,7 +141,7 @@ class PutObjectResponse(SdkResponse):
 
     @property
     def x_obs_request_id(self):
-        """Gets the x_obs_request_id of this PutObjectResponse.
+        r"""Gets the x_obs_request_id of this PutObjectResponse.
 
         :return: The x_obs_request_id of this PutObjectResponse.
         :rtype: str
@@ -150,7 +150,7 @@ class PutObjectResponse(SdkResponse):
 
     @x_obs_request_id.setter
     def x_obs_request_id(self, x_obs_request_id):
-        """Sets the x_obs_request_id of this PutObjectResponse.
+        r"""Sets the x_obs_request_id of this PutObjectResponse.
 
         :param x_obs_request_id: The x_obs_request_id of this PutObjectResponse.
         :type x_obs_request_id: str
@@ -159,7 +159,7 @@ class PutObjectResponse(SdkResponse):
 
     @property
     def e_tag(self):
-        """Gets the e_tag of this PutObjectResponse.
+        r"""Gets the e_tag of this PutObjectResponse.
 
         :return: The e_tag of this PutObjectResponse.
         :rtype: str
@@ -168,7 +168,7 @@ class PutObjectResponse(SdkResponse):
 
     @e_tag.setter
     def e_tag(self, e_tag):
-        """Sets the e_tag of this PutObjectResponse.
+        r"""Sets the e_tag of this PutObjectResponse.
 
         :param e_tag: The e_tag of this PutObjectResponse.
         :type e_tag: str
@@ -177,7 +177,7 @@ class PutObjectResponse(SdkResponse):
 
     @property
     def x_obs_server_side_encryption(self):
-        """Gets the x_obs_server_side_encryption of this PutObjectResponse.
+        r"""Gets the x_obs_server_side_encryption of this PutObjectResponse.
 
         :return: The x_obs_server_side_encryption of this PutObjectResponse.
         :rtype: str
@@ -186,7 +186,7 @@ class PutObjectResponse(SdkResponse):
 
     @x_obs_server_side_encryption.setter
     def x_obs_server_side_encryption(self, x_obs_server_side_encryption):
-        """Sets the x_obs_server_side_encryption of this PutObjectResponse.
+        r"""Sets the x_obs_server_side_encryption of this PutObjectResponse.
 
         :param x_obs_server_side_encryption: The x_obs_server_side_encryption of this PutObjectResponse.
         :type x_obs_server_side_encryption: str
@@ -195,7 +195,7 @@ class PutObjectResponse(SdkResponse):
 
     @property
     def x_obs_server_side_encryption_customer_algorithm(self):
-        """Gets the x_obs_server_side_encryption_customer_algorithm of this PutObjectResponse.
+        r"""Gets the x_obs_server_side_encryption_customer_algorithm of this PutObjectResponse.
 
         :return: The x_obs_server_side_encryption_customer_algorithm of this PutObjectResponse.
         :rtype: str
@@ -204,7 +204,7 @@ class PutObjectResponse(SdkResponse):
 
     @x_obs_server_side_encryption_customer_algorithm.setter
     def x_obs_server_side_encryption_customer_algorithm(self, x_obs_server_side_encryption_customer_algorithm):
-        """Sets the x_obs_server_side_encryption_customer_algorithm of this PutObjectResponse.
+        r"""Sets the x_obs_server_side_encryption_customer_algorithm of this PutObjectResponse.
 
         :param x_obs_server_side_encryption_customer_algorithm: The x_obs_server_side_encryption_customer_algorithm of this PutObjectResponse.
         :type x_obs_server_side_encryption_customer_algorithm: str
@@ -213,7 +213,7 @@ class PutObjectResponse(SdkResponse):
 
     @property
     def x_obs_storage_class(self):
-        """Gets the x_obs_storage_class of this PutObjectResponse.
+        r"""Gets the x_obs_storage_class of this PutObjectResponse.
 
         :return: The x_obs_storage_class of this PutObjectResponse.
         :rtype: str
@@ -222,7 +222,7 @@ class PutObjectResponse(SdkResponse):
 
     @x_obs_storage_class.setter
     def x_obs_storage_class(self, x_obs_storage_class):
-        """Sets the x_obs_storage_class of this PutObjectResponse.
+        r"""Sets the x_obs_storage_class of this PutObjectResponse.
 
         :param x_obs_storage_class: The x_obs_storage_class of this PutObjectResponse.
         :type x_obs_storage_class: str
@@ -231,7 +231,7 @@ class PutObjectResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this PutObjectResponse.
+        r"""Gets the connection of this PutObjectResponse.
 
         :return: The connection of this PutObjectResponse.
         :rtype: str
@@ -240,7 +240,7 @@ class PutObjectResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this PutObjectResponse.
+        r"""Sets the connection of this PutObjectResponse.
 
         :param connection: The connection of this PutObjectResponse.
         :type connection: str
@@ -249,7 +249,7 @@ class PutObjectResponse(SdkResponse):
 
     @property
     def x_obs_server_side_encryption_customer_key_md5(self):
-        """Gets the x_obs_server_side_encryption_customer_key_md5 of this PutObjectResponse.
+        r"""Gets the x_obs_server_side_encryption_customer_key_md5 of this PutObjectResponse.
 
         :return: The x_obs_server_side_encryption_customer_key_md5 of this PutObjectResponse.
         :rtype: str
@@ -258,7 +258,7 @@ class PutObjectResponse(SdkResponse):
 
     @x_obs_server_side_encryption_customer_key_md5.setter
     def x_obs_server_side_encryption_customer_key_md5(self, x_obs_server_side_encryption_customer_key_md5):
-        """Sets the x_obs_server_side_encryption_customer_key_md5 of this PutObjectResponse.
+        r"""Sets the x_obs_server_side_encryption_customer_key_md5 of this PutObjectResponse.
 
         :param x_obs_server_side_encryption_customer_key_md5: The x_obs_server_side_encryption_customer_key_md5 of this PutObjectResponse.
         :type x_obs_server_side_encryption_customer_key_md5: str
@@ -267,7 +267,7 @@ class PutObjectResponse(SdkResponse):
 
     @property
     def x_obs_server_side_encryption_kms_key_id(self):
-        """Gets the x_obs_server_side_encryption_kms_key_id of this PutObjectResponse.
+        r"""Gets the x_obs_server_side_encryption_kms_key_id of this PutObjectResponse.
 
         :return: The x_obs_server_side_encryption_kms_key_id of this PutObjectResponse.
         :rtype: str
@@ -276,7 +276,7 @@ class PutObjectResponse(SdkResponse):
 
     @x_obs_server_side_encryption_kms_key_id.setter
     def x_obs_server_side_encryption_kms_key_id(self, x_obs_server_side_encryption_kms_key_id):
-        """Sets the x_obs_server_side_encryption_kms_key_id of this PutObjectResponse.
+        r"""Sets the x_obs_server_side_encryption_kms_key_id of this PutObjectResponse.
 
         :param x_obs_server_side_encryption_kms_key_id: The x_obs_server_side_encryption_kms_key_id of this PutObjectResponse.
         :type x_obs_server_side_encryption_kms_key_id: str
@@ -285,7 +285,7 @@ class PutObjectResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this PutObjectResponse.
+        r"""Gets the content_length of this PutObjectResponse.
 
         :return: The content_length of this PutObjectResponse.
         :rtype: str
@@ -294,7 +294,7 @@ class PutObjectResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this PutObjectResponse.
+        r"""Sets the content_length of this PutObjectResponse.
 
         :param content_length: The content_length of this PutObjectResponse.
         :type content_length: str
@@ -303,7 +303,7 @@ class PutObjectResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this PutObjectResponse.
+        r"""Gets the date of this PutObjectResponse.
 
         :return: The date of this PutObjectResponse.
         :rtype: str
@@ -312,7 +312,7 @@ class PutObjectResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this PutObjectResponse.
+        r"""Sets the date of this PutObjectResponse.
 
         :param date: The date of this PutObjectResponse.
         :type date: str
@@ -321,7 +321,7 @@ class PutObjectResponse(SdkResponse):
 
     @property
     def x_obs_version_id(self):
-        """Gets the x_obs_version_id of this PutObjectResponse.
+        r"""Gets the x_obs_version_id of this PutObjectResponse.
 
         :return: The x_obs_version_id of this PutObjectResponse.
         :rtype: str
@@ -330,7 +330,7 @@ class PutObjectResponse(SdkResponse):
 
     @x_obs_version_id.setter
     def x_obs_version_id(self, x_obs_version_id):
-        """Sets the x_obs_version_id of this PutObjectResponse.
+        r"""Sets the x_obs_version_id of this PutObjectResponse.
 
         :param x_obs_version_id: The x_obs_version_id of this PutObjectResponse.
         :type x_obs_version_id: str

@@ -27,7 +27,7 @@ class CodeVerifyReq:
     }
 
     def __init__(self, code=None, method=None):
-        """CodeVerifyReq
+        r"""CodeVerifyReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CodeVerifyReq:
 
     @property
     def code(self):
-        """Gets the code of this CodeVerifyReq.
+        r"""Gets the code of this CodeVerifyReq.
 
         验证码
 
@@ -59,7 +59,7 @@ class CodeVerifyReq:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CodeVerifyReq.
+        r"""Sets the code of this CodeVerifyReq.
 
         验证码
 
@@ -70,7 +70,7 @@ class CodeVerifyReq:
 
     @property
     def method(self):
-        """Gets the method of this CodeVerifyReq.
+        r"""Gets the method of this CodeVerifyReq.
 
         认证方式
 
@@ -81,7 +81,7 @@ class CodeVerifyReq:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this CodeVerifyReq.
+        r"""Sets the method of this CodeVerifyReq.
 
         认证方式
 

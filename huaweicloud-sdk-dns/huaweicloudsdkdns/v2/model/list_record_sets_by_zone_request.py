@@ -47,7 +47,7 @@ class ListRecordSetsByZoneRequest:
     }
 
     def __init__(self, zone_id=None, search_mode=None, marker=None, limit=None, offset=None, tags=None, status=None, type=None, name=None, id=None, sort_key=None, sort_dir=None):
-        """ListRecordSetsByZoneRequest
+        r"""ListRecordSetsByZoneRequest
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class ListRecordSetsByZoneRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this ListRecordSetsByZoneRequest.
+        r"""Gets the zone_id of this ListRecordSetsByZoneRequest.
 
         所属zone id。
 
@@ -130,7 +130,7 @@ class ListRecordSetsByZoneRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this ListRecordSetsByZoneRequest.
+        r"""Sets the zone_id of this ListRecordSetsByZoneRequest.
 
         所属zone id。
 
@@ -141,7 +141,7 @@ class ListRecordSetsByZoneRequest:
 
     @property
     def search_mode(self):
-        """Gets the search_mode of this ListRecordSetsByZoneRequest.
+        r"""Gets the search_mode of this ListRecordSetsByZoneRequest.
 
         查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 
@@ -152,7 +152,7 @@ class ListRecordSetsByZoneRequest:
 
     @search_mode.setter
     def search_mode(self, search_mode):
-        """Sets the search_mode of this ListRecordSetsByZoneRequest.
+        r"""Sets the search_mode of this ListRecordSetsByZoneRequest.
 
         查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 
@@ -163,7 +163,7 @@ class ListRecordSetsByZoneRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListRecordSetsByZoneRequest.
+        r"""Gets the marker of this ListRecordSetsByZoneRequest.
 
         分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
@@ -174,7 +174,7 @@ class ListRecordSetsByZoneRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRecordSetsByZoneRequest.
+        r"""Sets the marker of this ListRecordSetsByZoneRequest.
 
         分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
@@ -185,7 +185,7 @@ class ListRecordSetsByZoneRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRecordSetsByZoneRequest.
+        r"""Gets the limit of this ListRecordSetsByZoneRequest.
 
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
@@ -196,7 +196,7 @@ class ListRecordSetsByZoneRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRecordSetsByZoneRequest.
+        r"""Sets the limit of this ListRecordSetsByZoneRequest.
 
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
@@ -207,7 +207,7 @@ class ListRecordSetsByZoneRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRecordSetsByZoneRequest.
+        r"""Gets the offset of this ListRecordSetsByZoneRequest.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
@@ -218,7 +218,7 @@ class ListRecordSetsByZoneRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRecordSetsByZoneRequest.
+        r"""Sets the offset of this ListRecordSetsByZoneRequest.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
@@ -229,7 +229,7 @@ class ListRecordSetsByZoneRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListRecordSetsByZoneRequest.
+        r"""Gets the tags of this ListRecordSetsByZoneRequest.
 
         资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
 
@@ -240,7 +240,7 @@ class ListRecordSetsByZoneRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListRecordSetsByZoneRequest.
+        r"""Sets the tags of this ListRecordSetsByZoneRequest.
 
         资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
 
@@ -251,7 +251,7 @@ class ListRecordSetsByZoneRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListRecordSetsByZoneRequest.
+        r"""Gets the status of this ListRecordSetsByZoneRequest.
 
         待查询的Record Set的状态。 取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
 
@@ -262,7 +262,7 @@ class ListRecordSetsByZoneRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListRecordSetsByZoneRequest.
+        r"""Sets the status of this ListRecordSetsByZoneRequest.
 
         待查询的Record Set的状态。 取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
 
@@ -273,7 +273,7 @@ class ListRecordSetsByZoneRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListRecordSetsByZoneRequest.
+        r"""Gets the type of this ListRecordSetsByZoneRequest.
 
         待查询的Record Set的记录集类型。 公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
 
@@ -284,7 +284,7 @@ class ListRecordSetsByZoneRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListRecordSetsByZoneRequest.
+        r"""Sets the type of this ListRecordSetsByZoneRequest.
 
         待查询的Record Set的记录集类型。 公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。 内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
 
@@ -295,7 +295,7 @@ class ListRecordSetsByZoneRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListRecordSetsByZoneRequest.
+        r"""Gets the name of this ListRecordSetsByZoneRequest.
 
         待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
 
@@ -306,7 +306,7 @@ class ListRecordSetsByZoneRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListRecordSetsByZoneRequest.
+        r"""Sets the name of this ListRecordSetsByZoneRequest.
 
         待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
 
@@ -317,7 +317,7 @@ class ListRecordSetsByZoneRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListRecordSetsByZoneRequest.
+        r"""Gets the id of this ListRecordSetsByZoneRequest.
 
         待查询的Record Set的id包含此id。
 
@@ -328,7 +328,7 @@ class ListRecordSetsByZoneRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListRecordSetsByZoneRequest.
+        r"""Sets the id of this ListRecordSetsByZoneRequest.
 
         待查询的Record Set的id包含此id。
 
@@ -339,7 +339,7 @@ class ListRecordSetsByZoneRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListRecordSetsByZoneRequest.
+        r"""Gets the sort_key of this ListRecordSetsByZoneRequest.
 
         查询结果中Record Set列表的排序字段。  取值范围为：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
 
@@ -350,7 +350,7 @@ class ListRecordSetsByZoneRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListRecordSetsByZoneRequest.
+        r"""Sets the sort_key of this ListRecordSetsByZoneRequest.
 
         查询结果中Record Set列表的排序字段。  取值范围为：  name：记录集名称 type：记录集类型 默认值为空，表示不排序。
 
@@ -361,7 +361,7 @@ class ListRecordSetsByZoneRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListRecordSetsByZoneRequest.
+        r"""Gets the sort_dir of this ListRecordSetsByZoneRequest.
 
         查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
@@ -372,7 +372,7 @@ class ListRecordSetsByZoneRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListRecordSetsByZoneRequest.
+        r"""Sets the sort_dir of this ListRecordSetsByZoneRequest.
 
         查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 

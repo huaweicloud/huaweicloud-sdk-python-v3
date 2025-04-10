@@ -37,7 +37,7 @@ class StatisticConferenceDataItem:
     }
 
     def __init__(self, time=None, conf_count=None, conf_duration=None, attendee_count=None, conf_concurrent_used_count=None, conf24h_count=None, conf24h_attendee_count=None):
-        """StatisticConferenceDataItem
+        r"""StatisticConferenceDataItem
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class StatisticConferenceDataItem:
 
     @property
     def time(self):
-        """Gets the time of this StatisticConferenceDataItem.
+        r"""Gets the time of this StatisticConferenceDataItem.
 
         日期/月份，category = conference_info时有效。 小时，category = conference_hourly_info时有效。
 
@@ -96,7 +96,7 @@ class StatisticConferenceDataItem:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this StatisticConferenceDataItem.
+        r"""Sets the time of this StatisticConferenceDataItem.
 
         日期/月份，category = conference_info时有效。 小时，category = conference_hourly_info时有效。
 
@@ -107,7 +107,7 @@ class StatisticConferenceDataItem:
 
     @property
     def conf_count(self):
-        """Gets the conf_count of this StatisticConferenceDataItem.
+        r"""Gets the conf_count of this StatisticConferenceDataItem.
 
         会议数(含VMR)。 category = conference_info时有效。
 
@@ -118,7 +118,7 @@ class StatisticConferenceDataItem:
 
     @conf_count.setter
     def conf_count(self, conf_count):
-        """Sets the conf_count of this StatisticConferenceDataItem.
+        r"""Sets the conf_count of this StatisticConferenceDataItem.
 
         会议数(含VMR)。 category = conference_info时有效。
 
@@ -129,7 +129,7 @@ class StatisticConferenceDataItem:
 
     @property
     def conf_duration(self):
-        """Gets the conf_duration of this StatisticConferenceDataItem.
+        r"""Gets the conf_duration of this StatisticConferenceDataItem.
 
         会议时长(秒)(含VMR)。 category = conference_info时有效。
 
@@ -140,7 +140,7 @@ class StatisticConferenceDataItem:
 
     @conf_duration.setter
     def conf_duration(self, conf_duration):
-        """Sets the conf_duration of this StatisticConferenceDataItem.
+        r"""Sets the conf_duration of this StatisticConferenceDataItem.
 
         会议时长(秒)(含VMR)。 category = conference_info时有效。
 
@@ -151,7 +151,7 @@ class StatisticConferenceDataItem:
 
     @property
     def attendee_count(self):
-        """Gets the attendee_count of this StatisticConferenceDataItem.
+        r"""Gets the attendee_count of this StatisticConferenceDataItem.
 
         与会人次(含VMR)。 category = conference_info时有效。
 
@@ -162,7 +162,7 @@ class StatisticConferenceDataItem:
 
     @attendee_count.setter
     def attendee_count(self, attendee_count):
-        """Sets the attendee_count of this StatisticConferenceDataItem.
+        r"""Sets the attendee_count of this StatisticConferenceDataItem.
 
         与会人次(含VMR)。 category = conference_info时有效。
 
@@ -173,7 +173,7 @@ class StatisticConferenceDataItem:
 
     @property
     def conf_concurrent_used_count(self):
-        """Gets the conf_concurrent_used_count of this StatisticConferenceDataItem.
+        r"""Gets the conf_concurrent_used_count of this StatisticConferenceDataItem.
 
         并发会议使用数。 category = conference_info时有效。
 
@@ -184,7 +184,7 @@ class StatisticConferenceDataItem:
 
     @conf_concurrent_used_count.setter
     def conf_concurrent_used_count(self, conf_concurrent_used_count):
-        """Sets the conf_concurrent_used_count of this StatisticConferenceDataItem.
+        r"""Sets the conf_concurrent_used_count of this StatisticConferenceDataItem.
 
         并发会议使用数。 category = conference_info时有效。
 
@@ -195,7 +195,7 @@ class StatisticConferenceDataItem:
 
     @property
     def conf24h_count(self):
-        """Gets the conf24h_count of this StatisticConferenceDataItem.
+        r"""Gets the conf24h_count of this StatisticConferenceDataItem.
 
         小时单位会议数(含VMR)。 category = conference_hourly_info时有效。
 
@@ -206,7 +206,7 @@ class StatisticConferenceDataItem:
 
     @conf24h_count.setter
     def conf24h_count(self, conf24h_count):
-        """Sets the conf24h_count of this StatisticConferenceDataItem.
+        r"""Sets the conf24h_count of this StatisticConferenceDataItem.
 
         小时单位会议数(含VMR)。 category = conference_hourly_info时有效。
 
@@ -217,7 +217,7 @@ class StatisticConferenceDataItem:
 
     @property
     def conf24h_attendee_count(self):
-        """Gets the conf24h_attendee_count of this StatisticConferenceDataItem.
+        r"""Gets the conf24h_attendee_count of this StatisticConferenceDataItem.
 
         小时单位与会人次(含VMR)。 category = conference_hourly_info时有效。
 
@@ -228,7 +228,7 @@ class StatisticConferenceDataItem:
 
     @conf24h_attendee_count.setter
     def conf24h_attendee_count(self, conf24h_attendee_count):
-        """Sets the conf24h_attendee_count of this StatisticConferenceDataItem.
+        r"""Sets the conf24h_attendee_count of this StatisticConferenceDataItem.
 
         小时单位与会人次(含VMR)。 category = conference_hourly_info时有效。
 

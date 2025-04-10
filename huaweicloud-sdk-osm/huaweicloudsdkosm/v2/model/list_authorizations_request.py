@@ -43,7 +43,7 @@ class ListAuthorizationsRequest:
     }
 
     def __init__(self, sub_customer_name=None, incident_id=None, status=None, simple_description=None, offset=None, limit=None, group_id=None, x_site=None, x_language=None, x_time_zone=None):
-        """ListAuthorizationsRequest
+        r"""ListAuthorizationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListAuthorizationsRequest:
 
     @property
     def sub_customer_name(self):
-        """Gets the sub_customer_name of this ListAuthorizationsRequest.
+        r"""Gets the sub_customer_name of this ListAuthorizationsRequest.
 
         子用户名称
 
@@ -117,7 +117,7 @@ class ListAuthorizationsRequest:
 
     @sub_customer_name.setter
     def sub_customer_name(self, sub_customer_name):
-        """Sets the sub_customer_name of this ListAuthorizationsRequest.
+        r"""Sets the sub_customer_name of this ListAuthorizationsRequest.
 
         子用户名称
 
@@ -128,7 +128,7 @@ class ListAuthorizationsRequest:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this ListAuthorizationsRequest.
+        r"""Gets the incident_id of this ListAuthorizationsRequest.
 
         工单id
 
@@ -139,7 +139,7 @@ class ListAuthorizationsRequest:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this ListAuthorizationsRequest.
+        r"""Sets the incident_id of this ListAuthorizationsRequest.
 
         工单id
 
@@ -150,7 +150,7 @@ class ListAuthorizationsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAuthorizationsRequest.
+        r"""Gets the status of this ListAuthorizationsRequest.
 
         授权状态
 
@@ -161,7 +161,7 @@ class ListAuthorizationsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAuthorizationsRequest.
+        r"""Sets the status of this ListAuthorizationsRequest.
 
         授权状态
 
@@ -172,7 +172,7 @@ class ListAuthorizationsRequest:
 
     @property
     def simple_description(self):
-        """Gets the simple_description of this ListAuthorizationsRequest.
+        r"""Gets the simple_description of this ListAuthorizationsRequest.
 
         简要描述
 
@@ -183,7 +183,7 @@ class ListAuthorizationsRequest:
 
     @simple_description.setter
     def simple_description(self, simple_description):
-        """Sets the simple_description of this ListAuthorizationsRequest.
+        r"""Sets the simple_description of this ListAuthorizationsRequest.
 
         简要描述
 
@@ -194,7 +194,7 @@ class ListAuthorizationsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAuthorizationsRequest.
+        r"""Gets the offset of this ListAuthorizationsRequest.
 
         查询偏移量
 
@@ -205,7 +205,7 @@ class ListAuthorizationsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAuthorizationsRequest.
+        r"""Sets the offset of this ListAuthorizationsRequest.
 
         查询偏移量
 
@@ -216,7 +216,7 @@ class ListAuthorizationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAuthorizationsRequest.
+        r"""Gets the limit of this ListAuthorizationsRequest.
 
         查询限制条数
 
@@ -227,7 +227,7 @@ class ListAuthorizationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAuthorizationsRequest.
+        r"""Sets the limit of this ListAuthorizationsRequest.
 
         查询限制条数
 
@@ -238,7 +238,7 @@ class ListAuthorizationsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListAuthorizationsRequest.
+        r"""Gets the group_id of this ListAuthorizationsRequest.
 
         华为云IAM组id，同组其他工单时，该id必传
 
@@ -249,7 +249,7 @@ class ListAuthorizationsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListAuthorizationsRequest.
+        r"""Sets the group_id of this ListAuthorizationsRequest.
 
         华为云IAM组id，同组其他工单时，该id必传
 
@@ -260,7 +260,7 @@ class ListAuthorizationsRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ListAuthorizationsRequest.
+        r"""Gets the x_site of this ListAuthorizationsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -271,7 +271,7 @@ class ListAuthorizationsRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ListAuthorizationsRequest.
+        r"""Sets the x_site of this ListAuthorizationsRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -282,7 +282,7 @@ class ListAuthorizationsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListAuthorizationsRequest.
+        r"""Gets the x_language of this ListAuthorizationsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -293,7 +293,7 @@ class ListAuthorizationsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListAuthorizationsRequest.
+        r"""Sets the x_language of this ListAuthorizationsRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -304,7 +304,7 @@ class ListAuthorizationsRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this ListAuthorizationsRequest.
+        r"""Gets the x_time_zone of this ListAuthorizationsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -315,7 +315,7 @@ class ListAuthorizationsRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this ListAuthorizationsRequest.
+        r"""Sets the x_time_zone of this ListAuthorizationsRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

@@ -25,7 +25,7 @@ class CreateHostClusterRequest:
     }
 
     def __init__(self, body=None):
-        """CreateHostClusterRequest
+        r"""CreateHostClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateHostClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHostClusterRequest.
+        r"""Gets the body of this CreateHostClusterRequest.
 
         :return: The body of this CreateHostClusterRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateHostClusterRequestBody`
@@ -52,7 +52,7 @@ class CreateHostClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHostClusterRequest.
+        r"""Sets the body of this CreateHostClusterRequest.
 
         :param body: The body of this CreateHostClusterRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateHostClusterRequestBody`

@@ -31,7 +31,7 @@ class ShowInstanceLogRequest:
     }
 
     def __init__(self, workspace=None, task_id=None, instance_id=None, body=None):
-        """ShowInstanceLogRequest
+        r"""ShowInstanceLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ShowInstanceLogRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowInstanceLogRequest.
+        r"""Gets the workspace of this ShowInstanceLogRequest.
 
         DataArts Studio工作空间ID
 
@@ -72,7 +72,7 @@ class ShowInstanceLogRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowInstanceLogRequest.
+        r"""Sets the workspace of this ShowInstanceLogRequest.
 
         DataArts Studio工作空间ID
 
@@ -83,7 +83,7 @@ class ShowInstanceLogRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowInstanceLogRequest.
+        r"""Gets the task_id of this ShowInstanceLogRequest.
 
         例ID
 
@@ -94,7 +94,7 @@ class ShowInstanceLogRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowInstanceLogRequest.
+        r"""Sets the task_id of this ShowInstanceLogRequest.
 
         例ID
 
@@ -105,7 +105,7 @@ class ShowInstanceLogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceLogRequest.
+        r"""Gets the instance_id of this ShowInstanceLogRequest.
 
         事例ID
 
@@ -116,7 +116,7 @@ class ShowInstanceLogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceLogRequest.
+        r"""Sets the instance_id of this ShowInstanceLogRequest.
 
         事例ID
 
@@ -127,7 +127,7 @@ class ShowInstanceLogRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowInstanceLogRequest.
+        r"""Gets the body of this ShowInstanceLogRequest.
 
         :return: The body of this ShowInstanceLogRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.JobLogRequest`
@@ -136,7 +136,7 @@ class ShowInstanceLogRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowInstanceLogRequest.
+        r"""Sets the body of this ShowInstanceLogRequest.
 
         :param body: The body of this ShowInstanceLogRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.JobLogRequest`

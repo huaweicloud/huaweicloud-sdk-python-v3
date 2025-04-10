@@ -26,7 +26,7 @@ class ListUserResourcesResponse(SdkResponse):
     }
 
     def __init__(self, users=None):
-        """ListUserResourcesResponse
+        r"""ListUserResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListUserResourcesResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this ListUserResourcesResponse.
+        r"""Gets the users of this ListUserResourcesResponse.
 
         最近30天操作事件的用户列表。
 
@@ -55,7 +55,7 @@ class ListUserResourcesResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ListUserResourcesResponse.
+        r"""Sets the users of this ListUserResourcesResponse.
 
         最近30天操作事件的用户列表。
 

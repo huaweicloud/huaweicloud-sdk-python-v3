@@ -117,7 +117,7 @@ class ServerDetail:
     }
 
     def __init__(self, status=None, updated=None, auto_terminate_time=None, host_id=None, os_ext_srv_att_rhost=None, addresses=None, key_name=None, image=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_ext_srv_att_rinstance_name=None, os_ext_srv_att_rhypervisor_hostname=None, flavor=None, id=None, security_groups=None, os_ext_a_zavailability_zone=None, user_id=None, name=None, created=None, tenant_id=None, os_dc_fdisk_config=None, access_i_pv4=None, access_i_pv6=None, fault=None, progress=None, os_ext_st_spower_state=None, config_drive=None, metadata=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, osscheduler_hints=None, enterprise_project_id=None, sys_tags=None, cpu_options=None, hypervisor=None):
-        """ServerDetail
+        r"""ServerDetail
 
         The model defined in huaweicloud sdk
 
@@ -330,7 +330,7 @@ class ServerDetail:
 
     @property
     def status(self):
-        """Gets the status of this ServerDetail.
+        r"""Gets the status of this ServerDetail.
 
         弹性云服务器状态。  取值范围：  ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
 
@@ -341,7 +341,7 @@ class ServerDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ServerDetail.
+        r"""Sets the status of this ServerDetail.
 
         弹性云服务器状态。  取值范围：  ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
 
@@ -352,7 +352,7 @@ class ServerDetail:
 
     @property
     def updated(self):
-        """Gets the updated of this ServerDetail.
+        r"""Gets the updated of this ServerDetail.
 
         弹性云服务器更新时间。  时间格式例如：2019-05-22T03:30:52Z
 
@@ -363,7 +363,7 @@ class ServerDetail:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ServerDetail.
+        r"""Sets the updated of this ServerDetail.
 
         弹性云服务器更新时间。  时间格式例如：2019-05-22T03:30:52Z
 
@@ -374,7 +374,7 @@ class ServerDetail:
 
     @property
     def auto_terminate_time(self):
-        """Gets the auto_terminate_time of this ServerDetail.
+        r"""Gets the auto_terminate_time of this ServerDetail.
 
         弹性云服务器定时删除时间。  时间格式例如：2020-01-19T03:30:52Z
 
@@ -385,7 +385,7 @@ class ServerDetail:
 
     @auto_terminate_time.setter
     def auto_terminate_time(self, auto_terminate_time):
-        """Sets the auto_terminate_time of this ServerDetail.
+        r"""Sets the auto_terminate_time of this ServerDetail.
 
         弹性云服务器定时删除时间。  时间格式例如：2020-01-19T03:30:52Z
 
@@ -396,7 +396,7 @@ class ServerDetail:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ServerDetail.
+        r"""Gets the host_id of this ServerDetail.
 
         弹性云服务器所在主机的主机ID。
 
@@ -407,7 +407,7 @@ class ServerDetail:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ServerDetail.
+        r"""Sets the host_id of this ServerDetail.
 
         弹性云服务器所在主机的主机ID。
 
@@ -418,7 +418,7 @@ class ServerDetail:
 
     @property
     def os_ext_srv_att_rhost(self):
-        """Gets the os_ext_srv_att_rhost of this ServerDetail.
+        r"""Gets the os_ext_srv_att_rhost of this ServerDetail.
 
         弹性云服务器所在主机的主机名称。
 
@@ -429,7 +429,7 @@ class ServerDetail:
 
     @os_ext_srv_att_rhost.setter
     def os_ext_srv_att_rhost(self, os_ext_srv_att_rhost):
-        """Sets the os_ext_srv_att_rhost of this ServerDetail.
+        r"""Sets the os_ext_srv_att_rhost of this ServerDetail.
 
         弹性云服务器所在主机的主机名称。
 
@@ -440,7 +440,7 @@ class ServerDetail:
 
     @property
     def addresses(self):
-        """Gets the addresses of this ServerDetail.
+        r"""Gets the addresses of this ServerDetail.
 
         弹性云服务器的网络属性。
 
@@ -451,7 +451,7 @@ class ServerDetail:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this ServerDetail.
+        r"""Sets the addresses of this ServerDetail.
 
         弹性云服务器的网络属性。
 
@@ -462,7 +462,7 @@ class ServerDetail:
 
     @property
     def key_name(self):
-        """Gets the key_name of this ServerDetail.
+        r"""Gets the key_name of this ServerDetail.
 
         弹性云服务器使用的密钥对名称。
 
@@ -473,7 +473,7 @@ class ServerDetail:
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this ServerDetail.
+        r"""Sets the key_name of this ServerDetail.
 
         弹性云服务器使用的密钥对名称。
 
@@ -484,7 +484,7 @@ class ServerDetail:
 
     @property
     def image(self):
-        """Gets the image of this ServerDetail.
+        r"""Gets the image of this ServerDetail.
 
         :return: The image of this ServerDetail.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerImage`
@@ -493,7 +493,7 @@ class ServerDetail:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this ServerDetail.
+        r"""Sets the image of this ServerDetail.
 
         :param image: The image of this ServerDetail.
         :type image: :class:`huaweicloudsdkecs.v2.ServerImage`
@@ -502,7 +502,7 @@ class ServerDetail:
 
     @property
     def os_ext_st_stask_state(self):
-        """Gets the os_ext_st_stask_state of this ServerDetail.
+        r"""Gets the os_ext_st_stask_state of this ServerDetail.
 
         扩展属性，弹性云服务器当前任务的状态。  取值范围请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)表3。
 
@@ -513,7 +513,7 @@ class ServerDetail:
 
     @os_ext_st_stask_state.setter
     def os_ext_st_stask_state(self, os_ext_st_stask_state):
-        """Sets the os_ext_st_stask_state of this ServerDetail.
+        r"""Sets the os_ext_st_stask_state of this ServerDetail.
 
         扩展属性，弹性云服务器当前任务的状态。  取值范围请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)表3。
 
@@ -524,7 +524,7 @@ class ServerDetail:
 
     @property
     def os_ext_st_svm_state(self):
-        """Gets the os_ext_st_svm_state of this ServerDetail.
+        r"""Gets the os_ext_st_svm_state of this ServerDetail.
 
         扩展属性，弹性云服务器当前状态。  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
 
@@ -535,7 +535,7 @@ class ServerDetail:
 
     @os_ext_st_svm_state.setter
     def os_ext_st_svm_state(self, os_ext_st_svm_state):
-        """Sets the os_ext_st_svm_state of this ServerDetail.
+        r"""Sets the os_ext_st_svm_state of this ServerDetail.
 
         扩展属性，弹性云服务器当前状态。  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
 
@@ -546,7 +546,7 @@ class ServerDetail:
 
     @property
     def os_ext_srv_att_rinstance_name(self):
-        """Gets the os_ext_srv_att_rinstance_name of this ServerDetail.
+        r"""Gets the os_ext_srv_att_rinstance_name of this ServerDetail.
 
         扩展属性，弹性云服务器别名。
 
@@ -557,7 +557,7 @@ class ServerDetail:
 
     @os_ext_srv_att_rinstance_name.setter
     def os_ext_srv_att_rinstance_name(self, os_ext_srv_att_rinstance_name):
-        """Sets the os_ext_srv_att_rinstance_name of this ServerDetail.
+        r"""Sets the os_ext_srv_att_rinstance_name of this ServerDetail.
 
         扩展属性，弹性云服务器别名。
 
@@ -568,7 +568,7 @@ class ServerDetail:
 
     @property
     def os_ext_srv_att_rhypervisor_hostname(self):
-        """Gets the os_ext_srv_att_rhypervisor_hostname of this ServerDetail.
+        r"""Gets the os_ext_srv_att_rhypervisor_hostname of this ServerDetail.
 
         扩展属性，弹性云服务器所在虚拟化主机名。
 
@@ -579,7 +579,7 @@ class ServerDetail:
 
     @os_ext_srv_att_rhypervisor_hostname.setter
     def os_ext_srv_att_rhypervisor_hostname(self, os_ext_srv_att_rhypervisor_hostname):
-        """Sets the os_ext_srv_att_rhypervisor_hostname of this ServerDetail.
+        r"""Sets the os_ext_srv_att_rhypervisor_hostname of this ServerDetail.
 
         扩展属性，弹性云服务器所在虚拟化主机名。
 
@@ -590,7 +590,7 @@ class ServerDetail:
 
     @property
     def flavor(self):
-        """Gets the flavor of this ServerDetail.
+        r"""Gets the flavor of this ServerDetail.
 
         :return: The flavor of this ServerDetail.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerFlavor`
@@ -599,7 +599,7 @@ class ServerDetail:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ServerDetail.
+        r"""Sets the flavor of this ServerDetail.
 
         :param flavor: The flavor of this ServerDetail.
         :type flavor: :class:`huaweicloudsdkecs.v2.ServerFlavor`
@@ -608,7 +608,7 @@ class ServerDetail:
 
     @property
     def id(self):
-        """Gets the id of this ServerDetail.
+        r"""Gets the id of this ServerDetail.
 
         弹性云服务器ID，格式为UUID。
 
@@ -619,7 +619,7 @@ class ServerDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServerDetail.
+        r"""Sets the id of this ServerDetail.
 
         弹性云服务器ID，格式为UUID。
 
@@ -630,7 +630,7 @@ class ServerDetail:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ServerDetail.
+        r"""Gets the security_groups of this ServerDetail.
 
         弹性云服务器所属安全组列表。
 
@@ -641,7 +641,7 @@ class ServerDetail:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ServerDetail.
+        r"""Sets the security_groups of this ServerDetail.
 
         弹性云服务器所属安全组列表。
 
@@ -652,7 +652,7 @@ class ServerDetail:
 
     @property
     def os_ext_a_zavailability_zone(self):
-        """Gets the os_ext_a_zavailability_zone of this ServerDetail.
+        r"""Gets the os_ext_a_zavailability_zone of this ServerDetail.
 
         扩展属性，弹性云服务器所在可用区名称。
 
@@ -663,7 +663,7 @@ class ServerDetail:
 
     @os_ext_a_zavailability_zone.setter
     def os_ext_a_zavailability_zone(self, os_ext_a_zavailability_zone):
-        """Sets the os_ext_a_zavailability_zone of this ServerDetail.
+        r"""Sets the os_ext_a_zavailability_zone of this ServerDetail.
 
         扩展属性，弹性云服务器所在可用区名称。
 
@@ -674,7 +674,7 @@ class ServerDetail:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ServerDetail.
+        r"""Gets the user_id of this ServerDetail.
 
         创建弹性云服务器的用户ID，格式为UUID。
 
@@ -685,7 +685,7 @@ class ServerDetail:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ServerDetail.
+        r"""Sets the user_id of this ServerDetail.
 
         创建弹性云服务器的用户ID，格式为UUID。
 
@@ -696,7 +696,7 @@ class ServerDetail:
 
     @property
     def name(self):
-        """Gets the name of this ServerDetail.
+        r"""Gets the name of this ServerDetail.
 
         弹性云服务器名称。
 
@@ -707,7 +707,7 @@ class ServerDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ServerDetail.
+        r"""Sets the name of this ServerDetail.
 
         弹性云服务器名称。
 
@@ -718,7 +718,7 @@ class ServerDetail:
 
     @property
     def created(self):
-        """Gets the created of this ServerDetail.
+        r"""Gets the created of this ServerDetail.
 
         弹性云服务器创建时间。  时间格式例如：2019-05-22T03:19:19Z
 
@@ -729,7 +729,7 @@ class ServerDetail:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ServerDetail.
+        r"""Sets the created of this ServerDetail.
 
         弹性云服务器创建时间。  时间格式例如：2019-05-22T03:19:19Z
 
@@ -740,7 +740,7 @@ class ServerDetail:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ServerDetail.
+        r"""Gets the tenant_id of this ServerDetail.
 
         弹性云服务器所属租户ID，即项目id，和project_id表示相同的概念，格式为UUID。
 
@@ -751,7 +751,7 @@ class ServerDetail:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ServerDetail.
+        r"""Sets the tenant_id of this ServerDetail.
 
         弹性云服务器所属租户ID，即项目id，和project_id表示相同的概念，格式为UUID。
 
@@ -762,7 +762,7 @@ class ServerDetail:
 
     @property
     def os_dc_fdisk_config(self):
-        """Gets the os_dc_fdisk_config of this ServerDetail.
+        r"""Gets the os_dc_fdisk_config of this ServerDetail.
 
         扩展属性， diskConfig的类型。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
 
@@ -773,7 +773,7 @@ class ServerDetail:
 
     @os_dc_fdisk_config.setter
     def os_dc_fdisk_config(self, os_dc_fdisk_config):
-        """Sets the os_dc_fdisk_config of this ServerDetail.
+        r"""Sets the os_dc_fdisk_config of this ServerDetail.
 
         扩展属性， diskConfig的类型。  - MANUAL，镜像空间不会扩展。 - AUTO，系统盘镜像空间会自动扩展为与flavor大小一致。
 
@@ -784,7 +784,7 @@ class ServerDetail:
 
     @property
     def access_i_pv4(self):
-        """Gets the access_i_pv4 of this ServerDetail.
+        r"""Gets the access_i_pv4 of this ServerDetail.
 
         预留属性。
 
@@ -795,7 +795,7 @@ class ServerDetail:
 
     @access_i_pv4.setter
     def access_i_pv4(self, access_i_pv4):
-        """Sets the access_i_pv4 of this ServerDetail.
+        r"""Sets the access_i_pv4 of this ServerDetail.
 
         预留属性。
 
@@ -806,7 +806,7 @@ class ServerDetail:
 
     @property
     def access_i_pv6(self):
-        """Gets the access_i_pv6 of this ServerDetail.
+        r"""Gets the access_i_pv6 of this ServerDetail.
 
         预留属性。
 
@@ -817,7 +817,7 @@ class ServerDetail:
 
     @access_i_pv6.setter
     def access_i_pv6(self, access_i_pv6):
-        """Sets the access_i_pv6 of this ServerDetail.
+        r"""Sets the access_i_pv6 of this ServerDetail.
 
         预留属性。
 
@@ -828,7 +828,7 @@ class ServerDetail:
 
     @property
     def fault(self):
-        """Gets the fault of this ServerDetail.
+        r"""Gets the fault of this ServerDetail.
 
         弹性云服务器故障信息。  可选参数，在弹性云服务器状态为ERROR且存在异常的情况下返回。
 
@@ -839,7 +839,7 @@ class ServerDetail:
 
     @fault.setter
     def fault(self, fault):
-        """Sets the fault of this ServerDetail.
+        r"""Sets the fault of this ServerDetail.
 
         弹性云服务器故障信息。  可选参数，在弹性云服务器状态为ERROR且存在异常的情况下返回。
 
@@ -850,7 +850,7 @@ class ServerDetail:
 
     @property
     def progress(self):
-        """Gets the progress of this ServerDetail.
+        r"""Gets the progress of this ServerDetail.
 
         弹性云服务器进度。
 
@@ -861,7 +861,7 @@ class ServerDetail:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ServerDetail.
+        r"""Sets the progress of this ServerDetail.
 
         弹性云服务器进度。
 
@@ -872,7 +872,7 @@ class ServerDetail:
 
     @property
     def os_ext_st_spower_state(self):
-        """Gets the os_ext_st_spower_state of this ServerDetail.
+        r"""Gets the os_ext_st_spower_state of this ServerDetail.
 
         扩展属性，弹性云服务器电源状态。
 
@@ -883,7 +883,7 @@ class ServerDetail:
 
     @os_ext_st_spower_state.setter
     def os_ext_st_spower_state(self, os_ext_st_spower_state):
-        """Sets the os_ext_st_spower_state of this ServerDetail.
+        r"""Sets the os_ext_st_spower_state of this ServerDetail.
 
         扩展属性，弹性云服务器电源状态。
 
@@ -894,7 +894,7 @@ class ServerDetail:
 
     @property
     def config_drive(self):
-        """Gets the config_drive of this ServerDetail.
+        r"""Gets the config_drive of this ServerDetail.
 
         config drive信息。
 
@@ -905,7 +905,7 @@ class ServerDetail:
 
     @config_drive.setter
     def config_drive(self, config_drive):
-        """Sets the config_drive of this ServerDetail.
+        r"""Sets the config_drive of this ServerDetail.
 
         config drive信息。
 
@@ -916,7 +916,7 @@ class ServerDetail:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ServerDetail.
+        r"""Gets the metadata of this ServerDetail.
 
         弹性云服务器元数据。  > 说明： >  > 元数据包含系统默认添加字段和用户设置的字段。  系统默认添加字段  1. charging_mode 云服务器的计费类型。  - “0”：按需计费（即postPaid-后付费方式）。 - “1”：按包年包月计费（即prePaid-预付费方式）。\"2\"：竞价实例计费  2. metering.order_id 按“包年/包月”计费的云服务器对应的订单ID。  3. metering.product_id 按“包年/包月”计费的云服务器对应的产品ID。  4. vpc_id 云服务器所属的虚拟私有云ID。  5. EcmResStatus 云服务器的冻结状态。  - normal：云服务器正常状态（未被冻结）。 - freeze：云服务器被冻结。  > 当云服务器被冻结或者解冻后，系统默认添加该字段，且该字段必选。  6. metering.image_id 云服务器操作系统对应的镜像ID  7.  metering.imagetype 镜像类型，目前支持：  - 公共镜像（gold） - 私有镜像（private） - 共享镜像（shared）  8. metering.resourcespeccode 云服务器对应的资源规格。  9. image_name 云服务器操作系统对应的镜像名称。  10. os_bit 操作系统位数，一般取值为“32”或者“64”。  11. lockCheckEndpoint 回调URL，用于检查弹性云服务器的加锁是否有效。  - 如果有效，则云服务器保持锁定状态。 - 如果无效，解除锁定状态，删除失效的锁。  12. lockSource 弹性云服务器来自哪个服务。订单加锁（ORDER）  13. lockSourceId 弹性云服务器的加锁来自哪个ID。lockSource为“ORDER”时，lockSourceId为订单ID。  14. lockScene 弹性云服务器的加锁类型。  - 按需转包周期（TO_PERIOD_LOCK）  15. virtual_env_type  - IOS镜像创建虚拟机，\"virtual_env_type\": \"IsoImage\" 属性； - 非IOS镜像创建虚拟机，在19.5.0版本以后创建的虚拟机将不会添加virtual_env_type 属性，而在此之前的版本创建的虚拟机可能会返回\"virtual_env_type\": \"FusionCompute\"属性 。  > virtual_env_type属性不允许用户增加、删除和修改。  16. metering.resourcetype 云服务器对应的资源类型。  17. os_type 操作系统类型，取值为：Linux、Windows。  18. cascaded.instance_extrainfo 系统内部虚拟机扩展信息。  19. __support_agent_list 云服务器是否支持企业主机安全、主机监控。  - “hss”：企业主机安全 -  “ces”：主机监控  20. agency_name 委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
 
@@ -927,7 +927,7 @@ class ServerDetail:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ServerDetail.
+        r"""Sets the metadata of this ServerDetail.
 
         弹性云服务器元数据。  > 说明： >  > 元数据包含系统默认添加字段和用户设置的字段。  系统默认添加字段  1. charging_mode 云服务器的计费类型。  - “0”：按需计费（即postPaid-后付费方式）。 - “1”：按包年包月计费（即prePaid-预付费方式）。\"2\"：竞价实例计费  2. metering.order_id 按“包年/包月”计费的云服务器对应的订单ID。  3. metering.product_id 按“包年/包月”计费的云服务器对应的产品ID。  4. vpc_id 云服务器所属的虚拟私有云ID。  5. EcmResStatus 云服务器的冻结状态。  - normal：云服务器正常状态（未被冻结）。 - freeze：云服务器被冻结。  > 当云服务器被冻结或者解冻后，系统默认添加该字段，且该字段必选。  6. metering.image_id 云服务器操作系统对应的镜像ID  7.  metering.imagetype 镜像类型，目前支持：  - 公共镜像（gold） - 私有镜像（private） - 共享镜像（shared）  8. metering.resourcespeccode 云服务器对应的资源规格。  9. image_name 云服务器操作系统对应的镜像名称。  10. os_bit 操作系统位数，一般取值为“32”或者“64”。  11. lockCheckEndpoint 回调URL，用于检查弹性云服务器的加锁是否有效。  - 如果有效，则云服务器保持锁定状态。 - 如果无效，解除锁定状态，删除失效的锁。  12. lockSource 弹性云服务器来自哪个服务。订单加锁（ORDER）  13. lockSourceId 弹性云服务器的加锁来自哪个ID。lockSource为“ORDER”时，lockSourceId为订单ID。  14. lockScene 弹性云服务器的加锁类型。  - 按需转包周期（TO_PERIOD_LOCK）  15. virtual_env_type  - IOS镜像创建虚拟机，\"virtual_env_type\": \"IsoImage\" 属性； - 非IOS镜像创建虚拟机，在19.5.0版本以后创建的虚拟机将不会添加virtual_env_type 属性，而在此之前的版本创建的虚拟机可能会返回\"virtual_env_type\": \"FusionCompute\"属性 。  > virtual_env_type属性不允许用户增加、删除和修改。  16. metering.resourcetype 云服务器对应的资源类型。  17. os_type 操作系统类型，取值为：Linux、Windows。  18. cascaded.instance_extrainfo 系统内部虚拟机扩展信息。  19. __support_agent_list 云服务器是否支持企业主机安全、主机监控。  - “hss”：企业主机安全 -  “ces”：主机监控  20. agency_name 委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
 
@@ -938,7 +938,7 @@ class ServerDetail:
 
     @property
     def os_srv_us_glaunched_at(self):
-        """Gets the os_srv_us_glaunched_at of this ServerDetail.
+        r"""Gets the os_srv_us_glaunched_at of this ServerDetail.
 
         弹性云服务器启动时间。时间格式例如：2019-05-22T03:23:59.000000
 
@@ -949,7 +949,7 @@ class ServerDetail:
 
     @os_srv_us_glaunched_at.setter
     def os_srv_us_glaunched_at(self, os_srv_us_glaunched_at):
-        """Sets the os_srv_us_glaunched_at of this ServerDetail.
+        r"""Sets the os_srv_us_glaunched_at of this ServerDetail.
 
         弹性云服务器启动时间。时间格式例如：2019-05-22T03:23:59.000000
 
@@ -960,7 +960,7 @@ class ServerDetail:
 
     @property
     def os_srv_us_gterminated_at(self):
-        """Gets the os_srv_us_gterminated_at of this ServerDetail.
+        r"""Gets the os_srv_us_gterminated_at of this ServerDetail.
 
         弹性云服务器删除时间。  时间格式例如：2019-05-22T03:23:59.000000
 
@@ -971,7 +971,7 @@ class ServerDetail:
 
     @os_srv_us_gterminated_at.setter
     def os_srv_us_gterminated_at(self, os_srv_us_gterminated_at):
-        """Sets the os_srv_us_gterminated_at of this ServerDetail.
+        r"""Sets the os_srv_us_gterminated_at of this ServerDetail.
 
         弹性云服务器删除时间。  时间格式例如：2019-05-22T03:23:59.000000
 
@@ -982,7 +982,7 @@ class ServerDetail:
 
     @property
     def os_extended_volumesvolumes_attached(self):
-        """Gets the os_extended_volumesvolumes_attached of this ServerDetail.
+        r"""Gets the os_extended_volumesvolumes_attached of this ServerDetail.
 
         挂载到弹性云服务器上的磁盘。
 
@@ -993,7 +993,7 @@ class ServerDetail:
 
     @os_extended_volumesvolumes_attached.setter
     def os_extended_volumesvolumes_attached(self, os_extended_volumesvolumes_attached):
-        """Sets the os_extended_volumesvolumes_attached of this ServerDetail.
+        r"""Sets the os_extended_volumesvolumes_attached of this ServerDetail.
 
         挂载到弹性云服务器上的磁盘。
 
@@ -1004,7 +1004,7 @@ class ServerDetail:
 
     @property
     def description(self):
-        """Gets the description of this ServerDetail.
+        r"""Gets the description of this ServerDetail.
 
         弹性云服务器的描述信息。
 
@@ -1015,7 +1015,7 @@ class ServerDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServerDetail.
+        r"""Sets the description of this ServerDetail.
 
         弹性云服务器的描述信息。
 
@@ -1026,7 +1026,7 @@ class ServerDetail:
 
     @property
     def host_status(self):
-        """Gets the host_status of this ServerDetail.
+        r"""Gets the host_status of this ServerDetail.
 
         nova-compute状态。  - UP：服务正常 - UNKNOWN：状态未知 - DOWN：服务异常 - MAINTENANCE：维护状态 - 空字符串：弹性云服务器无主机信息
 
@@ -1037,7 +1037,7 @@ class ServerDetail:
 
     @host_status.setter
     def host_status(self, host_status):
-        """Sets the host_status of this ServerDetail.
+        r"""Sets the host_status of this ServerDetail.
 
         nova-compute状态。  - UP：服务正常 - UNKNOWN：状态未知 - DOWN：服务异常 - MAINTENANCE：维护状态 - 空字符串：弹性云服务器无主机信息
 
@@ -1048,7 +1048,7 @@ class ServerDetail:
 
     @property
     def os_ext_srv_att_rhostname(self):
-        """Gets the os_ext_srv_att_rhostname of this ServerDetail.
+        r"""Gets the os_ext_srv_att_rhostname of this ServerDetail.
 
         弹性云服务器的主机名。
 
@@ -1059,7 +1059,7 @@ class ServerDetail:
 
     @os_ext_srv_att_rhostname.setter
     def os_ext_srv_att_rhostname(self, os_ext_srv_att_rhostname):
-        """Sets the os_ext_srv_att_rhostname of this ServerDetail.
+        r"""Sets the os_ext_srv_att_rhostname of this ServerDetail.
 
         弹性云服务器的主机名。
 
@@ -1070,7 +1070,7 @@ class ServerDetail:
 
     @property
     def os_ext_srv_att_rreservation_id(self):
-        """Gets the os_ext_srv_att_rreservation_id of this ServerDetail.
+        r"""Gets the os_ext_srv_att_rreservation_id of this ServerDetail.
 
         批量创建场景，弹性云服务器的预留ID。
 
@@ -1081,7 +1081,7 @@ class ServerDetail:
 
     @os_ext_srv_att_rreservation_id.setter
     def os_ext_srv_att_rreservation_id(self, os_ext_srv_att_rreservation_id):
-        """Sets the os_ext_srv_att_rreservation_id of this ServerDetail.
+        r"""Sets the os_ext_srv_att_rreservation_id of this ServerDetail.
 
         批量创建场景，弹性云服务器的预留ID。
 
@@ -1092,7 +1092,7 @@ class ServerDetail:
 
     @property
     def os_ext_srv_att_rlaunch_index(self):
-        """Gets the os_ext_srv_att_rlaunch_index of this ServerDetail.
+        r"""Gets the os_ext_srv_att_rlaunch_index of this ServerDetail.
 
         批量创建场景，弹性云服务器的启动顺序。
 
@@ -1103,7 +1103,7 @@ class ServerDetail:
 
     @os_ext_srv_att_rlaunch_index.setter
     def os_ext_srv_att_rlaunch_index(self, os_ext_srv_att_rlaunch_index):
-        """Sets the os_ext_srv_att_rlaunch_index of this ServerDetail.
+        r"""Sets the os_ext_srv_att_rlaunch_index of this ServerDetail.
 
         批量创建场景，弹性云服务器的启动顺序。
 
@@ -1114,7 +1114,7 @@ class ServerDetail:
 
     @property
     def os_ext_srv_att_rkernel_id(self):
-        """Gets the os_ext_srv_att_rkernel_id of this ServerDetail.
+        r"""Gets the os_ext_srv_att_rkernel_id of this ServerDetail.
 
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空。
 
@@ -1125,7 +1125,7 @@ class ServerDetail:
 
     @os_ext_srv_att_rkernel_id.setter
     def os_ext_srv_att_rkernel_id(self, os_ext_srv_att_rkernel_id):
-        """Sets the os_ext_srv_att_rkernel_id of this ServerDetail.
+        r"""Sets the os_ext_srv_att_rkernel_id of this ServerDetail.
 
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空。
 
@@ -1136,7 +1136,7 @@ class ServerDetail:
 
     @property
     def os_ext_srv_att_rramdisk_id(self):
-        """Gets the os_ext_srv_att_rramdisk_id of this ServerDetail.
+        r"""Gets the os_ext_srv_att_rramdisk_id of this ServerDetail.
 
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
 
@@ -1147,7 +1147,7 @@ class ServerDetail:
 
     @os_ext_srv_att_rramdisk_id.setter
     def os_ext_srv_att_rramdisk_id(self, os_ext_srv_att_rramdisk_id):
-        """Sets the os_ext_srv_att_rramdisk_id of this ServerDetail.
+        r"""Sets the os_ext_srv_att_rramdisk_id of this ServerDetail.
 
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。
 
@@ -1158,7 +1158,7 @@ class ServerDetail:
 
     @property
     def os_ext_srv_att_rroot_device_name(self):
-        """Gets the os_ext_srv_att_rroot_device_name of this ServerDetail.
+        r"""Gets the os_ext_srv_att_rroot_device_name of this ServerDetail.
 
         弹性云服务器系统盘的设备名称。
 
@@ -1169,7 +1169,7 @@ class ServerDetail:
 
     @os_ext_srv_att_rroot_device_name.setter
     def os_ext_srv_att_rroot_device_name(self, os_ext_srv_att_rroot_device_name):
-        """Sets the os_ext_srv_att_rroot_device_name of this ServerDetail.
+        r"""Sets the os_ext_srv_att_rroot_device_name of this ServerDetail.
 
         弹性云服务器系统盘的设备名称。
 
@@ -1180,7 +1180,7 @@ class ServerDetail:
 
     @property
     def os_ext_srv_att_ruser_data(self):
-        """Gets the os_ext_srv_att_ruser_data of this ServerDetail.
+        r"""Gets the os_ext_srv_att_ruser_data of this ServerDetail.
 
         创建弹性云服务器时指定的user_data。
 
@@ -1191,7 +1191,7 @@ class ServerDetail:
 
     @os_ext_srv_att_ruser_data.setter
     def os_ext_srv_att_ruser_data(self, os_ext_srv_att_ruser_data):
-        """Sets the os_ext_srv_att_ruser_data of this ServerDetail.
+        r"""Sets the os_ext_srv_att_ruser_data of this ServerDetail.
 
         创建弹性云服务器时指定的user_data。
 
@@ -1202,7 +1202,7 @@ class ServerDetail:
 
     @property
     def locked(self):
-        """Gets the locked of this ServerDetail.
+        r"""Gets the locked of this ServerDetail.
 
         弹性云服务器是否为锁定状态。  - true：锁定 - false：未锁定
 
@@ -1213,7 +1213,7 @@ class ServerDetail:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this ServerDetail.
+        r"""Sets the locked of this ServerDetail.
 
         弹性云服务器是否为锁定状态。  - true：锁定 - false：未锁定
 
@@ -1224,7 +1224,7 @@ class ServerDetail:
 
     @property
     def tags(self):
-        """Gets the tags of this ServerDetail.
+        r"""Gets the tags of this ServerDetail.
 
         弹性云服务器标签。
 
@@ -1235,7 +1235,7 @@ class ServerDetail:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ServerDetail.
+        r"""Sets the tags of this ServerDetail.
 
         弹性云服务器标签。
 
@@ -1246,7 +1246,7 @@ class ServerDetail:
 
     @property
     def osscheduler_hints(self):
-        """Gets the osscheduler_hints of this ServerDetail.
+        r"""Gets the osscheduler_hints of this ServerDetail.
 
         :return: The osscheduler_hints of this ServerDetail.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerSchedulerHints`
@@ -1255,7 +1255,7 @@ class ServerDetail:
 
     @osscheduler_hints.setter
     def osscheduler_hints(self, osscheduler_hints):
-        """Sets the osscheduler_hints of this ServerDetail.
+        r"""Sets the osscheduler_hints of this ServerDetail.
 
         :param osscheduler_hints: The osscheduler_hints of this ServerDetail.
         :type osscheduler_hints: :class:`huaweicloudsdkecs.v2.ServerSchedulerHints`
@@ -1264,7 +1264,7 @@ class ServerDetail:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ServerDetail.
+        r"""Gets the enterprise_project_id of this ServerDetail.
 
         弹性云服务器所属的企业项目ID。
 
@@ -1275,7 +1275,7 @@ class ServerDetail:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ServerDetail.
+        r"""Sets the enterprise_project_id of this ServerDetail.
 
         弹性云服务器所属的企业项目ID。
 
@@ -1286,7 +1286,7 @@ class ServerDetail:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ServerDetail.
+        r"""Gets the sys_tags of this ServerDetail.
 
         弹性云服务器系统标签。
 
@@ -1297,7 +1297,7 @@ class ServerDetail:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ServerDetail.
+        r"""Sets the sys_tags of this ServerDetail.
 
         弹性云服务器系统标签。
 
@@ -1308,7 +1308,7 @@ class ServerDetail:
 
     @property
     def cpu_options(self):
-        """Gets the cpu_options of this ServerDetail.
+        r"""Gets the cpu_options of this ServerDetail.
 
         :return: The cpu_options of this ServerDetail.
         :rtype: :class:`huaweicloudsdkecs.v2.CpuOptions`
@@ -1317,7 +1317,7 @@ class ServerDetail:
 
     @cpu_options.setter
     def cpu_options(self, cpu_options):
-        """Sets the cpu_options of this ServerDetail.
+        r"""Sets the cpu_options of this ServerDetail.
 
         :param cpu_options: The cpu_options of this ServerDetail.
         :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`
@@ -1326,7 +1326,7 @@ class ServerDetail:
 
     @property
     def hypervisor(self):
-        """Gets the hypervisor of this ServerDetail.
+        r"""Gets the hypervisor of this ServerDetail.
 
         :return: The hypervisor of this ServerDetail.
         :rtype: :class:`huaweicloudsdkecs.v2.Hypervisor`
@@ -1335,7 +1335,7 @@ class ServerDetail:
 
     @hypervisor.setter
     def hypervisor(self, hypervisor):
-        """Sets the hypervisor of this ServerDetail.
+        r"""Sets the hypervisor of this ServerDetail.
 
         :param hypervisor: The hypervisor of this ServerDetail.
         :type hypervisor: :class:`huaweicloudsdkecs.v2.Hypervisor`

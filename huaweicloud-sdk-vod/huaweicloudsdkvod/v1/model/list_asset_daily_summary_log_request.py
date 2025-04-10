@@ -31,7 +31,7 @@ class ListAssetDailySummaryLogRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, offset=None, limit=None):
-        """ListAssetDailySummaryLogRequest
+        r"""ListAssetDailySummaryLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListAssetDailySummaryLogRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListAssetDailySummaryLogRequest.
+        r"""Gets the start_time of this ListAssetDailySummaryLogRequest.
 
         查询开始时间。仅支持查询一年内的数据，且一次查询的日期跨度不能超过90天。  如果查询指定开始日期的数据，格式为：yyyyMMdd000000。
 
@@ -73,7 +73,7 @@ class ListAssetDailySummaryLogRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListAssetDailySummaryLogRequest.
+        r"""Sets the start_time of this ListAssetDailySummaryLogRequest.
 
         查询开始时间。仅支持查询一年内的数据，且一次查询的日期跨度不能超过90天。  如果查询指定开始日期的数据，格式为：yyyyMMdd000000。
 
@@ -84,7 +84,7 @@ class ListAssetDailySummaryLogRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAssetDailySummaryLogRequest.
+        r"""Gets the end_time of this ListAssetDailySummaryLogRequest.
 
         查询结束时间。仅支持查询一年内的数据，且一次查询的日期跨度不能超过90天。  如果查询指定结束日期的数据，格式为：yyyyMMdd000000。
 
@@ -95,7 +95,7 @@ class ListAssetDailySummaryLogRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAssetDailySummaryLogRequest.
+        r"""Sets the end_time of this ListAssetDailySummaryLogRequest.
 
         查询结束时间。仅支持查询一年内的数据，且一次查询的日期跨度不能超过90天。  如果查询指定结束日期的数据，格式为：yyyyMMdd000000。
 
@@ -106,7 +106,7 @@ class ListAssetDailySummaryLogRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAssetDailySummaryLogRequest.
+        r"""Gets the offset of this ListAssetDailySummaryLogRequest.
 
         偏移量，表示查询该偏移量后面的记录。 
 
@@ -117,7 +117,7 @@ class ListAssetDailySummaryLogRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAssetDailySummaryLogRequest.
+        r"""Sets the offset of this ListAssetDailySummaryLogRequest.
 
         偏移量，表示查询该偏移量后面的记录。 
 
@@ -128,7 +128,7 @@ class ListAssetDailySummaryLogRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAssetDailySummaryLogRequest.
+        r"""Gets the limit of this ListAssetDailySummaryLogRequest.
 
         查询返回记录的数量限制。 
 
@@ -139,7 +139,7 @@ class ListAssetDailySummaryLogRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAssetDailySummaryLogRequest.
+        r"""Sets the limit of this ListAssetDailySummaryLogRequest.
 
         查询返回记录的数量限制。 
 

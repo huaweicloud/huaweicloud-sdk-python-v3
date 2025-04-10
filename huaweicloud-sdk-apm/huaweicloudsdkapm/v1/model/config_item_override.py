@@ -31,7 +31,7 @@ class ConfigItemOverride:
     }
 
     def __init__(self, env_tag_id=None, env_tag_name=None, key=None, value=None):
-        """ConfigItemOverride
+        r"""ConfigItemOverride
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ConfigItemOverride:
 
     @property
     def env_tag_id(self):
-        """Gets the env_tag_id of this ConfigItemOverride.
+        r"""Gets the env_tag_id of this ConfigItemOverride.
 
         环境标签ID
 
@@ -75,7 +75,7 @@ class ConfigItemOverride:
 
     @env_tag_id.setter
     def env_tag_id(self, env_tag_id):
-        """Sets the env_tag_id of this ConfigItemOverride.
+        r"""Sets the env_tag_id of this ConfigItemOverride.
 
         环境标签ID
 
@@ -86,7 +86,7 @@ class ConfigItemOverride:
 
     @property
     def env_tag_name(self):
-        """Gets the env_tag_name of this ConfigItemOverride.
+        r"""Gets the env_tag_name of this ConfigItemOverride.
 
         环境标签名
 
@@ -97,7 +97,7 @@ class ConfigItemOverride:
 
     @env_tag_name.setter
     def env_tag_name(self, env_tag_name):
-        """Sets the env_tag_name of this ConfigItemOverride.
+        r"""Sets the env_tag_name of this ConfigItemOverride.
 
         环境标签名
 
@@ -108,7 +108,7 @@ class ConfigItemOverride:
 
     @property
     def key(self):
-        """Gets the key of this ConfigItemOverride.
+        r"""Gets the key of this ConfigItemOverride.
 
         键
 
@@ -119,7 +119,7 @@ class ConfigItemOverride:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ConfigItemOverride.
+        r"""Sets the key of this ConfigItemOverride.
 
         键
 
@@ -130,7 +130,7 @@ class ConfigItemOverride:
 
     @property
     def value(self):
-        """Gets the value of this ConfigItemOverride.
+        r"""Gets the value of this ConfigItemOverride.
 
         值
 
@@ -141,7 +141,7 @@ class ConfigItemOverride:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ConfigItemOverride.
+        r"""Sets the value of this ConfigItemOverride.
 
         值
 

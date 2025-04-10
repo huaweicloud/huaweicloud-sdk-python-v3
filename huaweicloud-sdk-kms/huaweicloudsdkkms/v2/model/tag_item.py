@@ -27,7 +27,7 @@ class TagItem:
     }
 
     def __init__(self, key=None, value=None):
-        """TagItem
+        r"""TagItem
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TagItem:
 
     @property
     def key(self):
-        """Gets the key of this TagItem.
+        r"""Gets the key of this TagItem.
 
         键。 最大长度36个unicode字符。 key不能为空。不能包含非打印字符“ASCII(0-31)”、“*”、“<”、“>”、“\\”、“=”。
 
@@ -60,7 +60,7 @@ class TagItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagItem.
+        r"""Sets the key of this TagItem.
 
         键。 最大长度36个unicode字符。 key不能为空。不能包含非打印字符“ASCII(0-31)”、“*”、“<”、“>”、“\\”、“=”。
 
@@ -71,7 +71,7 @@ class TagItem:
 
     @property
     def value(self):
-        """Gets the value of this TagItem.
+        r"""Gets the value of this TagItem.
 
         值。 每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符“ASCII(0-31)”、“*”、“<”、“>”、“\\”、“=”。
 
@@ -82,7 +82,7 @@ class TagItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagItem.
+        r"""Sets the value of this TagItem.
 
         值。 每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符“ASCII(0-31)”、“*”、“<”、“>”、“\\”、“=”。
 

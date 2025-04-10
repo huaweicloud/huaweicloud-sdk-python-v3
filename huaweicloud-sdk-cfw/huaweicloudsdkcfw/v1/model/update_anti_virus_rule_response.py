@@ -26,7 +26,7 @@ class UpdateAntiVirusRuleResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UpdateAntiVirusRuleResponse
+        r"""UpdateAntiVirusRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAntiVirusRuleResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateAntiVirusRuleResponse.
+        r"""Gets the data of this UpdateAntiVirusRuleResponse.
 
         :return: The data of this UpdateAntiVirusRuleResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.ResponseData`
@@ -53,7 +53,7 @@ class UpdateAntiVirusRuleResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateAntiVirusRuleResponse.
+        r"""Sets the data of this UpdateAntiVirusRuleResponse.
 
         :param data: The data of this UpdateAntiVirusRuleResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.ResponseData`

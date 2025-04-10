@@ -57,7 +57,7 @@ class Port:
     }
 
     def __init__(self, id=None, name=None, status=None, admin_state_up=None, fixed_ips=None, mac_address=None, network_id=None, device_id=None, device_owner=None, security_groups=None, extra_dhcp_opts=None, allowed_address_pairs=None, site_id=None, dns_assignment=None, dns_name=None, ipv6_bandwidth_id=None, bindingprofile=None):
-        """Port
+        r"""Port
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class Port:
 
     @property
     def id(self):
-        """Gets the id of this Port.
+        r"""Gets the id of this Port.
 
         端口唯一标识
 
@@ -166,7 +166,7 @@ class Port:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Port.
+        r"""Sets the id of this Port.
 
         端口唯一标识
 
@@ -177,7 +177,7 @@ class Port:
 
     @property
     def name(self):
-        """Gets the name of this Port.
+        r"""Gets the name of this Port.
 
         端口名称  取值：默认为空，最大长度不超过255
 
@@ -188,7 +188,7 @@ class Port:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Port.
+        r"""Sets the name of this Port.
 
         端口名称  取值：默认为空，最大长度不超过255
 
@@ -199,7 +199,7 @@ class Port:
 
     @property
     def status(self):
-        """Gets the status of this Port.
+        r"""Gets the status of this Port.
 
         端口状态，Hana硬直通虚拟机端口状态总为DOWN  取值范围：ACTIVE、BUILD、DOWN
 
@@ -210,7 +210,7 @@ class Port:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Port.
+        r"""Sets the status of this Port.
 
         端口状态，Hana硬直通虚拟机端口状态总为DOWN  取值范围：ACTIVE、BUILD、DOWN
 
@@ -221,7 +221,7 @@ class Port:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this Port.
+        r"""Gets the admin_state_up of this Port.
 
         管理状态  约束：只支持true，默认为true
 
@@ -232,7 +232,7 @@ class Port:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this Port.
+        r"""Sets the admin_state_up of this Port.
 
         管理状态  约束：只支持true，默认为true
 
@@ -243,7 +243,7 @@ class Port:
 
     @property
     def fixed_ips(self):
-        """Gets the fixed_ips of this Port.
+        r"""Gets the fixed_ips of this Port.
 
         端口IP。  约束：一个端口只支持一个fixed_ip，且不支持更新。
 
@@ -254,7 +254,7 @@ class Port:
 
     @fixed_ips.setter
     def fixed_ips(self, fixed_ips):
-        """Sets the fixed_ips of this Port.
+        r"""Sets the fixed_ips of this Port.
 
         端口IP。  约束：一个端口只支持一个fixed_ip，且不支持更新。
 
@@ -265,7 +265,7 @@ class Port:
 
     @property
     def mac_address(self):
-        """Gets the mac_address of this Port.
+        r"""Gets the mac_address of this Port.
 
         端口MAC地址  约束：由系统分配，不支持指定
 
@@ -276,7 +276,7 @@ class Port:
 
     @mac_address.setter
     def mac_address(self, mac_address):
-        """Sets the mac_address of this Port.
+        r"""Sets the mac_address of this Port.
 
         端口MAC地址  约束：由系统分配，不支持指定
 
@@ -287,7 +287,7 @@ class Port:
 
     @property
     def network_id(self):
-        """Gets the network_id of this Port.
+        r"""Gets the network_id of this Port.
 
         端口所属网络的ID  约束：必须是存在的网络ID
 
@@ -298,7 +298,7 @@ class Port:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this Port.
+        r"""Sets the network_id of this Port.
 
         端口所属网络的ID  约束：必须是存在的网络ID
 
@@ -309,7 +309,7 @@ class Port:
 
     @property
     def device_id(self):
-        """Gets the device_id of this Port.
+        r"""Gets the device_id of this Port.
 
         端口所属设备ID  约束：不支持设置和更新，由系统自动维护
 
@@ -320,7 +320,7 @@ class Port:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this Port.
+        r"""Sets the device_id of this Port.
 
         端口所属设备ID  约束：不支持设置和更新，由系统自动维护
 
@@ -331,7 +331,7 @@ class Port:
 
     @property
     def device_owner(self):
-        """Gets the device_owner of this Port.
+        r"""Gets the device_owner of this Port.
 
         设备所属（DHCP/Router/ lb/Nova）  约束：不支持设置和更新，由系统自动维护 
 
@@ -342,7 +342,7 @@ class Port:
 
     @device_owner.setter
     def device_owner(self, device_owner):
-        """Sets the device_owner of this Port.
+        r"""Sets the device_owner of this Port.
 
         设备所属（DHCP/Router/ lb/Nova）  约束：不支持设置和更新，由系统自动维护 
 
@@ -353,7 +353,7 @@ class Port:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this Port.
+        r"""Gets the security_groups of this Port.
 
         安全组的UUID(扩展属性)
 
@@ -364,7 +364,7 @@ class Port:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this Port.
+        r"""Sets the security_groups of this Port.
 
         安全组的UUID(扩展属性)
 
@@ -375,7 +375,7 @@ class Port:
 
     @property
     def extra_dhcp_opts(self):
-        """Gets the extra_dhcp_opts of this Port.
+        r"""Gets the extra_dhcp_opts of this Port.
 
         DHCP的扩展属性。
 
@@ -386,7 +386,7 @@ class Port:
 
     @extra_dhcp_opts.setter
     def extra_dhcp_opts(self, extra_dhcp_opts):
-        """Sets the extra_dhcp_opts of this Port.
+        r"""Sets the extra_dhcp_opts of this Port.
 
         DHCP的扩展属性。
 
@@ -397,7 +397,7 @@ class Port:
 
     @property
     def allowed_address_pairs(self):
-        """Gets the allowed_address_pairs of this Port.
+        r"""Gets the allowed_address_pairs of this Port.
 
         - 功能说明：IP/Mac对列表，allow_address_pair参见表3。 - 约束：   IP地址不允许为 “0.0.0.0/0”   如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。   如果allowed_address_pairs的IP地址为“1.1.1.1/0”，表示关闭源目地址检查开关。
 
@@ -408,7 +408,7 @@ class Port:
 
     @allowed_address_pairs.setter
     def allowed_address_pairs(self, allowed_address_pairs):
-        """Sets the allowed_address_pairs of this Port.
+        r"""Sets the allowed_address_pairs of this Port.
 
         - 功能说明：IP/Mac对列表，allow_address_pair参见表3。 - 约束：   IP地址不允许为 “0.0.0.0/0”   如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。   如果allowed_address_pairs的IP地址为“1.1.1.1/0”，表示关闭源目地址检查开关。
 
@@ -419,7 +419,7 @@ class Port:
 
     @property
     def site_id(self):
-        """Gets the site_id of this Port.
+        r"""Gets the site_id of this Port.
 
         站点ID
 
@@ -430,7 +430,7 @@ class Port:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this Port.
+        r"""Sets the site_id of this Port.
 
         站点ID
 
@@ -441,7 +441,7 @@ class Port:
 
     @property
     def dns_assignment(self):
-        """Gets the dns_assignment of this Port.
+        r"""Gets the dns_assignment of this Port.
 
         主网卡默认内网域名信息  约束：不支持设置和更新，由系统自动维护
 
@@ -452,7 +452,7 @@ class Port:
 
     @dns_assignment.setter
     def dns_assignment(self, dns_assignment):
-        """Sets the dns_assignment of this Port.
+        r"""Sets the dns_assignment of this Port.
 
         主网卡默认内网域名信息  约束：不支持设置和更新，由系统自动维护
 
@@ -463,7 +463,7 @@ class Port:
 
     @property
     def dns_name(self):
-        """Gets the dns_name of this Port.
+        r"""Gets the dns_name of this Port.
 
         主网卡默认内网DNS名称  约束：不支持设置和更新，由系统自动维护
 
@@ -474,7 +474,7 @@ class Port:
 
     @dns_name.setter
     def dns_name(self, dns_name):
-        """Sets the dns_name of this Port.
+        r"""Sets the dns_name of this Port.
 
         主网卡默认内网DNS名称  约束：不支持设置和更新，由系统自动维护
 
@@ -485,7 +485,7 @@ class Port:
 
     @property
     def ipv6_bandwidth_id(self):
-        """Gets the ipv6_bandwidth_id of this Port.
+        r"""Gets the ipv6_bandwidth_id of this Port.
 
         IPv6带宽ID
 
@@ -496,7 +496,7 @@ class Port:
 
     @ipv6_bandwidth_id.setter
     def ipv6_bandwidth_id(self, ipv6_bandwidth_id):
-        """Sets the ipv6_bandwidth_id of this Port.
+        r"""Sets the ipv6_bandwidth_id of this Port.
 
         IPv6带宽ID
 
@@ -507,7 +507,7 @@ class Port:
 
     @property
     def bindingprofile(self):
-        """Gets the bindingprofile of this Port.
+        r"""Gets the bindingprofile of this Port.
 
         功能说明：提供用户设置自定义信息(扩展属性)    
 
@@ -518,7 +518,7 @@ class Port:
 
     @bindingprofile.setter
     def bindingprofile(self, bindingprofile):
-        """Sets the bindingprofile of this Port.
+        r"""Sets the bindingprofile of this Port.
 
         功能说明：提供用户设置自定义信息(扩展属性)    
 

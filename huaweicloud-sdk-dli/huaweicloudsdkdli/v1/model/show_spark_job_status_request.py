@@ -25,7 +25,7 @@ class ShowSparkJobStatusRequest:
     }
 
     def __init__(self, batch_id=None):
-        """ShowSparkJobStatusRequest
+        r"""ShowSparkJobStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSparkJobStatusRequest:
 
     @property
     def batch_id(self):
-        """Gets the batch_id of this ShowSparkJobStatusRequest.
+        r"""Gets the batch_id of this ShowSparkJobStatusRequest.
 
         批处理作业的ID。
 
@@ -53,7 +53,7 @@ class ShowSparkJobStatusRequest:
 
     @batch_id.setter
     def batch_id(self, batch_id):
-        """Sets the batch_id of this ShowSparkJobStatusRequest.
+        r"""Sets the batch_id of this ShowSparkJobStatusRequest.
 
         批处理作业的ID。
 

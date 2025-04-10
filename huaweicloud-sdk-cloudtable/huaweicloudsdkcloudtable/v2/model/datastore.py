@@ -27,7 +27,7 @@ class Datastore:
     }
 
     def __init__(self, version=None, type=None):
-        """Datastore
+        r"""Datastore
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Datastore:
 
     @property
     def version(self):
-        """Gets the version of this Datastore.
+        r"""Gets the version of this Datastore.
 
         controller版本号，默认1.0.6
 
@@ -59,7 +59,7 @@ class Datastore:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Datastore.
+        r"""Sets the version of this Datastore.
 
         controller版本号，默认1.0.6
 
@@ -70,7 +70,7 @@ class Datastore:
 
     @property
     def type(self):
-        """Gets the type of this Datastore.
+        r"""Gets the type of this Datastore.
 
         集群数据库类型
 
@@ -81,7 +81,7 @@ class Datastore:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Datastore.
+        r"""Sets the type of this Datastore.
 
         集群数据库类型
 

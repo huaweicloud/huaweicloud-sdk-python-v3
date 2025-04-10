@@ -25,7 +25,7 @@ class UpdateNatGatewayDnatRuleRequestBody:
     }
 
     def __init__(self, dnat_rule=None):
-        """UpdateNatGatewayDnatRuleRequestBody
+        r"""UpdateNatGatewayDnatRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateNatGatewayDnatRuleRequestBody:
 
     @property
     def dnat_rule(self):
-        """Gets the dnat_rule of this UpdateNatGatewayDnatRuleRequestBody.
+        r"""Gets the dnat_rule of this UpdateNatGatewayDnatRuleRequestBody.
 
         :return: The dnat_rule of this UpdateNatGatewayDnatRuleRequestBody.
         :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleOption`
@@ -51,7 +51,7 @@ class UpdateNatGatewayDnatRuleRequestBody:
 
     @dnat_rule.setter
     def dnat_rule(self, dnat_rule):
-        """Sets the dnat_rule of this UpdateNatGatewayDnatRuleRequestBody.
+        r"""Sets the dnat_rule of this UpdateNatGatewayDnatRuleRequestBody.
 
         :param dnat_rule: The dnat_rule of this UpdateNatGatewayDnatRuleRequestBody.
         :type dnat_rule: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleOption`

@@ -25,7 +25,7 @@ class AddVpnUserToGroupRequestBody:
     }
 
     def __init__(self, users=None):
-        """AddVpnUserToGroupRequestBody
+        r"""AddVpnUserToGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddVpnUserToGroupRequestBody:
 
     @property
     def users(self):
-        """Gets the users of this AddVpnUserToGroupRequestBody.
+        r"""Gets the users of this AddVpnUserToGroupRequestBody.
 
         用户列表信息
 
@@ -53,7 +53,7 @@ class AddVpnUserToGroupRequestBody:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this AddVpnUserToGroupRequestBody.
+        r"""Sets the users of this AddVpnUserToGroupRequestBody.
 
         用户列表信息
 

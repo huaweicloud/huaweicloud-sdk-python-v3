@@ -29,7 +29,7 @@ class ValidateTokenReqDTO:
     }
 
     def __init__(self, token=None, need_gen_new_token=None, need_account_info=None):
-        """ValidateTokenReqDTO
+        r"""ValidateTokenReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ValidateTokenReqDTO:
 
     @property
     def token(self):
-        """Gets the token of this ValidateTokenReqDTO.
+        r"""Gets the token of this ValidateTokenReqDTO.
 
         Access Token。
 
@@ -66,7 +66,7 @@ class ValidateTokenReqDTO:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this ValidateTokenReqDTO.
+        r"""Sets the token of this ValidateTokenReqDTO.
 
         Access Token。
 
@@ -77,7 +77,7 @@ class ValidateTokenReqDTO:
 
     @property
     def need_gen_new_token(self):
-        """Gets the need_gen_new_token of this ValidateTokenReqDTO.
+        r"""Gets the need_gen_new_token of this ValidateTokenReqDTO.
 
         是否生成新的Token。 * true：生成新的token值 * false：不生成新的token值 
 
@@ -88,7 +88,7 @@ class ValidateTokenReqDTO:
 
     @need_gen_new_token.setter
     def need_gen_new_token(self, need_gen_new_token):
-        """Sets the need_gen_new_token of this ValidateTokenReqDTO.
+        r"""Sets the need_gen_new_token of this ValidateTokenReqDTO.
 
         是否生成新的Token。 * true：生成新的token值 * false：不生成新的token值 
 
@@ -99,7 +99,7 @@ class ValidateTokenReqDTO:
 
     @property
     def need_account_info(self):
-        """Gets the need_account_info of this ValidateTokenReqDTO.
+        r"""Gets the need_account_info of this ValidateTokenReqDTO.
 
         是否需要返回用户帐号信息（帐号、用户名称等信息）。
 
@@ -110,7 +110,7 @@ class ValidateTokenReqDTO:
 
     @need_account_info.setter
     def need_account_info(self, need_account_info):
-        """Sets the need_account_info of this ValidateTokenReqDTO.
+        r"""Sets the need_account_info of this ValidateTokenReqDTO.
 
         是否需要返回用户帐号信息（帐号、用户名称等信息）。
 

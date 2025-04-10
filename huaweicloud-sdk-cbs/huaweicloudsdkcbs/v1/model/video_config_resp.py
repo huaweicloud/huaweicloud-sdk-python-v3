@@ -37,7 +37,7 @@ class VideoConfigResp:
     }
 
     def __init__(self, background_id=None, logo_id=None, show_subtitles=None, resolution_type=None, background_url=None, image_frame_url=None, logo_url=None):
-        """VideoConfigResp
+        r"""VideoConfigResp
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class VideoConfigResp:
 
     @property
     def background_id(self):
-        """Gets the background_id of this VideoConfigResp.
+        r"""Gets the background_id of this VideoConfigResp.
 
         背景id
 
@@ -93,7 +93,7 @@ class VideoConfigResp:
 
     @background_id.setter
     def background_id(self, background_id):
-        """Sets the background_id of this VideoConfigResp.
+        r"""Sets the background_id of this VideoConfigResp.
 
         背景id
 
@@ -104,7 +104,7 @@ class VideoConfigResp:
 
     @property
     def logo_id(self):
-        """Gets the logo_id of this VideoConfigResp.
+        r"""Gets the logo_id of this VideoConfigResp.
 
         图标id
 
@@ -115,7 +115,7 @@ class VideoConfigResp:
 
     @logo_id.setter
     def logo_id(self, logo_id):
-        """Sets the logo_id of this VideoConfigResp.
+        r"""Sets the logo_id of this VideoConfigResp.
 
         图标id
 
@@ -126,7 +126,7 @@ class VideoConfigResp:
 
     @property
     def show_subtitles(self):
-        """Gets the show_subtitles of this VideoConfigResp.
+        r"""Gets the show_subtitles of this VideoConfigResp.
 
         是否显示字幕 默认：false
 
@@ -137,7 +137,7 @@ class VideoConfigResp:
 
     @show_subtitles.setter
     def show_subtitles(self, show_subtitles):
-        """Sets the show_subtitles of this VideoConfigResp.
+        r"""Sets the show_subtitles of this VideoConfigResp.
 
         是否显示字幕 默认：false
 
@@ -148,7 +148,7 @@ class VideoConfigResp:
 
     @property
     def resolution_type(self):
-        """Gets the resolution_type of this VideoConfigResp.
+        r"""Gets the resolution_type of this VideoConfigResp.
 
         画面分辨率： 0: 宽屏landscape（默认） 1: 竖屏portrait
 
@@ -159,7 +159,7 @@ class VideoConfigResp:
 
     @resolution_type.setter
     def resolution_type(self, resolution_type):
-        """Sets the resolution_type of this VideoConfigResp.
+        r"""Sets the resolution_type of this VideoConfigResp.
 
         画面分辨率： 0: 宽屏landscape（默认） 1: 竖屏portrait
 
@@ -170,7 +170,7 @@ class VideoConfigResp:
 
     @property
     def background_url(self):
-        """Gets the background_url of this VideoConfigResp.
+        r"""Gets the background_url of this VideoConfigResp.
 
         背景图片地址，取默认背景的第一张
 
@@ -181,7 +181,7 @@ class VideoConfigResp:
 
     @background_url.setter
     def background_url(self, background_url):
-        """Sets the background_url of this VideoConfigResp.
+        r"""Sets the background_url of this VideoConfigResp.
 
         背景图片地址，取默认背景的第一张
 
@@ -192,7 +192,7 @@ class VideoConfigResp:
 
     @property
     def image_frame_url(self):
-        """Gets the image_frame_url of this VideoConfigResp.
+        r"""Gets the image_frame_url of this VideoConfigResp.
 
         播报框地址 和background绑定，如果使用用户自定义背景，则使用演播厅框
 
@@ -203,7 +203,7 @@ class VideoConfigResp:
 
     @image_frame_url.setter
     def image_frame_url(self, image_frame_url):
-        """Sets the image_frame_url of this VideoConfigResp.
+        r"""Sets the image_frame_url of this VideoConfigResp.
 
         播报框地址 和background绑定，如果使用用户自定义背景，则使用演播厅框
 
@@ -214,7 +214,7 @@ class VideoConfigResp:
 
     @property
     def logo_url(self):
-        """Gets the logo_url of this VideoConfigResp.
+        r"""Gets the logo_url of this VideoConfigResp.
 
         logo地址
 
@@ -225,7 +225,7 @@ class VideoConfigResp:
 
     @logo_url.setter
     def logo_url(self, logo_url):
-        """Sets the logo_url of this VideoConfigResp.
+        r"""Sets the logo_url of this VideoConfigResp.
 
         logo地址
 

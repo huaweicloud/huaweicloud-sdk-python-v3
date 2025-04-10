@@ -26,7 +26,7 @@ class CertificateKindObj:
     }
 
     def __init__(self):
-        """CertificateKindObj
+        r"""CertificateKindObj
 
         The model defined in huaweicloud sdk
 

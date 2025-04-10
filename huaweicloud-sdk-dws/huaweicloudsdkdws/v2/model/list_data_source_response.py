@@ -34,7 +34,7 @@ class ListDataSourceResponse(SdkResponse):
     }
 
     def __init__(self, data_sources=None, project_id=None, cluster_id=None, type=None, count=None):
-        """ListDataSourceResponse
+        r"""ListDataSourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListDataSourceResponse(SdkResponse):
 
     @property
     def data_sources(self):
-        """Gets the data_sources of this ListDataSourceResponse.
+        r"""Gets the data_sources of this ListDataSourceResponse.
 
         数据源列表。
 
@@ -83,7 +83,7 @@ class ListDataSourceResponse(SdkResponse):
 
     @data_sources.setter
     def data_sources(self, data_sources):
-        """Sets the data_sources of this ListDataSourceResponse.
+        r"""Sets the data_sources of this ListDataSourceResponse.
 
         数据源列表。
 
@@ -94,7 +94,7 @@ class ListDataSourceResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListDataSourceResponse.
+        r"""Gets the project_id of this ListDataSourceResponse.
 
         项目ID。
 
@@ -105,7 +105,7 @@ class ListDataSourceResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListDataSourceResponse.
+        r"""Sets the project_id of this ListDataSourceResponse.
 
         项目ID。
 
@@ -116,7 +116,7 @@ class ListDataSourceResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListDataSourceResponse.
+        r"""Gets the cluster_id of this ListDataSourceResponse.
 
         集群ID。
 
@@ -127,7 +127,7 @@ class ListDataSourceResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListDataSourceResponse.
+        r"""Sets the cluster_id of this ListDataSourceResponse.
 
         集群ID。
 
@@ -138,7 +138,7 @@ class ListDataSourceResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ListDataSourceResponse.
+        r"""Gets the type of this ListDataSourceResponse.
 
         数据源类型。
 
@@ -149,7 +149,7 @@ class ListDataSourceResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListDataSourceResponse.
+        r"""Sets the type of this ListDataSourceResponse.
 
         数据源类型。
 
@@ -160,7 +160,7 @@ class ListDataSourceResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDataSourceResponse.
+        r"""Gets the count of this ListDataSourceResponse.
 
         总数。
 
@@ -171,7 +171,7 @@ class ListDataSourceResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDataSourceResponse.
+        r"""Sets the count of this ListDataSourceResponse.
 
         总数。
 

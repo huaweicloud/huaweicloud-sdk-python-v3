@@ -23,7 +23,7 @@ class L1:
     }
 
     def __init__(self):
-        """L1
+        r"""L1
 
         The model defined in huaweicloud sdk
 

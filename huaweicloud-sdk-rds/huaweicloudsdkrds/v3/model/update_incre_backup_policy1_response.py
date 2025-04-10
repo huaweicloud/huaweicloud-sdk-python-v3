@@ -26,7 +26,7 @@ class UpdateIncreBackupPolicy1Response(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateIncreBackupPolicy1Response
+        r"""UpdateIncreBackupPolicy1Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateIncreBackupPolicy1Response(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateIncreBackupPolicy1Response.
+        r"""Gets the job_id of this UpdateIncreBackupPolicy1Response.
 
         job id
 
@@ -55,7 +55,7 @@ class UpdateIncreBackupPolicy1Response(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateIncreBackupPolicy1Response.
+        r"""Sets the job_id of this UpdateIncreBackupPolicy1Response.
 
         job id
 

@@ -37,7 +37,7 @@ class HttpPutBody:
     }
 
     def __init__(self, https_status=None, certificate_name=None, certificate_value=None, private_key=None, certificate_source=None, http2_status=None, tls_version=None):
-        """HttpPutBody
+        r"""HttpPutBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class HttpPutBody:
 
     @property
     def https_status(self):
-        """Gets the https_status of this HttpPutBody.
+        r"""Gets the https_status of this HttpPutBody.
 
         HTTPS证书是否启用，on：开启，off：关闭。
 
@@ -96,7 +96,7 @@ class HttpPutBody:
 
     @https_status.setter
     def https_status(self, https_status):
-        """Sets the https_status of this HttpPutBody.
+        r"""Sets the https_status of this HttpPutBody.
 
         HTTPS证书是否启用，on：开启，off：关闭。
 
@@ -107,7 +107,7 @@ class HttpPutBody:
 
     @property
     def certificate_name(self):
-        """Gets the certificate_name of this HttpPutBody.
+        r"""Gets the certificate_name of this HttpPutBody.
 
         证书名字，长度限制为3-64字符。  > 当证书开启时必传。
 
@@ -118,7 +118,7 @@ class HttpPutBody:
 
     @certificate_name.setter
     def certificate_name(self, certificate_name):
-        """Sets the certificate_name of this HttpPutBody.
+        r"""Sets the certificate_name of this HttpPutBody.
 
         证书名字，长度限制为3-64字符。  > 当证书开启时必传。
 
@@ -129,7 +129,7 @@ class HttpPutBody:
 
     @property
     def certificate_value(self):
-        """Gets the certificate_value of this HttpPutBody.
+        r"""Gets the certificate_value of this HttpPutBody.
 
         HTTPS协议使用的证书内容，当证书开启时必传。  > PEM编码格式。
 
@@ -140,7 +140,7 @@ class HttpPutBody:
 
     @certificate_value.setter
     def certificate_value(self, certificate_value):
-        """Sets the certificate_value of this HttpPutBody.
+        r"""Sets the certificate_value of this HttpPutBody.
 
         HTTPS协议使用的证书内容，当证书开启时必传。  > PEM编码格式。
 
@@ -151,7 +151,7 @@ class HttpPutBody:
 
     @property
     def private_key(self):
-        """Gets the private_key of this HttpPutBody.
+        r"""Gets the private_key of this HttpPutBody.
 
         HTTPS协议使用的私钥，当证书开启时必传。  > PEM编码格式。
 
@@ -162,7 +162,7 @@ class HttpPutBody:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this HttpPutBody.
+        r"""Sets the private_key of this HttpPutBody.
 
         HTTPS协议使用的私钥，当证书开启时必传。  > PEM编码格式。
 
@@ -173,7 +173,7 @@ class HttpPutBody:
 
     @property
     def certificate_source(self):
-        """Gets the certificate_source of this HttpPutBody.
+        r"""Gets the certificate_source of this HttpPutBody.
 
         证书来源,0：自有证书。  > 证书开启时必传
 
@@ -184,7 +184,7 @@ class HttpPutBody:
 
     @certificate_source.setter
     def certificate_source(self, certificate_source):
-        """Sets the certificate_source of this HttpPutBody.
+        r"""Sets the certificate_source of this HttpPutBody.
 
         证书来源,0：自有证书。  > 证书开启时必传
 
@@ -195,7 +195,7 @@ class HttpPutBody:
 
     @property
     def http2_status(self):
-        """Gets the http2_status of this HttpPutBody.
+        r"""Gets the http2_status of this HttpPutBody.
 
         是否使用HTTP2.0，on：是，off：否。  > 默认关闭，https_status=off时，该值不生效。
 
@@ -206,7 +206,7 @@ class HttpPutBody:
 
     @http2_status.setter
     def http2_status(self, http2_status):
-        """Sets the http2_status of this HttpPutBody.
+        r"""Sets the http2_status of this HttpPutBody.
 
         是否使用HTTP2.0，on：是，off：否。  > 默认关闭，https_status=off时，该值不生效。
 
@@ -217,7 +217,7 @@ class HttpPutBody:
 
     @property
     def tls_version(self):
-        """Gets the tls_version of this HttpPutBody.
+        r"""Gets the tls_version of this HttpPutBody.
 
         传输层安全性协议， 目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议，CDN默认开启TLS1.1/1.2/1.3，不可全部关闭。  > 1.需开启连续或单个版本号，例：不可仅开启TLS1.0/1.2而关闭TLS1.1。  > 2.多版本开启时，使用逗号拼接传输，例：TLSv1.1,TLSv1.2。
 
@@ -228,7 +228,7 @@ class HttpPutBody:
 
     @tls_version.setter
     def tls_version(self, tls_version):
-        """Sets the tls_version of this HttpPutBody.
+        r"""Sets the tls_version of this HttpPutBody.
 
         传输层安全性协议， 目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议，CDN默认开启TLS1.1/1.2/1.3，不可全部关闭。  > 1.需开启连续或单个版本号，例：不可仅开启TLS1.0/1.2而关闭TLS1.1。  > 2.多版本开启时，使用逗号拼接传输，例：TLSv1.1,TLSv1.2。
 

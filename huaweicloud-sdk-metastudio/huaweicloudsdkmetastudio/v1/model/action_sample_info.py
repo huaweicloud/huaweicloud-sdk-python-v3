@@ -37,7 +37,7 @@ class ActionSampleInfo:
     }
 
     def __init__(self, action_name_zh=None, action_name_en=None, action_tag=None, catalog=None, recommended_value=None, is_selected=None, sample_download_url=None):
-        """ActionSampleInfo
+        r"""ActionSampleInfo
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ActionSampleInfo:
 
     @property
     def action_name_zh(self):
-        """Gets the action_name_zh of this ActionSampleInfo.
+        r"""Gets the action_name_zh of this ActionSampleInfo.
 
         原子动作中文名称。
 
@@ -95,7 +95,7 @@ class ActionSampleInfo:
 
     @action_name_zh.setter
     def action_name_zh(self, action_name_zh):
-        """Sets the action_name_zh of this ActionSampleInfo.
+        r"""Sets the action_name_zh of this ActionSampleInfo.
 
         原子动作中文名称。
 
@@ -106,7 +106,7 @@ class ActionSampleInfo:
 
     @property
     def action_name_en(self):
-        """Gets the action_name_en of this ActionSampleInfo.
+        r"""Gets the action_name_en of this ActionSampleInfo.
 
         原子动作英文名称。
 
@@ -117,7 +117,7 @@ class ActionSampleInfo:
 
     @action_name_en.setter
     def action_name_en(self, action_name_en):
-        """Sets the action_name_en of this ActionSampleInfo.
+        r"""Sets the action_name_en of this ActionSampleInfo.
 
         原子动作英文名称。
 
@@ -128,7 +128,7 @@ class ActionSampleInfo:
 
     @property
     def action_tag(self):
-        """Gets the action_tag of this ActionSampleInfo.
+        r"""Gets the action_tag of this ActionSampleInfo.
 
         动作Tag。
 
@@ -139,7 +139,7 @@ class ActionSampleInfo:
 
     @action_tag.setter
     def action_tag(self, action_tag):
-        """Sets the action_tag of this ActionSampleInfo.
+        r"""Sets the action_tag of this ActionSampleInfo.
 
         动作Tag。
 
@@ -150,7 +150,7 @@ class ActionSampleInfo:
 
     @property
     def catalog(self):
-        """Gets the catalog of this ActionSampleInfo.
+        r"""Gets the catalog of this ActionSampleInfo.
 
         动作分类名称。
 
@@ -161,7 +161,7 @@ class ActionSampleInfo:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this ActionSampleInfo.
+        r"""Sets the catalog of this ActionSampleInfo.
 
         动作分类名称。
 
@@ -172,7 +172,7 @@ class ActionSampleInfo:
 
     @property
     def recommended_value(self):
-        """Gets the recommended_value of this ActionSampleInfo.
+        r"""Gets the recommended_value of this ActionSampleInfo.
 
         推荐等级。
 
@@ -183,7 +183,7 @@ class ActionSampleInfo:
 
     @recommended_value.setter
     def recommended_value(self, recommended_value):
-        """Sets the recommended_value of this ActionSampleInfo.
+        r"""Sets the recommended_value of this ActionSampleInfo.
 
         推荐等级。
 
@@ -194,7 +194,7 @@ class ActionSampleInfo:
 
     @property
     def is_selected(self):
-        """Gets the is_selected of this ActionSampleInfo.
+        r"""Gets the is_selected of this ActionSampleInfo.
 
         是否选择此动作。
 
@@ -205,7 +205,7 @@ class ActionSampleInfo:
 
     @is_selected.setter
     def is_selected(self, is_selected):
-        """Sets the is_selected of this ActionSampleInfo.
+        r"""Sets the is_selected of this ActionSampleInfo.
 
         是否选择此动作。
 
@@ -216,7 +216,7 @@ class ActionSampleInfo:
 
     @property
     def sample_download_url(self):
-        """Gets the sample_download_url of this ActionSampleInfo.
+        r"""Gets the sample_download_url of this ActionSampleInfo.
 
         原子动作样例文件下载地址。24小时内有效。
 
@@ -227,7 +227,7 @@ class ActionSampleInfo:
 
     @sample_download_url.setter
     def sample_download_url(self, sample_download_url):
-        """Sets the sample_download_url of this ActionSampleInfo.
+        r"""Sets the sample_download_url of this ActionSampleInfo.
 
         原子动作样例文件下载地址。24小时内有效。
 

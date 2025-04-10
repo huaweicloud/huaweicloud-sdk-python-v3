@@ -32,7 +32,7 @@ class ListDesktopsStatusResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, encoded_authorization_message=None, statics=None):
-        """ListDesktopsStatusResponse
+        r"""ListDesktopsStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListDesktopsStatusResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListDesktopsStatusResponse.
+        r"""Gets the error_code of this ListDesktopsStatusResponse.
 
         错误码。
 
@@ -76,7 +76,7 @@ class ListDesktopsStatusResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListDesktopsStatusResponse.
+        r"""Sets the error_code of this ListDesktopsStatusResponse.
 
         错误码。
 
@@ -87,7 +87,7 @@ class ListDesktopsStatusResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListDesktopsStatusResponse.
+        r"""Gets the error_msg of this ListDesktopsStatusResponse.
 
         错误描述。
 
@@ -98,7 +98,7 @@ class ListDesktopsStatusResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListDesktopsStatusResponse.
+        r"""Sets the error_msg of this ListDesktopsStatusResponse.
 
         错误描述。
 
@@ -109,7 +109,7 @@ class ListDesktopsStatusResponse(SdkResponse):
 
     @property
     def encoded_authorization_message(self):
-        """Gets the encoded_authorization_message of this ListDesktopsStatusResponse.
+        r"""Gets the encoded_authorization_message of this ListDesktopsStatusResponse.
 
         加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
 
@@ -120,7 +120,7 @@ class ListDesktopsStatusResponse(SdkResponse):
 
     @encoded_authorization_message.setter
     def encoded_authorization_message(self, encoded_authorization_message):
-        """Sets the encoded_authorization_message of this ListDesktopsStatusResponse.
+        r"""Sets the encoded_authorization_message of this ListDesktopsStatusResponse.
 
         加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
 
@@ -131,7 +131,7 @@ class ListDesktopsStatusResponse(SdkResponse):
 
     @property
     def statics(self):
-        """Gets the statics of this ListDesktopsStatusResponse.
+        r"""Gets the statics of this ListDesktopsStatusResponse.
 
         统计信息。
 
@@ -142,7 +142,7 @@ class ListDesktopsStatusResponse(SdkResponse):
 
     @statics.setter
     def statics(self, statics):
-        """Sets the statics of this ListDesktopsStatusResponse.
+        r"""Sets the statics of this ListDesktopsStatusResponse.
 
         统计信息。
 

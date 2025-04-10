@@ -55,7 +55,7 @@ class ListInstanceCompliantRequest:
     }
 
     def __init__(self, enterprise_project_id=None, name=None, instance_id=None, ip=None, eip=None, operating_system=None, region=None, group=None, compliant_status=None, order_id=None, offset=None, limit=None, sort_dir=None, sort_key=None, report_scene=None, cce_info_id=None):
-        """ListInstanceCompliantRequest
+        r"""ListInstanceCompliantRequest
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListInstanceCompliantRequest.
+        r"""Gets the enterprise_project_id of this ListInstanceCompliantRequest.
 
         企业项目id
 
@@ -159,7 +159,7 @@ class ListInstanceCompliantRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListInstanceCompliantRequest.
+        r"""Sets the enterprise_project_id of this ListInstanceCompliantRequest.
 
         企业项目id
 
@@ -170,7 +170,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListInstanceCompliantRequest.
+        r"""Gets the name of this ListInstanceCompliantRequest.
 
         名称
 
@@ -181,7 +181,7 @@ class ListInstanceCompliantRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListInstanceCompliantRequest.
+        r"""Sets the name of this ListInstanceCompliantRequest.
 
         名称
 
@@ -192,7 +192,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceCompliantRequest.
+        r"""Gets the instance_id of this ListInstanceCompliantRequest.
 
         ECS实例id
 
@@ -203,7 +203,7 @@ class ListInstanceCompliantRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceCompliantRequest.
+        r"""Sets the instance_id of this ListInstanceCompliantRequest.
 
         ECS实例id
 
@@ -214,7 +214,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListInstanceCompliantRequest.
+        r"""Gets the ip of this ListInstanceCompliantRequest.
 
         内网ip
 
@@ -225,7 +225,7 @@ class ListInstanceCompliantRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListInstanceCompliantRequest.
+        r"""Sets the ip of this ListInstanceCompliantRequest.
 
         内网ip
 
@@ -236,7 +236,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def eip(self):
-        """Gets the eip of this ListInstanceCompliantRequest.
+        r"""Gets the eip of this ListInstanceCompliantRequest.
 
         弹性公网ip
 
@@ -247,7 +247,7 @@ class ListInstanceCompliantRequest:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this ListInstanceCompliantRequest.
+        r"""Sets the eip of this ListInstanceCompliantRequest.
 
         弹性公网ip
 
@@ -258,7 +258,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def operating_system(self):
-        """Gets the operating_system of this ListInstanceCompliantRequest.
+        r"""Gets the operating_system of this ListInstanceCompliantRequest.
 
         操作系统 - HuaweiCloudEulerOS - CentOS - EulerOS
 
@@ -269,7 +269,7 @@ class ListInstanceCompliantRequest:
 
     @operating_system.setter
     def operating_system(self, operating_system):
-        """Sets the operating_system of this ListInstanceCompliantRequest.
+        r"""Sets the operating_system of this ListInstanceCompliantRequest.
 
         操作系统 - HuaweiCloudEulerOS - CentOS - EulerOS
 
@@ -280,7 +280,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListInstanceCompliantRequest.
+        r"""Gets the region of this ListInstanceCompliantRequest.
 
         区域
 
@@ -291,7 +291,7 @@ class ListInstanceCompliantRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListInstanceCompliantRequest.
+        r"""Sets the region of this ListInstanceCompliantRequest.
 
         区域
 
@@ -302,7 +302,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def group(self):
-        """Gets the group of this ListInstanceCompliantRequest.
+        r"""Gets the group of this ListInstanceCompliantRequest.
 
         分组
 
@@ -313,7 +313,7 @@ class ListInstanceCompliantRequest:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ListInstanceCompliantRequest.
+        r"""Sets the group of this ListInstanceCompliantRequest.
 
         分组
 
@@ -324,7 +324,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def compliant_status(self):
-        """Gets the compliant_status of this ListInstanceCompliantRequest.
+        r"""Gets the compliant_status of this ListInstanceCompliantRequest.
 
         合规性状态 - non_compliant：不合规 - compliant：合规
 
@@ -335,7 +335,7 @@ class ListInstanceCompliantRequest:
 
     @compliant_status.setter
     def compliant_status(self, compliant_status):
-        """Sets the compliant_status of this ListInstanceCompliantRequest.
+        r"""Sets the compliant_status of this ListInstanceCompliantRequest.
 
         合规性状态 - non_compliant：不合规 - compliant：合规
 
@@ -346,7 +346,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ListInstanceCompliantRequest.
+        r"""Gets the order_id of this ListInstanceCompliantRequest.
 
         工单id
 
@@ -357,7 +357,7 @@ class ListInstanceCompliantRequest:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ListInstanceCompliantRequest.
+        r"""Sets the order_id of this ListInstanceCompliantRequest.
 
         工单id
 
@@ -368,7 +368,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstanceCompliantRequest.
+        r"""Gets the offset of this ListInstanceCompliantRequest.
 
         偏移量
 
@@ -379,7 +379,7 @@ class ListInstanceCompliantRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstanceCompliantRequest.
+        r"""Sets the offset of this ListInstanceCompliantRequest.
 
         偏移量
 
@@ -390,7 +390,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstanceCompliantRequest.
+        r"""Gets the limit of this ListInstanceCompliantRequest.
 
         每页数量
 
@@ -401,7 +401,7 @@ class ListInstanceCompliantRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstanceCompliantRequest.
+        r"""Sets the limit of this ListInstanceCompliantRequest.
 
         每页数量
 
@@ -412,7 +412,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListInstanceCompliantRequest.
+        r"""Gets the sort_dir of this ListInstanceCompliantRequest.
 
         排序 - asc：升序 - desc：降序
 
@@ -423,7 +423,7 @@ class ListInstanceCompliantRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListInstanceCompliantRequest.
+        r"""Sets the sort_dir of this ListInstanceCompliantRequest.
 
         排序 - asc：升序 - desc：降序
 
@@ -434,7 +434,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListInstanceCompliantRequest.
+        r"""Gets the sort_key of this ListInstanceCompliantRequest.
 
         排序字段 - report_time：报告时间
 
@@ -445,7 +445,7 @@ class ListInstanceCompliantRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListInstanceCompliantRequest.
+        r"""Sets the sort_key of this ListInstanceCompliantRequest.
 
         排序字段 - report_time：报告时间
 
@@ -456,7 +456,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def report_scene(self):
-        """Gets the report_scene of this ListInstanceCompliantRequest.
+        r"""Gets the report_scene of this ListInstanceCompliantRequest.
 
         报告场景 - CCE  - ECS
 
@@ -467,7 +467,7 @@ class ListInstanceCompliantRequest:
 
     @report_scene.setter
     def report_scene(self, report_scene):
-        """Sets the report_scene of this ListInstanceCompliantRequest.
+        r"""Sets the report_scene of this ListInstanceCompliantRequest.
 
         报告场景 - CCE  - ECS
 
@@ -478,7 +478,7 @@ class ListInstanceCompliantRequest:
 
     @property
     def cce_info_id(self):
-        """Gets the cce_info_id of this ListInstanceCompliantRequest.
+        r"""Gets the cce_info_id of this ListInstanceCompliantRequest.
 
         cce 集群信息id
 
@@ -489,7 +489,7 @@ class ListInstanceCompliantRequest:
 
     @cce_info_id.setter
     def cce_info_id(self, cce_info_id):
-        """Sets the cce_info_id of this ListInstanceCompliantRequest.
+        r"""Sets the cce_info_id of this ListInstanceCompliantRequest.
 
         cce 集群信息id
 

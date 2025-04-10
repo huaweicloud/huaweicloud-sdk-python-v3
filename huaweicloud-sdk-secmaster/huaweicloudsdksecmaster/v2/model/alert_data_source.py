@@ -39,7 +39,7 @@ class AlertDataSource:
     }
 
     def __init__(self, source_type=None, domain_id=None, project_id=None, region_id=None, company_name=None, product_name=None, product_feature=None, product_module=None):
-        """AlertDataSource
+        r"""AlertDataSource
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class AlertDataSource:
 
     @property
     def source_type(self):
-        """Gets the source_type of this AlertDataSource.
+        r"""Gets the source_type of this AlertDataSource.
 
         数据源类型，取值范围如下： 1 - 华为产品 2 - 第三方产品 3 - 租户私有产品
 
@@ -103,7 +103,7 @@ class AlertDataSource:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this AlertDataSource.
+        r"""Sets the source_type of this AlertDataSource.
 
         数据源类型，取值范围如下： 1 - 华为产品 2 - 第三方产品 3 - 租户私有产品
 
@@ -114,7 +114,7 @@ class AlertDataSource:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AlertDataSource.
+        r"""Gets the domain_id of this AlertDataSource.
 
         数据源产品所属账号的id
 
@@ -125,7 +125,7 @@ class AlertDataSource:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AlertDataSource.
+        r"""Sets the domain_id of this AlertDataSource.
 
         数据源产品所属账号的id
 
@@ -136,7 +136,7 @@ class AlertDataSource:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AlertDataSource.
+        r"""Gets the project_id of this AlertDataSource.
 
         数据源产品所属项目的id
 
@@ -147,7 +147,7 @@ class AlertDataSource:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AlertDataSource.
+        r"""Sets the project_id of this AlertDataSource.
 
         数据源产品所属项目的id
 
@@ -158,7 +158,7 @@ class AlertDataSource:
 
     @property
     def region_id(self):
-        """Gets the region_id of this AlertDataSource.
+        r"""Gets the region_id of this AlertDataSource.
 
         数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义，例如cn-north-1
 
@@ -169,7 +169,7 @@ class AlertDataSource:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this AlertDataSource.
+        r"""Sets the region_id of this AlertDataSource.
 
         数据源产品所在区域，具体取值范围查看华为云地区和终端节点定义，例如cn-north-1
 
@@ -180,7 +180,7 @@ class AlertDataSource:
 
     @property
     def company_name(self):
-        """Gets the company_name of this AlertDataSource.
+        r"""Gets the company_name of this AlertDataSource.
 
         数据源产品所属公司的名称
 
@@ -191,7 +191,7 @@ class AlertDataSource:
 
     @company_name.setter
     def company_name(self, company_name):
-        """Sets the company_name of this AlertDataSource.
+        r"""Sets the company_name of this AlertDataSource.
 
         数据源产品所属公司的名称
 
@@ -202,7 +202,7 @@ class AlertDataSource:
 
     @property
     def product_name(self):
-        """Gets the product_name of this AlertDataSource.
+        r"""Gets the product_name of this AlertDataSource.
 
         数据源产品的名称
 
@@ -213,7 +213,7 @@ class AlertDataSource:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this AlertDataSource.
+        r"""Sets the product_name of this AlertDataSource.
 
         数据源产品的名称
 
@@ -224,7 +224,7 @@ class AlertDataSource:
 
     @property
     def product_feature(self):
-        """Gets the product_feature of this AlertDataSource.
+        r"""Gets the product_feature of this AlertDataSource.
 
         产品功能特性名称，用来指明检测到当前事件的产品的功能特性
 
@@ -235,7 +235,7 @@ class AlertDataSource:
 
     @product_feature.setter
     def product_feature(self, product_feature):
-        """Sets the product_feature of this AlertDataSource.
+        r"""Sets the product_feature of this AlertDataSource.
 
         产品功能特性名称，用来指明检测到当前事件的产品的功能特性
 
@@ -246,7 +246,7 @@ class AlertDataSource:
 
     @property
     def product_module(self):
-        """Gets the product_module of this AlertDataSource.
+        r"""Gets the product_module of this AlertDataSource.
 
         检测模块列表
 
@@ -257,7 +257,7 @@ class AlertDataSource:
 
     @product_module.setter
     def product_module(self, product_module):
-        """Sets the product_module of this AlertDataSource.
+        r"""Sets the product_module of this AlertDataSource.
 
         检测模块列表
 

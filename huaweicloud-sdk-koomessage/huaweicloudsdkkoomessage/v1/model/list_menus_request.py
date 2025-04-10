@@ -41,7 +41,7 @@ class ListMenusRequest:
     }
 
     def __init__(self, menu_id=None, pub_id=None, pub_name=None, online_begin_time=None, online_end_time=None, state=None, menu_name=None, offset=None, limit=None):
-        """ListMenusRequest
+        r"""ListMenusRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListMenusRequest:
 
     @property
     def menu_id(self):
-        """Gets the menu_id of this ListMenusRequest.
+        r"""Gets the menu_id of this ListMenusRequest.
 
         菜单ID。
 
@@ -110,7 +110,7 @@ class ListMenusRequest:
 
     @menu_id.setter
     def menu_id(self, menu_id):
-        """Sets the menu_id of this ListMenusRequest.
+        r"""Sets the menu_id of this ListMenusRequest.
 
         菜单ID。
 
@@ -121,7 +121,7 @@ class ListMenusRequest:
 
     @property
     def pub_id(self):
-        """Gets the pub_id of this ListMenusRequest.
+        r"""Gets the pub_id of this ListMenusRequest.
 
         服务号ID。
 
@@ -132,7 +132,7 @@ class ListMenusRequest:
 
     @pub_id.setter
     def pub_id(self, pub_id):
-        """Sets the pub_id of this ListMenusRequest.
+        r"""Sets the pub_id of this ListMenusRequest.
 
         服务号ID。
 
@@ -143,7 +143,7 @@ class ListMenusRequest:
 
     @property
     def pub_name(self):
-        """Gets the pub_name of this ListMenusRequest.
+        r"""Gets the pub_name of this ListMenusRequest.
 
         服务号名称。
 
@@ -154,7 +154,7 @@ class ListMenusRequest:
 
     @pub_name.setter
     def pub_name(self, pub_name):
-        """Sets the pub_name of this ListMenusRequest.
+        r"""Sets the pub_name of this ListMenusRequest.
 
         服务号名称。
 
@@ -165,7 +165,7 @@ class ListMenusRequest:
 
     @property
     def online_begin_time(self):
-        """Gets the online_begin_time of this ListMenusRequest.
+        r"""Gets the online_begin_time of this ListMenusRequest.
 
         上线开始时间。格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -176,7 +176,7 @@ class ListMenusRequest:
 
     @online_begin_time.setter
     def online_begin_time(self, online_begin_time):
-        """Sets the online_begin_time of this ListMenusRequest.
+        r"""Sets the online_begin_time of this ListMenusRequest.
 
         上线开始时间。格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -187,7 +187,7 @@ class ListMenusRequest:
 
     @property
     def online_end_time(self):
-        """Gets the online_end_time of this ListMenusRequest.
+        r"""Gets the online_end_time of this ListMenusRequest.
 
         上线结束时间。格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -198,7 +198,7 @@ class ListMenusRequest:
 
     @online_end_time.setter
     def online_end_time(self, online_end_time):
-        """Sets the online_end_time of this ListMenusRequest.
+        r"""Sets the online_end_time of this ListMenusRequest.
 
         上线结束时间。格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -209,7 +209,7 @@ class ListMenusRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListMenusRequest.
+        r"""Gets the state of this ListMenusRequest.
 
         菜单状态。  - 1：未生效  - 2：已生效  - 3：已失效  - 4：服务号已冻结 
 
@@ -220,7 +220,7 @@ class ListMenusRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListMenusRequest.
+        r"""Sets the state of this ListMenusRequest.
 
         菜单状态。  - 1：未生效  - 2：已生效  - 3：已失效  - 4：服务号已冻结 
 
@@ -231,7 +231,7 @@ class ListMenusRequest:
 
     @property
     def menu_name(self):
-        """Gets the menu_name of this ListMenusRequest.
+        r"""Gets the menu_name of this ListMenusRequest.
 
         一级菜单名称。
 
@@ -242,7 +242,7 @@ class ListMenusRequest:
 
     @menu_name.setter
     def menu_name(self, menu_name):
-        """Sets the menu_name of this ListMenusRequest.
+        r"""Sets the menu_name of this ListMenusRequest.
 
         一级菜单名称。
 
@@ -253,7 +253,7 @@ class ListMenusRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMenusRequest.
+        r"""Gets the offset of this ListMenusRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -264,7 +264,7 @@ class ListMenusRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMenusRequest.
+        r"""Sets the offset of this ListMenusRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -275,7 +275,7 @@ class ListMenusRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMenusRequest.
+        r"""Gets the limit of this ListMenusRequest.
 
         每页显示的条目数量。
 
@@ -286,7 +286,7 @@ class ListMenusRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMenusRequest.
+        r"""Sets the limit of this ListMenusRequest.
 
         每页显示的条目数量。
 

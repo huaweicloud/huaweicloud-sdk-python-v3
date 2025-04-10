@@ -40,7 +40,7 @@ class ShowElbDetailResponse(SdkResponse):
     }
 
     def __init__(self, server_cert_name=None, server_cert_id=None, cacert_name=None, cacert_id=None, elb_enable=None, authentication_type=None, load_balancer=None, healthmonitors=None):
-        """ShowElbDetailResponse
+        r"""ShowElbDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @property
     def server_cert_name(self):
-        """Gets the server_cert_name of this ShowElbDetailResponse.
+        r"""Gets the server_cert_name of this ShowElbDetailResponse.
 
         服务器证书名称。
 
@@ -104,7 +104,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @server_cert_name.setter
     def server_cert_name(self, server_cert_name):
-        """Sets the server_cert_name of this ShowElbDetailResponse.
+        r"""Sets the server_cert_name of this ShowElbDetailResponse.
 
         服务器证书名称。
 
@@ -115,7 +115,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @property
     def server_cert_id(self):
-        """Gets the server_cert_id of this ShowElbDetailResponse.
+        r"""Gets the server_cert_id of this ShowElbDetailResponse.
 
         服务器证书ID。
 
@@ -126,7 +126,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @server_cert_id.setter
     def server_cert_id(self, server_cert_id):
-        """Sets the server_cert_id of this ShowElbDetailResponse.
+        r"""Sets the server_cert_id of this ShowElbDetailResponse.
 
         服务器证书ID。
 
@@ -137,7 +137,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @property
     def cacert_name(self):
-        """Gets the cacert_name of this ShowElbDetailResponse.
+        r"""Gets the cacert_name of this ShowElbDetailResponse.
 
         ca证书名称。
 
@@ -148,7 +148,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @cacert_name.setter
     def cacert_name(self, cacert_name):
-        """Sets the cacert_name of this ShowElbDetailResponse.
+        r"""Sets the cacert_name of this ShowElbDetailResponse.
 
         ca证书名称。
 
@@ -159,7 +159,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @property
     def cacert_id(self):
-        """Gets the cacert_id of this ShowElbDetailResponse.
+        r"""Gets the cacert_id of this ShowElbDetailResponse.
 
         ca证书ID。
 
@@ -170,7 +170,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @cacert_id.setter
     def cacert_id(self, cacert_id):
-        """Sets the cacert_id of this ShowElbDetailResponse.
+        r"""Sets the cacert_id of this ShowElbDetailResponse.
 
         ca证书ID。
 
@@ -181,7 +181,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @property
     def elb_enable(self):
-        """Gets the elb_enable of this ShowElbDetailResponse.
+        r"""Gets the elb_enable of this ShowElbDetailResponse.
 
         elb开关信息。
 
@@ -192,7 +192,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @elb_enable.setter
     def elb_enable(self, elb_enable):
-        """Sets the elb_enable of this ShowElbDetailResponse.
+        r"""Sets the elb_enable of this ShowElbDetailResponse.
 
         elb开关信息。
 
@@ -203,7 +203,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @property
     def authentication_type(self):
-        """Gets the authentication_type of this ShowElbDetailResponse.
+        r"""Gets the authentication_type of this ShowElbDetailResponse.
 
         认证方式。
 
@@ -214,7 +214,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @authentication_type.setter
     def authentication_type(self, authentication_type):
-        """Sets the authentication_type of this ShowElbDetailResponse.
+        r"""Sets the authentication_type of this ShowElbDetailResponse.
 
         认证方式。
 
@@ -225,7 +225,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @property
     def load_balancer(self):
-        """Gets the load_balancer of this ShowElbDetailResponse.
+        r"""Gets the load_balancer of this ShowElbDetailResponse.
 
         :return: The load_balancer of this ShowElbDetailResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.EsLoadBalancerResource`
@@ -234,7 +234,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @load_balancer.setter
     def load_balancer(self, load_balancer):
-        """Sets the load_balancer of this ShowElbDetailResponse.
+        r"""Sets the load_balancer of this ShowElbDetailResponse.
 
         :param load_balancer: The load_balancer of this ShowElbDetailResponse.
         :type load_balancer: :class:`huaweicloudsdkcss.v1.EsLoadBalancerResource`
@@ -243,7 +243,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @property
     def healthmonitors(self):
-        """Gets the healthmonitors of this ShowElbDetailResponse.
+        r"""Gets the healthmonitors of this ShowElbDetailResponse.
 
         :return: The healthmonitors of this ShowElbDetailResponse.
         :rtype: :class:`huaweicloudsdkcss.v1.EsHealthmonitorsResource`
@@ -252,7 +252,7 @@ class ShowElbDetailResponse(SdkResponse):
 
     @healthmonitors.setter
     def healthmonitors(self, healthmonitors):
-        """Sets the healthmonitors of this ShowElbDetailResponse.
+        r"""Sets the healthmonitors of this ShowElbDetailResponse.
 
         :param healthmonitors: The healthmonitors of this ShowElbDetailResponse.
         :type healthmonitors: :class:`huaweicloudsdkcss.v1.EsHealthmonitorsResource`

@@ -49,7 +49,7 @@ class HttpPutBody:
     }
 
     def __init__(self, https_status=None, certificate_type=None, certificate_source=None, scm_certificate_id=None, certificate_name=None, certificate_value=None, private_key=None, enc_certificate_value=None, enc_private_key=None, certificates=None, http2_status=None, tls_version=None, ocsp_stapling_status=None):
-        """HttpPutBody
+        r"""HttpPutBody
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class HttpPutBody:
 
     @property
     def https_status(self):
-        """Gets the https_status of this HttpPutBody.
+        r"""Gets the https_status of this HttpPutBody.
 
         HTTPS证书是否启用，on：开启，off：关闭。
 
@@ -138,7 +138,7 @@ class HttpPutBody:
 
     @https_status.setter
     def https_status(self, https_status):
-        """Sets the https_status of this HttpPutBody.
+        r"""Sets the https_status of this HttpPutBody.
 
         HTTPS证书是否启用，on：开启，off：关闭。
 
@@ -149,7 +149,7 @@ class HttpPutBody:
 
     @property
     def certificate_type(self):
-        """Gets the certificate_type of this HttpPutBody.
+        r"""Gets the certificate_type of this HttpPutBody.
 
         证书类型，server：国际证书；server_sm：国密证书。
 
@@ -160,7 +160,7 @@ class HttpPutBody:
 
     @certificate_type.setter
     def certificate_type(self, certificate_type):
-        """Sets the certificate_type of this HttpPutBody.
+        r"""Sets the certificate_type of this HttpPutBody.
 
         证书类型，server：国际证书；server_sm：国密证书。
 
@@ -171,7 +171,7 @@ class HttpPutBody:
 
     @property
     def certificate_source(self):
-        """Gets the certificate_source of this HttpPutBody.
+        r"""Gets the certificate_source of this HttpPutBody.
 
         证书来源，0：自有证书。2：SCM证书。  > 证书开启时必传
 
@@ -182,7 +182,7 @@ class HttpPutBody:
 
     @certificate_source.setter
     def certificate_source(self, certificate_source):
-        """Sets the certificate_source of this HttpPutBody.
+        r"""Sets the certificate_source of this HttpPutBody.
 
         证书来源，0：自有证书。2：SCM证书。  > 证书开启时必传
 
@@ -193,7 +193,7 @@ class HttpPutBody:
 
     @property
     def scm_certificate_id(self):
-        """Gets the scm_certificate_id of this HttpPutBody.
+        r"""Gets the scm_certificate_id of this HttpPutBody.
 
         SCM证书id
 
@@ -204,7 +204,7 @@ class HttpPutBody:
 
     @scm_certificate_id.setter
     def scm_certificate_id(self, scm_certificate_id):
-        """Sets the scm_certificate_id of this HttpPutBody.
+        r"""Sets the scm_certificate_id of this HttpPutBody.
 
         SCM证书id
 
@@ -215,7 +215,7 @@ class HttpPutBody:
 
     @property
     def certificate_name(self):
-        """Gets the certificate_name of this HttpPutBody.
+        r"""Gets the certificate_name of this HttpPutBody.
 
         证书名字，长度限制为3-64字符。  > 当证书开启时必传。
 
@@ -226,7 +226,7 @@ class HttpPutBody:
 
     @certificate_name.setter
     def certificate_name(self, certificate_name):
-        """Sets the certificate_name of this HttpPutBody.
+        r"""Sets the certificate_name of this HttpPutBody.
 
         证书名字，长度限制为3-64字符。  > 当证书开启时必传。
 
@@ -237,7 +237,7 @@ class HttpPutBody:
 
     @property
     def certificate_value(self):
-        """Gets the certificate_value of this HttpPutBody.
+        r"""Gets the certificate_value of this HttpPutBody.
 
         HTTPS协议使用的证书内容，当证书开启时必传。  > PEM编码格式。
 
@@ -248,7 +248,7 @@ class HttpPutBody:
 
     @certificate_value.setter
     def certificate_value(self, certificate_value):
-        """Sets the certificate_value of this HttpPutBody.
+        r"""Sets the certificate_value of this HttpPutBody.
 
         HTTPS协议使用的证书内容，当证书开启时必传。  > PEM编码格式。
 
@@ -259,7 +259,7 @@ class HttpPutBody:
 
     @property
     def private_key(self):
-        """Gets the private_key of this HttpPutBody.
+        r"""Gets the private_key of this HttpPutBody.
 
         HTTPS协议使用的私钥，当证书开启时必传。  > PEM编码格式。
 
@@ -270,7 +270,7 @@ class HttpPutBody:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this HttpPutBody.
+        r"""Sets the private_key of this HttpPutBody.
 
         HTTPS协议使用的私钥，当证书开启时必传。  > PEM编码格式。
 
@@ -281,7 +281,7 @@ class HttpPutBody:
 
     @property
     def enc_certificate_value(self):
-        """Gets the enc_certificate_value of this HttpPutBody.
+        r"""Gets the enc_certificate_value of this HttpPutBody.
 
         加密证书内容，证书类型为国密证书时必传。  > PEM编码格式。
 
@@ -292,7 +292,7 @@ class HttpPutBody:
 
     @enc_certificate_value.setter
     def enc_certificate_value(self, enc_certificate_value):
-        """Sets the enc_certificate_value of this HttpPutBody.
+        r"""Sets the enc_certificate_value of this HttpPutBody.
 
         加密证书内容，证书类型为国密证书时必传。  > PEM编码格式。
 
@@ -303,7 +303,7 @@ class HttpPutBody:
 
     @property
     def enc_private_key(self):
-        """Gets the enc_private_key of this HttpPutBody.
+        r"""Gets the enc_private_key of this HttpPutBody.
 
         加密私钥内容，证书类型为国密证书时必传。  > PEM编码格式。
 
@@ -314,7 +314,7 @@ class HttpPutBody:
 
     @enc_private_key.setter
     def enc_private_key(self, enc_private_key):
-        """Sets the enc_private_key of this HttpPutBody.
+        r"""Sets the enc_private_key of this HttpPutBody.
 
         加密私钥内容，证书类型为国密证书时必传。  > PEM编码格式。
 
@@ -325,7 +325,7 @@ class HttpPutBody:
 
     @property
     def certificates(self):
-        """Gets the certificates of this HttpPutBody.
+        r"""Gets the certificates of this HttpPutBody.
 
         :return: The certificates of this HttpPutBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.CertificatesPutBody`]
@@ -334,7 +334,7 @@ class HttpPutBody:
 
     @certificates.setter
     def certificates(self, certificates):
-        """Sets the certificates of this HttpPutBody.
+        r"""Sets the certificates of this HttpPutBody.
 
         :param certificates: The certificates of this HttpPutBody.
         :type certificates: list[:class:`huaweicloudsdkcdn.v2.CertificatesPutBody`]
@@ -343,7 +343,7 @@ class HttpPutBody:
 
     @property
     def http2_status(self):
-        """Gets the http2_status of this HttpPutBody.
+        r"""Gets the http2_status of this HttpPutBody.
 
         是否使用HTTP2.0，on：是，off：否。  > 默认关闭，https_status=off时，该值不生效。
 
@@ -354,7 +354,7 @@ class HttpPutBody:
 
     @http2_status.setter
     def http2_status(self, http2_status):
-        """Sets the http2_status of this HttpPutBody.
+        r"""Sets the http2_status of this HttpPutBody.
 
         是否使用HTTP2.0，on：是，off：否。  > 默认关闭，https_status=off时，该值不生效。
 
@@ -365,7 +365,7 @@ class HttpPutBody:
 
     @property
     def tls_version(self):
-        """Gets the tls_version of this HttpPutBody.
+        r"""Gets the tls_version of this HttpPutBody.
 
         传输层安全性协议， 目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议，CDN默认开启TLS1.1/1.2/1.3，不可全部关闭。  > 1.需开启连续或单个版本号，例：不可仅开启TLS1.0/1.2而关闭TLS1.1。  > 2.多版本开启时，使用逗号拼接传输，例：TLSv1.1,TLSv1.2。
 
@@ -376,7 +376,7 @@ class HttpPutBody:
 
     @tls_version.setter
     def tls_version(self, tls_version):
-        """Sets the tls_version of this HttpPutBody.
+        r"""Sets the tls_version of this HttpPutBody.
 
         传输层安全性协议， 目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议，CDN默认开启TLS1.1/1.2/1.3，不可全部关闭。  > 1.需开启连续或单个版本号，例：不可仅开启TLS1.0/1.2而关闭TLS1.1。  > 2.多版本开启时，使用逗号拼接传输，例：TLSv1.1,TLSv1.2。
 
@@ -387,7 +387,7 @@ class HttpPutBody:
 
     @property
     def ocsp_stapling_status(self):
-        """Gets the ocsp_stapling_status of this HttpPutBody.
+        r"""Gets the ocsp_stapling_status of this HttpPutBody.
 
         是否开启ocsp stapling,on：是，off：否。
 
@@ -398,7 +398,7 @@ class HttpPutBody:
 
     @ocsp_stapling_status.setter
     def ocsp_stapling_status(self, ocsp_stapling_status):
-        """Sets the ocsp_stapling_status of this HttpPutBody.
+        r"""Sets the ocsp_stapling_status of this HttpPutBody.
 
         是否开启ocsp stapling,on：是，off：否。
 

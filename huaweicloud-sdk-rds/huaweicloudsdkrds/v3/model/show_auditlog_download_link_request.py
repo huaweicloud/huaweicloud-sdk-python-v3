@@ -29,7 +29,7 @@ class ShowAuditlogDownloadLinkRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ShowAuditlogDownloadLinkRequest
+        r"""ShowAuditlogDownloadLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowAuditlogDownloadLinkRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowAuditlogDownloadLinkRequest.
+        r"""Gets the x_language of this ShowAuditlogDownloadLinkRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class ShowAuditlogDownloadLinkRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowAuditlogDownloadLinkRequest.
+        r"""Sets the x_language of this ShowAuditlogDownloadLinkRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class ShowAuditlogDownloadLinkRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowAuditlogDownloadLinkRequest.
+        r"""Gets the instance_id of this ShowAuditlogDownloadLinkRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class ShowAuditlogDownloadLinkRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowAuditlogDownloadLinkRequest.
+        r"""Sets the instance_id of this ShowAuditlogDownloadLinkRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class ShowAuditlogDownloadLinkRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowAuditlogDownloadLinkRequest.
+        r"""Gets the body of this ShowAuditlogDownloadLinkRequest.
 
         :return: The body of this ShowAuditlogDownloadLinkRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.GenerateAuditlogDownloadLinkRequest`
@@ -109,7 +109,7 @@ class ShowAuditlogDownloadLinkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowAuditlogDownloadLinkRequest.
+        r"""Sets the body of this ShowAuditlogDownloadLinkRequest.
 
         :param body: The body of this ShowAuditlogDownloadLinkRequest.
         :type body: :class:`huaweicloudsdkrds.v3.GenerateAuditlogDownloadLinkRequest`

@@ -25,7 +25,7 @@ class ListStorageTypeRequest:
     }
 
     def __init__(self, engine_name=None):
-        """ListStorageTypeRequest
+        r"""ListStorageTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListStorageTypeRequest:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this ListStorageTypeRequest.
+        r"""Gets the engine_name of this ListStorageTypeRequest.
 
         数据库版本类型： - 取值为“DDS-Community”。
 
@@ -54,7 +54,7 @@ class ListStorageTypeRequest:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this ListStorageTypeRequest.
+        r"""Sets the engine_name of this ListStorageTypeRequest.
 
         数据库版本类型： - 取值为“DDS-Community”。
 

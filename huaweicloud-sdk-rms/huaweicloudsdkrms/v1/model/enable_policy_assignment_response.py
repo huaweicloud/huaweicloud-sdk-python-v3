@@ -24,7 +24,7 @@ class EnablePolicyAssignmentResponse(SdkResponse):
     }
 
     def __init__(self):
-        """EnablePolicyAssignmentResponse
+        r"""EnablePolicyAssignmentResponse
 
         The model defined in huaweicloud sdk
 

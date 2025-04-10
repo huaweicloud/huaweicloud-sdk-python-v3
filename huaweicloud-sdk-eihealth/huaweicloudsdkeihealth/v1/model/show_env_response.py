@@ -38,7 +38,7 @@ class ShowEnvResponse(SdkResponse):
     }
 
     def __init__(self, dev_user_pool=None, has_dev=None, has_drug=None, has_encryption_button=None, deploy_mode=None, enable_cold_archive=None, public_bucket_path=None):
-        """ShowEnvResponse
+        r"""ShowEnvResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def dev_user_pool(self):
-        """Gets the dev_user_pool of this ShowEnvResponse.
+        r"""Gets the dev_user_pool of this ShowEnvResponse.
 
         notebook是否使用专属资源池
 
@@ -97,7 +97,7 @@ class ShowEnvResponse(SdkResponse):
 
     @dev_user_pool.setter
     def dev_user_pool(self, dev_user_pool):
-        """Sets the dev_user_pool of this ShowEnvResponse.
+        r"""Sets the dev_user_pool of this ShowEnvResponse.
 
         notebook是否使用专属资源池
 
@@ -108,7 +108,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def has_dev(self):
-        """Gets the has_dev of this ShowEnvResponse.
+        r"""Gets the has_dev of this ShowEnvResponse.
 
         是否集成开发环境
 
@@ -119,7 +119,7 @@ class ShowEnvResponse(SdkResponse):
 
     @has_dev.setter
     def has_dev(self, has_dev):
-        """Sets the has_dev of this ShowEnvResponse.
+        r"""Sets the has_dev of this ShowEnvResponse.
 
         是否集成开发环境
 
@@ -130,7 +130,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def has_drug(self):
-        """Gets the has_drug of this ShowEnvResponse.
+        r"""Gets the has_drug of this ShowEnvResponse.
 
         是否部署药物虚拟筛选
 
@@ -141,7 +141,7 @@ class ShowEnvResponse(SdkResponse):
 
     @has_drug.setter
     def has_drug(self, has_drug):
-        """Sets the has_drug of this ShowEnvResponse.
+        r"""Sets the has_drug of this ShowEnvResponse.
 
         是否部署药物虚拟筛选
 
@@ -152,7 +152,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def has_encryption_button(self):
-        """Gets the has_encryption_button of this ShowEnvResponse.
+        r"""Gets the has_encryption_button of this ShowEnvResponse.
 
         是否显示加密按钮
 
@@ -163,7 +163,7 @@ class ShowEnvResponse(SdkResponse):
 
     @has_encryption_button.setter
     def has_encryption_button(self, has_encryption_button):
-        """Sets the has_encryption_button of this ShowEnvResponse.
+        r"""Sets the has_encryption_button of this ShowEnvResponse.
 
         是否显示加密按钮
 
@@ -174,7 +174,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def deploy_mode(self):
-        """Gets the deploy_mode of this ShowEnvResponse.
+        r"""Gets the deploy_mode of this ShowEnvResponse.
 
         医疗智能体部署模式
 
@@ -185,7 +185,7 @@ class ShowEnvResponse(SdkResponse):
 
     @deploy_mode.setter
     def deploy_mode(self, deploy_mode):
-        """Sets the deploy_mode of this ShowEnvResponse.
+        r"""Sets the deploy_mode of this ShowEnvResponse.
 
         医疗智能体部署模式
 
@@ -196,7 +196,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def enable_cold_archive(self):
-        """Gets the enable_cold_archive of this ShowEnvResponse.
+        r"""Gets the enable_cold_archive of this ShowEnvResponse.
 
         是否支持归档类型存储
 
@@ -207,7 +207,7 @@ class ShowEnvResponse(SdkResponse):
 
     @enable_cold_archive.setter
     def enable_cold_archive(self, enable_cold_archive):
-        """Sets the enable_cold_archive of this ShowEnvResponse.
+        r"""Sets the enable_cold_archive of this ShowEnvResponse.
 
         是否支持归档类型存储
 
@@ -218,7 +218,7 @@ class ShowEnvResponse(SdkResponse):
 
     @property
     def public_bucket_path(self):
-        """Gets the public_bucket_path of this ShowEnvResponse.
+        r"""Gets the public_bucket_path of this ShowEnvResponse.
 
         医疗智能体公共数据桶https路径
 
@@ -229,7 +229,7 @@ class ShowEnvResponse(SdkResponse):
 
     @public_bucket_path.setter
     def public_bucket_path(self, public_bucket_path):
-        """Sets the public_bucket_path of this ShowEnvResponse.
+        r"""Sets the public_bucket_path of this ShowEnvResponse.
 
         医疗智能体公共数据桶https路径
 

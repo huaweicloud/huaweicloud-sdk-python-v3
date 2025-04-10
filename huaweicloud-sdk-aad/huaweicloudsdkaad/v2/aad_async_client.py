@@ -34,7 +34,7 @@ class AadAsyncClient(Client):
         return client_builder
 
     def add_waf_white_ip_rule_async(self, request):
-        """防护策略web-cc黑白名单-创建黑白名单规则
+        r"""防护策略web-cc黑白名单-创建黑白名单规则
 
         防护策略web-cc黑白名单-创建黑白名单规则
         
@@ -99,7 +99,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def create_domain_async(self, request):
-        """创建防护域名
+        r"""创建防护域名
 
         创建防护域名
         
@@ -164,7 +164,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def delete_domain_async(self, request):
-        """删除防护域名
+        r"""删除防护域名
 
         删除防护域名
         
@@ -229,7 +229,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def delete_waf_white_ip_rule_async(self, request):
-        """防护策略web-cc黑白名单-删除黑白名单规则
+        r"""防护策略web-cc黑白名单-删除黑白名单规则
 
         防护策略web-cc黑白名单-删除黑白名单规则
         
@@ -294,7 +294,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def list_d_do_s_attack_event_async(self, request):
-        """查询DDoS攻击事件列表
+        r"""查询DDoS攻击事件列表
 
         查询DDoS攻击事件列表
         
@@ -361,7 +361,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def list_d_do_s_connection_number_async(self, request):
-        """查询新建连接数和并发连接数
+        r"""查询新建连接数和并发连接数
 
         查询新建连接数和并发连接数
         
@@ -432,7 +432,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def list_d_do_s_flow_async(self, request):
-        """查询DDoS攻击防护BPS/PPS流量
+        r"""查询DDoS攻击防护BPS/PPS流量
 
         查询DDoS攻击防护BPS/PPS流量
         
@@ -505,7 +505,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def list_frequency_control_rule_async(self, request):
-        """查询频率控制规则列表
+        r"""查询频率控制规则列表
 
         查询频率控制规则列表
         
@@ -570,7 +570,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def list_instance_domains_async(self, request):
-        """查询实例关联的域名信息
+        r"""查询实例关联的域名信息
 
         查询实例关联的域名信息
         
@@ -635,7 +635,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def list_waf_attack_event_async(self, request):
-        """查询攻击事件列表
+        r"""查询攻击事件列表
 
         查询攻击事件列表
         
@@ -714,7 +714,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def list_waf_bandwidth_async(self, request):
-        """带宽曲线
+        r"""带宽曲线
 
         带宽曲线
         
@@ -789,7 +789,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def list_waf_custom_rule_async(self, request):
-        """查询精准防护规则
+        r"""查询精准防护规则
 
         查询精准防护规则
         
@@ -856,7 +856,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def list_waf_geo_ip_rule_async(self, request):
-        """查询区域封禁规则
+        r"""查询区域封禁规则
 
         查询区域封禁规则
         
@@ -923,7 +923,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def list_waf_qps_async(self, request):
-        """查询请求QPS
+        r"""查询请求QPS
 
         查询请求QPS
         
@@ -998,7 +998,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def list_waf_white_ip_rule_async(self, request):
-        """防护策略web-cc黑白名单-查询黑白名单规则
+        r"""防护策略web-cc黑白名单-查询黑白名单规则
 
         防护策略web-cc黑白名单-查询黑白名单规则
         
@@ -1065,7 +1065,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def list_white_black_ip_rule_async(self, request):
-        """查询DDoS攻击防护的黑白名单列表
+        r"""查询DDoS攻击防护的黑白名单列表
 
         查询DDoS攻击防护的黑白名单列表
         
@@ -1132,7 +1132,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def show_domain_certificate_async(self, request):
-        """查询域名关联的证书信息
+        r"""查询域名关联的证书信息
 
         查询域名关联的证书信息
         
@@ -1197,7 +1197,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def show_flow_block_async(self, request):
-        """查询流量封禁信息
+        r"""查询流量封禁信息
 
         查询流量封禁信息
         
@@ -1262,7 +1262,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def show_waf_policy_async(self, request):
-        """查询WEB防护策略配置
+        r"""查询WEB防护策略配置
 
         查询WEB防护策略配置
         
@@ -1329,7 +1329,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def show_waf_qps_async(self, request):
-        """查询CC攻击防护请求QPS
+        r"""查询CC攻击防护请求QPS
 
         查询CC攻击防护请求QPS
         
@@ -1402,7 +1402,7 @@ class AadAsyncClient(Client):
         return http_info
 
     def upgrade_instance_spec_async(self, request):
-        """修改实例规格
+        r"""修改实例规格
 
         修改实例规格
         

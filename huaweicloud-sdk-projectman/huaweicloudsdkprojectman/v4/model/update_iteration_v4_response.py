@@ -24,7 +24,7 @@ class UpdateIterationV4Response(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateIterationV4Response
+        r"""UpdateIterationV4Response
 
         The model defined in huaweicloud sdk
 

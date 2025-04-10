@@ -27,7 +27,7 @@ class Privilege:
     }
 
     def __init__(self, object=None, privileges=None):
-        """Privilege
+        r"""Privilege
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Privilege:
 
     @property
     def object(self):
-        """Gets the object of this Privilege.
+        r"""Gets the object of this Privilege.
 
         赋权的DLI资源，具体可参考https://support.huaweicloud.com/usermanual-dli/dli_01_0417.html
 
@@ -59,7 +59,7 @@ class Privilege:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this Privilege.
+        r"""Sets the object of this Privilege.
 
         赋权的DLI资源，具体可参考https://support.huaweicloud.com/usermanual-dli/dli_01_0417.html
 
@@ -70,7 +70,7 @@ class Privilege:
 
     @property
     def privileges(self):
-        """Gets the privileges of this Privilege.
+        r"""Gets the privileges of this Privilege.
 
         待赋权，回收或更新的权限列表。 说明： 若“action”为“update”，更新列表为空，则表示回收用户在DLI的所有资源权限。
 
@@ -81,7 +81,7 @@ class Privilege:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this Privilege.
+        r"""Sets the privileges of this Privilege.
 
         待赋权，回收或更新的权限列表。 说明： 若“action”为“update”，更新列表为空，则表示回收用户在DLI的所有资源权限。
 

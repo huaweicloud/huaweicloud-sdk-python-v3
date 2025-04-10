@@ -35,7 +35,7 @@ class HeaderMap:
     }
 
     def __init__(self, content_disposition=None, content_language=None, access_control_allow_origin=None, access_control_allow_methods=None, access_control_max_age=None, access_control_expose_headers=None):
-        """HeaderMap
+        r"""HeaderMap
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class HeaderMap:
 
     @property
     def content_disposition(self):
-        """Gets the content_disposition of this HeaderMap.
+        r"""Gets the content_disposition of this HeaderMap.
 
         指示回复的内容该以何种形式展示
 
@@ -89,7 +89,7 @@ class HeaderMap:
 
     @content_disposition.setter
     def content_disposition(self, content_disposition):
-        """Sets the content_disposition of this HeaderMap.
+        r"""Sets the content_disposition of this HeaderMap.
 
         指示回复的内容该以何种形式展示
 
@@ -100,7 +100,7 @@ class HeaderMap:
 
     @property
     def content_language(self):
-        """Gets the content_language of this HeaderMap.
+        r"""Gets the content_language of this HeaderMap.
 
         说明访问者希望采用的语言或语言组合
 
@@ -111,7 +111,7 @@ class HeaderMap:
 
     @content_language.setter
     def content_language(self, content_language):
-        """Sets the content_language of this HeaderMap.
+        r"""Sets the content_language of this HeaderMap.
 
         说明访问者希望采用的语言或语言组合
 
@@ -122,7 +122,7 @@ class HeaderMap:
 
     @property
     def access_control_allow_origin(self):
-        """Gets the access_control_allow_origin of this HeaderMap.
+        r"""Gets the access_control_allow_origin of this HeaderMap.
 
         指定了该响应的资源是否被允许与给定的origin共享
 
@@ -133,7 +133,7 @@ class HeaderMap:
 
     @access_control_allow_origin.setter
     def access_control_allow_origin(self, access_control_allow_origin):
-        """Sets the access_control_allow_origin of this HeaderMap.
+        r"""Sets the access_control_allow_origin of this HeaderMap.
 
         指定了该响应的资源是否被允许与给定的origin共享
 
@@ -144,7 +144,7 @@ class HeaderMap:
 
     @property
     def access_control_allow_methods(self):
-        """Gets the access_control_allow_methods of this HeaderMap.
+        r"""Gets the access_control_allow_methods of this HeaderMap.
 
         明确了客户端所要访问的资源允许使用的方法或方法列表
 
@@ -155,7 +155,7 @@ class HeaderMap:
 
     @access_control_allow_methods.setter
     def access_control_allow_methods(self, access_control_allow_methods):
-        """Sets the access_control_allow_methods of this HeaderMap.
+        r"""Sets the access_control_allow_methods of this HeaderMap.
 
         明确了客户端所要访问的资源允许使用的方法或方法列表
 
@@ -166,7 +166,7 @@ class HeaderMap:
 
     @property
     def access_control_max_age(self):
-        """Gets the access_control_max_age of this HeaderMap.
+        r"""Gets the access_control_max_age of this HeaderMap.
 
         Access-Control-Allow-Methods 和Access-Control-Allow-Headers 提供的信息可以被缓存多久
 
@@ -177,7 +177,7 @@ class HeaderMap:
 
     @access_control_max_age.setter
     def access_control_max_age(self, access_control_max_age):
-        """Sets the access_control_max_age of this HeaderMap.
+        r"""Sets the access_control_max_age of this HeaderMap.
 
         Access-Control-Allow-Methods 和Access-Control-Allow-Headers 提供的信息可以被缓存多久
 
@@ -188,7 +188,7 @@ class HeaderMap:
 
     @property
     def access_control_expose_headers(self):
-        """Gets the access_control_expose_headers of this HeaderMap.
+        r"""Gets the access_control_expose_headers of this HeaderMap.
 
         列出了哪些首部可以作为响应的一部分暴露给外部
 
@@ -199,7 +199,7 @@ class HeaderMap:
 
     @access_control_expose_headers.setter
     def access_control_expose_headers(self, access_control_expose_headers):
-        """Sets the access_control_expose_headers of this HeaderMap.
+        r"""Sets the access_control_expose_headers of this HeaderMap.
 
         列出了哪些首部可以作为响应的一部分暴露给外部
 

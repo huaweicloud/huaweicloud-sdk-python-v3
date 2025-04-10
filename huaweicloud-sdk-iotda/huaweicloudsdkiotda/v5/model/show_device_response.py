@@ -64,7 +64,7 @@ class ShowDeviceResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, description=None, fw_version=None, sw_version=None, device_sdk_version=None, auth_info=None, product_id=None, product_name=None, status=None, create_time=None, connection_status_update_time=None, active_time=None, tags=None, extension_info=None):
-        """ShowDeviceResponse
+        r"""ShowDeviceResponse
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowDeviceResponse.
+        r"""Gets the app_id of this ShowDeviceResponse.
 
         资源空间ID。
 
@@ -188,7 +188,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowDeviceResponse.
+        r"""Sets the app_id of this ShowDeviceResponse.
 
         资源空间ID。
 
@@ -199,7 +199,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this ShowDeviceResponse.
+        r"""Gets the app_name of this ShowDeviceResponse.
 
         资源空间名称。
 
@@ -210,7 +210,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ShowDeviceResponse.
+        r"""Sets the app_name of this ShowDeviceResponse.
 
         资源空间名称。
 
@@ -221,7 +221,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def device_id(self):
-        """Gets the device_id of this ShowDeviceResponse.
+        r"""Gets the device_id of this ShowDeviceResponse.
 
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
@@ -232,7 +232,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ShowDeviceResponse.
+        r"""Sets the device_id of this ShowDeviceResponse.
 
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
@@ -243,7 +243,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowDeviceResponse.
+        r"""Gets the node_id of this ShowDeviceResponse.
 
         设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。
 
@@ -254,7 +254,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowDeviceResponse.
+        r"""Sets the node_id of this ShowDeviceResponse.
 
         设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。
 
@@ -265,7 +265,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this ShowDeviceResponse.
+        r"""Gets the gateway_id of this ShowDeviceResponse.
 
         网关ID，用于标识设备所属的父设备，即父设备的设备ID。当设备是直连设备时，gateway_id与设备的device_id一致。当设备是非直连设备时，gateway_id为设备所关联的父设备的device_id。
 
@@ -276,7 +276,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this ShowDeviceResponse.
+        r"""Sets the gateway_id of this ShowDeviceResponse.
 
         网关ID，用于标识设备所属的父设备，即父设备的设备ID。当设备是直连设备时，gateway_id与设备的device_id一致。当设备是非直连设备时，gateway_id为设备所关联的父设备的device_id。
 
@@ -287,7 +287,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def device_name(self):
-        """Gets the device_name of this ShowDeviceResponse.
+        r"""Gets the device_name of this ShowDeviceResponse.
 
         设备名称。
 
@@ -298,7 +298,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this ShowDeviceResponse.
+        r"""Sets the device_name of this ShowDeviceResponse.
 
         设备名称。
 
@@ -309,7 +309,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def node_type(self):
-        """Gets the node_type of this ShowDeviceResponse.
+        r"""Gets the node_type of this ShowDeviceResponse.
 
         设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。
 
@@ -320,7 +320,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this ShowDeviceResponse.
+        r"""Sets the node_type of this ShowDeviceResponse.
 
         设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。
 
@@ -331,7 +331,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowDeviceResponse.
+        r"""Gets the description of this ShowDeviceResponse.
 
         设备的描述信息。
 
@@ -342,7 +342,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowDeviceResponse.
+        r"""Sets the description of this ShowDeviceResponse.
 
         设备的描述信息。
 
@@ -353,7 +353,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def fw_version(self):
-        """Gets the fw_version of this ShowDeviceResponse.
+        r"""Gets the fw_version of this ShowDeviceResponse.
 
         设备的固件版本。
 
@@ -364,7 +364,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @fw_version.setter
     def fw_version(self, fw_version):
-        """Sets the fw_version of this ShowDeviceResponse.
+        r"""Sets the fw_version of this ShowDeviceResponse.
 
         设备的固件版本。
 
@@ -375,7 +375,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def sw_version(self):
-        """Gets the sw_version of this ShowDeviceResponse.
+        r"""Gets the sw_version of this ShowDeviceResponse.
 
         设备的软件版本。
 
@@ -386,7 +386,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @sw_version.setter
     def sw_version(self, sw_version):
-        """Sets the sw_version of this ShowDeviceResponse.
+        r"""Sets the sw_version of this ShowDeviceResponse.
 
         设备的软件版本。
 
@@ -397,7 +397,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def device_sdk_version(self):
-        """Gets the device_sdk_version of this ShowDeviceResponse.
+        r"""Gets the device_sdk_version of this ShowDeviceResponse.
 
         设备的sdk信息。
 
@@ -408,7 +408,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @device_sdk_version.setter
     def device_sdk_version(self, device_sdk_version):
-        """Sets the device_sdk_version of this ShowDeviceResponse.
+        r"""Sets the device_sdk_version of this ShowDeviceResponse.
 
         设备的sdk信息。
 
@@ -419,7 +419,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def auth_info(self):
-        """Gets the auth_info of this ShowDeviceResponse.
+        r"""Gets the auth_info of this ShowDeviceResponse.
 
         :return: The auth_info of this ShowDeviceResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.AuthInfoRes`
@@ -428,7 +428,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @auth_info.setter
     def auth_info(self, auth_info):
-        """Sets the auth_info of this ShowDeviceResponse.
+        r"""Sets the auth_info of this ShowDeviceResponse.
 
         :param auth_info: The auth_info of this ShowDeviceResponse.
         :type auth_info: :class:`huaweicloudsdkiotda.v5.AuthInfoRes`
@@ -437,7 +437,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this ShowDeviceResponse.
+        r"""Gets the product_id of this ShowDeviceResponse.
 
         设备关联的产品ID，用于唯一标识一个产品模型。
 
@@ -448,7 +448,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ShowDeviceResponse.
+        r"""Sets the product_id of this ShowDeviceResponse.
 
         设备关联的产品ID，用于唯一标识一个产品模型。
 
@@ -459,7 +459,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def product_name(self):
-        """Gets the product_name of this ShowDeviceResponse.
+        r"""Gets the product_name of this ShowDeviceResponse.
 
         设备关联的产品名称。
 
@@ -470,7 +470,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this ShowDeviceResponse.
+        r"""Sets the product_name of this ShowDeviceResponse.
 
         设备关联的产品名称。
 
@@ -481,7 +481,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDeviceResponse.
+        r"""Gets the status of this ShowDeviceResponse.
 
         设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。
 
@@ -492,7 +492,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDeviceResponse.
+        r"""Sets the status of this ShowDeviceResponse.
 
         设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。
 
@@ -503,7 +503,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowDeviceResponse.
+        r"""Gets the create_time of this ShowDeviceResponse.
 
         在物联网平台注册设备的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -514,7 +514,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowDeviceResponse.
+        r"""Sets the create_time of this ShowDeviceResponse.
 
         在物联网平台注册设备的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -525,7 +525,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def connection_status_update_time(self):
-        """Gets the connection_status_update_time of this ShowDeviceResponse.
+        r"""Gets the connection_status_update_time of this ShowDeviceResponse.
 
         设备最近一次连接状态(ONLINE:在线，OFFLINE：离线，ABNORMAL：异常)变化时间。格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z' ，如2015-12-12T12:12:122Z。
 
@@ -536,7 +536,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @connection_status_update_time.setter
     def connection_status_update_time(self, connection_status_update_time):
-        """Sets the connection_status_update_time of this ShowDeviceResponse.
+        r"""Sets the connection_status_update_time of this ShowDeviceResponse.
 
         设备最近一次连接状态(ONLINE:在线，OFFLINE：离线，ABNORMAL：异常)变化时间。格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z' ，如2015-12-12T12:12:122Z。
 
@@ -547,7 +547,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def active_time(self):
-        """Gets the active_time of this ShowDeviceResponse.
+        r"""Gets the active_time of this ShowDeviceResponse.
 
         设备激活时间。格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z' ，如2015-12-12T12:12:122Z。
 
@@ -558,7 +558,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @active_time.setter
     def active_time(self, active_time):
-        """Sets the active_time of this ShowDeviceResponse.
+        r"""Sets the active_time of this ShowDeviceResponse.
 
         设备激活时间。格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z' ，如2015-12-12T12:12:122Z。
 
@@ -569,7 +569,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowDeviceResponse.
+        r"""Gets the tags of this ShowDeviceResponse.
 
         设备的标签列表。
 
@@ -580,7 +580,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowDeviceResponse.
+        r"""Sets the tags of this ShowDeviceResponse.
 
         设备的标签列表。
 
@@ -591,7 +591,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def extension_info(self):
-        """Gets the extension_info of this ShowDeviceResponse.
+        r"""Gets the extension_info of this ShowDeviceResponse.
 
         设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。
 
@@ -602,7 +602,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @extension_info.setter
     def extension_info(self, extension_info):
-        """Sets the extension_info of this ShowDeviceResponse.
+        r"""Sets the extension_info of this ShowDeviceResponse.
 
         设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。
 

@@ -33,7 +33,7 @@ class BatchSendDiffSmsRequestBody:
     }
 
     def __init__(self, _from=None, status_callback=None, sms_content=None, extend=None):
-        """BatchSendDiffSmsRequestBody
+        r"""BatchSendDiffSmsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class BatchSendDiffSmsRequestBody:
 
     @property
     def _from(self):
-        """Gets the _from of this BatchSendDiffSmsRequestBody.
+        r"""Gets the _from of this BatchSendDiffSmsRequestBody.
 
         短信发送方的号码
 
@@ -77,7 +77,7 @@ class BatchSendDiffSmsRequestBody:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this BatchSendDiffSmsRequestBody.
+        r"""Sets the _from of this BatchSendDiffSmsRequestBody.
 
         短信发送方的号码
 
@@ -88,7 +88,7 @@ class BatchSendDiffSmsRequestBody:
 
     @property
     def status_callback(self):
-        """Gets the status_callback of this BatchSendDiffSmsRequestBody.
+        r"""Gets the status_callback of this BatchSendDiffSmsRequestBody.
 
         SP的回调地址，用于单条接收短信状态报告
 
@@ -99,7 +99,7 @@ class BatchSendDiffSmsRequestBody:
 
     @status_callback.setter
     def status_callback(self, status_callback):
-        """Sets the status_callback of this BatchSendDiffSmsRequestBody.
+        r"""Sets the status_callback of this BatchSendDiffSmsRequestBody.
 
         SP的回调地址，用于单条接收短信状态报告
 
@@ -110,7 +110,7 @@ class BatchSendDiffSmsRequestBody:
 
     @property
     def sms_content(self):
-        """Gets the sms_content of this BatchSendDiffSmsRequestBody.
+        r"""Gets the sms_content of this BatchSendDiffSmsRequestBody.
 
         短信内容
 
@@ -121,7 +121,7 @@ class BatchSendDiffSmsRequestBody:
 
     @sms_content.setter
     def sms_content(self, sms_content):
-        """Sets the sms_content of this BatchSendDiffSmsRequestBody.
+        r"""Sets the sms_content of this BatchSendDiffSmsRequestBody.
 
         短信内容
 
@@ -132,7 +132,7 @@ class BatchSendDiffSmsRequestBody:
 
     @property
     def extend(self):
-        """Gets the extend of this BatchSendDiffSmsRequestBody.
+        r"""Gets the extend of this BatchSendDiffSmsRequestBody.
 
         扩展参数
 
@@ -143,7 +143,7 @@ class BatchSendDiffSmsRequestBody:
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this BatchSendDiffSmsRequestBody.
+        r"""Sets the extend of this BatchSendDiffSmsRequestBody.
 
         扩展参数
 

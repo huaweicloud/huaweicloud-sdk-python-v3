@@ -35,7 +35,7 @@ class CreateVolumeTransferDetail:
     }
 
     def __init__(self, auth_key=None, created_at=None, id=None, links=None, name=None, volume_id=None):
-        """CreateVolumeTransferDetail
+        r"""CreateVolumeTransferDetail
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateVolumeTransferDetail:
 
     @property
     def auth_key(self):
-        """Gets the auth_key of this CreateVolumeTransferDetail.
+        r"""Gets the auth_key of this CreateVolumeTransferDetail.
 
         云硬盘过户的身份认证密钥。
 
@@ -83,7 +83,7 @@ class CreateVolumeTransferDetail:
 
     @auth_key.setter
     def auth_key(self, auth_key):
-        """Sets the auth_key of this CreateVolumeTransferDetail.
+        r"""Sets the auth_key of this CreateVolumeTransferDetail.
 
         云硬盘过户的身份认证密钥。
 
@@ -94,7 +94,7 @@ class CreateVolumeTransferDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateVolumeTransferDetail.
+        r"""Gets the created_at of this CreateVolumeTransferDetail.
 
         云硬盘过户记录的创建时间。  时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
@@ -105,7 +105,7 @@ class CreateVolumeTransferDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateVolumeTransferDetail.
+        r"""Sets the created_at of this CreateVolumeTransferDetail.
 
         云硬盘过户记录的创建时间。  时间格式：UTC YYYY-MM-DDTHH:MM:SS.XXXXXX
 
@@ -116,7 +116,7 @@ class CreateVolumeTransferDetail:
 
     @property
     def id(self):
-        """Gets the id of this CreateVolumeTransferDetail.
+        r"""Gets the id of this CreateVolumeTransferDetail.
 
         云硬盘过户记录的ID。
 
@@ -127,7 +127,7 @@ class CreateVolumeTransferDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateVolumeTransferDetail.
+        r"""Sets the id of this CreateVolumeTransferDetail.
 
         云硬盘过户记录的ID。
 
@@ -138,7 +138,7 @@ class CreateVolumeTransferDetail:
 
     @property
     def links(self):
-        """Gets the links of this CreateVolumeTransferDetail.
+        r"""Gets the links of this CreateVolumeTransferDetail.
 
         云硬盘过户记录的链接。
 
@@ -149,7 +149,7 @@ class CreateVolumeTransferDetail:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this CreateVolumeTransferDetail.
+        r"""Sets the links of this CreateVolumeTransferDetail.
 
         云硬盘过户记录的链接。
 
@@ -160,7 +160,7 @@ class CreateVolumeTransferDetail:
 
     @property
     def name(self):
-        """Gets the name of this CreateVolumeTransferDetail.
+        r"""Gets the name of this CreateVolumeTransferDetail.
 
         云硬盘过户记录的名称。
 
@@ -171,7 +171,7 @@ class CreateVolumeTransferDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVolumeTransferDetail.
+        r"""Sets the name of this CreateVolumeTransferDetail.
 
         云硬盘过户记录的名称。
 
@@ -182,7 +182,7 @@ class CreateVolumeTransferDetail:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this CreateVolumeTransferDetail.
+        r"""Gets the volume_id of this CreateVolumeTransferDetail.
 
         云硬盘ID。
 
@@ -193,7 +193,7 @@ class CreateVolumeTransferDetail:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this CreateVolumeTransferDetail.
+        r"""Sets the volume_id of this CreateVolumeTransferDetail.
 
         云硬盘ID。
 

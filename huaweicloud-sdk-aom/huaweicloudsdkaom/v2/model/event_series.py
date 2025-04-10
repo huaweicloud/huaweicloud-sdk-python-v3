@@ -27,7 +27,7 @@ class EventSeries:
     }
 
     def __init__(self, event_severity=None, values=None):
-        """EventSeries
+        r"""EventSeries
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EventSeries:
 
     @property
     def event_severity(self):
-        """Gets the event_severity of this EventSeries.
+        r"""Gets the event_severity of this EventSeries.
 
         事件或者告警级别枚举类型。
 
@@ -61,7 +61,7 @@ class EventSeries:
 
     @event_severity.setter
     def event_severity(self, event_severity):
-        """Sets the event_severity of this EventSeries.
+        r"""Sets the event_severity of this EventSeries.
 
         事件或者告警级别枚举类型。
 
@@ -72,7 +72,7 @@ class EventSeries:
 
     @property
     def values(self):
-        """Gets the values of this EventSeries.
+        r"""Gets the values of this EventSeries.
 
         事件或者告警统计结果。
 
@@ -83,7 +83,7 @@ class EventSeries:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this EventSeries.
+        r"""Sets the values of this EventSeries.
 
         事件或者告警统计结果。
 

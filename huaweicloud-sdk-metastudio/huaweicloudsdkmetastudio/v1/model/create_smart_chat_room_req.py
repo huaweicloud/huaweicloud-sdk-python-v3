@@ -51,7 +51,7 @@ class CreateSmartChatRoomReq:
     }
 
     def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, voice_config_list=None, robot_id=None, concurrency=None, default_language=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None):
-        """CreateSmartChatRoomReq
+        r"""CreateSmartChatRoomReq
 
         The model defined in huaweicloud sdk
 
@@ -133,7 +133,7 @@ class CreateSmartChatRoomReq:
 
     @property
     def room_name(self):
-        """Gets the room_name of this CreateSmartChatRoomReq.
+        r"""Gets the room_name of this CreateSmartChatRoomReq.
 
         对话名称
 
@@ -144,7 +144,7 @@ class CreateSmartChatRoomReq:
 
     @room_name.setter
     def room_name(self, room_name):
-        """Sets the room_name of this CreateSmartChatRoomReq.
+        r"""Sets the room_name of this CreateSmartChatRoomReq.
 
         对话名称
 
@@ -155,7 +155,7 @@ class CreateSmartChatRoomReq:
 
     @property
     def room_description(self):
-        """Gets the room_description of this CreateSmartChatRoomReq.
+        r"""Gets the room_description of this CreateSmartChatRoomReq.
 
         对话描述。
 
@@ -166,7 +166,7 @@ class CreateSmartChatRoomReq:
 
     @room_description.setter
     def room_description(self, room_description):
-        """Sets the room_description of this CreateSmartChatRoomReq.
+        r"""Sets the room_description of this CreateSmartChatRoomReq.
 
         对话描述。
 
@@ -177,7 +177,7 @@ class CreateSmartChatRoomReq:
 
     @property
     def video_config(self):
-        """Gets the video_config of this CreateSmartChatRoomReq.
+        r"""Gets the video_config of this CreateSmartChatRoomReq.
 
         :return: The video_config of this CreateSmartChatRoomReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -186,7 +186,7 @@ class CreateSmartChatRoomReq:
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this CreateSmartChatRoomReq.
+        r"""Sets the video_config of this CreateSmartChatRoomReq.
 
         :param video_config: The video_config of this CreateSmartChatRoomReq.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -195,7 +195,7 @@ class CreateSmartChatRoomReq:
 
     @property
     def model_asset_id(self):
-        """Gets the model_asset_id of this CreateSmartChatRoomReq.
+        r"""Gets the model_asset_id of this CreateSmartChatRoomReq.
 
         数字人模型资产ID。
 
@@ -206,7 +206,7 @@ class CreateSmartChatRoomReq:
 
     @model_asset_id.setter
     def model_asset_id(self, model_asset_id):
-        """Sets the model_asset_id of this CreateSmartChatRoomReq.
+        r"""Sets the model_asset_id of this CreateSmartChatRoomReq.
 
         数字人模型资产ID。
 
@@ -217,7 +217,7 @@ class CreateSmartChatRoomReq:
 
     @property
     def voice_config(self):
-        """Gets the voice_config of this CreateSmartChatRoomReq.
+        r"""Gets the voice_config of this CreateSmartChatRoomReq.
 
         :return: The voice_config of this CreateSmartChatRoomReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -226,7 +226,7 @@ class CreateSmartChatRoomReq:
 
     @voice_config.setter
     def voice_config(self, voice_config):
-        """Sets the voice_config of this CreateSmartChatRoomReq.
+        r"""Sets the voice_config of this CreateSmartChatRoomReq.
 
         :param voice_config: The voice_config of this CreateSmartChatRoomReq.
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -235,7 +235,7 @@ class CreateSmartChatRoomReq:
 
     @property
     def voice_config_list(self):
-        """Gets the voice_config_list of this CreateSmartChatRoomReq.
+        r"""Gets the voice_config_list of this CreateSmartChatRoomReq.
 
         语音配置参数列表。
 
@@ -246,7 +246,7 @@ class CreateSmartChatRoomReq:
 
     @voice_config_list.setter
     def voice_config_list(self, voice_config_list):
-        """Sets the voice_config_list of this CreateSmartChatRoomReq.
+        r"""Sets the voice_config_list of this CreateSmartChatRoomReq.
 
         语音配置参数列表。
 
@@ -257,7 +257,7 @@ class CreateSmartChatRoomReq:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this CreateSmartChatRoomReq.
+        r"""Gets the robot_id of this CreateSmartChatRoomReq.
 
         机器人ID。获取方法请参考[创建应用](CreateRobot.xml)。
 
@@ -268,7 +268,7 @@ class CreateSmartChatRoomReq:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this CreateSmartChatRoomReq.
+        r"""Sets the robot_id of this CreateSmartChatRoomReq.
 
         机器人ID。获取方法请参考[创建应用](CreateRobot.xml)。
 
@@ -279,7 +279,7 @@ class CreateSmartChatRoomReq:
 
     @property
     def concurrency(self):
-        """Gets the concurrency of this CreateSmartChatRoomReq.
+        r"""Gets the concurrency of this CreateSmartChatRoomReq.
 
         **参数解释**： 并发路数。
 
@@ -290,7 +290,7 @@ class CreateSmartChatRoomReq:
 
     @concurrency.setter
     def concurrency(self, concurrency):
-        """Sets the concurrency of this CreateSmartChatRoomReq.
+        r"""Sets the concurrency of this CreateSmartChatRoomReq.
 
         **参数解释**： 并发路数。
 
@@ -301,7 +301,7 @@ class CreateSmartChatRoomReq:
 
     @property
     def default_language(self):
-        """Gets the default_language of this CreateSmartChatRoomReq.
+        r"""Gets the default_language of this CreateSmartChatRoomReq.
 
         默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
 
@@ -312,7 +312,7 @@ class CreateSmartChatRoomReq:
 
     @default_language.setter
     def default_language(self, default_language):
-        """Sets the default_language of this CreateSmartChatRoomReq.
+        r"""Sets the default_language of this CreateSmartChatRoomReq.
 
         默认语言，智能交互接口使用。默认值CN。 * CN：简体中文。 * EN：英语。
 
@@ -323,7 +323,7 @@ class CreateSmartChatRoomReq:
 
     @property
     def background_config(self):
-        """Gets the background_config of this CreateSmartChatRoomReq.
+        r"""Gets the background_config of this CreateSmartChatRoomReq.
 
         :return: The background_config of this CreateSmartChatRoomReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.BackgroundConfigInfo`
@@ -332,7 +332,7 @@ class CreateSmartChatRoomReq:
 
     @background_config.setter
     def background_config(self, background_config):
-        """Sets the background_config of this CreateSmartChatRoomReq.
+        r"""Sets the background_config of this CreateSmartChatRoomReq.
 
         :param background_config: The background_config of this CreateSmartChatRoomReq.
         :type background_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundConfigInfo`
@@ -341,7 +341,7 @@ class CreateSmartChatRoomReq:
 
     @property
     def layer_config(self):
-        """Gets the layer_config of this CreateSmartChatRoomReq.
+        r"""Gets the layer_config of this CreateSmartChatRoomReq.
 
         图层配置。
 
@@ -352,7 +352,7 @@ class CreateSmartChatRoomReq:
 
     @layer_config.setter
     def layer_config(self, layer_config):
-        """Sets the layer_config of this CreateSmartChatRoomReq.
+        r"""Sets the layer_config of this CreateSmartChatRoomReq.
 
         图层配置。
 
@@ -363,7 +363,7 @@ class CreateSmartChatRoomReq:
 
     @property
     def review_config(self):
-        """Gets the review_config of this CreateSmartChatRoomReq.
+        r"""Gets the review_config of this CreateSmartChatRoomReq.
 
         :return: The review_config of this CreateSmartChatRoomReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -372,7 +372,7 @@ class CreateSmartChatRoomReq:
 
     @review_config.setter
     def review_config(self, review_config):
-        """Sets the review_config of this CreateSmartChatRoomReq.
+        r"""Sets the review_config of this CreateSmartChatRoomReq.
 
         :param review_config: The review_config of this CreateSmartChatRoomReq.
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -381,7 +381,7 @@ class CreateSmartChatRoomReq:
 
     @property
     def chat_subtitle_config(self):
-        """Gets the chat_subtitle_config of this CreateSmartChatRoomReq.
+        r"""Gets the chat_subtitle_config of this CreateSmartChatRoomReq.
 
         :return: The chat_subtitle_config of this CreateSmartChatRoomReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ChatSubtitleConfig`
@@ -390,7 +390,7 @@ class CreateSmartChatRoomReq:
 
     @chat_subtitle_config.setter
     def chat_subtitle_config(self, chat_subtitle_config):
-        """Sets the chat_subtitle_config of this CreateSmartChatRoomReq.
+        r"""Sets the chat_subtitle_config of this CreateSmartChatRoomReq.
 
         :param chat_subtitle_config: The chat_subtitle_config of this CreateSmartChatRoomReq.
         :type chat_subtitle_config: :class:`huaweicloudsdkmetastudio.v1.ChatSubtitleConfig`
@@ -399,7 +399,7 @@ class CreateSmartChatRoomReq:
 
     @property
     def chat_video_type(self):
-        """Gets the chat_video_type of this CreateSmartChatRoomReq.
+        r"""Gets the chat_video_type of this CreateSmartChatRoomReq.
 
         智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
 
@@ -410,7 +410,7 @@ class CreateSmartChatRoomReq:
 
     @chat_video_type.setter
     def chat_video_type(self, chat_video_type):
-        """Sets the chat_video_type of this CreateSmartChatRoomReq.
+        r"""Sets the chat_video_type of this CreateSmartChatRoomReq.
 
         智能交互对话端配置。 * COMPUTER: 电脑端 * MOBILE: 手机端 * HUB: 大屏
 

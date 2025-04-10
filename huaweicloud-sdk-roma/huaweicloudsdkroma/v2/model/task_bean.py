@@ -25,7 +25,7 @@ class TaskBean:
     }
 
     def __init__(self, task_id=None):
-        """TaskBean
+        r"""TaskBean
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TaskBean:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskBean.
+        r"""Gets the task_id of this TaskBean.
 
         任务ID, 可为空
 
@@ -54,7 +54,7 @@ class TaskBean:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskBean.
+        r"""Sets the task_id of this TaskBean.
 
         任务ID, 可为空
 

@@ -29,7 +29,7 @@ class CreatePlaybookInfo:
     }
 
     def __init__(self, name=None, description=None, workspace_id=None):
-        """CreatePlaybookInfo
+        r"""CreatePlaybookInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreatePlaybookInfo:
 
     @property
     def name(self):
-        """Gets the name of this CreatePlaybookInfo.
+        r"""Gets the name of this CreatePlaybookInfo.
 
         剧本名称
 
@@ -66,7 +66,7 @@ class CreatePlaybookInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePlaybookInfo.
+        r"""Sets the name of this CreatePlaybookInfo.
 
         剧本名称
 
@@ -77,7 +77,7 @@ class CreatePlaybookInfo:
 
     @property
     def description(self):
-        """Gets the description of this CreatePlaybookInfo.
+        r"""Gets the description of this CreatePlaybookInfo.
 
         描述
 
@@ -88,7 +88,7 @@ class CreatePlaybookInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePlaybookInfo.
+        r"""Sets the description of this CreatePlaybookInfo.
 
         描述
 
@@ -99,7 +99,7 @@ class CreatePlaybookInfo:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreatePlaybookInfo.
+        r"""Gets the workspace_id of this CreatePlaybookInfo.
 
         工作空间ID
 
@@ -110,7 +110,7 @@ class CreatePlaybookInfo:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreatePlaybookInfo.
+        r"""Sets the workspace_id of this CreatePlaybookInfo.
 
         工作空间ID
 

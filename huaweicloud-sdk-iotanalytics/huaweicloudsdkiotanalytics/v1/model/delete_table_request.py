@@ -25,7 +25,7 @@ class DeleteTableRequest:
     }
 
     def __init__(self, table_id=None):
-        """DeleteTableRequest
+        r"""DeleteTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTableRequest:
 
     @property
     def table_id(self):
-        """Gets the table_id of this DeleteTableRequest.
+        r"""Gets the table_id of this DeleteTableRequest.
 
         表ID
 
@@ -53,7 +53,7 @@ class DeleteTableRequest:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this DeleteTableRequest.
+        r"""Sets the table_id of this DeleteTableRequest.
 
         表ID
 

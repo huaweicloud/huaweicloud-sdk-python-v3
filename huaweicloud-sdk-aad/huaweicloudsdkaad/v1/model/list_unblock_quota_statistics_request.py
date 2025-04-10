@@ -25,7 +25,7 @@ class ListUnblockQuotaStatisticsRequest:
     }
 
     def __init__(self, domain_id=None):
-        """ListUnblockQuotaStatisticsRequest
+        r"""ListUnblockQuotaStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListUnblockQuotaStatisticsRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListUnblockQuotaStatisticsRequest.
+        r"""Gets the domain_id of this ListUnblockQuotaStatisticsRequest.
 
         租户id
 
@@ -53,7 +53,7 @@ class ListUnblockQuotaStatisticsRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListUnblockQuotaStatisticsRequest.
+        r"""Sets the domain_id of this ListUnblockQuotaStatisticsRequest.
 
         租户id
 

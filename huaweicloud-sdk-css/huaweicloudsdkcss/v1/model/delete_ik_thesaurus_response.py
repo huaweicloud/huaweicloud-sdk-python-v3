@@ -24,7 +24,7 @@ class DeleteIkThesaurusResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteIkThesaurusResponse
+        r"""DeleteIkThesaurusResponse
 
         The model defined in huaweicloud sdk
 

@@ -26,7 +26,7 @@ class CreateGrantsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """CreateGrantsResponse
+        r"""CreateGrantsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateGrantsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateGrantsResponse.
+        r"""Gets the data of this CreateGrantsResponse.
 
         :return: The data of this CreateGrantsResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.GrantData`
@@ -53,7 +53,7 @@ class CreateGrantsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateGrantsResponse.
+        r"""Sets the data of this CreateGrantsResponse.
 
         :param data: The data of this CreateGrantsResponse.
         :type data: :class:`huaweicloudsdkcsms.v1.GrantData`

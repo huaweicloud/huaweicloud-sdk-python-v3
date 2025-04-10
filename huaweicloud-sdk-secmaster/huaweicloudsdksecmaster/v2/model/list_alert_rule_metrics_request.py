@@ -27,7 +27,7 @@ class ListAlertRuleMetricsRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None):
-        """ListAlertRuleMetricsRequest
+        r"""ListAlertRuleMetricsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListAlertRuleMetricsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListAlertRuleMetricsRequest.
+        r"""Gets the project_id of this ListAlertRuleMetricsRequest.
 
         项目 ID。Project ID.
 
@@ -59,7 +59,7 @@ class ListAlertRuleMetricsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListAlertRuleMetricsRequest.
+        r"""Sets the project_id of this ListAlertRuleMetricsRequest.
 
         项目 ID。Project ID.
 
@@ -70,7 +70,7 @@ class ListAlertRuleMetricsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListAlertRuleMetricsRequest.
+        r"""Gets the workspace_id of this ListAlertRuleMetricsRequest.
 
         工作空间 ID。Workspace ID.
 
@@ -81,7 +81,7 @@ class ListAlertRuleMetricsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListAlertRuleMetricsRequest.
+        r"""Sets the workspace_id of this ListAlertRuleMetricsRequest.
 
         工作空间 ID。Workspace ID.
 

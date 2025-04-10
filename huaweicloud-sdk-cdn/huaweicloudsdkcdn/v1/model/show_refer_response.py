@@ -28,7 +28,7 @@ class ShowReferResponse(SdkResponse):
     }
 
     def __init__(self, referer=None, x_request_id=None):
-        """ShowReferResponse
+        r"""ShowReferResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowReferResponse(SdkResponse):
 
     @property
     def referer(self):
-        """Gets the referer of this ShowReferResponse.
+        r"""Gets the referer of this ShowReferResponse.
 
         :return: The referer of this ShowReferResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.RefererRsp`
@@ -60,7 +60,7 @@ class ShowReferResponse(SdkResponse):
 
     @referer.setter
     def referer(self, referer):
-        """Sets the referer of this ShowReferResponse.
+        r"""Sets the referer of this ShowReferResponse.
 
         :param referer: The referer of this ShowReferResponse.
         :type referer: :class:`huaweicloudsdkcdn.v1.RefererRsp`
@@ -69,7 +69,7 @@ class ShowReferResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowReferResponse.
+        r"""Gets the x_request_id of this ShowReferResponse.
 
         :return: The x_request_id of this ShowReferResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowReferResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowReferResponse.
+        r"""Sets the x_request_id of this ShowReferResponse.
 
         :param x_request_id: The x_request_id of this ShowReferResponse.
         :type x_request_id: str

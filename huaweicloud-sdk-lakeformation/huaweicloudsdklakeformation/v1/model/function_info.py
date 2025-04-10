@@ -25,7 +25,7 @@ class FunctionInfo:
     }
 
     def __init__(self, name=None):
-        """FunctionInfo
+        r"""FunctionInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class FunctionInfo:
 
     @property
     def name(self):
-        """Gets the name of this FunctionInfo.
+        r"""Gets the name of this FunctionInfo.
 
         function name
 
@@ -53,7 +53,7 @@ class FunctionInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FunctionInfo.
+        r"""Sets the name of this FunctionInfo.
 
         function name
 

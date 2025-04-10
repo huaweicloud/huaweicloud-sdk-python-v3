@@ -29,7 +29,7 @@ class ListWksEdgeSitesRequest:
     }
 
     def __init__(self, name=None, availability_zone_id=None, status=None):
-        """ListWksEdgeSitesRequest
+        r"""ListWksEdgeSitesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListWksEdgeSitesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListWksEdgeSitesRequest.
+        r"""Gets the name of this ListWksEdgeSitesRequest.
 
         根据边缘小站名称查询。
 
@@ -68,7 +68,7 @@ class ListWksEdgeSitesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListWksEdgeSitesRequest.
+        r"""Sets the name of this ListWksEdgeSitesRequest.
 
         根据边缘小站名称查询。
 
@@ -79,7 +79,7 @@ class ListWksEdgeSitesRequest:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this ListWksEdgeSitesRequest.
+        r"""Gets the availability_zone_id of this ListWksEdgeSitesRequest.
 
         根据边缘可用区ID查询。
 
@@ -90,7 +90,7 @@ class ListWksEdgeSitesRequest:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this ListWksEdgeSitesRequest.
+        r"""Sets the availability_zone_id of this ListWksEdgeSitesRequest.
 
         根据边缘可用区ID查询。
 
@@ -101,7 +101,7 @@ class ListWksEdgeSitesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListWksEdgeSitesRequest.
+        r"""Gets the status of this ListWksEdgeSitesRequest.
 
         根据边缘小站部署状态查询。
 
@@ -112,7 +112,7 @@ class ListWksEdgeSitesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListWksEdgeSitesRequest.
+        r"""Sets the status of this ListWksEdgeSitesRequest.
 
         根据边缘小站部署状态查询。
 

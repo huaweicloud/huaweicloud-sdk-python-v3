@@ -26,7 +26,7 @@ class ShowOpLogResponse(SdkResponse):
     }
 
     def __init__(self, operation_log=None):
-        """ShowOpLogResponse
+        r"""ShowOpLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowOpLogResponse(SdkResponse):
 
     @property
     def operation_log(self):
-        """Gets the operation_log of this ShowOpLogResponse.
+        r"""Gets the operation_log of this ShowOpLogResponse.
 
         :return: The operation_log of this ShowOpLogResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.OperationLog`
@@ -53,7 +53,7 @@ class ShowOpLogResponse(SdkResponse):
 
     @operation_log.setter
     def operation_log(self, operation_log):
-        """Sets the operation_log of this ShowOpLogResponse.
+        r"""Sets the operation_log of this ShowOpLogResponse.
 
         :param operation_log: The operation_log of this ShowOpLogResponse.
         :type operation_log: :class:`huaweicloudsdkcbr.v1.OperationLog`

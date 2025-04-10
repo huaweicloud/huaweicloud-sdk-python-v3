@@ -30,7 +30,7 @@ class UpdatePersonalTemplateStateResponse(SdkResponse):
     }
 
     def __init__(self, status=None, message=None, data=None):
-        """UpdatePersonalTemplateStateResponse
+        r"""UpdatePersonalTemplateStateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdatePersonalTemplateStateResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdatePersonalTemplateStateResponse.
+        r"""Gets the status of this UpdatePersonalTemplateStateResponse.
 
         请求状态，固定200。
 
@@ -69,7 +69,7 @@ class UpdatePersonalTemplateStateResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdatePersonalTemplateStateResponse.
+        r"""Sets the status of this UpdatePersonalTemplateStateResponse.
 
         请求状态，固定200。
 
@@ -80,7 +80,7 @@ class UpdatePersonalTemplateStateResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this UpdatePersonalTemplateStateResponse.
+        r"""Gets the message of this UpdatePersonalTemplateStateResponse.
 
         状态描述。
 
@@ -91,7 +91,7 @@ class UpdatePersonalTemplateStateResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this UpdatePersonalTemplateStateResponse.
+        r"""Sets the message of this UpdatePersonalTemplateStateResponse.
 
         状态描述。
 
@@ -102,7 +102,7 @@ class UpdatePersonalTemplateStateResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdatePersonalTemplateStateResponse.
+        r"""Gets the data of this UpdatePersonalTemplateStateResponse.
 
         固定为null。
 
@@ -113,7 +113,7 @@ class UpdatePersonalTemplateStateResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdatePersonalTemplateStateResponse.
+        r"""Sets the data of this UpdatePersonalTemplateStateResponse.
 
         固定为null。
 

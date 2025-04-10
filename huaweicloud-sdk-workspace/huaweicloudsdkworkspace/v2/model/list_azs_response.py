@@ -30,7 +30,7 @@ class ListAzsResponse(SdkResponse):
     }
 
     def __init__(self, support_type=None, default_type=None, azs=None):
-        """ListAzsResponse
+        r"""ListAzsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAzsResponse(SdkResponse):
 
     @property
     def support_type(self):
-        """Gets the support_type of this ListAzsResponse.
+        r"""Gets the support_type of this ListAzsResponse.
 
         支持类型。
 
@@ -69,7 +69,7 @@ class ListAzsResponse(SdkResponse):
 
     @support_type.setter
     def support_type(self, support_type):
-        """Sets the support_type of this ListAzsResponse.
+        r"""Sets the support_type of this ListAzsResponse.
 
         支持类型。
 
@@ -80,7 +80,7 @@ class ListAzsResponse(SdkResponse):
 
     @property
     def default_type(self):
-        """Gets the default_type of this ListAzsResponse.
+        r"""Gets the default_type of this ListAzsResponse.
 
         默认类型。
 
@@ -91,7 +91,7 @@ class ListAzsResponse(SdkResponse):
 
     @default_type.setter
     def default_type(self, default_type):
-        """Sets the default_type of this ListAzsResponse.
+        r"""Sets the default_type of this ListAzsResponse.
 
         默认类型。
 
@@ -102,7 +102,7 @@ class ListAzsResponse(SdkResponse):
 
     @property
     def azs(self):
-        """Gets the azs of this ListAzsResponse.
+        r"""Gets the azs of this ListAzsResponse.
 
         可用区。
 
@@ -113,7 +113,7 @@ class ListAzsResponse(SdkResponse):
 
     @azs.setter
     def azs(self, azs):
-        """Sets the azs of this ListAzsResponse.
+        r"""Sets the azs of this ListAzsResponse.
 
         可用区。
 

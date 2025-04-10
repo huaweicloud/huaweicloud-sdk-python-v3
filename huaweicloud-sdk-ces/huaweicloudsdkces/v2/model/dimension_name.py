@@ -23,7 +23,7 @@ class DimensionName:
     }
 
     def __init__(self):
-        """DimensionName
+        r"""DimensionName
 
         The model defined in huaweicloud sdk
 

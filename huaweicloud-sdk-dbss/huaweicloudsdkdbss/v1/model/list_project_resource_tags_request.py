@@ -25,7 +25,7 @@ class ListProjectResourceTagsRequest:
     }
 
     def __init__(self, resource_type=None):
-        """ListProjectResourceTagsRequest
+        r"""ListProjectResourceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListProjectResourceTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListProjectResourceTagsRequest.
+        r"""Gets the resource_type of this ListProjectResourceTagsRequest.
 
         资源类型。 - auditInstance
 
@@ -53,7 +53,7 @@ class ListProjectResourceTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListProjectResourceTagsRequest.
+        r"""Sets the resource_type of this ListProjectResourceTagsRequest.
 
         资源类型。 - auditInstance
 

@@ -30,7 +30,7 @@ class ListApplicationEndpointsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, next_page_flag=None, endpoints=None):
-        """ListApplicationEndpointsResponse
+        r"""ListApplicationEndpointsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListApplicationEndpointsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListApplicationEndpointsResponse.
+        r"""Gets the request_id of this ListApplicationEndpointsResponse.
 
         请求的唯一标识ID。
 
@@ -69,7 +69,7 @@ class ListApplicationEndpointsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListApplicationEndpointsResponse.
+        r"""Sets the request_id of this ListApplicationEndpointsResponse.
 
         请求的唯一标识ID。
 
@@ -80,7 +80,7 @@ class ListApplicationEndpointsResponse(SdkResponse):
 
     @property
     def next_page_flag(self):
-        """Gets the next_page_flag of this ListApplicationEndpointsResponse.
+        r"""Gets the next_page_flag of this ListApplicationEndpointsResponse.
 
         是否有下一页标识。
 
@@ -91,7 +91,7 @@ class ListApplicationEndpointsResponse(SdkResponse):
 
     @next_page_flag.setter
     def next_page_flag(self, next_page_flag):
-        """Sets the next_page_flag of this ListApplicationEndpointsResponse.
+        r"""Sets the next_page_flag of this ListApplicationEndpointsResponse.
 
         是否有下一页标识。
 
@@ -102,7 +102,7 @@ class ListApplicationEndpointsResponse(SdkResponse):
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this ListApplicationEndpointsResponse.
+        r"""Gets the endpoints of this ListApplicationEndpointsResponse.
 
         Application_endpoint结构体数。
 
@@ -113,7 +113,7 @@ class ListApplicationEndpointsResponse(SdkResponse):
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this ListApplicationEndpointsResponse.
+        r"""Sets the endpoints of this ListApplicationEndpointsResponse.
 
         Application_endpoint结构体数。
 

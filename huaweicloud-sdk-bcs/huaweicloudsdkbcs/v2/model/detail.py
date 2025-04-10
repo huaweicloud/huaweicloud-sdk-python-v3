@@ -31,7 +31,7 @@ class Detail:
     }
 
     def __init__(self, start_time=None, end_time=None, status=None, detail=None):
-        """Detail
+        r"""Detail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Detail:
 
     @property
     def start_time(self):
-        """Gets the start_time of this Detail.
+        r"""Gets the start_time of this Detail.
 
         开始时间
 
@@ -75,7 +75,7 @@ class Detail:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this Detail.
+        r"""Sets the start_time of this Detail.
 
         开始时间
 
@@ -86,7 +86,7 @@ class Detail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this Detail.
+        r"""Gets the end_time of this Detail.
 
         结束时间
 
@@ -97,7 +97,7 @@ class Detail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this Detail.
+        r"""Sets the end_time of this Detail.
 
         结束时间
 
@@ -108,7 +108,7 @@ class Detail:
 
     @property
     def status(self):
-        """Gets the status of this Detail.
+        r"""Gets the status of this Detail.
 
         状态
 
@@ -119,7 +119,7 @@ class Detail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Detail.
+        r"""Sets the status of this Detail.
 
         状态
 
@@ -130,7 +130,7 @@ class Detail:
 
     @property
     def detail(self):
-        """Gets the detail of this Detail.
+        r"""Gets the detail of this Detail.
 
         细节描述
 
@@ -141,7 +141,7 @@ class Detail:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this Detail.
+        r"""Sets the detail of this Detail.
 
         细节描述
 

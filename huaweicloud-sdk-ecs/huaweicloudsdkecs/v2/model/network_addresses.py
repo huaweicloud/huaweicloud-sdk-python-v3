@@ -35,7 +35,7 @@ class NetworkAddresses:
     }
 
     def __init__(self, addr=None, version=None, os_ext_ip_sport_id=None, os_ext_ips_ma_cmac_addr=None, os_ext_ip_stype=None, primary=None):
-        """NetworkAddresses
+        r"""NetworkAddresses
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class NetworkAddresses:
 
     @property
     def addr(self):
-        """Gets the addr of this NetworkAddresses.
+        r"""Gets the addr of this NetworkAddresses.
 
         IP地址。
 
@@ -84,7 +84,7 @@ class NetworkAddresses:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this NetworkAddresses.
+        r"""Sets the addr of this NetworkAddresses.
 
         IP地址。
 
@@ -95,7 +95,7 @@ class NetworkAddresses:
 
     @property
     def version(self):
-        """Gets the version of this NetworkAddresses.
+        r"""Gets the version of this NetworkAddresses.
 
         IP地址类型，值为4或6。  4：IP地址类型是IPv4 6：IP地址类型是IPv6
 
@@ -106,7 +106,7 @@ class NetworkAddresses:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this NetworkAddresses.
+        r"""Sets the version of this NetworkAddresses.
 
         IP地址类型，值为4或6。  4：IP地址类型是IPv4 6：IP地址类型是IPv6
 
@@ -117,7 +117,7 @@ class NetworkAddresses:
 
     @property
     def os_ext_ip_sport_id(self):
-        """Gets the os_ext_ip_sport_id of this NetworkAddresses.
+        r"""Gets the os_ext_ip_sport_id of this NetworkAddresses.
 
         IP地址对应的端口ID。
 
@@ -128,7 +128,7 @@ class NetworkAddresses:
 
     @os_ext_ip_sport_id.setter
     def os_ext_ip_sport_id(self, os_ext_ip_sport_id):
-        """Sets the os_ext_ip_sport_id of this NetworkAddresses.
+        r"""Sets the os_ext_ip_sport_id of this NetworkAddresses.
 
         IP地址对应的端口ID。
 
@@ -139,7 +139,7 @@ class NetworkAddresses:
 
     @property
     def os_ext_ips_ma_cmac_addr(self):
-        """Gets the os_ext_ips_ma_cmac_addr of this NetworkAddresses.
+        r"""Gets the os_ext_ips_ma_cmac_addr of this NetworkAddresses.
 
         扩展属性，MAC地址。
 
@@ -150,7 +150,7 @@ class NetworkAddresses:
 
     @os_ext_ips_ma_cmac_addr.setter
     def os_ext_ips_ma_cmac_addr(self, os_ext_ips_ma_cmac_addr):
-        """Sets the os_ext_ips_ma_cmac_addr of this NetworkAddresses.
+        r"""Sets the os_ext_ips_ma_cmac_addr of this NetworkAddresses.
 
         扩展属性，MAC地址。
 
@@ -161,7 +161,7 @@ class NetworkAddresses:
 
     @property
     def os_ext_ip_stype(self):
-        """Gets the os_ext_ip_stype of this NetworkAddresses.
+        r"""Gets the os_ext_ip_stype of this NetworkAddresses.
 
         扩展属性，分配IP地址方式。  fixed：代表私有IP地址。 floating：代表浮动IP地址。
 
@@ -172,7 +172,7 @@ class NetworkAddresses:
 
     @os_ext_ip_stype.setter
     def os_ext_ip_stype(self, os_ext_ip_stype):
-        """Sets the os_ext_ip_stype of this NetworkAddresses.
+        r"""Sets the os_ext_ip_stype of this NetworkAddresses.
 
         扩展属性，分配IP地址方式。  fixed：代表私有IP地址。 floating：代表浮动IP地址。
 
@@ -183,7 +183,7 @@ class NetworkAddresses:
 
     @property
     def primary(self):
-        """Gets the primary of this NetworkAddresses.
+        r"""Gets the primary of this NetworkAddresses.
 
         是否是主网卡。  true：主网卡。 false：辅助网卡。
 
@@ -194,7 +194,7 @@ class NetworkAddresses:
 
     @primary.setter
     def primary(self, primary):
-        """Sets the primary of this NetworkAddresses.
+        r"""Sets the primary of this NetworkAddresses.
 
         是否是主网卡。  true：主网卡。 false：辅助网卡。
 

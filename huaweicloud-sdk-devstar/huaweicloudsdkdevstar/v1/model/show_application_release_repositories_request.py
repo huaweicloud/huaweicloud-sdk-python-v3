@@ -35,7 +35,7 @@ class ShowApplicationReleaseRepositoriesRequest:
     }
 
     def __init__(self, x_language=None, application_id=None, parent_id=None, keyword=None, limit=None, offset=None):
-        """ShowApplicationReleaseRepositoriesRequest
+        r"""ShowApplicationReleaseRepositoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ShowApplicationReleaseRepositoriesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowApplicationReleaseRepositoriesRequest.
+        r"""Gets the x_language of this ShowApplicationReleaseRepositoriesRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -88,7 +88,7 @@ class ShowApplicationReleaseRepositoriesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowApplicationReleaseRepositoriesRequest.
+        r"""Sets the x_language of this ShowApplicationReleaseRepositoriesRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -99,7 +99,7 @@ class ShowApplicationReleaseRepositoriesRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ShowApplicationReleaseRepositoriesRequest.
+        r"""Gets the application_id of this ShowApplicationReleaseRepositoriesRequest.
 
         应用id
 
@@ -110,7 +110,7 @@ class ShowApplicationReleaseRepositoriesRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ShowApplicationReleaseRepositoriesRequest.
+        r"""Sets the application_id of this ShowApplicationReleaseRepositoriesRequest.
 
         应用id
 
@@ -121,7 +121,7 @@ class ShowApplicationReleaseRepositoriesRequest:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ShowApplicationReleaseRepositoriesRequest.
+        r"""Gets the parent_id of this ShowApplicationReleaseRepositoriesRequest.
 
         父id,仅在仓库类型为ReleaseMan需要
 
@@ -132,7 +132,7 @@ class ShowApplicationReleaseRepositoriesRequest:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ShowApplicationReleaseRepositoriesRequest.
+        r"""Sets the parent_id of this ShowApplicationReleaseRepositoriesRequest.
 
         父id,仅在仓库类型为ReleaseMan需要
 
@@ -143,7 +143,7 @@ class ShowApplicationReleaseRepositoriesRequest:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ShowApplicationReleaseRepositoriesRequest.
+        r"""Gets the keyword of this ShowApplicationReleaseRepositoriesRequest.
 
         搜索关键字,支持按名称搜索,默认null
 
@@ -154,7 +154,7 @@ class ShowApplicationReleaseRepositoriesRequest:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ShowApplicationReleaseRepositoriesRequest.
+        r"""Sets the keyword of this ShowApplicationReleaseRepositoriesRequest.
 
         搜索关键字,支持按名称搜索,默认null
 
@@ -165,7 +165,7 @@ class ShowApplicationReleaseRepositoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowApplicationReleaseRepositoriesRequest.
+        r"""Gets the limit of this ShowApplicationReleaseRepositoriesRequest.
 
         每页显示的条目数量,默认10
 
@@ -176,7 +176,7 @@ class ShowApplicationReleaseRepositoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowApplicationReleaseRepositoriesRequest.
+        r"""Sets the limit of this ShowApplicationReleaseRepositoriesRequest.
 
         每页显示的条目数量,默认10
 
@@ -187,7 +187,7 @@ class ShowApplicationReleaseRepositoriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowApplicationReleaseRepositoriesRequest.
+        r"""Gets the offset of this ShowApplicationReleaseRepositoriesRequest.
 
         偏移量，表示从此偏移量开始查询,默认0
 
@@ -198,7 +198,7 @@ class ShowApplicationReleaseRepositoriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowApplicationReleaseRepositoriesRequest.
+        r"""Sets the offset of this ShowApplicationReleaseRepositoriesRequest.
 
         偏移量，表示从此偏移量开始查询,默认0
 

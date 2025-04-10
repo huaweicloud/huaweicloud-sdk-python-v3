@@ -25,7 +25,7 @@ class UnsubscribePostpaidVolumeRequest:
     }
 
     def __init__(self, body=None):
-        """UnsubscribePostpaidVolumeRequest
+        r"""UnsubscribePostpaidVolumeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UnsubscribePostpaidVolumeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UnsubscribePostpaidVolumeRequest.
+        r"""Gets the body of this UnsubscribePostpaidVolumeRequest.
 
         :return: The body of this UnsubscribePostpaidVolumeRequest.
         :rtype: :class:`huaweicloudsdkevs.v2.UnsubscribeVolumeRequestBody`
@@ -52,7 +52,7 @@ class UnsubscribePostpaidVolumeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UnsubscribePostpaidVolumeRequest.
+        r"""Sets the body of this UnsubscribePostpaidVolumeRequest.
 
         :param body: The body of this UnsubscribePostpaidVolumeRequest.
         :type body: :class:`huaweicloudsdkevs.v2.UnsubscribeVolumeRequestBody`

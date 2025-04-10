@@ -29,7 +29,7 @@ class ListTagsForResourceTypeRequest:
     }
 
     def __init__(self, resource_type=None, limit=None, offset=None):
-        """ListTagsForResourceTypeRequest
+        r"""ListTagsForResourceTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListTagsForResourceTypeRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListTagsForResourceTypeRequest.
+        r"""Gets the resource_type of this ListTagsForResourceTypeRequest.
 
         资源类型
 
@@ -67,7 +67,7 @@ class ListTagsForResourceTypeRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListTagsForResourceTypeRequest.
+        r"""Sets the resource_type of this ListTagsForResourceTypeRequest.
 
         资源类型
 
@@ -78,7 +78,7 @@ class ListTagsForResourceTypeRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTagsForResourceTypeRequest.
+        r"""Gets the limit of this ListTagsForResourceTypeRequest.
 
         查询记录数默认为1000，limit最多为1000,不能为负数，最小值为1
 
@@ -89,7 +89,7 @@ class ListTagsForResourceTypeRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTagsForResourceTypeRequest.
+        r"""Sets the limit of this ListTagsForResourceTypeRequest.
 
         查询记录数默认为1000，limit最多为1000,不能为负数，最小值为1
 
@@ -100,7 +100,7 @@ class ListTagsForResourceTypeRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTagsForResourceTypeRequest.
+        r"""Gets the offset of this ListTagsForResourceTypeRequest.
 
         索引位置，从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）,必须为数字，不能为负数
 
@@ -111,7 +111,7 @@ class ListTagsForResourceTypeRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTagsForResourceTypeRequest.
+        r"""Sets the offset of this ListTagsForResourceTypeRequest.
 
         索引位置，从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）,必须为数字，不能为负数
 

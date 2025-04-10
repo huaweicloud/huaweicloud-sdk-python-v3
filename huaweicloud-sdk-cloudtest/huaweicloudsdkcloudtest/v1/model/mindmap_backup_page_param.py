@@ -33,7 +33,7 @@ class MindmapBackupPageParam:
     }
 
     def __init__(self, bak_name=None, limit=None, offset=None, mindmap_id=None, type=None):
-        """MindmapBackupPageParam
+        r"""MindmapBackupPageParam
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MindmapBackupPageParam:
 
     @property
     def bak_name(self):
-        """Gets the bak_name of this MindmapBackupPageParam.
+        r"""Gets the bak_name of this MindmapBackupPageParam.
 
         备份名称
 
@@ -82,7 +82,7 @@ class MindmapBackupPageParam:
 
     @bak_name.setter
     def bak_name(self, bak_name):
-        """Sets the bak_name of this MindmapBackupPageParam.
+        r"""Sets the bak_name of this MindmapBackupPageParam.
 
         备份名称
 
@@ -93,7 +93,7 @@ class MindmapBackupPageParam:
 
     @property
     def limit(self):
-        """Gets the limit of this MindmapBackupPageParam.
+        r"""Gets the limit of this MindmapBackupPageParam.
 
         每页显示的条目数量，最大支持200条
 
@@ -104,7 +104,7 @@ class MindmapBackupPageParam:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this MindmapBackupPageParam.
+        r"""Sets the limit of this MindmapBackupPageParam.
 
         每页显示的条目数量，最大支持200条
 
@@ -115,7 +115,7 @@ class MindmapBackupPageParam:
 
     @property
     def offset(self):
-        """Gets the offset of this MindmapBackupPageParam.
+        r"""Gets the offset of this MindmapBackupPageParam.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -126,7 +126,7 @@ class MindmapBackupPageParam:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this MindmapBackupPageParam.
+        r"""Sets the offset of this MindmapBackupPageParam.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -137,7 +137,7 @@ class MindmapBackupPageParam:
 
     @property
     def mindmap_id(self):
-        """Gets the mindmap_id of this MindmapBackupPageParam.
+        r"""Gets the mindmap_id of this MindmapBackupPageParam.
 
         脑图ID
 
@@ -148,7 +148,7 @@ class MindmapBackupPageParam:
 
     @mindmap_id.setter
     def mindmap_id(self, mindmap_id):
-        """Sets the mindmap_id of this MindmapBackupPageParam.
+        r"""Sets the mindmap_id of this MindmapBackupPageParam.
 
         脑图ID
 
@@ -159,7 +159,7 @@ class MindmapBackupPageParam:
 
     @property
     def type(self):
-        """Gets the type of this MindmapBackupPageParam.
+        r"""Gets the type of this MindmapBackupPageParam.
 
         备份类型
 
@@ -170,7 +170,7 @@ class MindmapBackupPageParam:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MindmapBackupPageParam.
+        r"""Sets the type of this MindmapBackupPageParam.
 
         备份类型
 

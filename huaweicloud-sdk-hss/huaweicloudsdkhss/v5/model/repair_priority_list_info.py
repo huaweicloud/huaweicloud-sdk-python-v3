@@ -27,7 +27,7 @@ class RepairPriorityListInfo:
     }
 
     def __init__(self, repair_priority=None, host_num=None):
-        """RepairPriorityListInfo
+        r"""RepairPriorityListInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RepairPriorityListInfo:
 
     @property
     def repair_priority(self):
-        """Gets the repair_priority of this RepairPriorityListInfo.
+        r"""Gets the repair_priority of this RepairPriorityListInfo.
 
         修复优先级 Critical 紧急 High 高 Medium 中 Low 低
 
@@ -61,7 +61,7 @@ class RepairPriorityListInfo:
 
     @repair_priority.setter
     def repair_priority(self, repair_priority):
-        """Sets the repair_priority of this RepairPriorityListInfo.
+        r"""Sets the repair_priority of this RepairPriorityListInfo.
 
         修复优先级 Critical 紧急 High 高 Medium 中 Low 低
 
@@ -72,7 +72,7 @@ class RepairPriorityListInfo:
 
     @property
     def host_num(self):
-        """Gets the host_num of this RepairPriorityListInfo.
+        r"""Gets the host_num of this RepairPriorityListInfo.
 
         当前修复优先级对应的主机数量
 
@@ -83,7 +83,7 @@ class RepairPriorityListInfo:
 
     @host_num.setter
     def host_num(self, host_num):
-        """Sets the host_num of this RepairPriorityListInfo.
+        r"""Sets the host_num of this RepairPriorityListInfo.
 
         当前修复优先级对应的主机数量
 

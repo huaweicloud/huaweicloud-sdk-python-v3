@@ -25,7 +25,7 @@ class CreateAppQuotaBindingApp:
     }
 
     def __init__(self, app_ids=None):
-        """CreateAppQuotaBindingApp
+        r"""CreateAppQuotaBindingApp
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateAppQuotaBindingApp:
 
     @property
     def app_ids(self):
-        """Gets the app_ids of this CreateAppQuotaBindingApp.
+        r"""Gets the app_ids of this CreateAppQuotaBindingApp.
 
         客户端应用编号列表
 
@@ -53,7 +53,7 @@ class CreateAppQuotaBindingApp:
 
     @app_ids.setter
     def app_ids(self, app_ids):
-        """Sets the app_ids of this CreateAppQuotaBindingApp.
+        r"""Sets the app_ids of this CreateAppQuotaBindingApp.
 
         客户端应用编号列表
 

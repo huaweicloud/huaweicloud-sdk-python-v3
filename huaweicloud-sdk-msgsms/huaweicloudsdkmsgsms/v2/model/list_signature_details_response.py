@@ -28,7 +28,7 @@ class ListSignatureDetailsResponse(SdkResponse):
     }
 
     def __init__(self, results=None, total=None):
-        """ListSignatureDetailsResponse
+        r"""ListSignatureDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSignatureDetailsResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ListSignatureDetailsResponse.
+        r"""Gets the results of this ListSignatureDetailsResponse.
 
         查询结果
 
@@ -62,7 +62,7 @@ class ListSignatureDetailsResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ListSignatureDetailsResponse.
+        r"""Sets the results of this ListSignatureDetailsResponse.
 
         查询结果
 
@@ -73,7 +73,7 @@ class ListSignatureDetailsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSignatureDetailsResponse.
+        r"""Gets the total of this ListSignatureDetailsResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListSignatureDetailsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSignatureDetailsResponse.
+        r"""Sets the total of this ListSignatureDetailsResponse.
 
         总数
 

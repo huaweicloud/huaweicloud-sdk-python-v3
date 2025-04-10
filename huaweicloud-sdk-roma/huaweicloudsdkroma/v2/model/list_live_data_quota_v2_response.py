@@ -34,7 +34,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
     }
 
     def __init__(self, datasource=None, api=None, scripts=None, datasource_used=None, api_used=None):
-        """ListLiveDataQuotaV2Response
+        r"""ListLiveDataQuotaV2Response
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
 
     @property
     def datasource(self):
-        """Gets the datasource of this ListLiveDataQuotaV2Response.
+        r"""Gets the datasource of this ListLiveDataQuotaV2Response.
 
         数据源配额
 
@@ -83,7 +83,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
 
     @datasource.setter
     def datasource(self, datasource):
-        """Sets the datasource of this ListLiveDataQuotaV2Response.
+        r"""Sets the datasource of this ListLiveDataQuotaV2Response.
 
         数据源配额
 
@@ -94,7 +94,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
 
     @property
     def api(self):
-        """Gets the api of this ListLiveDataQuotaV2Response.
+        r"""Gets the api of this ListLiveDataQuotaV2Response.
 
         后端api配额
 
@@ -105,7 +105,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
 
     @api.setter
     def api(self, api):
-        """Sets the api of this ListLiveDataQuotaV2Response.
+        r"""Sets the api of this ListLiveDataQuotaV2Response.
 
         后端api配额
 
@@ -116,7 +116,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
 
     @property
     def scripts(self):
-        """Gets the scripts of this ListLiveDataQuotaV2Response.
+        r"""Gets the scripts of this ListLiveDataQuotaV2Response.
 
         脚本配额
 
@@ -127,7 +127,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
 
     @scripts.setter
     def scripts(self, scripts):
-        """Sets the scripts of this ListLiveDataQuotaV2Response.
+        r"""Sets the scripts of this ListLiveDataQuotaV2Response.
 
         脚本配额
 
@@ -138,7 +138,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
 
     @property
     def datasource_used(self):
-        """Gets the datasource_used of this ListLiveDataQuotaV2Response.
+        r"""Gets the datasource_used of this ListLiveDataQuotaV2Response.
 
         已使用的数据源数量
 
@@ -149,7 +149,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
 
     @datasource_used.setter
     def datasource_used(self, datasource_used):
-        """Sets the datasource_used of this ListLiveDataQuotaV2Response.
+        r"""Sets the datasource_used of this ListLiveDataQuotaV2Response.
 
         已使用的数据源数量
 
@@ -160,7 +160,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
 
     @property
     def api_used(self):
-        """Gets the api_used of this ListLiveDataQuotaV2Response.
+        r"""Gets the api_used of this ListLiveDataQuotaV2Response.
 
         已使用的后端api数量
 
@@ -171,7 +171,7 @@ class ListLiveDataQuotaV2Response(SdkResponse):
 
     @api_used.setter
     def api_used(self, api_used):
-        """Sets the api_used of this ListLiveDataQuotaV2Response.
+        r"""Sets the api_used of this ListLiveDataQuotaV2Response.
 
         已使用的后端api数量
 

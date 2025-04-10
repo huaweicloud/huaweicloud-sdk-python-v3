@@ -27,7 +27,7 @@ class ProxyReadonlyInstances:
     }
 
     def __init__(self, id=None, weight=None):
-        """ProxyReadonlyInstances
+        r"""ProxyReadonlyInstances
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ProxyReadonlyInstances:
 
     @property
     def id(self):
-        """Gets the id of this ProxyReadonlyInstances.
+        r"""Gets the id of this ProxyReadonlyInstances.
 
         只读实例ID。
 
@@ -59,7 +59,7 @@ class ProxyReadonlyInstances:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProxyReadonlyInstances.
+        r"""Sets the id of this ProxyReadonlyInstances.
 
         只读实例ID。
 
@@ -70,7 +70,7 @@ class ProxyReadonlyInstances:
 
     @property
     def weight(self):
-        """Gets the weight of this ProxyReadonlyInstances.
+        r"""Gets the weight of this ProxyReadonlyInstances.
 
         只读实例权重，取值范围为0~1000。
 
@@ -81,7 +81,7 @@ class ProxyReadonlyInstances:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this ProxyReadonlyInstances.
+        r"""Sets the weight of this ProxyReadonlyInstances.
 
         只读实例权重，取值范围为0~1000。
 

@@ -24,7 +24,7 @@ class DeleteSubnetTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteSubnetTagResponse
+        r"""DeleteSubnetTagResponse
 
         The model defined in huaweicloud sdk
 

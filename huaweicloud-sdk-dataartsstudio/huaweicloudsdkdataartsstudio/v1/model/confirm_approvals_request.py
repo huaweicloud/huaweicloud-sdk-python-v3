@@ -31,7 +31,7 @@ class ConfirmApprovalsRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, action_id=None, body=None):
-        """ConfirmApprovalsRequest
+        r"""ConfirmApprovalsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ConfirmApprovalsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ConfirmApprovalsRequest.
+        r"""Gets the workspace of this ConfirmApprovalsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -73,7 +73,7 @@ class ConfirmApprovalsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ConfirmApprovalsRequest.
+        r"""Sets the workspace of this ConfirmApprovalsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -84,7 +84,7 @@ class ConfirmApprovalsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ConfirmApprovalsRequest.
+        r"""Gets the x_project_id of this ConfirmApprovalsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -95,7 +95,7 @@ class ConfirmApprovalsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ConfirmApprovalsRequest.
+        r"""Sets the x_project_id of this ConfirmApprovalsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -106,7 +106,7 @@ class ConfirmApprovalsRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this ConfirmApprovalsRequest.
+        r"""Gets the action_id of this ConfirmApprovalsRequest.
 
         处理审批单结果类型。 枚举值：   - reject: 审批驳回   - resolve: 审批通过 
 
@@ -117,7 +117,7 @@ class ConfirmApprovalsRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this ConfirmApprovalsRequest.
+        r"""Sets the action_id of this ConfirmApprovalsRequest.
 
         处理审批单结果类型。 枚举值：   - reject: 审批驳回   - resolve: 审批通过 
 
@@ -128,7 +128,7 @@ class ConfirmApprovalsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ConfirmApprovalsRequest.
+        r"""Gets the body of this ConfirmApprovalsRequest.
 
         :return: The body of this ConfirmApprovalsRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalInfoParam`
@@ -137,7 +137,7 @@ class ConfirmApprovalsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ConfirmApprovalsRequest.
+        r"""Sets the body of this ConfirmApprovalsRequest.
 
         :param body: The body of this ConfirmApprovalsRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalInfoParam`

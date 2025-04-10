@@ -25,7 +25,7 @@ class TagsResultData:
     }
 
     def __init__(self, value=None):
-        """TagsResultData
+        r"""TagsResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TagsResultData:
 
     @property
     def value(self):
-        """Gets the value of this TagsResultData.
+        r"""Gets the value of this TagsResultData.
 
         给表/属性打标签/删除标签的接口返回，返回的vale是null则表示成功。
 
@@ -54,7 +54,7 @@ class TagsResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagsResultData.
+        r"""Sets the value of this TagsResultData.
 
         给表/属性打标签/删除标签的接口返回，返回的vale是null则表示成功。
 

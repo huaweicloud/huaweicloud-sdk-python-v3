@@ -28,7 +28,7 @@ class ListStoreResponse(SdkResponse):
     }
 
     def __init__(self, cursor_name=None, stores=None):
-        """ListStoreResponse
+        r"""ListStoreResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListStoreResponse(SdkResponse):
 
     @property
     def cursor_name(self):
-        """Gets the cursor_name of this ListStoreResponse.
+        r"""Gets the cursor_name of this ListStoreResponse.
 
         本次响应后的游标位置，下次请求时携带。 - 长度：[16,52] - 取值字符限制：[a-z0-9-]+ > 如果为空，表示后面无更多仓名。
 
@@ -62,7 +62,7 @@ class ListStoreResponse(SdkResponse):
 
     @cursor_name.setter
     def cursor_name(self, cursor_name):
-        """Sets the cursor_name of this ListStoreResponse.
+        r"""Sets the cursor_name of this ListStoreResponse.
 
         本次响应后的游标位置，下次请求时携带。 - 长度：[16,52] - 取值字符限制：[a-z0-9-]+ > 如果为空，表示后面无更多仓名。
 
@@ -73,7 +73,7 @@ class ListStoreResponse(SdkResponse):
 
     @property
     def stores(self):
-        """Gets the stores of this ListStoreResponse.
+        r"""Gets the stores of this ListStoreResponse.
 
         返回的仓名列表。
 
@@ -84,7 +84,7 @@ class ListStoreResponse(SdkResponse):
 
     @stores.setter
     def stores(self, stores):
-        """Sets the stores of this ListStoreResponse.
+        r"""Sets the stores of this ListStoreResponse.
 
         返回的仓名列表。
 

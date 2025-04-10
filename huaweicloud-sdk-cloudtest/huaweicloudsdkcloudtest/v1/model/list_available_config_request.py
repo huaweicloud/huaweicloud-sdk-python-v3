@@ -25,7 +25,7 @@ class ListAvailableConfigRequest:
     }
 
     def __init__(self, project_id=None):
-        """ListAvailableConfigRequest
+        r"""ListAvailableConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListAvailableConfigRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListAvailableConfigRequest.
+        r"""Gets the project_id of this ListAvailableConfigRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -53,7 +53,7 @@ class ListAvailableConfigRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListAvailableConfigRequest.
+        r"""Sets the project_id of this ListAvailableConfigRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 

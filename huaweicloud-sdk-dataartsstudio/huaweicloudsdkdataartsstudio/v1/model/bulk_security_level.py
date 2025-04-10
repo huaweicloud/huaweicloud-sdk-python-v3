@@ -27,7 +27,7 @@ class BulkSecurityLevel:
     }
 
     def __init__(self, guids=None, security_level=None):
-        """BulkSecurityLevel
+        r"""BulkSecurityLevel
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BulkSecurityLevel:
 
     @property
     def guids(self):
-        """Gets the guids of this BulkSecurityLevel.
+        r"""Gets the guids of this BulkSecurityLevel.
 
         资产guid
 
@@ -59,7 +59,7 @@ class BulkSecurityLevel:
 
     @guids.setter
     def guids(self, guids):
-        """Sets the guids of this BulkSecurityLevel.
+        r"""Sets the guids of this BulkSecurityLevel.
 
         资产guid
 
@@ -70,7 +70,7 @@ class BulkSecurityLevel:
 
     @property
     def security_level(self):
-        """Gets the security_level of this BulkSecurityLevel.
+        r"""Gets the security_level of this BulkSecurityLevel.
 
         密级
 
@@ -81,7 +81,7 @@ class BulkSecurityLevel:
 
     @security_level.setter
     def security_level(self, security_level):
-        """Sets the security_level of this BulkSecurityLevel.
+        r"""Sets the security_level of this BulkSecurityLevel.
 
         密级
 

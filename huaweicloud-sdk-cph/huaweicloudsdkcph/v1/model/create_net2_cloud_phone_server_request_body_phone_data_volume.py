@@ -27,7 +27,7 @@ class CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume:
     }
 
     def __init__(self, volume_type=None, size=None):
-        """CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume
+        r"""CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume.
+        r"""Gets the volume_type of this CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume.
 
         磁盘类型，只支持如下类型： - SSD - GPSSD
 
@@ -59,7 +59,7 @@ class CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume.
+        r"""Sets the volume_type of this CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume.
 
         磁盘类型，只支持如下类型： - SSD - GPSSD
 
@@ -70,7 +70,7 @@ class CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume:
 
     @property
     def size(self):
-        """Gets the size of this CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume.
+        r"""Gets the size of this CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume.
 
         手机磁盘大小，单位GiB，取值范围[10，32768]。
 
@@ -81,7 +81,7 @@ class CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume.
+        r"""Sets the size of this CreateNet2CloudPhoneServerRequestBodyPhoneDataVolume.
 
         手机磁盘大小，单位GiB，取值范围[10，32768]。
 

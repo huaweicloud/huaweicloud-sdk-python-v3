@@ -68,7 +68,7 @@ class CreateCertificateV2Response(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, type=None, instance_id=None, project_id=None, common_name=None, san=None, not_after=None, signature_algorithm=None, create_time=None, update_time=None, algorithm_type=None, is_has_trusted_root_ca=None, version=None, organization=None, organizational_unit=None, locality=None, state=None, country=None, not_before=None, serial_number=None, issuer=None):
-        """CreateCertificateV2Response
+        r"""CreateCertificateV2Response
 
         The model defined in huaweicloud sdk
 
@@ -191,7 +191,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateCertificateV2Response.
+        r"""Gets the id of this CreateCertificateV2Response.
 
         证书ID
 
@@ -202,7 +202,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateCertificateV2Response.
+        r"""Sets the id of this CreateCertificateV2Response.
 
         证书ID
 
@@ -213,7 +213,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateCertificateV2Response.
+        r"""Gets the name of this CreateCertificateV2Response.
 
         证书名称
 
@@ -224,7 +224,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCertificateV2Response.
+        r"""Sets the name of this CreateCertificateV2Response.
 
         证书名称
 
@@ -235,7 +235,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CreateCertificateV2Response.
+        r"""Gets the type of this CreateCertificateV2Response.
 
         证书类型  - global：全局证书 - instance：实例证书
 
@@ -246,7 +246,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateCertificateV2Response.
+        r"""Sets the type of this CreateCertificateV2Response.
 
         证书类型  - global：全局证书 - instance：实例证书
 
@@ -257,7 +257,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateCertificateV2Response.
+        r"""Gets the instance_id of this CreateCertificateV2Response.
 
         实例编码  - `type`为`global`时，缺省为common - `type`为`instance`时，为实例编码
 
@@ -268,7 +268,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateCertificateV2Response.
+        r"""Sets the instance_id of this CreateCertificateV2Response.
 
         实例编码  - `type`为`global`时，缺省为common - `type`为`instance`时，为实例编码
 
@@ -279,7 +279,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateCertificateV2Response.
+        r"""Gets the project_id of this CreateCertificateV2Response.
 
         租户项目编号
 
@@ -290,7 +290,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateCertificateV2Response.
+        r"""Sets the project_id of this CreateCertificateV2Response.
 
         租户项目编号
 
@@ -301,7 +301,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def common_name(self):
-        """Gets the common_name of this CreateCertificateV2Response.
+        r"""Gets the common_name of this CreateCertificateV2Response.
 
         域名
 
@@ -312,7 +312,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @common_name.setter
     def common_name(self, common_name):
-        """Sets the common_name of this CreateCertificateV2Response.
+        r"""Sets the common_name of this CreateCertificateV2Response.
 
         域名
 
@@ -323,7 +323,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def san(self):
-        """Gets the san of this CreateCertificateV2Response.
+        r"""Gets the san of this CreateCertificateV2Response.
 
         san扩展域名
 
@@ -334,7 +334,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @san.setter
     def san(self, san):
-        """Sets the san of this CreateCertificateV2Response.
+        r"""Sets the san of this CreateCertificateV2Response.
 
         san扩展域名
 
@@ -345,7 +345,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def not_after(self):
-        """Gets the not_after of this CreateCertificateV2Response.
+        r"""Gets the not_after of this CreateCertificateV2Response.
 
         有效期到
 
@@ -356,7 +356,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @not_after.setter
     def not_after(self, not_after):
-        """Sets the not_after of this CreateCertificateV2Response.
+        r"""Sets the not_after of this CreateCertificateV2Response.
 
         有效期到
 
@@ -367,7 +367,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this CreateCertificateV2Response.
+        r"""Gets the signature_algorithm of this CreateCertificateV2Response.
 
         签名算法
 
@@ -378,7 +378,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this CreateCertificateV2Response.
+        r"""Sets the signature_algorithm of this CreateCertificateV2Response.
 
         签名算法
 
@@ -389,7 +389,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateCertificateV2Response.
+        r"""Gets the create_time of this CreateCertificateV2Response.
 
         创建时间
 
@@ -400,7 +400,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateCertificateV2Response.
+        r"""Sets the create_time of this CreateCertificateV2Response.
 
         创建时间
 
@@ -411,7 +411,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateCertificateV2Response.
+        r"""Gets the update_time of this CreateCertificateV2Response.
 
         更新时间
 
@@ -422,7 +422,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateCertificateV2Response.
+        r"""Sets the update_time of this CreateCertificateV2Response.
 
         更新时间
 
@@ -433,7 +433,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def algorithm_type(self):
-        """Gets the algorithm_type of this CreateCertificateV2Response.
+        r"""Gets the algorithm_type of this CreateCertificateV2Response.
 
         证书算法类型： - RSA - ECC - SM2  [暂不支持](tag:hws;hws_hk;g42;Site)
 
@@ -444,7 +444,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @algorithm_type.setter
     def algorithm_type(self, algorithm_type):
-        """Sets the algorithm_type of this CreateCertificateV2Response.
+        r"""Sets the algorithm_type of this CreateCertificateV2Response.
 
         证书算法类型： - RSA - ECC - SM2  [暂不支持](tag:hws;hws_hk;g42;Site)
 
@@ -455,7 +455,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def is_has_trusted_root_ca(self):
-        """Gets the is_has_trusted_root_ca of this CreateCertificateV2Response.
+        r"""Gets the is_has_trusted_root_ca of this CreateCertificateV2Response.
 
         是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。  [暂不支持](tag:fcs;hcs;g42;Site)
 
@@ -466,7 +466,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @is_has_trusted_root_ca.setter
     def is_has_trusted_root_ca(self, is_has_trusted_root_ca):
-        """Sets the is_has_trusted_root_ca of this CreateCertificateV2Response.
+        r"""Sets the is_has_trusted_root_ca of this CreateCertificateV2Response.
 
         是否存在信任的根证书CA。当绑定证书存在trusted_root_ca时为true。  [暂不支持](tag:fcs;hcs;g42;Site)
 
@@ -477,7 +477,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this CreateCertificateV2Response.
+        r"""Gets the version of this CreateCertificateV2Response.
 
         版本
 
@@ -488,7 +488,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateCertificateV2Response.
+        r"""Sets the version of this CreateCertificateV2Response.
 
         版本
 
@@ -499,7 +499,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def organization(self):
-        """Gets the organization of this CreateCertificateV2Response.
+        r"""Gets the organization of this CreateCertificateV2Response.
 
         公司、组织
 
@@ -510,7 +510,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @organization.setter
     def organization(self, organization):
-        """Sets the organization of this CreateCertificateV2Response.
+        r"""Sets the organization of this CreateCertificateV2Response.
 
         公司、组织
 
@@ -521,7 +521,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def organizational_unit(self):
-        """Gets the organizational_unit of this CreateCertificateV2Response.
+        r"""Gets the organizational_unit of this CreateCertificateV2Response.
 
         部门
 
@@ -532,7 +532,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @organizational_unit.setter
     def organizational_unit(self, organizational_unit):
-        """Sets the organizational_unit of this CreateCertificateV2Response.
+        r"""Sets the organizational_unit of this CreateCertificateV2Response.
 
         部门
 
@@ -543,7 +543,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def locality(self):
-        """Gets the locality of this CreateCertificateV2Response.
+        r"""Gets the locality of this CreateCertificateV2Response.
 
         城市
 
@@ -554,7 +554,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @locality.setter
     def locality(self, locality):
-        """Sets the locality of this CreateCertificateV2Response.
+        r"""Sets the locality of this CreateCertificateV2Response.
 
         城市
 
@@ -565,7 +565,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this CreateCertificateV2Response.
+        r"""Gets the state of this CreateCertificateV2Response.
 
         省份
 
@@ -576,7 +576,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CreateCertificateV2Response.
+        r"""Sets the state of this CreateCertificateV2Response.
 
         省份
 
@@ -587,7 +587,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def country(self):
-        """Gets the country of this CreateCertificateV2Response.
+        r"""Gets the country of this CreateCertificateV2Response.
 
         国家
 
@@ -598,7 +598,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @country.setter
     def country(self, country):
-        """Sets the country of this CreateCertificateV2Response.
+        r"""Sets the country of this CreateCertificateV2Response.
 
         国家
 
@@ -609,7 +609,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def not_before(self):
-        """Gets the not_before of this CreateCertificateV2Response.
+        r"""Gets the not_before of this CreateCertificateV2Response.
 
         有效期从
 
@@ -620,7 +620,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @not_before.setter
     def not_before(self, not_before):
-        """Sets the not_before of this CreateCertificateV2Response.
+        r"""Sets the not_before of this CreateCertificateV2Response.
 
         有效期从
 
@@ -631,7 +631,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this CreateCertificateV2Response.
+        r"""Gets the serial_number of this CreateCertificateV2Response.
 
         序列号
 
@@ -642,7 +642,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this CreateCertificateV2Response.
+        r"""Sets the serial_number of this CreateCertificateV2Response.
 
         序列号
 
@@ -653,7 +653,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @property
     def issuer(self):
-        """Gets the issuer of this CreateCertificateV2Response.
+        r"""Gets the issuer of this CreateCertificateV2Response.
 
         颁发者
 
@@ -664,7 +664,7 @@ class CreateCertificateV2Response(SdkResponse):
 
     @issuer.setter
     def issuer(self, issuer):
-        """Sets the issuer of this CreateCertificateV2Response.
+        r"""Sets the issuer of this CreateCertificateV2Response.
 
         颁发者
 

@@ -28,7 +28,7 @@ class ValidateCssConnectionResponse(SdkResponse):
     }
 
     def __init__(self, connected=None, reason=None):
-        """ValidateCssConnectionResponse
+        r"""ValidateCssConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ValidateCssConnectionResponse(SdkResponse):
 
     @property
     def connected(self):
-        """Gets the connected of this ValidateCssConnectionResponse.
+        r"""Gets the connected of this ValidateCssConnectionResponse.
 
         是否连通
 
@@ -62,7 +62,7 @@ class ValidateCssConnectionResponse(SdkResponse):
 
     @connected.setter
     def connected(self, connected):
-        """Sets the connected of this ValidateCssConnectionResponse.
+        r"""Sets the connected of this ValidateCssConnectionResponse.
 
         是否连通
 
@@ -73,7 +73,7 @@ class ValidateCssConnectionResponse(SdkResponse):
 
     @property
     def reason(self):
-        """Gets the reason of this ValidateCssConnectionResponse.
+        r"""Gets the reason of this ValidateCssConnectionResponse.
 
         失败原因
 
@@ -84,7 +84,7 @@ class ValidateCssConnectionResponse(SdkResponse):
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ValidateCssConnectionResponse.
+        r"""Sets the reason of this ValidateCssConnectionResponse.
 
         失败原因
 

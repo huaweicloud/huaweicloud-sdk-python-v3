@@ -27,7 +27,7 @@ class WorkTableIssuseListResponseBodySeverity:
     }
 
     def __init__(self, id=None, name=None):
-        """WorkTableIssuseListResponseBodySeverity
+        r"""WorkTableIssuseListResponseBodySeverity
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WorkTableIssuseListResponseBodySeverity:
 
     @property
     def id(self):
-        """Gets the id of this WorkTableIssuseListResponseBodySeverity.
+        r"""Gets the id of this WorkTableIssuseListResponseBodySeverity.
 
         重要程度id
 
@@ -61,7 +61,7 @@ class WorkTableIssuseListResponseBodySeverity:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkTableIssuseListResponseBodySeverity.
+        r"""Sets the id of this WorkTableIssuseListResponseBodySeverity.
 
         重要程度id
 
@@ -72,7 +72,7 @@ class WorkTableIssuseListResponseBodySeverity:
 
     @property
     def name(self):
-        """Gets the name of this WorkTableIssuseListResponseBodySeverity.
+        r"""Gets the name of this WorkTableIssuseListResponseBodySeverity.
 
         重要程度名称
 
@@ -83,7 +83,7 @@ class WorkTableIssuseListResponseBodySeverity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkTableIssuseListResponseBodySeverity.
+        r"""Sets the name of this WorkTableIssuseListResponseBodySeverity.
 
         重要程度名称
 

@@ -35,7 +35,7 @@ class ListDisasterRecoveryDrillsRequest:
     }
 
     def __init__(self, server_group_id=None, name=None, status=None, drill_vpc_id=None, limit=None, offset=None):
-        """ListDisasterRecoveryDrillsRequest
+        r"""ListDisasterRecoveryDrillsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListDisasterRecoveryDrillsRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ListDisasterRecoveryDrillsRequest.
+        r"""Gets the server_group_id of this ListDisasterRecoveryDrillsRequest.
 
         保护组的ID。
 
@@ -89,7 +89,7 @@ class ListDisasterRecoveryDrillsRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ListDisasterRecoveryDrillsRequest.
+        r"""Sets the server_group_id of this ListDisasterRecoveryDrillsRequest.
 
         保护组的ID。
 
@@ -100,7 +100,7 @@ class ListDisasterRecoveryDrillsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDisasterRecoveryDrillsRequest.
+        r"""Gets the name of this ListDisasterRecoveryDrillsRequest.
 
         容灾演练的名称。支持模糊查询。
 
@@ -111,7 +111,7 @@ class ListDisasterRecoveryDrillsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDisasterRecoveryDrillsRequest.
+        r"""Sets the name of this ListDisasterRecoveryDrillsRequest.
 
         容灾演练的名称。支持模糊查询。
 
@@ -122,7 +122,7 @@ class ListDisasterRecoveryDrillsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListDisasterRecoveryDrillsRequest.
+        r"""Gets the status of this ListDisasterRecoveryDrillsRequest.
 
         容灾演练的状态。
 
@@ -133,7 +133,7 @@ class ListDisasterRecoveryDrillsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListDisasterRecoveryDrillsRequest.
+        r"""Sets the status of this ListDisasterRecoveryDrillsRequest.
 
         容灾演练的状态。
 
@@ -144,7 +144,7 @@ class ListDisasterRecoveryDrillsRequest:
 
     @property
     def drill_vpc_id(self):
-        """Gets the drill_vpc_id of this ListDisasterRecoveryDrillsRequest.
+        r"""Gets the drill_vpc_id of this ListDisasterRecoveryDrillsRequest.
 
         演练虚拟私有云ID。
 
@@ -155,7 +155,7 @@ class ListDisasterRecoveryDrillsRequest:
 
     @drill_vpc_id.setter
     def drill_vpc_id(self, drill_vpc_id):
-        """Sets the drill_vpc_id of this ListDisasterRecoveryDrillsRequest.
+        r"""Sets the drill_vpc_id of this ListDisasterRecoveryDrillsRequest.
 
         演练虚拟私有云ID。
 
@@ -166,7 +166,7 @@ class ListDisasterRecoveryDrillsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDisasterRecoveryDrillsRequest.
+        r"""Gets the limit of this ListDisasterRecoveryDrillsRequest.
 
         每次请求返回结果个数限制，取值范围为[0,1000]的正整数，默认值为1000。
 
@@ -177,7 +177,7 @@ class ListDisasterRecoveryDrillsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDisasterRecoveryDrillsRequest.
+        r"""Sets the limit of this ListDisasterRecoveryDrillsRequest.
 
         每次请求返回结果个数限制，取值范围为[0,1000]的正整数，默认值为1000。
 
@@ -188,7 +188,7 @@ class ListDisasterRecoveryDrillsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDisasterRecoveryDrillsRequest.
+        r"""Gets the offset of this ListDisasterRecoveryDrillsRequest.
 
         每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
 
@@ -199,7 +199,7 @@ class ListDisasterRecoveryDrillsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDisasterRecoveryDrillsRequest.
+        r"""Sets the offset of this ListDisasterRecoveryDrillsRequest.
 
         每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
 

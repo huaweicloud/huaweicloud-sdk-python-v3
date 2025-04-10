@@ -25,7 +25,7 @@ class RegisterDomainRequest:
     }
 
     def __init__(self, desktop_id=None):
-        """RegisterDomainRequest
+        r"""RegisterDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RegisterDomainRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this RegisterDomainRequest.
+        r"""Gets the desktop_id of this RegisterDomainRequest.
 
         桌面ID。
 
@@ -53,7 +53,7 @@ class RegisterDomainRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this RegisterDomainRequest.
+        r"""Sets the desktop_id of this RegisterDomainRequest.
 
         桌面ID。
 

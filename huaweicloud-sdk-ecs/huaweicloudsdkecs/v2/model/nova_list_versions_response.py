@@ -26,7 +26,7 @@ class NovaListVersionsResponse(SdkResponse):
     }
 
     def __init__(self, versions=None):
-        """NovaListVersionsResponse
+        r"""NovaListVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NovaListVersionsResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this NovaListVersionsResponse.
+        r"""Gets the versions of this NovaListVersionsResponse.
 
         API版本信息列表
 
@@ -55,7 +55,7 @@ class NovaListVersionsResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this NovaListVersionsResponse.
+        r"""Sets the versions of this NovaListVersionsResponse.
 
         API版本信息列表
 

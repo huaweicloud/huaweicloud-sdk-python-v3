@@ -26,7 +26,7 @@ class CountMultiResourcesResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """CountMultiResourcesResponse
+        r"""CountMultiResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CountMultiResourcesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CountMultiResourcesResponse.
+        r"""Gets the data of this CountMultiResourcesResponse.
 
         云资源数量列表
 
@@ -55,7 +55,7 @@ class CountMultiResourcesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CountMultiResourcesResponse.
+        r"""Sets the data of this CountMultiResourcesResponse.
 
         云资源数量列表
 

@@ -25,7 +25,7 @@ class InsertHeadersConfig:
     }
 
     def __init__(self, configs=None):
-        """InsertHeadersConfig
+        r"""InsertHeadersConfig
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class InsertHeadersConfig:
 
     @property
     def configs(self):
-        """Gets the configs of this InsertHeadersConfig.
+        r"""Gets the configs of this InsertHeadersConfig.
 
         参数解释：要添加请求头参数列表。
 
@@ -53,7 +53,7 @@ class InsertHeadersConfig:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this InsertHeadersConfig.
+        r"""Sets the configs of this InsertHeadersConfig.
 
         参数解释：要添加请求头参数列表。
 

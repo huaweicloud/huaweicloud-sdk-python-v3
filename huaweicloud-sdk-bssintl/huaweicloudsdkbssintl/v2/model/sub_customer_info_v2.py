@@ -35,7 +35,7 @@ class SubCustomerInfoV2:
     }
 
     def __init__(self, id=None, name=None, display_name=None, status=None, org_id=None, org_name=None):
-        """SubCustomerInfoV2
+        r"""SubCustomerInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SubCustomerInfoV2:
 
     @property
     def id(self):
-        """Gets the id of this SubCustomerInfoV2.
+        r"""Gets the id of this SubCustomerInfoV2.
 
         企业子账号的客户ID。
 
@@ -89,7 +89,7 @@ class SubCustomerInfoV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubCustomerInfoV2.
+        r"""Sets the id of this SubCustomerInfoV2.
 
         企业子账号的客户ID。
 
@@ -100,7 +100,7 @@ class SubCustomerInfoV2:
 
     @property
     def name(self):
-        """Gets the name of this SubCustomerInfoV2.
+        r"""Gets the name of this SubCustomerInfoV2.
 
         企业子账号的用户名。
 
@@ -111,7 +111,7 @@ class SubCustomerInfoV2:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubCustomerInfoV2.
+        r"""Sets the name of this SubCustomerInfoV2.
 
         企业子账号的用户名。
 
@@ -122,7 +122,7 @@ class SubCustomerInfoV2:
 
     @property
     def display_name(self):
-        """Gets the display_name of this SubCustomerInfoV2.
+        r"""Gets the display_name of this SubCustomerInfoV2.
 
         企业子账号的显示名称。 不限制特殊字符。
 
@@ -133,7 +133,7 @@ class SubCustomerInfoV2:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this SubCustomerInfoV2.
+        r"""Sets the display_name of this SubCustomerInfoV2.
 
         企业子账号的显示名称。 不限制特殊字符。
 
@@ -144,7 +144,7 @@ class SubCustomerInfoV2:
 
     @property
     def status(self):
-        """Gets the status of this SubCustomerInfoV2.
+        r"""Gets the status of this SubCustomerInfoV2.
 
         子账号状态： 1：正常2：创建中3：关闭中4：已关闭101：子账号注册中102：子账号待激活
 
@@ -155,7 +155,7 @@ class SubCustomerInfoV2:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SubCustomerInfoV2.
+        r"""Sets the status of this SubCustomerInfoV2.
 
         子账号状态： 1：正常2：创建中3：关闭中4：已关闭101：子账号注册中102：子账号待激活
 
@@ -166,7 +166,7 @@ class SubCustomerInfoV2:
 
     @property
     def org_id(self):
-        """Gets the org_id of this SubCustomerInfoV2.
+        r"""Gets the org_id of this SubCustomerInfoV2.
 
         子账号归属的组织单元ID。
 
@@ -177,7 +177,7 @@ class SubCustomerInfoV2:
 
     @org_id.setter
     def org_id(self, org_id):
-        """Sets the org_id of this SubCustomerInfoV2.
+        r"""Sets the org_id of this SubCustomerInfoV2.
 
         子账号归属的组织单元ID。
 
@@ -188,7 +188,7 @@ class SubCustomerInfoV2:
 
     @property
     def org_name(self):
-        """Gets the org_name of this SubCustomerInfoV2.
+        r"""Gets the org_name of this SubCustomerInfoV2.
 
         子账号归属的组织单元名称。  说明： 当子账号归属的组织是企业组织根节点时，本属性可能为空。
 
@@ -199,7 +199,7 @@ class SubCustomerInfoV2:
 
     @org_name.setter
     def org_name(self, org_name):
-        """Sets the org_name of this SubCustomerInfoV2.
+        r"""Sets the org_name of this SubCustomerInfoV2.
 
         子账号归属的组织单元名称。  说明： 当子账号归属的组织是企业组织根节点时，本属性可能为空。
 

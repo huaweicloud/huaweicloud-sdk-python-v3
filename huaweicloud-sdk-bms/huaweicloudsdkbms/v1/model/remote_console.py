@@ -27,7 +27,7 @@ class RemoteConsole:
     }
 
     def __init__(self, protocol=None, type=None):
-        """RemoteConsole
+        r"""RemoteConsole
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RemoteConsole:
 
     @property
     def protocol(self):
-        """Gets the protocol of this RemoteConsole.
+        r"""Gets the protocol of this RemoteConsole.
 
         远程登录的协议。
 
@@ -59,7 +59,7 @@ class RemoteConsole:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this RemoteConsole.
+        r"""Sets the protocol of this RemoteConsole.
 
         远程登录的协议。
 
@@ -70,7 +70,7 @@ class RemoteConsole:
 
     @property
     def type(self):
-        """Gets the type of this RemoteConsole.
+        r"""Gets the type of this RemoteConsole.
 
         远程登录的类型。
 
@@ -81,7 +81,7 @@ class RemoteConsole:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RemoteConsole.
+        r"""Sets the type of this RemoteConsole.
 
         远程登录的类型。
 

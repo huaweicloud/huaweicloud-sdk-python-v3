@@ -51,7 +51,7 @@ class ListRecordSets:
     }
 
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, create_at=None, update_at=None, status=None, default=None, project_id=None, links=None):
-        """ListRecordSets
+        r"""ListRecordSets
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ListRecordSets:
 
     @property
     def id(self):
-        """Gets the id of this ListRecordSets.
+        r"""Gets the id of this ListRecordSets.
 
         Record Set的ID。
 
@@ -145,7 +145,7 @@ class ListRecordSets:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListRecordSets.
+        r"""Sets the id of this ListRecordSets.
 
         Record Set的ID。
 
@@ -156,7 +156,7 @@ class ListRecordSets:
 
     @property
     def name(self):
-        """Gets the name of this ListRecordSets.
+        r"""Gets the name of this ListRecordSets.
 
         Record Set的名称。
 
@@ -167,7 +167,7 @@ class ListRecordSets:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListRecordSets.
+        r"""Sets the name of this ListRecordSets.
 
         Record Set的名称。
 
@@ -178,7 +178,7 @@ class ListRecordSets:
 
     @property
     def description(self):
-        """Gets the description of this ListRecordSets.
+        r"""Gets the description of this ListRecordSets.
 
         Record Set的描述信息。
 
@@ -189,7 +189,7 @@ class ListRecordSets:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListRecordSets.
+        r"""Sets the description of this ListRecordSets.
 
         Record Set的描述信息。
 
@@ -200,7 +200,7 @@ class ListRecordSets:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this ListRecordSets.
+        r"""Gets the zone_id of this ListRecordSets.
 
         托管该记录的zone_id。
 
@@ -211,7 +211,7 @@ class ListRecordSets:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this ListRecordSets.
+        r"""Sets the zone_id of this ListRecordSets.
 
         托管该记录的zone_id。
 
@@ -222,7 +222,7 @@ class ListRecordSets:
 
     @property
     def zone_name(self):
-        """Gets the zone_name of this ListRecordSets.
+        r"""Gets the zone_name of this ListRecordSets.
 
         托管该记录的zone_name。
 
@@ -233,7 +233,7 @@ class ListRecordSets:
 
     @zone_name.setter
     def zone_name(self, zone_name):
-        """Sets the zone_name of this ListRecordSets.
+        r"""Sets the zone_name of this ListRecordSets.
 
         托管该记录的zone_name。
 
@@ -244,7 +244,7 @@ class ListRecordSets:
 
     @property
     def type(self):
-        """Gets the type of this ListRecordSets.
+        r"""Gets the type of this ListRecordSets.
 
         记录类型。
 
@@ -255,7 +255,7 @@ class ListRecordSets:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListRecordSets.
+        r"""Sets the type of this ListRecordSets.
 
         记录类型。
 
@@ -266,7 +266,7 @@ class ListRecordSets:
 
     @property
     def ttl(self):
-        """Gets the ttl of this ListRecordSets.
+        r"""Gets the ttl of this ListRecordSets.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -277,7 +277,7 @@ class ListRecordSets:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this ListRecordSets.
+        r"""Sets the ttl of this ListRecordSets.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -288,7 +288,7 @@ class ListRecordSets:
 
     @property
     def records(self):
-        """Gets the records of this ListRecordSets.
+        r"""Gets the records of this ListRecordSets.
 
         域名解析后的值。
 
@@ -299,7 +299,7 @@ class ListRecordSets:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListRecordSets.
+        r"""Sets the records of this ListRecordSets.
 
         域名解析后的值。
 
@@ -310,7 +310,7 @@ class ListRecordSets:
 
     @property
     def create_at(self):
-        """Gets the create_at of this ListRecordSets.
+        r"""Gets the create_at of this ListRecordSets.
 
         创建时间。
 
@@ -321,7 +321,7 @@ class ListRecordSets:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this ListRecordSets.
+        r"""Sets the create_at of this ListRecordSets.
 
         创建时间。
 
@@ -332,7 +332,7 @@ class ListRecordSets:
 
     @property
     def update_at(self):
-        """Gets the update_at of this ListRecordSets.
+        r"""Gets the update_at of this ListRecordSets.
 
         更新时间。
 
@@ -343,7 +343,7 @@ class ListRecordSets:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this ListRecordSets.
+        r"""Sets the update_at of this ListRecordSets.
 
         更新时间。
 
@@ -354,7 +354,7 @@ class ListRecordSets:
 
     @property
     def status(self):
-        """Gets the status of this ListRecordSets.
+        r"""Gets the status of this ListRecordSets.
 
         资源状态。
 
@@ -365,7 +365,7 @@ class ListRecordSets:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListRecordSets.
+        r"""Sets the status of this ListRecordSets.
 
         资源状态。
 
@@ -376,7 +376,7 @@ class ListRecordSets:
 
     @property
     def default(self):
-        """Gets the default of this ListRecordSets.
+        r"""Gets the default of this ListRecordSets.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -387,7 +387,7 @@ class ListRecordSets:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this ListRecordSets.
+        r"""Sets the default of this ListRecordSets.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -398,7 +398,7 @@ class ListRecordSets:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListRecordSets.
+        r"""Gets the project_id of this ListRecordSets.
 
         该Record Set所属的项目ID。
 
@@ -409,7 +409,7 @@ class ListRecordSets:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListRecordSets.
+        r"""Sets the project_id of this ListRecordSets.
 
         该Record Set所属的项目ID。
 
@@ -420,7 +420,7 @@ class ListRecordSets:
 
     @property
     def links(self):
-        """Gets the links of this ListRecordSets.
+        r"""Gets the links of this ListRecordSets.
 
         :return: The links of this ListRecordSets.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -429,7 +429,7 @@ class ListRecordSets:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListRecordSets.
+        r"""Sets the links of this ListRecordSets.
 
         :param links: The links of this ListRecordSets.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`

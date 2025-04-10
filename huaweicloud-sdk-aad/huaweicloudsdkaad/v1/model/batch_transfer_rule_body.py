@@ -25,7 +25,7 @@ class BatchTransferRuleBody:
     }
 
     def __init__(self, rules=None):
-        """BatchTransferRuleBody
+        r"""BatchTransferRuleBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchTransferRuleBody:
 
     @property
     def rules(self):
-        """Gets the rules of this BatchTransferRuleBody.
+        r"""Gets the rules of this BatchTransferRuleBody.
 
         批量转发规则
 
@@ -54,7 +54,7 @@ class BatchTransferRuleBody:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this BatchTransferRuleBody.
+        r"""Sets the rules of this BatchTransferRuleBody.
 
         批量转发规则
 

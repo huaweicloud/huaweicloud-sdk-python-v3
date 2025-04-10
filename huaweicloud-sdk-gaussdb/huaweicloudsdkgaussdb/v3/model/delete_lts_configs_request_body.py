@@ -25,7 +25,7 @@ class DeleteLtsConfigsRequestBody:
     }
 
     def __init__(self, log_configs=None):
-        """DeleteLtsConfigsRequestBody
+        r"""DeleteLtsConfigsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteLtsConfigsRequestBody:
 
     @property
     def log_configs(self):
-        """Gets the log_configs of this DeleteLtsConfigsRequestBody.
+        r"""Gets the log_configs of this DeleteLtsConfigsRequestBody.
 
         日志配置列表
 
@@ -53,7 +53,7 @@ class DeleteLtsConfigsRequestBody:
 
     @log_configs.setter
     def log_configs(self, log_configs):
-        """Sets the log_configs of this DeleteLtsConfigsRequestBody.
+        r"""Sets the log_configs of this DeleteLtsConfigsRequestBody.
 
         日志配置列表
 

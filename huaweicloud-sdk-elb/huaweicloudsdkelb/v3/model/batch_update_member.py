@@ -55,7 +55,7 @@ class BatchUpdateMember:
     }
 
     def __init__(self, id=None, name=None, project_id=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, weight=None, address=None, operating_status=None, reason=None, status=None, member_type=None, instance_id=None, port_id=None, created_at=None, updated_at=None):
-        """BatchUpdateMember
+        r"""BatchUpdateMember
 
         The model defined in huaweicloud sdk
 
@@ -139,7 +139,7 @@ class BatchUpdateMember:
 
     @property
     def id(self):
-        """Gets the id of this BatchUpdateMember.
+        r"""Gets the id of this BatchUpdateMember.
 
         后端服务器ID。 >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
@@ -150,7 +150,7 @@ class BatchUpdateMember:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchUpdateMember.
+        r"""Sets the id of this BatchUpdateMember.
 
         后端服务器ID。 >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
@@ -161,7 +161,7 @@ class BatchUpdateMember:
 
     @property
     def name(self):
-        """Gets the name of this BatchUpdateMember.
+        r"""Gets the name of this BatchUpdateMember.
 
         后端服务器名称。
 
@@ -172,7 +172,7 @@ class BatchUpdateMember:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchUpdateMember.
+        r"""Sets the name of this BatchUpdateMember.
 
         后端服务器名称。
 
@@ -183,7 +183,7 @@ class BatchUpdateMember:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchUpdateMember.
+        r"""Gets the project_id of this BatchUpdateMember.
 
         后端服务器所在的项目ID。
 
@@ -194,7 +194,7 @@ class BatchUpdateMember:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchUpdateMember.
+        r"""Sets the project_id of this BatchUpdateMember.
 
         后端服务器所在的项目ID。
 
@@ -205,7 +205,7 @@ class BatchUpdateMember:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this BatchUpdateMember.
+        r"""Gets the admin_state_up of this BatchUpdateMember.
 
         后端服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
@@ -216,7 +216,7 @@ class BatchUpdateMember:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this BatchUpdateMember.
+        r"""Sets the admin_state_up of this BatchUpdateMember.
 
         后端服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
@@ -227,7 +227,7 @@ class BatchUpdateMember:
 
     @property
     def subnet_cidr_id(self):
-        """Gets the subnet_cidr_id of this BatchUpdateMember.
+        r"""Gets the subnet_cidr_id of this BatchUpdateMember.
 
         后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。  ipv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到  ipv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发已开启（ip_target_enable=true），则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。 - 若所属LB未开启跨VPC后端转发，该参数必填。 [- 网关型LB，即pool协议为IP时，必须指定该子网，且必须和负载均衡器的子网在同一个VPC下，但不能相同。](tag:hws_eu)  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
 
@@ -238,7 +238,7 @@ class BatchUpdateMember:
 
     @subnet_cidr_id.setter
     def subnet_cidr_id(self, subnet_cidr_id):
-        """Sets the subnet_cidr_id of this BatchUpdateMember.
+        r"""Sets the subnet_cidr_id of this BatchUpdateMember.
 
         后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。  ipv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到  ipv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的跨VPC后端转发已开启（ip_target_enable=true），则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。 - 若所属LB未开启跨VPC后端转发，该参数必填。 [- 网关型LB，即pool协议为IP时，必须指定该子网，且必须和负载均衡器的子网在同一个VPC下，但不能相同。](tag:hws_eu)  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
 
@@ -249,7 +249,7 @@ class BatchUpdateMember:
 
     @property
     def protocol_port(self):
-        """Gets the protocol_port of this BatchUpdateMember.
+        r"""Gets the protocol_port of this BatchUpdateMember.
 
         后端服务器业务端口。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)  >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
@@ -260,7 +260,7 @@ class BatchUpdateMember:
 
     @protocol_port.setter
     def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this BatchUpdateMember.
+        r"""Sets the protocol_port of this BatchUpdateMember.
 
         后端服务器业务端口。  [网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)  >在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
 
@@ -271,7 +271,7 @@ class BatchUpdateMember:
 
     @property
     def weight(self):
-        """Gets the weight of this BatchUpdateMember.
+        r"""Gets the weight of this BatchUpdateMember.
 
         后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明： - 若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。
 
@@ -282,7 +282,7 @@ class BatchUpdateMember:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this BatchUpdateMember.
+        r"""Sets the weight of this BatchUpdateMember.
 
         后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明： - 若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。
 
@@ -293,7 +293,7 @@ class BatchUpdateMember:
 
     @property
     def address(self):
-        """Gets the address of this BatchUpdateMember.
+        r"""Gets the address of this BatchUpdateMember.
 
         后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是私网IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
@@ -304,7 +304,7 @@ class BatchUpdateMember:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this BatchUpdateMember.
+        r"""Sets the address of this BatchUpdateMember.
 
         后端服务器对应的IP地址。  使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是私网IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
@@ -315,7 +315,7 @@ class BatchUpdateMember:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this BatchUpdateMember.
+        r"""Gets the operating_status of this BatchUpdateMember.
 
         后端服务器的健康状态。取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
 
@@ -326,7 +326,7 @@ class BatchUpdateMember:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this BatchUpdateMember.
+        r"""Sets the operating_status of this BatchUpdateMember.
 
         后端服务器的健康状态。取值： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
 
@@ -337,7 +337,7 @@ class BatchUpdateMember:
 
     @property
     def reason(self):
-        """Gets the reason of this BatchUpdateMember.
+        r"""Gets the reason of this BatchUpdateMember.
 
         :return: The reason of this BatchUpdateMember.
         :rtype: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
@@ -346,7 +346,7 @@ class BatchUpdateMember:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this BatchUpdateMember.
+        r"""Sets the reason of this BatchUpdateMember.
 
         :param reason: The reason of this BatchUpdateMember.
         :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
@@ -355,7 +355,7 @@ class BatchUpdateMember:
 
     @property
     def status(self):
-        """Gets the status of this BatchUpdateMember.
+        r"""Gets the status of this BatchUpdateMember.
 
         后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_stauts为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
 
@@ -366,7 +366,7 @@ class BatchUpdateMember:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchUpdateMember.
+        r"""Sets the status of this BatchUpdateMember.
 
         后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_stauts为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
 
@@ -377,7 +377,7 @@ class BatchUpdateMember:
 
     @property
     def member_type(self):
-        """Gets the member_type of this BatchUpdateMember.
+        r"""Gets the member_type of this BatchUpdateMember.
 
         后端服务器的类型。取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
 
@@ -388,7 +388,7 @@ class BatchUpdateMember:
 
     @member_type.setter
     def member_type(self, member_type):
-        """Sets the member_type of this BatchUpdateMember.
+        r"""Sets the member_type of this BatchUpdateMember.
 
         后端服务器的类型。取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
 
@@ -399,7 +399,7 @@ class BatchUpdateMember:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchUpdateMember.
+        r"""Gets the instance_id of this BatchUpdateMember.
 
         member关联的实例ID，空表示跨VPC场景的member。
 
@@ -410,7 +410,7 @@ class BatchUpdateMember:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchUpdateMember.
+        r"""Sets the instance_id of this BatchUpdateMember.
 
         member关联的实例ID，空表示跨VPC场景的member。
 
@@ -421,7 +421,7 @@ class BatchUpdateMember:
 
     @property
     def port_id(self):
-        """Gets the port_id of this BatchUpdateMember.
+        r"""Gets the port_id of this BatchUpdateMember.
 
         IP地址对应的VPC port ID
 
@@ -432,7 +432,7 @@ class BatchUpdateMember:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this BatchUpdateMember.
+        r"""Sets the port_id of this BatchUpdateMember.
 
         IP地址对应的VPC port ID
 
@@ -443,7 +443,7 @@ class BatchUpdateMember:
 
     @property
     def created_at(self):
-        """Gets the created_at of this BatchUpdateMember.
+        r"""Gets the created_at of this BatchUpdateMember.
 
         创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
@@ -454,7 +454,7 @@ class BatchUpdateMember:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this BatchUpdateMember.
+        r"""Sets the created_at of this BatchUpdateMember.
 
         创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
@@ -465,7 +465,7 @@ class BatchUpdateMember:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this BatchUpdateMember.
+        r"""Gets the updated_at of this BatchUpdateMember.
 
         更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 
@@ -476,7 +476,7 @@ class BatchUpdateMember:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this BatchUpdateMember.
+        r"""Sets the updated_at of this BatchUpdateMember.
 
         更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
 

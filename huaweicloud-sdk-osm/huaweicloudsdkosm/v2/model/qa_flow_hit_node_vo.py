@@ -31,7 +31,7 @@ class QaFlowHitNodeVo:
     }
 
     def __init__(self, id=None, name=None, content=None, answer_type=None):
-        """QaFlowHitNodeVo
+        r"""QaFlowHitNodeVo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class QaFlowHitNodeVo:
 
     @property
     def id(self):
-        """Gets the id of this QaFlowHitNodeVo.
+        r"""Gets the id of this QaFlowHitNodeVo.
 
         ID
 
@@ -75,7 +75,7 @@ class QaFlowHitNodeVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QaFlowHitNodeVo.
+        r"""Sets the id of this QaFlowHitNodeVo.
 
         ID
 
@@ -86,7 +86,7 @@ class QaFlowHitNodeVo:
 
     @property
     def name(self):
-        """Gets the name of this QaFlowHitNodeVo.
+        r"""Gets the name of this QaFlowHitNodeVo.
 
         名称
 
@@ -97,7 +97,7 @@ class QaFlowHitNodeVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QaFlowHitNodeVo.
+        r"""Sets the name of this QaFlowHitNodeVo.
 
         名称
 
@@ -108,7 +108,7 @@ class QaFlowHitNodeVo:
 
     @property
     def content(self):
-        """Gets the content of this QaFlowHitNodeVo.
+        r"""Gets the content of this QaFlowHitNodeVo.
 
         内容
 
@@ -119,7 +119,7 @@ class QaFlowHitNodeVo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this QaFlowHitNodeVo.
+        r"""Sets the content of this QaFlowHitNodeVo.
 
         内容
 
@@ -130,7 +130,7 @@ class QaFlowHitNodeVo:
 
     @property
     def answer_type(self):
-        """Gets the answer_type of this QaFlowHitNodeVo.
+        r"""Gets the answer_type of this QaFlowHitNodeVo.
 
         - TEXT:  - RICH_TEXT:  - FLOW:  - QA_PAIR:  
 
@@ -141,7 +141,7 @@ class QaFlowHitNodeVo:
 
     @answer_type.setter
     def answer_type(self, answer_type):
-        """Sets the answer_type of this QaFlowHitNodeVo.
+        r"""Sets the answer_type of this QaFlowHitNodeVo.
 
         - TEXT:  - RICH_TEXT:  - FLOW:  - QA_PAIR:  
 

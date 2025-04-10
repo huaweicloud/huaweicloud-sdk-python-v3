@@ -25,7 +25,7 @@ class ModifyDomainWebSwitchRequest:
     }
 
     def __init__(self, body=None):
-        """ModifyDomainWebSwitchRequest
+        r"""ModifyDomainWebSwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ModifyDomainWebSwitchRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyDomainWebSwitchRequest.
+        r"""Gets the body of this ModifyDomainWebSwitchRequest.
 
         :return: The body of this ModifyDomainWebSwitchRequest.
         :rtype: :class:`huaweicloudsdkaad.v1.CadDomainSwitchRequest`
@@ -52,7 +52,7 @@ class ModifyDomainWebSwitchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyDomainWebSwitchRequest.
+        r"""Sets the body of this ModifyDomainWebSwitchRequest.
 
         :param body: The body of this ModifyDomainWebSwitchRequest.
         :type body: :class:`huaweicloudsdkaad.v1.CadDomainSwitchRequest`

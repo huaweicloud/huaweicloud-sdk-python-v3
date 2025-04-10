@@ -27,7 +27,7 @@ class UpdateResourceGroupRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """UpdateResourceGroupRequest
+        r"""UpdateResourceGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateResourceGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateResourceGroupRequest.
+        r"""Gets the group_id of this UpdateResourceGroupRequest.
 
         资源分组ID。
 
@@ -60,7 +60,7 @@ class UpdateResourceGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateResourceGroupRequest.
+        r"""Sets the group_id of this UpdateResourceGroupRequest.
 
         资源分组ID。
 
@@ -71,7 +71,7 @@ class UpdateResourceGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateResourceGroupRequest.
+        r"""Gets the body of this UpdateResourceGroupRequest.
 
         :return: The body of this UpdateResourceGroupRequest.
         :rtype: :class:`huaweicloudsdkces.v1.UpdateResourceGroupRequestBody`
@@ -80,7 +80,7 @@ class UpdateResourceGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateResourceGroupRequest.
+        r"""Sets the body of this UpdateResourceGroupRequest.
 
         :param body: The body of this UpdateResourceGroupRequest.
         :type body: :class:`huaweicloudsdkces.v1.UpdateResourceGroupRequestBody`

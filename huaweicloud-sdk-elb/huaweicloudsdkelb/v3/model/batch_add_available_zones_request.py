@@ -27,7 +27,7 @@ class BatchAddAvailableZonesRequest:
     }
 
     def __init__(self, loadbalancer_id=None, body=None):
-        """BatchAddAvailableZonesRequest
+        r"""BatchAddAvailableZonesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAddAvailableZonesRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this BatchAddAvailableZonesRequest.
+        r"""Gets the loadbalancer_id of this BatchAddAvailableZonesRequest.
 
         参数解释：负载均衡器ID。
 
@@ -60,7 +60,7 @@ class BatchAddAvailableZonesRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this BatchAddAvailableZonesRequest.
+        r"""Sets the loadbalancer_id of this BatchAddAvailableZonesRequest.
 
         参数解释：负载均衡器ID。
 
@@ -71,7 +71,7 @@ class BatchAddAvailableZonesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddAvailableZonesRequest.
+        r"""Gets the body of this BatchAddAvailableZonesRequest.
 
         :return: The body of this BatchAddAvailableZonesRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.BatchAddAvailableZonesRequestBody`
@@ -80,7 +80,7 @@ class BatchAddAvailableZonesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddAvailableZonesRequest.
+        r"""Sets the body of this BatchAddAvailableZonesRequest.
 
         :param body: The body of this BatchAddAvailableZonesRequest.
         :type body: :class:`huaweicloudsdkelb.v3.BatchAddAvailableZonesRequestBody`

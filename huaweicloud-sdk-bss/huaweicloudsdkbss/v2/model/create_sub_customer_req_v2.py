@@ -35,7 +35,7 @@ class CreateSubCustomerReqV2:
     }
 
     def __init__(self, party_id=None, display_name=None, sub_customer_association_type=None, permission_ids=None, new_sub_customer=None, financial_custody=None):
-        """CreateSubCustomerReqV2
+        r"""CreateSubCustomerReqV2
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class CreateSubCustomerReqV2:
 
     @property
     def party_id(self):
-        """Gets the party_id of this CreateSubCustomerReqV2.
+        r"""Gets the party_id of this CreateSubCustomerReqV2.
 
         企业子账号挂载的组织单元。 组织单元的Party ID，通过查询企业组织结构接口的响应获得。
 
@@ -86,7 +86,7 @@ class CreateSubCustomerReqV2:
 
     @party_id.setter
     def party_id(self, party_id):
-        """Sets the party_id of this CreateSubCustomerReqV2.
+        r"""Sets the party_id of this CreateSubCustomerReqV2.
 
         企业子账号挂载的组织单元。 组织单元的Party ID，通过查询企业组织结构接口的响应获得。
 
@@ -97,7 +97,7 @@ class CreateSubCustomerReqV2:
 
     @property
     def display_name(self):
-        """Gets the display_name of this CreateSubCustomerReqV2.
+        r"""Gets the display_name of this CreateSubCustomerReqV2.
 
         企业子账号的显示名称，不限制特殊字符。
 
@@ -108,7 +108,7 @@ class CreateSubCustomerReqV2:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this CreateSubCustomerReqV2.
+        r"""Sets the display_name of this CreateSubCustomerReqV2.
 
         企业子账号的显示名称，不限制特殊字符。
 
@@ -119,7 +119,7 @@ class CreateSubCustomerReqV2:
 
     @property
     def sub_customer_association_type(self):
-        """Gets the sub_customer_association_type of this CreateSubCustomerReqV2.
+        r"""Gets the sub_customer_association_type of this CreateSubCustomerReqV2.
 
         子账号关联类型：1：同一法人。 关联类型目前只能是同一法人。
 
@@ -130,7 +130,7 @@ class CreateSubCustomerReqV2:
 
     @sub_customer_association_type.setter
     def sub_customer_association_type(self, sub_customer_association_type):
-        """Sets the sub_customer_association_type of this CreateSubCustomerReqV2.
+        r"""Sets the sub_customer_association_type of this CreateSubCustomerReqV2.
 
         子账号关联类型：1：同一法人。 关联类型目前只能是同一法人。
 
@@ -141,7 +141,7 @@ class CreateSubCustomerReqV2:
 
     @property
     def permission_ids(self):
-        """Gets the permission_ids of this CreateSubCustomerReqV2.
+        r"""Gets the permission_ids of this CreateSubCustomerReqV2.
 
         申请的权限列表。 支持的权限项请参见下表。当financial_custody为1时，此参数不生效，默认指定权限项：READ_FINANCE_INFO、READ_CONSUME_BILL、SHARE-BIZ-DISCOUNT-TO-SUB。
 
@@ -152,7 +152,7 @@ class CreateSubCustomerReqV2:
 
     @permission_ids.setter
     def permission_ids(self, permission_ids):
-        """Sets the permission_ids of this CreateSubCustomerReqV2.
+        r"""Sets the permission_ids of this CreateSubCustomerReqV2.
 
         申请的权限列表。 支持的权限项请参见下表。当financial_custody为1时，此参数不生效，默认指定权限项：READ_FINANCE_INFO、READ_CONSUME_BILL、SHARE-BIZ-DISCOUNT-TO-SUB。
 
@@ -163,7 +163,7 @@ class CreateSubCustomerReqV2:
 
     @property
     def new_sub_customer(self):
-        """Gets the new_sub_customer of this CreateSubCustomerReqV2.
+        r"""Gets the new_sub_customer of this CreateSubCustomerReqV2.
 
         :return: The new_sub_customer of this CreateSubCustomerReqV2.
         :rtype: :class:`huaweicloudsdkbss.v2.NewCustomerV2`
@@ -172,7 +172,7 @@ class CreateSubCustomerReqV2:
 
     @new_sub_customer.setter
     def new_sub_customer(self, new_sub_customer):
-        """Sets the new_sub_customer of this CreateSubCustomerReqV2.
+        r"""Sets the new_sub_customer of this CreateSubCustomerReqV2.
 
         :param new_sub_customer: The new_sub_customer of this CreateSubCustomerReqV2.
         :type new_sub_customer: :class:`huaweicloudsdkbss.v2.NewCustomerV2`
@@ -181,7 +181,7 @@ class CreateSubCustomerReqV2:
 
     @property
     def financial_custody(self):
-        """Gets the financial_custody of this CreateSubCustomerReqV2.
+        r"""Gets the financial_custody of this CreateSubCustomerReqV2.
 
         是否开通财务托管，0：不开通；1：开通。默认值0，默认不开通。
 
@@ -192,7 +192,7 @@ class CreateSubCustomerReqV2:
 
     @financial_custody.setter
     def financial_custody(self, financial_custody):
-        """Sets the financial_custody of this CreateSubCustomerReqV2.
+        r"""Sets the financial_custody of this CreateSubCustomerReqV2.
 
         是否开通财务托管，0：不开通；1：开通。默认值0，默认不开通。
 

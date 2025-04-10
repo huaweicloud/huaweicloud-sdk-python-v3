@@ -27,7 +27,7 @@ class ShowVirtualGatewayRequest:
     }
 
     def __init__(self, fields=None, virtual_gateway_id=None):
-        """ShowVirtualGatewayRequest
+        r"""ShowVirtualGatewayRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowVirtualGatewayRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ShowVirtualGatewayRequest.
+        r"""Gets the fields of this ShowVirtualGatewayRequest.
 
         显示字段列表
 
@@ -60,7 +60,7 @@ class ShowVirtualGatewayRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ShowVirtualGatewayRequest.
+        r"""Sets the fields of this ShowVirtualGatewayRequest.
 
         显示字段列表
 
@@ -71,7 +71,7 @@ class ShowVirtualGatewayRequest:
 
     @property
     def virtual_gateway_id(self):
-        """Gets the virtual_gateway_id of this ShowVirtualGatewayRequest.
+        r"""Gets the virtual_gateway_id of this ShowVirtualGatewayRequest.
 
         虚拟网关ID
 
@@ -82,7 +82,7 @@ class ShowVirtualGatewayRequest:
 
     @virtual_gateway_id.setter
     def virtual_gateway_id(self, virtual_gateway_id):
-        """Sets the virtual_gateway_id of this ShowVirtualGatewayRequest.
+        r"""Sets the virtual_gateway_id of this ShowVirtualGatewayRequest.
 
         虚拟网关ID
 

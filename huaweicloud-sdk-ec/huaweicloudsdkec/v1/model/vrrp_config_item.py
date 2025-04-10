@@ -37,7 +37,7 @@ class VrrpConfigItem:
     }
 
     def __init__(self, ieg_id=None, virtual_router_id=None, virtual_ip=None, active_equipment_id=None, active_interface_name=None, standby_equipment_id=None, standby_interface_name=None):
-        """VrrpConfigItem
+        r"""VrrpConfigItem
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class VrrpConfigItem:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this VrrpConfigItem.
+        r"""Gets the ieg_id of this VrrpConfigItem.
 
         智能企业网关ID
 
@@ -96,7 +96,7 @@ class VrrpConfigItem:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this VrrpConfigItem.
+        r"""Sets the ieg_id of this VrrpConfigItem.
 
         智能企业网关ID
 
@@ -107,7 +107,7 @@ class VrrpConfigItem:
 
     @property
     def virtual_router_id(self):
-        """Gets the virtual_router_id of this VrrpConfigItem.
+        r"""Gets the virtual_router_id of this VrrpConfigItem.
 
         虚路由ID
 
@@ -118,7 +118,7 @@ class VrrpConfigItem:
 
     @virtual_router_id.setter
     def virtual_router_id(self, virtual_router_id):
-        """Sets the virtual_router_id of this VrrpConfigItem.
+        r"""Sets the virtual_router_id of this VrrpConfigItem.
 
         虚路由ID
 
@@ -129,7 +129,7 @@ class VrrpConfigItem:
 
     @property
     def virtual_ip(self):
-        """Gets the virtual_ip of this VrrpConfigItem.
+        r"""Gets the virtual_ip of this VrrpConfigItem.
 
         虚IP
 
@@ -140,7 +140,7 @@ class VrrpConfigItem:
 
     @virtual_ip.setter
     def virtual_ip(self, virtual_ip):
-        """Sets the virtual_ip of this VrrpConfigItem.
+        r"""Sets the virtual_ip of this VrrpConfigItem.
 
         虚IP
 
@@ -151,7 +151,7 @@ class VrrpConfigItem:
 
     @property
     def active_equipment_id(self):
-        """Gets the active_equipment_id of this VrrpConfigItem.
+        r"""Gets the active_equipment_id of this VrrpConfigItem.
 
         主设备ID
 
@@ -162,7 +162,7 @@ class VrrpConfigItem:
 
     @active_equipment_id.setter
     def active_equipment_id(self, active_equipment_id):
-        """Sets the active_equipment_id of this VrrpConfigItem.
+        r"""Sets the active_equipment_id of this VrrpConfigItem.
 
         主设备ID
 
@@ -173,7 +173,7 @@ class VrrpConfigItem:
 
     @property
     def active_interface_name(self):
-        """Gets the active_interface_name of this VrrpConfigItem.
+        r"""Gets the active_interface_name of this VrrpConfigItem.
 
         主设备接口名字
 
@@ -184,7 +184,7 @@ class VrrpConfigItem:
 
     @active_interface_name.setter
     def active_interface_name(self, active_interface_name):
-        """Sets the active_interface_name of this VrrpConfigItem.
+        r"""Sets the active_interface_name of this VrrpConfigItem.
 
         主设备接口名字
 
@@ -195,7 +195,7 @@ class VrrpConfigItem:
 
     @property
     def standby_equipment_id(self):
-        """Gets the standby_equipment_id of this VrrpConfigItem.
+        r"""Gets the standby_equipment_id of this VrrpConfigItem.
 
         备设备ID
 
@@ -206,7 +206,7 @@ class VrrpConfigItem:
 
     @standby_equipment_id.setter
     def standby_equipment_id(self, standby_equipment_id):
-        """Sets the standby_equipment_id of this VrrpConfigItem.
+        r"""Sets the standby_equipment_id of this VrrpConfigItem.
 
         备设备ID
 
@@ -217,7 +217,7 @@ class VrrpConfigItem:
 
     @property
     def standby_interface_name(self):
-        """Gets the standby_interface_name of this VrrpConfigItem.
+        r"""Gets the standby_interface_name of this VrrpConfigItem.
 
         备设备接口名字
 
@@ -228,7 +228,7 @@ class VrrpConfigItem:
 
     @standby_interface_name.setter
     def standby_interface_name(self, standby_interface_name):
-        """Sets the standby_interface_name of this VrrpConfigItem.
+        r"""Sets the standby_interface_name of this VrrpConfigItem.
 
         备设备接口名字
 

@@ -29,7 +29,7 @@ class Operations:
     }
 
     def __init__(self, operation=None, is_support=None, cause_id=None):
-        """Operations
+        r"""Operations
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Operations:
 
     @property
     def operation(self):
-        """Gets the operation of this Operations.
+        r"""Gets the operation of this Operations.
 
         操作信息
 
@@ -68,7 +68,7 @@ class Operations:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this Operations.
+        r"""Sets the operation of this Operations.
 
         操作信息
 
@@ -79,7 +79,7 @@ class Operations:
 
     @property
     def is_support(self):
-        """Gets the is_support of this Operations.
+        r"""Gets the is_support of this Operations.
 
         是否支持该操作
 
@@ -90,7 +90,7 @@ class Operations:
 
     @is_support.setter
     def is_support(self, is_support):
-        """Sets the is_support of this Operations.
+        r"""Sets the is_support of this Operations.
 
         是否支持该操作
 
@@ -101,7 +101,7 @@ class Operations:
 
     @property
     def cause_id(self):
-        """Gets the cause_id of this Operations.
+        r"""Gets the cause_id of this Operations.
 
         不支持该操作的原因ID，仅在is_support为false时返回
 
@@ -112,7 +112,7 @@ class Operations:
 
     @cause_id.setter
     def cause_id(self, cause_id):
-        """Sets the cause_id of this Operations.
+        r"""Sets the cause_id of this Operations.
 
         不支持该操作的原因ID，仅在is_support为false时返回
 

@@ -40,7 +40,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, conditions=None, name=None, type=None, timestamp=None, status=None, priority=None):
-        """UpdateAnticrawlerRuleResponse
+        r"""UpdateAnticrawlerRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateAnticrawlerRuleResponse.
+        r"""Gets the id of this UpdateAnticrawlerRuleResponse.
 
         规则id
 
@@ -104,7 +104,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateAnticrawlerRuleResponse.
+        r"""Sets the id of this UpdateAnticrawlerRuleResponse.
 
         规则id
 
@@ -115,7 +115,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this UpdateAnticrawlerRuleResponse.
+        r"""Gets the policyid of this UpdateAnticrawlerRuleResponse.
 
         策略id
 
@@ -126,7 +126,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this UpdateAnticrawlerRuleResponse.
+        r"""Sets the policyid of this UpdateAnticrawlerRuleResponse.
 
         策略id
 
@@ -137,7 +137,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @property
     def conditions(self):
-        """Gets the conditions of this UpdateAnticrawlerRuleResponse.
+        r"""Gets the conditions of this UpdateAnticrawlerRuleResponse.
 
         匹配条件列表
 
@@ -148,7 +148,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this UpdateAnticrawlerRuleResponse.
+        r"""Sets the conditions of this UpdateAnticrawlerRuleResponse.
 
         匹配条件列表
 
@@ -159,7 +159,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateAnticrawlerRuleResponse.
+        r"""Gets the name of this UpdateAnticrawlerRuleResponse.
 
         规则名称
 
@@ -170,7 +170,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAnticrawlerRuleResponse.
+        r"""Sets the name of this UpdateAnticrawlerRuleResponse.
 
         规则名称
 
@@ -181,7 +181,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this UpdateAnticrawlerRuleResponse.
+        r"""Gets the type of this UpdateAnticrawlerRuleResponse.
 
         JS脚本反爬虫规则类型，指定防护路径：anticrawler_specific_url 排除防护路径：anticrawler_except_url
 
@@ -192,7 +192,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateAnticrawlerRuleResponse.
+        r"""Sets the type of this UpdateAnticrawlerRuleResponse.
 
         JS脚本反爬虫规则类型，指定防护路径：anticrawler_specific_url 排除防护路径：anticrawler_except_url
 
@@ -203,7 +203,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this UpdateAnticrawlerRuleResponse.
+        r"""Gets the timestamp of this UpdateAnticrawlerRuleResponse.
 
         创建规则时间戳
 
@@ -214,7 +214,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this UpdateAnticrawlerRuleResponse.
+        r"""Sets the timestamp of this UpdateAnticrawlerRuleResponse.
 
         创建规则时间戳
 
@@ -225,7 +225,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateAnticrawlerRuleResponse.
+        r"""Gets the status of this UpdateAnticrawlerRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -236,7 +236,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateAnticrawlerRuleResponse.
+        r"""Sets the status of this UpdateAnticrawlerRuleResponse.
 
         规则状态，0：关闭，1：开启
 
@@ -247,7 +247,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @property
     def priority(self):
-        """Gets the priority of this UpdateAnticrawlerRuleResponse.
+        r"""Gets the priority of this UpdateAnticrawlerRuleResponse.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 
@@ -258,7 +258,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this UpdateAnticrawlerRuleResponse.
+        r"""Sets the priority of this UpdateAnticrawlerRuleResponse.
 
         执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
 

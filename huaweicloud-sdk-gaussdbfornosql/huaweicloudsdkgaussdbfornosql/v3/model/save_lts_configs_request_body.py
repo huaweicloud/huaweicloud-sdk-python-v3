@@ -31,7 +31,7 @@ class SaveLtsConfigsRequestBody:
     }
 
     def __init__(self, instance_ids=None, log_type=None, lts_group_id=None, lts_stream_id=None):
-        """SaveLtsConfigsRequestBody
+        r"""SaveLtsConfigsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class SaveLtsConfigsRequestBody:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this SaveLtsConfigsRequestBody.
+        r"""Gets the instance_ids of this SaveLtsConfigsRequestBody.
 
         需要建立关联的实例ID列表。
 
@@ -71,7 +71,7 @@ class SaveLtsConfigsRequestBody:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this SaveLtsConfigsRequestBody.
+        r"""Sets the instance_ids of this SaveLtsConfigsRequestBody.
 
         需要建立关联的实例ID列表。
 
@@ -82,7 +82,7 @@ class SaveLtsConfigsRequestBody:
 
     @property
     def log_type(self):
-        """Gets the log_type of this SaveLtsConfigsRequestBody.
+        r"""Gets the log_type of this SaveLtsConfigsRequestBody.
 
         日志类型。slow_log表示慢日志。
 
@@ -93,7 +93,7 @@ class SaveLtsConfigsRequestBody:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this SaveLtsConfigsRequestBody.
+        r"""Sets the log_type of this SaveLtsConfigsRequestBody.
 
         日志类型。slow_log表示慢日志。
 
@@ -104,7 +104,7 @@ class SaveLtsConfigsRequestBody:
 
     @property
     def lts_group_id(self):
-        """Gets the lts_group_id of this SaveLtsConfigsRequestBody.
+        r"""Gets the lts_group_id of this SaveLtsConfigsRequestBody.
 
         LTS日志组ID。可通过云日志服务-“查询账号下所有日志组”API接口获取。
 
@@ -115,7 +115,7 @@ class SaveLtsConfigsRequestBody:
 
     @lts_group_id.setter
     def lts_group_id(self, lts_group_id):
-        """Sets the lts_group_id of this SaveLtsConfigsRequestBody.
+        r"""Sets the lts_group_id of this SaveLtsConfigsRequestBody.
 
         LTS日志组ID。可通过云日志服务-“查询账号下所有日志组”API接口获取。
 
@@ -126,7 +126,7 @@ class SaveLtsConfigsRequestBody:
 
     @property
     def lts_stream_id(self):
-        """Gets the lts_stream_id of this SaveLtsConfigsRequestBody.
+        r"""Gets the lts_stream_id of this SaveLtsConfigsRequestBody.
 
         LTS日志流ID。可通过云日志服务-“查询指定日志组下的所有日志流”API接口获取。
 
@@ -137,7 +137,7 @@ class SaveLtsConfigsRequestBody:
 
     @lts_stream_id.setter
     def lts_stream_id(self, lts_stream_id):
-        """Sets the lts_stream_id of this SaveLtsConfigsRequestBody.
+        r"""Sets the lts_stream_id of this SaveLtsConfigsRequestBody.
 
         LTS日志流ID。可通过云日志服务-“查询指定日志组下的所有日志流”API接口获取。
 

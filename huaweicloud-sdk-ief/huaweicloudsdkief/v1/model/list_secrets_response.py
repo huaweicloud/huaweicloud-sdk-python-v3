@@ -28,7 +28,7 @@ class ListSecretsResponse(SdkResponse):
     }
 
     def __init__(self, secrets=None, count=None):
-        """ListSecretsResponse
+        r"""ListSecretsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecretsResponse(SdkResponse):
 
     @property
     def secrets(self):
-        """Gets the secrets of this ListSecretsResponse.
+        r"""Gets the secrets of this ListSecretsResponse.
 
         密钥
 
@@ -62,7 +62,7 @@ class ListSecretsResponse(SdkResponse):
 
     @secrets.setter
     def secrets(self, secrets):
-        """Sets the secrets of this ListSecretsResponse.
+        r"""Sets the secrets of this ListSecretsResponse.
 
         密钥
 
@@ -73,7 +73,7 @@ class ListSecretsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSecretsResponse.
+        r"""Gets the count of this ListSecretsResponse.
 
         满足条件的个数
 
@@ -84,7 +84,7 @@ class ListSecretsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSecretsResponse.
+        r"""Sets the count of this ListSecretsResponse.
 
         满足条件的个数
 

@@ -41,7 +41,7 @@ class ShootScriptDetail:
     }
 
     def __init__(self, script_type=None, text_config=None, audio_duration=None, audio_drive_action_config=None, audio_drive_file_external_url=None, background_config=None, layer_config=None, audio_config=None, thumbnail_url=None):
-        """ShootScriptDetail
+        r"""ShootScriptDetail
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ShootScriptDetail:
 
     @property
     def script_type(self):
-        """Gets the script_type of this ShootScriptDetail.
+        r"""Gets the script_type of this ShootScriptDetail.
 
         **参数解释**： 脚本类型，即视频制作的驱动方式 **约束限制**： 不涉及 **取值范围** * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
 
@@ -110,7 +110,7 @@ class ShootScriptDetail:
 
     @script_type.setter
     def script_type(self, script_type):
-        """Sets the script_type of this ShootScriptDetail.
+        r"""Sets the script_type of this ShootScriptDetail.
 
         **参数解释**： 脚本类型，即视频制作的驱动方式 **约束限制**： 不涉及 **取值范围** * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动
 
@@ -121,7 +121,7 @@ class ShootScriptDetail:
 
     @property
     def text_config(self):
-        """Gets the text_config of this ShootScriptDetail.
+        r"""Gets the text_config of this ShootScriptDetail.
 
         :return: The text_config of this ShootScriptDetail.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.TextConfig`
@@ -130,7 +130,7 @@ class ShootScriptDetail:
 
     @text_config.setter
     def text_config(self, text_config):
-        """Sets the text_config of this ShootScriptDetail.
+        r"""Sets the text_config of this ShootScriptDetail.
 
         :param text_config: The text_config of this ShootScriptDetail.
         :type text_config: :class:`huaweicloudsdkmetastudio.v1.TextConfig`
@@ -139,7 +139,7 @@ class ShootScriptDetail:
 
     @property
     def audio_duration(self):
-        """Gets the audio_duration of this ShootScriptDetail.
+        r"""Gets the audio_duration of this ShootScriptDetail.
 
         语音驱动时，音频时长，单位秒。 > * 创建剧本时此参数可以不设置，音频文件上传成功后，通过更新剧本接口设置 > * 查询剧本详情时，返回音频时长，用于预估视频时长
 
@@ -150,7 +150,7 @@ class ShootScriptDetail:
 
     @audio_duration.setter
     def audio_duration(self, audio_duration):
-        """Sets the audio_duration of this ShootScriptDetail.
+        r"""Sets the audio_duration of this ShootScriptDetail.
 
         语音驱动时，音频时长，单位秒。 > * 创建剧本时此参数可以不设置，音频文件上传成功后，通过更新剧本接口设置 > * 查询剧本详情时，返回音频时长，用于预估视频时长
 
@@ -161,7 +161,7 @@ class ShootScriptDetail:
 
     @property
     def audio_drive_action_config(self):
-        """Gets the audio_drive_action_config of this ShootScriptDetail.
+        r"""Gets the audio_drive_action_config of this ShootScriptDetail.
 
         语音驱动时的动作配置。
 
@@ -172,7 +172,7 @@ class ShootScriptDetail:
 
     @audio_drive_action_config.setter
     def audio_drive_action_config(self, audio_drive_action_config):
-        """Sets the audio_drive_action_config of this ShootScriptDetail.
+        r"""Sets the audio_drive_action_config of this ShootScriptDetail.
 
         语音驱动时的动作配置。
 
@@ -183,7 +183,7 @@ class ShootScriptDetail:
 
     @property
     def audio_drive_file_external_url(self):
-        """Gets the audio_drive_file_external_url of this ShootScriptDetail.
+        r"""Gets the audio_drive_file_external_url of this ShootScriptDetail.
 
         语音驱动音频文件外部下载URL。  > * 需要先申请开通白名单后，才允许通过外部URL的音频文件来驱动分身数字人视频。
 
@@ -194,7 +194,7 @@ class ShootScriptDetail:
 
     @audio_drive_file_external_url.setter
     def audio_drive_file_external_url(self, audio_drive_file_external_url):
-        """Sets the audio_drive_file_external_url of this ShootScriptDetail.
+        r"""Sets the audio_drive_file_external_url of this ShootScriptDetail.
 
         语音驱动音频文件外部下载URL。  > * 需要先申请开通白名单后，才允许通过外部URL的音频文件来驱动分身数字人视频。
 
@@ -205,7 +205,7 @@ class ShootScriptDetail:
 
     @property
     def background_config(self):
-        """Gets the background_config of this ShootScriptDetail.
+        r"""Gets the background_config of this ShootScriptDetail.
 
         背景配置。
 
@@ -216,7 +216,7 @@ class ShootScriptDetail:
 
     @background_config.setter
     def background_config(self, background_config):
-        """Sets the background_config of this ShootScriptDetail.
+        r"""Sets the background_config of this ShootScriptDetail.
 
         背景配置。
 
@@ -227,7 +227,7 @@ class ShootScriptDetail:
 
     @property
     def layer_config(self):
-        """Gets the layer_config of this ShootScriptDetail.
+        r"""Gets the layer_config of this ShootScriptDetail.
 
         图层配置。
 
@@ -238,7 +238,7 @@ class ShootScriptDetail:
 
     @layer_config.setter
     def layer_config(self, layer_config):
-        """Sets the layer_config of this ShootScriptDetail.
+        r"""Sets the layer_config of this ShootScriptDetail.
 
         图层配置。
 
@@ -249,7 +249,7 @@ class ShootScriptDetail:
 
     @property
     def audio_config(self):
-        """Gets the audio_config of this ShootScriptDetail.
+        r"""Gets the audio_config of this ShootScriptDetail.
 
         :return: The audio_config of this ShootScriptDetail.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.AudioInfo`
@@ -258,7 +258,7 @@ class ShootScriptDetail:
 
     @audio_config.setter
     def audio_config(self, audio_config):
-        """Sets the audio_config of this ShootScriptDetail.
+        r"""Sets the audio_config of this ShootScriptDetail.
 
         :param audio_config: The audio_config of this ShootScriptDetail.
         :type audio_config: :class:`huaweicloudsdkmetastudio.v1.AudioInfo`
@@ -267,7 +267,7 @@ class ShootScriptDetail:
 
     @property
     def thumbnail_url(self):
-        """Gets the thumbnail_url of this ShootScriptDetail.
+        r"""Gets the thumbnail_url of this ShootScriptDetail.
 
         **参数解释**： 剧本场景缩略图url。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
 
@@ -278,7 +278,7 @@ class ShootScriptDetail:
 
     @thumbnail_url.setter
     def thumbnail_url(self, thumbnail_url):
-        """Sets the thumbnail_url of this ShootScriptDetail.
+        r"""Sets the thumbnail_url of this ShootScriptDetail.
 
         **参数解释**： 剧本场景缩略图url。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-2048位。 **默认取值**： 不涉及。
 

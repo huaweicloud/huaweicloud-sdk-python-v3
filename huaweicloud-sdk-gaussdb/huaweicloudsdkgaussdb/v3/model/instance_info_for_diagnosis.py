@@ -27,7 +27,7 @@ class InstanceInfoForDiagnosis:
     }
 
     def __init__(self, instance_id=None, master_node_id=None):
-        """InstanceInfoForDiagnosis
+        r"""InstanceInfoForDiagnosis
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InstanceInfoForDiagnosis:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceInfoForDiagnosis.
+        r"""Gets the instance_id of this InstanceInfoForDiagnosis.
 
         实例ID。
 
@@ -61,7 +61,7 @@ class InstanceInfoForDiagnosis:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceInfoForDiagnosis.
+        r"""Sets the instance_id of this InstanceInfoForDiagnosis.
 
         实例ID。
 
@@ -72,7 +72,7 @@ class InstanceInfoForDiagnosis:
 
     @property
     def master_node_id(self):
-        """Gets the master_node_id of this InstanceInfoForDiagnosis.
+        r"""Gets the master_node_id of this InstanceInfoForDiagnosis.
 
         主节点ID。
 
@@ -83,7 +83,7 @@ class InstanceInfoForDiagnosis:
 
     @master_node_id.setter
     def master_node_id(self, master_node_id):
-        """Sets the master_node_id of this InstanceInfoForDiagnosis.
+        r"""Sets the master_node_id of this InstanceInfoForDiagnosis.
 
         主节点ID。
 

@@ -27,7 +27,7 @@ class EnvironmentCreateLabels:
     }
 
     def __init__(self, key=None, value=None):
-        """EnvironmentCreateLabels
+        r"""EnvironmentCreateLabels
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class EnvironmentCreateLabels:
 
     @property
     def key(self):
-        """Gets the key of this EnvironmentCreateLabels.
+        r"""Gets the key of this EnvironmentCreateLabels.
 
         :return: The key of this EnvironmentCreateLabels.
         :rtype: str
@@ -57,7 +57,7 @@ class EnvironmentCreateLabels:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this EnvironmentCreateLabels.
+        r"""Sets the key of this EnvironmentCreateLabels.
 
         :param key: The key of this EnvironmentCreateLabels.
         :type key: str
@@ -66,7 +66,7 @@ class EnvironmentCreateLabels:
 
     @property
     def value(self):
-        """Gets the value of this EnvironmentCreateLabels.
+        r"""Gets the value of this EnvironmentCreateLabels.
 
         :return: The value of this EnvironmentCreateLabels.
         :rtype: str
@@ -75,7 +75,7 @@ class EnvironmentCreateLabels:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this EnvironmentCreateLabels.
+        r"""Sets the value of this EnvironmentCreateLabels.
 
         :param value: The value of this EnvironmentCreateLabels.
         :type value: str

@@ -27,7 +27,7 @@ class ListAuditOperateLogsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ListAuditOperateLogsRequest
+        r"""ListAuditOperateLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListAuditOperateLogsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAuditOperateLogsRequest.
+        r"""Gets the instance_id of this ListAuditOperateLogsRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -60,7 +60,7 @@ class ListAuditOperateLogsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAuditOperateLogsRequest.
+        r"""Sets the instance_id of this ListAuditOperateLogsRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -71,7 +71,7 @@ class ListAuditOperateLogsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAuditOperateLogsRequest.
+        r"""Gets the body of this ListAuditOperateLogsRequest.
 
         :return: The body of this ListAuditOperateLogsRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.OperateLogGetRequest`
@@ -80,7 +80,7 @@ class ListAuditOperateLogsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAuditOperateLogsRequest.
+        r"""Sets the body of this ListAuditOperateLogsRequest.
 
         :param body: The body of this ListAuditOperateLogsRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.OperateLogGetRequest`

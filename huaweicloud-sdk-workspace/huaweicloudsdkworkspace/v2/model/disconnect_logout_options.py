@@ -25,7 +25,7 @@ class DisconnectLogoutOptions:
     }
 
     def __init__(self, disconnect_logout_minutes=None):
-        """DisconnectLogoutOptions
+        r"""DisconnectLogoutOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DisconnectLogoutOptions:
 
     @property
     def disconnect_logout_minutes(self):
-        """Gets the disconnect_logout_minutes of this DisconnectLogoutOptions.
+        r"""Gets the disconnect_logout_minutes of this DisconnectLogoutOptions.
 
         断开后自动注销等待时间（分钟）。取值范围为[3-86400]。默认：10。
 
@@ -54,7 +54,7 @@ class DisconnectLogoutOptions:
 
     @disconnect_logout_minutes.setter
     def disconnect_logout_minutes(self, disconnect_logout_minutes):
-        """Sets the disconnect_logout_minutes of this DisconnectLogoutOptions.
+        r"""Sets the disconnect_logout_minutes of this DisconnectLogoutOptions.
 
         断开后自动注销等待时间（分钟）。取值范围为[3-86400]。默认：10。
 

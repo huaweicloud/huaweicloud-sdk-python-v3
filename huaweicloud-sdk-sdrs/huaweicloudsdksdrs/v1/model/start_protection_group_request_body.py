@@ -25,7 +25,7 @@ class StartProtectionGroupRequestBody:
     }
 
     def __init__(self, start_server_group=None):
-        """StartProtectionGroupRequestBody
+        r"""StartProtectionGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StartProtectionGroupRequestBody:
 
     @property
     def start_server_group(self):
-        """Gets the start_server_group of this StartProtectionGroupRequestBody.
+        r"""Gets the start_server_group of this StartProtectionGroupRequestBody.
 
         标识保护组开始保护操作。目前该参数为空。
 
@@ -53,7 +53,7 @@ class StartProtectionGroupRequestBody:
 
     @start_server_group.setter
     def start_server_group(self, start_server_group):
-        """Sets the start_server_group of this StartProtectionGroupRequestBody.
+        r"""Sets the start_server_group of this StartProtectionGroupRequestBody.
 
         标识保护组开始保护操作。目前该参数为空。
 

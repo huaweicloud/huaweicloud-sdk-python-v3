@@ -27,7 +27,7 @@ class ShowSumTableRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """ShowSumTableRequest
+        r"""ShowSumTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowSumTableRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ShowSumTableRequest.
+        r"""Gets the x_business_id of this ShowSumTableRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class ShowSumTableRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ShowSumTableRequest.
+        r"""Sets the x_business_id of this ShowSumTableRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class ShowSumTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowSumTableRequest.
+        r"""Gets the body of this ShowSumTableRequest.
 
         :return: The body of this ShowSumTableRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.SumTableParam`
@@ -80,7 +80,7 @@ class ShowSumTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowSumTableRequest.
+        r"""Sets the body of this ShowSumTableRequest.
 
         :param body: The body of this ShowSumTableRequest.
         :type body: :class:`huaweicloudsdkapm.v1.SumTableParam`

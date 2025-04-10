@@ -29,7 +29,7 @@ class ListAlarmTemplateAssociationAlarmsRequest:
     }
 
     def __init__(self, template_id=None, offset=None, limit=None):
-        """ListAlarmTemplateAssociationAlarmsRequest
+        r"""ListAlarmTemplateAssociationAlarmsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAlarmTemplateAssociationAlarmsRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ListAlarmTemplateAssociationAlarmsRequest.
+        r"""Gets the template_id of this ListAlarmTemplateAssociationAlarmsRequest.
 
         告警模板的ID，以at开头，后跟字母、数字，长度最长为64
 
@@ -67,7 +67,7 @@ class ListAlarmTemplateAssociationAlarmsRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ListAlarmTemplateAssociationAlarmsRequest.
+        r"""Sets the template_id of this ListAlarmTemplateAssociationAlarmsRequest.
 
         告警模板的ID，以at开头，后跟字母、数字，长度最长为64
 
@@ -78,7 +78,7 @@ class ListAlarmTemplateAssociationAlarmsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAlarmTemplateAssociationAlarmsRequest.
+        r"""Gets the offset of this ListAlarmTemplateAssociationAlarmsRequest.
 
         分页查询时查询的起始位置，表示从第几条数据开始，默认为0
 
@@ -89,7 +89,7 @@ class ListAlarmTemplateAssociationAlarmsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAlarmTemplateAssociationAlarmsRequest.
+        r"""Sets the offset of this ListAlarmTemplateAssociationAlarmsRequest.
 
         分页查询时查询的起始位置，表示从第几条数据开始，默认为0
 
@@ -100,7 +100,7 @@ class ListAlarmTemplateAssociationAlarmsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlarmTemplateAssociationAlarmsRequest.
+        r"""Gets the limit of this ListAlarmTemplateAssociationAlarmsRequest.
 
         查询结果条数的限制值，取值范围为[1,100]，默认值为100
 
@@ -111,7 +111,7 @@ class ListAlarmTemplateAssociationAlarmsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlarmTemplateAssociationAlarmsRequest.
+        r"""Sets the limit of this ListAlarmTemplateAssociationAlarmsRequest.
 
         查询结果条数的限制值，取值范围为[1,100]，默认值为100
 

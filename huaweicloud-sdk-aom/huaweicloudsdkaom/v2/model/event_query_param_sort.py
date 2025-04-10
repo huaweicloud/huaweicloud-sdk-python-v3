@@ -27,7 +27,7 @@ class EventQueryParamSort:
     }
 
     def __init__(self, order_by=None, order=None):
-        """EventQueryParamSort
+        r"""EventQueryParamSort
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EventQueryParamSort:
 
     @property
     def order_by(self):
-        """Gets the order_by of this EventQueryParamSort.
+        r"""Gets the order_by of this EventQueryParamSort.
 
         排序字段列表。会根据列表中定义顺序对返回列表进行排序。
 
@@ -61,7 +61,7 @@ class EventQueryParamSort:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this EventQueryParamSort.
+        r"""Sets the order_by of this EventQueryParamSort.
 
         排序字段列表。会根据列表中定义顺序对返回列表进行排序。
 
@@ -72,7 +72,7 @@ class EventQueryParamSort:
 
     @property
     def order(self):
-        """Gets the order of this EventQueryParamSort.
+        r"""Gets the order of this EventQueryParamSort.
 
         排序方式枚举值。asc代表正序，desc代表倒序。
 
@@ -83,7 +83,7 @@ class EventQueryParamSort:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this EventQueryParamSort.
+        r"""Sets the order of this EventQueryParamSort.
 
         排序方式枚举值。asc代表正序，desc代表倒序。
 

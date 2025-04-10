@@ -27,7 +27,7 @@ class ExpandInstanceNodeRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ExpandInstanceNodeRequest
+        r"""ExpandInstanceNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExpandInstanceNodeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExpandInstanceNodeRequest.
+        r"""Gets the instance_id of this ExpandInstanceNodeRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class ExpandInstanceNodeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExpandInstanceNodeRequest.
+        r"""Sets the instance_id of this ExpandInstanceNodeRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ExpandInstanceNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExpandInstanceNodeRequest.
+        r"""Gets the body of this ExpandInstanceNodeRequest.
 
         :return: The body of this ExpandInstanceNodeRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ExpandInstanceNodeRequestBody`
@@ -80,7 +80,7 @@ class ExpandInstanceNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExpandInstanceNodeRequest.
+        r"""Sets the body of this ExpandInstanceNodeRequest.
 
         :param body: The body of this ExpandInstanceNodeRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ExpandInstanceNodeRequestBody`

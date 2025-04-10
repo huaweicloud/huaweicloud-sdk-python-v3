@@ -25,7 +25,7 @@ class StarRocksCreateRequestTagsInfo:
     }
 
     def __init__(self, sys_tags=None):
-        """StarRocksCreateRequestTagsInfo
+        r"""StarRocksCreateRequestTagsInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StarRocksCreateRequestTagsInfo:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this StarRocksCreateRequestTagsInfo.
+        r"""Gets the sys_tags of this StarRocksCreateRequestTagsInfo.
 
         系统标签。
 
@@ -53,7 +53,7 @@ class StarRocksCreateRequestTagsInfo:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this StarRocksCreateRequestTagsInfo.
+        r"""Sets the sys_tags of this StarRocksCreateRequestTagsInfo.
 
         系统标签。
 

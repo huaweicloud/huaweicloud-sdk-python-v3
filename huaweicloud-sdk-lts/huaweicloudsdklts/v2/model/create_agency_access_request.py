@@ -25,7 +25,7 @@ class CreateAgencyAccessRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAgencyAccessRequest
+        r"""CreateAgencyAccessRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAgencyAccessRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAgencyAccessRequest.
+        r"""Gets the body of this CreateAgencyAccessRequest.
 
         :return: The body of this CreateAgencyAccessRequest.
         :rtype: :class:`huaweicloudsdklts.v2.PreviewAgencyLogAccessReqListBody`
@@ -52,7 +52,7 @@ class CreateAgencyAccessRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAgencyAccessRequest.
+        r"""Sets the body of this CreateAgencyAccessRequest.
 
         :param body: The body of this CreateAgencyAccessRequest.
         :type body: :class:`huaweicloudsdklts.v2.PreviewAgencyLogAccessReqListBody`

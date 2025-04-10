@@ -27,7 +27,7 @@ class DeleteSecurityAssignedQueueRequest:
     }
 
     def __init__(self, workspace=None, id=None):
-        """DeleteSecurityAssignedQueueRequest
+        r"""DeleteSecurityAssignedQueueRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteSecurityAssignedQueueRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteSecurityAssignedQueueRequest.
+        r"""Gets the workspace of this DeleteSecurityAssignedQueueRequest.
 
         DataArts Studio工作空间ID
 
@@ -59,7 +59,7 @@ class DeleteSecurityAssignedQueueRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteSecurityAssignedQueueRequest.
+        r"""Sets the workspace of this DeleteSecurityAssignedQueueRequest.
 
         DataArts Studio工作空间ID
 
@@ -70,7 +70,7 @@ class DeleteSecurityAssignedQueueRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteSecurityAssignedQueueRequest.
+        r"""Gets the id of this DeleteSecurityAssignedQueueRequest.
 
         需要删除的当前空间队列资源id。
 
@@ -81,7 +81,7 @@ class DeleteSecurityAssignedQueueRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteSecurityAssignedQueueRequest.
+        r"""Sets the id of this DeleteSecurityAssignedQueueRequest.
 
         需要删除的当前空间队列资源id。
 

@@ -28,7 +28,7 @@ class ShowFlowBlockResponse(SdkResponse):
     }
 
     def __init__(self, total=None, ips=None):
-        """ShowFlowBlockResponse
+        r"""ShowFlowBlockResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowFlowBlockResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowFlowBlockResponse.
+        r"""Gets the total of this ShowFlowBlockResponse.
 
         total
 
@@ -62,7 +62,7 @@ class ShowFlowBlockResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowFlowBlockResponse.
+        r"""Sets the total of this ShowFlowBlockResponse.
 
         total
 
@@ -73,7 +73,7 @@ class ShowFlowBlockResponse(SdkResponse):
 
     @property
     def ips(self):
-        """Gets the ips of this ShowFlowBlockResponse.
+        r"""Gets the ips of this ShowFlowBlockResponse.
 
         ips
 
@@ -84,7 +84,7 @@ class ShowFlowBlockResponse(SdkResponse):
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this ShowFlowBlockResponse.
+        r"""Sets the ips of this ShowFlowBlockResponse.
 
         ips
 

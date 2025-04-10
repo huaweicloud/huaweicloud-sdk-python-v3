@@ -35,7 +35,7 @@ class CreateResOnlineInstanceRequestBody:
     }
 
     def __init__(self, job_name=None, description=None, category=None, job_type=None, job_config=None, topic_urn=None):
-        """CreateResOnlineInstanceRequestBody
+        r"""CreateResOnlineInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CreateResOnlineInstanceRequestBody:
 
     @property
     def job_name(self):
-        """Gets the job_name of this CreateResOnlineInstanceRequestBody.
+        r"""Gets the job_name of this CreateResOnlineInstanceRequestBody.
 
         作业名称，1-64位的字母、数字、下划线、中划线组合。
 
@@ -85,7 +85,7 @@ class CreateResOnlineInstanceRequestBody:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this CreateResOnlineInstanceRequestBody.
+        r"""Sets the job_name of this CreateResOnlineInstanceRequestBody.
 
         作业名称，1-64位的字母、数字、下划线、中划线组合。
 
@@ -96,7 +96,7 @@ class CreateResOnlineInstanceRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateResOnlineInstanceRequestBody.
+        r"""Gets the description of this CreateResOnlineInstanceRequestBody.
 
         描述。
 
@@ -107,7 +107,7 @@ class CreateResOnlineInstanceRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateResOnlineInstanceRequestBody.
+        r"""Sets the description of this CreateResOnlineInstanceRequestBody.
 
         描述。
 
@@ -118,7 +118,7 @@ class CreateResOnlineInstanceRequestBody:
 
     @property
     def category(self):
-        """Gets the category of this CreateResOnlineInstanceRequestBody.
+        r"""Gets the category of this CreateResOnlineInstanceRequestBody.
 
         类别: - SERVICE，在线服务
 
@@ -129,7 +129,7 @@ class CreateResOnlineInstanceRequestBody:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CreateResOnlineInstanceRequestBody.
+        r"""Sets the category of this CreateResOnlineInstanceRequestBody.
 
         类别: - SERVICE，在线服务
 
@@ -140,7 +140,7 @@ class CreateResOnlineInstanceRequestBody:
 
     @property
     def job_type(self):
-        """Gets the job_type of this CreateResOnlineInstanceRequestBody.
+        r"""Gets the job_type of this CreateResOnlineInstanceRequestBody.
 
         作业类型： - infer，推理服务
 
@@ -151,7 +151,7 @@ class CreateResOnlineInstanceRequestBody:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this CreateResOnlineInstanceRequestBody.
+        r"""Sets the job_type of this CreateResOnlineInstanceRequestBody.
 
         作业类型： - infer，推理服务
 
@@ -162,7 +162,7 @@ class CreateResOnlineInstanceRequestBody:
 
     @property
     def job_config(self):
-        """Gets the job_config of this CreateResOnlineInstanceRequestBody.
+        r"""Gets the job_config of this CreateResOnlineInstanceRequestBody.
 
         :return: The job_config of this CreateResOnlineInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.JobConfig`
@@ -171,7 +171,7 @@ class CreateResOnlineInstanceRequestBody:
 
     @job_config.setter
     def job_config(self, job_config):
-        """Sets the job_config of this CreateResOnlineInstanceRequestBody.
+        r"""Sets the job_config of this CreateResOnlineInstanceRequestBody.
 
         :param job_config: The job_config of this CreateResOnlineInstanceRequestBody.
         :type job_config: :class:`huaweicloudsdkres.v1.JobConfig`
@@ -180,7 +180,7 @@ class CreateResOnlineInstanceRequestBody:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this CreateResOnlineInstanceRequestBody.
+        r"""Gets the topic_urn of this CreateResOnlineInstanceRequestBody.
 
         通知消息配置。
 
@@ -191,7 +191,7 @@ class CreateResOnlineInstanceRequestBody:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this CreateResOnlineInstanceRequestBody.
+        r"""Sets the topic_urn of this CreateResOnlineInstanceRequestBody.
 
         通知消息配置。
 

@@ -24,7 +24,7 @@ class DeleteRequestPropertyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteRequestPropertyResponse
+        r"""DeleteRequestPropertyResponse
 
         The model defined in huaweicloud sdk
 

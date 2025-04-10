@@ -25,7 +25,7 @@ class CreateRecordIndexRequest:
     }
 
     def __init__(self, body=None):
-        """CreateRecordIndexRequest
+        r"""CreateRecordIndexRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateRecordIndexRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRecordIndexRequest.
+        r"""Gets the body of this CreateRecordIndexRequest.
 
         :return: The body of this CreateRecordIndexRequest.
         :rtype: :class:`huaweicloudsdklive.v1.RecordIndexRequestBody`
@@ -52,7 +52,7 @@ class CreateRecordIndexRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRecordIndexRequest.
+        r"""Sets the body of this CreateRecordIndexRequest.
 
         :param body: The body of this CreateRecordIndexRequest.
         :type body: :class:`huaweicloudsdklive.v1.RecordIndexRequestBody`

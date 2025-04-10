@@ -25,7 +25,7 @@ class AddressItemIdWithoutName:
     }
 
     def __init__(self, id=None):
-        """AddressItemIdWithoutName
+        r"""AddressItemIdWithoutName
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddressItemIdWithoutName:
 
     @property
     def id(self):
-        """Gets the id of this AddressItemIdWithoutName.
+        r"""Gets the id of this AddressItemIdWithoutName.
 
         地址组成员id
 
@@ -54,7 +54,7 @@ class AddressItemIdWithoutName:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AddressItemIdWithoutName.
+        r"""Sets the id of this AddressItemIdWithoutName.
 
         地址组成员id
 

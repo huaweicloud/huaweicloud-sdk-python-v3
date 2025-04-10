@@ -25,7 +25,7 @@ class ShowDocWatermarkByAddressRequest:
     }
 
     def __init__(self, body=None):
-        """ShowDocWatermarkByAddressRequest
+        r"""ShowDocWatermarkByAddressRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowDocWatermarkByAddressRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowDocWatermarkByAddressRequest.
+        r"""Gets the body of this ShowDocWatermarkByAddressRequest.
 
         :return: The body of this ShowDocWatermarkByAddressRequest.
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkByAddressRequestBody`
@@ -52,7 +52,7 @@ class ShowDocWatermarkByAddressRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowDocWatermarkByAddressRequest.
+        r"""Sets the body of this ShowDocWatermarkByAddressRequest.
 
         :param body: The body of this ShowDocWatermarkByAddressRequest.
         :type body: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkByAddressRequestBody`

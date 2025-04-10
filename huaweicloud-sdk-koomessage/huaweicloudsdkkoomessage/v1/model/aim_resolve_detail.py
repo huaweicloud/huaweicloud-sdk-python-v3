@@ -49,7 +49,7 @@ class AIMResolveDetail:
     }
 
     def __init__(self, resolve_id=None, task_id=None, task_name=None, send_account=None, tpl_id=None, tpl_name=None, cust_flag=None, aim_url=None, result_code=None, generate_date=None, expire_date=None, resolved_time=None, resolved_status=None):
-        """AIMResolveDetail
+        r"""AIMResolveDetail
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class AIMResolveDetail:
 
     @property
     def resolve_id(self):
-        """Gets the resolve_id of this AIMResolveDetail.
+        r"""Gets the resolve_id of this AIMResolveDetail.
 
         解析详情唯一标识ID。
 
@@ -138,7 +138,7 @@ class AIMResolveDetail:
 
     @resolve_id.setter
     def resolve_id(self, resolve_id):
-        """Sets the resolve_id of this AIMResolveDetail.
+        r"""Sets the resolve_id of this AIMResolveDetail.
 
         解析详情唯一标识ID。
 
@@ -149,7 +149,7 @@ class AIMResolveDetail:
 
     @property
     def task_id(self):
-        """Gets the task_id of this AIMResolveDetail.
+        r"""Gets the task_id of this AIMResolveDetail.
 
         任务ID。
 
@@ -160,7 +160,7 @@ class AIMResolveDetail:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this AIMResolveDetail.
+        r"""Sets the task_id of this AIMResolveDetail.
 
         任务ID。
 
@@ -171,7 +171,7 @@ class AIMResolveDetail:
 
     @property
     def task_name(self):
-        """Gets the task_name of this AIMResolveDetail.
+        r"""Gets the task_name of this AIMResolveDetail.
 
         任务名称。
 
@@ -182,7 +182,7 @@ class AIMResolveDetail:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this AIMResolveDetail.
+        r"""Sets the task_name of this AIMResolveDetail.
 
         任务名称。
 
@@ -193,7 +193,7 @@ class AIMResolveDetail:
 
     @property
     def send_account(self):
-        """Gets the send_account of this AIMResolveDetail.
+        r"""Gets the send_account of this AIMResolveDetail.
 
         发送的用户名。
 
@@ -204,7 +204,7 @@ class AIMResolveDetail:
 
     @send_account.setter
     def send_account(self, send_account):
-        """Sets the send_account of this AIMResolveDetail.
+        r"""Sets the send_account of this AIMResolveDetail.
 
         发送的用户名。
 
@@ -215,7 +215,7 @@ class AIMResolveDetail:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this AIMResolveDetail.
+        r"""Gets the tpl_id of this AIMResolveDetail.
 
         智能信息模板ID。
 
@@ -226,7 +226,7 @@ class AIMResolveDetail:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this AIMResolveDetail.
+        r"""Sets the tpl_id of this AIMResolveDetail.
 
         智能信息模板ID。
 
@@ -237,7 +237,7 @@ class AIMResolveDetail:
 
     @property
     def tpl_name(self):
-        """Gets the tpl_name of this AIMResolveDetail.
+        r"""Gets the tpl_name of this AIMResolveDetail.
 
         智能信息模板名称。
 
@@ -248,7 +248,7 @@ class AIMResolveDetail:
 
     @tpl_name.setter
     def tpl_name(self, tpl_name):
-        """Sets the tpl_name of this AIMResolveDetail.
+        r"""Sets the tpl_name of this AIMResolveDetail.
 
         智能信息模板名称。
 
@@ -259,7 +259,7 @@ class AIMResolveDetail:
 
     @property
     def cust_flag(self):
-        """Gets the cust_flag of this AIMResolveDetail.
+        r"""Gets the cust_flag of this AIMResolveDetail.
 
         创建解析任务时填写用户唯一标识，手机号码或者任何的唯一标识，唯一标识不超过64个字符。发送智能信息时则必须填客户的手机号码。此处为手机号。样例为：130****0001。
 
@@ -270,7 +270,7 @@ class AIMResolveDetail:
 
     @cust_flag.setter
     def cust_flag(self, cust_flag):
-        """Sets the cust_flag of this AIMResolveDetail.
+        r"""Sets the cust_flag of this AIMResolveDetail.
 
         创建解析任务时填写用户唯一标识，手机号码或者任何的唯一标识，唯一标识不超过64个字符。发送智能信息时则必须填客户的手机号码。此处为手机号。样例为：130****0001。
 
@@ -281,7 +281,7 @@ class AIMResolveDetail:
 
     @property
     def aim_url(self):
-        """Gets the aim_url of this AIMResolveDetail.
+        r"""Gets the aim_url of this AIMResolveDetail.
 
         智能信息短链，通过自己的短信渠道发送时，需要把该短链添加到短信模板中，并确保发送短信时的签名与创建短链时的签名保持一致。
 
@@ -292,7 +292,7 @@ class AIMResolveDetail:
 
     @aim_url.setter
     def aim_url(self, aim_url):
-        """Sets the aim_url of this AIMResolveDetail.
+        r"""Sets the aim_url of this AIMResolveDetail.
 
         智能信息短链，通过自己的短信渠道发送时，需要把该短链添加到短信模板中，并确保发送短信时的签名与创建短链时的签名保持一致。
 
@@ -303,7 +303,7 @@ class AIMResolveDetail:
 
     @property
     def result_code(self):
-        """Gets the result_code of this AIMResolveDetail.
+        r"""Gets the result_code of this AIMResolveDetail.
 
         短链申请结果返回码。 - 0：成功 - 非0：失败，具体请参见错误码。 
 
@@ -314,7 +314,7 @@ class AIMResolveDetail:
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this AIMResolveDetail.
+        r"""Sets the result_code of this AIMResolveDetail.
 
         短链申请结果返回码。 - 0：成功 - 非0：失败，具体请参见错误码。 
 
@@ -325,7 +325,7 @@ class AIMResolveDetail:
 
     @property
     def generate_date(self):
-        """Gets the generate_date of this AIMResolveDetail.
+        r"""Gets the generate_date of this AIMResolveDetail.
 
         短链生成时间。样例为：2019-10-12T07:20:50Z。
 
@@ -336,7 +336,7 @@ class AIMResolveDetail:
 
     @generate_date.setter
     def generate_date(self, generate_date):
-        """Sets the generate_date of this AIMResolveDetail.
+        r"""Sets the generate_date of this AIMResolveDetail.
 
         短链生成时间。样例为：2019-10-12T07:20:50Z。
 
@@ -347,7 +347,7 @@ class AIMResolveDetail:
 
     @property
     def expire_date(self):
-        """Gets the expire_date of this AIMResolveDetail.
+        r"""Gets the expire_date of this AIMResolveDetail.
 
         短链到期时间。样例为：2019-10-12T07:20:50Z。
 
@@ -358,7 +358,7 @@ class AIMResolveDetail:
 
     @expire_date.setter
     def expire_date(self, expire_date):
-        """Sets the expire_date of this AIMResolveDetail.
+        r"""Sets the expire_date of this AIMResolveDetail.
 
         短链到期时间。样例为：2019-10-12T07:20:50Z。
 
@@ -369,7 +369,7 @@ class AIMResolveDetail:
 
     @property
     def resolved_time(self):
-        """Gets the resolved_time of this AIMResolveDetail.
+        r"""Gets the resolved_time of this AIMResolveDetail.
 
         解析时间。样例为：2019-10-12T07:20:50Z。
 
@@ -380,7 +380,7 @@ class AIMResolveDetail:
 
     @resolved_time.setter
     def resolved_time(self, resolved_time):
-        """Sets the resolved_time of this AIMResolveDetail.
+        r"""Sets the resolved_time of this AIMResolveDetail.
 
         解析时间。样例为：2019-10-12T07:20:50Z。
 
@@ -391,7 +391,7 @@ class AIMResolveDetail:
 
     @property
     def resolved_status(self):
-        """Gets the resolved_status of this AIMResolveDetail.
+        r"""Gets the resolved_status of this AIMResolveDetail.
 
         解析状态。 - success：解析成功 - fail：解析失败 - unresolved：未解析 
 
@@ -402,7 +402,7 @@ class AIMResolveDetail:
 
     @resolved_status.setter
     def resolved_status(self, resolved_status):
-        """Sets the resolved_status of this AIMResolveDetail.
+        r"""Sets the resolved_status of this AIMResolveDetail.
 
         解析状态。 - success：解析成功 - fail：解析失败 - unresolved：未解析 
 

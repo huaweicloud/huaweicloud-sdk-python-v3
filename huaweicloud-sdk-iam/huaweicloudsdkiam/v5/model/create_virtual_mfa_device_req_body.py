@@ -27,7 +27,7 @@ class CreateVirtualMfaDeviceReqBody:
     }
 
     def __init__(self, virtual_mfa_device_name=None, user_id=None):
-        """CreateVirtualMfaDeviceReqBody
+        r"""CreateVirtualMfaDeviceReqBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateVirtualMfaDeviceReqBody:
 
     @property
     def virtual_mfa_device_name(self):
-        """Gets the virtual_mfa_device_name of this CreateVirtualMfaDeviceReqBody.
+        r"""Gets the virtual_mfa_device_name of this CreateVirtualMfaDeviceReqBody.
 
         MFA设备名称，长度为1到64个字符，只包含字母、数字、\"_\"和\"-\"的字符串。
 
@@ -59,7 +59,7 @@ class CreateVirtualMfaDeviceReqBody:
 
     @virtual_mfa_device_name.setter
     def virtual_mfa_device_name(self, virtual_mfa_device_name):
-        """Sets the virtual_mfa_device_name of this CreateVirtualMfaDeviceReqBody.
+        r"""Sets the virtual_mfa_device_name of this CreateVirtualMfaDeviceReqBody.
 
         MFA设备名称，长度为1到64个字符，只包含字母、数字、\"_\"和\"-\"的字符串。
 
@@ -70,7 +70,7 @@ class CreateVirtualMfaDeviceReqBody:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateVirtualMfaDeviceReqBody.
+        r"""Gets the user_id of this CreateVirtualMfaDeviceReqBody.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -81,7 +81,7 @@ class CreateVirtualMfaDeviceReqBody:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateVirtualMfaDeviceReqBody.
+        r"""Sets the user_id of this CreateVirtualMfaDeviceReqBody.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 

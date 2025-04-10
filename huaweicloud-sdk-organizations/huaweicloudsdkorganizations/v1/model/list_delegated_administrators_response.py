@@ -28,7 +28,7 @@ class ListDelegatedAdministratorsResponse(SdkResponse):
     }
 
     def __init__(self, delegated_administrators=None, page_info=None):
-        """ListDelegatedAdministratorsResponse
+        r"""ListDelegatedAdministratorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDelegatedAdministratorsResponse(SdkResponse):
 
     @property
     def delegated_administrators(self):
-        """Gets the delegated_administrators of this ListDelegatedAdministratorsResponse.
+        r"""Gets the delegated_administrators of this ListDelegatedAdministratorsResponse.
 
         组织中委托管理员列表。
 
@@ -62,7 +62,7 @@ class ListDelegatedAdministratorsResponse(SdkResponse):
 
     @delegated_administrators.setter
     def delegated_administrators(self, delegated_administrators):
-        """Sets the delegated_administrators of this ListDelegatedAdministratorsResponse.
+        r"""Sets the delegated_administrators of this ListDelegatedAdministratorsResponse.
 
         组织中委托管理员列表。
 
@@ -73,7 +73,7 @@ class ListDelegatedAdministratorsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListDelegatedAdministratorsResponse.
+        r"""Gets the page_info of this ListDelegatedAdministratorsResponse.
 
         :return: The page_info of this ListDelegatedAdministratorsResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListDelegatedAdministratorsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListDelegatedAdministratorsResponse.
+        r"""Sets the page_info of this ListDelegatedAdministratorsResponse.
 
         :param page_info: The page_info of this ListDelegatedAdministratorsResponse.
         :type page_info: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`

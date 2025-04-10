@@ -27,7 +27,7 @@ class CreateWebSocketTokenRequest:
     }
 
     def __init__(self, conference_id=None, x_conference_authorization=None):
-        """CreateWebSocketTokenRequest
+        r"""CreateWebSocketTokenRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateWebSocketTokenRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this CreateWebSocketTokenRequest.
+        r"""Gets the conference_id of this CreateWebSocketTokenRequest.
 
         会议ID。
 
@@ -59,7 +59,7 @@ class CreateWebSocketTokenRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this CreateWebSocketTokenRequest.
+        r"""Sets the conference_id of this CreateWebSocketTokenRequest.
 
         会议ID。
 
@@ -70,7 +70,7 @@ class CreateWebSocketTokenRequest:
 
     @property
     def x_conference_authorization(self):
-        """Gets the x_conference_authorization of this CreateWebSocketTokenRequest.
+        r"""Gets the x_conference_authorization of this CreateWebSocketTokenRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -81,7 +81,7 @@ class CreateWebSocketTokenRequest:
 
     @x_conference_authorization.setter
     def x_conference_authorization(self, x_conference_authorization):
-        """Sets the x_conference_authorization of this CreateWebSocketTokenRequest.
+        r"""Sets the x_conference_authorization of this CreateWebSocketTokenRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 

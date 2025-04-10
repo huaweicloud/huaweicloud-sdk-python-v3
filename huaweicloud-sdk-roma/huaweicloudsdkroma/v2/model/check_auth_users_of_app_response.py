@@ -30,7 +30,7 @@ class CheckAuthUsersOfAppResponse(SdkResponse):
     }
 
     def __init__(self, total=None, id=None, users=None):
-        """CheckAuthUsersOfAppResponse
+        r"""CheckAuthUsersOfAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CheckAuthUsersOfAppResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this CheckAuthUsersOfAppResponse.
+        r"""Gets the total of this CheckAuthUsersOfAppResponse.
 
         应用的总成员数量
 
@@ -69,7 +69,7 @@ class CheckAuthUsersOfAppResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this CheckAuthUsersOfAppResponse.
+        r"""Sets the total of this CheckAuthUsersOfAppResponse.
 
         应用的总成员数量
 
@@ -80,7 +80,7 @@ class CheckAuthUsersOfAppResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CheckAuthUsersOfAppResponse.
+        r"""Gets the id of this CheckAuthUsersOfAppResponse.
 
         应用ID
 
@@ -91,7 +91,7 @@ class CheckAuthUsersOfAppResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CheckAuthUsersOfAppResponse.
+        r"""Sets the id of this CheckAuthUsersOfAppResponse.
 
         应用ID
 
@@ -102,7 +102,7 @@ class CheckAuthUsersOfAppResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this CheckAuthUsersOfAppResponse.
+        r"""Gets the users of this CheckAuthUsersOfAppResponse.
 
         用户成员列表
 
@@ -113,7 +113,7 @@ class CheckAuthUsersOfAppResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this CheckAuthUsersOfAppResponse.
+        r"""Sets the users of this CheckAuthUsersOfAppResponse.
 
         用户成员列表
 

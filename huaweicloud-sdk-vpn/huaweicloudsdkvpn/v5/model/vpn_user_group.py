@@ -37,7 +37,7 @@ class VpnUserGroup:
     }
 
     def __init__(self, id=None, name=None, description=None, type=None, user_number=None, created_at=None, updated_at=None):
-        """VpnUserGroup
+        r"""VpnUserGroup
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class VpnUserGroup:
 
     @property
     def id(self):
-        """Gets the id of this VpnUserGroup.
+        r"""Gets the id of this VpnUserGroup.
 
         用户组ID
 
@@ -96,7 +96,7 @@ class VpnUserGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VpnUserGroup.
+        r"""Sets the id of this VpnUserGroup.
 
         用户组ID
 
@@ -107,7 +107,7 @@ class VpnUserGroup:
 
     @property
     def name(self):
-        """Gets the name of this VpnUserGroup.
+        r"""Gets the name of this VpnUserGroup.
 
         用户组名称
 
@@ -118,7 +118,7 @@ class VpnUserGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VpnUserGroup.
+        r"""Sets the name of this VpnUserGroup.
 
         用户组名称
 
@@ -129,7 +129,7 @@ class VpnUserGroup:
 
     @property
     def description(self):
-        """Gets the description of this VpnUserGroup.
+        r"""Gets the description of this VpnUserGroup.
 
         用户组描述
 
@@ -140,7 +140,7 @@ class VpnUserGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VpnUserGroup.
+        r"""Sets the description of this VpnUserGroup.
 
         用户组描述
 
@@ -151,7 +151,7 @@ class VpnUserGroup:
 
     @property
     def type(self):
-        """Gets the type of this VpnUserGroup.
+        r"""Gets the type of this VpnUserGroup.
 
         用户组类型
 
@@ -162,7 +162,7 @@ class VpnUserGroup:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VpnUserGroup.
+        r"""Sets the type of this VpnUserGroup.
 
         用户组类型
 
@@ -173,7 +173,7 @@ class VpnUserGroup:
 
     @property
     def user_number(self):
-        """Gets the user_number of this VpnUserGroup.
+        r"""Gets the user_number of this VpnUserGroup.
 
         用户数量
 
@@ -184,7 +184,7 @@ class VpnUserGroup:
 
     @user_number.setter
     def user_number(self, user_number):
-        """Sets the user_number of this VpnUserGroup.
+        r"""Sets the user_number of this VpnUserGroup.
 
         用户数量
 
@@ -195,7 +195,7 @@ class VpnUserGroup:
 
     @property
     def created_at(self):
-        """Gets the created_at of this VpnUserGroup.
+        r"""Gets the created_at of this VpnUserGroup.
 
         创建时间
 
@@ -206,7 +206,7 @@ class VpnUserGroup:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this VpnUserGroup.
+        r"""Sets the created_at of this VpnUserGroup.
 
         创建时间
 
@@ -217,7 +217,7 @@ class VpnUserGroup:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this VpnUserGroup.
+        r"""Gets the updated_at of this VpnUserGroup.
 
         更新时间
 
@@ -228,7 +228,7 @@ class VpnUserGroup:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this VpnUserGroup.
+        r"""Sets the updated_at of this VpnUserGroup.
 
         更新时间
 

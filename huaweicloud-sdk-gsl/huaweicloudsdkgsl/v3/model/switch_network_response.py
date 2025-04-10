@@ -26,7 +26,7 @@ class SwitchNetworkResponse(SdkResponse):
     }
 
     def __init__(self, work_order_id=None):
-        """SwitchNetworkResponse
+        r"""SwitchNetworkResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchNetworkResponse(SdkResponse):
 
     @property
     def work_order_id(self):
-        """Gets the work_order_id of this SwitchNetworkResponse.
+        r"""Gets the work_order_id of this SwitchNetworkResponse.
 
         业务受理单号
 
@@ -55,7 +55,7 @@ class SwitchNetworkResponse(SdkResponse):
 
     @work_order_id.setter
     def work_order_id(self, work_order_id):
-        """Sets the work_order_id of this SwitchNetworkResponse.
+        r"""Sets the work_order_id of this SwitchNetworkResponse.
 
         业务受理单号
 

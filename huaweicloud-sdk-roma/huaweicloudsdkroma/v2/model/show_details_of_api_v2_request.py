@@ -27,7 +27,7 @@ class ShowDetailsOfApiV2Request:
     }
 
     def __init__(self, instance_id=None, api_id=None):
-        """ShowDetailsOfApiV2Request
+        r"""ShowDetailsOfApiV2Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDetailsOfApiV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDetailsOfApiV2Request.
+        r"""Gets the instance_id of this ShowDetailsOfApiV2Request.
 
         实例ID
 
@@ -59,7 +59,7 @@ class ShowDetailsOfApiV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDetailsOfApiV2Request.
+        r"""Sets the instance_id of this ShowDetailsOfApiV2Request.
 
         实例ID
 
@@ -70,7 +70,7 @@ class ShowDetailsOfApiV2Request:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ShowDetailsOfApiV2Request.
+        r"""Gets the api_id of this ShowDetailsOfApiV2Request.
 
         API的编号
 
@@ -81,7 +81,7 @@ class ShowDetailsOfApiV2Request:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ShowDetailsOfApiV2Request.
+        r"""Sets the api_id of this ShowDetailsOfApiV2Request.
 
         API的编号
 

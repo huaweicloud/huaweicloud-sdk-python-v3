@@ -28,7 +28,7 @@ class ListSecuritySecrecyLevelsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, content=None):
-        """ListSecuritySecrecyLevelsResponse
+        r"""ListSecuritySecrecyLevelsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecuritySecrecyLevelsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSecuritySecrecyLevelsResponse.
+        r"""Gets the total of this ListSecuritySecrecyLevelsResponse.
 
         总条数
 
@@ -62,7 +62,7 @@ class ListSecuritySecrecyLevelsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSecuritySecrecyLevelsResponse.
+        r"""Sets the total of this ListSecuritySecrecyLevelsResponse.
 
         总条数
 
@@ -73,7 +73,7 @@ class ListSecuritySecrecyLevelsResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this ListSecuritySecrecyLevelsResponse.
+        r"""Gets the content of this ListSecuritySecrecyLevelsResponse.
 
         密级列表
 
@@ -84,7 +84,7 @@ class ListSecuritySecrecyLevelsResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ListSecuritySecrecyLevelsResponse.
+        r"""Sets the content of this ListSecuritySecrecyLevelsResponse.
 
         密级列表
 

@@ -29,7 +29,7 @@ class MaintainWindow:
     }
 
     def __init__(self, day=None, start_time=None, end_time=None):
-        """MaintainWindow
+        r"""MaintainWindow
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MaintainWindow:
 
     @property
     def day(self):
-        """Gets the day of this MaintainWindow.
+        r"""Gets the day of this MaintainWindow.
 
         每周的维护时间，以天为粒度，取值如下：  - Mon：星期一 - Tue：星期二 - Wed：星期三 - Thu：星期四 - Fri：星期五 - Sat：星期六 - Sun：星期日
 
@@ -68,7 +68,7 @@ class MaintainWindow:
 
     @day.setter
     def day(self, day):
-        """Sets the day of this MaintainWindow.
+        r"""Sets the day of this MaintainWindow.
 
         每周的维护时间，以天为粒度，取值如下：  - Mon：星期一 - Tue：星期二 - Wed：星期三 - Thu：星期四 - Fri：星期五 - Sat：星期六 - Sun：星期日
 
@@ -79,7 +79,7 @@ class MaintainWindow:
 
     @property
     def start_time(self):
-        """Gets the start_time of this MaintainWindow.
+        r"""Gets the start_time of this MaintainWindow.
 
         维护开始时间，显示格式为 HH：mm，时区为GMT+0。
 
@@ -90,7 +90,7 @@ class MaintainWindow:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this MaintainWindow.
+        r"""Sets the start_time of this MaintainWindow.
 
         维护开始时间，显示格式为 HH：mm，时区为GMT+0。
 
@@ -101,7 +101,7 @@ class MaintainWindow:
 
     @property
     def end_time(self):
-        """Gets the end_time of this MaintainWindow.
+        r"""Gets the end_time of this MaintainWindow.
 
         维护结束时间，显示格式为 HH：mm, 时区为GMT+0。
 
@@ -112,7 +112,7 @@ class MaintainWindow:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this MaintainWindow.
+        r"""Sets the end_time of this MaintainWindow.
 
         维护结束时间，显示格式为 HH：mm, 时区为GMT+0。
 

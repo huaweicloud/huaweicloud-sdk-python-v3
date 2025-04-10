@@ -27,7 +27,7 @@ class RecognizeHealthCodeRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """RecognizeHealthCodeRequest
+        r"""RecognizeHealthCodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RecognizeHealthCodeRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RecognizeHealthCodeRequest.
+        r"""Gets the enterprise_project_id of this RecognizeHealthCodeRequest.
 
         企业项目ID。OCR支持通过企业项目管理（EPS）对不同用户组和用户的资源使用，进行分账。 获取方法：进入“[企业项目管理](https://console.huaweicloud.com/eps/?region=cn-north-4#/projects/list)”页面，单击企业项目名称，在企业项目详情页获取Enterprise-Project-Id（企业项目ID）。 企业项目创建步骤请参见用户指南。 > 说明： 创建企业项目后，在传参时，有以下三类场景。 - 携带正确的ID，正常使用OCR服务，账单的企业项目会被分类到企业ID对应的企业项目中。 - 携带格式正确但不存在的ID，正常使用OCR服务，账单的企业项目会显示对应不存在的企业项目ID。 - 不携带ID或格式错误ID（包含特殊字符等），正常使用OCR服务，账单的企业项目会被分类到\"default\"中。
 
@@ -61,7 +61,7 @@ class RecognizeHealthCodeRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RecognizeHealthCodeRequest.
+        r"""Sets the enterprise_project_id of this RecognizeHealthCodeRequest.
 
         企业项目ID。OCR支持通过企业项目管理（EPS）对不同用户组和用户的资源使用，进行分账。 获取方法：进入“[企业项目管理](https://console.huaweicloud.com/eps/?region=cn-north-4#/projects/list)”页面，单击企业项目名称，在企业项目详情页获取Enterprise-Project-Id（企业项目ID）。 企业项目创建步骤请参见用户指南。 > 说明： 创建企业项目后，在传参时，有以下三类场景。 - 携带正确的ID，正常使用OCR服务，账单的企业项目会被分类到企业ID对应的企业项目中。 - 携带格式正确但不存在的ID，正常使用OCR服务，账单的企业项目会显示对应不存在的企业项目ID。 - 不携带ID或格式错误ID（包含特殊字符等），正常使用OCR服务，账单的企业项目会被分类到\"default\"中。
 
@@ -72,7 +72,7 @@ class RecognizeHealthCodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this RecognizeHealthCodeRequest.
+        r"""Gets the body of this RecognizeHealthCodeRequest.
 
         :return: The body of this RecognizeHealthCodeRequest.
         :rtype: :class:`huaweicloudsdkocr.v1.HealthCodeRequestBody`
@@ -81,7 +81,7 @@ class RecognizeHealthCodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RecognizeHealthCodeRequest.
+        r"""Sets the body of this RecognizeHealthCodeRequest.
 
         :param body: The body of this RecognizeHealthCodeRequest.
         :type body: :class:`huaweicloudsdkocr.v1.HealthCodeRequestBody`

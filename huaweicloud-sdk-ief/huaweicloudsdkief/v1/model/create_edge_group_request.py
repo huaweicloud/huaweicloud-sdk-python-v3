@@ -27,7 +27,7 @@ class CreateEdgeGroupRequest:
     }
 
     def __init__(self, ief_instance_id=None, body=None):
-        """CreateEdgeGroupRequest
+        r"""CreateEdgeGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateEdgeGroupRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateEdgeGroupRequest.
+        r"""Gets the ief_instance_id of this CreateEdgeGroupRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -61,7 +61,7 @@ class CreateEdgeGroupRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateEdgeGroupRequest.
+        r"""Sets the ief_instance_id of this CreateEdgeGroupRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -72,7 +72,7 @@ class CreateEdgeGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEdgeGroupRequest.
+        r"""Gets the body of this CreateEdgeGroupRequest.
 
         :return: The body of this CreateEdgeGroupRequest.
         :rtype: :class:`huaweicloudsdkief.v1.EdgeGroupRequest`
@@ -81,7 +81,7 @@ class CreateEdgeGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEdgeGroupRequest.
+        r"""Sets the body of this CreateEdgeGroupRequest.
 
         :param body: The body of this CreateEdgeGroupRequest.
         :type body: :class:`huaweicloudsdkief.v1.EdgeGroupRequest`

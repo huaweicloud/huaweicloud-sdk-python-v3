@@ -29,7 +29,7 @@ class CreateScoreV2Req:
     }
 
     def __init__(self, judgement=None, incident_satisfaction_list=None, group_id=None):
-        """CreateScoreV2Req
+        r"""CreateScoreV2Req
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateScoreV2Req:
 
     @property
     def judgement(self):
-        """Gets the judgement of this CreateScoreV2Req.
+        r"""Gets the judgement of this CreateScoreV2Req.
 
         评价内容
 
@@ -66,7 +66,7 @@ class CreateScoreV2Req:
 
     @judgement.setter
     def judgement(self, judgement):
-        """Sets the judgement of this CreateScoreV2Req.
+        r"""Sets the judgement of this CreateScoreV2Req.
 
         评价内容
 
@@ -77,7 +77,7 @@ class CreateScoreV2Req:
 
     @property
     def incident_satisfaction_list(self):
-        """Gets the incident_satisfaction_list of this CreateScoreV2Req.
+        r"""Gets the incident_satisfaction_list of this CreateScoreV2Req.
 
         满意度列表
 
@@ -88,7 +88,7 @@ class CreateScoreV2Req:
 
     @incident_satisfaction_list.setter
     def incident_satisfaction_list(self, incident_satisfaction_list):
-        """Sets the incident_satisfaction_list of this CreateScoreV2Req.
+        r"""Sets the incident_satisfaction_list of this CreateScoreV2Req.
 
         满意度列表
 
@@ -99,7 +99,7 @@ class CreateScoreV2Req:
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateScoreV2Req.
+        r"""Gets the group_id of this CreateScoreV2Req.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 
@@ -110,7 +110,7 @@ class CreateScoreV2Req:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateScoreV2Req.
+        r"""Sets the group_id of this CreateScoreV2Req.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 

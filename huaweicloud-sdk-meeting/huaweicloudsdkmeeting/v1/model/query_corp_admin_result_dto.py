@@ -39,7 +39,7 @@ class QueryCorpAdminResultDTO:
     }
 
     def __init__(self, id=None, account=None, name=None, admin_type=None, email=None, phone=None, country=None, dept=None):
-        """QueryCorpAdminResultDTO
+        r"""QueryCorpAdminResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class QueryCorpAdminResultDTO:
 
     @property
     def id(self):
-        """Gets the id of this QueryCorpAdminResultDTO.
+        r"""Gets the id of this QueryCorpAdminResultDTO.
 
         用户UUID。
 
@@ -103,7 +103,7 @@ class QueryCorpAdminResultDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryCorpAdminResultDTO.
+        r"""Sets the id of this QueryCorpAdminResultDTO.
 
         用户UUID。
 
@@ -114,7 +114,7 @@ class QueryCorpAdminResultDTO:
 
     @property
     def account(self):
-        """Gets the account of this QueryCorpAdminResultDTO.
+        r"""Gets the account of this QueryCorpAdminResultDTO.
 
         用户帐号（华为云会议帐号）。
 
@@ -125,7 +125,7 @@ class QueryCorpAdminResultDTO:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this QueryCorpAdminResultDTO.
+        r"""Sets the account of this QueryCorpAdminResultDTO.
 
         用户帐号（华为云会议帐号）。
 
@@ -136,7 +136,7 @@ class QueryCorpAdminResultDTO:
 
     @property
     def name(self):
-        """Gets the name of this QueryCorpAdminResultDTO.
+        r"""Gets the name of this QueryCorpAdminResultDTO.
 
         用户名称。
 
@@ -147,7 +147,7 @@ class QueryCorpAdminResultDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryCorpAdminResultDTO.
+        r"""Sets the name of this QueryCorpAdminResultDTO.
 
         用户名称。
 
@@ -158,7 +158,7 @@ class QueryCorpAdminResultDTO:
 
     @property
     def admin_type(self):
-        """Gets the admin_type of this QueryCorpAdminResultDTO.
+        r"""Gets the admin_type of this QueryCorpAdminResultDTO.
 
         管理员类型。 * 0：默认管理员 * 1：普通管理员 
 
@@ -169,7 +169,7 @@ class QueryCorpAdminResultDTO:
 
     @admin_type.setter
     def admin_type(self, admin_type):
-        """Sets the admin_type of this QueryCorpAdminResultDTO.
+        r"""Sets the admin_type of this QueryCorpAdminResultDTO.
 
         管理员类型。 * 0：默认管理员 * 1：普通管理员 
 
@@ -180,7 +180,7 @@ class QueryCorpAdminResultDTO:
 
     @property
     def email(self):
-        """Gets the email of this QueryCorpAdminResultDTO.
+        r"""Gets the email of this QueryCorpAdminResultDTO.
 
         邮箱地址。
 
@@ -191,7 +191,7 @@ class QueryCorpAdminResultDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this QueryCorpAdminResultDTO.
+        r"""Sets the email of this QueryCorpAdminResultDTO.
 
         邮箱地址。
 
@@ -202,7 +202,7 @@ class QueryCorpAdminResultDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this QueryCorpAdminResultDTO.
+        r"""Gets the phone of this QueryCorpAdminResultDTO.
 
         手机号。
 
@@ -213,7 +213,7 @@ class QueryCorpAdminResultDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this QueryCorpAdminResultDTO.
+        r"""Sets the phone of this QueryCorpAdminResultDTO.
 
         手机号。
 
@@ -224,7 +224,7 @@ class QueryCorpAdminResultDTO:
 
     @property
     def country(self):
-        """Gets the country of this QueryCorpAdminResultDTO.
+        r"""Gets the country of this QueryCorpAdminResultDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -235,7 +235,7 @@ class QueryCorpAdminResultDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this QueryCorpAdminResultDTO.
+        r"""Sets the country of this QueryCorpAdminResultDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -246,7 +246,7 @@ class QueryCorpAdminResultDTO:
 
     @property
     def dept(self):
-        """Gets the dept of this QueryCorpAdminResultDTO.
+        r"""Gets the dept of this QueryCorpAdminResultDTO.
 
         :return: The dept of this QueryCorpAdminResultDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeptBasicDTO`
@@ -255,7 +255,7 @@ class QueryCorpAdminResultDTO:
 
     @dept.setter
     def dept(self, dept):
-        """Sets the dept of this QueryCorpAdminResultDTO.
+        r"""Sets the dept of this QueryCorpAdminResultDTO.
 
         :param dept: The dept of this QueryCorpAdminResultDTO.
         :type dept: :class:`huaweicloudsdkmeeting.v1.DeptBasicDTO`

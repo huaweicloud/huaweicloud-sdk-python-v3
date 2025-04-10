@@ -29,7 +29,7 @@ class PostcheckClusterRequestBody:
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """PostcheckClusterRequestBody
+        r"""PostcheckClusterRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PostcheckClusterRequestBody:
 
     @property
     def api_version(self):
-        """Gets the api_version of this PostcheckClusterRequestBody.
+        r"""Gets the api_version of this PostcheckClusterRequestBody.
 
         API版本，默认为v3
 
@@ -65,7 +65,7 @@ class PostcheckClusterRequestBody:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this PostcheckClusterRequestBody.
+        r"""Sets the api_version of this PostcheckClusterRequestBody.
 
         API版本，默认为v3
 
@@ -76,7 +76,7 @@ class PostcheckClusterRequestBody:
 
     @property
     def kind(self):
-        """Gets the kind of this PostcheckClusterRequestBody.
+        r"""Gets the kind of this PostcheckClusterRequestBody.
 
         资源类型
 
@@ -87,7 +87,7 @@ class PostcheckClusterRequestBody:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this PostcheckClusterRequestBody.
+        r"""Sets the kind of this PostcheckClusterRequestBody.
 
         资源类型
 
@@ -98,7 +98,7 @@ class PostcheckClusterRequestBody:
 
     @property
     def spec(self):
-        """Gets the spec of this PostcheckClusterRequestBody.
+        r"""Gets the spec of this PostcheckClusterRequestBody.
 
         :return: The spec of this PostcheckClusterRequestBody.
         :rtype: :class:`huaweicloudsdkcce.v3.PostcheckSpec`
@@ -107,7 +107,7 @@ class PostcheckClusterRequestBody:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this PostcheckClusterRequestBody.
+        r"""Sets the spec of this PostcheckClusterRequestBody.
 
         :param spec: The spec of this PostcheckClusterRequestBody.
         :type spec: :class:`huaweicloudsdkcce.v3.PostcheckSpec`

@@ -27,7 +27,7 @@ class PermissionSetPermissionUpdateDTO:
     }
 
     def __init__(self, dw_id=None, permission_actions=None):
-        """PermissionSetPermissionUpdateDTO
+        r"""PermissionSetPermissionUpdateDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PermissionSetPermissionUpdateDTO:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this PermissionSetPermissionUpdateDTO.
+        r"""Gets the dw_id of this PermissionSetPermissionUpdateDTO.
 
         数据连接id
 
@@ -61,7 +61,7 @@ class PermissionSetPermissionUpdateDTO:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this PermissionSetPermissionUpdateDTO.
+        r"""Sets the dw_id of this PermissionSetPermissionUpdateDTO.
 
         数据连接id
 
@@ -72,7 +72,7 @@ class PermissionSetPermissionUpdateDTO:
 
     @property
     def permission_actions(self):
-        """Gets the permission_actions of this PermissionSetPermissionUpdateDTO.
+        r"""Gets the permission_actions of this PermissionSetPermissionUpdateDTO.
 
         权限操作列表
 
@@ -83,7 +83,7 @@ class PermissionSetPermissionUpdateDTO:
 
     @permission_actions.setter
     def permission_actions(self, permission_actions):
-        """Sets the permission_actions of this PermissionSetPermissionUpdateDTO.
+        r"""Sets the permission_actions of this PermissionSetPermissionUpdateDTO.
 
         权限操作列表
 

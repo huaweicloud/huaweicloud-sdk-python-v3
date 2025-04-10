@@ -24,7 +24,7 @@ class DownloadDataTraceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DownloadDataTraceResponse
+        r"""DownloadDataTraceResponse
 
         The model defined in huaweicloud sdk
 

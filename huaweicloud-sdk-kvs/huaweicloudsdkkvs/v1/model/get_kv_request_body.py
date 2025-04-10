@@ -27,7 +27,7 @@ class GetKvRequestBody:
     }
 
     def __init__(self, table_name=None, primary_key=None):
-        """GetKvRequestBody
+        r"""GetKvRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GetKvRequestBody:
 
     @property
     def table_name(self):
-        """Gets the table_name of this GetKvRequestBody.
+        r"""Gets the table_name of this GetKvRequestBody.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -59,7 +59,7 @@ class GetKvRequestBody:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this GetKvRequestBody.
+        r"""Sets the table_name of this GetKvRequestBody.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -70,7 +70,7 @@ class GetKvRequestBody:
 
     @property
     def primary_key(self):
-        """Gets the primary_key of this GetKvRequestBody.
+        r"""Gets the primary_key of this GetKvRequestBody.
 
         用户自定义的主键名及值。
 
@@ -81,7 +81,7 @@ class GetKvRequestBody:
 
     @primary_key.setter
     def primary_key(self, primary_key):
-        """Sets the primary_key of this GetKvRequestBody.
+        r"""Sets the primary_key of this GetKvRequestBody.
 
         用户自定义的主键名及值。
 

@@ -25,7 +25,7 @@ class NodeManagement:
     }
 
     def __init__(self, server_group_reference=None):
-        """NodeManagement
+        r"""NodeManagement
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NodeManagement:
 
     @property
     def server_group_reference(self):
-        """Gets the server_group_reference of this NodeManagement.
+        r"""Gets the server_group_reference of this NodeManagement.
 
         云服务器组ID，若指定，节点池中所有节点将创建在该云服务器组下，节点池的云服务器组只能在创建时指定，无法修改。指定云服务器组时节点池中的节点数量不允许超出云服务器组的配额限制。 
 
@@ -54,7 +54,7 @@ class NodeManagement:
 
     @server_group_reference.setter
     def server_group_reference(self, server_group_reference):
-        """Sets the server_group_reference of this NodeManagement.
+        r"""Sets the server_group_reference of this NodeManagement.
 
         云服务器组ID，若指定，节点池中所有节点将创建在该云服务器组下，节点池的云服务器组只能在创建时指定，无法修改。指定云服务器组时节点池中的节点数量不允许超出云服务器组的配额限制。 
 

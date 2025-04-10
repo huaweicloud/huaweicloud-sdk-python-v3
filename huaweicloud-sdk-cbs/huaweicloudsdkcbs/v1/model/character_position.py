@@ -27,7 +27,7 @@ class CharacterPosition:
     }
 
     def __init__(self, x=None, y=None):
-        """CharacterPosition
+        r"""CharacterPosition
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CharacterPosition:
 
     @property
     def x(self):
-        """Gets the x of this CharacterPosition.
+        r"""Gets the x of this CharacterPosition.
 
         从左上为0点出发的横坐标
 
@@ -61,7 +61,7 @@ class CharacterPosition:
 
     @x.setter
     def x(self, x):
-        """Sets the x of this CharacterPosition.
+        r"""Sets the x of this CharacterPosition.
 
         从左上为0点出发的横坐标
 
@@ -72,7 +72,7 @@ class CharacterPosition:
 
     @property
     def y(self):
-        """Gets the y of this CharacterPosition.
+        r"""Gets the y of this CharacterPosition.
 
         从左上为0点出发的纵坐标
 
@@ -83,7 +83,7 @@ class CharacterPosition:
 
     @y.setter
     def y(self, y):
-        """Sets the y of this CharacterPosition.
+        r"""Sets the y of this CharacterPosition.
 
         从左上为0点出发的纵坐标
 

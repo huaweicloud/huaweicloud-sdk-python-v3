@@ -27,7 +27,7 @@ class GetAccountTagsV2:
     }
 
     def __init__(self, key=None, values=None):
-        """GetAccountTagsV2
+        r"""GetAccountTagsV2
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GetAccountTagsV2:
 
     @property
     def key(self):
-        """Gets the key of this GetAccountTagsV2.
+        r"""Gets the key of this GetAccountTagsV2.
 
         - 功能说明：标签名称 - 约束：   - 创建的预定义标签如果与已有的预定义标签完全相同，则会覆盖已有的预定义标签；若只有“键”相同，“值”不同，则为新创建的预定义标签。   - 键的长度最大36字符，由英文字母、数字、下划线、中划线、中文字符组成。   - 单个资源最多可以添加20个标签。
 
@@ -59,7 +59,7 @@ class GetAccountTagsV2:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this GetAccountTagsV2.
+        r"""Sets the key of this GetAccountTagsV2.
 
         - 功能说明：标签名称 - 约束：   - 创建的预定义标签如果与已有的预定义标签完全相同，则会覆盖已有的预定义标签；若只有“键”相同，“值”不同，则为新创建的预定义标签。   - 键的长度最大36字符，由英文字母、数字、下划线、中划线、中文字符组成。   - 单个资源最多可以添加20个标签。
 
@@ -70,7 +70,7 @@ class GetAccountTagsV2:
 
     @property
     def values(self):
-        """Gets the values of this GetAccountTagsV2.
+        r"""Gets the values of this GetAccountTagsV2.
 
         - 功能说明：标签值列表 - 约束：   - 值的长度最大43字符，由英文字母、数字、下划线、点、中划线、中文字符组成。
 
@@ -81,7 +81,7 @@ class GetAccountTagsV2:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this GetAccountTagsV2.
+        r"""Sets the values of this GetAccountTagsV2.
 
         - 功能说明：标签值列表 - 约束：   - 值的长度最大43字符，由英文字母、数字、下划线、点、中划线、中文字符组成。
 

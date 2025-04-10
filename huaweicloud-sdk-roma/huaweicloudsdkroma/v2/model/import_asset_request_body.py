@@ -25,7 +25,7 @@ class ImportAssetRequestBody:
     }
 
     def __init__(self, import_asset_request_body=None):
-        """ImportAssetRequestBody
+        r"""ImportAssetRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ImportAssetRequestBody:
 
     @property
     def import_asset_request_body(self):
-        """Gets the import_asset_request_body of this ImportAssetRequestBody.
+        r"""Gets the import_asset_request_body of this ImportAssetRequestBody.
 
         资产压缩文件
 
@@ -53,7 +53,7 @@ class ImportAssetRequestBody:
 
     @import_asset_request_body.setter
     def import_asset_request_body(self, import_asset_request_body):
-        """Sets the import_asset_request_body of this ImportAssetRequestBody.
+        r"""Sets the import_asset_request_body of this ImportAssetRequestBody.
 
         资产压缩文件
 

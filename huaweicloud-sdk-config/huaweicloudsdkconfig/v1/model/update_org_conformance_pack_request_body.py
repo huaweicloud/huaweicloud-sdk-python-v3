@@ -29,7 +29,7 @@ class UpdateOrgConformancePackRequestBody:
     }
 
     def __init__(self, name=None, excluded_accounts=None, vars_structure=None):
-        """UpdateOrgConformancePackRequestBody
+        r"""UpdateOrgConformancePackRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateOrgConformancePackRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateOrgConformancePackRequestBody.
+        r"""Gets the name of this UpdateOrgConformancePackRequestBody.
 
         组织合规规则包名称。
 
@@ -67,7 +67,7 @@ class UpdateOrgConformancePackRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateOrgConformancePackRequestBody.
+        r"""Sets the name of this UpdateOrgConformancePackRequestBody.
 
         组织合规规则包名称。
 
@@ -78,7 +78,7 @@ class UpdateOrgConformancePackRequestBody:
 
     @property
     def excluded_accounts(self):
-        """Gets the excluded_accounts of this UpdateOrgConformancePackRequestBody.
+        r"""Gets the excluded_accounts of this UpdateOrgConformancePackRequestBody.
 
         排除配置合规包的帐号。
 
@@ -89,7 +89,7 @@ class UpdateOrgConformancePackRequestBody:
 
     @excluded_accounts.setter
     def excluded_accounts(self, excluded_accounts):
-        """Sets the excluded_accounts of this UpdateOrgConformancePackRequestBody.
+        r"""Sets the excluded_accounts of this UpdateOrgConformancePackRequestBody.
 
         排除配置合规包的帐号。
 
@@ -100,7 +100,7 @@ class UpdateOrgConformancePackRequestBody:
 
     @property
     def vars_structure(self):
-        """Gets the vars_structure of this UpdateOrgConformancePackRequestBody.
+        r"""Gets the vars_structure of this UpdateOrgConformancePackRequestBody.
 
         合规规则包参数。
 
@@ -111,7 +111,7 @@ class UpdateOrgConformancePackRequestBody:
 
     @vars_structure.setter
     def vars_structure(self, vars_structure):
-        """Sets the vars_structure of this UpdateOrgConformancePackRequestBody.
+        r"""Sets the vars_structure of this UpdateOrgConformancePackRequestBody.
 
         合规规则包参数。
 

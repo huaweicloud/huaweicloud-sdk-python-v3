@@ -33,7 +33,7 @@ class BatchMetricData:
     }
 
     def __init__(self, unit=None, datapoints=None, namespace=None, metric_name=None, dimensions=None):
-        """BatchMetricData
+        r"""BatchMetricData
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class BatchMetricData:
 
     @property
     def unit(self):
-        """Gets the unit of this BatchMetricData.
+        r"""Gets the unit of this BatchMetricData.
 
         指标单位。
 
@@ -80,7 +80,7 @@ class BatchMetricData:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this BatchMetricData.
+        r"""Sets the unit of this BatchMetricData.
 
         指标单位。
 
@@ -91,7 +91,7 @@ class BatchMetricData:
 
     @property
     def datapoints(self):
-        """Gets the datapoints of this BatchMetricData.
+        r"""Gets the datapoints of this BatchMetricData.
 
         指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
 
@@ -102,7 +102,7 @@ class BatchMetricData:
 
     @datapoints.setter
     def datapoints(self, datapoints):
-        """Sets the datapoints of this BatchMetricData.
+        r"""Sets the datapoints of this BatchMetricData.
 
         指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
 
@@ -113,7 +113,7 @@ class BatchMetricData:
 
     @property
     def namespace(self):
-        """Gets the namespace of this BatchMetricData.
+        r"""Gets the namespace of this BatchMetricData.
 
         指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -124,7 +124,7 @@ class BatchMetricData:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this BatchMetricData.
+        r"""Sets the namespace of this BatchMetricData.
 
         指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -135,7 +135,7 @@ class BatchMetricData:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this BatchMetricData.
+        r"""Gets the metric_name of this BatchMetricData.
 
         指标名称，例如弹性云服务器监控指标中的cpu_util；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -146,7 +146,7 @@ class BatchMetricData:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this BatchMetricData.
+        r"""Sets the metric_name of this BatchMetricData.
 
         指标名称，例如弹性云服务器监控指标中的cpu_util；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -157,7 +157,7 @@ class BatchMetricData:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this BatchMetricData.
+        r"""Gets the dimensions of this BatchMetricData.
 
         指标维度列表。
 
@@ -168,7 +168,7 @@ class BatchMetricData:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this BatchMetricData.
+        r"""Sets the dimensions of this BatchMetricData.
 
         指标维度列表。
 

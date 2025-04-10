@@ -30,7 +30,7 @@ class ShowSceneByPageResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowSceneByPageResponse
+        r"""ShowSceneByPageResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowSceneByPageResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowSceneByPageResponse.
+        r"""Gets the code of this ShowSceneByPageResponse.
 
         :return: The code of this ShowSceneByPageResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowSceneByPageResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowSceneByPageResponse.
+        r"""Sets the code of this ShowSceneByPageResponse.
 
         :param code: The code of this ShowSceneByPageResponse.
         :type code: str
@@ -76,7 +76,7 @@ class ShowSceneByPageResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowSceneByPageResponse.
+        r"""Gets the data of this ShowSceneByPageResponse.
 
         :return: The data of this ShowSceneByPageResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoScene`
@@ -85,7 +85,7 @@ class ShowSceneByPageResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowSceneByPageResponse.
+        r"""Sets the data of this ShowSceneByPageResponse.
 
         :param data: The data of this ShowSceneByPageResponse.
         :type data: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoScene`
@@ -94,7 +94,7 @@ class ShowSceneByPageResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowSceneByPageResponse.
+        r"""Gets the message of this ShowSceneByPageResponse.
 
         :return: The message of this ShowSceneByPageResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ShowSceneByPageResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowSceneByPageResponse.
+        r"""Sets the message of this ShowSceneByPageResponse.
 
         :param message: The message of this ShowSceneByPageResponse.
         :type message: str

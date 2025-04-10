@@ -26,7 +26,7 @@ class BatchDeleteAlarmTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, template_ids=None):
-        """BatchDeleteAlarmTemplatesResponse
+        r"""BatchDeleteAlarmTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteAlarmTemplatesResponse(SdkResponse):
 
     @property
     def template_ids(self):
-        """Gets the template_ids of this BatchDeleteAlarmTemplatesResponse.
+        r"""Gets the template_ids of this BatchDeleteAlarmTemplatesResponse.
 
         成功删除的告警模板ID列表
 
@@ -55,7 +55,7 @@ class BatchDeleteAlarmTemplatesResponse(SdkResponse):
 
     @template_ids.setter
     def template_ids(self, template_ids):
-        """Sets the template_ids of this BatchDeleteAlarmTemplatesResponse.
+        r"""Sets the template_ids of this BatchDeleteAlarmTemplatesResponse.
 
         成功删除的告警模板ID列表
 

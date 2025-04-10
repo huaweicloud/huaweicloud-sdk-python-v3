@@ -35,7 +35,7 @@ class NeutronUpdateFirewallGroupOption:
     }
 
     def __init__(self, admin_state_up=None, description=None, egress_firewall_policy_id=None, ingress_firewall_policy_id=None, name=None, ports=None):
-        """NeutronUpdateFirewallGroupOption
+        r"""NeutronUpdateFirewallGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class NeutronUpdateFirewallGroupOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this NeutronUpdateFirewallGroupOption.
+        r"""Gets the admin_state_up of this NeutronUpdateFirewallGroupOption.
 
         网络ACL防火墙是否受管理员控制。
 
@@ -89,7 +89,7 @@ class NeutronUpdateFirewallGroupOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this NeutronUpdateFirewallGroupOption.
+        r"""Sets the admin_state_up of this NeutronUpdateFirewallGroupOption.
 
         网络ACL防火墙是否受管理员控制。
 
@@ -100,7 +100,7 @@ class NeutronUpdateFirewallGroupOption:
 
     @property
     def description(self):
-        """Gets the description of this NeutronUpdateFirewallGroupOption.
+        r"""Gets the description of this NeutronUpdateFirewallGroupOption.
 
         功能说明：网络ACL防火墙组描述 取值范围：最长255个字符
 
@@ -111,7 +111,7 @@ class NeutronUpdateFirewallGroupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronUpdateFirewallGroupOption.
+        r"""Sets the description of this NeutronUpdateFirewallGroupOption.
 
         功能说明：网络ACL防火墙组描述 取值范围：最长255个字符
 
@@ -122,7 +122,7 @@ class NeutronUpdateFirewallGroupOption:
 
     @property
     def egress_firewall_policy_id(self):
-        """Gets the egress_firewall_policy_id of this NeutronUpdateFirewallGroupOption.
+        r"""Gets the egress_firewall_policy_id of this NeutronUpdateFirewallGroupOption.
 
         出方向网络ACL防火墙策略。
 
@@ -133,7 +133,7 @@ class NeutronUpdateFirewallGroupOption:
 
     @egress_firewall_policy_id.setter
     def egress_firewall_policy_id(self, egress_firewall_policy_id):
-        """Sets the egress_firewall_policy_id of this NeutronUpdateFirewallGroupOption.
+        r"""Sets the egress_firewall_policy_id of this NeutronUpdateFirewallGroupOption.
 
         出方向网络ACL防火墙策略。
 
@@ -144,7 +144,7 @@ class NeutronUpdateFirewallGroupOption:
 
     @property
     def ingress_firewall_policy_id(self):
-        """Gets the ingress_firewall_policy_id of this NeutronUpdateFirewallGroupOption.
+        r"""Gets the ingress_firewall_policy_id of this NeutronUpdateFirewallGroupOption.
 
         入方向网络ACL防火墙策略。
 
@@ -155,7 +155,7 @@ class NeutronUpdateFirewallGroupOption:
 
     @ingress_firewall_policy_id.setter
     def ingress_firewall_policy_id(self, ingress_firewall_policy_id):
-        """Sets the ingress_firewall_policy_id of this NeutronUpdateFirewallGroupOption.
+        r"""Sets the ingress_firewall_policy_id of this NeutronUpdateFirewallGroupOption.
 
         入方向网络ACL防火墙策略。
 
@@ -166,7 +166,7 @@ class NeutronUpdateFirewallGroupOption:
 
     @property
     def name(self):
-        """Gets the name of this NeutronUpdateFirewallGroupOption.
+        r"""Gets the name of this NeutronUpdateFirewallGroupOption.
 
         功能说明：网络ACL防火墙组名称 取值范围：最长255个字符
 
@@ -177,7 +177,7 @@ class NeutronUpdateFirewallGroupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronUpdateFirewallGroupOption.
+        r"""Sets the name of this NeutronUpdateFirewallGroupOption.
 
         功能说明：网络ACL防火墙组名称 取值范围：最长255个字符
 
@@ -188,7 +188,7 @@ class NeutronUpdateFirewallGroupOption:
 
     @property
     def ports(self):
-        """Gets the ports of this NeutronUpdateFirewallGroupOption.
+        r"""Gets the ports of this NeutronUpdateFirewallGroupOption.
 
         功能说明：网络ACL防火墙组绑定的端口列表 约束：必须为分布式router的端口id
 
@@ -199,7 +199,7 @@ class NeutronUpdateFirewallGroupOption:
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this NeutronUpdateFirewallGroupOption.
+        r"""Sets the ports of this NeutronUpdateFirewallGroupOption.
 
         功能说明：网络ACL防火墙组绑定的端口列表 约束：必须为分布式router的端口id
 

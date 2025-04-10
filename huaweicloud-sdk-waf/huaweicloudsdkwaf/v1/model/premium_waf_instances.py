@@ -29,7 +29,7 @@ class PremiumWafInstances:
     }
 
     def __init__(self, id=None, name=None, accessed=None):
-        """PremiumWafInstances
+        r"""PremiumWafInstances
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PremiumWafInstances:
 
     @property
     def id(self):
-        """Gets the id of this PremiumWafInstances.
+        r"""Gets the id of this PremiumWafInstances.
 
         引擎实例id
 
@@ -68,7 +68,7 @@ class PremiumWafInstances:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PremiumWafInstances.
+        r"""Sets the id of this PremiumWafInstances.
 
         引擎实例id
 
@@ -79,7 +79,7 @@ class PremiumWafInstances:
 
     @property
     def name(self):
-        """Gets the name of this PremiumWafInstances.
+        r"""Gets the name of this PremiumWafInstances.
 
         引擎实例名
 
@@ -90,7 +90,7 @@ class PremiumWafInstances:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PremiumWafInstances.
+        r"""Sets the name of this PremiumWafInstances.
 
         引擎实例名
 
@@ -101,7 +101,7 @@ class PremiumWafInstances:
 
     @property
     def accessed(self):
-        """Gets the accessed of this PremiumWafInstances.
+        r"""Gets the accessed of this PremiumWafInstances.
 
         引擎实例是否已接入，false：未接入；true：已接入
 
@@ -112,7 +112,7 @@ class PremiumWafInstances:
 
     @accessed.setter
     def accessed(self, accessed):
-        """Sets the accessed of this PremiumWafInstances.
+        r"""Sets the accessed of this PremiumWafInstances.
 
         引擎实例是否已接入，false：未接入；true：已接入
 

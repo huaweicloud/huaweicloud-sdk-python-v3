@@ -37,7 +37,7 @@ class ListSecretsRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None, workspace_id=None, tags=None, provider=None, sort=None):
-        """ListSecretsRequest
+        r"""ListSecretsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListSecretsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecretsRequest.
+        r"""Gets the offset of this ListSecretsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -96,7 +96,7 @@ class ListSecretsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecretsRequest.
+        r"""Sets the offset of this ListSecretsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -107,7 +107,7 @@ class ListSecretsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecretsRequest.
+        r"""Gets the limit of this ListSecretsRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 
@@ -118,7 +118,7 @@ class ListSecretsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecretsRequest.
+        r"""Sets the limit of this ListSecretsRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 
@@ -129,7 +129,7 @@ class ListSecretsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSecretsRequest.
+        r"""Gets the name of this ListSecretsRequest.
 
         设备名称，模糊匹配，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -140,7 +140,7 @@ class ListSecretsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSecretsRequest.
+        r"""Sets the name of this ListSecretsRequest.
 
         设备名称，模糊匹配，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -151,7 +151,7 @@ class ListSecretsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListSecretsRequest.
+        r"""Gets the workspace_id of this ListSecretsRequest.
 
         工作空间ID，默认为注册账号子账号的default工作空间，可通过专业版HiLens控制台展开工作空间列表获取到工作空间ID
 
@@ -162,7 +162,7 @@ class ListSecretsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListSecretsRequest.
+        r"""Sets the workspace_id of this ListSecretsRequest.
 
         工作空间ID，默认为注册账号子账号的default工作空间，可通过专业版HiLens控制台展开工作空间列表获取到工作空间ID
 
@@ -173,7 +173,7 @@ class ListSecretsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListSecretsRequest.
+        r"""Gets the tags of this ListSecretsRequest.
 
         标签的key和value通过点连接，多个标签通过逗号连接，如：tags=key1.value1,key2.value2
 
@@ -184,7 +184,7 @@ class ListSecretsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListSecretsRequest.
+        r"""Sets the tags of this ListSecretsRequest.
 
         标签的key和value通过点连接，多个标签通过逗号连接，如：tags=key1.value1,key2.value2
 
@@ -195,7 +195,7 @@ class ListSecretsRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this ListSecretsRequest.
+        r"""Gets the provider of this ListSecretsRequest.
 
         服务提供者：ief或hilens。不传会查询全部服务类型的设备列表
 
@@ -206,7 +206,7 @@ class ListSecretsRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ListSecretsRequest.
+        r"""Sets the provider of this ListSecretsRequest.
 
         服务提供者：ief或hilens。不传会查询全部服务类型的设备列表
 
@@ -217,7 +217,7 @@ class ListSecretsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListSecretsRequest.
+        r"""Gets the sort of this ListSecretsRequest.
 
         排序方式，可根据名称、创建时间、更新时间排序枚举值：name，created_at，updated_at。sort默认升序，如sort=name，降序：sort=name%3Adesc。不填默认为sort=created_at%3Adesc。
 
@@ -228,7 +228,7 @@ class ListSecretsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListSecretsRequest.
+        r"""Sets the sort of this ListSecretsRequest.
 
         排序方式，可根据名称、创建时间、更新时间排序枚举值：name，created_at，updated_at。sort默认升序，如sort=name，降序：sort=name%3Adesc。不填默认为sort=created_at%3Adesc。
 

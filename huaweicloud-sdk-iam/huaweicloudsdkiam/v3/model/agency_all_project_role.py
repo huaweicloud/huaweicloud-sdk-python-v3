@@ -29,7 +29,7 @@ class AgencyAllProjectRole:
     }
 
     def __init__(self, id=None, links=None, name=None):
-        """AgencyAllProjectRole
+        r"""AgencyAllProjectRole
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AgencyAllProjectRole:
 
     @property
     def id(self):
-        """Gets the id of this AgencyAllProjectRole.
+        r"""Gets the id of this AgencyAllProjectRole.
 
         权限ID。
 
@@ -65,7 +65,7 @@ class AgencyAllProjectRole:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AgencyAllProjectRole.
+        r"""Sets the id of this AgencyAllProjectRole.
 
         权限ID。
 
@@ -76,7 +76,7 @@ class AgencyAllProjectRole:
 
     @property
     def links(self):
-        """Gets the links of this AgencyAllProjectRole.
+        r"""Gets the links of this AgencyAllProjectRole.
 
         :return: The links of this AgencyAllProjectRole.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -85,7 +85,7 @@ class AgencyAllProjectRole:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this AgencyAllProjectRole.
+        r"""Sets the links of this AgencyAllProjectRole.
 
         :param links: The links of this AgencyAllProjectRole.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -94,7 +94,7 @@ class AgencyAllProjectRole:
 
     @property
     def name(self):
-        """Gets the name of this AgencyAllProjectRole.
+        r"""Gets the name of this AgencyAllProjectRole.
 
         权限名。
 
@@ -105,7 +105,7 @@ class AgencyAllProjectRole:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgencyAllProjectRole.
+        r"""Sets the name of this AgencyAllProjectRole.
 
         权限名。
 

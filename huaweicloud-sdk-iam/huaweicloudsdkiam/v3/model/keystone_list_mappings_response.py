@@ -28,7 +28,7 @@ class KeystoneListMappingsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, mappings=None):
-        """KeystoneListMappingsResponse
+        r"""KeystoneListMappingsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class KeystoneListMappingsResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this KeystoneListMappingsResponse.
+        r"""Gets the links of this KeystoneListMappingsResponse.
 
         :return: The links of this KeystoneListMappingsResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -60,7 +60,7 @@ class KeystoneListMappingsResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneListMappingsResponse.
+        r"""Sets the links of this KeystoneListMappingsResponse.
 
         :param links: The links of this KeystoneListMappingsResponse.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -69,7 +69,7 @@ class KeystoneListMappingsResponse(SdkResponse):
 
     @property
     def mappings(self):
-        """Gets the mappings of this KeystoneListMappingsResponse.
+        r"""Gets the mappings of this KeystoneListMappingsResponse.
 
         映射信息列表。
 
@@ -80,7 +80,7 @@ class KeystoneListMappingsResponse(SdkResponse):
 
     @mappings.setter
     def mappings(self, mappings):
-        """Sets the mappings of this KeystoneListMappingsResponse.
+        r"""Sets the mappings of this KeystoneListMappingsResponse.
 
         映射信息列表。
 

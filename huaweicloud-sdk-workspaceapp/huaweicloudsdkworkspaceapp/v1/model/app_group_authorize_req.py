@@ -27,7 +27,7 @@ class AppGroupAuthorizeReq:
     }
 
     def __init__(self, app_group_ids=None, accounts=None):
-        """AppGroupAuthorizeReq
+        r"""AppGroupAuthorizeReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AppGroupAuthorizeReq:
 
     @property
     def app_group_ids(self):
-        """Gets the app_group_ids of this AppGroupAuthorizeReq.
+        r"""Gets the app_group_ids of this AppGroupAuthorizeReq.
 
         应用组ID,最多同时操作10个。
 
@@ -59,7 +59,7 @@ class AppGroupAuthorizeReq:
 
     @app_group_ids.setter
     def app_group_ids(self, app_group_ids):
-        """Sets the app_group_ids of this AppGroupAuthorizeReq.
+        r"""Sets the app_group_ids of this AppGroupAuthorizeReq.
 
         应用组ID,最多同时操作10个。
 
@@ -70,7 +70,7 @@ class AppGroupAuthorizeReq:
 
     @property
     def accounts(self):
-        """Gets the accounts of this AppGroupAuthorizeReq.
+        r"""Gets the accounts of this AppGroupAuthorizeReq.
 
         用户(组),单次最多允许操作50个用户(组)。
 
@@ -81,7 +81,7 @@ class AppGroupAuthorizeReq:
 
     @accounts.setter
     def accounts(self, accounts):
-        """Sets the accounts of this AppGroupAuthorizeReq.
+        r"""Sets the accounts of this AppGroupAuthorizeReq.
 
         用户(组),单次最多允许操作50个用户(组)。
 

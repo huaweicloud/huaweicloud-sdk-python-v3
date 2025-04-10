@@ -28,7 +28,7 @@ class ListJobParametersResponse(SdkResponse):
     }
 
     def __init__(self, count=None, parameter_config_list=None):
-        """ListJobParametersResponse
+        r"""ListJobParametersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListJobParametersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListJobParametersResponse.
+        r"""Gets the count of this ListJobParametersResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListJobParametersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListJobParametersResponse.
+        r"""Sets the count of this ListJobParametersResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListJobParametersResponse(SdkResponse):
 
     @property
     def parameter_config_list(self):
-        """Gets the parameter_config_list of this ListJobParametersResponse.
+        r"""Gets the parameter_config_list of this ListJobParametersResponse.
 
         任务参数列表
 
@@ -84,7 +84,7 @@ class ListJobParametersResponse(SdkResponse):
 
     @parameter_config_list.setter
     def parameter_config_list(self, parameter_config_list):
-        """Sets the parameter_config_list of this ListJobParametersResponse.
+        r"""Sets the parameter_config_list of this ListJobParametersResponse.
 
         任务参数列表
 

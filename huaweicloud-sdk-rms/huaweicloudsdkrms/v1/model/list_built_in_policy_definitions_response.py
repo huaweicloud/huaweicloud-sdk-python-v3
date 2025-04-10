@@ -28,7 +28,7 @@ class ListBuiltInPolicyDefinitionsResponse(SdkResponse):
     }
 
     def __init__(self, value=None, page_info=None):
-        """ListBuiltInPolicyDefinitionsResponse
+        r"""ListBuiltInPolicyDefinitionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBuiltInPolicyDefinitionsResponse(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this ListBuiltInPolicyDefinitionsResponse.
+        r"""Gets the value of this ListBuiltInPolicyDefinitionsResponse.
 
         策略定义列表
 
@@ -62,7 +62,7 @@ class ListBuiltInPolicyDefinitionsResponse(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListBuiltInPolicyDefinitionsResponse.
+        r"""Sets the value of this ListBuiltInPolicyDefinitionsResponse.
 
         策略定义列表
 
@@ -73,7 +73,7 @@ class ListBuiltInPolicyDefinitionsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListBuiltInPolicyDefinitionsResponse.
+        r"""Gets the page_info of this ListBuiltInPolicyDefinitionsResponse.
 
         :return: The page_info of this ListBuiltInPolicyDefinitionsResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListBuiltInPolicyDefinitionsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListBuiltInPolicyDefinitionsResponse.
+        r"""Sets the page_info of this ListBuiltInPolicyDefinitionsResponse.
 
         :param page_info: The page_info of this ListBuiltInPolicyDefinitionsResponse.
         :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`

@@ -27,7 +27,7 @@ class CreateDirectoryRequest:
     }
 
     def __init__(self, test_suite_id=None, body=None):
-        """CreateDirectoryRequest
+        r"""CreateDirectoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDirectoryRequest:
 
     @property
     def test_suite_id(self):
-        """Gets the test_suite_id of this CreateDirectoryRequest.
+        r"""Gets the test_suite_id of this CreateDirectoryRequest.
 
         测试工程id
 
@@ -60,7 +60,7 @@ class CreateDirectoryRequest:
 
     @test_suite_id.setter
     def test_suite_id(self, test_suite_id):
-        """Sets the test_suite_id of this CreateDirectoryRequest.
+        r"""Sets the test_suite_id of this CreateDirectoryRequest.
 
         测试工程id
 
@@ -71,7 +71,7 @@ class CreateDirectoryRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDirectoryRequest.
+        r"""Gets the body of this CreateDirectoryRequest.
 
         :return: The body of this CreateDirectoryRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.CreateDirectoryRequestBody`
@@ -80,7 +80,7 @@ class CreateDirectoryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDirectoryRequest.
+        r"""Sets the body of this CreateDirectoryRequest.
 
         :param body: The body of this CreateDirectoryRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.CreateDirectoryRequestBody`

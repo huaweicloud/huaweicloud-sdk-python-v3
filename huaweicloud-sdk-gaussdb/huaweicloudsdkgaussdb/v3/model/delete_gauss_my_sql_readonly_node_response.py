@@ -28,7 +28,7 @@ class DeleteGaussMySqlReadonlyNodeResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None):
-        """DeleteGaussMySqlReadonlyNodeResponse
+        r"""DeleteGaussMySqlReadonlyNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteGaussMySqlReadonlyNodeResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteGaussMySqlReadonlyNodeResponse.
+        r"""Gets the job_id of this DeleteGaussMySqlReadonlyNodeResponse.
 
         任务ID。
 
@@ -62,7 +62,7 @@ class DeleteGaussMySqlReadonlyNodeResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteGaussMySqlReadonlyNodeResponse.
+        r"""Sets the job_id of this DeleteGaussMySqlReadonlyNodeResponse.
 
         任务ID。
 
@@ -73,7 +73,7 @@ class DeleteGaussMySqlReadonlyNodeResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this DeleteGaussMySqlReadonlyNodeResponse.
+        r"""Gets the order_id of this DeleteGaussMySqlReadonlyNodeResponse.
 
         订单号，仅包年/包月返回该参数。
 
@@ -84,7 +84,7 @@ class DeleteGaussMySqlReadonlyNodeResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this DeleteGaussMySqlReadonlyNodeResponse.
+        r"""Sets the order_id of this DeleteGaussMySqlReadonlyNodeResponse.
 
         订单号，仅包年/包月返回该参数。
 

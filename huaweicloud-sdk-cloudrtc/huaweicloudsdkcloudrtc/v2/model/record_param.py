@@ -25,7 +25,7 @@ class RecordParam:
     }
 
     def __init__(self, record_rule_id=None):
-        """RecordParam
+        r"""RecordParam
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RecordParam:
 
     @property
     def record_rule_id(self):
-        """Gets the record_rule_id of this RecordParam.
+        r"""Gets the record_rule_id of this RecordParam.
 
         录制规则id。
 
@@ -53,7 +53,7 @@ class RecordParam:
 
     @record_rule_id.setter
     def record_rule_id(self, record_rule_id):
-        """Sets the record_rule_id of this RecordParam.
+        r"""Sets the record_rule_id of this RecordParam.
 
         录制规则id。
 

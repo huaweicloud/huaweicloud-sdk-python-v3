@@ -30,7 +30,7 @@ class ListFactoryTaskCompletionResponse(SdkResponse):
     }
 
     def __init__(self, yesterday=None, average=None, today=None):
-        """ListFactoryTaskCompletionResponse
+        r"""ListFactoryTaskCompletionResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFactoryTaskCompletionResponse(SdkResponse):
 
     @property
     def yesterday(self):
-        """Gets the yesterday of this ListFactoryTaskCompletionResponse.
+        r"""Gets the yesterday of this ListFactoryTaskCompletionResponse.
 
         昨天的任务信息
 
@@ -69,7 +69,7 @@ class ListFactoryTaskCompletionResponse(SdkResponse):
 
     @yesterday.setter
     def yesterday(self, yesterday):
-        """Sets the yesterday of this ListFactoryTaskCompletionResponse.
+        r"""Sets the yesterday of this ListFactoryTaskCompletionResponse.
 
         昨天的任务信息
 
@@ -80,7 +80,7 @@ class ListFactoryTaskCompletionResponse(SdkResponse):
 
     @property
     def average(self):
-        """Gets the average of this ListFactoryTaskCompletionResponse.
+        r"""Gets the average of this ListFactoryTaskCompletionResponse.
 
         近7天的平均任务信息
 
@@ -91,7 +91,7 @@ class ListFactoryTaskCompletionResponse(SdkResponse):
 
     @average.setter
     def average(self, average):
-        """Sets the average of this ListFactoryTaskCompletionResponse.
+        r"""Sets the average of this ListFactoryTaskCompletionResponse.
 
         近7天的平均任务信息
 
@@ -102,7 +102,7 @@ class ListFactoryTaskCompletionResponse(SdkResponse):
 
     @property
     def today(self):
-        """Gets the today of this ListFactoryTaskCompletionResponse.
+        r"""Gets the today of this ListFactoryTaskCompletionResponse.
 
         当天的任务信息
 
@@ -113,7 +113,7 @@ class ListFactoryTaskCompletionResponse(SdkResponse):
 
     @today.setter
     def today(self, today):
-        """Sets the today of this ListFactoryTaskCompletionResponse.
+        r"""Sets the today of this ListFactoryTaskCompletionResponse.
 
         当天的任务信息
 

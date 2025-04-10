@@ -37,7 +37,7 @@ class ConfigListRsp:
     }
 
     def __init__(self, id=None, cluster_id=None, create_at=None, status=None, finished_at=None, modify_delete_reset=None, failed_msg=None):
-        """ConfigListRsp
+        r"""ConfigListRsp
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ConfigListRsp:
 
     @property
     def id(self):
-        """Gets the id of this ConfigListRsp.
+        r"""Gets the id of this ConfigListRsp.
 
         操作ID
 
@@ -96,7 +96,7 @@ class ConfigListRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConfigListRsp.
+        r"""Sets the id of this ConfigListRsp.
 
         操作ID
 
@@ -107,7 +107,7 @@ class ConfigListRsp:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ConfigListRsp.
+        r"""Gets the cluster_id of this ConfigListRsp.
 
         集群ID。
 
@@ -118,7 +118,7 @@ class ConfigListRsp:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ConfigListRsp.
+        r"""Sets the cluster_id of this ConfigListRsp.
 
         集群ID。
 
@@ -129,7 +129,7 @@ class ConfigListRsp:
 
     @property
     def create_at(self):
-        """Gets the create_at of this ConfigListRsp.
+        r"""Gets the create_at of this ConfigListRsp.
 
         创建时间。格式：Unix时间戳格式。
 
@@ -140,7 +140,7 @@ class ConfigListRsp:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this ConfigListRsp.
+        r"""Sets the create_at of this ConfigListRsp.
 
         创建时间。格式：Unix时间戳格式。
 
@@ -151,7 +151,7 @@ class ConfigListRsp:
 
     @property
     def status(self):
-        """Gets the status of this ConfigListRsp.
+        r"""Gets the status of this ConfigListRsp.
 
         任务执行状态。 - true: 执行成功。 - false: 执行失败。
 
@@ -162,7 +162,7 @@ class ConfigListRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ConfigListRsp.
+        r"""Sets the status of this ConfigListRsp.
 
         任务执行状态。 - true: 执行成功。 - false: 执行失败。
 
@@ -173,7 +173,7 @@ class ConfigListRsp:
 
     @property
     def finished_at(self):
-        """Gets the finished_at of this ConfigListRsp.
+        r"""Gets the finished_at of this ConfigListRsp.
 
         结束时间，当创建未结束时结束时间为null。格式：Unix时间戳格式。
 
@@ -184,7 +184,7 @@ class ConfigListRsp:
 
     @finished_at.setter
     def finished_at(self, finished_at):
-        """Sets the finished_at of this ConfigListRsp.
+        r"""Sets the finished_at of this ConfigListRsp.
 
         结束时间，当创建未结束时结束时间为null。格式：Unix时间戳格式。
 
@@ -195,7 +195,7 @@ class ConfigListRsp:
 
     @property
     def modify_delete_reset(self):
-        """Gets the modify_delete_reset of this ConfigListRsp.
+        r"""Gets the modify_delete_reset of this ConfigListRsp.
 
         修改参数配置记录。
 
@@ -206,7 +206,7 @@ class ConfigListRsp:
 
     @modify_delete_reset.setter
     def modify_delete_reset(self, modify_delete_reset):
-        """Sets the modify_delete_reset of this ConfigListRsp.
+        r"""Sets the modify_delete_reset of this ConfigListRsp.
 
         修改参数配置记录。
 
@@ -217,7 +217,7 @@ class ConfigListRsp:
 
     @property
     def failed_msg(self):
-        """Gets the failed_msg of this ConfigListRsp.
+        r"""Gets the failed_msg of this ConfigListRsp.
 
         返回错误信息。当状态为success时该参数为null。
 
@@ -228,7 +228,7 @@ class ConfigListRsp:
 
     @failed_msg.setter
     def failed_msg(self, failed_msg):
-        """Sets the failed_msg of this ConfigListRsp.
+        r"""Sets the failed_msg of this ConfigListRsp.
 
         返回错误信息。当状态为success时该参数为null。
 

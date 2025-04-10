@@ -27,7 +27,7 @@ class DeleteDeployKeyRequest:
     }
 
     def __init__(self, key_id=None, repository_id=None):
-        """DeleteDeployKeyRequest
+        r"""DeleteDeployKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteDeployKeyRequest:
 
     @property
     def key_id(self):
-        """Gets the key_id of this DeleteDeployKeyRequest.
+        r"""Gets the key_id of this DeleteDeployKeyRequest.
 
         部署密钥id
 
@@ -59,7 +59,7 @@ class DeleteDeployKeyRequest:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this DeleteDeployKeyRequest.
+        r"""Sets the key_id of this DeleteDeployKeyRequest.
 
         部署密钥id
 
@@ -70,7 +70,7 @@ class DeleteDeployKeyRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this DeleteDeployKeyRequest.
+        r"""Gets the repository_id of this DeleteDeployKeyRequest.
 
         仓库短id
 
@@ -81,7 +81,7 @@ class DeleteDeployKeyRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this DeleteDeployKeyRequest.
+        r"""Sets the repository_id of this DeleteDeployKeyRequest.
 
         仓库短id
 

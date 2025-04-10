@@ -43,7 +43,7 @@ class PlaybookInstanceMonitorDetail:
     }
 
     def __init__(self, total_instance_run_num=None, schedule_instance_run_num=None, event_instance_run_num=None, min_run_time_instance=None, max_run_time_instance=None, total_instance_num=None, success_instance_num=None, fail_instance_num=None, terminate_instance_num=None, running_instance_num=None):
-        """PlaybookInstanceMonitorDetail
+        r"""PlaybookInstanceMonitorDetail
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class PlaybookInstanceMonitorDetail:
 
     @property
     def total_instance_run_num(self):
-        """Gets the total_instance_run_num of this PlaybookInstanceMonitorDetail.
+        r"""Gets the total_instance_run_num of this PlaybookInstanceMonitorDetail.
 
         运行总次数
 
@@ -117,7 +117,7 @@ class PlaybookInstanceMonitorDetail:
 
     @total_instance_run_num.setter
     def total_instance_run_num(self, total_instance_run_num):
-        """Sets the total_instance_run_num of this PlaybookInstanceMonitorDetail.
+        r"""Sets the total_instance_run_num of this PlaybookInstanceMonitorDetail.
 
         运行总次数
 
@@ -128,7 +128,7 @@ class PlaybookInstanceMonitorDetail:
 
     @property
     def schedule_instance_run_num(self):
-        """Gets the schedule_instance_run_num of this PlaybookInstanceMonitorDetail.
+        r"""Gets the schedule_instance_run_num of this PlaybookInstanceMonitorDetail.
 
         定时触发执行次数
 
@@ -139,7 +139,7 @@ class PlaybookInstanceMonitorDetail:
 
     @schedule_instance_run_num.setter
     def schedule_instance_run_num(self, schedule_instance_run_num):
-        """Sets the schedule_instance_run_num of this PlaybookInstanceMonitorDetail.
+        r"""Sets the schedule_instance_run_num of this PlaybookInstanceMonitorDetail.
 
         定时触发执行次数
 
@@ -150,7 +150,7 @@ class PlaybookInstanceMonitorDetail:
 
     @property
     def event_instance_run_num(self):
-        """Gets the event_instance_run_num of this PlaybookInstanceMonitorDetail.
+        r"""Gets the event_instance_run_num of this PlaybookInstanceMonitorDetail.
 
         时间触发执行次数
 
@@ -161,7 +161,7 @@ class PlaybookInstanceMonitorDetail:
 
     @event_instance_run_num.setter
     def event_instance_run_num(self, event_instance_run_num):
-        """Sets the event_instance_run_num of this PlaybookInstanceMonitorDetail.
+        r"""Sets the event_instance_run_num of this PlaybookInstanceMonitorDetail.
 
         时间触发执行次数
 
@@ -172,7 +172,7 @@ class PlaybookInstanceMonitorDetail:
 
     @property
     def min_run_time_instance(self):
-        """Gets the min_run_time_instance of this PlaybookInstanceMonitorDetail.
+        r"""Gets the min_run_time_instance of this PlaybookInstanceMonitorDetail.
 
         :return: The min_run_time_instance of this PlaybookInstanceMonitorDetail.
         :rtype: :class:`huaweicloudsdksa.v2.PlaybookInstanceRunStatistics`
@@ -181,7 +181,7 @@ class PlaybookInstanceMonitorDetail:
 
     @min_run_time_instance.setter
     def min_run_time_instance(self, min_run_time_instance):
-        """Sets the min_run_time_instance of this PlaybookInstanceMonitorDetail.
+        r"""Sets the min_run_time_instance of this PlaybookInstanceMonitorDetail.
 
         :param min_run_time_instance: The min_run_time_instance of this PlaybookInstanceMonitorDetail.
         :type min_run_time_instance: :class:`huaweicloudsdksa.v2.PlaybookInstanceRunStatistics`
@@ -190,7 +190,7 @@ class PlaybookInstanceMonitorDetail:
 
     @property
     def max_run_time_instance(self):
-        """Gets the max_run_time_instance of this PlaybookInstanceMonitorDetail.
+        r"""Gets the max_run_time_instance of this PlaybookInstanceMonitorDetail.
 
         :return: The max_run_time_instance of this PlaybookInstanceMonitorDetail.
         :rtype: :class:`huaweicloudsdksa.v2.PlaybookInstanceRunStatistics`
@@ -199,7 +199,7 @@ class PlaybookInstanceMonitorDetail:
 
     @max_run_time_instance.setter
     def max_run_time_instance(self, max_run_time_instance):
-        """Sets the max_run_time_instance of this PlaybookInstanceMonitorDetail.
+        r"""Sets the max_run_time_instance of this PlaybookInstanceMonitorDetail.
 
         :param max_run_time_instance: The max_run_time_instance of this PlaybookInstanceMonitorDetail.
         :type max_run_time_instance: :class:`huaweicloudsdksa.v2.PlaybookInstanceRunStatistics`
@@ -208,7 +208,7 @@ class PlaybookInstanceMonitorDetail:
 
     @property
     def total_instance_num(self):
-        """Gets the total_instance_num of this PlaybookInstanceMonitorDetail.
+        r"""Gets the total_instance_num of this PlaybookInstanceMonitorDetail.
 
         剧本实例总数
 
@@ -219,7 +219,7 @@ class PlaybookInstanceMonitorDetail:
 
     @total_instance_num.setter
     def total_instance_num(self, total_instance_num):
-        """Sets the total_instance_num of this PlaybookInstanceMonitorDetail.
+        r"""Sets the total_instance_num of this PlaybookInstanceMonitorDetail.
 
         剧本实例总数
 
@@ -230,7 +230,7 @@ class PlaybookInstanceMonitorDetail:
 
     @property
     def success_instance_num(self):
-        """Gets the success_instance_num of this PlaybookInstanceMonitorDetail.
+        r"""Gets the success_instance_num of this PlaybookInstanceMonitorDetail.
 
         运行成功实例数量
 
@@ -241,7 +241,7 @@ class PlaybookInstanceMonitorDetail:
 
     @success_instance_num.setter
     def success_instance_num(self, success_instance_num):
-        """Sets the success_instance_num of this PlaybookInstanceMonitorDetail.
+        r"""Sets the success_instance_num of this PlaybookInstanceMonitorDetail.
 
         运行成功实例数量
 
@@ -252,7 +252,7 @@ class PlaybookInstanceMonitorDetail:
 
     @property
     def fail_instance_num(self):
-        """Gets the fail_instance_num of this PlaybookInstanceMonitorDetail.
+        r"""Gets the fail_instance_num of this PlaybookInstanceMonitorDetail.
 
         运行失败实例数量
 
@@ -263,7 +263,7 @@ class PlaybookInstanceMonitorDetail:
 
     @fail_instance_num.setter
     def fail_instance_num(self, fail_instance_num):
-        """Sets the fail_instance_num of this PlaybookInstanceMonitorDetail.
+        r"""Sets the fail_instance_num of this PlaybookInstanceMonitorDetail.
 
         运行失败实例数量
 
@@ -274,7 +274,7 @@ class PlaybookInstanceMonitorDetail:
 
     @property
     def terminate_instance_num(self):
-        """Gets the terminate_instance_num of this PlaybookInstanceMonitorDetail.
+        r"""Gets the terminate_instance_num of this PlaybookInstanceMonitorDetail.
 
         运行终止实例数量
 
@@ -285,7 +285,7 @@ class PlaybookInstanceMonitorDetail:
 
     @terminate_instance_num.setter
     def terminate_instance_num(self, terminate_instance_num):
-        """Sets the terminate_instance_num of this PlaybookInstanceMonitorDetail.
+        r"""Sets the terminate_instance_num of this PlaybookInstanceMonitorDetail.
 
         运行终止实例数量
 
@@ -296,7 +296,7 @@ class PlaybookInstanceMonitorDetail:
 
     @property
     def running_instance_num(self):
-        """Gets the running_instance_num of this PlaybookInstanceMonitorDetail.
+        r"""Gets the running_instance_num of this PlaybookInstanceMonitorDetail.
 
         运行中实例数量
 
@@ -307,7 +307,7 @@ class PlaybookInstanceMonitorDetail:
 
     @running_instance_num.setter
     def running_instance_num(self, running_instance_num):
-        """Sets the running_instance_num of this PlaybookInstanceMonitorDetail.
+        r"""Sets the running_instance_num of this PlaybookInstanceMonitorDetail.
 
         运行中实例数量
 

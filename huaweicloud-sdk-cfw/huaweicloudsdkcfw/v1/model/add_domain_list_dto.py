@@ -29,7 +29,7 @@ class AddDomainListDto:
     }
 
     def __init__(self, fw_instance_id=None, object_id=None, domain_names=None):
-        """AddDomainListDto
+        r"""AddDomainListDto
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AddDomainListDto:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this AddDomainListDto.
+        r"""Gets the fw_instance_id of this AddDomainListDto.
 
         防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
 
@@ -65,7 +65,7 @@ class AddDomainListDto:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this AddDomainListDto.
+        r"""Sets the fw_instance_id of this AddDomainListDto.
 
         防火墙实例id，创建云防火墙后用于标志防火墙由系统自动生成的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)。
 
@@ -76,7 +76,7 @@ class AddDomainListDto:
 
     @property
     def object_id(self):
-        """Gets the object_id of this AddDomainListDto.
+        r"""Gets the object_id of this AddDomainListDto.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -87,7 +87,7 @@ class AddDomainListDto:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this AddDomainListDto.
+        r"""Sets the object_id of this AddDomainListDto.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -98,7 +98,7 @@ class AddDomainListDto:
 
     @property
     def domain_names(self):
-        """Gets the domain_names of this AddDomainListDto.
+        r"""Gets the domain_names of this AddDomainListDto.
 
         域名列表
 
@@ -109,7 +109,7 @@ class AddDomainListDto:
 
     @domain_names.setter
     def domain_names(self, domain_names):
-        """Sets the domain_names of this AddDomainListDto.
+        r"""Sets the domain_names of this AddDomainListDto.
 
         域名列表
 

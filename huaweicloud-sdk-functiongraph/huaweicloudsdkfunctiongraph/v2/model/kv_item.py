@@ -27,7 +27,7 @@ class KvItem:
     }
 
     def __init__(self, key=None, value=None):
-        """KvItem
+        r"""KvItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class KvItem:
 
     @property
     def key(self):
-        """Gets the key of this KvItem.
+        r"""Gets the key of this KvItem.
 
         键
 
@@ -61,7 +61,7 @@ class KvItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this KvItem.
+        r"""Sets the key of this KvItem.
 
         键
 
@@ -72,7 +72,7 @@ class KvItem:
 
     @property
     def value(self):
-        """Gets the value of this KvItem.
+        r"""Gets the value of this KvItem.
 
         值
 
@@ -83,7 +83,7 @@ class KvItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this KvItem.
+        r"""Sets the value of this KvItem.
 
         值
 

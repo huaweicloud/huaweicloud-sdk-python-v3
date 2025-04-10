@@ -35,7 +35,7 @@ class ListTracedEventsRespResult:
     }
 
     def __init__(self, subscription_name=None, source_name=None, source_provider=None, event_type=None, event_id=None, event_received_time=None):
-        """ListTracedEventsRespResult
+        r"""ListTracedEventsRespResult
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListTracedEventsRespResult:
 
     @property
     def subscription_name(self):
-        """Gets the subscription_name of this ListTracedEventsRespResult.
+        r"""Gets the subscription_name of this ListTracedEventsRespResult.
 
         :return: The subscription_name of this ListTracedEventsRespResult.
         :rtype: str
@@ -87,7 +87,7 @@ class ListTracedEventsRespResult:
 
     @subscription_name.setter
     def subscription_name(self, subscription_name):
-        """Sets the subscription_name of this ListTracedEventsRespResult.
+        r"""Sets the subscription_name of this ListTracedEventsRespResult.
 
         :param subscription_name: The subscription_name of this ListTracedEventsRespResult.
         :type subscription_name: str
@@ -96,7 +96,7 @@ class ListTracedEventsRespResult:
 
     @property
     def source_name(self):
-        """Gets the source_name of this ListTracedEventsRespResult.
+        r"""Gets the source_name of this ListTracedEventsRespResult.
 
         :return: The source_name of this ListTracedEventsRespResult.
         :rtype: str
@@ -105,7 +105,7 @@ class ListTracedEventsRespResult:
 
     @source_name.setter
     def source_name(self, source_name):
-        """Sets the source_name of this ListTracedEventsRespResult.
+        r"""Sets the source_name of this ListTracedEventsRespResult.
 
         :param source_name: The source_name of this ListTracedEventsRespResult.
         :type source_name: str
@@ -114,7 +114,7 @@ class ListTracedEventsRespResult:
 
     @property
     def source_provider(self):
-        """Gets the source_provider of this ListTracedEventsRespResult.
+        r"""Gets the source_provider of this ListTracedEventsRespResult.
 
         :return: The source_provider of this ListTracedEventsRespResult.
         :rtype: str
@@ -123,7 +123,7 @@ class ListTracedEventsRespResult:
 
     @source_provider.setter
     def source_provider(self, source_provider):
-        """Sets the source_provider of this ListTracedEventsRespResult.
+        r"""Sets the source_provider of this ListTracedEventsRespResult.
 
         :param source_provider: The source_provider of this ListTracedEventsRespResult.
         :type source_provider: str
@@ -132,7 +132,7 @@ class ListTracedEventsRespResult:
 
     @property
     def event_type(self):
-        """Gets the event_type of this ListTracedEventsRespResult.
+        r"""Gets the event_type of this ListTracedEventsRespResult.
 
         :return: The event_type of this ListTracedEventsRespResult.
         :rtype: str
@@ -141,7 +141,7 @@ class ListTracedEventsRespResult:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this ListTracedEventsRespResult.
+        r"""Sets the event_type of this ListTracedEventsRespResult.
 
         :param event_type: The event_type of this ListTracedEventsRespResult.
         :type event_type: str
@@ -150,7 +150,7 @@ class ListTracedEventsRespResult:
 
     @property
     def event_id(self):
-        """Gets the event_id of this ListTracedEventsRespResult.
+        r"""Gets the event_id of this ListTracedEventsRespResult.
 
         :return: The event_id of this ListTracedEventsRespResult.
         :rtype: str
@@ -159,7 +159,7 @@ class ListTracedEventsRespResult:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this ListTracedEventsRespResult.
+        r"""Sets the event_id of this ListTracedEventsRespResult.
 
         :param event_id: The event_id of this ListTracedEventsRespResult.
         :type event_id: str
@@ -168,7 +168,7 @@ class ListTracedEventsRespResult:
 
     @property
     def event_received_time(self):
-        """Gets the event_received_time of this ListTracedEventsRespResult.
+        r"""Gets the event_received_time of this ListTracedEventsRespResult.
 
         :return: The event_received_time of this ListTracedEventsRespResult.
         :rtype: int
@@ -177,7 +177,7 @@ class ListTracedEventsRespResult:
 
     @event_received_time.setter
     def event_received_time(self, event_received_time):
-        """Sets the event_received_time of this ListTracedEventsRespResult.
+        r"""Sets the event_received_time of this ListTracedEventsRespResult.
 
         :param event_received_time: The event_received_time of this ListTracedEventsRespResult.
         :type event_received_time: int

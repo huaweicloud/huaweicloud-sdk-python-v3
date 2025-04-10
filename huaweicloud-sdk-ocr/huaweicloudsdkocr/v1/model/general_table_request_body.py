@@ -39,7 +39,7 @@ class GeneralTableRequestBody:
     }
 
     def __init__(self, image=None, url=None, return_text_location=None, return_char_location=None, return_confidence=None, return_excel=None, return_rectification_matrix=None, with_borders=None):
-        """GeneralTableRequestBody
+        r"""GeneralTableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class GeneralTableRequestBody:
 
     @property
     def image(self):
-        """Gets the image of this GeneralTableRequestBody.
+        r"""Gets the image of this GeneralTableRequestBody.
 
         与url二选一  图片最小边不小于15px，最长边不超过8192px，支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，[点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)](tag:hc)[点击[这里](https://support.huaweicloud.com/intl/zh-cn/ocr_faq/ocr_01_0032.html)](tag:hk)查看详细获取方式。   
 
@@ -103,7 +103,7 @@ class GeneralTableRequestBody:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this GeneralTableRequestBody.
+        r"""Sets the image of this GeneralTableRequestBody.
 
         与url二选一  图片最小边不小于15px，最长边不超过8192px，支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，[点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)](tag:hc)[点击[这里](https://support.huaweicloud.com/intl/zh-cn/ocr_faq/ocr_01_0032.html)](tag:hk)查看详细获取方式。   
 
@@ -114,7 +114,7 @@ class GeneralTableRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this GeneralTableRequestBody.
+        r"""Gets the url of this GeneralTableRequestBody.
 
         与image二选一  要求图片Base64编码后大小不超过10MB。 图片最小边不小于15px，最长边不超过8192px，支持JPEG、JPG、PNG、BMP、TIFF格式。 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，[详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。](tag:hc)[详情参见[配置OBS访问权限](https://support.huaweicloud.com/intl/zh-cn/api-ocr/ocr_03_0132.html)。](tag:hk) > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -125,7 +125,7 @@ class GeneralTableRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this GeneralTableRequestBody.
+        r"""Sets the url of this GeneralTableRequestBody.
 
         与image二选一  要求图片Base64编码后大小不超过10MB。 图片最小边不小于15px，最长边不超过8192px，支持JPEG、JPG、PNG、BMP、TIFF格式。 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，[详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。](tag:hc)[详情参见[配置OBS访问权限](https://support.huaweicloud.com/intl/zh-cn/api-ocr/ocr_03_0132.html)。](tag:hk) > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -136,7 +136,7 @@ class GeneralTableRequestBody:
 
     @property
     def return_text_location(self):
-        """Gets the return_text_location of this GeneralTableRequestBody.
+        r"""Gets the return_text_location of this GeneralTableRequestBody.
 
         返回文本块坐标及单元格坐标信息，可选值如下所示： - true：返回文本块和单元格坐标 - false：不返回  > 说明： - 如果未传入该参数时默认为false，即不返回。 
 
@@ -147,7 +147,7 @@ class GeneralTableRequestBody:
 
     @return_text_location.setter
     def return_text_location(self, return_text_location):
-        """Sets the return_text_location of this GeneralTableRequestBody.
+        r"""Sets the return_text_location of this GeneralTableRequestBody.
 
         返回文本块坐标及单元格坐标信息，可选值如下所示： - true：返回文本块和单元格坐标 - false：不返回  > 说明： - 如果未传入该参数时默认为false，即不返回。 
 
@@ -158,7 +158,7 @@ class GeneralTableRequestBody:
 
     @property
     def return_char_location(self):
-        """Gets the return_char_location of this GeneralTableRequestBody.
+        r"""Gets the return_char_location of this GeneralTableRequestBody.
 
         返回单字符的坐标信息，可选值包括： - true：返回单字符的坐标 - false：不返回  未传入该参数时默认为false，即不返回。如果此参数为true时，return_text_loaction必须为true 
 
@@ -169,7 +169,7 @@ class GeneralTableRequestBody:
 
     @return_char_location.setter
     def return_char_location(self, return_char_location):
-        """Sets the return_char_location of this GeneralTableRequestBody.
+        r"""Sets the return_char_location of this GeneralTableRequestBody.
 
         返回单字符的坐标信息，可选值包括： - true：返回单字符的坐标 - false：不返回  未传入该参数时默认为false，即不返回。如果此参数为true时，return_text_loaction必须为true 
 
@@ -180,7 +180,7 @@ class GeneralTableRequestBody:
 
     @property
     def return_confidence(self):
-        """Gets the return_confidence of this GeneralTableRequestBody.
+        r"""Gets the return_confidence of this GeneralTableRequestBody.
 
         是否返回置信度的开关，可选值包括： - true：返回置信度 - false：不返回置信度  > 说明： - 如果未传入该参数，系统默认为“false”，即不返回置信度。 
 
@@ -191,7 +191,7 @@ class GeneralTableRequestBody:
 
     @return_confidence.setter
     def return_confidence(self, return_confidence):
-        """Sets the return_confidence of this GeneralTableRequestBody.
+        r"""Sets the return_confidence of this GeneralTableRequestBody.
 
         是否返回置信度的开关，可选值包括： - true：返回置信度 - false：不返回置信度  > 说明： - 如果未传入该参数，系统默认为“false”，即不返回置信度。 
 
@@ -202,7 +202,7 @@ class GeneralTableRequestBody:
 
     @property
     def return_excel(self):
-        """Gets the return_excel of this GeneralTableRequestBody.
+        r"""Gets the return_excel of this GeneralTableRequestBody.
 
         是否返回表格转换Microsoft Excel的base64编码字段。可选值包括： - true：返回'excel'字段，表示xlsx格式的表格识别结果的base64编码 - false：不返回。默认为false  > 说明： - 对返回的Excel编码，可用Python函数 base64.b64decode解码后保存为.xlsx文件。 
 
@@ -213,7 +213,7 @@ class GeneralTableRequestBody:
 
     @return_excel.setter
     def return_excel(self, return_excel):
-        """Sets the return_excel of this GeneralTableRequestBody.
+        r"""Sets the return_excel of this GeneralTableRequestBody.
 
         是否返回表格转换Microsoft Excel的base64编码字段。可选值包括： - true：返回'excel'字段，表示xlsx格式的表格识别结果的base64编码 - false：不返回。默认为false  > 说明： - 对返回的Excel编码，可用Python函数 base64.b64decode解码后保存为.xlsx文件。 
 
@@ -224,7 +224,7 @@ class GeneralTableRequestBody:
 
     @property
     def return_rectification_matrix(self):
-        """Gets the return_rectification_matrix of this GeneralTableRequestBody.
+        r"""Gets the return_rectification_matrix of this GeneralTableRequestBody.
 
         可选值包括： - true：返回透视变换矩阵 - false：不返回  未传入该参数时默认为false，即不返回透视变换矩阵。 
 
@@ -235,7 +235,7 @@ class GeneralTableRequestBody:
 
     @return_rectification_matrix.setter
     def return_rectification_matrix(self, return_rectification_matrix):
-        """Sets the return_rectification_matrix of this GeneralTableRequestBody.
+        r"""Sets the return_rectification_matrix of this GeneralTableRequestBody.
 
         可选值包括： - true：返回透视变换矩阵 - false：不返回  未传入该参数时默认为false，即不返回透视变换矩阵。 
 
@@ -246,7 +246,7 @@ class GeneralTableRequestBody:
 
     @property
     def with_borders(self):
-        """Gets the with_borders of this GeneralTableRequestBody.
+        r"""Gets the with_borders of this GeneralTableRequestBody.
 
         可选值包括： - true：输入图像仅包含有线表格，仅进行有线表格识别。 - false: 输入图像可能包含无线表格，同时进行有线表格与无线表格识别。  未传入该参数时默认为false，即同时进行有线表格与无线表格识别。当确认输入仅包含有线表格时，该参数设为true可达到更优识别效果。 
 
@@ -257,7 +257,7 @@ class GeneralTableRequestBody:
 
     @with_borders.setter
     def with_borders(self, with_borders):
-        """Sets the with_borders of this GeneralTableRequestBody.
+        r"""Sets the with_borders of this GeneralTableRequestBody.
 
         可选值包括： - true：输入图像仅包含有线表格，仅进行有线表格识别。 - false: 输入图像可能包含无线表格，同时进行有线表格与无线表格识别。  未传入该参数时默认为false，即同时进行有线表格与无线表格识别。当确认输入仅包含有线表格时，该参数设为true可达到更优识别效果。 
 

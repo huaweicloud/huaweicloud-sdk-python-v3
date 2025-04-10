@@ -28,7 +28,7 @@ class ShowClientNetworkResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, client_network_ranges=None):
-        """ShowClientNetworkResponse
+        r"""ShowClientNetworkResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowClientNetworkResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowClientNetworkResponse.
+        r"""Gets the instance_id of this ShowClientNetworkResponse.
 
         实例ID，可以调用“[查询实例列表和详情](x-wc://file=zh-cn_topic_0000001369935045.xml)”接口获取。如果未申请实例，可以调用“[创建实例](x-wc://file=zh-cn_topic_0000001369734929.xml)”接口创建。
 
@@ -62,7 +62,7 @@ class ShowClientNetworkResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowClientNetworkResponse.
+        r"""Sets the instance_id of this ShowClientNetworkResponse.
 
         实例ID，可以调用“[查询实例列表和详情](x-wc://file=zh-cn_topic_0000001369935045.xml)”接口获取。如果未申请实例，可以调用“[创建实例](x-wc://file=zh-cn_topic_0000001369734929.xml)”接口创建。
 
@@ -73,7 +73,7 @@ class ShowClientNetworkResponse(SdkResponse):
 
     @property
     def client_network_ranges(self):
-        """Gets the client_network_ranges of this ShowClientNetworkResponse.
+        r"""Gets the client_network_ranges of this ShowClientNetworkResponse.
 
         客户端所在网段。 > - [跨网段访问配置只有在客户端与副本集实例部署在不同网段的情况下才允许配置，例如访问副本集的客户端所在网段为192.168.0.0/16，副本集所在的网段为172.16.0.0/24，则需要添加跨网段配置192.168.0.0/16才能正常访问。只有副本集有该功能。](tag:ccs,cmcc,ctc,dt,dt_test,fcs,fcs_dt,g42,hic,hk_g42,hk_sbc,hc,hws_ocb,hws_sbc,ocb,tlf,tm,hk,hws_eu)
 
@@ -84,7 +84,7 @@ class ShowClientNetworkResponse(SdkResponse):
 
     @client_network_ranges.setter
     def client_network_ranges(self, client_network_ranges):
-        """Sets the client_network_ranges of this ShowClientNetworkResponse.
+        r"""Sets the client_network_ranges of this ShowClientNetworkResponse.
 
         客户端所在网段。 > - [跨网段访问配置只有在客户端与副本集实例部署在不同网段的情况下才允许配置，例如访问副本集的客户端所在网段为192.168.0.0/16，副本集所在的网段为172.16.0.0/24，则需要添加跨网段配置192.168.0.0/16才能正常访问。只有副本集有该功能。](tag:ccs,cmcc,ctc,dt,dt_test,fcs,fcs_dt,g42,hic,hk_g42,hk_sbc,hc,hws_ocb,hws_sbc,ocb,tlf,tm,hk,hws_eu)
 

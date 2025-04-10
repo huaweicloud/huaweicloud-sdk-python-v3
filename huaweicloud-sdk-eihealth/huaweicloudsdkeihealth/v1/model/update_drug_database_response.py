@@ -24,7 +24,7 @@ class UpdateDrugDatabaseResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateDrugDatabaseResponse
+        r"""UpdateDrugDatabaseResponse
 
         The model defined in huaweicloud sdk
 

@@ -53,7 +53,7 @@ class StepRun:
     }
 
     def __init__(self, name=None, task=None, business_type=None, inputs=None, sequence=None, official_task_version=None, identifier=None, multi_step_editable=None, id=None, endpoint_ids=None, last_dispatch_id=None, status=None, message=None, start_time=None, end_time=None):
-        """StepRun
+        r"""StepRun
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class StepRun:
 
     @property
     def name(self):
-        """Gets the name of this StepRun.
+        r"""Gets the name of this StepRun.
 
         步骤名称
 
@@ -152,7 +152,7 @@ class StepRun:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StepRun.
+        r"""Sets the name of this StepRun.
 
         步骤名称
 
@@ -163,7 +163,7 @@ class StepRun:
 
     @property
     def task(self):
-        """Gets the task of this StepRun.
+        r"""Gets the task of this StepRun.
 
         步骤插件
 
@@ -174,7 +174,7 @@ class StepRun:
 
     @task.setter
     def task(self, task):
-        """Sets the task of this StepRun.
+        r"""Sets the task of this StepRun.
 
         步骤插件
 
@@ -185,7 +185,7 @@ class StepRun:
 
     @property
     def business_type(self):
-        """Gets the business_type of this StepRun.
+        r"""Gets the business_type of this StepRun.
 
         插件业务类型
 
@@ -196,7 +196,7 @@ class StepRun:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this StepRun.
+        r"""Sets the business_type of this StepRun.
 
         插件业务类型
 
@@ -207,7 +207,7 @@ class StepRun:
 
     @property
     def inputs(self):
-        """Gets the inputs of this StepRun.
+        r"""Gets the inputs of this StepRun.
 
         输入参数
 
@@ -218,7 +218,7 @@ class StepRun:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this StepRun.
+        r"""Sets the inputs of this StepRun.
 
         输入参数
 
@@ -229,7 +229,7 @@ class StepRun:
 
     @property
     def sequence(self):
-        """Gets the sequence of this StepRun.
+        r"""Gets the sequence of this StepRun.
 
         序列号
 
@@ -240,7 +240,7 @@ class StepRun:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this StepRun.
+        r"""Sets the sequence of this StepRun.
 
         序列号
 
@@ -251,7 +251,7 @@ class StepRun:
 
     @property
     def official_task_version(self):
-        """Gets the official_task_version of this StepRun.
+        r"""Gets the official_task_version of this StepRun.
 
         官方插件版本号
 
@@ -262,7 +262,7 @@ class StepRun:
 
     @official_task_version.setter
     def official_task_version(self, official_task_version):
-        """Sets the official_task_version of this StepRun.
+        r"""Sets the official_task_version of this StepRun.
 
         官方插件版本号
 
@@ -273,7 +273,7 @@ class StepRun:
 
     @property
     def identifier(self):
-        """Gets the identifier of this StepRun.
+        r"""Gets the identifier of this StepRun.
 
         唯一标识符
 
@@ -284,7 +284,7 @@ class StepRun:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this StepRun.
+        r"""Sets the identifier of this StepRun.
 
         唯一标识符
 
@@ -295,7 +295,7 @@ class StepRun:
 
     @property
     def multi_step_editable(self):
-        """Gets the multi_step_editable of this StepRun.
+        r"""Gets the multi_step_editable of this StepRun.
 
         是否可编辑
 
@@ -306,7 +306,7 @@ class StepRun:
 
     @multi_step_editable.setter
     def multi_step_editable(self, multi_step_editable):
-        """Sets the multi_step_editable of this StepRun.
+        r"""Sets the multi_step_editable of this StepRun.
 
         是否可编辑
 
@@ -317,7 +317,7 @@ class StepRun:
 
     @property
     def id(self):
-        """Gets the id of this StepRun.
+        r"""Gets the id of this StepRun.
 
         步骤ID
 
@@ -328,7 +328,7 @@ class StepRun:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StepRun.
+        r"""Sets the id of this StepRun.
 
         步骤ID
 
@@ -339,7 +339,7 @@ class StepRun:
 
     @property
     def endpoint_ids(self):
-        """Gets the endpoint_ids of this StepRun.
+        r"""Gets the endpoint_ids of this StepRun.
 
         扩展点
 
@@ -350,7 +350,7 @@ class StepRun:
 
     @endpoint_ids.setter
     def endpoint_ids(self, endpoint_ids):
-        """Sets the endpoint_ids of this StepRun.
+        r"""Sets the endpoint_ids of this StepRun.
 
         扩展点
 
@@ -361,7 +361,7 @@ class StepRun:
 
     @property
     def last_dispatch_id(self):
-        """Gets the last_dispatch_id of this StepRun.
+        r"""Gets the last_dispatch_id of this StepRun.
 
         上次下发任务ID
 
@@ -372,7 +372,7 @@ class StepRun:
 
     @last_dispatch_id.setter
     def last_dispatch_id(self, last_dispatch_id):
-        """Sets the last_dispatch_id of this StepRun.
+        r"""Sets the last_dispatch_id of this StepRun.
 
         上次下发任务ID
 
@@ -383,7 +383,7 @@ class StepRun:
 
     @property
     def status(self):
-        """Gets the status of this StepRun.
+        r"""Gets the status of this StepRun.
 
         状态
 
@@ -394,7 +394,7 @@ class StepRun:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StepRun.
+        r"""Sets the status of this StepRun.
 
         状态
 
@@ -405,7 +405,7 @@ class StepRun:
 
     @property
     def message(self):
-        """Gets the message of this StepRun.
+        r"""Gets the message of this StepRun.
 
         错误消息
 
@@ -416,7 +416,7 @@ class StepRun:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this StepRun.
+        r"""Sets the message of this StepRun.
 
         错误消息
 
@@ -427,7 +427,7 @@ class StepRun:
 
     @property
     def start_time(self):
-        """Gets the start_time of this StepRun.
+        r"""Gets the start_time of this StepRun.
 
         开始时间
 
@@ -438,7 +438,7 @@ class StepRun:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this StepRun.
+        r"""Sets the start_time of this StepRun.
 
         开始时间
 
@@ -449,7 +449,7 @@ class StepRun:
 
     @property
     def end_time(self):
-        """Gets the end_time of this StepRun.
+        r"""Gets the end_time of this StepRun.
 
         结束时间
 
@@ -460,7 +460,7 @@ class StepRun:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this StepRun.
+        r"""Sets the end_time of this StepRun.
 
         结束时间
 

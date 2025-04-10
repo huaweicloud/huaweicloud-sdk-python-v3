@@ -24,7 +24,7 @@ class UpdateAppAuthorizationsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateAppAuthorizationsResponse
+        r"""UpdateAppAuthorizationsResponse
 
         The model defined in huaweicloud sdk
 

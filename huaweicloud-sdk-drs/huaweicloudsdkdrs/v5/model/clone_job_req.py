@@ -29,7 +29,7 @@ class CloneJobReq:
     }
 
     def __init__(self, job_id=None, name=None, task_version=None):
-        """CloneJobReq
+        r"""CloneJobReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CloneJobReq:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CloneJobReq.
+        r"""Gets the job_id of this CloneJobReq.
 
         被克隆任务ID。
 
@@ -66,7 +66,7 @@ class CloneJobReq:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CloneJobReq.
+        r"""Sets the job_id of this CloneJobReq.
 
         被克隆任务ID。
 
@@ -77,7 +77,7 @@ class CloneJobReq:
 
     @property
     def name(self):
-        """Gets the name of this CloneJobReq.
+        r"""Gets the name of this CloneJobReq.
 
         克隆任务名称。名称在4位到50位之间，必须以字母开头，可以包含字母、数字、中划线或下划线，不能包含其他特殊字符，任务名称不能重复。
 
@@ -88,7 +88,7 @@ class CloneJobReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CloneJobReq.
+        r"""Sets the name of this CloneJobReq.
 
         克隆任务名称。名称在4位到50位之间，必须以字母开头，可以包含字母、数字、中划线或下划线，不能包含其他特殊字符，任务名称不能重复。
 
@@ -99,7 +99,7 @@ class CloneJobReq:
 
     @property
     def task_version(self):
-        """Gets the task_version of this CloneJobReq.
+        r"""Gets the task_version of this CloneJobReq.
 
         任务版本号，新UX任务为2.0。默认为空，即克隆老任务。
 
@@ -110,7 +110,7 @@ class CloneJobReq:
 
     @task_version.setter
     def task_version(self, task_version):
-        """Sets the task_version of this CloneJobReq.
+        r"""Sets the task_version of this CloneJobReq.
 
         任务版本号，新UX任务为2.0。默认为空，即克隆老任务。
 

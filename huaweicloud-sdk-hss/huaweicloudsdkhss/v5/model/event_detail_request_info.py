@@ -47,7 +47,7 @@ class EventDetailRequestInfo:
     }
 
     def __init__(self, agent_id=None, process_pid=None, file_hash=None, file_path=None, file_attr=None, keyword=None, hash=None, private_ip=None, login_ip=None, login_user_name=None, container_id=None, container_name=None):
-        """EventDetailRequestInfo
+        r"""EventDetailRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class EventDetailRequestInfo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this EventDetailRequestInfo.
+        r"""Gets the agent_id of this EventDetailRequestInfo.
 
         Agent ID
 
@@ -131,7 +131,7 @@ class EventDetailRequestInfo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this EventDetailRequestInfo.
+        r"""Sets the agent_id of this EventDetailRequestInfo.
 
         Agent ID
 
@@ -142,7 +142,7 @@ class EventDetailRequestInfo:
 
     @property
     def process_pid(self):
-        """Gets the process_pid of this EventDetailRequestInfo.
+        r"""Gets the process_pid of this EventDetailRequestInfo.
 
         进程id
 
@@ -153,7 +153,7 @@ class EventDetailRequestInfo:
 
     @process_pid.setter
     def process_pid(self, process_pid):
-        """Sets the process_pid of this EventDetailRequestInfo.
+        r"""Sets the process_pid of this EventDetailRequestInfo.
 
         进程id
 
@@ -164,7 +164,7 @@ class EventDetailRequestInfo:
 
     @property
     def file_hash(self):
-        """Gets the file_hash of this EventDetailRequestInfo.
+        r"""Gets the file_hash of this EventDetailRequestInfo.
 
         文件哈希
 
@@ -175,7 +175,7 @@ class EventDetailRequestInfo:
 
     @file_hash.setter
     def file_hash(self, file_hash):
-        """Sets the file_hash of this EventDetailRequestInfo.
+        r"""Sets the file_hash of this EventDetailRequestInfo.
 
         文件哈希
 
@@ -186,7 +186,7 @@ class EventDetailRequestInfo:
 
     @property
     def file_path(self):
-        """Gets the file_path of this EventDetailRequestInfo.
+        r"""Gets the file_path of this EventDetailRequestInfo.
 
         文件路径
 
@@ -197,7 +197,7 @@ class EventDetailRequestInfo:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this EventDetailRequestInfo.
+        r"""Sets the file_path of this EventDetailRequestInfo.
 
         文件路径
 
@@ -208,7 +208,7 @@ class EventDetailRequestInfo:
 
     @property
     def file_attr(self):
-        """Gets the file_attr of this EventDetailRequestInfo.
+        r"""Gets the file_attr of this EventDetailRequestInfo.
 
         文件属性
 
@@ -219,7 +219,7 @@ class EventDetailRequestInfo:
 
     @file_attr.setter
     def file_attr(self, file_attr):
-        """Sets the file_attr of this EventDetailRequestInfo.
+        r"""Sets the file_attr of this EventDetailRequestInfo.
 
         文件属性
 
@@ -230,7 +230,7 @@ class EventDetailRequestInfo:
 
     @property
     def keyword(self):
-        """Gets the keyword of this EventDetailRequestInfo.
+        r"""Gets the keyword of this EventDetailRequestInfo.
 
         告警事件关键字，仅用于告警白名单
 
@@ -241,7 +241,7 @@ class EventDetailRequestInfo:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this EventDetailRequestInfo.
+        r"""Sets the keyword of this EventDetailRequestInfo.
 
         告警事件关键字，仅用于告警白名单
 
@@ -252,7 +252,7 @@ class EventDetailRequestInfo:
 
     @property
     def hash(self):
-        """Gets the hash of this EventDetailRequestInfo.
+        r"""Gets the hash of this EventDetailRequestInfo.
 
         告警事件hash，仅用于告警白名单
 
@@ -263,7 +263,7 @@ class EventDetailRequestInfo:
 
     @hash.setter
     def hash(self, hash):
-        """Sets the hash of this EventDetailRequestInfo.
+        r"""Sets the hash of this EventDetailRequestInfo.
 
         告警事件hash，仅用于告警白名单
 
@@ -274,7 +274,7 @@ class EventDetailRequestInfo:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this EventDetailRequestInfo.
+        r"""Gets the private_ip of this EventDetailRequestInfo.
 
         服务器私有IP
 
@@ -285,7 +285,7 @@ class EventDetailRequestInfo:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this EventDetailRequestInfo.
+        r"""Sets the private_ip of this EventDetailRequestInfo.
 
         服务器私有IP
 
@@ -296,7 +296,7 @@ class EventDetailRequestInfo:
 
     @property
     def login_ip(self):
-        """Gets the login_ip of this EventDetailRequestInfo.
+        r"""Gets the login_ip of this EventDetailRequestInfo.
 
         登录源IP
 
@@ -307,7 +307,7 @@ class EventDetailRequestInfo:
 
     @login_ip.setter
     def login_ip(self, login_ip):
-        """Sets the login_ip of this EventDetailRequestInfo.
+        r"""Sets the login_ip of this EventDetailRequestInfo.
 
         登录源IP
 
@@ -318,7 +318,7 @@ class EventDetailRequestInfo:
 
     @property
     def login_user_name(self):
-        """Gets the login_user_name of this EventDetailRequestInfo.
+        r"""Gets the login_user_name of this EventDetailRequestInfo.
 
         登录用户名
 
@@ -329,7 +329,7 @@ class EventDetailRequestInfo:
 
     @login_user_name.setter
     def login_user_name(self, login_user_name):
-        """Sets the login_user_name of this EventDetailRequestInfo.
+        r"""Sets the login_user_name of this EventDetailRequestInfo.
 
         登录用户名
 
@@ -340,7 +340,7 @@ class EventDetailRequestInfo:
 
     @property
     def container_id(self):
-        """Gets the container_id of this EventDetailRequestInfo.
+        r"""Gets the container_id of this EventDetailRequestInfo.
 
         容器ID
 
@@ -351,7 +351,7 @@ class EventDetailRequestInfo:
 
     @container_id.setter
     def container_id(self, container_id):
-        """Sets the container_id of this EventDetailRequestInfo.
+        r"""Sets the container_id of this EventDetailRequestInfo.
 
         容器ID
 
@@ -362,7 +362,7 @@ class EventDetailRequestInfo:
 
     @property
     def container_name(self):
-        """Gets the container_name of this EventDetailRequestInfo.
+        r"""Gets the container_name of this EventDetailRequestInfo.
 
         容器名称
 
@@ -373,7 +373,7 @@ class EventDetailRequestInfo:
 
     @container_name.setter
     def container_name(self, container_name):
-        """Sets the container_name of this EventDetailRequestInfo.
+        r"""Sets the container_name of this EventDetailRequestInfo.
 
         容器名称
 

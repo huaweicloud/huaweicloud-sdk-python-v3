@@ -26,7 +26,7 @@ class ShowBandwidthCalcResponse(SdkResponse):
     }
 
     def __init__(self, bandwidth_calc=None):
-        """ShowBandwidthCalcResponse
+        r"""ShowBandwidthCalcResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowBandwidthCalcResponse(SdkResponse):
 
     @property
     def bandwidth_calc(self):
-        """Gets the bandwidth_calc of this ShowBandwidthCalcResponse.
+        r"""Gets the bandwidth_calc of this ShowBandwidthCalcResponse.
 
         95峰值，日峰值月平均线信息
 
@@ -55,7 +55,7 @@ class ShowBandwidthCalcResponse(SdkResponse):
 
     @bandwidth_calc.setter
     def bandwidth_calc(self, bandwidth_calc):
-        """Sets the bandwidth_calc of this ShowBandwidthCalcResponse.
+        r"""Sets the bandwidth_calc of this ShowBandwidthCalcResponse.
 
         95峰值，日峰值月平均线信息
 

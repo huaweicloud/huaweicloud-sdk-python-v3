@@ -27,7 +27,7 @@ class BatchDeleteGroupRespFailedGroups:
     }
 
     def __init__(self, group_id=None, error_message=None):
-        """BatchDeleteGroupRespFailedGroups
+        r"""BatchDeleteGroupRespFailedGroups
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchDeleteGroupRespFailedGroups:
 
     @property
     def group_id(self):
-        """Gets the group_id of this BatchDeleteGroupRespFailedGroups.
+        r"""Gets the group_id of this BatchDeleteGroupRespFailedGroups.
 
         删除失败的消费组ID。
 
@@ -61,7 +61,7 @@ class BatchDeleteGroupRespFailedGroups:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this BatchDeleteGroupRespFailedGroups.
+        r"""Sets the group_id of this BatchDeleteGroupRespFailedGroups.
 
         删除失败的消费组ID。
 
@@ -72,7 +72,7 @@ class BatchDeleteGroupRespFailedGroups:
 
     @property
     def error_message(self):
-        """Gets the error_message of this BatchDeleteGroupRespFailedGroups.
+        r"""Gets the error_message of this BatchDeleteGroupRespFailedGroups.
 
         删除失败的原因。
 
@@ -83,7 +83,7 @@ class BatchDeleteGroupRespFailedGroups:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this BatchDeleteGroupRespFailedGroups.
+        r"""Sets the error_message of this BatchDeleteGroupRespFailedGroups.
 
         删除失败的原因。
 

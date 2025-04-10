@@ -38,7 +38,7 @@ class CreateSqlJobResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, job_id=None, job_type=None, schema=None, rows=None, job_mode=None):
-        """CreateSqlJobResponse
+        r"""CreateSqlJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateSqlJobResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CreateSqlJobResponse.
+        r"""Gets the is_success of this CreateSqlJobResponse.
 
         当“job_type”为“DCL”时，为请求执行是否成功。“true”表示请求执行成功。
 
@@ -97,7 +97,7 @@ class CreateSqlJobResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CreateSqlJobResponse.
+        r"""Sets the is_success of this CreateSqlJobResponse.
 
         当“job_type”为“DCL”时，为请求执行是否成功。“true”表示请求执行成功。
 
@@ -108,7 +108,7 @@ class CreateSqlJobResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateSqlJobResponse.
+        r"""Gets the message of this CreateSqlJobResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -119,7 +119,7 @@ class CreateSqlJobResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateSqlJobResponse.
+        r"""Sets the message of this CreateSqlJobResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -130,7 +130,7 @@ class CreateSqlJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateSqlJobResponse.
+        r"""Gets the job_id of this CreateSqlJobResponse.
 
         此SQL语句将生成并提交一个新作业，返回此作业的ID，可用于获取作业状态和作业结果。
 
@@ -141,7 +141,7 @@ class CreateSqlJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateSqlJobResponse.
+        r"""Sets the job_id of this CreateSqlJobResponse.
 
         此SQL语句将生成并提交一个新作业，返回此作业的ID，可用于获取作业状态和作业结果。
 
@@ -152,7 +152,7 @@ class CreateSqlJobResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this CreateSqlJobResponse.
+        r"""Gets the job_type of this CreateSqlJobResponse.
 
         作业类型。  DDL DCL IMPORT EXPORT QUERY INSERT
 
@@ -163,7 +163,7 @@ class CreateSqlJobResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this CreateSqlJobResponse.
+        r"""Sets the job_type of this CreateSqlJobResponse.
 
         作业类型。  DDL DCL IMPORT EXPORT QUERY INSERT
 
@@ -174,7 +174,7 @@ class CreateSqlJobResponse(SdkResponse):
 
     @property
     def schema(self):
-        """Gets the schema of this CreateSqlJobResponse.
+        r"""Gets the schema of this CreateSqlJobResponse.
 
         当语句类型为DDL时，返回其结果的列名称及类型。
 
@@ -185,7 +185,7 @@ class CreateSqlJobResponse(SdkResponse):
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this CreateSqlJobResponse.
+        r"""Sets the schema of this CreateSqlJobResponse.
 
         当语句类型为DDL时，返回其结果的列名称及类型。
 
@@ -196,7 +196,7 @@ class CreateSqlJobResponse(SdkResponse):
 
     @property
     def rows(self):
-        """Gets the rows of this CreateSqlJobResponse.
+        r"""Gets the rows of this CreateSqlJobResponse.
 
         当语句类型为DDL时，直接返回其执行结果。
 
@@ -207,7 +207,7 @@ class CreateSqlJobResponse(SdkResponse):
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this CreateSqlJobResponse.
+        r"""Sets the rows of this CreateSqlJobResponse.
 
         当语句类型为DDL时，直接返回其执行结果。
 
@@ -218,7 +218,7 @@ class CreateSqlJobResponse(SdkResponse):
 
     @property
     def job_mode(self):
-        """Gets the job_mode of this CreateSqlJobResponse.
+        r"""Gets the job_mode of this CreateSqlJobResponse.
 
         表示作业执行方式，是同步还是异步的
 
@@ -229,7 +229,7 @@ class CreateSqlJobResponse(SdkResponse):
 
     @job_mode.setter
     def job_mode(self, job_mode):
-        """Sets the job_mode of this CreateSqlJobResponse.
+        r"""Sets the job_mode of this CreateSqlJobResponse.
 
         表示作业执行方式，是同步还是异步的
 

@@ -28,7 +28,7 @@ class ListAimSendTasksResponse(SdkResponse):
     }
 
     def __init__(self, aim_send_tasks=None, page_info=None):
-        """ListAimSendTasksResponse
+        r"""ListAimSendTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAimSendTasksResponse(SdkResponse):
 
     @property
     def aim_send_tasks(self):
-        """Gets the aim_send_tasks of this ListAimSendTasksResponse.
+        r"""Gets the aim_send_tasks of this ListAimSendTasksResponse.
 
         短信记录查询结果列表。
 
@@ -62,7 +62,7 @@ class ListAimSendTasksResponse(SdkResponse):
 
     @aim_send_tasks.setter
     def aim_send_tasks(self, aim_send_tasks):
-        """Sets the aim_send_tasks of this ListAimSendTasksResponse.
+        r"""Sets the aim_send_tasks of this ListAimSendTasksResponse.
 
         短信记录查询结果列表。
 
@@ -73,7 +73,7 @@ class ListAimSendTasksResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAimSendTasksResponse.
+        r"""Gets the page_info of this ListAimSendTasksResponse.
 
         :return: The page_info of this ListAimSendTasksResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.Page`
@@ -82,7 +82,7 @@ class ListAimSendTasksResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAimSendTasksResponse.
+        r"""Sets the page_info of this ListAimSendTasksResponse.
 
         :param page_info: The page_info of this ListAimSendTasksResponse.
         :type page_info: :class:`huaweicloudsdkkoomessage.v1.Page`

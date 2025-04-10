@@ -27,7 +27,7 @@ class ShowEnvMonitorItemsRequest:
     }
 
     def __init__(self, env_id=None, x_business_id=None):
-        """ShowEnvMonitorItemsRequest
+        r"""ShowEnvMonitorItemsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowEnvMonitorItemsRequest:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ShowEnvMonitorItemsRequest.
+        r"""Gets the env_id of this ShowEnvMonitorItemsRequest.
 
         环境id。
 
@@ -59,7 +59,7 @@ class ShowEnvMonitorItemsRequest:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ShowEnvMonitorItemsRequest.
+        r"""Sets the env_id of this ShowEnvMonitorItemsRequest.
 
         环境id。
 
@@ -70,7 +70,7 @@ class ShowEnvMonitorItemsRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ShowEnvMonitorItemsRequest.
+        r"""Gets the x_business_id of this ShowEnvMonitorItemsRequest.
 
         应用id。
 
@@ -81,7 +81,7 @@ class ShowEnvMonitorItemsRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ShowEnvMonitorItemsRequest.
+        r"""Sets the x_business_id of this ShowEnvMonitorItemsRequest.
 
         应用id。
 

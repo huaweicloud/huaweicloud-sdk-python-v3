@@ -29,7 +29,7 @@ class LiveDetectFaceRespResult:
     }
 
     def __init__(self, alive=None, confidence=None, picture=None):
-        """LiveDetectFaceRespResult
+        r"""LiveDetectFaceRespResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LiveDetectFaceRespResult:
 
     @property
     def alive(self):
-        """Gets the alive of this LiveDetectFaceRespResult.
+        r"""Gets the alive of this LiveDetectFaceRespResult.
 
         是否是活体。
 
@@ -68,7 +68,7 @@ class LiveDetectFaceRespResult:
 
     @alive.setter
     def alive(self, alive):
-        """Sets the alive of this LiveDetectFaceRespResult.
+        r"""Sets the alive of this LiveDetectFaceRespResult.
 
         是否是活体。
 
@@ -79,7 +79,7 @@ class LiveDetectFaceRespResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this LiveDetectFaceRespResult.
+        r"""Gets the confidence of this LiveDetectFaceRespResult.
 
         置信度，取值范围0～1。
 
@@ -90,7 +90,7 @@ class LiveDetectFaceRespResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this LiveDetectFaceRespResult.
+        r"""Sets the confidence of this LiveDetectFaceRespResult.
 
         置信度，取值范围0～1。
 
@@ -101,7 +101,7 @@ class LiveDetectFaceRespResult:
 
     @property
     def picture(self):
-        """Gets the picture of this LiveDetectFaceRespResult.
+        r"""Gets the picture of this LiveDetectFaceRespResult.
 
         检测出最大人脸的图片base64字符串。
 
@@ -112,7 +112,7 @@ class LiveDetectFaceRespResult:
 
     @picture.setter
     def picture(self, picture):
-        """Sets the picture of this LiveDetectFaceRespResult.
+        r"""Sets the picture of this LiveDetectFaceRespResult.
 
         检测出最大人脸的图片base64字符串。
 

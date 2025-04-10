@@ -37,7 +37,7 @@ class ShowPartitionMessageEntity:
     }
 
     def __init__(self, key=None, value=None, topic=None, partition=None, message_offset=None, size=None, timestamp=None):
-        """ShowPartitionMessageEntity
+        r"""ShowPartitionMessageEntity
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ShowPartitionMessageEntity:
 
     @property
     def key(self):
-        """Gets the key of this ShowPartitionMessageEntity.
+        r"""Gets the key of this ShowPartitionMessageEntity.
 
         消息的key。
 
@@ -96,7 +96,7 @@ class ShowPartitionMessageEntity:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ShowPartitionMessageEntity.
+        r"""Sets the key of this ShowPartitionMessageEntity.
 
         消息的key。
 
@@ -107,7 +107,7 @@ class ShowPartitionMessageEntity:
 
     @property
     def value(self):
-        """Gets the value of this ShowPartitionMessageEntity.
+        r"""Gets the value of this ShowPartitionMessageEntity.
 
         消息内容。
 
@@ -118,7 +118,7 @@ class ShowPartitionMessageEntity:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ShowPartitionMessageEntity.
+        r"""Sets the value of this ShowPartitionMessageEntity.
 
         消息内容。
 
@@ -129,7 +129,7 @@ class ShowPartitionMessageEntity:
 
     @property
     def topic(self):
-        """Gets the topic of this ShowPartitionMessageEntity.
+        r"""Gets the topic of this ShowPartitionMessageEntity.
 
         Topic名称。
 
@@ -140,7 +140,7 @@ class ShowPartitionMessageEntity:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowPartitionMessageEntity.
+        r"""Sets the topic of this ShowPartitionMessageEntity.
 
         Topic名称。
 
@@ -151,7 +151,7 @@ class ShowPartitionMessageEntity:
 
     @property
     def partition(self):
-        """Gets the partition of this ShowPartitionMessageEntity.
+        r"""Gets the partition of this ShowPartitionMessageEntity.
 
         分区编号。
 
@@ -162,7 +162,7 @@ class ShowPartitionMessageEntity:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ShowPartitionMessageEntity.
+        r"""Sets the partition of this ShowPartitionMessageEntity.
 
         分区编号。
 
@@ -173,7 +173,7 @@ class ShowPartitionMessageEntity:
 
     @property
     def message_offset(self):
-        """Gets the message_offset of this ShowPartitionMessageEntity.
+        r"""Gets the message_offset of this ShowPartitionMessageEntity.
 
         消息位置。
 
@@ -184,7 +184,7 @@ class ShowPartitionMessageEntity:
 
     @message_offset.setter
     def message_offset(self, message_offset):
-        """Sets the message_offset of this ShowPartitionMessageEntity.
+        r"""Sets the message_offset of this ShowPartitionMessageEntity.
 
         消息位置。
 
@@ -195,7 +195,7 @@ class ShowPartitionMessageEntity:
 
     @property
     def size(self):
-        """Gets the size of this ShowPartitionMessageEntity.
+        r"""Gets the size of this ShowPartitionMessageEntity.
 
         消息大小，单位字节。
 
@@ -206,7 +206,7 @@ class ShowPartitionMessageEntity:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowPartitionMessageEntity.
+        r"""Sets the size of this ShowPartitionMessageEntity.
 
         消息大小，单位字节。
 
@@ -217,7 +217,7 @@ class ShowPartitionMessageEntity:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ShowPartitionMessageEntity.
+        r"""Gets the timestamp of this ShowPartitionMessageEntity.
 
         生产消息的时间。 格式为Unix时间戳。单位为毫秒。
 
@@ -228,7 +228,7 @@ class ShowPartitionMessageEntity:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowPartitionMessageEntity.
+        r"""Sets the timestamp of this ShowPartitionMessageEntity.
 
         生产消息的时间。 格式为Unix时间戳。单位为毫秒。
 

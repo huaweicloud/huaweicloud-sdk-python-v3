@@ -85,7 +85,7 @@ class ListAssetsRequest:
     }
 
     def __init__(self, x_app_user_id=None, limit=None, offset=None, name=None, tag=None, tag_combination_type=None, start_time=None, end_time=None, asset_type=None, sort_key=None, sort_dir=None, asset_source=None, asset_state=None, style_id=None, accurate_query_field=None, render_engine=None, asset_id=None, sex=None, language=None, system_property=None, action_editable=None, is_with_action_library=None, is_movable=None, voice_provider=None, role=None, is_realtime_voice=None, human_model_2d_version=None, include_device_name=None, exclude_device_name=None, supported_service=None, app_user_id=None):
-        """ListAssetsRequest
+        r"""ListAssetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -253,7 +253,7 @@ class ListAssetsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListAssetsRequest.
+        r"""Gets the x_app_user_id of this ListAssetsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -264,7 +264,7 @@ class ListAssetsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListAssetsRequest.
+        r"""Sets the x_app_user_id of this ListAssetsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -275,7 +275,7 @@ class ListAssetsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAssetsRequest.
+        r"""Gets the limit of this ListAssetsRequest.
 
         每页显示的条目数量。
 
@@ -286,7 +286,7 @@ class ListAssetsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAssetsRequest.
+        r"""Sets the limit of this ListAssetsRequest.
 
         每页显示的条目数量。
 
@@ -297,7 +297,7 @@ class ListAssetsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAssetsRequest.
+        r"""Gets the offset of this ListAssetsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -308,7 +308,7 @@ class ListAssetsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAssetsRequest.
+        r"""Sets the offset of this ListAssetsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -319,7 +319,7 @@ class ListAssetsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAssetsRequest.
+        r"""Gets the name of this ListAssetsRequest.
 
         按名称模糊查询。
 
@@ -330,7 +330,7 @@ class ListAssetsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAssetsRequest.
+        r"""Sets the name of this ListAssetsRequest.
 
         按名称模糊查询。
 
@@ -341,7 +341,7 @@ class ListAssetsRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ListAssetsRequest.
+        r"""Gets the tag of this ListAssetsRequest.
 
         按标签模糊查询。
 
@@ -352,7 +352,7 @@ class ListAssetsRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListAssetsRequest.
+        r"""Sets the tag of this ListAssetsRequest.
 
         按标签模糊查询。
 
@@ -363,7 +363,7 @@ class ListAssetsRequest:
 
     @property
     def tag_combination_type(self):
-        """Gets the tag_combination_type of this ListAssetsRequest.
+        r"""Gets the tag_combination_type of this ListAssetsRequest.
 
         标签查询组合方式 INTERSECTION：交集 UNION_SET：并集
 
@@ -374,7 +374,7 @@ class ListAssetsRequest:
 
     @tag_combination_type.setter
     def tag_combination_type(self, tag_combination_type):
-        """Sets the tag_combination_type of this ListAssetsRequest.
+        r"""Sets the tag_combination_type of this ListAssetsRequest.
 
         标签查询组合方式 INTERSECTION：交集 UNION_SET：并集
 
@@ -385,7 +385,7 @@ class ListAssetsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListAssetsRequest.
+        r"""Gets the start_time of this ListAssetsRequest.
 
         起始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -396,7 +396,7 @@ class ListAssetsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListAssetsRequest.
+        r"""Sets the start_time of this ListAssetsRequest.
 
         起始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -407,7 +407,7 @@ class ListAssetsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAssetsRequest.
+        r"""Gets the end_time of this ListAssetsRequest.
 
         结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
 
@@ -418,7 +418,7 @@ class ListAssetsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAssetsRequest.
+        r"""Sets the end_time of this ListAssetsRequest.
 
         结束时间。格式遵循：RFC 3339 如\"2021-01-10T10:43:17Z\"。
 
@@ -429,7 +429,7 @@ class ListAssetsRequest:
 
     @property
     def asset_type(self):
-        """Gets the asset_type of this ListAssetsRequest.
+        r"""Gets the asset_type of this ListAssetsRequest.
 
         资产类型。多个类型使用英文逗号分隔。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐 * AUDIO: 音频
 
@@ -440,7 +440,7 @@ class ListAssetsRequest:
 
     @asset_type.setter
     def asset_type(self, asset_type):
-        """Sets the asset_type of this ListAssetsRequest.
+        r"""Sets the asset_type of this ListAssetsRequest.
 
         资产类型。多个类型使用英文逗号分隔。 * HUMAN_MODEL：数字人模型 * VOICE_MODEL：音色模型（仅系统管理员可上传） * SCENE：场景模型 * ANIMATION：动作动画 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MATERIAL：风格化素材 * HUMAN_MODEL_2D: 2D数字人网络模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板 * MUSIC: 音乐 * AUDIO: 音频
 
@@ -451,7 +451,7 @@ class ListAssetsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListAssetsRequest.
+        r"""Gets the sort_key of this ListAssetsRequest.
 
         排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
@@ -462,7 +462,7 @@ class ListAssetsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListAssetsRequest.
+        r"""Sets the sort_key of this ListAssetsRequest.
 
         排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
@@ -473,7 +473,7 @@ class ListAssetsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListAssetsRequest.
+        r"""Gets the sort_dir of this ListAssetsRequest.
 
         排序方式。 * asc：升序 * desc：降序  默认asc升序。
 
@@ -484,7 +484,7 @@ class ListAssetsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListAssetsRequest.
+        r"""Sets the sort_dir of this ListAssetsRequest.
 
         排序方式。 * asc：升序 * desc：降序  默认asc升序。
 
@@ -495,7 +495,7 @@ class ListAssetsRequest:
 
     @property
     def asset_source(self):
-        """Gets the asset_source of this ListAssetsRequest.
+        r"""Gets the asset_source of this ListAssetsRequest.
 
         资产来源。 * SYSTEM：系统资产 * CUSTOMIZATION：租户资产 * ALL：所有资产  默认查询租户资产。
 
@@ -506,7 +506,7 @@ class ListAssetsRequest:
 
     @asset_source.setter
     def asset_source(self, asset_source):
-        """Sets the asset_source of this ListAssetsRequest.
+        r"""Sets the asset_source of this ListAssetsRequest.
 
         资产来源。 * SYSTEM：系统资产 * CUSTOMIZATION：租户资产 * ALL：所有资产  默认查询租户资产。
 
@@ -517,7 +517,7 @@ class ListAssetsRequest:
 
     @property
     def asset_state(self):
-        """Gets the asset_state of this ListAssetsRequest.
+        r"""Gets the asset_state of this ListAssetsRequest.
 
         资产状态。多个资产状态使用英文逗号分隔。 * CREATING：资产创建中，主文件尚未上传 * FAILED：主文件上传失败 * UNACTIVED：主文件上传成功，资产未激活，资产不可用于其他业务（用户可更新状态） * ACTIVED：主文件上传成功，资产激活，资产可用于其他业务（用户可更新状态） * DELETING：资产删除中，资产不可用，资产可恢复 * DELETED：资产文件已删除，资产不可用，资产不可恢复 * BLOCK：资产被冻结，资产不可用，不可查看文件。 * WAITING_DELETE：资产将被下线 默认查询所有状态的资产。
 
@@ -528,7 +528,7 @@ class ListAssetsRequest:
 
     @asset_state.setter
     def asset_state(self, asset_state):
-        """Sets the asset_state of this ListAssetsRequest.
+        r"""Sets the asset_state of this ListAssetsRequest.
 
         资产状态。多个资产状态使用英文逗号分隔。 * CREATING：资产创建中，主文件尚未上传 * FAILED：主文件上传失败 * UNACTIVED：主文件上传成功，资产未激活，资产不可用于其他业务（用户可更新状态） * ACTIVED：主文件上传成功，资产激活，资产可用于其他业务（用户可更新状态） * DELETING：资产删除中，资产不可用，资产可恢复 * DELETED：资产文件已删除，资产不可用，资产不可恢复 * BLOCK：资产被冻结，资产不可用，不可查看文件。 * WAITING_DELETE：资产将被下线 默认查询所有状态的资产。
 
@@ -539,7 +539,7 @@ class ListAssetsRequest:
 
     @property
     def style_id(self):
-        """Gets the style_id of this ListAssetsRequest.
+        r"""Gets the style_id of this ListAssetsRequest.
 
         基于风格化ID查询关联资产。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02
 
@@ -550,7 +550,7 @@ class ListAssetsRequest:
 
     @style_id.setter
     def style_id(self, style_id):
-        """Sets the style_id of this ListAssetsRequest.
+        r"""Sets the style_id of this ListAssetsRequest.
 
         基于风格化ID查询关联资产。 * system_male_001：男性风格01 * system_female_001：女性风格01 * system_male_002：男性风格02  * system_female_002：女性风格02
 
@@ -561,7 +561,7 @@ class ListAssetsRequest:
 
     @property
     def accurate_query_field(self):
-        """Gets the accurate_query_field of this ListAssetsRequest.
+        r"""Gets the accurate_query_field of this ListAssetsRequest.
 
         使用精确查询的字段
 
@@ -572,7 +572,7 @@ class ListAssetsRequest:
 
     @accurate_query_field.setter
     def accurate_query_field(self, accurate_query_field):
-        """Sets the accurate_query_field of this ListAssetsRequest.
+        r"""Sets the accurate_query_field of this ListAssetsRequest.
 
         使用精确查询的字段
 
@@ -583,7 +583,7 @@ class ListAssetsRequest:
 
     @property
     def render_engine(self):
-        """Gets the render_engine of this ListAssetsRequest.
+        r"""Gets the render_engine of this ListAssetsRequest.
 
         可用引擎。 * UE：UE引擎 * MetaEngine：MetaEngine引擎 > 该字段当前只对MetaEngine白名单用户生效
 
@@ -594,7 +594,7 @@ class ListAssetsRequest:
 
     @render_engine.setter
     def render_engine(self, render_engine):
-        """Sets the render_engine of this ListAssetsRequest.
+        r"""Sets the render_engine of this ListAssetsRequest.
 
         可用引擎。 * UE：UE引擎 * MetaEngine：MetaEngine引擎 > 该字段当前只对MetaEngine白名单用户生效
 
@@ -605,7 +605,7 @@ class ListAssetsRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ListAssetsRequest.
+        r"""Gets the asset_id of this ListAssetsRequest.
 
         资产id
 
@@ -616,7 +616,7 @@ class ListAssetsRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ListAssetsRequest.
+        r"""Sets the asset_id of this ListAssetsRequest.
 
         资产id
 
@@ -627,7 +627,7 @@ class ListAssetsRequest:
 
     @property
     def sex(self):
-        """Gets the sex of this ListAssetsRequest.
+        r"""Gets the sex of this ListAssetsRequest.
 
         性别。多选使用英文逗号分隔。
 
@@ -638,7 +638,7 @@ class ListAssetsRequest:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this ListAssetsRequest.
+        r"""Sets the sex of this ListAssetsRequest.
 
         性别。多选使用英文逗号分隔。
 
@@ -649,7 +649,7 @@ class ListAssetsRequest:
 
     @property
     def language(self):
-        """Gets the language of this ListAssetsRequest.
+        r"""Gets the language of this ListAssetsRequest.
 
         语言。多选使用英文逗号分隔。
 
@@ -660,7 +660,7 @@ class ListAssetsRequest:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ListAssetsRequest.
+        r"""Sets the language of this ListAssetsRequest.
 
         语言。多选使用英文逗号分隔。
 
@@ -671,7 +671,7 @@ class ListAssetsRequest:
 
     @property
     def system_property(self):
-        """Gets the system_property of this ListAssetsRequest.
+        r"""Gets the system_property of this ListAssetsRequest.
 
         系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes * TO_BE_TRANSLATED_VIDEO: 视频翻译的源视频。可取值Yes  3D数字人资产属性： * STYLE_ID：风格Id * RENDER_ENGINE：引擎类型，可取值UE或MetaEngine * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）
 
@@ -682,7 +682,7 @@ class ListAssetsRequest:
 
     @system_property.setter
     def system_property(self, system_property):
-        """Sets the system_property of this ListAssetsRequest.
+        r"""Sets the system_property of this ListAssetsRequest.
 
         系统属性。  key和value间用\":\"分隔，多个key之间用\",\"分隔。  如system_property=BACKGROUND_IMG:Yes,RENDER_ENGINE:MetaEngine。  不同Key对应Value取值如下：  公共资产属性： * BACKGROUND_IMG：视频制作的2D背景图片，可取值Yes * CREATED_BY_PLATFORM：是否平台生成，可取值Yes  分身数字人资产属性： * MATERIAL_IMG：素材图片，用作前景。可取值Yes * MATERIAL_VIDEO：素材视频，用作前景。可取值Yes * TO_BE_TRANSLATED_VIDEO: 视频翻译的源视频。可取值Yes  3D数字人资产属性： * STYLE_ID：风格Id * RENDER_ENGINE：引擎类型，可取值UE或MetaEngine * BACKGROUND_SCENE：视频制作的2D背景场景，可取值Horizontal（横屏）或者Vertical（竖屏）
 
@@ -693,7 +693,7 @@ class ListAssetsRequest:
 
     @property
     def action_editable(self):
-        """Gets the action_editable of this ListAssetsRequest.
+        r"""Gets the action_editable of this ListAssetsRequest.
 
         动作是否可编辑。仅在分身数字人模型查询时有效。
 
@@ -704,7 +704,7 @@ class ListAssetsRequest:
 
     @action_editable.setter
     def action_editable(self, action_editable):
-        """Sets the action_editable of this ListAssetsRequest.
+        r"""Sets the action_editable of this ListAssetsRequest.
 
         动作是否可编辑。仅在分身数字人模型查询时有效。
 
@@ -715,7 +715,7 @@ class ListAssetsRequest:
 
     @property
     def is_with_action_library(self):
-        """Gets the is_with_action_library of this ListAssetsRequest.
+        r"""Gets the is_with_action_library of this ListAssetsRequest.
 
         分身数字人是否带原子动作库。 > * 带原子动作库的分身数字人可做动作编排。
 
@@ -726,7 +726,7 @@ class ListAssetsRequest:
 
     @is_with_action_library.setter
     def is_with_action_library(self, is_with_action_library):
-        """Sets the is_with_action_library of this ListAssetsRequest.
+        r"""Sets the is_with_action_library of this ListAssetsRequest.
 
         分身数字人是否带原子动作库。 > * 带原子动作库的分身数字人可做动作编排。
 
@@ -737,7 +737,7 @@ class ListAssetsRequest:
 
     @property
     def is_movable(self):
-        """Gets the is_movable of this ListAssetsRequest.
+        r"""Gets the is_movable of this ListAssetsRequest.
 
         分身数字人是否支持走动。仅在分身数字人模型查询时有效。
 
@@ -748,7 +748,7 @@ class ListAssetsRequest:
 
     @is_movable.setter
     def is_movable(self, is_movable):
-        """Sets the is_movable of this ListAssetsRequest.
+        r"""Sets the is_movable of this ListAssetsRequest.
 
         分身数字人是否支持走动。仅在分身数字人模型查询时有效。
 
@@ -759,7 +759,7 @@ class ListAssetsRequest:
 
     @property
     def voice_provider(self):
-        """Gets the voice_provider of this ListAssetsRequest.
+        r"""Gets the voice_provider of this ListAssetsRequest.
 
         取值：HUAWEI_METASTUDIO、MOBVOI。 HUAWEI_METASTUDIO：MetaStudio自研音色 MOBVOI：出门问问音色
 
@@ -770,7 +770,7 @@ class ListAssetsRequest:
 
     @voice_provider.setter
     def voice_provider(self, voice_provider):
-        """Sets the voice_provider of this ListAssetsRequest.
+        r"""Sets the voice_provider of this ListAssetsRequest.
 
         取值：HUAWEI_METASTUDIO、MOBVOI。 HUAWEI_METASTUDIO：MetaStudio自研音色 MOBVOI：出门问问音色
 
@@ -781,7 +781,7 @@ class ListAssetsRequest:
 
     @property
     def role(self):
-        """Gets the role of this ListAssetsRequest.
+        r"""Gets the role of this ListAssetsRequest.
 
         角色。 SHARER：共享方，SHAREE：被共享方
 
@@ -792,7 +792,7 @@ class ListAssetsRequest:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ListAssetsRequest.
+        r"""Sets the role of this ListAssetsRequest.
 
         角色。 SHARER：共享方，SHAREE：被共享方
 
@@ -803,7 +803,7 @@ class ListAssetsRequest:
 
     @property
     def is_realtime_voice(self):
-        """Gets the is_realtime_voice of this ListAssetsRequest.
+        r"""Gets the is_realtime_voice of this ListAssetsRequest.
 
         音色是否支持实时合成。仅在音色查询时有效。 > * 支持实时合成的音色，可以用于直播和智能交互场景。否则只能用于视频制作。
 
@@ -814,7 +814,7 @@ class ListAssetsRequest:
 
     @is_realtime_voice.setter
     def is_realtime_voice(self, is_realtime_voice):
-        """Sets the is_realtime_voice of this ListAssetsRequest.
+        r"""Sets the is_realtime_voice of this ListAssetsRequest.
 
         音色是否支持实时合成。仅在音色查询时有效。 > * 支持实时合成的音色，可以用于直播和智能交互场景。否则只能用于视频制作。
 
@@ -825,7 +825,7 @@ class ListAssetsRequest:
 
     @property
     def human_model_2d_version(self):
-        """Gets the human_model_2d_version of this ListAssetsRequest.
+        r"""Gets the human_model_2d_version of this ListAssetsRequest.
 
         模型版本
 
@@ -836,7 +836,7 @@ class ListAssetsRequest:
 
     @human_model_2d_version.setter
     def human_model_2d_version(self, human_model_2d_version):
-        """Sets the human_model_2d_version of this ListAssetsRequest.
+        r"""Sets the human_model_2d_version of this ListAssetsRequest.
 
         模型版本
 
@@ -847,7 +847,7 @@ class ListAssetsRequest:
 
     @property
     def include_device_name(self):
-        """Gets the include_device_name of this ListAssetsRequest.
+        r"""Gets the include_device_name of this ListAssetsRequest.
 
         资产已执行的任务名称
 
@@ -858,7 +858,7 @@ class ListAssetsRequest:
 
     @include_device_name.setter
     def include_device_name(self, include_device_name):
-        """Sets the include_device_name of this ListAssetsRequest.
+        r"""Sets the include_device_name of this ListAssetsRequest.
 
         资产已执行的任务名称
 
@@ -869,7 +869,7 @@ class ListAssetsRequest:
 
     @property
     def exclude_device_name(self):
-        """Gets the exclude_device_name of this ListAssetsRequest.
+        r"""Gets the exclude_device_name of this ListAssetsRequest.
 
         资产已执行的任务名称
 
@@ -880,7 +880,7 @@ class ListAssetsRequest:
 
     @exclude_device_name.setter
     def exclude_device_name(self, exclude_device_name):
-        """Sets the exclude_device_name of this ListAssetsRequest.
+        r"""Sets the exclude_device_name of this ListAssetsRequest.
 
         资产已执行的任务名称
 
@@ -891,7 +891,7 @@ class ListAssetsRequest:
 
     @property
     def supported_service(self):
-        """Gets the supported_service of this ListAssetsRequest.
+        r"""Gets the supported_service of this ListAssetsRequest.
 
         资产支持的业务类型。默认查询所有资产。 * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 
@@ -902,7 +902,7 @@ class ListAssetsRequest:
 
     @supported_service.setter
     def supported_service(self, supported_service):
-        """Sets the supported_service of this ListAssetsRequest.
+        r"""Sets the supported_service of this ListAssetsRequest.
 
         资产支持的业务类型。默认查询所有资产。 * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 
@@ -913,7 +913,7 @@ class ListAssetsRequest:
 
     @property
     def app_user_id(self):
-        """Gets the app_user_id of this ListAssetsRequest.
+        r"""Gets the app_user_id of this ListAssetsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -924,7 +924,7 @@ class ListAssetsRequest:
 
     @app_user_id.setter
     def app_user_id(self, app_user_id):
-        """Sets the app_user_id of this ListAssetsRequest.
+        r"""Sets the app_user_id of this ListAssetsRequest.
 
         第三方用户ID。不允许输入中文。
 

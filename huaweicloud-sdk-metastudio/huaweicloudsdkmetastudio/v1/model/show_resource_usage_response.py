@@ -28,7 +28,7 @@ class ShowResourceUsageResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, x_request_id=None):
-        """ShowResourceUsageResponse
+        r"""ShowResourceUsageResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowResourceUsageResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ShowResourceUsageResponse.
+        r"""Gets the resources of this ShowResourceUsageResponse.
 
         资源用量列表
 
@@ -62,7 +62,7 @@ class ShowResourceUsageResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowResourceUsageResponse.
+        r"""Sets the resources of this ShowResourceUsageResponse.
 
         资源用量列表
 
@@ -73,7 +73,7 @@ class ShowResourceUsageResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowResourceUsageResponse.
+        r"""Gets the x_request_id of this ShowResourceUsageResponse.
 
         :return: The x_request_id of this ShowResourceUsageResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowResourceUsageResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowResourceUsageResponse.
+        r"""Sets the x_request_id of this ShowResourceUsageResponse.
 
         :param x_request_id: The x_request_id of this ShowResourceUsageResponse.
         :type x_request_id: str

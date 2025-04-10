@@ -28,7 +28,7 @@ class ShowCacheRulesResponse(SdkResponse):
     }
 
     def __init__(self, cache_config=None, x_request_id=None):
-        """ShowCacheRulesResponse
+        r"""ShowCacheRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowCacheRulesResponse(SdkResponse):
 
     @property
     def cache_config(self):
-        """Gets the cache_config of this ShowCacheRulesResponse.
+        r"""Gets the cache_config of this ShowCacheRulesResponse.
 
         :return: The cache_config of this ShowCacheRulesResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.CacheConfig`
@@ -60,7 +60,7 @@ class ShowCacheRulesResponse(SdkResponse):
 
     @cache_config.setter
     def cache_config(self, cache_config):
-        """Sets the cache_config of this ShowCacheRulesResponse.
+        r"""Sets the cache_config of this ShowCacheRulesResponse.
 
         :param cache_config: The cache_config of this ShowCacheRulesResponse.
         :type cache_config: :class:`huaweicloudsdkcdn.v1.CacheConfig`
@@ -69,7 +69,7 @@ class ShowCacheRulesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowCacheRulesResponse.
+        r"""Gets the x_request_id of this ShowCacheRulesResponse.
 
         :return: The x_request_id of this ShowCacheRulesResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowCacheRulesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowCacheRulesResponse.
+        r"""Sets the x_request_id of this ShowCacheRulesResponse.
 
         :param x_request_id: The x_request_id of this ShowCacheRulesResponse.
         :type x_request_id: str

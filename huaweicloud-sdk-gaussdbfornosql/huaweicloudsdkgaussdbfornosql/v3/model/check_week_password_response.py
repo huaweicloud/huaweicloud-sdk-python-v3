@@ -26,7 +26,7 @@ class CheckWeekPasswordResponse(SdkResponse):
     }
 
     def __init__(self, weak=None):
-        """CheckWeekPasswordResponse
+        r"""CheckWeekPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CheckWeekPasswordResponse(SdkResponse):
 
     @property
     def weak(self):
-        """Gets the weak of this CheckWeekPasswordResponse.
+        r"""Gets the weak of this CheckWeekPasswordResponse.
 
         是否是弱密码。 - true:是弱密码。 - false:不是弱密码。
 
@@ -55,7 +55,7 @@ class CheckWeekPasswordResponse(SdkResponse):
 
     @weak.setter
     def weak(self, weak):
-        """Sets the weak of this CheckWeekPasswordResponse.
+        r"""Sets the weak of this CheckWeekPasswordResponse.
 
         是否是弱密码。 - true:是弱密码。 - false:不是弱密码。
 

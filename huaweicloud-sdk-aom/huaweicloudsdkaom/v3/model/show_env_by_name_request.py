@@ -29,7 +29,7 @@ class ShowEnvByNameRequest:
     }
 
     def __init__(self, environment_name=None, region=None, component_id=None):
-        """ShowEnvByNameRequest
+        r"""ShowEnvByNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowEnvByNameRequest:
 
     @property
     def environment_name(self):
-        """Gets the environment_name of this ShowEnvByNameRequest.
+        r"""Gets the environment_name of this ShowEnvByNameRequest.
 
         环境名称
 
@@ -65,7 +65,7 @@ class ShowEnvByNameRequest:
 
     @environment_name.setter
     def environment_name(self, environment_name):
-        """Sets the environment_name of this ShowEnvByNameRequest.
+        r"""Sets the environment_name of this ShowEnvByNameRequest.
 
         环境名称
 
@@ -76,7 +76,7 @@ class ShowEnvByNameRequest:
 
     @property
     def region(self):
-        """Gets the region of this ShowEnvByNameRequest.
+        r"""Gets the region of this ShowEnvByNameRequest.
 
         环境region
 
@@ -87,7 +87,7 @@ class ShowEnvByNameRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowEnvByNameRequest.
+        r"""Sets the region of this ShowEnvByNameRequest.
 
         环境region
 
@@ -98,7 +98,7 @@ class ShowEnvByNameRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ShowEnvByNameRequest.
+        r"""Gets the component_id of this ShowEnvByNameRequest.
 
         组件id
 
@@ -109,7 +109,7 @@ class ShowEnvByNameRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ShowEnvByNameRequest.
+        r"""Sets the component_id of this ShowEnvByNameRequest.
 
         组件id
 

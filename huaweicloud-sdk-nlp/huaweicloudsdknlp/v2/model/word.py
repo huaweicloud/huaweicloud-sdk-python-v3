@@ -27,7 +27,7 @@ class Word:
     }
 
     def __init__(self, content=None, pos=None):
-        """Word
+        r"""Word
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Word:
 
     @property
     def content(self):
-        """Gets the content of this Word.
+        r"""Gets the content of this Word.
 
         词汇文本。
 
@@ -59,7 +59,7 @@ class Word:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this Word.
+        r"""Sets the content of this Word.
 
         词汇文本。
 
@@ -70,7 +70,7 @@ class Word:
 
     @property
     def pos(self):
-        """Gets the pos of this Word.
+        r"""Gets the pos of this Word.
 
         词汇对应的词性。
 
@@ -81,7 +81,7 @@ class Word:
 
     @pos.setter
     def pos(self, pos):
-        """Sets the pos of this Word.
+        r"""Sets the pos of this Word.
 
         词汇对应的词性。
 

@@ -27,7 +27,7 @@ class BandwidthTypeEnum:
     }
 
     def __init__(self):
-        """BandwidthTypeEnum
+        r"""BandwidthTypeEnum
 
         The model defined in huaweicloud sdk
 

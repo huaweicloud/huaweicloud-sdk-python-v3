@@ -32,7 +32,7 @@ class CreateOrUpdateScalingPolicyResponse(SdkResponse):
     }
 
     def __init__(self, enable=None, max_scaling_amount=None, single_expansion_count=None, scaling_policy_by_session=None):
-        """CreateOrUpdateScalingPolicyResponse
+        r"""CreateOrUpdateScalingPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateOrUpdateScalingPolicyResponse(SdkResponse):
 
     @property
     def enable(self):
-        """Gets the enable of this CreateOrUpdateScalingPolicyResponse.
+        r"""Gets the enable of this CreateOrUpdateScalingPolicyResponse.
 
         是否启用策略,默认启用： 'true': 启用 'false': 禁用
 
@@ -76,7 +76,7 @@ class CreateOrUpdateScalingPolicyResponse(SdkResponse):
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this CreateOrUpdateScalingPolicyResponse.
+        r"""Sets the enable of this CreateOrUpdateScalingPolicyResponse.
 
         是否启用策略,默认启用： 'true': 启用 'false': 禁用
 
@@ -87,7 +87,7 @@ class CreateOrUpdateScalingPolicyResponse(SdkResponse):
 
     @property
     def max_scaling_amount(self):
-        """Gets the max_scaling_amount of this CreateOrUpdateScalingPolicyResponse.
+        r"""Gets the max_scaling_amount of this CreateOrUpdateScalingPolicyResponse.
 
         最大扩容数量。
 
@@ -98,7 +98,7 @@ class CreateOrUpdateScalingPolicyResponse(SdkResponse):
 
     @max_scaling_amount.setter
     def max_scaling_amount(self, max_scaling_amount):
-        """Sets the max_scaling_amount of this CreateOrUpdateScalingPolicyResponse.
+        r"""Sets the max_scaling_amount of this CreateOrUpdateScalingPolicyResponse.
 
         最大扩容数量。
 
@@ -109,7 +109,7 @@ class CreateOrUpdateScalingPolicyResponse(SdkResponse):
 
     @property
     def single_expansion_count(self):
-        """Gets the single_expansion_count of this CreateOrUpdateScalingPolicyResponse.
+        r"""Gets the single_expansion_count of this CreateOrUpdateScalingPolicyResponse.
 
         单次扩容数量。
 
@@ -120,7 +120,7 @@ class CreateOrUpdateScalingPolicyResponse(SdkResponse):
 
     @single_expansion_count.setter
     def single_expansion_count(self, single_expansion_count):
-        """Sets the single_expansion_count of this CreateOrUpdateScalingPolicyResponse.
+        r"""Sets the single_expansion_count of this CreateOrUpdateScalingPolicyResponse.
 
         单次扩容数量。
 
@@ -131,7 +131,7 @@ class CreateOrUpdateScalingPolicyResponse(SdkResponse):
 
     @property
     def scaling_policy_by_session(self):
-        """Gets the scaling_policy_by_session of this CreateOrUpdateScalingPolicyResponse.
+        r"""Gets the scaling_policy_by_session of this CreateOrUpdateScalingPolicyResponse.
 
         :return: The scaling_policy_by_session of this CreateOrUpdateScalingPolicyResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyBySession`
@@ -140,7 +140,7 @@ class CreateOrUpdateScalingPolicyResponse(SdkResponse):
 
     @scaling_policy_by_session.setter
     def scaling_policy_by_session(self, scaling_policy_by_session):
-        """Sets the scaling_policy_by_session of this CreateOrUpdateScalingPolicyResponse.
+        r"""Sets the scaling_policy_by_session of this CreateOrUpdateScalingPolicyResponse.
 
         :param scaling_policy_by_session: The scaling_policy_by_session of this CreateOrUpdateScalingPolicyResponse.
         :type scaling_policy_by_session: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyBySession`

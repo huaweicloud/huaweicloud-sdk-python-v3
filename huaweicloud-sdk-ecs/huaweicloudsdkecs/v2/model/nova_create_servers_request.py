@@ -27,7 +27,7 @@ class NovaCreateServersRequest:
     }
 
     def __init__(self, open_stack_api_version=None, body=None):
-        """NovaCreateServersRequest
+        r"""NovaCreateServersRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NovaCreateServersRequest:
 
     @property
     def open_stack_api_version(self):
-        """Gets the open_stack_api_version of this NovaCreateServersRequest.
+        r"""Gets the open_stack_api_version of this NovaCreateServersRequest.
 
         微版本头
 
@@ -61,7 +61,7 @@ class NovaCreateServersRequest:
 
     @open_stack_api_version.setter
     def open_stack_api_version(self, open_stack_api_version):
-        """Sets the open_stack_api_version of this NovaCreateServersRequest.
+        r"""Sets the open_stack_api_version of this NovaCreateServersRequest.
 
         微版本头
 
@@ -72,7 +72,7 @@ class NovaCreateServersRequest:
 
     @property
     def body(self):
-        """Gets the body of this NovaCreateServersRequest.
+        r"""Gets the body of this NovaCreateServersRequest.
 
         :return: The body of this NovaCreateServersRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateServersRequestBody`
@@ -81,7 +81,7 @@ class NovaCreateServersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this NovaCreateServersRequest.
+        r"""Sets the body of this NovaCreateServersRequest.
 
         :param body: The body of this NovaCreateServersRequest.
         :type body: :class:`huaweicloudsdkecs.v2.NovaCreateServersRequestBody`

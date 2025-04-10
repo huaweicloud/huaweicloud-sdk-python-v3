@@ -29,7 +29,7 @@ class UpdateScheduleRequest:
     }
 
     def __init__(self, edge_node_id=None, schedule_id=None, body=None):
-        """UpdateScheduleRequest
+        r"""UpdateScheduleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateScheduleRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this UpdateScheduleRequest.
+        r"""Gets the edge_node_id of this UpdateScheduleRequest.
 
         边缘节点ID
 
@@ -66,7 +66,7 @@ class UpdateScheduleRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this UpdateScheduleRequest.
+        r"""Sets the edge_node_id of this UpdateScheduleRequest.
 
         边缘节点ID
 
@@ -77,7 +77,7 @@ class UpdateScheduleRequest:
 
     @property
     def schedule_id(self):
-        """Gets the schedule_id of this UpdateScheduleRequest.
+        r"""Gets the schedule_id of this UpdateScheduleRequest.
 
         调度计划id
 
@@ -88,7 +88,7 @@ class UpdateScheduleRequest:
 
     @schedule_id.setter
     def schedule_id(self, schedule_id):
-        """Sets the schedule_id of this UpdateScheduleRequest.
+        r"""Sets the schedule_id of this UpdateScheduleRequest.
 
         调度计划id
 
@@ -99,7 +99,7 @@ class UpdateScheduleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateScheduleRequest.
+        r"""Gets the body of this UpdateScheduleRequest.
 
         :return: The body of this UpdateScheduleRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateScheduleReqDTO`
@@ -108,7 +108,7 @@ class UpdateScheduleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateScheduleRequest.
+        r"""Sets the body of this UpdateScheduleRequest.
 
         :param body: The body of this UpdateScheduleRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.UpdateScheduleReqDTO`

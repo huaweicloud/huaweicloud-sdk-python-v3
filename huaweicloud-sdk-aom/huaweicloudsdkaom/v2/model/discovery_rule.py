@@ -29,7 +29,7 @@ class DiscoveryRule:
     }
 
     def __init__(self, check_content=None, check_mode=None, check_type=None):
-        """DiscoveryRule
+        r"""DiscoveryRule
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DiscoveryRule:
 
     @property
     def check_content(self):
-        """Gets the check_content of this DiscoveryRule.
+        r"""Gets the check_content of this DiscoveryRule.
 
         匹配值。
 
@@ -65,7 +65,7 @@ class DiscoveryRule:
 
     @check_content.setter
     def check_content(self, check_content):
-        """Sets the check_content of this DiscoveryRule.
+        r"""Sets the check_content of this DiscoveryRule.
 
         匹配值。
 
@@ -76,7 +76,7 @@ class DiscoveryRule:
 
     @property
     def check_mode(self):
-        """Gets the check_mode of this DiscoveryRule.
+        r"""Gets the check_mode of this DiscoveryRule.
 
         匹配条件。contain、equals
 
@@ -87,7 +87,7 @@ class DiscoveryRule:
 
     @check_mode.setter
     def check_mode(self, check_mode):
-        """Sets the check_mode of this DiscoveryRule.
+        r"""Sets the check_mode of this DiscoveryRule.
 
         匹配条件。contain、equals
 
@@ -98,7 +98,7 @@ class DiscoveryRule:
 
     @property
     def check_type(self):
-        """Gets the check_type of this DiscoveryRule.
+        r"""Gets the check_type of this DiscoveryRule.
 
         匹配类型。cmdLine、env、scope
 
@@ -109,7 +109,7 @@ class DiscoveryRule:
 
     @check_type.setter
     def check_type(self, check_type):
-        """Sets the check_type of this DiscoveryRule.
+        r"""Sets the check_type of this DiscoveryRule.
 
         匹配类型。cmdLine、env、scope
 

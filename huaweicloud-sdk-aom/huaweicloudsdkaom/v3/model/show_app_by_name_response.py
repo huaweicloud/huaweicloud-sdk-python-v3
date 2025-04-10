@@ -46,7 +46,7 @@ class ShowAppByNameResponse(SdkResponse):
     }
 
     def __init__(self, aom_id=None, app_id=None, create_time=None, creator=None, description=None, display_name=None, eps_id=None, modified_time=None, modifier=None, name=None, register_type=None):
-        """ShowAppByNameResponse
+        r"""ShowAppByNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @property
     def aom_id(self):
-        """Gets the aom_id of this ShowAppByNameResponse.
+        r"""Gets the aom_id of this ShowAppByNameResponse.
 
         aomId，如果为空则不显示
 
@@ -125,7 +125,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @aom_id.setter
     def aom_id(self, aom_id):
-        """Sets the aom_id of this ShowAppByNameResponse.
+        r"""Sets the aom_id of this ShowAppByNameResponse.
 
         aomId，如果为空则不显示
 
@@ -136,7 +136,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowAppByNameResponse.
+        r"""Gets the app_id of this ShowAppByNameResponse.
 
         应用ID
 
@@ -147,7 +147,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowAppByNameResponse.
+        r"""Sets the app_id of this ShowAppByNameResponse.
 
         应用ID
 
@@ -158,7 +158,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowAppByNameResponse.
+        r"""Gets the create_time of this ShowAppByNameResponse.
 
         创建时间
 
@@ -169,7 +169,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowAppByNameResponse.
+        r"""Sets the create_time of this ShowAppByNameResponse.
 
         创建时间
 
@@ -180,7 +180,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowAppByNameResponse.
+        r"""Gets the creator of this ShowAppByNameResponse.
 
         创建人
 
@@ -191,7 +191,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowAppByNameResponse.
+        r"""Sets the creator of this ShowAppByNameResponse.
 
         创建人
 
@@ -202,7 +202,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowAppByNameResponse.
+        r"""Gets the description of this ShowAppByNameResponse.
 
         描述
 
@@ -213,7 +213,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowAppByNameResponse.
+        r"""Sets the description of this ShowAppByNameResponse.
 
         描述
 
@@ -224,7 +224,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @property
     def display_name(self):
-        """Gets the display_name of this ShowAppByNameResponse.
+        r"""Gets the display_name of this ShowAppByNameResponse.
 
         应用名称
 
@@ -235,7 +235,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ShowAppByNameResponse.
+        r"""Sets the display_name of this ShowAppByNameResponse.
 
         应用名称
 
@@ -246,7 +246,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @property
     def eps_id(self):
-        """Gets the eps_id of this ShowAppByNameResponse.
+        r"""Gets the eps_id of this ShowAppByNameResponse.
 
         企业项目id
 
@@ -257,7 +257,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @eps_id.setter
     def eps_id(self, eps_id):
-        """Sets the eps_id of this ShowAppByNameResponse.
+        r"""Sets the eps_id of this ShowAppByNameResponse.
 
         企业项目id
 
@@ -268,7 +268,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this ShowAppByNameResponse.
+        r"""Gets the modified_time of this ShowAppByNameResponse.
 
         修改时间
 
@@ -279,7 +279,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this ShowAppByNameResponse.
+        r"""Sets the modified_time of this ShowAppByNameResponse.
 
         修改时间
 
@@ -290,7 +290,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @property
     def modifier(self):
-        """Gets the modifier of this ShowAppByNameResponse.
+        r"""Gets the modifier of this ShowAppByNameResponse.
 
         修改人
 
@@ -301,7 +301,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this ShowAppByNameResponse.
+        r"""Sets the modifier of this ShowAppByNameResponse.
 
         修改人
 
@@ -312,7 +312,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowAppByNameResponse.
+        r"""Gets the name of this ShowAppByNameResponse.
 
         唯一标识
 
@@ -323,7 +323,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAppByNameResponse.
+        r"""Sets the name of this ShowAppByNameResponse.
 
         唯一标识
 
@@ -334,7 +334,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @property
     def register_type(self):
-        """Gets the register_type of this ShowAppByNameResponse.
+        r"""Gets the register_type of this ShowAppByNameResponse.
 
         注册方式
 
@@ -345,7 +345,7 @@ class ShowAppByNameResponse(SdkResponse):
 
     @register_type.setter
     def register_type(self, register_type):
-        """Sets the register_type of this ShowAppByNameResponse.
+        r"""Sets the register_type of this ShowAppByNameResponse.
 
         注册方式
 

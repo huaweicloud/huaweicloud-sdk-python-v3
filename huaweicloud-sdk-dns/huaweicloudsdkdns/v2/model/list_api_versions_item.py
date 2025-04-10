@@ -29,7 +29,7 @@ class ListApiVersionsItem:
     }
 
     def __init__(self, status=None, id=None, links=None):
-        """ListApiVersionsItem
+        r"""ListApiVersionsItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListApiVersionsItem:
 
     @property
     def status(self):
-        """Gets the status of this ListApiVersionsItem.
+        r"""Gets the status of this ListApiVersionsItem.
 
         版本状态，包含：  CURRENT：表示该版本为主推版本。 SUPPORTED：表示为老版本，但是现在还在继续支持。 DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
@@ -68,7 +68,7 @@ class ListApiVersionsItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListApiVersionsItem.
+        r"""Sets the status of this ListApiVersionsItem.
 
         版本状态，包含：  CURRENT：表示该版本为主推版本。 SUPPORTED：表示为老版本，但是现在还在继续支持。 DEPRECATED：表示为废弃版本，存在后续删除的可能。
 
@@ -79,7 +79,7 @@ class ListApiVersionsItem:
 
     @property
     def id(self):
-        """Gets the id of this ListApiVersionsItem.
+        r"""Gets the id of this ListApiVersionsItem.
 
         版本号。
 
@@ -90,7 +90,7 @@ class ListApiVersionsItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListApiVersionsItem.
+        r"""Sets the id of this ListApiVersionsItem.
 
         版本号。
 
@@ -101,7 +101,7 @@ class ListApiVersionsItem:
 
     @property
     def links(self):
-        """Gets the links of this ListApiVersionsItem.
+        r"""Gets the links of this ListApiVersionsItem.
 
         指向当前版本的url。
 
@@ -112,7 +112,7 @@ class ListApiVersionsItem:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListApiVersionsItem.
+        r"""Sets the links of this ListApiVersionsItem.
 
         指向当前版本的url。
 

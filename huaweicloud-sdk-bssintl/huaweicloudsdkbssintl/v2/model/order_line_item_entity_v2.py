@@ -61,7 +61,7 @@ class OrderLineItemEntityV2:
     }
 
     def __init__(self, order_line_item_id=None, service_type_code=None, service_type_name=None, product_id=None, product_spec_desc=None, period_type=None, period_num=None, effective_time=None, expire_time=None, subscription_num=None, amount_after_discount=None, official_amount=None, amount_info=None, currency=None, category_code=None, product_owner_service=None, commercial_resource=None, base_product_info=None, order_id=None):
-        """OrderLineItemEntityV2
+        r"""OrderLineItemEntityV2
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class OrderLineItemEntityV2:
 
     @property
     def order_line_item_id(self):
-        """Gets the order_line_item_id of this OrderLineItemEntityV2.
+        r"""Gets the order_line_item_id of this OrderLineItemEntityV2.
 
         订单项ID。
 
@@ -180,7 +180,7 @@ class OrderLineItemEntityV2:
 
     @order_line_item_id.setter
     def order_line_item_id(self, order_line_item_id):
-        """Sets the order_line_item_id of this OrderLineItemEntityV2.
+        r"""Sets the order_line_item_id of this OrderLineItemEntityV2.
 
         订单项ID。
 
@@ -191,7 +191,7 @@ class OrderLineItemEntityV2:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this OrderLineItemEntityV2.
+        r"""Gets the service_type_code of this OrderLineItemEntityV2.
 
         云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。
 
@@ -202,7 +202,7 @@ class OrderLineItemEntityV2:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this OrderLineItemEntityV2.
+        r"""Sets the service_type_code of this OrderLineItemEntityV2.
 
         云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。
 
@@ -213,7 +213,7 @@ class OrderLineItemEntityV2:
 
     @property
     def service_type_name(self):
-        """Gets the service_type_name of this OrderLineItemEntityV2.
+        r"""Gets the service_type_name of this OrderLineItemEntityV2.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -224,7 +224,7 @@ class OrderLineItemEntityV2:
 
     @service_type_name.setter
     def service_type_name(self, service_type_name):
-        """Sets the service_type_name of this OrderLineItemEntityV2.
+        r"""Sets the service_type_name of this OrderLineItemEntityV2.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -235,7 +235,7 @@ class OrderLineItemEntityV2:
 
     @property
     def product_id(self):
-        """Gets the product_id of this OrderLineItemEntityV2.
+        r"""Gets the product_id of this OrderLineItemEntityV2.
 
         产品ID。
 
@@ -246,7 +246,7 @@ class OrderLineItemEntityV2:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this OrderLineItemEntityV2.
+        r"""Sets the product_id of this OrderLineItemEntityV2.
 
         产品ID。
 
@@ -257,7 +257,7 @@ class OrderLineItemEntityV2:
 
     @property
     def product_spec_desc(self):
-        """Gets the product_spec_desc of this OrderLineItemEntityV2.
+        r"""Gets the product_spec_desc of this OrderLineItemEntityV2.
 
         产品规格描述。
 
@@ -268,7 +268,7 @@ class OrderLineItemEntityV2:
 
     @product_spec_desc.setter
     def product_spec_desc(self, product_spec_desc):
-        """Sets the product_spec_desc of this OrderLineItemEntityV2.
+        r"""Sets the product_spec_desc of this OrderLineItemEntityV2.
 
         产品规格描述。
 
@@ -279,7 +279,7 @@ class OrderLineItemEntityV2:
 
     @property
     def period_type(self):
-        """Gets the period_type of this OrderLineItemEntityV2.
+        r"""Gets the period_type of this OrderLineItemEntityV2.
 
         周期类型。 0：天1：周2：月3：年4：小时5：一次性6：按需（预留）7：按用量报表使用（预留）
 
@@ -290,7 +290,7 @@ class OrderLineItemEntityV2:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this OrderLineItemEntityV2.
+        r"""Sets the period_type of this OrderLineItemEntityV2.
 
         周期类型。 0：天1：周2：月3：年4：小时5：一次性6：按需（预留）7：按用量报表使用（预留）
 
@@ -301,7 +301,7 @@ class OrderLineItemEntityV2:
 
     @property
     def period_num(self):
-        """Gets the period_num of this OrderLineItemEntityV2.
+        r"""Gets the period_num of this OrderLineItemEntityV2.
 
         周期数量。  说明： 当订单为退订资源的订单时，参数取值为null。
 
@@ -312,7 +312,7 @@ class OrderLineItemEntityV2:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this OrderLineItemEntityV2.
+        r"""Sets the period_num of this OrderLineItemEntityV2.
 
         周期数量。  说明： 当订单为退订资源的订单时，参数取值为null。
 
@@ -323,7 +323,7 @@ class OrderLineItemEntityV2:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this OrderLineItemEntityV2.
+        r"""Gets the effective_time of this OrderLineItemEntityV2.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -334,7 +334,7 @@ class OrderLineItemEntityV2:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this OrderLineItemEntityV2.
+        r"""Sets the effective_time of this OrderLineItemEntityV2.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -345,7 +345,7 @@ class OrderLineItemEntityV2:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this OrderLineItemEntityV2.
+        r"""Gets the expire_time of this OrderLineItemEntityV2.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -356,7 +356,7 @@ class OrderLineItemEntityV2:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this OrderLineItemEntityV2.
+        r"""Sets the expire_time of this OrderLineItemEntityV2.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -367,7 +367,7 @@ class OrderLineItemEntityV2:
 
     @property
     def subscription_num(self):
-        """Gets the subscription_num of this OrderLineItemEntityV2.
+        r"""Gets the subscription_num of this OrderLineItemEntityV2.
 
         订购数量。
 
@@ -378,7 +378,7 @@ class OrderLineItemEntityV2:
 
     @subscription_num.setter
     def subscription_num(self, subscription_num):
-        """Sets the subscription_num of this OrderLineItemEntityV2.
+        r"""Sets the subscription_num of this OrderLineItemEntityV2.
 
         订购数量。
 
@@ -389,7 +389,7 @@ class OrderLineItemEntityV2:
 
     @property
     def amount_after_discount(self):
-        """Gets the amount_after_discount of this OrderLineItemEntityV2.
+        r"""Gets the amount_after_discount of this OrderLineItemEntityV2.
 
         订单优惠后金额（实付价格，不含券不含卡）。
 
@@ -400,7 +400,7 @@ class OrderLineItemEntityV2:
 
     @amount_after_discount.setter
     def amount_after_discount(self, amount_after_discount):
-        """Sets the amount_after_discount of this OrderLineItemEntityV2.
+        r"""Sets the amount_after_discount of this OrderLineItemEntityV2.
 
         订单优惠后金额（实付价格，不含券不含卡）。
 
@@ -411,7 +411,7 @@ class OrderLineItemEntityV2:
 
     @property
     def official_amount(self):
-        """Gets the official_amount of this OrderLineItemEntityV2.
+        r"""Gets the official_amount of this OrderLineItemEntityV2.
 
         订单金额（官网价）。 退订订单中，该金额等于currencyAfterDiscount。
 
@@ -422,7 +422,7 @@ class OrderLineItemEntityV2:
 
     @official_amount.setter
     def official_amount(self, official_amount):
-        """Sets the official_amount of this OrderLineItemEntityV2.
+        r"""Sets the official_amount of this OrderLineItemEntityV2.
 
         订单金额（官网价）。 退订订单中，该金额等于currencyAfterDiscount。
 
@@ -433,7 +433,7 @@ class OrderLineItemEntityV2:
 
     @property
     def amount_info(self):
-        """Gets the amount_info of this OrderLineItemEntityV2.
+        r"""Gets the amount_info of this OrderLineItemEntityV2.
 
         :return: The amount_info of this OrderLineItemEntityV2.
         :rtype: :class:`huaweicloudsdkbssintl.v2.AmountInfomationV2`
@@ -442,7 +442,7 @@ class OrderLineItemEntityV2:
 
     @amount_info.setter
     def amount_info(self, amount_info):
-        """Sets the amount_info of this OrderLineItemEntityV2.
+        r"""Sets the amount_info of this OrderLineItemEntityV2.
 
         :param amount_info: The amount_info of this OrderLineItemEntityV2.
         :type amount_info: :class:`huaweicloudsdkbssintl.v2.AmountInfomationV2`
@@ -451,7 +451,7 @@ class OrderLineItemEntityV2:
 
     @property
     def currency(self):
-        """Gets the currency of this OrderLineItemEntityV2.
+        r"""Gets the currency of this OrderLineItemEntityV2.
 
         货币编码。
 
@@ -462,7 +462,7 @@ class OrderLineItemEntityV2:
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this OrderLineItemEntityV2.
+        r"""Sets the currency of this OrderLineItemEntityV2.
 
         货币编码。
 
@@ -473,7 +473,7 @@ class OrderLineItemEntityV2:
 
     @property
     def category_code(self):
-        """Gets the category_code of this OrderLineItemEntityV2.
+        r"""Gets the category_code of this OrderLineItemEntityV2.
 
         产品目录编码。
 
@@ -484,7 +484,7 @@ class OrderLineItemEntityV2:
 
     @category_code.setter
     def category_code(self, category_code):
-        """Sets the category_code of this OrderLineItemEntityV2.
+        r"""Sets the category_code of this OrderLineItemEntityV2.
 
         产品目录编码。
 
@@ -495,7 +495,7 @@ class OrderLineItemEntityV2:
 
     @property
     def product_owner_service(self):
-        """Gets the product_owner_service of this OrderLineItemEntityV2.
+        r"""Gets the product_owner_service of this OrderLineItemEntityV2.
 
         产品归属的云服务类型编码。 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -506,7 +506,7 @@ class OrderLineItemEntityV2:
 
     @product_owner_service.setter
     def product_owner_service(self, product_owner_service):
-        """Sets the product_owner_service of this OrderLineItemEntityV2.
+        r"""Sets the product_owner_service of this OrderLineItemEntityV2.
 
         产品归属的云服务类型编码。 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -517,7 +517,7 @@ class OrderLineItemEntityV2:
 
     @property
     def commercial_resource(self):
-        """Gets the commercial_resource of this OrderLineItemEntityV2.
+        r"""Gets the commercial_resource of this OrderLineItemEntityV2.
 
         商务归属的资源类型编码。 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -528,7 +528,7 @@ class OrderLineItemEntityV2:
 
     @commercial_resource.setter
     def commercial_resource(self, commercial_resource):
-        """Sets the commercial_resource of this OrderLineItemEntityV2.
+        r"""Sets the commercial_resource of this OrderLineItemEntityV2.
 
         商务归属的资源类型编码。 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -539,7 +539,7 @@ class OrderLineItemEntityV2:
 
     @property
     def base_product_info(self):
-        """Gets the base_product_info of this OrderLineItemEntityV2.
+        r"""Gets the base_product_info of this OrderLineItemEntityV2.
 
         :return: The base_product_info of this OrderLineItemEntityV2.
         :rtype: :class:`huaweicloudsdkbssintl.v2.ProductObject`
@@ -548,7 +548,7 @@ class OrderLineItemEntityV2:
 
     @base_product_info.setter
     def base_product_info(self, base_product_info):
-        """Sets the base_product_info of this OrderLineItemEntityV2.
+        r"""Sets the base_product_info of this OrderLineItemEntityV2.
 
         :param base_product_info: The base_product_info of this OrderLineItemEntityV2.
         :type base_product_info: :class:`huaweicloudsdkbssintl.v2.ProductObject`
@@ -557,7 +557,7 @@ class OrderLineItemEntityV2:
 
     @property
     def order_id(self):
-        """Gets the order_id of this OrderLineItemEntityV2.
+        r"""Gets the order_id of this OrderLineItemEntityV2.
 
         订单ID。
 
@@ -568,7 +568,7 @@ class OrderLineItemEntityV2:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this OrderLineItemEntityV2.
+        r"""Sets the order_id of this OrderLineItemEntityV2.
 
         订单ID。
 

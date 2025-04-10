@@ -30,7 +30,7 @@ class ShowVpnConnectionsLogConfigResponse(SdkResponse):
     }
 
     def __init__(self, log_config=None, request_id=None, header_response_token=None):
-        """ShowVpnConnectionsLogConfigResponse
+        r"""ShowVpnConnectionsLogConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowVpnConnectionsLogConfigResponse(SdkResponse):
 
     @property
     def log_config(self):
-        """Gets the log_config of this ShowVpnConnectionsLogConfigResponse.
+        r"""Gets the log_config of this ShowVpnConnectionsLogConfigResponse.
 
         :return: The log_config of this ShowVpnConnectionsLogConfigResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.ConnectionsLogConfig`
@@ -67,7 +67,7 @@ class ShowVpnConnectionsLogConfigResponse(SdkResponse):
 
     @log_config.setter
     def log_config(self, log_config):
-        """Sets the log_config of this ShowVpnConnectionsLogConfigResponse.
+        r"""Sets the log_config of this ShowVpnConnectionsLogConfigResponse.
 
         :param log_config: The log_config of this ShowVpnConnectionsLogConfigResponse.
         :type log_config: :class:`huaweicloudsdkvpn.v5.ConnectionsLogConfig`
@@ -76,7 +76,7 @@ class ShowVpnConnectionsLogConfigResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowVpnConnectionsLogConfigResponse.
+        r"""Gets the request_id of this ShowVpnConnectionsLogConfigResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class ShowVpnConnectionsLogConfigResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowVpnConnectionsLogConfigResponse.
+        r"""Sets the request_id of this ShowVpnConnectionsLogConfigResponse.
 
         请求ID
 
@@ -98,7 +98,7 @@ class ShowVpnConnectionsLogConfigResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this ShowVpnConnectionsLogConfigResponse.
+        r"""Gets the header_response_token of this ShowVpnConnectionsLogConfigResponse.
 
         :return: The header_response_token of this ShowVpnConnectionsLogConfigResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ShowVpnConnectionsLogConfigResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this ShowVpnConnectionsLogConfigResponse.
+        r"""Sets the header_response_token of this ShowVpnConnectionsLogConfigResponse.
 
         :param header_response_token: The header_response_token of this ShowVpnConnectionsLogConfigResponse.
         :type header_response_token: str

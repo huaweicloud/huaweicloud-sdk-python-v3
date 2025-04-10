@@ -27,7 +27,7 @@ class SubscriptionInfo:
     }
 
     def __init__(self, endpoints=None, protocol=None):
-        """SubscriptionInfo
+        r"""SubscriptionInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SubscriptionInfo:
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this SubscriptionInfo.
+        r"""Gets the endpoints of this SubscriptionInfo.
 
         短信或者邮件列表
 
@@ -61,7 +61,7 @@ class SubscriptionInfo:
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this SubscriptionInfo.
+        r"""Sets the endpoints of this SubscriptionInfo.
 
         短信或者邮件列表
 
@@ -72,7 +72,7 @@ class SubscriptionInfo:
 
     @property
     def protocol(self):
-        """Gets the protocol of this SubscriptionInfo.
+        r"""Gets the protocol of this SubscriptionInfo.
 
         收件方式，sms：短信,email：邮件
 
@@ -83,7 +83,7 @@ class SubscriptionInfo:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this SubscriptionInfo.
+        r"""Sets the protocol of this SubscriptionInfo.
 
         收件方式，sms：短信,email：邮件
 

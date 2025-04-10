@@ -24,7 +24,7 @@ class DeleteSignatureResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteSignatureResponse
+        r"""DeleteSignatureResponse
 
         The model defined in huaweicloud sdk
 

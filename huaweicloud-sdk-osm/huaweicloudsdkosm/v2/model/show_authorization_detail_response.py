@@ -60,7 +60,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, status=None, incident_id=None, simple_description=None, resource_type_id=None, resource_type_name=None, visit_type_id=None, visit_type_name=None, auth_effective_time=None, auth_expire_time=None, reject_reason=None, incident_auth_detail_list=None, xcustomer_name=None, auth_handler_name=None, agency_name=None, auth_describe=None, content_type_id=None, content_type_name=None):
-        """ShowAuthorizationDetailResponse
+        r"""ShowAuthorizationDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowAuthorizationDetailResponse.
+        r"""Gets the id of this ShowAuthorizationDetailResponse.
 
         授权id
 
@@ -174,7 +174,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAuthorizationDetailResponse.
+        r"""Sets the id of this ShowAuthorizationDetailResponse.
 
         授权id
 
@@ -185,7 +185,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowAuthorizationDetailResponse.
+        r"""Gets the status of this ShowAuthorizationDetailResponse.
 
         授权状态
 
@@ -196,7 +196,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAuthorizationDetailResponse.
+        r"""Sets the status of this ShowAuthorizationDetailResponse.
 
         授权状态
 
@@ -207,7 +207,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this ShowAuthorizationDetailResponse.
+        r"""Gets the incident_id of this ShowAuthorizationDetailResponse.
 
         工单id
 
@@ -218,7 +218,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this ShowAuthorizationDetailResponse.
+        r"""Sets the incident_id of this ShowAuthorizationDetailResponse.
 
         工单id
 
@@ -229,7 +229,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def simple_description(self):
-        """Gets the simple_description of this ShowAuthorizationDetailResponse.
+        r"""Gets the simple_description of this ShowAuthorizationDetailResponse.
 
         简要描述
 
@@ -240,7 +240,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @simple_description.setter
     def simple_description(self, simple_description):
-        """Sets the simple_description of this ShowAuthorizationDetailResponse.
+        r"""Sets the simple_description of this ShowAuthorizationDetailResponse.
 
         简要描述
 
@@ -251,7 +251,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def resource_type_id(self):
-        """Gets the resource_type_id of this ShowAuthorizationDetailResponse.
+        r"""Gets the resource_type_id of this ShowAuthorizationDetailResponse.
 
         授权资源类型id
 
@@ -262,7 +262,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @resource_type_id.setter
     def resource_type_id(self, resource_type_id):
-        """Sets the resource_type_id of this ShowAuthorizationDetailResponse.
+        r"""Sets the resource_type_id of this ShowAuthorizationDetailResponse.
 
         授权资源类型id
 
@@ -273,7 +273,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def resource_type_name(self):
-        """Gets the resource_type_name of this ShowAuthorizationDetailResponse.
+        r"""Gets the resource_type_name of this ShowAuthorizationDetailResponse.
 
         授权资源类型名称
 
@@ -284,7 +284,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @resource_type_name.setter
     def resource_type_name(self, resource_type_name):
-        """Sets the resource_type_name of this ShowAuthorizationDetailResponse.
+        r"""Sets the resource_type_name of this ShowAuthorizationDetailResponse.
 
         授权资源类型名称
 
@@ -295,7 +295,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def visit_type_id(self):
-        """Gets the visit_type_id of this ShowAuthorizationDetailResponse.
+        r"""Gets the visit_type_id of this ShowAuthorizationDetailResponse.
 
         授权访问类型id
 
@@ -306,7 +306,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @visit_type_id.setter
     def visit_type_id(self, visit_type_id):
-        """Sets the visit_type_id of this ShowAuthorizationDetailResponse.
+        r"""Sets the visit_type_id of this ShowAuthorizationDetailResponse.
 
         授权访问类型id
 
@@ -317,7 +317,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def visit_type_name(self):
-        """Gets the visit_type_name of this ShowAuthorizationDetailResponse.
+        r"""Gets the visit_type_name of this ShowAuthorizationDetailResponse.
 
         授权访问类型名称
 
@@ -328,7 +328,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @visit_type_name.setter
     def visit_type_name(self, visit_type_name):
-        """Sets the visit_type_name of this ShowAuthorizationDetailResponse.
+        r"""Sets the visit_type_name of this ShowAuthorizationDetailResponse.
 
         授权访问类型名称
 
@@ -339,7 +339,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def auth_effective_time(self):
-        """Gets the auth_effective_time of this ShowAuthorizationDetailResponse.
+        r"""Gets the auth_effective_time of this ShowAuthorizationDetailResponse.
 
         授权生效时间
 
@@ -350,7 +350,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @auth_effective_time.setter
     def auth_effective_time(self, auth_effective_time):
-        """Sets the auth_effective_time of this ShowAuthorizationDetailResponse.
+        r"""Sets the auth_effective_time of this ShowAuthorizationDetailResponse.
 
         授权生效时间
 
@@ -361,7 +361,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def auth_expire_time(self):
-        """Gets the auth_expire_time of this ShowAuthorizationDetailResponse.
+        r"""Gets the auth_expire_time of this ShowAuthorizationDetailResponse.
 
         授权到期时间
 
@@ -372,7 +372,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @auth_expire_time.setter
     def auth_expire_time(self, auth_expire_time):
-        """Sets the auth_expire_time of this ShowAuthorizationDetailResponse.
+        r"""Sets the auth_expire_time of this ShowAuthorizationDetailResponse.
 
         授权到期时间
 
@@ -383,7 +383,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def reject_reason(self):
-        """Gets the reject_reason of this ShowAuthorizationDetailResponse.
+        r"""Gets the reject_reason of this ShowAuthorizationDetailResponse.
 
         拒绝原因
 
@@ -394,7 +394,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @reject_reason.setter
     def reject_reason(self, reject_reason):
-        """Sets the reject_reason of this ShowAuthorizationDetailResponse.
+        r"""Sets the reject_reason of this ShowAuthorizationDetailResponse.
 
         拒绝原因
 
@@ -405,7 +405,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def incident_auth_detail_list(self):
-        """Gets the incident_auth_detail_list of this ShowAuthorizationDetailResponse.
+        r"""Gets the incident_auth_detail_list of this ShowAuthorizationDetailResponse.
 
         授权详情列表
 
@@ -416,7 +416,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @incident_auth_detail_list.setter
     def incident_auth_detail_list(self, incident_auth_detail_list):
-        """Sets the incident_auth_detail_list of this ShowAuthorizationDetailResponse.
+        r"""Sets the incident_auth_detail_list of this ShowAuthorizationDetailResponse.
 
         授权详情列表
 
@@ -427,7 +427,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def xcustomer_name(self):
-        """Gets the xcustomer_name of this ShowAuthorizationDetailResponse.
+        r"""Gets the xcustomer_name of this ShowAuthorizationDetailResponse.
 
         子账号名称
 
@@ -438,7 +438,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @xcustomer_name.setter
     def xcustomer_name(self, xcustomer_name):
-        """Sets the xcustomer_name of this ShowAuthorizationDetailResponse.
+        r"""Sets the xcustomer_name of this ShowAuthorizationDetailResponse.
 
         子账号名称
 
@@ -449,7 +449,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def auth_handler_name(self):
-        """Gets the auth_handler_name of this ShowAuthorizationDetailResponse.
+        r"""Gets the auth_handler_name of this ShowAuthorizationDetailResponse.
 
         授权处理人名称
 
@@ -460,7 +460,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @auth_handler_name.setter
     def auth_handler_name(self, auth_handler_name):
-        """Sets the auth_handler_name of this ShowAuthorizationDetailResponse.
+        r"""Sets the auth_handler_name of this ShowAuthorizationDetailResponse.
 
         授权处理人名称
 
@@ -471,7 +471,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this ShowAuthorizationDetailResponse.
+        r"""Gets the agency_name of this ShowAuthorizationDetailResponse.
 
         委托名称
 
@@ -482,7 +482,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this ShowAuthorizationDetailResponse.
+        r"""Sets the agency_name of this ShowAuthorizationDetailResponse.
 
         委托名称
 
@@ -493,7 +493,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def auth_describe(self):
-        """Gets the auth_describe of this ShowAuthorizationDetailResponse.
+        r"""Gets the auth_describe of this ShowAuthorizationDetailResponse.
 
         授权描述
 
@@ -504,7 +504,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @auth_describe.setter
     def auth_describe(self, auth_describe):
-        """Sets the auth_describe of this ShowAuthorizationDetailResponse.
+        r"""Sets the auth_describe of this ShowAuthorizationDetailResponse.
 
         授权描述
 
@@ -515,7 +515,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def content_type_id(self):
-        """Gets the content_type_id of this ShowAuthorizationDetailResponse.
+        r"""Gets the content_type_id of this ShowAuthorizationDetailResponse.
 
         授权内容Id 
 
@@ -526,7 +526,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @content_type_id.setter
     def content_type_id(self, content_type_id):
-        """Sets the content_type_id of this ShowAuthorizationDetailResponse.
+        r"""Sets the content_type_id of this ShowAuthorizationDetailResponse.
 
         授权内容Id 
 
@@ -537,7 +537,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @property
     def content_type_name(self):
-        """Gets the content_type_name of this ShowAuthorizationDetailResponse.
+        r"""Gets the content_type_name of this ShowAuthorizationDetailResponse.
 
         授权内容名称
 
@@ -548,7 +548,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
 
     @content_type_name.setter
     def content_type_name(self, content_type_name):
-        """Sets the content_type_name of this ShowAuthorizationDetailResponse.
+        r"""Sets the content_type_name of this ShowAuthorizationDetailResponse.
 
         授权内容名称
 

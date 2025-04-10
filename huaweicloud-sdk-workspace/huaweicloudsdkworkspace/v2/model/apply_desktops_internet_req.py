@@ -39,7 +39,7 @@ class ApplyDesktopsInternetReq:
     }
 
     def __init__(self, desktop_ids=None, inst_info_ids=None, eip_type=None, eip_charge_mode=None, bandwidth_size=None, order_id=None, enterprise_project_id=None, count=None):
-        """ApplyDesktopsInternetReq
+        r"""ApplyDesktopsInternetReq
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class ApplyDesktopsInternetReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this ApplyDesktopsInternetReq.
+        r"""Gets the desktop_ids of this ApplyDesktopsInternetReq.
 
         需要开通上网功能的桌面id列表。
 
@@ -100,7 +100,7 @@ class ApplyDesktopsInternetReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this ApplyDesktopsInternetReq.
+        r"""Sets the desktop_ids of this ApplyDesktopsInternetReq.
 
         需要开通上网功能的桌面id列表。
 
@@ -111,7 +111,7 @@ class ApplyDesktopsInternetReq:
 
     @property
     def inst_info_ids(self):
-        """Gets the inst_info_ids of this ApplyDesktopsInternetReq.
+        r"""Gets the inst_info_ids of this ApplyDesktopsInternetReq.
 
         需要开通上网功能的桌面instInfoId列表。供包周期回调使用
 
@@ -122,7 +122,7 @@ class ApplyDesktopsInternetReq:
 
     @inst_info_ids.setter
     def inst_info_ids(self, inst_info_ids):
-        """Sets the inst_info_ids of this ApplyDesktopsInternetReq.
+        r"""Sets the inst_info_ids of this ApplyDesktopsInternetReq.
 
         需要开通上网功能的桌面instInfoId列表。供包周期回调使用
 
@@ -133,7 +133,7 @@ class ApplyDesktopsInternetReq:
 
     @property
     def eip_type(self):
-        """Gets the eip_type of this ApplyDesktopsInternetReq.
+        r"""Gets the eip_type of this ApplyDesktopsInternetReq.
 
         支持的类型请参考EIP服务支持的类型。可通过调用如下链接的接口查询，https://support.huaweicloud.com/api-eip/ShowPublicIpType.html。
 
@@ -144,7 +144,7 @@ class ApplyDesktopsInternetReq:
 
     @eip_type.setter
     def eip_type(self, eip_type):
-        """Sets the eip_type of this ApplyDesktopsInternetReq.
+        r"""Sets the eip_type of this ApplyDesktopsInternetReq.
 
         支持的类型请参考EIP服务支持的类型。可通过调用如下链接的接口查询，https://support.huaweicloud.com/api-eip/ShowPublicIpType.html。
 
@@ -155,7 +155,7 @@ class ApplyDesktopsInternetReq:
 
     @property
     def eip_charge_mode(self):
-        """Gets the eip_charge_mode of this ApplyDesktopsInternetReq.
+        r"""Gets the eip_charge_mode of this ApplyDesktopsInternetReq.
 
         eip带宽计费模式 - TRAFFIC：按流量计费。 - BANDWIDTH：按带宽计费。
 
@@ -166,7 +166,7 @@ class ApplyDesktopsInternetReq:
 
     @eip_charge_mode.setter
     def eip_charge_mode(self, eip_charge_mode):
-        """Sets the eip_charge_mode of this ApplyDesktopsInternetReq.
+        r"""Sets the eip_charge_mode of this ApplyDesktopsInternetReq.
 
         eip带宽计费模式 - TRAFFIC：按流量计费。 - BANDWIDTH：按带宽计费。
 
@@ -177,7 +177,7 @@ class ApplyDesktopsInternetReq:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this ApplyDesktopsInternetReq.
+        r"""Gets the bandwidth_size of this ApplyDesktopsInternetReq.
 
         带宽大小，单位Mbit/s。默认1Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。
 
@@ -188,7 +188,7 @@ class ApplyDesktopsInternetReq:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this ApplyDesktopsInternetReq.
+        r"""Sets the bandwidth_size of this ApplyDesktopsInternetReq.
 
         带宽大小，单位Mbit/s。默认1Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。
 
@@ -199,7 +199,7 @@ class ApplyDesktopsInternetReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ApplyDesktopsInternetReq.
+        r"""Gets the order_id of this ApplyDesktopsInternetReq.
 
         包周期订购ID，CBC订购回调时使用。
 
@@ -210,7 +210,7 @@ class ApplyDesktopsInternetReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ApplyDesktopsInternetReq.
+        r"""Sets the order_id of this ApplyDesktopsInternetReq.
 
         包周期订购ID，CBC订购回调时使用。
 
@@ -221,7 +221,7 @@ class ApplyDesktopsInternetReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ApplyDesktopsInternetReq.
+        r"""Gets the enterprise_project_id of this ApplyDesktopsInternetReq.
 
         企业项目ID，默认\"0\"
 
@@ -232,7 +232,7 @@ class ApplyDesktopsInternetReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ApplyDesktopsInternetReq.
+        r"""Sets the enterprise_project_id of this ApplyDesktopsInternetReq.
 
         企业项目ID，默认\"0\"
 
@@ -243,7 +243,7 @@ class ApplyDesktopsInternetReq:
 
     @property
     def count(self):
-        """Gets the count of this ApplyDesktopsInternetReq.
+        r"""Gets the count of this ApplyDesktopsInternetReq.
 
         需要购买EIP的数量，当desktop_ids为空时需要填，兼容单独购买EIP场景。
 
@@ -254,7 +254,7 @@ class ApplyDesktopsInternetReq:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ApplyDesktopsInternetReq.
+        r"""Sets the count of this ApplyDesktopsInternetReq.
 
         需要购买EIP的数量，当desktop_ids为空时需要填，兼容单独购买EIP场景。
 

@@ -71,7 +71,7 @@ class EnumDataInfo:
     }
 
     def __init__(self, current_cloud_service_id=None, description=None, level_id=None, mtm_region=None, mtm_type=None, source_id=None, title=None, is_change_event=None, is_service_interrupt=None, is_deleted=None, match_type=None, ticket_id=None, name_zh=None, name_en=None, user_name=None, full_name_zh=None, full_name_en=None, name_zh_path=None, name_en_path=None, status=None, biz_id=None, prop_id=None, model_id=None, enum_type_id=None):
-        """EnumDataInfo
+        r"""EnumDataInfo
 
         The model defined in huaweicloud sdk
 
@@ -204,7 +204,7 @@ class EnumDataInfo:
 
     @property
     def current_cloud_service_id(self):
-        """Gets the current_cloud_service_id of this EnumDataInfo.
+        r"""Gets the current_cloud_service_id of this EnumDataInfo.
 
         扩展字段
 
@@ -215,7 +215,7 @@ class EnumDataInfo:
 
     @current_cloud_service_id.setter
     def current_cloud_service_id(self, current_cloud_service_id):
-        """Sets the current_cloud_service_id of this EnumDataInfo.
+        r"""Sets the current_cloud_service_id of this EnumDataInfo.
 
         扩展字段
 
@@ -226,7 +226,7 @@ class EnumDataInfo:
 
     @property
     def description(self):
-        """Gets the description of this EnumDataInfo.
+        r"""Gets the description of this EnumDataInfo.
 
         扩展字段
 
@@ -237,7 +237,7 @@ class EnumDataInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EnumDataInfo.
+        r"""Sets the description of this EnumDataInfo.
 
         扩展字段
 
@@ -248,7 +248,7 @@ class EnumDataInfo:
 
     @property
     def level_id(self):
-        """Gets the level_id of this EnumDataInfo.
+        r"""Gets the level_id of this EnumDataInfo.
 
         扩展字段
 
@@ -259,7 +259,7 @@ class EnumDataInfo:
 
     @level_id.setter
     def level_id(self, level_id):
-        """Sets the level_id of this EnumDataInfo.
+        r"""Sets the level_id of this EnumDataInfo.
 
         扩展字段
 
@@ -270,7 +270,7 @@ class EnumDataInfo:
 
     @property
     def mtm_region(self):
-        """Gets the mtm_region of this EnumDataInfo.
+        r"""Gets the mtm_region of this EnumDataInfo.
 
         扩展字段
 
@@ -281,7 +281,7 @@ class EnumDataInfo:
 
     @mtm_region.setter
     def mtm_region(self, mtm_region):
-        """Sets the mtm_region of this EnumDataInfo.
+        r"""Sets the mtm_region of this EnumDataInfo.
 
         扩展字段
 
@@ -292,7 +292,7 @@ class EnumDataInfo:
 
     @property
     def mtm_type(self):
-        """Gets the mtm_type of this EnumDataInfo.
+        r"""Gets the mtm_type of this EnumDataInfo.
 
         扩展字段
 
@@ -303,7 +303,7 @@ class EnumDataInfo:
 
     @mtm_type.setter
     def mtm_type(self, mtm_type):
-        """Sets the mtm_type of this EnumDataInfo.
+        r"""Sets the mtm_type of this EnumDataInfo.
 
         扩展字段
 
@@ -314,7 +314,7 @@ class EnumDataInfo:
 
     @property
     def source_id(self):
-        """Gets the source_id of this EnumDataInfo.
+        r"""Gets the source_id of this EnumDataInfo.
 
         扩展字段
 
@@ -325,7 +325,7 @@ class EnumDataInfo:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this EnumDataInfo.
+        r"""Sets the source_id of this EnumDataInfo.
 
         扩展字段
 
@@ -336,7 +336,7 @@ class EnumDataInfo:
 
     @property
     def title(self):
-        """Gets the title of this EnumDataInfo.
+        r"""Gets the title of this EnumDataInfo.
 
         扩展字段
 
@@ -347,7 +347,7 @@ class EnumDataInfo:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this EnumDataInfo.
+        r"""Sets the title of this EnumDataInfo.
 
         扩展字段
 
@@ -358,7 +358,7 @@ class EnumDataInfo:
 
     @property
     def is_change_event(self):
-        """Gets the is_change_event of this EnumDataInfo.
+        r"""Gets the is_change_event of this EnumDataInfo.
 
         是否变更事件
 
@@ -369,7 +369,7 @@ class EnumDataInfo:
 
     @is_change_event.setter
     def is_change_event(self, is_change_event):
-        """Sets the is_change_event of this EnumDataInfo.
+        r"""Sets the is_change_event of this EnumDataInfo.
 
         是否变更事件
 
@@ -380,7 +380,7 @@ class EnumDataInfo:
 
     @property
     def is_service_interrupt(self):
-        """Gets the is_service_interrupt of this EnumDataInfo.
+        r"""Gets the is_service_interrupt of this EnumDataInfo.
 
         是否变更事件
 
@@ -391,7 +391,7 @@ class EnumDataInfo:
 
     @is_service_interrupt.setter
     def is_service_interrupt(self, is_service_interrupt):
-        """Sets the is_service_interrupt of this EnumDataInfo.
+        r"""Sets the is_service_interrupt of this EnumDataInfo.
 
         是否变更事件
 
@@ -402,7 +402,7 @@ class EnumDataInfo:
 
     @property
     def is_deleted(self):
-        """Gets the is_deleted of this EnumDataInfo.
+        r"""Gets the is_deleted of this EnumDataInfo.
 
         是否删除
 
@@ -413,7 +413,7 @@ class EnumDataInfo:
 
     @is_deleted.setter
     def is_deleted(self, is_deleted):
-        """Sets the is_deleted of this EnumDataInfo.
+        r"""Sets the is_deleted of this EnumDataInfo.
 
         是否删除
 
@@ -424,7 +424,7 @@ class EnumDataInfo:
 
     @property
     def match_type(self):
-        """Gets the match_type of this EnumDataInfo.
+        r"""Gets the match_type of this EnumDataInfo.
 
         匹配类型
 
@@ -435,7 +435,7 @@ class EnumDataInfo:
 
     @match_type.setter
     def match_type(self, match_type):
-        """Sets the match_type of this EnumDataInfo.
+        r"""Sets the match_type of this EnumDataInfo.
 
         匹配类型
 
@@ -446,7 +446,7 @@ class EnumDataInfo:
 
     @property
     def ticket_id(self):
-        """Gets the ticket_id of this EnumDataInfo.
+        r"""Gets the ticket_id of this EnumDataInfo.
 
         所属单号
 
@@ -457,7 +457,7 @@ class EnumDataInfo:
 
     @ticket_id.setter
     def ticket_id(self, ticket_id):
-        """Sets the ticket_id of this EnumDataInfo.
+        r"""Sets the ticket_id of this EnumDataInfo.
 
         所属单号
 
@@ -468,7 +468,7 @@ class EnumDataInfo:
 
     @property
     def name_zh(self):
-        """Gets the name_zh of this EnumDataInfo.
+        r"""Gets the name_zh of this EnumDataInfo.
 
         中文名
 
@@ -479,7 +479,7 @@ class EnumDataInfo:
 
     @name_zh.setter
     def name_zh(self, name_zh):
-        """Sets the name_zh of this EnumDataInfo.
+        r"""Sets the name_zh of this EnumDataInfo.
 
         中文名
 
@@ -490,7 +490,7 @@ class EnumDataInfo:
 
     @property
     def name_en(self):
-        """Gets the name_en of this EnumDataInfo.
+        r"""Gets the name_en of this EnumDataInfo.
 
         英文名
 
@@ -501,7 +501,7 @@ class EnumDataInfo:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this EnumDataInfo.
+        r"""Sets the name_en of this EnumDataInfo.
 
         英文名
 
@@ -512,7 +512,7 @@ class EnumDataInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this EnumDataInfo.
+        r"""Gets the user_name of this EnumDataInfo.
 
         工号
 
@@ -523,7 +523,7 @@ class EnumDataInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this EnumDataInfo.
+        r"""Sets the user_name of this EnumDataInfo.
 
         工号
 
@@ -534,7 +534,7 @@ class EnumDataInfo:
 
     @property
     def full_name_zh(self):
-        """Gets the full_name_zh of this EnumDataInfo.
+        r"""Gets the full_name_zh of this EnumDataInfo.
 
         中文名
 
@@ -545,7 +545,7 @@ class EnumDataInfo:
 
     @full_name_zh.setter
     def full_name_zh(self, full_name_zh):
-        """Sets the full_name_zh of this EnumDataInfo.
+        r"""Sets the full_name_zh of this EnumDataInfo.
 
         中文名
 
@@ -556,7 +556,7 @@ class EnumDataInfo:
 
     @property
     def full_name_en(self):
-        """Gets the full_name_en of this EnumDataInfo.
+        r"""Gets the full_name_en of this EnumDataInfo.
 
         英文名
 
@@ -567,7 +567,7 @@ class EnumDataInfo:
 
     @full_name_en.setter
     def full_name_en(self, full_name_en):
-        """Sets the full_name_en of this EnumDataInfo.
+        r"""Sets the full_name_en of this EnumDataInfo.
 
         英文名
 
@@ -578,7 +578,7 @@ class EnumDataInfo:
 
     @property
     def name_zh_path(self):
-        """Gets the name_zh_path of this EnumDataInfo.
+        r"""Gets the name_zh_path of this EnumDataInfo.
 
         中文名路径
 
@@ -589,7 +589,7 @@ class EnumDataInfo:
 
     @name_zh_path.setter
     def name_zh_path(self, name_zh_path):
-        """Sets the name_zh_path of this EnumDataInfo.
+        r"""Sets the name_zh_path of this EnumDataInfo.
 
         中文名路径
 
@@ -600,7 +600,7 @@ class EnumDataInfo:
 
     @property
     def name_en_path(self):
-        """Gets the name_en_path of this EnumDataInfo.
+        r"""Gets the name_en_path of this EnumDataInfo.
 
         中文名路径
 
@@ -611,7 +611,7 @@ class EnumDataInfo:
 
     @name_en_path.setter
     def name_en_path(self, name_en_path):
-        """Sets the name_en_path of this EnumDataInfo.
+        r"""Sets the name_en_path of this EnumDataInfo.
 
         中文名路径
 
@@ -622,7 +622,7 @@ class EnumDataInfo:
 
     @property
     def status(self):
-        """Gets the status of this EnumDataInfo.
+        r"""Gets the status of this EnumDataInfo.
 
         status
 
@@ -633,7 +633,7 @@ class EnumDataInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EnumDataInfo.
+        r"""Sets the status of this EnumDataInfo.
 
         status
 
@@ -644,7 +644,7 @@ class EnumDataInfo:
 
     @property
     def biz_id(self):
-        """Gets the biz_id of this EnumDataInfo.
+        r"""Gets the biz_id of this EnumDataInfo.
 
         唯一id
 
@@ -655,7 +655,7 @@ class EnumDataInfo:
 
     @biz_id.setter
     def biz_id(self, biz_id):
-        """Sets the biz_id of this EnumDataInfo.
+        r"""Sets the biz_id of this EnumDataInfo.
 
         唯一id
 
@@ -666,7 +666,7 @@ class EnumDataInfo:
 
     @property
     def prop_id(self):
-        """Gets the prop_id of this EnumDataInfo.
+        r"""Gets the prop_id of this EnumDataInfo.
 
         字段id
 
@@ -677,7 +677,7 @@ class EnumDataInfo:
 
     @prop_id.setter
     def prop_id(self, prop_id):
-        """Sets the prop_id of this EnumDataInfo.
+        r"""Sets the prop_id of this EnumDataInfo.
 
         字段id
 
@@ -688,7 +688,7 @@ class EnumDataInfo:
 
     @property
     def model_id(self):
-        """Gets the model_id of this EnumDataInfo.
+        r"""Gets the model_id of this EnumDataInfo.
 
         模型id
 
@@ -699,7 +699,7 @@ class EnumDataInfo:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this EnumDataInfo.
+        r"""Sets the model_id of this EnumDataInfo.
 
         模型id
 
@@ -710,7 +710,7 @@ class EnumDataInfo:
 
     @property
     def enum_type_id(self):
-        """Gets the enum_type_id of this EnumDataInfo.
+        r"""Gets the enum_type_id of this EnumDataInfo.
 
         枚举类型
 
@@ -721,7 +721,7 @@ class EnumDataInfo:
 
     @enum_type_id.setter
     def enum_type_id(self, enum_type_id):
-        """Sets the enum_type_id of this EnumDataInfo.
+        r"""Sets the enum_type_id of this EnumDataInfo.
 
         枚举类型
 

@@ -27,7 +27,7 @@ class AudioProcess:
     }
 
     def __init__(self, volume=None, volume_expr=None):
-        """AudioProcess
+        r"""AudioProcess
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AudioProcess:
 
     @property
     def volume(self):
-        """Gets the volume of this AudioProcess.
+        r"""Gets the volume of this AudioProcess.
 
         音量调整方式： - auto：表示自动调整音量。 - dynamic：表示人为调整，需设定音量调整幅值。 
 
@@ -61,7 +61,7 @@ class AudioProcess:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this AudioProcess.
+        r"""Sets the volume of this AudioProcess.
 
         音量调整方式： - auto：表示自动调整音量。 - dynamic：表示人为调整，需设定音量调整幅值。 
 
@@ -72,7 +72,7 @@ class AudioProcess:
 
     @property
     def volume_expr(self):
-        """Gets the volume_expr of this AudioProcess.
+        r"""Gets the volume_expr of this AudioProcess.
 
         音量调整幅值，需指定volume为dynamic。  取值范围：[-15,15]  单位：dB 
 
@@ -83,7 +83,7 @@ class AudioProcess:
 
     @volume_expr.setter
     def volume_expr(self, volume_expr):
-        """Sets the volume_expr of this AudioProcess.
+        r"""Sets the volume_expr of this AudioProcess.
 
         音量调整幅值，需指定volume为dynamic。  取值范围：[-15,15]  单位：dB 
 

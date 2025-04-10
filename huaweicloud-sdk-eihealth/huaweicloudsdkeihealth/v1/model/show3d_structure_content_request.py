@@ -33,7 +33,7 @@ class Show3dStructureContentRequest:
     }
 
     def __init__(self, eihealth_project_id=None, study_id=None, job_id=None, ligand=None, receptor=None):
-        """Show3dStructureContentRequest
+        r"""Show3dStructureContentRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class Show3dStructureContentRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this Show3dStructureContentRequest.
+        r"""Gets the eihealth_project_id of this Show3dStructureContentRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -77,7 +77,7 @@ class Show3dStructureContentRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this Show3dStructureContentRequest.
+        r"""Sets the eihealth_project_id of this Show3dStructureContentRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -88,7 +88,7 @@ class Show3dStructureContentRequest:
 
     @property
     def study_id(self):
-        """Gets the study_id of this Show3dStructureContentRequest.
+        r"""Gets the study_id of this Show3dStructureContentRequest.
 
         study_id
 
@@ -99,7 +99,7 @@ class Show3dStructureContentRequest:
 
     @study_id.setter
     def study_id(self, study_id):
-        """Sets the study_id of this Show3dStructureContentRequest.
+        r"""Sets the study_id of this Show3dStructureContentRequest.
 
         study_id
 
@@ -110,7 +110,7 @@ class Show3dStructureContentRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this Show3dStructureContentRequest.
+        r"""Gets the job_id of this Show3dStructureContentRequest.
 
         study作业id
 
@@ -121,7 +121,7 @@ class Show3dStructureContentRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this Show3dStructureContentRequest.
+        r"""Sets the job_id of this Show3dStructureContentRequest.
 
         study作业id
 
@@ -132,7 +132,7 @@ class Show3dStructureContentRequest:
 
     @property
     def ligand(self):
-        """Gets the ligand of this Show3dStructureContentRequest.
+        r"""Gets the ligand of this Show3dStructureContentRequest.
 
         配体名称
 
@@ -143,7 +143,7 @@ class Show3dStructureContentRequest:
 
     @ligand.setter
     def ligand(self, ligand):
-        """Sets the ligand of this Show3dStructureContentRequest.
+        r"""Sets the ligand of this Show3dStructureContentRequest.
 
         配体名称
 
@@ -154,7 +154,7 @@ class Show3dStructureContentRequest:
 
     @property
     def receptor(self):
-        """Gets the receptor of this Show3dStructureContentRequest.
+        r"""Gets the receptor of this Show3dStructureContentRequest.
 
         受体名称
 
@@ -165,7 +165,7 @@ class Show3dStructureContentRequest:
 
     @receptor.setter
     def receptor(self, receptor):
-        """Sets the receptor of this Show3dStructureContentRequest.
+        r"""Sets the receptor of this Show3dStructureContentRequest.
 
         受体名称
 

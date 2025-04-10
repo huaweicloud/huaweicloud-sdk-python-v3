@@ -25,7 +25,7 @@ class AppReq:
     }
 
     def __init__(self, app_name=None):
-        """AppReq
+        r"""AppReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AppReq:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AppReq.
+        r"""Gets the app_name of this AppReq.
 
         app名称，仅支持填入utf8格式内容
 
@@ -53,7 +53,7 @@ class AppReq:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AppReq.
+        r"""Sets the app_name of this AppReq.
 
         app名称，仅支持填入utf8格式内容
 

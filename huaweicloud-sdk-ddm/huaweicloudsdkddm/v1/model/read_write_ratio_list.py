@@ -35,7 +35,7 @@ class ReadWriteRatioList:
     }
 
     def __init__(self, schema=None, table=None, read_count=None, write_count=None, relation_tables=None, last_updated=None):
-        """ReadWriteRatioList
+        r"""ReadWriteRatioList
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ReadWriteRatioList:
 
     @property
     def schema(self):
-        """Gets the schema of this ReadWriteRatioList.
+        r"""Gets the schema of this ReadWriteRatioList.
 
         逻辑库名称。
 
@@ -89,7 +89,7 @@ class ReadWriteRatioList:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this ReadWriteRatioList.
+        r"""Sets the schema of this ReadWriteRatioList.
 
         逻辑库名称。
 
@@ -100,7 +100,7 @@ class ReadWriteRatioList:
 
     @property
     def table(self):
-        """Gets the table of this ReadWriteRatioList.
+        r"""Gets the table of this ReadWriteRatioList.
 
         逻辑表名称。
 
@@ -111,7 +111,7 @@ class ReadWriteRatioList:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this ReadWriteRatioList.
+        r"""Sets the table of this ReadWriteRatioList.
 
         逻辑表名称。
 
@@ -122,7 +122,7 @@ class ReadWriteRatioList:
 
     @property
     def read_count(self):
-        """Gets the read_count of this ReadWriteRatioList.
+        r"""Gets the read_count of this ReadWriteRatioList.
 
         读次数。
 
@@ -133,7 +133,7 @@ class ReadWriteRatioList:
 
     @read_count.setter
     def read_count(self, read_count):
-        """Sets the read_count of this ReadWriteRatioList.
+        r"""Sets the read_count of this ReadWriteRatioList.
 
         读次数。
 
@@ -144,7 +144,7 @@ class ReadWriteRatioList:
 
     @property
     def write_count(self):
-        """Gets the write_count of this ReadWriteRatioList.
+        r"""Gets the write_count of this ReadWriteRatioList.
 
         写次数。
 
@@ -155,7 +155,7 @@ class ReadWriteRatioList:
 
     @write_count.setter
     def write_count(self, write_count):
-        """Sets the write_count of this ReadWriteRatioList.
+        r"""Sets the write_count of this ReadWriteRatioList.
 
         写次数。
 
@@ -166,7 +166,7 @@ class ReadWriteRatioList:
 
     @property
     def relation_tables(self):
-        """Gets the relation_tables of this ReadWriteRatioList.
+        r"""Gets the relation_tables of this ReadWriteRatioList.
 
         关联表。
 
@@ -177,7 +177,7 @@ class ReadWriteRatioList:
 
     @relation_tables.setter
     def relation_tables(self, relation_tables):
-        """Sets the relation_tables of this ReadWriteRatioList.
+        r"""Sets the relation_tables of this ReadWriteRatioList.
 
         关联表。
 
@@ -188,7 +188,7 @@ class ReadWriteRatioList:
 
     @property
     def last_updated(self):
-        """Gets the last_updated of this ReadWriteRatioList.
+        r"""Gets the last_updated of this ReadWriteRatioList.
 
         最后执行时间。
 
@@ -199,7 +199,7 @@ class ReadWriteRatioList:
 
     @last_updated.setter
     def last_updated(self, last_updated):
-        """Sets the last_updated of this ReadWriteRatioList.
+        r"""Sets the last_updated of this ReadWriteRatioList.
 
         最后执行时间。
 

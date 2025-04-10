@@ -29,7 +29,7 @@ class EnhancedConnectionPrivilege:
     }
 
     def __init__(self, object=None, applicant_project_id=None, privileges=None):
-        """EnhancedConnectionPrivilege
+        r"""EnhancedConnectionPrivilege
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EnhancedConnectionPrivilege:
 
     @property
     def object(self):
-        """Gets the object of this EnhancedConnectionPrivilege.
+        r"""Gets the object of this EnhancedConnectionPrivilege.
 
         授权时object的信息。
 
@@ -68,7 +68,7 @@ class EnhancedConnectionPrivilege:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this EnhancedConnectionPrivilege.
+        r"""Sets the object of this EnhancedConnectionPrivilege.
 
         授权时object的信息。
 
@@ -79,7 +79,7 @@ class EnhancedConnectionPrivilege:
 
     @property
     def applicant_project_id(self):
-        """Gets the applicant_project_id of this EnhancedConnectionPrivilege.
+        r"""Gets the applicant_project_id of this EnhancedConnectionPrivilege.
 
         授权的项目ID。
 
@@ -90,7 +90,7 @@ class EnhancedConnectionPrivilege:
 
     @applicant_project_id.setter
     def applicant_project_id(self, applicant_project_id):
-        """Sets the applicant_project_id of this EnhancedConnectionPrivilege.
+        r"""Sets the applicant_project_id of this EnhancedConnectionPrivilege.
 
         授权的项目ID。
 
@@ -101,7 +101,7 @@ class EnhancedConnectionPrivilege:
 
     @property
     def privileges(self):
-        """Gets the privileges of this EnhancedConnectionPrivilege.
+        r"""Gets the privileges of this EnhancedConnectionPrivilege.
 
         授权操作信息。
 
@@ -112,7 +112,7 @@ class EnhancedConnectionPrivilege:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this EnhancedConnectionPrivilege.
+        r"""Sets the privileges of this EnhancedConnectionPrivilege.
 
         授权操作信息。
 

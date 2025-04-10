@@ -29,7 +29,7 @@ class ShowProjectSuccessRateRequest:
     }
 
     def __init__(self, project_id=None, start_date=None, end_date=None):
-        """ShowProjectSuccessRateRequest
+        r"""ShowProjectSuccessRateRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowProjectSuccessRateRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowProjectSuccessRateRequest.
+        r"""Gets the project_id of this ShowProjectSuccessRateRequest.
 
         项目id
 
@@ -65,7 +65,7 @@ class ShowProjectSuccessRateRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowProjectSuccessRateRequest.
+        r"""Sets the project_id of this ShowProjectSuccessRateRequest.
 
         项目id
 
@@ -76,7 +76,7 @@ class ShowProjectSuccessRateRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ShowProjectSuccessRateRequest.
+        r"""Gets the start_date of this ShowProjectSuccessRateRequest.
 
         部署应用开始时间范围的左边界（包含），格式yyyy-MM-dd
 
@@ -87,7 +87,7 @@ class ShowProjectSuccessRateRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ShowProjectSuccessRateRequest.
+        r"""Sets the start_date of this ShowProjectSuccessRateRequest.
 
         部署应用开始时间范围的左边界（包含），格式yyyy-MM-dd
 
@@ -98,7 +98,7 @@ class ShowProjectSuccessRateRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ShowProjectSuccessRateRequest.
+        r"""Gets the end_date of this ShowProjectSuccessRateRequest.
 
         部署应用开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
 
@@ -109,7 +109,7 @@ class ShowProjectSuccessRateRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ShowProjectSuccessRateRequest.
+        r"""Sets the end_date of this ShowProjectSuccessRateRequest.
 
         部署应用开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
 

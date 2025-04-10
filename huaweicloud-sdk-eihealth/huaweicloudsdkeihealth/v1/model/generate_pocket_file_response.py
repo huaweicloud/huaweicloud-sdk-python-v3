@@ -26,7 +26,7 @@ class GeneratePocketFileResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """GeneratePocketFileResponse
+        r"""GeneratePocketFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class GeneratePocketFileResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this GeneratePocketFileResponse.
+        r"""Gets the body of this GeneratePocketFileResponse.
 
         :return: The body of this GeneratePocketFileResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class GeneratePocketFileResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this GeneratePocketFileResponse.
+        r"""Sets the body of this GeneratePocketFileResponse.
 
         :param body: The body of this GeneratePocketFileResponse.
         :type body: str

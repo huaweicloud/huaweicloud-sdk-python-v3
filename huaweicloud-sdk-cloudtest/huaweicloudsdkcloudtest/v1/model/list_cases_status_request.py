@@ -27,7 +27,7 @@ class ListCasesStatusRequest:
     }
 
     def __init__(self, test_service_id=None, body=None):
-        """ListCasesStatusRequest
+        r"""ListCasesStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListCasesStatusRequest:
 
     @property
     def test_service_id(self):
-        """Gets the test_service_id of this ListCasesStatusRequest.
+        r"""Gets the test_service_id of this ListCasesStatusRequest.
 
         projectUUId
 
@@ -60,7 +60,7 @@ class ListCasesStatusRequest:
 
     @test_service_id.setter
     def test_service_id(self, test_service_id):
-        """Sets the test_service_id of this ListCasesStatusRequest.
+        r"""Sets the test_service_id of this ListCasesStatusRequest.
 
         projectUUId
 
@@ -71,7 +71,7 @@ class ListCasesStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListCasesStatusRequest.
+        r"""Gets the body of this ListCasesStatusRequest.
 
         :return: The body of this ListCasesStatusRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class ListCasesStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListCasesStatusRequest.
+        r"""Sets the body of this ListCasesStatusRequest.
 
         :param body: The body of this ListCasesStatusRequest.
         :type body: str

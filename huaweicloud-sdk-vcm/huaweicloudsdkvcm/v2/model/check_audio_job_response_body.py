@@ -43,7 +43,7 @@ class CheckAudioJobResponseBody:
     }
 
     def __init__(self, id=None, description=None, state=None, name=None, service_config=None, input=None, output=None, service_version=None, created_at=None, updated_at=None):
-        """CheckAudioJobResponseBody
+        r"""CheckAudioJobResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class CheckAudioJobResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this CheckAudioJobResponseBody.
+        r"""Gets the id of this CheckAudioJobResponseBody.
 
         作业ID.
 
@@ -117,7 +117,7 @@ class CheckAudioJobResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CheckAudioJobResponseBody.
+        r"""Sets the id of this CheckAudioJobResponseBody.
 
         作业ID.
 
@@ -128,7 +128,7 @@ class CheckAudioJobResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this CheckAudioJobResponseBody.
+        r"""Gets the description of this CheckAudioJobResponseBody.
 
         作业描述
 
@@ -139,7 +139,7 @@ class CheckAudioJobResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CheckAudioJobResponseBody.
+        r"""Sets the description of this CheckAudioJobResponseBody.
 
         作业描述
 
@@ -150,7 +150,7 @@ class CheckAudioJobResponseBody:
 
     @property
     def state(self):
-        """Gets the state of this CheckAudioJobResponseBody.
+        r"""Gets the state of this CheckAudioJobResponseBody.
 
         作业状态：   - PENDING_CREATE：等待中   - SCHEDULING：调度中   - CREATE_FAIL：创建失败   - STARTING：启动中   - RUNNING：运行中   - SUCCEEDED：运行成功   - FAILED：运行失败   - PENDING_DELETE：删除中   - DELETE_FAIL：删除失败   - ABNORMAL：运行异常
 
@@ -161,7 +161,7 @@ class CheckAudioJobResponseBody:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CheckAudioJobResponseBody.
+        r"""Sets the state of this CheckAudioJobResponseBody.
 
         作业状态：   - PENDING_CREATE：等待中   - SCHEDULING：调度中   - CREATE_FAIL：创建失败   - STARTING：启动中   - RUNNING：运行中   - SUCCEEDED：运行成功   - FAILED：运行失败   - PENDING_DELETE：删除中   - DELETE_FAIL：删除失败   - ABNORMAL：运行异常
 
@@ -172,7 +172,7 @@ class CheckAudioJobResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this CheckAudioJobResponseBody.
+        r"""Gets the name of this CheckAudioJobResponseBody.
 
         作业名称.
 
@@ -183,7 +183,7 @@ class CheckAudioJobResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CheckAudioJobResponseBody.
+        r"""Sets the name of this CheckAudioJobResponseBody.
 
         作业名称.
 
@@ -194,7 +194,7 @@ class CheckAudioJobResponseBody:
 
     @property
     def service_config(self):
-        """Gets the service_config of this CheckAudioJobResponseBody.
+        r"""Gets the service_config of this CheckAudioJobResponseBody.
 
         :return: The service_config of this CheckAudioJobResponseBody.
         :rtype: :class:`huaweicloudsdkvcm.v2.AudioServiceConfig`
@@ -203,7 +203,7 @@ class CheckAudioJobResponseBody:
 
     @service_config.setter
     def service_config(self, service_config):
-        """Sets the service_config of this CheckAudioJobResponseBody.
+        r"""Sets the service_config of this CheckAudioJobResponseBody.
 
         :param service_config: The service_config of this CheckAudioJobResponseBody.
         :type service_config: :class:`huaweicloudsdkvcm.v2.AudioServiceConfig`
@@ -212,7 +212,7 @@ class CheckAudioJobResponseBody:
 
     @property
     def input(self):
-        """Gets the input of this CheckAudioJobResponseBody.
+        r"""Gets the input of this CheckAudioJobResponseBody.
 
         :return: The input of this CheckAudioJobResponseBody.
         :rtype: :class:`huaweicloudsdkvcm.v2.CheckAudioJobResponseBodyInput`
@@ -221,7 +221,7 @@ class CheckAudioJobResponseBody:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CheckAudioJobResponseBody.
+        r"""Sets the input of this CheckAudioJobResponseBody.
 
         :param input: The input of this CheckAudioJobResponseBody.
         :type input: :class:`huaweicloudsdkvcm.v2.CheckAudioJobResponseBodyInput`
@@ -230,7 +230,7 @@ class CheckAudioJobResponseBody:
 
     @property
     def output(self):
-        """Gets the output of this CheckAudioJobResponseBody.
+        r"""Gets the output of this CheckAudioJobResponseBody.
 
         :return: The output of this CheckAudioJobResponseBody.
         :rtype: :class:`huaweicloudsdkvcm.v2.AudioResponseOutput`
@@ -239,7 +239,7 @@ class CheckAudioJobResponseBody:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CheckAudioJobResponseBody.
+        r"""Sets the output of this CheckAudioJobResponseBody.
 
         :param output: The output of this CheckAudioJobResponseBody.
         :type output: :class:`huaweicloudsdkvcm.v2.AudioResponseOutput`
@@ -248,7 +248,7 @@ class CheckAudioJobResponseBody:
 
     @property
     def service_version(self):
-        """Gets the service_version of this CheckAudioJobResponseBody.
+        r"""Gets the service_version of this CheckAudioJobResponseBody.
 
         服务版本
 
@@ -259,7 +259,7 @@ class CheckAudioJobResponseBody:
 
     @service_version.setter
     def service_version(self, service_version):
-        """Sets the service_version of this CheckAudioJobResponseBody.
+        r"""Sets the service_version of this CheckAudioJobResponseBody.
 
         服务版本
 
@@ -270,7 +270,7 @@ class CheckAudioJobResponseBody:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CheckAudioJobResponseBody.
+        r"""Gets the created_at of this CheckAudioJobResponseBody.
 
         创建时间
 
@@ -281,7 +281,7 @@ class CheckAudioJobResponseBody:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CheckAudioJobResponseBody.
+        r"""Sets the created_at of this CheckAudioJobResponseBody.
 
         创建时间
 
@@ -292,7 +292,7 @@ class CheckAudioJobResponseBody:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CheckAudioJobResponseBody.
+        r"""Gets the updated_at of this CheckAudioJobResponseBody.
 
         修改时间
 
@@ -303,7 +303,7 @@ class CheckAudioJobResponseBody:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CheckAudioJobResponseBody.
+        r"""Sets the updated_at of this CheckAudioJobResponseBody.
 
         修改时间
 

@@ -30,7 +30,7 @@ class AddSshKeyResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """AddSshKeyResponse
+        r"""AddSshKeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class AddSshKeyResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this AddSshKeyResponse.
+        r"""Gets the error of this AddSshKeyResponse.
 
         :return: The error of this AddSshKeyResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class AddSshKeyResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this AddSshKeyResponse.
+        r"""Sets the error of this AddSshKeyResponse.
 
         :param error: The error of this AddSshKeyResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class AddSshKeyResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this AddSshKeyResponse.
+        r"""Gets the result of this AddSshKeyResponse.
 
         :return: The result of this AddSshKeyResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.PublicKey`
@@ -85,7 +85,7 @@ class AddSshKeyResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this AddSshKeyResponse.
+        r"""Sets the result of this AddSshKeyResponse.
 
         :param result: The result of this AddSshKeyResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.PublicKey`
@@ -94,7 +94,7 @@ class AddSshKeyResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AddSshKeyResponse.
+        r"""Gets the status of this AddSshKeyResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class AddSshKeyResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AddSshKeyResponse.
+        r"""Sets the status of this AddSshKeyResponse.
 
         响应状态
 

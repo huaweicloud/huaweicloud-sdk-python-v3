@@ -41,7 +41,7 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None, area=None, province=None, city=None, operator=None, id=None, site_ids=None):
-        """ListFlavorsRequest
+        r"""ListFlavorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListFlavorsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFlavorsRequest.
+        r"""Gets the offset of this ListFlavorsRequest.
 
         页码。 当前页面数，默认为1。 取值大于等于0，取值为0时返回第1页。
 
@@ -110,7 +110,7 @@ class ListFlavorsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFlavorsRequest.
+        r"""Sets the offset of this ListFlavorsRequest.
 
         页码。 当前页面数，默认为1。 取值大于等于0，取值为0时返回第1页。
 
@@ -121,7 +121,7 @@ class ListFlavorsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFlavorsRequest.
+        r"""Gets the limit of this ListFlavorsRequest.
 
         查询返回边缘实例规格列表当前页面的数量 。 取值范围：0~1000。
 
@@ -132,7 +132,7 @@ class ListFlavorsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFlavorsRequest.
+        r"""Sets the limit of this ListFlavorsRequest.
 
         查询返回边缘实例规格列表当前页面的数量 。 取值范围：0~1000。
 
@@ -143,7 +143,7 @@ class ListFlavorsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListFlavorsRequest.
+        r"""Gets the name of this ListFlavorsRequest.
 
         查询条件，规格的名称。
 
@@ -154,7 +154,7 @@ class ListFlavorsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListFlavorsRequest.
+        r"""Sets the name of this ListFlavorsRequest.
 
         查询条件，规格的名称。
 
@@ -165,7 +165,7 @@ class ListFlavorsRequest:
 
     @property
     def area(self):
-        """Gets the area of this ListFlavorsRequest.
+        r"""Gets the area of this ListFlavorsRequest.
 
         边缘规格所在大区。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
@@ -176,7 +176,7 @@ class ListFlavorsRequest:
 
     @area.setter
     def area(self, area):
-        """Sets the area of this ListFlavorsRequest.
+        r"""Sets the area of this ListFlavorsRequest.
 
         边缘规格所在大区。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
@@ -187,7 +187,7 @@ class ListFlavorsRequest:
 
     @property
     def province(self):
-        """Gets the province of this ListFlavorsRequest.
+        r"""Gets the province of this ListFlavorsRequest.
 
         边缘规格所在省份。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
@@ -198,7 +198,7 @@ class ListFlavorsRequest:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this ListFlavorsRequest.
+        r"""Sets the province of this ListFlavorsRequest.
 
         边缘规格所在省份。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
@@ -209,7 +209,7 @@ class ListFlavorsRequest:
 
     @property
     def city(self):
-        """Gets the city of this ListFlavorsRequest.
+        r"""Gets the city of this ListFlavorsRequest.
 
         边缘规格所在城市。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
@@ -220,7 +220,7 @@ class ListFlavorsRequest:
 
     @city.setter
     def city(self, city):
-        """Sets the city of this ListFlavorsRequest.
+        r"""Sets the city of this ListFlavorsRequest.
 
         边缘规格所在城市。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
@@ -231,7 +231,7 @@ class ListFlavorsRequest:
 
     @property
     def operator(self):
-        """Gets the operator of this ListFlavorsRequest.
+        r"""Gets the operator of this ListFlavorsRequest.
 
         边缘规格支持运营商。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
@@ -242,7 +242,7 @@ class ListFlavorsRequest:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this ListFlavorsRequest.
+        r"""Sets the operator of this ListFlavorsRequest.
 
         边缘规格支持运营商。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
@@ -253,7 +253,7 @@ class ListFlavorsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListFlavorsRequest.
+        r"""Gets the id of this ListFlavorsRequest.
 
         查询条件，规格的ID。
 
@@ -264,7 +264,7 @@ class ListFlavorsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListFlavorsRequest.
+        r"""Sets the id of this ListFlavorsRequest.
 
         查询条件，规格的ID。
 
@@ -275,7 +275,7 @@ class ListFlavorsRequest:
 
     @property
     def site_ids(self):
-        """Gets the site_ids of this ListFlavorsRequest.
+        r"""Gets the site_ids of this ListFlavorsRequest.
 
         查询条件，边缘规格站点列表，站点之间用“,”分隔。
 
@@ -286,7 +286,7 @@ class ListFlavorsRequest:
 
     @site_ids.setter
     def site_ids(self, site_ids):
-        """Sets the site_ids of this ListFlavorsRequest.
+        r"""Sets the site_ids of this ListFlavorsRequest.
 
         查询条件，边缘规格站点列表，站点之间用“,”分隔。
 

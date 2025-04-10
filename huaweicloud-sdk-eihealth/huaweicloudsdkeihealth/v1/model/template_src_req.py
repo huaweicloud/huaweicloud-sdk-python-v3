@@ -27,7 +27,7 @@ class TemplateSrcReq:
     }
 
     def __init__(self, source_template_id=None, destination_template_name=None):
-        """TemplateSrcReq
+        r"""TemplateSrcReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TemplateSrcReq:
 
     @property
     def source_template_id(self):
-        """Gets the source_template_id of this TemplateSrcReq.
+        r"""Gets the source_template_id of this TemplateSrcReq.
 
         源模板id
 
@@ -59,7 +59,7 @@ class TemplateSrcReq:
 
     @source_template_id.setter
     def source_template_id(self, source_template_id):
-        """Sets the source_template_id of this TemplateSrcReq.
+        r"""Sets the source_template_id of this TemplateSrcReq.
 
         源模板id
 
@@ -70,7 +70,7 @@ class TemplateSrcReq:
 
     @property
     def destination_template_name(self):
-        """Gets the destination_template_name of this TemplateSrcReq.
+        r"""Gets the destination_template_name of this TemplateSrcReq.
 
         导入模板名称
 
@@ -81,7 +81,7 @@ class TemplateSrcReq:
 
     @destination_template_name.setter
     def destination_template_name(self, destination_template_name):
-        """Sets the destination_template_name of this TemplateSrcReq.
+        r"""Sets the destination_template_name of this TemplateSrcReq.
 
         导入模板名称
 

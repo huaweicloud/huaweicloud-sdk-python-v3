@@ -29,7 +29,7 @@ class EsIpgroupResource:
     }
 
     def __init__(self, ipgroup_id=None, enable_ipgroup=None, type=None):
-        """EsIpgroupResource
+        r"""EsIpgroupResource
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EsIpgroupResource:
 
     @property
     def ipgroup_id(self):
-        """Gets the ipgroup_id of this EsIpgroupResource.
+        r"""Gets the ipgroup_id of this EsIpgroupResource.
 
         监听器关联的访问控制组的id。
 
@@ -68,7 +68,7 @@ class EsIpgroupResource:
 
     @ipgroup_id.setter
     def ipgroup_id(self, ipgroup_id):
-        """Sets the ipgroup_id of this EsIpgroupResource.
+        r"""Sets the ipgroup_id of this EsIpgroupResource.
 
         监听器关联的访问控制组的id。
 
@@ -79,7 +79,7 @@ class EsIpgroupResource:
 
     @property
     def enable_ipgroup(self):
-        """Gets the enable_ipgroup of this EsIpgroupResource.
+        r"""Gets the enable_ipgroup of this EsIpgroupResource.
 
         访问控制组的状态。
 
@@ -90,7 +90,7 @@ class EsIpgroupResource:
 
     @enable_ipgroup.setter
     def enable_ipgroup(self, enable_ipgroup):
-        """Sets the enable_ipgroup of this EsIpgroupResource.
+        r"""Sets the enable_ipgroup of this EsIpgroupResource.
 
         访问控制组的状态。
 
@@ -101,7 +101,7 @@ class EsIpgroupResource:
 
     @property
     def type(self):
-        """Gets the type of this EsIpgroupResource.
+        r"""Gets the type of this EsIpgroupResource.
 
         访问控制组的类型。
 
@@ -112,7 +112,7 @@ class EsIpgroupResource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EsIpgroupResource.
+        r"""Sets the type of this EsIpgroupResource.
 
         访问控制组的类型。
 

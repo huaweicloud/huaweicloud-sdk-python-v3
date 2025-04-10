@@ -39,7 +39,7 @@ class Bucket:
     }
 
     def __init__(self, asset_name=None, bucket_location=None, bucket_name=None, bucket_policy=None, create_time=None, deleted=None, id=None, is_deleted=None):
-        """Bucket
+        r"""Bucket
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class Bucket:
 
     @property
     def asset_name(self):
-        """Gets the asset_name of this Bucket.
+        r"""Gets the asset_name of this Bucket.
 
         资产名称
 
@@ -103,7 +103,7 @@ class Bucket:
 
     @asset_name.setter
     def asset_name(self, asset_name):
-        """Sets the asset_name of this Bucket.
+        r"""Sets the asset_name of this Bucket.
 
         资产名称
 
@@ -114,7 +114,7 @@ class Bucket:
 
     @property
     def bucket_location(self):
-        """Gets the bucket_location of this Bucket.
+        r"""Gets the bucket_location of this Bucket.
 
         桶位置
 
@@ -125,7 +125,7 @@ class Bucket:
 
     @bucket_location.setter
     def bucket_location(self, bucket_location):
-        """Sets the bucket_location of this Bucket.
+        r"""Sets the bucket_location of this Bucket.
 
         桶位置
 
@@ -136,7 +136,7 @@ class Bucket:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this Bucket.
+        r"""Gets the bucket_name of this Bucket.
 
         桶名称
 
@@ -147,7 +147,7 @@ class Bucket:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this Bucket.
+        r"""Sets the bucket_name of this Bucket.
 
         桶名称
 
@@ -158,7 +158,7 @@ class Bucket:
 
     @property
     def bucket_policy(self):
-        """Gets the bucket_policy of this Bucket.
+        r"""Gets the bucket_policy of this Bucket.
 
         桶策略
 
@@ -169,7 +169,7 @@ class Bucket:
 
     @bucket_policy.setter
     def bucket_policy(self, bucket_policy):
-        """Sets the bucket_policy of this Bucket.
+        r"""Sets the bucket_policy of this Bucket.
 
         桶策略
 
@@ -180,7 +180,7 @@ class Bucket:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Bucket.
+        r"""Gets the create_time of this Bucket.
 
         创建时间
 
@@ -191,7 +191,7 @@ class Bucket:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Bucket.
+        r"""Sets the create_time of this Bucket.
 
         创建时间
 
@@ -202,7 +202,7 @@ class Bucket:
 
     @property
     def deleted(self):
-        """Gets the deleted of this Bucket.
+        r"""Gets the deleted of this Bucket.
 
         是否被删除
 
@@ -213,7 +213,7 @@ class Bucket:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this Bucket.
+        r"""Sets the deleted of this Bucket.
 
         是否被删除
 
@@ -224,7 +224,7 @@ class Bucket:
 
     @property
     def id(self):
-        """Gets the id of this Bucket.
+        r"""Gets the id of this Bucket.
 
         桶ID
 
@@ -235,7 +235,7 @@ class Bucket:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Bucket.
+        r"""Sets the id of this Bucket.
 
         桶ID
 
@@ -246,7 +246,7 @@ class Bucket:
 
     @property
     def is_deleted(self):
-        """Gets the is_deleted of this Bucket.
+        r"""Gets the is_deleted of this Bucket.
 
         是否被删除
 
@@ -257,7 +257,7 @@ class Bucket:
 
     @is_deleted.setter
     def is_deleted(self, is_deleted):
-        """Sets the is_deleted of this Bucket.
+        r"""Sets the is_deleted of this Bucket.
 
         是否被删除
 

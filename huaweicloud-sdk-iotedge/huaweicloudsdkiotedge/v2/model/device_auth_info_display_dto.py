@@ -27,7 +27,7 @@ class DeviceAuthInfoDisplayDTO:
     }
 
     def __init__(self, auth_type=None, local_path=None):
-        """DeviceAuthInfoDisplayDTO
+        r"""DeviceAuthInfoDisplayDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeviceAuthInfoDisplayDTO:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this DeviceAuthInfoDisplayDTO.
+        r"""Gets the auth_type of this DeviceAuthInfoDisplayDTO.
 
         边缘节点认证方式。
 
@@ -60,7 +60,7 @@ class DeviceAuthInfoDisplayDTO:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this DeviceAuthInfoDisplayDTO.
+        r"""Sets the auth_type of this DeviceAuthInfoDisplayDTO.
 
         边缘节点认证方式。
 
@@ -71,7 +71,7 @@ class DeviceAuthInfoDisplayDTO:
 
     @property
     def local_path(self):
-        """Gets the local_path of this DeviceAuthInfoDisplayDTO.
+        r"""Gets the local_path of this DeviceAuthInfoDisplayDTO.
 
         :return: The local_path of this DeviceAuthInfoDisplayDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.CertificateLocalPathDTO`
@@ -80,7 +80,7 @@ class DeviceAuthInfoDisplayDTO:
 
     @local_path.setter
     def local_path(self, local_path):
-        """Sets the local_path of this DeviceAuthInfoDisplayDTO.
+        r"""Sets the local_path of this DeviceAuthInfoDisplayDTO.
 
         :param local_path: The local_path of this DeviceAuthInfoDisplayDTO.
         :type local_path: :class:`huaweicloudsdkiotedge.v2.CertificateLocalPathDTO`

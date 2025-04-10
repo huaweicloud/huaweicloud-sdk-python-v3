@@ -29,7 +29,7 @@ class UpdateComponentActionRequest:
     }
 
     def __init__(self, application_id=None, component_id=None, body=None):
-        """UpdateComponentActionRequest
+        r"""UpdateComponentActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateComponentActionRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this UpdateComponentActionRequest.
+        r"""Gets the application_id of this UpdateComponentActionRequest.
 
         应用id
 
@@ -66,7 +66,7 @@ class UpdateComponentActionRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this UpdateComponentActionRequest.
+        r"""Sets the application_id of this UpdateComponentActionRequest.
 
         应用id
 
@@ -77,7 +77,7 @@ class UpdateComponentActionRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this UpdateComponentActionRequest.
+        r"""Gets the component_id of this UpdateComponentActionRequest.
 
         组件id
 
@@ -88,7 +88,7 @@ class UpdateComponentActionRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this UpdateComponentActionRequest.
+        r"""Sets the component_id of this UpdateComponentActionRequest.
 
         组件id
 
@@ -99,7 +99,7 @@ class UpdateComponentActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateComponentActionRequest.
+        r"""Gets the body of this UpdateComponentActionRequest.
 
         :return: The body of this UpdateComponentActionRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentAction`
@@ -108,7 +108,7 @@ class UpdateComponentActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateComponentActionRequest.
+        r"""Sets the body of this UpdateComponentActionRequest.
 
         :param body: The body of this UpdateComponentActionRequest.
         :type body: :class:`huaweicloudsdkservicestage.v3.ComponentAction`

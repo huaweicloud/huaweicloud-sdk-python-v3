@@ -27,7 +27,7 @@ class RunPipelineDTOSources:
     }
 
     def __init__(self, type=None, params=None):
-        """RunPipelineDTOSources
+        r"""RunPipelineDTOSources
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunPipelineDTOSources:
 
     @property
     def type(self):
-        """Gets the type of this RunPipelineDTOSources.
+        r"""Gets the type of this RunPipelineDTOSources.
 
         源类型
 
@@ -60,7 +60,7 @@ class RunPipelineDTOSources:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RunPipelineDTOSources.
+        r"""Sets the type of this RunPipelineDTOSources.
 
         源类型
 
@@ -71,7 +71,7 @@ class RunPipelineDTOSources:
 
     @property
     def params(self):
-        """Gets the params of this RunPipelineDTOSources.
+        r"""Gets the params of this RunPipelineDTOSources.
 
         :return: The params of this RunPipelineDTOSources.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineDTOParams`
@@ -80,7 +80,7 @@ class RunPipelineDTOSources:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RunPipelineDTOSources.
+        r"""Sets the params of this RunPipelineDTOSources.
 
         :param params: The params of this RunPipelineDTOSources.
         :type params: :class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineDTOParams`

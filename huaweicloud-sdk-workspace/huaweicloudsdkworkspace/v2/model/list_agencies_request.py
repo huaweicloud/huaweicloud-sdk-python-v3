@@ -25,7 +25,7 @@ class ListAgenciesRequest:
     }
 
     def __init__(self, scene=None):
-        """ListAgenciesRequest
+        r"""ListAgenciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListAgenciesRequest:
 
     @property
     def scene(self):
-        """Gets the scene of this ListAgenciesRequest.
+        r"""Gets the scene of this ListAgenciesRequest.
 
         委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - SCREEN_RECORD：录屏审计。
 
@@ -54,7 +54,7 @@ class ListAgenciesRequest:
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this ListAgenciesRequest.
+        r"""Sets the scene of this ListAgenciesRequest.
 
         委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - SCREEN_RECORD：录屏审计。
 

@@ -25,7 +25,7 @@ class AudioServiceConfigCommon:
     }
 
     def __init__(self, categories=None):
-        """AudioServiceConfigCommon
+        r"""AudioServiceConfigCommon
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AudioServiceConfigCommon:
 
     @property
     def categories(self):
-        """Gets the categories of this AudioServiceConfigCommon.
+        r"""Gets the categories of this AudioServiceConfigCommon.
 
         检测场景。 - politics：政治人物的检测。 - porn：涉黄内容元素的检测。 可通过配置上述场景，来完成对应场景元素的检测。 
 
@@ -53,7 +53,7 @@ class AudioServiceConfigCommon:
 
     @categories.setter
     def categories(self, categories):
-        """Sets the categories of this AudioServiceConfigCommon.
+        r"""Sets the categories of this AudioServiceConfigCommon.
 
         检测场景。 - politics：政治人物的检测。 - porn：涉黄内容元素的检测。 可通过配置上述场景，来完成对应场景元素的检测。 
 

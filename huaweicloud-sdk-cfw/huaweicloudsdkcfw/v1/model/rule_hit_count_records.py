@@ -31,7 +31,7 @@ class RuleHitCountRecords:
     }
 
     def __init__(self, limit=None, offset=None, total=None, records=None):
-        """RuleHitCountRecords
+        r"""RuleHitCountRecords
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class RuleHitCountRecords:
 
     @property
     def limit(self):
-        """Gets the limit of this RuleHitCountRecords.
+        r"""Gets the limit of this RuleHitCountRecords.
 
         每页显示个数，范围为1-1024
 
@@ -75,7 +75,7 @@ class RuleHitCountRecords:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this RuleHitCountRecords.
+        r"""Sets the limit of this RuleHitCountRecords.
 
         每页显示个数，范围为1-1024
 
@@ -86,7 +86,7 @@ class RuleHitCountRecords:
 
     @property
     def offset(self):
-        """Gets the offset of this RuleHitCountRecords.
+        r"""Gets the offset of this RuleHitCountRecords.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -97,7 +97,7 @@ class RuleHitCountRecords:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this RuleHitCountRecords.
+        r"""Sets the offset of this RuleHitCountRecords.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -108,7 +108,7 @@ class RuleHitCountRecords:
 
     @property
     def total(self):
-        """Gets the total of this RuleHitCountRecords.
+        r"""Gets the total of this RuleHitCountRecords.
 
         获取规则击中次数总条数
 
@@ -119,7 +119,7 @@ class RuleHitCountRecords:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this RuleHitCountRecords.
+        r"""Sets the total of this RuleHitCountRecords.
 
         获取规则击中次数总条数
 
@@ -130,7 +130,7 @@ class RuleHitCountRecords:
 
     @property
     def records(self):
-        """Gets the records of this RuleHitCountRecords.
+        r"""Gets the records of this RuleHitCountRecords.
 
         规则击中次数信息列表
 
@@ -141,7 +141,7 @@ class RuleHitCountRecords:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this RuleHitCountRecords.
+        r"""Sets the records of this RuleHitCountRecords.
 
         规则击中次数信息列表
 

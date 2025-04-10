@@ -27,7 +27,7 @@ class QuicCidHashStrategy:
     }
 
     def __init__(self, len=None, offset=None):
-        """QuicCidHashStrategy
+        r"""QuicCidHashStrategy
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class QuicCidHashStrategy:
 
     @property
     def len(self):
-        """Gets the len of this QuicCidHashStrategy.
+        r"""Gets the len of this QuicCidHashStrategy.
 
         参数解释：仅当负载均衡算法为QUIC_CID的时候才生效，表示hash的时候取CID的长度。 取值范围：1-20 默认取值：3
 
@@ -59,7 +59,7 @@ class QuicCidHashStrategy:
 
     @len.setter
     def len(self, len):
-        """Sets the len of this QuicCidHashStrategy.
+        r"""Sets the len of this QuicCidHashStrategy.
 
         参数解释：仅当负载均衡算法为QUIC_CID的时候才生效，表示hash的时候取CID的长度。 取值范围：1-20 默认取值：3
 
@@ -70,7 +70,7 @@ class QuicCidHashStrategy:
 
     @property
     def offset(self):
-        """Gets the offset of this QuicCidHashStrategy.
+        r"""Gets the offset of this QuicCidHashStrategy.
 
         参数解释：仅当负载均衡算法为QUIC_CID的时候才生效，表示hash的时候取CID的偏移量。 取值范围：0-19 默认取值：1
 
@@ -81,7 +81,7 @@ class QuicCidHashStrategy:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this QuicCidHashStrategy.
+        r"""Sets the offset of this QuicCidHashStrategy.
 
         参数解释：仅当负载均衡算法为QUIC_CID的时候才生效，表示hash的时候取CID的偏移量。 取值范围：0-19 默认取值：1
 

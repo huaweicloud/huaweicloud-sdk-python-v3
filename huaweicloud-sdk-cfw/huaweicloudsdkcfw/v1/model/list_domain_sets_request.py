@@ -39,7 +39,7 @@ class ListDomainSetsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, fw_instance_id=None, limit=None, offset=None, object_id=None, key_word=None, domain_set_type=None, config_status=None):
-        """ListDomainSetsRequest
+        r"""ListDomainSetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class ListDomainSetsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListDomainSetsRequest.
+        r"""Gets the enterprise_project_id of this ListDomainSetsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -99,7 +99,7 @@ class ListDomainSetsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListDomainSetsRequest.
+        r"""Sets the enterprise_project_id of this ListDomainSetsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -110,7 +110,7 @@ class ListDomainSetsRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListDomainSetsRequest.
+        r"""Gets the fw_instance_id of this ListDomainSetsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -121,7 +121,7 @@ class ListDomainSetsRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListDomainSetsRequest.
+        r"""Sets the fw_instance_id of this ListDomainSetsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -132,7 +132,7 @@ class ListDomainSetsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDomainSetsRequest.
+        r"""Gets the limit of this ListDomainSetsRequest.
 
         每页显示个数，范围为1-1024
 
@@ -143,7 +143,7 @@ class ListDomainSetsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDomainSetsRequest.
+        r"""Sets the limit of this ListDomainSetsRequest.
 
         每页显示个数，范围为1-1024
 
@@ -154,7 +154,7 @@ class ListDomainSetsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDomainSetsRequest.
+        r"""Gets the offset of this ListDomainSetsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -165,7 +165,7 @@ class ListDomainSetsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDomainSetsRequest.
+        r"""Sets the offset of this ListDomainSetsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -176,7 +176,7 @@ class ListDomainSetsRequest:
 
     @property
     def object_id(self):
-        """Gets the object_id of this ListDomainSetsRequest.
+        r"""Gets the object_id of this ListDomainSetsRequest.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -187,7 +187,7 @@ class ListDomainSetsRequest:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this ListDomainSetsRequest.
+        r"""Sets the object_id of this ListDomainSetsRequest.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得
 
@@ -198,7 +198,7 @@ class ListDomainSetsRequest:
 
     @property
     def key_word(self):
-        """Gets the key_word of this ListDomainSetsRequest.
+        r"""Gets the key_word of this ListDomainSetsRequest.
 
         关键字，可使用域名组名称或描述
 
@@ -209,7 +209,7 @@ class ListDomainSetsRequest:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this ListDomainSetsRequest.
+        r"""Sets the key_word of this ListDomainSetsRequest.
 
         关键字，可使用域名组名称或描述
 
@@ -220,7 +220,7 @@ class ListDomainSetsRequest:
 
     @property
     def domain_set_type(self):
-        """Gets the domain_set_type of this ListDomainSetsRequest.
+        r"""Gets the domain_set_type of this ListDomainSetsRequest.
 
         域名组类型，0表示应用域名组，1表示网络域名组
 
@@ -231,7 +231,7 @@ class ListDomainSetsRequest:
 
     @domain_set_type.setter
     def domain_set_type(self, domain_set_type):
-        """Sets the domain_set_type of this ListDomainSetsRequest.
+        r"""Sets the domain_set_type of this ListDomainSetsRequest.
 
         域名组类型，0表示应用域名组，1表示网络域名组
 
@@ -242,7 +242,7 @@ class ListDomainSetsRequest:
 
     @property
     def config_status(self):
-        """Gets the config_status of this ListDomainSetsRequest.
+        r"""Gets the config_status of this ListDomainSetsRequest.
 
         配置状态，-1表示未配置态，0表示配置失败，1表示配置成功，2表示配置中，3表示正常，4表示配置异常
 
@@ -253,7 +253,7 @@ class ListDomainSetsRequest:
 
     @config_status.setter
     def config_status(self, config_status):
-        """Sets the config_status of this ListDomainSetsRequest.
+        r"""Sets the config_status of this ListDomainSetsRequest.
 
         配置状态，-1表示未配置态，0表示配置失败，1表示配置成功，2表示配置中，3表示正常，4表示配置异常
 

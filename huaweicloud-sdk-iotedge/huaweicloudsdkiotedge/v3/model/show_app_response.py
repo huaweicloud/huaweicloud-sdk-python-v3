@@ -36,7 +36,7 @@ class ShowAppResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, description=None, app_type=None, provider_type=None, create_time=None, update_time=None):
-        """ShowAppResponse
+        r"""ShowAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowAppResponse.
+        r"""Gets the app_id of this ShowAppResponse.
 
         应用模板ID
 
@@ -90,7 +90,7 @@ class ShowAppResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowAppResponse.
+        r"""Sets the app_id of this ShowAppResponse.
 
         应用模板ID
 
@@ -101,7 +101,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowAppResponse.
+        r"""Gets the description of this ShowAppResponse.
 
         应用描述
 
@@ -112,7 +112,7 @@ class ShowAppResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowAppResponse.
+        r"""Sets the description of this ShowAppResponse.
 
         应用描述
 
@@ -123,7 +123,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def app_type(self):
-        """Gets the app_type of this ShowAppResponse.
+        r"""Gets the app_type of this ShowAppResponse.
 
         应用类型
 
@@ -134,7 +134,7 @@ class ShowAppResponse(SdkResponse):
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ShowAppResponse.
+        r"""Sets the app_type of this ShowAppResponse.
 
         应用类型
 
@@ -145,7 +145,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this ShowAppResponse.
+        r"""Gets the provider_type of this ShowAppResponse.
 
         应用来源
 
@@ -156,7 +156,7 @@ class ShowAppResponse(SdkResponse):
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this ShowAppResponse.
+        r"""Sets the provider_type of this ShowAppResponse.
 
         应用来源
 
@@ -167,7 +167,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowAppResponse.
+        r"""Gets the create_time of this ShowAppResponse.
 
         创建时间
 
@@ -178,7 +178,7 @@ class ShowAppResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowAppResponse.
+        r"""Sets the create_time of this ShowAppResponse.
 
         创建时间
 
@@ -189,7 +189,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowAppResponse.
+        r"""Gets the update_time of this ShowAppResponse.
 
         最后一次修改时间
 
@@ -200,7 +200,7 @@ class ShowAppResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowAppResponse.
+        r"""Sets the update_time of this ShowAppResponse.
 
         最后一次修改时间
 

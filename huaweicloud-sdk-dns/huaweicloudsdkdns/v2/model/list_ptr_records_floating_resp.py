@@ -43,7 +43,7 @@ class ListPtrRecordsFloatingResp:
     }
 
     def __init__(self, id=None, ptrdname=None, description=None, ttl=None, address=None, status=None, action=None, links=None, tags=None, enterprise_project_id=None):
-        """ListPtrRecordsFloatingResp
+        r"""ListPtrRecordsFloatingResp
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListPtrRecordsFloatingResp:
 
     @property
     def id(self):
-        """Gets the id of this ListPtrRecordsFloatingResp.
+        r"""Gets the id of this ListPtrRecordsFloatingResp.
 
         PTR记录的ID，格式形如{region}:{floatingip_id}。
 
@@ -117,7 +117,7 @@ class ListPtrRecordsFloatingResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPtrRecordsFloatingResp.
+        r"""Sets the id of this ListPtrRecordsFloatingResp.
 
         PTR记录的ID，格式形如{region}:{floatingip_id}。
 
@@ -128,7 +128,7 @@ class ListPtrRecordsFloatingResp:
 
     @property
     def ptrdname(self):
-        """Gets the ptrdname of this ListPtrRecordsFloatingResp.
+        r"""Gets the ptrdname of this ListPtrRecordsFloatingResp.
 
         PTR记录对应的域名。
 
@@ -139,7 +139,7 @@ class ListPtrRecordsFloatingResp:
 
     @ptrdname.setter
     def ptrdname(self, ptrdname):
-        """Sets the ptrdname of this ListPtrRecordsFloatingResp.
+        r"""Sets the ptrdname of this ListPtrRecordsFloatingResp.
 
         PTR记录对应的域名。
 
@@ -150,7 +150,7 @@ class ListPtrRecordsFloatingResp:
 
     @property
     def description(self):
-        """Gets the description of this ListPtrRecordsFloatingResp.
+        r"""Gets the description of this ListPtrRecordsFloatingResp.
 
         对PTR记录的描述。
 
@@ -161,7 +161,7 @@ class ListPtrRecordsFloatingResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListPtrRecordsFloatingResp.
+        r"""Sets the description of this ListPtrRecordsFloatingResp.
 
         对PTR记录的描述。
 
@@ -172,7 +172,7 @@ class ListPtrRecordsFloatingResp:
 
     @property
     def ttl(self):
-        """Gets the ttl of this ListPtrRecordsFloatingResp.
+        r"""Gets the ttl of this ListPtrRecordsFloatingResp.
 
         PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -183,7 +183,7 @@ class ListPtrRecordsFloatingResp:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this ListPtrRecordsFloatingResp.
+        r"""Sets the ttl of this ListPtrRecordsFloatingResp.
 
         PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -194,7 +194,7 @@ class ListPtrRecordsFloatingResp:
 
     @property
     def address(self):
-        """Gets the address of this ListPtrRecordsFloatingResp.
+        r"""Gets the address of this ListPtrRecordsFloatingResp.
 
         弹性公网IP的IP地址。
 
@@ -205,7 +205,7 @@ class ListPtrRecordsFloatingResp:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ListPtrRecordsFloatingResp.
+        r"""Sets the address of this ListPtrRecordsFloatingResp.
 
         弹性公网IP的IP地址。
 
@@ -216,7 +216,7 @@ class ListPtrRecordsFloatingResp:
 
     @property
     def status(self):
-        """Gets the status of this ListPtrRecordsFloatingResp.
+        r"""Gets the status of this ListPtrRecordsFloatingResp.
 
         资源状态。
 
@@ -227,7 +227,7 @@ class ListPtrRecordsFloatingResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPtrRecordsFloatingResp.
+        r"""Sets the status of this ListPtrRecordsFloatingResp.
 
         资源状态。
 
@@ -238,7 +238,7 @@ class ListPtrRecordsFloatingResp:
 
     @property
     def action(self):
-        """Gets the action of this ListPtrRecordsFloatingResp.
+        r"""Gets the action of this ListPtrRecordsFloatingResp.
 
         对该资源的当前操作。  取值范围：CREATE，UPDATE，DELETE，NONE。 CREATE：表示创建，UPDATE：表示更新，DELETE：表示删除，NONE：表示无操作
 
@@ -249,7 +249,7 @@ class ListPtrRecordsFloatingResp:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListPtrRecordsFloatingResp.
+        r"""Sets the action of this ListPtrRecordsFloatingResp.
 
         对该资源的当前操作。  取值范围：CREATE，UPDATE，DELETE，NONE。 CREATE：表示创建，UPDATE：表示更新，DELETE：表示删除，NONE：表示无操作
 
@@ -260,7 +260,7 @@ class ListPtrRecordsFloatingResp:
 
     @property
     def links(self):
-        """Gets the links of this ListPtrRecordsFloatingResp.
+        r"""Gets the links of this ListPtrRecordsFloatingResp.
 
         :return: The links of this ListPtrRecordsFloatingResp.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -269,7 +269,7 @@ class ListPtrRecordsFloatingResp:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListPtrRecordsFloatingResp.
+        r"""Sets the links of this ListPtrRecordsFloatingResp.
 
         :param links: The links of this ListPtrRecordsFloatingResp.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -278,7 +278,7 @@ class ListPtrRecordsFloatingResp:
 
     @property
     def tags(self):
-        """Gets the tags of this ListPtrRecordsFloatingResp.
+        r"""Gets the tags of this ListPtrRecordsFloatingResp.
 
         资源标签。
 
@@ -289,7 +289,7 @@ class ListPtrRecordsFloatingResp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListPtrRecordsFloatingResp.
+        r"""Sets the tags of this ListPtrRecordsFloatingResp.
 
         资源标签。
 
@@ -300,7 +300,7 @@ class ListPtrRecordsFloatingResp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPtrRecordsFloatingResp.
+        r"""Gets the enterprise_project_id of this ListPtrRecordsFloatingResp.
 
         反向解析关联的企业项目ID，长度不超过36个字符。
 
@@ -311,7 +311,7 @@ class ListPtrRecordsFloatingResp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPtrRecordsFloatingResp.
+        r"""Sets the enterprise_project_id of this ListPtrRecordsFloatingResp.
 
         反向解析关联的企业项目ID，长度不超过36个字符。
 

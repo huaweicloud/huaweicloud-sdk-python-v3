@@ -27,7 +27,7 @@ class UpdateMenuResponseModel:
     }
 
     def __init__(self, menu_id=None, log_id=None):
-        """UpdateMenuResponseModel
+        r"""UpdateMenuResponseModel
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateMenuResponseModel:
 
     @property
     def menu_id(self):
-        """Gets the menu_id of this UpdateMenuResponseModel.
+        r"""Gets the menu_id of this UpdateMenuResponseModel.
 
         菜单ID。
 
@@ -61,7 +61,7 @@ class UpdateMenuResponseModel:
 
     @menu_id.setter
     def menu_id(self, menu_id):
-        """Sets the menu_id of this UpdateMenuResponseModel.
+        r"""Sets the menu_id of this UpdateMenuResponseModel.
 
         菜单ID。
 
@@ -72,7 +72,7 @@ class UpdateMenuResponseModel:
 
     @property
     def log_id(self):
-        """Gets the log_id of this UpdateMenuResponseModel.
+        r"""Gets the log_id of this UpdateMenuResponseModel.
 
         操作记录ID。
 
@@ -83,7 +83,7 @@ class UpdateMenuResponseModel:
 
     @log_id.setter
     def log_id(self, log_id):
-        """Sets the log_id of this UpdateMenuResponseModel.
+        r"""Sets the log_id of this UpdateMenuResponseModel.
 
         操作记录ID。
 

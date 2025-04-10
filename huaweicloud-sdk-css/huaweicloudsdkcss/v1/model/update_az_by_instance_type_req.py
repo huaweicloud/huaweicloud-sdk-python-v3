@@ -33,7 +33,7 @@ class UpdateAzByInstanceTypeReq:
     }
 
     def __init__(self, source_az=None, target_az=None, migrate_type=None, agency=None, indices_backup_check=None):
-        """UpdateAzByInstanceTypeReq
+        r"""UpdateAzByInstanceTypeReq
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class UpdateAzByInstanceTypeReq:
 
     @property
     def source_az(self):
-        """Gets the source_az of this UpdateAzByInstanceTypeReq.
+        r"""Gets the source_az of this UpdateAzByInstanceTypeReq.
 
         节点当前所在AZ。
 
@@ -78,7 +78,7 @@ class UpdateAzByInstanceTypeReq:
 
     @source_az.setter
     def source_az(self, source_az):
-        """Sets the source_az of this UpdateAzByInstanceTypeReq.
+        r"""Sets the source_az of this UpdateAzByInstanceTypeReq.
 
         节点当前所在AZ。
 
@@ -89,7 +89,7 @@ class UpdateAzByInstanceTypeReq:
 
     @property
     def target_az(self):
-        """Gets the target_az of this UpdateAzByInstanceTypeReq.
+        r"""Gets the target_az of this UpdateAzByInstanceTypeReq.
 
         期望节点最终分布AZ。
 
@@ -100,7 +100,7 @@ class UpdateAzByInstanceTypeReq:
 
     @target_az.setter
     def target_az(self, target_az):
-        """Sets the target_az of this UpdateAzByInstanceTypeReq.
+        r"""Sets the target_az of this UpdateAzByInstanceTypeReq.
 
         期望节点最终分布AZ。
 
@@ -111,7 +111,7 @@ class UpdateAzByInstanceTypeReq:
 
     @property
     def migrate_type(self):
-        """Gets the migrate_type of this UpdateAzByInstanceTypeReq.
+        r"""Gets the migrate_type of this UpdateAzByInstanceTypeReq.
 
         AZ迁移方式： - multi_az_change：高可用改造。 - az_migrate： AZ平移
 
@@ -122,7 +122,7 @@ class UpdateAzByInstanceTypeReq:
 
     @migrate_type.setter
     def migrate_type(self, migrate_type):
-        """Sets the migrate_type of this UpdateAzByInstanceTypeReq.
+        r"""Sets the migrate_type of this UpdateAzByInstanceTypeReq.
 
         AZ迁移方式： - multi_az_change：高可用改造。 - az_migrate： AZ平移
 
@@ -133,7 +133,7 @@ class UpdateAzByInstanceTypeReq:
 
     @property
     def agency(self):
-        """Gets the agency of this UpdateAzByInstanceTypeReq.
+        r"""Gets the agency of this UpdateAzByInstanceTypeReq.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
@@ -144,7 +144,7 @@ class UpdateAzByInstanceTypeReq:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this UpdateAzByInstanceTypeReq.
+        r"""Sets the agency of this UpdateAzByInstanceTypeReq.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
@@ -155,7 +155,7 @@ class UpdateAzByInstanceTypeReq:
 
     @property
     def indices_backup_check(self):
-        """Gets the indices_backup_check of this UpdateAzByInstanceTypeReq.
+        r"""Gets the indices_backup_check of this UpdateAzByInstanceTypeReq.
 
         是否进行全量索引快照备份检测。 true：进行全量索引快照备份检测。 false：不进行全量索引快照备份检测。
 
@@ -166,7 +166,7 @@ class UpdateAzByInstanceTypeReq:
 
     @indices_backup_check.setter
     def indices_backup_check(self, indices_backup_check):
-        """Sets the indices_backup_check of this UpdateAzByInstanceTypeReq.
+        r"""Sets the indices_backup_check of this UpdateAzByInstanceTypeReq.
 
         是否进行全量索引快照备份检测。 true：进行全量索引快照备份检测。 false：不进行全量索引快照备份检测。
 

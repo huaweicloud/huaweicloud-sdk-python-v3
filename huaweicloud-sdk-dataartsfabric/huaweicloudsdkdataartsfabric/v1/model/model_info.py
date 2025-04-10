@@ -43,7 +43,7 @@ class ModelInfo:
     }
 
     def __init__(self, visibility=None, id=None, name=None, description=None, type=None, create_time=None, update_time=None, current_version=None, create_user=None, update_user=None):
-        """ModelInfo
+        r"""ModelInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ModelInfo:
 
     @property
     def visibility(self):
-        """Gets the visibility of this ModelInfo.
+        r"""Gets the visibility of this ModelInfo.
 
         可见性：  - PRIVATE：私有  - PUBLIC：公共  默认为PRIVATE
 
@@ -117,7 +117,7 @@ class ModelInfo:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this ModelInfo.
+        r"""Sets the visibility of this ModelInfo.
 
         可见性：  - PRIVATE：私有  - PUBLIC：公共  默认为PRIVATE
 
@@ -128,7 +128,7 @@ class ModelInfo:
 
     @property
     def id(self):
-        """Gets the id of this ModelInfo.
+        r"""Gets the id of this ModelInfo.
 
         模型ID，32~36位的英文、数字、短横组合
 
@@ -139,7 +139,7 @@ class ModelInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModelInfo.
+        r"""Sets the id of this ModelInfo.
 
         模型ID，32~36位的英文、数字、短横组合
 
@@ -150,7 +150,7 @@ class ModelInfo:
 
     @property
     def name(self):
-        """Gets the name of this ModelInfo.
+        r"""Gets the name of this ModelInfo.
 
         一个Model的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -161,7 +161,7 @@ class ModelInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModelInfo.
+        r"""Sets the name of this ModelInfo.
 
         一个Model的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -172,7 +172,7 @@ class ModelInfo:
 
     @property
     def description(self):
-        """Gets the description of this ModelInfo.
+        r"""Gets the description of this ModelInfo.
 
         描述信息
 
@@ -183,7 +183,7 @@ class ModelInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModelInfo.
+        r"""Sets the description of this ModelInfo.
 
         描述信息
 
@@ -194,7 +194,7 @@ class ModelInfo:
 
     @property
     def type(self):
-        """Gets the type of this ModelInfo.
+        r"""Gets the type of this ModelInfo.
 
         :return: The type of this ModelInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ModelType`
@@ -203,7 +203,7 @@ class ModelInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ModelInfo.
+        r"""Sets the type of this ModelInfo.
 
         :param type: The type of this ModelInfo.
         :type type: :class:`huaweicloudsdkdataartsfabric.v1.ModelType`
@@ -212,7 +212,7 @@ class ModelInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ModelInfo.
+        r"""Gets the create_time of this ModelInfo.
 
         创建时间
 
@@ -223,7 +223,7 @@ class ModelInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ModelInfo.
+        r"""Sets the create_time of this ModelInfo.
 
         创建时间
 
@@ -234,7 +234,7 @@ class ModelInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ModelInfo.
+        r"""Gets the update_time of this ModelInfo.
 
         更新时间
 
@@ -245,7 +245,7 @@ class ModelInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ModelInfo.
+        r"""Sets the update_time of this ModelInfo.
 
         更新时间
 
@@ -256,7 +256,7 @@ class ModelInfo:
 
     @property
     def current_version(self):
-        """Gets the current_version of this ModelInfo.
+        r"""Gets the current_version of this ModelInfo.
 
         :return: The current_version of this ModelInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ModelVersionInfo`
@@ -265,7 +265,7 @@ class ModelInfo:
 
     @current_version.setter
     def current_version(self, current_version):
-        """Sets the current_version of this ModelInfo.
+        r"""Sets the current_version of this ModelInfo.
 
         :param current_version: The current_version of this ModelInfo.
         :type current_version: :class:`huaweicloudsdkdataartsfabric.v1.ModelVersionInfo`
@@ -274,7 +274,7 @@ class ModelInfo:
 
     @property
     def create_user(self):
-        """Gets the create_user of this ModelInfo.
+        r"""Gets the create_user of this ModelInfo.
 
         :return: The create_user of this ModelInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.User`
@@ -283,7 +283,7 @@ class ModelInfo:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ModelInfo.
+        r"""Sets the create_user of this ModelInfo.
 
         :param create_user: The create_user of this ModelInfo.
         :type create_user: :class:`huaweicloudsdkdataartsfabric.v1.User`
@@ -292,7 +292,7 @@ class ModelInfo:
 
     @property
     def update_user(self):
-        """Gets the update_user of this ModelInfo.
+        r"""Gets the update_user of this ModelInfo.
 
         :return: The update_user of this ModelInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.User`
@@ -301,7 +301,7 @@ class ModelInfo:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this ModelInfo.
+        r"""Sets the update_user of this ModelInfo.
 
         :param update_user: The update_user of this ModelInfo.
         :type update_user: :class:`huaweicloudsdkdataartsfabric.v1.User`

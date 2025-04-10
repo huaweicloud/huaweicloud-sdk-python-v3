@@ -26,7 +26,7 @@ class ShowKafkaTopicPartitionDiskusageResponse(SdkResponse):
     }
 
     def __init__(self, broker_list=None):
-        """ShowKafkaTopicPartitionDiskusageResponse
+        r"""ShowKafkaTopicPartitionDiskusageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowKafkaTopicPartitionDiskusageResponse(SdkResponse):
 
     @property
     def broker_list(self):
-        """Gets the broker_list of this ShowKafkaTopicPartitionDiskusageResponse.
+        r"""Gets the broker_list of this ShowKafkaTopicPartitionDiskusageResponse.
 
         Broker列表。
 
@@ -55,7 +55,7 @@ class ShowKafkaTopicPartitionDiskusageResponse(SdkResponse):
 
     @broker_list.setter
     def broker_list(self, broker_list):
-        """Sets the broker_list of this ShowKafkaTopicPartitionDiskusageResponse.
+        r"""Sets the broker_list of this ShowKafkaTopicPartitionDiskusageResponse.
 
         Broker列表。
 

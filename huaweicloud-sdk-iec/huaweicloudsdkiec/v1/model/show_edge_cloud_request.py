@@ -25,7 +25,7 @@ class ShowEdgeCloudRequest:
     }
 
     def __init__(self, edgecloud_id=None):
-        """ShowEdgeCloudRequest
+        r"""ShowEdgeCloudRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowEdgeCloudRequest:
 
     @property
     def edgecloud_id(self):
-        """Gets the edgecloud_id of this ShowEdgeCloudRequest.
+        r"""Gets the edgecloud_id of this ShowEdgeCloudRequest.
 
         边缘业务ID。
 
@@ -53,7 +53,7 @@ class ShowEdgeCloudRequest:
 
     @edgecloud_id.setter
     def edgecloud_id(self, edgecloud_id):
-        """Sets the edgecloud_id of this ShowEdgeCloudRequest.
+        r"""Sets the edgecloud_id of this ShowEdgeCloudRequest.
 
         边缘业务ID。
 

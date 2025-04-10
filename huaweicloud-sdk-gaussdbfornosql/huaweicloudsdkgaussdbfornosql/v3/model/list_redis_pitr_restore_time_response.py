@@ -28,7 +28,7 @@ class ListRedisPitrRestoreTimeResponse(SdkResponse):
     }
 
     def __init__(self, restore_time=None, total_count=None):
-        """ListRedisPitrRestoreTimeResponse
+        r"""ListRedisPitrRestoreTimeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRedisPitrRestoreTimeResponse(SdkResponse):
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this ListRedisPitrRestoreTimeResponse.
+        r"""Gets the restore_time of this ListRedisPitrRestoreTimeResponse.
 
         Redis可恢复时间点列表。 yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
 
@@ -62,7 +62,7 @@ class ListRedisPitrRestoreTimeResponse(SdkResponse):
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this ListRedisPitrRestoreTimeResponse.
+        r"""Sets the restore_time of this ListRedisPitrRestoreTimeResponse.
 
         Redis可恢复时间点列表。 yyyy-mm-ddThh:mm:ssZ字符串格式，T指某个时间的开始，Z指时区偏移量。
 
@@ -73,7 +73,7 @@ class ListRedisPitrRestoreTimeResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListRedisPitrRestoreTimeResponse.
+        r"""Gets the total_count of this ListRedisPitrRestoreTimeResponse.
 
         Redis实例可恢复时间点总数。
 
@@ -84,7 +84,7 @@ class ListRedisPitrRestoreTimeResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListRedisPitrRestoreTimeResponse.
+        r"""Sets the total_count of this ListRedisPitrRestoreTimeResponse.
 
         Redis实例可恢复时间点总数。
 

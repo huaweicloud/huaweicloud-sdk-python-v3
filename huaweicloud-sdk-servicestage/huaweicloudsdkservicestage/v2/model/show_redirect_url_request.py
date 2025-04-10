@@ -27,7 +27,7 @@ class ShowRedirectUrlRequest:
     }
 
     def __init__(self, repo_type=None, tag=None):
-        """ShowRedirectUrlRequest
+        r"""ShowRedirectUrlRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowRedirectUrlRequest:
 
     @property
     def repo_type(self):
-        """Gets the repo_type of this ShowRedirectUrlRequest.
+        r"""Gets the repo_type of this ShowRedirectUrlRequest.
 
         仓库类型。 取值范围：github、gitlab、gitee、bitbucket。
 
@@ -60,7 +60,7 @@ class ShowRedirectUrlRequest:
 
     @repo_type.setter
     def repo_type(self, repo_type):
-        """Sets the repo_type of this ShowRedirectUrlRequest.
+        r"""Sets the repo_type of this ShowRedirectUrlRequest.
 
         仓库类型。 取值范围：github、gitlab、gitee、bitbucket。
 
@@ -71,7 +71,7 @@ class ShowRedirectUrlRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ShowRedirectUrlRequest.
+        r"""Gets the tag of this ShowRedirectUrlRequest.
 
         站点标签。 比如国际站的，?tag=intl。 默认为空。
 
@@ -82,7 +82,7 @@ class ShowRedirectUrlRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ShowRedirectUrlRequest.
+        r"""Sets the tag of this ShowRedirectUrlRequest.
 
         站点标签。 比如国际站的，?tag=intl。 默认为空。
 

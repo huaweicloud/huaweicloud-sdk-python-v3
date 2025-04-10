@@ -26,7 +26,7 @@ class DeleteConfigMapResponse(SdkResponse):
     }
 
     def __init__(self, configmap=None):
-        """DeleteConfigMapResponse
+        r"""DeleteConfigMapResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteConfigMapResponse(SdkResponse):
 
     @property
     def configmap(self):
-        """Gets the configmap of this DeleteConfigMapResponse.
+        r"""Gets the configmap of this DeleteConfigMapResponse.
 
         :return: The configmap of this DeleteConfigMapResponse.
         :rtype: :class:`huaweicloudsdkhilens.v3.ConfigMapId`
@@ -53,7 +53,7 @@ class DeleteConfigMapResponse(SdkResponse):
 
     @configmap.setter
     def configmap(self, configmap):
-        """Sets the configmap of this DeleteConfigMapResponse.
+        r"""Sets the configmap of this DeleteConfigMapResponse.
 
         :param configmap: The configmap of this DeleteConfigMapResponse.
         :type configmap: :class:`huaweicloudsdkhilens.v3.ConfigMapId`

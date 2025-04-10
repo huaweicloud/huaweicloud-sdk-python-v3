@@ -25,7 +25,7 @@ class ListFutureExecutionsRequest:
     }
 
     def __init__(self, body=None):
-        """ListFutureExecutionsRequest
+        r"""ListFutureExecutionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListFutureExecutionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListFutureExecutionsRequest.
+        r"""Gets the body of this ListFutureExecutionsRequest.
 
         :return: The body of this ListFutureExecutionsRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListFutureExecutionsReq`
@@ -52,7 +52,7 @@ class ListFutureExecutionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListFutureExecutionsRequest.
+        r"""Sets the body of this ListFutureExecutionsRequest.
 
         :param body: The body of this ListFutureExecutionsRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.ListFutureExecutionsReq`

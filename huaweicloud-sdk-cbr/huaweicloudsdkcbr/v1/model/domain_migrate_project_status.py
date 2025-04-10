@@ -37,7 +37,7 @@ class DomainMigrateProjectStatus:
     }
 
     def __init__(self, status=None, project_id=None, project_name=None, region_id=None, progress=None, fail_code=None, fail_reason=None):
-        """DomainMigrateProjectStatus
+        r"""DomainMigrateProjectStatus
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class DomainMigrateProjectStatus:
 
     @property
     def status(self):
-        """Gets the status of this DomainMigrateProjectStatus.
+        r"""Gets the status of this DomainMigrateProjectStatus.
 
         迁移状态
 
@@ -93,7 +93,7 @@ class DomainMigrateProjectStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DomainMigrateProjectStatus.
+        r"""Sets the status of this DomainMigrateProjectStatus.
 
         迁移状态
 
@@ -104,7 +104,7 @@ class DomainMigrateProjectStatus:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DomainMigrateProjectStatus.
+        r"""Gets the project_id of this DomainMigrateProjectStatus.
 
         项目ID
 
@@ -115,7 +115,7 @@ class DomainMigrateProjectStatus:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DomainMigrateProjectStatus.
+        r"""Sets the project_id of this DomainMigrateProjectStatus.
 
         项目ID
 
@@ -126,7 +126,7 @@ class DomainMigrateProjectStatus:
 
     @property
     def project_name(self):
-        """Gets the project_name of this DomainMigrateProjectStatus.
+        r"""Gets the project_name of this DomainMigrateProjectStatus.
 
         项目名称
 
@@ -137,7 +137,7 @@ class DomainMigrateProjectStatus:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this DomainMigrateProjectStatus.
+        r"""Sets the project_name of this DomainMigrateProjectStatus.
 
         项目名称
 
@@ -148,7 +148,7 @@ class DomainMigrateProjectStatus:
 
     @property
     def region_id(self):
-        """Gets the region_id of this DomainMigrateProjectStatus.
+        r"""Gets the region_id of this DomainMigrateProjectStatus.
 
         区域ID
 
@@ -159,7 +159,7 @@ class DomainMigrateProjectStatus:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this DomainMigrateProjectStatus.
+        r"""Sets the region_id of this DomainMigrateProjectStatus.
 
         区域ID
 
@@ -170,7 +170,7 @@ class DomainMigrateProjectStatus:
 
     @property
     def progress(self):
-        """Gets the progress of this DomainMigrateProjectStatus.
+        r"""Gets the progress of this DomainMigrateProjectStatus.
 
         迁移进度
 
@@ -181,7 +181,7 @@ class DomainMigrateProjectStatus:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this DomainMigrateProjectStatus.
+        r"""Sets the progress of this DomainMigrateProjectStatus.
 
         迁移进度
 
@@ -192,7 +192,7 @@ class DomainMigrateProjectStatus:
 
     @property
     def fail_code(self):
-        """Gets the fail_code of this DomainMigrateProjectStatus.
+        r"""Gets the fail_code of this DomainMigrateProjectStatus.
 
         失败错误码（仅当项目状态为失败时才有该参数）。
 
@@ -203,7 +203,7 @@ class DomainMigrateProjectStatus:
 
     @fail_code.setter
     def fail_code(self, fail_code):
-        """Sets the fail_code of this DomainMigrateProjectStatus.
+        r"""Sets the fail_code of this DomainMigrateProjectStatus.
 
         失败错误码（仅当项目状态为失败时才有该参数）。
 
@@ -214,7 +214,7 @@ class DomainMigrateProjectStatus:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this DomainMigrateProjectStatus.
+        r"""Gets the fail_reason of this DomainMigrateProjectStatus.
 
         失败原因（仅当项目状态为失败时才有该参数）。
 
@@ -225,7 +225,7 @@ class DomainMigrateProjectStatus:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this DomainMigrateProjectStatus.
+        r"""Sets the fail_reason of this DomainMigrateProjectStatus.
 
         失败原因（仅当项目状态为失败时才有该参数）。
 

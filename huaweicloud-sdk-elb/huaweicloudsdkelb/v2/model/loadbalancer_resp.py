@@ -71,7 +71,7 @@ class LoadbalancerResp:
     }
 
     def __init__(self, id=None, tenant_id=None, name=None, description=None, vip_subnet_id=None, vip_port_id=None, vip_address=None, listeners=None, pools=None, provider=None, operating_status=None, provisioning_status=None, admin_state_up=None, created_at=None, updated_at=None, enterprise_project_id=None, project_id=None, tags=None, publicips=None, charge_mode=None, billing_info=None, frozen_scene=None, protection_status=None, protection_reason=None):
-        """LoadbalancerResp
+        r"""LoadbalancerResp
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class LoadbalancerResp:
 
     @property
     def id(self):
-        """Gets the id of this LoadbalancerResp.
+        r"""Gets the id of this LoadbalancerResp.
 
         负载均衡器ID
 
@@ -194,7 +194,7 @@ class LoadbalancerResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LoadbalancerResp.
+        r"""Sets the id of this LoadbalancerResp.
 
         负载均衡器ID
 
@@ -205,7 +205,7 @@ class LoadbalancerResp:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this LoadbalancerResp.
+        r"""Gets the tenant_id of this LoadbalancerResp.
 
         负载均衡器所在的项目ID。
 
@@ -216,7 +216,7 @@ class LoadbalancerResp:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this LoadbalancerResp.
+        r"""Sets the tenant_id of this LoadbalancerResp.
 
         负载均衡器所在的项目ID。
 
@@ -227,7 +227,7 @@ class LoadbalancerResp:
 
     @property
     def name(self):
-        """Gets the name of this LoadbalancerResp.
+        r"""Gets the name of this LoadbalancerResp.
 
         负载均衡器名称。
 
@@ -238,7 +238,7 @@ class LoadbalancerResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LoadbalancerResp.
+        r"""Sets the name of this LoadbalancerResp.
 
         负载均衡器名称。
 
@@ -249,7 +249,7 @@ class LoadbalancerResp:
 
     @property
     def description(self):
-        """Gets the description of this LoadbalancerResp.
+        r"""Gets the description of this LoadbalancerResp.
 
         负载均衡器的描述信息
 
@@ -260,7 +260,7 @@ class LoadbalancerResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this LoadbalancerResp.
+        r"""Sets the description of this LoadbalancerResp.
 
         负载均衡器的描述信息
 
@@ -271,7 +271,7 @@ class LoadbalancerResp:
 
     @property
     def vip_subnet_id(self):
-        """Gets the vip_subnet_id of this LoadbalancerResp.
+        r"""Gets the vip_subnet_id of this LoadbalancerResp.
 
         负载均衡器所在的子网的IPv4子网ID。仅支持内网类型。
 
@@ -282,7 +282,7 @@ class LoadbalancerResp:
 
     @vip_subnet_id.setter
     def vip_subnet_id(self, vip_subnet_id):
-        """Sets the vip_subnet_id of this LoadbalancerResp.
+        r"""Sets the vip_subnet_id of this LoadbalancerResp.
 
         负载均衡器所在的子网的IPv4子网ID。仅支持内网类型。
 
@@ -293,7 +293,7 @@ class LoadbalancerResp:
 
     @property
     def vip_port_id(self):
-        """Gets the vip_port_id of this LoadbalancerResp.
+        r"""Gets the vip_port_id of this LoadbalancerResp.
 
         负载均衡器虚拟IP对应的端口ID
 
@@ -304,7 +304,7 @@ class LoadbalancerResp:
 
     @vip_port_id.setter
     def vip_port_id(self, vip_port_id):
-        """Sets the vip_port_id of this LoadbalancerResp.
+        r"""Sets the vip_port_id of this LoadbalancerResp.
 
         负载均衡器虚拟IP对应的端口ID
 
@@ -315,7 +315,7 @@ class LoadbalancerResp:
 
     @property
     def vip_address(self):
-        """Gets the vip_address of this LoadbalancerResp.
+        r"""Gets the vip_address of this LoadbalancerResp.
 
         负载均衡器的虚拟IP。
 
@@ -326,7 +326,7 @@ class LoadbalancerResp:
 
     @vip_address.setter
     def vip_address(self, vip_address):
-        """Sets the vip_address of this LoadbalancerResp.
+        r"""Sets the vip_address of this LoadbalancerResp.
 
         负载均衡器的虚拟IP。
 
@@ -337,7 +337,7 @@ class LoadbalancerResp:
 
     @property
     def listeners(self):
-        """Gets the listeners of this LoadbalancerResp.
+        r"""Gets the listeners of this LoadbalancerResp.
 
         负载均衡器关联的监听器ID的列表
 
@@ -348,7 +348,7 @@ class LoadbalancerResp:
 
     @listeners.setter
     def listeners(self, listeners):
-        """Sets the listeners of this LoadbalancerResp.
+        r"""Sets the listeners of this LoadbalancerResp.
 
         负载均衡器关联的监听器ID的列表
 
@@ -359,7 +359,7 @@ class LoadbalancerResp:
 
     @property
     def pools(self):
-        """Gets the pools of this LoadbalancerResp.
+        r"""Gets the pools of this LoadbalancerResp.
 
         负载均衡器关联的后端云服务器组ID的列表。
 
@@ -370,7 +370,7 @@ class LoadbalancerResp:
 
     @pools.setter
     def pools(self, pools):
-        """Sets the pools of this LoadbalancerResp.
+        r"""Sets the pools of this LoadbalancerResp.
 
         负载均衡器关联的后端云服务器组ID的列表。
 
@@ -381,7 +381,7 @@ class LoadbalancerResp:
 
     @property
     def provider(self):
-        """Gets the provider of this LoadbalancerResp.
+        r"""Gets the provider of this LoadbalancerResp.
 
         负载均衡器的供应者名称。只支持vlb
 
@@ -392,7 +392,7 @@ class LoadbalancerResp:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this LoadbalancerResp.
+        r"""Sets the provider of this LoadbalancerResp.
 
         负载均衡器的供应者名称。只支持vlb
 
@@ -403,7 +403,7 @@ class LoadbalancerResp:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this LoadbalancerResp.
+        r"""Gets the operating_status of this LoadbalancerResp.
 
         负载均衡器的操作状态
 
@@ -414,7 +414,7 @@ class LoadbalancerResp:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this LoadbalancerResp.
+        r"""Sets the operating_status of this LoadbalancerResp.
 
         负载均衡器的操作状态
 
@@ -425,7 +425,7 @@ class LoadbalancerResp:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this LoadbalancerResp.
+        r"""Gets the provisioning_status of this LoadbalancerResp.
 
         负载均衡器的配置状态
 
@@ -436,7 +436,7 @@ class LoadbalancerResp:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this LoadbalancerResp.
+        r"""Sets the provisioning_status of this LoadbalancerResp.
 
         负载均衡器的配置状态
 
@@ -447,7 +447,7 @@ class LoadbalancerResp:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this LoadbalancerResp.
+        r"""Gets the admin_state_up of this LoadbalancerResp.
 
         负载均衡器的管理状态。只支持设定为true，该字段的值无实际意义。
 
@@ -458,7 +458,7 @@ class LoadbalancerResp:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this LoadbalancerResp.
+        r"""Sets the admin_state_up of this LoadbalancerResp.
 
         负载均衡器的管理状态。只支持设定为true，该字段的值无实际意义。
 
@@ -469,7 +469,7 @@ class LoadbalancerResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this LoadbalancerResp.
+        r"""Gets the created_at of this LoadbalancerResp.
 
         负载均衡器的创建时间
 
@@ -480,7 +480,7 @@ class LoadbalancerResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this LoadbalancerResp.
+        r"""Sets the created_at of this LoadbalancerResp.
 
         负载均衡器的创建时间
 
@@ -491,7 +491,7 @@ class LoadbalancerResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this LoadbalancerResp.
+        r"""Gets the updated_at of this LoadbalancerResp.
 
         负载均衡器的更新时间
 
@@ -502,7 +502,7 @@ class LoadbalancerResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this LoadbalancerResp.
+        r"""Sets the updated_at of this LoadbalancerResp.
 
         负载均衡器的更新时间
 
@@ -513,7 +513,7 @@ class LoadbalancerResp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this LoadbalancerResp.
+        r"""Gets the enterprise_project_id of this LoadbalancerResp.
 
         负载均衡器的企业项目ID。
 
@@ -524,7 +524,7 @@ class LoadbalancerResp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this LoadbalancerResp.
+        r"""Sets the enterprise_project_id of this LoadbalancerResp.
 
         负载均衡器的企业项目ID。
 
@@ -535,7 +535,7 @@ class LoadbalancerResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this LoadbalancerResp.
+        r"""Gets the project_id of this LoadbalancerResp.
 
         负载均衡器所在的项目ID。
 
@@ -546,7 +546,7 @@ class LoadbalancerResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this LoadbalancerResp.
+        r"""Sets the project_id of this LoadbalancerResp.
 
         负载均衡器所在的项目ID。
 
@@ -557,7 +557,7 @@ class LoadbalancerResp:
 
     @property
     def tags(self):
-        """Gets the tags of this LoadbalancerResp.
+        r"""Gets the tags of this LoadbalancerResp.
 
         负载均衡器的标签列表
 
@@ -568,7 +568,7 @@ class LoadbalancerResp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this LoadbalancerResp.
+        r"""Sets the tags of this LoadbalancerResp.
 
         负载均衡器的标签列表
 
@@ -579,7 +579,7 @@ class LoadbalancerResp:
 
     @property
     def publicips(self):
-        """Gets the publicips of this LoadbalancerResp.
+        r"""Gets the publicips of this LoadbalancerResp.
 
         负载均衡器绑定的公网IP。只支持绑定一个公网IP。
 
@@ -590,7 +590,7 @@ class LoadbalancerResp:
 
     @publicips.setter
     def publicips(self, publicips):
-        """Sets the publicips of this LoadbalancerResp.
+        r"""Sets the publicips of this LoadbalancerResp.
 
         负载均衡器绑定的公网IP。只支持绑定一个公网IP。
 
@@ -601,7 +601,7 @@ class LoadbalancerResp:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this LoadbalancerResp.
+        r"""Gets the charge_mode of this LoadbalancerResp.
 
         收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：弹性扩缩容实例该字段无效，按lcu收费；包周期实例该字段无效，按预付费收费。
 
@@ -612,7 +612,7 @@ class LoadbalancerResp:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this LoadbalancerResp.
+        r"""Sets the charge_mode of this LoadbalancerResp.
 
         收费模式。取值：  flavor：按规格计费 lcu：按使用量计费 说明：弹性扩缩容实例该字段无效，按lcu收费；包周期实例该字段无效，按预付费收费。
 
@@ -623,7 +623,7 @@ class LoadbalancerResp:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this LoadbalancerResp.
+        r"""Gets the billing_info of this LoadbalancerResp.
 
         资源账单信息，取值：     - 空：按需计费。     - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id。
 
@@ -634,7 +634,7 @@ class LoadbalancerResp:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this LoadbalancerResp.
+        r"""Sets the billing_info of this LoadbalancerResp.
 
         资源账单信息，取值：     - 空：按需计费。     - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id。
 
@@ -645,7 +645,7 @@ class LoadbalancerResp:
 
     @property
     def frozen_scene(self):
-        """Gets the frozen_scene of this LoadbalancerResp.
+        r"""Gets the frozen_scene of this LoadbalancerResp.
 
         负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。取值：  POLICE：公安冻结场景。 ILLEGAL：违规冻结场景。 VERIFY：客户未实名认证冻结场景。 PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 AREAR：欠费冻结场景。
 
@@ -656,7 +656,7 @@ class LoadbalancerResp:
 
     @frozen_scene.setter
     def frozen_scene(self, frozen_scene):
-        """Sets the frozen_scene of this LoadbalancerResp.
+        r"""Sets the frozen_scene of this LoadbalancerResp.
 
         负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。取值：  POLICE：公安冻结场景。 ILLEGAL：违规冻结场景。 VERIFY：客户未实名认证冻结场景。 PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 AREAR：欠费冻结场景。
 
@@ -667,7 +667,7 @@ class LoadbalancerResp:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this LoadbalancerResp.
+        r"""Gets the protection_status of this LoadbalancerResp.
 
         修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
 
@@ -678,7 +678,7 @@ class LoadbalancerResp:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this LoadbalancerResp.
+        r"""Sets the protection_status of this LoadbalancerResp.
 
         修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
 
@@ -689,7 +689,7 @@ class LoadbalancerResp:
 
     @property
     def protection_reason(self):
-        """Gets the protection_reason of this LoadbalancerResp.
+        r"""Gets the protection_reason of this LoadbalancerResp.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 
@@ -700,7 +700,7 @@ class LoadbalancerResp:
 
     @protection_reason.setter
     def protection_reason(self, protection_reason):
-        """Sets the protection_reason of this LoadbalancerResp.
+        r"""Sets the protection_reason of this LoadbalancerResp.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 

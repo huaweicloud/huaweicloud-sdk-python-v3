@@ -39,7 +39,7 @@ class QueueDetails:
     }
 
     def __init__(self, vhost=None, name=None, durable=None, auto_delete=None, messages=None, consumers=None, policy=None, arguments=None):
-        """QueueDetails
+        r"""QueueDetails
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class QueueDetails:
 
     @property
     def vhost(self):
-        """Gets the vhost of this QueueDetails.
+        r"""Gets the vhost of this QueueDetails.
 
         Queue所属Vhost名称
 
@@ -103,7 +103,7 @@ class QueueDetails:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this QueueDetails.
+        r"""Sets the vhost of this QueueDetails.
 
         Queue所属Vhost名称
 
@@ -114,7 +114,7 @@ class QueueDetails:
 
     @property
     def name(self):
-        """Gets the name of this QueueDetails.
+        r"""Gets the name of this QueueDetails.
 
         Queue名称
 
@@ -125,7 +125,7 @@ class QueueDetails:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueueDetails.
+        r"""Sets the name of this QueueDetails.
 
         Queue名称
 
@@ -136,7 +136,7 @@ class QueueDetails:
 
     @property
     def durable(self):
-        """Gets the durable of this QueueDetails.
+        r"""Gets the durable of this QueueDetails.
 
         是否持久化
 
@@ -147,7 +147,7 @@ class QueueDetails:
 
     @durable.setter
     def durable(self, durable):
-        """Sets the durable of this QueueDetails.
+        r"""Sets the durable of this QueueDetails.
 
         是否持久化
 
@@ -158,7 +158,7 @@ class QueueDetails:
 
     @property
     def auto_delete(self):
-        """Gets the auto_delete of this QueueDetails.
+        r"""Gets the auto_delete of this QueueDetails.
 
         是否自动删除
 
@@ -169,7 +169,7 @@ class QueueDetails:
 
     @auto_delete.setter
     def auto_delete(self, auto_delete):
-        """Sets the auto_delete of this QueueDetails.
+        r"""Sets the auto_delete of this QueueDetails.
 
         是否自动删除
 
@@ -180,7 +180,7 @@ class QueueDetails:
 
     @property
     def messages(self):
-        """Gets the messages of this QueueDetails.
+        r"""Gets the messages of this QueueDetails.
 
         待消费消息数
 
@@ -191,7 +191,7 @@ class QueueDetails:
 
     @messages.setter
     def messages(self, messages):
-        """Sets the messages of this QueueDetails.
+        r"""Sets the messages of this QueueDetails.
 
         待消费消息数
 
@@ -202,7 +202,7 @@ class QueueDetails:
 
     @property
     def consumers(self):
-        """Gets the consumers of this QueueDetails.
+        r"""Gets the consumers of this QueueDetails.
 
         连接的消费者数
 
@@ -213,7 +213,7 @@ class QueueDetails:
 
     @consumers.setter
     def consumers(self, consumers):
-        """Sets the consumers of this QueueDetails.
+        r"""Sets the consumers of this QueueDetails.
 
         连接的消费者数
 
@@ -224,7 +224,7 @@ class QueueDetails:
 
     @property
     def policy(self):
-        """Gets the policy of this QueueDetails.
+        r"""Gets the policy of this QueueDetails.
 
         策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk)
 
@@ -235,7 +235,7 @@ class QueueDetails:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this QueueDetails.
+        r"""Sets the policy of this QueueDetails.
 
         策略[（AMQP版本不支持policy，不涉及此参数）](tag:hws,hws_hk)
 
@@ -246,7 +246,7 @@ class QueueDetails:
 
     @property
     def arguments(self):
-        """Gets the arguments of this QueueDetails.
+        r"""Gets the arguments of this QueueDetails.
 
         :return: The arguments of this QueueDetails.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.QueueArguments`
@@ -255,7 +255,7 @@ class QueueDetails:
 
     @arguments.setter
     def arguments(self, arguments):
-        """Sets the arguments of this QueueDetails.
+        r"""Sets the arguments of this QueueDetails.
 
         :param arguments: The arguments of this QueueDetails.
         :type arguments: :class:`huaweicloudsdkrabbitmq.v2.QueueArguments`

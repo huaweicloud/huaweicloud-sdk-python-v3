@@ -37,7 +37,7 @@ class HttpCcRuleCondition:
     }
 
     def __init__(self, category=None, index=None, contents=None, logic_operation=None, value_list_id=None, size=None, check_all_indexes_logic=None):
-        """HttpCcRuleCondition
+        r"""HttpCcRuleCondition
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class HttpCcRuleCondition:
 
     @property
     def category(self):
-        """Gets the category of this HttpCcRuleCondition.
+        r"""Gets the category of this HttpCcRuleCondition.
 
         防护规则字段
 
@@ -94,7 +94,7 @@ class HttpCcRuleCondition:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this HttpCcRuleCondition.
+        r"""Sets the category of this HttpCcRuleCondition.
 
         防护规则字段
 
@@ -105,7 +105,7 @@ class HttpCcRuleCondition:
 
     @property
     def index(self):
-        """Gets the index of this HttpCcRuleCondition.
+        r"""Gets the index of this HttpCcRuleCondition.
 
         子字段，当字段类型（category）选择“params”、“cookie”、“header”时，请根据实际需求配置子字段且该参数必填。
 
@@ -116,7 +116,7 @@ class HttpCcRuleCondition:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this HttpCcRuleCondition.
+        r"""Sets the index of this HttpCcRuleCondition.
 
         子字段，当字段类型（category）选择“params”、“cookie”、“header”时，请根据实际需求配置子字段且该参数必填。
 
@@ -127,7 +127,7 @@ class HttpCcRuleCondition:
 
     @property
     def contents(self):
-        """Gets the contents of this HttpCcRuleCondition.
+        r"""Gets the contents of this HttpCcRuleCondition.
 
         条件列表逻辑匹配内容。当logic_operation参数不以any或者all结尾时，需要传该参数。
 
@@ -138,7 +138,7 @@ class HttpCcRuleCondition:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this HttpCcRuleCondition.
+        r"""Sets the contents of this HttpCcRuleCondition.
 
         条件列表逻辑匹配内容。当logic_operation参数不以any或者all结尾时，需要传该参数。
 
@@ -149,7 +149,7 @@ class HttpCcRuleCondition:
 
     @property
     def logic_operation(self):
-        """Gets the logic_operation of this HttpCcRuleCondition.
+        r"""Gets the logic_operation of this HttpCcRuleCondition.
 
         条件列表匹配逻辑。   -  如果字段类型category是url， 匹配逻辑可以为：contain、 not_contain、 equal、 not_equal、 prefix、 not_prefix、 suffix、 not_suffix、 contain_any、 not_contain_all、 equal_any、 not_equal_all、 equal_any、 not_equal_all、 prefix_any、 not_prefix_all、 suffix_any、 not_suffix_all、 len_greater、 len_less、len_equal或者len_not_equal   - 如果字段类型category是ip或者ipv6，匹配逻辑可以为： equal、not_equal、equal_any或者not_equal_all   - 如果字段类型category是params、cookie或者header, 匹配逻辑可以为：contain、 not_contain、 equal、 not_equal、 prefix、 not_prefix、 suffix、 not_suffix、 contain_any、 not_contain_all、 equal_any、not_equal_all、 equal_any、 not_equal_all、 prefix_any、 not_prefix_all、 suffix_any、 not_suffix_all、 len_greater、 len_less、len_equal、len_not_equal、、num_greater、num_less、num_equal、num_not_equal、exist或者not_exist
 
@@ -160,7 +160,7 @@ class HttpCcRuleCondition:
 
     @logic_operation.setter
     def logic_operation(self, logic_operation):
-        """Sets the logic_operation of this HttpCcRuleCondition.
+        r"""Sets the logic_operation of this HttpCcRuleCondition.
 
         条件列表匹配逻辑。   -  如果字段类型category是url， 匹配逻辑可以为：contain、 not_contain、 equal、 not_equal、 prefix、 not_prefix、 suffix、 not_suffix、 contain_any、 not_contain_all、 equal_any、 not_equal_all、 equal_any、 not_equal_all、 prefix_any、 not_prefix_all、 suffix_any、 not_suffix_all、 len_greater、 len_less、len_equal或者len_not_equal   - 如果字段类型category是ip或者ipv6，匹配逻辑可以为： equal、not_equal、equal_any或者not_equal_all   - 如果字段类型category是params、cookie或者header, 匹配逻辑可以为：contain、 not_contain、 equal、 not_equal、 prefix、 not_prefix、 suffix、 not_suffix、 contain_any、 not_contain_all、 equal_any、not_equal_all、 equal_any、 not_equal_all、 prefix_any、 not_prefix_all、 suffix_any、 not_suffix_all、 len_greater、 len_less、len_equal、len_not_equal、、num_greater、num_less、num_equal、num_not_equal、exist或者not_exist
 
@@ -171,7 +171,7 @@ class HttpCcRuleCondition:
 
     @property
     def value_list_id(self):
-        """Gets the value_list_id of this HttpCcRuleCondition.
+        r"""Gets the value_list_id of this HttpCcRuleCondition.
 
         引用表id。当logic_operation参数以any或者all结尾时，需要传该参数。此外，引用表类型要与category类型保持一致。
 
@@ -182,7 +182,7 @@ class HttpCcRuleCondition:
 
     @value_list_id.setter
     def value_list_id(self, value_list_id):
-        """Sets the value_list_id of this HttpCcRuleCondition.
+        r"""Sets the value_list_id of this HttpCcRuleCondition.
 
         引用表id。当logic_operation参数以any或者all结尾时，需要传该参数。此外，引用表类型要与category类型保持一致。
 
@@ -193,7 +193,7 @@ class HttpCcRuleCondition:
 
     @property
     def size(self):
-        """Gets the size of this HttpCcRuleCondition.
+        r"""Gets the size of this HttpCcRuleCondition.
 
         若防护规则涉及阈值，即使用该字段
 
@@ -204,7 +204,7 @@ class HttpCcRuleCondition:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this HttpCcRuleCondition.
+        r"""Sets the size of this HttpCcRuleCondition.
 
         若防护规则涉及阈值，即使用该字段
 
@@ -215,7 +215,7 @@ class HttpCcRuleCondition:
 
     @property
     def check_all_indexes_logic(self):
-        """Gets the check_all_indexes_logic of this HttpCcRuleCondition.
+        r"""Gets the check_all_indexes_logic of this HttpCcRuleCondition.
 
         - 1：所有子字段 - 2：任意子字段 
 
@@ -226,7 +226,7 @@ class HttpCcRuleCondition:
 
     @check_all_indexes_logic.setter
     def check_all_indexes_logic(self, check_all_indexes_logic):
-        """Sets the check_all_indexes_logic of this HttpCcRuleCondition.
+        r"""Sets the check_all_indexes_logic of this HttpCcRuleCondition.
 
         - 1：所有子字段 - 2：任意子字段 
 

@@ -25,7 +25,7 @@ class KeystoneShowEndpointRequest:
     }
 
     def __init__(self, endpoint_id=None):
-        """KeystoneShowEndpointRequest
+        r"""KeystoneShowEndpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneShowEndpointRequest:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this KeystoneShowEndpointRequest.
+        r"""Gets the endpoint_id of this KeystoneShowEndpointRequest.
 
         待查询的终端节点ID。
 
@@ -53,7 +53,7 @@ class KeystoneShowEndpointRequest:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this KeystoneShowEndpointRequest.
+        r"""Sets the endpoint_id of this KeystoneShowEndpointRequest.
 
         待查询的终端节点ID。
 

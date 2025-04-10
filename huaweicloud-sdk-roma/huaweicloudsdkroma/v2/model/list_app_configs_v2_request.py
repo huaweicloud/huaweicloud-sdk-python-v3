@@ -35,7 +35,7 @@ class ListAppConfigsV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, app_id=None, config_name=None, roma_app_name=None):
-        """ListAppConfigsV2Request
+        r"""ListAppConfigsV2Request
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListAppConfigsV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAppConfigsV2Request.
+        r"""Gets the instance_id of this ListAppConfigsV2Request.
 
         实例ID
 
@@ -88,7 +88,7 @@ class ListAppConfigsV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAppConfigsV2Request.
+        r"""Sets the instance_id of this ListAppConfigsV2Request.
 
         实例ID
 
@@ -99,7 +99,7 @@ class ListAppConfigsV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppConfigsV2Request.
+        r"""Gets the offset of this ListAppConfigsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -110,7 +110,7 @@ class ListAppConfigsV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppConfigsV2Request.
+        r"""Sets the offset of this ListAppConfigsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -121,7 +121,7 @@ class ListAppConfigsV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppConfigsV2Request.
+        r"""Gets the limit of this ListAppConfigsV2Request.
 
         每页显示的条目数量
 
@@ -132,7 +132,7 @@ class ListAppConfigsV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppConfigsV2Request.
+        r"""Sets the limit of this ListAppConfigsV2Request.
 
         每页显示的条目数量
 
@@ -143,7 +143,7 @@ class ListAppConfigsV2Request:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListAppConfigsV2Request.
+        r"""Gets the app_id of this ListAppConfigsV2Request.
 
         应用编号
 
@@ -154,7 +154,7 @@ class ListAppConfigsV2Request:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListAppConfigsV2Request.
+        r"""Sets the app_id of this ListAppConfigsV2Request.
 
         应用编号
 
@@ -165,7 +165,7 @@ class ListAppConfigsV2Request:
 
     @property
     def config_name(self):
-        """Gets the config_name of this ListAppConfigsV2Request.
+        r"""Gets the config_name of this ListAppConfigsV2Request.
 
         应用配置名称
 
@@ -176,7 +176,7 @@ class ListAppConfigsV2Request:
 
     @config_name.setter
     def config_name(self, config_name):
-        """Sets the config_name of this ListAppConfigsV2Request.
+        r"""Sets the config_name of this ListAppConfigsV2Request.
 
         应用配置名称
 
@@ -187,7 +187,7 @@ class ListAppConfigsV2Request:
 
     @property
     def roma_app_name(self):
-        """Gets the roma_app_name of this ListAppConfigsV2Request.
+        r"""Gets the roma_app_name of this ListAppConfigsV2Request.
 
         应用名称
 
@@ -198,7 +198,7 @@ class ListAppConfigsV2Request:
 
     @roma_app_name.setter
     def roma_app_name(self, roma_app_name):
-        """Sets the roma_app_name of this ListAppConfigsV2Request.
+        r"""Sets the roma_app_name of this ListAppConfigsV2Request.
 
         应用名称
 

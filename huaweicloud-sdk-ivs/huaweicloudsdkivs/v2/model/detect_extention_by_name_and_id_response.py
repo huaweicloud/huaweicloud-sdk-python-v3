@@ -30,7 +30,7 @@ class DetectExtentionByNameAndIdResponse(SdkResponse):
     }
 
     def __init__(self, meta=None, result=None, x_request_id=None):
-        """DetectExtentionByNameAndIdResponse
+        r"""DetectExtentionByNameAndIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DetectExtentionByNameAndIdResponse(SdkResponse):
 
     @property
     def meta(self):
-        """Gets the meta of this DetectExtentionByNameAndIdResponse.
+        r"""Gets the meta of this DetectExtentionByNameAndIdResponse.
 
         :return: The meta of this DetectExtentionByNameAndIdResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.Meta`
@@ -67,7 +67,7 @@ class DetectExtentionByNameAndIdResponse(SdkResponse):
 
     @meta.setter
     def meta(self, meta):
-        """Sets the meta of this DetectExtentionByNameAndIdResponse.
+        r"""Sets the meta of this DetectExtentionByNameAndIdResponse.
 
         :param meta: The meta of this DetectExtentionByNameAndIdResponse.
         :type meta: :class:`huaweicloudsdkivs.v2.Meta`
@@ -76,7 +76,7 @@ class DetectExtentionByNameAndIdResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DetectExtentionByNameAndIdResponse.
+        r"""Gets the result of this DetectExtentionByNameAndIdResponse.
 
         :return: The result of this DetectExtentionByNameAndIdResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsExtentionByNameAndIdResponseBodyResult`
@@ -85,7 +85,7 @@ class DetectExtentionByNameAndIdResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DetectExtentionByNameAndIdResponse.
+        r"""Sets the result of this DetectExtentionByNameAndIdResponse.
 
         :param result: The result of this DetectExtentionByNameAndIdResponse.
         :type result: :class:`huaweicloudsdkivs.v2.IvsExtentionByNameAndIdResponseBodyResult`
@@ -94,7 +94,7 @@ class DetectExtentionByNameAndIdResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DetectExtentionByNameAndIdResponse.
+        r"""Gets the x_request_id of this DetectExtentionByNameAndIdResponse.
 
         :return: The x_request_id of this DetectExtentionByNameAndIdResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class DetectExtentionByNameAndIdResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DetectExtentionByNameAndIdResponse.
+        r"""Sets the x_request_id of this DetectExtentionByNameAndIdResponse.
 
         :param x_request_id: The x_request_id of this DetectExtentionByNameAndIdResponse.
         :type x_request_id: str

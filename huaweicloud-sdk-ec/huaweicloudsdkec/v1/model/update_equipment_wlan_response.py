@@ -41,7 +41,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
     }
 
     def __init__(self, support_wlan=None, wlan_enabled=None, name=None, security_enabled=None, password=None, authentication_method=None, encrption_method=None, name_hided=None):
-        """UpdateEquipmentWlanResponse
+        r"""UpdateEquipmentWlanResponse
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @property
     def support_wlan(self):
-        """Gets the support_wlan of this UpdateEquipmentWlanResponse.
+        r"""Gets the support_wlan of this UpdateEquipmentWlanResponse.
 
         是否支持wlan，提供给UI识别是否显示Wi-Fi配置页面
 
@@ -105,7 +105,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @support_wlan.setter
     def support_wlan(self, support_wlan):
-        """Sets the support_wlan of this UpdateEquipmentWlanResponse.
+        r"""Sets the support_wlan of this UpdateEquipmentWlanResponse.
 
         是否支持wlan，提供给UI识别是否显示Wi-Fi配置页面
 
@@ -116,7 +116,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @property
     def wlan_enabled(self):
-        """Gets the wlan_enabled of this UpdateEquipmentWlanResponse.
+        r"""Gets the wlan_enabled of this UpdateEquipmentWlanResponse.
 
         是否使能wlan，取值为true时，必须填写name、security_enabled、name_hided
 
@@ -127,7 +127,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @wlan_enabled.setter
     def wlan_enabled(self, wlan_enabled):
-        """Sets the wlan_enabled of this UpdateEquipmentWlanResponse.
+        r"""Sets the wlan_enabled of this UpdateEquipmentWlanResponse.
 
         是否使能wlan，取值为true时，必须填写name、security_enabled、name_hided
 
@@ -138,7 +138,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateEquipmentWlanResponse.
+        r"""Gets the name of this UpdateEquipmentWlanResponse.
 
         Wi-Fi名称，长度1-32个字符，不支持中文字符，特殊字符只支持!~@_.?
 
@@ -149,7 +149,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateEquipmentWlanResponse.
+        r"""Sets the name of this UpdateEquipmentWlanResponse.
 
         Wi-Fi名称，长度1-32个字符，不支持中文字符，特殊字符只支持!~@_.?
 
@@ -160,7 +160,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @property
     def security_enabled(self):
-        """Gets the security_enabled of this UpdateEquipmentWlanResponse.
+        r"""Gets the security_enabled of this UpdateEquipmentWlanResponse.
 
         是否开启无线安全，取值为true时，必须填写authentication_method、encrption_method
 
@@ -171,7 +171,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @security_enabled.setter
     def security_enabled(self, security_enabled):
-        """Sets the security_enabled of this UpdateEquipmentWlanResponse.
+        r"""Sets the security_enabled of this UpdateEquipmentWlanResponse.
 
         是否开启无线安全，取值为true时，必须填写authentication_method、encrption_method
 
@@ -182,7 +182,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @property
     def password(self):
-        """Gets the password of this UpdateEquipmentWlanResponse.
+        r"""Gets the password of this UpdateEquipmentWlanResponse.
 
         Wi-Fi密码，长度8-63个字符，包含大写字母、小写字母、数字、特殊字符中至少两种，不能和Wi-Fi名称及名称逆序相同，特殊字符只支持!~@_.?
 
@@ -193,7 +193,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @password.setter
     def password(self, password):
-        """Sets the password of this UpdateEquipmentWlanResponse.
+        r"""Sets the password of this UpdateEquipmentWlanResponse.
 
         Wi-Fi密码，长度8-63个字符，包含大写字母、小写字母、数字、特殊字符中至少两种，不能和Wi-Fi名称及名称逆序相同，特殊字符只支持!~@_.?
 
@@ -204,7 +204,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @property
     def authentication_method(self):
-        """Gets the authentication_method of this UpdateEquipmentWlanResponse.
+        r"""Gets the authentication_method of this UpdateEquipmentWlanResponse.
 
         认证类型
 
@@ -215,7 +215,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @authentication_method.setter
     def authentication_method(self, authentication_method):
-        """Sets the authentication_method of this UpdateEquipmentWlanResponse.
+        r"""Sets the authentication_method of this UpdateEquipmentWlanResponse.
 
         认证类型
 
@@ -226,7 +226,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @property
     def encrption_method(self):
-        """Gets the encrption_method of this UpdateEquipmentWlanResponse.
+        r"""Gets the encrption_method of this UpdateEquipmentWlanResponse.
 
         加密方式，认证类型为WPA或者WPA2时，可选TKIP、AES
 
@@ -237,7 +237,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @encrption_method.setter
     def encrption_method(self, encrption_method):
-        """Sets the encrption_method of this UpdateEquipmentWlanResponse.
+        r"""Sets the encrption_method of this UpdateEquipmentWlanResponse.
 
         加密方式，认证类型为WPA或者WPA2时，可选TKIP、AES
 
@@ -248,7 +248,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @property
     def name_hided(self):
-        """Gets the name_hided of this UpdateEquipmentWlanResponse.
+        r"""Gets the name_hided of this UpdateEquipmentWlanResponse.
 
         是否隐藏Wi-Fi名称
 
@@ -259,7 +259,7 @@ class UpdateEquipmentWlanResponse(SdkResponse):
 
     @name_hided.setter
     def name_hided(self, name_hided):
-        """Sets the name_hided of this UpdateEquipmentWlanResponse.
+        r"""Sets the name_hided of this UpdateEquipmentWlanResponse.
 
         是否隐藏Wi-Fi名称
 

@@ -35,7 +35,7 @@ class ListSqlLimitRulesRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, datastore_type=None, database_name=None, x_language=None):
-        """ListSqlLimitRulesRequest
+        r"""ListSqlLimitRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListSqlLimitRulesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSqlLimitRulesRequest.
+        r"""Gets the instance_id of this ListSqlLimitRulesRequest.
 
         实例ID
 
@@ -87,7 +87,7 @@ class ListSqlLimitRulesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSqlLimitRulesRequest.
+        r"""Sets the instance_id of this ListSqlLimitRulesRequest.
 
         实例ID
 
@@ -98,7 +98,7 @@ class ListSqlLimitRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSqlLimitRulesRequest.
+        r"""Gets the offset of this ListSqlLimitRulesRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -109,7 +109,7 @@ class ListSqlLimitRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSqlLimitRulesRequest.
+        r"""Sets the offset of this ListSqlLimitRulesRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -120,7 +120,7 @@ class ListSqlLimitRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSqlLimitRulesRequest.
+        r"""Gets the limit of this ListSqlLimitRulesRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -131,7 +131,7 @@ class ListSqlLimitRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSqlLimitRulesRequest.
+        r"""Sets the limit of this ListSqlLimitRulesRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -142,7 +142,7 @@ class ListSqlLimitRulesRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListSqlLimitRulesRequest.
+        r"""Gets the datastore_type of this ListSqlLimitRulesRequest.
 
         数据库类型
 
@@ -153,7 +153,7 @@ class ListSqlLimitRulesRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListSqlLimitRulesRequest.
+        r"""Sets the datastore_type of this ListSqlLimitRulesRequest.
 
         数据库类型
 
@@ -164,7 +164,7 @@ class ListSqlLimitRulesRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListSqlLimitRulesRequest.
+        r"""Gets the database_name of this ListSqlLimitRulesRequest.
 
         数据库名（PostgreSQL必填）
 
@@ -175,7 +175,7 @@ class ListSqlLimitRulesRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListSqlLimitRulesRequest.
+        r"""Sets the database_name of this ListSqlLimitRulesRequest.
 
         数据库名（PostgreSQL必填）
 
@@ -186,7 +186,7 @@ class ListSqlLimitRulesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListSqlLimitRulesRequest.
+        r"""Gets the x_language of this ListSqlLimitRulesRequest.
 
         语言
 
@@ -197,7 +197,7 @@ class ListSqlLimitRulesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListSqlLimitRulesRequest.
+        r"""Sets the x_language of this ListSqlLimitRulesRequest.
 
         语言
 

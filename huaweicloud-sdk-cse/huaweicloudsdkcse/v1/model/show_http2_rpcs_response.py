@@ -28,7 +28,7 @@ class ShowHttp2RpcsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None):
-        """ShowHttp2RpcsResponse
+        r"""ShowHttp2RpcsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowHttp2RpcsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowHttp2RpcsResponse.
+        r"""Gets the total of this ShowHttp2RpcsResponse.
 
         http2Rpc 总数。
 
@@ -62,7 +62,7 @@ class ShowHttp2RpcsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowHttp2RpcsResponse.
+        r"""Sets the total of this ShowHttp2RpcsResponse.
 
         http2Rpc 总数。
 
@@ -73,7 +73,7 @@ class ShowHttp2RpcsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowHttp2RpcsResponse.
+        r"""Gets the data of this ShowHttp2RpcsResponse.
 
         Http2Rpc 详细信息。
 
@@ -84,7 +84,7 @@ class ShowHttp2RpcsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowHttp2RpcsResponse.
+        r"""Sets the data of this ShowHttp2RpcsResponse.
 
         Http2Rpc 详细信息。
 

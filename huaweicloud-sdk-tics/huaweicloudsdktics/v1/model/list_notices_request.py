@@ -27,7 +27,7 @@ class ListNoticesRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListNoticesRequest
+        r"""ListNoticesRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListNoticesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNoticesRequest.
+        r"""Gets the limit of this ListNoticesRequest.
 
         每页记录数，取值0-100
 
@@ -59,7 +59,7 @@ class ListNoticesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNoticesRequest.
+        r"""Sets the limit of this ListNoticesRequest.
 
         每页记录数，取值0-100
 
@@ -70,7 +70,7 @@ class ListNoticesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNoticesRequest.
+        r"""Gets the offset of this ListNoticesRequest.
 
         记录数偏移量 
 
@@ -81,7 +81,7 @@ class ListNoticesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNoticesRequest.
+        r"""Sets the offset of this ListNoticesRequest.
 
         记录数偏移量 
 

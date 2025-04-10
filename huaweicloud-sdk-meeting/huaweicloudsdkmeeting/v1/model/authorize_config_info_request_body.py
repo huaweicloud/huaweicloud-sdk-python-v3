@@ -59,7 +59,7 @@ class AuthorizeConfigInfoRequestBody:
     }
 
     def __init__(self, enable_sso=None, domain=None, authorize_url=None, get_token_url=None, client_id=None, client_secret=None, scope=None, acc_field_name=None, get_user_info_url=None, oauth2_server_type=None, pc_schema_url=None, android_schema_url=None, ios_schema_url=None, third_name=None, third_email=None, third_mobile=None, third_access_token=None, third_head_img_url=None):
-        """AuthorizeConfigInfoRequestBody
+        r"""AuthorizeConfigInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -161,7 +161,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def enable_sso(self):
-        """Gets the enable_sso of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the enable_sso of this AuthorizeConfigInfoRequestBody.
 
         是否开启SSO登录。
 
@@ -172,7 +172,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @enable_sso.setter
     def enable_sso(self, enable_sso):
-        """Sets the enable_sso of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the enable_sso of this AuthorizeConfigInfoRequestBody.
 
         是否开启SSO登录。
 
@@ -183,7 +183,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def domain(self):
-        """Gets the domain of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the domain of this AuthorizeConfigInfoRequestBody.
 
         企业域名 > 开启SSO登录时必填 
 
@@ -194,7 +194,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the domain of this AuthorizeConfigInfoRequestBody.
 
         企业域名 > 开启SSO登录时必填 
 
@@ -205,7 +205,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def authorize_url(self):
-        """Gets the authorize_url of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the authorize_url of this AuthorizeConfigInfoRequestBody.
 
         鉴权中心URL。 > 开启SSO登录时必填 
 
@@ -216,7 +216,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @authorize_url.setter
     def authorize_url(self, authorize_url):
-        """Sets the authorize_url of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the authorize_url of this AuthorizeConfigInfoRequestBody.
 
         鉴权中心URL。 > 开启SSO登录时必填 
 
@@ -227,7 +227,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def get_token_url(self):
-        """Gets the get_token_url of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the get_token_url of this AuthorizeConfigInfoRequestBody.
 
         获取Token URL。 > 开启SSO登录时必填 
 
@@ -238,7 +238,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @get_token_url.setter
     def get_token_url(self, get_token_url):
-        """Sets the get_token_url of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the get_token_url of this AuthorizeConfigInfoRequestBody.
 
         获取Token URL。 > 开启SSO登录时必填 
 
@@ -249,7 +249,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def client_id(self):
-        """Gets the client_id of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the client_id of this AuthorizeConfigInfoRequestBody.
 
         APP ID。 > 开启SSO登录时必填 
 
@@ -260,7 +260,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the client_id of this AuthorizeConfigInfoRequestBody.
 
         APP ID。 > 开启SSO登录时必填 
 
@@ -271,7 +271,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def client_secret(self):
-        """Gets the client_secret of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the client_secret of this AuthorizeConfigInfoRequestBody.
 
         APP秘钥。 > 开启SSO登录时，当getTokenUrl或者getUserInfoUrl有变更时必填 > 开启SSO登录时，当getTokenUrl和getUserInfoUrl未变更时，且不修改APP秘钥，则置空即可 
 
@@ -282,7 +282,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @client_secret.setter
     def client_secret(self, client_secret):
-        """Sets the client_secret of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the client_secret of this AuthorizeConfigInfoRequestBody.
 
         APP秘钥。 > 开启SSO登录时，当getTokenUrl或者getUserInfoUrl有变更时必填 > 开启SSO登录时，当getTokenUrl和getUserInfoUrl未变更时，且不修改APP秘钥，则置空即可 
 
@@ -293,7 +293,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def scope(self):
-        """Gets the scope of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the scope of this AuthorizeConfigInfoRequestBody.
 
         授权范围。 * openid：OAuth2.0的OIDC 
 
@@ -304,7 +304,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the scope of this AuthorizeConfigInfoRequestBody.
 
         授权范围。 * openid：OAuth2.0的OIDC 
 
@@ -315,7 +315,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def acc_field_name(self):
-        """Gets the acc_field_name of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the acc_field_name of this AuthorizeConfigInfoRequestBody.
 
         第三方帐号的字段名称。 > 开启SSO登录时必填 
 
@@ -326,7 +326,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @acc_field_name.setter
     def acc_field_name(self, acc_field_name):
-        """Sets the acc_field_name of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the acc_field_name of this AuthorizeConfigInfoRequestBody.
 
         第三方帐号的字段名称。 > 开启SSO登录时必填 
 
@@ -337,7 +337,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def get_user_info_url(self):
-        """Gets the get_user_info_url of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the get_user_info_url of this AuthorizeConfigInfoRequestBody.
 
         用户信息查询URL。
 
@@ -348,7 +348,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @get_user_info_url.setter
     def get_user_info_url(self, get_user_info_url):
-        """Sets the get_user_info_url of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the get_user_info_url of this AuthorizeConfigInfoRequestBody.
 
         用户信息查询URL。
 
@@ -359,7 +359,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def oauth2_server_type(self):
-        """Gets the oauth2_server_type of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the oauth2_server_type of this AuthorizeConfigInfoRequestBody.
 
         鉴权类型。 * 0：OAuth2.0鉴权 
 
@@ -370,7 +370,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @oauth2_server_type.setter
     def oauth2_server_type(self, oauth2_server_type):
-        """Sets the oauth2_server_type of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the oauth2_server_type of this AuthorizeConfigInfoRequestBody.
 
         鉴权类型。 * 0：OAuth2.0鉴权 
 
@@ -381,7 +381,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def pc_schema_url(self):
-        """Gets the pc_schema_url of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the pc_schema_url of this AuthorizeConfigInfoRequestBody.
 
         拉起PC端终端的schema。
 
@@ -392,7 +392,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @pc_schema_url.setter
     def pc_schema_url(self, pc_schema_url):
-        """Sets the pc_schema_url of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the pc_schema_url of this AuthorizeConfigInfoRequestBody.
 
         拉起PC端终端的schema。
 
@@ -403,7 +403,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def android_schema_url(self):
-        """Gets the android_schema_url of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the android_schema_url of this AuthorizeConfigInfoRequestBody.
 
         拉起安卓端终端的schema。
 
@@ -414,7 +414,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @android_schema_url.setter
     def android_schema_url(self, android_schema_url):
-        """Sets the android_schema_url of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the android_schema_url of this AuthorizeConfigInfoRequestBody.
 
         拉起安卓端终端的schema。
 
@@ -425,7 +425,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def ios_schema_url(self):
-        """Gets the ios_schema_url of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the ios_schema_url of this AuthorizeConfigInfoRequestBody.
 
         拉起ios端终端的schema。
 
@@ -436,7 +436,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @ios_schema_url.setter
     def ios_schema_url(self, ios_schema_url):
-        """Sets the ios_schema_url of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the ios_schema_url of this AuthorizeConfigInfoRequestBody.
 
         拉起ios端终端的schema。
 
@@ -447,7 +447,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def third_name(self):
-        """Gets the third_name of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the third_name of this AuthorizeConfigInfoRequestBody.
 
         第三方名称的字段名称。
 
@@ -458,7 +458,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @third_name.setter
     def third_name(self, third_name):
-        """Sets the third_name of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the third_name of this AuthorizeConfigInfoRequestBody.
 
         第三方名称的字段名称。
 
@@ -469,7 +469,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def third_email(self):
-        """Gets the third_email of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the third_email of this AuthorizeConfigInfoRequestBody.
 
         第三方邮箱的字段名称。
 
@@ -480,7 +480,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @third_email.setter
     def third_email(self, third_email):
-        """Sets the third_email of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the third_email of this AuthorizeConfigInfoRequestBody.
 
         第三方邮箱的字段名称。
 
@@ -491,7 +491,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def third_mobile(self):
-        """Gets the third_mobile of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the third_mobile of this AuthorizeConfigInfoRequestBody.
 
         第三方手机号的字段名称。
 
@@ -502,7 +502,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @third_mobile.setter
     def third_mobile(self, third_mobile):
-        """Sets the third_mobile of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the third_mobile of this AuthorizeConfigInfoRequestBody.
 
         第三方手机号的字段名称。
 
@@ -513,7 +513,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def third_access_token(self):
-        """Gets the third_access_token of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the third_access_token of this AuthorizeConfigInfoRequestBody.
 
         第三方accessToken的字段名称。 > 开启SSO登录时必填。 
 
@@ -524,7 +524,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @third_access_token.setter
     def third_access_token(self, third_access_token):
-        """Sets the third_access_token of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the third_access_token of this AuthorizeConfigInfoRequestBody.
 
         第三方accessToken的字段名称。 > 开启SSO登录时必填。 
 
@@ -535,7 +535,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @property
     def third_head_img_url(self):
-        """Gets the third_head_img_url of this AuthorizeConfigInfoRequestBody.
+        r"""Gets the third_head_img_url of this AuthorizeConfigInfoRequestBody.
 
         第三方头像链接的字段名称。
 
@@ -546,7 +546,7 @@ class AuthorizeConfigInfoRequestBody:
 
     @third_head_img_url.setter
     def third_head_img_url(self, third_head_img_url):
-        """Sets the third_head_img_url of this AuthorizeConfigInfoRequestBody.
+        r"""Sets the third_head_img_url of this AuthorizeConfigInfoRequestBody.
 
         第三方头像链接的字段名称。
 

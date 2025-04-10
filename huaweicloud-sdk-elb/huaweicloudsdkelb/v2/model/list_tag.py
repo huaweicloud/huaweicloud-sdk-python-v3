@@ -27,7 +27,7 @@ class ListTag:
     }
 
     def __init__(self, key=None, values=None):
-        """ListTag
+        r"""ListTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListTag:
 
     @property
     def key(self):
-        """Gets the key of this ListTag.
+        r"""Gets the key of this ListTag.
 
         键。最大长度36个unicode字符。 key不能为空。不能包含非打印字符\"=\"，“*”，“<”，“>”，“\\”，“,”，\"|\"，“/”。
 
@@ -59,7 +59,7 @@ class ListTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ListTag.
+        r"""Sets the key of this ListTag.
 
         键。最大长度36个unicode字符。 key不能为空。不能包含非打印字符\"=\"，“*”，“<”，“>”，“\\”，“,”，\"|\"，“/”。
 
@@ -70,7 +70,7 @@ class ListTag:
 
     @property
     def values(self):
-        """Gets the values of this ListTag.
+        r"""Gets the values of this ListTag.
 
         值列表。每个值最大长度43个unicode字符，可以为空字符串。 如果values为空列表，则表示any_value。value之间为或的关系。
 
@@ -81,7 +81,7 @@ class ListTag:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ListTag.
+        r"""Sets the values of this ListTag.
 
         值列表。每个值最大长度43个unicode字符，可以为空字符串。 如果values为空列表，则表示any_value。value之间为或的关系。
 

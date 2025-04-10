@@ -29,7 +29,7 @@ class CreatePunishmentRuleRequestBody:
     }
 
     def __init__(self, category=None, block_time=None, description=None):
-        """CreatePunishmentRuleRequestBody
+        r"""CreatePunishmentRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreatePunishmentRuleRequestBody:
 
     @property
     def category(self):
-        """Gets the category of this CreatePunishmentRuleRequestBody.
+        r"""Gets the category of this CreatePunishmentRuleRequestBody.
 
         攻击惩罚类别
 
@@ -66,7 +66,7 @@ class CreatePunishmentRuleRequestBody:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CreatePunishmentRuleRequestBody.
+        r"""Sets the category of this CreatePunishmentRuleRequestBody.
 
         攻击惩罚类别
 
@@ -77,7 +77,7 @@ class CreatePunishmentRuleRequestBody:
 
     @property
     def block_time(self):
-        """Gets the block_time of this CreatePunishmentRuleRequestBody.
+        r"""Gets the block_time of this CreatePunishmentRuleRequestBody.
 
         拦截时间，如果选择前缀为long的攻击惩罚类别，则block_time时长范围设置为301-1800;选择前缀为short的攻击惩罚类别，则block_time时长范围为0-300之间
 
@@ -88,7 +88,7 @@ class CreatePunishmentRuleRequestBody:
 
     @block_time.setter
     def block_time(self, block_time):
-        """Sets the block_time of this CreatePunishmentRuleRequestBody.
+        r"""Sets the block_time of this CreatePunishmentRuleRequestBody.
 
         拦截时间，如果选择前缀为long的攻击惩罚类别，则block_time时长范围设置为301-1800;选择前缀为short的攻击惩罚类别，则block_time时长范围为0-300之间
 
@@ -99,7 +99,7 @@ class CreatePunishmentRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreatePunishmentRuleRequestBody.
+        r"""Gets the description of this CreatePunishmentRuleRequestBody.
 
         规则描述
 
@@ -110,7 +110,7 @@ class CreatePunishmentRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePunishmentRuleRequestBody.
+        r"""Sets the description of this CreatePunishmentRuleRequestBody.
 
         规则描述
 

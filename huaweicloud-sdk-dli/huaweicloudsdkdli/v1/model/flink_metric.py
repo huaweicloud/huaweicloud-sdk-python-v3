@@ -25,7 +25,7 @@ class FlinkMetric:
     }
 
     def __init__(self, jobs=None):
-        """FlinkMetric
+        r"""FlinkMetric
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class FlinkMetric:
 
     @property
     def jobs(self):
-        """Gets the jobs of this FlinkMetric.
+        r"""Gets the jobs of this FlinkMetric.
 
         所有作业监控信息。
 
@@ -54,7 +54,7 @@ class FlinkMetric:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this FlinkMetric.
+        r"""Sets the jobs of this FlinkMetric.
 
         所有作业监控信息。
 

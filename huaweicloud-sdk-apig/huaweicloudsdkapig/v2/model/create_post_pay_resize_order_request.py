@@ -27,7 +27,7 @@ class CreatePostPayResizeOrderRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreatePostPayResizeOrderRequest
+        r"""CreatePostPayResizeOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePostPayResizeOrderRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreatePostPayResizeOrderRequest.
+        r"""Gets the instance_id of this CreatePostPayResizeOrderRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -60,7 +60,7 @@ class CreatePostPayResizeOrderRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreatePostPayResizeOrderRequest.
+        r"""Sets the instance_id of this CreatePostPayResizeOrderRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -71,7 +71,7 @@ class CreatePostPayResizeOrderRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePostPayResizeOrderRequest.
+        r"""Gets the body of this CreatePostPayResizeOrderRequest.
 
         :return: The body of this CreatePostPayResizeOrderRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.ResizeInstanceReq`
@@ -80,7 +80,7 @@ class CreatePostPayResizeOrderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePostPayResizeOrderRequest.
+        r"""Sets the body of this CreatePostPayResizeOrderRequest.
 
         :param body: The body of this CreatePostPayResizeOrderRequest.
         :type body: :class:`huaweicloudsdkapig.v2.ResizeInstanceReq`

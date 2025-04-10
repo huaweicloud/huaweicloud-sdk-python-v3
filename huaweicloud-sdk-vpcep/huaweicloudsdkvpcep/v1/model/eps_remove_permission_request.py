@@ -25,7 +25,7 @@ class EpsRemovePermissionRequest:
     }
 
     def __init__(self, id=None):
-        """EpsRemovePermissionRequest
+        r"""EpsRemovePermissionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EpsRemovePermissionRequest:
 
     @property
     def id(self):
-        """Gets the id of this EpsRemovePermissionRequest.
+        r"""Gets the id of this EpsRemovePermissionRequest.
 
         终端节点服务白名单表主键ID
 
@@ -53,7 +53,7 @@ class EpsRemovePermissionRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EpsRemovePermissionRequest.
+        r"""Sets the id of this EpsRemovePermissionRequest.
 
         终端节点服务白名单表主键ID
 

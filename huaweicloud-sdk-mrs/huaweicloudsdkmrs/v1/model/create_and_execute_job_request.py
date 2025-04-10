@@ -25,7 +25,7 @@ class CreateAndExecuteJobRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAndExecuteJobRequest
+        r"""CreateAndExecuteJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAndExecuteJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAndExecuteJobRequest.
+        r"""Gets the body of this CreateAndExecuteJobRequest.
 
         :return: The body of this CreateAndExecuteJobRequest.
         :rtype: :class:`huaweicloudsdkmrs.v1.SubmitJobReqV11`
@@ -52,7 +52,7 @@ class CreateAndExecuteJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAndExecuteJobRequest.
+        r"""Sets the body of this CreateAndExecuteJobRequest.
 
         :param body: The body of this CreateAndExecuteJobRequest.
         :type body: :class:`huaweicloudsdkmrs.v1.SubmitJobReqV11`

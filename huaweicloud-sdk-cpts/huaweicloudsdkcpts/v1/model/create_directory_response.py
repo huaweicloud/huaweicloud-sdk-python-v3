@@ -30,7 +30,7 @@ class CreateDirectoryResponse(SdkResponse):
     }
 
     def __init__(self, code=None, directory_id=None, message=None):
-        """CreateDirectoryResponse
+        r"""CreateDirectoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateDirectoryResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateDirectoryResponse.
+        r"""Gets the code of this CreateDirectoryResponse.
 
         响应码
 
@@ -69,7 +69,7 @@ class CreateDirectoryResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateDirectoryResponse.
+        r"""Sets the code of this CreateDirectoryResponse.
 
         响应码
 
@@ -80,7 +80,7 @@ class CreateDirectoryResponse(SdkResponse):
 
     @property
     def directory_id(self):
-        """Gets the directory_id of this CreateDirectoryResponse.
+        r"""Gets the directory_id of this CreateDirectoryResponse.
 
         目录id
 
@@ -91,7 +91,7 @@ class CreateDirectoryResponse(SdkResponse):
 
     @directory_id.setter
     def directory_id(self, directory_id):
-        """Sets the directory_id of this CreateDirectoryResponse.
+        r"""Sets the directory_id of this CreateDirectoryResponse.
 
         目录id
 
@@ -102,7 +102,7 @@ class CreateDirectoryResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateDirectoryResponse.
+        r"""Gets the message of this CreateDirectoryResponse.
 
         响应消息
 
@@ -113,7 +113,7 @@ class CreateDirectoryResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateDirectoryResponse.
+        r"""Sets the message of this CreateDirectoryResponse.
 
         响应消息
 

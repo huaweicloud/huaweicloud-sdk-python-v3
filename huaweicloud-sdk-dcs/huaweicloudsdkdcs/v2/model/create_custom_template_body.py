@@ -39,7 +39,7 @@ class CreateCustomTemplateBody:
     }
 
     def __init__(self, template_id=None, name=None, type=None, engine=None, cache_mode=None, description=None, engine_version=None, params=None):
-        """CreateCustomTemplateBody
+        r"""CreateCustomTemplateBody
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class CreateCustomTemplateBody:
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreateCustomTemplateBody.
+        r"""Gets the template_id of this CreateCustomTemplateBody.
 
         来源系统模板ID
 
@@ -99,7 +99,7 @@ class CreateCustomTemplateBody:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreateCustomTemplateBody.
+        r"""Sets the template_id of this CreateCustomTemplateBody.
 
         来源系统模板ID
 
@@ -110,7 +110,7 @@ class CreateCustomTemplateBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateCustomTemplateBody.
+        r"""Gets the name of this CreateCustomTemplateBody.
 
         模板名称
 
@@ -121,7 +121,7 @@ class CreateCustomTemplateBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCustomTemplateBody.
+        r"""Sets the name of this CreateCustomTemplateBody.
 
         模板名称
 
@@ -132,7 +132,7 @@ class CreateCustomTemplateBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateCustomTemplateBody.
+        r"""Gets the type of this CreateCustomTemplateBody.
 
         模板类型
 
@@ -143,7 +143,7 @@ class CreateCustomTemplateBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateCustomTemplateBody.
+        r"""Sets the type of this CreateCustomTemplateBody.
 
         模板类型
 
@@ -154,7 +154,7 @@ class CreateCustomTemplateBody:
 
     @property
     def engine(self):
-        """Gets the engine of this CreateCustomTemplateBody.
+        r"""Gets the engine of this CreateCustomTemplateBody.
 
         缓存引擎：Redis[和Memcached](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc)。
 
@@ -165,7 +165,7 @@ class CreateCustomTemplateBody:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this CreateCustomTemplateBody.
+        r"""Sets the engine of this CreateCustomTemplateBody.
 
         缓存引擎：Redis[和Memcached](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc)。
 
@@ -176,7 +176,7 @@ class CreateCustomTemplateBody:
 
     @property
     def cache_mode(self):
-        """Gets the cache_mode of this CreateCustomTemplateBody.
+        r"""Gets the cache_mode of this CreateCustomTemplateBody.
 
         缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 [- ha_rw_split： 表示读写分离实例](tag:hws) 
 
@@ -187,7 +187,7 @@ class CreateCustomTemplateBody:
 
     @cache_mode.setter
     def cache_mode(self, cache_mode):
-        """Sets the cache_mode of this CreateCustomTemplateBody.
+        r"""Sets the cache_mode of this CreateCustomTemplateBody.
 
         缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 [- ha_rw_split： 表示读写分离实例](tag:hws) 
 
@@ -198,7 +198,7 @@ class CreateCustomTemplateBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateCustomTemplateBody.
+        r"""Gets the description of this CreateCustomTemplateBody.
 
         模板的描述信息
 
@@ -209,7 +209,7 @@ class CreateCustomTemplateBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateCustomTemplateBody.
+        r"""Sets the description of this CreateCustomTemplateBody.
 
         模板的描述信息
 
@@ -220,7 +220,7 @@ class CreateCustomTemplateBody:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this CreateCustomTemplateBody.
+        r"""Gets the engine_version of this CreateCustomTemplateBody.
 
         缓存版本。  当缓存引擎为Redis时，取值为4.0或5.0。  [当缓存引擎为Memcached时，该字段为可选，取值为空。](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc) 
 
@@ -231,7 +231,7 @@ class CreateCustomTemplateBody:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this CreateCustomTemplateBody.
+        r"""Sets the engine_version of this CreateCustomTemplateBody.
 
         缓存版本。  当缓存引擎为Redis时，取值为4.0或5.0。  [当缓存引擎为Memcached时，该字段为可选，取值为空。](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc) 
 
@@ -242,7 +242,7 @@ class CreateCustomTemplateBody:
 
     @property
     def params(self):
-        """Gets the params of this CreateCustomTemplateBody.
+        r"""Gets the params of this CreateCustomTemplateBody.
 
         参数配置信息
 
@@ -253,7 +253,7 @@ class CreateCustomTemplateBody:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CreateCustomTemplateBody.
+        r"""Sets the params of this CreateCustomTemplateBody.
 
         参数配置信息
 

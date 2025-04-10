@@ -28,7 +28,7 @@ class ListDataConnectorResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, data_connectors=None):
-        """ListDataConnectorResponse
+        r"""ListDataConnectorResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDataConnectorResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDataConnectorResponse.
+        r"""Gets the total_count of this ListDataConnectorResponse.
 
         数据连接总数
 
@@ -62,7 +62,7 @@ class ListDataConnectorResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDataConnectorResponse.
+        r"""Sets the total_count of this ListDataConnectorResponse.
 
         数据连接总数
 
@@ -73,7 +73,7 @@ class ListDataConnectorResponse(SdkResponse):
 
     @property
     def data_connectors(self):
-        """Gets the data_connectors of this ListDataConnectorResponse.
+        r"""Gets the data_connectors of this ListDataConnectorResponse.
 
         数据连接详情列表
 
@@ -84,7 +84,7 @@ class ListDataConnectorResponse(SdkResponse):
 
     @data_connectors.setter
     def data_connectors(self, data_connectors):
-        """Sets the data_connectors of this ListDataConnectorResponse.
+        r"""Sets the data_connectors of this ListDataConnectorResponse.
 
         数据连接详情列表
 

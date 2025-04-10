@@ -59,7 +59,7 @@ class SourceCommunityMQParameters:
     }
 
     def __init__(self, instance_name=None, instance_id=None, addr=None, group=None, topic=None, tag=None, vpc_id=None, subnet_id=None, ssl_enable=None, enable_acl=None, access_key=None, secret_key=None, message_type=None, consume_timeout=None, consumer_thread_nums=None, consumer_batch_max_size=None, max_reconsume_times=None, suspend_current_queue_time_millis=None):
-        """SourceCommunityMQParameters
+        r"""SourceCommunityMQParameters
 
         The model defined in huaweicloud sdk
 
@@ -157,7 +157,7 @@ class SourceCommunityMQParameters:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this SourceCommunityMQParameters.
+        r"""Gets the instance_name of this SourceCommunityMQParameters.
 
         实例名称，仅dms的rockectMq需要该字段
 
@@ -168,7 +168,7 @@ class SourceCommunityMQParameters:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this SourceCommunityMQParameters.
+        r"""Sets the instance_name of this SourceCommunityMQParameters.
 
         实例名称，仅dms的rockectMq需要该字段
 
@@ -179,7 +179,7 @@ class SourceCommunityMQParameters:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SourceCommunityMQParameters.
+        r"""Gets the instance_id of this SourceCommunityMQParameters.
 
         实例ID，仅dms的rockectMq需要该字段
 
@@ -190,7 +190,7 @@ class SourceCommunityMQParameters:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SourceCommunityMQParameters.
+        r"""Sets the instance_id of this SourceCommunityMQParameters.
 
         实例ID，仅dms的rockectMq需要该字段
 
@@ -201,7 +201,7 @@ class SourceCommunityMQParameters:
 
     @property
     def addr(self):
-        """Gets the addr of this SourceCommunityMQParameters.
+        r"""Gets the addr of this SourceCommunityMQParameters.
 
         rockectMq连接地址
 
@@ -212,7 +212,7 @@ class SourceCommunityMQParameters:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this SourceCommunityMQParameters.
+        r"""Sets the addr of this SourceCommunityMQParameters.
 
         rockectMq连接地址
 
@@ -223,7 +223,7 @@ class SourceCommunityMQParameters:
 
     @property
     def group(self):
-        """Gets the group of this SourceCommunityMQParameters.
+        r"""Gets the group of this SourceCommunityMQParameters.
 
         消费组
 
@@ -234,7 +234,7 @@ class SourceCommunityMQParameters:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this SourceCommunityMQParameters.
+        r"""Sets the group of this SourceCommunityMQParameters.
 
         消费组
 
@@ -245,7 +245,7 @@ class SourceCommunityMQParameters:
 
     @property
     def topic(self):
-        """Gets the topic of this SourceCommunityMQParameters.
+        r"""Gets the topic of this SourceCommunityMQParameters.
 
         topic名称
 
@@ -256,7 +256,7 @@ class SourceCommunityMQParameters:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this SourceCommunityMQParameters.
+        r"""Sets the topic of this SourceCommunityMQParameters.
 
         topic名称
 
@@ -267,7 +267,7 @@ class SourceCommunityMQParameters:
 
     @property
     def tag(self):
-        """Gets the tag of this SourceCommunityMQParameters.
+        r"""Gets the tag of this SourceCommunityMQParameters.
 
         标签
 
@@ -278,7 +278,7 @@ class SourceCommunityMQParameters:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this SourceCommunityMQParameters.
+        r"""Sets the tag of this SourceCommunityMQParameters.
 
         标签
 
@@ -289,7 +289,7 @@ class SourceCommunityMQParameters:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this SourceCommunityMQParameters.
+        r"""Gets the vpc_id of this SourceCommunityMQParameters.
 
         虚拟云id
 
@@ -300,7 +300,7 @@ class SourceCommunityMQParameters:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this SourceCommunityMQParameters.
+        r"""Sets the vpc_id of this SourceCommunityMQParameters.
 
         虚拟云id
 
@@ -311,7 +311,7 @@ class SourceCommunityMQParameters:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this SourceCommunityMQParameters.
+        r"""Gets the subnet_id of this SourceCommunityMQParameters.
 
         子网id
 
@@ -322,7 +322,7 @@ class SourceCommunityMQParameters:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this SourceCommunityMQParameters.
+        r"""Sets the subnet_id of this SourceCommunityMQParameters.
 
         子网id
 
@@ -333,7 +333,7 @@ class SourceCommunityMQParameters:
 
     @property
     def ssl_enable(self):
-        """Gets the ssl_enable of this SourceCommunityMQParameters.
+        r"""Gets the ssl_enable of this SourceCommunityMQParameters.
 
         开启SSL
 
@@ -344,7 +344,7 @@ class SourceCommunityMQParameters:
 
     @ssl_enable.setter
     def ssl_enable(self, ssl_enable):
-        """Sets the ssl_enable of this SourceCommunityMQParameters.
+        r"""Sets the ssl_enable of this SourceCommunityMQParameters.
 
         开启SSL
 
@@ -355,7 +355,7 @@ class SourceCommunityMQParameters:
 
     @property
     def enable_acl(self):
-        """Gets the enable_acl of this SourceCommunityMQParameters.
+        r"""Gets the enable_acl of this SourceCommunityMQParameters.
 
         ACL访问控制
 
@@ -366,7 +366,7 @@ class SourceCommunityMQParameters:
 
     @enable_acl.setter
     def enable_acl(self, enable_acl):
-        """Sets the enable_acl of this SourceCommunityMQParameters.
+        r"""Sets the enable_acl of this SourceCommunityMQParameters.
 
         ACL访问控制
 
@@ -377,7 +377,7 @@ class SourceCommunityMQParameters:
 
     @property
     def access_key(self):
-        """Gets the access_key of this SourceCommunityMQParameters.
+        r"""Gets the access_key of this SourceCommunityMQParameters.
 
         用户名
 
@@ -388,7 +388,7 @@ class SourceCommunityMQParameters:
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this SourceCommunityMQParameters.
+        r"""Sets the access_key of this SourceCommunityMQParameters.
 
         用户名
 
@@ -399,7 +399,7 @@ class SourceCommunityMQParameters:
 
     @property
     def secret_key(self):
-        """Gets the secret_key of this SourceCommunityMQParameters.
+        r"""Gets the secret_key of this SourceCommunityMQParameters.
 
         密码
 
@@ -410,7 +410,7 @@ class SourceCommunityMQParameters:
 
     @secret_key.setter
     def secret_key(self, secret_key):
-        """Sets the secret_key of this SourceCommunityMQParameters.
+        r"""Sets the secret_key of this SourceCommunityMQParameters.
 
         密码
 
@@ -421,7 +421,7 @@ class SourceCommunityMQParameters:
 
     @property
     def message_type(self):
-        """Gets the message_type of this SourceCommunityMQParameters.
+        r"""Gets the message_type of this SourceCommunityMQParameters.
 
         消息类型
 
@@ -432,7 +432,7 @@ class SourceCommunityMQParameters:
 
     @message_type.setter
     def message_type(self, message_type):
-        """Sets the message_type of this SourceCommunityMQParameters.
+        r"""Sets the message_type of this SourceCommunityMQParameters.
 
         消息类型
 
@@ -443,7 +443,7 @@ class SourceCommunityMQParameters:
 
     @property
     def consume_timeout(self):
-        """Gets the consume_timeout of this SourceCommunityMQParameters.
+        r"""Gets the consume_timeout of this SourceCommunityMQParameters.
 
         消费超时时间
 
@@ -454,7 +454,7 @@ class SourceCommunityMQParameters:
 
     @consume_timeout.setter
     def consume_timeout(self, consume_timeout):
-        """Sets the consume_timeout of this SourceCommunityMQParameters.
+        r"""Sets the consume_timeout of this SourceCommunityMQParameters.
 
         消费超时时间
 
@@ -465,7 +465,7 @@ class SourceCommunityMQParameters:
 
     @property
     def consumer_thread_nums(self):
-        """Gets the consumer_thread_nums of this SourceCommunityMQParameters.
+        r"""Gets the consumer_thread_nums of this SourceCommunityMQParameters.
 
         线程消费数
 
@@ -476,7 +476,7 @@ class SourceCommunityMQParameters:
 
     @consumer_thread_nums.setter
     def consumer_thread_nums(self, consumer_thread_nums):
-        """Sets the consumer_thread_nums of this SourceCommunityMQParameters.
+        r"""Sets the consumer_thread_nums of this SourceCommunityMQParameters.
 
         线程消费数
 
@@ -487,7 +487,7 @@ class SourceCommunityMQParameters:
 
     @property
     def consumer_batch_max_size(self):
-        """Gets the consumer_batch_max_size of this SourceCommunityMQParameters.
+        r"""Gets the consumer_batch_max_size of this SourceCommunityMQParameters.
 
         批量消费最大消息数
 
@@ -498,7 +498,7 @@ class SourceCommunityMQParameters:
 
     @consumer_batch_max_size.setter
     def consumer_batch_max_size(self, consumer_batch_max_size):
-        """Sets the consumer_batch_max_size of this SourceCommunityMQParameters.
+        r"""Sets the consumer_batch_max_size of this SourceCommunityMQParameters.
 
         批量消费最大消息数
 
@@ -509,7 +509,7 @@ class SourceCommunityMQParameters:
 
     @property
     def max_reconsume_times(self):
-        """Gets the max_reconsume_times of this SourceCommunityMQParameters.
+        r"""Gets the max_reconsume_times of this SourceCommunityMQParameters.
 
         最大重试次数，-1表示一直重试
 
@@ -520,7 +520,7 @@ class SourceCommunityMQParameters:
 
     @max_reconsume_times.setter
     def max_reconsume_times(self, max_reconsume_times):
-        """Sets the max_reconsume_times of this SourceCommunityMQParameters.
+        r"""Sets the max_reconsume_times of this SourceCommunityMQParameters.
 
         最大重试次数，-1表示一直重试
 
@@ -531,7 +531,7 @@ class SourceCommunityMQParameters:
 
     @property
     def suspend_current_queue_time_millis(self):
-        """Gets the suspend_current_queue_time_millis of this SourceCommunityMQParameters.
+        r"""Gets the suspend_current_queue_time_millis of this SourceCommunityMQParameters.
 
         重试间隔，单位ms
 
@@ -542,7 +542,7 @@ class SourceCommunityMQParameters:
 
     @suspend_current_queue_time_millis.setter
     def suspend_current_queue_time_millis(self, suspend_current_queue_time_millis):
-        """Sets the suspend_current_queue_time_millis of this SourceCommunityMQParameters.
+        r"""Sets the suspend_current_queue_time_millis of this SourceCommunityMQParameters.
 
         重试间隔，单位ms
 

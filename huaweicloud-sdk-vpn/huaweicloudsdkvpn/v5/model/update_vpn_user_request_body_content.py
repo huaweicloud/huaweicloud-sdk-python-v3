@@ -27,7 +27,7 @@ class UpdateVpnUserRequestBodyContent:
     }
 
     def __init__(self, description=None, user_group_id=None):
-        """UpdateVpnUserRequestBodyContent
+        r"""UpdateVpnUserRequestBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateVpnUserRequestBodyContent:
 
     @property
     def description(self):
-        """Gets the description of this UpdateVpnUserRequestBodyContent.
+        r"""Gets the description of this UpdateVpnUserRequestBodyContent.
 
         用户描述
 
@@ -61,7 +61,7 @@ class UpdateVpnUserRequestBodyContent:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateVpnUserRequestBodyContent.
+        r"""Sets the description of this UpdateVpnUserRequestBodyContent.
 
         用户描述
 
@@ -72,7 +72,7 @@ class UpdateVpnUserRequestBodyContent:
 
     @property
     def user_group_id(self):
-        """Gets the user_group_id of this UpdateVpnUserRequestBodyContent.
+        r"""Gets the user_group_id of this UpdateVpnUserRequestBodyContent.
 
         所属用户组ID
 
@@ -83,7 +83,7 @@ class UpdateVpnUserRequestBodyContent:
 
     @user_group_id.setter
     def user_group_id(self, user_group_id):
-        """Sets the user_group_id of this UpdateVpnUserRequestBodyContent.
+        r"""Sets the user_group_id of this UpdateVpnUserRequestBodyContent.
 
         所属用户组ID
 

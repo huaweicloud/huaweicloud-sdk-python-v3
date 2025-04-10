@@ -27,7 +27,7 @@ class AudioSelectorHlsSelection:
     }
 
     def __init__(self, name=None, group_id=None):
-        """AudioSelectorHlsSelection
+        r"""AudioSelectorHlsSelection
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AudioSelectorHlsSelection:
 
     @property
     def name(self):
-        """Gets the name of this AudioSelectorHlsSelection.
+        r"""Gets the name of this AudioSelectorHlsSelection.
 
         hls音频选择器名
 
@@ -59,7 +59,7 @@ class AudioSelectorHlsSelection:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AudioSelectorHlsSelection.
+        r"""Sets the name of this AudioSelectorHlsSelection.
 
         hls音频选择器名
 
@@ -70,7 +70,7 @@ class AudioSelectorHlsSelection:
 
     @property
     def group_id(self):
-        """Gets the group_id of this AudioSelectorHlsSelection.
+        r"""Gets the group_id of this AudioSelectorHlsSelection.
 
         hls音频选择器gid
 
@@ -81,7 +81,7 @@ class AudioSelectorHlsSelection:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this AudioSelectorHlsSelection.
+        r"""Sets the group_id of this AudioSelectorHlsSelection.
 
         hls音频选择器gid
 

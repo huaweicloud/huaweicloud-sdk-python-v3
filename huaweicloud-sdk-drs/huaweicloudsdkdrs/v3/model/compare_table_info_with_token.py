@@ -29,7 +29,7 @@ class CompareTableInfoWithToken:
     }
 
     def __init__(self, table_name=None, min_token=None, max_token=None):
-        """CompareTableInfoWithToken
+        r"""CompareTableInfoWithToken
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CompareTableInfoWithToken:
 
     @property
     def table_name(self):
-        """Gets the table_name of this CompareTableInfoWithToken.
+        r"""Gets the table_name of this CompareTableInfoWithToken.
 
         表名。
 
@@ -67,7 +67,7 @@ class CompareTableInfoWithToken:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this CompareTableInfoWithToken.
+        r"""Sets the table_name of this CompareTableInfoWithToken.
 
         表名。
 
@@ -78,7 +78,7 @@ class CompareTableInfoWithToken:
 
     @property
     def min_token(self):
-        """Gets the min_token of this CompareTableInfoWithToken.
+        r"""Gets the min_token of this CompareTableInfoWithToken.
 
         该表的min token。
 
@@ -89,7 +89,7 @@ class CompareTableInfoWithToken:
 
     @min_token.setter
     def min_token(self, min_token):
-        """Sets the min_token of this CompareTableInfoWithToken.
+        r"""Sets the min_token of this CompareTableInfoWithToken.
 
         该表的min token。
 
@@ -100,7 +100,7 @@ class CompareTableInfoWithToken:
 
     @property
     def max_token(self):
-        """Gets the max_token of this CompareTableInfoWithToken.
+        r"""Gets the max_token of this CompareTableInfoWithToken.
 
         该表的max token。
 
@@ -111,7 +111,7 @@ class CompareTableInfoWithToken:
 
     @max_token.setter
     def max_token(self, max_token):
-        """Sets the max_token of this CompareTableInfoWithToken.
+        r"""Sets the max_token of this CompareTableInfoWithToken.
 
         该表的max token。
 

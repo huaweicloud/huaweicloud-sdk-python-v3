@@ -29,7 +29,7 @@ class AutopilotClusterInformationSpec:
     }
 
     def __init__(self, description=None, custom_san=None, eni_network=None):
-        """AutopilotClusterInformationSpec
+        r"""AutopilotClusterInformationSpec
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AutopilotClusterInformationSpec:
 
     @property
     def description(self):
-        """Gets the description of this AutopilotClusterInformationSpec.
+        r"""Gets the description of this AutopilotClusterInformationSpec.
 
         集群的描述信息。  1. 字符取值范围[0,200]。不包含~$%^&*<>[]{}()'\"#\\等特殊字符。 2. 仅运行（Available）的集群允许修改。
 
@@ -68,7 +68,7 @@ class AutopilotClusterInformationSpec:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AutopilotClusterInformationSpec.
+        r"""Sets the description of this AutopilotClusterInformationSpec.
 
         集群的描述信息。  1. 字符取值范围[0,200]。不包含~$%^&*<>[]{}()'\"#\\等特殊字符。 2. 仅运行（Available）的集群允许修改。
 
@@ -79,7 +79,7 @@ class AutopilotClusterInformationSpec:
 
     @property
     def custom_san(self):
-        """Gets the custom_san of this AutopilotClusterInformationSpec.
+        r"""Gets the custom_san of this AutopilotClusterInformationSpec.
 
         集群的API Server服务端证书中的自定义SAN（Subject Alternative Name）字段，遵从SSL标准X509定义的格式规范。  1. 不允许出现同名重复。 2. 格式符合IP和域名格式。  示例: ``` SAN 1: DNS Name=example.com SAN 2: DNS Name=www.example.com SAN 3: DNS Name=example.net SAN 4: IP Address=93.184.216.34 ```
 
@@ -90,7 +90,7 @@ class AutopilotClusterInformationSpec:
 
     @custom_san.setter
     def custom_san(self, custom_san):
-        """Sets the custom_san of this AutopilotClusterInformationSpec.
+        r"""Sets the custom_san of this AutopilotClusterInformationSpec.
 
         集群的API Server服务端证书中的自定义SAN（Subject Alternative Name）字段，遵从SSL标准X509定义的格式规范。  1. 不允许出现同名重复。 2. 格式符合IP和域名格式。  示例: ``` SAN 1: DNS Name=example.com SAN 2: DNS Name=www.example.com SAN 3: DNS Name=example.net SAN 4: IP Address=93.184.216.34 ```
 
@@ -101,7 +101,7 @@ class AutopilotClusterInformationSpec:
 
     @property
     def eni_network(self):
-        """Gets the eni_network of this AutopilotClusterInformationSpec.
+        r"""Gets the eni_network of this AutopilotClusterInformationSpec.
 
         :return: The eni_network of this AutopilotClusterInformationSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.AutopilotEniNetworkUpdate`
@@ -110,7 +110,7 @@ class AutopilotClusterInformationSpec:
 
     @eni_network.setter
     def eni_network(self, eni_network):
-        """Sets the eni_network of this AutopilotClusterInformationSpec.
+        r"""Sets the eni_network of this AutopilotClusterInformationSpec.
 
         :param eni_network: The eni_network of this AutopilotClusterInformationSpec.
         :type eni_network: :class:`huaweicloudsdkcce.v3.AutopilotEniNetworkUpdate`

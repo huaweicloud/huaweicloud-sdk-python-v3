@@ -25,7 +25,7 @@ class ShowMetadataRequest:
     }
 
     def __init__(self, backup_id=None):
-        """ShowMetadataRequest
+        r"""ShowMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowMetadataRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ShowMetadataRequest.
+        r"""Gets the backup_id of this ShowMetadataRequest.
 
         备份ID
 
@@ -53,7 +53,7 @@ class ShowMetadataRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ShowMetadataRequest.
+        r"""Sets the backup_id of this ShowMetadataRequest.
 
         备份ID
 

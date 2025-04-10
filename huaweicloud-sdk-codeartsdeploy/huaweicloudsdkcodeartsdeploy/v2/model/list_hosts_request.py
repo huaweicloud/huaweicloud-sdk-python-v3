@@ -39,7 +39,7 @@ class ListHostsRequest:
     }
 
     def __init__(self, group_id=None, as_proxy=None, offset=None, limit=None, name=None, sort_key=None, sort_dir=None, with_auth=None):
-        """ListHostsRequest
+        r"""ListHostsRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListHostsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListHostsRequest.
+        r"""Gets the group_id of this ListHostsRequest.
 
         主机集群id
 
@@ -102,7 +102,7 @@ class ListHostsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListHostsRequest.
+        r"""Sets the group_id of this ListHostsRequest.
 
         主机集群id
 
@@ -113,7 +113,7 @@ class ListHostsRequest:
 
     @property
     def as_proxy(self):
-        """Gets the as_proxy of this ListHostsRequest.
+        r"""Gets the as_proxy of this ListHostsRequest.
 
         是否为代理机
 
@@ -124,7 +124,7 @@ class ListHostsRequest:
 
     @as_proxy.setter
     def as_proxy(self, as_proxy):
-        """Sets the as_proxy of this ListHostsRequest.
+        r"""Sets the as_proxy of this ListHostsRequest.
 
         是否为代理机
 
@@ -135,7 +135,7 @@ class ListHostsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHostsRequest.
+        r"""Gets the offset of this ListHostsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -146,7 +146,7 @@ class ListHostsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHostsRequest.
+        r"""Sets the offset of this ListHostsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -157,7 +157,7 @@ class ListHostsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHostsRequest.
+        r"""Gets the limit of this ListHostsRequest.
 
         每页显示的条目数量，默认为1000
 
@@ -168,7 +168,7 @@ class ListHostsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHostsRequest.
+        r"""Sets the limit of this ListHostsRequest.
 
         每页显示的条目数量，默认为1000
 
@@ -179,7 +179,7 @@ class ListHostsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListHostsRequest.
+        r"""Gets the name of this ListHostsRequest.
 
         主机名，可输入中英文，数字和符号(-_.)
 
@@ -190,7 +190,7 @@ class ListHostsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListHostsRequest.
+        r"""Sets the name of this ListHostsRequest.
 
         主机名，可输入中英文，数字和符号(-_.)
 
@@ -201,7 +201,7 @@ class ListHostsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListHostsRequest.
+        r"""Gets the sort_key of this ListHostsRequest.
 
         排序字段，支持：AS_PROXY|HOST_NAME|OS|OWNER_NAME|as_proxy|host_name|os|owner_name|nickName。不填默认为：as_proxy
 
@@ -212,7 +212,7 @@ class ListHostsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListHostsRequest.
+        r"""Sets the sort_key of this ListHostsRequest.
 
         排序字段，支持：AS_PROXY|HOST_NAME|OS|OWNER_NAME|as_proxy|host_name|os|owner_name|nickName。不填默认为：as_proxy
 
@@ -223,7 +223,7 @@ class ListHostsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListHostsRequest.
+        r"""Gets the sort_dir of this ListHostsRequest.
 
         排序方式,默认为：DESC。DESC：降序排序。ASC：升序排序
 
@@ -234,7 +234,7 @@ class ListHostsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListHostsRequest.
+        r"""Sets the sort_dir of this ListHostsRequest.
 
         排序方式,默认为：DESC。DESC：降序排序。ASC：升序排序
 
@@ -245,7 +245,7 @@ class ListHostsRequest:
 
     @property
     def with_auth(self):
-        """Gets the with_auth of this ListHostsRequest.
+        r"""Gets the with_auth of this ListHostsRequest.
 
         返回结果是否加密
 
@@ -256,7 +256,7 @@ class ListHostsRequest:
 
     @with_auth.setter
     def with_auth(self, with_auth):
-        """Sets the with_auth of this ListHostsRequest.
+        r"""Sets the with_auth of this ListHostsRequest.
 
         返回结果是否加密
 

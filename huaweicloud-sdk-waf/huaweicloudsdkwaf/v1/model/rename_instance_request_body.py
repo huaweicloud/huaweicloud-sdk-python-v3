@@ -25,7 +25,7 @@ class RenameInstanceRequestBody:
     }
 
     def __init__(self, instancename=None):
-        """RenameInstanceRequestBody
+        r"""RenameInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RenameInstanceRequestBody:
 
     @property
     def instancename(self):
-        """Gets the instancename of this RenameInstanceRequestBody.
+        r"""Gets the instancename of this RenameInstanceRequestBody.
 
         独享引擎新名称
 
@@ -53,7 +53,7 @@ class RenameInstanceRequestBody:
 
     @instancename.setter
     def instancename(self, instancename):
-        """Sets the instancename of this RenameInstanceRequestBody.
+        r"""Sets the instancename of this RenameInstanceRequestBody.
 
         独享引擎新名称
 

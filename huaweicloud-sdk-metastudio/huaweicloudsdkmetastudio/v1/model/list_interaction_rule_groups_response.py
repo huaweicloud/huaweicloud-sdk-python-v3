@@ -30,7 +30,7 @@ class ListInteractionRuleGroupsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, interaction_rule_groups=None, x_request_id=None):
-        """ListInteractionRuleGroupsResponse
+        r"""ListInteractionRuleGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListInteractionRuleGroupsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListInteractionRuleGroupsResponse.
+        r"""Gets the count of this ListInteractionRuleGroupsResponse.
 
         **参数解释**： 互动规则总数。
 
@@ -69,7 +69,7 @@ class ListInteractionRuleGroupsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListInteractionRuleGroupsResponse.
+        r"""Sets the count of this ListInteractionRuleGroupsResponse.
 
         **参数解释**： 互动规则总数。
 
@@ -80,7 +80,7 @@ class ListInteractionRuleGroupsResponse(SdkResponse):
 
     @property
     def interaction_rule_groups(self):
-        """Gets the interaction_rule_groups of this ListInteractionRuleGroupsResponse.
+        r"""Gets the interaction_rule_groups of this ListInteractionRuleGroupsResponse.
 
         互动规则库列表。
 
@@ -91,7 +91,7 @@ class ListInteractionRuleGroupsResponse(SdkResponse):
 
     @interaction_rule_groups.setter
     def interaction_rule_groups(self, interaction_rule_groups):
-        """Sets the interaction_rule_groups of this ListInteractionRuleGroupsResponse.
+        r"""Sets the interaction_rule_groups of this ListInteractionRuleGroupsResponse.
 
         互动规则库列表。
 
@@ -102,7 +102,7 @@ class ListInteractionRuleGroupsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListInteractionRuleGroupsResponse.
+        r"""Gets the x_request_id of this ListInteractionRuleGroupsResponse.
 
         :return: The x_request_id of this ListInteractionRuleGroupsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListInteractionRuleGroupsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListInteractionRuleGroupsResponse.
+        r"""Sets the x_request_id of this ListInteractionRuleGroupsResponse.
 
         :param x_request_id: The x_request_id of this ListInteractionRuleGroupsResponse.
         :type x_request_id: str

@@ -27,7 +27,7 @@ class ShowGroupsRespGroupAssignment:
     }
 
     def __init__(self, topic=None, partitions=None):
-        """ShowGroupsRespGroupAssignment
+        r"""ShowGroupsRespGroupAssignment
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowGroupsRespGroupAssignment:
 
     @property
     def topic(self):
-        """Gets the topic of this ShowGroupsRespGroupAssignment.
+        r"""Gets the topic of this ShowGroupsRespGroupAssignment.
 
         topic名称。
 
@@ -61,7 +61,7 @@ class ShowGroupsRespGroupAssignment:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowGroupsRespGroupAssignment.
+        r"""Sets the topic of this ShowGroupsRespGroupAssignment.
 
         topic名称。
 
@@ -72,7 +72,7 @@ class ShowGroupsRespGroupAssignment:
 
     @property
     def partitions(self):
-        """Gets the partitions of this ShowGroupsRespGroupAssignment.
+        r"""Gets the partitions of this ShowGroupsRespGroupAssignment.
 
         分区列表。
 
@@ -83,7 +83,7 @@ class ShowGroupsRespGroupAssignment:
 
     @partitions.setter
     def partitions(self, partitions):
-        """Sets the partitions of this ShowGroupsRespGroupAssignment.
+        r"""Sets the partitions of this ShowGroupsRespGroupAssignment.
 
         分区列表。
 

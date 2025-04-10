@@ -35,7 +35,7 @@ class CreateJobReq:
     }
 
     def __init__(self, base_info=None, source_endpoint=None, target_endpoint=None, period_order=None, node_info=None, public_ip_list=None):
-        """CreateJobReq
+        r"""CreateJobReq
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CreateJobReq:
 
     @property
     def base_info(self):
-        """Gets the base_info of this CreateJobReq.
+        r"""Gets the base_info of this CreateJobReq.
 
         :return: The base_info of this CreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobBaseInfo`
@@ -83,7 +83,7 @@ class CreateJobReq:
 
     @base_info.setter
     def base_info(self, base_info):
-        """Sets the base_info of this CreateJobReq.
+        r"""Sets the base_info of this CreateJobReq.
 
         :param base_info: The base_info of this CreateJobReq.
         :type base_info: :class:`huaweicloudsdkdrs.v5.JobBaseInfo`
@@ -92,7 +92,7 @@ class CreateJobReq:
 
     @property
     def source_endpoint(self):
-        """Gets the source_endpoint of this CreateJobReq.
+        r"""Gets the source_endpoint of this CreateJobReq.
 
         创建任务数据库信息体。
 
@@ -103,7 +103,7 @@ class CreateJobReq:
 
     @source_endpoint.setter
     def source_endpoint(self, source_endpoint):
-        """Sets the source_endpoint of this CreateJobReq.
+        r"""Sets the source_endpoint of this CreateJobReq.
 
         创建任务数据库信息体。
 
@@ -114,7 +114,7 @@ class CreateJobReq:
 
     @property
     def target_endpoint(self):
-        """Gets the target_endpoint of this CreateJobReq.
+        r"""Gets the target_endpoint of this CreateJobReq.
 
         创建任务数据库信息体。
 
@@ -125,7 +125,7 @@ class CreateJobReq:
 
     @target_endpoint.setter
     def target_endpoint(self, target_endpoint):
-        """Sets the target_endpoint of this CreateJobReq.
+        r"""Sets the target_endpoint of this CreateJobReq.
 
         创建任务数据库信息体。
 
@@ -136,7 +136,7 @@ class CreateJobReq:
 
     @property
     def period_order(self):
-        """Gets the period_order of this CreateJobReq.
+        r"""Gets the period_order of this CreateJobReq.
 
         :return: The period_order of this CreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.PeriodOrderInfo`
@@ -145,7 +145,7 @@ class CreateJobReq:
 
     @period_order.setter
     def period_order(self, period_order):
-        """Sets the period_order of this CreateJobReq.
+        r"""Sets the period_order of this CreateJobReq.
 
         :param period_order: The period_order of this CreateJobReq.
         :type period_order: :class:`huaweicloudsdkdrs.v5.PeriodOrderInfo`
@@ -154,7 +154,7 @@ class CreateJobReq:
 
     @property
     def node_info(self):
-        """Gets the node_info of this CreateJobReq.
+        r"""Gets the node_info of this CreateJobReq.
 
         :return: The node_info of this CreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobNodeInfo`
@@ -163,7 +163,7 @@ class CreateJobReq:
 
     @node_info.setter
     def node_info(self, node_info):
-        """Sets the node_info of this CreateJobReq.
+        r"""Sets the node_info of this CreateJobReq.
 
         :param node_info: The node_info of this CreateJobReq.
         :type node_info: :class:`huaweicloudsdkdrs.v5.JobNodeInfo`
@@ -172,7 +172,7 @@ class CreateJobReq:
 
     @property
     def public_ip_list(self):
-        """Gets the public_ip_list of this CreateJobReq.
+        r"""Gets the public_ip_list of this CreateJobReq.
 
         指定公网IP的信息
 
@@ -183,7 +183,7 @@ class CreateJobReq:
 
     @public_ip_list.setter
     def public_ip_list(self, public_ip_list):
-        """Sets the public_ip_list of this CreateJobReq.
+        r"""Sets the public_ip_list of this CreateJobReq.
 
         指定公网IP的信息
 

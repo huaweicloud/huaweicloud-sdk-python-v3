@@ -25,7 +25,7 @@ class UninstallApkRequest:
     }
 
     def __init__(self, body=None):
-        """UninstallApkRequest
+        r"""UninstallApkRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UninstallApkRequest:
 
     @property
     def body(self):
-        """Gets the body of this UninstallApkRequest.
+        r"""Gets the body of this UninstallApkRequest.
 
         :return: The body of this UninstallApkRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.UninstallApkRequestBody`
@@ -52,7 +52,7 @@ class UninstallApkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UninstallApkRequest.
+        r"""Sets the body of this UninstallApkRequest.
 
         :param body: The body of this UninstallApkRequest.
         :type body: :class:`huaweicloudsdkcph.v1.UninstallApkRequestBody`

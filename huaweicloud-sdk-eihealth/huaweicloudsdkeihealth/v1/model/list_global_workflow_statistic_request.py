@@ -23,7 +23,7 @@ class ListGlobalWorkflowStatisticRequest:
     }
 
     def __init__(self):
-        """ListGlobalWorkflowStatisticRequest
+        r"""ListGlobalWorkflowStatisticRequest
 
         The model defined in huaweicloud sdk
 

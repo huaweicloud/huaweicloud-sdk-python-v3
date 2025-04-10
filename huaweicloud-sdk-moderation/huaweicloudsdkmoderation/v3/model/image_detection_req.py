@@ -37,7 +37,7 @@ class ImageDetectionReq:
     }
 
     def __init__(self, event_type=None, categories=None, image_text_config=None, url=None, image=None, biz_type=None, language=None):
-        """ImageDetectionReq
+        r"""ImageDetectionReq
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ImageDetectionReq:
 
     @property
     def event_type(self):
-        """Gets the event_type of this ImageDetectionReq.
+        r"""Gets the event_type of this ImageDetectionReq.
 
         事件类型。 可选值如下： head_image：头像 album：相册 dynamic：动态 article：帖子 comment：评论 room_cover：房间封面 group_message：群聊图片 message：私聊图片 product：商品图片
 
@@ -96,7 +96,7 @@ class ImageDetectionReq:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this ImageDetectionReq.
+        r"""Sets the event_type of this ImageDetectionReq.
 
         事件类型。 可选值如下： head_image：头像 album：相册 dynamic：动态 article：帖子 comment：评论 room_cover：房间封面 group_message：群聊图片 message：私聊图片 product：商品图片
 
@@ -107,7 +107,7 @@ class ImageDetectionReq:
 
     @property
     def categories(self):
-        """Gets the categories of this ImageDetectionReq.
+        r"""Gets the categories of this ImageDetectionReq.
 
         检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 - 可通过配置上述场景，来完对应场景元素的检测。 > 每个检测场景的检测次数会分类统计。
 
@@ -118,7 +118,7 @@ class ImageDetectionReq:
 
     @categories.setter
     def categories(self, categories):
-        """Sets the categories of this ImageDetectionReq.
+        r"""Sets the categories of this ImageDetectionReq.
 
         检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 - 可通过配置上述场景，来完对应场景元素的检测。 > 每个检测场景的检测次数会分类统计。
 
@@ -129,7 +129,7 @@ class ImageDetectionReq:
 
     @property
     def image_text_config(self):
-        """Gets the image_text_config of this ImageDetectionReq.
+        r"""Gets the image_text_config of this ImageDetectionReq.
 
         :return: The image_text_config of this ImageDetectionReq.
         :rtype: :class:`huaweicloudsdkmoderation.v3.ImgTextConfig`
@@ -138,7 +138,7 @@ class ImageDetectionReq:
 
     @image_text_config.setter
     def image_text_config(self, image_text_config):
-        """Sets the image_text_config of this ImageDetectionReq.
+        r"""Sets the image_text_config of this ImageDetectionReq.
 
         :param image_text_config: The image_text_config of this ImageDetectionReq.
         :type image_text_config: :class:`huaweicloudsdkmoderation.v3.ImgTextConfig`
@@ -147,7 +147,7 @@ class ImageDetectionReq:
 
     @property
     def url(self):
-        """Gets the url of this ImageDetectionReq.
+        r"""Gets the url of this ImageDetectionReq.
 
         图片url, 与image二选一，目前支持： - 公网HTTP/HTTPS URL
 
@@ -158,7 +158,7 @@ class ImageDetectionReq:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ImageDetectionReq.
+        r"""Sets the url of this ImageDetectionReq.
 
         图片url, 与image二选一，目前支持： - 公网HTTP/HTTPS URL
 
@@ -169,7 +169,7 @@ class ImageDetectionReq:
 
     @property
     def image(self):
-        """Gets the image of this ImageDetectionReq.
+        r"""Gets the image of this ImageDetectionReq.
 
         与url二选一，图片文件Base64编码字符串，要求base64编码后大小不超过10M，支持JPG/PNG/JPEG/WEBP/GIF/TIFF/TIF/HEIF等格式。
 
@@ -180,7 +180,7 @@ class ImageDetectionReq:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this ImageDetectionReq.
+        r"""Sets the image of this ImageDetectionReq.
 
         与url二选一，图片文件Base64编码字符串，要求base64编码后大小不超过10M，支持JPG/PNG/JPEG/WEBP/GIF/TIFF/TIF/HEIF等格式。
 
@@ -191,7 +191,7 @@ class ImageDetectionReq:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this ImageDetectionReq.
+        r"""Gets the biz_type of this ImageDetectionReq.
 
         自定义审核策略名称，可在控制台配置;如果请求参数中传了biz_type则优先使用biz_type,如果用户没传biz_type则event_type和categories必须传。
 
@@ -202,7 +202,7 @@ class ImageDetectionReq:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this ImageDetectionReq.
+        r"""Sets the biz_type of this ImageDetectionReq.
 
         自定义审核策略名称，可在控制台配置;如果请求参数中传了biz_type则优先使用biz_type,如果用户没传biz_type则event_type和categories必须传。
 
@@ -213,7 +213,7 @@ class ImageDetectionReq:
 
     @property
     def language(self):
-        """Gets the language of this ImageDetectionReq.
+        r"""Gets the language of this ImageDetectionReq.
 
         可指定图片中文字语种类型
 
@@ -224,7 +224,7 @@ class ImageDetectionReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ImageDetectionReq.
+        r"""Sets the language of this ImageDetectionReq.
 
         可指定图片中文字语种类型
 

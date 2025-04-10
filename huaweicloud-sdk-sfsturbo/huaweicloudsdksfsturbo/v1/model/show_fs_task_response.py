@@ -34,7 +34,7 @@ class ShowFsTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, status=None, dir_usage=None, begin_time=None, end_time=None):
-        """ShowFsTaskResponse
+        r"""ShowFsTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowFsTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowFsTaskResponse.
+        r"""Gets the task_id of this ShowFsTaskResponse.
 
         任务ID
 
@@ -83,7 +83,7 @@ class ShowFsTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowFsTaskResponse.
+        r"""Sets the task_id of this ShowFsTaskResponse.
 
         任务ID
 
@@ -94,7 +94,7 @@ class ShowFsTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowFsTaskResponse.
+        r"""Gets the status of this ShowFsTaskResponse.
 
         任务状态, SUCCESS表示成功，DOING表示正在执行，FAIL表示失败
 
@@ -105,7 +105,7 @@ class ShowFsTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowFsTaskResponse.
+        r"""Sets the status of this ShowFsTaskResponse.
 
         任务状态, SUCCESS表示成功，DOING表示正在执行，FAIL表示失败
 
@@ -116,7 +116,7 @@ class ShowFsTaskResponse(SdkResponse):
 
     @property
     def dir_usage(self):
-        """Gets the dir_usage of this ShowFsTaskResponse.
+        r"""Gets the dir_usage of this ShowFsTaskResponse.
 
         :return: The dir_usage of this ShowFsTaskResponse.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.FsDuInfo`
@@ -125,7 +125,7 @@ class ShowFsTaskResponse(SdkResponse):
 
     @dir_usage.setter
     def dir_usage(self, dir_usage):
-        """Sets the dir_usage of this ShowFsTaskResponse.
+        r"""Sets the dir_usage of this ShowFsTaskResponse.
 
         :param dir_usage: The dir_usage of this ShowFsTaskResponse.
         :type dir_usage: :class:`huaweicloudsdksfsturbo.v1.FsDuInfo`
@@ -134,7 +134,7 @@ class ShowFsTaskResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowFsTaskResponse.
+        r"""Gets the begin_time of this ShowFsTaskResponse.
 
         任务开始时间，UTC时间，例如：2006-01-02 15:04:05'
 
@@ -145,7 +145,7 @@ class ShowFsTaskResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowFsTaskResponse.
+        r"""Sets the begin_time of this ShowFsTaskResponse.
 
         任务开始时间，UTC时间，例如：2006-01-02 15:04:05'
 
@@ -156,7 +156,7 @@ class ShowFsTaskResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowFsTaskResponse.
+        r"""Gets the end_time of this ShowFsTaskResponse.
 
         任务结束时间，UTC时间，例如：2006-01-02 15:04:06'
 
@@ -167,7 +167,7 @@ class ShowFsTaskResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowFsTaskResponse.
+        r"""Sets the end_time of this ShowFsTaskResponse.
 
         任务结束时间，UTC时间，例如：2006-01-02 15:04:06'
 

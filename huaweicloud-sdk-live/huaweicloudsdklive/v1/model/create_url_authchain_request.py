@@ -25,7 +25,7 @@ class CreateUrlAuthchainRequest:
     }
 
     def __init__(self, body=None):
-        """CreateUrlAuthchainRequest
+        r"""CreateUrlAuthchainRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateUrlAuthchainRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateUrlAuthchainRequest.
+        r"""Gets the body of this CreateUrlAuthchainRequest.
 
         :return: The body of this CreateUrlAuthchainRequest.
         :rtype: :class:`huaweicloudsdklive.v1.CreateUrlAuthchainReq`
@@ -52,7 +52,7 @@ class CreateUrlAuthchainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateUrlAuthchainRequest.
+        r"""Sets the body of this CreateUrlAuthchainRequest.
 
         :param body: The body of this CreateUrlAuthchainRequest.
         :type body: :class:`huaweicloudsdklive.v1.CreateUrlAuthchainReq`

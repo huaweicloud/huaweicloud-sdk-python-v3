@@ -32,7 +32,7 @@ class ListGraphsResponse(SdkResponse):
     }
 
     def __init__(self, graph_count=None, graphs=None, error_message=None, error_code=None):
-        """ListGraphsResponse
+        r"""ListGraphsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListGraphsResponse(SdkResponse):
 
     @property
     def graph_count(self):
-        """Gets the graph_count of this ListGraphsResponse.
+        r"""Gets the graph_count of this ListGraphsResponse.
 
         图总个数。请求失败时为空。
 
@@ -76,7 +76,7 @@ class ListGraphsResponse(SdkResponse):
 
     @graph_count.setter
     def graph_count(self, graph_count):
-        """Sets the graph_count of this ListGraphsResponse.
+        r"""Sets the graph_count of this ListGraphsResponse.
 
         图总个数。请求失败时为空。
 
@@ -87,7 +87,7 @@ class ListGraphsResponse(SdkResponse):
 
     @property
     def graphs(self):
-        """Gets the graphs of this ListGraphsResponse.
+        r"""Gets the graphs of this ListGraphsResponse.
 
         图列表。请求失败时为空。
 
@@ -98,7 +98,7 @@ class ListGraphsResponse(SdkResponse):
 
     @graphs.setter
     def graphs(self, graphs):
-        """Sets the graphs of this ListGraphsResponse.
+        r"""Sets the graphs of this ListGraphsResponse.
 
         图列表。请求失败时为空。
 
@@ -109,7 +109,7 @@ class ListGraphsResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ListGraphsResponse.
+        r"""Gets the error_message of this ListGraphsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -120,7 +120,7 @@ class ListGraphsResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ListGraphsResponse.
+        r"""Sets the error_message of this ListGraphsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -131,7 +131,7 @@ class ListGraphsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListGraphsResponse.
+        r"""Gets the error_code of this ListGraphsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -142,7 +142,7 @@ class ListGraphsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListGraphsResponse.
+        r"""Sets the error_code of this ListGraphsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 

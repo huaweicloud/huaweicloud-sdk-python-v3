@@ -29,7 +29,7 @@ class CreateSearchCriteriasRequest:
     }
 
     def __init__(self, group_id=None, topic_id=None, body=None):
-        """CreateSearchCriteriasRequest
+        r"""CreateSearchCriteriasRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateSearchCriteriasRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateSearchCriteriasRequest.
+        r"""Gets the group_id of this CreateSearchCriteriasRequest.
 
         租户想查询的日志流所在的日志组的groupid，一般为36位字符串。  缺省值：None  最小长度：36  最大长度：36
 
@@ -66,7 +66,7 @@ class CreateSearchCriteriasRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateSearchCriteriasRequest.
+        r"""Sets the group_id of this CreateSearchCriteriasRequest.
 
         租户想查询的日志流所在的日志组的groupid，一般为36位字符串。  缺省值：None  最小长度：36  最大长度：36
 
@@ -77,7 +77,7 @@ class CreateSearchCriteriasRequest:
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this CreateSearchCriteriasRequest.
+        r"""Gets the topic_id of this CreateSearchCriteriasRequest.
 
         日志流id
 
@@ -88,7 +88,7 @@ class CreateSearchCriteriasRequest:
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this CreateSearchCriteriasRequest.
+        r"""Sets the topic_id of this CreateSearchCriteriasRequest.
 
         日志流id
 
@@ -99,7 +99,7 @@ class CreateSearchCriteriasRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSearchCriteriasRequest.
+        r"""Gets the body of this CreateSearchCriteriasRequest.
 
         :return: The body of this CreateSearchCriteriasRequest.
         :rtype: :class:`huaweicloudsdklts.v2.CreateSearchCriteriasBody`
@@ -108,7 +108,7 @@ class CreateSearchCriteriasRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSearchCriteriasRequest.
+        r"""Sets the body of this CreateSearchCriteriasRequest.
 
         :param body: The body of this CreateSearchCriteriasRequest.
         :type body: :class:`huaweicloudsdklts.v2.CreateSearchCriteriasBody`

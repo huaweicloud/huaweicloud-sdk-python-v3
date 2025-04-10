@@ -28,7 +28,7 @@ class UpdateCheckPointResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_message=None):
-        """UpdateCheckPointResponse
+        r"""UpdateCheckPointResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateCheckPointResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this UpdateCheckPointResponse.
+        r"""Gets the error_code of this UpdateCheckPointResponse.
 
         状态码
 
@@ -62,7 +62,7 @@ class UpdateCheckPointResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this UpdateCheckPointResponse.
+        r"""Sets the error_code of this UpdateCheckPointResponse.
 
         状态码
 
@@ -73,7 +73,7 @@ class UpdateCheckPointResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this UpdateCheckPointResponse.
+        r"""Gets the error_message of this UpdateCheckPointResponse.
 
         状态信息
 
@@ -84,7 +84,7 @@ class UpdateCheckPointResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this UpdateCheckPointResponse.
+        r"""Sets the error_message of this UpdateCheckPointResponse.
 
         状态信息
 

@@ -23,7 +23,7 @@ class TagValue:
     }
 
     def __init__(self):
-        """TagValue
+        r"""TagValue
 
         The model defined in huaweicloud sdk
 

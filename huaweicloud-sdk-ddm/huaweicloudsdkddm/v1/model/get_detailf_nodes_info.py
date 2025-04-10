@@ -29,7 +29,7 @@ class GetDetailfNodesInfo:
     }
 
     def __init__(self, status=None, port=None, ip=None):
-        """GetDetailfNodesInfo
+        r"""GetDetailfNodesInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class GetDetailfNodesInfo:
 
     @property
     def status(self):
-        """Gets the status of this GetDetailfNodesInfo.
+        r"""Gets the status of this GetDetailfNodesInfo.
 
         DDM实例节点状态。
 
@@ -65,7 +65,7 @@ class GetDetailfNodesInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetDetailfNodesInfo.
+        r"""Sets the status of this GetDetailfNodesInfo.
 
         DDM实例节点状态。
 
@@ -76,7 +76,7 @@ class GetDetailfNodesInfo:
 
     @property
     def port(self):
-        """Gets the port of this GetDetailfNodesInfo.
+        r"""Gets the port of this GetDetailfNodesInfo.
 
         DDM实例节点port。
 
@@ -87,7 +87,7 @@ class GetDetailfNodesInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this GetDetailfNodesInfo.
+        r"""Sets the port of this GetDetailfNodesInfo.
 
         DDM实例节点port。
 
@@ -98,7 +98,7 @@ class GetDetailfNodesInfo:
 
     @property
     def ip(self):
-        """Gets the ip of this GetDetailfNodesInfo.
+        r"""Gets the ip of this GetDetailfNodesInfo.
 
         DDM实例节点IP。
 
@@ -109,7 +109,7 @@ class GetDetailfNodesInfo:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this GetDetailfNodesInfo.
+        r"""Sets the ip of this GetDetailfNodesInfo.
 
         DDM实例节点IP。
 

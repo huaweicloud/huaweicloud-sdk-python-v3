@@ -27,7 +27,7 @@ class IdentityprovidersLinks:
     }
 
     def __init__(self, _self=None, protocols=None):
-        """IdentityprovidersLinks
+        r"""IdentityprovidersLinks
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IdentityprovidersLinks:
 
     @property
     def _self(self):
-        """Gets the _self of this IdentityprovidersLinks.
+        r"""Gets the _self of this IdentityprovidersLinks.
 
         身份提供商的资源链接地址。
 
@@ -59,7 +59,7 @@ class IdentityprovidersLinks:
 
     @_self.setter
     def _self(self, _self):
-        """Sets the _self of this IdentityprovidersLinks.
+        r"""Sets the _self of this IdentityprovidersLinks.
 
         身份提供商的资源链接地址。
 
@@ -70,7 +70,7 @@ class IdentityprovidersLinks:
 
     @property
     def protocols(self):
-        """Gets the protocols of this IdentityprovidersLinks.
+        r"""Gets the protocols of this IdentityprovidersLinks.
 
         协议的资源链接地址。
 
@@ -81,7 +81,7 @@ class IdentityprovidersLinks:
 
     @protocols.setter
     def protocols(self, protocols):
-        """Sets the protocols of this IdentityprovidersLinks.
+        r"""Sets the protocols of this IdentityprovidersLinks.
 
         协议的资源链接地址。
 

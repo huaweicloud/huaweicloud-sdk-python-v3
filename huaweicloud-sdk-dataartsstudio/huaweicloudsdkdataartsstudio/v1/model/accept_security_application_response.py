@@ -24,7 +24,7 @@ class AcceptSecurityApplicationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AcceptSecurityApplicationResponse
+        r"""AcceptSecurityApplicationResponse
 
         The model defined in huaweicloud sdk
 

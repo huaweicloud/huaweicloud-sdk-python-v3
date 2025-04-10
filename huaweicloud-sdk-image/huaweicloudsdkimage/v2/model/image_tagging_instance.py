@@ -27,7 +27,7 @@ class ImageTaggingInstance:
     }
 
     def __init__(self, bounding_box=None, confidence=None):
-        """ImageTaggingInstance
+        r"""ImageTaggingInstance
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImageTaggingInstance:
 
     @property
     def bounding_box(self):
-        """Gets the bounding_box of this ImageTaggingInstance.
+        r"""Gets the bounding_box of this ImageTaggingInstance.
 
         :return: The bounding_box of this ImageTaggingInstance.
         :rtype: :class:`huaweicloudsdkimage.v2.ImageTaggingBoundingBox`
@@ -59,7 +59,7 @@ class ImageTaggingInstance:
 
     @bounding_box.setter
     def bounding_box(self, bounding_box):
-        """Sets the bounding_box of this ImageTaggingInstance.
+        r"""Sets the bounding_box of this ImageTaggingInstance.
 
         :param bounding_box: The bounding_box of this ImageTaggingInstance.
         :type bounding_box: :class:`huaweicloudsdkimage.v2.ImageTaggingBoundingBox`
@@ -68,7 +68,7 @@ class ImageTaggingInstance:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ImageTaggingInstance.
+        r"""Gets the confidence of this ImageTaggingInstance.
 
         检测标签置信度,将Float型置信度转为String类型返回,Float取值范围（0~100）。
 
@@ -79,7 +79,7 @@ class ImageTaggingInstance:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ImageTaggingInstance.
+        r"""Sets the confidence of this ImageTaggingInstance.
 
         检测标签置信度,将Float型置信度转为String类型返回,Float取值范围（0~100）。
 

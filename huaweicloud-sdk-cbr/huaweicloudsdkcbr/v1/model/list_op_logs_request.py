@@ -47,7 +47,7 @@ class ListOpLogsRequest:
     }
 
     def __init__(self, end_time=None, limit=None, offset=None, operation_type=None, provider_id=None, resource_id=None, resource_name=None, start_time=None, status=None, vault_id=None, vault_name=None, enterprise_project_id=None):
-        """ListOpLogsRequest
+        r"""ListOpLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListOpLogsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListOpLogsRequest.
+        r"""Gets the end_time of this ListOpLogsRequest.
 
         任务结束时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-02-01T12:00:00Z
 
@@ -131,7 +131,7 @@ class ListOpLogsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListOpLogsRequest.
+        r"""Sets the end_time of this ListOpLogsRequest.
 
         任务结束时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-02-01T12:00:00Z
 
@@ -142,7 +142,7 @@ class ListOpLogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListOpLogsRequest.
+        r"""Gets the limit of this ListOpLogsRequest.
 
         每页显示的条目数量，正整数
 
@@ -153,7 +153,7 @@ class ListOpLogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListOpLogsRequest.
+        r"""Sets the limit of this ListOpLogsRequest.
 
         每页显示的条目数量，正整数
 
@@ -164,7 +164,7 @@ class ListOpLogsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListOpLogsRequest.
+        r"""Gets the offset of this ListOpLogsRequest.
 
         偏移值，正整数
 
@@ -175,7 +175,7 @@ class ListOpLogsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListOpLogsRequest.
+        r"""Sets the offset of this ListOpLogsRequest.
 
         偏移值，正整数
 
@@ -186,7 +186,7 @@ class ListOpLogsRequest:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this ListOpLogsRequest.
+        r"""Gets the operation_type of this ListOpLogsRequest.
 
         任务类型
 
@@ -197,7 +197,7 @@ class ListOpLogsRequest:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this ListOpLogsRequest.
+        r"""Sets the operation_type of this ListOpLogsRequest.
 
         任务类型
 
@@ -208,7 +208,7 @@ class ListOpLogsRequest:
 
     @property
     def provider_id(self):
-        """Gets the provider_id of this ListOpLogsRequest.
+        r"""Gets the provider_id of this ListOpLogsRequest.
 
         备份提供商ID
 
@@ -219,7 +219,7 @@ class ListOpLogsRequest:
 
     @provider_id.setter
     def provider_id(self, provider_id):
-        """Sets the provider_id of this ListOpLogsRequest.
+        r"""Sets the provider_id of this ListOpLogsRequest.
 
         备份提供商ID
 
@@ -230,7 +230,7 @@ class ListOpLogsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListOpLogsRequest.
+        r"""Gets the resource_id of this ListOpLogsRequest.
 
         该任务操作的资源ID
 
@@ -241,7 +241,7 @@ class ListOpLogsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListOpLogsRequest.
+        r"""Sets the resource_id of this ListOpLogsRequest.
 
         该任务操作的资源ID
 
@@ -252,7 +252,7 @@ class ListOpLogsRequest:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ListOpLogsRequest.
+        r"""Gets the resource_name of this ListOpLogsRequest.
 
         该任务操作的资源名称
 
@@ -263,7 +263,7 @@ class ListOpLogsRequest:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ListOpLogsRequest.
+        r"""Sets the resource_name of this ListOpLogsRequest.
 
         该任务操作的资源名称
 
@@ -274,7 +274,7 @@ class ListOpLogsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListOpLogsRequest.
+        r"""Gets the start_time of this ListOpLogsRequest.
 
         任务开始时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-01-01T12:00:00Z
 
@@ -285,7 +285,7 @@ class ListOpLogsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListOpLogsRequest.
+        r"""Sets the start_time of this ListOpLogsRequest.
 
         任务开始时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-01-01T12:00:00Z
 
@@ -296,7 +296,7 @@ class ListOpLogsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListOpLogsRequest.
+        r"""Gets the status of this ListOpLogsRequest.
 
         任务状态
 
@@ -307,7 +307,7 @@ class ListOpLogsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListOpLogsRequest.
+        r"""Sets the status of this ListOpLogsRequest.
 
         任务状态
 
@@ -318,7 +318,7 @@ class ListOpLogsRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this ListOpLogsRequest.
+        r"""Gets the vault_id of this ListOpLogsRequest.
 
         存储库ID,该任务操作的资源所属绑定的存储库。
 
@@ -329,7 +329,7 @@ class ListOpLogsRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this ListOpLogsRequest.
+        r"""Sets the vault_id of this ListOpLogsRequest.
 
         存储库ID,该任务操作的资源所属绑定的存储库。
 
@@ -340,7 +340,7 @@ class ListOpLogsRequest:
 
     @property
     def vault_name(self):
-        """Gets the vault_name of this ListOpLogsRequest.
+        r"""Gets the vault_name of this ListOpLogsRequest.
 
         存储库名称，该任务操作资源所绑定的存储库名称。
 
@@ -351,7 +351,7 @@ class ListOpLogsRequest:
 
     @vault_name.setter
     def vault_name(self, vault_name):
-        """Sets the vault_name of this ListOpLogsRequest.
+        r"""Sets the vault_name of this ListOpLogsRequest.
 
         存储库名称，该任务操作资源所绑定的存储库名称。
 
@@ -362,7 +362,7 @@ class ListOpLogsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListOpLogsRequest.
+        r"""Gets the enterprise_project_id of this ListOpLogsRequest.
 
         企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
 
@@ -373,7 +373,7 @@ class ListOpLogsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListOpLogsRequest.
+        r"""Sets the enterprise_project_id of this ListOpLogsRequest.
 
         企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
 

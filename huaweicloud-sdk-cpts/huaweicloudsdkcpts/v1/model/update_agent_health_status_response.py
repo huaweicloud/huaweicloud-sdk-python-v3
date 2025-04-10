@@ -32,7 +32,7 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, extend=None, result=None):
-        """UpdateAgentHealthStatusResponse
+        r"""UpdateAgentHealthStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this UpdateAgentHealthStatusResponse.
+        r"""Gets the code of this UpdateAgentHealthStatusResponse.
 
         响应码
 
@@ -76,7 +76,7 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this UpdateAgentHealthStatusResponse.
+        r"""Sets the code of this UpdateAgentHealthStatusResponse.
 
         响应码
 
@@ -87,7 +87,7 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this UpdateAgentHealthStatusResponse.
+        r"""Gets the message of this UpdateAgentHealthStatusResponse.
 
         响应消息
 
@@ -98,7 +98,7 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this UpdateAgentHealthStatusResponse.
+        r"""Sets the message of this UpdateAgentHealthStatusResponse.
 
         响应消息
 
@@ -109,7 +109,7 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
 
     @property
     def extend(self):
-        """Gets the extend of this UpdateAgentHealthStatusResponse.
+        r"""Gets the extend of this UpdateAgentHealthStatusResponse.
 
         扩展信息
 
@@ -120,7 +120,7 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this UpdateAgentHealthStatusResponse.
+        r"""Sets the extend of this UpdateAgentHealthStatusResponse.
 
         扩展信息
 
@@ -131,7 +131,7 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateAgentHealthStatusResponse.
+        r"""Gets the result of this UpdateAgentHealthStatusResponse.
 
         :return: The result of this UpdateAgentHealthStatusResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateAgentStatusResponseDetail`
@@ -140,7 +140,7 @@ class UpdateAgentHealthStatusResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateAgentHealthStatusResponse.
+        r"""Sets the result of this UpdateAgentHealthStatusResponse.
 
         :param result: The result of this UpdateAgentHealthStatusResponse.
         :type result: :class:`huaweicloudsdkcpts.v1.UpdateAgentStatusResponseDetail`

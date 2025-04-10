@@ -41,7 +41,7 @@ class ListSecurityMemberSyncTasksRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, cluster_type=None, cluster_name=None, sync_status=None, schedule_status=None, order_by=None, order_by_asc=None):
-        """ListSecurityMemberSyncTasksRequest
+        r"""ListSecurityMemberSyncTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityMemberSyncTasksRequest.
+        r"""Gets the workspace of this ListSecurityMemberSyncTasksRequest.
 
         DataArts Studio工作空间ID
 
@@ -109,7 +109,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityMemberSyncTasksRequest.
+        r"""Sets the workspace of this ListSecurityMemberSyncTasksRequest.
 
         DataArts Studio工作空间ID
 
@@ -120,7 +120,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityMemberSyncTasksRequest.
+        r"""Gets the limit of this ListSecurityMemberSyncTasksRequest.
 
         limit
 
@@ -131,7 +131,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityMemberSyncTasksRequest.
+        r"""Sets the limit of this ListSecurityMemberSyncTasksRequest.
 
         limit
 
@@ -142,7 +142,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecurityMemberSyncTasksRequest.
+        r"""Gets the offset of this ListSecurityMemberSyncTasksRequest.
 
         offset
 
@@ -153,7 +153,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecurityMemberSyncTasksRequest.
+        r"""Sets the offset of this ListSecurityMemberSyncTasksRequest.
 
         offset
 
@@ -164,7 +164,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this ListSecurityMemberSyncTasksRequest.
+        r"""Gets the cluster_type of this ListSecurityMemberSyncTasksRequest.
 
         集群类型 * MRS数据源 * DWS数据源
 
@@ -175,7 +175,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this ListSecurityMemberSyncTasksRequest.
+        r"""Sets the cluster_type of this ListSecurityMemberSyncTasksRequest.
 
         集群类型 * MRS数据源 * DWS数据源
 
@@ -186,7 +186,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ListSecurityMemberSyncTasksRequest.
+        r"""Gets the cluster_name of this ListSecurityMemberSyncTasksRequest.
 
         集群名称
 
@@ -197,7 +197,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ListSecurityMemberSyncTasksRequest.
+        r"""Sets the cluster_name of this ListSecurityMemberSyncTasksRequest.
 
         集群名称
 
@@ -208,7 +208,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @property
     def sync_status(self):
-        """Gets the sync_status of this ListSecurityMemberSyncTasksRequest.
+        r"""Gets the sync_status of this ListSecurityMemberSyncTasksRequest.
 
         同步状态 * UNKNOWN 未知 * NOT_SYNC 未同步 * SYNCING 同步中 * SYNC_SUCCESS 同步成功 * SYNC_FAIL 同步失败
 
@@ -219,7 +219,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @sync_status.setter
     def sync_status(self, sync_status):
-        """Sets the sync_status of this ListSecurityMemberSyncTasksRequest.
+        r"""Sets the sync_status of this ListSecurityMemberSyncTasksRequest.
 
         同步状态 * UNKNOWN 未知 * NOT_SYNC 未同步 * SYNCING 同步中 * SYNC_SUCCESS 同步成功 * SYNC_FAIL 同步失败
 
@@ -230,7 +230,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @property
     def schedule_status(self):
-        """Gets the schedule_status of this ListSecurityMemberSyncTasksRequest.
+        r"""Gets the schedule_status of this ListSecurityMemberSyncTasksRequest.
 
         用户同步任务调度状态 * NOT_SCHEDULE 未启用调度 * SCHEDULING 调度中
 
@@ -241,7 +241,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @schedule_status.setter
     def schedule_status(self, schedule_status):
-        """Sets the schedule_status of this ListSecurityMemberSyncTasksRequest.
+        r"""Sets the schedule_status of this ListSecurityMemberSyncTasksRequest.
 
         用户同步任务调度状态 * NOT_SCHEDULE 未启用调度 * SCHEDULING 调度中
 
@@ -252,7 +252,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListSecurityMemberSyncTasksRequest.
+        r"""Gets the order_by of this ListSecurityMemberSyncTasksRequest.
 
         排序字段 * CLUSTER_NAME  按照集群名称排序 * CREATE_TIME   按照创建时间排序 * UPDATE_TIME   按照更新时间排序 * SYNC_TIME     按照同步时间排序
 
@@ -263,7 +263,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListSecurityMemberSyncTasksRequest.
+        r"""Sets the order_by of this ListSecurityMemberSyncTasksRequest.
 
         排序字段 * CLUSTER_NAME  按照集群名称排序 * CREATE_TIME   按照创建时间排序 * UPDATE_TIME   按照更新时间排序 * SYNC_TIME     按照同步时间排序
 
@@ -274,7 +274,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @property
     def order_by_asc(self):
-        """Gets the order_by_asc of this ListSecurityMemberSyncTasksRequest.
+        r"""Gets the order_by_asc of this ListSecurityMemberSyncTasksRequest.
 
         是否升序（仅指定排序参数时有效）。
 
@@ -285,7 +285,7 @@ class ListSecurityMemberSyncTasksRequest:
 
     @order_by_asc.setter
     def order_by_asc(self, order_by_asc):
-        """Sets the order_by_asc of this ListSecurityMemberSyncTasksRequest.
+        r"""Sets the order_by_asc of this ListSecurityMemberSyncTasksRequest.
 
         是否升序（仅指定排序参数时有效）。
 

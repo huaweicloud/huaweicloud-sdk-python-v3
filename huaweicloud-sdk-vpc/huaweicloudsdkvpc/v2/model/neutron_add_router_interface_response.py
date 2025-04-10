@@ -34,7 +34,7 @@ class NeutronAddRouterInterfaceResponse(SdkResponse):
     }
 
     def __init__(self, port_id=None, subnet_id=None, tenant_id=None, project_id=None, id=None):
-        """NeutronAddRouterInterfaceResponse
+        r"""NeutronAddRouterInterfaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class NeutronAddRouterInterfaceResponse(SdkResponse):
 
     @property
     def port_id(self):
-        """Gets the port_id of this NeutronAddRouterInterfaceResponse.
+        r"""Gets the port_id of this NeutronAddRouterInterfaceResponse.
 
         路由器添加的端口对应的ID
 
@@ -83,7 +83,7 @@ class NeutronAddRouterInterfaceResponse(SdkResponse):
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this NeutronAddRouterInterfaceResponse.
+        r"""Sets the port_id of this NeutronAddRouterInterfaceResponse.
 
         路由器添加的端口对应的ID
 
@@ -94,7 +94,7 @@ class NeutronAddRouterInterfaceResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this NeutronAddRouterInterfaceResponse.
+        r"""Gets the subnet_id of this NeutronAddRouterInterfaceResponse.
 
         路由器添加的子网对应的ID
 
@@ -105,7 +105,7 @@ class NeutronAddRouterInterfaceResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this NeutronAddRouterInterfaceResponse.
+        r"""Sets the subnet_id of this NeutronAddRouterInterfaceResponse.
 
         路由器添加的子网对应的ID
 
@@ -116,7 +116,7 @@ class NeutronAddRouterInterfaceResponse(SdkResponse):
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronAddRouterInterfaceResponse.
+        r"""Gets the tenant_id of this NeutronAddRouterInterfaceResponse.
 
         项目ID
 
@@ -127,7 +127,7 @@ class NeutronAddRouterInterfaceResponse(SdkResponse):
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronAddRouterInterfaceResponse.
+        r"""Sets the tenant_id of this NeutronAddRouterInterfaceResponse.
 
         项目ID
 
@@ -138,7 +138,7 @@ class NeutronAddRouterInterfaceResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this NeutronAddRouterInterfaceResponse.
+        r"""Gets the project_id of this NeutronAddRouterInterfaceResponse.
 
         项目ID
 
@@ -149,7 +149,7 @@ class NeutronAddRouterInterfaceResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this NeutronAddRouterInterfaceResponse.
+        r"""Sets the project_id of this NeutronAddRouterInterfaceResponse.
 
         项目ID
 
@@ -160,7 +160,7 @@ class NeutronAddRouterInterfaceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this NeutronAddRouterInterfaceResponse.
+        r"""Gets the id of this NeutronAddRouterInterfaceResponse.
 
         路由器的ID
 
@@ -171,7 +171,7 @@ class NeutronAddRouterInterfaceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronAddRouterInterfaceResponse.
+        r"""Sets the id of this NeutronAddRouterInterfaceResponse.
 
         路由器的ID
 

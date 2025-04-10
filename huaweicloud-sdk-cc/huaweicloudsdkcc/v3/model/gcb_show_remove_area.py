@@ -25,7 +25,7 @@ class GcbShowRemoveArea:
     }
 
     def __init__(self, remote_area=None):
-        """GcbShowRemoveArea
+        r"""GcbShowRemoveArea
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GcbShowRemoveArea:
 
     @property
     def remote_area(self):
-        """Gets the remote_area of this GcbShowRemoveArea.
+        r"""Gets the remote_area of this GcbShowRemoveArea.
 
         功能说明：远端接入点的中英文名。通过HEADER里面的x-language控制，默认英文，zh-cn返回中文。
 
@@ -54,7 +54,7 @@ class GcbShowRemoveArea:
 
     @remote_area.setter
     def remote_area(self, remote_area):
-        """Sets the remote_area of this GcbShowRemoveArea.
+        r"""Sets the remote_area of this GcbShowRemoveArea.
 
         功能说明：远端接入点的中英文名。通过HEADER里面的x-language控制，默认英文，zh-cn返回中文。
 

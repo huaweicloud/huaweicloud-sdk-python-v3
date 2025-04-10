@@ -27,7 +27,7 @@ class DeleteCatalogRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None):
-        """DeleteCatalogRequest
+        r"""DeleteCatalogRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteCatalogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteCatalogRequest.
+        r"""Gets the instance_id of this DeleteCatalogRequest.
 
         实例Id
 
@@ -59,7 +59,7 @@ class DeleteCatalogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteCatalogRequest.
+        r"""Sets the instance_id of this DeleteCatalogRequest.
 
         实例Id
 
@@ -70,7 +70,7 @@ class DeleteCatalogRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this DeleteCatalogRequest.
+        r"""Gets the catalog_name of this DeleteCatalogRequest.
 
         catalog名字
 
@@ -81,7 +81,7 @@ class DeleteCatalogRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this DeleteCatalogRequest.
+        r"""Sets the catalog_name of this DeleteCatalogRequest.
 
         catalog名字
 

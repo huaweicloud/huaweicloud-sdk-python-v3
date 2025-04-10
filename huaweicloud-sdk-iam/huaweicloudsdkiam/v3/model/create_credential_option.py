@@ -27,7 +27,7 @@ class CreateCredentialOption:
     }
 
     def __init__(self, user_id=None, description=None):
-        """CreateCredentialOption
+        r"""CreateCredentialOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCredentialOption:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateCredentialOption.
+        r"""Gets the user_id of this CreateCredentialOption.
 
         待创建访问秘钥（AK/SK）的IAM用户ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -60,7 +60,7 @@ class CreateCredentialOption:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateCredentialOption.
+        r"""Sets the user_id of this CreateCredentialOption.
 
         待创建访问秘钥（AK/SK）的IAM用户ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -71,7 +71,7 @@ class CreateCredentialOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateCredentialOption.
+        r"""Gets the description of this CreateCredentialOption.
 
         访问密钥描述信息。
 
@@ -82,7 +82,7 @@ class CreateCredentialOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateCredentialOption.
+        r"""Sets the description of this CreateCredentialOption.
 
         访问密钥描述信息。
 

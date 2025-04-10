@@ -32,7 +32,7 @@ class ListSnapshotConfigsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, snapshot_config_list=None, limit=None, offset=None):
-        """ListSnapshotConfigsResponse
+        r"""ListSnapshotConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListSnapshotConfigsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSnapshotConfigsResponse.
+        r"""Gets the total of this ListSnapshotConfigsResponse.
 
         总条目数
 
@@ -76,7 +76,7 @@ class ListSnapshotConfigsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSnapshotConfigsResponse.
+        r"""Sets the total of this ListSnapshotConfigsResponse.
 
         总条目数
 
@@ -87,7 +87,7 @@ class ListSnapshotConfigsResponse(SdkResponse):
 
     @property
     def snapshot_config_list(self):
-        """Gets the snapshot_config_list of this ListSnapshotConfigsResponse.
+        r"""Gets the snapshot_config_list of this ListSnapshotConfigsResponse.
 
         截图配置
 
@@ -98,7 +98,7 @@ class ListSnapshotConfigsResponse(SdkResponse):
 
     @snapshot_config_list.setter
     def snapshot_config_list(self, snapshot_config_list):
-        """Sets the snapshot_config_list of this ListSnapshotConfigsResponse.
+        r"""Sets the snapshot_config_list of this ListSnapshotConfigsResponse.
 
         截图配置
 
@@ -109,7 +109,7 @@ class ListSnapshotConfigsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListSnapshotConfigsResponse.
+        r"""Gets the limit of this ListSnapshotConfigsResponse.
 
         每页记录数
 
@@ -120,7 +120,7 @@ class ListSnapshotConfigsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSnapshotConfigsResponse.
+        r"""Sets the limit of this ListSnapshotConfigsResponse.
 
         每页记录数
 
@@ -131,7 +131,7 @@ class ListSnapshotConfigsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListSnapshotConfigsResponse.
+        r"""Gets the offset of this ListSnapshotConfigsResponse.
 
         偏移量
 
@@ -142,7 +142,7 @@ class ListSnapshotConfigsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSnapshotConfigsResponse.
+        r"""Sets the offset of this ListSnapshotConfigsResponse.
 
         偏移量
 

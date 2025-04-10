@@ -28,7 +28,7 @@ class StartMeetingResponse(SdkResponse):
     }
 
     def __init__(self, uuid=None, region_ip=None):
-        """StartMeetingResponse
+        r"""StartMeetingResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class StartMeetingResponse(SdkResponse):
 
     @property
     def uuid(self):
-        """Gets the uuid of this StartMeetingResponse.
+        r"""Gets the uuid of this StartMeetingResponse.
 
         uuid。 > 废弃参数，请勿使用。 
 
@@ -62,7 +62,7 @@ class StartMeetingResponse(SdkResponse):
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this StartMeetingResponse.
+        r"""Sets the uuid of this StartMeetingResponse.
 
         uuid。 > 废弃参数，请勿使用。 
 
@@ -73,7 +73,7 @@ class StartMeetingResponse(SdkResponse):
 
     @property
     def region_ip(self):
-        """Gets the region_ip of this StartMeetingResponse.
+        r"""Gets the region_ip of this StartMeetingResponse.
 
         会议所在区域的公网IP地址。
 
@@ -84,7 +84,7 @@ class StartMeetingResponse(SdkResponse):
 
     @region_ip.setter
     def region_ip(self, region_ip):
-        """Sets the region_ip of this StartMeetingResponse.
+        r"""Sets the region_ip of this StartMeetingResponse.
 
         会议所在区域的公网IP地址。
 

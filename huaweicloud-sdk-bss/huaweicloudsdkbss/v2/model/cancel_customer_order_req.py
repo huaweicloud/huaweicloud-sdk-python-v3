@@ -25,7 +25,7 @@ class CancelCustomerOrderReq:
     }
 
     def __init__(self, order_id=None):
-        """CancelCustomerOrderReq
+        r"""CancelCustomerOrderReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CancelCustomerOrderReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this CancelCustomerOrderReq.
+        r"""Gets the order_id of this CancelCustomerOrderReq.
 
         订单ID。 取值为调用“查询订单列表”接口时响应消息中的“order_id”字段的值。
 
@@ -53,7 +53,7 @@ class CancelCustomerOrderReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CancelCustomerOrderReq.
+        r"""Sets the order_id of this CancelCustomerOrderReq.
 
         订单ID。 取值为调用“查询订单列表”接口时响应消息中的“order_id”字段的值。
 

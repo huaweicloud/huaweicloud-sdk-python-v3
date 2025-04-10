@@ -30,7 +30,7 @@ class AddDeployKeyResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """AddDeployKeyResponse
+        r"""AddDeployKeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class AddDeployKeyResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this AddDeployKeyResponse.
+        r"""Gets the error of this AddDeployKeyResponse.
 
         :return: The error of this AddDeployKeyResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class AddDeployKeyResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this AddDeployKeyResponse.
+        r"""Sets the error of this AddDeployKeyResponse.
 
         :param error: The error of this AddDeployKeyResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class AddDeployKeyResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this AddDeployKeyResponse.
+        r"""Gets the result of this AddDeployKeyResponse.
 
         :return: The result of this AddDeployKeyResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Key`
@@ -85,7 +85,7 @@ class AddDeployKeyResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this AddDeployKeyResponse.
+        r"""Sets the result of this AddDeployKeyResponse.
 
         :param result: The result of this AddDeployKeyResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.Key`
@@ -94,7 +94,7 @@ class AddDeployKeyResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AddDeployKeyResponse.
+        r"""Gets the status of this AddDeployKeyResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class AddDeployKeyResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AddDeployKeyResponse.
+        r"""Sets the status of this AddDeployKeyResponse.
 
         响应状态
 

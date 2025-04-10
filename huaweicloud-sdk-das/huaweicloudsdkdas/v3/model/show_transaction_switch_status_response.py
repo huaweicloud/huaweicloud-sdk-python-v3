@@ -26,7 +26,7 @@ class ShowTransactionSwitchStatusResponse(SdkResponse):
     }
 
     def __init__(self, switch_status=None):
-        """ShowTransactionSwitchStatusResponse
+        r"""ShowTransactionSwitchStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowTransactionSwitchStatusResponse(SdkResponse):
 
     @property
     def switch_status(self):
-        """Gets the switch_status of this ShowTransactionSwitchStatusResponse.
+        r"""Gets the switch_status of this ShowTransactionSwitchStatusResponse.
 
         开关状态
 
@@ -55,7 +55,7 @@ class ShowTransactionSwitchStatusResponse(SdkResponse):
 
     @switch_status.setter
     def switch_status(self, switch_status):
-        """Sets the switch_status of this ShowTransactionSwitchStatusResponse.
+        r"""Sets the switch_status of this ShowTransactionSwitchStatusResponse.
 
         开关状态
 

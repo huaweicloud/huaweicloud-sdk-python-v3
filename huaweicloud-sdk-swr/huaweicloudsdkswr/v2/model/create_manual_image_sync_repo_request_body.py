@@ -31,7 +31,7 @@ class CreateManualImageSyncRepoRequestBody:
     }
 
     def __init__(self, image_tag=None, override=None, remote_namespace=None, remote_region_id=None):
-        """CreateManualImageSyncRepoRequestBody
+        r"""CreateManualImageSyncRepoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateManualImageSyncRepoRequestBody:
 
     @property
     def image_tag(self):
-        """Gets the image_tag of this CreateManualImageSyncRepoRequestBody.
+        r"""Gets the image_tag of this CreateManualImageSyncRepoRequestBody.
 
         版本列表
 
@@ -72,7 +72,7 @@ class CreateManualImageSyncRepoRequestBody:
 
     @image_tag.setter
     def image_tag(self, image_tag):
-        """Sets the image_tag of this CreateManualImageSyncRepoRequestBody.
+        r"""Sets the image_tag of this CreateManualImageSyncRepoRequestBody.
 
         版本列表
 
@@ -83,7 +83,7 @@ class CreateManualImageSyncRepoRequestBody:
 
     @property
     def override(self):
-        """Gets the override of this CreateManualImageSyncRepoRequestBody.
+        r"""Gets the override of this CreateManualImageSyncRepoRequestBody.
 
         是否覆盖，默认为false
 
@@ -94,7 +94,7 @@ class CreateManualImageSyncRepoRequestBody:
 
     @override.setter
     def override(self, override):
-        """Sets the override of this CreateManualImageSyncRepoRequestBody.
+        r"""Sets the override of this CreateManualImageSyncRepoRequestBody.
 
         是否覆盖，默认为false
 
@@ -105,7 +105,7 @@ class CreateManualImageSyncRepoRequestBody:
 
     @property
     def remote_namespace(self):
-        """Gets the remote_namespace of this CreateManualImageSyncRepoRequestBody.
+        r"""Gets the remote_namespace of this CreateManualImageSyncRepoRequestBody.
 
         目标组织
 
@@ -116,7 +116,7 @@ class CreateManualImageSyncRepoRequestBody:
 
     @remote_namespace.setter
     def remote_namespace(self, remote_namespace):
-        """Sets the remote_namespace of this CreateManualImageSyncRepoRequestBody.
+        r"""Sets the remote_namespace of this CreateManualImageSyncRepoRequestBody.
 
         目标组织
 
@@ -127,7 +127,7 @@ class CreateManualImageSyncRepoRequestBody:
 
     @property
     def remote_region_id(self):
-        """Gets the remote_region_id of this CreateManualImageSyncRepoRequestBody.
+        r"""Gets the remote_region_id of this CreateManualImageSyncRepoRequestBody.
 
         目标region ID。
 
@@ -138,7 +138,7 @@ class CreateManualImageSyncRepoRequestBody:
 
     @remote_region_id.setter
     def remote_region_id(self, remote_region_id):
-        """Sets the remote_region_id of this CreateManualImageSyncRepoRequestBody.
+        r"""Sets the remote_region_id of this CreateManualImageSyncRepoRequestBody.
 
         目标region ID。
 

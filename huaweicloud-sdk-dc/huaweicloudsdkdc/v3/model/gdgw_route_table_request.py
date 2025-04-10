@@ -29,7 +29,7 @@ class GdgwRouteTableRequest:
     }
 
     def __init__(self, add_routes=None, del_routes=None, update_routes=None):
-        """GdgwRouteTableRequest
+        r"""GdgwRouteTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GdgwRouteTableRequest:
 
     @property
     def add_routes(self):
-        """Gets the add_routes of this GdgwRouteTableRequest.
+        r"""Gets the add_routes of this GdgwRouteTableRequest.
 
         需要添加的路由
 
@@ -68,7 +68,7 @@ class GdgwRouteTableRequest:
 
     @add_routes.setter
     def add_routes(self, add_routes):
-        """Sets the add_routes of this GdgwRouteTableRequest.
+        r"""Sets the add_routes of this GdgwRouteTableRequest.
 
         需要添加的路由
 
@@ -79,7 +79,7 @@ class GdgwRouteTableRequest:
 
     @property
     def del_routes(self):
-        """Gets the del_routes of this GdgwRouteTableRequest.
+        r"""Gets the del_routes of this GdgwRouteTableRequest.
 
         需要删除的路由
 
@@ -90,7 +90,7 @@ class GdgwRouteTableRequest:
 
     @del_routes.setter
     def del_routes(self, del_routes):
-        """Sets the del_routes of this GdgwRouteTableRequest.
+        r"""Sets the del_routes of this GdgwRouteTableRequest.
 
         需要删除的路由
 
@@ -101,7 +101,7 @@ class GdgwRouteTableRequest:
 
     @property
     def update_routes(self):
-        """Gets the update_routes of this GdgwRouteTableRequest.
+        r"""Gets the update_routes of this GdgwRouteTableRequest.
 
         需要更新的路由 仅更新该条路由的附加信息，不执行交换机的路由更新操作。当前支持更新：路由描述-description信息
 
@@ -112,7 +112,7 @@ class GdgwRouteTableRequest:
 
     @update_routes.setter
     def update_routes(self, update_routes):
-        """Sets the update_routes of this GdgwRouteTableRequest.
+        r"""Sets the update_routes of this GdgwRouteTableRequest.
 
         需要更新的路由 仅更新该条路由的附加信息，不执行交换机的路由更新操作。当前支持更新：路由描述-description信息
 

@@ -27,7 +27,7 @@ class DeleteUserDriverReq:
     }
 
     def __init__(self, driver_type=None, driver_names=None):
-        """DeleteUserDriverReq
+        r"""DeleteUserDriverReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteUserDriverReq:
 
     @property
     def driver_type(self):
-        """Gets the driver_type of this DeleteUserDriverReq.
+        r"""Gets the driver_type of this DeleteUserDriverReq.
 
         指定待删除的驱动文件类型。取值范围： - db2：DB2 for LUW - informix：Informix
 
@@ -59,7 +59,7 @@ class DeleteUserDriverReq:
 
     @driver_type.setter
     def driver_type(self, driver_type):
-        """Sets the driver_type of this DeleteUserDriverReq.
+        r"""Sets the driver_type of this DeleteUserDriverReq.
 
         指定待删除的驱动文件类型。取值范围： - db2：DB2 for LUW - informix：Informix
 
@@ -70,7 +70,7 @@ class DeleteUserDriverReq:
 
     @property
     def driver_names(self):
-        """Gets the driver_names of this DeleteUserDriverReq.
+        r"""Gets the driver_names of this DeleteUserDriverReq.
 
         JDBC驱动文件列表，列表长度1-20，driver_name的长度5-64，结尾以.jar结尾。
 
@@ -81,7 +81,7 @@ class DeleteUserDriverReq:
 
     @driver_names.setter
     def driver_names(self, driver_names):
-        """Sets the driver_names of this DeleteUserDriverReq.
+        r"""Sets the driver_names of this DeleteUserDriverReq.
 
         JDBC驱动文件列表，列表长度1-20，driver_name的长度5-64，结尾以.jar结尾。
 

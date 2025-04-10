@@ -27,7 +27,7 @@ class BatchListOtTemplatesRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """BatchListOtTemplatesRequest
+        r"""BatchListOtTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchListOtTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchListOtTemplatesRequest.
+        r"""Gets the offset of this BatchListOtTemplatesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -61,7 +61,7 @@ class BatchListOtTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchListOtTemplatesRequest.
+        r"""Sets the offset of this BatchListOtTemplatesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -72,7 +72,7 @@ class BatchListOtTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchListOtTemplatesRequest.
+        r"""Gets the limit of this BatchListOtTemplatesRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 
@@ -83,7 +83,7 @@ class BatchListOtTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchListOtTemplatesRequest.
+        r"""Sets the limit of this BatchListOtTemplatesRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 

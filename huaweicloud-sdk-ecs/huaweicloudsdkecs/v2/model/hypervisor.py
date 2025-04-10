@@ -27,7 +27,7 @@ class Hypervisor:
     }
 
     def __init__(self, hypervisor_type=None, csd_hypervisor=None):
-        """Hypervisor
+        r"""Hypervisor
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Hypervisor:
 
     @property
     def hypervisor_type(self):
-        """Gets the hypervisor_type of this Hypervisor.
+        r"""Gets the hypervisor_type of this Hypervisor.
 
         hypervisor类型
 
@@ -61,7 +61,7 @@ class Hypervisor:
 
     @hypervisor_type.setter
     def hypervisor_type(self, hypervisor_type):
-        """Sets the hypervisor_type of this Hypervisor.
+        r"""Sets the hypervisor_type of this Hypervisor.
 
         hypervisor类型
 
@@ -72,7 +72,7 @@ class Hypervisor:
 
     @property
     def csd_hypervisor(self):
-        """Gets the csd_hypervisor of this Hypervisor.
+        r"""Gets the csd_hypervisor of this Hypervisor.
 
         hypervisor csd信息
 
@@ -83,7 +83,7 @@ class Hypervisor:
 
     @csd_hypervisor.setter
     def csd_hypervisor(self, csd_hypervisor):
-        """Sets the csd_hypervisor of this Hypervisor.
+        r"""Sets the csd_hypervisor of this Hypervisor.
 
         hypervisor csd信息
 

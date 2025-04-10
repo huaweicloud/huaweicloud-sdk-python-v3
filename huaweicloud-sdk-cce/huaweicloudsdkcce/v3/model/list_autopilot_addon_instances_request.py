@@ -25,7 +25,7 @@ class ListAutopilotAddonInstancesRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ListAutopilotAddonInstancesRequest
+        r"""ListAutopilotAddonInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListAutopilotAddonInstancesRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListAutopilotAddonInstancesRequest.
+        r"""Gets the cluster_id of this ListAutopilotAddonInstancesRequest.
 
         集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)
 
@@ -53,7 +53,7 @@ class ListAutopilotAddonInstancesRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListAutopilotAddonInstancesRequest.
+        r"""Sets the cluster_id of this ListAutopilotAddonInstancesRequest.
 
         集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)
 

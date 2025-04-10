@@ -35,7 +35,7 @@ class VolumeConfigurationDataVolume:
     }
 
     def __init__(self, volume_id=None, resource_name=None, resource_type=None, resource_sub_type=None, umask=None, mount_info=None):
-        """VolumeConfigurationDataVolume
+        r"""VolumeConfigurationDataVolume
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class VolumeConfigurationDataVolume:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this VolumeConfigurationDataVolume.
+        r"""Gets the volume_id of this VolumeConfigurationDataVolume.
 
         云存储ID。
 
@@ -89,7 +89,7 @@ class VolumeConfigurationDataVolume:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this VolumeConfigurationDataVolume.
+        r"""Sets the volume_id of this VolumeConfigurationDataVolume.
 
         云存储ID。
 
@@ -100,7 +100,7 @@ class VolumeConfigurationDataVolume:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this VolumeConfigurationDataVolume.
+        r"""Gets the resource_name of this VolumeConfigurationDataVolume.
 
         云存储名称。
 
@@ -111,7 +111,7 @@ class VolumeConfigurationDataVolume:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this VolumeConfigurationDataVolume.
+        r"""Sets the resource_name of this VolumeConfigurationDataVolume.
 
         云存储名称。
 
@@ -122,7 +122,7 @@ class VolumeConfigurationDataVolume:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this VolumeConfigurationDataVolume.
+        r"""Gets the resource_type of this VolumeConfigurationDataVolume.
 
         云存储类型。
 
@@ -133,7 +133,7 @@ class VolumeConfigurationDataVolume:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this VolumeConfigurationDataVolume.
+        r"""Sets the resource_type of this VolumeConfigurationDataVolume.
 
         云存储类型。
 
@@ -144,7 +144,7 @@ class VolumeConfigurationDataVolume:
 
     @property
     def resource_sub_type(self):
-        """Gets the resource_sub_type of this VolumeConfigurationDataVolume.
+        r"""Gets the resource_sub_type of this VolumeConfigurationDataVolume.
 
         云存储子类型。
 
@@ -155,7 +155,7 @@ class VolumeConfigurationDataVolume:
 
     @resource_sub_type.setter
     def resource_sub_type(self, resource_sub_type):
-        """Sets the resource_sub_type of this VolumeConfigurationDataVolume.
+        r"""Sets the resource_sub_type of this VolumeConfigurationDataVolume.
 
         云存储子类型。
 
@@ -166,7 +166,7 @@ class VolumeConfigurationDataVolume:
 
     @property
     def umask(self):
-        """Gets the umask of this VolumeConfigurationDataVolume.
+        r"""Gets the umask of this VolumeConfigurationDataVolume.
 
         设置目录或文件缺省权限，默认值0027，sfs3.0类型的云存储不支持配置此参数。
 
@@ -177,7 +177,7 @@ class VolumeConfigurationDataVolume:
 
     @umask.setter
     def umask(self, umask):
-        """Sets the umask of this VolumeConfigurationDataVolume.
+        r"""Sets the umask of this VolumeConfigurationDataVolume.
 
         设置目录或文件缺省权限，默认值0027，sfs3.0类型的云存储不支持配置此参数。
 
@@ -188,7 +188,7 @@ class VolumeConfigurationDataVolume:
 
     @property
     def mount_info(self):
-        """Gets the mount_info of this VolumeConfigurationDataVolume.
+        r"""Gets the mount_info of this VolumeConfigurationDataVolume.
 
         :return: The mount_info of this VolumeConfigurationDataVolume.
         :rtype: list[:class:`huaweicloudsdkcae.v1.VolumeConfigurationMountInfo`]
@@ -197,7 +197,7 @@ class VolumeConfigurationDataVolume:
 
     @mount_info.setter
     def mount_info(self, mount_info):
-        """Sets the mount_info of this VolumeConfigurationDataVolume.
+        r"""Sets the mount_info of this VolumeConfigurationDataVolume.
 
         :param mount_info: The mount_info of this VolumeConfigurationDataVolume.
         :type mount_info: list[:class:`huaweicloudsdkcae.v1.VolumeConfigurationMountInfo`]

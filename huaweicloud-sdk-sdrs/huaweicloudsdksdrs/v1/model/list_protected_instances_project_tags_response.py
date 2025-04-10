@@ -26,7 +26,7 @@ class ListProtectedInstancesProjectTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ListProtectedInstancesProjectTagsResponse
+        r"""ListProtectedInstancesProjectTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListProtectedInstancesProjectTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListProtectedInstancesProjectTagsResponse.
+        r"""Gets the tags of this ListProtectedInstancesProjectTagsResponse.
 
         标签列表。
 
@@ -55,7 +55,7 @@ class ListProtectedInstancesProjectTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListProtectedInstancesProjectTagsResponse.
+        r"""Sets the tags of this ListProtectedInstancesProjectTagsResponse.
 
         标签列表。
 

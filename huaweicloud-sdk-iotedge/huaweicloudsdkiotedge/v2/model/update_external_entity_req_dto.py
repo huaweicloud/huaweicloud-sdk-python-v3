@@ -29,7 +29,7 @@ class UpdateExternalEntityReqDTO:
     }
 
     def __init__(self, protocol=None, connection_type=None, mqtt_connection_info=None):
-        """UpdateExternalEntityReqDTO
+        r"""UpdateExternalEntityReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateExternalEntityReqDTO:
 
     @property
     def protocol(self):
-        """Gets the protocol of this UpdateExternalEntityReqDTO.
+        r"""Gets the protocol of this UpdateExternalEntityReqDTO.
 
         连接外部实体的协议类型
 
@@ -66,7 +66,7 @@ class UpdateExternalEntityReqDTO:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this UpdateExternalEntityReqDTO.
+        r"""Sets the protocol of this UpdateExternalEntityReqDTO.
 
         连接外部实体的协议类型
 
@@ -77,7 +77,7 @@ class UpdateExternalEntityReqDTO:
 
     @property
     def connection_type(self):
-        """Gets the connection_type of this UpdateExternalEntityReqDTO.
+        r"""Gets the connection_type of this UpdateExternalEntityReqDTO.
 
         连接类型
 
@@ -88,7 +88,7 @@ class UpdateExternalEntityReqDTO:
 
     @connection_type.setter
     def connection_type(self, connection_type):
-        """Sets the connection_type of this UpdateExternalEntityReqDTO.
+        r"""Sets the connection_type of this UpdateExternalEntityReqDTO.
 
         连接类型
 
@@ -99,7 +99,7 @@ class UpdateExternalEntityReqDTO:
 
     @property
     def mqtt_connection_info(self):
-        """Gets the mqtt_connection_info of this UpdateExternalEntityReqDTO.
+        r"""Gets the mqtt_connection_info of this UpdateExternalEntityReqDTO.
 
         :return: The mqtt_connection_info of this UpdateExternalEntityReqDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.MqttConnectionInfo`
@@ -108,7 +108,7 @@ class UpdateExternalEntityReqDTO:
 
     @mqtt_connection_info.setter
     def mqtt_connection_info(self, mqtt_connection_info):
-        """Sets the mqtt_connection_info of this UpdateExternalEntityReqDTO.
+        r"""Sets the mqtt_connection_info of this UpdateExternalEntityReqDTO.
 
         :param mqtt_connection_info: The mqtt_connection_info of this UpdateExternalEntityReqDTO.
         :type mqtt_connection_info: :class:`huaweicloudsdkiotedge.v2.MqttConnectionInfo`

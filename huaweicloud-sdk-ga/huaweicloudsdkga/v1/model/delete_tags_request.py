@@ -29,7 +29,7 @@ class DeleteTagsRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """DeleteTagsRequest
+        r"""DeleteTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this DeleteTagsRequest.
+        r"""Gets the resource_type of this DeleteTagsRequest.
 
         资源类型。
 
@@ -66,7 +66,7 @@ class DeleteTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this DeleteTagsRequest.
+        r"""Sets the resource_type of this DeleteTagsRequest.
 
         资源类型。
 
@@ -77,7 +77,7 @@ class DeleteTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteTagsRequest.
+        r"""Gets the resource_id of this DeleteTagsRequest.
 
         资源ID。
 
@@ -88,7 +88,7 @@ class DeleteTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteTagsRequest.
+        r"""Sets the resource_id of this DeleteTagsRequest.
 
         资源ID。
 
@@ -99,7 +99,7 @@ class DeleteTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteTagsRequest.
+        r"""Gets the body of this DeleteTagsRequest.
 
         :return: The body of this DeleteTagsRequest.
         :rtype: :class:`huaweicloudsdkga.v1.DeleteTagsRequestBody`
@@ -108,7 +108,7 @@ class DeleteTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteTagsRequest.
+        r"""Sets the body of this DeleteTagsRequest.
 
         :param body: The body of this DeleteTagsRequest.
         :type body: :class:`huaweicloudsdkga.v1.DeleteTagsRequestBody`

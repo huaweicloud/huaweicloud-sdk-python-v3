@@ -29,7 +29,7 @@ class Striping:
     }
 
     def __init__(self, nearest_neighborhood=None, band=None, row=None):
-        """Striping
+        r"""Striping
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Striping:
 
     @property
     def nearest_neighborhood(self):
-        """Gets the nearest_neighborhood of this Striping.
+        r"""Gets the nearest_neighborhood of this Striping.
 
         最近领域个数。
 
@@ -65,7 +65,7 @@ class Striping:
 
     @nearest_neighborhood.setter
     def nearest_neighborhood(self, nearest_neighborhood):
-        """Sets the nearest_neighborhood of this Striping.
+        r"""Sets the nearest_neighborhood of this Striping.
 
         最近领域个数。
 
@@ -76,7 +76,7 @@ class Striping:
 
     @property
     def band(self):
-        """Gets the band of this Striping.
+        r"""Gets the band of this Striping.
 
         相似程度。
 
@@ -87,7 +87,7 @@ class Striping:
 
     @band.setter
     def band(self, band):
-        """Sets the band of this Striping.
+        r"""Sets the band of this Striping.
 
         相似程度。
 
@@ -98,7 +98,7 @@ class Striping:
 
     @property
     def row(self):
-        """Gets the row of this Striping.
+        r"""Gets the row of this Striping.
 
         相似距离。
 
@@ -109,7 +109,7 @@ class Striping:
 
     @row.setter
     def row(self, row):
-        """Sets the row of this Striping.
+        r"""Sets the row of this Striping.
 
         相似距离。
 

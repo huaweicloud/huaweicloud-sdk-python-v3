@@ -31,7 +31,7 @@ class ListPipelineTemplatesRequest:
     }
 
     def __init__(self, x_language=None, region_id=None, offset=None, limit=None):
-        """ListPipelineTemplatesRequest
+        r"""ListPipelineTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListPipelineTemplatesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListPipelineTemplatesRequest.
+        r"""Gets the x_language of this ListPipelineTemplatesRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -74,7 +74,7 @@ class ListPipelineTemplatesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListPipelineTemplatesRequest.
+        r"""Sets the x_language of this ListPipelineTemplatesRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -85,7 +85,7 @@ class ListPipelineTemplatesRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListPipelineTemplatesRequest.
+        r"""Gets the region_id of this ListPipelineTemplatesRequest.
 
         区域id
 
@@ -96,7 +96,7 @@ class ListPipelineTemplatesRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListPipelineTemplatesRequest.
+        r"""Sets the region_id of this ListPipelineTemplatesRequest.
 
         区域id
 
@@ -107,7 +107,7 @@ class ListPipelineTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPipelineTemplatesRequest.
+        r"""Gets the offset of this ListPipelineTemplatesRequest.
 
         偏移量，表示从此偏移量开始查询，默认0
 
@@ -118,7 +118,7 @@ class ListPipelineTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPipelineTemplatesRequest.
+        r"""Sets the offset of this ListPipelineTemplatesRequest.
 
         偏移量，表示从此偏移量开始查询，默认0
 
@@ -129,7 +129,7 @@ class ListPipelineTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPipelineTemplatesRequest.
+        r"""Gets the limit of this ListPipelineTemplatesRequest.
 
         每页显示的条目数量，默认10
 
@@ -140,7 +140,7 @@ class ListPipelineTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPipelineTemplatesRequest.
+        r"""Sets the limit of this ListPipelineTemplatesRequest.
 
         每页显示的条目数量，默认10
 

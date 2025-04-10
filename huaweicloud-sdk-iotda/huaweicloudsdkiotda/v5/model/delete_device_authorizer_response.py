@@ -26,7 +26,7 @@ class DeleteDeviceAuthorizerResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteDeviceAuthorizerResponse
+        r"""DeleteDeviceAuthorizerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDeviceAuthorizerResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteDeviceAuthorizerResponse.
+        r"""Gets the body of this DeleteDeviceAuthorizerResponse.
 
         :return: The body of this DeleteDeviceAuthorizerResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteDeviceAuthorizerResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDeviceAuthorizerResponse.
+        r"""Sets the body of this DeleteDeviceAuthorizerResponse.
 
         :param body: The body of this DeleteDeviceAuthorizerResponse.
         :type body: str

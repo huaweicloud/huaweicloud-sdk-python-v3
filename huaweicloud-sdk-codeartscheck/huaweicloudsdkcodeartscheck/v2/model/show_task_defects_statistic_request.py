@@ -25,7 +25,7 @@ class ShowTaskDefectsStatisticRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowTaskDefectsStatisticRequest
+        r"""ShowTaskDefectsStatisticRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowTaskDefectsStatisticRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTaskDefectsStatisticRequest.
+        r"""Gets the task_id of this ShowTaskDefectsStatisticRequest.
 
         任务ID
 
@@ -53,7 +53,7 @@ class ShowTaskDefectsStatisticRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTaskDefectsStatisticRequest.
+        r"""Sets the task_id of this ShowTaskDefectsStatisticRequest.
 
         任务ID
 

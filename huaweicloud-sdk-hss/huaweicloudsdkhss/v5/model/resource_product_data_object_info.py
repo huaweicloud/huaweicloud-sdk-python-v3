@@ -29,7 +29,7 @@ class ResourceProductDataObjectInfo:
     }
 
     def __init__(self, charging_mode=None, is_auto_renew=None, version_info=None):
-        """ResourceProductDataObjectInfo
+        r"""ResourceProductDataObjectInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ResourceProductDataObjectInfo:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ResourceProductDataObjectInfo.
+        r"""Gets the charging_mode of this ResourceProductDataObjectInfo.
 
         计费模式   - packet_cycle : 包周期   - on_demand : 按需
 
@@ -68,7 +68,7 @@ class ResourceProductDataObjectInfo:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ResourceProductDataObjectInfo.
+        r"""Sets the charging_mode of this ResourceProductDataObjectInfo.
 
         计费模式   - packet_cycle : 包周期   - on_demand : 按需
 
@@ -79,7 +79,7 @@ class ResourceProductDataObjectInfo:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this ResourceProductDataObjectInfo.
+        r"""Gets the is_auto_renew of this ResourceProductDataObjectInfo.
 
         是否自动续费
 
@@ -90,7 +90,7 @@ class ResourceProductDataObjectInfo:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this ResourceProductDataObjectInfo.
+        r"""Sets the is_auto_renew of this ResourceProductDataObjectInfo.
 
         是否自动续费
 
@@ -101,7 +101,7 @@ class ResourceProductDataObjectInfo:
 
     @property
     def version_info(self):
-        """Gets the version_info of this ResourceProductDataObjectInfo.
+        r"""Gets the version_info of this ResourceProductDataObjectInfo.
 
         版本信息,key对应的值为主机开通的版本，包含如下6种输入：   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
 
@@ -112,7 +112,7 @@ class ResourceProductDataObjectInfo:
 
     @version_info.setter
     def version_info(self, version_info):
-        """Sets the version_info of this ResourceProductDataObjectInfo.
+        r"""Sets the version_info of this ResourceProductDataObjectInfo.
 
         版本信息,key对应的值为主机开通的版本，包含如下6种输入：   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
 

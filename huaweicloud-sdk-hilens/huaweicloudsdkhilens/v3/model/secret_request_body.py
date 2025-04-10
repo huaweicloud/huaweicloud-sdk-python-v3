@@ -27,7 +27,7 @@ class SecretRequestBody:
     }
 
     def __init__(self, workspace_id=None, secret=None):
-        """SecretRequestBody
+        r"""SecretRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SecretRequestBody:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this SecretRequestBody.
+        r"""Gets the workspace_id of this SecretRequestBody.
 
         工作空间ID。默认为default。
 
@@ -60,7 +60,7 @@ class SecretRequestBody:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this SecretRequestBody.
+        r"""Sets the workspace_id of this SecretRequestBody.
 
         工作空间ID。默认为default。
 
@@ -71,7 +71,7 @@ class SecretRequestBody:
 
     @property
     def secret(self):
-        """Gets the secret of this SecretRequestBody.
+        r"""Gets the secret of this SecretRequestBody.
 
         :return: The secret of this SecretRequestBody.
         :rtype: :class:`huaweicloudsdkhilens.v3.SecretObjectInSecretRequestBody`
@@ -80,7 +80,7 @@ class SecretRequestBody:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this SecretRequestBody.
+        r"""Sets the secret of this SecretRequestBody.
 
         :param secret: The secret of this SecretRequestBody.
         :type secret: :class:`huaweicloudsdkhilens.v3.SecretObjectInSecretRequestBody`

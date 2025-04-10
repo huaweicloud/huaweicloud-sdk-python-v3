@@ -24,7 +24,7 @@ class ChangeFailoverStrategyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeFailoverStrategyResponse
+        r"""ChangeFailoverStrategyResponse
 
         The model defined in huaweicloud sdk
 

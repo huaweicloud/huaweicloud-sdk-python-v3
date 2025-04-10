@@ -32,7 +32,7 @@ class ListP2cVgwsResponse(SdkResponse):
     }
 
     def __init__(self, p2c_vpn_gateways=None, total_count=None, page_info=None, request_id=None):
-        """ListP2cVgwsResponse
+        r"""ListP2cVgwsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListP2cVgwsResponse(SdkResponse):
 
     @property
     def p2c_vpn_gateways(self):
-        """Gets the p2c_vpn_gateways of this ListP2cVgwsResponse.
+        r"""Gets the p2c_vpn_gateways of this ListP2cVgwsResponse.
 
         网关信息
 
@@ -76,7 +76,7 @@ class ListP2cVgwsResponse(SdkResponse):
 
     @p2c_vpn_gateways.setter
     def p2c_vpn_gateways(self, p2c_vpn_gateways):
-        """Sets the p2c_vpn_gateways of this ListP2cVgwsResponse.
+        r"""Sets the p2c_vpn_gateways of this ListP2cVgwsResponse.
 
         网关信息
 
@@ -87,7 +87,7 @@ class ListP2cVgwsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListP2cVgwsResponse.
+        r"""Gets the total_count of this ListP2cVgwsResponse.
 
         总数
 
@@ -98,7 +98,7 @@ class ListP2cVgwsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListP2cVgwsResponse.
+        r"""Sets the total_count of this ListP2cVgwsResponse.
 
         总数
 
@@ -109,7 +109,7 @@ class ListP2cVgwsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListP2cVgwsResponse.
+        r"""Gets the page_info of this ListP2cVgwsResponse.
 
         :return: The page_info of this ListP2cVgwsResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -118,7 +118,7 @@ class ListP2cVgwsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListP2cVgwsResponse.
+        r"""Sets the page_info of this ListP2cVgwsResponse.
 
         :param page_info: The page_info of this ListP2cVgwsResponse.
         :type page_info: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -127,7 +127,7 @@ class ListP2cVgwsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListP2cVgwsResponse.
+        r"""Gets the request_id of this ListP2cVgwsResponse.
 
         请求ID
 
@@ -138,7 +138,7 @@ class ListP2cVgwsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListP2cVgwsResponse.
+        r"""Sets the request_id of this ListP2cVgwsResponse.
 
         请求ID
 

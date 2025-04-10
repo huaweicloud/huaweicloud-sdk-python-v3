@@ -31,7 +31,7 @@ class BatchCreateBandwidthOption:
     }
 
     def __init__(self, count=None, name=None, size=None, public_border_group=None):
-        """BatchCreateBandwidthOption
+        r"""BatchCreateBandwidthOption
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class BatchCreateBandwidthOption:
 
     @property
     def count(self):
-        """Gets the count of this BatchCreateBandwidthOption.
+        r"""Gets the count of this BatchCreateBandwidthOption.
 
         取值范围：正整数  功能说明：批创的共享带宽的个数  说明： 如果传入的参数为小数（如 2.2）或者字符类型（如“2”），会自动强制转换为整数。
 
@@ -72,7 +72,7 @@ class BatchCreateBandwidthOption:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchCreateBandwidthOption.
+        r"""Sets the count of this BatchCreateBandwidthOption.
 
         取值范围：正整数  功能说明：批创的共享带宽的个数  说明： 如果传入的参数为小数（如 2.2）或者字符类型（如“2”），会自动强制转换为整数。
 
@@ -83,7 +83,7 @@ class BatchCreateBandwidthOption:
 
     @property
     def name(self):
-        """Gets the name of this BatchCreateBandwidthOption.
+        r"""Gets the name of this BatchCreateBandwidthOption.
 
         取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  功能说明：带宽名称
 
@@ -94,7 +94,7 @@ class BatchCreateBandwidthOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchCreateBandwidthOption.
+        r"""Sets the name of this BatchCreateBandwidthOption.
 
         取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  功能说明：带宽名称
 
@@ -105,7 +105,7 @@ class BatchCreateBandwidthOption:
 
     @property
     def size(self):
-        """Gets the size of this BatchCreateBandwidthOption.
+        r"""Gets the size of this BatchCreateBandwidthOption.
 
         功能说明：带宽大小。共享带宽的大小有最小值限制，默认为2M，可能因局点不同而不同。  取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。  注意：调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s：默认最小单位为1Mbit/s。  300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。  大于1000Mbit/s：默认最小单位为500Mbit/s。
 
@@ -116,7 +116,7 @@ class BatchCreateBandwidthOption:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BatchCreateBandwidthOption.
+        r"""Sets the size of this BatchCreateBandwidthOption.
 
         功能说明：带宽大小。共享带宽的大小有最小值限制，默认为2M，可能因局点不同而不同。  取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。  注意：调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s：默认最小单位为1Mbit/s。  300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。  大于1000Mbit/s：默认最小单位为500Mbit/s。
 
@@ -127,7 +127,7 @@ class BatchCreateBandwidthOption:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this BatchCreateBandwidthOption.
+        r"""Gets the public_border_group of this BatchCreateBandwidthOption.
 
         功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：共享带宽只能插入与该字段相同的publicip
 
@@ -138,7 +138,7 @@ class BatchCreateBandwidthOption:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this BatchCreateBandwidthOption.
+        r"""Sets the public_border_group of this BatchCreateBandwidthOption.
 
         功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：共享带宽只能插入与该字段相同的publicip
 

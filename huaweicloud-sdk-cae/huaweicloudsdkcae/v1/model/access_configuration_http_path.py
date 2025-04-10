@@ -29,7 +29,7 @@ class AccessConfigurationHttpPath:
     }
 
     def __init__(self, hostname=None, path=None, url_match_mode=None):
-        """AccessConfigurationHttpPath
+        r"""AccessConfigurationHttpPath
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AccessConfigurationHttpPath:
 
     @property
     def hostname(self):
-        """Gets the hostname of this AccessConfigurationHttpPath.
+        r"""Gets the hostname of this AccessConfigurationHttpPath.
 
         域名/不填，不填时表示使用IP。
 
@@ -68,7 +68,7 @@ class AccessConfigurationHttpPath:
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this AccessConfigurationHttpPath.
+        r"""Sets the hostname of this AccessConfigurationHttpPath.
 
         域名/不填，不填时表示使用IP。
 
@@ -79,7 +79,7 @@ class AccessConfigurationHttpPath:
 
     @property
     def path(self):
-        """Gets the path of this AccessConfigurationHttpPath.
+        r"""Gets the path of this AccessConfigurationHttpPath.
 
         URL路径。
 
@@ -90,7 +90,7 @@ class AccessConfigurationHttpPath:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this AccessConfigurationHttpPath.
+        r"""Sets the path of this AccessConfigurationHttpPath.
 
         URL路径。
 
@@ -101,7 +101,7 @@ class AccessConfigurationHttpPath:
 
     @property
     def url_match_mode(self):
-        """Gets the url_match_mode of this AccessConfigurationHttpPath.
+        r"""Gets the url_match_mode of this AccessConfigurationHttpPath.
 
         URL路径匹配模式，支持前缀匹配、正则匹配、精准匹配。
 
@@ -112,7 +112,7 @@ class AccessConfigurationHttpPath:
 
     @url_match_mode.setter
     def url_match_mode(self, url_match_mode):
-        """Sets the url_match_mode of this AccessConfigurationHttpPath.
+        r"""Sets the url_match_mode of this AccessConfigurationHttpPath.
 
         URL路径匹配模式，支持前缀匹配、正则匹配、精准匹配。
 

@@ -27,7 +27,7 @@ class GetServerRemoteConsoleOption:
     }
 
     def __init__(self, protocol=None, type=None):
-        """GetServerRemoteConsoleOption
+        r"""GetServerRemoteConsoleOption
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GetServerRemoteConsoleOption:
 
     @property
     def protocol(self):
-        """Gets the protocol of this GetServerRemoteConsoleOption.
+        r"""Gets the protocol of this GetServerRemoteConsoleOption.
 
         远程登录协议，请将protocol配置为“vnc”。
 
@@ -59,7 +59,7 @@ class GetServerRemoteConsoleOption:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this GetServerRemoteConsoleOption.
+        r"""Sets the protocol of this GetServerRemoteConsoleOption.
 
         远程登录协议，请将protocol配置为“vnc”。
 
@@ -70,7 +70,7 @@ class GetServerRemoteConsoleOption:
 
     @property
     def type(self):
-        """Gets the type of this GetServerRemoteConsoleOption.
+        r"""Gets the type of this GetServerRemoteConsoleOption.
 
         远程登录的类型，请将type配置为“novnc”。
 
@@ -81,7 +81,7 @@ class GetServerRemoteConsoleOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GetServerRemoteConsoleOption.
+        r"""Sets the type of this GetServerRemoteConsoleOption.
 
         远程登录的类型，请将type配置为“novnc”。
 

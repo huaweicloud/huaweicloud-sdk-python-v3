@@ -35,7 +35,7 @@ class ListInterRegionBandwidthsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, enterprise_project_id=None, cloud_connection_id=None, bandwidth_package_id=None):
-        """ListInterRegionBandwidthsRequest
+        r"""ListInterRegionBandwidthsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListInterRegionBandwidthsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInterRegionBandwidthsRequest.
+        r"""Gets the limit of this ListInterRegionBandwidthsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -89,7 +89,7 @@ class ListInterRegionBandwidthsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInterRegionBandwidthsRequest.
+        r"""Sets the limit of this ListInterRegionBandwidthsRequest.
 
         每页返回的个数。 取值范围：1~1000。
 
@@ -100,7 +100,7 @@ class ListInterRegionBandwidthsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListInterRegionBandwidthsRequest.
+        r"""Gets the marker of this ListInterRegionBandwidthsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -111,7 +111,7 @@ class ListInterRegionBandwidthsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListInterRegionBandwidthsRequest.
+        r"""Sets the marker of this ListInterRegionBandwidthsRequest.
 
         翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向翻页。 翻页过程中，查询条件不能修改，包括过滤条件，排序条件，limit。
 
@@ -122,7 +122,7 @@ class ListInterRegionBandwidthsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListInterRegionBandwidthsRequest.
+        r"""Gets the id of this ListInterRegionBandwidthsRequest.
 
         根据id查询，可查询多个id。
 
@@ -133,7 +133,7 @@ class ListInterRegionBandwidthsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListInterRegionBandwidthsRequest.
+        r"""Sets the id of this ListInterRegionBandwidthsRequest.
 
         根据id查询，可查询多个id。
 
@@ -144,7 +144,7 @@ class ListInterRegionBandwidthsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListInterRegionBandwidthsRequest.
+        r"""Gets the enterprise_project_id of this ListInterRegionBandwidthsRequest.
 
         根据企业项目ID过滤列表。
 
@@ -155,7 +155,7 @@ class ListInterRegionBandwidthsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListInterRegionBandwidthsRequest.
+        r"""Sets the enterprise_project_id of this ListInterRegionBandwidthsRequest.
 
         根据企业项目ID过滤列表。
 
@@ -166,7 +166,7 @@ class ListInterRegionBandwidthsRequest:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this ListInterRegionBandwidthsRequest.
+        r"""Gets the cloud_connection_id of this ListInterRegionBandwidthsRequest.
 
         根据云连接的ID过滤列表。
 
@@ -177,7 +177,7 @@ class ListInterRegionBandwidthsRequest:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this ListInterRegionBandwidthsRequest.
+        r"""Sets the cloud_connection_id of this ListInterRegionBandwidthsRequest.
 
         根据云连接的ID过滤列表。
 
@@ -188,7 +188,7 @@ class ListInterRegionBandwidthsRequest:
 
     @property
     def bandwidth_package_id(self):
-        """Gets the bandwidth_package_id of this ListInterRegionBandwidthsRequest.
+        r"""Gets the bandwidth_package_id of this ListInterRegionBandwidthsRequest.
 
         根据带宽包列表过滤域间带宽实例列表。
 
@@ -199,7 +199,7 @@ class ListInterRegionBandwidthsRequest:
 
     @bandwidth_package_id.setter
     def bandwidth_package_id(self, bandwidth_package_id):
-        """Sets the bandwidth_package_id of this ListInterRegionBandwidthsRequest.
+        r"""Sets the bandwidth_package_id of this ListInterRegionBandwidthsRequest.
 
         根据带宽包列表过滤域间带宽实例列表。
 

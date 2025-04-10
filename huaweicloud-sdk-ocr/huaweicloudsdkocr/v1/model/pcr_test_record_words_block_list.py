@@ -29,7 +29,7 @@ class PcrTestRecordWordsBlockList:
     }
 
     def __init__(self, words=None, location=None, confidence=None):
-        """PcrTestRecordWordsBlockList
+        r"""PcrTestRecordWordsBlockList
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PcrTestRecordWordsBlockList:
 
     @property
     def words(self):
-        """Gets the words of this PcrTestRecordWordsBlockList.
+        r"""Gets the words of this PcrTestRecordWordsBlockList.
 
         文字块识别结果。 
 
@@ -68,7 +68,7 @@ class PcrTestRecordWordsBlockList:
 
     @words.setter
     def words(self, words):
-        """Sets the words of this PcrTestRecordWordsBlockList.
+        r"""Sets the words of this PcrTestRecordWordsBlockList.
 
         文字块识别结果。 
 
@@ -79,7 +79,7 @@ class PcrTestRecordWordsBlockList:
 
     @property
     def location(self):
-        """Gets the location of this PcrTestRecordWordsBlockList.
+        r"""Gets the location of this PcrTestRecordWordsBlockList.
 
         识别到的文字块的区域位置信息，列表形式，分别表示文字块4个顶点的（x,y）坐标；采用图像坐标系，图像坐标原点为图像左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -90,7 +90,7 @@ class PcrTestRecordWordsBlockList:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this PcrTestRecordWordsBlockList.
+        r"""Sets the location of this PcrTestRecordWordsBlockList.
 
         识别到的文字块的区域位置信息，列表形式，分别表示文字块4个顶点的（x,y）坐标；采用图像坐标系，图像坐标原点为图像左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -101,7 +101,7 @@ class PcrTestRecordWordsBlockList:
 
     @property
     def confidence(self):
-        """Gets the confidence of this PcrTestRecordWordsBlockList.
+        r"""Gets the confidence of this PcrTestRecordWordsBlockList.
 
         字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -112,7 +112,7 @@ class PcrTestRecordWordsBlockList:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this PcrTestRecordWordsBlockList.
+        r"""Sets the confidence of this PcrTestRecordWordsBlockList.
 
         字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
 

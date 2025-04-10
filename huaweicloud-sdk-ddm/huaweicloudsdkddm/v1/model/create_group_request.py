@@ -27,7 +27,7 @@ class CreateGroupRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateGroupRequest
+        r"""CreateGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateGroupRequest.
+        r"""Gets the instance_id of this CreateGroupRequest.
 
         DDM实例ID
 
@@ -60,7 +60,7 @@ class CreateGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateGroupRequest.
+        r"""Sets the instance_id of this CreateGroupRequest.
 
         DDM实例ID
 
@@ -71,7 +71,7 @@ class CreateGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGroupRequest.
+        r"""Gets the body of this CreateGroupRequest.
 
         :return: The body of this CreateGroupRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.CreateGroupRequestBody`
@@ -80,7 +80,7 @@ class CreateGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGroupRequest.
+        r"""Sets the body of this CreateGroupRequest.
 
         :param body: The body of this CreateGroupRequest.
         :type body: :class:`huaweicloudsdkddm.v1.CreateGroupRequestBody`

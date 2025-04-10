@@ -25,7 +25,7 @@ class ListProjectDemandStaticV4Request:
     }
 
     def __init__(self, project_id=None):
-        """ListProjectDemandStaticV4Request
+        r"""ListProjectDemandStaticV4Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListProjectDemandStaticV4Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListProjectDemandStaticV4Request.
+        r"""Gets the project_id of this ListProjectDemandStaticV4Request.
 
         devcloud项目的32位id
 
@@ -53,7 +53,7 @@ class ListProjectDemandStaticV4Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListProjectDemandStaticV4Request.
+        r"""Sets the project_id of this ListProjectDemandStaticV4Request.
 
         devcloud项目的32位id
 

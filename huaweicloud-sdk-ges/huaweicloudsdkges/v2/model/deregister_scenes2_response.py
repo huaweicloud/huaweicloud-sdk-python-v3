@@ -28,7 +28,7 @@ class DeregisterScenes2Response(SdkResponse):
     }
 
     def __init__(self, success=None, failure=None):
-        """DeregisterScenes2Response
+        r"""DeregisterScenes2Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeregisterScenes2Response(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this DeregisterScenes2Response.
+        r"""Gets the success of this DeregisterScenes2Response.
 
         取消订阅成功的SceneApplication。
 
@@ -62,7 +62,7 @@ class DeregisterScenes2Response(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this DeregisterScenes2Response.
+        r"""Sets the success of this DeregisterScenes2Response.
 
         取消订阅成功的SceneApplication。
 
@@ -73,7 +73,7 @@ class DeregisterScenes2Response(SdkResponse):
 
     @property
     def failure(self):
-        """Gets the failure of this DeregisterScenes2Response.
+        r"""Gets the failure of this DeregisterScenes2Response.
 
         取消订阅失败的SceneApplication。
 
@@ -84,7 +84,7 @@ class DeregisterScenes2Response(SdkResponse):
 
     @failure.setter
     def failure(self, failure):
-        """Sets the failure of this DeregisterScenes2Response.
+        r"""Sets the failure of this DeregisterScenes2Response.
 
         取消订阅失败的SceneApplication。
 

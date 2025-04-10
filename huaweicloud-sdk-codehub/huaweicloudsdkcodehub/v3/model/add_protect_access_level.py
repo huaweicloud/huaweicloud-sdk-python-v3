@@ -27,7 +27,7 @@ class AddProtectAccessLevel:
     }
 
     def __init__(self, push_access_level=None, merge_access_level=None):
-        """AddProtectAccessLevel
+        r"""AddProtectAccessLevel
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AddProtectAccessLevel:
 
     @property
     def push_access_level(self):
-        """Gets the push_access_level of this AddProtectAccessLevel.
+        r"""Gets the push_access_level of this AddProtectAccessLevel.
 
         提交权限 0:任何人不允许提交，30:开发者及管理员可提交，40:管理员可提交
 
@@ -59,7 +59,7 @@ class AddProtectAccessLevel:
 
     @push_access_level.setter
     def push_access_level(self, push_access_level):
-        """Sets the push_access_level of this AddProtectAccessLevel.
+        r"""Sets the push_access_level of this AddProtectAccessLevel.
 
         提交权限 0:任何人不允许提交，30:开发者及管理员可提交，40:管理员可提交
 
@@ -70,7 +70,7 @@ class AddProtectAccessLevel:
 
     @property
     def merge_access_level(self):
-        """Gets the merge_access_level of this AddProtectAccessLevel.
+        r"""Gets the merge_access_level of this AddProtectAccessLevel.
 
         合并权限 0:任何人不允许合并，30:开发者及管理员可合并，40:管理员可合并,合并权限必须大于等于提交权限
 
@@ -81,7 +81,7 @@ class AddProtectAccessLevel:
 
     @merge_access_level.setter
     def merge_access_level(self, merge_access_level):
-        """Sets the merge_access_level of this AddProtectAccessLevel.
+        r"""Sets the merge_access_level of this AddProtectAccessLevel.
 
         合并权限 0:任何人不允许合并，30:开发者及管理员可合并，40:管理员可合并,合并权限必须大于等于提交权限
 

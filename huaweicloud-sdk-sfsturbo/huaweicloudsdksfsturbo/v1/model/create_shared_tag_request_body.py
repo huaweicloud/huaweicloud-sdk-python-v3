@@ -25,7 +25,7 @@ class CreateSharedTagRequestBody:
     }
 
     def __init__(self, tag=None):
-        """CreateSharedTagRequestBody
+        r"""CreateSharedTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateSharedTagRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateSharedTagRequestBody.
+        r"""Gets the tag of this CreateSharedTagRequestBody.
 
         :return: The tag of this CreateSharedTagRequestBody.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ResourceTag`
@@ -51,7 +51,7 @@ class CreateSharedTagRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateSharedTagRequestBody.
+        r"""Sets the tag of this CreateSharedTagRequestBody.
 
         :param tag: The tag of this CreateSharedTagRequestBody.
         :type tag: :class:`huaweicloudsdksfsturbo.v1.ResourceTag`

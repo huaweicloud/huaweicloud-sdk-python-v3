@@ -47,7 +47,7 @@ class PortHostResponseInfo:
     }
 
     def __init__(self, container_id=None, host_id=None, host_ip=None, host_name=None, laddr=None, path=None, pid=None, port=None, status=None, type=None, container_name=None, agent_id=None):
-        """PortHostResponseInfo
+        r"""PortHostResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class PortHostResponseInfo:
 
     @property
     def container_id(self):
-        """Gets the container_id of this PortHostResponseInfo.
+        r"""Gets the container_id of this PortHostResponseInfo.
 
         镜像id
 
@@ -131,7 +131,7 @@ class PortHostResponseInfo:
 
     @container_id.setter
     def container_id(self, container_id):
-        """Sets the container_id of this PortHostResponseInfo.
+        r"""Sets the container_id of this PortHostResponseInfo.
 
         镜像id
 
@@ -142,7 +142,7 @@ class PortHostResponseInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this PortHostResponseInfo.
+        r"""Gets the host_id of this PortHostResponseInfo.
 
         主机id
 
@@ -153,7 +153,7 @@ class PortHostResponseInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this PortHostResponseInfo.
+        r"""Sets the host_id of this PortHostResponseInfo.
 
         主机id
 
@@ -164,7 +164,7 @@ class PortHostResponseInfo:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this PortHostResponseInfo.
+        r"""Gets the host_ip of this PortHostResponseInfo.
 
         主机ip
 
@@ -175,7 +175,7 @@ class PortHostResponseInfo:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this PortHostResponseInfo.
+        r"""Sets the host_ip of this PortHostResponseInfo.
 
         主机ip
 
@@ -186,7 +186,7 @@ class PortHostResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this PortHostResponseInfo.
+        r"""Gets the host_name of this PortHostResponseInfo.
 
         主机名称
 
@@ -197,7 +197,7 @@ class PortHostResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this PortHostResponseInfo.
+        r"""Sets the host_name of this PortHostResponseInfo.
 
         主机名称
 
@@ -208,7 +208,7 @@ class PortHostResponseInfo:
 
     @property
     def laddr(self):
-        """Gets the laddr of this PortHostResponseInfo.
+        r"""Gets the laddr of this PortHostResponseInfo.
 
         监听ip
 
@@ -219,7 +219,7 @@ class PortHostResponseInfo:
 
     @laddr.setter
     def laddr(self, laddr):
-        """Sets the laddr of this PortHostResponseInfo.
+        r"""Sets the laddr of this PortHostResponseInfo.
 
         监听ip
 
@@ -230,7 +230,7 @@ class PortHostResponseInfo:
 
     @property
     def path(self):
-        """Gets the path of this PortHostResponseInfo.
+        r"""Gets the path of this PortHostResponseInfo.
 
         进程可执行文件路径
 
@@ -241,7 +241,7 @@ class PortHostResponseInfo:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this PortHostResponseInfo.
+        r"""Sets the path of this PortHostResponseInfo.
 
         进程可执行文件路径
 
@@ -252,7 +252,7 @@ class PortHostResponseInfo:
 
     @property
     def pid(self):
-        """Gets the pid of this PortHostResponseInfo.
+        r"""Gets the pid of this PortHostResponseInfo.
 
         pid
 
@@ -263,7 +263,7 @@ class PortHostResponseInfo:
 
     @pid.setter
     def pid(self, pid):
-        """Sets the pid of this PortHostResponseInfo.
+        r"""Sets the pid of this PortHostResponseInfo.
 
         pid
 
@@ -274,7 +274,7 @@ class PortHostResponseInfo:
 
     @property
     def port(self):
-        """Gets the port of this PortHostResponseInfo.
+        r"""Gets the port of this PortHostResponseInfo.
 
         端口
 
@@ -285,7 +285,7 @@ class PortHostResponseInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this PortHostResponseInfo.
+        r"""Sets the port of this PortHostResponseInfo.
 
         端口
 
@@ -296,7 +296,7 @@ class PortHostResponseInfo:
 
     @property
     def status(self):
-        """Gets the status of this PortHostResponseInfo.
+        r"""Gets the status of this PortHostResponseInfo.
 
         状态
 
@@ -307,7 +307,7 @@ class PortHostResponseInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PortHostResponseInfo.
+        r"""Sets the status of this PortHostResponseInfo.
 
         状态
 
@@ -318,7 +318,7 @@ class PortHostResponseInfo:
 
     @property
     def type(self):
-        """Gets the type of this PortHostResponseInfo.
+        r"""Gets the type of this PortHostResponseInfo.
 
         端口类型：目前包括TCP，UDP两种
 
@@ -329,7 +329,7 @@ class PortHostResponseInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PortHostResponseInfo.
+        r"""Sets the type of this PortHostResponseInfo.
 
         端口类型：目前包括TCP，UDP两种
 
@@ -340,7 +340,7 @@ class PortHostResponseInfo:
 
     @property
     def container_name(self):
-        """Gets the container_name of this PortHostResponseInfo.
+        r"""Gets the container_name of this PortHostResponseInfo.
 
         容器名称
 
@@ -351,7 +351,7 @@ class PortHostResponseInfo:
 
     @container_name.setter
     def container_name(self, container_name):
-        """Sets the container_name of this PortHostResponseInfo.
+        r"""Sets the container_name of this PortHostResponseInfo.
 
         容器名称
 
@@ -362,7 +362,7 @@ class PortHostResponseInfo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this PortHostResponseInfo.
+        r"""Gets the agent_id of this PortHostResponseInfo.
 
         Agent ID
 
@@ -373,7 +373,7 @@ class PortHostResponseInfo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this PortHostResponseInfo.
+        r"""Sets the agent_id of this PortHostResponseInfo.
 
         Agent ID
 

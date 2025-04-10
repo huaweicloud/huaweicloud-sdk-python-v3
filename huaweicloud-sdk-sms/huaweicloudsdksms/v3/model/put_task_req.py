@@ -85,7 +85,7 @@ class PutTaskReq:
     }
 
     def __init__(self, name=None, type=None, os_type=None, id=None, priority=None, region_id=None, start_target_server=None, enterprise_project_id=None, exist_server=None, migration_ip=None, region_name=None, speed_limit=None, project_name=None, project_id=None, vm_template_id=None, source_server=None, target_server=None, state=None, estimate_complete_time=None, connected=None, create_date=None, start_date=None, finish_date=None, migrate_speed=None, error_json=None, total_time=None, float_ip=None, remain_seconds=None, target_snapshot_id=None, clone_server=None, sub_tasks=None):
-        """PutTaskReq
+        r"""PutTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -253,7 +253,7 @@ class PutTaskReq:
 
     @property
     def name(self):
-        """Gets the name of this PutTaskReq.
+        r"""Gets the name of this PutTaskReq.
 
         任务名称（用户自定义）
 
@@ -264,7 +264,7 @@ class PutTaskReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PutTaskReq.
+        r"""Sets the name of this PutTaskReq.
 
         任务名称（用户自定义）
 
@@ -275,7 +275,7 @@ class PutTaskReq:
 
     @property
     def type(self):
-        """Gets the type of this PutTaskReq.
+        r"""Gets the type of this PutTaskReq.
 
         任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
@@ -286,7 +286,7 @@ class PutTaskReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PutTaskReq.
+        r"""Sets the type of this PutTaskReq.
 
         任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
@@ -297,7 +297,7 @@ class PutTaskReq:
 
     @property
     def os_type(self):
-        """Gets the os_type of this PutTaskReq.
+        r"""Gets the os_type of this PutTaskReq.
 
         操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
 
@@ -308,7 +308,7 @@ class PutTaskReq:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this PutTaskReq.
+        r"""Sets the os_type of this PutTaskReq.
 
         操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
 
@@ -319,7 +319,7 @@ class PutTaskReq:
 
     @property
     def id(self):
-        """Gets the id of this PutTaskReq.
+        r"""Gets the id of this PutTaskReq.
 
         迁移任务ID
 
@@ -330,7 +330,7 @@ class PutTaskReq:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PutTaskReq.
+        r"""Sets the id of this PutTaskReq.
 
         迁移任务ID
 
@@ -341,7 +341,7 @@ class PutTaskReq:
 
     @property
     def priority(self):
-        """Gets the priority of this PutTaskReq.
+        r"""Gets the priority of this PutTaskReq.
 
         进程优先级  0：低  1：标准（默认）  2：高
 
@@ -352,7 +352,7 @@ class PutTaskReq:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this PutTaskReq.
+        r"""Sets the priority of this PutTaskReq.
 
         进程优先级  0：低  1：标准（默认）  2：高
 
@@ -363,7 +363,7 @@ class PutTaskReq:
 
     @property
     def region_id(self):
-        """Gets the region_id of this PutTaskReq.
+        r"""Gets the region_id of this PutTaskReq.
 
         目的端服务器的区域ID
 
@@ -374,7 +374,7 @@ class PutTaskReq:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this PutTaskReq.
+        r"""Sets the region_id of this PutTaskReq.
 
         目的端服务器的区域ID
 
@@ -385,7 +385,7 @@ class PutTaskReq:
 
     @property
     def start_target_server(self):
-        """Gets the start_target_server of this PutTaskReq.
+        r"""Gets the start_target_server of this PutTaskReq.
 
         迁移完成后是否启动目的端服务器  true：启动  false：停止
 
@@ -396,7 +396,7 @@ class PutTaskReq:
 
     @start_target_server.setter
     def start_target_server(self, start_target_server):
-        """Sets the start_target_server of this PutTaskReq.
+        r"""Sets the start_target_server of this PutTaskReq.
 
         迁移完成后是否启动目的端服务器  true：启动  false：停止
 
@@ -407,7 +407,7 @@ class PutTaskReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this PutTaskReq.
+        r"""Gets the enterprise_project_id of this PutTaskReq.
 
         企业项目ID
 
@@ -418,7 +418,7 @@ class PutTaskReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this PutTaskReq.
+        r"""Sets the enterprise_project_id of this PutTaskReq.
 
         企业项目ID
 
@@ -429,7 +429,7 @@ class PutTaskReq:
 
     @property
     def exist_server(self):
-        """Gets the exist_server of this PutTaskReq.
+        r"""Gets the exist_server of this PutTaskReq.
 
         目的端服务器是否存在。true代表已有目的端服务器，false代表需要新建目的端服务器
 
@@ -440,7 +440,7 @@ class PutTaskReq:
 
     @exist_server.setter
     def exist_server(self, exist_server):
-        """Sets the exist_server of this PutTaskReq.
+        r"""Sets the exist_server of this PutTaskReq.
 
         目的端服务器是否存在。true代表已有目的端服务器，false代表需要新建目的端服务器
 
@@ -451,7 +451,7 @@ class PutTaskReq:
 
     @property
     def migration_ip(self):
-        """Gets the migration_ip of this PutTaskReq.
+        r"""Gets the migration_ip of this PutTaskReq.
 
         目的端服务器的IP地址。  公网迁移时请填写弹性IP地址  专线迁移时请填写私有IP地址
 
@@ -462,7 +462,7 @@ class PutTaskReq:
 
     @migration_ip.setter
     def migration_ip(self, migration_ip):
-        """Sets the migration_ip of this PutTaskReq.
+        r"""Sets the migration_ip of this PutTaskReq.
 
         目的端服务器的IP地址。  公网迁移时请填写弹性IP地址  专线迁移时请填写私有IP地址
 
@@ -473,7 +473,7 @@ class PutTaskReq:
 
     @property
     def region_name(self):
-        """Gets the region_name of this PutTaskReq.
+        r"""Gets the region_name of this PutTaskReq.
 
         目的端服务器的区域名称
 
@@ -484,7 +484,7 @@ class PutTaskReq:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this PutTaskReq.
+        r"""Sets the region_name of this PutTaskReq.
 
         目的端服务器的区域名称
 
@@ -495,7 +495,7 @@ class PutTaskReq:
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this PutTaskReq.
+        r"""Gets the speed_limit of this PutTaskReq.
 
         限制迁移速率，单位：Mbps
 
@@ -506,7 +506,7 @@ class PutTaskReq:
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this PutTaskReq.
+        r"""Sets the speed_limit of this PutTaskReq.
 
         限制迁移速率，单位：Mbps
 
@@ -517,7 +517,7 @@ class PutTaskReq:
 
     @property
     def project_name(self):
-        """Gets the project_name of this PutTaskReq.
+        r"""Gets the project_name of this PutTaskReq.
 
         目的端服务器所在项目名称
 
@@ -528,7 +528,7 @@ class PutTaskReq:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this PutTaskReq.
+        r"""Sets the project_name of this PutTaskReq.
 
         目的端服务器所在项目名称
 
@@ -539,7 +539,7 @@ class PutTaskReq:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PutTaskReq.
+        r"""Gets the project_id of this PutTaskReq.
 
         目的端服务器所在项目ID
 
@@ -550,7 +550,7 @@ class PutTaskReq:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PutTaskReq.
+        r"""Sets the project_id of this PutTaskReq.
 
         目的端服务器所在项目ID
 
@@ -561,7 +561,7 @@ class PutTaskReq:
 
     @property
     def vm_template_id(self):
-        """Gets the vm_template_id of this PutTaskReq.
+        r"""Gets the vm_template_id of this PutTaskReq.
 
         模板ID
 
@@ -572,7 +572,7 @@ class PutTaskReq:
 
     @vm_template_id.setter
     def vm_template_id(self, vm_template_id):
-        """Sets the vm_template_id of this PutTaskReq.
+        r"""Sets the vm_template_id of this PutTaskReq.
 
         模板ID
 
@@ -583,7 +583,7 @@ class PutTaskReq:
 
     @property
     def source_server(self):
-        """Gets the source_server of this PutTaskReq.
+        r"""Gets the source_server of this PutTaskReq.
 
         :return: The source_server of this PutTaskReq.
         :rtype: :class:`huaweicloudsdksms.v3.PostSourceServerBody`
@@ -592,7 +592,7 @@ class PutTaskReq:
 
     @source_server.setter
     def source_server(self, source_server):
-        """Sets the source_server of this PutTaskReq.
+        r"""Sets the source_server of this PutTaskReq.
 
         :param source_server: The source_server of this PutTaskReq.
         :type source_server: :class:`huaweicloudsdksms.v3.PostSourceServerBody`
@@ -601,7 +601,7 @@ class PutTaskReq:
 
     @property
     def target_server(self):
-        """Gets the target_server of this PutTaskReq.
+        r"""Gets the target_server of this PutTaskReq.
 
         :return: The target_server of this PutTaskReq.
         :rtype: :class:`huaweicloudsdksms.v3.TargetServer`
@@ -610,7 +610,7 @@ class PutTaskReq:
 
     @target_server.setter
     def target_server(self, target_server):
-        """Sets the target_server of this PutTaskReq.
+        r"""Sets the target_server of this PutTaskReq.
 
         :param target_server: The target_server of this PutTaskReq.
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServer`
@@ -619,7 +619,7 @@ class PutTaskReq:
 
     @property
     def state(self):
-        """Gets the state of this PutTaskReq.
+        r"""Gets the state of this PutTaskReq.
 
         任务状态
 
@@ -630,7 +630,7 @@ class PutTaskReq:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this PutTaskReq.
+        r"""Sets the state of this PutTaskReq.
 
         任务状态
 
@@ -641,7 +641,7 @@ class PutTaskReq:
 
     @property
     def estimate_complete_time(self):
-        """Gets the estimate_complete_time of this PutTaskReq.
+        r"""Gets the estimate_complete_time of this PutTaskReq.
 
         预估完成时间
 
@@ -652,7 +652,7 @@ class PutTaskReq:
 
     @estimate_complete_time.setter
     def estimate_complete_time(self, estimate_complete_time):
-        """Sets the estimate_complete_time of this PutTaskReq.
+        r"""Sets the estimate_complete_time of this PutTaskReq.
 
         预估完成时间
 
@@ -663,7 +663,7 @@ class PutTaskReq:
 
     @property
     def connected(self):
-        """Gets the connected of this PutTaskReq.
+        r"""Gets the connected of this PutTaskReq.
 
         连接状态
 
@@ -674,7 +674,7 @@ class PutTaskReq:
 
     @connected.setter
     def connected(self, connected):
-        """Sets the connected of this PutTaskReq.
+        r"""Sets the connected of this PutTaskReq.
 
         连接状态
 
@@ -685,7 +685,7 @@ class PutTaskReq:
 
     @property
     def create_date(self):
-        """Gets the create_date of this PutTaskReq.
+        r"""Gets the create_date of this PutTaskReq.
 
         任务创建时间
 
@@ -696,7 +696,7 @@ class PutTaskReq:
 
     @create_date.setter
     def create_date(self, create_date):
-        """Sets the create_date of this PutTaskReq.
+        r"""Sets the create_date of this PutTaskReq.
 
         任务创建时间
 
@@ -707,7 +707,7 @@ class PutTaskReq:
 
     @property
     def start_date(self):
-        """Gets the start_date of this PutTaskReq.
+        r"""Gets the start_date of this PutTaskReq.
 
         任务开始时间
 
@@ -718,7 +718,7 @@ class PutTaskReq:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this PutTaskReq.
+        r"""Sets the start_date of this PutTaskReq.
 
         任务开始时间
 
@@ -729,7 +729,7 @@ class PutTaskReq:
 
     @property
     def finish_date(self):
-        """Gets the finish_date of this PutTaskReq.
+        r"""Gets the finish_date of this PutTaskReq.
 
         任务结束时间
 
@@ -740,7 +740,7 @@ class PutTaskReq:
 
     @finish_date.setter
     def finish_date(self, finish_date):
-        """Sets the finish_date of this PutTaskReq.
+        r"""Sets the finish_date of this PutTaskReq.
 
         任务结束时间
 
@@ -751,7 +751,7 @@ class PutTaskReq:
 
     @property
     def migrate_speed(self):
-        """Gets the migrate_speed of this PutTaskReq.
+        r"""Gets the migrate_speed of this PutTaskReq.
 
         迁移速率，单位：MB/S
 
@@ -762,7 +762,7 @@ class PutTaskReq:
 
     @migrate_speed.setter
     def migrate_speed(self, migrate_speed):
-        """Sets the migrate_speed of this PutTaskReq.
+        r"""Sets the migrate_speed of this PutTaskReq.
 
         迁移速率，单位：MB/S
 
@@ -773,7 +773,7 @@ class PutTaskReq:
 
     @property
     def error_json(self):
-        """Gets the error_json of this PutTaskReq.
+        r"""Gets the error_json of this PutTaskReq.
 
         错误信息
 
@@ -784,7 +784,7 @@ class PutTaskReq:
 
     @error_json.setter
     def error_json(self, error_json):
-        """Sets the error_json of this PutTaskReq.
+        r"""Sets the error_json of this PutTaskReq.
 
         错误信息
 
@@ -795,7 +795,7 @@ class PutTaskReq:
 
     @property
     def total_time(self):
-        """Gets the total_time of this PutTaskReq.
+        r"""Gets the total_time of this PutTaskReq.
 
         任务总耗时
 
@@ -806,7 +806,7 @@ class PutTaskReq:
 
     @total_time.setter
     def total_time(self, total_time):
-        """Sets the total_time of this PutTaskReq.
+        r"""Sets the total_time of this PutTaskReq.
 
         任务总耗时
 
@@ -817,7 +817,7 @@ class PutTaskReq:
 
     @property
     def float_ip(self):
-        """Gets the float_ip of this PutTaskReq.
+        r"""Gets the float_ip of this PutTaskReq.
 
         暂时保留float,兼容现网老版本的SMS-Agent
 
@@ -828,7 +828,7 @@ class PutTaskReq:
 
     @float_ip.setter
     def float_ip(self, float_ip):
-        """Sets the float_ip of this PutTaskReq.
+        r"""Sets the float_ip of this PutTaskReq.
 
         暂时保留float,兼容现网老版本的SMS-Agent
 
@@ -839,7 +839,7 @@ class PutTaskReq:
 
     @property
     def remain_seconds(self):
-        """Gets the remain_seconds of this PutTaskReq.
+        r"""Gets the remain_seconds of this PutTaskReq.
 
         迁移剩余时间（秒）
 
@@ -850,7 +850,7 @@ class PutTaskReq:
 
     @remain_seconds.setter
     def remain_seconds(self, remain_seconds):
-        """Sets the remain_seconds of this PutTaskReq.
+        r"""Sets the remain_seconds of this PutTaskReq.
 
         迁移剩余时间（秒）
 
@@ -861,7 +861,7 @@ class PutTaskReq:
 
     @property
     def target_snapshot_id(self):
-        """Gets the target_snapshot_id of this PutTaskReq.
+        r"""Gets the target_snapshot_id of this PutTaskReq.
 
         目的端的快照ID
 
@@ -872,7 +872,7 @@ class PutTaskReq:
 
     @target_snapshot_id.setter
     def target_snapshot_id(self, target_snapshot_id):
-        """Sets the target_snapshot_id of this PutTaskReq.
+        r"""Sets the target_snapshot_id of this PutTaskReq.
 
         目的端的快照ID
 
@@ -883,7 +883,7 @@ class PutTaskReq:
 
     @property
     def clone_server(self):
-        """Gets the clone_server of this PutTaskReq.
+        r"""Gets the clone_server of this PutTaskReq.
 
         :return: The clone_server of this PutTaskReq.
         :rtype: :class:`huaweicloudsdksms.v3.CloneServer`
@@ -892,7 +892,7 @@ class PutTaskReq:
 
     @clone_server.setter
     def clone_server(self, clone_server):
-        """Sets the clone_server of this PutTaskReq.
+        r"""Sets the clone_server of this PutTaskReq.
 
         :param clone_server: The clone_server of this PutTaskReq.
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`
@@ -901,7 +901,7 @@ class PutTaskReq:
 
     @property
     def sub_tasks(self):
-        """Gets the sub_tasks of this PutTaskReq.
+        r"""Gets the sub_tasks of this PutTaskReq.
 
         任务包含的子任务列表
 
@@ -912,7 +912,7 @@ class PutTaskReq:
 
     @sub_tasks.setter
     def sub_tasks(self, sub_tasks):
-        """Sets the sub_tasks of this PutTaskReq.
+        r"""Sets the sub_tasks of this PutTaskReq.
 
         任务包含的子任务列表
 

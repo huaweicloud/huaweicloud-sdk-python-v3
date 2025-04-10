@@ -28,7 +28,7 @@ class PushFileResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, jobs=None):
-        """PushFileResponse
+        r"""PushFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class PushFileResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this PushFileResponse.
+        r"""Gets the request_id of this PushFileResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class PushFileResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this PushFileResponse.
+        r"""Sets the request_id of this PushFileResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class PushFileResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this PushFileResponse.
+        r"""Gets the jobs of this PushFileResponse.
 
         任务列表。
 
@@ -84,7 +84,7 @@ class PushFileResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this PushFileResponse.
+        r"""Sets the jobs of this PushFileResponse.
 
         任务列表。
 

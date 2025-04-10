@@ -27,7 +27,7 @@ class ModifyDbUserPrivilegeRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ModifyDbUserPrivilegeRequest
+        r"""ModifyDbUserPrivilegeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ModifyDbUserPrivilegeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ModifyDbUserPrivilegeRequest.
+        r"""Gets the instance_id of this ModifyDbUserPrivilegeRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class ModifyDbUserPrivilegeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ModifyDbUserPrivilegeRequest.
+        r"""Sets the instance_id of this ModifyDbUserPrivilegeRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ModifyDbUserPrivilegeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyDbUserPrivilegeRequest.
+        r"""Gets the body of this ModifyDbUserPrivilegeRequest.
 
         :return: The body of this ModifyDbUserPrivilegeRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RedisModifyDBUserPrivilegeRequest`
@@ -80,7 +80,7 @@ class ModifyDbUserPrivilegeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyDbUserPrivilegeRequest.
+        r"""Sets the body of this ModifyDbUserPrivilegeRequest.
 
         :param body: The body of this ModifyDbUserPrivilegeRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.RedisModifyDBUserPrivilegeRequest`

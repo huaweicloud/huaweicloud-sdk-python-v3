@@ -33,7 +33,7 @@ class ShowDdosAttackTimelineStatsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, stat_type=None, group_by=None, start_time=None, end_time=None):
-        """ShowDdosAttackTimelineStatsRequest
+        r"""ShowDdosAttackTimelineStatsRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ShowDdosAttackTimelineStatsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowDdosAttackTimelineStatsRequest.
+        r"""Gets the enterprise_project_id of this ShowDdosAttackTimelineStatsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -78,7 +78,7 @@ class ShowDdosAttackTimelineStatsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowDdosAttackTimelineStatsRequest.
+        r"""Sets the enterprise_project_id of this ShowDdosAttackTimelineStatsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -89,7 +89,7 @@ class ShowDdosAttackTimelineStatsRequest:
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this ShowDdosAttackTimelineStatsRequest.
+        r"""Gets the stat_type of this ShowDdosAttackTimelineStatsRequest.
 
         安全统计指标类型，目前支持bw、pps
 
@@ -100,7 +100,7 @@ class ShowDdosAttackTimelineStatsRequest:
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this ShowDdosAttackTimelineStatsRequest.
+        r"""Sets the stat_type of this ShowDdosAttackTimelineStatsRequest.
 
         安全统计指标类型，目前支持bw、pps
 
@@ -111,7 +111,7 @@ class ShowDdosAttackTimelineStatsRequest:
 
     @property
     def group_by(self):
-        """Gets the group_by of this ShowDdosAttackTimelineStatsRequest.
+        r"""Gets the group_by of this ShowDdosAttackTimelineStatsRequest.
 
         bw对应（max_bps、avg_bps）,pps对应（max_pps、avg_pps）
 
@@ -122,7 +122,7 @@ class ShowDdosAttackTimelineStatsRequest:
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this ShowDdosAttackTimelineStatsRequest.
+        r"""Sets the group_by of this ShowDdosAttackTimelineStatsRequest.
 
         bw对应（max_bps、avg_bps）,pps对应（max_pps、avg_pps）
 
@@ -133,7 +133,7 @@ class ShowDdosAttackTimelineStatsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowDdosAttackTimelineStatsRequest.
+        r"""Gets the start_time of this ShowDdosAttackTimelineStatsRequest.
 
         开始时间
 
@@ -144,7 +144,7 @@ class ShowDdosAttackTimelineStatsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowDdosAttackTimelineStatsRequest.
+        r"""Sets the start_time of this ShowDdosAttackTimelineStatsRequest.
 
         开始时间
 
@@ -155,7 +155,7 @@ class ShowDdosAttackTimelineStatsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowDdosAttackTimelineStatsRequest.
+        r"""Gets the end_time of this ShowDdosAttackTimelineStatsRequest.
 
         结束时间
 
@@ -166,7 +166,7 @@ class ShowDdosAttackTimelineStatsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowDdosAttackTimelineStatsRequest.
+        r"""Sets the end_time of this ShowDdosAttackTimelineStatsRequest.
 
         结束时间
 

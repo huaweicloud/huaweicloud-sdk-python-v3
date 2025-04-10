@@ -27,7 +27,7 @@ class CreateClusterRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreateClusterRequest
+        r"""CreateClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateClusterRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateClusterRequest.
+        r"""Gets the x_language of this CreateClusterRequest.
 
         语言类型
 
@@ -60,7 +60,7 @@ class CreateClusterRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateClusterRequest.
+        r"""Sets the x_language of this CreateClusterRequest.
 
         语言类型
 
@@ -71,7 +71,7 @@ class CreateClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateClusterRequest.
+        r"""Gets the body of this CreateClusterRequest.
 
         :return: The body of this CreateClusterRequest.
         :rtype: :class:`huaweicloudsdkcloudtable.v2.CreateClusterRequestBody`
@@ -80,7 +80,7 @@ class CreateClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateClusterRequest.
+        r"""Sets the body of this CreateClusterRequest.
 
         :param body: The body of this CreateClusterRequest.
         :type body: :class:`huaweicloudsdkcloudtable.v2.CreateClusterRequestBody`

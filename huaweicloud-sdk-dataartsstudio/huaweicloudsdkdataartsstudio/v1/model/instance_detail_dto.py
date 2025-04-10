@@ -85,7 +85,7 @@ class InstanceDetailDTO:
     }
 
     def __init__(self, id=None, name=None, description=None, external_address=None, intranet_address=None, intranet_address_ipv6=None, public_zone_id=None, public_zone_name=None, private_zone_id=None, private_zone_name=None, enterprise_project_id=None, create_time=None, create_user=None, current_namespace_publish_api_num=None, all_namespace_publish_api_num=None, api_publishable_num=None, deletable=None, charge_status=None, order_id=None, order_type=None, period_type=None, instance_status=None, node_num=None, flavor=None, gateway_version=None, availability_zone=None, availability_zone_name=None, vpc_id=None, subnet_id=None, security_group_id=None, nodes=None):
-        """InstanceDetailDTO
+        r"""InstanceDetailDTO
 
         The model defined in huaweicloud sdk
 
@@ -253,7 +253,7 @@ class InstanceDetailDTO:
 
     @property
     def id(self):
-        """Gets the id of this InstanceDetailDTO.
+        r"""Gets the id of this InstanceDetailDTO.
 
         集群ID。
 
@@ -264,7 +264,7 @@ class InstanceDetailDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstanceDetailDTO.
+        r"""Sets the id of this InstanceDetailDTO.
 
         集群ID。
 
@@ -275,7 +275,7 @@ class InstanceDetailDTO:
 
     @property
     def name(self):
-        """Gets the name of this InstanceDetailDTO.
+        r"""Gets the name of this InstanceDetailDTO.
 
         集群名称。
 
@@ -286,7 +286,7 @@ class InstanceDetailDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceDetailDTO.
+        r"""Sets the name of this InstanceDetailDTO.
 
         集群名称。
 
@@ -297,7 +297,7 @@ class InstanceDetailDTO:
 
     @property
     def description(self):
-        """Gets the description of this InstanceDetailDTO.
+        r"""Gets the description of this InstanceDetailDTO.
 
         集群描述信息。
 
@@ -308,7 +308,7 @@ class InstanceDetailDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InstanceDetailDTO.
+        r"""Sets the description of this InstanceDetailDTO.
 
         集群描述信息。
 
@@ -319,7 +319,7 @@ class InstanceDetailDTO:
 
     @property
     def external_address(self):
-        """Gets the external_address of this InstanceDetailDTO.
+        r"""Gets the external_address of this InstanceDetailDTO.
 
         公网IP地址。
 
@@ -330,7 +330,7 @@ class InstanceDetailDTO:
 
     @external_address.setter
     def external_address(self, external_address):
-        """Sets the external_address of this InstanceDetailDTO.
+        r"""Sets the external_address of this InstanceDetailDTO.
 
         公网IP地址。
 
@@ -341,7 +341,7 @@ class InstanceDetailDTO:
 
     @property
     def intranet_address(self):
-        """Gets the intranet_address of this InstanceDetailDTO.
+        r"""Gets the intranet_address of this InstanceDetailDTO.
 
         内网IPv4地址。
 
@@ -352,7 +352,7 @@ class InstanceDetailDTO:
 
     @intranet_address.setter
     def intranet_address(self, intranet_address):
-        """Sets the intranet_address of this InstanceDetailDTO.
+        r"""Sets the intranet_address of this InstanceDetailDTO.
 
         内网IPv4地址。
 
@@ -363,7 +363,7 @@ class InstanceDetailDTO:
 
     @property
     def intranet_address_ipv6(self):
-        """Gets the intranet_address_ipv6 of this InstanceDetailDTO.
+        r"""Gets the intranet_address_ipv6 of this InstanceDetailDTO.
 
         内网IPv6地址。
 
@@ -374,7 +374,7 @@ class InstanceDetailDTO:
 
     @intranet_address_ipv6.setter
     def intranet_address_ipv6(self, intranet_address_ipv6):
-        """Sets the intranet_address_ipv6 of this InstanceDetailDTO.
+        r"""Sets the intranet_address_ipv6 of this InstanceDetailDTO.
 
         内网IPv6地址。
 
@@ -385,7 +385,7 @@ class InstanceDetailDTO:
 
     @property
     def public_zone_id(self):
-        """Gets the public_zone_id of this InstanceDetailDTO.
+        r"""Gets the public_zone_id of this InstanceDetailDTO.
 
         公网域名ID。
 
@@ -396,7 +396,7 @@ class InstanceDetailDTO:
 
     @public_zone_id.setter
     def public_zone_id(self, public_zone_id):
-        """Sets the public_zone_id of this InstanceDetailDTO.
+        r"""Sets the public_zone_id of this InstanceDetailDTO.
 
         公网域名ID。
 
@@ -407,7 +407,7 @@ class InstanceDetailDTO:
 
     @property
     def public_zone_name(self):
-        """Gets the public_zone_name of this InstanceDetailDTO.
+        r"""Gets the public_zone_name of this InstanceDetailDTO.
 
         公网域名名称。
 
@@ -418,7 +418,7 @@ class InstanceDetailDTO:
 
     @public_zone_name.setter
     def public_zone_name(self, public_zone_name):
-        """Sets the public_zone_name of this InstanceDetailDTO.
+        r"""Sets the public_zone_name of this InstanceDetailDTO.
 
         公网域名名称。
 
@@ -429,7 +429,7 @@ class InstanceDetailDTO:
 
     @property
     def private_zone_id(self):
-        """Gets the private_zone_id of this InstanceDetailDTO.
+        r"""Gets the private_zone_id of this InstanceDetailDTO.
 
         内网域名ID。
 
@@ -440,7 +440,7 @@ class InstanceDetailDTO:
 
     @private_zone_id.setter
     def private_zone_id(self, private_zone_id):
-        """Sets the private_zone_id of this InstanceDetailDTO.
+        r"""Sets the private_zone_id of this InstanceDetailDTO.
 
         内网域名ID。
 
@@ -451,7 +451,7 @@ class InstanceDetailDTO:
 
     @property
     def private_zone_name(self):
-        """Gets the private_zone_name of this InstanceDetailDTO.
+        r"""Gets the private_zone_name of this InstanceDetailDTO.
 
         内网域名名称。
 
@@ -462,7 +462,7 @@ class InstanceDetailDTO:
 
     @private_zone_name.setter
     def private_zone_name(self, private_zone_name):
-        """Sets the private_zone_name of this InstanceDetailDTO.
+        r"""Sets the private_zone_name of this InstanceDetailDTO.
 
         内网域名名称。
 
@@ -473,7 +473,7 @@ class InstanceDetailDTO:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this InstanceDetailDTO.
+        r"""Gets the enterprise_project_id of this InstanceDetailDTO.
 
         企业项目ID。
 
@@ -484,7 +484,7 @@ class InstanceDetailDTO:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this InstanceDetailDTO.
+        r"""Sets the enterprise_project_id of this InstanceDetailDTO.
 
         企业项目ID。
 
@@ -495,7 +495,7 @@ class InstanceDetailDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this InstanceDetailDTO.
+        r"""Gets the create_time of this InstanceDetailDTO.
 
         创建时间。
 
@@ -506,7 +506,7 @@ class InstanceDetailDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this InstanceDetailDTO.
+        r"""Sets the create_time of this InstanceDetailDTO.
 
         创建时间。
 
@@ -517,7 +517,7 @@ class InstanceDetailDTO:
 
     @property
     def create_user(self):
-        """Gets the create_user of this InstanceDetailDTO.
+        r"""Gets the create_user of this InstanceDetailDTO.
 
         创建人。
 
@@ -528,7 +528,7 @@ class InstanceDetailDTO:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this InstanceDetailDTO.
+        r"""Sets the create_user of this InstanceDetailDTO.
 
         创建人。
 
@@ -539,7 +539,7 @@ class InstanceDetailDTO:
 
     @property
     def current_namespace_publish_api_num(self):
-        """Gets the current_namespace_publish_api_num of this InstanceDetailDTO.
+        r"""Gets the current_namespace_publish_api_num of this InstanceDetailDTO.
 
         当前工作空间已发布的API数量。
 
@@ -550,7 +550,7 @@ class InstanceDetailDTO:
 
     @current_namespace_publish_api_num.setter
     def current_namespace_publish_api_num(self, current_namespace_publish_api_num):
-        """Sets the current_namespace_publish_api_num of this InstanceDetailDTO.
+        r"""Sets the current_namespace_publish_api_num of this InstanceDetailDTO.
 
         当前工作空间已发布的API数量。
 
@@ -561,7 +561,7 @@ class InstanceDetailDTO:
 
     @property
     def all_namespace_publish_api_num(self):
-        """Gets the all_namespace_publish_api_num of this InstanceDetailDTO.
+        r"""Gets the all_namespace_publish_api_num of this InstanceDetailDTO.
 
         所有工作空间已发布的API数量。
 
@@ -572,7 +572,7 @@ class InstanceDetailDTO:
 
     @all_namespace_publish_api_num.setter
     def all_namespace_publish_api_num(self, all_namespace_publish_api_num):
-        """Sets the all_namespace_publish_api_num of this InstanceDetailDTO.
+        r"""Sets the all_namespace_publish_api_num of this InstanceDetailDTO.
 
         所有工作空间已发布的API数量。
 
@@ -583,7 +583,7 @@ class InstanceDetailDTO:
 
     @property
     def api_publishable_num(self):
-        """Gets the api_publishable_num of this InstanceDetailDTO.
+        r"""Gets the api_publishable_num of this InstanceDetailDTO.
 
         集群API总配额。
 
@@ -594,7 +594,7 @@ class InstanceDetailDTO:
 
     @api_publishable_num.setter
     def api_publishable_num(self, api_publishable_num):
-        """Sets the api_publishable_num of this InstanceDetailDTO.
+        r"""Sets the api_publishable_num of this InstanceDetailDTO.
 
         集群API总配额。
 
@@ -605,7 +605,7 @@ class InstanceDetailDTO:
 
     @property
     def deletable(self):
-        """Gets the deletable of this InstanceDetailDTO.
+        r"""Gets the deletable of this InstanceDetailDTO.
 
         集群是否可以删除。
 
@@ -616,7 +616,7 @@ class InstanceDetailDTO:
 
     @deletable.setter
     def deletable(self, deletable):
-        """Sets the deletable of this InstanceDetailDTO.
+        r"""Sets the deletable of this InstanceDetailDTO.
 
         集群是否可以删除。
 
@@ -627,7 +627,7 @@ class InstanceDetailDTO:
 
     @property
     def charge_status(self):
-        """Gets the charge_status of this InstanceDetailDTO.
+        r"""Gets the charge_status of this InstanceDetailDTO.
 
         集群计费状态，NO_CHARGE：未计费、CHARGED：已计费，GRACE：宽限期、RETENTION：保留期。
 
@@ -638,7 +638,7 @@ class InstanceDetailDTO:
 
     @charge_status.setter
     def charge_status(self, charge_status):
-        """Sets the charge_status of this InstanceDetailDTO.
+        r"""Sets the charge_status of this InstanceDetailDTO.
 
         集群计费状态，NO_CHARGE：未计费、CHARGED：已计费，GRACE：宽限期、RETENTION：保留期。
 
@@ -649,7 +649,7 @@ class InstanceDetailDTO:
 
     @property
     def order_id(self):
-        """Gets the order_id of this InstanceDetailDTO.
+        r"""Gets the order_id of this InstanceDetailDTO.
 
         订单ID。
 
@@ -660,7 +660,7 @@ class InstanceDetailDTO:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this InstanceDetailDTO.
+        r"""Sets the order_id of this InstanceDetailDTO.
 
         订单ID。
 
@@ -671,7 +671,7 @@ class InstanceDetailDTO:
 
     @property
     def order_type(self):
-        """Gets the order_type of this InstanceDetailDTO.
+        r"""Gets the order_type of this InstanceDetailDTO.
 
         订单类型，PERIOD：包周期、ON_DEMAND：按需。
 
@@ -682,7 +682,7 @@ class InstanceDetailDTO:
 
     @order_type.setter
     def order_type(self, order_type):
-        """Sets the order_type of this InstanceDetailDTO.
+        r"""Sets the order_type of this InstanceDetailDTO.
 
         订单类型，PERIOD：包周期、ON_DEMAND：按需。
 
@@ -693,7 +693,7 @@ class InstanceDetailDTO:
 
     @property
     def period_type(self):
-        """Gets the period_type of this InstanceDetailDTO.
+        r"""Gets the period_type of this InstanceDetailDTO.
 
         集群订购周期类型。
 
@@ -704,7 +704,7 @@ class InstanceDetailDTO:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this InstanceDetailDTO.
+        r"""Sets the period_type of this InstanceDetailDTO.
 
         集群订购周期类型。
 
@@ -715,7 +715,7 @@ class InstanceDetailDTO:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this InstanceDetailDTO.
+        r"""Gets the instance_status of this InstanceDetailDTO.
 
         集群状态。
 
@@ -726,7 +726,7 @@ class InstanceDetailDTO:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this InstanceDetailDTO.
+        r"""Sets the instance_status of this InstanceDetailDTO.
 
         集群状态。
 
@@ -737,7 +737,7 @@ class InstanceDetailDTO:
 
     @property
     def node_num(self):
-        """Gets the node_num of this InstanceDetailDTO.
+        r"""Gets the node_num of this InstanceDetailDTO.
 
         节点数量。
 
@@ -748,7 +748,7 @@ class InstanceDetailDTO:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this InstanceDetailDTO.
+        r"""Sets the node_num of this InstanceDetailDTO.
 
         节点数量。
 
@@ -759,7 +759,7 @@ class InstanceDetailDTO:
 
     @property
     def flavor(self):
-        """Gets the flavor of this InstanceDetailDTO.
+        r"""Gets the flavor of this InstanceDetailDTO.
 
         :return: The flavor of this InstanceDetailDTO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.FlavorDTO`
@@ -768,7 +768,7 @@ class InstanceDetailDTO:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this InstanceDetailDTO.
+        r"""Sets the flavor of this InstanceDetailDTO.
 
         :param flavor: The flavor of this InstanceDetailDTO.
         :type flavor: :class:`huaweicloudsdkdataartsstudio.v1.FlavorDTO`
@@ -777,7 +777,7 @@ class InstanceDetailDTO:
 
     @property
     def gateway_version(self):
-        """Gets the gateway_version of this InstanceDetailDTO.
+        r"""Gets the gateway_version of this InstanceDetailDTO.
 
         集群版本号。
 
@@ -788,7 +788,7 @@ class InstanceDetailDTO:
 
     @gateway_version.setter
     def gateway_version(self, gateway_version):
-        """Sets the gateway_version of this InstanceDetailDTO.
+        r"""Sets the gateway_version of this InstanceDetailDTO.
 
         集群版本号。
 
@@ -799,7 +799,7 @@ class InstanceDetailDTO:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this InstanceDetailDTO.
+        r"""Gets the availability_zone of this InstanceDetailDTO.
 
         集群所在可用区编码。
 
@@ -810,7 +810,7 @@ class InstanceDetailDTO:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this InstanceDetailDTO.
+        r"""Sets the availability_zone of this InstanceDetailDTO.
 
         集群所在可用区编码。
 
@@ -821,7 +821,7 @@ class InstanceDetailDTO:
 
     @property
     def availability_zone_name(self):
-        """Gets the availability_zone_name of this InstanceDetailDTO.
+        r"""Gets the availability_zone_name of this InstanceDetailDTO.
 
         集群所在可用区名称。
 
@@ -832,7 +832,7 @@ class InstanceDetailDTO:
 
     @availability_zone_name.setter
     def availability_zone_name(self, availability_zone_name):
-        """Sets the availability_zone_name of this InstanceDetailDTO.
+        r"""Sets the availability_zone_name of this InstanceDetailDTO.
 
         集群所在可用区名称。
 
@@ -843,7 +843,7 @@ class InstanceDetailDTO:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this InstanceDetailDTO.
+        r"""Gets the vpc_id of this InstanceDetailDTO.
 
         集群所在虚拟私有云ID。
 
@@ -854,7 +854,7 @@ class InstanceDetailDTO:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this InstanceDetailDTO.
+        r"""Sets the vpc_id of this InstanceDetailDTO.
 
         集群所在虚拟私有云ID。
 
@@ -865,7 +865,7 @@ class InstanceDetailDTO:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this InstanceDetailDTO.
+        r"""Gets the subnet_id of this InstanceDetailDTO.
 
         集群所在子网ID。
 
@@ -876,7 +876,7 @@ class InstanceDetailDTO:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this InstanceDetailDTO.
+        r"""Sets the subnet_id of this InstanceDetailDTO.
 
         集群所在子网ID。
 
@@ -887,7 +887,7 @@ class InstanceDetailDTO:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this InstanceDetailDTO.
+        r"""Gets the security_group_id of this InstanceDetailDTO.
 
         集群所在安全组ID。
 
@@ -898,7 +898,7 @@ class InstanceDetailDTO:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this InstanceDetailDTO.
+        r"""Sets the security_group_id of this InstanceDetailDTO.
 
         集群所在安全组ID。
 
@@ -909,7 +909,7 @@ class InstanceDetailDTO:
 
     @property
     def nodes(self):
-        """Gets the nodes of this InstanceDetailDTO.
+        r"""Gets the nodes of this InstanceDetailDTO.
 
         集群节点列表。
 
@@ -920,7 +920,7 @@ class InstanceDetailDTO:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this InstanceDetailDTO.
+        r"""Sets the nodes of this InstanceDetailDTO.
 
         集群节点列表。
 

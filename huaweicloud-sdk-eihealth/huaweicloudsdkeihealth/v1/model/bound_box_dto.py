@@ -29,7 +29,7 @@ class BoundBoxDto:
     }
 
     def __init__(self, center=None, size=None, padding=None):
-        """BoundBoxDto
+        r"""BoundBoxDto
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BoundBoxDto:
 
     @property
     def center(self):
-        """Gets the center of this BoundBoxDto.
+        r"""Gets the center of this BoundBoxDto.
 
         口袋中心坐标，x、y、z轴的坐标。
 
@@ -66,7 +66,7 @@ class BoundBoxDto:
 
     @center.setter
     def center(self, center):
-        """Sets the center of this BoundBoxDto.
+        r"""Sets the center of this BoundBoxDto.
 
         口袋中心坐标，x、y、z轴的坐标。
 
@@ -77,7 +77,7 @@ class BoundBoxDto:
 
     @property
     def size(self):
-        """Gets the size of this BoundBoxDto.
+        r"""Gets the size of this BoundBoxDto.
 
         口袋尺寸大小，x、y、z轴的大小。
 
@@ -88,7 +88,7 @@ class BoundBoxDto:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BoundBoxDto.
+        r"""Sets the size of this BoundBoxDto.
 
         口袋尺寸大小，x、y、z轴的大小。
 
@@ -99,7 +99,7 @@ class BoundBoxDto:
 
     @property
     def padding(self):
-        """Gets the padding of this BoundBoxDto.
+        r"""Gets the padding of this BoundBoxDto.
 
         填充。
 
@@ -110,7 +110,7 @@ class BoundBoxDto:
 
     @padding.setter
     def padding(self, padding):
-        """Sets the padding of this BoundBoxDto.
+        r"""Sets the padding of this BoundBoxDto.
 
         填充。
 

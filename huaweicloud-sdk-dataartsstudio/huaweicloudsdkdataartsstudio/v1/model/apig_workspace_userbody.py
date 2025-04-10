@@ -53,7 +53,7 @@ class ApigWorkspaceUserbody:
     }
 
     def __init__(self, id=None, user_id=None, user_name=None, domain_id=None, domain_name=None, display_user_name=None, domain_owner=None, description=None, workspace_id=None, roles=None, create_time=None, create_user=None, update_time=None, update_user=None, type=None):
-        """ApigWorkspaceUserbody
+        r"""ApigWorkspaceUserbody
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ApigWorkspaceUserbody:
 
     @property
     def id(self):
-        """Gets the id of this ApigWorkspaceUserbody.
+        r"""Gets the id of this ApigWorkspaceUserbody.
 
         记录id
 
@@ -152,7 +152,7 @@ class ApigWorkspaceUserbody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApigWorkspaceUserbody.
+        r"""Sets the id of this ApigWorkspaceUserbody.
 
         记录id
 
@@ -163,7 +163,7 @@ class ApigWorkspaceUserbody:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ApigWorkspaceUserbody.
+        r"""Gets the user_id of this ApigWorkspaceUserbody.
 
         用户id
 
@@ -174,7 +174,7 @@ class ApigWorkspaceUserbody:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ApigWorkspaceUserbody.
+        r"""Sets the user_id of this ApigWorkspaceUserbody.
 
         用户id
 
@@ -185,7 +185,7 @@ class ApigWorkspaceUserbody:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ApigWorkspaceUserbody.
+        r"""Gets the user_name of this ApigWorkspaceUserbody.
 
         用户名
 
@@ -196,7 +196,7 @@ class ApigWorkspaceUserbody:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ApigWorkspaceUserbody.
+        r"""Sets the user_name of this ApigWorkspaceUserbody.
 
         用户名
 
@@ -207,7 +207,7 @@ class ApigWorkspaceUserbody:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ApigWorkspaceUserbody.
+        r"""Gets the domain_id of this ApigWorkspaceUserbody.
 
         租户id
 
@@ -218,7 +218,7 @@ class ApigWorkspaceUserbody:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ApigWorkspaceUserbody.
+        r"""Sets the domain_id of this ApigWorkspaceUserbody.
 
         租户id
 
@@ -229,7 +229,7 @@ class ApigWorkspaceUserbody:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ApigWorkspaceUserbody.
+        r"""Gets the domain_name of this ApigWorkspaceUserbody.
 
         租户名
 
@@ -240,7 +240,7 @@ class ApigWorkspaceUserbody:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ApigWorkspaceUserbody.
+        r"""Sets the domain_name of this ApigWorkspaceUserbody.
 
         租户名
 
@@ -251,7 +251,7 @@ class ApigWorkspaceUserbody:
 
     @property
     def display_user_name(self):
-        """Gets the display_user_name of this ApigWorkspaceUserbody.
+        r"""Gets the display_user_name of this ApigWorkspaceUserbody.
 
         租户名
 
@@ -262,7 +262,7 @@ class ApigWorkspaceUserbody:
 
     @display_user_name.setter
     def display_user_name(self, display_user_name):
-        """Sets the display_user_name of this ApigWorkspaceUserbody.
+        r"""Sets the display_user_name of this ApigWorkspaceUserbody.
 
         租户名
 
@@ -273,7 +273,7 @@ class ApigWorkspaceUserbody:
 
     @property
     def domain_owner(self):
-        """Gets the domain_owner of this ApigWorkspaceUserbody.
+        r"""Gets the domain_owner of this ApigWorkspaceUserbody.
 
         是否是空间所有者
 
@@ -284,7 +284,7 @@ class ApigWorkspaceUserbody:
 
     @domain_owner.setter
     def domain_owner(self, domain_owner):
-        """Sets the domain_owner of this ApigWorkspaceUserbody.
+        r"""Sets the domain_owner of this ApigWorkspaceUserbody.
 
         是否是空间所有者
 
@@ -295,7 +295,7 @@ class ApigWorkspaceUserbody:
 
     @property
     def description(self):
-        """Gets the description of this ApigWorkspaceUserbody.
+        r"""Gets the description of this ApigWorkspaceUserbody.
 
         描述
 
@@ -306,7 +306,7 @@ class ApigWorkspaceUserbody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApigWorkspaceUserbody.
+        r"""Sets the description of this ApigWorkspaceUserbody.
 
         描述
 
@@ -317,7 +317,7 @@ class ApigWorkspaceUserbody:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ApigWorkspaceUserbody.
+        r"""Gets the workspace_id of this ApigWorkspaceUserbody.
 
         工作空间id
 
@@ -328,7 +328,7 @@ class ApigWorkspaceUserbody:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ApigWorkspaceUserbody.
+        r"""Sets the workspace_id of this ApigWorkspaceUserbody.
 
         工作空间id
 
@@ -339,7 +339,7 @@ class ApigWorkspaceUserbody:
 
     @property
     def roles(self):
-        """Gets the roles of this ApigWorkspaceUserbody.
+        r"""Gets the roles of this ApigWorkspaceUserbody.
 
         角色列表
 
@@ -350,7 +350,7 @@ class ApigWorkspaceUserbody:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this ApigWorkspaceUserbody.
+        r"""Sets the roles of this ApigWorkspaceUserbody.
 
         角色列表
 
@@ -361,7 +361,7 @@ class ApigWorkspaceUserbody:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ApigWorkspaceUserbody.
+        r"""Gets the create_time of this ApigWorkspaceUserbody.
 
         创建时间
 
@@ -372,7 +372,7 @@ class ApigWorkspaceUserbody:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ApigWorkspaceUserbody.
+        r"""Sets the create_time of this ApigWorkspaceUserbody.
 
         创建时间
 
@@ -383,7 +383,7 @@ class ApigWorkspaceUserbody:
 
     @property
     def create_user(self):
-        """Gets the create_user of this ApigWorkspaceUserbody.
+        r"""Gets the create_user of this ApigWorkspaceUserbody.
 
         创建人员
 
@@ -394,7 +394,7 @@ class ApigWorkspaceUserbody:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ApigWorkspaceUserbody.
+        r"""Sets the create_user of this ApigWorkspaceUserbody.
 
         创建人员
 
@@ -405,7 +405,7 @@ class ApigWorkspaceUserbody:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ApigWorkspaceUserbody.
+        r"""Gets the update_time of this ApigWorkspaceUserbody.
 
         更新时间
 
@@ -416,7 +416,7 @@ class ApigWorkspaceUserbody:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ApigWorkspaceUserbody.
+        r"""Sets the update_time of this ApigWorkspaceUserbody.
 
         更新时间
 
@@ -427,7 +427,7 @@ class ApigWorkspaceUserbody:
 
     @property
     def update_user(self):
-        """Gets the update_user of this ApigWorkspaceUserbody.
+        r"""Gets the update_user of this ApigWorkspaceUserbody.
 
         更新人员
 
@@ -438,7 +438,7 @@ class ApigWorkspaceUserbody:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this ApigWorkspaceUserbody.
+        r"""Sets the update_user of this ApigWorkspaceUserbody.
 
         更新人员
 
@@ -449,7 +449,7 @@ class ApigWorkspaceUserbody:
 
     @property
     def type(self):
-        """Gets the type of this ApigWorkspaceUserbody.
+        r"""Gets the type of this ApigWorkspaceUserbody.
 
         用户类型，0用户，1用户组
 
@@ -460,7 +460,7 @@ class ApigWorkspaceUserbody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ApigWorkspaceUserbody.
+        r"""Sets the type of this ApigWorkspaceUserbody.
 
         用户类型，0用户，1用户组
 

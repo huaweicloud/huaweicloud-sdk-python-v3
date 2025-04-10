@@ -27,7 +27,7 @@ class ShowInstanceResultRequest:
     }
 
     def __init__(self, instance_id=None, workspace=None):
-        """ShowInstanceResultRequest
+        r"""ShowInstanceResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowInstanceResultRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceResultRequest.
+        r"""Gets the instance_id of this ShowInstanceResultRequest.
 
         projectId
 
@@ -59,7 +59,7 @@ class ShowInstanceResultRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceResultRequest.
+        r"""Sets the instance_id of this ShowInstanceResultRequest.
 
         projectId
 
@@ -70,7 +70,7 @@ class ShowInstanceResultRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowInstanceResultRequest.
+        r"""Gets the workspace of this ShowInstanceResultRequest.
 
         DataArts Studio工作空间ID
 
@@ -81,7 +81,7 @@ class ShowInstanceResultRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowInstanceResultRequest.
+        r"""Sets the workspace of this ShowInstanceResultRequest.
 
         DataArts Studio工作空间ID
 

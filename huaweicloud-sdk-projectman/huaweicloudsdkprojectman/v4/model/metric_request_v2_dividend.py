@@ -25,7 +25,7 @@ class MetricRequestV2Dividend:
     }
 
     def __init__(self, custom_fields=None):
-        """MetricRequestV2Dividend
+        r"""MetricRequestV2Dividend
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MetricRequestV2Dividend:
 
     @property
     def custom_fields(self):
-        """Gets the custom_fields of this MetricRequestV2Dividend.
+        r"""Gets the custom_fields of this MetricRequestV2Dividend.
 
         自定义类型过滤条件
 
@@ -54,7 +54,7 @@ class MetricRequestV2Dividend:
 
     @custom_fields.setter
     def custom_fields(self, custom_fields):
-        """Sets the custom_fields of this MetricRequestV2Dividend.
+        r"""Sets the custom_fields of this MetricRequestV2Dividend.
 
         自定义类型过滤条件
 

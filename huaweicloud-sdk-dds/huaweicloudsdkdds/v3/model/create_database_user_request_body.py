@@ -31,7 +31,7 @@ class CreateDatabaseUserRequestBody:
     }
 
     def __init__(self, user_name=None, user_pwd=None, db_name=None, roles=None):
-        """CreateDatabaseUserRequestBody
+        r"""CreateDatabaseUserRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateDatabaseUserRequestBody:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CreateDatabaseUserRequestBody.
+        r"""Gets the user_name of this CreateDatabaseUserRequestBody.
 
         数据库用户名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
@@ -72,7 +72,7 @@ class CreateDatabaseUserRequestBody:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CreateDatabaseUserRequestBody.
+        r"""Sets the user_name of this CreateDatabaseUserRequestBody.
 
         数据库用户名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
@@ -83,7 +83,7 @@ class CreateDatabaseUserRequestBody:
 
     @property
     def user_pwd(self):
-        """Gets the user_pwd of this CreateDatabaseUserRequestBody.
+        r"""Gets the user_pwd of this CreateDatabaseUserRequestBody.
 
         数据库用户密码。 - 长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 - 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -94,7 +94,7 @@ class CreateDatabaseUserRequestBody:
 
     @user_pwd.setter
     def user_pwd(self, user_pwd):
-        """Sets the user_pwd of this CreateDatabaseUserRequestBody.
+        r"""Sets the user_pwd of this CreateDatabaseUserRequestBody.
 
         数据库用户密码。 - 长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 - 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -105,7 +105,7 @@ class CreateDatabaseUserRequestBody:
 
     @property
     def db_name(self):
-        """Gets the db_name of this CreateDatabaseUserRequestBody.
+        r"""Gets the db_name of this CreateDatabaseUserRequestBody.
 
         新用户所在的数据库，默认为“admin”。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
@@ -116,7 +116,7 @@ class CreateDatabaseUserRequestBody:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this CreateDatabaseUserRequestBody.
+        r"""Sets the db_name of this CreateDatabaseUserRequestBody.
 
         新用户所在的数据库，默认为“admin”。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
@@ -127,7 +127,7 @@ class CreateDatabaseUserRequestBody:
 
     @property
     def roles(self):
-        """Gets the roles of this CreateDatabaseUserRequestBody.
+        r"""Gets the roles of this CreateDatabaseUserRequestBody.
 
         新用户所拥有的角色。 roles限制了该帐户所具有的权限。若指定一个空数组，表示该帐户不具有任何权限。
 
@@ -138,7 +138,7 @@ class CreateDatabaseUserRequestBody:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this CreateDatabaseUserRequestBody.
+        r"""Sets the roles of this CreateDatabaseUserRequestBody.
 
         新用户所拥有的角色。 roles限制了该帐户所具有的权限。若指定一个空数组，表示该帐户不具有任何权限。
 

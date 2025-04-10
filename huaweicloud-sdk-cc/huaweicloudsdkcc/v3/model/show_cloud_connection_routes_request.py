@@ -25,7 +25,7 @@ class ShowCloudConnectionRoutesRequest:
     }
 
     def __init__(self, id=None):
-        """ShowCloudConnectionRoutesRequest
+        r"""ShowCloudConnectionRoutesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCloudConnectionRoutesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowCloudConnectionRoutesRequest.
+        r"""Gets the id of this ShowCloudConnectionRoutesRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowCloudConnectionRoutesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowCloudConnectionRoutesRequest.
+        r"""Sets the id of this ShowCloudConnectionRoutesRequest.
 
         实例ID。
 

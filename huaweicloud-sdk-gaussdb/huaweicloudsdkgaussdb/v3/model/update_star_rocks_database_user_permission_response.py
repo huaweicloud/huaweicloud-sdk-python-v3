@@ -26,7 +26,7 @@ class UpdateStarRocksDatabaseUserPermissionResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateStarRocksDatabaseUserPermissionResponse
+        r"""UpdateStarRocksDatabaseUserPermissionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateStarRocksDatabaseUserPermissionResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateStarRocksDatabaseUserPermissionResponse.
+        r"""Gets the result of this UpdateStarRocksDatabaseUserPermissionResponse.
 
         请求结果。
 
@@ -55,7 +55,7 @@ class UpdateStarRocksDatabaseUserPermissionResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateStarRocksDatabaseUserPermissionResponse.
+        r"""Sets the result of this UpdateStarRocksDatabaseUserPermissionResponse.
 
         请求结果。
 

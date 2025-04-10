@@ -26,7 +26,7 @@ class ShowJobStatusResponse(SdkResponse):
     }
 
     def __init__(self, submissions=None):
-        """ShowJobStatusResponse
+        r"""ShowJobStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @property
     def submissions(self):
-        """Gets the submissions of this ShowJobStatusResponse.
+        r"""Gets the submissions of this ShowJobStatusResponse.
 
         作业运行信息，详见submissions参数说明。
 
@@ -55,7 +55,7 @@ class ShowJobStatusResponse(SdkResponse):
 
     @submissions.setter
     def submissions(self, submissions):
-        """Sets the submissions of this ShowJobStatusResponse.
+        r"""Sets the submissions of this ShowJobStatusResponse.
 
         作业运行信息，详见submissions参数说明。
 

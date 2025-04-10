@@ -31,7 +31,7 @@ class CreateClusterPublicIpReq:
     }
 
     def __init__(self, eip=None, elb_white_list_req=None, public_bind_type=None, eip_id=None):
-        """CreateClusterPublicIpReq
+        r"""CreateClusterPublicIpReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateClusterPublicIpReq:
 
     @property
     def eip(self):
-        """Gets the eip of this CreateClusterPublicIpReq.
+        r"""Gets the eip of this CreateClusterPublicIpReq.
 
         :return: The eip of this CreateClusterPublicIpReq.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterPublicEip`
@@ -70,7 +70,7 @@ class CreateClusterPublicIpReq:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this CreateClusterPublicIpReq.
+        r"""Sets the eip of this CreateClusterPublicIpReq.
 
         :param eip: The eip of this CreateClusterPublicIpReq.
         :type eip: :class:`huaweicloudsdkcss.v2.CreateClusterPublicEip`
@@ -79,7 +79,7 @@ class CreateClusterPublicIpReq:
 
     @property
     def elb_white_list_req(self):
-        """Gets the elb_white_list_req of this CreateClusterPublicIpReq.
+        r"""Gets the elb_white_list_req of this CreateClusterPublicIpReq.
 
         :return: The elb_white_list_req of this CreateClusterPublicIpReq.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterElbWhiteList`
@@ -88,7 +88,7 @@ class CreateClusterPublicIpReq:
 
     @elb_white_list_req.setter
     def elb_white_list_req(self, elb_white_list_req):
-        """Sets the elb_white_list_req of this CreateClusterPublicIpReq.
+        r"""Sets the elb_white_list_req of this CreateClusterPublicIpReq.
 
         :param elb_white_list_req: The elb_white_list_req of this CreateClusterPublicIpReq.
         :type elb_white_list_req: :class:`huaweicloudsdkcss.v2.CreateClusterElbWhiteList`
@@ -97,7 +97,7 @@ class CreateClusterPublicIpReq:
 
     @property
     def public_bind_type(self):
-        """Gets the public_bind_type of this CreateClusterPublicIpReq.
+        r"""Gets the public_bind_type of this CreateClusterPublicIpReq.
 
         是否自动绑定弹性公网IP。当前仅支持auto_assign为自动分配参数。
 
@@ -108,7 +108,7 @@ class CreateClusterPublicIpReq:
 
     @public_bind_type.setter
     def public_bind_type(self, public_bind_type):
-        """Sets the public_bind_type of this CreateClusterPublicIpReq.
+        r"""Sets the public_bind_type of this CreateClusterPublicIpReq.
 
         是否自动绑定弹性公网IP。当前仅支持auto_assign为自动分配参数。
 
@@ -119,7 +119,7 @@ class CreateClusterPublicIpReq:
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this CreateClusterPublicIpReq.
+        r"""Gets the eip_id of this CreateClusterPublicIpReq.
 
         弹性公网IP的ID。
 
@@ -130,7 +130,7 @@ class CreateClusterPublicIpReq:
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this CreateClusterPublicIpReq.
+        r"""Sets the eip_id of this CreateClusterPublicIpReq.
 
         弹性公网IP的ID。
 

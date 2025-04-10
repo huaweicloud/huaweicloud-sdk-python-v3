@@ -25,7 +25,7 @@ class HttpInfoRequest:
     }
 
     def __init__(self, https=None):
-        """HttpInfoRequest
+        r"""HttpInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class HttpInfoRequest:
 
     @property
     def https(self):
-        """Gets the https of this HttpInfoRequest.
+        r"""Gets the https of this HttpInfoRequest.
 
         :return: The https of this HttpInfoRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.HttpInfoRequestBody`
@@ -51,7 +51,7 @@ class HttpInfoRequest:
 
     @https.setter
     def https(self, https):
-        """Sets the https of this HttpInfoRequest.
+        r"""Sets the https of this HttpInfoRequest.
 
         :param https: The https of this HttpInfoRequest.
         :type https: :class:`huaweicloudsdkcdn.v1.HttpInfoRequestBody`

@@ -29,7 +29,7 @@ class ShowStructTemplateclusterInfo:
     }
 
     def __init__(self, cluster_name=None, kafka_bootstrap_servers=None, kafka_ssl_enable=None):
-        """ShowStructTemplateclusterInfo
+        r"""ShowStructTemplateclusterInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowStructTemplateclusterInfo:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ShowStructTemplateclusterInfo.
+        r"""Gets the cluster_name of this ShowStructTemplateclusterInfo.
 
         测试
 
@@ -68,7 +68,7 @@ class ShowStructTemplateclusterInfo:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ShowStructTemplateclusterInfo.
+        r"""Sets the cluster_name of this ShowStructTemplateclusterInfo.
 
         测试
 
@@ -79,7 +79,7 @@ class ShowStructTemplateclusterInfo:
 
     @property
     def kafka_bootstrap_servers(self):
-        """Gets the kafka_bootstrap_servers of this ShowStructTemplateclusterInfo.
+        r"""Gets the kafka_bootstrap_servers of this ShowStructTemplateclusterInfo.
 
         测试
 
@@ -90,7 +90,7 @@ class ShowStructTemplateclusterInfo:
 
     @kafka_bootstrap_servers.setter
     def kafka_bootstrap_servers(self, kafka_bootstrap_servers):
-        """Sets the kafka_bootstrap_servers of this ShowStructTemplateclusterInfo.
+        r"""Sets the kafka_bootstrap_servers of this ShowStructTemplateclusterInfo.
 
         测试
 
@@ -101,7 +101,7 @@ class ShowStructTemplateclusterInfo:
 
     @property
     def kafka_ssl_enable(self):
-        """Gets the kafka_ssl_enable of this ShowStructTemplateclusterInfo.
+        r"""Gets the kafka_ssl_enable of this ShowStructTemplateclusterInfo.
 
         测试
 
@@ -112,7 +112,7 @@ class ShowStructTemplateclusterInfo:
 
     @kafka_ssl_enable.setter
     def kafka_ssl_enable(self, kafka_ssl_enable):
-        """Sets the kafka_ssl_enable of this ShowStructTemplateclusterInfo.
+        r"""Sets the kafka_ssl_enable of this ShowStructTemplateclusterInfo.
 
         测试
 

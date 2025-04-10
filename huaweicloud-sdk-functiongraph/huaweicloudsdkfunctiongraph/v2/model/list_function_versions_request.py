@@ -29,7 +29,7 @@ class ListFunctionVersionsRequest:
     }
 
     def __init__(self, function_urn=None, marker=None, maxitems=None):
-        """ListFunctionVersionsRequest
+        r"""ListFunctionVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListFunctionVersionsRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ListFunctionVersionsRequest.
+        r"""Gets the function_urn of this ListFunctionVersionsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -67,7 +67,7 @@ class ListFunctionVersionsRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ListFunctionVersionsRequest.
+        r"""Sets the function_urn of this ListFunctionVersionsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -78,7 +78,7 @@ class ListFunctionVersionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListFunctionVersionsRequest.
+        r"""Gets the marker of this ListFunctionVersionsRequest.
 
         上一次查询到的最后的记录位置。
 
@@ -89,7 +89,7 @@ class ListFunctionVersionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListFunctionVersionsRequest.
+        r"""Sets the marker of this ListFunctionVersionsRequest.
 
         上一次查询到的最后的记录位置。
 
@@ -100,7 +100,7 @@ class ListFunctionVersionsRequest:
 
     @property
     def maxitems(self):
-        """Gets the maxitems of this ListFunctionVersionsRequest.
+        r"""Gets the maxitems of this ListFunctionVersionsRequest.
 
         每次查询获取的最大函数记录数量。
 
@@ -111,7 +111,7 @@ class ListFunctionVersionsRequest:
 
     @maxitems.setter
     def maxitems(self, maxitems):
-        """Sets the maxitems of this ListFunctionVersionsRequest.
+        r"""Sets the maxitems of this ListFunctionVersionsRequest.
 
         每次查询获取的最大函数记录数量。
 

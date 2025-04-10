@@ -29,7 +29,7 @@ class AvailableConfig:
     }
 
     def __init__(self, custom_aw_available=None, public_aw_available=None, refresh_aw_available=None):
-        """AvailableConfig
+        r"""AvailableConfig
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AvailableConfig:
 
     @property
     def custom_aw_available(self):
-        """Gets the custom_aw_available of this AvailableConfig.
+        r"""Gets the custom_aw_available of this AvailableConfig.
 
         自定义关键字是否开通
 
@@ -68,7 +68,7 @@ class AvailableConfig:
 
     @custom_aw_available.setter
     def custom_aw_available(self, custom_aw_available):
-        """Sets the custom_aw_available of this AvailableConfig.
+        r"""Sets the custom_aw_available of this AvailableConfig.
 
         自定义关键字是否开通
 
@@ -79,7 +79,7 @@ class AvailableConfig:
 
     @property
     def public_aw_available(self):
-        """Gets the public_aw_available of this AvailableConfig.
+        r"""Gets the public_aw_available of this AvailableConfig.
 
         系统关键字是否开通
 
@@ -90,7 +90,7 @@ class AvailableConfig:
 
     @public_aw_available.setter
     def public_aw_available(self, public_aw_available):
-        """Sets the public_aw_available of this AvailableConfig.
+        r"""Sets the public_aw_available of this AvailableConfig.
 
         系统关键字是否开通
 
@@ -101,7 +101,7 @@ class AvailableConfig:
 
     @property
     def refresh_aw_available(self):
-        """Gets the refresh_aw_available of this AvailableConfig.
+        r"""Gets the refresh_aw_available of this AvailableConfig.
 
         一键刷新功能是否开通
 
@@ -112,7 +112,7 @@ class AvailableConfig:
 
     @refresh_aw_available.setter
     def refresh_aw_available(self, refresh_aw_available):
-        """Sets the refresh_aw_available of this AvailableConfig.
+        r"""Sets the refresh_aw_available of this AvailableConfig.
 
         一键刷新功能是否开通
 

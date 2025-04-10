@@ -27,7 +27,7 @@ class TrafficSummaryData:
     }
 
     def __init__(self, value=None, domain=None):
-        """TrafficSummaryData
+        r"""TrafficSummaryData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TrafficSummaryData:
 
     @property
     def value(self):
-        """Gets the value of this TrafficSummaryData.
+        r"""Gets the value of this TrafficSummaryData.
 
         流量，单位为byte。
 
@@ -61,7 +61,7 @@ class TrafficSummaryData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TrafficSummaryData.
+        r"""Sets the value of this TrafficSummaryData.
 
         流量，单位为byte。
 
@@ -72,7 +72,7 @@ class TrafficSummaryData:
 
     @property
     def domain(self):
-        """Gets the domain of this TrafficSummaryData.
+        r"""Gets the domain of this TrafficSummaryData.
 
         域名。
 
@@ -83,7 +83,7 @@ class TrafficSummaryData:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this TrafficSummaryData.
+        r"""Sets the domain of this TrafficSummaryData.
 
         域名。
 

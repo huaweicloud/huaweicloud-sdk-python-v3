@@ -25,7 +25,7 @@ class PutEventsReq:
     }
 
     def __init__(self, events=None):
-        """PutEventsReq
+        r"""PutEventsReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PutEventsReq:
 
     @property
     def events(self):
-        """Gets the events of this PutEventsReq.
+        r"""Gets the events of this PutEventsReq.
 
         :return: The events of this PutEventsReq.
         :rtype: list[:class:`huaweicloudsdkeg.v1.CloudEvents`]
@@ -52,7 +52,7 @@ class PutEventsReq:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this PutEventsReq.
+        r"""Sets the events of this PutEventsReq.
 
         :param events: The events of this PutEventsReq.
         :type events: list[:class:`huaweicloudsdkeg.v1.CloudEvents`]

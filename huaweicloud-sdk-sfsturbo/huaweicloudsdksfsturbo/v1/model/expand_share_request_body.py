@@ -25,7 +25,7 @@ class ExpandShareRequestBody:
     }
 
     def __init__(self, extend=None):
-        """ExpandShareRequestBody
+        r"""ExpandShareRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExpandShareRequestBody:
 
     @property
     def extend(self):
-        """Gets the extend of this ExpandShareRequestBody.
+        r"""Gets the extend of this ExpandShareRequestBody.
 
         :return: The extend of this ExpandShareRequestBody.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.Extend`
@@ -51,7 +51,7 @@ class ExpandShareRequestBody:
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this ExpandShareRequestBody.
+        r"""Sets the extend of this ExpandShareRequestBody.
 
         :param extend: The extend of this ExpandShareRequestBody.
         :type extend: :class:`huaweicloudsdksfsturbo.v1.Extend`

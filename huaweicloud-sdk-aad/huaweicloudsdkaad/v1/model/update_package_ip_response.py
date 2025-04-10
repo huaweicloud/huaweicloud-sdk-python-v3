@@ -24,7 +24,7 @@ class UpdatePackageIpResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdatePackageIpResponse
+        r"""UpdatePackageIpResponse
 
         The model defined in huaweicloud sdk
 

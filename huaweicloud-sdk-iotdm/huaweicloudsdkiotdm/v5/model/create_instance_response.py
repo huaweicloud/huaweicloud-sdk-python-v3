@@ -46,7 +46,7 @@ class CreateInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance_type=None, instance_id=None, name=None, flavor=None, status=None, charge_info=None, description=None, enterprise_project_id=None, tags=None, order_id=None, additional_params=None):
-        """CreateInstanceResponse
+        r"""CreateInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this CreateInstanceResponse.
+        r"""Gets the instance_type of this CreateInstanceResponse.
 
         **参数说明**：实例类型。 **取值范围**： - standard：标准版实例 - enterprise：企业版实例 
 
@@ -125,7 +125,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this CreateInstanceResponse.
+        r"""Sets the instance_type of this CreateInstanceResponse.
 
         **参数说明**：实例类型。 **取值范围**： - standard：标准版实例 - enterprise：企业版实例 
 
@@ -136,7 +136,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateInstanceResponse.
+        r"""Gets the instance_id of this CreateInstanceResponse.
 
         **参数说明**：实例ID。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 
@@ -147,7 +147,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateInstanceResponse.
+        r"""Sets the instance_id of this CreateInstanceResponse.
 
         **参数说明**：实例ID。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 
@@ -158,7 +158,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateInstanceResponse.
+        r"""Gets the name of this CreateInstanceResponse.
 
         **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
@@ -169,7 +169,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateInstanceResponse.
+        r"""Sets the name of this CreateInstanceResponse.
 
         **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
@@ -180,7 +180,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def flavor(self):
-        """Gets the flavor of this CreateInstanceResponse.
+        r"""Gets the flavor of this CreateInstanceResponse.
 
         :return: The flavor of this CreateInstanceResponse.
         :rtype: :class:`huaweicloudsdkiotdm.v5.Flavor`
@@ -189,7 +189,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this CreateInstanceResponse.
+        r"""Sets the flavor of this CreateInstanceResponse.
 
         :param flavor: The flavor of this CreateInstanceResponse.
         :type flavor: :class:`huaweicloudsdkiotdm.v5.Flavor`
@@ -198,7 +198,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateInstanceResponse.
+        r"""Gets the status of this CreateInstanceResponse.
 
         **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - MODIFYING：实例正在变更规格 - FAILED：实例创建失败 
 
@@ -209,7 +209,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateInstanceResponse.
+        r"""Sets the status of this CreateInstanceResponse.
 
         **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - MODIFYING：实例正在变更规格 - FAILED：实例创建失败 
 
@@ -220,7 +220,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this CreateInstanceResponse.
+        r"""Gets the charge_info of this CreateInstanceResponse.
 
         :return: The charge_info of this CreateInstanceResponse.
         :rtype: :class:`huaweicloudsdkiotdm.v5.ChargeInfo`
@@ -229,7 +229,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this CreateInstanceResponse.
+        r"""Sets the charge_info of this CreateInstanceResponse.
 
         :param charge_info: The charge_info of this CreateInstanceResponse.
         :type charge_info: :class:`huaweicloudsdkiotdm.v5.ChargeInfo`
@@ -238,7 +238,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateInstanceResponse.
+        r"""Gets the description of this CreateInstanceResponse.
 
         **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[0-256]个字符。 
 
@@ -249,7 +249,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateInstanceResponse.
+        r"""Sets the description of this CreateInstanceResponse.
 
         **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[0-256]个字符。 
 
@@ -260,7 +260,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateInstanceResponse.
+        r"""Gets the enterprise_project_id of this CreateInstanceResponse.
 
         **参数说明**：企业项目Id。
 
@@ -271,7 +271,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateInstanceResponse.
+        r"""Sets the enterprise_project_id of this CreateInstanceResponse.
 
         **参数说明**：企业项目Id。
 
@@ -282,7 +282,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this CreateInstanceResponse.
+        r"""Gets the tags of this CreateInstanceResponse.
 
         **参数说明**: 设备接入实例的标签信息。如果实例有标签，则会有该字段，否则该字段为空。 
 
@@ -293,7 +293,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateInstanceResponse.
+        r"""Sets the tags of this CreateInstanceResponse.
 
         **参数说明**: 设备接入实例的标签信息。如果实例有标签，则会有该字段，否则该字段为空。 
 
@@ -304,7 +304,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateInstanceResponse.
+        r"""Gets the order_id of this CreateInstanceResponse.
 
         **参数说明**：订单号，创建包年包月实例时返回该参数。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws)\" 
 
@@ -315,7 +315,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateInstanceResponse.
+        r"""Sets the order_id of this CreateInstanceResponse.
 
         **参数说明**：订单号，创建包年包月实例时返回该参数。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws)\" 
 
@@ -326,7 +326,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def additional_params(self):
-        """Gets the additional_params of this CreateInstanceResponse.
+        r"""Gets the additional_params of this CreateInstanceResponse.
 
         :return: The additional_params of this CreateInstanceResponse.
         :rtype: :class:`huaweicloudsdkiotdm.v5.AdditionalParams`
@@ -335,7 +335,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @additional_params.setter
     def additional_params(self, additional_params):
-        """Sets the additional_params of this CreateInstanceResponse.
+        r"""Sets the additional_params of this CreateInstanceResponse.
 
         :param additional_params: The additional_params of this CreateInstanceResponse.
         :type additional_params: :class:`huaweicloudsdkiotdm.v5.AdditionalParams`

@@ -26,7 +26,7 @@ class DeleteDbCacheMappingResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteDbCacheMappingResponse
+        r"""DeleteDbCacheMappingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDbCacheMappingResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteDbCacheMappingResponse.
+        r"""Gets the job_id of this DeleteDbCacheMappingResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class DeleteDbCacheMappingResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteDbCacheMappingResponse.
+        r"""Sets the job_id of this DeleteDbCacheMappingResponse.
 
         任务ID。
 

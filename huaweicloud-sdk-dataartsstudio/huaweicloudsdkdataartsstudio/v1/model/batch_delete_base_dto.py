@@ -27,7 +27,7 @@ class BatchDeleteBaseDTO:
     }
 
     def __init__(self, dw_id=None, ids=None):
-        """BatchDeleteBaseDTO
+        r"""BatchDeleteBaseDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchDeleteBaseDTO:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this BatchDeleteBaseDTO.
+        r"""Gets the dw_id of this BatchDeleteBaseDTO.
 
         数据连接id
 
@@ -61,7 +61,7 @@ class BatchDeleteBaseDTO:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this BatchDeleteBaseDTO.
+        r"""Sets the dw_id of this BatchDeleteBaseDTO.
 
         数据连接id
 
@@ -72,7 +72,7 @@ class BatchDeleteBaseDTO:
 
     @property
     def ids(self):
-        """Gets the ids of this BatchDeleteBaseDTO.
+        r"""Gets the ids of this BatchDeleteBaseDTO.
 
         id列表
 
@@ -83,7 +83,7 @@ class BatchDeleteBaseDTO:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this BatchDeleteBaseDTO.
+        r"""Sets the ids of this BatchDeleteBaseDTO.
 
         id列表
 

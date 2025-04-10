@@ -27,7 +27,7 @@ class ApplicationModify:
     }
 
     def __init__(self, name=None, description=None):
-        """ApplicationModify
+        r"""ApplicationModify
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApplicationModify:
 
     @property
     def name(self):
-        """Gets the name of this ApplicationModify.
+        r"""Gets the name of this ApplicationModify.
 
         应用名称。
 
@@ -61,7 +61,7 @@ class ApplicationModify:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicationModify.
+        r"""Sets the name of this ApplicationModify.
 
         应用名称。
 
@@ -72,7 +72,7 @@ class ApplicationModify:
 
     @property
     def description(self):
-        """Gets the description of this ApplicationModify.
+        r"""Gets the description of this ApplicationModify.
 
         应用描述。
 
@@ -83,7 +83,7 @@ class ApplicationModify:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApplicationModify.
+        r"""Sets the description of this ApplicationModify.
 
         应用描述。
 

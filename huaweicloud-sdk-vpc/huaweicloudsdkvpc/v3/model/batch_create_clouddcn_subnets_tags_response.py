@@ -24,7 +24,7 @@ class BatchCreateClouddcnSubnetsTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateClouddcnSubnetsTagsResponse
+        r"""BatchCreateClouddcnSubnetsTagsResponse
 
         The model defined in huaweicloud sdk
 

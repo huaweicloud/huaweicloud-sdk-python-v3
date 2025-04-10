@@ -24,7 +24,7 @@ class ExportUserLoginInfoNewResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ExportUserLoginInfoNewResponse
+        r"""ExportUserLoginInfoNewResponse
 
         The model defined in huaweicloud sdk
 

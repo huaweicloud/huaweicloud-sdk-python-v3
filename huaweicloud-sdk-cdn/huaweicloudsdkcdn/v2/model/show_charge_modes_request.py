@@ -29,7 +29,7 @@ class ShowChargeModesRequest:
     }
 
     def __init__(self, product_type=None, status=None, service_area=None):
-        """ShowChargeModesRequest
+        r"""ShowChargeModesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowChargeModesRequest:
 
     @property
     def product_type(self):
-        """Gets the product_type of this ShowChargeModesRequest.
+        r"""Gets the product_type of this ShowChargeModesRequest.
 
         加速类型，base（基础加速）
 
@@ -67,7 +67,7 @@ class ShowChargeModesRequest:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this ShowChargeModesRequest.
+        r"""Sets the product_type of this ShowChargeModesRequest.
 
         加速类型，base（基础加速）
 
@@ -78,7 +78,7 @@ class ShowChargeModesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowChargeModesRequest.
+        r"""Gets the status of this ShowChargeModesRequest.
 
         查询计费模式状态，active（已生效），upcoming（待生效），不传默认为active(已生效)
 
@@ -89,7 +89,7 @@ class ShowChargeModesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowChargeModesRequest.
+        r"""Sets the status of this ShowChargeModesRequest.
 
         查询计费模式状态，active（已生效），upcoming（待生效），不传默认为active(已生效)
 
@@ -100,7 +100,7 @@ class ShowChargeModesRequest:
 
     @property
     def service_area(self):
-        """Gets the service_area of this ShowChargeModesRequest.
+        r"""Gets the service_area of this ShowChargeModesRequest.
 
         服务区域，mainland_china（国内），outside_mainland_china（海外），不传默认为mainland_china(国内)
 
@@ -111,7 +111,7 @@ class ShowChargeModesRequest:
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this ShowChargeModesRequest.
+        r"""Sets the service_area of this ShowChargeModesRequest.
 
         服务区域，mainland_china（国内），outside_mainland_china（海外），不传默认为mainland_china(国内)
 

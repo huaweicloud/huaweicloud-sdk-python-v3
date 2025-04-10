@@ -28,7 +28,7 @@ class ShowPassphraseResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, passphrase=None):
-        """ShowPassphraseResponse
+        r"""ShowPassphraseResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPassphraseResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowPassphraseResponse.
+        r"""Gets the task_id of this ShowPassphraseResponse.
 
         任务ID
 
@@ -62,7 +62,7 @@ class ShowPassphraseResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowPassphraseResponse.
+        r"""Sets the task_id of this ShowPassphraseResponse.
 
         任务ID
 
@@ -73,7 +73,7 @@ class ShowPassphraseResponse(SdkResponse):
 
     @property
     def passphrase(self):
-        """Gets the passphrase of this ShowPassphraseResponse.
+        r"""Gets the passphrase of this ShowPassphraseResponse.
 
         安全传输通道证书passphrase
 
@@ -84,7 +84,7 @@ class ShowPassphraseResponse(SdkResponse):
 
     @passphrase.setter
     def passphrase(self, passphrase):
-        """Sets the passphrase of this ShowPassphraseResponse.
+        r"""Sets the passphrase of this ShowPassphraseResponse.
 
         安全传输通道证书passphrase
 

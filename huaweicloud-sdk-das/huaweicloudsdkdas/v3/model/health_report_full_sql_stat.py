@@ -35,7 +35,7 @@ class HealthReportFullSqlStat:
     }
 
     def __init__(self, collect_full_sql=None, execute_top_templates=None, sum_rows_examined_top_templates=None, avg_cost_top_templates=None, analyze_success=None, error_message=None):
-        """HealthReportFullSqlStat
+        r"""HealthReportFullSqlStat
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class HealthReportFullSqlStat:
 
     @property
     def collect_full_sql(self):
-        """Gets the collect_full_sql of this HealthReportFullSqlStat.
+        r"""Gets the collect_full_sql of this HealthReportFullSqlStat.
 
         是否收集全量SQL。
 
@@ -83,7 +83,7 @@ class HealthReportFullSqlStat:
 
     @collect_full_sql.setter
     def collect_full_sql(self, collect_full_sql):
-        """Sets the collect_full_sql of this HealthReportFullSqlStat.
+        r"""Sets the collect_full_sql of this HealthReportFullSqlStat.
 
         是否收集全量SQL。
 
@@ -94,7 +94,7 @@ class HealthReportFullSqlStat:
 
     @property
     def execute_top_templates(self):
-        """Gets the execute_top_templates of this HealthReportFullSqlStat.
+        r"""Gets the execute_top_templates of this HealthReportFullSqlStat.
 
         全量SQL Top总执行次数列表。
 
@@ -105,7 +105,7 @@ class HealthReportFullSqlStat:
 
     @execute_top_templates.setter
     def execute_top_templates(self, execute_top_templates):
-        """Sets the execute_top_templates of this HealthReportFullSqlStat.
+        r"""Sets the execute_top_templates of this HealthReportFullSqlStat.
 
         全量SQL Top总执行次数列表。
 
@@ -116,7 +116,7 @@ class HealthReportFullSqlStat:
 
     @property
     def sum_rows_examined_top_templates(self):
-        """Gets the sum_rows_examined_top_templates of this HealthReportFullSqlStat.
+        r"""Gets the sum_rows_examined_top_templates of this HealthReportFullSqlStat.
 
         全量SQL Top总扫描行数列表。
 
@@ -127,7 +127,7 @@ class HealthReportFullSqlStat:
 
     @sum_rows_examined_top_templates.setter
     def sum_rows_examined_top_templates(self, sum_rows_examined_top_templates):
-        """Sets the sum_rows_examined_top_templates of this HealthReportFullSqlStat.
+        r"""Sets the sum_rows_examined_top_templates of this HealthReportFullSqlStat.
 
         全量SQL Top总扫描行数列表。
 
@@ -138,7 +138,7 @@ class HealthReportFullSqlStat:
 
     @property
     def avg_cost_top_templates(self):
-        """Gets the avg_cost_top_templates of this HealthReportFullSqlStat.
+        r"""Gets the avg_cost_top_templates of this HealthReportFullSqlStat.
 
         全量SQL Top平均执行耗时列表。
 
@@ -149,7 +149,7 @@ class HealthReportFullSqlStat:
 
     @avg_cost_top_templates.setter
     def avg_cost_top_templates(self, avg_cost_top_templates):
-        """Sets the avg_cost_top_templates of this HealthReportFullSqlStat.
+        r"""Sets the avg_cost_top_templates of this HealthReportFullSqlStat.
 
         全量SQL Top平均执行耗时列表。
 
@@ -160,7 +160,7 @@ class HealthReportFullSqlStat:
 
     @property
     def analyze_success(self):
-        """Gets the analyze_success of this HealthReportFullSqlStat.
+        r"""Gets the analyze_success of this HealthReportFullSqlStat.
 
         统计分析是否成功。
 
@@ -171,7 +171,7 @@ class HealthReportFullSqlStat:
 
     @analyze_success.setter
     def analyze_success(self, analyze_success):
-        """Sets the analyze_success of this HealthReportFullSqlStat.
+        r"""Sets the analyze_success of this HealthReportFullSqlStat.
 
         统计分析是否成功。
 
@@ -182,7 +182,7 @@ class HealthReportFullSqlStat:
 
     @property
     def error_message(self):
-        """Gets the error_message of this HealthReportFullSqlStat.
+        r"""Gets the error_message of this HealthReportFullSqlStat.
 
         错误信息。
 
@@ -193,7 +193,7 @@ class HealthReportFullSqlStat:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this HealthReportFullSqlStat.
+        r"""Sets the error_message of this HealthReportFullSqlStat.
 
         错误信息。
 

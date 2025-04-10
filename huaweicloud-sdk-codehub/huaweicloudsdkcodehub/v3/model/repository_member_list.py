@@ -27,7 +27,7 @@ class RepositoryMemberList:
     }
 
     def __init__(self, total=None, users=None):
-        """RepositoryMemberList
+        r"""RepositoryMemberList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RepositoryMemberList:
 
     @property
     def total(self):
-        """Gets the total of this RepositoryMemberList.
+        r"""Gets the total of this RepositoryMemberList.
 
         仓库成员总数
 
@@ -61,7 +61,7 @@ class RepositoryMemberList:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this RepositoryMemberList.
+        r"""Sets the total of this RepositoryMemberList.
 
         仓库成员总数
 
@@ -72,7 +72,7 @@ class RepositoryMemberList:
 
     @property
     def users(self):
-        """Gets the users of this RepositoryMemberList.
+        r"""Gets the users of this RepositoryMemberList.
 
         仓库成员列表
 
@@ -83,7 +83,7 @@ class RepositoryMemberList:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this RepositoryMemberList.
+        r"""Sets the users of this RepositoryMemberList.
 
         仓库成员列表
 

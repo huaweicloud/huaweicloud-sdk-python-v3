@@ -27,7 +27,7 @@ class UpdateAgencyRequest:
     }
 
     def __init__(self, agency_id=None, body=None):
-        """UpdateAgencyRequest
+        r"""UpdateAgencyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAgencyRequest:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this UpdateAgencyRequest.
+        r"""Gets the agency_id of this UpdateAgencyRequest.
 
         待修改的委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -60,7 +60,7 @@ class UpdateAgencyRequest:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this UpdateAgencyRequest.
+        r"""Sets the agency_id of this UpdateAgencyRequest.
 
         待修改的委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -71,7 +71,7 @@ class UpdateAgencyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAgencyRequest.
+        r"""Gets the body of this UpdateAgencyRequest.
 
         :return: The body of this UpdateAgencyRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateAgencyRequestBody`
@@ -80,7 +80,7 @@ class UpdateAgencyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAgencyRequest.
+        r"""Sets the body of this UpdateAgencyRequest.
 
         :param body: The body of this UpdateAgencyRequest.
         :type body: :class:`huaweicloudsdkiam.v3.UpdateAgencyRequestBody`

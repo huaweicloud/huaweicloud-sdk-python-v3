@@ -28,7 +28,7 @@ class ShowFuncSnapshotStateResponse(SdkResponse):
     }
 
     def __init__(self, state=None, code=None):
-        """ShowFuncSnapshotStateResponse
+        r"""ShowFuncSnapshotStateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowFuncSnapshotStateResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowFuncSnapshotStateResponse.
+        r"""Gets the state of this ShowFuncSnapshotStateResponse.
 
         快照制作状态
 
@@ -62,7 +62,7 @@ class ShowFuncSnapshotStateResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowFuncSnapshotStateResponse.
+        r"""Sets the state of this ShowFuncSnapshotStateResponse.
 
         快照制作状态
 
@@ -73,7 +73,7 @@ class ShowFuncSnapshotStateResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowFuncSnapshotStateResponse.
+        r"""Gets the code of this ShowFuncSnapshotStateResponse.
 
         快照制作响应码
 
@@ -84,7 +84,7 @@ class ShowFuncSnapshotStateResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowFuncSnapshotStateResponse.
+        r"""Sets the code of this ShowFuncSnapshotStateResponse.
 
         快照制作响应码
 

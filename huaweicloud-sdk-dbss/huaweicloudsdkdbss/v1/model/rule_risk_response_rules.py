@@ -39,7 +39,7 @@ class RuleRiskResponseRules:
     }
 
     def __init__(self, id=None, name=None, type=None, feature=None, status=None, rank=None, risk_level=None, rule_type=None):
-        """RuleRiskResponseRules
+        r"""RuleRiskResponseRules
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class RuleRiskResponseRules:
 
     @property
     def id(self):
-        """Gets the id of this RuleRiskResponseRules.
+        r"""Gets the id of this RuleRiskResponseRules.
 
         风险规则ID
 
@@ -99,7 +99,7 @@ class RuleRiskResponseRules:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RuleRiskResponseRules.
+        r"""Sets the id of this RuleRiskResponseRules.
 
         风险规则ID
 
@@ -110,7 +110,7 @@ class RuleRiskResponseRules:
 
     @property
     def name(self):
-        """Gets the name of this RuleRiskResponseRules.
+        r"""Gets the name of this RuleRiskResponseRules.
 
         风险规则名称
 
@@ -121,7 +121,7 @@ class RuleRiskResponseRules:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RuleRiskResponseRules.
+        r"""Sets the name of this RuleRiskResponseRules.
 
         风险规则名称
 
@@ -132,7 +132,7 @@ class RuleRiskResponseRules:
 
     @property
     def type(self):
-        """Gets the type of this RuleRiskResponseRules.
+        r"""Gets the type of this RuleRiskResponseRules.
 
         风险规则类型
 
@@ -143,7 +143,7 @@ class RuleRiskResponseRules:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RuleRiskResponseRules.
+        r"""Sets the type of this RuleRiskResponseRules.
 
         风险规则类型
 
@@ -154,7 +154,7 @@ class RuleRiskResponseRules:
 
     @property
     def feature(self):
-        """Gets the feature of this RuleRiskResponseRules.
+        r"""Gets the feature of this RuleRiskResponseRules.
 
         风险规则特征
 
@@ -165,7 +165,7 @@ class RuleRiskResponseRules:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this RuleRiskResponseRules.
+        r"""Sets the feature of this RuleRiskResponseRules.
 
         风险规则特征
 
@@ -176,7 +176,7 @@ class RuleRiskResponseRules:
 
     @property
     def status(self):
-        """Gets the status of this RuleRiskResponseRules.
+        r"""Gets the status of this RuleRiskResponseRules.
 
         风险规则状态。 - ON: 开启 - OFF: 关闭
 
@@ -187,7 +187,7 @@ class RuleRiskResponseRules:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RuleRiskResponseRules.
+        r"""Sets the status of this RuleRiskResponseRules.
 
         风险规则状态。 - ON: 开启 - OFF: 关闭
 
@@ -198,7 +198,7 @@ class RuleRiskResponseRules:
 
     @property
     def rank(self):
-        """Gets the rank of this RuleRiskResponseRules.
+        r"""Gets the rank of this RuleRiskResponseRules.
 
         风险规则优先级。数字越小优先级越高。
 
@@ -209,7 +209,7 @@ class RuleRiskResponseRules:
 
     @rank.setter
     def rank(self, rank):
-        """Sets the rank of this RuleRiskResponseRules.
+        r"""Sets the rank of this RuleRiskResponseRules.
 
         风险规则优先级。数字越小优先级越高。
 
@@ -220,7 +220,7 @@ class RuleRiskResponseRules:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this RuleRiskResponseRules.
+        r"""Gets the risk_level of this RuleRiskResponseRules.
 
         风险级别 - LOW - MEDIUM - HIGH - NO_RISK]
 
@@ -231,7 +231,7 @@ class RuleRiskResponseRules:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this RuleRiskResponseRules.
+        r"""Sets the risk_level of this RuleRiskResponseRules.
 
         风险级别 - LOW - MEDIUM - HIGH - NO_RISK]
 
@@ -242,7 +242,7 @@ class RuleRiskResponseRules:
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this RuleRiskResponseRules.
+        r"""Gets the rule_type of this RuleRiskResponseRules.
 
         规则类型
 
@@ -253,7 +253,7 @@ class RuleRiskResponseRules:
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this RuleRiskResponseRules.
+        r"""Sets the rule_type of this RuleRiskResponseRules.
 
         规则类型
 

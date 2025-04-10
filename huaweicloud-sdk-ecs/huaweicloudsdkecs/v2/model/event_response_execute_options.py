@@ -35,7 +35,7 @@ class EventResponseExecuteOptions:
     }
 
     def __init__(self, device=None, wwn=None, serial_number=None, resize_target_flavor_id=None, migrate_policy=None, executor=None):
-        """EventResponseExecuteOptions
+        r"""EventResponseExecuteOptions
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class EventResponseExecuteOptions:
 
     @property
     def device(self):
-        """Gets the device of this EventResponseExecuteOptions.
+        r"""Gets the device of this EventResponseExecuteOptions.
 
         本地盘设备名
 
@@ -89,7 +89,7 @@ class EventResponseExecuteOptions:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this EventResponseExecuteOptions.
+        r"""Sets the device of this EventResponseExecuteOptions.
 
         本地盘设备名
 
@@ -100,7 +100,7 @@ class EventResponseExecuteOptions:
 
     @property
     def wwn(self):
-        """Gets the wwn of this EventResponseExecuteOptions.
+        r"""Gets the wwn of this EventResponseExecuteOptions.
 
         本地盘挂载唯一标识
 
@@ -111,7 +111,7 @@ class EventResponseExecuteOptions:
 
     @wwn.setter
     def wwn(self, wwn):
-        """Sets the wwn of this EventResponseExecuteOptions.
+        r"""Sets the wwn of this EventResponseExecuteOptions.
 
         本地盘挂载唯一标识
 
@@ -122,7 +122,7 @@ class EventResponseExecuteOptions:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this EventResponseExecuteOptions.
+        r"""Gets the serial_number of this EventResponseExecuteOptions.
 
         本地盘序列号
 
@@ -133,7 +133,7 @@ class EventResponseExecuteOptions:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this EventResponseExecuteOptions.
+        r"""Sets the serial_number of this EventResponseExecuteOptions.
 
         本地盘序列号
 
@@ -144,7 +144,7 @@ class EventResponseExecuteOptions:
 
     @property
     def resize_target_flavor_id(self):
-        """Gets the resize_target_flavor_id of this EventResponseExecuteOptions.
+        r"""Gets the resize_target_flavor_id of this EventResponseExecuteOptions.
 
         flavorID
 
@@ -155,7 +155,7 @@ class EventResponseExecuteOptions:
 
     @resize_target_flavor_id.setter
     def resize_target_flavor_id(self, resize_target_flavor_id):
-        """Sets the resize_target_flavor_id of this EventResponseExecuteOptions.
+        r"""Sets the resize_target_flavor_id of this EventResponseExecuteOptions.
 
         flavorID
 
@@ -166,7 +166,7 @@ class EventResponseExecuteOptions:
 
     @property
     def migrate_policy(self):
-        """Gets the migrate_policy of this EventResponseExecuteOptions.
+        r"""Gets the migrate_policy of this EventResponseExecuteOptions.
 
         实例迁移策略
 
@@ -177,7 +177,7 @@ class EventResponseExecuteOptions:
 
     @migrate_policy.setter
     def migrate_policy(self, migrate_policy):
-        """Sets the migrate_policy of this EventResponseExecuteOptions.
+        r"""Sets the migrate_policy of this EventResponseExecuteOptions.
 
         实例迁移策略
 
@@ -188,7 +188,7 @@ class EventResponseExecuteOptions:
 
     @property
     def executor(self):
-        """Gets the executor of this EventResponseExecuteOptions.
+        r"""Gets the executor of this EventResponseExecuteOptions.
 
         执行器
 
@@ -199,7 +199,7 @@ class EventResponseExecuteOptions:
 
     @executor.setter
     def executor(self, executor):
-        """Sets the executor of this EventResponseExecuteOptions.
+        r"""Sets the executor of this EventResponseExecuteOptions.
 
         执行器
 

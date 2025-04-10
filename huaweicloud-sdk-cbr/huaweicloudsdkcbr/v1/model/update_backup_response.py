@@ -26,7 +26,7 @@ class UpdateBackupResponse(SdkResponse):
     }
 
     def __init__(self, backup=None):
-        """UpdateBackupResponse
+        r"""UpdateBackupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateBackupResponse(SdkResponse):
 
     @property
     def backup(self):
-        """Gets the backup of this UpdateBackupResponse.
+        r"""Gets the backup of this UpdateBackupResponse.
 
         :return: The backup of this UpdateBackupResponse.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupResp`
@@ -53,7 +53,7 @@ class UpdateBackupResponse(SdkResponse):
 
     @backup.setter
     def backup(self, backup):
-        """Sets the backup of this UpdateBackupResponse.
+        r"""Sets the backup of this UpdateBackupResponse.
 
         :param backup: The backup of this UpdateBackupResponse.
         :type backup: :class:`huaweicloudsdkcbr.v1.BackupResp`

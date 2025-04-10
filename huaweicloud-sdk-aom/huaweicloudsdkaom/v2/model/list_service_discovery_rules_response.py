@@ -32,7 +32,7 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
     }
 
     def __init__(self, app_rules=None, error_code=None, error_message=None, id=None):
-        """ListServiceDiscoveryRulesResponse
+        r"""ListServiceDiscoveryRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
 
     @property
     def app_rules(self):
-        """Gets the app_rules of this ListServiceDiscoveryRulesResponse.
+        r"""Gets the app_rules of this ListServiceDiscoveryRulesResponse.
 
         查询结果规则信息。
 
@@ -76,7 +76,7 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
 
     @app_rules.setter
     def app_rules(self, app_rules):
-        """Sets the app_rules of this ListServiceDiscoveryRulesResponse.
+        r"""Sets the app_rules of this ListServiceDiscoveryRulesResponse.
 
         查询结果规则信息。
 
@@ -87,7 +87,7 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListServiceDiscoveryRulesResponse.
+        r"""Gets the error_code of this ListServiceDiscoveryRulesResponse.
 
         响应码,AOM_INVENTORY_2000000代表正常返回。
 
@@ -98,7 +98,7 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListServiceDiscoveryRulesResponse.
+        r"""Sets the error_code of this ListServiceDiscoveryRulesResponse.
 
         响应码,AOM_INVENTORY_2000000代表正常返回。
 
@@ -109,7 +109,7 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ListServiceDiscoveryRulesResponse.
+        r"""Gets the error_message of this ListServiceDiscoveryRulesResponse.
 
         响应信息描述。
 
@@ -120,7 +120,7 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ListServiceDiscoveryRulesResponse.
+        r"""Sets the error_message of this ListServiceDiscoveryRulesResponse.
 
         响应信息描述。
 
@@ -131,7 +131,7 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ListServiceDiscoveryRulesResponse.
+        r"""Gets the id of this ListServiceDiscoveryRulesResponse.
 
         服务发现规则id列表，多AZ配置同步时使用。
 
@@ -142,7 +142,7 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListServiceDiscoveryRulesResponse.
+        r"""Sets the id of this ListServiceDiscoveryRulesResponse.
 
         服务发现规则id列表，多AZ配置同步时使用。
 

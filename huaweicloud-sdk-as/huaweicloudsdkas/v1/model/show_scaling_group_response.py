@@ -26,7 +26,7 @@ class ShowScalingGroupResponse(SdkResponse):
     }
 
     def __init__(self, scaling_group=None):
-        """ShowScalingGroupResponse
+        r"""ShowScalingGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowScalingGroupResponse(SdkResponse):
 
     @property
     def scaling_group(self):
-        """Gets the scaling_group of this ShowScalingGroupResponse.
+        r"""Gets the scaling_group of this ShowScalingGroupResponse.
 
         :return: The scaling_group of this ShowScalingGroupResponse.
         :rtype: :class:`huaweicloudsdkas.v1.ScalingGroups`
@@ -53,7 +53,7 @@ class ShowScalingGroupResponse(SdkResponse):
 
     @scaling_group.setter
     def scaling_group(self, scaling_group):
-        """Sets the scaling_group of this ShowScalingGroupResponse.
+        r"""Sets the scaling_group of this ShowScalingGroupResponse.
 
         :param scaling_group: The scaling_group of this ShowScalingGroupResponse.
         :type scaling_group: :class:`huaweicloudsdkas.v1.ScalingGroups`

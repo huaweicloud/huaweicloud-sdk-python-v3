@@ -26,7 +26,7 @@ class ShowDeviceResponse(SdkResponse):
     }
 
     def __init__(self, device=None):
-        """ShowDeviceResponse
+        r"""ShowDeviceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @property
     def device(self):
-        """Gets the device of this ShowDeviceResponse.
+        r"""Gets the device of this ShowDeviceResponse.
 
         :return: The device of this ShowDeviceResponse.
         :rtype: :class:`huaweicloudsdkief.v1.Device`
@@ -53,7 +53,7 @@ class ShowDeviceResponse(SdkResponse):
 
     @device.setter
     def device(self, device):
-        """Sets the device of this ShowDeviceResponse.
+        r"""Sets the device of this ShowDeviceResponse.
 
         :param device: The device of this ShowDeviceResponse.
         :type device: :class:`huaweicloudsdkief.v1.Device`

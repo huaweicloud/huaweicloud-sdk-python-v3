@@ -29,7 +29,7 @@ class UpdateNoticeRuleRequest:
     }
 
     def __init__(self, x_enterprise_project_id=None, rule_id=None, body=None):
-        """UpdateNoticeRuleRequest
+        r"""UpdateNoticeRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateNoticeRuleRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this UpdateNoticeRuleRequest.
+        r"""Gets the x_enterprise_project_id of this UpdateNoticeRuleRequest.
 
         企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
 
@@ -67,7 +67,7 @@ class UpdateNoticeRuleRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this UpdateNoticeRuleRequest.
+        r"""Sets the x_enterprise_project_id of this UpdateNoticeRuleRequest.
 
         企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
 
@@ -78,7 +78,7 @@ class UpdateNoticeRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateNoticeRuleRequest.
+        r"""Gets the rule_id of this UpdateNoticeRuleRequest.
 
         :return: The rule_id of this UpdateNoticeRuleRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class UpdateNoticeRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateNoticeRuleRequest.
+        r"""Sets the rule_id of this UpdateNoticeRuleRequest.
 
         :param rule_id: The rule_id of this UpdateNoticeRuleRequest.
         :type rule_id: str
@@ -96,7 +96,7 @@ class UpdateNoticeRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNoticeRuleRequest.
+        r"""Gets the body of this UpdateNoticeRuleRequest.
 
         :return: The body of this UpdateNoticeRuleRequest.
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateNoticeRuleReq`
@@ -105,7 +105,7 @@ class UpdateNoticeRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNoticeRuleRequest.
+        r"""Sets the body of this UpdateNoticeRuleRequest.
 
         :param body: The body of this UpdateNoticeRuleRequest.
         :type body: :class:`huaweicloudsdkcae.v1.UpdateNoticeRuleReq`

@@ -31,7 +31,7 @@ class CreateSecAppTaskRequestBody:
     }
 
     def __init__(self, version=None, file=None, privacy_statement_url=None, personal_info_share_url=None):
-        """CreateSecAppTaskRequestBody
+        r"""CreateSecAppTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateSecAppTaskRequestBody:
 
     @property
     def version(self):
-        """Gets the version of this CreateSecAppTaskRequestBody.
+        r"""Gets the version of this CreateSecAppTaskRequestBody.
 
         版本：0免费版，1专业版
 
@@ -73,7 +73,7 @@ class CreateSecAppTaskRequestBody:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateSecAppTaskRequestBody.
+        r"""Sets the version of this CreateSecAppTaskRequestBody.
 
         版本：0免费版，1专业版
 
@@ -84,7 +84,7 @@ class CreateSecAppTaskRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this CreateSecAppTaskRequestBody.
+        r"""Gets the file of this CreateSecAppTaskRequestBody.
 
         待扫描文件，后缀为.apk或.hap,专业版大小限制为2G，免费版大小限制为100M
 
@@ -95,7 +95,7 @@ class CreateSecAppTaskRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this CreateSecAppTaskRequestBody.
+        r"""Sets the file of this CreateSecAppTaskRequestBody.
 
         待扫描文件，后缀为.apk或.hap,专业版大小限制为2G，免费版大小限制为100M
 
@@ -106,7 +106,7 @@ class CreateSecAppTaskRequestBody:
 
     @property
     def privacy_statement_url(self):
-        """Gets the privacy_statement_url of this CreateSecAppTaskRequestBody.
+        r"""Gets the privacy_statement_url of this CreateSecAppTaskRequestBody.
 
         隐私申明URL
 
@@ -117,7 +117,7 @@ class CreateSecAppTaskRequestBody:
 
     @privacy_statement_url.setter
     def privacy_statement_url(self, privacy_statement_url):
-        """Sets the privacy_statement_url of this CreateSecAppTaskRequestBody.
+        r"""Sets the privacy_statement_url of this CreateSecAppTaskRequestBody.
 
         隐私申明URL
 
@@ -128,7 +128,7 @@ class CreateSecAppTaskRequestBody:
 
     @property
     def personal_info_share_url(self):
-        """Gets the personal_info_share_url of this CreateSecAppTaskRequestBody.
+        r"""Gets the personal_info_share_url of this CreateSecAppTaskRequestBody.
 
         个人信息第三方共享目录URL
 
@@ -139,7 +139,7 @@ class CreateSecAppTaskRequestBody:
 
     @personal_info_share_url.setter
     def personal_info_share_url(self, personal_info_share_url):
-        """Sets the personal_info_share_url of this CreateSecAppTaskRequestBody.
+        r"""Sets the personal_info_share_url of this CreateSecAppTaskRequestBody.
 
         个人信息第三方共享目录URL
 

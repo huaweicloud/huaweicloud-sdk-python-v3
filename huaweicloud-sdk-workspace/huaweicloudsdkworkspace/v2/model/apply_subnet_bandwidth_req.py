@@ -35,7 +35,7 @@ class ApplySubnetBandwidthReq:
     }
 
     def __init__(self, bandwidth_name=None, subnet_id=None, charge_mode=None, bandwidth_size=None, enterprise_project_id=None, order_id=None):
-        """ApplySubnetBandwidthReq
+        r"""ApplySubnetBandwidthReq
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ApplySubnetBandwidthReq:
 
     @property
     def bandwidth_name(self):
-        """Gets the bandwidth_name of this ApplySubnetBandwidthReq.
+        r"""Gets the bandwidth_name of this ApplySubnetBandwidthReq.
 
         云办公带宽名称。
 
@@ -87,7 +87,7 @@ class ApplySubnetBandwidthReq:
 
     @bandwidth_name.setter
     def bandwidth_name(self, bandwidth_name):
-        """Sets the bandwidth_name of this ApplySubnetBandwidthReq.
+        r"""Sets the bandwidth_name of this ApplySubnetBandwidthReq.
 
         云办公带宽名称。
 
@@ -98,7 +98,7 @@ class ApplySubnetBandwidthReq:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ApplySubnetBandwidthReq.
+        r"""Gets the subnet_id of this ApplySubnetBandwidthReq.
 
         子网id。
 
@@ -109,7 +109,7 @@ class ApplySubnetBandwidthReq:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ApplySubnetBandwidthReq.
+        r"""Sets the subnet_id of this ApplySubnetBandwidthReq.
 
         子网id。
 
@@ -120,7 +120,7 @@ class ApplySubnetBandwidthReq:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ApplySubnetBandwidthReq.
+        r"""Gets the charge_mode of this ApplySubnetBandwidthReq.
 
         计费模式 - wks_bandwidth：按带宽计费，仅包周期支持。 - free: 不计费，仅按需支持。 - wks_traffic：按流量计费，仅按需支持。
 
@@ -131,7 +131,7 @@ class ApplySubnetBandwidthReq:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ApplySubnetBandwidthReq.
+        r"""Sets the charge_mode of this ApplySubnetBandwidthReq.
 
         计费模式 - wks_bandwidth：按带宽计费，仅包周期支持。 - free: 不计费，仅按需支持。 - wks_traffic：按流量计费，仅按需支持。
 
@@ -142,7 +142,7 @@ class ApplySubnetBandwidthReq:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this ApplySubnetBandwidthReq.
+        r"""Gets the bandwidth_size of this ApplySubnetBandwidthReq.
 
         云办公带宽大小。
 
@@ -153,7 +153,7 @@ class ApplySubnetBandwidthReq:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this ApplySubnetBandwidthReq.
+        r"""Sets the bandwidth_size of this ApplySubnetBandwidthReq.
 
         云办公带宽大小。
 
@@ -164,7 +164,7 @@ class ApplySubnetBandwidthReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ApplySubnetBandwidthReq.
+        r"""Gets the enterprise_project_id of this ApplySubnetBandwidthReq.
 
         企业项目ID，默认\"0\"
 
@@ -175,7 +175,7 @@ class ApplySubnetBandwidthReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ApplySubnetBandwidthReq.
+        r"""Sets the enterprise_project_id of this ApplySubnetBandwidthReq.
 
         企业项目ID，默认\"0\"
 
@@ -186,7 +186,7 @@ class ApplySubnetBandwidthReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ApplySubnetBandwidthReq.
+        r"""Gets the order_id of this ApplySubnetBandwidthReq.
 
         包周期订购ID，CBC订购回调时使用。
 
@@ -197,7 +197,7 @@ class ApplySubnetBandwidthReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ApplySubnetBandwidthReq.
+        r"""Sets the order_id of this ApplySubnetBandwidthReq.
 
         包周期订购ID，CBC订购回调时使用。
 

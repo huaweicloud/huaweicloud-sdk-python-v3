@@ -32,7 +32,7 @@ class ListBackupsResponse(SdkResponse):
     }
 
     def __init__(self, backups=None, count=None, offset=None, limit=None):
-        """ListBackupsResponse
+        r"""ListBackupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListBackupsResponse(SdkResponse):
 
     @property
     def backups(self):
-        """Gets the backups of this ListBackupsResponse.
+        r"""Gets the backups of this ListBackupsResponse.
 
         备份列表
 
@@ -76,7 +76,7 @@ class ListBackupsResponse(SdkResponse):
 
     @backups.setter
     def backups(self, backups):
-        """Sets the backups of this ListBackupsResponse.
+        r"""Sets the backups of this ListBackupsResponse.
 
         备份列表
 
@@ -87,7 +87,7 @@ class ListBackupsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListBackupsResponse.
+        r"""Gets the count of this ListBackupsResponse.
 
         备份个数
 
@@ -98,7 +98,7 @@ class ListBackupsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListBackupsResponse.
+        r"""Sets the count of this ListBackupsResponse.
 
         备份个数
 
@@ -109,7 +109,7 @@ class ListBackupsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListBackupsResponse.
+        r"""Gets the offset of this ListBackupsResponse.
 
         偏移量，表示从此偏移量开始查询
 
@@ -120,7 +120,7 @@ class ListBackupsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBackupsResponse.
+        r"""Sets the offset of this ListBackupsResponse.
 
         偏移量，表示从此偏移量开始查询
 
@@ -131,7 +131,7 @@ class ListBackupsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListBackupsResponse.
+        r"""Gets the limit of this ListBackupsResponse.
 
         每页显示的条目数量
 
@@ -142,7 +142,7 @@ class ListBackupsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBackupsResponse.
+        r"""Sets the limit of this ListBackupsResponse.
 
         每页显示的条目数量
 

@@ -34,7 +34,7 @@ class DataArtsStudioClient(Client):
         return client_builder
 
     def accept_security_application(self, request):
-        """审批通过工单
+        r"""审批通过工单
 
         审批通过工单
         
@@ -103,7 +103,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def add_design_entity_tags(self, request):
-        """添加标签
+        r"""添加标签
 
         根据资产（表或属性）的ID给资产打上标签。
         
@@ -177,7 +177,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def add_tag_to_asset(self, request):
-        """标签关联到资产
+        r"""标签关联到资产
 
         标签关联到资产
         
@@ -246,7 +246,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def add_work_space_users(self, request):
-        """添加工作空间用户
+        r"""添加工作空间用户
 
         添加工作空间用户
         
@@ -312,8 +312,73 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def apply_security_table_authority(self, request):
+        r"""提交表权限申请
+
+        提交表权限申请
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ApplySecurityTableAuthority
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ApplySecurityTableAuthorityRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApplySecurityTableAuthorityResponse`
+        """
+        http_info = self._apply_security_table_authority_http_info(request)
+        return self._call_api(**http_info)
+
+    def apply_security_table_authority_invoker(self, request):
+        http_info = self._apply_security_table_authority_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _apply_security_table_authority_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/permission-application/table",
+            "request_type": request.__class__.__name__,
+            "response_type": "ApplySecurityTableAuthorityResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def associate_classification_to_entity(self, request):
-        """资产关联分类
+        r"""资产关联分类
 
         将一个分类关联到一个或多个指定guid的资产上
         
@@ -382,7 +447,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def associate_security_level_to_entitie(self, request):
-        """资产关联密级
+        r"""资产关联密级
 
         关联资产到密级，资产关联指定密级
         
@@ -451,7 +516,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def authorize_data_connection(self, request):
-        """数据连接跨空间授权
+        r"""数据连接跨空间授权
 
         数据连接跨空间授权。
         
@@ -518,7 +583,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_approve_apply(self, request):
-        """审核申请
+        r"""审核申请
 
         审核申请。
         
@@ -586,8 +651,75 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def batch_approve_security_applications(self, request):
+        r"""批量审批通过工单
+
+        批量审批通过工单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchApproveSecurityApplications
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchApproveSecurityApplicationsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchApproveSecurityApplicationsResponse`
+        """
+        http_info = self._batch_approve_security_applications_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_approve_security_applications_invoker(self, request):
+        http_info = self._batch_approve_security_applications_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_approve_security_applications_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/openapi/permission-approve/batch-approve",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchApproveSecurityApplicationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_associate_classification_to_entities(self, request):
-        """批量资产关联分类
+        r"""批量资产关联分类
 
         批量资产关联分类：只支持对数据表的列和OBS对象添加分类
         
@@ -654,7 +786,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_associate_security_level_to_entities(self, request):
-        """批量资产关联密级
+        r"""批量资产关联密级
 
         批量资产关联密级：单个密级关联到多个资产上
         
@@ -721,7 +853,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_create_design_table_models_from_logic(self, request):
-        """转换逻辑模型为物理模型
+        r"""转换逻辑模型为物理模型
 
         转换逻辑模型为物理模型，转换成功则显示转换后的目标模型信息。
         异常：目标模型信息的“id”等属性为null时，则需要调用《获取操作结果》接口查看具体报错信息：GET https://{endpoint}/v1/{project_id}/design/operation-results?operation_type&#x3D;TRANSFORM_LOGIC_MODEL&amp;operation_id&#x3D;{model_id}，其中{model_id}为本接口的路径参数。
@@ -796,7 +928,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_create_security_permission_set_members(self, request):
-        """批量添加权限集成员
+        r"""批量添加权限集成员
 
         批量添加权限集成员
         
@@ -865,7 +997,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_create_security_permission_set_permissions(self, request):
-        """批量添加权限集的权限
+        r"""批量添加权限集的权限
 
         批量添加权限集的权限
         
@@ -934,7 +1066,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_delete_security_data_classification_rule(self, request):
-        """批量删除识别规则接口
+        r"""批量删除识别规则接口
 
         批量删除识别规则接口
         
@@ -1001,7 +1133,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_delete_security_dynamic_masking_policies(self, request):
-        """批量删除动态脱敏策略
+        r"""批量删除动态脱敏策略
 
         批量删除动态脱敏策略
         
@@ -1068,7 +1200,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_delete_security_permission_set_members(self, request):
-        """批量删除权限集成员
+        r"""批量删除权限集成员
 
         批量删除权限集成员
         
@@ -1137,7 +1269,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_delete_security_permission_set_permissions(self, request):
-        """删除权限集的权限
+        r"""删除权限集的权限
 
         删除权限集的权限
         
@@ -1206,7 +1338,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_delete_security_resource_permission_policies(self, request):
-        """批量删除资源权限策略
+        r"""批量删除资源权限策略
 
         批量删除资源权限策略
         
@@ -1273,7 +1405,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_delete_security_secrecy_levels(self, request):
-        """批量删除密级
+        r"""批量删除密级
 
         批量删除密级
         
@@ -1340,7 +1472,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_delete_templates(self, request):
-        """批量删除规则模板
+        r"""批量删除规则模板
 
         批量删除规则模板
         
@@ -1407,7 +1539,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_offline(self, request):
-        """批量下线
+        r"""批量下线
 
         批量下线。
         
@@ -1476,7 +1608,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_publish(self, request):
-        """批量发布
+        r"""批量发布
 
         批量发布。
         
@@ -1544,8 +1676,75 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def batch_reject_security_applications(self, request):
+        r"""批量驳回工单
+
+        批量驳回工单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchRejectSecurityApplications
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchRejectSecurityApplicationsRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchRejectSecurityApplicationsResponse`
+        """
+        http_info = self._batch_reject_security_applications_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_reject_security_applications_invoker(self, request):
+        http_info = self._batch_reject_security_applications_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_reject_security_applications_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/openapi/permission-approve/batch-reject",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRejectSecurityApplicationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_sync_metadata(self, request):
-        """元数据实时同步接口(邀测)
+        r"""元数据实时同步接口(邀测)
 
         元数据实时同步接口，支持批量。该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
         
@@ -1610,7 +1809,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_tag(self, request):
-        """批量打标签(邀测)
+        r"""批量打标签(邀测)
 
         批量给资产打标签。
         
@@ -1677,7 +1876,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def batch_update_security_dlf_data_ware_houses(self, request):
-        """批量更新数据开发连接细粒度认证状态
+        r"""批量更新数据开发连接细粒度认证状态
 
         批量更新数据开发连接细粒度认证状态
         
@@ -1744,7 +1943,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def cancel_factory_packages(self, request):
-        """撤销任务包
+        r"""撤销任务包
 
         撤销任务包
         
@@ -1811,7 +2010,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def change_catalog(self, request):
-        """修改流程架构
+        r"""修改流程架构
 
         修改流程架构。
         
@@ -1880,7 +2079,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def change_resource(self, request):
-        """规格变更接口
+        r"""规格变更接口
 
         规格变更接口
         
@@ -1945,7 +2144,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def change_subjects(self, request):
-        """修改或删除主题层级
+        r"""修改或删除主题层级
 
         修改或删除主题层级。
         
@@ -2014,7 +2213,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def check_dimension_status(self, request):
-        """查看逆向维度表任务
+        r"""查看逆向维度表任务
 
         查看逆向维度表任务。
         
@@ -2081,7 +2280,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def check_fact_logic_table_status(self, request):
-        """查看逆向事实表任务
+        r"""查看逆向事实表任务
 
         查看逆向事实表任务。
         
@@ -2148,7 +2347,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def check_security_data_classification_combine_rule(self, request):
-        """组合识别规则测试
+        r"""组合识别规则测试
 
         组合识别规则测试
         
@@ -2215,7 +2414,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def compare_design_versions(self, request):
-        """比较版本信息
+        r"""比较版本信息
 
         通过两个版本id，比较两者差异。
         
@@ -2285,7 +2484,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def confirm_approvals(self, request):
-        """审批单处理
+        r"""审批单处理
 
         审批驳回/通过，单个或多个action-id&#x3D;reject/resolve。
         
@@ -2356,7 +2555,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def confirm_message(self, request):
-        """处理消息
+        r"""处理消息
 
         对收到的通知消息进行确认，可以在指定的时间范围内选择何时进行处理。
         
@@ -2425,7 +2624,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def count_all_models(self, request):
-        """关系建模统计信息
+        r"""关系建模统计信息
 
         关系建模页面，外层的统计信息。
         
@@ -2492,7 +2691,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def count_overviews(self, request):
-        """总览统计信息
+        r"""总览统计信息
 
         总览统计信息。
         
@@ -2559,7 +2758,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def count_standards(self, request):
-        """标准覆盖率统计信息
+        r"""标准覆盖率统计信息
 
         查看某个数据标准在所有模型字段中的覆盖率，即使用该标准的字段占总字段的百分比。
         
@@ -2630,7 +2829,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def count_table_models(self, request):
-        """模型统计信息
+        r"""模型统计信息
 
         单个模型中的统计信息。
         
@@ -2699,7 +2898,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_app(self, request):
-        """创建应用
+        r"""创建应用
 
         创建应用。  
         支持创建APP， IAM应用。
@@ -2769,7 +2968,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_approver(self, request):
-        """创建审批人
+        r"""创建审批人
 
         创建审批人。
         
@@ -2838,7 +3037,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_biz_metric(self, request):
-        """创建业务指标
+        r"""创建业务指标
 
         创建业务指标。
         
@@ -2907,7 +3106,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_catalog(self, request):
-        """创建流程架构
+        r"""创建流程架构
 
         创建流程架构。
         
@@ -2976,7 +3175,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_code_table(self, request):
-        """创建码表
+        r"""创建码表
 
         创建码表。
         
@@ -3045,7 +3244,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_connections(self, request):
-        """创建数据连接
+        r"""创建数据连接
 
         创建数据连接
         
@@ -3112,7 +3311,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_design_aggregation_logic_table(self, request):
-        """新建汇总表
+        r"""新建汇总表
 
         根据入参，手动创建汇总表。
         
@@ -3181,7 +3380,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_design_atomic_index(self, request):
-        """新建原子指标
+        r"""新建原子指标
 
         新建单个原子指标。
         
@@ -3250,7 +3449,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_design_compound_metric(self, request):
-        """新建复合指标
+        r"""新建复合指标
 
         根据参数，新建复合指标。
         
@@ -3319,7 +3518,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_design_derivative_index(self, request):
-        """新建衍生指标
+        r"""新建衍生指标
 
         根据参数，新建衍生指标指标。
         
@@ -3388,7 +3587,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_design_dimension(self, request):
-        """新建维度
+        r"""新建维度
 
         根据参数新建维度。
         
@@ -3457,7 +3656,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_directory(self, request):
-        """创建目录
+        r"""创建目录
 
         创建目录（数据标准、码表）。
         
@@ -3526,7 +3725,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_factory_env(self, request):
-        """创建环境变量
+        r"""创建环境变量
 
         创建环境变量
         
@@ -3593,7 +3792,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_factory_job(self, request):
-        """创建作业
+        r"""创建作业
 
         创建作业
         
@@ -3660,7 +3859,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_factory_supplement_data_instance(self, request):
-        """创建补数据实例
+        r"""创建补数据实例
 
         创建补数据实例
         
@@ -3727,7 +3926,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_lineage_info(self, request):
-        """创建血缘信息
+        r"""创建血缘信息
 
         创建血缘信息
         
@@ -3794,7 +3993,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_manager_work_space(self, request):
-        """创建工作空间
+        r"""创建工作空间
 
         创建工作空间
         
@@ -3861,7 +4060,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_or_update_asset(self, request):
-        """添加或修改资产
+        r"""添加或修改资产
 
         添加或修改资产
         
@@ -3928,7 +4127,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_or_update_entities(self, request):
-        """创建或修改资产(邀测)
+        r"""创建或修改资产(邀测)
 
         创建或修改资产，该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
         
@@ -3995,7 +4194,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_security_assigned_queue(self, request):
-        """分配队列资源给指定空间
+        r"""分配队列资源给指定空间
 
         分配队列资源给指定空间。
         
@@ -4062,7 +4261,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_security_data_classification_combine_rule(self, request):
-        """创建组合识别规则
+        r"""创建组合识别规则
 
         创建组合识别规则
         
@@ -4129,7 +4328,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_security_data_classification_rule(self, request):
-        """创建识别规则
+        r"""创建识别规则
 
         创建识别规则
         
@@ -4196,7 +4395,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_security_data_classification_rule_group(self, request):
-        """创建规则分组接口
+        r"""创建规则分组接口
 
         创建规则分组接口
         
@@ -4263,7 +4462,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_security_dynamic_masking_policy(self, request):
-        """创建数据脱敏策略
+        r"""创建数据脱敏策略
 
         创建动态数据脱敏策略
         
@@ -4330,7 +4529,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_security_permission_set(self, request):
-        """创建权限集
+        r"""创建权限集
 
         创建权限集
         
@@ -4397,7 +4596,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_security_permission_set_member(self, request):
-        """添加权限集成员
+        r"""添加权限集成员
 
         添加权限集成员
         
@@ -4466,7 +4665,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_security_permission_set_permission(self, request):
-        """添加权限集的权限
+        r"""添加权限集的权限
 
         添加权限集的权限
         
@@ -4535,7 +4734,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_security_resource_permission_policy(self, request):
-        """创建空间资源权限策略
+        r"""创建空间资源权限策略
 
         创建空间资源权限策略
         
@@ -4602,7 +4801,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_security_secrecy_level(self, request):
-        """创建密级
+        r"""创建密级
 
         创建密级
         
@@ -4669,7 +4868,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_service_catalog(self, request):
-        """创建服务目录
+        r"""创建服务目录
 
         创建服务目录。 根目录编号为0。
         
@@ -4738,7 +4937,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_standard(self, request):
-        """创建数据标准
+        r"""创建数据标准
 
         创建数据标准。
         
@@ -4807,7 +5006,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_standard_template(self, request):
-        """创建数据标准模板
+        r"""创建数据标准模板
 
         创建当前工作空间下的数据标准模板自定义项。
         
@@ -4876,7 +5075,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_subject(self, request):
-        """创建主题
+        r"""创建主题
 
         创建主题。
         
@@ -4945,7 +5144,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_subject_new(self, request):
-        """创建主题(新)
+        r"""创建主题(新)
 
         创建主题(新)。
         
@@ -5014,7 +5213,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_table_model(self, request):
-        """创建表模型
+        r"""创建表模型
 
         在关系建模中创建一个表模型，包括逻辑实体和物理表。
         
@@ -5083,7 +5282,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_task(self, request):
-        """创建采集任务
+        r"""创建采集任务
 
         创建采集任务
         
@@ -5150,7 +5349,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_template(self, request):
-        """创建规则模板
+        r"""创建规则模板
 
         创建规则模板
         
@@ -5217,7 +5416,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_workspace(self, request):
-        """新建模型工作区
+        r"""新建模型工作区
 
         新建模型工作区。
         
@@ -5286,7 +5485,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def debug_dataconnection(self, request):
-        """测试创建数据连接
+        r"""测试创建数据连接
 
         测试创建数据连接
         
@@ -5353,7 +5552,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def debug_security_dlf_data_ware_houses(self, request):
-        """测试数据开发连接细粒度连通性
+        r"""测试数据开发连接细粒度连通性
 
         测试数据开发连接细粒度连通性
         
@@ -5420,7 +5619,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def decline_security_application(self, request):
-        """驳回工单
+        r"""驳回工单
 
         驳回工单
         
@@ -5489,7 +5688,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_app(self, request):
-        """删除应用
+        r"""删除应用
 
         删除应用。
         
@@ -5558,7 +5757,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_approver(self, request):
-        """删除审批人
+        r"""删除审批人
 
         删除审批人。
         
@@ -5627,7 +5826,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_asset(self, request):
-        """删除资产
+        r"""删除资产
 
         删除资产
         
@@ -5694,7 +5893,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_biz_metric(self, request):
-        """删除业务指标
+        r"""删除业务指标
 
         删除业务指标。
         
@@ -5763,7 +5962,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_catalog(self, request):
-        """删除流程架构
+        r"""删除流程架构
 
         删除流程架构。
         
@@ -5832,7 +6031,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_classification_from_entities(self, request):
-        """移除资产关联的分类
+        r"""移除资产关联的分类
 
         移除资产关联分类：
         
@@ -5901,7 +6100,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_code_table(self, request):
-        """删除码表
+        r"""删除码表
 
         删除码表。
         
@@ -5970,7 +6169,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_dataconnection(self, request):
-        """删除数据连接
+        r"""删除数据连接
 
         删除数据连接
         
@@ -6037,7 +6236,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_design_aggregation_logic_table(self, request):
-        """删除汇总表
+        r"""删除汇总表
 
         批量删除汇总表，只能删除状态为草稿、已线下、已驳回的表。
         
@@ -6106,7 +6305,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_design_atomic_index(self, request):
-        """删除原子指标
+        r"""删除原子指标
 
         批量删除原子指标。
         
@@ -6175,7 +6374,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_design_compound_metric(self, request):
-        """删除复合指标
+        r"""删除复合指标
 
         根据ID集合删除复合指标。
         
@@ -6244,7 +6443,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_design_derivative_index(self, request):
-        """删除衍生指标
+        r"""删除衍生指标
 
         根据衍生指标ID，删除衍生指标。
         
@@ -6313,7 +6512,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_design_dimension(self, request):
-        """删除维度
+        r"""删除维度
 
         根据传入的维度ID，删除维度。
         
@@ -6382,7 +6581,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_design_dimension_logic_table(self, request):
-        """删除维度表
+        r"""删除维度表
 
         根据维度表ID，删除维度表。
         
@@ -6451,7 +6650,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_design_fact_logic_table(self, request):
-        """删除事实表
+        r"""删除事实表
 
         根据ID集合删除事实表。
         
@@ -6520,7 +6719,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_design_latest_approval(self, request):
-        """删除实体下展
+        r"""删除实体下展
 
         当已发布的实体被编辑时，其会生成下展，该接口用于删除实体的下展信息。
         
@@ -6591,7 +6790,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_directory(self, request):
-        """删除目录
+        r"""删除目录
 
         删除目录（数据标准、码表）。
         
@@ -6661,7 +6860,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_entity(self, request):
-        """删除资产(邀测)
+        r"""删除资产(邀测)
 
         根据guid删除资产。
         
@@ -6728,7 +6927,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_security_assigned_queue(self, request):
-        """删除当前空间下分配的队列资源
+        r"""删除当前空间下分配的队列资源
 
         删除当前空间下分配的队列资源。
         
@@ -6795,7 +6994,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_security_data_classification_rule(self, request):
-        """删除识别规则
+        r"""删除识别规则
 
         删除识别规则
         
@@ -6862,7 +7061,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_security_data_classification_rule_group(self, request):
-        """删除规则分组接口
+        r"""删除规则分组接口
 
         删除规则分组接口
         
@@ -6929,7 +7128,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_security_level_from_entity(self, request):
-        """移除资产关联密级
+        r"""移除资产关联密级
 
         移除资产关联密级
         
@@ -6996,7 +7195,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_security_permission_set(self, request):
-        """删除权限集
+        r"""删除权限集
 
         删除权限集
         
@@ -7063,7 +7262,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_security_secrecy_level(self, request):
-        """删除指定的id的密级
+        r"""删除指定的id的密级
 
         删除指定的id的密级
         
@@ -7130,7 +7329,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_service_catalog(self, request):
-        """批量删除目录
+        r"""批量删除目录
 
         批量删除服务目录。  
         删除目录的同时会删除其下的所有子目录，不支持删除带有API的目录。
@@ -7200,7 +7399,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_standard(self, request):
-        """删除数据标准
+        r"""删除数据标准
 
         删除数据标准。
         
@@ -7269,7 +7468,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_standard_template(self, request):
-        """删除数据标准模板
+        r"""删除数据标准模板
 
         删除数据标准模板。
         
@@ -7338,7 +7537,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_subject(self, request):
-        """删除主题
+        r"""删除主题
 
         删除主题。
         
@@ -7407,7 +7606,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_subject_new(self, request):
-        """删除主题(新)
+        r"""删除主题(新)
 
         删除主题(新)。
         
@@ -7476,7 +7675,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_table_model(self, request):
-        """删除表模型
+        r"""删除表模型
 
         在关系建模中删除一个表模型及其属性，包括逻辑实体和物理表。
         
@@ -7545,7 +7744,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_task_info(self, request):
-        """删除单个采集任务
+        r"""删除单个采集任务
 
         删除单个采集任务
         
@@ -7612,7 +7811,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_workspaces(self, request):
-        """删除模型工作区
+        r"""删除模型工作区
 
         删除模型工作区。
         
@@ -7682,7 +7881,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_workspaceusers(self, request):
-        """删除工作空间用户
+        r"""删除工作空间用户
 
         删除工作空间用户
         
@@ -7749,7 +7948,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def deploy_factory_packages(self, request):
-        """发布任务包
+        r"""发布任务包
 
         发布任务包
         
@@ -7816,7 +8015,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def execute_security_diagnose(self, request):
-        """执行数据安全诊断
+        r"""执行数据安全诊断
 
         执行数据安全诊断。
         
@@ -7883,7 +8082,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def execute_task_action(self, request):
-        """启动、调度、停止采集任务
+        r"""启动、调度、停止采集任务
 
         启动、调度、停止采集任务
         
@@ -7952,7 +8151,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def export_design_model_table_ddl(self, request):
-        """导出模型中表的DDL语句
+        r"""导出模型中表的DDL语句
 
         根据模型ID导出指定表的DDL语句。
         
@@ -8026,7 +8225,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def export_design_models(self, request):
-        """导出业务数据
+        r"""导出业务数据
 
         根据请求参数，导出业务数据，可以导出：码表、数据标准、原子指标、衍生指标、复合指标、汇总表、业务指标、主题、流程、逻辑模型、物理模型、维度、事实表。
         
@@ -8095,7 +8294,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def export_design_result(self, request):
-        """获取excel导出结果
+        r"""获取excel导出结果
 
         根据请求导出业务数据（/export-model）时返回的uuid，获取excel导出结果。
         
@@ -8164,7 +8363,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def import_catalogs(self, request):
-        """导入主题
+        r"""导入主题
 
         用于导入主题。
         
@@ -8239,7 +8438,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def import_lineage(self, request):
-        """血缘导入
+        r"""血缘导入
 
         血缘查询
         
@@ -8306,7 +8505,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def import_models(self, request):
-        """导入模型，关系建模，维度建模，码表，业务指标以及流程架构
+        r"""导入模型，关系建模，维度建模，码表，业务指标以及流程架构
 
         导入模型，关系建模，维度建模，码表，业务指标以及流程架构。
         
@@ -8387,7 +8586,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def import_result(self, request):
-        """查询导入结果
+        r"""查询导入结果
 
         查询导入excel的处理结果（其中参数uuid获取为：/design/models/action或/design/catalogs/action接口返回结果）。
         
@@ -8456,7 +8655,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def import_security_builtin_category_groups(self, request):
-        """导入预置分类
+        r"""导入预置分类
 
         导入预置分类。
         
@@ -8525,7 +8724,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def initialize_standard_template(self, request):
-        """初始化数据标准模板
+        r"""初始化数据标准模板
 
         初始化数据标准模板。
         
@@ -8596,7 +8795,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_aggregation_logic_tables(self, request):
-        """查找汇总表
+        r"""查找汇总表
 
         通过中英文名称、创建者、审核人、状态、修改时间分页查找汇总表信息，中英文名称支持模糊查询。
         
@@ -8692,7 +8891,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_all_catalog_list(self, request):
-        """获取当前目录下的所有类型列表
+        r"""获取当前目录下的所有类型列表
 
         获取当前目录下所有类型列表（包括api和目录，均以目录的数据格式形式展示）。
         
@@ -8765,7 +8964,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_all_standards(self, request):
-        """获取数据标准集合
+        r"""获取数据标准集合
 
         根据查询条件分页获取数据标准集合，按修改时间降序排序。
         
@@ -8844,7 +9043,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_all_tables(self, request):
-        """查询多种类型的表信息
+        r"""查询多种类型的表信息
 
         从信息架构中查询多种类型的表信息，包括逻辑实体、物理表、维度表、事实表、汇总表。
         
@@ -8938,7 +9137,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_api_catalog_list(self, request):
-        """获取当前目录下的api列表
+        r"""获取当前目录下的api列表
 
         获取当前目录下的api列表。
         
@@ -9011,7 +9210,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_api_top_n(self, request):
-        """查询指定api 应用调用topN
+        r"""查询指定api 应用调用topN
 
         查询指定api 应用调用topN。
         
@@ -9092,7 +9291,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_apic_groups(self, request):
-        """获取网关分组
+        r"""获取网关分组
 
         获取网关分组。
         
@@ -9167,7 +9366,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_apic_instances(self, request):
-        """获取网关实例(专享版)
+        r"""获取网关实例(专享版)
 
         获取网关实例(专享版)。
         
@@ -9240,7 +9439,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_apis_top(self, request):
-        """查询api 服务调用topN
+        r"""查询api 服务调用topN
 
         查询api 服务调用topN。
         
@@ -9319,7 +9518,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_apply(self, request):
-        """查询申请列表
+        r"""查询申请列表
 
         查询申请列表。
         
@@ -9394,7 +9593,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_approvers(self, request):
-        """查询审批人列表
+        r"""查询审批人列表
 
         查询审批人列表。
         
@@ -9467,7 +9666,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_apps(self, request):
-        """查询应用列表
+        r"""查询应用列表
 
         查询应用列表。
         
@@ -9542,7 +9741,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_apps_top(self, request):
-        """查询app 服务使用topN
+        r"""查询app 服务使用topN
 
         查询app 服务使用topN。
         
@@ -9619,7 +9818,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_biz_metric_dimensions(self, request):
-        """查看指标维度信息
+        r"""查看指标维度信息
 
         查看指标维度信息。
         
@@ -9690,7 +9889,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_biz_metric_owners(self, request):
-        """查看指标责任人信息
+        r"""查看指标责任人信息
 
         查看指标责任人信息。
         
@@ -9761,7 +9960,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_biz_metrics(self, request):
-        """查询业务指标信息
+        r"""查询业务指标信息
 
         通过名称、创建者、修改时间分页查找业务指标信息。
         
@@ -9851,7 +10050,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_business(self, request):
-        """获取主题树信息
+        r"""获取主题树信息
 
         获取数据资产主题树信息l1，l2，l3。
         
@@ -9922,7 +10121,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_catalog_list(self, request):
-        """获取当前目录下的目录列表（全量）
+        r"""获取当前目录下的目录列表（全量）
 
         获取当前目录下的目录列表（全量数据，不分页，推荐仅用于生成目录树等无法分页的场景）。
         
@@ -9995,7 +10194,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_catalog_tree(self, request):
-        """获取所有流程架构目录树
+        r"""获取所有流程架构目录树
 
         获取所有目录树。
         
@@ -10062,7 +10261,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_category(self, request):
-        """获取作业目录
+        r"""获取作业目录
 
         获取作业目录
         
@@ -10133,7 +10332,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_columns(self, request):
-        """获取数据源中表的字段
+        r"""获取数据源中表的字段
 
         获取数据源中表的字段
         
@@ -10206,7 +10405,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_compound_metrics(self, request):
-        """查找复合指标
+        r"""查找复合指标
 
         通过中英文名称、创建者、审核人、状态、修改时间、l3Id分页查找复合指标信息。
         
@@ -10295,7 +10494,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_condition(self, request):
-        """查找业务限定
+        r"""查找业务限定
 
         通过中英文名称、描述、创建者、审核人、限定分组id、修改时间状态分页查找限定信息。
         
@@ -10378,7 +10577,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_consistency_task(self, request):
-        """获取对账作业列表
+        r"""获取对账作业列表
 
         获取对账作业列表
         
@@ -10459,7 +10658,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_data_arts_studio_instances(self, request):
-        """获取实例列表
+        r"""获取实例列表
 
         获取实例列表
         
@@ -10526,7 +10725,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_data_service_instance_accesslogs(self, request):
-        """查询数据服务集群访问日志列表
+        r"""查询数据服务集群访问日志列表
 
         查询数据服务集群访问日志列表。
         
@@ -10595,7 +10794,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_data_service_instances_detail(self, request):
-        """查询集群详情信息列表
+        r"""查询集群详情信息列表
 
         查询集群详情信息列表。
         
@@ -10670,7 +10869,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_data_service_instances_overview(self, request):
-        """查询集群概览信息列表
+        r"""查询集群概览信息列表
 
         查询集群概览信息列表。
         
@@ -10745,7 +10944,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_data_service_market_apis(self, request):
-        """查询服务目录API列表
+        r"""查询服务目录API列表
 
         查询服务目录API列表。
         
@@ -10814,7 +11013,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_data_tables(self, request):
-        """获取数据源中的表
+        r"""获取数据源中的表
 
         获取数据源中的表
         
@@ -10889,7 +11088,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_databases(self, request):
-        """获取数据库列表
+        r"""获取数据库列表
 
         获取数据库列表
         
@@ -10960,7 +11159,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_dataconnections(self, request):
-        """查询数据连接列表
+        r"""查询数据连接列表
 
         查询数据连接列表
         
@@ -11033,7 +11232,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_derivative_indexes(self, request):
-        """查找衍生指标
+        r"""查找衍生指标
 
         通过中英文名称、创建者、审核人、状态、修改时间、l3Id分页查找衍生指标信息。
         
@@ -11128,7 +11327,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_design_data_layers(self, request):
-        """获取数仓分层信息
+        r"""获取数仓分层信息
 
         获取数仓分层信息
         
@@ -11199,7 +11398,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_dimension_groups(self, request):
-        """查看维度颗粒度
+        r"""查看维度颗粒度
 
         查询维度颗粒度，依据tableId查询涉及所有维度，不传tableId查询所有维度组颗粒度。
         
@@ -11274,7 +11473,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_dimension_logic_tables(self, request):
-        """查找维度表
+        r"""查找维度表
 
         通过中英文名称、创建者、审核人、状态、修改时间分页查找维度表信息。
         
@@ -11372,7 +11571,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_dimensions(self, request):
-        """查找维度
+        r"""查找维度
 
         通过中英文名称、描述、创建者、审核人、状态、l3Id、衍生指标idList、修改时间分页查找维度信息。
         
@@ -11466,7 +11665,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_directories(self, request):
-        """获取所有目录
+        r"""获取所有目录
 
         获取所有目录(数据标准、码表)。
         
@@ -11539,7 +11738,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_fact_logic_tables(self, request):
-        """查找事实表
+        r"""查找事实表
 
         通过中英文名称、创建者、审核人、状态、修改时间分页查找事实表信息。
         
@@ -11633,7 +11832,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_factory_alarm_info(self, request):
-        """查询告警通知记录
+        r"""查询告警通知记录
 
         查询告警通知记录
         
@@ -11706,7 +11905,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_factory_job_instances_by_name(self, request):
-        """查询指定作业的实例列表
+        r"""查询指定作业的实例列表
 
         查询指定作业的实例列表
         
@@ -11789,7 +11988,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_factory_jobs(self, request):
-        """查询作业列表
+        r"""查询作业列表
 
         查询作业列表清单
         
@@ -11864,7 +12063,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_factory_release_packages(self, request):
-        """查询发布包列表
+        r"""查询发布包列表
 
         查询发布包列表
         
@@ -11931,7 +12130,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_factory_task_completion(self, request):
-        """查询任务完成情况
+        r"""查询任务完成情况
 
         查询任务完成情况
         
@@ -11998,7 +12197,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_factory_task_overview(self, request):
-        """查询实例运行状态
+        r"""查询实例运行状态
 
         查询实例运行状态
         
@@ -12067,7 +12266,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_instances(self, request):
-        """获取任务执行结果列表
+        r"""获取任务执行结果列表
 
         获取任务执行结果列表
         
@@ -12148,7 +12347,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_manager_work_spaces(self, request):
-        """获取工作空间列表
+        r"""获取工作空间列表
 
         获取工作空间列表
         
@@ -12217,7 +12416,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_message(self, request):
-        """查询消息列表
+        r"""查询消息列表
 
         查询审核中心的通知消息列表。与申请不同，通知类消息，无法驳回，仅能在指定的时间范围内作出处理。
         
@@ -12290,7 +12489,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_metric_relations(self, request):
-        """获取指标关联信息
+        r"""获取指标关联信息
 
         获取当前指标图谱。
         
@@ -12361,7 +12560,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_quality_task(self, request):
-        """获取质量作业列表
+        r"""获取质量作业列表
 
         获取质量作业列表
         
@@ -12442,7 +12641,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_quality_task_lists(self, request):
-        """获取质量作业列表V1
+        r"""获取质量作业列表V1
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -12530,7 +12729,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_quality_templates(self, request):
-        """获取规则模板列表
+        r"""获取规则模板列表
 
         分页获取规则模板列表
         
@@ -12607,7 +12806,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_relations(self, request):
-        """查询关系
+        r"""查询关系
 
         通过关系名称(支持模糊查询)、创建人、开始时间、结束时间等分页查找关系信息。
         
@@ -12686,7 +12885,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_schemas(self, request):
-        """获取schemas
+        r"""获取schemas
 
         获取schemas,目前只有DWS和采用postgresql驱动的RDS数据源支持schema,请在调用前确认该数据源是否支持schema字段
         
@@ -12759,7 +12958,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_approvals(self, request):
-        """获取工单列表
+        r"""获取工单列表
 
         获取工单列表
         
@@ -12845,7 +13044,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_assigned_queues(self, request):
-        """查询当前空间下分配的队列资源
+        r"""查询当前空间下分配的队列资源
 
         查询当前空间下分配的队列资源。
         
@@ -12918,7 +13117,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_data_categories(self, request):
-        """查询数据分类列表
+        r"""查询数据分类列表
 
         查询数据分类列表。
         
@@ -12987,7 +13186,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_data_classification_rule_groups(self, request):
-        """查询规则组列表
+        r"""查询规则组列表
 
         查询规则组列表
         
@@ -13064,7 +13263,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_data_classification_rules(self, request):
-        """查询识别规则列表
+        r"""查询识别规则列表
 
         查询识别规则列表
         
@@ -13149,7 +13348,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_datasource_actions(self, request):
-        """查询数据操作信息
+        r"""查询数据操作信息
 
         查询数据操作信息
         
@@ -13230,7 +13429,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_datasource_configurations(self, request):
-        """查询数据源可配置权限
+        r"""查询数据源可配置权限
 
         查询数据源可配置权限
         
@@ -13295,7 +13494,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_datasource_urls(self, request):
-        """查询url信息
+        r"""查询url信息
 
         查询url信息
         
@@ -13366,7 +13565,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_dlf_data_ware_houses(self, request):
-        """查询数据开发细粒度连接列表（全量）
+        r"""查询数据开发细粒度连接列表（全量）
 
         查询数据开发细粒度连接列表（全量）
         
@@ -13435,7 +13634,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_dynamic_masking_policies(self, request):
-        """查询动态数据脱敏策略列表
+        r"""查询动态数据脱敏策略列表
 
         查询动态数据脱敏策略列表。
         
@@ -13515,8 +13714,93 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def list_security_member_permission(self, request):
+        r"""查询我的权限
+
+        查询我的权限、空间账号权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityMemberPermission
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityMemberPermissionRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityMemberPermissionResponse`
+        """
+        http_info = self._list_security_member_permission_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_member_permission_invoker(self, request):
+        http_info = self._list_security_member_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_member_permission_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/permission-governance/my-permissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityMemberPermissionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'datasource_type' in local_var_params:
+            query_params.append(('datasource_type', local_var_params['datasource_type']))
+        if 'database_name' in local_var_params:
+            query_params.append(('database_name', local_var_params['database_name']))
+        if 'table_name' in local_var_params:
+            query_params.append(('table_name', local_var_params['table_name']))
+        if 'account_type' in local_var_params:
+            query_params.append(('account_type', local_var_params['account_type']))
+        if 'expire_status' in local_var_params:
+            query_params.append(('expire_status', local_var_params['expire_status']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'order_by_asc' in local_var_params:
+            query_params.append(('order_by_asc', local_var_params['order_by_asc']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_security_member_sync_tasks(self, request):
-        """查询用户同步列表
+        r"""查询用户同步列表
 
         查询用户同步列表。
         
@@ -13596,8 +13880,96 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def list_security_member_table_permission(self, request):
+        r"""查询用户表权限清单
+
+        查询用户表权限清单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityMemberTablePermission
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityMemberTablePermissionRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityMemberTablePermissionResponse`
+        """
+        http_info = self._list_security_member_table_permission_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_member_table_permission_invoker(self, request):
+        http_info = self._list_security_member_table_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_member_table_permission_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security/member-permission/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityMemberTablePermissionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+
+        query_params = []
+        if 'feature' in local_var_params:
+            query_params.append(('feature', local_var_params['feature']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'datasource_type' in local_var_params:
+            query_params.append(('datasource_type', local_var_params['datasource_type']))
+        if 'cluster_name' in local_var_params:
+            query_params.append(('cluster_name', local_var_params['cluster_name']))
+        if 'database_name' in local_var_params:
+            query_params.append(('database_name', local_var_params['database_name']))
+        if 'schema_name' in local_var_params:
+            query_params.append(('schema_name', local_var_params['schema_name']))
+        if 'table_name' in local_var_params:
+            query_params.append(('table_name', local_var_params['table_name']))
+        if 'fuzzy_table_name' in local_var_params:
+            query_params.append(('fuzzy_table_name', local_var_params['fuzzy_table_name']))
+        if 'workspace_ids' in local_var_params:
+            query_params.append(('workspace_ids', local_var_params['workspace_ids']))
+            collection_formats['workspace_ids'] = 'csv'
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_security_permission_set_members(self, request):
-        """查询权限集成员列表
+        r"""查询权限集成员列表
 
         查询权限集成员列表
         
@@ -13676,7 +14048,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_permission_set_permissions(self, request):
-        """查询权限集的权限列表
+        r"""查询权限集的权限列表
 
         查询权限集的权限列表
         
@@ -13769,7 +14141,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_permission_sets(self, request):
-        """查询权限集列表
+        r"""查询权限集列表
 
         查询权限集列表
         
@@ -13858,7 +14230,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_resource_permissions(self, request):
-        """查询空间资源权限策略列表
+        r"""查询空间资源权限策略列表
 
         查询空间资源权限策略列表
         
@@ -13937,7 +14309,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_role_actions(self, request):
-        """查询角色对一组库、表的权限交集
+        r"""查询角色对一组库、表的权限交集
 
         查询角色对一组库、表的权限交集
         
@@ -14004,7 +14376,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_secrecy_levels(self, request):
-        """获取密级
+        r"""获取密级
 
         获取密级
         
@@ -14077,7 +14449,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_security_sensitive_data_overviews(self, request):
-        """查询敏感数据发现概览结果(以分类和密级为单位)
+        r"""查询敏感数据发现概览结果(以分类和密级为单位)
 
         查询敏感数据发现概览结果(以分类和密级为单位)
         
@@ -14151,8 +14523,73 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def list_security_table_approvers(self, request):
+        r"""获取表权限审批人列表
+
+        获取表权限审批人列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityTableApprovers
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityTableApproversRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityTableApproversResponse`
+        """
+        http_info = self._list_security_table_approvers_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_table_approvers_invoker(self, request):
+        http_info = self._list_security_table_approvers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_table_approvers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/permission-application/table/approvers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityTableApproversResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_security_unreasonable_permissions(self, request):
-        """查询不合理的权限配置
+        r"""查询不合理的权限配置
 
         查询不合理的权限配置。
         
@@ -14226,8 +14663,75 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def list_security_user_table_permission(self, request):
+        r"""查询用户对表的权限
+
+        查询用户对表的权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityUserTablePermission
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityUserTablePermissionRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSecurityUserTablePermissionResponse`
+        """
+        http_info = self._list_security_user_table_permission_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_user_table_permission_invoker(self, request):
+        http_info = self._list_security_user_table_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_user_table_permission_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security/permission-application/user-table-permissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityUserTablePermissionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance' in local_var_params:
+            header_params['instance'] = local_var_params['instance']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_subject_levels(self, request):
-        """获取主题层级
+        r"""获取主题层级
 
         获取主题层级。
         
@@ -14298,7 +14802,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_table_model_relations(self, request):
-        """查询模型下所有关系
+        r"""查询模型下所有关系
 
         查询模型下所有关系。
         
@@ -14375,7 +14879,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_table_models(self, request):
-        """查找表模型列表
+        r"""查找表模型列表
 
         通过中英文名称、创建者、审核人、状态、修改时间分页查找关系建模中的表模型信息，包括逻辑实体、物理表和其属性。
         
@@ -14467,7 +14971,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_workspace_roles(self, request):
-        """获取工作空间用户角色
+        r"""获取工作空间用户角色
 
         获取工作空间用户角色
         
@@ -14534,7 +15038,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_workspaces(self, request):
-        """获取模型
+        r"""获取模型
 
         获取当前空间下的全部模型信息。
         
@@ -14609,7 +15113,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_workspaces_for_user(self, request):
-        """获取指定用户所有的工作空间集合
+        r"""获取指定用户所有的工作空间集合
 
         获取指定用户所有的工作空间集合
         
@@ -14676,7 +15180,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_workspaceusers(self, request):
-        """获取工作空间用户信息
+        r"""获取工作空间用户信息
 
         获取工作空间用户信息
         
@@ -14745,7 +15249,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def migrate_api(self, request):
-        """批量移动api至新目录
+        r"""批量移动api至新目录
 
         批量移动api至新目录。
         
@@ -14814,7 +15318,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def migrate_catalog(self, request):
-        """移动当前目录至新目录
+        r"""移动当前目录至新目录
 
         移动当前目录至新目录。  
         移动目录的的同时会移动其下的所有子目录与api。
@@ -14886,7 +15390,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def modify_customized_fields(self, request):
-        """修改自定义项
+        r"""修改自定义项
 
         修改自定义项（包括表自定义项、属性自定义项、主题自定义项、业务指标自定义项）。
         
@@ -14955,7 +15459,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def modify_security_admin(self, request):
-        """创建或更新安全管理员
+        r"""创建或更新安全管理员
 
         创建或更新安全管理员。
         
@@ -15022,7 +15526,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def parse_user_behavior(self, request):
-        """用户行为分析
+        r"""用户行为分析
 
         用户行为分析
         
@@ -15089,7 +15593,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def pay_for_dgc_one_key(self, request):
-        """DataArtsStudio实例一键购买接口
+        r"""DataArtsStudio实例一键购买接口
 
         DataArtsStudio实例一键购买接口
         
@@ -15154,7 +15658,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def remove_design_entity_tags(self, request):
-        """删除标签
+        r"""删除标签
 
         根据资产（表或属性）的ID删除资产标签。
         
@@ -15227,7 +15731,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def remove_design_quality_infos(self, request):
-        """清空质量规则
+        r"""清空质量规则
 
         清空表的质量规则。
         
@@ -15298,7 +15802,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def renew_data_profile(self, request):
-        """指定字段采集概要
+        r"""指定字段采集概要
 
         指定字段采集概要信息接口
         
@@ -15365,7 +15869,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def reset_link_attribute_and_standard(self, request):
-        """关联属性与数据标准
+        r"""关联属性与数据标准
 
         关联属性与数据标准。
         
@@ -15434,7 +15938,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def retry_factory_job_instance(self, request):
-        """重跑作业实例
+        r"""重跑作业实例
 
         支持重跑作业实例以及上下游的作业实例。
         
@@ -15505,7 +16009,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def rollback_approval(self, request):
-        """撤回审批单
+        r"""撤回审批单
 
         撤回审批单。
         
@@ -15574,7 +16078,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_approvals(self, request):
-        """获取审批单
+        r"""获取审批单
 
         获取审批单。
         
@@ -15665,7 +16169,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_atomic_indexes(self, request):
-        """查找原子指标
+        r"""查找原子指标
 
         通过中英文名称、创建者、审核人、状态、修改时间分页查找原子指标信息看，中英文名称支持模糊查询。
         
@@ -15752,7 +16256,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_authorize_app(self, request):
-        """查询API已授权的APP
+        r"""查询API已授权的APP
 
         查询API已授权的APP。
         
@@ -15825,7 +16329,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_bind_api(self, request):
-        """查询APP已拥有授权的API
+        r"""查询APP已拥有授权的API
 
         查询APP已拥有授权的API。
         
@@ -15898,7 +16402,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_catalogs(self, request):
-        """查询流程架构列表
+        r"""查询流程架构列表
 
         查询流程架构列表。
         
@@ -15979,7 +16483,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_code_table_values(self, request):
-        """查看码表字段值
+        r"""查看码表字段值
 
         查看码表字段值。
         
@@ -16052,7 +16556,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_code_tables(self, request):
-        """查询码表列表
+        r"""查询码表列表
 
         查询码表列表。
         
@@ -16137,7 +16641,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_customized_fields(self, request):
-        """查询自定义项
+        r"""查询自定义项
 
         查询自定义项（包括表自定义项、属性自定义项、主题自定义项、业务指标自定义项）。
         
@@ -16210,7 +16714,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_design_latest_approval_diff(self, request):
-        """获取下展信息与已发布实体的差异
+        r"""获取下展信息与已发布实体的差异
 
         当已发布的实体被编辑时，其会生成下展，该接口用于获取下展信息与已发布实体的差异。
         
@@ -16281,7 +16785,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_dw_by_type(self, request):
-        """获取数据连接信息
+        r"""获取数据连接信息
 
         获取指定类型下的数据连接信息。
         
@@ -16356,7 +16860,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_fields_for_relation(self, request):
-        """查询目的表和字段(待下线)
+        r"""查询目的表和字段(待下线)
 
         查询目的表和字段(待下线)。
         
@@ -16429,7 +16933,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_id_by_path(self, request):
-        """通过路径获取id
+        r"""通过路径获取id
 
         通过路径获取id。
         
@@ -16502,7 +17006,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_sgc_compute_dimensions(self, request):
-        """获取计算维度成本列表信息
+        r"""获取计算维度成本列表信息
 
         获取计算维度成本列表信息
         
@@ -16583,7 +17087,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_subject(self, request):
-        """查找主题列表
+        r"""查找主题列表
 
         通过名称（支持模糊查询）、创建者、责任人、状态、修改时间分页查找主题。
         
@@ -16668,7 +17172,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_subject_new(self, request):
-        """查找主题列表(新)
+        r"""查找主题列表(新)
 
         查找主题(新)。
         
@@ -16753,7 +17257,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_versions(self, request):
-        """查找版本信息
+        r"""查找版本信息
 
         通过名称、创建者、修改时间查找版本信息。
         
@@ -16836,7 +17340,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def set_factory_job_tags(self, request):
-        """设置作业标签
+        r"""设置作业标签
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -16908,7 +17412,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_aggregation_logic_table_by_id(self, request):
-        """查看汇总表详情
+        r"""查看汇总表详情
 
         通过ID查看汇总表的详情信息。
         
@@ -16979,7 +17483,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_api_dashboard(self, request):
-        """查询指定api 仪表板数据详情
+        r"""查询指定api 仪表板数据详情
 
         查询指定api 仪表板数据详情。
         
@@ -17056,7 +17560,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_apis_dashboard(self, request):
-        """查询api 仪表板数据详情
+        r"""查询api 仪表板数据详情
 
         查询api 仪表板数据详情。
         
@@ -17135,7 +17639,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_apis_detail(self, request):
-        """查询api 统计数据详情
+        r"""查询api 统计数据详情
 
         查询api 统计数据详情。
         
@@ -17212,7 +17716,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_apis_overview(self, request):
-        """查询统计用户相关的总览开发指标
+        r"""查询统计用户相关的总览开发指标
 
         查询统计用户相关的总览开发指标。
         
@@ -17285,7 +17789,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_app_info(self, request):
-        """查询应用详情
+        r"""查询应用详情
 
         查询应用详情。
         
@@ -17354,7 +17858,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_apply_detail(self, request):
-        """获取申请详情
+        r"""获取申请详情
 
         获取申请详情。  
         此功能仅用作信息详情展示，不用做业务处理，因此不展示编号等后台参数。
@@ -17424,7 +17928,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_apps_dashboard(self, request):
-        """查询app 仪表板数据详情
+        r"""查询app 仪表板数据详情
 
         查询app 仪表板数据详情。
         
@@ -17501,7 +18005,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_apps_detail(self, request):
-        """查询app 统计数据详情
+        r"""查询app 统计数据详情
 
         查询app 统计数据详情。
         
@@ -17576,7 +18080,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_apps_overview(self, request):
-        """查询统计用户相关的总览调用指标
+        r"""查询统计用户相关的总览调用指标
 
         查询统计用户相关的总览调用指标。
         
@@ -17649,7 +18153,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_atomic_index_by_id(self, request):
-        """查看原子指标详情
+        r"""查看原子指标详情
 
         通过ID获取原子指标详情信息。
         
@@ -17720,7 +18224,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_biz_catalog_detail(self, request):
-        """查找流程架构详情
+        r"""查找流程架构详情
 
         查找流程架构详情。
         
@@ -17789,7 +18293,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_biz_metric_by_id(self, request):
-        """查看指标详情
+        r"""查看指标详情
 
         通过ID查看指标的详情信息。
         
@@ -17860,7 +18364,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_business_assets(self, request):
-        """查询业务资产
+        r"""查询业务资产
 
         业务资产查询接口
         
@@ -17927,7 +18431,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_business_assets_statistic(self, request):
-        """获取业务资产统计信息
+        r"""获取业务资产统计信息
 
         获取业务资产统计信息
         
@@ -17996,7 +18500,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_business_assets_tree(self, request):
-        """查询业务资产目录树
+        r"""查询业务资产目录树
 
         逐级查询业务资产目录树,包含数据规范同步过来的业务对象和逻辑实体。
         
@@ -18063,7 +18567,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_catalog_detail(self, request):
-        """查询服务目录
+        r"""查询服务目录
 
         查询服务目录。
         
@@ -18132,7 +18636,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_code_table_by_id(self, request):
-        """查看码表详情
+        r"""查看码表详情
 
         通过ID查看码表的详情信息。
         
@@ -18201,7 +18705,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_compound_metric_by_id(self, request):
-        """查看复合指标详情
+        r"""查看复合指标详情
 
         通过ID获取复合指标详情信息。
         
@@ -18272,7 +18776,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_condition_by_id(self, request):
-        """查看限定详情
+        r"""查看限定详情
 
         通过ID查看限定详情信息。
         
@@ -18343,7 +18847,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_consistency_task_detail(self, request):
-        """获取对账作业详情
+        r"""获取对账作业详情
 
         获取对账作业详情
         
@@ -18410,7 +18914,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_data_detail(self, request):
-        """资产详情(邀测)
+        r"""资产详情(邀测)
 
         资产详情接口，该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
         
@@ -18479,7 +18983,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_data_preview(self, request):
-        """表数据预览
+        r"""表数据预览
 
         表数据预览
         
@@ -18560,7 +19064,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_data_profile(self, request):
-        """资产信息
+        r"""资产信息
 
         查询概要
         
@@ -18633,7 +19137,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_data_service_instance(self, request):
-        """查询集群详情信息
+        r"""查询集群详情信息
 
         查询集群详情信息。
         
@@ -18702,7 +19206,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_data_sets(self, request):
-        """资产搜索
+        r"""资产搜索
 
         资产搜索
         
@@ -18769,7 +19273,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_dataconnection(self, request):
-        """查询单个数据连接信息
+        r"""查询单个数据连接信息
 
         查询单个数据连接信息
         
@@ -18836,7 +19340,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_datamap_lineage(self, request):
-        """资产血缘(邀测)
+        r"""资产血缘(邀测)
 
         资产血缘接口，该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
         
@@ -18918,7 +19422,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_derivative_index_by_id(self, request):
-        """查看衍生指标详情
+        r"""查看衍生指标详情
 
         通过ID获取衍生详情信息。
         
@@ -18989,7 +19493,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_design_operation_result(self, request):
-        """获取操作结果
+        r"""获取操作结果
 
         获取批量操作的结果，如逻辑模型转物理模型和逆向数据库操作。
         
@@ -19064,7 +19568,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_dimension_by_id(self, request):
-        """查看维度详情
+        r"""查看维度详情
 
         通过ID查看维度详情信息。
         
@@ -19135,7 +19639,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_dimension_logic_table_by_id(self, request):
-        """查看维度表详情
+        r"""查看维度表详情
 
         通过ID查看维度表的详情信息。
         
@@ -19206,7 +19710,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_entities(self, request):
-        """查询技术资产
+        r"""查询技术资产
 
         查询技术资产
         
@@ -19273,7 +19777,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_entity_info_by_guid(self, request):
-        """根据guid获取资产详情
+        r"""根据guid获取资产详情
 
         根据表guid可以获取表的详情信息，表的详情信息包含column的信息，也可以根据column的guid直接获取column的信息
         
@@ -19340,7 +19844,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_fact_logic_table_by_id(self, request):
-        """查看事实表详情
+        r"""查看事实表详情
 
         通过ID查看事实表的详情信息。
         
@@ -19411,7 +19915,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_factory_env(self, request):
-        """查询环境变量信息
+        r"""查询环境变量信息
 
         查询环境变量信息
         
@@ -19476,7 +19980,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_factory_package_detail(self, request):
-        """查询指定发布包详情
+        r"""查询指定发布包详情
 
         查询指定发布包详情
         
@@ -19543,7 +20047,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_factory_supplement_data(self, request):
-        """查询补数据实例
+        r"""查询补数据实例
 
         查询补数据实例
         
@@ -19624,7 +20128,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_glossary_list(self, request):
-        """查询标签列表
+        r"""查询标签列表
 
         查询标签列表
         
@@ -19707,7 +20211,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_instance_infos(self, request):
-        """产出信息(邀测)
+        r"""产出信息(邀测)
 
         查询表相关的作业算子运行实例信息，该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
         
@@ -19786,7 +20290,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_instance_log(self, request):
-        """获取任务日志
+        r"""获取任务日志
 
         获取任务日志
         
@@ -19857,7 +20361,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_instance_result(self, request):
-        """获取实例结果
+        r"""获取实例结果
 
         获取实例结果
         
@@ -19924,7 +20428,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_lineage(self, request):
-        """血缘查询
+        r"""血缘查询
 
         血缘查询
         
@@ -19995,7 +20499,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_lineage_bulk(self, request):
-        """批量血缘(邀测)
+        r"""批量血缘(邀测)
 
         批量血缘接口，根据作业算子分页批量查询血缘。该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
         
@@ -20064,7 +20568,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_message_detail(self, request):
-        """获取消息详情
+        r"""获取消息详情
 
         获取消息详情。此功能仅用作信息详情展示，不用做业务处理，因此不展示编号等后台参数。
         
@@ -20133,7 +20637,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_metric_assets(self, request):
-        """查询指标资产
+        r"""查询指标资产
 
         指标资产查询接口
         
@@ -20200,7 +20704,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_metric_tree(self, request):
-        """查询指标资产目录树
+        r"""查询指标资产目录树
 
         查询指标资产目录树
         
@@ -20265,7 +20769,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_nodes(self, request):
-        """表关联作业算子列表(邀测)
+        r"""表关联作业算子列表(邀测)
 
         查询表相关的作业算子列表，该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
         
@@ -20332,7 +20836,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_path_by_id(self, request):
-        """通过id获取路径
+        r"""通过id获取路径
 
         通过id获取路径。
         
@@ -20405,7 +20909,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_path_object_by_id(self, request):
-        """通过id获取路径对象
+        r"""通过id获取路径对象
 
         通过目录id获取路径对象。  
         通过目录id获取从根目录至当前目录链路上每一层的路径信息。
@@ -20479,7 +20983,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_quality_task_detail(self, request):
-        """获取质量作业详情
+        r"""获取质量作业详情
 
         获取质量作业详情
         
@@ -20546,7 +21050,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_queues(self, request):
-        """获取队列(邀测)
+        r"""获取队列(邀测)
 
         队列列表，展示10条数据，该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
         
@@ -20611,7 +21115,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_relation_by_id(self, request):
-        """查看关系详情
+        r"""查看关系详情
 
         通过ID获取关系详情信息。
         
@@ -20682,7 +21186,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_security_admin(self, request):
-        """查看安全管理员
+        r"""查看安全管理员
 
         查看安全管理员。
         
@@ -20747,7 +21251,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_security_data_classification_rule(self, request):
-        """查询特定识别规则
+        r"""查询特定识别规则
 
         查询特定识别规则
         
@@ -20814,7 +21318,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_security_data_classification_rule_group(self, request):
-        """查询规则组
+        r"""查询规则组
 
         查询规则组
         
@@ -20881,7 +21385,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_security_datasource_protection_diagnose_result(self, request):
-        """查询数据源防护模块诊断结果
+        r"""查询数据源防护模块诊断结果
 
         查询数据源防护模块诊断结果
         
@@ -20946,7 +21450,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_security_dynamic_masking_policy(self, request):
-        """查询某个脱敏策略的详细信息
+        r"""查询某个脱敏策略的详细信息
 
         查询某个脱敏策略的详细信息
         
@@ -21013,7 +21517,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_security_member_sync_task(self, request):
-        """查询单个用户同步任务
+        r"""查询单个用户同步任务
 
         查询单个用户同步任务。
         
@@ -21080,7 +21584,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_security_no_masking_table_result(self, request):
-        """查询未进行静态脱敏任务的表信息
+        r"""查询未进行静态脱敏任务的表信息
 
         查询未进行静态脱敏任务的表信息
         
@@ -21157,7 +21661,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_security_permission_management_diagnose_result(self, request):
-        """查询数据权限控制模块诊断结果
+        r"""查询数据权限控制模块诊断结果
 
         查询数据权限控制模块诊断结果。
         
@@ -21222,7 +21726,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_security_permission_set(self, request):
-        """查询权限集
+        r"""查询权限集
 
         查询权限集
         
@@ -21289,7 +21793,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_security_resource_permission_policy(self, request):
-        """查询单个资源权限策略
+        r"""查询单个资源权限策略
 
         查询单个资源权限策略
         
@@ -21356,7 +21860,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_security_secrecy_level(self, request):
-        """根据指定的id查询密级
+        r"""根据指定的id查询密级
 
         根据指定的id查询密级
         
@@ -21423,7 +21927,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_security_sensitive_data_diagnose_result(self, request):
-        """查询敏感数据保护模块诊断结果
+        r"""查询敏感数据保护模块诊断结果
 
         查询敏感数据保护模块诊断结果
         
@@ -21488,7 +21992,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_standard_by_id(self, request):
-        """查看数据标准详情
+        r"""查看数据标准详情
 
         通过ID获取数据标准详情信息。
         
@@ -21557,7 +22061,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_standard_template(self, request):
-        """查询数据标准模板
+        r"""查询数据标准模板
 
         查询当前工作空间下的数据标准模板。
         
@@ -21628,7 +22132,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_table_data(self, request):
-        """数据预览(邀测)
+        r"""数据预览(邀测)
 
         表数据预览，展示10条数据，该接口功能处于邀测阶段，后续将随功能公测将逐步开放。
         
@@ -21707,7 +22211,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_table_model_by_id(self, request):
-        """查看表模型详情
+        r"""查看表模型详情
 
         通过ID获取模型表详情信息。
         
@@ -21778,7 +22282,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_tags(self, request):
-        """搜索查询标签分页展示
+        r"""搜索查询标签分页展示
 
         搜索查询标签分页展示
         
@@ -21845,7 +22349,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_task_info(self, request):
-        """查询采集任务详情
+        r"""查询采集任务详情
 
         查询采集任务详情
         
@@ -21912,7 +22416,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_task_list(self, request):
-        """查询采集任务列表
+        r"""查询采集任务列表
 
         查询采集任务列表
         
@@ -21979,7 +22483,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_technical_assets_statistic(self, request):
-        """获取技术资产统计信息
+        r"""获取技术资产统计信息
 
         获取技术资产统计信息
         
@@ -22050,7 +22554,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_templates_detail(self, request):
-        """获取规则模板详情
+        r"""获取规则模板详情
 
         获取规则模板详情
         
@@ -22117,7 +22621,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_unrelated_table(self, request):
-        """无血缘关系表查询
+        r"""无血缘关系表查询
 
         无血缘关系表查询
         
@@ -22184,7 +22688,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_work_space(self, request):
-        """获取单个工作空间信息
+        r"""获取单个工作空间信息
 
         获取单个工作空间信息
         
@@ -22251,7 +22755,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_workspace_detail_by_id(self, request):
-        """查询模型详情
+        r"""查询模型详情
 
         查询物理模型或逻辑模型的工作区空间详情。
         
@@ -22320,7 +22824,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def stop_factory_supplement_data_instance(self, request):
-        """停止补数据实例
+        r"""停止补数据实例
 
         停止补数据实例
         
@@ -22387,7 +22891,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def unpublish_security_application(self, request):
-        """撤回工单申请
+        r"""撤回工单申请
 
         撤回工单申请
         
@@ -22454,7 +22958,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_app(self, request):
-        """更新应用
+        r"""更新应用
 
         更新应用。
         
@@ -22525,7 +23029,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_biz_metric(self, request):
-        """更新业务指标
+        r"""更新业务指标
 
         更新业务指标。
         
@@ -22594,7 +23098,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_catalog(self, request):
-        """更新服务目录
+        r"""更新服务目录
 
         更新服务目录。
         
@@ -22665,7 +23169,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_code_table(self, request):
-        """修改码表
+        r"""修改码表
 
         修改码表。
         
@@ -22736,7 +23240,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_code_table_values(self, request):
-        """编辑码表字段值
+        r"""编辑码表字段值
 
         编辑码表字段值。
         
@@ -22807,7 +23311,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_data_service_instance_lts_log(self, request):
-        """开启数据服务集群LTS日志转储
+        r"""开启数据服务集群LTS日志转储
 
         开启数据服务集群LTS日志转储。
         
@@ -22878,7 +23382,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_data_service_instance_obs_log(self, request):
-        """开启数据服务集群OBS日志转储
+        r"""开启数据服务集群OBS日志转储
 
         开启数据服务集群OBS日志转储。
         
@@ -22949,7 +23453,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_dataconnection(self, request):
-        """更新数据连接信息
+        r"""更新数据连接信息
 
         更新数据连接信息
         
@@ -23018,7 +23522,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_design_aggregation_logic_table(self, request):
-        """更新汇总表
+        r"""更新汇总表
 
         更新汇总表。
         
@@ -23087,7 +23591,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_design_atomic_index(self, request):
-        """更新原子指标
+        r"""更新原子指标
 
         更新单个原子指标。
         
@@ -23156,7 +23660,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_design_compound_metric(self, request):
-        """更新复合指标
+        r"""更新复合指标
 
         根据参数，更新复合指标。
         
@@ -23225,7 +23729,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_design_data_layers(self, request):
-        """修改或删除数仓分层
+        r"""修改或删除数仓分层
 
         修改或删除数仓分层
         
@@ -23294,7 +23798,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_design_derivative_index(self, request):
-        """更新衍生指标
+        r"""更新衍生指标
 
         根据传入参数，更新衍生指标。
         
@@ -23363,7 +23867,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_design_dimension(self, request):
-        """更新维度
+        r"""更新维度
 
         根据参数，更新维度信息。
         
@@ -23432,7 +23936,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_design_table_quality(self, request):
-        """更新表的异常数据输出配置
+        r"""更新表的异常数据输出配置
 
         更新表的异常数据输出配置，包括是否生成异常数据、设置异常数据数据库或Schema、设置异常表表前缀/表后缀。
         
@@ -23503,7 +24007,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_directory(self, request):
-        """修改目录
+        r"""修改目录
 
         修改目录（数据标准、码表）。
         
@@ -23572,7 +24076,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_factory_job_name(self, request):
-        """修改作业名称
+        r"""修改作业名称
 
         修改作业名称
         
@@ -23645,7 +24149,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_security_assigned_queue(self, request):
-        """修改当前空间下分配的队列资源
+        r"""修改当前空间下分配的队列资源
 
         修改当前空间下分配的队列资源。
         
@@ -23714,7 +24218,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_security_data_classification_combine_rule(self, request):
-        """修改组合识别规则
+        r"""修改组合识别规则
 
         修改组合识别规则
         
@@ -23783,7 +24287,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_security_data_classification_rule(self, request):
-        """修改识别规则接口
+        r"""修改识别规则接口
 
         修改识别规则接口
         
@@ -23852,7 +24356,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_security_data_classification_rule_group(self, request):
-        """修改规则分组接口
+        r"""修改规则分组接口
 
         修改规则分组接口
         
@@ -23921,7 +24425,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_security_dynamic_masking_policy(self, request):
-        """更新动态数据脱敏策略
+        r"""更新动态数据脱敏策略
 
         更新动态数据脱敏策略
         
@@ -23989,8 +24493,75 @@ class DataArtsStudioClient(Client):
 
         return http_info
 
+    def update_security_member_permission_expire_time(self, request):
+        r"""批量变更权限有效期
+
+        批量变更权限有效期
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSecurityMemberPermissionExpireTime
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecurityMemberPermissionExpireTimeRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSecurityMemberPermissionExpireTimeResponse`
+        """
+        http_info = self._update_security_member_permission_expire_time_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_security_member_permission_expire_time_invoker(self, request):
+        http_info = self._update_security_member_permission_expire_time_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_security_member_permission_expire_time_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/security/permission-governance/batch-update-expire-time",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecurityMemberPermissionExpireTimeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_security_permission_set(self, request):
-        """更新权限集
+        r"""更新权限集
 
         更新权限集
         
@@ -24059,7 +24630,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_security_permission_set_permission(self, request):
-        """更新权限集的权限
+        r"""更新权限集的权限
 
         更新权限集的权限
         
@@ -24130,7 +24701,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_security_resource_permission_policy(self, request):
-        """更新空间资源权限策略
+        r"""更新空间资源权限策略
 
         更新空间资源权限策略
         
@@ -24199,7 +24770,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_security_rule_enable_status(self, request):
-        """修改识别规则状态接口
+        r"""修改识别规则状态接口
 
         修改识别规则状态接口
         
@@ -24268,7 +24839,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_security_secrecy_level(self, request):
-        """根据指定的id修改密级
+        r"""根据指定的id修改密级
 
         根据指定的id修改密级
         
@@ -24337,7 +24908,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_standard(self, request):
-        """修改数据标准
+        r"""修改数据标准
 
         修改数据标准。
         
@@ -24408,7 +24979,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_standard_template(self, request):
-        """修改数据标准模板
+        r"""修改数据标准模板
 
         修改数据标准模板。
         
@@ -24477,7 +25048,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_subject(self, request):
-        """修改主题
+        r"""修改主题
 
         修改主题。
         
@@ -24546,7 +25117,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_subject_new(self, request):
-        """修改主题(新)
+        r"""修改主题(新)
 
         修改主题(新)。
         
@@ -24615,7 +25186,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_table_model(self, request):
-        """更新表模型
+        r"""更新表模型
 
         在关系建模中更新一个表模型及其属性，包括逻辑实体和物理表。
         
@@ -24684,7 +25255,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_task_info(self, request):
-        """编辑采集任务
+        r"""编辑采集任务
 
         编辑采集任务
         
@@ -24753,7 +25324,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_template(self, request):
-        """更新规则模板
+        r"""更新规则模板
 
         更新规则模板
         
@@ -24822,7 +25393,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_work_space_user_or_group(self, request):
-        """编辑工作空间用户或用户组
+        r"""编辑工作空间用户或用户组
 
         编辑工作空间用户或用户组
         
@@ -24891,7 +25462,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_workspace(self, request):
-        """更新模型工作区
+        r"""更新模型工作区
 
         更新模型工作区。
         
@@ -24960,7 +25531,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def authorize_action_api_to_instance(self, request):
-        """API授权操作(授权/取消授权/申请/续约)
+        r"""API授权操作(授权/取消授权/申请/续约)
 
         - API主动授权：  API审核人可发起，API主动授权成功后，在有效期内，APP即可访问该API。API授权包含授权和续约两部分功能。
             * 授权：授权会给予APP在有效期内访问API的权利。
@@ -25037,7 +25608,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def authorize_api_to_instance(self, request):
-        """批量授权API(专享版)
+        r"""批量授权API(专享版)
 
         APP创建成功后，还不能访问API，如果想要访问某个API，需要将该API授权给APP。API主动授权成功后，在有效期内，APP即可访问该API。  
         API授权包含授权和续约两部分功能。  
@@ -25113,7 +25684,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def create_api(self, request):
-        """创建API
+        r"""创建API
 
         创建API。
         
@@ -25182,7 +25753,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def debug_api(self, request):
-        """调试API
+        r"""调试API
 
         调试API。
         
@@ -25255,7 +25826,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def delete_api(self, request):
-        """批量删除API
+        r"""批量删除API
 
         批量删除API。
         
@@ -25324,7 +25895,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def execute_api_to_instance(self, request):
-        """API操作(下线/停用/恢复)
+        r"""API操作(下线/停用/恢复)
 
         - 下线API。将已发布的API下线。下线后，所有授权关系都会被解除，API将无法再被调用。
         - 停用API。将已发布的API临时下线。下线后，授权关系会保留，停用期间API将无法再被调用。
@@ -25402,7 +25973,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def export_data_service_excel(self, request):
-        """导出包含API信息的excel文件
+        r"""导出包含API信息的excel文件
 
         导出包含API信息的excel文件。
         
@@ -25471,7 +26042,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def export_data_service_excel_template(self, request):
-        """下载excel模板
+        r"""下载excel模板
 
         下载excel模板。
         
@@ -25538,7 +26109,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def export_data_service_zip(self, request):
-        """全量导出包含API的excel压缩文件
+        r"""全量导出包含API的excel压缩文件
 
         全量导出包含API的excel压缩文件。
         
@@ -25607,7 +26178,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def import_data_service_excel(self, request):
-        """导入包含API信息的excel文件
+        r"""导入包含API信息的excel文件
 
         导入包含API信息的excel文件。
         
@@ -25678,7 +26249,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_apis(self, request):
-        """查询API列表
+        r"""查询API列表
 
         查询API列表。
         
@@ -25770,7 +26341,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def list_instance_list(self, request):
-        """查看API不同操作对应的实例信息(专享版)
+        r"""查看API不同操作对应的实例信息(专享版)
 
         查看API不同操作对应的实例信息。
         
@@ -25853,7 +26424,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def publish_api_to_instance(self, request):
-        """发布API
+        r"""发布API
 
         发布API。API只有发布后，才能够被调用。API发布时，可以将API发送至指定网关。
         - 共享版，必须发送至API网关共享版。
@@ -25929,7 +26500,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_debug_info(self, request):
-        """查看API调试信息(专享版)
+        r"""查看API调试信息(专享版)
 
         查看API在不同集群上的调试信息。
         
@@ -26002,7 +26573,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def search_publish_info(self, request):
-        """查看API发布信息(专享版)
+        r"""查看API发布信息(专享版)
 
         查看API在不同集群上的发布信息。  
         API在集群上进行过操作后会存在发布信息，例如调试、注册类发布等。
@@ -26076,7 +26647,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def show_api(self, request):
-        """查询API信息
+        r"""查询API信息
 
         查询API信息。
         
@@ -26145,7 +26716,7 @@ class DataArtsStudioClient(Client):
         return http_info
 
     def update_api(self, request):
-        """更新API
+        r"""更新API
 
         更新API。
         

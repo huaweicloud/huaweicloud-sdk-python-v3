@@ -25,7 +25,7 @@ class PrivatePolicyBodyPrimitiveTypeHolder:
     }
 
     def __init__(self, policy_body=None):
-        """PrivatePolicyBodyPrimitiveTypeHolder
+        r"""PrivatePolicyBodyPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PrivatePolicyBodyPrimitiveTypeHolder:
 
     @property
     def policy_body(self):
-        """Gets the policy_body of this PrivatePolicyBodyPrimitiveTypeHolder.
+        r"""Gets the policy_body of this PrivatePolicyBodyPrimitiveTypeHolder.
 
         策略内容。仅支持OPA开源引擎识别的，以Rego（https://www.openpolicyagent.org/docs/latest/policy-language/）语言编写的策略模板。  policy_body和policy_uri 必须有且只有一个存在
 
@@ -54,7 +54,7 @@ class PrivatePolicyBodyPrimitiveTypeHolder:
 
     @policy_body.setter
     def policy_body(self, policy_body):
-        """Sets the policy_body of this PrivatePolicyBodyPrimitiveTypeHolder.
+        r"""Sets the policy_body of this PrivatePolicyBodyPrimitiveTypeHolder.
 
         策略内容。仅支持OPA开源引擎识别的，以Rego（https://www.openpolicyagent.org/docs/latest/policy-language/）语言编写的策略模板。  policy_body和policy_uri 必须有且只有一个存在
 

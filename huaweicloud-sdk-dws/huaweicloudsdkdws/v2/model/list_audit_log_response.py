@@ -30,7 +30,7 @@ class ListAuditLogResponse(SdkResponse):
     }
 
     def __init__(self, records=None, cluster_id=None, count=None):
-        """ListAuditLogResponse
+        r"""ListAuditLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAuditLogResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListAuditLogResponse.
+        r"""Gets the records of this ListAuditLogResponse.
 
         审计日志列表。
 
@@ -69,7 +69,7 @@ class ListAuditLogResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListAuditLogResponse.
+        r"""Sets the records of this ListAuditLogResponse.
 
         审计日志列表。
 
@@ -80,7 +80,7 @@ class ListAuditLogResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListAuditLogResponse.
+        r"""Gets the cluster_id of this ListAuditLogResponse.
 
         集群ID。
 
@@ -91,7 +91,7 @@ class ListAuditLogResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListAuditLogResponse.
+        r"""Sets the cluster_id of this ListAuditLogResponse.
 
         集群ID。
 
@@ -102,7 +102,7 @@ class ListAuditLogResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAuditLogResponse.
+        r"""Gets the count of this ListAuditLogResponse.
 
         总数。
 
@@ -113,7 +113,7 @@ class ListAuditLogResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAuditLogResponse.
+        r"""Sets the count of this ListAuditLogResponse.
 
         总数。
 

@@ -25,7 +25,7 @@ class DeleteDatabaseUserRequest:
     }
 
     def __init__(self, users=None):
-        """DeleteDatabaseUserRequest
+        r"""DeleteDatabaseUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDatabaseUserRequest:
 
     @property
     def users(self):
-        """Gets the users of this DeleteDatabaseUserRequest.
+        r"""Gets the users of this DeleteDatabaseUserRequest.
 
         准备删除的数据库用户列表，列表最大长度为50。
 
@@ -53,7 +53,7 @@ class DeleteDatabaseUserRequest:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this DeleteDatabaseUserRequest.
+        r"""Sets the users of this DeleteDatabaseUserRequest.
 
         准备删除的数据库用户列表，列表最大长度为50。
 

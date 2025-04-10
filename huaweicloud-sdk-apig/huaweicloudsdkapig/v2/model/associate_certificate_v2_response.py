@@ -46,7 +46,7 @@ class AssociateCertificateV2Response(SdkResponse):
     }
 
     def __init__(self, url_domain=None, id=None, status=None, min_ssl_version=None, is_http_redirect_to_https=None, verified_client_certificate_enabled=None, ingress_http_port=None, ingress_https_port=None, ssl_name=None, ssl_id=None, ssl_infos=None):
-        """AssociateCertificateV2Response
+        r"""AssociateCertificateV2Response
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @property
     def url_domain(self):
-        """Gets the url_domain of this AssociateCertificateV2Response.
+        r"""Gets the url_domain of this AssociateCertificateV2Response.
 
         自定义域名
 
@@ -119,7 +119,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @url_domain.setter
     def url_domain(self, url_domain):
-        """Sets the url_domain of this AssociateCertificateV2Response.
+        r"""Sets the url_domain of this AssociateCertificateV2Response.
 
         自定义域名
 
@@ -130,7 +130,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this AssociateCertificateV2Response.
+        r"""Gets the id of this AssociateCertificateV2Response.
 
         自定义域名的编号
 
@@ -141,7 +141,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AssociateCertificateV2Response.
+        r"""Sets the id of this AssociateCertificateV2Response.
 
         自定义域名的编号
 
@@ -152,7 +152,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AssociateCertificateV2Response.
+        r"""Gets the status of this AssociateCertificateV2Response.
 
         CNAME解析状态 - 1: 未解析 - 2: 解析中 - 3: 解析成功 - 4: 解析失败
 
@@ -163,7 +163,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AssociateCertificateV2Response.
+        r"""Sets the status of this AssociateCertificateV2Response.
 
         CNAME解析状态 - 1: 未解析 - 2: 解析中 - 3: 解析成功 - 4: 解析失败
 
@@ -174,7 +174,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @property
     def min_ssl_version(self):
-        """Gets the min_ssl_version of this AssociateCertificateV2Response.
+        r"""Gets the min_ssl_version of this AssociateCertificateV2Response.
 
         支持的最小SSL版本
 
@@ -185,7 +185,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @min_ssl_version.setter
     def min_ssl_version(self, min_ssl_version):
-        """Sets the min_ssl_version of this AssociateCertificateV2Response.
+        r"""Sets the min_ssl_version of this AssociateCertificateV2Response.
 
         支持的最小SSL版本
 
@@ -196,7 +196,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @property
     def is_http_redirect_to_https(self):
-        """Gets the is_http_redirect_to_https of this AssociateCertificateV2Response.
+        r"""Gets the is_http_redirect_to_https of this AssociateCertificateV2Response.
 
         是否开启http到https的重定向，false为关闭，true为开启，默认为false
 
@@ -207,7 +207,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @is_http_redirect_to_https.setter
     def is_http_redirect_to_https(self, is_http_redirect_to_https):
-        """Sets the is_http_redirect_to_https of this AssociateCertificateV2Response.
+        r"""Sets the is_http_redirect_to_https of this AssociateCertificateV2Response.
 
         是否开启http到https的重定向，false为关闭，true为开启，默认为false
 
@@ -218,7 +218,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @property
     def verified_client_certificate_enabled(self):
-        """Gets the verified_client_certificate_enabled of this AssociateCertificateV2Response.
+        r"""Gets the verified_client_certificate_enabled of this AssociateCertificateV2Response.
 
         是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 
@@ -229,7 +229,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @verified_client_certificate_enabled.setter
     def verified_client_certificate_enabled(self, verified_client_certificate_enabled):
-        """Sets the verified_client_certificate_enabled of this AssociateCertificateV2Response.
+        r"""Sets the verified_client_certificate_enabled of this AssociateCertificateV2Response.
 
         是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 
@@ -240,7 +240,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @property
     def ingress_http_port(self):
-        """Gets the ingress_http_port of this AssociateCertificateV2Response.
+        r"""Gets the ingress_http_port of this AssociateCertificateV2Response.
 
         访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；如果填写该参数，则必须同时填写https_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
@@ -251,7 +251,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @ingress_http_port.setter
     def ingress_http_port(self, ingress_http_port):
-        """Sets the ingress_http_port of this AssociateCertificateV2Response.
+        r"""Sets the ingress_http_port of this AssociateCertificateV2Response.
 
         访问该域名绑定的http协议入方向端口，-1表示无端口且协议不支持，可使用80默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTP协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认80端口；如果填写该参数，则必须同时填写https_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
@@ -262,7 +262,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @property
     def ingress_https_port(self):
-        """Gets the ingress_https_port of this AssociateCertificateV2Response.
+        r"""Gets the ingress_https_port of this AssociateCertificateV2Response.
 
         访问该域名绑定的https协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；如果填写该参数，则必须同时填写http_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
@@ -273,7 +273,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @ingress_https_port.setter
     def ingress_https_port(self, ingress_https_port):
-        """Sets the ingress_https_port of this AssociateCertificateV2Response.
+        r"""Sets the ingress_https_port of this AssociateCertificateV2Response.
 
         访问该域名绑定的https协议入方向端口，-1表示无端口且协议不支持，可使用443默认端口，其他有效端口允许的取值范围为1024~49151，需为实例已开放的HTTPS协议的自定义入方向端口。  当创建域名时，该参数未填表示用默认443端口；如果填写该参数，则必须同时填写http_port；如果要http_port和https_port同时使用默认端口，则两个参数都不填。  当修改域名时，该参数未填表示不修改该端口。 
 
@@ -284,7 +284,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @property
     def ssl_name(self):
-        """Gets the ssl_name of this AssociateCertificateV2Response.
+        r"""Gets the ssl_name of this AssociateCertificateV2Response.
 
         证书的名称
 
@@ -295,7 +295,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @ssl_name.setter
     def ssl_name(self, ssl_name):
-        """Sets the ssl_name of this AssociateCertificateV2Response.
+        r"""Sets the ssl_name of this AssociateCertificateV2Response.
 
         证书的名称
 
@@ -306,7 +306,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @property
     def ssl_id(self):
-        """Gets the ssl_id of this AssociateCertificateV2Response.
+        r"""Gets the ssl_id of this AssociateCertificateV2Response.
 
         证书的编号
 
@@ -317,7 +317,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @ssl_id.setter
     def ssl_id(self, ssl_id):
-        """Sets the ssl_id of this AssociateCertificateV2Response.
+        r"""Sets the ssl_id of this AssociateCertificateV2Response.
 
         证书的编号
 
@@ -328,7 +328,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @property
     def ssl_infos(self):
-        """Gets the ssl_infos of this AssociateCertificateV2Response.
+        r"""Gets the ssl_infos of this AssociateCertificateV2Response.
 
         SSL证书列表。
 
@@ -339,7 +339,7 @@ class AssociateCertificateV2Response(SdkResponse):
 
     @ssl_infos.setter
     def ssl_infos(self, ssl_infos):
-        """Sets the ssl_infos of this AssociateCertificateV2Response.
+        r"""Sets the ssl_infos of this AssociateCertificateV2Response.
 
         SSL证书列表。
 

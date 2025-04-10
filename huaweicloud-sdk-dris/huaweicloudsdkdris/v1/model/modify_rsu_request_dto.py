@@ -35,7 +35,7 @@ class ModifyRsuRequestDTO:
     }
 
     def __init__(self, name=None, description=None, ip=None, position_description=None, related_edge_num=None, intersection_id=None):
-        """ModifyRsuRequestDTO
+        r"""ModifyRsuRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ModifyRsuRequestDTO:
 
     @property
     def name(self):
-        """Gets the name of this ModifyRsuRequestDTO.
+        r"""Gets the name of this ModifyRsuRequestDTO.
 
         **参数说明**：RSU的名字。  **取值范围**：长度不低于1不超过128，只允许中文、字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -89,7 +89,7 @@ class ModifyRsuRequestDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyRsuRequestDTO.
+        r"""Sets the name of this ModifyRsuRequestDTO.
 
         **参数说明**：RSU的名字。  **取值范围**：长度不低于1不超过128，只允许中文、字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -100,7 +100,7 @@ class ModifyRsuRequestDTO:
 
     @property
     def description(self):
-        """Gets the description of this ModifyRsuRequestDTO.
+        r"""Gets the description of this ModifyRsuRequestDTO.
 
         **参数说明**：RSU的描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文分号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -111,7 +111,7 @@ class ModifyRsuRequestDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModifyRsuRequestDTO.
+        r"""Sets the description of this ModifyRsuRequestDTO.
 
         **参数说明**：RSU的描述。  **取值范围**：只允许中文、字母、数字、下划线（_）、中文分号（；）、中文冒号（：）、中文问号（？）、中文感叹号（！）中文逗号（，）、中文句号（。）、英文分号（;）、英文冒号（:）、英文逗号（,）、英文句号（.）、英文问号（?）、英文感叹号（!）、顿号（、）、连接符（-）的组合。
 
@@ -122,7 +122,7 @@ class ModifyRsuRequestDTO:
 
     @property
     def ip(self):
-        """Gets the ip of this ModifyRsuRequestDTO.
+        r"""Gets the ip of this ModifyRsuRequestDTO.
 
         **参数说明**：RSU的IP。满足IP的格式，例如127.0.0.1。
 
@@ -133,7 +133,7 @@ class ModifyRsuRequestDTO:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ModifyRsuRequestDTO.
+        r"""Sets the ip of this ModifyRsuRequestDTO.
 
         **参数说明**：RSU的IP。满足IP的格式，例如127.0.0.1。
 
@@ -144,7 +144,7 @@ class ModifyRsuRequestDTO:
 
     @property
     def position_description(self):
-        """Gets the position_description of this ModifyRsuRequestDTO.
+        r"""Gets the position_description of this ModifyRsuRequestDTO.
 
         **参数说明**：安装位置编码，由用户自定义。  **取值范围**：长度不低于1不超过128，只允许字母、数字、下划线（_）的组合。
 
@@ -155,7 +155,7 @@ class ModifyRsuRequestDTO:
 
     @position_description.setter
     def position_description(self, position_description):
-        """Sets the position_description of this ModifyRsuRequestDTO.
+        r"""Sets the position_description of this ModifyRsuRequestDTO.
 
         **参数说明**：安装位置编码，由用户自定义。  **取值范围**：长度不低于1不超过128，只允许字母、数字、下划线（_）的组合。
 
@@ -166,7 +166,7 @@ class ModifyRsuRequestDTO:
 
     @property
     def related_edge_num(self):
-        """Gets the related_edge_num of this ModifyRsuRequestDTO.
+        r"""Gets the related_edge_num of this ModifyRsuRequestDTO.
 
         **参数说明**：RSU可关联的Edge的数量，修改值需大于等于当前已连接设备。
 
@@ -177,7 +177,7 @@ class ModifyRsuRequestDTO:
 
     @related_edge_num.setter
     def related_edge_num(self, related_edge_num):
-        """Sets the related_edge_num of this ModifyRsuRequestDTO.
+        r"""Sets the related_edge_num of this ModifyRsuRequestDTO.
 
         **参数说明**：RSU可关联的Edge的数量，修改值需大于等于当前已连接设备。
 
@@ -188,7 +188,7 @@ class ModifyRsuRequestDTO:
 
     @property
     def intersection_id(self):
-        """Gets the intersection_id of this ModifyRsuRequestDTO.
+        r"""Gets the intersection_id of this ModifyRsuRequestDTO.
 
         **参数说明**：在地图中，rsu所在区域对应的路口ID，也即区域ID拼接路口ID，格式为：region-node_id。其中路网最基本的构成即节点和节点之间连接的路段。节点可以是路口，也可以是一条 路的端点。一个节点的ID在同一个区域内是唯一的。
 
@@ -199,7 +199,7 @@ class ModifyRsuRequestDTO:
 
     @intersection_id.setter
     def intersection_id(self, intersection_id):
-        """Sets the intersection_id of this ModifyRsuRequestDTO.
+        r"""Sets the intersection_id of this ModifyRsuRequestDTO.
 
         **参数说明**：在地图中，rsu所在区域对应的路口ID，也即区域ID拼接路口ID，格式为：region-node_id。其中路网最基本的构成即节点和节点之间连接的路段。节点可以是路口，也可以是一条 路的端点。一个节点的ID在同一个区域内是唯一的。
 

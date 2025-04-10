@@ -25,7 +25,7 @@ class ErrorCount:
     }
 
     def __init__(self, empty=None):
-        """ErrorCount
+        r"""ErrorCount
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ErrorCount:
 
     @property
     def empty(self):
-        """Gets the empty of this ErrorCount.
+        r"""Gets the empty of this ErrorCount.
 
         为空。
 
@@ -54,7 +54,7 @@ class ErrorCount:
 
     @empty.setter
     def empty(self, empty):
-        """Sets the empty of this ErrorCount.
+        r"""Sets the empty of this ErrorCount.
 
         为空。
 

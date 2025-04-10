@@ -37,7 +37,7 @@ class CmAttributeVO:
     }
 
     def __init__(self, id=None, default_attr_name_cn=None, default_attr_name_en=None, cust_attr_name=None, status=None, create_time=None, modify_time=None):
-        """CmAttributeVO
+        r"""CmAttributeVO
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CmAttributeVO:
 
     @property
     def id(self):
-        """Gets the id of this CmAttributeVO.
+        r"""Gets the id of this CmAttributeVO.
 
         自定义属性标识
 
@@ -96,7 +96,7 @@ class CmAttributeVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CmAttributeVO.
+        r"""Sets the id of this CmAttributeVO.
 
         自定义属性标识
 
@@ -107,7 +107,7 @@ class CmAttributeVO:
 
     @property
     def default_attr_name_cn(self):
-        """Gets the default_attr_name_cn of this CmAttributeVO.
+        r"""Gets the default_attr_name_cn of this CmAttributeVO.
 
         默认属性名称中文
 
@@ -118,7 +118,7 @@ class CmAttributeVO:
 
     @default_attr_name_cn.setter
     def default_attr_name_cn(self, default_attr_name_cn):
-        """Sets the default_attr_name_cn of this CmAttributeVO.
+        r"""Sets the default_attr_name_cn of this CmAttributeVO.
 
         默认属性名称中文
 
@@ -129,7 +129,7 @@ class CmAttributeVO:
 
     @property
     def default_attr_name_en(self):
-        """Gets the default_attr_name_en of this CmAttributeVO.
+        r"""Gets the default_attr_name_en of this CmAttributeVO.
 
         默认属性名称英文
 
@@ -140,7 +140,7 @@ class CmAttributeVO:
 
     @default_attr_name_en.setter
     def default_attr_name_en(self, default_attr_name_en):
-        """Sets the default_attr_name_en of this CmAttributeVO.
+        r"""Sets the default_attr_name_en of this CmAttributeVO.
 
         默认属性名称英文
 
@@ -151,7 +151,7 @@ class CmAttributeVO:
 
     @property
     def cust_attr_name(self):
-        """Gets the cust_attr_name of this CmAttributeVO.
+        r"""Gets the cust_attr_name of this CmAttributeVO.
 
         自定义属性名称
 
@@ -162,7 +162,7 @@ class CmAttributeVO:
 
     @cust_attr_name.setter
     def cust_attr_name(self, cust_attr_name):
-        """Sets the cust_attr_name of this CmAttributeVO.
+        r"""Sets the cust_attr_name of this CmAttributeVO.
 
         自定义属性名称
 
@@ -173,7 +173,7 @@ class CmAttributeVO:
 
     @property
     def status(self):
-        """Gets the status of this CmAttributeVO.
+        r"""Gets the status of this CmAttributeVO.
 
         自定义属性状态：0 未启用，1 已启用。
 
@@ -184,7 +184,7 @@ class CmAttributeVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CmAttributeVO.
+        r"""Sets the status of this CmAttributeVO.
 
         自定义属性状态：0 未启用，1 已启用。
 
@@ -195,7 +195,7 @@ class CmAttributeVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CmAttributeVO.
+        r"""Gets the create_time of this CmAttributeVO.
 
         创建时间
 
@@ -206,7 +206,7 @@ class CmAttributeVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CmAttributeVO.
+        r"""Sets the create_time of this CmAttributeVO.
 
         创建时间
 
@@ -217,7 +217,7 @@ class CmAttributeVO:
 
     @property
     def modify_time(self):
-        """Gets the modify_time of this CmAttributeVO.
+        r"""Gets the modify_time of this CmAttributeVO.
 
         更新时间
 
@@ -228,7 +228,7 @@ class CmAttributeVO:
 
     @modify_time.setter
     def modify_time(self, modify_time):
-        """Sets the modify_time of this CmAttributeVO.
+        r"""Sets the modify_time of this CmAttributeVO.
 
         更新时间
 

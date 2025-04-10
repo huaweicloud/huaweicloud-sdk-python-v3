@@ -27,7 +27,7 @@ class ReplicateKeyRequest:
     }
 
     def __init__(self, key_id=None, body=None):
-        """ReplicateKeyRequest
+        r"""ReplicateKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ReplicateKeyRequest:
 
     @property
     def key_id(self):
-        """Gets the key_id of this ReplicateKeyRequest.
+        r"""Gets the key_id of this ReplicateKeyRequest.
 
         待复制的密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -60,7 +60,7 @@ class ReplicateKeyRequest:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this ReplicateKeyRequest.
+        r"""Sets the key_id of this ReplicateKeyRequest.
 
         待复制的密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -71,7 +71,7 @@ class ReplicateKeyRequest:
 
     @property
     def body(self):
-        """Gets the body of this ReplicateKeyRequest.
+        r"""Gets the body of this ReplicateKeyRequest.
 
         :return: The body of this ReplicateKeyRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.ReplicateKeyRequestBody`
@@ -80,7 +80,7 @@ class ReplicateKeyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ReplicateKeyRequest.
+        r"""Sets the body of this ReplicateKeyRequest.
 
         :param body: The body of this ReplicateKeyRequest.
         :type body: :class:`huaweicloudsdkkms.v2.ReplicateKeyRequestBody`

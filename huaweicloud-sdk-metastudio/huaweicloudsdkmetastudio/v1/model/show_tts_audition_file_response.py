@@ -30,7 +30,7 @@ class ShowTtsAuditionFileResponse(SdkResponse):
     }
 
     def __init__(self, is_file_complete=None, message=None, files=None):
-        """ShowTtsAuditionFileResponse
+        r"""ShowTtsAuditionFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTtsAuditionFileResponse(SdkResponse):
 
     @property
     def is_file_complete(self):
-        """Gets the is_file_complete of this ShowTtsAuditionFileResponse.
+        r"""Gets the is_file_complete of this ShowTtsAuditionFileResponse.
 
         试听文件是否已生成完成。该标记为false时，应该每隔5秒再次调用本接口获取试听文件。
 
@@ -69,7 +69,7 @@ class ShowTtsAuditionFileResponse(SdkResponse):
 
     @is_file_complete.setter
     def is_file_complete(self, is_file_complete):
-        """Sets the is_file_complete of this ShowTtsAuditionFileResponse.
+        r"""Sets the is_file_complete of this ShowTtsAuditionFileResponse.
 
         试听文件是否已生成完成。该标记为false时，应该每隔5秒再次调用本接口获取试听文件。
 
@@ -80,7 +80,7 @@ class ShowTtsAuditionFileResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowTtsAuditionFileResponse.
+        r"""Gets the message of this ShowTtsAuditionFileResponse.
 
         异常信息。
 
@@ -91,7 +91,7 @@ class ShowTtsAuditionFileResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowTtsAuditionFileResponse.
+        r"""Sets the message of this ShowTtsAuditionFileResponse.
 
         异常信息。
 
@@ -102,7 +102,7 @@ class ShowTtsAuditionFileResponse(SdkResponse):
 
     @property
     def files(self):
-        """Gets the files of this ShowTtsAuditionFileResponse.
+        r"""Gets the files of this ShowTtsAuditionFileResponse.
 
         试听文件列表。
 
@@ -113,7 +113,7 @@ class ShowTtsAuditionFileResponse(SdkResponse):
 
     @files.setter
     def files(self, files):
-        """Sets the files of this ShowTtsAuditionFileResponse.
+        r"""Sets the files of this ShowTtsAuditionFileResponse.
 
         试听文件列表。
 

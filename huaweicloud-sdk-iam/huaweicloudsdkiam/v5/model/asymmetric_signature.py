@@ -25,7 +25,7 @@ class AsymmetricSignature:
     }
 
     def __init__(self, asymmetric_signature_switch=None):
-        """AsymmetricSignature
+        r"""AsymmetricSignature
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AsymmetricSignature:
 
     @property
     def asymmetric_signature_switch(self):
-        """Gets the asymmetric_signature_switch of this AsymmetricSignature.
+        r"""Gets the asymmetric_signature_switch of this AsymmetricSignature.
 
         非对称签名开关。
 
@@ -53,7 +53,7 @@ class AsymmetricSignature:
 
     @asymmetric_signature_switch.setter
     def asymmetric_signature_switch(self, asymmetric_signature_switch):
-        """Sets the asymmetric_signature_switch of this AsymmetricSignature.
+        r"""Sets the asymmetric_signature_switch of this AsymmetricSignature.
 
         非对称签名开关。
 

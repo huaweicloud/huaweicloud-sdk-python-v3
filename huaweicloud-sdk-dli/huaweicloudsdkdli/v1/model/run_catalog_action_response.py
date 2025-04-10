@@ -26,7 +26,7 @@ class RunCatalogActionResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """RunCatalogActionResponse
+        r"""RunCatalogActionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RunCatalogActionResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this RunCatalogActionResponse.
+        r"""Gets the body of this RunCatalogActionResponse.
 
         :return: The body of this RunCatalogActionResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class RunCatalogActionResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunCatalogActionResponse.
+        r"""Sets the body of this RunCatalogActionResponse.
 
         :param body: The body of this RunCatalogActionResponse.
         :type body: str

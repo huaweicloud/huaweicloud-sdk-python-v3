@@ -31,7 +31,7 @@ class UpdateDomainProtectPolicyResponseBodyProtectPolicy:
     }
 
     def __init__(self, allow_user=None, operation_protection=None, admin_check=None, scene=None):
-        """UpdateDomainProtectPolicyResponseBodyProtectPolicy
+        r"""UpdateDomainProtectPolicyResponseBodyProtectPolicy
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class UpdateDomainProtectPolicyResponseBodyProtectPolicy:
 
     @property
     def allow_user(self):
-        """Gets the allow_user of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Gets the allow_user of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
 
         :return: The allow_user of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
         :rtype: :class:`huaweicloudsdkiam.v3.AllowUserBody`
@@ -69,7 +69,7 @@ class UpdateDomainProtectPolicyResponseBodyProtectPolicy:
 
     @allow_user.setter
     def allow_user(self, allow_user):
-        """Sets the allow_user of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Sets the allow_user of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
 
         :param allow_user: The allow_user of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
         :type allow_user: :class:`huaweicloudsdkiam.v3.AllowUserBody`
@@ -78,7 +78,7 @@ class UpdateDomainProtectPolicyResponseBodyProtectPolicy:
 
     @property
     def operation_protection(self):
-        """Gets the operation_protection of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Gets the operation_protection of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
 
         是否开启操作保护，取值范围true或false。
 
@@ -89,7 +89,7 @@ class UpdateDomainProtectPolicyResponseBodyProtectPolicy:
 
     @operation_protection.setter
     def operation_protection(self, operation_protection):
-        """Sets the operation_protection of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Sets the operation_protection of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
 
         是否开启操作保护，取值范围true或false。
 
@@ -100,7 +100,7 @@ class UpdateDomainProtectPolicyResponseBodyProtectPolicy:
 
     @property
     def admin_check(self):
-        """Gets the admin_check of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Gets the admin_check of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
 
         是否指定人员验证。on为指定人员验证，必须填写scene参数。off为操作员验证。
 
@@ -111,7 +111,7 @@ class UpdateDomainProtectPolicyResponseBodyProtectPolicy:
 
     @admin_check.setter
     def admin_check(self, admin_check):
-        """Sets the admin_check of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Sets the admin_check of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
 
         是否指定人员验证。on为指定人员验证，必须填写scene参数。off为操作员验证。
 
@@ -122,7 +122,7 @@ class UpdateDomainProtectPolicyResponseBodyProtectPolicy:
 
     @property
     def scene(self):
-        """Gets the scene of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Gets the scene of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
 
         操作保护指定人员验证方式，admin_check为on时，必须填写。包括mobile、email。
 
@@ -133,7 +133,7 @@ class UpdateDomainProtectPolicyResponseBodyProtectPolicy:
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Sets the scene of this UpdateDomainProtectPolicyResponseBodyProtectPolicy.
 
         操作保护指定人员验证方式，admin_check为on时，必须填写。包括mobile、email。
 

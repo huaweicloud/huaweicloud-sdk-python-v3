@@ -39,7 +39,7 @@ class ListRecordContentsRequest:
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None, record_type=None, start_time=None, end_time=None, offset=None, limit=None):
-        """ListRecordContentsRequest
+        r"""ListRecordContentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListRecordContentsRequest:
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this ListRecordContentsRequest.
+        r"""Gets the publish_domain of this ListRecordContentsRequest.
 
         直播推流域名
 
@@ -102,7 +102,7 @@ class ListRecordContentsRequest:
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this ListRecordContentsRequest.
+        r"""Sets the publish_domain of this ListRecordContentsRequest.
 
         直播推流域名
 
@@ -113,7 +113,7 @@ class ListRecordContentsRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListRecordContentsRequest.
+        r"""Gets the app of this ListRecordContentsRequest.
 
         流应用名称
 
@@ -124,7 +124,7 @@ class ListRecordContentsRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListRecordContentsRequest.
+        r"""Sets the app of this ListRecordContentsRequest.
 
         流应用名称
 
@@ -135,7 +135,7 @@ class ListRecordContentsRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this ListRecordContentsRequest.
+        r"""Gets the stream of this ListRecordContentsRequest.
 
         流名称
 
@@ -146,7 +146,7 @@ class ListRecordContentsRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ListRecordContentsRequest.
+        r"""Sets the stream of this ListRecordContentsRequest.
 
         流名称
 
@@ -157,7 +157,7 @@ class ListRecordContentsRequest:
 
     @property
     def record_type(self):
-        """Gets the record_type of this ListRecordContentsRequest.
+        r"""Gets the record_type of this ListRecordContentsRequest.
 
         录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 
 
@@ -168,7 +168,7 @@ class ListRecordContentsRequest:
 
     @record_type.setter
     def record_type(self, record_type):
-        """Sets the record_type of this ListRecordContentsRequest.
+        r"""Sets the record_type of this ListRecordContentsRequest.
 
         录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD：持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD：命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。 
 
@@ -179,7 +179,7 @@ class ListRecordContentsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListRecordContentsRequest.
+        r"""Gets the start_time of this ListRecordContentsRequest.
 
         开始时间,格式为：yyyy-mm-ddThh:mm:ssZ，UTC时间
 
@@ -190,7 +190,7 @@ class ListRecordContentsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListRecordContentsRequest.
+        r"""Sets the start_time of this ListRecordContentsRequest.
 
         开始时间,格式为：yyyy-mm-ddThh:mm:ssZ，UTC时间
 
@@ -201,7 +201,7 @@ class ListRecordContentsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListRecordContentsRequest.
+        r"""Gets the end_time of this ListRecordContentsRequest.
 
         结束时间，格式为：yyyy-mm-ddThh:mm:ssZ，UTC时间
 
@@ -212,7 +212,7 @@ class ListRecordContentsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListRecordContentsRequest.
+        r"""Sets the end_time of this ListRecordContentsRequest.
 
         结束时间，格式为：yyyy-mm-ddThh:mm:ssZ，UTC时间
 
@@ -223,7 +223,7 @@ class ListRecordContentsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRecordContentsRequest.
+        r"""Gets the offset of this ListRecordContentsRequest.
 
         分页编号，从0开始算
 
@@ -234,7 +234,7 @@ class ListRecordContentsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRecordContentsRequest.
+        r"""Sets the offset of this ListRecordContentsRequest.
 
         分页编号，从0开始算
 
@@ -245,7 +245,7 @@ class ListRecordContentsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRecordContentsRequest.
+        r"""Gets the limit of this ListRecordContentsRequest.
 
         每页记录数，取值范围[1,100]
 
@@ -256,7 +256,7 @@ class ListRecordContentsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRecordContentsRequest.
+        r"""Sets the limit of this ListRecordContentsRequest.
 
         每页记录数，取值范围[1,100]
 

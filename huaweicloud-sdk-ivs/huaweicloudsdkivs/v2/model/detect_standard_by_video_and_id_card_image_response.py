@@ -30,7 +30,7 @@ class DetectStandardByVideoAndIdCardImageResponse(SdkResponse):
     }
 
     def __init__(self, meta=None, result=None, x_request_id=None):
-        """DetectStandardByVideoAndIdCardImageResponse
+        r"""DetectStandardByVideoAndIdCardImageResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DetectStandardByVideoAndIdCardImageResponse(SdkResponse):
 
     @property
     def meta(self):
-        """Gets the meta of this DetectStandardByVideoAndIdCardImageResponse.
+        r"""Gets the meta of this DetectStandardByVideoAndIdCardImageResponse.
 
         :return: The meta of this DetectStandardByVideoAndIdCardImageResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.Meta`
@@ -67,7 +67,7 @@ class DetectStandardByVideoAndIdCardImageResponse(SdkResponse):
 
     @meta.setter
     def meta(self, meta):
-        """Sets the meta of this DetectStandardByVideoAndIdCardImageResponse.
+        r"""Sets the meta of this DetectStandardByVideoAndIdCardImageResponse.
 
         :param meta: The meta of this DetectStandardByVideoAndIdCardImageResponse.
         :type meta: :class:`huaweicloudsdkivs.v2.Meta`
@@ -76,7 +76,7 @@ class DetectStandardByVideoAndIdCardImageResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DetectStandardByVideoAndIdCardImageResponse.
+        r"""Gets the result of this DetectStandardByVideoAndIdCardImageResponse.
 
         :return: The result of this DetectStandardByVideoAndIdCardImageResponse.
         :rtype: :class:`huaweicloudsdkivs.v2.IvsStandardByVideoAndIdCardImageResponseBodyResult`
@@ -85,7 +85,7 @@ class DetectStandardByVideoAndIdCardImageResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DetectStandardByVideoAndIdCardImageResponse.
+        r"""Sets the result of this DetectStandardByVideoAndIdCardImageResponse.
 
         :param result: The result of this DetectStandardByVideoAndIdCardImageResponse.
         :type result: :class:`huaweicloudsdkivs.v2.IvsStandardByVideoAndIdCardImageResponseBodyResult`
@@ -94,7 +94,7 @@ class DetectStandardByVideoAndIdCardImageResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DetectStandardByVideoAndIdCardImageResponse.
+        r"""Gets the x_request_id of this DetectStandardByVideoAndIdCardImageResponse.
 
         :return: The x_request_id of this DetectStandardByVideoAndIdCardImageResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class DetectStandardByVideoAndIdCardImageResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DetectStandardByVideoAndIdCardImageResponse.
+        r"""Sets the x_request_id of this DetectStandardByVideoAndIdCardImageResponse.
 
         :param x_request_id: The x_request_id of this DetectStandardByVideoAndIdCardImageResponse.
         :type x_request_id: str

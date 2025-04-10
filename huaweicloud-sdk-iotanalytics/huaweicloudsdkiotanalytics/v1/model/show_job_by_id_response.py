@@ -28,7 +28,7 @@ class ShowJobByIdResponse(SdkResponse):
     }
 
     def __init__(self, job_config=None, job_info=None):
-        """ShowJobByIdResponse
+        r"""ShowJobByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowJobByIdResponse(SdkResponse):
 
     @property
     def job_config(self):
-        """Gets the job_config of this ShowJobByIdResponse.
+        r"""Gets the job_config of this ShowJobByIdResponse.
 
         实时分析作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：实时分析算子配置指南。
 
@@ -62,7 +62,7 @@ class ShowJobByIdResponse(SdkResponse):
 
     @job_config.setter
     def job_config(self, job_config):
-        """Sets the job_config of this ShowJobByIdResponse.
+        r"""Sets the job_config of this ShowJobByIdResponse.
 
         实时分析作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：实时分析算子配置指南。
 
@@ -73,7 +73,7 @@ class ShowJobByIdResponse(SdkResponse):
 
     @property
     def job_info(self):
-        """Gets the job_info of this ShowJobByIdResponse.
+        r"""Gets the job_info of this ShowJobByIdResponse.
 
         :return: The job_info of this ShowJobByIdResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.StreamingJobInfoDto`
@@ -82,7 +82,7 @@ class ShowJobByIdResponse(SdkResponse):
 
     @job_info.setter
     def job_info(self, job_info):
-        """Sets the job_info of this ShowJobByIdResponse.
+        r"""Sets the job_info of this ShowJobByIdResponse.
 
         :param job_info: The job_info of this ShowJobByIdResponse.
         :type job_info: :class:`huaweicloudsdkiotanalytics.v1.StreamingJobInfoDto`

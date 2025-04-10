@@ -30,7 +30,7 @@ class ListVerificationProgressResponse(SdkResponse):
     }
 
     def __init__(self, total_objects_count=None, completed_objects_count=None, objects_list=None):
-        """ListVerificationProgressResponse
+        r"""ListVerificationProgressResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListVerificationProgressResponse(SdkResponse):
 
     @property
     def total_objects_count(self):
-        """Gets the total_objects_count of this ListVerificationProgressResponse.
+        r"""Gets the total_objects_count of this ListVerificationProgressResponse.
 
         对象总数。
 
@@ -69,7 +69,7 @@ class ListVerificationProgressResponse(SdkResponse):
 
     @total_objects_count.setter
     def total_objects_count(self, total_objects_count):
-        """Sets the total_objects_count of this ListVerificationProgressResponse.
+        r"""Sets the total_objects_count of this ListVerificationProgressResponse.
 
         对象总数。
 
@@ -80,7 +80,7 @@ class ListVerificationProgressResponse(SdkResponse):
 
     @property
     def completed_objects_count(self):
-        """Gets the completed_objects_count of this ListVerificationProgressResponse.
+        r"""Gets the completed_objects_count of this ListVerificationProgressResponse.
 
         完成迁移的对象数量。
 
@@ -91,7 +91,7 @@ class ListVerificationProgressResponse(SdkResponse):
 
     @completed_objects_count.setter
     def completed_objects_count(self, completed_objects_count):
-        """Sets the completed_objects_count of this ListVerificationProgressResponse.
+        r"""Sets the completed_objects_count of this ListVerificationProgressResponse.
 
         完成迁移的对象数量。
 
@@ -102,7 +102,7 @@ class ListVerificationProgressResponse(SdkResponse):
 
     @property
     def objects_list(self):
-        """Gets the objects_list of this ListVerificationProgressResponse.
+        r"""Gets the objects_list of this ListVerificationProgressResponse.
 
         对象迁移的对象列表。
 
@@ -113,7 +113,7 @@ class ListVerificationProgressResponse(SdkResponse):
 
     @objects_list.setter
     def objects_list(self, objects_list):
-        """Sets the objects_list of this ListVerificationProgressResponse.
+        r"""Sets the objects_list of this ListVerificationProgressResponse.
 
         对象迁移的对象列表。
 

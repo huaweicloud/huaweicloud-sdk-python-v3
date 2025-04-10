@@ -27,7 +27,7 @@ class NetworkSwitchPolicyReq:
     }
 
     def __init__(self, cid=None, network_switch_policy_id=None):
-        """NetworkSwitchPolicyReq
+        r"""NetworkSwitchPolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NetworkSwitchPolicyReq:
 
     @property
     def cid(self):
-        """Gets the cid of this NetworkSwitchPolicyReq.
+        r"""Gets the cid of this NetworkSwitchPolicyReq.
 
         容器ID
 
@@ -60,7 +60,7 @@ class NetworkSwitchPolicyReq:
 
     @cid.setter
     def cid(self, cid):
-        """Sets the cid of this NetworkSwitchPolicyReq.
+        r"""Sets the cid of this NetworkSwitchPolicyReq.
 
         容器ID
 
@@ -71,7 +71,7 @@ class NetworkSwitchPolicyReq:
 
     @property
     def network_switch_policy_id(self):
-        """Gets the network_switch_policy_id of this NetworkSwitchPolicyReq.
+        r"""Gets the network_switch_policy_id of this NetworkSwitchPolicyReq.
 
         网络切换策略标识
 
@@ -82,7 +82,7 @@ class NetworkSwitchPolicyReq:
 
     @network_switch_policy_id.setter
     def network_switch_policy_id(self, network_switch_policy_id):
-        """Sets the network_switch_policy_id of this NetworkSwitchPolicyReq.
+        r"""Sets the network_switch_policy_id of this NetworkSwitchPolicyReq.
 
         网络切换策略标识
 

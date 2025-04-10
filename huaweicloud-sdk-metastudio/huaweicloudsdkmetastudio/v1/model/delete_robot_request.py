@@ -27,7 +27,7 @@ class DeleteRobotRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """DeleteRobotRequest
+        r"""DeleteRobotRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteRobotRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this DeleteRobotRequest.
+        r"""Gets the x_app_user_id of this DeleteRobotRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class DeleteRobotRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this DeleteRobotRequest.
+        r"""Sets the x_app_user_id of this DeleteRobotRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class DeleteRobotRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteRobotRequest.
+        r"""Gets the body of this DeleteRobotRequest.
 
         :return: The body of this DeleteRobotRequest.
         :rtype: list[str]
@@ -81,7 +81,7 @@ class DeleteRobotRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteRobotRequest.
+        r"""Sets the body of this DeleteRobotRequest.
 
         :param body: The body of this DeleteRobotRequest.
         :type body: list[str]

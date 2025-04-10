@@ -67,7 +67,7 @@ class AgentConfig:
     }
 
     def __init__(self, agent_id=None, db_enable=None, db_shadow_repository=None, db_shadow_type=None, log_level=None, log_path=None, main_switch=None, redis_enable=None, redis_shadow_key_prefix=None, redis_shadow_repository=None, redis_shadow_type=None, kafka_enable=None, kafka_shadow_topic_prefix=None, app_log_level=None, app_log_path=None, mock_rule_list=None, clickhouse_enable=None, clickhouse_shadow_type=None, clickhouse_shadow_repository=None, pulsar_enable=None, pulsar_shadow_topic_prefix=None, extensions=None):
-        """AgentConfig
+        r"""AgentConfig
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class AgentConfig:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this AgentConfig.
+        r"""Gets the agent_id of this AgentConfig.
 
         探针id
 
@@ -201,7 +201,7 @@ class AgentConfig:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this AgentConfig.
+        r"""Sets the agent_id of this AgentConfig.
 
         探针id
 
@@ -212,7 +212,7 @@ class AgentConfig:
 
     @property
     def db_enable(self):
-        """Gets the db_enable of this AgentConfig.
+        r"""Gets the db_enable of this AgentConfig.
 
         是否开启数据库影子规则
 
@@ -223,7 +223,7 @@ class AgentConfig:
 
     @db_enable.setter
     def db_enable(self, db_enable):
-        """Sets the db_enable of this AgentConfig.
+        r"""Sets the db_enable of this AgentConfig.
 
         是否开启数据库影子规则
 
@@ -234,7 +234,7 @@ class AgentConfig:
 
     @property
     def db_shadow_repository(self):
-        """Gets the db_shadow_repository of this AgentConfig.
+        r"""Gets the db_shadow_repository of this AgentConfig.
 
         数据库影子库名称
 
@@ -245,7 +245,7 @@ class AgentConfig:
 
     @db_shadow_repository.setter
     def db_shadow_repository(self, db_shadow_repository):
-        """Sets the db_shadow_repository of this AgentConfig.
+        r"""Sets the db_shadow_repository of this AgentConfig.
 
         数据库影子库名称
 
@@ -256,7 +256,7 @@ class AgentConfig:
 
     @property
     def db_shadow_type(self):
-        """Gets the db_shadow_type of this AgentConfig.
+        r"""Gets the db_shadow_type of this AgentConfig.
 
         数据库影子库类型
 
@@ -267,7 +267,7 @@ class AgentConfig:
 
     @db_shadow_type.setter
     def db_shadow_type(self, db_shadow_type):
-        """Sets the db_shadow_type of this AgentConfig.
+        r"""Sets the db_shadow_type of this AgentConfig.
 
         数据库影子库类型
 
@@ -278,7 +278,7 @@ class AgentConfig:
 
     @property
     def log_level(self):
-        """Gets the log_level of this AgentConfig.
+        r"""Gets the log_level of this AgentConfig.
 
         日志级别，枚举值：INFO，DEBUG，WARN，ERROR
 
@@ -289,7 +289,7 @@ class AgentConfig:
 
     @log_level.setter
     def log_level(self, log_level):
-        """Sets the log_level of this AgentConfig.
+        r"""Sets the log_level of this AgentConfig.
 
         日志级别，枚举值：INFO，DEBUG，WARN，ERROR
 
@@ -300,7 +300,7 @@ class AgentConfig:
 
     @property
     def log_path(self):
-        """Gets the log_path of this AgentConfig.
+        r"""Gets the log_path of this AgentConfig.
 
         日志路径
 
@@ -311,7 +311,7 @@ class AgentConfig:
 
     @log_path.setter
     def log_path(self, log_path):
-        """Sets the log_path of this AgentConfig.
+        r"""Sets the log_path of this AgentConfig.
 
         日志路径
 
@@ -322,7 +322,7 @@ class AgentConfig:
 
     @property
     def main_switch(self):
-        """Gets the main_switch of this AgentConfig.
+        r"""Gets the main_switch of this AgentConfig.
 
         影子规则开关
 
@@ -333,7 +333,7 @@ class AgentConfig:
 
     @main_switch.setter
     def main_switch(self, main_switch):
-        """Sets the main_switch of this AgentConfig.
+        r"""Sets the main_switch of this AgentConfig.
 
         影子规则开关
 
@@ -344,7 +344,7 @@ class AgentConfig:
 
     @property
     def redis_enable(self):
-        """Gets the redis_enable of this AgentConfig.
+        r"""Gets the redis_enable of this AgentConfig.
 
         是否开启redis影子库规则
 
@@ -355,7 +355,7 @@ class AgentConfig:
 
     @redis_enable.setter
     def redis_enable(self, redis_enable):
-        """Sets the redis_enable of this AgentConfig.
+        r"""Sets the redis_enable of this AgentConfig.
 
         是否开启redis影子库规则
 
@@ -366,7 +366,7 @@ class AgentConfig:
 
     @property
     def redis_shadow_key_prefix(self):
-        """Gets the redis_shadow_key_prefix of this AgentConfig.
+        r"""Gets the redis_shadow_key_prefix of this AgentConfig.
 
         redis影子库key前缀
 
@@ -377,7 +377,7 @@ class AgentConfig:
 
     @redis_shadow_key_prefix.setter
     def redis_shadow_key_prefix(self, redis_shadow_key_prefix):
-        """Sets the redis_shadow_key_prefix of this AgentConfig.
+        r"""Sets the redis_shadow_key_prefix of this AgentConfig.
 
         redis影子库key前缀
 
@@ -388,7 +388,7 @@ class AgentConfig:
 
     @property
     def redis_shadow_repository(self):
-        """Gets the redis_shadow_repository of this AgentConfig.
+        r"""Gets the redis_shadow_repository of this AgentConfig.
 
         redis影子库名称
 
@@ -399,7 +399,7 @@ class AgentConfig:
 
     @redis_shadow_repository.setter
     def redis_shadow_repository(self, redis_shadow_repository):
-        """Sets the redis_shadow_repository of this AgentConfig.
+        r"""Sets the redis_shadow_repository of this AgentConfig.
 
         redis影子库名称
 
@@ -410,7 +410,7 @@ class AgentConfig:
 
     @property
     def redis_shadow_type(self):
-        """Gets the redis_shadow_type of this AgentConfig.
+        r"""Gets the redis_shadow_type of this AgentConfig.
 
         redis影子库类型
 
@@ -421,7 +421,7 @@ class AgentConfig:
 
     @redis_shadow_type.setter
     def redis_shadow_type(self, redis_shadow_type):
-        """Sets the redis_shadow_type of this AgentConfig.
+        r"""Sets the redis_shadow_type of this AgentConfig.
 
         redis影子库类型
 
@@ -432,7 +432,7 @@ class AgentConfig:
 
     @property
     def kafka_enable(self):
-        """Gets the kafka_enable of this AgentConfig.
+        r"""Gets the kafka_enable of this AgentConfig.
 
         kafka影子规则开关
 
@@ -443,7 +443,7 @@ class AgentConfig:
 
     @kafka_enable.setter
     def kafka_enable(self, kafka_enable):
-        """Sets the kafka_enable of this AgentConfig.
+        r"""Sets the kafka_enable of this AgentConfig.
 
         kafka影子规则开关
 
@@ -454,7 +454,7 @@ class AgentConfig:
 
     @property
     def kafka_shadow_topic_prefix(self):
-        """Gets the kafka_shadow_topic_prefix of this AgentConfig.
+        r"""Gets the kafka_shadow_topic_prefix of this AgentConfig.
 
         kafka影子topic前缀
 
@@ -465,7 +465,7 @@ class AgentConfig:
 
     @kafka_shadow_topic_prefix.setter
     def kafka_shadow_topic_prefix(self, kafka_shadow_topic_prefix):
-        """Sets the kafka_shadow_topic_prefix of this AgentConfig.
+        r"""Sets the kafka_shadow_topic_prefix of this AgentConfig.
 
         kafka影子topic前缀
 
@@ -476,7 +476,7 @@ class AgentConfig:
 
     @property
     def app_log_level(self):
-        """Gets the app_log_level of this AgentConfig.
+        r"""Gets the app_log_level of this AgentConfig.
 
         应用日志等级（ALL/TRACE/DEBUG/INFO/WARN/ERROR/OFF）
 
@@ -487,7 +487,7 @@ class AgentConfig:
 
     @app_log_level.setter
     def app_log_level(self, app_log_level):
-        """Sets the app_log_level of this AgentConfig.
+        r"""Sets the app_log_level of this AgentConfig.
 
         应用日志等级（ALL/TRACE/DEBUG/INFO/WARN/ERROR/OFF）
 
@@ -498,7 +498,7 @@ class AgentConfig:
 
     @property
     def app_log_path(self):
-        """Gets the app_log_path of this AgentConfig.
+        r"""Gets the app_log_path of this AgentConfig.
 
         应用日志路径
 
@@ -509,7 +509,7 @@ class AgentConfig:
 
     @app_log_path.setter
     def app_log_path(self, app_log_path):
-        """Sets the app_log_path of this AgentConfig.
+        r"""Sets the app_log_path of this AgentConfig.
 
         应用日志路径
 
@@ -520,7 +520,7 @@ class AgentConfig:
 
     @property
     def mock_rule_list(self):
-        """Gets the mock_rule_list of this AgentConfig.
+        r"""Gets the mock_rule_list of this AgentConfig.
 
         mock规则列表
 
@@ -531,7 +531,7 @@ class AgentConfig:
 
     @mock_rule_list.setter
     def mock_rule_list(self, mock_rule_list):
-        """Sets the mock_rule_list of this AgentConfig.
+        r"""Sets the mock_rule_list of this AgentConfig.
 
         mock规则列表
 
@@ -542,7 +542,7 @@ class AgentConfig:
 
     @property
     def clickhouse_enable(self):
-        """Gets the clickhouse_enable of this AgentConfig.
+        r"""Gets the clickhouse_enable of this AgentConfig.
 
         clickhouse影子规则开关
 
@@ -553,7 +553,7 @@ class AgentConfig:
 
     @clickhouse_enable.setter
     def clickhouse_enable(self, clickhouse_enable):
-        """Sets the clickhouse_enable of this AgentConfig.
+        r"""Sets the clickhouse_enable of this AgentConfig.
 
         clickhouse影子规则开关
 
@@ -564,7 +564,7 @@ class AgentConfig:
 
     @property
     def clickhouse_shadow_type(self):
-        """Gets the clickhouse_shadow_type of this AgentConfig.
+        r"""Gets the clickhouse_shadow_type of this AgentConfig.
 
         clickhouse影子规则类型
 
@@ -575,7 +575,7 @@ class AgentConfig:
 
     @clickhouse_shadow_type.setter
     def clickhouse_shadow_type(self, clickhouse_shadow_type):
-        """Sets the clickhouse_shadow_type of this AgentConfig.
+        r"""Sets the clickhouse_shadow_type of this AgentConfig.
 
         clickhouse影子规则类型
 
@@ -586,7 +586,7 @@ class AgentConfig:
 
     @property
     def clickhouse_shadow_repository(self):
-        """Gets the clickhouse_shadow_repository of this AgentConfig.
+        r"""Gets the clickhouse_shadow_repository of this AgentConfig.
 
         clickhouse影子库映射信息
 
@@ -597,7 +597,7 @@ class AgentConfig:
 
     @clickhouse_shadow_repository.setter
     def clickhouse_shadow_repository(self, clickhouse_shadow_repository):
-        """Sets the clickhouse_shadow_repository of this AgentConfig.
+        r"""Sets the clickhouse_shadow_repository of this AgentConfig.
 
         clickhouse影子库映射信息
 
@@ -608,7 +608,7 @@ class AgentConfig:
 
     @property
     def pulsar_enable(self):
-        """Gets the pulsar_enable of this AgentConfig.
+        r"""Gets the pulsar_enable of this AgentConfig.
 
         是否开启pulsar影子库规则
 
@@ -619,7 +619,7 @@ class AgentConfig:
 
     @pulsar_enable.setter
     def pulsar_enable(self, pulsar_enable):
-        """Sets the pulsar_enable of this AgentConfig.
+        r"""Sets the pulsar_enable of this AgentConfig.
 
         是否开启pulsar影子库规则
 
@@ -630,7 +630,7 @@ class AgentConfig:
 
     @property
     def pulsar_shadow_topic_prefix(self):
-        """Gets the pulsar_shadow_topic_prefix of this AgentConfig.
+        r"""Gets the pulsar_shadow_topic_prefix of this AgentConfig.
 
         pulsar影子库前缀
 
@@ -641,7 +641,7 @@ class AgentConfig:
 
     @pulsar_shadow_topic_prefix.setter
     def pulsar_shadow_topic_prefix(self, pulsar_shadow_topic_prefix):
-        """Sets the pulsar_shadow_topic_prefix of this AgentConfig.
+        r"""Sets the pulsar_shadow_topic_prefix of this AgentConfig.
 
         pulsar影子库前缀
 
@@ -652,7 +652,7 @@ class AgentConfig:
 
     @property
     def extensions(self):
-        """Gets the extensions of this AgentConfig.
+        r"""Gets the extensions of this AgentConfig.
 
         自定义配置
 
@@ -663,7 +663,7 @@ class AgentConfig:
 
     @extensions.setter
     def extensions(self, extensions):
-        """Sets the extensions of this AgentConfig.
+        r"""Sets the extensions of this AgentConfig.
 
         自定义配置
 

@@ -25,7 +25,7 @@ class OpenGaussConfig:
     }
 
     def __init__(self, permission_check_type=None):
-        """OpenGaussConfig
+        r"""OpenGaussConfig
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class OpenGaussConfig:
 
     @property
     def permission_check_type(self):
-        """Gets the permission_check_type of this OpenGaussConfig.
+        r"""Gets the permission_check_type of this OpenGaussConfig.
 
         权限检查类型。
 
@@ -54,7 +54,7 @@ class OpenGaussConfig:
 
     @permission_check_type.setter
     def permission_check_type(self, permission_check_type):
-        """Sets the permission_check_type of this OpenGaussConfig.
+        r"""Sets the permission_check_type of this OpenGaussConfig.
 
         权限检查类型。
 

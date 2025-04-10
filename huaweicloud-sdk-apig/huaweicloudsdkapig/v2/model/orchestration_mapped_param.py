@@ -29,7 +29,7 @@ class OrchestrationMappedParam:
     }
 
     def __init__(self, mapped_param_name=None, mapped_param_type=None, mapped_param_location=None):
-        """OrchestrationMappedParam
+        r"""OrchestrationMappedParam
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class OrchestrationMappedParam:
 
     @property
     def mapped_param_name(self):
-        """Gets the mapped_param_name of this OrchestrationMappedParam.
+        r"""Gets the mapped_param_name of this OrchestrationMappedParam.
 
         编排后的请求参数名，只支持英文，数字，中划线，必须以英文开头，1-128个字符，不能与已有的参数重名，默认会透传到后端。
 
@@ -65,7 +65,7 @@ class OrchestrationMappedParam:
 
     @mapped_param_name.setter
     def mapped_param_name(self, mapped_param_name):
-        """Sets the mapped_param_name of this OrchestrationMappedParam.
+        r"""Sets the mapped_param_name of this OrchestrationMappedParam.
 
         编排后的请求参数名，只支持英文，数字，中划线，必须以英文开头，1-128个字符，不能与已有的参数重名，默认会透传到后端。
 
@@ -76,7 +76,7 @@ class OrchestrationMappedParam:
 
     @property
     def mapped_param_type(self):
-        """Gets the mapped_param_type of this OrchestrationMappedParam.
+        r"""Gets the mapped_param_type of this OrchestrationMappedParam.
 
         编排后的参数类型，支持string和number。
 
@@ -87,7 +87,7 @@ class OrchestrationMappedParam:
 
     @mapped_param_type.setter
     def mapped_param_type(self, mapped_param_type):
-        """Sets the mapped_param_type of this OrchestrationMappedParam.
+        r"""Sets the mapped_param_type of this OrchestrationMappedParam.
 
         编排后的参数类型，支持string和number。
 
@@ -98,7 +98,7 @@ class OrchestrationMappedParam:
 
     @property
     def mapped_param_location(self):
-        """Gets the mapped_param_location of this OrchestrationMappedParam.
+        r"""Gets the mapped_param_location of this OrchestrationMappedParam.
 
         编排后的参数位置，支持query和header。
 
@@ -109,7 +109,7 @@ class OrchestrationMappedParam:
 
     @mapped_param_location.setter
     def mapped_param_location(self, mapped_param_location):
-        """Sets the mapped_param_location of this OrchestrationMappedParam.
+        r"""Sets the mapped_param_location of this OrchestrationMappedParam.
 
         编排后的参数位置，支持query和header。
 

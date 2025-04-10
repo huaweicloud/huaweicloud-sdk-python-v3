@@ -30,7 +30,7 @@ class DeleteVolumeResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, items=None):
-        """DeleteVolumeResponse
+        r"""DeleteVolumeResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteVolumeResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this DeleteVolumeResponse.
+        r"""Gets the api_version of this DeleteVolumeResponse.
 
         :return: The api_version of this DeleteVolumeResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class DeleteVolumeResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this DeleteVolumeResponse.
+        r"""Sets the api_version of this DeleteVolumeResponse.
 
         :param api_version: The api_version of this DeleteVolumeResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class DeleteVolumeResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this DeleteVolumeResponse.
+        r"""Gets the kind of this DeleteVolumeResponse.
 
         :return: The kind of this DeleteVolumeResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ComponentKindObj`
@@ -85,7 +85,7 @@ class DeleteVolumeResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this DeleteVolumeResponse.
+        r"""Sets the kind of this DeleteVolumeResponse.
 
         :param kind: The kind of this DeleteVolumeResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.ComponentKindObj`
@@ -94,7 +94,7 @@ class DeleteVolumeResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this DeleteVolumeResponse.
+        r"""Gets the items of this DeleteVolumeResponse.
 
         挂载组件列表。
 
@@ -105,7 +105,7 @@ class DeleteVolumeResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this DeleteVolumeResponse.
+        r"""Sets the items of this DeleteVolumeResponse.
 
         挂载组件列表。
 

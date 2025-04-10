@@ -25,7 +25,7 @@ class SendCodeReq:
     }
 
     def __init__(self, method=None):
-        """SendCodeReq
+        r"""SendCodeReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SendCodeReq:
 
     @property
     def method(self):
-        """Gets the method of this SendCodeReq.
+        r"""Gets the method of this SendCodeReq.
 
         认证方式:sms，email，vmfa
 
@@ -53,7 +53,7 @@ class SendCodeReq:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this SendCodeReq.
+        r"""Sets the method of this SendCodeReq.
 
         认证方式:sms，email，vmfa
 

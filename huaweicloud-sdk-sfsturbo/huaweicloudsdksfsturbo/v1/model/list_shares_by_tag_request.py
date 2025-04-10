@@ -25,7 +25,7 @@ class ListSharesByTagRequest:
     }
 
     def __init__(self, body=None):
-        """ListSharesByTagRequest
+        r"""ListSharesByTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListSharesByTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListSharesByTagRequest.
+        r"""Gets the body of this ListSharesByTagRequest.
 
         :return: The body of this ListSharesByTagRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ListSharesByTagRequestBody`
@@ -52,7 +52,7 @@ class ListSharesByTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSharesByTagRequest.
+        r"""Sets the body of this ListSharesByTagRequest.
 
         :param body: The body of this ListSharesByTagRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.ListSharesByTagRequestBody`

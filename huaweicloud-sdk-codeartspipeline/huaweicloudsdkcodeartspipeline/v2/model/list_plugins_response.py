@@ -32,7 +32,7 @@ class ListPluginsResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, total=None, data=None):
-        """ListPluginsResponse
+        r"""ListPluginsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListPluginsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListPluginsResponse.
+        r"""Gets the offset of this ListPluginsResponse.
 
         偏移
 
@@ -76,7 +76,7 @@ class ListPluginsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPluginsResponse.
+        r"""Sets the offset of this ListPluginsResponse.
 
         偏移
 
@@ -87,7 +87,7 @@ class ListPluginsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListPluginsResponse.
+        r"""Gets the limit of this ListPluginsResponse.
 
         大小
 
@@ -98,7 +98,7 @@ class ListPluginsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPluginsResponse.
+        r"""Sets the limit of this ListPluginsResponse.
 
         大小
 
@@ -109,7 +109,7 @@ class ListPluginsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPluginsResponse.
+        r"""Gets the total of this ListPluginsResponse.
 
         总数
 
@@ -120,7 +120,7 @@ class ListPluginsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPluginsResponse.
+        r"""Sets the total of this ListPluginsResponse.
 
         总数
 
@@ -131,7 +131,7 @@ class ListPluginsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListPluginsResponse.
+        r"""Gets the data of this ListPluginsResponse.
 
         结果集
 
@@ -142,7 +142,7 @@ class ListPluginsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListPluginsResponse.
+        r"""Sets the data of this ListPluginsResponse.
 
         结果集
 

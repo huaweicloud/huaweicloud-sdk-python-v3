@@ -27,7 +27,7 @@ class CreateTasksRequest:
     }
 
     def __init__(self, upgrade=None, body=None):
-        """CreateTasksRequest
+        r"""CreateTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateTasksRequest:
 
     @property
     def upgrade(self):
-        """Gets the upgrade of this CreateTasksRequest.
+        r"""Gets the upgrade of this CreateTasksRequest.
 
         是否将本次扫描升级为专业版规格（￥99.00/次）
 
@@ -61,7 +61,7 @@ class CreateTasksRequest:
 
     @upgrade.setter
     def upgrade(self, upgrade):
-        """Sets the upgrade of this CreateTasksRequest.
+        r"""Sets the upgrade of this CreateTasksRequest.
 
         是否将本次扫描升级为专业版规格（￥99.00/次）
 
@@ -72,7 +72,7 @@ class CreateTasksRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTasksRequest.
+        r"""Gets the body of this CreateTasksRequest.
 
         :return: The body of this CreateTasksRequest.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.CreateTasksRequestBody`
@@ -81,7 +81,7 @@ class CreateTasksRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTasksRequest.
+        r"""Sets the body of this CreateTasksRequest.
 
         :param body: The body of this CreateTasksRequest.
         :type body: :class:`huaweicloudsdkcodeartsinspector.v3.CreateTasksRequestBody`

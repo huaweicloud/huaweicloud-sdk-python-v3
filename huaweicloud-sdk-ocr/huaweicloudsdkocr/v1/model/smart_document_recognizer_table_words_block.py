@@ -29,7 +29,7 @@ class SmartDocumentRecognizerTableWordsBlock:
     }
 
     def __init__(self, words=None, rows=None, columns=None):
-        """SmartDocumentRecognizerTableWordsBlock
+        r"""SmartDocumentRecognizerTableWordsBlock
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SmartDocumentRecognizerTableWordsBlock:
 
     @property
     def words(self):
-        """Gets the words of this SmartDocumentRecognizerTableWordsBlock.
+        r"""Gets the words of this SmartDocumentRecognizerTableWordsBlock.
 
         单元格内的文字识别结果。 
 
@@ -68,7 +68,7 @@ class SmartDocumentRecognizerTableWordsBlock:
 
     @words.setter
     def words(self, words):
-        """Sets the words of this SmartDocumentRecognizerTableWordsBlock.
+        r"""Sets the words of this SmartDocumentRecognizerTableWordsBlock.
 
         单元格内的文字识别结果。 
 
@@ -79,7 +79,7 @@ class SmartDocumentRecognizerTableWordsBlock:
 
     @property
     def rows(self):
-        """Gets the rows of this SmartDocumentRecognizerTableWordsBlock.
+        r"""Gets the rows of this SmartDocumentRecognizerTableWordsBlock.
 
         文字块占用的行信息，编号从0开始，列表形式，数据类型为Integer。 
 
@@ -90,7 +90,7 @@ class SmartDocumentRecognizerTableWordsBlock:
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this SmartDocumentRecognizerTableWordsBlock.
+        r"""Sets the rows of this SmartDocumentRecognizerTableWordsBlock.
 
         文字块占用的行信息，编号从0开始，列表形式，数据类型为Integer。 
 
@@ -101,7 +101,7 @@ class SmartDocumentRecognizerTableWordsBlock:
 
     @property
     def columns(self):
-        """Gets the columns of this SmartDocumentRecognizerTableWordsBlock.
+        r"""Gets the columns of this SmartDocumentRecognizerTableWordsBlock.
 
         文字块占用的列信息，编号从0开始，列表形式，数据类型为Integer。 
 
@@ -112,7 +112,7 @@ class SmartDocumentRecognizerTableWordsBlock:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this SmartDocumentRecognizerTableWordsBlock.
+        r"""Sets the columns of this SmartDocumentRecognizerTableWordsBlock.
 
         文字块占用的列信息，编号从0开始，列表形式，数据类型为Integer。 
 

@@ -29,7 +29,7 @@ class ListNodesRequest:
     }
 
     def __init__(self, league_id=None, offset=None, limit=None):
-        """ListNodesRequest
+        r"""ListNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListNodesRequest:
 
     @property
     def league_id(self):
-        """Gets the league_id of this ListNodesRequest.
+        r"""Gets the league_id of this ListNodesRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -65,7 +65,7 @@ class ListNodesRequest:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this ListNodesRequest.
+        r"""Sets the league_id of this ListNodesRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -76,7 +76,7 @@ class ListNodesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNodesRequest.
+        r"""Gets the offset of this ListNodesRequest.
 
         记录数偏移量 
 
@@ -87,7 +87,7 @@ class ListNodesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNodesRequest.
+        r"""Sets the offset of this ListNodesRequest.
 
         记录数偏移量 
 
@@ -98,7 +98,7 @@ class ListNodesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNodesRequest.
+        r"""Gets the limit of this ListNodesRequest.
 
         每页记录数，取值0-100
 
@@ -109,7 +109,7 @@ class ListNodesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNodesRequest.
+        r"""Sets the limit of this ListNodesRequest.
 
         每页记录数，取值0-100
 

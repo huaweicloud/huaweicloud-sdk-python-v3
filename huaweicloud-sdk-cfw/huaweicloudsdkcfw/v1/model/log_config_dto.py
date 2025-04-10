@@ -41,7 +41,7 @@ class LogConfigDto:
     }
 
     def __init__(self, fw_instance_id=None, lts_enable=None, lts_log_group_id=None, lts_attack_log_stream_id=None, lts_attack_log_stream_enable=None, lts_access_log_stream_id=None, lts_access_log_stream_enable=None, lts_flow_log_stream_id=None, lts_flow_log_stream_enable=None):
-        """LogConfigDto
+        r"""LogConfigDto
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class LogConfigDto:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this LogConfigDto.
+        r"""Gets the fw_instance_id of this LogConfigDto.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -107,7 +107,7 @@ class LogConfigDto:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this LogConfigDto.
+        r"""Sets the fw_instance_id of this LogConfigDto.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -118,7 +118,7 @@ class LogConfigDto:
 
     @property
     def lts_enable(self):
-        """Gets the lts_enable of this LogConfigDto.
+        r"""Gets the lts_enable of this LogConfigDto.
 
         是否开启LTS，1表示是，0表示不是
 
@@ -129,7 +129,7 @@ class LogConfigDto:
 
     @lts_enable.setter
     def lts_enable(self, lts_enable):
-        """Sets the lts_enable of this LogConfigDto.
+        r"""Sets the lts_enable of this LogConfigDto.
 
         是否开启LTS，1表示是，0表示不是
 
@@ -140,7 +140,7 @@ class LogConfigDto:
 
     @property
     def lts_log_group_id(self):
-        """Gets the lts_log_group_id of this LogConfigDto.
+        r"""Gets the lts_log_group_id of this LogConfigDto.
 
         LTS日志分组id,可通过查询LTS（云日志服务）下查询账号下所有日志组接口获得，通过返回值中的log_groups.log_group_id（.表示各对象之间层级的区分）获得
 
@@ -151,7 +151,7 @@ class LogConfigDto:
 
     @lts_log_group_id.setter
     def lts_log_group_id(self, lts_log_group_id):
-        """Sets the lts_log_group_id of this LogConfigDto.
+        r"""Sets the lts_log_group_id of this LogConfigDto.
 
         LTS日志分组id,可通过查询LTS（云日志服务）下查询账号下所有日志组接口获得，通过返回值中的log_groups.log_group_id（.表示各对象之间层级的区分）获得
 
@@ -162,7 +162,7 @@ class LogConfigDto:
 
     @property
     def lts_attack_log_stream_id(self):
-        """Gets the lts_attack_log_stream_id of this LogConfigDto.
+        r"""Gets the lts_attack_log_stream_id of this LogConfigDto.
 
         攻击日志流id,可通过查询LTS（云日志服务）下查询指定日志组下的所有日志流接口获得，通过返回值中的log_streams.log_stream_id（.表示各对象之间层级的区分）获得
 
@@ -173,7 +173,7 @@ class LogConfigDto:
 
     @lts_attack_log_stream_id.setter
     def lts_attack_log_stream_id(self, lts_attack_log_stream_id):
-        """Sets the lts_attack_log_stream_id of this LogConfigDto.
+        r"""Sets the lts_attack_log_stream_id of this LogConfigDto.
 
         攻击日志流id,可通过查询LTS（云日志服务）下查询指定日志组下的所有日志流接口获得，通过返回值中的log_streams.log_stream_id（.表示各对象之间层级的区分）获得
 
@@ -184,7 +184,7 @@ class LogConfigDto:
 
     @property
     def lts_attack_log_stream_enable(self):
-        """Gets the lts_attack_log_stream_enable of this LogConfigDto.
+        r"""Gets the lts_attack_log_stream_enable of this LogConfigDto.
 
         是否开启攻击日志流，1表示是，0表示不是
 
@@ -195,7 +195,7 @@ class LogConfigDto:
 
     @lts_attack_log_stream_enable.setter
     def lts_attack_log_stream_enable(self, lts_attack_log_stream_enable):
-        """Sets the lts_attack_log_stream_enable of this LogConfigDto.
+        r"""Sets the lts_attack_log_stream_enable of this LogConfigDto.
 
         是否开启攻击日志流，1表示是，0表示不是
 
@@ -206,7 +206,7 @@ class LogConfigDto:
 
     @property
     def lts_access_log_stream_id(self):
-        """Gets the lts_access_log_stream_id of this LogConfigDto.
+        r"""Gets the lts_access_log_stream_id of this LogConfigDto.
 
         访问控制日志流id,可通过查询LTS（云日志服务）下查询指定日志组下的所有日志流接口获得，通过返回值中的log_streams.log_stream_id（.表示各对象之间层级的区分）获得
 
@@ -217,7 +217,7 @@ class LogConfigDto:
 
     @lts_access_log_stream_id.setter
     def lts_access_log_stream_id(self, lts_access_log_stream_id):
-        """Sets the lts_access_log_stream_id of this LogConfigDto.
+        r"""Sets the lts_access_log_stream_id of this LogConfigDto.
 
         访问控制日志流id,可通过查询LTS（云日志服务）下查询指定日志组下的所有日志流接口获得，通过返回值中的log_streams.log_stream_id（.表示各对象之间层级的区分）获得
 
@@ -228,7 +228,7 @@ class LogConfigDto:
 
     @property
     def lts_access_log_stream_enable(self):
-        """Gets the lts_access_log_stream_enable of this LogConfigDto.
+        r"""Gets the lts_access_log_stream_enable of this LogConfigDto.
 
         是否开启访问控制流，1表示是，0表示不是
 
@@ -239,7 +239,7 @@ class LogConfigDto:
 
     @lts_access_log_stream_enable.setter
     def lts_access_log_stream_enable(self, lts_access_log_stream_enable):
-        """Sets the lts_access_log_stream_enable of this LogConfigDto.
+        r"""Sets the lts_access_log_stream_enable of this LogConfigDto.
 
         是否开启访问控制流，1表示是，0表示不是
 
@@ -250,7 +250,7 @@ class LogConfigDto:
 
     @property
     def lts_flow_log_stream_id(self):
-        """Gets the lts_flow_log_stream_id of this LogConfigDto.
+        r"""Gets the lts_flow_log_stream_id of this LogConfigDto.
 
         流量日志id,可通过查询LTS（云日志服务）下查询指定日志组下的所有日志流接口获得，通过返回值中的log_streams.log_stream_id（.表示各对象之间层级的区分）获得
 
@@ -261,7 +261,7 @@ class LogConfigDto:
 
     @lts_flow_log_stream_id.setter
     def lts_flow_log_stream_id(self, lts_flow_log_stream_id):
-        """Sets the lts_flow_log_stream_id of this LogConfigDto.
+        r"""Sets the lts_flow_log_stream_id of this LogConfigDto.
 
         流量日志id,可通过查询LTS（云日志服务）下查询指定日志组下的所有日志流接口获得，通过返回值中的log_streams.log_stream_id（.表示各对象之间层级的区分）获得
 
@@ -272,7 +272,7 @@ class LogConfigDto:
 
     @property
     def lts_flow_log_stream_enable(self):
-        """Gets the lts_flow_log_stream_enable of this LogConfigDto.
+        r"""Gets the lts_flow_log_stream_enable of this LogConfigDto.
 
         是否开启流量日志，1表示是，0表示不是
 
@@ -283,7 +283,7 @@ class LogConfigDto:
 
     @lts_flow_log_stream_enable.setter
     def lts_flow_log_stream_enable(self, lts_flow_log_stream_enable):
-        """Sets the lts_flow_log_stream_enable of this LogConfigDto.
+        r"""Sets the lts_flow_log_stream_enable of this LogConfigDto.
 
         是否开启流量日志，1表示是，0表示不是
 

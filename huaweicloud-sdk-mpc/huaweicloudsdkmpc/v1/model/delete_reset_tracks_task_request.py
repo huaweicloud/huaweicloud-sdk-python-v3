@@ -25,7 +25,7 @@ class DeleteResetTracksTaskRequest:
     }
 
     def __init__(self, task_id=None):
-        """DeleteResetTracksTaskRequest
+        r"""DeleteResetTracksTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteResetTracksTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteResetTracksTaskRequest.
+        r"""Gets the task_id of this DeleteResetTracksTaskRequest.
 
         任务ID 
 
@@ -53,7 +53,7 @@ class DeleteResetTracksTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteResetTracksTaskRequest.
+        r"""Sets the task_id of this DeleteResetTracksTaskRequest.
 
         任务ID 
 

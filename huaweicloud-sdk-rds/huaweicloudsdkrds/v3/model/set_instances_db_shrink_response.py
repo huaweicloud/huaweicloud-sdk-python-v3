@@ -26,7 +26,7 @@ class SetInstancesDbShrinkResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """SetInstancesDbShrinkResponse
+        r"""SetInstancesDbShrinkResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetInstancesDbShrinkResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this SetInstancesDbShrinkResponse.
+        r"""Gets the resp of this SetInstancesDbShrinkResponse.
 
         收缩结果。successful:成功 failed:失败
 
@@ -55,7 +55,7 @@ class SetInstancesDbShrinkResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this SetInstancesDbShrinkResponse.
+        r"""Sets the resp of this SetInstancesDbShrinkResponse.
 
         收缩结果。successful:成功 failed:失败
 

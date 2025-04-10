@@ -28,7 +28,7 @@ class ListFullSqlTasksResponse(SdkResponse):
     }
 
     def __init__(self, tasks=None, total=None):
-        """ListFullSqlTasksResponse
+        r"""ListFullSqlTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFullSqlTasksResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListFullSqlTasksResponse.
+        r"""Gets the tasks of this ListFullSqlTasksResponse.
 
         SQL洞察任务列表。
 
@@ -62,7 +62,7 @@ class ListFullSqlTasksResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListFullSqlTasksResponse.
+        r"""Sets the tasks of this ListFullSqlTasksResponse.
 
         SQL洞察任务列表。
 
@@ -73,7 +73,7 @@ class ListFullSqlTasksResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListFullSqlTasksResponse.
+        r"""Gets the total of this ListFullSqlTasksResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ListFullSqlTasksResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListFullSqlTasksResponse.
+        r"""Sets the total of this ListFullSqlTasksResponse.
 
         总数。
 

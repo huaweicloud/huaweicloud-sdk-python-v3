@@ -26,7 +26,7 @@ class DeleteComponentResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteComponentResponse
+        r"""DeleteComponentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteComponentResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteComponentResponse.
+        r"""Gets the job_id of this DeleteComponentResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class DeleteComponentResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteComponentResponse.
+        r"""Sets the job_id of this DeleteComponentResponse.
 
         任务ID。
 

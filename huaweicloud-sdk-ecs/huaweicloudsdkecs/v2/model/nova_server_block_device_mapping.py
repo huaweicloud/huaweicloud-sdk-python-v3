@@ -41,7 +41,7 @@ class NovaServerBlockDeviceMapping:
     }
 
     def __init__(self, source_type=None, destination_type=None, guest_format=None, device_name=None, delete_on_termination=None, boot_index=None, uuid=None, volume_size=None, volume_type=None):
-        """NovaServerBlockDeviceMapping
+        r"""NovaServerBlockDeviceMapping
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class NovaServerBlockDeviceMapping:
 
     @property
     def source_type(self):
-        """Gets the source_type of this NovaServerBlockDeviceMapping.
+        r"""Gets the source_type of this NovaServerBlockDeviceMapping.
 
         卷设备的源头类型，当前只支持volume、image、snapshot、blank类型。  当使用卷创建云服务器时，source_type设置为volume；当使用镜像创建云服务器时，source_type设置为image；当使用快照创建云服务器时，source_type设置为snapshot；当创建空数据卷时，source_type设置为blank。  - 说明： -  - 当卷设备的源头类型为snapshot时，且boot_index为0，则该快照对应的云硬盘必须为系统盘。
 
@@ -109,7 +109,7 @@ class NovaServerBlockDeviceMapping:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this NovaServerBlockDeviceMapping.
+        r"""Sets the source_type of this NovaServerBlockDeviceMapping.
 
         卷设备的源头类型，当前只支持volume、image、snapshot、blank类型。  当使用卷创建云服务器时，source_type设置为volume；当使用镜像创建云服务器时，source_type设置为image；当使用快照创建云服务器时，source_type设置为snapshot；当创建空数据卷时，source_type设置为blank。  - 说明： -  - 当卷设备的源头类型为snapshot时，且boot_index为0，则该快照对应的云硬盘必须为系统盘。
 
@@ -120,7 +120,7 @@ class NovaServerBlockDeviceMapping:
 
     @property
     def destination_type(self):
-        """Gets the destination_type of this NovaServerBlockDeviceMapping.
+        r"""Gets the destination_type of this NovaServerBlockDeviceMapping.
 
         卷设备的目标类型，当前仅支持volume类型。  - volume：卷。 - local：本地文件，当前不支持该类型。
 
@@ -131,7 +131,7 @@ class NovaServerBlockDeviceMapping:
 
     @destination_type.setter
     def destination_type(self, destination_type):
-        """Sets the destination_type of this NovaServerBlockDeviceMapping.
+        r"""Sets the destination_type of this NovaServerBlockDeviceMapping.
 
         卷设备的目标类型，当前仅支持volume类型。  - volume：卷。 - local：本地文件，当前不支持该类型。
 
@@ -142,7 +142,7 @@ class NovaServerBlockDeviceMapping:
 
     @property
     def guest_format(self):
-        """Gets the guest_format of this NovaServerBlockDeviceMapping.
+        r"""Gets the guest_format of this NovaServerBlockDeviceMapping.
 
         local文件系统格式，例如：swap, ext4。  当前不支持该功能。
 
@@ -153,7 +153,7 @@ class NovaServerBlockDeviceMapping:
 
     @guest_format.setter
     def guest_format(self, guest_format):
-        """Sets the guest_format of this NovaServerBlockDeviceMapping.
+        r"""Sets the guest_format of this NovaServerBlockDeviceMapping.
 
         local文件系统格式，例如：swap, ext4。  当前不支持该功能。
 
@@ -164,7 +164,7 @@ class NovaServerBlockDeviceMapping:
 
     @property
     def device_name(self):
-        """Gets the device_name of this NovaServerBlockDeviceMapping.
+        r"""Gets the device_name of this NovaServerBlockDeviceMapping.
 
         卷设备名称。  > 说明： >  > 该字段已经废弃。 >  > 用户指定的device_name不会生效，系统会默认生成一个device_name。
 
@@ -175,7 +175,7 @@ class NovaServerBlockDeviceMapping:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this NovaServerBlockDeviceMapping.
+        r"""Sets the device_name of this NovaServerBlockDeviceMapping.
 
         卷设备名称。  > 说明： >  > 该字段已经废弃。 >  > 用户指定的device_name不会生效，系统会默认生成一个device_name。
 
@@ -186,7 +186,7 @@ class NovaServerBlockDeviceMapping:
 
     @property
     def delete_on_termination(self):
-        """Gets the delete_on_termination of this NovaServerBlockDeviceMapping.
+        r"""Gets the delete_on_termination of this NovaServerBlockDeviceMapping.
 
         删除弹性云服务器时，是否删除卷，默认值false。  true：删除弹性云服务器时，删除卷  false：删除弹性云服务器时，不删除卷
 
@@ -197,7 +197,7 @@ class NovaServerBlockDeviceMapping:
 
     @delete_on_termination.setter
     def delete_on_termination(self, delete_on_termination):
-        """Sets the delete_on_termination of this NovaServerBlockDeviceMapping.
+        r"""Sets the delete_on_termination of this NovaServerBlockDeviceMapping.
 
         删除弹性云服务器时，是否删除卷，默认值false。  true：删除弹性云服务器时，删除卷  false：删除弹性云服务器时，不删除卷
 
@@ -208,7 +208,7 @@ class NovaServerBlockDeviceMapping:
 
     @property
     def boot_index(self):
-        """Gets the boot_index of this NovaServerBlockDeviceMapping.
+        r"""Gets the boot_index of this NovaServerBlockDeviceMapping.
 
         启动标识，“0”代表启动盘，“-1“代表非启动盘。  > 说明： >  > 当卷设备的源头类型全为volume时，boot_index的值有一个为0。
 
@@ -219,7 +219,7 @@ class NovaServerBlockDeviceMapping:
 
     @boot_index.setter
     def boot_index(self, boot_index):
-        """Sets the boot_index of this NovaServerBlockDeviceMapping.
+        r"""Sets the boot_index of this NovaServerBlockDeviceMapping.
 
         启动标识，“0”代表启动盘，“-1“代表非启动盘。  > 说明： >  > 当卷设备的源头类型全为volume时，boot_index的值有一个为0。
 
@@ -230,7 +230,7 @@ class NovaServerBlockDeviceMapping:
 
     @property
     def uuid(self):
-        """Gets the uuid of this NovaServerBlockDeviceMapping.
+        r"""Gets the uuid of this NovaServerBlockDeviceMapping.
 
         当source_type值是volume时，uuid为卷的uuid；  当source_type值是snapshot时，uuid为快照的uuid；  当source_type值是image时，uuid为镜像的uuid；
 
@@ -241,7 +241,7 @@ class NovaServerBlockDeviceMapping:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this NovaServerBlockDeviceMapping.
+        r"""Sets the uuid of this NovaServerBlockDeviceMapping.
 
         当source_type值是volume时，uuid为卷的uuid；  当source_type值是snapshot时，uuid为快照的uuid；  当source_type值是image时，uuid为镜像的uuid；
 
@@ -252,7 +252,7 @@ class NovaServerBlockDeviceMapping:
 
     @property
     def volume_size(self):
-        """Gets the volume_size of this NovaServerBlockDeviceMapping.
+        r"""Gets the volume_size of this NovaServerBlockDeviceMapping.
 
         卷大小，整数，在source_type是image或blank，destination_type是volume的时候必选。  单位为GB。
 
@@ -263,7 +263,7 @@ class NovaServerBlockDeviceMapping:
 
     @volume_size.setter
     def volume_size(self, volume_size):
-        """Sets the volume_size of this NovaServerBlockDeviceMapping.
+        r"""Sets the volume_size of this NovaServerBlockDeviceMapping.
 
         卷大小，整数，在source_type是image或blank，destination_type是volume的时候必选。  单位为GB。
 
@@ -274,7 +274,7 @@ class NovaServerBlockDeviceMapping:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this NovaServerBlockDeviceMapping.
+        r"""Gets the volume_type of this NovaServerBlockDeviceMapping.
 
         卷类型，在source_type是image，destination_type是volume时建议填写。  卷类型取值范围请参考 EVS 服务 [磁盘类型介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
 
@@ -285,7 +285,7 @@ class NovaServerBlockDeviceMapping:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this NovaServerBlockDeviceMapping.
+        r"""Sets the volume_type of this NovaServerBlockDeviceMapping.
 
         卷类型，在source_type是image，destination_type是volume时建议填写。  卷类型取值范围请参考 EVS 服务 [磁盘类型介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
 

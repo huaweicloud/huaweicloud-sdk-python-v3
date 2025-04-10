@@ -32,7 +32,7 @@ class ListJobsResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, job_count=None, job_list=None):
-        """ListJobsResponse
+        r"""ListJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListJobsResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ListJobsResponse.
+        r"""Gets the error_message of this ListJobsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -76,7 +76,7 @@ class ListJobsResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ListJobsResponse.
+        r"""Sets the error_message of this ListJobsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
@@ -87,7 +87,7 @@ class ListJobsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListJobsResponse.
+        r"""Gets the error_code of this ListJobsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -98,7 +98,7 @@ class ListJobsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListJobsResponse.
+        r"""Sets the error_code of this ListJobsResponse.
 
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
@@ -109,7 +109,7 @@ class ListJobsResponse(SdkResponse):
 
     @property
     def job_count(self):
-        """Gets the job_count of this ListJobsResponse.
+        r"""Gets the job_count of this ListJobsResponse.
 
         任务总数
 
@@ -120,7 +120,7 @@ class ListJobsResponse(SdkResponse):
 
     @job_count.setter
     def job_count(self, job_count):
-        """Sets the job_count of this ListJobsResponse.
+        r"""Sets the job_count of this ListJobsResponse.
 
         任务总数
 
@@ -131,7 +131,7 @@ class ListJobsResponse(SdkResponse):
 
     @property
     def job_list(self):
-        """Gets the job_list of this ListJobsResponse.
+        r"""Gets the job_list of this ListJobsResponse.
 
         任务列表
 
@@ -142,7 +142,7 @@ class ListJobsResponse(SdkResponse):
 
     @job_list.setter
     def job_list(self, job_list):
-        """Sets the job_list of this ListJobsResponse.
+        r"""Sets the job_list of this ListJobsResponse.
 
         任务列表
 

@@ -25,7 +25,7 @@ class BssInfoExtend:
     }
 
     def __init__(self, is_auto_pay=None):
-        """BssInfoExtend
+        r"""BssInfoExtend
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BssInfoExtend:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this BssInfoExtend.
+        r"""Gets the is_auto_pay of this BssInfoExtend.
 
         是否自动付款
 
@@ -54,7 +54,7 @@ class BssInfoExtend:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this BssInfoExtend.
+        r"""Sets the is_auto_pay of this BssInfoExtend.
 
         是否自动付款
 

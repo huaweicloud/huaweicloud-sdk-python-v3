@@ -73,7 +73,7 @@ class UpdateFlinkJarJobRequestBody:
     }
 
     def __init__(self, name=None, desc=None, queue_name=None, cu_number=None, manager_cu_number=None, parallel_number=None, log_enabled=None, obs_bucket=None, smn_topic=None, main_class=None, entrypoint_args=None, restart_when_exception=None, entrypoint=None, dependency_jars=None, dependency_files=None, tm_cus=None, tm_slot_num=None, feature=None, flink_version=None, image=None, resume_checkpoint=None, resume_max_num=None, checkpoint_path=None, runtime_config=None, job_type=None):
-        """UpdateFlinkJarJobRequestBody
+        r"""UpdateFlinkJarJobRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the name of this UpdateFlinkJarJobRequestBody.
 
         作业名称。长度限制：0-57个字符。
 
@@ -222,7 +222,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the name of this UpdateFlinkJarJobRequestBody.
 
         作业名称。长度限制：0-57个字符。
 
@@ -233,7 +233,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def desc(self):
-        """Gets the desc of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the desc of this UpdateFlinkJarJobRequestBody.
 
         作业描述。长度限制：0-2048个字符。
 
@@ -244,7 +244,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the desc of this UpdateFlinkJarJobRequestBody.
 
         作业描述。长度限制：0-2048个字符。
 
@@ -255,7 +255,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the queue_name of this UpdateFlinkJarJobRequestBody.
 
         队列名称。长度限制：1-128个字符。
 
@@ -266,7 +266,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the queue_name of this UpdateFlinkJarJobRequestBody.
 
         队列名称。长度限制：1-128个字符。
 
@@ -277,7 +277,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def cu_number(self):
-        """Gets the cu_number of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the cu_number of this UpdateFlinkJarJobRequestBody.
 
         用户为作业选择的CU数量。默认值为2。
 
@@ -288,7 +288,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @cu_number.setter
     def cu_number(self, cu_number):
-        """Sets the cu_number of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the cu_number of this UpdateFlinkJarJobRequestBody.
 
         用户为作业选择的CU数量。默认值为2。
 
@@ -299,7 +299,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def manager_cu_number(self):
-        """Gets the manager_cu_number of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the manager_cu_number of this UpdateFlinkJarJobRequestBody.
 
         用户为作业选择的管理节点CU数量，对应为flink jobmanager数量。默认为1。
 
@@ -310,7 +310,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @manager_cu_number.setter
     def manager_cu_number(self, manager_cu_number):
-        """Sets the manager_cu_number of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the manager_cu_number of this UpdateFlinkJarJobRequestBody.
 
         用户为作业选择的管理节点CU数量，对应为flink jobmanager数量。默认为1。
 
@@ -321,7 +321,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def parallel_number(self):
-        """Gets the parallel_number of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the parallel_number of this UpdateFlinkJarJobRequestBody.
 
         用户为作业选择的并发量。默认为1。
 
@@ -332,7 +332,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @parallel_number.setter
     def parallel_number(self, parallel_number):
-        """Sets the parallel_number of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the parallel_number of this UpdateFlinkJarJobRequestBody.
 
         用户为作业选择的并发量。默认为1。
 
@@ -343,7 +343,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def log_enabled(self):
-        """Gets the log_enabled of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the log_enabled of this UpdateFlinkJarJobRequestBody.
 
         是否开启作业日志。 开启：true； 关闭：false； 默认：false。
 
@@ -354,7 +354,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @log_enabled.setter
     def log_enabled(self, log_enabled):
-        """Sets the log_enabled of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the log_enabled of this UpdateFlinkJarJobRequestBody.
 
         是否开启作业日志。 开启：true； 关闭：false； 默认：false。
 
@@ -365,7 +365,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def obs_bucket(self):
-        """Gets the obs_bucket of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the obs_bucket of this UpdateFlinkJarJobRequestBody.
 
         当log_enabled==true时，用户授权保存日志的OBS路。
 
@@ -376,7 +376,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @obs_bucket.setter
     def obs_bucket(self, obs_bucket):
-        """Sets the obs_bucket of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the obs_bucket of this UpdateFlinkJarJobRequestBody.
 
         当log_enabled==true时，用户授权保存日志的OBS路。
 
@@ -387,7 +387,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def smn_topic(self):
-        """Gets the smn_topic of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the smn_topic of this UpdateFlinkJarJobRequestBody.
 
         当作业异常时，向该SMN主题推送告警信息。
 
@@ -398,7 +398,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @smn_topic.setter
     def smn_topic(self, smn_topic):
-        """Sets the smn_topic of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the smn_topic of this UpdateFlinkJarJobRequestBody.
 
         当作业异常时，向该SMN主题推送告警信息。
 
@@ -409,7 +409,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def main_class(self):
-        """Gets the main_class of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the main_class of this UpdateFlinkJarJobRequestBody.
 
         作业入口类。
 
@@ -420,7 +420,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @main_class.setter
     def main_class(self, main_class):
-        """Sets the main_class of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the main_class of this UpdateFlinkJarJobRequestBody.
 
         作业入口类。
 
@@ -431,7 +431,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def entrypoint_args(self):
-        """Gets the entrypoint_args of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the entrypoint_args of this UpdateFlinkJarJobRequestBody.
 
         作业入口类参数，多个参数之间空格分隔。
 
@@ -442,7 +442,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @entrypoint_args.setter
     def entrypoint_args(self, entrypoint_args):
-        """Sets the entrypoint_args of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the entrypoint_args of this UpdateFlinkJarJobRequestBody.
 
         作业入口类参数，多个参数之间空格分隔。
 
@@ -453,7 +453,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def restart_when_exception(self):
-        """Gets the restart_when_exception of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the restart_when_exception of this UpdateFlinkJarJobRequestBody.
 
         是否开启异常重启功能，默认值为“false”。
 
@@ -464,7 +464,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @restart_when_exception.setter
     def restart_when_exception(self, restart_when_exception):
-        """Sets the restart_when_exception of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the restart_when_exception of this UpdateFlinkJarJobRequestBody.
 
         是否开启异常重启功能，默认值为“false”。
 
@@ -475,7 +475,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def entrypoint(self):
-        """Gets the entrypoint of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the entrypoint of this UpdateFlinkJarJobRequestBody.
 
         选择Jar作业程序包。 Jar包的管理方式： 上传OBS管理程序包：提前将对应的Jar包上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理程序包：提前将对应的Jar包上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包。 Flink1.15版本不推荐DLI管理程序包，Flink1.15版本以上不再支持DLI管理程序包。
 
@@ -486,7 +486,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @entrypoint.setter
     def entrypoint(self, entrypoint):
-        """Sets the entrypoint of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the entrypoint of this UpdateFlinkJarJobRequestBody.
 
         选择Jar作业程序包。 Jar包的管理方式： 上传OBS管理程序包：提前将对应的Jar包上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理程序包：提前将对应的Jar包上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包。 Flink1.15版本不推荐DLI管理程序包，Flink1.15版本以上不再支持DLI管理程序包。
 
@@ -497,7 +497,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def dependency_jars(self):
-        """Gets the dependency_jars of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the dependency_jars of this UpdateFlinkJarJobRequestBody.
 
         用户自定义的依赖程序包。依赖的相关程序包将会被放置到集群classpath下。 依赖程序包的管理方式： 上传OBS管理依赖程序包：提前将对应的Jar包上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理依赖程序包：提前将对应的Jar包上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包。 Flink1.15版本不推荐DLI管理依赖程序包，Flink1.15版本以上不再支持DLI管理依赖程序包。
 
@@ -508,7 +508,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @dependency_jars.setter
     def dependency_jars(self, dependency_jars):
-        """Sets the dependency_jars of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the dependency_jars of this UpdateFlinkJarJobRequestBody.
 
         用户自定义的依赖程序包。依赖的相关程序包将会被放置到集群classpath下。 依赖程序包的管理方式： 上传OBS管理依赖程序包：提前将对应的Jar包上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理依赖程序包：提前将对应的Jar包上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包。 Flink1.15版本不推荐DLI管理依赖程序包，Flink1.15版本以上不再支持DLI管理依赖程序包。
 
@@ -519,7 +519,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def dependency_files(self):
-        """Gets the dependency_files of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the dependency_files of this UpdateFlinkJarJobRequestBody.
 
         用户自定义的依赖文件。 依赖文件的管理方式： 上传OBS管理依赖文件：提前将对应的依赖文件上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理依赖文件：提前将对应的依赖文件上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包 Flink1.15版本不推荐DLI管理依赖依赖文件，Flink1.15版本以上不再支持DLI管理依赖依赖文件。
 
@@ -530,7 +530,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @dependency_files.setter
     def dependency_files(self, dependency_files):
-        """Sets the dependency_files of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the dependency_files of this UpdateFlinkJarJobRequestBody.
 
         用户自定义的依赖文件。 依赖文件的管理方式： 上传OBS管理依赖文件：提前将对应的依赖文件上传至OBS桶中。并在此处选择对应的OBS路径。 上传DLI管理依赖文件：提前将对应的依赖文件上传至OBS桶中，并在DLI管理控制台的“数据管理>程序包管理”中创建程序包 Flink1.15版本不推荐DLI管理依赖依赖文件，Flink1.15版本以上不再支持DLI管理依赖依赖文件。
 
@@ -541,7 +541,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def tm_cus(self):
-        """Gets the tm_cus of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the tm_cus of this UpdateFlinkJarJobRequestBody.
 
         每个taskmanager的CU数，默认值为“1”。
 
@@ -552,7 +552,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @tm_cus.setter
     def tm_cus(self, tm_cus):
-        """Sets the tm_cus of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the tm_cus of this UpdateFlinkJarJobRequestBody.
 
         每个taskmanager的CU数，默认值为“1”。
 
@@ -563,7 +563,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def tm_slot_num(self):
-        """Gets the tm_slot_num of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the tm_slot_num of this UpdateFlinkJarJobRequestBody.
 
         每个taskmanager的slot数，默认值为“(parallel_number*tm_cus)/(cu_number-manager_cu_number)”。
 
@@ -574,7 +574,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @tm_slot_num.setter
     def tm_slot_num(self, tm_slot_num):
-        """Sets the tm_slot_num of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the tm_slot_num of this UpdateFlinkJarJobRequestBody.
 
         每个taskmanager的slot数，默认值为“(parallel_number*tm_cus)/(cu_number-manager_cu_number)”。
 
@@ -585,7 +585,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def feature(self):
-        """Gets the feature of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the feature of this UpdateFlinkJarJobRequestBody.
 
         作业特性。表示用户作业使用的Flink镜像类型。basic：表示使用DLI提供的基础Flink镜像。custom：表示使用用户自定义的Flink镜像。
 
@@ -596,7 +596,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the feature of this UpdateFlinkJarJobRequestBody.
 
         作业特性。表示用户作业使用的Flink镜像类型。basic：表示使用DLI提供的基础Flink镜像。custom：表示使用用户自定义的Flink镜像。
 
@@ -607,7 +607,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def flink_version(self):
-        """Gets the flink_version of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the flink_version of this UpdateFlinkJarJobRequestBody.
 
         Flink版本。当用户设置“feature”为“basic”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用的DLI基础Flink镜像的版本。
 
@@ -618,7 +618,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @flink_version.setter
     def flink_version(self, flink_version):
-        """Sets the flink_version of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the flink_version of this UpdateFlinkJarJobRequestBody.
 
         Flink版本。当用户设置“feature”为“basic”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用的DLI基础Flink镜像的版本。
 
@@ -629,7 +629,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def image(self):
-        """Gets the image of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the image of this UpdateFlinkJarJobRequestBody.
 
         自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Flink镜像。关于如何使用自定义镜像，请参考《数据湖探索用户指南》。
 
@@ -640,7 +640,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the image of this UpdateFlinkJarJobRequestBody.
 
         自定义镜像。格式为：组织名/镜像名:镜像版本。当用户设置“feature”为“custom”时，该参数生效。用户可通过与“feature”参数配合使用，指定作业运行使用自定义的Flink镜像。关于如何使用自定义镜像，请参考《数据湖探索用户指南》。
 
@@ -651,7 +651,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def resume_checkpoint(self):
-        """Gets the resume_checkpoint of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the resume_checkpoint of this UpdateFlinkJarJobRequestBody.
 
         异常重启是否从checkpoint恢复。
 
@@ -662,7 +662,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @resume_checkpoint.setter
     def resume_checkpoint(self, resume_checkpoint):
-        """Sets the resume_checkpoint of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the resume_checkpoint of this UpdateFlinkJarJobRequestBody.
 
         异常重启是否从checkpoint恢复。
 
@@ -673,7 +673,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def resume_max_num(self):
-        """Gets the resume_max_num of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the resume_max_num of this UpdateFlinkJarJobRequestBody.
 
         异常重试最大次数，单位：次/小时。取值范围：-1或大于0。默认值为“-1”，表示无限次数。
 
@@ -684,7 +684,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @resume_max_num.setter
     def resume_max_num(self, resume_max_num):
-        """Sets the resume_max_num of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the resume_max_num of this UpdateFlinkJarJobRequestBody.
 
         异常重试最大次数，单位：次/小时。取值范围：-1或大于0。默认值为“-1”，表示无限次数。
 
@@ -695,7 +695,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def checkpoint_path(self):
-        """Gets the checkpoint_path of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the checkpoint_path of this UpdateFlinkJarJobRequestBody.
 
         用户Jar中checkpoint的储存地址，不同作业路径需要保持不同。
 
@@ -706,7 +706,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @checkpoint_path.setter
     def checkpoint_path(self, checkpoint_path):
-        """Sets the checkpoint_path of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the checkpoint_path of this UpdateFlinkJarJobRequestBody.
 
         用户Jar中checkpoint的储存地址，不同作业路径需要保持不同。
 
@@ -717,7 +717,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def runtime_config(self):
-        """Gets the runtime_config of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the runtime_config of this UpdateFlinkJarJobRequestBody.
 
         Flink作业运行时自定义优化参数。
 
@@ -728,7 +728,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @runtime_config.setter
     def runtime_config(self, runtime_config):
-        """Sets the runtime_config of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the runtime_config of this UpdateFlinkJarJobRequestBody.
 
         Flink作业运行时自定义优化参数。
 
@@ -739,7 +739,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @property
     def job_type(self):
-        """Gets the job_type of this UpdateFlinkJarJobRequestBody.
+        r"""Gets the job_type of this UpdateFlinkJarJobRequestBody.
 
         作业类型。
 
@@ -750,7 +750,7 @@ class UpdateFlinkJarJobRequestBody:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this UpdateFlinkJarJobRequestBody.
+        r"""Sets the job_type of this UpdateFlinkJarJobRequestBody.
 
         作业类型。
 

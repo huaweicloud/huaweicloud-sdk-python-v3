@@ -27,7 +27,7 @@ class CreateTransferResponseBodyLogStreams:
     }
 
     def __init__(self, log_stream_id=None, log_stream_name=None):
-        """CreateTransferResponseBodyLogStreams
+        r"""CreateTransferResponseBodyLogStreams
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateTransferResponseBodyLogStreams:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this CreateTransferResponseBodyLogStreams.
+        r"""Gets the log_stream_id of this CreateTransferResponseBodyLogStreams.
 
         日志流ID
 
@@ -59,7 +59,7 @@ class CreateTransferResponseBodyLogStreams:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this CreateTransferResponseBodyLogStreams.
+        r"""Sets the log_stream_id of this CreateTransferResponseBodyLogStreams.
 
         日志流ID
 
@@ -70,7 +70,7 @@ class CreateTransferResponseBodyLogStreams:
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this CreateTransferResponseBodyLogStreams.
+        r"""Gets the log_stream_name of this CreateTransferResponseBodyLogStreams.
 
         日志流名称
 
@@ -81,7 +81,7 @@ class CreateTransferResponseBodyLogStreams:
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this CreateTransferResponseBodyLogStreams.
+        r"""Sets the log_stream_name of this CreateTransferResponseBodyLogStreams.
 
         日志流名称
 

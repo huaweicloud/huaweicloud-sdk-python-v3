@@ -27,7 +27,7 @@ class UploadAimMsgSignatureFileRequest:
     }
 
     def __init__(self, file_desc=None, body=None):
-        """UploadAimMsgSignatureFileRequest
+        r"""UploadAimMsgSignatureFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UploadAimMsgSignatureFileRequest:
 
     @property
     def file_desc(self):
-        """Gets the file_desc of this UploadAimMsgSignatureFileRequest.
+        r"""Gets the file_desc of this UploadAimMsgSignatureFileRequest.
 
         文件描述。
 
@@ -61,7 +61,7 @@ class UploadAimMsgSignatureFileRequest:
 
     @file_desc.setter
     def file_desc(self, file_desc):
-        """Sets the file_desc of this UploadAimMsgSignatureFileRequest.
+        r"""Sets the file_desc of this UploadAimMsgSignatureFileRequest.
 
         文件描述。
 
@@ -72,7 +72,7 @@ class UploadAimMsgSignatureFileRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadAimMsgSignatureFileRequest.
+        r"""Gets the body of this UploadAimMsgSignatureFileRequest.
 
         :return: The body of this UploadAimMsgSignatureFileRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UploadAimMsgSignatureFileRequestBody`
@@ -81,7 +81,7 @@ class UploadAimMsgSignatureFileRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadAimMsgSignatureFileRequest.
+        r"""Sets the body of this UploadAimMsgSignatureFileRequest.
 
         :param body: The body of this UploadAimMsgSignatureFileRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.UploadAimMsgSignatureFileRequestBody`

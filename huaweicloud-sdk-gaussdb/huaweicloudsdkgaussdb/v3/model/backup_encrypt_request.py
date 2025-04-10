@@ -29,7 +29,7 @@ class BackupEncryptRequest:
     }
 
     def __init__(self, type=None, kms_key_id=None, encryption_status=None):
-        """BackupEncryptRequest
+        r"""BackupEncryptRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BackupEncryptRequest:
 
     @property
     def type(self):
-        """Gets the type of this BackupEncryptRequest.
+        r"""Gets the type of this BackupEncryptRequest.
 
         加密类型。当前只支持kms。 开启加密时必传，关闭加密时不传。 不区分大小写。
 
@@ -67,7 +67,7 @@ class BackupEncryptRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BackupEncryptRequest.
+        r"""Sets the type of this BackupEncryptRequest.
 
         加密类型。当前只支持kms。 开启加密时必传，关闭加密时不传。 不区分大小写。
 
@@ -78,7 +78,7 @@ class BackupEncryptRequest:
 
     @property
     def kms_key_id(self):
-        """Gets the kms_key_id of this BackupEncryptRequest.
+        r"""Gets the kms_key_id of this BackupEncryptRequest.
 
         kms加密ID。加密时必传，关闭加密时候不传。
 
@@ -89,7 +89,7 @@ class BackupEncryptRequest:
 
     @kms_key_id.setter
     def kms_key_id(self, kms_key_id):
-        """Sets the kms_key_id of this BackupEncryptRequest.
+        r"""Sets the kms_key_id of this BackupEncryptRequest.
 
         kms加密ID。加密时必传，关闭加密时候不传。
 
@@ -100,7 +100,7 @@ class BackupEncryptRequest:
 
     @property
     def encryption_status(self):
-        """Gets the encryption_status of this BackupEncryptRequest.
+        r"""Gets the encryption_status of this BackupEncryptRequest.
 
         开启或关闭加密。不区分大小写。
 
@@ -111,7 +111,7 @@ class BackupEncryptRequest:
 
     @encryption_status.setter
     def encryption_status(self, encryption_status):
-        """Sets the encryption_status of this BackupEncryptRequest.
+        r"""Sets the encryption_status of this BackupEncryptRequest.
 
         开启或关闭加密。不区分大小写。
 

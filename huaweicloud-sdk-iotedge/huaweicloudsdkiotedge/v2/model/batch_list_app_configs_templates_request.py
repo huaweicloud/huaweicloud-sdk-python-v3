@@ -27,7 +27,7 @@ class BatchListAppConfigsTemplatesRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """BatchListAppConfigsTemplatesRequest
+        r"""BatchListAppConfigsTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchListAppConfigsTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchListAppConfigsTemplatesRequest.
+        r"""Gets the offset of this BatchListAppConfigsTemplatesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -61,7 +61,7 @@ class BatchListAppConfigsTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchListAppConfigsTemplatesRequest.
+        r"""Sets the offset of this BatchListAppConfigsTemplatesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -72,7 +72,7 @@ class BatchListAppConfigsTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchListAppConfigsTemplatesRequest.
+        r"""Gets the limit of this BatchListAppConfigsTemplatesRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 
@@ -83,7 +83,7 @@ class BatchListAppConfigsTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchListAppConfigsTemplatesRequest.
+        r"""Sets the limit of this BatchListAppConfigsTemplatesRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 

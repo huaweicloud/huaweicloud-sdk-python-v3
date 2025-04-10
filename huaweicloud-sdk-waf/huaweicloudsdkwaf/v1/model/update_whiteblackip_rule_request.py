@@ -31,7 +31,7 @@ class UpdateWhiteblackipRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, rule_id=None, body=None):
-        """UpdateWhiteblackipRuleRequest
+        r"""UpdateWhiteblackipRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateWhiteblackipRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateWhiteblackipRuleRequest.
+        r"""Gets the enterprise_project_id of this UpdateWhiteblackipRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -73,7 +73,7 @@ class UpdateWhiteblackipRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateWhiteblackipRuleRequest.
+        r"""Sets the enterprise_project_id of this UpdateWhiteblackipRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -84,7 +84,7 @@ class UpdateWhiteblackipRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateWhiteblackipRuleRequest.
+        r"""Gets the policy_id of this UpdateWhiteblackipRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -95,7 +95,7 @@ class UpdateWhiteblackipRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateWhiteblackipRuleRequest.
+        r"""Sets the policy_id of this UpdateWhiteblackipRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -106,7 +106,7 @@ class UpdateWhiteblackipRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateWhiteblackipRuleRequest.
+        r"""Gets the rule_id of this UpdateWhiteblackipRuleRequest.
 
         黑白名单规则id，您可以调用查询黑白名单规则列表（ListWhiteblackipRule）获取黑白名单规则id
 
@@ -117,7 +117,7 @@ class UpdateWhiteblackipRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateWhiteblackipRuleRequest.
+        r"""Sets the rule_id of this UpdateWhiteblackipRuleRequest.
 
         黑白名单规则id，您可以调用查询黑白名单规则列表（ListWhiteblackipRule）获取黑白名单规则id
 
@@ -128,7 +128,7 @@ class UpdateWhiteblackipRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateWhiteblackipRuleRequest.
+        r"""Gets the body of this UpdateWhiteblackipRuleRequest.
 
         :return: The body of this UpdateWhiteblackipRuleRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateWhiteBlackIpRuleRequestBody`
@@ -137,7 +137,7 @@ class UpdateWhiteblackipRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateWhiteblackipRuleRequest.
+        r"""Sets the body of this UpdateWhiteblackipRuleRequest.
 
         :param body: The body of this UpdateWhiteblackipRuleRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.UpdateWhiteBlackIpRuleRequestBody`

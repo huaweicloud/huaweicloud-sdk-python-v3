@@ -26,7 +26,7 @@ class RollbackApprovalResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """RollbackApprovalResponse
+        r"""RollbackApprovalResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RollbackApprovalResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this RollbackApprovalResponse.
+        r"""Gets the data of this RollbackApprovalResponse.
 
         :return: The data of this RollbackApprovalResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.RollbackApprovalResultData`
@@ -53,7 +53,7 @@ class RollbackApprovalResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this RollbackApprovalResponse.
+        r"""Sets the data of this RollbackApprovalResponse.
 
         :param data: The data of this RollbackApprovalResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.RollbackApprovalResultData`

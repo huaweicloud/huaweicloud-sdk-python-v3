@@ -27,7 +27,7 @@ class ApplicationConfigConfigurationEnv:
     }
 
     def __init__(self, name=None, value=None):
-        """ApplicationConfigConfigurationEnv
+        r"""ApplicationConfigConfigurationEnv
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApplicationConfigConfigurationEnv:
 
     @property
     def name(self):
-        """Gets the name of this ApplicationConfigConfigurationEnv.
+        r"""Gets the name of this ApplicationConfigConfigurationEnv.
 
         environment name
 
@@ -61,7 +61,7 @@ class ApplicationConfigConfigurationEnv:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicationConfigConfigurationEnv.
+        r"""Sets the name of this ApplicationConfigConfigurationEnv.
 
         environment name
 
@@ -72,7 +72,7 @@ class ApplicationConfigConfigurationEnv:
 
     @property
     def value(self):
-        """Gets the value of this ApplicationConfigConfigurationEnv.
+        r"""Gets the value of this ApplicationConfigConfigurationEnv.
 
         environment value
 
@@ -83,7 +83,7 @@ class ApplicationConfigConfigurationEnv:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ApplicationConfigConfigurationEnv.
+        r"""Sets the value of this ApplicationConfigConfigurationEnv.
 
         environment value
 

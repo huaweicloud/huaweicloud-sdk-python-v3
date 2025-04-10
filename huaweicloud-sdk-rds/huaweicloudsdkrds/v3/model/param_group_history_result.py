@@ -37,7 +37,7 @@ class ParamGroupHistoryResult:
     }
 
     def __init__(self, parameter_name=None, old_value=None, new_value=None, update_result=None, applied=None, update_time=None, apply_time=None):
-        """ParamGroupHistoryResult
+        r"""ParamGroupHistoryResult
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ParamGroupHistoryResult:
 
     @property
     def parameter_name(self):
-        """Gets the parameter_name of this ParamGroupHistoryResult.
+        r"""Gets the parameter_name of this ParamGroupHistoryResult.
 
         参数名称
 
@@ -96,7 +96,7 @@ class ParamGroupHistoryResult:
 
     @parameter_name.setter
     def parameter_name(self, parameter_name):
-        """Sets the parameter_name of this ParamGroupHistoryResult.
+        r"""Sets the parameter_name of this ParamGroupHistoryResult.
 
         参数名称
 
@@ -107,7 +107,7 @@ class ParamGroupHistoryResult:
 
     @property
     def old_value(self):
-        """Gets the old_value of this ParamGroupHistoryResult.
+        r"""Gets the old_value of this ParamGroupHistoryResult.
 
         旧值
 
@@ -118,7 +118,7 @@ class ParamGroupHistoryResult:
 
     @old_value.setter
     def old_value(self, old_value):
-        """Sets the old_value of this ParamGroupHistoryResult.
+        r"""Sets the old_value of this ParamGroupHistoryResult.
 
         旧值
 
@@ -129,7 +129,7 @@ class ParamGroupHistoryResult:
 
     @property
     def new_value(self):
-        """Gets the new_value of this ParamGroupHistoryResult.
+        r"""Gets the new_value of this ParamGroupHistoryResult.
 
         新值
 
@@ -140,7 +140,7 @@ class ParamGroupHistoryResult:
 
     @new_value.setter
     def new_value(self, new_value):
-        """Sets the new_value of this ParamGroupHistoryResult.
+        r"""Sets the new_value of this ParamGroupHistoryResult.
 
         新值
 
@@ -151,7 +151,7 @@ class ParamGroupHistoryResult:
 
     @property
     def update_result(self):
-        """Gets the update_result of this ParamGroupHistoryResult.
+        r"""Gets the update_result of this ParamGroupHistoryResult.
 
         更新结果 成功：SUCCESS 失败： FAILED
 
@@ -162,7 +162,7 @@ class ParamGroupHistoryResult:
 
     @update_result.setter
     def update_result(self, update_result):
-        """Sets the update_result of this ParamGroupHistoryResult.
+        r"""Sets the update_result of this ParamGroupHistoryResult.
 
         更新结果 成功：SUCCESS 失败： FAILED
 
@@ -173,7 +173,7 @@ class ParamGroupHistoryResult:
 
     @property
     def applied(self):
-        """Gets the applied of this ParamGroupHistoryResult.
+        r"""Gets the applied of this ParamGroupHistoryResult.
 
         是否已应用 true：已应用 false：未应用
 
@@ -184,7 +184,7 @@ class ParamGroupHistoryResult:
 
     @applied.setter
     def applied(self, applied):
-        """Sets the applied of this ParamGroupHistoryResult.
+        r"""Sets the applied of this ParamGroupHistoryResult.
 
         是否已应用 true：已应用 false：未应用
 
@@ -195,7 +195,7 @@ class ParamGroupHistoryResult:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ParamGroupHistoryResult.
+        r"""Gets the update_time of this ParamGroupHistoryResult.
 
         修改时间
 
@@ -206,7 +206,7 @@ class ParamGroupHistoryResult:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ParamGroupHistoryResult.
+        r"""Sets the update_time of this ParamGroupHistoryResult.
 
         修改时间
 
@@ -217,7 +217,7 @@ class ParamGroupHistoryResult:
 
     @property
     def apply_time(self):
-        """Gets the apply_time of this ParamGroupHistoryResult.
+        r"""Gets the apply_time of this ParamGroupHistoryResult.
 
         应用时间
 
@@ -228,7 +228,7 @@ class ParamGroupHistoryResult:
 
     @apply_time.setter
     def apply_time(self, apply_time):
-        """Sets the apply_time of this ParamGroupHistoryResult.
+        r"""Sets the apply_time of this ParamGroupHistoryResult.
 
         应用时间
 

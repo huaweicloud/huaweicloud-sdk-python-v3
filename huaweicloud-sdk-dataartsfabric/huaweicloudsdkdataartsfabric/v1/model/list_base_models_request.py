@@ -27,7 +27,7 @@ class ListBaseModelsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListBaseModelsRequest
+        r"""ListBaseModelsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListBaseModelsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBaseModelsRequest.
+        r"""Gets the offset of this ListBaseModelsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -61,7 +61,7 @@ class ListBaseModelsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBaseModelsRequest.
+        r"""Sets the offset of this ListBaseModelsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -72,7 +72,7 @@ class ListBaseModelsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBaseModelsRequest.
+        r"""Gets the limit of this ListBaseModelsRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -83,7 +83,7 @@ class ListBaseModelsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBaseModelsRequest.
+        r"""Sets the limit of this ListBaseModelsRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 

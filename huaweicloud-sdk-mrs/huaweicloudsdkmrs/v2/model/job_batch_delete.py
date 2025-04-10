@@ -25,7 +25,7 @@ class JobBatchDelete:
     }
 
     def __init__(self, job_id_list=None):
-        """JobBatchDelete
+        r"""JobBatchDelete
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class JobBatchDelete:
 
     @property
     def job_id_list(self):
-        """Gets the job_id_list of this JobBatchDelete.
+        r"""Gets the job_id_list of this JobBatchDelete.
 
         作业ID列表。获取方法，请参见[获取作业ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -54,7 +54,7 @@ class JobBatchDelete:
 
     @job_id_list.setter
     def job_id_list(self, job_id_list):
-        """Sets the job_id_list of this JobBatchDelete.
+        r"""Sets the job_id_list of this JobBatchDelete.
 
         作业ID列表。获取方法，请参见[获取作业ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 

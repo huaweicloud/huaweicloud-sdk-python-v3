@@ -30,7 +30,7 @@ class ListRelatedCommitsResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListRelatedCommitsResponse
+        r"""ListRelatedCommitsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRelatedCommitsResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListRelatedCommitsResponse.
+        r"""Gets the error of this ListRelatedCommitsResponse.
 
         :return: The error of this ListRelatedCommitsResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ListRelatedCommitsResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListRelatedCommitsResponse.
+        r"""Sets the error of this ListRelatedCommitsResponse.
 
         :param error: The error of this ListRelatedCommitsResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ListRelatedCommitsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListRelatedCommitsResponse.
+        r"""Gets the result of this ListRelatedCommitsResponse.
 
         :return: The result of this ListRelatedCommitsResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RelatedCommitListVo`
@@ -85,7 +85,7 @@ class ListRelatedCommitsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListRelatedCommitsResponse.
+        r"""Sets the result of this ListRelatedCommitsResponse.
 
         :param result: The result of this ListRelatedCommitsResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.RelatedCommitListVo`
@@ -94,7 +94,7 @@ class ListRelatedCommitsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListRelatedCommitsResponse.
+        r"""Gets the status of this ListRelatedCommitsResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ListRelatedCommitsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListRelatedCommitsResponse.
+        r"""Sets the status of this ListRelatedCommitsResponse.
 
         响应状态
 

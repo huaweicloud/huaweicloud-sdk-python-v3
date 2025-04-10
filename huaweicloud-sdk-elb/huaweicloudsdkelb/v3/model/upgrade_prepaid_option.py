@@ -31,7 +31,7 @@ class UpgradePrepaidOption:
     }
 
     def __init__(self, period_type=None, period_num=None, resource_package_type=None, auto_pay=None):
-        """UpgradePrepaidOption
+        r"""UpgradePrepaidOption
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpgradePrepaidOption:
 
     @property
     def period_type(self):
-        """Gets the period_type of this UpgradePrepaidOption.
+        r"""Gets the period_type of this UpgradePrepaidOption.
 
         参数解释：预付费实例的订购周期类型，当前支持月和年。  取值范围：  - month：月。  - year：年。
 
@@ -73,7 +73,7 @@ class UpgradePrepaidOption:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this UpgradePrepaidOption.
+        r"""Sets the period_type of this UpgradePrepaidOption.
 
         参数解释：预付费实例的订购周期类型，当前支持月和年。  取值范围：  - month：月。  - year：年。
 
@@ -84,7 +84,7 @@ class UpgradePrepaidOption:
 
     @property
     def period_num(self):
-        """Gets the period_num of this UpgradePrepaidOption.
+        r"""Gets the period_num of this UpgradePrepaidOption.
 
         参数解释：预付费实例的订购周期数。  取值范围： - period_type为month时，为[1,9]。 - period_type为year时，为[1,3]。
 
@@ -95,7 +95,7 @@ class UpgradePrepaidOption:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this UpgradePrepaidOption.
+        r"""Sets the period_num of this UpgradePrepaidOption.
 
         参数解释：预付费实例的订购周期数。  取值范围： - period_type为month时，为[1,9]。 - period_type为year时，为[1,3]。
 
@@ -106,7 +106,7 @@ class UpgradePrepaidOption:
 
     @property
     def resource_package_type(self):
-        """Gets the resource_package_type of this UpgradePrepaidOption.
+        r"""Gets the resource_package_type of this UpgradePrepaidOption.
 
         参数解释：购买定向套餐包。
 
@@ -117,7 +117,7 @@ class UpgradePrepaidOption:
 
     @resource_package_type.setter
     def resource_package_type(self, resource_package_type):
-        """Sets the resource_package_type of this UpgradePrepaidOption.
+        r"""Sets the resource_package_type of this UpgradePrepaidOption.
 
         参数解释：购买定向套餐包。
 
@@ -128,7 +128,7 @@ class UpgradePrepaidOption:
 
     @property
     def auto_pay(self):
-        """Gets the auto_pay of this UpgradePrepaidOption.
+        r"""Gets the auto_pay of this UpgradePrepaidOption.
 
         参数解释：自动支付开关。下单订购后，是否自动从客户的账户中支付。  约束限制：开启自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择关闭自动支付，然后在用户费用中心，选择代金券支付。  取值范围：  - true：开启自动支付。  - false：关闭自动支付。
 
@@ -139,7 +139,7 @@ class UpgradePrepaidOption:
 
     @auto_pay.setter
     def auto_pay(self, auto_pay):
-        """Sets the auto_pay of this UpgradePrepaidOption.
+        r"""Sets the auto_pay of this UpgradePrepaidOption.
 
         参数解释：自动支付开关。下单订购后，是否自动从客户的账户中支付。  约束限制：开启自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择关闭自动支付，然后在用户费用中心，选择代金券支付。  取值范围：  - true：开启自动支付。  - false：关闭自动支付。
 

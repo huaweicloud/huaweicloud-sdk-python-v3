@@ -28,7 +28,7 @@ class CountResourcesByTagResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, request_id=None):
-        """CountResourcesByTagResponse
+        r"""CountResourcesByTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CountResourcesByTagResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this CountResourcesByTagResponse.
+        r"""Gets the total_count of this CountResourcesByTagResponse.
 
         资源总数量。
 
@@ -62,7 +62,7 @@ class CountResourcesByTagResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this CountResourcesByTagResponse.
+        r"""Sets the total_count of this CountResourcesByTagResponse.
 
         资源总数量。
 
@@ -73,7 +73,7 @@ class CountResourcesByTagResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CountResourcesByTagResponse.
+        r"""Gets the request_id of this CountResourcesByTagResponse.
 
         请求ID。
 
@@ -84,7 +84,7 @@ class CountResourcesByTagResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CountResourcesByTagResponse.
+        r"""Sets the request_id of this CountResourcesByTagResponse.
 
         请求ID。
 

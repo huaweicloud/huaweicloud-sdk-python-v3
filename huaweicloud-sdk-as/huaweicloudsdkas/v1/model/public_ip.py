@@ -25,7 +25,7 @@ class PublicIp:
     }
 
     def __init__(self, eip=None):
-        """PublicIp
+        r"""PublicIp
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PublicIp:
 
     @property
     def eip(self):
-        """Gets the eip of this PublicIp.
+        r"""Gets the eip of this PublicIp.
 
         :return: The eip of this PublicIp.
         :rtype: :class:`huaweicloudsdkas.v1.EipInfo`
@@ -51,7 +51,7 @@ class PublicIp:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this PublicIp.
+        r"""Sets the eip of this PublicIp.
 
         :param eip: The eip of this PublicIp.
         :type eip: :class:`huaweicloudsdkas.v1.EipInfo`

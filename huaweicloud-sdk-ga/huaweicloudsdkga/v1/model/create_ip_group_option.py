@@ -29,7 +29,7 @@ class CreateIpGroupOption:
     }
 
     def __init__(self, name=None, description=None, ip_list=None):
-        """CreateIpGroupOption
+        r"""CreateIpGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateIpGroupOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateIpGroupOption.
+        r"""Gets the name of this CreateIpGroupOption.
 
         IP地址组名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -67,7 +67,7 @@ class CreateIpGroupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateIpGroupOption.
+        r"""Sets the name of this CreateIpGroupOption.
 
         IP地址组名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -78,7 +78,7 @@ class CreateIpGroupOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateIpGroupOption.
+        r"""Gets the description of this CreateIpGroupOption.
 
         IP地址组的描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -89,7 +89,7 @@ class CreateIpGroupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateIpGroupOption.
+        r"""Sets the description of this CreateIpGroupOption.
 
         IP地址组的描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -100,7 +100,7 @@ class CreateIpGroupOption:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this CreateIpGroupOption.
+        r"""Gets the ip_list of this CreateIpGroupOption.
 
         IP地址组中的IP网段列表，一次最多支持添加20个条目。
 
@@ -111,7 +111,7 @@ class CreateIpGroupOption:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this CreateIpGroupOption.
+        r"""Sets the ip_list of this CreateIpGroupOption.
 
         IP地址组中的IP网段列表，一次最多支持添加20个条目。
 

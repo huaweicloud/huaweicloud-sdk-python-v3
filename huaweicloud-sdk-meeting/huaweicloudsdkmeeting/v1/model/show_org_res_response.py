@@ -38,7 +38,7 @@ class ShowOrgResResponse(SdkResponse):
     }
 
     def __init__(self, used_rec_storage=None, used_accounts_count=None, used_live_count=None, conf_count=None, conf_length=None, active_attendee_count=None, total_attendee_count=None):
-        """ShowOrgResResponse
+        r"""ShowOrgResResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowOrgResResponse(SdkResponse):
 
     @property
     def used_rec_storage(self):
-        """Gets the used_rec_storage of this ShowOrgResResponse.
+        r"""Gets the used_rec_storage of this ShowOrgResResponse.
 
         企业管理员查询所属企业的资源使用信息。
 
@@ -97,7 +97,7 @@ class ShowOrgResResponse(SdkResponse):
 
     @used_rec_storage.setter
     def used_rec_storage(self, used_rec_storage):
-        """Sets the used_rec_storage of this ShowOrgResResponse.
+        r"""Sets the used_rec_storage of this ShowOrgResResponse.
 
         企业管理员查询所属企业的资源使用信息。
 
@@ -108,7 +108,7 @@ class ShowOrgResResponse(SdkResponse):
 
     @property
     def used_accounts_count(self):
-        """Gets the used_accounts_count of this ShowOrgResResponse.
+        r"""Gets the used_accounts_count of this ShowOrgResResponse.
 
         当前已用的会议并发数量。
 
@@ -119,7 +119,7 @@ class ShowOrgResResponse(SdkResponse):
 
     @used_accounts_count.setter
     def used_accounts_count(self, used_accounts_count):
-        """Sets the used_accounts_count of this ShowOrgResResponse.
+        r"""Sets the used_accounts_count of this ShowOrgResResponse.
 
         当前已用的会议并发数量。
 
@@ -130,7 +130,7 @@ class ShowOrgResResponse(SdkResponse):
 
     @property
     def used_live_count(self):
-        """Gets the used_live_count of this ShowOrgResResponse.
+        r"""Gets the used_live_count of this ShowOrgResResponse.
 
         当前已用的直播推流资源。
 
@@ -141,7 +141,7 @@ class ShowOrgResResponse(SdkResponse):
 
     @used_live_count.setter
     def used_live_count(self, used_live_count):
-        """Sets the used_live_count of this ShowOrgResResponse.
+        r"""Sets the used_live_count of this ShowOrgResResponse.
 
         当前已用的直播推流资源。
 
@@ -152,7 +152,7 @@ class ShowOrgResResponse(SdkResponse):
 
     @property
     def conf_count(self):
-        """Gets the conf_count of this ShowOrgResResponse.
+        r"""Gets the conf_count of this ShowOrgResResponse.
 
         当前已用的直播推流资源。
 
@@ -163,7 +163,7 @@ class ShowOrgResResponse(SdkResponse):
 
     @conf_count.setter
     def conf_count(self, conf_count):
-        """Sets the conf_count of this ShowOrgResResponse.
+        r"""Sets the conf_count of this ShowOrgResResponse.
 
         当前已用的直播推流资源。
 
@@ -174,7 +174,7 @@ class ShowOrgResResponse(SdkResponse):
 
     @property
     def conf_length(self):
-        """Gets the conf_length of this ShowOrgResResponse.
+        r"""Gets the conf_length of this ShowOrgResResponse.
 
         当日会议总时长。
 
@@ -185,7 +185,7 @@ class ShowOrgResResponse(SdkResponse):
 
     @conf_length.setter
     def conf_length(self, conf_length):
-        """Sets the conf_length of this ShowOrgResResponse.
+        r"""Sets the conf_length of this ShowOrgResResponse.
 
         当日会议总时长。
 
@@ -196,7 +196,7 @@ class ShowOrgResResponse(SdkResponse):
 
     @property
     def active_attendee_count(self):
-        """Gets the active_attendee_count of this ShowOrgResResponse.
+        r"""Gets the active_attendee_count of this ShowOrgResResponse.
 
         当日活跃用户数。
 
@@ -207,7 +207,7 @@ class ShowOrgResResponse(SdkResponse):
 
     @active_attendee_count.setter
     def active_attendee_count(self, active_attendee_count):
-        """Sets the active_attendee_count of this ShowOrgResResponse.
+        r"""Sets the active_attendee_count of this ShowOrgResResponse.
 
         当日活跃用户数。
 
@@ -218,7 +218,7 @@ class ShowOrgResResponse(SdkResponse):
 
     @property
     def total_attendee_count(self):
-        """Gets the total_attendee_count of this ShowOrgResResponse.
+        r"""Gets the total_attendee_count of this ShowOrgResResponse.
 
         当日总与会人数。
 
@@ -229,7 +229,7 @@ class ShowOrgResResponse(SdkResponse):
 
     @total_attendee_count.setter
     def total_attendee_count(self, total_attendee_count):
-        """Sets the total_attendee_count of this ShowOrgResResponse.
+        r"""Sets the total_attendee_count of this ShowOrgResResponse.
 
         当日总与会人数。
 

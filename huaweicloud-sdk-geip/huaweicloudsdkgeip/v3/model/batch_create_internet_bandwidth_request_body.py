@@ -25,7 +25,7 @@ class BatchCreateInternetBandwidthRequestBody:
     }
 
     def __init__(self, internet_bandwidth=None):
-        """BatchCreateInternetBandwidthRequestBody
+        r"""BatchCreateInternetBandwidthRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchCreateInternetBandwidthRequestBody:
 
     @property
     def internet_bandwidth(self):
-        """Gets the internet_bandwidth of this BatchCreateInternetBandwidthRequestBody.
+        r"""Gets the internet_bandwidth of this BatchCreateInternetBandwidthRequestBody.
 
         :return: The internet_bandwidth of this BatchCreateInternetBandwidthRequestBody.
         :rtype: :class:`huaweicloudsdkgeip.v3.BatchCreateInternetBandwidthRequestBodyInternetBandwidth`
@@ -51,7 +51,7 @@ class BatchCreateInternetBandwidthRequestBody:
 
     @internet_bandwidth.setter
     def internet_bandwidth(self, internet_bandwidth):
-        """Sets the internet_bandwidth of this BatchCreateInternetBandwidthRequestBody.
+        r"""Sets the internet_bandwidth of this BatchCreateInternetBandwidthRequestBody.
 
         :param internet_bandwidth: The internet_bandwidth of this BatchCreateInternetBandwidthRequestBody.
         :type internet_bandwidth: :class:`huaweicloudsdkgeip.v3.BatchCreateInternetBandwidthRequestBodyInternetBandwidth`

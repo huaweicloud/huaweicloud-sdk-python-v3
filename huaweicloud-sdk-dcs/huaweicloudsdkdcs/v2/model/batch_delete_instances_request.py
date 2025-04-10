@@ -27,7 +27,7 @@ class BatchDeleteInstancesRequest:
     }
 
     def __init__(self, all_failure=None, body=None):
-        """BatchDeleteInstancesRequest
+        r"""BatchDeleteInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchDeleteInstancesRequest:
 
     @property
     def all_failure(self):
-        """Gets the all_failure of this BatchDeleteInstancesRequest.
+        r"""Gets the all_failure of this BatchDeleteInstancesRequest.
 
         是否批量删除创建失败的缓存实例。取值如下： - true，表示删除租户所有创建失败的缓存实例，此时请求参数instances可为空； - false或者其他值，表示删除instances参数数组中指定的缓存实例。 
 
@@ -61,7 +61,7 @@ class BatchDeleteInstancesRequest:
 
     @all_failure.setter
     def all_failure(self, all_failure):
-        """Sets the all_failure of this BatchDeleteInstancesRequest.
+        r"""Sets the all_failure of this BatchDeleteInstancesRequest.
 
         是否批量删除创建失败的缓存实例。取值如下： - true，表示删除租户所有创建失败的缓存实例，此时请求参数instances可为空； - false或者其他值，表示删除instances参数数组中指定的缓存实例。 
 
@@ -72,7 +72,7 @@ class BatchDeleteInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteInstancesRequest.
+        r"""Gets the body of this BatchDeleteInstancesRequest.
 
         :return: The body of this BatchDeleteInstancesRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.BatchDeleteBody`
@@ -81,7 +81,7 @@ class BatchDeleteInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteInstancesRequest.
+        r"""Sets the body of this BatchDeleteInstancesRequest.
 
         :param body: The body of this BatchDeleteInstancesRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.BatchDeleteBody`

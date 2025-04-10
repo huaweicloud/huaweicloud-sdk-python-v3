@@ -44,7 +44,7 @@ class ShowApplicationDetailResponse(SdkResponse):
     }
 
     def __init__(self, component_count=None, unified_model=None, id=None, name=None, description=None, creator=None, project_id=None, enterprise_project_id=None, create_time=None, update_time=None):
-        """ShowApplicationDetailResponse
+        r"""ShowApplicationDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @property
     def component_count(self):
-        """Gets the component_count of this ShowApplicationDetailResponse.
+        r"""Gets the component_count of this ShowApplicationDetailResponse.
 
         组件个数。
 
@@ -118,7 +118,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @component_count.setter
     def component_count(self, component_count):
-        """Sets the component_count of this ShowApplicationDetailResponse.
+        r"""Sets the component_count of this ShowApplicationDetailResponse.
 
         组件个数。
 
@@ -129,7 +129,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @property
     def unified_model(self):
-        """Gets the unified_model of this ShowApplicationDetailResponse.
+        r"""Gets the unified_model of this ShowApplicationDetailResponse.
 
         是否开启统一模型
 
@@ -140,7 +140,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @unified_model.setter
     def unified_model(self, unified_model):
-        """Sets the unified_model of this ShowApplicationDetailResponse.
+        r"""Sets the unified_model of this ShowApplicationDetailResponse.
 
         是否开启统一模型
 
@@ -151,7 +151,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowApplicationDetailResponse.
+        r"""Gets the id of this ShowApplicationDetailResponse.
 
         应用ID。
 
@@ -162,7 +162,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowApplicationDetailResponse.
+        r"""Sets the id of this ShowApplicationDetailResponse.
 
         应用ID。
 
@@ -173,7 +173,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowApplicationDetailResponse.
+        r"""Gets the name of this ShowApplicationDetailResponse.
 
         应用名称。
 
@@ -184,7 +184,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowApplicationDetailResponse.
+        r"""Sets the name of this ShowApplicationDetailResponse.
 
         应用名称。
 
@@ -195,7 +195,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowApplicationDetailResponse.
+        r"""Gets the description of this ShowApplicationDetailResponse.
 
         应用描述。
 
@@ -206,7 +206,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowApplicationDetailResponse.
+        r"""Sets the description of this ShowApplicationDetailResponse.
 
         应用描述。
 
@@ -217,7 +217,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this ShowApplicationDetailResponse.
+        r"""Gets the creator of this ShowApplicationDetailResponse.
 
         创建人。
 
@@ -228,7 +228,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ShowApplicationDetailResponse.
+        r"""Sets the creator of this ShowApplicationDetailResponse.
 
         创建人。
 
@@ -239,7 +239,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowApplicationDetailResponse.
+        r"""Gets the project_id of this ShowApplicationDetailResponse.
 
         项目ID。
 
@@ -250,7 +250,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowApplicationDetailResponse.
+        r"""Sets the project_id of this ShowApplicationDetailResponse.
 
         项目ID。
 
@@ -261,7 +261,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowApplicationDetailResponse.
+        r"""Gets the enterprise_project_id of this ShowApplicationDetailResponse.
 
         企业项目ID。
 
@@ -272,7 +272,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowApplicationDetailResponse.
+        r"""Sets the enterprise_project_id of this ShowApplicationDetailResponse.
 
         企业项目ID。
 
@@ -283,7 +283,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowApplicationDetailResponse.
+        r"""Gets the create_time of this ShowApplicationDetailResponse.
 
         创建时间。
 
@@ -294,7 +294,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowApplicationDetailResponse.
+        r"""Sets the create_time of this ShowApplicationDetailResponse.
 
         创建时间。
 
@@ -305,7 +305,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowApplicationDetailResponse.
+        r"""Gets the update_time of this ShowApplicationDetailResponse.
 
         修改时间。
 
@@ -316,7 +316,7 @@ class ShowApplicationDetailResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowApplicationDetailResponse.
+        r"""Sets the update_time of this ShowApplicationDetailResponse.
 
         修改时间。
 

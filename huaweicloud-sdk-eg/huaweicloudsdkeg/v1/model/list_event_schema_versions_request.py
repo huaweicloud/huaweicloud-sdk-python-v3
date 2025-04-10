@@ -33,7 +33,7 @@ class ListEventSchemaVersionsRequest:
     }
 
     def __init__(self, schema_id=None, offset=None, limit=None, sort=None, version=None):
-        """ListEventSchemaVersionsRequest
+        r"""ListEventSchemaVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListEventSchemaVersionsRequest:
 
     @property
     def schema_id(self):
-        """Gets the schema_id of this ListEventSchemaVersionsRequest.
+        r"""Gets the schema_id of this ListEventSchemaVersionsRequest.
 
         指定查询的事件模型ID
 
@@ -81,7 +81,7 @@ class ListEventSchemaVersionsRequest:
 
     @schema_id.setter
     def schema_id(self, schema_id):
-        """Sets the schema_id of this ListEventSchemaVersionsRequest.
+        r"""Sets the schema_id of this ListEventSchemaVersionsRequest.
 
         指定查询的事件模型ID
 
@@ -92,7 +92,7 @@ class ListEventSchemaVersionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEventSchemaVersionsRequest.
+        r"""Gets the offset of this ListEventSchemaVersionsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -103,7 +103,7 @@ class ListEventSchemaVersionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEventSchemaVersionsRequest.
+        r"""Sets the offset of this ListEventSchemaVersionsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -114,7 +114,7 @@ class ListEventSchemaVersionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEventSchemaVersionsRequest.
+        r"""Gets the limit of this ListEventSchemaVersionsRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -125,7 +125,7 @@ class ListEventSchemaVersionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEventSchemaVersionsRequest.
+        r"""Sets the limit of this ListEventSchemaVersionsRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -136,7 +136,7 @@ class ListEventSchemaVersionsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListEventSchemaVersionsRequest.
+        r"""Gets the sort of this ListEventSchemaVersionsRequest.
 
         指定查询排序
 
@@ -147,7 +147,7 @@ class ListEventSchemaVersionsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListEventSchemaVersionsRequest.
+        r"""Sets the sort of this ListEventSchemaVersionsRequest.
 
         指定查询排序
 
@@ -158,7 +158,7 @@ class ListEventSchemaVersionsRequest:
 
     @property
     def version(self):
-        """Gets the version of this ListEventSchemaVersionsRequest.
+        r"""Gets the version of this ListEventSchemaVersionsRequest.
 
         指定查询的事件模型版本号
 
@@ -169,7 +169,7 @@ class ListEventSchemaVersionsRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListEventSchemaVersionsRequest.
+        r"""Sets the version of this ListEventSchemaVersionsRequest.
 
         指定查询的事件模型版本号
 

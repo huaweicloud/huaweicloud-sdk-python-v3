@@ -37,7 +37,7 @@ class CreateRuleReq:
     }
 
     def __init__(self, type=None, name=None, layout_content=None, plugin_id=None, plugin_name=None, plugin_version=None, content=None):
-        """CreateRuleReq
+        r"""CreateRuleReq
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class CreateRuleReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateRuleReq.
+        r"""Gets the type of this CreateRuleReq.
 
         类型：Build,Gate,Deploy,Test,Normal
 
@@ -92,7 +92,7 @@ class CreateRuleReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateRuleReq.
+        r"""Sets the type of this CreateRuleReq.
 
         类型：Build,Gate,Deploy,Test,Normal
 
@@ -103,7 +103,7 @@ class CreateRuleReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateRuleReq.
+        r"""Gets the name of this CreateRuleReq.
 
         规则名称
 
@@ -114,7 +114,7 @@ class CreateRuleReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRuleReq.
+        r"""Sets the name of this CreateRuleReq.
 
         规则名称
 
@@ -125,7 +125,7 @@ class CreateRuleReq:
 
     @property
     def layout_content(self):
-        """Gets the layout_content of this CreateRuleReq.
+        r"""Gets the layout_content of this CreateRuleReq.
 
         布局内容
 
@@ -136,7 +136,7 @@ class CreateRuleReq:
 
     @layout_content.setter
     def layout_content(self, layout_content):
-        """Sets the layout_content of this CreateRuleReq.
+        r"""Sets the layout_content of this CreateRuleReq.
 
         布局内容
 
@@ -147,7 +147,7 @@ class CreateRuleReq:
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this CreateRuleReq.
+        r"""Gets the plugin_id of this CreateRuleReq.
 
         插件ID
 
@@ -158,7 +158,7 @@ class CreateRuleReq:
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this CreateRuleReq.
+        r"""Sets the plugin_id of this CreateRuleReq.
 
         插件ID
 
@@ -169,7 +169,7 @@ class CreateRuleReq:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this CreateRuleReq.
+        r"""Gets the plugin_name of this CreateRuleReq.
 
         插件名称
 
@@ -180,7 +180,7 @@ class CreateRuleReq:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this CreateRuleReq.
+        r"""Sets the plugin_name of this CreateRuleReq.
 
         插件名称
 
@@ -191,7 +191,7 @@ class CreateRuleReq:
 
     @property
     def plugin_version(self):
-        """Gets the plugin_version of this CreateRuleReq.
+        r"""Gets the plugin_version of this CreateRuleReq.
 
         插件版本号
 
@@ -202,7 +202,7 @@ class CreateRuleReq:
 
     @plugin_version.setter
     def plugin_version(self, plugin_version):
-        """Sets the plugin_version of this CreateRuleReq.
+        r"""Sets the plugin_version of this CreateRuleReq.
 
         插件版本号
 
@@ -213,7 +213,7 @@ class CreateRuleReq:
 
     @property
     def content(self):
-        """Gets the content of this CreateRuleReq.
+        r"""Gets the content of this CreateRuleReq.
 
         规则属性分组列表
 
@@ -224,7 +224,7 @@ class CreateRuleReq:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CreateRuleReq.
+        r"""Sets the content of this CreateRuleReq.
 
         规则属性分组列表
 

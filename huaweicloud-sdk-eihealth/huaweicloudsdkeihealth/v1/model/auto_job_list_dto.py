@@ -51,7 +51,7 @@ class AutoJobListDto:
     }
 
     def __init__(self, id=None, name=None, description=None, labels=None, priority=None, timeout=None, status=None, create_time=None, finish_time=None, failed_reason=None, user_name=None, tool_info=None, database_id=None, database_name=None):
-        """AutoJobListDto
+        r"""AutoJobListDto
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class AutoJobListDto:
 
     @property
     def id(self):
-        """Gets the id of this AutoJobListDto.
+        r"""Gets the id of this AutoJobListDto.
 
         自动作业id
 
@@ -145,7 +145,7 @@ class AutoJobListDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AutoJobListDto.
+        r"""Sets the id of this AutoJobListDto.
 
         自动作业id
 
@@ -156,7 +156,7 @@ class AutoJobListDto:
 
     @property
     def name(self):
-        """Gets the name of this AutoJobListDto.
+        r"""Gets the name of this AutoJobListDto.
 
         自动作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -167,7 +167,7 @@ class AutoJobListDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AutoJobListDto.
+        r"""Sets the name of this AutoJobListDto.
 
         自动作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
 
@@ -178,7 +178,7 @@ class AutoJobListDto:
 
     @property
     def description(self):
-        """Gets the description of this AutoJobListDto.
+        r"""Gets the description of this AutoJobListDto.
 
         自动作业的描述, 取值范围：输入字符最大长度为255
 
@@ -189,7 +189,7 @@ class AutoJobListDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AutoJobListDto.
+        r"""Sets the description of this AutoJobListDto.
 
         自动作业的描述, 取值范围：输入字符最大长度为255
 
@@ -200,7 +200,7 @@ class AutoJobListDto:
 
     @property
     def labels(self):
-        """Gets the labels of this AutoJobListDto.
+        r"""Gets the labels of this AutoJobListDto.
 
         自动作业标签
 
@@ -211,7 +211,7 @@ class AutoJobListDto:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this AutoJobListDto.
+        r"""Sets the labels of this AutoJobListDto.
 
         自动作业标签
 
@@ -222,7 +222,7 @@ class AutoJobListDto:
 
     @property
     def priority(self):
-        """Gets the priority of this AutoJobListDto.
+        r"""Gets the priority of this AutoJobListDto.
 
         自动作业优先级，[0,9]，0表示最低，默认0
 
@@ -233,7 +233,7 @@ class AutoJobListDto:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this AutoJobListDto.
+        r"""Sets the priority of this AutoJobListDto.
 
         自动作业优先级，[0,9]，0表示最低，默认0
 
@@ -244,7 +244,7 @@ class AutoJobListDto:
 
     @property
     def timeout(self):
-        """Gets the timeout of this AutoJobListDto.
+        r"""Gets the timeout of this AutoJobListDto.
 
         作业执行超时时长，取值范围: [1, 144000]，单位：分钟，默认数值1440
 
@@ -255,7 +255,7 @@ class AutoJobListDto:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this AutoJobListDto.
+        r"""Sets the timeout of this AutoJobListDto.
 
         作业执行超时时长，取值范围: [1, 144000]，单位：分钟，默认数值1440
 
@@ -266,7 +266,7 @@ class AutoJobListDto:
 
     @property
     def status(self):
-        """Gets the status of this AutoJobListDto.
+        r"""Gets the status of this AutoJobListDto.
 
         自动作业状态
 
@@ -277,7 +277,7 @@ class AutoJobListDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AutoJobListDto.
+        r"""Sets the status of this AutoJobListDto.
 
         自动作业状态
 
@@ -288,7 +288,7 @@ class AutoJobListDto:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AutoJobListDto.
+        r"""Gets the create_time of this AutoJobListDto.
 
         自动作业创建时间
 
@@ -299,7 +299,7 @@ class AutoJobListDto:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AutoJobListDto.
+        r"""Sets the create_time of this AutoJobListDto.
 
         自动作业创建时间
 
@@ -310,7 +310,7 @@ class AutoJobListDto:
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this AutoJobListDto.
+        r"""Gets the finish_time of this AutoJobListDto.
 
         自动作业结束时间
 
@@ -321,7 +321,7 @@ class AutoJobListDto:
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this AutoJobListDto.
+        r"""Sets the finish_time of this AutoJobListDto.
 
         自动作业结束时间
 
@@ -332,7 +332,7 @@ class AutoJobListDto:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this AutoJobListDto.
+        r"""Gets the failed_reason of this AutoJobListDto.
 
         失败原因，当自动作业执行失败时会返回，比如依赖的数据表，流程不存在等等
 
@@ -343,7 +343,7 @@ class AutoJobListDto:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this AutoJobListDto.
+        r"""Sets the failed_reason of this AutoJobListDto.
 
         失败原因，当自动作业执行失败时会返回，比如依赖的数据表，流程不存在等等
 
@@ -354,7 +354,7 @@ class AutoJobListDto:
 
     @property
     def user_name(self):
-        """Gets the user_name of this AutoJobListDto.
+        r"""Gets the user_name of this AutoJobListDto.
 
         自动作业的创建者
 
@@ -365,7 +365,7 @@ class AutoJobListDto:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this AutoJobListDto.
+        r"""Sets the user_name of this AutoJobListDto.
 
         自动作业的创建者
 
@@ -376,7 +376,7 @@ class AutoJobListDto:
 
     @property
     def tool_info(self):
-        """Gets the tool_info of this AutoJobListDto.
+        r"""Gets the tool_info of this AutoJobListDto.
 
         :return: The tool_info of this AutoJobListDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ToolInfoDto`
@@ -385,7 +385,7 @@ class AutoJobListDto:
 
     @tool_info.setter
     def tool_info(self, tool_info):
-        """Sets the tool_info of this AutoJobListDto.
+        r"""Sets the tool_info of this AutoJobListDto.
 
         :param tool_info: The tool_info of this AutoJobListDto.
         :type tool_info: :class:`huaweicloudsdkeihealth.v1.ToolInfoDto`
@@ -394,7 +394,7 @@ class AutoJobListDto:
 
     @property
     def database_id(self):
-        """Gets the database_id of this AutoJobListDto.
+        r"""Gets the database_id of this AutoJobListDto.
 
         自动作业依赖的数据表ID
 
@@ -405,7 +405,7 @@ class AutoJobListDto:
 
     @database_id.setter
     def database_id(self, database_id):
-        """Sets the database_id of this AutoJobListDto.
+        r"""Sets the database_id of this AutoJobListDto.
 
         自动作业依赖的数据表ID
 
@@ -416,7 +416,7 @@ class AutoJobListDto:
 
     @property
     def database_name(self):
-        """Gets the database_name of this AutoJobListDto.
+        r"""Gets the database_name of this AutoJobListDto.
 
         自动作业依赖的数据表名称
 
@@ -427,7 +427,7 @@ class AutoJobListDto:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this AutoJobListDto.
+        r"""Sets the database_name of this AutoJobListDto.
 
         自动作业依赖的数据表名称
 

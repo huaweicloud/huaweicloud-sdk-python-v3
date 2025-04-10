@@ -24,7 +24,7 @@ class DeleteDomainGroupInheritedRoleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteDomainGroupInheritedRoleResponse
+        r"""DeleteDomainGroupInheritedRoleResponse
 
         The model defined in huaweicloud sdk
 

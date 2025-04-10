@@ -31,7 +31,7 @@ class ListKnowledgeQuestionRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None, intent_id=None):
-        """ListKnowledgeQuestionRequest
+        r"""ListKnowledgeQuestionRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListKnowledgeQuestionRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListKnowledgeQuestionRequest.
+        r"""Gets the x_app_user_id of this ListKnowledgeQuestionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -74,7 +74,7 @@ class ListKnowledgeQuestionRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListKnowledgeQuestionRequest.
+        r"""Sets the x_app_user_id of this ListKnowledgeQuestionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -85,7 +85,7 @@ class ListKnowledgeQuestionRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListKnowledgeQuestionRequest.
+        r"""Gets the offset of this ListKnowledgeQuestionRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -96,7 +96,7 @@ class ListKnowledgeQuestionRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListKnowledgeQuestionRequest.
+        r"""Sets the offset of this ListKnowledgeQuestionRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -107,7 +107,7 @@ class ListKnowledgeQuestionRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListKnowledgeQuestionRequest.
+        r"""Gets the limit of this ListKnowledgeQuestionRequest.
 
         每页显示的条目数量。
 
@@ -118,7 +118,7 @@ class ListKnowledgeQuestionRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListKnowledgeQuestionRequest.
+        r"""Sets the limit of this ListKnowledgeQuestionRequest.
 
         每页显示的条目数量。
 
@@ -129,7 +129,7 @@ class ListKnowledgeQuestionRequest:
 
     @property
     def intent_id(self):
-        """Gets the intent_id of this ListKnowledgeQuestionRequest.
+        r"""Gets the intent_id of this ListKnowledgeQuestionRequest.
 
         意图ID。
 
@@ -140,7 +140,7 @@ class ListKnowledgeQuestionRequest:
 
     @intent_id.setter
     def intent_id(self, intent_id):
-        """Sets the intent_id of this ListKnowledgeQuestionRequest.
+        r"""Sets the intent_id of this ListKnowledgeQuestionRequest.
 
         意图ID。
 

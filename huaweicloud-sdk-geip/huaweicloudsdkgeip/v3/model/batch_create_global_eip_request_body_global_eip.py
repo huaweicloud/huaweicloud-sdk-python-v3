@@ -39,7 +39,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
     }
 
     def __init__(self, name=None, description=None, geip_pool_name=None, access_site=None, internet_bandwidth_info=None, count=None, tags=None, enterprise_project_id=None):
-        """BatchCreateGlobalEipRequestBodyGlobalEip
+        r"""BatchCreateGlobalEipRequestBodyGlobalEip
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @property
     def name(self):
-        """Gets the name of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the name of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -100,7 +100,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the name of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -111,7 +111,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @property
     def description(self):
-        """Gets the description of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the description of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -122,7 +122,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the description of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -133,7 +133,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @property
     def geip_pool_name(self):
-        """Gets the geip_pool_name of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the geip_pool_name of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         全域弹性公网IP池子名称
 
@@ -144,7 +144,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @geip_pool_name.setter
     def geip_pool_name(self, geip_pool_name):
-        """Sets the geip_pool_name of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the geip_pool_name of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         全域弹性公网IP池子名称
 
@@ -155,7 +155,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @property
     def access_site(self):
-        """Gets the access_site of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the access_site of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         接入点信息
 
@@ -166,7 +166,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the access_site of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         接入点信息
 
@@ -177,7 +177,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @property
     def internet_bandwidth_info(self):
-        """Gets the internet_bandwidth_info of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the internet_bandwidth_info of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         :return: The internet_bandwidth_info of this BatchCreateGlobalEipRequestBodyGlobalEip.
         :rtype: :class:`huaweicloudsdkgeip.v3.BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo`
@@ -186,7 +186,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @internet_bandwidth_info.setter
     def internet_bandwidth_info(self, internet_bandwidth_info):
-        """Sets the internet_bandwidth_info of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the internet_bandwidth_info of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         :param internet_bandwidth_info: The internet_bandwidth_info of this BatchCreateGlobalEipRequestBodyGlobalEip.
         :type internet_bandwidth_info: :class:`huaweicloudsdkgeip.v3.BatchCreateGlobalEipRequestBodyGlobalEipInternetBandwidthInfo`
@@ -195,7 +195,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @property
     def count(self):
-        """Gets the count of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the count of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         批创个数
 
@@ -206,7 +206,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the count of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         批创个数
 
@@ -217,7 +217,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the tags of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         全域弹性公网IP标签
 
@@ -228,7 +228,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the tags of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         全域弹性公网IP标签
 
@@ -239,7 +239,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the enterprise_project_id of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -250,7 +250,7 @@ class BatchCreateGlobalEipRequestBodyGlobalEip:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this BatchCreateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the enterprise_project_id of this BatchCreateGlobalEipRequestBodyGlobalEip.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 

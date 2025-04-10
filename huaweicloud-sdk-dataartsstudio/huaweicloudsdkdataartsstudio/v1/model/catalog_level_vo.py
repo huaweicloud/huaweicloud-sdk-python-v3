@@ -31,7 +31,7 @@ class CatalogLevelVO:
     }
 
     def __init__(self, id=None, level=None, name_ch=None, name_en=None):
-        """CatalogLevelVO
+        r"""CatalogLevelVO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CatalogLevelVO:
 
     @property
     def id(self):
-        """Gets the id of this CatalogLevelVO.
+        r"""Gets the id of this CatalogLevelVO.
 
         编号，ID字符串。
 
@@ -75,7 +75,7 @@ class CatalogLevelVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CatalogLevelVO.
+        r"""Sets the id of this CatalogLevelVO.
 
         编号，ID字符串。
 
@@ -86,7 +86,7 @@ class CatalogLevelVO:
 
     @property
     def level(self):
-        """Gets the level of this CatalogLevelVO.
+        r"""Gets the level of this CatalogLevelVO.
 
         层级。取值范围为1-7。
 
@@ -97,7 +97,7 @@ class CatalogLevelVO:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this CatalogLevelVO.
+        r"""Sets the level of this CatalogLevelVO.
 
         层级。取值范围为1-7。
 
@@ -108,7 +108,7 @@ class CatalogLevelVO:
 
     @property
     def name_ch(self):
-        """Gets the name_ch of this CatalogLevelVO.
+        r"""Gets the name_ch of this CatalogLevelVO.
 
         中文名称。
 
@@ -119,7 +119,7 @@ class CatalogLevelVO:
 
     @name_ch.setter
     def name_ch(self, name_ch):
-        """Sets the name_ch of this CatalogLevelVO.
+        r"""Sets the name_ch of this CatalogLevelVO.
 
         中文名称。
 
@@ -130,7 +130,7 @@ class CatalogLevelVO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this CatalogLevelVO.
+        r"""Gets the name_en of this CatalogLevelVO.
 
         英文名称。
 
@@ -141,7 +141,7 @@ class CatalogLevelVO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this CatalogLevelVO.
+        r"""Sets the name_en of this CatalogLevelVO.
 
         英文名称。
 

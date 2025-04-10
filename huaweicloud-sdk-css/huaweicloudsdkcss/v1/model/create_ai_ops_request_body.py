@@ -29,7 +29,7 @@ class CreateAiOpsRequestBody:
     }
 
     def __init__(self, name=None, description=None, alarm=None):
-        """CreateAiOpsRequestBody
+        r"""CreateAiOpsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateAiOpsRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateAiOpsRequestBody.
+        r"""Gets the name of this CreateAiOpsRequestBody.
 
         检测任务名称。
 
@@ -67,7 +67,7 @@ class CreateAiOpsRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAiOpsRequestBody.
+        r"""Sets the name of this CreateAiOpsRequestBody.
 
         检测任务名称。
 
@@ -78,7 +78,7 @@ class CreateAiOpsRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateAiOpsRequestBody.
+        r"""Gets the description of this CreateAiOpsRequestBody.
 
         检测任务描述。
 
@@ -89,7 +89,7 @@ class CreateAiOpsRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAiOpsRequestBody.
+        r"""Sets the description of this CreateAiOpsRequestBody.
 
         检测任务描述。
 
@@ -100,7 +100,7 @@ class CreateAiOpsRequestBody:
 
     @property
     def alarm(self):
-        """Gets the alarm of this CreateAiOpsRequestBody.
+        r"""Gets the alarm of this CreateAiOpsRequestBody.
 
         :return: The alarm of this CreateAiOpsRequestBody.
         :rtype: :class:`huaweicloudsdkcss.v1.CreateAiOpsRequestBodyAlarm`
@@ -109,7 +109,7 @@ class CreateAiOpsRequestBody:
 
     @alarm.setter
     def alarm(self, alarm):
-        """Sets the alarm of this CreateAiOpsRequestBody.
+        r"""Sets the alarm of this CreateAiOpsRequestBody.
 
         :param alarm: The alarm of this CreateAiOpsRequestBody.
         :type alarm: :class:`huaweicloudsdkcss.v1.CreateAiOpsRequestBodyAlarm`

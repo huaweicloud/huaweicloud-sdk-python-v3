@@ -27,7 +27,7 @@ class ResizeClusterRequestBodyExtendParam:
     }
 
     def __init__(self, dec_master_flavor=None, is_auto_pay=None):
-        """ResizeClusterRequestBodyExtendParam
+        r"""ResizeClusterRequestBodyExtendParam
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResizeClusterRequestBodyExtendParam:
 
     @property
     def dec_master_flavor(self):
-        """Gets the dec_master_flavor of this ResizeClusterRequestBodyExtendParam.
+        r"""Gets the dec_master_flavor of this ResizeClusterRequestBodyExtendParam.
 
         专属云CCE集群可指定控制节点的规格
 
@@ -61,7 +61,7 @@ class ResizeClusterRequestBodyExtendParam:
 
     @dec_master_flavor.setter
     def dec_master_flavor(self, dec_master_flavor):
-        """Sets the dec_master_flavor of this ResizeClusterRequestBodyExtendParam.
+        r"""Sets the dec_master_flavor of this ResizeClusterRequestBodyExtendParam.
 
         专属云CCE集群可指定控制节点的规格
 
@@ -72,7 +72,7 @@ class ResizeClusterRequestBodyExtendParam:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ResizeClusterRequestBodyExtendParam.
+        r"""Gets the is_auto_pay of this ResizeClusterRequestBodyExtendParam.
 
         是否自动扣款 - “true”：自动扣款 - “false”：不自动扣款 > 包周期集群时生效，不填写此参数时默认不会自动扣款。 
 
@@ -83,7 +83,7 @@ class ResizeClusterRequestBodyExtendParam:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ResizeClusterRequestBodyExtendParam.
+        r"""Sets the is_auto_pay of this ResizeClusterRequestBodyExtendParam.
 
         是否自动扣款 - “true”：自动扣款 - “false”：不自动扣款 > 包周期集群时生效，不填写此参数时默认不会自动扣款。 
 

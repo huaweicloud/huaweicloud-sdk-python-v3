@@ -37,7 +37,7 @@ class StatisticForCallDetail:
     }
 
     def __init__(self, id=None, name=None, call_num=None, success_num=None, fail_num=None, legal_num=None, illegal_num=None):
-        """StatisticForCallDetail
+        r"""StatisticForCallDetail
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class StatisticForCallDetail:
 
     @property
     def id(self):
-        """Gets the id of this StatisticForCallDetail.
+        r"""Gets the id of this StatisticForCallDetail.
 
         统计对象编号
 
@@ -96,7 +96,7 @@ class StatisticForCallDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StatisticForCallDetail.
+        r"""Sets the id of this StatisticForCallDetail.
 
         统计对象编号
 
@@ -107,7 +107,7 @@ class StatisticForCallDetail:
 
     @property
     def name(self):
-        """Gets the name of this StatisticForCallDetail.
+        r"""Gets the name of this StatisticForCallDetail.
 
         统计对象名称
 
@@ -118,7 +118,7 @@ class StatisticForCallDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StatisticForCallDetail.
+        r"""Sets the name of this StatisticForCallDetail.
 
         统计对象名称
 
@@ -129,7 +129,7 @@ class StatisticForCallDetail:
 
     @property
     def call_num(self):
-        """Gets the call_num of this StatisticForCallDetail.
+        r"""Gets the call_num of this StatisticForCallDetail.
 
         调用总量
 
@@ -140,7 +140,7 @@ class StatisticForCallDetail:
 
     @call_num.setter
     def call_num(self, call_num):
-        """Sets the call_num of this StatisticForCallDetail.
+        r"""Sets the call_num of this StatisticForCallDetail.
 
         调用总量
 
@@ -151,7 +151,7 @@ class StatisticForCallDetail:
 
     @property
     def success_num(self):
-        """Gets the success_num of this StatisticForCallDetail.
+        r"""Gets the success_num of this StatisticForCallDetail.
 
         成功调用量(取数成功)
 
@@ -162,7 +162,7 @@ class StatisticForCallDetail:
 
     @success_num.setter
     def success_num(self, success_num):
-        """Sets the success_num of this StatisticForCallDetail.
+        r"""Sets the success_num of this StatisticForCallDetail.
 
         成功调用量(取数成功)
 
@@ -173,7 +173,7 @@ class StatisticForCallDetail:
 
     @property
     def fail_num(self):
-        """Gets the fail_num of this StatisticForCallDetail.
+        r"""Gets the fail_num of this StatisticForCallDetail.
 
         失败调用量(取数失败)
 
@@ -184,7 +184,7 @@ class StatisticForCallDetail:
 
     @fail_num.setter
     def fail_num(self, fail_num):
-        """Sets the fail_num of this StatisticForCallDetail.
+        r"""Sets the fail_num of this StatisticForCallDetail.
 
         失败调用量(取数失败)
 
@@ -195,7 +195,7 @@ class StatisticForCallDetail:
 
     @property
     def legal_num(self):
-        """Gets the legal_num of this StatisticForCallDetail.
+        r"""Gets the legal_num of this StatisticForCallDetail.
 
         合法调用量(通过校验)
 
@@ -206,7 +206,7 @@ class StatisticForCallDetail:
 
     @legal_num.setter
     def legal_num(self, legal_num):
-        """Sets the legal_num of this StatisticForCallDetail.
+        r"""Sets the legal_num of this StatisticForCallDetail.
 
         合法调用量(通过校验)
 
@@ -217,7 +217,7 @@ class StatisticForCallDetail:
 
     @property
     def illegal_num(self):
-        """Gets the illegal_num of this StatisticForCallDetail.
+        r"""Gets the illegal_num of this StatisticForCallDetail.
 
         非法调用量(无法通过校验)
 
@@ -228,7 +228,7 @@ class StatisticForCallDetail:
 
     @illegal_num.setter
     def illegal_num(self, illegal_num):
-        """Sets the illegal_num of this StatisticForCallDetail.
+        r"""Sets the illegal_num of this StatisticForCallDetail.
 
         非法调用量(无法通过校验)
 

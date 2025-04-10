@@ -24,7 +24,7 @@ class DeleteRefererChainResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteRefererChainResponse
+        r"""DeleteRefererChainResponse
 
         The model defined in huaweicloud sdk
 

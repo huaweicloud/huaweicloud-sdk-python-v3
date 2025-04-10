@@ -28,7 +28,7 @@ class BatchDisassociateThrottlingPolicyV2Response(SdkResponse):
     }
 
     def __init__(self, success_count=None, failure=None):
-        """BatchDisassociateThrottlingPolicyV2Response
+        r"""BatchDisassociateThrottlingPolicyV2Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchDisassociateThrottlingPolicyV2Response(SdkResponse):
 
     @property
     def success_count(self):
-        """Gets the success_count of this BatchDisassociateThrottlingPolicyV2Response.
+        r"""Gets the success_count of this BatchDisassociateThrottlingPolicyV2Response.
 
         成功解除绑定的API和流控策略绑定关系的数量
 
@@ -62,7 +62,7 @@ class BatchDisassociateThrottlingPolicyV2Response(SdkResponse):
 
     @success_count.setter
     def success_count(self, success_count):
-        """Sets the success_count of this BatchDisassociateThrottlingPolicyV2Response.
+        r"""Sets the success_count of this BatchDisassociateThrottlingPolicyV2Response.
 
         成功解除绑定的API和流控策略绑定关系的数量
 
@@ -73,7 +73,7 @@ class BatchDisassociateThrottlingPolicyV2Response(SdkResponse):
 
     @property
     def failure(self):
-        """Gets the failure of this BatchDisassociateThrottlingPolicyV2Response.
+        r"""Gets the failure of this BatchDisassociateThrottlingPolicyV2Response.
 
         解除绑定失败的API和流控绑定关系及错误信息
 
@@ -84,7 +84,7 @@ class BatchDisassociateThrottlingPolicyV2Response(SdkResponse):
 
     @failure.setter
     def failure(self, failure):
-        """Sets the failure of this BatchDisassociateThrottlingPolicyV2Response.
+        r"""Sets the failure of this BatchDisassociateThrottlingPolicyV2Response.
 
         解除绑定失败的API和流控绑定关系及错误信息
 

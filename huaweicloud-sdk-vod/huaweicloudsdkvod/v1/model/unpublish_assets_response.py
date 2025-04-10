@@ -26,7 +26,7 @@ class UnpublishAssetsResponse(SdkResponse):
     }
 
     def __init__(self, asset_info_array=None):
-        """UnpublishAssetsResponse
+        r"""UnpublishAssetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UnpublishAssetsResponse(SdkResponse):
 
     @property
     def asset_info_array(self):
-        """Gets the asset_info_array of this UnpublishAssetsResponse.
+        r"""Gets the asset_info_array of this UnpublishAssetsResponse.
 
         :return: The asset_info_array of this UnpublishAssetsResponse.
         :rtype: list[:class:`huaweicloudsdkvod.v1.AssetInfo`]
@@ -53,7 +53,7 @@ class UnpublishAssetsResponse(SdkResponse):
 
     @asset_info_array.setter
     def asset_info_array(self, asset_info_array):
-        """Sets the asset_info_array of this UnpublishAssetsResponse.
+        r"""Sets the asset_info_array of this UnpublishAssetsResponse.
 
         :param asset_info_array: The asset_info_array of this UnpublishAssetsResponse.
         :type asset_info_array: list[:class:`huaweicloudsdkvod.v1.AssetInfo`]

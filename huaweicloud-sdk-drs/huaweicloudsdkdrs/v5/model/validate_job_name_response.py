@@ -30,7 +30,7 @@ class ValidateJobNameResponse(SdkResponse):
     }
 
     def __init__(self, is_valid=None, error_code=None, error_msg=None):
-        """ValidateJobNameResponse
+        r"""ValidateJobNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ValidateJobNameResponse(SdkResponse):
 
     @property
     def is_valid(self):
-        """Gets the is_valid of this ValidateJobNameResponse.
+        r"""Gets the is_valid of this ValidateJobNameResponse.
 
         任务名称是否有效。
 
@@ -69,7 +69,7 @@ class ValidateJobNameResponse(SdkResponse):
 
     @is_valid.setter
     def is_valid(self, is_valid):
-        """Sets the is_valid of this ValidateJobNameResponse.
+        r"""Sets the is_valid of this ValidateJobNameResponse.
 
         任务名称是否有效。
 
@@ -80,7 +80,7 @@ class ValidateJobNameResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ValidateJobNameResponse.
+        r"""Gets the error_code of this ValidateJobNameResponse.
 
         错误码。
 
@@ -91,7 +91,7 @@ class ValidateJobNameResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ValidateJobNameResponse.
+        r"""Sets the error_code of this ValidateJobNameResponse.
 
         错误码。
 
@@ -102,7 +102,7 @@ class ValidateJobNameResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ValidateJobNameResponse.
+        r"""Gets the error_msg of this ValidateJobNameResponse.
 
         错误信息。
 
@@ -113,7 +113,7 @@ class ValidateJobNameResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ValidateJobNameResponse.
+        r"""Sets the error_msg of this ValidateJobNameResponse.
 
         错误信息。
 

@@ -27,7 +27,7 @@ class UploadProductRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UploadProductRequest
+        r"""UploadProductRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UploadProductRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UploadProductRequest.
+        r"""Gets the instance_id of this UploadProductRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class UploadProductRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UploadProductRequest.
+        r"""Sets the instance_id of this UploadProductRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class UploadProductRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadProductRequest.
+        r"""Gets the body of this UploadProductRequest.
 
         :return: The body of this UploadProductRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UploadProductRequestBody`
@@ -80,7 +80,7 @@ class UploadProductRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadProductRequest.
+        r"""Sets the body of this UploadProductRequest.
 
         :param body: The body of this UploadProductRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UploadProductRequestBody`

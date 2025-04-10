@@ -26,7 +26,7 @@ class CreateDeploymentHostResponse(SdkResponse):
     }
 
     def __init__(self, host_id=None):
-        """CreateDeploymentHostResponse
+        r"""CreateDeploymentHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDeploymentHostResponse(SdkResponse):
 
     @property
     def host_id(self):
-        """Gets the host_id of this CreateDeploymentHostResponse.
+        r"""Gets the host_id of this CreateDeploymentHostResponse.
 
         主机id
 
@@ -55,7 +55,7 @@ class CreateDeploymentHostResponse(SdkResponse):
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this CreateDeploymentHostResponse.
+        r"""Sets the host_id of this CreateDeploymentHostResponse.
 
         主机id
 

@@ -31,7 +31,7 @@ class UpdateInstanceActionRequest:
     }
 
     def __init__(self, application_id=None, component_id=None, instance_id=None, body=None):
-        """UpdateInstanceActionRequest
+        r"""UpdateInstanceActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateInstanceActionRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this UpdateInstanceActionRequest.
+        r"""Gets the application_id of this UpdateInstanceActionRequest.
 
         应用ID。
 
@@ -72,7 +72,7 @@ class UpdateInstanceActionRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this UpdateInstanceActionRequest.
+        r"""Sets the application_id of this UpdateInstanceActionRequest.
 
         应用ID。
 
@@ -83,7 +83,7 @@ class UpdateInstanceActionRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this UpdateInstanceActionRequest.
+        r"""Gets the component_id of this UpdateInstanceActionRequest.
 
         组件ID。
 
@@ -94,7 +94,7 @@ class UpdateInstanceActionRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this UpdateInstanceActionRequest.
+        r"""Sets the component_id of this UpdateInstanceActionRequest.
 
         组件ID。
 
@@ -105,7 +105,7 @@ class UpdateInstanceActionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceActionRequest.
+        r"""Gets the instance_id of this UpdateInstanceActionRequest.
 
         组件实例ID。
 
@@ -116,7 +116,7 @@ class UpdateInstanceActionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceActionRequest.
+        r"""Sets the instance_id of this UpdateInstanceActionRequest.
 
         组件实例ID。
 
@@ -127,7 +127,7 @@ class UpdateInstanceActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceActionRequest.
+        r"""Gets the body of this UpdateInstanceActionRequest.
 
         :return: The body of this UpdateInstanceActionRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceAction`
@@ -136,7 +136,7 @@ class UpdateInstanceActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceActionRequest.
+        r"""Sets the body of this UpdateInstanceActionRequest.
 
         :param body: The body of this UpdateInstanceActionRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.InstanceAction`

@@ -29,7 +29,7 @@ class ListLeaguesRequest:
     }
 
     def __init__(self, limit=None, offset=None, type=None):
-        """ListLeaguesRequest
+        r"""ListLeaguesRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListLeaguesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLeaguesRequest.
+        r"""Gets the limit of this ListLeaguesRequest.
 
         每页记录数，取值0-100
 
@@ -65,7 +65,7 @@ class ListLeaguesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLeaguesRequest.
+        r"""Sets the limit of this ListLeaguesRequest.
 
         每页记录数，取值0-100
 
@@ -76,7 +76,7 @@ class ListLeaguesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLeaguesRequest.
+        r"""Gets the offset of this ListLeaguesRequest.
 
         记录数偏移量 
 
@@ -87,7 +87,7 @@ class ListLeaguesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLeaguesRequest.
+        r"""Sets the offset of this ListLeaguesRequest.
 
         记录数偏移量 
 
@@ -98,7 +98,7 @@ class ListLeaguesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListLeaguesRequest.
+        r"""Gets the type of this ListLeaguesRequest.
 
         查询的联盟类型，owned:创建者，participativenormal:参与者
 
@@ -109,7 +109,7 @@ class ListLeaguesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListLeaguesRequest.
+        r"""Sets the type of this ListLeaguesRequest.
 
         查询的联盟类型，owned:创建者，participativenormal:参与者
 

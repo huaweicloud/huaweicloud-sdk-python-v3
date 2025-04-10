@@ -28,7 +28,7 @@ class ListVpcRoutesResponse(SdkResponse):
     }
 
     def __init__(self, routes=None, routes_links=None):
-        """ListVpcRoutesResponse
+        r"""ListVpcRoutesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListVpcRoutesResponse(SdkResponse):
 
     @property
     def routes(self):
-        """Gets the routes of this ListVpcRoutesResponse.
+        r"""Gets the routes of this ListVpcRoutesResponse.
 
         route对象列表
 
@@ -62,7 +62,7 @@ class ListVpcRoutesResponse(SdkResponse):
 
     @routes.setter
     def routes(self, routes):
-        """Sets the routes of this ListVpcRoutesResponse.
+        r"""Sets the routes of this ListVpcRoutesResponse.
 
         route对象列表
 
@@ -73,7 +73,7 @@ class ListVpcRoutesResponse(SdkResponse):
 
     @property
     def routes_links(self):
-        """Gets the routes_links of this ListVpcRoutesResponse.
+        r"""Gets the routes_links of this ListVpcRoutesResponse.
 
         分页信息
 
@@ -84,7 +84,7 @@ class ListVpcRoutesResponse(SdkResponse):
 
     @routes_links.setter
     def routes_links(self, routes_links):
-        """Sets the routes_links of this ListVpcRoutesResponse.
+        r"""Sets the routes_links of this ListVpcRoutesResponse.
 
         分页信息
 

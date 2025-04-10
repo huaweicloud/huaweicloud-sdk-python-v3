@@ -29,7 +29,7 @@ class ListTaskRequest:
     }
 
     def __init__(self, service_type=None, limit=None, offset=None):
-        """ListTaskRequest
+        r"""ListTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListTaskRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ListTaskRequest.
+        r"""Gets the service_type of this ListTaskRequest.
 
         服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；二维切割-方形件固定为 regular-plate，二维切割-异形件固定为 irregular-textile， 数学规划求解器固定为 optverse-mpsolver
 
@@ -67,7 +67,7 @@ class ListTaskRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ListTaskRequest.
+        r"""Sets the service_type of this ListTaskRequest.
 
         服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；二维切割-方形件固定为 regular-plate，二维切割-异形件固定为 irregular-textile， 数学规划求解器固定为 optverse-mpsolver
 
@@ -78,7 +78,7 @@ class ListTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTaskRequest.
+        r"""Gets the limit of this ListTaskRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为300，取值范围[1,300]
 
@@ -89,7 +89,7 @@ class ListTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTaskRequest.
+        r"""Sets the limit of this ListTaskRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为300，取值范围[1,300]
 
@@ -100,7 +100,7 @@ class ListTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTaskRequest.
+        r"""Gets the offset of this ListTaskRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -111,7 +111,7 @@ class ListTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTaskRequest.
+        r"""Sets the offset of this ListTaskRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 

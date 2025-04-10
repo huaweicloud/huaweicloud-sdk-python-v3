@@ -31,7 +31,7 @@ class LigandPreviewDto:
     }
 
     def __init__(self, index=None, file=None, name=None, smiles=None):
-        """LigandPreviewDto
+        r"""LigandPreviewDto
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class LigandPreviewDto:
 
     @property
     def index(self):
-        """Gets the index of this LigandPreviewDto.
+        r"""Gets the index of this LigandPreviewDto.
 
         配体索引（从0起编号）
 
@@ -71,7 +71,7 @@ class LigandPreviewDto:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this LigandPreviewDto.
+        r"""Sets the index of this LigandPreviewDto.
 
         配体索引（从0起编号）
 
@@ -82,7 +82,7 @@ class LigandPreviewDto:
 
     @property
     def file(self):
-        """Gets the file of this LigandPreviewDto.
+        r"""Gets the file of this LigandPreviewDto.
 
         :return: The file of this LigandPreviewDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -91,7 +91,7 @@ class LigandPreviewDto:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this LigandPreviewDto.
+        r"""Sets the file of this LigandPreviewDto.
 
         :param file: The file of this LigandPreviewDto.
         :type file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -100,7 +100,7 @@ class LigandPreviewDto:
 
     @property
     def name(self):
-        """Gets the name of this LigandPreviewDto.
+        r"""Gets the name of this LigandPreviewDto.
 
         配体名称，若无名称则自动命名，格式为UNK+索引（从1起编号）
 
@@ -111,7 +111,7 @@ class LigandPreviewDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LigandPreviewDto.
+        r"""Sets the name of this LigandPreviewDto.
 
         配体名称，若无名称则自动命名，格式为UNK+索引（从1起编号）
 
@@ -122,7 +122,7 @@ class LigandPreviewDto:
 
     @property
     def smiles(self):
-        """Gets the smiles of this LigandPreviewDto.
+        r"""Gets the smiles of this LigandPreviewDto.
 
         分子SMILES表达式
 
@@ -133,7 +133,7 @@ class LigandPreviewDto:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this LigandPreviewDto.
+        r"""Sets the smiles of this LigandPreviewDto.
 
         分子SMILES表达式
 

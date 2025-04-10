@@ -35,7 +35,7 @@ class ShowDomainProtectPolicyResponseBodyProtectPolicy:
     }
 
     def __init__(self, allow_user=None, operation_protection=None, mobile=None, admin_check=None, email=None, scene=None):
-        """ShowDomainProtectPolicyResponseBodyProtectPolicy
+        r"""ShowDomainProtectPolicyResponseBodyProtectPolicy
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowDomainProtectPolicyResponseBodyProtectPolicy:
 
     @property
     def allow_user(self):
-        """Gets the allow_user of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Gets the allow_user of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
 
         :return: The allow_user of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
         :rtype: :class:`huaweicloudsdkiam.v3.AllowUserBody`
@@ -81,7 +81,7 @@ class ShowDomainProtectPolicyResponseBodyProtectPolicy:
 
     @allow_user.setter
     def allow_user(self, allow_user):
-        """Sets the allow_user of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Sets the allow_user of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
 
         :param allow_user: The allow_user of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
         :type allow_user: :class:`huaweicloudsdkiam.v3.AllowUserBody`
@@ -90,7 +90,7 @@ class ShowDomainProtectPolicyResponseBodyProtectPolicy:
 
     @property
     def operation_protection(self):
-        """Gets the operation_protection of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Gets the operation_protection of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
 
         是否开启操作保护，取值范围true或false。
 
@@ -101,7 +101,7 @@ class ShowDomainProtectPolicyResponseBodyProtectPolicy:
 
     @operation_protection.setter
     def operation_protection(self, operation_protection):
-        """Sets the operation_protection of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Sets the operation_protection of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
 
         是否开启操作保护，取值范围true或false。
 
@@ -112,7 +112,7 @@ class ShowDomainProtectPolicyResponseBodyProtectPolicy:
 
     @property
     def mobile(self):
-        """Gets the mobile of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Gets the mobile of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
 
         操作保护验证指定手机号码。示例：0086-123456789。
 
@@ -123,7 +123,7 @@ class ShowDomainProtectPolicyResponseBodyProtectPolicy:
 
     @mobile.setter
     def mobile(self, mobile):
-        """Sets the mobile of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Sets the mobile of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
 
         操作保护验证指定手机号码。示例：0086-123456789。
 
@@ -134,7 +134,7 @@ class ShowDomainProtectPolicyResponseBodyProtectPolicy:
 
     @property
     def admin_check(self):
-        """Gets the admin_check of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Gets the admin_check of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
 
         是否指定人员验证。on为指定人员验证，必须填写scene参数。off为操作员验证。
 
@@ -145,7 +145,7 @@ class ShowDomainProtectPolicyResponseBodyProtectPolicy:
 
     @admin_check.setter
     def admin_check(self, admin_check):
-        """Sets the admin_check of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Sets the admin_check of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
 
         是否指定人员验证。on为指定人员验证，必须填写scene参数。off为操作员验证。
 
@@ -156,7 +156,7 @@ class ShowDomainProtectPolicyResponseBodyProtectPolicy:
 
     @property
     def email(self):
-        """Gets the email of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Gets the email of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
 
         操作保护验证指定邮件地址。示例：example@email.com。
 
@@ -167,7 +167,7 @@ class ShowDomainProtectPolicyResponseBodyProtectPolicy:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Sets the email of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
 
         操作保护验证指定邮件地址。示例：example@email.com。
 
@@ -178,7 +178,7 @@ class ShowDomainProtectPolicyResponseBodyProtectPolicy:
 
     @property
     def scene(self):
-        """Gets the scene of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Gets the scene of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
 
         操作保护指定人员验证方式，admin_check为on时，必须填写。包括mobile、email。
 
@@ -189,7 +189,7 @@ class ShowDomainProtectPolicyResponseBodyProtectPolicy:
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
+        r"""Sets the scene of this ShowDomainProtectPolicyResponseBodyProtectPolicy.
 
         操作保护指定人员验证方式，admin_check为on时，必须填写。包括mobile、email。
 

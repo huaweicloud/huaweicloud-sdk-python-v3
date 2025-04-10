@@ -24,7 +24,7 @@ class DeleteMessageNotificationPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteMessageNotificationPolicyResponse
+        r"""DeleteMessageNotificationPolicyResponse
 
         The model defined in huaweicloud sdk
 

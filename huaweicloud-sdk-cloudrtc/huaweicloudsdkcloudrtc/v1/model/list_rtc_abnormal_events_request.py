@@ -37,7 +37,7 @@ class ListRtcAbnormalEventsRequest:
     }
 
     def __init__(self, app=None, room_id=None, uid=None, start_time=None, end_time=None, limit=None, offset=None):
-        """ListRtcAbnormalEventsRequest
+        r"""ListRtcAbnormalEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListRtcAbnormalEventsRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListRtcAbnormalEventsRequest.
+        r"""Gets the app of this ListRtcAbnormalEventsRequest.
 
         应用ID 
 
@@ -95,7 +95,7 @@ class ListRtcAbnormalEventsRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListRtcAbnormalEventsRequest.
+        r"""Sets the app of this ListRtcAbnormalEventsRequest.
 
         应用ID 
 
@@ -106,7 +106,7 @@ class ListRtcAbnormalEventsRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this ListRtcAbnormalEventsRequest.
+        r"""Gets the room_id of this ListRtcAbnormalEventsRequest.
 
         房间ID 
 
@@ -117,7 +117,7 @@ class ListRtcAbnormalEventsRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ListRtcAbnormalEventsRequest.
+        r"""Sets the room_id of this ListRtcAbnormalEventsRequest.
 
         房间ID 
 
@@ -128,7 +128,7 @@ class ListRtcAbnormalEventsRequest:
 
     @property
     def uid(self):
-        """Gets the uid of this ListRtcAbnormalEventsRequest.
+        r"""Gets the uid of this ListRtcAbnormalEventsRequest.
 
         用户ID 
 
@@ -139,7 +139,7 @@ class ListRtcAbnormalEventsRequest:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this ListRtcAbnormalEventsRequest.
+        r"""Sets the uid of this ListRtcAbnormalEventsRequest.
 
         用户ID 
 
@@ -150,7 +150,7 @@ class ListRtcAbnormalEventsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListRtcAbnormalEventsRequest.
+        r"""Gets the start_time of this ListRtcAbnormalEventsRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不填写则默认读取过去1小时数据数据。 
 
@@ -161,7 +161,7 @@ class ListRtcAbnormalEventsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListRtcAbnormalEventsRequest.
+        r"""Sets the start_time of this ListRtcAbnormalEventsRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不填写则默认读取过去1小时数据数据。 
 
@@ -172,7 +172,7 @@ class ListRtcAbnormalEventsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListRtcAbnormalEventsRequest.
+        r"""Gets the end_time of this ListRtcAbnormalEventsRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，不填写则默认为当前时间。 
 
@@ -183,7 +183,7 @@ class ListRtcAbnormalEventsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListRtcAbnormalEventsRequest.
+        r"""Sets the end_time of this ListRtcAbnormalEventsRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，不填写则默认为当前时间。 
 
@@ -194,7 +194,7 @@ class ListRtcAbnormalEventsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRtcAbnormalEventsRequest.
+        r"""Gets the limit of this ListRtcAbnormalEventsRequest.
 
         查询结果条数 
 
@@ -205,7 +205,7 @@ class ListRtcAbnormalEventsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRtcAbnormalEventsRequest.
+        r"""Sets the limit of this ListRtcAbnormalEventsRequest.
 
         查询结果条数 
 
@@ -216,7 +216,7 @@ class ListRtcAbnormalEventsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRtcAbnormalEventsRequest.
+        r"""Gets the offset of this ListRtcAbnormalEventsRequest.
 
         查询偏移量 
 
@@ -227,7 +227,7 @@ class ListRtcAbnormalEventsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRtcAbnormalEventsRequest.
+        r"""Sets the offset of this ListRtcAbnormalEventsRequest.
 
         查询偏移量 
 

@@ -27,7 +27,7 @@ class UserQosReqInfo:
     }
 
     def __init__(self, pid=None, access_media_type=None):
-        """UserQosReqInfo
+        r"""UserQosReqInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UserQosReqInfo:
 
     @property
     def pid(self):
-        """Gets the pid of this UserQosReqInfo.
+        r"""Gets the pid of this UserQosReqInfo.
 
         用户pid
 
@@ -61,7 +61,7 @@ class UserQosReqInfo:
 
     @pid.setter
     def pid(self, pid):
-        """Sets the pid of this UserQosReqInfo.
+        r"""Sets the pid of this UserQosReqInfo.
 
         用户pid
 
@@ -72,7 +72,7 @@ class UserQosReqInfo:
 
     @property
     def access_media_type(self):
-        """Gets the access_media_type of this UserQosReqInfo.
+        r"""Gets the access_media_type of this UserQosReqInfo.
 
         用户接入媒体类型
 
@@ -83,7 +83,7 @@ class UserQosReqInfo:
 
     @access_media_type.setter
     def access_media_type(self, access_media_type):
-        """Sets the access_media_type of this UserQosReqInfo.
+        r"""Sets the access_media_type of this UserQosReqInfo.
 
         用户接入媒体类型
 

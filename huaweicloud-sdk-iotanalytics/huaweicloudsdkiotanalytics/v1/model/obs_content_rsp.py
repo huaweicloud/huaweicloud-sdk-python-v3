@@ -29,7 +29,7 @@ class ObsContentRsp:
     }
 
     def __init__(self, bucket_name=None, ak=None, sk=None):
-        """ObsContentRsp
+        r"""ObsContentRsp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ObsContentRsp:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this ObsContentRsp.
+        r"""Gets the bucket_name of this ObsContentRsp.
 
         桶名称
 
@@ -68,7 +68,7 @@ class ObsContentRsp:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this ObsContentRsp.
+        r"""Sets the bucket_name of this ObsContentRsp.
 
         桶名称
 
@@ -79,7 +79,7 @@ class ObsContentRsp:
 
     @property
     def ak(self):
-        """Gets the ak of this ObsContentRsp.
+        r"""Gets the ak of this ObsContentRsp.
 
         租户的AK
 
@@ -90,7 +90,7 @@ class ObsContentRsp:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this ObsContentRsp.
+        r"""Sets the ak of this ObsContentRsp.
 
         租户的AK
 
@@ -101,7 +101,7 @@ class ObsContentRsp:
 
     @property
     def sk(self):
-        """Gets the sk of this ObsContentRsp.
+        r"""Gets the sk of this ObsContentRsp.
 
         租户的SK
 
@@ -112,7 +112,7 @@ class ObsContentRsp:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this ObsContentRsp.
+        r"""Sets the sk of this ObsContentRsp.
 
         租户的SK
 

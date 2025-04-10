@@ -44,7 +44,7 @@ class ShowAppInfoResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, app_key=None, app_secret=None, register_time=None, update_time=None, create_user=None, update_user=None, app_type=None):
-        """ShowAppInfoResponse
+        r"""ShowAppInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowAppInfoResponse.
+        r"""Gets the id of this ShowAppInfoResponse.
 
         应用编号
 
@@ -118,7 +118,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAppInfoResponse.
+        r"""Sets the id of this ShowAppInfoResponse.
 
         应用编号
 
@@ -129,7 +129,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowAppInfoResponse.
+        r"""Gets the name of this ShowAppInfoResponse.
 
         应用名称
 
@@ -140,7 +140,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAppInfoResponse.
+        r"""Sets the name of this ShowAppInfoResponse.
 
         应用名称
 
@@ -151,7 +151,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowAppInfoResponse.
+        r"""Gets the description of this ShowAppInfoResponse.
 
         应用描述
 
@@ -162,7 +162,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowAppInfoResponse.
+        r"""Sets the description of this ShowAppInfoResponse.
 
         应用描述
 
@@ -173,7 +173,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @property
     def app_key(self):
-        """Gets the app_key of this ShowAppInfoResponse.
+        r"""Gets the app_key of this ShowAppInfoResponse.
 
         应用key
 
@@ -184,7 +184,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this ShowAppInfoResponse.
+        r"""Sets the app_key of this ShowAppInfoResponse.
 
         应用key
 
@@ -195,7 +195,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @property
     def app_secret(self):
-        """Gets the app_secret of this ShowAppInfoResponse.
+        r"""Gets the app_secret of this ShowAppInfoResponse.
 
         应用secret
 
@@ -206,7 +206,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @app_secret.setter
     def app_secret(self, app_secret):
-        """Sets the app_secret of this ShowAppInfoResponse.
+        r"""Sets the app_secret of this ShowAppInfoResponse.
 
         应用secret
 
@@ -217,7 +217,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @property
     def register_time(self):
-        """Gets the register_time of this ShowAppInfoResponse.
+        r"""Gets the register_time of this ShowAppInfoResponse.
 
         创建时间
 
@@ -228,7 +228,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @register_time.setter
     def register_time(self, register_time):
-        """Sets the register_time of this ShowAppInfoResponse.
+        r"""Sets the register_time of this ShowAppInfoResponse.
 
         创建时间
 
@@ -239,7 +239,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowAppInfoResponse.
+        r"""Gets the update_time of this ShowAppInfoResponse.
 
         更新时间
 
@@ -250,7 +250,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowAppInfoResponse.
+        r"""Sets the update_time of this ShowAppInfoResponse.
 
         更新时间
 
@@ -261,7 +261,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this ShowAppInfoResponse.
+        r"""Gets the create_user of this ShowAppInfoResponse.
 
         创建者
 
@@ -272,7 +272,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ShowAppInfoResponse.
+        r"""Sets the create_user of this ShowAppInfoResponse.
 
         创建者
 
@@ -283,7 +283,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @property
     def update_user(self):
-        """Gets the update_user of this ShowAppInfoResponse.
+        r"""Gets the update_user of this ShowAppInfoResponse.
 
         更新者
 
@@ -294,7 +294,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this ShowAppInfoResponse.
+        r"""Sets the update_user of this ShowAppInfoResponse.
 
         更新者
 
@@ -305,7 +305,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @property
     def app_type(self):
-        """Gets the app_type of this ShowAppInfoResponse.
+        r"""Gets the app_type of this ShowAppInfoResponse.
 
         应用类型
 
@@ -316,7 +316,7 @@ class ShowAppInfoResponse(SdkResponse):
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ShowAppInfoResponse.
+        r"""Sets the app_type of this ShowAppInfoResponse.
 
         应用类型
 

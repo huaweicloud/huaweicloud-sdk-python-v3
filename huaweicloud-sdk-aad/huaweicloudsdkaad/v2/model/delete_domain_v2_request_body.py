@@ -25,7 +25,7 @@ class DeleteDomainV2RequestBody:
     }
 
     def __init__(self, domain_id=None):
-        """DeleteDomainV2RequestBody
+        r"""DeleteDomainV2RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDomainV2RequestBody:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DeleteDomainV2RequestBody.
+        r"""Gets the domain_id of this DeleteDomainV2RequestBody.
 
         域名id列表
 
@@ -53,7 +53,7 @@ class DeleteDomainV2RequestBody:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DeleteDomainV2RequestBody.
+        r"""Sets the domain_id of this DeleteDomainV2RequestBody.
 
         域名id列表
 

@@ -27,7 +27,7 @@ class Context:
     }
 
     def __init__(self, cluster=None, user=None):
-        """Context
+        r"""Context
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Context:
 
     @property
     def cluster(self):
-        """Gets the cluster of this Context.
+        r"""Gets the cluster of this Context.
 
         上下文cluster信息。 
 
@@ -61,7 +61,7 @@ class Context:
 
     @cluster.setter
     def cluster(self, cluster):
-        """Sets the cluster of this Context.
+        r"""Sets the cluster of this Context.
 
         上下文cluster信息。 
 
@@ -72,7 +72,7 @@ class Context:
 
     @property
     def user(self):
-        """Gets the user of this Context.
+        r"""Gets the user of this Context.
 
         上下文user信息。 
 
@@ -83,7 +83,7 @@ class Context:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this Context.
+        r"""Sets the user of this Context.
 
         上下文user信息。 
 

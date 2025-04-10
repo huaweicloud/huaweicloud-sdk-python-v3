@@ -25,7 +25,7 @@ class ListGaussDbDatastoresRequest:
     }
 
     def __init__(self, x_language=None):
-        """ListGaussDbDatastoresRequest
+        r"""ListGaussDbDatastoresRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListGaussDbDatastoresRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListGaussDbDatastoresRequest.
+        r"""Gets the x_language of this ListGaussDbDatastoresRequest.
 
         语言
 
@@ -54,7 +54,7 @@ class ListGaussDbDatastoresRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListGaussDbDatastoresRequest.
+        r"""Sets the x_language of this ListGaussDbDatastoresRequest.
 
         语言
 

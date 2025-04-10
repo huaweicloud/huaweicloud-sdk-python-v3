@@ -31,7 +31,7 @@ class ShowPhysicalProcessesRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, keyword=None):
-        """ShowPhysicalProcessesRequest
+        r"""ShowPhysicalProcessesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowPhysicalProcessesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowPhysicalProcessesRequest.
+        r"""Gets the instance_id of this ShowPhysicalProcessesRequest.
 
         关联RDS的ID。
 
@@ -74,7 +74,7 @@ class ShowPhysicalProcessesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowPhysicalProcessesRequest.
+        r"""Sets the instance_id of this ShowPhysicalProcessesRequest.
 
         关联RDS的ID。
 
@@ -85,7 +85,7 @@ class ShowPhysicalProcessesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowPhysicalProcessesRequest.
+        r"""Gets the offset of this ShowPhysicalProcessesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0。取值必须为数字，且不能为负数。
 
@@ -96,7 +96,7 @@ class ShowPhysicalProcessesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowPhysicalProcessesRequest.
+        r"""Sets the offset of this ShowPhysicalProcessesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0。取值必须为数字，且不能为负数。
 
@@ -107,7 +107,7 @@ class ShowPhysicalProcessesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowPhysicalProcessesRequest.
+        r"""Gets the limit of this ShowPhysicalProcessesRequest.
 
         查询个数上限值。取值范围：1~128。不传该参数时，默认值为10。
 
@@ -118,7 +118,7 @@ class ShowPhysicalProcessesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowPhysicalProcessesRequest.
+        r"""Sets the limit of this ShowPhysicalProcessesRequest.
 
         查询个数上限值。取值范围：1~128。不传该参数时，默认值为10。
 
@@ -129,7 +129,7 @@ class ShowPhysicalProcessesRequest:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ShowPhysicalProcessesRequest.
+        r"""Gets the keyword of this ShowPhysicalProcessesRequest.
 
         会话结果筛选关键子，长度最大255
 
@@ -140,7 +140,7 @@ class ShowPhysicalProcessesRequest:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ShowPhysicalProcessesRequest.
+        r"""Sets the keyword of this ShowPhysicalProcessesRequest.
 
         会话结果筛选关键子，长度最大255
 

@@ -24,7 +24,7 @@ class SetRecyclePolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetRecyclePolicyResponse
+        r"""SetRecyclePolicyResponse
 
         The model defined in huaweicloud sdk
 

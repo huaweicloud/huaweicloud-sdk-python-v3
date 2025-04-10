@@ -54,7 +54,7 @@ class CopyObjectResponse(SdkResponse):
     }
 
     def __init__(self, last_modified=None, e_tag=None, x_obs_id_2=None, x_obs_request_id=None, x_obs_server_side_encryption=None, connection=None, x_obs_server_side_encryption_customer_key_md5=None, date=None, x_obs_server_side_encryption_customer_algorithm=None, x_obs_copy_source_version_id=None, x_obs_storage_class=None, x_obs_server_side_encryption_kms_key_id=None, content_length=None, x_obs_version_id=None):
-        """CopyObjectResponse
+        r"""CopyObjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -137,7 +137,7 @@ class CopyObjectResponse(SdkResponse):
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this CopyObjectResponse.
+        r"""Gets the last_modified of this CopyObjectResponse.
 
         Time when the object was last modified
 
@@ -148,7 +148,7 @@ class CopyObjectResponse(SdkResponse):
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this CopyObjectResponse.
+        r"""Sets the last_modified of this CopyObjectResponse.
 
         Time when the object was last modified
 
@@ -159,7 +159,7 @@ class CopyObjectResponse(SdkResponse):
 
     @property
     def e_tag(self):
-        """Gets the e_tag of this CopyObjectResponse.
+        r"""Gets the e_tag of this CopyObjectResponse.
 
         :return: The e_tag of this CopyObjectResponse.
         :rtype: str
@@ -168,7 +168,7 @@ class CopyObjectResponse(SdkResponse):
 
     @e_tag.setter
     def e_tag(self, e_tag):
-        """Sets the e_tag of this CopyObjectResponse.
+        r"""Sets the e_tag of this CopyObjectResponse.
 
         :param e_tag: The e_tag of this CopyObjectResponse.
         :type e_tag: str
@@ -177,7 +177,7 @@ class CopyObjectResponse(SdkResponse):
 
     @property
     def x_obs_id_2(self):
-        """Gets the x_obs_id_2 of this CopyObjectResponse.
+        r"""Gets the x_obs_id_2 of this CopyObjectResponse.
 
         :return: The x_obs_id_2 of this CopyObjectResponse.
         :rtype: str
@@ -186,7 +186,7 @@ class CopyObjectResponse(SdkResponse):
 
     @x_obs_id_2.setter
     def x_obs_id_2(self, x_obs_id_2):
-        """Sets the x_obs_id_2 of this CopyObjectResponse.
+        r"""Sets the x_obs_id_2 of this CopyObjectResponse.
 
         :param x_obs_id_2: The x_obs_id_2 of this CopyObjectResponse.
         :type x_obs_id_2: str
@@ -195,7 +195,7 @@ class CopyObjectResponse(SdkResponse):
 
     @property
     def x_obs_request_id(self):
-        """Gets the x_obs_request_id of this CopyObjectResponse.
+        r"""Gets the x_obs_request_id of this CopyObjectResponse.
 
         :return: The x_obs_request_id of this CopyObjectResponse.
         :rtype: str
@@ -204,7 +204,7 @@ class CopyObjectResponse(SdkResponse):
 
     @x_obs_request_id.setter
     def x_obs_request_id(self, x_obs_request_id):
-        """Sets the x_obs_request_id of this CopyObjectResponse.
+        r"""Sets the x_obs_request_id of this CopyObjectResponse.
 
         :param x_obs_request_id: The x_obs_request_id of this CopyObjectResponse.
         :type x_obs_request_id: str
@@ -213,7 +213,7 @@ class CopyObjectResponse(SdkResponse):
 
     @property
     def x_obs_server_side_encryption(self):
-        """Gets the x_obs_server_side_encryption of this CopyObjectResponse.
+        r"""Gets the x_obs_server_side_encryption of this CopyObjectResponse.
 
         :return: The x_obs_server_side_encryption of this CopyObjectResponse.
         :rtype: str
@@ -222,7 +222,7 @@ class CopyObjectResponse(SdkResponse):
 
     @x_obs_server_side_encryption.setter
     def x_obs_server_side_encryption(self, x_obs_server_side_encryption):
-        """Sets the x_obs_server_side_encryption of this CopyObjectResponse.
+        r"""Sets the x_obs_server_side_encryption of this CopyObjectResponse.
 
         :param x_obs_server_side_encryption: The x_obs_server_side_encryption of this CopyObjectResponse.
         :type x_obs_server_side_encryption: str
@@ -231,7 +231,7 @@ class CopyObjectResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this CopyObjectResponse.
+        r"""Gets the connection of this CopyObjectResponse.
 
         :return: The connection of this CopyObjectResponse.
         :rtype: str
@@ -240,7 +240,7 @@ class CopyObjectResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this CopyObjectResponse.
+        r"""Sets the connection of this CopyObjectResponse.
 
         :param connection: The connection of this CopyObjectResponse.
         :type connection: str
@@ -249,7 +249,7 @@ class CopyObjectResponse(SdkResponse):
 
     @property
     def x_obs_server_side_encryption_customer_key_md5(self):
-        """Gets the x_obs_server_side_encryption_customer_key_md5 of this CopyObjectResponse.
+        r"""Gets the x_obs_server_side_encryption_customer_key_md5 of this CopyObjectResponse.
 
         :return: The x_obs_server_side_encryption_customer_key_md5 of this CopyObjectResponse.
         :rtype: str
@@ -258,7 +258,7 @@ class CopyObjectResponse(SdkResponse):
 
     @x_obs_server_side_encryption_customer_key_md5.setter
     def x_obs_server_side_encryption_customer_key_md5(self, x_obs_server_side_encryption_customer_key_md5):
-        """Sets the x_obs_server_side_encryption_customer_key_md5 of this CopyObjectResponse.
+        r"""Sets the x_obs_server_side_encryption_customer_key_md5 of this CopyObjectResponse.
 
         :param x_obs_server_side_encryption_customer_key_md5: The x_obs_server_side_encryption_customer_key_md5 of this CopyObjectResponse.
         :type x_obs_server_side_encryption_customer_key_md5: str
@@ -267,7 +267,7 @@ class CopyObjectResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this CopyObjectResponse.
+        r"""Gets the date of this CopyObjectResponse.
 
         :return: The date of this CopyObjectResponse.
         :rtype: str
@@ -276,7 +276,7 @@ class CopyObjectResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this CopyObjectResponse.
+        r"""Sets the date of this CopyObjectResponse.
 
         :param date: The date of this CopyObjectResponse.
         :type date: str
@@ -285,7 +285,7 @@ class CopyObjectResponse(SdkResponse):
 
     @property
     def x_obs_server_side_encryption_customer_algorithm(self):
-        """Gets the x_obs_server_side_encryption_customer_algorithm of this CopyObjectResponse.
+        r"""Gets the x_obs_server_side_encryption_customer_algorithm of this CopyObjectResponse.
 
         :return: The x_obs_server_side_encryption_customer_algorithm of this CopyObjectResponse.
         :rtype: str
@@ -294,7 +294,7 @@ class CopyObjectResponse(SdkResponse):
 
     @x_obs_server_side_encryption_customer_algorithm.setter
     def x_obs_server_side_encryption_customer_algorithm(self, x_obs_server_side_encryption_customer_algorithm):
-        """Sets the x_obs_server_side_encryption_customer_algorithm of this CopyObjectResponse.
+        r"""Sets the x_obs_server_side_encryption_customer_algorithm of this CopyObjectResponse.
 
         :param x_obs_server_side_encryption_customer_algorithm: The x_obs_server_side_encryption_customer_algorithm of this CopyObjectResponse.
         :type x_obs_server_side_encryption_customer_algorithm: str
@@ -303,7 +303,7 @@ class CopyObjectResponse(SdkResponse):
 
     @property
     def x_obs_copy_source_version_id(self):
-        """Gets the x_obs_copy_source_version_id of this CopyObjectResponse.
+        r"""Gets the x_obs_copy_source_version_id of this CopyObjectResponse.
 
         :return: The x_obs_copy_source_version_id of this CopyObjectResponse.
         :rtype: str
@@ -312,7 +312,7 @@ class CopyObjectResponse(SdkResponse):
 
     @x_obs_copy_source_version_id.setter
     def x_obs_copy_source_version_id(self, x_obs_copy_source_version_id):
-        """Sets the x_obs_copy_source_version_id of this CopyObjectResponse.
+        r"""Sets the x_obs_copy_source_version_id of this CopyObjectResponse.
 
         :param x_obs_copy_source_version_id: The x_obs_copy_source_version_id of this CopyObjectResponse.
         :type x_obs_copy_source_version_id: str
@@ -321,7 +321,7 @@ class CopyObjectResponse(SdkResponse):
 
     @property
     def x_obs_storage_class(self):
-        """Gets the x_obs_storage_class of this CopyObjectResponse.
+        r"""Gets the x_obs_storage_class of this CopyObjectResponse.
 
         :return: The x_obs_storage_class of this CopyObjectResponse.
         :rtype: str
@@ -330,7 +330,7 @@ class CopyObjectResponse(SdkResponse):
 
     @x_obs_storage_class.setter
     def x_obs_storage_class(self, x_obs_storage_class):
-        """Sets the x_obs_storage_class of this CopyObjectResponse.
+        r"""Sets the x_obs_storage_class of this CopyObjectResponse.
 
         :param x_obs_storage_class: The x_obs_storage_class of this CopyObjectResponse.
         :type x_obs_storage_class: str
@@ -339,7 +339,7 @@ class CopyObjectResponse(SdkResponse):
 
     @property
     def x_obs_server_side_encryption_kms_key_id(self):
-        """Gets the x_obs_server_side_encryption_kms_key_id of this CopyObjectResponse.
+        r"""Gets the x_obs_server_side_encryption_kms_key_id of this CopyObjectResponse.
 
         :return: The x_obs_server_side_encryption_kms_key_id of this CopyObjectResponse.
         :rtype: str
@@ -348,7 +348,7 @@ class CopyObjectResponse(SdkResponse):
 
     @x_obs_server_side_encryption_kms_key_id.setter
     def x_obs_server_side_encryption_kms_key_id(self, x_obs_server_side_encryption_kms_key_id):
-        """Sets the x_obs_server_side_encryption_kms_key_id of this CopyObjectResponse.
+        r"""Sets the x_obs_server_side_encryption_kms_key_id of this CopyObjectResponse.
 
         :param x_obs_server_side_encryption_kms_key_id: The x_obs_server_side_encryption_kms_key_id of this CopyObjectResponse.
         :type x_obs_server_side_encryption_kms_key_id: str
@@ -357,7 +357,7 @@ class CopyObjectResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this CopyObjectResponse.
+        r"""Gets the content_length of this CopyObjectResponse.
 
         :return: The content_length of this CopyObjectResponse.
         :rtype: str
@@ -366,7 +366,7 @@ class CopyObjectResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this CopyObjectResponse.
+        r"""Sets the content_length of this CopyObjectResponse.
 
         :param content_length: The content_length of this CopyObjectResponse.
         :type content_length: str
@@ -375,7 +375,7 @@ class CopyObjectResponse(SdkResponse):
 
     @property
     def x_obs_version_id(self):
-        """Gets the x_obs_version_id of this CopyObjectResponse.
+        r"""Gets the x_obs_version_id of this CopyObjectResponse.
 
         :return: The x_obs_version_id of this CopyObjectResponse.
         :rtype: str
@@ -384,7 +384,7 @@ class CopyObjectResponse(SdkResponse):
 
     @x_obs_version_id.setter
     def x_obs_version_id(self, x_obs_version_id):
-        """Sets the x_obs_version_id of this CopyObjectResponse.
+        r"""Sets the x_obs_version_id of this CopyObjectResponse.
 
         :param x_obs_version_id: The x_obs_version_id of this CopyObjectResponse.
         :type x_obs_version_id: str

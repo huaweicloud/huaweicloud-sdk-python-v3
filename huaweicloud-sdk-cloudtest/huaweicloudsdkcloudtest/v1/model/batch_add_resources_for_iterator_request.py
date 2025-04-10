@@ -27,7 +27,7 @@ class BatchAddResourcesForIteratorRequest:
     }
 
     def __init__(self, iterator_id=None, body=None):
-        """BatchAddResourcesForIteratorRequest
+        r"""BatchAddResourcesForIteratorRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAddResourcesForIteratorRequest:
 
     @property
     def iterator_id(self):
-        """Gets the iterator_id of this BatchAddResourcesForIteratorRequest.
+        r"""Gets the iterator_id of this BatchAddResourcesForIteratorRequest.
 
         迭代uri
 
@@ -60,7 +60,7 @@ class BatchAddResourcesForIteratorRequest:
 
     @iterator_id.setter
     def iterator_id(self, iterator_id):
-        """Sets the iterator_id of this BatchAddResourcesForIteratorRequest.
+        r"""Sets the iterator_id of this BatchAddResourcesForIteratorRequest.
 
         迭代uri
 
@@ -71,7 +71,7 @@ class BatchAddResourcesForIteratorRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddResourcesForIteratorRequest.
+        r"""Gets the body of this BatchAddResourcesForIteratorRequest.
 
         :return: The body of this BatchAddResourcesForIteratorRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AddResourceInfo`
@@ -80,7 +80,7 @@ class BatchAddResourcesForIteratorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddResourcesForIteratorRequest.
+        r"""Sets the body of this BatchAddResourcesForIteratorRequest.
 
         :param body: The body of this BatchAddResourcesForIteratorRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.AddResourceInfo`

@@ -26,7 +26,7 @@ class RunDrugLigandToSmilesConversionResponse(SdkResponse):
     }
 
     def __init__(self, smiles=None):
-        """RunDrugLigandToSmilesConversionResponse
+        r"""RunDrugLigandToSmilesConversionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RunDrugLigandToSmilesConversionResponse(SdkResponse):
 
     @property
     def smiles(self):
-        """Gets the smiles of this RunDrugLigandToSmilesConversionResponse.
+        r"""Gets the smiles of this RunDrugLigandToSmilesConversionResponse.
 
         分子SMILES表达式
 
@@ -55,7 +55,7 @@ class RunDrugLigandToSmilesConversionResponse(SdkResponse):
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this RunDrugLigandToSmilesConversionResponse.
+        r"""Sets the smiles of this RunDrugLigandToSmilesConversionResponse.
 
         分子SMILES表达式
 

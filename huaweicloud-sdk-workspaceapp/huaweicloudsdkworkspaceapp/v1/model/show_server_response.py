@@ -106,7 +106,7 @@ class ShowServerResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, machine_name=None, description=None, server_group_id=None, flavor=None, status=None, create_time=None, update_time=None, image_id=None, availability_zone=None, domain=None, ou_name=None, sid=None, instance_id=None, os_version=None, os_type=None, order_id=None, maintain_status=None, scaling_auto_create=None, job_id=None, job_type=None, job_status=None, job_time=None, resource_pool_id=None, resource_pool_type=None, host_id=None, server_group_name=None, product_info=None, metadata=None, session_count=None, vm_status=None, task_status=None, freeze=None, host_address=None, enterprise_project_id=None, tags=None, addresses=None, root_volume=None, data_volumes=None, security_groups=None):
-        """ShowServerResponse
+        r"""ShowServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -324,7 +324,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowServerResponse.
+        r"""Gets the id of this ShowServerResponse.
 
         aps实例的唯一标识。
 
@@ -335,7 +335,7 @@ class ShowServerResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowServerResponse.
+        r"""Sets the id of this ShowServerResponse.
 
         aps实例的唯一标识。
 
@@ -346,7 +346,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowServerResponse.
+        r"""Gets the name of this ShowServerResponse.
 
         服务器名称。
 
@@ -357,7 +357,7 @@ class ShowServerResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowServerResponse.
+        r"""Sets the name of this ShowServerResponse.
 
         服务器名称。
 
@@ -368,7 +368,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def machine_name(self):
-        """Gets the machine_name of this ShowServerResponse.
+        r"""Gets the machine_name of this ShowServerResponse.
 
         计算机名称。
 
@@ -379,7 +379,7 @@ class ShowServerResponse(SdkResponse):
 
     @machine_name.setter
     def machine_name(self, machine_name):
-        """Sets the machine_name of this ShowServerResponse.
+        r"""Sets the machine_name of this ShowServerResponse.
 
         计算机名称。
 
@@ -390,7 +390,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowServerResponse.
+        r"""Gets the description of this ShowServerResponse.
 
         描述。
 
@@ -401,7 +401,7 @@ class ShowServerResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowServerResponse.
+        r"""Sets the description of this ShowServerResponse.
 
         描述。
 
@@ -412,7 +412,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ShowServerResponse.
+        r"""Gets the server_group_id of this ShowServerResponse.
 
         服务器组ID。
 
@@ -423,7 +423,7 @@ class ShowServerResponse(SdkResponse):
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ShowServerResponse.
+        r"""Sets the server_group_id of this ShowServerResponse.
 
         服务器组ID。
 
@@ -434,7 +434,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def flavor(self):
-        """Gets the flavor of this ShowServerResponse.
+        r"""Gets the flavor of this ShowServerResponse.
 
         :return: The flavor of this ShowServerResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Flavor`
@@ -443,7 +443,7 @@ class ShowServerResponse(SdkResponse):
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ShowServerResponse.
+        r"""Sets the flavor of this ShowServerResponse.
 
         :param flavor: The flavor of this ShowServerResponse.
         :type flavor: :class:`huaweicloudsdkworkspaceapp.v1.Flavor`
@@ -452,7 +452,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowServerResponse.
+        r"""Gets the status of this ShowServerResponse.
 
         :return: The status of this ShowServerResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
@@ -461,7 +461,7 @@ class ShowServerResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowServerResponse.
+        r"""Sets the status of this ShowServerResponse.
 
         :param status: The status of this ShowServerResponse.
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.ServerStatus`
@@ -470,7 +470,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowServerResponse.
+        r"""Gets the create_time of this ShowServerResponse.
 
         服务器创建时间。
 
@@ -481,7 +481,7 @@ class ShowServerResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowServerResponse.
+        r"""Sets the create_time of this ShowServerResponse.
 
         服务器创建时间。
 
@@ -492,7 +492,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowServerResponse.
+        r"""Gets the update_time of this ShowServerResponse.
 
         更新时间。
 
@@ -503,7 +503,7 @@ class ShowServerResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowServerResponse.
+        r"""Sets the update_time of this ShowServerResponse.
 
         更新时间。
 
@@ -514,7 +514,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def image_id(self):
-        """Gets the image_id of this ShowServerResponse.
+        r"""Gets the image_id of this ShowServerResponse.
 
         镜像ID。
 
@@ -525,7 +525,7 @@ class ShowServerResponse(SdkResponse):
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ShowServerResponse.
+        r"""Sets the image_id of this ShowServerResponse.
 
         镜像ID。
 
@@ -536,7 +536,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ShowServerResponse.
+        r"""Gets the availability_zone of this ShowServerResponse.
 
         服务器可用分区。
 
@@ -547,7 +547,7 @@ class ShowServerResponse(SdkResponse):
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ShowServerResponse.
+        r"""Sets the availability_zone of this ShowServerResponse.
 
         服务器可用分区。
 
@@ -558,7 +558,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this ShowServerResponse.
+        r"""Gets the domain of this ShowServerResponse.
 
         域。
 
@@ -569,7 +569,7 @@ class ShowServerResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ShowServerResponse.
+        r"""Sets the domain of this ShowServerResponse.
 
         域。
 
@@ -580,7 +580,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this ShowServerResponse.
+        r"""Gets the ou_name of this ShowServerResponse.
 
         组织名称。
 
@@ -591,7 +591,7 @@ class ShowServerResponse(SdkResponse):
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this ShowServerResponse.
+        r"""Sets the ou_name of this ShowServerResponse.
 
         组织名称。
 
@@ -602,7 +602,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def sid(self):
-        """Gets the sid of this ShowServerResponse.
+        r"""Gets the sid of this ShowServerResponse.
 
         实例的SID。
 
@@ -613,7 +613,7 @@ class ShowServerResponse(SdkResponse):
 
     @sid.setter
     def sid(self, sid):
-        """Sets the sid of this ShowServerResponse.
+        r"""Sets the sid of this ShowServerResponse.
 
         实例的SID。
 
@@ -624,7 +624,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowServerResponse.
+        r"""Gets the instance_id of this ShowServerResponse.
 
         实例的ID。
 
@@ -635,7 +635,7 @@ class ShowServerResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowServerResponse.
+        r"""Sets the instance_id of this ShowServerResponse.
 
         实例的ID。
 
@@ -646,7 +646,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def os_version(self):
-        """Gets the os_version of this ShowServerResponse.
+        r"""Gets the os_version of this ShowServerResponse.
 
         服务器系统版本。
 
@@ -657,7 +657,7 @@ class ShowServerResponse(SdkResponse):
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this ShowServerResponse.
+        r"""Sets the os_version of this ShowServerResponse.
 
         服务器系统版本。
 
@@ -668,7 +668,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def os_type(self):
-        """Gets the os_type of this ShowServerResponse.
+        r"""Gets the os_type of this ShowServerResponse.
 
         操作系统类型，当前仅支持Windows： - Linux - Windows - Other
 
@@ -679,7 +679,7 @@ class ShowServerResponse(SdkResponse):
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ShowServerResponse.
+        r"""Sets the os_type of this ShowServerResponse.
 
         操作系统类型，当前仅支持Windows： - Linux - Windows - Other
 
@@ -690,7 +690,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowServerResponse.
+        r"""Gets the order_id of this ShowServerResponse.
 
         包周期产品的订单ID。
 
@@ -701,7 +701,7 @@ class ShowServerResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowServerResponse.
+        r"""Sets the order_id of this ShowServerResponse.
 
         包周期产品的订单ID。
 
@@ -712,7 +712,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def maintain_status(self):
-        """Gets the maintain_status of this ShowServerResponse.
+        r"""Gets the maintain_status of this ShowServerResponse.
 
         是否维护状态。
 
@@ -723,7 +723,7 @@ class ShowServerResponse(SdkResponse):
 
     @maintain_status.setter
     def maintain_status(self, maintain_status):
-        """Sets the maintain_status of this ShowServerResponse.
+        r"""Sets the maintain_status of this ShowServerResponse.
 
         是否维护状态。
 
@@ -734,7 +734,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def scaling_auto_create(self):
-        """Gets the scaling_auto_create of this ShowServerResponse.
+        r"""Gets the scaling_auto_create of this ShowServerResponse.
 
         配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建。 - false: 不是通过弹性伸缩创建。
 
@@ -745,7 +745,7 @@ class ShowServerResponse(SdkResponse):
 
     @scaling_auto_create.setter
     def scaling_auto_create(self, scaling_auto_create):
-        """Sets the scaling_auto_create of this ShowServerResponse.
+        r"""Sets the scaling_auto_create of this ShowServerResponse.
 
         配置弹性伸缩策略时，服务自动创建的实例。 - true : 通过弹性伸缩创建。 - false: 不是通过弹性伸缩创建。
 
@@ -756,7 +756,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowServerResponse.
+        r"""Gets the job_id of this ShowServerResponse.
 
         上一次执行job的id。
 
@@ -767,7 +767,7 @@ class ShowServerResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowServerResponse.
+        r"""Sets the job_id of this ShowServerResponse.
 
         上一次执行job的id。
 
@@ -778,7 +778,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowServerResponse.
+        r"""Gets the job_type of this ShowServerResponse.
 
         :return: The job_type of this ShowServerResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
@@ -787,7 +787,7 @@ class ShowServerResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowServerResponse.
+        r"""Sets the job_type of this ShowServerResponse.
 
         :param job_type: The job_type of this ShowServerResponse.
         :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
@@ -796,7 +796,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def job_status(self):
-        """Gets the job_status of this ShowServerResponse.
+        r"""Gets the job_status of this ShowServerResponse.
 
         :return: The job_status of this ShowServerResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
@@ -805,7 +805,7 @@ class ShowServerResponse(SdkResponse):
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this ShowServerResponse.
+        r"""Sets the job_status of this ShowServerResponse.
 
         :param job_status: The job_status of this ShowServerResponse.
         :type job_status: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
@@ -814,7 +814,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def job_time(self):
-        """Gets the job_time of this ShowServerResponse.
+        r"""Gets the job_time of this ShowServerResponse.
 
         上一次执行job的执行时间。
 
@@ -825,7 +825,7 @@ class ShowServerResponse(SdkResponse):
 
     @job_time.setter
     def job_time(self, job_time):
-        """Sets the job_time of this ShowServerResponse.
+        r"""Sets the job_time of this ShowServerResponse.
 
         上一次执行job的执行时间。
 
@@ -836,7 +836,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def resource_pool_id(self):
-        """Gets the resource_pool_id of this ShowServerResponse.
+        r"""Gets the resource_pool_id of this ShowServerResponse.
 
         资源池ID。
 
@@ -847,7 +847,7 @@ class ShowServerResponse(SdkResponse):
 
     @resource_pool_id.setter
     def resource_pool_id(self, resource_pool_id):
-        """Sets the resource_pool_id of this ShowServerResponse.
+        r"""Sets the resource_pool_id of this ShowServerResponse.
 
         资源池ID。
 
@@ -858,7 +858,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def resource_pool_type(self):
-        """Gets the resource_pool_type of this ShowServerResponse.
+        r"""Gets the resource_pool_type of this ShowServerResponse.
 
         资源池类型： - private：私有资源池。 - public: 工作资源池。
 
@@ -869,7 +869,7 @@ class ShowServerResponse(SdkResponse):
 
     @resource_pool_type.setter
     def resource_pool_type(self, resource_pool_type):
-        """Sets the resource_pool_type of this ShowServerResponse.
+        r"""Sets the resource_pool_type of this ShowServerResponse.
 
         资源池类型： - private：私有资源池。 - public: 工作资源池。
 
@@ -880,7 +880,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def host_id(self):
-        """Gets the host_id of this ShowServerResponse.
+        r"""Gets the host_id of this ShowServerResponse.
 
         云专属主机id。
 
@@ -891,7 +891,7 @@ class ShowServerResponse(SdkResponse):
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ShowServerResponse.
+        r"""Sets the host_id of this ShowServerResponse.
 
         云专属主机id。
 
@@ -902,7 +902,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def server_group_name(self):
-        """Gets the server_group_name of this ShowServerResponse.
+        r"""Gets the server_group_name of this ShowServerResponse.
 
         服务器组名称。
 
@@ -913,7 +913,7 @@ class ShowServerResponse(SdkResponse):
 
     @server_group_name.setter
     def server_group_name(self, server_group_name):
-        """Sets the server_group_name of this ShowServerResponse.
+        r"""Sets the server_group_name of this ShowServerResponse.
 
         服务器组名称。
 
@@ -924,7 +924,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def product_info(self):
-        """Gets the product_info of this ShowServerResponse.
+        r"""Gets the product_info of this ShowServerResponse.
 
         :return: The product_info of this ShowServerResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
@@ -933,7 +933,7 @@ class ShowServerResponse(SdkResponse):
 
     @product_info.setter
     def product_info(self, product_info):
-        """Sets the product_info of this ShowServerResponse.
+        r"""Sets the product_info of this ShowServerResponse.
 
         :param product_info: The product_info of this ShowServerResponse.
         :type product_info: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
@@ -942,7 +942,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowServerResponse.
+        r"""Gets the metadata of this ShowServerResponse.
 
         弹性云服务器元数据。  >   1. charging_mode 云服务器的计费类型。  - “0”：按需计费（即postPaid-后付费方式）。 - “1”：按包年包月计费（即prePaid-预付费方式）。\"2\"：竞价实例计费  2. metering.order_id 按“包年/包月”计费的云服务器对应的订单ID。  3. metering.product_id 按“包年/包月”计费的云服务器对应的产品ID。  4. vpc_id 云服务器所属的虚拟私有云ID。  5. EcmResStatus 云服务器的冻结状态。  - normal：云服务器正常状态（未被冻结）。 - freeze：云服务器被冻结。  > 当云服务器被冻结或者解冻后，系统默认添加该字段，且该字段必选。  6. metering.image_id 云服务器操作系统对应的镜像ID  7.  metering.imagetype 镜像类型，目前支持：  - 公共镜像（gold） - 私有镜像（private） - 共享镜像（shared）  8. metering.resourcespeccode 云服务器对应的资源规格。  9. image_name 云服务器操作系统对应的镜像名称。  10. os_bit 操作系统位数，一般取值为“32”或者“64”。  11. lockCheckEndpoint 回调URL，用于检查弹性云服务器的加锁是否有效。  - 如果有效，则云服务器保持锁定状态。 - 如果无效，解除锁定状态，删除失效的锁。  12. lockSource 弹性云服务器来自哪个服务。订单加锁（ORDER）  13. lockSourceId 弹性云服务器的加锁来自哪个ID。lockSource为“ORDER”时，lockSourceId为订单ID。  14. lockScene 弹性云服务器的加锁类型。  - 按需转包周期（TO_PERIOD_LOCK）  15. virtual_env_type  - IOS镜像创建虚拟机，\"virtual_env_type\": \"IsoImage\" 属性； - 非IOS镜像创建虚拟机，在19.5.0版本以后创建的虚拟机将不会添加virtual_env_type 属性，而在此之前的版本创建的虚拟机可能会返回\"virtual_env_type\": \"FusionCompute\"属性 。  > virtual_env_type属性不允许用户增加、删除和修改。  16. metering.resourcetype 云服务器对应的资源类型。  17. os_type 操作系统类型，取值为：Linux、Windows。  18. cascaded.instance_extrainfo 系统内部虚拟机扩展信息。  19. __support_agent_list 云服务器是否支持企业主机安全、主机监控。  - “hss”：企业主机安全 -  “ces”：主机监控  20. agency_name 委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
 
@@ -953,7 +953,7 @@ class ShowServerResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowServerResponse.
+        r"""Sets the metadata of this ShowServerResponse.
 
         弹性云服务器元数据。  >   1. charging_mode 云服务器的计费类型。  - “0”：按需计费（即postPaid-后付费方式）。 - “1”：按包年包月计费（即prePaid-预付费方式）。\"2\"：竞价实例计费  2. metering.order_id 按“包年/包月”计费的云服务器对应的订单ID。  3. metering.product_id 按“包年/包月”计费的云服务器对应的产品ID。  4. vpc_id 云服务器所属的虚拟私有云ID。  5. EcmResStatus 云服务器的冻结状态。  - normal：云服务器正常状态（未被冻结）。 - freeze：云服务器被冻结。  > 当云服务器被冻结或者解冻后，系统默认添加该字段，且该字段必选。  6. metering.image_id 云服务器操作系统对应的镜像ID  7.  metering.imagetype 镜像类型，目前支持：  - 公共镜像（gold） - 私有镜像（private） - 共享镜像（shared）  8. metering.resourcespeccode 云服务器对应的资源规格。  9. image_name 云服务器操作系统对应的镜像名称。  10. os_bit 操作系统位数，一般取值为“32”或者“64”。  11. lockCheckEndpoint 回调URL，用于检查弹性云服务器的加锁是否有效。  - 如果有效，则云服务器保持锁定状态。 - 如果无效，解除锁定状态，删除失效的锁。  12. lockSource 弹性云服务器来自哪个服务。订单加锁（ORDER）  13. lockSourceId 弹性云服务器的加锁来自哪个ID。lockSource为“ORDER”时，lockSourceId为订单ID。  14. lockScene 弹性云服务器的加锁类型。  - 按需转包周期（TO_PERIOD_LOCK）  15. virtual_env_type  - IOS镜像创建虚拟机，\"virtual_env_type\": \"IsoImage\" 属性； - 非IOS镜像创建虚拟机，在19.5.0版本以后创建的虚拟机将不会添加virtual_env_type 属性，而在此之前的版本创建的虚拟机可能会返回\"virtual_env_type\": \"FusionCompute\"属性 。  > virtual_env_type属性不允许用户增加、删除和修改。  16. metering.resourcetype 云服务器对应的资源类型。  17. os_type 操作系统类型，取值为：Linux、Windows。  18. cascaded.instance_extrainfo 系统内部虚拟机扩展信息。  19. __support_agent_list 云服务器是否支持企业主机安全、主机监控。  - “hss”：企业主机安全 -  “ces”：主机监控  20. agency_name 委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。
 
@@ -964,7 +964,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def session_count(self):
-        """Gets the session_count of this ShowServerResponse.
+        r"""Gets the session_count of this ShowServerResponse.
 
         会话数量。
 
@@ -975,7 +975,7 @@ class ShowServerResponse(SdkResponse):
 
     @session_count.setter
     def session_count(self, session_count):
-        """Sets the session_count of this ShowServerResponse.
+        r"""Sets the session_count of this ShowServerResponse.
 
         会话数量。
 
@@ -986,7 +986,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def vm_status(self):
-        """Gets the vm_status of this ShowServerResponse.
+        r"""Gets the vm_status of this ShowServerResponse.
 
         :return: The vm_status of this ShowServerResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppServerStatus`
@@ -995,7 +995,7 @@ class ShowServerResponse(SdkResponse):
 
     @vm_status.setter
     def vm_status(self, vm_status):
-        """Sets the vm_status of this ShowServerResponse.
+        r"""Sets the vm_status of this ShowServerResponse.
 
         :param vm_status: The vm_status of this ShowServerResponse.
         :type vm_status: :class:`huaweicloudsdkworkspaceapp.v1.AppServerStatus`
@@ -1004,7 +1004,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def task_status(self):
-        """Gets the task_status of this ShowServerResponse.
+        r"""Gets the task_status of this ShowServerResponse.
 
         :return: The task_status of this ShowServerResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppServerTaskStatus`
@@ -1013,7 +1013,7 @@ class ShowServerResponse(SdkResponse):
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ShowServerResponse.
+        r"""Sets the task_status of this ShowServerResponse.
 
         :param task_status: The task_status of this ShowServerResponse.
         :type task_status: :class:`huaweicloudsdkworkspaceapp.v1.AppServerTaskStatus`
@@ -1022,7 +1022,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def freeze(self):
-        """Gets the freeze of this ShowServerResponse.
+        r"""Gets the freeze of this ShowServerResponse.
 
         冻结信息。
 
@@ -1033,7 +1033,7 @@ class ShowServerResponse(SdkResponse):
 
     @freeze.setter
     def freeze(self, freeze):
-        """Sets the freeze of this ShowServerResponse.
+        r"""Sets the freeze of this ShowServerResponse.
 
         冻结信息。
 
@@ -1044,7 +1044,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def host_address(self):
-        """Gets the host_address of this ShowServerResponse.
+        r"""Gets the host_address of this ShowServerResponse.
 
         vpc和子网信息。
 
@@ -1055,7 +1055,7 @@ class ShowServerResponse(SdkResponse):
 
     @host_address.setter
     def host_address(self, host_address):
-        """Sets the host_address of this ShowServerResponse.
+        r"""Sets the host_address of this ShowServerResponse.
 
         vpc和子网信息。
 
@@ -1066,7 +1066,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowServerResponse.
+        r"""Gets the enterprise_project_id of this ShowServerResponse.
 
         企业项目ID,仅企业项目会返回
 
@@ -1077,7 +1077,7 @@ class ShowServerResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowServerResponse.
+        r"""Sets the enterprise_project_id of this ShowServerResponse.
 
         企业项目ID,仅企业项目会返回
 
@@ -1088,7 +1088,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowServerResponse.
+        r"""Gets the tags of this ShowServerResponse.
 
         标签信息
 
@@ -1099,7 +1099,7 @@ class ShowServerResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowServerResponse.
+        r"""Sets the tags of this ShowServerResponse.
 
         标签信息
 
@@ -1110,7 +1110,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def addresses(self):
-        """Gets the addresses of this ShowServerResponse.
+        r"""Gets the addresses of this ShowServerResponse.
 
         服务器IP地址列表。
 
@@ -1121,7 +1121,7 @@ class ShowServerResponse(SdkResponse):
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this ShowServerResponse.
+        r"""Sets the addresses of this ShowServerResponse.
 
         服务器IP地址列表。
 
@@ -1132,7 +1132,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this ShowServerResponse.
+        r"""Gets the root_volume of this ShowServerResponse.
 
         :return: The root_volume of this ShowServerResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VolumeDetail`
@@ -1141,7 +1141,7 @@ class ShowServerResponse(SdkResponse):
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this ShowServerResponse.
+        r"""Sets the root_volume of this ShowServerResponse.
 
         :param root_volume: The root_volume of this ShowServerResponse.
         :type root_volume: :class:`huaweicloudsdkworkspaceapp.v1.VolumeDetail`
@@ -1150,7 +1150,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def data_volumes(self):
-        """Gets the data_volumes of this ShowServerResponse.
+        r"""Gets the data_volumes of this ShowServerResponse.
 
         数据卷信息。
 
@@ -1161,7 +1161,7 @@ class ShowServerResponse(SdkResponse):
 
     @data_volumes.setter
     def data_volumes(self, data_volumes):
-        """Sets the data_volumes of this ShowServerResponse.
+        r"""Sets the data_volumes of this ShowServerResponse.
 
         数据卷信息。
 
@@ -1172,7 +1172,7 @@ class ShowServerResponse(SdkResponse):
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ShowServerResponse.
+        r"""Gets the security_groups of this ShowServerResponse.
 
         服务器安全组。
 
@@ -1183,7 +1183,7 @@ class ShowServerResponse(SdkResponse):
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ShowServerResponse.
+        r"""Sets the security_groups of this ShowServerResponse.
 
         服务器安全组。
 

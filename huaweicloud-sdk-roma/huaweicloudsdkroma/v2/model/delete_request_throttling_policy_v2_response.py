@@ -24,7 +24,7 @@ class DeleteRequestThrottlingPolicyV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteRequestThrottlingPolicyV2Response
+        r"""DeleteRequestThrottlingPolicyV2Response
 
         The model defined in huaweicloud sdk
 

@@ -41,7 +41,7 @@ class ShowFactorySupplementDataRequest:
     }
 
     def __init__(self, workspace=None, sort=None, page=None, size=None, name=None, user_name=None, status=None, start_date=None, end_date=None):
-        """ShowFactorySupplementDataRequest
+        r"""ShowFactorySupplementDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ShowFactorySupplementDataRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowFactorySupplementDataRequest.
+        r"""Gets the workspace of this ShowFactorySupplementDataRequest.
 
         工作空间ID
 
@@ -110,7 +110,7 @@ class ShowFactorySupplementDataRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowFactorySupplementDataRequest.
+        r"""Sets the workspace of this ShowFactorySupplementDataRequest.
 
         工作空间ID
 
@@ -121,7 +121,7 @@ class ShowFactorySupplementDataRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ShowFactorySupplementDataRequest.
+        r"""Gets the sort of this ShowFactorySupplementDataRequest.
 
         排序字段:desc：创建时间按照降序展示asc ：创建时间按照升序展示默认值：desc
 
@@ -132,7 +132,7 @@ class ShowFactorySupplementDataRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ShowFactorySupplementDataRequest.
+        r"""Sets the sort of this ShowFactorySupplementDataRequest.
 
         排序字段:desc：创建时间按照降序展示asc ：创建时间按照升序展示默认值：desc
 
@@ -143,7 +143,7 @@ class ShowFactorySupplementDataRequest:
 
     @property
     def page(self):
-        """Gets the page of this ShowFactorySupplementDataRequest.
+        r"""Gets the page of this ShowFactorySupplementDataRequest.
 
         分页列表的起始页，默认值为0。取值范围大于等于0。
 
@@ -154,7 +154,7 @@ class ShowFactorySupplementDataRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowFactorySupplementDataRequest.
+        r"""Sets the page of this ShowFactorySupplementDataRequest.
 
         分页列表的起始页，默认值为0。取值范围大于等于0。
 
@@ -165,7 +165,7 @@ class ShowFactorySupplementDataRequest:
 
     @property
     def size(self):
-        """Gets the size of this ShowFactorySupplementDataRequest.
+        r"""Gets the size of this ShowFactorySupplementDataRequest.
 
         分页返回结果，指定每页最大记录数。默认值：10
 
@@ -176,7 +176,7 @@ class ShowFactorySupplementDataRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowFactorySupplementDataRequest.
+        r"""Sets the size of this ShowFactorySupplementDataRequest.
 
         分页返回结果，指定每页最大记录数。默认值：10
 
@@ -187,7 +187,7 @@ class ShowFactorySupplementDataRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowFactorySupplementDataRequest.
+        r"""Gets the name of this ShowFactorySupplementDataRequest.
 
         补数据名称
 
@@ -198,7 +198,7 @@ class ShowFactorySupplementDataRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowFactorySupplementDataRequest.
+        r"""Sets the name of this ShowFactorySupplementDataRequest.
 
         补数据名称
 
@@ -209,7 +209,7 @@ class ShowFactorySupplementDataRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowFactorySupplementDataRequest.
+        r"""Gets the user_name of this ShowFactorySupplementDataRequest.
 
         用户名
 
@@ -220,7 +220,7 @@ class ShowFactorySupplementDataRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowFactorySupplementDataRequest.
+        r"""Sets the user_name of this ShowFactorySupplementDataRequest.
 
         用户名
 
@@ -231,7 +231,7 @@ class ShowFactorySupplementDataRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowFactorySupplementDataRequest.
+        r"""Gets the status of this ShowFactorySupplementDataRequest.
 
         实例状态：SUCCESS：成功RUNNING ：运行中CANCLE：取消
 
@@ -242,7 +242,7 @@ class ShowFactorySupplementDataRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowFactorySupplementDataRequest.
+        r"""Sets the status of this ShowFactorySupplementDataRequest.
 
         实例状态：SUCCESS：成功RUNNING ：运行中CANCLE：取消
 
@@ -253,7 +253,7 @@ class ShowFactorySupplementDataRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ShowFactorySupplementDataRequest.
+        r"""Gets the start_date of this ShowFactorySupplementDataRequest.
 
         查询作业的开始日期 13位时间戳
 
@@ -264,7 +264,7 @@ class ShowFactorySupplementDataRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ShowFactorySupplementDataRequest.
+        r"""Sets the start_date of this ShowFactorySupplementDataRequest.
 
         查询作业的开始日期 13位时间戳
 
@@ -275,7 +275,7 @@ class ShowFactorySupplementDataRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ShowFactorySupplementDataRequest.
+        r"""Gets the end_date of this ShowFactorySupplementDataRequest.
 
         查询作业的结束日期 13位时间戳
 
@@ -286,7 +286,7 @@ class ShowFactorySupplementDataRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ShowFactorySupplementDataRequest.
+        r"""Sets the end_date of this ShowFactorySupplementDataRequest.
 
         查询作业的结束日期 13位时间戳
 

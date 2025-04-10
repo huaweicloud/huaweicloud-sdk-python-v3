@@ -51,7 +51,7 @@ class DiskResp:
     }
 
     def __init__(self, instance_name=None, instance_id=None, host_name=None, disk_name=None, disk_type=None, total=None, used=None, available=None, used_percentage=None, _await=None, svctm=None, util=None, read_rate=None, write_rate=None):
-        """DiskResp
+        r"""DiskResp
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class DiskResp:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this DiskResp.
+        r"""Gets the instance_name of this DiskResp.
 
         实例名称
 
@@ -145,7 +145,7 @@ class DiskResp:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this DiskResp.
+        r"""Sets the instance_name of this DiskResp.
 
         实例名称
 
@@ -156,7 +156,7 @@ class DiskResp:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DiskResp.
+        r"""Gets the instance_id of this DiskResp.
 
         实例ID
 
@@ -167,7 +167,7 @@ class DiskResp:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DiskResp.
+        r"""Sets the instance_id of this DiskResp.
 
         实例ID
 
@@ -178,7 +178,7 @@ class DiskResp:
 
     @property
     def host_name(self):
-        """Gets the host_name of this DiskResp.
+        r"""Gets the host_name of this DiskResp.
 
         主机名称
 
@@ -189,7 +189,7 @@ class DiskResp:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this DiskResp.
+        r"""Sets the host_name of this DiskResp.
 
         主机名称
 
@@ -200,7 +200,7 @@ class DiskResp:
 
     @property
     def disk_name(self):
-        """Gets the disk_name of this DiskResp.
+        r"""Gets the disk_name of this DiskResp.
 
         磁盘名称
 
@@ -211,7 +211,7 @@ class DiskResp:
 
     @disk_name.setter
     def disk_name(self, disk_name):
-        """Sets the disk_name of this DiskResp.
+        r"""Sets the disk_name of this DiskResp.
 
         磁盘名称
 
@@ -222,7 +222,7 @@ class DiskResp:
 
     @property
     def disk_type(self):
-        """Gets the disk_type of this DiskResp.
+        r"""Gets the disk_type of this DiskResp.
 
         磁盘类型(系统盘、数据盘、日志盘)。
 
@@ -233,7 +233,7 @@ class DiskResp:
 
     @disk_type.setter
     def disk_type(self, disk_type):
-        """Sets the disk_type of this DiskResp.
+        r"""Sets the disk_type of this DiskResp.
 
         磁盘类型(系统盘、数据盘、日志盘)。
 
@@ -244,7 +244,7 @@ class DiskResp:
 
     @property
     def total(self):
-        """Gets the total of this DiskResp.
+        r"""Gets the total of this DiskResp.
 
         磁盘总容量(GB)。
 
@@ -255,7 +255,7 @@ class DiskResp:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this DiskResp.
+        r"""Sets the total of this DiskResp.
 
         磁盘总容量(GB)。
 
@@ -266,7 +266,7 @@ class DiskResp:
 
     @property
     def used(self):
-        """Gets the used of this DiskResp.
+        r"""Gets the used of this DiskResp.
 
         磁盘已使用容量(GB)。
 
@@ -277,7 +277,7 @@ class DiskResp:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this DiskResp.
+        r"""Sets the used of this DiskResp.
 
         磁盘已使用容量(GB)。
 
@@ -288,7 +288,7 @@ class DiskResp:
 
     @property
     def available(self):
-        """Gets the available of this DiskResp.
+        r"""Gets the available of this DiskResp.
 
         磁盘可用容量(GB)。
 
@@ -299,7 +299,7 @@ class DiskResp:
 
     @available.setter
     def available(self, available):
-        """Sets the available of this DiskResp.
+        r"""Sets the available of this DiskResp.
 
         磁盘可用容量(GB)。
 
@@ -310,7 +310,7 @@ class DiskResp:
 
     @property
     def used_percentage(self):
-        """Gets the used_percentage of this DiskResp.
+        r"""Gets the used_percentage of this DiskResp.
 
         磁盘使用率(%)。
 
@@ -321,7 +321,7 @@ class DiskResp:
 
     @used_percentage.setter
     def used_percentage(self, used_percentage):
-        """Sets the used_percentage of this DiskResp.
+        r"""Sets the used_percentage of this DiskResp.
 
         磁盘使用率(%)。
 
@@ -332,7 +332,7 @@ class DiskResp:
 
     @property
     def _await(self):
-        """Gets the _await of this DiskResp.
+        r"""Gets the _await of this DiskResp.
 
         IO等待时间(ms)。
 
@@ -343,7 +343,7 @@ class DiskResp:
 
     @_await.setter
     def _await(self, _await):
-        """Sets the _await of this DiskResp.
+        r"""Sets the _await of this DiskResp.
 
         IO等待时间(ms)。
 
@@ -354,7 +354,7 @@ class DiskResp:
 
     @property
     def svctm(self):
-        """Gets the svctm of this DiskResp.
+        r"""Gets the svctm of this DiskResp.
 
         IO服务时间(ms)。
 
@@ -365,7 +365,7 @@ class DiskResp:
 
     @svctm.setter
     def svctm(self, svctm):
-        """Sets the svctm of this DiskResp.
+        r"""Sets the svctm of this DiskResp.
 
         IO服务时间(ms)。
 
@@ -376,7 +376,7 @@ class DiskResp:
 
     @property
     def util(self):
-        """Gets the util of this DiskResp.
+        r"""Gets the util of this DiskResp.
 
         IO使用率(%)。
 
@@ -387,7 +387,7 @@ class DiskResp:
 
     @util.setter
     def util(self, util):
-        """Sets the util of this DiskResp.
+        r"""Sets the util of this DiskResp.
 
         IO使用率(%)。
 
@@ -398,7 +398,7 @@ class DiskResp:
 
     @property
     def read_rate(self):
-        """Gets the read_rate of this DiskResp.
+        r"""Gets the read_rate of this DiskResp.
 
         磁盘读速率(KB/s)。
 
@@ -409,7 +409,7 @@ class DiskResp:
 
     @read_rate.setter
     def read_rate(self, read_rate):
-        """Sets the read_rate of this DiskResp.
+        r"""Sets the read_rate of this DiskResp.
 
         磁盘读速率(KB/s)。
 
@@ -420,7 +420,7 @@ class DiskResp:
 
     @property
     def write_rate(self):
-        """Gets the write_rate of this DiskResp.
+        r"""Gets the write_rate of this DiskResp.
 
         磁盘写速率(KB/s)。
 
@@ -431,7 +431,7 @@ class DiskResp:
 
     @write_rate.setter
     def write_rate(self, write_rate):
-        """Sets the write_rate of this DiskResp.
+        r"""Sets the write_rate of this DiskResp.
 
         磁盘写速率(KB/s)。
 

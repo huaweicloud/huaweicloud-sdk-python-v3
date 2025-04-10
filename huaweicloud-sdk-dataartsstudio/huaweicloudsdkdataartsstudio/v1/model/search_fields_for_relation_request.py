@@ -33,7 +33,7 @@ class SearchFieldsForRelationRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, limit=None, offset=None, model_id=None):
-        """SearchFieldsForRelationRequest
+        r"""SearchFieldsForRelationRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class SearchFieldsForRelationRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this SearchFieldsForRelationRequest.
+        r"""Gets the workspace of this SearchFieldsForRelationRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -80,7 +80,7 @@ class SearchFieldsForRelationRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this SearchFieldsForRelationRequest.
+        r"""Sets the workspace of this SearchFieldsForRelationRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -91,7 +91,7 @@ class SearchFieldsForRelationRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this SearchFieldsForRelationRequest.
+        r"""Gets the x_project_id of this SearchFieldsForRelationRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -102,7 +102,7 @@ class SearchFieldsForRelationRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this SearchFieldsForRelationRequest.
+        r"""Sets the x_project_id of this SearchFieldsForRelationRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -113,7 +113,7 @@ class SearchFieldsForRelationRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchFieldsForRelationRequest.
+        r"""Gets the limit of this SearchFieldsForRelationRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -124,7 +124,7 @@ class SearchFieldsForRelationRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchFieldsForRelationRequest.
+        r"""Sets the limit of this SearchFieldsForRelationRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -135,7 +135,7 @@ class SearchFieldsForRelationRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchFieldsForRelationRequest.
+        r"""Gets the offset of this SearchFieldsForRelationRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -146,7 +146,7 @@ class SearchFieldsForRelationRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchFieldsForRelationRequest.
+        r"""Sets the offset of this SearchFieldsForRelationRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -157,7 +157,7 @@ class SearchFieldsForRelationRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this SearchFieldsForRelationRequest.
+        r"""Gets the model_id of this SearchFieldsForRelationRequest.
 
         所属关系建模的模型ID，ID字符串。
 
@@ -168,7 +168,7 @@ class SearchFieldsForRelationRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this SearchFieldsForRelationRequest.
+        r"""Sets the model_id of this SearchFieldsForRelationRequest.
 
         所属关系建模的模型ID，ID字符串。
 

@@ -25,7 +25,7 @@ class VdiDisconnectHibernateOptions:
     }
 
     def __init__(self, disconnect_hibernate_minutes=None):
-        """VdiDisconnectHibernateOptions
+        r"""VdiDisconnectHibernateOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class VdiDisconnectHibernateOptions:
 
     @property
     def disconnect_hibernate_minutes(self):
-        """Gets the disconnect_hibernate_minutes of this VdiDisconnectHibernateOptions.
+        r"""Gets the disconnect_hibernate_minutes of this VdiDisconnectHibernateOptions.
 
         断连休眠时间。
 
@@ -54,7 +54,7 @@ class VdiDisconnectHibernateOptions:
 
     @disconnect_hibernate_minutes.setter
     def disconnect_hibernate_minutes(self, disconnect_hibernate_minutes):
-        """Sets the disconnect_hibernate_minutes of this VdiDisconnectHibernateOptions.
+        r"""Sets the disconnect_hibernate_minutes of this VdiDisconnectHibernateOptions.
 
         断连休眠时间。
 

@@ -26,7 +26,7 @@ class ConfirmAssetUploadResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None):
-        """ConfirmAssetUploadResponse
+        r"""ConfirmAssetUploadResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ConfirmAssetUploadResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ConfirmAssetUploadResponse.
+        r"""Gets the asset_id of this ConfirmAssetUploadResponse.
 
         媒资ID 
 
@@ -55,7 +55,7 @@ class ConfirmAssetUploadResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ConfirmAssetUploadResponse.
+        r"""Sets the asset_id of this ConfirmAssetUploadResponse.
 
         媒资ID 
 

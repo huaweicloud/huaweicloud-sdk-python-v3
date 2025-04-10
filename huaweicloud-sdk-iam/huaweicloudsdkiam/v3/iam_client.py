@@ -34,7 +34,7 @@ class IamClient(Client):
         return client_builder
 
     def associate_agency_with_all_projects_permission(self, request):
-        """为委托授予所有项目服务权限
+        r"""为委托授予所有项目服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为委托授予所有项目服务权限。
         
@@ -105,7 +105,7 @@ class IamClient(Client):
         return http_info
 
     def associate_agency_with_domain_permission(self, request):
-        """为委托授予全局服务权限
+        r"""为委托授予全局服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为委托授予全局服务权限。
         
@@ -176,7 +176,7 @@ class IamClient(Client):
         return http_info
 
     def associate_agency_with_project_permission(self, request):
-        """为委托授予项目服务权限
+        r"""为委托授予项目服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为委托授予项目服务权限。
         
@@ -247,7 +247,7 @@ class IamClient(Client):
         return http_info
 
     def associate_role_to_agency_on_enterprise_project(self, request):
-        """基于委托为企业项目授权
+        r"""基于委托为企业项目授权
 
         该接口可以基于委托为企业项目授权
         
@@ -312,7 +312,7 @@ class IamClient(Client):
         return http_info
 
     def associate_role_to_group_on_enterprise_project(self, request):
-        """基于用户组为企业项目授权
+        r"""基于用户组为企业项目授权
 
         该接口用于基于用户组为企业项目授权。
         
@@ -383,7 +383,7 @@ class IamClient(Client):
         return http_info
 
     def associate_role_to_user_on_enterprise_project(self, request):
-        """基于用户为企业项目授权
+        r"""基于用户为企业项目授权
 
         基于用户为企业项目授权。
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
@@ -453,7 +453,7 @@ class IamClient(Client):
         return http_info
 
     def check_all_projects_permission_for_agency(self, request):
-        """检查委托下是否具有所有项目服务权限
+        r"""检查委托下是否具有所有项目服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)检查委托是否具有所有项目服务权限。
         
@@ -524,7 +524,7 @@ class IamClient(Client):
         return http_info
 
     def check_domain_permission_for_agency(self, request):
-        """查询委托是否拥有全局服务权限
+        r"""查询委托是否拥有全局服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托是否拥有全局服务权限。
         
@@ -595,7 +595,7 @@ class IamClient(Client):
         return http_info
 
     def check_project_permission_for_agency(self, request):
-        """查询委托是否拥有项目服务权限
+        r"""查询委托是否拥有项目服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托是否拥有项目服务权限。
         
@@ -666,7 +666,7 @@ class IamClient(Client):
         return http_info
 
     def create_agency(self, request):
-        """创建委托
+        r"""创建委托
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建委托。
         
@@ -733,7 +733,7 @@ class IamClient(Client):
         return http_info
 
     def create_agency_custom_policy(self, request):
-        """创建委托自定义策略
+        r"""创建委托自定义策略
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建委托自定义策略。
         
@@ -800,7 +800,7 @@ class IamClient(Client):
         return http_info
 
     def create_binding_device(self, request):
-        """绑定MFA设备
+        r"""绑定MFA设备
 
         该接口可以用于绑定MFA设备。
         
@@ -867,7 +867,7 @@ class IamClient(Client):
         return http_info
 
     def create_cloud_service_custom_policy(self, request):
-        """创建云服务自定义策略
+        r"""创建云服务自定义策略
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建云服务自定义策略。
         
@@ -934,7 +934,7 @@ class IamClient(Client):
         return http_info
 
     def create_login_token(self, request):
-        """获取自定义代理登录票据
+        r"""获取自定义代理登录票据
 
         该接口用于用于获取自定义代理登录票据logintoken。logintoken是系统颁发给自定义代理用户的登录票据，承载用户的身份、session等信息。调用自定义代理URL登录云服务控制台时，可以使用本接口获取的logintoken进行认证。
         
@@ -1003,7 +1003,7 @@ class IamClient(Client):
         return http_info
 
     def create_metadata(self, request):
-        """导入Metadata文件
+        r"""导入Metadata文件
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)导入Metadata文件。
         
@@ -1076,7 +1076,7 @@ class IamClient(Client):
         return http_info
 
     def create_mfa_device(self, request):
-        """创建MFA设备
+        r"""创建MFA设备
 
         该接口可以用于创建MFA设备。
         
@@ -1143,7 +1143,7 @@ class IamClient(Client):
         return http_info
 
     def create_open_id_connect_config(self, request):
-        """创建OpenId Connect身份提供商配置
+        r"""创建OpenId Connect身份提供商配置
 
         创建OpenId Connect身份提供商配置
         
@@ -1210,7 +1210,7 @@ class IamClient(Client):
         return http_info
 
     def create_token_with_id_token(self, request):
-        """获取联邦认证token(OpenId Connect Id token方式)
+        r"""获取联邦认证token(OpenId Connect Id token方式)
 
         获取联邦认证token(OpenId Connect Id token方式)
         
@@ -1277,7 +1277,7 @@ class IamClient(Client):
         return http_info
 
     def create_unscope_token_by_idp_initiated(self, request):
-        """获取联邦认证unscoped token(IdP initiated)
+        r"""获取联邦认证unscoped token(IdP initiated)
 
         该接口可以用于通过IdP initiated的联邦认证方式获取unscoped token。
         
@@ -1351,7 +1351,7 @@ class IamClient(Client):
         return http_info
 
     def create_unscoped_token_with_id_token(self, request):
-        """获取联邦认证unscoped token(OpenId Connect Id token方式)
+        r"""获取联邦认证unscoped token(OpenId Connect Id token方式)
 
         获取联邦认证token(OpenId Connect Id token方式)。
         
@@ -1420,7 +1420,7 @@ class IamClient(Client):
         return http_info
 
     def delete_agency(self, request):
-        """删除委托
+        r"""删除委托
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除委托。
         
@@ -1487,7 +1487,7 @@ class IamClient(Client):
         return http_info
 
     def delete_binding_device(self, request):
-        """解绑MFA设备
+        r"""解绑MFA设备
 
         该接口可以用于解绑MFA设备
         
@@ -1554,7 +1554,7 @@ class IamClient(Client):
         return http_info
 
     def delete_custom_policy(self, request):
-        """删除自定义策略
+        r"""删除自定义策略
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除自定义策略。
         
@@ -1621,7 +1621,7 @@ class IamClient(Client):
         return http_info
 
     def delete_domain_group_inherited_role(self, request):
-        """移除用户组的所有项目服务权限
+        r"""移除用户组的所有项目服务权限
 
         该接口可以用于移除用户组的所有项目服务权限。
         
@@ -1692,7 +1692,7 @@ class IamClient(Client):
         return http_info
 
     def delete_mfa_device(self, request):
-        """删除MFA设备
+        r"""删除MFA设备
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除MFA设备。
         
@@ -1761,7 +1761,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_add_user_to_group(self, request):
-        """添加IAM用户到用户组
+        r"""添加IAM用户到用户组
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)添加IAM用户到用户组。
         
@@ -1830,7 +1830,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_associate_group_with_domain_permission(self, request):
-        """为用户组授予全局服务权限
+        r"""为用户组授予全局服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为用户组授予全局服务权限。
         
@@ -1901,7 +1901,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_associate_group_with_project_permission(self, request):
-        """为用户组授予项目服务权限
+        r"""为用户组授予项目服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为用户组授予项目服务权限。
         
@@ -1972,7 +1972,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_check_domain_permission_for_group(self, request):
-        """查询用户组是否拥有全局服务权限
+        r"""查询用户组是否拥有全局服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组是否拥有全局服务权限。
         
@@ -2043,7 +2043,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_check_project_permission_for_group(self, request):
-        """查询用户组是否拥有项目服务权限
+        r"""查询用户组是否拥有项目服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组是否拥有项目服务权限。
         
@@ -2114,7 +2114,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_check_user_in_group(self, request):
-        """查询IAM用户是否在用户组中
+        r"""查询IAM用户是否在用户组中
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户是否在用户组中。
         
@@ -2183,7 +2183,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_checkrole_for_group(self, request):
-        """查询用户组是否拥有所有项目指定权限
+        r"""查询用户组是否拥有所有项目指定权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组是否拥有所有项目指定权限。
         
@@ -2254,7 +2254,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_create_group(self, request):
-        """创建用户组
+        r"""创建用户组
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建用户组。
         
@@ -2321,7 +2321,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_create_identity_provider(self, request):
-        """注册身份提供商
+        r"""注册身份提供商
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)注册身份提供商。
         
@@ -2390,7 +2390,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_create_mapping(self, request):
-        """注册映射
+        r"""注册映射
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)注册映射。
         
@@ -2459,7 +2459,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_create_project(self, request):
-        """创建项目
+        r"""创建项目
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建项目。
         
@@ -2526,7 +2526,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_create_protocol(self, request):
-        """注册协议
+        r"""注册协议
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)注册协议（将协议关联到某一身份提供商）。
         
@@ -2597,7 +2597,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_create_scoped_token(self, request):
-        """获取联邦认证scoped token
+        r"""获取联邦认证scoped token
 
         该接口可以用于通过联邦认证方式获取scoped token。
         
@@ -2664,7 +2664,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_delete_group(self, request):
-        """删除用户组
+        r"""删除用户组
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除用户组。
         
@@ -2731,7 +2731,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_delete_identity_provider(self, request):
-        """删除身份提供商
+        r"""删除身份提供商
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html) 删除身份提供商。
         
@@ -2798,7 +2798,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_delete_mapping(self, request):
-        """删除映射
+        r"""删除映射
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除映射。
         
@@ -2865,7 +2865,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_delete_protocol(self, request):
-        """删除协议
+        r"""删除协议
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除协议。
         
@@ -2934,7 +2934,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_all_project_permissions_for_group(self, request):
-        """查询用户组的所有项目权限列表
+        r"""查询用户组的所有项目权限列表
 
         该接口可以用于管理员查询用户组所有项目服务权限列表。 该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
         
@@ -3001,7 +3001,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_auth_domains(self, request):
-        """查询IAM用户可以访问的账号详情
+        r"""查询IAM用户可以访问的账号详情
 
         该接口可以用于查询IAM用户可以用访问的账号详情。
         
@@ -3066,7 +3066,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_auth_projects(self, request):
-        """查询IAM用户可以访问的项目列表
+        r"""查询IAM用户可以访问的项目列表
 
         该接口可以用于查询IAM用户可以访问的项目列表。
         
@@ -3131,7 +3131,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_domain_permissions_for_group(self, request):
-        """查询全局服务中的用户组权限
+        r"""查询全局服务中的用户组权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询全局服务中的用户组权限。
         
@@ -3200,7 +3200,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_endpoints(self, request):
-        """查询终端节点列表
+        r"""查询终端节点列表
 
         该接口可以用于查询终端节点列表。终端节点用来提供服务访问入口。
         
@@ -3269,7 +3269,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_federation_domains(self, request):
-        """查询联邦用户可以访问的账号列表
+        r"""查询联邦用户可以访问的账号列表
 
         该接口用于查询联邦用户可以访问的账号列表。
         
@@ -3335,7 +3335,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_federation_projects(self, request):
-        """查询联邦用户可以访问的项目列表
+        r"""查询联邦用户可以访问的项目列表
 
         该接口可以用于查询联邦用户可以访问的项目列表。
         
@@ -3401,7 +3401,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_groups(self, request):
-        """查询用户组列表
+        r"""查询用户组列表
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组列表。
         
@@ -3470,7 +3470,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_identity_providers(self, request):
-        """查询身份提供商列表
+        r"""查询身份提供商列表
 
         该接口可以用于查询身份提供商列表。
         
@@ -3535,7 +3535,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_mappings(self, request):
-        """查询映射列表
+        r"""查询映射列表
 
         该接口可以用于查询映射列表。
         
@@ -3600,7 +3600,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_permissions(self, request):
-        """查询权限列表
+        r"""查询权限列表
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询权限列表。
         
@@ -3681,7 +3681,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_project_permissions_for_group(self, request):
-        """查询项目服务中的用户组权限
+        r"""查询项目服务中的用户组权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目服务中的用户组权限。
         
@@ -3750,7 +3750,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_projects(self, request):
-        """查询指定条件下的项目列表
+        r"""查询指定条件下的项目列表
 
         该接口可以用于查询指定条件下的项目列表。
         
@@ -3829,7 +3829,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_projects_for_user(self, request):
-        """查询指定IAM用户的项目列表
+        r"""查询指定IAM用户的项目列表
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的项目列表，或IAM用户查询自己的项目列表。
         
@@ -3896,7 +3896,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_protocols(self, request):
-        """查询协议列表
+        r"""查询协议列表
 
         该接口可以用于查询协议列表。
         
@@ -3963,7 +3963,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_regions(self, request):
-        """查询区域列表
+        r"""查询区域列表
 
         该接口可以用于查询区域列表。
         
@@ -4028,7 +4028,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_services(self, request):
-        """查询服务列表
+        r"""查询服务列表
 
         该接口可以用于查询服务列表。
         
@@ -4095,7 +4095,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_versions(self, request):
-        """查询版本信息列表
+        r"""查询版本信息列表
 
         该接口用于查询Keystone API的版本信息。
         
@@ -4160,7 +4160,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_remove_domain_permission_from_group(self, request):
-        """移除用户组的全局服务权限
+        r"""移除用户组的全局服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除用户组的全局服务权限。
         
@@ -4231,7 +4231,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_remove_project_permission_from_group(self, request):
-        """移除用户组的项目服务权限
+        r"""移除用户组的项目服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除用户组的项目服务权限。
         
@@ -4302,7 +4302,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_remove_user_from_group(self, request):
-        """移除用户组中的IAM用户
+        r"""移除用户组中的IAM用户
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除用户组中的IAM用户。
         
@@ -4371,7 +4371,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_show_catalog(self, request):
-        """查询服务目录
+        r"""查询服务目录
 
         该接口可以用于查询请求头中X-Auth-Token对应的服务目录。
         
@@ -4436,7 +4436,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_show_endpoint(self, request):
-        """查询终端节点详情
+        r"""查询终端节点详情
 
         该接口可以用于查询终端节点详情。终端节点用来提供服务访问入口。
         
@@ -4503,7 +4503,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_show_group(self, request):
-        """查询用户组详情
+        r"""查询用户组详情
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组详情。
         
@@ -4570,7 +4570,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_show_identity_provider(self, request):
-        """查询身份提供商详情
+        r"""查询身份提供商详情
 
         该接口可以用于查询身份提供商详情。
         
@@ -4637,7 +4637,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_show_mapping(self, request):
-        """查询映射详情
+        r"""查询映射详情
 
         该接口可以用于查询映射详情。
         
@@ -4704,7 +4704,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_show_permission(self, request):
-        """查询权限详情
+        r"""查询权限详情
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询权限详情。
         
@@ -4771,7 +4771,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_show_project(self, request):
-        """查询项目详情
+        r"""查询项目详情
 
         该接口可以用于查询项目详情。
         
@@ -4838,7 +4838,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_show_protocol(self, request):
-        """查询协议详情
+        r"""查询协议详情
 
         该接口可以用于查询协议详情。
         
@@ -4907,7 +4907,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_show_region(self, request):
-        """查询区域详情
+        r"""查询区域详情
 
         该接口可以用于查询区域详情。
         
@@ -4974,7 +4974,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_show_security_compliance(self, request):
-        """查询账号密码强度策略
+        r"""查询账号密码强度策略
 
         该接口可以用于查询账号密码强度策略，查询结果包括密码强度策略的正则表达式及其描述。
         
@@ -5041,7 +5041,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_show_security_compliance_by_option(self, request):
-        """按条件查询账号密码强度策略
+        r"""按条件查询账号密码强度策略
 
         该接口可以用于按条件查询账号密码强度策略，查询结果包括密码强度策略的正则表达式及其描述。
         
@@ -5110,7 +5110,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_show_service(self, request):
-        """查询服务详情
+        r"""查询服务详情
 
         该接口可以用于查询服务详情。
         
@@ -5177,7 +5177,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_show_version(self, request):
-        """查询版本信息
+        r"""查询版本信息
 
         该接口用于查询Keystone API的3.0版本的信息。
         
@@ -5242,7 +5242,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_update_group(self, request):
-        """更新用户组
+        r"""更新用户组
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新用户组信息。
         
@@ -5311,7 +5311,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_update_identity_provider(self, request):
-        """更新身份提供商
+        r"""更新身份提供商
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新身份提供商。
         
@@ -5380,7 +5380,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_update_mapping(self, request):
-        """更新映射
+        r"""更新映射
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新映射。
         
@@ -5449,7 +5449,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_update_project(self, request):
-        """修改项目信息
+        r"""修改项目信息
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改项目信息。
         
@@ -5518,7 +5518,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_update_protocol(self, request):
-        """更新协议
+        r"""更新协议
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新协议。
         
@@ -5589,7 +5589,7 @@ class IamClient(Client):
         return http_info
 
     def list_agencies(self, request):
-        """查询指定条件下的委托列表
+        r"""查询指定条件下的委托列表
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定条件下的委托列表。
         
@@ -5664,7 +5664,7 @@ class IamClient(Client):
         return http_info
 
     def list_all_projects_permissions_for_agency(self, request):
-        """查询委托下的所有项目服务权限列表
+        r"""查询委托下的所有项目服务权限列表
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托所有项目服务权限列表。
         
@@ -5733,7 +5733,7 @@ class IamClient(Client):
         return http_info
 
     def list_custom_policies(self, request):
-        """查询自定义策略列表
+        r"""查询自定义策略列表
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询自定义策略列表。
         
@@ -5802,7 +5802,7 @@ class IamClient(Client):
         return http_info
 
     def list_domain_permissions_for_agency(self, request):
-        """查询全局服务中的委托权限
+        r"""查询全局服务中的委托权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询全局服务中的委托权限。
         
@@ -5871,7 +5871,7 @@ class IamClient(Client):
         return http_info
 
     def list_enterprise_projects_for_group(self, request):
-        """查询用户组关联的企业项目
+        r"""查询用户组关联的企业项目
 
         该接口可用于查询用户组所关联的企业项目。
         
@@ -5938,7 +5938,7 @@ class IamClient(Client):
         return http_info
 
     def list_enterprise_projects_for_user(self, request):
-        """查询用户直接关联的企业项目
+        r"""查询用户直接关联的企业项目
 
         该接口可用于查询用户所关联的企业项目。
         
@@ -6005,7 +6005,7 @@ class IamClient(Client):
         return http_info
 
     def list_groups_for_enterprise_project(self, request):
-        """查询企业项目关联的用户组
+        r"""查询企业项目关联的用户组
 
         该接口可用于查询企业项目关联的用户组。
         
@@ -6072,7 +6072,7 @@ class IamClient(Client):
         return http_info
 
     def list_project_permissions_for_agency(self, request):
-        """查询项目服务中的委托权限
+        r"""查询项目服务中的委托权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目服务中的委托权限。
         
@@ -6141,7 +6141,7 @@ class IamClient(Client):
         return http_info
 
     def list_roles_for_group_on_enterprise_project(self, request):
-        """查询企业项目关联用户组的权限
+        r"""查询企业项目关联用户组的权限
 
         该接口可用于查询企业项目已关联用户组的权限。
         
@@ -6210,7 +6210,7 @@ class IamClient(Client):
         return http_info
 
     def list_roles_for_user_on_enterprise_project(self, request):
-        """查询企业项目直接关联用户的权限
+        r"""查询企业项目直接关联用户的权限
 
         该接口可用于查询企业项目直接关联用户的权限。
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
@@ -6278,7 +6278,7 @@ class IamClient(Client):
         return http_info
 
     def list_users_for_enterprise_project(self, request):
-        """查询企业项目直接关联用户
+        r"""查询企业项目直接关联用户
 
         该接口可用于查询企业项目直接关联的用户。
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
@@ -6344,7 +6344,7 @@ class IamClient(Client):
         return http_info
 
     def remove_all_projects_permission_from_agency(self, request):
-        """移除委托下的所有项目服务权限
+        r"""移除委托下的所有项目服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除委托的所有项目服务权限。
         
@@ -6415,7 +6415,7 @@ class IamClient(Client):
         return http_info
 
     def remove_domain_permission_from_agency(self, request):
-        """移除委托的全局服务权限
+        r"""移除委托的全局服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除委托的全局服务权限。
         
@@ -6486,7 +6486,7 @@ class IamClient(Client):
         return http_info
 
     def remove_project_permission_from_agency(self, request):
-        """移除委托的项目服务权限
+        r"""移除委托的项目服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除委托的项目服务权限。
         
@@ -6557,7 +6557,7 @@ class IamClient(Client):
         return http_info
 
     def revoke_role_from_agency_on_enterprise_project(self, request):
-        """删除企业项目关联委托的权限
+        r"""删除企业项目关联委托的权限
 
         该接口可以删除企业项目委托上的授权
         
@@ -6622,7 +6622,7 @@ class IamClient(Client):
         return http_info
 
     def revoke_role_from_group_on_enterprise_project(self, request):
-        """删除企业项目关联用户组的权限
+        r"""删除企业项目关联用户组的权限
 
         该接口用于删除企业项目关联用户组的权限。
         
@@ -6693,7 +6693,7 @@ class IamClient(Client):
         return http_info
 
     def revoke_role_from_user_on_enterprise_project(self, request):
-        """删除企业项目直接关联用户的权限
+        r"""删除企业项目直接关联用户的权限
 
         删除企业项目直接关联用户的权限。
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
@@ -6763,7 +6763,7 @@ class IamClient(Client):
         return http_info
 
     def show_agency(self, request):
-        """查询委托详情
+        r"""查询委托详情
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托详情。
         
@@ -6830,7 +6830,7 @@ class IamClient(Client):
         return http_info
 
     def show_custom_policy(self, request):
-        """查询自定义策略详情
+        r"""查询自定义策略详情
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询自定义策略详情。
         
@@ -6897,7 +6897,7 @@ class IamClient(Client):
         return http_info
 
     def show_domain_api_acl_policy(self, request):
-        """查询账号接口访问策略
+        r"""查询账号接口访问策略
 
         该接口可以用于查询账号接口访问控制策略。
         
@@ -6964,7 +6964,7 @@ class IamClient(Client):
         return http_info
 
     def show_domain_console_acl_policy(self, request):
-        """查询账号控制台访问策略
+        r"""查询账号控制台访问策略
 
         该接口可以用于查询账号控制台访问控制策略。
         
@@ -7031,7 +7031,7 @@ class IamClient(Client):
         return http_info
 
     def show_domain_login_policy(self, request):
-        """查询账号登录策略
+        r"""查询账号登录策略
 
         该接口可以用于查询账号登录策略。
         
@@ -7098,7 +7098,7 @@ class IamClient(Client):
         return http_info
 
     def show_domain_password_policy(self, request):
-        """查询账号密码策略
+        r"""查询账号密码策略
 
         该接口可以用于查询账号密码策略。
         
@@ -7165,7 +7165,7 @@ class IamClient(Client):
         return http_info
 
     def show_domain_protect_policy(self, request):
-        """查询账号操作保护策略
+        r"""查询账号操作保护策略
 
         该接口可以用于查询账号操作保护策略。
         
@@ -7232,7 +7232,7 @@ class IamClient(Client):
         return http_info
 
     def show_domain_quota(self, request):
-        """查询账号配额
+        r"""查询账号配额
 
         该接口可以用于查询账号配额。
         
@@ -7301,7 +7301,7 @@ class IamClient(Client):
         return http_info
 
     def show_domain_role_assignments(self, request):
-        """查询指定账号中的授权记录
+        r"""查询指定账号中的授权记录
 
         该接口用于查询指定账号中的授权记录。
         该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
@@ -7393,7 +7393,7 @@ class IamClient(Client):
         return http_info
 
     def show_metadata(self, request):
-        """查询Metadata文件
+        r"""查询Metadata文件
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询身份提供商导入到IAM中的Metadata文件。
         
@@ -7462,7 +7462,7 @@ class IamClient(Client):
         return http_info
 
     def show_open_id_connect_config(self, request):
-        """查询OpenId Connect身份提供商配置
+        r"""查询OpenId Connect身份提供商配置
 
         查询OpenId Connect身份提供商配置
         
@@ -7527,7 +7527,7 @@ class IamClient(Client):
         return http_info
 
     def show_project_details_and_status(self, request):
-        """查询项目详情与状态
+        r"""查询项目详情与状态
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目详情与状态。
         
@@ -7594,7 +7594,7 @@ class IamClient(Client):
         return http_info
 
     def show_project_quota(self, request):
-        """查询项目配额
+        r"""查询项目配额
 
         该接口可以用于查询项目配额。
         
@@ -7661,7 +7661,7 @@ class IamClient(Client):
         return http_info
 
     def update_agency(self, request):
-        """修改委托
+        r"""修改委托
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改委托。
         
@@ -7730,7 +7730,7 @@ class IamClient(Client):
         return http_info
 
     def update_agency_custom_policy(self, request):
-        """修改委托自定义策略
+        r"""修改委托自定义策略
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改委托自定义策略。
         
@@ -7799,7 +7799,7 @@ class IamClient(Client):
         return http_info
 
     def update_cloud_service_custom_policy(self, request):
-        """修改云服务自定义策略
+        r"""修改云服务自定义策略
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改云服务自定义策略。
         
@@ -7868,7 +7868,7 @@ class IamClient(Client):
         return http_info
 
     def update_domain_api_acl_policy(self, request):
-        """修改账号接口访问策略
+        r"""修改账号接口访问策略
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号接口访问策略。
         
@@ -7937,7 +7937,7 @@ class IamClient(Client):
         return http_info
 
     def update_domain_console_acl_policy(self, request):
-        """修改账号控制台访问策略
+        r"""修改账号控制台访问策略
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号控制台访问策略。
         
@@ -8006,7 +8006,7 @@ class IamClient(Client):
         return http_info
 
     def update_domain_group_inherit_role(self, request):
-        """为用户组授予所有项目服务权限
+        r"""为用户组授予所有项目服务权限
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为用户组授予所有项目服务权限。
         
@@ -8077,7 +8077,7 @@ class IamClient(Client):
         return http_info
 
     def update_domain_login_policy(self, request):
-        """修改账号登录策略
+        r"""修改账号登录策略
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号登录策略。
         
@@ -8146,7 +8146,7 @@ class IamClient(Client):
         return http_info
 
     def update_domain_password_policy(self, request):
-        """修改账号密码策略
+        r"""修改账号密码策略
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号密码策略。
         
@@ -8215,7 +8215,7 @@ class IamClient(Client):
         return http_info
 
     def update_domain_protect_policy(self, request):
-        """修改账号操作保护策略
+        r"""修改账号操作保护策略
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号操作保护策略。
         
@@ -8284,7 +8284,7 @@ class IamClient(Client):
         return http_info
 
     def update_open_id_connect_config(self, request):
-        """修改OpenId Connect身份提供商配置
+        r"""修改OpenId Connect身份提供商配置
 
         修改OpenId Connect身份提供商配置
         
@@ -8351,7 +8351,7 @@ class IamClient(Client):
         return http_info
 
     def update_project_status(self, request):
-        """设置项目状态
+        r"""设置项目状态
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)设置项目状态。项目状态包括：正常、冻结。
         
@@ -8420,7 +8420,7 @@ class IamClient(Client):
         return http_info
 
     def create_permanent_access_key(self, request):
-        """创建永久访问密钥
+        r"""创建永久访问密钥
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)给IAM用户创建永久访问密钥，或IAM用户给自己创建永久访问密钥。
         
@@ -8489,7 +8489,7 @@ class IamClient(Client):
         return http_info
 
     def create_temporary_access_key_by_agency(self, request):
-        """通过委托获取临时访问密钥
+        r"""通过委托获取临时访问密钥
 
         该接口可以用于通过委托来获取临时访问密钥（临时AK/SK）和securitytoken。
         
@@ -8558,7 +8558,7 @@ class IamClient(Client):
         return http_info
 
     def create_temporary_access_key_by_token(self, request):
-        """通过token获取临时访问密钥
+        r"""通过token获取临时访问密钥
 
         该接口可以用于通过token来获取临时AK/SK和securitytoken。
         
@@ -8627,7 +8627,7 @@ class IamClient(Client):
         return http_info
 
     def delete_permanent_access_key(self, request):
-        """删除指定永久访问密钥
+        r"""删除指定永久访问密钥
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除IAM用户的指定永久访问密钥，或IAM用户删除自己的指定永久访问密钥。
         
@@ -8694,7 +8694,7 @@ class IamClient(Client):
         return http_info
 
     def list_permanent_access_keys(self, request):
-        """查询所有永久访问密钥
+        r"""查询所有永久访问密钥
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的所有永久访问密钥，或IAM用户查询自己的所有永久访问密钥。
         
@@ -8761,7 +8761,7 @@ class IamClient(Client):
         return http_info
 
     def show_permanent_access_key(self, request):
-        """查询指定永久访问密钥
+        r"""查询指定永久访问密钥
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的指定永久访问密钥，或IAM用户查询自己的指定永久访问密钥。
         
@@ -8828,7 +8828,7 @@ class IamClient(Client):
         return http_info
 
     def update_permanent_access_key(self, request):
-        """修改指定永久访问密钥
+        r"""修改指定永久访问密钥
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户的指定永久访问密钥，或IAM用户修改自己的指定永久访问密钥。
         
@@ -8897,7 +8897,7 @@ class IamClient(Client):
         return http_info
 
     def create_user(self, request):
-        """管理员创建IAM用户（推荐）
+        r"""管理员创建IAM用户（推荐）
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建IAM用户。
         
@@ -8964,7 +8964,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_create_user(self, request):
-        """管理员创建IAM用户
+        r"""管理员创建IAM用户
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建IAM用户。IAM用户首次登录时需要修改密码。
         
@@ -9031,7 +9031,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_delete_user(self, request):
-        """管理员删除IAM用户
+        r"""管理员删除IAM用户
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除指定IAM用户。
         
@@ -9098,7 +9098,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_groups_for_user(self, request):
-        """查询IAM用户所属用户组
+        r"""查询IAM用户所属用户组
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户所属用户组，或IAM用户查询自己所属用户组。
         
@@ -9165,7 +9165,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_users(self, request):
-        """管理员查询IAM用户列表
+        r"""管理员查询IAM用户列表
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户列表。
         
@@ -9238,7 +9238,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_list_users_for_group_by_admin(self, request):
-        """管理员查询用户组所包含的IAM用户
+        r"""管理员查询用户组所包含的IAM用户
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组中所包含的IAM用户。
         
@@ -9305,7 +9305,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_show_user(self, request):
-        """查询IAM用户详情
+        r"""查询IAM用户详情
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户详情，或IAM用户查询自己的用户详情。
         
@@ -9372,7 +9372,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_update_user_by_admin(self, request):
-        """管理员修改IAM用户信息
+        r"""管理员修改IAM用户信息
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户信息。
         
@@ -9441,7 +9441,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_update_user_password(self, request):
-        """修改IAM用户密码
+        r"""修改IAM用户密码
 
         该接口可以用于IAM用户修改自己的密码。
         
@@ -9510,7 +9510,7 @@ class IamClient(Client):
         return http_info
 
     def list_user_login_protects(self, request):
-        """查询IAM用户的登录保护状态信息列表
+        r"""查询IAM用户的登录保护状态信息列表
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的登录保护状态列表。
         
@@ -9575,7 +9575,7 @@ class IamClient(Client):
         return http_info
 
     def list_user_mfa_devices(self, request):
-        """查询IAM用户的MFA绑定信息列表
+        r"""查询IAM用户的MFA绑定信息列表
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的MFA绑定信息列表。
         
@@ -9640,7 +9640,7 @@ class IamClient(Client):
         return http_info
 
     def show_user(self, request):
-        """查询IAM用户详情（推荐）
+        r"""查询IAM用户详情（推荐）
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户详情，或IAM用户查询自己的详情。
         
@@ -9707,7 +9707,7 @@ class IamClient(Client):
         return http_info
 
     def show_user_login_protect(self, request):
-        """查询指定IAM用户的登录保护状态信息
+        r"""查询指定IAM用户的登录保护状态信息
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的登录保护状态信息，或IAM用户查询自己的登录保护状态信息。
         
@@ -9774,7 +9774,7 @@ class IamClient(Client):
         return http_info
 
     def show_user_mfa_device(self, request):
-        """查询指定IAM用户的MFA绑定信息
+        r"""查询指定IAM用户的MFA绑定信息
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的MFA绑定信息，或IAM用户查询自己的MFA绑定信息。
         
@@ -9841,7 +9841,7 @@ class IamClient(Client):
         return http_info
 
     def update_login_protect(self, request):
-        """修改IAM用户登录保护状态信息
+        r"""修改IAM用户登录保护状态信息
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号操作保护。
         
@@ -9910,7 +9910,7 @@ class IamClient(Client):
         return http_info
 
     def update_user(self, request):
-        """管理员修改IAM用户信息（推荐）
+        r"""管理员修改IAM用户信息（推荐）
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户信息 。
         
@@ -9979,7 +9979,7 @@ class IamClient(Client):
         return http_info
 
     def update_user_information(self, request):
-        """修改IAM用户信息（推荐）
+        r"""修改IAM用户信息（推荐）
 
         该接口可以用于IAM用户修改自己的用户信息。
         
@@ -10048,7 +10048,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_create_agency_token(self, request):
-        """获取委托Token
+        r"""获取委托Token
 
         该接口可以用于获取委托方的token。
         
@@ -10123,7 +10123,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_create_user_token_by_password(self, request):
-        """获取IAM用户Token（使用密码）
+        r"""获取IAM用户Token（使用密码）
 
         该接口可以用于通过用户名/密码的方式进行认证来获取IAM用户token。
         
@@ -10197,7 +10197,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_create_user_token_by_password_and_mfa(self, request):
-        """获取IAM用户Token（使用密码+虚拟MFA）
+        r"""获取IAM用户Token（使用密码+虚拟MFA）
 
         该接口可以用于通过用户名/密码+虚拟MFA的方式进行认证，在IAM用户开启了的登录保护功能，并选择通过虚拟MFA验证时获取IAM用户token。
         
@@ -10271,7 +10271,7 @@ class IamClient(Client):
         return http_info
 
     def keystone_validate_token(self, request):
-        """校验Token的有效性
+        r"""校验Token的有效性
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)校验本账号中IAM用户token的有效性，或IAM用户校验自己token的有效性。管理员仅能校验本账号中IAM用户token的有效性，不能校验其他账号中IAM用户token的有效性。如果被校验的token有效，则返回该token的详细信息。
         

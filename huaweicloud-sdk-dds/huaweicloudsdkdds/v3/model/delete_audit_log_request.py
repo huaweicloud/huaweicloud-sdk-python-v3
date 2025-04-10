@@ -29,7 +29,7 @@ class DeleteAuditLogRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """DeleteAuditLogRequest
+        r"""DeleteAuditLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteAuditLogRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteAuditLogRequest.
+        r"""Gets the x_language of this DeleteAuditLogRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class DeleteAuditLogRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteAuditLogRequest.
+        r"""Sets the x_language of this DeleteAuditLogRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class DeleteAuditLogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteAuditLogRequest.
+        r"""Gets the instance_id of this DeleteAuditLogRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建
 
@@ -89,7 +89,7 @@ class DeleteAuditLogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteAuditLogRequest.
+        r"""Sets the instance_id of this DeleteAuditLogRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建
 
@@ -100,7 +100,7 @@ class DeleteAuditLogRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteAuditLogRequest.
+        r"""Gets the body of this DeleteAuditLogRequest.
 
         :return: The body of this DeleteAuditLogRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteAuditLogRequestBody`
@@ -109,7 +109,7 @@ class DeleteAuditLogRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAuditLogRequest.
+        r"""Sets the body of this DeleteAuditLogRequest.
 
         :param body: The body of this DeleteAuditLogRequest.
         :type body: :class:`huaweicloudsdkdds.v3.DeleteAuditLogRequestBody`

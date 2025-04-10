@@ -27,7 +27,7 @@ class AuthorizeDataConnectionRequest:
     }
 
     def __init__(self, data_connection_id=None, workspace_id=None):
-        """AuthorizeDataConnectionRequest
+        r"""AuthorizeDataConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AuthorizeDataConnectionRequest:
 
     @property
     def data_connection_id(self):
-        """Gets the data_connection_id of this AuthorizeDataConnectionRequest.
+        r"""Gets the data_connection_id of this AuthorizeDataConnectionRequest.
 
         需要授权的数据连接id。
 
@@ -60,7 +60,7 @@ class AuthorizeDataConnectionRequest:
 
     @data_connection_id.setter
     def data_connection_id(self, data_connection_id):
-        """Sets the data_connection_id of this AuthorizeDataConnectionRequest.
+        r"""Sets the data_connection_id of this AuthorizeDataConnectionRequest.
 
         需要授权的数据连接id。
 
@@ -71,7 +71,7 @@ class AuthorizeDataConnectionRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this AuthorizeDataConnectionRequest.
+        r"""Gets the workspace_id of this AuthorizeDataConnectionRequest.
 
         需要授权的工作空间id。
 
@@ -82,7 +82,7 @@ class AuthorizeDataConnectionRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this AuthorizeDataConnectionRequest.
+        r"""Sets the workspace_id of this AuthorizeDataConnectionRequest.
 
         需要授权的工作空间id。
 

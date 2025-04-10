@@ -29,7 +29,7 @@ class MemberStatus:
     }
 
     def __init__(self, listener_id=None, operating_status=None, reason=None):
-        """MemberStatus
+        r"""MemberStatus
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class MemberStatus:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this MemberStatus.
+        r"""Gets the listener_id of this MemberStatus.
 
         参数解释：监听器ID
 
@@ -66,7 +66,7 @@ class MemberStatus:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this MemberStatus.
+        r"""Sets the listener_id of this MemberStatus.
 
         参数解释：监听器ID
 
@@ -77,7 +77,7 @@ class MemberStatus:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this MemberStatus.
+        r"""Gets the operating_status of this MemberStatus.
 
         参数解释：后端服务器的健康状态。  取值范围： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
 
@@ -88,7 +88,7 @@ class MemberStatus:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this MemberStatus.
+        r"""Sets the operating_status of this MemberStatus.
 
         参数解释：后端服务器的健康状态。  取值范围： - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
 
@@ -99,7 +99,7 @@ class MemberStatus:
 
     @property
     def reason(self):
-        """Gets the reason of this MemberStatus.
+        r"""Gets the reason of this MemberStatus.
 
         :return: The reason of this MemberStatus.
         :rtype: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
@@ -108,7 +108,7 @@ class MemberStatus:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this MemberStatus.
+        r"""Sets the reason of this MemberStatus.
 
         :param reason: The reason of this MemberStatus.
         :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`

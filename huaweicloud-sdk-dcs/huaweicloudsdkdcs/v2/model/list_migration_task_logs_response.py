@@ -28,7 +28,7 @@ class ListMigrationTaskLogsResponse(SdkResponse):
     }
 
     def __init__(self, log_num=None, migration_logs=None):
-        """ListMigrationTaskLogsResponse
+        r"""ListMigrationTaskLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMigrationTaskLogsResponse(SdkResponse):
 
     @property
     def log_num(self):
-        """Gets the log_num of this ListMigrationTaskLogsResponse.
+        r"""Gets the log_num of this ListMigrationTaskLogsResponse.
 
         日志条数
 
@@ -62,7 +62,7 @@ class ListMigrationTaskLogsResponse(SdkResponse):
 
     @log_num.setter
     def log_num(self, log_num):
-        """Sets the log_num of this ListMigrationTaskLogsResponse.
+        r"""Sets the log_num of this ListMigrationTaskLogsResponse.
 
         日志条数
 
@@ -73,7 +73,7 @@ class ListMigrationTaskLogsResponse(SdkResponse):
 
     @property
     def migration_logs(self):
-        """Gets the migration_logs of this ListMigrationTaskLogsResponse.
+        r"""Gets the migration_logs of this ListMigrationTaskLogsResponse.
 
         日志列表
 
@@ -84,7 +84,7 @@ class ListMigrationTaskLogsResponse(SdkResponse):
 
     @migration_logs.setter
     def migration_logs(self, migration_logs):
-        """Sets the migration_logs of this ListMigrationTaskLogsResponse.
+        r"""Sets the migration_logs of this ListMigrationTaskLogsResponse.
 
         日志列表
 

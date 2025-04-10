@@ -25,7 +25,7 @@ class UpdateSecretStageRequestBody:
     }
 
     def __init__(self, version_id=None):
-        """UpdateSecretStageRequestBody
+        r"""UpdateSecretStageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateSecretStageRequestBody:
 
     @property
     def version_id(self):
-        """Gets the version_id of this UpdateSecretStageRequestBody.
+        r"""Gets the version_id of this UpdateSecretStageRequestBody.
 
         凭据的版本号标识符。 
 
@@ -53,7 +53,7 @@ class UpdateSecretStageRequestBody:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this UpdateSecretStageRequestBody.
+        r"""Sets the version_id of this UpdateSecretStageRequestBody.
 
         凭据的版本号标识符。 
 

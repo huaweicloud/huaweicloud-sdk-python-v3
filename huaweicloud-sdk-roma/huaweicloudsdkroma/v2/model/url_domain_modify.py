@@ -29,7 +29,7 @@ class UrlDomainModify:
     }
 
     def __init__(self, min_ssl_version=None, is_http_redirect_to_https=None, verified_client_certificate_enabled=None):
-        """UrlDomainModify
+        r"""UrlDomainModify
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UrlDomainModify:
 
     @property
     def min_ssl_version(self):
-        """Gets the min_ssl_version of this UrlDomainModify.
+        r"""Gets the min_ssl_version of this UrlDomainModify.
 
         最小ssl协议版本号。支持TLSv1.1或TLSv1.2
 
@@ -68,7 +68,7 @@ class UrlDomainModify:
 
     @min_ssl_version.setter
     def min_ssl_version(self, min_ssl_version):
-        """Sets the min_ssl_version of this UrlDomainModify.
+        r"""Sets the min_ssl_version of this UrlDomainModify.
 
         最小ssl协议版本号。支持TLSv1.1或TLSv1.2
 
@@ -79,7 +79,7 @@ class UrlDomainModify:
 
     @property
     def is_http_redirect_to_https(self):
-        """Gets the is_http_redirect_to_https of this UrlDomainModify.
+        r"""Gets the is_http_redirect_to_https of this UrlDomainModify.
 
         是否开启http到https的重定向，false为关闭，true为开启，默认为false
 
@@ -90,7 +90,7 @@ class UrlDomainModify:
 
     @is_http_redirect_to_https.setter
     def is_http_redirect_to_https(self, is_http_redirect_to_https):
-        """Sets the is_http_redirect_to_https of this UrlDomainModify.
+        r"""Sets the is_http_redirect_to_https of this UrlDomainModify.
 
         是否开启http到https的重定向，false为关闭，true为开启，默认为false
 
@@ -101,7 +101,7 @@ class UrlDomainModify:
 
     @property
     def verified_client_certificate_enabled(self):
-        """Gets the verified_client_certificate_enabled of this UrlDomainModify.
+        r"""Gets the verified_client_certificate_enabled of this UrlDomainModify.
 
         是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 
@@ -112,7 +112,7 @@ class UrlDomainModify:
 
     @verified_client_certificate_enabled.setter
     def verified_client_certificate_enabled(self, verified_client_certificate_enabled):
-        """Sets the verified_client_certificate_enabled of this UrlDomainModify.
+        r"""Sets the verified_client_certificate_enabled of this UrlDomainModify.
 
         是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 

@@ -28,7 +28,7 @@ class CreateProjectDomainResponse(SdkResponse):
     }
 
     def __init__(self, domain_name=None, domain_id=None):
-        """CreateProjectDomainResponse
+        r"""CreateProjectDomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateProjectDomainResponse(SdkResponse):
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this CreateProjectDomainResponse.
+        r"""Gets the domain_name of this CreateProjectDomainResponse.
 
         领域名称
 
@@ -62,7 +62,7 @@ class CreateProjectDomainResponse(SdkResponse):
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this CreateProjectDomainResponse.
+        r"""Sets the domain_name of this CreateProjectDomainResponse.
 
         领域名称
 
@@ -73,7 +73,7 @@ class CreateProjectDomainResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateProjectDomainResponse.
+        r"""Gets the domain_id of this CreateProjectDomainResponse.
 
         领域id
 
@@ -84,7 +84,7 @@ class CreateProjectDomainResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateProjectDomainResponse.
+        r"""Sets the domain_id of this CreateProjectDomainResponse.
 
         领域id
 

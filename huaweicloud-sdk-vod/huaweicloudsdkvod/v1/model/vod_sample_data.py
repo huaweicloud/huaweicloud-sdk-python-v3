@@ -31,7 +31,7 @@ class VodSampleData:
     }
 
     def __init__(self, storage=None, storage_warm=None, storage_cold=None, transcode=None):
-        """VodSampleData
+        r"""VodSampleData
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class VodSampleData:
 
     @property
     def storage(self):
-        """Gets the storage of this VodSampleData.
+        r"""Gets the storage of this VodSampleData.
 
         存储空间。  单位：GB。
 
@@ -75,7 +75,7 @@ class VodSampleData:
 
     @storage.setter
     def storage(self, storage):
-        """Sets the storage of this VodSampleData.
+        r"""Sets the storage of this VodSampleData.
 
         存储空间。  单位：GB。
 
@@ -86,7 +86,7 @@ class VodSampleData:
 
     @property
     def storage_warm(self):
-        """Gets the storage_warm of this VodSampleData.
+        r"""Gets the storage_warm of this VodSampleData.
 
         低频存储空间。  单位：GB。
 
@@ -97,7 +97,7 @@ class VodSampleData:
 
     @storage_warm.setter
     def storage_warm(self, storage_warm):
-        """Sets the storage_warm of this VodSampleData.
+        r"""Sets the storage_warm of this VodSampleData.
 
         低频存储空间。  单位：GB。
 
@@ -108,7 +108,7 @@ class VodSampleData:
 
     @property
     def storage_cold(self):
-        """Gets the storage_cold of this VodSampleData.
+        r"""Gets the storage_cold of this VodSampleData.
 
         归档存储空间。  单位：GB。
 
@@ -119,7 +119,7 @@ class VodSampleData:
 
     @storage_cold.setter
     def storage_cold(self, storage_cold):
-        """Sets the storage_cold of this VodSampleData.
+        r"""Sets the storage_cold of this VodSampleData.
 
         归档存储空间。  单位：GB。
 
@@ -130,7 +130,7 @@ class VodSampleData:
 
     @property
     def transcode(self):
-        """Gets the transcode of this VodSampleData.
+        r"""Gets the transcode of this VodSampleData.
 
         转码时长。  单位：分钟。
 
@@ -141,7 +141,7 @@ class VodSampleData:
 
     @transcode.setter
     def transcode(self, transcode):
-        """Sets the transcode of this VodSampleData.
+        r"""Sets the transcode of this VodSampleData.
 
         转码时长。  单位：分钟。
 

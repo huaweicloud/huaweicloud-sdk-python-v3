@@ -27,7 +27,7 @@ class ChangeInstanceOrderRequest:
     }
 
     def __init__(self, server_id=None, instance_key=None):
-        """ChangeInstanceOrderRequest
+        r"""ChangeInstanceOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ChangeInstanceOrderRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ChangeInstanceOrderRequest.
+        r"""Gets the server_id of this ChangeInstanceOrderRequest.
 
         云堡垒机实例ID。
 
@@ -59,7 +59,7 @@ class ChangeInstanceOrderRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ChangeInstanceOrderRequest.
+        r"""Sets the server_id of this ChangeInstanceOrderRequest.
 
         云堡垒机实例ID。
 
@@ -70,7 +70,7 @@ class ChangeInstanceOrderRequest:
 
     @property
     def instance_key(self):
-        """Gets the instance_key of this ChangeInstanceOrderRequest.
+        r"""Gets the instance_key of this ChangeInstanceOrderRequest.
 
         云堡垒机实例Key。
 
@@ -81,7 +81,7 @@ class ChangeInstanceOrderRequest:
 
     @instance_key.setter
     def instance_key(self, instance_key):
-        """Sets the instance_key of this ChangeInstanceOrderRequest.
+        r"""Sets the instance_key of this ChangeInstanceOrderRequest.
 
         云堡垒机实例Key。
 

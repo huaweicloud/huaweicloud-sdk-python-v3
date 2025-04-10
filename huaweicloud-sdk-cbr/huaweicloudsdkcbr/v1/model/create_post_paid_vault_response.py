@@ -32,7 +32,7 @@ class CreatePostPaidVaultResponse(SdkResponse):
     }
 
     def __init__(self, orders=None, ret_code=None, err_text=None, error_code=None):
-        """CreatePostPaidVaultResponse
+        r"""CreatePostPaidVaultResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreatePostPaidVaultResponse(SdkResponse):
 
     @property
     def orders(self):
-        """Gets the orders of this CreatePostPaidVaultResponse.
+        r"""Gets the orders of this CreatePostPaidVaultResponse.
 
         订单详情
 
@@ -76,7 +76,7 @@ class CreatePostPaidVaultResponse(SdkResponse):
 
     @orders.setter
     def orders(self, orders):
-        """Sets the orders of this CreatePostPaidVaultResponse.
+        r"""Sets the orders of this CreatePostPaidVaultResponse.
 
         订单详情
 
@@ -87,7 +87,7 @@ class CreatePostPaidVaultResponse(SdkResponse):
 
     @property
     def ret_code(self):
-        """Gets the ret_code of this CreatePostPaidVaultResponse.
+        r"""Gets the ret_code of this CreatePostPaidVaultResponse.
 
         创建结果代码 0：成功
 
@@ -98,7 +98,7 @@ class CreatePostPaidVaultResponse(SdkResponse):
 
     @ret_code.setter
     def ret_code(self, ret_code):
-        """Sets the ret_code of this CreatePostPaidVaultResponse.
+        r"""Sets the ret_code of this CreatePostPaidVaultResponse.
 
         创建结果代码 0：成功
 
@@ -109,7 +109,7 @@ class CreatePostPaidVaultResponse(SdkResponse):
 
     @property
     def err_text(self):
-        """Gets the err_text of this CreatePostPaidVaultResponse.
+        r"""Gets the err_text of this CreatePostPaidVaultResponse.
 
         创建结果信息
 
@@ -120,7 +120,7 @@ class CreatePostPaidVaultResponse(SdkResponse):
 
     @err_text.setter
     def err_text(self, err_text):
-        """Sets the err_text of this CreatePostPaidVaultResponse.
+        r"""Sets the err_text of this CreatePostPaidVaultResponse.
 
         创建结果信息
 
@@ -131,7 +131,7 @@ class CreatePostPaidVaultResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreatePostPaidVaultResponse.
+        r"""Gets the error_code of this CreatePostPaidVaultResponse.
 
         操作错误码 0：无错误
 
@@ -142,7 +142,7 @@ class CreatePostPaidVaultResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreatePostPaidVaultResponse.
+        r"""Sets the error_code of this CreatePostPaidVaultResponse.
 
         操作错误码 0：无错误
 

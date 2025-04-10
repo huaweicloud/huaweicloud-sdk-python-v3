@@ -27,7 +27,7 @@ class KeystoneUpdateMappingRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """KeystoneUpdateMappingRequest
+        r"""KeystoneUpdateMappingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class KeystoneUpdateMappingRequest:
 
     @property
     def id(self):
-        """Gets the id of this KeystoneUpdateMappingRequest.
+        r"""Gets the id of this KeystoneUpdateMappingRequest.
 
         待更新的映射ID。
 
@@ -60,7 +60,7 @@ class KeystoneUpdateMappingRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this KeystoneUpdateMappingRequest.
+        r"""Sets the id of this KeystoneUpdateMappingRequest.
 
         待更新的映射ID。
 
@@ -71,7 +71,7 @@ class KeystoneUpdateMappingRequest:
 
     @property
     def body(self):
-        """Gets the body of this KeystoneUpdateMappingRequest.
+        r"""Gets the body of this KeystoneUpdateMappingRequest.
 
         :return: The body of this KeystoneUpdateMappingRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateMappingRequestBody`
@@ -80,7 +80,7 @@ class KeystoneUpdateMappingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this KeystoneUpdateMappingRequest.
+        r"""Sets the body of this KeystoneUpdateMappingRequest.
 
         :param body: The body of this KeystoneUpdateMappingRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateMappingRequestBody`

@@ -27,7 +27,7 @@ class ChangeUsersPassword:
     }
 
     def __init__(self, password=None, old_password=None):
-        """ChangeUsersPassword
+        r"""ChangeUsersPassword
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ChangeUsersPassword:
 
     @property
     def password(self):
-        """Gets the password of this ChangeUsersPassword.
+        r"""Gets the password of this ChangeUsersPassword.
 
         新密码。
 
@@ -59,7 +59,7 @@ class ChangeUsersPassword:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this ChangeUsersPassword.
+        r"""Sets the password of this ChangeUsersPassword.
 
         新密码。
 
@@ -70,7 +70,7 @@ class ChangeUsersPassword:
 
     @property
     def old_password(self):
-        """Gets the old_password of this ChangeUsersPassword.
+        r"""Gets the old_password of this ChangeUsersPassword.
 
         旧密码。
 
@@ -81,7 +81,7 @@ class ChangeUsersPassword:
 
     @old_password.setter
     def old_password(self, old_password):
-        """Sets the old_password of this ChangeUsersPassword.
+        r"""Sets the old_password of this ChangeUsersPassword.
 
         旧密码。
 

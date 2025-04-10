@@ -25,7 +25,7 @@ class NodeItem:
     }
 
     def __init__(self, uid=None):
-        """NodeItem
+        r"""NodeItem
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NodeItem:
 
     @property
     def uid(self):
-        """Gets the uid of this NodeItem.
+        r"""Gets the uid of this NodeItem.
 
         节点ID
 
@@ -53,7 +53,7 @@ class NodeItem:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this NodeItem.
+        r"""Sets the uid of this NodeItem.
 
         节点ID
 

@@ -25,7 +25,7 @@ class CommonResponseDTOData:
     }
 
     def __init__(self, id=None):
-        """CommonResponseDTOData
+        r"""CommonResponseDTOData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CommonResponseDTOData:
 
     @property
     def id(self):
-        """Gets the id of this CommonResponseDTOData.
+        r"""Gets the id of this CommonResponseDTOData.
 
         防护对象id
 
@@ -54,7 +54,7 @@ class CommonResponseDTOData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CommonResponseDTOData.
+        r"""Sets the id of this CommonResponseDTOData.
 
         防护对象id
 

@@ -43,7 +43,7 @@ class ListResolveTaskResult:
     }
 
     def __init__(self, task_id=None, task_name=None, tpl_id=None, sms_signs=None, resolving_times=None, resolved_times=None, aim_code_type=None, domain=None, expiration_time=None, params=None):
-        """ListResolveTaskResult
+        r"""ListResolveTaskResult
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListResolveTaskResult:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListResolveTaskResult.
+        r"""Gets the task_id of this ListResolveTaskResult.
 
         任务ID。
 
@@ -117,7 +117,7 @@ class ListResolveTaskResult:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListResolveTaskResult.
+        r"""Sets the task_id of this ListResolveTaskResult.
 
         任务ID。
 
@@ -128,7 +128,7 @@ class ListResolveTaskResult:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ListResolveTaskResult.
+        r"""Gets the task_name of this ListResolveTaskResult.
 
         任务名称。
 
@@ -139,7 +139,7 @@ class ListResolveTaskResult:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ListResolveTaskResult.
+        r"""Sets the task_name of this ListResolveTaskResult.
 
         任务名称。
 
@@ -150,7 +150,7 @@ class ListResolveTaskResult:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this ListResolveTaskResult.
+        r"""Gets the tpl_id of this ListResolveTaskResult.
 
         智能信息模板ID，由9位数字组成。
 
@@ -161,7 +161,7 @@ class ListResolveTaskResult:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this ListResolveTaskResult.
+        r"""Sets the tpl_id of this ListResolveTaskResult.
 
         智能信息模板ID，由9位数字组成。
 
@@ -172,7 +172,7 @@ class ListResolveTaskResult:
 
     @property
     def sms_signs(self):
-        """Gets the sms_signs of this ListResolveTaskResult.
+        r"""Gets the sms_signs of this ListResolveTaskResult.
 
         短信签名列表。
 
@@ -183,7 +183,7 @@ class ListResolveTaskResult:
 
     @sms_signs.setter
     def sms_signs(self, sms_signs):
-        """Sets the sms_signs of this ListResolveTaskResult.
+        r"""Sets the sms_signs of this ListResolveTaskResult.
 
         短信签名列表。
 
@@ -194,7 +194,7 @@ class ListResolveTaskResult:
 
     @property
     def resolving_times(self):
-        """Gets the resolving_times of this ListResolveTaskResult.
+        r"""Gets the resolving_times of this ListResolveTaskResult.
 
         用户创建时提交的最大解析次数。
 
@@ -205,7 +205,7 @@ class ListResolveTaskResult:
 
     @resolving_times.setter
     def resolving_times(self, resolving_times):
-        """Sets the resolving_times of this ListResolveTaskResult.
+        r"""Sets the resolving_times of this ListResolveTaskResult.
 
         用户创建时提交的最大解析次数。
 
@@ -216,7 +216,7 @@ class ListResolveTaskResult:
 
     @property
     def resolved_times(self):
-        """Gets the resolved_times of this ListResolveTaskResult.
+        r"""Gets the resolved_times of this ListResolveTaskResult.
 
         实际已解析数量统计。 
 
@@ -227,7 +227,7 @@ class ListResolveTaskResult:
 
     @resolved_times.setter
     def resolved_times(self, resolved_times):
-        """Sets the resolved_times of this ListResolveTaskResult.
+        r"""Sets the resolved_times of this ListResolveTaskResult.
 
         实际已解析数量统计。 
 
@@ -238,7 +238,7 @@ class ListResolveTaskResult:
 
     @property
     def aim_code_type(self):
-        """Gets the aim_code_type of this ListResolveTaskResult.
+        r"""Gets the aim_code_type of this ListResolveTaskResult.
 
         智能信息编码类型。 - group：群发 - individual：个性化 
 
@@ -249,7 +249,7 @@ class ListResolveTaskResult:
 
     @aim_code_type.setter
     def aim_code_type(self, aim_code_type):
-        """Sets the aim_code_type of this ListResolveTaskResult.
+        r"""Sets the aim_code_type of this ListResolveTaskResult.
 
         智能信息编码类型。 - group：群发 - individual：个性化 
 
@@ -260,7 +260,7 @@ class ListResolveTaskResult:
 
     @property
     def domain(self):
-        """Gets the domain of this ListResolveTaskResult.
+        r"""Gets the domain of this ListResolveTaskResult.
 
         自定义短链域名，由大小写字母和数字组成的二级域名。
 
@@ -271,7 +271,7 @@ class ListResolveTaskResult:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListResolveTaskResult.
+        r"""Sets the domain of this ListResolveTaskResult.
 
         自定义短链域名，由大小写字母和数字组成的二级域名。
 
@@ -282,7 +282,7 @@ class ListResolveTaskResult:
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this ListResolveTaskResult.
+        r"""Gets the expiration_time of this ListResolveTaskResult.
 
         失效时间（天）。
 
@@ -293,7 +293,7 @@ class ListResolveTaskResult:
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this ListResolveTaskResult.
+        r"""Sets the expiration_time of this ListResolveTaskResult.
 
         失效时间（天）。
 
@@ -304,7 +304,7 @@ class ListResolveTaskResult:
 
     @property
     def params(self):
-        """Gets the params of this ListResolveTaskResult.
+        r"""Gets the params of this ListResolveTaskResult.
 
         短链列表。该列表中只会有一条短链记录，如果一个任务中生成多个短链，则需要客户端基于任务ID（task_id）自己去合并。  > 建议使用查询解析明细接口查询此字段信息，未来版本有计划移除该字段。 
 
@@ -315,7 +315,7 @@ class ListResolveTaskResult:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ListResolveTaskResult.
+        r"""Sets the params of this ListResolveTaskResult.
 
         短链列表。该列表中只会有一条短链记录，如果一个任务中生成多个短链，则需要客户端基于任务ID（task_id）自己去合并。  > 建议使用查询解析明细接口查询此字段信息，未来版本有计划移除该字段。 
 

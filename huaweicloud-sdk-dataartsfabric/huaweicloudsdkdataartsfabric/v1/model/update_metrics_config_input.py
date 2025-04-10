@@ -25,7 +25,7 @@ class UpdateMetricsConfigInput:
     }
 
     def __init__(self, enable=None):
-        """UpdateMetricsConfigInput
+        r"""UpdateMetricsConfigInput
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateMetricsConfigInput:
 
     @property
     def enable(self):
-        """Gets the enable of this UpdateMetricsConfigInput.
+        r"""Gets the enable of this UpdateMetricsConfigInput.
 
         是否开启AOM监控采集。
 
@@ -53,7 +53,7 @@ class UpdateMetricsConfigInput:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this UpdateMetricsConfigInput.
+        r"""Sets the enable of this UpdateMetricsConfigInput.
 
         是否开启AOM监控采集。
 

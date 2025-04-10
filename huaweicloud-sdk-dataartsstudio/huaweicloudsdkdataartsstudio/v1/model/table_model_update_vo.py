@@ -171,7 +171,7 @@ class TableModelUpdateVO:
     }
 
     def __init__(self, id=None, model_id=None, parent_table_id=None, parent_table_name=None, parent_table_code=None, model=None, data_format=None, obs_bucket=None, obs_location=None, configs=None, table_type=None, owner=None, tb_name=None, dw_id=None, db_name=None, queue_name=None, schema=None, extend_info=None, tb_guid=None, tb_id=None, logic_tb_name=None, logic_tb_guid=None, description=None, status=None, logic_tb_id=None, biz_catalog_id=None, catalog_path=None, create_by=None, update_by=None, create_time=None, update_time=None, tags=None, approval_info=None, new_biz=None, attributes=None, mappings=None, relations=None, dw_type=None, dw_name=None, l1=None, l2=None, l3=None, l1_id=None, l2_id=None, l3_id=None, partition_conf=None, dlf_task_id=None, use_recently_partition=None, reversed=None, dirty_out_switch=None, dirty_out_database=None, dirty_out_prefix=None, dirty_out_suffix=None, quality_owner=None, quality_id=None, distribute=None, distribute_column=None, is_partition=None, physical_table=None, dev_physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, summary_status=None, alias=None, self_defined_fields=None, dev_version=None, prod_version=None, dev_version_name=None, prod_version_name=None, env_type=None, has_related_physical_table=None, has_related_logic_table=None):
-        """TableModelUpdateVO
+        r"""TableModelUpdateVO
 
         The model defined in huaweicloud sdk
 
@@ -547,7 +547,7 @@ class TableModelUpdateVO:
 
     @property
     def id(self):
-        """Gets the id of this TableModelUpdateVO.
+        r"""Gets the id of this TableModelUpdateVO.
 
         编码，ID字符串。
 
@@ -558,7 +558,7 @@ class TableModelUpdateVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TableModelUpdateVO.
+        r"""Sets the id of this TableModelUpdateVO.
 
         编码，ID字符串。
 
@@ -569,7 +569,7 @@ class TableModelUpdateVO:
 
     @property
     def model_id(self):
-        """Gets the model_id of this TableModelUpdateVO.
+        r"""Gets the model_id of this TableModelUpdateVO.
 
         所属关系建模的模型ID，ID字符串。
 
@@ -580,7 +580,7 @@ class TableModelUpdateVO:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this TableModelUpdateVO.
+        r"""Sets the model_id of this TableModelUpdateVO.
 
         所属关系建模的模型ID，ID字符串。
 
@@ -591,7 +591,7 @@ class TableModelUpdateVO:
 
     @property
     def parent_table_id(self):
-        """Gets the parent_table_id of this TableModelUpdateVO.
+        r"""Gets the parent_table_id of this TableModelUpdateVO.
 
         父表ID，ID字符串。
 
@@ -602,7 +602,7 @@ class TableModelUpdateVO:
 
     @parent_table_id.setter
     def parent_table_id(self, parent_table_id):
-        """Sets the parent_table_id of this TableModelUpdateVO.
+        r"""Sets the parent_table_id of this TableModelUpdateVO.
 
         父表ID，ID字符串。
 
@@ -613,7 +613,7 @@ class TableModelUpdateVO:
 
     @property
     def parent_table_name(self):
-        """Gets the parent_table_name of this TableModelUpdateVO.
+        r"""Gets the parent_table_name of this TableModelUpdateVO.
 
         父表名称，只读。
 
@@ -624,7 +624,7 @@ class TableModelUpdateVO:
 
     @parent_table_name.setter
     def parent_table_name(self, parent_table_name):
-        """Sets the parent_table_name of this TableModelUpdateVO.
+        r"""Sets the parent_table_name of this TableModelUpdateVO.
 
         父表名称，只读。
 
@@ -635,7 +635,7 @@ class TableModelUpdateVO:
 
     @property
     def parent_table_code(self):
-        """Gets the parent_table_code of this TableModelUpdateVO.
+        r"""Gets the parent_table_code of this TableModelUpdateVO.
 
         父表编码，只读。
 
@@ -646,7 +646,7 @@ class TableModelUpdateVO:
 
     @parent_table_code.setter
     def parent_table_code(self, parent_table_code):
-        """Sets the parent_table_code of this TableModelUpdateVO.
+        r"""Sets the parent_table_code of this TableModelUpdateVO.
 
         父表编码，只读。
 
@@ -657,7 +657,7 @@ class TableModelUpdateVO:
 
     @property
     def model(self):
-        """Gets the model of this TableModelUpdateVO.
+        r"""Gets the model of this TableModelUpdateVO.
 
         :return: The model of this TableModelUpdateVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
@@ -666,7 +666,7 @@ class TableModelUpdateVO:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this TableModelUpdateVO.
+        r"""Sets the model of this TableModelUpdateVO.
 
         :param model: The model of this TableModelUpdateVO.
         :type model: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
@@ -675,7 +675,7 @@ class TableModelUpdateVO:
 
     @property
     def data_format(self):
-        """Gets the data_format of this TableModelUpdateVO.
+        r"""Gets the data_format of this TableModelUpdateVO.
 
         数据格式。
 
@@ -686,7 +686,7 @@ class TableModelUpdateVO:
 
     @data_format.setter
     def data_format(self, data_format):
-        """Sets the data_format of this TableModelUpdateVO.
+        r"""Sets the data_format of this TableModelUpdateVO.
 
         数据格式。
 
@@ -697,7 +697,7 @@ class TableModelUpdateVO:
 
     @property
     def obs_bucket(self):
-        """Gets the obs_bucket of this TableModelUpdateVO.
+        r"""Gets the obs_bucket of this TableModelUpdateVO.
 
         obs桶。
 
@@ -708,7 +708,7 @@ class TableModelUpdateVO:
 
     @obs_bucket.setter
     def obs_bucket(self, obs_bucket):
-        """Sets the obs_bucket of this TableModelUpdateVO.
+        r"""Sets the obs_bucket of this TableModelUpdateVO.
 
         obs桶。
 
@@ -719,7 +719,7 @@ class TableModelUpdateVO:
 
     @property
     def obs_location(self):
-        """Gets the obs_location of this TableModelUpdateVO.
+        r"""Gets the obs_location of this TableModelUpdateVO.
 
         obs路径。
 
@@ -730,7 +730,7 @@ class TableModelUpdateVO:
 
     @obs_location.setter
     def obs_location(self, obs_location):
-        """Sets the obs_location of this TableModelUpdateVO.
+        r"""Sets the obs_location of this TableModelUpdateVO.
 
         obs路径。
 
@@ -741,7 +741,7 @@ class TableModelUpdateVO:
 
     @property
     def configs(self):
-        """Gets the configs of this TableModelUpdateVO.
+        r"""Gets the configs of this TableModelUpdateVO.
 
         其他配置。
 
@@ -752,7 +752,7 @@ class TableModelUpdateVO:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this TableModelUpdateVO.
+        r"""Sets the configs of this TableModelUpdateVO.
 
         其他配置。
 
@@ -763,7 +763,7 @@ class TableModelUpdateVO:
 
     @property
     def table_type(self):
-        """Gets the table_type of this TableModelUpdateVO.
+        r"""Gets the table_type of this TableModelUpdateVO.
 
         表类型，只读。
 
@@ -774,7 +774,7 @@ class TableModelUpdateVO:
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this TableModelUpdateVO.
+        r"""Sets the table_type of this TableModelUpdateVO.
 
         表类型，只读。
 
@@ -785,7 +785,7 @@ class TableModelUpdateVO:
 
     @property
     def owner(self):
-        """Gets the owner of this TableModelUpdateVO.
+        r"""Gets the owner of this TableModelUpdateVO.
 
         责任人。
 
@@ -796,7 +796,7 @@ class TableModelUpdateVO:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TableModelUpdateVO.
+        r"""Sets the owner of this TableModelUpdateVO.
 
         责任人。
 
@@ -807,7 +807,7 @@ class TableModelUpdateVO:
 
     @property
     def tb_name(self):
-        """Gets the tb_name of this TableModelUpdateVO.
+        r"""Gets the tb_name of this TableModelUpdateVO.
 
         表名。
 
@@ -818,7 +818,7 @@ class TableModelUpdateVO:
 
     @tb_name.setter
     def tb_name(self, tb_name):
-        """Sets the tb_name of this TableModelUpdateVO.
+        r"""Sets the tb_name of this TableModelUpdateVO.
 
         表名。
 
@@ -829,7 +829,7 @@ class TableModelUpdateVO:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this TableModelUpdateVO.
+        r"""Gets the dw_id of this TableModelUpdateVO.
 
         数据连接ID。
 
@@ -840,7 +840,7 @@ class TableModelUpdateVO:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this TableModelUpdateVO.
+        r"""Sets the dw_id of this TableModelUpdateVO.
 
         数据连接ID。
 
@@ -851,7 +851,7 @@ class TableModelUpdateVO:
 
     @property
     def db_name(self):
-        """Gets the db_name of this TableModelUpdateVO.
+        r"""Gets the db_name of this TableModelUpdateVO.
 
         数据库名。
 
@@ -862,7 +862,7 @@ class TableModelUpdateVO:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this TableModelUpdateVO.
+        r"""Sets the db_name of this TableModelUpdateVO.
 
         数据库名。
 
@@ -873,7 +873,7 @@ class TableModelUpdateVO:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this TableModelUpdateVO.
+        r"""Gets the queue_name of this TableModelUpdateVO.
 
         dli数据连接执行sql所需的队列，数据连接类型为DLI时必须。
 
@@ -884,7 +884,7 @@ class TableModelUpdateVO:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this TableModelUpdateVO.
+        r"""Sets the queue_name of this TableModelUpdateVO.
 
         dli数据连接执行sql所需的队列，数据连接类型为DLI时必须。
 
@@ -895,7 +895,7 @@ class TableModelUpdateVO:
 
     @property
     def schema(self):
-        """Gets the schema of this TableModelUpdateVO.
+        r"""Gets the schema of this TableModelUpdateVO.
 
         DWS类型需要。
 
@@ -906,7 +906,7 @@ class TableModelUpdateVO:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this TableModelUpdateVO.
+        r"""Sets the schema of this TableModelUpdateVO.
 
         DWS类型需要。
 
@@ -917,7 +917,7 @@ class TableModelUpdateVO:
 
     @property
     def extend_info(self):
-        """Gets the extend_info of this TableModelUpdateVO.
+        r"""Gets the extend_info of this TableModelUpdateVO.
 
         扩展信息。
 
@@ -928,7 +928,7 @@ class TableModelUpdateVO:
 
     @extend_info.setter
     def extend_info(self, extend_info):
-        """Sets the extend_info of this TableModelUpdateVO.
+        r"""Sets the extend_info of this TableModelUpdateVO.
 
         扩展信息。
 
@@ -939,7 +939,7 @@ class TableModelUpdateVO:
 
     @property
     def tb_guid(self):
-        """Gets the tb_guid of this TableModelUpdateVO.
+        r"""Gets the tb_guid of this TableModelUpdateVO.
 
         表物化后的guid，只读。
 
@@ -950,7 +950,7 @@ class TableModelUpdateVO:
 
     @tb_guid.setter
     def tb_guid(self, tb_guid):
-        """Sets the tb_guid of this TableModelUpdateVO.
+        r"""Sets the tb_guid of this TableModelUpdateVO.
 
         表物化后的guid，只读。
 
@@ -961,7 +961,7 @@ class TableModelUpdateVO:
 
     @property
     def tb_id(self):
-        """Gets the tb_id of this TableModelUpdateVO.
+        r"""Gets the tb_id of this TableModelUpdateVO.
 
         数据表ID，只读。
 
@@ -972,7 +972,7 @@ class TableModelUpdateVO:
 
     @tb_id.setter
     def tb_id(self, tb_id):
-        """Sets the tb_id of this TableModelUpdateVO.
+        r"""Sets the tb_id of this TableModelUpdateVO.
 
         数据表ID，只读。
 
@@ -983,7 +983,7 @@ class TableModelUpdateVO:
 
     @property
     def logic_tb_name(self):
-        """Gets the logic_tb_name of this TableModelUpdateVO.
+        r"""Gets the logic_tb_name of this TableModelUpdateVO.
 
         逻辑实体名。
 
@@ -994,7 +994,7 @@ class TableModelUpdateVO:
 
     @logic_tb_name.setter
     def logic_tb_name(self, logic_tb_name):
-        """Sets the logic_tb_name of this TableModelUpdateVO.
+        r"""Sets the logic_tb_name of this TableModelUpdateVO.
 
         逻辑实体名。
 
@@ -1005,7 +1005,7 @@ class TableModelUpdateVO:
 
     @property
     def logic_tb_guid(self):
-        """Gets the logic_tb_guid of this TableModelUpdateVO.
+        r"""Gets the logic_tb_guid of this TableModelUpdateVO.
 
         逻辑实体的guid，只读。
 
@@ -1016,7 +1016,7 @@ class TableModelUpdateVO:
 
     @logic_tb_guid.setter
     def logic_tb_guid(self, logic_tb_guid):
-        """Sets the logic_tb_guid of this TableModelUpdateVO.
+        r"""Sets the logic_tb_guid of this TableModelUpdateVO.
 
         逻辑实体的guid，只读。
 
@@ -1027,7 +1027,7 @@ class TableModelUpdateVO:
 
     @property
     def description(self):
-        """Gets the description of this TableModelUpdateVO.
+        r"""Gets the description of this TableModelUpdateVO.
 
         描述。
 
@@ -1038,7 +1038,7 @@ class TableModelUpdateVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TableModelUpdateVO.
+        r"""Sets the description of this TableModelUpdateVO.
 
         描述。
 
@@ -1049,7 +1049,7 @@ class TableModelUpdateVO:
 
     @property
     def status(self):
-        """Gets the status of this TableModelUpdateVO.
+        r"""Gets the status of this TableModelUpdateVO.
 
         :return: The status of this TableModelUpdateVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -1058,7 +1058,7 @@ class TableModelUpdateVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TableModelUpdateVO.
+        r"""Sets the status of this TableModelUpdateVO.
 
         :param status: The status of this TableModelUpdateVO.
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -1067,7 +1067,7 @@ class TableModelUpdateVO:
 
     @property
     def logic_tb_id(self):
-        """Gets the logic_tb_id of this TableModelUpdateVO.
+        r"""Gets the logic_tb_id of this TableModelUpdateVO.
 
         逻辑实体的ID，ID字符串。
 
@@ -1078,7 +1078,7 @@ class TableModelUpdateVO:
 
     @logic_tb_id.setter
     def logic_tb_id(self, logic_tb_id):
-        """Sets the logic_tb_id of this TableModelUpdateVO.
+        r"""Sets the logic_tb_id of this TableModelUpdateVO.
 
         逻辑实体的ID，ID字符串。
 
@@ -1089,7 +1089,7 @@ class TableModelUpdateVO:
 
     @property
     def biz_catalog_id(self):
-        """Gets the biz_catalog_id of this TableModelUpdateVO.
+        r"""Gets the biz_catalog_id of this TableModelUpdateVO.
 
         归属的业务分类的ID，ID字符串。
 
@@ -1100,7 +1100,7 @@ class TableModelUpdateVO:
 
     @biz_catalog_id.setter
     def biz_catalog_id(self, biz_catalog_id):
-        """Sets the biz_catalog_id of this TableModelUpdateVO.
+        r"""Sets the biz_catalog_id of this TableModelUpdateVO.
 
         归属的业务分类的ID，ID字符串。
 
@@ -1111,7 +1111,7 @@ class TableModelUpdateVO:
 
     @property
     def catalog_path(self):
-        """Gets the catalog_path of this TableModelUpdateVO.
+        r"""Gets the catalog_path of this TableModelUpdateVO.
 
         归属的业务分类的路径，格式： {\"l1Id\":\"958408897973161984\",\"l2Id\":\"958408897973161985\",\"l3Id\":\"958408897973161986\"}。
 
@@ -1122,7 +1122,7 @@ class TableModelUpdateVO:
 
     @catalog_path.setter
     def catalog_path(self, catalog_path):
-        """Sets the catalog_path of this TableModelUpdateVO.
+        r"""Sets the catalog_path of this TableModelUpdateVO.
 
         归属的业务分类的路径，格式： {\"l1Id\":\"958408897973161984\",\"l2Id\":\"958408897973161985\",\"l3Id\":\"958408897973161986\"}。
 
@@ -1133,7 +1133,7 @@ class TableModelUpdateVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this TableModelUpdateVO.
+        r"""Gets the create_by of this TableModelUpdateVO.
 
         创建人，只读。
 
@@ -1144,7 +1144,7 @@ class TableModelUpdateVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this TableModelUpdateVO.
+        r"""Sets the create_by of this TableModelUpdateVO.
 
         创建人，只读。
 
@@ -1155,7 +1155,7 @@ class TableModelUpdateVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this TableModelUpdateVO.
+        r"""Gets the update_by of this TableModelUpdateVO.
 
         更新人，只读。
 
@@ -1166,7 +1166,7 @@ class TableModelUpdateVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this TableModelUpdateVO.
+        r"""Sets the update_by of this TableModelUpdateVO.
 
         更新人，只读。
 
@@ -1177,7 +1177,7 @@ class TableModelUpdateVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TableModelUpdateVO.
+        r"""Gets the create_time of this TableModelUpdateVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -1188,7 +1188,7 @@ class TableModelUpdateVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TableModelUpdateVO.
+        r"""Sets the create_time of this TableModelUpdateVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -1199,7 +1199,7 @@ class TableModelUpdateVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TableModelUpdateVO.
+        r"""Gets the update_time of this TableModelUpdateVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -1210,7 +1210,7 @@ class TableModelUpdateVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TableModelUpdateVO.
+        r"""Sets the update_time of this TableModelUpdateVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -1221,7 +1221,7 @@ class TableModelUpdateVO:
 
     @property
     def tags(self):
-        """Gets the tags of this TableModelUpdateVO.
+        r"""Gets the tags of this TableModelUpdateVO.
 
         表标签，只读。
 
@@ -1232,7 +1232,7 @@ class TableModelUpdateVO:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TableModelUpdateVO.
+        r"""Sets the tags of this TableModelUpdateVO.
 
         表标签，只读。
 
@@ -1243,7 +1243,7 @@ class TableModelUpdateVO:
 
     @property
     def approval_info(self):
-        """Gets the approval_info of this TableModelUpdateVO.
+        r"""Gets the approval_info of this TableModelUpdateVO.
 
         :return: The approval_info of this TableModelUpdateVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -1252,7 +1252,7 @@ class TableModelUpdateVO:
 
     @approval_info.setter
     def approval_info(self, approval_info):
-        """Sets the approval_info of this TableModelUpdateVO.
+        r"""Sets the approval_info of this TableModelUpdateVO.
 
         :param approval_info: The approval_info of this TableModelUpdateVO.
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -1261,7 +1261,7 @@ class TableModelUpdateVO:
 
     @property
     def new_biz(self):
-        """Gets the new_biz of this TableModelUpdateVO.
+        r"""Gets the new_biz of this TableModelUpdateVO.
 
         :return: The new_biz of this TableModelUpdateVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -1270,7 +1270,7 @@ class TableModelUpdateVO:
 
     @new_biz.setter
     def new_biz(self, new_biz):
-        """Sets the new_biz of this TableModelUpdateVO.
+        r"""Sets the new_biz of this TableModelUpdateVO.
 
         :param new_biz: The new_biz of this TableModelUpdateVO.
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -1279,7 +1279,7 @@ class TableModelUpdateVO:
 
     @property
     def attributes(self):
-        """Gets the attributes of this TableModelUpdateVO.
+        r"""Gets the attributes of this TableModelUpdateVO.
 
         表属性信息。
 
@@ -1290,7 +1290,7 @@ class TableModelUpdateVO:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this TableModelUpdateVO.
+        r"""Sets the attributes of this TableModelUpdateVO.
 
         表属性信息。
 
@@ -1301,7 +1301,7 @@ class TableModelUpdateVO:
 
     @property
     def mappings(self):
-        """Gets the mappings of this TableModelUpdateVO.
+        r"""Gets the mappings of this TableModelUpdateVO.
 
         表映射信息。
 
@@ -1312,7 +1312,7 @@ class TableModelUpdateVO:
 
     @mappings.setter
     def mappings(self, mappings):
-        """Sets the mappings of this TableModelUpdateVO.
+        r"""Sets the mappings of this TableModelUpdateVO.
 
         表映射信息。
 
@@ -1323,7 +1323,7 @@ class TableModelUpdateVO:
 
     @property
     def relations(self):
-        """Gets the relations of this TableModelUpdateVO.
+        r"""Gets the relations of this TableModelUpdateVO.
 
         关系。
 
@@ -1334,7 +1334,7 @@ class TableModelUpdateVO:
 
     @relations.setter
     def relations(self, relations):
-        """Sets the relations of this TableModelUpdateVO.
+        r"""Sets the relations of this TableModelUpdateVO.
 
         关系。
 
@@ -1345,7 +1345,7 @@ class TableModelUpdateVO:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this TableModelUpdateVO.
+        r"""Gets the dw_type of this TableModelUpdateVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -1356,7 +1356,7 @@ class TableModelUpdateVO:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this TableModelUpdateVO.
+        r"""Sets the dw_type of this TableModelUpdateVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -1367,7 +1367,7 @@ class TableModelUpdateVO:
 
     @property
     def dw_name(self):
-        """Gets the dw_name of this TableModelUpdateVO.
+        r"""Gets the dw_name of this TableModelUpdateVO.
 
         数据连接名称，只读，创建和更新时无需填写。
 
@@ -1378,7 +1378,7 @@ class TableModelUpdateVO:
 
     @dw_name.setter
     def dw_name(self, dw_name):
-        """Sets the dw_name of this TableModelUpdateVO.
+        r"""Sets the dw_name of this TableModelUpdateVO.
 
         数据连接名称，只读，创建和更新时无需填写。
 
@@ -1389,7 +1389,7 @@ class TableModelUpdateVO:
 
     @property
     def l1(self):
-        """Gets the l1 of this TableModelUpdateVO.
+        r"""Gets the l1 of this TableModelUpdateVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -1400,7 +1400,7 @@ class TableModelUpdateVO:
 
     @l1.setter
     def l1(self, l1):
-        """Sets the l1 of this TableModelUpdateVO.
+        r"""Sets the l1 of this TableModelUpdateVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -1411,7 +1411,7 @@ class TableModelUpdateVO:
 
     @property
     def l2(self):
-        """Gets the l2 of this TableModelUpdateVO.
+        r"""Gets the l2 of this TableModelUpdateVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -1422,7 +1422,7 @@ class TableModelUpdateVO:
 
     @l2.setter
     def l2(self, l2):
-        """Sets the l2 of this TableModelUpdateVO.
+        r"""Sets the l2 of this TableModelUpdateVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -1433,7 +1433,7 @@ class TableModelUpdateVO:
 
     @property
     def l3(self):
-        """Gets the l3 of this TableModelUpdateVO.
+        r"""Gets the l3 of this TableModelUpdateVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -1444,7 +1444,7 @@ class TableModelUpdateVO:
 
     @l3.setter
     def l3(self, l3):
-        """Sets the l3 of this TableModelUpdateVO.
+        r"""Sets the l3 of this TableModelUpdateVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -1455,7 +1455,7 @@ class TableModelUpdateVO:
 
     @property
     def l1_id(self):
-        """Gets the l1_id of this TableModelUpdateVO.
+        r"""Gets the l1_id of this TableModelUpdateVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -1466,7 +1466,7 @@ class TableModelUpdateVO:
 
     @l1_id.setter
     def l1_id(self, l1_id):
-        """Sets the l1_id of this TableModelUpdateVO.
+        r"""Sets the l1_id of this TableModelUpdateVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -1477,7 +1477,7 @@ class TableModelUpdateVO:
 
     @property
     def l2_id(self):
-        """Gets the l2_id of this TableModelUpdateVO.
+        r"""Gets the l2_id of this TableModelUpdateVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -1488,7 +1488,7 @@ class TableModelUpdateVO:
 
     @l2_id.setter
     def l2_id(self, l2_id):
-        """Sets the l2_id of this TableModelUpdateVO.
+        r"""Sets the l2_id of this TableModelUpdateVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -1499,7 +1499,7 @@ class TableModelUpdateVO:
 
     @property
     def l3_id(self):
-        """Gets the l3_id of this TableModelUpdateVO.
+        r"""Gets the l3_id of this TableModelUpdateVO.
 
         业务对象ID，只读，ID字符串。
 
@@ -1510,7 +1510,7 @@ class TableModelUpdateVO:
 
     @l3_id.setter
     def l3_id(self, l3_id):
-        """Sets the l3_id of this TableModelUpdateVO.
+        r"""Sets the l3_id of this TableModelUpdateVO.
 
         业务对象ID，只读，ID字符串。
 
@@ -1521,7 +1521,7 @@ class TableModelUpdateVO:
 
     @property
     def partition_conf(self):
-        """Gets the partition_conf of this TableModelUpdateVO.
+        r"""Gets the partition_conf of this TableModelUpdateVO.
 
         分区表达式
 
@@ -1532,7 +1532,7 @@ class TableModelUpdateVO:
 
     @partition_conf.setter
     def partition_conf(self, partition_conf):
-        """Sets the partition_conf of this TableModelUpdateVO.
+        r"""Sets the partition_conf of this TableModelUpdateVO.
 
         分区表达式
 
@@ -1543,7 +1543,7 @@ class TableModelUpdateVO:
 
     @property
     def dlf_task_id(self):
-        """Gets the dlf_task_id of this TableModelUpdateVO.
+        r"""Gets the dlf_task_id of this TableModelUpdateVO.
 
         DLF作业ID。
 
@@ -1554,7 +1554,7 @@ class TableModelUpdateVO:
 
     @dlf_task_id.setter
     def dlf_task_id(self, dlf_task_id):
-        """Sets the dlf_task_id of this TableModelUpdateVO.
+        r"""Sets the dlf_task_id of this TableModelUpdateVO.
 
         DLF作业ID。
 
@@ -1565,7 +1565,7 @@ class TableModelUpdateVO:
 
     @property
     def use_recently_partition(self):
-        """Gets the use_recently_partition of this TableModelUpdateVO.
+        r"""Gets the use_recently_partition of this TableModelUpdateVO.
 
         是否使用最新分区。
 
@@ -1576,7 +1576,7 @@ class TableModelUpdateVO:
 
     @use_recently_partition.setter
     def use_recently_partition(self, use_recently_partition):
-        """Sets the use_recently_partition of this TableModelUpdateVO.
+        r"""Sets the use_recently_partition of this TableModelUpdateVO.
 
         是否使用最新分区。
 
@@ -1587,7 +1587,7 @@ class TableModelUpdateVO:
 
     @property
     def reversed(self):
-        """Gets the reversed of this TableModelUpdateVO.
+        r"""Gets the reversed of this TableModelUpdateVO.
 
         是否是逆向的。
 
@@ -1598,7 +1598,7 @@ class TableModelUpdateVO:
 
     @reversed.setter
     def reversed(self, reversed):
-        """Sets the reversed of this TableModelUpdateVO.
+        r"""Sets the reversed of this TableModelUpdateVO.
 
         是否是逆向的。
 
@@ -1609,7 +1609,7 @@ class TableModelUpdateVO:
 
     @property
     def dirty_out_switch(self):
-        """Gets the dirty_out_switch of this TableModelUpdateVO.
+        r"""Gets the dirty_out_switch of this TableModelUpdateVO.
 
         异常数据输出开关。
 
@@ -1620,7 +1620,7 @@ class TableModelUpdateVO:
 
     @dirty_out_switch.setter
     def dirty_out_switch(self, dirty_out_switch):
-        """Sets the dirty_out_switch of this TableModelUpdateVO.
+        r"""Sets the dirty_out_switch of this TableModelUpdateVO.
 
         异常数据输出开关。
 
@@ -1631,7 +1631,7 @@ class TableModelUpdateVO:
 
     @property
     def dirty_out_database(self):
-        """Gets the dirty_out_database of this TableModelUpdateVO.
+        r"""Gets the dirty_out_database of this TableModelUpdateVO.
 
         异常数据输出库。
 
@@ -1642,7 +1642,7 @@ class TableModelUpdateVO:
 
     @dirty_out_database.setter
     def dirty_out_database(self, dirty_out_database):
-        """Sets the dirty_out_database of this TableModelUpdateVO.
+        r"""Sets the dirty_out_database of this TableModelUpdateVO.
 
         异常数据输出库。
 
@@ -1653,7 +1653,7 @@ class TableModelUpdateVO:
 
     @property
     def dirty_out_prefix(self):
-        """Gets the dirty_out_prefix of this TableModelUpdateVO.
+        r"""Gets the dirty_out_prefix of this TableModelUpdateVO.
 
         异常表前缀。
 
@@ -1664,7 +1664,7 @@ class TableModelUpdateVO:
 
     @dirty_out_prefix.setter
     def dirty_out_prefix(self, dirty_out_prefix):
-        """Sets the dirty_out_prefix of this TableModelUpdateVO.
+        r"""Sets the dirty_out_prefix of this TableModelUpdateVO.
 
         异常表前缀。
 
@@ -1675,7 +1675,7 @@ class TableModelUpdateVO:
 
     @property
     def dirty_out_suffix(self):
-        """Gets the dirty_out_suffix of this TableModelUpdateVO.
+        r"""Gets the dirty_out_suffix of this TableModelUpdateVO.
 
         异常表后缀。
 
@@ -1686,7 +1686,7 @@ class TableModelUpdateVO:
 
     @dirty_out_suffix.setter
     def dirty_out_suffix(self, dirty_out_suffix):
-        """Sets the dirty_out_suffix of this TableModelUpdateVO.
+        r"""Sets the dirty_out_suffix of this TableModelUpdateVO.
 
         异常表后缀。
 
@@ -1697,7 +1697,7 @@ class TableModelUpdateVO:
 
     @property
     def quality_owner(self):
-        """Gets the quality_owner of this TableModelUpdateVO.
+        r"""Gets the quality_owner of this TableModelUpdateVO.
 
         质量责任人。
 
@@ -1708,7 +1708,7 @@ class TableModelUpdateVO:
 
     @quality_owner.setter
     def quality_owner(self, quality_owner):
-        """Sets the quality_owner of this TableModelUpdateVO.
+        r"""Sets the quality_owner of this TableModelUpdateVO.
 
         质量责任人。
 
@@ -1719,7 +1719,7 @@ class TableModelUpdateVO:
 
     @property
     def quality_id(self):
-        """Gets the quality_id of this TableModelUpdateVO.
+        r"""Gets the quality_id of this TableModelUpdateVO.
 
         质量ID，ID字符串。
 
@@ -1730,7 +1730,7 @@ class TableModelUpdateVO:
 
     @quality_id.setter
     def quality_id(self, quality_id):
-        """Sets the quality_id of this TableModelUpdateVO.
+        r"""Sets the quality_id of this TableModelUpdateVO.
 
         质量ID，ID字符串。
 
@@ -1741,7 +1741,7 @@ class TableModelUpdateVO:
 
     @property
     def distribute(self):
-        """Gets the distribute of this TableModelUpdateVO.
+        r"""Gets the distribute of this TableModelUpdateVO.
 
         DISTRIBUTE BY [HASH(column)|REPLICATION]。 枚举值：   - HASH: 对指定的列进行Hash，通过映射，把数据分布到指定DN   - REPLICATION: 表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据 
 
@@ -1752,7 +1752,7 @@ class TableModelUpdateVO:
 
     @distribute.setter
     def distribute(self, distribute):
-        """Sets the distribute of this TableModelUpdateVO.
+        r"""Sets the distribute of this TableModelUpdateVO.
 
         DISTRIBUTE BY [HASH(column)|REPLICATION]。 枚举值：   - HASH: 对指定的列进行Hash，通过映射，把数据分布到指定DN   - REPLICATION: 表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据 
 
@@ -1763,7 +1763,7 @@ class TableModelUpdateVO:
 
     @property
     def distribute_column(self):
-        """Gets the distribute_column of this TableModelUpdateVO.
+        r"""Gets the distribute_column of this TableModelUpdateVO.
 
         DISTRIBUTE BY HASH column.
 
@@ -1774,7 +1774,7 @@ class TableModelUpdateVO:
 
     @distribute_column.setter
     def distribute_column(self, distribute_column):
-        """Sets the distribute_column of this TableModelUpdateVO.
+        r"""Sets the distribute_column of this TableModelUpdateVO.
 
         DISTRIBUTE BY HASH column.
 
@@ -1785,7 +1785,7 @@ class TableModelUpdateVO:
 
     @property
     def is_partition(self):
-        """Gets the is_partition of this TableModelUpdateVO.
+        r"""Gets the is_partition of this TableModelUpdateVO.
 
         是否分区表，只读。
 
@@ -1796,7 +1796,7 @@ class TableModelUpdateVO:
 
     @is_partition.setter
     def is_partition(self, is_partition):
-        """Sets the is_partition of this TableModelUpdateVO.
+        r"""Sets the is_partition of this TableModelUpdateVO.
 
         是否分区表，只读。
 
@@ -1807,7 +1807,7 @@ class TableModelUpdateVO:
 
     @property
     def physical_table(self):
-        """Gets the physical_table of this TableModelUpdateVO.
+        r"""Gets the physical_table of this TableModelUpdateVO.
 
         :return: The physical_table of this TableModelUpdateVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1816,7 +1816,7 @@ class TableModelUpdateVO:
 
     @physical_table.setter
     def physical_table(self, physical_table):
-        """Sets the physical_table of this TableModelUpdateVO.
+        r"""Sets the physical_table of this TableModelUpdateVO.
 
         :param physical_table: The physical_table of this TableModelUpdateVO.
         :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1825,7 +1825,7 @@ class TableModelUpdateVO:
 
     @property
     def dev_physical_table(self):
-        """Gets the dev_physical_table of this TableModelUpdateVO.
+        r"""Gets the dev_physical_table of this TableModelUpdateVO.
 
         :return: The dev_physical_table of this TableModelUpdateVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1834,7 +1834,7 @@ class TableModelUpdateVO:
 
     @dev_physical_table.setter
     def dev_physical_table(self, dev_physical_table):
-        """Sets the dev_physical_table of this TableModelUpdateVO.
+        r"""Sets the dev_physical_table of this TableModelUpdateVO.
 
         :param dev_physical_table: The dev_physical_table of this TableModelUpdateVO.
         :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1843,7 +1843,7 @@ class TableModelUpdateVO:
 
     @property
     def technical_asset(self):
-        """Gets the technical_asset of this TableModelUpdateVO.
+        r"""Gets the technical_asset of this TableModelUpdateVO.
 
         :return: The technical_asset of this TableModelUpdateVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1852,7 +1852,7 @@ class TableModelUpdateVO:
 
     @technical_asset.setter
     def technical_asset(self, technical_asset):
-        """Sets the technical_asset of this TableModelUpdateVO.
+        r"""Sets the technical_asset of this TableModelUpdateVO.
 
         :param technical_asset: The technical_asset of this TableModelUpdateVO.
         :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1861,7 +1861,7 @@ class TableModelUpdateVO:
 
     @property
     def business_asset(self):
-        """Gets the business_asset of this TableModelUpdateVO.
+        r"""Gets the business_asset of this TableModelUpdateVO.
 
         :return: The business_asset of this TableModelUpdateVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1870,7 +1870,7 @@ class TableModelUpdateVO:
 
     @business_asset.setter
     def business_asset(self, business_asset):
-        """Sets the business_asset of this TableModelUpdateVO.
+        r"""Sets the business_asset of this TableModelUpdateVO.
 
         :param business_asset: The business_asset of this TableModelUpdateVO.
         :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1879,7 +1879,7 @@ class TableModelUpdateVO:
 
     @property
     def meta_data_link(self):
-        """Gets the meta_data_link of this TableModelUpdateVO.
+        r"""Gets the meta_data_link of this TableModelUpdateVO.
 
         :return: The meta_data_link of this TableModelUpdateVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1888,7 +1888,7 @@ class TableModelUpdateVO:
 
     @meta_data_link.setter
     def meta_data_link(self, meta_data_link):
-        """Sets the meta_data_link of this TableModelUpdateVO.
+        r"""Sets the meta_data_link of this TableModelUpdateVO.
 
         :param meta_data_link: The meta_data_link of this TableModelUpdateVO.
         :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1897,7 +1897,7 @@ class TableModelUpdateVO:
 
     @property
     def data_quality(self):
-        """Gets the data_quality of this TableModelUpdateVO.
+        r"""Gets the data_quality of this TableModelUpdateVO.
 
         :return: The data_quality of this TableModelUpdateVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1906,7 +1906,7 @@ class TableModelUpdateVO:
 
     @data_quality.setter
     def data_quality(self, data_quality):
-        """Sets the data_quality of this TableModelUpdateVO.
+        r"""Sets the data_quality of this TableModelUpdateVO.
 
         :param data_quality: The data_quality of this TableModelUpdateVO.
         :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1915,7 +1915,7 @@ class TableModelUpdateVO:
 
     @property
     def summary_status(self):
-        """Gets the summary_status of this TableModelUpdateVO.
+        r"""Gets the summary_status of this TableModelUpdateVO.
 
         :return: The summary_status of this TableModelUpdateVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1924,7 +1924,7 @@ class TableModelUpdateVO:
 
     @summary_status.setter
     def summary_status(self, summary_status):
-        """Sets the summary_status of this TableModelUpdateVO.
+        r"""Sets the summary_status of this TableModelUpdateVO.
 
         :param summary_status: The summary_status of this TableModelUpdateVO.
         :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1933,7 +1933,7 @@ class TableModelUpdateVO:
 
     @property
     def alias(self):
-        """Gets the alias of this TableModelUpdateVO.
+        r"""Gets the alias of this TableModelUpdateVO.
 
         别名。
 
@@ -1944,7 +1944,7 @@ class TableModelUpdateVO:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this TableModelUpdateVO.
+        r"""Sets the alias of this TableModelUpdateVO.
 
         别名。
 
@@ -1955,7 +1955,7 @@ class TableModelUpdateVO:
 
     @property
     def self_defined_fields(self):
-        """Gets the self_defined_fields of this TableModelUpdateVO.
+        r"""Gets the self_defined_fields of this TableModelUpdateVO.
 
         自定义项。
 
@@ -1966,7 +1966,7 @@ class TableModelUpdateVO:
 
     @self_defined_fields.setter
     def self_defined_fields(self, self_defined_fields):
-        """Sets the self_defined_fields of this TableModelUpdateVO.
+        r"""Sets the self_defined_fields of this TableModelUpdateVO.
 
         自定义项。
 
@@ -1977,7 +1977,7 @@ class TableModelUpdateVO:
 
     @property
     def dev_version(self):
-        """Gets the dev_version of this TableModelUpdateVO.
+        r"""Gets the dev_version of this TableModelUpdateVO.
 
         开发环境版本，ID字符串。
 
@@ -1988,7 +1988,7 @@ class TableModelUpdateVO:
 
     @dev_version.setter
     def dev_version(self, dev_version):
-        """Sets the dev_version of this TableModelUpdateVO.
+        r"""Sets the dev_version of this TableModelUpdateVO.
 
         开发环境版本，ID字符串。
 
@@ -1999,7 +1999,7 @@ class TableModelUpdateVO:
 
     @property
     def prod_version(self):
-        """Gets the prod_version of this TableModelUpdateVO.
+        r"""Gets the prod_version of this TableModelUpdateVO.
 
         生产环境版本，ID字符串。
 
@@ -2010,7 +2010,7 @@ class TableModelUpdateVO:
 
     @prod_version.setter
     def prod_version(self, prod_version):
-        """Sets the prod_version of this TableModelUpdateVO.
+        r"""Sets the prod_version of this TableModelUpdateVO.
 
         生产环境版本，ID字符串。
 
@@ -2021,7 +2021,7 @@ class TableModelUpdateVO:
 
     @property
     def dev_version_name(self):
-        """Gets the dev_version_name of this TableModelUpdateVO.
+        r"""Gets the dev_version_name of this TableModelUpdateVO.
 
         开发环境版本名称
 
@@ -2032,7 +2032,7 @@ class TableModelUpdateVO:
 
     @dev_version_name.setter
     def dev_version_name(self, dev_version_name):
-        """Sets the dev_version_name of this TableModelUpdateVO.
+        r"""Sets the dev_version_name of this TableModelUpdateVO.
 
         开发环境版本名称
 
@@ -2043,7 +2043,7 @@ class TableModelUpdateVO:
 
     @property
     def prod_version_name(self):
-        """Gets the prod_version_name of this TableModelUpdateVO.
+        r"""Gets the prod_version_name of this TableModelUpdateVO.
 
         生产环境版本名称
 
@@ -2054,7 +2054,7 @@ class TableModelUpdateVO:
 
     @prod_version_name.setter
     def prod_version_name(self, prod_version_name):
-        """Sets the prod_version_name of this TableModelUpdateVO.
+        r"""Sets the prod_version_name of this TableModelUpdateVO.
 
         生产环境版本名称
 
@@ -2065,7 +2065,7 @@ class TableModelUpdateVO:
 
     @property
     def env_type(self):
-        """Gets the env_type of this TableModelUpdateVO.
+        r"""Gets the env_type of this TableModelUpdateVO.
 
         :return: The env_type of this TableModelUpdateVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
@@ -2074,7 +2074,7 @@ class TableModelUpdateVO:
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this TableModelUpdateVO.
+        r"""Sets the env_type of this TableModelUpdateVO.
 
         :param env_type: The env_type of this TableModelUpdateVO.
         :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
@@ -2083,7 +2083,7 @@ class TableModelUpdateVO:
 
     @property
     def has_related_physical_table(self):
-        """Gets the has_related_physical_table of this TableModelUpdateVO.
+        r"""Gets the has_related_physical_table of this TableModelUpdateVO.
 
         是否关联了物理表
 
@@ -2094,7 +2094,7 @@ class TableModelUpdateVO:
 
     @has_related_physical_table.setter
     def has_related_physical_table(self, has_related_physical_table):
-        """Sets the has_related_physical_table of this TableModelUpdateVO.
+        r"""Sets the has_related_physical_table of this TableModelUpdateVO.
 
         是否关联了物理表
 
@@ -2105,7 +2105,7 @@ class TableModelUpdateVO:
 
     @property
     def has_related_logic_table(self):
-        """Gets the has_related_logic_table of this TableModelUpdateVO.
+        r"""Gets the has_related_logic_table of this TableModelUpdateVO.
 
         是否关联了逻辑实体
 
@@ -2116,7 +2116,7 @@ class TableModelUpdateVO:
 
     @has_related_logic_table.setter
     def has_related_logic_table(self, has_related_logic_table):
-        """Sets the has_related_logic_table of this TableModelUpdateVO.
+        r"""Sets the has_related_logic_table of this TableModelUpdateVO.
 
         是否关联了逻辑实体
 

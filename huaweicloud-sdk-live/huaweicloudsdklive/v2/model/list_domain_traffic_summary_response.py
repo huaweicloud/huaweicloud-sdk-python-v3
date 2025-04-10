@@ -28,7 +28,7 @@ class ListDomainTrafficSummaryResponse(SdkResponse):
     }
 
     def __init__(self, traffic_list=None, x_request_id=None):
-        """ListDomainTrafficSummaryResponse
+        r"""ListDomainTrafficSummaryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDomainTrafficSummaryResponse(SdkResponse):
 
     @property
     def traffic_list(self):
-        """Gets the traffic_list of this ListDomainTrafficSummaryResponse.
+        r"""Gets the traffic_list of this ListDomainTrafficSummaryResponse.
 
         域名对应的流量汇总列表。
 
@@ -62,7 +62,7 @@ class ListDomainTrafficSummaryResponse(SdkResponse):
 
     @traffic_list.setter
     def traffic_list(self, traffic_list):
-        """Sets the traffic_list of this ListDomainTrafficSummaryResponse.
+        r"""Sets the traffic_list of this ListDomainTrafficSummaryResponse.
 
         域名对应的流量汇总列表。
 
@@ -73,7 +73,7 @@ class ListDomainTrafficSummaryResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListDomainTrafficSummaryResponse.
+        r"""Gets the x_request_id of this ListDomainTrafficSummaryResponse.
 
         :return: The x_request_id of this ListDomainTrafficSummaryResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListDomainTrafficSummaryResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListDomainTrafficSummaryResponse.
+        r"""Sets the x_request_id of this ListDomainTrafficSummaryResponse.
 
         :param x_request_id: The x_request_id of this ListDomainTrafficSummaryResponse.
         :type x_request_id: str

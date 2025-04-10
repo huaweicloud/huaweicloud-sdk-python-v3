@@ -33,7 +33,7 @@ class CheckRuleFixParamInfo:
     }
 
     def __init__(self, rule_param_id=None, rule_desc=None, default_value=None, range_min=None, range_max=None):
-        """CheckRuleFixParamInfo
+        r"""CheckRuleFixParamInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CheckRuleFixParamInfo:
 
     @property
     def rule_param_id(self):
-        """Gets the rule_param_id of this CheckRuleFixParamInfo.
+        r"""Gets the rule_param_id of this CheckRuleFixParamInfo.
 
         检查项参数ID
 
@@ -82,7 +82,7 @@ class CheckRuleFixParamInfo:
 
     @rule_param_id.setter
     def rule_param_id(self, rule_param_id):
-        """Sets the rule_param_id of this CheckRuleFixParamInfo.
+        r"""Sets the rule_param_id of this CheckRuleFixParamInfo.
 
         检查项参数ID
 
@@ -93,7 +93,7 @@ class CheckRuleFixParamInfo:
 
     @property
     def rule_desc(self):
-        """Gets the rule_desc of this CheckRuleFixParamInfo.
+        r"""Gets the rule_desc of this CheckRuleFixParamInfo.
 
         检查项参数描述
 
@@ -104,7 +104,7 @@ class CheckRuleFixParamInfo:
 
     @rule_desc.setter
     def rule_desc(self, rule_desc):
-        """Sets the rule_desc of this CheckRuleFixParamInfo.
+        r"""Sets the rule_desc of this CheckRuleFixParamInfo.
 
         检查项参数描述
 
@@ -115,7 +115,7 @@ class CheckRuleFixParamInfo:
 
     @property
     def default_value(self):
-        """Gets the default_value of this CheckRuleFixParamInfo.
+        r"""Gets the default_value of this CheckRuleFixParamInfo.
 
         检查项参数默认值
 
@@ -126,7 +126,7 @@ class CheckRuleFixParamInfo:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this CheckRuleFixParamInfo.
+        r"""Sets the default_value of this CheckRuleFixParamInfo.
 
         检查项参数默认值
 
@@ -137,7 +137,7 @@ class CheckRuleFixParamInfo:
 
     @property
     def range_min(self):
-        """Gets the range_min of this CheckRuleFixParamInfo.
+        r"""Gets the range_min of this CheckRuleFixParamInfo.
 
         检查项参数可取最小值
 
@@ -148,7 +148,7 @@ class CheckRuleFixParamInfo:
 
     @range_min.setter
     def range_min(self, range_min):
-        """Sets the range_min of this CheckRuleFixParamInfo.
+        r"""Sets the range_min of this CheckRuleFixParamInfo.
 
         检查项参数可取最小值
 
@@ -159,7 +159,7 @@ class CheckRuleFixParamInfo:
 
     @property
     def range_max(self):
-        """Gets the range_max of this CheckRuleFixParamInfo.
+        r"""Gets the range_max of this CheckRuleFixParamInfo.
 
         检查项参数可取最大值
 
@@ -170,7 +170,7 @@ class CheckRuleFixParamInfo:
 
     @range_max.setter
     def range_max(self, range_max):
-        """Sets the range_max of this CheckRuleFixParamInfo.
+        r"""Sets the range_max of this CheckRuleFixParamInfo.
 
         检查项参数可取最大值
 

@@ -25,7 +25,7 @@ class RegisterPortRequest:
     }
 
     def __init__(self, body=None):
-        """RegisterPortRequest
+        r"""RegisterPortRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RegisterPortRequest:
 
     @property
     def body(self):
-        """Gets the body of this RegisterPortRequest.
+        r"""Gets the body of this RegisterPortRequest.
 
         :return: The body of this RegisterPortRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.RegisterPortRequestBody`
@@ -52,7 +52,7 @@ class RegisterPortRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RegisterPortRequest.
+        r"""Sets the body of this RegisterPortRequest.
 
         :param body: The body of this RegisterPortRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.RegisterPortRequestBody`

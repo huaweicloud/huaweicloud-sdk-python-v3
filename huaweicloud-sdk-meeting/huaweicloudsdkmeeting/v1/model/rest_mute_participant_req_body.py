@@ -25,7 +25,7 @@ class RestMuteParticipantReqBody:
     }
 
     def __init__(self, is_mute=None):
-        """RestMuteParticipantReqBody
+        r"""RestMuteParticipantReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestMuteParticipantReqBody:
 
     @property
     def is_mute(self):
-        """Gets the is_mute of this RestMuteParticipantReqBody.
+        r"""Gets the is_mute of this RestMuteParticipantReqBody.
 
         - 0: 取消静音 - 1: 静音
 
@@ -53,7 +53,7 @@ class RestMuteParticipantReqBody:
 
     @is_mute.setter
     def is_mute(self, is_mute):
-        """Sets the is_mute of this RestMuteParticipantReqBody.
+        r"""Sets the is_mute of this RestMuteParticipantReqBody.
 
         - 0: 取消静音 - 1: 静音
 

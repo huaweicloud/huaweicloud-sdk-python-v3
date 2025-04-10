@@ -29,7 +29,7 @@ class UpdateConfigurationRspConfiguration:
     }
 
     def __init__(self, id=None, name=None, ignored_params=None):
-        """UpdateConfigurationRspConfiguration
+        r"""UpdateConfigurationRspConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateConfigurationRspConfiguration:
 
     @property
     def id(self):
-        """Gets the id of this UpdateConfigurationRspConfiguration.
+        r"""Gets the id of this UpdateConfigurationRspConfiguration.
 
         参数模板ID。
 
@@ -68,7 +68,7 @@ class UpdateConfigurationRspConfiguration:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateConfigurationRspConfiguration.
+        r"""Sets the id of this UpdateConfigurationRspConfiguration.
 
         参数模板ID。
 
@@ -79,7 +79,7 @@ class UpdateConfigurationRspConfiguration:
 
     @property
     def name(self):
-        """Gets the name of this UpdateConfigurationRspConfiguration.
+        r"""Gets the name of this UpdateConfigurationRspConfiguration.
 
         参数模板名称。
 
@@ -90,7 +90,7 @@ class UpdateConfigurationRspConfiguration:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateConfigurationRspConfiguration.
+        r"""Sets the name of this UpdateConfigurationRspConfiguration.
 
         参数模板名称。
 
@@ -101,7 +101,7 @@ class UpdateConfigurationRspConfiguration:
 
     @property
     def ignored_params(self):
-        """Gets the ignored_params of this UpdateConfigurationRspConfiguration.
+        r"""Gets the ignored_params of this UpdateConfigurationRspConfiguration.
 
         请求参数“values”中被忽略掉，没有生效的参数名称列表。 当参数不存在时，参数修改不会下发，并通过此参数返回所有被忽略的参数名称。
 
@@ -112,7 +112,7 @@ class UpdateConfigurationRspConfiguration:
 
     @ignored_params.setter
     def ignored_params(self, ignored_params):
-        """Sets the ignored_params of this UpdateConfigurationRspConfiguration.
+        r"""Sets the ignored_params of this UpdateConfigurationRspConfiguration.
 
         请求参数“values”中被忽略掉，没有生效的参数名称列表。 当参数不存在时，参数修改不会下发，并通过此参数返回所有被忽略的参数名称。
 

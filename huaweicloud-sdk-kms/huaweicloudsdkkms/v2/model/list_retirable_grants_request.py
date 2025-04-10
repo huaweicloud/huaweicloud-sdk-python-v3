@@ -25,7 +25,7 @@ class ListRetirableGrantsRequest:
     }
 
     def __init__(self, body=None):
-        """ListRetirableGrantsRequest
+        r"""ListRetirableGrantsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListRetirableGrantsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListRetirableGrantsRequest.
+        r"""Gets the body of this ListRetirableGrantsRequest.
 
         :return: The body of this ListRetirableGrantsRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.ListRetirableGrantsRequestBody`
@@ -52,7 +52,7 @@ class ListRetirableGrantsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListRetirableGrantsRequest.
+        r"""Sets the body of this ListRetirableGrantsRequest.
 
         :param body: The body of this ListRetirableGrantsRequest.
         :type body: :class:`huaweicloudsdkkms.v2.ListRetirableGrantsRequestBody`

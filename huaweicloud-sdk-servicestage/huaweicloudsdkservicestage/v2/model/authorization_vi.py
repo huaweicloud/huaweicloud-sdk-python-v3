@@ -43,7 +43,7 @@ class AuthorizationVI:
     }
 
     def __init__(self, name=None, repo_type=None, repo_host=None, repo_home=None, repo_user=None, avartar=None, token_type=None, create_time=None, update_time=None, status=None):
-        """AuthorizationVI
+        r"""AuthorizationVI
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class AuthorizationVI:
 
     @property
     def name(self):
-        """Gets the name of this AuthorizationVI.
+        r"""Gets the name of this AuthorizationVI.
 
         授权名称。
 
@@ -107,7 +107,7 @@ class AuthorizationVI:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AuthorizationVI.
+        r"""Sets the name of this AuthorizationVI.
 
         授权名称。
 
@@ -118,7 +118,7 @@ class AuthorizationVI:
 
     @property
     def repo_type(self):
-        """Gets the repo_type of this AuthorizationVI.
+        r"""Gets the repo_type of this AuthorizationVI.
 
         仓库类型。 取值范围：github、gitlab、gitee、bitbucket、devcloud。 
 
@@ -129,7 +129,7 @@ class AuthorizationVI:
 
     @repo_type.setter
     def repo_type(self, repo_type):
-        """Sets the repo_type of this AuthorizationVI.
+        r"""Sets the repo_type of this AuthorizationVI.
 
         仓库类型。 取值范围：github、gitlab、gitee、bitbucket、devcloud。 
 
@@ -140,7 +140,7 @@ class AuthorizationVI:
 
     @property
     def repo_host(self):
-        """Gets the repo_host of this AuthorizationVI.
+        r"""Gets the repo_host of this AuthorizationVI.
 
         仓库地址。
 
@@ -151,7 +151,7 @@ class AuthorizationVI:
 
     @repo_host.setter
     def repo_host(self, repo_host):
-        """Sets the repo_host of this AuthorizationVI.
+        r"""Sets the repo_host of this AuthorizationVI.
 
         仓库地址。
 
@@ -162,7 +162,7 @@ class AuthorizationVI:
 
     @property
     def repo_home(self):
-        """Gets the repo_home of this AuthorizationVI.
+        r"""Gets the repo_home of this AuthorizationVI.
 
         仓库主页。
 
@@ -173,7 +173,7 @@ class AuthorizationVI:
 
     @repo_home.setter
     def repo_home(self, repo_home):
-        """Sets the repo_home of this AuthorizationVI.
+        r"""Sets the repo_home of this AuthorizationVI.
 
         仓库主页。
 
@@ -184,7 +184,7 @@ class AuthorizationVI:
 
     @property
     def repo_user(self):
-        """Gets the repo_user of this AuthorizationVI.
+        r"""Gets the repo_user of this AuthorizationVI.
 
         仓库用户名。
 
@@ -195,7 +195,7 @@ class AuthorizationVI:
 
     @repo_user.setter
     def repo_user(self, repo_user):
-        """Sets the repo_user of this AuthorizationVI.
+        r"""Sets the repo_user of this AuthorizationVI.
 
         仓库用户名。
 
@@ -206,7 +206,7 @@ class AuthorizationVI:
 
     @property
     def avartar(self):
-        """Gets the avartar of this AuthorizationVI.
+        r"""Gets the avartar of this AuthorizationVI.
 
         头像。
 
@@ -217,7 +217,7 @@ class AuthorizationVI:
 
     @avartar.setter
     def avartar(self, avartar):
-        """Sets the avartar of this AuthorizationVI.
+        r"""Sets the avartar of this AuthorizationVI.
 
         头像。
 
@@ -228,7 +228,7 @@ class AuthorizationVI:
 
     @property
     def token_type(self):
-        """Gets the token_type of this AuthorizationVI.
+        r"""Gets the token_type of this AuthorizationVI.
 
         授权方式。
 
@@ -239,7 +239,7 @@ class AuthorizationVI:
 
     @token_type.setter
     def token_type(self, token_type):
-        """Sets the token_type of this AuthorizationVI.
+        r"""Sets the token_type of this AuthorizationVI.
 
         授权方式。
 
@@ -250,7 +250,7 @@ class AuthorizationVI:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AuthorizationVI.
+        r"""Gets the create_time of this AuthorizationVI.
 
         创建时间。
 
@@ -261,7 +261,7 @@ class AuthorizationVI:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AuthorizationVI.
+        r"""Sets the create_time of this AuthorizationVI.
 
         创建时间。
 
@@ -272,7 +272,7 @@ class AuthorizationVI:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AuthorizationVI.
+        r"""Gets the update_time of this AuthorizationVI.
 
         修改时间。
 
@@ -283,7 +283,7 @@ class AuthorizationVI:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AuthorizationVI.
+        r"""Sets the update_time of this AuthorizationVI.
 
         修改时间。
 
@@ -294,7 +294,7 @@ class AuthorizationVI:
 
     @property
     def status(self):
-        """Gets the status of this AuthorizationVI.
+        r"""Gets the status of this AuthorizationVI.
 
         状态。
 
@@ -305,7 +305,7 @@ class AuthorizationVI:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AuthorizationVI.
+        r"""Sets the status of this AuthorizationVI.
 
         状态。
 

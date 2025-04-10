@@ -23,7 +23,7 @@ class ListNotifySmnTopicConfigRequest:
     }
 
     def __init__(self):
-        """ListNotifySmnTopicConfigRequest
+        r"""ListNotifySmnTopicConfigRequest
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class TagValuesList:
     }
 
     def __init__(self, key=None, values=None):
-        """TagValuesList
+        r"""TagValuesList
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TagValuesList:
 
     @property
     def key(self):
-        """Gets the key of this TagValuesList.
+        r"""Gets the key of this TagValuesList.
 
         键。 最大长度128个unicode字符。key不能为空。(搜索时不对此参数做字符集校)， key不能为空或者空字符串，不能为空格，校验和使用之前先trim前后半角空格。
 
@@ -59,7 +59,7 @@ class TagValuesList:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagValuesList.
+        r"""Sets the key of this TagValuesList.
 
         键。 最大长度128个unicode字符。key不能为空。(搜索时不对此参数做字符集校)， key不能为空或者空字符串，不能为空格，校验和使用之前先trim前后半角空格。
 
@@ -70,7 +70,7 @@ class TagValuesList:
 
     @property
     def values(self):
-        """Gets the values of this TagValuesList.
+        r"""Gets the values of this TagValuesList.
 
         值列表。 每个值最大长度255个unicode字符，校验和使用之前先trim前后半角空格。 value可为空数组但不可缺省。如果values为空列表，则表示any_value（查询任意value）。 value之间为或的关系。(搜索时不对此参数做字符集校验，只做长度校验)。
 
@@ -81,7 +81,7 @@ class TagValuesList:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this TagValuesList.
+        r"""Sets the values of this TagValuesList.
 
         值列表。 每个值最大长度255个unicode字符，校验和使用之前先trim前后半角空格。 value可为空数组但不可缺省。如果values为空列表，则表示any_value（查询任意value）。 value之间为或的关系。(搜索时不对此参数做字符集校验，只做长度校验)。
 

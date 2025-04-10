@@ -28,7 +28,7 @@ class BindGlobalEipsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, global_eips=None):
-        """BindGlobalEipsResponse
+        r"""BindGlobalEipsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BindGlobalEipsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BindGlobalEipsResponse.
+        r"""Gets the request_id of this BindGlobalEipsResponse.
 
         请求ID
 
@@ -62,7 +62,7 @@ class BindGlobalEipsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BindGlobalEipsResponse.
+        r"""Sets the request_id of this BindGlobalEipsResponse.
 
         请求ID
 
@@ -73,7 +73,7 @@ class BindGlobalEipsResponse(SdkResponse):
 
     @property
     def global_eips(self):
-        """Gets the global_eips of this BindGlobalEipsResponse.
+        r"""Gets the global_eips of this BindGlobalEipsResponse.
 
         :return: The global_eips of this BindGlobalEipsResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.ListBindingGeip`
@@ -82,7 +82,7 @@ class BindGlobalEipsResponse(SdkResponse):
 
     @global_eips.setter
     def global_eips(self, global_eips):
-        """Sets the global_eips of this BindGlobalEipsResponse.
+        r"""Sets the global_eips of this BindGlobalEipsResponse.
 
         :param global_eips: The global_eips of this BindGlobalEipsResponse.
         :type global_eips: :class:`huaweicloudsdkdc.v3.ListBindingGeip`

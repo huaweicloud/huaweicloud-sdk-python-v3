@@ -26,7 +26,7 @@ class CreateWhitelistResponse(SdkResponse):
     }
 
     def __init__(self, whitelist=None):
-        """CreateWhitelistResponse
+        r"""CreateWhitelistResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateWhitelistResponse(SdkResponse):
 
     @property
     def whitelist(self):
-        """Gets the whitelist of this CreateWhitelistResponse.
+        r"""Gets the whitelist of this CreateWhitelistResponse.
 
         :return: The whitelist of this CreateWhitelistResponse.
         :rtype: :class:`huaweicloudsdkelb.v2.WhitelistResp`
@@ -53,7 +53,7 @@ class CreateWhitelistResponse(SdkResponse):
 
     @whitelist.setter
     def whitelist(self, whitelist):
-        """Sets the whitelist of this CreateWhitelistResponse.
+        r"""Sets the whitelist of this CreateWhitelistResponse.
 
         :param whitelist: The whitelist of this CreateWhitelistResponse.
         :type whitelist: :class:`huaweicloudsdkelb.v2.WhitelistResp`

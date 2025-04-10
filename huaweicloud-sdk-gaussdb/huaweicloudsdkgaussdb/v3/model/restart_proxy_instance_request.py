@@ -29,7 +29,7 @@ class RestartProxyInstanceRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, proxy_id=None):
-        """RestartProxyInstanceRequest
+        r"""RestartProxyInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RestartProxyInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RestartProxyInstanceRequest.
+        r"""Gets the x_language of this RestartProxyInstanceRequest.
 
         语言。
 
@@ -66,7 +66,7 @@ class RestartProxyInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RestartProxyInstanceRequest.
+        r"""Sets the x_language of this RestartProxyInstanceRequest.
 
         语言。
 
@@ -77,7 +77,7 @@ class RestartProxyInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RestartProxyInstanceRequest.
+        r"""Gets the instance_id of this RestartProxyInstanceRequest.
 
         实例ID。
 
@@ -88,7 +88,7 @@ class RestartProxyInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RestartProxyInstanceRequest.
+        r"""Sets the instance_id of this RestartProxyInstanceRequest.
 
         实例ID。
 
@@ -99,7 +99,7 @@ class RestartProxyInstanceRequest:
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this RestartProxyInstanceRequest.
+        r"""Gets the proxy_id of this RestartProxyInstanceRequest.
 
         数据库代理ID。
 
@@ -110,7 +110,7 @@ class RestartProxyInstanceRequest:
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this RestartProxyInstanceRequest.
+        r"""Sets the proxy_id of this RestartProxyInstanceRequest.
 
         数据库代理ID。
 

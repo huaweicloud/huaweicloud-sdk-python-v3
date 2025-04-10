@@ -29,7 +29,7 @@ class ListAppsRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None):
-        """ListAppsRequest
+        r"""ListAppsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAppsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppsRequest.
+        r"""Gets the offset of this ListAppsRequest.
 
         查询的偏移量。
 
@@ -68,7 +68,7 @@ class ListAppsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppsRequest.
+        r"""Sets the offset of this ListAppsRequest.
 
         查询的偏移量。
 
@@ -79,7 +79,7 @@ class ListAppsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppsRequest.
+        r"""Gets the limit of this ListAppsRequest.
 
         单次查询的大小[1-100]。
 
@@ -90,7 +90,7 @@ class ListAppsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppsRequest.
+        r"""Sets the limit of this ListAppsRequest.
 
         单次查询的大小[1-100]。
 
@@ -101,7 +101,7 @@ class ListAppsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAppsRequest.
+        r"""Gets the name of this ListAppsRequest.
 
         应用名称。
 
@@ -112,7 +112,7 @@ class ListAppsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAppsRequest.
+        r"""Sets the name of this ListAppsRequest.
 
         应用名称。
 

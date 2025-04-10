@@ -26,7 +26,7 @@ class ListTimeLineTrafficStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """ListTimeLineTrafficStatisticsResponse
+        r"""ListTimeLineTrafficStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTimeLineTrafficStatisticsResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ListTimeLineTrafficStatisticsResponse.
+        r"""Gets the results of this ListTimeLineTrafficStatisticsResponse.
 
         响应结果
 
@@ -55,7 +55,7 @@ class ListTimeLineTrafficStatisticsResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ListTimeLineTrafficStatisticsResponse.
+        r"""Sets the results of this ListTimeLineTrafficStatisticsResponse.
 
         响应结果
 

@@ -30,7 +30,7 @@ class ShowAssetMetaResponse(SdkResponse):
     }
 
     def __init__(self, asset_info_array=None, is_truncated=None, total=None):
-        """ShowAssetMetaResponse
+        r"""ShowAssetMetaResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowAssetMetaResponse(SdkResponse):
 
     @property
     def asset_info_array(self):
-        """Gets the asset_info_array of this ShowAssetMetaResponse.
+        r"""Gets the asset_info_array of this ShowAssetMetaResponse.
 
         媒资信息列表。
 
@@ -69,7 +69,7 @@ class ShowAssetMetaResponse(SdkResponse):
 
     @asset_info_array.setter
     def asset_info_array(self, asset_info_array):
-        """Sets the asset_info_array of this ShowAssetMetaResponse.
+        r"""Sets the asset_info_array of this ShowAssetMetaResponse.
 
         媒资信息列表。
 
@@ -80,7 +80,7 @@ class ShowAssetMetaResponse(SdkResponse):
 
     @property
     def is_truncated(self):
-        """Gets the is_truncated of this ShowAssetMetaResponse.
+        r"""Gets the is_truncated of this ShowAssetMetaResponse.
 
         列表是否被截断。  取值如下： - 1：表示本次查询未返回全部结果。 - 0：表示本次查询已经返回了全部结果。
 
@@ -91,7 +91,7 @@ class ShowAssetMetaResponse(SdkResponse):
 
     @is_truncated.setter
     def is_truncated(self, is_truncated):
-        """Sets the is_truncated of this ShowAssetMetaResponse.
+        r"""Sets the is_truncated of this ShowAssetMetaResponse.
 
         列表是否被截断。  取值如下： - 1：表示本次查询未返回全部结果。 - 0：表示本次查询已经返回了全部结果。
 
@@ -102,7 +102,7 @@ class ShowAssetMetaResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowAssetMetaResponse.
+        r"""Gets the total of this ShowAssetMetaResponse.
 
         查询媒资总数。  > 暂只能统计2万个媒资，若您需要查询具体的媒资总数，请[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=462902cc39a04ab3a429df872021f970)申请。
 
@@ -113,7 +113,7 @@ class ShowAssetMetaResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowAssetMetaResponse.
+        r"""Sets the total of this ShowAssetMetaResponse.
 
         查询媒资总数。  > 暂只能统计2万个媒资，若您需要查询具体的媒资总数，请[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=462902cc39a04ab3a429df872021f970)申请。
 

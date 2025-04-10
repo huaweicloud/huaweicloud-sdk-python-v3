@@ -26,7 +26,7 @@ class DeleteOtaPackageResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteOtaPackageResponse
+        r"""DeleteOtaPackageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteOtaPackageResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteOtaPackageResponse.
+        r"""Gets the body of this DeleteOtaPackageResponse.
 
         :return: The body of this DeleteOtaPackageResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteOtaPackageResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteOtaPackageResponse.
+        r"""Sets the body of this DeleteOtaPackageResponse.
 
         :param body: The body of this DeleteOtaPackageResponse.
         :type body: str

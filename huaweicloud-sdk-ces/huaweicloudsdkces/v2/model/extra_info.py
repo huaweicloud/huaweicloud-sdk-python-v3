@@ -31,7 +31,7 @@ class ExtraInfo:
     }
 
     def __init__(self, origin_metric_name=None, metric_prefix=None, metric_type=None, custom_proc_name=None):
-        """ExtraInfo
+        r"""ExtraInfo
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ExtraInfo:
 
     @property
     def origin_metric_name(self):
-        """Gets the origin_metric_name of this ExtraInfo.
+        r"""Gets the origin_metric_name of this ExtraInfo.
 
         指标名称
 
@@ -74,7 +74,7 @@ class ExtraInfo:
 
     @origin_metric_name.setter
     def origin_metric_name(self, origin_metric_name):
-        """Sets the origin_metric_name of this ExtraInfo.
+        r"""Sets the origin_metric_name of this ExtraInfo.
 
         指标名称
 
@@ -85,7 +85,7 @@ class ExtraInfo:
 
     @property
     def metric_prefix(self):
-        """Gets the metric_prefix of this ExtraInfo.
+        r"""Gets the metric_prefix of this ExtraInfo.
 
         指标名称前缀
 
@@ -96,7 +96,7 @@ class ExtraInfo:
 
     @metric_prefix.setter
     def metric_prefix(self, metric_prefix):
-        """Sets the metric_prefix of this ExtraInfo.
+        r"""Sets the metric_prefix of this ExtraInfo.
 
         指标名称前缀
 
@@ -107,7 +107,7 @@ class ExtraInfo:
 
     @property
     def metric_type(self):
-        """Gets the metric_type of this ExtraInfo.
+        r"""Gets the metric_type of this ExtraInfo.
 
         指标类型
 
@@ -118,7 +118,7 @@ class ExtraInfo:
 
     @metric_type.setter
     def metric_type(self, metric_type):
-        """Sets the metric_type of this ExtraInfo.
+        r"""Sets the metric_type of this ExtraInfo.
 
         指标类型
 
@@ -129,7 +129,7 @@ class ExtraInfo:
 
     @property
     def custom_proc_name(self):
-        """Gets the custom_proc_name of this ExtraInfo.
+        r"""Gets the custom_proc_name of this ExtraInfo.
 
         自定义进程名称
 
@@ -140,7 +140,7 @@ class ExtraInfo:
 
     @custom_proc_name.setter
     def custom_proc_name(self, custom_proc_name):
-        """Sets the custom_proc_name of this ExtraInfo.
+        r"""Sets the custom_proc_name of this ExtraInfo.
 
         自定义进程名称
 

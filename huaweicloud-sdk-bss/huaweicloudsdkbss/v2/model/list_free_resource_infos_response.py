@@ -28,7 +28,7 @@ class ListFreeResourceInfosResponse(SdkResponse):
     }
 
     def __init__(self, free_resource_packages=None, total_count=None):
-        """ListFreeResourceInfosResponse
+        r"""ListFreeResourceInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFreeResourceInfosResponse(SdkResponse):
 
     @property
     def free_resource_packages(self):
-        """Gets the free_resource_packages of this ListFreeResourceInfosResponse.
+        r"""Gets the free_resource_packages of this ListFreeResourceInfosResponse.
 
         资源包信息列表，具体参见表2。
 
@@ -62,7 +62,7 @@ class ListFreeResourceInfosResponse(SdkResponse):
 
     @free_resource_packages.setter
     def free_resource_packages(self, free_resource_packages):
-        """Sets the free_resource_packages of this ListFreeResourceInfosResponse.
+        r"""Sets the free_resource_packages of this ListFreeResourceInfosResponse.
 
         资源包信息列表，具体参见表2。
 
@@ -73,7 +73,7 @@ class ListFreeResourceInfosResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListFreeResourceInfosResponse.
+        r"""Gets the total_count of this ListFreeResourceInfosResponse.
 
         总条数。
 
@@ -84,7 +84,7 @@ class ListFreeResourceInfosResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListFreeResourceInfosResponse.
+        r"""Sets the total_count of this ListFreeResourceInfosResponse.
 
         总条数。
 

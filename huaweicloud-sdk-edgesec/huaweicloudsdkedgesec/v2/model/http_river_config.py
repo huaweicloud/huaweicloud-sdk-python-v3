@@ -33,7 +33,7 @@ class HttpRiverConfig:
     }
 
     def __init__(self, site_id=None, site_name=None, connect_timeout=None, read_timeout=None, send_timeout=None):
-        """HttpRiverConfig
+        r"""HttpRiverConfig
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class HttpRiverConfig:
 
     @property
     def site_id(self):
-        """Gets the site_id of this HttpRiverConfig.
+        r"""Gets the site_id of this HttpRiverConfig.
 
         瑞数站点ID
 
@@ -82,7 +82,7 @@ class HttpRiverConfig:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this HttpRiverConfig.
+        r"""Sets the site_id of this HttpRiverConfig.
 
         瑞数站点ID
 
@@ -93,7 +93,7 @@ class HttpRiverConfig:
 
     @property
     def site_name(self):
-        """Gets the site_name of this HttpRiverConfig.
+        r"""Gets the site_name of this HttpRiverConfig.
 
         瑞数站点名称
 
@@ -104,7 +104,7 @@ class HttpRiverConfig:
 
     @site_name.setter
     def site_name(self, site_name):
-        """Sets the site_name of this HttpRiverConfig.
+        r"""Sets the site_name of this HttpRiverConfig.
 
         瑞数站点名称
 
@@ -115,7 +115,7 @@ class HttpRiverConfig:
 
     @property
     def connect_timeout(self):
-        """Gets the connect_timeout of this HttpRiverConfig.
+        r"""Gets the connect_timeout of this HttpRiverConfig.
 
         连接超时（毫秒）
 
@@ -126,7 +126,7 @@ class HttpRiverConfig:
 
     @connect_timeout.setter
     def connect_timeout(self, connect_timeout):
-        """Sets the connect_timeout of this HttpRiverConfig.
+        r"""Sets the connect_timeout of this HttpRiverConfig.
 
         连接超时（毫秒）
 
@@ -137,7 +137,7 @@ class HttpRiverConfig:
 
     @property
     def read_timeout(self):
-        """Gets the read_timeout of this HttpRiverConfig.
+        r"""Gets the read_timeout of this HttpRiverConfig.
 
         读超时（毫秒）
 
@@ -148,7 +148,7 @@ class HttpRiverConfig:
 
     @read_timeout.setter
     def read_timeout(self, read_timeout):
-        """Sets the read_timeout of this HttpRiverConfig.
+        r"""Sets the read_timeout of this HttpRiverConfig.
 
         读超时（毫秒）
 
@@ -159,7 +159,7 @@ class HttpRiverConfig:
 
     @property
     def send_timeout(self):
-        """Gets the send_timeout of this HttpRiverConfig.
+        r"""Gets the send_timeout of this HttpRiverConfig.
 
         写超时（毫秒）
 
@@ -170,7 +170,7 @@ class HttpRiverConfig:
 
     @send_timeout.setter
     def send_timeout(self, send_timeout):
-        """Sets the send_timeout of this HttpRiverConfig.
+        r"""Sets the send_timeout of this HttpRiverConfig.
 
         写超时（毫秒）
 

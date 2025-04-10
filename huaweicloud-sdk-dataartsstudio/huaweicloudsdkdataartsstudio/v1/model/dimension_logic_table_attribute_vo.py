@@ -63,7 +63,7 @@ class DimensionLogicTableAttributeVO:
     }
 
     def __init__(self, id=None, dimension_logic_table_id=None, ordinal=None, dimension_attribute_id=None, name_en=None, name_ch=None, description=None, data_type=None, domain_type=None, data_type_extend=None, is_primary_key=None, is_biz_primary=None, is_partition_key=None, not_null=None, stand_row_id=None, stand_row_name=None, quality_infos=None, alias=None, self_defined_fields=None, secrecy_levels=None):
-        """DimensionLogicTableAttributeVO
+        r"""DimensionLogicTableAttributeVO
 
         The model defined in huaweicloud sdk
 
@@ -174,7 +174,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def id(self):
-        """Gets the id of this DimensionLogicTableAttributeVO.
+        r"""Gets the id of this DimensionLogicTableAttributeVO.
 
         维度表ID，ID字符串。
 
@@ -185,7 +185,7 @@ class DimensionLogicTableAttributeVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DimensionLogicTableAttributeVO.
+        r"""Sets the id of this DimensionLogicTableAttributeVO.
 
         维度表ID，ID字符串。
 
@@ -196,7 +196,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def dimension_logic_table_id(self):
-        """Gets the dimension_logic_table_id of this DimensionLogicTableAttributeVO.
+        r"""Gets the dimension_logic_table_id of this DimensionLogicTableAttributeVO.
 
         所属维表ID。
 
@@ -207,7 +207,7 @@ class DimensionLogicTableAttributeVO:
 
     @dimension_logic_table_id.setter
     def dimension_logic_table_id(self, dimension_logic_table_id):
-        """Sets the dimension_logic_table_id of this DimensionLogicTableAttributeVO.
+        r"""Sets the dimension_logic_table_id of this DimensionLogicTableAttributeVO.
 
         所属维表ID。
 
@@ -218,7 +218,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this DimensionLogicTableAttributeVO.
+        r"""Gets the ordinal of this DimensionLogicTableAttributeVO.
 
         序号
 
@@ -229,7 +229,7 @@ class DimensionLogicTableAttributeVO:
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this DimensionLogicTableAttributeVO.
+        r"""Sets the ordinal of this DimensionLogicTableAttributeVO.
 
         序号
 
@@ -240,7 +240,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def dimension_attribute_id(self):
-        """Gets the dimension_attribute_id of this DimensionLogicTableAttributeVO.
+        r"""Gets the dimension_attribute_id of this DimensionLogicTableAttributeVO.
 
         维度属性ID，ID字符串。
 
@@ -251,7 +251,7 @@ class DimensionLogicTableAttributeVO:
 
     @dimension_attribute_id.setter
     def dimension_attribute_id(self, dimension_attribute_id):
-        """Sets the dimension_attribute_id of this DimensionLogicTableAttributeVO.
+        r"""Sets the dimension_attribute_id of this DimensionLogicTableAttributeVO.
 
         维度属性ID，ID字符串。
 
@@ -262,7 +262,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this DimensionLogicTableAttributeVO.
+        r"""Gets the name_en of this DimensionLogicTableAttributeVO.
 
         字段名，只读。
 
@@ -273,7 +273,7 @@ class DimensionLogicTableAttributeVO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this DimensionLogicTableAttributeVO.
+        r"""Sets the name_en of this DimensionLogicTableAttributeVO.
 
         字段名，只读。
 
@@ -284,7 +284,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def name_ch(self):
-        """Gets the name_ch of this DimensionLogicTableAttributeVO.
+        r"""Gets the name_ch of this DimensionLogicTableAttributeVO.
 
         业务属性，只读。
 
@@ -295,7 +295,7 @@ class DimensionLogicTableAttributeVO:
 
     @name_ch.setter
     def name_ch(self, name_ch):
-        """Sets the name_ch of this DimensionLogicTableAttributeVO.
+        r"""Sets the name_ch of this DimensionLogicTableAttributeVO.
 
         业务属性，只读。
 
@@ -306,7 +306,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def description(self):
-        """Gets the description of this DimensionLogicTableAttributeVO.
+        r"""Gets the description of this DimensionLogicTableAttributeVO.
 
         描述，只读。
 
@@ -317,7 +317,7 @@ class DimensionLogicTableAttributeVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DimensionLogicTableAttributeVO.
+        r"""Sets the description of this DimensionLogicTableAttributeVO.
 
         描述，只读。
 
@@ -328,7 +328,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def data_type(self):
-        """Gets the data_type of this DimensionLogicTableAttributeVO.
+        r"""Gets the data_type of this DimensionLogicTableAttributeVO.
 
         字段类型。
 
@@ -339,7 +339,7 @@ class DimensionLogicTableAttributeVO:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this DimensionLogicTableAttributeVO.
+        r"""Sets the data_type of this DimensionLogicTableAttributeVO.
 
         字段类型。
 
@@ -350,7 +350,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this DimensionLogicTableAttributeVO.
+        r"""Gets the domain_type of this DimensionLogicTableAttributeVO.
 
         :return: The domain_type of this DimensionLogicTableAttributeVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
@@ -359,7 +359,7 @@ class DimensionLogicTableAttributeVO:
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this DimensionLogicTableAttributeVO.
+        r"""Sets the domain_type of this DimensionLogicTableAttributeVO.
 
         :param domain_type: The domain_type of this DimensionLogicTableAttributeVO.
         :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
@@ -368,7 +368,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def data_type_extend(self):
-        """Gets the data_type_extend of this DimensionLogicTableAttributeVO.
+        r"""Gets the data_type_extend of this DimensionLogicTableAttributeVO.
 
         数据类型扩展字段。
 
@@ -379,7 +379,7 @@ class DimensionLogicTableAttributeVO:
 
     @data_type_extend.setter
     def data_type_extend(self, data_type_extend):
-        """Sets the data_type_extend of this DimensionLogicTableAttributeVO.
+        r"""Sets the data_type_extend of this DimensionLogicTableAttributeVO.
 
         数据类型扩展字段。
 
@@ -390,7 +390,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def is_primary_key(self):
-        """Gets the is_primary_key of this DimensionLogicTableAttributeVO.
+        r"""Gets the is_primary_key of this DimensionLogicTableAttributeVO.
 
         是否主键，只读。
 
@@ -401,7 +401,7 @@ class DimensionLogicTableAttributeVO:
 
     @is_primary_key.setter
     def is_primary_key(self, is_primary_key):
-        """Sets the is_primary_key of this DimensionLogicTableAttributeVO.
+        r"""Sets the is_primary_key of this DimensionLogicTableAttributeVO.
 
         是否主键，只读。
 
@@ -412,7 +412,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def is_biz_primary(self):
-        """Gets the is_biz_primary of this DimensionLogicTableAttributeVO.
+        r"""Gets the is_biz_primary of this DimensionLogicTableAttributeVO.
 
         是否业务主键。
 
@@ -423,7 +423,7 @@ class DimensionLogicTableAttributeVO:
 
     @is_biz_primary.setter
     def is_biz_primary(self, is_biz_primary):
-        """Sets the is_biz_primary of this DimensionLogicTableAttributeVO.
+        r"""Sets the is_biz_primary of this DimensionLogicTableAttributeVO.
 
         是否业务主键。
 
@@ -434,7 +434,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def is_partition_key(self):
-        """Gets the is_partition_key of this DimensionLogicTableAttributeVO.
+        r"""Gets the is_partition_key of this DimensionLogicTableAttributeVO.
 
         是否主键分区，只读。
 
@@ -445,7 +445,7 @@ class DimensionLogicTableAttributeVO:
 
     @is_partition_key.setter
     def is_partition_key(self, is_partition_key):
-        """Sets the is_partition_key of this DimensionLogicTableAttributeVO.
+        r"""Sets the is_partition_key of this DimensionLogicTableAttributeVO.
 
         是否主键分区，只读。
 
@@ -456,7 +456,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def not_null(self):
-        """Gets the not_null of this DimensionLogicTableAttributeVO.
+        r"""Gets the not_null of this DimensionLogicTableAttributeVO.
 
         是否不为空。
 
@@ -467,7 +467,7 @@ class DimensionLogicTableAttributeVO:
 
     @not_null.setter
     def not_null(self, not_null):
-        """Sets the not_null of this DimensionLogicTableAttributeVO.
+        r"""Sets the not_null of this DimensionLogicTableAttributeVO.
 
         是否不为空。
 
@@ -478,7 +478,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def stand_row_id(self):
-        """Gets the stand_row_id of this DimensionLogicTableAttributeVO.
+        r"""Gets the stand_row_id of this DimensionLogicTableAttributeVO.
 
         关联的数据标准的ID，ID字符串。
 
@@ -489,7 +489,7 @@ class DimensionLogicTableAttributeVO:
 
     @stand_row_id.setter
     def stand_row_id(self, stand_row_id):
-        """Sets the stand_row_id of this DimensionLogicTableAttributeVO.
+        r"""Sets the stand_row_id of this DimensionLogicTableAttributeVO.
 
         关联的数据标准的ID，ID字符串。
 
@@ -500,7 +500,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def stand_row_name(self):
-        """Gets the stand_row_name of this DimensionLogicTableAttributeVO.
+        r"""Gets the stand_row_name of this DimensionLogicTableAttributeVO.
 
         关联的数据标准名称，只读。
 
@@ -511,7 +511,7 @@ class DimensionLogicTableAttributeVO:
 
     @stand_row_name.setter
     def stand_row_name(self, stand_row_name):
-        """Sets the stand_row_name of this DimensionLogicTableAttributeVO.
+        r"""Sets the stand_row_name of this DimensionLogicTableAttributeVO.
 
         关联的数据标准名称，只读。
 
@@ -522,7 +522,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def quality_infos(self):
-        """Gets the quality_infos of this DimensionLogicTableAttributeVO.
+        r"""Gets the quality_infos of this DimensionLogicTableAttributeVO.
 
         质量信息，只读。
 
@@ -533,7 +533,7 @@ class DimensionLogicTableAttributeVO:
 
     @quality_infos.setter
     def quality_infos(self, quality_infos):
-        """Sets the quality_infos of this DimensionLogicTableAttributeVO.
+        r"""Sets the quality_infos of this DimensionLogicTableAttributeVO.
 
         质量信息，只读。
 
@@ -544,7 +544,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def alias(self):
-        """Gets the alias of this DimensionLogicTableAttributeVO.
+        r"""Gets the alias of this DimensionLogicTableAttributeVO.
 
         别名。
 
@@ -555,7 +555,7 @@ class DimensionLogicTableAttributeVO:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this DimensionLogicTableAttributeVO.
+        r"""Sets the alias of this DimensionLogicTableAttributeVO.
 
         别名。
 
@@ -566,7 +566,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def self_defined_fields(self):
-        """Gets the self_defined_fields of this DimensionLogicTableAttributeVO.
+        r"""Gets the self_defined_fields of this DimensionLogicTableAttributeVO.
 
         自定义项。
 
@@ -577,7 +577,7 @@ class DimensionLogicTableAttributeVO:
 
     @self_defined_fields.setter
     def self_defined_fields(self, self_defined_fields):
-        """Sets the self_defined_fields of this DimensionLogicTableAttributeVO.
+        r"""Sets the self_defined_fields of this DimensionLogicTableAttributeVO.
 
         自定义项。
 
@@ -588,7 +588,7 @@ class DimensionLogicTableAttributeVO:
 
     @property
     def secrecy_levels(self):
-        """Gets the secrecy_levels of this DimensionLogicTableAttributeVO.
+        r"""Gets the secrecy_levels of this DimensionLogicTableAttributeVO.
 
         密级
 
@@ -599,7 +599,7 @@ class DimensionLogicTableAttributeVO:
 
     @secrecy_levels.setter
     def secrecy_levels(self, secrecy_levels):
-        """Sets the secrecy_levels of this DimensionLogicTableAttributeVO.
+        r"""Sets the secrecy_levels of this DimensionLogicTableAttributeVO.
 
         密级
 

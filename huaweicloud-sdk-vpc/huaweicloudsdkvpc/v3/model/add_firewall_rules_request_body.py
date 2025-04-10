@@ -25,7 +25,7 @@ class AddFirewallRulesRequestBody:
     }
 
     def __init__(self, firewall=None):
-        """AddFirewallRulesRequestBody
+        r"""AddFirewallRulesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddFirewallRulesRequestBody:
 
     @property
     def firewall(self):
-        """Gets the firewall of this AddFirewallRulesRequestBody.
+        r"""Gets the firewall of this AddFirewallRulesRequestBody.
 
         :return: The firewall of this AddFirewallRulesRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.FirewallInsertRuleOption`
@@ -51,7 +51,7 @@ class AddFirewallRulesRequestBody:
 
     @firewall.setter
     def firewall(self, firewall):
-        """Sets the firewall of this AddFirewallRulesRequestBody.
+        r"""Sets the firewall of this AddFirewallRulesRequestBody.
 
         :param firewall: The firewall of this AddFirewallRulesRequestBody.
         :type firewall: :class:`huaweicloudsdkvpc.v3.FirewallInsertRuleOption`

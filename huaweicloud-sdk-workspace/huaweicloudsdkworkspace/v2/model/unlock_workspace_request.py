@@ -25,7 +25,7 @@ class UnlockWorkspaceRequest:
     }
 
     def __init__(self, body=None):
-        """UnlockWorkspaceRequest
+        r"""UnlockWorkspaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UnlockWorkspaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UnlockWorkspaceRequest.
+        r"""Gets the body of this UnlockWorkspaceRequest.
 
         :return: The body of this UnlockWorkspaceRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UnlockWorkspaceRequestBody`
@@ -52,7 +52,7 @@ class UnlockWorkspaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UnlockWorkspaceRequest.
+        r"""Sets the body of this UnlockWorkspaceRequest.
 
         :param body: The body of this UnlockWorkspaceRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UnlockWorkspaceRequestBody`

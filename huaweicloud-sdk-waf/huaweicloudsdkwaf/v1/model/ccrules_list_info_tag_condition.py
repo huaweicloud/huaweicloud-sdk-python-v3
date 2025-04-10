@@ -27,7 +27,7 @@ class CcrulesListInfoTagCondition:
     }
 
     def __init__(self, category=None, contents=None):
-        """CcrulesListInfoTagCondition
+        r"""CcrulesListInfoTagCondition
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CcrulesListInfoTagCondition:
 
     @property
     def category(self):
-        """Gets the category of this CcrulesListInfoTagCondition.
+        r"""Gets the category of this CcrulesListInfoTagCondition.
 
         用户标识字段，其值固定为referer
 
@@ -61,7 +61,7 @@ class CcrulesListInfoTagCondition:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CcrulesListInfoTagCondition.
+        r"""Sets the category of this CcrulesListInfoTagCondition.
 
         用户标识字段，其值固定为referer
 
@@ -72,7 +72,7 @@ class CcrulesListInfoTagCondition:
 
     @property
     def contents(self):
-        """Gets the contents of this CcrulesListInfoTagCondition.
+        r"""Gets the contents of this CcrulesListInfoTagCondition.
 
         用户标识字段内容
 
@@ -83,7 +83,7 @@ class CcrulesListInfoTagCondition:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this CcrulesListInfoTagCondition.
+        r"""Sets the contents of this CcrulesListInfoTagCondition.
 
         用户标识字段内容
 

@@ -27,7 +27,7 @@ class DeleteVrrpConfigRequest:
     }
 
     def __init__(self, ieg_id=None, virtual_router_id=None):
-        """DeleteVrrpConfigRequest
+        r"""DeleteVrrpConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteVrrpConfigRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this DeleteVrrpConfigRequest.
+        r"""Gets the ieg_id of this DeleteVrrpConfigRequest.
 
         智能企业网关ID
 
@@ -59,7 +59,7 @@ class DeleteVrrpConfigRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this DeleteVrrpConfigRequest.
+        r"""Sets the ieg_id of this DeleteVrrpConfigRequest.
 
         智能企业网关ID
 
@@ -70,7 +70,7 @@ class DeleteVrrpConfigRequest:
 
     @property
     def virtual_router_id(self):
-        """Gets the virtual_router_id of this DeleteVrrpConfigRequest.
+        r"""Gets the virtual_router_id of this DeleteVrrpConfigRequest.
 
         虚路由ID
 
@@ -81,7 +81,7 @@ class DeleteVrrpConfigRequest:
 
     @virtual_router_id.setter
     def virtual_router_id(self, virtual_router_id):
-        """Sets the virtual_router_id of this DeleteVrrpConfigRequest.
+        r"""Sets the virtual_router_id of this DeleteVrrpConfigRequest.
 
         虚路由ID
 

@@ -27,7 +27,7 @@ class CreateApiTestSuiteByRepoFileRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """CreateApiTestSuiteByRepoFileRequest
+        r"""CreateApiTestSuiteByRepoFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateApiTestSuiteByRepoFileRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateApiTestSuiteByRepoFileRequest.
+        r"""Gets the project_id of this CreateApiTestSuiteByRepoFileRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class CreateApiTestSuiteByRepoFileRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateApiTestSuiteByRepoFileRequest.
+        r"""Sets the project_id of this CreateApiTestSuiteByRepoFileRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class CreateApiTestSuiteByRepoFileRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateApiTestSuiteByRepoFileRequest.
+        r"""Gets the body of this CreateApiTestSuiteByRepoFileRequest.
 
         :return: The body of this CreateApiTestSuiteByRepoFileRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateTestSuitByRepoFileInfo`
@@ -80,7 +80,7 @@ class CreateApiTestSuiteByRepoFileRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateApiTestSuiteByRepoFileRequest.
+        r"""Sets the body of this CreateApiTestSuiteByRepoFileRequest.
 
         :param body: The body of this CreateApiTestSuiteByRepoFileRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CreateTestSuitByRepoFileInfo`

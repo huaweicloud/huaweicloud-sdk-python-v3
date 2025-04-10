@@ -27,7 +27,7 @@ class BatchDeletePublicipTagsRequest:
     }
 
     def __init__(self, publicip_id=None, body=None):
-        """BatchDeletePublicipTagsRequest
+        r"""BatchDeletePublicipTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeletePublicipTagsRequest:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this BatchDeletePublicipTagsRequest.
+        r"""Gets the publicip_id of this BatchDeletePublicipTagsRequest.
 
         资源ID
 
@@ -60,7 +60,7 @@ class BatchDeletePublicipTagsRequest:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this BatchDeletePublicipTagsRequest.
+        r"""Sets the publicip_id of this BatchDeletePublicipTagsRequest.
 
         资源ID
 
@@ -71,7 +71,7 @@ class BatchDeletePublicipTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeletePublicipTagsRequest.
+        r"""Gets the body of this BatchDeletePublicipTagsRequest.
 
         :return: The body of this BatchDeletePublicipTagsRequest.
         :rtype: :class:`huaweicloudsdkeip.v2.BatchDeletePublicipTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchDeletePublicipTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeletePublicipTagsRequest.
+        r"""Sets the body of this BatchDeletePublicipTagsRequest.
 
         :param body: The body of this BatchDeletePublicipTagsRequest.
         :type body: :class:`huaweicloudsdkeip.v2.BatchDeletePublicipTagsRequestBody`

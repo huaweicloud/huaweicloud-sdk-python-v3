@@ -29,7 +29,7 @@ class BatchAddOrDeleteTagOnClusterReq:
     }
 
     def __init__(self, action=None, tags=None, sys_tags=None):
-        """BatchAddOrDeleteTagOnClusterReq
+        r"""BatchAddOrDeleteTagOnClusterReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchAddOrDeleteTagOnClusterReq:
 
     @property
     def action(self):
-        """Gets the action of this BatchAddOrDeleteTagOnClusterReq.
+        r"""Gets the action of this BatchAddOrDeleteTagOnClusterReq.
 
         操作类型。通过该属性标识当前所需的操作类型。  - create：批量添加标签。 - delete：批量删除标签。
 
@@ -66,7 +66,7 @@ class BatchAddOrDeleteTagOnClusterReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchAddOrDeleteTagOnClusterReq.
+        r"""Sets the action of this BatchAddOrDeleteTagOnClusterReq.
 
         操作类型。通过该属性标识当前所需的操作类型。  - create：批量添加标签。 - delete：批量删除标签。
 
@@ -77,7 +77,7 @@ class BatchAddOrDeleteTagOnClusterReq:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchAddOrDeleteTagOnClusterReq.
+        r"""Gets the tags of this BatchAddOrDeleteTagOnClusterReq.
 
         标签列表。
 
@@ -88,7 +88,7 @@ class BatchAddOrDeleteTagOnClusterReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchAddOrDeleteTagOnClusterReq.
+        r"""Sets the tags of this BatchAddOrDeleteTagOnClusterReq.
 
         标签列表。
 
@@ -99,7 +99,7 @@ class BatchAddOrDeleteTagOnClusterReq:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this BatchAddOrDeleteTagOnClusterReq.
+        r"""Gets the sys_tags of this BatchAddOrDeleteTagOnClusterReq.
 
         系统标签列表。 - key固定为：_sys_enterprise_project_id。 - value是UUID或0,value为0表示默认企业项目。
 
@@ -110,7 +110,7 @@ class BatchAddOrDeleteTagOnClusterReq:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this BatchAddOrDeleteTagOnClusterReq.
+        r"""Sets the sys_tags of this BatchAddOrDeleteTagOnClusterReq.
 
         系统标签列表。 - key固定为：_sys_enterprise_project_id。 - value是UUID或0,value为0表示默认企业项目。
 

@@ -27,7 +27,7 @@ class NovaVersionMediaType:
     }
 
     def __init__(self, base=None, type=None):
-        """NovaVersionMediaType
+        r"""NovaVersionMediaType
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NovaVersionMediaType:
 
     @property
     def base(self):
-        """Gets the base of this NovaVersionMediaType.
+        r"""Gets the base of this NovaVersionMediaType.
 
         基础类型。
 
@@ -59,7 +59,7 @@ class NovaVersionMediaType:
 
     @base.setter
     def base(self, base):
-        """Sets the base of this NovaVersionMediaType.
+        r"""Sets the base of this NovaVersionMediaType.
 
         基础类型。
 
@@ -70,7 +70,7 @@ class NovaVersionMediaType:
 
     @property
     def type(self):
-        """Gets the type of this NovaVersionMediaType.
+        r"""Gets the type of this NovaVersionMediaType.
 
         媒体类型。
 
@@ -81,7 +81,7 @@ class NovaVersionMediaType:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NovaVersionMediaType.
+        r"""Sets the type of this NovaVersionMediaType.
 
         媒体类型。
 

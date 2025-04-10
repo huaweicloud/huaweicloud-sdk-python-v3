@@ -28,7 +28,7 @@ class ShowTechnicalAssetsStatisticResponse(SdkResponse):
     }
 
     def __init__(self, count=None, datasource_statistics=None):
-        """ShowTechnicalAssetsStatisticResponse
+        r"""ShowTechnicalAssetsStatisticResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTechnicalAssetsStatisticResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowTechnicalAssetsStatisticResponse.
+        r"""Gets the count of this ShowTechnicalAssetsStatisticResponse.
 
         数据连接总数
 
@@ -62,7 +62,7 @@ class ShowTechnicalAssetsStatisticResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowTechnicalAssetsStatisticResponse.
+        r"""Sets the count of this ShowTechnicalAssetsStatisticResponse.
 
         数据连接总数
 
@@ -73,7 +73,7 @@ class ShowTechnicalAssetsStatisticResponse(SdkResponse):
 
     @property
     def datasource_statistics(self):
-        """Gets the datasource_statistics of this ShowTechnicalAssetsStatisticResponse.
+        r"""Gets the datasource_statistics of this ShowTechnicalAssetsStatisticResponse.
 
         数据连接统计信息
 
@@ -84,7 +84,7 @@ class ShowTechnicalAssetsStatisticResponse(SdkResponse):
 
     @datasource_statistics.setter
     def datasource_statistics(self, datasource_statistics):
-        """Sets the datasource_statistics of this ShowTechnicalAssetsStatisticResponse.
+        r"""Sets the datasource_statistics of this ShowTechnicalAssetsStatisticResponse.
 
         数据连接统计信息
 

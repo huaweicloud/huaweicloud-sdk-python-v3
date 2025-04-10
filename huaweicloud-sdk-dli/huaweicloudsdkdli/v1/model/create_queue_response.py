@@ -30,7 +30,7 @@ class CreateQueueResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, queue_name=None):
-        """CreateQueueResponse
+        r"""CreateQueueResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateQueueResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CreateQueueResponse.
+        r"""Gets the is_success of this CreateQueueResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -69,7 +69,7 @@ class CreateQueueResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CreateQueueResponse.
+        r"""Sets the is_success of this CreateQueueResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -80,7 +80,7 @@ class CreateQueueResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateQueueResponse.
+        r"""Gets the message of this CreateQueueResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -91,7 +91,7 @@ class CreateQueueResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateQueueResponse.
+        r"""Sets the message of this CreateQueueResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -102,7 +102,7 @@ class CreateQueueResponse(SdkResponse):
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this CreateQueueResponse.
+        r"""Gets the queue_name of this CreateQueueResponse.
 
         新增队列的名称。
 
@@ -113,7 +113,7 @@ class CreateQueueResponse(SdkResponse):
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this CreateQueueResponse.
+        r"""Sets the queue_name of this CreateQueueResponse.
 
         新增队列的名称。
 

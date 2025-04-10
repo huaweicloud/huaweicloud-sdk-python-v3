@@ -29,7 +29,7 @@ class NoSQLDrRpoAndRto:
     }
 
     def __init__(self, scene=None, rpo=None, rto=None):
-        """NoSQLDrRpoAndRto
+        r"""NoSQLDrRpoAndRto
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class NoSQLDrRpoAndRto:
 
     @property
     def scene(self):
-        """Gets the scene of this NoSQLDrRpoAndRto.
+        r"""Gets the scene of this NoSQLDrRpoAndRto.
 
         场景，枚举值   FAILOVER 强制切换;    SWITCHOVER 主备倒换
 
@@ -67,7 +67,7 @@ class NoSQLDrRpoAndRto:
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this NoSQLDrRpoAndRto.
+        r"""Sets the scene of this NoSQLDrRpoAndRto.
 
         场景，枚举值   FAILOVER 强制切换;    SWITCHOVER 主备倒换
 
@@ -78,7 +78,7 @@ class NoSQLDrRpoAndRto:
 
     @property
     def rpo(self):
-        """Gets the rpo of this NoSQLDrRpoAndRto.
+        r"""Gets the rpo of this NoSQLDrRpoAndRto.
 
         倒换或切换丢失数据时长，单位：秒（s）
 
@@ -89,7 +89,7 @@ class NoSQLDrRpoAndRto:
 
     @rpo.setter
     def rpo(self, rpo):
-        """Sets the rpo of this NoSQLDrRpoAndRto.
+        r"""Sets the rpo of this NoSQLDrRpoAndRto.
 
         倒换或切换丢失数据时长，单位：秒（s）
 
@@ -100,7 +100,7 @@ class NoSQLDrRpoAndRto:
 
     @property
     def rto(self):
-        """Gets the rto of this NoSQLDrRpoAndRto.
+        r"""Gets the rto of this NoSQLDrRpoAndRto.
 
         倒换或切换恢复时长，单位：秒（s）
 
@@ -111,7 +111,7 @@ class NoSQLDrRpoAndRto:
 
     @rto.setter
     def rto(self, rto):
-        """Sets the rto of this NoSQLDrRpoAndRto.
+        r"""Sets the rto of this NoSQLDrRpoAndRto.
 
         倒换或切换恢复时长，单位：秒（s）
 

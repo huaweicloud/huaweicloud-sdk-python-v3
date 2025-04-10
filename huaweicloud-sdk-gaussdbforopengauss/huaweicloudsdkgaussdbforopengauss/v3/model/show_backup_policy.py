@@ -43,7 +43,7 @@ class ShowBackupPolicy:
     }
 
     def __init__(self, keep_days=None, start_time=None, period=None, differential_priod=None, differential_period=None, rate_limit=None, prefetch_block=None, filesplit_size=None, file_split_size=None, enable_standby_backup=None):
-        """ShowBackupPolicy
+        r"""ShowBackupPolicy
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class ShowBackupPolicy:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this ShowBackupPolicy.
+        r"""Gets the keep_days of this ShowBackupPolicy.
 
         全量备份文件可以保存的天数。
 
@@ -113,7 +113,7 @@ class ShowBackupPolicy:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this ShowBackupPolicy.
+        r"""Sets the keep_days of this ShowBackupPolicy.
 
         全量备份文件可以保存的天数。
 
@@ -124,7 +124,7 @@ class ShowBackupPolicy:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowBackupPolicy.
+        r"""Gets the start_time of this ShowBackupPolicy.
 
         全量备份时间段。自动备份将在该时间段内触发。除关闭自动备份策略外，必选。  取值范围：格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  - HH取值必须比hh大1。 - mm和MM取值必须相同，且取值必须为00。
 
@@ -135,7 +135,7 @@ class ShowBackupPolicy:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowBackupPolicy.
+        r"""Sets the start_time of this ShowBackupPolicy.
 
         全量备份时间段。自动备份将在该时间段内触发。除关闭自动备份策略外，必选。  取值范围：格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  - HH取值必须比hh大1。 - mm和MM取值必须相同，且取值必须为00。
 
@@ -146,7 +146,7 @@ class ShowBackupPolicy:
 
     @property
     def period(self):
-        """Gets the period of this ShowBackupPolicy.
+        r"""Gets the period of this ShowBackupPolicy.
 
         全量备份周期配置。自动备份将在每星期指定的天进行。  取值范围：格式为逗号隔开的数字，数字代表星期。
 
@@ -157,7 +157,7 @@ class ShowBackupPolicy:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ShowBackupPolicy.
+        r"""Sets the period of this ShowBackupPolicy.
 
         全量备份周期配置。自动备份将在每星期指定的天进行。  取值范围：格式为逗号隔开的数字，数字代表星期。
 
@@ -168,7 +168,7 @@ class ShowBackupPolicy:
 
     @property
     def differential_priod(self):
-        """Gets the differential_priod of this ShowBackupPolicy.
+        r"""Gets the differential_priod of this ShowBackupPolicy.
 
         差量备份周期配置。自动差量备份将每隔周期分钟执行(废弃)。
 
@@ -179,7 +179,7 @@ class ShowBackupPolicy:
 
     @differential_priod.setter
     def differential_priod(self, differential_priod):
-        """Sets the differential_priod of this ShowBackupPolicy.
+        r"""Sets the differential_priod of this ShowBackupPolicy.
 
         差量备份周期配置。自动差量备份将每隔周期分钟执行(废弃)。
 
@@ -190,7 +190,7 @@ class ShowBackupPolicy:
 
     @property
     def differential_period(self):
-        """Gets the differential_period of this ShowBackupPolicy.
+        r"""Gets the differential_period of this ShowBackupPolicy.
 
         差量备份周期配置。自动差量备份将每隔周期分钟执行。
 
@@ -201,7 +201,7 @@ class ShowBackupPolicy:
 
     @differential_period.setter
     def differential_period(self, differential_period):
-        """Sets the differential_period of this ShowBackupPolicy.
+        r"""Sets the differential_period of this ShowBackupPolicy.
 
         差量备份周期配置。自动差量备份将每隔周期分钟执行。
 
@@ -212,7 +212,7 @@ class ShowBackupPolicy:
 
     @property
     def rate_limit(self):
-        """Gets the rate_limit of this ShowBackupPolicy.
+        r"""Gets the rate_limit of this ShowBackupPolicy.
 
         备份时备份数据上传OBS的速度，单位为MB/s。范围为0~1024MB/s，默认75MB/s，0MB/s表示不限速。
 
@@ -223,7 +223,7 @@ class ShowBackupPolicy:
 
     @rate_limit.setter
     def rate_limit(self, rate_limit):
-        """Sets the rate_limit of this ShowBackupPolicy.
+        r"""Sets the rate_limit of this ShowBackupPolicy.
 
         备份时备份数据上传OBS的速度，单位为MB/s。范围为0~1024MB/s，默认75MB/s，0MB/s表示不限速。
 
@@ -234,7 +234,7 @@ class ShowBackupPolicy:
 
     @property
     def prefetch_block(self):
-        """Gets the prefetch_block of this ShowBackupPolicy.
+        r"""Gets the prefetch_block of this ShowBackupPolicy.
 
         控制差量备份时读取磁盘上表文件差量修改页面的预取页面个数，可设置范围为1~8192，默认64。
 
@@ -245,7 +245,7 @@ class ShowBackupPolicy:
 
     @prefetch_block.setter
     def prefetch_block(self, prefetch_block):
-        """Sets the prefetch_block of this ShowBackupPolicy.
+        r"""Sets the prefetch_block of this ShowBackupPolicy.
 
         控制差量备份时读取磁盘上表文件差量修改页面的预取页面个数，可设置范围为1~8192，默认64。
 
@@ -256,7 +256,7 @@ class ShowBackupPolicy:
 
     @property
     def filesplit_size(self):
-        """Gets the filesplit_size of this ShowBackupPolicy.
+        r"""Gets the filesplit_size of this ShowBackupPolicy.
 
         废弃。
 
@@ -267,7 +267,7 @@ class ShowBackupPolicy:
 
     @filesplit_size.setter
     def filesplit_size(self, filesplit_size):
-        """Sets the filesplit_size of this ShowBackupPolicy.
+        r"""Sets the filesplit_size of this ShowBackupPolicy.
 
         废弃。
 
@@ -278,7 +278,7 @@ class ShowBackupPolicy:
 
     @property
     def file_split_size(self):
-        """Gets the file_split_size of this ShowBackupPolicy.
+        r"""Gets the file_split_size of this ShowBackupPolicy.
 
         全量、差量备份时产生的备份文件会根据分片大小进行拆分，可设置范围为0~1024GB，设置需为4的倍数，默认4GB，0GB表示不限制大小。  取值范围：0 ~ 1024
 
@@ -289,7 +289,7 @@ class ShowBackupPolicy:
 
     @file_split_size.setter
     def file_split_size(self, file_split_size):
-        """Sets the file_split_size of this ShowBackupPolicy.
+        r"""Sets the file_split_size of this ShowBackupPolicy.
 
         全量、差量备份时产生的备份文件会根据分片大小进行拆分，可设置范围为0~1024GB，设置需为4的倍数，默认4GB，0GB表示不限制大小。  取值范围：0 ~ 1024
 
@@ -300,7 +300,7 @@ class ShowBackupPolicy:
 
     @property
     def enable_standby_backup(self):
-        """Gets the enable_standby_backup of this ShowBackupPolicy.
+        r"""Gets the enable_standby_backup of this ShowBackupPolicy.
 
         是否启用备机备份。  取值范围：true|false
 
@@ -311,7 +311,7 @@ class ShowBackupPolicy:
 
     @enable_standby_backup.setter
     def enable_standby_backup(self, enable_standby_backup):
-        """Sets the enable_standby_backup of this ShowBackupPolicy.
+        r"""Sets the enable_standby_backup of this ShowBackupPolicy.
 
         是否启用备机备份。  取值范围：true|false
 

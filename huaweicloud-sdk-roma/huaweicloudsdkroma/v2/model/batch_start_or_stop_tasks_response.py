@@ -32,7 +32,7 @@ class BatchStartOrStopTasksResponse(SdkResponse):
     }
 
     def __init__(self, success_count=None, failure_count=None, failure=None, success=None):
-        """BatchStartOrStopTasksResponse
+        r"""BatchStartOrStopTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class BatchStartOrStopTasksResponse(SdkResponse):
 
     @property
     def success_count(self):
-        """Gets the success_count of this BatchStartOrStopTasksResponse.
+        r"""Gets the success_count of this BatchStartOrStopTasksResponse.
 
         成功的个数
 
@@ -76,7 +76,7 @@ class BatchStartOrStopTasksResponse(SdkResponse):
 
     @success_count.setter
     def success_count(self, success_count):
-        """Sets the success_count of this BatchStartOrStopTasksResponse.
+        r"""Sets the success_count of this BatchStartOrStopTasksResponse.
 
         成功的个数
 
@@ -87,7 +87,7 @@ class BatchStartOrStopTasksResponse(SdkResponse):
 
     @property
     def failure_count(self):
-        """Gets the failure_count of this BatchStartOrStopTasksResponse.
+        r"""Gets the failure_count of this BatchStartOrStopTasksResponse.
 
         失败的个数
 
@@ -98,7 +98,7 @@ class BatchStartOrStopTasksResponse(SdkResponse):
 
     @failure_count.setter
     def failure_count(self, failure_count):
-        """Sets the failure_count of this BatchStartOrStopTasksResponse.
+        r"""Sets the failure_count of this BatchStartOrStopTasksResponse.
 
         失败的个数
 
@@ -109,7 +109,7 @@ class BatchStartOrStopTasksResponse(SdkResponse):
 
     @property
     def failure(self):
-        """Gets the failure of this BatchStartOrStopTasksResponse.
+        r"""Gets the failure of this BatchStartOrStopTasksResponse.
 
         失败的详情
 
@@ -120,7 +120,7 @@ class BatchStartOrStopTasksResponse(SdkResponse):
 
     @failure.setter
     def failure(self, failure):
-        """Sets the failure of this BatchStartOrStopTasksResponse.
+        r"""Sets the failure of this BatchStartOrStopTasksResponse.
 
         失败的详情
 
@@ -131,7 +131,7 @@ class BatchStartOrStopTasksResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this BatchStartOrStopTasksResponse.
+        r"""Gets the success of this BatchStartOrStopTasksResponse.
 
         成功的任务信息
 
@@ -142,7 +142,7 @@ class BatchStartOrStopTasksResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this BatchStartOrStopTasksResponse.
+        r"""Sets the success of this BatchStartOrStopTasksResponse.
 
         成功的任务信息
 

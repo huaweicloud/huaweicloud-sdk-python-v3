@@ -28,7 +28,7 @@ class ListMetadataAomPromGetResponse(SdkResponse):
     }
 
     def __init__(self, status=None, data=None):
-        """ListMetadataAomPromGetResponse
+        r"""ListMetadataAomPromGetResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMetadataAomPromGetResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListMetadataAomPromGetResponse.
+        r"""Gets the status of this ListMetadataAomPromGetResponse.
 
         响应状态。
 
@@ -62,7 +62,7 @@ class ListMetadataAomPromGetResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListMetadataAomPromGetResponse.
+        r"""Sets the status of this ListMetadataAomPromGetResponse.
 
         响应状态。
 
@@ -73,7 +73,7 @@ class ListMetadataAomPromGetResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListMetadataAomPromGetResponse.
+        r"""Gets the data of this ListMetadataAomPromGetResponse.
 
         元数据信息。
 
@@ -84,7 +84,7 @@ class ListMetadataAomPromGetResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListMetadataAomPromGetResponse.
+        r"""Sets the data of this ListMetadataAomPromGetResponse.
 
         元数据信息。
 

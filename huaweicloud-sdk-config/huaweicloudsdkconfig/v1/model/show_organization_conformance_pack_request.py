@@ -27,7 +27,7 @@ class ShowOrganizationConformancePackRequest:
     }
 
     def __init__(self, organization_id=None, conformance_pack_id=None):
-        """ShowOrganizationConformancePackRequest
+        r"""ShowOrganizationConformancePackRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowOrganizationConformancePackRequest:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this ShowOrganizationConformancePackRequest.
+        r"""Gets the organization_id of this ShowOrganizationConformancePackRequest.
 
         组织ID。
 
@@ -59,7 +59,7 @@ class ShowOrganizationConformancePackRequest:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this ShowOrganizationConformancePackRequest.
+        r"""Sets the organization_id of this ShowOrganizationConformancePackRequest.
 
         组织ID。
 
@@ -70,7 +70,7 @@ class ShowOrganizationConformancePackRequest:
 
     @property
     def conformance_pack_id(self):
-        """Gets the conformance_pack_id of this ShowOrganizationConformancePackRequest.
+        r"""Gets the conformance_pack_id of this ShowOrganizationConformancePackRequest.
 
         合规规则包ID。
 
@@ -81,7 +81,7 @@ class ShowOrganizationConformancePackRequest:
 
     @conformance_pack_id.setter
     def conformance_pack_id(self, conformance_pack_id):
-        """Sets the conformance_pack_id of this ShowOrganizationConformancePackRequest.
+        r"""Sets the conformance_pack_id of this ShowOrganizationConformancePackRequest.
 
         合规规则包ID。
 

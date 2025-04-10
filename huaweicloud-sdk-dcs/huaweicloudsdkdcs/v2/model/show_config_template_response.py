@@ -44,7 +44,7 @@ class ShowConfigTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None, cache_mode=None, description=None, engine=None, engine_version=None, name=None, product_type=None, storage_type=None, type=None, created_at=None):
-        """ShowConfigTemplateResponse
+        r"""ShowConfigTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowConfigTemplateResponse.
+        r"""Gets the template_id of this ShowConfigTemplateResponse.
 
         模板ID
 
@@ -118,7 +118,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowConfigTemplateResponse.
+        r"""Sets the template_id of this ShowConfigTemplateResponse.
 
         模板ID
 
@@ -129,7 +129,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @property
     def cache_mode(self):
-        """Gets the cache_mode of this ShowConfigTemplateResponse.
+        r"""Gets the cache_mode of this ShowConfigTemplateResponse.
 
         缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 [- ha_rw_split： 表示读写分离实例](tag:hws) 
 
@@ -140,7 +140,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @cache_mode.setter
     def cache_mode(self, cache_mode):
-        """Sets the cache_mode of this ShowConfigTemplateResponse.
+        r"""Sets the cache_mode of this ShowConfigTemplateResponse.
 
         缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 [- ha_rw_split： 表示读写分离实例](tag:hws) 
 
@@ -151,7 +151,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowConfigTemplateResponse.
+        r"""Gets the description of this ShowConfigTemplateResponse.
 
         模板的描述信息
 
@@ -162,7 +162,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowConfigTemplateResponse.
+        r"""Sets the description of this ShowConfigTemplateResponse.
 
         模板的描述信息
 
@@ -173,7 +173,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @property
     def engine(self):
-        """Gets the engine of this ShowConfigTemplateResponse.
+        r"""Gets the engine of this ShowConfigTemplateResponse.
 
         缓存引擎：Redis[和Memcached](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc)。
 
@@ -184,7 +184,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ShowConfigTemplateResponse.
+        r"""Sets the engine of this ShowConfigTemplateResponse.
 
         缓存引擎：Redis[和Memcached](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc)。
 
@@ -195,7 +195,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this ShowConfigTemplateResponse.
+        r"""Gets the engine_version of this ShowConfigTemplateResponse.
 
         缓存版本。  当缓存引擎为Redis时，取值为4.0或5.0。  [当缓存引擎为Memcached时，该字段为可选，取值为空。](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc) 
 
@@ -206,7 +206,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this ShowConfigTemplateResponse.
+        r"""Sets the engine_version of this ShowConfigTemplateResponse.
 
         缓存版本。  当缓存引擎为Redis时，取值为4.0或5.0。  [当缓存引擎为Memcached时，该字段为可选，取值为空。](tag:hws,hws_hk,ocb,sbc,tm,ctc,cmcc) 
 
@@ -217,7 +217,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowConfigTemplateResponse.
+        r"""Gets the name of this ShowConfigTemplateResponse.
 
         模板名称
 
@@ -228,7 +228,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowConfigTemplateResponse.
+        r"""Sets the name of this ShowConfigTemplateResponse.
 
         模板名称
 
@@ -239,7 +239,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @property
     def product_type(self):
-        """Gets the product_type of this ShowConfigTemplateResponse.
+        r"""Gets the product_type of this ShowConfigTemplateResponse.
 
         产品类型。 取值范围如下： - generic：普通版 - enterprise：企业版 
 
@@ -250,7 +250,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this ShowConfigTemplateResponse.
+        r"""Sets the product_type of this ShowConfigTemplateResponse.
 
         产品类型。 取值范围如下： - generic：普通版 - enterprise：企业版 
 
@@ -261,7 +261,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this ShowConfigTemplateResponse.
+        r"""Gets the storage_type of this ShowConfigTemplateResponse.
 
         存储类型。 取值范围如下： - DRAM - SSD 
 
@@ -272,7 +272,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this ShowConfigTemplateResponse.
+        r"""Sets the storage_type of this ShowConfigTemplateResponse.
 
         存储类型。 取值范围如下： - DRAM - SSD 
 
@@ -283,7 +283,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowConfigTemplateResponse.
+        r"""Gets the type of this ShowConfigTemplateResponse.
 
         模板类型
 
@@ -294,7 +294,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowConfigTemplateResponse.
+        r"""Sets the type of this ShowConfigTemplateResponse.
 
         模板类型
 
@@ -305,7 +305,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowConfigTemplateResponse.
+        r"""Gets the created_at of this ShowConfigTemplateResponse.
 
         模板创建时间，仅在自定义参数模板中有意义，格式例如：2023-05-10T11:09:35.802Z
 
@@ -316,7 +316,7 @@ class ShowConfigTemplateResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowConfigTemplateResponse.
+        r"""Sets the created_at of this ShowConfigTemplateResponse.
 
         模板创建时间，仅在自定义参数模板中有意义，格式例如：2023-05-10T11:09:35.802Z
 

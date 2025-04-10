@@ -51,7 +51,7 @@ class RuleResponse:
     }
 
     def __init__(self, created_at=None, description=None, fail_messages=None, id=None, ief_instance_id=None, in_using=None, name=None, project_id=None, source=None, source_resource=None, target=None, target_resource=None, updated_at=None, success_messages=None):
-        """RuleResponse
+        r"""RuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class RuleResponse:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RuleResponse.
+        r"""Gets the created_at of this RuleResponse.
 
         创建时间
 
@@ -137,7 +137,7 @@ class RuleResponse:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RuleResponse.
+        r"""Sets the created_at of this RuleResponse.
 
         创建时间
 
@@ -148,7 +148,7 @@ class RuleResponse:
 
     @property
     def description(self):
-        """Gets the description of this RuleResponse.
+        r"""Gets the description of this RuleResponse.
 
         规则描述，最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
@@ -159,7 +159,7 @@ class RuleResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RuleResponse.
+        r"""Sets the description of this RuleResponse.
 
         规则描述，最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
@@ -170,7 +170,7 @@ class RuleResponse:
 
     @property
     def fail_messages(self):
-        """Gets the fail_messages of this RuleResponse.
+        r"""Gets the fail_messages of this RuleResponse.
 
         转发失败的消息数
 
@@ -181,7 +181,7 @@ class RuleResponse:
 
     @fail_messages.setter
     def fail_messages(self, fail_messages):
-        """Sets the fail_messages of this RuleResponse.
+        r"""Sets the fail_messages of this RuleResponse.
 
         转发失败的消息数
 
@@ -192,7 +192,7 @@ class RuleResponse:
 
     @property
     def id(self):
-        """Gets the id of this RuleResponse.
+        r"""Gets the id of this RuleResponse.
 
         规则ID
 
@@ -203,7 +203,7 @@ class RuleResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RuleResponse.
+        r"""Sets the id of this RuleResponse.
 
         规则ID
 
@@ -214,7 +214,7 @@ class RuleResponse:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this RuleResponse.
+        r"""Gets the ief_instance_id of this RuleResponse.
 
         [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
@@ -225,7 +225,7 @@ class RuleResponse:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this RuleResponse.
+        r"""Sets the ief_instance_id of this RuleResponse.
 
         [铂金版实例ID，如果为空则表示是专业版实例。](tag:hws,hws_hk)[铂金版实例ID](tag:hcs,hcs_sm)
 
@@ -236,7 +236,7 @@ class RuleResponse:
 
     @property
     def in_using(self):
-        """Gets the in_using of this RuleResponse.
+        r"""Gets the in_using of this RuleResponse.
 
         是否启用规则，默认为true（启用）
 
@@ -247,7 +247,7 @@ class RuleResponse:
 
     @in_using.setter
     def in_using(self, in_using):
-        """Sets the in_using of this RuleResponse.
+        r"""Sets the in_using of this RuleResponse.
 
         是否启用规则，默认为true（启用）
 
@@ -258,7 +258,7 @@ class RuleResponse:
 
     @property
     def name(self):
-        """Gets the name of this RuleResponse.
+        r"""Gets the name of this RuleResponse.
 
         规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的规则名唯一
 
@@ -269,7 +269,7 @@ class RuleResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RuleResponse.
+        r"""Sets the name of this RuleResponse.
 
         规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个账号中创建的规则名唯一
 
@@ -280,7 +280,7 @@ class RuleResponse:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RuleResponse.
+        r"""Gets the project_id of this RuleResponse.
 
         项目ID
 
@@ -291,7 +291,7 @@ class RuleResponse:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RuleResponse.
+        r"""Sets the project_id of this RuleResponse.
 
         项目ID
 
@@ -302,7 +302,7 @@ class RuleResponse:
 
     @property
     def source(self):
-        """Gets the source of this RuleResponse.
+        r"""Gets the source of this RuleResponse.
 
         :return: The source of this RuleResponse.
         :rtype: :class:`huaweicloudsdkief.v1.EndpointObjResp`
@@ -311,7 +311,7 @@ class RuleResponse:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this RuleResponse.
+        r"""Sets the source of this RuleResponse.
 
         :param source: The source of this RuleResponse.
         :type source: :class:`huaweicloudsdkief.v1.EndpointObjResp`
@@ -320,7 +320,7 @@ class RuleResponse:
 
     @property
     def source_resource(self):
-        """Gets the source_resource of this RuleResponse.
+        r"""Gets the source_resource of this RuleResponse.
 
         源端点资源。示例： - rest: {\"path\":\"\\<standard uri format\\>\"} - eventbus: {\"topic\":\"\\<project id\\>/nodes/\\<node id\\>/user/\\<租户自定义且满足eventbus topic要求的字符串\\>\",\"node_id\":\"\\<node id\\>\"} 
 
@@ -331,7 +331,7 @@ class RuleResponse:
 
     @source_resource.setter
     def source_resource(self, source_resource):
-        """Sets the source_resource of this RuleResponse.
+        r"""Sets the source_resource of this RuleResponse.
 
         源端点资源。示例： - rest: {\"path\":\"\\<standard uri format\\>\"} - eventbus: {\"topic\":\"\\<project id\\>/nodes/\\<node id\\>/user/\\<租户自定义且满足eventbus topic要求的字符串\\>\",\"node_id\":\"\\<node id\\>\"} 
 
@@ -342,7 +342,7 @@ class RuleResponse:
 
     @property
     def target(self):
-        """Gets the target of this RuleResponse.
+        r"""Gets the target of this RuleResponse.
 
         :return: The target of this RuleResponse.
         :rtype: :class:`huaweicloudsdkief.v1.EndpointObjResp`
@@ -351,7 +351,7 @@ class RuleResponse:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this RuleResponse.
+        r"""Sets the target of this RuleResponse.
 
         :param target: The target of this RuleResponse.
         :type target: :class:`huaweicloudsdkief.v1.EndpointObjResp`
@@ -360,7 +360,7 @@ class RuleResponse:
 
     @property
     def target_resource(self):
-        """Gets the target_resource of this RuleResponse.
+        r"""Gets the target_resource of this RuleResponse.
 
         目的端点资源，示例： - dis: {\"channel\": \"dis channel name\"} - servicebus: {\"path\": \"/request path\"} - apigw: {\"resource\": \"http://ssss.com\"} - eventbus: {\"topic\": \"/xxxx\"}
 
@@ -371,7 +371,7 @@ class RuleResponse:
 
     @target_resource.setter
     def target_resource(self, target_resource):
-        """Sets the target_resource of this RuleResponse.
+        r"""Sets the target_resource of this RuleResponse.
 
         目的端点资源，示例： - dis: {\"channel\": \"dis channel name\"} - servicebus: {\"path\": \"/request path\"} - apigw: {\"resource\": \"http://ssss.com\"} - eventbus: {\"topic\": \"/xxxx\"}
 
@@ -382,7 +382,7 @@ class RuleResponse:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this RuleResponse.
+        r"""Gets the updated_at of this RuleResponse.
 
         更新时间
 
@@ -393,7 +393,7 @@ class RuleResponse:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this RuleResponse.
+        r"""Sets the updated_at of this RuleResponse.
 
         更新时间
 
@@ -404,7 +404,7 @@ class RuleResponse:
 
     @property
     def success_messages(self):
-        """Gets the success_messages of this RuleResponse.
+        r"""Gets the success_messages of this RuleResponse.
 
         转发成功的消息数
 
@@ -415,7 +415,7 @@ class RuleResponse:
 
     @success_messages.setter
     def success_messages(self, success_messages):
-        """Sets the success_messages of this RuleResponse.
+        r"""Sets the success_messages of this RuleResponse.
 
         转发成功的消息数
 

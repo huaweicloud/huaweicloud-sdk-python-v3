@@ -34,7 +34,7 @@ class ListNetworkQualityRequest:
     }
 
     def __init__(self, conferenceid=None, conf_token=None, appid=None, confuuid=None, body=None):
-        """ListNetworkQualityRequest
+        r"""ListNetworkQualityRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListNetworkQualityRequest:
 
     @property
     def conferenceid(self):
-        """Gets the conferenceid of this ListNetworkQualityRequest.
+        r"""Gets the conferenceid of this ListNetworkQualityRequest.
 
         会议id
 
@@ -80,7 +80,7 @@ class ListNetworkQualityRequest:
 
     @conferenceid.setter
     def conferenceid(self, conferenceid):
-        """Sets the conferenceid of this ListNetworkQualityRequest.
+        r"""Sets the conferenceid of this ListNetworkQualityRequest.
 
         会议id
 
@@ -91,7 +91,7 @@ class ListNetworkQualityRequest:
 
     @property
     def conf_token(self):
-        """Gets the conf_token of this ListNetworkQualityRequest.
+        r"""Gets the conf_token of this ListNetworkQualityRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -102,7 +102,7 @@ class ListNetworkQualityRequest:
 
     @conf_token.setter
     def conf_token(self, conf_token):
-        """Sets the conf_token of this ListNetworkQualityRequest.
+        r"""Sets the conf_token of this ListNetworkQualityRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -113,7 +113,7 @@ class ListNetworkQualityRequest:
 
     @property
     def appid(self):
-        """Gets the appid of this ListNetworkQualityRequest.
+        r"""Gets the appid of this ListNetworkQualityRequest.
 
         会议的appId
 
@@ -124,7 +124,7 @@ class ListNetworkQualityRequest:
 
     @appid.setter
     def appid(self, appid):
-        """Sets the appid of this ListNetworkQualityRequest.
+        r"""Sets the appid of this ListNetworkQualityRequest.
 
         会议的appId
 
@@ -135,7 +135,7 @@ class ListNetworkQualityRequest:
 
     @property
     def confuuid(self):
-        """Gets the confuuid of this ListNetworkQualityRequest.
+        r"""Gets the confuuid of this ListNetworkQualityRequest.
 
         会议UUID，MMR房间ID
 
@@ -146,7 +146,7 @@ class ListNetworkQualityRequest:
 
     @confuuid.setter
     def confuuid(self, confuuid):
-        """Sets the confuuid of this ListNetworkQualityRequest.
+        r"""Sets the confuuid of this ListNetworkQualityRequest.
 
         会议UUID，MMR房间ID
 
@@ -157,7 +157,7 @@ class ListNetworkQualityRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListNetworkQualityRequest.
+        r"""Gets the body of this ListNetworkQualityRequest.
 
         :return: The body of this ListNetworkQualityRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestQosRequestDTO`
@@ -166,7 +166,7 @@ class ListNetworkQualityRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListNetworkQualityRequest.
+        r"""Sets the body of this ListNetworkQualityRequest.
 
         :param body: The body of this ListNetworkQualityRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestQosRequestDTO`

@@ -31,7 +31,7 @@ class HistoryInfo:
     }
 
     def __init__(self, history_id=None, type=None, created_at=None, status=None):
-        """HistoryInfo
+        r"""HistoryInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class HistoryInfo:
 
     @property
     def history_id(self):
-        """Gets the history_id of this HistoryInfo.
+        r"""Gets the history_id of this HistoryInfo.
 
         修改记录ID
 
@@ -75,7 +75,7 @@ class HistoryInfo:
 
     @history_id.setter
     def history_id(self, history_id):
-        """Sets the history_id of this HistoryInfo.
+        r"""Sets the history_id of this HistoryInfo.
 
         修改记录ID
 
@@ -86,7 +86,7 @@ class HistoryInfo:
 
     @property
     def type(self):
-        """Gets the type of this HistoryInfo.
+        r"""Gets the type of this HistoryInfo.
 
         修改类型
 
@@ -97,7 +97,7 @@ class HistoryInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HistoryInfo.
+        r"""Sets the type of this HistoryInfo.
 
         修改类型
 
@@ -108,7 +108,7 @@ class HistoryInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this HistoryInfo.
+        r"""Gets the created_at of this HistoryInfo.
 
         修改时间
 
@@ -119,7 +119,7 @@ class HistoryInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this HistoryInfo.
+        r"""Sets the created_at of this HistoryInfo.
 
         修改时间
 
@@ -130,7 +130,7 @@ class HistoryInfo:
 
     @property
     def status(self):
-        """Gets the status of this HistoryInfo.
+        r"""Gets the status of this HistoryInfo.
 
         修改状态
 
@@ -141,7 +141,7 @@ class HistoryInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this HistoryInfo.
+        r"""Sets the status of this HistoryInfo.
 
         修改状态
 

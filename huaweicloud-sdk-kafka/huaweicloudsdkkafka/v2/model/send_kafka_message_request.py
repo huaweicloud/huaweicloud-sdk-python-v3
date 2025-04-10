@@ -29,7 +29,7 @@ class SendKafkaMessageRequest:
     }
 
     def __init__(self, instance_id=None, action_id=None, body=None):
-        """SendKafkaMessageRequest
+        r"""SendKafkaMessageRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SendKafkaMessageRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SendKafkaMessageRequest.
+        r"""Gets the instance_id of this SendKafkaMessageRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class SendKafkaMessageRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SendKafkaMessageRequest.
+        r"""Sets the instance_id of this SendKafkaMessageRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class SendKafkaMessageRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this SendKafkaMessageRequest.
+        r"""Gets the action_id of this SendKafkaMessageRequest.
 
         动作ID，生产消息对应的action_id为send。
 
@@ -88,7 +88,7 @@ class SendKafkaMessageRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this SendKafkaMessageRequest.
+        r"""Sets the action_id of this SendKafkaMessageRequest.
 
         动作ID，生产消息对应的action_id为send。
 
@@ -99,7 +99,7 @@ class SendKafkaMessageRequest:
 
     @property
     def body(self):
-        """Gets the body of this SendKafkaMessageRequest.
+        r"""Gets the body of this SendKafkaMessageRequest.
 
         :return: The body of this SendKafkaMessageRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.SendKafkaMessageRequestBody`
@@ -108,7 +108,7 @@ class SendKafkaMessageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SendKafkaMessageRequest.
+        r"""Sets the body of this SendKafkaMessageRequest.
 
         :param body: The body of this SendKafkaMessageRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.SendKafkaMessageRequestBody`

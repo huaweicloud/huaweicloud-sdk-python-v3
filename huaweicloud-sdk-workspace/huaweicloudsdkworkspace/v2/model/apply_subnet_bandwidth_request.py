@@ -27,7 +27,7 @@ class ApplySubnetBandwidthRequest:
     }
 
     def __init__(self, service_transaction_id=None, body=None):
-        """ApplySubnetBandwidthRequest
+        r"""ApplySubnetBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApplySubnetBandwidthRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this ApplySubnetBandwidthRequest.
+        r"""Gets the service_transaction_id of this ApplySubnetBandwidthRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -61,7 +61,7 @@ class ApplySubnetBandwidthRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this ApplySubnetBandwidthRequest.
+        r"""Sets the service_transaction_id of this ApplySubnetBandwidthRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -72,7 +72,7 @@ class ApplySubnetBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this ApplySubnetBandwidthRequest.
+        r"""Gets the body of this ApplySubnetBandwidthRequest.
 
         :return: The body of this ApplySubnetBandwidthRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplySubnetBandwidthReq`
@@ -81,7 +81,7 @@ class ApplySubnetBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ApplySubnetBandwidthRequest.
+        r"""Sets the body of this ApplySubnetBandwidthRequest.
 
         :param body: The body of this ApplySubnetBandwidthRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ApplySubnetBandwidthReq`

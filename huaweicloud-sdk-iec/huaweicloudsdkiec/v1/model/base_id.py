@@ -25,7 +25,7 @@ class BaseId:
     }
 
     def __init__(self, id=None):
-        """BaseId
+        r"""BaseId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BaseId:
 
     @property
     def id(self):
-        """Gets the id of this BaseId.
+        r"""Gets the id of this BaseId.
 
         对象ID，uuid。
 
@@ -53,7 +53,7 @@ class BaseId:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BaseId.
+        r"""Sets the id of this BaseId.
 
         对象ID，uuid。
 

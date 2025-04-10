@@ -37,7 +37,7 @@ class AgencyV2:
     }
 
     def __init__(self, id=None, name=None, duration=None, trust_domain_name=None, trust_domain_id=None, create_time=None, expire_time=None):
-        """AgencyV2
+        r"""AgencyV2
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AgencyV2:
 
     @property
     def id(self):
-        """Gets the id of this AgencyV2.
+        r"""Gets the id of this AgencyV2.
 
         委托id
 
@@ -96,7 +96,7 @@ class AgencyV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AgencyV2.
+        r"""Sets the id of this AgencyV2.
 
         委托id
 
@@ -107,7 +107,7 @@ class AgencyV2:
 
     @property
     def name(self):
-        """Gets the name of this AgencyV2.
+        r"""Gets the name of this AgencyV2.
 
         委托名称
 
@@ -118,7 +118,7 @@ class AgencyV2:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgencyV2.
+        r"""Sets the name of this AgencyV2.
 
         委托名称
 
@@ -129,7 +129,7 @@ class AgencyV2:
 
     @property
     def duration(self):
-        """Gets the duration of this AgencyV2.
+        r"""Gets the duration of this AgencyV2.
 
         委托的期限
 
@@ -140,7 +140,7 @@ class AgencyV2:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this AgencyV2.
+        r"""Sets the duration of this AgencyV2.
 
         委托的期限
 
@@ -151,7 +151,7 @@ class AgencyV2:
 
     @property
     def trust_domain_name(self):
-        """Gets the trust_domain_name of this AgencyV2.
+        r"""Gets the trust_domain_name of this AgencyV2.
 
         委托的账号名称
 
@@ -162,7 +162,7 @@ class AgencyV2:
 
     @trust_domain_name.setter
     def trust_domain_name(self, trust_domain_name):
-        """Sets the trust_domain_name of this AgencyV2.
+        r"""Sets the trust_domain_name of this AgencyV2.
 
         委托的账号名称
 
@@ -173,7 +173,7 @@ class AgencyV2:
 
     @property
     def trust_domain_id(self):
-        """Gets the trust_domain_id of this AgencyV2.
+        r"""Gets the trust_domain_id of this AgencyV2.
 
         委托的账号id
 
@@ -184,7 +184,7 @@ class AgencyV2:
 
     @trust_domain_id.setter
     def trust_domain_id(self, trust_domain_id):
-        """Sets the trust_domain_id of this AgencyV2.
+        r"""Sets the trust_domain_id of this AgencyV2.
 
         委托的账号id
 
@@ -195,7 +195,7 @@ class AgencyV2:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AgencyV2.
+        r"""Gets the create_time of this AgencyV2.
 
         创建时间
 
@@ -206,7 +206,7 @@ class AgencyV2:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AgencyV2.
+        r"""Sets the create_time of this AgencyV2.
 
         创建时间
 
@@ -217,7 +217,7 @@ class AgencyV2:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this AgencyV2.
+        r"""Gets the expire_time of this AgencyV2.
 
         超期时间
 
@@ -228,7 +228,7 @@ class AgencyV2:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this AgencyV2.
+        r"""Sets the expire_time of this AgencyV2.
 
         超期时间
 

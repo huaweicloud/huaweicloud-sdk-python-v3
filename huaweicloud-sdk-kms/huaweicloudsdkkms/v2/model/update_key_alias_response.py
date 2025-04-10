@@ -26,7 +26,7 @@ class UpdateKeyAliasResponse(SdkResponse):
     }
 
     def __init__(self, key_info=None):
-        """UpdateKeyAliasResponse
+        r"""UpdateKeyAliasResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateKeyAliasResponse(SdkResponse):
 
     @property
     def key_info(self):
-        """Gets the key_info of this UpdateKeyAliasResponse.
+        r"""Gets the key_info of this UpdateKeyAliasResponse.
 
         :return: The key_info of this UpdateKeyAliasResponse.
         :rtype: :class:`huaweicloudsdkkms.v2.KeyAliasInfo`
@@ -53,7 +53,7 @@ class UpdateKeyAliasResponse(SdkResponse):
 
     @key_info.setter
     def key_info(self, key_info):
-        """Sets the key_info of this UpdateKeyAliasResponse.
+        r"""Sets the key_info of this UpdateKeyAliasResponse.
 
         :param key_info: The key_info of this UpdateKeyAliasResponse.
         :type key_info: :class:`huaweicloudsdkkms.v2.KeyAliasInfo`

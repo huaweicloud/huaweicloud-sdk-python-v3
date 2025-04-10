@@ -27,7 +27,7 @@ class AccessInfo:
     }
 
     def __init__(self, vpcep_service_name=None, domain=None):
-        """AccessInfo
+        r"""AccessInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AccessInfo:
 
     @property
     def vpcep_service_name(self):
-        """Gets the vpcep_service_name of this AccessInfo.
+        r"""Gets the vpcep_service_name of this AccessInfo.
 
         服务名称
 
@@ -61,7 +61,7 @@ class AccessInfo:
 
     @vpcep_service_name.setter
     def vpcep_service_name(self, vpcep_service_name):
-        """Sets the vpcep_service_name of this AccessInfo.
+        r"""Sets the vpcep_service_name of this AccessInfo.
 
         服务名称
 
@@ -72,7 +72,7 @@ class AccessInfo:
 
     @property
     def domain(self):
-        """Gets the domain of this AccessInfo.
+        r"""Gets the domain of this AccessInfo.
 
         分组独立域名
 
@@ -83,7 +83,7 @@ class AccessInfo:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AccessInfo.
+        r"""Sets the domain of this AccessInfo.
 
         分组独立域名
 

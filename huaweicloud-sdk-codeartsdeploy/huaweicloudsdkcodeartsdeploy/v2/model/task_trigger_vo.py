@@ -29,7 +29,7 @@ class TaskTriggerVO:
     }
 
     def __init__(self, trigger_source=None, artifact_source_system=None, artifact_type=None):
-        """TaskTriggerVO
+        r"""TaskTriggerVO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TaskTriggerVO:
 
     @property
     def trigger_source(self):
-        """Gets the trigger_source of this TaskTriggerVO.
+        r"""Gets the trigger_source of this TaskTriggerVO.
 
         部署任务允许执行的场景。其中0：所有执行请求均可，1：只允许流水线触发
 
@@ -68,7 +68,7 @@ class TaskTriggerVO:
 
     @trigger_source.setter
     def trigger_source(self, trigger_source):
-        """Sets the trigger_source of this TaskTriggerVO.
+        r"""Sets the trigger_source of this TaskTriggerVO.
 
         部署任务允许执行的场景。其中0：所有执行请求均可，1：只允许流水线触发
 
@@ -79,7 +79,7 @@ class TaskTriggerVO:
 
     @property
     def artifact_source_system(self):
-        """Gets the artifact_source_system of this TaskTriggerVO.
+        r"""Gets the artifact_source_system of this TaskTriggerVO.
 
         当任务只允许流水线触发执行时，流水线传递的来源信息，当前只有CloudArtifact
 
@@ -90,7 +90,7 @@ class TaskTriggerVO:
 
     @artifact_source_system.setter
     def artifact_source_system(self, artifact_source_system):
-        """Sets the artifact_source_system of this TaskTriggerVO.
+        r"""Sets the artifact_source_system of this TaskTriggerVO.
 
         当任务只允许流水线触发执行时，流水线传递的来源信息，当前只有CloudArtifact
 
@@ -101,7 +101,7 @@ class TaskTriggerVO:
 
     @property
     def artifact_type(self):
-        """Gets the artifact_type of this TaskTriggerVO.
+        r"""Gets the artifact_type of this TaskTriggerVO.
 
         当任务只允许流水线触发执行时，对应流水线源的制品仓库类型（generic、docker）
 
@@ -112,7 +112,7 @@ class TaskTriggerVO:
 
     @artifact_type.setter
     def artifact_type(self, artifact_type):
-        """Sets the artifact_type of this TaskTriggerVO.
+        r"""Sets the artifact_type of this TaskTriggerVO.
 
         当任务只允许流水线触发执行时，对应流水线源的制品仓库类型（generic、docker）
 

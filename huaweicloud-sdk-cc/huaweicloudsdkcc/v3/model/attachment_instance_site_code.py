@@ -25,7 +25,7 @@ class AttachmentInstanceSiteCode:
     }
 
     def __init__(self, attachment_instance_site_code=None):
-        """AttachmentInstanceSiteCode
+        r"""AttachmentInstanceSiteCode
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AttachmentInstanceSiteCode:
 
     @property
     def attachment_instance_site_code(self):
-        """Gets the attachment_instance_site_code of this AttachmentInstanceSiteCode.
+        r"""Gets the attachment_instance_site_code of this AttachmentInstanceSiteCode.
 
         中心网络附件对端实例的站点编码。
 
@@ -53,7 +53,7 @@ class AttachmentInstanceSiteCode:
 
     @attachment_instance_site_code.setter
     def attachment_instance_site_code(self, attachment_instance_site_code):
-        """Sets the attachment_instance_site_code of this AttachmentInstanceSiteCode.
+        r"""Sets the attachment_instance_site_code of this AttachmentInstanceSiteCode.
 
         中心网络附件对端实例的站点编码。
 

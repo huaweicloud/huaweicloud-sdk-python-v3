@@ -35,7 +35,7 @@ class MultiViewModelVersionViewCreateDTO:
     }
 
     def __init__(self, modifier=None, version_id=None, work_copy_type=None, custom_link_set=None, need_set_null=None, item=None):
-        """MultiViewModelVersionViewCreateDTO
+        r"""MultiViewModelVersionViewCreateDTO
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class MultiViewModelVersionViewCreateDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this MultiViewModelVersionViewCreateDTO.
+        r"""Gets the modifier of this MultiViewModelVersionViewCreateDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -87,7 +87,7 @@ class MultiViewModelVersionViewCreateDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this MultiViewModelVersionViewCreateDTO.
+        r"""Sets the modifier of this MultiViewModelVersionViewCreateDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -98,7 +98,7 @@ class MultiViewModelVersionViewCreateDTO:
 
     @property
     def version_id(self):
-        """Gets the version_id of this MultiViewModelVersionViewCreateDTO.
+        r"""Gets the version_id of this MultiViewModelVersionViewCreateDTO.
 
         **参数解释：**  版本对象ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -109,7 +109,7 @@ class MultiViewModelVersionViewCreateDTO:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this MultiViewModelVersionViewCreateDTO.
+        r"""Sets the version_id of this MultiViewModelVersionViewCreateDTO.
 
         **参数解释：**  版本对象ID。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -120,7 +120,7 @@ class MultiViewModelVersionViewCreateDTO:
 
     @property
     def work_copy_type(self):
-        """Gets the work_copy_type of this MultiViewModelVersionViewCreateDTO.
+        r"""Gets the work_copy_type of this MultiViewModelVersionViewCreateDTO.
 
         **参数解释：**  关系的复制类型。  **约束限制：**  不涉及。  **取值范围：**  - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，创建多维版本后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - NONE：创建多维版本后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。  **默认取值：**  不涉及。 
 
@@ -131,7 +131,7 @@ class MultiViewModelVersionViewCreateDTO:
 
     @work_copy_type.setter
     def work_copy_type(self, work_copy_type):
-        """Sets the work_copy_type of this MultiViewModelVersionViewCreateDTO.
+        r"""Sets the work_copy_type of this MultiViewModelVersionViewCreateDTO.
 
         **参数解释：**  关系的复制类型。  **约束限制：**  不涉及。  **取值范围：**  - BOTH：若存在关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - SOURCE：若存在关系实例引用此数据实例作为源端实例，创建多维版本后的数据实例将继承这些关系实例。 - TARGET：若存在关系实例引用此数据实例作为目标端实例，创建多维版本后的数据实例将继承这些关系实例。 - NONE：创建多维版本后的数据实例将不继承任何关系实例。 - CUSTOM：若指定的关系实体集合对应的关系实例引用此数据实例作为源端实例或目标端实例，创建多维版本后的数据实例将继承这些关系实例。  **默认取值：**  不涉及。 
 
@@ -142,7 +142,7 @@ class MultiViewModelVersionViewCreateDTO:
 
     @property
     def custom_link_set(self):
-        """Gets the custom_link_set of this MultiViewModelVersionViewCreateDTO.
+        r"""Gets the custom_link_set of this MultiViewModelVersionViewCreateDTO.
 
         **参数解释：**  关系实体名称集合，与workCopyType的值CUSTOM配合使用。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -153,7 +153,7 @@ class MultiViewModelVersionViewCreateDTO:
 
     @custom_link_set.setter
     def custom_link_set(self, custom_link_set):
-        """Sets the custom_link_set of this MultiViewModelVersionViewCreateDTO.
+        r"""Sets the custom_link_set of this MultiViewModelVersionViewCreateDTO.
 
         **参数解释：**  关系实体名称集合，与workCopyType的值CUSTOM配合使用。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -164,7 +164,7 @@ class MultiViewModelVersionViewCreateDTO:
 
     @property
     def need_set_null(self):
-        """Gets the need_set_null of this MultiViewModelVersionViewCreateDTO.
+        r"""Gets the need_set_null of this MultiViewModelVersionViewCreateDTO.
 
         **参数解释：**  指定不复制的属性，其值将被设置为null。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -175,7 +175,7 @@ class MultiViewModelVersionViewCreateDTO:
 
     @need_set_null.setter
     def need_set_null(self, need_set_null):
-        """Sets the need_set_null of this MultiViewModelVersionViewCreateDTO.
+        r"""Sets the need_set_null of this MultiViewModelVersionViewCreateDTO.
 
         **参数解释：**  指定不复制的属性，其值将被设置为null。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -186,7 +186,7 @@ class MultiViewModelVersionViewCreateDTO:
 
     @property
     def item(self):
-        """Gets the item of this MultiViewModelVersionViewCreateDTO.
+        r"""Gets the item of this MultiViewModelVersionViewCreateDTO.
 
         :return: The item of this MultiViewModelVersionViewCreateDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -195,7 +195,7 @@ class MultiViewModelVersionViewCreateDTO:
 
     @item.setter
     def item(self, item):
-        """Sets the item of this MultiViewModelVersionViewCreateDTO.
+        r"""Sets the item of this MultiViewModelVersionViewCreateDTO.
 
         :param item: The item of this MultiViewModelVersionViewCreateDTO.
         :type item: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`

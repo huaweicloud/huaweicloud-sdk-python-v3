@@ -25,7 +25,7 @@ class ListDelayConfigRequest:
     }
 
     def __init__(self, play_domain=None):
-        """ListDelayConfigRequest
+        r"""ListDelayConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListDelayConfigRequest:
 
     @property
     def play_domain(self):
-        """Gets the play_domain of this ListDelayConfigRequest.
+        r"""Gets the play_domain of this ListDelayConfigRequest.
 
         播放域名
 
@@ -53,7 +53,7 @@ class ListDelayConfigRequest:
 
     @play_domain.setter
     def play_domain(self, play_domain):
-        """Sets the play_domain of this ListDelayConfigRequest.
+        r"""Sets the play_domain of this ListDelayConfigRequest.
 
         播放域名
 

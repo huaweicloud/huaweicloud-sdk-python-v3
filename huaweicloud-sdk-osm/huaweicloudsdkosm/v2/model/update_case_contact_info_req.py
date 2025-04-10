@@ -35,7 +35,7 @@ class UpdateCaseContactInfoReq:
     }
 
     def __init__(self, area_code=None, remind_mobile=None, remind_mail=None, remind_time=None, group_id=None, extension_map=None):
-        """UpdateCaseContactInfoReq
+        r"""UpdateCaseContactInfoReq
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpdateCaseContactInfoReq:
 
     @property
     def area_code(self):
-        """Gets the area_code of this UpdateCaseContactInfoReq.
+        r"""Gets the area_code of this UpdateCaseContactInfoReq.
 
         国家码
 
@@ -89,7 +89,7 @@ class UpdateCaseContactInfoReq:
 
     @area_code.setter
     def area_code(self, area_code):
-        """Sets the area_code of this UpdateCaseContactInfoReq.
+        r"""Sets the area_code of this UpdateCaseContactInfoReq.
 
         国家码
 
@@ -100,7 +100,7 @@ class UpdateCaseContactInfoReq:
 
     @property
     def remind_mobile(self):
-        """Gets the remind_mobile of this UpdateCaseContactInfoReq.
+        r"""Gets the remind_mobile of this UpdateCaseContactInfoReq.
 
         联系手机号
 
@@ -111,7 +111,7 @@ class UpdateCaseContactInfoReq:
 
     @remind_mobile.setter
     def remind_mobile(self, remind_mobile):
-        """Sets the remind_mobile of this UpdateCaseContactInfoReq.
+        r"""Sets the remind_mobile of this UpdateCaseContactInfoReq.
 
         联系手机号
 
@@ -122,7 +122,7 @@ class UpdateCaseContactInfoReq:
 
     @property
     def remind_mail(self):
-        """Gets the remind_mail of this UpdateCaseContactInfoReq.
+        r"""Gets the remind_mail of this UpdateCaseContactInfoReq.
 
         联系邮箱
 
@@ -133,7 +133,7 @@ class UpdateCaseContactInfoReq:
 
     @remind_mail.setter
     def remind_mail(self, remind_mail):
-        """Sets the remind_mail of this UpdateCaseContactInfoReq.
+        r"""Sets the remind_mail of this UpdateCaseContactInfoReq.
 
         联系邮箱
 
@@ -144,7 +144,7 @@ class UpdateCaseContactInfoReq:
 
     @property
     def remind_time(self):
-        """Gets the remind_time of this UpdateCaseContactInfoReq.
+        r"""Gets the remind_time of this UpdateCaseContactInfoReq.
 
         联系时间
 
@@ -155,7 +155,7 @@ class UpdateCaseContactInfoReq:
 
     @remind_time.setter
     def remind_time(self, remind_time):
-        """Sets the remind_time of this UpdateCaseContactInfoReq.
+        r"""Sets the remind_time of this UpdateCaseContactInfoReq.
 
         联系时间
 
@@ -166,7 +166,7 @@ class UpdateCaseContactInfoReq:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateCaseContactInfoReq.
+        r"""Gets the group_id of this UpdateCaseContactInfoReq.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 
@@ -177,7 +177,7 @@ class UpdateCaseContactInfoReq:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateCaseContactInfoReq.
+        r"""Sets the group_id of this UpdateCaseContactInfoReq.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 
@@ -188,7 +188,7 @@ class UpdateCaseContactInfoReq:
 
     @property
     def extension_map(self):
-        """Gets the extension_map of this UpdateCaseContactInfoReq.
+        r"""Gets the extension_map of this UpdateCaseContactInfoReq.
 
         扩展参数
 
@@ -199,7 +199,7 @@ class UpdateCaseContactInfoReq:
 
     @extension_map.setter
     def extension_map(self, extension_map):
-        """Sets the extension_map of this UpdateCaseContactInfoReq.
+        r"""Sets the extension_map of this UpdateCaseContactInfoReq.
 
         扩展参数
 

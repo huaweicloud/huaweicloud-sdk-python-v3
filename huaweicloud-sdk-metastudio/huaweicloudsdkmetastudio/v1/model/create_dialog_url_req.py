@@ -27,7 +27,7 @@ class CreateDialogUrlReq:
     }
 
     def __init__(self, room_id=None, robot_id=None):
-        """CreateDialogUrlReq
+        r"""CreateDialogUrlReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateDialogUrlReq:
 
     @property
     def room_id(self):
-        """Gets the room_id of this CreateDialogUrlReq.
+        r"""Gets the room_id of this CreateDialogUrlReq.
 
         智能交互对话ID，获取方法请参考[创建智能交互对话直播间](CreateSmartChatRoom.xml)。
 
@@ -59,7 +59,7 @@ class CreateDialogUrlReq:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this CreateDialogUrlReq.
+        r"""Sets the room_id of this CreateDialogUrlReq.
 
         智能交互对话ID，获取方法请参考[创建智能交互对话直播间](CreateSmartChatRoom.xml)。
 
@@ -70,7 +70,7 @@ class CreateDialogUrlReq:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this CreateDialogUrlReq.
+        r"""Gets the robot_id of this CreateDialogUrlReq.
 
         应用ID。
 
@@ -81,7 +81,7 @@ class CreateDialogUrlReq:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this CreateDialogUrlReq.
+        r"""Sets the robot_id of this CreateDialogUrlReq.
 
         应用ID。
 

@@ -27,7 +27,7 @@ class AttachInternetBandwidthGlobalEipRequestBody:
     }
 
     def __init__(self, dry_run=None, global_eip=None):
-        """AttachInternetBandwidthGlobalEipRequestBody
+        r"""AttachInternetBandwidthGlobalEipRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AttachInternetBandwidthGlobalEipRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this AttachInternetBandwidthGlobalEipRequestBody.
+        r"""Gets the dry_run of this AttachInternetBandwidthGlobalEipRequestBody.
 
         :return: The dry_run of this AttachInternetBandwidthGlobalEipRequestBody.
         :rtype: bool
@@ -58,7 +58,7 @@ class AttachInternetBandwidthGlobalEipRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this AttachInternetBandwidthGlobalEipRequestBody.
+        r"""Sets the dry_run of this AttachInternetBandwidthGlobalEipRequestBody.
 
         :param dry_run: The dry_run of this AttachInternetBandwidthGlobalEipRequestBody.
         :type dry_run: bool
@@ -67,7 +67,7 @@ class AttachInternetBandwidthGlobalEipRequestBody:
 
     @property
     def global_eip(self):
-        """Gets the global_eip of this AttachInternetBandwidthGlobalEipRequestBody.
+        r"""Gets the global_eip of this AttachInternetBandwidthGlobalEipRequestBody.
 
         :return: The global_eip of this AttachInternetBandwidthGlobalEipRequestBody.
         :rtype: :class:`huaweicloudsdkgeip.v3.AttachInternetBandwidthGlobalEipRequestBodyGlobalEip`
@@ -76,7 +76,7 @@ class AttachInternetBandwidthGlobalEipRequestBody:
 
     @global_eip.setter
     def global_eip(self, global_eip):
-        """Sets the global_eip of this AttachInternetBandwidthGlobalEipRequestBody.
+        r"""Sets the global_eip of this AttachInternetBandwidthGlobalEipRequestBody.
 
         :param global_eip: The global_eip of this AttachInternetBandwidthGlobalEipRequestBody.
         :type global_eip: :class:`huaweicloudsdkgeip.v3.AttachInternetBandwidthGlobalEipRequestBodyGlobalEip`

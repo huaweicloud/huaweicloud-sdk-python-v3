@@ -30,7 +30,7 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
     }
 
     def __init__(self, proxy=None, master_instance=None, readonly_instances=None):
-        """ShowInformationAboutDatabaseProxyResponse
+        r"""ShowInformationAboutDatabaseProxyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
 
     @property
     def proxy(self):
-        """Gets the proxy of this ShowInformationAboutDatabaseProxyResponse.
+        r"""Gets the proxy of this ShowInformationAboutDatabaseProxyResponse.
 
         :return: The proxy of this ShowInformationAboutDatabaseProxyResponse.
         :rtype: :class:`huaweicloudsdkrds.v3.Proxy`
@@ -67,7 +67,7 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
 
     @proxy.setter
     def proxy(self, proxy):
-        """Sets the proxy of this ShowInformationAboutDatabaseProxyResponse.
+        r"""Sets the proxy of this ShowInformationAboutDatabaseProxyResponse.
 
         :param proxy: The proxy of this ShowInformationAboutDatabaseProxyResponse.
         :type proxy: :class:`huaweicloudsdkrds.v3.Proxy`
@@ -76,7 +76,7 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
 
     @property
     def master_instance(self):
-        """Gets the master_instance of this ShowInformationAboutDatabaseProxyResponse.
+        r"""Gets the master_instance of this ShowInformationAboutDatabaseProxyResponse.
 
         :return: The master_instance of this ShowInformationAboutDatabaseProxyResponse.
         :rtype: :class:`huaweicloudsdkrds.v3.MasterInstance`
@@ -85,7 +85,7 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
 
     @master_instance.setter
     def master_instance(self, master_instance):
-        """Sets the master_instance of this ShowInformationAboutDatabaseProxyResponse.
+        r"""Sets the master_instance of this ShowInformationAboutDatabaseProxyResponse.
 
         :param master_instance: The master_instance of this ShowInformationAboutDatabaseProxyResponse.
         :type master_instance: :class:`huaweicloudsdkrds.v3.MasterInstance`
@@ -94,7 +94,7 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
 
     @property
     def readonly_instances(self):
-        """Gets the readonly_instances of this ShowInformationAboutDatabaseProxyResponse.
+        r"""Gets the readonly_instances of this ShowInformationAboutDatabaseProxyResponse.
 
         只读实例信息。
 
@@ -105,7 +105,7 @@ class ShowInformationAboutDatabaseProxyResponse(SdkResponse):
 
     @readonly_instances.setter
     def readonly_instances(self, readonly_instances):
-        """Sets the readonly_instances of this ShowInformationAboutDatabaseProxyResponse.
+        r"""Sets the readonly_instances of this ShowInformationAboutDatabaseProxyResponse.
 
         只读实例信息。
 

@@ -25,7 +25,7 @@ class JobNodeSpecInfo:
     }
 
     def __init__(self, node_type=None):
-        """JobNodeSpecInfo
+        r"""JobNodeSpecInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class JobNodeSpecInfo:
 
     @property
     def node_type(self):
-        """Gets the node_type of this JobNodeSpecInfo.
+        r"""Gets the node_type of this JobNodeSpecInfo.
 
         实例规格编码。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。
 
@@ -53,7 +53,7 @@ class JobNodeSpecInfo:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this JobNodeSpecInfo.
+        r"""Sets the node_type of this JobNodeSpecInfo.
 
         实例规格编码。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。
 

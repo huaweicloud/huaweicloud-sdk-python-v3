@@ -29,7 +29,7 @@ class PrepaidOptions:
     }
 
     def __init__(self, order_id=None, product_id=None, pay_mode=None):
-        """PrepaidOptions
+        r"""PrepaidOptions
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PrepaidOptions:
 
     @property
     def order_id(self):
-        """Gets the order_id of this PrepaidOptions.
+        r"""Gets the order_id of this PrepaidOptions.
 
         订单ID
 
@@ -68,7 +68,7 @@ class PrepaidOptions:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this PrepaidOptions.
+        r"""Sets the order_id of this PrepaidOptions.
 
         订单ID
 
@@ -79,7 +79,7 @@ class PrepaidOptions:
 
     @property
     def product_id(self):
-        """Gets the product_id of this PrepaidOptions.
+        r"""Gets the product_id of this PrepaidOptions.
 
         产品ID
 
@@ -90,7 +90,7 @@ class PrepaidOptions:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this PrepaidOptions.
+        r"""Sets the product_id of this PrepaidOptions.
 
         产品ID
 
@@ -101,7 +101,7 @@ class PrepaidOptions:
 
     @property
     def pay_mode(self):
-        """Gets the pay_mode of this PrepaidOptions.
+        r"""Gets the pay_mode of this PrepaidOptions.
 
         :return: The pay_mode of this PrepaidOptions.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.PayMode`
@@ -110,7 +110,7 @@ class PrepaidOptions:
 
     @pay_mode.setter
     def pay_mode(self, pay_mode):
-        """Sets the pay_mode of this PrepaidOptions.
+        r"""Sets the pay_mode of this PrepaidOptions.
 
         :param pay_mode: The pay_mode of this PrepaidOptions.
         :type pay_mode: :class:`huaweicloudsdkcloudpond.v1.PayMode`

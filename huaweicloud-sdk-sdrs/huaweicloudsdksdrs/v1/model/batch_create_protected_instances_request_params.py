@@ -41,7 +41,7 @@ class BatchCreateProtectedInstancesRequestParams:
     }
 
     def __init__(self, name_prefix=None, description=None, server_group_id=None, cluster_id=None, primary_subnet_id=None, tenancy=None, dedicated_host_id=None, servers=None, tags=None):
-        """BatchCreateProtectedInstancesRequestParams
+        r"""BatchCreateProtectedInstancesRequestParams
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @property
     def name_prefix(self):
-        """Gets the name_prefix of this BatchCreateProtectedInstancesRequestParams.
+        r"""Gets the name_prefix of this BatchCreateProtectedInstancesRequestParams.
 
         保护实例的名称前缀，批量创建保护实例时，为区分不同保护实例，创建过程中系统会自动在名称后加\"-0001\"的类似标记，故此时名称的长度为[1-59]个字符。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 
@@ -107,7 +107,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @name_prefix.setter
     def name_prefix(self, name_prefix):
-        """Sets the name_prefix of this BatchCreateProtectedInstancesRequestParams.
+        r"""Sets the name_prefix of this BatchCreateProtectedInstancesRequestParams.
 
         保护实例的名称前缀，批量创建保护实例时，为区分不同保护实例，创建过程中系统会自动在名称后加\"-0001\"的类似标记，故此时名称的长度为[1-59]个字符。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 
@@ -118,7 +118,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @property
     def description(self):
-        """Gets the description of this BatchCreateProtectedInstancesRequestParams.
+        r"""Gets the description of this BatchCreateProtectedInstancesRequestParams.
 
         保护实例的描述，最大支持长度为64个字符。不能包含左尖括号（<）或右尖括号（>）。
 
@@ -129,7 +129,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BatchCreateProtectedInstancesRequestParams.
+        r"""Sets the description of this BatchCreateProtectedInstancesRequestParams.
 
         保护实例的描述，最大支持长度为64个字符。不能包含左尖括号（<）或右尖括号（>）。
 
@@ -140,7 +140,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this BatchCreateProtectedInstancesRequestParams.
+        r"""Gets the server_group_id of this BatchCreateProtectedInstancesRequestParams.
 
         需要加入的保护组ID。
 
@@ -151,7 +151,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this BatchCreateProtectedInstancesRequestParams.
+        r"""Sets the server_group_id of this BatchCreateProtectedInstancesRequestParams.
 
         需要加入的保护组ID。
 
@@ -162,7 +162,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this BatchCreateProtectedInstancesRequestParams.
+        r"""Gets the cluster_id of this BatchCreateProtectedInstancesRequestParams.
 
         专属分布式存储池ID。当容灾站点磁盘选择专属分布式存储时指定该字段。
 
@@ -173,7 +173,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this BatchCreateProtectedInstancesRequestParams.
+        r"""Sets the cluster_id of this BatchCreateProtectedInstancesRequestParams.
 
         专属分布式存储池ID。当容灾站点磁盘选择专属分布式存储时指定该字段。
 
@@ -184,7 +184,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @property
     def primary_subnet_id(self):
-        """Gets the primary_subnet_id of this BatchCreateProtectedInstancesRequestParams.
+        r"""Gets the primary_subnet_id of this BatchCreateProtectedInstancesRequestParams.
 
         容灾站点云服务器主网卡所在的子网subnetID，与neutron_network_id字段值一致。
 
@@ -195,7 +195,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @primary_subnet_id.setter
     def primary_subnet_id(self, primary_subnet_id):
-        """Sets the primary_subnet_id of this BatchCreateProtectedInstancesRequestParams.
+        r"""Sets the primary_subnet_id of this BatchCreateProtectedInstancesRequestParams.
 
         容灾站点云服务器主网卡所在的子网subnetID，与neutron_network_id字段值一致。
 
@@ -206,7 +206,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @property
     def tenancy(self):
-        """Gets the tenancy of this BatchCreateProtectedInstancesRequestParams.
+        r"""Gets the tenancy of this BatchCreateProtectedInstancesRequestParams.
 
         在专属主机或共享池中创建容灾站点云服务器，默认为在共享池中创建。值为：shared或dedicated。shared：表示共享池。dedicated：表示专属主机。
 
@@ -217,7 +217,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @tenancy.setter
     def tenancy(self, tenancy):
-        """Sets the tenancy of this BatchCreateProtectedInstancesRequestParams.
+        r"""Sets the tenancy of this BatchCreateProtectedInstancesRequestParams.
 
         在专属主机或共享池中创建容灾站点云服务器，默认为在共享池中创建。值为：shared或dedicated。shared：表示共享池。dedicated：表示专属主机。
 
@@ -228,7 +228,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this BatchCreateProtectedInstancesRequestParams.
+        r"""Gets the dedicated_host_id of this BatchCreateProtectedInstancesRequestParams.
 
         专属主机id，此属性仅在tenancy值为dedicated时有效。若不指定此属性，系统将自动分配租户可以自动放置弹性云服务器的专属主机。
 
@@ -239,7 +239,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this BatchCreateProtectedInstancesRequestParams.
+        r"""Sets the dedicated_host_id of this BatchCreateProtectedInstancesRequestParams.
 
         专属主机id，此属性仅在tenancy值为dedicated时有效。若不指定此属性，系统将自动分配租户可以自动放置弹性云服务器的专属主机。
 
@@ -250,7 +250,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @property
     def servers(self):
-        """Gets the servers of this BatchCreateProtectedInstancesRequestParams.
+        r"""Gets the servers of this BatchCreateProtectedInstancesRequestParams.
 
         用于创建保护实例的云服务器信息列表。
 
@@ -261,7 +261,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this BatchCreateProtectedInstancesRequestParams.
+        r"""Sets the servers of this BatchCreateProtectedInstancesRequestParams.
 
         用于创建保护实例的云服务器信息列表。
 
@@ -272,7 +272,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateProtectedInstancesRequestParams.
+        r"""Gets the tags of this BatchCreateProtectedInstancesRequestParams.
 
         标签列表。
 
@@ -283,7 +283,7 @@ class BatchCreateProtectedInstancesRequestParams:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateProtectedInstancesRequestParams.
+        r"""Sets the tags of this BatchCreateProtectedInstancesRequestParams.
 
         标签列表。
 

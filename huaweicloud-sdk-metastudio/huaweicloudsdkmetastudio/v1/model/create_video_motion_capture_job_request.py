@@ -29,7 +29,7 @@ class CreateVideoMotionCaptureJobRequest:
     }
 
     def __init__(self, x_app_user_id=None, x_user_privilege=None, body=None):
-        """CreateVideoMotionCaptureJobRequest
+        r"""CreateVideoMotionCaptureJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateVideoMotionCaptureJobRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreateVideoMotionCaptureJobRequest.
+        r"""Gets the x_app_user_id of this CreateVideoMotionCaptureJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -68,7 +68,7 @@ class CreateVideoMotionCaptureJobRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreateVideoMotionCaptureJobRequest.
+        r"""Sets the x_app_user_id of this CreateVideoMotionCaptureJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -79,7 +79,7 @@ class CreateVideoMotionCaptureJobRequest:
 
     @property
     def x_user_privilege(self):
-        """Gets the x_user_privilege of this CreateVideoMotionCaptureJobRequest.
+        r"""Gets the x_user_privilege of this CreateVideoMotionCaptureJobRequest.
 
         测试用户判断。
 
@@ -90,7 +90,7 @@ class CreateVideoMotionCaptureJobRequest:
 
     @x_user_privilege.setter
     def x_user_privilege(self, x_user_privilege):
-        """Sets the x_user_privilege of this CreateVideoMotionCaptureJobRequest.
+        r"""Sets the x_user_privilege of this CreateVideoMotionCaptureJobRequest.
 
         测试用户判断。
 
@@ -101,7 +101,7 @@ class CreateVideoMotionCaptureJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVideoMotionCaptureJobRequest.
+        r"""Gets the body of this CreateVideoMotionCaptureJobRequest.
 
         :return: The body of this CreateVideoMotionCaptureJobRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VideoMotionCaptureJobReq`
@@ -110,7 +110,7 @@ class CreateVideoMotionCaptureJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVideoMotionCaptureJobRequest.
+        r"""Sets the body of this CreateVideoMotionCaptureJobRequest.
 
         :param body: The body of this CreateVideoMotionCaptureJobRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.VideoMotionCaptureJobReq`

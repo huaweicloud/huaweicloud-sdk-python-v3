@@ -35,7 +35,7 @@ class SecurityGroup:
     }
 
     def __init__(self, name=None, description=None, id=None, vpc_id=None, enterprise_project_id=None, security_group_rules=None):
-        """SecurityGroup
+        r"""SecurityGroup
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class SecurityGroup:
 
     @property
     def name(self):
-        """Gets the name of this SecurityGroup.
+        r"""Gets the name of this SecurityGroup.
 
         安全组名称
 
@@ -86,7 +86,7 @@ class SecurityGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SecurityGroup.
+        r"""Sets the name of this SecurityGroup.
 
         安全组名称
 
@@ -97,7 +97,7 @@ class SecurityGroup:
 
     @property
     def description(self):
-        """Gets the description of this SecurityGroup.
+        r"""Gets the description of this SecurityGroup.
 
         安全组描述
 
@@ -108,7 +108,7 @@ class SecurityGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SecurityGroup.
+        r"""Sets the description of this SecurityGroup.
 
         安全组描述
 
@@ -119,7 +119,7 @@ class SecurityGroup:
 
     @property
     def id(self):
-        """Gets the id of this SecurityGroup.
+        r"""Gets the id of this SecurityGroup.
 
         安全组唯一标识
 
@@ -130,7 +130,7 @@ class SecurityGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecurityGroup.
+        r"""Sets the id of this SecurityGroup.
 
         安全组唯一标识
 
@@ -141,7 +141,7 @@ class SecurityGroup:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this SecurityGroup.
+        r"""Gets the vpc_id of this SecurityGroup.
 
         安全组所在的vpc的资源标识
 
@@ -152,7 +152,7 @@ class SecurityGroup:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this SecurityGroup.
+        r"""Sets the vpc_id of this SecurityGroup.
 
         安全组所在的vpc的资源标识
 
@@ -163,7 +163,7 @@ class SecurityGroup:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SecurityGroup.
+        r"""Gets the enterprise_project_id of this SecurityGroup.
 
         功能说明：企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
@@ -174,7 +174,7 @@ class SecurityGroup:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SecurityGroup.
+        r"""Sets the enterprise_project_id of this SecurityGroup.
 
         功能说明：企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
@@ -185,7 +185,7 @@ class SecurityGroup:
 
     @property
     def security_group_rules(self):
-        """Gets the security_group_rules of this SecurityGroup.
+        r"""Gets the security_group_rules of this SecurityGroup.
 
         安全组规则
 
@@ -196,7 +196,7 @@ class SecurityGroup:
 
     @security_group_rules.setter
     def security_group_rules(self, security_group_rules):
-        """Sets the security_group_rules of this SecurityGroup.
+        r"""Sets the security_group_rules of this SecurityGroup.
 
         安全组规则
 

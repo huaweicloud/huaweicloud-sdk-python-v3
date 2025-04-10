@@ -27,7 +27,7 @@ class ShowOptmJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, job_id=None):
-        """ShowOptmJobRequest
+        r"""ShowOptmJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowOptmJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowOptmJobRequest.
+        r"""Gets the eihealth_project_id of this ShowOptmJobRequest.
 
         平台项目ID。
 
@@ -59,7 +59,7 @@ class ShowOptmJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowOptmJobRequest.
+        r"""Sets the eihealth_project_id of this ShowOptmJobRequest.
 
         平台项目ID。
 
@@ -70,7 +70,7 @@ class ShowOptmJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowOptmJobRequest.
+        r"""Gets the job_id of this ShowOptmJobRequest.
 
         作业id
 
@@ -81,7 +81,7 @@ class ShowOptmJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowOptmJobRequest.
+        r"""Sets the job_id of this ShowOptmJobRequest.
 
         作业id
 

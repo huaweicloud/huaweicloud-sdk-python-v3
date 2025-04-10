@@ -27,7 +27,7 @@ class DeleteWorkspaceusersRequest:
     }
 
     def __init__(self, workspace_id=None, body=None):
-        """DeleteWorkspaceusersRequest
+        r"""DeleteWorkspaceusersRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteWorkspaceusersRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeleteWorkspaceusersRequest.
+        r"""Gets the workspace_id of this DeleteWorkspaceusersRequest.
 
         工作空间id
 
@@ -60,7 +60,7 @@ class DeleteWorkspaceusersRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeleteWorkspaceusersRequest.
+        r"""Sets the workspace_id of this DeleteWorkspaceusersRequest.
 
         工作空间id
 
@@ -71,7 +71,7 @@ class DeleteWorkspaceusersRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteWorkspaceusersRequest.
+        r"""Gets the body of this DeleteWorkspaceusersRequest.
 
         :return: The body of this DeleteWorkspaceusersRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApigDelUserParams`
@@ -80,7 +80,7 @@ class DeleteWorkspaceusersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteWorkspaceusersRequest.
+        r"""Sets the body of this DeleteWorkspaceusersRequest.
 
         :param body: The body of this DeleteWorkspaceusersRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApigDelUserParams`

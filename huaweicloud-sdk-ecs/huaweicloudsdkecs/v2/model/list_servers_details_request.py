@@ -49,7 +49,7 @@ class ListServersDetailsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, flavor=None, ip=None, limit=None, name=None, not_tags=None, offset=None, reservation_id=None, status=None, tags=None, ip_eq=None, server_id=None, marker=None):
-        """ListServersDetailsRequest
+        r"""ListServersDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListServersDetailsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListServersDetailsRequest.
+        r"""Gets the enterprise_project_id of this ListServersDetailsRequest.
 
         查询绑定某个企业项目的弹性云服务器。  若需要查询当前用户所有企业项目绑定的弹性云服务，请传参all_granted_eps。
 
@@ -138,7 +138,7 @@ class ListServersDetailsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListServersDetailsRequest.
+        r"""Sets the enterprise_project_id of this ListServersDetailsRequest.
 
         查询绑定某个企业项目的弹性云服务器。  若需要查询当前用户所有企业项目绑定的弹性云服务，请传参all_granted_eps。
 
@@ -149,7 +149,7 @@ class ListServersDetailsRequest:
 
     @property
     def flavor(self):
-        """Gets the flavor of this ListServersDetailsRequest.
+        r"""Gets the flavor of this ListServersDetailsRequest.
 
         云服务器规格ID,已上线的规格请参见《弹性云服务器用户指南》的“实例和应用场景”章节。
 
@@ -160,7 +160,7 @@ class ListServersDetailsRequest:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ListServersDetailsRequest.
+        r"""Sets the flavor of this ListServersDetailsRequest.
 
         云服务器规格ID,已上线的规格请参见《弹性云服务器用户指南》的“实例和应用场景”章节。
 
@@ -171,7 +171,7 @@ class ListServersDetailsRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListServersDetailsRequest.
+        r"""Gets the ip of this ListServersDetailsRequest.
 
         IPv4地址过滤结果，匹配规则为模糊匹配。
 
@@ -182,7 +182,7 @@ class ListServersDetailsRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListServersDetailsRequest.
+        r"""Sets the ip of this ListServersDetailsRequest.
 
         IPv4地址过滤结果，匹配规则为模糊匹配。
 
@@ -193,7 +193,7 @@ class ListServersDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServersDetailsRequest.
+        r"""Gets the limit of this ListServersDetailsRequest.
 
         查询返回云服务器当前页面的大小。每页默认值是25，最多返回1000台云服务器的信息。
 
@@ -204,7 +204,7 @@ class ListServersDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServersDetailsRequest.
+        r"""Sets the limit of this ListServersDetailsRequest.
 
         查询返回云服务器当前页面的大小。每页默认值是25，最多返回1000台云服务器的信息。
 
@@ -215,7 +215,7 @@ class ListServersDetailsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListServersDetailsRequest.
+        r"""Gets the name of this ListServersDetailsRequest.
 
         云服务器名称，匹配规则为模糊匹配。
 
@@ -226,7 +226,7 @@ class ListServersDetailsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListServersDetailsRequest.
+        r"""Sets the name of this ListServersDetailsRequest.
 
         云服务器名称，匹配规则为模糊匹配。
 
@@ -237,7 +237,7 @@ class ListServersDetailsRequest:
 
     @property
     def not_tags(self):
-        """Gets the not_tags of this ListServersDetailsRequest.
+        r"""Gets the not_tags of this ListServersDetailsRequest.
 
         查询tag字段中不包含该值的云服务器。
 
@@ -248,7 +248,7 @@ class ListServersDetailsRequest:
 
     @not_tags.setter
     def not_tags(self, not_tags):
-        """Sets the not_tags of this ListServersDetailsRequest.
+        r"""Sets the not_tags of this ListServersDetailsRequest.
 
         查询tag字段中不包含该值的云服务器。
 
@@ -259,7 +259,7 @@ class ListServersDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListServersDetailsRequest.
+        r"""Gets the offset of this ListServersDetailsRequest.
 
         页码。 当前页面数，默认为1，取值范围大于等于0。 当取值为0时，系统默认返回第1页，与取值为1时相同。 建议设置该参数大于等于1。
 
@@ -270,7 +270,7 @@ class ListServersDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListServersDetailsRequest.
+        r"""Sets the offset of this ListServersDetailsRequest.
 
         页码。 当前页面数，默认为1，取值范围大于等于0。 当取值为0时，系统默认返回第1页，与取值为1时相同。 建议设置该参数大于等于1。
 
@@ -281,7 +281,7 @@ class ListServersDetailsRequest:
 
     @property
     def reservation_id(self):
-        """Gets the reservation_id of this ListServersDetailsRequest.
+        r"""Gets the reservation_id of this ListServersDetailsRequest.
 
         批量创建弹性云服务器时，指定返回的ID，用于查询本次批量创建的弹性云服务器。
 
@@ -292,7 +292,7 @@ class ListServersDetailsRequest:
 
     @reservation_id.setter
     def reservation_id(self, reservation_id):
-        """Sets the reservation_id of this ListServersDetailsRequest.
+        r"""Sets the reservation_id of this ListServersDetailsRequest.
 
         批量创建弹性云服务器时，指定返回的ID，用于查询本次批量创建的弹性云服务器。
 
@@ -303,7 +303,7 @@ class ListServersDetailsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListServersDetailsRequest.
+        r"""Gets the status of this ListServersDetailsRequest.
 
         云服务器状态。  取值范围：  ACTIVE， BUILD，DELETED，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  只有管理员可以使用“deleted”状态过滤查询已经删除的弹性云服务器。  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
 
@@ -314,7 +314,7 @@ class ListServersDetailsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListServersDetailsRequest.
+        r"""Sets the status of this ListServersDetailsRequest.
 
         云服务器状态。  取值范围：  ACTIVE， BUILD，DELETED，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  只有管理员可以使用“deleted”状态过滤查询已经删除的弹性云服务器。  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
 
@@ -325,7 +325,7 @@ class ListServersDetailsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListServersDetailsRequest.
+        r"""Gets the tags of this ListServersDetailsRequest.
 
         查询tag字段中包含该值的云服务器。
 
@@ -336,7 +336,7 @@ class ListServersDetailsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListServersDetailsRequest.
+        r"""Sets the tags of this ListServersDetailsRequest.
 
         查询tag字段中包含该值的云服务器。
 
@@ -347,7 +347,7 @@ class ListServersDetailsRequest:
 
     @property
     def ip_eq(self):
-        """Gets the ip_eq of this ListServersDetailsRequest.
+        r"""Gets the ip_eq of this ListServersDetailsRequest.
 
         IPv4地址过滤结果，匹配规则为精确匹配。
 
@@ -358,7 +358,7 @@ class ListServersDetailsRequest:
 
     @ip_eq.setter
     def ip_eq(self, ip_eq):
-        """Sets the ip_eq of this ListServersDetailsRequest.
+        r"""Sets the ip_eq of this ListServersDetailsRequest.
 
         IPv4地址过滤结果，匹配规则为精确匹配。
 
@@ -369,7 +369,7 @@ class ListServersDetailsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListServersDetailsRequest.
+        r"""Gets the server_id of this ListServersDetailsRequest.
 
         云服务器ID，格式为UUID，匹配规则为精确匹配  示例: server_id={id1},{id2}  说明： 在使用server_id作为过滤条件时，不能同时使用其他过滤条件。如果同时指定server_id及其他过滤条件，则以server_id条件为准，其他过滤条件会被忽略 当server_id中含有不存在的云服务器ID时，返回的响应参数中该云服务器ID对应的servers结构体中除了id和fault其它字段均为null 为了避免API的URI过长，建议一次查询的server_id个数不超过100个
 
@@ -380,7 +380,7 @@ class ListServersDetailsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListServersDetailsRequest.
+        r"""Sets the server_id of this ListServersDetailsRequest.
 
         云服务器ID，格式为UUID，匹配规则为精确匹配  示例: server_id={id1},{id2}  说明： 在使用server_id作为过滤条件时，不能同时使用其他过滤条件。如果同时指定server_id及其他过滤条件，则以server_id条件为准，其他过滤条件会被忽略 当server_id中含有不存在的云服务器ID时，返回的响应参数中该云服务器ID对应的servers结构体中除了id和fault其它字段均为null 为了避免API的URI过长，建议一次查询的server_id个数不超过100个
 
@@ -391,7 +391,7 @@ class ListServersDetailsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListServersDetailsRequest.
+        r"""Gets the marker of this ListServersDetailsRequest.
 
         以单页最后一条server的id作为分页标记。
 
@@ -402,7 +402,7 @@ class ListServersDetailsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListServersDetailsRequest.
+        r"""Sets the marker of this ListServersDetailsRequest.
 
         以单页最后一条server的id作为分页标记。
 

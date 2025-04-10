@@ -49,7 +49,7 @@ class UserChangeHistoryResponseInfo:
     }
 
     def __init__(self, agent_id=None, change_type=None, host_id=None, host_name=None, private_ip=None, login_permission=None, root_permission=None, user_group_name=None, user_home_dir=None, shell=None, user_name=None, expire_time=None, recent_scan_time=None):
-        """UserChangeHistoryResponseInfo
+        r"""UserChangeHistoryResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class UserChangeHistoryResponseInfo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this UserChangeHistoryResponseInfo.
+        r"""Gets the agent_id of this UserChangeHistoryResponseInfo.
 
         Agent ID
 
@@ -138,7 +138,7 @@ class UserChangeHistoryResponseInfo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this UserChangeHistoryResponseInfo.
+        r"""Sets the agent_id of this UserChangeHistoryResponseInfo.
 
         Agent ID
 
@@ -149,7 +149,7 @@ class UserChangeHistoryResponseInfo:
 
     @property
     def change_type(self):
-        """Gets the change_type of this UserChangeHistoryResponseInfo.
+        r"""Gets the change_type of this UserChangeHistoryResponseInfo.
 
         变更类型   - ADD ：添加   - DELETE ：删除   - MODIFY ： 修改
 
@@ -160,7 +160,7 @@ class UserChangeHistoryResponseInfo:
 
     @change_type.setter
     def change_type(self, change_type):
-        """Sets the change_type of this UserChangeHistoryResponseInfo.
+        r"""Sets the change_type of this UserChangeHistoryResponseInfo.
 
         变更类型   - ADD ：添加   - DELETE ：删除   - MODIFY ： 修改
 
@@ -171,7 +171,7 @@ class UserChangeHistoryResponseInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this UserChangeHistoryResponseInfo.
+        r"""Gets the host_id of this UserChangeHistoryResponseInfo.
 
         主机ID
 
@@ -182,7 +182,7 @@ class UserChangeHistoryResponseInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this UserChangeHistoryResponseInfo.
+        r"""Sets the host_id of this UserChangeHistoryResponseInfo.
 
         主机ID
 
@@ -193,7 +193,7 @@ class UserChangeHistoryResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this UserChangeHistoryResponseInfo.
+        r"""Gets the host_name of this UserChangeHistoryResponseInfo.
 
         服务器名称
 
@@ -204,7 +204,7 @@ class UserChangeHistoryResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this UserChangeHistoryResponseInfo.
+        r"""Sets the host_name of this UserChangeHistoryResponseInfo.
 
         服务器名称
 
@@ -215,7 +215,7 @@ class UserChangeHistoryResponseInfo:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this UserChangeHistoryResponseInfo.
+        r"""Gets the private_ip of this UserChangeHistoryResponseInfo.
 
         服务器私有IP
 
@@ -226,7 +226,7 @@ class UserChangeHistoryResponseInfo:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this UserChangeHistoryResponseInfo.
+        r"""Sets the private_ip of this UserChangeHistoryResponseInfo.
 
         服务器私有IP
 
@@ -237,7 +237,7 @@ class UserChangeHistoryResponseInfo:
 
     @property
     def login_permission(self):
-        """Gets the login_permission of this UserChangeHistoryResponseInfo.
+        r"""Gets the login_permission of this UserChangeHistoryResponseInfo.
 
         是否有登录权限
 
@@ -248,7 +248,7 @@ class UserChangeHistoryResponseInfo:
 
     @login_permission.setter
     def login_permission(self, login_permission):
-        """Sets the login_permission of this UserChangeHistoryResponseInfo.
+        r"""Sets the login_permission of this UserChangeHistoryResponseInfo.
 
         是否有登录权限
 
@@ -259,7 +259,7 @@ class UserChangeHistoryResponseInfo:
 
     @property
     def root_permission(self):
-        """Gets the root_permission of this UserChangeHistoryResponseInfo.
+        r"""Gets the root_permission of this UserChangeHistoryResponseInfo.
 
         是否有root权限
 
@@ -270,7 +270,7 @@ class UserChangeHistoryResponseInfo:
 
     @root_permission.setter
     def root_permission(self, root_permission):
-        """Sets the root_permission of this UserChangeHistoryResponseInfo.
+        r"""Sets the root_permission of this UserChangeHistoryResponseInfo.
 
         是否有root权限
 
@@ -281,7 +281,7 @@ class UserChangeHistoryResponseInfo:
 
     @property
     def user_group_name(self):
-        """Gets the user_group_name of this UserChangeHistoryResponseInfo.
+        r"""Gets the user_group_name of this UserChangeHistoryResponseInfo.
 
         用户组
 
@@ -292,7 +292,7 @@ class UserChangeHistoryResponseInfo:
 
     @user_group_name.setter
     def user_group_name(self, user_group_name):
-        """Sets the user_group_name of this UserChangeHistoryResponseInfo.
+        r"""Sets the user_group_name of this UserChangeHistoryResponseInfo.
 
         用户组
 
@@ -303,7 +303,7 @@ class UserChangeHistoryResponseInfo:
 
     @property
     def user_home_dir(self):
-        """Gets the user_home_dir of this UserChangeHistoryResponseInfo.
+        r"""Gets the user_home_dir of this UserChangeHistoryResponseInfo.
 
         用户目录
 
@@ -314,7 +314,7 @@ class UserChangeHistoryResponseInfo:
 
     @user_home_dir.setter
     def user_home_dir(self, user_home_dir):
-        """Sets the user_home_dir of this UserChangeHistoryResponseInfo.
+        r"""Sets the user_home_dir of this UserChangeHistoryResponseInfo.
 
         用户目录
 
@@ -325,7 +325,7 @@ class UserChangeHistoryResponseInfo:
 
     @property
     def shell(self):
-        """Gets the shell of this UserChangeHistoryResponseInfo.
+        r"""Gets the shell of this UserChangeHistoryResponseInfo.
 
         用户启动shell
 
@@ -336,7 +336,7 @@ class UserChangeHistoryResponseInfo:
 
     @shell.setter
     def shell(self, shell):
-        """Sets the shell of this UserChangeHistoryResponseInfo.
+        r"""Sets the shell of this UserChangeHistoryResponseInfo.
 
         用户启动shell
 
@@ -347,7 +347,7 @@ class UserChangeHistoryResponseInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UserChangeHistoryResponseInfo.
+        r"""Gets the user_name of this UserChangeHistoryResponseInfo.
 
         账号名称
 
@@ -358,7 +358,7 @@ class UserChangeHistoryResponseInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UserChangeHistoryResponseInfo.
+        r"""Sets the user_name of this UserChangeHistoryResponseInfo.
 
         账号名称
 
@@ -369,7 +369,7 @@ class UserChangeHistoryResponseInfo:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this UserChangeHistoryResponseInfo.
+        r"""Gets the expire_time of this UserChangeHistoryResponseInfo.
 
         到期时间，采用时间戳，默认毫秒，
 
@@ -380,7 +380,7 @@ class UserChangeHistoryResponseInfo:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this UserChangeHistoryResponseInfo.
+        r"""Sets the expire_time of this UserChangeHistoryResponseInfo.
 
         到期时间，采用时间戳，默认毫秒，
 
@@ -391,7 +391,7 @@ class UserChangeHistoryResponseInfo:
 
     @property
     def recent_scan_time(self):
-        """Gets the recent_scan_time of this UserChangeHistoryResponseInfo.
+        r"""Gets the recent_scan_time of this UserChangeHistoryResponseInfo.
 
         账号增加、修改、删除等操作的变更时间
 
@@ -402,7 +402,7 @@ class UserChangeHistoryResponseInfo:
 
     @recent_scan_time.setter
     def recent_scan_time(self, recent_scan_time):
-        """Sets the recent_scan_time of this UserChangeHistoryResponseInfo.
+        r"""Sets the recent_scan_time of this UserChangeHistoryResponseInfo.
 
         账号增加、修改、删除等操作的变更时间
 

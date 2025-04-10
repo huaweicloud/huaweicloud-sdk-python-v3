@@ -27,7 +27,7 @@ class CharacterDimension:
     }
 
     def __init__(self, height=None, width=None):
-        """CharacterDimension
+        r"""CharacterDimension
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CharacterDimension:
 
     @property
     def height(self):
-        """Gets the height of this CharacterDimension.
+        r"""Gets the height of this CharacterDimension.
 
         角色的高度
 
@@ -61,7 +61,7 @@ class CharacterDimension:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this CharacterDimension.
+        r"""Sets the height of this CharacterDimension.
 
         角色的高度
 
@@ -72,7 +72,7 @@ class CharacterDimension:
 
     @property
     def width(self):
-        """Gets the width of this CharacterDimension.
+        r"""Gets the width of this CharacterDimension.
 
         角色的宽度
 
@@ -83,7 +83,7 @@ class CharacterDimension:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this CharacterDimension.
+        r"""Sets the width of this CharacterDimension.
 
         角色的宽度
 

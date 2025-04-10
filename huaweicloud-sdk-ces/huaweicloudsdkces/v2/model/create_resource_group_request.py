@@ -25,7 +25,7 @@ class CreateResourceGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateResourceGroupRequest
+        r"""CreateResourceGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateResourceGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResourceGroupRequest.
+        r"""Gets the body of this CreateResourceGroupRequest.
 
         :return: The body of this CreateResourceGroupRequest.
         :rtype: :class:`huaweicloudsdkces.v2.CreateResourceGroupRequestBody`
@@ -52,7 +52,7 @@ class CreateResourceGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResourceGroupRequest.
+        r"""Sets the body of this CreateResourceGroupRequest.
 
         :param body: The body of this CreateResourceGroupRequest.
         :type body: :class:`huaweicloudsdkces.v2.CreateResourceGroupRequestBody`

@@ -25,7 +25,7 @@ class ShowCloudPhoneDetailRequest:
     }
 
     def __init__(self, phone_id=None):
-        """ShowCloudPhoneDetailRequest
+        r"""ShowCloudPhoneDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCloudPhoneDetailRequest:
 
     @property
     def phone_id(self):
-        """Gets the phone_id of this ShowCloudPhoneDetailRequest.
+        r"""Gets the phone_id of this ShowCloudPhoneDetailRequest.
 
         云手机id。
 
@@ -53,7 +53,7 @@ class ShowCloudPhoneDetailRequest:
 
     @phone_id.setter
     def phone_id(self, phone_id):
-        """Sets the phone_id of this ShowCloudPhoneDetailRequest.
+        r"""Sets the phone_id of this ShowCloudPhoneDetailRequest.
 
         云手机id。
 

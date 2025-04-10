@@ -24,7 +24,7 @@ class UpdateMaintenanceWindowResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateMaintenanceWindowResponse
+        r"""UpdateMaintenanceWindowResponse
 
         The model defined in huaweicloud sdk
 

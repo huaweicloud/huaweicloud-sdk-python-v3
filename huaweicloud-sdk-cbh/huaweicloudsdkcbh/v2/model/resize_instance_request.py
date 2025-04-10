@@ -25,7 +25,7 @@ class ResizeInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """ResizeInstanceRequest
+        r"""ResizeInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResizeInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResizeInstanceRequest.
+        r"""Gets the body of this ResizeInstanceRequest.
 
         :return: The body of this ResizeInstanceRequest.
         :rtype: :class:`huaweicloudsdkcbh.v2.ChangeInstanceRequestBody`
@@ -52,7 +52,7 @@ class ResizeInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResizeInstanceRequest.
+        r"""Sets the body of this ResizeInstanceRequest.
 
         :param body: The body of this ResizeInstanceRequest.
         :type body: :class:`huaweicloudsdkcbh.v2.ChangeInstanceRequestBody`

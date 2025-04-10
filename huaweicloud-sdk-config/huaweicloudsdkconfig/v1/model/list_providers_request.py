@@ -31,7 +31,7 @@ class ListProvidersRequest:
     }
 
     def __init__(self, offset=None, limit=None, track=None, x_language=None):
-        """ListProvidersRequest
+        r"""ListProvidersRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListProvidersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProvidersRequest.
+        r"""Gets the offset of this ListProvidersRequest.
 
         分页偏移
 
@@ -75,7 +75,7 @@ class ListProvidersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProvidersRequest.
+        r"""Sets the offset of this ListProvidersRequest.
 
         分页偏移
 
@@ -86,7 +86,7 @@ class ListProvidersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProvidersRequest.
+        r"""Gets the limit of this ListProvidersRequest.
 
         最大的返回数量
 
@@ -97,7 +97,7 @@ class ListProvidersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProvidersRequest.
+        r"""Sets the limit of this ListProvidersRequest.
 
         最大的返回数量
 
@@ -108,7 +108,7 @@ class ListProvidersRequest:
 
     @property
     def track(self):
-        """Gets the track of this ListProvidersRequest.
+        r"""Gets the track of this ListProvidersRequest.
 
         资源是否默认收集
 
@@ -119,7 +119,7 @@ class ListProvidersRequest:
 
     @track.setter
     def track(self, track):
-        """Sets the track of this ListProvidersRequest.
+        r"""Sets the track of this ListProvidersRequest.
 
         资源是否默认收集
 
@@ -130,7 +130,7 @@ class ListProvidersRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListProvidersRequest.
+        r"""Gets the x_language of this ListProvidersRequest.
 
         选择接口返回的信息的语言，默认为\"zh-cn\"中文
 
@@ -141,7 +141,7 @@ class ListProvidersRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListProvidersRequest.
+        r"""Sets the x_language of this ListProvidersRequest.
 
         选择接口返回的信息的语言，默认为\"zh-cn\"中文
 

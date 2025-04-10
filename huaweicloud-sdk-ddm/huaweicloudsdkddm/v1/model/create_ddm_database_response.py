@@ -28,7 +28,7 @@ class CreateDdmDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, name=None, job_id=None):
-        """CreateDdmDatabaseResponse
+        r"""CreateDdmDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateDdmDatabaseResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateDdmDatabaseResponse.
+        r"""Gets the name of this CreateDdmDatabaseResponse.
 
         逻辑库名
 
@@ -62,7 +62,7 @@ class CreateDdmDatabaseResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDdmDatabaseResponse.
+        r"""Sets the name of this CreateDdmDatabaseResponse.
 
         逻辑库名
 
@@ -73,7 +73,7 @@ class CreateDdmDatabaseResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateDdmDatabaseResponse.
+        r"""Gets the job_id of this CreateDdmDatabaseResponse.
 
         工作流id。
 
@@ -84,7 +84,7 @@ class CreateDdmDatabaseResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateDdmDatabaseResponse.
+        r"""Sets the job_id of this CreateDdmDatabaseResponse.
 
         工作流id。
 

@@ -28,7 +28,7 @@ class ListAccessClientInfosResponse(SdkResponse):
     }
 
     def __init__(self, access_client_infos=None, total=None):
-        """ListAccessClientInfosResponse
+        r"""ListAccessClientInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAccessClientInfosResponse(SdkResponse):
 
     @property
     def access_client_infos(self):
-        """Gets the access_client_infos of this ListAccessClientInfosResponse.
+        r"""Gets the access_client_infos of this ListAccessClientInfosResponse.
 
         接入客户端信息列表
 
@@ -62,7 +62,7 @@ class ListAccessClientInfosResponse(SdkResponse):
 
     @access_client_infos.setter
     def access_client_infos(self, access_client_infos):
-        """Sets the access_client_infos of this ListAccessClientInfosResponse.
+        r"""Sets the access_client_infos of this ListAccessClientInfosResponse.
 
         接入客户端信息列表
 
@@ -73,7 +73,7 @@ class ListAccessClientInfosResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAccessClientInfosResponse.
+        r"""Gets the total of this ListAccessClientInfosResponse.
 
         接入客户端信息总数
 
@@ -84,7 +84,7 @@ class ListAccessClientInfosResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAccessClientInfosResponse.
+        r"""Sets the total of this ListAccessClientInfosResponse.
 
         接入客户端信息总数
 

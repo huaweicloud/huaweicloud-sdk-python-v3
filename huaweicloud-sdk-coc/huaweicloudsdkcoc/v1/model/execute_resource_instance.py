@@ -37,7 +37,7 @@ class ExecuteResourceInstance:
     }
 
     def __init__(self, resource_id=None, region_id=None, provider=None, type=None, custom_attributes=None, agent_sn=None, project_id=None):
-        """ExecuteResourceInstance
+        r"""ExecuteResourceInstance
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ExecuteResourceInstance:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ExecuteResourceInstance.
+        r"""Gets the resource_id of this ExecuteResourceInstance.
 
         ecs云服务器ID
 
@@ -94,7 +94,7 @@ class ExecuteResourceInstance:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ExecuteResourceInstance.
+        r"""Sets the resource_id of this ExecuteResourceInstance.
 
         ecs云服务器ID
 
@@ -105,7 +105,7 @@ class ExecuteResourceInstance:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ExecuteResourceInstance.
+        r"""Gets the region_id of this ExecuteResourceInstance.
 
         服务器所属region
 
@@ -116,7 +116,7 @@ class ExecuteResourceInstance:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ExecuteResourceInstance.
+        r"""Sets the region_id of this ExecuteResourceInstance.
 
         服务器所属region
 
@@ -127,7 +127,7 @@ class ExecuteResourceInstance:
 
     @property
     def provider(self):
-        """Gets the provider of this ExecuteResourceInstance.
+        r"""Gets the provider of this ExecuteResourceInstance.
 
         资源提供者：ECS，不传默认为：ECS。请保证一次执行， 每个实例的provider是一致的。后续扩展CCE等
 
@@ -138,7 +138,7 @@ class ExecuteResourceInstance:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ExecuteResourceInstance.
+        r"""Sets the provider of this ExecuteResourceInstance.
 
         资源提供者：ECS，不传默认为：ECS。请保证一次执行， 每个实例的provider是一致的。后续扩展CCE等
 
@@ -149,7 +149,7 @@ class ExecuteResourceInstance:
 
     @property
     def type(self):
-        """Gets the type of this ExecuteResourceInstance.
+        r"""Gets the type of this ExecuteResourceInstance.
 
         资源提供者下资源类型，不传默认为CLOUDSERVER CLOUDSERVER:CLOUDSERVER类型 约束：  -不允许跨type支持
 
@@ -160,7 +160,7 @@ class ExecuteResourceInstance:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExecuteResourceInstance.
+        r"""Sets the type of this ExecuteResourceInstance.
 
         资源提供者下资源类型，不传默认为CLOUDSERVER CLOUDSERVER:CLOUDSERVER类型 约束：  -不允许跨type支持
 
@@ -171,7 +171,7 @@ class ExecuteResourceInstance:
 
     @property
     def custom_attributes(self):
-        """Gets the custom_attributes of this ExecuteResourceInstance.
+        r"""Gets the custom_attributes of this ExecuteResourceInstance.
 
         支持用户自定义5个key_value形式的属性。  约束条件： - key值长度为10  - value长度为20  - map长度最大为5 - 禁止填写敏感数据
 
@@ -182,7 +182,7 @@ class ExecuteResourceInstance:
 
     @custom_attributes.setter
     def custom_attributes(self, custom_attributes):
-        """Sets the custom_attributes of this ExecuteResourceInstance.
+        r"""Sets the custom_attributes of this ExecuteResourceInstance.
 
         支持用户自定义5个key_value形式的属性。  约束条件： - key值长度为10  - value长度为20  - map长度最大为5 - 禁止填写敏感数据
 
@@ -193,7 +193,7 @@ class ExecuteResourceInstance:
 
     @property
     def agent_sn(self):
-        """Gets the agent_sn of this ExecuteResourceInstance.
+        r"""Gets the agent_sn of this ExecuteResourceInstance.
 
         该参数已废弃，传入该参数不会生效。
 
@@ -204,7 +204,7 @@ class ExecuteResourceInstance:
 
     @agent_sn.setter
     def agent_sn(self, agent_sn):
-        """Sets the agent_sn of this ExecuteResourceInstance.
+        r"""Sets the agent_sn of this ExecuteResourceInstance.
 
         该参数已废弃，传入该参数不会生效。
 
@@ -215,7 +215,7 @@ class ExecuteResourceInstance:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ExecuteResourceInstance.
+        r"""Gets the project_id of this ExecuteResourceInstance.
 
         该参数已废弃，传入该参数不会生效。
 
@@ -226,7 +226,7 @@ class ExecuteResourceInstance:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ExecuteResourceInstance.
+        r"""Sets the project_id of this ExecuteResourceInstance.
 
         该参数已废弃，传入该参数不会生效。
 

@@ -33,7 +33,7 @@ class AssetDetails:
     }
 
     def __init__(self, asset_id=None, asset_status=None, transcode_status=None, base_info=None, transcode_info=None):
-        """AssetDetails
+        r"""AssetDetails
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class AssetDetails:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this AssetDetails.
+        r"""Gets the asset_id of this AssetDetails.
 
         媒资ID。
 
@@ -81,7 +81,7 @@ class AssetDetails:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this AssetDetails.
+        r"""Sets the asset_id of this AssetDetails.
 
         媒资ID。
 
@@ -92,7 +92,7 @@ class AssetDetails:
 
     @property
     def asset_status(self):
-        """Gets the asset_status of this AssetDetails.
+        r"""Gets the asset_status of this AssetDetails.
 
         媒资状态。 - \"CREATING\"：上传中 - \"FAILED\"：上传失败 - \"CREATED\"：上传成功 - \"PUBLISHED\"：已发布 - \"DELETED\"：已删除
 
@@ -103,7 +103,7 @@ class AssetDetails:
 
     @asset_status.setter
     def asset_status(self, asset_status):
-        """Sets the asset_status of this AssetDetails.
+        r"""Sets the asset_status of this AssetDetails.
 
         媒资状态。 - \"CREATING\"：上传中 - \"FAILED\"：上传失败 - \"CREATED\"：上传成功 - \"PUBLISHED\"：已发布 - \"DELETED\"：已删除
 
@@ -114,7 +114,7 @@ class AssetDetails:
 
     @property
     def transcode_status(self):
-        """Gets the transcode_status of this AssetDetails.
+        r"""Gets the transcode_status of this AssetDetails.
 
         转码状态。 - \"UN_TRANSCODE\"：未转码 - \"WAITING_TRANSCODE\"：等待转码，排队中 - \"TRANSCODING\"：转码中 - \"TRANSCODE_SUCCEED\"：转码成功 - \"TRANSCODE_FAILED\"：转码失败
 
@@ -125,7 +125,7 @@ class AssetDetails:
 
     @transcode_status.setter
     def transcode_status(self, transcode_status):
-        """Sets the transcode_status of this AssetDetails.
+        r"""Sets the transcode_status of this AssetDetails.
 
         转码状态。 - \"UN_TRANSCODE\"：未转码 - \"WAITING_TRANSCODE\"：等待转码，排队中 - \"TRANSCODING\"：转码中 - \"TRANSCODE_SUCCEED\"：转码成功 - \"TRANSCODE_FAILED\"：转码失败
 
@@ -136,7 +136,7 @@ class AssetDetails:
 
     @property
     def base_info(self):
-        """Gets the base_info of this AssetDetails.
+        r"""Gets the base_info of this AssetDetails.
 
         :return: The base_info of this AssetDetails.
         :rtype: :class:`huaweicloudsdkvod.v1.BaseInfo`
@@ -145,7 +145,7 @@ class AssetDetails:
 
     @base_info.setter
     def base_info(self, base_info):
-        """Sets the base_info of this AssetDetails.
+        r"""Sets the base_info of this AssetDetails.
 
         :param base_info: The base_info of this AssetDetails.
         :type base_info: :class:`huaweicloudsdkvod.v1.BaseInfo`
@@ -154,7 +154,7 @@ class AssetDetails:
 
     @property
     def transcode_info(self):
-        """Gets the transcode_info of this AssetDetails.
+        r"""Gets the transcode_info of this AssetDetails.
 
         :return: The transcode_info of this AssetDetails.
         :rtype: :class:`huaweicloudsdkvod.v1.TranscodeInfo`
@@ -163,7 +163,7 @@ class AssetDetails:
 
     @transcode_info.setter
     def transcode_info(self, transcode_info):
-        """Sets the transcode_info of this AssetDetails.
+        r"""Sets the transcode_info of this AssetDetails.
 
         :param transcode_info: The transcode_info of this AssetDetails.
         :type transcode_info: :class:`huaweicloudsdkvod.v1.TranscodeInfo`

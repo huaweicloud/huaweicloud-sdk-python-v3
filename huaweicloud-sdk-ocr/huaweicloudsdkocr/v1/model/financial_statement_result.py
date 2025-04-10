@@ -33,7 +33,7 @@ class FinancialStatementResult:
     }
 
     def __init__(self, words_region_count=None, words_region_list=None, excel=None, image_size=None, rectification_matrix=None):
-        """FinancialStatementResult
+        r"""FinancialStatementResult
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class FinancialStatementResult:
 
     @property
     def words_region_count(self):
-        """Gets the words_region_count of this FinancialStatementResult.
+        r"""Gets the words_region_count of this FinancialStatementResult.
 
         识别出来的表格、文本区域个数。 
 
@@ -80,7 +80,7 @@ class FinancialStatementResult:
 
     @words_region_count.setter
     def words_region_count(self, words_region_count):
-        """Sets the words_region_count of this FinancialStatementResult.
+        r"""Sets the words_region_count of this FinancialStatementResult.
 
         识别出来的表格、文本区域个数。 
 
@@ -91,7 +91,7 @@ class FinancialStatementResult:
 
     @property
     def words_region_list(self):
-        """Gets the words_region_list of this FinancialStatementResult.
+        r"""Gets the words_region_list of this FinancialStatementResult.
 
         返回的表格、文本区域列表。输出顺序从左到右，从上到下。 
 
@@ -102,7 +102,7 @@ class FinancialStatementResult:
 
     @words_region_list.setter
     def words_region_list(self, words_region_list):
-        """Sets the words_region_list of this FinancialStatementResult.
+        r"""Sets the words_region_list of this FinancialStatementResult.
 
         返回的表格、文本区域列表。输出顺序从左到右，从上到下。 
 
@@ -113,7 +113,7 @@ class FinancialStatementResult:
 
     @property
     def excel(self):
-        """Gets the excel of this FinancialStatementResult.
+        r"""Gets the excel of this FinancialStatementResult.
 
         表格图像转换为excel的base64编码，图像中的文字和表格按位置写入excel，可编辑。对返回的excel编码，可用base64.b64decode解码并保存为xlsx文件。 
 
@@ -124,7 +124,7 @@ class FinancialStatementResult:
 
     @excel.setter
     def excel(self, excel):
-        """Sets the excel of this FinancialStatementResult.
+        r"""Sets the excel of this FinancialStatementResult.
 
         表格图像转换为excel的base64编码，图像中的文字和表格按位置写入excel，可编辑。对返回的excel编码，可用base64.b64decode解码并保存为xlsx文件。 
 
@@ -135,7 +135,7 @@ class FinancialStatementResult:
 
     @property
     def image_size(self):
-        """Gets the image_size of this FinancialStatementResult.
+        r"""Gets the image_size of this FinancialStatementResult.
 
         :return: The image_size of this FinancialStatementResult.
         :rtype: :class:`huaweicloudsdkocr.v1.FinancialStatementResultImageSize`
@@ -144,7 +144,7 @@ class FinancialStatementResult:
 
     @image_size.setter
     def image_size(self, image_size):
-        """Sets the image_size of this FinancialStatementResult.
+        r"""Sets the image_size of this FinancialStatementResult.
 
         :param image_size: The image_size of this FinancialStatementResult.
         :type image_size: :class:`huaweicloudsdkocr.v1.FinancialStatementResultImageSize`
@@ -153,7 +153,7 @@ class FinancialStatementResult:
 
     @property
     def rectification_matrix(self):
-        """Gets the rectification_matrix of this FinancialStatementResult.
+        r"""Gets the rectification_matrix of this FinancialStatementResult.
 
         返回透视变换矩阵 
 
@@ -164,7 +164,7 @@ class FinancialStatementResult:
 
     @rectification_matrix.setter
     def rectification_matrix(self, rectification_matrix):
-        """Sets the rectification_matrix of this FinancialStatementResult.
+        r"""Sets the rectification_matrix of this FinancialStatementResult.
 
         返回透视变换矩阵 
 

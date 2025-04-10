@@ -26,7 +26,7 @@ class UpdatePremiumHostProtectStatusResponse(SdkResponse):
     }
 
     def __init__(self, protect_status=None):
-        """UpdatePremiumHostProtectStatusResponse
+        r"""UpdatePremiumHostProtectStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdatePremiumHostProtectStatusResponse(SdkResponse):
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this UpdatePremiumHostProtectStatusResponse.
+        r"""Gets the protect_status of this UpdatePremiumHostProtectStatusResponse.
 
         域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -55,7 +55,7 @@ class UpdatePremiumHostProtectStatusResponse(SdkResponse):
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this UpdatePremiumHostProtectStatusResponse.
+        r"""Sets the protect_status of this UpdatePremiumHostProtectStatusResponse.
 
         域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 

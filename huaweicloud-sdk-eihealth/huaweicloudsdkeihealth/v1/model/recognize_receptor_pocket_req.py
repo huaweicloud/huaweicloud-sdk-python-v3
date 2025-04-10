@@ -31,7 +31,7 @@ class RecognizeReceptorPocketReq:
     }
 
     def __init__(self, mode=None, receptor_file=None, ligand_file=None, residues=None):
-        """RecognizeReceptorPocketReq
+        r"""RecognizeReceptorPocketReq
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class RecognizeReceptorPocketReq:
 
     @property
     def mode(self):
-        """Gets the mode of this RecognizeReceptorPocketReq.
+        r"""Gets the mode of this RecognizeReceptorPocketReq.
 
         :return: The mode of this RecognizeReceptorPocketReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.RecognizeReceptorPocketMode`
@@ -71,7 +71,7 @@ class RecognizeReceptorPocketReq:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this RecognizeReceptorPocketReq.
+        r"""Sets the mode of this RecognizeReceptorPocketReq.
 
         :param mode: The mode of this RecognizeReceptorPocketReq.
         :type mode: :class:`huaweicloudsdkeihealth.v1.RecognizeReceptorPocketMode`
@@ -80,7 +80,7 @@ class RecognizeReceptorPocketReq:
 
     @property
     def receptor_file(self):
-        """Gets the receptor_file of this RecognizeReceptorPocketReq.
+        r"""Gets the receptor_file of this RecognizeReceptorPocketReq.
 
         :return: The receptor_file of this RecognizeReceptorPocketReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
@@ -89,7 +89,7 @@ class RecognizeReceptorPocketReq:
 
     @receptor_file.setter
     def receptor_file(self, receptor_file):
-        """Sets the receptor_file of this RecognizeReceptorPocketReq.
+        r"""Sets the receptor_file of this RecognizeReceptorPocketReq.
 
         :param receptor_file: The receptor_file of this RecognizeReceptorPocketReq.
         :type receptor_file: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFileReq`
@@ -98,7 +98,7 @@ class RecognizeReceptorPocketReq:
 
     @property
     def ligand_file(self):
-        """Gets the ligand_file of this RecognizeReceptorPocketReq.
+        r"""Gets the ligand_file of this RecognizeReceptorPocketReq.
 
         :return: The ligand_file of this RecognizeReceptorPocketReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -107,7 +107,7 @@ class RecognizeReceptorPocketReq:
 
     @ligand_file.setter
     def ligand_file(self, ligand_file):
-        """Sets the ligand_file of this RecognizeReceptorPocketReq.
+        r"""Sets the ligand_file of this RecognizeReceptorPocketReq.
 
         :param ligand_file: The ligand_file of this RecognizeReceptorPocketReq.
         :type ligand_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -116,7 +116,7 @@ class RecognizeReceptorPocketReq:
 
     @property
     def residues(self):
-        """Gets the residues of this RecognizeReceptorPocketReq.
+        r"""Gets the residues of this RecognizeReceptorPocketReq.
 
         残基列表，当识别模式为残基时提供
 
@@ -127,7 +127,7 @@ class RecognizeReceptorPocketReq:
 
     @residues.setter
     def residues(self, residues):
-        """Sets the residues of this RecognizeReceptorPocketReq.
+        r"""Sets the residues of this RecognizeReceptorPocketReq.
 
         残基列表，当识别模式为残基时提供
 

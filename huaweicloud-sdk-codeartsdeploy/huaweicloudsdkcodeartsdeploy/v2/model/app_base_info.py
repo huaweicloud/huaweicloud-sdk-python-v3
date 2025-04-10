@@ -31,7 +31,7 @@ class AppBaseInfo:
     }
 
     def __init__(self, id=None, name=None, region=None, is_disable=None):
-        """AppBaseInfo
+        r"""AppBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AppBaseInfo:
 
     @property
     def id(self):
-        """Gets the id of this AppBaseInfo.
+        r"""Gets the id of this AppBaseInfo.
 
         应用id
 
@@ -75,7 +75,7 @@ class AppBaseInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppBaseInfo.
+        r"""Sets the id of this AppBaseInfo.
 
         应用id
 
@@ -86,7 +86,7 @@ class AppBaseInfo:
 
     @property
     def name(self):
-        """Gets the name of this AppBaseInfo.
+        r"""Gets the name of this AppBaseInfo.
 
         应用名称
 
@@ -97,7 +97,7 @@ class AppBaseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppBaseInfo.
+        r"""Sets the name of this AppBaseInfo.
 
         应用名称
 
@@ -108,7 +108,7 @@ class AppBaseInfo:
 
     @property
     def region(self):
-        """Gets the region of this AppBaseInfo.
+        r"""Gets the region of this AppBaseInfo.
 
         局点信息
 
@@ -119,7 +119,7 @@ class AppBaseInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AppBaseInfo.
+        r"""Sets the region of this AppBaseInfo.
 
         局点信息
 
@@ -130,7 +130,7 @@ class AppBaseInfo:
 
     @property
     def is_disable(self):
-        """Gets the is_disable of this AppBaseInfo.
+        r"""Gets the is_disable of this AppBaseInfo.
 
         应用是否被禁用
 
@@ -141,7 +141,7 @@ class AppBaseInfo:
 
     @is_disable.setter
     def is_disable(self, is_disable):
-        """Sets the is_disable of this AppBaseInfo.
+        r"""Sets the is_disable of this AppBaseInfo.
 
         应用是否被禁用
 

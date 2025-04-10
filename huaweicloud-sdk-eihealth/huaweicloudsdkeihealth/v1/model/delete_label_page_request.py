@@ -27,7 +27,7 @@ class DeleteLabelPageRequest:
     }
 
     def __init__(self, eihealth_project_id=None, label_page_id=None):
-        """DeleteLabelPageRequest
+        r"""DeleteLabelPageRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteLabelPageRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this DeleteLabelPageRequest.
+        r"""Gets the eihealth_project_id of this DeleteLabelPageRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class DeleteLabelPageRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this DeleteLabelPageRequest.
+        r"""Sets the eihealth_project_id of this DeleteLabelPageRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class DeleteLabelPageRequest:
 
     @property
     def label_page_id(self):
-        """Gets the label_page_id of this DeleteLabelPageRequest.
+        r"""Gets the label_page_id of this DeleteLabelPageRequest.
 
         标签页面id
 
@@ -81,7 +81,7 @@ class DeleteLabelPageRequest:
 
     @label_page_id.setter
     def label_page_id(self, label_page_id):
-        """Sets the label_page_id of this DeleteLabelPageRequest.
+        r"""Sets the label_page_id of this DeleteLabelPageRequest.
 
         标签页面id
 

@@ -27,7 +27,7 @@ class Error:
     }
 
     def __init__(self, code=None, reason=None):
-        """Error
+        r"""Error
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Error:
 
     @property
     def code(self):
-        """Gets the code of this Error.
+        r"""Gets the code of this Error.
 
         错误码
 
@@ -61,7 +61,7 @@ class Error:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this Error.
+        r"""Sets the code of this Error.
 
         错误码
 
@@ -72,7 +72,7 @@ class Error:
 
     @property
     def reason(self):
-        """Gets the reason of this Error.
+        r"""Gets the reason of this Error.
 
         错误描述
 
@@ -83,7 +83,7 @@ class Error:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this Error.
+        r"""Sets the reason of this Error.
 
         错误描述
 

@@ -37,7 +37,7 @@ class Resource:
     }
 
     def __init__(self, add_volumes=None, cloud_service_console_url=None, create_services=None, is_auto_renew=None, period_num=None, period_type=None, subscription_num=None):
-        """Resource
+        r"""Resource
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class Resource:
 
     @property
     def add_volumes(self):
-        """Gets the add_volumes of this Resource.
+        r"""Gets the add_volumes of this Resource.
 
         :return: The add_volumes of this Resource.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AddVolumes`
@@ -92,7 +92,7 @@ class Resource:
 
     @add_volumes.setter
     def add_volumes(self, add_volumes):
-        """Sets the add_volumes of this Resource.
+        r"""Sets the add_volumes of this Resource.
 
         :param add_volumes: The add_volumes of this Resource.
         :type add_volumes: :class:`huaweicloudsdkworkspaceapp.v1.AddVolumes`
@@ -101,7 +101,7 @@ class Resource:
 
     @property
     def cloud_service_console_url(self):
-        """Gets the cloud_service_console_url of this Resource.
+        r"""Gets the cloud_service_console_url of this Resource.
 
         支付后跳转的地址。
 
@@ -112,7 +112,7 @@ class Resource:
 
     @cloud_service_console_url.setter
     def cloud_service_console_url(self, cloud_service_console_url):
-        """Sets the cloud_service_console_url of this Resource.
+        r"""Sets the cloud_service_console_url of this Resource.
 
         支付后跳转的地址。
 
@@ -123,7 +123,7 @@ class Resource:
 
     @property
     def create_services(self):
-        """Gets the create_services of this Resource.
+        r"""Gets the create_services of this Resource.
 
         :return: The create_services of this Resource.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateServices`
@@ -132,7 +132,7 @@ class Resource:
 
     @create_services.setter
     def create_services(self, create_services):
-        """Sets the create_services of this Resource.
+        r"""Sets the create_services of this Resource.
 
         :param create_services: The create_services of this Resource.
         :type create_services: :class:`huaweicloudsdkworkspaceapp.v1.CreateServices`
@@ -141,7 +141,7 @@ class Resource:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this Resource.
+        r"""Gets the is_auto_renew of this Resource.
 
         订购关系当前是否是自动续费：0 否 1 是。
 
@@ -152,7 +152,7 @@ class Resource:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this Resource.
+        r"""Sets the is_auto_renew of this Resource.
 
         订购关系当前是否是自动续费：0 否 1 是。
 
@@ -163,7 +163,7 @@ class Resource:
 
     @property
     def period_num(self):
-        """Gets the period_num of this Resource.
+        r"""Gets the period_num of this Resource.
 
         订购周期数取值大于0
 
@@ -174,7 +174,7 @@ class Resource:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this Resource.
+        r"""Sets the period_num of this Resource.
 
         订购周期数取值大于0
 
@@ -185,7 +185,7 @@ class Resource:
 
     @property
     def period_type(self):
-        """Gets the period_type of this Resource.
+        r"""Gets the period_type of this Resource.
 
         包周期订单订购周期类型：2：月；3：年；4：包小时（仅限带宽加油包购买场景使用）5：绝对时间；（追加附属资源场景使用，比如主机上追加云硬盘）6：一次性（chargingMode=1 一次性计费场景使用），必填。
 
@@ -196,7 +196,7 @@ class Resource:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this Resource.
+        r"""Sets the period_type of this Resource.
 
         包周期订单订购周期类型：2：月；3：年；4：包小时（仅限带宽加油包购买场景使用）5：绝对时间；（追加附属资源场景使用，比如主机上追加云硬盘）6：一次性（chargingMode=1 一次性计费场景使用），必填。
 
@@ -207,7 +207,7 @@ class Resource:
 
     @property
     def subscription_num(self):
-        """Gets the subscription_num of this Resource.
+        r"""Gets the subscription_num of this Resource.
 
         订购数量。
 
@@ -218,7 +218,7 @@ class Resource:
 
     @subscription_num.setter
     def subscription_num(self, subscription_num):
-        """Sets the subscription_num of this Resource.
+        r"""Sets the subscription_num of this Resource.
 
         订购数量。
 

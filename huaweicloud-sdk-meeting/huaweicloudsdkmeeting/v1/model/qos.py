@@ -43,7 +43,7 @@ class Qos:
     }
 
     def __init__(self, network_quality=None, codec_type=None, band_width=None, lost_packet_rate=None, delay=None, jitter=None, resolution_height=None, resolution_width=None, frame_rate=None, codec_user_id=None):
-        """Qos
+        r"""Qos
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class Qos:
 
     @property
     def network_quality(self):
-        """Gets the network_quality of this Qos.
+        r"""Gets the network_quality of this Qos.
 
         网络质量评级
 
@@ -117,7 +117,7 @@ class Qos:
 
     @network_quality.setter
     def network_quality(self, network_quality):
-        """Sets the network_quality of this Qos.
+        r"""Sets the network_quality of this Qos.
 
         网络质量评级
 
@@ -128,7 +128,7 @@ class Qos:
 
     @property
     def codec_type(self):
-        """Gets the codec_type of this Qos.
+        r"""Gets the codec_type of this Qos.
 
         编解码类型
 
@@ -139,7 +139,7 @@ class Qos:
 
     @codec_type.setter
     def codec_type(self, codec_type):
-        """Sets the codec_type of this Qos.
+        r"""Sets the codec_type of this Qos.
 
         编解码类型
 
@@ -150,7 +150,7 @@ class Qos:
 
     @property
     def band_width(self):
-        """Gets the band_width of this Qos.
+        r"""Gets the band_width of this Qos.
 
         带宽(kbit/s)
 
@@ -161,7 +161,7 @@ class Qos:
 
     @band_width.setter
     def band_width(self, band_width):
-        """Sets the band_width of this Qos.
+        r"""Sets the band_width of this Qos.
 
         带宽(kbit/s)
 
@@ -172,7 +172,7 @@ class Qos:
 
     @property
     def lost_packet_rate(self):
-        """Gets the lost_packet_rate of this Qos.
+        r"""Gets the lost_packet_rate of this Qos.
 
         丢包率（千分数）
 
@@ -183,7 +183,7 @@ class Qos:
 
     @lost_packet_rate.setter
     def lost_packet_rate(self, lost_packet_rate):
-        """Sets the lost_packet_rate of this Qos.
+        r"""Sets the lost_packet_rate of this Qos.
 
         丢包率（千分数）
 
@@ -194,7 +194,7 @@ class Qos:
 
     @property
     def delay(self):
-        """Gets the delay of this Qos.
+        r"""Gets the delay of this Qos.
 
         时延(ms)
 
@@ -205,7 +205,7 @@ class Qos:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this Qos.
+        r"""Sets the delay of this Qos.
 
         时延(ms)
 
@@ -216,7 +216,7 @@ class Qos:
 
     @property
     def jitter(self):
-        """Gets the jitter of this Qos.
+        r"""Gets the jitter of this Qos.
 
         抖动(ms)
 
@@ -227,7 +227,7 @@ class Qos:
 
     @jitter.setter
     def jitter(self, jitter):
-        """Sets the jitter of this Qos.
+        r"""Sets the jitter of this Qos.
 
         抖动(ms)
 
@@ -238,7 +238,7 @@ class Qos:
 
     @property
     def resolution_height(self):
-        """Gets the resolution_height of this Qos.
+        r"""Gets the resolution_height of this Qos.
 
         分辨率:高
 
@@ -249,7 +249,7 @@ class Qos:
 
     @resolution_height.setter
     def resolution_height(self, resolution_height):
-        """Sets the resolution_height of this Qos.
+        r"""Sets the resolution_height of this Qos.
 
         分辨率:高
 
@@ -260,7 +260,7 @@ class Qos:
 
     @property
     def resolution_width(self):
-        """Gets the resolution_width of this Qos.
+        r"""Gets the resolution_width of this Qos.
 
         分辨率：宽
 
@@ -271,7 +271,7 @@ class Qos:
 
     @resolution_width.setter
     def resolution_width(self, resolution_width):
-        """Sets the resolution_width of this Qos.
+        r"""Sets the resolution_width of this Qos.
 
         分辨率：宽
 
@@ -282,7 +282,7 @@ class Qos:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this Qos.
+        r"""Gets the frame_rate of this Qos.
 
         帧率
 
@@ -293,7 +293,7 @@ class Qos:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this Qos.
+        r"""Sets the frame_rate of this Qos.
 
         帧率
 
@@ -304,7 +304,7 @@ class Qos:
 
     @property
     def codec_user_id(self):
-        """Gets the codec_user_id of this Qos.
+        r"""Gets the codec_user_id of this Qos.
 
         该媒体流编码会场ID，仅服务器向端侧发送方向涉及(视频)，如路径A-->服务器-->B，即B观看A，该媒体流的codec_user_id为A
 
@@ -315,7 +315,7 @@ class Qos:
 
     @codec_user_id.setter
     def codec_user_id(self, codec_user_id):
-        """Sets the codec_user_id of this Qos.
+        r"""Sets the codec_user_id of this Qos.
 
         该媒体流编码会场ID，仅服务器向端侧发送方向涉及(视频)，如路径A-->服务器-->B，即B观看A，该媒体流的codec_user_id为A
 

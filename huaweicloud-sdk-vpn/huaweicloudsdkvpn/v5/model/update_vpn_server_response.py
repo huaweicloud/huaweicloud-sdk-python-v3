@@ -28,7 +28,7 @@ class UpdateVpnServerResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, header_response_token=None):
-        """UpdateVpnServerResponse
+        r"""UpdateVpnServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateVpnServerResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateVpnServerResponse.
+        r"""Gets the request_id of this UpdateVpnServerResponse.
 
         请求id
 
@@ -62,7 +62,7 @@ class UpdateVpnServerResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateVpnServerResponse.
+        r"""Sets the request_id of this UpdateVpnServerResponse.
 
         请求id
 
@@ -73,7 +73,7 @@ class UpdateVpnServerResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this UpdateVpnServerResponse.
+        r"""Gets the header_response_token of this UpdateVpnServerResponse.
 
         :return: The header_response_token of this UpdateVpnServerResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class UpdateVpnServerResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this UpdateVpnServerResponse.
+        r"""Sets the header_response_token of this UpdateVpnServerResponse.
 
         :param header_response_token: The header_response_token of this UpdateVpnServerResponse.
         :type header_response_token: str

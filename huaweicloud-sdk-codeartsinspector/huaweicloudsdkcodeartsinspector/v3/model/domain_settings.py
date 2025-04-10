@@ -37,7 +37,7 @@ class DomainSettings:
     }
 
     def __init__(self, domain_id=None, login_url=None, login_username=None, login_password=None, login_cookies=None, verify_url=None, http_headers=None):
-        """DomainSettings
+        r"""DomainSettings
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DomainSettings:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DomainSettings.
+        r"""Gets the domain_id of this DomainSettings.
 
         网站域名ID
 
@@ -96,7 +96,7 @@ class DomainSettings:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DomainSettings.
+        r"""Sets the domain_id of this DomainSettings.
 
         网站域名ID
 
@@ -107,7 +107,7 @@ class DomainSettings:
 
     @property
     def login_url(self):
-        """Gets the login_url of this DomainSettings.
+        r"""Gets the login_url of this DomainSettings.
 
         网站需要登录时，设置登录页面
 
@@ -118,7 +118,7 @@ class DomainSettings:
 
     @login_url.setter
     def login_url(self, login_url):
-        """Sets the login_url of this DomainSettings.
+        r"""Sets the login_url of this DomainSettings.
 
         网站需要登录时，设置登录页面
 
@@ -129,7 +129,7 @@ class DomainSettings:
 
     @property
     def login_username(self):
-        """Gets the login_username of this DomainSettings.
+        r"""Gets the login_username of this DomainSettings.
 
         网站需要登录时，设置登录用户名
 
@@ -140,7 +140,7 @@ class DomainSettings:
 
     @login_username.setter
     def login_username(self, login_username):
-        """Sets the login_username of this DomainSettings.
+        r"""Sets the login_username of this DomainSettings.
 
         网站需要登录时，设置登录用户名
 
@@ -151,7 +151,7 @@ class DomainSettings:
 
     @property
     def login_password(self):
-        """Gets the login_password of this DomainSettings.
+        r"""Gets the login_password of this DomainSettings.
 
         网站需要登录时，设置登录密码
 
@@ -162,7 +162,7 @@ class DomainSettings:
 
     @login_password.setter
     def login_password(self, login_password):
-        """Sets the login_password of this DomainSettings.
+        r"""Sets the login_password of this DomainSettings.
 
         网站需要登录时，设置登录密码
 
@@ -173,7 +173,7 @@ class DomainSettings:
 
     @property
     def login_cookies(self):
-        """Gets the login_cookies of this DomainSettings.
+        r"""Gets the login_cookies of this DomainSettings.
 
         网站需要登录时，设置登录cookie
 
@@ -184,7 +184,7 @@ class DomainSettings:
 
     @login_cookies.setter
     def login_cookies(self, login_cookies):
-        """Sets the login_cookies of this DomainSettings.
+        r"""Sets the login_cookies of this DomainSettings.
 
         网站需要登录时，设置登录cookie
 
@@ -195,7 +195,7 @@ class DomainSettings:
 
     @property
     def verify_url(self):
-        """Gets the verify_url of this DomainSettings.
+        r"""Gets the verify_url of this DomainSettings.
 
         设置用于验证登录是否成功的网址
 
@@ -206,7 +206,7 @@ class DomainSettings:
 
     @verify_url.setter
     def verify_url(self, verify_url):
-        """Sets the verify_url of this DomainSettings.
+        r"""Sets the verify_url of this DomainSettings.
 
         设置用于验证登录是否成功的网址
 
@@ -217,7 +217,7 @@ class DomainSettings:
 
     @property
     def http_headers(self):
-        """Gets the http_headers of this DomainSettings.
+        r"""Gets the http_headers of this DomainSettings.
 
         设置自定义HTTP请求头
 
@@ -228,7 +228,7 @@ class DomainSettings:
 
     @http_headers.setter
     def http_headers(self, http_headers):
-        """Sets the http_headers of this DomainSettings.
+        r"""Sets the http_headers of this DomainSettings.
 
         设置自定义HTTP请求头
 

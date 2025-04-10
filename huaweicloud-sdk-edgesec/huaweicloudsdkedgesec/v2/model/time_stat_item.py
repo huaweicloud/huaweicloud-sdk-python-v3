@@ -27,7 +27,7 @@ class TimeStatItem:
     }
 
     def __init__(self, key=None, value=None):
-        """TimeStatItem
+        r"""TimeStatItem
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TimeStatItem:
 
     @property
     def key(self):
-        """Gets the key of this TimeStatItem.
+        r"""Gets the key of this TimeStatItem.
 
         时间戳，按时间粒度向左对齐。例如时间粒度为5分钟级，统计[19:10,19:15)，则该时间戳为19:10时刻时间
 
@@ -59,7 +59,7 @@ class TimeStatItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TimeStatItem.
+        r"""Sets the key of this TimeStatItem.
 
         时间戳，按时间粒度向左对齐。例如时间粒度为5分钟级，统计[19:10,19:15)，则该时间戳为19:10时刻时间
 
@@ -70,7 +70,7 @@ class TimeStatItem:
 
     @property
     def value(self):
-        """Gets the value of this TimeStatItem.
+        r"""Gets the value of this TimeStatItem.
 
         攻击请求数
 
@@ -81,7 +81,7 @@ class TimeStatItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TimeStatItem.
+        r"""Sets the value of this TimeStatItem.
 
         攻击请求数
 

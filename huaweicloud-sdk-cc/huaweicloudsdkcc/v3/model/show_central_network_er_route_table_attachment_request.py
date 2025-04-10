@@ -27,7 +27,7 @@ class ShowCentralNetworkErRouteTableAttachmentRequest:
     }
 
     def __init__(self, central_network_id=None, er_route_table_attachment_id=None):
-        """ShowCentralNetworkErRouteTableAttachmentRequest
+        r"""ShowCentralNetworkErRouteTableAttachmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowCentralNetworkErRouteTableAttachmentRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this ShowCentralNetworkErRouteTableAttachmentRequest.
+        r"""Gets the central_network_id of this ShowCentralNetworkErRouteTableAttachmentRequest.
 
         中心网络的ID。
 
@@ -59,7 +59,7 @@ class ShowCentralNetworkErRouteTableAttachmentRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this ShowCentralNetworkErRouteTableAttachmentRequest.
+        r"""Sets the central_network_id of this ShowCentralNetworkErRouteTableAttachmentRequest.
 
         中心网络的ID。
 
@@ -70,7 +70,7 @@ class ShowCentralNetworkErRouteTableAttachmentRequest:
 
     @property
     def er_route_table_attachment_id(self):
-        """Gets the er_route_table_attachment_id of this ShowCentralNetworkErRouteTableAttachmentRequest.
+        r"""Gets the er_route_table_attachment_id of this ShowCentralNetworkErRouteTableAttachmentRequest.
 
         中心网络ER路由表附件ID。
 
@@ -81,7 +81,7 @@ class ShowCentralNetworkErRouteTableAttachmentRequest:
 
     @er_route_table_attachment_id.setter
     def er_route_table_attachment_id(self, er_route_table_attachment_id):
-        """Sets the er_route_table_attachment_id of this ShowCentralNetworkErRouteTableAttachmentRequest.
+        r"""Sets the er_route_table_attachment_id of this ShowCentralNetworkErRouteTableAttachmentRequest.
 
         中心网络ER路由表附件ID。
 

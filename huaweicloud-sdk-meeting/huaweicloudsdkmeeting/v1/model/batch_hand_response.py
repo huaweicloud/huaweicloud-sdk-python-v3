@@ -24,7 +24,7 @@ class BatchHandResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchHandResponse
+        r"""BatchHandResponse
 
         The model defined in huaweicloud sdk
 

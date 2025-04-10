@@ -36,7 +36,7 @@ class ListEventDetailResponse(SdkResponse):
     }
 
     def __init__(self, event_name=None, event_type=None, event_users=None, event_sources=None, event_info=None, meta_data=None):
-        """ListEventDetailResponse
+        r"""ListEventDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListEventDetailResponse(SdkResponse):
 
     @property
     def event_name(self):
-        """Gets the event_name of this ListEventDetailResponse.
+        r"""Gets the event_name of this ListEventDetailResponse.
 
         事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
 
@@ -90,7 +90,7 @@ class ListEventDetailResponse(SdkResponse):
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this ListEventDetailResponse.
+        r"""Sets the event_name of this ListEventDetailResponse.
 
         事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
 
@@ -101,7 +101,7 @@ class ListEventDetailResponse(SdkResponse):
 
     @property
     def event_type(self):
-        """Gets the event_type of this ListEventDetailResponse.
+        r"""Gets the event_type of this ListEventDetailResponse.
 
         事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
 
@@ -112,7 +112,7 @@ class ListEventDetailResponse(SdkResponse):
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this ListEventDetailResponse.
+        r"""Sets the event_type of this ListEventDetailResponse.
 
         事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
 
@@ -123,7 +123,7 @@ class ListEventDetailResponse(SdkResponse):
 
     @property
     def event_users(self):
-        """Gets the event_users of this ListEventDetailResponse.
+        r"""Gets the event_users of this ListEventDetailResponse.
 
         上报事件时用户的名称，也可能为projectID。
 
@@ -134,7 +134,7 @@ class ListEventDetailResponse(SdkResponse):
 
     @event_users.setter
     def event_users(self, event_users):
-        """Sets the event_users of this ListEventDetailResponse.
+        r"""Sets the event_users of this ListEventDetailResponse.
 
         上报事件时用户的名称，也可能为projectID。
 
@@ -145,7 +145,7 @@ class ListEventDetailResponse(SdkResponse):
 
     @property
     def event_sources(self):
-        """Gets the event_sources of this ListEventDetailResponse.
+        r"""Gets the event_sources of this ListEventDetailResponse.
 
         事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
 
@@ -156,7 +156,7 @@ class ListEventDetailResponse(SdkResponse):
 
     @event_sources.setter
     def event_sources(self, event_sources):
-        """Sets the event_sources of this ListEventDetailResponse.
+        r"""Sets the event_sources of this ListEventDetailResponse.
 
         事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
 
@@ -167,7 +167,7 @@ class ListEventDetailResponse(SdkResponse):
 
     @property
     def event_info(self):
-        """Gets the event_info of this ListEventDetailResponse.
+        r"""Gets the event_info of this ListEventDetailResponse.
 
         一条或者多条事件详细信息。
 
@@ -178,7 +178,7 @@ class ListEventDetailResponse(SdkResponse):
 
     @event_info.setter
     def event_info(self, event_info):
-        """Sets the event_info of this ListEventDetailResponse.
+        r"""Sets the event_info of this ListEventDetailResponse.
 
         一条或者多条事件详细信息。
 
@@ -189,7 +189,7 @@ class ListEventDetailResponse(SdkResponse):
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ListEventDetailResponse.
+        r"""Gets the meta_data of this ListEventDetailResponse.
 
         :return: The meta_data of this ListEventDetailResponse.
         :rtype: :class:`huaweicloudsdkces.v1.TotalMetaData`
@@ -198,7 +198,7 @@ class ListEventDetailResponse(SdkResponse):
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ListEventDetailResponse.
+        r"""Sets the meta_data of this ListEventDetailResponse.
 
         :param meta_data: The meta_data of this ListEventDetailResponse.
         :type meta_data: :class:`huaweicloudsdkces.v1.TotalMetaData`

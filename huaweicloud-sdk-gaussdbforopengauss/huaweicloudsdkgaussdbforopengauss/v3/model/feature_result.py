@@ -37,7 +37,7 @@ class FeatureResult:
     }
 
     def __init__(self, name=None, status=None, description=None, type=None, value=None, range=None, range_description=None):
-        """FeatureResult
+        r"""FeatureResult
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class FeatureResult:
 
     @property
     def name(self):
-        """Gets the name of this FeatureResult.
+        r"""Gets the name of this FeatureResult.
 
         特性名称。
 
@@ -96,7 +96,7 @@ class FeatureResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FeatureResult.
+        r"""Sets the name of this FeatureResult.
 
         特性名称。
 
@@ -107,7 +107,7 @@ class FeatureResult:
 
     @property
     def status(self):
-        """Gets the status of this FeatureResult.
+        r"""Gets the status of this FeatureResult.
 
         特性是否开启。
 
@@ -118,7 +118,7 @@ class FeatureResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FeatureResult.
+        r"""Sets the status of this FeatureResult.
 
         特性是否开启。
 
@@ -129,7 +129,7 @@ class FeatureResult:
 
     @property
     def description(self):
-        """Gets the description of this FeatureResult.
+        r"""Gets the description of this FeatureResult.
 
         特性中文描述。
 
@@ -140,7 +140,7 @@ class FeatureResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FeatureResult.
+        r"""Sets the description of this FeatureResult.
 
         特性中文描述。
 
@@ -151,7 +151,7 @@ class FeatureResult:
 
     @property
     def type(self):
-        """Gets the type of this FeatureResult.
+        r"""Gets the type of this FeatureResult.
 
         特性值类型。
 
@@ -162,7 +162,7 @@ class FeatureResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this FeatureResult.
+        r"""Sets the type of this FeatureResult.
 
         特性值类型。
 
@@ -173,7 +173,7 @@ class FeatureResult:
 
     @property
     def value(self):
-        """Gets the value of this FeatureResult.
+        r"""Gets the value of this FeatureResult.
 
         特性值。
 
@@ -184,7 +184,7 @@ class FeatureResult:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this FeatureResult.
+        r"""Sets the value of this FeatureResult.
 
         特性值。
 
@@ -195,7 +195,7 @@ class FeatureResult:
 
     @property
     def range(self):
-        """Gets the range of this FeatureResult.
+        r"""Gets the range of this FeatureResult.
 
         特性值范围。
 
@@ -206,7 +206,7 @@ class FeatureResult:
 
     @range.setter
     def range(self, range):
-        """Sets the range of this FeatureResult.
+        r"""Sets the range of this FeatureResult.
 
         特性值范围。
 
@@ -217,7 +217,7 @@ class FeatureResult:
 
     @property
     def range_description(self):
-        """Gets the range_description of this FeatureResult.
+        r"""Gets the range_description of this FeatureResult.
 
         特性范围描述。
 
@@ -228,7 +228,7 @@ class FeatureResult:
 
     @range_description.setter
     def range_description(self, range_description):
-        """Sets the range_description of this FeatureResult.
+        r"""Sets the range_description of this FeatureResult.
 
         特性范围描述。
 

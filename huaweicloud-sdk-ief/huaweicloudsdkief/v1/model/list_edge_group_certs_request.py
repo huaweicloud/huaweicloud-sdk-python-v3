@@ -31,7 +31,7 @@ class ListEdgeGroupCertsRequest:
     }
 
     def __init__(self, ief_instance_id=None, group_id=None, limit=None, offset=None):
-        """ListEdgeGroupCertsRequest
+        r"""ListEdgeGroupCertsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListEdgeGroupCertsRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListEdgeGroupCertsRequest.
+        r"""Gets the ief_instance_id of this ListEdgeGroupCertsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -74,7 +74,7 @@ class ListEdgeGroupCertsRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListEdgeGroupCertsRequest.
+        r"""Sets the ief_instance_id of this ListEdgeGroupCertsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -85,7 +85,7 @@ class ListEdgeGroupCertsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListEdgeGroupCertsRequest.
+        r"""Gets the group_id of this ListEdgeGroupCertsRequest.
 
         边缘节点组ID
 
@@ -96,7 +96,7 @@ class ListEdgeGroupCertsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListEdgeGroupCertsRequest.
+        r"""Sets the group_id of this ListEdgeGroupCertsRequest.
 
         边缘节点组ID
 
@@ -107,7 +107,7 @@ class ListEdgeGroupCertsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEdgeGroupCertsRequest.
+        r"""Gets the limit of this ListEdgeGroupCertsRequest.
 
         查询返回记录的数量限制
 
@@ -118,7 +118,7 @@ class ListEdgeGroupCertsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEdgeGroupCertsRequest.
+        r"""Sets the limit of this ListEdgeGroupCertsRequest.
 
         查询返回记录的数量限制
 
@@ -129,7 +129,7 @@ class ListEdgeGroupCertsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEdgeGroupCertsRequest.
+        r"""Gets the offset of this ListEdgeGroupCertsRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -140,7 +140,7 @@ class ListEdgeGroupCertsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEdgeGroupCertsRequest.
+        r"""Sets the offset of this ListEdgeGroupCertsRequest.
 
         偏移量，表示查询该偏移量后面的记录
 

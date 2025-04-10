@@ -27,7 +27,7 @@ class ShowProductRequest:
     }
 
     def __init__(self, instance_id=None, product_id=None):
-        """ShowProductRequest
+        r"""ShowProductRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowProductRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowProductRequest.
+        r"""Gets the instance_id of this ShowProductRequest.
 
         实例ID
 
@@ -59,7 +59,7 @@ class ShowProductRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowProductRequest.
+        r"""Sets the instance_id of this ShowProductRequest.
 
         实例ID
 
@@ -70,7 +70,7 @@ class ShowProductRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ShowProductRequest.
+        r"""Gets the product_id of this ShowProductRequest.
 
         产品ID
 
@@ -81,7 +81,7 @@ class ShowProductRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ShowProductRequest.
+        r"""Sets the product_id of this ShowProductRequest.
 
         产品ID
 

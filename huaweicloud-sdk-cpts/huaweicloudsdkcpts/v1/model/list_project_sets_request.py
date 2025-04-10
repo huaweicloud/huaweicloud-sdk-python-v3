@@ -27,7 +27,7 @@ class ListProjectSetsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListProjectSetsRequest
+        r"""ListProjectSetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListProjectSetsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProjectSetsRequest.
+        r"""Gets the offset of this ListProjectSetsRequest.
 
         查询偏移
 
@@ -61,7 +61,7 @@ class ListProjectSetsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProjectSetsRequest.
+        r"""Sets the offset of this ListProjectSetsRequest.
 
         查询偏移
 
@@ -72,7 +72,7 @@ class ListProjectSetsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProjectSetsRequest.
+        r"""Gets the limit of this ListProjectSetsRequest.
 
         查询数量
 
@@ -83,7 +83,7 @@ class ListProjectSetsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProjectSetsRequest.
+        r"""Sets the limit of this ListProjectSetsRequest.
 
         查询数量
 

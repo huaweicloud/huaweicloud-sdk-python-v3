@@ -35,7 +35,7 @@ class PipelineConcurrencyMgmt:
     }
 
     def __init__(self, pipeline_id=None, concurrency_number=None, exceed_action=None, create_time=None, update_time=None, enable=None):
-        """PipelineConcurrencyMgmt
+        r"""PipelineConcurrencyMgmt
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PipelineConcurrencyMgmt:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this PipelineConcurrencyMgmt.
+        r"""Gets the pipeline_id of this PipelineConcurrencyMgmt.
 
         流水线id
 
@@ -89,7 +89,7 @@ class PipelineConcurrencyMgmt:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this PipelineConcurrencyMgmt.
+        r"""Sets the pipeline_id of this PipelineConcurrencyMgmt.
 
         流水线id
 
@@ -100,7 +100,7 @@ class PipelineConcurrencyMgmt:
 
     @property
     def concurrency_number(self):
-        """Gets the concurrency_number of this PipelineConcurrencyMgmt.
+        r"""Gets the concurrency_number of this PipelineConcurrencyMgmt.
 
         并行数量
 
@@ -111,7 +111,7 @@ class PipelineConcurrencyMgmt:
 
     @concurrency_number.setter
     def concurrency_number(self, concurrency_number):
-        """Sets the concurrency_number of this PipelineConcurrencyMgmt.
+        r"""Sets the concurrency_number of this PipelineConcurrencyMgmt.
 
         并行数量
 
@@ -122,7 +122,7 @@ class PipelineConcurrencyMgmt:
 
     @property
     def exceed_action(self):
-        """Gets the exceed_action of this PipelineConcurrencyMgmt.
+        r"""Gets the exceed_action of this PipelineConcurrencyMgmt.
 
         超出情况下策略
 
@@ -133,7 +133,7 @@ class PipelineConcurrencyMgmt:
 
     @exceed_action.setter
     def exceed_action(self, exceed_action):
-        """Sets the exceed_action of this PipelineConcurrencyMgmt.
+        r"""Sets the exceed_action of this PipelineConcurrencyMgmt.
 
         超出情况下策略
 
@@ -144,7 +144,7 @@ class PipelineConcurrencyMgmt:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PipelineConcurrencyMgmt.
+        r"""Gets the create_time of this PipelineConcurrencyMgmt.
 
         创建时间
 
@@ -155,7 +155,7 @@ class PipelineConcurrencyMgmt:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PipelineConcurrencyMgmt.
+        r"""Sets the create_time of this PipelineConcurrencyMgmt.
 
         创建时间
 
@@ -166,7 +166,7 @@ class PipelineConcurrencyMgmt:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PipelineConcurrencyMgmt.
+        r"""Gets the update_time of this PipelineConcurrencyMgmt.
 
         更新时间
 
@@ -177,7 +177,7 @@ class PipelineConcurrencyMgmt:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PipelineConcurrencyMgmt.
+        r"""Sets the update_time of this PipelineConcurrencyMgmt.
 
         更新时间
 
@@ -188,7 +188,7 @@ class PipelineConcurrencyMgmt:
 
     @property
     def enable(self):
-        """Gets the enable of this PipelineConcurrencyMgmt.
+        r"""Gets the enable of this PipelineConcurrencyMgmt.
 
         是否有效
 
@@ -199,7 +199,7 @@ class PipelineConcurrencyMgmt:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this PipelineConcurrencyMgmt.
+        r"""Sets the enable of this PipelineConcurrencyMgmt.
 
         是否有效
 

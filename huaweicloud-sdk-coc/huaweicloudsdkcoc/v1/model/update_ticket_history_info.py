@@ -51,7 +51,7 @@ class UpdateTicketHistoryInfo:
     }
 
     def __init__(self, current_cloud_service_id=None, description=None, level_id=None, mtm_region=None, mtm_type=None, source_id=None, title=None, is_change_event=None, is_service_interrupt=None, action_id=None, action=None, sub_action=None, operator=None, comment=None):
-        """UpdateTicketHistoryInfo
+        r"""UpdateTicketHistoryInfo
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class UpdateTicketHistoryInfo:
 
     @property
     def current_cloud_service_id(self):
-        """Gets the current_cloud_service_id of this UpdateTicketHistoryInfo.
+        r"""Gets the current_cloud_service_id of this UpdateTicketHistoryInfo.
 
         扩展字段
 
@@ -145,7 +145,7 @@ class UpdateTicketHistoryInfo:
 
     @current_cloud_service_id.setter
     def current_cloud_service_id(self, current_cloud_service_id):
-        """Sets the current_cloud_service_id of this UpdateTicketHistoryInfo.
+        r"""Sets the current_cloud_service_id of this UpdateTicketHistoryInfo.
 
         扩展字段
 
@@ -156,7 +156,7 @@ class UpdateTicketHistoryInfo:
 
     @property
     def description(self):
-        """Gets the description of this UpdateTicketHistoryInfo.
+        r"""Gets the description of this UpdateTicketHistoryInfo.
 
         扩展字段
 
@@ -167,7 +167,7 @@ class UpdateTicketHistoryInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateTicketHistoryInfo.
+        r"""Sets the description of this UpdateTicketHistoryInfo.
 
         扩展字段
 
@@ -178,7 +178,7 @@ class UpdateTicketHistoryInfo:
 
     @property
     def level_id(self):
-        """Gets the level_id of this UpdateTicketHistoryInfo.
+        r"""Gets the level_id of this UpdateTicketHistoryInfo.
 
         扩展字段
 
@@ -189,7 +189,7 @@ class UpdateTicketHistoryInfo:
 
     @level_id.setter
     def level_id(self, level_id):
-        """Sets the level_id of this UpdateTicketHistoryInfo.
+        r"""Sets the level_id of this UpdateTicketHistoryInfo.
 
         扩展字段
 
@@ -200,7 +200,7 @@ class UpdateTicketHistoryInfo:
 
     @property
     def mtm_region(self):
-        """Gets the mtm_region of this UpdateTicketHistoryInfo.
+        r"""Gets the mtm_region of this UpdateTicketHistoryInfo.
 
         扩展字段
 
@@ -211,7 +211,7 @@ class UpdateTicketHistoryInfo:
 
     @mtm_region.setter
     def mtm_region(self, mtm_region):
-        """Sets the mtm_region of this UpdateTicketHistoryInfo.
+        r"""Sets the mtm_region of this UpdateTicketHistoryInfo.
 
         扩展字段
 
@@ -222,7 +222,7 @@ class UpdateTicketHistoryInfo:
 
     @property
     def mtm_type(self):
-        """Gets the mtm_type of this UpdateTicketHistoryInfo.
+        r"""Gets the mtm_type of this UpdateTicketHistoryInfo.
 
         扩展字段
 
@@ -233,7 +233,7 @@ class UpdateTicketHistoryInfo:
 
     @mtm_type.setter
     def mtm_type(self, mtm_type):
-        """Sets the mtm_type of this UpdateTicketHistoryInfo.
+        r"""Sets the mtm_type of this UpdateTicketHistoryInfo.
 
         扩展字段
 
@@ -244,7 +244,7 @@ class UpdateTicketHistoryInfo:
 
     @property
     def source_id(self):
-        """Gets the source_id of this UpdateTicketHistoryInfo.
+        r"""Gets the source_id of this UpdateTicketHistoryInfo.
 
         扩展字段
 
@@ -255,7 +255,7 @@ class UpdateTicketHistoryInfo:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this UpdateTicketHistoryInfo.
+        r"""Sets the source_id of this UpdateTicketHistoryInfo.
 
         扩展字段
 
@@ -266,7 +266,7 @@ class UpdateTicketHistoryInfo:
 
     @property
     def title(self):
-        """Gets the title of this UpdateTicketHistoryInfo.
+        r"""Gets the title of this UpdateTicketHistoryInfo.
 
         扩展字段
 
@@ -277,7 +277,7 @@ class UpdateTicketHistoryInfo:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this UpdateTicketHistoryInfo.
+        r"""Sets the title of this UpdateTicketHistoryInfo.
 
         扩展字段
 
@@ -288,7 +288,7 @@ class UpdateTicketHistoryInfo:
 
     @property
     def is_change_event(self):
-        """Gets the is_change_event of this UpdateTicketHistoryInfo.
+        r"""Gets the is_change_event of this UpdateTicketHistoryInfo.
 
         是否变更事件
 
@@ -299,7 +299,7 @@ class UpdateTicketHistoryInfo:
 
     @is_change_event.setter
     def is_change_event(self, is_change_event):
-        """Sets the is_change_event of this UpdateTicketHistoryInfo.
+        r"""Sets the is_change_event of this UpdateTicketHistoryInfo.
 
         是否变更事件
 
@@ -310,7 +310,7 @@ class UpdateTicketHistoryInfo:
 
     @property
     def is_service_interrupt(self):
-        """Gets the is_service_interrupt of this UpdateTicketHistoryInfo.
+        r"""Gets the is_service_interrupt of this UpdateTicketHistoryInfo.
 
         是否变更事件
 
@@ -321,7 +321,7 @@ class UpdateTicketHistoryInfo:
 
     @is_service_interrupt.setter
     def is_service_interrupt(self, is_service_interrupt):
-        """Sets the is_service_interrupt of this UpdateTicketHistoryInfo.
+        r"""Sets the is_service_interrupt of this UpdateTicketHistoryInfo.
 
         是否变更事件
 
@@ -332,7 +332,7 @@ class UpdateTicketHistoryInfo:
 
     @property
     def action_id(self):
-        """Gets the action_id of this UpdateTicketHistoryInfo.
+        r"""Gets the action_id of this UpdateTicketHistoryInfo.
 
         操作标识
 
@@ -343,7 +343,7 @@ class UpdateTicketHistoryInfo:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this UpdateTicketHistoryInfo.
+        r"""Sets the action_id of this UpdateTicketHistoryInfo.
 
         操作标识
 
@@ -354,7 +354,7 @@ class UpdateTicketHistoryInfo:
 
     @property
     def action(self):
-        """Gets the action of this UpdateTicketHistoryInfo.
+        r"""Gets the action of this UpdateTicketHistoryInfo.
 
         动作
 
@@ -365,7 +365,7 @@ class UpdateTicketHistoryInfo:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateTicketHistoryInfo.
+        r"""Sets the action of this UpdateTicketHistoryInfo.
 
         动作
 
@@ -376,7 +376,7 @@ class UpdateTicketHistoryInfo:
 
     @property
     def sub_action(self):
-        """Gets the sub_action of this UpdateTicketHistoryInfo.
+        r"""Gets the sub_action of this UpdateTicketHistoryInfo.
 
         子动作
 
@@ -387,7 +387,7 @@ class UpdateTicketHistoryInfo:
 
     @sub_action.setter
     def sub_action(self, sub_action):
-        """Sets the sub_action of this UpdateTicketHistoryInfo.
+        r"""Sets the sub_action of this UpdateTicketHistoryInfo.
 
         子动作
 
@@ -398,7 +398,7 @@ class UpdateTicketHistoryInfo:
 
     @property
     def operator(self):
-        """Gets the operator of this UpdateTicketHistoryInfo.
+        r"""Gets the operator of this UpdateTicketHistoryInfo.
 
         操作人
 
@@ -409,7 +409,7 @@ class UpdateTicketHistoryInfo:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this UpdateTicketHistoryInfo.
+        r"""Sets the operator of this UpdateTicketHistoryInfo.
 
         操作人
 
@@ -420,7 +420,7 @@ class UpdateTicketHistoryInfo:
 
     @property
     def comment(self):
-        """Gets the comment of this UpdateTicketHistoryInfo.
+        r"""Gets the comment of this UpdateTicketHistoryInfo.
 
         评论
 
@@ -431,7 +431,7 @@ class UpdateTicketHistoryInfo:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this UpdateTicketHistoryInfo.
+        r"""Sets the comment of this UpdateTicketHistoryInfo.
 
         评论
 

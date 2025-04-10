@@ -29,7 +29,7 @@ class ResetNodeList:
     }
 
     def __init__(self, api_version=None, kind=None, node_list=None):
-        """ResetNodeList
+        r"""ResetNodeList
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ResetNodeList:
 
     @property
     def api_version(self):
-        """Gets the api_version of this ResetNodeList.
+        r"""Gets the api_version of this ResetNodeList.
 
         API版本，固定值“v3”。
 
@@ -65,7 +65,7 @@ class ResetNodeList:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ResetNodeList.
+        r"""Sets the api_version of this ResetNodeList.
 
         API版本，固定值“v3”。
 
@@ -76,7 +76,7 @@ class ResetNodeList:
 
     @property
     def kind(self):
-        """Gets the kind of this ResetNodeList.
+        r"""Gets the kind of this ResetNodeList.
 
         API类型，固定值“List”。
 
@@ -87,7 +87,7 @@ class ResetNodeList:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ResetNodeList.
+        r"""Sets the kind of this ResetNodeList.
 
         API类型，固定值“List”。
 
@@ -98,7 +98,7 @@ class ResetNodeList:
 
     @property
     def node_list(self):
-        """Gets the node_list of this ResetNodeList.
+        r"""Gets the node_list of this ResetNodeList.
 
         重置节点列表
 
@@ -109,7 +109,7 @@ class ResetNodeList:
 
     @node_list.setter
     def node_list(self, node_list):
-        """Sets the node_list of this ResetNodeList.
+        r"""Sets the node_list of this ResetNodeList.
 
         重置节点列表
 

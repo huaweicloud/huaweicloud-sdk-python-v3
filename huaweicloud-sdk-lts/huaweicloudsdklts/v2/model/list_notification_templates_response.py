@@ -26,7 +26,7 @@ class ListNotificationTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """ListNotificationTemplatesResponse
+        r"""ListNotificationTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListNotificationTemplatesResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ListNotificationTemplatesResponse.
+        r"""Gets the results of this ListNotificationTemplatesResponse.
 
         模板数组
 
@@ -55,7 +55,7 @@ class ListNotificationTemplatesResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ListNotificationTemplatesResponse.
+        r"""Sets the results of this ListNotificationTemplatesResponse.
 
         模板数组
 

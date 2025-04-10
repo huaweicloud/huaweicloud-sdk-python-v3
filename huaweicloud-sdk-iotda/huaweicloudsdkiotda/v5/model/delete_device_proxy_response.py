@@ -26,7 +26,7 @@ class DeleteDeviceProxyResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteDeviceProxyResponse
+        r"""DeleteDeviceProxyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDeviceProxyResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteDeviceProxyResponse.
+        r"""Gets the body of this DeleteDeviceProxyResponse.
 
         :return: The body of this DeleteDeviceProxyResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteDeviceProxyResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDeviceProxyResponse.
+        r"""Sets the body of this DeleteDeviceProxyResponse.
 
         :param body: The body of this DeleteDeviceProxyResponse.
         :type body: str

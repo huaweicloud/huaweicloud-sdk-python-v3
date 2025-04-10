@@ -27,7 +27,7 @@ class WeightPodAffinityTerms:
     }
 
     def __init__(self, pod_affinity_term=None, weight=None):
-        """WeightPodAffinityTerms
+        r"""WeightPodAffinityTerms
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WeightPodAffinityTerms:
 
     @property
     def pod_affinity_term(self):
-        """Gets the pod_affinity_term of this WeightPodAffinityTerms.
+        r"""Gets the pod_affinity_term of this WeightPodAffinityTerms.
 
         :return: The pod_affinity_term of this WeightPodAffinityTerms.
         :rtype: :class:`huaweicloudsdkief.v1.WeightPodAffinityTermsPodAffinityTerm`
@@ -59,7 +59,7 @@ class WeightPodAffinityTerms:
 
     @pod_affinity_term.setter
     def pod_affinity_term(self, pod_affinity_term):
-        """Sets the pod_affinity_term of this WeightPodAffinityTerms.
+        r"""Sets the pod_affinity_term of this WeightPodAffinityTerms.
 
         :param pod_affinity_term: The pod_affinity_term of this WeightPodAffinityTerms.
         :type pod_affinity_term: :class:`huaweicloudsdkief.v1.WeightPodAffinityTermsPodAffinityTerm`
@@ -68,7 +68,7 @@ class WeightPodAffinityTerms:
 
     @property
     def weight(self):
-        """Gets the weight of this WeightPodAffinityTerms.
+        r"""Gets the weight of this WeightPodAffinityTerms.
 
         权重，范围为1-100
 
@@ -79,7 +79,7 @@ class WeightPodAffinityTerms:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this WeightPodAffinityTerms.
+        r"""Sets the weight of this WeightPodAffinityTerms.
 
         权重，范围为1-100
 

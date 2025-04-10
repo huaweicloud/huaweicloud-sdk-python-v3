@@ -25,7 +25,7 @@ class ClusterMetadataForUpdate:
     }
 
     def __init__(self, alias=None):
-        """ClusterMetadataForUpdate
+        r"""ClusterMetadataForUpdate
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ClusterMetadataForUpdate:
 
     @property
     def alias(self):
-        """Gets the alias of this ClusterMetadataForUpdate.
+        r"""Gets the alias of this ClusterMetadataForUpdate.
 
         集群显示名。  命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-128位，且不能以中划线(-)结尾。  显示名和其他集群的名称、显示名不可以重复。  为空时表示不进行修改。
 
@@ -54,7 +54,7 @@ class ClusterMetadataForUpdate:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this ClusterMetadataForUpdate.
+        r"""Sets the alias of this ClusterMetadataForUpdate.
 
         集群显示名。  命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-128位，且不能以中划线(-)结尾。  显示名和其他集群的名称、显示名不可以重复。  为空时表示不进行修改。
 

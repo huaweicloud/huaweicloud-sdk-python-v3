@@ -27,7 +27,7 @@ class NodeContentReq:
     }
 
     def __init__(self, site_id=None, sqllist=None):
-        """NodeContentReq
+        r"""NodeContentReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NodeContentReq:
 
     @property
     def site_id(self):
-        """Gets the site_id of this NodeContentReq.
+        r"""Gets the site_id of this NodeContentReq.
 
         节点实例ID
 
@@ -59,7 +59,7 @@ class NodeContentReq:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this NodeContentReq.
+        r"""Sets the site_id of this NodeContentReq.
 
         节点实例ID
 
@@ -70,7 +70,7 @@ class NodeContentReq:
 
     @property
     def sqllist(self):
-        """Gets the sqllist of this NodeContentReq.
+        r"""Gets the sqllist of this NodeContentReq.
 
         SQL列表，将指定边缘平台节点的数字孪生模型实例数据转发到中心平台节点。
 
@@ -81,7 +81,7 @@ class NodeContentReq:
 
     @sqllist.setter
     def sqllist(self, sqllist):
-        """Sets the sqllist of this NodeContentReq.
+        r"""Sets the sqllist of this NodeContentReq.
 
         SQL列表，将指定边缘平台节点的数字孪生模型实例数据转发到中心平台节点。
 

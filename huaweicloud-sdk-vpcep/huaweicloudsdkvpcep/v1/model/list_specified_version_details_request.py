@@ -25,7 +25,7 @@ class ListSpecifiedVersionDetailsRequest:
     }
 
     def __init__(self, version=None):
-        """ListSpecifiedVersionDetailsRequest
+        r"""ListSpecifiedVersionDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListSpecifiedVersionDetailsRequest:
 
     @property
     def version(self):
-        """Gets the version of this ListSpecifiedVersionDetailsRequest.
+        r"""Gets the version of this ListSpecifiedVersionDetailsRequest.
 
         待查询版本号。 取值以v开头，例如v1。若为空，表示查询所有API的版本号。
 
@@ -53,7 +53,7 @@ class ListSpecifiedVersionDetailsRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListSpecifiedVersionDetailsRequest.
+        r"""Sets the version of this ListSpecifiedVersionDetailsRequest.
 
         待查询版本号。 取值以v开头，例如v1。若为空，表示查询所有API的版本号。
 

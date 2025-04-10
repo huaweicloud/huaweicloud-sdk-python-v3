@@ -27,7 +27,7 @@ class ShowProjectStrategyRequest:
     }
 
     def __init__(self, rule_set_id=None, project_id=None):
-        """ShowProjectStrategyRequest
+        r"""ShowProjectStrategyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowProjectStrategyRequest:
 
     @property
     def rule_set_id(self):
-        """Gets the rule_set_id of this ShowProjectStrategyRequest.
+        r"""Gets the rule_set_id of this ShowProjectStrategyRequest.
 
         策略ID
 
@@ -59,7 +59,7 @@ class ShowProjectStrategyRequest:
 
     @rule_set_id.setter
     def rule_set_id(self, rule_set_id):
-        """Sets the rule_set_id of this ShowProjectStrategyRequest.
+        r"""Sets the rule_set_id of this ShowProjectStrategyRequest.
 
         策略ID
 
@@ -70,7 +70,7 @@ class ShowProjectStrategyRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowProjectStrategyRequest.
+        r"""Gets the project_id of this ShowProjectStrategyRequest.
 
         项目ID
 
@@ -81,7 +81,7 @@ class ShowProjectStrategyRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowProjectStrategyRequest.
+        r"""Sets the project_id of this ShowProjectStrategyRequest.
 
         项目ID
 

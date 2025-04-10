@@ -26,7 +26,7 @@ class ParseUserBehaviorResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ParseUserBehaviorResponse
+        r"""ParseUserBehaviorResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ParseUserBehaviorResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ParseUserBehaviorResponse.
+        r"""Gets the body of this ParseUserBehaviorResponse.
 
         :return: The body of this ParseUserBehaviorResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ParseUserBehaviorResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ParseUserBehaviorResponse.
+        r"""Sets the body of this ParseUserBehaviorResponse.
 
         :param body: The body of this ParseUserBehaviorResponse.
         :type body: str

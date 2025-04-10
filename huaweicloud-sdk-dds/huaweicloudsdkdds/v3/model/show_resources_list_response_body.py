@@ -25,7 +25,7 @@ class ShowResourcesListResponseBody:
     }
 
     def __init__(self, resources=None):
-        """ShowResourcesListResponseBody
+        r"""ShowResourcesListResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowResourcesListResponseBody:
 
     @property
     def resources(self):
-        """Gets the resources of this ShowResourcesListResponseBody.
+        r"""Gets the resources of this ShowResourcesListResponseBody.
 
         资源列表对象。
 
@@ -53,7 +53,7 @@ class ShowResourcesListResponseBody:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowResourcesListResponseBody.
+        r"""Sets the resources of this ShowResourcesListResponseBody.
 
         资源列表对象。
 

@@ -95,7 +95,7 @@ class Port:
     }
 
     def __init__(self, admin_state_up=None, bindinghost_id=None, bindingprofile=None, bindingvif_details=None, bindingvif_type=None, bindingvnic_type=None, created_at=None, updated_at=None, description=None, device_id=None, device_owner=None, ecs_flavor=None, id=None, instance_id=None, instance_type=None, mac_address=None, name=None, port_security_enabled=None, private_ips=None, project_id=None, security_groups=None, status=None, tenant_id=None, virsubnet_id=None, vpc_id=None, vpc_tenant_id=None, vtep_ip=None, enable_efi=None, scope=None, zone_id=None, bindingmigration_info=None, extra_dhcp_opts=None, position_type=None, instance_info=None, tags=None, allowed_address_pairs=None):
-        """Port
+        r"""Port
 
         The model defined in huaweicloud sdk
 
@@ -252,7 +252,7 @@ class Port:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this Port.
+        r"""Gets the admin_state_up of this Port.
 
         1、功能描述：管理状态 2、取值范围：true/false 3、约束：N/A 4、默认值：true 5、权限：N/A
 
@@ -263,7 +263,7 @@ class Port:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this Port.
+        r"""Sets the admin_state_up of this Port.
 
         1、功能描述：管理状态 2、取值范围：true/false 3、约束：N/A 4、默认值：true 5、权限：N/A
 
@@ -274,7 +274,7 @@ class Port:
 
     @property
     def bindinghost_id(self):
-        """Gets the bindinghost_id of this Port.
+        r"""Gets the bindinghost_id of this Port.
 
         1、功能描述：主机ID 2、取值范围：N/A 3、约束：管理员权限，普通租户不可见 4、默认值：N/A 5、权限：N/A
 
@@ -285,7 +285,7 @@ class Port:
 
     @bindinghost_id.setter
     def bindinghost_id(self, bindinghost_id):
-        """Sets the bindinghost_id of this Port.
+        r"""Sets the bindinghost_id of this Port.
 
         1、功能描述：主机ID 2、取值范围：N/A 3、约束：管理员权限，普通租户不可见 4、默认值：N/A 5、权限：N/A
 
@@ -296,7 +296,7 @@ class Port:
 
     @property
     def bindingprofile(self):
-        """Gets the bindingprofile of this Port.
+        r"""Gets the bindingprofile of this Port.
 
         1、功能描述：提供用户设置自定义信息 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -307,7 +307,7 @@ class Port:
 
     @bindingprofile.setter
     def bindingprofile(self, bindingprofile):
-        """Sets the bindingprofile of this Port.
+        r"""Sets the bindingprofile of this Port.
 
         1、功能描述：提供用户设置自定义信息 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -318,7 +318,7 @@ class Port:
 
     @property
     def bindingvif_details(self):
-        """Gets the bindingvif_details of this Port.
+        r"""Gets the bindingvif_details of this Port.
 
         1、功能描述：vif的详细信息， \"ovs_hybrid_plug\": 是否为ovs/bridge混合模式 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -329,7 +329,7 @@ class Port:
 
     @bindingvif_details.setter
     def bindingvif_details(self, bindingvif_details):
-        """Sets the bindingvif_details of this Port.
+        r"""Sets the bindingvif_details of this Port.
 
         1、功能描述：vif的详细信息， \"ovs_hybrid_plug\": 是否为ovs/bridge混合模式 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -340,7 +340,7 @@ class Port:
 
     @property
     def bindingvif_type(self):
-        """Gets the bindingvif_type of this Port.
+        r"""Gets the bindingvif_type of this Port.
 
         1、功能描述：端口的接口类型 (ovs/hw_veb等)(扩展属性) 2、取值范围：N/A 3、约束：管理员权限，普通租户不可见 4、默认值：N/A 5、权限：N/A
 
@@ -351,7 +351,7 @@ class Port:
 
     @bindingvif_type.setter
     def bindingvif_type(self, bindingvif_type):
-        """Sets the bindingvif_type of this Port.
+        r"""Sets the bindingvif_type of this Port.
 
         1、功能描述：端口的接口类型 (ovs/hw_veb等)(扩展属性) 2、取值范围：N/A 3、约束：管理员权限，普通租户不可见 4、默认值：N/A 5、权限：N/A
 
@@ -362,7 +362,7 @@ class Port:
 
     @property
     def bindingvnic_type(self):
-        """Gets the bindingvnic_type of this Port.
+        r"""Gets the bindingvnic_type of this Port.
 
         1、功能描述：绑定的vNIC类型normal: 软交换direct: SRIOV硬直通（不支持） 2、取值范围：normal或者direct 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -373,7 +373,7 @@ class Port:
 
     @bindingvnic_type.setter
     def bindingvnic_type(self, bindingvnic_type):
-        """Sets the bindingvnic_type of this Port.
+        r"""Sets the bindingvnic_type of this Port.
 
         1、功能描述：绑定的vNIC类型normal: 软交换direct: SRIOV硬直通（不支持） 2、取值范围：normal或者direct 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -384,7 +384,7 @@ class Port:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Port.
+        r"""Gets the created_at of this Port.
 
         1、功能说明：创建时间 2、取值范围：格式 \"UTC时间 格式: yyyy-MM-ddTHH:mm:ss\"  3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -395,7 +395,7 @@ class Port:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Port.
+        r"""Sets the created_at of this Port.
 
         1、功能说明：创建时间 2、取值范围：格式 \"UTC时间 格式: yyyy-MM-ddTHH:mm:ss\"  3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -406,7 +406,7 @@ class Port:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Port.
+        r"""Gets the updated_at of this Port.
 
         1、功能说明：创建时间 2、取值范围：格式 \"UTC时间 格式: yyyy-MM-ddTHH:mm:ss\"  3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -417,7 +417,7 @@ class Port:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Port.
+        r"""Sets the updated_at of this Port.
 
         1、功能说明：创建时间 2、取值范围：格式 \"UTC时间 格式: yyyy-MM-ddTHH:mm:ss\"  3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -428,7 +428,7 @@ class Port:
 
     @property
     def description(self):
-        """Gets the description of this Port.
+        r"""Gets the description of this Port.
 
         1、功能说明：端口描述 2、取值范围：0-255个字符，不能包含“<”和“>” 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -439,7 +439,7 @@ class Port:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Port.
+        r"""Sets the description of this Port.
 
         1、功能说明：端口描述 2、取值范围：0-255个字符，不能包含“<”和“>” 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -450,7 +450,7 @@ class Port:
 
     @property
     def device_id(self):
-        """Gets the device_id of this Port.
+        r"""Gets the device_id of this Port.
 
         1、功能描述：端口所属设备ID 2、取值范围：标准UUID 3、约束：不支持设置和更新，由系统自动维护 4、默认值：N/A 5、权限：N/A
 
@@ -461,7 +461,7 @@ class Port:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this Port.
+        r"""Sets the device_id of this Port.
 
         1、功能描述：端口所属设备ID 2、取值范围：标准UUID 3、约束：不支持设置和更新，由系统自动维护 4、默认值：N/A 5、权限：N/A
 
@@ -472,7 +472,7 @@ class Port:
 
     @property
     def device_owner(self):
-        """Gets the device_owner of this Port.
+        r"""Gets the device_owner of this Port.
 
         1、功能描述：设备所属（DHCP/Router/ lb/Nova） 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -483,7 +483,7 @@ class Port:
 
     @device_owner.setter
     def device_owner(self, device_owner):
-        """Sets the device_owner of this Port.
+        r"""Sets the device_owner of this Port.
 
         1、功能描述：设备所属（DHCP/Router/ lb/Nova） 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -494,7 +494,7 @@ class Port:
 
     @property
     def ecs_flavor(self):
-        """Gets the ecs_flavor of this Port.
+        r"""Gets the ecs_flavor of this Port.
 
         1、功能描述：标识这个端口所属虚拟机的flavor 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -505,7 +505,7 @@ class Port:
 
     @ecs_flavor.setter
     def ecs_flavor(self, ecs_flavor):
-        """Sets the ecs_flavor of this Port.
+        r"""Sets the ecs_flavor of this Port.
 
         1、功能描述：标识这个端口所属虚拟机的flavor 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -516,7 +516,7 @@ class Port:
 
     @property
     def id(self):
-        """Gets the id of this Port.
+        r"""Gets the id of this Port.
 
         1、功能描述：端口唯一标识 2、取值范围：标准UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -527,7 +527,7 @@ class Port:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Port.
+        r"""Sets the id of this Port.
 
         1、功能描述：端口唯一标识 2、取值范围：标准UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -538,7 +538,7 @@ class Port:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this Port.
+        r"""Gets the instance_id of this Port.
 
         1、功能描述：端口所属实例ID，例如RDS实例ID 2、取值范围：N/A 3、约束：不支持设置和更新，由系统自动维护 4、默认值：N/A 5、权限：N/A
 
@@ -549,7 +549,7 @@ class Port:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this Port.
+        r"""Sets the instance_id of this Port.
 
         1、功能描述：端口所属实例ID，例如RDS实例ID 2、取值范围：N/A 3、约束：不支持设置和更新，由系统自动维护 4、默认值：N/A 5、权限：N/A
 
@@ -560,7 +560,7 @@ class Port:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this Port.
+        r"""Gets the instance_type of this Port.
 
         1、功能描述：端口所属实例类型，例如“RDS” 2、取值范围：N/A 3、约束：不支持设置和更新，由系统自动维护 4、默认值：N/A 5、权限：N/A
 
@@ -571,7 +571,7 @@ class Port:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this Port.
+        r"""Sets the instance_type of this Port.
 
         1、功能描述：端口所属实例类型，例如“RDS” 2、取值范围：N/A 3、约束：不支持设置和更新，由系统自动维护 4、默认值：N/A 5、权限：N/A
 
@@ -582,7 +582,7 @@ class Port:
 
     @property
     def mac_address(self):
-        """Gets the mac_address of this Port.
+        r"""Gets the mac_address of this Port.
 
         1、功能描述：MAC地址 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -593,7 +593,7 @@ class Port:
 
     @mac_address.setter
     def mac_address(self, mac_address):
-        """Sets the mac_address of this Port.
+        r"""Sets the mac_address of this Port.
 
         1、功能描述：MAC地址 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -604,7 +604,7 @@ class Port:
 
     @property
     def name(self):
-        """Gets the name of this Port.
+        r"""Gets the name of this Port.
 
         1、功能描述：端口名称 2、取值范围：默认为空，最大长度不超过255 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -615,7 +615,7 @@ class Port:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Port.
+        r"""Sets the name of this Port.
 
         1、功能描述：端口名称 2、取值范围：默认为空，最大长度不超过255 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -626,7 +626,7 @@ class Port:
 
     @property
     def port_security_enabled(self):
-        """Gets the port_security_enabled of this Port.
+        r"""Gets the port_security_enabled of this Port.
 
         1、功能描述：端口安全使能标记，如果不使能则安全组和dhcp防欺骗不生效 2、取值范围：true/false 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -637,7 +637,7 @@ class Port:
 
     @port_security_enabled.setter
     def port_security_enabled(self, port_security_enabled):
-        """Sets the port_security_enabled of this Port.
+        r"""Sets the port_security_enabled of this Port.
 
         1、功能描述：端口安全使能标记，如果不使能则安全组和dhcp防欺骗不生效 2、取值范围：true/false 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -648,7 +648,7 @@ class Port:
 
     @property
     def private_ips(self):
-        """Gets the private_ips of this Port.
+        r"""Gets the private_ips of this Port.
 
         1、功能描述：port的私有IP地址 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -659,7 +659,7 @@ class Port:
 
     @private_ips.setter
     def private_ips(self, private_ips):
-        """Sets the private_ips of this Port.
+        r"""Sets the private_ips of this Port.
 
         1、功能描述：port的私有IP地址 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -670,7 +670,7 @@ class Port:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Port.
+        r"""Gets the project_id of this Port.
 
         1、功能描述：项目ID 2、取值范围：UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -681,7 +681,7 @@ class Port:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Port.
+        r"""Sets the project_id of this Port.
 
         1、功能描述：项目ID 2、取值范围：UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -692,7 +692,7 @@ class Port:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this Port.
+        r"""Gets the security_groups of this Port.
 
         1、功能描述：安全组 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -703,7 +703,7 @@ class Port:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this Port.
+        r"""Sets the security_groups of this Port.
 
         1、功能描述：安全组 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -714,7 +714,7 @@ class Port:
 
     @property
     def status(self):
-        """Gets the status of this Port.
+        r"""Gets the status of this Port.
 
         1、功能描述：端口状态 2、取值范围：ACTIVE，BUILD，DOWN 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -725,7 +725,7 @@ class Port:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Port.
+        r"""Sets the status of this Port.
 
         1、功能描述：端口状态 2、取值范围：ACTIVE，BUILD，DOWN 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -736,7 +736,7 @@ class Port:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this Port.
+        r"""Gets the tenant_id of this Port.
 
         1、功能描述：租户ID 2、取值范围：UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -747,7 +747,7 @@ class Port:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this Port.
+        r"""Sets the tenant_id of this Port.
 
         1、功能描述：租户ID 2、取值范围：UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -758,7 +758,7 @@ class Port:
 
     @property
     def virsubnet_id(self):
-        """Gets the virsubnet_id of this Port.
+        r"""Gets the virsubnet_id of this Port.
 
         1、功能描述：所属网络ID 2、取值范围：标准UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -769,7 +769,7 @@ class Port:
 
     @virsubnet_id.setter
     def virsubnet_id(self, virsubnet_id):
-        """Sets the virsubnet_id of this Port.
+        r"""Sets the virsubnet_id of this Port.
 
         1、功能描述：所属网络ID 2、取值范围：标准UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -780,7 +780,7 @@ class Port:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this Port.
+        r"""Gets the vpc_id of this Port.
 
         1、功能描述：VPC的ID 2、取值范围：标准UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -791,7 +791,7 @@ class Port:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this Port.
+        r"""Sets the vpc_id of this Port.
 
         1、功能描述：VPC的ID 2、取值范围：标准UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -802,7 +802,7 @@ class Port:
 
     @property
     def vpc_tenant_id(self):
-        """Gets the vpc_tenant_id of this Port.
+        r"""Gets the vpc_tenant_id of this Port.
 
         1、功能描述：VPC_租户ID 2、取值范围：UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -813,7 +813,7 @@ class Port:
 
     @vpc_tenant_id.setter
     def vpc_tenant_id(self, vpc_tenant_id):
-        """Sets the vpc_tenant_id of this Port.
+        r"""Sets the vpc_tenant_id of this Port.
 
         1、功能描述：VPC_租户ID 2、取值范围：UUID 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -824,7 +824,7 @@ class Port:
 
     @property
     def vtep_ip(self):
-        """Gets the vtep_ip of this Port.
+        r"""Gets the vtep_ip of this Port.
 
         1、功能描述：本地IP 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -835,7 +835,7 @@ class Port:
 
     @vtep_ip.setter
     def vtep_ip(self, vtep_ip):
-        """Sets the vtep_ip of this Port.
+        r"""Sets the vtep_ip of this Port.
 
         1、功能描述：本地IP 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -846,7 +846,7 @@ class Port:
 
     @property
     def enable_efi(self):
-        """Gets the enable_efi of this Port.
+        r"""Gets the enable_efi of this Port.
 
         1、功能描述：是否使能efi，使能则表示端口支持vRoCE能力 2、取值范围：true or false 3、约束：N/A 4、默认值：false 5、权限：N/A
 
@@ -857,7 +857,7 @@ class Port:
 
     @enable_efi.setter
     def enable_efi(self, enable_efi):
-        """Sets the enable_efi of this Port.
+        r"""Sets the enable_efi of this Port.
 
         1、功能描述：是否使能efi，使能则表示端口支持vRoCE能力 2、取值范围：true or false 3、约束：N/A 4、默认值：false 5、权限：N/A
 
@@ -868,7 +868,7 @@ class Port:
 
     @property
     def scope(self):
-        """Gets the scope of this Port.
+        r"""Gets the scope of this Port.
 
         1、功能描述：作用域 2、取值范围：center，表示作用域为中心；{azId}，表示作用域为具体的可用区 3、约束：N/A 4、默认值：center 5、权限：N/A
 
@@ -879,7 +879,7 @@ class Port:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this Port.
+        r"""Sets the scope of this Port.
 
         1、功能描述：作用域 2、取值范围：center，表示作用域为中心；{azId}，表示作用域为具体的可用区 3、约束：N/A 4、默认值：center 5、权限：N/A
 
@@ -890,7 +890,7 @@ class Port:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this Port.
+        r"""Gets the zone_id of this Port.
 
         1、功能描述：端口所属的可用分区 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -901,7 +901,7 @@ class Port:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this Port.
+        r"""Sets the zone_id of this Port.
 
         1、功能描述：端口所属的可用分区 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -912,7 +912,7 @@ class Port:
 
     @property
     def bindingmigration_info(self):
-        """Gets the bindingmigration_info of this Port.
+        r"""Gets the bindingmigration_info of this Port.
 
         1、功能描述：迁移目的节点信息，包括目的节点的binding:vif_details和binding:vif_type 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -923,7 +923,7 @@ class Port:
 
     @bindingmigration_info.setter
     def bindingmigration_info(self, bindingmigration_info):
-        """Sets the bindingmigration_info of this Port.
+        r"""Sets the bindingmigration_info of this Port.
 
         1、功能描述：迁移目的节点信息，包括目的节点的binding:vif_details和binding:vif_type 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -934,7 +934,7 @@ class Port:
 
     @property
     def extra_dhcp_opts(self):
-        """Gets the extra_dhcp_opts of this Port.
+        r"""Gets the extra_dhcp_opts of this Port.
 
         功能说明：DHCP的扩展属性
 
@@ -945,7 +945,7 @@ class Port:
 
     @extra_dhcp_opts.setter
     def extra_dhcp_opts(self, extra_dhcp_opts):
-        """Sets the extra_dhcp_opts of this Port.
+        r"""Sets the extra_dhcp_opts of this Port.
 
         功能说明：DHCP的扩展属性
 
@@ -956,7 +956,7 @@ class Port:
 
     @property
     def position_type(self):
-        """Gets the position_type of this Port.
+        r"""Gets the position_type of this Port.
 
         1、功能描述：边缘场景位置类型 2、取值范围：N/A 3、约束：N/A 4、默认值：center 5、权限：N/A
 
@@ -967,7 +967,7 @@ class Port:
 
     @position_type.setter
     def position_type(self, position_type):
-        """Sets the position_type of this Port.
+        r"""Sets the position_type of this Port.
 
         1、功能描述：边缘场景位置类型 2、取值范围：N/A 3、约束：N/A 4、默认值：center 5、权限：N/A
 
@@ -978,7 +978,7 @@ class Port:
 
     @property
     def instance_info(self):
-        """Gets the instance_info of this Port.
+        r"""Gets the instance_info of this Port.
 
         1、功能描述：端口绑定实例信息 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -989,7 +989,7 @@ class Port:
 
     @instance_info.setter
     def instance_info(self, instance_info):
-        """Sets the instance_info of this Port.
+        r"""Sets the instance_info of this Port.
 
         1、功能描述：端口绑定实例信息 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -1000,7 +1000,7 @@ class Port:
 
     @property
     def tags(self):
-        """Gets the tags of this Port.
+        r"""Gets the tags of this Port.
 
         1、功能描述：端口标签 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -1011,7 +1011,7 @@ class Port:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Port.
+        r"""Sets the tags of this Port.
 
         1、功能描述：端口标签 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
 
@@ -1022,7 +1022,7 @@ class Port:
 
     @property
     def allowed_address_pairs(self):
-        """Gets the allowed_address_pairs of this Port.
+        r"""Gets the allowed_address_pairs of this Port.
 
         1、功能描述：IP/Mac对列表 2、取值范围：N/A 3、约束： - IP地址不允许为 “0.0.0.0/0” - 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。 - 如果allowed_address_pairs的IP地址为“1.1.1.1/0”，表示关闭源目地址检查开关。 - 被绑定的云服务器网卡allowed_address_pairs的IP地址填“1.1.1.1/0”。 4、默认值：N/A 5、权限：N/A
 
@@ -1033,7 +1033,7 @@ class Port:
 
     @allowed_address_pairs.setter
     def allowed_address_pairs(self, allowed_address_pairs):
-        """Sets the allowed_address_pairs of this Port.
+        r"""Sets the allowed_address_pairs of this Port.
 
         1、功能描述：IP/Mac对列表 2、取值范围：N/A 3、约束： - IP地址不允许为 “0.0.0.0/0” - 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。 - 如果allowed_address_pairs的IP地址为“1.1.1.1/0”，表示关闭源目地址检查开关。 - 被绑定的云服务器网卡allowed_address_pairs的IP地址填“1.1.1.1/0”。 4、默认值：N/A 5、权限：N/A
 

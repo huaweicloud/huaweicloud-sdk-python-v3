@@ -25,7 +25,7 @@ class CheckEmailConnectionRequest:
     }
 
     def __init__(self, body=None):
-        """CheckEmailConnectionRequest
+        r"""CheckEmailConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckEmailConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckEmailConnectionRequest.
+        r"""Gets the body of this CheckEmailConnectionRequest.
 
         :return: The body of this CheckEmailConnectionRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TryEmailConnectionReq`
@@ -52,7 +52,7 @@ class CheckEmailConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckEmailConnectionRequest.
+        r"""Sets the body of this CheckEmailConnectionRequest.
 
         :param body: The body of this CheckEmailConnectionRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.TryEmailConnectionReq`

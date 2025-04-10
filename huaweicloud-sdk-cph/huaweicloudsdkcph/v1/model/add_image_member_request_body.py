@@ -25,7 +25,7 @@ class AddImageMemberRequestBody:
     }
 
     def __init__(self, member=None):
-        """AddImageMemberRequestBody
+        r"""AddImageMemberRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddImageMemberRequestBody:
 
     @property
     def member(self):
-        """Gets the member of this AddImageMemberRequestBody.
+        r"""Gets the member of this AddImageMemberRequestBody.
 
         被共享账号的PROJECT_ID
 
@@ -54,7 +54,7 @@ class AddImageMemberRequestBody:
 
     @member.setter
     def member(self, member):
-        """Sets the member of this AddImageMemberRequestBody.
+        r"""Sets the member of this AddImageMemberRequestBody.
 
         被共享账号的PROJECT_ID
 

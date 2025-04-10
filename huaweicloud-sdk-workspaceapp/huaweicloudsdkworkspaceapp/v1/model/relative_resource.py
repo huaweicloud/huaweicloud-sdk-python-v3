@@ -35,7 +35,7 @@ class RelativeResource:
     }
 
     def __init__(self, relative_resource_id=None, relative_resource_name=None, relative_type=None, relative_cloud_service_type=None, relative_resource_type=None, extend_params=None):
-        """RelativeResource
+        r"""RelativeResource
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RelativeResource:
 
     @property
     def relative_resource_id(self):
-        """Gets the relative_resource_id of this RelativeResource.
+        r"""Gets the relative_resource_id of this RelativeResource.
 
         关联的资源ID。
 
@@ -89,7 +89,7 @@ class RelativeResource:
 
     @relative_resource_id.setter
     def relative_resource_id(self, relative_resource_id):
-        """Sets the relative_resource_id of this RelativeResource.
+        r"""Sets the relative_resource_id of this RelativeResource.
 
         关联的资源ID。
 
@@ -100,7 +100,7 @@ class RelativeResource:
 
     @property
     def relative_resource_name(self):
-        """Gets the relative_resource_name of this RelativeResource.
+        r"""Gets the relative_resource_name of this RelativeResource.
 
         有资源名称的云资源，都需要返回resourceName，如果为空值，则返回“”。
 
@@ -111,7 +111,7 @@ class RelativeResource:
 
     @relative_resource_name.setter
     def relative_resource_name(self, relative_resource_name):
-        """Sets the relative_resource_name of this RelativeResource.
+        r"""Sets the relative_resource_name of this RelativeResource.
 
         有资源名称的云资源，都需要返回resourceName，如果为空值，则返回“”。
 
@@ -122,7 +122,7 @@ class RelativeResource:
 
     @property
     def relative_type(self):
-        """Gets the relative_type of this RelativeResource.
+        r"""Gets the relative_type of this RelativeResource.
 
         * 关联关系类型，描述relativeResourceId和resourceId间的关联关系：    * 0：挂载(弱关联)，表示relativeResourceId和resourceId两者有关联关系，     * 但是两者可以独立使用、分别进行交易，且分别使用和交易都不影响整套云服务的使用；比如云主机和数据盘。 *     1：绑定(强关联)，表示relativeResourceId和resourceId是强绑定关系，      两者必须一起使用、一起进行交易，缺少其中一个会造成整套云服务不能使用；比如云主机和系统盘。           缺省值为0(挂载)。           subResources中的RelativeResource，此字段是必填；mainResources中的RelativeResource。
 
@@ -133,7 +133,7 @@ class RelativeResource:
 
     @relative_type.setter
     def relative_type(self, relative_type):
-        """Sets the relative_type of this RelativeResource.
+        r"""Sets the relative_type of this RelativeResource.
 
         * 关联关系类型，描述relativeResourceId和resourceId间的关联关系：    * 0：挂载(弱关联)，表示relativeResourceId和resourceId两者有关联关系，     * 但是两者可以独立使用、分别进行交易，且分别使用和交易都不影响整套云服务的使用；比如云主机和数据盘。 *     1：绑定(强关联)，表示relativeResourceId和resourceId是强绑定关系，      两者必须一起使用、一起进行交易，缺少其中一个会造成整套云服务不能使用；比如云主机和系统盘。           缺省值为0(挂载)。           subResources中的RelativeResource，此字段是必填；mainResources中的RelativeResource。
 
@@ -144,7 +144,7 @@ class RelativeResource:
 
     @property
     def relative_cloud_service_type(self):
-        """Gets the relative_cloud_service_type of this RelativeResource.
+        r"""Gets the relative_cloud_service_type of this RelativeResource.
 
         比如ECS云服务类型为‘hws.service.type.ec2’。
 
@@ -155,7 +155,7 @@ class RelativeResource:
 
     @relative_cloud_service_type.setter
     def relative_cloud_service_type(self, relative_cloud_service_type):
-        """Sets the relative_cloud_service_type of this RelativeResource.
+        r"""Sets the relative_cloud_service_type of this RelativeResource.
 
         比如ECS云服务类型为‘hws.service.type.ec2’。
 
@@ -166,7 +166,7 @@ class RelativeResource:
 
     @property
     def relative_resource_type(self):
-        """Gets the relative_resource_type of this RelativeResource.
+        r"""Gets the relative_resource_type of this RelativeResource.
 
         比如VM的资源类型为‘hws.resource.type.vm’。
 
@@ -177,7 +177,7 @@ class RelativeResource:
 
     @relative_resource_type.setter
     def relative_resource_type(self, relative_resource_type):
-        """Sets the relative_resource_type of this RelativeResource.
+        r"""Sets the relative_resource_type of this RelativeResource.
 
         比如VM的资源类型为‘hws.resource.type.vm’。
 
@@ -188,7 +188,7 @@ class RelativeResource:
 
     @property
     def extend_params(self):
-        """Gets the extend_params of this RelativeResource.
+        r"""Gets the extend_params of this RelativeResource.
 
         扩展信息，Key:Value格式。
 
@@ -199,7 +199,7 @@ class RelativeResource:
 
     @extend_params.setter
     def extend_params(self, extend_params):
-        """Sets the extend_params of this RelativeResource.
+        r"""Sets the extend_params of this RelativeResource.
 
         扩展信息，Key:Value格式。
 

@@ -27,7 +27,7 @@ class ApiLink:
     }
 
     def __init__(self, href=None, rel=None):
-        """ApiLink
+        r"""ApiLink
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApiLink:
 
     @property
     def href(self):
-        """Gets the href of this ApiLink.
+        r"""Gets the href of this ApiLink.
 
         API的URL地址。
 
@@ -61,7 +61,7 @@ class ApiLink:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this ApiLink.
+        r"""Sets the href of this ApiLink.
 
         API的URL地址。
 
@@ -72,7 +72,7 @@ class ApiLink:
 
     @property
     def rel(self):
-        """Gets the rel of this ApiLink.
+        r"""Gets the rel of this ApiLink.
 
         默认值self。
 
@@ -83,7 +83,7 @@ class ApiLink:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this ApiLink.
+        r"""Sets the rel of this ApiLink.
 
         默认值self。
 

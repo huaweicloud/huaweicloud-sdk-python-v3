@@ -29,7 +29,7 @@ class Cert:
     }
 
     def __init__(self, name=None, description=None, type=None):
-        """Cert
+        r"""Cert
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Cert:
 
     @property
     def name(self):
-        """Gets the name of this Cert.
+        r"""Gets the name of this Cert.
 
         证书名称
 
@@ -66,7 +66,7 @@ class Cert:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Cert.
+        r"""Sets the name of this Cert.
 
         证书名称
 
@@ -77,7 +77,7 @@ class Cert:
 
     @property
     def description(self):
-        """Gets the description of this Cert.
+        r"""Gets the description of this Cert.
 
         证书描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -88,7 +88,7 @@ class Cert:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Cert.
+        r"""Sets the description of this Cert.
 
         证书描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -99,7 +99,7 @@ class Cert:
 
     @property
     def type(self):
-        """Gets the type of this Cert.
+        r"""Gets the type of this Cert.
 
         证书类型，包含： - application：应用证书 - device：设备证书
 
@@ -110,7 +110,7 @@ class Cert:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Cert.
+        r"""Sets the type of this Cert.
 
         证书类型，包含： - application：应用证书 - device：设备证书
 

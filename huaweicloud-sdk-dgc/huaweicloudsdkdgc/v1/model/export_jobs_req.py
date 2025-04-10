@@ -27,7 +27,7 @@ class ExportJobsReq:
     }
 
     def __init__(self, job_list=None, export_depend=None):
-        """ExportJobsReq
+        r"""ExportJobsReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExportJobsReq:
 
     @property
     def job_list(self):
-        """Gets the job_list of this ExportJobsReq.
+        r"""Gets the job_list of this ExportJobsReq.
 
         :return: The job_list of this ExportJobsReq.
         :rtype: list[str]
@@ -59,7 +59,7 @@ class ExportJobsReq:
 
     @job_list.setter
     def job_list(self, job_list):
-        """Sets the job_list of this ExportJobsReq.
+        r"""Sets the job_list of this ExportJobsReq.
 
         :param job_list: The job_list of this ExportJobsReq.
         :type job_list: list[str]
@@ -68,7 +68,7 @@ class ExportJobsReq:
 
     @property
     def export_depend(self):
-        """Gets the export_depend of this ExportJobsReq.
+        r"""Gets the export_depend of this ExportJobsReq.
 
         是否导出作业依赖的脚本和资源
 
@@ -79,7 +79,7 @@ class ExportJobsReq:
 
     @export_depend.setter
     def export_depend(self, export_depend):
-        """Sets the export_depend of this ExportJobsReq.
+        r"""Sets the export_depend of this ExportJobsReq.
 
         是否导出作业依赖的脚本和资源
 

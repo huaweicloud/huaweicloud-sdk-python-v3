@@ -30,7 +30,7 @@ class ShowReviewByPageResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowReviewByPageResponse
+        r"""ShowReviewByPageResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowReviewByPageResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowReviewByPageResponse.
+        r"""Gets the code of this ShowReviewByPageResponse.
 
         :return: The code of this ShowReviewByPageResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowReviewByPageResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowReviewByPageResponse.
+        r"""Sets the code of this ShowReviewByPageResponse.
 
         :param code: The code of this ShowReviewByPageResponse.
         :type code: str
@@ -76,7 +76,7 @@ class ShowReviewByPageResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowReviewByPageResponse.
+        r"""Gets the data of this ShowReviewByPageResponse.
 
         :return: The data of this ShowReviewByPageResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoReview`
@@ -85,7 +85,7 @@ class ShowReviewByPageResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowReviewByPageResponse.
+        r"""Sets the data of this ShowReviewByPageResponse.
 
         :param data: The data of this ShowReviewByPageResponse.
         :type data: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoReview`
@@ -94,7 +94,7 @@ class ShowReviewByPageResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowReviewByPageResponse.
+        r"""Gets the message of this ShowReviewByPageResponse.
 
         :return: The message of this ShowReviewByPageResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ShowReviewByPageResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowReviewByPageResponse.
+        r"""Sets the message of this ShowReviewByPageResponse.
 
         :param message: The message of this ShowReviewByPageResponse.
         :type message: str

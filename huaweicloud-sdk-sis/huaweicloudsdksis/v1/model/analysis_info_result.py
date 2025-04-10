@@ -29,7 +29,7 @@ class AnalysisInfoResult:
     }
 
     def __init__(self, role=None, emotion=None, speed=None):
-        """AnalysisInfoResult
+        r"""AnalysisInfoResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AnalysisInfoResult:
 
     @property
     def role(self):
-        """Gets the role of this AnalysisInfoResult.
+        r"""Gets the role of this AnalysisInfoResult.
 
         角色类型, 目前仅支持 AGENT(座席), USER(用户)。
 
@@ -68,7 +68,7 @@ class AnalysisInfoResult:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this AnalysisInfoResult.
+        r"""Sets the role of this AnalysisInfoResult.
 
         角色类型, 目前仅支持 AGENT(座席), USER(用户)。
 
@@ -79,7 +79,7 @@ class AnalysisInfoResult:
 
     @property
     def emotion(self):
-        """Gets the emotion of this AnalysisInfoResult.
+        r"""Gets the emotion of this AnalysisInfoResult.
 
         情绪类型，目前支持NORMAL(正常)，ANGRY(愤怒)，UNKNOWN(未知)。 在识别配置中emotion为true时存在。
 
@@ -90,7 +90,7 @@ class AnalysisInfoResult:
 
     @emotion.setter
     def emotion(self, emotion):
-        """Sets the emotion of this AnalysisInfoResult.
+        r"""Sets the emotion of this AnalysisInfoResult.
 
         情绪类型，目前支持NORMAL(正常)，ANGRY(愤怒)，UNKNOWN(未知)。 在识别配置中emotion为true时存在。
 
@@ -101,7 +101,7 @@ class AnalysisInfoResult:
 
     @property
     def speed(self):
-        """Gets the speed of this AnalysisInfoResult.
+        r"""Gets the speed of this AnalysisInfoResult.
 
         语速信息，单位是\"每秒字数\"。 在识别配置中speed为true时存在。
 
@@ -112,7 +112,7 @@ class AnalysisInfoResult:
 
     @speed.setter
     def speed(self, speed):
-        """Sets the speed of this AnalysisInfoResult.
+        r"""Sets the speed of this AnalysisInfoResult.
 
         语速信息，单位是\"每秒字数\"。 在识别配置中speed为true时存在。
 

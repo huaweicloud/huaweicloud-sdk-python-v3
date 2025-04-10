@@ -27,7 +27,7 @@ class ListDdmConfigurationsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListDdmConfigurationsRequest
+        r"""ListDdmConfigurationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListDdmConfigurationsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDdmConfigurationsRequest.
+        r"""Gets the offset of this ListDdmConfigurationsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0。取值必须为数字，且不能为负数。
 
@@ -61,7 +61,7 @@ class ListDdmConfigurationsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDdmConfigurationsRequest.
+        r"""Sets the offset of this ListDdmConfigurationsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0。取值必须为数字，且不能为负数。
 
@@ -72,7 +72,7 @@ class ListDdmConfigurationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDdmConfigurationsRequest.
+        r"""Gets the limit of this ListDdmConfigurationsRequest.
 
         查询个数上限值。取值范围：1~128。不传该参数时，默认值为10。
 
@@ -83,7 +83,7 @@ class ListDdmConfigurationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDdmConfigurationsRequest.
+        r"""Sets the limit of this ListDdmConfigurationsRequest.
 
         查询个数上限值。取值范围：1~128。不传该参数时，默认值为10。
 

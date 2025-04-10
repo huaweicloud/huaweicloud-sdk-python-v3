@@ -41,7 +41,7 @@ class KeywordsResBody:
     }
 
     def __init__(self, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, keywords=None, condition=None, number=None, search_time_range=None, search_time_range_unit=None):
-        """KeywordsResBody
+        r"""KeywordsResBody
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class KeywordsResBody:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this KeywordsResBody.
+        r"""Gets the log_stream_id of this KeywordsResBody.
 
         日志流id
 
@@ -110,7 +110,7 @@ class KeywordsResBody:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this KeywordsResBody.
+        r"""Sets the log_stream_id of this KeywordsResBody.
 
         日志流id
 
@@ -121,7 +121,7 @@ class KeywordsResBody:
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this KeywordsResBody.
+        r"""Gets the log_stream_name of this KeywordsResBody.
 
         日志流名称
 
@@ -132,7 +132,7 @@ class KeywordsResBody:
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this KeywordsResBody.
+        r"""Sets the log_stream_name of this KeywordsResBody.
 
         日志流名称
 
@@ -143,7 +143,7 @@ class KeywordsResBody:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this KeywordsResBody.
+        r"""Gets the log_group_id of this KeywordsResBody.
 
         日志组id
 
@@ -154,7 +154,7 @@ class KeywordsResBody:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this KeywordsResBody.
+        r"""Sets the log_group_id of this KeywordsResBody.
 
         日志组id
 
@@ -165,7 +165,7 @@ class KeywordsResBody:
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this KeywordsResBody.
+        r"""Gets the log_group_name of this KeywordsResBody.
 
         日志组名称
 
@@ -176,7 +176,7 @@ class KeywordsResBody:
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this KeywordsResBody.
+        r"""Sets the log_group_name of this KeywordsResBody.
 
         日志组名称
 
@@ -187,7 +187,7 @@ class KeywordsResBody:
 
     @property
     def keywords(self):
-        """Gets the keywords of this KeywordsResBody.
+        r"""Gets the keywords of this KeywordsResBody.
 
         关键词
 
@@ -198,7 +198,7 @@ class KeywordsResBody:
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this KeywordsResBody.
+        r"""Sets the keywords of this KeywordsResBody.
 
         关键词
 
@@ -209,7 +209,7 @@ class KeywordsResBody:
 
     @property
     def condition(self):
-        """Gets the condition of this KeywordsResBody.
+        r"""Gets the condition of this KeywordsResBody.
 
         条件
 
@@ -220,7 +220,7 @@ class KeywordsResBody:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this KeywordsResBody.
+        r"""Sets the condition of this KeywordsResBody.
 
         条件
 
@@ -231,7 +231,7 @@ class KeywordsResBody:
 
     @property
     def number(self):
-        """Gets the number of this KeywordsResBody.
+        r"""Gets the number of this KeywordsResBody.
 
         行数
 
@@ -242,7 +242,7 @@ class KeywordsResBody:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this KeywordsResBody.
+        r"""Sets the number of this KeywordsResBody.
 
         行数
 
@@ -253,7 +253,7 @@ class KeywordsResBody:
 
     @property
     def search_time_range(self):
-        """Gets the search_time_range of this KeywordsResBody.
+        r"""Gets the search_time_range of this KeywordsResBody.
 
         查询执行任务时最近数据的时间范围，最大值为60
 
@@ -264,7 +264,7 @@ class KeywordsResBody:
 
     @search_time_range.setter
     def search_time_range(self, search_time_range):
-        """Sets the search_time_range of this KeywordsResBody.
+        r"""Sets the search_time_range of this KeywordsResBody.
 
         查询执行任务时最近数据的时间范围，最大值为60
 
@@ -275,7 +275,7 @@ class KeywordsResBody:
 
     @property
     def search_time_range_unit(self):
-        """Gets the search_time_range_unit of this KeywordsResBody.
+        r"""Gets the search_time_range_unit of this KeywordsResBody.
 
         查询时间单位
 
@@ -286,7 +286,7 @@ class KeywordsResBody:
 
     @search_time_range_unit.setter
     def search_time_range_unit(self, search_time_range_unit):
-        """Sets the search_time_range_unit of this KeywordsResBody.
+        r"""Sets the search_time_range_unit of this KeywordsResBody.
 
         查询时间单位
 

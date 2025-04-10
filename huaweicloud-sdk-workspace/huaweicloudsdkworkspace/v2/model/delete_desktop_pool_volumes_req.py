@@ -25,7 +25,7 @@ class DeleteDesktopPoolVolumesReq:
     }
 
     def __init__(self, volumes=None):
-        """DeleteDesktopPoolVolumesReq
+        r"""DeleteDesktopPoolVolumesReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteDesktopPoolVolumesReq:
 
     @property
     def volumes(self):
-        """Gets the volumes of this DeleteDesktopPoolVolumesReq.
+        r"""Gets the volumes of this DeleteDesktopPoolVolumesReq.
 
         删除的桌面池磁盘列表。
 
@@ -54,7 +54,7 @@ class DeleteDesktopPoolVolumesReq:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this DeleteDesktopPoolVolumesReq.
+        r"""Sets the volumes of this DeleteDesktopPoolVolumesReq.
 
         删除的桌面池磁盘列表。
 

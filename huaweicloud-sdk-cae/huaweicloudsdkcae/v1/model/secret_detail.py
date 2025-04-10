@@ -37,7 +37,7 @@ class SecretDetail:
     }
 
     def __init__(self, id=None, name=None, if_update_available=None, secret_status=None, status=None, version_id=None, modified_time=None):
-        """SecretDetail
+        r"""SecretDetail
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class SecretDetail:
 
     @property
     def id(self):
-        """Gets the id of this SecretDetail.
+        r"""Gets the id of this SecretDetail.
 
         凭据ID
 
@@ -90,7 +90,7 @@ class SecretDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecretDetail.
+        r"""Sets the id of this SecretDetail.
 
         凭据ID
 
@@ -101,7 +101,7 @@ class SecretDetail:
 
     @property
     def name(self):
-        """Gets the name of this SecretDetail.
+        r"""Gets the name of this SecretDetail.
 
         凭证名字。
 
@@ -112,7 +112,7 @@ class SecretDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SecretDetail.
+        r"""Sets the name of this SecretDetail.
 
         凭证名字。
 
@@ -123,7 +123,7 @@ class SecretDetail:
 
     @property
     def if_update_available(self):
-        """Gets the if_update_available of this SecretDetail.
+        r"""Gets the if_update_available of this SecretDetail.
 
         当前凭据是否有更新版本。
 
@@ -134,7 +134,7 @@ class SecretDetail:
 
     @if_update_available.setter
     def if_update_available(self, if_update_available):
-        """Sets the if_update_available of this SecretDetail.
+        r"""Sets the if_update_available of this SecretDetail.
 
         当前凭据是否有更新版本。
 
@@ -145,7 +145,7 @@ class SecretDetail:
 
     @property
     def secret_status(self):
-        """Gets the secret_status of this SecretDetail.
+        r"""Gets the secret_status of this SecretDetail.
 
         凭据在DEW的状态。
 
@@ -156,7 +156,7 @@ class SecretDetail:
 
     @secret_status.setter
     def secret_status(self, secret_status):
-        """Sets the secret_status of this SecretDetail.
+        r"""Sets the secret_status of this SecretDetail.
 
         凭据在DEW的状态。
 
@@ -167,7 +167,7 @@ class SecretDetail:
 
     @property
     def status(self):
-        """Gets the status of this SecretDetail.
+        r"""Gets the status of this SecretDetail.
 
         凭据在CAE使用状态。
 
@@ -178,7 +178,7 @@ class SecretDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SecretDetail.
+        r"""Sets the status of this SecretDetail.
 
         凭据在CAE使用状态。
 
@@ -189,7 +189,7 @@ class SecretDetail:
 
     @property
     def version_id(self):
-        """Gets the version_id of this SecretDetail.
+        r"""Gets the version_id of this SecretDetail.
 
         当前使用的凭证版本号。
 
@@ -200,7 +200,7 @@ class SecretDetail:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this SecretDetail.
+        r"""Sets the version_id of this SecretDetail.
 
         当前使用的凭证版本号。
 
@@ -211,7 +211,7 @@ class SecretDetail:
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this SecretDetail.
+        r"""Gets the modified_time of this SecretDetail.
 
         当前版本凭证在dew的创建时间。
 
@@ -222,7 +222,7 @@ class SecretDetail:
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this SecretDetail.
+        r"""Sets the modified_time of this SecretDetail.
 
         当前版本凭证在dew的创建时间。
 

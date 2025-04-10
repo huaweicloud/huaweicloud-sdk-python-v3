@@ -29,7 +29,7 @@ class AddOrUpdateTagsRequestBody:
     }
 
     def __init__(self, image_id=None, tag=None, image_tag=None):
-        """AddOrUpdateTagsRequestBody
+        r"""AddOrUpdateTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AddOrUpdateTagsRequestBody:
 
     @property
     def image_id(self):
-        """Gets the image_id of this AddOrUpdateTagsRequestBody.
+        r"""Gets the image_id of this AddOrUpdateTagsRequestBody.
 
         镜像ID。
 
@@ -67,7 +67,7 @@ class AddOrUpdateTagsRequestBody:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this AddOrUpdateTagsRequestBody.
+        r"""Sets the image_id of this AddOrUpdateTagsRequestBody.
 
         镜像ID。
 
@@ -78,7 +78,7 @@ class AddOrUpdateTagsRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this AddOrUpdateTagsRequestBody.
+        r"""Gets the tag of this AddOrUpdateTagsRequestBody.
 
         标签数据。 tag和image_tag只能使用一个。
 
@@ -89,7 +89,7 @@ class AddOrUpdateTagsRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this AddOrUpdateTagsRequestBody.
+        r"""Sets the tag of this AddOrUpdateTagsRequestBody.
 
         标签数据。 tag和image_tag只能使用一个。
 
@@ -100,7 +100,7 @@ class AddOrUpdateTagsRequestBody:
 
     @property
     def image_tag(self):
-        """Gets the image_tag of this AddOrUpdateTagsRequestBody.
+        r"""Gets the image_tag of this AddOrUpdateTagsRequestBody.
 
         :return: The image_tag of this AddOrUpdateTagsRequestBody.
         :rtype: :class:`huaweicloudsdkims.v2.ResourceTag`
@@ -109,7 +109,7 @@ class AddOrUpdateTagsRequestBody:
 
     @image_tag.setter
     def image_tag(self, image_tag):
-        """Sets the image_tag of this AddOrUpdateTagsRequestBody.
+        r"""Sets the image_tag of this AddOrUpdateTagsRequestBody.
 
         :param image_tag: The image_tag of this AddOrUpdateTagsRequestBody.
         :type image_tag: :class:`huaweicloudsdkims.v2.ResourceTag`

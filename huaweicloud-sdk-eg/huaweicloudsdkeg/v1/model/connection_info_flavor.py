@@ -31,7 +31,7 @@ class ConnectionInfoFlavor:
     }
 
     def __init__(self, name=None, concurrency_type=None, concurrency=None, bandwidth_type=None):
-        """ConnectionInfoFlavor
+        r"""ConnectionInfoFlavor
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ConnectionInfoFlavor:
 
     @property
     def name(self):
-        """Gets the name of this ConnectionInfoFlavor.
+        r"""Gets the name of this ConnectionInfoFlavor.
 
         规格名称
 
@@ -75,7 +75,7 @@ class ConnectionInfoFlavor:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConnectionInfoFlavor.
+        r"""Sets the name of this ConnectionInfoFlavor.
 
         规格名称
 
@@ -86,7 +86,7 @@ class ConnectionInfoFlavor:
 
     @property
     def concurrency_type(self):
-        """Gets the concurrency_type of this ConnectionInfoFlavor.
+        r"""Gets the concurrency_type of this ConnectionInfoFlavor.
 
         并发规格类型
 
@@ -97,7 +97,7 @@ class ConnectionInfoFlavor:
 
     @concurrency_type.setter
     def concurrency_type(self, concurrency_type):
-        """Sets the concurrency_type of this ConnectionInfoFlavor.
+        r"""Sets the concurrency_type of this ConnectionInfoFlavor.
 
         并发规格类型
 
@@ -108,7 +108,7 @@ class ConnectionInfoFlavor:
 
     @property
     def concurrency(self):
-        """Gets the concurrency of this ConnectionInfoFlavor.
+        r"""Gets the concurrency of this ConnectionInfoFlavor.
 
         并发数
 
@@ -119,7 +119,7 @@ class ConnectionInfoFlavor:
 
     @concurrency.setter
     def concurrency(self, concurrency):
-        """Sets the concurrency of this ConnectionInfoFlavor.
+        r"""Sets the concurrency of this ConnectionInfoFlavor.
 
         并发数
 
@@ -130,7 +130,7 @@ class ConnectionInfoFlavor:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this ConnectionInfoFlavor.
+        r"""Gets the bandwidth_type of this ConnectionInfoFlavor.
 
         带宽类型
 
@@ -141,7 +141,7 @@ class ConnectionInfoFlavor:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this ConnectionInfoFlavor.
+        r"""Sets the bandwidth_type of this ConnectionInfoFlavor.
 
         带宽类型
 

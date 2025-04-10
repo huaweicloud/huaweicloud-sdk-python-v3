@@ -27,7 +27,7 @@ class CancelShareConnectionsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CancelShareConnectionsRequest
+        r"""CancelShareConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CancelShareConnectionsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CancelShareConnectionsRequest.
+        r"""Gets the x_language of this CancelShareConnectionsRequest.
 
         语言
 
@@ -61,7 +61,7 @@ class CancelShareConnectionsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CancelShareConnectionsRequest.
+        r"""Sets the x_language of this CancelShareConnectionsRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class CancelShareConnectionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CancelShareConnectionsRequest.
+        r"""Gets the body of this CancelShareConnectionsRequest.
 
         :return: The body of this CancelShareConnectionsRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.CancelShareConnectionsRequestBody`
@@ -81,7 +81,7 @@ class CancelShareConnectionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CancelShareConnectionsRequest.
+        r"""Sets the body of this CancelShareConnectionsRequest.
 
         :param body: The body of this CancelShareConnectionsRequest.
         :type body: :class:`huaweicloudsdkdas.v3.CancelShareConnectionsRequestBody`

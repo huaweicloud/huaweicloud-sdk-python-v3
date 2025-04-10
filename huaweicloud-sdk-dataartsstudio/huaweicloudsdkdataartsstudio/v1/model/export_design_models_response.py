@@ -26,7 +26,7 @@ class ExportDesignModelsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ExportDesignModelsResponse
+        r"""ExportDesignModelsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExportDesignModelsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ExportDesignModelsResponse.
+        r"""Gets the data of this ExportDesignModelsResponse.
 
         :return: The data of this ExportDesignModelsResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ExportDesignModelsResultData`
@@ -53,7 +53,7 @@ class ExportDesignModelsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ExportDesignModelsResponse.
+        r"""Sets the data of this ExportDesignModelsResponse.
 
         :param data: The data of this ExportDesignModelsResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ExportDesignModelsResultData`

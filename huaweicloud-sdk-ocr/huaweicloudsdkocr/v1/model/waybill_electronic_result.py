@@ -41,7 +41,7 @@ class WaybillElectronicResult:
     }
 
     def __init__(self, code=None, receiver_name=None, receiver_phone=None, receiver_address=None, sender_name=None, sender_phone=None, sender_address=None, waybill_number=None, confidence=None):
-        """WaybillElectronicResult
+        r"""WaybillElectronicResult
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class WaybillElectronicResult:
 
     @property
     def code(self):
-        """Gets the code of this WaybillElectronicResult.
+        r"""Gets the code of this WaybillElectronicResult.
 
         三段码。 
 
@@ -110,7 +110,7 @@ class WaybillElectronicResult:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this WaybillElectronicResult.
+        r"""Sets the code of this WaybillElectronicResult.
 
         三段码。 
 
@@ -121,7 +121,7 @@ class WaybillElectronicResult:
 
     @property
     def receiver_name(self):
-        """Gets the receiver_name of this WaybillElectronicResult.
+        r"""Gets the receiver_name of this WaybillElectronicResult.
 
         收件人姓名。 
 
@@ -132,7 +132,7 @@ class WaybillElectronicResult:
 
     @receiver_name.setter
     def receiver_name(self, receiver_name):
-        """Sets the receiver_name of this WaybillElectronicResult.
+        r"""Sets the receiver_name of this WaybillElectronicResult.
 
         收件人姓名。 
 
@@ -143,7 +143,7 @@ class WaybillElectronicResult:
 
     @property
     def receiver_phone(self):
-        """Gets the receiver_phone of this WaybillElectronicResult.
+        r"""Gets the receiver_phone of this WaybillElectronicResult.
 
         收件人电话。 
 
@@ -154,7 +154,7 @@ class WaybillElectronicResult:
 
     @receiver_phone.setter
     def receiver_phone(self, receiver_phone):
-        """Sets the receiver_phone of this WaybillElectronicResult.
+        r"""Sets the receiver_phone of this WaybillElectronicResult.
 
         收件人电话。 
 
@@ -165,7 +165,7 @@ class WaybillElectronicResult:
 
     @property
     def receiver_address(self):
-        """Gets the receiver_address of this WaybillElectronicResult.
+        r"""Gets the receiver_address of this WaybillElectronicResult.
 
         收件人地址。 
 
@@ -176,7 +176,7 @@ class WaybillElectronicResult:
 
     @receiver_address.setter
     def receiver_address(self, receiver_address):
-        """Sets the receiver_address of this WaybillElectronicResult.
+        r"""Sets the receiver_address of this WaybillElectronicResult.
 
         收件人地址。 
 
@@ -187,7 +187,7 @@ class WaybillElectronicResult:
 
     @property
     def sender_name(self):
-        """Gets the sender_name of this WaybillElectronicResult.
+        r"""Gets the sender_name of this WaybillElectronicResult.
 
         寄件人姓名。 
 
@@ -198,7 +198,7 @@ class WaybillElectronicResult:
 
     @sender_name.setter
     def sender_name(self, sender_name):
-        """Sets the sender_name of this WaybillElectronicResult.
+        r"""Sets the sender_name of this WaybillElectronicResult.
 
         寄件人姓名。 
 
@@ -209,7 +209,7 @@ class WaybillElectronicResult:
 
     @property
     def sender_phone(self):
-        """Gets the sender_phone of this WaybillElectronicResult.
+        r"""Gets the sender_phone of this WaybillElectronicResult.
 
         寄件人电话。 
 
@@ -220,7 +220,7 @@ class WaybillElectronicResult:
 
     @sender_phone.setter
     def sender_phone(self, sender_phone):
-        """Sets the sender_phone of this WaybillElectronicResult.
+        r"""Sets the sender_phone of this WaybillElectronicResult.
 
         寄件人电话。 
 
@@ -231,7 +231,7 @@ class WaybillElectronicResult:
 
     @property
     def sender_address(self):
-        """Gets the sender_address of this WaybillElectronicResult.
+        r"""Gets the sender_address of this WaybillElectronicResult.
 
         寄件人地址。 
 
@@ -242,7 +242,7 @@ class WaybillElectronicResult:
 
     @sender_address.setter
     def sender_address(self, sender_address):
-        """Sets the sender_address of this WaybillElectronicResult.
+        r"""Sets the sender_address of this WaybillElectronicResult.
 
         寄件人地址。 
 
@@ -253,7 +253,7 @@ class WaybillElectronicResult:
 
     @property
     def waybill_number(self):
-        """Gets the waybill_number of this WaybillElectronicResult.
+        r"""Gets the waybill_number of this WaybillElectronicResult.
 
         条形码运单号。 
 
@@ -264,7 +264,7 @@ class WaybillElectronicResult:
 
     @waybill_number.setter
     def waybill_number(self, waybill_number):
-        """Sets the waybill_number of this WaybillElectronicResult.
+        r"""Sets the waybill_number of this WaybillElectronicResult.
 
         条形码运单号。 
 
@@ -275,7 +275,7 @@ class WaybillElectronicResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this WaybillElectronicResult.
+        r"""Gets the confidence of this WaybillElectronicResult.
 
         相关字段的置信度信息，取值范围0~1。 置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -286,7 +286,7 @@ class WaybillElectronicResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this WaybillElectronicResult.
+        r"""Sets the confidence of this WaybillElectronicResult.
 
         相关字段的置信度信息，取值范围0~1。 置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 

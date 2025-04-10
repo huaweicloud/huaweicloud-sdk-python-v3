@@ -26,7 +26,7 @@ class ListClusterConfigurationsParameterResponse(SdkResponse):
     }
 
     def __init__(self, configurations=None):
-        """ListClusterConfigurationsParameterResponse
+        r"""ListClusterConfigurationsParameterResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListClusterConfigurationsParameterResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this ListClusterConfigurationsParameterResponse.
+        r"""Gets the configurations of this ListClusterConfigurationsParameterResponse.
 
         集群使用的参数配置信息。
 
@@ -55,7 +55,7 @@ class ListClusterConfigurationsParameterResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ListClusterConfigurationsParameterResponse.
+        r"""Sets the configurations of this ListClusterConfigurationsParameterResponse.
 
         集群使用的参数配置信息。
 

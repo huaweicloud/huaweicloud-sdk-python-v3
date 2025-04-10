@@ -26,7 +26,7 @@ class UpdateCommandResultResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateCommandResultResponse
+        r"""UpdateCommandResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateCommandResultResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateCommandResultResponse.
+        r"""Gets the body of this UpdateCommandResultResponse.
 
         上报服务端命令执行结果成功
 
@@ -55,7 +55,7 @@ class UpdateCommandResultResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCommandResultResponse.
+        r"""Sets the body of this UpdateCommandResultResponse.
 
         上报服务端命令执行结果成功
 

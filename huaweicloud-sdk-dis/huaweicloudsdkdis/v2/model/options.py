@@ -33,7 +33,7 @@ class Options:
     }
 
     def __init__(self, fill_missing_fields=None, ignore_extra_data=None, compatible_illegal_chars=None, reject_limit=None, error_table_name=None):
-        """Options
+        r"""Options
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Options:
 
     @property
     def fill_missing_fields(self):
-        """Gets the fill_missing_fields of this Options.
+        r"""Gets the fill_missing_fields of this Options.
 
         数据入库时，数据源文件中某行的最后一个字段缺失时，请选择是直接将字段设为Null，还是在错误表中报错提示。  取值范围：   - true/on - false/off  缺省值：false/off
 
@@ -82,7 +82,7 @@ class Options:
 
     @fill_missing_fields.setter
     def fill_missing_fields(self, fill_missing_fields):
-        """Sets the fill_missing_fields of this Options.
+        r"""Sets the fill_missing_fields of this Options.
 
         数据入库时，数据源文件中某行的最后一个字段缺失时，请选择是直接将字段设为Null，还是在错误表中报错提示。  取值范围：   - true/on - false/off  缺省值：false/off
 
@@ -93,7 +93,7 @@ class Options:
 
     @property
     def ignore_extra_data(self):
-        """Gets the ignore_extra_data of this Options.
+        r"""Gets the ignore_extra_data of this Options.
 
         数据源文件中的字段比外表定义列数多时，是否忽略多出的列。该参数只在数据导入过程中使用。  取值范围：  - true/on - false/off  缺省值：false/off
 
@@ -104,7 +104,7 @@ class Options:
 
     @ignore_extra_data.setter
     def ignore_extra_data(self, ignore_extra_data):
-        """Sets the ignore_extra_data of this Options.
+        r"""Sets the ignore_extra_data of this Options.
 
         数据源文件中的字段比外表定义列数多时，是否忽略多出的列。该参数只在数据导入过程中使用。  取值范围：  - true/on - false/off  缺省值：false/off
 
@@ -115,7 +115,7 @@ class Options:
 
     @property
     def compatible_illegal_chars(self):
-        """Gets the compatible_illegal_chars of this Options.
+        r"""Gets the compatible_illegal_chars of this Options.
 
         导入非法字符容错参数。是将非法字符按照转换规则转换后入库，还是报错中止导入。  取值范围：  - true/on - false/off  缺省值：false/off
 
@@ -126,7 +126,7 @@ class Options:
 
     @compatible_illegal_chars.setter
     def compatible_illegal_chars(self, compatible_illegal_chars):
-        """Sets the compatible_illegal_chars of this Options.
+        r"""Sets the compatible_illegal_chars of this Options.
 
         导入非法字符容错参数。是将非法字符按照转换规则转换后入库，还是报错中止导入。  取值范围：  - true/on - false/off  缺省值：false/off
 
@@ -137,7 +137,7 @@ class Options:
 
     @property
     def reject_limit(self):
-        """Gets the reject_limit of this Options.
+        r"""Gets the reject_limit of this Options.
 
         指定本次数据导入允许出现的数据格式错误个数，当导入过程中出现的数据格式错误未达到限定值时，本次数据导入可以成功。  取值范围：  - 整型值 - unlimited（无限制）  缺省值为0，有错误信息立即返回。
 
@@ -148,7 +148,7 @@ class Options:
 
     @reject_limit.setter
     def reject_limit(self, reject_limit):
-        """Sets the reject_limit of this Options.
+        r"""Sets the reject_limit of this Options.
 
         指定本次数据导入允许出现的数据格式错误个数，当导入过程中出现的数据格式错误未达到限定值时，本次数据导入可以成功。  取值范围：  - 整型值 - unlimited（无限制）  缺省值为0，有错误信息立即返回。
 
@@ -159,7 +159,7 @@ class Options:
 
     @property
     def error_table_name(self):
-        """Gets the error_table_name of this Options.
+        r"""Gets the error_table_name of this Options.
 
         用于记录数据格式错误信息的错误表表名。并行导入结束后查询此错误信息表，能够获取详细的错误信息。
 
@@ -170,7 +170,7 @@ class Options:
 
     @error_table_name.setter
     def error_table_name(self, error_table_name):
-        """Sets the error_table_name of this Options.
+        r"""Sets the error_table_name of this Options.
 
         用于记录数据格式错误信息的错误表表名。并行导入结束后查询此错误信息表，能够获取详细的错误信息。
 

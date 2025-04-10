@@ -30,7 +30,7 @@ class RunSegmentResponse(SdkResponse):
     }
 
     def __init__(self, words=None, error_code=None, error_msg=None):
-        """RunSegmentResponse
+        r"""RunSegmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunSegmentResponse(SdkResponse):
 
     @property
     def words(self):
-        """Gets the words of this RunSegmentResponse.
+        r"""Gets the words of this RunSegmentResponse.
 
         分词结果。调用失败时无此字段。
 
@@ -69,7 +69,7 @@ class RunSegmentResponse(SdkResponse):
 
     @words.setter
     def words(self, words):
-        """Sets the words of this RunSegmentResponse.
+        r"""Sets the words of this RunSegmentResponse.
 
         分词结果。调用失败时无此字段。
 
@@ -80,7 +80,7 @@ class RunSegmentResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunSegmentResponse.
+        r"""Gets the error_code of this RunSegmentResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -91,7 +91,7 @@ class RunSegmentResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunSegmentResponse.
+        r"""Sets the error_code of this RunSegmentResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -102,7 +102,7 @@ class RunSegmentResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunSegmentResponse.
+        r"""Gets the error_msg of this RunSegmentResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -113,7 +113,7 @@ class RunSegmentResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunSegmentResponse.
+        r"""Sets the error_msg of this RunSegmentResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

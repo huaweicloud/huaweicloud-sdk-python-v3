@@ -28,7 +28,7 @@ class ListPostgresqlExtensionResponse(SdkResponse):
     }
 
     def __init__(self, extensions=None, total_count=None):
-        """ListPostgresqlExtensionResponse
+        r"""ListPostgresqlExtensionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPostgresqlExtensionResponse(SdkResponse):
 
     @property
     def extensions(self):
-        """Gets the extensions of this ListPostgresqlExtensionResponse.
+        r"""Gets the extensions of this ListPostgresqlExtensionResponse.
 
         :return: The extensions of this ListPostgresqlExtensionResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.ExtensionsResponse`]
@@ -60,7 +60,7 @@ class ListPostgresqlExtensionResponse(SdkResponse):
 
     @extensions.setter
     def extensions(self, extensions):
-        """Sets the extensions of this ListPostgresqlExtensionResponse.
+        r"""Sets the extensions of this ListPostgresqlExtensionResponse.
 
         :param extensions: The extensions of this ListPostgresqlExtensionResponse.
         :type extensions: list[:class:`huaweicloudsdkrds.v3.ExtensionsResponse`]
@@ -69,7 +69,7 @@ class ListPostgresqlExtensionResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListPostgresqlExtensionResponse.
+        r"""Gets the total_count of this ListPostgresqlExtensionResponse.
 
         总插件数。
 
@@ -80,7 +80,7 @@ class ListPostgresqlExtensionResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListPostgresqlExtensionResponse.
+        r"""Sets the total_count of this ListPostgresqlExtensionResponse.
 
         总插件数。
 

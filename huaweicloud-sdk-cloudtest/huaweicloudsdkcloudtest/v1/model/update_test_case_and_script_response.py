@@ -26,7 +26,7 @@ class UpdateTestCaseAndScriptResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateTestCaseAndScriptResponse
+        r"""UpdateTestCaseAndScriptResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateTestCaseAndScriptResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateTestCaseAndScriptResponse.
+        r"""Gets the body of this UpdateTestCaseAndScriptResponse.
 
         :return: The body of this UpdateTestCaseAndScriptResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateTestCaseAndScriptResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTestCaseAndScriptResponse.
+        r"""Sets the body of this UpdateTestCaseAndScriptResponse.
 
         :param body: The body of this UpdateTestCaseAndScriptResponse.
         :type body: str

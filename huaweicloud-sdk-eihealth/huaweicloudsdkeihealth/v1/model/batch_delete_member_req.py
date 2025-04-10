@@ -25,7 +25,7 @@ class BatchDeleteMemberReq:
     }
 
     def __init__(self, members=None):
-        """BatchDeleteMemberReq
+        r"""BatchDeleteMemberReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteMemberReq:
 
     @property
     def members(self):
-        """Gets the members of this BatchDeleteMemberReq.
+        r"""Gets the members of this BatchDeleteMemberReq.
 
         删除用户列表
 
@@ -53,7 +53,7 @@ class BatchDeleteMemberReq:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this BatchDeleteMemberReq.
+        r"""Sets the members of this BatchDeleteMemberReq.
 
         删除用户列表
 

@@ -33,7 +33,7 @@ class Job:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """Job
+        r"""Job
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Job:
 
     @property
     def kind(self):
-        """Gets the kind of this Job.
+        r"""Gets the kind of this Job.
 
         API类型，固定值“Job”，该值不可修改。
 
@@ -82,7 +82,7 @@ class Job:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this Job.
+        r"""Sets the kind of this Job.
 
         API类型，固定值“Job”，该值不可修改。
 
@@ -93,7 +93,7 @@ class Job:
 
     @property
     def api_version(self):
-        """Gets the api_version of this Job.
+        r"""Gets the api_version of this Job.
 
         API版本，固定值“v3”，该值不可修改。
 
@@ -104,7 +104,7 @@ class Job:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this Job.
+        r"""Sets the api_version of this Job.
 
         API版本，固定值“v3”，该值不可修改。
 
@@ -115,7 +115,7 @@ class Job:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Job.
+        r"""Gets the metadata of this Job.
 
         :return: The metadata of this Job.
         :rtype: :class:`huaweicloudsdkcce.v3.JobMetadata`
@@ -124,7 +124,7 @@ class Job:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Job.
+        r"""Sets the metadata of this Job.
 
         :param metadata: The metadata of this Job.
         :type metadata: :class:`huaweicloudsdkcce.v3.JobMetadata`
@@ -133,7 +133,7 @@ class Job:
 
     @property
     def spec(self):
-        """Gets the spec of this Job.
+        r"""Gets the spec of this Job.
 
         :return: The spec of this Job.
         :rtype: :class:`huaweicloudsdkcce.v3.JobSpec`
@@ -142,7 +142,7 @@ class Job:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this Job.
+        r"""Sets the spec of this Job.
 
         :param spec: The spec of this Job.
         :type spec: :class:`huaweicloudsdkcce.v3.JobSpec`
@@ -151,7 +151,7 @@ class Job:
 
     @property
     def status(self):
-        """Gets the status of this Job.
+        r"""Gets the status of this Job.
 
         :return: The status of this Job.
         :rtype: :class:`huaweicloudsdkcce.v3.JobStatus`
@@ -160,7 +160,7 @@ class Job:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Job.
+        r"""Sets the status of this Job.
 
         :param status: The status of this Job.
         :type status: :class:`huaweicloudsdkcce.v3.JobStatus`

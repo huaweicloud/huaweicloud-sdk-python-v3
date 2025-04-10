@@ -27,7 +27,7 @@ class UpdateDatabaseReq:
     }
 
     def __init__(self, name=None, comment=None):
-        """UpdateDatabaseReq
+        r"""UpdateDatabaseReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDatabaseReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateDatabaseReq.
+        r"""Gets the name of this UpdateDatabaseReq.
 
         数据库名称。
 
@@ -60,7 +60,7 @@ class UpdateDatabaseReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDatabaseReq.
+        r"""Sets the name of this UpdateDatabaseReq.
 
         数据库名称。
 
@@ -71,7 +71,7 @@ class UpdateDatabaseReq:
 
     @property
     def comment(self):
-        """Gets the comment of this UpdateDatabaseReq.
+        r"""Gets the comment of this UpdateDatabaseReq.
 
         数据库备注。
 
@@ -82,7 +82,7 @@ class UpdateDatabaseReq:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this UpdateDatabaseReq.
+        r"""Sets the comment of this UpdateDatabaseReq.
 
         数据库备注。
 

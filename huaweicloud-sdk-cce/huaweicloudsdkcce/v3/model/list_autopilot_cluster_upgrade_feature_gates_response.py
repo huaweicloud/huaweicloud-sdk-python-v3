@@ -32,7 +32,7 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, upgrade_feature_gates=None):
-        """ListAutopilotClusterUpgradeFeatureGatesResponse
+        r"""ListAutopilotClusterUpgradeFeatureGatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListAutopilotClusterUpgradeFeatureGatesResponse.
+        r"""Gets the api_version of this ListAutopilotClusterUpgradeFeatureGatesResponse.
 
         API版本
 
@@ -76,7 +76,7 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListAutopilotClusterUpgradeFeatureGatesResponse.
+        r"""Sets the api_version of this ListAutopilotClusterUpgradeFeatureGatesResponse.
 
         API版本
 
@@ -87,7 +87,7 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListAutopilotClusterUpgradeFeatureGatesResponse.
+        r"""Gets the kind of this ListAutopilotClusterUpgradeFeatureGatesResponse.
 
         资源类型
 
@@ -98,7 +98,7 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListAutopilotClusterUpgradeFeatureGatesResponse.
+        r"""Sets the kind of this ListAutopilotClusterUpgradeFeatureGatesResponse.
 
         资源类型
 
@@ -109,7 +109,7 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListAutopilotClusterUpgradeFeatureGatesResponse.
+        r"""Gets the metadata of this ListAutopilotClusterUpgradeFeatureGatesResponse.
 
         :return: The metadata of this ListAutopilotClusterUpgradeFeatureGatesResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -118,7 +118,7 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListAutopilotClusterUpgradeFeatureGatesResponse.
+        r"""Sets the metadata of this ListAutopilotClusterUpgradeFeatureGatesResponse.
 
         :param metadata: The metadata of this ListAutopilotClusterUpgradeFeatureGatesResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -127,7 +127,7 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
 
     @property
     def upgrade_feature_gates(self):
-        """Gets the upgrade_feature_gates of this ListAutopilotClusterUpgradeFeatureGatesResponse.
+        r"""Gets the upgrade_feature_gates of this ListAutopilotClusterUpgradeFeatureGatesResponse.
 
         特性开关信息,格式为key/value键值对。 - Key: 目前有下列值：DisplayPreCheckDetail(展示所有集群升级前检查项详情),EvsSnapshot(使用EVS快照备份集群), LabelForSkippedNode(支持为集群升级过程中跳过的节点打标签), UpgradeStrategy(集群升级策略) - Value: Support 支持,Disable 关闭,Default 使用CCE服务默认规则判断
 
@@ -138,7 +138,7 @@ class ListAutopilotClusterUpgradeFeatureGatesResponse(SdkResponse):
 
     @upgrade_feature_gates.setter
     def upgrade_feature_gates(self, upgrade_feature_gates):
-        """Sets the upgrade_feature_gates of this ListAutopilotClusterUpgradeFeatureGatesResponse.
+        r"""Sets the upgrade_feature_gates of this ListAutopilotClusterUpgradeFeatureGatesResponse.
 
         特性开关信息,格式为key/value键值对。 - Key: 目前有下列值：DisplayPreCheckDetail(展示所有集群升级前检查项详情),EvsSnapshot(使用EVS快照备份集群), LabelForSkippedNode(支持为集群升级过程中跳过的节点打标签), UpgradeStrategy(集群升级策略) - Value: Support 支持,Disable 关闭,Default 使用CCE服务默认规则判断
 

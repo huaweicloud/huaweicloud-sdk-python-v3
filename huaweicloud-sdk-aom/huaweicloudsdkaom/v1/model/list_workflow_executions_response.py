@@ -26,7 +26,7 @@ class ListWorkflowExecutionsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListWorkflowExecutionsResponse
+        r"""ListWorkflowExecutionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListWorkflowExecutionsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListWorkflowExecutionsResponse.
+        r"""Gets the body of this ListWorkflowExecutionsResponse.
 
         :return: The body of this ListWorkflowExecutionsResponse.
         :rtype: list[:class:`huaweicloudsdkaom.v1.WorkflowExecutionBrief`]
@@ -53,7 +53,7 @@ class ListWorkflowExecutionsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListWorkflowExecutionsResponse.
+        r"""Sets the body of this ListWorkflowExecutionsResponse.
 
         :param body: The body of this ListWorkflowExecutionsResponse.
         :type body: list[:class:`huaweicloudsdkaom.v1.WorkflowExecutionBrief`]

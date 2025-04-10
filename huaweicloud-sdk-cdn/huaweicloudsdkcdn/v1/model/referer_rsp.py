@@ -29,7 +29,7 @@ class RefererRsp:
     }
 
     def __init__(self, referer_type=None, referer_list=None, include_empty=None):
-        """RefererRsp
+        r"""RefererRsp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RefererRsp:
 
     @property
     def referer_type(self):
-        """Gets the referer_type of this RefererRsp.
+        r"""Gets the referer_type of this RefererRsp.
 
         Referer类型。取值：0代表不设置Referer过滤；1代表黑名单；2代表白名单。默认取值为0。
 
@@ -68,7 +68,7 @@ class RefererRsp:
 
     @referer_type.setter
     def referer_type(self, referer_type):
-        """Sets the referer_type of this RefererRsp.
+        r"""Sets the referer_type of this RefererRsp.
 
         Referer类型。取值：0代表不设置Referer过滤；1代表黑名单；2代表白名单。默认取值为0。
 
@@ -79,7 +79,7 @@ class RefererRsp:
 
     @property
     def referer_list(self):
-        """Gets the referer_list of this RefererRsp.
+        r"""Gets the referer_list of this RefererRsp.
 
         ：配置的referer地址。
 
@@ -90,7 +90,7 @@ class RefererRsp:
 
     @referer_list.setter
     def referer_list(self, referer_list):
-        """Sets the referer_list of this RefererRsp.
+        r"""Sets the referer_list of this RefererRsp.
 
         ：配置的referer地址。
 
@@ -101,7 +101,7 @@ class RefererRsp:
 
     @property
     def include_empty(self):
-        """Gets the include_empty of this RefererRsp.
+        r"""Gets the include_empty of this RefererRsp.
 
         是否包含空Referer。如果是黑名单并开启该选项，则表示无referer不允许访问。如果是白名单并开启该选项，则表示无referer允许访问。默认不包含,true：包含，false：不包含。
 
@@ -112,7 +112,7 @@ class RefererRsp:
 
     @include_empty.setter
     def include_empty(self, include_empty):
-        """Sets the include_empty of this RefererRsp.
+        r"""Sets the include_empty of this RefererRsp.
 
         是否包含空Referer。如果是黑名单并开启该选项，则表示无referer不允许访问。如果是白名单并开启该选项，则表示无referer允许访问。默认不包含,true：包含，false：不包含。
 

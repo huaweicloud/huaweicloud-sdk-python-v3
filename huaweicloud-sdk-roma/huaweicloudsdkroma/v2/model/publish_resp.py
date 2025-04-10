@@ -37,7 +37,7 @@ class PublishResp:
     }
 
     def __init__(self, publish_id=None, api_id=None, api_name=None, env_id=None, remark=None, publish_time=None, version_id=None):
-        """PublishResp
+        r"""PublishResp
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PublishResp:
 
     @property
     def publish_id(self):
-        """Gets the publish_id of this PublishResp.
+        r"""Gets the publish_id of this PublishResp.
 
         发布记录的ID
 
@@ -96,7 +96,7 @@ class PublishResp:
 
     @publish_id.setter
     def publish_id(self, publish_id):
-        """Sets the publish_id of this PublishResp.
+        r"""Sets the publish_id of this PublishResp.
 
         发布记录的ID
 
@@ -107,7 +107,7 @@ class PublishResp:
 
     @property
     def api_id(self):
-        """Gets the api_id of this PublishResp.
+        r"""Gets the api_id of this PublishResp.
 
         API编号
 
@@ -118,7 +118,7 @@ class PublishResp:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this PublishResp.
+        r"""Sets the api_id of this PublishResp.
 
         API编号
 
@@ -129,7 +129,7 @@ class PublishResp:
 
     @property
     def api_name(self):
-        """Gets the api_name of this PublishResp.
+        r"""Gets the api_name of this PublishResp.
 
         API名称
 
@@ -140,7 +140,7 @@ class PublishResp:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this PublishResp.
+        r"""Sets the api_name of this PublishResp.
 
         API名称
 
@@ -151,7 +151,7 @@ class PublishResp:
 
     @property
     def env_id(self):
-        """Gets the env_id of this PublishResp.
+        r"""Gets the env_id of this PublishResp.
 
         发布的环境编号
 
@@ -162,7 +162,7 @@ class PublishResp:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this PublishResp.
+        r"""Sets the env_id of this PublishResp.
 
         发布的环境编号
 
@@ -173,7 +173,7 @@ class PublishResp:
 
     @property
     def remark(self):
-        """Gets the remark of this PublishResp.
+        r"""Gets the remark of this PublishResp.
 
         发布描述
 
@@ -184,7 +184,7 @@ class PublishResp:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this PublishResp.
+        r"""Sets the remark of this PublishResp.
 
         发布描述
 
@@ -195,7 +195,7 @@ class PublishResp:
 
     @property
     def publish_time(self):
-        """Gets the publish_time of this PublishResp.
+        r"""Gets the publish_time of this PublishResp.
 
         发布时间
 
@@ -206,7 +206,7 @@ class PublishResp:
 
     @publish_time.setter
     def publish_time(self, publish_time):
-        """Sets the publish_time of this PublishResp.
+        r"""Sets the publish_time of this PublishResp.
 
         发布时间
 
@@ -217,7 +217,7 @@ class PublishResp:
 
     @property
     def version_id(self):
-        """Gets the version_id of this PublishResp.
+        r"""Gets the version_id of this PublishResp.
 
         在线的版本号
 
@@ -228,7 +228,7 @@ class PublishResp:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this PublishResp.
+        r"""Sets the version_id of this PublishResp.
 
         在线的版本号
 

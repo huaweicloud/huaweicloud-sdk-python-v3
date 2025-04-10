@@ -28,7 +28,7 @@ class ListDbMaskTaskResponse(SdkResponse):
     }
 
     def __init__(self, tasks=None, total=None):
-        """ListDbMaskTaskResponse
+        r"""ListDbMaskTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDbMaskTaskResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListDbMaskTaskResponse.
+        r"""Gets the tasks of this ListDbMaskTaskResponse.
 
         脱敏任务列表
 
@@ -62,7 +62,7 @@ class ListDbMaskTaskResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListDbMaskTaskResponse.
+        r"""Sets the tasks of this ListDbMaskTaskResponse.
 
         脱敏任务列表
 
@@ -73,7 +73,7 @@ class ListDbMaskTaskResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDbMaskTaskResponse.
+        r"""Gets the total of this ListDbMaskTaskResponse.
 
         脱敏任务总数
 
@@ -84,7 +84,7 @@ class ListDbMaskTaskResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDbMaskTaskResponse.
+        r"""Sets the total of this ListDbMaskTaskResponse.
 
         脱敏任务总数
 

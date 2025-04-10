@@ -26,7 +26,7 @@ class DeleteAssetsResponse(SdkResponse):
     }
 
     def __init__(self, delete_result_array=None):
-        """DeleteAssetsResponse
+        r"""DeleteAssetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteAssetsResponse(SdkResponse):
 
     @property
     def delete_result_array(self):
-        """Gets the delete_result_array of this DeleteAssetsResponse.
+        r"""Gets the delete_result_array of this DeleteAssetsResponse.
 
         删除媒资任务的处理结果。
 
@@ -55,7 +55,7 @@ class DeleteAssetsResponse(SdkResponse):
 
     @delete_result_array.setter
     def delete_result_array(self, delete_result_array):
-        """Sets the delete_result_array of this DeleteAssetsResponse.
+        r"""Sets the delete_result_array of this DeleteAssetsResponse.
 
         删除媒资任务的处理结果。
 

@@ -29,7 +29,7 @@ class UpdateAdvancedIpsRuleRequest:
     }
 
     def __init__(self, fw_instance_id=None, enterprise_project_id=None, body=None):
-        """UpdateAdvancedIpsRuleRequest
+        r"""UpdateAdvancedIpsRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateAdvancedIpsRuleRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this UpdateAdvancedIpsRuleRequest.
+        r"""Gets the fw_instance_id of this UpdateAdvancedIpsRuleRequest.
 
         防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -68,7 +68,7 @@ class UpdateAdvancedIpsRuleRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this UpdateAdvancedIpsRuleRequest.
+        r"""Sets the fw_instance_id of this UpdateAdvancedIpsRuleRequest.
 
         防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -79,7 +79,7 @@ class UpdateAdvancedIpsRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateAdvancedIpsRuleRequest.
+        r"""Gets the enterprise_project_id of this UpdateAdvancedIpsRuleRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -90,7 +90,7 @@ class UpdateAdvancedIpsRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateAdvancedIpsRuleRequest.
+        r"""Sets the enterprise_project_id of this UpdateAdvancedIpsRuleRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -101,7 +101,7 @@ class UpdateAdvancedIpsRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAdvancedIpsRuleRequest.
+        r"""Gets the body of this UpdateAdvancedIpsRuleRequest.
 
         :return: The body of this UpdateAdvancedIpsRuleRequest.
         :rtype: :class:`huaweicloudsdkcfw.v1.AdvancedIpsRuleDto`
@@ -110,7 +110,7 @@ class UpdateAdvancedIpsRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAdvancedIpsRuleRequest.
+        r"""Sets the body of this UpdateAdvancedIpsRuleRequest.
 
         :param body: The body of this UpdateAdvancedIpsRuleRequest.
         :type body: :class:`huaweicloudsdkcfw.v1.AdvancedIpsRuleDto`

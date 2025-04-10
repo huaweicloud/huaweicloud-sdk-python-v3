@@ -30,7 +30,7 @@ class ChangePublicipToPeriodResponse(SdkResponse):
     }
 
     def __init__(self, publicip_ids=None, order_id=None, request_id=None):
-        """ChangePublicipToPeriodResponse
+        r"""ChangePublicipToPeriodResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ChangePublicipToPeriodResponse(SdkResponse):
 
     @property
     def publicip_ids(self):
-        """Gets the publicip_ids of this ChangePublicipToPeriodResponse.
+        r"""Gets the publicip_ids of this ChangePublicipToPeriodResponse.
 
         转包IP列表
 
@@ -69,7 +69,7 @@ class ChangePublicipToPeriodResponse(SdkResponse):
 
     @publicip_ids.setter
     def publicip_ids(self, publicip_ids):
-        """Sets the publicip_ids of this ChangePublicipToPeriodResponse.
+        r"""Sets the publicip_ids of this ChangePublicipToPeriodResponse.
 
         转包IP列表
 
@@ -80,7 +80,7 @@ class ChangePublicipToPeriodResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ChangePublicipToPeriodResponse.
+        r"""Gets the order_id of this ChangePublicipToPeriodResponse.
 
         订单ID
 
@@ -91,7 +91,7 @@ class ChangePublicipToPeriodResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ChangePublicipToPeriodResponse.
+        r"""Sets the order_id of this ChangePublicipToPeriodResponse.
 
         订单ID
 
@@ -102,7 +102,7 @@ class ChangePublicipToPeriodResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ChangePublicipToPeriodResponse.
+        r"""Gets the request_id of this ChangePublicipToPeriodResponse.
 
         请求ID
 
@@ -113,7 +113,7 @@ class ChangePublicipToPeriodResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ChangePublicipToPeriodResponse.
+        r"""Sets the request_id of this ChangePublicipToPeriodResponse.
 
         请求ID
 

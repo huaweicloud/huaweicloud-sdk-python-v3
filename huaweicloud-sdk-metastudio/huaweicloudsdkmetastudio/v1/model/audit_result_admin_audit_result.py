@@ -31,7 +31,7 @@ class AuditResultAdminAuditResult:
     }
 
     def __init__(self, message=None, attachment_name=None, attachment_url=None, audit_time=None):
-        """AuditResultAdminAuditResult
+        r"""AuditResultAdminAuditResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AuditResultAdminAuditResult:
 
     @property
     def message(self):
-        """Gets the message of this AuditResultAdminAuditResult.
+        r"""Gets the message of this AuditResultAdminAuditResult.
 
         审核信息。
 
@@ -75,7 +75,7 @@ class AuditResultAdminAuditResult:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this AuditResultAdminAuditResult.
+        r"""Sets the message of this AuditResultAdminAuditResult.
 
         审核信息。
 
@@ -86,7 +86,7 @@ class AuditResultAdminAuditResult:
 
     @property
     def attachment_name(self):
-        """Gets the attachment_name of this AuditResultAdminAuditResult.
+        r"""Gets the attachment_name of this AuditResultAdminAuditResult.
 
         附件名称。
 
@@ -97,7 +97,7 @@ class AuditResultAdminAuditResult:
 
     @attachment_name.setter
     def attachment_name(self, attachment_name):
-        """Sets the attachment_name of this AuditResultAdminAuditResult.
+        r"""Sets the attachment_name of this AuditResultAdminAuditResult.
 
         附件名称。
 
@@ -108,7 +108,7 @@ class AuditResultAdminAuditResult:
 
     @property
     def attachment_url(self):
-        """Gets the attachment_url of this AuditResultAdminAuditResult.
+        r"""Gets the attachment_url of this AuditResultAdminAuditResult.
 
         附件下载地址。
 
@@ -119,7 +119,7 @@ class AuditResultAdminAuditResult:
 
     @attachment_url.setter
     def attachment_url(self, attachment_url):
-        """Sets the attachment_url of this AuditResultAdminAuditResult.
+        r"""Sets the attachment_url of this AuditResultAdminAuditResult.
 
         附件下载地址。
 
@@ -130,7 +130,7 @@ class AuditResultAdminAuditResult:
 
     @property
     def audit_time(self):
-        """Gets the audit_time of this AuditResultAdminAuditResult.
+        r"""Gets the audit_time of this AuditResultAdminAuditResult.
 
         操作时间。
 
@@ -141,7 +141,7 @@ class AuditResultAdminAuditResult:
 
     @audit_time.setter
     def audit_time(self, audit_time):
-        """Sets the audit_time of this AuditResultAdminAuditResult.
+        r"""Sets the audit_time of this AuditResultAdminAuditResult.
 
         操作时间。
 

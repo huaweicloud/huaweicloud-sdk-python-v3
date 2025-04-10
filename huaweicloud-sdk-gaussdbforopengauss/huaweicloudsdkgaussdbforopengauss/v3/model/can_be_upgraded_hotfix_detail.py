@@ -31,7 +31,7 @@ class CanBeUpgradedHotfixDetail:
     }
 
     def __init__(self, version=None, common_patch=None, backup_sensitive=None, descripition=None):
-        """CanBeUpgradedHotfixDetail
+        r"""CanBeUpgradedHotfixDetail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CanBeUpgradedHotfixDetail:
 
     @property
     def version(self):
-        """Gets the version of this CanBeUpgradedHotfixDetail.
+        r"""Gets the version of this CanBeUpgradedHotfixDetail.
 
         热补丁版本。
 
@@ -75,7 +75,7 @@ class CanBeUpgradedHotfixDetail:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CanBeUpgradedHotfixDetail.
+        r"""Sets the version of this CanBeUpgradedHotfixDetail.
 
         热补丁版本。
 
@@ -86,7 +86,7 @@ class CanBeUpgradedHotfixDetail:
 
     @property
     def common_patch(self):
-        """Gets the common_patch of this CanBeUpgradedHotfixDetail.
+        r"""Gets the common_patch of this CanBeUpgradedHotfixDetail.
 
         通用/非通用补丁信息。 枚举值：   \"common\": 通用补丁。   \"certain\": 定制补丁。
 
@@ -97,7 +97,7 @@ class CanBeUpgradedHotfixDetail:
 
     @common_patch.setter
     def common_patch(self, common_patch):
-        """Sets the common_patch of this CanBeUpgradedHotfixDetail.
+        r"""Sets the common_patch of this CanBeUpgradedHotfixDetail.
 
         通用/非通用补丁信息。 枚举值：   \"common\": 通用补丁。   \"certain\": 定制补丁。
 
@@ -108,7 +108,7 @@ class CanBeUpgradedHotfixDetail:
 
     @property
     def backup_sensitive(self):
-        """Gets the backup_sensitive of this CanBeUpgradedHotfixDetail.
+        r"""Gets the backup_sensitive of this CanBeUpgradedHotfixDetail.
 
         是否和备份相关。
 
@@ -119,7 +119,7 @@ class CanBeUpgradedHotfixDetail:
 
     @backup_sensitive.setter
     def backup_sensitive(self, backup_sensitive):
-        """Sets the backup_sensitive of this CanBeUpgradedHotfixDetail.
+        r"""Sets the backup_sensitive of this CanBeUpgradedHotfixDetail.
 
         是否和备份相关。
 
@@ -130,7 +130,7 @@ class CanBeUpgradedHotfixDetail:
 
     @property
     def descripition(self):
-        """Gets the descripition of this CanBeUpgradedHotfixDetail.
+        r"""Gets the descripition of this CanBeUpgradedHotfixDetail.
 
         补丁的描述信息。
 
@@ -141,7 +141,7 @@ class CanBeUpgradedHotfixDetail:
 
     @descripition.setter
     def descripition(self, descripition):
-        """Sets the descripition of this CanBeUpgradedHotfixDetail.
+        r"""Sets the descripition of this CanBeUpgradedHotfixDetail.
 
         补丁的描述信息。
 

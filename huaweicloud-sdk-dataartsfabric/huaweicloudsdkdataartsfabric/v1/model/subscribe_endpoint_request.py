@@ -27,7 +27,7 @@ class SubscribeEndpointRequest:
     }
 
     def __init__(self, workspace_id=None, endpoint_id=None):
-        """SubscribeEndpointRequest
+        r"""SubscribeEndpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SubscribeEndpointRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this SubscribeEndpointRequest.
+        r"""Gets the workspace_id of this SubscribeEndpointRequest.
 
         Workspace的ID
 
@@ -59,7 +59,7 @@ class SubscribeEndpointRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this SubscribeEndpointRequest.
+        r"""Sets the workspace_id of this SubscribeEndpointRequest.
 
         Workspace的ID
 
@@ -70,7 +70,7 @@ class SubscribeEndpointRequest:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this SubscribeEndpointRequest.
+        r"""Gets the endpoint_id of this SubscribeEndpointRequest.
 
         Endpoint的ID
 
@@ -81,7 +81,7 @@ class SubscribeEndpointRequest:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this SubscribeEndpointRequest.
+        r"""Sets the endpoint_id of this SubscribeEndpointRequest.
 
         Endpoint的ID
 

@@ -29,7 +29,7 @@ class ShowImageWatermarkByAddressRequestBody:
     }
 
     def __init__(self, region_id=None, src_file=None, mark_len=None):
-        """ShowImageWatermarkByAddressRequestBody
+        r"""ShowImageWatermarkByAddressRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowImageWatermarkByAddressRequestBody:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ShowImageWatermarkByAddressRequestBody.
+        r"""Gets the region_id of this ShowImageWatermarkByAddressRequestBody.
 
         项目所在region的id，如：xx-xx-1。
 
@@ -66,7 +66,7 @@ class ShowImageWatermarkByAddressRequestBody:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ShowImageWatermarkByAddressRequestBody.
+        r"""Sets the region_id of this ShowImageWatermarkByAddressRequestBody.
 
         项目所在region的id，如：xx-xx-1。
 
@@ -77,7 +77,7 @@ class ShowImageWatermarkByAddressRequestBody:
 
     @property
     def src_file(self):
-        """Gets the src_file of this ShowImageWatermarkByAddressRequestBody.
+        r"""Gets the src_file of this ShowImageWatermarkByAddressRequestBody.
 
         待提取文字暗水印的图片地址，当前只支持华为云OBS，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
 
@@ -88,7 +88,7 @@ class ShowImageWatermarkByAddressRequestBody:
 
     @src_file.setter
     def src_file(self, src_file):
-        """Sets the src_file of this ShowImageWatermarkByAddressRequestBody.
+        r"""Sets the src_file of this ShowImageWatermarkByAddressRequestBody.
 
         待提取文字暗水印的图片地址，当前只支持华为云OBS，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
 
@@ -99,7 +99,7 @@ class ShowImageWatermarkByAddressRequestBody:
 
     @property
     def mark_len(self):
-        """Gets the mark_len of this ShowImageWatermarkByAddressRequestBody.
+        r"""Gets the mark_len of this ShowImageWatermarkByAddressRequestBody.
 
         指定待提取水印的长度，最小0，最大32.。设置后可以提升水印提取性能。
 
@@ -110,7 +110,7 @@ class ShowImageWatermarkByAddressRequestBody:
 
     @mark_len.setter
     def mark_len(self, mark_len):
-        """Sets the mark_len of this ShowImageWatermarkByAddressRequestBody.
+        r"""Sets the mark_len of this ShowImageWatermarkByAddressRequestBody.
 
         指定待提取水印的长度，最小0，最大32.。设置后可以提升水印提取性能。
 

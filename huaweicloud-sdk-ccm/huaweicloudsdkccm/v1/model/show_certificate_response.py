@@ -56,7 +56,7 @@ class ShowCertificateResponse(SdkResponse):
     }
 
     def __init__(self, certificate_id=None, status=None, issuer_id=None, issuer_name=None, key_algorithm=None, signature_algorithm=None, freeze_flag=None, gen_mode=None, serial_number=None, create_time=None, delete_time=None, not_before=None, not_after=None, distinguished_name=None, enc_cert_info=None, enterprise_project_id=None):
-        """ShowCertificateResponse
+        r"""ShowCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -149,7 +149,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this ShowCertificateResponse.
+        r"""Gets the certificate_id of this ShowCertificateResponse.
 
         私有证书ID。
 
@@ -160,7 +160,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this ShowCertificateResponse.
+        r"""Sets the certificate_id of this ShowCertificateResponse.
 
         私有证书ID。
 
@@ -171,7 +171,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowCertificateResponse.
+        r"""Gets the status of this ShowCertificateResponse.
 
         证书状态：   - **ISSUED** : 已签发；   - **EXPIRED** : 已过期；   - **REVOKED** : 已吊销。
 
@@ -182,7 +182,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowCertificateResponse.
+        r"""Sets the status of this ShowCertificateResponse.
 
         证书状态：   - **ISSUED** : 已签发；   - **EXPIRED** : 已过期；   - **REVOKED** : 已吊销。
 
@@ -193,7 +193,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def issuer_id(self):
-        """Gets the issuer_id of this ShowCertificateResponse.
+        r"""Gets the issuer_id of this ShowCertificateResponse.
 
         父CA证书ID。
 
@@ -204,7 +204,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @issuer_id.setter
     def issuer_id(self, issuer_id):
-        """Sets the issuer_id of this ShowCertificateResponse.
+        r"""Sets the issuer_id of this ShowCertificateResponse.
 
         父CA证书ID。
 
@@ -215,7 +215,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def issuer_name(self):
-        """Gets the issuer_name of this ShowCertificateResponse.
+        r"""Gets the issuer_name of this ShowCertificateResponse.
 
         父CA证书名称。
 
@@ -226,7 +226,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @issuer_name.setter
     def issuer_name(self, issuer_name):
-        """Sets the issuer_name of this ShowCertificateResponse.
+        r"""Sets the issuer_name of this ShowCertificateResponse.
 
         父CA证书名称。
 
@@ -237,7 +237,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def key_algorithm(self):
-        """Gets the key_algorithm of this ShowCertificateResponse.
+        r"""Gets the key_algorithm of this ShowCertificateResponse.
 
         密钥算法。
 
@@ -248,7 +248,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @key_algorithm.setter
     def key_algorithm(self, key_algorithm):
-        """Sets the key_algorithm of this ShowCertificateResponse.
+        r"""Sets the key_algorithm of this ShowCertificateResponse.
 
         密钥算法。
 
@@ -259,7 +259,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this ShowCertificateResponse.
+        r"""Gets the signature_algorithm of this ShowCertificateResponse.
 
         签名算法。
 
@@ -270,7 +270,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this ShowCertificateResponse.
+        r"""Sets the signature_algorithm of this ShowCertificateResponse.
 
         签名算法。
 
@@ -281,7 +281,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def freeze_flag(self):
-        """Gets the freeze_flag of this ShowCertificateResponse.
+        r"""Gets the freeze_flag of this ShowCertificateResponse.
 
         冻结标识:   - **0** : 非冻结状态；   - **其它值** : 冻结状态，当前预留。
 
@@ -292,7 +292,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @freeze_flag.setter
     def freeze_flag(self, freeze_flag):
-        """Sets the freeze_flag of this ShowCertificateResponse.
+        r"""Sets the freeze_flag of this ShowCertificateResponse.
 
         冻结标识:   - **0** : 非冻结状态；   - **其它值** : 冻结状态，当前预留。
 
@@ -303,7 +303,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def gen_mode(self):
-        """Gets the gen_mode of this ShowCertificateResponse.
+        r"""Gets the gen_mode of this ShowCertificateResponse.
 
         证书生成方式：  - **GENERATE** : PCA系统生成；  - **IMPORT** : 外部导入；  - **CSR** : 外部提供CSR，内部CA进行签发，即私钥不在PCA进行托管。
 
@@ -314,7 +314,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @gen_mode.setter
     def gen_mode(self, gen_mode):
-        """Sets the gen_mode of this ShowCertificateResponse.
+        r"""Sets the gen_mode of this ShowCertificateResponse.
 
         证书生成方式：  - **GENERATE** : PCA系统生成；  - **IMPORT** : 外部导入；  - **CSR** : 外部提供CSR，内部CA进行签发，即私钥不在PCA进行托管。
 
@@ -325,7 +325,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this ShowCertificateResponse.
+        r"""Gets the serial_number of this ShowCertificateResponse.
 
         序列号。
 
@@ -336,7 +336,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this ShowCertificateResponse.
+        r"""Sets the serial_number of this ShowCertificateResponse.
 
         序列号。
 
@@ -347,7 +347,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowCertificateResponse.
+        r"""Gets the create_time of this ShowCertificateResponse.
 
         证书创建时间，格式为时间戳（毫秒级）。
 
@@ -358,7 +358,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowCertificateResponse.
+        r"""Sets the create_time of this ShowCertificateResponse.
 
         证书创建时间，格式为时间戳（毫秒级）。
 
@@ -369,7 +369,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def delete_time(self):
-        """Gets the delete_time of this ShowCertificateResponse.
+        r"""Gets the delete_time of this ShowCertificateResponse.
 
         证书删除时间，格式为时间戳（毫秒级）。
 
@@ -380,7 +380,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @delete_time.setter
     def delete_time(self, delete_time):
-        """Sets the delete_time of this ShowCertificateResponse.
+        r"""Sets the delete_time of this ShowCertificateResponse.
 
         证书删除时间，格式为时间戳（毫秒级）。
 
@@ -391,7 +391,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def not_before(self):
-        """Gets the not_before of this ShowCertificateResponse.
+        r"""Gets the not_before of this ShowCertificateResponse.
 
         证书创建时间，格式为时间戳（毫秒级）。
 
@@ -402,7 +402,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @not_before.setter
     def not_before(self, not_before):
-        """Sets the not_before of this ShowCertificateResponse.
+        r"""Sets the not_before of this ShowCertificateResponse.
 
         证书创建时间，格式为时间戳（毫秒级）。
 
@@ -413,7 +413,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def not_after(self):
-        """Gets the not_after of this ShowCertificateResponse.
+        r"""Gets the not_after of this ShowCertificateResponse.
 
         证书到期时间，格式为时间戳（毫秒级）。
 
@@ -424,7 +424,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @not_after.setter
     def not_after(self, not_after):
-        """Sets the not_after of this ShowCertificateResponse.
+        r"""Sets the not_after of this ShowCertificateResponse.
 
         证书到期时间，格式为时间戳（毫秒级）。
 
@@ -435,7 +435,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def distinguished_name(self):
-        """Gets the distinguished_name of this ShowCertificateResponse.
+        r"""Gets the distinguished_name of this ShowCertificateResponse.
 
         :return: The distinguished_name of this ShowCertificateResponse.
         :rtype: :class:`huaweicloudsdkccm.v1.DistinguishedName`
@@ -444,7 +444,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @distinguished_name.setter
     def distinguished_name(self, distinguished_name):
-        """Sets the distinguished_name of this ShowCertificateResponse.
+        r"""Sets the distinguished_name of this ShowCertificateResponse.
 
         :param distinguished_name: The distinguished_name of this ShowCertificateResponse.
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
@@ -453,7 +453,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def enc_cert_info(self):
-        """Gets the enc_cert_info of this ShowCertificateResponse.
+        r"""Gets the enc_cert_info of this ShowCertificateResponse.
 
         :return: The enc_cert_info of this ShowCertificateResponse.
         :rtype: :class:`huaweicloudsdkccm.v1.EncCertInfo`
@@ -462,7 +462,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @enc_cert_info.setter
     def enc_cert_info(self, enc_cert_info):
-        """Sets the enc_cert_info of this ShowCertificateResponse.
+        r"""Sets the enc_cert_info of this ShowCertificateResponse.
 
         :param enc_cert_info: The enc_cert_info of this ShowCertificateResponse.
         :type enc_cert_info: :class:`huaweicloudsdkccm.v1.EncCertInfo`
@@ -471,7 +471,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowCertificateResponse.
+        r"""Gets the enterprise_project_id of this ShowCertificateResponse.
 
         企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
 
@@ -482,7 +482,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowCertificateResponse.
+        r"""Sets the enterprise_project_id of this ShowCertificateResponse.
 
         企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
 

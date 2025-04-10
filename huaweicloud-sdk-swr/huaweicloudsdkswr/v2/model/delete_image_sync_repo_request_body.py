@@ -27,7 +27,7 @@ class DeleteImageSyncRepoRequestBody:
     }
 
     def __init__(self, remote_region_id=None, remote_namespace=None):
-        """DeleteImageSyncRepoRequestBody
+        r"""DeleteImageSyncRepoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteImageSyncRepoRequestBody:
 
     @property
     def remote_region_id(self):
-        """Gets the remote_region_id of this DeleteImageSyncRepoRequestBody.
+        r"""Gets the remote_region_id of this DeleteImageSyncRepoRequestBody.
 
         目标region ID。
 
@@ -59,7 +59,7 @@ class DeleteImageSyncRepoRequestBody:
 
     @remote_region_id.setter
     def remote_region_id(self, remote_region_id):
-        """Sets the remote_region_id of this DeleteImageSyncRepoRequestBody.
+        r"""Sets the remote_region_id of this DeleteImageSyncRepoRequestBody.
 
         目标region ID。
 
@@ -70,7 +70,7 @@ class DeleteImageSyncRepoRequestBody:
 
     @property
     def remote_namespace(self):
-        """Gets the remote_namespace of this DeleteImageSyncRepoRequestBody.
+        r"""Gets the remote_namespace of this DeleteImageSyncRepoRequestBody.
 
         目标组织
 
@@ -81,7 +81,7 @@ class DeleteImageSyncRepoRequestBody:
 
     @remote_namespace.setter
     def remote_namespace(self, remote_namespace):
-        """Sets the remote_namespace of this DeleteImageSyncRepoRequestBody.
+        r"""Sets the remote_namespace of this DeleteImageSyncRepoRequestBody.
 
         目标组织
 

@@ -29,7 +29,7 @@ class UpdateEquipmentStaticRouteConfigRequest:
     }
 
     def __init__(self, ieg_id=None, equipment_id=None, body=None):
-        """UpdateEquipmentStaticRouteConfigRequest
+        r"""UpdateEquipmentStaticRouteConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEquipmentStaticRouteConfigRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this UpdateEquipmentStaticRouteConfigRequest.
+        r"""Gets the ieg_id of this UpdateEquipmentStaticRouteConfigRequest.
 
         智能企业网关ID
 
@@ -66,7 +66,7 @@ class UpdateEquipmentStaticRouteConfigRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this UpdateEquipmentStaticRouteConfigRequest.
+        r"""Sets the ieg_id of this UpdateEquipmentStaticRouteConfigRequest.
 
         智能企业网关ID
 
@@ -77,7 +77,7 @@ class UpdateEquipmentStaticRouteConfigRequest:
 
     @property
     def equipment_id(self):
-        """Gets the equipment_id of this UpdateEquipmentStaticRouteConfigRequest.
+        r"""Gets the equipment_id of this UpdateEquipmentStaticRouteConfigRequest.
 
         智能企业网关设备ID
 
@@ -88,7 +88,7 @@ class UpdateEquipmentStaticRouteConfigRequest:
 
     @equipment_id.setter
     def equipment_id(self, equipment_id):
-        """Sets the equipment_id of this UpdateEquipmentStaticRouteConfigRequest.
+        r"""Sets the equipment_id of this UpdateEquipmentStaticRouteConfigRequest.
 
         智能企业网关设备ID
 
@@ -99,7 +99,7 @@ class UpdateEquipmentStaticRouteConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEquipmentStaticRouteConfigRequest.
+        r"""Gets the body of this UpdateEquipmentStaticRouteConfigRequest.
 
         :return: The body of this UpdateEquipmentStaticRouteConfigRequest.
         :rtype: :class:`huaweicloudsdkec.v1.StaticRouteItem`
@@ -108,7 +108,7 @@ class UpdateEquipmentStaticRouteConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEquipmentStaticRouteConfigRequest.
+        r"""Sets the body of this UpdateEquipmentStaticRouteConfigRequest.
 
         :param body: The body of this UpdateEquipmentStaticRouteConfigRequest.
         :type body: :class:`huaweicloudsdkec.v1.StaticRouteItem`

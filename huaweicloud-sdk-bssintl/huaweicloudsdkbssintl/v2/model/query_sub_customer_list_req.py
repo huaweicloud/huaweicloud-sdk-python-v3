@@ -43,7 +43,7 @@ class QuerySubCustomerListReq:
     }
 
     def __init__(self, account_name=None, customer=None, offset=None, limit=None, label=None, association_type=None, associated_on_begin=None, associated_on_end=None, customer_id=None, indirect_partner_id=None):
-        """QuerySubCustomerListReq
+        r"""QuerySubCustomerListReq
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class QuerySubCustomerListReq:
 
     @property
     def account_name(self):
-        """Gets the account_name of this QuerySubCustomerListReq.
+        r"""Gets the account_name of this QuerySubCustomerListReq.
 
         客户登录名称（如果客户创建了IAM用户，此处需要填写主账号登录名称。关于主账号和IAM用户的具体介绍请参见身份管理中“账号”和“IAM用户”的描述）。 支持模糊查询。
 
@@ -117,7 +117,7 @@ class QuerySubCustomerListReq:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this QuerySubCustomerListReq.
+        r"""Sets the account_name of this QuerySubCustomerListReq.
 
         客户登录名称（如果客户创建了IAM用户，此处需要填写主账号登录名称。关于主账号和IAM用户的具体介绍请参见身份管理中“账号”和“IAM用户”的描述）。 支持模糊查询。
 
@@ -128,7 +128,7 @@ class QuerySubCustomerListReq:
 
     @property
     def customer(self):
-        """Gets the customer of this QuerySubCustomerListReq.
+        r"""Gets the customer of this QuerySubCustomerListReq.
 
         客户的实名认证名称，支持模糊查询。
 
@@ -139,7 +139,7 @@ class QuerySubCustomerListReq:
 
     @customer.setter
     def customer(self, customer):
-        """Sets the customer of this QuerySubCustomerListReq.
+        r"""Sets the customer of this QuerySubCustomerListReq.
 
         客户的实名认证名称，支持模糊查询。
 
@@ -150,7 +150,7 @@ class QuerySubCustomerListReq:
 
     @property
     def offset(self):
-        """Gets the offset of this QuerySubCustomerListReq.
+        r"""Gets the offset of this QuerySubCustomerListReq.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -161,7 +161,7 @@ class QuerySubCustomerListReq:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this QuerySubCustomerListReq.
+        r"""Sets the offset of this QuerySubCustomerListReq.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -172,7 +172,7 @@ class QuerySubCustomerListReq:
 
     @property
     def limit(self):
-        """Gets the limit of this QuerySubCustomerListReq.
+        r"""Gets the limit of this QuerySubCustomerListReq.
 
         每次查询的客户数量。默认值为10。
 
@@ -183,7 +183,7 @@ class QuerySubCustomerListReq:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QuerySubCustomerListReq.
+        r"""Sets the limit of this QuerySubCustomerListReq.
 
         每次查询的客户数量。默认值为10。
 
@@ -194,7 +194,7 @@ class QuerySubCustomerListReq:
 
     @property
     def label(self):
-        """Gets the label of this QuerySubCustomerListReq.
+        r"""Gets the label of this QuerySubCustomerListReq.
 
         标签，支持模糊查找。
 
@@ -205,7 +205,7 @@ class QuerySubCustomerListReq:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this QuerySubCustomerListReq.
+        r"""Sets the label of this QuerySubCustomerListReq.
 
         标签，支持模糊查找。
 
@@ -216,7 +216,7 @@ class QuerySubCustomerListReq:
 
     @property
     def association_type(self):
-        """Gets the association_type of this QuerySubCustomerListReq.
+        r"""Gets the association_type of this QuerySubCustomerListReq.
 
         关联类型： 1：顾问销售3：转售
 
@@ -227,7 +227,7 @@ class QuerySubCustomerListReq:
 
     @association_type.setter
     def association_type(self, association_type):
-        """Sets the association_type of this QuerySubCustomerListReq.
+        r"""Sets the association_type of this QuerySubCustomerListReq.
 
         关联类型： 1：顾问销售3：转售
 
@@ -238,7 +238,7 @@ class QuerySubCustomerListReq:
 
     @property
     def associated_on_begin(self):
-        """Gets the associated_on_begin of this QuerySubCustomerListReq.
+        r"""Gets the associated_on_begin of this QuerySubCustomerListReq.
 
         关联时间区间段开始，UTC时间。 格式：YYYY-MM-DD'T'hh:mm:ss'Z'，例如“2019-05-06T08:05:01Z”。
 
@@ -249,7 +249,7 @@ class QuerySubCustomerListReq:
 
     @associated_on_begin.setter
     def associated_on_begin(self, associated_on_begin):
-        """Sets the associated_on_begin of this QuerySubCustomerListReq.
+        r"""Sets the associated_on_begin of this QuerySubCustomerListReq.
 
         关联时间区间段开始，UTC时间。 格式：YYYY-MM-DD'T'hh:mm:ss'Z'，例如“2019-05-06T08:05:01Z”。
 
@@ -260,7 +260,7 @@ class QuerySubCustomerListReq:
 
     @property
     def associated_on_end(self):
-        """Gets the associated_on_end of this QuerySubCustomerListReq.
+        r"""Gets the associated_on_end of this QuerySubCustomerListReq.
 
         关联时间区间段结束，UTC时间。 格式：YYYY-MM-DD'T'hh:mm:ss'Z'，例如“2019-05-06T08:05:01Z”。
 
@@ -271,7 +271,7 @@ class QuerySubCustomerListReq:
 
     @associated_on_end.setter
     def associated_on_end(self, associated_on_end):
-        """Sets the associated_on_end of this QuerySubCustomerListReq.
+        r"""Sets the associated_on_end of this QuerySubCustomerListReq.
 
         关联时间区间段结束，UTC时间。 格式：YYYY-MM-DD'T'hh:mm:ss'Z'，例如“2019-05-06T08:05:01Z”。
 
@@ -282,7 +282,7 @@ class QuerySubCustomerListReq:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this QuerySubCustomerListReq.
+        r"""Gets the customer_id of this QuerySubCustomerListReq.
 
         客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/intl/zh-cn/api-bpconsole/mc_00021.html)接口获取customer_id，或者可以从创建客户接口的响应获取domain_id。此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -293,7 +293,7 @@ class QuerySubCustomerListReq:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this QuerySubCustomerListReq.
+        r"""Sets the customer_id of this QuerySubCustomerListReq.
 
         客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/intl/zh-cn/api-bpconsole/mc_00021.html)接口获取customer_id，或者可以从创建客户接口的响应获取domain_id。此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
@@ -304,7 +304,7 @@ class QuerySubCustomerListReq:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this QuerySubCustomerListReq.
+        r"""Gets the indirect_partner_id of this QuerySubCustomerListReq.
 
         云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
 
@@ -315,7 +315,7 @@ class QuerySubCustomerListReq:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this QuerySubCustomerListReq.
+        r"""Sets the indirect_partner_id of this QuerySubCustomerListReq.
 
         云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
 

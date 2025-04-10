@@ -27,7 +27,7 @@ class BatchDeleteRequestBody:
     }
 
     def __init__(self, tags=None, sys_tags=None):
-        """BatchDeleteRequestBody
+        r"""BatchDeleteRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchDeleteRequestBody.
+        r"""Gets the tags of this BatchDeleteRequestBody.
 
         资源标签
 
@@ -60,7 +60,7 @@ class BatchDeleteRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchDeleteRequestBody.
+        r"""Sets the tags of this BatchDeleteRequestBody.
 
         资源标签
 
@@ -71,7 +71,7 @@ class BatchDeleteRequestBody:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this BatchDeleteRequestBody.
+        r"""Gets the sys_tags of this BatchDeleteRequestBody.
 
         系统标签
 
@@ -82,7 +82,7 @@ class BatchDeleteRequestBody:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this BatchDeleteRequestBody.
+        r"""Sets the sys_tags of this BatchDeleteRequestBody.
 
         系统标签
 

@@ -30,7 +30,7 @@ class CreateInternetBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, internet_bandwidth=None, x_request_id=None):
-        """CreateInternetBandwidthResponse
+        r"""CreateInternetBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateInternetBandwidthResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateInternetBandwidthResponse.
+        r"""Gets the request_id of this CreateInternetBandwidthResponse.
 
         本次请求的编号
 
@@ -69,7 +69,7 @@ class CreateInternetBandwidthResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateInternetBandwidthResponse.
+        r"""Sets the request_id of this CreateInternetBandwidthResponse.
 
         本次请求的编号
 
@@ -80,7 +80,7 @@ class CreateInternetBandwidthResponse(SdkResponse):
 
     @property
     def internet_bandwidth(self):
-        """Gets the internet_bandwidth of this CreateInternetBandwidthResponse.
+        r"""Gets the internet_bandwidth of this CreateInternetBandwidthResponse.
 
         :return: The internet_bandwidth of this CreateInternetBandwidthResponse.
         :rtype: :class:`huaweicloudsdkgeip.v3.CreateInternetBandwidth`
@@ -89,7 +89,7 @@ class CreateInternetBandwidthResponse(SdkResponse):
 
     @internet_bandwidth.setter
     def internet_bandwidth(self, internet_bandwidth):
-        """Sets the internet_bandwidth of this CreateInternetBandwidthResponse.
+        r"""Sets the internet_bandwidth of this CreateInternetBandwidthResponse.
 
         :param internet_bandwidth: The internet_bandwidth of this CreateInternetBandwidthResponse.
         :type internet_bandwidth: :class:`huaweicloudsdkgeip.v3.CreateInternetBandwidth`
@@ -98,7 +98,7 @@ class CreateInternetBandwidthResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateInternetBandwidthResponse.
+        r"""Gets the x_request_id of this CreateInternetBandwidthResponse.
 
         :return: The x_request_id of this CreateInternetBandwidthResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateInternetBandwidthResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateInternetBandwidthResponse.
+        r"""Sets the x_request_id of this CreateInternetBandwidthResponse.
 
         :param x_request_id: The x_request_id of this CreateInternetBandwidthResponse.
         :type x_request_id: str

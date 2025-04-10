@@ -27,7 +27,7 @@ class LlmModelConfig:
     }
 
     def __init__(self, base_model_type=None, model_path=None):
-        """LlmModelConfig
+        r"""LlmModelConfig
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class LlmModelConfig:
 
     @property
     def base_model_type(self):
-        """Gets the base_model_type of this LlmModelConfig.
+        r"""Gets the base_model_type of this LlmModelConfig.
 
         类型请从ListBaseModels列举基模型接口响应中获取
 
@@ -59,7 +59,7 @@ class LlmModelConfig:
 
     @base_model_type.setter
     def base_model_type(self, base_model_type):
-        """Sets the base_model_type of this LlmModelConfig.
+        r"""Sets the base_model_type of this LlmModelConfig.
 
         类型请从ListBaseModels列举基模型接口响应中获取
 
@@ -70,7 +70,7 @@ class LlmModelConfig:
 
     @property
     def model_path(self):
-        """Gets the model_path of this LlmModelConfig.
+        r"""Gets the model_path of this LlmModelConfig.
 
         模型文件路径
 
@@ -81,7 +81,7 @@ class LlmModelConfig:
 
     @model_path.setter
     def model_path(self, model_path):
-        """Sets the model_path of this LlmModelConfig.
+        r"""Sets the model_path of this LlmModelConfig.
 
         模型文件路径
 

@@ -43,7 +43,7 @@ class SearchHisMeetingsRequest:
     }
 
     def __init__(self, user_uuid=None, offset=None, limit=None, search_key=None, query_all=None, start_date=None, end_date=None, sort_type=None, x_authorization_type=None, x_site_id=None):
-        """SearchHisMeetingsRequest
+        r"""SearchHisMeetingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class SearchHisMeetingsRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this SearchHisMeetingsRequest.
+        r"""Gets the user_uuid of this SearchHisMeetingsRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。
 
@@ -115,7 +115,7 @@ class SearchHisMeetingsRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this SearchHisMeetingsRequest.
+        r"""Sets the user_uuid of this SearchHisMeetingsRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。
 
@@ -126,7 +126,7 @@ class SearchHisMeetingsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchHisMeetingsRequest.
+        r"""Gets the offset of this SearchHisMeetingsRequest.
 
         查询偏移量。默认为0。
 
@@ -137,7 +137,7 @@ class SearchHisMeetingsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchHisMeetingsRequest.
+        r"""Sets the offset of this SearchHisMeetingsRequest.
 
         查询偏移量。默认为0。
 
@@ -148,7 +148,7 @@ class SearchHisMeetingsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchHisMeetingsRequest.
+        r"""Gets the limit of this SearchHisMeetingsRequest.
 
         查询数量。默认是20，最大500条。
 
@@ -159,7 +159,7 @@ class SearchHisMeetingsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchHisMeetingsRequest.
+        r"""Sets the limit of this SearchHisMeetingsRequest.
 
         查询数量。默认是20，最大500条。
 
@@ -170,7 +170,7 @@ class SearchHisMeetingsRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchHisMeetingsRequest.
+        r"""Gets the search_key of this SearchHisMeetingsRequest.
 
         查询条件。会议主题、会议预约人和会议ID等可作为搜索内容。
 
@@ -181,7 +181,7 @@ class SearchHisMeetingsRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchHisMeetingsRequest.
+        r"""Sets the search_key of this SearchHisMeetingsRequest.
 
         查询条件。会议主题、会议预约人和会议ID等可作为搜索内容。
 
@@ -192,7 +192,7 @@ class SearchHisMeetingsRequest:
 
     @property
     def query_all(self):
-        """Gets the query_all of this SearchHisMeetingsRequest.
+        r"""Gets the query_all of this SearchHisMeetingsRequest.
 
         是否查询企业下所有用户的历史会议。 * true：查询所有用户的历史会议 * false：仅查询管理员自己的历史会议 > 仅对企业管理员生效。
 
@@ -203,7 +203,7 @@ class SearchHisMeetingsRequest:
 
     @query_all.setter
     def query_all(self, query_all):
-        """Sets the query_all of this SearchHisMeetingsRequest.
+        r"""Sets the query_all of this SearchHisMeetingsRequest.
 
         是否查询企业下所有用户的历史会议。 * true：查询所有用户的历史会议 * false：仅查询管理员自己的历史会议 > 仅对企业管理员生效。
 
@@ -214,7 +214,7 @@ class SearchHisMeetingsRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this SearchHisMeetingsRequest.
+        r"""Gets the start_date of this SearchHisMeetingsRequest.
 
         查询的起始时间戳（单位毫秒）。
 
@@ -225,7 +225,7 @@ class SearchHisMeetingsRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this SearchHisMeetingsRequest.
+        r"""Sets the start_date of this SearchHisMeetingsRequest.
 
         查询的起始时间戳（单位毫秒）。
 
@@ -236,7 +236,7 @@ class SearchHisMeetingsRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this SearchHisMeetingsRequest.
+        r"""Gets the end_date of this SearchHisMeetingsRequest.
 
         查询的截止时间戳（单位毫秒）。
 
@@ -247,7 +247,7 @@ class SearchHisMeetingsRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this SearchHisMeetingsRequest.
+        r"""Sets the end_date of this SearchHisMeetingsRequest.
 
         查询的截止时间戳（单位毫秒）。
 
@@ -258,7 +258,7 @@ class SearchHisMeetingsRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this SearchHisMeetingsRequest.
+        r"""Gets the sort_type of this SearchHisMeetingsRequest.
 
         查询结果排序类型。 * ASC_StartTIME：根据会议开始时间升序排序 * DSC_StartTIME：根据会议开始时间降序排序 * ASC_RecordTYPE：根据是否具有录播文件排序，之后默认按照会议开始时间升序排序 * DSC_RecordTYPE：根据是否含有录播文件排序，之后默认按照会议开始时间降序排序
 
@@ -269,7 +269,7 @@ class SearchHisMeetingsRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this SearchHisMeetingsRequest.
+        r"""Sets the sort_type of this SearchHisMeetingsRequest.
 
         查询结果排序类型。 * ASC_StartTIME：根据会议开始时间升序排序 * DSC_StartTIME：根据会议开始时间降序排序 * ASC_RecordTYPE：根据是否具有录播文件排序，之后默认按照会议开始时间升序排序 * DSC_RecordTYPE：根据是否含有录播文件排序，之后默认按照会议开始时间降序排序
 
@@ -280,7 +280,7 @@ class SearchHisMeetingsRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this SearchHisMeetingsRequest.
+        r"""Gets the x_authorization_type of this SearchHisMeetingsRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -291,7 +291,7 @@ class SearchHisMeetingsRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this SearchHisMeetingsRequest.
+        r"""Sets the x_authorization_type of this SearchHisMeetingsRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -302,7 +302,7 @@ class SearchHisMeetingsRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this SearchHisMeetingsRequest.
+        r"""Gets the x_site_id of this SearchHisMeetingsRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -313,7 +313,7 @@ class SearchHisMeetingsRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this SearchHisMeetingsRequest.
+        r"""Sets the x_site_id of this SearchHisMeetingsRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 

@@ -31,7 +31,7 @@ class ListClassroomMemberJobsRequest:
     }
 
     def __init__(self, classroom_id=None, member_id=None, offset=None, limit=None):
-        """ListClassroomMemberJobsRequest
+        r"""ListClassroomMemberJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListClassroomMemberJobsRequest:
 
     @property
     def classroom_id(self):
-        """Gets the classroom_id of this ListClassroomMemberJobsRequest.
+        r"""Gets the classroom_id of this ListClassroomMemberJobsRequest.
 
         课堂ID
 
@@ -73,7 +73,7 @@ class ListClassroomMemberJobsRequest:
 
     @classroom_id.setter
     def classroom_id(self, classroom_id):
-        """Sets the classroom_id of this ListClassroomMemberJobsRequest.
+        r"""Sets the classroom_id of this ListClassroomMemberJobsRequest.
 
         课堂ID
 
@@ -84,7 +84,7 @@ class ListClassroomMemberJobsRequest:
 
     @property
     def member_id(self):
-        """Gets the member_id of this ListClassroomMemberJobsRequest.
+        r"""Gets the member_id of this ListClassroomMemberJobsRequest.
 
         用户ID
 
@@ -95,7 +95,7 @@ class ListClassroomMemberJobsRequest:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this ListClassroomMemberJobsRequest.
+        r"""Sets the member_id of this ListClassroomMemberJobsRequest.
 
         用户ID
 
@@ -106,7 +106,7 @@ class ListClassroomMemberJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListClassroomMemberJobsRequest.
+        r"""Gets the offset of this ListClassroomMemberJobsRequest.
 
         信息记录的起始编号
 
@@ -117,7 +117,7 @@ class ListClassroomMemberJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListClassroomMemberJobsRequest.
+        r"""Sets the offset of this ListClassroomMemberJobsRequest.
 
         信息记录的起始编号
 
@@ -128,7 +128,7 @@ class ListClassroomMemberJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListClassroomMemberJobsRequest.
+        r"""Gets the limit of this ListClassroomMemberJobsRequest.
 
         每页包含的信息记录数
 
@@ -139,7 +139,7 @@ class ListClassroomMemberJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListClassroomMemberJobsRequest.
+        r"""Sets the limit of this ListClassroomMemberJobsRequest.
 
         每页包含的信息记录数
 

@@ -25,7 +25,7 @@ class ShowCustomConnectorRequest:
     }
 
     def __init__(self, connector_id=None):
-        """ShowCustomConnectorRequest
+        r"""ShowCustomConnectorRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCustomConnectorRequest:
 
     @property
     def connector_id(self):
-        """Gets the connector_id of this ShowCustomConnectorRequest.
+        r"""Gets the connector_id of this ShowCustomConnectorRequest.
 
         连接器ID
 
@@ -53,7 +53,7 @@ class ShowCustomConnectorRequest:
 
     @connector_id.setter
     def connector_id(self, connector_id):
-        """Sets the connector_id of this ShowCustomConnectorRequest.
+        r"""Sets the connector_id of this ShowCustomConnectorRequest.
 
         连接器ID
 

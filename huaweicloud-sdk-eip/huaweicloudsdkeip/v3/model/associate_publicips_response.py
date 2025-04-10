@@ -28,7 +28,7 @@ class AssociatePublicipsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, publicip=None):
-        """AssociatePublicipsResponse
+        r"""AssociatePublicipsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AssociatePublicipsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this AssociatePublicipsResponse.
+        r"""Gets the request_id of this AssociatePublicipsResponse.
 
         本次请求的编号
 
@@ -62,7 +62,7 @@ class AssociatePublicipsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AssociatePublicipsResponse.
+        r"""Sets the request_id of this AssociatePublicipsResponse.
 
         本次请求的编号
 
@@ -73,7 +73,7 @@ class AssociatePublicipsResponse(SdkResponse):
 
     @property
     def publicip(self):
-        """Gets the publicip of this AssociatePublicipsResponse.
+        r"""Gets the publicip of this AssociatePublicipsResponse.
 
         :return: The publicip of this AssociatePublicipsResponse.
         :rtype: :class:`huaweicloudsdkeip.v3.PublicipInstanceResp`
@@ -82,7 +82,7 @@ class AssociatePublicipsResponse(SdkResponse):
 
     @publicip.setter
     def publicip(self, publicip):
-        """Sets the publicip of this AssociatePublicipsResponse.
+        r"""Sets the publicip of this AssociatePublicipsResponse.
 
         :param publicip: The publicip of this AssociatePublicipsResponse.
         :type publicip: :class:`huaweicloudsdkeip.v3.PublicipInstanceResp`

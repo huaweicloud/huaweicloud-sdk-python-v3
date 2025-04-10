@@ -46,7 +46,7 @@ class CreateTemplateResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, category_id=None, dimension=None, type=None, system_template=None, sql_info=None, abnormal_table_template=None, result_description=None, create_time=None, creator=None):
-        """CreateTemplateResponse
+        r"""CreateTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateTemplateResponse.
+        r"""Gets the id of this CreateTemplateResponse.
 
         id
 
@@ -125,7 +125,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateTemplateResponse.
+        r"""Sets the id of this CreateTemplateResponse.
 
         id
 
@@ -136,7 +136,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateTemplateResponse.
+        r"""Gets the name of this CreateTemplateResponse.
 
         name
 
@@ -147,7 +147,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTemplateResponse.
+        r"""Sets the name of this CreateTemplateResponse.
 
         name
 
@@ -158,7 +158,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @property
     def category_id(self):
-        """Gets the category_id of this CreateTemplateResponse.
+        r"""Gets the category_id of this CreateTemplateResponse.
 
         目录ID
 
@@ -169,7 +169,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this CreateTemplateResponse.
+        r"""Sets the category_id of this CreateTemplateResponse.
 
         目录ID
 
@@ -180,7 +180,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @property
     def dimension(self):
-        """Gets the dimension of this CreateTemplateResponse.
+        r"""Gets the dimension of this CreateTemplateResponse.
 
         Completeness:完整性,Uniqueness:唯一性,Timeliness:及时性,Validity:有效性,Accuracy:准确性,Consistency:一致性
 
@@ -191,7 +191,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @dimension.setter
     def dimension(self, dimension):
-        """Sets the dimension of this CreateTemplateResponse.
+        r"""Sets the dimension of this CreateTemplateResponse.
 
         Completeness:完整性,Uniqueness:唯一性,Timeliness:及时性,Validity:有效性,Accuracy:准确性,Consistency:一致性
 
@@ -202,7 +202,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CreateTemplateResponse.
+        r"""Gets the type of this CreateTemplateResponse.
 
         规则类型，Field:字段级规则,Table:表级规则,Database:库级规则,Cross-field:跨字段级规则,Customize:自定义规则
 
@@ -213,7 +213,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateTemplateResponse.
+        r"""Sets the type of this CreateTemplateResponse.
 
         规则类型，Field:字段级规则,Table:表级规则,Database:库级规则,Cross-field:跨字段级规则,Customize:自定义规则
 
@@ -224,7 +224,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @property
     def system_template(self):
-        """Gets the system_template of this CreateTemplateResponse.
+        r"""Gets the system_template of this CreateTemplateResponse.
 
         是否为系统模板
 
@@ -235,7 +235,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @system_template.setter
     def system_template(self, system_template):
-        """Sets the system_template of this CreateTemplateResponse.
+        r"""Sets the system_template of this CreateTemplateResponse.
 
         是否为系统模板
 
@@ -246,7 +246,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @property
     def sql_info(self):
-        """Gets the sql_info of this CreateTemplateResponse.
+        r"""Gets the sql_info of this CreateTemplateResponse.
 
         定义关系
 
@@ -257,7 +257,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @sql_info.setter
     def sql_info(self, sql_info):
-        """Sets the sql_info of this CreateTemplateResponse.
+        r"""Sets the sql_info of this CreateTemplateResponse.
 
         定义关系
 
@@ -268,7 +268,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @property
     def abnormal_table_template(self):
-        """Gets the abnormal_table_template of this CreateTemplateResponse.
+        r"""Gets the abnormal_table_template of this CreateTemplateResponse.
 
         异常表模板
 
@@ -279,7 +279,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @abnormal_table_template.setter
     def abnormal_table_template(self, abnormal_table_template):
-        """Sets the abnormal_table_template of this CreateTemplateResponse.
+        r"""Sets the abnormal_table_template of this CreateTemplateResponse.
 
         异常表模板
 
@@ -290,7 +290,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @property
     def result_description(self):
-        """Gets the result_description of this CreateTemplateResponse.
+        r"""Gets the result_description of this CreateTemplateResponse.
 
         结果说明
 
@@ -301,7 +301,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @result_description.setter
     def result_description(self, result_description):
-        """Sets the result_description of this CreateTemplateResponse.
+        r"""Sets the result_description of this CreateTemplateResponse.
 
         结果说明
 
@@ -312,7 +312,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateTemplateResponse.
+        r"""Gets the create_time of this CreateTemplateResponse.
 
         创建时间,13位时间戳(精确到毫秒)
 
@@ -323,7 +323,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateTemplateResponse.
+        r"""Sets the create_time of this CreateTemplateResponse.
 
         创建时间,13位时间戳(精确到毫秒)
 
@@ -334,7 +334,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this CreateTemplateResponse.
+        r"""Gets the creator of this CreateTemplateResponse.
 
         创建者,System代表系统自带
 
@@ -345,7 +345,7 @@ class CreateTemplateResponse(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this CreateTemplateResponse.
+        r"""Sets the creator of this CreateTemplateResponse.
 
         创建者,System代表系统自带
 

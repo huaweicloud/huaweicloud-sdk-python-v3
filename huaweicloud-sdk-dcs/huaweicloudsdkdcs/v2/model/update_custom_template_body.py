@@ -29,7 +29,7 @@ class UpdateCustomTemplateBody:
     }
 
     def __init__(self, name=None, description=None, params=None):
-        """UpdateCustomTemplateBody
+        r"""UpdateCustomTemplateBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateCustomTemplateBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateCustomTemplateBody.
+        r"""Gets the name of this UpdateCustomTemplateBody.
 
         模板名称
 
@@ -68,7 +68,7 @@ class UpdateCustomTemplateBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCustomTemplateBody.
+        r"""Sets the name of this UpdateCustomTemplateBody.
 
         模板名称
 
@@ -79,7 +79,7 @@ class UpdateCustomTemplateBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateCustomTemplateBody.
+        r"""Gets the description of this UpdateCustomTemplateBody.
 
         模板的描述信息
 
@@ -90,7 +90,7 @@ class UpdateCustomTemplateBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateCustomTemplateBody.
+        r"""Sets the description of this UpdateCustomTemplateBody.
 
         模板的描述信息
 
@@ -101,7 +101,7 @@ class UpdateCustomTemplateBody:
 
     @property
     def params(self):
-        """Gets the params of this UpdateCustomTemplateBody.
+        r"""Gets the params of this UpdateCustomTemplateBody.
 
         参数配置信息
 
@@ -112,7 +112,7 @@ class UpdateCustomTemplateBody:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this UpdateCustomTemplateBody.
+        r"""Sets the params of this UpdateCustomTemplateBody.
 
         参数配置信息
 

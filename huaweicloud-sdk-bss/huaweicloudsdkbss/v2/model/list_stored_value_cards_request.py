@@ -31,7 +31,7 @@ class ListStoredValueCardsRequest:
     }
 
     def __init__(self, status=None, card_id=None, offset=None, limit=None):
-        """ListStoredValueCardsRequest
+        r"""ListStoredValueCardsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListStoredValueCardsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListStoredValueCardsRequest.
+        r"""Gets the status of this ListStoredValueCardsRequest.
 
         状态：1：可使用2：已用完
 
@@ -74,7 +74,7 @@ class ListStoredValueCardsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListStoredValueCardsRequest.
+        r"""Sets the status of this ListStoredValueCardsRequest.
 
         状态：1：可使用2：已用完
 
@@ -85,7 +85,7 @@ class ListStoredValueCardsRequest:
 
     @property
     def card_id(self):
-        """Gets the card_id of this ListStoredValueCardsRequest.
+        r"""Gets the card_id of this ListStoredValueCardsRequest.
 
         储值卡ID。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -96,7 +96,7 @@ class ListStoredValueCardsRequest:
 
     @card_id.setter
     def card_id(self, card_id):
-        """Sets the card_id of this ListStoredValueCardsRequest.
+        r"""Sets the card_id of this ListStoredValueCardsRequest.
 
         储值卡ID。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -107,7 +107,7 @@ class ListStoredValueCardsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListStoredValueCardsRequest.
+        r"""Gets the offset of this ListStoredValueCardsRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -118,7 +118,7 @@ class ListStoredValueCardsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListStoredValueCardsRequest.
+        r"""Sets the offset of this ListStoredValueCardsRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -129,7 +129,7 @@ class ListStoredValueCardsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListStoredValueCardsRequest.
+        r"""Gets the limit of this ListStoredValueCardsRequest.
 
         查询的储值卡的数量，默认值为10。
 
@@ -140,7 +140,7 @@ class ListStoredValueCardsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListStoredValueCardsRequest.
+        r"""Sets the limit of this ListStoredValueCardsRequest.
 
         查询的储值卡的数量，默认值为10。
 

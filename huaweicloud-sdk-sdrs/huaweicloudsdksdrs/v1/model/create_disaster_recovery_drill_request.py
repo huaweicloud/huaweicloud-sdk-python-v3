@@ -25,7 +25,7 @@ class CreateDisasterRecoveryDrillRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDisasterRecoveryDrillRequest
+        r"""CreateDisasterRecoveryDrillRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDisasterRecoveryDrillRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDisasterRecoveryDrillRequest.
+        r"""Gets the body of this CreateDisasterRecoveryDrillRequest.
 
         :return: The body of this CreateDisasterRecoveryDrillRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.CreateDisasterRecoveryDrillRequestBody`
@@ -52,7 +52,7 @@ class CreateDisasterRecoveryDrillRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDisasterRecoveryDrillRequest.
+        r"""Sets the body of this CreateDisasterRecoveryDrillRequest.
 
         :param body: The body of this CreateDisasterRecoveryDrillRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.CreateDisasterRecoveryDrillRequestBody`

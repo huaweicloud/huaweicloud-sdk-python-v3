@@ -30,7 +30,7 @@ class ListCloudConnectionRoutesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, cloud_connection_routes=None):
-        """ListCloudConnectionRoutesResponse
+        r"""ListCloudConnectionRoutesResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListCloudConnectionRoutesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCloudConnectionRoutesResponse.
+        r"""Gets the request_id of this ListCloudConnectionRoutesResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListCloudConnectionRoutesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCloudConnectionRoutesResponse.
+        r"""Sets the request_id of this ListCloudConnectionRoutesResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListCloudConnectionRoutesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListCloudConnectionRoutesResponse.
+        r"""Gets the page_info of this ListCloudConnectionRoutesResponse.
 
         :return: The page_info of this ListCloudConnectionRoutesResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListCloudConnectionRoutesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListCloudConnectionRoutesResponse.
+        r"""Sets the page_info of this ListCloudConnectionRoutesResponse.
 
         :param page_info: The page_info of this ListCloudConnectionRoutesResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListCloudConnectionRoutesResponse(SdkResponse):
 
     @property
     def cloud_connection_routes(self):
-        """Gets the cloud_connection_routes of this ListCloudConnectionRoutesResponse.
+        r"""Gets the cloud_connection_routes of this ListCloudConnectionRoutesResponse.
 
         云连接路由实例列表。
 
@@ -107,7 +107,7 @@ class ListCloudConnectionRoutesResponse(SdkResponse):
 
     @cloud_connection_routes.setter
     def cloud_connection_routes(self, cloud_connection_routes):
-        """Sets the cloud_connection_routes of this ListCloudConnectionRoutesResponse.
+        r"""Sets the cloud_connection_routes of this ListCloudConnectionRoutesResponse.
 
         云连接路由实例列表。
 

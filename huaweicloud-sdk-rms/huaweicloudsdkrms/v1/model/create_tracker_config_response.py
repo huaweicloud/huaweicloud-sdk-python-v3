@@ -24,7 +24,7 @@ class CreateTrackerConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateTrackerConfigResponse
+        r"""CreateTrackerConfigResponse
 
         The model defined in huaweicloud sdk
 

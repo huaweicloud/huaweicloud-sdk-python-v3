@@ -27,7 +27,7 @@ class ExportBackupReq:
     }
 
     def __init__(self, backup_id=None, export_path=None):
-        """ExportBackupReq
+        r"""ExportBackupReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ExportBackupReq:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ExportBackupReq.
+        r"""Gets the backup_id of this ExportBackupReq.
 
         备份ID
 
@@ -59,7 +59,7 @@ class ExportBackupReq:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ExportBackupReq.
+        r"""Sets the backup_id of this ExportBackupReq.
 
         备份ID
 
@@ -70,7 +70,7 @@ class ExportBackupReq:
 
     @property
     def export_path(self):
-        """Gets the export_path of this ExportBackupReq.
+        r"""Gets the export_path of this ExportBackupReq.
 
         导出路径
 
@@ -81,7 +81,7 @@ class ExportBackupReq:
 
     @export_path.setter
     def export_path(self, export_path):
-        """Sets the export_path of this ExportBackupReq.
+        r"""Sets the export_path of this ExportBackupReq.
 
         导出路径
 

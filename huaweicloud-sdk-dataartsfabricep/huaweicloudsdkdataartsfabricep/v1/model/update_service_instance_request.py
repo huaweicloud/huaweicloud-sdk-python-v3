@@ -29,7 +29,7 @@ class UpdateServiceInstanceRequest:
     }
 
     def __init__(self, workspace_id=None, instance_id=None, body=None):
-        """UpdateServiceInstanceRequest
+        r"""UpdateServiceInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateServiceInstanceRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdateServiceInstanceRequest.
+        r"""Gets the workspace_id of this UpdateServiceInstanceRequest.
 
         Workspace的ID
 
@@ -66,7 +66,7 @@ class UpdateServiceInstanceRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdateServiceInstanceRequest.
+        r"""Sets the workspace_id of this UpdateServiceInstanceRequest.
 
         Workspace的ID
 
@@ -77,7 +77,7 @@ class UpdateServiceInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateServiceInstanceRequest.
+        r"""Gets the instance_id of this UpdateServiceInstanceRequest.
 
         实例的Id
 
@@ -88,7 +88,7 @@ class UpdateServiceInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateServiceInstanceRequest.
+        r"""Sets the instance_id of this UpdateServiceInstanceRequest.
 
         实例的Id
 
@@ -99,7 +99,7 @@ class UpdateServiceInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateServiceInstanceRequest.
+        r"""Gets the body of this UpdateServiceInstanceRequest.
 
         :return: The body of this UpdateServiceInstanceRequest.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.UpdateServiceInstanceInput`
@@ -108,7 +108,7 @@ class UpdateServiceInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateServiceInstanceRequest.
+        r"""Sets the body of this UpdateServiceInstanceRequest.
 
         :param body: The body of this UpdateServiceInstanceRequest.
         :type body: :class:`huaweicloudsdkdataartsfabricep.v1.UpdateServiceInstanceInput`

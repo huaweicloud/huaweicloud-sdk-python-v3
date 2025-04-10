@@ -60,7 +60,7 @@ class CreateWarehouseAppResponse(SdkResponse):
     }
 
     def __init__(self, id=None, app_id=None, tenant_id=None, app_name=None, app_category=None, os_type=None, version_id=None, version_name=None, appfile_store_path=None, app_file_size=None, app_description=None, appicon_store_path=None, create_time=None, modify_time=None, verify_time=None, verify_status=None, verify_comment=None, app_icon=None):
-        """CreateWarehouseAppResponse
+        r"""CreateWarehouseAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateWarehouseAppResponse.
+        r"""Gets the id of this CreateWarehouseAppResponse.
 
         应用的记录id。
 
@@ -174,7 +174,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateWarehouseAppResponse.
+        r"""Sets the id of this CreateWarehouseAppResponse.
 
         应用的记录id。
 
@@ -185,7 +185,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateWarehouseAppResponse.
+        r"""Gets the app_id of this CreateWarehouseAppResponse.
 
         应用id。
 
@@ -196,7 +196,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateWarehouseAppResponse.
+        r"""Sets the app_id of this CreateWarehouseAppResponse.
 
         应用id。
 
@@ -207,7 +207,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CreateWarehouseAppResponse.
+        r"""Gets the tenant_id of this CreateWarehouseAppResponse.
 
         租户id。
 
@@ -218,7 +218,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CreateWarehouseAppResponse.
+        r"""Sets the tenant_id of this CreateWarehouseAppResponse.
 
         租户id。
 
@@ -229,7 +229,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this CreateWarehouseAppResponse.
+        r"""Gets the app_name of this CreateWarehouseAppResponse.
 
         应用名称。
 
@@ -240,7 +240,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this CreateWarehouseAppResponse.
+        r"""Sets the app_name of this CreateWarehouseAppResponse.
 
         应用名称。
 
@@ -251,7 +251,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def app_category(self):
-        """Gets the app_category of this CreateWarehouseAppResponse.
+        r"""Gets the app_category of this CreateWarehouseAppResponse.
 
         :return: The app_category of this CreateWarehouseAppResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppCategoryEnum`
@@ -260,7 +260,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @app_category.setter
     def app_category(self, app_category):
-        """Sets the app_category of this CreateWarehouseAppResponse.
+        r"""Sets the app_category of this CreateWarehouseAppResponse.
 
         :param app_category: The app_category of this CreateWarehouseAppResponse.
         :type app_category: :class:`huaweicloudsdkworkspaceapp.v1.AppCategoryEnum`
@@ -269,7 +269,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def os_type(self):
-        """Gets the os_type of this CreateWarehouseAppResponse.
+        r"""Gets the os_type of this CreateWarehouseAppResponse.
 
         :return: The os_type of this CreateWarehouseAppResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -278,7 +278,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this CreateWarehouseAppResponse.
+        r"""Sets the os_type of this CreateWarehouseAppResponse.
 
         :param os_type: The os_type of this CreateWarehouseAppResponse.
         :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -287,7 +287,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def version_id(self):
-        """Gets the version_id of this CreateWarehouseAppResponse.
+        r"""Gets the version_id of this CreateWarehouseAppResponse.
 
         版本号。
 
@@ -298,7 +298,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this CreateWarehouseAppResponse.
+        r"""Sets the version_id of this CreateWarehouseAppResponse.
 
         版本号。
 
@@ -309,7 +309,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def version_name(self):
-        """Gets the version_name of this CreateWarehouseAppResponse.
+        r"""Gets the version_name of this CreateWarehouseAppResponse.
 
         版本名称。
 
@@ -320,7 +320,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this CreateWarehouseAppResponse.
+        r"""Sets the version_name of this CreateWarehouseAppResponse.
 
         版本名称。
 
@@ -331,7 +331,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def appfile_store_path(self):
-        """Gets the appfile_store_path of this CreateWarehouseAppResponse.
+        r"""Gets the appfile_store_path of this CreateWarehouseAppResponse.
 
         应用文件的存放路径。
 
@@ -342,7 +342,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @appfile_store_path.setter
     def appfile_store_path(self, appfile_store_path):
-        """Sets the appfile_store_path of this CreateWarehouseAppResponse.
+        r"""Sets the appfile_store_path of this CreateWarehouseAppResponse.
 
         应用文件的存放路径。
 
@@ -353,7 +353,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def app_file_size(self):
-        """Gets the app_file_size of this CreateWarehouseAppResponse.
+        r"""Gets the app_file_size of this CreateWarehouseAppResponse.
 
         应用文件的大小，以KB为单位。
 
@@ -364,7 +364,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @app_file_size.setter
     def app_file_size(self, app_file_size):
-        """Sets the app_file_size of this CreateWarehouseAppResponse.
+        r"""Sets the app_file_size of this CreateWarehouseAppResponse.
 
         应用文件的大小，以KB为单位。
 
@@ -375,7 +375,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def app_description(self):
-        """Gets the app_description of this CreateWarehouseAppResponse.
+        r"""Gets the app_description of this CreateWarehouseAppResponse.
 
         应用描述。
 
@@ -386,7 +386,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @app_description.setter
     def app_description(self, app_description):
-        """Sets the app_description of this CreateWarehouseAppResponse.
+        r"""Sets the app_description of this CreateWarehouseAppResponse.
 
         应用描述。
 
@@ -397,7 +397,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def appicon_store_path(self):
-        """Gets the appicon_store_path of this CreateWarehouseAppResponse.
+        r"""Gets the appicon_store_path of this CreateWarehouseAppResponse.
 
         应用文件的存放路径。
 
@@ -408,7 +408,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @appicon_store_path.setter
     def appicon_store_path(self, appicon_store_path):
-        """Sets the appicon_store_path of this CreateWarehouseAppResponse.
+        r"""Sets the appicon_store_path of this CreateWarehouseAppResponse.
 
         应用文件的存放路径。
 
@@ -419,7 +419,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateWarehouseAppResponse.
+        r"""Gets the create_time of this CreateWarehouseAppResponse.
 
         应用创建时间。
 
@@ -430,7 +430,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateWarehouseAppResponse.
+        r"""Sets the create_time of this CreateWarehouseAppResponse.
 
         应用创建时间。
 
@@ -441,7 +441,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def modify_time(self):
-        """Gets the modify_time of this CreateWarehouseAppResponse.
+        r"""Gets the modify_time of this CreateWarehouseAppResponse.
 
         应用修改时间。
 
@@ -452,7 +452,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @modify_time.setter
     def modify_time(self, modify_time):
-        """Sets the modify_time of this CreateWarehouseAppResponse.
+        r"""Sets the modify_time of this CreateWarehouseAppResponse.
 
         应用修改时间。
 
@@ -463,7 +463,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def verify_time(self):
-        """Gets the verify_time of this CreateWarehouseAppResponse.
+        r"""Gets the verify_time of this CreateWarehouseAppResponse.
 
         应用审核时间。
 
@@ -474,7 +474,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @verify_time.setter
     def verify_time(self, verify_time):
-        """Sets the verify_time of this CreateWarehouseAppResponse.
+        r"""Sets the verify_time of this CreateWarehouseAppResponse.
 
         应用审核时间。
 
@@ -485,7 +485,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def verify_status(self):
-        """Gets the verify_status of this CreateWarehouseAppResponse.
+        r"""Gets the verify_status of this CreateWarehouseAppResponse.
 
         :return: The verify_status of this CreateWarehouseAppResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VerifyStatusEnum`
@@ -494,7 +494,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @verify_status.setter
     def verify_status(self, verify_status):
-        """Sets the verify_status of this CreateWarehouseAppResponse.
+        r"""Sets the verify_status of this CreateWarehouseAppResponse.
 
         :param verify_status: The verify_status of this CreateWarehouseAppResponse.
         :type verify_status: :class:`huaweicloudsdkworkspaceapp.v1.VerifyStatusEnum`
@@ -503,7 +503,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def verify_comment(self):
-        """Gets the verify_comment of this CreateWarehouseAppResponse.
+        r"""Gets the verify_comment of this CreateWarehouseAppResponse.
 
         审核的评论意见。
 
@@ -514,7 +514,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @verify_comment.setter
     def verify_comment(self, verify_comment):
-        """Sets the verify_comment of this CreateWarehouseAppResponse.
+        r"""Sets the verify_comment of this CreateWarehouseAppResponse.
 
         审核的评论意见。
 
@@ -525,7 +525,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @property
     def app_icon(self):
-        """Gets the app_icon of this CreateWarehouseAppResponse.
+        r"""Gets the app_icon of this CreateWarehouseAppResponse.
 
         app的图标文件。
 
@@ -536,7 +536,7 @@ class CreateWarehouseAppResponse(SdkResponse):
 
     @app_icon.setter
     def app_icon(self, app_icon):
-        """Sets the app_icon of this CreateWarehouseAppResponse.
+        r"""Sets the app_icon of this CreateWarehouseAppResponse.
 
         app的图标文件。
 

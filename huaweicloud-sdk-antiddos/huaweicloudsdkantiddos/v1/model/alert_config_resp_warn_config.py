@@ -39,7 +39,7 @@ class AlertConfigRespWarnConfig:
     }
 
     def __init__(self, anti_d_do_s=None, back_doors=None, bruce_force=None, high_privilege=None, remote_login=None, send_frequency=None, waf=None, weak_password=None):
-        """AlertConfigRespWarnConfig
+        r"""AlertConfigRespWarnConfig
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class AlertConfigRespWarnConfig:
 
     @property
     def anti_d_do_s(self):
-        """Gets the anti_d_do_s of this AlertConfigRespWarnConfig.
+        r"""Gets the anti_d_do_s of this AlertConfigRespWarnConfig.
 
         DDoS攻击
 
@@ -102,7 +102,7 @@ class AlertConfigRespWarnConfig:
 
     @anti_d_do_s.setter
     def anti_d_do_s(self, anti_d_do_s):
-        """Sets the anti_d_do_s of this AlertConfigRespWarnConfig.
+        r"""Sets the anti_d_do_s of this AlertConfigRespWarnConfig.
 
         DDoS攻击
 
@@ -113,7 +113,7 @@ class AlertConfigRespWarnConfig:
 
     @property
     def back_doors(self):
-        """Gets the back_doors of this AlertConfigRespWarnConfig.
+        r"""Gets the back_doors of this AlertConfigRespWarnConfig.
 
         网页后门
 
@@ -124,7 +124,7 @@ class AlertConfigRespWarnConfig:
 
     @back_doors.setter
     def back_doors(self, back_doors):
-        """Sets the back_doors of this AlertConfigRespWarnConfig.
+        r"""Sets the back_doors of this AlertConfigRespWarnConfig.
 
         网页后门
 
@@ -135,7 +135,7 @@ class AlertConfigRespWarnConfig:
 
     @property
     def bruce_force(self):
-        """Gets the bruce_force of this AlertConfigRespWarnConfig.
+        r"""Gets the bruce_force of this AlertConfigRespWarnConfig.
 
         暴力破解（系统登录，FTP，DB）
 
@@ -146,7 +146,7 @@ class AlertConfigRespWarnConfig:
 
     @bruce_force.setter
     def bruce_force(self, bruce_force):
-        """Sets the bruce_force of this AlertConfigRespWarnConfig.
+        r"""Sets the bruce_force of this AlertConfigRespWarnConfig.
 
         暴力破解（系统登录，FTP，DB）
 
@@ -157,7 +157,7 @@ class AlertConfigRespWarnConfig:
 
     @property
     def high_privilege(self):
-        """Gets the high_privilege of this AlertConfigRespWarnConfig.
+        r"""Gets the high_privilege of this AlertConfigRespWarnConfig.
 
         数据库进程权限过高
 
@@ -168,7 +168,7 @@ class AlertConfigRespWarnConfig:
 
     @high_privilege.setter
     def high_privilege(self, high_privilege):
-        """Sets the high_privilege of this AlertConfigRespWarnConfig.
+        r"""Sets the high_privilege of this AlertConfigRespWarnConfig.
 
         数据库进程权限过高
 
@@ -179,7 +179,7 @@ class AlertConfigRespWarnConfig:
 
     @property
     def remote_login(self):
-        """Gets the remote_login of this AlertConfigRespWarnConfig.
+        r"""Gets the remote_login of this AlertConfigRespWarnConfig.
 
         异地登录提醒
 
@@ -190,7 +190,7 @@ class AlertConfigRespWarnConfig:
 
     @remote_login.setter
     def remote_login(self, remote_login):
-        """Sets the remote_login of this AlertConfigRespWarnConfig.
+        r"""Sets the remote_login of this AlertConfigRespWarnConfig.
 
         异地登录提醒
 
@@ -201,7 +201,7 @@ class AlertConfigRespWarnConfig:
 
     @property
     def send_frequency(self):
-        """Gets the send_frequency of this AlertConfigRespWarnConfig.
+        r"""Gets the send_frequency of this AlertConfigRespWarnConfig.
 
         取值范围： - 0：表示每天一次 - 1：表示半小时一次  对于HID必选。
 
@@ -212,7 +212,7 @@ class AlertConfigRespWarnConfig:
 
     @send_frequency.setter
     def send_frequency(self, send_frequency):
-        """Sets the send_frequency of this AlertConfigRespWarnConfig.
+        r"""Sets the send_frequency of this AlertConfigRespWarnConfig.
 
         取值范围： - 0：表示每天一次 - 1：表示半小时一次  对于HID必选。
 
@@ -223,7 +223,7 @@ class AlertConfigRespWarnConfig:
 
     @property
     def waf(self):
-        """Gets the waf of this AlertConfigRespWarnConfig.
+        r"""Gets the waf of this AlertConfigRespWarnConfig.
 
         保留字段
 
@@ -234,7 +234,7 @@ class AlertConfigRespWarnConfig:
 
     @waf.setter
     def waf(self, waf):
-        """Sets the waf of this AlertConfigRespWarnConfig.
+        r"""Sets the waf of this AlertConfigRespWarnConfig.
 
         保留字段
 
@@ -245,7 +245,7 @@ class AlertConfigRespWarnConfig:
 
     @property
     def weak_password(self):
-        """Gets the weak_password of this AlertConfigRespWarnConfig.
+        r"""Gets the weak_password of this AlertConfigRespWarnConfig.
 
         弱口令（系统，数据库）
 
@@ -256,7 +256,7 @@ class AlertConfigRespWarnConfig:
 
     @weak_password.setter
     def weak_password(self, weak_password):
-        """Sets the weak_password of this AlertConfigRespWarnConfig.
+        r"""Sets the weak_password of this AlertConfigRespWarnConfig.
 
         弱口令（系统，数据库）
 

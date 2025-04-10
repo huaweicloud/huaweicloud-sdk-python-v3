@@ -26,7 +26,7 @@ class CreateCamInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateCamInstanceResponse
+        r"""CreateCamInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateCamInstanceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateCamInstanceResponse.
+        r"""Gets the id of this CreateCamInstanceResponse.
 
         实例ID
 
@@ -55,7 +55,7 @@ class CreateCamInstanceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateCamInstanceResponse.
+        r"""Sets the id of this CreateCamInstanceResponse.
 
         实例ID
 

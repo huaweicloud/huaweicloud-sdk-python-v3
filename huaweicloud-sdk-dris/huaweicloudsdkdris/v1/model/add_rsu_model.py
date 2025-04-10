@@ -29,7 +29,7 @@ class AddRsuModel:
     }
 
     def __init__(self, name=None, manufacturer_name=None, description=None):
-        """AddRsuModel
+        r"""AddRsuModel
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AddRsuModel:
 
     @property
     def name(self):
-        """Gets the name of this AddRsuModel.
+        r"""Gets the name of this AddRsuModel.
 
         **参数说明**: RSU型号名称。  **取值范围**：长度不低于1不超过64，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 
@@ -67,7 +67,7 @@ class AddRsuModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddRsuModel.
+        r"""Sets the name of this AddRsuModel.
 
         **参数说明**: RSU型号名称。  **取值范围**：长度不低于1不超过64，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 
@@ -78,7 +78,7 @@ class AddRsuModel:
 
     @property
     def manufacturer_name(self):
-        """Gets the manufacturer_name of this AddRsuModel.
+        r"""Gets the manufacturer_name of this AddRsuModel.
 
         **参数说明**: RSU的厂商名称。  **取值范围**：长度不低于1不超过32，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 
@@ -89,7 +89,7 @@ class AddRsuModel:
 
     @manufacturer_name.setter
     def manufacturer_name(self, manufacturer_name):
-        """Sets the manufacturer_name of this AddRsuModel.
+        r"""Sets the manufacturer_name of this AddRsuModel.
 
         **参数说明**: RSU的厂商名称。  **取值范围**：长度不低于1不超过32，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 
@@ -100,7 +100,7 @@ class AddRsuModel:
 
     @property
     def description(self):
-        """Gets the description of this AddRsuModel.
+        r"""Gets the description of this AddRsuModel.
 
         **参数说明**: RSU型号的描述信息。  **取值范围**：长度不低于1不超过128，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 
@@ -111,7 +111,7 @@ class AddRsuModel:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddRsuModel.
+        r"""Sets the description of this AddRsuModel.
 
         **参数说明**: RSU型号的描述信息。  **取值范围**：长度不低于1不超过128，只允许中文、字母、数字、下划线（_）、问号（?）、反引号（'）、井号（#）、左小括号（(）、右小括号（)）、点（.）、逗号（,）、与（&）、百分号（%）、At（@）、感叹号（!）、连接符（-）的组合。
 

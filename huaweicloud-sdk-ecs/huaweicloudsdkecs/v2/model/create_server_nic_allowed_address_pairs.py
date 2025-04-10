@@ -27,7 +27,7 @@ class CreateServerNicAllowedAddressPairs:
     }
 
     def __init__(self, ip_address=None, mac_address=None):
-        """CreateServerNicAllowedAddressPairs
+        r"""CreateServerNicAllowedAddressPairs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateServerNicAllowedAddressPairs:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this CreateServerNicAllowedAddressPairs.
+        r"""Gets the ip_address of this CreateServerNicAllowedAddressPairs.
 
         IP地址 不支持0.0.0.0/0 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。
 
@@ -61,7 +61,7 @@ class CreateServerNicAllowedAddressPairs:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this CreateServerNicAllowedAddressPairs.
+        r"""Sets the ip_address of this CreateServerNicAllowedAddressPairs.
 
         IP地址 不支持0.0.0.0/0 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。
 
@@ -72,7 +72,7 @@ class CreateServerNicAllowedAddressPairs:
 
     @property
     def mac_address(self):
-        """Gets the mac_address of this CreateServerNicAllowedAddressPairs.
+        r"""Gets the mac_address of this CreateServerNicAllowedAddressPairs.
 
         MAC地址
 
@@ -83,7 +83,7 @@ class CreateServerNicAllowedAddressPairs:
 
     @mac_address.setter
     def mac_address(self, mac_address):
-        """Sets the mac_address of this CreateServerNicAllowedAddressPairs.
+        r"""Sets the mac_address of this CreateServerNicAllowedAddressPairs.
 
         MAC地址
 

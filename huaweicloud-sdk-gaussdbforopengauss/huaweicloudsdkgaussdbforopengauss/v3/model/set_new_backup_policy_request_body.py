@@ -25,7 +25,7 @@ class SetNewBackupPolicyRequestBody:
     }
 
     def __init__(self, backup_policy=None):
-        """SetNewBackupPolicyRequestBody
+        r"""SetNewBackupPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SetNewBackupPolicyRequestBody:
 
     @property
     def backup_policy(self):
-        """Gets the backup_policy of this SetNewBackupPolicyRequestBody.
+        r"""Gets the backup_policy of this SetNewBackupPolicyRequestBody.
 
         :return: The backup_policy of this SetNewBackupPolicyRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupPolicyInfo`
@@ -51,7 +51,7 @@ class SetNewBackupPolicyRequestBody:
 
     @backup_policy.setter
     def backup_policy(self, backup_policy):
-        """Sets the backup_policy of this SetNewBackupPolicyRequestBody.
+        r"""Sets the backup_policy of this SetNewBackupPolicyRequestBody.
 
         :param backup_policy: The backup_policy of this SetNewBackupPolicyRequestBody.
         :type backup_policy: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupPolicyInfo`

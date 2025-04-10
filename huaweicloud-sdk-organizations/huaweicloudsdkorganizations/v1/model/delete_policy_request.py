@@ -28,7 +28,7 @@ class DeletePolicyRequest:
     }
 
     def __init__(self, x_security_token=None, policy_id=None):
-        """DeletePolicyRequest
+        r"""DeletePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeletePolicyRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this DeletePolicyRequest.
+        r"""Gets the x_security_token of this DeletePolicyRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -61,7 +61,7 @@ class DeletePolicyRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this DeletePolicyRequest.
+        r"""Sets the x_security_token of this DeletePolicyRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -72,7 +72,7 @@ class DeletePolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this DeletePolicyRequest.
+        r"""Gets the policy_id of this DeletePolicyRequest.
 
         策略的唯一标识符（ID）。
 
@@ -83,7 +83,7 @@ class DeletePolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this DeletePolicyRequest.
+        r"""Sets the policy_id of this DeletePolicyRequest.
 
         策略的唯一标识符（ID）。
 

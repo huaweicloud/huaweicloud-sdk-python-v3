@@ -26,7 +26,7 @@ class DeleteDdmInstanceResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteDdmInstanceResponse
+        r"""DeleteDdmInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDdmInstanceResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteDdmInstanceResponse.
+        r"""Gets the body of this DeleteDdmInstanceResponse.
 
         :return: The body of this DeleteDdmInstanceResponse.
         :rtype: object
@@ -53,7 +53,7 @@ class DeleteDdmInstanceResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDdmInstanceResponse.
+        r"""Sets the body of this DeleteDdmInstanceResponse.
 
         :param body: The body of this DeleteDdmInstanceResponse.
         :type body: object

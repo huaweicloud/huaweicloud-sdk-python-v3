@@ -37,7 +37,7 @@ class ListActiveAsyncInvocationsRequest:
     }
 
     def __init__(self, function_urn=None, requests=None, marker=None, limit=None, status=None, query_begin_time=None, query_end_time=None):
-        """ListActiveAsyncInvocationsRequest
+        r"""ListActiveAsyncInvocationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListActiveAsyncInvocationsRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ListActiveAsyncInvocationsRequest.
+        r"""Gets the function_urn of this ListActiveAsyncInvocationsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -95,7 +95,7 @@ class ListActiveAsyncInvocationsRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ListActiveAsyncInvocationsRequest.
+        r"""Sets the function_urn of this ListActiveAsyncInvocationsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -106,7 +106,7 @@ class ListActiveAsyncInvocationsRequest:
 
     @property
     def requests(self):
-        """Gets the requests of this ListActiveAsyncInvocationsRequest.
+        r"""Gets the requests of this ListActiveAsyncInvocationsRequest.
 
         需要查询的异步请求ID, 多个请求id使用','分割， 最大支持10个请求id查询。如果不指定，默认查询所有异步调用记录
 
@@ -117,7 +117,7 @@ class ListActiveAsyncInvocationsRequest:
 
     @requests.setter
     def requests(self, requests):
-        """Sets the requests of this ListActiveAsyncInvocationsRequest.
+        r"""Sets the requests of this ListActiveAsyncInvocationsRequest.
 
         需要查询的异步请求ID, 多个请求id使用','分割， 最大支持10个请求id查询。如果不指定，默认查询所有异步调用记录
 
@@ -128,7 +128,7 @@ class ListActiveAsyncInvocationsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListActiveAsyncInvocationsRequest.
+        r"""Gets the marker of this ListActiveAsyncInvocationsRequest.
 
         本次查询起始位置，默认值0
 
@@ -139,7 +139,7 @@ class ListActiveAsyncInvocationsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListActiveAsyncInvocationsRequest.
+        r"""Sets the marker of this ListActiveAsyncInvocationsRequest.
 
         本次查询起始位置，默认值0
 
@@ -150,7 +150,7 @@ class ListActiveAsyncInvocationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListActiveAsyncInvocationsRequest.
+        r"""Gets the limit of this ListActiveAsyncInvocationsRequest.
 
         本次查询最大返回的数据条数，最大值500，默认值100
 
@@ -161,7 +161,7 @@ class ListActiveAsyncInvocationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListActiveAsyncInvocationsRequest.
+        r"""Sets the limit of this ListActiveAsyncInvocationsRequest.
 
         本次查询最大返回的数据条数，最大值500，默认值100
 
@@ -172,7 +172,7 @@ class ListActiveAsyncInvocationsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListActiveAsyncInvocationsRequest.
+        r"""Gets the status of this ListActiveAsyncInvocationsRequest.
 
         本次查询指定的异步调用状态，支持5种状态，如果不指定，则查询所有状态的调用记录 WAIT: 等待 RUNNING: 执行中 SUCCESS: 执行成功 FAIL: 执行失败 DISCARD: 请求丢弃
 
@@ -183,7 +183,7 @@ class ListActiveAsyncInvocationsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListActiveAsyncInvocationsRequest.
+        r"""Sets the status of this ListActiveAsyncInvocationsRequest.
 
         本次查询指定的异步调用状态，支持5种状态，如果不指定，则查询所有状态的调用记录 WAIT: 等待 RUNNING: 执行中 SUCCESS: 执行成功 FAIL: 执行失败 DISCARD: 请求丢弃
 
@@ -194,7 +194,7 @@ class ListActiveAsyncInvocationsRequest:
 
     @property
     def query_begin_time(self):
-        """Gets the query_begin_time of this ListActiveAsyncInvocationsRequest.
+        r"""Gets the query_begin_time of this ListActiveAsyncInvocationsRequest.
 
         搜索起始时间（格式为YYYY-MM-DD'T'HH:mm:ss,UTC时间）。如果不指定默认为当前时间前1小时
 
@@ -205,7 +205,7 @@ class ListActiveAsyncInvocationsRequest:
 
     @query_begin_time.setter
     def query_begin_time(self, query_begin_time):
-        """Sets the query_begin_time of this ListActiveAsyncInvocationsRequest.
+        r"""Sets the query_begin_time of this ListActiveAsyncInvocationsRequest.
 
         搜索起始时间（格式为YYYY-MM-DD'T'HH:mm:ss,UTC时间）。如果不指定默认为当前时间前1小时
 
@@ -216,7 +216,7 @@ class ListActiveAsyncInvocationsRequest:
 
     @property
     def query_end_time(self):
-        """Gets the query_end_time of this ListActiveAsyncInvocationsRequest.
+        r"""Gets the query_end_time of this ListActiveAsyncInvocationsRequest.
 
         搜索结束时间（格式为YYYY-MM-DD'T'HH:mm:ss,UTC时间）。如果不指定默认为当前时间
 
@@ -227,7 +227,7 @@ class ListActiveAsyncInvocationsRequest:
 
     @query_end_time.setter
     def query_end_time(self, query_end_time):
-        """Sets the query_end_time of this ListActiveAsyncInvocationsRequest.
+        r"""Sets the query_end_time of this ListActiveAsyncInvocationsRequest.
 
         搜索结束时间（格式为YYYY-MM-DD'T'HH:mm:ss,UTC时间）。如果不指定默认为当前时间
 

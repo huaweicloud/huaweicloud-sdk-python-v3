@@ -28,7 +28,7 @@ class ShowConfigurationAggregatorSourcesStatusResponse(SdkResponse):
     }
 
     def __init__(self, aggregated_source_statuses=None, page_info=None):
-        """ShowConfigurationAggregatorSourcesStatusResponse
+        r"""ShowConfigurationAggregatorSourcesStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowConfigurationAggregatorSourcesStatusResponse(SdkResponse):
 
     @property
     def aggregated_source_statuses(self):
-        """Gets the aggregated_source_statuses of this ShowConfigurationAggregatorSourcesStatusResponse.
+        r"""Gets the aggregated_source_statuses of this ShowConfigurationAggregatorSourcesStatusResponse.
 
         资源聚合器状态列表。
 
@@ -62,7 +62,7 @@ class ShowConfigurationAggregatorSourcesStatusResponse(SdkResponse):
 
     @aggregated_source_statuses.setter
     def aggregated_source_statuses(self, aggregated_source_statuses):
-        """Sets the aggregated_source_statuses of this ShowConfigurationAggregatorSourcesStatusResponse.
+        r"""Sets the aggregated_source_statuses of this ShowConfigurationAggregatorSourcesStatusResponse.
 
         资源聚合器状态列表。
 
@@ -73,7 +73,7 @@ class ShowConfigurationAggregatorSourcesStatusResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ShowConfigurationAggregatorSourcesStatusResponse.
+        r"""Gets the page_info of this ShowConfigurationAggregatorSourcesStatusResponse.
 
         :return: The page_info of this ShowConfigurationAggregatorSourcesStatusResponse.
         :rtype: :class:`huaweicloudsdkrms.v1.PageInfo`
@@ -82,7 +82,7 @@ class ShowConfigurationAggregatorSourcesStatusResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ShowConfigurationAggregatorSourcesStatusResponse.
+        r"""Sets the page_info of this ShowConfigurationAggregatorSourcesStatusResponse.
 
         :param page_info: The page_info of this ShowConfigurationAggregatorSourcesStatusResponse.
         :type page_info: :class:`huaweicloudsdkrms.v1.PageInfo`

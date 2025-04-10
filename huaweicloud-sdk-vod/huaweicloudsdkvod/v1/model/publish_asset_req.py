@@ -25,7 +25,7 @@ class PublishAssetReq:
     }
 
     def __init__(self, asset_id=None):
-        """PublishAssetReq
+        r"""PublishAssetReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PublishAssetReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this PublishAssetReq.
+        r"""Gets the asset_id of this PublishAssetReq.
 
         媒资ID。
 
@@ -53,7 +53,7 @@ class PublishAssetReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this PublishAssetReq.
+        r"""Sets the asset_id of this PublishAssetReq.
 
         媒资ID。
 

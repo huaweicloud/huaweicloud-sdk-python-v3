@@ -24,7 +24,7 @@ class RestoreRedistributionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RestoreRedistributionResponse
+        r"""RestoreRedistributionResponse
 
         The model defined in huaweicloud sdk
 

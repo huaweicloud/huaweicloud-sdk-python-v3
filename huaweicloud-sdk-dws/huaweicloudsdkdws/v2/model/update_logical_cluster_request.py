@@ -29,7 +29,7 @@ class UpdateLogicalClusterRequest:
     }
 
     def __init__(self, cluster_id=None, logical_cluster_id=None, body=None):
-        """UpdateLogicalClusterRequest
+        r"""UpdateLogicalClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateLogicalClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateLogicalClusterRequest.
+        r"""Gets the cluster_id of this UpdateLogicalClusterRequest.
 
         指定待编辑集群的ID
 
@@ -66,7 +66,7 @@ class UpdateLogicalClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateLogicalClusterRequest.
+        r"""Sets the cluster_id of this UpdateLogicalClusterRequest.
 
         指定待编辑集群的ID
 
@@ -77,7 +77,7 @@ class UpdateLogicalClusterRequest:
 
     @property
     def logical_cluster_id(self):
-        """Gets the logical_cluster_id of this UpdateLogicalClusterRequest.
+        r"""Gets the logical_cluster_id of this UpdateLogicalClusterRequest.
 
         指定待编辑逻辑集群的ID
 
@@ -88,7 +88,7 @@ class UpdateLogicalClusterRequest:
 
     @logical_cluster_id.setter
     def logical_cluster_id(self, logical_cluster_id):
-        """Sets the logical_cluster_id of this UpdateLogicalClusterRequest.
+        r"""Sets the logical_cluster_id of this UpdateLogicalClusterRequest.
 
         指定待编辑逻辑集群的ID
 
@@ -99,7 +99,7 @@ class UpdateLogicalClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLogicalClusterRequest.
+        r"""Gets the body of this UpdateLogicalClusterRequest.
 
         :return: The body of this UpdateLogicalClusterRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateLogicalClusterRequestBody`
@@ -108,7 +108,7 @@ class UpdateLogicalClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLogicalClusterRequest.
+        r"""Sets the body of this UpdateLogicalClusterRequest.
 
         :param body: The body of this UpdateLogicalClusterRequest.
         :type body: :class:`huaweicloudsdkdws.v2.UpdateLogicalClusterRequestBody`

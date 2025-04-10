@@ -43,7 +43,7 @@ class AlarmDetailResponse:
     }
 
     def __init__(self, alarm_id=None, alarm_name=None, alarm_level=None, alarm_source=None, alarm_message=None, alarm_location=None, resource_id=None, resource_id_name=None, alarm_generate_date=None, alarm_status=None):
-        """AlarmDetailResponse
+        r"""AlarmDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AlarmDetailResponse:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this AlarmDetailResponse.
+        r"""Gets the alarm_id of this AlarmDetailResponse.
 
         告警定义ID
 
@@ -117,7 +117,7 @@ class AlarmDetailResponse:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this AlarmDetailResponse.
+        r"""Sets the alarm_id of this AlarmDetailResponse.
 
         告警定义ID
 
@@ -128,7 +128,7 @@ class AlarmDetailResponse:
 
     @property
     def alarm_name(self):
-        """Gets the alarm_name of this AlarmDetailResponse.
+        r"""Gets the alarm_name of this AlarmDetailResponse.
 
         告警名称
 
@@ -139,7 +139,7 @@ class AlarmDetailResponse:
 
     @alarm_name.setter
     def alarm_name(self, alarm_name):
-        """Sets the alarm_name of this AlarmDetailResponse.
+        r"""Sets the alarm_name of this AlarmDetailResponse.
 
         告警名称
 
@@ -150,7 +150,7 @@ class AlarmDetailResponse:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this AlarmDetailResponse.
+        r"""Gets the alarm_level of this AlarmDetailResponse.
 
         告警级别
 
@@ -161,7 +161,7 @@ class AlarmDetailResponse:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this AlarmDetailResponse.
+        r"""Sets the alarm_level of this AlarmDetailResponse.
 
         告警级别
 
@@ -172,7 +172,7 @@ class AlarmDetailResponse:
 
     @property
     def alarm_source(self):
-        """Gets the alarm_source of this AlarmDetailResponse.
+        r"""Gets the alarm_source of this AlarmDetailResponse.
 
         告警服务
 
@@ -183,7 +183,7 @@ class AlarmDetailResponse:
 
     @alarm_source.setter
     def alarm_source(self, alarm_source):
-        """Sets the alarm_source of this AlarmDetailResponse.
+        r"""Sets the alarm_source of this AlarmDetailResponse.
 
         告警服务
 
@@ -194,7 +194,7 @@ class AlarmDetailResponse:
 
     @property
     def alarm_message(self):
-        """Gets the alarm_message of this AlarmDetailResponse.
+        r"""Gets the alarm_message of this AlarmDetailResponse.
 
         告警消息
 
@@ -205,7 +205,7 @@ class AlarmDetailResponse:
 
     @alarm_message.setter
     def alarm_message(self, alarm_message):
-        """Sets the alarm_message of this AlarmDetailResponse.
+        r"""Sets the alarm_message of this AlarmDetailResponse.
 
         告警消息
 
@@ -216,7 +216,7 @@ class AlarmDetailResponse:
 
     @property
     def alarm_location(self):
-        """Gets the alarm_location of this AlarmDetailResponse.
+        r"""Gets the alarm_location of this AlarmDetailResponse.
 
         告警定位信息
 
@@ -227,7 +227,7 @@ class AlarmDetailResponse:
 
     @alarm_location.setter
     def alarm_location(self, alarm_location):
-        """Sets the alarm_location of this AlarmDetailResponse.
+        r"""Sets the alarm_location of this AlarmDetailResponse.
 
         告警定位信息
 
@@ -238,7 +238,7 @@ class AlarmDetailResponse:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this AlarmDetailResponse.
+        r"""Gets the resource_id of this AlarmDetailResponse.
 
         告警源ID
 
@@ -249,7 +249,7 @@ class AlarmDetailResponse:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this AlarmDetailResponse.
+        r"""Sets the resource_id of this AlarmDetailResponse.
 
         告警源ID
 
@@ -260,7 +260,7 @@ class AlarmDetailResponse:
 
     @property
     def resource_id_name(self):
-        """Gets the resource_id_name of this AlarmDetailResponse.
+        r"""Gets the resource_id_name of this AlarmDetailResponse.
 
         告警源名称
 
@@ -271,7 +271,7 @@ class AlarmDetailResponse:
 
     @resource_id_name.setter
     def resource_id_name(self, resource_id_name):
-        """Sets the resource_id_name of this AlarmDetailResponse.
+        r"""Sets the resource_id_name of this AlarmDetailResponse.
 
         告警源名称
 
@@ -282,7 +282,7 @@ class AlarmDetailResponse:
 
     @property
     def alarm_generate_date(self):
-        """Gets the alarm_generate_date of this AlarmDetailResponse.
+        r"""Gets the alarm_generate_date of this AlarmDetailResponse.
 
         告警日期
 
@@ -293,7 +293,7 @@ class AlarmDetailResponse:
 
     @alarm_generate_date.setter
     def alarm_generate_date(self, alarm_generate_date):
-        """Sets the alarm_generate_date of this AlarmDetailResponse.
+        r"""Sets the alarm_generate_date of this AlarmDetailResponse.
 
         告警日期
 
@@ -304,7 +304,7 @@ class AlarmDetailResponse:
 
     @property
     def alarm_status(self):
-        """Gets the alarm_status of this AlarmDetailResponse.
+        r"""Gets the alarm_status of this AlarmDetailResponse.
 
         告警状态
 
@@ -315,7 +315,7 @@ class AlarmDetailResponse:
 
     @alarm_status.setter
     def alarm_status(self, alarm_status):
-        """Sets the alarm_status of this AlarmDetailResponse.
+        r"""Sets the alarm_status of this AlarmDetailResponse.
 
         告警状态
 

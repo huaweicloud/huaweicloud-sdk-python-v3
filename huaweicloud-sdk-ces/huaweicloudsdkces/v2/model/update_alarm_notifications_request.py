@@ -27,7 +27,7 @@ class UpdateAlarmNotificationsRequest:
     }
 
     def __init__(self, alarm_id=None, body=None):
-        """UpdateAlarmNotificationsRequest
+        r"""UpdateAlarmNotificationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAlarmNotificationsRequest:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this UpdateAlarmNotificationsRequest.
+        r"""Gets the alarm_id of this UpdateAlarmNotificationsRequest.
 
         告警规则ID
 
@@ -60,7 +60,7 @@ class UpdateAlarmNotificationsRequest:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this UpdateAlarmNotificationsRequest.
+        r"""Sets the alarm_id of this UpdateAlarmNotificationsRequest.
 
         告警规则ID
 
@@ -71,7 +71,7 @@ class UpdateAlarmNotificationsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAlarmNotificationsRequest.
+        r"""Gets the body of this UpdateAlarmNotificationsRequest.
 
         :return: The body of this UpdateAlarmNotificationsRequest.
         :rtype: :class:`huaweicloudsdkces.v2.PutAlarmNotificationReq`
@@ -80,7 +80,7 @@ class UpdateAlarmNotificationsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAlarmNotificationsRequest.
+        r"""Sets the body of this UpdateAlarmNotificationsRequest.
 
         :param body: The body of this UpdateAlarmNotificationsRequest.
         :type body: :class:`huaweicloudsdkces.v2.PutAlarmNotificationReq`

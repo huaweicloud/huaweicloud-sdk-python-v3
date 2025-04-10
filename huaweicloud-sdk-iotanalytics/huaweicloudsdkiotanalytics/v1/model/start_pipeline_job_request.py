@@ -31,7 +31,7 @@ class StartPipelineJobRequest:
     }
 
     def __init__(self, pipeline_id=None, parallel=None, rtu=None, resume_savepoint=None):
-        """StartPipelineJobRequest
+        r"""StartPipelineJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class StartPipelineJobRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this StartPipelineJobRequest.
+        r"""Gets the pipeline_id of this StartPipelineJobRequest.
 
         管道ID
 
@@ -74,7 +74,7 @@ class StartPipelineJobRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this StartPipelineJobRequest.
+        r"""Sets the pipeline_id of this StartPipelineJobRequest.
 
         管道ID
 
@@ -85,7 +85,7 @@ class StartPipelineJobRequest:
 
     @property
     def parallel(self):
-        """Gets the parallel of this StartPipelineJobRequest.
+        r"""Gets the parallel of this StartPipelineJobRequest.
 
         运行管道的并发度
 
@@ -96,7 +96,7 @@ class StartPipelineJobRequest:
 
     @parallel.setter
     def parallel(self, parallel):
-        """Sets the parallel of this StartPipelineJobRequest.
+        r"""Sets the parallel of this StartPipelineJobRequest.
 
         运行管道的并发度
 
@@ -107,7 +107,7 @@ class StartPipelineJobRequest:
 
     @property
     def rtu(self):
-        """Gets the rtu of this StartPipelineJobRequest.
+        r"""Gets the rtu of this StartPipelineJobRequest.
 
         运行管道的RTU个数
 
@@ -118,7 +118,7 @@ class StartPipelineJobRequest:
 
     @rtu.setter
     def rtu(self, rtu):
-        """Sets the rtu of this StartPipelineJobRequest.
+        r"""Sets the rtu of this StartPipelineJobRequest.
 
         运行管道的RTU个数
 
@@ -129,7 +129,7 @@ class StartPipelineJobRequest:
 
     @property
     def resume_savepoint(self):
-        """Gets the resume_savepoint of this StartPipelineJobRequest.
+        r"""Gets the resume_savepoint of this StartPipelineJobRequest.
 
         运行管道作业使用历史缓存数据
 
@@ -140,7 +140,7 @@ class StartPipelineJobRequest:
 
     @resume_savepoint.setter
     def resume_savepoint(self, resume_savepoint):
-        """Sets the resume_savepoint of this StartPipelineJobRequest.
+        r"""Sets the resume_savepoint of this StartPipelineJobRequest.
 
         运行管道作业使用历史缓存数据
 

@@ -29,7 +29,7 @@ class ListConsumeSubCustomersReq:
     }
 
     def __init__(self, bill_cycle=None, offset=None, limit=None):
-        """ListConsumeSubCustomersReq
+        r"""ListConsumeSubCustomersReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListConsumeSubCustomersReq:
 
     @property
     def bill_cycle(self):
-        """Gets the bill_cycle of this ListConsumeSubCustomersReq.
+        r"""Gets the bill_cycle of this ListConsumeSubCustomersReq.
 
         账期所在月份。 格式：YYYY-MM
 
@@ -67,7 +67,7 @@ class ListConsumeSubCustomersReq:
 
     @bill_cycle.setter
     def bill_cycle(self, bill_cycle):
-        """Sets the bill_cycle of this ListConsumeSubCustomersReq.
+        r"""Sets the bill_cycle of this ListConsumeSubCustomersReq.
 
         账期所在月份。 格式：YYYY-MM
 
@@ -78,7 +78,7 @@ class ListConsumeSubCustomersReq:
 
     @property
     def offset(self):
-        """Gets the offset of this ListConsumeSubCustomersReq.
+        r"""Gets the offset of this ListConsumeSubCustomersReq.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -89,7 +89,7 @@ class ListConsumeSubCustomersReq:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListConsumeSubCustomersReq.
+        r"""Sets the offset of this ListConsumeSubCustomersReq.
 
         偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -100,7 +100,7 @@ class ListConsumeSubCustomersReq:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConsumeSubCustomersReq.
+        r"""Gets the limit of this ListConsumeSubCustomersReq.
 
         一次查询的条数，默认值为10。
 
@@ -111,7 +111,7 @@ class ListConsumeSubCustomersReq:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConsumeSubCustomersReq.
+        r"""Sets the limit of this ListConsumeSubCustomersReq.
 
         一次查询的条数，默认值为10。
 

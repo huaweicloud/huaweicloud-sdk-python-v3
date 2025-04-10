@@ -28,7 +28,7 @@ class ListExecuteJobResponse(SdkResponse):
     }
 
     def __init__(self, total_record=None, job_executions=None):
-        """ListExecuteJobResponse
+        r"""ListExecuteJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListExecuteJobResponse(SdkResponse):
 
     @property
     def total_record(self):
-        """Gets the total_record of this ListExecuteJobResponse.
+        r"""Gets the total_record of this ListExecuteJobResponse.
 
         作业列表总数。
 
@@ -62,7 +62,7 @@ class ListExecuteJobResponse(SdkResponse):
 
     @total_record.setter
     def total_record(self, total_record):
-        """Sets the total_record of this ListExecuteJobResponse.
+        r"""Sets the total_record of this ListExecuteJobResponse.
 
         作业列表总数。
 
@@ -73,7 +73,7 @@ class ListExecuteJobResponse(SdkResponse):
 
     @property
     def job_executions(self):
-        """Gets the job_executions of this ListExecuteJobResponse.
+        r"""Gets the job_executions of this ListExecuteJobResponse.
 
         作业列表。
 
@@ -84,7 +84,7 @@ class ListExecuteJobResponse(SdkResponse):
 
     @job_executions.setter
     def job_executions(self, job_executions):
-        """Sets the job_executions of this ListExecuteJobResponse.
+        r"""Sets the job_executions of this ListExecuteJobResponse.
 
         作业列表。
 

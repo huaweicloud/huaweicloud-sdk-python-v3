@@ -29,7 +29,7 @@ class IdentityInput:
     }
 
     def __init__(self, user_names=None, groups=None, roles=None):
-        """IdentityInput
+        r"""IdentityInput
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IdentityInput:
 
     @property
     def user_names(self):
-        """Gets the user_names of this IdentityInput.
+        r"""Gets the user_names of this IdentityInput.
 
         IAM用户
 
@@ -68,7 +68,7 @@ class IdentityInput:
 
     @user_names.setter
     def user_names(self, user_names):
-        """Sets the user_names of this IdentityInput.
+        r"""Sets the user_names of this IdentityInput.
 
         IAM用户
 
@@ -79,7 +79,7 @@ class IdentityInput:
 
     @property
     def groups(self):
-        """Gets the groups of this IdentityInput.
+        r"""Gets the groups of this IdentityInput.
 
         用户组
 
@@ -90,7 +90,7 @@ class IdentityInput:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this IdentityInput.
+        r"""Sets the groups of this IdentityInput.
 
         用户组
 
@@ -101,7 +101,7 @@ class IdentityInput:
 
     @property
     def roles(self):
-        """Gets the roles of this IdentityInput.
+        r"""Gets the roles of this IdentityInput.
 
         角色
 
@@ -112,7 +112,7 @@ class IdentityInput:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this IdentityInput.
+        r"""Sets the roles of this IdentityInput.
 
         角色
 

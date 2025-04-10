@@ -27,7 +27,7 @@ class ListLtsErrorLogsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ListLtsErrorLogsRequest
+        r"""ListLtsErrorLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListLtsErrorLogsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListLtsErrorLogsRequest.
+        r"""Gets the instance_id of this ListLtsErrorLogsRequest.
 
         实例ID，可以调用“[查询实例列表和详情](x-wc://file=zh-cn_topic_0000001369935045.xml)”接口获取。如果未申请实例，可以调用“[创建实例](x-wc://file=zh-cn_topic_0000001369734929.xml)”接口创建。
 
@@ -60,7 +60,7 @@ class ListLtsErrorLogsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListLtsErrorLogsRequest.
+        r"""Sets the instance_id of this ListLtsErrorLogsRequest.
 
         实例ID，可以调用“[查询实例列表和详情](x-wc://file=zh-cn_topic_0000001369935045.xml)”接口获取。如果未申请实例，可以调用“[创建实例](x-wc://file=zh-cn_topic_0000001369734929.xml)”接口创建。
 
@@ -71,7 +71,7 @@ class ListLtsErrorLogsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListLtsErrorLogsRequest.
+        r"""Gets the body of this ListLtsErrorLogsRequest.
 
         :return: The body of this ListLtsErrorLogsRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.ListLtsErrorLogsRequestBody`
@@ -80,7 +80,7 @@ class ListLtsErrorLogsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListLtsErrorLogsRequest.
+        r"""Sets the body of this ListLtsErrorLogsRequest.
 
         :param body: The body of this ListLtsErrorLogsRequest.
         :type body: :class:`huaweicloudsdkdds.v3.ListLtsErrorLogsRequestBody`

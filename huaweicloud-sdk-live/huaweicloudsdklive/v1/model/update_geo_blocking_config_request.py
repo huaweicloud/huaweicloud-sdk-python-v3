@@ -27,7 +27,7 @@ class UpdateGeoBlockingConfigRequest:
     }
 
     def __init__(self, play_domain=None, body=None):
-        """UpdateGeoBlockingConfigRequest
+        r"""UpdateGeoBlockingConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateGeoBlockingConfigRequest:
 
     @property
     def play_domain(self):
-        """Gets the play_domain of this UpdateGeoBlockingConfigRequest.
+        r"""Gets the play_domain of this UpdateGeoBlockingConfigRequest.
 
         播放域名
 
@@ -60,7 +60,7 @@ class UpdateGeoBlockingConfigRequest:
 
     @play_domain.setter
     def play_domain(self, play_domain):
-        """Sets the play_domain of this UpdateGeoBlockingConfigRequest.
+        r"""Sets the play_domain of this UpdateGeoBlockingConfigRequest.
 
         播放域名
 
@@ -71,7 +71,7 @@ class UpdateGeoBlockingConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGeoBlockingConfigRequest.
+        r"""Gets the body of this UpdateGeoBlockingConfigRequest.
 
         :return: The body of this UpdateGeoBlockingConfigRequest.
         :rtype: :class:`huaweicloudsdklive.v1.GeoBlockingConfigInfo`
@@ -80,7 +80,7 @@ class UpdateGeoBlockingConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGeoBlockingConfigRequest.
+        r"""Sets the body of this UpdateGeoBlockingConfigRequest.
 
         :param body: The body of this UpdateGeoBlockingConfigRequest.
         :type body: :class:`huaweicloudsdklive.v1.GeoBlockingConfigInfo`

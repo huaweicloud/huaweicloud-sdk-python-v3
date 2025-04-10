@@ -30,7 +30,7 @@ class ListRecordSetsByZoneResponse(SdkResponse):
     }
 
     def __init__(self, links=None, recordsets=None, metadata=None):
-        """ListRecordSetsByZoneResponse
+        r"""ListRecordSetsByZoneResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRecordSetsByZoneResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ListRecordSetsByZoneResponse.
+        r"""Gets the links of this ListRecordSetsByZoneResponse.
 
         :return: The links of this ListRecordSetsByZoneResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -67,7 +67,7 @@ class ListRecordSetsByZoneResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListRecordSetsByZoneResponse.
+        r"""Sets the links of this ListRecordSetsByZoneResponse.
 
         :param links: The links of this ListRecordSetsByZoneResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -76,7 +76,7 @@ class ListRecordSetsByZoneResponse(SdkResponse):
 
     @property
     def recordsets(self):
-        """Gets the recordsets of this ListRecordSetsByZoneResponse.
+        r"""Gets the recordsets of this ListRecordSetsByZoneResponse.
 
         recordset列表对象。
 
@@ -87,7 +87,7 @@ class ListRecordSetsByZoneResponse(SdkResponse):
 
     @recordsets.setter
     def recordsets(self, recordsets):
-        """Sets the recordsets of this ListRecordSetsByZoneResponse.
+        r"""Sets the recordsets of this ListRecordSetsByZoneResponse.
 
         recordset列表对象。
 
@@ -98,7 +98,7 @@ class ListRecordSetsByZoneResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListRecordSetsByZoneResponse.
+        r"""Gets the metadata of this ListRecordSetsByZoneResponse.
 
         :return: The metadata of this ListRecordSetsByZoneResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -107,7 +107,7 @@ class ListRecordSetsByZoneResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListRecordSetsByZoneResponse.
+        r"""Sets the metadata of this ListRecordSetsByZoneResponse.
 
         :param metadata: The metadata of this ListRecordSetsByZoneResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`

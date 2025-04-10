@@ -26,7 +26,7 @@ class UpdatePeriodToOnDemandResponse(SdkResponse):
     }
 
     def __init__(self, error_details=None):
-        """UpdatePeriodToOnDemandResponse
+        r"""UpdatePeriodToOnDemandResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdatePeriodToOnDemandResponse(SdkResponse):
 
     @property
     def error_details(self):
-        """Gets the error_details of this UpdatePeriodToOnDemandResponse.
+        r"""Gets the error_details of this UpdatePeriodToOnDemandResponse.
 
         HTTP 200的时候返回该字段；部分失败时仅返回失败的记录；如果全部成功，则该记录为空，具体参见表1。
 
@@ -55,7 +55,7 @@ class UpdatePeriodToOnDemandResponse(SdkResponse):
 
     @error_details.setter
     def error_details(self, error_details):
-        """Sets the error_details of this UpdatePeriodToOnDemandResponse.
+        r"""Sets the error_details of this UpdatePeriodToOnDemandResponse.
 
         HTTP 200的时候返回该字段；部分失败时仅返回失败的记录；如果全部成功，则该记录为空，具体参见表1。
 

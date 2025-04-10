@@ -27,7 +27,7 @@ class DeleteServerMetadataRequest:
     }
 
     def __init__(self, key=None, server_id=None):
-        """DeleteServerMetadataRequest
+        r"""DeleteServerMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteServerMetadataRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteServerMetadataRequest.
+        r"""Gets the key of this DeleteServerMetadataRequest.
 
         待删除的云服务器metadata键值
 
@@ -59,7 +59,7 @@ class DeleteServerMetadataRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteServerMetadataRequest.
+        r"""Sets the key of this DeleteServerMetadataRequest.
 
         待删除的云服务器metadata键值
 
@@ -70,7 +70,7 @@ class DeleteServerMetadataRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this DeleteServerMetadataRequest.
+        r"""Gets the server_id of this DeleteServerMetadataRequest.
 
         云服务器ID。
 
@@ -81,7 +81,7 @@ class DeleteServerMetadataRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this DeleteServerMetadataRequest.
+        r"""Sets the server_id of this DeleteServerMetadataRequest.
 
         云服务器ID。
 

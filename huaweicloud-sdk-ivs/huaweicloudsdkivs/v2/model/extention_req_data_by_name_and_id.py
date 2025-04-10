@@ -27,7 +27,7 @@ class ExtentionReqDataByNameAndId:
     }
 
     def __init__(self, verification_name=None, verification_id=None):
-        """ExtentionReqDataByNameAndId
+        r"""ExtentionReqDataByNameAndId
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ExtentionReqDataByNameAndId:
 
     @property
     def verification_name(self):
-        """Gets the verification_name of this ExtentionReqDataByNameAndId.
+        r"""Gets the verification_name of this ExtentionReqDataByNameAndId.
 
         被验证人的姓名。
 
@@ -59,7 +59,7 @@ class ExtentionReqDataByNameAndId:
 
     @verification_name.setter
     def verification_name(self, verification_name):
-        """Sets the verification_name of this ExtentionReqDataByNameAndId.
+        r"""Sets the verification_name of this ExtentionReqDataByNameAndId.
 
         被验证人的姓名。
 
@@ -70,7 +70,7 @@ class ExtentionReqDataByNameAndId:
 
     @property
     def verification_id(self):
-        """Gets the verification_id of this ExtentionReqDataByNameAndId.
+        r"""Gets the verification_id of this ExtentionReqDataByNameAndId.
 
         被验证人的身份证号码。
 
@@ -81,7 +81,7 @@ class ExtentionReqDataByNameAndId:
 
     @verification_id.setter
     def verification_id(self, verification_id):
-        """Sets the verification_id of this ExtentionReqDataByNameAndId.
+        r"""Sets the verification_id of this ExtentionReqDataByNameAndId.
 
         被验证人的身份证号码。
 

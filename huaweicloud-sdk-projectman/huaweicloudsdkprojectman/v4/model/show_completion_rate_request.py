@@ -27,7 +27,7 @@ class ShowCompletionRateRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowCompletionRateRequest
+        r"""ShowCompletionRateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowCompletionRateRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowCompletionRateRequest.
+        r"""Gets the project_id of this ShowCompletionRateRequest.
 
         devcloud项目的32位id
 
@@ -60,7 +60,7 @@ class ShowCompletionRateRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowCompletionRateRequest.
+        r"""Sets the project_id of this ShowCompletionRateRequest.
 
         devcloud项目的32位id
 
@@ -71,7 +71,7 @@ class ShowCompletionRateRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowCompletionRateRequest.
+        r"""Gets the body of this ShowCompletionRateRequest.
 
         :return: The body of this ShowCompletionRateRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.MetricRequest3`
@@ -80,7 +80,7 @@ class ShowCompletionRateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowCompletionRateRequest.
+        r"""Sets the body of this ShowCompletionRateRequest.
 
         :param body: The body of this ShowCompletionRateRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.MetricRequest3`

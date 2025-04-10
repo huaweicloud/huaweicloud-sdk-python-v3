@@ -32,7 +32,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
     }
 
     def __init__(self, pool_desktops=None, total_count=None, on_demand_desktops_num=None, period_desktops_num=None):
-        """ListPoolDesktopsDetailResponse
+        r"""ListPoolDesktopsDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
 
     @property
     def pool_desktops(self):
-        """Gets the pool_desktops of this ListPoolDesktopsDetailResponse.
+        r"""Gets the pool_desktops of this ListPoolDesktopsDetailResponse.
 
         池桌面详情
 
@@ -76,7 +76,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
 
     @pool_desktops.setter
     def pool_desktops(self, pool_desktops):
-        """Sets the pool_desktops of this ListPoolDesktopsDetailResponse.
+        r"""Sets the pool_desktops of this ListPoolDesktopsDetailResponse.
 
         池桌面详情
 
@@ -87,7 +87,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListPoolDesktopsDetailResponse.
+        r"""Gets the total_count of this ListPoolDesktopsDetailResponse.
 
         桌面总数。
 
@@ -98,7 +98,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListPoolDesktopsDetailResponse.
+        r"""Sets the total_count of this ListPoolDesktopsDetailResponse.
 
         桌面总数。
 
@@ -109,7 +109,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
 
     @property
     def on_demand_desktops_num(self):
-        """Gets the on_demand_desktops_num of this ListPoolDesktopsDetailResponse.
+        r"""Gets the on_demand_desktops_num of this ListPoolDesktopsDetailResponse.
 
         按需桌面总数。
 
@@ -120,7 +120,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
 
     @on_demand_desktops_num.setter
     def on_demand_desktops_num(self, on_demand_desktops_num):
-        """Sets the on_demand_desktops_num of this ListPoolDesktopsDetailResponse.
+        r"""Sets the on_demand_desktops_num of this ListPoolDesktopsDetailResponse.
 
         按需桌面总数。
 
@@ -131,7 +131,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
 
     @property
     def period_desktops_num(self):
-        """Gets the period_desktops_num of this ListPoolDesktopsDetailResponse.
+        r"""Gets the period_desktops_num of this ListPoolDesktopsDetailResponse.
 
         包周期桌面总数。
 
@@ -142,7 +142,7 @@ class ListPoolDesktopsDetailResponse(SdkResponse):
 
     @period_desktops_num.setter
     def period_desktops_num(self, period_desktops_num):
-        """Sets the period_desktops_num of this ListPoolDesktopsDetailResponse.
+        r"""Sets the period_desktops_num of this ListPoolDesktopsDetailResponse.
 
         包周期桌面总数。
 

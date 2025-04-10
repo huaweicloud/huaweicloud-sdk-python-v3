@@ -40,7 +40,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
     }
 
     def __init__(self, name=None, commit_number=None, git_repo_cap=None, last_commit_time=None, code_lines=None, branch_number=None, detail_url=None, download_url=None):
-        """ShowRepositoryStatisticalDataV2Response
+        r"""ShowRepositoryStatisticalDataV2Response
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowRepositoryStatisticalDataV2Response.
+        r"""Gets the name of this ShowRepositoryStatisticalDataV2Response.
 
         代码仓的名称
 
@@ -104,7 +104,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowRepositoryStatisticalDataV2Response.
+        r"""Sets the name of this ShowRepositoryStatisticalDataV2Response.
 
         代码仓的名称
 
@@ -115,7 +115,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @property
     def commit_number(self):
-        """Gets the commit_number of this ShowRepositoryStatisticalDataV2Response.
+        r"""Gets the commit_number of this ShowRepositoryStatisticalDataV2Response.
 
         提交数量
 
@@ -126,7 +126,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @commit_number.setter
     def commit_number(self, commit_number):
-        """Sets the commit_number of this ShowRepositoryStatisticalDataV2Response.
+        r"""Sets the commit_number of this ShowRepositoryStatisticalDataV2Response.
 
         提交数量
 
@@ -137,7 +137,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @property
     def git_repo_cap(self):
-        """Gets the git_repo_cap of this ShowRepositoryStatisticalDataV2Response.
+        r"""Gets the git_repo_cap of this ShowRepositoryStatisticalDataV2Response.
 
         Git库容量
 
@@ -148,7 +148,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @git_repo_cap.setter
     def git_repo_cap(self, git_repo_cap):
-        """Sets the git_repo_cap of this ShowRepositoryStatisticalDataV2Response.
+        r"""Sets the git_repo_cap of this ShowRepositoryStatisticalDataV2Response.
 
         Git库容量
 
@@ -159,7 +159,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @property
     def last_commit_time(self):
-        """Gets the last_commit_time of this ShowRepositoryStatisticalDataV2Response.
+        r"""Gets the last_commit_time of this ShowRepositoryStatisticalDataV2Response.
 
         近一次提交时间
 
@@ -170,7 +170,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @last_commit_time.setter
     def last_commit_time(self, last_commit_time):
-        """Sets the last_commit_time of this ShowRepositoryStatisticalDataV2Response.
+        r"""Sets the last_commit_time of this ShowRepositoryStatisticalDataV2Response.
 
         近一次提交时间
 
@@ -181,7 +181,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @property
     def code_lines(self):
-        """Gets the code_lines of this ShowRepositoryStatisticalDataV2Response.
+        r"""Gets the code_lines of this ShowRepositoryStatisticalDataV2Response.
 
         代码行数
 
@@ -192,7 +192,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @code_lines.setter
     def code_lines(self, code_lines):
-        """Sets the code_lines of this ShowRepositoryStatisticalDataV2Response.
+        r"""Sets the code_lines of this ShowRepositoryStatisticalDataV2Response.
 
         代码行数
 
@@ -203,7 +203,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @property
     def branch_number(self):
-        """Gets the branch_number of this ShowRepositoryStatisticalDataV2Response.
+        r"""Gets the branch_number of this ShowRepositoryStatisticalDataV2Response.
 
         分支数量
 
@@ -214,7 +214,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @branch_number.setter
     def branch_number(self, branch_number):
-        """Sets the branch_number of this ShowRepositoryStatisticalDataV2Response.
+        r"""Sets the branch_number of this ShowRepositoryStatisticalDataV2Response.
 
         分支数量
 
@@ -225,7 +225,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @property
     def detail_url(self):
-        """Gets the detail_url of this ShowRepositoryStatisticalDataV2Response.
+        r"""Gets the detail_url of this ShowRepositoryStatisticalDataV2Response.
 
         代码仓路径url
 
@@ -236,7 +236,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @detail_url.setter
     def detail_url(self, detail_url):
-        """Sets the detail_url of this ShowRepositoryStatisticalDataV2Response.
+        r"""Sets the detail_url of this ShowRepositoryStatisticalDataV2Response.
 
         代码仓路径url
 
@@ -247,7 +247,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @property
     def download_url(self):
-        """Gets the download_url of this ShowRepositoryStatisticalDataV2Response.
+        r"""Gets the download_url of this ShowRepositoryStatisticalDataV2Response.
 
         代码仓下载url
 
@@ -258,7 +258,7 @@ class ShowRepositoryStatisticalDataV2Response(SdkResponse):
 
     @download_url.setter
     def download_url(self, download_url):
-        """Sets the download_url of this ShowRepositoryStatisticalDataV2Response.
+        r"""Sets the download_url of this ShowRepositoryStatisticalDataV2Response.
 
         代码仓下载url
 

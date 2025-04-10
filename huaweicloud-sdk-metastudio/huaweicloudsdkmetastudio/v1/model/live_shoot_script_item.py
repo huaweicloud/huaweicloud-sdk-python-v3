@@ -33,7 +33,7 @@ class LiveShootScriptItem:
     }
 
     def __init__(self, sequence_no=None, title=None, text_config=None, audio_config=None, relation_product=None):
-        """LiveShootScriptItem
+        r"""LiveShootScriptItem
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class LiveShootScriptItem:
 
     @property
     def sequence_no(self):
-        """Gets the sequence_no of this LiveShootScriptItem.
+        r"""Gets the sequence_no of this LiveShootScriptItem.
 
         **参数解释**： 剧本序号。 **约束限制**： 不涉及
 
@@ -82,7 +82,7 @@ class LiveShootScriptItem:
 
     @sequence_no.setter
     def sequence_no(self, sequence_no):
-        """Sets the sequence_no of this LiveShootScriptItem.
+        r"""Sets the sequence_no of this LiveShootScriptItem.
 
         **参数解释**： 剧本序号。 **约束限制**： 不涉及
 
@@ -93,7 +93,7 @@ class LiveShootScriptItem:
 
     @property
     def title(self):
-        """Gets the title of this LiveShootScriptItem.
+        r"""Gets the title of this LiveShootScriptItem.
 
         **参数解释**： 段落标题。 **约束限制**： 不涉及 **取值范围**： 字符长度0-256位。 **默认取值**： 不涉及。
 
@@ -104,7 +104,7 @@ class LiveShootScriptItem:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this LiveShootScriptItem.
+        r"""Sets the title of this LiveShootScriptItem.
 
         **参数解释**： 段落标题。 **约束限制**： 不涉及 **取值范围**： 字符长度0-256位。 **默认取值**： 不涉及。
 
@@ -115,7 +115,7 @@ class LiveShootScriptItem:
 
     @property
     def text_config(self):
-        """Gets the text_config of this LiveShootScriptItem.
+        r"""Gets the text_config of this LiveShootScriptItem.
 
         :return: The text_config of this LiveShootScriptItem.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.TextConfig`
@@ -124,7 +124,7 @@ class LiveShootScriptItem:
 
     @text_config.setter
     def text_config(self, text_config):
-        """Sets the text_config of this LiveShootScriptItem.
+        r"""Sets the text_config of this LiveShootScriptItem.
 
         :param text_config: The text_config of this LiveShootScriptItem.
         :type text_config: :class:`huaweicloudsdkmetastudio.v1.TextConfig`
@@ -133,7 +133,7 @@ class LiveShootScriptItem:
 
     @property
     def audio_config(self):
-        """Gets the audio_config of this LiveShootScriptItem.
+        r"""Gets the audio_config of this LiveShootScriptItem.
 
         :return: The audio_config of this LiveShootScriptItem.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveAudioConfig`
@@ -142,7 +142,7 @@ class LiveShootScriptItem:
 
     @audio_config.setter
     def audio_config(self, audio_config):
-        """Sets the audio_config of this LiveShootScriptItem.
+        r"""Sets the audio_config of this LiveShootScriptItem.
 
         :param audio_config: The audio_config of this LiveShootScriptItem.
         :type audio_config: :class:`huaweicloudsdkmetastudio.v1.LiveAudioConfig`
@@ -151,7 +151,7 @@ class LiveShootScriptItem:
 
     @property
     def relation_product(self):
-        """Gets the relation_product of this LiveShootScriptItem.
+        r"""Gets the relation_product of this LiveShootScriptItem.
 
         :return: The relation_product of this LiveShootScriptItem.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RelationProductInfo`
@@ -160,7 +160,7 @@ class LiveShootScriptItem:
 
     @relation_product.setter
     def relation_product(self, relation_product):
-        """Sets the relation_product of this LiveShootScriptItem.
+        r"""Sets the relation_product of this LiveShootScriptItem.
 
         :param relation_product: The relation_product of this LiveShootScriptItem.
         :type relation_product: :class:`huaweicloudsdkmetastudio.v1.RelationProductInfo`

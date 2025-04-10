@@ -51,7 +51,7 @@ class ShowProtectedInstanceParams:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, source_server=None, target_server=None, server_group_id=None, created_at=None, updated_at=None, metadata=None, attachment=None, tags=None, progress=None, priority_station=None):
-        """ShowProtectedInstanceParams
+        r"""ShowProtectedInstanceParams
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowProtectedInstanceParams:
 
     @property
     def id(self):
-        """Gets the id of this ShowProtectedInstanceParams.
+        r"""Gets the id of this ShowProtectedInstanceParams.
 
         保护实例的ID。
 
@@ -132,7 +132,7 @@ class ShowProtectedInstanceParams:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowProtectedInstanceParams.
+        r"""Sets the id of this ShowProtectedInstanceParams.
 
         保护实例的ID。
 
@@ -143,7 +143,7 @@ class ShowProtectedInstanceParams:
 
     @property
     def name(self):
-        """Gets the name of this ShowProtectedInstanceParams.
+        r"""Gets the name of this ShowProtectedInstanceParams.
 
         保护实例的名称。
 
@@ -154,7 +154,7 @@ class ShowProtectedInstanceParams:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowProtectedInstanceParams.
+        r"""Sets the name of this ShowProtectedInstanceParams.
 
         保护实例的名称。
 
@@ -165,7 +165,7 @@ class ShowProtectedInstanceParams:
 
     @property
     def description(self):
-        """Gets the description of this ShowProtectedInstanceParams.
+        r"""Gets the description of this ShowProtectedInstanceParams.
 
         保护实例的描述。
 
@@ -176,7 +176,7 @@ class ShowProtectedInstanceParams:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowProtectedInstanceParams.
+        r"""Sets the description of this ShowProtectedInstanceParams.
 
         保护实例的描述。
 
@@ -187,7 +187,7 @@ class ShowProtectedInstanceParams:
 
     @property
     def status(self):
-        """Gets the status of this ShowProtectedInstanceParams.
+        r"""Gets the status of this ShowProtectedInstanceParams.
 
         保护实例的状态。
 
@@ -198,7 +198,7 @@ class ShowProtectedInstanceParams:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowProtectedInstanceParams.
+        r"""Sets the status of this ShowProtectedInstanceParams.
 
         保护实例的状态。
 
@@ -209,7 +209,7 @@ class ShowProtectedInstanceParams:
 
     @property
     def source_server(self):
-        """Gets the source_server of this ShowProtectedInstanceParams.
+        r"""Gets the source_server of this ShowProtectedInstanceParams.
 
         生产站点云服务器ID。
 
@@ -220,7 +220,7 @@ class ShowProtectedInstanceParams:
 
     @source_server.setter
     def source_server(self, source_server):
-        """Sets the source_server of this ShowProtectedInstanceParams.
+        r"""Sets the source_server of this ShowProtectedInstanceParams.
 
         生产站点云服务器ID。
 
@@ -231,7 +231,7 @@ class ShowProtectedInstanceParams:
 
     @property
     def target_server(self):
-        """Gets the target_server of this ShowProtectedInstanceParams.
+        r"""Gets the target_server of this ShowProtectedInstanceParams.
 
         容灾站点云服务器ID。
 
@@ -242,7 +242,7 @@ class ShowProtectedInstanceParams:
 
     @target_server.setter
     def target_server(self, target_server):
-        """Sets the target_server of this ShowProtectedInstanceParams.
+        r"""Sets the target_server of this ShowProtectedInstanceParams.
 
         容灾站点云服务器ID。
 
@@ -253,7 +253,7 @@ class ShowProtectedInstanceParams:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ShowProtectedInstanceParams.
+        r"""Gets the server_group_id of this ShowProtectedInstanceParams.
 
         保护组的ID。
 
@@ -264,7 +264,7 @@ class ShowProtectedInstanceParams:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ShowProtectedInstanceParams.
+        r"""Sets the server_group_id of this ShowProtectedInstanceParams.
 
         保护组的ID。
 
@@ -275,7 +275,7 @@ class ShowProtectedInstanceParams:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowProtectedInstanceParams.
+        r"""Gets the created_at of this ShowProtectedInstanceParams.
 
         创建时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
@@ -286,7 +286,7 @@ class ShowProtectedInstanceParams:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowProtectedInstanceParams.
+        r"""Sets the created_at of this ShowProtectedInstanceParams.
 
         创建时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
@@ -297,7 +297,7 @@ class ShowProtectedInstanceParams:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowProtectedInstanceParams.
+        r"""Gets the updated_at of this ShowProtectedInstanceParams.
 
         更新时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
@@ -308,7 +308,7 @@ class ShowProtectedInstanceParams:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowProtectedInstanceParams.
+        r"""Sets the updated_at of this ShowProtectedInstanceParams.
 
         更新时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
@@ -319,7 +319,7 @@ class ShowProtectedInstanceParams:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowProtectedInstanceParams.
+        r"""Gets the metadata of this ShowProtectedInstanceParams.
 
         :return: The metadata of this ShowProtectedInstanceParams.
         :rtype: :class:`huaweicloudsdksdrs.v1.MetadataParams`
@@ -328,7 +328,7 @@ class ShowProtectedInstanceParams:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowProtectedInstanceParams.
+        r"""Sets the metadata of this ShowProtectedInstanceParams.
 
         :param metadata: The metadata of this ShowProtectedInstanceParams.
         :type metadata: :class:`huaweicloudsdksdrs.v1.MetadataParams`
@@ -337,7 +337,7 @@ class ShowProtectedInstanceParams:
 
     @property
     def attachment(self):
-        """Gets the attachment of this ShowProtectedInstanceParams.
+        r"""Gets the attachment of this ShowProtectedInstanceParams.
 
         挂载的复制对列表。
 
@@ -348,7 +348,7 @@ class ShowProtectedInstanceParams:
 
     @attachment.setter
     def attachment(self, attachment):
-        """Sets the attachment of this ShowProtectedInstanceParams.
+        r"""Sets the attachment of this ShowProtectedInstanceParams.
 
         挂载的复制对列表。
 
@@ -359,7 +359,7 @@ class ShowProtectedInstanceParams:
 
     @property
     def tags(self):
-        """Gets the tags of this ShowProtectedInstanceParams.
+        r"""Gets the tags of this ShowProtectedInstanceParams.
 
         标签列表。
 
@@ -370,7 +370,7 @@ class ShowProtectedInstanceParams:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowProtectedInstanceParams.
+        r"""Sets the tags of this ShowProtectedInstanceParams.
 
         标签列表。
 
@@ -381,7 +381,7 @@ class ShowProtectedInstanceParams:
 
     @property
     def progress(self):
-        """Gets the progress of this ShowProtectedInstanceParams.
+        r"""Gets the progress of this ShowProtectedInstanceParams.
 
         保护实例的同步进度。单位：百分比（%）。
 
@@ -392,7 +392,7 @@ class ShowProtectedInstanceParams:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ShowProtectedInstanceParams.
+        r"""Sets the progress of this ShowProtectedInstanceParams.
 
         保护实例的同步进度。单位：百分比（%）。
 
@@ -403,7 +403,7 @@ class ShowProtectedInstanceParams:
 
     @property
     def priority_station(self):
-        """Gets the priority_station of this ShowProtectedInstanceParams.
+        r"""Gets the priority_station of this ShowProtectedInstanceParams.
 
         标识保护实例所在保护组的当前生产站点可用区。source：表示当前生产站点可用区为保护组source_availability_zone的值。target：表示当前生产站点可用区为保护组的target_availability_zone的值。
 
@@ -414,7 +414,7 @@ class ShowProtectedInstanceParams:
 
     @priority_station.setter
     def priority_station(self, priority_station):
-        """Sets the priority_station of this ShowProtectedInstanceParams.
+        r"""Sets the priority_station of this ShowProtectedInstanceParams.
 
         标识保护实例所在保护组的当前生产站点可用区。source：表示当前生产站点可用区为保护组source_availability_zone的值。target：表示当前生产站点可用区为保护组的target_availability_zone的值。
 

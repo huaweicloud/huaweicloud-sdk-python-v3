@@ -26,7 +26,7 @@ class DeleteLogGroupResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteLogGroupResponse
+        r"""DeleteLogGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteLogGroupResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteLogGroupResponse.
+        r"""Gets the body of this DeleteLogGroupResponse.
 
         :return: The body of this DeleteLogGroupResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteLogGroupResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteLogGroupResponse.
+        r"""Sets the body of this DeleteLogGroupResponse.
 
         :param body: The body of this DeleteLogGroupResponse.
         :type body: str

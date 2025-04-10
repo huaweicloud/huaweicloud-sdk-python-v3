@@ -24,7 +24,7 @@ class ExportMqsInstanceTopicResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """ExportMqsInstanceTopicResponse
+        r"""ExportMqsInstanceTopicResponse
 
         The model defined in huaweicloud sdk
 

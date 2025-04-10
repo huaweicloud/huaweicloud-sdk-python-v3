@@ -27,7 +27,7 @@ class UpdateInstanceAutoCreateTopicRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateInstanceAutoCreateTopicRequest
+        r"""UpdateInstanceAutoCreateTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateInstanceAutoCreateTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceAutoCreateTopicRequest.
+        r"""Gets the instance_id of this UpdateInstanceAutoCreateTopicRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateInstanceAutoCreateTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceAutoCreateTopicRequest.
+        r"""Sets the instance_id of this UpdateInstanceAutoCreateTopicRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateInstanceAutoCreateTopicRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceAutoCreateTopicRequest.
+        r"""Gets the body of this UpdateInstanceAutoCreateTopicRequest.
 
         :return: The body of this UpdateInstanceAutoCreateTopicRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceAutoCreateTopicReq`
@@ -80,7 +80,7 @@ class UpdateInstanceAutoCreateTopicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceAutoCreateTopicRequest.
+        r"""Sets the body of this UpdateInstanceAutoCreateTopicRequest.
 
         :param body: The body of this UpdateInstanceAutoCreateTopicRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.UpdateInstanceAutoCreateTopicReq`

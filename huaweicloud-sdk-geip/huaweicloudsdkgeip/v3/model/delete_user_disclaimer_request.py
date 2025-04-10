@@ -23,7 +23,7 @@ class DeleteUserDisclaimerRequest:
     }
 
     def __init__(self):
-        """DeleteUserDisclaimerRequest
+        r"""DeleteUserDisclaimerRequest
 
         The model defined in huaweicloud sdk
 

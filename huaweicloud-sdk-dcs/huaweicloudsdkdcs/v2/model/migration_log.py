@@ -33,7 +33,7 @@ class MigrationLog:
     }
 
     def __init__(self, created_at=None, log_level=None, message=None, log_code=None, keyword=None):
-        """MigrationLog
+        r"""MigrationLog
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MigrationLog:
 
     @property
     def created_at(self):
-        """Gets the created_at of this MigrationLog.
+        r"""Gets the created_at of this MigrationLog.
 
         迁移日志生成时间，形如：2023-05-15T09:11:25.449Z
 
@@ -82,7 +82,7 @@ class MigrationLog:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this MigrationLog.
+        r"""Sets the created_at of this MigrationLog.
 
         迁移日志生成时间，形如：2023-05-15T09:11:25.449Z
 
@@ -93,7 +93,7 @@ class MigrationLog:
 
     @property
     def log_level(self):
-        """Gets the log_level of this MigrationLog.
+        r"""Gets the log_level of this MigrationLog.
 
         日志级别
 
@@ -104,7 +104,7 @@ class MigrationLog:
 
     @log_level.setter
     def log_level(self, log_level):
-        """Sets the log_level of this MigrationLog.
+        r"""Sets the log_level of this MigrationLog.
 
         日志级别
 
@@ -115,7 +115,7 @@ class MigrationLog:
 
     @property
     def message(self):
-        """Gets the message of this MigrationLog.
+        r"""Gets the message of this MigrationLog.
 
         日志信息
 
@@ -126,7 +126,7 @@ class MigrationLog:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this MigrationLog.
+        r"""Sets the message of this MigrationLog.
 
         日志信息
 
@@ -137,7 +137,7 @@ class MigrationLog:
 
     @property
     def log_code(self):
-        """Gets the log_code of this MigrationLog.
+        r"""Gets the log_code of this MigrationLog.
 
         日志的编码
 
@@ -148,7 +148,7 @@ class MigrationLog:
 
     @log_code.setter
     def log_code(self, log_code):
-        """Sets the log_code of this MigrationLog.
+        r"""Sets the log_code of this MigrationLog.
 
         日志的编码
 
@@ -159,7 +159,7 @@ class MigrationLog:
 
     @property
     def keyword(self):
-        """Gets the keyword of this MigrationLog.
+        r"""Gets the keyword of this MigrationLog.
 
         日志中的关键字
 
@@ -170,7 +170,7 @@ class MigrationLog:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this MigrationLog.
+        r"""Sets the keyword of this MigrationLog.
 
         日志中的关键字
 

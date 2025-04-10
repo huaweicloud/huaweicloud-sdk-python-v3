@@ -23,7 +23,7 @@ class JsonNode:
     }
 
     def __init__(self):
-        """JsonNode
+        r"""JsonNode
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class UpdateSqlAlarmRuleRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateSqlAlarmRuleRequest
+        r"""UpdateSqlAlarmRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateSqlAlarmRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSqlAlarmRuleRequest.
+        r"""Gets the body of this UpdateSqlAlarmRuleRequest.
 
         :return: The body of this UpdateSqlAlarmRuleRequest.
         :rtype: :class:`huaweicloudsdklts.v2.UpdateSqlAlarmRuleRequestBody`
@@ -52,7 +52,7 @@ class UpdateSqlAlarmRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSqlAlarmRuleRequest.
+        r"""Sets the body of this UpdateSqlAlarmRuleRequest.
 
         :param body: The body of this UpdateSqlAlarmRuleRequest.
         :type body: :class:`huaweicloudsdklts.v2.UpdateSqlAlarmRuleRequestBody`

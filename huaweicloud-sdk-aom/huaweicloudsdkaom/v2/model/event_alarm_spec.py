@@ -35,7 +35,7 @@ class EventAlarmSpec:
     }
 
     def __init__(self, alarm_source=None, event_source=None, monitor_objects=None, trigger_conditions=None, alarm_rule_template_bind_enable=None, alarm_rule_template_id=None):
-        """EventAlarmSpec
+        r"""EventAlarmSpec
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class EventAlarmSpec:
 
     @property
     def alarm_source(self):
-        """Gets the alarm_source of this EventAlarmSpec.
+        r"""Gets the alarm_source of this EventAlarmSpec.
 
         告警规则来源。 - “systemEvent”：系统事件 - “customEvent”：自定义事件
 
@@ -89,7 +89,7 @@ class EventAlarmSpec:
 
     @alarm_source.setter
     def alarm_source(self, alarm_source):
-        """Sets the alarm_source of this EventAlarmSpec.
+        r"""Sets the alarm_source of this EventAlarmSpec.
 
         告警规则来源。 - “systemEvent”：系统事件 - “customEvent”：自定义事件
 
@@ -100,7 +100,7 @@ class EventAlarmSpec:
 
     @property
     def event_source(self):
-        """Gets the event_source of this EventAlarmSpec.
+        r"""Gets the event_source of this EventAlarmSpec.
 
         告警来源。 - “RDS” - “EVS” - “CCE” - “LTS” - “AOM”
 
@@ -111,7 +111,7 @@ class EventAlarmSpec:
 
     @event_source.setter
     def event_source(self, event_source):
-        """Sets the event_source of this EventAlarmSpec.
+        r"""Sets the event_source of this EventAlarmSpec.
 
         告警来源。 - “RDS” - “EVS” - “CCE” - “LTS” - “AOM”
 
@@ -122,7 +122,7 @@ class EventAlarmSpec:
 
     @property
     def monitor_objects(self):
-        """Gets the monitor_objects of this EventAlarmSpec.
+        r"""Gets the monitor_objects of this EventAlarmSpec.
 
         监控对象列表。键值对形式，键值为： - “event_type”：通知类型 - “event_severity”：告警级别 - “event_name”：事件名称 - “namespace”：命名空间 - “clusterId”：集群id - “customField”：用户自定义字段
 
@@ -133,7 +133,7 @@ class EventAlarmSpec:
 
     @monitor_objects.setter
     def monitor_objects(self, monitor_objects):
-        """Sets the monitor_objects of this EventAlarmSpec.
+        r"""Sets the monitor_objects of this EventAlarmSpec.
 
         监控对象列表。键值对形式，键值为： - “event_type”：通知类型 - “event_severity”：告警级别 - “event_name”：事件名称 - “namespace”：命名空间 - “clusterId”：集群id - “customField”：用户自定义字段
 
@@ -144,7 +144,7 @@ class EventAlarmSpec:
 
     @property
     def trigger_conditions(self):
-        """Gets the trigger_conditions of this EventAlarmSpec.
+        r"""Gets the trigger_conditions of this EventAlarmSpec.
 
         触发条件。
 
@@ -155,7 +155,7 @@ class EventAlarmSpec:
 
     @trigger_conditions.setter
     def trigger_conditions(self, trigger_conditions):
-        """Sets the trigger_conditions of this EventAlarmSpec.
+        r"""Sets the trigger_conditions of this EventAlarmSpec.
 
         触发条件。
 
@@ -166,7 +166,7 @@ class EventAlarmSpec:
 
     @property
     def alarm_rule_template_bind_enable(self):
-        """Gets the alarm_rule_template_bind_enable of this EventAlarmSpec.
+        r"""Gets the alarm_rule_template_bind_enable of this EventAlarmSpec.
 
         是否绑定告警规则模版（废弃）。
 
@@ -177,7 +177,7 @@ class EventAlarmSpec:
 
     @alarm_rule_template_bind_enable.setter
     def alarm_rule_template_bind_enable(self, alarm_rule_template_bind_enable):
-        """Sets the alarm_rule_template_bind_enable of this EventAlarmSpec.
+        r"""Sets the alarm_rule_template_bind_enable of this EventAlarmSpec.
 
         是否绑定告警规则模版（废弃）。
 
@@ -188,7 +188,7 @@ class EventAlarmSpec:
 
     @property
     def alarm_rule_template_id(self):
-        """Gets the alarm_rule_template_id of this EventAlarmSpec.
+        r"""Gets the alarm_rule_template_id of this EventAlarmSpec.
 
         告警规则模版id（废弃）。
 
@@ -199,7 +199,7 @@ class EventAlarmSpec:
 
     @alarm_rule_template_id.setter
     def alarm_rule_template_id(self, alarm_rule_template_id):
-        """Sets the alarm_rule_template_id of this EventAlarmSpec.
+        r"""Sets the alarm_rule_template_id of this EventAlarmSpec.
 
         告警规则模版id（废弃）。
 

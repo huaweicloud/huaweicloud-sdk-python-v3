@@ -32,7 +32,7 @@ class ShowLtsLogDetailsResponse(SdkResponse):
     }
 
     def __init__(self, group_name=None, group_id=None, stream_id=None, stream_name=None):
-        """ShowLtsLogDetailsResponse
+        r"""ShowLtsLogDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowLtsLogDetailsResponse(SdkResponse):
 
     @property
     def group_name(self):
-        """Gets the group_name of this ShowLtsLogDetailsResponse.
+        r"""Gets the group_name of this ShowLtsLogDetailsResponse.
 
         日志组名称
 
@@ -76,7 +76,7 @@ class ShowLtsLogDetailsResponse(SdkResponse):
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ShowLtsLogDetailsResponse.
+        r"""Sets the group_name of this ShowLtsLogDetailsResponse.
 
         日志组名称
 
@@ -87,7 +87,7 @@ class ShowLtsLogDetailsResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowLtsLogDetailsResponse.
+        r"""Gets the group_id of this ShowLtsLogDetailsResponse.
 
         日志组id
 
@@ -98,7 +98,7 @@ class ShowLtsLogDetailsResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowLtsLogDetailsResponse.
+        r"""Sets the group_id of this ShowLtsLogDetailsResponse.
 
         日志组id
 
@@ -109,7 +109,7 @@ class ShowLtsLogDetailsResponse(SdkResponse):
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this ShowLtsLogDetailsResponse.
+        r"""Gets the stream_id of this ShowLtsLogDetailsResponse.
 
         日志流id
 
@@ -120,7 +120,7 @@ class ShowLtsLogDetailsResponse(SdkResponse):
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this ShowLtsLogDetailsResponse.
+        r"""Sets the stream_id of this ShowLtsLogDetailsResponse.
 
         日志流id
 
@@ -131,7 +131,7 @@ class ShowLtsLogDetailsResponse(SdkResponse):
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this ShowLtsLogDetailsResponse.
+        r"""Gets the stream_name of this ShowLtsLogDetailsResponse.
 
         日志流名称
 
@@ -142,7 +142,7 @@ class ShowLtsLogDetailsResponse(SdkResponse):
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this ShowLtsLogDetailsResponse.
+        r"""Sets the stream_name of this ShowLtsLogDetailsResponse.
 
         日志流名称
 

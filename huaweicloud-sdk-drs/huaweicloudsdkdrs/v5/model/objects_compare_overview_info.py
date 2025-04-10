@@ -31,7 +31,7 @@ class ObjectsCompareOverviewInfo:
     }
 
     def __init__(self, type=None, source_count=None, target_count=None, status=None):
-        """ObjectsCompareOverviewInfo
+        r"""ObjectsCompareOverviewInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ObjectsCompareOverviewInfo:
 
     @property
     def type(self):
-        """Gets the type of this ObjectsCompareOverviewInfo.
+        r"""Gets the type of this ObjectsCompareOverviewInfo.
 
         对象类型。取值： - DB：数据库。 - TABLE：表。 - VIEW：视图。 - EVENT：事件。 - ROUTINE：存储过程和函数。 - INDEX：索引。 - TRIGGER：触发器。 - SYNONYM：同义词。 - FUNCTION：函数。 - PROCEDURE：存储过程。 - TYPE：自定义类型。 - RULE：规则。 - DEFAULT_TYPE：缺省值。 - PLAN_GUIDE：执行计划。 - CONSTRAINT：约束。 - FILE_GROUP：文件组。 - PARTITION_FUNCTION：分区函数。 - PARTITION_SCHEME：分区方案。 - TABLE_COLLATION：表的排序规则。 - EXTENSIONS：插件。
 
@@ -75,7 +75,7 @@ class ObjectsCompareOverviewInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ObjectsCompareOverviewInfo.
+        r"""Sets the type of this ObjectsCompareOverviewInfo.
 
         对象类型。取值： - DB：数据库。 - TABLE：表。 - VIEW：视图。 - EVENT：事件。 - ROUTINE：存储过程和函数。 - INDEX：索引。 - TRIGGER：触发器。 - SYNONYM：同义词。 - FUNCTION：函数。 - PROCEDURE：存储过程。 - TYPE：自定义类型。 - RULE：规则。 - DEFAULT_TYPE：缺省值。 - PLAN_GUIDE：执行计划。 - CONSTRAINT：约束。 - FILE_GROUP：文件组。 - PARTITION_FUNCTION：分区函数。 - PARTITION_SCHEME：分区方案。 - TABLE_COLLATION：表的排序规则。 - EXTENSIONS：插件。
 
@@ -86,7 +86,7 @@ class ObjectsCompareOverviewInfo:
 
     @property
     def source_count(self):
-        """Gets the source_count of this ObjectsCompareOverviewInfo.
+        r"""Gets the source_count of this ObjectsCompareOverviewInfo.
 
         源数量。
 
@@ -97,7 +97,7 @@ class ObjectsCompareOverviewInfo:
 
     @source_count.setter
     def source_count(self, source_count):
-        """Sets the source_count of this ObjectsCompareOverviewInfo.
+        r"""Sets the source_count of this ObjectsCompareOverviewInfo.
 
         源数量。
 
@@ -108,7 +108,7 @@ class ObjectsCompareOverviewInfo:
 
     @property
     def target_count(self):
-        """Gets the target_count of this ObjectsCompareOverviewInfo.
+        r"""Gets the target_count of this ObjectsCompareOverviewInfo.
 
         目标数量。
 
@@ -119,7 +119,7 @@ class ObjectsCompareOverviewInfo:
 
     @target_count.setter
     def target_count(self, target_count):
-        """Sets the target_count of this ObjectsCompareOverviewInfo.
+        r"""Sets the target_count of this ObjectsCompareOverviewInfo.
 
         目标数量。
 
@@ -130,7 +130,7 @@ class ObjectsCompareOverviewInfo:
 
     @property
     def status(self):
-        """Gets the status of this ObjectsCompareOverviewInfo.
+        r"""Gets the status of this ObjectsCompareOverviewInfo.
 
         对比结果。取值： CONSISTENT：一致。 INCONSISTENT：不一致。 COMPARING：正在对比。 WAITING_FOR_COMPARISON：等待对比。 FAILED_TO_COMPARE：对比失败。 TARGET_DB_NOT_EXIST：目标库不存在。 CAN_NOT_COMPARE：无法对比。
 
@@ -141,7 +141,7 @@ class ObjectsCompareOverviewInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ObjectsCompareOverviewInfo.
+        r"""Sets the status of this ObjectsCompareOverviewInfo.
 
         对比结果。取值： CONSISTENT：一致。 INCONSISTENT：不一致。 COMPARING：正在对比。 WAITING_FOR_COMPARISON：等待对比。 FAILED_TO_COMPARE：对比失败。 TARGET_DB_NOT_EXIST：目标库不存在。 CAN_NOT_COMPARE：无法对比。
 

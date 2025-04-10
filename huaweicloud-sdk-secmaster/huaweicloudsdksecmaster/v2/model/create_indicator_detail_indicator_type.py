@@ -27,7 +27,7 @@ class CreateIndicatorDetailIndicatorType:
     }
 
     def __init__(self, indicator_type=None, id=None):
-        """CreateIndicatorDetailIndicatorType
+        r"""CreateIndicatorDetailIndicatorType
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateIndicatorDetailIndicatorType:
 
     @property
     def indicator_type(self):
-        """Gets the indicator_type of this CreateIndicatorDetailIndicatorType.
+        r"""Gets the indicator_type of this CreateIndicatorDetailIndicatorType.
 
         威胁情报类型
 
@@ -59,7 +59,7 @@ class CreateIndicatorDetailIndicatorType:
 
     @indicator_type.setter
     def indicator_type(self, indicator_type):
-        """Sets the indicator_type of this CreateIndicatorDetailIndicatorType.
+        r"""Sets the indicator_type of this CreateIndicatorDetailIndicatorType.
 
         威胁情报类型
 
@@ -70,7 +70,7 @@ class CreateIndicatorDetailIndicatorType:
 
     @property
     def id(self):
-        """Gets the id of this CreateIndicatorDetailIndicatorType.
+        r"""Gets the id of this CreateIndicatorDetailIndicatorType.
 
         情报类型ID
 
@@ -81,7 +81,7 @@ class CreateIndicatorDetailIndicatorType:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateIndicatorDetailIndicatorType.
+        r"""Sets the id of this CreateIndicatorDetailIndicatorType.
 
         情报类型ID
 

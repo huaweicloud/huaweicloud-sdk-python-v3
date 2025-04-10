@@ -26,7 +26,7 @@ class ListClickHouseDataBaseParameterResponse(SdkResponse):
     }
 
     def __init__(self, db_parameters=None):
-        """ListClickHouseDataBaseParameterResponse
+        r"""ListClickHouseDataBaseParameterResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListClickHouseDataBaseParameterResponse(SdkResponse):
 
     @property
     def db_parameters(self):
-        """Gets the db_parameters of this ListClickHouseDataBaseParameterResponse.
+        r"""Gets the db_parameters of this ListClickHouseDataBaseParameterResponse.
 
         库参数信息。
 
@@ -55,7 +55,7 @@ class ListClickHouseDataBaseParameterResponse(SdkResponse):
 
     @db_parameters.setter
     def db_parameters(self, db_parameters):
-        """Sets the db_parameters of this ListClickHouseDataBaseParameterResponse.
+        r"""Sets the db_parameters of this ListClickHouseDataBaseParameterResponse.
 
         库参数信息。
 

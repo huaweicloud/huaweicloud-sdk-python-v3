@@ -29,7 +29,7 @@ class CouponMaxUseQuantity:
     }
 
     def __init__(self, coupon_type=None, coupon_group=None, use_quantity_value=None):
-        """CouponMaxUseQuantity
+        r"""CouponMaxUseQuantity
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CouponMaxUseQuantity:
 
     @property
     def coupon_type(self):
-        """Gets the coupon_type of this CouponMaxUseQuantity.
+        r"""Gets the coupon_type of this CouponMaxUseQuantity.
 
         优惠券类型。 1：代金券2：折扣券3：产品券4：现金券
 
@@ -68,7 +68,7 @@ class CouponMaxUseQuantity:
 
     @coupon_type.setter
     def coupon_type(self, coupon_type):
-        """Sets the coupon_type of this CouponMaxUseQuantity.
+        r"""Sets the coupon_type of this CouponMaxUseQuantity.
 
         优惠券类型。 1：代金券2：折扣券3：产品券4：现金券
 
@@ -79,7 +79,7 @@ class CouponMaxUseQuantity:
 
     @property
     def coupon_group(self):
-        """Gets the coupon_group of this CouponMaxUseQuantity.
+        r"""Gets the coupon_group of this CouponMaxUseQuantity.
 
         优惠券分组。 1：云商店发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
 
@@ -90,7 +90,7 @@ class CouponMaxUseQuantity:
 
     @coupon_group.setter
     def coupon_group(self, coupon_group):
-        """Sets the coupon_group of this CouponMaxUseQuantity.
+        r"""Sets the coupon_group of this CouponMaxUseQuantity.
 
         优惠券分组。 1：云商店发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
 
@@ -101,7 +101,7 @@ class CouponMaxUseQuantity:
 
     @property
     def use_quantity_value(self):
-        """Gets the use_quantity_value of this CouponMaxUseQuantity.
+        r"""Gets the use_quantity_value of this CouponMaxUseQuantity.
 
         优惠券使用数量。
 
@@ -112,7 +112,7 @@ class CouponMaxUseQuantity:
 
     @use_quantity_value.setter
     def use_quantity_value(self, use_quantity_value):
-        """Sets the use_quantity_value of this CouponMaxUseQuantity.
+        r"""Sets the use_quantity_value of this CouponMaxUseQuantity.
 
         优惠券使用数量。
 

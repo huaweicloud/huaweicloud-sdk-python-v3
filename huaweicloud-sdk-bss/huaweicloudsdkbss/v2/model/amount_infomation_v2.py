@@ -35,7 +35,7 @@ class AmountInfomationV2:
     }
 
     def __init__(self, discounts=None, flexipurchase_coupon_amount=None, coupon_amount=None, stored_card_amount=None, commission_amount=None, consumed_amount=None):
-        """AmountInfomationV2
+        r"""AmountInfomationV2
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AmountInfomationV2:
 
     @property
     def discounts(self):
-        """Gets the discounts of this AmountInfomationV2.
+        r"""Gets the discounts of this AmountInfomationV2.
 
         费用项。 具体请参见表7。
 
@@ -89,7 +89,7 @@ class AmountInfomationV2:
 
     @discounts.setter
     def discounts(self, discounts):
-        """Sets the discounts of this AmountInfomationV2.
+        r"""Sets the discounts of this AmountInfomationV2.
 
         费用项。 具体请参见表7。
 
@@ -100,7 +100,7 @@ class AmountInfomationV2:
 
     @property
     def flexipurchase_coupon_amount(self):
-        """Gets the flexipurchase_coupon_amount of this AmountInfomationV2.
+        r"""Gets the flexipurchase_coupon_amount of this AmountInfomationV2.
 
         现金券金额。
 
@@ -111,7 +111,7 @@ class AmountInfomationV2:
 
     @flexipurchase_coupon_amount.setter
     def flexipurchase_coupon_amount(self, flexipurchase_coupon_amount):
-        """Sets the flexipurchase_coupon_amount of this AmountInfomationV2.
+        r"""Sets the flexipurchase_coupon_amount of this AmountInfomationV2.
 
         现金券金额。
 
@@ -122,7 +122,7 @@ class AmountInfomationV2:
 
     @property
     def coupon_amount(self):
-        """Gets the coupon_amount of this AmountInfomationV2.
+        r"""Gets the coupon_amount of this AmountInfomationV2.
 
         代金券金额。
 
@@ -133,7 +133,7 @@ class AmountInfomationV2:
 
     @coupon_amount.setter
     def coupon_amount(self, coupon_amount):
-        """Sets the coupon_amount of this AmountInfomationV2.
+        r"""Sets the coupon_amount of this AmountInfomationV2.
 
         代金券金额。
 
@@ -144,7 +144,7 @@ class AmountInfomationV2:
 
     @property
     def stored_card_amount(self):
-        """Gets the stored_card_amount of this AmountInfomationV2.
+        r"""Gets the stored_card_amount of this AmountInfomationV2.
 
         储值卡金额。
 
@@ -155,7 +155,7 @@ class AmountInfomationV2:
 
     @stored_card_amount.setter
     def stored_card_amount(self, stored_card_amount):
-        """Sets the stored_card_amount of this AmountInfomationV2.
+        r"""Sets the stored_card_amount of this AmountInfomationV2.
 
         储值卡金额。
 
@@ -166,7 +166,7 @@ class AmountInfomationV2:
 
     @property
     def commission_amount(self):
-        """Gets the commission_amount of this AmountInfomationV2.
+        r"""Gets the commission_amount of this AmountInfomationV2.
 
         手续费（仅退订订单存在）。
 
@@ -177,7 +177,7 @@ class AmountInfomationV2:
 
     @commission_amount.setter
     def commission_amount(self, commission_amount):
-        """Sets the commission_amount of this AmountInfomationV2.
+        r"""Sets the commission_amount of this AmountInfomationV2.
 
         手续费（仅退订订单存在）。
 
@@ -188,7 +188,7 @@ class AmountInfomationV2:
 
     @property
     def consumed_amount(self):
-        """Gets the consumed_amount of this AmountInfomationV2.
+        r"""Gets the consumed_amount of this AmountInfomationV2.
 
         消费金额（仅退订订单存在）。
 
@@ -199,7 +199,7 @@ class AmountInfomationV2:
 
     @consumed_amount.setter
     def consumed_amount(self, consumed_amount):
-        """Sets the consumed_amount of this AmountInfomationV2.
+        r"""Sets the consumed_amount of this AmountInfomationV2.
 
         消费金额（仅退订订单存在）。
 

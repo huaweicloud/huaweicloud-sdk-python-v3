@@ -29,7 +29,7 @@ class CreateClickHouseInstanceRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """CreateClickHouseInstanceRequest
+        r"""CreateClickHouseInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateClickHouseInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateClickHouseInstanceRequest.
+        r"""Gets the instance_id of this CreateClickHouseInstanceRequest.
 
         TaurusDB实例ID，严格匹配UUID规则。
 
@@ -67,7 +67,7 @@ class CreateClickHouseInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateClickHouseInstanceRequest.
+        r"""Sets the instance_id of this CreateClickHouseInstanceRequest.
 
         TaurusDB实例ID，严格匹配UUID规则。
 
@@ -78,7 +78,7 @@ class CreateClickHouseInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateClickHouseInstanceRequest.
+        r"""Gets the x_language of this CreateClickHouseInstanceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -89,7 +89,7 @@ class CreateClickHouseInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateClickHouseInstanceRequest.
+        r"""Sets the x_language of this CreateClickHouseInstanceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -100,7 +100,7 @@ class CreateClickHouseInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateClickHouseInstanceRequest.
+        r"""Gets the body of this CreateClickHouseInstanceRequest.
 
         :return: The body of this CreateClickHouseInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceRequestBody`
@@ -109,7 +109,7 @@ class CreateClickHouseInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateClickHouseInstanceRequest.
+        r"""Sets the body of this CreateClickHouseInstanceRequest.
 
         :param body: The body of this CreateClickHouseInstanceRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceRequestBody`

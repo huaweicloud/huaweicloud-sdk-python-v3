@@ -30,7 +30,7 @@ class CreateBackupMindmapResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """CreateBackupMindmapResponse
+        r"""CreateBackupMindmapResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateBackupMindmapResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateBackupMindmapResponse.
+        r"""Gets the code of this CreateBackupMindmapResponse.
 
         :return: The code of this CreateBackupMindmapResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class CreateBackupMindmapResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateBackupMindmapResponse.
+        r"""Sets the code of this CreateBackupMindmapResponse.
 
         :param code: The code of this CreateBackupMindmapResponse.
         :type code: str
@@ -76,7 +76,7 @@ class CreateBackupMindmapResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateBackupMindmapResponse.
+        r"""Gets the data of this CreateBackupMindmapResponse.
 
         :return: The data of this CreateBackupMindmapResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class CreateBackupMindmapResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateBackupMindmapResponse.
+        r"""Sets the data of this CreateBackupMindmapResponse.
 
         :param data: The data of this CreateBackupMindmapResponse.
         :type data: object
@@ -94,7 +94,7 @@ class CreateBackupMindmapResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateBackupMindmapResponse.
+        r"""Gets the message of this CreateBackupMindmapResponse.
 
         :return: The message of this CreateBackupMindmapResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class CreateBackupMindmapResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateBackupMindmapResponse.
+        r"""Sets the message of this CreateBackupMindmapResponse.
 
         :param message: The message of this CreateBackupMindmapResponse.
         :type message: str

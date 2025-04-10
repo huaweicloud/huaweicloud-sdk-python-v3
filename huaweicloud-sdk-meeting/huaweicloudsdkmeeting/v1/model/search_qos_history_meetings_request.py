@@ -33,7 +33,7 @@ class SearchQosHistoryMeetingsRequest:
     }
 
     def __init__(self, start_date=None, end_date=None, offset=None, limit=None, search_key=None):
-        """SearchQosHistoryMeetingsRequest
+        r"""SearchQosHistoryMeetingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class SearchQosHistoryMeetingsRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this SearchQosHistoryMeetingsRequest.
+        r"""Gets the start_date of this SearchQosHistoryMeetingsRequest.
 
         查询的起始日期，Unix时间戳（单位毫秒）。
 
@@ -80,7 +80,7 @@ class SearchQosHistoryMeetingsRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this SearchQosHistoryMeetingsRequest.
+        r"""Sets the start_date of this SearchQosHistoryMeetingsRequest.
 
         查询的起始日期，Unix时间戳（单位毫秒）。
 
@@ -91,7 +91,7 @@ class SearchQosHistoryMeetingsRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this SearchQosHistoryMeetingsRequest.
+        r"""Gets the end_date of this SearchQosHistoryMeetingsRequest.
 
         查询的截止日期，Unix时间戳（单位毫秒）。
 
@@ -102,7 +102,7 @@ class SearchQosHistoryMeetingsRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this SearchQosHistoryMeetingsRequest.
+        r"""Sets the end_date of this SearchQosHistoryMeetingsRequest.
 
         查询的截止日期，Unix时间戳（单位毫秒）。
 
@@ -113,7 +113,7 @@ class SearchQosHistoryMeetingsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchQosHistoryMeetingsRequest.
+        r"""Gets the offset of this SearchQosHistoryMeetingsRequest.
 
         查询偏移量。 * 取值：大于等于0，默认值为0 * 大于等于最大条目数量，则返回最后一页的数据
 
@@ -124,7 +124,7 @@ class SearchQosHistoryMeetingsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchQosHistoryMeetingsRequest.
+        r"""Sets the offset of this SearchQosHistoryMeetingsRequest.
 
         查询偏移量。 * 取值：大于等于0，默认值为0 * 大于等于最大条目数量，则返回最后一页的数据
 
@@ -135,7 +135,7 @@ class SearchQosHistoryMeetingsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchQosHistoryMeetingsRequest.
+        r"""Gets the limit of this SearchQosHistoryMeetingsRequest.
 
         查询的条目数量。 * 取值：1-500，默认值为20
 
@@ -146,7 +146,7 @@ class SearchQosHistoryMeetingsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchQosHistoryMeetingsRequest.
+        r"""Sets the limit of this SearchQosHistoryMeetingsRequest.
 
         查询的条目数量。 * 取值：1-500，默认值为20
 
@@ -157,7 +157,7 @@ class SearchQosHistoryMeetingsRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchQosHistoryMeetingsRequest.
+        r"""Gets the search_key of this SearchQosHistoryMeetingsRequest.
 
         查询条件。会议主题、会议预约人和会议ID等可作为搜索内容。长度限制为1-512个字符。
 
@@ -168,7 +168,7 @@ class SearchQosHistoryMeetingsRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchQosHistoryMeetingsRequest.
+        r"""Sets the search_key of this SearchQosHistoryMeetingsRequest.
 
         查询条件。会议主题、会议预约人和会议ID等可作为搜索内容。长度限制为1-512个字符。
 

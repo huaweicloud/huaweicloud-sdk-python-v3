@@ -26,7 +26,7 @@ class ListRolesForUserOnEnterpriseProjectResponse(SdkResponse):
     }
 
     def __init__(self, roles=None):
-        """ListRolesForUserOnEnterpriseProjectResponse
+        r"""ListRolesForUserOnEnterpriseProjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListRolesForUserOnEnterpriseProjectResponse(SdkResponse):
 
     @property
     def roles(self):
-        """Gets the roles of this ListRolesForUserOnEnterpriseProjectResponse.
+        r"""Gets the roles of this ListRolesForUserOnEnterpriseProjectResponse.
 
         角色列表。
 
@@ -55,7 +55,7 @@ class ListRolesForUserOnEnterpriseProjectResponse(SdkResponse):
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this ListRolesForUserOnEnterpriseProjectResponse.
+        r"""Sets the roles of this ListRolesForUserOnEnterpriseProjectResponse.
 
         角色列表。
 

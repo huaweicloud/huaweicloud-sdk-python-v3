@@ -27,7 +27,7 @@ class UpdateHttpPunishmentRuleRequestBody:
     }
 
     def __init__(self, description=None, block_time=None):
-        """UpdateHttpPunishmentRuleRequestBody
+        r"""UpdateHttpPunishmentRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateHttpPunishmentRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateHttpPunishmentRuleRequestBody.
+        r"""Gets the description of this UpdateHttpPunishmentRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -60,7 +60,7 @@ class UpdateHttpPunishmentRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateHttpPunishmentRuleRequestBody.
+        r"""Sets the description of this UpdateHttpPunishmentRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -71,7 +71,7 @@ class UpdateHttpPunishmentRuleRequestBody:
 
     @property
     def block_time(self):
-        """Gets the block_time of this UpdateHttpPunishmentRuleRequestBody.
+        r"""Gets the block_time of this UpdateHttpPunishmentRuleRequestBody.
 
         拦截时间，如果选择前缀为long的攻击惩罚类别，则block_time时长范围设置为301-1800;选择前缀为short的攻击惩罚类别，则block_time时长范围为1-300之间
 
@@ -82,7 +82,7 @@ class UpdateHttpPunishmentRuleRequestBody:
 
     @block_time.setter
     def block_time(self, block_time):
-        """Sets the block_time of this UpdateHttpPunishmentRuleRequestBody.
+        r"""Sets the block_time of this UpdateHttpPunishmentRuleRequestBody.
 
         拦截时间，如果选择前缀为long的攻击惩罚类别，则block_time时长范围设置为301-1800;选择前缀为short的攻击惩罚类别，则block_time时长范围为1-300之间
 

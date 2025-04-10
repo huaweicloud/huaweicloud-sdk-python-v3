@@ -29,7 +29,7 @@ class CreateHotWordsReq:
     }
 
     def __init__(self, hot_words_type=None, robot_id=None, sis_hot_words=None):
-        """CreateHotWordsReq
+        r"""CreateHotWordsReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateHotWordsReq:
 
     @property
     def hot_words_type(self):
-        """Gets the hot_words_type of this CreateHotWordsReq.
+        r"""Gets the hot_words_type of this CreateHotWordsReq.
 
         :return: The hot_words_type of this CreateHotWordsReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
@@ -63,7 +63,7 @@ class CreateHotWordsReq:
 
     @hot_words_type.setter
     def hot_words_type(self, hot_words_type):
-        """Sets the hot_words_type of this CreateHotWordsReq.
+        r"""Sets the hot_words_type of this CreateHotWordsReq.
 
         :param hot_words_type: The hot_words_type of this CreateHotWordsReq.
         :type hot_words_type: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
@@ -72,7 +72,7 @@ class CreateHotWordsReq:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this CreateHotWordsReq.
+        r"""Gets the robot_id of this CreateHotWordsReq.
 
         应用ID。
 
@@ -83,7 +83,7 @@ class CreateHotWordsReq:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this CreateHotWordsReq.
+        r"""Sets the robot_id of this CreateHotWordsReq.
 
         应用ID。
 
@@ -94,7 +94,7 @@ class CreateHotWordsReq:
 
     @property
     def sis_hot_words(self):
-        """Gets the sis_hot_words of this CreateHotWordsReq.
+        r"""Gets the sis_hot_words of this CreateHotWordsReq.
 
         :return: The sis_hot_words of this CreateHotWordsReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateSisHotWords`
@@ -103,7 +103,7 @@ class CreateHotWordsReq:
 
     @sis_hot_words.setter
     def sis_hot_words(self, sis_hot_words):
-        """Sets the sis_hot_words of this CreateHotWordsReq.
+        r"""Sets the sis_hot_words of this CreateHotWordsReq.
 
         :param sis_hot_words: The sis_hot_words of this CreateHotWordsReq.
         :type sis_hot_words: :class:`huaweicloudsdkmetastudio.v1.CreateSisHotWords`

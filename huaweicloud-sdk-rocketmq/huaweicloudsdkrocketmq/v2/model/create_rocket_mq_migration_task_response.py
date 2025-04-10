@@ -26,7 +26,7 @@ class CreateRocketMqMigrationTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """CreateRocketMqMigrationTaskResponse
+        r"""CreateRocketMqMigrationTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateRocketMqMigrationTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateRocketMqMigrationTaskResponse.
+        r"""Gets the task_id of this CreateRocketMqMigrationTaskResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class CreateRocketMqMigrationTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateRocketMqMigrationTaskResponse.
+        r"""Sets the task_id of this CreateRocketMqMigrationTaskResponse.
 
         任务ID。
 

@@ -27,7 +27,7 @@ class ListTagResourceInstancesRequest:
     }
 
     def __init__(self, resource_type=None, body=None):
-        """ListTagResourceInstancesRequest
+        r"""ListTagResourceInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListTagResourceInstancesRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListTagResourceInstancesRequest.
+        r"""Gets the resource_type of this ListTagResourceInstancesRequest.
 
         - 专线服务资源类型，包括dc-directconnect/dc-vgw/dc-vif - dc-directconnect: 专线物理连接 - dc-vgw： 虚拟网关 - dc-vif： 虚拟接口
 
@@ -60,7 +60,7 @@ class ListTagResourceInstancesRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListTagResourceInstancesRequest.
+        r"""Sets the resource_type of this ListTagResourceInstancesRequest.
 
         - 专线服务资源类型，包括dc-directconnect/dc-vgw/dc-vif - dc-directconnect: 专线物理连接 - dc-vgw： 虚拟网关 - dc-vif： 虚拟接口
 
@@ -71,7 +71,7 @@ class ListTagResourceInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTagResourceInstancesRequest.
+        r"""Gets the body of this ListTagResourceInstancesRequest.
 
         :return: The body of this ListTagResourceInstancesRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.ListTagResourceInstancesRequestBody`
@@ -80,7 +80,7 @@ class ListTagResourceInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTagResourceInstancesRequest.
+        r"""Sets the body of this ListTagResourceInstancesRequest.
 
         :param body: The body of this ListTagResourceInstancesRequest.
         :type body: :class:`huaweicloudsdkdc.v3.ListTagResourceInstancesRequestBody`

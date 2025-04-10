@@ -26,7 +26,7 @@ class CreateTemplateGroupCollectionResponse(SdkResponse):
     }
 
     def __init__(self, group_collection_id=None):
-        """CreateTemplateGroupCollectionResponse
+        r"""CreateTemplateGroupCollectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTemplateGroupCollectionResponse(SdkResponse):
 
     @property
     def group_collection_id(self):
-        """Gets the group_collection_id of this CreateTemplateGroupCollectionResponse.
+        r"""Gets the group_collection_id of this CreateTemplateGroupCollectionResponse.
 
         模板组集合ID<br/> 
 
@@ -55,7 +55,7 @@ class CreateTemplateGroupCollectionResponse(SdkResponse):
 
     @group_collection_id.setter
     def group_collection_id(self, group_collection_id):
-        """Sets the group_collection_id of this CreateTemplateGroupCollectionResponse.
+        r"""Sets the group_collection_id of this CreateTemplateGroupCollectionResponse.
 
         模板组集合ID<br/> 
 

@@ -24,7 +24,7 @@ class DownloadDbObjectTemplateResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """DownloadDbObjectTemplateResponse
+        r"""DownloadDbObjectTemplateResponse
 
         The model defined in huaweicloud sdk
 

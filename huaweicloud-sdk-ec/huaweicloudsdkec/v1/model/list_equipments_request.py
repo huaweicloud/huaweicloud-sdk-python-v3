@@ -25,7 +25,7 @@ class ListEquipmentsRequest:
     }
 
     def __init__(self, ieg_id=None):
-        """ListEquipmentsRequest
+        r"""ListEquipmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListEquipmentsRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this ListEquipmentsRequest.
+        r"""Gets the ieg_id of this ListEquipmentsRequest.
 
         智能企业网关ID
 
@@ -53,7 +53,7 @@ class ListEquipmentsRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this ListEquipmentsRequest.
+        r"""Sets the ieg_id of this ListEquipmentsRequest.
 
         智能企业网关ID
 

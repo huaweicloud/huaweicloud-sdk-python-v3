@@ -47,7 +47,7 @@ class DomainsDetail:
     }
 
     def __init__(self, id=None, domain_name=None, business_type=None, domain_status=None, cname=None, sources=None, https_status=None, create_time=None, update_time=None, disabled=None, locked=None, service_area=None):
-        """DomainsDetail
+        r"""DomainsDetail
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class DomainsDetail:
 
     @property
     def id(self):
-        """Gets the id of this DomainsDetail.
+        r"""Gets the id of this DomainsDetail.
 
         加速域名ID。
 
@@ -131,7 +131,7 @@ class DomainsDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DomainsDetail.
+        r"""Sets the id of this DomainsDetail.
 
         加速域名ID。
 
@@ -142,7 +142,7 @@ class DomainsDetail:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this DomainsDetail.
+        r"""Gets the domain_name of this DomainsDetail.
 
         加速域名。
 
@@ -153,7 +153,7 @@ class DomainsDetail:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this DomainsDetail.
+        r"""Sets the domain_name of this DomainsDetail.
 
         加速域名。
 
@@ -164,7 +164,7 @@ class DomainsDetail:
 
     @property
     def business_type(self):
-        """Gets the business_type of this DomainsDetail.
+        r"""Gets the business_type of this DomainsDetail.
 
         域名业务类型，若为web，则表示类型为网站加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示类型为全站加速。
 
@@ -175,7 +175,7 @@ class DomainsDetail:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this DomainsDetail.
+        r"""Sets the business_type of this DomainsDetail.
 
         域名业务类型，若为web，则表示类型为网站加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示类型为全站加速。
 
@@ -186,7 +186,7 @@ class DomainsDetail:
 
     @property
     def domain_status(self):
-        """Gets the domain_status of this DomainsDetail.
+        r"""Gets the domain_status of this DomainsDetail.
 
         加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
 
@@ -197,7 +197,7 @@ class DomainsDetail:
 
     @domain_status.setter
     def domain_status(self, domain_status):
-        """Sets the domain_status of this DomainsDetail.
+        r"""Sets the domain_status of this DomainsDetail.
 
         加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
 
@@ -208,7 +208,7 @@ class DomainsDetail:
 
     @property
     def cname(self):
-        """Gets the cname of this DomainsDetail.
+        r"""Gets the cname of this DomainsDetail.
 
         加速域名对应的CNAME。
 
@@ -219,7 +219,7 @@ class DomainsDetail:
 
     @cname.setter
     def cname(self, cname):
-        """Sets the cname of this DomainsDetail.
+        r"""Sets the cname of this DomainsDetail.
 
         加速域名对应的CNAME。
 
@@ -230,7 +230,7 @@ class DomainsDetail:
 
     @property
     def sources(self):
-        """Gets the sources of this DomainsDetail.
+        r"""Gets the sources of this DomainsDetail.
 
         源站配置。
 
@@ -241,7 +241,7 @@ class DomainsDetail:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this DomainsDetail.
+        r"""Sets the sources of this DomainsDetail.
 
         源站配置。
 
@@ -252,7 +252,7 @@ class DomainsDetail:
 
     @property
     def https_status(self):
-        """Gets the https_status of this DomainsDetail.
+        r"""Gets the https_status of this DomainsDetail.
 
         是否开启HTTPS加速。 0：代表未开启HTTPS加速； 1：代表开启HTTPS加速，且回源方式为协议跟随； 2：代表开启HTTPS加速，且回源方式为HTTP； 3：代表开启HTTPS加速，且回源方式为HTTPS。
 
@@ -263,7 +263,7 @@ class DomainsDetail:
 
     @https_status.setter
     def https_status(self, https_status):
-        """Sets the https_status of this DomainsDetail.
+        r"""Sets the https_status of this DomainsDetail.
 
         是否开启HTTPS加速。 0：代表未开启HTTPS加速； 1：代表开启HTTPS加速，且回源方式为协议跟随； 2：代表开启HTTPS加速，且回源方式为HTTP； 3：代表开启HTTPS加速，且回源方式为HTTPS。
 
@@ -274,7 +274,7 @@ class DomainsDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DomainsDetail.
+        r"""Gets the create_time of this DomainsDetail.
 
         域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -285,7 +285,7 @@ class DomainsDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DomainsDetail.
+        r"""Sets the create_time of this DomainsDetail.
 
         域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -296,7 +296,7 @@ class DomainsDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DomainsDetail.
+        r"""Gets the update_time of this DomainsDetail.
 
         域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -307,7 +307,7 @@ class DomainsDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DomainsDetail.
+        r"""Sets the update_time of this DomainsDetail.
 
         域名修改时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -318,7 +318,7 @@ class DomainsDetail:
 
     @property
     def disabled(self):
-        """Gets the disabled of this DomainsDetail.
+        r"""Gets the disabled of this DomainsDetail.
 
         封禁状态（0代表未禁用；1代表禁用）。
 
@@ -329,7 +329,7 @@ class DomainsDetail:
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this DomainsDetail.
+        r"""Sets the disabled of this DomainsDetail.
 
         封禁状态（0代表未禁用；1代表禁用）。
 
@@ -340,7 +340,7 @@ class DomainsDetail:
 
     @property
     def locked(self):
-        """Gets the locked of this DomainsDetail.
+        r"""Gets the locked of this DomainsDetail.
 
         锁定状态（0代表未锁定；1代表锁定）。
 
@@ -351,7 +351,7 @@ class DomainsDetail:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this DomainsDetail.
+        r"""Sets the locked of this DomainsDetail.
 
         锁定状态（0代表未锁定；1代表锁定）。
 
@@ -362,7 +362,7 @@ class DomainsDetail:
 
     @property
     def service_area(self):
-        """Gets the service_area of this DomainsDetail.
+        r"""Gets the service_area of this DomainsDetail.
 
         华为云CDN提供的加速服务范围，包含：mainland_china中国大陆、outside_mainland_china中国大陆境外、global全球。
 
@@ -373,7 +373,7 @@ class DomainsDetail:
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this DomainsDetail.
+        r"""Sets the service_area of this DomainsDetail.
 
         华为云CDN提供的加速服务范围，包含：mainland_china中国大陆、outside_mainland_china中国大陆境外、global全球。
 

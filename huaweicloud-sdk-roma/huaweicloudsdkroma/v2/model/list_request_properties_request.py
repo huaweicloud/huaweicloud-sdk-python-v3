@@ -37,7 +37,7 @@ class ListRequestPropertiesRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, command_id=None, limit=None, request_id=None, request_name=None, offset=None):
-        """ListRequestPropertiesRequest
+        r"""ListRequestPropertiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ListRequestPropertiesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListRequestPropertiesRequest.
+        r"""Gets the instance_id of this ListRequestPropertiesRequest.
 
         实例ID
 
@@ -93,7 +93,7 @@ class ListRequestPropertiesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListRequestPropertiesRequest.
+        r"""Sets the instance_id of this ListRequestPropertiesRequest.
 
         实例ID
 
@@ -104,7 +104,7 @@ class ListRequestPropertiesRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ListRequestPropertiesRequest.
+        r"""Gets the service_id of this ListRequestPropertiesRequest.
 
         服务ID
 
@@ -115,7 +115,7 @@ class ListRequestPropertiesRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ListRequestPropertiesRequest.
+        r"""Sets the service_id of this ListRequestPropertiesRequest.
 
         服务ID
 
@@ -126,7 +126,7 @@ class ListRequestPropertiesRequest:
 
     @property
     def command_id(self):
-        """Gets the command_id of this ListRequestPropertiesRequest.
+        r"""Gets the command_id of this ListRequestPropertiesRequest.
 
         命令ID
 
@@ -137,7 +137,7 @@ class ListRequestPropertiesRequest:
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this ListRequestPropertiesRequest.
+        r"""Sets the command_id of this ListRequestPropertiesRequest.
 
         命令ID
 
@@ -148,7 +148,7 @@ class ListRequestPropertiesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRequestPropertiesRequest.
+        r"""Gets the limit of this ListRequestPropertiesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -159,7 +159,7 @@ class ListRequestPropertiesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRequestPropertiesRequest.
+        r"""Sets the limit of this ListRequestPropertiesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -170,7 +170,7 @@ class ListRequestPropertiesRequest:
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListRequestPropertiesRequest.
+        r"""Gets the request_id of this ListRequestPropertiesRequest.
 
         请求属性ID
 
@@ -181,7 +181,7 @@ class ListRequestPropertiesRequest:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListRequestPropertiesRequest.
+        r"""Sets the request_id of this ListRequestPropertiesRequest.
 
         请求属性ID
 
@@ -192,7 +192,7 @@ class ListRequestPropertiesRequest:
 
     @property
     def request_name(self):
-        """Gets the request_name of this ListRequestPropertiesRequest.
+        r"""Gets the request_name of this ListRequestPropertiesRequest.
 
         请求属性名称
 
@@ -203,7 +203,7 @@ class ListRequestPropertiesRequest:
 
     @request_name.setter
     def request_name(self, request_name):
-        """Sets the request_name of this ListRequestPropertiesRequest.
+        r"""Sets the request_name of this ListRequestPropertiesRequest.
 
         请求属性名称
 
@@ -214,7 +214,7 @@ class ListRequestPropertiesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRequestPropertiesRequest.
+        r"""Gets the offset of this ListRequestPropertiesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -225,7 +225,7 @@ class ListRequestPropertiesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRequestPropertiesRequest.
+        r"""Sets the offset of this ListRequestPropertiesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 

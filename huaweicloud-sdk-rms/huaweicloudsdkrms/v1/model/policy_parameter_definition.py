@@ -33,7 +33,7 @@ class PolicyParameterDefinition:
     }
 
     def __init__(self, name=None, description=None, allowed_values=None, default_value=None, type=None):
-        """PolicyParameterDefinition
+        r"""PolicyParameterDefinition
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PolicyParameterDefinition:
 
     @property
     def name(self):
-        """Gets the name of this PolicyParameterDefinition.
+        r"""Gets the name of this PolicyParameterDefinition.
 
         策略参数名字
 
@@ -82,7 +82,7 @@ class PolicyParameterDefinition:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PolicyParameterDefinition.
+        r"""Sets the name of this PolicyParameterDefinition.
 
         策略参数名字
 
@@ -93,7 +93,7 @@ class PolicyParameterDefinition:
 
     @property
     def description(self):
-        """Gets the description of this PolicyParameterDefinition.
+        r"""Gets the description of this PolicyParameterDefinition.
 
         策略参数描述
 
@@ -104,7 +104,7 @@ class PolicyParameterDefinition:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PolicyParameterDefinition.
+        r"""Sets the description of this PolicyParameterDefinition.
 
         策略参数描述
 
@@ -115,7 +115,7 @@ class PolicyParameterDefinition:
 
     @property
     def allowed_values(self):
-        """Gets the allowed_values of this PolicyParameterDefinition.
+        r"""Gets the allowed_values of this PolicyParameterDefinition.
 
         策略参数允许值列表
 
@@ -126,7 +126,7 @@ class PolicyParameterDefinition:
 
     @allowed_values.setter
     def allowed_values(self, allowed_values):
-        """Sets the allowed_values of this PolicyParameterDefinition.
+        r"""Sets the allowed_values of this PolicyParameterDefinition.
 
         策略参数允许值列表
 
@@ -137,7 +137,7 @@ class PolicyParameterDefinition:
 
     @property
     def default_value(self):
-        """Gets the default_value of this PolicyParameterDefinition.
+        r"""Gets the default_value of this PolicyParameterDefinition.
 
         策略参数默认值
 
@@ -148,7 +148,7 @@ class PolicyParameterDefinition:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this PolicyParameterDefinition.
+        r"""Sets the default_value of this PolicyParameterDefinition.
 
         策略参数默认值
 
@@ -159,7 +159,7 @@ class PolicyParameterDefinition:
 
     @property
     def type(self):
-        """Gets the type of this PolicyParameterDefinition.
+        r"""Gets the type of this PolicyParameterDefinition.
 
         策略参数类型
 
@@ -170,7 +170,7 @@ class PolicyParameterDefinition:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PolicyParameterDefinition.
+        r"""Sets the type of this PolicyParameterDefinition.
 
         策略参数类型
 

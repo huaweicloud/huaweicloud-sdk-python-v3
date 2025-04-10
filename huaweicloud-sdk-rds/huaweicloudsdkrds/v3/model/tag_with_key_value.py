@@ -27,7 +27,7 @@ class TagWithKeyValue:
     }
 
     def __init__(self, key=None, value=None):
-        """TagWithKeyValue
+        r"""TagWithKeyValue
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TagWithKeyValue:
 
     @property
     def key(self):
-        """Gets the key of this TagWithKeyValue.
+        r"""Gets the key of this TagWithKeyValue.
 
         标签键。长度为1-128个unicode字符。 可以包含任何语种字母、数字、空格和_.:=+-@， 但首尾不能含有空格，不能以sys开头。
 
@@ -59,7 +59,7 @@ class TagWithKeyValue:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagWithKeyValue.
+        r"""Sets the key of this TagWithKeyValue.
 
         标签键。长度为1-128个unicode字符。 可以包含任何语种字母、数字、空格和_.:=+-@， 但首尾不能含有空格，不能以sys开头。
 
@@ -70,7 +70,7 @@ class TagWithKeyValue:
 
     @property
     def value(self):
-        """Gets the value of this TagWithKeyValue.
+        r"""Gets the value of this TagWithKeyValue.
 
         标签值。最大长度255个unicode字符。 可以为空字符串。可以包含任何语种字母、数字、空格和_.:=+-@，
 
@@ -81,7 +81,7 @@ class TagWithKeyValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagWithKeyValue.
+        r"""Sets the value of this TagWithKeyValue.
 
         标签值。最大长度255个unicode字符。 可以为空字符串。可以包含任何语种字母、数字、空格和_.:=+-@，
 

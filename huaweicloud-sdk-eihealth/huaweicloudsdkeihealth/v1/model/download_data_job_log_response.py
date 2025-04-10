@@ -24,7 +24,7 @@ class DownloadDataJobLogResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DownloadDataJobLogResponse
+        r"""DownloadDataJobLogResponse
 
         The model defined in huaweicloud sdk
 

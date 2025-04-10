@@ -28,7 +28,7 @@ class UpdateL7RuleResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, rule=None):
-        """UpdateL7RuleResponse
+        r"""UpdateL7RuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateL7RuleResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateL7RuleResponse.
+        r"""Gets the request_id of this UpdateL7RuleResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -62,7 +62,7 @@ class UpdateL7RuleResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateL7RuleResponse.
+        r"""Sets the request_id of this UpdateL7RuleResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -73,7 +73,7 @@ class UpdateL7RuleResponse(SdkResponse):
 
     @property
     def rule(self):
-        """Gets the rule of this UpdateL7RuleResponse.
+        r"""Gets the rule of this UpdateL7RuleResponse.
 
         :return: The rule of this UpdateL7RuleResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.L7Rule`
@@ -82,7 +82,7 @@ class UpdateL7RuleResponse(SdkResponse):
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this UpdateL7RuleResponse.
+        r"""Sets the rule of this UpdateL7RuleResponse.
 
         :param rule: The rule of this UpdateL7RuleResponse.
         :type rule: :class:`huaweicloudsdkelb.v3.L7Rule`

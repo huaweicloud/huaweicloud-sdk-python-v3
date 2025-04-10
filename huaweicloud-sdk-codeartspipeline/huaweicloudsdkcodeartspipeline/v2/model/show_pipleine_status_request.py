@@ -27,7 +27,7 @@ class ShowPipleineStatusRequest:
     }
 
     def __init__(self, pipeline_id=None, build_id=None):
-        """ShowPipleineStatusRequest
+        r"""ShowPipleineStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowPipleineStatusRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this ShowPipleineStatusRequest.
+        r"""Gets the pipeline_id of this ShowPipleineStatusRequest.
 
         要获取状态的流水线ID
 
@@ -60,7 +60,7 @@ class ShowPipleineStatusRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this ShowPipleineStatusRequest.
+        r"""Sets the pipeline_id of this ShowPipleineStatusRequest.
 
         要获取状态的流水线ID
 
@@ -71,7 +71,7 @@ class ShowPipleineStatusRequest:
 
     @property
     def build_id(self):
-        """Gets the build_id of this ShowPipleineStatusRequest.
+        r"""Gets the build_id of this ShowPipleineStatusRequest.
 
         要获取状态的执行ID
 
@@ -82,7 +82,7 @@ class ShowPipleineStatusRequest:
 
     @build_id.setter
     def build_id(self, build_id):
-        """Sets the build_id of this ShowPipleineStatusRequest.
+        r"""Sets the build_id of this ShowPipleineStatusRequest.
 
         要获取状态的执行ID
 

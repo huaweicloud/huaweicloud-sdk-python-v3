@@ -26,7 +26,7 @@ class DeleteFirewallResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """DeleteFirewallResponse
+        r"""DeleteFirewallResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteFirewallResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteFirewallResponse.
+        r"""Gets the data of this DeleteFirewallResponse.
 
         删除防火墙时生成的任务的job_id
 
@@ -55,7 +55,7 @@ class DeleteFirewallResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteFirewallResponse.
+        r"""Sets the data of this DeleteFirewallResponse.
 
         删除防火墙时生成的任务的job_id
 

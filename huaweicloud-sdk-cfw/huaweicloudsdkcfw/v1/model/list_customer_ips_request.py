@@ -47,7 +47,7 @@ class ListCustomerIpsRequest:
     }
 
     def __init__(self, action_type=None, affected_os=None, attack_type=None, fw_instance_id=None, ips_name=None, limit=None, object_id=None, offset=None, protocol=None, severity=None, software=None, enterprise_project_id=None):
-        """ListCustomerIpsRequest
+        r"""ListCustomerIpsRequest
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class ListCustomerIpsRequest:
 
     @property
     def action_type(self):
-        """Gets the action_type of this ListCustomerIpsRequest.
+        r"""Gets the action_type of this ListCustomerIpsRequest.
 
         动作（0：只记录日志，1：重置/拦截）
 
@@ -127,7 +127,7 @@ class ListCustomerIpsRequest:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this ListCustomerIpsRequest.
+        r"""Sets the action_type of this ListCustomerIpsRequest.
 
         动作（0：只记录日志，1：重置/拦截）
 
@@ -138,7 +138,7 @@ class ListCustomerIpsRequest:
 
     @property
     def affected_os(self):
-        """Gets the affected_os of this ListCustomerIpsRequest.
+        r"""Gets the affected_os of this ListCustomerIpsRequest.
 
         操作系统
 
@@ -149,7 +149,7 @@ class ListCustomerIpsRequest:
 
     @affected_os.setter
     def affected_os(self, affected_os):
-        """Sets the affected_os of this ListCustomerIpsRequest.
+        r"""Sets the affected_os of this ListCustomerIpsRequest.
 
         操作系统
 
@@ -160,7 +160,7 @@ class ListCustomerIpsRequest:
 
     @property
     def attack_type(self):
-        """Gets the attack_type of this ListCustomerIpsRequest.
+        r"""Gets the attack_type of this ListCustomerIpsRequest.
 
         攻击类型
 
@@ -171,7 +171,7 @@ class ListCustomerIpsRequest:
 
     @attack_type.setter
     def attack_type(self, attack_type):
-        """Sets the attack_type of this ListCustomerIpsRequest.
+        r"""Sets the attack_type of this ListCustomerIpsRequest.
 
         攻击类型
 
@@ -182,7 +182,7 @@ class ListCustomerIpsRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListCustomerIpsRequest.
+        r"""Gets the fw_instance_id of this ListCustomerIpsRequest.
 
         防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -193,7 +193,7 @@ class ListCustomerIpsRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListCustomerIpsRequest.
+        r"""Sets the fw_instance_id of this ListCustomerIpsRequest.
 
         防火墙ID，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -204,7 +204,7 @@ class ListCustomerIpsRequest:
 
     @property
     def ips_name(self):
-        """Gets the ips_name of this ListCustomerIpsRequest.
+        r"""Gets the ips_name of this ListCustomerIpsRequest.
 
         ips规则名称
 
@@ -215,7 +215,7 @@ class ListCustomerIpsRequest:
 
     @ips_name.setter
     def ips_name(self, ips_name):
-        """Sets the ips_name of this ListCustomerIpsRequest.
+        r"""Sets the ips_name of this ListCustomerIpsRequest.
 
         ips规则名称
 
@@ -226,7 +226,7 @@ class ListCustomerIpsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCustomerIpsRequest.
+        r"""Gets the limit of this ListCustomerIpsRequest.
 
         分页查询数据量限制
 
@@ -237,7 +237,7 @@ class ListCustomerIpsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCustomerIpsRequest.
+        r"""Sets the limit of this ListCustomerIpsRequest.
 
         分页查询数据量限制
 
@@ -248,7 +248,7 @@ class ListCustomerIpsRequest:
 
     @property
     def object_id(self):
-        """Gets the object_id of this ListCustomerIpsRequest.
+        r"""Gets the object_id of this ListCustomerIpsRequest.
 
         防护对象ID，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
@@ -259,7 +259,7 @@ class ListCustomerIpsRequest:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this ListCustomerIpsRequest.
+        r"""Sets the object_id of this ListCustomerIpsRequest.
 
         防护对象ID，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为1的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
@@ -270,7 +270,7 @@ class ListCustomerIpsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCustomerIpsRequest.
+        r"""Gets the offset of this ListCustomerIpsRequest.
 
         查询偏移量
 
@@ -281,7 +281,7 @@ class ListCustomerIpsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCustomerIpsRequest.
+        r"""Sets the offset of this ListCustomerIpsRequest.
 
         查询偏移量
 
@@ -292,7 +292,7 @@ class ListCustomerIpsRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListCustomerIpsRequest.
+        r"""Gets the protocol of this ListCustomerIpsRequest.
 
         协议
 
@@ -303,7 +303,7 @@ class ListCustomerIpsRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListCustomerIpsRequest.
+        r"""Sets the protocol of this ListCustomerIpsRequest.
 
         协议
 
@@ -314,7 +314,7 @@ class ListCustomerIpsRequest:
 
     @property
     def severity(self):
-        """Gets the severity of this ListCustomerIpsRequest.
+        r"""Gets the severity of this ListCustomerIpsRequest.
 
         严重程度（critical：致命，high：高危，medium:中危，low:低危）
 
@@ -325,7 +325,7 @@ class ListCustomerIpsRequest:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ListCustomerIpsRequest.
+        r"""Sets the severity of this ListCustomerIpsRequest.
 
         严重程度（critical：致命，high：高危，medium:中危，low:低危）
 
@@ -336,7 +336,7 @@ class ListCustomerIpsRequest:
 
     @property
     def software(self):
-        """Gets the software of this ListCustomerIpsRequest.
+        r"""Gets the software of this ListCustomerIpsRequest.
 
         影响软件
 
@@ -347,7 +347,7 @@ class ListCustomerIpsRequest:
 
     @software.setter
     def software(self, software):
-        """Sets the software of this ListCustomerIpsRequest.
+        r"""Sets the software of this ListCustomerIpsRequest.
 
         影响软件
 
@@ -358,7 +358,7 @@ class ListCustomerIpsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListCustomerIpsRequest.
+        r"""Gets the enterprise_project_id of this ListCustomerIpsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -369,7 +369,7 @@ class ListCustomerIpsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListCustomerIpsRequest.
+        r"""Sets the enterprise_project_id of this ListCustomerIpsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 

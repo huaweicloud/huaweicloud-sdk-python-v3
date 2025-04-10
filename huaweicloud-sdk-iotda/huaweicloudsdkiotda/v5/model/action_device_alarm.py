@@ -33,7 +33,7 @@ class ActionDeviceAlarm:
     }
 
     def __init__(self, name=None, alarm_status=None, severity=None, dimension=None, description=None):
-        """ActionDeviceAlarm
+        r"""ActionDeviceAlarm
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ActionDeviceAlarm:
 
     @property
     def name(self):
-        """Gets the name of this ActionDeviceAlarm.
+        r"""Gets the name of this ActionDeviceAlarm.
 
         **参数说明**：告警名称。
 
@@ -79,7 +79,7 @@ class ActionDeviceAlarm:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ActionDeviceAlarm.
+        r"""Sets the name of this ActionDeviceAlarm.
 
         **参数说明**：告警名称。
 
@@ -90,7 +90,7 @@ class ActionDeviceAlarm:
 
     @property
     def alarm_status(self):
-        """Gets the alarm_status of this ActionDeviceAlarm.
+        r"""Gets the alarm_status of this ActionDeviceAlarm.
 
         **参数说明**：告警状态。 **取值范围**： - fault：上报告警。 - recovery：恢复告警。
 
@@ -101,7 +101,7 @@ class ActionDeviceAlarm:
 
     @alarm_status.setter
     def alarm_status(self, alarm_status):
-        """Sets the alarm_status of this ActionDeviceAlarm.
+        r"""Sets the alarm_status of this ActionDeviceAlarm.
 
         **参数说明**：告警状态。 **取值范围**： - fault：上报告警。 - recovery：恢复告警。
 
@@ -112,7 +112,7 @@ class ActionDeviceAlarm:
 
     @property
     def severity(self):
-        """Gets the severity of this ActionDeviceAlarm.
+        r"""Gets the severity of this ActionDeviceAlarm.
 
         **参数说明**：告警级别。 **取值范围**：warning（警告）、minor（一般）、major（严重）和critical（致命）。
 
@@ -123,7 +123,7 @@ class ActionDeviceAlarm:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ActionDeviceAlarm.
+        r"""Sets the severity of this ActionDeviceAlarm.
 
         **参数说明**：告警级别。 **取值范围**：warning（警告）、minor（一般）、major（严重）和critical（致命）。
 
@@ -134,7 +134,7 @@ class ActionDeviceAlarm:
 
     @property
     def dimension(self):
-        """Gets the dimension of this ActionDeviceAlarm.
+        r"""Gets the dimension of this ActionDeviceAlarm.
 
         **参数说明**：告警维度，与告警名称和告警级别组合起来共同标识一条告警，默认不携带该字段为用户维度告警，支持设备维度和资源空间维度告警。 **取值范围**： - device：设备维度。 - app：资源空间维度。
 
@@ -145,7 +145,7 @@ class ActionDeviceAlarm:
 
     @dimension.setter
     def dimension(self, dimension):
-        """Sets the dimension of this ActionDeviceAlarm.
+        r"""Sets the dimension of this ActionDeviceAlarm.
 
         **参数说明**：告警维度，与告警名称和告警级别组合起来共同标识一条告警，默认不携带该字段为用户维度告警，支持设备维度和资源空间维度告警。 **取值范围**： - device：设备维度。 - app：资源空间维度。
 
@@ -156,7 +156,7 @@ class ActionDeviceAlarm:
 
     @property
     def description(self):
-        """Gets the description of this ActionDeviceAlarm.
+        r"""Gets the description of this ActionDeviceAlarm.
 
         **参数说明**：告警的描述信息。
 
@@ -167,7 +167,7 @@ class ActionDeviceAlarm:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ActionDeviceAlarm.
+        r"""Sets the description of this ActionDeviceAlarm.
 
         **参数说明**：告警的描述信息。
 

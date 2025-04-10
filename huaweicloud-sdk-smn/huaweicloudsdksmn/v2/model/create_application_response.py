@@ -30,7 +30,7 @@ class CreateApplicationResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, application_urn=None, application_id=None):
-        """CreateApplicationResponse
+        r"""CreateApplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateApplicationResponse.
+        r"""Gets the request_id of this CreateApplicationResponse.
 
         请求的唯一标识ID。
 
@@ -69,7 +69,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateApplicationResponse.
+        r"""Sets the request_id of this CreateApplicationResponse.
 
         请求的唯一标识ID。
 
@@ -80,7 +80,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def application_urn(self):
-        """Gets the application_urn of this CreateApplicationResponse.
+        r"""Gets the application_urn of this CreateApplicationResponse.
 
         Application的唯一资源标识。
 
@@ -91,7 +91,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @application_urn.setter
     def application_urn(self, application_urn):
-        """Sets the application_urn of this CreateApplicationResponse.
+        r"""Sets the application_urn of this CreateApplicationResponse.
 
         Application的唯一资源标识。
 
@@ -102,7 +102,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @property
     def application_id(self):
-        """Gets the application_id of this CreateApplicationResponse.
+        r"""Gets the application_id of this CreateApplicationResponse.
 
         Application资源的ID。
 
@@ -113,7 +113,7 @@ class CreateApplicationResponse(SdkResponse):
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this CreateApplicationResponse.
+        r"""Sets the application_id of this CreateApplicationResponse.
 
         Application资源的ID。
 

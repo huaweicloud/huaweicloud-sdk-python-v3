@@ -29,7 +29,7 @@ class UpdateJobRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """UpdateJobRequest
+        r"""UpdateJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateJobRequest.
+        r"""Gets the job_id of this UpdateJobRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class UpdateJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateJobRequest.
+        r"""Sets the job_id of this UpdateJobRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class UpdateJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateJobRequest.
+        r"""Gets the x_language of this UpdateJobRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class UpdateJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateJobRequest.
+        r"""Sets the x_language of this UpdateJobRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class UpdateJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateJobRequest.
+        r"""Gets the body of this UpdateJobRequest.
 
         :return: The body of this UpdateJobRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.SingleUpdateJobReq`
@@ -109,7 +109,7 @@ class UpdateJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateJobRequest.
+        r"""Sets the body of this UpdateJobRequest.
 
         :param body: The body of this UpdateJobRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.SingleUpdateJobReq`

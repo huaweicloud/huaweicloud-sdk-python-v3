@@ -29,7 +29,7 @@ class AddressGroupVO:
     }
 
     def __init__(self, address_set_type=None, name=None, set_id=None):
-        """AddressGroupVO
+        r"""AddressGroupVO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AddressGroupVO:
 
     @property
     def address_set_type(self):
-        """Gets the address_set_type of this AddressGroupVO.
+        r"""Gets the address_set_type of this AddressGroupVO.
 
         地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
 
@@ -68,7 +68,7 @@ class AddressGroupVO:
 
     @address_set_type.setter
     def address_set_type(self, address_set_type):
-        """Sets the address_set_type of this AddressGroupVO.
+        r"""Sets the address_set_type of this AddressGroupVO.
 
         地址组类型，0表示自定义地址组，1表示WAF回源IP地址组，2表示DDoS回源IP地址组，3表示NAT64转换地址组
 
@@ -79,7 +79,7 @@ class AddressGroupVO:
 
     @property
     def name(self):
-        """Gets the name of this AddressGroupVO.
+        r"""Gets the name of this AddressGroupVO.
 
         关联IP地址组名称，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。
 
@@ -90,7 +90,7 @@ class AddressGroupVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddressGroupVO.
+        r"""Sets the name of this AddressGroupVO.
 
         关联IP地址组名称，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.name（.表示各对象之间层级的区分）获得。
 
@@ -101,7 +101,7 @@ class AddressGroupVO:
 
     @property
     def set_id(self):
-        """Gets the set_id of this AddressGroupVO.
+        r"""Gets the set_id of this AddressGroupVO.
 
         关联IP地址组ID，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -112,7 +112,7 @@ class AddressGroupVO:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this AddressGroupVO.
+        r"""Sets the set_id of this AddressGroupVO.
 
         关联IP地址组ID，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 

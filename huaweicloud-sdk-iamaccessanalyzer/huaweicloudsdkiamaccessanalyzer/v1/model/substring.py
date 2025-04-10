@@ -27,7 +27,7 @@ class Substring:
     }
 
     def __init__(self, start=None, length=None):
-        """Substring
+        r"""Substring
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Substring:
 
     @property
     def start(self):
-        """Gets the start of this Substring.
+        r"""Gets the start of this Substring.
 
         子字符串的起始索引，从0开始。0表示第一个字符。
 
@@ -59,7 +59,7 @@ class Substring:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this Substring.
+        r"""Sets the start of this Substring.
 
         子字符串的起始索引，从0开始。0表示第一个字符。
 
@@ -70,7 +70,7 @@ class Substring:
 
     @property
     def length(self):
-        """Gets the length of this Substring.
+        r"""Gets the length of this Substring.
 
         子字符串的长度。
 
@@ -81,7 +81,7 @@ class Substring:
 
     @length.setter
     def length(self, length):
-        """Sets the length of this Substring.
+        r"""Sets the length of this Substring.
 
         子字符串的长度。
 

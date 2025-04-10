@@ -29,7 +29,7 @@ class DeleteAssetTreeRequest:
     }
 
     def __init__(self, project_id=None, asset_id=None, parent_id=None):
-        """DeleteAssetTreeRequest
+        r"""DeleteAssetTreeRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteAssetTreeRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteAssetTreeRequest.
+        r"""Gets the project_id of this DeleteAssetTreeRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -65,7 +65,7 @@ class DeleteAssetTreeRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteAssetTreeRequest.
+        r"""Sets the project_id of this DeleteAssetTreeRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -76,7 +76,7 @@ class DeleteAssetTreeRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this DeleteAssetTreeRequest.
+        r"""Gets the asset_id of this DeleteAssetTreeRequest.
 
         资产ID
 
@@ -87,7 +87,7 @@ class DeleteAssetTreeRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this DeleteAssetTreeRequest.
+        r"""Sets the asset_id of this DeleteAssetTreeRequest.
 
         资产ID
 
@@ -98,7 +98,7 @@ class DeleteAssetTreeRequest:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this DeleteAssetTreeRequest.
+        r"""Gets the parent_id of this DeleteAssetTreeRequest.
 
         因子目录ID
 
@@ -109,7 +109,7 @@ class DeleteAssetTreeRequest:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this DeleteAssetTreeRequest.
+        r"""Sets the parent_id of this DeleteAssetTreeRequest.
 
         因子目录ID
 

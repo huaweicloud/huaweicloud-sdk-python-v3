@@ -47,7 +47,7 @@ class AlertRuleTemplate:
     }
 
     def __init__(self, template_id=None, update_time=None, template_name=None, data_source=None, version=None, query=None, query_type=None, severity=None, custom_properties=None, event_grouping=None, schedule=None, triggers=None):
-        """AlertRuleTemplate
+        r"""AlertRuleTemplate
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class AlertRuleTemplate:
 
     @property
     def template_id(self):
-        """Gets the template_id of this AlertRuleTemplate.
+        r"""Gets the template_id of this AlertRuleTemplate.
 
         template_id
 
@@ -125,7 +125,7 @@ class AlertRuleTemplate:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this AlertRuleTemplate.
+        r"""Sets the template_id of this AlertRuleTemplate.
 
         template_id
 
@@ -136,7 +136,7 @@ class AlertRuleTemplate:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AlertRuleTemplate.
+        r"""Gets the update_time of this AlertRuleTemplate.
 
         update_time
 
@@ -147,7 +147,7 @@ class AlertRuleTemplate:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AlertRuleTemplate.
+        r"""Sets the update_time of this AlertRuleTemplate.
 
         update_time
 
@@ -158,7 +158,7 @@ class AlertRuleTemplate:
 
     @property
     def template_name(self):
-        """Gets the template_name of this AlertRuleTemplate.
+        r"""Gets the template_name of this AlertRuleTemplate.
 
         template_name
 
@@ -169,7 +169,7 @@ class AlertRuleTemplate:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this AlertRuleTemplate.
+        r"""Sets the template_name of this AlertRuleTemplate.
 
         template_name
 
@@ -180,7 +180,7 @@ class AlertRuleTemplate:
 
     @property
     def data_source(self):
-        """Gets the data_source of this AlertRuleTemplate.
+        r"""Gets the data_source of this AlertRuleTemplate.
 
         data_source
 
@@ -191,7 +191,7 @@ class AlertRuleTemplate:
 
     @data_source.setter
     def data_source(self, data_source):
-        """Sets the data_source of this AlertRuleTemplate.
+        r"""Sets the data_source of this AlertRuleTemplate.
 
         data_source
 
@@ -202,7 +202,7 @@ class AlertRuleTemplate:
 
     @property
     def version(self):
-        """Gets the version of this AlertRuleTemplate.
+        r"""Gets the version of this AlertRuleTemplate.
 
         version
 
@@ -213,7 +213,7 @@ class AlertRuleTemplate:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AlertRuleTemplate.
+        r"""Sets the version of this AlertRuleTemplate.
 
         version
 
@@ -224,7 +224,7 @@ class AlertRuleTemplate:
 
     @property
     def query(self):
-        """Gets the query of this AlertRuleTemplate.
+        r"""Gets the query of this AlertRuleTemplate.
 
         query
 
@@ -235,7 +235,7 @@ class AlertRuleTemplate:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this AlertRuleTemplate.
+        r"""Sets the query of this AlertRuleTemplate.
 
         query
 
@@ -246,7 +246,7 @@ class AlertRuleTemplate:
 
     @property
     def query_type(self):
-        """Gets the query_type of this AlertRuleTemplate.
+        r"""Gets the query_type of this AlertRuleTemplate.
 
         query_type. SQL, CBSL.
 
@@ -257,7 +257,7 @@ class AlertRuleTemplate:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this AlertRuleTemplate.
+        r"""Sets the query_type of this AlertRuleTemplate.
 
         query_type. SQL, CBSL.
 
@@ -268,7 +268,7 @@ class AlertRuleTemplate:
 
     @property
     def severity(self):
-        """Gets the severity of this AlertRuleTemplate.
+        r"""Gets the severity of this AlertRuleTemplate.
 
         severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -279,7 +279,7 @@ class AlertRuleTemplate:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this AlertRuleTemplate.
+        r"""Sets the severity of this AlertRuleTemplate.
 
         severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -290,7 +290,7 @@ class AlertRuleTemplate:
 
     @property
     def custom_properties(self):
-        """Gets the custom_properties of this AlertRuleTemplate.
+        r"""Gets the custom_properties of this AlertRuleTemplate.
 
         custom_properties
 
@@ -301,7 +301,7 @@ class AlertRuleTemplate:
 
     @custom_properties.setter
     def custom_properties(self, custom_properties):
-        """Sets the custom_properties of this AlertRuleTemplate.
+        r"""Sets the custom_properties of this AlertRuleTemplate.
 
         custom_properties
 
@@ -312,7 +312,7 @@ class AlertRuleTemplate:
 
     @property
     def event_grouping(self):
-        """Gets the event_grouping of this AlertRuleTemplate.
+        r"""Gets the event_grouping of this AlertRuleTemplate.
 
         event_grouping
 
@@ -323,7 +323,7 @@ class AlertRuleTemplate:
 
     @event_grouping.setter
     def event_grouping(self, event_grouping):
-        """Sets the event_grouping of this AlertRuleTemplate.
+        r"""Sets the event_grouping of this AlertRuleTemplate.
 
         event_grouping
 
@@ -334,7 +334,7 @@ class AlertRuleTemplate:
 
     @property
     def schedule(self):
-        """Gets the schedule of this AlertRuleTemplate.
+        r"""Gets the schedule of this AlertRuleTemplate.
 
         :return: The schedule of this AlertRuleTemplate.
         :rtype: :class:`huaweicloudsdksa.v2.Schedule`
@@ -343,7 +343,7 @@ class AlertRuleTemplate:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this AlertRuleTemplate.
+        r"""Sets the schedule of this AlertRuleTemplate.
 
         :param schedule: The schedule of this AlertRuleTemplate.
         :type schedule: :class:`huaweicloudsdksa.v2.Schedule`
@@ -352,7 +352,7 @@ class AlertRuleTemplate:
 
     @property
     def triggers(self):
-        """Gets the triggers of this AlertRuleTemplate.
+        r"""Gets the triggers of this AlertRuleTemplate.
 
         triggers
 
@@ -363,7 +363,7 @@ class AlertRuleTemplate:
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this AlertRuleTemplate.
+        r"""Sets the triggers of this AlertRuleTemplate.
 
         triggers
 

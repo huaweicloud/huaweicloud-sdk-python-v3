@@ -33,7 +33,7 @@ class StartResJobRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, resource_id=None, job_id=None, action=None):
-        """StartResJobRequest
+        r"""StartResJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class StartResJobRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this StartResJobRequest.
+        r"""Gets the content_type of this StartResJobRequest.
 
         内容类型，取值为application/json。
 
@@ -78,7 +78,7 @@ class StartResJobRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this StartResJobRequest.
+        r"""Sets the content_type of this StartResJobRequest.
 
         内容类型，取值为application/json。
 
@@ -89,7 +89,7 @@ class StartResJobRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this StartResJobRequest.
+        r"""Gets the workspace_id of this StartResJobRequest.
 
         工作空间id。
 
@@ -100,7 +100,7 @@ class StartResJobRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this StartResJobRequest.
+        r"""Sets the workspace_id of this StartResJobRequest.
 
         工作空间id。
 
@@ -111,7 +111,7 @@ class StartResJobRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this StartResJobRequest.
+        r"""Gets the resource_id of this StartResJobRequest.
 
         资源id，可以为数据源id或场景id。
 
@@ -122,7 +122,7 @@ class StartResJobRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this StartResJobRequest.
+        r"""Sets the resource_id of this StartResJobRequest.
 
         资源id，可以为数据源id或场景id。
 
@@ -133,7 +133,7 @@ class StartResJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this StartResJobRequest.
+        r"""Gets the job_id of this StartResJobRequest.
 
         作业id。
 
@@ -144,7 +144,7 @@ class StartResJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StartResJobRequest.
+        r"""Sets the job_id of this StartResJobRequest.
 
         作业id。
 
@@ -155,7 +155,7 @@ class StartResJobRequest:
 
     @property
     def action(self):
-        """Gets the action of this StartResJobRequest.
+        r"""Gets the action of this StartResJobRequest.
 
         动作类型： - START，启动 - STOP，停止
 
@@ -166,7 +166,7 @@ class StartResJobRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this StartResJobRequest.
+        r"""Sets the action of this StartResJobRequest.
 
         动作类型： - START，启动 - STOP，停止
 

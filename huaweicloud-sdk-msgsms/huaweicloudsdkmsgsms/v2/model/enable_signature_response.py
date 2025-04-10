@@ -24,7 +24,7 @@ class EnableSignatureResponse(SdkResponse):
     }
 
     def __init__(self):
-        """EnableSignatureResponse
+        r"""EnableSignatureResponse
 
         The model defined in huaweicloud sdk
 

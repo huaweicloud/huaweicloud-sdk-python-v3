@@ -29,7 +29,7 @@ class ShowInstanceExtendProductInfoRequest:
     }
 
     def __init__(self, instance_id=None, type=None, engine=None):
-        """ShowInstanceExtendProductInfoRequest
+        r"""ShowInstanceExtendProductInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowInstanceExtendProductInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceExtendProductInfoRequest.
+        r"""Gets the instance_id of this ShowInstanceExtendProductInfoRequest.
 
         实例ID。
 
@@ -65,7 +65,7 @@ class ShowInstanceExtendProductInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceExtendProductInfoRequest.
+        r"""Sets the instance_id of this ShowInstanceExtendProductInfoRequest.
 
         实例ID。
 
@@ -76,7 +76,7 @@ class ShowInstanceExtendProductInfoRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowInstanceExtendProductInfoRequest.
+        r"""Gets the type of this ShowInstanceExtendProductInfoRequest.
 
         [产品的类型。 - advanced: 专享版 - platinum: 铂金版 - dec: 专属云版 - exp: 体验版](tag:hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)
 
@@ -87,7 +87,7 @@ class ShowInstanceExtendProductInfoRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowInstanceExtendProductInfoRequest.
+        r"""Sets the type of this ShowInstanceExtendProductInfoRequest.
 
         [产品的类型。 - advanced: 专享版 - platinum: 铂金版 - dec: 专属云版 - exp: 体验版](tag:hws,hws_hk,ctc,sbc,hk_sbc,cmcc,hws_eu)
 
@@ -98,7 +98,7 @@ class ShowInstanceExtendProductInfoRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ShowInstanceExtendProductInfoRequest.
+        r"""Gets the engine of this ShowInstanceExtendProductInfoRequest.
 
         消息引擎的类型。当前支持的类型为kafka。
 
@@ -109,7 +109,7 @@ class ShowInstanceExtendProductInfoRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ShowInstanceExtendProductInfoRequest.
+        r"""Sets the engine of this ShowInstanceExtendProductInfoRequest.
 
         消息引擎的类型。当前支持的类型为kafka。
 

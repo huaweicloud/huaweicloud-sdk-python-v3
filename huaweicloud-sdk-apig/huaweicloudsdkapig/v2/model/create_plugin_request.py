@@ -27,7 +27,7 @@ class CreatePluginRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreatePluginRequest
+        r"""CreatePluginRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePluginRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreatePluginRequest.
+        r"""Gets the instance_id of this CreatePluginRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -60,7 +60,7 @@ class CreatePluginRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreatePluginRequest.
+        r"""Sets the instance_id of this CreatePluginRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -71,7 +71,7 @@ class CreatePluginRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePluginRequest.
+        r"""Gets the body of this CreatePluginRequest.
 
         :return: The body of this CreatePluginRequest.
         :rtype: :class:`huaweicloudsdkapig.v2.PluginCreate`
@@ -80,7 +80,7 @@ class CreatePluginRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePluginRequest.
+        r"""Sets the body of this CreatePluginRequest.
 
         :param body: The body of this CreatePluginRequest.
         :type body: :class:`huaweicloudsdkapig.v2.PluginCreate`

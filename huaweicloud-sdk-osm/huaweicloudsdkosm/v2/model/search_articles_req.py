@@ -31,7 +31,7 @@ class SearchArticlesReq:
     }
 
     def __init__(self, top=None, product_type_id=None, business_type_id=None, problem_type_id=None):
-        """SearchArticlesReq
+        r"""SearchArticlesReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class SearchArticlesReq:
 
     @property
     def top(self):
-        """Gets the top of this SearchArticlesReq.
+        r"""Gets the top of this SearchArticlesReq.
 
         返回匹配度最高的数据条数
 
@@ -74,7 +74,7 @@ class SearchArticlesReq:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this SearchArticlesReq.
+        r"""Sets the top of this SearchArticlesReq.
 
         返回匹配度最高的数据条数
 
@@ -85,7 +85,7 @@ class SearchArticlesReq:
 
     @property
     def product_type_id(self):
-        """Gets the product_type_id of this SearchArticlesReq.
+        r"""Gets the product_type_id of this SearchArticlesReq.
 
         产品类型Id
 
@@ -96,7 +96,7 @@ class SearchArticlesReq:
 
     @product_type_id.setter
     def product_type_id(self, product_type_id):
-        """Sets the product_type_id of this SearchArticlesReq.
+        r"""Sets the product_type_id of this SearchArticlesReq.
 
         产品类型Id
 
@@ -107,7 +107,7 @@ class SearchArticlesReq:
 
     @property
     def business_type_id(self):
-        """Gets the business_type_id of this SearchArticlesReq.
+        r"""Gets the business_type_id of this SearchArticlesReq.
 
         业务类型Id
 
@@ -118,7 +118,7 @@ class SearchArticlesReq:
 
     @business_type_id.setter
     def business_type_id(self, business_type_id):
-        """Sets the business_type_id of this SearchArticlesReq.
+        r"""Sets the business_type_id of this SearchArticlesReq.
 
         业务类型Id
 
@@ -129,7 +129,7 @@ class SearchArticlesReq:
 
     @property
     def problem_type_id(self):
-        """Gets the problem_type_id of this SearchArticlesReq.
+        r"""Gets the problem_type_id of this SearchArticlesReq.
 
         问题类型Id
 
@@ -140,7 +140,7 @@ class SearchArticlesReq:
 
     @problem_type_id.setter
     def problem_type_id(self, problem_type_id):
-        """Sets the problem_type_id of this SearchArticlesReq.
+        r"""Sets the problem_type_id of this SearchArticlesReq.
 
         问题类型Id
 

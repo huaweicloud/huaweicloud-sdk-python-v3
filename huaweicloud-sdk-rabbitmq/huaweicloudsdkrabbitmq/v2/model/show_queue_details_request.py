@@ -29,7 +29,7 @@ class ShowQueueDetailsRequest:
     }
 
     def __init__(self, instance_id=None, vhost=None, queue=None):
-        """ShowQueueDetailsRequest
+        r"""ShowQueueDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowQueueDetailsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowQueueDetailsRequest.
+        r"""Gets the instance_id of this ShowQueueDetailsRequest.
 
         实例ID
 
@@ -65,7 +65,7 @@ class ShowQueueDetailsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowQueueDetailsRequest.
+        r"""Sets the instance_id of this ShowQueueDetailsRequest.
 
         实例ID
 
@@ -76,7 +76,7 @@ class ShowQueueDetailsRequest:
 
     @property
     def vhost(self):
-        """Gets the vhost of this ShowQueueDetailsRequest.
+        r"""Gets the vhost of this ShowQueueDetailsRequest.
 
         所属Vhost名称
 
@@ -87,7 +87,7 @@ class ShowQueueDetailsRequest:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this ShowQueueDetailsRequest.
+        r"""Sets the vhost of this ShowQueueDetailsRequest.
 
         所属Vhost名称
 
@@ -98,7 +98,7 @@ class ShowQueueDetailsRequest:
 
     @property
     def queue(self):
-        """Gets the queue of this ShowQueueDetailsRequest.
+        r"""Gets the queue of this ShowQueueDetailsRequest.
 
         Queue名称
 
@@ -109,7 +109,7 @@ class ShowQueueDetailsRequest:
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this ShowQueueDetailsRequest.
+        r"""Sets the queue of this ShowQueueDetailsRequest.
 
         Queue名称
 

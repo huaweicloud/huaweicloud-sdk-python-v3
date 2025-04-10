@@ -33,7 +33,7 @@ class TaskRulesetInfo:
     }
 
     def __init__(self, template_id=None, language=None, template_name=None, type=None, status=None):
-        """TaskRulesetInfo
+        r"""TaskRulesetInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TaskRulesetInfo:
 
     @property
     def template_id(self):
-        """Gets the template_id of this TaskRulesetInfo.
+        r"""Gets the template_id of this TaskRulesetInfo.
 
         规则集id
 
@@ -82,7 +82,7 @@ class TaskRulesetInfo:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this TaskRulesetInfo.
+        r"""Sets the template_id of this TaskRulesetInfo.
 
         规则集id
 
@@ -93,7 +93,7 @@ class TaskRulesetInfo:
 
     @property
     def language(self):
-        """Gets the language of this TaskRulesetInfo.
+        r"""Gets the language of this TaskRulesetInfo.
 
         规则集语言
 
@@ -104,7 +104,7 @@ class TaskRulesetInfo:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this TaskRulesetInfo.
+        r"""Sets the language of this TaskRulesetInfo.
 
         规则集语言
 
@@ -115,7 +115,7 @@ class TaskRulesetInfo:
 
     @property
     def template_name(self):
-        """Gets the template_name of this TaskRulesetInfo.
+        r"""Gets the template_name of this TaskRulesetInfo.
 
         规则集名称
 
@@ -126,7 +126,7 @@ class TaskRulesetInfo:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this TaskRulesetInfo.
+        r"""Sets the template_name of this TaskRulesetInfo.
 
         规则集名称
 
@@ -137,7 +137,7 @@ class TaskRulesetInfo:
 
     @property
     def type(self):
-        """Gets the type of this TaskRulesetInfo.
+        r"""Gets the type of this TaskRulesetInfo.
 
         规则集状态optional：可选，selected：已选
 
@@ -148,7 +148,7 @@ class TaskRulesetInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TaskRulesetInfo.
+        r"""Sets the type of this TaskRulesetInfo.
 
         规则集状态optional：可选，selected：已选
 
@@ -159,7 +159,7 @@ class TaskRulesetInfo:
 
     @property
     def status(self):
-        """Gets the status of this TaskRulesetInfo.
+        r"""Gets the status of this TaskRulesetInfo.
 
         规则集属性0 是默认用户规则集,1 是系统默认规则集
 
@@ -170,7 +170,7 @@ class TaskRulesetInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskRulesetInfo.
+        r"""Sets the status of this TaskRulesetInfo.
 
         规则集属性0 是默认用户规则集,1 是系统默认规则集
 

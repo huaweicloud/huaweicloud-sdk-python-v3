@@ -27,7 +27,7 @@ class Storage:
     }
 
     def __init__(self, storage_selectors=None, storage_groups=None):
-        """Storage
+        r"""Storage
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Storage:
 
     @property
     def storage_selectors(self):
-        """Gets the storage_selectors of this Storage.
+        r"""Gets the storage_selectors of this Storage.
 
         磁盘选择，根据matchLabels和storageType对匹配的磁盘进行管理。磁盘匹配存在先后顺序，靠前的匹配规则优先匹配。
 
@@ -59,7 +59,7 @@ class Storage:
 
     @storage_selectors.setter
     def storage_selectors(self, storage_selectors):
-        """Sets the storage_selectors of this Storage.
+        r"""Sets the storage_selectors of this Storage.
 
         磁盘选择，根据matchLabels和storageType对匹配的磁盘进行管理。磁盘匹配存在先后顺序，靠前的匹配规则优先匹配。
 
@@ -70,7 +70,7 @@ class Storage:
 
     @property
     def storage_groups(self):
-        """Gets the storage_groups of this Storage.
+        r"""Gets the storage_groups of this Storage.
 
         由多个存储设备组成的存储组，用于各个存储空间的划分。
 
@@ -81,7 +81,7 @@ class Storage:
 
     @storage_groups.setter
     def storage_groups(self, storage_groups):
-        """Sets the storage_groups of this Storage.
+        r"""Sets the storage_groups of this Storage.
 
         由多个存储设备组成的存储组，用于各个存储空间的划分。
 

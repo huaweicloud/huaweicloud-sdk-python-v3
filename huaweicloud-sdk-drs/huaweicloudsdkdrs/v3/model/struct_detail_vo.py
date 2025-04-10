@@ -33,7 +33,7 @@ class StructDetailVO:
     }
 
     def __init__(self, progress=None, src_db=None, src_tb=None, dst_db=None, dst_tb=None):
-        """StructDetailVO
+        r"""StructDetailVO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class StructDetailVO:
 
     @property
     def progress(self):
-        """Gets the progress of this StructDetailVO.
+        r"""Gets the progress of this StructDetailVO.
 
         进度
 
@@ -82,7 +82,7 @@ class StructDetailVO:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this StructDetailVO.
+        r"""Sets the progress of this StructDetailVO.
 
         进度
 
@@ -93,7 +93,7 @@ class StructDetailVO:
 
     @property
     def src_db(self):
-        """Gets the src_db of this StructDetailVO.
+        r"""Gets the src_db of this StructDetailVO.
 
         源数据库名称
 
@@ -104,7 +104,7 @@ class StructDetailVO:
 
     @src_db.setter
     def src_db(self, src_db):
-        """Sets the src_db of this StructDetailVO.
+        r"""Sets the src_db of this StructDetailVO.
 
         源数据库名称
 
@@ -115,7 +115,7 @@ class StructDetailVO:
 
     @property
     def src_tb(self):
-        """Gets the src_tb of this StructDetailVO.
+        r"""Gets the src_tb of this StructDetailVO.
 
         源对象名称
 
@@ -126,7 +126,7 @@ class StructDetailVO:
 
     @src_tb.setter
     def src_tb(self, src_tb):
-        """Sets the src_tb of this StructDetailVO.
+        r"""Sets the src_tb of this StructDetailVO.
 
         源对象名称
 
@@ -137,7 +137,7 @@ class StructDetailVO:
 
     @property
     def dst_db(self):
-        """Gets the dst_db of this StructDetailVO.
+        r"""Gets the dst_db of this StructDetailVO.
 
         目标数据库名称
 
@@ -148,7 +148,7 @@ class StructDetailVO:
 
     @dst_db.setter
     def dst_db(self, dst_db):
-        """Sets the dst_db of this StructDetailVO.
+        r"""Sets the dst_db of this StructDetailVO.
 
         目标数据库名称
 
@@ -159,7 +159,7 @@ class StructDetailVO:
 
     @property
     def dst_tb(self):
-        """Gets the dst_tb of this StructDetailVO.
+        r"""Gets the dst_tb of this StructDetailVO.
 
         目标对象名称
 
@@ -170,7 +170,7 @@ class StructDetailVO:
 
     @dst_tb.setter
     def dst_tb(self, dst_tb):
-        """Sets the dst_tb of this StructDetailVO.
+        r"""Sets the dst_tb of this StructDetailVO.
 
         目标对象名称
 

@@ -29,7 +29,7 @@ class ShowTemplateMetadataRequest:
     }
 
     def __init__(self, client_request_id=None, template_name=None, template_id=None):
-        """ShowTemplateMetadataRequest
+        r"""ShowTemplateMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowTemplateMetadataRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this ShowTemplateMetadataRequest.
+        r"""Gets the client_request_id of this ShowTemplateMetadataRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -66,7 +66,7 @@ class ShowTemplateMetadataRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this ShowTemplateMetadataRequest.
+        r"""Sets the client_request_id of this ShowTemplateMetadataRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -77,7 +77,7 @@ class ShowTemplateMetadataRequest:
 
     @property
     def template_name(self):
-        """Gets the template_name of this ShowTemplateMetadataRequest.
+        r"""Gets the template_name of this ShowTemplateMetadataRequest.
 
         用户希望创建的模板名称
 
@@ -88,7 +88,7 @@ class ShowTemplateMetadataRequest:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ShowTemplateMetadataRequest.
+        r"""Sets the template_name of this ShowTemplateMetadataRequest.
 
         用户希望创建的模板名称
 
@@ -99,7 +99,7 @@ class ShowTemplateMetadataRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowTemplateMetadataRequest.
+        r"""Gets the template_id of this ShowTemplateMetadataRequest.
 
         模板的ID。当template_id存在时，模板服务会检查template_id是否和template_name匹配，不匹配会返回400
 
@@ -110,7 +110,7 @@ class ShowTemplateMetadataRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowTemplateMetadataRequest.
+        r"""Sets the template_id of this ShowTemplateMetadataRequest.
 
         模板的ID。当template_id存在时，模板服务会检查template_id是否和template_name匹配，不匹配会返回400
 

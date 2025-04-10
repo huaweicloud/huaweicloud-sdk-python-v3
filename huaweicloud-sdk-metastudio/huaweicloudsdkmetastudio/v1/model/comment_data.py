@@ -29,7 +29,7 @@ class CommentData:
     }
 
     def __init__(self, comment_title=None, comment_message=None, attachment_name=None):
-        """CommentData
+        r"""CommentData
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CommentData:
 
     @property
     def comment_title(self):
-        """Gets the comment_title of this CommentData.
+        r"""Gets the comment_title of this CommentData.
 
         标题。
 
@@ -68,7 +68,7 @@ class CommentData:
 
     @comment_title.setter
     def comment_title(self, comment_title):
-        """Sets the comment_title of this CommentData.
+        r"""Sets the comment_title of this CommentData.
 
         标题。
 
@@ -79,7 +79,7 @@ class CommentData:
 
     @property
     def comment_message(self):
-        """Gets the comment_message of this CommentData.
+        r"""Gets the comment_message of this CommentData.
 
         消息。
 
@@ -90,7 +90,7 @@ class CommentData:
 
     @comment_message.setter
     def comment_message(self, comment_message):
-        """Sets the comment_message of this CommentData.
+        r"""Sets the comment_message of this CommentData.
 
         消息。
 
@@ -101,7 +101,7 @@ class CommentData:
 
     @property
     def attachment_name(self):
-        """Gets the attachment_name of this CommentData.
+        r"""Gets the attachment_name of this CommentData.
 
         附件名字
 
@@ -112,7 +112,7 @@ class CommentData:
 
     @attachment_name.setter
     def attachment_name(self, attachment_name):
-        """Sets the attachment_name of this CommentData.
+        r"""Sets the attachment_name of this CommentData.
 
         附件名字
 

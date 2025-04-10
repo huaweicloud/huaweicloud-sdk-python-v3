@@ -43,7 +43,7 @@ class MsgInfoQuery:
     }
 
     def __init__(self, alert_types=None, case_id=None, case_name=None, end_time=None, page_num=None, page_size=None, send_alert_type=None, start_time=None, task_id=None, task_name=None):
-        """MsgInfoQuery
+        r"""MsgInfoQuery
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class MsgInfoQuery:
 
     @property
     def alert_types(self):
-        """Gets the alert_types of this MsgInfoQuery.
+        r"""Gets the alert_types of this MsgInfoQuery.
 
         告警类型
 
@@ -117,7 +117,7 @@ class MsgInfoQuery:
 
     @alert_types.setter
     def alert_types(self, alert_types):
-        """Sets the alert_types of this MsgInfoQuery.
+        r"""Sets the alert_types of this MsgInfoQuery.
 
         告警类型
 
@@ -128,7 +128,7 @@ class MsgInfoQuery:
 
     @property
     def case_id(self):
-        """Gets the case_id of this MsgInfoQuery.
+        r"""Gets the case_id of this MsgInfoQuery.
 
         用例id
 
@@ -139,7 +139,7 @@ class MsgInfoQuery:
 
     @case_id.setter
     def case_id(self, case_id):
-        """Sets the case_id of this MsgInfoQuery.
+        r"""Sets the case_id of this MsgInfoQuery.
 
         用例id
 
@@ -150,7 +150,7 @@ class MsgInfoQuery:
 
     @property
     def case_name(self):
-        """Gets the case_name of this MsgInfoQuery.
+        r"""Gets the case_name of this MsgInfoQuery.
 
         用例名
 
@@ -161,7 +161,7 @@ class MsgInfoQuery:
 
     @case_name.setter
     def case_name(self, case_name):
-        """Sets the case_name of this MsgInfoQuery.
+        r"""Sets the case_name of this MsgInfoQuery.
 
         用例名
 
@@ -172,7 +172,7 @@ class MsgInfoQuery:
 
     @property
     def end_time(self):
-        """Gets the end_time of this MsgInfoQuery.
+        r"""Gets the end_time of this MsgInfoQuery.
 
         结束时间
 
@@ -183,7 +183,7 @@ class MsgInfoQuery:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this MsgInfoQuery.
+        r"""Sets the end_time of this MsgInfoQuery.
 
         结束时间
 
@@ -194,7 +194,7 @@ class MsgInfoQuery:
 
     @property
     def page_num(self):
-        """Gets the page_num of this MsgInfoQuery.
+        r"""Gets the page_num of this MsgInfoQuery.
 
         页码
 
@@ -205,7 +205,7 @@ class MsgInfoQuery:
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this MsgInfoQuery.
+        r"""Sets the page_num of this MsgInfoQuery.
 
         页码
 
@@ -216,7 +216,7 @@ class MsgInfoQuery:
 
     @property
     def page_size(self):
-        """Gets the page_size of this MsgInfoQuery.
+        r"""Gets the page_size of this MsgInfoQuery.
 
         分页大小
 
@@ -227,7 +227,7 @@ class MsgInfoQuery:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this MsgInfoQuery.
+        r"""Sets the page_size of this MsgInfoQuery.
 
         分页大小
 
@@ -238,7 +238,7 @@ class MsgInfoQuery:
 
     @property
     def send_alert_type(self):
-        """Gets the send_alert_type of this MsgInfoQuery.
+        r"""Gets the send_alert_type of this MsgInfoQuery.
 
         发送类型
 
@@ -249,7 +249,7 @@ class MsgInfoQuery:
 
     @send_alert_type.setter
     def send_alert_type(self, send_alert_type):
-        """Sets the send_alert_type of this MsgInfoQuery.
+        r"""Sets the send_alert_type of this MsgInfoQuery.
 
         发送类型
 
@@ -260,7 +260,7 @@ class MsgInfoQuery:
 
     @property
     def start_time(self):
-        """Gets the start_time of this MsgInfoQuery.
+        r"""Gets the start_time of this MsgInfoQuery.
 
         开始时间
 
@@ -271,7 +271,7 @@ class MsgInfoQuery:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this MsgInfoQuery.
+        r"""Sets the start_time of this MsgInfoQuery.
 
         开始时间
 
@@ -282,7 +282,7 @@ class MsgInfoQuery:
 
     @property
     def task_id(self):
-        """Gets the task_id of this MsgInfoQuery.
+        r"""Gets the task_id of this MsgInfoQuery.
 
         任务id
 
@@ -293,7 +293,7 @@ class MsgInfoQuery:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this MsgInfoQuery.
+        r"""Sets the task_id of this MsgInfoQuery.
 
         任务id
 
@@ -304,7 +304,7 @@ class MsgInfoQuery:
 
     @property
     def task_name(self):
-        """Gets the task_name of this MsgInfoQuery.
+        r"""Gets the task_name of this MsgInfoQuery.
 
         任务名
 
@@ -315,7 +315,7 @@ class MsgInfoQuery:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this MsgInfoQuery.
+        r"""Sets the task_name of this MsgInfoQuery.
 
         任务名
 

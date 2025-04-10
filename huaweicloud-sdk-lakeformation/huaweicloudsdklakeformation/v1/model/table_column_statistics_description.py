@@ -25,7 +25,7 @@ class TableColumnStatisticsDescription:
     }
 
     def __init__(self, last_analyzed_time=None):
-        """TableColumnStatisticsDescription
+        r"""TableColumnStatisticsDescription
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class TableColumnStatisticsDescription:
 
     @property
     def last_analyzed_time(self):
-        """Gets the last_analyzed_time of this TableColumnStatisticsDescription.
+        r"""Gets the last_analyzed_time of this TableColumnStatisticsDescription.
 
         最后统计时间
 
@@ -53,7 +53,7 @@ class TableColumnStatisticsDescription:
 
     @last_analyzed_time.setter
     def last_analyzed_time(self, last_analyzed_time):
-        """Sets the last_analyzed_time of this TableColumnStatisticsDescription.
+        r"""Sets the last_analyzed_time of this TableColumnStatisticsDescription.
 
         最后统计时间
 

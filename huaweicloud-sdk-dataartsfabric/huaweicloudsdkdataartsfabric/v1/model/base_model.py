@@ -29,7 +29,7 @@ class BaseModel:
     }
 
     def __init__(self, base_model_type=None, max_tokens=None, num_of_mu=None):
-        """BaseModel
+        r"""BaseModel
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class BaseModel:
 
     @property
     def base_model_type(self):
-        """Gets the base_model_type of this BaseModel.
+        r"""Gets the base_model_type of this BaseModel.
 
         类型请从ListBaseModels列举基模型接口响应中获取
 
@@ -65,7 +65,7 @@ class BaseModel:
 
     @base_model_type.setter
     def base_model_type(self, base_model_type):
-        """Sets the base_model_type of this BaseModel.
+        r"""Sets the base_model_type of this BaseModel.
 
         类型请从ListBaseModels列举基模型接口响应中获取
 
@@ -76,7 +76,7 @@ class BaseModel:
 
     @property
     def max_tokens(self):
-        """Gets the max_tokens of this BaseModel.
+        r"""Gets the max_tokens of this BaseModel.
 
         支持的最大token数
 
@@ -87,7 +87,7 @@ class BaseModel:
 
     @max_tokens.setter
     def max_tokens(self, max_tokens):
-        """Sets the max_tokens of this BaseModel.
+        r"""Sets the max_tokens of this BaseModel.
 
         支持的最大token数
 
@@ -98,7 +98,7 @@ class BaseModel:
 
     @property
     def num_of_mu(self):
-        """Gets the num_of_mu of this BaseModel.
+        r"""Gets the num_of_mu of this BaseModel.
 
         消耗MU数量
 
@@ -109,7 +109,7 @@ class BaseModel:
 
     @num_of_mu.setter
     def num_of_mu(self, num_of_mu):
-        """Sets the num_of_mu of this BaseModel.
+        r"""Sets the num_of_mu of this BaseModel.
 
         消耗MU数量
 

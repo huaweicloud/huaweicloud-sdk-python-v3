@@ -27,7 +27,7 @@ class GenerateSurfacePointsRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """GenerateSurfacePointsRequest
+        r"""GenerateSurfacePointsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class GenerateSurfacePointsRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this GenerateSurfacePointsRequest.
+        r"""Gets the eihealth_project_id of this GenerateSurfacePointsRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class GenerateSurfacePointsRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this GenerateSurfacePointsRequest.
+        r"""Sets the eihealth_project_id of this GenerateSurfacePointsRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class GenerateSurfacePointsRequest:
 
     @property
     def body(self):
-        """Gets the body of this GenerateSurfacePointsRequest.
+        r"""Gets the body of this GenerateSurfacePointsRequest.
 
         :return: The body of this GenerateSurfacePointsRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.RunSurfacePointsReq`
@@ -80,7 +80,7 @@ class GenerateSurfacePointsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this GenerateSurfacePointsRequest.
+        r"""Sets the body of this GenerateSurfacePointsRequest.
 
         :param body: The body of this GenerateSurfacePointsRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.RunSurfacePointsReq`

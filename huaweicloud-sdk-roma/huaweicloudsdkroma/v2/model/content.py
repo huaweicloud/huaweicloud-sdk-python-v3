@@ -157,7 +157,7 @@ class Content:
     }
 
     def __init__(self, gauss100_version=None, host=None, port=None, database_name=None, redis_database=None, user_name=None, password=None, mode=None, cdc_mode=None, multi_oracle_address=None, oracle_service_name=None, ftp_connect_mode=None, ftp_protocol=None, address=None, ak=None, sk=None, bucket_name=None, https=None, url=None, api_method=None, auth_method=None, api_auth_detail=None, broker=None, ssl=None, ssl_enable=None, ssl_username=None, ssl_password=None, mongodb_auth_source=None, mongodb_cluster_enable=None, mongodb_replica_set=None, encoding=None, mysql_timeout=None, trust_store_password=None, trust_store=None, trust_store_file_type=None, ssl_auth_method=None, key_store=None, key_store_file_type=None, key_store_password=None, key_store_key_password=None, dis_tunnel_name=None, dis_data_type=None, dis_setting_type=None, dis_endpoint=None, dis_region=None, dis_source_project_id=None, hl7_position=None, hl7_whitelist_enable=None, hl7_whitelist=None, ldap_security_auth_type=None, rabbitmq_virtual_host=None, rabbitmq_ssl_protocol=None, sap_client=None, sap_sysnr=None, snmp_network_protocol=None, snmp_version=None, snmp_community=None, ibmmq_ccs_id=None, ibmmq_queue_manager=None, ibmmq_channel=None, ibmmq_cipher_suite=None, hdfs_path=None, principal_name=None, config_file_name=None, config_file_content=None, connection_instance_id=None, connector_params=None):
-        """Content
+        r"""Content
 
         The model defined in huaweicloud sdk
 
@@ -505,7 +505,7 @@ class Content:
 
     @property
     def gauss100_version(self):
-        """Gets the gauss100_version of this Content.
+        r"""Gets the gauss100_version of this Content.
 
         gauss100的版本号 - V100R003C20 - V300R001C00
 
@@ -516,7 +516,7 @@ class Content:
 
     @gauss100_version.setter
     def gauss100_version(self, gauss100_version):
-        """Sets the gauss100_version of this Content.
+        r"""Sets the gauss100_version of this Content.
 
         gauss100的版本号 - V100R003C20 - V300R001C00
 
@@ -527,7 +527,7 @@ class Content:
 
     @property
     def host(self):
-        """Gets the host of this Content.
+        r"""Gets the host of this Content.
 
         主机IP地址 - 数据源为DWS、HANA、RABBITMQ、SAP、SNMP、IBMMQ类型时需要配置。 - 数据源为MYSQL、ORACLE、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ARTEMISMQ、POSTGRESQL、HIVE类型且mode为default时需要配置。 - 数据源为HL7类型且作为目标端（position为target）时需要配置。 - 初始值为空，配置任务启动后生成host
 
@@ -538,7 +538,7 @@ class Content:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this Content.
+        r"""Sets the host of this Content.
 
         主机IP地址 - 数据源为DWS、HANA、RABBITMQ、SAP、SNMP、IBMMQ类型时需要配置。 - 数据源为MYSQL、ORACLE、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ARTEMISMQ、POSTGRESQL、HIVE类型且mode为default时需要配置。 - 数据源为HL7类型且作为目标端（position为target）时需要配置。 - 初始值为空，配置任务启动后生成host
 
@@ -549,7 +549,7 @@ class Content:
 
     @property
     def port(self):
-        """Gets the port of this Content.
+        r"""Gets the port of this Content.
 
         端口，端口号为0到65535 - 数据源为DWS、HANA、RABBITMQ、SAP、SNMP、IBMMQ，obs类型时需要配置， - 数据源为MYSQL、ORACLE、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ARTEMISMQ、POSTGRESQL、HIVE类型且mode为default时需要配置， - 数据源为HL7类型且作为目标端（position为target）时需要配置
 
@@ -560,7 +560,7 @@ class Content:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this Content.
+        r"""Sets the port of this Content.
 
         端口，端口号为0到65535 - 数据源为DWS、HANA、RABBITMQ、SAP、SNMP、IBMMQ，obs类型时需要配置， - 数据源为MYSQL、ORACLE、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ARTEMISMQ、POSTGRESQL、HIVE类型且mode为default时需要配置， - 数据源为HL7类型且作为目标端（position为target）时需要配置
 
@@ -571,7 +571,7 @@ class Content:
 
     @property
     def database_name(self):
-        """Gets the database_name of this Content.
+        r"""Gets the database_name of this Content.
 
         数据库名称 - 数据源为DWS、HANA、RABBITMQ、SAP、SNMP、IBMMQ，obs类型时需要配置， - 数据源为MYSQL、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ARTEMISMQ、POSTGRESQL、HIVE类型且mode为default时需要配置， - 数据源为ORACLE类型且mode为（default、multiAddress）时需要配置
 
@@ -582,7 +582,7 @@ class Content:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this Content.
+        r"""Sets the database_name of this Content.
 
         数据库名称 - 数据源为DWS、HANA、RABBITMQ、SAP、SNMP、IBMMQ，obs类型时需要配置， - 数据源为MYSQL、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ARTEMISMQ、POSTGRESQL、HIVE类型且mode为default时需要配置， - 数据源为ORACLE类型且mode为（default、multiAddress）时需要配置
 
@@ -593,7 +593,7 @@ class Content:
 
     @property
     def redis_database(self):
-        """Gets the redis_database of this Content.
+        r"""Gets the redis_database of this Content.
 
         REDIS数据源类型配置，数据库编号, 纯数字编码
 
@@ -604,7 +604,7 @@ class Content:
 
     @redis_database.setter
     def redis_database(self, redis_database):
-        """Sets the redis_database of this Content.
+        r"""Sets the redis_database of this Content.
 
         REDIS数据源类型配置，数据库编号, 纯数字编码
 
@@ -615,7 +615,7 @@ class Content:
 
     @property
     def user_name(self):
-        """Gets the user_name of this Content.
+        r"""Gets the user_name of this Content.
 
         访问服务的用户名 - 数据源为MYSQL、DWS、FTP、ORACLE、MONGODB、HANA、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ACTIVEMQ、ARTEMISMQ、POSTGRESQL、RABBITMQ、SAP、IBMMQ、HIVE类型时需要配置 - 数据源为WEBSOCKET类型，认证方式（basicauth）时需要配置 - 数据源为LDAP，安全认证类型（security_auth_type）为simple时需要配置
 
@@ -626,7 +626,7 @@ class Content:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this Content.
+        r"""Sets the user_name of this Content.
 
         访问服务的用户名 - 数据源为MYSQL、DWS、FTP、ORACLE、MONGODB、HANA、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ACTIVEMQ、ARTEMISMQ、POSTGRESQL、RABBITMQ、SAP、IBMMQ、HIVE类型时需要配置 - 数据源为WEBSOCKET类型，认证方式（basicauth）时需要配置 - 数据源为LDAP，安全认证类型（security_auth_type）为simple时需要配置
 
@@ -637,7 +637,7 @@ class Content:
 
     @property
     def password(self):
-        """Gets the password of this Content.
+        r"""Gets the password of this Content.
 
         访问服务的密码 - 数据源为MYSQL、DWS、FTP、ORACLE、MONGODB、HANA、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ACTIVEMQ、ARTEMISMQ、POSTGRESQL、RABBITMQ、SAP、IBMMQ、HIVE类型时需要配置 - 数据源为WEBSOCKET，且认证方式（basicauth）时需要配置 - 数据源为LDAP，且安全认证类型（security_auth_type）为simple时需要配置
 
@@ -648,7 +648,7 @@ class Content:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this Content.
+        r"""Sets the password of this Content.
 
         访问服务的密码 - 数据源为MYSQL、DWS、FTP、ORACLE、MONGODB、HANA、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、ACTIVEMQ、ARTEMISMQ、POSTGRESQL、RABBITMQ、SAP、IBMMQ、HIVE类型时需要配置 - 数据源为WEBSOCKET，且认证方式（basicauth）时需要配置 - 数据源为LDAP，且安全认证类型（security_auth_type）为simple时需要配置
 
@@ -659,7 +659,7 @@ class Content:
 
     @property
     def mode(self):
-        """Gets the mode of this Content.
+        r"""Gets the mode of this Content.
 
         数据源连接模式 - 数据源为DWS、MONGODB、REDIS、HANA时配置默认， - 数据源为MYSQL、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、POSTGRESQL、HIVE时配置（default,professional）， - 数据源为ORACLE时配置专有的模式multiAddress - default (默认模式) - professional (专业模式) - multiAddress (多地址)
 
@@ -670,7 +670,7 @@ class Content:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this Content.
+        r"""Sets the mode of this Content.
 
         数据源连接模式 - 数据源为DWS、MONGODB、REDIS、HANA时配置默认， - 数据源为MYSQL、SQLSERVER、DB2、GAUSS200、GAUSS100、TAURUS、POSTGRESQL、HIVE时配置（default,professional）， - 数据源为ORACLE时配置专有的模式multiAddress - default (默认模式) - professional (专业模式) - multiAddress (多地址)
 
@@ -681,7 +681,7 @@ class Content:
 
     @property
     def cdc_mode(self):
-        """Gets the cdc_mode of this Content.
+        r"""Gets the cdc_mode of this Content.
 
         cdc模式，只有组合任务使用
 
@@ -692,7 +692,7 @@ class Content:
 
     @cdc_mode.setter
     def cdc_mode(self, cdc_mode):
-        """Sets the cdc_mode of this Content.
+        r"""Sets the cdc_mode of this Content.
 
         cdc模式，只有组合任务使用
 
@@ -703,7 +703,7 @@ class Content:
 
     @property
     def multi_oracle_address(self):
-        """Gets the multi_oracle_address of this Content.
+        r"""Gets the multi_oracle_address of this Content.
 
         ORACLE集群地址，当mode为multiAddress时需要配置
 
@@ -714,7 +714,7 @@ class Content:
 
     @multi_oracle_address.setter
     def multi_oracle_address(self, multi_oracle_address):
-        """Sets the multi_oracle_address of this Content.
+        r"""Sets the multi_oracle_address of this Content.
 
         ORACLE集群地址，当mode为multiAddress时需要配置
 
@@ -725,7 +725,7 @@ class Content:
 
     @property
     def oracle_service_name(self):
-        """Gets the oracle_service_name of this Content.
+        r"""Gets the oracle_service_name of this Content.
 
         ORACLE集群服务名
 
@@ -736,7 +736,7 @@ class Content:
 
     @oracle_service_name.setter
     def oracle_service_name(self, oracle_service_name):
-        """Sets the oracle_service_name of this Content.
+        r"""Sets the oracle_service_name of this Content.
 
         ORACLE集群服务名
 
@@ -747,7 +747,7 @@ class Content:
 
     @property
     def ftp_connect_mode(self):
-        """Gets the ftp_connect_mode of this Content.
+        r"""Gets the ftp_connect_mode of this Content.
 
         访问FTP服务的连接模式 - active (主动模式) - passive (被动模式)
 
@@ -758,7 +758,7 @@ class Content:
 
     @ftp_connect_mode.setter
     def ftp_connect_mode(self, ftp_connect_mode):
-        """Sets the ftp_connect_mode of this Content.
+        r"""Sets the ftp_connect_mode of this Content.
 
         访问FTP服务的连接模式 - active (主动模式) - passive (被动模式)
 
@@ -769,7 +769,7 @@ class Content:
 
     @property
     def ftp_protocol(self):
-        """Gets the ftp_protocol of this Content.
+        r"""Gets the ftp_protocol of this Content.
 
         访问FTP服务协议类型 - sftp - ftp
 
@@ -780,7 +780,7 @@ class Content:
 
     @ftp_protocol.setter
     def ftp_protocol(self, ftp_protocol):
-        """Sets the ftp_protocol of this Content.
+        r"""Sets the ftp_protocol of this Content.
 
         访问FTP服务协议类型 - sftp - ftp
 
@@ -791,7 +791,7 @@ class Content:
 
     @property
     def address(self):
-        """Gets the address of this Content.
+        r"""Gets the address of this Content.
 
         地址 - OBS (obs远端地址，obs数据源使用) - MONGODB (MONGODB数据源类型主机IP地址，多个IP:PORT, 使用\",\"隔开) - REDIS (redis服务地址，多个IP:PORT, 使用\",\"隔开)
 
@@ -802,7 +802,7 @@ class Content:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this Content.
+        r"""Sets the address of this Content.
 
         地址 - OBS (obs远端地址，obs数据源使用) - MONGODB (MONGODB数据源类型主机IP地址，多个IP:PORT, 使用\",\"隔开) - REDIS (redis服务地址，多个IP:PORT, 使用\",\"隔开)
 
@@ -813,7 +813,7 @@ class Content:
 
     @property
     def ak(self):
-        """Gets the ak of this Content.
+        r"""Gets the ak of this Content.
 
         Access Key ID - 数据源为OBS，DIS类型时需要配置
 
@@ -824,7 +824,7 @@ class Content:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this Content.
+        r"""Sets the ak of this Content.
 
         Access Key ID - 数据源为OBS，DIS类型时需要配置
 
@@ -835,7 +835,7 @@ class Content:
 
     @property
     def sk(self):
-        """Gets the sk of this Content.
+        r"""Gets the sk of this Content.
 
         Secret Access Key - 数据源为OBS，DIS类型时需要配置
 
@@ -846,7 +846,7 @@ class Content:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this Content.
+        r"""Sets the sk of this Content.
 
         Secret Access Key - 数据源为OBS，DIS类型时需要配置
 
@@ -857,7 +857,7 @@ class Content:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this Content.
+        r"""Gets the bucket_name of this Content.
 
         桶名称，数据源为OBS时需要配置
 
@@ -868,7 +868,7 @@ class Content:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this Content.
+        r"""Sets the bucket_name of this Content.
 
         桶名称，数据源为OBS时需要配置
 
@@ -879,7 +879,7 @@ class Content:
 
     @property
     def https(self):
-        """Gets the https of this Content.
+        r"""Gets the https of this Content.
 
         是否使用https, 数据源为OBS时需要配置，一般默认使用
 
@@ -890,7 +890,7 @@ class Content:
 
     @https.setter
     def https(self, https):
-        """Sets the https of this Content.
+        r"""Sets the https of this Content.
 
         是否使用https, 数据源为OBS时需要配置，一般默认使用
 
@@ -901,7 +901,7 @@ class Content:
 
     @property
     def url(self):
-        """Gets the url of this Content.
+        r"""Gets the url of this Content.
 
         连接字符串，访问url - 数据源为API、LDAP、WEBSOCKE类型时需要配置， - 数据源为MYSQL、ORACLE、DB2、GAUSS200、GAUSS100、TAURUS、POSTGRESQL，且mode配置为professional专业时需要配置
 
@@ -912,7 +912,7 @@ class Content:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this Content.
+        r"""Sets the url of this Content.
 
         连接字符串，访问url - 数据源为API、LDAP、WEBSOCKE类型时需要配置， - 数据源为MYSQL、ORACLE、DB2、GAUSS200、GAUSS100、TAURUS、POSTGRESQL，且mode配置为professional专业时需要配置
 
@@ -923,7 +923,7 @@ class Content:
 
     @property
     def api_method(self):
-        """Gets the api_method of this Content.
+        r"""Gets the api_method of this Content.
 
         访问API请求方式 - POST - PUT - DELETE - PATCH - GET
 
@@ -934,7 +934,7 @@ class Content:
 
     @api_method.setter
     def api_method(self, api_method):
-        """Sets the api_method of this Content.
+        r"""Sets the api_method of this Content.
 
         访问API请求方式 - POST - PUT - DELETE - PATCH - GET
 
@@ -945,7 +945,7 @@ class Content:
 
     @property
     def auth_method(self):
-        """Gets the auth_method of this Content.
+        r"""Gets the auth_method of this Content.
 
         访问WEBSOCKET服务的认证方式 - none - basicauth
 
@@ -956,7 +956,7 @@ class Content:
 
     @auth_method.setter
     def auth_method(self, auth_method):
-        """Sets the auth_method of this Content.
+        r"""Sets the auth_method of this Content.
 
         访问WEBSOCKET服务的认证方式 - none - basicauth
 
@@ -967,7 +967,7 @@ class Content:
 
     @property
     def api_auth_detail(self):
-        """Gets the api_auth_detail of this Content.
+        r"""Gets the api_auth_detail of this Content.
 
         :return: The api_auth_detail of this Content.
         :rtype: :class:`huaweicloudsdkroma.v2.ApiAuthDetail`
@@ -976,7 +976,7 @@ class Content:
 
     @api_auth_detail.setter
     def api_auth_detail(self, api_auth_detail):
-        """Sets the api_auth_detail of this Content.
+        r"""Sets the api_auth_detail of this Content.
 
         :param api_auth_detail: The api_auth_detail of this Content.
         :type api_auth_detail: :class:`huaweicloudsdkroma.v2.ApiAuthDetail`
@@ -985,7 +985,7 @@ class Content:
 
     @property
     def broker(self):
-        """Gets the broker of this Content.
+        r"""Gets the broker of this Content.
 
         KAFKA、ACTIVEMQ的服务器地址，多个IP:PORT, 使用\",\"分隔
 
@@ -996,7 +996,7 @@ class Content:
 
     @broker.setter
     def broker(self, broker):
-        """Sets the broker of this Content.
+        r"""Sets the broker of this Content.
 
         KAFKA、ACTIVEMQ的服务器地址，多个IP:PORT, 使用\",\"分隔
 
@@ -1007,7 +1007,7 @@ class Content:
 
     @property
     def ssl(self):
-        """Gets the ssl of this Content.
+        r"""Gets the ssl of this Content.
 
         是否开启SSL认证 - 连接MQS内网地址时，若MQS开启了SSL，请选择“是”
 
@@ -1018,7 +1018,7 @@ class Content:
 
     @ssl.setter
     def ssl(self, ssl):
-        """Sets the ssl of this Content.
+        r"""Sets the ssl of this Content.
 
         是否开启SSL认证 - 连接MQS内网地址时，若MQS开启了SSL，请选择“是”
 
@@ -1029,7 +1029,7 @@ class Content:
 
     @property
     def ssl_enable(self):
-        """Gets the ssl_enable of this Content.
+        r"""Gets the ssl_enable of this Content.
 
         是否开启SSL认证 - 数据源为KAFKA时需要配置，连接MQS内网地址时，若MQS同时开启了SSL与VPC内网明文访问，请选择“否” - 数据源为ARTEMISMQ、ACTIVEMQ、RABBITMQ、IBMMQ时需要配置， - 数据源为HL7时且作为源端时需要配置
 
@@ -1040,7 +1040,7 @@ class Content:
 
     @ssl_enable.setter
     def ssl_enable(self, ssl_enable):
-        """Sets the ssl_enable of this Content.
+        r"""Sets the ssl_enable of this Content.
 
         是否开启SSL认证 - 数据源为KAFKA时需要配置，连接MQS内网地址时，若MQS同时开启了SSL与VPC内网明文访问，请选择“否” - 数据源为ARTEMISMQ、ACTIVEMQ、RABBITMQ、IBMMQ时需要配置， - 数据源为HL7时且作为源端时需要配置
 
@@ -1051,7 +1051,7 @@ class Content:
 
     @property
     def ssl_username(self):
-        """Gets the ssl_username of this Content.
+        r"""Gets the ssl_username of this Content.
 
         SSL用户名/应用Key - 数据源为KAFKA且开启SSL认证时需要配置
 
@@ -1062,7 +1062,7 @@ class Content:
 
     @ssl_username.setter
     def ssl_username(self, ssl_username):
-        """Sets the ssl_username of this Content.
+        r"""Sets the ssl_username of this Content.
 
         SSL用户名/应用Key - 数据源为KAFKA且开启SSL认证时需要配置
 
@@ -1073,7 +1073,7 @@ class Content:
 
     @property
     def ssl_password(self):
-        """Gets the ssl_password of this Content.
+        r"""Gets the ssl_password of this Content.
 
         SSL密码/应用Secret - 数据源为KAFKA且开启SSL认证时需要配置
 
@@ -1084,7 +1084,7 @@ class Content:
 
     @ssl_password.setter
     def ssl_password(self, ssl_password):
-        """Sets the ssl_password of this Content.
+        r"""Sets the ssl_password of this Content.
 
         SSL密码/应用Secret - 数据源为KAFKA且开启SSL认证时需要配置
 
@@ -1095,7 +1095,7 @@ class Content:
 
     @property
     def mongodb_auth_source(self):
-        """Gets the mongodb_auth_source of this Content.
+        r"""Gets the mongodb_auth_source of this Content.
 
         MONGODB认证源
 
@@ -1106,7 +1106,7 @@ class Content:
 
     @mongodb_auth_source.setter
     def mongodb_auth_source(self, mongodb_auth_source):
-        """Sets the mongodb_auth_source of this Content.
+        r"""Sets the mongodb_auth_source of this Content.
 
         MONGODB认证源
 
@@ -1117,7 +1117,7 @@ class Content:
 
     @property
     def mongodb_cluster_enable(self):
-        """Gets the mongodb_cluster_enable of this Content.
+        r"""Gets the mongodb_cluster_enable of this Content.
 
         MONGODB集群模式 - true (集群模式) - false （非集群模式）
 
@@ -1128,7 +1128,7 @@ class Content:
 
     @mongodb_cluster_enable.setter
     def mongodb_cluster_enable(self, mongodb_cluster_enable):
-        """Sets the mongodb_cluster_enable of this Content.
+        r"""Sets the mongodb_cluster_enable of this Content.
 
         MONGODB集群模式 - true (集群模式) - false （非集群模式）
 
@@ -1139,7 +1139,7 @@ class Content:
 
     @property
     def mongodb_replica_set(self):
-        """Gets the mongodb_replica_set of this Content.
+        r"""Gets the mongodb_replica_set of this Content.
 
         MONGODB副本集 当MONGODB为非集群模式时配置
 
@@ -1150,7 +1150,7 @@ class Content:
 
     @mongodb_replica_set.setter
     def mongodb_replica_set(self, mongodb_replica_set):
-        """Sets the mongodb_replica_set of this Content.
+        r"""Sets the mongodb_replica_set of this Content.
 
         MONGODB副本集 当MONGODB为非集群模式时配置
 
@@ -1161,7 +1161,7 @@ class Content:
 
     @property
     def encoding(self):
-        """Gets the encoding of this Content.
+        r"""Gets the encoding of this Content.
 
         编码格式 - 数据源为GAUSS200、GAUSS100、POSTGRESQL类型时配置\"big5\"， - 数据源为MYSQL、TAURUS类型且mode为default时配置
 
@@ -1172,7 +1172,7 @@ class Content:
 
     @encoding.setter
     def encoding(self, encoding):
-        """Sets the encoding of this Content.
+        r"""Sets the encoding of this Content.
 
         编码格式 - 数据源为GAUSS200、GAUSS100、POSTGRESQL类型时配置\"big5\"， - 数据源为MYSQL、TAURUS类型且mode为default时配置
 
@@ -1183,7 +1183,7 @@ class Content:
 
     @property
     def mysql_timeout(self):
-        """Gets the mysql_timeout of this Content.
+        r"""Gets the mysql_timeout of this Content.
 
         MYSQL连接超时时间（秒）
 
@@ -1194,7 +1194,7 @@ class Content:
 
     @mysql_timeout.setter
     def mysql_timeout(self, mysql_timeout):
-        """Sets the mysql_timeout of this Content.
+        r"""Sets the mysql_timeout of this Content.
 
         MYSQL连接超时时间（秒）
 
@@ -1205,7 +1205,7 @@ class Content:
 
     @property
     def trust_store_password(self):
-        """Gets the trust_store_password of this Content.
+        r"""Gets the trust_store_password of this Content.
 
         公钥库密码 - 数据源类型为ACTIVEMQ、ARTEMISMQ、RABBITMQ、IBMMQ且开启SSL认证时需要配置 - 数据源类为HL7且HL7为目标端（position为target）时，并且开启SSL认证时需要配置
 
@@ -1216,7 +1216,7 @@ class Content:
 
     @trust_store_password.setter
     def trust_store_password(self, trust_store_password):
-        """Sets the trust_store_password of this Content.
+        r"""Sets the trust_store_password of this Content.
 
         公钥库密码 - 数据源类型为ACTIVEMQ、ARTEMISMQ、RABBITMQ、IBMMQ且开启SSL认证时需要配置 - 数据源类为HL7且HL7为目标端（position为target）时，并且开启SSL认证时需要配置
 
@@ -1227,7 +1227,7 @@ class Content:
 
     @property
     def trust_store(self):
-        """Gets the trust_store of this Content.
+        r"""Gets the trust_store of this Content.
 
         - 数据源类型为ACTIVEMQ、ARTEMISMQ、RABBITMQ、IBMMQ且开启SSL认证时需要配置，公钥库密码 - 数据源类型为HL7且为目标端（position为target），并且开启SSL认证时需要配置，公钥库密码
 
@@ -1238,7 +1238,7 @@ class Content:
 
     @trust_store.setter
     def trust_store(self, trust_store):
-        """Sets the trust_store of this Content.
+        r"""Sets the trust_store of this Content.
 
         - 数据源类型为ACTIVEMQ、ARTEMISMQ、RABBITMQ、IBMMQ且开启SSL认证时需要配置，公钥库密码 - 数据源类型为HL7且为目标端（position为target），并且开启SSL认证时需要配置，公钥库密码
 
@@ -1249,7 +1249,7 @@ class Content:
 
     @property
     def trust_store_file_type(self):
-        """Gets the trust_store_file_type of this Content.
+        r"""Gets the trust_store_file_type of this Content.
 
         - 数据源类型为ACTIVEMQ、ARTEMISMQ、RABBITMQ、IBMMQ且开启SSL认证时需要配置，公钥库密码 - 数据源类型为HL7且为目标端（position为target），并且开启SSL认证时需要配置，公钥库密码
 
@@ -1260,7 +1260,7 @@ class Content:
 
     @trust_store_file_type.setter
     def trust_store_file_type(self, trust_store_file_type):
-        """Sets the trust_store_file_type of this Content.
+        r"""Sets the trust_store_file_type of this Content.
 
         - 数据源类型为ACTIVEMQ、ARTEMISMQ、RABBITMQ、IBMMQ且开启SSL认证时需要配置，公钥库密码 - 数据源类型为HL7且为目标端（position为target），并且开启SSL认证时需要配置，公钥库密码
 
@@ -1271,7 +1271,7 @@ class Content:
 
     @property
     def ssl_auth_method(self):
-        """Gets the ssl_auth_method of this Content.
+        r"""Gets the ssl_auth_method of this Content.
 
         数据源类型为ACTIVEMQ、ARTEMISMQ且开启SSL认证时需要配置 - one-way (单向认证) - two-way (双向认证)
 
@@ -1282,7 +1282,7 @@ class Content:
 
     @ssl_auth_method.setter
     def ssl_auth_method(self, ssl_auth_method):
-        """Sets the ssl_auth_method of this Content.
+        r"""Sets the ssl_auth_method of this Content.
 
         数据源类型为ACTIVEMQ、ARTEMISMQ且开启SSL认证时需要配置 - one-way (单向认证) - two-way (双向认证)
 
@@ -1293,7 +1293,7 @@ class Content:
 
     @property
     def key_store(self):
-        """Gets the key_store of this Content.
+        r"""Gets the key_store of this Content.
 
         私钥库文件内容， - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置 - 数据源类型HL7且为源端（position为source），并且开启SSL认证时需要配置
 
@@ -1304,7 +1304,7 @@ class Content:
 
     @key_store.setter
     def key_store(self, key_store):
-        """Sets the key_store of this Content.
+        r"""Sets the key_store of this Content.
 
         私钥库文件内容， - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置 - 数据源类型HL7且为源端（position为source），并且开启SSL认证时需要配置
 
@@ -1315,7 +1315,7 @@ class Content:
 
     @property
     def key_store_file_type(self):
-        """Gets the key_store_file_type of this Content.
+        r"""Gets the key_store_file_type of this Content.
 
         私钥库文件类型 - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置
 
@@ -1326,7 +1326,7 @@ class Content:
 
     @key_store_file_type.setter
     def key_store_file_type(self, key_store_file_type):
-        """Sets the key_store_file_type of this Content.
+        r"""Sets the key_store_file_type of this Content.
 
         私钥库文件类型 - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置
 
@@ -1337,7 +1337,7 @@ class Content:
 
     @property
     def key_store_password(self):
-        """Gets the key_store_password of this Content.
+        r"""Gets the key_store_password of this Content.
 
         私钥库密码 - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置 - 数据源为HL7类型，为源端（position为source）并且开启SSL认证时需要配置
 
@@ -1348,7 +1348,7 @@ class Content:
 
     @key_store_password.setter
     def key_store_password(self, key_store_password):
-        """Sets the key_store_password of this Content.
+        r"""Sets the key_store_password of this Content.
 
         私钥库密码 - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置 - 数据源为HL7类型，为源端（position为source）并且开启SSL认证时需要配置
 
@@ -1359,7 +1359,7 @@ class Content:
 
     @property
     def key_store_key_password(self):
-        """Gets the key_store_key_password of this Content.
+        r"""Gets the key_store_key_password of this Content.
 
         私钥库私钥密码 - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置 - 数据源为HL7类型，为源端（position为source）并且开启SSL认证时需要配置
 
@@ -1370,7 +1370,7 @@ class Content:
 
     @key_store_key_password.setter
     def key_store_key_password(self, key_store_key_password):
-        """Sets the key_store_key_password of this Content.
+        r"""Sets the key_store_key_password of this Content.
 
         私钥库私钥密码 - 数据源类型为ACTIVEMQ、ARTEMISMQ，开启SSL认证并且认证方式是two-way时需要配置 - 数据源为HL7类型，为源端（position为source）并且开启SSL认证时需要配置
 
@@ -1381,7 +1381,7 @@ class Content:
 
     @property
     def dis_tunnel_name(self):
-        """Gets the dis_tunnel_name of this Content.
+        r"""Gets the dis_tunnel_name of this Content.
 
         DIS通道名称
 
@@ -1392,7 +1392,7 @@ class Content:
 
     @dis_tunnel_name.setter
     def dis_tunnel_name(self, dis_tunnel_name):
-        """Sets the dis_tunnel_name of this Content.
+        r"""Sets the dis_tunnel_name of this Content.
 
         DIS通道名称
 
@@ -1403,7 +1403,7 @@ class Content:
 
     @property
     def dis_data_type(self):
-        """Gets the dis_data_type of this Content.
+        r"""Gets the dis_data_type of this Content.
 
         DIS数据类别 - JSON
 
@@ -1414,7 +1414,7 @@ class Content:
 
     @dis_data_type.setter
     def dis_data_type(self, dis_data_type):
-        """Sets the dis_data_type of this Content.
+        r"""Sets the dis_data_type of this Content.
 
         DIS数据类别 - JSON
 
@@ -1425,7 +1425,7 @@ class Content:
 
     @property
     def dis_setting_type(self):
-        """Gets the dis_setting_type of this Content.
+        r"""Gets the dis_setting_type of this Content.
 
         DIS配置类别 - senior (高级) - basic (基础)
 
@@ -1436,7 +1436,7 @@ class Content:
 
     @dis_setting_type.setter
     def dis_setting_type(self, dis_setting_type):
-        """Sets the dis_setting_type of this Content.
+        r"""Sets the dis_setting_type of this Content.
 
         DIS配置类别 - senior (高级) - basic (基础)
 
@@ -1447,7 +1447,7 @@ class Content:
 
     @property
     def dis_endpoint(self):
-        """Gets the dis_endpoint of this Content.
+        r"""Gets the dis_endpoint of this Content.
 
         DIS Endpoint，当setting_type为senior时填写
 
@@ -1458,7 +1458,7 @@ class Content:
 
     @dis_endpoint.setter
     def dis_endpoint(self, dis_endpoint):
-        """Sets the dis_endpoint of this Content.
+        r"""Sets the dis_endpoint of this Content.
 
         DIS Endpoint，当setting_type为senior时填写
 
@@ -1469,7 +1469,7 @@ class Content:
 
     @property
     def dis_region(self):
-        """Gets the dis_region of this Content.
+        r"""Gets the dis_region of this Content.
 
         DIS Region，当setting_type为senior时填写
 
@@ -1480,7 +1480,7 @@ class Content:
 
     @dis_region.setter
     def dis_region(self, dis_region):
-        """Sets the dis_region of this Content.
+        r"""Sets the dis_region of this Content.
 
         DIS Region，当setting_type为senior时填写
 
@@ -1491,7 +1491,7 @@ class Content:
 
     @property
     def dis_source_project_id(self):
-        """Gets the dis_source_project_id of this Content.
+        r"""Gets the dis_source_project_id of this Content.
 
         DIS源端项目id，当setting_type为senior时填写
 
@@ -1502,7 +1502,7 @@ class Content:
 
     @dis_source_project_id.setter
     def dis_source_project_id(self, dis_source_project_id):
-        """Sets the dis_source_project_id of this Content.
+        r"""Sets the dis_source_project_id of this Content.
 
         DIS源端项目id，当setting_type为senior时填写
 
@@ -1513,7 +1513,7 @@ class Content:
 
     @property
     def hl7_position(self):
-        """Gets the hl7_position of this Content.
+        r"""Gets the hl7_position of this Content.
 
         HL7数据源方向 - source (源端) - target (目标端)
 
@@ -1524,7 +1524,7 @@ class Content:
 
     @hl7_position.setter
     def hl7_position(self, hl7_position):
-        """Sets the hl7_position of this Content.
+        r"""Sets the hl7_position of this Content.
 
         HL7数据源方向 - source (源端) - target (目标端)
 
@@ -1535,7 +1535,7 @@ class Content:
 
     @property
     def hl7_whitelist_enable(self):
-        """Gets the hl7_whitelist_enable of this Content.
+        r"""Gets the hl7_whitelist_enable of this Content.
 
         HL7是否开启白名单设置
 
@@ -1546,7 +1546,7 @@ class Content:
 
     @hl7_whitelist_enable.setter
     def hl7_whitelist_enable(self, hl7_whitelist_enable):
-        """Sets the hl7_whitelist_enable of this Content.
+        r"""Sets the hl7_whitelist_enable of this Content.
 
         HL7是否开启白名单设置
 
@@ -1557,7 +1557,7 @@ class Content:
 
     @property
     def hl7_whitelist(self):
-        """Gets the hl7_whitelist of this Content.
+        r"""Gets the hl7_whitelist of this Content.
 
         HL7白名单 - 允许同步数据到源端HL7的服务器地址，当HL7为源端（position为source）并且开启白名单设置(open_whitelist为true)时填写
 
@@ -1568,7 +1568,7 @@ class Content:
 
     @hl7_whitelist.setter
     def hl7_whitelist(self, hl7_whitelist):
-        """Sets the hl7_whitelist of this Content.
+        r"""Sets the hl7_whitelist of this Content.
 
         HL7白名单 - 允许同步数据到源端HL7的服务器地址，当HL7为源端（position为source）并且开启白名单设置(open_whitelist为true)时填写
 
@@ -1579,7 +1579,7 @@ class Content:
 
     @property
     def ldap_security_auth_type(self):
-        """Gets the ldap_security_auth_type of this Content.
+        r"""Gets the ldap_security_auth_type of this Content.
 
         LDAP安全认证类型
 
@@ -1590,7 +1590,7 @@ class Content:
 
     @ldap_security_auth_type.setter
     def ldap_security_auth_type(self, ldap_security_auth_type):
-        """Sets the ldap_security_auth_type of this Content.
+        r"""Sets the ldap_security_auth_type of this Content.
 
         LDAP安全认证类型
 
@@ -1601,7 +1601,7 @@ class Content:
 
     @property
     def rabbitmq_virtual_host(self):
-        """Gets the rabbitmq_virtual_host of this Content.
+        r"""Gets the rabbitmq_virtual_host of this Content.
 
         RABBITMQ虚拟主机
 
@@ -1612,7 +1612,7 @@ class Content:
 
     @rabbitmq_virtual_host.setter
     def rabbitmq_virtual_host(self, rabbitmq_virtual_host):
-        """Sets the rabbitmq_virtual_host of this Content.
+        r"""Sets the rabbitmq_virtual_host of this Content.
 
         RABBITMQ虚拟主机
 
@@ -1623,7 +1623,7 @@ class Content:
 
     @property
     def rabbitmq_ssl_protocol(self):
-        """Gets the rabbitmq_ssl_protocol of this Content.
+        r"""Gets the rabbitmq_ssl_protocol of this Content.
 
         RABBITMQ SSL认证协议 - TLS
 
@@ -1634,7 +1634,7 @@ class Content:
 
     @rabbitmq_ssl_protocol.setter
     def rabbitmq_ssl_protocol(self, rabbitmq_ssl_protocol):
-        """Sets the rabbitmq_ssl_protocol of this Content.
+        r"""Sets the rabbitmq_ssl_protocol of this Content.
 
         RABBITMQ SSL认证协议 - TLS
 
@@ -1645,7 +1645,7 @@ class Content:
 
     @property
     def sap_client(self):
-        """Gets the sap_client of this Content.
+        r"""Gets the sap_client of this Content.
 
         SAP客户端号
 
@@ -1656,7 +1656,7 @@ class Content:
 
     @sap_client.setter
     def sap_client(self, sap_client):
-        """Sets the sap_client of this Content.
+        r"""Sets the sap_client of this Content.
 
         SAP客户端号
 
@@ -1667,7 +1667,7 @@ class Content:
 
     @property
     def sap_sysnr(self):
-        """Gets the sap_sysnr of this Content.
+        r"""Gets the sap_sysnr of this Content.
 
         SAP实例编号
 
@@ -1678,7 +1678,7 @@ class Content:
 
     @sap_sysnr.setter
     def sap_sysnr(self, sap_sysnr):
-        """Sets the sap_sysnr of this Content.
+        r"""Sets the sap_sysnr of this Content.
 
         SAP实例编号
 
@@ -1689,7 +1689,7 @@ class Content:
 
     @property
     def snmp_network_protocol(self):
-        """Gets the snmp_network_protocol of this Content.
+        r"""Gets the snmp_network_protocol of this Content.
 
         SNMP网络协议 - udp - tcp
 
@@ -1700,7 +1700,7 @@ class Content:
 
     @snmp_network_protocol.setter
     def snmp_network_protocol(self, snmp_network_protocol):
-        """Sets the snmp_network_protocol of this Content.
+        r"""Sets the snmp_network_protocol of this Content.
 
         SNMP网络协议 - udp - tcp
 
@@ -1711,7 +1711,7 @@ class Content:
 
     @property
     def snmp_version(self):
-        """Gets the snmp_version of this Content.
+        r"""Gets the snmp_version of this Content.
 
         SNMP版本号
 
@@ -1722,7 +1722,7 @@ class Content:
 
     @snmp_version.setter
     def snmp_version(self, snmp_version):
-        """Sets the snmp_version of this Content.
+        r"""Sets the snmp_version of this Content.
 
         SNMP版本号
 
@@ -1733,7 +1733,7 @@ class Content:
 
     @property
     def snmp_community(self):
-        """Gets the snmp_community of this Content.
+        r"""Gets the snmp_community of this Content.
 
         SNMP团体名，用于访问SNMP管理代理的身份认证，相当于访问密码
 
@@ -1744,7 +1744,7 @@ class Content:
 
     @snmp_community.setter
     def snmp_community(self, snmp_community):
-        """Sets the snmp_community of this Content.
+        r"""Sets the snmp_community of this Content.
 
         SNMP团体名，用于访问SNMP管理代理的身份认证，相当于访问密码
 
@@ -1755,7 +1755,7 @@ class Content:
 
     @property
     def ibmmq_ccs_id(self):
-        """Gets the ibmmq_ccs_id of this Content.
+        r"""Gets the ibmmq_ccs_id of this Content.
 
         IBMMQ字符集标识
 
@@ -1766,7 +1766,7 @@ class Content:
 
     @ibmmq_ccs_id.setter
     def ibmmq_ccs_id(self, ibmmq_ccs_id):
-        """Sets the ibmmq_ccs_id of this Content.
+        r"""Sets the ibmmq_ccs_id of this Content.
 
         IBMMQ字符集标识
 
@@ -1777,7 +1777,7 @@ class Content:
 
     @property
     def ibmmq_queue_manager(self):
-        """Gets the ibmmq_queue_manager of this Content.
+        r"""Gets the ibmmq_queue_manager of this Content.
 
         IBMMQ队列管理器
 
@@ -1788,7 +1788,7 @@ class Content:
 
     @ibmmq_queue_manager.setter
     def ibmmq_queue_manager(self, ibmmq_queue_manager):
-        """Sets the ibmmq_queue_manager of this Content.
+        r"""Sets the ibmmq_queue_manager of this Content.
 
         IBMMQ队列管理器
 
@@ -1799,7 +1799,7 @@ class Content:
 
     @property
     def ibmmq_channel(self):
-        """Gets the ibmmq_channel of this Content.
+        r"""Gets the ibmmq_channel of this Content.
 
         IBMMQ通道名称
 
@@ -1810,7 +1810,7 @@ class Content:
 
     @ibmmq_channel.setter
     def ibmmq_channel(self, ibmmq_channel):
-        """Sets the ibmmq_channel of this Content.
+        r"""Sets the ibmmq_channel of this Content.
 
         IBMMQ通道名称
 
@@ -1821,7 +1821,7 @@ class Content:
 
     @property
     def ibmmq_cipher_suite(self):
-        """Gets the ibmmq_cipher_suite of this Content.
+        r"""Gets the ibmmq_cipher_suite of this Content.
 
         IBMMQ密钥算法套件
 
@@ -1832,7 +1832,7 @@ class Content:
 
     @ibmmq_cipher_suite.setter
     def ibmmq_cipher_suite(self, ibmmq_cipher_suite):
-        """Sets the ibmmq_cipher_suite of this Content.
+        r"""Sets the ibmmq_cipher_suite of this Content.
 
         IBMMQ密钥算法套件
 
@@ -1843,7 +1843,7 @@ class Content:
 
     @property
     def hdfs_path(self):
-        """Gets the hdfs_path of this Content.
+        r"""Gets the hdfs_path of this Content.
 
         HDFS URL - 数据源为MRSHIVE、MRSHDFS、FIHDFS、FIHIVE类型时配置 - fihadfs (/fdi/autotest)
 
@@ -1854,7 +1854,7 @@ class Content:
 
     @hdfs_path.setter
     def hdfs_path(self, hdfs_path):
-        """Sets the hdfs_path of this Content.
+        r"""Sets the hdfs_path of this Content.
 
         HDFS URL - 数据源为MRSHIVE、MRSHDFS、FIHDFS、FIHIVE类型时配置 - fihadfs (/fdi/autotest)
 
@@ -1865,7 +1865,7 @@ class Content:
 
     @property
     def principal_name(self):
-        """Gets the principal_name of this Content.
+        r"""Gets the principal_name of this Content.
 
         机机交互用户名 - 数据源为MRSHIVE、MRSHDFS、MRSHBASE、MRSKAFKA、FIHDFS、FIHIVE、FIKAFKA类型时配置
 
@@ -1876,7 +1876,7 @@ class Content:
 
     @principal_name.setter
     def principal_name(self, principal_name):
-        """Sets the principal_name of this Content.
+        r"""Sets the principal_name of this Content.
 
         机机交互用户名 - 数据源为MRSHIVE、MRSHDFS、MRSHBASE、MRSKAFKA、FIHDFS、FIHIVE、FIKAFKA类型时配置
 
@@ -1887,7 +1887,7 @@ class Content:
 
     @property
     def config_file_name(self):
-        """Gets the config_file_name of this Content.
+        r"""Gets the config_file_name of this Content.
 
         - 用户认证文件，文件获取方式参考《ROMA Connect API参考》的“附录>获取数据源配置文件”章节 - 将获取到的文件打包成zip文件，文件名配置在config_file_name中，内容以BASE64编码形式放到config_file_content。 - 数据源为MRSHIVE、MRSHDFS、MRSHBASE、MRSKAFKA、FIHDFS、FIHIVE、FIKAFKA类型时配置
 
@@ -1898,7 +1898,7 @@ class Content:
 
     @config_file_name.setter
     def config_file_name(self, config_file_name):
-        """Sets the config_file_name of this Content.
+        r"""Sets the config_file_name of this Content.
 
         - 用户认证文件，文件获取方式参考《ROMA Connect API参考》的“附录>获取数据源配置文件”章节 - 将获取到的文件打包成zip文件，文件名配置在config_file_name中，内容以BASE64编码形式放到config_file_content。 - 数据源为MRSHIVE、MRSHDFS、MRSHBASE、MRSKAFKA、FIHDFS、FIHIVE、FIKAFKA类型时配置
 
@@ -1909,7 +1909,7 @@ class Content:
 
     @property
     def config_file_content(self):
-        """Gets the config_file_content of this Content.
+        r"""Gets the config_file_content of this Content.
 
         - 用户认证文件内容，config_file_name对应的文件内容BASE64编码 - 数据源为MRSHIVE、MRSHDFS、MRSHBASE、MRSKAFKA、FIHDFS、FIHIVE、FIKAFKA类型时配置
 
@@ -1920,7 +1920,7 @@ class Content:
 
     @config_file_content.setter
     def config_file_content(self, config_file_content):
-        """Sets the config_file_content of this Content.
+        r"""Sets the config_file_content of this Content.
 
         - 用户认证文件内容，config_file_name对应的文件内容BASE64编码 - 数据源为MRSHIVE、MRSHDFS、MRSHBASE、MRSKAFKA、FIHDFS、FIHIVE、FIKAFKA类型时配置
 
@@ -1931,7 +1931,7 @@ class Content:
 
     @property
     def connection_instance_id(self):
-        """Gets the connection_instance_id of this Content.
+        r"""Gets the connection_instance_id of this Content.
 
         连接器实例ID，连接器发布后对应的实例ID
 
@@ -1942,7 +1942,7 @@ class Content:
 
     @connection_instance_id.setter
     def connection_instance_id(self, connection_instance_id):
-        """Sets the connection_instance_id of this Content.
+        r"""Sets the connection_instance_id of this Content.
 
         连接器实例ID，连接器发布后对应的实例ID
 
@@ -1953,7 +1953,7 @@ class Content:
 
     @property
     def connector_params(self):
-        """Gets the connector_params of this Content.
+        r"""Gets the connector_params of this Content.
 
         连接器对应的数据源参数，值按实际填写
 
@@ -1964,7 +1964,7 @@ class Content:
 
     @connector_params.setter
     def connector_params(self, connector_params):
-        """Sets the connector_params of this Content.
+        r"""Sets the connector_params of this Content.
 
         连接器对应的数据源参数，值按实际填写
 

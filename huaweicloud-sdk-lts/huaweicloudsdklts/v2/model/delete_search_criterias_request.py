@@ -29,7 +29,7 @@ class DeleteSearchCriteriasRequest:
     }
 
     def __init__(self, group_id=None, topic_id=None, body=None):
-        """DeleteSearchCriteriasRequest
+        r"""DeleteSearchCriteriasRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteSearchCriteriasRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeleteSearchCriteriasRequest.
+        r"""Gets the group_id of this DeleteSearchCriteriasRequest.
 
         租户想查询的日志流所在的日志组的groupid，一般为36位字符串。  缺省值：None  最小长度：36  最大长度：36
 
@@ -66,7 +66,7 @@ class DeleteSearchCriteriasRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeleteSearchCriteriasRequest.
+        r"""Sets the group_id of this DeleteSearchCriteriasRequest.
 
         租户想查询的日志流所在的日志组的groupid，一般为36位字符串。  缺省值：None  最小长度：36  最大长度：36
 
@@ -77,7 +77,7 @@ class DeleteSearchCriteriasRequest:
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this DeleteSearchCriteriasRequest.
+        r"""Gets the topic_id of this DeleteSearchCriteriasRequest.
 
         日志流id
 
@@ -88,7 +88,7 @@ class DeleteSearchCriteriasRequest:
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this DeleteSearchCriteriasRequest.
+        r"""Sets the topic_id of this DeleteSearchCriteriasRequest.
 
         日志流id
 
@@ -99,7 +99,7 @@ class DeleteSearchCriteriasRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteSearchCriteriasRequest.
+        r"""Gets the body of this DeleteSearchCriteriasRequest.
 
         :return: The body of this DeleteSearchCriteriasRequest.
         :rtype: :class:`huaweicloudsdklts.v2.DeleteSearchCriterias`
@@ -108,7 +108,7 @@ class DeleteSearchCriteriasRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteSearchCriteriasRequest.
+        r"""Sets the body of this DeleteSearchCriteriasRequest.
 
         :param body: The body of this DeleteSearchCriteriasRequest.
         :type body: :class:`huaweicloudsdklts.v2.DeleteSearchCriterias`

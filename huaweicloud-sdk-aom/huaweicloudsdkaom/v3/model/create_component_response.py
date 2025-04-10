@@ -26,7 +26,7 @@ class CreateComponentResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateComponentResponse
+        r"""CreateComponentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateComponentResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateComponentResponse.
+        r"""Gets the id of this CreateComponentResponse.
 
         对象id
 
@@ -55,7 +55,7 @@ class CreateComponentResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateComponentResponse.
+        r"""Sets the id of this CreateComponentResponse.
 
         对象id
 

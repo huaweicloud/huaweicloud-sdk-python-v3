@@ -65,7 +65,7 @@ class GetUserResponse(SdkResponse):
     }
 
     def __init__(self, id=None, external_id=None, meta=None, schemas=None, user_name=None, name=None, display_name=None, active=None, emails=None, user_type=None, nick_name=None, title=None, preferred_language=None, locale=None, timezone=None, addresses=None, phone_numbers=None, urnietfparamsscimschemasextensionenterprise2_0_user=None):
-        """GetUserResponse
+        r"""GetUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -168,7 +168,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this GetUserResponse.
+        r"""Gets the id of this GetUserResponse.
 
         用户的全局唯一标识符（ID）
 
@@ -179,7 +179,7 @@ class GetUserResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetUserResponse.
+        r"""Sets the id of this GetUserResponse.
 
         用户的全局唯一标识符（ID）
 
@@ -190,7 +190,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def external_id(self):
-        """Gets the external_id of this GetUserResponse.
+        r"""Gets the external_id of this GetUserResponse.
 
         外部标识符
 
@@ -201,7 +201,7 @@ class GetUserResponse(SdkResponse):
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this GetUserResponse.
+        r"""Sets the external_id of this GetUserResponse.
 
         外部标识符
 
@@ -212,7 +212,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def meta(self):
-        """Gets the meta of this GetUserResponse.
+        r"""Gets the meta of this GetUserResponse.
 
         :return: The meta of this GetUserResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.MetaDto`
@@ -221,7 +221,7 @@ class GetUserResponse(SdkResponse):
 
     @meta.setter
     def meta(self, meta):
-        """Sets the meta of this GetUserResponse.
+        r"""Sets the meta of this GetUserResponse.
 
         :param meta: The meta of this GetUserResponse.
         :type meta: :class:`huaweicloudsdkidentitycenterscim.v1.MetaDto`
@@ -230,7 +230,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def schemas(self):
-        """Gets the schemas of this GetUserResponse.
+        r"""Gets the schemas of this GetUserResponse.
 
         概要
 
@@ -241,7 +241,7 @@ class GetUserResponse(SdkResponse):
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this GetUserResponse.
+        r"""Sets the schemas of this GetUserResponse.
 
         概要
 
@@ -252,7 +252,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this GetUserResponse.
+        r"""Gets the user_name of this GetUserResponse.
 
         用户名，用于标识用户的唯一字符串
 
@@ -263,7 +263,7 @@ class GetUserResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this GetUserResponse.
+        r"""Sets the user_name of this GetUserResponse.
 
         用户名，用于标识用户的唯一字符串
 
@@ -274,7 +274,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this GetUserResponse.
+        r"""Gets the name of this GetUserResponse.
 
         :return: The name of this GetUserResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.NameDto`
@@ -283,7 +283,7 @@ class GetUserResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetUserResponse.
+        r"""Sets the name of this GetUserResponse.
 
         :param name: The name of this GetUserResponse.
         :type name: :class:`huaweicloudsdkidentitycenterscim.v1.NameDto`
@@ -292,7 +292,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def display_name(self):
-        """Gets the display_name of this GetUserResponse.
+        r"""Gets the display_name of this GetUserResponse.
 
         包含用户显示名称的字符串
 
@@ -303,7 +303,7 @@ class GetUserResponse(SdkResponse):
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this GetUserResponse.
+        r"""Sets the display_name of this GetUserResponse.
 
         包含用户显示名称的字符串
 
@@ -314,7 +314,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def active(self):
-        """Gets the active of this GetUserResponse.
+        r"""Gets the active of this GetUserResponse.
 
         表示用户是否启用
 
@@ -325,7 +325,7 @@ class GetUserResponse(SdkResponse):
 
     @active.setter
     def active(self, active):
-        """Sets the active of this GetUserResponse.
+        r"""Sets the active of this GetUserResponse.
 
         表示用户是否启用
 
@@ -336,7 +336,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def emails(self):
-        """Gets the emails of this GetUserResponse.
+        r"""Gets the emails of this GetUserResponse.
 
         包含用户的电子邮箱信息的对象列表
 
@@ -347,7 +347,7 @@ class GetUserResponse(SdkResponse):
 
     @emails.setter
     def emails(self, emails):
-        """Sets the emails of this GetUserResponse.
+        r"""Sets the emails of this GetUserResponse.
 
         包含用户的电子邮箱信息的对象列表
 
@@ -358,7 +358,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def user_type(self):
-        """Gets the user_type of this GetUserResponse.
+        r"""Gets the user_type of this GetUserResponse.
 
         指示用户类型的字符串
 
@@ -369,7 +369,7 @@ class GetUserResponse(SdkResponse):
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this GetUserResponse.
+        r"""Sets the user_type of this GetUserResponse.
 
         指示用户类型的字符串
 
@@ -380,7 +380,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this GetUserResponse.
+        r"""Gets the nick_name of this GetUserResponse.
 
         用户昵称
 
@@ -391,7 +391,7 @@ class GetUserResponse(SdkResponse):
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this GetUserResponse.
+        r"""Sets the nick_name of this GetUserResponse.
 
         用户昵称
 
@@ -402,7 +402,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def title(self):
-        """Gets the title of this GetUserResponse.
+        r"""Gets the title of this GetUserResponse.
 
         用户头衔
 
@@ -413,7 +413,7 @@ class GetUserResponse(SdkResponse):
 
     @title.setter
     def title(self, title):
-        """Sets the title of this GetUserResponse.
+        r"""Sets the title of this GetUserResponse.
 
         用户头衔
 
@@ -424,7 +424,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def preferred_language(self):
-        """Gets the preferred_language of this GetUserResponse.
+        r"""Gets the preferred_language of this GetUserResponse.
 
         用户语言首选项
 
@@ -435,7 +435,7 @@ class GetUserResponse(SdkResponse):
 
     @preferred_language.setter
     def preferred_language(self, preferred_language):
-        """Sets the preferred_language of this GetUserResponse.
+        r"""Sets the preferred_language of this GetUserResponse.
 
         用户语言首选项
 
@@ -446,7 +446,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def locale(self):
-        """Gets the locale of this GetUserResponse.
+        r"""Gets the locale of this GetUserResponse.
 
         用户的地理区域或位置信息
 
@@ -457,7 +457,7 @@ class GetUserResponse(SdkResponse):
 
     @locale.setter
     def locale(self, locale):
-        """Sets the locale of this GetUserResponse.
+        r"""Sets the locale of this GetUserResponse.
 
         用户的地理区域或位置信息
 
@@ -468,7 +468,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def timezone(self):
-        """Gets the timezone of this GetUserResponse.
+        r"""Gets the timezone of this GetUserResponse.
 
         用户时区
 
@@ -479,7 +479,7 @@ class GetUserResponse(SdkResponse):
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this GetUserResponse.
+        r"""Sets the timezone of this GetUserResponse.
 
         用户时区
 
@@ -490,7 +490,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def addresses(self):
-        """Gets the addresses of this GetUserResponse.
+        r"""Gets the addresses of this GetUserResponse.
 
         用户的地址信息列表
 
@@ -501,7 +501,7 @@ class GetUserResponse(SdkResponse):
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this GetUserResponse.
+        r"""Sets the addresses of this GetUserResponse.
 
         用户的地址信息列表
 
@@ -512,7 +512,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def phone_numbers(self):
-        """Gets the phone_numbers of this GetUserResponse.
+        r"""Gets the phone_numbers of this GetUserResponse.
 
         用户的电话号码信息列表
 
@@ -523,7 +523,7 @@ class GetUserResponse(SdkResponse):
 
     @phone_numbers.setter
     def phone_numbers(self, phone_numbers):
-        """Sets the phone_numbers of this GetUserResponse.
+        r"""Sets the phone_numbers of this GetUserResponse.
 
         用户的电话号码信息列表
 
@@ -534,7 +534,7 @@ class GetUserResponse(SdkResponse):
 
     @property
     def urnietfparamsscimschemasextensionenterprise2_0_user(self):
-        """Gets the urnietfparamsscimschemasextensionenterprise2_0_user of this GetUserResponse.
+        r"""Gets the urnietfparamsscimschemasextensionenterprise2_0_user of this GetUserResponse.
 
         :return: The urnietfparamsscimschemasextensionenterprise2_0_user of this GetUserResponse.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.EnterpriseDto`
@@ -543,7 +543,7 @@ class GetUserResponse(SdkResponse):
 
     @urnietfparamsscimschemasextensionenterprise2_0_user.setter
     def urnietfparamsscimschemasextensionenterprise2_0_user(self, urnietfparamsscimschemasextensionenterprise2_0_user):
-        """Sets the urnietfparamsscimschemasextensionenterprise2_0_user of this GetUserResponse.
+        r"""Sets the urnietfparamsscimschemasextensionenterprise2_0_user of this GetUserResponse.
 
         :param urnietfparamsscimschemasextensionenterprise2_0_user: The urnietfparamsscimschemasextensionenterprise2_0_user of this GetUserResponse.
         :type urnietfparamsscimschemasextensionenterprise2_0_user: :class:`huaweicloudsdkidentitycenterscim.v1.EnterpriseDto`

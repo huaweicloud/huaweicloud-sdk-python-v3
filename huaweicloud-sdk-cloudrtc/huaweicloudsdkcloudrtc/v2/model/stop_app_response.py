@@ -30,7 +30,7 @@ class StopAppResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, state=None, x_request_id=None):
-        """StopAppResponse
+        r"""StopAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class StopAppResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this StopAppResponse.
+        r"""Gets the app_id of this StopAppResponse.
 
         应用id
 
@@ -69,7 +69,7 @@ class StopAppResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this StopAppResponse.
+        r"""Sets the app_id of this StopAppResponse.
 
         应用id
 
@@ -80,7 +80,7 @@ class StopAppResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this StopAppResponse.
+        r"""Gets the state of this StopAppResponse.
 
         :return: The state of this StopAppResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppState`
@@ -89,7 +89,7 @@ class StopAppResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this StopAppResponse.
+        r"""Sets the state of this StopAppResponse.
 
         :param state: The state of this StopAppResponse.
         :type state: :class:`huaweicloudsdkcloudrtc.v2.AppState`
@@ -98,7 +98,7 @@ class StopAppResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this StopAppResponse.
+        r"""Gets the x_request_id of this StopAppResponse.
 
         :return: The x_request_id of this StopAppResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class StopAppResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this StopAppResponse.
+        r"""Sets the x_request_id of this StopAppResponse.
 
         :param x_request_id: The x_request_id of this StopAppResponse.
         :type x_request_id: str

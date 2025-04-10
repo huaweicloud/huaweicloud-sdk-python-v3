@@ -26,7 +26,7 @@ class CreateTableModelResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """CreateTableModelResponse
+        r"""CreateTableModelResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTableModelResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateTableModelResponse.
+        r"""Gets the data of this CreateTableModelResponse.
 
         :return: The data of this CreateTableModelResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateTableModelResultData`
@@ -53,7 +53,7 @@ class CreateTableModelResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateTableModelResponse.
+        r"""Sets the data of this CreateTableModelResponse.
 
         :param data: The data of this CreateTableModelResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateTableModelResultData`

@@ -27,7 +27,7 @@ class RestartClusterReq:
     }
 
     def __init__(self, type=None, value=None):
-        """RestartClusterReq
+        r"""RestartClusterReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RestartClusterReq:
 
     @property
     def type(self):
-        """Gets the type of this RestartClusterReq.
+        r"""Gets the type of this RestartClusterReq.
 
         操作角色。参数范围： - node - role
 
@@ -59,7 +59,7 @@ class RestartClusterReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RestartClusterReq.
+        r"""Sets the type of this RestartClusterReq.
 
         操作角色。参数范围： - node - role
 
@@ -70,7 +70,7 @@ class RestartClusterReq:
 
     @property
     def value(self):
-        """Gets the value of this RestartClusterReq.
+        r"""Gets the value of this RestartClusterReq.
 
         操作参数。参数说明：  - 当操作角色为node时，value为节点ID,通过[查询集群详情](ShowClusterDetail.xml)获取instances中的id属性。  - 当操作角色为role时，value为节点类型(ess、ess-master、ess-client、ess-cold)的多种不同组合。
 
@@ -81,7 +81,7 @@ class RestartClusterReq:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RestartClusterReq.
+        r"""Sets the value of this RestartClusterReq.
 
         操作参数。参数说明：  - 当操作角色为node时，value为节点ID,通过[查询集群详情](ShowClusterDetail.xml)获取instances中的id属性。  - 当操作角色为role时，value为节点类型(ess、ess-master、ess-client、ess-cold)的多种不同组合。
 

@@ -26,7 +26,7 @@ class BatchUpdateWidgetsResponse(SdkResponse):
     }
 
     def __init__(self, widgets=None):
-        """BatchUpdateWidgetsResponse
+        r"""BatchUpdateWidgetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchUpdateWidgetsResponse(SdkResponse):
 
     @property
     def widgets(self):
-        """Gets the widgets of this BatchUpdateWidgetsResponse.
+        r"""Gets the widgets of this BatchUpdateWidgetsResponse.
 
         更新结果列表
 
@@ -55,7 +55,7 @@ class BatchUpdateWidgetsResponse(SdkResponse):
 
     @widgets.setter
     def widgets(self, widgets):
-        """Sets the widgets of this BatchUpdateWidgetsResponse.
+        r"""Sets the widgets of this BatchUpdateWidgetsResponse.
 
         更新结果列表
 

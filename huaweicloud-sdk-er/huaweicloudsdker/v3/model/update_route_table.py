@@ -27,7 +27,7 @@ class UpdateRouteTable:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateRouteTable
+        r"""UpdateRouteTable
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateRouteTable:
 
     @property
     def name(self):
-        """Gets the name of this UpdateRouteTable.
+        r"""Gets the name of this UpdateRouteTable.
 
         路由器表名称
 
@@ -61,7 +61,7 @@ class UpdateRouteTable:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateRouteTable.
+        r"""Sets the name of this UpdateRouteTable.
 
         路由器表名称
 
@@ -72,7 +72,7 @@ class UpdateRouteTable:
 
     @property
     def description(self):
-        """Gets the description of this UpdateRouteTable.
+        r"""Gets the description of this UpdateRouteTable.
 
         路由器表描述信息
 
@@ -83,7 +83,7 @@ class UpdateRouteTable:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateRouteTable.
+        r"""Sets the description of this UpdateRouteTable.
 
         路由器表描述信息
 

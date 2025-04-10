@@ -31,7 +31,7 @@ class ComponentProbe:
     }
 
     def __init__(self, type=None, delay=None, timeout=None, parameters=None):
-        """ComponentProbe
+        r"""ComponentProbe
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ComponentProbe:
 
     @property
     def type(self):
-        """Gets the type of this ComponentProbe.
+        r"""Gets the type of this ComponentProbe.
 
         :return: The type of this ComponentProbe.
         :rtype: str
@@ -71,7 +71,7 @@ class ComponentProbe:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ComponentProbe.
+        r"""Sets the type of this ComponentProbe.
 
         :param type: The type of this ComponentProbe.
         :type type: str
@@ -80,7 +80,7 @@ class ComponentProbe:
 
     @property
     def delay(self):
-        """Gets the delay of this ComponentProbe.
+        r"""Gets the delay of this ComponentProbe.
 
         表示启动后多久开始探测
 
@@ -91,7 +91,7 @@ class ComponentProbe:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this ComponentProbe.
+        r"""Sets the delay of this ComponentProbe.
 
         表示启动后多久开始探测
 
@@ -102,7 +102,7 @@ class ComponentProbe:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ComponentProbe.
+        r"""Gets the timeout of this ComponentProbe.
 
         表示探测超时时间
 
@@ -113,7 +113,7 @@ class ComponentProbe:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ComponentProbe.
+        r"""Sets the timeout of this ComponentProbe.
 
         表示探测超时时间
 
@@ -124,7 +124,7 @@ class ComponentProbe:
 
     @property
     def parameters(self):
-        """Gets the parameters of this ComponentProbe.
+        r"""Gets the parameters of this ComponentProbe.
 
         :return: The parameters of this ComponentProbe.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ProbeParameter`
@@ -133,7 +133,7 @@ class ComponentProbe:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ComponentProbe.
+        r"""Sets the parameters of this ComponentProbe.
 
         :param parameters: The parameters of this ComponentProbe.
         :type parameters: :class:`huaweicloudsdkservicestage.v2.ProbeParameter`

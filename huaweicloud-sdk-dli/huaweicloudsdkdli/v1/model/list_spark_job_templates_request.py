@@ -31,7 +31,7 @@ class ListSparkJobTemplatesRequest:
     }
 
     def __init__(self, type=None, keyword=None, page_size=None, current_page=None):
-        """ListSparkJobTemplatesRequest
+        r"""ListSparkJobTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListSparkJobTemplatesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListSparkJobTemplatesRequest.
+        r"""Gets the type of this ListSparkJobTemplatesRequest.
 
         类型，需要且必须传入spark作为值。
 
@@ -75,7 +75,7 @@ class ListSparkJobTemplatesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListSparkJobTemplatesRequest.
+        r"""Sets the type of this ListSparkJobTemplatesRequest.
 
         类型，需要且必须传入spark作为值。
 
@@ -86,7 +86,7 @@ class ListSparkJobTemplatesRequest:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ListSparkJobTemplatesRequest.
+        r"""Gets the keyword of this ListSparkJobTemplatesRequest.
 
         模板名过滤关键字，模糊匹配，获取模板名含有该关键字的所有模板。
 
@@ -97,7 +97,7 @@ class ListSparkJobTemplatesRequest:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ListSparkJobTemplatesRequest.
+        r"""Sets the keyword of this ListSparkJobTemplatesRequest.
 
         模板名过滤关键字，模糊匹配，获取模板名含有该关键字的所有模板。
 
@@ -108,7 +108,7 @@ class ListSparkJobTemplatesRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListSparkJobTemplatesRequest.
+        r"""Gets the page_size of this ListSparkJobTemplatesRequest.
 
         每页显示的最大结果行数，范围: [1, 1000]。默认值为：50。
 
@@ -119,7 +119,7 @@ class ListSparkJobTemplatesRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListSparkJobTemplatesRequest.
+        r"""Sets the page_size of this ListSparkJobTemplatesRequest.
 
         每页显示的最大结果行数，范围: [1, 1000]。默认值为：50。
 
@@ -130,7 +130,7 @@ class ListSparkJobTemplatesRequest:
 
     @property
     def current_page(self):
-        """Gets the current_page of this ListSparkJobTemplatesRequest.
+        r"""Gets the current_page of this ListSparkJobTemplatesRequest.
 
         当前页码，默认为第一页。
 
@@ -141,7 +141,7 @@ class ListSparkJobTemplatesRequest:
 
     @current_page.setter
     def current_page(self, current_page):
-        """Sets the current_page of this ListSparkJobTemplatesRequest.
+        r"""Sets the current_page of this ListSparkJobTemplatesRequest.
 
         当前页码，默认为第一页。
 

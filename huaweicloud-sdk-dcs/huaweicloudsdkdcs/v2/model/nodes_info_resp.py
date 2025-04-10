@@ -55,7 +55,7 @@ class NodesInfoResp:
     }
 
     def __init__(self, logical_node_id=None, name=None, status=None, az_code=None, node_role=None, node_type=None, node_ip=None, node_port=None, node_id=None, priority_weight=None, is_access=None, group_id=None, group_name=None, is_remove_ip=None, replication_id=None, dimensions=None):
-        """NodesInfoResp
+        r"""NodesInfoResp
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class NodesInfoResp:
 
     @property
     def logical_node_id(self):
-        """Gets the logical_node_id of this NodesInfoResp.
+        r"""Gets the logical_node_id of this NodesInfoResp.
 
         逻辑节点ID
 
@@ -159,7 +159,7 @@ class NodesInfoResp:
 
     @logical_node_id.setter
     def logical_node_id(self, logical_node_id):
-        """Sets the logical_node_id of this NodesInfoResp.
+        r"""Sets the logical_node_id of this NodesInfoResp.
 
         逻辑节点ID
 
@@ -170,7 +170,7 @@ class NodesInfoResp:
 
     @property
     def name(self):
-        """Gets the name of this NodesInfoResp.
+        r"""Gets the name of this NodesInfoResp.
 
         节点名称
 
@@ -181,7 +181,7 @@ class NodesInfoResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NodesInfoResp.
+        r"""Sets the name of this NodesInfoResp.
 
         节点名称
 
@@ -192,7 +192,7 @@ class NodesInfoResp:
 
     @property
     def status(self):
-        """Gets the status of this NodesInfoResp.
+        r"""Gets the status of this NodesInfoResp.
 
         节点状态，所有值如下: - Creating：创建中。 - Active：运行中。 - Inactive：故障。 - Deleting：删除中。 - AddSharding：添加分片中。 
 
@@ -203,7 +203,7 @@ class NodesInfoResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NodesInfoResp.
+        r"""Sets the status of this NodesInfoResp.
 
         节点状态，所有值如下: - Creating：创建中。 - Active：运行中。 - Inactive：故障。 - Deleting：删除中。 - AddSharding：添加分片中。 
 
@@ -214,7 +214,7 @@ class NodesInfoResp:
 
     @property
     def az_code(self):
-        """Gets the az_code of this NodesInfoResp.
+        r"""Gets the az_code of this NodesInfoResp.
 
         可用区code
 
@@ -225,7 +225,7 @@ class NodesInfoResp:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this NodesInfoResp.
+        r"""Sets the az_code of this NodesInfoResp.
 
         可用区code
 
@@ -236,7 +236,7 @@ class NodesInfoResp:
 
     @property
     def node_role(self):
-        """Gets the node_role of this NodesInfoResp.
+        r"""Gets the node_role of this NodesInfoResp.
 
         节点角色，所有值如下: - redis-server：Redis server节点。 - redis-proxy：proxy节点。 
 
@@ -247,7 +247,7 @@ class NodesInfoResp:
 
     @node_role.setter
     def node_role(self, node_role):
-        """Sets the node_role of this NodesInfoResp.
+        r"""Sets the node_role of this NodesInfoResp.
 
         节点角色，所有值如下: - redis-server：Redis server节点。 - redis-proxy：proxy节点。 
 
@@ -258,7 +258,7 @@ class NodesInfoResp:
 
     @property
     def node_type(self):
-        """Gets the node_type of this NodesInfoResp.
+        r"""Gets the node_type of this NodesInfoResp.
 
         节点主从角色: - master：主 - slave：从 - proxy: proxy实例节点角色为\"proxy\" 
 
@@ -269,7 +269,7 @@ class NodesInfoResp:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this NodesInfoResp.
+        r"""Sets the node_type of this NodesInfoResp.
 
         节点主从角色: - master：主 - slave：从 - proxy: proxy实例节点角色为\"proxy\" 
 
@@ -280,7 +280,7 @@ class NodesInfoResp:
 
     @property
     def node_ip(self):
-        """Gets the node_ip of this NodesInfoResp.
+        r"""Gets the node_ip of this NodesInfoResp.
 
         节点的IP
 
@@ -291,7 +291,7 @@ class NodesInfoResp:
 
     @node_ip.setter
     def node_ip(self, node_ip):
-        """Sets the node_ip of this NodesInfoResp.
+        r"""Sets the node_ip of this NodesInfoResp.
 
         节点的IP
 
@@ -302,7 +302,7 @@ class NodesInfoResp:
 
     @property
     def node_port(self):
-        """Gets the node_port of this NodesInfoResp.
+        r"""Gets the node_port of this NodesInfoResp.
 
         节点的port
 
@@ -313,7 +313,7 @@ class NodesInfoResp:
 
     @node_port.setter
     def node_port(self, node_port):
-        """Sets the node_port of this NodesInfoResp.
+        r"""Sets the node_port of this NodesInfoResp.
 
         节点的port
 
@@ -324,7 +324,7 @@ class NodesInfoResp:
 
     @property
     def node_id(self):
-        """Gets the node_id of this NodesInfoResp.
+        r"""Gets the node_id of this NodesInfoResp.
 
         节点ID
 
@@ -335,7 +335,7 @@ class NodesInfoResp:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this NodesInfoResp.
+        r"""Sets the node_id of this NodesInfoResp.
 
         节点ID
 
@@ -346,7 +346,7 @@ class NodesInfoResp:
 
     @property
     def priority_weight(self):
-        """Gets the priority_weight of this NodesInfoResp.
+        r"""Gets the priority_weight of this NodesInfoResp.
 
         节点权重
 
@@ -357,7 +357,7 @@ class NodesInfoResp:
 
     @priority_weight.setter
     def priority_weight(self, priority_weight):
-        """Sets the priority_weight of this NodesInfoResp.
+        r"""Sets the priority_weight of this NodesInfoResp.
 
         节点权重
 
@@ -368,7 +368,7 @@ class NodesInfoResp:
 
     @property
     def is_access(self):
-        """Gets the is_access of this NodesInfoResp.
+        r"""Gets the is_access of this NodesInfoResp.
 
         节点的IP是否可直接访问
 
@@ -379,7 +379,7 @@ class NodesInfoResp:
 
     @is_access.setter
     def is_access(self, is_access):
-        """Sets the is_access of this NodesInfoResp.
+        r"""Sets the is_access of this NodesInfoResp.
 
         节点的IP是否可直接访问
 
@@ -390,7 +390,7 @@ class NodesInfoResp:
 
     @property
     def group_id(self):
-        """Gets the group_id of this NodesInfoResp.
+        r"""Gets the group_id of this NodesInfoResp.
 
         分片ID
 
@@ -401,7 +401,7 @@ class NodesInfoResp:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this NodesInfoResp.
+        r"""Sets the group_id of this NodesInfoResp.
 
         分片ID
 
@@ -412,7 +412,7 @@ class NodesInfoResp:
 
     @property
     def group_name(self):
-        """Gets the group_name of this NodesInfoResp.
+        r"""Gets the group_name of this NodesInfoResp.
 
         分片名称
 
@@ -423,7 +423,7 @@ class NodesInfoResp:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this NodesInfoResp.
+        r"""Sets the group_name of this NodesInfoResp.
 
         分片名称
 
@@ -434,7 +434,7 @@ class NodesInfoResp:
 
     @property
     def is_remove_ip(self):
-        """Gets the is_remove_ip of this NodesInfoResp.
+        r"""Gets the is_remove_ip of this NodesInfoResp.
 
         是否从只读域名中摘除IP
 
@@ -445,7 +445,7 @@ class NodesInfoResp:
 
     @is_remove_ip.setter
     def is_remove_ip(self, is_remove_ip):
-        """Sets the is_remove_ip of this NodesInfoResp.
+        r"""Sets the is_remove_ip of this NodesInfoResp.
 
         是否从只读域名中摘除IP
 
@@ -456,7 +456,7 @@ class NodesInfoResp:
 
     @property
     def replication_id(self):
-        """Gets the replication_id of this NodesInfoResp.
+        r"""Gets the replication_id of this NodesInfoResp.
 
         副本id
 
@@ -467,7 +467,7 @@ class NodesInfoResp:
 
     @replication_id.setter
     def replication_id(self, replication_id):
-        """Sets the replication_id of this NodesInfoResp.
+        r"""Sets the replication_id of this NodesInfoResp.
 
         副本id
 
@@ -478,7 +478,7 @@ class NodesInfoResp:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this NodesInfoResp.
+        r"""Gets the dimensions of this NodesInfoResp.
 
         副本对应的监控指标维度信息。可用于调用云监控服务的查询监控数据指标相关接口 - 副本的监控维度为多维度，返回数组中包含两个维度信息。从云监控查询监控数据时，要按多维度传递指标维度参数，才能查询到监控指标值 - 第一个维度为副本父维度信息 维度名称为dcs_instance_id，维度值对应副本所在的实例ID - 第二个维度，维度名称为dcs_cluster_redis_node,维度值为副本的监控对象ID，与副本ID和节点ID不同。 
 
@@ -489,7 +489,7 @@ class NodesInfoResp:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this NodesInfoResp.
+        r"""Sets the dimensions of this NodesInfoResp.
 
         副本对应的监控指标维度信息。可用于调用云监控服务的查询监控数据指标相关接口 - 副本的监控维度为多维度，返回数组中包含两个维度信息。从云监控查询监控数据时，要按多维度传递指标维度参数，才能查询到监控指标值 - 第一个维度为副本父维度信息 维度名称为dcs_instance_id，维度值对应副本所在的实例ID - 第二个维度，维度名称为dcs_cluster_redis_node,维度值为副本的监控对象ID，与副本ID和节点ID不同。 
 

@@ -28,7 +28,7 @@ class ShowReportStatusResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, report_status=None):
-        """ShowReportStatusResponse
+        r"""ShowReportStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowReportStatusResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowReportStatusResponse.
+        r"""Gets the task_id of this ShowReportStatusResponse.
 
         任务ID
 
@@ -62,7 +62,7 @@ class ShowReportStatusResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowReportStatusResponse.
+        r"""Sets the task_id of this ShowReportStatusResponse.
 
         任务ID
 
@@ -73,7 +73,7 @@ class ShowReportStatusResponse(SdkResponse):
 
     @property
     def report_status(self):
-        """Gets the report_status of this ShowReportStatusResponse.
+        r"""Gets the report_status of this ShowReportStatusResponse.
 
         PDF报告生成状态:   * ungenerated - 未生成   * generating - 生成中   * generated - 已生成   * failed - 生成失败 
 
@@ -84,7 +84,7 @@ class ShowReportStatusResponse(SdkResponse):
 
     @report_status.setter
     def report_status(self, report_status):
-        """Sets the report_status of this ShowReportStatusResponse.
+        r"""Sets the report_status of this ShowReportStatusResponse.
 
         PDF报告生成状态:   * ungenerated - 未生成   * generating - 生成中   * generated - 已生成   * failed - 生成失败 
 

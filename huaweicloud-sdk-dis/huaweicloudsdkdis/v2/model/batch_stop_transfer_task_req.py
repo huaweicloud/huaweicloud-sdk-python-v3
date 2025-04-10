@@ -27,7 +27,7 @@ class BatchStopTransferTaskReq:
     }
 
     def __init__(self, action=None, tasks=None):
-        """BatchStopTransferTaskReq
+        r"""BatchStopTransferTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchStopTransferTaskReq:
 
     @property
     def action(self):
-        """Gets the action of this BatchStopTransferTaskReq.
+        r"""Gets the action of this BatchStopTransferTaskReq.
 
         转储任务操作，目前支持：  - stop：停止转储任务
 
@@ -59,7 +59,7 @@ class BatchStopTransferTaskReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchStopTransferTaskReq.
+        r"""Sets the action of this BatchStopTransferTaskReq.
 
         转储任务操作，目前支持：  - stop：停止转储任务
 
@@ -70,7 +70,7 @@ class BatchStopTransferTaskReq:
 
     @property
     def tasks(self):
-        """Gets the tasks of this BatchStopTransferTaskReq.
+        r"""Gets the tasks of this BatchStopTransferTaskReq.
 
         待暂停的转储任务列表。
 
@@ -81,7 +81,7 @@ class BatchStopTransferTaskReq:
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this BatchStopTransferTaskReq.
+        r"""Sets the tasks of this BatchStopTransferTaskReq.
 
         待暂停的转储任务列表。
 

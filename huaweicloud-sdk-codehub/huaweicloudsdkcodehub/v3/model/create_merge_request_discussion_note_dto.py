@@ -25,7 +25,7 @@ class CreateMergeRequestDiscussionNoteDto:
     }
 
     def __init__(self, body=None):
-        """CreateMergeRequestDiscussionNoteDto
+        r"""CreateMergeRequestDiscussionNoteDto
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateMergeRequestDiscussionNoteDto:
 
     @property
     def body(self):
-        """Gets the body of this CreateMergeRequestDiscussionNoteDto.
+        r"""Gets the body of this CreateMergeRequestDiscussionNoteDto.
 
         检视意见内容
 
@@ -53,7 +53,7 @@ class CreateMergeRequestDiscussionNoteDto:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMergeRequestDiscussionNoteDto.
+        r"""Sets the body of this CreateMergeRequestDiscussionNoteDto.
 
         检视意见内容
 

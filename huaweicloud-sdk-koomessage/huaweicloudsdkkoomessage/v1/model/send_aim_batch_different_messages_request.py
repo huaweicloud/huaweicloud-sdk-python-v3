@@ -25,7 +25,7 @@ class SendAimBatchDifferentMessagesRequest:
     }
 
     def __init__(self, body=None):
-        """SendAimBatchDifferentMessagesRequest
+        r"""SendAimBatchDifferentMessagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SendAimBatchDifferentMessagesRequest:
 
     @property
     def body(self):
-        """Gets the body of this SendAimBatchDifferentMessagesRequest.
+        r"""Gets the body of this SendAimBatchDifferentMessagesRequest.
 
         :return: The body of this SendAimBatchDifferentMessagesRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.SmsMultiTemplateTaskRequestBody`
@@ -52,7 +52,7 @@ class SendAimBatchDifferentMessagesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SendAimBatchDifferentMessagesRequest.
+        r"""Sets the body of this SendAimBatchDifferentMessagesRequest.
 
         :param body: The body of this SendAimBatchDifferentMessagesRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.SmsMultiTemplateTaskRequestBody`

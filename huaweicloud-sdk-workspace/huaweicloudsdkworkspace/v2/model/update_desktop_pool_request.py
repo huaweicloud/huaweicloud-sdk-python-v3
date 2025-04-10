@@ -27,7 +27,7 @@ class UpdateDesktopPoolRequest:
     }
 
     def __init__(self, pool_id=None, body=None):
-        """UpdateDesktopPoolRequest
+        r"""UpdateDesktopPoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDesktopPoolRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this UpdateDesktopPoolRequest.
+        r"""Gets the pool_id of this UpdateDesktopPoolRequest.
 
         桌面池ID。
 
@@ -60,7 +60,7 @@ class UpdateDesktopPoolRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this UpdateDesktopPoolRequest.
+        r"""Sets the pool_id of this UpdateDesktopPoolRequest.
 
         桌面池ID。
 
@@ -71,7 +71,7 @@ class UpdateDesktopPoolRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDesktopPoolRequest.
+        r"""Gets the body of this UpdateDesktopPoolRequest.
 
         :return: The body of this UpdateDesktopPoolRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateDesktopPoolAttributesReq`
@@ -80,7 +80,7 @@ class UpdateDesktopPoolRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDesktopPoolRequest.
+        r"""Sets the body of this UpdateDesktopPoolRequest.
 
         :param body: The body of this UpdateDesktopPoolRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateDesktopPoolAttributesReq`

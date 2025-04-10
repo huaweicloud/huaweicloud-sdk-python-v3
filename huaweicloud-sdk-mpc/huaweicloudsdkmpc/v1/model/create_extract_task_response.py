@@ -38,7 +38,7 @@ class CreateExtractTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, output=None, output_file_name=None, description=None, metadata=None):
-        """CreateExtractTaskResponse
+        r"""CreateExtractTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateExtractTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateExtractTaskResponse.
+        r"""Gets the task_id of this CreateExtractTaskResponse.
 
         任务ID 
 
@@ -97,7 +97,7 @@ class CreateExtractTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateExtractTaskResponse.
+        r"""Sets the task_id of this CreateExtractTaskResponse.
 
         任务ID 
 
@@ -108,7 +108,7 @@ class CreateExtractTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateExtractTaskResponse.
+        r"""Gets the status of this CreateExtractTaskResponse.
 
         任务状态
 
@@ -119,7 +119,7 @@ class CreateExtractTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateExtractTaskResponse.
+        r"""Sets the status of this CreateExtractTaskResponse.
 
         任务状态
 
@@ -130,7 +130,7 @@ class CreateExtractTaskResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateExtractTaskResponse.
+        r"""Gets the create_time of this CreateExtractTaskResponse.
 
         任务创建时间
 
@@ -141,7 +141,7 @@ class CreateExtractTaskResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateExtractTaskResponse.
+        r"""Sets the create_time of this CreateExtractTaskResponse.
 
         任务创建时间
 
@@ -152,7 +152,7 @@ class CreateExtractTaskResponse(SdkResponse):
 
     @property
     def output(self):
-        """Gets the output of this CreateExtractTaskResponse.
+        r"""Gets the output of this CreateExtractTaskResponse.
 
         :return: The output of this CreateExtractTaskResponse.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -161,7 +161,7 @@ class CreateExtractTaskResponse(SdkResponse):
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CreateExtractTaskResponse.
+        r"""Sets the output of this CreateExtractTaskResponse.
 
         :param output: The output of this CreateExtractTaskResponse.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -170,7 +170,7 @@ class CreateExtractTaskResponse(SdkResponse):
 
     @property
     def output_file_name(self):
-        """Gets the output_file_name of this CreateExtractTaskResponse.
+        r"""Gets the output_file_name of this CreateExtractTaskResponse.
 
         解析文件名称
 
@@ -181,7 +181,7 @@ class CreateExtractTaskResponse(SdkResponse):
 
     @output_file_name.setter
     def output_file_name(self, output_file_name):
-        """Sets the output_file_name of this CreateExtractTaskResponse.
+        r"""Sets the output_file_name of this CreateExtractTaskResponse.
 
         解析文件名称
 
@@ -192,7 +192,7 @@ class CreateExtractTaskResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateExtractTaskResponse.
+        r"""Gets the description of this CreateExtractTaskResponse.
 
         任务描述，如当任务异常时，此字段为异常的具体信息
 
@@ -203,7 +203,7 @@ class CreateExtractTaskResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateExtractTaskResponse.
+        r"""Sets the description of this CreateExtractTaskResponse.
 
         任务描述，如当任务异常时，此字段为异常的具体信息
 
@@ -214,7 +214,7 @@ class CreateExtractTaskResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateExtractTaskResponse.
+        r"""Gets the metadata of this CreateExtractTaskResponse.
 
         :return: The metadata of this CreateExtractTaskResponse.
         :rtype: :class:`huaweicloudsdkmpc.v1.MetaData`
@@ -223,7 +223,7 @@ class CreateExtractTaskResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateExtractTaskResponse.
+        r"""Sets the metadata of this CreateExtractTaskResponse.
 
         :param metadata: The metadata of this CreateExtractTaskResponse.
         :type metadata: :class:`huaweicloudsdkmpc.v1.MetaData`

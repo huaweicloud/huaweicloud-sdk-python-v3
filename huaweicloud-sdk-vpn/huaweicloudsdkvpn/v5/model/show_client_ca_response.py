@@ -30,7 +30,7 @@ class ShowClientCaResponse(SdkResponse):
     }
 
     def __init__(self, client_ca_certificate=None, request_id=None, header_response_token=None):
-        """ShowClientCaResponse
+        r"""ShowClientCaResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowClientCaResponse(SdkResponse):
 
     @property
     def client_ca_certificate(self):
-        """Gets the client_ca_certificate of this ShowClientCaResponse.
+        r"""Gets the client_ca_certificate of this ShowClientCaResponse.
 
         :return: The client_ca_certificate of this ShowClientCaResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.QueryClientCaCertificateBody`
@@ -67,7 +67,7 @@ class ShowClientCaResponse(SdkResponse):
 
     @client_ca_certificate.setter
     def client_ca_certificate(self, client_ca_certificate):
-        """Sets the client_ca_certificate of this ShowClientCaResponse.
+        r"""Sets the client_ca_certificate of this ShowClientCaResponse.
 
         :param client_ca_certificate: The client_ca_certificate of this ShowClientCaResponse.
         :type client_ca_certificate: :class:`huaweicloudsdkvpn.v5.QueryClientCaCertificateBody`
@@ -76,7 +76,7 @@ class ShowClientCaResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowClientCaResponse.
+        r"""Gets the request_id of this ShowClientCaResponse.
 
         请求id
 
@@ -87,7 +87,7 @@ class ShowClientCaResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowClientCaResponse.
+        r"""Sets the request_id of this ShowClientCaResponse.
 
         请求id
 
@@ -98,7 +98,7 @@ class ShowClientCaResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this ShowClientCaResponse.
+        r"""Gets the header_response_token of this ShowClientCaResponse.
 
         :return: The header_response_token of this ShowClientCaResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ShowClientCaResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this ShowClientCaResponse.
+        r"""Sets the header_response_token of this ShowClientCaResponse.
 
         :param header_response_token: The header_response_token of this ShowClientCaResponse.
         :type header_response_token: str

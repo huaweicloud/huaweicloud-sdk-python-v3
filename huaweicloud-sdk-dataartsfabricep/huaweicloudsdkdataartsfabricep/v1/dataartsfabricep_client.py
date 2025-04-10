@@ -34,7 +34,7 @@ class DataArtsFabricEpClient(Client):
         return client_builder
 
     def delete_service_instance(self, request):
-        """删除Service实例
+        r"""删除Service实例
 
         删除Service实例，释放该实例的资源
         
@@ -101,7 +101,7 @@ class DataArtsFabricEpClient(Client):
         return http_info
 
     def deploy_service_instance(self, request):
-        """部署服务
+        r"""部署服务
 
         部署一个Service实例
         
@@ -168,7 +168,7 @@ class DataArtsFabricEpClient(Client):
         return http_info
 
     def list_services_instances(self, request):
-        """列举已部署的Service实例
+        r"""列举已部署的Service实例
 
         列举已部署的Service实例
         
@@ -255,7 +255,7 @@ class DataArtsFabricEpClient(Client):
         return http_info
 
     def show_service_instance_detail(self, request):
-        """查看部署的Service实例详情
+        r"""查看部署的Service实例详情
 
         查看部署后的Service实例的详情
         
@@ -322,7 +322,7 @@ class DataArtsFabricEpClient(Client):
         return http_info
 
     def update_service_instance(self, request):
-        """更新Service实例
+        r"""更新Service实例
 
         更新已部署的Service实例
         

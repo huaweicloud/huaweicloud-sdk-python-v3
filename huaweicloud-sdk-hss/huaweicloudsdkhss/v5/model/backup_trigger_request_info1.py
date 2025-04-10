@@ -25,7 +25,7 @@ class BackupTriggerRequestInfo1:
     }
 
     def __init__(self, properties=None):
-        """BackupTriggerRequestInfo1
+        r"""BackupTriggerRequestInfo1
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BackupTriggerRequestInfo1:
 
     @property
     def properties(self):
-        """Gets the properties of this BackupTriggerRequestInfo1.
+        r"""Gets the properties of this BackupTriggerRequestInfo1.
 
         :return: The properties of this BackupTriggerRequestInfo1.
         :rtype: :class:`huaweicloudsdkhss.v5.BackupTriggerPropertiesRequestInfo1`
@@ -52,7 +52,7 @@ class BackupTriggerRequestInfo1:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this BackupTriggerRequestInfo1.
+        r"""Sets the properties of this BackupTriggerRequestInfo1.
 
         :param properties: The properties of this BackupTriggerRequestInfo1.
         :type properties: :class:`huaweicloudsdkhss.v5.BackupTriggerPropertiesRequestInfo1`

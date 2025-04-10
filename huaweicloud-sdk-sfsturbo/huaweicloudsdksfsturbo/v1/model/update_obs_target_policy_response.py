@@ -30,7 +30,7 @@ class UpdateObsTargetPolicyResponse(SdkResponse):
     }
 
     def __init__(self, target_id=None, policy=None, x_request_id=None):
-        """UpdateObsTargetPolicyResponse
+        r"""UpdateObsTargetPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateObsTargetPolicyResponse(SdkResponse):
 
     @property
     def target_id(self):
-        """Gets the target_id of this UpdateObsTargetPolicyResponse.
+        r"""Gets the target_id of this UpdateObsTargetPolicyResponse.
 
         绑定关系id
 
@@ -69,7 +69,7 @@ class UpdateObsTargetPolicyResponse(SdkResponse):
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this UpdateObsTargetPolicyResponse.
+        r"""Sets the target_id of this UpdateObsTargetPolicyResponse.
 
         绑定关系id
 
@@ -80,7 +80,7 @@ class UpdateObsTargetPolicyResponse(SdkResponse):
 
     @property
     def policy(self):
-        """Gets the policy of this UpdateObsTargetPolicyResponse.
+        r"""Gets the policy of this UpdateObsTargetPolicyResponse.
 
         :return: The policy of this UpdateObsTargetPolicyResponse.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepositoryPolicy`
@@ -89,7 +89,7 @@ class UpdateObsTargetPolicyResponse(SdkResponse):
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this UpdateObsTargetPolicyResponse.
+        r"""Sets the policy of this UpdateObsTargetPolicyResponse.
 
         :param policy: The policy of this UpdateObsTargetPolicyResponse.
         :type policy: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepositoryPolicy`
@@ -98,7 +98,7 @@ class UpdateObsTargetPolicyResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateObsTargetPolicyResponse.
+        r"""Gets the x_request_id of this UpdateObsTargetPolicyResponse.
 
         :return: The x_request_id of this UpdateObsTargetPolicyResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class UpdateObsTargetPolicyResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateObsTargetPolicyResponse.
+        r"""Sets the x_request_id of this UpdateObsTargetPolicyResponse.
 
         :param x_request_id: The x_request_id of this UpdateObsTargetPolicyResponse.
         :type x_request_id: str

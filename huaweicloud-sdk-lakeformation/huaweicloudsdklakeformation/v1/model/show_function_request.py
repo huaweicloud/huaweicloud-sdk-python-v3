@@ -31,7 +31,7 @@ class ShowFunctionRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, function_name=None):
-        """ShowFunctionRequest
+        r"""ShowFunctionRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowFunctionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowFunctionRequest.
+        r"""Gets the instance_id of this ShowFunctionRequest.
 
         实例Id
 
@@ -71,7 +71,7 @@ class ShowFunctionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowFunctionRequest.
+        r"""Sets the instance_id of this ShowFunctionRequest.
 
         实例Id
 
@@ -82,7 +82,7 @@ class ShowFunctionRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ShowFunctionRequest.
+        r"""Gets the catalog_name of this ShowFunctionRequest.
 
         catalog名字
 
@@ -93,7 +93,7 @@ class ShowFunctionRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ShowFunctionRequest.
+        r"""Sets the catalog_name of this ShowFunctionRequest.
 
         catalog名字
 
@@ -104,7 +104,7 @@ class ShowFunctionRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ShowFunctionRequest.
+        r"""Gets the database_name of this ShowFunctionRequest.
 
         数据库名字
 
@@ -115,7 +115,7 @@ class ShowFunctionRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ShowFunctionRequest.
+        r"""Sets the database_name of this ShowFunctionRequest.
 
         数据库名字
 
@@ -126,7 +126,7 @@ class ShowFunctionRequest:
 
     @property
     def function_name(self):
-        """Gets the function_name of this ShowFunctionRequest.
+        r"""Gets the function_name of this ShowFunctionRequest.
 
         函数名字
 
@@ -137,7 +137,7 @@ class ShowFunctionRequest:
 
     @function_name.setter
     def function_name(self, function_name):
-        """Sets the function_name of this ShowFunctionRequest.
+        r"""Sets the function_name of this ShowFunctionRequest.
 
         函数名字
 

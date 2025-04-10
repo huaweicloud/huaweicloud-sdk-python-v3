@@ -27,7 +27,7 @@ class SecurityLevelInfo:
     }
 
     def __init__(self, name=None, level=None):
-        """SecurityLevelInfo
+        r"""SecurityLevelInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SecurityLevelInfo:
 
     @property
     def name(self):
-        """Gets the name of this SecurityLevelInfo.
+        r"""Gets the name of this SecurityLevelInfo.
 
         密级名称
 
@@ -61,7 +61,7 @@ class SecurityLevelInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SecurityLevelInfo.
+        r"""Sets the name of this SecurityLevelInfo.
 
         密级名称
 
@@ -72,7 +72,7 @@ class SecurityLevelInfo:
 
     @property
     def level(self):
-        """Gets the level of this SecurityLevelInfo.
+        r"""Gets the level of this SecurityLevelInfo.
 
         密级等级
 
@@ -83,7 +83,7 @@ class SecurityLevelInfo:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this SecurityLevelInfo.
+        r"""Sets the level of this SecurityLevelInfo.
 
         密级等级
 

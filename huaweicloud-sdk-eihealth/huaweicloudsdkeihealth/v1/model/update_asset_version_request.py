@@ -29,7 +29,7 @@ class UpdateAssetVersionRequest:
     }
 
     def __init__(self, asset_id=None, version=None, body=None):
-        """UpdateAssetVersionRequest
+        r"""UpdateAssetVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateAssetVersionRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this UpdateAssetVersionRequest.
+        r"""Gets the asset_id of this UpdateAssetVersionRequest.
 
         资产id
 
@@ -66,7 +66,7 @@ class UpdateAssetVersionRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this UpdateAssetVersionRequest.
+        r"""Sets the asset_id of this UpdateAssetVersionRequest.
 
         资产id
 
@@ -77,7 +77,7 @@ class UpdateAssetVersionRequest:
 
     @property
     def version(self):
-        """Gets the version of this UpdateAssetVersionRequest.
+        r"""Gets the version of this UpdateAssetVersionRequest.
 
         version
 
@@ -88,7 +88,7 @@ class UpdateAssetVersionRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateAssetVersionRequest.
+        r"""Sets the version of this UpdateAssetVersionRequest.
 
         version
 
@@ -99,7 +99,7 @@ class UpdateAssetVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAssetVersionRequest.
+        r"""Gets the body of this UpdateAssetVersionRequest.
 
         :return: The body of this UpdateAssetVersionRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateAssetReq`
@@ -108,7 +108,7 @@ class UpdateAssetVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAssetVersionRequest.
+        r"""Sets the body of this UpdateAssetVersionRequest.
 
         :param body: The body of this UpdateAssetVersionRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateAssetReq`

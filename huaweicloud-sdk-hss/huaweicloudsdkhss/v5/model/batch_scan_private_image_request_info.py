@@ -51,7 +51,7 @@ class BatchScanPrivateImageRequestInfo:
     }
 
     def __init__(self, repo_type=None, image_info_list=None, operate_all=None, namespace=None, image_name=None, image_version=None, image_type=None, scan_status=None, latest_version=None, image_size=None, start_latest_update_time=None, end_latest_update_time=None, start_latest_scan_time=None, end_latest_scan_time=None):
-        """BatchScanPrivateImageRequestInfo
+        r"""BatchScanPrivateImageRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -133,7 +133,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @property
     def repo_type(self):
-        """Gets the repo_type of this BatchScanPrivateImageRequestInfo.
+        r"""Gets the repo_type of this BatchScanPrivateImageRequestInfo.
 
         仓库类型，现阶段接入了swr镜像仓库，包含如下:   - SWR : SWR镜像仓库
 
@@ -144,7 +144,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @repo_type.setter
     def repo_type(self, repo_type):
-        """Sets the repo_type of this BatchScanPrivateImageRequestInfo.
+        r"""Sets the repo_type of this BatchScanPrivateImageRequestInfo.
 
         仓库类型，现阶段接入了swr镜像仓库，包含如下:   - SWR : SWR镜像仓库
 
@@ -155,7 +155,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @property
     def image_info_list(self):
-        """Gets the image_info_list of this BatchScanPrivateImageRequestInfo.
+        r"""Gets the image_info_list of this BatchScanPrivateImageRequestInfo.
 
         要扫描的镜像信息列表，operate_all参数为false时为必填
 
@@ -166,7 +166,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @image_info_list.setter
     def image_info_list(self, image_info_list):
-        """Sets the image_info_list of this BatchScanPrivateImageRequestInfo.
+        r"""Sets the image_info_list of this BatchScanPrivateImageRequestInfo.
 
         要扫描的镜像信息列表，operate_all参数为false时为必填
 
@@ -177,7 +177,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @property
     def operate_all(self):
-        """Gets the operate_all of this BatchScanPrivateImageRequestInfo.
+        r"""Gets the operate_all of this BatchScanPrivateImageRequestInfo.
 
         若为true全量查询，可筛选条件全部查询，若image_info_list为空，则必填
 
@@ -188,7 +188,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @operate_all.setter
     def operate_all(self, operate_all):
-        """Sets the operate_all of this BatchScanPrivateImageRequestInfo.
+        r"""Sets the operate_all of this BatchScanPrivateImageRequestInfo.
 
         若为true全量查询，可筛选条件全部查询，若image_info_list为空，则必填
 
@@ -199,7 +199,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @property
     def namespace(self):
-        """Gets the namespace of this BatchScanPrivateImageRequestInfo.
+        r"""Gets the namespace of this BatchScanPrivateImageRequestInfo.
 
         组织名称
 
@@ -210,7 +210,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this BatchScanPrivateImageRequestInfo.
+        r"""Sets the namespace of this BatchScanPrivateImageRequestInfo.
 
         组织名称
 
@@ -221,7 +221,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @property
     def image_name(self):
-        """Gets the image_name of this BatchScanPrivateImageRequestInfo.
+        r"""Gets the image_name of this BatchScanPrivateImageRequestInfo.
 
         镜像名称
 
@@ -232,7 +232,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this BatchScanPrivateImageRequestInfo.
+        r"""Sets the image_name of this BatchScanPrivateImageRequestInfo.
 
         镜像名称
 
@@ -243,7 +243,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @property
     def image_version(self):
-        """Gets the image_version of this BatchScanPrivateImageRequestInfo.
+        r"""Gets the image_version of this BatchScanPrivateImageRequestInfo.
 
         镜像版本
 
@@ -254,7 +254,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @image_version.setter
     def image_version(self, image_version):
-        """Sets the image_version of this BatchScanPrivateImageRequestInfo.
+        r"""Sets the image_version of this BatchScanPrivateImageRequestInfo.
 
         镜像版本
 
@@ -265,7 +265,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @property
     def image_type(self):
-        """Gets the image_type of this BatchScanPrivateImageRequestInfo.
+        r"""Gets the image_type of this BatchScanPrivateImageRequestInfo.
 
         镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
 
@@ -276,7 +276,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this BatchScanPrivateImageRequestInfo.
+        r"""Sets the image_type of this BatchScanPrivateImageRequestInfo.
 
         镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
 
@@ -287,7 +287,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @property
     def scan_status(self):
-        """Gets the scan_status of this BatchScanPrivateImageRequestInfo.
+        r"""Gets the scan_status of this BatchScanPrivateImageRequestInfo.
 
         扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - download_failed : 下载失败   - image_oversized : 镜像超大
 
@@ -298,7 +298,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @scan_status.setter
     def scan_status(self, scan_status):
-        """Sets the scan_status of this BatchScanPrivateImageRequestInfo.
+        r"""Sets the scan_status of this BatchScanPrivateImageRequestInfo.
 
         扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - download_failed : 下载失败   - image_oversized : 镜像超大
 
@@ -309,7 +309,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @property
     def latest_version(self):
-        """Gets the latest_version of this BatchScanPrivateImageRequestInfo.
+        r"""Gets the latest_version of this BatchScanPrivateImageRequestInfo.
 
         仅关注最新版本镜像
 
@@ -320,7 +320,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @latest_version.setter
     def latest_version(self, latest_version):
-        """Sets the latest_version of this BatchScanPrivateImageRequestInfo.
+        r"""Sets the latest_version of this BatchScanPrivateImageRequestInfo.
 
         仅关注最新版本镜像
 
@@ -331,7 +331,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @property
     def image_size(self):
-        """Gets the image_size of this BatchScanPrivateImageRequestInfo.
+        r"""Gets the image_size of this BatchScanPrivateImageRequestInfo.
 
         镜像大小
 
@@ -342,7 +342,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @image_size.setter
     def image_size(self, image_size):
-        """Sets the image_size of this BatchScanPrivateImageRequestInfo.
+        r"""Sets the image_size of this BatchScanPrivateImageRequestInfo.
 
         镜像大小
 
@@ -353,7 +353,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @property
     def start_latest_update_time(self):
-        """Gets the start_latest_update_time of this BatchScanPrivateImageRequestInfo.
+        r"""Gets the start_latest_update_time of this BatchScanPrivateImageRequestInfo.
 
         创建时间开始日期，时间单位 毫秒（ms）
 
@@ -364,7 +364,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @start_latest_update_time.setter
     def start_latest_update_time(self, start_latest_update_time):
-        """Sets the start_latest_update_time of this BatchScanPrivateImageRequestInfo.
+        r"""Sets the start_latest_update_time of this BatchScanPrivateImageRequestInfo.
 
         创建时间开始日期，时间单位 毫秒（ms）
 
@@ -375,7 +375,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @property
     def end_latest_update_time(self):
-        """Gets the end_latest_update_time of this BatchScanPrivateImageRequestInfo.
+        r"""Gets the end_latest_update_time of this BatchScanPrivateImageRequestInfo.
 
         创建时间结束日期，时间单位 毫秒（ms）
 
@@ -386,7 +386,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @end_latest_update_time.setter
     def end_latest_update_time(self, end_latest_update_time):
-        """Sets the end_latest_update_time of this BatchScanPrivateImageRequestInfo.
+        r"""Sets the end_latest_update_time of this BatchScanPrivateImageRequestInfo.
 
         创建时间结束日期，时间单位 毫秒（ms）
 
@@ -397,7 +397,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @property
     def start_latest_scan_time(self):
-        """Gets the start_latest_scan_time of this BatchScanPrivateImageRequestInfo.
+        r"""Gets the start_latest_scan_time of this BatchScanPrivateImageRequestInfo.
 
         最近一次扫描完成时间开始日期，时间单位 毫秒（ms）
 
@@ -408,7 +408,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @start_latest_scan_time.setter
     def start_latest_scan_time(self, start_latest_scan_time):
-        """Sets the start_latest_scan_time of this BatchScanPrivateImageRequestInfo.
+        r"""Sets the start_latest_scan_time of this BatchScanPrivateImageRequestInfo.
 
         最近一次扫描完成时间开始日期，时间单位 毫秒（ms）
 
@@ -419,7 +419,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @property
     def end_latest_scan_time(self):
-        """Gets the end_latest_scan_time of this BatchScanPrivateImageRequestInfo.
+        r"""Gets the end_latest_scan_time of this BatchScanPrivateImageRequestInfo.
 
         最近一次扫描完成时间结束日期，时间单位 毫秒（ms）
 
@@ -430,7 +430,7 @@ class BatchScanPrivateImageRequestInfo:
 
     @end_latest_scan_time.setter
     def end_latest_scan_time(self, end_latest_scan_time):
-        """Sets the end_latest_scan_time of this BatchScanPrivateImageRequestInfo.
+        r"""Sets the end_latest_scan_time of this BatchScanPrivateImageRequestInfo.
 
         最近一次扫描完成时间结束日期，时间单位 毫秒（ms）
 

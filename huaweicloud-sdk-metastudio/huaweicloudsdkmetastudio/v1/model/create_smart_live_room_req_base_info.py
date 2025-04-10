@@ -59,7 +59,7 @@ class CreateSmartLiveRoomReqBaseInfo:
     }
 
     def __init__(self, room_name=None, room_description=None, room_type=None, scene_scripts=None, interaction_config=None, interaction_rules=None, play_policy=None, video_config=None, output_urls=None, stream_keys=None, backup_model_asset_ids=None, live_event_callback_config=None, rtc_callback_config=None, review_config=None, shared_config=None, view_mode=None, co_streamer_config=None, priv_data=None):
-        """CreateSmartLiveRoomReqBaseInfo
+        r"""CreateSmartLiveRoomReqBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -161,7 +161,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def room_name(self):
-        """Gets the room_name of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the room_name of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： 直播间名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -172,7 +172,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @room_name.setter
     def room_name(self, room_name):
-        """Sets the room_name of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the room_name of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： 直播间名称。 **约束限制**： 不涉及。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -183,7 +183,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def room_description(self):
-        """Gets the room_description of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the room_description of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： 直播间描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
@@ -194,7 +194,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @room_description.setter
     def room_description(self, room_description):
-        """Sets the room_description of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the room_description of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： 直播间描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
@@ -205,7 +205,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def room_type(self):
-        """Gets the room_type of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the room_type of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： 直播间类型。 **约束限制**： 不涉及。 **取值范围**： * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
 
@@ -216,7 +216,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @room_type.setter
     def room_type(self, room_type):
-        """Sets the room_type of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the room_type of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： 直播间类型。 **约束限制**： 不涉及。 **取值范围**： * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
 
@@ -227,7 +227,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def scene_scripts(self):
-        """Gets the scene_scripts of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the scene_scripts of this CreateSmartLiveRoomReqBaseInfo.
 
         默认直播剧本列表。
 
@@ -238,7 +238,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @scene_scripts.setter
     def scene_scripts(self, scene_scripts):
-        """Sets the scene_scripts of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the scene_scripts of this CreateSmartLiveRoomReqBaseInfo.
 
         默认直播剧本列表。
 
@@ -249,7 +249,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def interaction_config(self):
-        """Gets the interaction_config of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the interaction_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :return: The interaction_config of this CreateSmartLiveRoomReqBaseInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveRoomInteractionConfig`
@@ -258,7 +258,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @interaction_config.setter
     def interaction_config(self, interaction_config):
-        """Sets the interaction_config of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the interaction_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :param interaction_config: The interaction_config of this CreateSmartLiveRoomReqBaseInfo.
         :type interaction_config: :class:`huaweicloudsdkmetastudio.v1.LiveRoomInteractionConfig`
@@ -267,7 +267,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def interaction_rules(self):
-        """Gets the interaction_rules of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the interaction_rules of this CreateSmartLiveRoomReqBaseInfo.
 
         互动规则列表
 
@@ -278,7 +278,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @interaction_rules.setter
     def interaction_rules(self, interaction_rules):
-        """Sets the interaction_rules of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the interaction_rules of this CreateSmartLiveRoomReqBaseInfo.
 
         互动规则列表
 
@@ -289,7 +289,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def play_policy(self):
-        """Gets the play_policy of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the play_policy of this CreateSmartLiveRoomReqBaseInfo.
 
         :return: The play_policy of this CreateSmartLiveRoomReqBaseInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.PlayPolicy`
@@ -298,7 +298,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @play_policy.setter
     def play_policy(self, play_policy):
-        """Sets the play_policy of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the play_policy of this CreateSmartLiveRoomReqBaseInfo.
 
         :param play_policy: The play_policy of this CreateSmartLiveRoomReqBaseInfo.
         :type play_policy: :class:`huaweicloudsdkmetastudio.v1.PlayPolicy`
@@ -307,7 +307,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def video_config(self):
-        """Gets the video_config of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the video_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :return: The video_config of this CreateSmartLiveRoomReqBaseInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -316,7 +316,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the video_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :param video_config: The video_config of this CreateSmartLiveRoomReqBaseInfo.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -325,7 +325,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def output_urls(self):
-        """Gets the output_urls of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the output_urls of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： RTMP视频推流第三方直播平台地址。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -336,7 +336,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @output_urls.setter
     def output_urls(self, output_urls):
-        """Sets the output_urls of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the output_urls of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： RTMP视频推流第三方直播平台地址。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -347,7 +347,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def stream_keys(self):
-        """Gets the stream_keys of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the stream_keys of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： RTMP视频推流第三方直播平台流密钥，与推流地址对应。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -358,7 +358,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @stream_keys.setter
     def stream_keys(self, stream_keys):
-        """Sets the stream_keys of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the stream_keys of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： RTMP视频推流第三方直播平台流密钥，与推流地址对应。 > 直播过程中刷新地址，需要调用COMMAND命令REFRESH_OUTPUT_URL。  **约束限制**： 不涉及 **取值范围**： 当前仅支持一条RTMP出流地址。 **默认取值**： 不涉及。
 
@@ -369,7 +369,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def backup_model_asset_ids(self):
-        """Gets the backup_model_asset_ids of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the backup_model_asset_ids of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： 主播轮换时备选主播数字人资产ID（仅形象资产，不包含声音）。  **约束限制**： 不涉及 **取值范围**： 当前最大支持5个备选主播。 数字人资产ID，字符长度0-64位。 **默认取值**： 不涉及
 
@@ -380,7 +380,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @backup_model_asset_ids.setter
     def backup_model_asset_ids(self, backup_model_asset_ids):
-        """Sets the backup_model_asset_ids of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the backup_model_asset_ids of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： 主播轮换时备选主播数字人资产ID（仅形象资产，不包含声音）。  **约束限制**： 不涉及 **取值范围**： 当前最大支持5个备选主播。 数字人资产ID，字符长度0-64位。 **默认取值**： 不涉及
 
@@ -391,7 +391,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def live_event_callback_config(self):
-        """Gets the live_event_callback_config of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the live_event_callback_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :return: The live_event_callback_config of this CreateSmartLiveRoomReqBaseInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveRoomEventCallBackConfig`
@@ -400,7 +400,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @live_event_callback_config.setter
     def live_event_callback_config(self, live_event_callback_config):
-        """Sets the live_event_callback_config of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the live_event_callback_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :param live_event_callback_config: The live_event_callback_config of this CreateSmartLiveRoomReqBaseInfo.
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveRoomEventCallBackConfig`
@@ -409,7 +409,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def rtc_callback_config(self):
-        """Gets the rtc_callback_config of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the rtc_callback_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :return: The rtc_callback_config of this CreateSmartLiveRoomReqBaseInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
@@ -418,7 +418,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @rtc_callback_config.setter
     def rtc_callback_config(self, rtc_callback_config):
-        """Sets the rtc_callback_config of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the rtc_callback_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :param rtc_callback_config: The rtc_callback_config of this CreateSmartLiveRoomReqBaseInfo.
         :type rtc_callback_config: :class:`huaweicloudsdkmetastudio.v1.RTCLiveEventCallBackConfig`
@@ -427,7 +427,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def review_config(self):
-        """Gets the review_config of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the review_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :return: The review_config of this CreateSmartLiveRoomReqBaseInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -436,7 +436,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @review_config.setter
     def review_config(self, review_config):
-        """Sets the review_config of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the review_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :param review_config: The review_config of this CreateSmartLiveRoomReqBaseInfo.
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -445,7 +445,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def shared_config(self):
-        """Gets the shared_config of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the shared_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :return: The shared_config of this CreateSmartLiveRoomReqBaseInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
@@ -454,7 +454,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @shared_config.setter
     def shared_config(self, shared_config):
-        """Sets the shared_config of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the shared_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :param shared_config: The shared_config of this CreateSmartLiveRoomReqBaseInfo.
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
@@ -463,7 +463,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def view_mode(self):
-        """Gets the view_mode of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the view_mode of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： 横竖屏类型。 **约束限制**： 用户无需填写，通过video_config中分辨率判断 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
 
@@ -474,7 +474,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @view_mode.setter
     def view_mode(self, view_mode):
-        """Sets the view_mode of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the view_mode of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： 横竖屏类型。 **约束限制**： 用户无需填写，通过video_config中分辨率判断 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
 
@@ -485,7 +485,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def co_streamer_config(self):
-        """Gets the co_streamer_config of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the co_streamer_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :return: The co_streamer_config of this CreateSmartLiveRoomReqBaseInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
@@ -494,7 +494,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @co_streamer_config.setter
     def co_streamer_config(self, co_streamer_config):
-        """Sets the co_streamer_config of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the co_streamer_config of this CreateSmartLiveRoomReqBaseInfo.
 
         :param co_streamer_config: The co_streamer_config of this CreateSmartLiveRoomReqBaseInfo.
         :type co_streamer_config: :class:`huaweicloudsdkmetastudio.v1.CoStreamerConfig`
@@ -503,7 +503,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @property
     def priv_data(self):
-        """Gets the priv_data of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Gets the priv_data of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： 匹配值私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192 **默认取值**： 不涉及。
 
@@ -514,7 +514,7 @@ class CreateSmartLiveRoomReqBaseInfo:
 
     @priv_data.setter
     def priv_data(self, priv_data):
-        """Sets the priv_data of this CreateSmartLiveRoomReqBaseInfo.
+        r"""Sets the priv_data of this CreateSmartLiveRoomReqBaseInfo.
 
         **参数解释**： 匹配值私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192 **默认取值**： 不涉及。
 

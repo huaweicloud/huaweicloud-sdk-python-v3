@@ -25,7 +25,7 @@ class ListServersByTagRequest:
     }
 
     def __init__(self, body=None):
-        """ListServersByTagRequest
+        r"""ListServersByTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListServersByTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListServersByTagRequest.
+        r"""Gets the body of this ListServersByTagRequest.
 
         :return: The body of this ListServersByTagRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.ListServersByTagRequestBody`
@@ -52,7 +52,7 @@ class ListServersByTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListServersByTagRequest.
+        r"""Sets the body of this ListServersByTagRequest.
 
         :param body: The body of this ListServersByTagRequest.
         :type body: :class:`huaweicloudsdkecs.v2.ListServersByTagRequestBody`

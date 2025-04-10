@@ -59,7 +59,7 @@ class AlarmHistoryItemV2:
     }
 
     def __init__(self, record_id=None, alarm_id=None, name=None, status=None, level=None, type=None, action_enabled=None, begin_time=None, end_time=None, first_alarm_time=None, last_alarm_time=None, alarm_recovery_time=None, metric=None, condition=None, additional_info=None, alarm_actions=None, ok_actions=None, data_points=None):
-        """AlarmHistoryItemV2
+        r"""AlarmHistoryItemV2
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class AlarmHistoryItemV2:
 
     @property
     def record_id(self):
-        """Gets the record_id of this AlarmHistoryItemV2.
+        r"""Gets the record_id of this AlarmHistoryItemV2.
 
         告警记录ID
 
@@ -173,7 +173,7 @@ class AlarmHistoryItemV2:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this AlarmHistoryItemV2.
+        r"""Sets the record_id of this AlarmHistoryItemV2.
 
         告警记录ID
 
@@ -184,7 +184,7 @@ class AlarmHistoryItemV2:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this AlarmHistoryItemV2.
+        r"""Gets the alarm_id of this AlarmHistoryItemV2.
 
         告警规则的ID，如：al1603131199286dzxpqK3Ez。
 
@@ -195,7 +195,7 @@ class AlarmHistoryItemV2:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this AlarmHistoryItemV2.
+        r"""Sets the alarm_id of this AlarmHistoryItemV2.
 
         告警规则的ID，如：al1603131199286dzxpqK3Ez。
 
@@ -206,7 +206,7 @@ class AlarmHistoryItemV2:
 
     @property
     def name(self):
-        """Gets the name of this AlarmHistoryItemV2.
+        r"""Gets the name of this AlarmHistoryItemV2.
 
         告警规则的名称，如：alarm-test01。
 
@@ -217,7 +217,7 @@ class AlarmHistoryItemV2:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AlarmHistoryItemV2.
+        r"""Sets the name of this AlarmHistoryItemV2.
 
         告警规则的名称，如：alarm-test01。
 
@@ -228,7 +228,7 @@ class AlarmHistoryItemV2:
 
     @property
     def status(self):
-        """Gets the status of this AlarmHistoryItemV2.
+        r"""Gets the status of this AlarmHistoryItemV2.
 
         告警记录的状态，取值为ok，alarm，invalid； ok为正常，alarm为告警，invalid为已失效。
 
@@ -239,7 +239,7 @@ class AlarmHistoryItemV2:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AlarmHistoryItemV2.
+        r"""Sets the status of this AlarmHistoryItemV2.
 
         告警记录的状态，取值为ok，alarm，invalid； ok为正常，alarm为告警，invalid为已失效。
 
@@ -250,7 +250,7 @@ class AlarmHistoryItemV2:
 
     @property
     def level(self):
-        """Gets the level of this AlarmHistoryItemV2.
+        r"""Gets the level of this AlarmHistoryItemV2.
 
         告警记录的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
 
@@ -261,7 +261,7 @@ class AlarmHistoryItemV2:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this AlarmHistoryItemV2.
+        r"""Sets the level of this AlarmHistoryItemV2.
 
         告警记录的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
 
@@ -272,7 +272,7 @@ class AlarmHistoryItemV2:
 
     @property
     def type(self):
-        """Gets the type of this AlarmHistoryItemV2.
+        r"""Gets the type of this AlarmHistoryItemV2.
 
         :return: The type of this AlarmHistoryItemV2.
         :rtype: :class:`huaweicloudsdkces.v2.AlarmType`
@@ -281,7 +281,7 @@ class AlarmHistoryItemV2:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AlarmHistoryItemV2.
+        r"""Sets the type of this AlarmHistoryItemV2.
 
         :param type: The type of this AlarmHistoryItemV2.
         :type type: :class:`huaweicloudsdkces.v2.AlarmType`
@@ -290,7 +290,7 @@ class AlarmHistoryItemV2:
 
     @property
     def action_enabled(self):
-        """Gets the action_enabled of this AlarmHistoryItemV2.
+        r"""Gets the action_enabled of this AlarmHistoryItemV2.
 
         是否发送通知，值为true或者false。
 
@@ -301,7 +301,7 @@ class AlarmHistoryItemV2:
 
     @action_enabled.setter
     def action_enabled(self, action_enabled):
-        """Sets the action_enabled of this AlarmHistoryItemV2.
+        r"""Sets the action_enabled of this AlarmHistoryItemV2.
 
         是否发送通知，值为true或者false。
 
@@ -312,7 +312,7 @@ class AlarmHistoryItemV2:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this AlarmHistoryItemV2.
+        r"""Gets the begin_time of this AlarmHistoryItemV2.
 
         产生时间,UTC时间
 
@@ -323,7 +323,7 @@ class AlarmHistoryItemV2:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this AlarmHistoryItemV2.
+        r"""Sets the begin_time of this AlarmHistoryItemV2.
 
         产生时间,UTC时间
 
@@ -334,7 +334,7 @@ class AlarmHistoryItemV2:
 
     @property
     def end_time(self):
-        """Gets the end_time of this AlarmHistoryItemV2.
+        r"""Gets the end_time of this AlarmHistoryItemV2.
 
         结束时间，UTC时间
 
@@ -345,7 +345,7 @@ class AlarmHistoryItemV2:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this AlarmHistoryItemV2.
+        r"""Sets the end_time of this AlarmHistoryItemV2.
 
         结束时间，UTC时间
 
@@ -356,7 +356,7 @@ class AlarmHistoryItemV2:
 
     @property
     def first_alarm_time(self):
-        """Gets the first_alarm_time of this AlarmHistoryItemV2.
+        r"""Gets the first_alarm_time of this AlarmHistoryItemV2.
 
         第一次告警时间戳，UTC时间
 
@@ -367,7 +367,7 @@ class AlarmHistoryItemV2:
 
     @first_alarm_time.setter
     def first_alarm_time(self, first_alarm_time):
-        """Sets the first_alarm_time of this AlarmHistoryItemV2.
+        r"""Sets the first_alarm_time of this AlarmHistoryItemV2.
 
         第一次告警时间戳，UTC时间
 
@@ -378,7 +378,7 @@ class AlarmHistoryItemV2:
 
     @property
     def last_alarm_time(self):
-        """Gets the last_alarm_time of this AlarmHistoryItemV2.
+        r"""Gets the last_alarm_time of this AlarmHistoryItemV2.
 
         最后一次告警时间，UTC时间
 
@@ -389,7 +389,7 @@ class AlarmHistoryItemV2:
 
     @last_alarm_time.setter
     def last_alarm_time(self, last_alarm_time):
-        """Sets the last_alarm_time of this AlarmHistoryItemV2.
+        r"""Sets the last_alarm_time of this AlarmHistoryItemV2.
 
         最后一次告警时间，UTC时间
 
@@ -400,7 +400,7 @@ class AlarmHistoryItemV2:
 
     @property
     def alarm_recovery_time(self):
-        """Gets the alarm_recovery_time of this AlarmHistoryItemV2.
+        r"""Gets the alarm_recovery_time of this AlarmHistoryItemV2.
 
         告警恢复时间，UTC时间
 
@@ -411,7 +411,7 @@ class AlarmHistoryItemV2:
 
     @alarm_recovery_time.setter
     def alarm_recovery_time(self, alarm_recovery_time):
-        """Sets the alarm_recovery_time of this AlarmHistoryItemV2.
+        r"""Sets the alarm_recovery_time of this AlarmHistoryItemV2.
 
         告警恢复时间，UTC时间
 
@@ -422,7 +422,7 @@ class AlarmHistoryItemV2:
 
     @property
     def metric(self):
-        """Gets the metric of this AlarmHistoryItemV2.
+        r"""Gets the metric of this AlarmHistoryItemV2.
 
         :return: The metric of this AlarmHistoryItemV2.
         :rtype: :class:`huaweicloudsdkces.v2.Metric`
@@ -431,7 +431,7 @@ class AlarmHistoryItemV2:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this AlarmHistoryItemV2.
+        r"""Sets the metric of this AlarmHistoryItemV2.
 
         :param metric: The metric of this AlarmHistoryItemV2.
         :type metric: :class:`huaweicloudsdkces.v2.Metric`
@@ -440,7 +440,7 @@ class AlarmHistoryItemV2:
 
     @property
     def condition(self):
-        """Gets the condition of this AlarmHistoryItemV2.
+        r"""Gets the condition of this AlarmHistoryItemV2.
 
         :return: The condition of this AlarmHistoryItemV2.
         :rtype: :class:`huaweicloudsdkces.v2.AlarmCondition`
@@ -449,7 +449,7 @@ class AlarmHistoryItemV2:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this AlarmHistoryItemV2.
+        r"""Sets the condition of this AlarmHistoryItemV2.
 
         :param condition: The condition of this AlarmHistoryItemV2.
         :type condition: :class:`huaweicloudsdkces.v2.AlarmCondition`
@@ -458,7 +458,7 @@ class AlarmHistoryItemV2:
 
     @property
     def additional_info(self):
-        """Gets the additional_info of this AlarmHistoryItemV2.
+        r"""Gets the additional_info of this AlarmHistoryItemV2.
 
         :return: The additional_info of this AlarmHistoryItemV2.
         :rtype: :class:`huaweicloudsdkces.v2.AdditionalInfo`
@@ -467,7 +467,7 @@ class AlarmHistoryItemV2:
 
     @additional_info.setter
     def additional_info(self, additional_info):
-        """Sets the additional_info of this AlarmHistoryItemV2.
+        r"""Sets the additional_info of this AlarmHistoryItemV2.
 
         :param additional_info: The additional_info of this AlarmHistoryItemV2.
         :type additional_info: :class:`huaweicloudsdkces.v2.AdditionalInfo`
@@ -476,7 +476,7 @@ class AlarmHistoryItemV2:
 
     @property
     def alarm_actions(self):
-        """Gets the alarm_actions of this AlarmHistoryItemV2.
+        r"""Gets the alarm_actions of this AlarmHistoryItemV2.
 
         告警触发的动作。  结构如下：  {  \"type\": \"notification\", \"notification_list\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： notification：通知。 autoscaling：弹性伸缩。 notification_list：告警状态发生变化时，被通知对象的列表。
 
@@ -487,7 +487,7 @@ class AlarmHistoryItemV2:
 
     @alarm_actions.setter
     def alarm_actions(self, alarm_actions):
-        """Sets the alarm_actions of this AlarmHistoryItemV2.
+        r"""Sets the alarm_actions of this AlarmHistoryItemV2.
 
         告警触发的动作。  结构如下：  {  \"type\": \"notification\", \"notification_list\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： notification：通知。 autoscaling：弹性伸缩。 notification_list：告警状态发生变化时，被通知对象的列表。
 
@@ -498,7 +498,7 @@ class AlarmHistoryItemV2:
 
     @property
     def ok_actions(self):
-        """Gets the ok_actions of this AlarmHistoryItemV2.
+        r"""Gets the ok_actions of this AlarmHistoryItemV2.
 
         告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notification_list\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：  notification：通知。  notification_list：告警状态发生变化时，被通知对象的列表。
 
@@ -509,7 +509,7 @@ class AlarmHistoryItemV2:
 
     @ok_actions.setter
     def ok_actions(self, ok_actions):
-        """Sets the ok_actions of this AlarmHistoryItemV2.
+        r"""Sets the ok_actions of this AlarmHistoryItemV2.
 
         告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notification_list\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：  notification：通知。  notification_list：告警状态发生变化时，被通知对象的列表。
 
@@ -520,7 +520,7 @@ class AlarmHistoryItemV2:
 
     @property
     def data_points(self):
-        """Gets the data_points of this AlarmHistoryItemV2.
+        r"""Gets the data_points of this AlarmHistoryItemV2.
 
         计算出该条告警记录的资源监控数据上报时间和监控数值。
 
@@ -531,7 +531,7 @@ class AlarmHistoryItemV2:
 
     @data_points.setter
     def data_points(self, data_points):
-        """Sets the data_points of this AlarmHistoryItemV2.
+        r"""Sets the data_points of this AlarmHistoryItemV2.
 
         计算出该条告警记录的资源监控数据上报时间和监控数值。
 

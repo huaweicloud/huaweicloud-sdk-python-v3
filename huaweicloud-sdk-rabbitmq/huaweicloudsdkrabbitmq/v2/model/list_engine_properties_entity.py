@@ -47,7 +47,7 @@ class ListEnginePropertiesEntity:
     }
 
     def __init__(self, step_length=None, max_queue_per_broker=None, max_connection_per_broker=None, max_partition_per_broker=None, max_broker=None, max_storage_per_node=None, max_consumer_per_broker=None, min_broker=None, max_bandwidth_per_broker=None, min_storage_per_node=None, max_tps_per_broker=None, product_alias=None):
-        """ListEnginePropertiesEntity
+        r"""ListEnginePropertiesEntity
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListEnginePropertiesEntity:
 
     @property
     def step_length(self):
-        """Gets the step_length of this ListEnginePropertiesEntity.
+        r"""Gets the step_length of this ListEnginePropertiesEntity.
 
         节点增长步长。
 
@@ -131,7 +131,7 @@ class ListEnginePropertiesEntity:
 
     @step_length.setter
     def step_length(self, step_length):
-        """Sets the step_length of this ListEnginePropertiesEntity.
+        r"""Sets the step_length of this ListEnginePropertiesEntity.
 
         节点增长步长。
 
@@ -142,7 +142,7 @@ class ListEnginePropertiesEntity:
 
     @property
     def max_queue_per_broker(self):
-        """Gets the max_queue_per_broker of this ListEnginePropertiesEntity.
+        r"""Gets the max_queue_per_broker of this ListEnginePropertiesEntity.
 
         每个Broker的最大队列。
 
@@ -153,7 +153,7 @@ class ListEnginePropertiesEntity:
 
     @max_queue_per_broker.setter
     def max_queue_per_broker(self, max_queue_per_broker):
-        """Sets the max_queue_per_broker of this ListEnginePropertiesEntity.
+        r"""Sets the max_queue_per_broker of this ListEnginePropertiesEntity.
 
         每个Broker的最大队列。
 
@@ -164,7 +164,7 @@ class ListEnginePropertiesEntity:
 
     @property
     def max_connection_per_broker(self):
-        """Gets the max_connection_per_broker of this ListEnginePropertiesEntity.
+        r"""Gets the max_connection_per_broker of this ListEnginePropertiesEntity.
 
         每个Broker的最大连接数。
 
@@ -175,7 +175,7 @@ class ListEnginePropertiesEntity:
 
     @max_connection_per_broker.setter
     def max_connection_per_broker(self, max_connection_per_broker):
-        """Sets the max_connection_per_broker of this ListEnginePropertiesEntity.
+        r"""Sets the max_connection_per_broker of this ListEnginePropertiesEntity.
 
         每个Broker的最大连接数。
 
@@ -186,7 +186,7 @@ class ListEnginePropertiesEntity:
 
     @property
     def max_partition_per_broker(self):
-        """Gets the max_partition_per_broker of this ListEnginePropertiesEntity.
+        r"""Gets the max_partition_per_broker of this ListEnginePropertiesEntity.
 
         每个Broker的最大分区数。
 
@@ -197,7 +197,7 @@ class ListEnginePropertiesEntity:
 
     @max_partition_per_broker.setter
     def max_partition_per_broker(self, max_partition_per_broker):
-        """Sets the max_partition_per_broker of this ListEnginePropertiesEntity.
+        r"""Sets the max_partition_per_broker of this ListEnginePropertiesEntity.
 
         每个Broker的最大分区数。
 
@@ -208,7 +208,7 @@ class ListEnginePropertiesEntity:
 
     @property
     def max_broker(self):
-        """Gets the max_broker of this ListEnginePropertiesEntity.
+        r"""Gets the max_broker of this ListEnginePropertiesEntity.
 
         Broker的最大个数。
 
@@ -219,7 +219,7 @@ class ListEnginePropertiesEntity:
 
     @max_broker.setter
     def max_broker(self, max_broker):
-        """Sets the max_broker of this ListEnginePropertiesEntity.
+        r"""Sets the max_broker of this ListEnginePropertiesEntity.
 
         Broker的最大个数。
 
@@ -230,7 +230,7 @@ class ListEnginePropertiesEntity:
 
     @property
     def max_storage_per_node(self):
-        """Gets the max_storage_per_node of this ListEnginePropertiesEntity.
+        r"""Gets the max_storage_per_node of this ListEnginePropertiesEntity.
 
         每个节点的最大存储。单位为GB。
 
@@ -241,7 +241,7 @@ class ListEnginePropertiesEntity:
 
     @max_storage_per_node.setter
     def max_storage_per_node(self, max_storage_per_node):
-        """Sets the max_storage_per_node of this ListEnginePropertiesEntity.
+        r"""Sets the max_storage_per_node of this ListEnginePropertiesEntity.
 
         每个节点的最大存储。单位为GB。
 
@@ -252,7 +252,7 @@ class ListEnginePropertiesEntity:
 
     @property
     def max_consumer_per_broker(self):
-        """Gets the max_consumer_per_broker of this ListEnginePropertiesEntity.
+        r"""Gets the max_consumer_per_broker of this ListEnginePropertiesEntity.
 
         每个Broker的最大消费者数。
 
@@ -263,7 +263,7 @@ class ListEnginePropertiesEntity:
 
     @max_consumer_per_broker.setter
     def max_consumer_per_broker(self, max_consumer_per_broker):
-        """Sets the max_consumer_per_broker of this ListEnginePropertiesEntity.
+        r"""Sets the max_consumer_per_broker of this ListEnginePropertiesEntity.
 
         每个Broker的最大消费者数。
 
@@ -274,7 +274,7 @@ class ListEnginePropertiesEntity:
 
     @property
     def min_broker(self):
-        """Gets the min_broker of this ListEnginePropertiesEntity.
+        r"""Gets the min_broker of this ListEnginePropertiesEntity.
 
         Broker的最小个数。
 
@@ -285,7 +285,7 @@ class ListEnginePropertiesEntity:
 
     @min_broker.setter
     def min_broker(self, min_broker):
-        """Sets the min_broker of this ListEnginePropertiesEntity.
+        r"""Sets the min_broker of this ListEnginePropertiesEntity.
 
         Broker的最小个数。
 
@@ -296,7 +296,7 @@ class ListEnginePropertiesEntity:
 
     @property
     def max_bandwidth_per_broker(self):
-        """Gets the max_bandwidth_per_broker of this ListEnginePropertiesEntity.
+        r"""Gets the max_bandwidth_per_broker of this ListEnginePropertiesEntity.
 
         每个Broker的最大带宽。
 
@@ -307,7 +307,7 @@ class ListEnginePropertiesEntity:
 
     @max_bandwidth_per_broker.setter
     def max_bandwidth_per_broker(self, max_bandwidth_per_broker):
-        """Sets the max_bandwidth_per_broker of this ListEnginePropertiesEntity.
+        r"""Sets the max_bandwidth_per_broker of this ListEnginePropertiesEntity.
 
         每个Broker的最大带宽。
 
@@ -318,7 +318,7 @@ class ListEnginePropertiesEntity:
 
     @property
     def min_storage_per_node(self):
-        """Gets the min_storage_per_node of this ListEnginePropertiesEntity.
+        r"""Gets the min_storage_per_node of this ListEnginePropertiesEntity.
 
         每个节点的最小存储。单位为GB。
 
@@ -329,7 +329,7 @@ class ListEnginePropertiesEntity:
 
     @min_storage_per_node.setter
     def min_storage_per_node(self, min_storage_per_node):
-        """Sets the min_storage_per_node of this ListEnginePropertiesEntity.
+        r"""Sets the min_storage_per_node of this ListEnginePropertiesEntity.
 
         每个节点的最小存储。单位为GB。
 
@@ -340,7 +340,7 @@ class ListEnginePropertiesEntity:
 
     @property
     def max_tps_per_broker(self):
-        """Gets the max_tps_per_broker of this ListEnginePropertiesEntity.
+        r"""Gets the max_tps_per_broker of this ListEnginePropertiesEntity.
 
         每个Broker的最大TPS。
 
@@ -351,7 +351,7 @@ class ListEnginePropertiesEntity:
 
     @max_tps_per_broker.setter
     def max_tps_per_broker(self, max_tps_per_broker):
-        """Sets the max_tps_per_broker of this ListEnginePropertiesEntity.
+        r"""Sets the max_tps_per_broker of this ListEnginePropertiesEntity.
 
         每个Broker的最大TPS。
 
@@ -362,7 +362,7 @@ class ListEnginePropertiesEntity:
 
     @property
     def product_alias(self):
-        """Gets the product_alias of this ListEnginePropertiesEntity.
+        r"""Gets the product_alias of this ListEnginePropertiesEntity.
 
         product_id的别名。
 
@@ -373,7 +373,7 @@ class ListEnginePropertiesEntity:
 
     @product_alias.setter
     def product_alias(self, product_alias):
-        """Sets the product_alias of this ListEnginePropertiesEntity.
+        r"""Sets the product_alias of this ListEnginePropertiesEntity.
 
         product_id的别名。
 

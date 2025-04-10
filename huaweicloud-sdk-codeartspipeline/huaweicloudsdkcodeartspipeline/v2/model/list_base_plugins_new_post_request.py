@@ -31,7 +31,7 @@ class ListBasePluginsNewPostRequest:
     }
 
     def __init__(self, domain_id=None, offset=None, limit=None, body=None):
-        """ListBasePluginsNewPostRequest
+        r"""ListBasePluginsNewPostRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListBasePluginsNewPostRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListBasePluginsNewPostRequest.
+        r"""Gets the domain_id of this ListBasePluginsNewPostRequest.
 
         租户ID
 
@@ -72,7 +72,7 @@ class ListBasePluginsNewPostRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListBasePluginsNewPostRequest.
+        r"""Sets the domain_id of this ListBasePluginsNewPostRequest.
 
         租户ID
 
@@ -83,7 +83,7 @@ class ListBasePluginsNewPostRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBasePluginsNewPostRequest.
+        r"""Gets the offset of this ListBasePluginsNewPostRequest.
 
         偏移
 
@@ -94,7 +94,7 @@ class ListBasePluginsNewPostRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBasePluginsNewPostRequest.
+        r"""Sets the offset of this ListBasePluginsNewPostRequest.
 
         偏移
 
@@ -105,7 +105,7 @@ class ListBasePluginsNewPostRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBasePluginsNewPostRequest.
+        r"""Gets the limit of this ListBasePluginsNewPostRequest.
 
         大小
 
@@ -116,7 +116,7 @@ class ListBasePluginsNewPostRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBasePluginsNewPostRequest.
+        r"""Sets the limit of this ListBasePluginsNewPostRequest.
 
         大小
 
@@ -127,7 +127,7 @@ class ListBasePluginsNewPostRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListBasePluginsNewPostRequest.
+        r"""Gets the body of this ListBasePluginsNewPostRequest.
 
         :return: The body of this ListBasePluginsNewPostRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.BusinessTypePluginsQueryDTO`
@@ -136,7 +136,7 @@ class ListBasePluginsNewPostRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListBasePluginsNewPostRequest.
+        r"""Sets the body of this ListBasePluginsNewPostRequest.
 
         :param body: The body of this ListBasePluginsNewPostRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.BusinessTypePluginsQueryDTO`

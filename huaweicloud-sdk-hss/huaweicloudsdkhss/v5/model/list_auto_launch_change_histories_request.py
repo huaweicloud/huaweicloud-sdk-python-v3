@@ -49,7 +49,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     }
 
     def __init__(self, host_id=None, host_ip=None, host_name=None, auto_launch_name=None, type=None, variation_type=None, enterprise_project_id=None, sort_key=None, sort_dir=None, limit=None, offset=None, start_time=None, end_time=None):
-        """ListAutoLaunchChangeHistoriesRequest
+        r"""ListAutoLaunchChangeHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListAutoLaunchChangeHistoriesRequest:
         :type type: int
         :param variation_type: 变更类型:   - add ：新建   - delete ：删除   - modify ：修改
         :type variation_type: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param sort_key: 排序的key值，目前只支持按照recent_scan_time排序，按照recent_scan_time排序时，根据sort_dir的值决定升序还是降序
         :type sort_key: str
@@ -127,7 +127,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Gets the host_id of this ListAutoLaunchChangeHistoriesRequest.
 
         主机id
 
@@ -138,7 +138,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Sets the host_id of this ListAutoLaunchChangeHistoriesRequest.
 
         主机id
 
@@ -149,7 +149,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Gets the host_ip of this ListAutoLaunchChangeHistoriesRequest.
 
         主机ip
 
@@ -160,7 +160,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Sets the host_ip of this ListAutoLaunchChangeHistoriesRequest.
 
         主机ip
 
@@ -171,7 +171,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Gets the host_name of this ListAutoLaunchChangeHistoriesRequest.
 
         主机名称
 
@@ -182,7 +182,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Sets the host_name of this ListAutoLaunchChangeHistoriesRequest.
 
         主机名称
 
@@ -193,7 +193,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @property
     def auto_launch_name(self):
-        """Gets the auto_launch_name of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Gets the auto_launch_name of this ListAutoLaunchChangeHistoriesRequest.
 
         自启动项名称
 
@@ -204,7 +204,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @auto_launch_name.setter
     def auto_launch_name(self, auto_launch_name):
-        """Sets the auto_launch_name of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Sets the auto_launch_name of this ListAutoLaunchChangeHistoriesRequest.
 
         自启动项名称
 
@@ -215,7 +215,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Gets the type of this ListAutoLaunchChangeHistoriesRequest.
 
         自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
@@ -226,7 +226,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Sets the type of this ListAutoLaunchChangeHistoriesRequest.
 
         自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
@@ -237,7 +237,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @property
     def variation_type(self):
-        """Gets the variation_type of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Gets the variation_type of this ListAutoLaunchChangeHistoriesRequest.
 
         变更类型:   - add ：新建   - delete ：删除   - modify ：修改
 
@@ -248,7 +248,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @variation_type.setter
     def variation_type(self, variation_type):
-        """Sets the variation_type of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Sets the variation_type of this ListAutoLaunchChangeHistoriesRequest.
 
         变更类型:   - add ：新建   - delete ：删除   - modify ：修改
 
@@ -259,9 +259,9 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Gets the enterprise_project_id of this ListAutoLaunchChangeHistoriesRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListAutoLaunchChangeHistoriesRequest.
         :rtype: str
@@ -270,9 +270,9 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Sets the enterprise_project_id of this ListAutoLaunchChangeHistoriesRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListAutoLaunchChangeHistoriesRequest.
         :type enterprise_project_id: str
@@ -281,7 +281,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Gets the sort_key of this ListAutoLaunchChangeHistoriesRequest.
 
         排序的key值，目前只支持按照recent_scan_time排序，按照recent_scan_time排序时，根据sort_dir的值决定升序还是降序
 
@@ -292,7 +292,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Sets the sort_key of this ListAutoLaunchChangeHistoriesRequest.
 
         排序的key值，目前只支持按照recent_scan_time排序，按照recent_scan_time排序时，根据sort_dir的值决定升序还是降序
 
@@ -303,7 +303,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Gets the sort_dir of this ListAutoLaunchChangeHistoriesRequest.
 
         排序方式，默认为降序，当sort_key为按照recent_scan_time排序时，根据当前值决定升序还是降序，当sort_key为其他值时均为降序   - asc ：升序   - desc ：降序
 
@@ -314,7 +314,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Sets the sort_dir of this ListAutoLaunchChangeHistoriesRequest.
 
         排序方式，默认为降序，当sort_key为按照recent_scan_time排序时，根据当前值决定升序还是降序，当sort_key为其他值时均为降序   - asc ：升序   - desc ：降序
 
@@ -325,7 +325,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Gets the limit of this ListAutoLaunchChangeHistoriesRequest.
 
         每页显示数量
 
@@ -336,7 +336,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Sets the limit of this ListAutoLaunchChangeHistoriesRequest.
 
         每页显示数量
 
@@ -347,7 +347,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Gets the offset of this ListAutoLaunchChangeHistoriesRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -358,7 +358,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Sets the offset of this ListAutoLaunchChangeHistoriesRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -369,7 +369,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Gets the start_time of this ListAutoLaunchChangeHistoriesRequest.
 
         变更开始时间，13位时间戳
 
@@ -380,7 +380,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Sets the start_time of this ListAutoLaunchChangeHistoriesRequest.
 
         变更开始时间，13位时间戳
 
@@ -391,7 +391,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Gets the end_time of this ListAutoLaunchChangeHistoriesRequest.
 
         变更结束时间，13位时间戳
 
@@ -402,7 +402,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAutoLaunchChangeHistoriesRequest.
+        r"""Sets the end_time of this ListAutoLaunchChangeHistoriesRequest.
 
         变更结束时间，13位时间戳
 

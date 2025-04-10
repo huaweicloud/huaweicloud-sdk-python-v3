@@ -25,7 +25,7 @@ class OsStartBody:
     }
 
     def __init__(self, os_start=None):
-        """OsStartBody
+        r"""OsStartBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OsStartBody:
 
     @property
     def os_start(self):
-        """Gets the os_start of this OsStartBody.
+        r"""Gets the os_start of this OsStartBody.
 
         :return: The os_start of this OsStartBody.
         :rtype: :class:`huaweicloudsdkbms.v1.StartServersInfo`
@@ -51,7 +51,7 @@ class OsStartBody:
 
     @os_start.setter
     def os_start(self, os_start):
-        """Sets the os_start of this OsStartBody.
+        r"""Sets the os_start of this OsStartBody.
 
         :param os_start: The os_start of this OsStartBody.
         :type os_start: :class:`huaweicloudsdkbms.v1.StartServersInfo`

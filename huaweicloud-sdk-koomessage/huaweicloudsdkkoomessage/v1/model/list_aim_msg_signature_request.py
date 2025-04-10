@@ -41,7 +41,7 @@ class ListAimMsgSignatureRequest:
     }
 
     def __init__(self, app_name=None, signature_id=None, signature_name=None, signature_type=None, begin_time=None, end_time=None, status=None, limit=None, offset=None):
-        """ListAimMsgSignatureRequest
+        r"""ListAimMsgSignatureRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListAimMsgSignatureRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListAimMsgSignatureRequest.
+        r"""Gets the app_name of this ListAimMsgSignatureRequest.
 
         应用名称。
 
@@ -110,7 +110,7 @@ class ListAimMsgSignatureRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListAimMsgSignatureRequest.
+        r"""Sets the app_name of this ListAimMsgSignatureRequest.
 
         应用名称。
 
@@ -121,7 +121,7 @@ class ListAimMsgSignatureRequest:
 
     @property
     def signature_id(self):
-        """Gets the signature_id of this ListAimMsgSignatureRequest.
+        r"""Gets the signature_id of this ListAimMsgSignatureRequest.
 
         签名ID。
 
@@ -132,7 +132,7 @@ class ListAimMsgSignatureRequest:
 
     @signature_id.setter
     def signature_id(self, signature_id):
-        """Sets the signature_id of this ListAimMsgSignatureRequest.
+        r"""Sets the signature_id of this ListAimMsgSignatureRequest.
 
         签名ID。
 
@@ -143,7 +143,7 @@ class ListAimMsgSignatureRequest:
 
     @property
     def signature_name(self):
-        """Gets the signature_name of this ListAimMsgSignatureRequest.
+        r"""Gets the signature_name of this ListAimMsgSignatureRequest.
 
         签名名称。
 
@@ -154,7 +154,7 @@ class ListAimMsgSignatureRequest:
 
     @signature_name.setter
     def signature_name(self, signature_name):
-        """Sets the signature_name of this ListAimMsgSignatureRequest.
+        r"""Sets the signature_name of this ListAimMsgSignatureRequest.
 
         签名名称。
 
@@ -165,7 +165,7 @@ class ListAimMsgSignatureRequest:
 
     @property
     def signature_type(self):
-        """Gets the signature_type of this ListAimMsgSignatureRequest.
+        r"""Gets the signature_type of this ListAimMsgSignatureRequest.
 
         签名类型。
 
@@ -176,7 +176,7 @@ class ListAimMsgSignatureRequest:
 
     @signature_type.setter
     def signature_type(self, signature_type):
-        """Sets the signature_type of this ListAimMsgSignatureRequest.
+        r"""Sets the signature_type of this ListAimMsgSignatureRequest.
 
         签名类型。
 
@@ -187,7 +187,7 @@ class ListAimMsgSignatureRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListAimMsgSignatureRequest.
+        r"""Gets the begin_time of this ListAimMsgSignatureRequest.
 
         开始时间。
 
@@ -198,7 +198,7 @@ class ListAimMsgSignatureRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListAimMsgSignatureRequest.
+        r"""Sets the begin_time of this ListAimMsgSignatureRequest.
 
         开始时间。
 
@@ -209,7 +209,7 @@ class ListAimMsgSignatureRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAimMsgSignatureRequest.
+        r"""Gets the end_time of this ListAimMsgSignatureRequest.
 
         结束时间。
 
@@ -220,7 +220,7 @@ class ListAimMsgSignatureRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAimMsgSignatureRequest.
+        r"""Sets the end_time of this ListAimMsgSignatureRequest.
 
         结束时间。
 
@@ -231,7 +231,7 @@ class ListAimMsgSignatureRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAimMsgSignatureRequest.
+        r"""Gets the status of this ListAimMsgSignatureRequest.
 
         状态。
 
@@ -242,7 +242,7 @@ class ListAimMsgSignatureRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAimMsgSignatureRequest.
+        r"""Sets the status of this ListAimMsgSignatureRequest.
 
         状态。
 
@@ -253,7 +253,7 @@ class ListAimMsgSignatureRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAimMsgSignatureRequest.
+        r"""Gets the limit of this ListAimMsgSignatureRequest.
 
         每页显示的条目数量。
 
@@ -264,7 +264,7 @@ class ListAimMsgSignatureRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAimMsgSignatureRequest.
+        r"""Sets the limit of this ListAimMsgSignatureRequest.
 
         每页显示的条目数量。
 
@@ -275,7 +275,7 @@ class ListAimMsgSignatureRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAimMsgSignatureRequest.
+        r"""Gets the offset of this ListAimMsgSignatureRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -286,7 +286,7 @@ class ListAimMsgSignatureRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAimMsgSignatureRequest.
+        r"""Sets the offset of this ListAimMsgSignatureRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 

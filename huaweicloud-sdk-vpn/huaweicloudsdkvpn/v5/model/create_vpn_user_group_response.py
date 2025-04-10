@@ -30,7 +30,7 @@ class CreateVpnUserGroupResponse(SdkResponse):
     }
 
     def __init__(self, user_group=None, request_id=None, header_response_token=None):
-        """CreateVpnUserGroupResponse
+        r"""CreateVpnUserGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateVpnUserGroupResponse(SdkResponse):
 
     @property
     def user_group(self):
-        """Gets the user_group of this CreateVpnUserGroupResponse.
+        r"""Gets the user_group of this CreateVpnUserGroupResponse.
 
         :return: The user_group of this CreateVpnUserGroupResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnUserGroupResponseBodyUserGroup`
@@ -67,7 +67,7 @@ class CreateVpnUserGroupResponse(SdkResponse):
 
     @user_group.setter
     def user_group(self, user_group):
-        """Sets the user_group of this CreateVpnUserGroupResponse.
+        r"""Sets the user_group of this CreateVpnUserGroupResponse.
 
         :param user_group: The user_group of this CreateVpnUserGroupResponse.
         :type user_group: :class:`huaweicloudsdkvpn.v5.CreateVpnUserGroupResponseBodyUserGroup`
@@ -76,7 +76,7 @@ class CreateVpnUserGroupResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateVpnUserGroupResponse.
+        r"""Gets the request_id of this CreateVpnUserGroupResponse.
 
         请求id
 
@@ -87,7 +87,7 @@ class CreateVpnUserGroupResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateVpnUserGroupResponse.
+        r"""Sets the request_id of this CreateVpnUserGroupResponse.
 
         请求id
 
@@ -98,7 +98,7 @@ class CreateVpnUserGroupResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this CreateVpnUserGroupResponse.
+        r"""Gets the header_response_token of this CreateVpnUserGroupResponse.
 
         :return: The header_response_token of this CreateVpnUserGroupResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateVpnUserGroupResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this CreateVpnUserGroupResponse.
+        r"""Sets the header_response_token of this CreateVpnUserGroupResponse.
 
         :param header_response_token: The header_response_token of this CreateVpnUserGroupResponse.
         :type header_response_token: str

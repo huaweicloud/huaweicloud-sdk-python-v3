@@ -24,7 +24,7 @@ class StopRedistributionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StopRedistributionResponse
+        r"""StopRedistributionResponse
 
         The model defined in huaweicloud sdk
 

@@ -26,7 +26,7 @@ class AssociateSignatureKeyV2Response(SdkResponse):
     }
 
     def __init__(self, bindings=None):
-        """AssociateSignatureKeyV2Response
+        r"""AssociateSignatureKeyV2Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AssociateSignatureKeyV2Response(SdkResponse):
 
     @property
     def bindings(self):
-        """Gets the bindings of this AssociateSignatureKeyV2Response.
+        r"""Gets the bindings of this AssociateSignatureKeyV2Response.
 
         API与签名密钥的绑定关系列表
 
@@ -55,7 +55,7 @@ class AssociateSignatureKeyV2Response(SdkResponse):
 
     @bindings.setter
     def bindings(self, bindings):
-        """Sets the bindings of this AssociateSignatureKeyV2Response.
+        r"""Sets the bindings of this AssociateSignatureKeyV2Response.
 
         API与签名密钥的绑定关系列表
 

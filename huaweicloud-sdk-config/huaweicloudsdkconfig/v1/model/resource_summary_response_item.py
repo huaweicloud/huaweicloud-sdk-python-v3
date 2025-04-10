@@ -27,7 +27,7 @@ class ResourceSummaryResponseItem:
     }
 
     def __init__(self, provider=None, types=None):
-        """ResourceSummaryResponseItem
+        r"""ResourceSummaryResponseItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceSummaryResponseItem:
 
     @property
     def provider(self):
-        """Gets the provider of this ResourceSummaryResponseItem.
+        r"""Gets the provider of this ResourceSummaryResponseItem.
 
         云服务名称
 
@@ -61,7 +61,7 @@ class ResourceSummaryResponseItem:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ResourceSummaryResponseItem.
+        r"""Sets the provider of this ResourceSummaryResponseItem.
 
         云服务名称
 
@@ -72,7 +72,7 @@ class ResourceSummaryResponseItem:
 
     @property
     def types(self):
-        """Gets the types of this ResourceSummaryResponseItem.
+        r"""Gets the types of this ResourceSummaryResponseItem.
 
         资源类型列表
 
@@ -83,7 +83,7 @@ class ResourceSummaryResponseItem:
 
     @types.setter
     def types(self, types):
-        """Sets the types of this ResourceSummaryResponseItem.
+        r"""Sets the types of this ResourceSummaryResponseItem.
 
         资源类型列表
 

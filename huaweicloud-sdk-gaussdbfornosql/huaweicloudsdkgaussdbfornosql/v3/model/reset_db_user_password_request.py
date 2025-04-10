@@ -27,7 +27,7 @@ class ResetDbUserPasswordRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ResetDbUserPasswordRequest
+        r"""ResetDbUserPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResetDbUserPasswordRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetDbUserPasswordRequest.
+        r"""Gets the instance_id of this ResetDbUserPasswordRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class ResetDbUserPasswordRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetDbUserPasswordRequest.
+        r"""Sets the instance_id of this ResetDbUserPasswordRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ResetDbUserPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetDbUserPasswordRequest.
+        r"""Gets the body of this ResetDbUserPasswordRequest.
 
         :return: The body of this ResetDbUserPasswordRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RedisResetDbUserPasswordRequestBody`
@@ -80,7 +80,7 @@ class ResetDbUserPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetDbUserPasswordRequest.
+        r"""Sets the body of this ResetDbUserPasswordRequest.
 
         :param body: The body of this ResetDbUserPasswordRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.RedisResetDbUserPasswordRequestBody`

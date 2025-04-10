@@ -29,7 +29,7 @@ class CreateDatabaseRoleRequestBody:
     }
 
     def __init__(self, role_name=None, db_name=None, roles=None):
-        """CreateDatabaseRoleRequestBody
+        r"""CreateDatabaseRoleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateDatabaseRoleRequestBody:
 
     @property
     def role_name(self):
-        """Gets the role_name of this CreateDatabaseRoleRequestBody.
+        r"""Gets the role_name of this CreateDatabaseRoleRequestBody.
 
         创建角色名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
@@ -67,7 +67,7 @@ class CreateDatabaseRoleRequestBody:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this CreateDatabaseRoleRequestBody.
+        r"""Sets the role_name of this CreateDatabaseRoleRequestBody.
 
         创建角色名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
@@ -78,7 +78,7 @@ class CreateDatabaseRoleRequestBody:
 
     @property
     def db_name(self):
-        """Gets the db_name of this CreateDatabaseRoleRequestBody.
+        r"""Gets the db_name of this CreateDatabaseRoleRequestBody.
 
         角色所在的数据库名称，默认admin。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
@@ -89,7 +89,7 @@ class CreateDatabaseRoleRequestBody:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this CreateDatabaseRoleRequestBody.
+        r"""Sets the db_name of this CreateDatabaseRoleRequestBody.
 
         角色所在的数据库名称，默认admin。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
@@ -100,7 +100,7 @@ class CreateDatabaseRoleRequestBody:
 
     @property
     def roles(self):
-        """Gets the roles of this CreateDatabaseRoleRequestBody.
+        r"""Gets the roles of this CreateDatabaseRoleRequestBody.
 
         新用户所拥有的角色。
 
@@ -111,7 +111,7 @@ class CreateDatabaseRoleRequestBody:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this CreateDatabaseRoleRequestBody.
+        r"""Sets the roles of this CreateDatabaseRoleRequestBody.
 
         新用户所拥有的角色。
 

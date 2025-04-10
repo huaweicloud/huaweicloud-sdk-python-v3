@@ -31,7 +31,7 @@ class ShowInstanceExtendProductInfoRespValues:
     }
 
     def __init__(self, detail=None, name=None, unavailable_zones=None, available_zones=None):
-        """ShowInstanceExtendProductInfoRespValues
+        r"""ShowInstanceExtendProductInfoRespValues
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowInstanceExtendProductInfoRespValues:
 
     @property
     def detail(self):
-        """Gets the detail of this ShowInstanceExtendProductInfoRespValues.
+        r"""Gets the detail of this ShowInstanceExtendProductInfoRespValues.
 
         规格详情。
 
@@ -75,7 +75,7 @@ class ShowInstanceExtendProductInfoRespValues:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ShowInstanceExtendProductInfoRespValues.
+        r"""Sets the detail of this ShowInstanceExtendProductInfoRespValues.
 
         规格详情。
 
@@ -86,7 +86,7 @@ class ShowInstanceExtendProductInfoRespValues:
 
     @property
     def name(self):
-        """Gets the name of this ShowInstanceExtendProductInfoRespValues.
+        r"""Gets the name of this ShowInstanceExtendProductInfoRespValues.
 
         实例类型。
 
@@ -97,7 +97,7 @@ class ShowInstanceExtendProductInfoRespValues:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowInstanceExtendProductInfoRespValues.
+        r"""Sets the name of this ShowInstanceExtendProductInfoRespValues.
 
         实例类型。
 
@@ -108,7 +108,7 @@ class ShowInstanceExtendProductInfoRespValues:
 
     @property
     def unavailable_zones(self):
-        """Gets the unavailable_zones of this ShowInstanceExtendProductInfoRespValues.
+        r"""Gets the unavailable_zones of this ShowInstanceExtendProductInfoRespValues.
 
         资源售罄的可用区列表。
 
@@ -119,7 +119,7 @@ class ShowInstanceExtendProductInfoRespValues:
 
     @unavailable_zones.setter
     def unavailable_zones(self, unavailable_zones):
-        """Sets the unavailable_zones of this ShowInstanceExtendProductInfoRespValues.
+        r"""Sets the unavailable_zones of this ShowInstanceExtendProductInfoRespValues.
 
         资源售罄的可用区列表。
 
@@ -130,7 +130,7 @@ class ShowInstanceExtendProductInfoRespValues:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this ShowInstanceExtendProductInfoRespValues.
+        r"""Gets the available_zones of this ShowInstanceExtendProductInfoRespValues.
 
         有可用资源的可用区列表。
 
@@ -141,7 +141,7 @@ class ShowInstanceExtendProductInfoRespValues:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this ShowInstanceExtendProductInfoRespValues.
+        r"""Sets the available_zones of this ShowInstanceExtendProductInfoRespValues.
 
         有可用资源的可用区列表。
 

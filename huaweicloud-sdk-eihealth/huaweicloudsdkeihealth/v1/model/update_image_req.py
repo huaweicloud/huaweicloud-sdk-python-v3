@@ -29,7 +29,7 @@ class UpdateImageReq:
     }
 
     def __init__(self, type=None, description=None, chip_type=None):
-        """UpdateImageReq
+        r"""UpdateImageReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateImageReq:
 
     @property
     def type(self):
-        """Gets the type of this UpdateImageReq.
+        r"""Gets the type of this UpdateImageReq.
 
         :return: The type of this UpdateImageReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImageType`
@@ -66,7 +66,7 @@ class UpdateImageReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateImageReq.
+        r"""Sets the type of this UpdateImageReq.
 
         :param type: The type of this UpdateImageReq.
         :type type: :class:`huaweicloudsdkeihealth.v1.ImageType`
@@ -75,7 +75,7 @@ class UpdateImageReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateImageReq.
+        r"""Gets the description of this UpdateImageReq.
 
         描述信息
 
@@ -86,7 +86,7 @@ class UpdateImageReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateImageReq.
+        r"""Sets the description of this UpdateImageReq.
 
         描述信息
 
@@ -97,7 +97,7 @@ class UpdateImageReq:
 
     @property
     def chip_type(self):
-        """Gets the chip_type of this UpdateImageReq.
+        r"""Gets the chip_type of this UpdateImageReq.
 
         :return: The chip_type of this UpdateImageReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImageChipType`
@@ -106,7 +106,7 @@ class UpdateImageReq:
 
     @chip_type.setter
     def chip_type(self, chip_type):
-        """Sets the chip_type of this UpdateImageReq.
+        r"""Sets the chip_type of this UpdateImageReq.
 
         :param chip_type: The chip_type of this UpdateImageReq.
         :type chip_type: :class:`huaweicloudsdkeihealth.v1.ImageChipType`

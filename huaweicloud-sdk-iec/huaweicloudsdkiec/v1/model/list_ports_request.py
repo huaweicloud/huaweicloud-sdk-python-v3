@@ -47,7 +47,7 @@ class ListPortsRequest:
     }
 
     def __init__(self, limit=None, offset=None, network_id=None, id=None, name=None, admin_state_up=None, fixed_ips=None, mac_address=None, device_id=None, device_owner=None, status=None, security_groups=None):
-        """ListPortsRequest
+        r"""ListPortsRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListPortsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPortsRequest.
+        r"""Gets the limit of this ListPortsRequest.
 
         查询返回端口列表数量。取值范围：0~1000。
 
@@ -131,7 +131,7 @@ class ListPortsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPortsRequest.
+        r"""Sets the limit of this ListPortsRequest.
 
         查询返回端口列表数量。取值范围：0~1000。
 
@@ -142,7 +142,7 @@ class ListPortsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPortsRequest.
+        r"""Gets the offset of this ListPortsRequest.
 
         查询的偏移量。
 
@@ -153,7 +153,7 @@ class ListPortsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPortsRequest.
+        r"""Sets the offset of this ListPortsRequest.
 
         查询的偏移量。
 
@@ -164,7 +164,7 @@ class ListPortsRequest:
 
     @property
     def network_id(self):
-        """Gets the network_id of this ListPortsRequest.
+        r"""Gets the network_id of this ListPortsRequest.
 
         子网的neutron的network的ID。
 
@@ -175,7 +175,7 @@ class ListPortsRequest:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this ListPortsRequest.
+        r"""Sets the network_id of this ListPortsRequest.
 
         子网的neutron的network的ID。
 
@@ -186,7 +186,7 @@ class ListPortsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPortsRequest.
+        r"""Gets the id of this ListPortsRequest.
 
         按照端口ID过滤查询
 
@@ -197,7 +197,7 @@ class ListPortsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPortsRequest.
+        r"""Sets the id of this ListPortsRequest.
 
         按照端口ID过滤查询
 
@@ -208,7 +208,7 @@ class ListPortsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPortsRequest.
+        r"""Gets the name of this ListPortsRequest.
 
         按照name过滤查询  取值范围：最大长度不超过255
 
@@ -219,7 +219,7 @@ class ListPortsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPortsRequest.
+        r"""Sets the name of this ListPortsRequest.
 
         按照name过滤查询  取值范围：最大长度不超过255
 
@@ -230,7 +230,7 @@ class ListPortsRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListPortsRequest.
+        r"""Gets the admin_state_up of this ListPortsRequest.
 
         按照admin_state_up进行过滤  约束：只支持true
 
@@ -241,7 +241,7 @@ class ListPortsRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListPortsRequest.
+        r"""Sets the admin_state_up of this ListPortsRequest.
 
         按照admin_state_up进行过滤  约束：只支持true
 
@@ -252,7 +252,7 @@ class ListPortsRequest:
 
     @property
     def fixed_ips(self):
-        """Gets the fixed_ips of this ListPortsRequest.
+        r"""Gets the fixed_ips of this ListPortsRequest.
 
         根据绑定的IP查询端口。按照fixed_ips=ip_address或者fixed_ips=subnet_id过滤查询，示例：fixed_ips=ip_address=xxx&fixed_ips=subnet_id=xxxx
 
@@ -263,7 +263,7 @@ class ListPortsRequest:
 
     @fixed_ips.setter
     def fixed_ips(self, fixed_ips):
-        """Sets the fixed_ips of this ListPortsRequest.
+        r"""Sets the fixed_ips of this ListPortsRequest.
 
         根据绑定的IP查询端口。按照fixed_ips=ip_address或者fixed_ips=subnet_id过滤查询，示例：fixed_ips=ip_address=xxx&fixed_ips=subnet_id=xxxx
 
@@ -274,7 +274,7 @@ class ListPortsRequest:
 
     @property
     def mac_address(self):
-        """Gets the mac_address of this ListPortsRequest.
+        r"""Gets the mac_address of this ListPortsRequest.
 
         根据网卡的mac地址查询端口。
 
@@ -285,7 +285,7 @@ class ListPortsRequest:
 
     @mac_address.setter
     def mac_address(self, mac_address):
-        """Sets the mac_address of this ListPortsRequest.
+        r"""Sets the mac_address of this ListPortsRequest.
 
         根据网卡的mac地址查询端口。
 
@@ -296,7 +296,7 @@ class ListPortsRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ListPortsRequest.
+        r"""Gets the device_id of this ListPortsRequest.
 
         根据设备ID查询端口。
 
@@ -307,7 +307,7 @@ class ListPortsRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ListPortsRequest.
+        r"""Sets the device_id of this ListPortsRequest.
 
         根据设备ID查询端口。
 
@@ -318,7 +318,7 @@ class ListPortsRequest:
 
     @property
     def device_owner(self):
-        """Gets the device_owner of this ListPortsRequest.
+        r"""Gets the device_owner of this ListPortsRequest.
 
         根据设备主查询端口。
 
@@ -329,7 +329,7 @@ class ListPortsRequest:
 
     @device_owner.setter
     def device_owner(self, device_owner):
-        """Sets the device_owner of this ListPortsRequest.
+        r"""Sets the device_owner of this ListPortsRequest.
 
         根据设备主查询端口。
 
@@ -340,7 +340,7 @@ class ListPortsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListPortsRequest.
+        r"""Gets the status of this ListPortsRequest.
 
         按照status过滤查询  取值范围：ACTIVE、BUILD、DOWN
 
@@ -351,7 +351,7 @@ class ListPortsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPortsRequest.
+        r"""Sets the status of this ListPortsRequest.
 
         按照status过滤查询  取值范围：ACTIVE、BUILD、DOWN
 
@@ -362,7 +362,7 @@ class ListPortsRequest:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ListPortsRequest.
+        r"""Gets the security_groups of this ListPortsRequest.
 
         根据安全组信息ID查询端口。
 
@@ -373,7 +373,7 @@ class ListPortsRequest:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ListPortsRequest.
+        r"""Sets the security_groups of this ListPortsRequest.
 
         根据安全组信息ID查询端口。
 

@@ -34,7 +34,7 @@ class IoTEdgeAsyncClient(Client):
         return client_builder
 
     def create_app_async(self, request):
-        """创建应用模板
+        r"""创建应用模板
 
         应用服务器可调用此接口为创建批量处理任务，对多个设备进行批量操作。当前支持批量软固件升级、批量创建设备、批量删除设备、批量冻结、批量解冻、批量下发同步命令、批量下发异步命令。
         
@@ -99,7 +99,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_app_async(self, request):
-        """删除应用模板
+        r"""删除应用模板
 
         应用服务器可调用此接口删除应用模板。
         
@@ -164,7 +164,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def list_apps_async(self, request):
-        """查询应用模板列表
+        r"""查询应用模板列表
 
         应用服务器可调用此接口查询应用模板列表。
         
@@ -237,7 +237,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_app_async(self, request):
-        """查询应用模板详情
+        r"""查询应用模板详情
 
         应用服务器可调用此接口查询物联网平台中指定批量任务的信息，包括任务内容、任务状态、任务完成情况统计以及子任务列表等。
         
@@ -302,7 +302,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def create_app_instance_async(self, request):
-        """创建应用实例
+        r"""创建应用实例
 
         应用服务器可调用此接口为创建应用实例。
         
@@ -369,7 +369,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_app_instance_async(self, request):
-        """删除应用实例
+        r"""删除应用实例
 
         应用服务器可调用此接口为删除应用实例。
         
@@ -438,7 +438,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def list_app_instance_history_async(self, request):
-        """查询应用实例的历史版本列表
+        r"""查询应用实例的历史版本列表
 
         应用服务器可调用此接口查询应用实例的历史版本列表。
         
@@ -507,7 +507,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def list_app_instances_async(self, request):
-        """查询应用实例列表
+        r"""查询应用实例列表
 
         应用服务器可调用此接口查询应用实例列表。
         
@@ -572,7 +572,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def update_app_instance_async(self, request):
-        """更新应用实例
+        r"""更新应用实例
 
         应用服务器可调用此接口为更新应用实例。
         
@@ -641,7 +641,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def create_app_version_async(self, request):
-        """创建应用版本
+        r"""创建应用版本
 
         应用服务器可调用此接口为创建应用版本。
         
@@ -714,7 +714,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_app_version_async(self, request):
-        """删除应用版本
+        r"""删除应用版本
 
         应用服务器可调用此接口删除应用版本。
         
@@ -781,7 +781,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def download_app_version_async(self, request):
-        """下载应用版本Chart包
+        r"""下载应用版本Chart包
 
         应用服务器可调用此接口下载应用版本Chart包。
         
@@ -848,7 +848,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def list_app_image_async(self, request):
-        """查询应用版本包含的镜像列表
+        r"""查询应用版本包含的镜像列表
 
         应用服务器可调用此接口查询应用版本包含的镜像列表。
         
@@ -919,7 +919,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def list_app_versions_async(self, request):
-        """查询应用版本列表
+        r"""查询应用版本列表
 
         应用服务器可调用此接口查询应用版本列表。
         
@@ -990,7 +990,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_app_version_async(self, request):
-        """查询应用版本详情
+        r"""查询应用版本详情
 
         应用服务器可调用此接口查询应用版本详情。
         
@@ -1057,7 +1057,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def create_cluster_async(self, request):
-        """创建边缘集群
+        r"""创建边缘集群
 
         应用服务器可调用此接口为创建边缘集群。
         
@@ -1122,7 +1122,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def create_cluster_install_cmd_async(self, request):
-        """生成边缘集群安装命令
+        r"""生成边缘集群安装命令
 
         应用服务器可调用此接口生成边缘集群安装命令。
         
@@ -1191,7 +1191,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def delete_cluster_async(self, request):
-        """删除边缘集群
+        r"""删除边缘集群
 
         应用服务器可调用此接口删除边缘集群。
         
@@ -1256,7 +1256,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def list_clusters_async(self, request):
-        """查询边缘集群列表
+        r"""查询边缘集群列表
 
         应用服务器可调用此接口查询边缘集群列表。
         
@@ -1327,7 +1327,7 @@ class IoTEdgeAsyncClient(Client):
         return http_info
 
     def show_cluster_async(self, request):
-        """查询边缘集群详情
+        r"""查询边缘集群详情
 
         应用服务器可调用此接口查询边缘集群详情。
         

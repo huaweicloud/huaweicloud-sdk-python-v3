@@ -28,7 +28,7 @@ class ListInstanceEngineDetailResponse(SdkResponse):
     }
 
     def __init__(self, engine_instance_details=None, total_count=None):
-        """ListInstanceEngineDetailResponse
+        r"""ListInstanceEngineDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInstanceEngineDetailResponse(SdkResponse):
 
     @property
     def engine_instance_details(self):
-        """Gets the engine_instance_details of this ListInstanceEngineDetailResponse.
+        r"""Gets the engine_instance_details of this ListInstanceEngineDetailResponse.
 
         引擎版本和相应的实例详情。
 
@@ -62,7 +62,7 @@ class ListInstanceEngineDetailResponse(SdkResponse):
 
     @engine_instance_details.setter
     def engine_instance_details(self, engine_instance_details):
-        """Sets the engine_instance_details of this ListInstanceEngineDetailResponse.
+        r"""Sets the engine_instance_details of this ListInstanceEngineDetailResponse.
 
         引擎版本和相应的实例详情。
 
@@ -73,7 +73,7 @@ class ListInstanceEngineDetailResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListInstanceEngineDetailResponse.
+        r"""Gets the total_count of this ListInstanceEngineDetailResponse.
 
         引擎版本数量。
 
@@ -84,7 +84,7 @@ class ListInstanceEngineDetailResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListInstanceEngineDetailResponse.
+        r"""Sets the total_count of this ListInstanceEngineDetailResponse.
 
         引擎版本数量。
 

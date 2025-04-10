@@ -33,7 +33,7 @@ class AutopilotCluster:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """AutopilotCluster
+        r"""AutopilotCluster
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class AutopilotCluster:
 
     @property
     def kind(self):
-        """Gets the kind of this AutopilotCluster.
+        r"""Gets the kind of this AutopilotCluster.
 
         API类型，固定值“Cluster”或“cluster”，该值不可修改。  
 
@@ -78,7 +78,7 @@ class AutopilotCluster:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this AutopilotCluster.
+        r"""Sets the kind of this AutopilotCluster.
 
         API类型，固定值“Cluster”或“cluster”，该值不可修改。  
 
@@ -89,7 +89,7 @@ class AutopilotCluster:
 
     @property
     def api_version(self):
-        """Gets the api_version of this AutopilotCluster.
+        r"""Gets the api_version of this AutopilotCluster.
 
         API版本，固定值“v3”，该值不可修改。  
 
@@ -100,7 +100,7 @@ class AutopilotCluster:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this AutopilotCluster.
+        r"""Sets the api_version of this AutopilotCluster.
 
         API版本，固定值“v3”，该值不可修改。  
 
@@ -111,7 +111,7 @@ class AutopilotCluster:
 
     @property
     def metadata(self):
-        """Gets the metadata of this AutopilotCluster.
+        r"""Gets the metadata of this AutopilotCluster.
 
         :return: The metadata of this AutopilotCluster.
         :rtype: :class:`huaweicloudsdkcce.v3.AutopilotClusterMetadata`
@@ -120,7 +120,7 @@ class AutopilotCluster:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this AutopilotCluster.
+        r"""Sets the metadata of this AutopilotCluster.
 
         :param metadata: The metadata of this AutopilotCluster.
         :type metadata: :class:`huaweicloudsdkcce.v3.AutopilotClusterMetadata`
@@ -129,7 +129,7 @@ class AutopilotCluster:
 
     @property
     def spec(self):
-        """Gets the spec of this AutopilotCluster.
+        r"""Gets the spec of this AutopilotCluster.
 
         :return: The spec of this AutopilotCluster.
         :rtype: :class:`huaweicloudsdkcce.v3.AutopilotClusterSpec`
@@ -138,7 +138,7 @@ class AutopilotCluster:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this AutopilotCluster.
+        r"""Sets the spec of this AutopilotCluster.
 
         :param spec: The spec of this AutopilotCluster.
         :type spec: :class:`huaweicloudsdkcce.v3.AutopilotClusterSpec`
@@ -147,7 +147,7 @@ class AutopilotCluster:
 
     @property
     def status(self):
-        """Gets the status of this AutopilotCluster.
+        r"""Gets the status of this AutopilotCluster.
 
         :return: The status of this AutopilotCluster.
         :rtype: :class:`huaweicloudsdkcce.v3.AutopilotClusterStatus`
@@ -156,7 +156,7 @@ class AutopilotCluster:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AutopilotCluster.
+        r"""Sets the status of this AutopilotCluster.
 
         :param status: The status of this AutopilotCluster.
         :type status: :class:`huaweicloudsdkcce.v3.AutopilotClusterStatus`

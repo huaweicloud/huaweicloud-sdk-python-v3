@@ -46,7 +46,7 @@ class CreateAlarmSubResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, enable=None, alarm_level=None, project_id=None, name_space=None, notification_target=None, notification_target_name=None, notification_target_type=None, language=None, time_zone=None):
-        """CreateAlarmSubResponse
+        r"""CreateAlarmSubResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateAlarmSubResponse.
+        r"""Gets the id of this CreateAlarmSubResponse.
 
         告警订阅ID
 
@@ -125,7 +125,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateAlarmSubResponse.
+        r"""Sets the id of this CreateAlarmSubResponse.
 
         告警订阅ID
 
@@ -136,7 +136,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateAlarmSubResponse.
+        r"""Gets the name of this CreateAlarmSubResponse.
 
         告警订阅名称
 
@@ -147,7 +147,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAlarmSubResponse.
+        r"""Sets the name of this CreateAlarmSubResponse.
 
         告警订阅名称
 
@@ -158,7 +158,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @property
     def enable(self):
-        """Gets the enable of this CreateAlarmSubResponse.
+        r"""Gets the enable of this CreateAlarmSubResponse.
 
         是否开启订阅
 
@@ -169,7 +169,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this CreateAlarmSubResponse.
+        r"""Sets the enable of this CreateAlarmSubResponse.
 
         是否开启订阅
 
@@ -180,7 +180,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this CreateAlarmSubResponse.
+        r"""Gets the alarm_level of this CreateAlarmSubResponse.
 
         告警级别
 
@@ -191,7 +191,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this CreateAlarmSubResponse.
+        r"""Sets the alarm_level of this CreateAlarmSubResponse.
 
         告警级别
 
@@ -202,7 +202,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateAlarmSubResponse.
+        r"""Gets the project_id of this CreateAlarmSubResponse.
 
         租户凭证ID
 
@@ -213,7 +213,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateAlarmSubResponse.
+        r"""Sets the project_id of this CreateAlarmSubResponse.
 
         租户凭证ID
 
@@ -224,7 +224,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @property
     def name_space(self):
-        """Gets the name_space of this CreateAlarmSubResponse.
+        r"""Gets the name_space of this CreateAlarmSubResponse.
 
         所属服务，支持DWS,DLI,DGC,CloudTable,CDM,GES,CSS
 
@@ -235,7 +235,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @name_space.setter
     def name_space(self, name_space):
-        """Sets the name_space of this CreateAlarmSubResponse.
+        r"""Sets the name_space of this CreateAlarmSubResponse.
 
         所属服务，支持DWS,DLI,DGC,CloudTable,CDM,GES,CSS
 
@@ -246,7 +246,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @property
     def notification_target(self):
-        """Gets the notification_target of this CreateAlarmSubResponse.
+        r"""Gets the notification_target of this CreateAlarmSubResponse.
 
         消息主题地址
 
@@ -257,7 +257,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @notification_target.setter
     def notification_target(self, notification_target):
-        """Sets the notification_target of this CreateAlarmSubResponse.
+        r"""Sets the notification_target of this CreateAlarmSubResponse.
 
         消息主题地址
 
@@ -268,7 +268,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @property
     def notification_target_name(self):
-        """Gets the notification_target_name of this CreateAlarmSubResponse.
+        r"""Gets the notification_target_name of this CreateAlarmSubResponse.
 
         消息主题名称
 
@@ -279,7 +279,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @notification_target_name.setter
     def notification_target_name(self, notification_target_name):
-        """Sets the notification_target_name of this CreateAlarmSubResponse.
+        r"""Sets the notification_target_name of this CreateAlarmSubResponse.
 
         消息主题名称
 
@@ -290,7 +290,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @property
     def notification_target_type(self):
-        """Gets the notification_target_type of this CreateAlarmSubResponse.
+        r"""Gets the notification_target_type of this CreateAlarmSubResponse.
 
         消息主题类型
 
@@ -301,7 +301,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @notification_target_type.setter
     def notification_target_type(self, notification_target_type):
-        """Sets the notification_target_type of this CreateAlarmSubResponse.
+        r"""Sets the notification_target_type of this CreateAlarmSubResponse.
 
         消息主题类型
 
@@ -312,7 +312,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this CreateAlarmSubResponse.
+        r"""Gets the language of this CreateAlarmSubResponse.
 
         语言
 
@@ -323,7 +323,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this CreateAlarmSubResponse.
+        r"""Sets the language of this CreateAlarmSubResponse.
 
         语言
 
@@ -334,7 +334,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this CreateAlarmSubResponse.
+        r"""Gets the time_zone of this CreateAlarmSubResponse.
 
         时区
 
@@ -345,7 +345,7 @@ class CreateAlarmSubResponse(SdkResponse):
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this CreateAlarmSubResponse.
+        r"""Sets the time_zone of this CreateAlarmSubResponse.
 
         时区
 

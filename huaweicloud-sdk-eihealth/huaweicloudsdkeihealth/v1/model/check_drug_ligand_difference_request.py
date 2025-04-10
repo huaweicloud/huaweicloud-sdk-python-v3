@@ -27,7 +27,7 @@ class CheckDrugLigandDifferenceRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CheckDrugLigandDifferenceRequest
+        r"""CheckDrugLigandDifferenceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CheckDrugLigandDifferenceRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CheckDrugLigandDifferenceRequest.
+        r"""Gets the eihealth_project_id of this CheckDrugLigandDifferenceRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class CheckDrugLigandDifferenceRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CheckDrugLigandDifferenceRequest.
+        r"""Sets the eihealth_project_id of this CheckDrugLigandDifferenceRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class CheckDrugLigandDifferenceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckDrugLigandDifferenceRequest.
+        r"""Gets the body of this CheckDrugLigandDifferenceRequest.
 
         :return: The body of this CheckDrugLigandDifferenceRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CheckLigandDifferenceReq`
@@ -80,7 +80,7 @@ class CheckDrugLigandDifferenceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckDrugLigandDifferenceRequest.
+        r"""Sets the body of this CheckDrugLigandDifferenceRequest.
 
         :param body: The body of this CheckDrugLigandDifferenceRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CheckLigandDifferenceReq`

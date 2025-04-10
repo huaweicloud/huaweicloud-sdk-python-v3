@@ -27,7 +27,7 @@ class UpdateFirewallResp:
     }
 
     def __init__(self, id=None, status=None):
-        """UpdateFirewallResp
+        r"""UpdateFirewallResp
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateFirewallResp:
 
     @property
     def id(self):
-        """Gets the id of this UpdateFirewallResp.
+        r"""Gets the id of this UpdateFirewallResp.
 
         网络ACL ID
 
@@ -59,7 +59,7 @@ class UpdateFirewallResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateFirewallResp.
+        r"""Sets the id of this UpdateFirewallResp.
 
         网络ACL ID
 
@@ -70,7 +70,7 @@ class UpdateFirewallResp:
 
     @property
     def status(self):
-        """Gets the status of this UpdateFirewallResp.
+        r"""Gets the status of this UpdateFirewallResp.
 
         网络ACL状态。
 
@@ -81,7 +81,7 @@ class UpdateFirewallResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateFirewallResp.
+        r"""Sets the status of this UpdateFirewallResp.
 
         网络ACL状态。
 

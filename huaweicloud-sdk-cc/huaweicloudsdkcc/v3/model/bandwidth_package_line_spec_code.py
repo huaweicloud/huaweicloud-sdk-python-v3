@@ -37,7 +37,7 @@ class BandwidthPackageLineSpecCode:
     }
 
     def __init__(self, level=None, name_cn=None, name_en=None, spec_code=None, max_bandwidth=None, min_bandwidth=None, support_billing_modes=None):
-        """BandwidthPackageLineSpecCode
+        r"""BandwidthPackageLineSpecCode
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class BandwidthPackageLineSpecCode:
 
     @property
     def level(self):
-        """Gets the level of this BandwidthPackageLineSpecCode.
+        r"""Gets the level of this BandwidthPackageLineSpecCode.
 
         带宽包等级
 
@@ -96,7 +96,7 @@ class BandwidthPackageLineSpecCode:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this BandwidthPackageLineSpecCode.
+        r"""Sets the level of this BandwidthPackageLineSpecCode.
 
         带宽包等级
 
@@ -107,7 +107,7 @@ class BandwidthPackageLineSpecCode:
 
     @property
     def name_cn(self):
-        """Gets the name_cn of this BandwidthPackageLineSpecCode.
+        r"""Gets the name_cn of this BandwidthPackageLineSpecCode.
 
         实例名字。
 
@@ -118,7 +118,7 @@ class BandwidthPackageLineSpecCode:
 
     @name_cn.setter
     def name_cn(self, name_cn):
-        """Sets the name_cn of this BandwidthPackageLineSpecCode.
+        r"""Sets the name_cn of this BandwidthPackageLineSpecCode.
 
         实例名字。
 
@@ -129,7 +129,7 @@ class BandwidthPackageLineSpecCode:
 
     @property
     def name_en(self):
-        """Gets the name_en of this BandwidthPackageLineSpecCode.
+        r"""Gets the name_en of this BandwidthPackageLineSpecCode.
 
         实例名字。
 
@@ -140,7 +140,7 @@ class BandwidthPackageLineSpecCode:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this BandwidthPackageLineSpecCode.
+        r"""Sets the name_en of this BandwidthPackageLineSpecCode.
 
         实例名字。
 
@@ -151,7 +151,7 @@ class BandwidthPackageLineSpecCode:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this BandwidthPackageLineSpecCode.
+        r"""Gets the spec_code of this BandwidthPackageLineSpecCode.
 
         带宽包实例的规格编码。
 
@@ -162,7 +162,7 @@ class BandwidthPackageLineSpecCode:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this BandwidthPackageLineSpecCode.
+        r"""Sets the spec_code of this BandwidthPackageLineSpecCode.
 
         带宽包实例的规格编码。
 
@@ -173,7 +173,7 @@ class BandwidthPackageLineSpecCode:
 
     @property
     def max_bandwidth(self):
-        """Gets the max_bandwidth of this BandwidthPackageLineSpecCode.
+        r"""Gets the max_bandwidth of this BandwidthPackageLineSpecCode.
 
         最大带宽。
 
@@ -184,7 +184,7 @@ class BandwidthPackageLineSpecCode:
 
     @max_bandwidth.setter
     def max_bandwidth(self, max_bandwidth):
-        """Sets the max_bandwidth of this BandwidthPackageLineSpecCode.
+        r"""Sets the max_bandwidth of this BandwidthPackageLineSpecCode.
 
         最大带宽。
 
@@ -195,7 +195,7 @@ class BandwidthPackageLineSpecCode:
 
     @property
     def min_bandwidth(self):
-        """Gets the min_bandwidth of this BandwidthPackageLineSpecCode.
+        r"""Gets the min_bandwidth of this BandwidthPackageLineSpecCode.
 
         最小带宽。
 
@@ -206,7 +206,7 @@ class BandwidthPackageLineSpecCode:
 
     @min_bandwidth.setter
     def min_bandwidth(self, min_bandwidth):
-        """Sets the min_bandwidth of this BandwidthPackageLineSpecCode.
+        r"""Sets the min_bandwidth of this BandwidthPackageLineSpecCode.
 
         最小带宽。
 
@@ -217,7 +217,7 @@ class BandwidthPackageLineSpecCode:
 
     @property
     def support_billing_modes(self):
-        """Gets the support_billing_modes of this BandwidthPackageLineSpecCode.
+        r"""Gets the support_billing_modes of this BandwidthPackageLineSpecCode.
 
         支持的计费模式。
 
@@ -228,7 +228,7 @@ class BandwidthPackageLineSpecCode:
 
     @support_billing_modes.setter
     def support_billing_modes(self, support_billing_modes):
-        """Sets the support_billing_modes of this BandwidthPackageLineSpecCode.
+        r"""Sets the support_billing_modes of this BandwidthPackageLineSpecCode.
 
         支持的计费模式。
 

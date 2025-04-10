@@ -33,7 +33,7 @@ class ModifyDbPwdResp:
     }
 
     def __init__(self, id=None, status=None, end_point_type=None, error_code=None, error_msg=None):
-        """ModifyDbPwdResp
+        r"""ModifyDbPwdResp
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ModifyDbPwdResp:
 
     @property
     def id(self):
-        """Gets the id of this ModifyDbPwdResp.
+        r"""Gets the id of this ModifyDbPwdResp.
 
         任务ID
 
@@ -82,7 +82,7 @@ class ModifyDbPwdResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyDbPwdResp.
+        r"""Sets the id of this ModifyDbPwdResp.
 
         任务ID
 
@@ -93,7 +93,7 @@ class ModifyDbPwdResp:
 
     @property
     def status(self):
-        """Gets the status of this ModifyDbPwdResp.
+        r"""Gets the status of this ModifyDbPwdResp.
 
         状态
 
@@ -104,7 +104,7 @@ class ModifyDbPwdResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ModifyDbPwdResp.
+        r"""Sets the status of this ModifyDbPwdResp.
 
         状态
 
@@ -115,7 +115,7 @@ class ModifyDbPwdResp:
 
     @property
     def end_point_type(self):
-        """Gets the end_point_type of this ModifyDbPwdResp.
+        r"""Gets the end_point_type of this ModifyDbPwdResp.
 
         源库：so，目标库：ta
 
@@ -126,7 +126,7 @@ class ModifyDbPwdResp:
 
     @end_point_type.setter
     def end_point_type(self, end_point_type):
-        """Sets the end_point_type of this ModifyDbPwdResp.
+        r"""Sets the end_point_type of this ModifyDbPwdResp.
 
         源库：so，目标库：ta
 
@@ -137,7 +137,7 @@ class ModifyDbPwdResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ModifyDbPwdResp.
+        r"""Gets the error_code of this ModifyDbPwdResp.
 
         错误码
 
@@ -148,7 +148,7 @@ class ModifyDbPwdResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ModifyDbPwdResp.
+        r"""Sets the error_code of this ModifyDbPwdResp.
 
         错误码
 
@@ -159,7 +159,7 @@ class ModifyDbPwdResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ModifyDbPwdResp.
+        r"""Gets the error_msg of this ModifyDbPwdResp.
 
         错误信息
 
@@ -170,7 +170,7 @@ class ModifyDbPwdResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ModifyDbPwdResp.
+        r"""Sets the error_msg of this ModifyDbPwdResp.
 
         错误信息
 

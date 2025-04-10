@@ -25,7 +25,7 @@ class CreateNamespaceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateNamespaceRequest
+        r"""CreateNamespaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateNamespaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateNamespaceRequest.
+        r"""Gets the body of this CreateNamespaceRequest.
 
         :return: The body of this CreateNamespaceRequest.
         :rtype: :class:`huaweicloudsdkswr.v2.CreateNamespaceRequestBody`
@@ -52,7 +52,7 @@ class CreateNamespaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateNamespaceRequest.
+        r"""Sets the body of this CreateNamespaceRequest.
 
         :param body: The body of this CreateNamespaceRequest.
         :type body: :class:`huaweicloudsdkswr.v2.CreateNamespaceRequestBody`

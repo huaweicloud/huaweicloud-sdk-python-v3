@@ -26,7 +26,7 @@ class SyncUserJdbcDriverResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """SyncUserJdbcDriverResponse
+        r"""SyncUserJdbcDriverResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SyncUserJdbcDriverResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this SyncUserJdbcDriverResponse.
+        r"""Gets the body of this SyncUserJdbcDriverResponse.
 
         空响应体。
 
@@ -55,7 +55,7 @@ class SyncUserJdbcDriverResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SyncUserJdbcDriverResponse.
+        r"""Sets the body of this SyncUserJdbcDriverResponse.
 
         空响应体。
 

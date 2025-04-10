@@ -26,7 +26,7 @@ class SetThresholdForMetricResponse(SdkResponse):
     }
 
     def __init__(self, success=None):
-        """SetThresholdForMetricResponse
+        r"""SetThresholdForMetricResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetThresholdForMetricResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this SetThresholdForMetricResponse.
+        r"""Gets the success of this SetThresholdForMetricResponse.
 
         是否成功
 
@@ -55,7 +55,7 @@ class SetThresholdForMetricResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this SetThresholdForMetricResponse.
+        r"""Sets the success of this SetThresholdForMetricResponse.
 
         是否成功
 

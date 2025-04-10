@@ -25,7 +25,7 @@ class ShowStoredQueryRequest:
     }
 
     def __init__(self, query_id=None):
-        """ShowStoredQueryRequest
+        r"""ShowStoredQueryRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowStoredQueryRequest:
 
     @property
     def query_id(self):
-        """Gets the query_id of this ShowStoredQueryRequest.
+        r"""Gets the query_id of this ShowStoredQueryRequest.
 
         查询ID
 
@@ -53,7 +53,7 @@ class ShowStoredQueryRequest:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this ShowStoredQueryRequest.
+        r"""Sets the query_id of this ShowStoredQueryRequest.
 
         查询ID
 

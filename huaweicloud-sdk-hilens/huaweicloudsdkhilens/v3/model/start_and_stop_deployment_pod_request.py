@@ -29,7 +29,7 @@ class StartAndStopDeploymentPodRequest:
     }
 
     def __init__(self, deployment_id=None, pod_id=None, action=None):
-        """StartAndStopDeploymentPodRequest
+        r"""StartAndStopDeploymentPodRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class StartAndStopDeploymentPodRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this StartAndStopDeploymentPodRequest.
+        r"""Gets the deployment_id of this StartAndStopDeploymentPodRequest.
 
         部署ID，可以在部署详情中获取指定ID
 
@@ -65,7 +65,7 @@ class StartAndStopDeploymentPodRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this StartAndStopDeploymentPodRequest.
+        r"""Sets the deployment_id of this StartAndStopDeploymentPodRequest.
 
         部署ID，可以在部署详情中获取指定ID
 
@@ -76,7 +76,7 @@ class StartAndStopDeploymentPodRequest:
 
     @property
     def pod_id(self):
-        """Gets the pod_id of this StartAndStopDeploymentPodRequest.
+        r"""Gets the pod_id of this StartAndStopDeploymentPodRequest.
 
         节点ID, 可以在部署详情中获取指定ID
 
@@ -87,7 +87,7 @@ class StartAndStopDeploymentPodRequest:
 
     @pod_id.setter
     def pod_id(self, pod_id):
-        """Sets the pod_id of this StartAndStopDeploymentPodRequest.
+        r"""Sets the pod_id of this StartAndStopDeploymentPodRequest.
 
         节点ID, 可以在部署详情中获取指定ID
 
@@ -98,7 +98,7 @@ class StartAndStopDeploymentPodRequest:
 
     @property
     def action(self):
-        """Gets the action of this StartAndStopDeploymentPodRequest.
+        r"""Gets the action of this StartAndStopDeploymentPodRequest.
 
         操作请求，分别为，pause停止，resume启动
 
@@ -109,7 +109,7 @@ class StartAndStopDeploymentPodRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this StartAndStopDeploymentPodRequest.
+        r"""Sets the action of this StartAndStopDeploymentPodRequest.
 
         操作请求，分别为，pause停止，resume启动
 

@@ -56,7 +56,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, state=None, job_type=None, start_time=None, end_time=None, duration=None, output_asset_config=None, error_info=None, create_time=None, lastupdate_time=None, script_id=None, human_image=None, voice_config=None, video_config=None, shoot_scripts=None, x_request_id=None):
-        """ShowPhotoDigitalHumanVideoResponse
+        r"""ShowPhotoDigitalHumanVideoResponse
 
         The model defined in huaweicloud sdk
 
@@ -147,7 +147,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the job_id of this ShowPhotoDigitalHumanVideoResponse.
 
         任务ID。
 
@@ -158,7 +158,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the job_id of this ShowPhotoDigitalHumanVideoResponse.
 
         任务ID。
 
@@ -169,7 +169,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the state of this ShowPhotoDigitalHumanVideoResponse.
 
         任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消 * BLOCK: 冻结
 
@@ -180,7 +180,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the state of this ShowPhotoDigitalHumanVideoResponse.
 
         任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消 * BLOCK: 冻结
 
@@ -191,7 +191,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the job_type of this ShowPhotoDigitalHumanVideoResponse.
 
         任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * DIGITAL_HUMAN_PHOTO_VIDEO: 照片数字人视频制作任务
 
@@ -202,7 +202,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the job_type of this ShowPhotoDigitalHumanVideoResponse.
 
         任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * DIGITAL_HUMAN_PHOTO_VIDEO: 照片数字人视频制作任务
 
@@ -213,7 +213,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the start_time of this ShowPhotoDigitalHumanVideoResponse.
 
         数字人视频制作开始时间。
 
@@ -224,7 +224,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the start_time of this ShowPhotoDigitalHumanVideoResponse.
 
         数字人视频制作开始时间。
 
@@ -235,7 +235,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the end_time of this ShowPhotoDigitalHumanVideoResponse.
 
         数字人视频制作结束时间。
 
@@ -246,7 +246,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the end_time of this ShowPhotoDigitalHumanVideoResponse.
 
         数字人视频制作结束时间。
 
@@ -257,7 +257,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def duration(self):
-        """Gets the duration of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the duration of this ShowPhotoDigitalHumanVideoResponse.
 
         **参数解释**： 数字人视频内容时长。
 
@@ -268,7 +268,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the duration of this ShowPhotoDigitalHumanVideoResponse.
 
         **参数解释**： 数字人视频内容时长。
 
@@ -279,7 +279,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def output_asset_config(self):
-        """Gets the output_asset_config of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the output_asset_config of this ShowPhotoDigitalHumanVideoResponse.
 
         :return: The output_asset_config of this ShowPhotoDigitalHumanVideoResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.OutputAssetInfo`
@@ -288,7 +288,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @output_asset_config.setter
     def output_asset_config(self, output_asset_config):
-        """Sets the output_asset_config of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the output_asset_config of this ShowPhotoDigitalHumanVideoResponse.
 
         :param output_asset_config: The output_asset_config of this ShowPhotoDigitalHumanVideoResponse.
         :type output_asset_config: :class:`huaweicloudsdkmetastudio.v1.OutputAssetInfo`
@@ -297,7 +297,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def error_info(self):
-        """Gets the error_info of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the error_info of this ShowPhotoDigitalHumanVideoResponse.
 
         :return: The error_info of this ShowPhotoDigitalHumanVideoResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -306,7 +306,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the error_info of this ShowPhotoDigitalHumanVideoResponse.
 
         :param error_info: The error_info of this ShowPhotoDigitalHumanVideoResponse.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -315,7 +315,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the create_time of this ShowPhotoDigitalHumanVideoResponse.
 
         任务创建时间。
 
@@ -326,7 +326,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the create_time of this ShowPhotoDigitalHumanVideoResponse.
 
         任务创建时间。
 
@@ -337,7 +337,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def lastupdate_time(self):
-        """Gets the lastupdate_time of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the lastupdate_time of this ShowPhotoDigitalHumanVideoResponse.
 
         任务更新时间。
 
@@ -348,7 +348,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @lastupdate_time.setter
     def lastupdate_time(self, lastupdate_time):
-        """Sets the lastupdate_time of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the lastupdate_time of this ShowPhotoDigitalHumanVideoResponse.
 
         任务更新时间。
 
@@ -359,7 +359,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def script_id(self):
-        """Gets the script_id of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the script_id of this ShowPhotoDigitalHumanVideoResponse.
 
         剧本ID。
 
@@ -370,7 +370,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the script_id of this ShowPhotoDigitalHumanVideoResponse.
 
         剧本ID。
 
@@ -381,7 +381,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def human_image(self):
-        """Gets the human_image of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the human_image of this ShowPhotoDigitalHumanVideoResponse.
 
         人物照片，需要Base64编码。
 
@@ -392,7 +392,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @human_image.setter
     def human_image(self, human_image):
-        """Sets the human_image of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the human_image of this ShowPhotoDigitalHumanVideoResponse.
 
         人物照片，需要Base64编码。
 
@@ -403,7 +403,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def voice_config(self):
-        """Gets the voice_config of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the voice_config of this ShowPhotoDigitalHumanVideoResponse.
 
         :return: The voice_config of this ShowPhotoDigitalHumanVideoResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -412,7 +412,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @voice_config.setter
     def voice_config(self, voice_config):
-        """Sets the voice_config of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the voice_config of this ShowPhotoDigitalHumanVideoResponse.
 
         :param voice_config: The voice_config of this ShowPhotoDigitalHumanVideoResponse.
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -421,7 +421,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def video_config(self):
-        """Gets the video_config of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the video_config of this ShowPhotoDigitalHumanVideoResponse.
 
         :return: The video_config of this ShowPhotoDigitalHumanVideoResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.PhotoVideoConfig`
@@ -430,7 +430,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the video_config of this ShowPhotoDigitalHumanVideoResponse.
 
         :param video_config: The video_config of this ShowPhotoDigitalHumanVideoResponse.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.PhotoVideoConfig`
@@ -439,7 +439,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def shoot_scripts(self):
-        """Gets the shoot_scripts of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the shoot_scripts of this ShowPhotoDigitalHumanVideoResponse.
 
         拍摄脚本列表。
 
@@ -450,7 +450,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @shoot_scripts.setter
     def shoot_scripts(self, shoot_scripts):
-        """Sets the shoot_scripts of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the shoot_scripts of this ShowPhotoDigitalHumanVideoResponse.
 
         拍摄脚本列表。
 
@@ -461,7 +461,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Gets the x_request_id of this ShowPhotoDigitalHumanVideoResponse.
 
         :return: The x_request_id of this ShowPhotoDigitalHumanVideoResponse.
         :rtype: str
@@ -470,7 +470,7 @@ class ShowPhotoDigitalHumanVideoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowPhotoDigitalHumanVideoResponse.
+        r"""Sets the x_request_id of this ShowPhotoDigitalHumanVideoResponse.
 
         :param x_request_id: The x_request_id of this ShowPhotoDigitalHumanVideoResponse.
         :type x_request_id: str

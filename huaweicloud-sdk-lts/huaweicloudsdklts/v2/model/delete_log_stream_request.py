@@ -27,7 +27,7 @@ class DeleteLogStreamRequest:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None):
-        """DeleteLogStreamRequest
+        r"""DeleteLogStreamRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteLogStreamRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this DeleteLogStreamRequest.
+        r"""Gets the log_group_id of this DeleteLogStreamRequest.
 
         租户想删除的日志流所在的日志组的groupid，一般为36位字符串。
 
@@ -59,7 +59,7 @@ class DeleteLogStreamRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this DeleteLogStreamRequest.
+        r"""Sets the log_group_id of this DeleteLogStreamRequest.
 
         租户想删除的日志流所在的日志组的groupid，一般为36位字符串。
 
@@ -70,7 +70,7 @@ class DeleteLogStreamRequest:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this DeleteLogStreamRequest.
+        r"""Gets the log_stream_id of this DeleteLogStreamRequest.
 
         需要删除的日志流ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
@@ -81,7 +81,7 @@ class DeleteLogStreamRequest:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this DeleteLogStreamRequest.
+        r"""Sets the log_stream_id of this DeleteLogStreamRequest.
 
         需要删除的日志流ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 

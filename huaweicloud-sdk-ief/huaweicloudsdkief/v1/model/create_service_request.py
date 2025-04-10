@@ -27,7 +27,7 @@ class CreateServiceRequest:
     }
 
     def __init__(self, ief_instance_id=None, body=None):
-        """CreateServiceRequest
+        r"""CreateServiceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateServiceRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateServiceRequest.
+        r"""Gets the ief_instance_id of this CreateServiceRequest.
 
         铂金版实例ID
 
@@ -60,7 +60,7 @@ class CreateServiceRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateServiceRequest.
+        r"""Sets the ief_instance_id of this CreateServiceRequest.
 
         铂金版实例ID
 
@@ -71,7 +71,7 @@ class CreateServiceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateServiceRequest.
+        r"""Gets the body of this CreateServiceRequest.
 
         :return: The body of this CreateServiceRequest.
         :rtype: :class:`huaweicloudsdkief.v1.Service`
@@ -80,7 +80,7 @@ class CreateServiceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateServiceRequest.
+        r"""Sets the body of this CreateServiceRequest.
 
         :param body: The body of this CreateServiceRequest.
         :type body: :class:`huaweicloudsdkief.v1.Service`

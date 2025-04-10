@@ -31,7 +31,7 @@ class SlaveInstance:
     }
 
     def __init__(self, instance_id=None, region=None, project_id=None, project_name=None):
-        """SlaveInstance
+        r"""SlaveInstance
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class SlaveInstance:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SlaveInstance.
+        r"""Gets the instance_id of this SlaveInstance.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class SlaveInstance:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SlaveInstance.
+        r"""Sets the instance_id of this SlaveInstance.
 
         实例ID。
 
@@ -82,7 +82,7 @@ class SlaveInstance:
 
     @property
     def region(self):
-        """Gets the region of this SlaveInstance.
+        r"""Gets the region of this SlaveInstance.
 
         区域。
 
@@ -93,7 +93,7 @@ class SlaveInstance:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this SlaveInstance.
+        r"""Sets the region of this SlaveInstance.
 
         区域。
 
@@ -104,7 +104,7 @@ class SlaveInstance:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SlaveInstance.
+        r"""Gets the project_id of this SlaveInstance.
 
         项目ID。
 
@@ -115,7 +115,7 @@ class SlaveInstance:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SlaveInstance.
+        r"""Sets the project_id of this SlaveInstance.
 
         项目ID。
 
@@ -126,7 +126,7 @@ class SlaveInstance:
 
     @property
     def project_name(self):
-        """Gets the project_name of this SlaveInstance.
+        r"""Gets the project_name of this SlaveInstance.
 
         项目名称。
 
@@ -137,7 +137,7 @@ class SlaveInstance:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this SlaveInstance.
+        r"""Sets the project_name of this SlaveInstance.
 
         项目名称。
 

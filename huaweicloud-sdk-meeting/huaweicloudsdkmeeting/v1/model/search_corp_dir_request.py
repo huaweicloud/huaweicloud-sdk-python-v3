@@ -39,7 +39,7 @@ class SearchCorpDirRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, dept_code=None, query_sub_dept=None, search_scope=None):
-        """SearchCorpDirRequest
+        r"""SearchCorpDirRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class SearchCorpDirRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this SearchCorpDirRequest.
+        r"""Gets the x_request_id of this SearchCorpDirRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -103,7 +103,7 @@ class SearchCorpDirRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this SearchCorpDirRequest.
+        r"""Sets the x_request_id of this SearchCorpDirRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -114,7 +114,7 @@ class SearchCorpDirRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this SearchCorpDirRequest.
+        r"""Gets the accept_language of this SearchCorpDirRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -125,7 +125,7 @@ class SearchCorpDirRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this SearchCorpDirRequest.
+        r"""Sets the accept_language of this SearchCorpDirRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -136,7 +136,7 @@ class SearchCorpDirRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchCorpDirRequest.
+        r"""Gets the offset of this SearchCorpDirRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -147,7 +147,7 @@ class SearchCorpDirRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchCorpDirRequest.
+        r"""Sets the offset of this SearchCorpDirRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -158,7 +158,7 @@ class SearchCorpDirRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchCorpDirRequest.
+        r"""Gets the limit of this SearchCorpDirRequest.
 
         查询数量。 默认值：10。 
 
@@ -169,7 +169,7 @@ class SearchCorpDirRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchCorpDirRequest.
+        r"""Sets the limit of this SearchCorpDirRequest.
 
         查询数量。 默认值：10。 
 
@@ -180,7 +180,7 @@ class SearchCorpDirRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchCorpDirRequest.
+        r"""Gets the search_key of this SearchCorpDirRequest.
 
         搜索条件。支持帐号、SIP号码、名称、手机、邮箱模糊搜索。
 
@@ -191,7 +191,7 @@ class SearchCorpDirRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchCorpDirRequest.
+        r"""Sets the search_key of this SearchCorpDirRequest.
 
         搜索条件。支持帐号、SIP号码、名称、手机、邮箱模糊搜索。
 
@@ -202,7 +202,7 @@ class SearchCorpDirRequest:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this SearchCorpDirRequest.
+        r"""Gets the dept_code of this SearchCorpDirRequest.
 
         部门编码。 
 
@@ -213,7 +213,7 @@ class SearchCorpDirRequest:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this SearchCorpDirRequest.
+        r"""Sets the dept_code of this SearchCorpDirRequest.
 
         部门编码。 
 
@@ -224,7 +224,7 @@ class SearchCorpDirRequest:
 
     @property
     def query_sub_dept(self):
-        """Gets the query_sub_dept of this SearchCorpDirRequest.
+        r"""Gets the query_sub_dept of this SearchCorpDirRequest.
 
         是否查询子部门下的用户。 默认值：true。 
 
@@ -235,7 +235,7 @@ class SearchCorpDirRequest:
 
     @query_sub_dept.setter
     def query_sub_dept(self, query_sub_dept):
-        """Sets the query_sub_dept of this SearchCorpDirRequest.
+        r"""Sets the query_sub_dept of this SearchCorpDirRequest.
 
         是否查询子部门下的用户。 默认值：true。 
 
@@ -246,7 +246,7 @@ class SearchCorpDirRequest:
 
     @property
     def search_scope(self):
-        """Gets the search_scope of this SearchCorpDirRequest.
+        r"""Gets the search_scope of this SearchCorpDirRequest.
 
         搜索范围。默认值为ALL。 * NORMAL_USER - 查询普通用户。返回普通用户（响应中isHardTerminal=false，type=NORMAL_USER） * HARD_TERMINAL - 查询硬终端用户。返回大屏用户（响应中isHardTerminal=false，type=WHITE_BOARD）和硬终端用户（响应中isHardTerminal=true，type=HARD_TERMINAL） * ALL - 查询所有用户。 
 
@@ -257,7 +257,7 @@ class SearchCorpDirRequest:
 
     @search_scope.setter
     def search_scope(self, search_scope):
-        """Sets the search_scope of this SearchCorpDirRequest.
+        r"""Sets the search_scope of this SearchCorpDirRequest.
 
         搜索范围。默认值为ALL。 * NORMAL_USER - 查询普通用户。返回普通用户（响应中isHardTerminal=false，type=NORMAL_USER） * HARD_TERMINAL - 查询硬终端用户。返回大屏用户（响应中isHardTerminal=false，type=WHITE_BOARD）和硬终端用户（响应中isHardTerminal=true，type=HARD_TERMINAL） * ALL - 查询所有用户。 
 

@@ -30,7 +30,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, availability_zones=None, spec_code=None):
-        """ListAvailabilityZonesResponse
+        r"""ListAvailabilityZonesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListAvailabilityZonesResponse.
+        r"""Gets the request_id of this ListAvailabilityZonesResponse.
 
         参数解释：请求ID。  注：自动生成。
 
@@ -69,7 +69,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListAvailabilityZonesResponse.
+        r"""Sets the request_id of this ListAvailabilityZonesResponse.
 
         参数解释：请求ID。  注：自动生成。
 
@@ -80,7 +80,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
 
     @property
     def availability_zones(self):
-        """Gets the availability_zones of this ListAvailabilityZonesResponse.
+        r"""Gets the availability_zones of this ListAvailabilityZonesResponse.
 
         参数解释：返回创建LB时可使用的可用区集合列表。如：[[az1,az2],[az2,az3]] ,则在创建LB时，只能从其中的一个子列表中选择一个或多个可用区，不能跨列表选择。在上述例子中，不能选择az1和az3。
 
@@ -91,7 +91,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
 
     @availability_zones.setter
     def availability_zones(self, availability_zones):
-        """Sets the availability_zones of this ListAvailabilityZonesResponse.
+        r"""Sets the availability_zones of this ListAvailabilityZonesResponse.
 
         参数解释：返回创建LB时可使用的可用区集合列表。如：[[az1,az2],[az2,az3]] ,则在创建LB时，只能从其中的一个子列表中选择一个或多个可用区，不能跨列表选择。在上述例子中，不能选择az1和az3。
 
@@ -102,7 +102,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ListAvailabilityZonesResponse.
+        r"""Gets the spec_code of this ListAvailabilityZonesResponse.
 
         参数解释：可用区的产品编码，仅边缘场景有效。
 
@@ -113,7 +113,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ListAvailabilityZonesResponse.
+        r"""Sets the spec_code of this ListAvailabilityZonesResponse.
 
         参数解释：可用区的产品编码，仅边缘场景有效。
 

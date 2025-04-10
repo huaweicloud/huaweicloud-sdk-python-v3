@@ -39,7 +39,7 @@ class HostProtectHistoryResponseInfo:
     }
 
     def __init__(self, occr_time=None, file_path=None, file_operation=None, host_name=None, host_ip=None, process_id=None, process_name=None, process_cmd=None):
-        """HostProtectHistoryResponseInfo
+        r"""HostProtectHistoryResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class HostProtectHistoryResponseInfo:
 
     @property
     def occr_time(self):
-        """Gets the occr_time of this HostProtectHistoryResponseInfo.
+        r"""Gets the occr_time of this HostProtectHistoryResponseInfo.
 
         静态网页防篡改的检测时间(ms)
 
@@ -103,7 +103,7 @@ class HostProtectHistoryResponseInfo:
 
     @occr_time.setter
     def occr_time(self, occr_time):
-        """Sets the occr_time of this HostProtectHistoryResponseInfo.
+        r"""Sets the occr_time of this HostProtectHistoryResponseInfo.
 
         静态网页防篡改的检测时间(ms)
 
@@ -114,7 +114,7 @@ class HostProtectHistoryResponseInfo:
 
     @property
     def file_path(self):
-        """Gets the file_path of this HostProtectHistoryResponseInfo.
+        r"""Gets the file_path of this HostProtectHistoryResponseInfo.
 
         被篡改文件路径
 
@@ -125,7 +125,7 @@ class HostProtectHistoryResponseInfo:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this HostProtectHistoryResponseInfo.
+        r"""Sets the file_path of this HostProtectHistoryResponseInfo.
 
         被篡改文件路径
 
@@ -136,7 +136,7 @@ class HostProtectHistoryResponseInfo:
 
     @property
     def file_operation(self):
-        """Gets the file_operation of this HostProtectHistoryResponseInfo.
+        r"""Gets the file_operation of this HostProtectHistoryResponseInfo.
 
         文件操作类型   - add: 新增   - delete: 删除   - modify: 修改内容   - attribute: 修改属性   - unknown: 未知
 
@@ -147,7 +147,7 @@ class HostProtectHistoryResponseInfo:
 
     @file_operation.setter
     def file_operation(self, file_operation):
-        """Sets the file_operation of this HostProtectHistoryResponseInfo.
+        r"""Sets the file_operation of this HostProtectHistoryResponseInfo.
 
         文件操作类型   - add: 新增   - delete: 删除   - modify: 修改内容   - attribute: 修改属性   - unknown: 未知
 
@@ -158,7 +158,7 @@ class HostProtectHistoryResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this HostProtectHistoryResponseInfo.
+        r"""Gets the host_name of this HostProtectHistoryResponseInfo.
 
         服务器名称
 
@@ -169,7 +169,7 @@ class HostProtectHistoryResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this HostProtectHistoryResponseInfo.
+        r"""Sets the host_name of this HostProtectHistoryResponseInfo.
 
         服务器名称
 
@@ -180,7 +180,7 @@ class HostProtectHistoryResponseInfo:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this HostProtectHistoryResponseInfo.
+        r"""Gets the host_ip of this HostProtectHistoryResponseInfo.
 
         服务器ip
 
@@ -191,7 +191,7 @@ class HostProtectHistoryResponseInfo:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this HostProtectHistoryResponseInfo.
+        r"""Sets the host_ip of this HostProtectHistoryResponseInfo.
 
         服务器ip
 
@@ -202,7 +202,7 @@ class HostProtectHistoryResponseInfo:
 
     @property
     def process_id(self):
-        """Gets the process_id of this HostProtectHistoryResponseInfo.
+        r"""Gets the process_id of this HostProtectHistoryResponseInfo.
 
         进程ID
 
@@ -213,7 +213,7 @@ class HostProtectHistoryResponseInfo:
 
     @process_id.setter
     def process_id(self, process_id):
-        """Sets the process_id of this HostProtectHistoryResponseInfo.
+        r"""Sets the process_id of this HostProtectHistoryResponseInfo.
 
         进程ID
 
@@ -224,7 +224,7 @@ class HostProtectHistoryResponseInfo:
 
     @property
     def process_name(self):
-        """Gets the process_name of this HostProtectHistoryResponseInfo.
+        r"""Gets the process_name of this HostProtectHistoryResponseInfo.
 
         进程名称
 
@@ -235,7 +235,7 @@ class HostProtectHistoryResponseInfo:
 
     @process_name.setter
     def process_name(self, process_name):
-        """Sets the process_name of this HostProtectHistoryResponseInfo.
+        r"""Sets the process_name of this HostProtectHistoryResponseInfo.
 
         进程名称
 
@@ -246,7 +246,7 @@ class HostProtectHistoryResponseInfo:
 
     @property
     def process_cmd(self):
-        """Gets the process_cmd of this HostProtectHistoryResponseInfo.
+        r"""Gets the process_cmd of this HostProtectHistoryResponseInfo.
 
         进程命令行
 
@@ -257,7 +257,7 @@ class HostProtectHistoryResponseInfo:
 
     @process_cmd.setter
     def process_cmd(self, process_cmd):
-        """Sets the process_cmd of this HostProtectHistoryResponseInfo.
+        r"""Sets the process_cmd of this HostProtectHistoryResponseInfo.
 
         进程命令行
 

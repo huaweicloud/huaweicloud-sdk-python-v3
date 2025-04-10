@@ -31,7 +31,7 @@ class ListProvidersRequest:
     }
 
     def __init__(self, locale=None, limit=None, offset=None, provider=None):
-        """ListProvidersRequest
+        r"""ListProvidersRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListProvidersRequest:
 
     @property
     def locale(self):
-        """Gets the locale of this ListProvidersRequest.
+        r"""Gets the locale of this ListProvidersRequest.
 
         指定显示语言
 
@@ -75,7 +75,7 @@ class ListProvidersRequest:
 
     @locale.setter
     def locale(self, locale):
-        """Sets the locale of this ListProvidersRequest.
+        r"""Sets the locale of this ListProvidersRequest.
 
         指定显示语言
 
@@ -86,7 +86,7 @@ class ListProvidersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProvidersRequest.
+        r"""Gets the limit of this ListProvidersRequest.
 
         查询记录数默认为10，limit最多为200，最小值为1。
 
@@ -97,7 +97,7 @@ class ListProvidersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProvidersRequest.
+        r"""Sets the limit of this ListProvidersRequest.
 
         查询记录数默认为10，limit最多为200，最小值为1。
 
@@ -108,7 +108,7 @@ class ListProvidersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProvidersRequest.
+        r"""Gets the offset of this ListProvidersRequest.
 
         索引位置，从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0。
 
@@ -119,7 +119,7 @@ class ListProvidersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProvidersRequest.
+        r"""Sets the offset of this ListProvidersRequest.
 
         索引位置，从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0。
 
@@ -130,7 +130,7 @@ class ListProvidersRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this ListProvidersRequest.
+        r"""Gets the provider of this ListProvidersRequest.
 
         云服务名称
 
@@ -141,7 +141,7 @@ class ListProvidersRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ListProvidersRequest.
+        r"""Sets the provider of this ListProvidersRequest.
 
         云服务名称
 

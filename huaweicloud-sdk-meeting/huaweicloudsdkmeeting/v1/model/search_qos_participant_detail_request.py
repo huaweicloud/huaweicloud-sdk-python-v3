@@ -31,7 +31,7 @@ class SearchQosParticipantDetailRequest:
     }
 
     def __init__(self, conf_uuid=None, conf_type=None, participant_id=None, qos_type=None):
-        """SearchQosParticipantDetailRequest
+        r"""SearchQosParticipantDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class SearchQosParticipantDetailRequest:
 
     @property
     def conf_uuid(self):
-        """Gets the conf_uuid of this SearchQosParticipantDetailRequest.
+        r"""Gets the conf_uuid of this SearchQosParticipantDetailRequest.
 
         会议UUID。
 
@@ -71,7 +71,7 @@ class SearchQosParticipantDetailRequest:
 
     @conf_uuid.setter
     def conf_uuid(self, conf_uuid):
-        """Sets the conf_uuid of this SearchQosParticipantDetailRequest.
+        r"""Sets the conf_uuid of this SearchQosParticipantDetailRequest.
 
         会议UUID。
 
@@ -82,7 +82,7 @@ class SearchQosParticipantDetailRequest:
 
     @property
     def conf_type(self):
-        """Gets the conf_type of this SearchQosParticipantDetailRequest.
+        r"""Gets the conf_type of this SearchQosParticipantDetailRequest.
 
         会议类别。 * online：在线会议，在召开的会议 * history：历史会议，已召开的会议
 
@@ -93,7 +93,7 @@ class SearchQosParticipantDetailRequest:
 
     @conf_type.setter
     def conf_type(self, conf_type):
-        """Sets the conf_type of this SearchQosParticipantDetailRequest.
+        r"""Sets the conf_type of this SearchQosParticipantDetailRequest.
 
         会议类别。 * online：在线会议，在召开的会议 * history：历史会议，已召开的会议
 
@@ -104,7 +104,7 @@ class SearchQosParticipantDetailRequest:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this SearchQosParticipantDetailRequest.
+        r"""Gets the participant_id of this SearchQosParticipantDetailRequest.
 
         与会者标识。
 
@@ -115,7 +115,7 @@ class SearchQosParticipantDetailRequest:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this SearchQosParticipantDetailRequest.
+        r"""Sets the participant_id of this SearchQosParticipantDetailRequest.
 
         与会者标识。
 
@@ -126,7 +126,7 @@ class SearchQosParticipantDetailRequest:
 
     @property
     def qos_type(self):
-        """Gets the qos_type of this SearchQosParticipantDetailRequest.
+        r"""Gets the qos_type of this SearchQosParticipantDetailRequest.
 
         Qos类型。 - audio：音频 - video：视频 - screen：屏幕共享 - cpu：cpu
 
@@ -137,7 +137,7 @@ class SearchQosParticipantDetailRequest:
 
     @qos_type.setter
     def qos_type(self, qos_type):
-        """Sets the qos_type of this SearchQosParticipantDetailRequest.
+        r"""Sets the qos_type of this SearchQosParticipantDetailRequest.
 
         Qos类型。 - audio：音频 - video：视频 - screen：屏幕共享 - cpu：cpu
 

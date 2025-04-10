@@ -30,7 +30,7 @@ class ShowAllRepositoryByTwoProjectIdResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowAllRepositoryByTwoProjectIdResponse
+        r"""ShowAllRepositoryByTwoProjectIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowAllRepositoryByTwoProjectIdResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowAllRepositoryByTwoProjectIdResponse.
+        r"""Gets the error of this ShowAllRepositoryByTwoProjectIdResponse.
 
         :return: The error of this ShowAllRepositoryByTwoProjectIdResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ShowAllRepositoryByTwoProjectIdResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowAllRepositoryByTwoProjectIdResponse.
+        r"""Sets the error of this ShowAllRepositoryByTwoProjectIdResponse.
 
         :param error: The error of this ShowAllRepositoryByTwoProjectIdResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ShowAllRepositoryByTwoProjectIdResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowAllRepositoryByTwoProjectIdResponse.
+        r"""Gets the result of this ShowAllRepositoryByTwoProjectIdResponse.
 
         :return: The result of this ShowAllRepositoryByTwoProjectIdResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepoListInfoV2`
@@ -85,7 +85,7 @@ class ShowAllRepositoryByTwoProjectIdResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowAllRepositoryByTwoProjectIdResponse.
+        r"""Sets the result of this ShowAllRepositoryByTwoProjectIdResponse.
 
         :param result: The result of this ShowAllRepositoryByTwoProjectIdResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.RepoListInfoV2`
@@ -94,7 +94,7 @@ class ShowAllRepositoryByTwoProjectIdResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowAllRepositoryByTwoProjectIdResponse.
+        r"""Gets the status of this ShowAllRepositoryByTwoProjectIdResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ShowAllRepositoryByTwoProjectIdResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAllRepositoryByTwoProjectIdResponse.
+        r"""Sets the status of this ShowAllRepositoryByTwoProjectIdResponse.
 
         响应状态
 

@@ -29,7 +29,7 @@ class DeleteCompareJobRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, compare_job_id=None):
-        """DeleteCompareJobRequest
+        r"""DeleteCompareJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteCompareJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteCompareJobRequest.
+        r"""Gets the x_language of this DeleteCompareJobRequest.
 
         请求语言类型。
 
@@ -66,7 +66,7 @@ class DeleteCompareJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteCompareJobRequest.
+        r"""Sets the x_language of this DeleteCompareJobRequest.
 
         请求语言类型。
 
@@ -77,7 +77,7 @@ class DeleteCompareJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteCompareJobRequest.
+        r"""Gets the job_id of this DeleteCompareJobRequest.
 
         任务ID。
 
@@ -88,7 +88,7 @@ class DeleteCompareJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteCompareJobRequest.
+        r"""Sets the job_id of this DeleteCompareJobRequest.
 
         任务ID。
 
@@ -99,7 +99,7 @@ class DeleteCompareJobRequest:
 
     @property
     def compare_job_id(self):
-        """Gets the compare_job_id of this DeleteCompareJobRequest.
+        r"""Gets the compare_job_id of this DeleteCompareJobRequest.
 
         对比任务ID。
 
@@ -110,7 +110,7 @@ class DeleteCompareJobRequest:
 
     @compare_job_id.setter
     def compare_job_id(self, compare_job_id):
-        """Sets the compare_job_id of this DeleteCompareJobRequest.
+        r"""Sets the compare_job_id of this DeleteCompareJobRequest.
 
         对比任务ID。
 

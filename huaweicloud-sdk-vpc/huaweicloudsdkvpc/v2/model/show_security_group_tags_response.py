@@ -26,7 +26,7 @@ class ShowSecurityGroupTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowSecurityGroupTagsResponse
+        r"""ShowSecurityGroupTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSecurityGroupTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowSecurityGroupTagsResponse.
+        r"""Gets the tags of this ShowSecurityGroupTagsResponse.
 
         tag对象列表
 
@@ -55,7 +55,7 @@ class ShowSecurityGroupTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowSecurityGroupTagsResponse.
+        r"""Sets the tags of this ShowSecurityGroupTagsResponse.
 
         tag对象列表
 

@@ -32,7 +32,7 @@ class ListOpLogsResponse(SdkResponse):
     }
 
     def __init__(self, operation_logs=None, count=None, limit=None, offset=None):
-        """ListOpLogsResponse
+        r"""ListOpLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListOpLogsResponse(SdkResponse):
 
     @property
     def operation_logs(self):
-        """Gets the operation_logs of this ListOpLogsResponse.
+        r"""Gets the operation_logs of this ListOpLogsResponse.
 
         任务列表
 
@@ -76,7 +76,7 @@ class ListOpLogsResponse(SdkResponse):
 
     @operation_logs.setter
     def operation_logs(self, operation_logs):
-        """Sets the operation_logs of this ListOpLogsResponse.
+        r"""Sets the operation_logs of this ListOpLogsResponse.
 
         任务列表
 
@@ -87,7 +87,7 @@ class ListOpLogsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListOpLogsResponse.
+        r"""Gets the count of this ListOpLogsResponse.
 
         任务个数
 
@@ -98,7 +98,7 @@ class ListOpLogsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListOpLogsResponse.
+        r"""Sets the count of this ListOpLogsResponse.
 
         任务个数
 
@@ -109,7 +109,7 @@ class ListOpLogsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListOpLogsResponse.
+        r"""Gets the limit of this ListOpLogsResponse.
 
         每页显示的条目数量
 
@@ -120,7 +120,7 @@ class ListOpLogsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListOpLogsResponse.
+        r"""Sets the limit of this ListOpLogsResponse.
 
         每页显示的条目数量
 
@@ -131,7 +131,7 @@ class ListOpLogsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListOpLogsResponse.
+        r"""Gets the offset of this ListOpLogsResponse.
 
         偏移量，表示从此偏移量开始查询
 
@@ -142,7 +142,7 @@ class ListOpLogsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListOpLogsResponse.
+        r"""Sets the offset of this ListOpLogsResponse.
 
         偏移量，表示从此偏移量开始查询
 

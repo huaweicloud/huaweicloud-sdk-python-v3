@@ -25,7 +25,7 @@ class ShowPublicTemplateInfoRequest:
     }
 
     def __init__(self, template_name=None):
-        """ShowPublicTemplateInfoRequest
+        r"""ShowPublicTemplateInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPublicTemplateInfoRequest:
 
     @property
     def template_name(self):
-        """Gets the template_name of this ShowPublicTemplateInfoRequest.
+        r"""Gets the template_name of this ShowPublicTemplateInfoRequest.
 
         模板名称。
 
@@ -53,7 +53,7 @@ class ShowPublicTemplateInfoRequest:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ShowPublicTemplateInfoRequest.
+        r"""Sets the template_name of this ShowPublicTemplateInfoRequest.
 
         模板名称。
 

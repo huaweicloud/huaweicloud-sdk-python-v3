@@ -25,7 +25,7 @@ class Session:
     }
 
     def __init__(self, sbc=None):
-        """Session
+        r"""Session
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Session:
 
     @property
     def sbc(self):
-        """Gets the sbc of this Session.
+        r"""Gets the sbc of this Session.
 
         :return: The sbc of this Session.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Sbc`
@@ -52,7 +52,7 @@ class Session:
 
     @sbc.setter
     def sbc(self, sbc):
-        """Sets the sbc of this Session.
+        r"""Sets the sbc of this Session.
 
         :param sbc: The sbc of this Session.
         :type sbc: :class:`huaweicloudsdkworkspaceapp.v1.Sbc`

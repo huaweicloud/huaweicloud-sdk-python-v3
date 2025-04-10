@@ -27,7 +27,7 @@ class BatchCreateDeletePrivateNatTagsRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """BatchCreateDeletePrivateNatTagsRequest
+        r"""BatchCreateDeletePrivateNatTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateDeletePrivateNatTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchCreateDeletePrivateNatTagsRequest.
+        r"""Gets the resource_id of this BatchCreateDeletePrivateNatTagsRequest.
 
         私网NAT网关的ID。
 
@@ -60,7 +60,7 @@ class BatchCreateDeletePrivateNatTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchCreateDeletePrivateNatTagsRequest.
+        r"""Sets the resource_id of this BatchCreateDeletePrivateNatTagsRequest.
 
         私网NAT网关的ID。
 
@@ -71,7 +71,7 @@ class BatchCreateDeletePrivateNatTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateDeletePrivateNatTagsRequest.
+        r"""Gets the body of this BatchCreateDeletePrivateNatTagsRequest.
 
         :return: The body of this BatchCreateDeletePrivateNatTagsRequest.
         :rtype: :class:`huaweicloudsdknat.v2.BatchOperateResourceTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateDeletePrivateNatTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateDeletePrivateNatTagsRequest.
+        r"""Sets the body of this BatchCreateDeletePrivateNatTagsRequest.
 
         :param body: The body of this BatchCreateDeletePrivateNatTagsRequest.
         :type body: :class:`huaweicloudsdknat.v2.BatchOperateResourceTagsRequestBody`

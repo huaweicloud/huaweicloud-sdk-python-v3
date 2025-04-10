@@ -29,7 +29,7 @@ class UpdateModuleRequest:
     }
 
     def __init__(self, edge_node_id=None, module_id=None, body=None):
-        """UpdateModuleRequest
+        r"""UpdateModuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateModuleRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this UpdateModuleRequest.
+        r"""Gets the edge_node_id of this UpdateModuleRequest.
 
         边缘节点ID
 
@@ -66,7 +66,7 @@ class UpdateModuleRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this UpdateModuleRequest.
+        r"""Sets the edge_node_id of this UpdateModuleRequest.
 
         边缘节点ID
 
@@ -77,7 +77,7 @@ class UpdateModuleRequest:
 
     @property
     def module_id(self):
-        """Gets the module_id of this UpdateModuleRequest.
+        r"""Gets the module_id of this UpdateModuleRequest.
 
         边缘模块ID
 
@@ -88,7 +88,7 @@ class UpdateModuleRequest:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this UpdateModuleRequest.
+        r"""Sets the module_id of this UpdateModuleRequest.
 
         边缘模块ID
 
@@ -99,7 +99,7 @@ class UpdateModuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateModuleRequest.
+        r"""Gets the body of this UpdateModuleRequest.
 
         :return: The body of this UpdateModuleRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeModuleReqDTO`
@@ -108,7 +108,7 @@ class UpdateModuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateModuleRequest.
+        r"""Sets the body of this UpdateModuleRequest.
 
         :param body: The body of this UpdateModuleRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeModuleReqDTO`

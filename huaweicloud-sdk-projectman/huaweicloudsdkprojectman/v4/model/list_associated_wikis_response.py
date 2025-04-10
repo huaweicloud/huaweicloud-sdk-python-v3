@@ -28,7 +28,7 @@ class ListAssociatedWikisResponse(SdkResponse):
     }
 
     def __init__(self, wikis=None, total=None):
-        """ListAssociatedWikisResponse
+        r"""ListAssociatedWikisResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAssociatedWikisResponse(SdkResponse):
 
     @property
     def wikis(self):
-        """Gets the wikis of this ListAssociatedWikisResponse.
+        r"""Gets the wikis of this ListAssociatedWikisResponse.
 
         关联的wiki列表
 
@@ -62,7 +62,7 @@ class ListAssociatedWikisResponse(SdkResponse):
 
     @wikis.setter
     def wikis(self, wikis):
-        """Sets the wikis of this ListAssociatedWikisResponse.
+        r"""Sets the wikis of this ListAssociatedWikisResponse.
 
         关联的wiki列表
 
@@ -73,7 +73,7 @@ class ListAssociatedWikisResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAssociatedWikisResponse.
+        r"""Gets the total of this ListAssociatedWikisResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListAssociatedWikisResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAssociatedWikisResponse.
+        r"""Sets the total of this ListAssociatedWikisResponse.
 
         总数
 

@@ -35,7 +35,7 @@ class ScanInfoDetail:
     }
 
     def __init__(self, create_time=None, enable_weak_passwd=None, end_time=None, progress=None, reason=None, status=None):
-        """ScanInfoDetail
+        r"""ScanInfoDetail
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ScanInfoDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ScanInfoDetail.
+        r"""Gets the create_time of this ScanInfoDetail.
 
         扫描任务创建时间
 
@@ -89,7 +89,7 @@ class ScanInfoDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ScanInfoDetail.
+        r"""Sets the create_time of this ScanInfoDetail.
 
         扫描任务创建时间
 
@@ -100,7 +100,7 @@ class ScanInfoDetail:
 
     @property
     def enable_weak_passwd(self):
-        """Gets the enable_weak_passwd of this ScanInfoDetail.
+        r"""Gets the enable_weak_passwd of this ScanInfoDetail.
 
         弱密码检查
 
@@ -111,7 +111,7 @@ class ScanInfoDetail:
 
     @enable_weak_passwd.setter
     def enable_weak_passwd(self, enable_weak_passwd):
-        """Sets the enable_weak_passwd of this ScanInfoDetail.
+        r"""Sets the enable_weak_passwd of this ScanInfoDetail.
 
         弱密码检查
 
@@ -122,7 +122,7 @@ class ScanInfoDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ScanInfoDetail.
+        r"""Gets the end_time of this ScanInfoDetail.
 
         扫描任务结束时间
 
@@ -133,7 +133,7 @@ class ScanInfoDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ScanInfoDetail.
+        r"""Sets the end_time of this ScanInfoDetail.
 
         扫描任务结束时间
 
@@ -144,7 +144,7 @@ class ScanInfoDetail:
 
     @property
     def progress(self):
-        """Gets the progress of this ScanInfoDetail.
+        r"""Gets the progress of this ScanInfoDetail.
 
         任务进度
 
@@ -155,7 +155,7 @@ class ScanInfoDetail:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ScanInfoDetail.
+        r"""Sets the progress of this ScanInfoDetail.
 
         任务进度
 
@@ -166,7 +166,7 @@ class ScanInfoDetail:
 
     @property
     def reason(self):
-        """Gets the reason of this ScanInfoDetail.
+        r"""Gets the reason of this ScanInfoDetail.
 
         任务描述
 
@@ -177,7 +177,7 @@ class ScanInfoDetail:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ScanInfoDetail.
+        r"""Sets the reason of this ScanInfoDetail.
 
         任务描述
 
@@ -188,7 +188,7 @@ class ScanInfoDetail:
 
     @property
     def status(self):
-        """Gets the status of this ScanInfoDetail.
+        r"""Gets the status of this ScanInfoDetail.
 
         扫描任务状态:   * 0 运行中   * 1 已完成   * 2 手动取消   * 3 等待中   * 4 扫描失败   * 5 等待定时调度 
 
@@ -199,7 +199,7 @@ class ScanInfoDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScanInfoDetail.
+        r"""Sets the status of this ScanInfoDetail.
 
         扫描任务状态:   * 0 运行中   * 1 已完成   * 2 手动取消   * 3 等待中   * 4 扫描失败   * 5 等待定时调度 
 

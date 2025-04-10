@@ -26,7 +26,7 @@ class ShowReleaseHistoryResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowReleaseHistoryResponse
+        r"""ShowReleaseHistoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowReleaseHistoryResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowReleaseHistoryResponse.
+        r"""Gets the body of this ShowReleaseHistoryResponse.
 
         :return: The body of this ShowReleaseHistoryResponse.
         :rtype: list[:class:`huaweicloudsdkcce.v3.ReleaseResp`]
@@ -53,7 +53,7 @@ class ShowReleaseHistoryResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowReleaseHistoryResponse.
+        r"""Sets the body of this ShowReleaseHistoryResponse.
 
         :param body: The body of this ShowReleaseHistoryResponse.
         :type body: list[:class:`huaweicloudsdkcce.v3.ReleaseResp`]

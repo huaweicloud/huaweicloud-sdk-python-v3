@@ -27,7 +27,7 @@ class ModifyOpsWindow:
     }
 
     def __init__(self, start_time=None, end_time=None):
-        """ModifyOpsWindow
+        r"""ModifyOpsWindow
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ModifyOpsWindow:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ModifyOpsWindow.
+        r"""Gets the start_time of this ModifyOpsWindow.
 
         维护起始时间，UTC时间。
 
@@ -59,7 +59,7 @@ class ModifyOpsWindow:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ModifyOpsWindow.
+        r"""Sets the start_time of this ModifyOpsWindow.
 
         维护起始时间，UTC时间。
 
@@ -70,7 +70,7 @@ class ModifyOpsWindow:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ModifyOpsWindow.
+        r"""Gets the end_time of this ModifyOpsWindow.
 
         维护结束时间，UTC时间。  说明：GuassDB(for MySQL)数据库的结束时间和开始时间必须为整点时间，且相隔四个小时。 
 
@@ -81,7 +81,7 @@ class ModifyOpsWindow:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ModifyOpsWindow.
+        r"""Sets the end_time of this ModifyOpsWindow.
 
         维护结束时间，UTC时间。  说明：GuassDB(for MySQL)数据库的结束时间和开始时间必须为整点时间，且相隔四个小时。 
 

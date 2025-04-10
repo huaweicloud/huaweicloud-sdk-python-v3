@@ -25,7 +25,7 @@ class DeleteAlarmTemplateRequest:
     }
 
     def __init__(self, template_id=None):
-        """DeleteAlarmTemplateRequest
+        r"""DeleteAlarmTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAlarmTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this DeleteAlarmTemplateRequest.
+        r"""Gets the template_id of this DeleteAlarmTemplateRequest.
 
         需要删除的自定义告警模板ID。
 
@@ -53,7 +53,7 @@ class DeleteAlarmTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this DeleteAlarmTemplateRequest.
+        r"""Sets the template_id of this DeleteAlarmTemplateRequest.
 
         需要删除的自定义告警模板ID。
 

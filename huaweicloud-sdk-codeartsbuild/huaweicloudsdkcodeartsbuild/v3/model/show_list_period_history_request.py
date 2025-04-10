@@ -33,7 +33,7 @@ class ShowListPeriodHistoryRequest:
     }
 
     def __init__(self, job_id=None, offset=None, limit=None, start_time=None, end_time=None):
-        """ShowListPeriodHistoryRequest
+        r"""ShowListPeriodHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ShowListPeriodHistoryRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowListPeriodHistoryRequest.
+        r"""Gets the job_id of this ShowListPeriodHistoryRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -77,7 +77,7 @@ class ShowListPeriodHistoryRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowListPeriodHistoryRequest.
+        r"""Sets the job_id of this ShowListPeriodHistoryRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -88,7 +88,7 @@ class ShowListPeriodHistoryRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowListPeriodHistoryRequest.
+        r"""Gets the offset of this ShowListPeriodHistoryRequest.
 
         分页页码， 表示从此页开始查询， offset大于等于0
 
@@ -99,7 +99,7 @@ class ShowListPeriodHistoryRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowListPeriodHistoryRequest.
+        r"""Sets the offset of this ShowListPeriodHistoryRequest.
 
         分页页码， 表示从此页开始查询， offset大于等于0
 
@@ -110,7 +110,7 @@ class ShowListPeriodHistoryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowListPeriodHistoryRequest.
+        r"""Gets the limit of this ShowListPeriodHistoryRequest.
 
         每页显示的条目数量，limit小于等于100
 
@@ -121,7 +121,7 @@ class ShowListPeriodHistoryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowListPeriodHistoryRequest.
+        r"""Sets the limit of this ShowListPeriodHistoryRequest.
 
         每页显示的条目数量，limit小于等于100
 
@@ -132,7 +132,7 @@ class ShowListPeriodHistoryRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowListPeriodHistoryRequest.
+        r"""Gets the start_time of this ShowListPeriodHistoryRequest.
 
         区间开始时间，格式yyyy-MM-dd。 开始时间和结束时间间隔不能超过30天
 
@@ -143,7 +143,7 @@ class ShowListPeriodHistoryRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowListPeriodHistoryRequest.
+        r"""Sets the start_time of this ShowListPeriodHistoryRequest.
 
         区间开始时间，格式yyyy-MM-dd。 开始时间和结束时间间隔不能超过30天
 
@@ -154,7 +154,7 @@ class ShowListPeriodHistoryRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowListPeriodHistoryRequest.
+        r"""Gets the end_time of this ShowListPeriodHistoryRequest.
 
         区间结束时间，格式yyyy-MM-dd。 开始时间和结束时间间隔不能超过30天
 
@@ -165,7 +165,7 @@ class ShowListPeriodHistoryRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowListPeriodHistoryRequest.
+        r"""Sets the end_time of this ShowListPeriodHistoryRequest.
 
         区间结束时间，格式yyyy-MM-dd。 开始时间和结束时间间隔不能超过30天
 

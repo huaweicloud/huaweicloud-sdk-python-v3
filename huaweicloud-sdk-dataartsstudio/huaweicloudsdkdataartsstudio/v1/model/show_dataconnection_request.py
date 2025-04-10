@@ -27,7 +27,7 @@ class ShowDataconnectionRequest:
     }
 
     def __init__(self, workspace=None, data_connection_id=None):
-        """ShowDataconnectionRequest
+        r"""ShowDataconnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDataconnectionRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowDataconnectionRequest.
+        r"""Gets the workspace of this ShowDataconnectionRequest.
 
         工作空间id
 
@@ -59,7 +59,7 @@ class ShowDataconnectionRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowDataconnectionRequest.
+        r"""Sets the workspace of this ShowDataconnectionRequest.
 
         工作空间id
 
@@ -70,7 +70,7 @@ class ShowDataconnectionRequest:
 
     @property
     def data_connection_id(self):
-        """Gets the data_connection_id of this ShowDataconnectionRequest.
+        r"""Gets the data_connection_id of this ShowDataconnectionRequest.
 
         数据连接ID
 
@@ -81,7 +81,7 @@ class ShowDataconnectionRequest:
 
     @data_connection_id.setter
     def data_connection_id(self, data_connection_id):
-        """Sets the data_connection_id of this ShowDataconnectionRequest.
+        r"""Sets the data_connection_id of this ShowDataconnectionRequest.
 
         数据连接ID
 

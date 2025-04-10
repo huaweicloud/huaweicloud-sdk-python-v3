@@ -26,7 +26,7 @@ class ImportAssetResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ImportAssetResponse
+        r"""ImportAssetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportAssetResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ImportAssetResponse.
+        r"""Gets the job_id of this ImportAssetResponse.
 
         资产导入作业的ID，可用于查询作业进度，获取导入作业进度
 
@@ -55,7 +55,7 @@ class ImportAssetResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ImportAssetResponse.
+        r"""Sets the job_id of this ImportAssetResponse.
 
         资产导入作业的ID，可用于查询作业进度，获取导入作业进度
 

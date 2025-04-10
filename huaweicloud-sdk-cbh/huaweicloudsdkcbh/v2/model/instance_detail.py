@@ -57,7 +57,7 @@ class InstanceDetail:
     }
 
     def __init__(self, name=None, server_id=None, instance_id=None, alter_permit=None, enterprise_project_id=None, period_num=None, start_time=None, end_time=None, created_time=None, upgrade_time=None, update=None, bastion_version=None, az_info=None, status_info=None, resource_info=None, network=None, ha_info=None):
-        """InstanceDetail
+        r"""InstanceDetail
 
         The model defined in huaweicloud sdk
 
@@ -140,7 +140,7 @@ class InstanceDetail:
 
     @property
     def name(self):
-        """Gets the name of this InstanceDetail.
+        r"""Gets the name of this InstanceDetail.
 
         云堡垒机实例名称。
 
@@ -151,7 +151,7 @@ class InstanceDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceDetail.
+        r"""Sets the name of this InstanceDetail.
 
         云堡垒机实例名称。
 
@@ -162,7 +162,7 @@ class InstanceDetail:
 
     @property
     def server_id(self):
-        """Gets the server_id of this InstanceDetail.
+        r"""Gets the server_id of this InstanceDetail.
 
         云堡垒机服务器id。
 
@@ -173,7 +173,7 @@ class InstanceDetail:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this InstanceDetail.
+        r"""Sets the server_id of this InstanceDetail.
 
         云堡垒机服务器id。
 
@@ -184,7 +184,7 @@ class InstanceDetail:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceDetail.
+        r"""Gets the instance_id of this InstanceDetail.
 
         云堡垒机实例id。
 
@@ -195,7 +195,7 @@ class InstanceDetail:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceDetail.
+        r"""Sets the instance_id of this InstanceDetail.
 
         云堡垒机实例id。
 
@@ -206,7 +206,7 @@ class InstanceDetail:
 
     @property
     def alter_permit(self):
-        """Gets the alter_permit of this InstanceDetail.
+        r"""Gets the alter_permit of this InstanceDetail.
 
         云堡垒机实例是否可以扩容。 - true：是 - false：否
 
@@ -217,7 +217,7 @@ class InstanceDetail:
 
     @alter_permit.setter
     def alter_permit(self, alter_permit):
-        """Sets the alter_permit of this InstanceDetail.
+        r"""Sets the alter_permit of this InstanceDetail.
 
         云堡垒机实例是否可以扩容。 - true：是 - false：否
 
@@ -228,7 +228,7 @@ class InstanceDetail:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this InstanceDetail.
+        r"""Gets the enterprise_project_id of this InstanceDetail.
 
         项目ID。
 
@@ -239,7 +239,7 @@ class InstanceDetail:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this InstanceDetail.
+        r"""Sets the enterprise_project_id of this InstanceDetail.
 
         项目ID。
 
@@ -250,7 +250,7 @@ class InstanceDetail:
 
     @property
     def period_num(self):
-        """Gets the period_num of this InstanceDetail.
+        r"""Gets the period_num of this InstanceDetail.
 
         云堡垒机实例订购周期数。
 
@@ -261,7 +261,7 @@ class InstanceDetail:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this InstanceDetail.
+        r"""Sets the period_num of this InstanceDetail.
 
         云堡垒机实例订购周期数。
 
@@ -272,7 +272,7 @@ class InstanceDetail:
 
     @property
     def start_time(self):
-        """Gets the start_time of this InstanceDetail.
+        r"""Gets the start_time of this InstanceDetail.
 
         云堡垒机实例开始时间，使用时间戳格式表示。
 
@@ -283,7 +283,7 @@ class InstanceDetail:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this InstanceDetail.
+        r"""Sets the start_time of this InstanceDetail.
 
         云堡垒机实例开始时间，使用时间戳格式表示。
 
@@ -294,7 +294,7 @@ class InstanceDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this InstanceDetail.
+        r"""Gets the end_time of this InstanceDetail.
 
         云堡垒机实例结束时间，使用时间戳格式表示。
 
@@ -305,7 +305,7 @@ class InstanceDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this InstanceDetail.
+        r"""Sets the end_time of this InstanceDetail.
 
         云堡垒机实例结束时间，使用时间戳格式表示。
 
@@ -316,7 +316,7 @@ class InstanceDetail:
 
     @property
     def created_time(self):
-        """Gets the created_time of this InstanceDetail.
+        r"""Gets the created_time of this InstanceDetail.
 
         云堡垒机实例创建时间，使用UTC时间表示。
 
@@ -327,7 +327,7 @@ class InstanceDetail:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this InstanceDetail.
+        r"""Sets the created_time of this InstanceDetail.
 
         云堡垒机实例创建时间，使用UTC时间表示。
 
@@ -338,7 +338,7 @@ class InstanceDetail:
 
     @property
     def upgrade_time(self):
-        """Gets the upgrade_time of this InstanceDetail.
+        r"""Gets the upgrade_time of this InstanceDetail.
 
         云堡垒机实例升级定时时间，使用时间戳格式表示。
 
@@ -349,7 +349,7 @@ class InstanceDetail:
 
     @upgrade_time.setter
     def upgrade_time(self, upgrade_time):
-        """Sets the upgrade_time of this InstanceDetail.
+        r"""Sets the upgrade_time of this InstanceDetail.
 
         云堡垒机实例升级定时时间，使用时间戳格式表示。
 
@@ -360,7 +360,7 @@ class InstanceDetail:
 
     @property
     def update(self):
-        """Gets the update of this InstanceDetail.
+        r"""Gets the update of this InstanceDetail.
 
         云堡垒机实例是否可以升级。 - OLD：当前已是最新版本 - NEW：可以升级小版本 - CROSS_OS：可以跨版本升级 - ROLLBACK：可以回滚
 
@@ -371,7 +371,7 @@ class InstanceDetail:
 
     @update.setter
     def update(self, update):
-        """Sets the update of this InstanceDetail.
+        r"""Sets the update of this InstanceDetail.
 
         云堡垒机实例是否可以升级。 - OLD：当前已是最新版本 - NEW：可以升级小版本 - CROSS_OS：可以跨版本升级 - ROLLBACK：可以回滚
 
@@ -382,7 +382,7 @@ class InstanceDetail:
 
     @property
     def bastion_version(self):
-        """Gets the bastion_version of this InstanceDetail.
+        r"""Gets the bastion_version of this InstanceDetail.
 
         云堡垒机实例当前版本。
 
@@ -393,7 +393,7 @@ class InstanceDetail:
 
     @bastion_version.setter
     def bastion_version(self, bastion_version):
-        """Sets the bastion_version of this InstanceDetail.
+        r"""Sets the bastion_version of this InstanceDetail.
 
         云堡垒机实例当前版本。
 
@@ -404,7 +404,7 @@ class InstanceDetail:
 
     @property
     def az_info(self):
-        """Gets the az_info of this InstanceDetail.
+        r"""Gets the az_info of this InstanceDetail.
 
         :return: The az_info of this InstanceDetail.
         :rtype: :class:`huaweicloudsdkcbh.v2.InstanceDetailAzInfo`
@@ -413,7 +413,7 @@ class InstanceDetail:
 
     @az_info.setter
     def az_info(self, az_info):
-        """Sets the az_info of this InstanceDetail.
+        r"""Sets the az_info of this InstanceDetail.
 
         :param az_info: The az_info of this InstanceDetail.
         :type az_info: :class:`huaweicloudsdkcbh.v2.InstanceDetailAzInfo`
@@ -422,7 +422,7 @@ class InstanceDetail:
 
     @property
     def status_info(self):
-        """Gets the status_info of this InstanceDetail.
+        r"""Gets the status_info of this InstanceDetail.
 
         :return: The status_info of this InstanceDetail.
         :rtype: :class:`huaweicloudsdkcbh.v2.InstanceDetailStatusInfo`
@@ -431,7 +431,7 @@ class InstanceDetail:
 
     @status_info.setter
     def status_info(self, status_info):
-        """Sets the status_info of this InstanceDetail.
+        r"""Sets the status_info of this InstanceDetail.
 
         :param status_info: The status_info of this InstanceDetail.
         :type status_info: :class:`huaweicloudsdkcbh.v2.InstanceDetailStatusInfo`
@@ -440,7 +440,7 @@ class InstanceDetail:
 
     @property
     def resource_info(self):
-        """Gets the resource_info of this InstanceDetail.
+        r"""Gets the resource_info of this InstanceDetail.
 
         :return: The resource_info of this InstanceDetail.
         :rtype: :class:`huaweicloudsdkcbh.v2.InstanceDetailResourceInfo`
@@ -449,7 +449,7 @@ class InstanceDetail:
 
     @resource_info.setter
     def resource_info(self, resource_info):
-        """Sets the resource_info of this InstanceDetail.
+        r"""Sets the resource_info of this InstanceDetail.
 
         :param resource_info: The resource_info of this InstanceDetail.
         :type resource_info: :class:`huaweicloudsdkcbh.v2.InstanceDetailResourceInfo`
@@ -458,7 +458,7 @@ class InstanceDetail:
 
     @property
     def network(self):
-        """Gets the network of this InstanceDetail.
+        r"""Gets the network of this InstanceDetail.
 
         :return: The network of this InstanceDetail.
         :rtype: :class:`huaweicloudsdkcbh.v2.InstanceDetailNetwork`
@@ -467,7 +467,7 @@ class InstanceDetail:
 
     @network.setter
     def network(self, network):
-        """Sets the network of this InstanceDetail.
+        r"""Sets the network of this InstanceDetail.
 
         :param network: The network of this InstanceDetail.
         :type network: :class:`huaweicloudsdkcbh.v2.InstanceDetailNetwork`
@@ -476,7 +476,7 @@ class InstanceDetail:
 
     @property
     def ha_info(self):
-        """Gets the ha_info of this InstanceDetail.
+        r"""Gets the ha_info of this InstanceDetail.
 
         :return: The ha_info of this InstanceDetail.
         :rtype: :class:`huaweicloudsdkcbh.v2.InstanceDetailHaInfo`
@@ -485,7 +485,7 @@ class InstanceDetail:
 
     @ha_info.setter
     def ha_info(self, ha_info):
-        """Sets the ha_info of this InstanceDetail.
+        r"""Sets the ha_info of this InstanceDetail.
 
         :param ha_info: The ha_info of this InstanceDetail.
         :type ha_info: :class:`huaweicloudsdkcbh.v2.InstanceDetailHaInfo`

@@ -28,7 +28,7 @@ class ShowSqlExecutionPlanResponse(SdkResponse):
     }
 
     def __init__(self, execution_plans=None, error_message=None):
-        """ShowSqlExecutionPlanResponse
+        r"""ShowSqlExecutionPlanResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSqlExecutionPlanResponse(SdkResponse):
 
     @property
     def execution_plans(self):
-        """Gets the execution_plans of this ShowSqlExecutionPlanResponse.
+        r"""Gets the execution_plans of this ShowSqlExecutionPlanResponse.
 
         SQL执行计划列表
 
@@ -62,7 +62,7 @@ class ShowSqlExecutionPlanResponse(SdkResponse):
 
     @execution_plans.setter
     def execution_plans(self, execution_plans):
-        """Sets the execution_plans of this ShowSqlExecutionPlanResponse.
+        r"""Sets the execution_plans of this ShowSqlExecutionPlanResponse.
 
         SQL执行计划列表
 
@@ -73,7 +73,7 @@ class ShowSqlExecutionPlanResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ShowSqlExecutionPlanResponse.
+        r"""Gets the error_message of this ShowSqlExecutionPlanResponse.
 
         SQL执行失败时，显示执行错误信息
 
@@ -84,7 +84,7 @@ class ShowSqlExecutionPlanResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ShowSqlExecutionPlanResponse.
+        r"""Sets the error_message of this ShowSqlExecutionPlanResponse.
 
         SQL执行失败时，显示执行错误信息
 

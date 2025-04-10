@@ -25,7 +25,7 @@ class AddServerGroupMemberRequestBody:
     }
 
     def __init__(self, add_member=None):
-        """AddServerGroupMemberRequestBody
+        r"""AddServerGroupMemberRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddServerGroupMemberRequestBody:
 
     @property
     def add_member(self):
-        """Gets the add_member of this AddServerGroupMemberRequestBody.
+        r"""Gets the add_member of this AddServerGroupMemberRequestBody.
 
         :return: The add_member of this AddServerGroupMemberRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerGroupMember`
@@ -51,7 +51,7 @@ class AddServerGroupMemberRequestBody:
 
     @add_member.setter
     def add_member(self, add_member):
-        """Sets the add_member of this AddServerGroupMemberRequestBody.
+        r"""Sets the add_member of this AddServerGroupMemberRequestBody.
 
         :param add_member: The add_member of this AddServerGroupMemberRequestBody.
         :type add_member: :class:`huaweicloudsdkecs.v2.ServerGroupMember`

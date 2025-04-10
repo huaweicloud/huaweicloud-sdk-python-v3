@@ -28,7 +28,7 @@ class CheckRulesetParametersResponse(SdkResponse):
     }
 
     def __init__(self, data=None, total=None):
-        """CheckRulesetParametersResponse
+        r"""CheckRulesetParametersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CheckRulesetParametersResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CheckRulesetParametersResponse.
+        r"""Gets the data of this CheckRulesetParametersResponse.
 
         历史记录数据
 
@@ -62,7 +62,7 @@ class CheckRulesetParametersResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CheckRulesetParametersResponse.
+        r"""Sets the data of this CheckRulesetParametersResponse.
 
         历史记录数据
 
@@ -73,7 +73,7 @@ class CheckRulesetParametersResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this CheckRulesetParametersResponse.
+        r"""Gets the total of this CheckRulesetParametersResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class CheckRulesetParametersResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this CheckRulesetParametersResponse.
+        r"""Sets the total of this CheckRulesetParametersResponse.
 
         总数
 

@@ -26,7 +26,7 @@ class AddDevDataResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """AddDevDataResponse
+        r"""AddDevDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddDevDataResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this AddDevDataResponse.
+        r"""Gets the body of this AddDevDataResponse.
 
         :return: The body of this AddDevDataResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class AddDevDataResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddDevDataResponse.
+        r"""Sets the body of this AddDevDataResponse.
 
         :param body: The body of this AddDevDataResponse.
         :type body: str

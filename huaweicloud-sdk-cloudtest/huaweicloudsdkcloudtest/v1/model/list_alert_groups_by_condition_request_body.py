@@ -37,7 +37,7 @@ class ListAlertGroupsByConditionRequestBody:
     }
 
     def __init__(self, group_id=None, group_ids=None, page_num=None, page_size=None, test_service_id=None, user_ids=None, user_name=None):
-        """ListAlertGroupsByConditionRequestBody
+        r"""ListAlertGroupsByConditionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListAlertGroupsByConditionRequestBody:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListAlertGroupsByConditionRequestBody.
+        r"""Gets the group_id of this ListAlertGroupsByConditionRequestBody.
 
         告警组ID
 
@@ -96,7 +96,7 @@ class ListAlertGroupsByConditionRequestBody:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListAlertGroupsByConditionRequestBody.
+        r"""Sets the group_id of this ListAlertGroupsByConditionRequestBody.
 
         告警组ID
 
@@ -107,7 +107,7 @@ class ListAlertGroupsByConditionRequestBody:
 
     @property
     def group_ids(self):
-        """Gets the group_ids of this ListAlertGroupsByConditionRequestBody.
+        r"""Gets the group_ids of this ListAlertGroupsByConditionRequestBody.
 
         告警组ID列表
 
@@ -118,7 +118,7 @@ class ListAlertGroupsByConditionRequestBody:
 
     @group_ids.setter
     def group_ids(self, group_ids):
-        """Sets the group_ids of this ListAlertGroupsByConditionRequestBody.
+        r"""Sets the group_ids of this ListAlertGroupsByConditionRequestBody.
 
         告警组ID列表
 
@@ -129,7 +129,7 @@ class ListAlertGroupsByConditionRequestBody:
 
     @property
     def page_num(self):
-        """Gets the page_num of this ListAlertGroupsByConditionRequestBody.
+        r"""Gets the page_num of this ListAlertGroupsByConditionRequestBody.
 
         当前页数
 
@@ -140,7 +140,7 @@ class ListAlertGroupsByConditionRequestBody:
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this ListAlertGroupsByConditionRequestBody.
+        r"""Sets the page_num of this ListAlertGroupsByConditionRequestBody.
 
         当前页数
 
@@ -151,7 +151,7 @@ class ListAlertGroupsByConditionRequestBody:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListAlertGroupsByConditionRequestBody.
+        r"""Gets the page_size of this ListAlertGroupsByConditionRequestBody.
 
         每页大小
 
@@ -162,7 +162,7 @@ class ListAlertGroupsByConditionRequestBody:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListAlertGroupsByConditionRequestBody.
+        r"""Sets the page_size of this ListAlertGroupsByConditionRequestBody.
 
         每页大小
 
@@ -173,7 +173,7 @@ class ListAlertGroupsByConditionRequestBody:
 
     @property
     def test_service_id(self):
-        """Gets the test_service_id of this ListAlertGroupsByConditionRequestBody.
+        r"""Gets the test_service_id of this ListAlertGroupsByConditionRequestBody.
 
         服务ID
 
@@ -184,7 +184,7 @@ class ListAlertGroupsByConditionRequestBody:
 
     @test_service_id.setter
     def test_service_id(self, test_service_id):
-        """Sets the test_service_id of this ListAlertGroupsByConditionRequestBody.
+        r"""Sets the test_service_id of this ListAlertGroupsByConditionRequestBody.
 
         服务ID
 
@@ -195,7 +195,7 @@ class ListAlertGroupsByConditionRequestBody:
 
     @property
     def user_ids(self):
-        """Gets the user_ids of this ListAlertGroupsByConditionRequestBody.
+        r"""Gets the user_ids of this ListAlertGroupsByConditionRequestBody.
 
         用户ID列表
 
@@ -206,7 +206,7 @@ class ListAlertGroupsByConditionRequestBody:
 
     @user_ids.setter
     def user_ids(self, user_ids):
-        """Sets the user_ids of this ListAlertGroupsByConditionRequestBody.
+        r"""Sets the user_ids of this ListAlertGroupsByConditionRequestBody.
 
         用户ID列表
 
@@ -217,7 +217,7 @@ class ListAlertGroupsByConditionRequestBody:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListAlertGroupsByConditionRequestBody.
+        r"""Gets the user_name of this ListAlertGroupsByConditionRequestBody.
 
         用户名
 
@@ -228,7 +228,7 @@ class ListAlertGroupsByConditionRequestBody:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListAlertGroupsByConditionRequestBody.
+        r"""Sets the user_name of this ListAlertGroupsByConditionRequestBody.
 
         用户名
 

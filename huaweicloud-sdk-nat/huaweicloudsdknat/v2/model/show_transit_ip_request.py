@@ -25,7 +25,7 @@ class ShowTransitIpRequest:
     }
 
     def __init__(self, transit_ip_id=None):
-        """ShowTransitIpRequest
+        r"""ShowTransitIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowTransitIpRequest:
 
     @property
     def transit_ip_id(self):
-        """Gets the transit_ip_id of this ShowTransitIpRequest.
+        r"""Gets the transit_ip_id of this ShowTransitIpRequest.
 
         中转IP的ID。
 
@@ -53,7 +53,7 @@ class ShowTransitIpRequest:
 
     @transit_ip_id.setter
     def transit_ip_id(self, transit_ip_id):
-        """Sets the transit_ip_id of this ShowTransitIpRequest.
+        r"""Sets the transit_ip_id of this ShowTransitIpRequest.
 
         中转IP的ID。
 

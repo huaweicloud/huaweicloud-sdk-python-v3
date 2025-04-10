@@ -46,7 +46,7 @@ class ShowEventStreamingResponse(SdkResponse):
     }
 
     def __init__(self, name=None, description=None, source=None, sink=None, rule_config=None, option=None, status=None, id=None, created_time=None, updated_time=None, x_request_id=None):
-        """ShowEventStreamingResponse
+        r"""ShowEventStreamingResponse
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowEventStreamingResponse.
+        r"""Gets the name of this ShowEventStreamingResponse.
 
         事件流名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头
 
@@ -122,7 +122,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowEventStreamingResponse.
+        r"""Sets the name of this ShowEventStreamingResponse.
 
         事件流名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头
 
@@ -133,7 +133,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowEventStreamingResponse.
+        r"""Gets the description of this ShowEventStreamingResponse.
 
         事件流描述
 
@@ -144,7 +144,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowEventStreamingResponse.
+        r"""Sets the description of this ShowEventStreamingResponse.
 
         事件流描述
 
@@ -155,7 +155,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @property
     def source(self):
-        """Gets the source of this ShowEventStreamingResponse.
+        r"""Gets the source of this ShowEventStreamingResponse.
 
         :return: The source of this ShowEventStreamingResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.EventStreamingSource`
@@ -164,7 +164,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ShowEventStreamingResponse.
+        r"""Sets the source of this ShowEventStreamingResponse.
 
         :param source: The source of this ShowEventStreamingResponse.
         :type source: :class:`huaweicloudsdkeg.v1.EventStreamingSource`
@@ -173,7 +173,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @property
     def sink(self):
-        """Gets the sink of this ShowEventStreamingResponse.
+        r"""Gets the sink of this ShowEventStreamingResponse.
 
         :return: The sink of this ShowEventStreamingResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.EventStreamingSink`
@@ -182,7 +182,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @sink.setter
     def sink(self, sink):
-        """Sets the sink of this ShowEventStreamingResponse.
+        r"""Sets the sink of this ShowEventStreamingResponse.
 
         :param sink: The sink of this ShowEventStreamingResponse.
         :type sink: :class:`huaweicloudsdkeg.v1.EventStreamingSink`
@@ -191,7 +191,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @property
     def rule_config(self):
-        """Gets the rule_config of this ShowEventStreamingResponse.
+        r"""Gets the rule_config of this ShowEventStreamingResponse.
 
         :return: The rule_config of this ShowEventStreamingResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.EventStreamingCreateReqRuleConfig`
@@ -200,7 +200,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @rule_config.setter
     def rule_config(self, rule_config):
-        """Sets the rule_config of this ShowEventStreamingResponse.
+        r"""Sets the rule_config of this ShowEventStreamingResponse.
 
         :param rule_config: The rule_config of this ShowEventStreamingResponse.
         :type rule_config: :class:`huaweicloudsdkeg.v1.EventStreamingCreateReqRuleConfig`
@@ -209,7 +209,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @property
     def option(self):
-        """Gets the option of this ShowEventStreamingResponse.
+        r"""Gets the option of this ShowEventStreamingResponse.
 
         :return: The option of this ShowEventStreamingResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.RunOption`
@@ -218,7 +218,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @option.setter
     def option(self, option):
-        """Sets the option of this ShowEventStreamingResponse.
+        r"""Sets the option of this ShowEventStreamingResponse.
 
         :param option: The option of this ShowEventStreamingResponse.
         :type option: :class:`huaweicloudsdkeg.v1.RunOption`
@@ -227,7 +227,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowEventStreamingResponse.
+        r"""Gets the status of this ShowEventStreamingResponse.
 
         事件流状态
 
@@ -238,7 +238,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowEventStreamingResponse.
+        r"""Sets the status of this ShowEventStreamingResponse.
 
         事件流状态
 
@@ -249,7 +249,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowEventStreamingResponse.
+        r"""Gets the id of this ShowEventStreamingResponse.
 
         事件流ID
 
@@ -260,7 +260,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowEventStreamingResponse.
+        r"""Sets the id of this ShowEventStreamingResponse.
 
         事件流ID
 
@@ -271,7 +271,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowEventStreamingResponse.
+        r"""Gets the created_time of this ShowEventStreamingResponse.
 
         创建时间
 
@@ -282,7 +282,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowEventStreamingResponse.
+        r"""Sets the created_time of this ShowEventStreamingResponse.
 
         创建时间
 
@@ -293,7 +293,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ShowEventStreamingResponse.
+        r"""Gets the updated_time of this ShowEventStreamingResponse.
 
         更新时间
 
@@ -304,7 +304,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ShowEventStreamingResponse.
+        r"""Sets the updated_time of this ShowEventStreamingResponse.
 
         更新时间
 
@@ -315,7 +315,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowEventStreamingResponse.
+        r"""Gets the x_request_id of this ShowEventStreamingResponse.
 
         :return: The x_request_id of this ShowEventStreamingResponse.
         :rtype: str
@@ -324,7 +324,7 @@ class ShowEventStreamingResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowEventStreamingResponse.
+        r"""Sets the x_request_id of this ShowEventStreamingResponse.
 
         :param x_request_id: The x_request_id of this ShowEventStreamingResponse.
         :type x_request_id: str

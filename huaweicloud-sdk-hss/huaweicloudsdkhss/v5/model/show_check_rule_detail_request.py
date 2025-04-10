@@ -35,11 +35,11 @@ class ShowCheckRuleDetailRequest:
     }
 
     def __init__(self, enterprise_project_id=None, check_name=None, check_type=None, check_rule_id=None, standard=None, host_id=None):
-        """ShowCheckRuleDetailRequest
+        r"""ShowCheckRuleDetailRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param check_name: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows
         :type check_name: str
@@ -74,9 +74,9 @@ class ShowCheckRuleDetailRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowCheckRuleDetailRequest.
+        r"""Gets the enterprise_project_id of this ShowCheckRuleDetailRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ShowCheckRuleDetailRequest.
         :rtype: str
@@ -85,9 +85,9 @@ class ShowCheckRuleDetailRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowCheckRuleDetailRequest.
+        r"""Sets the enterprise_project_id of this ShowCheckRuleDetailRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowCheckRuleDetailRequest.
         :type enterprise_project_id: str
@@ -96,7 +96,7 @@ class ShowCheckRuleDetailRequest:
 
     @property
     def check_name(self):
-        """Gets the check_name of this ShowCheckRuleDetailRequest.
+        r"""Gets the check_name of this ShowCheckRuleDetailRequest.
 
         配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
@@ -107,7 +107,7 @@ class ShowCheckRuleDetailRequest:
 
     @check_name.setter
     def check_name(self, check_name):
-        """Sets the check_name of this ShowCheckRuleDetailRequest.
+        r"""Sets the check_name of this ShowCheckRuleDetailRequest.
 
         配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
@@ -118,7 +118,7 @@ class ShowCheckRuleDetailRequest:
 
     @property
     def check_type(self):
-        """Gets the check_type of this ShowCheckRuleDetailRequest.
+        r"""Gets the check_type of this ShowCheckRuleDetailRequest.
 
         配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。check_type的值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-configs
 
@@ -129,7 +129,7 @@ class ShowCheckRuleDetailRequest:
 
     @check_type.setter
     def check_type(self, check_type):
-        """Sets the check_type of this ShowCheckRuleDetailRequest.
+        r"""Sets the check_type of this ShowCheckRuleDetailRequest.
 
         配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。check_type的值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-configs
 
@@ -140,7 +140,7 @@ class ShowCheckRuleDetailRequest:
 
     @property
     def check_rule_id(self):
-        """Gets the check_rule_id of this ShowCheckRuleDetailRequest.
+        r"""Gets the check_rule_id of this ShowCheckRuleDetailRequest.
 
         检查项ID，值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-config/{check_name}/check-rules
 
@@ -151,7 +151,7 @@ class ShowCheckRuleDetailRequest:
 
     @check_rule_id.setter
     def check_rule_id(self, check_rule_id):
-        """Sets the check_rule_id of this ShowCheckRuleDetailRequest.
+        r"""Sets the check_rule_id of this ShowCheckRuleDetailRequest.
 
         检查项ID，值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-config/{check_name}/check-rules
 
@@ -162,7 +162,7 @@ class ShowCheckRuleDetailRequest:
 
     @property
     def standard(self):
-        """Gets the standard of this ShowCheckRuleDetailRequest.
+        r"""Gets the standard of this ShowCheckRuleDetailRequest.
 
         标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
@@ -173,7 +173,7 @@ class ShowCheckRuleDetailRequest:
 
     @standard.setter
     def standard(self, standard):
-        """Sets the standard of this ShowCheckRuleDetailRequest.
+        r"""Sets the standard of this ShowCheckRuleDetailRequest.
 
         标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
@@ -184,7 +184,7 @@ class ShowCheckRuleDetailRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ShowCheckRuleDetailRequest.
+        r"""Gets the host_id of this ShowCheckRuleDetailRequest.
 
         主机ID
 
@@ -195,7 +195,7 @@ class ShowCheckRuleDetailRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ShowCheckRuleDetailRequest.
+        r"""Sets the host_id of this ShowCheckRuleDetailRequest.
 
         主机ID
 

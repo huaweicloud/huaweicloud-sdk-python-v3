@@ -37,7 +37,7 @@ class CreateDcPointReqDTO:
     }
 
     def __init__(self, point_id=None, name=None, data_type=None, collection_config=None, device_id=None, _property=None, processing_config=None):
-        """CreateDcPointReqDTO
+        r"""CreateDcPointReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class CreateDcPointReqDTO:
 
     @property
     def point_id(self):
-        """Gets the point_id of this CreateDcPointReqDTO.
+        r"""Gets the point_id of this CreateDcPointReqDTO.
 
         点位表id，数据源下唯一
 
@@ -91,7 +91,7 @@ class CreateDcPointReqDTO:
 
     @point_id.setter
     def point_id(self, point_id):
-        """Sets the point_id of this CreateDcPointReqDTO.
+        r"""Sets the point_id of this CreateDcPointReqDTO.
 
         点位表id，数据源下唯一
 
@@ -102,7 +102,7 @@ class CreateDcPointReqDTO:
 
     @property
     def name(self):
-        """Gets the name of this CreateDcPointReqDTO.
+        r"""Gets the name of this CreateDcPointReqDTO.
 
         点位名称，允许中、数字、英文大小写、下划线、中划线、#%()*特殊字符
 
@@ -113,7 +113,7 @@ class CreateDcPointReqDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDcPointReqDTO.
+        r"""Sets the name of this CreateDcPointReqDTO.
 
         点位名称，允许中、数字、英文大小写、下划线、中划线、#%()*特殊字符
 
@@ -124,7 +124,7 @@ class CreateDcPointReqDTO:
 
     @property
     def data_type(self):
-        """Gets the data_type of this CreateDcPointReqDTO.
+        r"""Gets the data_type of this CreateDcPointReqDTO.
 
         点位数据类型
 
@@ -135,7 +135,7 @@ class CreateDcPointReqDTO:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this CreateDcPointReqDTO.
+        r"""Sets the data_type of this CreateDcPointReqDTO.
 
         点位数据类型
 
@@ -146,7 +146,7 @@ class CreateDcPointReqDTO:
 
     @property
     def collection_config(self):
-        """Gets the collection_config of this CreateDcPointReqDTO.
+        r"""Gets the collection_config of this CreateDcPointReqDTO.
 
         点位采集配置
 
@@ -157,7 +157,7 @@ class CreateDcPointReqDTO:
 
     @collection_config.setter
     def collection_config(self, collection_config):
-        """Sets the collection_config of this CreateDcPointReqDTO.
+        r"""Sets the collection_config of this CreateDcPointReqDTO.
 
         点位采集配置
 
@@ -168,7 +168,7 @@ class CreateDcPointReqDTO:
 
     @property
     def device_id(self):
-        """Gets the device_id of this CreateDcPointReqDTO.
+        r"""Gets the device_id of this CreateDcPointReqDTO.
 
         设备id
 
@@ -179,7 +179,7 @@ class CreateDcPointReqDTO:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this CreateDcPointReqDTO.
+        r"""Sets the device_id of this CreateDcPointReqDTO.
 
         设备id
 
@@ -190,7 +190,7 @@ class CreateDcPointReqDTO:
 
     @property
     def _property(self):
-        """Gets the _property of this CreateDcPointReqDTO.
+        r"""Gets the _property of this CreateDcPointReqDTO.
 
         属性，允许中、数字、英文大小写、下划线、中划线
 
@@ -201,7 +201,7 @@ class CreateDcPointReqDTO:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this CreateDcPointReqDTO.
+        r"""Sets the _property of this CreateDcPointReqDTO.
 
         属性，允许中、数字、英文大小写、下划线、中划线
 
@@ -212,7 +212,7 @@ class CreateDcPointReqDTO:
 
     @property
     def processing_config(self):
-        """Gets the processing_config of this CreateDcPointReqDTO.
+        r"""Gets the processing_config of this CreateDcPointReqDTO.
 
         :return: The processing_config of this CreateDcPointReqDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ProcessingConfigDTO`
@@ -221,7 +221,7 @@ class CreateDcPointReqDTO:
 
     @processing_config.setter
     def processing_config(self, processing_config):
-        """Sets the processing_config of this CreateDcPointReqDTO.
+        r"""Sets the processing_config of this CreateDcPointReqDTO.
 
         :param processing_config: The processing_config of this CreateDcPointReqDTO.
         :type processing_config: :class:`huaweicloudsdkiotedge.v2.ProcessingConfigDTO`

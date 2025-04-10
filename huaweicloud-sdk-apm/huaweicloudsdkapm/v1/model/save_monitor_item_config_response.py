@@ -26,7 +26,7 @@ class SaveMonitorItemConfigResponse(SdkResponse):
     }
 
     def __init__(self, flag=None):
-        """SaveMonitorItemConfigResponse
+        r"""SaveMonitorItemConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SaveMonitorItemConfigResponse(SdkResponse):
 
     @property
     def flag(self):
-        """Gets the flag of this SaveMonitorItemConfigResponse.
+        r"""Gets the flag of this SaveMonitorItemConfigResponse.
 
         保存监控项返回状态。
 
@@ -55,7 +55,7 @@ class SaveMonitorItemConfigResponse(SdkResponse):
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this SaveMonitorItemConfigResponse.
+        r"""Sets the flag of this SaveMonitorItemConfigResponse.
 
         保存监控项返回状态。
 

@@ -39,7 +39,7 @@ class BackupSync:
     }
 
     def __init__(self, backup_id=None, backup_name=None, bucket_name=None, image_path=None, resource_id=None, resource_name=None, resource_type=None, created_at=None):
-        """BackupSync
+        r"""BackupSync
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class BackupSync:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this BackupSync.
+        r"""Gets the backup_id of this BackupSync.
 
         备份副本ID
 
@@ -95,7 +95,7 @@ class BackupSync:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this BackupSync.
+        r"""Sets the backup_id of this BackupSync.
 
         备份副本ID
 
@@ -106,7 +106,7 @@ class BackupSync:
 
     @property
     def backup_name(self):
-        """Gets the backup_name of this BackupSync.
+        r"""Gets the backup_name of this BackupSync.
 
         备份名称
 
@@ -117,7 +117,7 @@ class BackupSync:
 
     @backup_name.setter
     def backup_name(self, backup_name):
-        """Sets the backup_name of this BackupSync.
+        r"""Sets the backup_name of this BackupSync.
 
         备份名称
 
@@ -128,7 +128,7 @@ class BackupSync:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this BackupSync.
+        r"""Gets the bucket_name of this BackupSync.
 
         桶名
 
@@ -139,7 +139,7 @@ class BackupSync:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this BackupSync.
+        r"""Sets the bucket_name of this BackupSync.
 
         桶名
 
@@ -150,7 +150,7 @@ class BackupSync:
 
     @property
     def image_path(self):
-        """Gets the image_path of this BackupSync.
+        r"""Gets the image_path of this BackupSync.
 
         备份链在存储单元上的路径
 
@@ -161,7 +161,7 @@ class BackupSync:
 
     @image_path.setter
     def image_path(self, image_path):
-        """Sets the image_path of this BackupSync.
+        r"""Sets the image_path of this BackupSync.
 
         备份链在存储单元上的路径
 
@@ -172,7 +172,7 @@ class BackupSync:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BackupSync.
+        r"""Gets the resource_id of this BackupSync.
 
         备份对象ID
 
@@ -183,7 +183,7 @@ class BackupSync:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BackupSync.
+        r"""Sets the resource_id of this BackupSync.
 
         备份对象ID
 
@@ -194,7 +194,7 @@ class BackupSync:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this BackupSync.
+        r"""Gets the resource_name of this BackupSync.
 
         备份对象名称
 
@@ -205,7 +205,7 @@ class BackupSync:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this BackupSync.
+        r"""Sets the resource_name of this BackupSync.
 
         备份对象名称
 
@@ -216,7 +216,7 @@ class BackupSync:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this BackupSync.
+        r"""Gets the resource_type of this BackupSync.
 
         备份对象资源类型
 
@@ -227,7 +227,7 @@ class BackupSync:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this BackupSync.
+        r"""Sets the resource_type of this BackupSync.
 
         备份对象资源类型
 
@@ -238,7 +238,7 @@ class BackupSync:
 
     @property
     def created_at(self):
-        """Gets the created_at of this BackupSync.
+        r"""Gets the created_at of this BackupSync.
 
         备份时间戳，例如1548898428
 
@@ -249,7 +249,7 @@ class BackupSync:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this BackupSync.
+        r"""Sets the created_at of this BackupSync.
 
         备份时间戳，例如1548898428
 

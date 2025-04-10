@@ -32,7 +32,7 @@ class ListMetricsDataResponse(SdkResponse):
     }
 
     def __init__(self, code=None, msg=None, data=None, count=None):
-        """ListMetricsDataResponse
+        r"""ListMetricsDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListMetricsDataResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListMetricsDataResponse.
+        r"""Gets the code of this ListMetricsDataResponse.
 
         响应码
 
@@ -76,7 +76,7 @@ class ListMetricsDataResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListMetricsDataResponse.
+        r"""Sets the code of this ListMetricsDataResponse.
 
         响应码
 
@@ -87,7 +87,7 @@ class ListMetricsDataResponse(SdkResponse):
 
     @property
     def msg(self):
-        """Gets the msg of this ListMetricsDataResponse.
+        r"""Gets the msg of this ListMetricsDataResponse.
 
         响应信息
 
@@ -98,7 +98,7 @@ class ListMetricsDataResponse(SdkResponse):
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this ListMetricsDataResponse.
+        r"""Sets the msg of this ListMetricsDataResponse.
 
         响应信息
 
@@ -109,7 +109,7 @@ class ListMetricsDataResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListMetricsDataResponse.
+        r"""Gets the data of this ListMetricsDataResponse.
 
         指标采集数据列表。
 
@@ -120,7 +120,7 @@ class ListMetricsDataResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListMetricsDataResponse.
+        r"""Sets the data of this ListMetricsDataResponse.
 
         指标采集数据列表。
 
@@ -131,7 +131,7 @@ class ListMetricsDataResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListMetricsDataResponse.
+        r"""Gets the count of this ListMetricsDataResponse.
 
         总列表大小。
 
@@ -142,7 +142,7 @@ class ListMetricsDataResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListMetricsDataResponse.
+        r"""Sets the count of this ListMetricsDataResponse.
 
         总列表大小。
 

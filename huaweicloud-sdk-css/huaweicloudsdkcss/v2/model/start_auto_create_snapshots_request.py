@@ -27,7 +27,7 @@ class StartAutoCreateSnapshotsRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """StartAutoCreateSnapshotsRequest
+        r"""StartAutoCreateSnapshotsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartAutoCreateSnapshotsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this StartAutoCreateSnapshotsRequest.
+        r"""Gets the cluster_id of this StartAutoCreateSnapshotsRequest.
 
         快照所属的集群的ID。
 
@@ -60,7 +60,7 @@ class StartAutoCreateSnapshotsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this StartAutoCreateSnapshotsRequest.
+        r"""Sets the cluster_id of this StartAutoCreateSnapshotsRequest.
 
         快照所属的集群的ID。
 
@@ -71,7 +71,7 @@ class StartAutoCreateSnapshotsRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartAutoCreateSnapshotsRequest.
+        r"""Gets the body of this StartAutoCreateSnapshotsRequest.
 
         :return: The body of this StartAutoCreateSnapshotsRequest.
         :rtype: :class:`huaweicloudsdkcss.v2.StartAutoCreateSnapshotsReq`
@@ -80,7 +80,7 @@ class StartAutoCreateSnapshotsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartAutoCreateSnapshotsRequest.
+        r"""Sets the body of this StartAutoCreateSnapshotsRequest.
 
         :param body: The body of this StartAutoCreateSnapshotsRequest.
         :type body: :class:`huaweicloudsdkcss.v2.StartAutoCreateSnapshotsReq`

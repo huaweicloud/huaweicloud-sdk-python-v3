@@ -27,7 +27,7 @@ class ListFlavorInfo:
     }
 
     def __init__(self, vcpu=None, mem=None):
-        """ListFlavorInfo
+        r"""ListFlavorInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListFlavorInfo:
 
     @property
     def vcpu(self):
-        """Gets the vcpu of this ListFlavorInfo.
+        r"""Gets the vcpu of this ListFlavorInfo.
 
         cpu核数。
 
@@ -59,7 +59,7 @@ class ListFlavorInfo:
 
     @vcpu.setter
     def vcpu(self, vcpu):
-        """Sets the vcpu of this ListFlavorInfo.
+        r"""Sets the vcpu of this ListFlavorInfo.
 
         cpu核数。
 
@@ -70,7 +70,7 @@ class ListFlavorInfo:
 
     @property
     def mem(self):
-        """Gets the mem of this ListFlavorInfo.
+        r"""Gets the mem of this ListFlavorInfo.
 
         内存大小。
 
@@ -81,7 +81,7 @@ class ListFlavorInfo:
 
     @mem.setter
     def mem(self, mem):
-        """Sets the mem of this ListFlavorInfo.
+        r"""Sets the mem of this ListFlavorInfo.
 
         内存大小。
 

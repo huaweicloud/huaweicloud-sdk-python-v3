@@ -29,7 +29,7 @@ class AwInfoDTO:
     }
 
     def __init__(self, name=None, id=None, datum_type=None):
-        """AwInfoDTO
+        r"""AwInfoDTO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AwInfoDTO:
 
     @property
     def name(self):
-        """Gets the name of this AwInfoDTO.
+        r"""Gets the name of this AwInfoDTO.
 
         aw名
 
@@ -68,7 +68,7 @@ class AwInfoDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AwInfoDTO.
+        r"""Sets the name of this AwInfoDTO.
 
         aw名
 
@@ -79,7 +79,7 @@ class AwInfoDTO:
 
     @property
     def id(self):
-        """Gets the id of this AwInfoDTO.
+        r"""Gets the id of this AwInfoDTO.
 
         数据库中dc_case_aw表中的主键ID
 
@@ -90,7 +90,7 @@ class AwInfoDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AwInfoDTO.
+        r"""Sets the id of this AwInfoDTO.
 
         数据库中dc_case_aw表中的主键ID
 
@@ -101,7 +101,7 @@ class AwInfoDTO:
 
     @property
     def datum_type(self):
-        """Gets the datum_type of this AwInfoDTO.
+        r"""Gets the datum_type of this AwInfoDTO.
 
         数据类型（用例/aw/事务）
 
@@ -112,7 +112,7 @@ class AwInfoDTO:
 
     @datum_type.setter
     def datum_type(self, datum_type):
-        """Sets the datum_type of this AwInfoDTO.
+        r"""Sets the datum_type of this AwInfoDTO.
 
         数据类型（用例/aw/事务）
 

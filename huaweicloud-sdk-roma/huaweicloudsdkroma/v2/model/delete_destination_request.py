@@ -29,7 +29,7 @@ class DeleteDestinationRequest:
     }
 
     def __init__(self, instance_id=None, rule_id=None, destination_id=None):
-        """DeleteDestinationRequest
+        r"""DeleteDestinationRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteDestinationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteDestinationRequest.
+        r"""Gets the instance_id of this DeleteDestinationRequest.
 
         实例ID
 
@@ -65,7 +65,7 @@ class DeleteDestinationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteDestinationRequest.
+        r"""Sets the instance_id of this DeleteDestinationRequest.
 
         实例ID
 
@@ -76,7 +76,7 @@ class DeleteDestinationRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this DeleteDestinationRequest.
+        r"""Gets the rule_id of this DeleteDestinationRequest.
 
         规则ID
 
@@ -87,7 +87,7 @@ class DeleteDestinationRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this DeleteDestinationRequest.
+        r"""Sets the rule_id of this DeleteDestinationRequest.
 
         规则ID
 
@@ -98,7 +98,7 @@ class DeleteDestinationRequest:
 
     @property
     def destination_id(self):
-        """Gets the destination_id of this DeleteDestinationRequest.
+        r"""Gets the destination_id of this DeleteDestinationRequest.
 
         目标数据源ID
 
@@ -109,7 +109,7 @@ class DeleteDestinationRequest:
 
     @destination_id.setter
     def destination_id(self, destination_id):
-        """Sets the destination_id of this DeleteDestinationRequest.
+        r"""Sets the destination_id of this DeleteDestinationRequest.
 
         目标数据源ID
 

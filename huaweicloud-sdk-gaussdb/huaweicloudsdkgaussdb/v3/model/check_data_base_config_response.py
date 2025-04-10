@@ -34,7 +34,7 @@ class CheckDataBaseConfigResponse(SdkResponse):
     }
 
     def __init__(self, source_database_name=None, source_db_config_check_results=None, target_database_name=None, target_db_config_check_results=None, task_name=None):
-        """CheckDataBaseConfigResponse
+        r"""CheckDataBaseConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CheckDataBaseConfigResponse(SdkResponse):
 
     @property
     def source_database_name(self):
-        """Gets the source_database_name of this CheckDataBaseConfigResponse.
+        r"""Gets the source_database_name of this CheckDataBaseConfigResponse.
 
         TaurusDB数据库名称。
 
@@ -83,7 +83,7 @@ class CheckDataBaseConfigResponse(SdkResponse):
 
     @source_database_name.setter
     def source_database_name(self, source_database_name):
-        """Sets the source_database_name of this CheckDataBaseConfigResponse.
+        r"""Sets the source_database_name of this CheckDataBaseConfigResponse.
 
         TaurusDB数据库名称。
 
@@ -94,7 +94,7 @@ class CheckDataBaseConfigResponse(SdkResponse):
 
     @property
     def source_db_config_check_results(self):
-        """Gets the source_db_config_check_results of this CheckDataBaseConfigResponse.
+        r"""Gets the source_db_config_check_results of this CheckDataBaseConfigResponse.
 
         TaurusDB数据库配置检查结果。
 
@@ -105,7 +105,7 @@ class CheckDataBaseConfigResponse(SdkResponse):
 
     @source_db_config_check_results.setter
     def source_db_config_check_results(self, source_db_config_check_results):
-        """Sets the source_db_config_check_results of this CheckDataBaseConfigResponse.
+        r"""Sets the source_db_config_check_results of this CheckDataBaseConfigResponse.
 
         TaurusDB数据库配置检查结果。
 
@@ -116,7 +116,7 @@ class CheckDataBaseConfigResponse(SdkResponse):
 
     @property
     def target_database_name(self):
-        """Gets the target_database_name of this CheckDataBaseConfigResponse.
+        r"""Gets the target_database_name of this CheckDataBaseConfigResponse.
 
         目标数据库名称。
 
@@ -127,7 +127,7 @@ class CheckDataBaseConfigResponse(SdkResponse):
 
     @target_database_name.setter
     def target_database_name(self, target_database_name):
-        """Sets the target_database_name of this CheckDataBaseConfigResponse.
+        r"""Sets the target_database_name of this CheckDataBaseConfigResponse.
 
         目标数据库名称。
 
@@ -138,7 +138,7 @@ class CheckDataBaseConfigResponse(SdkResponse):
 
     @property
     def target_db_config_check_results(self):
-        """Gets the target_db_config_check_results of this CheckDataBaseConfigResponse.
+        r"""Gets the target_db_config_check_results of this CheckDataBaseConfigResponse.
 
         目标数据库配置检查结果。
 
@@ -149,7 +149,7 @@ class CheckDataBaseConfigResponse(SdkResponse):
 
     @target_db_config_check_results.setter
     def target_db_config_check_results(self, target_db_config_check_results):
-        """Sets the target_db_config_check_results of this CheckDataBaseConfigResponse.
+        r"""Sets the target_db_config_check_results of this CheckDataBaseConfigResponse.
 
         目标数据库配置检查结果。
 
@@ -160,7 +160,7 @@ class CheckDataBaseConfigResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this CheckDataBaseConfigResponse.
+        r"""Gets the task_name of this CheckDataBaseConfigResponse.
 
         同步任务名称。
 
@@ -171,7 +171,7 @@ class CheckDataBaseConfigResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this CheckDataBaseConfigResponse.
+        r"""Sets the task_name of this CheckDataBaseConfigResponse.
 
         同步任务名称。
 

@@ -41,7 +41,7 @@ class AccountResponseInfo:
     }
 
     def __init__(self, account_name=None, account_id=None, organization_id=None, project_id=None, project_name=None, host_num=None, vulnerability_num=None, baseline_num=None, intrusion_num=None):
-        """AccountResponseInfo
+        r"""AccountResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class AccountResponseInfo:
 
     @property
     def account_name(self):
-        """Gets the account_name of this AccountResponseInfo.
+        r"""Gets the account_name of this AccountResponseInfo.
 
         账号名称
 
@@ -110,7 +110,7 @@ class AccountResponseInfo:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this AccountResponseInfo.
+        r"""Sets the account_name of this AccountResponseInfo.
 
         账号名称
 
@@ -121,7 +121,7 @@ class AccountResponseInfo:
 
     @property
     def account_id(self):
-        """Gets the account_id of this AccountResponseInfo.
+        r"""Gets the account_id of this AccountResponseInfo.
 
         账号Id
 
@@ -132,7 +132,7 @@ class AccountResponseInfo:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this AccountResponseInfo.
+        r"""Sets the account_id of this AccountResponseInfo.
 
         账号Id
 
@@ -143,7 +143,7 @@ class AccountResponseInfo:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this AccountResponseInfo.
+        r"""Gets the organization_id of this AccountResponseInfo.
 
         组织Id
 
@@ -154,7 +154,7 @@ class AccountResponseInfo:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this AccountResponseInfo.
+        r"""Sets the organization_id of this AccountResponseInfo.
 
         组织Id
 
@@ -165,7 +165,7 @@ class AccountResponseInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AccountResponseInfo.
+        r"""Gets the project_id of this AccountResponseInfo.
 
         项目Id
 
@@ -176,7 +176,7 @@ class AccountResponseInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AccountResponseInfo.
+        r"""Sets the project_id of this AccountResponseInfo.
 
         项目Id
 
@@ -187,7 +187,7 @@ class AccountResponseInfo:
 
     @property
     def project_name(self):
-        """Gets the project_name of this AccountResponseInfo.
+        r"""Gets the project_name of this AccountResponseInfo.
 
         项目名称
 
@@ -198,7 +198,7 @@ class AccountResponseInfo:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this AccountResponseInfo.
+        r"""Sets the project_name of this AccountResponseInfo.
 
         项目名称
 
@@ -209,7 +209,7 @@ class AccountResponseInfo:
 
     @property
     def host_num(self):
-        """Gets the host_num of this AccountResponseInfo.
+        r"""Gets the host_num of this AccountResponseInfo.
 
         主机数量
 
@@ -220,7 +220,7 @@ class AccountResponseInfo:
 
     @host_num.setter
     def host_num(self, host_num):
-        """Sets the host_num of this AccountResponseInfo.
+        r"""Sets the host_num of this AccountResponseInfo.
 
         主机数量
 
@@ -231,7 +231,7 @@ class AccountResponseInfo:
 
     @property
     def vulnerability_num(self):
-        """Gets the vulnerability_num of this AccountResponseInfo.
+        r"""Gets the vulnerability_num of this AccountResponseInfo.
 
         漏洞风险数量
 
@@ -242,7 +242,7 @@ class AccountResponseInfo:
 
     @vulnerability_num.setter
     def vulnerability_num(self, vulnerability_num):
-        """Sets the vulnerability_num of this AccountResponseInfo.
+        r"""Sets the vulnerability_num of this AccountResponseInfo.
 
         漏洞风险数量
 
@@ -253,7 +253,7 @@ class AccountResponseInfo:
 
     @property
     def baseline_num(self):
-        """Gets the baseline_num of this AccountResponseInfo.
+        r"""Gets the baseline_num of this AccountResponseInfo.
 
         基线检测风险数量
 
@@ -264,7 +264,7 @@ class AccountResponseInfo:
 
     @baseline_num.setter
     def baseline_num(self, baseline_num):
-        """Sets the baseline_num of this AccountResponseInfo.
+        r"""Sets the baseline_num of this AccountResponseInfo.
 
         基线检测风险数量
 
@@ -275,7 +275,7 @@ class AccountResponseInfo:
 
     @property
     def intrusion_num(self):
-        """Gets the intrusion_num of this AccountResponseInfo.
+        r"""Gets the intrusion_num of this AccountResponseInfo.
 
         安全告警风险数量
 
@@ -286,7 +286,7 @@ class AccountResponseInfo:
 
     @intrusion_num.setter
     def intrusion_num(self, intrusion_num):
-        """Sets the intrusion_num of this AccountResponseInfo.
+        r"""Sets the intrusion_num of this AccountResponseInfo.
 
         安全告警风险数量
 

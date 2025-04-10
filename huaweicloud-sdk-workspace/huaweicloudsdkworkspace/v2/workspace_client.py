@@ -34,7 +34,7 @@ class WorkspaceClient(Client):
         return client_builder
 
     def list_access_address_backup_config(self, request):
-        """获取云办公服务接入地址备份配置
+        r"""获取云办公服务接入地址备份配置
 
         该接口用于获取云办公服务接入地址备份配置。
         
@@ -97,7 +97,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_access_address_backup_config(self, request):
-        """修改云办公服务接入地址备份配置
+        r"""修改云办公服务接入地址备份配置
 
         该接口用于修改云办公服务接入地址备份配置。
         
@@ -162,7 +162,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_delete_access_policies(self, request):
-        """删除接入策略
+        r"""删除接入策略
 
         该接口用于删除指定接入策略。
         
@@ -227,7 +227,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_access_policy(self, request):
-        """创建接入策略
+        r"""创建接入策略
 
         该接口用于创建接入策略。
         
@@ -292,7 +292,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_access_policies(self, request):
-        """查询接入策略
+        r"""查询接入策略
 
         该接口用于查询接入策略。
         
@@ -361,7 +361,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_access_policy_objects(self, request):
-        """查询指定接入策略的应用对象
+        r"""查询指定接入策略的应用对象
 
         该接口用于查询指定接入策略的应用对象。
         
@@ -430,7 +430,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_access_policy(self, request):
-        """更新指定接入策略
+        r"""更新指定接入策略
 
         该接口用于更新指定接入策略。
         
@@ -497,7 +497,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_access_policy_objects(self, request):
-        """更新指定接入策略的应用对象
+        r"""更新指定接入策略的应用对象
 
         该接口用于更新指定接入策略的应用对象。
         
@@ -564,7 +564,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_agencies(self, request):
-        """开通委托功能
+        r"""开通委托功能
 
         开通委托功能。
         
@@ -629,7 +629,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_agencies(self, request):
-        """查询委托功能
+        r"""查询委托功能
 
         查询委托功能。
         
@@ -694,7 +694,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_alarm_statistics(self, request):
-        """查询告警统计
+        r"""查询告警统计
 
         返回各级别告警数
         
@@ -757,7 +757,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_alarms(self, request):
-        """查询告警列表
+        r"""查询告警列表
 
         从ces查询告警列表
         
@@ -826,7 +826,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_delete_apps(self, request):
-        """批量删除应用
+        r"""批量删除应用
 
         批量删除应用。
         
@@ -891,7 +891,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_delete_jobs(self, request):
-        """批量删除job
+        r"""批量删除job
 
         批量删除job。
         
@@ -956,7 +956,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_disable_apps(self, request):
-        """批量设置不可见
+        r"""批量设置不可见
 
         批量设置不可见。
         
@@ -1021,7 +1021,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_enable_apps(self, request):
-        """批量设置可见
+        r"""批量设置可见
 
         批量设置可见。
         
@@ -1086,7 +1086,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_install_apps(self, request):
-        """批量自动安装安装应用
+        r"""批量自动安装安装应用
 
         批量自动安装安装应用 (应用需支持静默安装或者解压安装)。
         
@@ -1151,7 +1151,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_update_app_authorizations(self, request):
-        """批量设置应用授权
+        r"""批量设置应用授权
 
         批量设置应用授权。
         
@@ -1216,7 +1216,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_and_authorize_bucket(self, request):
-        """添加并授权默认桶
+        r"""添加并授权默认桶
 
         添加并授权默认桶,桶不存在时会自动创建OBS桶。
         
@@ -1279,7 +1279,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_bucket_credential(self, request):
-        """生成访问凭证信息
+        r"""生成访问凭证信息
 
         生成桶凭证信息。
         
@@ -1344,7 +1344,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_app(self, request):
-        """删除应用
+        r"""删除应用
 
         删除应用
         
@@ -1411,7 +1411,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def install_app(self, request):
-        """自动安装应用
+        r"""自动安装应用
 
         自动安装应用(应用需支持静默安装或者解压安装)。
         
@@ -1478,7 +1478,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_app_authorizations(self, request):
-        """查询应用授权信息
+        r"""查询应用授权信息
 
         查询应用授权信息。
         
@@ -1551,7 +1551,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_app_catalogs(self, request):
-        """查询应用分类信息
+        r"""查询应用分类信息
 
         查询应用分类信息。
         
@@ -1614,7 +1614,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_apps(self, request):
-        """按照名称分页查询应用
+        r"""按照名称分页查询应用
 
         按照名称分页查询应用。
         
@@ -1683,7 +1683,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_jobs(self, request):
-        """查询应用安装job信息
+        r"""查询应用安装job信息
 
         查询应用安装job信息。
         
@@ -1758,7 +1758,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def retry_jobs(self, request):
-        """重试失败job
+        r"""重试失败job
 
         重试指定失败job(仅支持失败job重试，其他类型job重试会响应错误)。
         
@@ -1823,7 +1823,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_app_authorizations(self, request):
-        """设置应用授权
+        r"""设置应用授权
 
         设置应用授权。
         
@@ -1890,7 +1890,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_uploaded_app(self, request):
-        """修改应用
+        r"""修改应用
 
         修改应用。
         
@@ -1957,7 +1957,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def upload_app(self, request):
-        """添加应用
+        r"""添加应用
 
         添加应用应用。
         
@@ -2022,7 +2022,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def add_restricted_rule(self, request):
-        """增加管控规则
+        r"""增加管控规则
 
         增加管控规则。
         
@@ -2087,7 +2087,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_delete_app_rules(self, request):
-        """批量删除规则
+        r"""批量删除规则
 
         批量删除规则。
         
@@ -2152,7 +2152,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_app_rule(self, request):
-        """创建应用规则
+        r"""创建应用规则
 
         创建应用规则。
         
@@ -2217,7 +2217,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_app_rule(self, request):
-        """删除应用规则
+        r"""删除应用规则
 
         删除应用规则。
         
@@ -2282,7 +2282,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_restricted_rule(self, request):
-        """批量删除管控规则列表
+        r"""批量删除管控规则列表
 
         批量删除管控规则列表。
         
@@ -2347,7 +2347,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def disable_rule_restriction(self, request):
-        """禁用规则管控
+        r"""禁用规则管控
 
         禁用规则管控。
         
@@ -2410,7 +2410,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def enable_rule_restriction(self, request):
-        """启用规则管控
+        r"""启用规则管控
 
         启用规则管控。
         
@@ -2473,7 +2473,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_app_rule(self, request):
-        """查询应用规则
+        r"""查询应用规则
 
         查询应用规则
         
@@ -2542,7 +2542,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_restricted_rule(self, request):
-        """查询管控规则列表
+        r"""查询管控规则列表
 
         查询管控规则列表。
         
@@ -2611,7 +2611,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_app_rule(self, request):
-        """修改应用规则
+        r"""修改应用规则
 
         修改应用规则。
         
@@ -2678,7 +2678,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_assist_auth_config(self, request):
-        """查询辅助认证配置
+        r"""查询辅助认证配置
 
         查询辅助认证的配置信息
         
@@ -2741,7 +2741,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_auth_config(self, request):
-        """查询认证登录方式
+        r"""查询认证登录方式
 
         查询认证登录方式配置信息。
         
@@ -2806,7 +2806,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_assist_auth_method_config(self, request):
-        """更新辅助认证策略配置
+        r"""更新辅助认证策略配置
 
         更新辅助认证策略配置
         
@@ -2871,7 +2871,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_auth_method_config(self, request):
-        """更新认证策略配置
+        r"""更新认证策略配置
 
         更新认证策略配置信息。
         
@@ -2936,7 +2936,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_availability_zones(self, request):
-        """查询可用分区列表
+        r"""查询可用分区列表
 
         该接口用于查询云桌面支持的可用分区列表。
         
@@ -2999,7 +2999,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_azs(self, request):
-        """查询可用分区列表概要
+        r"""查询可用分区列表概要
 
         该接口用于查询云桌面支持的可用分区列表
         
@@ -3062,7 +3062,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_az_details(self, request):
-        """查询可用分区详情
+        r"""查询可用分区详情
 
         该接口用于查询云桌面支持的可用分区列表。
         
@@ -3127,7 +3127,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def export_user_login_info_new(self, request):
-        """导出连接记录
+        r"""导出连接记录
 
         该接口用于导出连接记录。
         
@@ -3202,7 +3202,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktops_status(self, request):
-        """查询桌面登录状态
+        r"""查询桌面登录状态
 
         该接口用于查询桌面登录状态
         
@@ -3267,7 +3267,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_history_online_info(self, request):
-        """查询登录人数
+        r"""查询登录人数
 
         该接口用于查询登录人数
         
@@ -3338,7 +3338,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_history_online_info_new(self, request):
-        """查询登录人数
+        r"""查询登录人数
 
         该接口用于查询登录人数，注意查询参数不可全空。
         
@@ -3409,7 +3409,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_instances_status(self, request):
-        """查询桌面登录状态
+        r"""查询桌面登录状态
 
         该接口用于查询桌面登录状态。
         
@@ -3472,7 +3472,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_login_records_new(self, request):
-        """查询登录信息
+        r"""查询登录信息
 
         该接口用于查询登录信息。
         
@@ -3553,7 +3553,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def attach_instances(self, request):
-        """分配用户
+        r"""分配用户
 
         将桌面分配给用户
         
@@ -3620,7 +3620,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_associate_instances(self, request):
-        """预批量分配用户
+        r"""预批量分配用户
 
         预批量将桌面分配给用户。
         
@@ -3685,7 +3685,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_attach_instances(self, request):
-        """批量分配用户
+        r"""批量分配用户
 
         批量分配桌面给用户。
         
@@ -3750,7 +3750,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_change_desktop_network(self, request):
-        """批量切换桌面网络
+        r"""批量切换桌面网络
 
         批量切换桌面vpc、子网、ip、安全组
         
@@ -3815,7 +3815,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_delete_desktops(self, request):
-        """批量删除桌面
+        r"""批量删除桌面
 
         批量删除桌面，删除后无法恢复。
         
@@ -3880,7 +3880,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_detach_instances(self, request):
-        """批量解绑用户
+        r"""批量解绑用户
 
         批量将桌面和用户解绑
         
@@ -3945,7 +3945,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_install_agent(self, request):
-        """安装ces-agent
+        r"""安装ces-agent
 
         批量为桌面安装agent
         
@@ -4010,7 +4010,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_logoff_desktops(self, request):
-        """批量注销桌面
+        r"""批量注销桌面
 
         批量注销桌面。
         
@@ -4077,7 +4077,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_rebuild_desktops_system_disk(self, request):
-        """重建桌面
+        r"""重建桌面
 
         批量重建桌面系统盘。
         
@@ -4144,7 +4144,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_run_desktops(self, request):
-        """操作桌面
+        r"""操作桌面
 
         批量操作桌面，用于批量开机、关机和重启。
         
@@ -4209,7 +4209,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def cancel_remote_assistance(self, request):
-        """取消远程协助
+        r"""取消远程协助
 
         取消远程协助。
         
@@ -4274,7 +4274,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def change_desktop_network(self, request):
-        """切换桌面网络
+        r"""切换桌面网络
 
         切换桌面vpc、子网、ip、安全组
         
@@ -4341,7 +4341,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def change_desktop_to_image(self, request):
-        """桌面转镜像
+        r"""桌面转镜像
 
         桌面转镜像
         
@@ -4406,7 +4406,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def change_user_privilege_group(self, request):
-        """批量修改用户权限组
+        r"""批量修改用户权限组
 
         批量修改用户权限组。
         
@@ -4471,7 +4471,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_desktop(self, request):
-        """创建桌面
+        r"""创建桌面
 
         创建桌面，并将此桌面分配给用户，当桌面创建成功后用户可以登录使用。
         
@@ -4538,7 +4538,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_remote_assistance(self, request):
-        """创建远程协助
+        r"""创建远程协助
 
         创建远程协助。
         
@@ -4603,7 +4603,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_desktop(self, request):
-        """删除单个桌面
+        r"""删除单个桌面
 
         删除单个桌面，删除后无法恢复。
         
@@ -4674,7 +4674,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def detach_instances(self, request):
-        """解绑用户
+        r"""解绑用户
 
         将桌面和用户解绑
         
@@ -4739,7 +4739,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_agents_install_condition(self, request):
-        """查询桌面安装agent详情
+        r"""查询桌面安装agent详情
 
         展示桌面安装agent详情。
         
@@ -4820,7 +4820,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktop_actions(self, request):
-        """查询桌面开关机信息
+        r"""查询桌面开关机信息
 
         获取桌面开关机信息。
         
@@ -4889,7 +4889,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktop_detach_info(self, request):
-        """查询桌面解绑信息
+        r"""查询桌面解绑信息
 
         查询桌面解绑信息。
         
@@ -4954,7 +4954,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktops(self, request):
-        """查询桌面列表
+        r"""查询桌面列表
 
         该接口用于查询桌面虚拟机列表。
         
@@ -5050,7 +5050,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktops_connect_status(self, request):
-        """查询桌面连接状态列表
+        r"""查询桌面连接状态列表
 
         查询桌面连接状态列表。
         
@@ -5122,7 +5122,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktops_detail(self, request):
-        """查询桌面详情列表
+        r"""查询桌面详情列表
 
         查询桌面详情信息列表。
         
@@ -5237,7 +5237,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def register_domain(self, request):
-        """重新加入AD域
+        r"""重新加入AD域
 
         该接口用于Windows桌面重新加入AD域，一般用于解决桌面脱域的情况使用。
         
@@ -5302,7 +5302,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def resize_desktop(self, request):
-        """变更规格
+        r"""变更规格
 
         变更云桌面规格，只支持变更CPU和内存，不支持变更磁盘，不支持同规格互相变更。
         
@@ -5369,7 +5369,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def send_notifications(self, request):
-        """发送消息通知
+        r"""发送消息通知
 
         用于管理员向桌面发送消息通知
         
@@ -5434,7 +5434,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def set_maintenance_mode(self, request):
-        """批量设置桌面维护模式
+        r"""批量设置桌面维护模式
 
         批量设置桌面管理员维护模式
         
@@ -5499,7 +5499,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_desktop_detail(self, request):
-        """查询单个桌面详情
+        r"""查询单个桌面详情
 
         指定桌面Id查询详细信息。
         
@@ -5564,7 +5564,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_desktop_monitor_data(self, request):
-        """查询桌面监控信息
+        r"""查询桌面监控信息
 
         该接口可获取某一计算机在一段时间段(范围：1小时到30天)的数据信息（例如CPU占用率、内存占用率、用户的在线时间段等），最长数据保存时间不能超过180天。
         
@@ -5635,7 +5635,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_desktop_network(self, request):
-        """查询桌面网络
+        r"""查询桌面网络
 
         查询桌面vpc、子网、privateIp、EIP、安全组
         
@@ -5700,7 +5700,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_desktop_networks(self, request):
-        """批量查询桌面网络
+        r"""批量查询桌面网络
 
         查询桌面vpc、子网、privateIp、EIP、安全组
         
@@ -5766,7 +5766,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_desktop_remote_assistance_info(self, request):
-        """根据桌面id查询远程协助信息
+        r"""根据桌面id查询远程协助信息
 
         根据桌面id查询远程协助信息。
         
@@ -5831,7 +5831,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_remote_console_address(self, request):
-        """远程登录控制台
+        r"""远程登录控制台
 
         用于直接获取远程登录控制台地址。
         
@@ -5896,7 +5896,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_sysprep_info(self, request):
-        """查询sysprep版本信息
+        r"""查询sysprep版本信息
 
         查询sysprep版本信息。
         
@@ -5961,7 +5961,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_desktop(self, request):
-        """修改桌面属性
+        r"""修改桌面属性
 
         修改桌面属性。
         
@@ -6028,7 +6028,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_desktop_sids(self, request):
-        """更新桌面SID
+        r"""更新桌面SID
 
         该接口用于桌面sid和WindowsAD中的SID不同时，更新桌面SID使其与AD中的SID保持一致，一般用于解决桌面脱域的情况使用。
         
@@ -6093,7 +6093,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_desktop_username(self, request):
-        """AD场景支持桌面更换关联用户名
+        r"""AD场景支持桌面更换关联用户名
 
         AD场景支持桌面更换关联用户名。
         
@@ -6158,7 +6158,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_delete_desktop_name_policy(self, request):
-        """批量删除桌面名称策略
+        r"""批量删除桌面名称策略
 
         批量删除桌面名称策略。
         
@@ -6223,7 +6223,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_desktop_name_policy(self, request):
-        """创建桌面名称策略
+        r"""创建桌面名称策略
 
         创建桌面名称策略，用于自动生成桌面名称，最多允许50个。
         
@@ -6288,7 +6288,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktop_name_policy(self, request):
-        """获取桌面名称策略
+        r"""获取桌面名称策略
 
         获取桌面名称策略，用于自动生成桌面名称。
         
@@ -6361,7 +6361,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_desktop_name_policy(self, request):
-        """更新桌面名称策略
+        r"""更新桌面名称策略
 
         更新桌面名称策略，用于自动生成桌面名称。
         
@@ -6428,7 +6428,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def add_desktop_pool_volumes(self, request):
-        """桌面池批量添加磁盘
+        r"""桌面池批量添加磁盘
 
         桌面池批量添加磁盘。
         
@@ -6497,7 +6497,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_desktop_pool(self, request):
-        """创建桌面池
+        r"""创建桌面池
 
         创建桌面池，可将此桌面池分配给用户、用户组，用户登录时会绑定其中一个桌面。
         注:需通过开通委托功能接口先对云服务进行授权才可以使用该功能
@@ -6565,7 +6565,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_desktop_pool_authorized_objects(self, request):
-        """桌面池授权用户、用户组
+        r"""桌面池授权用户、用户组
 
         该接口用于桌面池授权用户、用户组。
         
@@ -6632,7 +6632,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_desktop_pool(self, request):
-        """删除桌面池
+        r"""删除桌面池
 
         当桌面池内无桌面时可删除桌面池，桌面池删除后无法恢复。
         
@@ -6697,7 +6697,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_desktop_pool_volumes(self, request):
-        """桌面池批量删除磁盘
+        r"""桌面池批量删除磁盘
 
         桌面池批量删除磁盘。
         
@@ -6764,7 +6764,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def execute_desktop_pool_action(self, request):
-        """操作桌面池
+        r"""操作桌面池
 
         操作桌面池，用于桌面池里面的桌面批量开机、关机、重启和休眠。
         
@@ -6831,7 +6831,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def execute_desktop_pool_script(self, request):
-        """桌面池批量执行脚本
+        r"""桌面池批量执行脚本
 
         桌面池批量执行脚本。
         
@@ -6898,7 +6898,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def expand_desktop_pool(self, request):
-        """扩容桌面池
+        r"""扩容桌面池
 
         扩容桌面池。
         
@@ -6967,7 +6967,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def expand_desktop_pool_volumes(self, request):
-        """桌面池批量扩容磁盘
+        r"""桌面池批量扩容磁盘
 
         桌面池批量扩容磁盘。
         
@@ -7036,7 +7036,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktop_pool_authorized_objects(self, request):
-        """查询桌面池授权的用户、用户组
+        r"""查询桌面池授权的用户、用户组
 
         该接口用于查询指定桌面池授权的用户、用户组。
         
@@ -7105,7 +7105,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktop_pools(self, request):
-        """查询桌面池列表
+        r"""查询桌面池列表
 
         该接口用于查询桌面池列表。
         
@@ -7180,7 +7180,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_pool_desktops_detail(self, request):
-        """查询桌面池下的桌面信息
+        r"""查询桌面池下的桌面信息
 
         该接口用于查询桌面池下的桌面信息。
         
@@ -7251,7 +7251,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def rebuild_desktop_pool(self, request):
-        """桌面池重建系统盘
+        r"""桌面池重建系统盘
 
         桌面池重建系统盘。
         
@@ -7320,7 +7320,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def resize_desktop_pool(self, request):
-        """桌面池变更规格
+        r"""桌面池变更规格
 
         桌面池变更规格
         
@@ -7389,7 +7389,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def send_desktop_pool_notifications(self, request):
-        """发送消息通知
+        r"""发送消息通知
 
         用于管理员向桌面发送消息通知
         
@@ -7456,7 +7456,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_desktop_pool_detail(self, request):
-        """查询桌面池详情
+        r"""查询桌面池详情
 
         指定桌面池Id查询详细信息。
         
@@ -7521,7 +7521,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_desktop_pools_script_exec_tasks(self, request):
-        """查询桌面池的脚本执行任务列表
+        r"""查询桌面池的脚本执行任务列表
 
         桌面池的脚本执行任务列表。
         
@@ -7605,7 +7605,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_desktop_pool(self, request):
-        """修改桌面池属性
+        r"""修改桌面池属性
 
         修改桌面池属性。
         
@@ -7672,7 +7672,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_add_desktops_tags(self, request):
-        """批量添加多个桌面标签
+        r"""批量添加多个桌面标签
 
         同时对多个桌面批量添加标签，如果创建的标签已经存在（key相同）则覆，最大支持100个桌面，每个桌面最大20个标签
         
@@ -7737,7 +7737,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_change_tags(self, request):
-        """批量添加删除标签
+        r"""批量添加删除标签
 
         为指定桌面批量添加或删除标签。创建时，如果创建的标签已经存在（key相同），则覆盖。删除时，如果删除的标签不存在，默认处理成功
         
@@ -7804,7 +7804,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_delete_desktops_tags(self, request):
-        """批量删除多个桌面标签
+        r"""批量删除多个桌面标签
 
         同时对多个桌面批量添加标签，删除时，如果删除的标签不存在默认处理成功，最大支持100个桌面，每个桌面最大20个标签
         
@@ -7869,7 +7869,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_tag(self, request):
-        """创建桌面标签
+        r"""创建桌面标签
 
         该接口用于为桌面创建标签，一个桌面上最多有10个标签。创建时，如果创建的标签已经存在（key相同），则覆盖。
         
@@ -7936,7 +7936,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_tag(self, request):
-        """删除桌面标签
+        r"""删除桌面标签
 
         该接口用于删除桌面标签。删除时，如果删除的标签不存在，默认处理成功。
         
@@ -8003,7 +8003,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktop_by_tags(self, request):
-        """使用标签过滤桌面
+        r"""使用标签过滤桌面
 
         使用标签过滤桌面
         
@@ -8068,7 +8068,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_project_tags(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询租户的所有标签集合
         
@@ -8137,7 +8137,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_tag_by_desktop_id(self, request):
-        """查询桌面标签
+        r"""查询桌面标签
 
         查询指定桌面的标签信息
         
@@ -8202,7 +8202,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_delete_user_groups(self, request):
-        """批量删除用户组
+        r"""批量删除用户组
 
         该接口用于批量删除用户组。
         
@@ -8267,7 +8267,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_user_group(self, request):
-        """创建用户组
+        r"""创建用户组
 
         该接口用于创建用户组。
         
@@ -8332,7 +8332,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_user_group(self, request):
-        """删除用户组
+        r"""删除用户组
 
         删除用户组。
         
@@ -8397,7 +8397,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_user_groups(self, request):
-        """查询用户组列表
+        r"""查询用户组列表
 
         查询用户组列表，支持分页。
         
@@ -8466,7 +8466,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_users_of_group(self, request):
-        """查询用户组中的用户
+        r"""查询用户组中的用户
 
         该接口用于查询用户组中的用户。
         
@@ -8541,7 +8541,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def run_actions_on_group(self, request):
-        """操作用户组
+        r"""操作用户组
 
         操作用户组，如添加用户、删除用户。
         
@@ -8608,7 +8608,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_user_group(self, request):
-        """修改用户组信息
+        r"""修改用户组信息
 
         该接口用于修改用户组信息。
         
@@ -8675,7 +8675,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_images(self, request):
-        """查询产品镜像列表
+        r"""查询产品镜像列表
 
         该接口用于查询云桌面支持的产品镜像列表。
         
@@ -8758,7 +8758,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_market_images(self, request):
-        """获取云市场镜像列表
+        r"""获取云市场镜像列表
 
         获取云市场镜像列表。
         
@@ -8824,7 +8824,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def estimate_add_resources(self, request):
-        """包周期桌面增配变更批量询价
+        r"""包周期桌面增配变更批量询价
 
         包周期桌面增配变更批量询价
         
@@ -8889,7 +8889,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def estimate_change_images(self, request):
-        """批量包周期桌面切换镜像询价
+        r"""批量包周期桌面切换镜像询价
 
         批量包周期桌面切换镜像(由不收费镜像变更至收费镜像)询价。
         
@@ -8954,7 +8954,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def estimate_desktop_pool_add_volume(self, request):
-        """包周期桌面池添加单个磁盘批量询价
+        r"""包周期桌面池添加单个磁盘批量询价
 
         包周期桌面池添加单个磁盘批量询价
         
@@ -9019,7 +9019,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def estimate_desktop_pool_change_image(self, request):
-        """包周期桌面池切换镜像批量询价
+        r"""包周期桌面池切换镜像批量询价
 
         包周期桌面池切换镜像(由不收费镜像变更至收费镜像)批量询价
         
@@ -9084,7 +9084,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def estimate_desktop_pool_extend_volume(self, request):
-        """包周期桌面池扩容磁盘批量询价
+        r"""包周期桌面池扩容磁盘批量询价
 
         包周期桌面池扩容磁盘批量询价
         
@@ -9149,7 +9149,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def estimate_desktop_pool_resize(self, request):
-        """包周期桌面池变更规格批量询价
+        r"""包周期桌面池变更规格批量询价
 
         包周期桌面池变更规格批量询价
         
@@ -9214,7 +9214,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def run_actions_on_workspace_job(self, request):
-        """重试任务
+        r"""重试任务
 
         该接口用来对失败的任务进行重试，当前仅支持开户和销户的任务重试。
         
@@ -9281,7 +9281,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_delete_sub_jobs(self, request):
-        """删除子任务
+        r"""删除子任务
 
         该接口用于删除子任务。
         
@@ -9346,7 +9346,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_ita_sub_jobs(self, request):
-        """子任务查询
+        r"""子任务查询
 
         该接口用于查询异步任务执行情况，比如查询创建桌面的执行状态。
         
@@ -9421,7 +9421,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_job(self, request):
-        """查询任务详情
+        r"""查询任务详情
 
         该接口用于查询异步任务的执行情况，比如查询创建桌面任务的执行状态。
         
@@ -9486,7 +9486,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_nat_mapping_configs(self, request):
-        """查询租户的NAT映射配置项
+        r"""查询租户的NAT映射配置项
 
         查询租户的NAT映射配置项。
         
@@ -9551,7 +9551,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_nat_mapping_configs(self, request):
-        """修改租户的NAT映射配置项
+        r"""修改租户的NAT映射配置项
 
         修改租户的NAT映射配置项。
         
@@ -9616,7 +9616,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def apply_desktops_internet(self, request):
-        """开通桌面上网功能
+        r"""开通桌面上网功能
 
         开通桌面上网功能。
         
@@ -9683,7 +9683,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def apply_internet(self, request):
-        """开通上网功能
+        r"""开通上网功能
 
         开通上网功能。
         
@@ -9748,7 +9748,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def apply_subnet_bandwidth(self, request):
-        """创建云办公带宽
+        r"""创建云办公带宽
 
         创建按需云办公带宽。
         
@@ -9815,7 +9815,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def associate_desktops_eip(self, request):
-        """桌面绑定EIP
+        r"""桌面绑定EIP
 
         桌面绑定EIP。
         
@@ -9880,7 +9880,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_disassociate_desktops_eip(self, request):
-        """批量桌面解绑EIP
+        r"""批量桌面解绑EIP
 
         批量桌面解绑EIP。
         
@@ -9945,7 +9945,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_subnet_bandwidth(self, request):
-        """删除云办公带宽
+        r"""删除云办公带宽
 
         删除云办公带宽。
         
@@ -10010,7 +10010,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktops_eips(self, request):
-        """查询已绑定桌面和未绑定的Eip
+        r"""查询已绑定桌面和未绑定的Eip
 
         查询已绑定桌面和未绑定的Eip。
         
@@ -10089,7 +10089,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_internet(self, request):
-        """查询上网功能
+        r"""查询上网功能
 
         查询上网功能。
         
@@ -10158,7 +10158,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_nat_gateways(self, request):
-        """查询Nat网关列表
+        r"""查询Nat网关列表
 
         查询NAT网关列表。
         
@@ -10241,7 +10241,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_ports(self, request):
-        """查询端口列表
+        r"""查询端口列表
 
         查询端口列表。
         
@@ -10314,7 +10314,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_subnet_bandwidths(self, request):
-        """查询云办公带宽列表
+        r"""查询云办公带宽列表
 
         查询云办公带宽列表。
         
@@ -10391,7 +10391,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_subnet_bandwidth_control_list(self, request):
-        """查询云办公带宽的控制配置
+        r"""查询云办公带宽的控制配置
 
         查询云办公带宽的控制配置。
         
@@ -10468,7 +10468,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_using_subnets(self, request):
-        """查询正在被使用的子网id列表
+        r"""查询正在被使用的子网id列表
 
         根据子网id列表查询正在被桌面使用的子网id，并且返回subnetId列表。
         
@@ -10533,7 +10533,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_subnet_bandwidth(self, request):
-        """修改云办公带宽
+        r"""修改云办公带宽
 
         修改云办公带宽
         
@@ -10602,7 +10602,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_subnet_bandwidth_control_list(self, request):
-        """修改云办公带宽的控制配置
+        r"""修改云办公带宽的控制配置
 
         修改云办公带宽的控制配置
         
@@ -10669,7 +10669,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_change_order(self, request):
-        """创建变更订单
+        r"""创建变更订单
 
         变更规格、扩容磁盘[、按需转包周期生成订单](tag:inner)
         
@@ -10736,7 +10736,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_desktop_batch_order(self, request):
-        """包周期桌面批量变更下单
+        r"""包周期桌面批量变更下单
 
         包周期桌面批量变更下单
         
@@ -10801,7 +10801,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_desktop_order(self, request):
-        """创建桌面订单
+        r"""创建桌面订单
 
         创建桌面订单。
         
@@ -10866,7 +10866,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_desktop_pool_change_order(self, request):
-        """包周期桌面池批量变更下单
+        r"""包周期桌面池批量变更下单
 
         包周期桌面池批量变更下单
         
@@ -10931,7 +10931,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_order(self, request):
-        """包周期下单
+        r"""包周期下单
 
         包周期资源（桌面、磁盘[、云办公主机](tag:ZQ)）下订单。
         
@@ -10996,7 +10996,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_subnet_bandwidth_change_order(self, request):
-        """包周期云办公带宽变更下单
+        r"""包周期云办公带宽变更下单
 
         包周期云办公带宽变更下单。
         
@@ -11063,7 +11063,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def add_ou(self, request):
-        """新增OU信息
+        r"""新增OU信息
 
         该接口用于创建OU。
         
@@ -11128,7 +11128,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_ou(self, request):
-        """删除OU信息
+        r"""删除OU信息
 
         该接口用于删除OU信息。
         
@@ -11193,7 +11193,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_ad_ou_users(self, request):
-        """查询OU下用户信息
+        r"""查询OU下用户信息
 
         查询OU下用户信息
         
@@ -11266,7 +11266,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_ad_ous(self, request):
-        """查询OU信息
+        r"""查询OU信息
 
         查询OU信息
         
@@ -11333,7 +11333,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_ou_details(self, request):
-        """查询OU信息
+        r"""查询OU信息
 
         查询OU信息
         
@@ -11402,7 +11402,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_ou_info(self, request):
-        """更新OU信息
+        r"""更新OU信息
 
         更新OU信息
         
@@ -11469,7 +11469,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_update_target_of_policy_group(self, request):
-        """修改策略组应用对象
+        r"""修改策略组应用对象
 
         批量增加、删除应用对象到指定策略组。
         
@@ -11536,7 +11536,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_policy_group(self, request):
-        """新增策略组
+        r"""新增策略组
 
         新增策略组
         
@@ -11601,7 +11601,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_policy_group(self, request):
-        """删除策略组
+        r"""删除策略组
 
         删除指定策略组，包含策略组对应的策略信息以及应用对象信息
         
@@ -11666,7 +11666,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_original_policy_info(self, request):
-        """查询初始策略项
+        r"""查询初始策略项
 
         查询初始策略项
         
@@ -11729,7 +11729,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_policies_of_policy_group(self, request):
-        """查询策略组中的策略项
+        r"""查询策略组中的策略项
 
         查询指定策略组内的策略项。
         
@@ -11796,7 +11796,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_policy_detail_info_by_id(self, request):
-        """查询策略组
+        r"""查询策略组
 
         根据策略组ID查询策略组详细信息，包含策略信息以及应用对象信息
         
@@ -11861,7 +11861,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_policy_group(self, request):
-        """查询策略组列表
+        r"""查询策略组列表
 
         查询策略组概要信息列表，不包含策略信息以及应用对象信息。
         
@@ -11942,7 +11942,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_policy_group_info(self, request):
-        """查询策略组详情列表
+        r"""查询策略组详情列表
 
         包含策略信息以及应用对象的信息。
         
@@ -12021,7 +12021,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_target_of_policy_group(self, request):
-        """查询策略组应用对象
+        r"""查询策略组应用对象
 
         查询指定策略组所应用的对象。
         
@@ -12094,7 +12094,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_policies_of_policy_group(self, request):
-        """修改策略组中的策略项
+        r"""修改策略组中的策略项
 
         修改一个策略组的部分或者所有策略项。
         
@@ -12161,7 +12161,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_policy_group(self, request):
-        """修改策略组
+        r"""修改策略组
 
         修改指定策略组的信息
         
@@ -12228,7 +12228,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_hour_packages_type(self, request):
-        """查询可订购小时包类型
+        r"""查询可订购小时包类型
 
         该接口用于查询可订购小时包类型。
         
@@ -12295,7 +12295,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_products(self, request):
-        """查询产品套餐列表
+        r"""查询产品套餐列表
 
         该接口用于查询云桌面支持的产品套餐列表。
         
@@ -12382,7 +12382,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_sharer_products(self, request):
-        """查询协同套餐列表
+        r"""查询协同套餐列表
 
         该接口用于查询协同套餐列表。
         
@@ -12459,7 +12459,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_tenant_profiles(self, request):
-        """查询租户功能状态
+        r"""查询租户功能状态
 
         查询租户功能状态。
         
@@ -12522,7 +12522,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_tenant_profile(self, request):
-        """启禁用租户功能
+        r"""启禁用租户功能
 
         启禁用租户功能。
         
@@ -12587,7 +12587,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_quota_details(self, request):
-        """查询租户单个站点配额详情
+        r"""查询租户单个站点配额详情
 
         查询租户单个站点配额详情
         
@@ -12654,7 +12654,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_quotas(self, request):
-        """查询租户配额
+        r"""查询租户配额
 
         Console Framework和WKSDesktopManager调用该接口查询租户配额。
         
@@ -12719,7 +12719,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_delete_scheduled_tasks(self, request):
-        """批量删除定时任务
+        r"""批量删除定时任务
 
         批量删除定时任务。
         
@@ -12784,7 +12784,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_scheduled_tasks(self, request):
-        """创建定时任务
+        r"""创建定时任务
 
         创建定时任务。
         注:需通过开通委托功能接口先对云服务进行授权才可以使用该功能
@@ -12850,7 +12850,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_scheduled_tasks(self, request):
-        """删除定时任务
+        r"""删除定时任务
 
         删除定时任务。
         
@@ -12915,7 +12915,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_future_executions(self, request):
-        """未来执行的具体时间列表
+        r"""未来执行的具体时间列表
 
         未来执行的具体时间列表。
         
@@ -12980,7 +12980,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_scheduled_tasks(self, request):
-        """查询定时任务列表
+        r"""查询定时任务列表
 
         查询定时任务列表。
         
@@ -13057,7 +13057,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_scheduled_tasks_records(self, request):
-        """查询定时任务执行记录
+        r"""查询定时任务执行记录
 
         查询定时任务执行记录。
         
@@ -13126,7 +13126,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_scheduled_tasks_records_details(self, request):
-        """查询定时任务执行记录详情
+        r"""查询定时任务执行记录详情
 
         查询定时任务执行记录详情。
         
@@ -13197,7 +13197,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_time_zones(self, request):
-        """获取时区配置
+        r"""获取时区配置
 
         获取时区配置
         
@@ -13262,7 +13262,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_scheduled_tasks(self, request):
-        """查询定时任务详情
+        r"""查询定时任务详情
 
         查询定时任务详情。
         
@@ -13327,7 +13327,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_scheduled_tasks(self, request):
-        """修改定时任务
+        r"""修改定时任务
 
         修改定时任务。
         
@@ -13394,7 +13394,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_delete_screen_records(self, request):
-        """批量删除录屏记录
+        r"""批量删除录屏记录
 
         批量删除录屏记录。
         
@@ -13459,7 +13459,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktop_operations(self, request):
-        """查询桌面关键事件列表
+        r"""查询桌面关键事件列表
 
         查询桌面关键事件列表。
         
@@ -13536,7 +13536,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_download_address(self, request):
-        """查询下载地址列表
+        r"""查询下载地址列表
 
         查询下载地址列表。
         
@@ -13601,7 +13601,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_screen_records(self, request):
-        """查询录屏记录列表
+        r"""查询录屏记录列表
 
         查询录屏记录列表。
         
@@ -13684,7 +13684,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_screen_record(self, request):
-        """查询录屏详情
+        r"""查询录屏详情
 
         查询录屏详情
         
@@ -13749,7 +13749,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_script(self, request):
-        """新增脚本
+        r"""新增脚本
 
         新增脚本。
         
@@ -13814,7 +13814,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_script(self, request):
-        """删除脚本
+        r"""删除脚本
 
         删除脚本。
         
@@ -13879,7 +13879,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def execute_script_or_command(self, request):
-        """批量执行脚本或命令
+        r"""批量执行脚本或命令
 
         批量执行脚本或命令。
         
@@ -13944,7 +13944,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_script_records(self, request):
-        """查询脚本执行记录列表
+        r"""查询脚本执行记录列表
 
         查询脚本执行记录列表。
         
@@ -14037,7 +14037,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_script_tasks(self, request):
-        """查询脚本任务列表
+        r"""查询脚本任务列表
 
         查询脚本任务列表。
         
@@ -14124,7 +14124,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_scripts(self, request):
-        """查询脚本列表
+        r"""查询脚本列表
 
         查询脚本列表。
         
@@ -14197,7 +14197,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def retry_script_execution(self, request):
-        """重试脚本或执行脚本失败的任务
+        r"""重试脚本或执行脚本失败的任务
 
         重试脚本或执行脚本失败的任务。
         
@@ -14262,7 +14262,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_script_detail(self, request):
-        """查询脚本详情
+        r"""查询脚本详情
 
         查询脚本详情。
         
@@ -14329,7 +14329,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_script_record_detail(self, request):
-        """查询脚本执行记录详情
+        r"""查询脚本执行记录详情
 
         查询脚本执行记录详情。
         
@@ -14394,7 +14394,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def stop_script_execution(self, request):
-        """停止脚本或者命令执行任务
+        r"""停止脚本或者命令执行任务
 
         停止脚本或者命令执行任务。
         
@@ -14459,7 +14459,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_script(self, request):
-        """更新脚本
+        r"""更新脚本
 
         更新脚本。
         
@@ -14526,7 +14526,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def add_desktop_sub_resources(self, request):
-        """桌面购买附属资源
+        r"""桌面购买附属资源
 
         存量桌面购买附属资源
         
@@ -14593,7 +14593,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_desktop_sub_resources(self, request):
-        """桌面删除附属资源
+        r"""桌面删除附属资源
 
         桌面删除附属资源
         
@@ -14660,7 +14660,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_share_space_config(self, request):
-        """查询协同桌面默认用户配置
+        r"""查询协同桌面默认用户配置
 
         查询协同桌面默认用户配置（当前功能公测中,需要使用请联系管理员申请使用）
         
@@ -14725,7 +14725,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_share_space_config(self, request):
-        """设置协同桌面默认用户配置
+        r"""设置协同桌面默认用户配置
 
         设置协同桌面默认用户配置（当前功能公测中，需要使用请联系管理员申请使用）
         
@@ -14790,7 +14790,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def add_site(self, request):
-        """新增站点
+        r"""新增站点
 
         用于查询站点信息的接口
         
@@ -14855,7 +14855,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_site(self, request):
-        """删除站点
+        r"""删除站点
 
         用于删除站点的接口
         
@@ -14920,7 +14920,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_site_configs(self, request):
-        """查询站点信息
+        r"""查询站点信息
 
         用于查询站点信息的接口
         
@@ -14987,7 +14987,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_wks_edge_sites(self, request):
-        """查询边缘小站列表
+        r"""查询边缘小站列表
 
         查询边缘小站列表。
         
@@ -15056,7 +15056,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_access_mode(self, request):
-        """修改站点接入方式
+        r"""修改站点接入方式
 
         用于修改站点接入方式
         
@@ -15123,7 +15123,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_subnet_ids(self, request):
-        """修改站点业务子网
+        r"""修改站点业务子网
 
         用于修改站点业务子网
         
@@ -15190,7 +15190,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_create_desktop_snapshot(self, request):
-        """批量创建快照
+        r"""批量创建快照
 
         批量创建快照
         
@@ -15255,7 +15255,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_delete_desktop_snapshot(self, request):
-        """批量删除快照
+        r"""批量删除快照
 
         批量删除快照
         
@@ -15320,7 +15320,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_restore_desktop_snapshot(self, request):
-        """批量恢复快照
+        r"""批量恢复快照
 
         批量恢快照
         
@@ -15385,7 +15385,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktop_snapshot(self, request):
-        """查询快照列表
+        r"""查询快照列表
 
         查询快照列表
         
@@ -15468,7 +15468,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def add_metric_notify_rule(self, request):
-        """新增通知规则
+        r"""新增通知规则
 
         新增对应指标的通知规则;对应指标满足相应的规则条件时发送通知
         同一指标的规则不允许重复;
@@ -15537,7 +15537,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_metric_notify_rule(self, request):
-        """删除通知规则
+        r"""删除通知规则
 
         删除对应指标的通知规则;对应指标满足相应的规则条件时发送通知
         
@@ -15602,7 +15602,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_app_user_access_data(self, request):
-        """查询云应用接入统计数据
+        r"""查询云应用接入统计数据
 
         查询云应用接入统计数据;
         最多查询30天内的数据;
@@ -15680,7 +15680,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktop_usage_metric(self, request):
-        """查询桌面使用情况统计数据
+        r"""查询桌面使用情况统计数据
 
         查询桌面使用统计信息;
         云服务每天凌晨02:00进行聚合运算前一天00:00:00~23:59:59的使用时长,并将周期范围内的数据聚合到周期边界上
@@ -15770,7 +15770,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_desktops_statistics(self, request):
-        """桌面统计
+        r"""桌面统计
 
         统计租户下的普通桌面、桌面池状态，默认仅统计总数
         
@@ -15839,7 +15839,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_login_state(self, request):
-        """登录状态统计
+        r"""登录状态统计
 
         查询租户桌面登录状态统计。
         
@@ -15902,7 +15902,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_metric_notify_record(self, request):
-        """查询对应指标维度是否存在满足通知规则的记录
+        r"""查询对应指标维度是否存在满足通知规则的记录
 
         查询对应指标维度是否存在满足通知规则的记录;
         查询结果仅表示满足相应指标维度下对应通知规则可产生的通知记录
@@ -15974,7 +15974,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_metric_notify_rule(self, request):
-        """查询通知规则
+        r"""查询通知规则
 
         查询对应指标的通知规则;
         
@@ -16045,7 +16045,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_metrics(self, request):
-        """查询指标
+        r"""查询指标
 
         查询指标
         
@@ -16119,7 +16119,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_metrics_trend(self, request):
-        """查询指标趋势
+        r"""查询指标趋势
 
         查询指标趋势
         
@@ -16193,7 +16193,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_run_state(self, request):
-        """运行状态统计
+        r"""运行状态统计
 
         租户桌面运行状态统计。
         
@@ -16256,7 +16256,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_unused_desktops(self, request):
-        """查询在指定时间段未使用的桌面
+        r"""查询在指定时间段未使用的桌面
 
         查询在指定时间段未使用的桌面。已废弃，不推荐使用。统计数据推荐使用[查询桌面使用情况统计数据接口](https://console.huaweicloud.com/apiexplorer/#/openapi/Workspace/doc?api&#x3D;ListDesktopUsageMetric)和[查询用户使用统计数据接口](https://console.huaweicloud.com/apiexplorer/#/openapi/Workspace/doc?api&#x3D;ListUserUsageMetric)。
         
@@ -16327,7 +16327,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_used_desktop_info(self, request):
-        """查询使用桌面的时长
+        r"""查询使用桌面的时长
 
         查询使用桌面的时长。已废弃，不推荐使用。统计数据推荐使用[查询桌面使用情况统计数据接口](https://console.huaweicloud.com/apiexplorer/#/openapi/Workspace/doc?api&#x3D;ListDesktopUsageMetric)和[查询用户使用统计数据接口](https://console.huaweicloud.com/apiexplorer/#/openapi/Workspace/doc?api&#x3D;ListUserUsageMetric)。
         
@@ -16392,7 +16392,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_user_usage_metric(self, request):
-        """查询用户使用统计数据
+        r"""查询用户使用统计数据
 
         查询用户使用统计信息;
         最多查询30天内的数据;
@@ -16474,7 +16474,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_growth_rate(self, request):
-        """查询指标环比值
+        r"""查询指标环比值
 
         查询指标环比值
         
@@ -16543,7 +16543,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_user_access_stages(self, request):
-        """查询接入云桌面或云应用各阶段时长数据
+        r"""查询接入云桌面或云应用各阶段时长数据
 
         查询接入云桌面或云应用各阶段时长数据
         
@@ -16608,7 +16608,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_metric_notify_rule(self, request):
-        """更新通知规则
+        r"""更新通知规则
 
         更新对应指标的通知规则;对应指标满足相应的规则条件时发送通知
         
@@ -16675,7 +16675,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_available_ip(self, request):
-        """根据子网id查询该子网下可用的ip
+        r"""根据子网id查询该子网下可用的ip
 
         根据子网id查询该子网下可用的ip。
         
@@ -16740,7 +16740,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_tenant_configs(self, request):
-        """查询租户个性配置列表
+        r"""查询租户个性配置列表
 
         查询租户个性配置列表
         
@@ -16805,7 +16805,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_tenant_config(self, request):
-        """修改租户个性配置
+        r"""修改租户个性配置
 
         租户个性配置修改。
         
@@ -16870,7 +16870,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_terminals_binding_desktops(self, request):
-        """增加终端与桌面绑定配置
+        r"""增加终端与桌面绑定配置
 
         增加终端与桌面绑定配置。
         
@@ -16935,7 +16935,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_terminals_binding_desktops(self, request):
-        """删除终端与桌面绑定配置
+        r"""删除终端与桌面绑定配置
 
         删除终端与桌面绑定配置。
         
@@ -17000,7 +17000,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_terminals_binding_desktops(self, request):
-        """查询终端与桌面绑定配置列表
+        r"""查询终端与桌面绑定配置列表
 
         查询终端与桌面绑定配置列表。
         
@@ -17073,7 +17073,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_terminals_binding_desktops_config(self, request):
-        """查询终端与桌面绑定的开关配置信息
+        r"""查询终端与桌面绑定的开关配置信息
 
         查询终端与桌面绑定的开关配置信息。
         
@@ -17136,7 +17136,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_terminals_binding_desktops(self, request):
-        """修改终端与桌面绑定配置
+        r"""修改终端与桌面绑定配置
 
         修改终端与桌面绑定配置。
         
@@ -17201,7 +17201,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_terminals_binding_desktops_config(self, request):
-        """设置终端与桌面绑定的开关配置
+        r"""设置终端与桌面绑定的开关配置
 
         设置终端与桌面绑定的开关配置。
         
@@ -17266,7 +17266,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_create_users(self, request):
-        """批量创建用户
+        r"""批量创建用户
 
         该接口用于批量创建用户。
         
@@ -17331,7 +17331,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_delete_otp_devices(self, request):
-        """解绑OTP设备
+        r"""解绑OTP设备
 
         该接口用于解绑用户的OTP设备。
         
@@ -17398,7 +17398,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_delete_user(self, request):
-        """批量删除用户
+        r"""批量删除用户
 
         该接口用于批量删除桌面用户。
         
@@ -17463,7 +17463,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def change_user_status(self, request):
-        """操作用户
+        r"""操作用户
 
         该接口用于操作用户，包含三种操作：锁定、解锁和重置密码（重置密码建议使用/v2/{project_id}/users/{user_id}/random-password接口，在没有通知方式的情况下必须使用/v2/{project_id}/users/{user_id}/random-password接口）。
         
@@ -17530,7 +17530,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def create_desktop_user(self, request):
-        """创建用户
+        r"""创建用户
 
         该接口用于创建桌面用户。
         
@@ -17595,7 +17595,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_user(self, request):
-        """删除指定用户
+        r"""删除指定用户
 
         删除指定的桌面用户。
         
@@ -17660,7 +17660,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_otp_devices_by_user_id(self, request):
-        """查询OTP设备
+        r"""查询OTP设备
 
         该接口用于查询相应用户下面的OTP设备。
         
@@ -17725,7 +17725,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_user_detail(self, request):
-        """查询用户详情信息
+        r"""查询用户详情信息
 
         该接口用于查询指定的桌面用户详情。
         
@@ -17790,7 +17790,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_users(self, request):
-        """查询用户列表
+        r"""查询用户列表
 
         该接口用于查询桌面用户列表。
         
@@ -17873,7 +17873,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def reset_random_password(self, request):
-        """给用户重置随机密码
+        r"""给用户重置随机密码
 
         该接口用于给用户重置一个密码。
         
@@ -17940,7 +17940,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def send_email(self, request):
-        """重新发送邮件
+        r"""重新发送邮件
 
         该接口用于重新发送邮件。
         
@@ -18007,7 +18007,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_user_info(self, request):
-        """修改用户信息
+        r"""修改用户信息
 
         该接口用于修改桌面用户信息。
         
@@ -18074,7 +18074,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_user_events(self, request):
-        """查询用户事件
+        r"""查询用户事件
 
         查询用户事件
         
@@ -18151,7 +18151,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def add_desktop_volumes(self, request):
-        """增加桌面磁盘
+        r"""增加桌面磁盘
 
         给单个桌面增加磁盘。
         
@@ -18220,7 +18220,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def add_volumes(self, request):
-        """增加桌面磁盘
+        r"""增加桌面磁盘
 
         增加桌面磁盘。
         
@@ -18287,7 +18287,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def delete_desktop_volumes(self, request):
-        """删除桌面数据盘
+        r"""删除桌面数据盘
 
         删除桌面数据盘，删除后无法恢复。
         
@@ -18356,7 +18356,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def expand_desktop_volume(self, request):
-        """扩容磁盘
+        r"""扩容磁盘
 
         扩容磁盘
         
@@ -18427,7 +18427,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def expand_volumes(self, request):
-        """扩容桌面磁盘
+        r"""扩容桌面磁盘
 
         扩容桌面磁盘。
         
@@ -18494,7 +18494,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_volume_product_info(self, request):
-        """查询磁盘产品信息
+        r"""查询磁盘产品信息
 
         查询磁盘产品信息
         
@@ -18561,7 +18561,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def apply_workspace(self, request):
-        """开通云办公服务
+        r"""开通云办公服务
 
         该接口用于开通云办公服务。
         
@@ -18628,7 +18628,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def cancel_workspace(self, request):
-        """注销云办公服务
+        r"""注销云办公服务
 
         该接口用于注销云办公服务。注销前请确保当前用户下的云桌面已经删除，注销后无法恢复。
         
@@ -18691,7 +18691,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_workspaces(self, request):
-        """查询云办公服务详情
+        r"""查询云办公服务详情
 
         该接口用于查询云办公服务详情。
         
@@ -18754,7 +18754,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def show_workspace_lock(self, request):
-        """查询云办公服务是否被锁定
+        r"""查询云办公服务是否被锁定
 
         查询云办公服务是否被锁定。
         
@@ -18817,7 +18817,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def unlock_workspace(self, request):
-        """解除云办公服务锁定状态
+        r"""解除云办公服务锁定状态
 
         该接口目前支持解除云办公服务锁定状态。
         
@@ -18882,7 +18882,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_enterprise_id(self, request):
-        """修改企业ID
+        r"""修改企业ID
 
         修改租户的企业ID。
         
@@ -18947,7 +18947,7 @@ class WorkspaceClient(Client):
         return http_info
 
     def update_workspace(self, request):
-        """修改云办公服务属性
+        r"""修改云办公服务属性
 
         该接口目前支持修改云办公服务属性。单次请求仅支持修改一种属性类型。
         

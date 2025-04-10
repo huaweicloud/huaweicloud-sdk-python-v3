@@ -27,7 +27,7 @@ class WorkloadSchemaReq:
     }
 
     def __init__(self, schema_name=None, perm_space=None):
-        """WorkloadSchemaReq
+        r"""WorkloadSchemaReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class WorkloadSchemaReq:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this WorkloadSchemaReq.
+        r"""Gets the schema_name of this WorkloadSchemaReq.
 
         模式空间名称
 
@@ -59,7 +59,7 @@ class WorkloadSchemaReq:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this WorkloadSchemaReq.
+        r"""Sets the schema_name of this WorkloadSchemaReq.
 
         模式空间名称
 
@@ -70,7 +70,7 @@ class WorkloadSchemaReq:
 
     @property
     def perm_space(self):
-        """Gets the perm_space of this WorkloadSchemaReq.
+        r"""Gets the perm_space of this WorkloadSchemaReq.
 
         Schema空间阈值
 
@@ -81,7 +81,7 @@ class WorkloadSchemaReq:
 
     @perm_space.setter
     def perm_space(self, perm_space):
-        """Sets the perm_space of this WorkloadSchemaReq.
+        r"""Sets the perm_space of this WorkloadSchemaReq.
 
         Schema空间阈值
 

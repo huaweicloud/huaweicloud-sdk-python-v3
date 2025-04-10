@@ -26,7 +26,7 @@ class DeleteSubnetBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteSubnetBandwidthResponse
+        r"""DeleteSubnetBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteSubnetBandwidthResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteSubnetBandwidthResponse.
+        r"""Gets the job_id of this DeleteSubnetBandwidthResponse.
 
         任务id。
 
@@ -55,7 +55,7 @@ class DeleteSubnetBandwidthResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteSubnetBandwidthResponse.
+        r"""Sets the job_id of this DeleteSubnetBandwidthResponse.
 
         任务id。
 

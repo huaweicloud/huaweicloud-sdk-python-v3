@@ -25,7 +25,7 @@ class CustomerUpgradeDatabaseVersionReq:
     }
 
     def __init__(self, delay=None):
-        """CustomerUpgradeDatabaseVersionReq
+        r"""CustomerUpgradeDatabaseVersionReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CustomerUpgradeDatabaseVersionReq:
 
     @property
     def delay(self):
-        """Gets the delay of this CustomerUpgradeDatabaseVersionReq.
+        r"""Gets the delay of this CustomerUpgradeDatabaseVersionReq.
 
         是否延迟至可维护时间段内升级。 取值范围： - true：延迟升级。表示实例将在设置的可维护时间段内升级。 - false：立即升级，默认该方式。
 
@@ -54,7 +54,7 @@ class CustomerUpgradeDatabaseVersionReq:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this CustomerUpgradeDatabaseVersionReq.
+        r"""Sets the delay of this CustomerUpgradeDatabaseVersionReq.
 
         是否延迟至可维护时间段内升级。 取值范围： - true：延迟升级。表示实例将在设置的可维护时间段内升级。 - false：立即升级，默认该方式。
 

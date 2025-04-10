@@ -28,7 +28,7 @@ class InstallApkResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, jobs=None):
-        """InstallApkResponse
+        r"""InstallApkResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class InstallApkResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this InstallApkResponse.
+        r"""Gets the request_id of this InstallApkResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class InstallApkResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this InstallApkResponse.
+        r"""Sets the request_id of this InstallApkResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class InstallApkResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this InstallApkResponse.
+        r"""Gets the jobs of this InstallApkResponse.
 
         任务列表。
 
@@ -84,7 +84,7 @@ class InstallApkResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this InstallApkResponse.
+        r"""Sets the jobs of this InstallApkResponse.
 
         任务列表。
 

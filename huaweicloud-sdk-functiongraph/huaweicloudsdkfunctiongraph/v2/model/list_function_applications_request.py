@@ -27,7 +27,7 @@ class ListFunctionApplicationsRequest:
     }
 
     def __init__(self, limit=None, marker=None):
-        """ListFunctionApplicationsRequest
+        r"""ListFunctionApplicationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListFunctionApplicationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFunctionApplicationsRequest.
+        r"""Gets the limit of this ListFunctionApplicationsRequest.
 
         本次查询最大返回的数据条数，最大值500，默认值100
 
@@ -61,7 +61,7 @@ class ListFunctionApplicationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFunctionApplicationsRequest.
+        r"""Sets the limit of this ListFunctionApplicationsRequest.
 
         本次查询最大返回的数据条数，最大值500，默认值100
 
@@ -72,7 +72,7 @@ class ListFunctionApplicationsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListFunctionApplicationsRequest.
+        r"""Gets the marker of this ListFunctionApplicationsRequest.
 
         本次查询起始位置，默认值0
 
@@ -83,7 +83,7 @@ class ListFunctionApplicationsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListFunctionApplicationsRequest.
+        r"""Sets the marker of this ListFunctionApplicationsRequest.
 
         本次查询起始位置，默认值0
 

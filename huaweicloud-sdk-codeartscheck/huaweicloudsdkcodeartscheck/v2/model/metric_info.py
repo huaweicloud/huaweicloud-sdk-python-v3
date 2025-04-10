@@ -109,7 +109,7 @@ class MetricInfo:
     }
 
     def __init__(self, code_size=None, raw_lines=None, methods_total=None, cyclomatic_complexity_total=None, cyclomatic_complexity_per_method=None, maximum_cyclomatic_complexity=None, huge_cyclomatic_complexity_total=None, huge_cyclomatic_complexity_ratio=None, cca_cyclomatic_complexity_total=None, cca_cyclomatic_complexity_per_method=None, maximum_cca_cyclomatic_complexity=None, huge_cca_cyclomatic_complexity_total=None, cyclomatic_complexity_adequacy=None, maximum_depth=None, huge_depth_total=None, huge_depth_ratio=None, method_lines=None, lines_per_method=None, huge_method_total=None, huge_method_ratio=None, files_total=None, folders_total=None, lines_per_file=None, huge_headerfile_total=None, huge_headerfile_ratio=None, huge_non_headerfile_total=None, huge_non_headerfile_ratio=None, huge_folder_total=None, huge_folder_ratio=None, file_duplication_total=None, file_duplication_ratio=None, non_hfile_duplication_total=None, non_hfile_duplication_ratio=None, code_duplication_total=None, code_duplication_ratio=None, non_hfile_code_duplication_total=None, non_hfile_code_duplication_ratio=None, unsafe_functions_total=None, unsafe_functions_kloc=None, redundant_code_total=None, redundant_code_kloc=None, warning_suppression_total=None, warning_suppression_kloc=None):
-        """MetricInfo
+        r"""MetricInfo
 
         The model defined in huaweicloud sdk
 
@@ -337,7 +337,7 @@ class MetricInfo:
 
     @property
     def code_size(self):
-        """Gets the code_size of this MetricInfo.
+        r"""Gets the code_size of this MetricInfo.
 
         代码规模
 
@@ -348,7 +348,7 @@ class MetricInfo:
 
     @code_size.setter
     def code_size(self, code_size):
-        """Sets the code_size of this MetricInfo.
+        r"""Sets the code_size of this MetricInfo.
 
         代码规模
 
@@ -359,7 +359,7 @@ class MetricInfo:
 
     @property
     def raw_lines(self):
-        """Gets the raw_lines of this MetricInfo.
+        r"""Gets the raw_lines of this MetricInfo.
 
         原始代码行数
 
@@ -370,7 +370,7 @@ class MetricInfo:
 
     @raw_lines.setter
     def raw_lines(self, raw_lines):
-        """Sets the raw_lines of this MetricInfo.
+        r"""Sets the raw_lines of this MetricInfo.
 
         原始代码行数
 
@@ -381,7 +381,7 @@ class MetricInfo:
 
     @property
     def methods_total(self):
-        """Gets the methods_total of this MetricInfo.
+        r"""Gets the methods_total of this MetricInfo.
 
         函数总数
 
@@ -392,7 +392,7 @@ class MetricInfo:
 
     @methods_total.setter
     def methods_total(self, methods_total):
-        """Sets the methods_total of this MetricInfo.
+        r"""Sets the methods_total of this MetricInfo.
 
         函数总数
 
@@ -403,7 +403,7 @@ class MetricInfo:
 
     @property
     def cyclomatic_complexity_total(self):
-        """Gets the cyclomatic_complexity_total of this MetricInfo.
+        r"""Gets the cyclomatic_complexity_total of this MetricInfo.
 
         圈复杂度总数
 
@@ -414,7 +414,7 @@ class MetricInfo:
 
     @cyclomatic_complexity_total.setter
     def cyclomatic_complexity_total(self, cyclomatic_complexity_total):
-        """Sets the cyclomatic_complexity_total of this MetricInfo.
+        r"""Sets the cyclomatic_complexity_total of this MetricInfo.
 
         圈复杂度总数
 
@@ -425,7 +425,7 @@ class MetricInfo:
 
     @property
     def cyclomatic_complexity_per_method(self):
-        """Gets the cyclomatic_complexity_per_method of this MetricInfo.
+        r"""Gets the cyclomatic_complexity_per_method of this MetricInfo.
 
         平均圈复杂度
 
@@ -436,7 +436,7 @@ class MetricInfo:
 
     @cyclomatic_complexity_per_method.setter
     def cyclomatic_complexity_per_method(self, cyclomatic_complexity_per_method):
-        """Sets the cyclomatic_complexity_per_method of this MetricInfo.
+        r"""Sets the cyclomatic_complexity_per_method of this MetricInfo.
 
         平均圈复杂度
 
@@ -447,7 +447,7 @@ class MetricInfo:
 
     @property
     def maximum_cyclomatic_complexity(self):
-        """Gets the maximum_cyclomatic_complexity of this MetricInfo.
+        r"""Gets the maximum_cyclomatic_complexity of this MetricInfo.
 
         最大圈复杂度
 
@@ -458,7 +458,7 @@ class MetricInfo:
 
     @maximum_cyclomatic_complexity.setter
     def maximum_cyclomatic_complexity(self, maximum_cyclomatic_complexity):
-        """Sets the maximum_cyclomatic_complexity of this MetricInfo.
+        r"""Sets the maximum_cyclomatic_complexity of this MetricInfo.
 
         最大圈复杂度
 
@@ -469,7 +469,7 @@ class MetricInfo:
 
     @property
     def huge_cyclomatic_complexity_total(self):
-        """Gets the huge_cyclomatic_complexity_total of this MetricInfo.
+        r"""Gets the huge_cyclomatic_complexity_total of this MetricInfo.
 
         超大圈复杂度数
 
@@ -480,7 +480,7 @@ class MetricInfo:
 
     @huge_cyclomatic_complexity_total.setter
     def huge_cyclomatic_complexity_total(self, huge_cyclomatic_complexity_total):
-        """Sets the huge_cyclomatic_complexity_total of this MetricInfo.
+        r"""Sets the huge_cyclomatic_complexity_total of this MetricInfo.
 
         超大圈复杂度数
 
@@ -491,7 +491,7 @@ class MetricInfo:
 
     @property
     def huge_cyclomatic_complexity_ratio(self):
-        """Gets the huge_cyclomatic_complexity_ratio of this MetricInfo.
+        r"""Gets the huge_cyclomatic_complexity_ratio of this MetricInfo.
 
         超大圈复杂度比例
 
@@ -502,7 +502,7 @@ class MetricInfo:
 
     @huge_cyclomatic_complexity_ratio.setter
     def huge_cyclomatic_complexity_ratio(self, huge_cyclomatic_complexity_ratio):
-        """Sets the huge_cyclomatic_complexity_ratio of this MetricInfo.
+        r"""Sets the huge_cyclomatic_complexity_ratio of this MetricInfo.
 
         超大圈复杂度比例
 
@@ -513,7 +513,7 @@ class MetricInfo:
 
     @property
     def cca_cyclomatic_complexity_total(self):
-        """Gets the cca_cyclomatic_complexity_total of this MetricInfo.
+        r"""Gets the cca_cyclomatic_complexity_total of this MetricInfo.
 
         cca圈复杂度总数
 
@@ -524,7 +524,7 @@ class MetricInfo:
 
     @cca_cyclomatic_complexity_total.setter
     def cca_cyclomatic_complexity_total(self, cca_cyclomatic_complexity_total):
-        """Sets the cca_cyclomatic_complexity_total of this MetricInfo.
+        r"""Sets the cca_cyclomatic_complexity_total of this MetricInfo.
 
         cca圈复杂度总数
 
@@ -535,7 +535,7 @@ class MetricInfo:
 
     @property
     def cca_cyclomatic_complexity_per_method(self):
-        """Gets the cca_cyclomatic_complexity_per_method of this MetricInfo.
+        r"""Gets the cca_cyclomatic_complexity_per_method of this MetricInfo.
 
         cca平均圈复杂度
 
@@ -546,7 +546,7 @@ class MetricInfo:
 
     @cca_cyclomatic_complexity_per_method.setter
     def cca_cyclomatic_complexity_per_method(self, cca_cyclomatic_complexity_per_method):
-        """Sets the cca_cyclomatic_complexity_per_method of this MetricInfo.
+        r"""Sets the cca_cyclomatic_complexity_per_method of this MetricInfo.
 
         cca平均圈复杂度
 
@@ -557,7 +557,7 @@ class MetricInfo:
 
     @property
     def maximum_cca_cyclomatic_complexity(self):
-        """Gets the maximum_cca_cyclomatic_complexity of this MetricInfo.
+        r"""Gets the maximum_cca_cyclomatic_complexity of this MetricInfo.
 
         cca最大圈复杂度
 
@@ -568,7 +568,7 @@ class MetricInfo:
 
     @maximum_cca_cyclomatic_complexity.setter
     def maximum_cca_cyclomatic_complexity(self, maximum_cca_cyclomatic_complexity):
-        """Sets the maximum_cca_cyclomatic_complexity of this MetricInfo.
+        r"""Sets the maximum_cca_cyclomatic_complexity of this MetricInfo.
 
         cca最大圈复杂度
 
@@ -579,7 +579,7 @@ class MetricInfo:
 
     @property
     def huge_cca_cyclomatic_complexity_total(self):
-        """Gets the huge_cca_cyclomatic_complexity_total of this MetricInfo.
+        r"""Gets the huge_cca_cyclomatic_complexity_total of this MetricInfo.
 
         超大圈复杂度函数总数
 
@@ -590,7 +590,7 @@ class MetricInfo:
 
     @huge_cca_cyclomatic_complexity_total.setter
     def huge_cca_cyclomatic_complexity_total(self, huge_cca_cyclomatic_complexity_total):
-        """Sets the huge_cca_cyclomatic_complexity_total of this MetricInfo.
+        r"""Sets the huge_cca_cyclomatic_complexity_total of this MetricInfo.
 
         超大圈复杂度函数总数
 
@@ -601,7 +601,7 @@ class MetricInfo:
 
     @property
     def cyclomatic_complexity_adequacy(self):
-        """Gets the cyclomatic_complexity_adequacy of this MetricInfo.
+        r"""Gets the cyclomatic_complexity_adequacy of this MetricInfo.
 
         圈复杂度满足度
 
@@ -612,7 +612,7 @@ class MetricInfo:
 
     @cyclomatic_complexity_adequacy.setter
     def cyclomatic_complexity_adequacy(self, cyclomatic_complexity_adequacy):
-        """Sets the cyclomatic_complexity_adequacy of this MetricInfo.
+        r"""Sets the cyclomatic_complexity_adequacy of this MetricInfo.
 
         圈复杂度满足度
 
@@ -623,7 +623,7 @@ class MetricInfo:
 
     @property
     def maximum_depth(self):
-        """Gets the maximum_depth of this MetricInfo.
+        r"""Gets the maximum_depth of this MetricInfo.
 
         最大深度
 
@@ -634,7 +634,7 @@ class MetricInfo:
 
     @maximum_depth.setter
     def maximum_depth(self, maximum_depth):
-        """Sets the maximum_depth of this MetricInfo.
+        r"""Sets the maximum_depth of this MetricInfo.
 
         最大深度
 
@@ -645,7 +645,7 @@ class MetricInfo:
 
     @property
     def huge_depth_total(self):
-        """Gets the huge_depth_total of this MetricInfo.
+        r"""Gets the huge_depth_total of this MetricInfo.
 
         超大深度数
 
@@ -656,7 +656,7 @@ class MetricInfo:
 
     @huge_depth_total.setter
     def huge_depth_total(self, huge_depth_total):
-        """Sets the huge_depth_total of this MetricInfo.
+        r"""Sets the huge_depth_total of this MetricInfo.
 
         超大深度数
 
@@ -667,7 +667,7 @@ class MetricInfo:
 
     @property
     def huge_depth_ratio(self):
-        """Gets the huge_depth_ratio of this MetricInfo.
+        r"""Gets the huge_depth_ratio of this MetricInfo.
 
         超大深度占比
 
@@ -678,7 +678,7 @@ class MetricInfo:
 
     @huge_depth_ratio.setter
     def huge_depth_ratio(self, huge_depth_ratio):
-        """Sets the huge_depth_ratio of this MetricInfo.
+        r"""Sets the huge_depth_ratio of this MetricInfo.
 
         超大深度占比
 
@@ -689,7 +689,7 @@ class MetricInfo:
 
     @property
     def method_lines(self):
-        """Gets the method_lines of this MetricInfo.
+        r"""Gets the method_lines of this MetricInfo.
 
         函数总行数
 
@@ -700,7 +700,7 @@ class MetricInfo:
 
     @method_lines.setter
     def method_lines(self, method_lines):
-        """Sets the method_lines of this MetricInfo.
+        r"""Sets the method_lines of this MetricInfo.
 
         函数总行数
 
@@ -711,7 +711,7 @@ class MetricInfo:
 
     @property
     def lines_per_method(self):
-        """Gets the lines_per_method of this MetricInfo.
+        r"""Gets the lines_per_method of this MetricInfo.
 
         函数平均代码行
 
@@ -722,7 +722,7 @@ class MetricInfo:
 
     @lines_per_method.setter
     def lines_per_method(self, lines_per_method):
-        """Sets the lines_per_method of this MetricInfo.
+        r"""Sets the lines_per_method of this MetricInfo.
 
         函数平均代码行
 
@@ -733,7 +733,7 @@ class MetricInfo:
 
     @property
     def huge_method_total(self):
-        """Gets the huge_method_total of this MetricInfo.
+        r"""Gets the huge_method_total of this MetricInfo.
 
         超大函数数
 
@@ -744,7 +744,7 @@ class MetricInfo:
 
     @huge_method_total.setter
     def huge_method_total(self, huge_method_total):
-        """Sets the huge_method_total of this MetricInfo.
+        r"""Sets the huge_method_total of this MetricInfo.
 
         超大函数数
 
@@ -755,7 +755,7 @@ class MetricInfo:
 
     @property
     def huge_method_ratio(self):
-        """Gets the huge_method_ratio of this MetricInfo.
+        r"""Gets the huge_method_ratio of this MetricInfo.
 
         超大函数占比
 
@@ -766,7 +766,7 @@ class MetricInfo:
 
     @huge_method_ratio.setter
     def huge_method_ratio(self, huge_method_ratio):
-        """Sets the huge_method_ratio of this MetricInfo.
+        r"""Sets the huge_method_ratio of this MetricInfo.
 
         超大函数占比
 
@@ -777,7 +777,7 @@ class MetricInfo:
 
     @property
     def files_total(self):
-        """Gets the files_total of this MetricInfo.
+        r"""Gets the files_total of this MetricInfo.
 
         文件总数
 
@@ -788,7 +788,7 @@ class MetricInfo:
 
     @files_total.setter
     def files_total(self, files_total):
-        """Sets the files_total of this MetricInfo.
+        r"""Sets the files_total of this MetricInfo.
 
         文件总数
 
@@ -799,7 +799,7 @@ class MetricInfo:
 
     @property
     def folders_total(self):
-        """Gets the folders_total of this MetricInfo.
+        r"""Gets the folders_total of this MetricInfo.
 
         目录总数
 
@@ -810,7 +810,7 @@ class MetricInfo:
 
     @folders_total.setter
     def folders_total(self, folders_total):
-        """Sets the folders_total of this MetricInfo.
+        r"""Sets the folders_total of this MetricInfo.
 
         目录总数
 
@@ -821,7 +821,7 @@ class MetricInfo:
 
     @property
     def lines_per_file(self):
-        """Gets the lines_per_file of this MetricInfo.
+        r"""Gets the lines_per_file of this MetricInfo.
 
         文件平均代码行
 
@@ -832,7 +832,7 @@ class MetricInfo:
 
     @lines_per_file.setter
     def lines_per_file(self, lines_per_file):
-        """Sets the lines_per_file of this MetricInfo.
+        r"""Sets the lines_per_file of this MetricInfo.
 
         文件平均代码行
 
@@ -843,7 +843,7 @@ class MetricInfo:
 
     @property
     def huge_headerfile_total(self):
-        """Gets the huge_headerfile_total of this MetricInfo.
+        r"""Gets the huge_headerfile_total of this MetricInfo.
 
         超大头文件数
 
@@ -854,7 +854,7 @@ class MetricInfo:
 
     @huge_headerfile_total.setter
     def huge_headerfile_total(self, huge_headerfile_total):
-        """Sets the huge_headerfile_total of this MetricInfo.
+        r"""Sets the huge_headerfile_total of this MetricInfo.
 
         超大头文件数
 
@@ -865,7 +865,7 @@ class MetricInfo:
 
     @property
     def huge_headerfile_ratio(self):
-        """Gets the huge_headerfile_ratio of this MetricInfo.
+        r"""Gets the huge_headerfile_ratio of this MetricInfo.
 
         超大头文件占比
 
@@ -876,7 +876,7 @@ class MetricInfo:
 
     @huge_headerfile_ratio.setter
     def huge_headerfile_ratio(self, huge_headerfile_ratio):
-        """Sets the huge_headerfile_ratio of this MetricInfo.
+        r"""Sets the huge_headerfile_ratio of this MetricInfo.
 
         超大头文件占比
 
@@ -887,7 +887,7 @@ class MetricInfo:
 
     @property
     def huge_non_headerfile_total(self):
-        """Gets the huge_non_headerfile_total of this MetricInfo.
+        r"""Gets the huge_non_headerfile_total of this MetricInfo.
 
         超大源文件数
 
@@ -898,7 +898,7 @@ class MetricInfo:
 
     @huge_non_headerfile_total.setter
     def huge_non_headerfile_total(self, huge_non_headerfile_total):
-        """Sets the huge_non_headerfile_total of this MetricInfo.
+        r"""Sets the huge_non_headerfile_total of this MetricInfo.
 
         超大源文件数
 
@@ -909,7 +909,7 @@ class MetricInfo:
 
     @property
     def huge_non_headerfile_ratio(self):
-        """Gets the huge_non_headerfile_ratio of this MetricInfo.
+        r"""Gets the huge_non_headerfile_ratio of this MetricInfo.
 
         超大源文件占比
 
@@ -920,7 +920,7 @@ class MetricInfo:
 
     @huge_non_headerfile_ratio.setter
     def huge_non_headerfile_ratio(self, huge_non_headerfile_ratio):
-        """Sets the huge_non_headerfile_ratio of this MetricInfo.
+        r"""Sets the huge_non_headerfile_ratio of this MetricInfo.
 
         超大源文件占比
 
@@ -931,7 +931,7 @@ class MetricInfo:
 
     @property
     def huge_folder_total(self):
-        """Gets the huge_folder_total of this MetricInfo.
+        r"""Gets the huge_folder_total of this MetricInfo.
 
         超大目录数
 
@@ -942,7 +942,7 @@ class MetricInfo:
 
     @huge_folder_total.setter
     def huge_folder_total(self, huge_folder_total):
-        """Sets the huge_folder_total of this MetricInfo.
+        r"""Sets the huge_folder_total of this MetricInfo.
 
         超大目录数
 
@@ -953,7 +953,7 @@ class MetricInfo:
 
     @property
     def huge_folder_ratio(self):
-        """Gets the huge_folder_ratio of this MetricInfo.
+        r"""Gets the huge_folder_ratio of this MetricInfo.
 
         超大目录占比
 
@@ -964,7 +964,7 @@ class MetricInfo:
 
     @huge_folder_ratio.setter
     def huge_folder_ratio(self, huge_folder_ratio):
-        """Sets the huge_folder_ratio of this MetricInfo.
+        r"""Sets the huge_folder_ratio of this MetricInfo.
 
         超大目录占比
 
@@ -975,7 +975,7 @@ class MetricInfo:
 
     @property
     def file_duplication_total(self):
-        """Gets the file_duplication_total of this MetricInfo.
+        r"""Gets the file_duplication_total of this MetricInfo.
 
         重复文件数
 
@@ -986,7 +986,7 @@ class MetricInfo:
 
     @file_duplication_total.setter
     def file_duplication_total(self, file_duplication_total):
-        """Sets the file_duplication_total of this MetricInfo.
+        r"""Sets the file_duplication_total of this MetricInfo.
 
         重复文件数
 
@@ -997,7 +997,7 @@ class MetricInfo:
 
     @property
     def file_duplication_ratio(self):
-        """Gets the file_duplication_ratio of this MetricInfo.
+        r"""Gets the file_duplication_ratio of this MetricInfo.
 
         文件重复率
 
@@ -1008,7 +1008,7 @@ class MetricInfo:
 
     @file_duplication_ratio.setter
     def file_duplication_ratio(self, file_duplication_ratio):
-        """Sets the file_duplication_ratio of this MetricInfo.
+        r"""Sets the file_duplication_ratio of this MetricInfo.
 
         文件重复率
 
@@ -1019,7 +1019,7 @@ class MetricInfo:
 
     @property
     def non_hfile_duplication_total(self):
-        """Gets the non_hfile_duplication_total of this MetricInfo.
+        r"""Gets the non_hfile_duplication_total of this MetricInfo.
 
         重复源文件数
 
@@ -1030,7 +1030,7 @@ class MetricInfo:
 
     @non_hfile_duplication_total.setter
     def non_hfile_duplication_total(self, non_hfile_duplication_total):
-        """Sets the non_hfile_duplication_total of this MetricInfo.
+        r"""Sets the non_hfile_duplication_total of this MetricInfo.
 
         重复源文件数
 
@@ -1041,7 +1041,7 @@ class MetricInfo:
 
     @property
     def non_hfile_duplication_ratio(self):
-        """Gets the non_hfile_duplication_ratio of this MetricInfo.
+        r"""Gets the non_hfile_duplication_ratio of this MetricInfo.
 
         源文件重复率
 
@@ -1052,7 +1052,7 @@ class MetricInfo:
 
     @non_hfile_duplication_ratio.setter
     def non_hfile_duplication_ratio(self, non_hfile_duplication_ratio):
-        """Sets the non_hfile_duplication_ratio of this MetricInfo.
+        r"""Sets the non_hfile_duplication_ratio of this MetricInfo.
 
         源文件重复率
 
@@ -1063,7 +1063,7 @@ class MetricInfo:
 
     @property
     def code_duplication_total(self):
-        """Gets the code_duplication_total of this MetricInfo.
+        r"""Gets the code_duplication_total of this MetricInfo.
 
         代码重复数
 
@@ -1074,7 +1074,7 @@ class MetricInfo:
 
     @code_duplication_total.setter
     def code_duplication_total(self, code_duplication_total):
-        """Sets the code_duplication_total of this MetricInfo.
+        r"""Sets the code_duplication_total of this MetricInfo.
 
         代码重复数
 
@@ -1085,7 +1085,7 @@ class MetricInfo:
 
     @property
     def code_duplication_ratio(self):
-        """Gets the code_duplication_ratio of this MetricInfo.
+        r"""Gets the code_duplication_ratio of this MetricInfo.
 
         代码重复率
 
@@ -1096,7 +1096,7 @@ class MetricInfo:
 
     @code_duplication_ratio.setter
     def code_duplication_ratio(self, code_duplication_ratio):
-        """Sets the code_duplication_ratio of this MetricInfo.
+        r"""Sets the code_duplication_ratio of this MetricInfo.
 
         代码重复率
 
@@ -1107,7 +1107,7 @@ class MetricInfo:
 
     @property
     def non_hfile_code_duplication_total(self):
-        """Gets the non_hfile_code_duplication_total of this MetricInfo.
+        r"""Gets the non_hfile_code_duplication_total of this MetricInfo.
 
         源文件代码重复数
 
@@ -1118,7 +1118,7 @@ class MetricInfo:
 
     @non_hfile_code_duplication_total.setter
     def non_hfile_code_duplication_total(self, non_hfile_code_duplication_total):
-        """Sets the non_hfile_code_duplication_total of this MetricInfo.
+        r"""Sets the non_hfile_code_duplication_total of this MetricInfo.
 
         源文件代码重复数
 
@@ -1129,7 +1129,7 @@ class MetricInfo:
 
     @property
     def non_hfile_code_duplication_ratio(self):
-        """Gets the non_hfile_code_duplication_ratio of this MetricInfo.
+        r"""Gets the non_hfile_code_duplication_ratio of this MetricInfo.
 
         源文件代码重复率
 
@@ -1140,7 +1140,7 @@ class MetricInfo:
 
     @non_hfile_code_duplication_ratio.setter
     def non_hfile_code_duplication_ratio(self, non_hfile_code_duplication_ratio):
-        """Sets the non_hfile_code_duplication_ratio of this MetricInfo.
+        r"""Sets the non_hfile_code_duplication_ratio of this MetricInfo.
 
         源文件代码重复率
 
@@ -1151,7 +1151,7 @@ class MetricInfo:
 
     @property
     def unsafe_functions_total(self):
-        """Gets the unsafe_functions_total of this MetricInfo.
+        r"""Gets the unsafe_functions_total of this MetricInfo.
 
         危险函数总数
 
@@ -1162,7 +1162,7 @@ class MetricInfo:
 
     @unsafe_functions_total.setter
     def unsafe_functions_total(self, unsafe_functions_total):
-        """Sets the unsafe_functions_total of this MetricInfo.
+        r"""Sets the unsafe_functions_total of this MetricInfo.
 
         危险函数总数
 
@@ -1173,7 +1173,7 @@ class MetricInfo:
 
     @property
     def unsafe_functions_kloc(self):
-        """Gets the unsafe_functions_kloc of this MetricInfo.
+        r"""Gets the unsafe_functions_kloc of this MetricInfo.
 
         危险函数密度
 
@@ -1184,7 +1184,7 @@ class MetricInfo:
 
     @unsafe_functions_kloc.setter
     def unsafe_functions_kloc(self, unsafe_functions_kloc):
-        """Sets the unsafe_functions_kloc of this MetricInfo.
+        r"""Sets the unsafe_functions_kloc of this MetricInfo.
 
         危险函数密度
 
@@ -1195,7 +1195,7 @@ class MetricInfo:
 
     @property
     def redundant_code_total(self):
-        """Gets the redundant_code_total of this MetricInfo.
+        r"""Gets the redundant_code_total of this MetricInfo.
 
         冗余代码数
 
@@ -1206,7 +1206,7 @@ class MetricInfo:
 
     @redundant_code_total.setter
     def redundant_code_total(self, redundant_code_total):
-        """Sets the redundant_code_total of this MetricInfo.
+        r"""Sets the redundant_code_total of this MetricInfo.
 
         冗余代码数
 
@@ -1217,7 +1217,7 @@ class MetricInfo:
 
     @property
     def redundant_code_kloc(self):
-        """Gets the redundant_code_kloc of this MetricInfo.
+        r"""Gets the redundant_code_kloc of this MetricInfo.
 
         冗余代码块密度
 
@@ -1228,7 +1228,7 @@ class MetricInfo:
 
     @redundant_code_kloc.setter
     def redundant_code_kloc(self, redundant_code_kloc):
-        """Sets the redundant_code_kloc of this MetricInfo.
+        r"""Sets the redundant_code_kloc of this MetricInfo.
 
         冗余代码块密度
 
@@ -1239,7 +1239,7 @@ class MetricInfo:
 
     @property
     def warning_suppression_total(self):
-        """Gets the warning_suppression_total of this MetricInfo.
+        r"""Gets the warning_suppression_total of this MetricInfo.
 
         抑制告警数
 
@@ -1250,7 +1250,7 @@ class MetricInfo:
 
     @warning_suppression_total.setter
     def warning_suppression_total(self, warning_suppression_total):
-        """Sets the warning_suppression_total of this MetricInfo.
+        r"""Sets the warning_suppression_total of this MetricInfo.
 
         抑制告警数
 
@@ -1261,7 +1261,7 @@ class MetricInfo:
 
     @property
     def warning_suppression_kloc(self):
-        """Gets the warning_suppression_kloc of this MetricInfo.
+        r"""Gets the warning_suppression_kloc of this MetricInfo.
 
         抑制告警密度
 
@@ -1272,7 +1272,7 @@ class MetricInfo:
 
     @warning_suppression_kloc.setter
     def warning_suppression_kloc(self, warning_suppression_kloc):
-        """Sets the warning_suppression_kloc of this MetricInfo.
+        r"""Sets the warning_suppression_kloc of this MetricInfo.
 
         抑制告警密度
 

@@ -25,7 +25,7 @@ class ListGeoBlockingConfigRequest:
     }
 
     def __init__(self, play_domain=None):
-        """ListGeoBlockingConfigRequest
+        r"""ListGeoBlockingConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListGeoBlockingConfigRequest:
 
     @property
     def play_domain(self):
-        """Gets the play_domain of this ListGeoBlockingConfigRequest.
+        r"""Gets the play_domain of this ListGeoBlockingConfigRequest.
 
         播放域名
 
@@ -53,7 +53,7 @@ class ListGeoBlockingConfigRequest:
 
     @play_domain.setter
     def play_domain(self, play_domain):
-        """Sets the play_domain of this ListGeoBlockingConfigRequest.
+        r"""Sets the play_domain of this ListGeoBlockingConfigRequest.
 
         播放域名
 

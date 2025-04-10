@@ -27,7 +27,7 @@ class ShowResourceRequest:
     }
 
     def __init__(self, workspace=None, resource_id=None):
-        """ShowResourceRequest
+        r"""ShowResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowResourceRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowResourceRequest.
+        r"""Gets the workspace of this ShowResourceRequest.
 
         工作空间id
 
@@ -60,7 +60,7 @@ class ShowResourceRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowResourceRequest.
+        r"""Sets the workspace of this ShowResourceRequest.
 
         工作空间id
 
@@ -71,7 +71,7 @@ class ShowResourceRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowResourceRequest.
+        r"""Gets the resource_id of this ShowResourceRequest.
 
         资源id.
 
@@ -82,7 +82,7 @@ class ShowResourceRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowResourceRequest.
+        r"""Sets the resource_id of this ShowResourceRequest.
 
         资源id.
 

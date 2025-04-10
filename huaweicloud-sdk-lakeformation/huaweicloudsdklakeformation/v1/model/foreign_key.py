@@ -53,7 +53,7 @@ class ForeignKey:
     }
 
     def __init__(self, catalog_name=None, parent_key_database_name=None, parent_key_table_name=None, parent_key_column_name=None, parent_key_name=None, foreign_key_database_name=None, foreign_key_table_name=None, foreign_key_column_name=None, foreign_key_name=None, delete_rule=None, enable_constraint=None, key_sequence=None, rely_constraint=None, update_rule=None, validate_constraint=None):
-        """ForeignKey
+        r"""ForeignKey
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class ForeignKey:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ForeignKey.
+        r"""Gets the catalog_name of this ForeignKey.
 
         catalog名称
 
@@ -137,7 +137,7 @@ class ForeignKey:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ForeignKey.
+        r"""Sets the catalog_name of this ForeignKey.
 
         catalog名称
 
@@ -148,7 +148,7 @@ class ForeignKey:
 
     @property
     def parent_key_database_name(self):
-        """Gets the parent_key_database_name of this ForeignKey.
+        r"""Gets the parent_key_database_name of this ForeignKey.
 
         被引用表的数据库名
 
@@ -159,7 +159,7 @@ class ForeignKey:
 
     @parent_key_database_name.setter
     def parent_key_database_name(self, parent_key_database_name):
-        """Sets the parent_key_database_name of this ForeignKey.
+        r"""Sets the parent_key_database_name of this ForeignKey.
 
         被引用表的数据库名
 
@@ -170,7 +170,7 @@ class ForeignKey:
 
     @property
     def parent_key_table_name(self):
-        """Gets the parent_key_table_name of this ForeignKey.
+        r"""Gets the parent_key_table_name of this ForeignKey.
 
         被引用表的表名
 
@@ -181,7 +181,7 @@ class ForeignKey:
 
     @parent_key_table_name.setter
     def parent_key_table_name(self, parent_key_table_name):
-        """Sets the parent_key_table_name of this ForeignKey.
+        r"""Sets the parent_key_table_name of this ForeignKey.
 
         被引用表的表名
 
@@ -192,7 +192,7 @@ class ForeignKey:
 
     @property
     def parent_key_column_name(self):
-        """Gets the parent_key_column_name of this ForeignKey.
+        r"""Gets the parent_key_column_name of this ForeignKey.
 
         被引用列名
 
@@ -203,7 +203,7 @@ class ForeignKey:
 
     @parent_key_column_name.setter
     def parent_key_column_name(self, parent_key_column_name):
-        """Sets the parent_key_column_name of this ForeignKey.
+        r"""Sets the parent_key_column_name of this ForeignKey.
 
         被引用列名
 
@@ -214,7 +214,7 @@ class ForeignKey:
 
     @property
     def parent_key_name(self):
-        """Gets the parent_key_name of this ForeignKey.
+        r"""Gets the parent_key_name of this ForeignKey.
 
         被引用键名称
 
@@ -225,7 +225,7 @@ class ForeignKey:
 
     @parent_key_name.setter
     def parent_key_name(self, parent_key_name):
-        """Sets the parent_key_name of this ForeignKey.
+        r"""Sets the parent_key_name of this ForeignKey.
 
         被引用键名称
 
@@ -236,7 +236,7 @@ class ForeignKey:
 
     @property
     def foreign_key_database_name(self):
-        """Gets the foreign_key_database_name of this ForeignKey.
+        r"""Gets the foreign_key_database_name of this ForeignKey.
 
         引用表的数据库名
 
@@ -247,7 +247,7 @@ class ForeignKey:
 
     @foreign_key_database_name.setter
     def foreign_key_database_name(self, foreign_key_database_name):
-        """Sets the foreign_key_database_name of this ForeignKey.
+        r"""Sets the foreign_key_database_name of this ForeignKey.
 
         引用表的数据库名
 
@@ -258,7 +258,7 @@ class ForeignKey:
 
     @property
     def foreign_key_table_name(self):
-        """Gets the foreign_key_table_name of this ForeignKey.
+        r"""Gets the foreign_key_table_name of this ForeignKey.
 
         引用表的数据库名
 
@@ -269,7 +269,7 @@ class ForeignKey:
 
     @foreign_key_table_name.setter
     def foreign_key_table_name(self, foreign_key_table_name):
-        """Sets the foreign_key_table_name of this ForeignKey.
+        r"""Sets the foreign_key_table_name of this ForeignKey.
 
         引用表的数据库名
 
@@ -280,7 +280,7 @@ class ForeignKey:
 
     @property
     def foreign_key_column_name(self):
-        """Gets the foreign_key_column_name of this ForeignKey.
+        r"""Gets the foreign_key_column_name of this ForeignKey.
 
         引用列名
 
@@ -291,7 +291,7 @@ class ForeignKey:
 
     @foreign_key_column_name.setter
     def foreign_key_column_name(self, foreign_key_column_name):
-        """Sets the foreign_key_column_name of this ForeignKey.
+        r"""Sets the foreign_key_column_name of this ForeignKey.
 
         引用列名
 
@@ -302,7 +302,7 @@ class ForeignKey:
 
     @property
     def foreign_key_name(self):
-        """Gets the foreign_key_name of this ForeignKey.
+        r"""Gets the foreign_key_name of this ForeignKey.
 
         外键名称
 
@@ -313,7 +313,7 @@ class ForeignKey:
 
     @foreign_key_name.setter
     def foreign_key_name(self, foreign_key_name):
-        """Sets the foreign_key_name of this ForeignKey.
+        r"""Sets the foreign_key_name of this ForeignKey.
 
         外键名称
 
@@ -324,7 +324,7 @@ class ForeignKey:
 
     @property
     def delete_rule(self):
-        """Gets the delete_rule of this ForeignKey.
+        r"""Gets the delete_rule of this ForeignKey.
 
         当被引用表中被引用的记录被删除，本表中对应记录的删除规则
 
@@ -335,7 +335,7 @@ class ForeignKey:
 
     @delete_rule.setter
     def delete_rule(self, delete_rule):
-        """Sets the delete_rule of this ForeignKey.
+        r"""Sets the delete_rule of this ForeignKey.
 
         当被引用表中被引用的记录被删除，本表中对应记录的删除规则
 
@@ -346,7 +346,7 @@ class ForeignKey:
 
     @property
     def enable_constraint(self):
-        """Gets the enable_constraint of this ForeignKey.
+        r"""Gets the enable_constraint of this ForeignKey.
 
         外键是否启用
 
@@ -357,7 +357,7 @@ class ForeignKey:
 
     @enable_constraint.setter
     def enable_constraint(self, enable_constraint):
-        """Sets the enable_constraint of this ForeignKey.
+        r"""Sets the enable_constraint of this ForeignKey.
 
         外键是否启用
 
@@ -368,7 +368,7 @@ class ForeignKey:
 
     @property
     def key_sequence(self):
-        """Gets the key_sequence of this ForeignKey.
+        r"""Gets the key_sequence of this ForeignKey.
 
         外键排列规则
 
@@ -379,7 +379,7 @@ class ForeignKey:
 
     @key_sequence.setter
     def key_sequence(self, key_sequence):
-        """Sets the key_sequence of this ForeignKey.
+        r"""Sets the key_sequence of this ForeignKey.
 
         外键排列规则
 
@@ -390,7 +390,7 @@ class ForeignKey:
 
     @property
     def rely_constraint(self):
-        """Gets the rely_constraint of this ForeignKey.
+        r"""Gets the rely_constraint of this ForeignKey.
 
         is foreign Key rely
 
@@ -401,7 +401,7 @@ class ForeignKey:
 
     @rely_constraint.setter
     def rely_constraint(self, rely_constraint):
-        """Sets the rely_constraint of this ForeignKey.
+        r"""Sets the rely_constraint of this ForeignKey.
 
         is foreign Key rely
 
@@ -412,7 +412,7 @@ class ForeignKey:
 
     @property
     def update_rule(self):
-        """Gets the update_rule of this ForeignKey.
+        r"""Gets the update_rule of this ForeignKey.
 
         当被引用表中被引用的记录被修改，本表中对应记录的更新规则
 
@@ -423,7 +423,7 @@ class ForeignKey:
 
     @update_rule.setter
     def update_rule(self, update_rule):
-        """Sets the update_rule of this ForeignKey.
+        r"""Sets the update_rule of this ForeignKey.
 
         当被引用表中被引用的记录被修改，本表中对应记录的更新规则
 
@@ -434,7 +434,7 @@ class ForeignKey:
 
     @property
     def validate_constraint(self):
-        """Gets the validate_constraint of this ForeignKey.
+        r"""Gets the validate_constraint of this ForeignKey.
 
         外键是否可用
 
@@ -445,7 +445,7 @@ class ForeignKey:
 
     @validate_constraint.setter
     def validate_constraint(self, validate_constraint):
-        """Sets the validate_constraint of this ForeignKey.
+        r"""Sets the validate_constraint of this ForeignKey.
 
         外键是否可用
 

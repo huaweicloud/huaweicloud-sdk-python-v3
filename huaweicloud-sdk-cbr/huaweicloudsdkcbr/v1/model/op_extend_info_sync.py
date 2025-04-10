@@ -29,7 +29,7 @@ class OpExtendInfoSync:
     }
 
     def __init__(self, sync_backup_num=None, delete_backup_num=None, err_sync_backup_num=None):
-        """OpExtendInfoSync
+        r"""OpExtendInfoSync
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class OpExtendInfoSync:
 
     @property
     def sync_backup_num(self):
-        """Gets the sync_backup_num of this OpExtendInfoSync.
+        r"""Gets the sync_backup_num of this OpExtendInfoSync.
 
         同步备份副本数
 
@@ -68,7 +68,7 @@ class OpExtendInfoSync:
 
     @sync_backup_num.setter
     def sync_backup_num(self, sync_backup_num):
-        """Sets the sync_backup_num of this OpExtendInfoSync.
+        r"""Sets the sync_backup_num of this OpExtendInfoSync.
 
         同步备份副本数
 
@@ -79,7 +79,7 @@ class OpExtendInfoSync:
 
     @property
     def delete_backup_num(self):
-        """Gets the delete_backup_num of this OpExtendInfoSync.
+        r"""Gets the delete_backup_num of this OpExtendInfoSync.
 
         删除的备份副本数
 
@@ -90,7 +90,7 @@ class OpExtendInfoSync:
 
     @delete_backup_num.setter
     def delete_backup_num(self, delete_backup_num):
-        """Sets the delete_backup_num of this OpExtendInfoSync.
+        r"""Sets the delete_backup_num of this OpExtendInfoSync.
 
         删除的备份副本数
 
@@ -101,7 +101,7 @@ class OpExtendInfoSync:
 
     @property
     def err_sync_backup_num(self):
-        """Gets the err_sync_backup_num of this OpExtendInfoSync.
+        r"""Gets the err_sync_backup_num of this OpExtendInfoSync.
 
         同步失败备副本数
 
@@ -112,7 +112,7 @@ class OpExtendInfoSync:
 
     @err_sync_backup_num.setter
     def err_sync_backup_num(self, err_sync_backup_num):
-        """Sets the err_sync_backup_num of this OpExtendInfoSync.
+        r"""Sets the err_sync_backup_num of this OpExtendInfoSync.
 
         同步失败备副本数
 

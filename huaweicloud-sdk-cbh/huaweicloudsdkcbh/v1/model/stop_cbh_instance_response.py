@@ -24,7 +24,7 @@ class StopCbhInstanceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StopCbhInstanceResponse
+        r"""StopCbhInstanceResponse
 
         The model defined in huaweicloud sdk
 

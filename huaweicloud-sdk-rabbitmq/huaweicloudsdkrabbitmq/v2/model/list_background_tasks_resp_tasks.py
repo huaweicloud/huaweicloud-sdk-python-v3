@@ -39,7 +39,7 @@ class ListBackgroundTasksRespTasks:
     }
 
     def __init__(self, id=None, name=None, user_name=None, user_id=None, params=None, status=None, created_at=None, updated_at=None):
-        """ListBackgroundTasksRespTasks
+        r"""ListBackgroundTasksRespTasks
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListBackgroundTasksRespTasks:
 
     @property
     def id(self):
-        """Gets the id of this ListBackgroundTasksRespTasks.
+        r"""Gets the id of this ListBackgroundTasksRespTasks.
 
         任务ID。
 
@@ -103,7 +103,7 @@ class ListBackgroundTasksRespTasks:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListBackgroundTasksRespTasks.
+        r"""Sets the id of this ListBackgroundTasksRespTasks.
 
         任务ID。
 
@@ -114,7 +114,7 @@ class ListBackgroundTasksRespTasks:
 
     @property
     def name(self):
-        """Gets the name of this ListBackgroundTasksRespTasks.
+        r"""Gets the name of this ListBackgroundTasksRespTasks.
 
         任务名称。
 
@@ -125,7 +125,7 @@ class ListBackgroundTasksRespTasks:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListBackgroundTasksRespTasks.
+        r"""Sets the name of this ListBackgroundTasksRespTasks.
 
         任务名称。
 
@@ -136,7 +136,7 @@ class ListBackgroundTasksRespTasks:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListBackgroundTasksRespTasks.
+        r"""Gets the user_name of this ListBackgroundTasksRespTasks.
 
         用户名。
 
@@ -147,7 +147,7 @@ class ListBackgroundTasksRespTasks:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListBackgroundTasksRespTasks.
+        r"""Sets the user_name of this ListBackgroundTasksRespTasks.
 
         用户名。
 
@@ -158,7 +158,7 @@ class ListBackgroundTasksRespTasks:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ListBackgroundTasksRespTasks.
+        r"""Gets the user_id of this ListBackgroundTasksRespTasks.
 
         用户ID。
 
@@ -169,7 +169,7 @@ class ListBackgroundTasksRespTasks:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ListBackgroundTasksRespTasks.
+        r"""Sets the user_id of this ListBackgroundTasksRespTasks.
 
         用户ID。
 
@@ -180,7 +180,7 @@ class ListBackgroundTasksRespTasks:
 
     @property
     def params(self):
-        """Gets the params of this ListBackgroundTasksRespTasks.
+        r"""Gets the params of this ListBackgroundTasksRespTasks.
 
         任务参数。
 
@@ -191,7 +191,7 @@ class ListBackgroundTasksRespTasks:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ListBackgroundTasksRespTasks.
+        r"""Sets the params of this ListBackgroundTasksRespTasks.
 
         任务参数。
 
@@ -202,7 +202,7 @@ class ListBackgroundTasksRespTasks:
 
     @property
     def status(self):
-        """Gets the status of this ListBackgroundTasksRespTasks.
+        r"""Gets the status of this ListBackgroundTasksRespTasks.
 
         任务状态。
 
@@ -213,7 +213,7 @@ class ListBackgroundTasksRespTasks:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListBackgroundTasksRespTasks.
+        r"""Sets the status of this ListBackgroundTasksRespTasks.
 
         任务状态。
 
@@ -224,7 +224,7 @@ class ListBackgroundTasksRespTasks:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListBackgroundTasksRespTasks.
+        r"""Gets the created_at of this ListBackgroundTasksRespTasks.
 
         启动时间。
 
@@ -235,7 +235,7 @@ class ListBackgroundTasksRespTasks:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListBackgroundTasksRespTasks.
+        r"""Sets the created_at of this ListBackgroundTasksRespTasks.
 
         启动时间。
 
@@ -246,7 +246,7 @@ class ListBackgroundTasksRespTasks:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListBackgroundTasksRespTasks.
+        r"""Gets the updated_at of this ListBackgroundTasksRespTasks.
 
         结束时间。
 
@@ -257,7 +257,7 @@ class ListBackgroundTasksRespTasks:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListBackgroundTasksRespTasks.
+        r"""Sets the updated_at of this ListBackgroundTasksRespTasks.
 
         结束时间。
 

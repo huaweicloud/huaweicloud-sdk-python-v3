@@ -41,7 +41,7 @@ class ListConfigurationsResult:
     }
 
     def __init__(self, id=None, name=None, description=None, datastore_version_name=None, datastore_name=None, created=None, updated=None, mode=None, user_defined=None):
-        """ListConfigurationsResult
+        r"""ListConfigurationsResult
 
         The model defined in huaweicloud sdk
 
@@ -53,13 +53,13 @@ class ListConfigurationsResult:
         :type description: str
         :param datastore_version_name: 数据库版本名称。
         :type datastore_version_name: str
-        :param datastore_name: 数据库名称。
+        :param datastore_name: 数据库名称。 【取值范围】 cassandra：表示支持GeminiDB Cassandra实例。 redis：表示支持GeminiDB Redis实例。 influxdb：表示支持GeminiDB Influx实例。 mongodb： 表示支持GeminiDB Mongo实例。
         :type datastore_name: str
         :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800
         :type created: str
         :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
         :type updated: str
-        :param mode: 数据库实例类型。 GeminiDB Cassandra集群类型为\&quot;Cluster\&quot;。 GeminiDB Mongo副本集类型为\&quot;ReplicaSet\&quot;。 GeminiDB Mongo集群类型为\&quot;Sharding\&quot;。 GeminiDB Influx集群类型为\&quot;Cluster\&quot;。 GeminiDB Influx单节点类型为\&quot;InfluxdbSingle\&quot;。 GeminiDB Redis集群类型为“Cluster”。 GeminiDB Redis主备类型为“Replication”。
+        :param mode: 数据库实例类型。 GeminiDB Cassandra经典部署模式集群类型为\&quot;Cluster\&quot;。 GeminiDB Cassandra云原生部署模式集群类型为\&quot;CloudNativeCluster\&quot;。 GeminiDB Mongo副本集类型为\&quot;ReplicaSet\&quot;。 GeminiDB Mongo集群类型为\&quot;Sharding\&quot;。 GeminiDB Influx经典部署模式集群类型为\&quot;Cluster\&quot;。 GeminiDB Influx经典部署模式单节点类型为\&quot;InfluxdbSingle\&quot;。 GeminiDB Redis经典部署模式集群类型为“Cluster”。
         :type mode: str
         :param user_defined: 是否是用户自定义参数模板： - false，表示为系统默认参数模板。 - true，表示为用户自定义参数模板。
         :type user_defined: bool
@@ -91,7 +91,7 @@ class ListConfigurationsResult:
 
     @property
     def id(self):
-        """Gets the id of this ListConfigurationsResult.
+        r"""Gets the id of this ListConfigurationsResult.
 
         参数模板ID。
 
@@ -102,7 +102,7 @@ class ListConfigurationsResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListConfigurationsResult.
+        r"""Sets the id of this ListConfigurationsResult.
 
         参数模板ID。
 
@@ -113,7 +113,7 @@ class ListConfigurationsResult:
 
     @property
     def name(self):
-        """Gets the name of this ListConfigurationsResult.
+        r"""Gets the name of this ListConfigurationsResult.
 
         参数模板名称。
 
@@ -124,7 +124,7 @@ class ListConfigurationsResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListConfigurationsResult.
+        r"""Sets the name of this ListConfigurationsResult.
 
         参数模板名称。
 
@@ -135,7 +135,7 @@ class ListConfigurationsResult:
 
     @property
     def description(self):
-        """Gets the description of this ListConfigurationsResult.
+        r"""Gets the description of this ListConfigurationsResult.
 
         参数模板描述。
 
@@ -146,7 +146,7 @@ class ListConfigurationsResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListConfigurationsResult.
+        r"""Sets the description of this ListConfigurationsResult.
 
         参数模板描述。
 
@@ -157,7 +157,7 @@ class ListConfigurationsResult:
 
     @property
     def datastore_version_name(self):
-        """Gets the datastore_version_name of this ListConfigurationsResult.
+        r"""Gets the datastore_version_name of this ListConfigurationsResult.
 
         数据库版本名称。
 
@@ -168,7 +168,7 @@ class ListConfigurationsResult:
 
     @datastore_version_name.setter
     def datastore_version_name(self, datastore_version_name):
-        """Sets the datastore_version_name of this ListConfigurationsResult.
+        r"""Sets the datastore_version_name of this ListConfigurationsResult.
 
         数据库版本名称。
 
@@ -179,9 +179,9 @@ class ListConfigurationsResult:
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this ListConfigurationsResult.
+        r"""Gets the datastore_name of this ListConfigurationsResult.
 
-        数据库名称。
+        数据库名称。 【取值范围】 cassandra：表示支持GeminiDB Cassandra实例。 redis：表示支持GeminiDB Redis实例。 influxdb：表示支持GeminiDB Influx实例。 mongodb： 表示支持GeminiDB Mongo实例。
 
         :return: The datastore_name of this ListConfigurationsResult.
         :rtype: str
@@ -190,9 +190,9 @@ class ListConfigurationsResult:
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this ListConfigurationsResult.
+        r"""Sets the datastore_name of this ListConfigurationsResult.
 
-        数据库名称。
+        数据库名称。 【取值范围】 cassandra：表示支持GeminiDB Cassandra实例。 redis：表示支持GeminiDB Redis实例。 influxdb：表示支持GeminiDB Influx实例。 mongodb： 表示支持GeminiDB Mongo实例。
 
         :param datastore_name: The datastore_name of this ListConfigurationsResult.
         :type datastore_name: str
@@ -201,7 +201,7 @@ class ListConfigurationsResult:
 
     @property
     def created(self):
-        """Gets the created of this ListConfigurationsResult.
+        r"""Gets the created of this ListConfigurationsResult.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800
 
@@ -212,7 +212,7 @@ class ListConfigurationsResult:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ListConfigurationsResult.
+        r"""Sets the created of this ListConfigurationsResult.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800
 
@@ -223,7 +223,7 @@ class ListConfigurationsResult:
 
     @property
     def updated(self):
-        """Gets the updated of this ListConfigurationsResult.
+        r"""Gets the updated of this ListConfigurationsResult.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -234,7 +234,7 @@ class ListConfigurationsResult:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ListConfigurationsResult.
+        r"""Sets the updated of this ListConfigurationsResult.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -245,9 +245,9 @@ class ListConfigurationsResult:
 
     @property
     def mode(self):
-        """Gets the mode of this ListConfigurationsResult.
+        r"""Gets the mode of this ListConfigurationsResult.
 
-        数据库实例类型。 GeminiDB Cassandra集群类型为\"Cluster\"。 GeminiDB Mongo副本集类型为\"ReplicaSet\"。 GeminiDB Mongo集群类型为\"Sharding\"。 GeminiDB Influx集群类型为\"Cluster\"。 GeminiDB Influx单节点类型为\"InfluxdbSingle\"。 GeminiDB Redis集群类型为“Cluster”。 GeminiDB Redis主备类型为“Replication”。
+        数据库实例类型。 GeminiDB Cassandra经典部署模式集群类型为\"Cluster\"。 GeminiDB Cassandra云原生部署模式集群类型为\"CloudNativeCluster\"。 GeminiDB Mongo副本集类型为\"ReplicaSet\"。 GeminiDB Mongo集群类型为\"Sharding\"。 GeminiDB Influx经典部署模式集群类型为\"Cluster\"。 GeminiDB Influx经典部署模式单节点类型为\"InfluxdbSingle\"。 GeminiDB Redis经典部署模式集群类型为“Cluster”。
 
         :return: The mode of this ListConfigurationsResult.
         :rtype: str
@@ -256,9 +256,9 @@ class ListConfigurationsResult:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ListConfigurationsResult.
+        r"""Sets the mode of this ListConfigurationsResult.
 
-        数据库实例类型。 GeminiDB Cassandra集群类型为\"Cluster\"。 GeminiDB Mongo副本集类型为\"ReplicaSet\"。 GeminiDB Mongo集群类型为\"Sharding\"。 GeminiDB Influx集群类型为\"Cluster\"。 GeminiDB Influx单节点类型为\"InfluxdbSingle\"。 GeminiDB Redis集群类型为“Cluster”。 GeminiDB Redis主备类型为“Replication”。
+        数据库实例类型。 GeminiDB Cassandra经典部署模式集群类型为\"Cluster\"。 GeminiDB Cassandra云原生部署模式集群类型为\"CloudNativeCluster\"。 GeminiDB Mongo副本集类型为\"ReplicaSet\"。 GeminiDB Mongo集群类型为\"Sharding\"。 GeminiDB Influx经典部署模式集群类型为\"Cluster\"。 GeminiDB Influx经典部署模式单节点类型为\"InfluxdbSingle\"。 GeminiDB Redis经典部署模式集群类型为“Cluster”。
 
         :param mode: The mode of this ListConfigurationsResult.
         :type mode: str
@@ -267,7 +267,7 @@ class ListConfigurationsResult:
 
     @property
     def user_defined(self):
-        """Gets the user_defined of this ListConfigurationsResult.
+        r"""Gets the user_defined of this ListConfigurationsResult.
 
         是否是用户自定义参数模板： - false，表示为系统默认参数模板。 - true，表示为用户自定义参数模板。
 
@@ -278,7 +278,7 @@ class ListConfigurationsResult:
 
     @user_defined.setter
     def user_defined(self, user_defined):
-        """Sets the user_defined of this ListConfigurationsResult.
+        r"""Sets the user_defined of this ListConfigurationsResult.
 
         是否是用户自定义参数模板： - false，表示为系统默认参数模板。 - true，表示为用户自定义参数模板。
 

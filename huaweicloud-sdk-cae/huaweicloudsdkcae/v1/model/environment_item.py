@@ -37,7 +37,7 @@ class EnvironmentItem:
     }
 
     def __init__(self, id=None, name=None, job_id=None, status=None, annotations=None, created_at=None, updated_at=None):
-        """EnvironmentItem
+        r"""EnvironmentItem
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class EnvironmentItem:
 
     @property
     def id(self):
-        """Gets the id of this EnvironmentItem.
+        r"""Gets the id of this EnvironmentItem.
 
         环境ID。
 
@@ -96,7 +96,7 @@ class EnvironmentItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EnvironmentItem.
+        r"""Sets the id of this EnvironmentItem.
 
         环境ID。
 
@@ -107,7 +107,7 @@ class EnvironmentItem:
 
     @property
     def name(self):
-        """Gets the name of this EnvironmentItem.
+        r"""Gets the name of this EnvironmentItem.
 
         环境名称。
 
@@ -118,7 +118,7 @@ class EnvironmentItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvironmentItem.
+        r"""Sets the name of this EnvironmentItem.
 
         环境名称。
 
@@ -129,7 +129,7 @@ class EnvironmentItem:
 
     @property
     def job_id(self):
-        """Gets the job_id of this EnvironmentItem.
+        r"""Gets the job_id of this EnvironmentItem.
 
         任务ID。
 
@@ -140,7 +140,7 @@ class EnvironmentItem:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this EnvironmentItem.
+        r"""Sets the job_id of this EnvironmentItem.
 
         任务ID。
 
@@ -151,7 +151,7 @@ class EnvironmentItem:
 
     @property
     def status(self):
-        """Gets the status of this EnvironmentItem.
+        r"""Gets the status of this EnvironmentItem.
 
         环境状态。
 
@@ -162,7 +162,7 @@ class EnvironmentItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EnvironmentItem.
+        r"""Sets the status of this EnvironmentItem.
 
         环境状态。
 
@@ -173,7 +173,7 @@ class EnvironmentItem:
 
     @property
     def annotations(self):
-        """Gets the annotations of this EnvironmentItem.
+        r"""Gets the annotations of this EnvironmentItem.
 
         环境附加属性。 - cluster_id：CCE集群ID。 - enterprise_project_id：企业项目ID。 - env_category: 环境种类，当前支持v1、v2，在授权云存储时，v1、v2种类环境有所不同。 - group_name：主环境绑定的SWR组织名称。 - inbound_eip_addr：负载均衡绑定EIP地址。 - namespace：CCE集群命名空间。 - public_elb_id：ELB ID，主环境绑定的负载均衡ID。 - type：环境类型，当前仅支持exclusive类型。 - vpc_id：主环境绑定的VPC ID。
 
@@ -184,7 +184,7 @@ class EnvironmentItem:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this EnvironmentItem.
+        r"""Sets the annotations of this EnvironmentItem.
 
         环境附加属性。 - cluster_id：CCE集群ID。 - enterprise_project_id：企业项目ID。 - env_category: 环境种类，当前支持v1、v2，在授权云存储时，v1、v2种类环境有所不同。 - group_name：主环境绑定的SWR组织名称。 - inbound_eip_addr：负载均衡绑定EIP地址。 - namespace：CCE集群命名空间。 - public_elb_id：ELB ID，主环境绑定的负载均衡ID。 - type：环境类型，当前仅支持exclusive类型。 - vpc_id：主环境绑定的VPC ID。
 
@@ -195,7 +195,7 @@ class EnvironmentItem:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EnvironmentItem.
+        r"""Gets the created_at of this EnvironmentItem.
 
         创建时间。
 
@@ -206,7 +206,7 @@ class EnvironmentItem:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EnvironmentItem.
+        r"""Sets the created_at of this EnvironmentItem.
 
         创建时间。
 
@@ -217,7 +217,7 @@ class EnvironmentItem:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EnvironmentItem.
+        r"""Gets the updated_at of this EnvironmentItem.
 
         更新时间。
 
@@ -228,7 +228,7 @@ class EnvironmentItem:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EnvironmentItem.
+        r"""Sets the updated_at of this EnvironmentItem.
 
         更新时间。
 

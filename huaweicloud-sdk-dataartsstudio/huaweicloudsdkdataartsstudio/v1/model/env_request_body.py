@@ -25,7 +25,7 @@ class EnvRequestBody:
     }
 
     def __init__(self, params=None):
-        """EnvRequestBody
+        r"""EnvRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EnvRequestBody:
 
     @property
     def params(self):
-        """Gets the params of this EnvRequestBody.
+        r"""Gets the params of this EnvRequestBody.
 
         环境变量实体信息
 
@@ -54,7 +54,7 @@ class EnvRequestBody:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this EnvRequestBody.
+        r"""Sets the params of this EnvRequestBody.
 
         环境变量实体信息
 

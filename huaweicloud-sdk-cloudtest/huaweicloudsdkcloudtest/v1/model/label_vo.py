@@ -35,7 +35,7 @@ class LabelVo:
     }
 
     def __init__(self, uri=None, region=None, label_name=None, service_type=None, resource_type=None, project_id=None):
-        """LabelVo
+        r"""LabelVo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class LabelVo:
 
     @property
     def uri(self):
-        """Gets the uri of this LabelVo.
+        r"""Gets the uri of this LabelVo.
 
         uri主键
 
@@ -89,7 +89,7 @@ class LabelVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this LabelVo.
+        r"""Sets the uri of this LabelVo.
 
         uri主键
 
@@ -100,7 +100,7 @@ class LabelVo:
 
     @property
     def region(self):
-        """Gets the region of this LabelVo.
+        r"""Gets the region of this LabelVo.
 
         逻辑region
 
@@ -111,7 +111,7 @@ class LabelVo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this LabelVo.
+        r"""Sets the region of this LabelVo.
 
         逻辑region
 
@@ -122,7 +122,7 @@ class LabelVo:
 
     @property
     def label_name(self):
-        """Gets the label_name of this LabelVo.
+        r"""Gets the label_name of this LabelVo.
 
         标签名称
 
@@ -133,7 +133,7 @@ class LabelVo:
 
     @label_name.setter
     def label_name(self, label_name):
-        """Sets the label_name of this LabelVo.
+        r"""Sets the label_name of this LabelVo.
 
         标签名称
 
@@ -144,7 +144,7 @@ class LabelVo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this LabelVo.
+        r"""Gets the service_type of this LabelVo.
 
         服务类型
 
@@ -155,7 +155,7 @@ class LabelVo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this LabelVo.
+        r"""Sets the service_type of this LabelVo.
 
         服务类型
 
@@ -166,7 +166,7 @@ class LabelVo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this LabelVo.
+        r"""Gets the resource_type of this LabelVo.
 
         所属资源类型（TestCase：用例，Task：测试套）
 
@@ -177,7 +177,7 @@ class LabelVo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this LabelVo.
+        r"""Sets the resource_type of this LabelVo.
 
         所属资源类型（TestCase：用例，Task：测试套）
 
@@ -188,7 +188,7 @@ class LabelVo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this LabelVo.
+        r"""Gets the project_id of this LabelVo.
 
         项目ID
 
@@ -199,7 +199,7 @@ class LabelVo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this LabelVo.
+        r"""Sets the project_id of this LabelVo.
 
         项目ID
 

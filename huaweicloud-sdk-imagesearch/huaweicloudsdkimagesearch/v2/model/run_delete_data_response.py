@@ -28,7 +28,7 @@ class RunDeleteDataResponse(SdkResponse):
     }
 
     def __init__(self, result=None, data=None):
-        """RunDeleteDataResponse
+        r"""RunDeleteDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RunDeleteDataResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunDeleteDataResponse.
+        r"""Gets the result of this RunDeleteDataResponse.
 
         删除数据完成返回success。
 
@@ -62,7 +62,7 @@ class RunDeleteDataResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunDeleteDataResponse.
+        r"""Sets the result of this RunDeleteDataResponse.
 
         删除数据完成返回success。
 
@@ -73,7 +73,7 @@ class RunDeleteDataResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this RunDeleteDataResponse.
+        r"""Gets the data of this RunDeleteDataResponse.
 
         :return: The data of this RunDeleteDataResponse.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.DeleteRestInfo`
@@ -82,7 +82,7 @@ class RunDeleteDataResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this RunDeleteDataResponse.
+        r"""Sets the data of this RunDeleteDataResponse.
 
         :param data: The data of this RunDeleteDataResponse.
         :type data: :class:`huaweicloudsdkimagesearch.v2.DeleteRestInfo`

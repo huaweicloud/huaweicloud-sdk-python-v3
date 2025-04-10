@@ -32,7 +32,7 @@ class ListMonitoredObjectsResponse(SdkResponse):
     }
 
     def __init__(self, router=None, children=None, instances=None, total=None):
-        """ListMonitoredObjectsResponse
+        r"""ListMonitoredObjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListMonitoredObjectsResponse(SdkResponse):
 
     @property
     def router(self):
-        """Gets the router of this ListMonitoredObjectsResponse.
+        r"""Gets the router of this ListMonitoredObjectsResponse.
 
         当前查询维度路由。如果是主维度，则数组中是自身ID。
 
@@ -76,7 +76,7 @@ class ListMonitoredObjectsResponse(SdkResponse):
 
     @router.setter
     def router(self, router):
-        """Sets the router of this ListMonitoredObjectsResponse.
+        r"""Sets the router of this ListMonitoredObjectsResponse.
 
         当前查询维度路由。如果是主维度，则数组中是自身ID。
 
@@ -87,7 +87,7 @@ class ListMonitoredObjectsResponse(SdkResponse):
 
     @property
     def children(self):
-        """Gets the children of this ListMonitoredObjectsResponse.
+        r"""Gets the children of this ListMonitoredObjectsResponse.
 
         当前查询维度子维度对象列表。当前只有维度为dcs_instance_id时才有值。 - Proxy集群有两个子维度，分别为dcs_cluster_redis_node和dcs_cluster_proxy_node。 - Cluster集群有一个子维度 dcs_cluster_proxy_node。 
 
@@ -98,7 +98,7 @@ class ListMonitoredObjectsResponse(SdkResponse):
 
     @children.setter
     def children(self, children):
-        """Sets the children of this ListMonitoredObjectsResponse.
+        r"""Sets the children of this ListMonitoredObjectsResponse.
 
         当前查询维度子维度对象列表。当前只有维度为dcs_instance_id时才有值。 - Proxy集群有两个子维度，分别为dcs_cluster_redis_node和dcs_cluster_proxy_node。 - Cluster集群有一个子维度 dcs_cluster_proxy_node。 
 
@@ -109,7 +109,7 @@ class ListMonitoredObjectsResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListMonitoredObjectsResponse.
+        r"""Gets the instances of this ListMonitoredObjectsResponse.
 
         当前查询维度监控对象列表。
 
@@ -120,7 +120,7 @@ class ListMonitoredObjectsResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListMonitoredObjectsResponse.
+        r"""Sets the instances of this ListMonitoredObjectsResponse.
 
         当前查询维度监控对象列表。
 
@@ -131,7 +131,7 @@ class ListMonitoredObjectsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListMonitoredObjectsResponse.
+        r"""Gets the total of this ListMonitoredObjectsResponse.
 
         主维度监控对象的总数。
 
@@ -142,7 +142,7 @@ class ListMonitoredObjectsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListMonitoredObjectsResponse.
+        r"""Sets the total of this ListMonitoredObjectsResponse.
 
         主维度监控对象的总数。
 

@@ -28,7 +28,7 @@ class AuthServerAccessMode:
     }
 
     def __init__(self):
-        """AuthServerAccessMode
+        r"""AuthServerAccessMode
 
         The model defined in huaweicloud sdk
 

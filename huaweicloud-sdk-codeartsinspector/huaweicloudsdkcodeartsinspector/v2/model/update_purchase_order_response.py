@@ -26,7 +26,7 @@ class UpdatePurchaseOrderResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None):
-        """UpdatePurchaseOrderResponse
+        r"""UpdatePurchaseOrderResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdatePurchaseOrderResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this UpdatePurchaseOrderResponse.
+        r"""Gets the order_id of this UpdatePurchaseOrderResponse.
 
         order_id
 
@@ -55,7 +55,7 @@ class UpdatePurchaseOrderResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this UpdatePurchaseOrderResponse.
+        r"""Sets the order_id of this UpdatePurchaseOrderResponse.
 
         order_id
 

@@ -24,7 +24,7 @@ class CreateTranscodingsTemplateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateTranscodingsTemplateResponse
+        r"""CreateTranscodingsTemplateResponse
 
         The model defined in huaweicloud sdk
 

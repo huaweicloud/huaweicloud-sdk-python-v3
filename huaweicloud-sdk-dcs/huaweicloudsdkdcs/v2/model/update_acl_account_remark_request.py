@@ -29,7 +29,7 @@ class UpdateAclAccountRemarkRequest:
     }
 
     def __init__(self, instance_id=None, account_id=None, body=None):
-        """UpdateAclAccountRemarkRequest
+        r"""UpdateAclAccountRemarkRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateAclAccountRemarkRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateAclAccountRemarkRequest.
+        r"""Gets the instance_id of this UpdateAclAccountRemarkRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class UpdateAclAccountRemarkRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateAclAccountRemarkRequest.
+        r"""Sets the instance_id of this UpdateAclAccountRemarkRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class UpdateAclAccountRemarkRequest:
 
     @property
     def account_id(self):
-        """Gets the account_id of this UpdateAclAccountRemarkRequest.
+        r"""Gets the account_id of this UpdateAclAccountRemarkRequest.
 
         ACL账号ID。
 
@@ -88,7 +88,7 @@ class UpdateAclAccountRemarkRequest:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this UpdateAclAccountRemarkRequest.
+        r"""Sets the account_id of this UpdateAclAccountRemarkRequest.
 
         ACL账号ID。
 
@@ -99,7 +99,7 @@ class UpdateAclAccountRemarkRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAclAccountRemarkRequest.
+        r"""Gets the body of this UpdateAclAccountRemarkRequest.
 
         :return: The body of this UpdateAclAccountRemarkRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateAclAccountRemarkRequestBody`
@@ -108,7 +108,7 @@ class UpdateAclAccountRemarkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAclAccountRemarkRequest.
+        r"""Sets the body of this UpdateAclAccountRemarkRequest.
 
         :param body: The body of this UpdateAclAccountRemarkRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.UpdateAclAccountRemarkRequestBody`

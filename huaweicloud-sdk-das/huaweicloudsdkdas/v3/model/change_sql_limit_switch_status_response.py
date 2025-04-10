@@ -26,7 +26,7 @@ class ChangeSqlLimitSwitchStatusResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ChangeSqlLimitSwitchStatusResponse
+        r"""ChangeSqlLimitSwitchStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeSqlLimitSwitchStatusResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ChangeSqlLimitSwitchStatusResponse.
+        r"""Gets the job_id of this ChangeSqlLimitSwitchStatusResponse.
 
         SQL限流任务ID
 
@@ -55,7 +55,7 @@ class ChangeSqlLimitSwitchStatusResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ChangeSqlLimitSwitchStatusResponse.
+        r"""Sets the job_id of this ChangeSqlLimitSwitchStatusResponse.
 
         SQL限流任务ID
 

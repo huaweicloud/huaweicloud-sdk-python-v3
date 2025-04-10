@@ -41,7 +41,7 @@ class JobDetail:
     }
 
     def __init__(self, job_id=None, job_type=None, job_status=None, sub_jobs=None, begin_time=None, end_time=None, expected_end_time=None, execute_code=None, execute_message=None):
-        """JobDetail
+        r"""JobDetail
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class JobDetail:
 
     @property
     def job_id(self):
-        """Gets the job_id of this JobDetail.
+        r"""Gets the job_id of this JobDetail.
 
         任务ID。
 
@@ -110,7 +110,7 @@ class JobDetail:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this JobDetail.
+        r"""Sets the job_id of this JobDetail.
 
         任务ID。
 
@@ -121,7 +121,7 @@ class JobDetail:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobDetail.
+        r"""Gets the job_type of this JobDetail.
 
         job类型，固定值1。
 
@@ -132,7 +132,7 @@ class JobDetail:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobDetail.
+        r"""Sets the job_type of this JobDetail.
 
         job类型，固定值1。
 
@@ -143,7 +143,7 @@ class JobDetail:
 
     @property
     def job_status(self):
-        """Gets the job_status of this JobDetail.
+        r"""Gets the job_status of this JobDetail.
 
         job执行状态 - 0：失败。（如果是开通失败，云运营查询到失败状态，直接退费给客户。如果是变更失败，当前是发运维工单，暂时还不是直接退费给客户。） - 1：成功。（处理结果成功。） - 2：处理中。 - 3：正在初始化。
 
@@ -154,7 +154,7 @@ class JobDetail:
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this JobDetail.
+        r"""Sets the job_status of this JobDetail.
 
         job执行状态 - 0：失败。（如果是开通失败，云运营查询到失败状态，直接退费给客户。如果是变更失败，当前是发运维工单，暂时还不是直接退费给客户。） - 1：成功。（处理结果成功。） - 2：处理中。 - 3：正在初始化。
 
@@ -165,7 +165,7 @@ class JobDetail:
 
     @property
     def sub_jobs(self):
-        """Gets the sub_jobs of this JobDetail.
+        r"""Gets the sub_jobs of this JobDetail.
 
         子任务信息。
 
@@ -176,7 +176,7 @@ class JobDetail:
 
     @sub_jobs.setter
     def sub_jobs(self, sub_jobs):
-        """Sets the sub_jobs of this JobDetail.
+        r"""Sets the sub_jobs of this JobDetail.
 
         子任务信息。
 
@@ -187,7 +187,7 @@ class JobDetail:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this JobDetail.
+        r"""Gets the begin_time of this JobDetail.
 
         Job处理开始时间。
 
@@ -198,7 +198,7 @@ class JobDetail:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this JobDetail.
+        r"""Sets the begin_time of this JobDetail.
 
         Job处理开始时间。
 
@@ -209,7 +209,7 @@ class JobDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this JobDetail.
+        r"""Gets the end_time of this JobDetail.
 
         job处理结束时间。
 
@@ -220,7 +220,7 @@ class JobDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this JobDetail.
+        r"""Sets the end_time of this JobDetail.
 
         job处理结束时间。
 
@@ -231,7 +231,7 @@ class JobDetail:
 
     @property
     def expected_end_time(self):
-        """Gets the expected_end_time of this JobDetail.
+        r"""Gets the expected_end_time of this JobDetail.
 
         云服务预估的Job处理结束时间，只针对job有效，针对子job无效。
 
@@ -242,7 +242,7 @@ class JobDetail:
 
     @expected_end_time.setter
     def expected_end_time(self, expected_end_time):
-        """Sets the expected_end_time of this JobDetail.
+        r"""Sets the expected_end_time of this JobDetail.
 
         云服务预估的Job处理结束时间，只针对job有效，针对子job无效。
 
@@ -253,7 +253,7 @@ class JobDetail:
 
     @property
     def execute_code(self):
-        """Gets the execute_code of this JobDetail.
+        r"""Gets the execute_code of this JobDetail.
 
         Job执行结果码
 
@@ -264,7 +264,7 @@ class JobDetail:
 
     @execute_code.setter
     def execute_code(self, execute_code):
-        """Sets the execute_code of this JobDetail.
+        r"""Sets the execute_code of this JobDetail.
 
         Job执行结果码
 
@@ -275,7 +275,7 @@ class JobDetail:
 
     @property
     def execute_message(self):
-        """Gets the execute_message of this JobDetail.
+        r"""Gets the execute_message of this JobDetail.
 
         Job执行结果描述，以及每个SubJob的执行结果描述。
 
@@ -286,7 +286,7 @@ class JobDetail:
 
     @execute_message.setter
     def execute_message(self, execute_message):
-        """Sets the execute_message of this JobDetail.
+        r"""Sets the execute_message of this JobDetail.
 
         Job执行结果描述，以及每个SubJob的执行结果描述。
 

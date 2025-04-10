@@ -37,7 +37,7 @@ class ServerDataPoints:
     }
 
     def __init__(self, average=None, max=None, min=None, sum=None, variance=None, timestamp=None, unit=None):
-        """ServerDataPoints
+        r"""ServerDataPoints
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ServerDataPoints:
 
     @property
     def average(self):
-        """Gets the average of this ServerDataPoints.
+        r"""Gets the average of this ServerDataPoints.
 
         聚合周期内指标数据的平均值。
 
@@ -96,7 +96,7 @@ class ServerDataPoints:
 
     @average.setter
     def average(self, average):
-        """Sets the average of this ServerDataPoints.
+        r"""Sets the average of this ServerDataPoints.
 
         聚合周期内指标数据的平均值。
 
@@ -107,7 +107,7 @@ class ServerDataPoints:
 
     @property
     def max(self):
-        """Gets the max of this ServerDataPoints.
+        r"""Gets the max of this ServerDataPoints.
 
         聚合周期内指标数据的最大值。
 
@@ -118,7 +118,7 @@ class ServerDataPoints:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this ServerDataPoints.
+        r"""Sets the max of this ServerDataPoints.
 
         聚合周期内指标数据的最大值。
 
@@ -129,7 +129,7 @@ class ServerDataPoints:
 
     @property
     def min(self):
-        """Gets the min of this ServerDataPoints.
+        r"""Gets the min of this ServerDataPoints.
 
         聚合周期内指标数据的最小值。
 
@@ -140,7 +140,7 @@ class ServerDataPoints:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this ServerDataPoints.
+        r"""Sets the min of this ServerDataPoints.
 
         聚合周期内指标数据的最小值。
 
@@ -151,7 +151,7 @@ class ServerDataPoints:
 
     @property
     def sum(self):
-        """Gets the sum of this ServerDataPoints.
+        r"""Gets the sum of this ServerDataPoints.
 
         聚合周期内指标数据的求和值。
 
@@ -162,7 +162,7 @@ class ServerDataPoints:
 
     @sum.setter
     def sum(self, sum):
-        """Sets the sum of this ServerDataPoints.
+        r"""Sets the sum of this ServerDataPoints.
 
         聚合周期内指标数据的求和值。
 
@@ -173,7 +173,7 @@ class ServerDataPoints:
 
     @property
     def variance(self):
-        """Gets the variance of this ServerDataPoints.
+        r"""Gets the variance of this ServerDataPoints.
 
         聚合周期内指标数据的方差。
 
@@ -184,7 +184,7 @@ class ServerDataPoints:
 
     @variance.setter
     def variance(self, variance):
-        """Sets the variance of this ServerDataPoints.
+        r"""Sets the variance of this ServerDataPoints.
 
         聚合周期内指标数据的方差。
 
@@ -195,7 +195,7 @@ class ServerDataPoints:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ServerDataPoints.
+        r"""Gets the timestamp of this ServerDataPoints.
 
         指标采集时间，UNIX时间戳，单位毫秒。
 
@@ -206,7 +206,7 @@ class ServerDataPoints:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ServerDataPoints.
+        r"""Sets the timestamp of this ServerDataPoints.
 
         指标采集时间，UNIX时间戳，单位毫秒。
 
@@ -217,7 +217,7 @@ class ServerDataPoints:
 
     @property
     def unit(self):
-        """Gets the unit of this ServerDataPoints.
+        r"""Gets the unit of this ServerDataPoints.
 
         指标单位。
 
@@ -228,7 +228,7 @@ class ServerDataPoints:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ServerDataPoints.
+        r"""Sets the unit of this ServerDataPoints.
 
         指标单位。
 

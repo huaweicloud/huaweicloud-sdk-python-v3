@@ -25,7 +25,7 @@ class ShowRefundOrderDetailsRequest:
     }
 
     def __init__(self, order_id=None):
-        """ShowRefundOrderDetailsRequest
+        r"""ShowRefundOrderDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowRefundOrderDetailsRequest:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowRefundOrderDetailsRequest.
+        r"""Gets the order_id of this ShowRefundOrderDetailsRequest.
 
         退订订单或者降配订单的ID。
 
@@ -53,7 +53,7 @@ class ShowRefundOrderDetailsRequest:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowRefundOrderDetailsRequest.
+        r"""Sets the order_id of this ShowRefundOrderDetailsRequest.
 
         退订订单或者降配订单的ID。
 

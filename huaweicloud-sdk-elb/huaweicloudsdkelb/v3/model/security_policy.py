@@ -41,7 +41,7 @@ class SecurityPolicy:
     }
 
     def __init__(self, id=None, project_id=None, name=None, description=None, listeners=None, protocols=None, ciphers=None, created_at=None, updated_at=None):
-        """SecurityPolicy
+        r"""SecurityPolicy
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class SecurityPolicy:
 
     @property
     def id(self):
-        """Gets the id of this SecurityPolicy.
+        r"""Gets the id of this SecurityPolicy.
 
         自定义安全安全策略的id。
 
@@ -101,7 +101,7 @@ class SecurityPolicy:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecurityPolicy.
+        r"""Sets the id of this SecurityPolicy.
 
         自定义安全安全策略的id。
 
@@ -112,7 +112,7 @@ class SecurityPolicy:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SecurityPolicy.
+        r"""Gets the project_id of this SecurityPolicy.
 
         自定义安全策略的项目id。
 
@@ -123,7 +123,7 @@ class SecurityPolicy:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SecurityPolicy.
+        r"""Sets the project_id of this SecurityPolicy.
 
         自定义安全策略的项目id。
 
@@ -134,7 +134,7 @@ class SecurityPolicy:
 
     @property
     def name(self):
-        """Gets the name of this SecurityPolicy.
+        r"""Gets the name of this SecurityPolicy.
 
         自定义安全策略的名称
 
@@ -145,7 +145,7 @@ class SecurityPolicy:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SecurityPolicy.
+        r"""Sets the name of this SecurityPolicy.
 
         自定义安全策略的名称
 
@@ -156,7 +156,7 @@ class SecurityPolicy:
 
     @property
     def description(self):
-        """Gets the description of this SecurityPolicy.
+        r"""Gets the description of this SecurityPolicy.
 
         自定义安全策略的描述。
 
@@ -167,7 +167,7 @@ class SecurityPolicy:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SecurityPolicy.
+        r"""Sets the description of this SecurityPolicy.
 
         自定义安全策略的描述。
 
@@ -178,7 +178,7 @@ class SecurityPolicy:
 
     @property
     def listeners(self):
-        """Gets the listeners of this SecurityPolicy.
+        r"""Gets the listeners of this SecurityPolicy.
 
         自定义安全策略关联的监听器。
 
@@ -189,7 +189,7 @@ class SecurityPolicy:
 
     @listeners.setter
     def listeners(self, listeners):
-        """Sets the listeners of this SecurityPolicy.
+        r"""Sets the listeners of this SecurityPolicy.
 
         自定义安全策略关联的监听器。
 
@@ -200,7 +200,7 @@ class SecurityPolicy:
 
     @property
     def protocols(self):
-        """Gets the protocols of this SecurityPolicy.
+        r"""Gets the protocols of this SecurityPolicy.
 
         自定义安全策略的TLS协议列表。
 
@@ -211,7 +211,7 @@ class SecurityPolicy:
 
     @protocols.setter
     def protocols(self, protocols):
-        """Sets the protocols of this SecurityPolicy.
+        r"""Sets the protocols of this SecurityPolicy.
 
         自定义安全策略的TLS协议列表。
 
@@ -222,7 +222,7 @@ class SecurityPolicy:
 
     @property
     def ciphers(self):
-        """Gets the ciphers of this SecurityPolicy.
+        r"""Gets the ciphers of this SecurityPolicy.
 
         自定义安全策略的加密套件列表。
 
@@ -233,7 +233,7 @@ class SecurityPolicy:
 
     @ciphers.setter
     def ciphers(self, ciphers):
-        """Sets the ciphers of this SecurityPolicy.
+        r"""Sets the ciphers of this SecurityPolicy.
 
         自定义安全策略的加密套件列表。
 
@@ -244,7 +244,7 @@ class SecurityPolicy:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SecurityPolicy.
+        r"""Gets the created_at of this SecurityPolicy.
 
         自定义安全策略的创建时间。
 
@@ -255,7 +255,7 @@ class SecurityPolicy:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SecurityPolicy.
+        r"""Sets the created_at of this SecurityPolicy.
 
         自定义安全策略的创建时间。
 
@@ -266,7 +266,7 @@ class SecurityPolicy:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SecurityPolicy.
+        r"""Gets the updated_at of this SecurityPolicy.
 
         自定义安全策略的更新时间。
 
@@ -277,7 +277,7 @@ class SecurityPolicy:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SecurityPolicy.
+        r"""Sets the updated_at of this SecurityPolicy.
 
         自定义安全策略的更新时间。
 

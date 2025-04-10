@@ -27,7 +27,7 @@ class ListTicketParams:
     }
 
     def __init__(self, string_filters=None, sort_filter=None):
-        """ListTicketParams
+        r"""ListTicketParams
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListTicketParams:
 
     @property
     def string_filters(self):
-        """Gets the string_filters of this ListTicketParams.
+        r"""Gets the string_filters of this ListTicketParams.
 
         字符串搜索条件
 
@@ -60,7 +60,7 @@ class ListTicketParams:
 
     @string_filters.setter
     def string_filters(self, string_filters):
-        """Sets the string_filters of this ListTicketParams.
+        r"""Sets the string_filters of this ListTicketParams.
 
         字符串搜索条件
 
@@ -71,7 +71,7 @@ class ListTicketParams:
 
     @property
     def sort_filter(self):
-        """Gets the sort_filter of this ListTicketParams.
+        r"""Gets the sort_filter of this ListTicketParams.
 
         :return: The sort_filter of this ListTicketParams.
         :rtype: :class:`huaweicloudsdkcoc.v1.ObjectFilter`
@@ -80,7 +80,7 @@ class ListTicketParams:
 
     @sort_filter.setter
     def sort_filter(self, sort_filter):
-        """Sets the sort_filter of this ListTicketParams.
+        r"""Sets the sort_filter of this ListTicketParams.
 
         :param sort_filter: The sort_filter of this ListTicketParams.
         :type sort_filter: :class:`huaweicloudsdkcoc.v1.ObjectFilter`

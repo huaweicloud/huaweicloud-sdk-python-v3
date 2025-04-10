@@ -24,7 +24,7 @@ class DeleteSubNetworkInterfaceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteSubNetworkInterfaceResponse
+        r"""DeleteSubNetworkInterfaceResponse
 
         The model defined in huaweicloud sdk
 

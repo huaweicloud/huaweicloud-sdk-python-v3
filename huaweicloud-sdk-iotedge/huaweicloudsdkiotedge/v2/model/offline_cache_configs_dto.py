@@ -29,7 +29,7 @@ class OfflineCacheConfigsDTO:
     }
 
     def __init__(self, publish_order=None, period=None, capacity=None):
-        """OfflineCacheConfigsDTO
+        r"""OfflineCacheConfigsDTO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class OfflineCacheConfigsDTO:
 
     @property
     def publish_order(self):
-        """Gets the publish_order of this OfflineCacheConfigsDTO.
+        r"""Gets the publish_order of this OfflineCacheConfigsDTO.
 
         数据上报优先级，可选项：realtime_first实时数据优先 sequential按时序上报，默认realtime_first
 
@@ -68,7 +68,7 @@ class OfflineCacheConfigsDTO:
 
     @publish_order.setter
     def publish_order(self, publish_order):
-        """Sets the publish_order of this OfflineCacheConfigsDTO.
+        r"""Sets the publish_order of this OfflineCacheConfigsDTO.
 
         数据上报优先级，可选项：realtime_first实时数据优先 sequential按时序上报，默认realtime_first
 
@@ -79,7 +79,7 @@ class OfflineCacheConfigsDTO:
 
     @property
     def period(self):
-        """Gets the period of this OfflineCacheConfigsDTO.
+        r"""Gets the period of this OfflineCacheConfigsDTO.
 
         节点离线缓存数据的储存天数，默认7，取值范围-1~14，-1表示存储天数没有限制
 
@@ -90,7 +90,7 @@ class OfflineCacheConfigsDTO:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this OfflineCacheConfigsDTO.
+        r"""Sets the period of this OfflineCacheConfigsDTO.
 
         节点离线缓存数据的储存天数，默认7，取值范围-1~14，-1表示存储天数没有限制
 
@@ -101,7 +101,7 @@ class OfflineCacheConfigsDTO:
 
     @property
     def capacity(self):
-        """Gets the capacity of this OfflineCacheConfigsDTO.
+        r"""Gets the capacity of this OfflineCacheConfigsDTO.
 
         节点离线缓存容量，单位MB，默认2048，取值范围500-8192
 
@@ -112,7 +112,7 @@ class OfflineCacheConfigsDTO:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this OfflineCacheConfigsDTO.
+        r"""Sets the capacity of this OfflineCacheConfigsDTO.
 
         节点离线缓存容量，单位MB，默认2048，取值范围500-8192
 

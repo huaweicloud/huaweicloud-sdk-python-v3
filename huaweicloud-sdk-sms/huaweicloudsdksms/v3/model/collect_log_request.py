@@ -27,7 +27,7 @@ class CollectLogRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """CollectLogRequest
+        r"""CollectLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CollectLogRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CollectLogRequest.
+        r"""Gets the task_id of this CollectLogRequest.
 
         迁移任务ID
 
@@ -60,7 +60,7 @@ class CollectLogRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CollectLogRequest.
+        r"""Sets the task_id of this CollectLogRequest.
 
         迁移任务ID
 
@@ -71,7 +71,7 @@ class CollectLogRequest:
 
     @property
     def body(self):
-        """Gets the body of this CollectLogRequest.
+        r"""Gets the body of this CollectLogRequest.
 
         :return: The body of this CollectLogRequest.
         :rtype: :class:`huaweicloudsdksms.v3.UploadLogRequestBody`
@@ -80,7 +80,7 @@ class CollectLogRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CollectLogRequest.
+        r"""Sets the body of this CollectLogRequest.
 
         :param body: The body of this CollectLogRequest.
         :type body: :class:`huaweicloudsdksms.v3.UploadLogRequestBody`

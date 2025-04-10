@@ -40,7 +40,7 @@ class ShowMetadataResponse(SdkResponse):
     }
 
     def __init__(self, backup_id=None, backups=None, flavor=None, floatingips=None, interface=None, ports=None, server=None, volumes=None):
-        """ShowMetadataResponse
+        r"""ShowMetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ShowMetadataResponse.
+        r"""Gets the backup_id of this ShowMetadataResponse.
 
         备份ID
 
@@ -104,7 +104,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ShowMetadataResponse.
+        r"""Sets the backup_id of this ShowMetadataResponse.
 
         备份ID
 
@@ -115,7 +115,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def backups(self):
-        """Gets the backups of this ShowMetadataResponse.
+        r"""Gets the backups of this ShowMetadataResponse.
 
         云服务器备份信息
 
@@ -126,7 +126,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @backups.setter
     def backups(self, backups):
-        """Sets the backups of this ShowMetadataResponse.
+        r"""Sets the backups of this ShowMetadataResponse.
 
         云服务器备份信息
 
@@ -137,7 +137,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def flavor(self):
-        """Gets the flavor of this ShowMetadataResponse.
+        r"""Gets the flavor of this ShowMetadataResponse.
 
         云服务器规格信息
 
@@ -148,7 +148,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ShowMetadataResponse.
+        r"""Sets the flavor of this ShowMetadataResponse.
 
         云服务器规格信息
 
@@ -159,7 +159,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def floatingips(self):
-        """Gets the floatingips of this ShowMetadataResponse.
+        r"""Gets the floatingips of this ShowMetadataResponse.
 
         云服务器浮动IP信息
 
@@ -170,7 +170,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @floatingips.setter
     def floatingips(self, floatingips):
-        """Sets the floatingips of this ShowMetadataResponse.
+        r"""Sets the floatingips of this ShowMetadataResponse.
 
         云服务器浮动IP信息
 
@@ -181,7 +181,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def interface(self):
-        """Gets the interface of this ShowMetadataResponse.
+        r"""Gets the interface of this ShowMetadataResponse.
 
         云服务器接口信息
 
@@ -192,7 +192,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @interface.setter
     def interface(self, interface):
-        """Sets the interface of this ShowMetadataResponse.
+        r"""Sets the interface of this ShowMetadataResponse.
 
         云服务器接口信息
 
@@ -203,7 +203,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def ports(self):
-        """Gets the ports of this ShowMetadataResponse.
+        r"""Gets the ports of this ShowMetadataResponse.
 
         云服务器端口信息
 
@@ -214,7 +214,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this ShowMetadataResponse.
+        r"""Sets the ports of this ShowMetadataResponse.
 
         云服务器端口信息
 
@@ -225,7 +225,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def server(self):
-        """Gets the server of this ShowMetadataResponse.
+        r"""Gets the server of this ShowMetadataResponse.
 
         云服务器信息
 
@@ -236,7 +236,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @server.setter
     def server(self, server):
-        """Sets the server of this ShowMetadataResponse.
+        r"""Sets the server of this ShowMetadataResponse.
 
         云服务器信息
 
@@ -247,7 +247,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def volumes(self):
-        """Gets the volumes of this ShowMetadataResponse.
+        r"""Gets the volumes of this ShowMetadataResponse.
 
         云服务器卷信息
 
@@ -258,7 +258,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this ShowMetadataResponse.
+        r"""Sets the volumes of this ShowMetadataResponse.
 
         云服务器卷信息
 

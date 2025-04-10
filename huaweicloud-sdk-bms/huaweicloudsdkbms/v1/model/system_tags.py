@@ -27,7 +27,7 @@ class SystemTags:
     }
 
     def __init__(self, key=None, value=None):
-        """SystemTags
+        r"""SystemTags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SystemTags:
 
     @property
     def key(self):
-        """Gets the key of this SystemTags.
+        r"""Gets the key of this SystemTags.
 
         键。最大长度36个unicode字符。key不能为空。不能包含非打印字符ASCII（0-31），以及特殊字符同一资源的key值不能重复。
 
@@ -61,7 +61,7 @@ class SystemTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this SystemTags.
+        r"""Sets the key of this SystemTags.
 
         键。最大长度36个unicode字符。key不能为空。不能包含非打印字符ASCII（0-31），以及特殊字符同一资源的key值不能重复。
 
@@ -72,7 +72,7 @@ class SystemTags:
 
     @property
     def value(self):
-        """Gets the value of this SystemTags.
+        r"""Gets the value of this SystemTags.
 
         值。每个值最大长度43个unicode字符，可以为空字符串。不能包含非打印字符ASCII（0-31），以及特殊字符
 
@@ -83,7 +83,7 @@ class SystemTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SystemTags.
+        r"""Sets the value of this SystemTags.
 
         值。每个值最大长度43个unicode字符，可以为空字符串。不能包含非打印字符ASCII（0-31），以及特殊字符
 

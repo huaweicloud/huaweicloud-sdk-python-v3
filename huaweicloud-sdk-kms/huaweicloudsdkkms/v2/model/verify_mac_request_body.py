@@ -31,7 +31,7 @@ class VerifyMacRequestBody:
     }
 
     def __init__(self, key_id=None, mac_algorithm=None, message=None, mac=None):
-        """VerifyMacRequestBody
+        r"""VerifyMacRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class VerifyMacRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this VerifyMacRequestBody.
+        r"""Gets the key_id of this VerifyMacRequestBody.
 
         密钥ID
 
@@ -71,7 +71,7 @@ class VerifyMacRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this VerifyMacRequestBody.
+        r"""Sets the key_id of this VerifyMacRequestBody.
 
         密钥ID
 
@@ -82,7 +82,7 @@ class VerifyMacRequestBody:
 
     @property
     def mac_algorithm(self):
-        """Gets the mac_algorithm of this VerifyMacRequestBody.
+        r"""Gets the mac_algorithm of this VerifyMacRequestBody.
 
         Mac算法，HMAC_SM3只有中国区支持。枚举如下： - HMAC_SHA_256 - HMAC_SHA_384 - HMAC_SHA_512 - HMAC_SM3
 
@@ -93,7 +93,7 @@ class VerifyMacRequestBody:
 
     @mac_algorithm.setter
     def mac_algorithm(self, mac_algorithm):
-        """Sets the mac_algorithm of this VerifyMacRequestBody.
+        r"""Sets the mac_algorithm of this VerifyMacRequestBody.
 
         Mac算法，HMAC_SM3只有中国区支持。枚举如下： - HMAC_SHA_256 - HMAC_SHA_384 - HMAC_SHA_512 - HMAC_SM3
 
@@ -104,7 +104,7 @@ class VerifyMacRequestBody:
 
     @property
     def message(self):
-        """Gets the message of this VerifyMacRequestBody.
+        r"""Gets the message of this VerifyMacRequestBody.
 
         待处理消息。原消息最小长度1、最大长度4096。请将原消息转为Base64格式后传入
 
@@ -115,7 +115,7 @@ class VerifyMacRequestBody:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this VerifyMacRequestBody.
+        r"""Sets the message of this VerifyMacRequestBody.
 
         待处理消息。原消息最小长度1、最大长度4096。请将原消息转为Base64格式后传入
 
@@ -126,7 +126,7 @@ class VerifyMacRequestBody:
 
     @property
     def mac(self):
-        """Gets the mac of this VerifyMacRequestBody.
+        r"""Gets the mac of this VerifyMacRequestBody.
 
         待校验的消息验证码
 
@@ -137,7 +137,7 @@ class VerifyMacRequestBody:
 
     @mac.setter
     def mac(self, mac):
-        """Sets the mac of this VerifyMacRequestBody.
+        r"""Sets the mac of this VerifyMacRequestBody.
 
         待校验的消息验证码
 

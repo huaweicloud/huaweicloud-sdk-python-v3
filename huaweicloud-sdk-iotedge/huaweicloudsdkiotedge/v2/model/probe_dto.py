@@ -37,7 +37,7 @@ class ProbeDTO:
     }
 
     def __init__(self, exec_command=None, tcp_socket=None, http_get=None, initial_delay_seconds=None, timeout_seconds=None, period_seconds=None, failure_threshold=None):
-        """ProbeDTO
+        r"""ProbeDTO
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ProbeDTO:
 
     @property
     def exec_command(self):
-        """Gets the exec_command of this ProbeDTO.
+        r"""Gets the exec_command of this ProbeDTO.
 
         执行探测的命令行命令
 
@@ -94,7 +94,7 @@ class ProbeDTO:
 
     @exec_command.setter
     def exec_command(self, exec_command):
-        """Sets the exec_command of this ProbeDTO.
+        r"""Sets the exec_command of this ProbeDTO.
 
         执行探测的命令行命令
 
@@ -105,7 +105,7 @@ class ProbeDTO:
 
     @property
     def tcp_socket(self):
-        """Gets the tcp_socket of this ProbeDTO.
+        r"""Gets the tcp_socket of this ProbeDTO.
 
         :return: The tcp_socket of this ProbeDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.TcpSocketDTO`
@@ -114,7 +114,7 @@ class ProbeDTO:
 
     @tcp_socket.setter
     def tcp_socket(self, tcp_socket):
-        """Sets the tcp_socket of this ProbeDTO.
+        r"""Sets the tcp_socket of this ProbeDTO.
 
         :param tcp_socket: The tcp_socket of this ProbeDTO.
         :type tcp_socket: :class:`huaweicloudsdkiotedge.v2.TcpSocketDTO`
@@ -123,7 +123,7 @@ class ProbeDTO:
 
     @property
     def http_get(self):
-        """Gets the http_get of this ProbeDTO.
+        r"""Gets the http_get of this ProbeDTO.
 
         :return: The http_get of this ProbeDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.HttpGetDTO`
@@ -132,7 +132,7 @@ class ProbeDTO:
 
     @http_get.setter
     def http_get(self, http_get):
-        """Sets the http_get of this ProbeDTO.
+        r"""Sets the http_get of this ProbeDTO.
 
         :param http_get: The http_get of this ProbeDTO.
         :type http_get: :class:`huaweicloudsdkiotedge.v2.HttpGetDTO`
@@ -141,7 +141,7 @@ class ProbeDTO:
 
     @property
     def initial_delay_seconds(self):
-        """Gets the initial_delay_seconds of this ProbeDTO.
+        r"""Gets the initial_delay_seconds of this ProbeDTO.
 
         表示从工作负载启动后从多久开始探测
 
@@ -152,7 +152,7 @@ class ProbeDTO:
 
     @initial_delay_seconds.setter
     def initial_delay_seconds(self, initial_delay_seconds):
-        """Sets the initial_delay_seconds of this ProbeDTO.
+        r"""Sets the initial_delay_seconds of this ProbeDTO.
 
         表示从工作负载启动后从多久开始探测
 
@@ -163,7 +163,7 @@ class ProbeDTO:
 
     @property
     def timeout_seconds(self):
-        """Gets the timeout_seconds of this ProbeDTO.
+        r"""Gets the timeout_seconds of this ProbeDTO.
 
         表示探测超时时间
 
@@ -174,7 +174,7 @@ class ProbeDTO:
 
     @timeout_seconds.setter
     def timeout_seconds(self, timeout_seconds):
-        """Sets the timeout_seconds of this ProbeDTO.
+        r"""Sets the timeout_seconds of this ProbeDTO.
 
         表示探测超时时间
 
@@ -185,7 +185,7 @@ class ProbeDTO:
 
     @property
     def period_seconds(self):
-        """Gets the period_seconds of this ProbeDTO.
+        r"""Gets the period_seconds of this ProbeDTO.
 
         检查周期
 
@@ -196,7 +196,7 @@ class ProbeDTO:
 
     @period_seconds.setter
     def period_seconds(self, period_seconds):
-        """Sets the period_seconds of this ProbeDTO.
+        r"""Sets the period_seconds of this ProbeDTO.
 
         检查周期
 
@@ -207,7 +207,7 @@ class ProbeDTO:
 
     @property
     def failure_threshold(self):
-        """Gets the failure_threshold of this ProbeDTO.
+        r"""Gets the failure_threshold of this ProbeDTO.
 
         失败多少次算不健康
 
@@ -218,7 +218,7 @@ class ProbeDTO:
 
     @failure_threshold.setter
     def failure_threshold(self, failure_threshold):
-        """Sets the failure_threshold of this ProbeDTO.
+        r"""Sets the failure_threshold of this ProbeDTO.
 
         失败多少次算不健康
 

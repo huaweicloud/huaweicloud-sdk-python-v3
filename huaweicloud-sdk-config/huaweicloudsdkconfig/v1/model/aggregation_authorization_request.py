@@ -25,7 +25,7 @@ class AggregationAuthorizationRequest:
     }
 
     def __init__(self, authorized_account_id=None):
-        """AggregationAuthorizationRequest
+        r"""AggregationAuthorizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AggregationAuthorizationRequest:
 
     @property
     def authorized_account_id(self):
-        """Gets the authorized_account_id of this AggregationAuthorizationRequest.
+        r"""Gets the authorized_account_id of this AggregationAuthorizationRequest.
 
         要授权的资源聚合器的帐号ID。
 
@@ -53,7 +53,7 @@ class AggregationAuthorizationRequest:
 
     @authorized_account_id.setter
     def authorized_account_id(self, authorized_account_id):
-        """Sets the authorized_account_id of this AggregationAuthorizationRequest.
+        r"""Sets the authorized_account_id of this AggregationAuthorizationRequest.
 
         要授权的资源聚合器的帐号ID。
 

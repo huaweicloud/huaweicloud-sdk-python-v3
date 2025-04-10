@@ -35,7 +35,7 @@ class ShowTopUrlRequest:
     }
 
     def __init__(self, enterprise_project_id=None, start_time=None, end_time=None, domain_name=None, service_area=None, stat_type=None):
-        """ShowTopUrlRequest
+        r"""ShowTopUrlRequest
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class ShowTopUrlRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowTopUrlRequest.
+        r"""Gets the enterprise_project_id of this ShowTopUrlRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -85,7 +85,7 @@ class ShowTopUrlRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowTopUrlRequest.
+        r"""Sets the enterprise_project_id of this ShowTopUrlRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
@@ -96,7 +96,7 @@ class ShowTopUrlRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowTopUrlRequest.
+        r"""Gets the start_time of this ShowTopUrlRequest.
 
         查询起始时间戳（单位：毫秒）。该时间戳的取值在转化为日期格式后须满足以下格式：XXXX-XX-XX 00:00:00
 
@@ -107,7 +107,7 @@ class ShowTopUrlRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowTopUrlRequest.
+        r"""Sets the start_time of this ShowTopUrlRequest.
 
         查询起始时间戳（单位：毫秒）。该时间戳的取值在转化为日期格式后须满足以下格式：XXXX-XX-XX 00:00:00
 
@@ -118,7 +118,7 @@ class ShowTopUrlRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowTopUrlRequest.
+        r"""Gets the end_time of this ShowTopUrlRequest.
 
         查询结束时间戳（单位：毫秒）。该时间戳的取值在转化为日期格式后须满足以下格式：XXXX-XX-XX 00:00:00
 
@@ -129,7 +129,7 @@ class ShowTopUrlRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowTopUrlRequest.
+        r"""Sets the end_time of this ShowTopUrlRequest.
 
         查询结束时间戳（单位：毫秒）。该时间戳的取值在转化为日期格式后须满足以下格式：XXXX-XX-XX 00:00:00
 
@@ -140,7 +140,7 @@ class ShowTopUrlRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowTopUrlRequest.
+        r"""Gets the domain_name of this ShowTopUrlRequest.
 
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
@@ -151,7 +151,7 @@ class ShowTopUrlRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowTopUrlRequest.
+        r"""Sets the domain_name of this ShowTopUrlRequest.
 
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
@@ -162,7 +162,7 @@ class ShowTopUrlRequest:
 
     @property
     def service_area(self):
-        """Gets the service_area of this ShowTopUrlRequest.
+        r"""Gets the service_area of this ShowTopUrlRequest.
 
         mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为global(全球)。
 
@@ -173,7 +173,7 @@ class ShowTopUrlRequest:
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this ShowTopUrlRequest.
+        r"""Sets the service_area of this ShowTopUrlRequest.
 
         mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为global(全球)。
 
@@ -184,7 +184,7 @@ class ShowTopUrlRequest:
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this ShowTopUrlRequest.
+        r"""Gets the stat_type of this ShowTopUrlRequest.
 
         参数类型支持：flux(流量),req_num(请求总数)。
 
@@ -195,7 +195,7 @@ class ShowTopUrlRequest:
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this ShowTopUrlRequest.
+        r"""Sets the stat_type of this ShowTopUrlRequest.
 
         参数类型支持：flux(流量),req_num(请求总数)。
 

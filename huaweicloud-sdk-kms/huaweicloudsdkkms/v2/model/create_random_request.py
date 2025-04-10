@@ -25,7 +25,7 @@ class CreateRandomRequest:
     }
 
     def __init__(self, body=None):
-        """CreateRandomRequest
+        r"""CreateRandomRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateRandomRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRandomRequest.
+        r"""Gets the body of this CreateRandomRequest.
 
         :return: The body of this CreateRandomRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.GenRandomRequestBody`
@@ -52,7 +52,7 @@ class CreateRandomRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRandomRequest.
+        r"""Sets the body of this CreateRandomRequest.
 
         :param body: The body of this CreateRandomRequest.
         :type body: :class:`huaweicloudsdkkms.v2.GenRandomRequestBody`

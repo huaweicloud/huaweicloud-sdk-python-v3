@@ -47,7 +47,7 @@ class ScanJob:
     }
 
     def __init__(self, id=None, name=None, rule_groups=None, cycle=None, status=None, last_run_time=None, create_time=None, last_scan_risk=None, use_nlp=None, open=None, topic_urn=None, start_time=None):
-        """ScanJob
+        r"""ScanJob
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ScanJob:
 
     @property
     def id(self):
-        """Gets the id of this ScanJob.
+        r"""Gets the id of this ScanJob.
 
         任务ID
 
@@ -131,7 +131,7 @@ class ScanJob:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScanJob.
+        r"""Sets the id of this ScanJob.
 
         任务ID
 
@@ -142,7 +142,7 @@ class ScanJob:
 
     @property
     def name(self):
-        """Gets the name of this ScanJob.
+        r"""Gets the name of this ScanJob.
 
         任务名称
 
@@ -153,7 +153,7 @@ class ScanJob:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScanJob.
+        r"""Sets the name of this ScanJob.
 
         任务名称
 
@@ -164,7 +164,7 @@ class ScanJob:
 
     @property
     def rule_groups(self):
-        """Gets the rule_groups of this ScanJob.
+        r"""Gets the rule_groups of this ScanJob.
 
         任务使用的规则组
 
@@ -175,7 +175,7 @@ class ScanJob:
 
     @rule_groups.setter
     def rule_groups(self, rule_groups):
-        """Sets the rule_groups of this ScanJob.
+        r"""Sets the rule_groups of this ScanJob.
 
         任务使用的规则组
 
@@ -186,7 +186,7 @@ class ScanJob:
 
     @property
     def cycle(self):
-        """Gets the cycle of this ScanJob.
+        r"""Gets the cycle of this ScanJob.
 
         任务执行方式
 
@@ -197,7 +197,7 @@ class ScanJob:
 
     @cycle.setter
     def cycle(self, cycle):
-        """Sets the cycle of this ScanJob.
+        r"""Sets the cycle of this ScanJob.
 
         任务执行方式
 
@@ -208,7 +208,7 @@ class ScanJob:
 
     @property
     def status(self):
-        """Gets the status of this ScanJob.
+        r"""Gets the status of this ScanJob.
 
         任务当前状态
 
@@ -219,7 +219,7 @@ class ScanJob:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScanJob.
+        r"""Sets the status of this ScanJob.
 
         任务当前状态
 
@@ -230,7 +230,7 @@ class ScanJob:
 
     @property
     def last_run_time(self):
-        """Gets the last_run_time of this ScanJob.
+        r"""Gets the last_run_time of this ScanJob.
 
         任务上一次执行时间
 
@@ -241,7 +241,7 @@ class ScanJob:
 
     @last_run_time.setter
     def last_run_time(self, last_run_time):
-        """Sets the last_run_time of this ScanJob.
+        r"""Sets the last_run_time of this ScanJob.
 
         任务上一次执行时间
 
@@ -252,7 +252,7 @@ class ScanJob:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ScanJob.
+        r"""Gets the create_time of this ScanJob.
 
         任务创建时间
 
@@ -263,7 +263,7 @@ class ScanJob:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ScanJob.
+        r"""Sets the create_time of this ScanJob.
 
         任务创建时间
 
@@ -274,7 +274,7 @@ class ScanJob:
 
     @property
     def last_scan_risk(self):
-        """Gets the last_scan_risk of this ScanJob.
+        r"""Gets the last_scan_risk of this ScanJob.
 
         任务上一次扫描风险等级结果
 
@@ -285,7 +285,7 @@ class ScanJob:
 
     @last_scan_risk.setter
     def last_scan_risk(self, last_scan_risk):
-        """Sets the last_scan_risk of this ScanJob.
+        r"""Sets the last_scan_risk of this ScanJob.
 
         任务上一次扫描风险等级结果
 
@@ -296,7 +296,7 @@ class ScanJob:
 
     @property
     def use_nlp(self):
-        """Gets the use_nlp of this ScanJob.
+        r"""Gets the use_nlp of this ScanJob.
 
         是否使用了NLP进行扫描
 
@@ -307,7 +307,7 @@ class ScanJob:
 
     @use_nlp.setter
     def use_nlp(self, use_nlp):
-        """Sets the use_nlp of this ScanJob.
+        r"""Sets the use_nlp of this ScanJob.
 
         是否使用了NLP进行扫描
 
@@ -318,7 +318,7 @@ class ScanJob:
 
     @property
     def open(self):
-        """Gets the open of this ScanJob.
+        r"""Gets the open of this ScanJob.
 
         任务开启状态
 
@@ -329,7 +329,7 @@ class ScanJob:
 
     @open.setter
     def open(self, open):
-        """Sets the open of this ScanJob.
+        r"""Sets the open of this ScanJob.
 
         任务开启状态
 
@@ -340,7 +340,7 @@ class ScanJob:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this ScanJob.
+        r"""Gets the topic_urn of this ScanJob.
 
         SMN服务通知主题
 
@@ -351,7 +351,7 @@ class ScanJob:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this ScanJob.
+        r"""Sets the topic_urn of this ScanJob.
 
         SMN服务通知主题
 
@@ -362,7 +362,7 @@ class ScanJob:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScanJob.
+        r"""Gets the start_time of this ScanJob.
 
         任务启动时间
 
@@ -373,7 +373,7 @@ class ScanJob:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScanJob.
+        r"""Sets the start_time of this ScanJob.
 
         任务启动时间
 

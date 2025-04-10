@@ -28,7 +28,7 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
     }
 
     def __init__(self, permissions=None, total_count=None):
-        """ListServicePermissionsDetailsResponse
+        r"""ListServicePermissionsDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
 
     @property
     def permissions(self):
-        """Gets the permissions of this ListServicePermissionsDetailsResponse.
+        r"""Gets the permissions of this ListServicePermissionsDetailsResponse.
 
         permission列表。
 
@@ -62,7 +62,7 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this ListServicePermissionsDetailsResponse.
+        r"""Sets the permissions of this ListServicePermissionsDetailsResponse.
 
         permission列表。
 
@@ -73,7 +73,7 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListServicePermissionsDetailsResponse.
+        r"""Gets the total_count of this ListServicePermissionsDetailsResponse.
 
         满足查询条件的终端节点服务的白名单总条数，不受分页（即limit、offset参数）影响。
 
@@ -84,7 +84,7 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListServicePermissionsDetailsResponse.
+        r"""Sets the total_count of this ListServicePermissionsDetailsResponse.
 
         满足查询条件的终端节点服务的白名单总条数，不受分页（即limit、offset参数）影响。
 

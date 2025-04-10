@@ -30,7 +30,7 @@ class SetRepoRoleResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """SetRepoRoleResponse
+        r"""SetRepoRoleResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class SetRepoRoleResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this SetRepoRoleResponse.
+        r"""Gets the error of this SetRepoRoleResponse.
 
         :return: The error of this SetRepoRoleResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class SetRepoRoleResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this SetRepoRoleResponse.
+        r"""Sets the error of this SetRepoRoleResponse.
 
         :param error: The error of this SetRepoRoleResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class SetRepoRoleResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this SetRepoRoleResponse.
+        r"""Gets the result of this SetRepoRoleResponse.
 
         :return: The result of this SetRepoRoleResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Empty`
@@ -85,7 +85,7 @@ class SetRepoRoleResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this SetRepoRoleResponse.
+        r"""Sets the result of this SetRepoRoleResponse.
 
         :param result: The result of this SetRepoRoleResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.Empty`
@@ -94,7 +94,7 @@ class SetRepoRoleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this SetRepoRoleResponse.
+        r"""Gets the status of this SetRepoRoleResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class SetRepoRoleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SetRepoRoleResponse.
+        r"""Sets the status of this SetRepoRoleResponse.
 
         响应状态
 

@@ -32,7 +32,7 @@ class ShowClusteringJobResponse(SdkResponse):
     }
 
     def __init__(self, basic_info=None, file=None, failed_reasons=None, job_result=None):
-        """ShowClusteringJobResponse
+        r"""ShowClusteringJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowClusteringJobResponse(SdkResponse):
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this ShowClusteringJobResponse.
+        r"""Gets the basic_info of this ShowClusteringJobResponse.
 
         :return: The basic_info of this ShowClusteringJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -74,7 +74,7 @@ class ShowClusteringJobResponse(SdkResponse):
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this ShowClusteringJobResponse.
+        r"""Sets the basic_info of this ShowClusteringJobResponse.
 
         :param basic_info: The basic_info of this ShowClusteringJobResponse.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -83,7 +83,7 @@ class ShowClusteringJobResponse(SdkResponse):
 
     @property
     def file(self):
-        """Gets the file of this ShowClusteringJobResponse.
+        r"""Gets the file of this ShowClusteringJobResponse.
 
         :return: The file of this ShowClusteringJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -92,7 +92,7 @@ class ShowClusteringJobResponse(SdkResponse):
 
     @file.setter
     def file(self, file):
-        """Sets the file of this ShowClusteringJobResponse.
+        r"""Sets the file of this ShowClusteringJobResponse.
 
         :param file: The file of this ShowClusteringJobResponse.
         :type file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -101,7 +101,7 @@ class ShowClusteringJobResponse(SdkResponse):
 
     @property
     def failed_reasons(self):
-        """Gets the failed_reasons of this ShowClusteringJobResponse.
+        r"""Gets the failed_reasons of this ShowClusteringJobResponse.
 
         部分失败原因和数量。
 
@@ -112,7 +112,7 @@ class ShowClusteringJobResponse(SdkResponse):
 
     @failed_reasons.setter
     def failed_reasons(self, failed_reasons):
-        """Sets the failed_reasons of this ShowClusteringJobResponse.
+        r"""Sets the failed_reasons of this ShowClusteringJobResponse.
 
         部分失败原因和数量。
 
@@ -123,7 +123,7 @@ class ShowClusteringJobResponse(SdkResponse):
 
     @property
     def job_result(self):
-        """Gets the job_result of this ShowClusteringJobResponse.
+        r"""Gets the job_result of this ShowClusteringJobResponse.
 
         :return: The job_result of this ShowClusteringJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.JobResult`
@@ -132,7 +132,7 @@ class ShowClusteringJobResponse(SdkResponse):
 
     @job_result.setter
     def job_result(self, job_result):
-        """Sets the job_result of this ShowClusteringJobResponse.
+        r"""Sets the job_result of this ShowClusteringJobResponse.
 
         :param job_result: The job_result of this ShowClusteringJobResponse.
         :type job_result: :class:`huaweicloudsdkeihealth.v1.JobResult`

@@ -27,7 +27,7 @@ class PolicyTypeSummaryDto:
     }
 
     def __init__(self, status=None, type=None):
-        """PolicyTypeSummaryDto
+        r"""PolicyTypeSummaryDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PolicyTypeSummaryDto:
 
     @property
     def status(self):
-        """Gets the status of this PolicyTypeSummaryDto.
+        r"""Gets the status of this PolicyTypeSummaryDto.
 
         与根关联的策略类型状态。要将指定类型的策略绑定到根或该根中的组织单元或账号，该策略必须在组织中可用，并在该根已启用。enabled：启用；pending_enable：启用中；disabled：禁用；pending_disable：禁用中。
 
@@ -59,7 +59,7 @@ class PolicyTypeSummaryDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PolicyTypeSummaryDto.
+        r"""Sets the status of this PolicyTypeSummaryDto.
 
         与根关联的策略类型状态。要将指定类型的策略绑定到根或该根中的组织单元或账号，该策略必须在组织中可用，并在该根已启用。enabled：启用；pending_enable：启用中；disabled：禁用；pending_disable：禁用中。
 
@@ -70,7 +70,7 @@ class PolicyTypeSummaryDto:
 
     @property
     def type(self):
-        """Gets the type of this PolicyTypeSummaryDto.
+        r"""Gets the type of this PolicyTypeSummaryDto.
 
         策略类型的名称，service_control_policy：服务控制策略；tag_policy：标签策略。
 
@@ -81,7 +81,7 @@ class PolicyTypeSummaryDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PolicyTypeSummaryDto.
+        r"""Sets the type of this PolicyTypeSummaryDto.
 
         策略类型的名称，service_control_policy：服务控制策略；tag_policy：标签策略。
 

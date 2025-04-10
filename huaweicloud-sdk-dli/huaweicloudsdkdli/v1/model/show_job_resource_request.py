@@ -27,7 +27,7 @@ class ShowJobResourceRequest:
     }
 
     def __init__(self, resource_name=None, group=None):
-        """ShowJobResourceRequest
+        r"""ShowJobResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowJobResourceRequest:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ShowJobResourceRequest.
+        r"""Gets the resource_name of this ShowJobResourceRequest.
 
         资源名。
 
@@ -60,7 +60,7 @@ class ShowJobResourceRequest:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ShowJobResourceRequest.
+        r"""Sets the resource_name of this ShowJobResourceRequest.
 
         资源名。
 
@@ -71,7 +71,7 @@ class ShowJobResourceRequest:
 
     @property
     def group(self):
-        """Gets the group of this ShowJobResourceRequest.
+        r"""Gets the group of this ShowJobResourceRequest.
 
         :return: The group of this ShowJobResourceRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class ShowJobResourceRequest:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ShowJobResourceRequest.
+        r"""Sets the group of this ShowJobResourceRequest.
 
         :param group: The group of this ShowJobResourceRequest.
         :type group: str

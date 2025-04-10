@@ -26,7 +26,7 @@ class AssociateRequestThrottlingPolicyV2Response(SdkResponse):
     }
 
     def __init__(self, throttle_applys=None):
-        """AssociateRequestThrottlingPolicyV2Response
+        r"""AssociateRequestThrottlingPolicyV2Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AssociateRequestThrottlingPolicyV2Response(SdkResponse):
 
     @property
     def throttle_applys(self):
-        """Gets the throttle_applys of this AssociateRequestThrottlingPolicyV2Response.
+        r"""Gets the throttle_applys of this AssociateRequestThrottlingPolicyV2Response.
 
         API与流控策略的绑定关系列表
 
@@ -55,7 +55,7 @@ class AssociateRequestThrottlingPolicyV2Response(SdkResponse):
 
     @throttle_applys.setter
     def throttle_applys(self, throttle_applys):
-        """Sets the throttle_applys of this AssociateRequestThrottlingPolicyV2Response.
+        r"""Sets the throttle_applys of this AssociateRequestThrottlingPolicyV2Response.
 
         API与流控策略的绑定关系列表
 

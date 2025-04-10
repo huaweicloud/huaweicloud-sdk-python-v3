@@ -24,7 +24,7 @@ class ShowJudgementFileResponse(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """ShowJudgementFileResponse
+        r"""ShowJudgementFileResponse
 
         The model defined in huaweicloud sdk
 

@@ -39,7 +39,7 @@ class ListHostedDirectConnectsRequest:
     }
 
     def __init__(self, limit=None, marker=None, fields=None, sort_dir=None, sort_key=None, hosting_id=None, id=None, name=None):
-        """ListHostedDirectConnectsRequest
+        r"""ListHostedDirectConnectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListHostedDirectConnectsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHostedDirectConnectsRequest.
+        r"""Gets the limit of this ListHostedDirectConnectsRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -103,7 +103,7 @@ class ListHostedDirectConnectsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHostedDirectConnectsRequest.
+        r"""Sets the limit of this ListHostedDirectConnectsRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -114,7 +114,7 @@ class ListHostedDirectConnectsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListHostedDirectConnectsRequest.
+        r"""Gets the marker of this ListHostedDirectConnectsRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -125,7 +125,7 @@ class ListHostedDirectConnectsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListHostedDirectConnectsRequest.
+        r"""Sets the marker of this ListHostedDirectConnectsRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -136,7 +136,7 @@ class ListHostedDirectConnectsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListHostedDirectConnectsRequest.
+        r"""Gets the fields of this ListHostedDirectConnectsRequest.
 
         显示字段列表
 
@@ -147,7 +147,7 @@ class ListHostedDirectConnectsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListHostedDirectConnectsRequest.
+        r"""Sets the fields of this ListHostedDirectConnectsRequest.
 
         显示字段列表
 
@@ -158,7 +158,7 @@ class ListHostedDirectConnectsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListHostedDirectConnectsRequest.
+        r"""Gets the sort_dir of this ListHostedDirectConnectsRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -169,7 +169,7 @@ class ListHostedDirectConnectsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListHostedDirectConnectsRequest.
+        r"""Sets the sort_dir of this ListHostedDirectConnectsRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -180,7 +180,7 @@ class ListHostedDirectConnectsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListHostedDirectConnectsRequest.
+        r"""Gets the sort_key of this ListHostedDirectConnectsRequest.
 
         排序字段。
 
@@ -191,7 +191,7 @@ class ListHostedDirectConnectsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListHostedDirectConnectsRequest.
+        r"""Sets the sort_key of this ListHostedDirectConnectsRequest.
 
         排序字段。
 
@@ -202,7 +202,7 @@ class ListHostedDirectConnectsRequest:
 
     @property
     def hosting_id(self):
-        """Gets the hosting_id of this ListHostedDirectConnectsRequest.
+        r"""Gets the hosting_id of this ListHostedDirectConnectsRequest.
 
         根椐运营专线ID过滤托管专线列表
 
@@ -213,7 +213,7 @@ class ListHostedDirectConnectsRequest:
 
     @hosting_id.setter
     def hosting_id(self, hosting_id):
-        """Sets the hosting_id of this ListHostedDirectConnectsRequest.
+        r"""Sets the hosting_id of this ListHostedDirectConnectsRequest.
 
         根椐运营专线ID过滤托管专线列表
 
@@ -224,7 +224,7 @@ class ListHostedDirectConnectsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListHostedDirectConnectsRequest.
+        r"""Gets the id of this ListHostedDirectConnectsRequest.
 
         根据资源ID过滤实例
 
@@ -235,7 +235,7 @@ class ListHostedDirectConnectsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListHostedDirectConnectsRequest.
+        r"""Sets the id of this ListHostedDirectConnectsRequest.
 
         根据资源ID过滤实例
 
@@ -246,7 +246,7 @@ class ListHostedDirectConnectsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListHostedDirectConnectsRequest.
+        r"""Gets the name of this ListHostedDirectConnectsRequest.
 
         根据名字过滤查询，可查询多个名字。
 
@@ -257,7 +257,7 @@ class ListHostedDirectConnectsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListHostedDirectConnectsRequest.
+        r"""Sets the name of this ListHostedDirectConnectsRequest.
 
         根据名字过滤查询，可查询多个名字。
 

@@ -27,7 +27,7 @@ class ViewRow:
     }
 
     def __init__(self, view_list=None, title=None):
-        """ViewRow
+        r"""ViewRow
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ViewRow:
 
     @property
     def view_list(self):
-        """Gets the view_list of this ViewRow.
+        r"""Gets the view_list of this ViewRow.
 
         视图行，包含多个视图，展示的时候根据实际的长度适配。
 
@@ -61,7 +61,7 @@ class ViewRow:
 
     @view_list.setter
     def view_list(self, view_list):
-        """Sets the view_list of this ViewRow.
+        r"""Sets the view_list of this ViewRow.
 
         视图行，包含多个视图，展示的时候根据实际的长度适配。
 
@@ -72,7 +72,7 @@ class ViewRow:
 
     @property
     def title(self):
-        """Gets the title of this ViewRow.
+        r"""Gets the title of this ViewRow.
 
         标题。
 
@@ -83,7 +83,7 @@ class ViewRow:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ViewRow.
+        r"""Sets the title of this ViewRow.
 
         标题。
 

@@ -35,7 +35,7 @@ class PostRequestsReq:
     }
 
     def __init__(self, extends=None, chat_enable=None, user_id=None, question=None, session_id=None, query_types=None):
-        """PostRequestsReq
+        r"""PostRequestsReq
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class PostRequestsReq:
 
     @property
     def extends(self):
-        """Gets the extends of this PostRequestsReq.
+        r"""Gets the extends of this PostRequestsReq.
 
         :return: The extends of this PostRequestsReq.
         :rtype: :class:`huaweicloudsdkcbs.v1.Extends`
@@ -86,7 +86,7 @@ class PostRequestsReq:
 
     @extends.setter
     def extends(self, extends):
-        """Sets the extends of this PostRequestsReq.
+        r"""Sets the extends of this PostRequestsReq.
 
         :param extends: The extends of this PostRequestsReq.
         :type extends: :class:`huaweicloudsdkcbs.v1.Extends`
@@ -95,7 +95,7 @@ class PostRequestsReq:
 
     @property
     def chat_enable(self):
-        """Gets the chat_enable of this PostRequestsReq.
+        r"""Gets the chat_enable of this PostRequestsReq.
 
         默认false true：使用内部闲聊语料进行兜底 false：不使用闲聊兜底
 
@@ -106,7 +106,7 @@ class PostRequestsReq:
 
     @chat_enable.setter
     def chat_enable(self, chat_enable):
-        """Sets the chat_enable of this PostRequestsReq.
+        r"""Sets the chat_enable of this PostRequestsReq.
 
         默认false true：使用内部闲聊语料进行兜底 false：不使用闲聊兜底
 
@@ -117,7 +117,7 @@ class PostRequestsReq:
 
     @property
     def user_id(self):
-        """Gets the user_id of this PostRequestsReq.
+        r"""Gets the user_id of this PostRequestsReq.
 
         用户id，在日志中用于标识不通用户，可以为任意String
 
@@ -128,7 +128,7 @@ class PostRequestsReq:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this PostRequestsReq.
+        r"""Sets the user_id of this PostRequestsReq.
 
         用户id，在日志中用于标识不通用户，可以为任意String
 
@@ -139,7 +139,7 @@ class PostRequestsReq:
 
     @property
     def question(self):
-        """Gets the question of this PostRequestsReq.
+        r"""Gets the question of this PostRequestsReq.
 
         用户输入
 
@@ -150,7 +150,7 @@ class PostRequestsReq:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this PostRequestsReq.
+        r"""Sets the question of this PostRequestsReq.
 
         用户输入
 
@@ -161,7 +161,7 @@ class PostRequestsReq:
 
     @property
     def session_id(self):
-        """Gets the session_id of this PostRequestsReq.
+        r"""Gets the session_id of this PostRequestsReq.
 
         会话标识符，UUID格式。如：c04e6f7b-61d7-4a2d-a0c8-f9ecd2f62359。  每次对话开启，机器人创建会话id，下次请求中传入该id表示继续该轮对话，每轮会话有效时间为2分钟。 若传入的会话id已过期或者为空，则机器人会重新创建新的会话id（重新创建会话id会消耗一定时间）。
 
@@ -172,7 +172,7 @@ class PostRequestsReq:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this PostRequestsReq.
+        r"""Sets the session_id of this PostRequestsReq.
 
         会话标识符，UUID格式。如：c04e6f7b-61d7-4a2d-a0c8-f9ecd2f62359。  每次对话开启，机器人创建会话id，下次请求中传入该id表示继续该轮对话，每轮会话有效时间为2分钟。 若传入的会话id已过期或者为空，则机器人会重新创建新的会话id（重新创建会话id会消耗一定时间）。
 
@@ -183,7 +183,7 @@ class PostRequestsReq:
 
     @property
     def query_types(self):
-        """Gets the query_types of this PostRequestsReq.
+        r"""Gets the query_types of this PostRequestsReq.
 
         指定发送的机器人类型集合。  0 知识库问答。  1 技能问答。  2 闲聊问答。  3 图谱问答。  4 文档问答。  5 表格问答。  非必填字段。如果不填，会使用默认的机器人融合策略。
 
@@ -194,7 +194,7 @@ class PostRequestsReq:
 
     @query_types.setter
     def query_types(self, query_types):
-        """Sets the query_types of this PostRequestsReq.
+        r"""Sets the query_types of this PostRequestsReq.
 
         指定发送的机器人类型集合。  0 知识库问答。  1 技能问答。  2 闲聊问答。  3 图谱问答。  4 文档问答。  5 表格问答。  非必填字段。如果不填，会使用默认的机器人融合策略。
 

@@ -29,7 +29,7 @@ class UpdateAttachmentRequest:
     }
 
     def __init__(self, er_id=None, attachment_id=None, body=None):
-        """UpdateAttachmentRequest
+        r"""UpdateAttachmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateAttachmentRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this UpdateAttachmentRequest.
+        r"""Gets the er_id of this UpdateAttachmentRequest.
 
         企业路由器实例ID
 
@@ -66,7 +66,7 @@ class UpdateAttachmentRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this UpdateAttachmentRequest.
+        r"""Sets the er_id of this UpdateAttachmentRequest.
 
         企业路由器实例ID
 
@@ -77,7 +77,7 @@ class UpdateAttachmentRequest:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this UpdateAttachmentRequest.
+        r"""Gets the attachment_id of this UpdateAttachmentRequest.
 
         连接ID
 
@@ -88,7 +88,7 @@ class UpdateAttachmentRequest:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this UpdateAttachmentRequest.
+        r"""Sets the attachment_id of this UpdateAttachmentRequest.
 
         连接ID
 
@@ -99,7 +99,7 @@ class UpdateAttachmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAttachmentRequest.
+        r"""Gets the body of this UpdateAttachmentRequest.
 
         :return: The body of this UpdateAttachmentRequest.
         :rtype: :class:`huaweicloudsdker.v3.UpdateAttachmentRequestBody`
@@ -108,7 +108,7 @@ class UpdateAttachmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAttachmentRequest.
+        r"""Sets the body of this UpdateAttachmentRequest.
 
         :param body: The body of this UpdateAttachmentRequest.
         :type body: :class:`huaweicloudsdker.v3.UpdateAttachmentRequestBody`

@@ -31,7 +31,7 @@ class InstanceDatabaseVersionInfo:
     }
 
     def __init__(self, current_version=None, current_kernel_version=None, latest_version=None, latest_kernel_version=None):
-        """InstanceDatabaseVersionInfo
+        r"""InstanceDatabaseVersionInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class InstanceDatabaseVersionInfo:
 
     @property
     def current_version(self):
-        """Gets the current_version of this InstanceDatabaseVersionInfo.
+        r"""Gets the current_version of this InstanceDatabaseVersionInfo.
 
         当前数据库版本。
 
@@ -75,7 +75,7 @@ class InstanceDatabaseVersionInfo:
 
     @current_version.setter
     def current_version(self, current_version):
-        """Sets the current_version of this InstanceDatabaseVersionInfo.
+        r"""Sets the current_version of this InstanceDatabaseVersionInfo.
 
         当前数据库版本。
 
@@ -86,7 +86,7 @@ class InstanceDatabaseVersionInfo:
 
     @property
     def current_kernel_version(self):
-        """Gets the current_kernel_version of this InstanceDatabaseVersionInfo.
+        r"""Gets the current_kernel_version of this InstanceDatabaseVersionInfo.
 
         当前数据库内核版本。
 
@@ -97,7 +97,7 @@ class InstanceDatabaseVersionInfo:
 
     @current_kernel_version.setter
     def current_kernel_version(self, current_kernel_version):
-        """Sets the current_kernel_version of this InstanceDatabaseVersionInfo.
+        r"""Sets the current_kernel_version of this InstanceDatabaseVersionInfo.
 
         当前数据库内核版本。
 
@@ -108,7 +108,7 @@ class InstanceDatabaseVersionInfo:
 
     @property
     def latest_version(self):
-        """Gets the latest_version of this InstanceDatabaseVersionInfo.
+        r"""Gets the latest_version of this InstanceDatabaseVersionInfo.
 
         最新数据库版本。
 
@@ -119,7 +119,7 @@ class InstanceDatabaseVersionInfo:
 
     @latest_version.setter
     def latest_version(self, latest_version):
-        """Sets the latest_version of this InstanceDatabaseVersionInfo.
+        r"""Sets the latest_version of this InstanceDatabaseVersionInfo.
 
         最新数据库版本。
 
@@ -130,7 +130,7 @@ class InstanceDatabaseVersionInfo:
 
     @property
     def latest_kernel_version(self):
-        """Gets the latest_kernel_version of this InstanceDatabaseVersionInfo.
+        r"""Gets the latest_kernel_version of this InstanceDatabaseVersionInfo.
 
         最新数据库内核版本。
 
@@ -141,7 +141,7 @@ class InstanceDatabaseVersionInfo:
 
     @latest_kernel_version.setter
     def latest_kernel_version(self, latest_kernel_version):
-        """Sets the latest_kernel_version of this InstanceDatabaseVersionInfo.
+        r"""Sets the latest_kernel_version of this InstanceDatabaseVersionInfo.
 
         最新数据库内核版本。
 

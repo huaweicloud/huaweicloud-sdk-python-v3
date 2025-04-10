@@ -35,7 +35,7 @@ class CreateAccountReqBody:
     }
 
     def __init__(self, name=None, email=None, phone=None, agency_name=None, description=None, tags=None):
-        """CreateAccountReqBody
+        r"""CreateAccountReqBody
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class CreateAccountReqBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateAccountReqBody.
+        r"""Gets the name of this CreateAccountReqBody.
 
         账号名称
 
@@ -88,7 +88,7 @@ class CreateAccountReqBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAccountReqBody.
+        r"""Sets the name of this CreateAccountReqBody.
 
         账号名称
 
@@ -99,7 +99,7 @@ class CreateAccountReqBody:
 
     @property
     def email(self):
-        """Gets the email of this CreateAccountReqBody.
+        r"""Gets the email of this CreateAccountReqBody.
 
         邮箱
 
@@ -110,7 +110,7 @@ class CreateAccountReqBody:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this CreateAccountReqBody.
+        r"""Sets the email of this CreateAccountReqBody.
 
         邮箱
 
@@ -121,7 +121,7 @@ class CreateAccountReqBody:
 
     @property
     def phone(self):
-        """Gets the phone of this CreateAccountReqBody.
+        r"""Gets the phone of this CreateAccountReqBody.
 
         手机号码
 
@@ -132,7 +132,7 @@ class CreateAccountReqBody:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this CreateAccountReqBody.
+        r"""Sets the phone of this CreateAccountReqBody.
 
         手机号码
 
@@ -143,7 +143,7 @@ class CreateAccountReqBody:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this CreateAccountReqBody.
+        r"""Gets the agency_name of this CreateAccountReqBody.
 
         委托名称
 
@@ -154,7 +154,7 @@ class CreateAccountReqBody:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this CreateAccountReqBody.
+        r"""Sets the agency_name of this CreateAccountReqBody.
 
         委托名称
 
@@ -165,7 +165,7 @@ class CreateAccountReqBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateAccountReqBody.
+        r"""Gets the description of this CreateAccountReqBody.
 
         描述信息。
 
@@ -176,7 +176,7 @@ class CreateAccountReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAccountReqBody.
+        r"""Sets the description of this CreateAccountReqBody.
 
         描述信息。
 
@@ -187,7 +187,7 @@ class CreateAccountReqBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateAccountReqBody.
+        r"""Gets the tags of this CreateAccountReqBody.
 
         要绑定到新创建的账号的标签列表。
 
@@ -198,7 +198,7 @@ class CreateAccountReqBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateAccountReqBody.
+        r"""Sets the tags of this CreateAccountReqBody.
 
         要绑定到新创建的账号的标签列表。
 

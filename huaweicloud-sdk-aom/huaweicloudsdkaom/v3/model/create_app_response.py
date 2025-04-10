@@ -26,7 +26,7 @@ class CreateAppResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateAppResponse
+        r"""CreateAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateAppResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateAppResponse.
+        r"""Gets the body of this CreateAppResponse.
 
         :return: The body of this CreateAppResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CreateAppResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAppResponse.
+        r"""Sets the body of this CreateAppResponse.
 
         :param body: The body of this CreateAppResponse.
         :type body: str

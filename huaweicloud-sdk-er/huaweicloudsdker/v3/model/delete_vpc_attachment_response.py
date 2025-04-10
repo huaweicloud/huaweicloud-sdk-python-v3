@@ -24,7 +24,7 @@ class DeleteVpcAttachmentResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteVpcAttachmentResponse
+        r"""DeleteVpcAttachmentResponse
 
         The model defined in huaweicloud sdk
 

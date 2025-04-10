@@ -25,7 +25,7 @@ class CancelRemoteAssistanceRequest:
     }
 
     def __init__(self, desktop_id=None):
-        """CancelRemoteAssistanceRequest
+        r"""CancelRemoteAssistanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CancelRemoteAssistanceRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this CancelRemoteAssistanceRequest.
+        r"""Gets the desktop_id of this CancelRemoteAssistanceRequest.
 
         桌面ID。
 
@@ -53,7 +53,7 @@ class CancelRemoteAssistanceRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this CancelRemoteAssistanceRequest.
+        r"""Sets the desktop_id of this CancelRemoteAssistanceRequest.
 
         桌面ID。
 

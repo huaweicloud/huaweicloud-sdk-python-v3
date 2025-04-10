@@ -29,7 +29,7 @@ class SearchCriteriasBody:
     }
 
     def __init__(self, criterias=None, log_stream_id=None, log_stream_name=None):
-        """SearchCriteriasBody
+        r"""SearchCriteriasBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SearchCriteriasBody:
 
     @property
     def criterias(self):
-        """Gets the criterias of this SearchCriteriasBody.
+        r"""Gets the criterias of this SearchCriteriasBody.
 
         单个日志流的快速查询
 
@@ -67,7 +67,7 @@ class SearchCriteriasBody:
 
     @criterias.setter
     def criterias(self, criterias):
-        """Sets the criterias of this SearchCriteriasBody.
+        r"""Sets the criterias of this SearchCriteriasBody.
 
         单个日志流的快速查询
 
@@ -78,7 +78,7 @@ class SearchCriteriasBody:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this SearchCriteriasBody.
+        r"""Gets the log_stream_id of this SearchCriteriasBody.
 
         日志流id
 
@@ -89,7 +89,7 @@ class SearchCriteriasBody:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this SearchCriteriasBody.
+        r"""Sets the log_stream_id of this SearchCriteriasBody.
 
         日志流id
 
@@ -100,7 +100,7 @@ class SearchCriteriasBody:
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this SearchCriteriasBody.
+        r"""Gets the log_stream_name of this SearchCriteriasBody.
 
         日志流名称
 
@@ -111,7 +111,7 @@ class SearchCriteriasBody:
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this SearchCriteriasBody.
+        r"""Sets the log_stream_name of this SearchCriteriasBody.
 
         日志流名称
 

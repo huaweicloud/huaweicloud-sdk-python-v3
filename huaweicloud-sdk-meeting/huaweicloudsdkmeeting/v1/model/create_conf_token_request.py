@@ -34,7 +34,7 @@ class CreateConfTokenRequest:
     }
 
     def __init__(self, conference_id=None, x_conference_authorization=None, x_password=None, x_login_type=None, x_nonce=None):
-        """CreateConfTokenRequest
+        r"""CreateConfTokenRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateConfTokenRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this CreateConfTokenRequest.
+        r"""Gets the conference_id of this CreateConfTokenRequest.
 
         会议ID。 > 创建会议时返回的conferenceID。不是vmrConferenceID。 
 
@@ -80,7 +80,7 @@ class CreateConfTokenRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this CreateConfTokenRequest.
+        r"""Sets the conference_id of this CreateConfTokenRequest.
 
         会议ID。 > 创建会议时返回的conferenceID。不是vmrConferenceID。 
 
@@ -91,7 +91,7 @@ class CreateConfTokenRequest:
 
     @property
     def x_conference_authorization(self):
-        """Gets the x_conference_authorization of this CreateConfTokenRequest.
+        r"""Gets the x_conference_authorization of this CreateConfTokenRequest.
 
         会控Token。 > * 仅会控Token保活场景需要携带 > * 如果会话已过期并且请求中携带了密码，则进行重新鉴权并回复新的会控Token
 
@@ -102,7 +102,7 @@ class CreateConfTokenRequest:
 
     @x_conference_authorization.setter
     def x_conference_authorization(self, x_conference_authorization):
-        """Sets the x_conference_authorization of this CreateConfTokenRequest.
+        r"""Sets the x_conference_authorization of this CreateConfTokenRequest.
 
         会控Token。 > * 仅会控Token保活场景需要携带 > * 如果会话已过期并且请求中携带了密码，则进行重新鉴权并回复新的会控Token
 
@@ -113,7 +113,7 @@ class CreateConfTokenRequest:
 
     @property
     def x_password(self):
-        """Gets the x_password of this CreateConfTokenRequest.
+        r"""Gets the x_password of this CreateConfTokenRequest.
 
         会议的主持人密码。 > 对于会控Token保活场景，不对主持人密码鉴权。
 
@@ -124,7 +124,7 @@ class CreateConfTokenRequest:
 
     @x_password.setter
     def x_password(self, x_password):
-        """Sets the x_password of this CreateConfTokenRequest.
+        r"""Sets the x_password of this CreateConfTokenRequest.
 
         会议的主持人密码。 > 对于会控Token保活场景，不对主持人密码鉴权。
 
@@ -135,7 +135,7 @@ class CreateConfTokenRequest:
 
     @property
     def x_login_type(self):
-        """Gets the x_login_type of this CreateConfTokenRequest.
+        r"""Gets the x_login_type of this CreateConfTokenRequest.
 
         请求类型。 - 1: 业务固定为1。
 
@@ -146,7 +146,7 @@ class CreateConfTokenRequest:
 
     @x_login_type.setter
     def x_login_type(self, x_login_type):
-        """Sets the x_login_type of this CreateConfTokenRequest.
+        r"""Sets the x_login_type of this CreateConfTokenRequest.
 
         请求类型。 - 1: 业务固定为1。
 
@@ -157,7 +157,7 @@ class CreateConfTokenRequest:
 
     @property
     def x_nonce(self):
-        """Gets the x_nonce of this CreateConfTokenRequest.
+        r"""Gets the x_nonce of this CreateConfTokenRequest.
 
         用户临时nonce token。
 
@@ -168,7 +168,7 @@ class CreateConfTokenRequest:
 
     @x_nonce.setter
     def x_nonce(self, x_nonce):
-        """Sets the x_nonce of this CreateConfTokenRequest.
+        r"""Sets the x_nonce of this CreateConfTokenRequest.
 
         用户临时nonce token。
 

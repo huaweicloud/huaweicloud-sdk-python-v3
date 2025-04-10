@@ -26,7 +26,7 @@ class ListNotificationsResponse(SdkResponse):
     }
 
     def __init__(self, notifications=None):
-        """ListNotificationsResponse
+        r"""ListNotificationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListNotificationsResponse(SdkResponse):
 
     @property
     def notifications(self):
-        """Gets the notifications of this ListNotificationsResponse.
+        r"""Gets the notifications of this ListNotificationsResponse.
 
         通知列表
 
@@ -55,7 +55,7 @@ class ListNotificationsResponse(SdkResponse):
 
     @notifications.setter
     def notifications(self, notifications):
-        """Sets the notifications of this ListNotificationsResponse.
+        r"""Sets the notifications of this ListNotificationsResponse.
 
         通知列表
 

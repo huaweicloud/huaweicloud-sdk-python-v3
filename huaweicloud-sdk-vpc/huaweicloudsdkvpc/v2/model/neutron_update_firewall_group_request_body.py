@@ -25,7 +25,7 @@ class NeutronUpdateFirewallGroupRequestBody:
     }
 
     def __init__(self, firewall_group=None):
-        """NeutronUpdateFirewallGroupRequestBody
+        r"""NeutronUpdateFirewallGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NeutronUpdateFirewallGroupRequestBody:
 
     @property
     def firewall_group(self):
-        """Gets the firewall_group of this NeutronUpdateFirewallGroupRequestBody.
+        r"""Gets the firewall_group of this NeutronUpdateFirewallGroupRequestBody.
 
         :return: The firewall_group of this NeutronUpdateFirewallGroupRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallGroupOption`
@@ -51,7 +51,7 @@ class NeutronUpdateFirewallGroupRequestBody:
 
     @firewall_group.setter
     def firewall_group(self, firewall_group):
-        """Sets the firewall_group of this NeutronUpdateFirewallGroupRequestBody.
+        r"""Sets the firewall_group of this NeutronUpdateFirewallGroupRequestBody.
 
         :param firewall_group: The firewall_group of this NeutronUpdateFirewallGroupRequestBody.
         :type firewall_group: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallGroupOption`

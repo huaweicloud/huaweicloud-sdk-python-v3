@@ -25,7 +25,7 @@ class NovaDeleteServerRequest:
     }
 
     def __init__(self, server_id=None):
-        """NovaDeleteServerRequest
+        r"""NovaDeleteServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NovaDeleteServerRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this NovaDeleteServerRequest.
+        r"""Gets the server_id of this NovaDeleteServerRequest.
 
         云服务器ID。
 
@@ -53,7 +53,7 @@ class NovaDeleteServerRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this NovaDeleteServerRequest.
+        r"""Sets the server_id of this NovaDeleteServerRequest.
 
         云服务器ID。
 

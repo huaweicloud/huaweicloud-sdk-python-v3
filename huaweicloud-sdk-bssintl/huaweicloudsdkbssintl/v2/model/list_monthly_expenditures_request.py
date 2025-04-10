@@ -31,7 +31,7 @@ class ListMonthlyExpendituresRequest:
     }
 
     def __init__(self, cycle=None, cloud_service_type_code=None, type=None, enterprise_project_id=None):
-        """ListMonthlyExpendituresRequest
+        r"""ListMonthlyExpendituresRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListMonthlyExpendituresRequest:
 
     @property
     def cycle(self):
-        """Gets the cycle of this ListMonthlyExpendituresRequest.
+        r"""Gets the cycle of this ListMonthlyExpendituresRequest.
 
         查询消费汇总账单所在的账期，格式为YYYY-MM。
 
@@ -74,7 +74,7 @@ class ListMonthlyExpendituresRequest:
 
     @cycle.setter
     def cycle(self, cycle):
-        """Sets the cycle of this ListMonthlyExpendituresRequest.
+        r"""Sets the cycle of this ListMonthlyExpendituresRequest.
 
         查询消费汇总账单所在的账期，格式为YYYY-MM。
 
@@ -85,7 +85,7 @@ class ListMonthlyExpendituresRequest:
 
     @property
     def cloud_service_type_code(self):
-        """Gets the cloud_service_type_code of this ListMonthlyExpendituresRequest.
+        r"""Gets the cloud_service_type_code of this ListMonthlyExpendituresRequest.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。当不传递此参数时，查询的账单是以云服务类型为维度的月度消费账单。当传递此参数时，查询的账单是该云服务类型下以资源类型为维度的月度消费账单。
 
@@ -96,7 +96,7 @@ class ListMonthlyExpendituresRequest:
 
     @cloud_service_type_code.setter
     def cloud_service_type_code(self, cloud_service_type_code):
-        """Sets the cloud_service_type_code of this ListMonthlyExpendituresRequest.
+        r"""Sets the cloud_service_type_code of this ListMonthlyExpendituresRequest.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。当不传递此参数时，查询的账单是以云服务类型为维度的月度消费账单。当传递此参数时，查询的账单是该云服务类型下以资源类型为维度的月度消费账单。
 
@@ -107,7 +107,7 @@ class ListMonthlyExpendituresRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListMonthlyExpendituresRequest.
+        r"""Gets the type of this ListMonthlyExpendituresRequest.
 
         0：华为云账户 1：伙伴设置预算账户，仅当客户关联合作伙伴且关联类型为转售模式时，才会存在伙伴拨款设置预算账户。不传此参数默认查询华为云账户下的消费汇总。
 
@@ -118,7 +118,7 @@ class ListMonthlyExpendituresRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListMonthlyExpendituresRequest.
+        r"""Sets the type of this ListMonthlyExpendituresRequest.
 
         0：华为云账户 1：伙伴设置预算账户，仅当客户关联合作伙伴且关联类型为转售模式时，才会存在伙伴拨款设置预算账户。不传此参数默认查询华为云账户下的消费汇总。
 
@@ -129,7 +129,7 @@ class ListMonthlyExpendituresRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListMonthlyExpendituresRequest.
+        r"""Gets the enterprise_project_id of this ListMonthlyExpendituresRequest.
 
         企业项目ID
 
@@ -140,7 +140,7 @@ class ListMonthlyExpendituresRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListMonthlyExpendituresRequest.
+        r"""Sets the enterprise_project_id of this ListMonthlyExpendituresRequest.
 
         企业项目ID
 

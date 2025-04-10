@@ -29,7 +29,7 @@ class BranchesItem:
     }
 
     def __init__(self, commit=None, diverging_commit_counts=None, name=None):
-        """BranchesItem
+        r"""BranchesItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BranchesItem:
 
     @property
     def commit(self):
-        """Gets the commit of this BranchesItem.
+        r"""Gets the commit of this BranchesItem.
 
         :return: The commit of this BranchesItem.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CommitV2`
@@ -66,7 +66,7 @@ class BranchesItem:
 
     @commit.setter
     def commit(self, commit):
-        """Sets the commit of this BranchesItem.
+        r"""Sets the commit of this BranchesItem.
 
         :param commit: The commit of this BranchesItem.
         :type commit: :class:`huaweicloudsdkcodehub.v3.CommitV2`
@@ -75,7 +75,7 @@ class BranchesItem:
 
     @property
     def diverging_commit_counts(self):
-        """Gets the diverging_commit_counts of this BranchesItem.
+        r"""Gets the diverging_commit_counts of this BranchesItem.
 
         :return: The diverging_commit_counts of this BranchesItem.
         :rtype: :class:`huaweicloudsdkcodehub.v3.DivergingCommitCounts`
@@ -84,7 +84,7 @@ class BranchesItem:
 
     @diverging_commit_counts.setter
     def diverging_commit_counts(self, diverging_commit_counts):
-        """Sets the diverging_commit_counts of this BranchesItem.
+        r"""Sets the diverging_commit_counts of this BranchesItem.
 
         :param diverging_commit_counts: The diverging_commit_counts of this BranchesItem.
         :type diverging_commit_counts: :class:`huaweicloudsdkcodehub.v3.DivergingCommitCounts`
@@ -93,7 +93,7 @@ class BranchesItem:
 
     @property
     def name(self):
-        """Gets the name of this BranchesItem.
+        r"""Gets the name of this BranchesItem.
 
         分支名
 
@@ -104,7 +104,7 @@ class BranchesItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BranchesItem.
+        r"""Sets the name of this BranchesItem.
 
         分支名
 

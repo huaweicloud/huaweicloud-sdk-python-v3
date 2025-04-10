@@ -26,7 +26,7 @@ class UpdateClickHouseDatabaseUserPasswordResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateClickHouseDatabaseUserPasswordResponse
+        r"""UpdateClickHouseDatabaseUserPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateClickHouseDatabaseUserPasswordResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateClickHouseDatabaseUserPasswordResponse.
+        r"""Gets the result of this UpdateClickHouseDatabaseUserPasswordResponse.
 
         请求结果。
 
@@ -55,7 +55,7 @@ class UpdateClickHouseDatabaseUserPasswordResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateClickHouseDatabaseUserPasswordResponse.
+        r"""Sets the result of this UpdateClickHouseDatabaseUserPasswordResponse.
 
         请求结果。
 

@@ -30,7 +30,7 @@ class ShowVodRetrievalResponse(SdkResponse):
     }
 
     def __init__(self, start_time=None, interval=None, sample_data=None):
-        """ShowVodRetrievalResponse
+        r"""ShowVodRetrievalResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowVodRetrievalResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowVodRetrievalResponse.
+        r"""Gets the start_time of this ShowVodRetrievalResponse.
 
         统计起始时间 
 
@@ -69,7 +69,7 @@ class ShowVodRetrievalResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowVodRetrievalResponse.
+        r"""Sets the start_time of this ShowVodRetrievalResponse.
 
         统计起始时间 
 
@@ -80,7 +80,7 @@ class ShowVodRetrievalResponse(SdkResponse):
 
     @property
     def interval(self):
-        """Gets the interval of this ShowVodRetrievalResponse.
+        r"""Gets the interval of this ShowVodRetrievalResponse.
 
         采样时间间隔 
 
@@ -91,7 +91,7 @@ class ShowVodRetrievalResponse(SdkResponse):
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ShowVodRetrievalResponse.
+        r"""Sets the interval of this ShowVodRetrievalResponse.
 
         采样时间间隔 
 
@@ -102,7 +102,7 @@ class ShowVodRetrievalResponse(SdkResponse):
 
     @property
     def sample_data(self):
-        """Gets the sample_data of this ShowVodRetrievalResponse.
+        r"""Gets the sample_data of this ShowVodRetrievalResponse.
 
         :return: The sample_data of this ShowVodRetrievalResponse.
         :rtype: list[:class:`huaweicloudsdkvod.v1.VodRetrievalData`]
@@ -111,7 +111,7 @@ class ShowVodRetrievalResponse(SdkResponse):
 
     @sample_data.setter
     def sample_data(self, sample_data):
-        """Sets the sample_data of this ShowVodRetrievalResponse.
+        r"""Sets the sample_data of this ShowVodRetrievalResponse.
 
         :param sample_data: The sample_data of this ShowVodRetrievalResponse.
         :type sample_data: list[:class:`huaweicloudsdkvod.v1.VodRetrievalData`]

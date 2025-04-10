@@ -25,7 +25,7 @@ class ApplyConfigurationRequest:
     }
 
     def __init__(self, instance_ids=None):
-        """ApplyConfigurationRequest
+        r"""ApplyConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ApplyConfigurationRequest:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this ApplyConfigurationRequest.
+        r"""Gets the instance_ids of this ApplyConfigurationRequest.
 
         实例ID列表。
 
@@ -53,7 +53,7 @@ class ApplyConfigurationRequest:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this ApplyConfigurationRequest.
+        r"""Sets the instance_ids of this ApplyConfigurationRequest.
 
         实例ID列表。
 

@@ -35,7 +35,7 @@ class HttpIpGroup:
     }
 
     def __init__(self, id=None, name=None, ips=None, size=None, description=None, create_time=None):
-        """HttpIpGroup
+        r"""HttpIpGroup
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class HttpIpGroup:
 
     @property
     def id(self):
-        """Gets the id of this HttpIpGroup.
+        r"""Gets the id of this HttpIpGroup.
 
         ip地址组id
 
@@ -89,7 +89,7 @@ class HttpIpGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HttpIpGroup.
+        r"""Sets the id of this HttpIpGroup.
 
         ip地址组id
 
@@ -100,7 +100,7 @@ class HttpIpGroup:
 
     @property
     def name(self):
-        """Gets the name of this HttpIpGroup.
+        r"""Gets the name of this HttpIpGroup.
 
         ip地址组名称
 
@@ -111,7 +111,7 @@ class HttpIpGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HttpIpGroup.
+        r"""Sets the name of this HttpIpGroup.
 
         ip地址组名称
 
@@ -122,7 +122,7 @@ class HttpIpGroup:
 
     @property
     def ips(self):
-        """Gets the ips of this HttpIpGroup.
+        r"""Gets the ips of this HttpIpGroup.
 
         ip地址/地址段列表
 
@@ -133,7 +133,7 @@ class HttpIpGroup:
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this HttpIpGroup.
+        r"""Sets the ips of this HttpIpGroup.
 
         ip地址/地址段列表
 
@@ -144,7 +144,7 @@ class HttpIpGroup:
 
     @property
     def size(self):
-        """Gets the size of this HttpIpGroup.
+        r"""Gets the size of this HttpIpGroup.
 
         ip地址/地址段大小
 
@@ -155,7 +155,7 @@ class HttpIpGroup:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this HttpIpGroup.
+        r"""Sets the size of this HttpIpGroup.
 
         ip地址/地址段大小
 
@@ -166,7 +166,7 @@ class HttpIpGroup:
 
     @property
     def description(self):
-        """Gets the description of this HttpIpGroup.
+        r"""Gets the description of this HttpIpGroup.
 
         ip地址组描述
 
@@ -177,7 +177,7 @@ class HttpIpGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this HttpIpGroup.
+        r"""Sets the description of this HttpIpGroup.
 
         ip地址组描述
 
@@ -188,7 +188,7 @@ class HttpIpGroup:
 
     @property
     def create_time(self):
-        """Gets the create_time of this HttpIpGroup.
+        r"""Gets the create_time of this HttpIpGroup.
 
         ip地址组创建时间戳
 
@@ -199,7 +199,7 @@ class HttpIpGroup:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this HttpIpGroup.
+        r"""Sets the create_time of this HttpIpGroup.
 
         ip地址组创建时间戳
 

@@ -25,7 +25,7 @@ class UpdateLogConvergeConfigRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateLogConvergeConfigRequest
+        r"""UpdateLogConvergeConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateLogConvergeConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLogConvergeConfigRequest.
+        r"""Gets the body of this UpdateLogConvergeConfigRequest.
 
         :return: The body of this UpdateLogConvergeConfigRequest.
         :rtype: :class:`huaweicloudsdklts.v2.UpdatelogConvergeConfig`
@@ -52,7 +52,7 @@ class UpdateLogConvergeConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLogConvergeConfigRequest.
+        r"""Sets the body of this UpdateLogConvergeConfigRequest.
 
         :param body: The body of this UpdateLogConvergeConfigRequest.
         :type body: :class:`huaweicloudsdklts.v2.UpdatelogConvergeConfig`

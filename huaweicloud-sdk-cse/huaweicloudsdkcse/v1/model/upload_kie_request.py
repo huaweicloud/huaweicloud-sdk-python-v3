@@ -33,7 +33,7 @@ class UploadKieRequest:
     }
 
     def __init__(self, x_enterprise_project_id=None, x_engine_id=None, override=None, label=None, body=None):
-        """UploadKieRequest
+        r"""UploadKieRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class UploadKieRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this UploadKieRequest.
+        r"""Gets the x_enterprise_project_id of this UploadKieRequest.
 
         如果不带则默认企业项目为\"default\"，ID为\"0\"
 
@@ -80,7 +80,7 @@ class UploadKieRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this UploadKieRequest.
+        r"""Sets the x_enterprise_project_id of this UploadKieRequest.
 
         如果不带则默认企业项目为\"default\"，ID为\"0\"
 
@@ -91,7 +91,7 @@ class UploadKieRequest:
 
     @property
     def x_engine_id(self):
-        """Gets the x_engine_id of this UploadKieRequest.
+        r"""Gets the x_engine_id of this UploadKieRequest.
 
         微服务引擎ID。
 
@@ -102,7 +102,7 @@ class UploadKieRequest:
 
     @x_engine_id.setter
     def x_engine_id(self, x_engine_id):
-        """Sets the x_engine_id of this UploadKieRequest.
+        r"""Sets the x_engine_id of this UploadKieRequest.
 
         微服务引擎ID。
 
@@ -113,7 +113,7 @@ class UploadKieRequest:
 
     @property
     def override(self):
-        """Gets the override of this UploadKieRequest.
+        r"""Gets the override of this UploadKieRequest.
 
         覆盖策略，force 强制覆盖、abort 遇到第一个重复时终止导入后续的kv、skip 跳过重复的key
 
@@ -124,7 +124,7 @@ class UploadKieRequest:
 
     @override.setter
     def override(self, override):
-        """Sets the override of this UploadKieRequest.
+        r"""Sets the override of this UploadKieRequest.
 
         覆盖策略，force 强制覆盖、abort 遇到第一个重复时终止导入后续的kv、skip 跳过重复的key
 
@@ -135,7 +135,7 @@ class UploadKieRequest:
 
     @property
     def label(self):
-        """Gets the label of this UploadKieRequest.
+        r"""Gets the label of this UploadKieRequest.
 
         指定label导入，格式为：{标签key}:{标签value}，如果不填则按body的label导入
 
@@ -146,7 +146,7 @@ class UploadKieRequest:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this UploadKieRequest.
+        r"""Sets the label of this UploadKieRequest.
 
         指定label导入，格式为：{标签key}:{标签value}，如果不填则按body的label导入
 
@@ -157,7 +157,7 @@ class UploadKieRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadKieRequest.
+        r"""Gets the body of this UploadKieRequest.
 
         :return: The body of this UploadKieRequest.
         :rtype: :class:`huaweicloudsdkcse.v1.UploadKieRequestBody`
@@ -166,7 +166,7 @@ class UploadKieRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadKieRequest.
+        r"""Sets the body of this UploadKieRequest.
 
         :param body: The body of this UploadKieRequest.
         :type body: :class:`huaweicloudsdkcse.v1.UploadKieRequestBody`

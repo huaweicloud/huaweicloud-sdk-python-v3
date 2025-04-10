@@ -27,7 +27,7 @@ class PrePaidServerTag:
     }
 
     def __init__(self, key=None, value=None):
-        """PrePaidServerTag
+        r"""PrePaidServerTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PrePaidServerTag:
 
     @property
     def key(self):
-        """Gets the key of this PrePaidServerTag.
+        r"""Gets the key of this PrePaidServerTag.
 
         键。  最大长度36个unicode字符。key不能为空。不能包含非打印字符ASCII(0-31)，\"=\", \"*\",“<”,“>”,“\\”,“,”,“|”,“/”。  同一资源的key值不能重复。
 
@@ -59,7 +59,7 @@ class PrePaidServerTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this PrePaidServerTag.
+        r"""Sets the key of this PrePaidServerTag.
 
         键。  最大长度36个unicode字符。key不能为空。不能包含非打印字符ASCII(0-31)，\"=\", \"*\",“<”,“>”,“\\”,“,”,“|”,“/”。  同一资源的key值不能重复。
 
@@ -70,7 +70,7 @@ class PrePaidServerTag:
 
     @property
     def value(self):
-        """Gets the value of this PrePaidServerTag.
+        r"""Gets the value of this PrePaidServerTag.
 
           值。  每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”。
 
@@ -81,7 +81,7 @@ class PrePaidServerTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PrePaidServerTag.
+        r"""Sets the value of this PrePaidServerTag.
 
           值。  每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”。
 

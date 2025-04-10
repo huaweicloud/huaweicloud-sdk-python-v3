@@ -29,7 +29,7 @@ class PublishAppRequest:
     }
 
     def __init__(self, eihealth_project_id=None, app_id=None, body=None):
-        """PublishAppRequest
+        r"""PublishAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class PublishAppRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this PublishAppRequest.
+        r"""Gets the eihealth_project_id of this PublishAppRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -66,7 +66,7 @@ class PublishAppRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this PublishAppRequest.
+        r"""Sets the eihealth_project_id of this PublishAppRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -77,7 +77,7 @@ class PublishAppRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this PublishAppRequest.
+        r"""Gets the app_id of this PublishAppRequest.
 
         应用id
 
@@ -88,7 +88,7 @@ class PublishAppRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this PublishAppRequest.
+        r"""Sets the app_id of this PublishAppRequest.
 
         应用id
 
@@ -99,7 +99,7 @@ class PublishAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this PublishAppRequest.
+        r"""Gets the body of this PublishAppRequest.
 
         :return: The body of this PublishAppRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PublishAppReq`
@@ -108,7 +108,7 @@ class PublishAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PublishAppRequest.
+        r"""Sets the body of this PublishAppRequest.
 
         :param body: The body of this PublishAppRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.PublishAppReq`

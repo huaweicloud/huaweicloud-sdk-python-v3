@@ -25,7 +25,7 @@ class DeleteScalingConfigRequest:
     }
 
     def __init__(self, scaling_configuration_id=None):
-        """DeleteScalingConfigRequest
+        r"""DeleteScalingConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteScalingConfigRequest:
 
     @property
     def scaling_configuration_id(self):
-        """Gets the scaling_configuration_id of this DeleteScalingConfigRequest.
+        r"""Gets the scaling_configuration_id of this DeleteScalingConfigRequest.
 
         伸缩配置ID。
 
@@ -53,7 +53,7 @@ class DeleteScalingConfigRequest:
 
     @scaling_configuration_id.setter
     def scaling_configuration_id(self, scaling_configuration_id):
-        """Sets the scaling_configuration_id of this DeleteScalingConfigRequest.
+        r"""Sets the scaling_configuration_id of this DeleteScalingConfigRequest.
 
         伸缩配置ID。
 

@@ -29,7 +29,7 @@ class ShowFsTaskRequest:
     }
 
     def __init__(self, share_id=None, feature=None, task_id=None):
-        """ShowFsTaskRequest
+        r"""ShowFsTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowFsTaskRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this ShowFsTaskRequest.
+        r"""Gets the share_id of this ShowFsTaskRequest.
 
         文件系统id
 
@@ -65,7 +65,7 @@ class ShowFsTaskRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this ShowFsTaskRequest.
+        r"""Sets the share_id of this ShowFsTaskRequest.
 
         文件系统id
 
@@ -76,7 +76,7 @@ class ShowFsTaskRequest:
 
     @property
     def feature(self):
-        """Gets the feature of this ShowFsTaskRequest.
+        r"""Gets the feature of this ShowFsTaskRequest.
 
         任务类型。例，DU任务取值为dir-usage
 
@@ -87,7 +87,7 @@ class ShowFsTaskRequest:
 
     @feature.setter
     def feature(self, feature):
-        """Sets the feature of this ShowFsTaskRequest.
+        r"""Sets the feature of this ShowFsTaskRequest.
 
         任务类型。例，DU任务取值为dir-usage
 
@@ -98,7 +98,7 @@ class ShowFsTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowFsTaskRequest.
+        r"""Gets the task_id of this ShowFsTaskRequest.
 
         任务ID
 
@@ -109,7 +109,7 @@ class ShowFsTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowFsTaskRequest.
+        r"""Sets the task_id of this ShowFsTaskRequest.
 
         任务ID
 

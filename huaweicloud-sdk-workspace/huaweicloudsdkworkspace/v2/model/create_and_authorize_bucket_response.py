@@ -26,7 +26,7 @@ class CreateAndAuthorizeBucketResponse(SdkResponse):
     }
 
     def __init__(self, bucket_name=None):
-        """CreateAndAuthorizeBucketResponse
+        r"""CreateAndAuthorizeBucketResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateAndAuthorizeBucketResponse(SdkResponse):
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this CreateAndAuthorizeBucketResponse.
+        r"""Gets the bucket_name of this CreateAndAuthorizeBucketResponse.
 
         桶名称。
 
@@ -55,7 +55,7 @@ class CreateAndAuthorizeBucketResponse(SdkResponse):
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this CreateAndAuthorizeBucketResponse.
+        r"""Sets the bucket_name of this CreateAndAuthorizeBucketResponse.
 
         桶名称。
 

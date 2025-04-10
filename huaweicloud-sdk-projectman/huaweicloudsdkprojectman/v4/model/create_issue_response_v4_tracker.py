@@ -27,7 +27,7 @@ class CreateIssueResponseV4Tracker:
     }
 
     def __init__(self, id=None, name=None):
-        """CreateIssueResponseV4Tracker
+        r"""CreateIssueResponseV4Tracker
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateIssueResponseV4Tracker:
 
     @property
     def id(self):
-        """Gets the id of this CreateIssueResponseV4Tracker.
+        r"""Gets the id of this CreateIssueResponseV4Tracker.
 
         类型id
 
@@ -61,7 +61,7 @@ class CreateIssueResponseV4Tracker:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateIssueResponseV4Tracker.
+        r"""Sets the id of this CreateIssueResponseV4Tracker.
 
         类型id
 
@@ -72,7 +72,7 @@ class CreateIssueResponseV4Tracker:
 
     @property
     def name(self):
-        """Gets the name of this CreateIssueResponseV4Tracker.
+        r"""Gets the name of this CreateIssueResponseV4Tracker.
 
         类型名称
 
@@ -83,7 +83,7 @@ class CreateIssueResponseV4Tracker:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateIssueResponseV4Tracker.
+        r"""Sets the name of this CreateIssueResponseV4Tracker.
 
         类型名称
 

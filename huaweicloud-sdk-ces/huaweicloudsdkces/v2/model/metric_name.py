@@ -23,7 +23,7 @@ class MetricName:
     }
 
     def __init__(self):
-        """MetricName
+        r"""MetricName
 
         The model defined in huaweicloud sdk
 

@@ -39,7 +39,7 @@ class InstanceForApiActionDTO:
     }
 
     def __init__(self, instance_id=None, instance_type=None, name=None, action=None, result=None, cause=None, api_status=None, api_debug=None):
-        """InstanceForApiActionDTO
+        r"""InstanceForApiActionDTO
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class InstanceForApiActionDTO:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceForApiActionDTO.
+        r"""Gets the instance_id of this InstanceForApiActionDTO.
 
         集群编号
 
@@ -103,7 +103,7 @@ class InstanceForApiActionDTO:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceForApiActionDTO.
+        r"""Sets the instance_id of this InstanceForApiActionDTO.
 
         集群编号
 
@@ -114,7 +114,7 @@ class InstanceForApiActionDTO:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this InstanceForApiActionDTO.
+        r"""Gets the instance_type of this InstanceForApiActionDTO.
 
         集群类型
 
@@ -125,7 +125,7 @@ class InstanceForApiActionDTO:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this InstanceForApiActionDTO.
+        r"""Sets the instance_type of this InstanceForApiActionDTO.
 
         集群类型
 
@@ -136,7 +136,7 @@ class InstanceForApiActionDTO:
 
     @property
     def name(self):
-        """Gets the name of this InstanceForApiActionDTO.
+        r"""Gets the name of this InstanceForApiActionDTO.
 
         集群名称
 
@@ -147,7 +147,7 @@ class InstanceForApiActionDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceForApiActionDTO.
+        r"""Sets the name of this InstanceForApiActionDTO.
 
         集群名称
 
@@ -158,7 +158,7 @@ class InstanceForApiActionDTO:
 
     @property
     def action(self):
-        """Gets the action of this InstanceForApiActionDTO.
+        r"""Gets the action of this InstanceForApiActionDTO.
 
         api操作
 
@@ -169,7 +169,7 @@ class InstanceForApiActionDTO:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this InstanceForApiActionDTO.
+        r"""Sets the action of this InstanceForApiActionDTO.
 
         api操作
 
@@ -180,7 +180,7 @@ class InstanceForApiActionDTO:
 
     @property
     def result(self):
-        """Gets the result of this InstanceForApiActionDTO.
+        r"""Gets the result of this InstanceForApiActionDTO.
 
         校验结果
 
@@ -191,7 +191,7 @@ class InstanceForApiActionDTO:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this InstanceForApiActionDTO.
+        r"""Sets the result of this InstanceForApiActionDTO.
 
         校验结果
 
@@ -202,7 +202,7 @@ class InstanceForApiActionDTO:
 
     @property
     def cause(self):
-        """Gets the cause of this InstanceForApiActionDTO.
+        r"""Gets the cause of this InstanceForApiActionDTO.
 
         校验失败的原因
 
@@ -213,7 +213,7 @@ class InstanceForApiActionDTO:
 
     @cause.setter
     def cause(self, cause):
-        """Sets the cause of this InstanceForApiActionDTO.
+        r"""Sets the cause of this InstanceForApiActionDTO.
 
         校验失败的原因
 
@@ -224,7 +224,7 @@ class InstanceForApiActionDTO:
 
     @property
     def api_status(self):
-        """Gets the api_status of this InstanceForApiActionDTO.
+        r"""Gets the api_status of this InstanceForApiActionDTO.
 
         api状态
 
@@ -235,7 +235,7 @@ class InstanceForApiActionDTO:
 
     @api_status.setter
     def api_status(self, api_status):
-        """Sets the api_status of this InstanceForApiActionDTO.
+        r"""Sets the api_status of this InstanceForApiActionDTO.
 
         api状态
 
@@ -246,7 +246,7 @@ class InstanceForApiActionDTO:
 
     @property
     def api_debug(self):
-        """Gets the api_debug of this InstanceForApiActionDTO.
+        r"""Gets the api_debug of this InstanceForApiActionDTO.
 
         api调试状态
 
@@ -257,7 +257,7 @@ class InstanceForApiActionDTO:
 
     @api_debug.setter
     def api_debug(self, api_debug):
-        """Sets the api_debug of this InstanceForApiActionDTO.
+        r"""Sets the api_debug of this InstanceForApiActionDTO.
 
         api调试状态
 

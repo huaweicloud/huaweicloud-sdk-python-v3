@@ -34,7 +34,7 @@ class ListBasicAwResponse(SdkResponse):
     }
 
     def __init__(self, code=None, error=None, reason=None, result=None, status=None):
-        """ListBasicAwResponse
+        r"""ListBasicAwResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListBasicAwResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListBasicAwResponse.
+        r"""Gets the code of this ListBasicAwResponse.
 
         错误码
 
@@ -83,7 +83,7 @@ class ListBasicAwResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListBasicAwResponse.
+        r"""Sets the code of this ListBasicAwResponse.
 
         错误码
 
@@ -94,7 +94,7 @@ class ListBasicAwResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListBasicAwResponse.
+        r"""Gets the error of this ListBasicAwResponse.
 
         :return: The error of this ListBasicAwResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorOfAPITest`
@@ -103,7 +103,7 @@ class ListBasicAwResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListBasicAwResponse.
+        r"""Sets the error of this ListBasicAwResponse.
 
         :param error: The error of this ListBasicAwResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorOfAPITest`
@@ -112,7 +112,7 @@ class ListBasicAwResponse(SdkResponse):
 
     @property
     def reason(self):
-        """Gets the reason of this ListBasicAwResponse.
+        r"""Gets the reason of this ListBasicAwResponse.
 
         失败原因
 
@@ -123,7 +123,7 @@ class ListBasicAwResponse(SdkResponse):
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ListBasicAwResponse.
+        r"""Sets the reason of this ListBasicAwResponse.
 
         失败原因
 
@@ -134,7 +134,7 @@ class ListBasicAwResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListBasicAwResponse.
+        r"""Gets the result of this ListBasicAwResponse.
 
         :return: The result of this ListBasicAwResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BasicAwRes`
@@ -143,7 +143,7 @@ class ListBasicAwResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListBasicAwResponse.
+        r"""Sets the result of this ListBasicAwResponse.
 
         :param result: The result of this ListBasicAwResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.BasicAwRes`
@@ -152,7 +152,7 @@ class ListBasicAwResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListBasicAwResponse.
+        r"""Gets the status of this ListBasicAwResponse.
 
         状态
 
@@ -163,7 +163,7 @@ class ListBasicAwResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListBasicAwResponse.
+        r"""Sets the status of this ListBasicAwResponse.
 
         状态
 

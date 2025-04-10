@@ -41,7 +41,7 @@ class ListCertificatesRequest:
     }
 
     def __init__(self, limit=None, offset=None, sort_dir=None, sort_key=None, status=None, enterprise_project_id=None, deploy_support=None, owned_by_self=None, expired_days_since=None):
-        """ListCertificatesRequest
+        r"""ListCertificatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListCertificatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCertificatesRequest.
+        r"""Gets the limit of this ListCertificatesRequest.
 
         每页条目数量，取值如下： - 10：每页显示10条证书信息。 - 20：每页显示20条证书信息。 - 50：每页显示50条证书信息。
 
@@ -110,7 +110,7 @@ class ListCertificatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCertificatesRequest.
+        r"""Sets the limit of this ListCertificatesRequest.
 
         每页条目数量，取值如下： - 10：每页显示10条证书信息。 - 20：每页显示20条证书信息。 - 50：每页显示50条证书信息。
 
@@ -121,7 +121,7 @@ class ListCertificatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCertificatesRequest.
+        r"""Gets the offset of this ListCertificatesRequest.
 
         偏移量。
 
@@ -132,7 +132,7 @@ class ListCertificatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCertificatesRequest.
+        r"""Sets the offset of this ListCertificatesRequest.
 
         偏移量。
 
@@ -143,7 +143,7 @@ class ListCertificatesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListCertificatesRequest.
+        r"""Gets the sort_dir of this ListCertificatesRequest.
 
         排序方式。根据排序参数sort_key进行排序，取值如下： - ASC：升序。 - DESC：降序。
 
@@ -154,7 +154,7 @@ class ListCertificatesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListCertificatesRequest.
+        r"""Sets the sort_dir of this ListCertificatesRequest.
 
         排序方式。根据排序参数sort_key进行排序，取值如下： - ASC：升序。 - DESC：降序。
 
@@ -165,7 +165,7 @@ class ListCertificatesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListCertificatesRequest.
+        r"""Gets the sort_key of this ListCertificatesRequest.
 
         排序依据参数，取值如下： - certExpiredTime：证书到期时间。 - certStatus：证书状态。 - certUpdateTime：证书更新时间。
 
@@ -176,7 +176,7 @@ class ListCertificatesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListCertificatesRequest.
+        r"""Sets the sort_key of this ListCertificatesRequest.
 
         排序依据参数，取值如下： - certExpiredTime：证书到期时间。 - certStatus：证书状态。 - certUpdateTime：证书更新时间。
 
@@ -187,7 +187,7 @@ class ListCertificatesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListCertificatesRequest.
+        r"""Gets the status of this ListCertificatesRequest.
 
         证书状态，取值如下： - ALL：所有证书状态。 - PAID：证书已支付，待申请证书。 - ISSUED：证书已签发。 - CHECKING：证书申请审核中。 - CANCELCHECKING：取消证书申请审核中。 - UNPASSED：证书申请未通过。 - EXPIRED：证书已过期。 - REVOKING：证书吊销申请审核中。 - REVOKED：证书已吊销。 - UPLOAD：证书托管中。 - CHECKING_ORG：待完成企业资格认证。 - ISSUING：证书待签发。 - SUPPLEMENTCHECKING：多域名证书新增附加域名审核中。
 
@@ -198,7 +198,7 @@ class ListCertificatesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListCertificatesRequest.
+        r"""Sets the status of this ListCertificatesRequest.
 
         证书状态，取值如下： - ALL：所有证书状态。 - PAID：证书已支付，待申请证书。 - ISSUED：证书已签发。 - CHECKING：证书申请审核中。 - CANCELCHECKING：取消证书申请审核中。 - UNPASSED：证书申请未通过。 - EXPIRED：证书已过期。 - REVOKING：证书吊销申请审核中。 - REVOKED：证书已吊销。 - UPLOAD：证书托管中。 - CHECKING_ORG：待完成企业资格认证。 - ISSUING：证书待签发。 - SUPPLEMENTCHECKING：多域名证书新增附加域名审核中。
 
@@ -209,7 +209,7 @@ class ListCertificatesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListCertificatesRequest.
+        r"""Gets the enterprise_project_id of this ListCertificatesRequest.
 
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件。 - 取值为“all” - 取值为“0” - 满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
@@ -220,7 +220,7 @@ class ListCertificatesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListCertificatesRequest.
+        r"""Sets the enterprise_project_id of this ListCertificatesRequest.
 
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件。 - 取值为“all” - 取值为“0” - 满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
@@ -231,7 +231,7 @@ class ListCertificatesRequest:
 
     @property
     def deploy_support(self):
-        """Gets the deploy_support of this ListCertificatesRequest.
+        r"""Gets the deploy_support of this ListCertificatesRequest.
 
         是否仅筛选支持部署的证书。
 
@@ -242,7 +242,7 @@ class ListCertificatesRequest:
 
     @deploy_support.setter
     def deploy_support(self, deploy_support):
-        """Sets the deploy_support of this ListCertificatesRequest.
+        r"""Sets the deploy_support of this ListCertificatesRequest.
 
         是否仅筛选支持部署的证书。
 
@@ -253,7 +253,7 @@ class ListCertificatesRequest:
 
     @property
     def owned_by_self(self):
-        """Gets the owned_by_self of this ListCertificatesRequest.
+        r"""Gets the owned_by_self of this ListCertificatesRequest.
 
         过滤资源是否属于当前租户，取值如下： - true：只查属于当前租户的资源，不包括共享资源。 - false：查询当前租户及共享给该租户的资源。
 
@@ -264,7 +264,7 @@ class ListCertificatesRequest:
 
     @owned_by_self.setter
     def owned_by_self(self, owned_by_self):
-        """Sets the owned_by_self of this ListCertificatesRequest.
+        r"""Sets the owned_by_self of this ListCertificatesRequest.
 
         过滤资源是否属于当前租户，取值如下： - true：只查属于当前租户的资源，不包括共享资源。 - false：查询当前租户及共享给该租户的资源。
 
@@ -275,7 +275,7 @@ class ListCertificatesRequest:
 
     @property
     def expired_days_since(self):
-        """Gets the expired_days_since of this ListCertificatesRequest.
+        r"""Gets the expired_days_since of this ListCertificatesRequest.
 
         证书在有效期内及最多过期xx天。
 
@@ -286,7 +286,7 @@ class ListCertificatesRequest:
 
     @expired_days_since.setter
     def expired_days_since(self, expired_days_since):
-        """Sets the expired_days_since of this ListCertificatesRequest.
+        r"""Sets the expired_days_since of this ListCertificatesRequest.
 
         证书在有效期内及最多过期xx天。
 

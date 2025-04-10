@@ -27,7 +27,7 @@ class StarRocksInstanceInfoTagsInfoTags:
     }
 
     def __init__(self, key=None, value=None):
-        """StarRocksInstanceInfoTagsInfoTags
+        r"""StarRocksInstanceInfoTagsInfoTags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StarRocksInstanceInfoTagsInfoTags:
 
     @property
     def key(self):
-        """Gets the key of this StarRocksInstanceInfoTagsInfoTags.
+        r"""Gets the key of this StarRocksInstanceInfoTagsInfoTags.
 
         标签键。最大长度36个unicode字符。key不能为空或者空字符串，不能为空格。  字符集：A-Z，a-z ，0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -61,7 +61,7 @@ class StarRocksInstanceInfoTagsInfoTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this StarRocksInstanceInfoTagsInfoTags.
+        r"""Sets the key of this StarRocksInstanceInfoTagsInfoTags.
 
         标签键。最大长度36个unicode字符。key不能为空或者空字符串，不能为空格。  字符集：A-Z，a-z ，0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -72,7 +72,7 @@ class StarRocksInstanceInfoTagsInfoTags:
 
     @property
     def value(self):
-        """Gets the value of this StarRocksInstanceInfoTagsInfoTags.
+        r"""Gets the value of this StarRocksInstanceInfoTagsInfoTags.
 
         标签值。最大长度43个unicode字符。可以为空字符串。  字符集：A-Z，a-z ，0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 
@@ -83,7 +83,7 @@ class StarRocksInstanceInfoTagsInfoTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this StarRocksInstanceInfoTagsInfoTags.
+        r"""Sets the value of this StarRocksInstanceInfoTagsInfoTags.
 
         标签值。最大长度43个unicode字符。可以为空字符串。  字符集：A-Z，a-z ，0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
 

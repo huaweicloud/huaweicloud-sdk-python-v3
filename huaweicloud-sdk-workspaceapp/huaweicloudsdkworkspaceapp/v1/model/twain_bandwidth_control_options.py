@@ -25,7 +25,7 @@ class TwainBandwidthControlOptions:
     }
 
     def __init__(self, twain_bandwidth_control_value=None):
-        """TwainBandwidthControlOptions
+        r"""TwainBandwidthControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TwainBandwidthControlOptions:
 
     @property
     def twain_bandwidth_control_value(self):
-        """Gets the twain_bandwidth_control_value of this TwainBandwidthControlOptions.
+        r"""Gets the twain_bandwidth_control_value of this TwainBandwidthControlOptions.
 
         TWAIN带宽控制量（Kbps）。取值范围为[2000-10000]。默认：5000。
 
@@ -54,7 +54,7 @@ class TwainBandwidthControlOptions:
 
     @twain_bandwidth_control_value.setter
     def twain_bandwidth_control_value(self, twain_bandwidth_control_value):
-        """Sets the twain_bandwidth_control_value of this TwainBandwidthControlOptions.
+        r"""Sets the twain_bandwidth_control_value of this TwainBandwidthControlOptions.
 
         TWAIN带宽控制量（Kbps）。取值范围为[2000-10000]。默认：5000。
 

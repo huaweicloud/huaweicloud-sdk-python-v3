@@ -29,7 +29,7 @@ class ReplayErrorSqlResp:
     }
 
     def __init__(self, object_type=None, abnormal_sql=None, abnormal_info=None):
-        """ReplayErrorSqlResp
+        r"""ReplayErrorSqlResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ReplayErrorSqlResp:
 
     @property
     def object_type(self):
-        """Gets the object_type of this ReplayErrorSqlResp.
+        r"""Gets the object_type of this ReplayErrorSqlResp.
 
         SQL类型
 
@@ -68,7 +68,7 @@ class ReplayErrorSqlResp:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this ReplayErrorSqlResp.
+        r"""Sets the object_type of this ReplayErrorSqlResp.
 
         SQL类型
 
@@ -79,7 +79,7 @@ class ReplayErrorSqlResp:
 
     @property
     def abnormal_sql(self):
-        """Gets the abnormal_sql of this ReplayErrorSqlResp.
+        r"""Gets the abnormal_sql of this ReplayErrorSqlResp.
 
         SQL语句
 
@@ -90,7 +90,7 @@ class ReplayErrorSqlResp:
 
     @abnormal_sql.setter
     def abnormal_sql(self, abnormal_sql):
-        """Sets the abnormal_sql of this ReplayErrorSqlResp.
+        r"""Sets the abnormal_sql of this ReplayErrorSqlResp.
 
         SQL语句
 
@@ -101,7 +101,7 @@ class ReplayErrorSqlResp:
 
     @property
     def abnormal_info(self):
-        """Gets the abnormal_info of this ReplayErrorSqlResp.
+        r"""Gets the abnormal_info of this ReplayErrorSqlResp.
 
         异常原因描述
 
@@ -112,7 +112,7 @@ class ReplayErrorSqlResp:
 
     @abnormal_info.setter
     def abnormal_info(self, abnormal_info):
-        """Sets the abnormal_info of this ReplayErrorSqlResp.
+        r"""Sets the abnormal_info of this ReplayErrorSqlResp.
 
         异常原因描述
 

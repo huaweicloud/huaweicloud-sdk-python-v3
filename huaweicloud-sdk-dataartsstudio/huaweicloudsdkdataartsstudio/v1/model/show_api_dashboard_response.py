@@ -26,7 +26,7 @@ class ShowApiDashboardResponse(SdkResponse):
     }
 
     def __init__(self, dashboards=None):
-        """ShowApiDashboardResponse
+        r"""ShowApiDashboardResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowApiDashboardResponse(SdkResponse):
 
     @property
     def dashboards(self):
-        """Gets the dashboards of this ShowApiDashboardResponse.
+        r"""Gets the dashboards of this ShowApiDashboardResponse.
 
         统计信息仪表板
 
@@ -55,7 +55,7 @@ class ShowApiDashboardResponse(SdkResponse):
 
     @dashboards.setter
     def dashboards(self, dashboards):
-        """Sets the dashboards of this ShowApiDashboardResponse.
+        r"""Sets the dashboards of this ShowApiDashboardResponse.
 
         统计信息仪表板
 

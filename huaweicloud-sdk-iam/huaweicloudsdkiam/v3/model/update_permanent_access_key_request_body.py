@@ -25,7 +25,7 @@ class UpdatePermanentAccessKeyRequestBody:
     }
 
     def __init__(self, credential=None):
-        """UpdatePermanentAccessKeyRequestBody
+        r"""UpdatePermanentAccessKeyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdatePermanentAccessKeyRequestBody:
 
     @property
     def credential(self):
-        """Gets the credential of this UpdatePermanentAccessKeyRequestBody.
+        r"""Gets the credential of this UpdatePermanentAccessKeyRequestBody.
 
         :return: The credential of this UpdatePermanentAccessKeyRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateCredentialOption`
@@ -51,7 +51,7 @@ class UpdatePermanentAccessKeyRequestBody:
 
     @credential.setter
     def credential(self, credential):
-        """Sets the credential of this UpdatePermanentAccessKeyRequestBody.
+        r"""Sets the credential of this UpdatePermanentAccessKeyRequestBody.
 
         :param credential: The credential of this UpdatePermanentAccessKeyRequestBody.
         :type credential: :class:`huaweicloudsdkiam.v3.UpdateCredentialOption`

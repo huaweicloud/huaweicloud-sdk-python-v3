@@ -27,7 +27,7 @@ class CreatePostPaidInstanceByEngineRequest:
     }
 
     def __init__(self, engine=None, body=None):
-        """CreatePostPaidInstanceByEngineRequest
+        r"""CreatePostPaidInstanceByEngineRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePostPaidInstanceByEngineRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this CreatePostPaidInstanceByEngineRequest.
+        r"""Gets the engine of this CreatePostPaidInstanceByEngineRequest.
 
         消息引擎。
 
@@ -60,7 +60,7 @@ class CreatePostPaidInstanceByEngineRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this CreatePostPaidInstanceByEngineRequest.
+        r"""Sets the engine of this CreatePostPaidInstanceByEngineRequest.
 
         消息引擎。
 
@@ -71,7 +71,7 @@ class CreatePostPaidInstanceByEngineRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePostPaidInstanceByEngineRequest.
+        r"""Gets the body of this CreatePostPaidInstanceByEngineRequest.
 
         :return: The body of this CreatePostPaidInstanceByEngineRequest.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreateInstanceReq`
@@ -80,7 +80,7 @@ class CreatePostPaidInstanceByEngineRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePostPaidInstanceByEngineRequest.
+        r"""Sets the body of this CreatePostPaidInstanceByEngineRequest.
 
         :param body: The body of this CreatePostPaidInstanceByEngineRequest.
         :type body: :class:`huaweicloudsdkrabbitmq.v2.CreateInstanceReq`

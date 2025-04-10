@@ -35,7 +35,7 @@ class CreateFileRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, path=None, ref=None, body=None):
-        """CreateFileRequest
+        r"""CreateFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class CreateFileRequest:
 
     @property
     def x_repo_auth(self):
-        """Gets the x_repo_auth of this CreateFileRequest.
+        r"""Gets the x_repo_auth of this CreateFileRequest.
 
         授权名称。
 
@@ -84,7 +84,7 @@ class CreateFileRequest:
 
     @x_repo_auth.setter
     def x_repo_auth(self, x_repo_auth):
-        """Sets the x_repo_auth of this CreateFileRequest.
+        r"""Sets the x_repo_auth of this CreateFileRequest.
 
         授权名称。
 
@@ -95,7 +95,7 @@ class CreateFileRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this CreateFileRequest.
+        r"""Gets the namespace of this CreateFileRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -106,7 +106,7 @@ class CreateFileRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this CreateFileRequest.
+        r"""Sets the namespace of this CreateFileRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -117,7 +117,7 @@ class CreateFileRequest:
 
     @property
     def project(self):
-        """Gets the project of this CreateFileRequest.
+        r"""Gets the project of this CreateFileRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -128,7 +128,7 @@ class CreateFileRequest:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this CreateFileRequest.
+        r"""Sets the project of this CreateFileRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -139,7 +139,7 @@ class CreateFileRequest:
 
     @property
     def path(self):
-        """Gets the path of this CreateFileRequest.
+        r"""Gets the path of this CreateFileRequest.
 
         文件路径，需要将“/”替换为“:”。
 
@@ -150,7 +150,7 @@ class CreateFileRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this CreateFileRequest.
+        r"""Sets the path of this CreateFileRequest.
 
         文件路径，需要将“/”替换为“:”。
 
@@ -161,7 +161,7 @@ class CreateFileRequest:
 
     @property
     def ref(self):
-        """Gets the ref of this CreateFileRequest.
+        r"""Gets the ref of this CreateFileRequest.
 
         分支名称或者tag标签名称或者commit sha。
 
@@ -172,7 +172,7 @@ class CreateFileRequest:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this CreateFileRequest.
+        r"""Sets the ref of this CreateFileRequest.
 
         分支名称或者tag标签名称或者commit sha。
 
@@ -183,7 +183,7 @@ class CreateFileRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFileRequest.
+        r"""Gets the body of this CreateFileRequest.
 
         :return: The body of this CreateFileRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.FileCreate`
@@ -192,7 +192,7 @@ class CreateFileRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFileRequest.
+        r"""Sets the body of this CreateFileRequest.
 
         :param body: The body of this CreateFileRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.FileCreate`

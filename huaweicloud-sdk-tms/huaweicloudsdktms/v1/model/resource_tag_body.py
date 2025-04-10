@@ -27,7 +27,7 @@ class ResourceTagBody:
     }
 
     def __init__(self, resource_id=None, resource_type=None):
-        """ResourceTagBody
+        r"""ResourceTagBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ResourceTagBody:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourceTagBody.
+        r"""Gets the resource_id of this ResourceTagBody.
 
         资源ID
 
@@ -59,7 +59,7 @@ class ResourceTagBody:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourceTagBody.
+        r"""Sets the resource_id of this ResourceTagBody.
 
         资源ID
 
@@ -70,7 +70,7 @@ class ResourceTagBody:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ResourceTagBody.
+        r"""Gets the resource_type of this ResourceTagBody.
 
         资源类型
 
@@ -81,7 +81,7 @@ class ResourceTagBody:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ResourceTagBody.
+        r"""Sets the resource_type of this ResourceTagBody.
 
         资源类型
 

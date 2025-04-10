@@ -27,7 +27,7 @@ class ImportRuleSecrecyLevelDto:
     }
 
     def __init__(self, builtin_rule_id=None, secrecy_level=None):
-        """ImportRuleSecrecyLevelDto
+        r"""ImportRuleSecrecyLevelDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ImportRuleSecrecyLevelDto:
 
     @property
     def builtin_rule_id(self):
-        """Gets the builtin_rule_id of this ImportRuleSecrecyLevelDto.
+        r"""Gets the builtin_rule_id of this ImportRuleSecrecyLevelDto.
 
         内置规则模板id。
 
@@ -61,7 +61,7 @@ class ImportRuleSecrecyLevelDto:
 
     @builtin_rule_id.setter
     def builtin_rule_id(self, builtin_rule_id):
-        """Sets the builtin_rule_id of this ImportRuleSecrecyLevelDto.
+        r"""Sets the builtin_rule_id of this ImportRuleSecrecyLevelDto.
 
         内置规则模板id。
 
@@ -72,7 +72,7 @@ class ImportRuleSecrecyLevelDto:
 
     @property
     def secrecy_level(self):
-        """Gets the secrecy_level of this ImportRuleSecrecyLevelDto.
+        r"""Gets the secrecy_level of this ImportRuleSecrecyLevelDto.
 
         密级id，获取方法请参见[获取数据密级](ListSecuritySecrecyLevels.xml)。
 
@@ -83,7 +83,7 @@ class ImportRuleSecrecyLevelDto:
 
     @secrecy_level.setter
     def secrecy_level(self, secrecy_level):
-        """Sets the secrecy_level of this ImportRuleSecrecyLevelDto.
+        r"""Sets the secrecy_level of this ImportRuleSecrecyLevelDto.
 
         密级id，获取方法请参见[获取数据密级](ListSecuritySecrecyLevels.xml)。
 

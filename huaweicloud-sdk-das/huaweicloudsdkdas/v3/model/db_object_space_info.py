@@ -41,7 +41,7 @@ class DbObjectSpaceInfo:
     }
 
     def __init__(self, object_type=None, object_name=None, object_id=None, used_size=None, data_size=None, index_size=None, free_size=None, free_rate=None, estimated_rows=None):
-        """DbObjectSpaceInfo
+        r"""DbObjectSpaceInfo
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class DbObjectSpaceInfo:
 
     @property
     def object_type(self):
-        """Gets the object_type of this DbObjectSpaceInfo.
+        r"""Gets the object_type of this DbObjectSpaceInfo.
 
         对象类型，如果是table，同时需要传database_id
 
@@ -108,7 +108,7 @@ class DbObjectSpaceInfo:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this DbObjectSpaceInfo.
+        r"""Sets the object_type of this DbObjectSpaceInfo.
 
         对象类型，如果是table，同时需要传database_id
 
@@ -119,7 +119,7 @@ class DbObjectSpaceInfo:
 
     @property
     def object_name(self):
-        """Gets the object_name of this DbObjectSpaceInfo.
+        r"""Gets the object_name of this DbObjectSpaceInfo.
 
         对象名称
 
@@ -130,7 +130,7 @@ class DbObjectSpaceInfo:
 
     @object_name.setter
     def object_name(self, object_name):
-        """Sets the object_name of this DbObjectSpaceInfo.
+        r"""Sets the object_name of this DbObjectSpaceInfo.
 
         对象名称
 
@@ -141,7 +141,7 @@ class DbObjectSpaceInfo:
 
     @property
     def object_id(self):
-        """Gets the object_id of this DbObjectSpaceInfo.
+        r"""Gets the object_id of this DbObjectSpaceInfo.
 
         对象ID
 
@@ -152,7 +152,7 @@ class DbObjectSpaceInfo:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this DbObjectSpaceInfo.
+        r"""Sets the object_id of this DbObjectSpaceInfo.
 
         对象ID
 
@@ -163,7 +163,7 @@ class DbObjectSpaceInfo:
 
     @property
     def used_size(self):
-        """Gets the used_size of this DbObjectSpaceInfo.
+        r"""Gets the used_size of this DbObjectSpaceInfo.
 
         已使用空间，以字节为单位
 
@@ -174,7 +174,7 @@ class DbObjectSpaceInfo:
 
     @used_size.setter
     def used_size(self, used_size):
-        """Sets the used_size of this DbObjectSpaceInfo.
+        r"""Sets the used_size of this DbObjectSpaceInfo.
 
         已使用空间，以字节为单位
 
@@ -185,7 +185,7 @@ class DbObjectSpaceInfo:
 
     @property
     def data_size(self):
-        """Gets the data_size of this DbObjectSpaceInfo.
+        r"""Gets the data_size of this DbObjectSpaceInfo.
 
         数据空间，以字节为单位
 
@@ -196,7 +196,7 @@ class DbObjectSpaceInfo:
 
     @data_size.setter
     def data_size(self, data_size):
-        """Sets the data_size of this DbObjectSpaceInfo.
+        r"""Sets the data_size of this DbObjectSpaceInfo.
 
         数据空间，以字节为单位
 
@@ -207,7 +207,7 @@ class DbObjectSpaceInfo:
 
     @property
     def index_size(self):
-        """Gets the index_size of this DbObjectSpaceInfo.
+        r"""Gets the index_size of this DbObjectSpaceInfo.
 
         索引空间，以字节为单位
 
@@ -218,7 +218,7 @@ class DbObjectSpaceInfo:
 
     @index_size.setter
     def index_size(self, index_size):
-        """Sets the index_size of this DbObjectSpaceInfo.
+        r"""Sets the index_size of this DbObjectSpaceInfo.
 
         索引空间，以字节为单位
 
@@ -229,7 +229,7 @@ class DbObjectSpaceInfo:
 
     @property
     def free_size(self):
-        """Gets the free_size of this DbObjectSpaceInfo.
+        r"""Gets the free_size of this DbObjectSpaceInfo.
 
         碎片空间，以字节为单位
 
@@ -240,7 +240,7 @@ class DbObjectSpaceInfo:
 
     @free_size.setter
     def free_size(self, free_size):
-        """Sets the free_size of this DbObjectSpaceInfo.
+        r"""Sets the free_size of this DbObjectSpaceInfo.
 
         碎片空间，以字节为单位
 
@@ -251,7 +251,7 @@ class DbObjectSpaceInfo:
 
     @property
     def free_rate(self):
-        """Gets the free_rate of this DbObjectSpaceInfo.
+        r"""Gets the free_rate of this DbObjectSpaceInfo.
 
         碎片率
 
@@ -262,7 +262,7 @@ class DbObjectSpaceInfo:
 
     @free_rate.setter
     def free_rate(self, free_rate):
-        """Sets the free_rate of this DbObjectSpaceInfo.
+        r"""Sets the free_rate of this DbObjectSpaceInfo.
 
         碎片率
 
@@ -273,7 +273,7 @@ class DbObjectSpaceInfo:
 
     @property
     def estimated_rows(self):
-        """Gets the estimated_rows of this DbObjectSpaceInfo.
+        r"""Gets the estimated_rows of this DbObjectSpaceInfo.
 
         估算值行数，以字节为单位
 
@@ -284,7 +284,7 @@ class DbObjectSpaceInfo:
 
     @estimated_rows.setter
     def estimated_rows(self, estimated_rows):
-        """Sets the estimated_rows of this DbObjectSpaceInfo.
+        r"""Sets the estimated_rows of this DbObjectSpaceInfo.
 
         估算值行数，以字节为单位
 

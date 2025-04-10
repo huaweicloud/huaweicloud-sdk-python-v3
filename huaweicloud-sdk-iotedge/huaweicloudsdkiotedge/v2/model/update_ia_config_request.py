@@ -31,7 +31,7 @@ class UpdateIaConfigRequest:
     }
 
     def __init__(self, node_id=None, ia_id=None, config_id=None, body=None):
-        """UpdateIaConfigRequest
+        r"""UpdateIaConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateIaConfigRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this UpdateIaConfigRequest.
+        r"""Gets the node_id of this UpdateIaConfigRequest.
 
         边缘节点ID
 
@@ -72,7 +72,7 @@ class UpdateIaConfigRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this UpdateIaConfigRequest.
+        r"""Sets the node_id of this UpdateIaConfigRequest.
 
         边缘节点ID
 
@@ -83,7 +83,7 @@ class UpdateIaConfigRequest:
 
     @property
     def ia_id(self):
-        """Gets the ia_id of this UpdateIaConfigRequest.
+        r"""Gets the ia_id of this UpdateIaConfigRequest.
 
         边侧第三方应用的模块ID
 
@@ -94,7 +94,7 @@ class UpdateIaConfigRequest:
 
     @ia_id.setter
     def ia_id(self, ia_id):
-        """Sets the ia_id of this UpdateIaConfigRequest.
+        r"""Sets the ia_id of this UpdateIaConfigRequest.
 
         边侧第三方应用的模块ID
 
@@ -105,7 +105,7 @@ class UpdateIaConfigRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this UpdateIaConfigRequest.
+        r"""Gets the config_id of this UpdateIaConfigRequest.
 
         配置ID
 
@@ -116,7 +116,7 @@ class UpdateIaConfigRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this UpdateIaConfigRequest.
+        r"""Sets the config_id of this UpdateIaConfigRequest.
 
         配置ID
 
@@ -127,7 +127,7 @@ class UpdateIaConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateIaConfigRequest.
+        r"""Gets the body of this UpdateIaConfigRequest.
 
         :return: The body of this UpdateIaConfigRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateIaConfigRequestDTO`
@@ -136,7 +136,7 @@ class UpdateIaConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateIaConfigRequest.
+        r"""Sets the body of this UpdateIaConfigRequest.
 
         :param body: The body of this UpdateIaConfigRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.UpdateIaConfigRequestDTO`

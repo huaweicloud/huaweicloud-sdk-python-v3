@@ -25,7 +25,7 @@ class UpdateProxyNewConfigRequestBody:
     }
 
     def __init__(self, configurations=None):
-        """UpdateProxyNewConfigRequestBody
+        r"""UpdateProxyNewConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateProxyNewConfigRequestBody:
 
     @property
     def configurations(self):
-        """Gets the configurations of this UpdateProxyNewConfigRequestBody.
+        r"""Gets the configurations of this UpdateProxyNewConfigRequestBody.
 
         修改的配置信息。
 
@@ -53,7 +53,7 @@ class UpdateProxyNewConfigRequestBody:
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this UpdateProxyNewConfigRequestBody.
+        r"""Sets the configurations of this UpdateProxyNewConfigRequestBody.
 
         修改的配置信息。
 

@@ -55,7 +55,7 @@ class ListLoadbalancersRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, description=None, name=None, operating_status=None, provisioning_status=None, vip_address=None, vip_port_id=None, vip_subnet_id=None, vpc_id=None, enterprise_project_id=None, admin_state_up=None, member_address=None, member_device_id=None):
-        """ListLoadbalancersRequest
+        r"""ListLoadbalancersRequest
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class ListLoadbalancersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLoadbalancersRequest.
+        r"""Gets the limit of this ListLoadbalancersRequest.
 
         分页查询中每页的负载均衡器个数
 
@@ -159,7 +159,7 @@ class ListLoadbalancersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLoadbalancersRequest.
+        r"""Sets the limit of this ListLoadbalancersRequest.
 
         分页查询中每页的负载均衡器个数
 
@@ -170,7 +170,7 @@ class ListLoadbalancersRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListLoadbalancersRequest.
+        r"""Gets the marker of this ListLoadbalancersRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
 
@@ -181,7 +181,7 @@ class ListLoadbalancersRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListLoadbalancersRequest.
+        r"""Sets the marker of this ListLoadbalancersRequest.
 
         分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
 
@@ -192,7 +192,7 @@ class ListLoadbalancersRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListLoadbalancersRequest.
+        r"""Gets the page_reverse of this ListLoadbalancersRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -203,7 +203,7 @@ class ListLoadbalancersRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListLoadbalancersRequest.
+        r"""Sets the page_reverse of this ListLoadbalancersRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -214,7 +214,7 @@ class ListLoadbalancersRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListLoadbalancersRequest.
+        r"""Gets the id of this ListLoadbalancersRequest.
 
         负载均衡器的ID。
 
@@ -225,7 +225,7 @@ class ListLoadbalancersRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListLoadbalancersRequest.
+        r"""Sets the id of this ListLoadbalancersRequest.
 
         负载均衡器的ID。
 
@@ -236,7 +236,7 @@ class ListLoadbalancersRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListLoadbalancersRequest.
+        r"""Gets the description of this ListLoadbalancersRequest.
 
         负载均衡器的描述信息。
 
@@ -247,7 +247,7 @@ class ListLoadbalancersRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListLoadbalancersRequest.
+        r"""Sets the description of this ListLoadbalancersRequest.
 
         负载均衡器的描述信息。
 
@@ -258,7 +258,7 @@ class ListLoadbalancersRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListLoadbalancersRequest.
+        r"""Gets the name of this ListLoadbalancersRequest.
 
         负载均衡器的名称。
 
@@ -269,7 +269,7 @@ class ListLoadbalancersRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListLoadbalancersRequest.
+        r"""Sets the name of this ListLoadbalancersRequest.
 
         负载均衡器的名称。
 
@@ -280,7 +280,7 @@ class ListLoadbalancersRequest:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this ListLoadbalancersRequest.
+        r"""Gets the operating_status of this ListLoadbalancersRequest.
 
         负载均衡器的操作状态。取值范围：可以为ONLINE、OFFLINE、DEGRADED、DISABLED或NO_MONITOR。
 
@@ -291,7 +291,7 @@ class ListLoadbalancersRequest:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this ListLoadbalancersRequest.
+        r"""Sets the operating_status of this ListLoadbalancersRequest.
 
         负载均衡器的操作状态。取值范围：可以为ONLINE、OFFLINE、DEGRADED、DISABLED或NO_MONITOR。
 
@@ -302,7 +302,7 @@ class ListLoadbalancersRequest:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this ListLoadbalancersRequest.
+        r"""Gets the provisioning_status of this ListLoadbalancersRequest.
 
         负载均衡器的配置状态。取值范围：可以为ACTIVE、PENDING_CREATE 或者ERROR。
 
@@ -313,7 +313,7 @@ class ListLoadbalancersRequest:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this ListLoadbalancersRequest.
+        r"""Sets the provisioning_status of this ListLoadbalancersRequest.
 
         负载均衡器的配置状态。取值范围：可以为ACTIVE、PENDING_CREATE 或者ERROR。
 
@@ -324,7 +324,7 @@ class ListLoadbalancersRequest:
 
     @property
     def vip_address(self):
-        """Gets the vip_address of this ListLoadbalancersRequest.
+        r"""Gets the vip_address of this ListLoadbalancersRequest.
 
         负载均衡器的内网IP。
 
@@ -335,7 +335,7 @@ class ListLoadbalancersRequest:
 
     @vip_address.setter
     def vip_address(self, vip_address):
-        """Sets the vip_address of this ListLoadbalancersRequest.
+        r"""Sets the vip_address of this ListLoadbalancersRequest.
 
         负载均衡器的内网IP。
 
@@ -346,7 +346,7 @@ class ListLoadbalancersRequest:
 
     @property
     def vip_port_id(self):
-        """Gets the vip_port_id of this ListLoadbalancersRequest.
+        r"""Gets the vip_port_id of this ListLoadbalancersRequest.
 
         负载均衡器内网IP对应的端口ID。
 
@@ -357,7 +357,7 @@ class ListLoadbalancersRequest:
 
     @vip_port_id.setter
     def vip_port_id(self, vip_port_id):
-        """Sets the vip_port_id of this ListLoadbalancersRequest.
+        r"""Sets the vip_port_id of this ListLoadbalancersRequest.
 
         负载均衡器内网IP对应的端口ID。
 
@@ -368,7 +368,7 @@ class ListLoadbalancersRequest:
 
     @property
     def vip_subnet_id(self):
-        """Gets the vip_subnet_id of this ListLoadbalancersRequest.
+        r"""Gets the vip_subnet_id of this ListLoadbalancersRequest.
 
         负载均衡器所在的子网IPv4子网ID。
 
@@ -379,7 +379,7 @@ class ListLoadbalancersRequest:
 
     @vip_subnet_id.setter
     def vip_subnet_id(self, vip_subnet_id):
-        """Sets the vip_subnet_id of this ListLoadbalancersRequest.
+        r"""Sets the vip_subnet_id of this ListLoadbalancersRequest.
 
         负载均衡器所在的子网IPv4子网ID。
 
@@ -390,7 +390,7 @@ class ListLoadbalancersRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListLoadbalancersRequest.
+        r"""Gets the vpc_id of this ListLoadbalancersRequest.
 
         负载均衡器所在的虚拟私有云ID。
 
@@ -401,7 +401,7 @@ class ListLoadbalancersRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListLoadbalancersRequest.
+        r"""Sets the vpc_id of this ListLoadbalancersRequest.
 
         负载均衡器所在的虚拟私有云ID。
 
@@ -412,7 +412,7 @@ class ListLoadbalancersRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListLoadbalancersRequest.
+        r"""Gets the enterprise_project_id of this ListLoadbalancersRequest.
 
         企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 
@@ -423,7 +423,7 @@ class ListLoadbalancersRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListLoadbalancersRequest.
+        r"""Sets the enterprise_project_id of this ListLoadbalancersRequest.
 
         企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 
@@ -434,7 +434,7 @@ class ListLoadbalancersRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListLoadbalancersRequest.
+        r"""Gets the admin_state_up of this ListLoadbalancersRequest.
 
         负载均衡器的管理状态。负载均衡器停用时不再接收流量。取值范围：true：启用负载均衡器；false：停用负载均衡器。
 
@@ -445,7 +445,7 @@ class ListLoadbalancersRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListLoadbalancersRequest.
+        r"""Sets the admin_state_up of this ListLoadbalancersRequest.
 
         负载均衡器的管理状态。负载均衡器停用时不再接收流量。取值范围：true：启用负载均衡器；false：停用负载均衡器。
 
@@ -456,7 +456,7 @@ class ListLoadbalancersRequest:
 
     @property
     def member_address(self):
-        """Gets the member_address of this ListLoadbalancersRequest.
+        r"""Gets the member_address of this ListLoadbalancersRequest.
 
         负载均衡器的后端服务器的IP地址
 
@@ -467,7 +467,7 @@ class ListLoadbalancersRequest:
 
     @member_address.setter
     def member_address(self, member_address):
-        """Sets the member_address of this ListLoadbalancersRequest.
+        r"""Sets the member_address of this ListLoadbalancersRequest.
 
         负载均衡器的后端服务器的IP地址
 
@@ -478,7 +478,7 @@ class ListLoadbalancersRequest:
 
     @property
     def member_device_id(self):
-        """Gets the member_device_id of this ListLoadbalancersRequest.
+        r"""Gets the member_device_id of this ListLoadbalancersRequest.
 
         负载均衡器的后端服务器对应的弹性云服务器ID
 
@@ -489,7 +489,7 @@ class ListLoadbalancersRequest:
 
     @member_device_id.setter
     def member_device_id(self, member_device_id):
-        """Sets the member_device_id of this ListLoadbalancersRequest.
+        r"""Sets the member_device_id of this ListLoadbalancersRequest.
 
         负载均衡器的后端服务器对应的弹性云服务器ID
 

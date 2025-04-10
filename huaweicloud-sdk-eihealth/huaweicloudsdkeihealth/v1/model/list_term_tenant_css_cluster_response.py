@@ -28,7 +28,7 @@ class ListTermTenantCssClusterResponse(SdkResponse):
     }
 
     def __init__(self, css_clusters=None, count=None):
-        """ListTermTenantCssClusterResponse
+        r"""ListTermTenantCssClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTermTenantCssClusterResponse(SdkResponse):
 
     @property
     def css_clusters(self):
-        """Gets the css_clusters of this ListTermTenantCssClusterResponse.
+        r"""Gets the css_clusters of this ListTermTenantCssClusterResponse.
 
         最终租户CSS集群列表
 
@@ -62,7 +62,7 @@ class ListTermTenantCssClusterResponse(SdkResponse):
 
     @css_clusters.setter
     def css_clusters(self, css_clusters):
-        """Sets the css_clusters of this ListTermTenantCssClusterResponse.
+        r"""Sets the css_clusters of this ListTermTenantCssClusterResponse.
 
         最终租户CSS集群列表
 
@@ -73,7 +73,7 @@ class ListTermTenantCssClusterResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListTermTenantCssClusterResponse.
+        r"""Gets the count of this ListTermTenantCssClusterResponse.
 
         最终租户css集群总数
 
@@ -84,7 +84,7 @@ class ListTermTenantCssClusterResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListTermTenantCssClusterResponse.
+        r"""Sets the count of this ListTermTenantCssClusterResponse.
 
         最终租户css集群总数
 

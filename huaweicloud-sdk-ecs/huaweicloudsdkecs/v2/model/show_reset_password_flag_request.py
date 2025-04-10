@@ -25,7 +25,7 @@ class ShowResetPasswordFlagRequest:
     }
 
     def __init__(self, server_id=None):
-        """ShowResetPasswordFlagRequest
+        r"""ShowResetPasswordFlagRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowResetPasswordFlagRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowResetPasswordFlagRequest.
+        r"""Gets the server_id of this ShowResetPasswordFlagRequest.
 
         云服务器ID。
 
@@ -53,7 +53,7 @@ class ShowResetPasswordFlagRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowResetPasswordFlagRequest.
+        r"""Sets the server_id of this ShowResetPasswordFlagRequest.
 
         云服务器ID。
 

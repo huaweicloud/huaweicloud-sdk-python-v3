@@ -25,7 +25,7 @@ class BackupSyncReq:
     }
 
     def __init__(self, sync=None):
-        """BackupSyncReq
+        r"""BackupSyncReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BackupSyncReq:
 
     @property
     def sync(self):
-        """Gets the sync of this BackupSyncReq.
+        r"""Gets the sync of this BackupSyncReq.
 
         待同步备份副本列表
 
@@ -53,7 +53,7 @@ class BackupSyncReq:
 
     @sync.setter
     def sync(self, sync):
-        """Sets the sync of this BackupSyncReq.
+        r"""Sets the sync of this BackupSyncReq.
 
         待同步备份副本列表
 

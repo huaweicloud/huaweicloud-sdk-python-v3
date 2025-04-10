@@ -27,7 +27,7 @@ class CreateHpcCacheTaskRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """CreateHpcCacheTaskRequest
+        r"""CreateHpcCacheTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateHpcCacheTaskRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this CreateHpcCacheTaskRequest.
+        r"""Gets the share_id of this CreateHpcCacheTaskRequest.
 
         文件系统ID
 
@@ -60,7 +60,7 @@ class CreateHpcCacheTaskRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this CreateHpcCacheTaskRequest.
+        r"""Sets the share_id of this CreateHpcCacheTaskRequest.
 
         文件系统ID
 
@@ -71,7 +71,7 @@ class CreateHpcCacheTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHpcCacheTaskRequest.
+        r"""Gets the body of this CreateHpcCacheTaskRequest.
 
         :return: The body of this CreateHpcCacheTaskRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.CreateHpcCacheTaskReq`
@@ -80,7 +80,7 @@ class CreateHpcCacheTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHpcCacheTaskRequest.
+        r"""Sets the body of this CreateHpcCacheTaskRequest.
 
         :param body: The body of this CreateHpcCacheTaskRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.CreateHpcCacheTaskReq`

@@ -45,7 +45,7 @@ class RecordAuditRule:
     }
 
     def __init__(self, record_type=None, interval_record_start_time=None, interval_record_end_time=None, op_type=None, audio_record=None, fps=None, duration=None, resolution=None, event_enable=None, file_suffix=None, regit_paths=None):
-        """RecordAuditRule
+        r"""RecordAuditRule
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class RecordAuditRule:
 
     @property
     def record_type(self):
-        """Gets the record_type of this RecordAuditRule.
+        r"""Gets the record_type of this RecordAuditRule.
 
         录制类型。取值为： whole：表示全程录屏。 interval：表示间隔录屏。 userOperations：表示用户操作录屏。 sessionMonitoring：监听会话生命周期录屏。
 
@@ -124,7 +124,7 @@ class RecordAuditRule:
 
     @record_type.setter
     def record_type(self, record_type):
-        """Sets the record_type of this RecordAuditRule.
+        r"""Sets the record_type of this RecordAuditRule.
 
         录制类型。取值为： whole：表示全程录屏。 interval：表示间隔录屏。 userOperations：表示用户操作录屏。 sessionMonitoring：监听会话生命周期录屏。
 
@@ -135,7 +135,7 @@ class RecordAuditRule:
 
     @property
     def interval_record_start_time(self):
-        """Gets the interval_record_start_time of this RecordAuditRule.
+        r"""Gets the interval_record_start_time of this RecordAuditRule.
 
         间隔录制开始时间，仅录制类型为interval时有效 \"hh:mm\"
 
@@ -146,7 +146,7 @@ class RecordAuditRule:
 
     @interval_record_start_time.setter
     def interval_record_start_time(self, interval_record_start_time):
-        """Sets the interval_record_start_time of this RecordAuditRule.
+        r"""Sets the interval_record_start_time of this RecordAuditRule.
 
         间隔录制开始时间，仅录制类型为interval时有效 \"hh:mm\"
 
@@ -157,7 +157,7 @@ class RecordAuditRule:
 
     @property
     def interval_record_end_time(self):
-        """Gets the interval_record_end_time of this RecordAuditRule.
+        r"""Gets the interval_record_end_time of this RecordAuditRule.
 
         间隔录制结束时间，仅录制类型为interval时有效格式 \"hh:mm\"
 
@@ -168,7 +168,7 @@ class RecordAuditRule:
 
     @interval_record_end_time.setter
     def interval_record_end_time(self, interval_record_end_time):
-        """Sets the interval_record_end_time of this RecordAuditRule.
+        r"""Sets the interval_record_end_time of this RecordAuditRule.
 
         间隔录制结束时间，仅录制类型为interval时有效格式 \"hh:mm\"
 
@@ -179,7 +179,7 @@ class RecordAuditRule:
 
     @property
     def op_type(self):
-        """Gets the op_type of this RecordAuditRule.
+        r"""Gets the op_type of this RecordAuditRule.
 
         操作触发类型，仅录制类型为userOperations时有效。取值为： input：表示用户输入内容即启动录屏。 filecopy：表示用户拷贝文件即启动录屏。
 
@@ -190,7 +190,7 @@ class RecordAuditRule:
 
     @op_type.setter
     def op_type(self, op_type):
-        """Sets the op_type of this RecordAuditRule.
+        r"""Sets the op_type of this RecordAuditRule.
 
         操作触发类型，仅录制类型为userOperations时有效。取值为： input：表示用户输入内容即启动录屏。 filecopy：表示用户拷贝文件即启动录屏。
 
@@ -201,7 +201,7 @@ class RecordAuditRule:
 
     @property
     def audio_record(self):
-        """Gets the audio_record of this RecordAuditRule.
+        r"""Gets the audio_record of this RecordAuditRule.
 
         是否开启音频录制开关。取值为： false：表示关闭。 true：表示开启。
 
@@ -212,7 +212,7 @@ class RecordAuditRule:
 
     @audio_record.setter
     def audio_record(self, audio_record):
-        """Sets the audio_record of this RecordAuditRule.
+        r"""Sets the audio_record of this RecordAuditRule.
 
         是否开启音频录制开关。取值为： false：表示关闭。 true：表示开启。
 
@@ -223,7 +223,7 @@ class RecordAuditRule:
 
     @property
     def fps(self):
-        """Gets the fps of this RecordAuditRule.
+        r"""Gets the fps of this RecordAuditRule.
 
         录制帧率。取值为：2/5/10/15
 
@@ -234,7 +234,7 @@ class RecordAuditRule:
 
     @fps.setter
     def fps(self, fps):
-        """Sets the fps of this RecordAuditRule.
+        r"""Sets the fps of this RecordAuditRule.
 
         录制帧率。取值为：2/5/10/15
 
@@ -245,7 +245,7 @@ class RecordAuditRule:
 
     @property
     def duration(self):
-        """Gets the duration of this RecordAuditRule.
+        r"""Gets the duration of this RecordAuditRule.
 
         录制视频单文件时长（分钟）。取值为：10/20/30/60
 
@@ -256,7 +256,7 @@ class RecordAuditRule:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this RecordAuditRule.
+        r"""Sets the duration of this RecordAuditRule.
 
         录制视频单文件时长（分钟）。取值为：10/20/30/60
 
@@ -267,7 +267,7 @@ class RecordAuditRule:
 
     @property
     def resolution(self):
-        """Gets the resolution of this RecordAuditRule.
+        r"""Gets the resolution of this RecordAuditRule.
 
         分辨率设置。取值为：720P/1080P/original
 
@@ -278,7 +278,7 @@ class RecordAuditRule:
 
     @resolution.setter
     def resolution(self, resolution):
-        """Sets the resolution of this RecordAuditRule.
+        r"""Sets the resolution of this RecordAuditRule.
 
         分辨率设置。取值为：720P/1080P/original
 
@@ -289,7 +289,7 @@ class RecordAuditRule:
 
     @property
     def event_enable(self):
-        """Gets the event_enable of this RecordAuditRule.
+        r"""Gets the event_enable of this RecordAuditRule.
 
         是否启动关键事件审计。取值为： false：表示关闭。 true：表示开启。
 
@@ -300,7 +300,7 @@ class RecordAuditRule:
 
     @event_enable.setter
     def event_enable(self, event_enable):
-        """Sets the event_enable of this RecordAuditRule.
+        r"""Sets the event_enable of this RecordAuditRule.
 
         是否启动关键事件审计。取值为： false：表示关闭。 true：表示开启。
 
@@ -311,7 +311,7 @@ class RecordAuditRule:
 
     @property
     def file_suffix(self):
-        """Gets the file_suffix of this RecordAuditRule.
+        r"""Gets the file_suffix of this RecordAuditRule.
 
         文件后缀，多个用\"|\"分隔
 
@@ -322,7 +322,7 @@ class RecordAuditRule:
 
     @file_suffix.setter
     def file_suffix(self, file_suffix):
-        """Sets the file_suffix of this RecordAuditRule.
+        r"""Sets the file_suffix of this RecordAuditRule.
 
         文件后缀，多个用\"|\"分隔
 
@@ -333,7 +333,7 @@ class RecordAuditRule:
 
     @property
     def regit_paths(self):
-        """Gets the regit_paths of this RecordAuditRule.
+        r"""Gets the regit_paths of this RecordAuditRule.
 
         注册表路径，多个用\"|\"分隔
 
@@ -344,7 +344,7 @@ class RecordAuditRule:
 
     @regit_paths.setter
     def regit_paths(self, regit_paths):
-        """Sets the regit_paths of this RecordAuditRule.
+        r"""Sets the regit_paths of this RecordAuditRule.
 
         注册表路径，多个用\"|\"分隔
 

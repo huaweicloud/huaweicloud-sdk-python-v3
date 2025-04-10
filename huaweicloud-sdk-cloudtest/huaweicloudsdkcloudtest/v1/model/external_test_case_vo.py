@@ -57,7 +57,7 @@ class ExternalTestCaseVo:
     }
 
     def __init__(self, name=None, owner=None, status=None, result=None, module=None, iteration=None, id=None, number=None, description=None, rank_id=None, project_id=None, execution_type=None, test_type=None, create_info=None, execute_info=None, associate_issue_info=None, associate_defect_info=None):
-        """ExternalTestCaseVo
+        r"""ExternalTestCaseVo
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ExternalTestCaseVo:
 
     @property
     def name(self):
-        """Gets the name of this ExternalTestCaseVo.
+        r"""Gets the name of this ExternalTestCaseVo.
 
         用例名称
 
@@ -166,7 +166,7 @@ class ExternalTestCaseVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExternalTestCaseVo.
+        r"""Sets the name of this ExternalTestCaseVo.
 
         用例名称
 
@@ -177,7 +177,7 @@ class ExternalTestCaseVo:
 
     @property
     def owner(self):
-        """Gets the owner of this ExternalTestCaseVo.
+        r"""Gets the owner of this ExternalTestCaseVo.
 
         :return: The owner of this ExternalTestCaseVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -186,7 +186,7 @@ class ExternalTestCaseVo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ExternalTestCaseVo.
+        r"""Sets the owner of this ExternalTestCaseVo.
 
         :param owner: The owner of this ExternalTestCaseVo.
         :type owner: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -195,7 +195,7 @@ class ExternalTestCaseVo:
 
     @property
     def status(self):
-        """Gets the status of this ExternalTestCaseVo.
+        r"""Gets the status of this ExternalTestCaseVo.
 
         :return: The status of this ExternalTestCaseVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -204,7 +204,7 @@ class ExternalTestCaseVo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExternalTestCaseVo.
+        r"""Sets the status of this ExternalTestCaseVo.
 
         :param status: The status of this ExternalTestCaseVo.
         :type status: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -213,7 +213,7 @@ class ExternalTestCaseVo:
 
     @property
     def result(self):
-        """Gets the result of this ExternalTestCaseVo.
+        r"""Gets the result of this ExternalTestCaseVo.
 
         :return: The result of this ExternalTestCaseVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -222,7 +222,7 @@ class ExternalTestCaseVo:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ExternalTestCaseVo.
+        r"""Sets the result of this ExternalTestCaseVo.
 
         :param result: The result of this ExternalTestCaseVo.
         :type result: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -231,7 +231,7 @@ class ExternalTestCaseVo:
 
     @property
     def module(self):
-        """Gets the module of this ExternalTestCaseVo.
+        r"""Gets the module of this ExternalTestCaseVo.
 
         :return: The module of this ExternalTestCaseVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -240,7 +240,7 @@ class ExternalTestCaseVo:
 
     @module.setter
     def module(self, module):
-        """Sets the module of this ExternalTestCaseVo.
+        r"""Sets the module of this ExternalTestCaseVo.
 
         :param module: The module of this ExternalTestCaseVo.
         :type module: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -249,7 +249,7 @@ class ExternalTestCaseVo:
 
     @property
     def iteration(self):
-        """Gets the iteration of this ExternalTestCaseVo.
+        r"""Gets the iteration of this ExternalTestCaseVo.
 
         :return: The iteration of this ExternalTestCaseVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -258,7 +258,7 @@ class ExternalTestCaseVo:
 
     @iteration.setter
     def iteration(self, iteration):
-        """Sets the iteration of this ExternalTestCaseVo.
+        r"""Sets the iteration of this ExternalTestCaseVo.
 
         :param iteration: The iteration of this ExternalTestCaseVo.
         :type iteration: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -267,7 +267,7 @@ class ExternalTestCaseVo:
 
     @property
     def id(self):
-        """Gets the id of this ExternalTestCaseVo.
+        r"""Gets the id of this ExternalTestCaseVo.
 
         用例ID
 
@@ -278,7 +278,7 @@ class ExternalTestCaseVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExternalTestCaseVo.
+        r"""Sets the id of this ExternalTestCaseVo.
 
         用例ID
 
@@ -289,7 +289,7 @@ class ExternalTestCaseVo:
 
     @property
     def number(self):
-        """Gets the number of this ExternalTestCaseVo.
+        r"""Gets the number of this ExternalTestCaseVo.
 
         用例编号
 
@@ -300,7 +300,7 @@ class ExternalTestCaseVo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this ExternalTestCaseVo.
+        r"""Sets the number of this ExternalTestCaseVo.
 
         用例编号
 
@@ -311,7 +311,7 @@ class ExternalTestCaseVo:
 
     @property
     def description(self):
-        """Gets the description of this ExternalTestCaseVo.
+        r"""Gets the description of this ExternalTestCaseVo.
 
         用例描述
 
@@ -322,7 +322,7 @@ class ExternalTestCaseVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ExternalTestCaseVo.
+        r"""Sets the description of this ExternalTestCaseVo.
 
         用例描述
 
@@ -333,7 +333,7 @@ class ExternalTestCaseVo:
 
     @property
     def rank_id(self):
-        """Gets the rank_id of this ExternalTestCaseVo.
+        r"""Gets the rank_id of this ExternalTestCaseVo.
 
         用例等级
 
@@ -344,7 +344,7 @@ class ExternalTestCaseVo:
 
     @rank_id.setter
     def rank_id(self, rank_id):
-        """Sets the rank_id of this ExternalTestCaseVo.
+        r"""Sets the rank_id of this ExternalTestCaseVo.
 
         用例等级
 
@@ -355,7 +355,7 @@ class ExternalTestCaseVo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ExternalTestCaseVo.
+        r"""Gets the project_id of this ExternalTestCaseVo.
 
         项目ID
 
@@ -366,7 +366,7 @@ class ExternalTestCaseVo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ExternalTestCaseVo.
+        r"""Sets the project_id of this ExternalTestCaseVo.
 
         项目ID
 
@@ -377,7 +377,7 @@ class ExternalTestCaseVo:
 
     @property
     def execution_type(self):
-        """Gets the execution_type of this ExternalTestCaseVo.
+        r"""Gets the execution_type of this ExternalTestCaseVo.
 
         :return: The execution_type of this ExternalTestCaseVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -386,7 +386,7 @@ class ExternalTestCaseVo:
 
     @execution_type.setter
     def execution_type(self, execution_type):
-        """Sets the execution_type of this ExternalTestCaseVo.
+        r"""Sets the execution_type of this ExternalTestCaseVo.
 
         :param execution_type: The execution_type of this ExternalTestCaseVo.
         :type execution_type: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -395,7 +395,7 @@ class ExternalTestCaseVo:
 
     @property
     def test_type(self):
-        """Gets the test_type of this ExternalTestCaseVo.
+        r"""Gets the test_type of this ExternalTestCaseVo.
 
         :return: The test_type of this ExternalTestCaseVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.IntegerIdAndNameVo`
@@ -404,7 +404,7 @@ class ExternalTestCaseVo:
 
     @test_type.setter
     def test_type(self, test_type):
-        """Sets the test_type of this ExternalTestCaseVo.
+        r"""Sets the test_type of this ExternalTestCaseVo.
 
         :param test_type: The test_type of this ExternalTestCaseVo.
         :type test_type: :class:`huaweicloudsdkcloudtest.v1.IntegerIdAndNameVo`
@@ -413,7 +413,7 @@ class ExternalTestCaseVo:
 
     @property
     def create_info(self):
-        """Gets the create_info of this ExternalTestCaseVo.
+        r"""Gets the create_info of this ExternalTestCaseVo.
 
         :return: The create_info of this ExternalTestCaseVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CreateInfoVo`
@@ -422,7 +422,7 @@ class ExternalTestCaseVo:
 
     @create_info.setter
     def create_info(self, create_info):
-        """Sets the create_info of this ExternalTestCaseVo.
+        r"""Sets the create_info of this ExternalTestCaseVo.
 
         :param create_info: The create_info of this ExternalTestCaseVo.
         :type create_info: :class:`huaweicloudsdkcloudtest.v1.CreateInfoVo`
@@ -431,7 +431,7 @@ class ExternalTestCaseVo:
 
     @property
     def execute_info(self):
-        """Gets the execute_info of this ExternalTestCaseVo.
+        r"""Gets the execute_info of this ExternalTestCaseVo.
 
         :return: The execute_info of this ExternalTestCaseVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ExecuteInfoVo`
@@ -440,7 +440,7 @@ class ExternalTestCaseVo:
 
     @execute_info.setter
     def execute_info(self, execute_info):
-        """Sets the execute_info of this ExternalTestCaseVo.
+        r"""Sets the execute_info of this ExternalTestCaseVo.
 
         :param execute_info: The execute_info of this ExternalTestCaseVo.
         :type execute_info: :class:`huaweicloudsdkcloudtest.v1.ExecuteInfoVo`
@@ -449,7 +449,7 @@ class ExternalTestCaseVo:
 
     @property
     def associate_issue_info(self):
-        """Gets the associate_issue_info of this ExternalTestCaseVo.
+        r"""Gets the associate_issue_info of this ExternalTestCaseVo.
 
         :return: The associate_issue_info of this ExternalTestCaseVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AssociateIssueInfoVo`
@@ -458,7 +458,7 @@ class ExternalTestCaseVo:
 
     @associate_issue_info.setter
     def associate_issue_info(self, associate_issue_info):
-        """Sets the associate_issue_info of this ExternalTestCaseVo.
+        r"""Sets the associate_issue_info of this ExternalTestCaseVo.
 
         :param associate_issue_info: The associate_issue_info of this ExternalTestCaseVo.
         :type associate_issue_info: :class:`huaweicloudsdkcloudtest.v1.AssociateIssueInfoVo`
@@ -467,7 +467,7 @@ class ExternalTestCaseVo:
 
     @property
     def associate_defect_info(self):
-        """Gets the associate_defect_info of this ExternalTestCaseVo.
+        r"""Gets the associate_defect_info of this ExternalTestCaseVo.
 
         :return: The associate_defect_info of this ExternalTestCaseVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AssociateDefectInfoVo`
@@ -476,7 +476,7 @@ class ExternalTestCaseVo:
 
     @associate_defect_info.setter
     def associate_defect_info(self, associate_defect_info):
-        """Sets the associate_defect_info of this ExternalTestCaseVo.
+        r"""Sets the associate_defect_info of this ExternalTestCaseVo.
 
         :param associate_defect_info: The associate_defect_info of this ExternalTestCaseVo.
         :type associate_defect_info: :class:`huaweicloudsdkcloudtest.v1.AssociateDefectInfoVo`

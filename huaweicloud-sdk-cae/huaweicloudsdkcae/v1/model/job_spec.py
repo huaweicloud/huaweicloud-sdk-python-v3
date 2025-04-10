@@ -29,7 +29,7 @@ class JobSpec:
     }
 
     def __init__(self, progress=None, status=None, tasks=None):
-        """JobSpec
+        r"""JobSpec
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class JobSpec:
 
     @property
     def progress(self):
-        """Gets the progress of this JobSpec.
+        r"""Gets the progress of this JobSpec.
 
         任务进度。
 
@@ -68,7 +68,7 @@ class JobSpec:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this JobSpec.
+        r"""Sets the progress of this JobSpec.
 
         任务进度。
 
@@ -79,7 +79,7 @@ class JobSpec:
 
     @property
     def status(self):
-        """Gets the status of this JobSpec.
+        r"""Gets the status of this JobSpec.
 
         任务状态。
 
@@ -90,7 +90,7 @@ class JobSpec:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobSpec.
+        r"""Sets the status of this JobSpec.
 
         任务状态。
 
@@ -101,7 +101,7 @@ class JobSpec:
 
     @property
     def tasks(self):
-        """Gets the tasks of this JobSpec.
+        r"""Gets the tasks of this JobSpec.
 
         子任务。
 
@@ -112,7 +112,7 @@ class JobSpec:
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this JobSpec.
+        r"""Sets the tasks of this JobSpec.
 
         子任务。
 

@@ -26,7 +26,7 @@ class UpdateLoginPolicyV5Response(SdkResponse):
     }
 
     def __init__(self, login_policy=None):
-        """UpdateLoginPolicyV5Response
+        r"""UpdateLoginPolicyV5Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateLoginPolicyV5Response(SdkResponse):
 
     @property
     def login_policy(self):
-        """Gets the login_policy of this UpdateLoginPolicyV5Response.
+        r"""Gets the login_policy of this UpdateLoginPolicyV5Response.
 
         :return: The login_policy of this UpdateLoginPolicyV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.LoginPolicy`
@@ -53,7 +53,7 @@ class UpdateLoginPolicyV5Response(SdkResponse):
 
     @login_policy.setter
     def login_policy(self, login_policy):
-        """Sets the login_policy of this UpdateLoginPolicyV5Response.
+        r"""Sets the login_policy of this UpdateLoginPolicyV5Response.
 
         :param login_policy: The login_policy of this UpdateLoginPolicyV5Response.
         :type login_policy: :class:`huaweicloudsdkiam.v5.LoginPolicy`

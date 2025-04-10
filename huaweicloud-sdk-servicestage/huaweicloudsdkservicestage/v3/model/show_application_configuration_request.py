@@ -27,7 +27,7 @@ class ShowApplicationConfigurationRequest:
     }
 
     def __init__(self, application_id=None, environment_id=None):
-        """ShowApplicationConfigurationRequest
+        r"""ShowApplicationConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowApplicationConfigurationRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ShowApplicationConfigurationRequest.
+        r"""Gets the application_id of this ShowApplicationConfigurationRequest.
 
         应用id
 
@@ -60,7 +60,7 @@ class ShowApplicationConfigurationRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ShowApplicationConfigurationRequest.
+        r"""Sets the application_id of this ShowApplicationConfigurationRequest.
 
         应用id
 
@@ -71,7 +71,7 @@ class ShowApplicationConfigurationRequest:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ShowApplicationConfigurationRequest.
+        r"""Gets the environment_id of this ShowApplicationConfigurationRequest.
 
         环境id，如果不提供则查找所有环境
 
@@ -82,7 +82,7 @@ class ShowApplicationConfigurationRequest:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ShowApplicationConfigurationRequest.
+        r"""Sets the environment_id of this ShowApplicationConfigurationRequest.
 
         环境id，如果不提供则查找所有环境
 

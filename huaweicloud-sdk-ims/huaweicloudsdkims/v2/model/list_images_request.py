@@ -97,7 +97,7 @@ class ListImagesRequest:
     }
 
     def __init__(self, imagetype=None, isregistered=None, os_bit=None, os_type=None, platform=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, container_format=None, disk_format=None, enterprise_project_id=None, id=None, limit=None, marker=None, member_status=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, sort_dir=None, sort_key=None, status=None, tag=None, virtual_env_type=None, visibility=None, x_sdk_date=None, flavor_id=None, created_at=None, updated_at=None, architecture=None):
-        """ListImagesRequest
+        r"""ListImagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -295,7 +295,7 @@ class ListImagesRequest:
 
     @property
     def imagetype(self):
-        """Gets the imagetype of this ListImagesRequest.
+        r"""Gets the imagetype of this ListImagesRequest.
 
         镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared 市场镜像：market
 
@@ -306,7 +306,7 @@ class ListImagesRequest:
 
     @imagetype.setter
     def imagetype(self, imagetype):
-        """Sets the imagetype of this ListImagesRequest.
+        r"""Sets the imagetype of this ListImagesRequest.
 
         镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared 市场镜像：market
 
@@ -317,7 +317,7 @@ class ListImagesRequest:
 
     @property
     def isregistered(self):
-        """Gets the isregistered of this ListImagesRequest.
+        r"""Gets the isregistered of this ListImagesRequest.
 
         镜像是否可用，取值为true，扩展接口会默认为true，普通用户只能查询取值为true的镜像。
 
@@ -328,7 +328,7 @@ class ListImagesRequest:
 
     @isregistered.setter
     def isregistered(self, isregistered):
-        """Sets the isregistered of this ListImagesRequest.
+        r"""Sets the isregistered of this ListImagesRequest.
 
         镜像是否可用，取值为true，扩展接口会默认为true，普通用户只能查询取值为true的镜像。
 
@@ -339,7 +339,7 @@ class ListImagesRequest:
 
     @property
     def os_bit(self):
-        """Gets the os_bit of this ListImagesRequest.
+        r"""Gets the os_bit of this ListImagesRequest.
 
         操作系统位数，一般取值为32或者64。
 
@@ -350,7 +350,7 @@ class ListImagesRequest:
 
     @os_bit.setter
     def os_bit(self, os_bit):
-        """Sets the os_bit of this ListImagesRequest.
+        r"""Sets the os_bit of this ListImagesRequest.
 
         操作系统位数，一般取值为32或者64。
 
@@ -361,7 +361,7 @@ class ListImagesRequest:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ListImagesRequest.
+        r"""Gets the os_type of this ListImagesRequest.
 
         镜像系统类型，取值为Linux，Windows，Other。
 
@@ -372,7 +372,7 @@ class ListImagesRequest:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ListImagesRequest.
+        r"""Sets the os_type of this ListImagesRequest.
 
         镜像系统类型，取值为Linux，Windows，Other。
 
@@ -383,7 +383,7 @@ class ListImagesRequest:
 
     @property
     def platform(self):
-        """Gets the platform of this ListImagesRequest.
+        r"""Gets the platform of this ListImagesRequest.
 
         镜像平台分类
 
@@ -394,7 +394,7 @@ class ListImagesRequest:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this ListImagesRequest.
+        r"""Sets the platform of this ListImagesRequest.
 
         镜像平台分类
 
@@ -405,7 +405,7 @@ class ListImagesRequest:
 
     @property
     def support_diskintensive(self):
-        """Gets the support_diskintensive of this ListImagesRequest.
+        r"""Gets the support_diskintensive of this ListImagesRequest.
 
         表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性。
 
@@ -416,7 +416,7 @@ class ListImagesRequest:
 
     @support_diskintensive.setter
     def support_diskintensive(self, support_diskintensive):
-        """Sets the support_diskintensive of this ListImagesRequest.
+        r"""Sets the support_diskintensive of this ListImagesRequest.
 
         表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性。
 
@@ -427,7 +427,7 @@ class ListImagesRequest:
 
     @property
     def support_highperformance(self):
-        """Gets the support_highperformance of this ListImagesRequest.
+        r"""Gets the support_highperformance of this ListImagesRequest.
 
         表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性。
 
@@ -438,7 +438,7 @@ class ListImagesRequest:
 
     @support_highperformance.setter
     def support_highperformance(self, support_highperformance):
-        """Sets the support_highperformance of this ListImagesRequest.
+        r"""Sets the support_highperformance of this ListImagesRequest.
 
         表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性。
 
@@ -449,7 +449,7 @@ class ListImagesRequest:
 
     @property
     def support_kvm(self):
-        """Gets the support_kvm of this ListImagesRequest.
+        r"""Gets the support_kvm of this ListImagesRequest.
 
         如果镜像支持KVM，取值为true，否则无需增加该属性。
 
@@ -460,7 +460,7 @@ class ListImagesRequest:
 
     @support_kvm.setter
     def support_kvm(self, support_kvm):
-        """Sets the support_kvm of this ListImagesRequest.
+        r"""Sets the support_kvm of this ListImagesRequest.
 
         如果镜像支持KVM，取值为true，否则无需增加该属性。
 
@@ -471,7 +471,7 @@ class ListImagesRequest:
 
     @property
     def support_kvm_gpu_type(self):
-        """Gets the support_kvm_gpu_type of this ListImagesRequest.
+        r"""Gets the support_kvm_gpu_type of this ListImagesRequest.
 
         表示该镜像是支持KVM虚拟化平台下的GPU类型，如果不支持KVM虚拟机下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -482,7 +482,7 @@ class ListImagesRequest:
 
     @support_kvm_gpu_type.setter
     def support_kvm_gpu_type(self, support_kvm_gpu_type):
-        """Sets the support_kvm_gpu_type of this ListImagesRequest.
+        r"""Sets the support_kvm_gpu_type of this ListImagesRequest.
 
         表示该镜像是支持KVM虚拟化平台下的GPU类型，如果不支持KVM虚拟机下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -493,7 +493,7 @@ class ListImagesRequest:
 
     @property
     def support_kvm_infiniband(self):
-        """Gets the support_kvm_infiniband of this ListImagesRequest.
+        r"""Gets the support_kvm_infiniband of this ListImagesRequest.
 
         如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”属性不共存。
 
@@ -504,7 +504,7 @@ class ListImagesRequest:
 
     @support_kvm_infiniband.setter
     def support_kvm_infiniband(self, support_kvm_infiniband):
-        """Sets the support_kvm_infiniband of this ListImagesRequest.
+        r"""Sets the support_kvm_infiniband of this ListImagesRequest.
 
         如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”属性不共存。
 
@@ -515,7 +515,7 @@ class ListImagesRequest:
 
     @property
     def support_largememory(self):
-        """Gets the support_largememory of this ListImagesRequest.
+        r"""Gets the support_largememory of this ListImagesRequest.
 
         表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性。
 
@@ -526,7 +526,7 @@ class ListImagesRequest:
 
     @support_largememory.setter
     def support_largememory(self, support_largememory):
-        """Sets the support_largememory of this ListImagesRequest.
+        r"""Sets the support_largememory of this ListImagesRequest.
 
         表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性。
 
@@ -537,7 +537,7 @@ class ListImagesRequest:
 
     @property
     def support_xen(self):
-        """Gets the support_xen of this ListImagesRequest.
+        r"""Gets the support_xen of this ListImagesRequest.
 
         如果镜像支持XEN，取值为true，否则无需增加该属性。
 
@@ -548,7 +548,7 @@ class ListImagesRequest:
 
     @support_xen.setter
     def support_xen(self, support_xen):
-        """Sets the support_xen of this ListImagesRequest.
+        r"""Sets the support_xen of this ListImagesRequest.
 
         如果镜像支持XEN，取值为true，否则无需增加该属性。
 
@@ -559,7 +559,7 @@ class ListImagesRequest:
 
     @property
     def support_xen_gpu_type(self):
-        """Gets the support_xen_gpu_type of this ListImagesRequest.
+        r"""Gets the support_xen_gpu_type of this ListImagesRequest.
 
         表示该镜像是支持XEN虚拟化平台下的GPU优化类型，如果不支持XEN虚拟化下GPU类型，无需添加该属性 。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -570,7 +570,7 @@ class ListImagesRequest:
 
     @support_xen_gpu_type.setter
     def support_xen_gpu_type(self, support_xen_gpu_type):
-        """Sets the support_xen_gpu_type of this ListImagesRequest.
+        r"""Sets the support_xen_gpu_type of this ListImagesRequest.
 
         表示该镜像是支持XEN虚拟化平台下的GPU优化类型，如果不支持XEN虚拟化下GPU类型，无需添加该属性 。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -581,7 +581,7 @@ class ListImagesRequest:
 
     @property
     def support_xen_hana(self):
-        """Gets the support_xen_hana of this ListImagesRequest.
+        r"""Gets the support_xen_hana of this ListImagesRequest.
 
         如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -592,7 +592,7 @@ class ListImagesRequest:
 
     @support_xen_hana.setter
     def support_xen_hana(self, support_xen_hana):
-        """Sets the support_xen_hana of this ListImagesRequest.
+        r"""Sets the support_xen_hana of this ListImagesRequest.
 
         如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -603,7 +603,7 @@ class ListImagesRequest:
 
     @property
     def container_format(self):
-        """Gets the container_format of this ListImagesRequest.
+        r"""Gets the container_format of this ListImagesRequest.
 
         容器类型
 
@@ -614,7 +614,7 @@ class ListImagesRequest:
 
     @container_format.setter
     def container_format(self, container_format):
-        """Sets the container_format of this ListImagesRequest.
+        r"""Sets the container_format of this ListImagesRequest.
 
         容器类型
 
@@ -625,7 +625,7 @@ class ListImagesRequest:
 
     @property
     def disk_format(self):
-        """Gets the disk_format of this ListImagesRequest.
+        r"""Gets the disk_format of this ListImagesRequest.
 
         镜像格式，目前支持vhd，zvhd、raw，qcow2,zvhd2。默认值是vhd。
 
@@ -636,7 +636,7 @@ class ListImagesRequest:
 
     @disk_format.setter
     def disk_format(self, disk_format):
-        """Sets the disk_format of this ListImagesRequest.
+        r"""Sets the disk_format of this ListImagesRequest.
 
         镜像格式，目前支持vhd，zvhd、raw，qcow2,zvhd2。默认值是vhd。
 
@@ -647,7 +647,7 @@ class ListImagesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListImagesRequest.
+        r"""Gets the enterprise_project_id of this ListImagesRequest.
 
         表示查询某个企业项目下的镜像。 取值为0，表示查询属于default企业项目下的镜像。 取值为UUID，表示查询属于该UUID对应的企业项目下的镜像。取值为all_granted_eps，表示查询当前用户所有企业项目下的镜像。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
@@ -658,7 +658,7 @@ class ListImagesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListImagesRequest.
+        r"""Sets the enterprise_project_id of this ListImagesRequest.
 
         表示查询某个企业项目下的镜像。 取值为0，表示查询属于default企业项目下的镜像。 取值为UUID，表示查询属于该UUID对应的企业项目下的镜像。取值为all_granted_eps，表示查询当前用户所有企业项目下的镜像。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
@@ -669,7 +669,7 @@ class ListImagesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListImagesRequest.
+        r"""Gets the id of this ListImagesRequest.
 
         镜像ID
 
@@ -680,7 +680,7 @@ class ListImagesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListImagesRequest.
+        r"""Sets the id of this ListImagesRequest.
 
         镜像ID
 
@@ -691,7 +691,7 @@ class ListImagesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListImagesRequest.
+        r"""Gets the limit of this ListImagesRequest.
 
         用于分页，表示查询几条镜像记录，取值为整数，默认取值为500。
 
@@ -702,7 +702,7 @@ class ListImagesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListImagesRequest.
+        r"""Sets the limit of this ListImagesRequest.
 
         用于分页，表示查询几条镜像记录，取值为整数，默认取值为500。
 
@@ -713,7 +713,7 @@ class ListImagesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListImagesRequest.
+        r"""Gets the marker of this ListImagesRequest.
 
         用于分页，表示从哪个镜像开始查询，取值为镜像ID。
 
@@ -724,7 +724,7 @@ class ListImagesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListImagesRequest.
+        r"""Sets the marker of this ListImagesRequest.
 
         用于分页，表示从哪个镜像开始查询，取值为镜像ID。
 
@@ -735,7 +735,7 @@ class ListImagesRequest:
 
     @property
     def member_status(self):
-        """Gets the member_status of this ListImagesRequest.
+        r"""Gets the member_status of this ListImagesRequest.
 
         成员状态。目前取值有accepted、rejected、pending。accepted表示已经接受共享的镜像，rejected表示已经拒绝了其他用户共享的镜像，pending表示需要确认的其他用户的共享镜像。需要在查询时设置“visibility”参数为“shared”。
 
@@ -746,7 +746,7 @@ class ListImagesRequest:
 
     @member_status.setter
     def member_status(self, member_status):
-        """Sets the member_status of this ListImagesRequest.
+        r"""Sets the member_status of this ListImagesRequest.
 
         成员状态。目前取值有accepted、rejected、pending。accepted表示已经接受共享的镜像，rejected表示已经拒绝了其他用户共享的镜像，pending表示需要确认的其他用户的共享镜像。需要在查询时设置“visibility”参数为“shared”。
 
@@ -757,7 +757,7 @@ class ListImagesRequest:
 
     @property
     def min_disk(self):
-        """Gets the min_disk of this ListImagesRequest.
+        r"""Gets the min_disk of this ListImagesRequest.
 
         镜像运行需要的最小磁盘，单位为GB 。取值为40～1024GB。
 
@@ -768,7 +768,7 @@ class ListImagesRequest:
 
     @min_disk.setter
     def min_disk(self, min_disk):
-        """Sets the min_disk of this ListImagesRequest.
+        r"""Sets the min_disk of this ListImagesRequest.
 
         镜像运行需要的最小磁盘，单位为GB 。取值为40～1024GB。
 
@@ -779,7 +779,7 @@ class ListImagesRequest:
 
     @property
     def min_ram(self):
-        """Gets the min_ram of this ListImagesRequest.
+        r"""Gets the min_ram of this ListImagesRequest.
 
         镜像运行需要的最小内存，单位为MB。参数取值依据弹性云服务器的规格限制，一般设置为0。
 
@@ -790,7 +790,7 @@ class ListImagesRequest:
 
     @min_ram.setter
     def min_ram(self, min_ram):
-        """Sets the min_ram of this ListImagesRequest.
+        r"""Sets the min_ram of this ListImagesRequest.
 
         镜像运行需要的最小内存，单位为MB。参数取值依据弹性云服务器的规格限制，一般设置为0。
 
@@ -801,7 +801,7 @@ class ListImagesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListImagesRequest.
+        r"""Gets the name of this ListImagesRequest.
 
         镜像名称
 
@@ -812,7 +812,7 @@ class ListImagesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListImagesRequest.
+        r"""Sets the name of this ListImagesRequest.
 
         镜像名称
 
@@ -823,7 +823,7 @@ class ListImagesRequest:
 
     @property
     def owner(self):
-        """Gets the owner of this ListImagesRequest.
+        r"""Gets the owner of this ListImagesRequest.
 
         镜像属于哪个租户
 
@@ -834,7 +834,7 @@ class ListImagesRequest:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ListImagesRequest.
+        r"""Sets the owner of this ListImagesRequest.
 
         镜像属于哪个租户
 
@@ -845,7 +845,7 @@ class ListImagesRequest:
 
     @property
     def protected(self):
-        """Gets the protected of this ListImagesRequest.
+        r"""Gets the protected of this ListImagesRequest.
 
         镜像是否是受保护，取值为true/false，一般查询公共镜像时候取值为true，查询私有镜像可以不指定。
 
@@ -856,7 +856,7 @@ class ListImagesRequest:
 
     @protected.setter
     def protected(self, protected):
-        """Sets the protected of this ListImagesRequest.
+        r"""Sets the protected of this ListImagesRequest.
 
         镜像是否是受保护，取值为true/false，一般查询公共镜像时候取值为true，查询私有镜像可以不指定。
 
@@ -867,7 +867,7 @@ class ListImagesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListImagesRequest.
+        r"""Gets the sort_dir of this ListImagesRequest.
 
         用于排序，表示升序还是降序，取值为asc和desc。与sort_key一起组合使用，默认为降序desc。
 
@@ -878,7 +878,7 @@ class ListImagesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListImagesRequest.
+        r"""Sets the sort_dir of this ListImagesRequest.
 
         用于排序，表示升序还是降序，取值为asc和desc。与sort_key一起组合使用，默认为降序desc。
 
@@ -889,7 +889,7 @@ class ListImagesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListImagesRequest.
+        r"""Gets the sort_key of this ListImagesRequest.
 
         用于排序，表示按照哪个字段排序。取值为镜像属性name，container_format，disk_format，status ，id，size字段，默认为创建时间。
 
@@ -900,7 +900,7 @@ class ListImagesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListImagesRequest.
+        r"""Sets the sort_key of this ListImagesRequest.
 
         用于排序，表示按照哪个字段排序。取值为镜像属性name，container_format，disk_format，status ，id，size字段，默认为创建时间。
 
@@ -911,7 +911,7 @@ class ListImagesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListImagesRequest.
+        r"""Gets the status of this ListImagesRequest.
 
         镜像状态。取值如下： queued：表示镜像元数据已经创建成功，等待上传镜像文件。 saving：表示镜像正在上传文件到后端存储。 deleted：表示镜像已经删除。 killed：表示镜像上传错误。 active：表示镜像可以正常使用。
 
@@ -922,7 +922,7 @@ class ListImagesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListImagesRequest.
+        r"""Sets the status of this ListImagesRequest.
 
         镜像状态。取值如下： queued：表示镜像元数据已经创建成功，等待上传镜像文件。 saving：表示镜像正在上传文件到后端存储。 deleted：表示镜像已经删除。 killed：表示镜像上传错误。 active：表示镜像可以正常使用。
 
@@ -933,7 +933,7 @@ class ListImagesRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ListImagesRequest.
+        r"""Gets the tag of this ListImagesRequest.
 
         标签，用户为镜像增加自定义标签后可以通过该参数过滤查询。
 
@@ -944,7 +944,7 @@ class ListImagesRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListImagesRequest.
+        r"""Sets the tag of this ListImagesRequest.
 
         标签，用户为镜像增加自定义标签后可以通过该参数过滤查询。
 
@@ -955,7 +955,7 @@ class ListImagesRequest:
 
     @property
     def virtual_env_type(self):
-        """Gets the virtual_env_type of this ListImagesRequest.
+        r"""Gets the virtual_env_type of this ListImagesRequest.
 
         镜像使用环境类型：FusionCompute，Ironic，DataImage。如果弹性云服务器镜像，则取值为FusionCompute，如果是数据卷镜像则取值是DataImage，如果是裸金属服务器镜像，则取值是Ironic。
 
@@ -966,7 +966,7 @@ class ListImagesRequest:
 
     @virtual_env_type.setter
     def virtual_env_type(self, virtual_env_type):
-        """Sets the virtual_env_type of this ListImagesRequest.
+        r"""Sets the virtual_env_type of this ListImagesRequest.
 
         镜像使用环境类型：FusionCompute，Ironic，DataImage。如果弹性云服务器镜像，则取值为FusionCompute，如果是数据卷镜像则取值是DataImage，如果是裸金属服务器镜像，则取值是Ironic。
 
@@ -977,7 +977,7 @@ class ListImagesRequest:
 
     @property
     def visibility(self):
-        """Gets the visibility of this ListImagesRequest.
+        r"""Gets the visibility of this ListImagesRequest.
 
         是否被其他租户可见，取值为public、private或shared
 
@@ -988,7 +988,7 @@ class ListImagesRequest:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this ListImagesRequest.
+        r"""Sets the visibility of this ListImagesRequest.
 
         是否被其他租户可见，取值为public、private或shared
 
@@ -999,7 +999,7 @@ class ListImagesRequest:
 
     @property
     def x_sdk_date(self):
-        """Gets the x_sdk_date of this ListImagesRequest.
+        r"""Gets the x_sdk_date of this ListImagesRequest.
 
         请求的发生时间,格式为YYYYMMDDTHHMMSSZ。取值为当前系统的GMT时间。使用AK/SK认证时该字段必选
 
@@ -1010,7 +1010,7 @@ class ListImagesRequest:
 
     @x_sdk_date.setter
     def x_sdk_date(self, x_sdk_date):
-        """Sets the x_sdk_date of this ListImagesRequest.
+        r"""Sets the x_sdk_date of this ListImagesRequest.
 
         请求的发生时间,格式为YYYYMMDDTHHMMSSZ。取值为当前系统的GMT时间。使用AK/SK认证时该字段必选
 
@@ -1021,7 +1021,7 @@ class ListImagesRequest:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this ListImagesRequest.
+        r"""Gets the flavor_id of this ListImagesRequest.
 
         用于通过云服务器规格过滤出可用公共镜像，取值为规格ID。 当前仅支持通过单个规格进行过滤。
 
@@ -1032,7 +1032,7 @@ class ListImagesRequest:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this ListImagesRequest.
+        r"""Sets the flavor_id of this ListImagesRequest.
 
         用于通过云服务器规格过滤出可用公共镜像，取值为规格ID。 当前仅支持通过单个规格进行过滤。
 
@@ -1043,7 +1043,7 @@ class ListImagesRequest:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListImagesRequest.
+        r"""Gets the created_at of this ListImagesRequest.
 
         镜像创建时间。支持按照时间点过滤查询，取值格式为“操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询创建时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： created_at=gt:2018-10-28T10:00:00Z
 
@@ -1054,7 +1054,7 @@ class ListImagesRequest:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListImagesRequest.
+        r"""Sets the created_at of this ListImagesRequest.
 
         镜像创建时间。支持按照时间点过滤查询，取值格式为“操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询创建时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： created_at=gt:2018-10-28T10:00:00Z
 
@@ -1065,7 +1065,7 @@ class ListImagesRequest:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListImagesRequest.
+        r"""Gets the updated_at of this ListImagesRequest.
 
         镜像修改时间。支持按照时间点过滤查询，取值格式为“ 操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询修改时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： updated_at=gt:2018-10-28T10:00:00Z
 
@@ -1076,7 +1076,7 @@ class ListImagesRequest:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListImagesRequest.
+        r"""Sets the updated_at of this ListImagesRequest.
 
         镜像修改时间。支持按照时间点过滤查询，取值格式为“ 操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询修改时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： updated_at=gt:2018-10-28T10:00:00Z
 
@@ -1087,7 +1087,7 @@ class ListImagesRequest:
 
     @property
     def architecture(self):
-        """Gets the architecture of this ListImagesRequest.
+        r"""Gets the architecture of this ListImagesRequest.
 
         镜像架构类型。取值包括： x86 arm
 
@@ -1098,7 +1098,7 @@ class ListImagesRequest:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this ListImagesRequest.
+        r"""Sets the architecture of this ListImagesRequest.
 
         镜像架构类型。取值包括： x86 arm
 

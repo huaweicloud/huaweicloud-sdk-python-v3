@@ -33,7 +33,7 @@ class ListProductsRespIo:
     }
 
     def __init__(self, io_type=None, storage_spec_code=None, available_zones=None, unavailable_zones=None, volume_type=None):
-        """ListProductsRespIo
+        r"""ListProductsRespIo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListProductsRespIo:
 
     @property
     def io_type(self):
-        """Gets the io_type of this ListProductsRespIo.
+        r"""Gets the io_type of this ListProductsRespIo.
 
         IO类型。
 
@@ -82,7 +82,7 @@ class ListProductsRespIo:
 
     @io_type.setter
     def io_type(self, io_type):
-        """Sets the io_type of this ListProductsRespIo.
+        r"""Sets the io_type of this ListProductsRespIo.
 
         IO类型。
 
@@ -93,7 +93,7 @@ class ListProductsRespIo:
 
     @property
     def storage_spec_code(self):
-        """Gets the storage_spec_code of this ListProductsRespIo.
+        r"""Gets the storage_spec_code of this ListProductsRespIo.
 
         IO规格。
 
@@ -104,7 +104,7 @@ class ListProductsRespIo:
 
     @storage_spec_code.setter
     def storage_spec_code(self, storage_spec_code):
-        """Sets the storage_spec_code of this ListProductsRespIo.
+        r"""Sets the storage_spec_code of this ListProductsRespIo.
 
         IO规格。
 
@@ -115,7 +115,7 @@ class ListProductsRespIo:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this ListProductsRespIo.
+        r"""Gets the available_zones of this ListProductsRespIo.
 
         IO未售罄的可用区列表。
 
@@ -126,7 +126,7 @@ class ListProductsRespIo:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this ListProductsRespIo.
+        r"""Sets the available_zones of this ListProductsRespIo.
 
         IO未售罄的可用区列表。
 
@@ -137,7 +137,7 @@ class ListProductsRespIo:
 
     @property
     def unavailable_zones(self):
-        """Gets the unavailable_zones of this ListProductsRespIo.
+        r"""Gets the unavailable_zones of this ListProductsRespIo.
 
         IO已售罄的不可用区列表。
 
@@ -148,7 +148,7 @@ class ListProductsRespIo:
 
     @unavailable_zones.setter
     def unavailable_zones(self, unavailable_zones):
-        """Sets the unavailable_zones of this ListProductsRespIo.
+        r"""Sets the unavailable_zones of this ListProductsRespIo.
 
         IO已售罄的不可用区列表。
 
@@ -159,7 +159,7 @@ class ListProductsRespIo:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this ListProductsRespIo.
+        r"""Gets the volume_type of this ListProductsRespIo.
 
         磁盘类型。
 
@@ -170,7 +170,7 @@ class ListProductsRespIo:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this ListProductsRespIo.
+        r"""Sets the volume_type of this ListProductsRespIo.
 
         磁盘类型。
 

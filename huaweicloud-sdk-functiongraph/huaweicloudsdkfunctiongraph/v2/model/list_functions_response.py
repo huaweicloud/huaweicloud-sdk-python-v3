@@ -30,7 +30,7 @@ class ListFunctionsResponse(SdkResponse):
     }
 
     def __init__(self, functions=None, next_marker=None, count=None):
-        """ListFunctionsResponse
+        r"""ListFunctionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFunctionsResponse(SdkResponse):
 
     @property
     def functions(self):
-        """Gets the functions of this ListFunctionsResponse.
+        r"""Gets the functions of this ListFunctionsResponse.
 
         函数列表。
 
@@ -69,7 +69,7 @@ class ListFunctionsResponse(SdkResponse):
 
     @functions.setter
     def functions(self, functions):
-        """Sets the functions of this ListFunctionsResponse.
+        r"""Sets the functions of this ListFunctionsResponse.
 
         函数列表。
 
@@ -80,7 +80,7 @@ class ListFunctionsResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListFunctionsResponse.
+        r"""Gets the next_marker of this ListFunctionsResponse.
 
         函数下次记录读取位置。
 
@@ -91,7 +91,7 @@ class ListFunctionsResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListFunctionsResponse.
+        r"""Sets the next_marker of this ListFunctionsResponse.
 
         函数下次记录读取位置。
 
@@ -102,7 +102,7 @@ class ListFunctionsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListFunctionsResponse.
+        r"""Gets the count of this ListFunctionsResponse.
 
         满足查询条件的函数总数。
 
@@ -113,7 +113,7 @@ class ListFunctionsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListFunctionsResponse.
+        r"""Sets the count of this ListFunctionsResponse.
 
         满足查询条件的函数总数。
 

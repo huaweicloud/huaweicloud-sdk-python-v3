@@ -25,7 +25,7 @@ class UnusedAction:
     }
 
     def __init__(self, action=None):
-        """UnusedAction
+        r"""UnusedAction
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UnusedAction:
 
     @property
     def action(self):
-        """Gets the action of this UnusedAction.
+        r"""Gets the action of this UnusedAction.
 
         Action 名称。
 
@@ -53,7 +53,7 @@ class UnusedAction:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UnusedAction.
+        r"""Sets the action of this UnusedAction.
 
         Action 名称。
 

@@ -49,7 +49,7 @@ class ScheduleTaskExecuteHistory:
     }
 
     def __init__(self, id=None, task_id=None, task_type=None, status=None, scheduled_type=None, total_count=None, success_count=None, failed_count=None, excuting_count=None, time_zone=None, begin_time=None, end_time=None, create_time=None):
-        """ScheduleTaskExecuteHistory
+        r"""ScheduleTaskExecuteHistory
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ScheduleTaskExecuteHistory:
 
     @property
     def id(self):
-        """Gets the id of this ScheduleTaskExecuteHistory.
+        r"""Gets the id of this ScheduleTaskExecuteHistory.
 
         定时任务执行记录主键id。
 
@@ -138,7 +138,7 @@ class ScheduleTaskExecuteHistory:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScheduleTaskExecuteHistory.
+        r"""Sets the id of this ScheduleTaskExecuteHistory.
 
         定时任务执行记录主键id。
 
@@ -149,7 +149,7 @@ class ScheduleTaskExecuteHistory:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ScheduleTaskExecuteHistory.
+        r"""Gets the task_id of this ScheduleTaskExecuteHistory.
 
         定时任务主键id。
 
@@ -160,7 +160,7 @@ class ScheduleTaskExecuteHistory:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ScheduleTaskExecuteHistory.
+        r"""Sets the task_id of this ScheduleTaskExecuteHistory.
 
         定时任务主键id。
 
@@ -171,7 +171,7 @@ class ScheduleTaskExecuteHistory:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ScheduleTaskExecuteHistory.
+        r"""Gets the task_type of this ScheduleTaskExecuteHistory.
 
         :return: The task_type of this ScheduleTaskExecuteHistory.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
@@ -180,7 +180,7 @@ class ScheduleTaskExecuteHistory:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ScheduleTaskExecuteHistory.
+        r"""Sets the task_type of this ScheduleTaskExecuteHistory.
 
         :param task_type: The task_type of this ScheduleTaskExecuteHistory.
         :type task_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
@@ -189,7 +189,7 @@ class ScheduleTaskExecuteHistory:
 
     @property
     def status(self):
-        """Gets the status of this ScheduleTaskExecuteHistory.
+        r"""Gets the status of this ScheduleTaskExecuteHistory.
 
         :return: The status of this ScheduleTaskExecuteHistory.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskStatus`
@@ -198,7 +198,7 @@ class ScheduleTaskExecuteHistory:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScheduleTaskExecuteHistory.
+        r"""Sets the status of this ScheduleTaskExecuteHistory.
 
         :param status: The status of this ScheduleTaskExecuteHistory.
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskStatus`
@@ -207,7 +207,7 @@ class ScheduleTaskExecuteHistory:
 
     @property
     def scheduled_type(self):
-        """Gets the scheduled_type of this ScheduleTaskExecuteHistory.
+        r"""Gets the scheduled_type of this ScheduleTaskExecuteHistory.
 
         :return: The scheduled_type of this ScheduleTaskExecuteHistory.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
@@ -216,7 +216,7 @@ class ScheduleTaskExecuteHistory:
 
     @scheduled_type.setter
     def scheduled_type(self, scheduled_type):
-        """Sets the scheduled_type of this ScheduleTaskExecuteHistory.
+        r"""Sets the scheduled_type of this ScheduleTaskExecuteHistory.
 
         :param scheduled_type: The scheduled_type of this ScheduleTaskExecuteHistory.
         :type scheduled_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
@@ -225,7 +225,7 @@ class ScheduleTaskExecuteHistory:
 
     @property
     def total_count(self):
-        """Gets the total_count of this ScheduleTaskExecuteHistory.
+        r"""Gets the total_count of this ScheduleTaskExecuteHistory.
 
         总子任务数。
 
@@ -236,7 +236,7 @@ class ScheduleTaskExecuteHistory:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ScheduleTaskExecuteHistory.
+        r"""Sets the total_count of this ScheduleTaskExecuteHistory.
 
         总子任务数。
 
@@ -247,7 +247,7 @@ class ScheduleTaskExecuteHistory:
 
     @property
     def success_count(self):
-        """Gets the success_count of this ScheduleTaskExecuteHistory.
+        r"""Gets the success_count of this ScheduleTaskExecuteHistory.
 
         成功的子任务数。
 
@@ -258,7 +258,7 @@ class ScheduleTaskExecuteHistory:
 
     @success_count.setter
     def success_count(self, success_count):
-        """Sets the success_count of this ScheduleTaskExecuteHistory.
+        r"""Sets the success_count of this ScheduleTaskExecuteHistory.
 
         成功的子任务数。
 
@@ -269,7 +269,7 @@ class ScheduleTaskExecuteHistory:
 
     @property
     def failed_count(self):
-        """Gets the failed_count of this ScheduleTaskExecuteHistory.
+        r"""Gets the failed_count of this ScheduleTaskExecuteHistory.
 
         失败的子任务数。
 
@@ -280,7 +280,7 @@ class ScheduleTaskExecuteHistory:
 
     @failed_count.setter
     def failed_count(self, failed_count):
-        """Sets the failed_count of this ScheduleTaskExecuteHistory.
+        r"""Sets the failed_count of this ScheduleTaskExecuteHistory.
 
         失败的子任务数。
 
@@ -291,7 +291,7 @@ class ScheduleTaskExecuteHistory:
 
     @property
     def excuting_count(self):
-        """Gets the excuting_count of this ScheduleTaskExecuteHistory.
+        r"""Gets the excuting_count of this ScheduleTaskExecuteHistory.
 
         正在执行的子任务数。
 
@@ -302,7 +302,7 @@ class ScheduleTaskExecuteHistory:
 
     @excuting_count.setter
     def excuting_count(self, excuting_count):
-        """Sets the excuting_count of this ScheduleTaskExecuteHistory.
+        r"""Sets the excuting_count of this ScheduleTaskExecuteHistory.
 
         正在执行的子任务数。
 
@@ -313,7 +313,7 @@ class ScheduleTaskExecuteHistory:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ScheduleTaskExecuteHistory.
+        r"""Gets the time_zone of this ScheduleTaskExecuteHistory.
 
         时区。
 
@@ -324,7 +324,7 @@ class ScheduleTaskExecuteHistory:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ScheduleTaskExecuteHistory.
+        r"""Sets the time_zone of this ScheduleTaskExecuteHistory.
 
         时区。
 
@@ -335,7 +335,7 @@ class ScheduleTaskExecuteHistory:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ScheduleTaskExecuteHistory.
+        r"""Gets the begin_time of this ScheduleTaskExecuteHistory.
 
         任务开始时间。
 
@@ -346,7 +346,7 @@ class ScheduleTaskExecuteHistory:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ScheduleTaskExecuteHistory.
+        r"""Sets the begin_time of this ScheduleTaskExecuteHistory.
 
         任务开始时间。
 
@@ -357,7 +357,7 @@ class ScheduleTaskExecuteHistory:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ScheduleTaskExecuteHistory.
+        r"""Gets the end_time of this ScheduleTaskExecuteHistory.
 
         任务结束时间。
 
@@ -368,7 +368,7 @@ class ScheduleTaskExecuteHistory:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ScheduleTaskExecuteHistory.
+        r"""Sets the end_time of this ScheduleTaskExecuteHistory.
 
         任务结束时间。
 
@@ -379,7 +379,7 @@ class ScheduleTaskExecuteHistory:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ScheduleTaskExecuteHistory.
+        r"""Gets the create_time of this ScheduleTaskExecuteHistory.
 
         创建时间。
 
@@ -390,7 +390,7 @@ class ScheduleTaskExecuteHistory:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ScheduleTaskExecuteHistory.
+        r"""Sets the create_time of this ScheduleTaskExecuteHistory.
 
         创建时间。
 

@@ -27,7 +27,7 @@ class ShowDependencyVersionRequest:
     }
 
     def __init__(self, depend_id=None, version=None):
-        """ShowDependencyVersionRequest
+        r"""ShowDependencyVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDependencyVersionRequest:
 
     @property
     def depend_id(self):
-        """Gets the depend_id of this ShowDependencyVersionRequest.
+        r"""Gets the depend_id of this ShowDependencyVersionRequest.
 
         依赖包的ID。
 
@@ -59,7 +59,7 @@ class ShowDependencyVersionRequest:
 
     @depend_id.setter
     def depend_id(self, depend_id):
-        """Sets the depend_id of this ShowDependencyVersionRequest.
+        r"""Sets the depend_id of this ShowDependencyVersionRequest.
 
         依赖包的ID。
 
@@ -70,7 +70,7 @@ class ShowDependencyVersionRequest:
 
     @property
     def version(self):
-        """Gets the version of this ShowDependencyVersionRequest.
+        r"""Gets the version of this ShowDependencyVersionRequest.
 
         依赖包版本号。
 
@@ -81,7 +81,7 @@ class ShowDependencyVersionRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowDependencyVersionRequest.
+        r"""Sets the version of this ShowDependencyVersionRequest.
 
         依赖包版本号。
 

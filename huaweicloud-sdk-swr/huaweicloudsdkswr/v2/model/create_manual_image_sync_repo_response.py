@@ -26,7 +26,7 @@ class CreateManualImageSyncRepoResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateManualImageSyncRepoResponse
+        r"""CreateManualImageSyncRepoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateManualImageSyncRepoResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateManualImageSyncRepoResponse.
+        r"""Gets the body of this CreateManualImageSyncRepoResponse.
 
         :return: The body of this CreateManualImageSyncRepoResponse.
         :rtype: list[str]
@@ -53,7 +53,7 @@ class CreateManualImageSyncRepoResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateManualImageSyncRepoResponse.
+        r"""Sets the body of this CreateManualImageSyncRepoResponse.
 
         :param body: The body of this CreateManualImageSyncRepoResponse.
         :type body: list[str]

@@ -28,7 +28,7 @@ class AddVmsCallBackResponse(SdkResponse):
     }
 
     def __init__(self, status=None, message=None):
-        """AddVmsCallBackResponse
+        r"""AddVmsCallBackResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class AddVmsCallBackResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this AddVmsCallBackResponse.
+        r"""Gets the status of this AddVmsCallBackResponse.
 
         请求状态，固定200。
 
@@ -62,7 +62,7 @@ class AddVmsCallBackResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AddVmsCallBackResponse.
+        r"""Sets the status of this AddVmsCallBackResponse.
 
         请求状态，固定200。
 
@@ -73,7 +73,7 @@ class AddVmsCallBackResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this AddVmsCallBackResponse.
+        r"""Gets the message of this AddVmsCallBackResponse.
 
         状态描述。
 
@@ -84,7 +84,7 @@ class AddVmsCallBackResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this AddVmsCallBackResponse.
+        r"""Sets the message of this AddVmsCallBackResponse.
 
         状态描述。
 

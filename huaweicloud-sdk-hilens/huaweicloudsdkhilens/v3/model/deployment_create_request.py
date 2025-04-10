@@ -45,7 +45,7 @@ class DeploymentCreateRequest:
     }
 
     def __init__(self, cluster_id=None, deployment=None, description=None, license_quota=None, name=None, node_ids=None, source=None, svc_order_id=None, tags=None, node_tags=None, node_num=None):
-        """DeploymentCreateRequest
+        r"""DeploymentCreateRequest
 
         The model defined in huaweicloud sdk
 
@@ -110,7 +110,7 @@ class DeploymentCreateRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeploymentCreateRequest.
+        r"""Gets the cluster_id of this DeploymentCreateRequest.
 
         应用部署到指定集群，与node_ids二选一
 
@@ -121,7 +121,7 @@ class DeploymentCreateRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeploymentCreateRequest.
+        r"""Sets the cluster_id of this DeploymentCreateRequest.
 
         应用部署到指定集群，与node_ids二选一
 
@@ -132,7 +132,7 @@ class DeploymentCreateRequest:
 
     @property
     def deployment(self):
-        """Gets the deployment of this DeploymentCreateRequest.
+        r"""Gets the deployment of this DeploymentCreateRequest.
 
         :return: The deployment of this DeploymentCreateRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.DeploymentRequest`
@@ -141,7 +141,7 @@ class DeploymentCreateRequest:
 
     @deployment.setter
     def deployment(self, deployment):
-        """Sets the deployment of this DeploymentCreateRequest.
+        r"""Sets the deployment of this DeploymentCreateRequest.
 
         :param deployment: The deployment of this DeploymentCreateRequest.
         :type deployment: :class:`huaweicloudsdkhilens.v3.DeploymentRequest`
@@ -150,7 +150,7 @@ class DeploymentCreateRequest:
 
     @property
     def description(self):
-        """Gets the description of this DeploymentCreateRequest.
+        r"""Gets the description of this DeploymentCreateRequest.
 
         应用部署描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -161,7 +161,7 @@ class DeploymentCreateRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeploymentCreateRequest.
+        r"""Sets the description of this DeploymentCreateRequest.
 
         应用部署描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -172,7 +172,7 @@ class DeploymentCreateRequest:
 
     @property
     def license_quota(self):
-        """Gets the license_quota of this DeploymentCreateRequest.
+        r"""Gets the license_quota of this DeploymentCreateRequest.
 
         本次部署所使用的license额度，配合订单中的计费量纲的实际计费类型，如：视频路数/实例数/QPS。
 
@@ -183,7 +183,7 @@ class DeploymentCreateRequest:
 
     @license_quota.setter
     def license_quota(self, license_quota):
-        """Sets the license_quota of this DeploymentCreateRequest.
+        r"""Sets the license_quota of this DeploymentCreateRequest.
 
         本次部署所使用的license额度，配合订单中的计费量纲的实际计费类型，如：视频路数/实例数/QPS。
 
@@ -194,7 +194,7 @@ class DeploymentCreateRequest:
 
     @property
     def name(self):
-        """Gets the name of this DeploymentCreateRequest.
+        r"""Gets the name of this DeploymentCreateRequest.
 
         应用部署名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
 
@@ -205,7 +205,7 @@ class DeploymentCreateRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeploymentCreateRequest.
+        r"""Sets the name of this DeploymentCreateRequest.
 
         应用部署名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
 
@@ -216,7 +216,7 @@ class DeploymentCreateRequest:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this DeploymentCreateRequest.
+        r"""Gets the node_ids of this DeploymentCreateRequest.
 
         应用部署到指定节点，与cluster_id二选一
 
@@ -227,7 +227,7 @@ class DeploymentCreateRequest:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this DeploymentCreateRequest.
+        r"""Sets the node_ids of this DeploymentCreateRequest.
 
         应用部署到指定节点，与cluster_id二选一
 
@@ -238,7 +238,7 @@ class DeploymentCreateRequest:
 
     @property
     def source(self):
-        """Gets the source of this DeploymentCreateRequest.
+        r"""Gets the source of this DeploymentCreateRequest.
 
         应用部署来源: HiLens市场(hlm) or aigallery(aig) or 自定义(userdefined)
 
@@ -249,7 +249,7 @@ class DeploymentCreateRequest:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this DeploymentCreateRequest.
+        r"""Sets the source of this DeploymentCreateRequest.
 
         应用部署来源: HiLens市场(hlm) or aigallery(aig) or 自定义(userdefined)
 
@@ -260,7 +260,7 @@ class DeploymentCreateRequest:
 
     @property
     def svc_order_id(self):
-        """Gets the svc_order_id of this DeploymentCreateRequest.
+        r"""Gets the svc_order_id of this DeploymentCreateRequest.
 
         购买应用管理服务的订单ID。
 
@@ -271,7 +271,7 @@ class DeploymentCreateRequest:
 
     @svc_order_id.setter
     def svc_order_id(self, svc_order_id):
-        """Sets the svc_order_id of this DeploymentCreateRequest.
+        r"""Sets the svc_order_id of this DeploymentCreateRequest.
 
         购买应用管理服务的订单ID。
 
@@ -282,7 +282,7 @@ class DeploymentCreateRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this DeploymentCreateRequest.
+        r"""Gets the tags of this DeploymentCreateRequest.
 
         部署标签
 
@@ -293,7 +293,7 @@ class DeploymentCreateRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this DeploymentCreateRequest.
+        r"""Sets the tags of this DeploymentCreateRequest.
 
         部署标签
 
@@ -304,7 +304,7 @@ class DeploymentCreateRequest:
 
     @property
     def node_tags(self):
-        """Gets the node_tags of this DeploymentCreateRequest.
+        r"""Gets the node_tags of this DeploymentCreateRequest.
 
         部署节点标签列表，当通过节点标签进行部署的时候，需要下发该字段。
 
@@ -315,7 +315,7 @@ class DeploymentCreateRequest:
 
     @node_tags.setter
     def node_tags(self, node_tags):
-        """Sets the node_tags of this DeploymentCreateRequest.
+        r"""Sets the node_tags of this DeploymentCreateRequest.
 
         部署节点标签列表，当通过节点标签进行部署的时候，需要下发该字段。
 
@@ -326,7 +326,7 @@ class DeploymentCreateRequest:
 
     @property
     def node_num(self):
-        """Gets the node_num of this DeploymentCreateRequest.
+        r"""Gets the node_num of this DeploymentCreateRequest.
 
         标签部署的设备数量
 
@@ -337,7 +337,7 @@ class DeploymentCreateRequest:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this DeploymentCreateRequest.
+        r"""Sets the node_num of this DeploymentCreateRequest.
 
         标签部署的设备数量
 

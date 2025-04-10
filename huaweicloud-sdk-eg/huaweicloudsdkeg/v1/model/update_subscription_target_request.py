@@ -31,7 +31,7 @@ class UpdateSubscriptionTargetRequest:
     }
 
     def __init__(self, subscription_id=None, target_id=None, enterprise_project_id=None, body=None):
-        """UpdateSubscriptionTargetRequest
+        r"""UpdateSubscriptionTargetRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateSubscriptionTargetRequest:
 
     @property
     def subscription_id(self):
-        """Gets the subscription_id of this UpdateSubscriptionTargetRequest.
+        r"""Gets the subscription_id of this UpdateSubscriptionTargetRequest.
 
         事件订阅ID
 
@@ -73,7 +73,7 @@ class UpdateSubscriptionTargetRequest:
 
     @subscription_id.setter
     def subscription_id(self, subscription_id):
-        """Sets the subscription_id of this UpdateSubscriptionTargetRequest.
+        r"""Sets the subscription_id of this UpdateSubscriptionTargetRequest.
 
         事件订阅ID
 
@@ -84,7 +84,7 @@ class UpdateSubscriptionTargetRequest:
 
     @property
     def target_id(self):
-        """Gets the target_id of this UpdateSubscriptionTargetRequest.
+        r"""Gets the target_id of this UpdateSubscriptionTargetRequest.
 
         事件订阅目标ID
 
@@ -95,7 +95,7 @@ class UpdateSubscriptionTargetRequest:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this UpdateSubscriptionTargetRequest.
+        r"""Sets the target_id of this UpdateSubscriptionTargetRequest.
 
         事件订阅目标ID
 
@@ -106,7 +106,7 @@ class UpdateSubscriptionTargetRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateSubscriptionTargetRequest.
+        r"""Gets the enterprise_project_id of this UpdateSubscriptionTargetRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -117,7 +117,7 @@ class UpdateSubscriptionTargetRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateSubscriptionTargetRequest.
+        r"""Sets the enterprise_project_id of this UpdateSubscriptionTargetRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -128,7 +128,7 @@ class UpdateSubscriptionTargetRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSubscriptionTargetRequest.
+        r"""Gets the body of this UpdateSubscriptionTargetRequest.
 
         :return: The body of this UpdateSubscriptionTargetRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.SubscriptionTarget`
@@ -137,7 +137,7 @@ class UpdateSubscriptionTargetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSubscriptionTargetRequest.
+        r"""Sets the body of this UpdateSubscriptionTargetRequest.
 
         :param body: The body of this UpdateSubscriptionTargetRequest.
         :type body: :class:`huaweicloudsdkeg.v1.SubscriptionTarget`

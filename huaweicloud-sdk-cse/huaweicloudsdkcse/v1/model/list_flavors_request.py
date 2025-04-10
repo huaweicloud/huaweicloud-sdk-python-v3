@@ -25,7 +25,7 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, spec_type=None):
-        """ListFlavorsRequest
+        r"""ListFlavorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListFlavorsRequest:
 
     @property
     def spec_type(self):
-        """Gets the spec_type of this ListFlavorsRequest.
+        r"""Gets the spec_type of this ListFlavorsRequest.
 
         微服务引擎应用部署类型，查询ServiceComb引擎专享版需要将该值设置为CSE2，查询注册配置中心需要将该值设置为Nacos2，查询网关需要将该值设置为MicroGateway。
 
@@ -54,7 +54,7 @@ class ListFlavorsRequest:
 
     @spec_type.setter
     def spec_type(self, spec_type):
-        """Sets the spec_type of this ListFlavorsRequest.
+        r"""Sets the spec_type of this ListFlavorsRequest.
 
         微服务引擎应用部署类型，查询ServiceComb引擎专享版需要将该值设置为CSE2，查询注册配置中心需要将该值设置为Nacos2，查询网关需要将该值设置为MicroGateway。
 

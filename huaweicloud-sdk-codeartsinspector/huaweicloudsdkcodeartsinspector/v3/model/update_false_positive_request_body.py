@@ -31,7 +31,7 @@ class UpdateFalsePositiveRequestBody:
     }
 
     def __init__(self, vuln_id=None, provider=None, reason=None, vuln_status=None):
-        """UpdateFalsePositiveRequestBody
+        r"""UpdateFalsePositiveRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateFalsePositiveRequestBody:
 
     @property
     def vuln_id(self):
-        """Gets the vuln_id of this UpdateFalsePositiveRequestBody.
+        r"""Gets the vuln_id of this UpdateFalsePositiveRequestBody.
 
         漏洞ID
 
@@ -74,7 +74,7 @@ class UpdateFalsePositiveRequestBody:
 
     @vuln_id.setter
     def vuln_id(self, vuln_id):
-        """Sets the vuln_id of this UpdateFalsePositiveRequestBody.
+        r"""Sets the vuln_id of this UpdateFalsePositiveRequestBody.
 
         漏洞ID
 
@@ -85,7 +85,7 @@ class UpdateFalsePositiveRequestBody:
 
     @property
     def provider(self):
-        """Gets the provider of this UpdateFalsePositiveRequestBody.
+        r"""Gets the provider of this UpdateFalsePositiveRequestBody.
 
         误报确认人
 
@@ -96,7 +96,7 @@ class UpdateFalsePositiveRequestBody:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this UpdateFalsePositiveRequestBody.
+        r"""Sets the provider of this UpdateFalsePositiveRequestBody.
 
         误报确认人
 
@@ -107,7 +107,7 @@ class UpdateFalsePositiveRequestBody:
 
     @property
     def reason(self):
-        """Gets the reason of this UpdateFalsePositiveRequestBody.
+        r"""Gets the reason of this UpdateFalsePositiveRequestBody.
 
         误报确认理由
 
@@ -118,7 +118,7 @@ class UpdateFalsePositiveRequestBody:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this UpdateFalsePositiveRequestBody.
+        r"""Sets the reason of this UpdateFalsePositiveRequestBody.
 
         误报确认理由
 
@@ -129,7 +129,7 @@ class UpdateFalsePositiveRequestBody:
 
     @property
     def vuln_status(self):
-        """Gets the vuln_status of this UpdateFalsePositiveRequestBody.
+        r"""Gets the vuln_status of this UpdateFalsePositiveRequestBody.
 
         对漏洞的操作:   * false_report - 更新漏洞状态为误报，并忽略   * repairing - 更新漏洞状态未修复 
 
@@ -140,7 +140,7 @@ class UpdateFalsePositiveRequestBody:
 
     @vuln_status.setter
     def vuln_status(self, vuln_status):
-        """Sets the vuln_status of this UpdateFalsePositiveRequestBody.
+        r"""Sets the vuln_status of this UpdateFalsePositiveRequestBody.
 
         对漏洞的操作:   * false_report - 更新漏洞状态为误报，并忽略   * repairing - 更新漏洞状态未修复 
 

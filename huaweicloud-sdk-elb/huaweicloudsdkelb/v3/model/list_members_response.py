@@ -30,7 +30,7 @@ class ListMembersResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, members=None):
-        """ListMembersResponse
+        r"""ListMembersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListMembersResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListMembersResponse.
+        r"""Gets the request_id of this ListMembersResponse.
 
         请求ID。  注：自动生成 。
 
@@ -69,7 +69,7 @@ class ListMembersResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListMembersResponse.
+        r"""Sets the request_id of this ListMembersResponse.
 
         请求ID。  注：自动生成 。
 
@@ -80,7 +80,7 @@ class ListMembersResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListMembersResponse.
+        r"""Gets the page_info of this ListMembersResponse.
 
         :return: The page_info of this ListMembersResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListMembersResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListMembersResponse.
+        r"""Sets the page_info of this ListMembersResponse.
 
         :param page_info: The page_info of this ListMembersResponse.
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListMembersResponse(SdkResponse):
 
     @property
     def members(self):
-        """Gets the members of this ListMembersResponse.
+        r"""Gets the members of this ListMembersResponse.
 
         后端服务器对象列表。
 
@@ -109,7 +109,7 @@ class ListMembersResponse(SdkResponse):
 
     @members.setter
     def members(self, members):
-        """Sets the members of this ListMembersResponse.
+        r"""Sets the members of this ListMembersResponse.
 
         后端服务器对象列表。
 

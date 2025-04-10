@@ -31,7 +31,7 @@ class ExecuteGetImagesListRequest:
     }
 
     def __init__(self, limit=None, offset=None, resolution_type=None, type=None):
-        """ExecuteGetImagesListRequest
+        r"""ExecuteGetImagesListRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ExecuteGetImagesListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ExecuteGetImagesListRequest.
+        r"""Gets the limit of this ExecuteGetImagesListRequest.
 
         范围：大于等于1 默认：10
 
@@ -71,7 +71,7 @@ class ExecuteGetImagesListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ExecuteGetImagesListRequest.
+        r"""Sets the limit of this ExecuteGetImagesListRequest.
 
         范围：大于等于1 默认：10
 
@@ -82,7 +82,7 @@ class ExecuteGetImagesListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ExecuteGetImagesListRequest.
+        r"""Gets the offset of this ExecuteGetImagesListRequest.
 
         范围：大于等于0 默认值：0
 
@@ -93,7 +93,7 @@ class ExecuteGetImagesListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ExecuteGetImagesListRequest.
+        r"""Sets the offset of this ExecuteGetImagesListRequest.
 
         范围：大于等于0 默认值：0
 
@@ -104,7 +104,7 @@ class ExecuteGetImagesListRequest:
 
     @property
     def resolution_type(self):
-        """Gets the resolution_type of this ExecuteGetImagesListRequest.
+        r"""Gets the resolution_type of this ExecuteGetImagesListRequest.
 
         横竖屏模式 0：横屏（默认） 1：竖屏
 
@@ -115,7 +115,7 @@ class ExecuteGetImagesListRequest:
 
     @resolution_type.setter
     def resolution_type(self, resolution_type):
-        """Sets the resolution_type of this ExecuteGetImagesListRequest.
+        r"""Sets the resolution_type of this ExecuteGetImagesListRequest.
 
         横竖屏模式 0：横屏（默认） 1：竖屏
 
@@ -126,7 +126,7 @@ class ExecuteGetImagesListRequest:
 
     @property
     def type(self):
-        """Gets the type of this ExecuteGetImagesListRequest.
+        r"""Gets the type of this ExecuteGetImagesListRequest.
 
         默认0 0：用户背景 1：系统背景 2：用户图标
 
@@ -137,7 +137,7 @@ class ExecuteGetImagesListRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExecuteGetImagesListRequest.
+        r"""Sets the type of this ExecuteGetImagesListRequest.
 
         默认0 0：用户背景 1：系统背景 2：用户图标
 

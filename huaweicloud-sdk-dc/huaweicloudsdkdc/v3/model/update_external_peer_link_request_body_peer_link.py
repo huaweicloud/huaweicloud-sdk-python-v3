@@ -27,7 +27,7 @@ class UpdateExternalPeerLinkRequestBodyPeerLink:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateExternalPeerLinkRequestBodyPeerLink
+        r"""UpdateExternalPeerLinkRequestBodyPeerLink
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateExternalPeerLinkRequestBodyPeerLink:
 
     @property
     def name(self):
-        """Gets the name of this UpdateExternalPeerLinkRequestBodyPeerLink.
+        r"""Gets the name of this UpdateExternalPeerLinkRequestBodyPeerLink.
 
         接入网关关联连接的名字
 
@@ -61,7 +61,7 @@ class UpdateExternalPeerLinkRequestBodyPeerLink:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateExternalPeerLinkRequestBodyPeerLink.
+        r"""Sets the name of this UpdateExternalPeerLinkRequestBodyPeerLink.
 
         接入网关关联连接的名字
 
@@ -72,7 +72,7 @@ class UpdateExternalPeerLinkRequestBodyPeerLink:
 
     @property
     def description(self):
-        """Gets the description of this UpdateExternalPeerLinkRequestBodyPeerLink.
+        r"""Gets the description of this UpdateExternalPeerLinkRequestBodyPeerLink.
 
         描述信息
 
@@ -83,7 +83,7 @@ class UpdateExternalPeerLinkRequestBodyPeerLink:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateExternalPeerLinkRequestBodyPeerLink.
+        r"""Sets the description of this UpdateExternalPeerLinkRequestBodyPeerLink.
 
         描述信息
 

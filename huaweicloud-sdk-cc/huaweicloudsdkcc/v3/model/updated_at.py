@@ -25,7 +25,7 @@ class UpdatedAt:
     }
 
     def __init__(self, updated_at=None):
-        """UpdatedAt
+        r"""UpdatedAt
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdatedAt:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdatedAt.
+        r"""Gets the updated_at of this UpdatedAt.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -53,7 +53,7 @@ class UpdatedAt:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdatedAt.
+        r"""Sets the updated_at of this UpdatedAt.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 

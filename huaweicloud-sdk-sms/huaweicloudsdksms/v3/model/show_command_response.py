@@ -28,7 +28,7 @@ class ShowCommandResponse(SdkResponse):
     }
 
     def __init__(self, command_name=None, command_param=None):
-        """ShowCommandResponse
+        r"""ShowCommandResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowCommandResponse(SdkResponse):
 
     @property
     def command_name(self):
-        """Gets the command_name of this ShowCommandResponse.
+        r"""Gets the command_name of this ShowCommandResponse.
 
         命令名称，分为：START、STOP、DELETE、SYNC、SKIP
 
@@ -62,7 +62,7 @@ class ShowCommandResponse(SdkResponse):
 
     @command_name.setter
     def command_name(self, command_name):
-        """Sets the command_name of this ShowCommandResponse.
+        r"""Sets the command_name of this ShowCommandResponse.
 
         命令名称，分为：START、STOP、DELETE、SYNC、SKIP
 
@@ -73,7 +73,7 @@ class ShowCommandResponse(SdkResponse):
 
     @property
     def command_param(self):
-        """Gets the command_param of this ShowCommandResponse.
+        r"""Gets the command_param of this ShowCommandResponse.
 
         :return: The command_param of this ShowCommandResponse.
         :rtype: :class:`huaweicloudsdksms.v3.CommandParam`
@@ -82,7 +82,7 @@ class ShowCommandResponse(SdkResponse):
 
     @command_param.setter
     def command_param(self, command_param):
-        """Sets the command_param of this ShowCommandResponse.
+        r"""Sets the command_param of this ShowCommandResponse.
 
         :param command_param: The command_param of this ShowCommandResponse.
         :type command_param: :class:`huaweicloudsdksms.v3.CommandParam`

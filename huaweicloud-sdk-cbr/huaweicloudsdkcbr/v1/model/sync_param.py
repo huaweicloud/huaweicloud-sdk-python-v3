@@ -27,7 +27,7 @@ class SyncParam:
     }
 
     def __init__(self, auto_trigger=None, vault_id=None):
-        """SyncParam
+        r"""SyncParam
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SyncParam:
 
     @property
     def auto_trigger(self):
-        """Gets the auto_trigger of this SyncParam.
+        r"""Gets the auto_trigger of this SyncParam.
 
         本次同步是否自动触发
 
@@ -59,7 +59,7 @@ class SyncParam:
 
     @auto_trigger.setter
     def auto_trigger(self, auto_trigger):
-        """Sets the auto_trigger of this SyncParam.
+        r"""Sets the auto_trigger of this SyncParam.
 
         本次同步是否自动触发
 
@@ -70,7 +70,7 @@ class SyncParam:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this SyncParam.
+        r"""Gets the vault_id of this SyncParam.
 
         混合云vault id
 
@@ -81,7 +81,7 @@ class SyncParam:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this SyncParam.
+        r"""Sets the vault_id of this SyncParam.
 
         混合云vault id
 

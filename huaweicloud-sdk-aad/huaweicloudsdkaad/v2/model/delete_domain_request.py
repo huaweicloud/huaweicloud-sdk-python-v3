@@ -25,7 +25,7 @@ class DeleteDomainRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteDomainRequest
+        r"""DeleteDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteDomainRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteDomainRequest.
+        r"""Gets the body of this DeleteDomainRequest.
 
         :return: The body of this DeleteDomainRequest.
         :rtype: :class:`huaweicloudsdkaad.v2.DeleteDomainV2RequestBody`
@@ -52,7 +52,7 @@ class DeleteDomainRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDomainRequest.
+        r"""Sets the body of this DeleteDomainRequest.
 
         :param body: The body of this DeleteDomainRequest.
         :type body: :class:`huaweicloudsdkaad.v2.DeleteDomainV2RequestBody`

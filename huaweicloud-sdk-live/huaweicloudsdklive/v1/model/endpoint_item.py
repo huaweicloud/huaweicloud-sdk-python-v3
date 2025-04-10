@@ -29,7 +29,7 @@ class EndpointItem:
     }
 
     def __init__(self, hls_package=None, dash_package=None, mss_package=None):
-        """EndpointItem
+        r"""EndpointItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EndpointItem:
 
     @property
     def hls_package(self):
-        """Gets the hls_package of this EndpointItem.
+        r"""Gets the hls_package of this EndpointItem.
 
         HLS打包信息
 
@@ -68,7 +68,7 @@ class EndpointItem:
 
     @hls_package.setter
     def hls_package(self, hls_package):
-        """Sets the hls_package of this EndpointItem.
+        r"""Sets the hls_package of this EndpointItem.
 
         HLS打包信息
 
@@ -79,7 +79,7 @@ class EndpointItem:
 
     @property
     def dash_package(self):
-        """Gets the dash_package of this EndpointItem.
+        r"""Gets the dash_package of this EndpointItem.
 
         DASH打包信息
 
@@ -90,7 +90,7 @@ class EndpointItem:
 
     @dash_package.setter
     def dash_package(self, dash_package):
-        """Sets the dash_package of this EndpointItem.
+        r"""Sets the dash_package of this EndpointItem.
 
         DASH打包信息
 
@@ -101,7 +101,7 @@ class EndpointItem:
 
     @property
     def mss_package(self):
-        """Gets the mss_package of this EndpointItem.
+        r"""Gets the mss_package of this EndpointItem.
 
         MSS打包信息
 
@@ -112,7 +112,7 @@ class EndpointItem:
 
     @mss_package.setter
     def mss_package(self, mss_package):
-        """Sets the mss_package of this EndpointItem.
+        r"""Sets the mss_package of this EndpointItem.
 
         MSS打包信息
 

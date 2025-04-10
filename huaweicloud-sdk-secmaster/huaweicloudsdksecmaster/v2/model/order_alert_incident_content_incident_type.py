@@ -29,7 +29,7 @@ class OrderAlertIncidentContentIncidentType:
     }
 
     def __init__(self, id=None, category=None, incident_type=None):
-        """OrderAlertIncidentContentIncidentType
+        r"""OrderAlertIncidentContentIncidentType
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class OrderAlertIncidentContentIncidentType:
 
     @property
     def id(self):
-        """Gets the id of this OrderAlertIncidentContentIncidentType.
+        r"""Gets the id of this OrderAlertIncidentContentIncidentType.
 
         事件类型id
 
@@ -68,7 +68,7 @@ class OrderAlertIncidentContentIncidentType:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OrderAlertIncidentContentIncidentType.
+        r"""Sets the id of this OrderAlertIncidentContentIncidentType.
 
         事件类型id
 
@@ -79,7 +79,7 @@ class OrderAlertIncidentContentIncidentType:
 
     @property
     def category(self):
-        """Gets the category of this OrderAlertIncidentContentIncidentType.
+        r"""Gets the category of this OrderAlertIncidentContentIncidentType.
 
         事件类型父类
 
@@ -90,7 +90,7 @@ class OrderAlertIncidentContentIncidentType:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this OrderAlertIncidentContentIncidentType.
+        r"""Sets the category of this OrderAlertIncidentContentIncidentType.
 
         事件类型父类
 
@@ -101,7 +101,7 @@ class OrderAlertIncidentContentIncidentType:
 
     @property
     def incident_type(self):
-        """Gets the incident_type of this OrderAlertIncidentContentIncidentType.
+        r"""Gets the incident_type of this OrderAlertIncidentContentIncidentType.
 
         事件类型子类
 
@@ -112,7 +112,7 @@ class OrderAlertIncidentContentIncidentType:
 
     @incident_type.setter
     def incident_type(self, incident_type):
-        """Sets the incident_type of this OrderAlertIncidentContentIncidentType.
+        r"""Sets the incident_type of this OrderAlertIncidentContentIncidentType.
 
         事件类型子类
 

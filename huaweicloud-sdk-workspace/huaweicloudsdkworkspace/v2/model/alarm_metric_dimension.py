@@ -27,7 +27,7 @@ class AlarmMetricDimension:
     }
 
     def __init__(self, name=None, value=None):
-        """AlarmMetricDimension
+        r"""AlarmMetricDimension
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AlarmMetricDimension:
 
     @property
     def name(self):
-        """Gets the name of this AlarmMetricDimension.
+        r"""Gets the name of this AlarmMetricDimension.
 
         资源维度
 
@@ -61,7 +61,7 @@ class AlarmMetricDimension:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AlarmMetricDimension.
+        r"""Sets the name of this AlarmMetricDimension.
 
         资源维度
 
@@ -72,7 +72,7 @@ class AlarmMetricDimension:
 
     @property
     def value(self):
-        """Gets the value of this AlarmMetricDimension.
+        r"""Gets the value of this AlarmMetricDimension.
 
         资源维度值
 
@@ -83,7 +83,7 @@ class AlarmMetricDimension:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AlarmMetricDimension.
+        r"""Sets the value of this AlarmMetricDimension.
 
         资源维度值
 

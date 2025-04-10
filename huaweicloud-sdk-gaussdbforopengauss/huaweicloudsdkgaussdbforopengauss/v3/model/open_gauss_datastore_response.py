@@ -27,7 +27,7 @@ class OpenGaussDatastoreResponse:
     }
 
     def __init__(self, type=None, version=None):
-        """OpenGaussDatastoreResponse
+        r"""OpenGaussDatastoreResponse
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OpenGaussDatastoreResponse:
 
     @property
     def type(self):
-        """Gets the type of this OpenGaussDatastoreResponse.
+        r"""Gets the type of this OpenGaussDatastoreResponse.
 
         数据库引擎，不区分大小写，取值如下：  GaussDB(for openGauss)
 
@@ -59,7 +59,7 @@ class OpenGaussDatastoreResponse:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this OpenGaussDatastoreResponse.
+        r"""Sets the type of this OpenGaussDatastoreResponse.
 
         数据库引擎，不区分大小写，取值如下：  GaussDB(for openGauss)
 
@@ -70,7 +70,7 @@ class OpenGaussDatastoreResponse:
 
     @property
     def version(self):
-        """Gets the version of this OpenGaussDatastoreResponse.
+        r"""Gets the version of this OpenGaussDatastoreResponse.
 
         数据库版本。
 
@@ -81,7 +81,7 @@ class OpenGaussDatastoreResponse:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this OpenGaussDatastoreResponse.
+        r"""Sets the version of this OpenGaussDatastoreResponse.
 
         数据库版本。
 

@@ -24,7 +24,7 @@ class GlanceCreateTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """GlanceCreateTagResponse
+        r"""GlanceCreateTagResponse
 
         The model defined in huaweicloud sdk
 

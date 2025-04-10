@@ -27,7 +27,7 @@ class IpInfo:
     }
 
     def __init__(self, ip=None, description=None):
-        """IpInfo
+        r"""IpInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IpInfo:
 
     @property
     def ip(self):
-        """Gets the ip of this IpInfo.
+        r"""Gets the ip of this IpInfo.
 
         参数解释：IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
@@ -59,7 +59,7 @@ class IpInfo:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this IpInfo.
+        r"""Sets the ip of this IpInfo.
 
         参数解释：IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt)
 
@@ -70,7 +70,7 @@ class IpInfo:
 
     @property
     def description(self):
-        """Gets the description of this IpInfo.
+        r"""Gets the description of this IpInfo.
 
         参数解释：IP地址组中ip的备注信息。
 
@@ -81,7 +81,7 @@ class IpInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IpInfo.
+        r"""Sets the description of this IpInfo.
 
         参数解释：IP地址组中ip的备注信息。
 

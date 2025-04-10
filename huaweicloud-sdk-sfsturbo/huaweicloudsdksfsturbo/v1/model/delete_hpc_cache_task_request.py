@@ -27,7 +27,7 @@ class DeleteHpcCacheTaskRequest:
     }
 
     def __init__(self, share_id=None, task_id=None):
-        """DeleteHpcCacheTaskRequest
+        r"""DeleteHpcCacheTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteHpcCacheTaskRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this DeleteHpcCacheTaskRequest.
+        r"""Gets the share_id of this DeleteHpcCacheTaskRequest.
 
         文件系统ID
 
@@ -59,7 +59,7 @@ class DeleteHpcCacheTaskRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this DeleteHpcCacheTaskRequest.
+        r"""Sets the share_id of this DeleteHpcCacheTaskRequest.
 
         文件系统ID
 
@@ -70,7 +70,7 @@ class DeleteHpcCacheTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteHpcCacheTaskRequest.
+        r"""Gets the task_id of this DeleteHpcCacheTaskRequest.
 
         任务ID
 
@@ -81,7 +81,7 @@ class DeleteHpcCacheTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteHpcCacheTaskRequest.
+        r"""Sets the task_id of this DeleteHpcCacheTaskRequest.
 
         任务ID
 

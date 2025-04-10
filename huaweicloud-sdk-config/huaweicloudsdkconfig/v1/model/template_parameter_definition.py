@@ -47,7 +47,7 @@ class TemplateParameterDefinition:
     }
 
     def __init__(self, name=None, description=None, default_value=None, allowed_values=None, minimum=None, maximum=None, min_items=None, max_items=None, min_length=None, max_length=None, pattern=None, type=None):
-        """TemplateParameterDefinition
+        r"""TemplateParameterDefinition
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class TemplateParameterDefinition:
 
     @property
     def name(self):
-        """Gets the name of this TemplateParameterDefinition.
+        r"""Gets the name of this TemplateParameterDefinition.
 
         预定义合规包模板参数名字。
 
@@ -131,7 +131,7 @@ class TemplateParameterDefinition:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TemplateParameterDefinition.
+        r"""Sets the name of this TemplateParameterDefinition.
 
         预定义合规包模板参数名字。
 
@@ -142,7 +142,7 @@ class TemplateParameterDefinition:
 
     @property
     def description(self):
-        """Gets the description of this TemplateParameterDefinition.
+        r"""Gets the description of this TemplateParameterDefinition.
 
         预定义合规包模板参数描述。
 
@@ -153,7 +153,7 @@ class TemplateParameterDefinition:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TemplateParameterDefinition.
+        r"""Sets the description of this TemplateParameterDefinition.
 
         预定义合规包模板参数描述。
 
@@ -164,7 +164,7 @@ class TemplateParameterDefinition:
 
     @property
     def default_value(self):
-        """Gets the default_value of this TemplateParameterDefinition.
+        r"""Gets the default_value of this TemplateParameterDefinition.
 
         预定义合规包模板参数默认值。
 
@@ -175,7 +175,7 @@ class TemplateParameterDefinition:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this TemplateParameterDefinition.
+        r"""Sets the default_value of this TemplateParameterDefinition.
 
         预定义合规包模板参数默认值。
 
@@ -186,7 +186,7 @@ class TemplateParameterDefinition:
 
     @property
     def allowed_values(self):
-        """Gets the allowed_values of this TemplateParameterDefinition.
+        r"""Gets the allowed_values of this TemplateParameterDefinition.
 
         预定义合规包模板参数允许值列表。
 
@@ -197,7 +197,7 @@ class TemplateParameterDefinition:
 
     @allowed_values.setter
     def allowed_values(self, allowed_values):
-        """Sets the allowed_values of this TemplateParameterDefinition.
+        r"""Sets the allowed_values of this TemplateParameterDefinition.
 
         预定义合规包模板参数允许值列表。
 
@@ -208,7 +208,7 @@ class TemplateParameterDefinition:
 
     @property
     def minimum(self):
-        """Gets the minimum of this TemplateParameterDefinition.
+        r"""Gets the minimum of this TemplateParameterDefinition.
 
         策略参数的最小值，当参数类型为Integer或Float时生效。
 
@@ -219,7 +219,7 @@ class TemplateParameterDefinition:
 
     @minimum.setter
     def minimum(self, minimum):
-        """Sets the minimum of this TemplateParameterDefinition.
+        r"""Sets the minimum of this TemplateParameterDefinition.
 
         策略参数的最小值，当参数类型为Integer或Float时生效。
 
@@ -230,7 +230,7 @@ class TemplateParameterDefinition:
 
     @property
     def maximum(self):
-        """Gets the maximum of this TemplateParameterDefinition.
+        r"""Gets the maximum of this TemplateParameterDefinition.
 
         策略参数的最大值，当参数类型为Integer或Float时生效。
 
@@ -241,7 +241,7 @@ class TemplateParameterDefinition:
 
     @maximum.setter
     def maximum(self, maximum):
-        """Sets the maximum of this TemplateParameterDefinition.
+        r"""Sets the maximum of this TemplateParameterDefinition.
 
         策略参数的最大值，当参数类型为Integer或Float时生效。
 
@@ -252,7 +252,7 @@ class TemplateParameterDefinition:
 
     @property
     def min_items(self):
-        """Gets the min_items of this TemplateParameterDefinition.
+        r"""Gets the min_items of this TemplateParameterDefinition.
 
         策略参数的最小项数，当参数类型为Array时生效。
 
@@ -263,7 +263,7 @@ class TemplateParameterDefinition:
 
     @min_items.setter
     def min_items(self, min_items):
-        """Sets the min_items of this TemplateParameterDefinition.
+        r"""Sets the min_items of this TemplateParameterDefinition.
 
         策略参数的最小项数，当参数类型为Array时生效。
 
@@ -274,7 +274,7 @@ class TemplateParameterDefinition:
 
     @property
     def max_items(self):
-        """Gets the max_items of this TemplateParameterDefinition.
+        r"""Gets the max_items of this TemplateParameterDefinition.
 
         策略参数的最大项数，当参数类型为Array时生效。
 
@@ -285,7 +285,7 @@ class TemplateParameterDefinition:
 
     @max_items.setter
     def max_items(self, max_items):
-        """Sets the max_items of this TemplateParameterDefinition.
+        r"""Sets the max_items of this TemplateParameterDefinition.
 
         策略参数的最大项数，当参数类型为Array时生效。
 
@@ -296,7 +296,7 @@ class TemplateParameterDefinition:
 
     @property
     def min_length(self):
-        """Gets the min_length of this TemplateParameterDefinition.
+        r"""Gets the min_length of this TemplateParameterDefinition.
 
         策略参数的最小字符串长度或每项的最小字符串长度，当参数类型为String或Array时生效。
 
@@ -307,7 +307,7 @@ class TemplateParameterDefinition:
 
     @min_length.setter
     def min_length(self, min_length):
-        """Sets the min_length of this TemplateParameterDefinition.
+        r"""Sets the min_length of this TemplateParameterDefinition.
 
         策略参数的最小字符串长度或每项的最小字符串长度，当参数类型为String或Array时生效。
 
@@ -318,7 +318,7 @@ class TemplateParameterDefinition:
 
     @property
     def max_length(self):
-        """Gets the max_length of this TemplateParameterDefinition.
+        r"""Gets the max_length of this TemplateParameterDefinition.
 
         策略参数的最大字符串长度或每项的最大字符串长度，当参数类型为String或Array时生效。
 
@@ -329,7 +329,7 @@ class TemplateParameterDefinition:
 
     @max_length.setter
     def max_length(self, max_length):
-        """Sets the max_length of this TemplateParameterDefinition.
+        r"""Sets the max_length of this TemplateParameterDefinition.
 
         策略参数的最大字符串长度或每项的最大字符串长度，当参数类型为String或Array时生效。
 
@@ -340,7 +340,7 @@ class TemplateParameterDefinition:
 
     @property
     def pattern(self):
-        """Gets the pattern of this TemplateParameterDefinition.
+        r"""Gets the pattern of this TemplateParameterDefinition.
 
         策略参数的字符串正则要求或每项的字符串正则要求，当参数类型为String或Array时生效。
 
@@ -351,7 +351,7 @@ class TemplateParameterDefinition:
 
     @pattern.setter
     def pattern(self, pattern):
-        """Sets the pattern of this TemplateParameterDefinition.
+        r"""Sets the pattern of this TemplateParameterDefinition.
 
         策略参数的字符串正则要求或每项的字符串正则要求，当参数类型为String或Array时生效。
 
@@ -362,7 +362,7 @@ class TemplateParameterDefinition:
 
     @property
     def type(self):
-        """Gets the type of this TemplateParameterDefinition.
+        r"""Gets the type of this TemplateParameterDefinition.
 
         预定义合规包模板参数类型。
 
@@ -373,7 +373,7 @@ class TemplateParameterDefinition:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TemplateParameterDefinition.
+        r"""Sets the type of this TemplateParameterDefinition.
 
         预定义合规包模板参数类型。
 

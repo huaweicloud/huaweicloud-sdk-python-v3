@@ -29,7 +29,7 @@ class UpdateDataIpRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateDataIpRequest
+        r"""UpdateDataIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateDataIpRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateDataIpRequest.
+        r"""Gets the x_language of this UpdateDataIpRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class UpdateDataIpRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateDataIpRequest.
+        r"""Sets the x_language of this UpdateDataIpRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class UpdateDataIpRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDataIpRequest.
+        r"""Gets the instance_id of this UpdateDataIpRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class UpdateDataIpRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDataIpRequest.
+        r"""Sets the instance_id of this UpdateDataIpRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class UpdateDataIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDataIpRequest.
+        r"""Gets the body of this UpdateDataIpRequest.
 
         :return: The body of this UpdateDataIpRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.DataIpRequest`
@@ -109,7 +109,7 @@ class UpdateDataIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDataIpRequest.
+        r"""Sets the body of this UpdateDataIpRequest.
 
         :param body: The body of this UpdateDataIpRequest.
         :type body: :class:`huaweicloudsdkrds.v3.DataIpRequest`

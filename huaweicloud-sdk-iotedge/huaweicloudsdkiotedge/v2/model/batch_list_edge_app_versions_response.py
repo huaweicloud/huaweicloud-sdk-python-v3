@@ -30,7 +30,7 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, versions=None):
-        """BatchListEdgeAppVersionsResponse
+        r"""BatchListEdgeAppVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchListEdgeAppVersionsResponse.
+        r"""Gets the count of this BatchListEdgeAppVersionsResponse.
 
         总记录数
 
@@ -69,7 +69,7 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchListEdgeAppVersionsResponse.
+        r"""Sets the count of this BatchListEdgeAppVersionsResponse.
 
         总记录数
 
@@ -80,7 +80,7 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this BatchListEdgeAppVersionsResponse.
+        r"""Gets the page_info of this BatchListEdgeAppVersionsResponse.
 
         :return: The page_info of this BatchListEdgeAppVersionsResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -89,7 +89,7 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this BatchListEdgeAppVersionsResponse.
+        r"""Sets the page_info of this BatchListEdgeAppVersionsResponse.
 
         :param page_info: The page_info of this BatchListEdgeAppVersionsResponse.
         :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
@@ -98,7 +98,7 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this BatchListEdgeAppVersionsResponse.
+        r"""Gets the versions of this BatchListEdgeAppVersionsResponse.
 
         每页记录数
 
@@ -109,7 +109,7 @@ class BatchListEdgeAppVersionsResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this BatchListEdgeAppVersionsResponse.
+        r"""Sets the versions of this BatchListEdgeAppVersionsResponse.
 
         每页记录数
 

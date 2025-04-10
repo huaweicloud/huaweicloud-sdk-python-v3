@@ -35,7 +35,7 @@ class ListPtrRecordsRequest:
     }
 
     def __init__(self, marker=None, limit=None, offset=None, enterprise_project_id=None, tags=None, status=None):
-        """ListPtrRecordsRequest
+        r"""ListPtrRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListPtrRecordsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPtrRecordsRequest.
+        r"""Gets the marker of this ListPtrRecordsRequest.
 
         分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
@@ -89,7 +89,7 @@ class ListPtrRecordsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPtrRecordsRequest.
+        r"""Sets the marker of this ListPtrRecordsRequest.
 
         分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
@@ -100,7 +100,7 @@ class ListPtrRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPtrRecordsRequest.
+        r"""Gets the limit of this ListPtrRecordsRequest.
 
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
@@ -111,7 +111,7 @@ class ListPtrRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPtrRecordsRequest.
+        r"""Sets the limit of this ListPtrRecordsRequest.
 
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
@@ -122,7 +122,7 @@ class ListPtrRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPtrRecordsRequest.
+        r"""Gets the offset of this ListPtrRecordsRequest.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
@@ -133,7 +133,7 @@ class ListPtrRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPtrRecordsRequest.
+        r"""Sets the offset of this ListPtrRecordsRequest.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
@@ -144,7 +144,7 @@ class ListPtrRecordsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPtrRecordsRequest.
+        r"""Gets the enterprise_project_id of this ListPtrRecordsRequest.
 
         反向解析关联的企业项目ID，长度不超过36个字符。
 
@@ -155,7 +155,7 @@ class ListPtrRecordsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPtrRecordsRequest.
+        r"""Sets the enterprise_project_id of this ListPtrRecordsRequest.
 
         反向解析关联的企业项目ID，长度不超过36个字符。
 
@@ -166,7 +166,7 @@ class ListPtrRecordsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListPtrRecordsRequest.
+        r"""Gets the tags of this ListPtrRecordsRequest.
 
         资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
 
@@ -177,7 +177,7 @@ class ListPtrRecordsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListPtrRecordsRequest.
+        r"""Sets the tags of this ListPtrRecordsRequest.
 
         资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
 
@@ -188,7 +188,7 @@ class ListPtrRecordsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListPtrRecordsRequest.
+        r"""Gets the status of this ListPtrRecordsRequest.
 
         资源状态。
 
@@ -199,7 +199,7 @@ class ListPtrRecordsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPtrRecordsRequest.
+        r"""Sets the status of this ListPtrRecordsRequest.
 
         资源状态。
 

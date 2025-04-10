@@ -37,7 +37,7 @@ class ShowTestCaseAndDefectInfoRequestBody:
     }
 
     def __init__(self, offset=None, limit=None, branch_id=None, create_testcase_start_time=None, create_testcase_end_time=None, associate_defect_start_time=None, associate_defect_end_time=None):
-        """ShowTestCaseAndDefectInfoRequestBody
+        r"""ShowTestCaseAndDefectInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class ShowTestCaseAndDefectInfoRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowTestCaseAndDefectInfoRequestBody.
+        r"""Gets the offset of this ShowTestCaseAndDefectInfoRequestBody.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -92,7 +92,7 @@ class ShowTestCaseAndDefectInfoRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowTestCaseAndDefectInfoRequestBody.
+        r"""Sets the offset of this ShowTestCaseAndDefectInfoRequestBody.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于100000
 
@@ -103,7 +103,7 @@ class ShowTestCaseAndDefectInfoRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowTestCaseAndDefectInfoRequestBody.
+        r"""Gets the limit of this ShowTestCaseAndDefectInfoRequestBody.
 
         每页显示的条目数量,最大支持100条
 
@@ -114,7 +114,7 @@ class ShowTestCaseAndDefectInfoRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowTestCaseAndDefectInfoRequestBody.
+        r"""Sets the limit of this ShowTestCaseAndDefectInfoRequestBody.
 
         每页显示的条目数量,最大支持100条
 
@@ -125,7 +125,7 @@ class ShowTestCaseAndDefectInfoRequestBody:
 
     @property
     def branch_id(self):
-        """Gets the branch_id of this ShowTestCaseAndDefectInfoRequestBody.
+        r"""Gets the branch_id of this ShowTestCaseAndDefectInfoRequestBody.
 
         分支ID
 
@@ -136,7 +136,7 @@ class ShowTestCaseAndDefectInfoRequestBody:
 
     @branch_id.setter
     def branch_id(self, branch_id):
-        """Sets the branch_id of this ShowTestCaseAndDefectInfoRequestBody.
+        r"""Sets the branch_id of this ShowTestCaseAndDefectInfoRequestBody.
 
         分支ID
 
@@ -147,7 +147,7 @@ class ShowTestCaseAndDefectInfoRequestBody:
 
     @property
     def create_testcase_start_time(self):
-        """Gets the create_testcase_start_time of this ShowTestCaseAndDefectInfoRequestBody.
+        r"""Gets the create_testcase_start_time of this ShowTestCaseAndDefectInfoRequestBody.
 
         用例创建时间段开始
 
@@ -158,7 +158,7 @@ class ShowTestCaseAndDefectInfoRequestBody:
 
     @create_testcase_start_time.setter
     def create_testcase_start_time(self, create_testcase_start_time):
-        """Sets the create_testcase_start_time of this ShowTestCaseAndDefectInfoRequestBody.
+        r"""Sets the create_testcase_start_time of this ShowTestCaseAndDefectInfoRequestBody.
 
         用例创建时间段开始
 
@@ -169,7 +169,7 @@ class ShowTestCaseAndDefectInfoRequestBody:
 
     @property
     def create_testcase_end_time(self):
-        """Gets the create_testcase_end_time of this ShowTestCaseAndDefectInfoRequestBody.
+        r"""Gets the create_testcase_end_time of this ShowTestCaseAndDefectInfoRequestBody.
 
         用例创建时间段截止
 
@@ -180,7 +180,7 @@ class ShowTestCaseAndDefectInfoRequestBody:
 
     @create_testcase_end_time.setter
     def create_testcase_end_time(self, create_testcase_end_time):
-        """Sets the create_testcase_end_time of this ShowTestCaseAndDefectInfoRequestBody.
+        r"""Sets the create_testcase_end_time of this ShowTestCaseAndDefectInfoRequestBody.
 
         用例创建时间段截止
 
@@ -191,7 +191,7 @@ class ShowTestCaseAndDefectInfoRequestBody:
 
     @property
     def associate_defect_start_time(self):
-        """Gets the associate_defect_start_time of this ShowTestCaseAndDefectInfoRequestBody.
+        r"""Gets the associate_defect_start_time of this ShowTestCaseAndDefectInfoRequestBody.
 
         缺陷关联时间段开始
 
@@ -202,7 +202,7 @@ class ShowTestCaseAndDefectInfoRequestBody:
 
     @associate_defect_start_time.setter
     def associate_defect_start_time(self, associate_defect_start_time):
-        """Sets the associate_defect_start_time of this ShowTestCaseAndDefectInfoRequestBody.
+        r"""Sets the associate_defect_start_time of this ShowTestCaseAndDefectInfoRequestBody.
 
         缺陷关联时间段开始
 
@@ -213,7 +213,7 @@ class ShowTestCaseAndDefectInfoRequestBody:
 
     @property
     def associate_defect_end_time(self):
-        """Gets the associate_defect_end_time of this ShowTestCaseAndDefectInfoRequestBody.
+        r"""Gets the associate_defect_end_time of this ShowTestCaseAndDefectInfoRequestBody.
 
         缺陷关联时间段截止
 
@@ -224,7 +224,7 @@ class ShowTestCaseAndDefectInfoRequestBody:
 
     @associate_defect_end_time.setter
     def associate_defect_end_time(self, associate_defect_end_time):
-        """Sets the associate_defect_end_time of this ShowTestCaseAndDefectInfoRequestBody.
+        r"""Sets the associate_defect_end_time of this ShowTestCaseAndDefectInfoRequestBody.
 
         缺陷关联时间段截止
 

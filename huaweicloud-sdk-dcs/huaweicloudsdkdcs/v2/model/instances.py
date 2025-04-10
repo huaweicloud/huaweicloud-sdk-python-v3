@@ -27,7 +27,7 @@ class Instances:
     }
 
     def __init__(self, instance_id=None, instance_name=None):
-        """Instances
+        r"""Instances
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Instances:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this Instances.
+        r"""Gets the instance_id of this Instances.
 
         缓存实例ID。
 
@@ -61,7 +61,7 @@ class Instances:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this Instances.
+        r"""Sets the instance_id of this Instances.
 
         缓存实例ID。
 
@@ -72,7 +72,7 @@ class Instances:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this Instances.
+        r"""Gets the instance_name of this Instances.
 
         缓存实例名称。
 
@@ -83,7 +83,7 @@ class Instances:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this Instances.
+        r"""Sets the instance_name of this Instances.
 
         缓存实例名称。
 

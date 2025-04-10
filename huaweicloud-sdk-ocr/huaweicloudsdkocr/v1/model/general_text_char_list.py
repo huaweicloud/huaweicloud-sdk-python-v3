@@ -29,7 +29,7 @@ class GeneralTextCharList:
     }
 
     def __init__(self, char=None, char_location=None, char_confidence=None):
-        """GeneralTextCharList
+        r"""GeneralTextCharList
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GeneralTextCharList:
 
     @property
     def char(self):
-        """Gets the char of this GeneralTextCharList.
+        r"""Gets the char of this GeneralTextCharList.
 
         单字符识别结果。 
 
@@ -68,7 +68,7 @@ class GeneralTextCharList:
 
     @char.setter
     def char(self, char):
-        """Sets the char of this GeneralTextCharList.
+        r"""Sets the char of this GeneralTextCharList.
 
         单字符识别结果。 
 
@@ -79,7 +79,7 @@ class GeneralTextCharList:
 
     @property
     def char_location(self):
-        """Gets the char_location of this GeneralTextCharList.
+        r"""Gets the char_location of this GeneralTextCharList.
 
         单字符的区域位置信息，列表形式，包含字符区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -90,7 +90,7 @@ class GeneralTextCharList:
 
     @char_location.setter
     def char_location(self, char_location):
-        """Sets the char_location of this GeneralTextCharList.
+        r"""Sets the char_location of this GeneralTextCharList.
 
         单字符的区域位置信息，列表形式，包含字符区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -101,7 +101,7 @@ class GeneralTextCharList:
 
     @property
     def char_confidence(self):
-        """Gets the char_confidence of this GeneralTextCharList.
+        r"""Gets the char_confidence of this GeneralTextCharList.
 
         单字符识别结果的置信度。 
 
@@ -112,7 +112,7 @@ class GeneralTextCharList:
 
     @char_confidence.setter
     def char_confidence(self, char_confidence):
-        """Sets the char_confidence of this GeneralTextCharList.
+        r"""Sets the char_confidence of this GeneralTextCharList.
 
         单字符识别结果的置信度。 
 

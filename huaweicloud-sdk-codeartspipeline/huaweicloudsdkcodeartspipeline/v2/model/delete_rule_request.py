@@ -27,7 +27,7 @@ class DeleteRuleRequest:
     }
 
     def __init__(self, domain_id=None, rule_id=None):
-        """DeleteRuleRequest
+        r"""DeleteRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteRuleRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DeleteRuleRequest.
+        r"""Gets the domain_id of this DeleteRuleRequest.
 
         租户ID
 
@@ -59,7 +59,7 @@ class DeleteRuleRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DeleteRuleRequest.
+        r"""Sets the domain_id of this DeleteRuleRequest.
 
         租户ID
 
@@ -70,7 +70,7 @@ class DeleteRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this DeleteRuleRequest.
+        r"""Gets the rule_id of this DeleteRuleRequest.
 
         规则ID
 
@@ -81,7 +81,7 @@ class DeleteRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this DeleteRuleRequest.
+        r"""Sets the rule_id of this DeleteRuleRequest.
 
         规则ID
 

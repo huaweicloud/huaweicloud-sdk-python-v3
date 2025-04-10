@@ -25,7 +25,7 @@ class PoliciesDisplayOptionsVideoBitRateOptions:
     }
 
     def __init__(self, average_video_bit_rate=None):
-        """PoliciesDisplayOptionsVideoBitRateOptions
+        r"""PoliciesDisplayOptionsVideoBitRateOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PoliciesDisplayOptionsVideoBitRateOptions:
 
     @property
     def average_video_bit_rate(self):
-        """Gets the average_video_bit_rate of this PoliciesDisplayOptionsVideoBitRateOptions.
+        r"""Gets the average_video_bit_rate of this PoliciesDisplayOptionsVideoBitRateOptions.
 
         视频平均码率（Kbps）。取值范围为[256-100000]。默认：18000。
 
@@ -54,7 +54,7 @@ class PoliciesDisplayOptionsVideoBitRateOptions:
 
     @average_video_bit_rate.setter
     def average_video_bit_rate(self, average_video_bit_rate):
-        """Sets the average_video_bit_rate of this PoliciesDisplayOptionsVideoBitRateOptions.
+        r"""Sets the average_video_bit_rate of this PoliciesDisplayOptionsVideoBitRateOptions.
 
         视频平均码率（Kbps）。取值范围为[256-100000]。默认：18000。
 

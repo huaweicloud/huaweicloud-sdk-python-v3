@@ -25,7 +25,7 @@ class UpdatePubInfoResponseModel:
     }
 
     def __init__(self, data=None):
-        """UpdatePubInfoResponseModel
+        r"""UpdatePubInfoResponseModel
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdatePubInfoResponseModel:
 
     @property
     def data(self):
-        """Gets the data of this UpdatePubInfoResponseModel.
+        r"""Gets the data of this UpdatePubInfoResponseModel.
 
         :return: The data of this UpdatePubInfoResponseModel.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdatePubInfoResponseModelData`
@@ -52,7 +52,7 @@ class UpdatePubInfoResponseModel:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdatePubInfoResponseModel.
+        r"""Sets the data of this UpdatePubInfoResponseModel.
 
         :param data: The data of this UpdatePubInfoResponseModel.
         :type data: :class:`huaweicloudsdkkoomessage.v1.UpdatePubInfoResponseModelData`

@@ -29,7 +29,7 @@ class CreateMultiTaskMappingsRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None, body=None):
-        """CreateMultiTaskMappingsRequest
+        r"""CreateMultiTaskMappingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateMultiTaskMappingsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateMultiTaskMappingsRequest.
+        r"""Gets the instance_id of this CreateMultiTaskMappingsRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class CreateMultiTaskMappingsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateMultiTaskMappingsRequest.
+        r"""Sets the instance_id of this CreateMultiTaskMappingsRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class CreateMultiTaskMappingsRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateMultiTaskMappingsRequest.
+        r"""Gets the task_id of this CreateMultiTaskMappingsRequest.
 
         任务ID
 
@@ -88,7 +88,7 @@ class CreateMultiTaskMappingsRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateMultiTaskMappingsRequest.
+        r"""Sets the task_id of this CreateMultiTaskMappingsRequest.
 
         任务ID
 
@@ -99,7 +99,7 @@ class CreateMultiTaskMappingsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMultiTaskMappingsRequest.
+        r"""Gets the body of this CreateMultiTaskMappingsRequest.
 
         :return: The body of this CreateMultiTaskMappingsRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.MultiTaskMappingCreateBody`
@@ -108,7 +108,7 @@ class CreateMultiTaskMappingsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMultiTaskMappingsRequest.
+        r"""Sets the body of this CreateMultiTaskMappingsRequest.
 
         :param body: The body of this CreateMultiTaskMappingsRequest.
         :type body: :class:`huaweicloudsdkroma.v2.MultiTaskMappingCreateBody`

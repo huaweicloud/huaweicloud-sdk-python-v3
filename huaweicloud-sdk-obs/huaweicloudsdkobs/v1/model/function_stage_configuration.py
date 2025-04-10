@@ -35,7 +35,7 @@ class FunctionStageConfiguration:
     }
 
     def __init__(self, id=None, filter=None, topic=None, event=None, function_stage=None):
-        """FunctionStageConfiguration
+        r"""FunctionStageConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class FunctionStageConfiguration:
 
     @property
     def id(self):
-        """Gets the id of this FunctionStageConfiguration.
+        r"""Gets the id of this FunctionStageConfiguration.
 
         Unique ID of each event notification. If you do not specify an ID, the system assigns one.
 
@@ -84,7 +84,7 @@ class FunctionStageConfiguration:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FunctionStageConfiguration.
+        r"""Sets the id of this FunctionStageConfiguration.
 
         Unique ID of each event notification. If you do not specify an ID, the system assigns one.
 
@@ -95,7 +95,7 @@ class FunctionStageConfiguration:
 
     @property
     def filter(self):
-        """Gets the filter of this FunctionStageConfiguration.
+        r"""Gets the filter of this FunctionStageConfiguration.
 
         :return: The filter of this FunctionStageConfiguration.
         :rtype: :class:`huaweicloudsdkobs.v1.TopicConfigurationFilter`
@@ -104,7 +104,7 @@ class FunctionStageConfiguration:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this FunctionStageConfiguration.
+        r"""Sets the filter of this FunctionStageConfiguration.
 
         :param filter: The filter of this FunctionStageConfiguration.
         :type filter: :class:`huaweicloudsdkobs.v1.TopicConfigurationFilter`
@@ -113,7 +113,7 @@ class FunctionStageConfiguration:
 
     @property
     def topic(self):
-        """Gets the topic of this FunctionStageConfiguration.
+        r"""Gets the topic of this FunctionStageConfiguration.
 
         URN of the event notification topic. When OBS detects a specific event in a bucket, it publishes a notification message to this topic. You can find the topic's URN on the [Topics](https://console-intl.huaweicloud.com/smn/?agencyId=7b00025342f14bcabb245478269c6593&region=cn-east-3&locale=en-us#/topics/list) page of the SMN console. Template: <Topic>urn:smn:region:project_id:smn_topic</Topic>
 
@@ -124,7 +124,7 @@ class FunctionStageConfiguration:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this FunctionStageConfiguration.
+        r"""Sets the topic of this FunctionStageConfiguration.
 
         URN of the event notification topic. When OBS detects a specific event in a bucket, it publishes a notification message to this topic. You can find the topic's URN on the [Topics](https://console-intl.huaweicloud.com/smn/?agencyId=7b00025342f14bcabb245478269c6593&region=cn-east-3&locale=en-us#/topics/list) page of the SMN console. Template: <Topic>urn:smn:region:project_id:smn_topic</Topic>
 
@@ -135,7 +135,7 @@ class FunctionStageConfiguration:
 
     @property
     def event(self):
-        """Gets the event of this FunctionStageConfiguration.
+        r"""Gets the event of this FunctionStageConfiguration.
 
         Event types for which OBS sends notifications to users. Multiple event types can be added in one **TopicConfiguration** or **FunctionGraphConfiguration** item. Value options: Choose from the following for object upload operations: ObjectCreated:Put ObjectCreated:Post ObjectCreated:Copy ObjectCreated:CompleteMultipartUpload  Or use a wildcard character to support all upload operations: ObjectCreated:*  Choose from the following for object delete operations: ObjectRemoved:Delete ObjectRemoved:DeleteMarkerCreated  Or use a wildcard character to support all delete operations: ObjectRemoved:*
 
@@ -146,7 +146,7 @@ class FunctionStageConfiguration:
 
     @event.setter
     def event(self, event):
-        """Sets the event of this FunctionStageConfiguration.
+        r"""Sets the event of this FunctionStageConfiguration.
 
         Event types for which OBS sends notifications to users. Multiple event types can be added in one **TopicConfiguration** or **FunctionGraphConfiguration** item. Value options: Choose from the following for object upload operations: ObjectCreated:Put ObjectCreated:Post ObjectCreated:Copy ObjectCreated:CompleteMultipartUpload  Or use a wildcard character to support all upload operations: ObjectCreated:*  Choose from the following for object delete operations: ObjectRemoved:Delete ObjectRemoved:DeleteMarkerCreated  Or use a wildcard character to support all delete operations: ObjectRemoved:*
 
@@ -157,7 +157,7 @@ class FunctionStageConfiguration:
 
     @property
     def function_stage(self):
-        """Gets the function_stage of this FunctionStageConfiguration.
+        r"""Gets the function_stage of this FunctionStageConfiguration.
 
         URN of a function in the function service. When OBS detects a specific event in the bucket, it sends a message to the function service to call this function. This element is required if **FunctionStageConfiguration** is added
 
@@ -168,7 +168,7 @@ class FunctionStageConfiguration:
 
     @function_stage.setter
     def function_stage(self, function_stage):
-        """Sets the function_stage of this FunctionStageConfiguration.
+        r"""Sets the function_stage of this FunctionStageConfiguration.
 
         URN of a function in the function service. When OBS detects a specific event in the bucket, it sends a message to the function service to call this function. This element is required if **FunctionStageConfiguration** is added
 

@@ -27,7 +27,7 @@ class ShowParameterGroupDetailRequest:
     }
 
     def __init__(self, x_language=None, config_id=None):
-        """ShowParameterGroupDetailRequest
+        r"""ShowParameterGroupDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowParameterGroupDetailRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowParameterGroupDetailRequest.
+        r"""Gets the x_language of this ShowParameterGroupDetailRequest.
 
         语言,默认：en-us。
 
@@ -60,7 +60,7 @@ class ShowParameterGroupDetailRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowParameterGroupDetailRequest.
+        r"""Sets the x_language of this ShowParameterGroupDetailRequest.
 
         语言,默认：en-us。
 
@@ -71,7 +71,7 @@ class ShowParameterGroupDetailRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this ShowParameterGroupDetailRequest.
+        r"""Gets the config_id of this ShowParameterGroupDetailRequest.
 
         参数模板ID
 
@@ -82,7 +82,7 @@ class ShowParameterGroupDetailRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this ShowParameterGroupDetailRequest.
+        r"""Sets the config_id of this ShowParameterGroupDetailRequest.
 
         参数模板ID
 

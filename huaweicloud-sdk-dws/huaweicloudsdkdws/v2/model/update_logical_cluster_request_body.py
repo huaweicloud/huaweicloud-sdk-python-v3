@@ -29,7 +29,7 @@ class UpdateLogicalClusterRequestBody:
     }
 
     def __init__(self, cluster_rings=None, mode=None, waiting_for_killing=None):
-        """UpdateLogicalClusterRequestBody
+        r"""UpdateLogicalClusterRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateLogicalClusterRequestBody:
 
     @property
     def cluster_rings(self):
-        """Gets the cluster_rings of this UpdateLogicalClusterRequestBody.
+        r"""Gets the cluster_rings of this UpdateLogicalClusterRequestBody.
 
         逻辑集群编辑环列表信息
 
@@ -67,7 +67,7 @@ class UpdateLogicalClusterRequestBody:
 
     @cluster_rings.setter
     def cluster_rings(self, cluster_rings):
-        """Sets the cluster_rings of this UpdateLogicalClusterRequestBody.
+        r"""Sets the cluster_rings of this UpdateLogicalClusterRequestBody.
 
         逻辑集群编辑环列表信息
 
@@ -78,7 +78,7 @@ class UpdateLogicalClusterRequestBody:
 
     @property
     def mode(self):
-        """Gets the mode of this UpdateLogicalClusterRequestBody.
+        r"""Gets the mode of this UpdateLogicalClusterRequestBody.
 
         模式
 
@@ -89,7 +89,7 @@ class UpdateLogicalClusterRequestBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this UpdateLogicalClusterRequestBody.
+        r"""Sets the mode of this UpdateLogicalClusterRequestBody.
 
         模式
 
@@ -100,7 +100,7 @@ class UpdateLogicalClusterRequestBody:
 
     @property
     def waiting_for_killing(self):
-        """Gets the waiting_for_killing of this UpdateLogicalClusterRequestBody.
+        r"""Gets the waiting_for_killing of this UpdateLogicalClusterRequestBody.
 
         是否等待销毁
 
@@ -111,7 +111,7 @@ class UpdateLogicalClusterRequestBody:
 
     @waiting_for_killing.setter
     def waiting_for_killing(self, waiting_for_killing):
-        """Sets the waiting_for_killing of this UpdateLogicalClusterRequestBody.
+        r"""Sets the waiting_for_killing of this UpdateLogicalClusterRequestBody.
 
         是否等待销毁
 

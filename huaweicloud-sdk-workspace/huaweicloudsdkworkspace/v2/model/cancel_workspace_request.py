@@ -23,7 +23,7 @@ class CancelWorkspaceRequest:
     }
 
     def __init__(self):
-        """CancelWorkspaceRequest
+        r"""CancelWorkspaceRequest
 
         The model defined in huaweicloud sdk
 

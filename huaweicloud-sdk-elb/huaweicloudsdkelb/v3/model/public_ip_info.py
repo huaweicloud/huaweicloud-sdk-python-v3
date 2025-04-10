@@ -29,7 +29,7 @@ class PublicIpInfo:
     }
 
     def __init__(self, publicip_id=None, publicip_address=None, ip_version=None):
-        """PublicIpInfo
+        r"""PublicIpInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PublicIpInfo:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this PublicIpInfo.
+        r"""Gets the publicip_id of this PublicIpInfo.
 
         参数解释：弹性公网ip配置id
 
@@ -65,7 +65,7 @@ class PublicIpInfo:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this PublicIpInfo.
+        r"""Sets the publicip_id of this PublicIpInfo.
 
         参数解释：弹性公网ip配置id
 
@@ -76,7 +76,7 @@ class PublicIpInfo:
 
     @property
     def publicip_address(self):
-        """Gets the publicip_address of this PublicIpInfo.
+        r"""Gets the publicip_address of this PublicIpInfo.
 
         参数解释：IP地址
 
@@ -87,7 +87,7 @@ class PublicIpInfo:
 
     @publicip_address.setter
     def publicip_address(self, publicip_address):
-        """Sets the publicip_address of this PublicIpInfo.
+        r"""Sets the publicip_address of this PublicIpInfo.
 
         参数解释：IP地址
 
@@ -98,7 +98,7 @@ class PublicIpInfo:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this PublicIpInfo.
+        r"""Gets the ip_version of this PublicIpInfo.
 
         参数解释：IP版本信息。  取值范围：4和6 4：IPv4 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt)
 
@@ -109,7 +109,7 @@ class PublicIpInfo:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this PublicIpInfo.
+        r"""Sets the ip_version of this PublicIpInfo.
 
         参数解释：IP版本信息。  取值范围：4和6 4：IPv4 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt)
 

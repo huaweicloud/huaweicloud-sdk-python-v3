@@ -53,7 +53,7 @@ class TrafficMirrorFilterRule:
     }
 
     def __init__(self, id=None, project_id=None, description=None, traffic_mirror_filter_id=None, direction=None, source_cidr_block=None, destination_cidr_block=None, source_port_range=None, destination_port_range=None, ethertype=None, protocol=None, action=None, priority=None, created_at=None, updated_at=None):
-        """TrafficMirrorFilterRule
+        r"""TrafficMirrorFilterRule
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class TrafficMirrorFilterRule:
 
     @property
     def id(self):
-        """Gets the id of this TrafficMirrorFilterRule.
+        r"""Gets the id of this TrafficMirrorFilterRule.
 
         功能说明：流量镜像筛选规则ID
 
@@ -137,7 +137,7 @@ class TrafficMirrorFilterRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TrafficMirrorFilterRule.
+        r"""Sets the id of this TrafficMirrorFilterRule.
 
         功能说明：流量镜像筛选规则ID
 
@@ -148,7 +148,7 @@ class TrafficMirrorFilterRule:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TrafficMirrorFilterRule.
+        r"""Gets the project_id of this TrafficMirrorFilterRule.
 
         功能说明：项目ID
 
@@ -159,7 +159,7 @@ class TrafficMirrorFilterRule:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TrafficMirrorFilterRule.
+        r"""Sets the project_id of this TrafficMirrorFilterRule.
 
         功能说明：项目ID
 
@@ -170,7 +170,7 @@ class TrafficMirrorFilterRule:
 
     @property
     def description(self):
-        """Gets the description of this TrafficMirrorFilterRule.
+        r"""Gets the description of this TrafficMirrorFilterRule.
 
         功能说明：流量镜像筛选规则的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -181,7 +181,7 @@ class TrafficMirrorFilterRule:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TrafficMirrorFilterRule.
+        r"""Sets the description of this TrafficMirrorFilterRule.
 
         功能说明：流量镜像筛选规则的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -192,7 +192,7 @@ class TrafficMirrorFilterRule:
 
     @property
     def traffic_mirror_filter_id(self):
-        """Gets the traffic_mirror_filter_id of this TrafficMirrorFilterRule.
+        r"""Gets the traffic_mirror_filter_id of this TrafficMirrorFilterRule.
 
         功能说明：流量镜像筛选条件ID
 
@@ -203,7 +203,7 @@ class TrafficMirrorFilterRule:
 
     @traffic_mirror_filter_id.setter
     def traffic_mirror_filter_id(self, traffic_mirror_filter_id):
-        """Sets the traffic_mirror_filter_id of this TrafficMirrorFilterRule.
+        r"""Sets the traffic_mirror_filter_id of this TrafficMirrorFilterRule.
 
         功能说明：流量镜像筛选条件ID
 
@@ -214,7 +214,7 @@ class TrafficMirrorFilterRule:
 
     @property
     def direction(self):
-        """Gets the direction of this TrafficMirrorFilterRule.
+        r"""Gets the direction of this TrafficMirrorFilterRule.
 
         功能说明：流量方向 取值范围：     ingress：入方向     egress：出方向
 
@@ -225,7 +225,7 @@ class TrafficMirrorFilterRule:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this TrafficMirrorFilterRule.
+        r"""Sets the direction of this TrafficMirrorFilterRule.
 
         功能说明：流量方向 取值范围：     ingress：入方向     egress：出方向
 
@@ -236,7 +236,7 @@ class TrafficMirrorFilterRule:
 
     @property
     def source_cidr_block(self):
-        """Gets the source_cidr_block of this TrafficMirrorFilterRule.
+        r"""Gets the source_cidr_block of this TrafficMirrorFilterRule.
 
         功能说明：镜像流量的源网段
 
@@ -247,7 +247,7 @@ class TrafficMirrorFilterRule:
 
     @source_cidr_block.setter
     def source_cidr_block(self, source_cidr_block):
-        """Sets the source_cidr_block of this TrafficMirrorFilterRule.
+        r"""Sets the source_cidr_block of this TrafficMirrorFilterRule.
 
         功能说明：镜像流量的源网段
 
@@ -258,7 +258,7 @@ class TrafficMirrorFilterRule:
 
     @property
     def destination_cidr_block(self):
-        """Gets the destination_cidr_block of this TrafficMirrorFilterRule.
+        r"""Gets the destination_cidr_block of this TrafficMirrorFilterRule.
 
         功能说明：镜像流量的目的网段
 
@@ -269,7 +269,7 @@ class TrafficMirrorFilterRule:
 
     @destination_cidr_block.setter
     def destination_cidr_block(self, destination_cidr_block):
-        """Sets the destination_cidr_block of this TrafficMirrorFilterRule.
+        r"""Sets the destination_cidr_block of this TrafficMirrorFilterRule.
 
         功能说明：镜像流量的目的网段
 
@@ -280,7 +280,7 @@ class TrafficMirrorFilterRule:
 
     @property
     def source_port_range(self):
-        """Gets the source_port_range of this TrafficMirrorFilterRule.
+        r"""Gets the source_port_range of this TrafficMirrorFilterRule.
 
         功能说明：流量源端口范围 取值范围：1~65535 格式：80-200
 
@@ -291,7 +291,7 @@ class TrafficMirrorFilterRule:
 
     @source_port_range.setter
     def source_port_range(self, source_port_range):
-        """Sets the source_port_range of this TrafficMirrorFilterRule.
+        r"""Sets the source_port_range of this TrafficMirrorFilterRule.
 
         功能说明：流量源端口范围 取值范围：1~65535 格式：80-200
 
@@ -302,7 +302,7 @@ class TrafficMirrorFilterRule:
 
     @property
     def destination_port_range(self):
-        """Gets the destination_port_range of this TrafficMirrorFilterRule.
+        r"""Gets the destination_port_range of this TrafficMirrorFilterRule.
 
         功能说明：流量目的端口范围 取值范围：1~65535 格式：80-200
 
@@ -313,7 +313,7 @@ class TrafficMirrorFilterRule:
 
     @destination_port_range.setter
     def destination_port_range(self, destination_port_range):
-        """Sets the destination_port_range of this TrafficMirrorFilterRule.
+        r"""Sets the destination_port_range of this TrafficMirrorFilterRule.
 
         功能说明：流量目的端口范围 取值范围：1~65535 格式：80-200
 
@@ -324,7 +324,7 @@ class TrafficMirrorFilterRule:
 
     @property
     def ethertype(self):
-        """Gets the ethertype of this TrafficMirrorFilterRule.
+        r"""Gets the ethertype of this TrafficMirrorFilterRule.
 
         功能说明：镜像流量的地址协议版本 取值范围：IPv4，IPv6
 
@@ -335,7 +335,7 @@ class TrafficMirrorFilterRule:
 
     @ethertype.setter
     def ethertype(self, ethertype):
-        """Sets the ethertype of this TrafficMirrorFilterRule.
+        r"""Sets the ethertype of this TrafficMirrorFilterRule.
 
         功能说明：镜像流量的地址协议版本 取值范围：IPv4，IPv6
 
@@ -346,7 +346,7 @@ class TrafficMirrorFilterRule:
 
     @property
     def protocol(self):
-        """Gets the protocol of this TrafficMirrorFilterRule.
+        r"""Gets the protocol of this TrafficMirrorFilterRule.
 
         功能说明：镜像流量的协议类型 取值范围：TCP、UDP、ICMP、ICMPV6、ALL
 
@@ -357,7 +357,7 @@ class TrafficMirrorFilterRule:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this TrafficMirrorFilterRule.
+        r"""Sets the protocol of this TrafficMirrorFilterRule.
 
         功能说明：镜像流量的协议类型 取值范围：TCP、UDP、ICMP、ICMPV6、ALL
 
@@ -368,7 +368,7 @@ class TrafficMirrorFilterRule:
 
     @property
     def action(self):
-        """Gets the action of this TrafficMirrorFilterRule.
+        r"""Gets the action of this TrafficMirrorFilterRule.
 
         功能说明：镜像策略 取值范围：accept（采集）、reject（不采集）
 
@@ -379,7 +379,7 @@ class TrafficMirrorFilterRule:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this TrafficMirrorFilterRule.
+        r"""Sets the action of this TrafficMirrorFilterRule.
 
         功能说明：镜像策略 取值范围：accept（采集）、reject（不采集）
 
@@ -390,7 +390,7 @@ class TrafficMirrorFilterRule:
 
     @property
     def priority(self):
-        """Gets the priority of this TrafficMirrorFilterRule.
+        r"""Gets the priority of this TrafficMirrorFilterRule.
 
         功能说明：镜像规则优先级 取值范围：1~65535，数字越小，优先级越高
 
@@ -401,7 +401,7 @@ class TrafficMirrorFilterRule:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this TrafficMirrorFilterRule.
+        r"""Sets the priority of this TrafficMirrorFilterRule.
 
         功能说明：镜像规则优先级 取值范围：1~65535，数字越小，优先级越高
 
@@ -412,7 +412,7 @@ class TrafficMirrorFilterRule:
 
     @property
     def created_at(self):
-        """Gets the created_at of this TrafficMirrorFilterRule.
+        r"""Gets the created_at of this TrafficMirrorFilterRule.
 
         创建时间戳
 
@@ -423,7 +423,7 @@ class TrafficMirrorFilterRule:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this TrafficMirrorFilterRule.
+        r"""Sets the created_at of this TrafficMirrorFilterRule.
 
         创建时间戳
 
@@ -434,7 +434,7 @@ class TrafficMirrorFilterRule:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this TrafficMirrorFilterRule.
+        r"""Gets the updated_at of this TrafficMirrorFilterRule.
 
         更新时间戳
 
@@ -445,7 +445,7 @@ class TrafficMirrorFilterRule:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this TrafficMirrorFilterRule.
+        r"""Sets the updated_at of this TrafficMirrorFilterRule.
 
         更新时间戳
 

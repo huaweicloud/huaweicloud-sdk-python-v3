@@ -26,7 +26,7 @@ class StartReverseProtectionGroupResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """StartReverseProtectionGroupResponse
+        r"""StartReverseProtectionGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StartReverseProtectionGroupResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this StartReverseProtectionGroupResponse.
+        r"""Gets the job_id of this StartReverseProtectionGroupResponse.
 
         成功返回jobId信息
 
@@ -55,7 +55,7 @@ class StartReverseProtectionGroupResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StartReverseProtectionGroupResponse.
+        r"""Sets the job_id of this StartReverseProtectionGroupResponse.
 
         成功返回jobId信息
 

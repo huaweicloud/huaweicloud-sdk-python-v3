@@ -31,7 +31,7 @@ class PermissionItem:
     }
 
     def __init__(self, perm_name=None, desc=None, pro_level_name=None, perm_type_name=None):
-        """PermissionItem
+        r"""PermissionItem
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PermissionItem:
 
     @property
     def perm_name(self):
-        """Gets the perm_name of this PermissionItem.
+        r"""Gets the perm_name of this PermissionItem.
 
         权限名称
 
@@ -75,7 +75,7 @@ class PermissionItem:
 
     @perm_name.setter
     def perm_name(self, perm_name):
-        """Sets the perm_name of this PermissionItem.
+        r"""Sets the perm_name of this PermissionItem.
 
         权限名称
 
@@ -86,7 +86,7 @@ class PermissionItem:
 
     @property
     def desc(self):
-        """Gets the desc of this PermissionItem.
+        r"""Gets the desc of this PermissionItem.
 
         权限描述
 
@@ -97,7 +97,7 @@ class PermissionItem:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this PermissionItem.
+        r"""Sets the desc of this PermissionItem.
 
         权限描述
 
@@ -108,7 +108,7 @@ class PermissionItem:
 
     @property
     def pro_level_name(self):
-        """Gets the pro_level_name of this PermissionItem.
+        r"""Gets the pro_level_name of this PermissionItem.
 
         权限保护级别
 
@@ -119,7 +119,7 @@ class PermissionItem:
 
     @pro_level_name.setter
     def pro_level_name(self, pro_level_name):
-        """Sets the pro_level_name of this PermissionItem.
+        r"""Sets the pro_level_name of this PermissionItem.
 
         权限保护级别
 
@@ -130,7 +130,7 @@ class PermissionItem:
 
     @property
     def perm_type_name(self):
-        """Gets the perm_type_name of this PermissionItem.
+        r"""Gets the perm_type_name of this PermissionItem.
 
         权限类型
 
@@ -141,7 +141,7 @@ class PermissionItem:
 
     @perm_type_name.setter
     def perm_type_name(self, perm_type_name):
-        """Sets the perm_type_name of this PermissionItem.
+        r"""Sets the perm_type_name of this PermissionItem.
 
         权限类型
 

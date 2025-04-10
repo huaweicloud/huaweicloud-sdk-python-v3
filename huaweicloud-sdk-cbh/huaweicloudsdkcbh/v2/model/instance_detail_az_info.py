@@ -33,7 +33,7 @@ class InstanceDetailAzInfo:
     }
 
     def __init__(self, region=None, zone=None, availability_zone_display=None, slave_zone=None, slave_zone_display=None):
-        """InstanceDetailAzInfo
+        r"""InstanceDetailAzInfo
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class InstanceDetailAzInfo:
 
     @property
     def region(self):
-        """Gets the region of this InstanceDetailAzInfo.
+        r"""Gets the region of this InstanceDetailAzInfo.
 
         云堡垒机实例所在可用区ID。
 
@@ -79,7 +79,7 @@ class InstanceDetailAzInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this InstanceDetailAzInfo.
+        r"""Sets the region of this InstanceDetailAzInfo.
 
         云堡垒机实例所在可用区ID。
 
@@ -90,7 +90,7 @@ class InstanceDetailAzInfo:
 
     @property
     def zone(self):
-        """Gets the zone of this InstanceDetailAzInfo.
+        r"""Gets the zone of this InstanceDetailAzInfo.
 
         云堡垒机实例所在可用分区ID。(实例为主备模式时作为主机实例所在可用分区)
 
@@ -101,7 +101,7 @@ class InstanceDetailAzInfo:
 
     @zone.setter
     def zone(self, zone):
-        """Sets the zone of this InstanceDetailAzInfo.
+        r"""Sets the zone of this InstanceDetailAzInfo.
 
         云堡垒机实例所在可用分区ID。(实例为主备模式时作为主机实例所在可用分区)
 
@@ -112,7 +112,7 @@ class InstanceDetailAzInfo:
 
     @property
     def availability_zone_display(self):
-        """Gets the availability_zone_display of this InstanceDetailAzInfo.
+        r"""Gets the availability_zone_display of this InstanceDetailAzInfo.
 
         云堡垒机实例所在可用分区中文名称。(实例为主备模式时作为主机实例所在可用分区中文名称)
 
@@ -123,7 +123,7 @@ class InstanceDetailAzInfo:
 
     @availability_zone_display.setter
     def availability_zone_display(self, availability_zone_display):
-        """Sets the availability_zone_display of this InstanceDetailAzInfo.
+        r"""Sets the availability_zone_display of this InstanceDetailAzInfo.
 
         云堡垒机实例所在可用分区中文名称。(实例为主备模式时作为主机实例所在可用分区中文名称)
 
@@ -134,7 +134,7 @@ class InstanceDetailAzInfo:
 
     @property
     def slave_zone(self):
-        """Gets the slave_zone of this InstanceDetailAzInfo.
+        r"""Gets the slave_zone of this InstanceDetailAzInfo.
 
         云堡垒机备机实例所在可用区。
 
@@ -145,7 +145,7 @@ class InstanceDetailAzInfo:
 
     @slave_zone.setter
     def slave_zone(self, slave_zone):
-        """Sets the slave_zone of this InstanceDetailAzInfo.
+        r"""Sets the slave_zone of this InstanceDetailAzInfo.
 
         云堡垒机备机实例所在可用区。
 
@@ -156,7 +156,7 @@ class InstanceDetailAzInfo:
 
     @property
     def slave_zone_display(self):
-        """Gets the slave_zone_display of this InstanceDetailAzInfo.
+        r"""Gets the slave_zone_display of this InstanceDetailAzInfo.
 
         云堡垒机备机实例所在可用区中文名称。
 
@@ -167,7 +167,7 @@ class InstanceDetailAzInfo:
 
     @slave_zone_display.setter
     def slave_zone_display(self, slave_zone_display):
-        """Sets the slave_zone_display of this InstanceDetailAzInfo.
+        r"""Sets the slave_zone_display of this InstanceDetailAzInfo.
 
         云堡垒机备机实例所在可用区中文名称。
 

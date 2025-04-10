@@ -45,7 +45,7 @@ class AutoLaunchChangeResponseInfo:
     }
 
     def __init__(self, agent_id=None, variation_type=None, type=None, host_id=None, host_name=None, host_ip=None, path=None, hash=None, run_user=None, name=None, recent_scan_time=None):
-        """AutoLaunchChangeResponseInfo
+        r"""AutoLaunchChangeResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class AutoLaunchChangeResponseInfo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this AutoLaunchChangeResponseInfo.
+        r"""Gets the agent_id of this AutoLaunchChangeResponseInfo.
 
         Agent ID
 
@@ -124,7 +124,7 @@ class AutoLaunchChangeResponseInfo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this AutoLaunchChangeResponseInfo.
+        r"""Sets the agent_id of this AutoLaunchChangeResponseInfo.
 
         Agent ID
 
@@ -135,7 +135,7 @@ class AutoLaunchChangeResponseInfo:
 
     @property
     def variation_type(self):
-        """Gets the variation_type of this AutoLaunchChangeResponseInfo.
+        r"""Gets the variation_type of this AutoLaunchChangeResponseInfo.
 
         the type of change   - add ：新建   - delete ：删除   - modify ：修改
 
@@ -146,7 +146,7 @@ class AutoLaunchChangeResponseInfo:
 
     @variation_type.setter
     def variation_type(self, variation_type):
-        """Sets the variation_type of this AutoLaunchChangeResponseInfo.
+        r"""Sets the variation_type of this AutoLaunchChangeResponseInfo.
 
         the type of change   - add ：新建   - delete ：删除   - modify ：修改
 
@@ -157,7 +157,7 @@ class AutoLaunchChangeResponseInfo:
 
     @property
     def type(self):
-        """Gets the type of this AutoLaunchChangeResponseInfo.
+        r"""Gets the type of this AutoLaunchChangeResponseInfo.
 
         自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
@@ -168,7 +168,7 @@ class AutoLaunchChangeResponseInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AutoLaunchChangeResponseInfo.
+        r"""Sets the type of this AutoLaunchChangeResponseInfo.
 
         自启动项类型   - 0 ：自启动服务   - 1 ：定时任务   - 2 ：预加载动态库   - 3 ：Run注册表键   - 4 ：开机启动文件夹
 
@@ -179,7 +179,7 @@ class AutoLaunchChangeResponseInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this AutoLaunchChangeResponseInfo.
+        r"""Gets the host_id of this AutoLaunchChangeResponseInfo.
 
         host_id
 
@@ -190,7 +190,7 @@ class AutoLaunchChangeResponseInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this AutoLaunchChangeResponseInfo.
+        r"""Sets the host_id of this AutoLaunchChangeResponseInfo.
 
         host_id
 
@@ -201,7 +201,7 @@ class AutoLaunchChangeResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this AutoLaunchChangeResponseInfo.
+        r"""Gets the host_name of this AutoLaunchChangeResponseInfo.
 
         弹性服务器名称
 
@@ -212,7 +212,7 @@ class AutoLaunchChangeResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this AutoLaunchChangeResponseInfo.
+        r"""Sets the host_name of this AutoLaunchChangeResponseInfo.
 
         弹性服务器名称
 
@@ -223,7 +223,7 @@ class AutoLaunchChangeResponseInfo:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this AutoLaunchChangeResponseInfo.
+        r"""Gets the host_ip of this AutoLaunchChangeResponseInfo.
 
         主机IP
 
@@ -234,7 +234,7 @@ class AutoLaunchChangeResponseInfo:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this AutoLaunchChangeResponseInfo.
+        r"""Sets the host_ip of this AutoLaunchChangeResponseInfo.
 
         主机IP
 
@@ -245,7 +245,7 @@ class AutoLaunchChangeResponseInfo:
 
     @property
     def path(self):
-        """Gets the path of this AutoLaunchChangeResponseInfo.
+        r"""Gets the path of this AutoLaunchChangeResponseInfo.
 
         自启动项的路径
 
@@ -256,7 +256,7 @@ class AutoLaunchChangeResponseInfo:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this AutoLaunchChangeResponseInfo.
+        r"""Sets the path of this AutoLaunchChangeResponseInfo.
 
         自启动项的路径
 
@@ -267,7 +267,7 @@ class AutoLaunchChangeResponseInfo:
 
     @property
     def hash(self):
-        """Gets the hash of this AutoLaunchChangeResponseInfo.
+        r"""Gets the hash of this AutoLaunchChangeResponseInfo.
 
         采用sha256算法生成的文件hash值
 
@@ -278,7 +278,7 @@ class AutoLaunchChangeResponseInfo:
 
     @hash.setter
     def hash(self, hash):
-        """Sets the hash of this AutoLaunchChangeResponseInfo.
+        r"""Sets the hash of this AutoLaunchChangeResponseInfo.
 
         采用sha256算法生成的文件hash值
 
@@ -289,7 +289,7 @@ class AutoLaunchChangeResponseInfo:
 
     @property
     def run_user(self):
-        """Gets the run_user of this AutoLaunchChangeResponseInfo.
+        r"""Gets the run_user of this AutoLaunchChangeResponseInfo.
 
         运行用户
 
@@ -300,7 +300,7 @@ class AutoLaunchChangeResponseInfo:
 
     @run_user.setter
     def run_user(self, run_user):
-        """Sets the run_user of this AutoLaunchChangeResponseInfo.
+        r"""Sets the run_user of this AutoLaunchChangeResponseInfo.
 
         运行用户
 
@@ -311,7 +311,7 @@ class AutoLaunchChangeResponseInfo:
 
     @property
     def name(self):
-        """Gets the name of this AutoLaunchChangeResponseInfo.
+        r"""Gets the name of this AutoLaunchChangeResponseInfo.
 
         自启动项名称
 
@@ -322,7 +322,7 @@ class AutoLaunchChangeResponseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AutoLaunchChangeResponseInfo.
+        r"""Sets the name of this AutoLaunchChangeResponseInfo.
 
         自启动项名称
 
@@ -333,7 +333,7 @@ class AutoLaunchChangeResponseInfo:
 
     @property
     def recent_scan_time(self):
-        """Gets the recent_scan_time of this AutoLaunchChangeResponseInfo.
+        r"""Gets the recent_scan_time of this AutoLaunchChangeResponseInfo.
 
         最近更新时间，13位时间戳
 
@@ -344,7 +344,7 @@ class AutoLaunchChangeResponseInfo:
 
     @recent_scan_time.setter
     def recent_scan_time(self, recent_scan_time):
-        """Sets the recent_scan_time of this AutoLaunchChangeResponseInfo.
+        r"""Sets the recent_scan_time of this AutoLaunchChangeResponseInfo.
 
         最近更新时间，13位时间戳
 

@@ -26,7 +26,7 @@ class ListMembersResponse(SdkResponse):
     }
 
     def __init__(self, members=None):
-        """ListMembersResponse
+        r"""ListMembersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListMembersResponse(SdkResponse):
 
     @property
     def members(self):
-        """Gets the members of this ListMembersResponse.
+        r"""Gets the members of this ListMembersResponse.
 
         联盟成员列表
 
@@ -55,7 +55,7 @@ class ListMembersResponse(SdkResponse):
 
     @members.setter
     def members(self, members):
-        """Sets the members of this ListMembersResponse.
+        r"""Sets the members of this ListMembersResponse.
 
         联盟成员列表
 

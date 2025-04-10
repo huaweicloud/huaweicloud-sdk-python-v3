@@ -31,7 +31,7 @@ class MicroserviceApiCreate:
     }
 
     def __init__(self, name=None, req_method=None, req_uri=None, match_mode=None):
-        """MicroserviceApiCreate
+        r"""MicroserviceApiCreate
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class MicroserviceApiCreate:
 
     @property
     def name(self):
-        """Gets the name of this MicroserviceApiCreate.
+        r"""Gets the name of this MicroserviceApiCreate.
 
         API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -74,7 +74,7 @@ class MicroserviceApiCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MicroserviceApiCreate.
+        r"""Sets the name of this MicroserviceApiCreate.
 
         API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -85,7 +85,7 @@ class MicroserviceApiCreate:
 
     @property
     def req_method(self):
-        """Gets the req_method of this MicroserviceApiCreate.
+        r"""Gets the req_method of this MicroserviceApiCreate.
 
         API的请求方式
 
@@ -96,7 +96,7 @@ class MicroserviceApiCreate:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this MicroserviceApiCreate.
+        r"""Sets the req_method of this MicroserviceApiCreate.
 
         API的请求方式
 
@@ -107,7 +107,7 @@ class MicroserviceApiCreate:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this MicroserviceApiCreate.
+        r"""Gets the req_uri of this MicroserviceApiCreate.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  /apic/health_check为APIG预置的健康检查路径，当req_method=GET时不支持req_uri=/apic/health_check。  > 需要服从URI规范。
 
@@ -118,7 +118,7 @@ class MicroserviceApiCreate:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this MicroserviceApiCreate.
+        r"""Sets the req_uri of this MicroserviceApiCreate.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  /apic/health_check为APIG预置的健康检查路径，当req_method=GET时不支持req_uri=/apic/health_check。  > 需要服从URI规范。
 
@@ -129,7 +129,7 @@ class MicroserviceApiCreate:
 
     @property
     def match_mode(self):
-        """Gets the match_mode of this MicroserviceApiCreate.
+        r"""Gets the match_mode of this MicroserviceApiCreate.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -140,7 +140,7 @@ class MicroserviceApiCreate:
 
     @match_mode.setter
     def match_mode(self, match_mode):
-        """Sets the match_mode of this MicroserviceApiCreate.
+        r"""Sets the match_mode of this MicroserviceApiCreate.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 

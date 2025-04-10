@@ -27,7 +27,7 @@ class ListPortsByTagsRequestBody:
     }
 
     def __init__(self, matches=None, tags=None):
-        """ListPortsByTagsRequestBody
+        r"""ListPortsByTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListPortsByTagsRequestBody:
 
     @property
     def matches(self):
-        """Gets the matches of this ListPortsByTagsRequestBody.
+        r"""Gets the matches of this ListPortsByTagsRequestBody.
 
         功能说明：搜索字段，key为要匹配的字段，value为匹配的值 约束：key为固定字典值，不能包含重复的key或不支持的key，当前key仅支持resource_name
 
@@ -61,7 +61,7 @@ class ListPortsByTagsRequestBody:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this ListPortsByTagsRequestBody.
+        r"""Sets the matches of this ListPortsByTagsRequestBody.
 
         功能说明：搜索字段，key为要匹配的字段，value为匹配的值 约束：key为固定字典值，不能包含重复的key或不支持的key，当前key仅支持resource_name
 
@@ -72,7 +72,7 @@ class ListPortsByTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListPortsByTagsRequestBody.
+        r"""Gets the tags of this ListPortsByTagsRequestBody.
 
         包含标签，最多包含50个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失 。 Key不能重复，同一个key中values不能重复。 结果返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
 
@@ -83,7 +83,7 @@ class ListPortsByTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListPortsByTagsRequestBody.
+        r"""Sets the tags of this ListPortsByTagsRequestBody.
 
         包含标签，最多包含50个key，每个key下面的value最多10个，每个key对应的value可以为空数组但结构体不能缺失 。 Key不能重复，同一个key中values不能重复。 结果返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
 

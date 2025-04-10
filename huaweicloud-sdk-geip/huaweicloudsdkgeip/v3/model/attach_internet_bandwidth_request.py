@@ -27,7 +27,7 @@ class AttachInternetBandwidthRequest:
     }
 
     def __init__(self, global_eip_id=None, body=None):
-        """AttachInternetBandwidthRequest
+        r"""AttachInternetBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AttachInternetBandwidthRequest:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this AttachInternetBandwidthRequest.
+        r"""Gets the global_eip_id of this AttachInternetBandwidthRequest.
 
         :return: The global_eip_id of this AttachInternetBandwidthRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class AttachInternetBandwidthRequest:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this AttachInternetBandwidthRequest.
+        r"""Sets the global_eip_id of this AttachInternetBandwidthRequest.
 
         :param global_eip_id: The global_eip_id of this AttachInternetBandwidthRequest.
         :type global_eip_id: str
@@ -67,7 +67,7 @@ class AttachInternetBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this AttachInternetBandwidthRequest.
+        r"""Gets the body of this AttachInternetBandwidthRequest.
 
         :return: The body of this AttachInternetBandwidthRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.AttachInternetBandwidthGlobalEipRequestBody`
@@ -76,7 +76,7 @@ class AttachInternetBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachInternetBandwidthRequest.
+        r"""Sets the body of this AttachInternetBandwidthRequest.
 
         :param body: The body of this AttachInternetBandwidthRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.AttachInternetBandwidthGlobalEipRequestBody`

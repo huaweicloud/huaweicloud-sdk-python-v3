@@ -25,7 +25,7 @@ class ClusterNodeInformationMetadata:
     }
 
     def __init__(self, name=None):
-        """ClusterNodeInformationMetadata
+        r"""ClusterNodeInformationMetadata
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ClusterNodeInformationMetadata:
 
     @property
     def name(self):
-        """Gets the name of this ClusterNodeInformationMetadata.
+        r"""Gets the name of this ClusterNodeInformationMetadata.
 
         节点名称  > 修改节点名称后，弹性云服务器名称（虚拟机名称）会同步修改。 > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
 
@@ -53,7 +53,7 @@ class ClusterNodeInformationMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClusterNodeInformationMetadata.
+        r"""Sets the name of this ClusterNodeInformationMetadata.
 
         节点名称  > 修改节点名称后，弹性云服务器名称（虚拟机名称）会同步修改。 > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
 

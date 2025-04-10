@@ -33,7 +33,7 @@ class UrlAuth:
     }
 
     def __init__(self, status=None, type=None, key=None, time_format=None, expire_time=None):
-        """UrlAuth
+        r"""UrlAuth
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class UrlAuth:
 
     @property
     def status(self):
-        """Gets the status of this UrlAuth.
+        r"""Gets the status of this UrlAuth.
 
         A/B/C类防盗链开关（\"off\"/\"on\"）。
 
@@ -81,7 +81,7 @@ class UrlAuth:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UrlAuth.
+        r"""Sets the status of this UrlAuth.
 
         A/B/C类防盗链开关（\"off\"/\"on\"）。
 
@@ -92,7 +92,7 @@ class UrlAuth:
 
     @property
     def type(self):
-        """Gets the type of this UrlAuth.
+        r"""Gets the type of this UrlAuth.
 
         鉴权方式 type_a：鉴权方式A type_b：鉴权方式B type_c1：鉴权方式C1 type_c2：鉴权方式C2
 
@@ -103,7 +103,7 @@ class UrlAuth:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UrlAuth.
+        r"""Sets the type of this UrlAuth.
 
         鉴权方式 type_a：鉴权方式A type_b：鉴权方式B type_c1：鉴权方式C1 type_c2：鉴权方式C2
 
@@ -114,7 +114,7 @@ class UrlAuth:
 
     @property
     def key(self):
-        """Gets the key of this UrlAuth.
+        r"""Gets the key of this UrlAuth.
 
         鉴权KEY 由6-32位大小写字母、数字构成。
 
@@ -125,7 +125,7 @@ class UrlAuth:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this UrlAuth.
+        r"""Sets the key of this UrlAuth.
 
         鉴权KEY 由6-32位大小写字母、数字构成。
 
@@ -136,7 +136,7 @@ class UrlAuth:
 
     @property
     def time_format(self):
-        """Gets the time_format of this UrlAuth.
+        r"""Gets the time_format of this UrlAuth.
 
         时间格式 dec：十进制 hex：十六进制 鉴权方式A：只支持十进制 鉴权方式B：只支持十进制 鉴权方式C1：只支持十六进制鉴权方式 鉴权方式C2：支持十进制/十六进制
 
@@ -147,7 +147,7 @@ class UrlAuth:
 
     @time_format.setter
     def time_format(self, time_format):
-        """Sets the time_format of this UrlAuth.
+        r"""Sets the time_format of this UrlAuth.
 
         时间格式 dec：十进制 hex：十六进制 鉴权方式A：只支持十进制 鉴权方式B：只支持十进制 鉴权方式C1：只支持十六进制鉴权方式 鉴权方式C2：支持十进制/十六进制
 
@@ -158,7 +158,7 @@ class UrlAuth:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this UrlAuth.
+        r"""Gets the expire_time of this UrlAuth.
 
         过期时间：范围：0-31536000单位为秒。
 
@@ -169,7 +169,7 @@ class UrlAuth:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this UrlAuth.
+        r"""Sets the expire_time of this UrlAuth.
 
         过期时间：范围：0-31536000单位为秒。
 

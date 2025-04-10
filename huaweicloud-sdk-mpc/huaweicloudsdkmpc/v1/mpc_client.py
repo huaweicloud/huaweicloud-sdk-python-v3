@@ -34,7 +34,7 @@ class MpcClient(Client):
         return client_builder
 
     def create_animated_graphics_task(self, request):
-        """新建转动图任务
+        r"""新建转动图任务
 
         创建动图任务，用于将完整的视频文件或视频文件中的一部分转换为动态图文件，暂只支持输出GIF文件。
         待转动图的视频文件需要存储在与媒体处理服务同区域的OBS桶中，且该OBS桶已授权。
@@ -100,7 +100,7 @@ class MpcClient(Client):
         return http_info
 
     def delete_animated_graphics_task(self, request):
-        """取消转动图任务
+        r"""取消转动图任务
 
         取消已下发的生成动图任务，仅支持取消正在排队中的任务。
         
@@ -165,7 +165,7 @@ class MpcClient(Client):
         return http_info
 
     def list_animated_graphics_task(self, request):
-        """查询转动图任务
+        r"""查询转动图任务
 
         查询动图任务的状态。
         
@@ -243,7 +243,7 @@ class MpcClient(Client):
         return http_info
 
     def create_agencies_task(self, request):
-        """请求委托任务
+        r"""请求委托任务
 
         开启或关闭\&quot;委托授权\&quot;, 开启后，媒体处理服务将拥有您所有桶的读写权限，子账号不支持委托授权。
         
@@ -308,7 +308,7 @@ class MpcClient(Client):
         return http_info
 
     def list_all_buckets(self, request):
-        """查询桶列表
+        r"""查询桶列表
 
         请求查询自己创建的指定的桶区域位置的桶列表。
         
@@ -371,7 +371,7 @@ class MpcClient(Client):
         return http_info
 
     def list_all_obs_obj_list(self, request):
-        """查询桶里的object
+        r"""查询桶里的object
 
         查询桶里的object。
         
@@ -440,7 +440,7 @@ class MpcClient(Client):
         return http_info
 
     def list_notify_event(self, request):
-        """查询转码服务端所有事件
+        r"""查询转码服务端所有事件
 
         查询消息订阅功能板块, SMN主题的所有订阅事件。
         
@@ -503,7 +503,7 @@ class MpcClient(Client):
         return http_info
 
     def list_notify_smn_topic_config(self, request):
-        """查询转码服务端事件通知
+        r"""查询转码服务端事件通知
 
         查询消息订阅功能板块, SMN主题的订阅事件的启用状态和订阅消息的启用状态。
         
@@ -566,7 +566,7 @@ class MpcClient(Client):
         return http_info
 
     def notify_smn_topic_config(self, request):
-        """配置转码服务端事件通知
+        r"""配置转码服务端事件通知
 
         配置转码服务端事件通知。
         
@@ -631,7 +631,7 @@ class MpcClient(Client):
         return http_info
 
     def show_agencies_task(self, request):
-        """查询创建委托任务状态
+        r"""查询创建委托任务状态
 
         查询创建委托任务状态。
         
@@ -694,7 +694,7 @@ class MpcClient(Client):
         return http_info
 
     def update_bucket_authorized(self, request):
-        """桶授权或取消授权
+        r"""桶授权或取消授权
 
         对OBS桶进行授权或取消授权，媒体处理服务仅拥有已授权桶的读写权限。（暂不支持KMS加密桶的授权）
         
@@ -759,7 +759,7 @@ class MpcClient(Client):
         return http_info
 
     def create_editing_job(self, request):
-        """新建剪辑任务
+        r"""新建剪辑任务
 
         创建剪辑任务，用于将多个视频文件进行裁剪成多个视频分段，并且可以把这些视频分段合并成一个视频，剪切和拼接功能可以单独使用。
         待剪辑的视频文件需要存储在与媒体处理服务同区域的OBS桶中，且该OBS桶已授权。
@@ -825,7 +825,7 @@ class MpcClient(Client):
         return http_info
 
     def delete_editing_job(self, request):
-        """取消剪辑任务
+        r"""取消剪辑任务
 
         取消已下发的生成剪辑任务，仅支持取消正在排队中的任务。
         
@@ -890,7 +890,7 @@ class MpcClient(Client):
         return http_info
 
     def list_editing_job(self, request):
-        """查询剪辑任务
+        r"""查询剪辑任务
 
         查询剪辑任务的状态。
         
@@ -968,7 +968,7 @@ class MpcClient(Client):
         return http_info
 
     def create_encrypt_task(self, request):
-        """新建独立加密任务
+        r"""新建独立加密任务
 
         支持独立加密，包括创建、查询、删除独立加密任务。该API已废弃。
         
@@ -1037,7 +1037,7 @@ class MpcClient(Client):
         return http_info
 
     def delete_encrypt_task(self, request):
-        """取消独立加密任务
+        r"""取消独立加密任务
 
         取消独立加密任务。该API已废弃。
         
@@ -1106,7 +1106,7 @@ class MpcClient(Client):
         return http_info
 
     def list_encrypt_task(self, request):
-        """查询独立加密任务
+        r"""查询独立加密任务
 
         查询独立加密任务状态。返回任务执行结果或当前状态。该API已废弃。
         
@@ -1182,7 +1182,7 @@ class MpcClient(Client):
         return http_info
 
     def create_extract_task(self, request):
-        """新建视频解析任务
+        r"""新建视频解析任务
 
         创建视频解析任务，解析视频元数据。
         
@@ -1247,7 +1247,7 @@ class MpcClient(Client):
         return http_info
 
     def delete_extract_task(self, request):
-        """取消视频解析任务
+        r"""取消视频解析任务
 
         取消已下发的视频解析任务，仅支持取消正在排队中的任务。
         
@@ -1312,7 +1312,7 @@ class MpcClient(Client):
         return http_info
 
     def list_extract_task(self, request):
-        """查询视频解析任务
+        r"""查询视频解析任务
 
         查询解析任务的状态和结果。
         
@@ -1390,7 +1390,7 @@ class MpcClient(Client):
         return http_info
 
     def create_mb_tasks_report(self, request):
-        """合并多声道任务、重置声轨任务上报接口
+        r"""合并多声道任务、重置声轨任务上报接口
 
         ## 典型场景 ##
           合并音频多声道文件任务、重置音频文件声轨任务上报结果接口。
@@ -1460,7 +1460,7 @@ class MpcClient(Client):
         return http_info
 
     def create_merge_channels_task(self, request):
-        """创建声道合并任务
+        r"""创建声道合并任务
 
         创建声道合并任务，合并声道任务支持将每个声道各放一个文件中的片源，合并为单个音频文件。
         执行合并声道的源音频文件需要存储在与媒体处理服务同区域的OBS桶中，且该OBS桶已授权。
@@ -1526,7 +1526,7 @@ class MpcClient(Client):
         return http_info
 
     def create_reset_tracks_task(self, request):
-        """创建音轨重置任务
+        r"""创建音轨重置任务
 
         创建音轨重置任务，重置音轨任务支持按人工指定关系声道layout，语言标签，转封装片源，使其满足转码输入。
         执行音轨重置的源音频文件需要存储在与媒体处理服务同区域的OBS桶中，且该OBS桶已授权。
@@ -1592,7 +1592,7 @@ class MpcClient(Client):
         return http_info
 
     def delete_merge_channels_task(self, request):
-        """取消声道合并任务
+        r"""取消声道合并任务
 
         取消合并音频多声道文件。
         
@@ -1657,7 +1657,7 @@ class MpcClient(Client):
         return http_info
 
     def delete_reset_tracks_task(self, request):
-        """取消音轨重置任务
+        r"""取消音轨重置任务
 
         取消重置音频文件声轨任务。
         
@@ -1722,7 +1722,7 @@ class MpcClient(Client):
         return http_info
 
     def list_merge_channels_task(self, request):
-        """查询声道合并任务
+        r"""查询声道合并任务
 
         查询声道合并任务的状态。
         
@@ -1798,7 +1798,7 @@ class MpcClient(Client):
         return http_info
 
     def list_reset_tracks_task(self, request):
-        """查询音轨重置任务
+        r"""查询音轨重置任务
 
         查询音轨重置任务的状态。
         
@@ -1874,7 +1874,7 @@ class MpcClient(Client):
         return http_info
 
     def create_media_process_task(self, request):
-        """创建视频增强任务
+        r"""创建视频增强任务
 
         ## 典型场景 ##
           创建视频增强任务。
@@ -1946,7 +1946,7 @@ class MpcClient(Client):
         return http_info
 
     def delete_media_process_task(self, request):
-        """取消视频增强任务
+        r"""取消视频增强任务
 
         ## 典型场景 ##
           取消视频增强任务。
@@ -2018,7 +2018,7 @@ class MpcClient(Client):
         return http_info
 
     def list_media_process_task(self, request):
-        """查询视频增强任务
+        r"""查询视频增强任务
 
         ## 典型场景 ##
           查询视频增强任务。
@@ -2101,7 +2101,7 @@ class MpcClient(Client):
         return http_info
 
     def create_mpe_call_back(self, request):
-        """mpe通知mpc
+        r"""mpe通知mpc
 
         ## 典型场景 ##
           mpe通知mpc。
@@ -2171,7 +2171,7 @@ class MpcClient(Client):
         return http_info
 
     def create_quality_enhance_template(self, request):
-        """创建视频增强模板
+        r"""创建视频增强模板
 
         创建视频增强模板
         
@@ -2236,7 +2236,7 @@ class MpcClient(Client):
         return http_info
 
     def delete_quality_enhance_template(self, request):
-        """删除用户视频增强模板
+        r"""删除用户视频增强模板
 
         删除用户视频增强模板。
         
@@ -2301,7 +2301,7 @@ class MpcClient(Client):
         return http_info
 
     def list_quality_enhance_default_template(self, request):
-        """查询视频增强预置模板
+        r"""查询视频增强预置模板
 
         查询视频增强预置模板，返回所有结果。
         
@@ -2364,7 +2364,7 @@ class MpcClient(Client):
         return http_info
 
     def update_quality_enhance_template(self, request):
-        """更新视频增强模板
+        r"""更新视频增强模板
 
         更新视频增强模板。
         
@@ -2429,7 +2429,7 @@ class MpcClient(Client):
         return http_info
 
     def list_transcode_detail(self, request):
-        """查询媒资转码详情
+        r"""查询媒资转码详情
 
         查询媒资转码详情
         
@@ -2495,7 +2495,7 @@ class MpcClient(Client):
         return http_info
 
     def cancel_remux_task(self, request):
-        """取消转封装任务
+        r"""取消转封装任务
 
         取消已下发的转封装任务，仅支持取消正在排队中的任务。。
         
@@ -2560,7 +2560,7 @@ class MpcClient(Client):
         return http_info
 
     def create_remux_task(self, request):
-        """新建转封装任务
+        r"""新建转封装任务
 
         创建转封装任务，转换音视频文件的格式，但不改变其分辨率和码率。
         待转封装的媒资文件需要存储在与媒体处理服务同区域的OBS桶中，且该OBS桶已授权。
@@ -2626,7 +2626,7 @@ class MpcClient(Client):
         return http_info
 
     def create_retry_remux_task(self, request):
-        """重试转封装任务
+        r"""重试转封装任务
 
         对失败的转封装任务进行重试。
         
@@ -2691,7 +2691,7 @@ class MpcClient(Client):
         return http_info
 
     def delete_remux_task(self, request):
-        """删除转封装任务记录
+        r"""删除转封装任务记录
 
         删除转封装任务记录，只能删除状态为“已取消”，“转码成功”，“转码失败”的任务记录。
         
@@ -2756,7 +2756,7 @@ class MpcClient(Client):
         return http_info
 
     def list_remux_task(self, request):
-        """查询转封装任务
+        r"""查询转封装任务
 
         查询转封装任务状态。
         
@@ -2836,7 +2836,7 @@ class MpcClient(Client):
         return http_info
 
     def create_template_group(self, request):
-        """新建转码模板组
+        r"""新建转码模板组
 
         新建转码模板组，最多支持一进六出。
         
@@ -2901,7 +2901,7 @@ class MpcClient(Client):
         return http_info
 
     def delete_template_group(self, request):
-        """删除转码模板组
+        r"""删除转码模板组
 
         删除转码模板组。
         
@@ -2966,7 +2966,7 @@ class MpcClient(Client):
         return http_info
 
     def list_template_group(self, request):
-        """查询转码模板组
+        r"""查询转码模板组
 
         查询转码模板组列表。
         
@@ -3039,7 +3039,7 @@ class MpcClient(Client):
         return http_info
 
     def update_template_group(self, request):
-        """更新转码模板组
+        r"""更新转码模板组
 
         修改模板组接口。
         
@@ -3104,7 +3104,7 @@ class MpcClient(Client):
         return http_info
 
     def show_tenant_access_info(self, request):
-        """租户查询服务开通状态信息
+        r"""租户查询服务开通状态信息
 
         租户查询媒体转码服务开通状态信息。
         
@@ -3169,7 +3169,7 @@ class MpcClient(Client):
         return http_info
 
     def update_tenant_access_info(self, request):
-        """租户开通媒体转码服务
+        r"""租户开通媒体转码服务
 
         租户开通媒体转码服务。
         
@@ -3236,7 +3236,7 @@ class MpcClient(Client):
         return http_info
 
     def create_thumbnails_task(self, request):
-        """新建截图任务
+        r"""新建截图任务
 
         新建截图任务，视频截图将从首帧开始，按设置的时间间隔截图，最后截取末帧。
         待截图的视频文件需要存储在与媒体处理服务同区域的OBS桶中，且该OBS桶已授权。
@@ -3305,7 +3305,7 @@ class MpcClient(Client):
         return http_info
 
     def delete_thumbnails_task(self, request):
-        """取消截图任务
+        r"""取消截图任务
 
         取消已下发截图任务。
         只能取消已接受尚在队列中等待处理的任务，已完成或正在执行阶段的任务不能取消。
@@ -3371,7 +3371,7 @@ class MpcClient(Client):
         return http_info
 
     def list_thumbnails_task(self, request):
-        """查询截图任务
+        r"""查询截图任务
 
         查询截图任务状态。返回任务执行结果，包括状态、输入、输出等信息。
         
@@ -3449,7 +3449,7 @@ class MpcClient(Client):
         return http_info
 
     def create_transcoding_task(self, request):
-        """新建转码任务
+        r"""新建转码任务
 
         新建转码任务可以将视频进行转码，并在转码过程中压制水印、视频截图等。视频转码前需要配置转码模板。
         待转码的音视频需要存储在与媒体处理服务同区域的OBS桶中，且该OBS桶已授权。
@@ -3515,7 +3515,7 @@ class MpcClient(Client):
         return http_info
 
     def delete_transcoding_task(self, request):
-        """取消转码任务
+        r"""取消转码任务
 
         取消已下发转码任务。
         只能取消正在转码任务队列中排队的转码任务。已开始转码或已完成的转码任务不能取消。
@@ -3581,7 +3581,7 @@ class MpcClient(Client):
         return http_info
 
     def delete_transcoding_task_by_console(self, request):
-        """删除转码任务记录
+        r"""删除转码任务记录
 
         删除转码任务记录，只能删除状态为“已取消”，“转码成功”，“转码失败”的转码任务记录。
         
@@ -3646,7 +3646,7 @@ class MpcClient(Client):
         return http_info
 
     def list_stat_summary(self, request):
-        """查询点播概览信息
+        r"""查询点播概览信息
 
         查询最近一周，最近一月或者自定义时间段的“转码时长”，“调用转码API次数”。
         
@@ -3715,7 +3715,7 @@ class MpcClient(Client):
         return http_info
 
     def list_transcoding_task(self, request):
-        """查询转码任务
+        r"""查询转码任务
 
         查询转码任务状态。
         
@@ -3793,7 +3793,7 @@ class MpcClient(Client):
         return http_info
 
     def create_trans_template(self, request):
-        """新建转码模板
+        r"""新建转码模板
 
         新建转码模板，采用自定义的模板转码。
         
@@ -3858,7 +3858,7 @@ class MpcClient(Client):
         return http_info
 
     def delete_template(self, request):
-        """删除转码模板
+        r"""删除转码模板
 
         删除转码模板。
         
@@ -3923,7 +3923,7 @@ class MpcClient(Client):
         return http_info
 
     def list_template(self, request):
-        """查询转码模板
+        r"""查询转码模板
 
         查询用户自定义转码配置模板。
         支持指定模板ID查询，或分页全量查询。转码配置模板ID，最多10个。
@@ -3994,7 +3994,7 @@ class MpcClient(Client):
         return http_info
 
     def update_trans_template(self, request):
-        """更新转码模板
+        r"""更新转码模板
 
         更新转码模板。
         
@@ -4059,7 +4059,7 @@ class MpcClient(Client):
         return http_info
 
     def create_watermark_template(self, request):
-        """新建水印模板
+        r"""新建水印模板
 
         自定义水印模板。
         
@@ -4124,7 +4124,7 @@ class MpcClient(Client):
         return http_info
 
     def delete_watermark_template(self, request):
-        """删除水印模板
+        r"""删除水印模板
 
         删除自定义水印模板。
         
@@ -4189,7 +4189,7 @@ class MpcClient(Client):
         return http_info
 
     def list_watermark_template(self, request):
-        """查询水印模板
+        r"""查询水印模板
 
         查询自定义水印模板。支持指定模板ID查询，或分页全量查询。
         
@@ -4259,7 +4259,7 @@ class MpcClient(Client):
         return http_info
 
     def update_watermark_template(self, request):
-        """更新水印模板
+        r"""更新水印模板
 
         更新自定义水印模板。
         

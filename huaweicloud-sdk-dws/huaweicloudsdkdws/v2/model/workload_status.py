@@ -27,7 +27,7 @@ class WorkloadStatus:
     }
 
     def __init__(self, workload_switch=None, max_concurrency_num=None):
-        """WorkloadStatus
+        r"""WorkloadStatus
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class WorkloadStatus:
 
     @property
     def workload_switch(self):
-        """Gets the workload_switch of this WorkloadStatus.
+        r"""Gets the workload_switch of this WorkloadStatus.
 
         开关。
 
@@ -60,7 +60,7 @@ class WorkloadStatus:
 
     @workload_switch.setter
     def workload_switch(self, workload_switch):
-        """Sets the workload_switch of this WorkloadStatus.
+        r"""Sets the workload_switch of this WorkloadStatus.
 
         开关。
 
@@ -71,7 +71,7 @@ class WorkloadStatus:
 
     @property
     def max_concurrency_num(self):
-        """Gets the max_concurrency_num of this WorkloadStatus.
+        r"""Gets the max_concurrency_num of this WorkloadStatus.
 
         最大并发数。
 
@@ -82,7 +82,7 @@ class WorkloadStatus:
 
     @max_concurrency_num.setter
     def max_concurrency_num(self, max_concurrency_num):
-        """Sets the max_concurrency_num of this WorkloadStatus.
+        r"""Sets the max_concurrency_num of this WorkloadStatus.
 
         最大并发数。
 

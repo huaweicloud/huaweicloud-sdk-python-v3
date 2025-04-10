@@ -25,7 +25,7 @@ class UpdateGroupReqBody:
     }
 
     def __init__(self, operations=None):
-        """UpdateGroupReqBody
+        r"""UpdateGroupReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateGroupReqBody:
 
     @property
     def operations(self):
-        """Gets the operations of this UpdateGroupReqBody.
+        r"""Gets the operations of this UpdateGroupReqBody.
 
         更新的用户组属性列表
 
@@ -53,7 +53,7 @@ class UpdateGroupReqBody:
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this UpdateGroupReqBody.
+        r"""Sets the operations of this UpdateGroupReqBody.
 
         更新的用户组属性列表
 

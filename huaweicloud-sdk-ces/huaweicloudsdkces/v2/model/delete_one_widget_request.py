@@ -25,7 +25,7 @@ class DeleteOneWidgetRequest:
     }
 
     def __init__(self, widget_id=None):
-        """DeleteOneWidgetRequest
+        r"""DeleteOneWidgetRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteOneWidgetRequest:
 
     @property
     def widget_id(self):
-        """Gets the widget_id of this DeleteOneWidgetRequest.
+        r"""Gets the widget_id of this DeleteOneWidgetRequest.
 
         监控视图id
 
@@ -53,7 +53,7 @@ class DeleteOneWidgetRequest:
 
     @widget_id.setter
     def widget_id(self, widget_id):
-        """Sets the widget_id of this DeleteOneWidgetRequest.
+        r"""Sets the widget_id of this DeleteOneWidgetRequest.
 
         监控视图id
 

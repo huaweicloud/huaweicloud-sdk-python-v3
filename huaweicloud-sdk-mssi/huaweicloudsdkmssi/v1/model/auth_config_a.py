@@ -37,7 +37,7 @@ class AuthConfigA:
     }
 
     def __init__(self, auth_config=None, auth_dynamic=None, auth_info=None, auth_prop=None, auth_type=None, cdm_params_config=None, host_config=None):
-        """AuthConfigA
+        r"""AuthConfigA
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AuthConfigA:
 
     @property
     def auth_config(self):
-        """Gets the auth_config of this AuthConfigA.
+        r"""Gets the auth_config of this AuthConfigA.
 
         :return: The auth_config of this AuthConfigA.
         :rtype: object
@@ -94,7 +94,7 @@ class AuthConfigA:
 
     @auth_config.setter
     def auth_config(self, auth_config):
-        """Sets the auth_config of this AuthConfigA.
+        r"""Sets the auth_config of this AuthConfigA.
 
         :param auth_config: The auth_config of this AuthConfigA.
         :type auth_config: object
@@ -103,7 +103,7 @@ class AuthConfigA:
 
     @property
     def auth_dynamic(self):
-        """Gets the auth_dynamic of this AuthConfigA.
+        r"""Gets the auth_dynamic of this AuthConfigA.
 
         :return: The auth_dynamic of this AuthConfigA.
         :rtype: object
@@ -112,7 +112,7 @@ class AuthConfigA:
 
     @auth_dynamic.setter
     def auth_dynamic(self, auth_dynamic):
-        """Sets the auth_dynamic of this AuthConfigA.
+        r"""Sets the auth_dynamic of this AuthConfigA.
 
         :param auth_dynamic: The auth_dynamic of this AuthConfigA.
         :type auth_dynamic: object
@@ -121,7 +121,7 @@ class AuthConfigA:
 
     @property
     def auth_info(self):
-        """Gets the auth_info of this AuthConfigA.
+        r"""Gets the auth_info of this AuthConfigA.
 
         :return: The auth_info of this AuthConfigA.
         :rtype: dict(str, str)
@@ -130,7 +130,7 @@ class AuthConfigA:
 
     @auth_info.setter
     def auth_info(self, auth_info):
-        """Sets the auth_info of this AuthConfigA.
+        r"""Sets the auth_info of this AuthConfigA.
 
         :param auth_info: The auth_info of this AuthConfigA.
         :type auth_info: dict(str, str)
@@ -139,7 +139,7 @@ class AuthConfigA:
 
     @property
     def auth_prop(self):
-        """Gets the auth_prop of this AuthConfigA.
+        r"""Gets the auth_prop of this AuthConfigA.
 
         :return: The auth_prop of this AuthConfigA.
         :rtype: object
@@ -148,7 +148,7 @@ class AuthConfigA:
 
     @auth_prop.setter
     def auth_prop(self, auth_prop):
-        """Sets the auth_prop of this AuthConfigA.
+        r"""Sets the auth_prop of this AuthConfigA.
 
         :param auth_prop: The auth_prop of this AuthConfigA.
         :type auth_prop: object
@@ -157,7 +157,7 @@ class AuthConfigA:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this AuthConfigA.
+        r"""Gets the auth_type of this AuthConfigA.
 
         :return: The auth_type of this AuthConfigA.
         :rtype: str
@@ -166,7 +166,7 @@ class AuthConfigA:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this AuthConfigA.
+        r"""Sets the auth_type of this AuthConfigA.
 
         :param auth_type: The auth_type of this AuthConfigA.
         :type auth_type: str
@@ -175,7 +175,7 @@ class AuthConfigA:
 
     @property
     def cdm_params_config(self):
-        """Gets the cdm_params_config of this AuthConfigA.
+        r"""Gets the cdm_params_config of this AuthConfigA.
 
         :return: The cdm_params_config of this AuthConfigA.
         :rtype: object
@@ -184,7 +184,7 @@ class AuthConfigA:
 
     @cdm_params_config.setter
     def cdm_params_config(self, cdm_params_config):
-        """Sets the cdm_params_config of this AuthConfigA.
+        r"""Sets the cdm_params_config of this AuthConfigA.
 
         :param cdm_params_config: The cdm_params_config of this AuthConfigA.
         :type cdm_params_config: object
@@ -193,7 +193,7 @@ class AuthConfigA:
 
     @property
     def host_config(self):
-        """Gets the host_config of this AuthConfigA.
+        r"""Gets the host_config of this AuthConfigA.
 
         :return: The host_config of this AuthConfigA.
         :rtype: object
@@ -202,7 +202,7 @@ class AuthConfigA:
 
     @host_config.setter
     def host_config(self, host_config):
-        """Sets the host_config of this AuthConfigA.
+        r"""Sets the host_config of this AuthConfigA.
 
         :param host_config: The host_config of this AuthConfigA.
         :type host_config: object

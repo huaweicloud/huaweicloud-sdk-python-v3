@@ -31,7 +31,7 @@ class ResizeDesktopJobResponse:
     }
 
     def __init__(self, error_code=None, error_msg=None, desktop_id=None, job_id=None):
-        """ResizeDesktopJobResponse
+        r"""ResizeDesktopJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ResizeDesktopJobResponse:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ResizeDesktopJobResponse.
+        r"""Gets the error_code of this ResizeDesktopJobResponse.
 
         错误码，失败时返回。
 
@@ -75,7 +75,7 @@ class ResizeDesktopJobResponse:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ResizeDesktopJobResponse.
+        r"""Sets the error_code of this ResizeDesktopJobResponse.
 
         错误码，失败时返回。
 
@@ -86,7 +86,7 @@ class ResizeDesktopJobResponse:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ResizeDesktopJobResponse.
+        r"""Gets the error_msg of this ResizeDesktopJobResponse.
 
         错误描述。
 
@@ -97,7 +97,7 @@ class ResizeDesktopJobResponse:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ResizeDesktopJobResponse.
+        r"""Sets the error_msg of this ResizeDesktopJobResponse.
 
         错误描述。
 
@@ -108,7 +108,7 @@ class ResizeDesktopJobResponse:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ResizeDesktopJobResponse.
+        r"""Gets the desktop_id of this ResizeDesktopJobResponse.
 
         桌面ID。
 
@@ -119,7 +119,7 @@ class ResizeDesktopJobResponse:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ResizeDesktopJobResponse.
+        r"""Sets the desktop_id of this ResizeDesktopJobResponse.
 
         桌面ID。
 
@@ -130,7 +130,7 @@ class ResizeDesktopJobResponse:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ResizeDesktopJobResponse.
+        r"""Gets the job_id of this ResizeDesktopJobResponse.
 
         任务ID。
 
@@ -141,7 +141,7 @@ class ResizeDesktopJobResponse:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ResizeDesktopJobResponse.
+        r"""Sets the job_id of this ResizeDesktopJobResponse.
 
         任务ID。
 

@@ -27,7 +27,7 @@ class QuoteDatabaseReq:
     }
 
     def __init__(self, source_project_id=None, source_databases=None):
-        """QuoteDatabaseReq
+        r"""QuoteDatabaseReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class QuoteDatabaseReq:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this QuoteDatabaseReq.
+        r"""Gets the source_project_id of this QuoteDatabaseReq.
 
         源项目id
 
@@ -59,7 +59,7 @@ class QuoteDatabaseReq:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this QuoteDatabaseReq.
+        r"""Sets the source_project_id of this QuoteDatabaseReq.
 
         源项目id
 
@@ -70,7 +70,7 @@ class QuoteDatabaseReq:
 
     @property
     def source_databases(self):
-        """Gets the source_databases of this QuoteDatabaseReq.
+        r"""Gets the source_databases of this QuoteDatabaseReq.
 
         源数据库列表
 
@@ -81,7 +81,7 @@ class QuoteDatabaseReq:
 
     @source_databases.setter
     def source_databases(self, source_databases):
-        """Sets the source_databases of this QuoteDatabaseReq.
+        r"""Sets the source_databases of this QuoteDatabaseReq.
 
         源数据库列表
 

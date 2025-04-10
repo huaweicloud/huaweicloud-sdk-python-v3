@@ -29,7 +29,7 @@ class LimitTaskRuleInfoOption:
     }
 
     def __init__(self, node_id=None, rule_id=None, status=None):
-        """LimitTaskRuleInfoOption
+        r"""LimitTaskRuleInfoOption
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class LimitTaskRuleInfoOption:
 
     @property
     def node_id(self):
-        """Gets the node_id of this LimitTaskRuleInfoOption.
+        r"""Gets the node_id of this LimitTaskRuleInfoOption.
 
         节点id。
 
@@ -65,7 +65,7 @@ class LimitTaskRuleInfoOption:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this LimitTaskRuleInfoOption.
+        r"""Sets the node_id of this LimitTaskRuleInfoOption.
 
         节点id。
 
@@ -76,7 +76,7 @@ class LimitTaskRuleInfoOption:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this LimitTaskRuleInfoOption.
+        r"""Gets the rule_id of this LimitTaskRuleInfoOption.
 
         规则id。
 
@@ -87,7 +87,7 @@ class LimitTaskRuleInfoOption:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this LimitTaskRuleInfoOption.
+        r"""Sets the rule_id of this LimitTaskRuleInfoOption.
 
         规则id。
 
@@ -98,7 +98,7 @@ class LimitTaskRuleInfoOption:
 
     @property
     def status(self):
-        """Gets the status of this LimitTaskRuleInfoOption.
+        r"""Gets the status of this LimitTaskRuleInfoOption.
 
         状态，当前支持：CREATING，UPDATEING，DELETING，WAIT_EXCUTE，EXCUTING，TIME_OVER，DELETED，CREATE_FAILED，UPDATE_FAILED，DELETE_FAILED，EXCEPTION。
 
@@ -109,7 +109,7 @@ class LimitTaskRuleInfoOption:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this LimitTaskRuleInfoOption.
+        r"""Sets the status of this LimitTaskRuleInfoOption.
 
         状态，当前支持：CREATING，UPDATEING，DELETING，WAIT_EXCUTE，EXCUTING，TIME_OVER，DELETED，CREATE_FAILED，UPDATE_FAILED，DELETE_FAILED，EXCEPTION。
 

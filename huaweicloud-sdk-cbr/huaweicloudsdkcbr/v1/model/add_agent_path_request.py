@@ -27,7 +27,7 @@ class AddAgentPathRequest:
     }
 
     def __init__(self, agent_id=None, body=None):
-        """AddAgentPathRequest
+        r"""AddAgentPathRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddAgentPathRequest:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this AddAgentPathRequest.
+        r"""Gets the agent_id of this AddAgentPathRequest.
 
         客户端ID
 
@@ -60,7 +60,7 @@ class AddAgentPathRequest:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this AddAgentPathRequest.
+        r"""Sets the agent_id of this AddAgentPathRequest.
 
         客户端ID
 
@@ -71,7 +71,7 @@ class AddAgentPathRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddAgentPathRequest.
+        r"""Gets the body of this AddAgentPathRequest.
 
         :return: The body of this AddAgentPathRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.AgentAddPathReq`
@@ -80,7 +80,7 @@ class AddAgentPathRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddAgentPathRequest.
+        r"""Sets the body of this AddAgentPathRequest.
 
         :param body: The body of this AddAgentPathRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.AgentAddPathReq`

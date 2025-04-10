@@ -29,7 +29,7 @@ class ListQueuePropertiesRequest:
     }
 
     def __init__(self, queue_name=None, offset=None, limit=None):
-        """ListQueuePropertiesRequest
+        r"""ListQueuePropertiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListQueuePropertiesRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ListQueuePropertiesRequest.
+        r"""Gets the queue_name of this ListQueuePropertiesRequest.
 
         队列名称
 
@@ -67,7 +67,7 @@ class ListQueuePropertiesRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ListQueuePropertiesRequest.
+        r"""Sets the queue_name of this ListQueuePropertiesRequest.
 
         队列名称
 
@@ -78,7 +78,7 @@ class ListQueuePropertiesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListQueuePropertiesRequest.
+        r"""Gets the offset of this ListQueuePropertiesRequest.
 
         偏移量
 
@@ -89,7 +89,7 @@ class ListQueuePropertiesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListQueuePropertiesRequest.
+        r"""Sets the offset of this ListQueuePropertiesRequest.
 
         偏移量
 
@@ -100,7 +100,7 @@ class ListQueuePropertiesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListQueuePropertiesRequest.
+        r"""Gets the limit of this ListQueuePropertiesRequest.
 
         每页显示条数
 
@@ -111,7 +111,7 @@ class ListQueuePropertiesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListQueuePropertiesRequest.
+        r"""Sets the limit of this ListQueuePropertiesRequest.
 
         每页显示条数
 

@@ -26,7 +26,7 @@ class DeleteAddonInstanceResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteAddonInstanceResponse
+        r"""DeleteAddonInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteAddonInstanceResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteAddonInstanceResponse.
+        r"""Gets the body of this DeleteAddonInstanceResponse.
 
         :return: The body of this DeleteAddonInstanceResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteAddonInstanceResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAddonInstanceResponse.
+        r"""Sets the body of this DeleteAddonInstanceResponse.
 
         :param body: The body of this DeleteAddonInstanceResponse.
         :type body: str

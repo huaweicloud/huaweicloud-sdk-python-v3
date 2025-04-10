@@ -47,7 +47,7 @@ class LtsStructTemplateInfo:
     }
 
     def __init__(self, demo_fields=None, tag_fields=None, content=None, log_group_id=None, parse_type=None, log_stream_id=None, project_id=None, regex_rules=None, layers=None, tokenizer=None, log_format=None, rule=None):
-        """LtsStructTemplateInfo
+        r"""LtsStructTemplateInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class LtsStructTemplateInfo:
 
     @property
     def demo_fields(self):
-        """Gets the demo_fields of this LtsStructTemplateInfo.
+        r"""Gets the demo_fields of this LtsStructTemplateInfo.
 
         结构化字段
 
@@ -124,7 +124,7 @@ class LtsStructTemplateInfo:
 
     @demo_fields.setter
     def demo_fields(self, demo_fields):
-        """Sets the demo_fields of this LtsStructTemplateInfo.
+        r"""Sets the demo_fields of this LtsStructTemplateInfo.
 
         结构化字段
 
@@ -135,7 +135,7 @@ class LtsStructTemplateInfo:
 
     @property
     def tag_fields(self):
-        """Gets the tag_fields of this LtsStructTemplateInfo.
+        r"""Gets the tag_fields of this LtsStructTemplateInfo.
 
         tag字段列表（使用tag字段解析时需要，其中系统模板不支持使用tag字段）。
 
@@ -146,7 +146,7 @@ class LtsStructTemplateInfo:
 
     @tag_fields.setter
     def tag_fields(self, tag_fields):
-        """Sets the tag_fields of this LtsStructTemplateInfo.
+        r"""Sets the tag_fields of this LtsStructTemplateInfo.
 
         tag字段列表（使用tag字段解析时需要，其中系统模板不支持使用tag字段）。
 
@@ -157,7 +157,7 @@ class LtsStructTemplateInfo:
 
     @property
     def content(self):
-        """Gets the content of this LtsStructTemplateInfo.
+        r"""Gets the content of this LtsStructTemplateInfo.
 
         示例日志
 
@@ -168,7 +168,7 @@ class LtsStructTemplateInfo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this LtsStructTemplateInfo.
+        r"""Sets the content of this LtsStructTemplateInfo.
 
         示例日志
 
@@ -179,7 +179,7 @@ class LtsStructTemplateInfo:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this LtsStructTemplateInfo.
+        r"""Gets the log_group_id of this LtsStructTemplateInfo.
 
         日志组ID
 
@@ -190,7 +190,7 @@ class LtsStructTemplateInfo:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this LtsStructTemplateInfo.
+        r"""Sets the log_group_id of this LtsStructTemplateInfo.
 
         日志组ID
 
@@ -201,7 +201,7 @@ class LtsStructTemplateInfo:
 
     @property
     def parse_type(self):
-        """Gets the parse_type of this LtsStructTemplateInfo.
+        r"""Gets the parse_type of this LtsStructTemplateInfo.
 
         结构化方式
 
@@ -212,7 +212,7 @@ class LtsStructTemplateInfo:
 
     @parse_type.setter
     def parse_type(self, parse_type):
-        """Sets the parse_type of this LtsStructTemplateInfo.
+        r"""Sets the parse_type of this LtsStructTemplateInfo.
 
         结构化方式
 
@@ -223,7 +223,7 @@ class LtsStructTemplateInfo:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this LtsStructTemplateInfo.
+        r"""Gets the log_stream_id of this LtsStructTemplateInfo.
 
         日志流ID
 
@@ -234,7 +234,7 @@ class LtsStructTemplateInfo:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this LtsStructTemplateInfo.
+        r"""Sets the log_stream_id of this LtsStructTemplateInfo.
 
         日志流ID
 
@@ -245,7 +245,7 @@ class LtsStructTemplateInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this LtsStructTemplateInfo.
+        r"""Gets the project_id of this LtsStructTemplateInfo.
 
         项目ID
 
@@ -256,7 +256,7 @@ class LtsStructTemplateInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this LtsStructTemplateInfo.
+        r"""Sets the project_id of this LtsStructTemplateInfo.
 
         项目ID
 
@@ -267,7 +267,7 @@ class LtsStructTemplateInfo:
 
     @property
     def regex_rules(self):
-        """Gets the regex_rules of this LtsStructTemplateInfo.
+        r"""Gets the regex_rules of this LtsStructTemplateInfo.
 
         parse_type为custom_regex类型时必填，regex提取规则
 
@@ -278,7 +278,7 @@ class LtsStructTemplateInfo:
 
     @regex_rules.setter
     def regex_rules(self, regex_rules):
-        """Sets the regex_rules of this LtsStructTemplateInfo.
+        r"""Sets the regex_rules of this LtsStructTemplateInfo.
 
         parse_type为custom_regex类型时必填，regex提取规则
 
@@ -289,7 +289,7 @@ class LtsStructTemplateInfo:
 
     @property
     def layers(self):
-        """Gets the layers of this LtsStructTemplateInfo.
+        r"""Gets the layers of this LtsStructTemplateInfo.
 
         parse_type为json类型时必填，解析层数，目前固定是3
 
@@ -300,7 +300,7 @@ class LtsStructTemplateInfo:
 
     @layers.setter
     def layers(self, layers):
-        """Sets the layers of this LtsStructTemplateInfo.
+        r"""Sets the layers of this LtsStructTemplateInfo.
 
         parse_type为json类型时必填，解析层数，目前固定是3
 
@@ -311,7 +311,7 @@ class LtsStructTemplateInfo:
 
     @property
     def tokenizer(self):
-        """Gets the tokenizer of this LtsStructTemplateInfo.
+        r"""Gets the tokenizer of this LtsStructTemplateInfo.
 
         parse_type为split类型时必填，分隔符，分词符号
 
@@ -322,7 +322,7 @@ class LtsStructTemplateInfo:
 
     @tokenizer.setter
     def tokenizer(self, tokenizer):
-        """Sets the tokenizer of this LtsStructTemplateInfo.
+        r"""Sets the tokenizer of this LtsStructTemplateInfo.
 
         parse_type为split类型时必填，分隔符，分词符号
 
@@ -333,7 +333,7 @@ class LtsStructTemplateInfo:
 
     @property
     def log_format(self):
-        """Gets the log_format of this LtsStructTemplateInfo.
+        r"""Gets the log_format of this LtsStructTemplateInfo.
 
         parse_type为nginx类型时必填，nginx日志格式模板
 
@@ -344,7 +344,7 @@ class LtsStructTemplateInfo:
 
     @log_format.setter
     def log_format(self, log_format):
-        """Sets the log_format of this LtsStructTemplateInfo.
+        r"""Sets the log_format of this LtsStructTemplateInfo.
 
         parse_type为nginx类型时必填，nginx日志格式模板
 
@@ -355,7 +355,7 @@ class LtsStructTemplateInfo:
 
     @property
     def rule(self):
-        """Gets the rule of this LtsStructTemplateInfo.
+        r"""Gets the rule of this LtsStructTemplateInfo.
 
         :return: The rule of this LtsStructTemplateInfo.
         :rtype: :class:`huaweicloudsdklts.v2.Rule`
@@ -364,7 +364,7 @@ class LtsStructTemplateInfo:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this LtsStructTemplateInfo.
+        r"""Sets the rule of this LtsStructTemplateInfo.
 
         :param rule: The rule of this LtsStructTemplateInfo.
         :type rule: :class:`huaweicloudsdklts.v2.Rule`

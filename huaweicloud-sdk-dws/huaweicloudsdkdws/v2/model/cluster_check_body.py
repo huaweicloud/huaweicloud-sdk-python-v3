@@ -63,7 +63,7 @@ class ClusterCheckBody:
     }
 
     def __init__(self, enterprise_project_id=None, flavor=None, availability_zones=None, num_node=None, security_group_id=None, datastore_version=None, vpc_id=None, subnet_id=None, public_ip=None, cross_spec_restore=None, volume=None, old_cluster_hostname=None, restore_point=None, tag_list=None, dss_pool_id=None, db_port=None, db_password=None, db_name=None, num_cn=None, name=None):
-        """ClusterCheckBody
+        r"""ClusterCheckBody
 
         The model defined in huaweicloud sdk
 
@@ -170,7 +170,7 @@ class ClusterCheckBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ClusterCheckBody.
+        r"""Gets the enterprise_project_id of this ClusterCheckBody.
 
         企业项目ID
 
@@ -181,7 +181,7 @@ class ClusterCheckBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ClusterCheckBody.
+        r"""Sets the enterprise_project_id of this ClusterCheckBody.
 
         企业项目ID
 
@@ -192,7 +192,7 @@ class ClusterCheckBody:
 
     @property
     def flavor(self):
-        """Gets the flavor of this ClusterCheckBody.
+        r"""Gets the flavor of this ClusterCheckBody.
 
         集群规格名称
 
@@ -203,7 +203,7 @@ class ClusterCheckBody:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ClusterCheckBody.
+        r"""Sets the flavor of this ClusterCheckBody.
 
         集群规格名称
 
@@ -214,7 +214,7 @@ class ClusterCheckBody:
 
     @property
     def availability_zones(self):
-        """Gets the availability_zones of this ClusterCheckBody.
+        r"""Gets the availability_zones of this ClusterCheckBody.
 
         可用区列表
 
@@ -225,7 +225,7 @@ class ClusterCheckBody:
 
     @availability_zones.setter
     def availability_zones(self, availability_zones):
-        """Sets the availability_zones of this ClusterCheckBody.
+        r"""Sets the availability_zones of this ClusterCheckBody.
 
         可用区列表
 
@@ -236,7 +236,7 @@ class ClusterCheckBody:
 
     @property
     def num_node(self):
-        """Gets the num_node of this ClusterCheckBody.
+        r"""Gets the num_node of this ClusterCheckBody.
 
         实例节点个数
 
@@ -247,7 +247,7 @@ class ClusterCheckBody:
 
     @num_node.setter
     def num_node(self, num_node):
-        """Sets the num_node of this ClusterCheckBody.
+        r"""Sets the num_node of this ClusterCheckBody.
 
         实例节点个数
 
@@ -258,7 +258,7 @@ class ClusterCheckBody:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ClusterCheckBody.
+        r"""Gets the security_group_id of this ClusterCheckBody.
 
         集群安全组ID
 
@@ -269,7 +269,7 @@ class ClusterCheckBody:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ClusterCheckBody.
+        r"""Sets the security_group_id of this ClusterCheckBody.
 
         集群安全组ID
 
@@ -280,7 +280,7 @@ class ClusterCheckBody:
 
     @property
     def datastore_version(self):
-        """Gets the datastore_version of this ClusterCheckBody.
+        r"""Gets the datastore_version of this ClusterCheckBody.
 
         集群版本
 
@@ -291,7 +291,7 @@ class ClusterCheckBody:
 
     @datastore_version.setter
     def datastore_version(self, datastore_version):
-        """Sets the datastore_version of this ClusterCheckBody.
+        r"""Sets the datastore_version of this ClusterCheckBody.
 
         集群版本
 
@@ -302,7 +302,7 @@ class ClusterCheckBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ClusterCheckBody.
+        r"""Gets the vpc_id of this ClusterCheckBody.
 
         集群虚拟私有云ID
 
@@ -313,7 +313,7 @@ class ClusterCheckBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ClusterCheckBody.
+        r"""Sets the vpc_id of this ClusterCheckBody.
 
         集群虚拟私有云ID
 
@@ -324,7 +324,7 @@ class ClusterCheckBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ClusterCheckBody.
+        r"""Gets the subnet_id of this ClusterCheckBody.
 
         集群子网ID
 
@@ -335,7 +335,7 @@ class ClusterCheckBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ClusterCheckBody.
+        r"""Sets the subnet_id of this ClusterCheckBody.
 
         集群子网ID
 
@@ -346,7 +346,7 @@ class ClusterCheckBody:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ClusterCheckBody.
+        r"""Gets the public_ip of this ClusterCheckBody.
 
         :return: The public_ip of this ClusterCheckBody.
         :rtype: :class:`huaweicloudsdkdws.v2.OpenPublicIp`
@@ -355,7 +355,7 @@ class ClusterCheckBody:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ClusterCheckBody.
+        r"""Sets the public_ip of this ClusterCheckBody.
 
         :param public_ip: The public_ip of this ClusterCheckBody.
         :type public_ip: :class:`huaweicloudsdkdws.v2.OpenPublicIp`
@@ -364,7 +364,7 @@ class ClusterCheckBody:
 
     @property
     def cross_spec_restore(self):
-        """Gets the cross_spec_restore of this ClusterCheckBody.
+        r"""Gets the cross_spec_restore of this ClusterCheckBody.
 
         跨规格恢复
 
@@ -375,7 +375,7 @@ class ClusterCheckBody:
 
     @cross_spec_restore.setter
     def cross_spec_restore(self, cross_spec_restore):
-        """Sets the cross_spec_restore of this ClusterCheckBody.
+        r"""Sets the cross_spec_restore of this ClusterCheckBody.
 
         跨规格恢复
 
@@ -386,7 +386,7 @@ class ClusterCheckBody:
 
     @property
     def volume(self):
-        """Gets the volume of this ClusterCheckBody.
+        r"""Gets the volume of this ClusterCheckBody.
 
         :return: The volume of this ClusterCheckBody.
         :rtype: :class:`huaweicloudsdkdws.v2.Volume`
@@ -395,7 +395,7 @@ class ClusterCheckBody:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this ClusterCheckBody.
+        r"""Sets the volume of this ClusterCheckBody.
 
         :param volume: The volume of this ClusterCheckBody.
         :type volume: :class:`huaweicloudsdkdws.v2.Volume`
@@ -404,7 +404,7 @@ class ClusterCheckBody:
 
     @property
     def old_cluster_hostname(self):
-        """Gets the old_cluster_hostname of this ClusterCheckBody.
+        r"""Gets the old_cluster_hostname of this ClusterCheckBody.
 
         旧主机名
 
@@ -415,7 +415,7 @@ class ClusterCheckBody:
 
     @old_cluster_hostname.setter
     def old_cluster_hostname(self, old_cluster_hostname):
-        """Sets the old_cluster_hostname of this ClusterCheckBody.
+        r"""Sets the old_cluster_hostname of this ClusterCheckBody.
 
         旧主机名
 
@@ -426,7 +426,7 @@ class ClusterCheckBody:
 
     @property
     def restore_point(self):
-        """Gets the restore_point of this ClusterCheckBody.
+        r"""Gets the restore_point of this ClusterCheckBody.
 
         :return: The restore_point of this ClusterCheckBody.
         :rtype: :class:`huaweicloudsdkdws.v2.RestorePoint`
@@ -435,7 +435,7 @@ class ClusterCheckBody:
 
     @restore_point.setter
     def restore_point(self, restore_point):
-        """Sets the restore_point of this ClusterCheckBody.
+        r"""Sets the restore_point of this ClusterCheckBody.
 
         :param restore_point: The restore_point of this ClusterCheckBody.
         :type restore_point: :class:`huaweicloudsdkdws.v2.RestorePoint`
@@ -444,7 +444,7 @@ class ClusterCheckBody:
 
     @property
     def tag_list(self):
-        """Gets the tag_list of this ClusterCheckBody.
+        r"""Gets the tag_list of this ClusterCheckBody.
 
         标签列表
 
@@ -455,7 +455,7 @@ class ClusterCheckBody:
 
     @tag_list.setter
     def tag_list(self, tag_list):
-        """Sets the tag_list of this ClusterCheckBody.
+        r"""Sets the tag_list of this ClusterCheckBody.
 
         标签列表
 
@@ -466,7 +466,7 @@ class ClusterCheckBody:
 
     @property
     def dss_pool_id(self):
-        """Gets the dss_pool_id of this ClusterCheckBody.
+        r"""Gets the dss_pool_id of this ClusterCheckBody.
 
         存储池ID
 
@@ -477,7 +477,7 @@ class ClusterCheckBody:
 
     @dss_pool_id.setter
     def dss_pool_id(self, dss_pool_id):
-        """Sets the dss_pool_id of this ClusterCheckBody.
+        r"""Sets the dss_pool_id of this ClusterCheckBody.
 
         存储池ID
 
@@ -488,7 +488,7 @@ class ClusterCheckBody:
 
     @property
     def db_port(self):
-        """Gets the db_port of this ClusterCheckBody.
+        r"""Gets the db_port of this ClusterCheckBody.
 
         数据库端口
 
@@ -499,7 +499,7 @@ class ClusterCheckBody:
 
     @db_port.setter
     def db_port(self, db_port):
-        """Sets the db_port of this ClusterCheckBody.
+        r"""Sets the db_port of this ClusterCheckBody.
 
         数据库端口
 
@@ -510,7 +510,7 @@ class ClusterCheckBody:
 
     @property
     def db_password(self):
-        """Gets the db_password of this ClusterCheckBody.
+        r"""Gets the db_password of this ClusterCheckBody.
 
         管理员密码
 
@@ -521,7 +521,7 @@ class ClusterCheckBody:
 
     @db_password.setter
     def db_password(self, db_password):
-        """Sets the db_password of this ClusterCheckBody.
+        r"""Sets the db_password of this ClusterCheckBody.
 
         管理员密码
 
@@ -532,7 +532,7 @@ class ClusterCheckBody:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ClusterCheckBody.
+        r"""Gets the db_name of this ClusterCheckBody.
 
         管理员用户
 
@@ -543,7 +543,7 @@ class ClusterCheckBody:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ClusterCheckBody.
+        r"""Sets the db_name of this ClusterCheckBody.
 
         管理员用户
 
@@ -554,7 +554,7 @@ class ClusterCheckBody:
 
     @property
     def num_cn(self):
-        """Gets the num_cn of this ClusterCheckBody.
+        r"""Gets the num_cn of this ClusterCheckBody.
 
         cn节点数量
 
@@ -565,7 +565,7 @@ class ClusterCheckBody:
 
     @num_cn.setter
     def num_cn(self, num_cn):
-        """Sets the num_cn of this ClusterCheckBody.
+        r"""Sets the num_cn of this ClusterCheckBody.
 
         cn节点数量
 
@@ -576,7 +576,7 @@ class ClusterCheckBody:
 
     @property
     def name(self):
-        """Gets the name of this ClusterCheckBody.
+        r"""Gets the name of this ClusterCheckBody.
 
         集群名称
 
@@ -587,7 +587,7 @@ class ClusterCheckBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClusterCheckBody.
+        r"""Sets the name of this ClusterCheckBody.
 
         集群名称
 

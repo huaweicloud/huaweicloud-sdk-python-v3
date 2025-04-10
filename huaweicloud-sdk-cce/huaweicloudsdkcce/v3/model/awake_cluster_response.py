@@ -24,7 +24,7 @@ class AwakeClusterResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AwakeClusterResponse
+        r"""AwakeClusterResponse
 
         The model defined in huaweicloud sdk
 

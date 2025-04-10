@@ -35,7 +35,7 @@ class CdmRestartClusterReqRestart:
     }
 
     def __init__(self, restart_delay_time=None, restart_mode=None, restart_level=None, type=None, instance=None, group=None):
-        """CdmRestartClusterReqRestart
+        r"""CdmRestartClusterReqRestart
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class CdmRestartClusterReqRestart:
 
     @property
     def restart_delay_time(self):
-        """Gets the restart_delay_time of this CdmRestartClusterReqRestart.
+        r"""Gets the restart_delay_time of this CdmRestartClusterReqRestart.
 
         重启时延，单位：秒
 
@@ -88,7 +88,7 @@ class CdmRestartClusterReqRestart:
 
     @restart_delay_time.setter
     def restart_delay_time(self, restart_delay_time):
-        """Sets the restart_delay_time of this CdmRestartClusterReqRestart.
+        r"""Sets the restart_delay_time of this CdmRestartClusterReqRestart.
 
         重启时延，单位：秒
 
@@ -99,7 +99,7 @@ class CdmRestartClusterReqRestart:
 
     @property
     def restart_mode(self):
-        """Gets the restart_mode of this CdmRestartClusterReqRestart.
+        r"""Gets the restart_mode of this CdmRestartClusterReqRestart.
 
         重启类型： - IMMEDIATELY：立即重启。 - FORCELY：强制重启。 - SOFTLY：一般重启。  默认值为“IMMEDIATELY”。强制重启业务进程会中断，并重启集群的虚拟机。
 
@@ -110,7 +110,7 @@ class CdmRestartClusterReqRestart:
 
     @restart_mode.setter
     def restart_mode(self, restart_mode):
-        """Sets the restart_mode of this CdmRestartClusterReqRestart.
+        r"""Sets the restart_mode of this CdmRestartClusterReqRestart.
 
         重启类型： - IMMEDIATELY：立即重启。 - FORCELY：强制重启。 - SOFTLY：一般重启。  默认值为“IMMEDIATELY”。强制重启业务进程会中断，并重启集群的虚拟机。
 
@@ -121,7 +121,7 @@ class CdmRestartClusterReqRestart:
 
     @property
     def restart_level(self):
-        """Gets the restart_level of this CdmRestartClusterReqRestart.
+        r"""Gets the restart_level of this CdmRestartClusterReqRestart.
 
         重启级别： - SERVICE：重启服务。 - VM：重启虚拟机。  默认值为“SERVICE”。
 
@@ -132,7 +132,7 @@ class CdmRestartClusterReqRestart:
 
     @restart_level.setter
     def restart_level(self, restart_level):
-        """Sets the restart_level of this CdmRestartClusterReqRestart.
+        r"""Sets the restart_level of this CdmRestartClusterReqRestart.
 
         重启级别： - SERVICE：重启服务。 - VM：重启虚拟机。  默认值为“SERVICE”。
 
@@ -143,7 +143,7 @@ class CdmRestartClusterReqRestart:
 
     @property
     def type(self):
-        """Gets the type of this CdmRestartClusterReqRestart.
+        r"""Gets the type of this CdmRestartClusterReqRestart.
 
         集群节点类型，只支持“cdm”
 
@@ -154,7 +154,7 @@ class CdmRestartClusterReqRestart:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CdmRestartClusterReqRestart.
+        r"""Sets the type of this CdmRestartClusterReqRestart.
 
         集群节点类型，只支持“cdm”
 
@@ -165,7 +165,7 @@ class CdmRestartClusterReqRestart:
 
     @property
     def instance(self):
-        """Gets the instance of this CdmRestartClusterReqRestart.
+        r"""Gets the instance of this CdmRestartClusterReqRestart.
 
         预留字段，“restartLevel” 为“SERVICE”时，“instance”必填，填空字串。
 
@@ -176,7 +176,7 @@ class CdmRestartClusterReqRestart:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this CdmRestartClusterReqRestart.
+        r"""Sets the instance of this CdmRestartClusterReqRestart.
 
         预留字段，“restartLevel” 为“SERVICE”时，“instance”必填，填空字串。
 
@@ -187,7 +187,7 @@ class CdmRestartClusterReqRestart:
 
     @property
     def group(self):
-        """Gets the group of this CdmRestartClusterReqRestart.
+        r"""Gets the group of this CdmRestartClusterReqRestart.
 
         预留字段，“restartLevel” 为“SERVICE”时，“group”必填，填空字串。
 
@@ -198,7 +198,7 @@ class CdmRestartClusterReqRestart:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this CdmRestartClusterReqRestart.
+        r"""Sets the group of this CdmRestartClusterReqRestart.
 
         预留字段，“restartLevel” 为“SERVICE”时，“group”必填，填空字串。
 

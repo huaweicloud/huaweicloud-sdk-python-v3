@@ -39,7 +39,7 @@ class VpnAccessPolicy:
     }
 
     def __init__(self, id=None, name=None, user_group_id=None, user_group_name=None, description=None, dest_ip_cidrs=None, created_at=None, updated_at=None):
-        """VpnAccessPolicy
+        r"""VpnAccessPolicy
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class VpnAccessPolicy:
 
     @property
     def id(self):
-        """Gets the id of this VpnAccessPolicy.
+        r"""Gets the id of this VpnAccessPolicy.
 
         访问策略ID
 
@@ -103,7 +103,7 @@ class VpnAccessPolicy:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VpnAccessPolicy.
+        r"""Sets the id of this VpnAccessPolicy.
 
         访问策略ID
 
@@ -114,7 +114,7 @@ class VpnAccessPolicy:
 
     @property
     def name(self):
-        """Gets the name of this VpnAccessPolicy.
+        r"""Gets the name of this VpnAccessPolicy.
 
         访问策略名称
 
@@ -125,7 +125,7 @@ class VpnAccessPolicy:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VpnAccessPolicy.
+        r"""Sets the name of this VpnAccessPolicy.
 
         访问策略名称
 
@@ -136,7 +136,7 @@ class VpnAccessPolicy:
 
     @property
     def user_group_id(self):
-        """Gets the user_group_id of this VpnAccessPolicy.
+        r"""Gets the user_group_id of this VpnAccessPolicy.
 
         关联用户组ID
 
@@ -147,7 +147,7 @@ class VpnAccessPolicy:
 
     @user_group_id.setter
     def user_group_id(self, user_group_id):
-        """Sets the user_group_id of this VpnAccessPolicy.
+        r"""Sets the user_group_id of this VpnAccessPolicy.
 
         关联用户组ID
 
@@ -158,7 +158,7 @@ class VpnAccessPolicy:
 
     @property
     def user_group_name(self):
-        """Gets the user_group_name of this VpnAccessPolicy.
+        r"""Gets the user_group_name of this VpnAccessPolicy.
 
         关联用户组名称
 
@@ -169,7 +169,7 @@ class VpnAccessPolicy:
 
     @user_group_name.setter
     def user_group_name(self, user_group_name):
-        """Sets the user_group_name of this VpnAccessPolicy.
+        r"""Sets the user_group_name of this VpnAccessPolicy.
 
         关联用户组名称
 
@@ -180,7 +180,7 @@ class VpnAccessPolicy:
 
     @property
     def description(self):
-        """Gets the description of this VpnAccessPolicy.
+        r"""Gets the description of this VpnAccessPolicy.
 
         访问策略描述
 
@@ -191,7 +191,7 @@ class VpnAccessPolicy:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this VpnAccessPolicy.
+        r"""Sets the description of this VpnAccessPolicy.
 
         访问策略描述
 
@@ -202,7 +202,7 @@ class VpnAccessPolicy:
 
     @property
     def dest_ip_cidrs(self):
-        """Gets the dest_ip_cidrs of this VpnAccessPolicy.
+        r"""Gets the dest_ip_cidrs of this VpnAccessPolicy.
 
         目的IP网段列表
 
@@ -213,7 +213,7 @@ class VpnAccessPolicy:
 
     @dest_ip_cidrs.setter
     def dest_ip_cidrs(self, dest_ip_cidrs):
-        """Sets the dest_ip_cidrs of this VpnAccessPolicy.
+        r"""Sets the dest_ip_cidrs of this VpnAccessPolicy.
 
         目的IP网段列表
 
@@ -224,7 +224,7 @@ class VpnAccessPolicy:
 
     @property
     def created_at(self):
-        """Gets the created_at of this VpnAccessPolicy.
+        r"""Gets the created_at of this VpnAccessPolicy.
 
         创建时间
 
@@ -235,7 +235,7 @@ class VpnAccessPolicy:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this VpnAccessPolicy.
+        r"""Sets the created_at of this VpnAccessPolicy.
 
         创建时间
 
@@ -246,7 +246,7 @@ class VpnAccessPolicy:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this VpnAccessPolicy.
+        r"""Gets the updated_at of this VpnAccessPolicy.
 
         更新时间
 
@@ -257,7 +257,7 @@ class VpnAccessPolicy:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this VpnAccessPolicy.
+        r"""Sets the updated_at of this VpnAccessPolicy.
 
         更新时间
 

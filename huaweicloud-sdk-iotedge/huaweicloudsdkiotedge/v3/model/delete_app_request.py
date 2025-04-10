@@ -25,7 +25,7 @@ class DeleteAppRequest:
     }
 
     def __init__(self, app_id=None):
-        """DeleteAppRequest
+        r"""DeleteAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAppRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this DeleteAppRequest.
+        r"""Gets the app_id of this DeleteAppRequest.
 
         应用ID
 
@@ -53,7 +53,7 @@ class DeleteAppRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this DeleteAppRequest.
+        r"""Sets the app_id of this DeleteAppRequest.
 
         应用ID
 

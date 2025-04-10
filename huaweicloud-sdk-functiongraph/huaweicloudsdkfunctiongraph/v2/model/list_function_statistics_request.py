@@ -27,7 +27,7 @@ class ListFunctionStatisticsRequest:
     }
 
     def __init__(self, func_urn=None, period=None):
-        """ListFunctionStatisticsRequest
+        r"""ListFunctionStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListFunctionStatisticsRequest:
 
     @property
     def func_urn(self):
-        """Gets the func_urn of this ListFunctionStatisticsRequest.
+        r"""Gets the func_urn of this ListFunctionStatisticsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -59,7 +59,7 @@ class ListFunctionStatisticsRequest:
 
     @func_urn.setter
     def func_urn(self, func_urn):
-        """Sets the func_urn of this ListFunctionStatisticsRequest.
+        r"""Sets the func_urn of this ListFunctionStatisticsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -70,7 +70,7 @@ class ListFunctionStatisticsRequest:
 
     @property
     def period(self):
-        """Gets the period of this ListFunctionStatisticsRequest.
+        r"""Gets the period of this ListFunctionStatisticsRequest.
 
         获取最近多少分钟内函数执行的指标。
 
@@ -81,7 +81,7 @@ class ListFunctionStatisticsRequest:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ListFunctionStatisticsRequest.
+        r"""Sets the period of this ListFunctionStatisticsRequest.
 
         获取最近多少分钟内函数执行的指标。
 

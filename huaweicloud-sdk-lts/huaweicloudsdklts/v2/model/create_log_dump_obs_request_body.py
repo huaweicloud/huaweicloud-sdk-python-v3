@@ -43,7 +43,7 @@ class CreateLogDumpObsRequestBody:
     }
 
     def __init__(self, log_group_id=None, log_stream_ids=None, obs_bucket_name=None, type=None, storage_format=None, switch_on=None, prefix_name=None, dir_prefix_name=None, period=None, period_unit=None):
-        """CreateLogDumpObsRequestBody
+        r"""CreateLogDumpObsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class CreateLogDumpObsRequestBody:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this CreateLogDumpObsRequestBody.
+        r"""Gets the log_group_id of this CreateLogDumpObsRequestBody.
 
         日志组id。
 
@@ -110,7 +110,7 @@ class CreateLogDumpObsRequestBody:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this CreateLogDumpObsRequestBody.
+        r"""Sets the log_group_id of this CreateLogDumpObsRequestBody.
 
         日志组id。
 
@@ -121,7 +121,7 @@ class CreateLogDumpObsRequestBody:
 
     @property
     def log_stream_ids(self):
-        """Gets the log_stream_ids of this CreateLogDumpObsRequestBody.
+        r"""Gets the log_stream_ids of this CreateLogDumpObsRequestBody.
 
         日志流id列表, 可以指定一个或多个日志流进行obs周期性转储
 
@@ -132,7 +132,7 @@ class CreateLogDumpObsRequestBody:
 
     @log_stream_ids.setter
     def log_stream_ids(self, log_stream_ids):
-        """Sets the log_stream_ids of this CreateLogDumpObsRequestBody.
+        r"""Sets the log_stream_ids of this CreateLogDumpObsRequestBody.
 
         日志流id列表, 可以指定一个或多个日志流进行obs周期性转储
 
@@ -143,7 +143,7 @@ class CreateLogDumpObsRequestBody:
 
     @property
     def obs_bucket_name(self):
-        """Gets the obs_bucket_name of this CreateLogDumpObsRequestBody.
+        r"""Gets the obs_bucket_name of this CreateLogDumpObsRequestBody.
 
         obs 桶名称。
 
@@ -154,7 +154,7 @@ class CreateLogDumpObsRequestBody:
 
     @obs_bucket_name.setter
     def obs_bucket_name(self, obs_bucket_name):
-        """Sets the obs_bucket_name of this CreateLogDumpObsRequestBody.
+        r"""Sets the obs_bucket_name of this CreateLogDumpObsRequestBody.
 
         obs 桶名称。
 
@@ -165,7 +165,7 @@ class CreateLogDumpObsRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateLogDumpObsRequestBody.
+        r"""Gets the type of this CreateLogDumpObsRequestBody.
 
         周期性转储, 必须填 cycle。
 
@@ -176,7 +176,7 @@ class CreateLogDumpObsRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateLogDumpObsRequestBody.
+        r"""Sets the type of this CreateLogDumpObsRequestBody.
 
         周期性转储, 必须填 cycle。
 
@@ -187,7 +187,7 @@ class CreateLogDumpObsRequestBody:
 
     @property
     def storage_format(self):
-        """Gets the storage_format of this CreateLogDumpObsRequestBody.
+        r"""Gets the storage_format of this CreateLogDumpObsRequestBody.
 
         转储格式 RAW/JSON， 默认为 RAW。
 
@@ -198,7 +198,7 @@ class CreateLogDumpObsRequestBody:
 
     @storage_format.setter
     def storage_format(self, storage_format):
-        """Sets the storage_format of this CreateLogDumpObsRequestBody.
+        r"""Sets the storage_format of this CreateLogDumpObsRequestBody.
 
         转储格式 RAW/JSON， 默认为 RAW。
 
@@ -209,7 +209,7 @@ class CreateLogDumpObsRequestBody:
 
     @property
     def switch_on(self):
-        """Gets the switch_on of this CreateLogDumpObsRequestBody.
+        r"""Gets the switch_on of this CreateLogDumpObsRequestBody.
 
         是否开启转储 true/false, 默认为 true
 
@@ -220,7 +220,7 @@ class CreateLogDumpObsRequestBody:
 
     @switch_on.setter
     def switch_on(self, switch_on):
-        """Sets the switch_on of this CreateLogDumpObsRequestBody.
+        r"""Sets the switch_on of this CreateLogDumpObsRequestBody.
 
         是否开启转储 true/false, 默认为 true
 
@@ -231,7 +231,7 @@ class CreateLogDumpObsRequestBody:
 
     @property
     def prefix_name(self):
-        """Gets the prefix_name of this CreateLogDumpObsRequestBody.
+        r"""Gets the prefix_name of this CreateLogDumpObsRequestBody.
 
         转储至OBS桶中的日志文件前缀。
 
@@ -242,7 +242,7 @@ class CreateLogDumpObsRequestBody:
 
     @prefix_name.setter
     def prefix_name(self, prefix_name):
-        """Sets the prefix_name of this CreateLogDumpObsRequestBody.
+        r"""Sets the prefix_name of this CreateLogDumpObsRequestBody.
 
         转储至OBS桶中的日志文件前缀。
 
@@ -253,7 +253,7 @@ class CreateLogDumpObsRequestBody:
 
     @property
     def dir_prefix_name(self):
-        """Gets the dir_prefix_name of this CreateLogDumpObsRequestBody.
+        r"""Gets the dir_prefix_name of this CreateLogDumpObsRequestBody.
 
         自定义文件夹路径。
 
@@ -264,7 +264,7 @@ class CreateLogDumpObsRequestBody:
 
     @dir_prefix_name.setter
     def dir_prefix_name(self, dir_prefix_name):
-        """Sets the dir_prefix_name of this CreateLogDumpObsRequestBody.
+        r"""Sets the dir_prefix_name of this CreateLogDumpObsRequestBody.
 
         自定义文件夹路径。
 
@@ -275,7 +275,7 @@ class CreateLogDumpObsRequestBody:
 
     @property
     def period(self):
-        """Gets the period of this CreateLogDumpObsRequestBody.
+        r"""Gets the period of this CreateLogDumpObsRequestBody.
 
         转储周期的长度， 与 period_unit 拼接后必须在该列表中 [\"2min\",\"5min\",\"30min\",\"1hour\",\"3hour\",\"6hour\",\"12hour\"]。
 
@@ -286,7 +286,7 @@ class CreateLogDumpObsRequestBody:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this CreateLogDumpObsRequestBody.
+        r"""Sets the period of this CreateLogDumpObsRequestBody.
 
         转储周期的长度， 与 period_unit 拼接后必须在该列表中 [\"2min\",\"5min\",\"30min\",\"1hour\",\"3hour\",\"6hour\",\"12hour\"]。
 
@@ -297,7 +297,7 @@ class CreateLogDumpObsRequestBody:
 
     @property
     def period_unit(self):
-        """Gets the period_unit of this CreateLogDumpObsRequestBody.
+        r"""Gets the period_unit of this CreateLogDumpObsRequestBody.
 
         转储周期的单位， 与 period 拼接后必须在该列表中 [\"2min\",\"5min\",\"30min\",\"1hour\",\"3hour\",\"6hour\",\"12hour\"]。
 
@@ -308,7 +308,7 @@ class CreateLogDumpObsRequestBody:
 
     @period_unit.setter
     def period_unit(self, period_unit):
-        """Sets the period_unit of this CreateLogDumpObsRequestBody.
+        r"""Sets the period_unit of this CreateLogDumpObsRequestBody.
 
         转储周期的单位， 与 period 拼接后必须在该列表中 [\"2min\",\"5min\",\"30min\",\"1hour\",\"3hour\",\"6hour\",\"12hour\"]。
 

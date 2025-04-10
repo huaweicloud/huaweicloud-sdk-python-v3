@@ -63,7 +63,7 @@ class PluginBasicVO:
     }
 
     def __init__(self, plugin_name=None, display_name=None, version=None, version_description=None, description=None, version_attribution=None, unique_id=None, op_user=None, op_time=None, plugin_composition_type=None, plugin_attribution=None, workspace_id=None, business_type=None, business_type_display_name=None, maintainers=None, icon_url=None, refer_count=None, usage_count=None, runtime_attribution=None, active=None):
-        """PluginBasicVO
+        r"""PluginBasicVO
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class PluginBasicVO:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this PluginBasicVO.
+        r"""Gets the plugin_name of this PluginBasicVO.
 
         插件名
 
@@ -187,7 +187,7 @@ class PluginBasicVO:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this PluginBasicVO.
+        r"""Sets the plugin_name of this PluginBasicVO.
 
         插件名
 
@@ -198,7 +198,7 @@ class PluginBasicVO:
 
     @property
     def display_name(self):
-        """Gets the display_name of this PluginBasicVO.
+        r"""Gets the display_name of this PluginBasicVO.
 
         展示名
 
@@ -209,7 +209,7 @@ class PluginBasicVO:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this PluginBasicVO.
+        r"""Sets the display_name of this PluginBasicVO.
 
         展示名
 
@@ -220,7 +220,7 @@ class PluginBasicVO:
 
     @property
     def version(self):
-        """Gets the version of this PluginBasicVO.
+        r"""Gets the version of this PluginBasicVO.
 
         版本
 
@@ -231,7 +231,7 @@ class PluginBasicVO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PluginBasicVO.
+        r"""Sets the version of this PluginBasicVO.
 
         版本
 
@@ -242,7 +242,7 @@ class PluginBasicVO:
 
     @property
     def version_description(self):
-        """Gets the version_description of this PluginBasicVO.
+        r"""Gets the version_description of this PluginBasicVO.
 
         版本说明
 
@@ -253,7 +253,7 @@ class PluginBasicVO:
 
     @version_description.setter
     def version_description(self, version_description):
-        """Sets the version_description of this PluginBasicVO.
+        r"""Sets the version_description of this PluginBasicVO.
 
         版本说明
 
@@ -264,7 +264,7 @@ class PluginBasicVO:
 
     @property
     def description(self):
-        """Gets the description of this PluginBasicVO.
+        r"""Gets the description of this PluginBasicVO.
 
         描述
 
@@ -275,7 +275,7 @@ class PluginBasicVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PluginBasicVO.
+        r"""Sets the description of this PluginBasicVO.
 
         描述
 
@@ -286,7 +286,7 @@ class PluginBasicVO:
 
     @property
     def version_attribution(self):
-        """Gets the version_attribution of this PluginBasicVO.
+        r"""Gets the version_attribution of this PluginBasicVO.
 
         版本属性
 
@@ -297,7 +297,7 @@ class PluginBasicVO:
 
     @version_attribution.setter
     def version_attribution(self, version_attribution):
-        """Sets the version_attribution of this PluginBasicVO.
+        r"""Sets the version_attribution of this PluginBasicVO.
 
         版本属性
 
@@ -308,7 +308,7 @@ class PluginBasicVO:
 
     @property
     def unique_id(self):
-        """Gets the unique_id of this PluginBasicVO.
+        r"""Gets the unique_id of this PluginBasicVO.
 
         唯一ID
 
@@ -319,7 +319,7 @@ class PluginBasicVO:
 
     @unique_id.setter
     def unique_id(self, unique_id):
-        """Sets the unique_id of this PluginBasicVO.
+        r"""Sets the unique_id of this PluginBasicVO.
 
         唯一ID
 
@@ -330,7 +330,7 @@ class PluginBasicVO:
 
     @property
     def op_user(self):
-        """Gets the op_user of this PluginBasicVO.
+        r"""Gets the op_user of this PluginBasicVO.
 
         操作人
 
@@ -341,7 +341,7 @@ class PluginBasicVO:
 
     @op_user.setter
     def op_user(self, op_user):
-        """Sets the op_user of this PluginBasicVO.
+        r"""Sets the op_user of this PluginBasicVO.
 
         操作人
 
@@ -352,7 +352,7 @@ class PluginBasicVO:
 
     @property
     def op_time(self):
-        """Gets the op_time of this PluginBasicVO.
+        r"""Gets the op_time of this PluginBasicVO.
 
         操作时间
 
@@ -363,7 +363,7 @@ class PluginBasicVO:
 
     @op_time.setter
     def op_time(self, op_time):
-        """Sets the op_time of this PluginBasicVO.
+        r"""Sets the op_time of this PluginBasicVO.
 
         操作时间
 
@@ -374,7 +374,7 @@ class PluginBasicVO:
 
     @property
     def plugin_composition_type(self):
-        """Gets the plugin_composition_type of this PluginBasicVO.
+        r"""Gets the plugin_composition_type of this PluginBasicVO.
 
         组合类型
 
@@ -385,7 +385,7 @@ class PluginBasicVO:
 
     @plugin_composition_type.setter
     def plugin_composition_type(self, plugin_composition_type):
-        """Sets the plugin_composition_type of this PluginBasicVO.
+        r"""Sets the plugin_composition_type of this PluginBasicVO.
 
         组合类型
 
@@ -396,7 +396,7 @@ class PluginBasicVO:
 
     @property
     def plugin_attribution(self):
-        """Gets the plugin_attribution of this PluginBasicVO.
+        r"""Gets the plugin_attribution of this PluginBasicVO.
 
         属性
 
@@ -407,7 +407,7 @@ class PluginBasicVO:
 
     @plugin_attribution.setter
     def plugin_attribution(self, plugin_attribution):
-        """Sets the plugin_attribution of this PluginBasicVO.
+        r"""Sets the plugin_attribution of this PluginBasicVO.
 
         属性
 
@@ -418,7 +418,7 @@ class PluginBasicVO:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this PluginBasicVO.
+        r"""Gets the workspace_id of this PluginBasicVO.
 
         租户ID
 
@@ -429,7 +429,7 @@ class PluginBasicVO:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this PluginBasicVO.
+        r"""Sets the workspace_id of this PluginBasicVO.
 
         租户ID
 
@@ -440,7 +440,7 @@ class PluginBasicVO:
 
     @property
     def business_type(self):
-        """Gets the business_type of this PluginBasicVO.
+        r"""Gets the business_type of this PluginBasicVO.
 
         业务类型
 
@@ -451,7 +451,7 @@ class PluginBasicVO:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this PluginBasicVO.
+        r"""Sets the business_type of this PluginBasicVO.
 
         业务类型
 
@@ -462,7 +462,7 @@ class PluginBasicVO:
 
     @property
     def business_type_display_name(self):
-        """Gets the business_type_display_name of this PluginBasicVO.
+        r"""Gets the business_type_display_name of this PluginBasicVO.
 
         业务类型展示名
 
@@ -473,7 +473,7 @@ class PluginBasicVO:
 
     @business_type_display_name.setter
     def business_type_display_name(self, business_type_display_name):
-        """Sets the business_type_display_name of this PluginBasicVO.
+        r"""Sets the business_type_display_name of this PluginBasicVO.
 
         业务类型展示名
 
@@ -484,7 +484,7 @@ class PluginBasicVO:
 
     @property
     def maintainers(self):
-        """Gets the maintainers of this PluginBasicVO.
+        r"""Gets the maintainers of this PluginBasicVO.
 
         维护者
 
@@ -495,7 +495,7 @@ class PluginBasicVO:
 
     @maintainers.setter
     def maintainers(self, maintainers):
-        """Sets the maintainers of this PluginBasicVO.
+        r"""Sets the maintainers of this PluginBasicVO.
 
         维护者
 
@@ -506,7 +506,7 @@ class PluginBasicVO:
 
     @property
     def icon_url(self):
-        """Gets the icon_url of this PluginBasicVO.
+        r"""Gets the icon_url of this PluginBasicVO.
 
         图标URL
 
@@ -517,7 +517,7 @@ class PluginBasicVO:
 
     @icon_url.setter
     def icon_url(self, icon_url):
-        """Sets the icon_url of this PluginBasicVO.
+        r"""Sets the icon_url of this PluginBasicVO.
 
         图标URL
 
@@ -528,7 +528,7 @@ class PluginBasicVO:
 
     @property
     def refer_count(self):
-        """Gets the refer_count of this PluginBasicVO.
+        r"""Gets the refer_count of this PluginBasicVO.
 
         引用次数
 
@@ -539,7 +539,7 @@ class PluginBasicVO:
 
     @refer_count.setter
     def refer_count(self, refer_count):
-        """Sets the refer_count of this PluginBasicVO.
+        r"""Sets the refer_count of this PluginBasicVO.
 
         引用次数
 
@@ -550,7 +550,7 @@ class PluginBasicVO:
 
     @property
     def usage_count(self):
-        """Gets the usage_count of this PluginBasicVO.
+        r"""Gets the usage_count of this PluginBasicVO.
 
         使用次数
 
@@ -561,7 +561,7 @@ class PluginBasicVO:
 
     @usage_count.setter
     def usage_count(self, usage_count):
-        """Sets the usage_count of this PluginBasicVO.
+        r"""Sets the usage_count of this PluginBasicVO.
 
         使用次数
 
@@ -572,7 +572,7 @@ class PluginBasicVO:
 
     @property
     def runtime_attribution(self):
-        """Gets the runtime_attribution of this PluginBasicVO.
+        r"""Gets the runtime_attribution of this PluginBasicVO.
 
         运行属性
 
@@ -583,7 +583,7 @@ class PluginBasicVO:
 
     @runtime_attribution.setter
     def runtime_attribution(self, runtime_attribution):
-        """Sets the runtime_attribution of this PluginBasicVO.
+        r"""Sets the runtime_attribution of this PluginBasicVO.
 
         运行属性
 
@@ -594,7 +594,7 @@ class PluginBasicVO:
 
     @property
     def active(self):
-        """Gets the active of this PluginBasicVO.
+        r"""Gets the active of this PluginBasicVO.
 
         是否激活
 
@@ -605,7 +605,7 @@ class PluginBasicVO:
 
     @active.setter
     def active(self, active):
-        """Sets the active of this PluginBasicVO.
+        r"""Sets the active of this PluginBasicVO.
 
         是否激活
 

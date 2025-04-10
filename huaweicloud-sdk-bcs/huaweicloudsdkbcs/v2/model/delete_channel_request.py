@@ -27,7 +27,7 @@ class DeleteChannelRequest:
     }
 
     def __init__(self, blockchain_id=None, channel_id=None):
-        """DeleteChannelRequest
+        r"""DeleteChannelRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteChannelRequest:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this DeleteChannelRequest.
+        r"""Gets the blockchain_id of this DeleteChannelRequest.
 
         区块链服务id。可调用“查询服务实例列表”接口获取ID
 
@@ -59,7 +59,7 @@ class DeleteChannelRequest:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this DeleteChannelRequest.
+        r"""Sets the blockchain_id of this DeleteChannelRequest.
 
         区块链服务id。可调用“查询服务实例列表”接口获取ID
 
@@ -70,7 +70,7 @@ class DeleteChannelRequest:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this DeleteChannelRequest.
+        r"""Gets the channel_id of this DeleteChannelRequest.
 
         区块链通道名称。可调用“查询实例信息”接口获取，接口返回的“channels”中的name字段值
 
@@ -81,7 +81,7 @@ class DeleteChannelRequest:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this DeleteChannelRequest.
+        r"""Sets the channel_id of this DeleteChannelRequest.
 
         区块链通道名称。可调用“查询实例信息”接口获取，接口返回的“channels”中的name字段值
 

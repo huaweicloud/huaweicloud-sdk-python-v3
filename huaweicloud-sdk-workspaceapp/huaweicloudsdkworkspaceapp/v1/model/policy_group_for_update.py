@@ -33,7 +33,7 @@ class PolicyGroupForUpdate:
     }
 
     def __init__(self, policy_group_name=None, description=None, priority=None, targets=None, policies=None):
-        """PolicyGroupForUpdate
+        r"""PolicyGroupForUpdate
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class PolicyGroupForUpdate:
 
     @property
     def policy_group_name(self):
-        """Gets the policy_group_name of this PolicyGroupForUpdate.
+        r"""Gets the policy_group_name of this PolicyGroupForUpdate.
 
         策略组名称，名称需要满足如下规则： 1. 由英文、数字或者下划线组成，不能有空格。 2. 字符长度范围1-55。
 
@@ -81,7 +81,7 @@ class PolicyGroupForUpdate:
 
     @policy_group_name.setter
     def policy_group_name(self, policy_group_name):
-        """Sets the policy_group_name of this PolicyGroupForUpdate.
+        r"""Sets the policy_group_name of this PolicyGroupForUpdate.
 
         策略组名称，名称需要满足如下规则： 1. 由英文、数字或者下划线组成，不能有空格。 2. 字符长度范围1-55。
 
@@ -92,7 +92,7 @@ class PolicyGroupForUpdate:
 
     @property
     def description(self):
-        """Gets the description of this PolicyGroupForUpdate.
+        r"""Gets the description of this PolicyGroupForUpdate.
 
         策略组描述。
 
@@ -103,7 +103,7 @@ class PolicyGroupForUpdate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PolicyGroupForUpdate.
+        r"""Sets the description of this PolicyGroupForUpdate.
 
         策略组描述。
 
@@ -114,7 +114,7 @@ class PolicyGroupForUpdate:
 
     @property
     def priority(self):
-        """Gets the priority of this PolicyGroupForUpdate.
+        r"""Gets the priority of this PolicyGroupForUpdate.
 
         优先级。
 
@@ -125,7 +125,7 @@ class PolicyGroupForUpdate:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this PolicyGroupForUpdate.
+        r"""Sets the priority of this PolicyGroupForUpdate.
 
         优先级。
 
@@ -136,7 +136,7 @@ class PolicyGroupForUpdate:
 
     @property
     def targets(self):
-        """Gets the targets of this PolicyGroupForUpdate.
+        r"""Gets the targets of this PolicyGroupForUpdate.
 
         应用对象列表。
 
@@ -147,7 +147,7 @@ class PolicyGroupForUpdate:
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this PolicyGroupForUpdate.
+        r"""Sets the targets of this PolicyGroupForUpdate.
 
         应用对象列表。
 
@@ -158,7 +158,7 @@ class PolicyGroupForUpdate:
 
     @property
     def policies(self):
-        """Gets the policies of this PolicyGroupForUpdate.
+        r"""Gets the policies of this PolicyGroupForUpdate.
 
         :return: The policies of this PolicyGroupForUpdate.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Policies`
@@ -167,7 +167,7 @@ class PolicyGroupForUpdate:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this PolicyGroupForUpdate.
+        r"""Sets the policies of this PolicyGroupForUpdate.
 
         :param policies: The policies of this PolicyGroupForUpdate.
         :type policies: :class:`huaweicloudsdkworkspaceapp.v1.Policies`

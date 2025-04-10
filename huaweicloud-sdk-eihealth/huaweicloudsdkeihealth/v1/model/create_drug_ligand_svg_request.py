@@ -27,7 +27,7 @@ class CreateDrugLigandSvgRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateDrugLigandSvgRequest
+        r"""CreateDrugLigandSvgRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDrugLigandSvgRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateDrugLigandSvgRequest.
+        r"""Gets the eihealth_project_id of this CreateDrugLigandSvgRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class CreateDrugLigandSvgRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateDrugLigandSvgRequest.
+        r"""Sets the eihealth_project_id of this CreateDrugLigandSvgRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class CreateDrugLigandSvgRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDrugLigandSvgRequest.
+        r"""Gets the body of this CreateDrugLigandSvgRequest.
 
         :return: The body of this CreateDrugLigandSvgRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateLigandSvgReq`
@@ -80,7 +80,7 @@ class CreateDrugLigandSvgRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDrugLigandSvgRequest.
+        r"""Sets the body of this CreateDrugLigandSvgRequest.
 
         :param body: The body of this CreateDrugLigandSvgRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateLigandSvgReq`

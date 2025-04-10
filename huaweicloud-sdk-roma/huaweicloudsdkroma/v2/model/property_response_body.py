@@ -49,7 +49,7 @@ class PropertyResponseBody:
     }
 
     def __init__(self, property_id=None, property_name=None, description=None, data_type=None, required=None, min=None, max=None, step=None, max_length=None, unit=None, enum_list=None, enum_dict=None, method=None):
-        """PropertyResponseBody
+        r"""PropertyResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class PropertyResponseBody:
 
     @property
     def property_id(self):
-        """Gets the property_id of this PropertyResponseBody.
+        r"""Gets the property_id of this PropertyResponseBody.
 
         属性ID
 
@@ -138,7 +138,7 @@ class PropertyResponseBody:
 
     @property_id.setter
     def property_id(self, property_id):
-        """Sets the property_id of this PropertyResponseBody.
+        r"""Sets the property_id of this PropertyResponseBody.
 
         属性ID
 
@@ -149,7 +149,7 @@ class PropertyResponseBody:
 
     @property
     def property_name(self):
-        """Gets the property_name of this PropertyResponseBody.
+        r"""Gets the property_name of this PropertyResponseBody.
 
         属性名称，首位必须为字母，支持大小写字母，数字，中划线及下划线，长度2-50
 
@@ -160,7 +160,7 @@ class PropertyResponseBody:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this PropertyResponseBody.
+        r"""Sets the property_name of this PropertyResponseBody.
 
         属性名称，首位必须为字母，支持大小写字母，数字，中划线及下划线，长度2-50
 
@@ -171,7 +171,7 @@ class PropertyResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this PropertyResponseBody.
+        r"""Gets the description of this PropertyResponseBody.
 
         属性描述，长度0-200
 
@@ -182,7 +182,7 @@ class PropertyResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PropertyResponseBody.
+        r"""Sets the description of this PropertyResponseBody.
 
         属性描述，长度0-200
 
@@ -193,7 +193,7 @@ class PropertyResponseBody:
 
     @property
     def data_type(self):
-        """Gets the data_type of this PropertyResponseBody.
+        r"""Gets the data_type of this PropertyResponseBody.
 
         属性数据类型，boolean枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；string为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式; array为数组类型
 
@@ -204,7 +204,7 @@ class PropertyResponseBody:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this PropertyResponseBody.
+        r"""Sets the data_type of this PropertyResponseBody.
 
         属性数据类型，boolean枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；string为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式; array为数组类型
 
@@ -215,7 +215,7 @@ class PropertyResponseBody:
 
     @property
     def required(self):
-        """Gets the required of this PropertyResponseBody.
+        r"""Gets the required of this PropertyResponseBody.
 
         是否必填 0-非必填 1-必填
 
@@ -226,7 +226,7 @@ class PropertyResponseBody:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this PropertyResponseBody.
+        r"""Sets the required of this PropertyResponseBody.
 
         是否必填 0-非必填 1-必填
 
@@ -237,7 +237,7 @@ class PropertyResponseBody:
 
     @property
     def min(self):
-        """Gets the min of this PropertyResponseBody.
+        r"""Gets the min of this PropertyResponseBody.
 
         最小值，当data_type为integer或number时有效
 
@@ -248,7 +248,7 @@ class PropertyResponseBody:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this PropertyResponseBody.
+        r"""Sets the min of this PropertyResponseBody.
 
         最小值，当data_type为integer或number时有效
 
@@ -259,7 +259,7 @@ class PropertyResponseBody:
 
     @property
     def max(self):
-        """Gets the max of this PropertyResponseBody.
+        r"""Gets the max of this PropertyResponseBody.
 
         最大值，当data_type为integer或number时有效
 
@@ -270,7 +270,7 @@ class PropertyResponseBody:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this PropertyResponseBody.
+        r"""Sets the max of this PropertyResponseBody.
 
         最大值，当data_type为integer或number时有效
 
@@ -281,7 +281,7 @@ class PropertyResponseBody:
 
     @property
     def step(self):
-        """Gets the step of this PropertyResponseBody.
+        r"""Gets the step of this PropertyResponseBody.
 
         步长，当data_type为integer或number时有效
 
@@ -292,7 +292,7 @@ class PropertyResponseBody:
 
     @step.setter
     def step(self, step):
-        """Sets the step of this PropertyResponseBody.
+        r"""Sets the step of this PropertyResponseBody.
 
         步长，当data_type为integer或number时有效
 
@@ -303,7 +303,7 @@ class PropertyResponseBody:
 
     @property
     def max_length(self):
-        """Gets the max_length of this PropertyResponseBody.
+        r"""Gets the max_length of this PropertyResponseBody.
 
         字符串最大长度，当data_type为string, datetime, json时有效
 
@@ -314,7 +314,7 @@ class PropertyResponseBody:
 
     @max_length.setter
     def max_length(self, max_length):
-        """Sets the max_length of this PropertyResponseBody.
+        r"""Sets the max_length of this PropertyResponseBody.
 
         字符串最大长度，当data_type为string, datetime, json时有效
 
@@ -325,7 +325,7 @@ class PropertyResponseBody:
 
     @property
     def unit(self):
-        """Gets the unit of this PropertyResponseBody.
+        r"""Gets the unit of this PropertyResponseBody.
 
         属性单位
 
@@ -336,7 +336,7 @@ class PropertyResponseBody:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this PropertyResponseBody.
+        r"""Sets the unit of this PropertyResponseBody.
 
         属性单位
 
@@ -347,7 +347,7 @@ class PropertyResponseBody:
 
     @property
     def enum_list(self):
-        """Gets the enum_list of this PropertyResponseBody.
+        r"""Gets the enum_list of this PropertyResponseBody.
 
         string的枚举值数组，使用逗号分隔
 
@@ -358,7 +358,7 @@ class PropertyResponseBody:
 
     @enum_list.setter
     def enum_list(self, enum_list):
-        """Sets the enum_list of this PropertyResponseBody.
+        r"""Sets the enum_list of this PropertyResponseBody.
 
         string的枚举值数组，使用逗号分隔
 
@@ -369,7 +369,7 @@ class PropertyResponseBody:
 
     @property
     def enum_dict(self):
-        """Gets the enum_dict of this PropertyResponseBody.
+        r"""Gets the enum_dict of this PropertyResponseBody.
 
         当数据类型为boolean枚举值时填写json格式数据，形如\"enum_dict\":{\"0\":\"xxx\",\"1\":\"xxx\"}
 
@@ -380,7 +380,7 @@ class PropertyResponseBody:
 
     @enum_dict.setter
     def enum_dict(self, enum_dict):
-        """Sets the enum_dict of this PropertyResponseBody.
+        r"""Sets the enum_dict of this PropertyResponseBody.
 
         当数据类型为boolean枚举值时填写json格式数据，形如\"enum_dict\":{\"0\":\"xxx\",\"1\":\"xxx\"}
 
@@ -391,7 +391,7 @@ class PropertyResponseBody:
 
     @property
     def method(self):
-        """Gets the method of this PropertyResponseBody.
+        r"""Gets the method of this PropertyResponseBody.
 
         访问模式（兼容20.0，R属性可读，W属性可写，E属性可执行）
 
@@ -402,7 +402,7 @@ class PropertyResponseBody:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this PropertyResponseBody.
+        r"""Sets the method of this PropertyResponseBody.
 
         访问模式（兼容20.0，R属性可读，W属性可写，E属性可执行）
 

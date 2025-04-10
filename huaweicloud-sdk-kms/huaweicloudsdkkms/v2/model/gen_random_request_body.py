@@ -27,7 +27,7 @@ class GenRandomRequestBody:
     }
 
     def __init__(self, random_data_length=None, sequence=None):
-        """GenRandomRequestBody
+        r"""GenRandomRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class GenRandomRequestBody:
 
     @property
     def random_data_length(self):
-        """Gets the random_data_length of this GenRandomRequestBody.
+        r"""Gets the random_data_length of this GenRandomRequestBody.
 
         随机数的bit位长度。 取值为8的倍数，取值范围为8~8192。 随机数的bit位长度，取值为“512”。
 
@@ -60,7 +60,7 @@ class GenRandomRequestBody:
 
     @random_data_length.setter
     def random_data_length(self, random_data_length):
-        """Sets the random_data_length of this GenRandomRequestBody.
+        r"""Sets the random_data_length of this GenRandomRequestBody.
 
         随机数的bit位长度。 取值为8的倍数，取值范围为8~8192。 随机数的bit位长度，取值为“512”。
 
@@ -71,7 +71,7 @@ class GenRandomRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this GenRandomRequestBody.
+        r"""Gets the sequence of this GenRandomRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -82,7 +82,7 @@ class GenRandomRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this GenRandomRequestBody.
+        r"""Sets the sequence of this GenRandomRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

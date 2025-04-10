@@ -39,7 +39,7 @@ class DiagnosisReportInfo:
     }
 
     def __init__(self, report_id=None, status=None, begin_time=None, end_time=None, created_at=None, node_num=None, abnormal_item_sum=None, failed_item_sum=None):
-        """DiagnosisReportInfo
+        r"""DiagnosisReportInfo
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class DiagnosisReportInfo:
 
     @property
     def report_id(self):
-        """Gets the report_id of this DiagnosisReportInfo.
+        r"""Gets the report_id of this DiagnosisReportInfo.
 
         诊断报告ID
 
@@ -95,7 +95,7 @@ class DiagnosisReportInfo:
 
     @report_id.setter
     def report_id(self, report_id):
-        """Sets the report_id of this DiagnosisReportInfo.
+        r"""Sets the report_id of this DiagnosisReportInfo.
 
         诊断报告ID
 
@@ -106,7 +106,7 @@ class DiagnosisReportInfo:
 
     @property
     def status(self):
-        """Gets the status of this DiagnosisReportInfo.
+        r"""Gets the status of this DiagnosisReportInfo.
 
         诊断任务状态
 
@@ -117,7 +117,7 @@ class DiagnosisReportInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DiagnosisReportInfo.
+        r"""Sets the status of this DiagnosisReportInfo.
 
         诊断任务状态
 
@@ -128,7 +128,7 @@ class DiagnosisReportInfo:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this DiagnosisReportInfo.
+        r"""Gets the begin_time of this DiagnosisReportInfo.
 
         诊断时间段的开始时间。格式为：2017-03-31T12:24:46.297Z
 
@@ -139,7 +139,7 @@ class DiagnosisReportInfo:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this DiagnosisReportInfo.
+        r"""Sets the begin_time of this DiagnosisReportInfo.
 
         诊断时间段的开始时间。格式为：2017-03-31T12:24:46.297Z
 
@@ -150,7 +150,7 @@ class DiagnosisReportInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this DiagnosisReportInfo.
+        r"""Gets the end_time of this DiagnosisReportInfo.
 
         诊断时间段的结束时间。格式为：2017-03-31T12:24:46.297Z
 
@@ -161,7 +161,7 @@ class DiagnosisReportInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this DiagnosisReportInfo.
+        r"""Sets the end_time of this DiagnosisReportInfo.
 
         诊断时间段的结束时间。格式为：2017-03-31T12:24:46.297Z
 
@@ -172,7 +172,7 @@ class DiagnosisReportInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this DiagnosisReportInfo.
+        r"""Gets the created_at of this DiagnosisReportInfo.
 
         诊断报告创建时间
 
@@ -183,7 +183,7 @@ class DiagnosisReportInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this DiagnosisReportInfo.
+        r"""Sets the created_at of this DiagnosisReportInfo.
 
         诊断报告创建时间
 
@@ -194,7 +194,7 @@ class DiagnosisReportInfo:
 
     @property
     def node_num(self):
-        """Gets the node_num of this DiagnosisReportInfo.
+        r"""Gets the node_num of this DiagnosisReportInfo.
 
         参与诊断的节点个数
 
@@ -205,7 +205,7 @@ class DiagnosisReportInfo:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this DiagnosisReportInfo.
+        r"""Sets the node_num of this DiagnosisReportInfo.
 
         参与诊断的节点个数
 
@@ -216,7 +216,7 @@ class DiagnosisReportInfo:
 
     @property
     def abnormal_item_sum(self):
-        """Gets the abnormal_item_sum of this DiagnosisReportInfo.
+        r"""Gets the abnormal_item_sum of this DiagnosisReportInfo.
 
         诊断结果为异常的诊断项总数
 
@@ -227,7 +227,7 @@ class DiagnosisReportInfo:
 
     @abnormal_item_sum.setter
     def abnormal_item_sum(self, abnormal_item_sum):
-        """Sets the abnormal_item_sum of this DiagnosisReportInfo.
+        r"""Sets the abnormal_item_sum of this DiagnosisReportInfo.
 
         诊断结果为异常的诊断项总数
 
@@ -238,7 +238,7 @@ class DiagnosisReportInfo:
 
     @property
     def failed_item_sum(self):
-        """Gets the failed_item_sum of this DiagnosisReportInfo.
+        r"""Gets the failed_item_sum of this DiagnosisReportInfo.
 
         诊断失败的诊断项总数
 
@@ -249,7 +249,7 @@ class DiagnosisReportInfo:
 
     @failed_item_sum.setter
     def failed_item_sum(self, failed_item_sum):
-        """Sets the failed_item_sum of this DiagnosisReportInfo.
+        r"""Sets the failed_item_sum of this DiagnosisReportInfo.
 
         诊断失败的诊断项总数
 

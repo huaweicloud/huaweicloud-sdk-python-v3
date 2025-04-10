@@ -27,7 +27,7 @@ class AssociateRouterRequest:
     }
 
     def __init__(self, zone_id=None, body=None):
-        """AssociateRouterRequest
+        r"""AssociateRouterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociateRouterRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this AssociateRouterRequest.
+        r"""Gets the zone_id of this AssociateRouterRequest.
 
         关联VPC的Zone ID。
 
@@ -60,7 +60,7 @@ class AssociateRouterRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this AssociateRouterRequest.
+        r"""Sets the zone_id of this AssociateRouterRequest.
 
         关联VPC的Zone ID。
 
@@ -71,7 +71,7 @@ class AssociateRouterRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateRouterRequest.
+        r"""Gets the body of this AssociateRouterRequest.
 
         :return: The body of this AssociateRouterRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.AssociateRouterRequestBody`
@@ -80,7 +80,7 @@ class AssociateRouterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateRouterRequest.
+        r"""Sets the body of this AssociateRouterRequest.
 
         :param body: The body of this AssociateRouterRequest.
         :type body: :class:`huaweicloudsdkdns.v2.AssociateRouterRequestBody`

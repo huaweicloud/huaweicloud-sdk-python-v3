@@ -45,7 +45,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
     }
 
     def __init__(self, ingress_size=None, charge_mode=None, isp=None, access_site=None, size=None, name=None, description=None, count=None, tags=None, enterprise_project_id=None, type=None):
-        """BatchCreateInternetBandwidthRequestBodyInternetBandwidth
+        r"""BatchCreateInternetBandwidthRequestBodyInternetBandwidth
 
         The model defined in huaweicloud sdk
 
@@ -110,7 +110,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def ingress_size(self):
-        """Gets the ingress_size of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the ingress_size of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         全域公网带宽大小（入云方向）
 
@@ -121,7 +121,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @ingress_size.setter
     def ingress_size(self, ingress_size):
-        """Sets the ingress_size of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the ingress_size of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         全域公网带宽大小（入云方向）
 
@@ -132,7 +132,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the charge_mode of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         计费模式
 
@@ -143,7 +143,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the charge_mode of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         计费模式
 
@@ -154,7 +154,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def isp(self):
-        """Gets the isp of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the isp of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         全域弹性公网IP所属线路
 
@@ -165,7 +165,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the isp of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         全域弹性公网IP所属线路
 
@@ -176,7 +176,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def access_site(self):
-        """Gets the access_site of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the access_site of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         接入点信息
 
@@ -187,7 +187,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the access_site of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         接入点信息
 
@@ -198,7 +198,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def size(self):
-        """Gets the size of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the size of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         全域公网带宽大小（出云方向）
 
@@ -209,7 +209,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the size of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         全域公网带宽大小（出云方向）
 
@@ -220,7 +220,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def name(self):
-        """Gets the name of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the name of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -231,7 +231,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the name of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -242,7 +242,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def description(self):
-        """Gets the description of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the description of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -253,7 +253,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the description of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -264,7 +264,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def count(self):
-        """Gets the count of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the count of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         批创个数
 
@@ -275,7 +275,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the count of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         批创个数
 
@@ -286,7 +286,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the tags of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         全域公网带宽标签
 
@@ -297,7 +297,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the tags of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         全域公网带宽标签
 
@@ -308,7 +308,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the enterprise_project_id of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -319,7 +319,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the enterprise_project_id of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -330,7 +330,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @property
     def type(self):
-        """Gets the type of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Gets the type of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         全域公网带宽类型
 
@@ -341,7 +341,7 @@ class BatchCreateInternetBandwidthRequestBodyInternetBandwidth:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
+        r"""Sets the type of this BatchCreateInternetBandwidthRequestBodyInternetBandwidth.
 
         全域公网带宽类型
 

@@ -37,7 +37,7 @@ class UpdateSubnetOption:
     }
 
     def __init__(self, name=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, ipv6_enable=None, pool_id=None):
-        """UpdateSubnetOption
+        r"""UpdateSubnetOption
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class UpdateSubnetOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateSubnetOption.
+        r"""Gets the name of this UpdateSubnetOption.
 
         子网名称  取值范围：0-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -96,7 +96,7 @@ class UpdateSubnetOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateSubnetOption.
+        r"""Sets the name of this UpdateSubnetOption.
 
         子网名称  取值范围：0-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -107,7 +107,7 @@ class UpdateSubnetOption:
 
     @property
     def dhcp_enable(self):
-        """Gets the dhcp_enable of this UpdateSubnetOption.
+        r"""Gets the dhcp_enable of this UpdateSubnetOption.
 
         子网是否开启dhcp功能  取值范围：true（开启），false（关闭）  约束：不填时默认为true。当设置为false时，会导致新创建的实例无法获取IP地址，cloudinit无法注入帐号密码，请谨慎操作。
 
@@ -118,7 +118,7 @@ class UpdateSubnetOption:
 
     @dhcp_enable.setter
     def dhcp_enable(self, dhcp_enable):
-        """Sets the dhcp_enable of this UpdateSubnetOption.
+        r"""Sets the dhcp_enable of this UpdateSubnetOption.
 
         子网是否开启dhcp功能  取值范围：true（开启），false（关闭）  约束：不填时默认为true。当设置为false时，会导致新创建的实例无法获取IP地址，cloudinit无法注入帐号密码，请谨慎操作。
 
@@ -129,7 +129,7 @@ class UpdateSubnetOption:
 
     @property
     def primary_dns(self):
-        """Gets the primary_dns of this UpdateSubnetOption.
+        r"""Gets the primary_dns of this UpdateSubnetOption.
 
         子网dns服务器地址1  约束：ip格式
 
@@ -140,7 +140,7 @@ class UpdateSubnetOption:
 
     @primary_dns.setter
     def primary_dns(self, primary_dns):
-        """Sets the primary_dns of this UpdateSubnetOption.
+        r"""Sets the primary_dns of this UpdateSubnetOption.
 
         子网dns服务器地址1  约束：ip格式
 
@@ -151,7 +151,7 @@ class UpdateSubnetOption:
 
     @property
     def secondary_dns(self):
-        """Gets the secondary_dns of this UpdateSubnetOption.
+        r"""Gets the secondary_dns of this UpdateSubnetOption.
 
         子网dns服务器地址2  约束：ip格式
 
@@ -162,7 +162,7 @@ class UpdateSubnetOption:
 
     @secondary_dns.setter
     def secondary_dns(self, secondary_dns):
-        """Sets the secondary_dns of this UpdateSubnetOption.
+        r"""Sets the secondary_dns of this UpdateSubnetOption.
 
         子网dns服务器地址2  约束：ip格式
 
@@ -173,7 +173,7 @@ class UpdateSubnetOption:
 
     @property
     def dns_list(self):
-        """Gets the dns_list of this UpdateSubnetOption.
+        r"""Gets the dns_list of this UpdateSubnetOption.
 
         子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段。  约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集
 
@@ -184,7 +184,7 @@ class UpdateSubnetOption:
 
     @dns_list.setter
     def dns_list(self, dns_list):
-        """Sets the dns_list of this UpdateSubnetOption.
+        r"""Sets the dns_list of this UpdateSubnetOption.
 
         子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段。  约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集
 
@@ -195,7 +195,7 @@ class UpdateSubnetOption:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this UpdateSubnetOption.
+        r"""Gets the ipv6_enable of this UpdateSubnetOption.
 
         是否创建IPv6子网  取值范围：  - true：开启  - false：关闭  约束：   1、若该字段为true，则pool_id字段必填；若该字段为false，则pool_id字段不生效。   2、子网开启IPv6后不支持关闭。
 
@@ -206,7 +206,7 @@ class UpdateSubnetOption:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this UpdateSubnetOption.
+        r"""Sets the ipv6_enable of this UpdateSubnetOption.
 
         是否创建IPv6子网  取值范围：  - true：开启  - false：关闭  约束：   1、若该字段为true，则pool_id字段必填；若该字段为false，则pool_id字段不生效。   2、子网开启IPv6后不支持关闭。
 
@@ -217,7 +217,7 @@ class UpdateSubnetOption:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this UpdateSubnetOption.
+        r"""Gets the pool_id of this UpdateSubnetOption.
 
         IPv6线路ID。
 
@@ -228,7 +228,7 @@ class UpdateSubnetOption:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this UpdateSubnetOption.
+        r"""Sets the pool_id of this UpdateSubnetOption.
 
         IPv6线路ID。
 

@@ -24,7 +24,7 @@ class DeleteNetworkInstanceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteNetworkInstanceResponse
+        r"""DeleteNetworkInstanceResponse
 
         The model defined in huaweicloud sdk
 

@@ -33,7 +33,7 @@ class CreateImageCacheRequestBody:
     }
 
     def __init__(self, name=None, images=None, image_cache_size=None, retention_days=None, building_config=None):
-        """CreateImageCacheRequestBody
+        r"""CreateImageCacheRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CreateImageCacheRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateImageCacheRequestBody.
+        r"""Gets the name of this CreateImageCacheRequestBody.
 
         **参数解释：** 镜像缓存名称。 **约束限制：** 不涉及 **取值范围：** 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-128位，且不能以中划线(-)结尾。镜像缓存名称不可重复。 **默认取值：** 不涉及 
 
@@ -79,7 +79,7 @@ class CreateImageCacheRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateImageCacheRequestBody.
+        r"""Sets the name of this CreateImageCacheRequestBody.
 
         **参数解释：** 镜像缓存名称。 **约束限制：** 不涉及 **取值范围：** 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-128位，且不能以中划线(-)结尾。镜像缓存名称不可重复。 **默认取值：** 不涉及 
 
@@ -90,7 +90,7 @@ class CreateImageCacheRequestBody:
 
     @property
     def images(self):
-        """Gets the images of this CreateImageCacheRequestBody.
+        r"""Gets the images of this CreateImageCacheRequestBody.
 
         镜像缓存中的容器镜像列表。
 
@@ -101,7 +101,7 @@ class CreateImageCacheRequestBody:
 
     @images.setter
     def images(self, images):
-        """Sets the images of this CreateImageCacheRequestBody.
+        r"""Sets the images of this CreateImageCacheRequestBody.
 
         镜像缓存中的容器镜像列表。
 
@@ -112,7 +112,7 @@ class CreateImageCacheRequestBody:
 
     @property
     def image_cache_size(self):
-        """Gets the image_cache_size of this CreateImageCacheRequestBody.
+        r"""Gets the image_cache_size of this CreateImageCacheRequestBody.
 
         **参数解释：** 镜像缓存后端对应的存储盘大小，单位GiB。缓存对象为解压后的镜像文件，建议镜像缓存大小不低于该缓存中所有容器镜像大小总和的3倍。 **约束限制：** 不涉及 **取值范围：** [20-400] **默认取值：** 20 
 
@@ -123,7 +123,7 @@ class CreateImageCacheRequestBody:
 
     @image_cache_size.setter
     def image_cache_size(self, image_cache_size):
-        """Sets the image_cache_size of this CreateImageCacheRequestBody.
+        r"""Sets the image_cache_size of this CreateImageCacheRequestBody.
 
         **参数解释：** 镜像缓存后端对应的存储盘大小，单位GiB。缓存对象为解压后的镜像文件，建议镜像缓存大小不低于该缓存中所有容器镜像大小总和的3倍。 **约束限制：** 不涉及 **取值范围：** [20-400] **默认取值：** 20 
 
@@ -134,7 +134,7 @@ class CreateImageCacheRequestBody:
 
     @property
     def retention_days(self):
-        """Gets the retention_days of this CreateImageCacheRequestBody.
+        r"""Gets the retention_days of this CreateImageCacheRequestBody.
 
         **参数解释：** 镜像缓存有效的天数,不设置或值为0表示永久有效。镜像缓存到达有效期后自动过期并删除。 **约束限制：** 不涉及 **取值范围：** [0-10000] **默认取值：** 0 
 
@@ -145,7 +145,7 @@ class CreateImageCacheRequestBody:
 
     @retention_days.setter
     def retention_days(self, retention_days):
-        """Sets the retention_days of this CreateImageCacheRequestBody.
+        r"""Sets the retention_days of this CreateImageCacheRequestBody.
 
         **参数解释：** 镜像缓存有效的天数,不设置或值为0表示永久有效。镜像缓存到达有效期后自动过期并删除。 **约束限制：** 不涉及 **取值范围：** [0-10000] **默认取值：** 0 
 
@@ -156,7 +156,7 @@ class CreateImageCacheRequestBody:
 
     @property
     def building_config(self):
-        """Gets the building_config of this CreateImageCacheRequestBody.
+        r"""Gets the building_config of this CreateImageCacheRequestBody.
 
         :return: The building_config of this CreateImageCacheRequestBody.
         :rtype: :class:`huaweicloudsdkcce.v5.ImageCacheBuildingConfig`
@@ -165,7 +165,7 @@ class CreateImageCacheRequestBody:
 
     @building_config.setter
     def building_config(self, building_config):
-        """Sets the building_config of this CreateImageCacheRequestBody.
+        r"""Sets the building_config of this CreateImageCacheRequestBody.
 
         :param building_config: The building_config of this CreateImageCacheRequestBody.
         :type building_config: :class:`huaweicloudsdkcce.v5.ImageCacheBuildingConfig`

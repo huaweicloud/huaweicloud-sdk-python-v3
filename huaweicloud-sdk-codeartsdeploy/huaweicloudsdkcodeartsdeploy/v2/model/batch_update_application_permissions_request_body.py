@@ -29,7 +29,7 @@ class BatchUpdateApplicationPermissionsRequestBody:
     }
 
     def __init__(self, project_id=None, application_ids=None, roles=None):
-        """BatchUpdateApplicationPermissionsRequestBody
+        r"""BatchUpdateApplicationPermissionsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class BatchUpdateApplicationPermissionsRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchUpdateApplicationPermissionsRequestBody.
+        r"""Gets the project_id of this BatchUpdateApplicationPermissionsRequestBody.
 
         项目id
 
@@ -65,7 +65,7 @@ class BatchUpdateApplicationPermissionsRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchUpdateApplicationPermissionsRequestBody.
+        r"""Sets the project_id of this BatchUpdateApplicationPermissionsRequestBody.
 
         项目id
 
@@ -76,7 +76,7 @@ class BatchUpdateApplicationPermissionsRequestBody:
 
     @property
     def application_ids(self):
-        """Gets the application_ids of this BatchUpdateApplicationPermissionsRequestBody.
+        r"""Gets the application_ids of this BatchUpdateApplicationPermissionsRequestBody.
 
         应用列表
 
@@ -87,7 +87,7 @@ class BatchUpdateApplicationPermissionsRequestBody:
 
     @application_ids.setter
     def application_ids(self, application_ids):
-        """Sets the application_ids of this BatchUpdateApplicationPermissionsRequestBody.
+        r"""Sets the application_ids of this BatchUpdateApplicationPermissionsRequestBody.
 
         应用列表
 
@@ -98,7 +98,7 @@ class BatchUpdateApplicationPermissionsRequestBody:
 
     @property
     def roles(self):
-        """Gets the roles of this BatchUpdateApplicationPermissionsRequestBody.
+        r"""Gets the roles of this BatchUpdateApplicationPermissionsRequestBody.
 
         角色权限
 
@@ -109,7 +109,7 @@ class BatchUpdateApplicationPermissionsRequestBody:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this BatchUpdateApplicationPermissionsRequestBody.
+        r"""Sets the roles of this BatchUpdateApplicationPermissionsRequestBody.
 
         角色权限
 

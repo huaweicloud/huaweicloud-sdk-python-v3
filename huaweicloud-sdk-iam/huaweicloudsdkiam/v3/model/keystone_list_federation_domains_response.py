@@ -28,7 +28,7 @@ class KeystoneListFederationDomainsResponse(SdkResponse):
     }
 
     def __init__(self, domains=None, links=None):
-        """KeystoneListFederationDomainsResponse
+        r"""KeystoneListFederationDomainsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class KeystoneListFederationDomainsResponse(SdkResponse):
 
     @property
     def domains(self):
-        """Gets the domains of this KeystoneListFederationDomainsResponse.
+        r"""Gets the domains of this KeystoneListFederationDomainsResponse.
 
         账号信息列表。
 
@@ -62,7 +62,7 @@ class KeystoneListFederationDomainsResponse(SdkResponse):
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this KeystoneListFederationDomainsResponse.
+        r"""Sets the domains of this KeystoneListFederationDomainsResponse.
 
         账号信息列表。
 
@@ -73,7 +73,7 @@ class KeystoneListFederationDomainsResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this KeystoneListFederationDomainsResponse.
+        r"""Gets the links of this KeystoneListFederationDomainsResponse.
 
         :return: The links of this KeystoneListFederationDomainsResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -82,7 +82,7 @@ class KeystoneListFederationDomainsResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneListFederationDomainsResponse.
+        r"""Sets the links of this KeystoneListFederationDomainsResponse.
 
         :param links: The links of this KeystoneListFederationDomainsResponse.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`

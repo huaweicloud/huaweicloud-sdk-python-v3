@@ -34,7 +34,7 @@ class ShowApiTestcaseHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, project_id=None, testcase_id=None, testcase_name=None, testcase_results=None):
-        """ShowApiTestcaseHistoriesResponse
+        r"""ShowApiTestcaseHistoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowApiTestcaseHistoriesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowApiTestcaseHistoriesResponse.
+        r"""Gets the total_count of this ShowApiTestcaseHistoriesResponse.
 
         测试用例总数
 
@@ -83,7 +83,7 @@ class ShowApiTestcaseHistoriesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowApiTestcaseHistoriesResponse.
+        r"""Sets the total_count of this ShowApiTestcaseHistoriesResponse.
 
         测试用例总数
 
@@ -94,7 +94,7 @@ class ShowApiTestcaseHistoriesResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowApiTestcaseHistoriesResponse.
+        r"""Gets the project_id of this ShowApiTestcaseHistoriesResponse.
 
         测试服务id
 
@@ -105,7 +105,7 @@ class ShowApiTestcaseHistoriesResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowApiTestcaseHistoriesResponse.
+        r"""Sets the project_id of this ShowApiTestcaseHistoriesResponse.
 
         测试服务id
 
@@ -116,7 +116,7 @@ class ShowApiTestcaseHistoriesResponse(SdkResponse):
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this ShowApiTestcaseHistoriesResponse.
+        r"""Gets the testcase_id of this ShowApiTestcaseHistoriesResponse.
 
         测试用例id
 
@@ -127,7 +127,7 @@ class ShowApiTestcaseHistoriesResponse(SdkResponse):
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this ShowApiTestcaseHistoriesResponse.
+        r"""Sets the testcase_id of this ShowApiTestcaseHistoriesResponse.
 
         测试用例id
 
@@ -138,7 +138,7 @@ class ShowApiTestcaseHistoriesResponse(SdkResponse):
 
     @property
     def testcase_name(self):
-        """Gets the testcase_name of this ShowApiTestcaseHistoriesResponse.
+        r"""Gets the testcase_name of this ShowApiTestcaseHistoriesResponse.
 
         测试用例名称
 
@@ -149,7 +149,7 @@ class ShowApiTestcaseHistoriesResponse(SdkResponse):
 
     @testcase_name.setter
     def testcase_name(self, testcase_name):
-        """Sets the testcase_name of this ShowApiTestcaseHistoriesResponse.
+        r"""Sets the testcase_name of this ShowApiTestcaseHistoriesResponse.
 
         测试用例名称
 
@@ -160,7 +160,7 @@ class ShowApiTestcaseHistoriesResponse(SdkResponse):
 
     @property
     def testcase_results(self):
-        """Gets the testcase_results of this ShowApiTestcaseHistoriesResponse.
+        r"""Gets the testcase_results of this ShowApiTestcaseHistoriesResponse.
 
         测试用例结果集
 
@@ -171,7 +171,7 @@ class ShowApiTestcaseHistoriesResponse(SdkResponse):
 
     @testcase_results.setter
     def testcase_results(self, testcase_results):
-        """Sets the testcase_results of this ShowApiTestcaseHistoriesResponse.
+        r"""Sets the testcase_results of this ShowApiTestcaseHistoriesResponse.
 
         测试用例结果集
 

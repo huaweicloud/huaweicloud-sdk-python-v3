@@ -27,7 +27,7 @@ class UpdateGlobalEipRequestBodyGlobalEip:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateGlobalEipRequestBodyGlobalEip
+        r"""UpdateGlobalEipRequestBodyGlobalEip
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateGlobalEipRequestBodyGlobalEip:
 
     @property
     def name(self):
-        """Gets the name of this UpdateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the name of this UpdateGlobalEipRequestBodyGlobalEip.
 
         - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -61,7 +61,7 @@ class UpdateGlobalEipRequestBodyGlobalEip:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the name of this UpdateGlobalEipRequestBodyGlobalEip.
 
         - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -72,7 +72,7 @@ class UpdateGlobalEipRequestBodyGlobalEip:
 
     @property
     def description(self):
-        """Gets the description of this UpdateGlobalEipRequestBodyGlobalEip.
+        r"""Gets the description of this UpdateGlobalEipRequestBodyGlobalEip.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 
@@ -83,7 +83,7 @@ class UpdateGlobalEipRequestBodyGlobalEip:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateGlobalEipRequestBodyGlobalEip.
+        r"""Sets the description of this UpdateGlobalEipRequestBodyGlobalEip.
 
         - 功能说明：用户自定义的资源描述 - 约束：   - 值的长度最大512字符，由数字、字母、中文、_(下划线)、-（中划线）、.（点）组成。
 

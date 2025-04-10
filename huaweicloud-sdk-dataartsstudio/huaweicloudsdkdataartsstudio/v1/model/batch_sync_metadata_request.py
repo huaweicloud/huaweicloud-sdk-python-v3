@@ -25,7 +25,7 @@ class BatchSyncMetadataRequest:
     }
 
     def __init__(self, body=None):
-        """BatchSyncMetadataRequest
+        r"""BatchSyncMetadataRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchSyncMetadataRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchSyncMetadataRequest.
+        r"""Gets the body of this BatchSyncMetadataRequest.
 
         :return: The body of this BatchSyncMetadataRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CatalogMetaDataEventRequest`
@@ -52,7 +52,7 @@ class BatchSyncMetadataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchSyncMetadataRequest.
+        r"""Sets the body of this BatchSyncMetadataRequest.
 
         :param body: The body of this BatchSyncMetadataRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.CatalogMetaDataEventRequest`

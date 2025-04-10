@@ -31,7 +31,7 @@ class NodePoolSpecUpdate:
     }
 
     def __init__(self, node_template=None, initial_node_count=None, autoscaling=None, extension_scale_groups=None):
-        """NodePoolSpecUpdate
+        r"""NodePoolSpecUpdate
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class NodePoolSpecUpdate:
 
     @property
     def node_template(self):
-        """Gets the node_template of this NodePoolSpecUpdate.
+        r"""Gets the node_template of this NodePoolSpecUpdate.
 
         :return: The node_template of this NodePoolSpecUpdate.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeSpecUpdate`
@@ -70,7 +70,7 @@ class NodePoolSpecUpdate:
 
     @node_template.setter
     def node_template(self, node_template):
-        """Sets the node_template of this NodePoolSpecUpdate.
+        r"""Sets the node_template of this NodePoolSpecUpdate.
 
         :param node_template: The node_template of this NodePoolSpecUpdate.
         :type node_template: :class:`huaweicloudsdkcce.v3.NodeSpecUpdate`
@@ -79,7 +79,7 @@ class NodePoolSpecUpdate:
 
     @property
     def initial_node_count(self):
-        """Gets the initial_node_count of this NodePoolSpecUpdate.
+        r"""Gets the initial_node_count of this NodePoolSpecUpdate.
 
         节点池初始化节点个数。查询时为节点池目标节点数量。默认值为0。
 
@@ -90,7 +90,7 @@ class NodePoolSpecUpdate:
 
     @initial_node_count.setter
     def initial_node_count(self, initial_node_count):
-        """Sets the initial_node_count of this NodePoolSpecUpdate.
+        r"""Sets the initial_node_count of this NodePoolSpecUpdate.
 
         节点池初始化节点个数。查询时为节点池目标节点数量。默认值为0。
 
@@ -101,7 +101,7 @@ class NodePoolSpecUpdate:
 
     @property
     def autoscaling(self):
-        """Gets the autoscaling of this NodePoolSpecUpdate.
+        r"""Gets the autoscaling of this NodePoolSpecUpdate.
 
         :return: The autoscaling of this NodePoolSpecUpdate.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
@@ -110,7 +110,7 @@ class NodePoolSpecUpdate:
 
     @autoscaling.setter
     def autoscaling(self, autoscaling):
-        """Sets the autoscaling of this NodePoolSpecUpdate.
+        r"""Sets the autoscaling of this NodePoolSpecUpdate.
 
         :param autoscaling: The autoscaling of this NodePoolSpecUpdate.
         :type autoscaling: :class:`huaweicloudsdkcce.v3.NodePoolNodeAutoscaling`
@@ -119,7 +119,7 @@ class NodePoolSpecUpdate:
 
     @property
     def extension_scale_groups(self):
-        """Gets the extension_scale_groups of this NodePoolSpecUpdate.
+        r"""Gets the extension_scale_groups of this NodePoolSpecUpdate.
 
         节点池扩展伸缩组配置列表，详情参见ExtensionScaleGroup类型定义
 
@@ -130,7 +130,7 @@ class NodePoolSpecUpdate:
 
     @extension_scale_groups.setter
     def extension_scale_groups(self, extension_scale_groups):
-        """Sets the extension_scale_groups of this NodePoolSpecUpdate.
+        r"""Sets the extension_scale_groups of this NodePoolSpecUpdate.
 
         节点池扩展伸缩组配置列表，详情参见ExtensionScaleGroup类型定义
 

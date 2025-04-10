@@ -35,7 +35,7 @@ class KeystoneGroupResult:
     }
 
     def __init__(self, description=None, id=None, domain_id=None, name=None, links=None, create_time=None):
-        """KeystoneGroupResult
+        r"""KeystoneGroupResult
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class KeystoneGroupResult:
 
     @property
     def description(self):
-        """Gets the description of this KeystoneGroupResult.
+        r"""Gets the description of this KeystoneGroupResult.
 
         用户组描述信息。
 
@@ -83,7 +83,7 @@ class KeystoneGroupResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this KeystoneGroupResult.
+        r"""Sets the description of this KeystoneGroupResult.
 
         用户组描述信息。
 
@@ -94,7 +94,7 @@ class KeystoneGroupResult:
 
     @property
     def id(self):
-        """Gets the id of this KeystoneGroupResult.
+        r"""Gets the id of this KeystoneGroupResult.
 
         用户组ID。
 
@@ -105,7 +105,7 @@ class KeystoneGroupResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this KeystoneGroupResult.
+        r"""Sets the id of this KeystoneGroupResult.
 
         用户组ID。
 
@@ -116,7 +116,7 @@ class KeystoneGroupResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneGroupResult.
+        r"""Gets the domain_id of this KeystoneGroupResult.
 
         用户组所属账号ID。
 
@@ -127,7 +127,7 @@ class KeystoneGroupResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneGroupResult.
+        r"""Sets the domain_id of this KeystoneGroupResult.
 
         用户组所属账号ID。
 
@@ -138,7 +138,7 @@ class KeystoneGroupResult:
 
     @property
     def name(self):
-        """Gets the name of this KeystoneGroupResult.
+        r"""Gets the name of this KeystoneGroupResult.
 
         用户组名称。
 
@@ -149,7 +149,7 @@ class KeystoneGroupResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KeystoneGroupResult.
+        r"""Sets the name of this KeystoneGroupResult.
 
         用户组名称。
 
@@ -160,7 +160,7 @@ class KeystoneGroupResult:
 
     @property
     def links(self):
-        """Gets the links of this KeystoneGroupResult.
+        r"""Gets the links of this KeystoneGroupResult.
 
         :return: The links of this KeystoneGroupResult.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -169,7 +169,7 @@ class KeystoneGroupResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneGroupResult.
+        r"""Sets the links of this KeystoneGroupResult.
 
         :param links: The links of this KeystoneGroupResult.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -178,7 +178,7 @@ class KeystoneGroupResult:
 
     @property
     def create_time(self):
-        """Gets the create_time of this KeystoneGroupResult.
+        r"""Gets the create_time of this KeystoneGroupResult.
 
         用户组创建时间。
 
@@ -189,7 +189,7 @@ class KeystoneGroupResult:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this KeystoneGroupResult.
+        r"""Sets the create_time of this KeystoneGroupResult.
 
         用户组创建时间。
 

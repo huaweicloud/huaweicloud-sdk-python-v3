@@ -33,7 +33,7 @@ class ListRiskTrendRequest:
     }
 
     def __init__(self, x_language=None, datastore_type=None, start_at=None, end_at=None, metric_code=None):
-        """ListRiskTrendRequest
+        r"""ListRiskTrendRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ListRiskTrendRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListRiskTrendRequest.
+        r"""Gets the x_language of this ListRiskTrendRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class ListRiskTrendRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListRiskTrendRequest.
+        r"""Sets the x_language of this ListRiskTrendRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class ListRiskTrendRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListRiskTrendRequest.
+        r"""Gets the datastore_type of this ListRiskTrendRequest.
 
         数据库类型
 
@@ -100,7 +100,7 @@ class ListRiskTrendRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListRiskTrendRequest.
+        r"""Sets the datastore_type of this ListRiskTrendRequest.
 
         数据库类型
 
@@ -111,7 +111,7 @@ class ListRiskTrendRequest:
 
     @property
     def start_at(self):
-        """Gets the start_at of this ListRiskTrendRequest.
+        r"""Gets the start_at of this ListRiskTrendRequest.
 
         开始时间
 
@@ -122,7 +122,7 @@ class ListRiskTrendRequest:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this ListRiskTrendRequest.
+        r"""Sets the start_at of this ListRiskTrendRequest.
 
         开始时间
 
@@ -133,7 +133,7 @@ class ListRiskTrendRequest:
 
     @property
     def end_at(self):
-        """Gets the end_at of this ListRiskTrendRequest.
+        r"""Gets the end_at of this ListRiskTrendRequest.
 
         结束时间
 
@@ -144,7 +144,7 @@ class ListRiskTrendRequest:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this ListRiskTrendRequest.
+        r"""Sets the end_at of this ListRiskTrendRequest.
 
         结束时间
 
@@ -155,7 +155,7 @@ class ListRiskTrendRequest:
 
     @property
     def metric_code(self):
-        """Gets the metric_code of this ListRiskTrendRequest.
+        r"""Gets the metric_code of this ListRiskTrendRequest.
 
         指标码
 
@@ -166,7 +166,7 @@ class ListRiskTrendRequest:
 
     @metric_code.setter
     def metric_code(self, metric_code):
-        """Sets the metric_code of this ListRiskTrendRequest.
+        r"""Sets the metric_code of this ListRiskTrendRequest.
 
         指标码
 

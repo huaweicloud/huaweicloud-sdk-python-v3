@@ -45,7 +45,7 @@ class HostClusterInfoDetail:
     }
 
     def __init__(self, id=None, name=None, os=None, slave_cluster_id=None, created_by=None, description=None, permission=None, nick_name=None, is_proxy_mode=None, created_time=None, updated_time=None):
-        """HostClusterInfoDetail
+        r"""HostClusterInfoDetail
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class HostClusterInfoDetail:
 
     @property
     def id(self):
-        """Gets the id of this HostClusterInfoDetail.
+        r"""Gets the id of this HostClusterInfoDetail.
 
         主机集群id
 
@@ -124,7 +124,7 @@ class HostClusterInfoDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HostClusterInfoDetail.
+        r"""Sets the id of this HostClusterInfoDetail.
 
         主机集群id
 
@@ -135,7 +135,7 @@ class HostClusterInfoDetail:
 
     @property
     def name(self):
-        """Gets the name of this HostClusterInfoDetail.
+        r"""Gets the name of this HostClusterInfoDetail.
 
         主机集群名
 
@@ -146,7 +146,7 @@ class HostClusterInfoDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HostClusterInfoDetail.
+        r"""Sets the name of this HostClusterInfoDetail.
 
         主机集群名
 
@@ -157,7 +157,7 @@ class HostClusterInfoDetail:
 
     @property
     def os(self):
-        """Gets the os of this HostClusterInfoDetail.
+        r"""Gets the os of this HostClusterInfoDetail.
 
         操作系统：windows|linux
 
@@ -168,7 +168,7 @@ class HostClusterInfoDetail:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this HostClusterInfoDetail.
+        r"""Sets the os of this HostClusterInfoDetail.
 
         操作系统：windows|linux
 
@@ -179,7 +179,7 @@ class HostClusterInfoDetail:
 
     @property
     def slave_cluster_id(self):
-        """Gets the slave_cluster_id of this HostClusterInfoDetail.
+        r"""Gets the slave_cluster_id of this HostClusterInfoDetail.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -190,7 +190,7 @@ class HostClusterInfoDetail:
 
     @slave_cluster_id.setter
     def slave_cluster_id(self, slave_cluster_id):
-        """Sets the slave_cluster_id of this HostClusterInfoDetail.
+        r"""Sets the slave_cluster_id of this HostClusterInfoDetail.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -201,7 +201,7 @@ class HostClusterInfoDetail:
 
     @property
     def created_by(self):
-        """Gets the created_by of this HostClusterInfoDetail.
+        r"""Gets the created_by of this HostClusterInfoDetail.
 
         :return: The created_by of this HostClusterInfoDetail.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.UserInfo`
@@ -210,7 +210,7 @@ class HostClusterInfoDetail:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this HostClusterInfoDetail.
+        r"""Sets the created_by of this HostClusterInfoDetail.
 
         :param created_by: The created_by of this HostClusterInfoDetail.
         :type created_by: :class:`huaweicloudsdkcodeartsdeploy.v2.UserInfo`
@@ -219,7 +219,7 @@ class HostClusterInfoDetail:
 
     @property
     def description(self):
-        """Gets the description of this HostClusterInfoDetail.
+        r"""Gets the description of this HostClusterInfoDetail.
 
         描述
 
@@ -230,7 +230,7 @@ class HostClusterInfoDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this HostClusterInfoDetail.
+        r"""Sets the description of this HostClusterInfoDetail.
 
         描述
 
@@ -241,7 +241,7 @@ class HostClusterInfoDetail:
 
     @property
     def permission(self):
-        """Gets the permission of this HostClusterInfoDetail.
+        r"""Gets the permission of this HostClusterInfoDetail.
 
         :return: The permission of this HostClusterInfoDetail.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionClusterDetail`
@@ -250,7 +250,7 @@ class HostClusterInfoDetail:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this HostClusterInfoDetail.
+        r"""Sets the permission of this HostClusterInfoDetail.
 
         :param permission: The permission of this HostClusterInfoDetail.
         :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.PermissionClusterDetail`
@@ -259,7 +259,7 @@ class HostClusterInfoDetail:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this HostClusterInfoDetail.
+        r"""Gets the nick_name of this HostClusterInfoDetail.
 
         创建人名称
 
@@ -270,7 +270,7 @@ class HostClusterInfoDetail:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this HostClusterInfoDetail.
+        r"""Sets the nick_name of this HostClusterInfoDetail.
 
         创建人名称
 
@@ -281,7 +281,7 @@ class HostClusterInfoDetail:
 
     @property
     def is_proxy_mode(self):
-        """Gets the is_proxy_mode of this HostClusterInfoDetail.
+        r"""Gets the is_proxy_mode of this HostClusterInfoDetail.
 
         是否是代理模式
 
@@ -292,7 +292,7 @@ class HostClusterInfoDetail:
 
     @is_proxy_mode.setter
     def is_proxy_mode(self, is_proxy_mode):
-        """Sets the is_proxy_mode of this HostClusterInfoDetail.
+        r"""Sets the is_proxy_mode of this HostClusterInfoDetail.
 
         是否是代理模式
 
@@ -303,7 +303,7 @@ class HostClusterInfoDetail:
 
     @property
     def created_time(self):
-        """Gets the created_time of this HostClusterInfoDetail.
+        r"""Gets the created_time of this HostClusterInfoDetail.
 
         创建时间
 
@@ -314,7 +314,7 @@ class HostClusterInfoDetail:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this HostClusterInfoDetail.
+        r"""Sets the created_time of this HostClusterInfoDetail.
 
         创建时间
 
@@ -325,7 +325,7 @@ class HostClusterInfoDetail:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this HostClusterInfoDetail.
+        r"""Gets the updated_time of this HostClusterInfoDetail.
 
         更新时间
 
@@ -336,7 +336,7 @@ class HostClusterInfoDetail:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this HostClusterInfoDetail.
+        r"""Sets the updated_time of this HostClusterInfoDetail.
 
         更新时间
 

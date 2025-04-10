@@ -27,7 +27,7 @@ class UpdateUnbindPublicRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateUnbindPublicRequest
+        r"""UpdateUnbindPublicRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateUnbindPublicRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateUnbindPublicRequest.
+        r"""Gets the cluster_id of this UpdateUnbindPublicRequest.
 
         指定关闭公网访问集群ID。
 
@@ -60,7 +60,7 @@ class UpdateUnbindPublicRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateUnbindPublicRequest.
+        r"""Sets the cluster_id of this UpdateUnbindPublicRequest.
 
         指定关闭公网访问集群ID。
 
@@ -71,7 +71,7 @@ class UpdateUnbindPublicRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateUnbindPublicRequest.
+        r"""Gets the body of this UpdateUnbindPublicRequest.
 
         :return: The body of this UpdateUnbindPublicRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UnBindPublicReq`
@@ -80,7 +80,7 @@ class UpdateUnbindPublicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateUnbindPublicRequest.
+        r"""Sets the body of this UpdateUnbindPublicRequest.
 
         :param body: The body of this UpdateUnbindPublicRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UnBindPublicReq`

@@ -29,7 +29,7 @@ class CreateResourceTagRequest:
     }
 
     def __init__(self, resource_id=None, resource_type=None, body=None):
-        """CreateResourceTagRequest
+        r"""CreateResourceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateResourceTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateResourceTagRequest.
+        r"""Gets the resource_id of this CreateResourceTagRequest.
 
         资源实例ID
 
@@ -66,7 +66,7 @@ class CreateResourceTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateResourceTagRequest.
+        r"""Sets the resource_id of this CreateResourceTagRequest.
 
         资源实例ID
 
@@ -77,7 +77,7 @@ class CreateResourceTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CreateResourceTagRequest.
+        r"""Gets the resource_type of this CreateResourceTagRequest.
 
         - 专线服务资源类型，包括dc-directconnect/dc-vgw/dc-vif - dc-directconnect: 专线物理连接 - dc-vgw： 虚拟网关 - dc-vif： 虚拟接口
 
@@ -88,7 +88,7 @@ class CreateResourceTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CreateResourceTagRequest.
+        r"""Sets the resource_type of this CreateResourceTagRequest.
 
         - 专线服务资源类型，包括dc-directconnect/dc-vgw/dc-vif - dc-directconnect: 专线物理连接 - dc-vgw： 虚拟网关 - dc-vif： 虚拟接口
 
@@ -99,7 +99,7 @@ class CreateResourceTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResourceTagRequest.
+        r"""Gets the body of this CreateResourceTagRequest.
 
         :return: The body of this CreateResourceTagRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.CreateResourceTagRequestBody`
@@ -108,7 +108,7 @@ class CreateResourceTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResourceTagRequest.
+        r"""Sets the body of this CreateResourceTagRequest.
 
         :param body: The body of this CreateResourceTagRequest.
         :type body: :class:`huaweicloudsdkdc.v3.CreateResourceTagRequestBody`

@@ -43,7 +43,7 @@ class AppGroupsEntity:
     }
 
     def __init__(self, id=None, name=None, project_id=None, path=None, parent_id=None, ordinal=None, create_user_id=None, last_update_user_id=None, count=None, children=None):
-        """AppGroupsEntity
+        r"""AppGroupsEntity
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AppGroupsEntity:
 
     @property
     def id(self):
-        """Gets the id of this AppGroupsEntity.
+        r"""Gets the id of this AppGroupsEntity.
 
         分组id
 
@@ -117,7 +117,7 @@ class AppGroupsEntity:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppGroupsEntity.
+        r"""Sets the id of this AppGroupsEntity.
 
         分组id
 
@@ -128,7 +128,7 @@ class AppGroupsEntity:
 
     @property
     def name(self):
-        """Gets the name of this AppGroupsEntity.
+        r"""Gets the name of this AppGroupsEntity.
 
         分组名称
 
@@ -139,7 +139,7 @@ class AppGroupsEntity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppGroupsEntity.
+        r"""Sets the name of this AppGroupsEntity.
 
         分组名称
 
@@ -150,7 +150,7 @@ class AppGroupsEntity:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AppGroupsEntity.
+        r"""Gets the project_id of this AppGroupsEntity.
 
         项目id
 
@@ -161,7 +161,7 @@ class AppGroupsEntity:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AppGroupsEntity.
+        r"""Sets the project_id of this AppGroupsEntity.
 
         项目id
 
@@ -172,7 +172,7 @@ class AppGroupsEntity:
 
     @property
     def path(self):
-        """Gets the path of this AppGroupsEntity.
+        r"""Gets the path of this AppGroupsEntity.
 
         分组路径
 
@@ -183,7 +183,7 @@ class AppGroupsEntity:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this AppGroupsEntity.
+        r"""Sets the path of this AppGroupsEntity.
 
         分组路径
 
@@ -194,7 +194,7 @@ class AppGroupsEntity:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this AppGroupsEntity.
+        r"""Gets the parent_id of this AppGroupsEntity.
 
         父分组id，首层为null
 
@@ -205,7 +205,7 @@ class AppGroupsEntity:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this AppGroupsEntity.
+        r"""Sets the parent_id of this AppGroupsEntity.
 
         父分组id，首层为null
 
@@ -216,7 +216,7 @@ class AppGroupsEntity:
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this AppGroupsEntity.
+        r"""Gets the ordinal of this AppGroupsEntity.
 
         分组排序字段
 
@@ -227,7 +227,7 @@ class AppGroupsEntity:
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this AppGroupsEntity.
+        r"""Sets the ordinal of this AppGroupsEntity.
 
         分组排序字段
 
@@ -238,7 +238,7 @@ class AppGroupsEntity:
 
     @property
     def create_user_id(self):
-        """Gets the create_user_id of this AppGroupsEntity.
+        r"""Gets the create_user_id of this AppGroupsEntity.
 
         分组创建者用户id
 
@@ -249,7 +249,7 @@ class AppGroupsEntity:
 
     @create_user_id.setter
     def create_user_id(self, create_user_id):
-        """Sets the create_user_id of this AppGroupsEntity.
+        r"""Sets the create_user_id of this AppGroupsEntity.
 
         分组创建者用户id
 
@@ -260,7 +260,7 @@ class AppGroupsEntity:
 
     @property
     def last_update_user_id(self):
-        """Gets the last_update_user_id of this AppGroupsEntity.
+        r"""Gets the last_update_user_id of this AppGroupsEntity.
 
         最近一次更新该分组用户id
 
@@ -271,7 +271,7 @@ class AppGroupsEntity:
 
     @last_update_user_id.setter
     def last_update_user_id(self, last_update_user_id):
-        """Sets the last_update_user_id of this AppGroupsEntity.
+        r"""Sets the last_update_user_id of this AppGroupsEntity.
 
         最近一次更新该分组用户id
 
@@ -282,7 +282,7 @@ class AppGroupsEntity:
 
     @property
     def count(self):
-        """Gets the count of this AppGroupsEntity.
+        r"""Gets the count of this AppGroupsEntity.
 
         该分组应用总数
 
@@ -293,7 +293,7 @@ class AppGroupsEntity:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this AppGroupsEntity.
+        r"""Sets the count of this AppGroupsEntity.
 
         该分组应用总数
 
@@ -304,7 +304,7 @@ class AppGroupsEntity:
 
     @property
     def children(self):
-        """Gets the children of this AppGroupsEntity.
+        r"""Gets the children of this AppGroupsEntity.
 
         子分组列表
 
@@ -315,7 +315,7 @@ class AppGroupsEntity:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this AppGroupsEntity.
+        r"""Sets the children of this AppGroupsEntity.
 
         子分组列表
 

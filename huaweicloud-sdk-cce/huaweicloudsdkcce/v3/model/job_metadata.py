@@ -29,7 +29,7 @@ class JobMetadata:
     }
 
     def __init__(self, uid=None, creation_timestamp=None, update_timestamp=None):
-        """JobMetadata
+        r"""JobMetadata
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class JobMetadata:
 
     @property
     def uid(self):
-        """Gets the uid of this JobMetadata.
+        r"""Gets the uid of this JobMetadata.
 
         任务的ID。
 
@@ -68,7 +68,7 @@ class JobMetadata:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this JobMetadata.
+        r"""Sets the uid of this JobMetadata.
 
         任务的ID。
 
@@ -79,7 +79,7 @@ class JobMetadata:
 
     @property
     def creation_timestamp(self):
-        """Gets the creation_timestamp of this JobMetadata.
+        r"""Gets the creation_timestamp of this JobMetadata.
 
         任务的创建时间。
 
@@ -90,7 +90,7 @@ class JobMetadata:
 
     @creation_timestamp.setter
     def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this JobMetadata.
+        r"""Sets the creation_timestamp of this JobMetadata.
 
         任务的创建时间。
 
@@ -101,7 +101,7 @@ class JobMetadata:
 
     @property
     def update_timestamp(self):
-        """Gets the update_timestamp of this JobMetadata.
+        r"""Gets the update_timestamp of this JobMetadata.
 
         任务的更新时间。
 
@@ -112,7 +112,7 @@ class JobMetadata:
 
     @update_timestamp.setter
     def update_timestamp(self, update_timestamp):
-        """Sets the update_timestamp of this JobMetadata.
+        r"""Sets the update_timestamp of this JobMetadata.
 
         任务的更新时间。
 

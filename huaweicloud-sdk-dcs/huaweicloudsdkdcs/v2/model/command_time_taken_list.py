@@ -31,7 +31,7 @@ class CommandTimeTakenList:
     }
 
     def __init__(self, total_num=None, total_usec_sum=None, result=None, command_list=None):
-        """CommandTimeTakenList
+        r"""CommandTimeTakenList
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CommandTimeTakenList:
 
     @property
     def total_num(self):
-        """Gets the total_num of this CommandTimeTakenList.
+        r"""Gets the total_num of this CommandTimeTakenList.
 
         执行命令的总次数
 
@@ -71,7 +71,7 @@ class CommandTimeTakenList:
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this CommandTimeTakenList.
+        r"""Sets the total_num of this CommandTimeTakenList.
 
         执行命令的总次数
 
@@ -82,7 +82,7 @@ class CommandTimeTakenList:
 
     @property
     def total_usec_sum(self):
-        """Gets the total_usec_sum of this CommandTimeTakenList.
+        r"""Gets the total_usec_sum of this CommandTimeTakenList.
 
         执行命令的总耗时
 
@@ -93,7 +93,7 @@ class CommandTimeTakenList:
 
     @total_usec_sum.setter
     def total_usec_sum(self, total_usec_sum):
-        """Sets the total_usec_sum of this CommandTimeTakenList.
+        r"""Sets the total_usec_sum of this CommandTimeTakenList.
 
         执行命令的总耗时
 
@@ -104,7 +104,7 @@ class CommandTimeTakenList:
 
     @property
     def result(self):
-        """Gets the result of this CommandTimeTakenList.
+        r"""Gets the result of this CommandTimeTakenList.
 
         命令耗时统计结果
 
@@ -115,7 +115,7 @@ class CommandTimeTakenList:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CommandTimeTakenList.
+        r"""Sets the result of this CommandTimeTakenList.
 
         命令耗时统计结果
 
@@ -126,7 +126,7 @@ class CommandTimeTakenList:
 
     @property
     def command_list(self):
-        """Gets the command_list of this CommandTimeTakenList.
+        r"""Gets the command_list of this CommandTimeTakenList.
 
         命令耗时统计
 
@@ -137,7 +137,7 @@ class CommandTimeTakenList:
 
     @command_list.setter
     def command_list(self, command_list):
-        """Sets the command_list of this CommandTimeTakenList.
+        r"""Sets the command_list of this CommandTimeTakenList.
 
         命令耗时统计
 

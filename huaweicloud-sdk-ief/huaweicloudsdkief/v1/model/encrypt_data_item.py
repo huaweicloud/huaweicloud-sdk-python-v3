@@ -29,7 +29,7 @@ class EncryptDataItem:
     }
 
     def __init__(self, name=None, value=None, is_encrypted=None):
-        """EncryptDataItem
+        r"""EncryptDataItem
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class EncryptDataItem:
 
     @property
     def name(self):
-        """Gets the name of this EncryptDataItem.
+        r"""Gets the name of this EncryptDataItem.
 
         加密数据项键名，小写英文字母、数字、中划线，以小写字母或数字开头，最大长度为32个字符，不能为空
 
@@ -66,7 +66,7 @@ class EncryptDataItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EncryptDataItem.
+        r"""Sets the name of this EncryptDataItem.
 
         加密数据项键名，小写英文字母、数字、中划线，以小写字母或数字开头，最大长度为32个字符，不能为空
 
@@ -77,7 +77,7 @@ class EncryptDataItem:
 
     @property
     def value(self):
-        """Gets the value of this EncryptDataItem.
+        r"""Gets the value of this EncryptDataItem.
 
         加密数据项键值
 
@@ -88,7 +88,7 @@ class EncryptDataItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this EncryptDataItem.
+        r"""Sets the value of this EncryptDataItem.
 
         加密数据项键值
 
@@ -99,7 +99,7 @@ class EncryptDataItem:
 
     @property
     def is_encrypted(self):
-        """Gets the is_encrypted of this EncryptDataItem.
+        r"""Gets the is_encrypted of this EncryptDataItem.
 
         加密数据项键值是否已加密，默认为true
 
@@ -110,7 +110,7 @@ class EncryptDataItem:
 
     @is_encrypted.setter
     def is_encrypted(self, is_encrypted):
-        """Sets the is_encrypted of this EncryptDataItem.
+        r"""Sets the is_encrypted of this EncryptDataItem.
 
         加密数据项键值是否已加密，默认为true
 

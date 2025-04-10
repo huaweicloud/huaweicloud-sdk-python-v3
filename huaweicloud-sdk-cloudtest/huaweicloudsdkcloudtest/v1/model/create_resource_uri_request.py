@@ -25,7 +25,7 @@ class CreateResourceUriRequest:
     }
 
     def __init__(self, project_id=None):
-        """CreateResourceUriRequest
+        r"""CreateResourceUriRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateResourceUriRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateResourceUriRequest.
+        r"""Gets the project_id of this CreateResourceUriRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -53,7 +53,7 @@ class CreateResourceUriRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateResourceUriRequest.
+        r"""Sets the project_id of this CreateResourceUriRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 

@@ -27,7 +27,7 @@ class UpdateQualityEnhanceTemplateReq:
     }
 
     def __init__(self, template_id=None, template=None):
-        """UpdateQualityEnhanceTemplateReq
+        r"""UpdateQualityEnhanceTemplateReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateQualityEnhanceTemplateReq:
 
     @property
     def template_id(self):
-        """Gets the template_id of this UpdateQualityEnhanceTemplateReq.
+        r"""Gets the template_id of this UpdateQualityEnhanceTemplateReq.
 
         模板ID。 
 
@@ -61,7 +61,7 @@ class UpdateQualityEnhanceTemplateReq:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this UpdateQualityEnhanceTemplateReq.
+        r"""Sets the template_id of this UpdateQualityEnhanceTemplateReq.
 
         模板ID。 
 
@@ -72,7 +72,7 @@ class UpdateQualityEnhanceTemplateReq:
 
     @property
     def template(self):
-        """Gets the template of this UpdateQualityEnhanceTemplateReq.
+        r"""Gets the template of this UpdateQualityEnhanceTemplateReq.
 
         :return: The template of this UpdateQualityEnhanceTemplateReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplate`
@@ -81,7 +81,7 @@ class UpdateQualityEnhanceTemplateReq:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this UpdateQualityEnhanceTemplateReq.
+        r"""Sets the template of this UpdateQualityEnhanceTemplateReq.
 
         :param template: The template of this UpdateQualityEnhanceTemplateReq.
         :type template: :class:`huaweicloudsdkmpc.v1.QualityEnhanceTemplate`

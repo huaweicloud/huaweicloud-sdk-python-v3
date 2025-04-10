@@ -26,7 +26,7 @@ class DeleteRecordRuleResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """DeleteRecordRuleResponse
+        r"""DeleteRecordRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteRecordRuleResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteRecordRuleResponse.
+        r"""Gets the x_request_id of this DeleteRecordRuleResponse.
 
         :return: The x_request_id of this DeleteRecordRuleResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteRecordRuleResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteRecordRuleResponse.
+        r"""Sets the x_request_id of this DeleteRecordRuleResponse.
 
         :param x_request_id: The x_request_id of this DeleteRecordRuleResponse.
         :type x_request_id: str

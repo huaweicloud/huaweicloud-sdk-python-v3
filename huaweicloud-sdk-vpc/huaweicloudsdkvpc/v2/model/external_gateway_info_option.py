@@ -25,7 +25,7 @@ class ExternalGatewayInfoOption:
     }
 
     def __init__(self, network_id=None):
-        """ExternalGatewayInfoOption
+        r"""ExternalGatewayInfoOption
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExternalGatewayInfoOption:
 
     @property
     def network_id(self):
-        """Gets the network_id of this ExternalGatewayInfoOption.
+        r"""Gets the network_id of this ExternalGatewayInfoOption.
 
         外部网络的ID。 外部网络的信息请通过GET /v2.0/networks?router:external=True或neutron net-external-list方式查询。
 
@@ -54,7 +54,7 @@ class ExternalGatewayInfoOption:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this ExternalGatewayInfoOption.
+        r"""Sets the network_id of this ExternalGatewayInfoOption.
 
         外部网络的ID。 外部网络的信息请通过GET /v2.0/networks?router:external=True或neutron net-external-list方式查询。
 

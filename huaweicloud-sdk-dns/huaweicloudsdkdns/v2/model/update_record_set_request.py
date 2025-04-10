@@ -29,7 +29,7 @@ class UpdateRecordSetRequest:
     }
 
     def __init__(self, zone_id=None, recordset_id=None, body=None):
-        """UpdateRecordSetRequest
+        r"""UpdateRecordSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateRecordSetRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this UpdateRecordSetRequest.
+        r"""Gets the zone_id of this UpdateRecordSetRequest.
 
         所属zone的ID。
 
@@ -66,7 +66,7 @@ class UpdateRecordSetRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this UpdateRecordSetRequest.
+        r"""Sets the zone_id of this UpdateRecordSetRequest.
 
         所属zone的ID。
 
@@ -77,7 +77,7 @@ class UpdateRecordSetRequest:
 
     @property
     def recordset_id(self):
-        """Gets the recordset_id of this UpdateRecordSetRequest.
+        r"""Gets the recordset_id of this UpdateRecordSetRequest.
 
         待修改的recordset的ID信息。
 
@@ -88,7 +88,7 @@ class UpdateRecordSetRequest:
 
     @recordset_id.setter
     def recordset_id(self, recordset_id):
-        """Sets the recordset_id of this UpdateRecordSetRequest.
+        r"""Sets the recordset_id of this UpdateRecordSetRequest.
 
         待修改的recordset的ID信息。
 
@@ -99,7 +99,7 @@ class UpdateRecordSetRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRecordSetRequest.
+        r"""Gets the body of this UpdateRecordSetRequest.
 
         :return: The body of this UpdateRecordSetRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.UpdateRecordSetReq`
@@ -108,7 +108,7 @@ class UpdateRecordSetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRecordSetRequest.
+        r"""Sets the body of this UpdateRecordSetRequest.
 
         :param body: The body of this UpdateRecordSetRequest.
         :type body: :class:`huaweicloudsdkdns.v2.UpdateRecordSetReq`

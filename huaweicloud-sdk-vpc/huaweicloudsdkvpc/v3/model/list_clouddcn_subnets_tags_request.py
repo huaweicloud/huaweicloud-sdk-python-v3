@@ -23,7 +23,7 @@ class ListClouddcnSubnetsTagsRequest:
     }
 
     def __init__(self):
-        """ListClouddcnSubnetsTagsRequest
+        r"""ListClouddcnSubnetsTagsRequest
 
         The model defined in huaweicloud sdk
 

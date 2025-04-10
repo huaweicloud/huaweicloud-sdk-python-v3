@@ -25,7 +25,7 @@ class CountGlobalEips:
     }
 
     def __init__(self, count=None):
-        """CountGlobalEips
+        r"""CountGlobalEips
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CountGlobalEips:
 
     @property
     def count(self):
-        """Gets the count of this CountGlobalEips.
+        r"""Gets the count of this CountGlobalEips.
 
         全域弹性公网IP个数
 
@@ -53,7 +53,7 @@ class CountGlobalEips:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CountGlobalEips.
+        r"""Sets the count of this CountGlobalEips.
 
         全域弹性公网IP个数
 

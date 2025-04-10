@@ -33,7 +33,7 @@ class CustomerBalancesV2:
     }
 
     def __init__(self, customer_id=None, debt_amount=None, amount=None, currency=None, measure_id=None):
-        """CustomerBalancesV2
+        r"""CustomerBalancesV2
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CustomerBalancesV2:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this CustomerBalancesV2.
+        r"""Gets the customer_id of this CustomerBalancesV2.
 
         客户账号ID。
 
@@ -81,7 +81,7 @@ class CustomerBalancesV2:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this CustomerBalancesV2.
+        r"""Sets the customer_id of this CustomerBalancesV2.
 
         客户账号ID。
 
@@ -92,7 +92,7 @@ class CustomerBalancesV2:
 
     @property
     def debt_amount(self):
-        """Gets the debt_amount of this CustomerBalancesV2.
+        r"""Gets the debt_amount of this CustomerBalancesV2.
 
         客户欠款总额度。
 
@@ -103,7 +103,7 @@ class CustomerBalancesV2:
 
     @debt_amount.setter
     def debt_amount(self, debt_amount):
-        """Sets the debt_amount of this CustomerBalancesV2.
+        r"""Sets the debt_amount of this CustomerBalancesV2.
 
         客户欠款总额度。
 
@@ -114,7 +114,7 @@ class CustomerBalancesV2:
 
     @property
     def amount(self):
-        """Gets the amount of this CustomerBalancesV2.
+        r"""Gets the amount of this CustomerBalancesV2.
 
         客户可用总额度。
 
@@ -125,7 +125,7 @@ class CustomerBalancesV2:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this CustomerBalancesV2.
+        r"""Sets the amount of this CustomerBalancesV2.
 
         客户可用总额度。
 
@@ -136,7 +136,7 @@ class CustomerBalancesV2:
 
     @property
     def currency(self):
-        """Gets the currency of this CustomerBalancesV2.
+        r"""Gets the currency of this CustomerBalancesV2.
 
         币种。 CNY：人民币。
 
@@ -147,7 +147,7 @@ class CustomerBalancesV2:
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this CustomerBalancesV2.
+        r"""Sets the currency of this CustomerBalancesV2.
 
         币种。 CNY：人民币。
 
@@ -158,7 +158,7 @@ class CustomerBalancesV2:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this CustomerBalancesV2.
+        r"""Gets the measure_id of this CustomerBalancesV2.
 
         度量单位： 1：元
 
@@ -169,7 +169,7 @@ class CustomerBalancesV2:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this CustomerBalancesV2.
+        r"""Sets the measure_id of this CustomerBalancesV2.
 
         度量单位： 1：元
 

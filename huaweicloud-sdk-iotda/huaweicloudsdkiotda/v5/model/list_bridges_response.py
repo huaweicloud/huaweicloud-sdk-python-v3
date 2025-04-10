@@ -28,7 +28,7 @@ class ListBridgesResponse(SdkResponse):
     }
 
     def __init__(self, bridges=None, page=None):
-        """ListBridgesResponse
+        r"""ListBridgesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBridgesResponse(SdkResponse):
 
     @property
     def bridges(self):
-        """Gets the bridges of this ListBridgesResponse.
+        r"""Gets the bridges of this ListBridgesResponse.
 
         网桥列表。
 
@@ -62,7 +62,7 @@ class ListBridgesResponse(SdkResponse):
 
     @bridges.setter
     def bridges(self, bridges):
-        """Sets the bridges of this ListBridgesResponse.
+        r"""Sets the bridges of this ListBridgesResponse.
 
         网桥列表。
 
@@ -73,7 +73,7 @@ class ListBridgesResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ListBridgesResponse.
+        r"""Gets the page of this ListBridgesResponse.
 
         :return: The page of this ListBridgesResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.Page`
@@ -82,7 +82,7 @@ class ListBridgesResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListBridgesResponse.
+        r"""Sets the page of this ListBridgesResponse.
 
         :param page: The page of this ListBridgesResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.Page`

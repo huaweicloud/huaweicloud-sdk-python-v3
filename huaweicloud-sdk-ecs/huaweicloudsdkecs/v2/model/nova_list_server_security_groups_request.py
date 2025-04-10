@@ -25,7 +25,7 @@ class NovaListServerSecurityGroupsRequest:
     }
 
     def __init__(self, server_id=None):
-        """NovaListServerSecurityGroupsRequest
+        r"""NovaListServerSecurityGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NovaListServerSecurityGroupsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this NovaListServerSecurityGroupsRequest.
+        r"""Gets the server_id of this NovaListServerSecurityGroupsRequest.
 
         云服务器ID。
 
@@ -53,7 +53,7 @@ class NovaListServerSecurityGroupsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this NovaListServerSecurityGroupsRequest.
+        r"""Sets the server_id of this NovaListServerSecurityGroupsRequest.
 
         云服务器ID。
 

@@ -30,7 +30,7 @@ class ImageTypeEnum:
     }
 
     def __init__(self):
-        """ImageTypeEnum
+        r"""ImageTypeEnum
 
         The model defined in huaweicloud sdk
 

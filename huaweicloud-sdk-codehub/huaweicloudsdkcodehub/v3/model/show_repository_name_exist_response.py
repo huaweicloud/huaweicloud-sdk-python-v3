@@ -30,7 +30,7 @@ class ShowRepositoryNameExistResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowRepositoryNameExistResponse
+        r"""ShowRepositoryNameExistResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowRepositoryNameExistResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowRepositoryNameExistResponse.
+        r"""Gets the error of this ShowRepositoryNameExistResponse.
 
         :return: The error of this ShowRepositoryNameExistResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ShowRepositoryNameExistResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowRepositoryNameExistResponse.
+        r"""Sets the error of this ShowRepositoryNameExistResponse.
 
         :param error: The error of this ShowRepositoryNameExistResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ShowRepositoryNameExistResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowRepositoryNameExistResponse.
+        r"""Gets the result of this ShowRepositoryNameExistResponse.
 
         响应结果
 
@@ -87,7 +87,7 @@ class ShowRepositoryNameExistResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowRepositoryNameExistResponse.
+        r"""Sets the result of this ShowRepositoryNameExistResponse.
 
         响应结果
 
@@ -98,7 +98,7 @@ class ShowRepositoryNameExistResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowRepositoryNameExistResponse.
+        r"""Gets the status of this ShowRepositoryNameExistResponse.
 
         响应状态
 
@@ -109,7 +109,7 @@ class ShowRepositoryNameExistResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowRepositoryNameExistResponse.
+        r"""Sets the status of this ShowRepositoryNameExistResponse.
 
         响应状态
 

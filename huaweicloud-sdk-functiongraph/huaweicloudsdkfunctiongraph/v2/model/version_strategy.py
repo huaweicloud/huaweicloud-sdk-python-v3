@@ -27,7 +27,7 @@ class VersionStrategy:
     }
 
     def __init__(self, rules=None, combine_type=None):
-        """VersionStrategy
+        r"""VersionStrategy
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VersionStrategy:
 
     @property
     def rules(self):
-        """Gets the rules of this VersionStrategy.
+        r"""Gets the rules of this VersionStrategy.
 
         规则列表
 
@@ -61,7 +61,7 @@ class VersionStrategy:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this VersionStrategy.
+        r"""Sets the rules of this VersionStrategy.
 
         规则列表
 
@@ -72,7 +72,7 @@ class VersionStrategy:
 
     @property
     def combine_type(self):
-        """Gets the combine_type of this VersionStrategy.
+        r"""Gets the combine_type of this VersionStrategy.
 
         所有规则聚合方式。and：所有规则都满足，or：满足其中一个
 
@@ -83,7 +83,7 @@ class VersionStrategy:
 
     @combine_type.setter
     def combine_type(self, combine_type):
-        """Sets the combine_type of this VersionStrategy.
+        r"""Sets the combine_type of this VersionStrategy.
 
         所有规则聚合方式。and：所有规则都满足，or：满足其中一个
 

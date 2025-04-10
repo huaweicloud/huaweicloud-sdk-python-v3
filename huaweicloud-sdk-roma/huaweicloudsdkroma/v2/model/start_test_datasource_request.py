@@ -29,7 +29,7 @@ class StartTestDatasourceRequest:
     }
 
     def __init__(self, instance_id=None, datasource_id=None, body=None):
-        """StartTestDatasourceRequest
+        r"""StartTestDatasourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class StartTestDatasourceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StartTestDatasourceRequest.
+        r"""Gets the instance_id of this StartTestDatasourceRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class StartTestDatasourceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StartTestDatasourceRequest.
+        r"""Sets the instance_id of this StartTestDatasourceRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class StartTestDatasourceRequest:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this StartTestDatasourceRequest.
+        r"""Gets the datasource_id of this StartTestDatasourceRequest.
 
         数据源ID
 
@@ -88,7 +88,7 @@ class StartTestDatasourceRequest:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this StartTestDatasourceRequest.
+        r"""Sets the datasource_id of this StartTestDatasourceRequest.
 
         数据源ID
 
@@ -99,7 +99,7 @@ class StartTestDatasourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartTestDatasourceRequest.
+        r"""Gets the body of this StartTestDatasourceRequest.
 
         :return: The body of this StartTestDatasourceRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.DatasourceInfo`
@@ -108,7 +108,7 @@ class StartTestDatasourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartTestDatasourceRequest.
+        r"""Sets the body of this StartTestDatasourceRequest.
 
         :param body: The body of this StartTestDatasourceRequest.
         :type body: :class:`huaweicloudsdkroma.v2.DatasourceInfo`

@@ -27,7 +27,7 @@ class BatchListStructProcessRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchListStructProcessRequest
+        r"""BatchListStructProcessRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchListStructProcessRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchListStructProcessRequest.
+        r"""Gets the x_language of this BatchListStructProcessRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class BatchListStructProcessRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchListStructProcessRequest.
+        r"""Sets the x_language of this BatchListStructProcessRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class BatchListStructProcessRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchListStructProcessRequest.
+        r"""Gets the body of this BatchListStructProcessRequest.
 
         :return: The body of this BatchListStructProcessRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryJobReq`
@@ -81,7 +81,7 @@ class BatchListStructProcessRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchListStructProcessRequest.
+        r"""Sets the body of this BatchListStructProcessRequest.
 
         :param body: The body of this BatchListStructProcessRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryJobReq`

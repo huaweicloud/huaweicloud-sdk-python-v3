@@ -27,7 +27,7 @@ class UpdateDomainSetInfoDto:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateDomainSetInfoDto
+        r"""UpdateDomainSetInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDomainSetInfoDto:
 
     @property
     def name(self):
-        """Gets the name of this UpdateDomainSetInfoDto.
+        r"""Gets the name of this UpdateDomainSetInfoDto.
 
         域名组名称
 
@@ -60,7 +60,7 @@ class UpdateDomainSetInfoDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDomainSetInfoDto.
+        r"""Sets the name of this UpdateDomainSetInfoDto.
 
         域名组名称
 
@@ -71,7 +71,7 @@ class UpdateDomainSetInfoDto:
 
     @property
     def description(self):
-        """Gets the description of this UpdateDomainSetInfoDto.
+        r"""Gets the description of this UpdateDomainSetInfoDto.
 
         域名组描述
 
@@ -82,7 +82,7 @@ class UpdateDomainSetInfoDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateDomainSetInfoDto.
+        r"""Sets the description of this UpdateDomainSetInfoDto.
 
         域名组描述
 

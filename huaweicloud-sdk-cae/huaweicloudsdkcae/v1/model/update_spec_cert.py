@@ -27,7 +27,7 @@ class UpdateSpecCert:
     }
 
     def __init__(self, crt=None, key=None):
-        """UpdateSpecCert
+        r"""UpdateSpecCert
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateSpecCert:
 
     @property
     def crt(self):
-        """Gets the crt of this UpdateSpecCert.
+        r"""Gets the crt of this UpdateSpecCert.
 
         证书内容。
 
@@ -59,7 +59,7 @@ class UpdateSpecCert:
 
     @crt.setter
     def crt(self, crt):
-        """Sets the crt of this UpdateSpecCert.
+        r"""Sets the crt of this UpdateSpecCert.
 
         证书内容。
 
@@ -70,7 +70,7 @@ class UpdateSpecCert:
 
     @property
     def key(self):
-        """Gets the key of this UpdateSpecCert.
+        r"""Gets the key of this UpdateSpecCert.
 
         私钥内容。
 
@@ -81,7 +81,7 @@ class UpdateSpecCert:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this UpdateSpecCert.
+        r"""Sets the key of this UpdateSpecCert.
 
         私钥内容。
 

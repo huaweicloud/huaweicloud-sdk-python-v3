@@ -32,7 +32,7 @@ class ShowMergeCaseDetailResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, extend=None, result=None):
-        """ShowMergeCaseDetailResponse
+        r"""ShowMergeCaseDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowMergeCaseDetailResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowMergeCaseDetailResponse.
+        r"""Gets the code of this ShowMergeCaseDetailResponse.
 
         响应码
 
@@ -76,7 +76,7 @@ class ShowMergeCaseDetailResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowMergeCaseDetailResponse.
+        r"""Sets the code of this ShowMergeCaseDetailResponse.
 
         响应码
 
@@ -87,7 +87,7 @@ class ShowMergeCaseDetailResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowMergeCaseDetailResponse.
+        r"""Gets the message of this ShowMergeCaseDetailResponse.
 
         响应消息
 
@@ -98,7 +98,7 @@ class ShowMergeCaseDetailResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowMergeCaseDetailResponse.
+        r"""Sets the message of this ShowMergeCaseDetailResponse.
 
         响应消息
 
@@ -109,7 +109,7 @@ class ShowMergeCaseDetailResponse(SdkResponse):
 
     @property
     def extend(self):
-        """Gets the extend of this ShowMergeCaseDetailResponse.
+        r"""Gets the extend of this ShowMergeCaseDetailResponse.
 
         扩展信息
 
@@ -120,7 +120,7 @@ class ShowMergeCaseDetailResponse(SdkResponse):
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this ShowMergeCaseDetailResponse.
+        r"""Sets the extend of this ShowMergeCaseDetailResponse.
 
         扩展信息
 
@@ -131,7 +131,7 @@ class ShowMergeCaseDetailResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowMergeCaseDetailResponse.
+        r"""Gets the result of this ShowMergeCaseDetailResponse.
 
         :return: The result of this ShowMergeCaseDetailResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.CaseReportDetailResult`
@@ -140,7 +140,7 @@ class ShowMergeCaseDetailResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowMergeCaseDetailResponse.
+        r"""Sets the result of this ShowMergeCaseDetailResponse.
 
         :param result: The result of this ShowMergeCaseDetailResponse.
         :type result: :class:`huaweicloudsdkcpts.v1.CaseReportDetailResult`

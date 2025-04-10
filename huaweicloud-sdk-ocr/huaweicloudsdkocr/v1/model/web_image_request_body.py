@@ -35,7 +35,7 @@ class WebImageRequestBody:
     }
 
     def __init__(self, image=None, url=None, detect_direction=None, extract_type=None, detect_font=None, detect_text_direction=None):
-        """WebImageRequestBody
+        r"""WebImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class WebImageRequestBody:
 
     @property
     def image(self):
-        """Gets the image of this WebImageRequestBody.
+        r"""Gets the image of this WebImageRequestBody.
 
         与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过30000px，支持JPEG、JPG、PNG、BMP、TIFF、GIF、WEBP格式。  图片文件Base64编码字符串，[点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)](tag:hc)[点击[这里](https://support.huaweicloud.com/intl/zh-cn/ocr_faq/ocr_01_0032.html)](tag:hk)查看详细获取方式。 
 
@@ -89,7 +89,7 @@ class WebImageRequestBody:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this WebImageRequestBody.
+        r"""Sets the image of this WebImageRequestBody.
 
         与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过30000px，支持JPEG、JPG、PNG、BMP、TIFF、GIF、WEBP格式。  图片文件Base64编码字符串，[点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)](tag:hc)[点击[这里](https://support.huaweicloud.com/intl/zh-cn/ocr_faq/ocr_01_0032.html)](tag:hk)查看详细获取方式。 
 
@@ -100,7 +100,7 @@ class WebImageRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this WebImageRequestBody.
+        r"""Gets the url of this WebImageRequestBody.
 
         与image二选一  要求图片Base64编码后大小不超过10MB。 图片最小边不小于15px，最长边不超过30000px，支持JPEG、JPG、PNG、BMP、TIFF、GIF、WEBP格式。 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，[详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。](tag:hc)[详情参见[配置OBS访问权限](https://support.huaweicloud.com/intl/zh-cn/api-ocr/ocr_03_0132.html)。](tag:hk)  > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -111,7 +111,7 @@ class WebImageRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this WebImageRequestBody.
+        r"""Sets the url of this WebImageRequestBody.
 
         与image二选一  要求图片Base64编码后大小不超过10MB。 图片最小边不小于15px，最长边不超过30000px，支持JPEG、JPG、PNG、BMP、TIFF、GIF、WEBP格式。 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，[详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。](tag:hc)[详情参见[配置OBS访问权限](https://support.huaweicloud.com/intl/zh-cn/api-ocr/ocr_03_0132.html)。](tag:hk)  > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -122,7 +122,7 @@ class WebImageRequestBody:
 
     @property
     def detect_direction(self):
-        """Gets the detect_direction of this WebImageRequestBody.
+        r"""Gets the detect_direction of this WebImageRequestBody.
 
         图片朝向检测开关，可选值包括： - true：检测图片朝向; - false：不检测图片朝向。  > 说明： - 支持任意角度的图片朝向检测。未传入该参数时默认为false，即不检测图片朝向。 
 
@@ -133,7 +133,7 @@ class WebImageRequestBody:
 
     @detect_direction.setter
     def detect_direction(self, detect_direction):
-        """Sets the detect_direction of this WebImageRequestBody.
+        r"""Sets the detect_direction of this WebImageRequestBody.
 
         图片朝向检测开关，可选值包括： - true：检测图片朝向; - false：不检测图片朝向。  > 说明： - 支持任意角度的图片朝向检测。未传入该参数时默认为false，即不检测图片朝向。 
 
@@ -144,7 +144,7 @@ class WebImageRequestBody:
 
     @property
     def extract_type(self):
-        """Gets the extract_type of this WebImageRequestBody.
+        r"""Gets the extract_type of this WebImageRequestBody.
 
         结构化数据提取参数列表，目前只支持联系人信息、图像宽高，其入参值分别为\"contact_info\"，\"image_size\"，若该字段为空列表或缺失该字段，默认不提取。 
 
@@ -155,7 +155,7 @@ class WebImageRequestBody:
 
     @extract_type.setter
     def extract_type(self, extract_type):
-        """Sets the extract_type of this WebImageRequestBody.
+        r"""Sets the extract_type of this WebImageRequestBody.
 
         结构化数据提取参数列表，目前只支持联系人信息、图像宽高，其入参值分别为\"contact_info\"，\"image_size\"，若该字段为空列表或缺失该字段，默认不提取。 
 
@@ -166,7 +166,7 @@ class WebImageRequestBody:
 
     @property
     def detect_font(self):
-        """Gets the detect_font of this WebImageRequestBody.
+        r"""Gets the detect_font of this WebImageRequestBody.
 
         为Boolean类型，若不传该字段，默认不检测切片字体，为True时，将检测切片的字体类型，并返回最相似的5种字体名称。 
 
@@ -177,7 +177,7 @@ class WebImageRequestBody:
 
     @detect_font.setter
     def detect_font(self, detect_font):
-        """Sets the detect_font of this WebImageRequestBody.
+        r"""Sets the detect_font of this WebImageRequestBody.
 
         为Boolean类型，若不传该字段，默认不检测切片字体，为True时，将检测切片的字体类型，并返回最相似的5种字体名称。 
 
@@ -188,7 +188,7 @@ class WebImageRequestBody:
 
     @property
     def detect_text_direction(self):
-        """Gets the detect_text_direction of this WebImageRequestBody.
+        r"""Gets the detect_text_direction of this WebImageRequestBody.
 
         为Boolean类型，若不传该字段，默认为True，即检测每个字段的文字方向。为False时，则不检测文字方向。若图片中所有文字方向均是水平朝上时，建议将该值设为False，即不检测文字方向。 
 
@@ -199,7 +199,7 @@ class WebImageRequestBody:
 
     @detect_text_direction.setter
     def detect_text_direction(self, detect_text_direction):
-        """Sets the detect_text_direction of this WebImageRequestBody.
+        r"""Sets the detect_text_direction of this WebImageRequestBody.
 
         为Boolean类型，若不传该字段，默认为True，即检测每个字段的文字方向。为False时，则不检测文字方向。若图片中所有文字方向均是水平朝上时，建议将该值设为False，即不检测文字方向。 
 

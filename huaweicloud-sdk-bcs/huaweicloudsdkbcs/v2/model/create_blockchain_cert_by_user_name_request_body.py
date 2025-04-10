@@ -25,7 +25,7 @@ class CreateBlockchainCertByUserNameRequestBody:
     }
 
     def __init__(self, security_mode=None):
-        """CreateBlockchainCertByUserNameRequestBody
+        r"""CreateBlockchainCertByUserNameRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateBlockchainCertByUserNameRequestBody:
 
     @property
     def security_mode(self):
-        """Gets the security_mode of this CreateBlockchainCertByUserNameRequestBody.
+        r"""Gets the security_mode of this CreateBlockchainCertByUserNameRequestBody.
 
         生成证书的安全模式： true：安全模式（证书由系统托管，每个用户名只能生成一个证书，每个组织生成上限100个） false：非安全模式（证书由用户自己保障，不限制生成数量）
 
@@ -54,7 +54,7 @@ class CreateBlockchainCertByUserNameRequestBody:
 
     @security_mode.setter
     def security_mode(self, security_mode):
-        """Sets the security_mode of this CreateBlockchainCertByUserNameRequestBody.
+        r"""Sets the security_mode of this CreateBlockchainCertByUserNameRequestBody.
 
         生成证书的安全模式： true：安全模式（证书由系统托管，每个用户名只能生成一个证书，每个组织生成上限100个） false：非安全模式（证书由用户自己保障，不限制生成数量）
 

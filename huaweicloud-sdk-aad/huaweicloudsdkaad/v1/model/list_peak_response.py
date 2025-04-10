@@ -34,7 +34,7 @@ class ListPeakResponse(SdkResponse):
     }
 
     def __init__(self, attack_kbps_peak=None, in_kbps_peak=None, ddos_count=None, timestamp=None, vip=None):
-        """ListPeakResponse
+        r"""ListPeakResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListPeakResponse(SdkResponse):
 
     @property
     def attack_kbps_peak(self):
-        """Gets the attack_kbps_peak of this ListPeakResponse.
+        r"""Gets the attack_kbps_peak of this ListPeakResponse.
 
         攻击峰值
 
@@ -83,7 +83,7 @@ class ListPeakResponse(SdkResponse):
 
     @attack_kbps_peak.setter
     def attack_kbps_peak(self, attack_kbps_peak):
-        """Sets the attack_kbps_peak of this ListPeakResponse.
+        r"""Sets the attack_kbps_peak of this ListPeakResponse.
 
         攻击峰值
 
@@ -94,7 +94,7 @@ class ListPeakResponse(SdkResponse):
 
     @property
     def in_kbps_peak(self):
-        """Gets the in_kbps_peak of this ListPeakResponse.
+        r"""Gets the in_kbps_peak of this ListPeakResponse.
 
         流量峰值
 
@@ -105,7 +105,7 @@ class ListPeakResponse(SdkResponse):
 
     @in_kbps_peak.setter
     def in_kbps_peak(self, in_kbps_peak):
-        """Sets the in_kbps_peak of this ListPeakResponse.
+        r"""Sets the in_kbps_peak of this ListPeakResponse.
 
         流量峰值
 
@@ -116,7 +116,7 @@ class ListPeakResponse(SdkResponse):
 
     @property
     def ddos_count(self):
-        """Gets the ddos_count of this ListPeakResponse.
+        r"""Gets the ddos_count of this ListPeakResponse.
 
         攻击次数
 
@@ -127,7 +127,7 @@ class ListPeakResponse(SdkResponse):
 
     @ddos_count.setter
     def ddos_count(self, ddos_count):
-        """Sets the ddos_count of this ListPeakResponse.
+        r"""Sets the ddos_count of this ListPeakResponse.
 
         攻击次数
 
@@ -138,7 +138,7 @@ class ListPeakResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ListPeakResponse.
+        r"""Gets the timestamp of this ListPeakResponse.
 
         攻击峰值发生时间点
 
@@ -149,7 +149,7 @@ class ListPeakResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ListPeakResponse.
+        r"""Sets the timestamp of this ListPeakResponse.
 
         攻击峰值发生时间点
 
@@ -160,7 +160,7 @@ class ListPeakResponse(SdkResponse):
 
     @property
     def vip(self):
-        """Gets the vip of this ListPeakResponse.
+        r"""Gets the vip of this ListPeakResponse.
 
         高防IP
 
@@ -171,7 +171,7 @@ class ListPeakResponse(SdkResponse):
 
     @vip.setter
     def vip(self, vip):
-        """Sets the vip of this ListPeakResponse.
+        r"""Sets the vip of this ListPeakResponse.
 
         高防IP
 

@@ -29,7 +29,7 @@ class MetricDataItem:
     }
 
     def __init__(self, collect_time=None, metric=None, values=None):
-        """MetricDataItem
+        r"""MetricDataItem
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class MetricDataItem:
 
     @property
     def collect_time(self):
-        """Gets the collect_time of this MetricDataItem.
+        r"""Gets the collect_time of this MetricDataItem.
 
         数据收集时间支持过去1天和未来半小时范围内的数据上报。数据收集时间需要满足：  当前UTC时间减去collect_time小于等于24小时或者collect_time减去当前UTC时间小于等于30分钟。  若数据上报时间早于当天8点，则指标监控页面只显示当天8点后的数据。取值范围： UNIX时间戳，单位毫秒。
 
@@ -65,7 +65,7 @@ class MetricDataItem:
 
     @collect_time.setter
     def collect_time(self, collect_time):
-        """Sets the collect_time of this MetricDataItem.
+        r"""Sets the collect_time of this MetricDataItem.
 
         数据收集时间支持过去1天和未来半小时范围内的数据上报。数据收集时间需要满足：  当前UTC时间减去collect_time小于等于24小时或者collect_time减去当前UTC时间小于等于30分钟。  若数据上报时间早于当天8点，则指标监控页面只显示当天8点后的数据。取值范围： UNIX时间戳，单位毫秒。
 
@@ -76,7 +76,7 @@ class MetricDataItem:
 
     @property
     def metric(self):
-        """Gets the metric of this MetricDataItem.
+        r"""Gets the metric of this MetricDataItem.
 
         :return: The metric of this MetricDataItem.
         :rtype: :class:`huaweicloudsdkaom.v2.MetricItemInfo`
@@ -85,7 +85,7 @@ class MetricDataItem:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this MetricDataItem.
+        r"""Sets the metric of this MetricDataItem.
 
         :param metric: The metric of this MetricDataItem.
         :type metric: :class:`huaweicloudsdkaom.v2.MetricItemInfo`
@@ -94,7 +94,7 @@ class MetricDataItem:
 
     @property
     def values(self):
-        """Gets the values of this MetricDataItem.
+        r"""Gets the values of this MetricDataItem.
 
         指标数据的值。
 
@@ -105,7 +105,7 @@ class MetricDataItem:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this MetricDataItem.
+        r"""Sets the values of this MetricDataItem.
 
         指标数据的值。
 

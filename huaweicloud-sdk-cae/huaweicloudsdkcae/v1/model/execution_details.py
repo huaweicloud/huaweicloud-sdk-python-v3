@@ -27,7 +27,7 @@ class ExecutionDetails:
     }
 
     def __init__(self, last_execution_time=None, items=None):
-        """ExecutionDetails
+        r"""ExecutionDetails
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExecutionDetails:
 
     @property
     def last_execution_time(self):
-        """Gets the last_execution_time of this ExecutionDetails.
+        r"""Gets the last_execution_time of this ExecutionDetails.
 
         启停策略执行时间。
 
@@ -61,7 +61,7 @@ class ExecutionDetails:
 
     @last_execution_time.setter
     def last_execution_time(self, last_execution_time):
-        """Sets the last_execution_time of this ExecutionDetails.
+        r"""Sets the last_execution_time of this ExecutionDetails.
 
         启停策略执行时间。
 
@@ -72,7 +72,7 @@ class ExecutionDetails:
 
     @property
     def items(self):
-        """Gets the items of this ExecutionDetails.
+        r"""Gets the items of this ExecutionDetails.
 
         组件启停规则执行结果列表。
 
@@ -83,7 +83,7 @@ class ExecutionDetails:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ExecutionDetails.
+        r"""Sets the items of this ExecutionDetails.
 
         组件启停规则执行结果列表。
 

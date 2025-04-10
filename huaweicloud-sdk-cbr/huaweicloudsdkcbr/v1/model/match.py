@@ -27,7 +27,7 @@ class Match:
     }
 
     def __init__(self, key=None, value=None):
-        """Match
+        r"""Match
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Match:
 
     @property
     def key(self):
-        """Gets the key of this Match.
+        r"""Gets the key of this Match.
 
         键。 key取值范围为：\"resource_name\"，资源名称
 
@@ -59,7 +59,7 @@ class Match:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Match.
+        r"""Sets the key of this Match.
 
         键。 key取值范围为：\"resource_name\"，资源名称
 
@@ -70,7 +70,7 @@ class Match:
 
     @property
     def value(self):
-        """Gets the value of this Match.
+        r"""Gets the value of this Match.
 
         值。 最大长度255个字符。 key为\"resource_name\"时，value为空字符串时精确匹配，为非空字符串时模糊匹配。
 
@@ -81,7 +81,7 @@ class Match:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Match.
+        r"""Sets the value of this Match.
 
         值。 最大长度255个字符。 key为\"resource_name\"时，value为空字符串时精确匹配，为非空字符串时模糊匹配。
 

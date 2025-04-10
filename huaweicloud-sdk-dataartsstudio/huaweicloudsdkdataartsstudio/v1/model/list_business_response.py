@@ -26,7 +26,7 @@ class ListBusinessResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListBusinessResponse
+        r"""ListBusinessResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBusinessResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListBusinessResponse.
+        r"""Gets the data of this ListBusinessResponse.
 
         返回的数据信息。
 
@@ -55,7 +55,7 @@ class ListBusinessResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListBusinessResponse.
+        r"""Sets the data of this ListBusinessResponse.
 
         返回的数据信息。
 

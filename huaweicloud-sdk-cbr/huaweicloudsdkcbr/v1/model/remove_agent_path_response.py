@@ -28,7 +28,7 @@ class RemoveAgentPathResponse(SdkResponse):
     }
 
     def __init__(self, removed=None, not_existed=None):
-        """RemoveAgentPathResponse
+        r"""RemoveAgentPathResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RemoveAgentPathResponse(SdkResponse):
 
     @property
     def removed(self):
-        """Gets the removed of this RemoveAgentPathResponse.
+        r"""Gets the removed of this RemoveAgentPathResponse.
 
         移除的路径列表 
 
@@ -62,7 +62,7 @@ class RemoveAgentPathResponse(SdkResponse):
 
     @removed.setter
     def removed(self, removed):
-        """Sets the removed of this RemoveAgentPathResponse.
+        r"""Sets the removed of this RemoveAgentPathResponse.
 
         移除的路径列表 
 
@@ -73,7 +73,7 @@ class RemoveAgentPathResponse(SdkResponse):
 
     @property
     def not_existed(self):
-        """Gets the not_existed of this RemoveAgentPathResponse.
+        r"""Gets the not_existed of this RemoveAgentPathResponse.
 
         不存在的路径
 
@@ -84,7 +84,7 @@ class RemoveAgentPathResponse(SdkResponse):
 
     @not_existed.setter
     def not_existed(self, not_existed):
-        """Sets the not_existed of this RemoveAgentPathResponse.
+        r"""Sets the not_existed of this RemoveAgentPathResponse.
 
         不存在的路径
 

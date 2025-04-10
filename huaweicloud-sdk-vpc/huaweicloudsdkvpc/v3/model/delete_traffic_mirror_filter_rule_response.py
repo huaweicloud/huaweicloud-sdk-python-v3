@@ -24,7 +24,7 @@ class DeleteTrafficMirrorFilterRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteTrafficMirrorFilterRuleResponse
+        r"""DeleteTrafficMirrorFilterRuleResponse
 
         The model defined in huaweicloud sdk
 

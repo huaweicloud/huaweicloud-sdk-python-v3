@@ -27,7 +27,7 @@ class KeystoneCreateAgencyTokenRequest:
     }
 
     def __init__(self, nocatalog=None, body=None):
-        """KeystoneCreateAgencyTokenRequest
+        r"""KeystoneCreateAgencyTokenRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class KeystoneCreateAgencyTokenRequest:
 
     @property
     def nocatalog(self):
-        """Gets the nocatalog of this KeystoneCreateAgencyTokenRequest.
+        r"""Gets the nocatalog of this KeystoneCreateAgencyTokenRequest.
 
         如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
 
@@ -61,7 +61,7 @@ class KeystoneCreateAgencyTokenRequest:
 
     @nocatalog.setter
     def nocatalog(self, nocatalog):
-        """Sets the nocatalog of this KeystoneCreateAgencyTokenRequest.
+        r"""Sets the nocatalog of this KeystoneCreateAgencyTokenRequest.
 
         如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
 
@@ -72,7 +72,7 @@ class KeystoneCreateAgencyTokenRequest:
 
     @property
     def body(self):
-        """Gets the body of this KeystoneCreateAgencyTokenRequest.
+        r"""Gets the body of this KeystoneCreateAgencyTokenRequest.
 
         :return: The body of this KeystoneCreateAgencyTokenRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateAgencyTokenRequestBody`
@@ -81,7 +81,7 @@ class KeystoneCreateAgencyTokenRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this KeystoneCreateAgencyTokenRequest.
+        r"""Sets the body of this KeystoneCreateAgencyTokenRequest.
 
         :param body: The body of this KeystoneCreateAgencyTokenRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateAgencyTokenRequestBody`

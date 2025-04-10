@@ -31,7 +31,7 @@ class ClickHouseDatabaseUserInfo:
     }
 
     def __init__(self, user_name=None, password=None, databases=None, dml=None):
-        """ClickHouseDatabaseUserInfo
+        r"""ClickHouseDatabaseUserInfo
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ClickHouseDatabaseUserInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ClickHouseDatabaseUserInfo.
+        r"""Gets the user_name of this ClickHouseDatabaseUserInfo.
 
         数据库账户名。长度为2-32个字符，必须以小写字母开头，小写字母或数字结尾，可以包含小写字母、数字以及下划线，不能包含其它特殊字符。
 
@@ -72,7 +72,7 @@ class ClickHouseDatabaseUserInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ClickHouseDatabaseUserInfo.
+        r"""Sets the user_name of this ClickHouseDatabaseUserInfo.
 
         数据库账户名。长度为2-32个字符，必须以小写字母开头，小写字母或数字结尾，可以包含小写字母、数字以及下划线，不能包含其它特殊字符。
 
@@ -83,7 +83,7 @@ class ClickHouseDatabaseUserInfo:
 
     @property
     def password(self):
-        """Gets the password of this ClickHouseDatabaseUserInfo.
+        r"""Gets the password of this ClickHouseDatabaseUserInfo.
 
         账户密码。 - 8-32个字符 - 至少包含以下字符中的三种：大写字母、小写字母、数字和特殊字符~！@#%^*-_=+? - 不能与用户名或倒序的用户名相同
 
@@ -94,7 +94,7 @@ class ClickHouseDatabaseUserInfo:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this ClickHouseDatabaseUserInfo.
+        r"""Sets the password of this ClickHouseDatabaseUserInfo.
 
         账户密码。 - 8-32个字符 - 至少包含以下字符中的三种：大写字母、小写字母、数字和特殊字符~！@#%^*-_=+? - 不能与用户名或倒序的用户名相同
 
@@ -105,7 +105,7 @@ class ClickHouseDatabaseUserInfo:
 
     @property
     def databases(self):
-        """Gets the databases of this ClickHouseDatabaseUserInfo.
+        r"""Gets the databases of this ClickHouseDatabaseUserInfo.
 
         数据库列表。“*”表示所有数据库。
 
@@ -116,7 +116,7 @@ class ClickHouseDatabaseUserInfo:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ClickHouseDatabaseUserInfo.
+        r"""Sets the databases of this ClickHouseDatabaseUserInfo.
 
         数据库列表。“*”表示所有数据库。
 
@@ -127,7 +127,7 @@ class ClickHouseDatabaseUserInfo:
 
     @property
     def dml(self):
-        """Gets the dml of this ClickHouseDatabaseUserInfo.
+        r"""Gets the dml of this ClickHouseDatabaseUserInfo.
 
         DML权限，默认2。 取值范围： - 1：只读权限 - 2：读取和设置权限
 
@@ -138,7 +138,7 @@ class ClickHouseDatabaseUserInfo:
 
     @dml.setter
     def dml(self, dml):
-        """Sets the dml of this ClickHouseDatabaseUserInfo.
+        r"""Sets the dml of this ClickHouseDatabaseUserInfo.
 
         DML权限，默认2。 取值范围： - 1：只读权限 - 2：读取和设置权限
 

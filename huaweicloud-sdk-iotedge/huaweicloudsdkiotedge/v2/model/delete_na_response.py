@@ -26,7 +26,7 @@ class DeleteNaResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteNaResponse
+        r"""DeleteNaResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteNaResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteNaResponse.
+        r"""Gets the body of this DeleteNaResponse.
 
         :return: The body of this DeleteNaResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteNaResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteNaResponse.
+        r"""Sets the body of this DeleteNaResponse.
 
         :param body: The body of this DeleteNaResponse.
         :type body: str

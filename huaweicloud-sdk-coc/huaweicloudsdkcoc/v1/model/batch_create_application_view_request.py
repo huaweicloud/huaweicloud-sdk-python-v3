@@ -25,7 +25,7 @@ class BatchCreateApplicationViewRequest:
     }
 
     def __init__(self, body=None):
-        """BatchCreateApplicationViewRequest
+        r"""BatchCreateApplicationViewRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchCreateApplicationViewRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateApplicationViewRequest.
+        r"""Gets the body of this BatchCreateApplicationViewRequest.
 
         :return: The body of this BatchCreateApplicationViewRequest.
         :rtype: :class:`huaweicloudsdkcoc.v1.BatchCreateApplicationViewRequestBody`
@@ -52,7 +52,7 @@ class BatchCreateApplicationViewRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateApplicationViewRequest.
+        r"""Sets the body of this BatchCreateApplicationViewRequest.
 
         :param body: The body of this BatchCreateApplicationViewRequest.
         :type body: :class:`huaweicloudsdkcoc.v1.BatchCreateApplicationViewRequestBody`

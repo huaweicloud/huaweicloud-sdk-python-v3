@@ -29,7 +29,7 @@ class HbaseModifySettingV2:
     }
 
     def __init__(self, parm_name=None, new_value=None, id=None):
-        """HbaseModifySettingV2
+        r"""HbaseModifySettingV2
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class HbaseModifySettingV2:
 
     @property
     def parm_name(self):
-        """Gets the parm_name of this HbaseModifySettingV2.
+        r"""Gets the parm_name of this HbaseModifySettingV2.
 
         待修改的参数名
 
@@ -66,7 +66,7 @@ class HbaseModifySettingV2:
 
     @parm_name.setter
     def parm_name(self, parm_name):
-        """Sets the parm_name of this HbaseModifySettingV2.
+        r"""Sets the parm_name of this HbaseModifySettingV2.
 
         待修改的参数名
 
@@ -77,7 +77,7 @@ class HbaseModifySettingV2:
 
     @property
     def new_value(self):
-        """Gets the new_value of this HbaseModifySettingV2.
+        r"""Gets the new_value of this HbaseModifySettingV2.
 
         设置的参数值
 
@@ -88,7 +88,7 @@ class HbaseModifySettingV2:
 
     @new_value.setter
     def new_value(self, new_value):
-        """Sets the new_value of this HbaseModifySettingV2.
+        r"""Sets the new_value of this HbaseModifySettingV2.
 
         设置的参数值
 
@@ -99,7 +99,7 @@ class HbaseModifySettingV2:
 
     @property
     def id(self):
-        """Gets the id of this HbaseModifySettingV2.
+        r"""Gets the id of this HbaseModifySettingV2.
 
         参数ID，可不传
 
@@ -110,7 +110,7 @@ class HbaseModifySettingV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HbaseModifySettingV2.
+        r"""Sets the id of this HbaseModifySettingV2.
 
         参数ID，可不传
 

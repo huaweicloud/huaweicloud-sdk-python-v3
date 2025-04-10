@@ -28,7 +28,7 @@ class DeleteEvaluationResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """DeleteEvaluationResponse
+        r"""DeleteEvaluationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteEvaluationResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteEvaluationResponse.
+        r"""Gets the result of this DeleteEvaluationResponse.
 
         返回值
 
@@ -62,7 +62,7 @@ class DeleteEvaluationResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteEvaluationResponse.
+        r"""Sets the result of this DeleteEvaluationResponse.
 
         返回值
 
@@ -73,7 +73,7 @@ class DeleteEvaluationResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteEvaluationResponse.
+        r"""Gets the status of this DeleteEvaluationResponse.
 
         状态
 
@@ -84,7 +84,7 @@ class DeleteEvaluationResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteEvaluationResponse.
+        r"""Sets the status of this DeleteEvaluationResponse.
 
         状态
 

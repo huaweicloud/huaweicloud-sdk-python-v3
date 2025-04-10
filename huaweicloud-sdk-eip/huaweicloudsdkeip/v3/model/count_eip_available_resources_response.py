@@ -26,7 +26,7 @@ class CountEipAvailableResourcesResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """CountEipAvailableResourcesResponse
+        r"""CountEipAvailableResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CountEipAvailableResourcesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CountEipAvailableResourcesResponse.
+        r"""Gets the result of this CountEipAvailableResourcesResponse.
 
         - 功能说明：返回结果
 
@@ -55,7 +55,7 @@ class CountEipAvailableResourcesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CountEipAvailableResourcesResponse.
+        r"""Sets the result of this CountEipAvailableResourcesResponse.
 
         - 功能说明：返回结果
 

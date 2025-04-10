@@ -26,7 +26,7 @@ class Profile:
     }
 
     def __init__(self):
-        """Profile
+        r"""Profile
 
         The model defined in huaweicloud sdk
 

@@ -31,7 +31,7 @@ class ListV2xEdgeAppRequest:
     }
 
     def __init__(self, v2x_edge_id=None, instance_id=None, offset=None, limit=None):
-        """ListV2xEdgeAppRequest
+        r"""ListV2xEdgeAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListV2xEdgeAppRequest:
 
     @property
     def v2x_edge_id(self):
-        """Gets the v2x_edge_id of this ListV2xEdgeAppRequest.
+        r"""Gets the v2x_edge_id of this ListV2xEdgeAppRequest.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge，创建Edge后获得。方法参见 [创建Edge](https://support.huaweicloud.com/api-v2x/v2x_04_0078.html)。
 
@@ -74,7 +74,7 @@ class ListV2xEdgeAppRequest:
 
     @v2x_edge_id.setter
     def v2x_edge_id(self, v2x_edge_id):
-        """Sets the v2x_edge_id of this ListV2xEdgeAppRequest.
+        r"""Sets the v2x_edge_id of this ListV2xEdgeAppRequest.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge，创建Edge后获得。方法参见 [创建Edge](https://support.huaweicloud.com/api-v2x/v2x_04_0078.html)。
 
@@ -85,7 +85,7 @@ class ListV2xEdgeAppRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListV2xEdgeAppRequest.
+        r"""Gets the instance_id of this ListV2xEdgeAppRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -96,7 +96,7 @@ class ListV2xEdgeAppRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListV2xEdgeAppRequest.
+        r"""Sets the instance_id of this ListV2xEdgeAppRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -107,7 +107,7 @@ class ListV2xEdgeAppRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListV2xEdgeAppRequest.
+        r"""Gets the offset of this ListV2xEdgeAppRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -118,7 +118,7 @@ class ListV2xEdgeAppRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListV2xEdgeAppRequest.
+        r"""Sets the offset of this ListV2xEdgeAppRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -129,7 +129,7 @@ class ListV2xEdgeAppRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListV2xEdgeAppRequest.
+        r"""Gets the limit of this ListV2xEdgeAppRequest.
 
         **参数说明**：每页记录数。
 
@@ -140,7 +140,7 @@ class ListV2xEdgeAppRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListV2xEdgeAppRequest.
+        r"""Sets the limit of this ListV2xEdgeAppRequest.
 
         **参数说明**：每页记录数。
 

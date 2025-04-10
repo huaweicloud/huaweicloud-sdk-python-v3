@@ -27,7 +27,7 @@ class CheckLigandDifferenceMethod:
     }
 
     def __init__(self):
-        """CheckLigandDifferenceMethod
+        r"""CheckLigandDifferenceMethod
 
         The model defined in huaweicloud sdk
 

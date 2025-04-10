@@ -29,7 +29,7 @@ class CreateClusterRequestDTO:
     }
 
     def __init__(self, cluster_name=None, description=None, cluster_node_config=None):
-        """CreateClusterRequestDTO
+        r"""CreateClusterRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateClusterRequestDTO:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this CreateClusterRequestDTO.
+        r"""Gets the cluster_name of this CreateClusterRequestDTO.
 
         集群名称
 
@@ -67,7 +67,7 @@ class CreateClusterRequestDTO:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this CreateClusterRequestDTO.
+        r"""Sets the cluster_name of this CreateClusterRequestDTO.
 
         集群名称
 
@@ -78,7 +78,7 @@ class CreateClusterRequestDTO:
 
     @property
     def description(self):
-        """Gets the description of this CreateClusterRequestDTO.
+        r"""Gets the description of this CreateClusterRequestDTO.
 
         集群描述
 
@@ -89,7 +89,7 @@ class CreateClusterRequestDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateClusterRequestDTO.
+        r"""Sets the description of this CreateClusterRequestDTO.
 
         集群描述
 
@@ -100,7 +100,7 @@ class CreateClusterRequestDTO:
 
     @property
     def cluster_node_config(self):
-        """Gets the cluster_node_config of this CreateClusterRequestDTO.
+        r"""Gets the cluster_node_config of this CreateClusterRequestDTO.
 
         :return: The cluster_node_config of this CreateClusterRequestDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v3.ClusterNodeConfig`
@@ -109,7 +109,7 @@ class CreateClusterRequestDTO:
 
     @cluster_node_config.setter
     def cluster_node_config(self, cluster_node_config):
-        """Sets the cluster_node_config of this CreateClusterRequestDTO.
+        r"""Sets the cluster_node_config of this CreateClusterRequestDTO.
 
         :param cluster_node_config: The cluster_node_config of this CreateClusterRequestDTO.
         :type cluster_node_config: :class:`huaweicloudsdkiotedge.v3.ClusterNodeConfig`

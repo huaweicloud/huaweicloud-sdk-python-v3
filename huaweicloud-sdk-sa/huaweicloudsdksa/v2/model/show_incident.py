@@ -103,7 +103,7 @@ class ShowIncident:
     }
 
     def __init__(self, version=None, environment=None, datasource=None, first_observed_time=None, last_observed_time=None, create_time=None, arrive_time=None, title=None, description=None, source_url=None, count=None, confidence=None, serverity=None, criticality=None, incident_type=None, network_list=None, resource_list=None, remediation=None, verification_state=None, handle_status=None, sla=None, update_time=None, close_time=None, chop_phase=None, ipdrr_phase=None, ppdr_phase=None, simulation=None, actor=None, owner=None, cteator=None, close_reason=None, close_comment=None, malware=None, system_info=None, process=None, user_info=None, file_info=None, system_incident_table=None, id=None, workspace_id=None):
-        """ShowIncident
+        r"""ShowIncident
 
         The model defined in huaweicloud sdk
 
@@ -316,7 +316,7 @@ class ShowIncident:
 
     @property
     def version(self):
-        """Gets the version of this ShowIncident.
+        r"""Gets the version of this ShowIncident.
 
         版本
 
@@ -327,7 +327,7 @@ class ShowIncident:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowIncident.
+        r"""Sets the version of this ShowIncident.
 
         版本
 
@@ -338,7 +338,7 @@ class ShowIncident:
 
     @property
     def environment(self):
-        """Gets the environment of this ShowIncident.
+        r"""Gets the environment of this ShowIncident.
 
         :return: The environment of this ShowIncident.
         :rtype: :class:`huaweicloudsdksa.v2.IncidentEnvironment`
@@ -347,7 +347,7 @@ class ShowIncident:
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this ShowIncident.
+        r"""Sets the environment of this ShowIncident.
 
         :param environment: The environment of this ShowIncident.
         :type environment: :class:`huaweicloudsdksa.v2.IncidentEnvironment`
@@ -356,7 +356,7 @@ class ShowIncident:
 
     @property
     def datasource(self):
-        """Gets the datasource of this ShowIncident.
+        r"""Gets the datasource of this ShowIncident.
 
         :return: The datasource of this ShowIncident.
         :rtype: :class:`huaweicloudsdksa.v2.IncidentDatasource`
@@ -365,7 +365,7 @@ class ShowIncident:
 
     @datasource.setter
     def datasource(self, datasource):
-        """Sets the datasource of this ShowIncident.
+        r"""Sets the datasource of this ShowIncident.
 
         :param datasource: The datasource of this ShowIncident.
         :type datasource: :class:`huaweicloudsdksa.v2.IncidentDatasource`
@@ -374,7 +374,7 @@ class ShowIncident:
 
     @property
     def first_observed_time(self):
-        """Gets the first_observed_time of this ShowIncident.
+        r"""Gets the first_observed_time of this ShowIncident.
 
         Update time
 
@@ -385,7 +385,7 @@ class ShowIncident:
 
     @first_observed_time.setter
     def first_observed_time(self, first_observed_time):
-        """Sets the first_observed_time of this ShowIncident.
+        r"""Sets the first_observed_time of this ShowIncident.
 
         Update time
 
@@ -396,7 +396,7 @@ class ShowIncident:
 
     @property
     def last_observed_time(self):
-        """Gets the last_observed_time of this ShowIncident.
+        r"""Gets the last_observed_time of this ShowIncident.
 
         Update time
 
@@ -407,7 +407,7 @@ class ShowIncident:
 
     @last_observed_time.setter
     def last_observed_time(self, last_observed_time):
-        """Sets the last_observed_time of this ShowIncident.
+        r"""Sets the last_observed_time of this ShowIncident.
 
         Update time
 
@@ -418,7 +418,7 @@ class ShowIncident:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowIncident.
+        r"""Gets the create_time of this ShowIncident.
 
         Create time
 
@@ -429,7 +429,7 @@ class ShowIncident:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowIncident.
+        r"""Sets the create_time of this ShowIncident.
 
         Create time
 
@@ -440,7 +440,7 @@ class ShowIncident:
 
     @property
     def arrive_time(self):
-        """Gets the arrive_time of this ShowIncident.
+        r"""Gets the arrive_time of this ShowIncident.
 
         Update time
 
@@ -451,7 +451,7 @@ class ShowIncident:
 
     @arrive_time.setter
     def arrive_time(self, arrive_time):
-        """Sets the arrive_time of this ShowIncident.
+        r"""Sets the arrive_time of this ShowIncident.
 
         Update time
 
@@ -462,7 +462,7 @@ class ShowIncident:
 
     @property
     def title(self):
-        """Gets the title of this ShowIncident.
+        r"""Gets the title of this ShowIncident.
 
         The name, display only
 
@@ -473,7 +473,7 @@ class ShowIncident:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ShowIncident.
+        r"""Sets the title of this ShowIncident.
 
         The name, display only
 
@@ -484,7 +484,7 @@ class ShowIncident:
 
     @property
     def description(self):
-        """Gets the description of this ShowIncident.
+        r"""Gets the description of this ShowIncident.
 
         The description, display only
 
@@ -495,7 +495,7 @@ class ShowIncident:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowIncident.
+        r"""Sets the description of this ShowIncident.
 
         The description, display only
 
@@ -506,7 +506,7 @@ class ShowIncident:
 
     @property
     def source_url(self):
-        """Gets the source_url of this ShowIncident.
+        r"""Gets the source_url of this ShowIncident.
 
         事件URL链接
 
@@ -517,7 +517,7 @@ class ShowIncident:
 
     @source_url.setter
     def source_url(self, source_url):
-        """Sets the source_url of this ShowIncident.
+        r"""Sets the source_url of this ShowIncident.
 
         事件URL链接
 
@@ -528,7 +528,7 @@ class ShowIncident:
 
     @property
     def count(self):
-        """Gets the count of this ShowIncident.
+        r"""Gets the count of this ShowIncident.
 
         事件发生次数
 
@@ -539,7 +539,7 @@ class ShowIncident:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowIncident.
+        r"""Sets the count of this ShowIncident.
 
         事件发生次数
 
@@ -550,7 +550,7 @@ class ShowIncident:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ShowIncident.
+        r"""Gets the confidence of this ShowIncident.
 
         置信度
 
@@ -561,7 +561,7 @@ class ShowIncident:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ShowIncident.
+        r"""Sets the confidence of this ShowIncident.
 
         置信度
 
@@ -572,7 +572,7 @@ class ShowIncident:
 
     @property
     def serverity(self):
-        """Gets the serverity of this ShowIncident.
+        r"""Gets the serverity of this ShowIncident.
 
         严重性等级
 
@@ -583,7 +583,7 @@ class ShowIncident:
 
     @serverity.setter
     def serverity(self, serverity):
-        """Sets the serverity of this ShowIncident.
+        r"""Sets the serverity of this ShowIncident.
 
         严重性等级
 
@@ -594,7 +594,7 @@ class ShowIncident:
 
     @property
     def criticality(self):
-        """Gets the criticality of this ShowIncident.
+        r"""Gets the criticality of this ShowIncident.
 
         关键性，是指事件涉及的资源的重要性级别。
 
@@ -605,7 +605,7 @@ class ShowIncident:
 
     @criticality.setter
     def criticality(self, criticality):
-        """Sets the criticality of this ShowIncident.
+        r"""Sets the criticality of this ShowIncident.
 
         关键性，是指事件涉及的资源的重要性级别。
 
@@ -616,7 +616,7 @@ class ShowIncident:
 
     @property
     def incident_type(self):
-        """Gets the incident_type of this ShowIncident.
+        r"""Gets the incident_type of this ShowIncident.
 
         事件分类
 
@@ -627,7 +627,7 @@ class ShowIncident:
 
     @incident_type.setter
     def incident_type(self, incident_type):
-        """Sets the incident_type of this ShowIncident.
+        r"""Sets the incident_type of this ShowIncident.
 
         事件分类
 
@@ -638,7 +638,7 @@ class ShowIncident:
 
     @property
     def network_list(self):
-        """Gets the network_list of this ShowIncident.
+        r"""Gets the network_list of this ShowIncident.
 
         network_list
 
@@ -649,7 +649,7 @@ class ShowIncident:
 
     @network_list.setter
     def network_list(self, network_list):
-        """Sets the network_list of this ShowIncident.
+        r"""Sets the network_list of this ShowIncident.
 
         network_list
 
@@ -660,7 +660,7 @@ class ShowIncident:
 
     @property
     def resource_list(self):
-        """Gets the resource_list of this ShowIncident.
+        r"""Gets the resource_list of this ShowIncident.
 
         network_list
 
@@ -671,7 +671,7 @@ class ShowIncident:
 
     @resource_list.setter
     def resource_list(self, resource_list):
-        """Sets the resource_list of this ShowIncident.
+        r"""Sets the resource_list of this ShowIncident.
 
         network_list
 
@@ -682,7 +682,7 @@ class ShowIncident:
 
     @property
     def remediation(self):
-        """Gets the remediation of this ShowIncident.
+        r"""Gets the remediation of this ShowIncident.
 
         :return: The remediation of this ShowIncident.
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertRspRemediation`
@@ -691,7 +691,7 @@ class ShowIncident:
 
     @remediation.setter
     def remediation(self, remediation):
-        """Sets the remediation of this ShowIncident.
+        r"""Sets the remediation of this ShowIncident.
 
         :param remediation: The remediation of this ShowIncident.
         :type remediation: :class:`huaweicloudsdksa.v2.ShowAlertRspRemediation`
@@ -700,7 +700,7 @@ class ShowIncident:
 
     @property
     def verification_state(self):
-        """Gets the verification_state of this ShowIncident.
+        r"""Gets the verification_state of this ShowIncident.
 
         验证状态
 
@@ -711,7 +711,7 @@ class ShowIncident:
 
     @verification_state.setter
     def verification_state(self, verification_state):
-        """Sets the verification_state of this ShowIncident.
+        r"""Sets the verification_state of this ShowIncident.
 
         验证状态
 
@@ -722,7 +722,7 @@ class ShowIncident:
 
     @property
     def handle_status(self):
-        """Gets the handle_status of this ShowIncident.
+        r"""Gets the handle_status of this ShowIncident.
 
         事件处理状态
 
@@ -733,7 +733,7 @@ class ShowIncident:
 
     @handle_status.setter
     def handle_status(self, handle_status):
-        """Sets the handle_status of this ShowIncident.
+        r"""Sets the handle_status of this ShowIncident.
 
         事件处理状态
 
@@ -744,7 +744,7 @@ class ShowIncident:
 
     @property
     def sla(self):
-        """Gets the sla of this ShowIncident.
+        r"""Gets the sla of this ShowIncident.
 
         sla
 
@@ -755,7 +755,7 @@ class ShowIncident:
 
     @sla.setter
     def sla(self, sla):
-        """Sets the sla of this ShowIncident.
+        r"""Sets the sla of this ShowIncident.
 
         sla
 
@@ -766,7 +766,7 @@ class ShowIncident:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowIncident.
+        r"""Gets the update_time of this ShowIncident.
 
         Create time
 
@@ -777,7 +777,7 @@ class ShowIncident:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowIncident.
+        r"""Sets the update_time of this ShowIncident.
 
         Create time
 
@@ -788,7 +788,7 @@ class ShowIncident:
 
     @property
     def close_time(self):
-        """Gets the close_time of this ShowIncident.
+        r"""Gets the close_time of this ShowIncident.
 
         Create time
 
@@ -799,7 +799,7 @@ class ShowIncident:
 
     @close_time.setter
     def close_time(self, close_time):
-        """Sets the close_time of this ShowIncident.
+        r"""Sets the close_time of this ShowIncident.
 
         Create time
 
@@ -810,7 +810,7 @@ class ShowIncident:
 
     @property
     def chop_phase(self):
-        """Gets the chop_phase of this ShowIncident.
+        r"""Gets the chop_phase of this ShowIncident.
 
         周期/处置阶段编号
 
@@ -821,7 +821,7 @@ class ShowIncident:
 
     @chop_phase.setter
     def chop_phase(self, chop_phase):
-        """Sets the chop_phase of this ShowIncident.
+        r"""Sets the chop_phase of this ShowIncident.
 
         周期/处置阶段编号
 
@@ -832,7 +832,7 @@ class ShowIncident:
 
     @property
     def ipdrr_phase(self):
-        """Gets the ipdrr_phase of this ShowIncident.
+        r"""Gets the ipdrr_phase of this ShowIncident.
 
         周期/处置阶段编号
 
@@ -843,7 +843,7 @@ class ShowIncident:
 
     @ipdrr_phase.setter
     def ipdrr_phase(self, ipdrr_phase):
-        """Sets the ipdrr_phase of this ShowIncident.
+        r"""Sets the ipdrr_phase of this ShowIncident.
 
         周期/处置阶段编号
 
@@ -854,7 +854,7 @@ class ShowIncident:
 
     @property
     def ppdr_phase(self):
-        """Gets the ppdr_phase of this ShowIncident.
+        r"""Gets the ppdr_phase of this ShowIncident.
 
         周期/处置阶段编号
 
@@ -865,7 +865,7 @@ class ShowIncident:
 
     @ppdr_phase.setter
     def ppdr_phase(self, ppdr_phase):
-        """Sets the ppdr_phase of this ShowIncident.
+        r"""Sets the ppdr_phase of this ShowIncident.
 
         周期/处置阶段编号
 
@@ -876,7 +876,7 @@ class ShowIncident:
 
     @property
     def simulation(self):
-        """Gets the simulation of this ShowIncident.
+        r"""Gets the simulation of this ShowIncident.
 
         是否为调试事件.
 
@@ -887,7 +887,7 @@ class ShowIncident:
 
     @simulation.setter
     def simulation(self, simulation):
-        """Sets the simulation of this ShowIncident.
+        r"""Sets the simulation of this ShowIncident.
 
         是否为调试事件.
 
@@ -898,7 +898,7 @@ class ShowIncident:
 
     @property
     def actor(self):
-        """Gets the actor of this ShowIncident.
+        r"""Gets the actor of this ShowIncident.
 
         委托人
 
@@ -909,7 +909,7 @@ class ShowIncident:
 
     @actor.setter
     def actor(self, actor):
-        """Sets the actor of this ShowIncident.
+        r"""Sets the actor of this ShowIncident.
 
         委托人
 
@@ -920,7 +920,7 @@ class ShowIncident:
 
     @property
     def owner(self):
-        """Gets the owner of this ShowIncident.
+        r"""Gets the owner of this ShowIncident.
 
         The name, display only
 
@@ -931,7 +931,7 @@ class ShowIncident:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ShowIncident.
+        r"""Sets the owner of this ShowIncident.
 
         The name, display only
 
@@ -942,7 +942,7 @@ class ShowIncident:
 
     @property
     def cteator(self):
-        """Gets the cteator of this ShowIncident.
+        r"""Gets the cteator of this ShowIncident.
 
         The name, display only
 
@@ -953,7 +953,7 @@ class ShowIncident:
 
     @cteator.setter
     def cteator(self, cteator):
-        """Sets the cteator of this ShowIncident.
+        r"""Sets the cteator of this ShowIncident.
 
         The name, display only
 
@@ -964,7 +964,7 @@ class ShowIncident:
 
     @property
     def close_reason(self):
-        """Gets the close_reason of this ShowIncident.
+        r"""Gets the close_reason of this ShowIncident.
 
         关闭原因
 
@@ -975,7 +975,7 @@ class ShowIncident:
 
     @close_reason.setter
     def close_reason(self, close_reason):
-        """Sets the close_reason of this ShowIncident.
+        r"""Sets the close_reason of this ShowIncident.
 
         关闭原因
 
@@ -986,7 +986,7 @@ class ShowIncident:
 
     @property
     def close_comment(self):
-        """Gets the close_comment of this ShowIncident.
+        r"""Gets the close_comment of this ShowIncident.
 
         关闭原因
 
@@ -997,7 +997,7 @@ class ShowIncident:
 
     @close_comment.setter
     def close_comment(self, close_comment):
-        """Sets the close_comment of this ShowIncident.
+        r"""Sets the close_comment of this ShowIncident.
 
         关闭原因
 
@@ -1008,7 +1008,7 @@ class ShowIncident:
 
     @property
     def malware(self):
-        """Gets the malware of this ShowIncident.
+        r"""Gets the malware of this ShowIncident.
 
         :return: The malware of this ShowIncident.
         :rtype: :class:`huaweicloudsdksa.v2.CreateIncidentMalware`
@@ -1017,7 +1017,7 @@ class ShowIncident:
 
     @malware.setter
     def malware(self, malware):
-        """Sets the malware of this ShowIncident.
+        r"""Sets the malware of this ShowIncident.
 
         :param malware: The malware of this ShowIncident.
         :type malware: :class:`huaweicloudsdksa.v2.CreateIncidentMalware`
@@ -1026,7 +1026,7 @@ class ShowIncident:
 
     @property
     def system_info(self):
-        """Gets the system_info of this ShowIncident.
+        r"""Gets the system_info of this ShowIncident.
 
         系统信息
 
@@ -1037,7 +1037,7 @@ class ShowIncident:
 
     @system_info.setter
     def system_info(self, system_info):
-        """Sets the system_info of this ShowIncident.
+        r"""Sets the system_info of this ShowIncident.
 
         系统信息
 
@@ -1048,7 +1048,7 @@ class ShowIncident:
 
     @property
     def process(self):
-        """Gets the process of this ShowIncident.
+        r"""Gets the process of this ShowIncident.
 
         进程信息
 
@@ -1059,7 +1059,7 @@ class ShowIncident:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this ShowIncident.
+        r"""Sets the process of this ShowIncident.
 
         进程信息
 
@@ -1070,7 +1070,7 @@ class ShowIncident:
 
     @property
     def user_info(self):
-        """Gets the user_info of this ShowIncident.
+        r"""Gets the user_info of this ShowIncident.
 
         用户信息
 
@@ -1081,7 +1081,7 @@ class ShowIncident:
 
     @user_info.setter
     def user_info(self, user_info):
-        """Sets the user_info of this ShowIncident.
+        r"""Sets the user_info of this ShowIncident.
 
         用户信息
 
@@ -1092,7 +1092,7 @@ class ShowIncident:
 
     @property
     def file_info(self):
-        """Gets the file_info of this ShowIncident.
+        r"""Gets the file_info of this ShowIncident.
 
         文件信息
 
@@ -1103,7 +1103,7 @@ class ShowIncident:
 
     @file_info.setter
     def file_info(self, file_info):
-        """Sets the file_info of this ShowIncident.
+        r"""Sets the file_info of this ShowIncident.
 
         文件信息
 
@@ -1114,7 +1114,7 @@ class ShowIncident:
 
     @property
     def system_incident_table(self):
-        """Gets the system_incident_table of this ShowIncident.
+        r"""Gets the system_incident_table of this ShowIncident.
 
         系统信息
 
@@ -1125,7 +1125,7 @@ class ShowIncident:
 
     @system_incident_table.setter
     def system_incident_table(self, system_incident_table):
-        """Sets the system_incident_table of this ShowIncident.
+        r"""Sets the system_incident_table of this ShowIncident.
 
         系统信息
 
@@ -1136,7 +1136,7 @@ class ShowIncident:
 
     @property
     def id(self):
-        """Gets the id of this ShowIncident.
+        r"""Gets the id of this ShowIncident.
 
         Id value
 
@@ -1147,7 +1147,7 @@ class ShowIncident:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowIncident.
+        r"""Sets the id of this ShowIncident.
 
         Id value
 
@@ -1158,7 +1158,7 @@ class ShowIncident:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowIncident.
+        r"""Gets the workspace_id of this ShowIncident.
 
         workspace id
 
@@ -1169,7 +1169,7 @@ class ShowIncident:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowIncident.
+        r"""Sets the workspace_id of this ShowIncident.
 
         workspace id
 

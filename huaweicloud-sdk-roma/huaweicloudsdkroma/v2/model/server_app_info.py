@@ -45,7 +45,7 @@ class ServerAppInfo:
     }
 
     def __init__(self, id=None, name=None, remark=None, roles=None, create_time=None, update_time=None, created_user=None, last_updated_user=None, owner=None, key=None, favorite=None):
-        """ServerAppInfo
+        r"""ServerAppInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ServerAppInfo:
 
     @property
     def id(self):
-        """Gets the id of this ServerAppInfo.
+        r"""Gets the id of this ServerAppInfo.
 
         应用ID
 
@@ -124,7 +124,7 @@ class ServerAppInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServerAppInfo.
+        r"""Sets the id of this ServerAppInfo.
 
         应用ID
 
@@ -135,7 +135,7 @@ class ServerAppInfo:
 
     @property
     def name(self):
-        """Gets the name of this ServerAppInfo.
+        r"""Gets the name of this ServerAppInfo.
 
         应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
 
@@ -146,7 +146,7 @@ class ServerAppInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ServerAppInfo.
+        r"""Sets the name of this ServerAppInfo.
 
         应用名称 - 字符集：支持中文、英文字母、数字、中划线、下划线、点、空格和中英文圆括号 - 约束：实例下唯一
 
@@ -157,7 +157,7 @@ class ServerAppInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this ServerAppInfo.
+        r"""Gets the remark of this ServerAppInfo.
 
         应用描述
 
@@ -168,7 +168,7 @@ class ServerAppInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ServerAppInfo.
+        r"""Sets the remark of this ServerAppInfo.
 
         应用描述
 
@@ -179,7 +179,7 @@ class ServerAppInfo:
 
     @property
     def roles(self):
-        """Gets the roles of this ServerAppInfo.
+        r"""Gets the roles of this ServerAppInfo.
 
         应用权限角色 - read：应用下资源只读权限，至少要存在此权限，包括API调试 - access：应用下资源的访问管理权限 - delete：应用下资源的删除权限 - modify：应用下资源的修改权限，包括API发布、下线 - admin：应用和应用下资源的权限 - 仅提供admin时，会自动应用其它所有权限 - 未提供read时会自动应用read权限
 
@@ -190,7 +190,7 @@ class ServerAppInfo:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this ServerAppInfo.
+        r"""Sets the roles of this ServerAppInfo.
 
         应用权限角色 - read：应用下资源只读权限，至少要存在此权限，包括API调试 - access：应用下资源的访问管理权限 - delete：应用下资源的删除权限 - modify：应用下资源的修改权限，包括API发布、下线 - admin：应用和应用下资源的权限 - 仅提供admin时，会自动应用其它所有权限 - 未提供read时会自动应用read权限
 
@@ -201,7 +201,7 @@ class ServerAppInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ServerAppInfo.
+        r"""Gets the create_time of this ServerAppInfo.
 
         创建UTC时间
 
@@ -212,7 +212,7 @@ class ServerAppInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ServerAppInfo.
+        r"""Sets the create_time of this ServerAppInfo.
 
         创建UTC时间
 
@@ -223,7 +223,7 @@ class ServerAppInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ServerAppInfo.
+        r"""Gets the update_time of this ServerAppInfo.
 
         创建UTC时间
 
@@ -234,7 +234,7 @@ class ServerAppInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ServerAppInfo.
+        r"""Sets the update_time of this ServerAppInfo.
 
         创建UTC时间
 
@@ -245,7 +245,7 @@ class ServerAppInfo:
 
     @property
     def created_user(self):
-        """Gets the created_user of this ServerAppInfo.
+        r"""Gets the created_user of this ServerAppInfo.
 
         :return: The created_user of this ServerAppInfo.
         :rtype: :class:`huaweicloudsdkroma.v2.ServerAppInfoCreatedUser`
@@ -254,7 +254,7 @@ class ServerAppInfo:
 
     @created_user.setter
     def created_user(self, created_user):
-        """Sets the created_user of this ServerAppInfo.
+        r"""Sets the created_user of this ServerAppInfo.
 
         :param created_user: The created_user of this ServerAppInfo.
         :type created_user: :class:`huaweicloudsdkroma.v2.ServerAppInfoCreatedUser`
@@ -263,7 +263,7 @@ class ServerAppInfo:
 
     @property
     def last_updated_user(self):
-        """Gets the last_updated_user of this ServerAppInfo.
+        r"""Gets the last_updated_user of this ServerAppInfo.
 
         :return: The last_updated_user of this ServerAppInfo.
         :rtype: :class:`huaweicloudsdkroma.v2.ServerAppInfoLastUpdatedUser`
@@ -272,7 +272,7 @@ class ServerAppInfo:
 
     @last_updated_user.setter
     def last_updated_user(self, last_updated_user):
-        """Sets the last_updated_user of this ServerAppInfo.
+        r"""Sets the last_updated_user of this ServerAppInfo.
 
         :param last_updated_user: The last_updated_user of this ServerAppInfo.
         :type last_updated_user: :class:`huaweicloudsdkroma.v2.ServerAppInfoLastUpdatedUser`
@@ -281,7 +281,7 @@ class ServerAppInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this ServerAppInfo.
+        r"""Gets the owner of this ServerAppInfo.
 
         是否是应用拥有者
 
@@ -292,7 +292,7 @@ class ServerAppInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ServerAppInfo.
+        r"""Sets the owner of this ServerAppInfo.
 
         是否是应用拥有者
 
@@ -303,7 +303,7 @@ class ServerAppInfo:
 
     @property
     def key(self):
-        """Gets the key of this ServerAppInfo.
+        r"""Gets the key of this ServerAppInfo.
 
         应用认证访问KEY,未提供时随机生成 - 字符集：支持中文、英文字母、数字、中划线、下划线、@号和点，以字母或中文或数字开头 - 约束：实例下唯一
 
@@ -314,7 +314,7 @@ class ServerAppInfo:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ServerAppInfo.
+        r"""Sets the key of this ServerAppInfo.
 
         应用认证访问KEY,未提供时随机生成 - 字符集：支持中文、英文字母、数字、中划线、下划线、@号和点，以字母或中文或数字开头 - 约束：实例下唯一
 
@@ -325,7 +325,7 @@ class ServerAppInfo:
 
     @property
     def favorite(self):
-        """Gets the favorite of this ServerAppInfo.
+        r"""Gets the favorite of this ServerAppInfo.
 
         是否收藏应用，收藏的应用会在列表里优先显示
 
@@ -336,7 +336,7 @@ class ServerAppInfo:
 
     @favorite.setter
     def favorite(self, favorite):
-        """Sets the favorite of this ServerAppInfo.
+        r"""Sets the favorite of this ServerAppInfo.
 
         是否收藏应用，收藏的应用会在列表里优先显示
 

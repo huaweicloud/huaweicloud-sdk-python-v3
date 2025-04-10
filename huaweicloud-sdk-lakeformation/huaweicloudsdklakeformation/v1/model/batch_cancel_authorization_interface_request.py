@@ -27,7 +27,7 @@ class BatchCancelAuthorizationInterfaceRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchCancelAuthorizationInterfaceRequest
+        r"""BatchCancelAuthorizationInterfaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCancelAuthorizationInterfaceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchCancelAuthorizationInterfaceRequest.
+        r"""Gets the instance_id of this BatchCancelAuthorizationInterfaceRequest.
 
         instance id
 
@@ -60,7 +60,7 @@ class BatchCancelAuthorizationInterfaceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchCancelAuthorizationInterfaceRequest.
+        r"""Sets the instance_id of this BatchCancelAuthorizationInterfaceRequest.
 
         instance id
 
@@ -71,7 +71,7 @@ class BatchCancelAuthorizationInterfaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCancelAuthorizationInterfaceRequest.
+        r"""Gets the body of this BatchCancelAuthorizationInterfaceRequest.
 
         :return: The body of this BatchCancelAuthorizationInterfaceRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.AccessPolicyInput`
@@ -80,7 +80,7 @@ class BatchCancelAuthorizationInterfaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCancelAuthorizationInterfaceRequest.
+        r"""Sets the body of this BatchCancelAuthorizationInterfaceRequest.
 
         :param body: The body of this BatchCancelAuthorizationInterfaceRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.AccessPolicyInput`

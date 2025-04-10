@@ -28,7 +28,7 @@ class CreateSmartLiveRoomResponse(SdkResponse):
     }
 
     def __init__(self, room_id=None, x_request_id=None):
-        """CreateSmartLiveRoomResponse
+        r"""CreateSmartLiveRoomResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateSmartLiveRoomResponse(SdkResponse):
 
     @property
     def room_id(self):
-        """Gets the room_id of this CreateSmartLiveRoomResponse.
+        r"""Gets the room_id of this CreateSmartLiveRoomResponse.
 
         直播间ID
 
@@ -62,7 +62,7 @@ class CreateSmartLiveRoomResponse(SdkResponse):
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this CreateSmartLiveRoomResponse.
+        r"""Sets the room_id of this CreateSmartLiveRoomResponse.
 
         直播间ID
 
@@ -73,7 +73,7 @@ class CreateSmartLiveRoomResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateSmartLiveRoomResponse.
+        r"""Gets the x_request_id of this CreateSmartLiveRoomResponse.
 
         :return: The x_request_id of this CreateSmartLiveRoomResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateSmartLiveRoomResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateSmartLiveRoomResponse.
+        r"""Sets the x_request_id of this CreateSmartLiveRoomResponse.
 
         :param x_request_id: The x_request_id of this CreateSmartLiveRoomResponse.
         :type x_request_id: str

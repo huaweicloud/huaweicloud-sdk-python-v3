@@ -45,7 +45,7 @@ class AtlasEntityHeader:
     }
 
     def __init__(self, type_name=None, guid=None, name=None, display_text=None, status=None, classification_names=None, classifications=None, meaning_names=None, meanings=None, children=None, attributes=None):
-        """AtlasEntityHeader
+        r"""AtlasEntityHeader
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class AtlasEntityHeader:
 
     @property
     def type_name(self):
-        """Gets the type_name of this AtlasEntityHeader.
+        r"""Gets the type_name of this AtlasEntityHeader.
 
         类型名称
 
@@ -124,7 +124,7 @@ class AtlasEntityHeader:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this AtlasEntityHeader.
+        r"""Sets the type_name of this AtlasEntityHeader.
 
         类型名称
 
@@ -135,7 +135,7 @@ class AtlasEntityHeader:
 
     @property
     def guid(self):
-        """Gets the guid of this AtlasEntityHeader.
+        r"""Gets the guid of this AtlasEntityHeader.
 
         guid
 
@@ -146,7 +146,7 @@ class AtlasEntityHeader:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this AtlasEntityHeader.
+        r"""Sets the guid of this AtlasEntityHeader.
 
         guid
 
@@ -157,7 +157,7 @@ class AtlasEntityHeader:
 
     @property
     def name(self):
-        """Gets the name of this AtlasEntityHeader.
+        r"""Gets the name of this AtlasEntityHeader.
 
         名称
 
@@ -168,7 +168,7 @@ class AtlasEntityHeader:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AtlasEntityHeader.
+        r"""Sets the name of this AtlasEntityHeader.
 
         名称
 
@@ -179,7 +179,7 @@ class AtlasEntityHeader:
 
     @property
     def display_text(self):
-        """Gets the display_text of this AtlasEntityHeader.
+        r"""Gets the display_text of this AtlasEntityHeader.
 
         展示
 
@@ -190,7 +190,7 @@ class AtlasEntityHeader:
 
     @display_text.setter
     def display_text(self, display_text):
-        """Sets the display_text of this AtlasEntityHeader.
+        r"""Sets the display_text of this AtlasEntityHeader.
 
         展示
 
@@ -201,7 +201,7 @@ class AtlasEntityHeader:
 
     @property
     def status(self):
-        """Gets the status of this AtlasEntityHeader.
+        r"""Gets the status of this AtlasEntityHeader.
 
         状态 枚举值：ACTIVE、DELETED
 
@@ -212,7 +212,7 @@ class AtlasEntityHeader:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AtlasEntityHeader.
+        r"""Sets the status of this AtlasEntityHeader.
 
         状态 枚举值：ACTIVE、DELETED
 
@@ -223,7 +223,7 @@ class AtlasEntityHeader:
 
     @property
     def classification_names(self):
-        """Gets the classification_names of this AtlasEntityHeader.
+        r"""Gets the classification_names of this AtlasEntityHeader.
 
         :return: The classification_names of this AtlasEntityHeader.
         :rtype: list[str]
@@ -232,7 +232,7 @@ class AtlasEntityHeader:
 
     @classification_names.setter
     def classification_names(self, classification_names):
-        """Sets the classification_names of this AtlasEntityHeader.
+        r"""Sets the classification_names of this AtlasEntityHeader.
 
         :param classification_names: The classification_names of this AtlasEntityHeader.
         :type classification_names: list[str]
@@ -241,7 +241,7 @@ class AtlasEntityHeader:
 
     @property
     def classifications(self):
-        """Gets the classifications of this AtlasEntityHeader.
+        r"""Gets the classifications of this AtlasEntityHeader.
 
         分类信息
 
@@ -252,7 +252,7 @@ class AtlasEntityHeader:
 
     @classifications.setter
     def classifications(self, classifications):
-        """Sets the classifications of this AtlasEntityHeader.
+        r"""Sets the classifications of this AtlasEntityHeader.
 
         分类信息
 
@@ -263,7 +263,7 @@ class AtlasEntityHeader:
 
     @property
     def meaning_names(self):
-        """Gets the meaning_names of this AtlasEntityHeader.
+        r"""Gets the meaning_names of this AtlasEntityHeader.
 
         :return: The meaning_names of this AtlasEntityHeader.
         :rtype: list[str]
@@ -272,7 +272,7 @@ class AtlasEntityHeader:
 
     @meaning_names.setter
     def meaning_names(self, meaning_names):
-        """Sets the meaning_names of this AtlasEntityHeader.
+        r"""Sets the meaning_names of this AtlasEntityHeader.
 
         :param meaning_names: The meaning_names of this AtlasEntityHeader.
         :type meaning_names: list[str]
@@ -281,7 +281,7 @@ class AtlasEntityHeader:
 
     @property
     def meanings(self):
-        """Gets the meanings of this AtlasEntityHeader.
+        r"""Gets the meanings of this AtlasEntityHeader.
 
         关联任务
 
@@ -292,7 +292,7 @@ class AtlasEntityHeader:
 
     @meanings.setter
     def meanings(self, meanings):
-        """Sets the meanings of this AtlasEntityHeader.
+        r"""Sets the meanings of this AtlasEntityHeader.
 
         关联任务
 
@@ -303,7 +303,7 @@ class AtlasEntityHeader:
 
     @property
     def children(self):
-        """Gets the children of this AtlasEntityHeader.
+        r"""Gets the children of this AtlasEntityHeader.
 
         实体map Map<String, AtlasEntityHeader>
 
@@ -314,7 +314,7 @@ class AtlasEntityHeader:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this AtlasEntityHeader.
+        r"""Sets the children of this AtlasEntityHeader.
 
         实体map Map<String, AtlasEntityHeader>
 
@@ -325,7 +325,7 @@ class AtlasEntityHeader:
 
     @property
     def attributes(self):
-        """Gets the attributes of this AtlasEntityHeader.
+        r"""Gets the attributes of this AtlasEntityHeader.
 
         实体map Map<String, Object>
 
@@ -336,7 +336,7 @@ class AtlasEntityHeader:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this AtlasEntityHeader.
+        r"""Sets the attributes of this AtlasEntityHeader.
 
         实体map Map<String, Object>
 

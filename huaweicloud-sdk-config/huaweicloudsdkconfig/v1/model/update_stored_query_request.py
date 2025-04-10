@@ -27,7 +27,7 @@ class UpdateStoredQueryRequest:
     }
 
     def __init__(self, query_id=None, body=None):
-        """UpdateStoredQueryRequest
+        r"""UpdateStoredQueryRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateStoredQueryRequest:
 
     @property
     def query_id(self):
-        """Gets the query_id of this UpdateStoredQueryRequest.
+        r"""Gets the query_id of this UpdateStoredQueryRequest.
 
         查询ID
 
@@ -60,7 +60,7 @@ class UpdateStoredQueryRequest:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this UpdateStoredQueryRequest.
+        r"""Sets the query_id of this UpdateStoredQueryRequest.
 
         查询ID
 
@@ -71,7 +71,7 @@ class UpdateStoredQueryRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateStoredQueryRequest.
+        r"""Gets the body of this UpdateStoredQueryRequest.
 
         :return: The body of this UpdateStoredQueryRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.StoredQueryRequestBody`
@@ -80,7 +80,7 @@ class UpdateStoredQueryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateStoredQueryRequest.
+        r"""Sets the body of this UpdateStoredQueryRequest.
 
         :param body: The body of this UpdateStoredQueryRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.StoredQueryRequestBody`

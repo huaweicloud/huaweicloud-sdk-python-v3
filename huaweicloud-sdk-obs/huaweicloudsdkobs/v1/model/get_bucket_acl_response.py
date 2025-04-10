@@ -42,7 +42,7 @@ class GetBucketAclResponse(SdkResponse):
     }
 
     def __init__(self, owner=None, access_control_list=None, x_obs_id_2=None, x_obs_request_id=None, e_tag=None, connection=None, content_length=None, date=None):
-        """GetBucketAclResponse
+        r"""GetBucketAclResponse
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this GetBucketAclResponse.
+        r"""Gets the owner of this GetBucketAclResponse.
 
         :return: The owner of this GetBucketAclResponse.
         :rtype: :class:`huaweicloudsdkobs.v1.Owner`
@@ -104,7 +104,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this GetBucketAclResponse.
+        r"""Sets the owner of this GetBucketAclResponse.
 
         :param owner: The owner of this GetBucketAclResponse.
         :type owner: :class:`huaweicloudsdkobs.v1.Owner`
@@ -113,7 +113,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @property
     def access_control_list(self):
-        """Gets the access_control_list of this GetBucketAclResponse.
+        r"""Gets the access_control_list of this GetBucketAclResponse.
 
         :return: The access_control_list of this GetBucketAclResponse.
         :rtype: :class:`huaweicloudsdkobs.v1.AccessControlList`
@@ -122,7 +122,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @access_control_list.setter
     def access_control_list(self, access_control_list):
-        """Sets the access_control_list of this GetBucketAclResponse.
+        r"""Sets the access_control_list of this GetBucketAclResponse.
 
         :param access_control_list: The access_control_list of this GetBucketAclResponse.
         :type access_control_list: :class:`huaweicloudsdkobs.v1.AccessControlList`
@@ -131,7 +131,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @property
     def x_obs_id_2(self):
-        """Gets the x_obs_id_2 of this GetBucketAclResponse.
+        r"""Gets the x_obs_id_2 of this GetBucketAclResponse.
 
         :return: The x_obs_id_2 of this GetBucketAclResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @x_obs_id_2.setter
     def x_obs_id_2(self, x_obs_id_2):
-        """Sets the x_obs_id_2 of this GetBucketAclResponse.
+        r"""Sets the x_obs_id_2 of this GetBucketAclResponse.
 
         :param x_obs_id_2: The x_obs_id_2 of this GetBucketAclResponse.
         :type x_obs_id_2: str
@@ -149,7 +149,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @property
     def x_obs_request_id(self):
-        """Gets the x_obs_request_id of this GetBucketAclResponse.
+        r"""Gets the x_obs_request_id of this GetBucketAclResponse.
 
         :return: The x_obs_request_id of this GetBucketAclResponse.
         :rtype: str
@@ -158,7 +158,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @x_obs_request_id.setter
     def x_obs_request_id(self, x_obs_request_id):
-        """Sets the x_obs_request_id of this GetBucketAclResponse.
+        r"""Sets the x_obs_request_id of this GetBucketAclResponse.
 
         :param x_obs_request_id: The x_obs_request_id of this GetBucketAclResponse.
         :type x_obs_request_id: str
@@ -167,7 +167,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @property
     def e_tag(self):
-        """Gets the e_tag of this GetBucketAclResponse.
+        r"""Gets the e_tag of this GetBucketAclResponse.
 
         :return: The e_tag of this GetBucketAclResponse.
         :rtype: str
@@ -176,7 +176,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @e_tag.setter
     def e_tag(self, e_tag):
-        """Sets the e_tag of this GetBucketAclResponse.
+        r"""Sets the e_tag of this GetBucketAclResponse.
 
         :param e_tag: The e_tag of this GetBucketAclResponse.
         :type e_tag: str
@@ -185,7 +185,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this GetBucketAclResponse.
+        r"""Gets the connection of this GetBucketAclResponse.
 
         :return: The connection of this GetBucketAclResponse.
         :rtype: str
@@ -194,7 +194,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this GetBucketAclResponse.
+        r"""Sets the connection of this GetBucketAclResponse.
 
         :param connection: The connection of this GetBucketAclResponse.
         :type connection: str
@@ -203,7 +203,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this GetBucketAclResponse.
+        r"""Gets the content_length of this GetBucketAclResponse.
 
         :return: The content_length of this GetBucketAclResponse.
         :rtype: str
@@ -212,7 +212,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this GetBucketAclResponse.
+        r"""Sets the content_length of this GetBucketAclResponse.
 
         :param content_length: The content_length of this GetBucketAclResponse.
         :type content_length: str
@@ -221,7 +221,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this GetBucketAclResponse.
+        r"""Gets the date of this GetBucketAclResponse.
 
         :return: The date of this GetBucketAclResponse.
         :rtype: str
@@ -230,7 +230,7 @@ class GetBucketAclResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this GetBucketAclResponse.
+        r"""Sets the date of this GetBucketAclResponse.
 
         :param date: The date of this GetBucketAclResponse.
         :type date: str

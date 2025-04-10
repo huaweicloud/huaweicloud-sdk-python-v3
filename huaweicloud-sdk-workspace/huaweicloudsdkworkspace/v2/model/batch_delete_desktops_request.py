@@ -25,7 +25,7 @@ class BatchDeleteDesktopsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteDesktopsRequest
+        r"""BatchDeleteDesktopsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteDesktopsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteDesktopsRequest.
+        r"""Gets the body of this BatchDeleteDesktopsRequest.
 
         :return: The body of this BatchDeleteDesktopsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopsReq`
@@ -52,7 +52,7 @@ class BatchDeleteDesktopsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteDesktopsRequest.
+        r"""Sets the body of this BatchDeleteDesktopsRequest.
 
         :param body: The body of this BatchDeleteDesktopsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopsReq`

@@ -25,7 +25,7 @@ class RebootInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """RebootInstanceRequest
+        r"""RebootInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RebootInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this RebootInstanceRequest.
+        r"""Gets the body of this RebootInstanceRequest.
 
         :return: The body of this RebootInstanceRequest.
         :rtype: :class:`huaweicloudsdkcbh.v2.RebootCbhRequestBody`
@@ -52,7 +52,7 @@ class RebootInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RebootInstanceRequest.
+        r"""Sets the body of this RebootInstanceRequest.
 
         :param body: The body of this RebootInstanceRequest.
         :type body: :class:`huaweicloudsdkcbh.v2.RebootCbhRequestBody`

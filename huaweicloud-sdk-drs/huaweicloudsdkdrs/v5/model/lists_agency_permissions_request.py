@@ -31,7 +31,7 @@ class ListsAgencyPermissionsRequest:
     }
 
     def __init__(self, x_language=None, source_type=None, target_type=None, is_non_dbs=None):
-        """ListsAgencyPermissionsRequest
+        r"""ListsAgencyPermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListsAgencyPermissionsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListsAgencyPermissionsRequest.
+        r"""Gets the x_language of this ListsAgencyPermissionsRequest.
 
         请求语言类型。
 
@@ -74,7 +74,7 @@ class ListsAgencyPermissionsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListsAgencyPermissionsRequest.
+        r"""Sets the x_language of this ListsAgencyPermissionsRequest.
 
         请求语言类型。
 
@@ -85,7 +85,7 @@ class ListsAgencyPermissionsRequest:
 
     @property
     def source_type(self):
-        """Gets the source_type of this ListsAgencyPermissionsRequest.
+        r"""Gets the source_type of this ListsAgencyPermissionsRequest.
 
         源库类型 - mysql - sqlserver - postgresql - hwsql - mongodb - dws - oracle - taurus - tauruslite - ddm - kafka - mrsKafka - gaussdb - gaussdbv5 - gaussdbv5ha - gaussmongodb - cassandra - dmq - gaussdbt - gaussdb300 - gaussdbtha - elasticsearch - db2 - tidb - redis - rediscluster - gaussredis - mariadb - gaussdbv1 - informix - dynamo - gausscassandra - oceanbase
 
@@ -96,7 +96,7 @@ class ListsAgencyPermissionsRequest:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this ListsAgencyPermissionsRequest.
+        r"""Sets the source_type of this ListsAgencyPermissionsRequest.
 
         源库类型 - mysql - sqlserver - postgresql - hwsql - mongodb - dws - oracle - taurus - tauruslite - ddm - kafka - mrsKafka - gaussdb - gaussdbv5 - gaussdbv5ha - gaussmongodb - cassandra - dmq - gaussdbt - gaussdb300 - gaussdbtha - elasticsearch - db2 - tidb - redis - rediscluster - gaussredis - mariadb - gaussdbv1 - informix - dynamo - gausscassandra - oceanbase
 
@@ -107,7 +107,7 @@ class ListsAgencyPermissionsRequest:
 
     @property
     def target_type(self):
-        """Gets the target_type of this ListsAgencyPermissionsRequest.
+        r"""Gets the target_type of this ListsAgencyPermissionsRequest.
 
         目标库类型 - mysql - sqlserver - postgresql - hwsql - mongodb - dws - oracle - taurus - tauruslite - ddm - kafka - mrsKafka - gaussdb - gaussdbv5 - gaussdbv5ha - gaussmongodb - cassandra - dmq - gaussdbt - gaussdb300 - gaussdbtha - elasticsearch - db2 - tidb - redis - rediscluster - gaussredis - mariadb - gaussdbv1 - informix - dynamo - gausscassandra - oceanbase
 
@@ -118,7 +118,7 @@ class ListsAgencyPermissionsRequest:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this ListsAgencyPermissionsRequest.
+        r"""Sets the target_type of this ListsAgencyPermissionsRequest.
 
         目标库类型 - mysql - sqlserver - postgresql - hwsql - mongodb - dws - oracle - taurus - tauruslite - ddm - kafka - mrsKafka - gaussdb - gaussdbv5 - gaussdbv5ha - gaussmongodb - cassandra - dmq - gaussdbt - gaussdb300 - gaussdbtha - elasticsearch - db2 - tidb - redis - rediscluster - gaussredis - mariadb - gaussdbv1 - informix - dynamo - gausscassandra - oceanbase
 
@@ -129,7 +129,7 @@ class ListsAgencyPermissionsRequest:
 
     @property
     def is_non_dbs(self):
-        """Gets the is_non_dbs of this ListsAgencyPermissionsRequest.
+        r"""Gets the is_non_dbs of this ListsAgencyPermissionsRequest.
 
         是否自建。
 
@@ -140,7 +140,7 @@ class ListsAgencyPermissionsRequest:
 
     @is_non_dbs.setter
     def is_non_dbs(self, is_non_dbs):
-        """Sets the is_non_dbs of this ListsAgencyPermissionsRequest.
+        r"""Sets the is_non_dbs of this ListsAgencyPermissionsRequest.
 
         是否自建。
 

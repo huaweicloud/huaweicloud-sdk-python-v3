@@ -25,7 +25,7 @@ class ShowPackageDetailRequest:
     }
 
     def __init__(self, package_id=None):
-        """ShowPackageDetailRequest
+        r"""ShowPackageDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPackageDetailRequest:
 
     @property
     def package_id(self):
-        """Gets the package_id of this ShowPackageDetailRequest.
+        r"""Gets the package_id of this ShowPackageDetailRequest.
 
         需查询的习题库id
 
@@ -53,7 +53,7 @@ class ShowPackageDetailRequest:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this ShowPackageDetailRequest.
+        r"""Sets the package_id of this ShowPackageDetailRequest.
 
         需查询的习题库id
 

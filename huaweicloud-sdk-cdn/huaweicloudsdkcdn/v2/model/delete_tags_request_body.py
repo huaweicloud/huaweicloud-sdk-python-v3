@@ -27,7 +27,7 @@ class DeleteTagsRequestBody:
     }
 
     def __init__(self, resource_id=None, tags=None):
-        """DeleteTagsRequestBody
+        r"""DeleteTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteTagsRequestBody:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteTagsRequestBody.
+        r"""Gets the resource_id of this DeleteTagsRequestBody.
 
         资源id。  > 域名ID
 
@@ -59,7 +59,7 @@ class DeleteTagsRequestBody:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteTagsRequestBody.
+        r"""Sets the resource_id of this DeleteTagsRequestBody.
 
         资源id。  > 域名ID
 
@@ -70,7 +70,7 @@ class DeleteTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this DeleteTagsRequestBody.
+        r"""Gets the tags of this DeleteTagsRequestBody.
 
         键列表
 
@@ -81,7 +81,7 @@ class DeleteTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this DeleteTagsRequestBody.
+        r"""Sets the tags of this DeleteTagsRequestBody.
 
         键列表
 

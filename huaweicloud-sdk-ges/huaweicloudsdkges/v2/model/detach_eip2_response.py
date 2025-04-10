@@ -26,7 +26,7 @@ class DetachEip2Response(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DetachEip2Response
+        r"""DetachEip2Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DetachEip2Response(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DetachEip2Response.
+        r"""Gets the body of this DetachEip2Response.
 
         :return: The body of this DetachEip2Response.
         :rtype: dict(str, str)
@@ -53,7 +53,7 @@ class DetachEip2Response(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DetachEip2Response.
+        r"""Sets the body of this DetachEip2Response.
 
         :param body: The body of this DetachEip2Response.
         :type body: dict(str, str)

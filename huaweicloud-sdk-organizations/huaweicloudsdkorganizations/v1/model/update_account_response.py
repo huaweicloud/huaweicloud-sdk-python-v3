@@ -26,7 +26,7 @@ class UpdateAccountResponse(SdkResponse):
     }
 
     def __init__(self, account=None):
-        """UpdateAccountResponse
+        r"""UpdateAccountResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAccountResponse(SdkResponse):
 
     @property
     def account(self):
-        """Gets the account of this UpdateAccountResponse.
+        r"""Gets the account of this UpdateAccountResponse.
 
         :return: The account of this UpdateAccountResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.AccountDto`
@@ -53,7 +53,7 @@ class UpdateAccountResponse(SdkResponse):
 
     @account.setter
     def account(self, account):
-        """Sets the account of this UpdateAccountResponse.
+        r"""Sets the account of this UpdateAccountResponse.
 
         :param account: The account of this UpdateAccountResponse.
         :type account: :class:`huaweicloudsdkorganizations.v1.AccountDto`

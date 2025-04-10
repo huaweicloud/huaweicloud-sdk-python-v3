@@ -31,7 +31,7 @@ class CreateMessageNotificationPolicy:
     }
 
     def __init__(self, message_type=None, name_pattern=None, notification_types=None, topic_urn=None):
-        """CreateMessageNotificationPolicy
+        r"""CreateMessageNotificationPolicy
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateMessageNotificationPolicy:
 
     @property
     def message_type(self):
-        """Gets the message_type of this CreateMessageNotificationPolicy.
+        r"""Gets the message_type of this CreateMessageNotificationPolicy.
 
         消息类型。job:任务执行结果。
 
@@ -71,7 +71,7 @@ class CreateMessageNotificationPolicy:
 
     @message_type.setter
     def message_type(self, message_type):
-        """Sets the message_type of this CreateMessageNotificationPolicy.
+        r"""Sets the message_type of this CreateMessageNotificationPolicy.
 
         消息类型。job:任务执行结果。
 
@@ -82,7 +82,7 @@ class CreateMessageNotificationPolicy:
 
     @property
     def name_pattern(self):
-        """Gets the name_pattern of this CreateMessageNotificationPolicy.
+        r"""Gets the name_pattern of this CreateMessageNotificationPolicy.
 
         名称样式，用来匹配消息类型中所有符合该样式的消息。比如，message_type设置为job，name_pattern设置为ray_job*，表示匹配到所有以\"ray_job\"开头的job发出的消息。
 
@@ -93,7 +93,7 @@ class CreateMessageNotificationPolicy:
 
     @name_pattern.setter
     def name_pattern(self, name_pattern):
-        """Sets the name_pattern of this CreateMessageNotificationPolicy.
+        r"""Sets the name_pattern of this CreateMessageNotificationPolicy.
 
         名称样式，用来匹配消息类型中所有符合该样式的消息。比如，message_type设置为job，name_pattern设置为ray_job*，表示匹配到所有以\"ray_job\"开头的job发出的消息。
 
@@ -104,7 +104,7 @@ class CreateMessageNotificationPolicy:
 
     @property
     def notification_types(self):
-        """Gets the notification_types of this CreateMessageNotificationPolicy.
+        r"""Gets the notification_types of this CreateMessageNotificationPolicy.
 
         通知类型。SUCCESS:成功通知；FAILED：失败通知
 
@@ -115,7 +115,7 @@ class CreateMessageNotificationPolicy:
 
     @notification_types.setter
     def notification_types(self, notification_types):
-        """Sets the notification_types of this CreateMessageNotificationPolicy.
+        r"""Sets the notification_types of this CreateMessageNotificationPolicy.
 
         通知类型。SUCCESS:成功通知；FAILED：失败通知
 
@@ -126,7 +126,7 @@ class CreateMessageNotificationPolicy:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this CreateMessageNotificationPolicy.
+        r"""Gets the topic_urn of this CreateMessageNotificationPolicy.
 
         消息通知主题。
 
@@ -137,7 +137,7 @@ class CreateMessageNotificationPolicy:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this CreateMessageNotificationPolicy.
+        r"""Sets the topic_urn of this CreateMessageNotificationPolicy.
 
         消息通知主题。
 

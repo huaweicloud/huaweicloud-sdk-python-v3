@@ -35,7 +35,7 @@ class OpExtendInfoBckup:
     }
 
     def __init__(self, app_consistency_error_code=None, app_consistency_error_message=None, app_consistency_status=None, backup_id=None, backup_name=None, incremental=None):
-        """OpExtendInfoBckup
+        r"""OpExtendInfoBckup
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class OpExtendInfoBckup:
 
     @property
     def app_consistency_error_code(self):
-        """Gets the app_consistency_error_code of this OpExtendInfoBckup.
+        r"""Gets the app_consistency_error_code of this OpExtendInfoBckup.
 
         应用一致性备份失败错误码。请参见[错误码](ErrorCode.xml)。
 
@@ -88,7 +88,7 @@ class OpExtendInfoBckup:
 
     @app_consistency_error_code.setter
     def app_consistency_error_code(self, app_consistency_error_code):
-        """Sets the app_consistency_error_code of this OpExtendInfoBckup.
+        r"""Sets the app_consistency_error_code of this OpExtendInfoBckup.
 
         应用一致性备份失败错误码。请参见[错误码](ErrorCode.xml)。
 
@@ -99,7 +99,7 @@ class OpExtendInfoBckup:
 
     @property
     def app_consistency_error_message(self):
-        """Gets the app_consistency_error_message of this OpExtendInfoBckup.
+        r"""Gets the app_consistency_error_message of this OpExtendInfoBckup.
 
         应用一致性备份错误信息
 
@@ -110,7 +110,7 @@ class OpExtendInfoBckup:
 
     @app_consistency_error_message.setter
     def app_consistency_error_message(self, app_consistency_error_message):
-        """Sets the app_consistency_error_message of this OpExtendInfoBckup.
+        r"""Sets the app_consistency_error_message of this OpExtendInfoBckup.
 
         应用一致性备份错误信息
 
@@ -121,7 +121,7 @@ class OpExtendInfoBckup:
 
     @property
     def app_consistency_status(self):
-        """Gets the app_consistency_status of this OpExtendInfoBckup.
+        r"""Gets the app_consistency_status of this OpExtendInfoBckup.
 
         应用一致性备份状态；0:非应用一致性，1：应用一致性备份
 
@@ -132,7 +132,7 @@ class OpExtendInfoBckup:
 
     @app_consistency_status.setter
     def app_consistency_status(self, app_consistency_status):
-        """Sets the app_consistency_status of this OpExtendInfoBckup.
+        r"""Sets the app_consistency_status of this OpExtendInfoBckup.
 
         应用一致性备份状态；0:非应用一致性，1：应用一致性备份
 
@@ -143,7 +143,7 @@ class OpExtendInfoBckup:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this OpExtendInfoBckup.
+        r"""Gets the backup_id of this OpExtendInfoBckup.
 
         备份副本ID
 
@@ -154,7 +154,7 @@ class OpExtendInfoBckup:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this OpExtendInfoBckup.
+        r"""Sets the backup_id of this OpExtendInfoBckup.
 
         备份副本ID
 
@@ -165,7 +165,7 @@ class OpExtendInfoBckup:
 
     @property
     def backup_name(self):
-        """Gets the backup_name of this OpExtendInfoBckup.
+        r"""Gets the backup_name of this OpExtendInfoBckup.
 
         备份名称
 
@@ -176,7 +176,7 @@ class OpExtendInfoBckup:
 
     @backup_name.setter
     def backup_name(self, backup_name):
-        """Sets the backup_name of this OpExtendInfoBckup.
+        r"""Sets the backup_name of this OpExtendInfoBckup.
 
         备份名称
 
@@ -187,7 +187,7 @@ class OpExtendInfoBckup:
 
     @property
     def incremental(self):
-        """Gets the incremental of this OpExtendInfoBckup.
+        r"""Gets the incremental of this OpExtendInfoBckup.
 
         是否增备
 
@@ -198,7 +198,7 @@ class OpExtendInfoBckup:
 
     @incremental.setter
     def incremental(self, incremental):
-        """Sets the incremental of this OpExtendInfoBckup.
+        r"""Sets the incremental of this OpExtendInfoBckup.
 
         是否增备
 

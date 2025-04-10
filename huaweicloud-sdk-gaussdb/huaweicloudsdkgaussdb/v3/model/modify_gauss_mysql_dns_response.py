@@ -26,7 +26,7 @@ class ModifyGaussMysqlDnsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ModifyGaussMysqlDnsResponse
+        r"""ModifyGaussMysqlDnsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ModifyGaussMysqlDnsResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ModifyGaussMysqlDnsResponse.
+        r"""Gets the job_id of this ModifyGaussMysqlDnsResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class ModifyGaussMysqlDnsResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ModifyGaussMysqlDnsResponse.
+        r"""Sets the job_id of this ModifyGaussMysqlDnsResponse.
 
         任务ID。
 

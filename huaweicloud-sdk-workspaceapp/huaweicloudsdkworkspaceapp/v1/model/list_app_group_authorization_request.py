@@ -33,7 +33,7 @@ class ListAppGroupAuthorizationRequest:
     }
 
     def __init__(self, limit=None, offset=None, app_group_id=None, account=None, account_type=None):
-        """ListAppGroupAuthorizationRequest
+        r"""ListAppGroupAuthorizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListAppGroupAuthorizationRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppGroupAuthorizationRequest.
+        r"""Gets the limit of this ListAppGroupAuthorizationRequest.
 
         单次查询的大小[1-100]。
 
@@ -82,7 +82,7 @@ class ListAppGroupAuthorizationRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppGroupAuthorizationRequest.
+        r"""Sets the limit of this ListAppGroupAuthorizationRequest.
 
         单次查询的大小[1-100]。
 
@@ -93,7 +93,7 @@ class ListAppGroupAuthorizationRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppGroupAuthorizationRequest.
+        r"""Gets the offset of this ListAppGroupAuthorizationRequest.
 
         查询的偏移量。
 
@@ -104,7 +104,7 @@ class ListAppGroupAuthorizationRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppGroupAuthorizationRequest.
+        r"""Sets the offset of this ListAppGroupAuthorizationRequest.
 
         查询的偏移量。
 
@@ -115,7 +115,7 @@ class ListAppGroupAuthorizationRequest:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this ListAppGroupAuthorizationRequest.
+        r"""Gets the app_group_id of this ListAppGroupAuthorizationRequest.
 
         应用组ID。
 
@@ -126,7 +126,7 @@ class ListAppGroupAuthorizationRequest:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this ListAppGroupAuthorizationRequest.
+        r"""Sets the app_group_id of this ListAppGroupAuthorizationRequest.
 
         应用组ID。
 
@@ -137,7 +137,7 @@ class ListAppGroupAuthorizationRequest:
 
     @property
     def account(self):
-        """Gets the account of this ListAppGroupAuthorizationRequest.
+        r"""Gets the account of this ListAppGroupAuthorizationRequest.
 
         应用授权的用户(组)名称，精确查询。
 
@@ -148,7 +148,7 @@ class ListAppGroupAuthorizationRequest:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this ListAppGroupAuthorizationRequest.
+        r"""Sets the account of this ListAppGroupAuthorizationRequest.
 
         应用授权的用户(组)名称，精确查询。
 
@@ -159,7 +159,7 @@ class ListAppGroupAuthorizationRequest:
 
     @property
     def account_type(self):
-        """Gets the account_type of this ListAppGroupAuthorizationRequest.
+        r"""Gets the account_type of this ListAppGroupAuthorizationRequest.
 
         应用授权的用户(组)类型： * 'USER' - 用户 * 'USER_GROUP' - 用户组
 
@@ -170,7 +170,7 @@ class ListAppGroupAuthorizationRequest:
 
     @account_type.setter
     def account_type(self, account_type):
-        """Sets the account_type of this ListAppGroupAuthorizationRequest.
+        r"""Sets the account_type of this ListAppGroupAuthorizationRequest.
 
         应用授权的用户(组)类型： * 'USER' - 用户 * 'USER_GROUP' - 用户组
 

@@ -29,7 +29,7 @@ class UpdateTopicAttributeRequest:
     }
 
     def __init__(self, topic_urn=None, name=None, body=None):
-        """UpdateTopicAttributeRequest
+        r"""UpdateTopicAttributeRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateTopicAttributeRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this UpdateTopicAttributeRequest.
+        r"""Gets the topic_urn of this UpdateTopicAttributeRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -66,7 +66,7 @@ class UpdateTopicAttributeRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this UpdateTopicAttributeRequest.
+        r"""Sets the topic_urn of this UpdateTopicAttributeRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -77,7 +77,7 @@ class UpdateTopicAttributeRequest:
 
     @property
     def name(self):
-        """Gets the name of this UpdateTopicAttributeRequest.
+        r"""Gets the name of this UpdateTopicAttributeRequest.
 
         主题策略名称。  只支持特定的策略名称，请参见[Topic属性表](smn_api_a1000.xml)。
 
@@ -88,7 +88,7 @@ class UpdateTopicAttributeRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTopicAttributeRequest.
+        r"""Sets the name of this UpdateTopicAttributeRequest.
 
         主题策略名称。  只支持特定的策略名称，请参见[Topic属性表](smn_api_a1000.xml)。
 
@@ -99,7 +99,7 @@ class UpdateTopicAttributeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTopicAttributeRequest.
+        r"""Gets the body of this UpdateTopicAttributeRequest.
 
         :return: The body of this UpdateTopicAttributeRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateTopicAttributeRequestBody`
@@ -108,7 +108,7 @@ class UpdateTopicAttributeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTopicAttributeRequest.
+        r"""Sets the body of this UpdateTopicAttributeRequest.
 
         :param body: The body of this UpdateTopicAttributeRequest.
         :type body: :class:`huaweicloudsdksmn.v2.UpdateTopicAttributeRequestBody`

@@ -31,7 +31,7 @@ class CreatePocketDetectionJobReq:
     }
 
     def __init__(self, basic_info=None, receptor=None, ligand=None, params=None):
-        """CreatePocketDetectionJobReq
+        r"""CreatePocketDetectionJobReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreatePocketDetectionJobReq:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this CreatePocketDetectionJobReq.
+        r"""Gets the basic_info of this CreatePocketDetectionJobReq.
 
         :return: The basic_info of this CreatePocketDetectionJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -70,7 +70,7 @@ class CreatePocketDetectionJobReq:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this CreatePocketDetectionJobReq.
+        r"""Sets the basic_info of this CreatePocketDetectionJobReq.
 
         :param basic_info: The basic_info of this CreatePocketDetectionJobReq.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -79,7 +79,7 @@ class CreatePocketDetectionJobReq:
 
     @property
     def receptor(self):
-        """Gets the receptor of this CreatePocketDetectionJobReq.
+        r"""Gets the receptor of this CreatePocketDetectionJobReq.
 
         :return: The receptor of this CreatePocketDetectionJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -88,7 +88,7 @@ class CreatePocketDetectionJobReq:
 
     @receptor.setter
     def receptor(self, receptor):
-        """Sets the receptor of this CreatePocketDetectionJobReq.
+        r"""Sets the receptor of this CreatePocketDetectionJobReq.
 
         :param receptor: The receptor of this CreatePocketDetectionJobReq.
         :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -97,7 +97,7 @@ class CreatePocketDetectionJobReq:
 
     @property
     def ligand(self):
-        """Gets the ligand of this CreatePocketDetectionJobReq.
+        r"""Gets the ligand of this CreatePocketDetectionJobReq.
 
         :return: The ligand of this CreatePocketDetectionJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ProbeDrugFile`
@@ -106,7 +106,7 @@ class CreatePocketDetectionJobReq:
 
     @ligand.setter
     def ligand(self, ligand):
-        """Sets the ligand of this CreatePocketDetectionJobReq.
+        r"""Sets the ligand of this CreatePocketDetectionJobReq.
 
         :param ligand: The ligand of this CreatePocketDetectionJobReq.
         :type ligand: :class:`huaweicloudsdkeihealth.v1.ProbeDrugFile`
@@ -115,7 +115,7 @@ class CreatePocketDetectionJobReq:
 
     @property
     def params(self):
-        """Gets the params of this CreatePocketDetectionJobReq.
+        r"""Gets the params of this CreatePocketDetectionJobReq.
 
         :return: The params of this CreatePocketDetectionJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PocketDetectionParamDto`
@@ -124,7 +124,7 @@ class CreatePocketDetectionJobReq:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CreatePocketDetectionJobReq.
+        r"""Sets the params of this CreatePocketDetectionJobReq.
 
         :param params: The params of this CreatePocketDetectionJobReq.
         :type params: :class:`huaweicloudsdkeihealth.v1.PocketDetectionParamDto`

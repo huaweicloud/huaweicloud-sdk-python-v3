@@ -29,7 +29,7 @@ class ShowMetricResultResponseBodyResult:
     }
 
     def __init__(self, labels=None, datarows=None, effective_column=None):
-        """ShowMetricResultResponseBodyResult
+        r"""ShowMetricResultResponseBodyResult
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowMetricResultResponseBodyResult:
 
     @property
     def labels(self):
-        """Gets the labels of this ShowMetricResultResponseBodyResult.
+        r"""Gets the labels of this ShowMetricResultResponseBodyResult.
 
         指标查询结果表格标题
 
@@ -66,7 +66,7 @@ class ShowMetricResultResponseBodyResult:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ShowMetricResultResponseBodyResult.
+        r"""Sets the labels of this ShowMetricResultResponseBodyResult.
 
         指标查询结果表格标题
 
@@ -77,7 +77,7 @@ class ShowMetricResultResponseBodyResult:
 
     @property
     def datarows(self):
-        """Gets the datarows of this ShowMetricResultResponseBodyResult.
+        r"""Gets the datarows of this ShowMetricResultResponseBodyResult.
 
         指标查询结果内容表格
 
@@ -88,7 +88,7 @@ class ShowMetricResultResponseBodyResult:
 
     @datarows.setter
     def datarows(self, datarows):
-        """Sets the datarows of this ShowMetricResultResponseBodyResult.
+        r"""Sets the datarows of this ShowMetricResultResponseBodyResult.
 
         指标查询结果内容表格
 
@@ -99,7 +99,7 @@ class ShowMetricResultResponseBodyResult:
 
     @property
     def effective_column(self):
-        """Gets the effective_column of this ShowMetricResultResponseBodyResult.
+        r"""Gets the effective_column of this ShowMetricResultResponseBodyResult.
 
         生效的列, 当有该参数时，使用指定列作为指标数据结果
 
@@ -110,7 +110,7 @@ class ShowMetricResultResponseBodyResult:
 
     @effective_column.setter
     def effective_column(self, effective_column):
-        """Sets the effective_column of this ShowMetricResultResponseBodyResult.
+        r"""Sets the effective_column of this ShowMetricResultResponseBodyResult.
 
         生效的列, 当有该参数时，使用指定列作为指标数据结果
 

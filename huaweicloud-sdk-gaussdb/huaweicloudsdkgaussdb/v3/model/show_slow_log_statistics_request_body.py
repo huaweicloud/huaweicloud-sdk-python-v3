@@ -41,7 +41,7 @@ class ShowSlowLogStatisticsRequestBody:
     }
 
     def __init__(self, limit=None, offset=None, node_id=None, type=None, database=None, start_time=None, end_time=None, sort=None, order=None):
-        """ShowSlowLogStatisticsRequestBody
+        r"""ShowSlowLogStatisticsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowSlowLogStatisticsRequestBody.
+        r"""Gets the limit of this ShowSlowLogStatisticsRequestBody.
 
         每页多少条记录（查询结果），取值范围是1~100，不填时默认为10。
 
@@ -107,7 +107,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowSlowLogStatisticsRequestBody.
+        r"""Sets the limit of this ShowSlowLogStatisticsRequestBody.
 
         每页多少条记录（查询结果），取值范围是1~100，不填时默认为10。
 
@@ -118,7 +118,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowSlowLogStatisticsRequestBody.
+        r"""Gets the offset of this ShowSlowLogStatisticsRequestBody.
 
         索引位置，偏移量。默认为0，表示从第一条数据开始查询。
 
@@ -129,7 +129,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowSlowLogStatisticsRequestBody.
+        r"""Sets the offset of this ShowSlowLogStatisticsRequestBody.
 
         索引位置，偏移量。默认为0，表示从第一条数据开始查询。
 
@@ -140,7 +140,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowSlowLogStatisticsRequestBody.
+        r"""Gets the node_id of this ShowSlowLogStatisticsRequestBody.
 
         节点ID。
 
@@ -151,7 +151,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowSlowLogStatisticsRequestBody.
+        r"""Sets the node_id of this ShowSlowLogStatisticsRequestBody.
 
         节点ID。
 
@@ -162,7 +162,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this ShowSlowLogStatisticsRequestBody.
+        r"""Gets the type of this ShowSlowLogStatisticsRequestBody.
 
         语句类型，取空值，表示查询所有语句类型。  枚举值:   - INSERT   - UPDATE   - SELECT   - DELETE   - CREATE   - ALL
 
@@ -173,7 +173,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowSlowLogStatisticsRequestBody.
+        r"""Sets the type of this ShowSlowLogStatisticsRequestBody.
 
         语句类型，取空值，表示查询所有语句类型。  枚举值:   - INSERT   - UPDATE   - SELECT   - DELETE   - CREATE   - ALL
 
@@ -184,7 +184,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @property
     def database(self):
-        """Gets the database of this ShowSlowLogStatisticsRequestBody.
+        r"""Gets the database of this ShowSlowLogStatisticsRequestBody.
 
         数据库名称。数据库名称不支持包含特殊字符 < > & 等的搜索。
 
@@ -195,7 +195,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ShowSlowLogStatisticsRequestBody.
+        r"""Sets the database of this ShowSlowLogStatisticsRequestBody.
 
         数据库名称。数据库名称不支持包含特殊字符 < > & 等的搜索。
 
@@ -206,7 +206,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowSlowLogStatisticsRequestBody.
+        r"""Gets the start_time of this ShowSlowLogStatisticsRequestBody.
 
         开始日期，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -217,7 +217,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowSlowLogStatisticsRequestBody.
+        r"""Sets the start_time of this ShowSlowLogStatisticsRequestBody.
 
         开始日期，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -228,7 +228,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowSlowLogStatisticsRequestBody.
+        r"""Gets the end_time of this ShowSlowLogStatisticsRequestBody.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。
 
@@ -239,7 +239,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowSlowLogStatisticsRequestBody.
+        r"""Sets the end_time of this ShowSlowLogStatisticsRequestBody.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。
 
@@ -250,7 +250,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @property
     def sort(self):
-        """Gets the sort of this ShowSlowLogStatisticsRequestBody.
+        r"""Gets the sort of this ShowSlowLogStatisticsRequestBody.
 
         指定排序字段。   - executeTime：表示按照平均执行时间降序排序。   - 字段为空或传入其他值，表示按照执行次数降序排序。
 
@@ -261,7 +261,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ShowSlowLogStatisticsRequestBody.
+        r"""Sets the sort of this ShowSlowLogStatisticsRequestBody.
 
         指定排序字段。   - executeTime：表示按照平均执行时间降序排序。   - 字段为空或传入其他值，表示按照执行次数降序排序。
 
@@ -272,7 +272,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @property
     def order(self):
-        """Gets the order of this ShowSlowLogStatisticsRequestBody.
+        r"""Gets the order of this ShowSlowLogStatisticsRequestBody.
 
         排序顺序。默认desc。 枚举值：   - desc   - asc
 
@@ -283,7 +283,7 @@ class ShowSlowLogStatisticsRequestBody:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ShowSlowLogStatisticsRequestBody.
+        r"""Sets the order of this ShowSlowLogStatisticsRequestBody.
 
         排序顺序。默认desc。 枚举值：   - desc   - asc
 

@@ -29,7 +29,7 @@ class PrivateIp:
     }
 
     def __init__(self, ip=None, slave_ip=None, floating_ip=None):
-        """PrivateIp
+        r"""PrivateIp
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class PrivateIp:
 
     @property
     def ip(self):
-        """Gets the ip of this PrivateIp.
+        r"""Gets the ip of this PrivateIp.
 
         私网IP地址。
 
@@ -67,7 +67,7 @@ class PrivateIp:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this PrivateIp.
+        r"""Sets the ip of this PrivateIp.
 
         私网IP地址。
 
@@ -78,7 +78,7 @@ class PrivateIp:
 
     @property
     def slave_ip(self):
-        """Gets the slave_ip of this PrivateIp.
+        r"""Gets the slave_ip of this PrivateIp.
 
         备机私网IP地址。
 
@@ -89,7 +89,7 @@ class PrivateIp:
 
     @slave_ip.setter
     def slave_ip(self, slave_ip):
-        """Sets the slave_ip of this PrivateIp.
+        r"""Sets the slave_ip of this PrivateIp.
 
         备机私网IP地址。
 
@@ -100,7 +100,7 @@ class PrivateIp:
 
     @property
     def floating_ip(self):
-        """Gets the floating_ip of this PrivateIp.
+        r"""Gets the floating_ip of this PrivateIp.
 
         浮动IP地址。
 
@@ -111,7 +111,7 @@ class PrivateIp:
 
     @floating_ip.setter
     def floating_ip(self, floating_ip):
-        """Sets the floating_ip of this PrivateIp.
+        r"""Sets the floating_ip of this PrivateIp.
 
         浮动IP地址。
 

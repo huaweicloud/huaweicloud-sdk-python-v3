@@ -123,7 +123,7 @@ class TestVersionVo:
     }
 
     def __init__(self, uri=None, type=None, author=None, name=None, rank=None, version=None, owner=None, creator=None, iterations=None, description=None, region=None, last_modifier=None, last_modified=None, last_modified_timestamp=None, last_change_time=None, version_uri=None, origin_uri=None, parent_uri=None, parent_path=None, creation_version_uri=None, creation_date=None, creation_date_timestamp=None, author_name=None, comment=None, number=None, is_master=None, is_iterator=None, plan_start_date=None, plan_end_date=None, service_id=None, service_name=None, pbi_id=None, pbi_name=None, plan_id=None, metric_pbi_ids=None, metric_pbi_id_names=None, last_syn_date=None, is_closed=None, asyn_git=None, schema_no=None, finish_date=None, owner_name=None, creator_name=None, current_stage=None, service_types=None, risk_rating=None, risk_des=None, project_uuid=None, domain_id=None, pi_id=None):
-        """TestVersionVo
+        r"""TestVersionVo
 
         The model defined in huaweicloud sdk
 
@@ -386,7 +386,7 @@ class TestVersionVo:
 
     @property
     def uri(self):
-        """Gets the uri of this TestVersionVo.
+        r"""Gets the uri of this TestVersionVo.
 
         资源URI
 
@@ -397,7 +397,7 @@ class TestVersionVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this TestVersionVo.
+        r"""Sets the uri of this TestVersionVo.
 
         资源URI
 
@@ -408,7 +408,7 @@ class TestVersionVo:
 
     @property
     def type(self):
-        """Gets the type of this TestVersionVo.
+        r"""Gets the type of this TestVersionVo.
 
         资源类型
 
@@ -419,7 +419,7 @@ class TestVersionVo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TestVersionVo.
+        r"""Sets the type of this TestVersionVo.
 
         资源类型
 
@@ -430,7 +430,7 @@ class TestVersionVo:
 
     @property
     def author(self):
-        """Gets the author of this TestVersionVo.
+        r"""Gets the author of this TestVersionVo.
 
         创建人
 
@@ -441,7 +441,7 @@ class TestVersionVo:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this TestVersionVo.
+        r"""Sets the author of this TestVersionVo.
 
         创建人
 
@@ -452,7 +452,7 @@ class TestVersionVo:
 
     @property
     def name(self):
-        """Gets the name of this TestVersionVo.
+        r"""Gets the name of this TestVersionVo.
 
         名称
 
@@ -463,7 +463,7 @@ class TestVersionVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TestVersionVo.
+        r"""Sets the name of this TestVersionVo.
 
         名称
 
@@ -474,7 +474,7 @@ class TestVersionVo:
 
     @property
     def rank(self):
-        """Gets the rank of this TestVersionVo.
+        r"""Gets the rank of this TestVersionVo.
 
         级别
 
@@ -485,7 +485,7 @@ class TestVersionVo:
 
     @rank.setter
     def rank(self, rank):
-        """Sets the rank of this TestVersionVo.
+        r"""Sets the rank of this TestVersionVo.
 
         级别
 
@@ -496,7 +496,7 @@ class TestVersionVo:
 
     @property
     def version(self):
-        """Gets the version of this TestVersionVo.
+        r"""Gets the version of this TestVersionVo.
 
         待测版本
 
@@ -507,7 +507,7 @@ class TestVersionVo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this TestVersionVo.
+        r"""Sets the version of this TestVersionVo.
 
         待测版本
 
@@ -518,7 +518,7 @@ class TestVersionVo:
 
     @property
     def owner(self):
-        """Gets the owner of this TestVersionVo.
+        r"""Gets the owner of this TestVersionVo.
 
         处理者ID
 
@@ -529,7 +529,7 @@ class TestVersionVo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TestVersionVo.
+        r"""Sets the owner of this TestVersionVo.
 
         处理者ID
 
@@ -540,7 +540,7 @@ class TestVersionVo:
 
     @property
     def creator(self):
-        """Gets the creator of this TestVersionVo.
+        r"""Gets the creator of this TestVersionVo.
 
         创建人ID
 
@@ -551,7 +551,7 @@ class TestVersionVo:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this TestVersionVo.
+        r"""Sets the creator of this TestVersionVo.
 
         创建人ID
 
@@ -562,7 +562,7 @@ class TestVersionVo:
 
     @property
     def iterations(self):
-        """Gets the iterations of this TestVersionVo.
+        r"""Gets the iterations of this TestVersionVo.
 
         关联迭代
 
@@ -573,7 +573,7 @@ class TestVersionVo:
 
     @iterations.setter
     def iterations(self, iterations):
-        """Sets the iterations of this TestVersionVo.
+        r"""Sets the iterations of this TestVersionVo.
 
         关联迭代
 
@@ -584,7 +584,7 @@ class TestVersionVo:
 
     @property
     def description(self):
-        """Gets the description of this TestVersionVo.
+        r"""Gets the description of this TestVersionVo.
 
         描述
 
@@ -595,7 +595,7 @@ class TestVersionVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TestVersionVo.
+        r"""Sets the description of this TestVersionVo.
 
         描述
 
@@ -606,7 +606,7 @@ class TestVersionVo:
 
     @property
     def region(self):
-        """Gets the region of this TestVersionVo.
+        r"""Gets the region of this TestVersionVo.
 
         区域
 
@@ -617,7 +617,7 @@ class TestVersionVo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TestVersionVo.
+        r"""Sets the region of this TestVersionVo.
 
         区域
 
@@ -628,7 +628,7 @@ class TestVersionVo:
 
     @property
     def last_modifier(self):
-        """Gets the last_modifier of this TestVersionVo.
+        r"""Gets the last_modifier of this TestVersionVo.
 
         最后修改人
 
@@ -639,7 +639,7 @@ class TestVersionVo:
 
     @last_modifier.setter
     def last_modifier(self, last_modifier):
-        """Sets the last_modifier of this TestVersionVo.
+        r"""Sets the last_modifier of this TestVersionVo.
 
         最后修改人
 
@@ -650,7 +650,7 @@ class TestVersionVo:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this TestVersionVo.
+        r"""Gets the last_modified of this TestVersionVo.
 
         最后修改时间
 
@@ -661,7 +661,7 @@ class TestVersionVo:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this TestVersionVo.
+        r"""Sets the last_modified of this TestVersionVo.
 
         最后修改时间
 
@@ -672,7 +672,7 @@ class TestVersionVo:
 
     @property
     def last_modified_timestamp(self):
-        """Gets the last_modified_timestamp of this TestVersionVo.
+        r"""Gets the last_modified_timestamp of this TestVersionVo.
 
         修改时间时间戳
 
@@ -683,7 +683,7 @@ class TestVersionVo:
 
     @last_modified_timestamp.setter
     def last_modified_timestamp(self, last_modified_timestamp):
-        """Sets the last_modified_timestamp of this TestVersionVo.
+        r"""Sets the last_modified_timestamp of this TestVersionVo.
 
         修改时间时间戳
 
@@ -694,7 +694,7 @@ class TestVersionVo:
 
     @property
     def last_change_time(self):
-        """Gets the last_change_time of this TestVersionVo.
+        r"""Gets the last_change_time of this TestVersionVo.
 
         最后变更时间
 
@@ -705,7 +705,7 @@ class TestVersionVo:
 
     @last_change_time.setter
     def last_change_time(self, last_change_time):
-        """Sets the last_change_time of this TestVersionVo.
+        r"""Sets the last_change_time of this TestVersionVo.
 
         最后变更时间
 
@@ -716,7 +716,7 @@ class TestVersionVo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this TestVersionVo.
+        r"""Gets the version_uri of this TestVersionVo.
 
         版本URI
 
@@ -727,7 +727,7 @@ class TestVersionVo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this TestVersionVo.
+        r"""Sets the version_uri of this TestVersionVo.
 
         版本URI
 
@@ -738,7 +738,7 @@ class TestVersionVo:
 
     @property
     def origin_uri(self):
-        """Gets the origin_uri of this TestVersionVo.
+        r"""Gets the origin_uri of this TestVersionVo.
 
         源资源URI
 
@@ -749,7 +749,7 @@ class TestVersionVo:
 
     @origin_uri.setter
     def origin_uri(self, origin_uri):
-        """Sets the origin_uri of this TestVersionVo.
+        r"""Sets the origin_uri of this TestVersionVo.
 
         源资源URI
 
@@ -760,7 +760,7 @@ class TestVersionVo:
 
     @property
     def parent_uri(self):
-        """Gets the parent_uri of this TestVersionVo.
+        r"""Gets the parent_uri of this TestVersionVo.
 
         父资源URI
 
@@ -771,7 +771,7 @@ class TestVersionVo:
 
     @parent_uri.setter
     def parent_uri(self, parent_uri):
-        """Sets the parent_uri of this TestVersionVo.
+        r"""Sets the parent_uri of this TestVersionVo.
 
         父资源URI
 
@@ -782,7 +782,7 @@ class TestVersionVo:
 
     @property
     def parent_path(self):
-        """Gets the parent_path of this TestVersionVo.
+        r"""Gets the parent_path of this TestVersionVo.
 
         父资源路径
 
@@ -793,7 +793,7 @@ class TestVersionVo:
 
     @parent_path.setter
     def parent_path(self, parent_path):
-        """Sets the parent_path of this TestVersionVo.
+        r"""Sets the parent_path of this TestVersionVo.
 
         父资源路径
 
@@ -804,7 +804,7 @@ class TestVersionVo:
 
     @property
     def creation_version_uri(self):
-        """Gets the creation_version_uri of this TestVersionVo.
+        r"""Gets the creation_version_uri of this TestVersionVo.
 
         创建版本URI
 
@@ -815,7 +815,7 @@ class TestVersionVo:
 
     @creation_version_uri.setter
     def creation_version_uri(self, creation_version_uri):
-        """Sets the creation_version_uri of this TestVersionVo.
+        r"""Sets the creation_version_uri of this TestVersionVo.
 
         创建版本URI
 
@@ -826,7 +826,7 @@ class TestVersionVo:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this TestVersionVo.
+        r"""Gets the creation_date of this TestVersionVo.
 
         创建时间
 
@@ -837,7 +837,7 @@ class TestVersionVo:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this TestVersionVo.
+        r"""Sets the creation_date of this TestVersionVo.
 
         创建时间
 
@@ -848,7 +848,7 @@ class TestVersionVo:
 
     @property
     def creation_date_timestamp(self):
-        """Gets the creation_date_timestamp of this TestVersionVo.
+        r"""Gets the creation_date_timestamp of this TestVersionVo.
 
         创建时间时间戳
 
@@ -859,7 +859,7 @@ class TestVersionVo:
 
     @creation_date_timestamp.setter
     def creation_date_timestamp(self, creation_date_timestamp):
-        """Sets the creation_date_timestamp of this TestVersionVo.
+        r"""Sets the creation_date_timestamp of this TestVersionVo.
 
         创建时间时间戳
 
@@ -870,7 +870,7 @@ class TestVersionVo:
 
     @property
     def author_name(self):
-        """Gets the author_name of this TestVersionVo.
+        r"""Gets the author_name of this TestVersionVo.
 
         创建人名称
 
@@ -881,7 +881,7 @@ class TestVersionVo:
 
     @author_name.setter
     def author_name(self, author_name):
-        """Sets the author_name of this TestVersionVo.
+        r"""Sets the author_name of this TestVersionVo.
 
         创建人名称
 
@@ -892,7 +892,7 @@ class TestVersionVo:
 
     @property
     def comment(self):
-        """Gets the comment of this TestVersionVo.
+        r"""Gets the comment of this TestVersionVo.
 
         备注
 
@@ -903,7 +903,7 @@ class TestVersionVo:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this TestVersionVo.
+        r"""Sets the comment of this TestVersionVo.
 
         备注
 
@@ -914,7 +914,7 @@ class TestVersionVo:
 
     @property
     def number(self):
-        """Gets the number of this TestVersionVo.
+        r"""Gets the number of this TestVersionVo.
 
         编号
 
@@ -925,7 +925,7 @@ class TestVersionVo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this TestVersionVo.
+        r"""Sets the number of this TestVersionVo.
 
         编号
 
@@ -936,7 +936,7 @@ class TestVersionVo:
 
     @property
     def is_master(self):
-        """Gets the is_master of this TestVersionVo.
+        r"""Gets the is_master of this TestVersionVo.
 
         是否为Master分支
 
@@ -947,7 +947,7 @@ class TestVersionVo:
 
     @is_master.setter
     def is_master(self, is_master):
-        """Sets the is_master of this TestVersionVo.
+        r"""Sets the is_master of this TestVersionVo.
 
         是否为Master分支
 
@@ -958,7 +958,7 @@ class TestVersionVo:
 
     @property
     def is_iterator(self):
-        """Gets the is_iterator of this TestVersionVo.
+        r"""Gets the is_iterator of this TestVersionVo.
 
         是否为迭代
 
@@ -969,7 +969,7 @@ class TestVersionVo:
 
     @is_iterator.setter
     def is_iterator(self, is_iterator):
-        """Sets the is_iterator of this TestVersionVo.
+        r"""Sets the is_iterator of this TestVersionVo.
 
         是否为迭代
 
@@ -980,7 +980,7 @@ class TestVersionVo:
 
     @property
     def plan_start_date(self):
-        """Gets the plan_start_date of this TestVersionVo.
+        r"""Gets the plan_start_date of this TestVersionVo.
 
         开始时间
 
@@ -991,7 +991,7 @@ class TestVersionVo:
 
     @plan_start_date.setter
     def plan_start_date(self, plan_start_date):
-        """Sets the plan_start_date of this TestVersionVo.
+        r"""Sets the plan_start_date of this TestVersionVo.
 
         开始时间
 
@@ -1002,7 +1002,7 @@ class TestVersionVo:
 
     @property
     def plan_end_date(self):
-        """Gets the plan_end_date of this TestVersionVo.
+        r"""Gets the plan_end_date of this TestVersionVo.
 
         结束时间
 
@@ -1013,7 +1013,7 @@ class TestVersionVo:
 
     @plan_end_date.setter
     def plan_end_date(self, plan_end_date):
-        """Sets the plan_end_date of this TestVersionVo.
+        r"""Sets the plan_end_date of this TestVersionVo.
 
         结束时间
 
@@ -1024,7 +1024,7 @@ class TestVersionVo:
 
     @property
     def service_id(self):
-        """Gets the service_id of this TestVersionVo.
+        r"""Gets the service_id of this TestVersionVo.
 
         微服务ID
 
@@ -1035,7 +1035,7 @@ class TestVersionVo:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this TestVersionVo.
+        r"""Sets the service_id of this TestVersionVo.
 
         微服务ID
 
@@ -1046,7 +1046,7 @@ class TestVersionVo:
 
     @property
     def service_name(self):
-        """Gets the service_name of this TestVersionVo.
+        r"""Gets the service_name of this TestVersionVo.
 
         微服务名
 
@@ -1057,7 +1057,7 @@ class TestVersionVo:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this TestVersionVo.
+        r"""Sets the service_name of this TestVersionVo.
 
         微服务名
 
@@ -1068,7 +1068,7 @@ class TestVersionVo:
 
     @property
     def pbi_id(self):
-        """Gets the pbi_id of this TestVersionVo.
+        r"""Gets the pbi_id of this TestVersionVo.
 
         PBI ID
 
@@ -1079,7 +1079,7 @@ class TestVersionVo:
 
     @pbi_id.setter
     def pbi_id(self, pbi_id):
-        """Sets the pbi_id of this TestVersionVo.
+        r"""Sets the pbi_id of this TestVersionVo.
 
         PBI ID
 
@@ -1090,7 +1090,7 @@ class TestVersionVo:
 
     @property
     def pbi_name(self):
-        """Gets the pbi_name of this TestVersionVo.
+        r"""Gets the pbi_name of this TestVersionVo.
 
         PBI信息
 
@@ -1101,7 +1101,7 @@ class TestVersionVo:
 
     @pbi_name.setter
     def pbi_name(self, pbi_name):
-        """Sets the pbi_name of this TestVersionVo.
+        r"""Sets the pbi_name of this TestVersionVo.
 
         PBI信息
 
@@ -1112,7 +1112,7 @@ class TestVersionVo:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this TestVersionVo.
+        r"""Gets the plan_id of this TestVersionVo.
 
         计划ID
 
@@ -1123,7 +1123,7 @@ class TestVersionVo:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this TestVersionVo.
+        r"""Sets the plan_id of this TestVersionVo.
 
         计划ID
 
@@ -1134,7 +1134,7 @@ class TestVersionVo:
 
     @property
     def metric_pbi_ids(self):
-        """Gets the metric_pbi_ids of this TestVersionVo.
+        r"""Gets the metric_pbi_ids of this TestVersionVo.
 
         度量PBI ID
 
@@ -1145,7 +1145,7 @@ class TestVersionVo:
 
     @metric_pbi_ids.setter
     def metric_pbi_ids(self, metric_pbi_ids):
-        """Sets the metric_pbi_ids of this TestVersionVo.
+        r"""Sets the metric_pbi_ids of this TestVersionVo.
 
         度量PBI ID
 
@@ -1156,7 +1156,7 @@ class TestVersionVo:
 
     @property
     def metric_pbi_id_names(self):
-        """Gets the metric_pbi_id_names of this TestVersionVo.
+        r"""Gets the metric_pbi_id_names of this TestVersionVo.
 
         度量PBI名称
 
@@ -1167,7 +1167,7 @@ class TestVersionVo:
 
     @metric_pbi_id_names.setter
     def metric_pbi_id_names(self, metric_pbi_id_names):
-        """Sets the metric_pbi_id_names of this TestVersionVo.
+        r"""Sets the metric_pbi_id_names of this TestVersionVo.
 
         度量PBI名称
 
@@ -1178,7 +1178,7 @@ class TestVersionVo:
 
     @property
     def last_syn_date(self):
-        """Gets the last_syn_date of this TestVersionVo.
+        r"""Gets the last_syn_date of this TestVersionVo.
 
         最后同步时间
 
@@ -1189,7 +1189,7 @@ class TestVersionVo:
 
     @last_syn_date.setter
     def last_syn_date(self, last_syn_date):
-        """Sets the last_syn_date of this TestVersionVo.
+        r"""Sets the last_syn_date of this TestVersionVo.
 
         最后同步时间
 
@@ -1200,7 +1200,7 @@ class TestVersionVo:
 
     @property
     def is_closed(self):
-        """Gets the is_closed of this TestVersionVo.
+        r"""Gets the is_closed of this TestVersionVo.
 
         版本是否关闭
 
@@ -1211,7 +1211,7 @@ class TestVersionVo:
 
     @is_closed.setter
     def is_closed(self, is_closed):
-        """Sets the is_closed of this TestVersionVo.
+        r"""Sets the is_closed of this TestVersionVo.
 
         版本是否关闭
 
@@ -1222,7 +1222,7 @@ class TestVersionVo:
 
     @property
     def asyn_git(self):
-        """Gets the asyn_git of this TestVersionVo.
+        r"""Gets the asyn_git of this TestVersionVo.
 
         是否同步git库
 
@@ -1233,7 +1233,7 @@ class TestVersionVo:
 
     @asyn_git.setter
     def asyn_git(self, asyn_git):
-        """Sets the asyn_git of this TestVersionVo.
+        r"""Sets the asyn_git of this TestVersionVo.
 
         是否同步git库
 
@@ -1244,7 +1244,7 @@ class TestVersionVo:
 
     @property
     def schema_no(self):
-        """Gets the schema_no of this TestVersionVo.
+        r"""Gets the schema_no of this TestVersionVo.
 
         schema编号
 
@@ -1255,7 +1255,7 @@ class TestVersionVo:
 
     @schema_no.setter
     def schema_no(self, schema_no):
-        """Sets the schema_no of this TestVersionVo.
+        r"""Sets the schema_no of this TestVersionVo.
 
         schema编号
 
@@ -1266,7 +1266,7 @@ class TestVersionVo:
 
     @property
     def finish_date(self):
-        """Gets the finish_date of this TestVersionVo.
+        r"""Gets the finish_date of this TestVersionVo.
 
         迭代实际完成时间
 
@@ -1277,7 +1277,7 @@ class TestVersionVo:
 
     @finish_date.setter
     def finish_date(self, finish_date):
-        """Sets the finish_date of this TestVersionVo.
+        r"""Sets the finish_date of this TestVersionVo.
 
         迭代实际完成时间
 
@@ -1288,7 +1288,7 @@ class TestVersionVo:
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this TestVersionVo.
+        r"""Gets the owner_name of this TestVersionVo.
 
         处理者名称
 
@@ -1299,7 +1299,7 @@ class TestVersionVo:
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this TestVersionVo.
+        r"""Sets the owner_name of this TestVersionVo.
 
         处理者名称
 
@@ -1310,7 +1310,7 @@ class TestVersionVo:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this TestVersionVo.
+        r"""Gets the creator_name of this TestVersionVo.
 
         创建人名称
 
@@ -1321,7 +1321,7 @@ class TestVersionVo:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this TestVersionVo.
+        r"""Sets the creator_name of this TestVersionVo.
 
         创建人名称
 
@@ -1332,7 +1332,7 @@ class TestVersionVo:
 
     @property
     def current_stage(self):
-        """Gets the current_stage of this TestVersionVo.
+        r"""Gets the current_stage of this TestVersionVo.
 
         当前所处阶段
 
@@ -1343,7 +1343,7 @@ class TestVersionVo:
 
     @current_stage.setter
     def current_stage(self, current_stage):
-        """Sets the current_stage of this TestVersionVo.
+        r"""Sets the current_stage of this TestVersionVo.
 
         当前所处阶段
 
@@ -1354,7 +1354,7 @@ class TestVersionVo:
 
     @property
     def service_types(self):
-        """Gets the service_types of this TestVersionVo.
+        r"""Gets the service_types of this TestVersionVo.
 
         服务类型
 
@@ -1365,7 +1365,7 @@ class TestVersionVo:
 
     @service_types.setter
     def service_types(self, service_types):
-        """Sets the service_types of this TestVersionVo.
+        r"""Sets the service_types of this TestVersionVo.
 
         服务类型
 
@@ -1376,7 +1376,7 @@ class TestVersionVo:
 
     @property
     def risk_rating(self):
-        """Gets the risk_rating of this TestVersionVo.
+        r"""Gets the risk_rating of this TestVersionVo.
 
         风险等级
 
@@ -1387,7 +1387,7 @@ class TestVersionVo:
 
     @risk_rating.setter
     def risk_rating(self, risk_rating):
-        """Sets the risk_rating of this TestVersionVo.
+        r"""Sets the risk_rating of this TestVersionVo.
 
         风险等级
 
@@ -1398,7 +1398,7 @@ class TestVersionVo:
 
     @property
     def risk_des(self):
-        """Gets the risk_des of this TestVersionVo.
+        r"""Gets the risk_des of this TestVersionVo.
 
         风险描述
 
@@ -1409,7 +1409,7 @@ class TestVersionVo:
 
     @risk_des.setter
     def risk_des(self, risk_des):
-        """Sets the risk_des of this TestVersionVo.
+        r"""Sets the risk_des of this TestVersionVo.
 
         风险描述
 
@@ -1420,7 +1420,7 @@ class TestVersionVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this TestVersionVo.
+        r"""Gets the project_uuid of this TestVersionVo.
 
         项目ID
 
@@ -1431,7 +1431,7 @@ class TestVersionVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this TestVersionVo.
+        r"""Sets the project_uuid of this TestVersionVo.
 
         项目ID
 
@@ -1442,7 +1442,7 @@ class TestVersionVo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this TestVersionVo.
+        r"""Gets the domain_id of this TestVersionVo.
 
         租户ID
 
@@ -1453,7 +1453,7 @@ class TestVersionVo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this TestVersionVo.
+        r"""Sets the domain_id of this TestVersionVo.
 
         租户ID
 
@@ -1464,7 +1464,7 @@ class TestVersionVo:
 
     @property
     def pi_id(self):
-        """Gets the pi_id of this TestVersionVo.
+        r"""Gets the pi_id of this TestVersionVo.
 
         pi的id
 
@@ -1475,7 +1475,7 @@ class TestVersionVo:
 
     @pi_id.setter
     def pi_id(self, pi_id):
-        """Sets the pi_id of this TestVersionVo.
+        r"""Sets the pi_id of this TestVersionVo.
 
         pi的id
 

@@ -29,7 +29,7 @@ class ListNaAuthorizedNodesRequest:
     }
 
     def __init__(self, na_id=None, offset=None, limit=None):
-        """ListNaAuthorizedNodesRequest
+        r"""ListNaAuthorizedNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListNaAuthorizedNodesRequest:
 
     @property
     def na_id(self):
-        """Gets the na_id of this ListNaAuthorizedNodesRequest.
+        r"""Gets the na_id of this ListNaAuthorizedNodesRequest.
 
         北向数据接收端点ID
 
@@ -67,7 +67,7 @@ class ListNaAuthorizedNodesRequest:
 
     @na_id.setter
     def na_id(self, na_id):
-        """Sets the na_id of this ListNaAuthorizedNodesRequest.
+        r"""Sets the na_id of this ListNaAuthorizedNodesRequest.
 
         北向数据接收端点ID
 
@@ -78,7 +78,7 @@ class ListNaAuthorizedNodesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNaAuthorizedNodesRequest.
+        r"""Gets the offset of this ListNaAuthorizedNodesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -89,7 +89,7 @@ class ListNaAuthorizedNodesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNaAuthorizedNodesRequest.
+        r"""Sets the offset of this ListNaAuthorizedNodesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -100,7 +100,7 @@ class ListNaAuthorizedNodesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNaAuthorizedNodesRequest.
+        r"""Gets the limit of this ListNaAuthorizedNodesRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 
@@ -111,7 +111,7 @@ class ListNaAuthorizedNodesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNaAuthorizedNodesRequest.
+        r"""Sets the limit of this ListNaAuthorizedNodesRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 

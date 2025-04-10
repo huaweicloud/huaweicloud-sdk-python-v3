@@ -27,7 +27,7 @@ class ExtensionScaleGroupMetadata:
     }
 
     def __init__(self, uid=None, name=None):
-        """ExtensionScaleGroupMetadata
+        r"""ExtensionScaleGroupMetadata
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExtensionScaleGroupMetadata:
 
     @property
     def uid(self):
-        """Gets the uid of this ExtensionScaleGroupMetadata.
+        r"""Gets the uid of this ExtensionScaleGroupMetadata.
 
         扩展伸缩组的uuid，由系统自动生成
 
@@ -61,7 +61,7 @@ class ExtensionScaleGroupMetadata:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this ExtensionScaleGroupMetadata.
+        r"""Sets the uid of this ExtensionScaleGroupMetadata.
 
         扩展伸缩组的uuid，由系统自动生成
 
@@ -72,7 +72,7 @@ class ExtensionScaleGroupMetadata:
 
     @property
     def name(self):
-        """Gets the name of this ExtensionScaleGroupMetadata.
+        r"""Gets the name of this ExtensionScaleGroupMetadata.
 
         扩展伸缩组的名称，不能为 **default**，长度不能超过55个字符，只能包含数字和小写字母以及**-** 
 
@@ -83,7 +83,7 @@ class ExtensionScaleGroupMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExtensionScaleGroupMetadata.
+        r"""Sets the name of this ExtensionScaleGroupMetadata.
 
         扩展伸缩组的名称，不能为 **default**，长度不能超过55个字符，只能包含数字和小写字母以及**-** 
 

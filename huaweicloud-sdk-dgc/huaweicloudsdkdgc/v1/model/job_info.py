@@ -55,7 +55,7 @@ class JobInfo:
     }
 
     def __init__(self, name=None, nodes=None, schedule=None, params=None, directory=None, clean_overdue_days=None, clean_waiting_job=None, empty_running_job=None, process_type=None, single_node_job_flag=None, single_node_job_type=None, last_update_user=None, log_path=None, basic_config=None, target_status=None, approvers=None):
-        """JobInfo
+        r"""JobInfo
 
         The model defined in huaweicloud sdk
 
@@ -144,7 +144,7 @@ class JobInfo:
 
     @property
     def name(self):
-        """Gets the name of this JobInfo.
+        r"""Gets the name of this JobInfo.
 
         作业名称
 
@@ -155,7 +155,7 @@ class JobInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobInfo.
+        r"""Sets the name of this JobInfo.
 
         作业名称
 
@@ -166,7 +166,7 @@ class JobInfo:
 
     @property
     def nodes(self):
-        """Gets the nodes of this JobInfo.
+        r"""Gets the nodes of this JobInfo.
 
         节点定义
 
@@ -177,7 +177,7 @@ class JobInfo:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this JobInfo.
+        r"""Sets the nodes of this JobInfo.
 
         节点定义
 
@@ -188,7 +188,7 @@ class JobInfo:
 
     @property
     def schedule(self):
-        """Gets the schedule of this JobInfo.
+        r"""Gets the schedule of this JobInfo.
 
         :return: The schedule of this JobInfo.
         :rtype: :class:`huaweicloudsdkdgc.v1.Schedule`
@@ -197,7 +197,7 @@ class JobInfo:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this JobInfo.
+        r"""Sets the schedule of this JobInfo.
 
         :param schedule: The schedule of this JobInfo.
         :type schedule: :class:`huaweicloudsdkdgc.v1.Schedule`
@@ -206,7 +206,7 @@ class JobInfo:
 
     @property
     def params(self):
-        """Gets the params of this JobInfo.
+        r"""Gets the params of this JobInfo.
 
         作业参数定义
 
@@ -217,7 +217,7 @@ class JobInfo:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this JobInfo.
+        r"""Sets the params of this JobInfo.
 
         作业参数定义
 
@@ -228,7 +228,7 @@ class JobInfo:
 
     @property
     def directory(self):
-        """Gets the directory of this JobInfo.
+        r"""Gets the directory of this JobInfo.
 
         作业在目录树上的路径。创建作业时如果路径目录不存在，会自动创建目录，如/dir/a/，默认在根目录/。
 
@@ -239,7 +239,7 @@ class JobInfo:
 
     @directory.setter
     def directory(self, directory):
-        """Sets the directory of this JobInfo.
+        r"""Sets the directory of this JobInfo.
 
         作业在目录树上的路径。创建作业时如果路径目录不存在，会自动创建目录，如/dir/a/，默认在根目录/。
 
@@ -250,7 +250,7 @@ class JobInfo:
 
     @property
     def clean_overdue_days(self):
-        """Gets the clean_overdue_days of this JobInfo.
+        r"""Gets the clean_overdue_days of this JobInfo.
 
         设置作业的最大超时时间。
 
@@ -261,7 +261,7 @@ class JobInfo:
 
     @clean_overdue_days.setter
     def clean_overdue_days(self, clean_overdue_days):
-        """Sets the clean_overdue_days of this JobInfo.
+        r"""Sets the clean_overdue_days of this JobInfo.
 
         设置作业的最大超时时间。
 
@@ -272,7 +272,7 @@ class JobInfo:
 
     @property
     def clean_waiting_job(self):
-        """Gets the clean_waiting_job of this JobInfo.
+        r"""Gets the clean_waiting_job of this JobInfo.
 
         清除等待的作业。
 
@@ -283,7 +283,7 @@ class JobInfo:
 
     @clean_waiting_job.setter
     def clean_waiting_job(self, clean_waiting_job):
-        """Sets the clean_waiting_job of this JobInfo.
+        r"""Sets the clean_waiting_job of this JobInfo.
 
         清除等待的作业。
 
@@ -294,7 +294,7 @@ class JobInfo:
 
     @property
     def empty_running_job(self):
-        """Gets the empty_running_job of this JobInfo.
+        r"""Gets the empty_running_job of this JobInfo.
 
         取值为0和1，1表示空跑，0表示：取消空跑，不设置该参数时，默认为0。
 
@@ -305,7 +305,7 @@ class JobInfo:
 
     @empty_running_job.setter
     def empty_running_job(self, empty_running_job):
-        """Sets the empty_running_job of this JobInfo.
+        r"""Sets the empty_running_job of this JobInfo.
 
         取值为0和1，1表示空跑，0表示：取消空跑，不设置该参数时，默认为0。
 
@@ -316,7 +316,7 @@ class JobInfo:
 
     @property
     def process_type(self):
-        """Gets the process_type of this JobInfo.
+        r"""Gets the process_type of this JobInfo.
 
         作业类型，REAL_TIME： 实时处理，BATCH：批处理
 
@@ -327,7 +327,7 @@ class JobInfo:
 
     @process_type.setter
     def process_type(self, process_type):
-        """Sets the process_type of this JobInfo.
+        r"""Sets the process_type of this JobInfo.
 
         作业类型，REAL_TIME： 实时处理，BATCH：批处理
 
@@ -338,7 +338,7 @@ class JobInfo:
 
     @property
     def single_node_job_flag(self):
-        """Gets the single_node_job_flag of this JobInfo.
+        r"""Gets the single_node_job_flag of this JobInfo.
 
         是否选择单任务，默认为false
 
@@ -349,7 +349,7 @@ class JobInfo:
 
     @single_node_job_flag.setter
     def single_node_job_flag(self, single_node_job_flag):
-        """Sets the single_node_job_flag of this JobInfo.
+        r"""Sets the single_node_job_flag of this JobInfo.
 
         是否选择单任务，默认为false
 
@@ -360,7 +360,7 @@ class JobInfo:
 
     @property
     def single_node_job_type(self):
-        """Gets the single_node_job_type of this JobInfo.
+        r"""Gets the single_node_job_type of this JobInfo.
 
         单任务类型
 
@@ -371,7 +371,7 @@ class JobInfo:
 
     @single_node_job_type.setter
     def single_node_job_type(self, single_node_job_type):
-        """Sets the single_node_job_type of this JobInfo.
+        r"""Sets the single_node_job_type of this JobInfo.
 
         单任务类型
 
@@ -382,7 +382,7 @@ class JobInfo:
 
     @property
     def last_update_user(self):
-        """Gets the last_update_user of this JobInfo.
+        r"""Gets the last_update_user of this JobInfo.
 
         作业最后修改人
 
@@ -393,7 +393,7 @@ class JobInfo:
 
     @last_update_user.setter
     def last_update_user(self, last_update_user):
-        """Sets the last_update_user of this JobInfo.
+        r"""Sets the last_update_user of this JobInfo.
 
         作业最后修改人
 
@@ -404,7 +404,7 @@ class JobInfo:
 
     @property
     def log_path(self):
-        """Gets the log_path of this JobInfo.
+        r"""Gets the log_path of this JobInfo.
 
         作业运行日志存放的OBS路径。
 
@@ -415,7 +415,7 @@ class JobInfo:
 
     @log_path.setter
     def log_path(self, log_path):
-        """Sets the log_path of this JobInfo.
+        r"""Sets the log_path of this JobInfo.
 
         作业运行日志存放的OBS路径。
 
@@ -426,7 +426,7 @@ class JobInfo:
 
     @property
     def basic_config(self):
-        """Gets the basic_config of this JobInfo.
+        r"""Gets the basic_config of this JobInfo.
 
         :return: The basic_config of this JobInfo.
         :rtype: :class:`huaweicloudsdkdgc.v1.BasicConfig`
@@ -435,7 +435,7 @@ class JobInfo:
 
     @basic_config.setter
     def basic_config(self, basic_config):
-        """Sets the basic_config of this JobInfo.
+        r"""Sets the basic_config of this JobInfo.
 
         :param basic_config: The basic_config of this JobInfo.
         :type basic_config: :class:`huaweicloudsdkdgc.v1.BasicConfig`
@@ -444,7 +444,7 @@ class JobInfo:
 
     @property
     def target_status(self):
-        """Gets the target_status of this JobInfo.
+        r"""Gets the target_status of this JobInfo.
 
         在开启审批开关后，需要填写该字段。表示创建作业的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示作业创建后是保存态，提交态，生产态。
 
@@ -455,7 +455,7 @@ class JobInfo:
 
     @target_status.setter
     def target_status(self, target_status):
-        """Sets the target_status of this JobInfo.
+        r"""Sets the target_status of this JobInfo.
 
         在开启审批开关后，需要填写该字段。表示创建作业的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示作业创建后是保存态，提交态，生产态。
 
@@ -466,7 +466,7 @@ class JobInfo:
 
     @property
     def approvers(self):
-        """Gets the approvers of this JobInfo.
+        r"""Gets the approvers of this JobInfo.
 
         在开启审批开关后，需要填写该字段，表示作业（或脚本）审批人。
 
@@ -477,7 +477,7 @@ class JobInfo:
 
     @approvers.setter
     def approvers(self, approvers):
-        """Sets the approvers of this JobInfo.
+        r"""Sets the approvers of this JobInfo.
 
         在开启审批开关后，需要填写该字段，表示作业（或脚本）审批人。
 

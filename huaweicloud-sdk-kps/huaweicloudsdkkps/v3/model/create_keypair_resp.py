@@ -35,7 +35,7 @@ class CreateKeypairResp:
     }
 
     def __init__(self, name=None, type=None, public_key=None, private_key=None, fingerprint=None, user_id=None):
-        """CreateKeypairResp
+        r"""CreateKeypairResp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateKeypairResp:
 
     @property
     def name(self):
-        """Gets the name of this CreateKeypairResp.
+        r"""Gets the name of this CreateKeypairResp.
 
         SSH密钥对的名称
 
@@ -89,7 +89,7 @@ class CreateKeypairResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateKeypairResp.
+        r"""Sets the name of this CreateKeypairResp.
 
         SSH密钥对的名称
 
@@ -100,7 +100,7 @@ class CreateKeypairResp:
 
     @property
     def type(self):
-        """Gets the type of this CreateKeypairResp.
+        r"""Gets the type of this CreateKeypairResp.
 
         SSH密钥对的类型。ssh或x509。
 
@@ -111,7 +111,7 @@ class CreateKeypairResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateKeypairResp.
+        r"""Sets the type of this CreateKeypairResp.
 
         SSH密钥对的类型。ssh或x509。
 
@@ -122,7 +122,7 @@ class CreateKeypairResp:
 
     @property
     def public_key(self):
-        """Gets the public_key of this CreateKeypairResp.
+        r"""Gets the public_key of this CreateKeypairResp.
 
         SSH密钥对对应的publicKey信息
 
@@ -133,7 +133,7 @@ class CreateKeypairResp:
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this CreateKeypairResp.
+        r"""Sets the public_key of this CreateKeypairResp.
 
         SSH密钥对对应的publicKey信息
 
@@ -144,7 +144,7 @@ class CreateKeypairResp:
 
     @property
     def private_key(self):
-        """Gets the private_key of this CreateKeypairResp.
+        r"""Gets the private_key of this CreateKeypairResp.
 
         SSH密钥对对应的privateKey信息 - 创建SSH密钥对时，响应中包括private_key的信息。 - 导入SSH密钥对时，响应中不包括private_key的信息。
 
@@ -155,7 +155,7 @@ class CreateKeypairResp:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this CreateKeypairResp.
+        r"""Sets the private_key of this CreateKeypairResp.
 
         SSH密钥对对应的privateKey信息 - 创建SSH密钥对时，响应中包括private_key的信息。 - 导入SSH密钥对时，响应中不包括private_key的信息。
 
@@ -166,7 +166,7 @@ class CreateKeypairResp:
 
     @property
     def fingerprint(self):
-        """Gets the fingerprint of this CreateKeypairResp.
+        r"""Gets the fingerprint of this CreateKeypairResp.
 
         SSH密钥对应指纹信息
 
@@ -177,7 +177,7 @@ class CreateKeypairResp:
 
     @fingerprint.setter
     def fingerprint(self, fingerprint):
-        """Sets the fingerprint of this CreateKeypairResp.
+        r"""Sets the fingerprint of this CreateKeypairResp.
 
         SSH密钥对应指纹信息
 
@@ -188,7 +188,7 @@ class CreateKeypairResp:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateKeypairResp.
+        r"""Gets the user_id of this CreateKeypairResp.
 
         SSH密钥对所属的用户信息
 
@@ -199,7 +199,7 @@ class CreateKeypairResp:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateKeypairResp.
+        r"""Sets the user_id of this CreateKeypairResp.
 
         SSH密钥对所属的用户信息
 

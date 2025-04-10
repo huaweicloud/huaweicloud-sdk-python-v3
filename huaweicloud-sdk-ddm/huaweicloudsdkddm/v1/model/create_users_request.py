@@ -27,7 +27,7 @@ class CreateUsersRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateUsersRequest
+        r"""CreateUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateUsersRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateUsersRequest.
+        r"""Gets the instance_id of this CreateUsersRequest.
 
         DDM实例ID。
 
@@ -60,7 +60,7 @@ class CreateUsersRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateUsersRequest.
+        r"""Sets the instance_id of this CreateUsersRequest.
 
         DDM实例ID。
 
@@ -71,7 +71,7 @@ class CreateUsersRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateUsersRequest.
+        r"""Gets the body of this CreateUsersRequest.
 
         :return: The body of this CreateUsersRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.CreateUsersReq`
@@ -80,7 +80,7 @@ class CreateUsersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateUsersRequest.
+        r"""Sets the body of this CreateUsersRequest.
 
         :param body: The body of this CreateUsersRequest.
         :type body: :class:`huaweicloudsdkddm.v1.CreateUsersReq`

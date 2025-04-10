@@ -26,7 +26,7 @@ class SwitchAgentResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """SwitchAgentResponse
+        r"""SwitchAgentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchAgentResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this SwitchAgentResponse.
+        r"""Gets the result of this SwitchAgentResponse.
 
         响应状态
 
@@ -55,7 +55,7 @@ class SwitchAgentResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this SwitchAgentResponse.
+        r"""Sets the result of this SwitchAgentResponse.
 
         响应状态
 

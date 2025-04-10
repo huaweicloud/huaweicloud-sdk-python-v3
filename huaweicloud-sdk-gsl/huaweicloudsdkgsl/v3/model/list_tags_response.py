@@ -32,7 +32,7 @@ class ListTagsResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, tags=None):
-        """ListTagsResponse
+        r"""ListTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListTagsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListTagsResponse.
+        r"""Gets the limit of this ListTagsResponse.
 
         每页记录数
 
@@ -76,7 +76,7 @@ class ListTagsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTagsResponse.
+        r"""Sets the limit of this ListTagsResponse.
 
         每页记录数
 
@@ -87,7 +87,7 @@ class ListTagsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListTagsResponse.
+        r"""Gets the offset of this ListTagsResponse.
 
         页码
 
@@ -98,7 +98,7 @@ class ListTagsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTagsResponse.
+        r"""Sets the offset of this ListTagsResponse.
 
         页码
 
@@ -109,7 +109,7 @@ class ListTagsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListTagsResponse.
+        r"""Gets the count of this ListTagsResponse.
 
         记录总数
 
@@ -120,7 +120,7 @@ class ListTagsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListTagsResponse.
+        r"""Sets the count of this ListTagsResponse.
 
         记录总数
 
@@ -131,7 +131,7 @@ class ListTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListTagsResponse.
+        r"""Gets the tags of this ListTagsResponse.
 
         标签记录
 
@@ -142,7 +142,7 @@ class ListTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListTagsResponse.
+        r"""Sets the tags of this ListTagsResponse.
 
         标签记录
 

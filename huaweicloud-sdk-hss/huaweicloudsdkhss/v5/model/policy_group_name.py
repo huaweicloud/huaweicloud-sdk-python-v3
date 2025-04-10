@@ -23,7 +23,7 @@ class PolicyGroupName:
     }
 
     def __init__(self):
-        """PolicyGroupName
+        r"""PolicyGroupName
 
         The model defined in huaweicloud sdk
 

@@ -28,7 +28,7 @@ class CreateCentralNetworkErRouteTableAttachmentResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, central_network_er_route_table_attachment=None):
-        """CreateCentralNetworkErRouteTableAttachmentResponse
+        r"""CreateCentralNetworkErRouteTableAttachmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCentralNetworkErRouteTableAttachmentResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateCentralNetworkErRouteTableAttachmentResponse.
+        r"""Gets the request_id of this CreateCentralNetworkErRouteTableAttachmentResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class CreateCentralNetworkErRouteTableAttachmentResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateCentralNetworkErRouteTableAttachmentResponse.
+        r"""Sets the request_id of this CreateCentralNetworkErRouteTableAttachmentResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class CreateCentralNetworkErRouteTableAttachmentResponse(SdkResponse):
 
     @property
     def central_network_er_route_table_attachment(self):
-        """Gets the central_network_er_route_table_attachment of this CreateCentralNetworkErRouteTableAttachmentResponse.
+        r"""Gets the central_network_er_route_table_attachment of this CreateCentralNetworkErRouteTableAttachmentResponse.
 
         :return: The central_network_er_route_table_attachment of this CreateCentralNetworkErRouteTableAttachmentResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkErRouteTableAttachment`
@@ -80,7 +80,7 @@ class CreateCentralNetworkErRouteTableAttachmentResponse(SdkResponse):
 
     @central_network_er_route_table_attachment.setter
     def central_network_er_route_table_attachment(self, central_network_er_route_table_attachment):
-        """Sets the central_network_er_route_table_attachment of this CreateCentralNetworkErRouteTableAttachmentResponse.
+        r"""Sets the central_network_er_route_table_attachment of this CreateCentralNetworkErRouteTableAttachmentResponse.
 
         :param central_network_er_route_table_attachment: The central_network_er_route_table_attachment of this CreateCentralNetworkErRouteTableAttachmentResponse.
         :type central_network_er_route_table_attachment: :class:`huaweicloudsdkcc.v3.CentralNetworkErRouteTableAttachment`

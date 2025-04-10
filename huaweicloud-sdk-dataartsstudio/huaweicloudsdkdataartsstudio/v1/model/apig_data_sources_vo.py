@@ -29,7 +29,7 @@ class ApigDataSourcesVo:
     }
 
     def __init__(self, mode=None, visible=None, data_source_vos=None):
-        """ApigDataSourcesVo
+        r"""ApigDataSourcesVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ApigDataSourcesVo:
 
     @property
     def mode(self):
-        """Gets the mode of this ApigDataSourcesVo.
+        r"""Gets the mode of this ApigDataSourcesVo.
 
         企业模式空间下的数据连接还是简单模式空间下的连接,0:简单模式，1：企业模式
 
@@ -68,7 +68,7 @@ class ApigDataSourcesVo:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ApigDataSourcesVo.
+        r"""Sets the mode of this ApigDataSourcesVo.
 
         企业模式空间下的数据连接还是简单模式空间下的连接,0:简单模式，1：企业模式
 
@@ -79,7 +79,7 @@ class ApigDataSourcesVo:
 
     @property
     def visible(self):
-        """Gets the visible of this ApigDataSourcesVo.
+        r"""Gets the visible of this ApigDataSourcesVo.
 
         连接是否可见,0：不可见，1：可见
 
@@ -90,7 +90,7 @@ class ApigDataSourcesVo:
 
     @visible.setter
     def visible(self, visible):
-        """Sets the visible of this ApigDataSourcesVo.
+        r"""Sets the visible of this ApigDataSourcesVo.
 
         连接是否可见,0：不可见，1：可见
 
@@ -101,7 +101,7 @@ class ApigDataSourcesVo:
 
     @property
     def data_source_vos(self):
-        """Gets the data_source_vos of this ApigDataSourcesVo.
+        r"""Gets the data_source_vos of this ApigDataSourcesVo.
 
         数据源结构体
 
@@ -112,7 +112,7 @@ class ApigDataSourcesVo:
 
     @data_source_vos.setter
     def data_source_vos(self, data_source_vos):
-        """Sets the data_source_vos of this ApigDataSourcesVo.
+        r"""Sets the data_source_vos of this ApigDataSourcesVo.
 
         数据源结构体
 

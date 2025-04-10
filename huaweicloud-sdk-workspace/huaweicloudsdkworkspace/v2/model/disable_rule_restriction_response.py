@@ -24,7 +24,7 @@ class DisableRuleRestrictionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DisableRuleRestrictionResponse
+        r"""DisableRuleRestrictionResponse
 
         The model defined in huaweicloud sdk
 

@@ -70,7 +70,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, detail=None, user_conf=None, result_path=None, execution_details_path=None, result_format=None, statement=None, is_success=None, message=None, job_mode=None, tags=None):
-        """ShowSqlJobStatusResponse
+        r"""ShowSqlJobStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -198,7 +198,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowSqlJobStatusResponse.
+        r"""Gets the job_id of this ShowSqlJobStatusResponse.
 
         作业ID。
 
@@ -209,7 +209,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowSqlJobStatusResponse.
+        r"""Sets the job_id of this ShowSqlJobStatusResponse.
 
         作业ID。
 
@@ -220,7 +220,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowSqlJobStatusResponse.
+        r"""Gets the job_type of this ShowSqlJobStatusResponse.
 
         作业类型。
 
@@ -231,7 +231,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowSqlJobStatusResponse.
+        r"""Sets the job_type of this ShowSqlJobStatusResponse.
 
         作业类型。
 
@@ -242,7 +242,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ShowSqlJobStatusResponse.
+        r"""Gets the queue_name of this ShowSqlJobStatusResponse.
 
         作业提交的队列。
 
@@ -253,7 +253,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ShowSqlJobStatusResponse.
+        r"""Sets the queue_name of this ShowSqlJobStatusResponse.
 
         作业提交的队列。
 
@@ -264,7 +264,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this ShowSqlJobStatusResponse.
+        r"""Gets the owner of this ShowSqlJobStatusResponse.
 
         提交作业的用户。
 
@@ -275,7 +275,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ShowSqlJobStatusResponse.
+        r"""Sets the owner of this ShowSqlJobStatusResponse.
 
         提交作业的用户。
 
@@ -286,7 +286,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowSqlJobStatusResponse.
+        r"""Gets the start_time of this ShowSqlJobStatusResponse.
 
         作业开始的时间。是单位为“毫秒”的时间戳。
 
@@ -297,7 +297,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowSqlJobStatusResponse.
+        r"""Sets the start_time of this ShowSqlJobStatusResponse.
 
         作业开始的时间。是单位为“毫秒”的时间戳。
 
@@ -308,7 +308,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def duration(self):
-        """Gets the duration of this ShowSqlJobStatusResponse.
+        r"""Gets the duration of this ShowSqlJobStatusResponse.
 
         作业运行时长，单位毫秒。
 
@@ -319,7 +319,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ShowSqlJobStatusResponse.
+        r"""Sets the duration of this ShowSqlJobStatusResponse.
 
         作业运行时长，单位毫秒。
 
@@ -330,7 +330,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowSqlJobStatusResponse.
+        r"""Gets the status of this ShowSqlJobStatusResponse.
 
         此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
 
@@ -341,7 +341,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowSqlJobStatusResponse.
+        r"""Sets the status of this ShowSqlJobStatusResponse.
 
         此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）。
 
@@ -352,7 +352,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def input_row_count(self):
-        """Gets the input_row_count of this ShowSqlJobStatusResponse.
+        r"""Gets the input_row_count of this ShowSqlJobStatusResponse.
 
         Insert作业执行过程中扫描的记录条数。
 
@@ -363,7 +363,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @input_row_count.setter
     def input_row_count(self, input_row_count):
-        """Sets the input_row_count of this ShowSqlJobStatusResponse.
+        r"""Sets the input_row_count of this ShowSqlJobStatusResponse.
 
         Insert作业执行过程中扫描的记录条数。
 
@@ -374,7 +374,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def bad_row_count(self):
-        """Gets the bad_row_count of this ShowSqlJobStatusResponse.
+        r"""Gets the bad_row_count of this ShowSqlJobStatusResponse.
 
         Insert作业执行过程中扫描到的错误记录数。
 
@@ -385,7 +385,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @bad_row_count.setter
     def bad_row_count(self, bad_row_count):
-        """Sets the bad_row_count of this ShowSqlJobStatusResponse.
+        r"""Sets the bad_row_count of this ShowSqlJobStatusResponse.
 
         Insert作业执行过程中扫描到的错误记录数。
 
@@ -396,7 +396,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def input_size(self):
-        """Gets the input_size of this ShowSqlJobStatusResponse.
+        r"""Gets the input_size of this ShowSqlJobStatusResponse.
 
         作业执行过程中扫描文件的大小。
 
@@ -407,7 +407,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @input_size.setter
     def input_size(self, input_size):
-        """Sets the input_size of this ShowSqlJobStatusResponse.
+        r"""Sets the input_size of this ShowSqlJobStatusResponse.
 
         作业执行过程中扫描文件的大小。
 
@@ -418,7 +418,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def result_count(self):
-        """Gets the result_count of this ShowSqlJobStatusResponse.
+        r"""Gets the result_count of this ShowSqlJobStatusResponse.
 
         当前作业返回的结果总条数或insert作业插入的总条数。
 
@@ -429,7 +429,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @result_count.setter
     def result_count(self, result_count):
-        """Sets the result_count of this ShowSqlJobStatusResponse.
+        r"""Sets the result_count of this ShowSqlJobStatusResponse.
 
         当前作业返回的结果总条数或insert作业插入的总条数。
 
@@ -440,7 +440,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def database_name(self):
-        """Gets the database_name of this ShowSqlJobStatusResponse.
+        r"""Gets the database_name of this ShowSqlJobStatusResponse.
 
         记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性。
 
@@ -451,7 +451,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ShowSqlJobStatusResponse.
+        r"""Sets the database_name of this ShowSqlJobStatusResponse.
 
         记录其操作的表所在的数据库名称。类型为Import和Export作业才有“database_name”属性。
 
@@ -462,7 +462,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def table_name(self):
-        """Gets the table_name of this ShowSqlJobStatusResponse.
+        r"""Gets the table_name of this ShowSqlJobStatusResponse.
 
         记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
 
@@ -473,7 +473,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ShowSqlJobStatusResponse.
+        r"""Sets the table_name of this ShowSqlJobStatusResponse.
 
         记录其操作的表名称。类型为Import和Export作业才有“table_name”属性。
 
@@ -484,7 +484,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def detail(self):
-        """Gets the detail of this ShowSqlJobStatusResponse.
+        r"""Gets the detail of this ShowSqlJobStatusResponse.
 
         SQL查询的相关列信息的Json字符串。
 
@@ -495,7 +495,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ShowSqlJobStatusResponse.
+        r"""Sets the detail of this ShowSqlJobStatusResponse.
 
         SQL查询的相关列信息的Json字符串。
 
@@ -506,7 +506,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def user_conf(self):
-        """Gets the user_conf of this ShowSqlJobStatusResponse.
+        r"""Gets the user_conf of this ShowSqlJobStatusResponse.
 
         SQL配置参数信息Json字符串。
 
@@ -517,7 +517,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @user_conf.setter
     def user_conf(self, user_conf):
-        """Sets the user_conf of this ShowSqlJobStatusResponse.
+        r"""Sets the user_conf of this ShowSqlJobStatusResponse.
 
         SQL配置参数信息Json字符串。
 
@@ -528,7 +528,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def result_path(self):
-        """Gets the result_path of this ShowSqlJobStatusResponse.
+        r"""Gets the result_path of this ShowSqlJobStatusResponse.
 
         查询结果OBS路径
 
@@ -539,7 +539,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @result_path.setter
     def result_path(self, result_path):
-        """Sets the result_path of this ShowSqlJobStatusResponse.
+        r"""Sets the result_path of this ShowSqlJobStatusResponse.
 
         查询结果OBS路径
 
@@ -550,7 +550,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def execution_details_path(self):
-        """Gets the execution_details_path of this ShowSqlJobStatusResponse.
+        r"""Gets the execution_details_path of this ShowSqlJobStatusResponse.
 
         查询作业执行计划OBS路径
 
@@ -561,7 +561,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @execution_details_path.setter
     def execution_details_path(self, execution_details_path):
-        """Sets the execution_details_path of this ShowSqlJobStatusResponse.
+        r"""Sets the execution_details_path of this ShowSqlJobStatusResponse.
 
         查询作业执行计划OBS路径
 
@@ -572,7 +572,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def result_format(self):
-        """Gets the result_format of this ShowSqlJobStatusResponse.
+        r"""Gets the result_format of this ShowSqlJobStatusResponse.
 
         查询结果格式
 
@@ -583,7 +583,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @result_format.setter
     def result_format(self, result_format):
-        """Sets the result_format of this ShowSqlJobStatusResponse.
+        r"""Sets the result_format of this ShowSqlJobStatusResponse.
 
         查询结果格式
 
@@ -594,7 +594,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def statement(self):
-        """Gets the statement of this ShowSqlJobStatusResponse.
+        r"""Gets the statement of this ShowSqlJobStatusResponse.
 
         作业执行的SQL语句。
 
@@ -605,7 +605,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @statement.setter
     def statement(self, statement):
-        """Sets the statement of this ShowSqlJobStatusResponse.
+        r"""Sets the statement of this ShowSqlJobStatusResponse.
 
         作业执行的SQL语句。
 
@@ -616,7 +616,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowSqlJobStatusResponse.
+        r"""Gets the is_success of this ShowSqlJobStatusResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -627,7 +627,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowSqlJobStatusResponse.
+        r"""Sets the is_success of this ShowSqlJobStatusResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -638,7 +638,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowSqlJobStatusResponse.
+        r"""Gets the message of this ShowSqlJobStatusResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -649,7 +649,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowSqlJobStatusResponse.
+        r"""Sets the message of this ShowSqlJobStatusResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -660,7 +660,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def job_mode(self):
-        """Gets the job_mode of this ShowSqlJobStatusResponse.
+        r"""Gets the job_mode of this ShowSqlJobStatusResponse.
 
         作业执行方式
 
@@ -671,7 +671,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @job_mode.setter
     def job_mode(self, job_mode):
-        """Sets the job_mode of this ShowSqlJobStatusResponse.
+        r"""Sets the job_mode of this ShowSqlJobStatusResponse.
 
         作业执行方式
 
@@ -682,7 +682,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowSqlJobStatusResponse.
+        r"""Gets the tags of this ShowSqlJobStatusResponse.
 
         作业标签
 
@@ -693,7 +693,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowSqlJobStatusResponse.
+        r"""Sets the tags of this ShowSqlJobStatusResponse.
 
         作业标签
 

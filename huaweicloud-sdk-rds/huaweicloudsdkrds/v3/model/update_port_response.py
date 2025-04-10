@@ -26,7 +26,7 @@ class UpdatePortResponse(SdkResponse):
     }
 
     def __init__(self, workflow_id=None):
-        """UpdatePortResponse
+        r"""UpdatePortResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdatePortResponse(SdkResponse):
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this UpdatePortResponse.
+        r"""Gets the workflow_id of this UpdatePortResponse.
 
         任务ID
 
@@ -55,7 +55,7 @@ class UpdatePortResponse(SdkResponse):
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this UpdatePortResponse.
+        r"""Sets the workflow_id of this UpdatePortResponse.
 
         任务ID
 

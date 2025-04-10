@@ -45,7 +45,7 @@ class Destination:
     }
 
     def __init__(self, destination_id=None, destination_type=None, app_id=None, destination_name=None, topic=None, server=None, token=None, tag=None, mqs_sasl_ssl=None, user_name=None, password=None):
-        """Destination
+        r"""Destination
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class Destination:
 
     @property
     def destination_id(self):
-        """Gets the destination_id of this Destination.
+        r"""Gets the destination_id of this Destination.
 
         目标数据源ID
 
@@ -124,7 +124,7 @@ class Destination:
 
     @destination_id.setter
     def destination_id(self, destination_id):
-        """Sets the destination_id of this Destination.
+        r"""Sets the destination_id of this Destination.
 
         目标数据源ID
 
@@ -135,7 +135,7 @@ class Destination:
 
     @property
     def destination_type(self):
-        """Gets the destination_type of this Destination.
+        r"""Gets the destination_type of this Destination.
 
         操作类型，枚举值:0-目标端为本ROMA实例内MQS； 7-目标端为设备
 
@@ -146,7 +146,7 @@ class Destination:
 
     @destination_type.setter
     def destination_type(self, destination_type):
-        """Sets the destination_type of this Destination.
+        r"""Sets the destination_type of this Destination.
 
         操作类型，枚举值:0-目标端为本ROMA实例内MQS； 7-目标端为设备
 
@@ -157,7 +157,7 @@ class Destination:
 
     @property
     def app_id(self):
-        """Gets the app_id of this Destination.
+        r"""Gets the app_id of this Destination.
 
         应用ID，目标端为0时需明确对方的APP_ID
 
@@ -168,7 +168,7 @@ class Destination:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this Destination.
+        r"""Sets the app_id of this Destination.
 
         应用ID，目标端为0时需明确对方的APP_ID
 
@@ -179,7 +179,7 @@ class Destination:
 
     @property
     def destination_name(self):
-        """Gets the destination_name of this Destination.
+        r"""Gets the destination_name of this Destination.
 
         目标数据源名称
 
@@ -190,7 +190,7 @@ class Destination:
 
     @destination_name.setter
     def destination_name(self, destination_name):
-        """Sets the destination_name of this Destination.
+        r"""Sets the destination_name of this Destination.
 
         目标数据源名称
 
@@ -201,7 +201,7 @@ class Destination:
 
     @property
     def topic(self):
-        """Gets the topic of this Destination.
+        r"""Gets the topic of this Destination.
 
         目标数据源主题
 
@@ -212,7 +212,7 @@ class Destination:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this Destination.
+        r"""Sets the topic of this Destination.
 
         目标数据源主题
 
@@ -223,7 +223,7 @@ class Destination:
 
     @property
     def server(self):
-        """Gets the server of this Destination.
+        r"""Gets the server of this Destination.
 
         目标端数据源服务
 
@@ -234,7 +234,7 @@ class Destination:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this Destination.
+        r"""Sets the server of this Destination.
 
         目标端数据源服务
 
@@ -245,7 +245,7 @@ class Destination:
 
     @property
     def token(self):
-        """Gets the token of this Destination.
+        r"""Gets the token of this Destination.
 
         目标端数据源token
 
@@ -256,7 +256,7 @@ class Destination:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this Destination.
+        r"""Sets the token of this Destination.
 
         目标端数据源token
 
@@ -267,7 +267,7 @@ class Destination:
 
     @property
     def tag(self):
-        """Gets the tag of this Destination.
+        r"""Gets the tag of this Destination.
 
         目标数据源标签
 
@@ -278,7 +278,7 @@ class Destination:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this Destination.
+        r"""Sets the tag of this Destination.
 
         目标数据源标签
 
@@ -289,7 +289,7 @@ class Destination:
 
     @property
     def mqs_sasl_ssl(self):
-        """Gets the mqs_sasl_ssl of this Destination.
+        r"""Gets the mqs_sasl_ssl of this Destination.
 
         目标端数据源MQS的SASL字段是否需要支持SSL加密
 
@@ -300,7 +300,7 @@ class Destination:
 
     @mqs_sasl_ssl.setter
     def mqs_sasl_ssl(self, mqs_sasl_ssl):
-        """Sets the mqs_sasl_ssl of this Destination.
+        r"""Sets the mqs_sasl_ssl of this Destination.
 
         目标端数据源MQS的SASL字段是否需要支持SSL加密
 
@@ -311,7 +311,7 @@ class Destination:
 
     @property
     def user_name(self):
-        """Gets the user_name of this Destination.
+        r"""Gets the user_name of this Destination.
 
         目标数据源用户名
 
@@ -322,7 +322,7 @@ class Destination:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this Destination.
+        r"""Sets the user_name of this Destination.
 
         目标数据源用户名
 
@@ -333,7 +333,7 @@ class Destination:
 
     @property
     def password(self):
-        """Gets the password of this Destination.
+        r"""Gets the password of this Destination.
 
         目标数据源密码
 
@@ -344,7 +344,7 @@ class Destination:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this Destination.
+        r"""Sets the password of this Destination.
 
         目标数据源密码
 

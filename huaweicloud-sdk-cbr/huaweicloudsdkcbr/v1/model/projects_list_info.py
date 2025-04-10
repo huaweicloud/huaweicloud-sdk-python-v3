@@ -39,7 +39,7 @@ class ProjectsListInfo:
     }
 
     def __init__(self, domain_id=None, is_domain=None, parent_id=None, name=None, description=None, id=None, enabled=None, links=None):
-        """ProjectsListInfo
+        r"""ProjectsListInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ProjectsListInfo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ProjectsListInfo.
+        r"""Gets the domain_id of this ProjectsListInfo.
 
         域 ID
 
@@ -103,7 +103,7 @@ class ProjectsListInfo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ProjectsListInfo.
+        r"""Sets the domain_id of this ProjectsListInfo.
 
         域 ID
 
@@ -114,7 +114,7 @@ class ProjectsListInfo:
 
     @property
     def is_domain(self):
-        """Gets the is_domain of this ProjectsListInfo.
+        r"""Gets the is_domain of this ProjectsListInfo.
 
         是否是域级
 
@@ -125,7 +125,7 @@ class ProjectsListInfo:
 
     @is_domain.setter
     def is_domain(self, is_domain):
-        """Sets the is_domain of this ProjectsListInfo.
+        r"""Sets the is_domain of this ProjectsListInfo.
 
         是否是域级
 
@@ -136,7 +136,7 @@ class ProjectsListInfo:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ProjectsListInfo.
+        r"""Gets the parent_id of this ProjectsListInfo.
 
         父项目 ID
 
@@ -147,7 +147,7 @@ class ProjectsListInfo:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ProjectsListInfo.
+        r"""Sets the parent_id of this ProjectsListInfo.
 
         父项目 ID
 
@@ -158,7 +158,7 @@ class ProjectsListInfo:
 
     @property
     def name(self):
-        """Gets the name of this ProjectsListInfo.
+        r"""Gets the name of this ProjectsListInfo.
 
         名称
 
@@ -169,7 +169,7 @@ class ProjectsListInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProjectsListInfo.
+        r"""Sets the name of this ProjectsListInfo.
 
         名称
 
@@ -180,7 +180,7 @@ class ProjectsListInfo:
 
     @property
     def description(self):
-        """Gets the description of this ProjectsListInfo.
+        r"""Gets the description of this ProjectsListInfo.
 
         描述信息
 
@@ -191,7 +191,7 @@ class ProjectsListInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProjectsListInfo.
+        r"""Sets the description of this ProjectsListInfo.
 
         描述信息
 
@@ -202,7 +202,7 @@ class ProjectsListInfo:
 
     @property
     def id(self):
-        """Gets the id of this ProjectsListInfo.
+        r"""Gets the id of this ProjectsListInfo.
 
         项目ID
 
@@ -213,7 +213,7 @@ class ProjectsListInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProjectsListInfo.
+        r"""Sets the id of this ProjectsListInfo.
 
         项目ID
 
@@ -224,7 +224,7 @@ class ProjectsListInfo:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ProjectsListInfo.
+        r"""Gets the enabled of this ProjectsListInfo.
 
         是否开启
 
@@ -235,7 +235,7 @@ class ProjectsListInfo:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ProjectsListInfo.
+        r"""Sets the enabled of this ProjectsListInfo.
 
         是否开启
 
@@ -246,7 +246,7 @@ class ProjectsListInfo:
 
     @property
     def links(self):
-        """Gets the links of this ProjectsListInfo.
+        r"""Gets the links of this ProjectsListInfo.
 
         :return: The links of this ProjectsListInfo.
         :rtype: :class:`huaweicloudsdkcbr.v1.SelfLinksInfo`
@@ -255,7 +255,7 @@ class ProjectsListInfo:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ProjectsListInfo.
+        r"""Sets the links of this ProjectsListInfo.
 
         :param links: The links of this ProjectsListInfo.
         :type links: :class:`huaweicloudsdkcbr.v1.SelfLinksInfo`

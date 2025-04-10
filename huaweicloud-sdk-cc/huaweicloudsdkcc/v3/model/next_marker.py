@@ -25,7 +25,7 @@ class NextMarker:
     }
 
     def __init__(self, next_marker=None):
-        """NextMarker
+        r"""NextMarker
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NextMarker:
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this NextMarker.
+        r"""Gets the next_marker of this NextMarker.
 
         向后分页标识符。
 
@@ -54,7 +54,7 @@ class NextMarker:
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this NextMarker.
+        r"""Sets the next_marker of this NextMarker.
 
         向后分页标识符。
 

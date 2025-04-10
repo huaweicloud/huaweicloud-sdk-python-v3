@@ -23,7 +23,7 @@ class GetJobEntitiesInfoDetail:
     }
 
     def __init__(self):
-        """GetJobEntitiesInfoDetail
+        r"""GetJobEntitiesInfoDetail
 
         The model defined in huaweicloud sdk
 

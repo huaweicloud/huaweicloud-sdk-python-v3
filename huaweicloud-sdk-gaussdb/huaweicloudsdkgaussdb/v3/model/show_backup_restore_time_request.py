@@ -29,7 +29,7 @@ class ShowBackupRestoreTimeRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, date=None):
-        """ShowBackupRestoreTimeRequest
+        r"""ShowBackupRestoreTimeRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowBackupRestoreTimeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowBackupRestoreTimeRequest.
+        r"""Gets the x_language of this ShowBackupRestoreTimeRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class ShowBackupRestoreTimeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowBackupRestoreTimeRequest.
+        r"""Sets the x_language of this ShowBackupRestoreTimeRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class ShowBackupRestoreTimeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowBackupRestoreTimeRequest.
+        r"""Gets the instance_id of this ShowBackupRestoreTimeRequest.
 
         租户在某一project下的实例ID。
 
@@ -89,7 +89,7 @@ class ShowBackupRestoreTimeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowBackupRestoreTimeRequest.
+        r"""Sets the instance_id of this ShowBackupRestoreTimeRequest.
 
         租户在某一project下的实例ID。
 
@@ -100,7 +100,7 @@ class ShowBackupRestoreTimeRequest:
 
     @property
     def date(self):
-        """Gets the date of this ShowBackupRestoreTimeRequest.
+        r"""Gets the date of this ShowBackupRestoreTimeRequest.
 
         所需查询的日志，为yyyy-mm-dd字符串格式，时区为UTC。
 
@@ -111,7 +111,7 @@ class ShowBackupRestoreTimeRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ShowBackupRestoreTimeRequest.
+        r"""Sets the date of this ShowBackupRestoreTimeRequest.
 
         所需查询的日志，为yyyy-mm-dd字符串格式，时区为UTC。
 

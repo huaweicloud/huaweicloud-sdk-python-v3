@@ -28,7 +28,7 @@ class ListDeviceMessagesResponse(SdkResponse):
     }
 
     def __init__(self, device_id=None, messages=None):
-        """ListDeviceMessagesResponse
+        r"""ListDeviceMessagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDeviceMessagesResponse(SdkResponse):
 
     @property
     def device_id(self):
-        """Gets the device_id of this ListDeviceMessagesResponse.
+        r"""Gets the device_id of this ListDeviceMessagesResponse.
 
         设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
 
@@ -62,7 +62,7 @@ class ListDeviceMessagesResponse(SdkResponse):
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ListDeviceMessagesResponse.
+        r"""Sets the device_id of this ListDeviceMessagesResponse.
 
         设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
 
@@ -73,7 +73,7 @@ class ListDeviceMessagesResponse(SdkResponse):
 
     @property
     def messages(self):
-        """Gets the messages of this ListDeviceMessagesResponse.
+        r"""Gets the messages of this ListDeviceMessagesResponse.
 
         设备消息列表。
 
@@ -84,7 +84,7 @@ class ListDeviceMessagesResponse(SdkResponse):
 
     @messages.setter
     def messages(self, messages):
-        """Sets the messages of this ListDeviceMessagesResponse.
+        r"""Sets the messages of this ListDeviceMessagesResponse.
 
         设备消息列表。
 

@@ -26,7 +26,7 @@ class NovaListAvailabilityZonesResponse(SdkResponse):
     }
 
     def __init__(self, availability_zone_info=None):
-        """NovaListAvailabilityZonesResponse
+        r"""NovaListAvailabilityZonesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NovaListAvailabilityZonesResponse(SdkResponse):
 
     @property
     def availability_zone_info(self):
-        """Gets the availability_zone_info of this NovaListAvailabilityZonesResponse.
+        r"""Gets the availability_zone_info of this NovaListAvailabilityZonesResponse.
 
         可用域信息。
 
@@ -55,7 +55,7 @@ class NovaListAvailabilityZonesResponse(SdkResponse):
 
     @availability_zone_info.setter
     def availability_zone_info(self, availability_zone_info):
-        """Sets the availability_zone_info of this NovaListAvailabilityZonesResponse.
+        r"""Sets the availability_zone_info of this NovaListAvailabilityZonesResponse.
 
         可用域信息。
 

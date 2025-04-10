@@ -26,7 +26,7 @@ class CreateResourceGroupResponse(SdkResponse):
     }
 
     def __init__(self, group_id=None):
-        """CreateResourceGroupResponse
+        r"""CreateResourceGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateResourceGroupResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateResourceGroupResponse.
+        r"""Gets the group_id of this CreateResourceGroupResponse.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -55,7 +55,7 @@ class CreateResourceGroupResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateResourceGroupResponse.
+        r"""Sets the group_id of this CreateResourceGroupResponse.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 

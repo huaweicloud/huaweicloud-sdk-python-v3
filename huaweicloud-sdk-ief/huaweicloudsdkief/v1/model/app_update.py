@@ -27,7 +27,7 @@ class AppUpdate:
     }
 
     def __init__(self, alias=None, description=None):
-        """AppUpdate
+        r"""AppUpdate
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AppUpdate:
 
     @property
     def alias(self):
-        """Gets the alias of this AppUpdate.
+        r"""Gets the alias of this AppUpdate.
 
         应用模板别名，中文、英文字母、数字、中划线、下划线，最大64字符
 
@@ -61,7 +61,7 @@ class AppUpdate:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this AppUpdate.
+        r"""Sets the alias of this AppUpdate.
 
         应用模板别名，中文、英文字母、数字、中划线、下划线，最大64字符
 
@@ -72,7 +72,7 @@ class AppUpdate:
 
     @property
     def description(self):
-        """Gets the description of this AppUpdate.
+        r"""Gets the description of this AppUpdate.
 
         应用模板描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -83,7 +83,7 @@ class AppUpdate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppUpdate.
+        r"""Sets the description of this AppUpdate.
 
         应用模板描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 

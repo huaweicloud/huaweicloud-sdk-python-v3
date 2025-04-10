@@ -29,7 +29,7 @@ class UpdateAppGroupsRequest:
     }
 
     def __init__(self, project_id=None, group_id=None, body=None):
-        """UpdateAppGroupsRequest
+        r"""UpdateAppGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateAppGroupsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateAppGroupsRequest.
+        r"""Gets the project_id of this UpdateAppGroupsRequest.
 
         项目Id
 
@@ -66,7 +66,7 @@ class UpdateAppGroupsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateAppGroupsRequest.
+        r"""Sets the project_id of this UpdateAppGroupsRequest.
 
         项目Id
 
@@ -77,7 +77,7 @@ class UpdateAppGroupsRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateAppGroupsRequest.
+        r"""Gets the group_id of this UpdateAppGroupsRequest.
 
         分组Id
 
@@ -88,7 +88,7 @@ class UpdateAppGroupsRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateAppGroupsRequest.
+        r"""Sets the group_id of this UpdateAppGroupsRequest.
 
         分组Id
 
@@ -99,7 +99,7 @@ class UpdateAppGroupsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAppGroupsRequest.
+        r"""Gets the body of this UpdateAppGroupsRequest.
 
         :return: The body of this UpdateAppGroupsRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.UpdateAppGroupsRequestBody`
@@ -108,7 +108,7 @@ class UpdateAppGroupsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAppGroupsRequest.
+        r"""Sets the body of this UpdateAppGroupsRequest.
 
         :param body: The body of this UpdateAppGroupsRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.UpdateAppGroupsRequestBody`

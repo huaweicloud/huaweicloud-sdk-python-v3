@@ -27,7 +27,7 @@ class DeleteMemberRequest:
     }
 
     def __init__(self, eihealth_project_id=None, user_id=None):
-        """DeleteMemberRequest
+        r"""DeleteMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteMemberRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this DeleteMemberRequest.
+        r"""Gets the eihealth_project_id of this DeleteMemberRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class DeleteMemberRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this DeleteMemberRequest.
+        r"""Sets the eihealth_project_id of this DeleteMemberRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class DeleteMemberRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this DeleteMemberRequest.
+        r"""Gets the user_id of this DeleteMemberRequest.
 
         被移除项目的用户id
 
@@ -81,7 +81,7 @@ class DeleteMemberRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this DeleteMemberRequest.
+        r"""Sets the user_id of this DeleteMemberRequest.
 
         被移除项目的用户id
 

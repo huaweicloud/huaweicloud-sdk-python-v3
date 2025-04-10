@@ -29,7 +29,7 @@ class BatchDeleteInstanceReq:
     }
 
     def __init__(self, instances=None, action=None, all_failure=None):
-        """BatchDeleteInstanceReq
+        r"""BatchDeleteInstanceReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BatchDeleteInstanceReq:
 
     @property
     def instances(self):
-        """Gets the instances of this BatchDeleteInstanceReq.
+        r"""Gets the instances of this BatchDeleteInstanceReq.
 
         实例的ID列表。
 
@@ -67,7 +67,7 @@ class BatchDeleteInstanceReq:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this BatchDeleteInstanceReq.
+        r"""Sets the instances of this BatchDeleteInstanceReq.
 
         实例的ID列表。
 
@@ -78,7 +78,7 @@ class BatchDeleteInstanceReq:
 
     @property
     def action(self):
-        """Gets the action of this BatchDeleteInstanceReq.
+        r"""Gets the action of this BatchDeleteInstanceReq.
 
         对实例的操作：delete。
 
@@ -89,7 +89,7 @@ class BatchDeleteInstanceReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchDeleteInstanceReq.
+        r"""Sets the action of this BatchDeleteInstanceReq.
 
         对实例的操作：delete。
 
@@ -100,7 +100,7 @@ class BatchDeleteInstanceReq:
 
     @property
     def all_failure(self):
-        """Gets the all_failure of this BatchDeleteInstanceReq.
+        r"""Gets the all_failure of this BatchDeleteInstanceReq.
 
         参数值为reliability，表示删除租户所有创建失败的RocketMQ实例。
 
@@ -111,7 +111,7 @@ class BatchDeleteInstanceReq:
 
     @all_failure.setter
     def all_failure(self, all_failure):
-        """Sets the all_failure of this BatchDeleteInstanceReq.
+        r"""Sets the all_failure of this BatchDeleteInstanceReq.
 
         参数值为reliability，表示删除租户所有创建失败的RocketMQ实例。
 

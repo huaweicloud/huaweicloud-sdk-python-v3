@@ -27,7 +27,7 @@ class DataSource:
     }
 
     def __init__(self, type=None, parameters=None):
-        """DataSource
+        r"""DataSource
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DataSource:
 
     @property
     def type(self):
-        """Gets the type of this DataSource.
+        r"""Gets the type of this DataSource.
 
           数据源类型。取值为OBS，且当前只支持OBS。
 
@@ -59,7 +59,7 @@ class DataSource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DataSource.
+        r"""Sets the type of this DataSource.
 
           数据源类型。取值为OBS，且当前只支持OBS。
 
@@ -70,7 +70,7 @@ class DataSource:
 
     @property
     def parameters(self):
-        """Gets the parameters of this DataSource.
+        r"""Gets the parameters of this DataSource.
 
         :return: The parameters of this DataSource.
         :rtype: :class:`huaweicloudsdkges.v1.Parameters`
@@ -79,7 +79,7 @@ class DataSource:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this DataSource.
+        r"""Sets the parameters of this DataSource.
 
         :param parameters: The parameters of this DataSource.
         :type parameters: :class:`huaweicloudsdkges.v1.Parameters`

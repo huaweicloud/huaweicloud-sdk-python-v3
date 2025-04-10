@@ -33,7 +33,7 @@ class Version:
     }
 
     def __init__(self, status=None, updated=None, links=None, id=None, media_types=None):
-        """Version
+        r"""Version
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class Version:
 
     @property
     def status(self):
-        """Gets the status of this Version.
+        r"""Gets the status of this Version.
 
         版本状态。
 
@@ -77,7 +77,7 @@ class Version:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Version.
+        r"""Sets the status of this Version.
 
         版本状态。
 
@@ -88,7 +88,7 @@ class Version:
 
     @property
     def updated(self):
-        """Gets the updated of this Version.
+        r"""Gets the updated of this Version.
 
         最后更新时间。
 
@@ -99,7 +99,7 @@ class Version:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this Version.
+        r"""Sets the updated of this Version.
 
         最后更新时间。
 
@@ -110,7 +110,7 @@ class Version:
 
     @property
     def links(self):
-        """Gets the links of this Version.
+        r"""Gets the links of this Version.
 
         版本的资源链接信息。
 
@@ -121,7 +121,7 @@ class Version:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this Version.
+        r"""Sets the links of this Version.
 
         版本的资源链接信息。
 
@@ -132,7 +132,7 @@ class Version:
 
     @property
     def id(self):
-        """Gets the id of this Version.
+        r"""Gets the id of this Version.
 
         版本号，如v3.6。
 
@@ -143,7 +143,7 @@ class Version:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Version.
+        r"""Sets the id of this Version.
 
         版本号，如v3.6。
 
@@ -154,7 +154,7 @@ class Version:
 
     @property
     def media_types(self):
-        """Gets the media_types of this Version.
+        r"""Gets the media_types of this Version.
 
         支持的消息格式。
 
@@ -165,7 +165,7 @@ class Version:
 
     @media_types.setter
     def media_types(self, media_types):
-        """Sets the media_types of this Version.
+        r"""Sets the media_types of this Version.
 
         支持的消息格式。
 

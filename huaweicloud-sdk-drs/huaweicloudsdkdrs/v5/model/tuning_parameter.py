@@ -29,7 +29,7 @@ class TuningParameter:
     }
 
     def __init__(self, param_name=None, param_value=None, availability=None):
-        """TuningParameter
+        r"""TuningParameter
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class TuningParameter:
 
     @property
     def param_name(self):
-        """Gets the param_name of this TuningParameter.
+        r"""Gets the param_name of this TuningParameter.
 
         参数名称。
 
@@ -65,7 +65,7 @@ class TuningParameter:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this TuningParameter.
+        r"""Sets the param_name of this TuningParameter.
 
         参数名称。
 
@@ -76,7 +76,7 @@ class TuningParameter:
 
     @property
     def param_value(self):
-        """Gets the param_value of this TuningParameter.
+        r"""Gets the param_value of this TuningParameter.
 
         参数取值。
 
@@ -87,7 +87,7 @@ class TuningParameter:
 
     @param_value.setter
     def param_value(self, param_value):
-        """Sets the param_value of this TuningParameter.
+        r"""Sets the param_value of this TuningParameter.
 
         参数取值。
 
@@ -98,7 +98,7 @@ class TuningParameter:
 
     @property
     def availability(self):
-        """Gets the availability of this TuningParameter.
+        r"""Gets the availability of this TuningParameter.
 
         是否可用。
 
@@ -109,7 +109,7 @@ class TuningParameter:
 
     @availability.setter
     def availability(self, availability):
-        """Sets the availability of this TuningParameter.
+        r"""Sets the availability of this TuningParameter.
 
         是否可用。
 

@@ -34,7 +34,7 @@ class SearchEnvTopologyResponse(SdkResponse):
     }
 
     def __init__(self, node_list=None, line_list=None, collector_config=None, real_start_time=None, real_end_time=None):
-        """SearchEnvTopologyResponse
+        r"""SearchEnvTopologyResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class SearchEnvTopologyResponse(SdkResponse):
 
     @property
     def node_list(self):
-        """Gets the node_list of this SearchEnvTopologyResponse.
+        r"""Gets the node_list of this SearchEnvTopologyResponse.
 
         组件节点列表。
 
@@ -83,7 +83,7 @@ class SearchEnvTopologyResponse(SdkResponse):
 
     @node_list.setter
     def node_list(self, node_list):
-        """Sets the node_list of this SearchEnvTopologyResponse.
+        r"""Sets the node_list of this SearchEnvTopologyResponse.
 
         组件节点列表。
 
@@ -94,7 +94,7 @@ class SearchEnvTopologyResponse(SdkResponse):
 
     @property
     def line_list(self):
-        """Gets the line_list of this SearchEnvTopologyResponse.
+        r"""Gets the line_list of this SearchEnvTopologyResponse.
 
         组件之间调用指向线列表。
 
@@ -105,7 +105,7 @@ class SearchEnvTopologyResponse(SdkResponse):
 
     @line_list.setter
     def line_list(self, line_list):
-        """Sets the line_list of this SearchEnvTopologyResponse.
+        r"""Sets the line_list of this SearchEnvTopologyResponse.
 
         组件之间调用指向线列表。
 
@@ -116,7 +116,7 @@ class SearchEnvTopologyResponse(SdkResponse):
 
     @property
     def collector_config(self):
-        """Gets the collector_config of this SearchEnvTopologyResponse.
+        r"""Gets the collector_config of this SearchEnvTopologyResponse.
 
         采集器配置。
 
@@ -127,7 +127,7 @@ class SearchEnvTopologyResponse(SdkResponse):
 
     @collector_config.setter
     def collector_config(self, collector_config):
-        """Sets the collector_config of this SearchEnvTopologyResponse.
+        r"""Sets the collector_config of this SearchEnvTopologyResponse.
 
         采集器配置。
 
@@ -138,7 +138,7 @@ class SearchEnvTopologyResponse(SdkResponse):
 
     @property
     def real_start_time(self):
-        """Gets the real_start_time of this SearchEnvTopologyResponse.
+        r"""Gets the real_start_time of this SearchEnvTopologyResponse.
 
         开始时间。
 
@@ -149,7 +149,7 @@ class SearchEnvTopologyResponse(SdkResponse):
 
     @real_start_time.setter
     def real_start_time(self, real_start_time):
-        """Sets the real_start_time of this SearchEnvTopologyResponse.
+        r"""Sets the real_start_time of this SearchEnvTopologyResponse.
 
         开始时间。
 
@@ -160,7 +160,7 @@ class SearchEnvTopologyResponse(SdkResponse):
 
     @property
     def real_end_time(self):
-        """Gets the real_end_time of this SearchEnvTopologyResponse.
+        r"""Gets the real_end_time of this SearchEnvTopologyResponse.
 
         结束时间。
 
@@ -171,7 +171,7 @@ class SearchEnvTopologyResponse(SdkResponse):
 
     @real_end_time.setter
     def real_end_time(self, real_end_time):
-        """Sets the real_end_time of this SearchEnvTopologyResponse.
+        r"""Sets the real_end_time of this SearchEnvTopologyResponse.
 
         结束时间。
 

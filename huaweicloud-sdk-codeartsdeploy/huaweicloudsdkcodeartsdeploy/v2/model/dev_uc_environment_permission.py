@@ -51,7 +51,7 @@ class DevUcEnvironmentPermission:
     }
 
     def __init__(self, id=None, role_id=None, devuc_role_id_list=None, role_type=None, name=None, region=None, environment_id=None, can_view=None, can_edit=None, can_delete=None, can_deploy=None, can_manage=None, create_time=None, update_time=None):
-        """DevUcEnvironmentPermission
+        r"""DevUcEnvironmentPermission
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class DevUcEnvironmentPermission:
 
     @property
     def id(self):
-        """Gets the id of this DevUcEnvironmentPermission.
+        r"""Gets the id of this DevUcEnvironmentPermission.
 
         权限id
 
@@ -145,7 +145,7 @@ class DevUcEnvironmentPermission:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DevUcEnvironmentPermission.
+        r"""Sets the id of this DevUcEnvironmentPermission.
 
         权限id
 
@@ -156,7 +156,7 @@ class DevUcEnvironmentPermission:
 
     @property
     def role_id(self):
-        """Gets the role_id of this DevUcEnvironmentPermission.
+        r"""Gets the role_id of this DevUcEnvironmentPermission.
 
         角色id
 
@@ -167,7 +167,7 @@ class DevUcEnvironmentPermission:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this DevUcEnvironmentPermission.
+        r"""Sets the role_id of this DevUcEnvironmentPermission.
 
         角色id
 
@@ -178,7 +178,7 @@ class DevUcEnvironmentPermission:
 
     @property
     def devuc_role_id_list(self):
-        """Gets the devuc_role_id_list of this DevUcEnvironmentPermission.
+        r"""Gets the devuc_role_id_list of this DevUcEnvironmentPermission.
 
         角色id列表
 
@@ -189,7 +189,7 @@ class DevUcEnvironmentPermission:
 
     @devuc_role_id_list.setter
     def devuc_role_id_list(self, devuc_role_id_list):
-        """Sets the devuc_role_id_list of this DevUcEnvironmentPermission.
+        r"""Sets the devuc_role_id_list of this DevUcEnvironmentPermission.
 
         角色id列表
 
@@ -200,7 +200,7 @@ class DevUcEnvironmentPermission:
 
     @property
     def role_type(self):
-        """Gets the role_type of this DevUcEnvironmentPermission.
+        r"""Gets the role_type of this DevUcEnvironmentPermission.
 
         角色类型， environment-creator： 环境创建者； project： 项目管理员；template-customized-inst：系统角色； template-project-customized、project-customized：自定义角色
 
@@ -211,7 +211,7 @@ class DevUcEnvironmentPermission:
 
     @role_type.setter
     def role_type(self, role_type):
-        """Sets the role_type of this DevUcEnvironmentPermission.
+        r"""Sets the role_type of this DevUcEnvironmentPermission.
 
         角色类型， environment-creator： 环境创建者； project： 项目管理员；template-customized-inst：系统角色； template-project-customized、project-customized：自定义角色
 
@@ -222,7 +222,7 @@ class DevUcEnvironmentPermission:
 
     @property
     def name(self):
-        """Gets the name of this DevUcEnvironmentPermission.
+        r"""Gets the name of this DevUcEnvironmentPermission.
 
         角色名称
 
@@ -233,7 +233,7 @@ class DevUcEnvironmentPermission:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DevUcEnvironmentPermission.
+        r"""Sets the name of this DevUcEnvironmentPermission.
 
         角色名称
 
@@ -244,7 +244,7 @@ class DevUcEnvironmentPermission:
 
     @property
     def region(self):
-        """Gets the region of this DevUcEnvironmentPermission.
+        r"""Gets the region of this DevUcEnvironmentPermission.
 
         局点信息
 
@@ -255,7 +255,7 @@ class DevUcEnvironmentPermission:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this DevUcEnvironmentPermission.
+        r"""Sets the region of this DevUcEnvironmentPermission.
 
         局点信息
 
@@ -266,7 +266,7 @@ class DevUcEnvironmentPermission:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this DevUcEnvironmentPermission.
+        r"""Gets the environment_id of this DevUcEnvironmentPermission.
 
         环境id
 
@@ -277,7 +277,7 @@ class DevUcEnvironmentPermission:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this DevUcEnvironmentPermission.
+        r"""Sets the environment_id of this DevUcEnvironmentPermission.
 
         环境id
 
@@ -288,7 +288,7 @@ class DevUcEnvironmentPermission:
 
     @property
     def can_view(self):
-        """Gets the can_view of this DevUcEnvironmentPermission.
+        r"""Gets the can_view of this DevUcEnvironmentPermission.
 
         是否有查看权限
 
@@ -299,7 +299,7 @@ class DevUcEnvironmentPermission:
 
     @can_view.setter
     def can_view(self, can_view):
-        """Sets the can_view of this DevUcEnvironmentPermission.
+        r"""Sets the can_view of this DevUcEnvironmentPermission.
 
         是否有查看权限
 
@@ -310,7 +310,7 @@ class DevUcEnvironmentPermission:
 
     @property
     def can_edit(self):
-        """Gets the can_edit of this DevUcEnvironmentPermission.
+        r"""Gets the can_edit of this DevUcEnvironmentPermission.
 
         是否有编辑权限
 
@@ -321,7 +321,7 @@ class DevUcEnvironmentPermission:
 
     @can_edit.setter
     def can_edit(self, can_edit):
-        """Sets the can_edit of this DevUcEnvironmentPermission.
+        r"""Sets the can_edit of this DevUcEnvironmentPermission.
 
         是否有编辑权限
 
@@ -332,7 +332,7 @@ class DevUcEnvironmentPermission:
 
     @property
     def can_delete(self):
-        """Gets the can_delete of this DevUcEnvironmentPermission.
+        r"""Gets the can_delete of this DevUcEnvironmentPermission.
 
         是否有删除权限
 
@@ -343,7 +343,7 @@ class DevUcEnvironmentPermission:
 
     @can_delete.setter
     def can_delete(self, can_delete):
-        """Sets the can_delete of this DevUcEnvironmentPermission.
+        r"""Sets the can_delete of this DevUcEnvironmentPermission.
 
         是否有删除权限
 
@@ -354,7 +354,7 @@ class DevUcEnvironmentPermission:
 
     @property
     def can_deploy(self):
-        """Gets the can_deploy of this DevUcEnvironmentPermission.
+        r"""Gets the can_deploy of this DevUcEnvironmentPermission.
 
         是否有部署权限
 
@@ -365,7 +365,7 @@ class DevUcEnvironmentPermission:
 
     @can_deploy.setter
     def can_deploy(self, can_deploy):
-        """Sets the can_deploy of this DevUcEnvironmentPermission.
+        r"""Sets the can_deploy of this DevUcEnvironmentPermission.
 
         是否有部署权限
 
@@ -376,7 +376,7 @@ class DevUcEnvironmentPermission:
 
     @property
     def can_manage(self):
-        """Gets the can_manage of this DevUcEnvironmentPermission.
+        r"""Gets the can_manage of this DevUcEnvironmentPermission.
 
         是否有权限管理权限
 
@@ -387,7 +387,7 @@ class DevUcEnvironmentPermission:
 
     @can_manage.setter
     def can_manage(self, can_manage):
-        """Sets the can_manage of this DevUcEnvironmentPermission.
+        r"""Sets the can_manage of this DevUcEnvironmentPermission.
 
         是否有权限管理权限
 
@@ -398,7 +398,7 @@ class DevUcEnvironmentPermission:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DevUcEnvironmentPermission.
+        r"""Gets the create_time of this DevUcEnvironmentPermission.
 
         创建时间
 
@@ -409,7 +409,7 @@ class DevUcEnvironmentPermission:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DevUcEnvironmentPermission.
+        r"""Sets the create_time of this DevUcEnvironmentPermission.
 
         创建时间
 
@@ -420,7 +420,7 @@ class DevUcEnvironmentPermission:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DevUcEnvironmentPermission.
+        r"""Gets the update_time of this DevUcEnvironmentPermission.
 
         修改时间
 
@@ -431,7 +431,7 @@ class DevUcEnvironmentPermission:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DevUcEnvironmentPermission.
+        r"""Sets the update_time of this DevUcEnvironmentPermission.
 
         修改时间
 

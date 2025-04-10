@@ -39,7 +39,7 @@ class ListSubscriptionsItem:
     }
 
     def __init__(self, topic_urn=None, protocol=None, subscription_urn=None, owner=None, endpoint=None, remark=None, status=None, filter_polices=None):
-        """ListSubscriptionsItem
+        r"""ListSubscriptionsItem
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListSubscriptionsItem:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this ListSubscriptionsItem.
+        r"""Gets the topic_urn of this ListSubscriptionsItem.
 
         Topic的唯一的资源标识。
 
@@ -96,7 +96,7 @@ class ListSubscriptionsItem:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this ListSubscriptionsItem.
+        r"""Sets the topic_urn of this ListSubscriptionsItem.
 
         Topic的唯一的资源标识。
 
@@ -107,7 +107,7 @@ class ListSubscriptionsItem:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListSubscriptionsItem.
+        r"""Gets the protocol of this ListSubscriptionsItem.
 
         不同协议对应不同的endpoint（接受消息的接入点）。目前支持的协议包括：  \"default\": 默认协议。  “email”：邮件传输协议，endpoint为邮箱地址。  “sms”：短信传输协议，endpoint为手机号码。  “functionstage”：FunctionGraph（函数）传输协议，endpoint为一个函数。  “http”、“https”：HTTP/HTTPS传输协议，endpoint为URL。
 
@@ -118,7 +118,7 @@ class ListSubscriptionsItem:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListSubscriptionsItem.
+        r"""Sets the protocol of this ListSubscriptionsItem.
 
         不同协议对应不同的endpoint（接受消息的接入点）。目前支持的协议包括：  \"default\": 默认协议。  “email”：邮件传输协议，endpoint为邮箱地址。  “sms”：短信传输协议，endpoint为手机号码。  “functionstage”：FunctionGraph（函数）传输协议，endpoint为一个函数。  “http”、“https”：HTTP/HTTPS传输协议，endpoint为URL。
 
@@ -129,7 +129,7 @@ class ListSubscriptionsItem:
 
     @property
     def subscription_urn(self):
-        """Gets the subscription_urn of this ListSubscriptionsItem.
+        r"""Gets the subscription_urn of this ListSubscriptionsItem.
 
         订阅者的唯一资源标识。
 
@@ -140,7 +140,7 @@ class ListSubscriptionsItem:
 
     @subscription_urn.setter
     def subscription_urn(self, subscription_urn):
-        """Sets the subscription_urn of this ListSubscriptionsItem.
+        r"""Sets the subscription_urn of this ListSubscriptionsItem.
 
         订阅者的唯一资源标识。
 
@@ -151,7 +151,7 @@ class ListSubscriptionsItem:
 
     @property
     def owner(self):
-        """Gets the owner of this ListSubscriptionsItem.
+        r"""Gets the owner of this ListSubscriptionsItem.
 
         Topic创建者的项目ID。
 
@@ -162,7 +162,7 @@ class ListSubscriptionsItem:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ListSubscriptionsItem.
+        r"""Sets the owner of this ListSubscriptionsItem.
 
         Topic创建者的项目ID。
 
@@ -173,7 +173,7 @@ class ListSubscriptionsItem:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this ListSubscriptionsItem.
+        r"""Gets the endpoint of this ListSubscriptionsItem.
 
         接受消息的接入点。
 
@@ -184,7 +184,7 @@ class ListSubscriptionsItem:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this ListSubscriptionsItem.
+        r"""Sets the endpoint of this ListSubscriptionsItem.
 
         接受消息的接入点。
 
@@ -195,7 +195,7 @@ class ListSubscriptionsItem:
 
     @property
     def remark(self):
-        """Gets the remark of this ListSubscriptionsItem.
+        r"""Gets the remark of this ListSubscriptionsItem.
 
         备注。
 
@@ -206,7 +206,7 @@ class ListSubscriptionsItem:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ListSubscriptionsItem.
+        r"""Sets the remark of this ListSubscriptionsItem.
 
         备注。
 
@@ -217,7 +217,7 @@ class ListSubscriptionsItem:
 
     @property
     def status(self):
-        """Gets the status of this ListSubscriptionsItem.
+        r"""Gets the status of this ListSubscriptionsItem.
 
         订阅者状态：0表示订阅还未确认，1表示已经确认，3表示已经取消确认。
 
@@ -228,7 +228,7 @@ class ListSubscriptionsItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListSubscriptionsItem.
+        r"""Sets the status of this ListSubscriptionsItem.
 
         订阅者状态：0表示订阅还未确认，1表示已经确认，3表示已经取消确认。
 
@@ -239,7 +239,7 @@ class ListSubscriptionsItem:
 
     @property
     def filter_polices(self):
-        """Gets the filter_polices of this ListSubscriptionsItem.
+        r"""Gets the filter_polices of this ListSubscriptionsItem.
 
         :return: The filter_polices of this ListSubscriptionsItem.
         :rtype: list[:class:`huaweicloudsdksmn.v2.SubscriptionsFilterPolicy`]
@@ -248,7 +248,7 @@ class ListSubscriptionsItem:
 
     @filter_polices.setter
     def filter_polices(self, filter_polices):
-        """Sets the filter_polices of this ListSubscriptionsItem.
+        r"""Sets the filter_polices of this ListSubscriptionsItem.
 
         :param filter_polices: The filter_polices of this ListSubscriptionsItem.
         :type filter_polices: list[:class:`huaweicloudsdksmn.v2.SubscriptionsFilterPolicy`]

@@ -26,7 +26,7 @@ class IsMemberInGroupsResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """IsMemberInGroupsResponse
+        r"""IsMemberInGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class IsMemberInGroupsResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this IsMemberInGroupsResponse.
+        r"""Gets the results of this IsMemberInGroupsResponse.
 
         成员是否在用户组内的结果列表
 
@@ -55,7 +55,7 @@ class IsMemberInGroupsResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this IsMemberInGroupsResponse.
+        r"""Sets the results of this IsMemberInGroupsResponse.
 
         成员是否在用户组内的结果列表
 

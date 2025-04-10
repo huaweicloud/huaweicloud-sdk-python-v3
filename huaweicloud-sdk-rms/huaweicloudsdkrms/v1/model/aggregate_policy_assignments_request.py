@@ -27,7 +27,7 @@ class AggregatePolicyAssignmentsRequest:
     }
 
     def __init__(self, aggregator_id=None, filter=None):
-        """AggregatePolicyAssignmentsRequest
+        r"""AggregatePolicyAssignmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AggregatePolicyAssignmentsRequest:
 
     @property
     def aggregator_id(self):
-        """Gets the aggregator_id of this AggregatePolicyAssignmentsRequest.
+        r"""Gets the aggregator_id of this AggregatePolicyAssignmentsRequest.
 
         资源聚合器ID
 
@@ -60,7 +60,7 @@ class AggregatePolicyAssignmentsRequest:
 
     @aggregator_id.setter
     def aggregator_id(self, aggregator_id):
-        """Sets the aggregator_id of this AggregatePolicyAssignmentsRequest.
+        r"""Sets the aggregator_id of this AggregatePolicyAssignmentsRequest.
 
         资源聚合器ID
 
@@ -71,7 +71,7 @@ class AggregatePolicyAssignmentsRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this AggregatePolicyAssignmentsRequest.
+        r"""Gets the filter of this AggregatePolicyAssignmentsRequest.
 
         :return: The filter of this AggregatePolicyAssignmentsRequest.
         :rtype: :class:`huaweicloudsdkrms.v1.AggregatePolicyAssignmentsFilters`
@@ -80,7 +80,7 @@ class AggregatePolicyAssignmentsRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this AggregatePolicyAssignmentsRequest.
+        r"""Sets the filter of this AggregatePolicyAssignmentsRequest.
 
         :param filter: The filter of this AggregatePolicyAssignmentsRequest.
         :type filter: :class:`huaweicloudsdkrms.v1.AggregatePolicyAssignmentsFilters`

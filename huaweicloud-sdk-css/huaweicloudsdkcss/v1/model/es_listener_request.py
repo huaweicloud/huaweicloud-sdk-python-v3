@@ -27,7 +27,7 @@ class EsListenerRequest:
     }
 
     def __init__(self, default_tls_container_ref=None, client_ca_tls_container_ref=None):
-        """EsListenerRequest
+        r"""EsListenerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class EsListenerRequest:
 
     @property
     def default_tls_container_ref(self):
-        """Gets the default_tls_container_ref of this EsListenerRequest.
+        r"""Gets the default_tls_container_ref of this EsListenerRequest.
 
         监听器使用的服务器证书ID。
 
@@ -60,7 +60,7 @@ class EsListenerRequest:
 
     @default_tls_container_ref.setter
     def default_tls_container_ref(self, default_tls_container_ref):
-        """Sets the default_tls_container_ref of this EsListenerRequest.
+        r"""Sets the default_tls_container_ref of this EsListenerRequest.
 
         监听器使用的服务器证书ID。
 
@@ -71,7 +71,7 @@ class EsListenerRequest:
 
     @property
     def client_ca_tls_container_ref(self):
-        """Gets the client_ca_tls_container_ref of this EsListenerRequest.
+        r"""Gets the client_ca_tls_container_ref of this EsListenerRequest.
 
         监听器使用的CA证书ID。如果更新双向认证，则该参数为必选。
 
@@ -82,7 +82,7 @@ class EsListenerRequest:
 
     @client_ca_tls_container_ref.setter
     def client_ca_tls_container_ref(self, client_ca_tls_container_ref):
-        """Sets the client_ca_tls_container_ref of this EsListenerRequest.
+        r"""Sets the client_ca_tls_container_ref of this EsListenerRequest.
 
         监听器使用的CA证书ID。如果更新双向认证，则该参数为必选。
 

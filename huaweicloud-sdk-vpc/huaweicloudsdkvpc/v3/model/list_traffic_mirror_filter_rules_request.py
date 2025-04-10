@@ -49,7 +49,7 @@ class ListTrafficMirrorFilterRulesRequest:
     }
 
     def __init__(self, id=None, description=None, traffic_mirror_filter_id=None, direction=None, protocol=None, source_cidr_block=None, destination_cidr_block=None, source_port_range=None, destination_port_range=None, action=None, priority=None, limit=None, marker=None):
-        """ListTrafficMirrorFilterRulesRequest
+        r"""ListTrafficMirrorFilterRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListTrafficMirrorFilterRulesRequest.
+        r"""Gets the id of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则ID过滤或排序
 
@@ -138,7 +138,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListTrafficMirrorFilterRulesRequest.
+        r"""Sets the id of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则ID过滤或排序
 
@@ -149,7 +149,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListTrafficMirrorFilterRulesRequest.
+        r"""Gets the description of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则描述过滤
 
@@ -160,7 +160,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListTrafficMirrorFilterRulesRequest.
+        r"""Sets the description of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则描述过滤
 
@@ -171,7 +171,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @property
     def traffic_mirror_filter_id(self):
-        """Gets the traffic_mirror_filter_id of this ListTrafficMirrorFilterRulesRequest.
+        r"""Gets the traffic_mirror_filter_id of this ListTrafficMirrorFilterRulesRequest.
 
         使用筛选条件ID过滤
 
@@ -182,7 +182,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @traffic_mirror_filter_id.setter
     def traffic_mirror_filter_id(self, traffic_mirror_filter_id):
-        """Sets the traffic_mirror_filter_id of this ListTrafficMirrorFilterRulesRequest.
+        r"""Sets the traffic_mirror_filter_id of this ListTrafficMirrorFilterRulesRequest.
 
         使用筛选条件ID过滤
 
@@ -193,7 +193,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @property
     def direction(self):
-        """Gets the direction of this ListTrafficMirrorFilterRulesRequest.
+        r"""Gets the direction of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则方向过滤
 
@@ -204,7 +204,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this ListTrafficMirrorFilterRulesRequest.
+        r"""Sets the direction of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则方向过滤
 
@@ -215,7 +215,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListTrafficMirrorFilterRulesRequest.
+        r"""Gets the protocol of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则协议过滤
 
@@ -226,7 +226,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListTrafficMirrorFilterRulesRequest.
+        r"""Sets the protocol of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则协议过滤
 
@@ -237,7 +237,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @property
     def source_cidr_block(self):
-        """Gets the source_cidr_block of this ListTrafficMirrorFilterRulesRequest.
+        r"""Gets the source_cidr_block of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则源网段过滤
 
@@ -248,7 +248,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @source_cidr_block.setter
     def source_cidr_block(self, source_cidr_block):
-        """Sets the source_cidr_block of this ListTrafficMirrorFilterRulesRequest.
+        r"""Sets the source_cidr_block of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则源网段过滤
 
@@ -259,7 +259,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @property
     def destination_cidr_block(self):
-        """Gets the destination_cidr_block of this ListTrafficMirrorFilterRulesRequest.
+        r"""Gets the destination_cidr_block of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则目的网段过滤
 
@@ -270,7 +270,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @destination_cidr_block.setter
     def destination_cidr_block(self, destination_cidr_block):
-        """Sets the destination_cidr_block of this ListTrafficMirrorFilterRulesRequest.
+        r"""Sets the destination_cidr_block of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则目的网段过滤
 
@@ -281,7 +281,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @property
     def source_port_range(self):
-        """Gets the source_port_range of this ListTrafficMirrorFilterRulesRequest.
+        r"""Gets the source_port_range of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则源端口范围过滤
 
@@ -292,7 +292,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @source_port_range.setter
     def source_port_range(self, source_port_range):
-        """Sets the source_port_range of this ListTrafficMirrorFilterRulesRequest.
+        r"""Sets the source_port_range of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则源端口范围过滤
 
@@ -303,7 +303,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @property
     def destination_port_range(self):
-        """Gets the destination_port_range of this ListTrafficMirrorFilterRulesRequest.
+        r"""Gets the destination_port_range of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则目的端口范围过滤
 
@@ -314,7 +314,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @destination_port_range.setter
     def destination_port_range(self, destination_port_range):
-        """Sets the destination_port_range of this ListTrafficMirrorFilterRulesRequest.
+        r"""Sets the destination_port_range of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则目的端口范围过滤
 
@@ -325,7 +325,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @property
     def action(self):
-        """Gets the action of this ListTrafficMirrorFilterRulesRequest.
+        r"""Gets the action of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则action过滤
 
@@ -336,7 +336,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListTrafficMirrorFilterRulesRequest.
+        r"""Sets the action of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则action过滤
 
@@ -347,7 +347,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @property
     def priority(self):
-        """Gets the priority of this ListTrafficMirrorFilterRulesRequest.
+        r"""Gets the priority of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则优先级过滤
 
@@ -358,7 +358,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ListTrafficMirrorFilterRulesRequest.
+        r"""Sets the priority of this ListTrafficMirrorFilterRulesRequest.
 
         使用规则优先级过滤
 
@@ -369,7 +369,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTrafficMirrorFilterRulesRequest.
+        r"""Gets the limit of this ListTrafficMirrorFilterRulesRequest.
 
         功能说明：每页返回的个数 取值范围：0-2000
 
@@ -380,7 +380,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTrafficMirrorFilterRulesRequest.
+        r"""Sets the limit of this ListTrafficMirrorFilterRulesRequest.
 
         功能说明：每页返回的个数 取值范围：0-2000
 
@@ -391,7 +391,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListTrafficMirrorFilterRulesRequest.
+        r"""Gets the marker of this ListTrafficMirrorFilterRulesRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -402,7 +402,7 @@ class ListTrafficMirrorFilterRulesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListTrafficMirrorFilterRulesRequest.
+        r"""Sets the marker of this ListTrafficMirrorFilterRulesRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 

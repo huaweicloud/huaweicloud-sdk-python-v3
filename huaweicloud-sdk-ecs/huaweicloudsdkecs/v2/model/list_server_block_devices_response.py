@@ -28,7 +28,7 @@ class ListServerBlockDevicesResponse(SdkResponse):
     }
 
     def __init__(self, attachable_quantity=None, volume_attachments=None):
-        """ListServerBlockDevicesResponse
+        r"""ListServerBlockDevicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListServerBlockDevicesResponse(SdkResponse):
 
     @property
     def attachable_quantity(self):
-        """Gets the attachable_quantity of this ListServerBlockDevicesResponse.
+        r"""Gets the attachable_quantity of this ListServerBlockDevicesResponse.
 
         :return: The attachable_quantity of this ListServerBlockDevicesResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.BlockDeviceAttachableQuantity`
@@ -60,7 +60,7 @@ class ListServerBlockDevicesResponse(SdkResponse):
 
     @attachable_quantity.setter
     def attachable_quantity(self, attachable_quantity):
-        """Sets the attachable_quantity of this ListServerBlockDevicesResponse.
+        r"""Sets the attachable_quantity of this ListServerBlockDevicesResponse.
 
         :param attachable_quantity: The attachable_quantity of this ListServerBlockDevicesResponse.
         :type attachable_quantity: :class:`huaweicloudsdkecs.v2.BlockDeviceAttachableQuantity`
@@ -69,7 +69,7 @@ class ListServerBlockDevicesResponse(SdkResponse):
 
     @property
     def volume_attachments(self):
-        """Gets the volume_attachments of this ListServerBlockDevicesResponse.
+        r"""Gets the volume_attachments of this ListServerBlockDevicesResponse.
 
         云服务器挂载信息列表。
 
@@ -80,7 +80,7 @@ class ListServerBlockDevicesResponse(SdkResponse):
 
     @volume_attachments.setter
     def volume_attachments(self, volume_attachments):
-        """Sets the volume_attachments of this ListServerBlockDevicesResponse.
+        r"""Sets the volume_attachments of this ListServerBlockDevicesResponse.
 
         云服务器挂载信息列表。
 

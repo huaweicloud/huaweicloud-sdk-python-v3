@@ -31,7 +31,7 @@ class ListInstanceRequest:
     }
 
     def __init__(self, enterprise_project_id=None, page=None, pagesize=None, instancename=None):
-        """ListInstanceRequest
+        r"""ListInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListInstanceRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListInstanceRequest.
+        r"""Gets the enterprise_project_id of this ListInstanceRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -75,7 +75,7 @@ class ListInstanceRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListInstanceRequest.
+        r"""Sets the enterprise_project_id of this ListInstanceRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -86,7 +86,7 @@ class ListInstanceRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListInstanceRequest.
+        r"""Gets the page of this ListInstanceRequest.
 
         分页查询参数，第page页，默认值为1
 
@@ -97,7 +97,7 @@ class ListInstanceRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListInstanceRequest.
+        r"""Sets the page of this ListInstanceRequest.
 
         分页查询参数，第page页，默认值为1
 
@@ -108,7 +108,7 @@ class ListInstanceRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ListInstanceRequest.
+        r"""Gets the pagesize of this ListInstanceRequest.
 
         分页查询参数，每页pagesize条记录，默认值为10
 
@@ -119,7 +119,7 @@ class ListInstanceRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ListInstanceRequest.
+        r"""Sets the pagesize of this ListInstanceRequest.
 
         分页查询参数，每页pagesize条记录，默认值为10
 
@@ -130,7 +130,7 @@ class ListInstanceRequest:
 
     @property
     def instancename(self):
-        """Gets the instancename of this ListInstanceRequest.
+        r"""Gets the instancename of this ListInstanceRequest.
 
         模糊查询，独享引擎名称
 
@@ -141,7 +141,7 @@ class ListInstanceRequest:
 
     @instancename.setter
     def instancename(self, instancename):
-        """Sets the instancename of this ListInstanceRequest.
+        r"""Sets the instancename of this ListInstanceRequest.
 
         模糊查询，独享引擎名称
 

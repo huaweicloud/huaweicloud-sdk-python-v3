@@ -25,7 +25,7 @@ class DelayUpgradePlanRequestBody:
     }
 
     def __init__(self, not_before=None):
-        """DelayUpgradePlanRequestBody
+        r"""DelayUpgradePlanRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DelayUpgradePlanRequestBody:
 
     @property
     def not_before(self):
-        """Gets the not_before of this DelayUpgradePlanRequestBody.
+        r"""Gets the not_before of this DelayUpgradePlanRequestBody.
 
         新的自动升级计划启动时间，必须早于notBeforeDeadline
 
@@ -53,7 +53,7 @@ class DelayUpgradePlanRequestBody:
 
     @not_before.setter
     def not_before(self, not_before):
-        """Sets the not_before of this DelayUpgradePlanRequestBody.
+        r"""Sets the not_before of this DelayUpgradePlanRequestBody.
 
         新的自动升级计划启动时间，必须早于notBeforeDeadline
 

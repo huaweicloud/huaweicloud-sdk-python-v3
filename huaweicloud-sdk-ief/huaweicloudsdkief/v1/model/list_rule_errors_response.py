@@ -28,7 +28,7 @@ class ListRuleErrorsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, errors=None):
-        """ListRuleErrorsResponse
+        r"""ListRuleErrorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRuleErrorsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListRuleErrorsResponse.
+        r"""Gets the count of this ListRuleErrorsResponse.
 
         满足条件的错误个数
 
@@ -62,7 +62,7 @@ class ListRuleErrorsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListRuleErrorsResponse.
+        r"""Sets the count of this ListRuleErrorsResponse.
 
         满足条件的错误个数
 
@@ -73,7 +73,7 @@ class ListRuleErrorsResponse(SdkResponse):
 
     @property
     def errors(self):
-        """Gets the errors of this ListRuleErrorsResponse.
+        r"""Gets the errors of this ListRuleErrorsResponse.
 
         错误列表
 
@@ -84,7 +84,7 @@ class ListRuleErrorsResponse(SdkResponse):
 
     @errors.setter
     def errors(self, errors):
-        """Sets the errors of this ListRuleErrorsResponse.
+        r"""Sets the errors of this ListRuleErrorsResponse.
 
         错误列表
 

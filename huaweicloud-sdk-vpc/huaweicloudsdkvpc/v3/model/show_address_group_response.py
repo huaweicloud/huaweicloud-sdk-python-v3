@@ -28,7 +28,7 @@ class ShowAddressGroupResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, address_group=None):
-        """ShowAddressGroupResponse
+        r"""ShowAddressGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAddressGroupResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowAddressGroupResponse.
+        r"""Gets the request_id of this ShowAddressGroupResponse.
 
         请求ID
 
@@ -62,7 +62,7 @@ class ShowAddressGroupResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowAddressGroupResponse.
+        r"""Sets the request_id of this ShowAddressGroupResponse.
 
         请求ID
 
@@ -73,7 +73,7 @@ class ShowAddressGroupResponse(SdkResponse):
 
     @property
     def address_group(self):
-        """Gets the address_group of this ShowAddressGroupResponse.
+        r"""Gets the address_group of this ShowAddressGroupResponse.
 
         :return: The address_group of this ShowAddressGroupResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.AddressGroup`
@@ -82,7 +82,7 @@ class ShowAddressGroupResponse(SdkResponse):
 
     @address_group.setter
     def address_group(self, address_group):
-        """Sets the address_group of this ShowAddressGroupResponse.
+        r"""Sets the address_group of this ShowAddressGroupResponse.
 
         :param address_group: The address_group of this ShowAddressGroupResponse.
         :type address_group: :class:`huaweicloudsdkvpc.v3.AddressGroup`

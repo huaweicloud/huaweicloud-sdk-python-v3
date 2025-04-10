@@ -29,7 +29,7 @@ class Target:
     }
 
     def __init__(self, target_id=None, target_name=None, target_type=None):
-        """Target
+        r"""Target
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Target:
 
     @property
     def target_id(self):
-        """Gets the target_id of this Target.
+        r"""Gets the target_id of this Target.
 
         对象ID。
 
@@ -65,7 +65,7 @@ class Target:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this Target.
+        r"""Sets the target_id of this Target.
 
         对象ID。
 
@@ -76,7 +76,7 @@ class Target:
 
     @property
     def target_name(self):
-        """Gets the target_name of this Target.
+        r"""Gets the target_name of this Target.
 
         对象名称。
 
@@ -87,7 +87,7 @@ class Target:
 
     @target_name.setter
     def target_name(self, target_name):
-        """Sets the target_name of this Target.
+        r"""Sets the target_name of this Target.
 
         对象名称。
 
@@ -98,7 +98,7 @@ class Target:
 
     @property
     def target_type(self):
-        """Gets the target_type of this Target.
+        r"""Gets the target_type of this Target.
 
         对象类型。 - USER：表示用户。   target_id：为用户ID。   target_name：为用户name。 - USERGROUP：表示用户组。   target_id：为用户组ID。   target_name：为用户组name。 - APPGROUP：应用组。   target_id：应用组id。   target_name：应用组名称。 - OU：组织单元。   target_id：OUID。   target_name：OU名称。 - ALL：表示所有。   target_id：default-apply-all-targets。   target_name：All-Targets。
 
@@ -109,7 +109,7 @@ class Target:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this Target.
+        r"""Sets the target_type of this Target.
 
         对象类型。 - USER：表示用户。   target_id：为用户ID。   target_name：为用户name。 - USERGROUP：表示用户组。   target_id：为用户组ID。   target_name：为用户组name。 - APPGROUP：应用组。   target_id：应用组id。   target_name：应用组名称。 - OU：组织单元。   target_id：OUID。   target_name：OU名称。 - ALL：表示所有。   target_id：default-apply-all-targets。   target_name：All-Targets。
 

@@ -30,7 +30,7 @@ class RunDocClassificationResponse(SdkResponse):
     }
 
     def __init__(self, result=None, error_code=None, error_msg=None):
-        """RunDocClassificationResponse
+        r"""RunDocClassificationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunDocClassificationResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunDocClassificationResponse.
+        r"""Gets the result of this RunDocClassificationResponse.
 
         标签列表
 
@@ -69,7 +69,7 @@ class RunDocClassificationResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunDocClassificationResponse.
+        r"""Sets the result of this RunDocClassificationResponse.
 
         标签列表
 
@@ -80,7 +80,7 @@ class RunDocClassificationResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunDocClassificationResponse.
+        r"""Gets the error_code of this RunDocClassificationResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -91,7 +91,7 @@ class RunDocClassificationResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunDocClassificationResponse.
+        r"""Sets the error_code of this RunDocClassificationResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -102,7 +102,7 @@ class RunDocClassificationResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunDocClassificationResponse.
+        r"""Gets the error_msg of this RunDocClassificationResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -113,7 +113,7 @@ class RunDocClassificationResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunDocClassificationResponse.
+        r"""Sets the error_msg of this RunDocClassificationResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

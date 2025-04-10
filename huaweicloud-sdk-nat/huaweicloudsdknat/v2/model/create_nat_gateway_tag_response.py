@@ -24,7 +24,7 @@ class CreateNatGatewayTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateNatGatewayTagResponse
+        r"""CreateNatGatewayTagResponse
 
         The model defined in huaweicloud sdk
 

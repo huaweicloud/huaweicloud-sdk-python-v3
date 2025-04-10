@@ -37,7 +37,7 @@ class ListOverviewsClassificationRequest:
     }
 
     def __init__(self, x_language=None, enterprise_project_id=None, _from=None, to=None, top=None, hosts=None, instances=None):
-        """ListOverviewsClassificationRequest
+        r"""ListOverviewsClassificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListOverviewsClassificationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListOverviewsClassificationRequest.
+        r"""Gets the x_language of this ListOverviewsClassificationRequest.
 
         语言，默认值为en-us。zh-cn（中文）/en-us（英文）
 
@@ -94,7 +94,7 @@ class ListOverviewsClassificationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListOverviewsClassificationRequest.
+        r"""Sets the x_language of this ListOverviewsClassificationRequest.
 
         语言，默认值为en-us。zh-cn（中文）/en-us（英文）
 
@@ -105,7 +105,7 @@ class ListOverviewsClassificationRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListOverviewsClassificationRequest.
+        r"""Gets the enterprise_project_id of this ListOverviewsClassificationRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -116,7 +116,7 @@ class ListOverviewsClassificationRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListOverviewsClassificationRequest.
+        r"""Sets the enterprise_project_id of this ListOverviewsClassificationRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -127,7 +127,7 @@ class ListOverviewsClassificationRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ListOverviewsClassificationRequest.
+        r"""Gets the _from of this ListOverviewsClassificationRequest.
 
         起始时间（13位毫秒时间戳），需要和to同时使用
 
@@ -138,7 +138,7 @@ class ListOverviewsClassificationRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ListOverviewsClassificationRequest.
+        r"""Sets the _from of this ListOverviewsClassificationRequest.
 
         起始时间（13位毫秒时间戳），需要和to同时使用
 
@@ -149,7 +149,7 @@ class ListOverviewsClassificationRequest:
 
     @property
     def to(self):
-        """Gets the to of this ListOverviewsClassificationRequest.
+        r"""Gets the to of this ListOverviewsClassificationRequest.
 
         结束时间（13位毫秒时间戳），需要和from同时使用
 
@@ -160,7 +160,7 @@ class ListOverviewsClassificationRequest:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ListOverviewsClassificationRequest.
+        r"""Sets the to of this ListOverviewsClassificationRequest.
 
         结束时间（13位毫秒时间戳），需要和from同时使用
 
@@ -171,7 +171,7 @@ class ListOverviewsClassificationRequest:
 
     @property
     def top(self):
-        """Gets the top of this ListOverviewsClassificationRequest.
+        r"""Gets the top of this ListOverviewsClassificationRequest.
 
         要查询的前几的结果，最大值为10，默认值为5。
 
@@ -182,7 +182,7 @@ class ListOverviewsClassificationRequest:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this ListOverviewsClassificationRequest.
+        r"""Sets the top of this ListOverviewsClassificationRequest.
 
         要查询的前几的结果，最大值为10，默认值为5。
 
@@ -193,7 +193,7 @@ class ListOverviewsClassificationRequest:
 
     @property
     def hosts(self):
-        """Gets the hosts of this ListOverviewsClassificationRequest.
+        r"""Gets the hosts of this ListOverviewsClassificationRequest.
 
         域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
 
@@ -204,7 +204,7 @@ class ListOverviewsClassificationRequest:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this ListOverviewsClassificationRequest.
+        r"""Sets the hosts of this ListOverviewsClassificationRequest.
 
         域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
 
@@ -215,7 +215,7 @@ class ListOverviewsClassificationRequest:
 
     @property
     def instances(self):
-        """Gets the instances of this ListOverviewsClassificationRequest.
+        r"""Gets the instances of this ListOverviewsClassificationRequest.
 
         要查询引擎实例id
 
@@ -226,7 +226,7 @@ class ListOverviewsClassificationRequest:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListOverviewsClassificationRequest.
+        r"""Sets the instances of this ListOverviewsClassificationRequest.
 
         要查询引擎实例id
 

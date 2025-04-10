@@ -28,7 +28,7 @@ class CreateSessionResponse(SdkResponse):
     }
 
     def __init__(self, session_id=None, greeting=None):
-        """CreateSessionResponse
+        r"""CreateSessionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateSessionResponse(SdkResponse):
 
     @property
     def session_id(self):
-        """Gets the session_id of this CreateSessionResponse.
+        r"""Gets the session_id of this CreateSessionResponse.
 
         会话标识符。
 
@@ -62,7 +62,7 @@ class CreateSessionResponse(SdkResponse):
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this CreateSessionResponse.
+        r"""Sets the session_id of this CreateSessionResponse.
 
         会话标识符。
 
@@ -73,7 +73,7 @@ class CreateSessionResponse(SdkResponse):
 
     @property
     def greeting(self):
-        """Gets the greeting of this CreateSessionResponse.
+        r"""Gets the greeting of this CreateSessionResponse.
 
         机器人问候语。
 
@@ -84,7 +84,7 @@ class CreateSessionResponse(SdkResponse):
 
     @greeting.setter
     def greeting(self, greeting):
-        """Sets the greeting of this CreateSessionResponse.
+        r"""Sets the greeting of this CreateSessionResponse.
 
         机器人问候语。
 

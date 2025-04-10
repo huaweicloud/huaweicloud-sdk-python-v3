@@ -41,7 +41,7 @@ class ResultSet:
     }
 
     def __init__(self, availability=None, category=None, job_id=None, job_type=None, rec_id=None, rec_type=None, scene_id=None, table_name=None, workspace_id=None):
-        """ResultSet
+        r"""ResultSet
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ResultSet:
 
     @property
     def availability(self):
-        """Gets the availability of this ResultSet.
+        r"""Gets the availability of this ResultSet.
 
         可用性
 
@@ -110,7 +110,7 @@ class ResultSet:
 
     @availability.setter
     def availability(self, availability):
-        """Sets the availability of this ResultSet.
+        r"""Sets the availability of this ResultSet.
 
         可用性
 
@@ -121,7 +121,7 @@ class ResultSet:
 
     @property
     def category(self):
-        """Gets the category of this ResultSet.
+        r"""Gets the category of this ResultSet.
 
         类别
 
@@ -132,7 +132,7 @@ class ResultSet:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ResultSet.
+        r"""Sets the category of this ResultSet.
 
         类别
 
@@ -143,7 +143,7 @@ class ResultSet:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ResultSet.
+        r"""Gets the job_id of this ResultSet.
 
         作业编号
 
@@ -154,7 +154,7 @@ class ResultSet:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ResultSet.
+        r"""Sets the job_id of this ResultSet.
 
         作业编号
 
@@ -165,7 +165,7 @@ class ResultSet:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ResultSet.
+        r"""Gets the job_type of this ResultSet.
 
         作业类型
 
@@ -176,7 +176,7 @@ class ResultSet:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ResultSet.
+        r"""Sets the job_type of this ResultSet.
 
         作业类型
 
@@ -187,7 +187,7 @@ class ResultSet:
 
     @property
     def rec_id(self):
-        """Gets the rec_id of this ResultSet.
+        r"""Gets the rec_id of this ResultSet.
 
         rec编号
 
@@ -198,7 +198,7 @@ class ResultSet:
 
     @rec_id.setter
     def rec_id(self, rec_id):
-        """Sets the rec_id of this ResultSet.
+        r"""Sets the rec_id of this ResultSet.
 
         rec编号
 
@@ -209,7 +209,7 @@ class ResultSet:
 
     @property
     def rec_type(self):
-        """Gets the rec_type of this ResultSet.
+        r"""Gets the rec_type of this ResultSet.
 
         rec类型
 
@@ -220,7 +220,7 @@ class ResultSet:
 
     @rec_type.setter
     def rec_type(self, rec_type):
-        """Sets the rec_type of this ResultSet.
+        r"""Sets the rec_type of this ResultSet.
 
         rec类型
 
@@ -231,7 +231,7 @@ class ResultSet:
 
     @property
     def scene_id(self):
-        """Gets the scene_id of this ResultSet.
+        r"""Gets the scene_id of this ResultSet.
 
         场景编号
 
@@ -242,7 +242,7 @@ class ResultSet:
 
     @scene_id.setter
     def scene_id(self, scene_id):
-        """Sets the scene_id of this ResultSet.
+        r"""Sets the scene_id of this ResultSet.
 
         场景编号
 
@@ -253,7 +253,7 @@ class ResultSet:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ResultSet.
+        r"""Gets the table_name of this ResultSet.
 
         表名
 
@@ -264,7 +264,7 @@ class ResultSet:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ResultSet.
+        r"""Sets the table_name of this ResultSet.
 
         表名
 
@@ -275,7 +275,7 @@ class ResultSet:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ResultSet.
+        r"""Gets the workspace_id of this ResultSet.
 
         工作空间编号
 
@@ -286,7 +286,7 @@ class ResultSet:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ResultSet.
+        r"""Sets the workspace_id of this ResultSet.
 
         工作空间编号
 

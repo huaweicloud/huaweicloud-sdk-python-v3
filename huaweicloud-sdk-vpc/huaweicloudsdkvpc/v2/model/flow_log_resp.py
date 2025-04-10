@@ -51,7 +51,7 @@ class FlowLogResp:
     }
 
     def __init__(self, id=None, name=None, tenant_id=None, description=None, resource_type=None, resource_id=None, traffic_type=None, log_group_id=None, log_topic_id=None, log_store_type=None, created_at=None, updated_at=None, admin_state=None, status=None):
-        """FlowLogResp
+        r"""FlowLogResp
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class FlowLogResp:
 
     @property
     def id(self):
-        """Gets the id of this FlowLogResp.
+        r"""Gets the id of this FlowLogResp.
 
         流日志资源唯一标识
 
@@ -131,7 +131,7 @@ class FlowLogResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FlowLogResp.
+        r"""Sets the id of this FlowLogResp.
 
         流日志资源唯一标识
 
@@ -142,7 +142,7 @@ class FlowLogResp:
 
     @property
     def name(self):
-        """Gets the name of this FlowLogResp.
+        r"""Gets the name of this FlowLogResp.
 
         功能说明：流日志名称 取值范围：0-64个字符，支持数字、字母、中文、_（下划线）、-（中划线）、.（点）
 
@@ -153,7 +153,7 @@ class FlowLogResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlowLogResp.
+        r"""Sets the name of this FlowLogResp.
 
         功能说明：流日志名称 取值范围：0-64个字符，支持数字、字母、中文、_（下划线）、-（中划线）、.（点）
 
@@ -164,7 +164,7 @@ class FlowLogResp:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this FlowLogResp.
+        r"""Gets the tenant_id of this FlowLogResp.
 
         项目ID
 
@@ -175,7 +175,7 @@ class FlowLogResp:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this FlowLogResp.
+        r"""Sets the tenant_id of this FlowLogResp.
 
         项目ID
 
@@ -186,7 +186,7 @@ class FlowLogResp:
 
     @property
     def description(self):
-        """Gets the description of this FlowLogResp.
+        r"""Gets the description of this FlowLogResp.
 
         功能说明：流日志描述 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -197,7 +197,7 @@ class FlowLogResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FlowLogResp.
+        r"""Sets the description of this FlowLogResp.
 
         功能说明：流日志描述 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -208,7 +208,7 @@ class FlowLogResp:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this FlowLogResp.
+        r"""Gets the resource_type of this FlowLogResp.
 
         功能说明：流日志所属资源类型 取值范围：支持Port、Network、VPC 类型。 约束：当resource_type为Port时，Port资源必须是C3、S3、M3三种虚拟机的网卡。
 
@@ -219,7 +219,7 @@ class FlowLogResp:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this FlowLogResp.
+        r"""Sets the resource_type of this FlowLogResp.
 
         功能说明：流日志所属资源类型 取值范围：支持Port、Network、VPC 类型。 约束：当resource_type为Port时，Port资源必须是C3、S3、M3三种虚拟机的网卡。
 
@@ -230,7 +230,7 @@ class FlowLogResp:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this FlowLogResp.
+        r"""Gets the resource_id of this FlowLogResp.
 
         resource_type对应资源的唯一ID
 
@@ -241,7 +241,7 @@ class FlowLogResp:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this FlowLogResp.
+        r"""Sets the resource_id of this FlowLogResp.
 
         resource_type对应资源的唯一ID
 
@@ -252,7 +252,7 @@ class FlowLogResp:
 
     @property
     def traffic_type(self):
-        """Gets the traffic_type of this FlowLogResp.
+        r"""Gets the traffic_type of this FlowLogResp.
 
         功能说明：流日志采集类型 取值范围：     1）all：采集指定资源的全部流量。     2）accept：采集指定资源允许传入、传出的流量。     3）reject：采集指定资源拒绝传入、传出的流量。
 
@@ -263,7 +263,7 @@ class FlowLogResp:
 
     @traffic_type.setter
     def traffic_type(self, traffic_type):
-        """Sets the traffic_type of this FlowLogResp.
+        r"""Sets the traffic_type of this FlowLogResp.
 
         功能说明：流日志采集类型 取值范围：     1）all：采集指定资源的全部流量。     2）accept：采集指定资源允许传入、传出的流量。     3）reject：采集指定资源拒绝传入、传出的流量。
 
@@ -274,7 +274,7 @@ class FlowLogResp:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this FlowLogResp.
+        r"""Gets the log_group_id of this FlowLogResp.
 
         日志组ID 请在云日志服务中获取，详情请参见《云日志服务用户指南》。
 
@@ -285,7 +285,7 @@ class FlowLogResp:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this FlowLogResp.
+        r"""Sets the log_group_id of this FlowLogResp.
 
         日志组ID 请在云日志服务中获取，详情请参见《云日志服务用户指南》。
 
@@ -296,7 +296,7 @@ class FlowLogResp:
 
     @property
     def log_topic_id(self):
-        """Gets the log_topic_id of this FlowLogResp.
+        r"""Gets the log_topic_id of this FlowLogResp.
 
         日志主题ID 请在云日志服务中获取，详情请参见《云日志服务用户指南》。
 
@@ -307,7 +307,7 @@ class FlowLogResp:
 
     @log_topic_id.setter
     def log_topic_id(self, log_topic_id):
-        """Sets the log_topic_id of this FlowLogResp.
+        r"""Sets the log_topic_id of this FlowLogResp.
 
         日志主题ID 请在云日志服务中获取，详情请参见《云日志服务用户指南》。
 
@@ -318,7 +318,7 @@ class FlowLogResp:
 
     @property
     def log_store_type(self):
-        """Gets the log_store_type of this FlowLogResp.
+        r"""Gets the log_store_type of this FlowLogResp.
 
         功能说明：流日志存储类型 取值范围：     lts：存储类型为云日志服务（LTS）。
 
@@ -329,7 +329,7 @@ class FlowLogResp:
 
     @log_store_type.setter
     def log_store_type(self, log_store_type):
-        """Sets the log_store_type of this FlowLogResp.
+        r"""Sets the log_store_type of this FlowLogResp.
 
         功能说明：流日志存储类型 取值范围：     lts：存储类型为云日志服务（LTS）。
 
@@ -340,7 +340,7 @@ class FlowLogResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this FlowLogResp.
+        r"""Gets the created_at of this FlowLogResp.
 
         资源创建时间
 
@@ -351,7 +351,7 @@ class FlowLogResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this FlowLogResp.
+        r"""Sets the created_at of this FlowLogResp.
 
         资源创建时间
 
@@ -362,7 +362,7 @@ class FlowLogResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this FlowLogResp.
+        r"""Gets the updated_at of this FlowLogResp.
 
         最近一次更新资源的时间
 
@@ -373,7 +373,7 @@ class FlowLogResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this FlowLogResp.
+        r"""Sets the updated_at of this FlowLogResp.
 
         最近一次更新资源的时间
 
@@ -384,7 +384,7 @@ class FlowLogResp:
 
     @property
     def admin_state(self):
-        """Gets the admin_state of this FlowLogResp.
+        r"""Gets the admin_state of this FlowLogResp.
 
         功能说明：流日志管理 取值范围：若为true，表明开启流日志。若为false，则关闭流日志
 
@@ -395,7 +395,7 @@ class FlowLogResp:
 
     @admin_state.setter
     def admin_state(self, admin_state):
-        """Sets the admin_state of this FlowLogResp.
+        r"""Sets the admin_state of this FlowLogResp.
 
         功能说明：流日志管理 取值范围：若为true，表明开启流日志。若为false，则关闭流日志
 
@@ -406,7 +406,7 @@ class FlowLogResp:
 
     @property
     def status(self):
-        """Gets the status of this FlowLogResp.
+        r"""Gets the status of this FlowLogResp.
 
         功能说明：流日志状态 取值范围：ACTIVE、DOWN、ERROR
 
@@ -417,7 +417,7 @@ class FlowLogResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FlowLogResp.
+        r"""Sets the status of this FlowLogResp.
 
         功能说明：流日志状态 取值范围：ACTIVE、DOWN、ERROR
 

@@ -28,7 +28,7 @@ class BatchShowTrafficControllersResponse(SdkResponse):
     }
 
     def __init__(self, count=None, traffic_controller_devices=None):
-        """BatchShowTrafficControllersResponse
+        r"""BatchShowTrafficControllersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchShowTrafficControllersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchShowTrafficControllersResponse.
+        r"""Gets the count of this BatchShowTrafficControllersResponse.
 
         **参数说明**：返回信号机设备的总体数量。
 
@@ -62,7 +62,7 @@ class BatchShowTrafficControllersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchShowTrafficControllersResponse.
+        r"""Sets the count of this BatchShowTrafficControllersResponse.
 
         **参数说明**：返回信号机设备的总体数量。
 
@@ -73,7 +73,7 @@ class BatchShowTrafficControllersResponse(SdkResponse):
 
     @property
     def traffic_controller_devices(self):
-        """Gets the traffic_controller_devices of this BatchShowTrafficControllersResponse.
+        r"""Gets the traffic_controller_devices of this BatchShowTrafficControllersResponse.
 
         **参数说明**：数据列表。
 
@@ -84,7 +84,7 @@ class BatchShowTrafficControllersResponse(SdkResponse):
 
     @traffic_controller_devices.setter
     def traffic_controller_devices(self, traffic_controller_devices):
-        """Sets the traffic_controller_devices of this BatchShowTrafficControllersResponse.
+        r"""Sets the traffic_controller_devices of this BatchShowTrafficControllersResponse.
 
         **参数说明**：数据列表。
 

@@ -29,7 +29,7 @@ class ModelFlow:
     }
 
     def __init__(self, vehicle_class=None, flow=None, average_speed=None):
-        """ModelFlow
+        r"""ModelFlow
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ModelFlow:
 
     @property
     def vehicle_class(self):
-        """Gets the vehicle_class of this ModelFlow.
+        r"""Gets the vehicle_class of this ModelFlow.
 
         **参数说明**：车辆类型。参考[车辆基本类型](https://support.huaweicloud.com/api-v2x/v2x_04_0162.html)。
 
@@ -68,7 +68,7 @@ class ModelFlow:
 
     @vehicle_class.setter
     def vehicle_class(self, vehicle_class):
-        """Sets the vehicle_class of this ModelFlow.
+        r"""Sets the vehicle_class of this ModelFlow.
 
         **参数说明**：车辆类型。参考[车辆基本类型](https://support.huaweicloud.com/api-v2x/v2x_04_0162.html)。
 
@@ -79,7 +79,7 @@ class ModelFlow:
 
     @property
     def flow(self):
-        """Gets the flow of this ModelFlow.
+        r"""Gets the flow of this ModelFlow.
 
         **参数说明**：统计周期内的车辆数。
 
@@ -90,7 +90,7 @@ class ModelFlow:
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this ModelFlow.
+        r"""Sets the flow of this ModelFlow.
 
         **参数说明**：统计周期内的车辆数。
 
@@ -101,7 +101,7 @@ class ModelFlow:
 
     @property
     def average_speed(self):
-        """Gets the average_speed of this ModelFlow.
+        r"""Gets the average_speed of this ModelFlow.
 
         **参数说明**：车辆平均速度，单位km/h。
 
@@ -112,7 +112,7 @@ class ModelFlow:
 
     @average_speed.setter
     def average_speed(self, average_speed):
-        """Sets the average_speed of this ModelFlow.
+        r"""Sets the average_speed of this ModelFlow.
 
         **参数说明**：车辆平均速度，单位km/h。
 

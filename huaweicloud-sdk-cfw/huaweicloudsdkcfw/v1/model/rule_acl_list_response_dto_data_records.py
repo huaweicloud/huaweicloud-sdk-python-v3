@@ -63,7 +63,7 @@ class RuleAclListResponseDTODataRecords:
     }
 
     def __init__(self, rule_id=None, applications=None, address_type=None, name=None, direction=None, action_type=None, status=None, description=None, long_connect_time=None, long_connect_enable=None, long_connect_time_hour=None, long_connect_time_minute=None, long_connect_time_second=None, source=None, destination=None, service=None, type=None, created_date=None, last_open_time=None, tag=None):
-        """RuleAclListResponseDTODataRecords
+        r"""RuleAclListResponseDTODataRecords
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this RuleAclListResponseDTODataRecords.
+        r"""Gets the rule_id of this RuleAclListResponseDTODataRecords.
 
         规则id
 
@@ -187,7 +187,7 @@ class RuleAclListResponseDTODataRecords:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this RuleAclListResponseDTODataRecords.
+        r"""Sets the rule_id of this RuleAclListResponseDTODataRecords.
 
         规则id
 
@@ -198,7 +198,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def applications(self):
-        """Gets the applications of this RuleAclListResponseDTODataRecords.
+        r"""Gets the applications of this RuleAclListResponseDTODataRecords.
 
         应用列表
 
@@ -209,7 +209,7 @@ class RuleAclListResponseDTODataRecords:
 
     @applications.setter
     def applications(self, applications):
-        """Sets the applications of this RuleAclListResponseDTODataRecords.
+        r"""Sets the applications of this RuleAclListResponseDTODataRecords.
 
         应用列表
 
@@ -220,7 +220,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def address_type(self):
-        """Gets the address_type of this RuleAclListResponseDTODataRecords.
+        r"""Gets the address_type of this RuleAclListResponseDTODataRecords.
 
         地址类型0 ipv4，1 ipv6
 
@@ -231,7 +231,7 @@ class RuleAclListResponseDTODataRecords:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this RuleAclListResponseDTODataRecords.
+        r"""Sets the address_type of this RuleAclListResponseDTODataRecords.
 
         地址类型0 ipv4，1 ipv6
 
@@ -242,7 +242,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def name(self):
-        """Gets the name of this RuleAclListResponseDTODataRecords.
+        r"""Gets the name of this RuleAclListResponseDTODataRecords.
 
         规则名称
 
@@ -253,7 +253,7 @@ class RuleAclListResponseDTODataRecords:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RuleAclListResponseDTODataRecords.
+        r"""Sets the name of this RuleAclListResponseDTODataRecords.
 
         规则名称
 
@@ -264,7 +264,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def direction(self):
-        """Gets the direction of this RuleAclListResponseDTODataRecords.
+        r"""Gets the direction of this RuleAclListResponseDTODataRecords.
 
         规则方向0：外到内1：内到外
 
@@ -275,7 +275,7 @@ class RuleAclListResponseDTODataRecords:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this RuleAclListResponseDTODataRecords.
+        r"""Sets the direction of this RuleAclListResponseDTODataRecords.
 
         规则方向0：外到内1：内到外
 
@@ -286,7 +286,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def action_type(self):
-        """Gets the action_type of this RuleAclListResponseDTODataRecords.
+        r"""Gets the action_type of this RuleAclListResponseDTODataRecords.
 
         动作0：permit，1：deny
 
@@ -297,7 +297,7 @@ class RuleAclListResponseDTODataRecords:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this RuleAclListResponseDTODataRecords.
+        r"""Sets the action_type of this RuleAclListResponseDTODataRecords.
 
         动作0：permit，1：deny
 
@@ -308,7 +308,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def status(self):
-        """Gets the status of this RuleAclListResponseDTODataRecords.
+        r"""Gets the status of this RuleAclListResponseDTODataRecords.
 
         规则下发状态 0：禁用，1：启用
 
@@ -319,7 +319,7 @@ class RuleAclListResponseDTODataRecords:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RuleAclListResponseDTODataRecords.
+        r"""Sets the status of this RuleAclListResponseDTODataRecords.
 
         规则下发状态 0：禁用，1：启用
 
@@ -330,7 +330,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def description(self):
-        """Gets the description of this RuleAclListResponseDTODataRecords.
+        r"""Gets the description of this RuleAclListResponseDTODataRecords.
 
         描述
 
@@ -341,7 +341,7 @@ class RuleAclListResponseDTODataRecords:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RuleAclListResponseDTODataRecords.
+        r"""Sets the description of this RuleAclListResponseDTODataRecords.
 
         描述
 
@@ -352,7 +352,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def long_connect_time(self):
-        """Gets the long_connect_time of this RuleAclListResponseDTODataRecords.
+        r"""Gets the long_connect_time of this RuleAclListResponseDTODataRecords.
 
         长连接时长
 
@@ -363,7 +363,7 @@ class RuleAclListResponseDTODataRecords:
 
     @long_connect_time.setter
     def long_connect_time(self, long_connect_time):
-        """Sets the long_connect_time of this RuleAclListResponseDTODataRecords.
+        r"""Sets the long_connect_time of this RuleAclListResponseDTODataRecords.
 
         长连接时长
 
@@ -374,7 +374,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def long_connect_enable(self):
-        """Gets the long_connect_enable of this RuleAclListResponseDTODataRecords.
+        r"""Gets the long_connect_enable of this RuleAclListResponseDTODataRecords.
 
         长连接支持
 
@@ -385,7 +385,7 @@ class RuleAclListResponseDTODataRecords:
 
     @long_connect_enable.setter
     def long_connect_enable(self, long_connect_enable):
-        """Sets the long_connect_enable of this RuleAclListResponseDTODataRecords.
+        r"""Sets the long_connect_enable of this RuleAclListResponseDTODataRecords.
 
         长连接支持
 
@@ -396,7 +396,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def long_connect_time_hour(self):
-        """Gets the long_connect_time_hour of this RuleAclListResponseDTODataRecords.
+        r"""Gets the long_connect_time_hour of this RuleAclListResponseDTODataRecords.
 
         长连接时长对应小时
 
@@ -407,7 +407,7 @@ class RuleAclListResponseDTODataRecords:
 
     @long_connect_time_hour.setter
     def long_connect_time_hour(self, long_connect_time_hour):
-        """Sets the long_connect_time_hour of this RuleAclListResponseDTODataRecords.
+        r"""Sets the long_connect_time_hour of this RuleAclListResponseDTODataRecords.
 
         长连接时长对应小时
 
@@ -418,7 +418,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def long_connect_time_minute(self):
-        """Gets the long_connect_time_minute of this RuleAclListResponseDTODataRecords.
+        r"""Gets the long_connect_time_minute of this RuleAclListResponseDTODataRecords.
 
         长连接时长对应分钟
 
@@ -429,7 +429,7 @@ class RuleAclListResponseDTODataRecords:
 
     @long_connect_time_minute.setter
     def long_connect_time_minute(self, long_connect_time_minute):
-        """Sets the long_connect_time_minute of this RuleAclListResponseDTODataRecords.
+        r"""Sets the long_connect_time_minute of this RuleAclListResponseDTODataRecords.
 
         长连接时长对应分钟
 
@@ -440,7 +440,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def long_connect_time_second(self):
-        """Gets the long_connect_time_second of this RuleAclListResponseDTODataRecords.
+        r"""Gets the long_connect_time_second of this RuleAclListResponseDTODataRecords.
 
         长连接时长秒
 
@@ -451,7 +451,7 @@ class RuleAclListResponseDTODataRecords:
 
     @long_connect_time_second.setter
     def long_connect_time_second(self, long_connect_time_second):
-        """Sets the long_connect_time_second of this RuleAclListResponseDTODataRecords.
+        r"""Sets the long_connect_time_second of this RuleAclListResponseDTODataRecords.
 
         长连接时长秒
 
@@ -462,7 +462,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def source(self):
-        """Gets the source of this RuleAclListResponseDTODataRecords.
+        r"""Gets the source of this RuleAclListResponseDTODataRecords.
 
         :return: The source of this RuleAclListResponseDTODataRecords.
         :rtype: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForResponse`
@@ -471,7 +471,7 @@ class RuleAclListResponseDTODataRecords:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this RuleAclListResponseDTODataRecords.
+        r"""Sets the source of this RuleAclListResponseDTODataRecords.
 
         :param source: The source of this RuleAclListResponseDTODataRecords.
         :type source: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForResponse`
@@ -480,7 +480,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def destination(self):
-        """Gets the destination of this RuleAclListResponseDTODataRecords.
+        r"""Gets the destination of this RuleAclListResponseDTODataRecords.
 
         :return: The destination of this RuleAclListResponseDTODataRecords.
         :rtype: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForResponse`
@@ -489,7 +489,7 @@ class RuleAclListResponseDTODataRecords:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this RuleAclListResponseDTODataRecords.
+        r"""Sets the destination of this RuleAclListResponseDTODataRecords.
 
         :param destination: The destination of this RuleAclListResponseDTODataRecords.
         :type destination: :class:`huaweicloudsdkcfw.v1.RuleAddressDtoForResponse`
@@ -498,7 +498,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def service(self):
-        """Gets the service of this RuleAclListResponseDTODataRecords.
+        r"""Gets the service of this RuleAclListResponseDTODataRecords.
 
         :return: The service of this RuleAclListResponseDTODataRecords.
         :rtype: :class:`huaweicloudsdkcfw.v1.RuleServiceDtoForResponse`
@@ -507,7 +507,7 @@ class RuleAclListResponseDTODataRecords:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this RuleAclListResponseDTODataRecords.
+        r"""Sets the service of this RuleAclListResponseDTODataRecords.
 
         :param service: The service of this RuleAclListResponseDTODataRecords.
         :type service: :class:`huaweicloudsdkcfw.v1.RuleServiceDtoForResponse`
@@ -516,7 +516,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def type(self):
-        """Gets the type of this RuleAclListResponseDTODataRecords.
+        r"""Gets the type of this RuleAclListResponseDTODataRecords.
 
         规则类型，0：互联网规则，1：vpc规则，2：nat规则
 
@@ -527,7 +527,7 @@ class RuleAclListResponseDTODataRecords:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RuleAclListResponseDTODataRecords.
+        r"""Sets the type of this RuleAclListResponseDTODataRecords.
 
         规则类型，0：互联网规则，1：vpc规则，2：nat规则
 
@@ -538,7 +538,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def created_date(self):
-        """Gets the created_date of this RuleAclListResponseDTODataRecords.
+        r"""Gets the created_date of this RuleAclListResponseDTODataRecords.
 
         规则创建时间，例如：\"2024-08-12 08:40:00\"
 
@@ -549,7 +549,7 @@ class RuleAclListResponseDTODataRecords:
 
     @created_date.setter
     def created_date(self, created_date):
-        """Sets the created_date of this RuleAclListResponseDTODataRecords.
+        r"""Sets the created_date of this RuleAclListResponseDTODataRecords.
 
         规则创建时间，例如：\"2024-08-12 08:40:00\"
 
@@ -560,7 +560,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def last_open_time(self):
-        """Gets the last_open_time of this RuleAclListResponseDTODataRecords.
+        r"""Gets the last_open_time of this RuleAclListResponseDTODataRecords.
 
         规则最后开启时间，例如：\"2024-08-12 08:40:00\"
 
@@ -571,7 +571,7 @@ class RuleAclListResponseDTODataRecords:
 
     @last_open_time.setter
     def last_open_time(self, last_open_time):
-        """Sets the last_open_time of this RuleAclListResponseDTODataRecords.
+        r"""Sets the last_open_time of this RuleAclListResponseDTODataRecords.
 
         规则最后开启时间，例如：\"2024-08-12 08:40:00\"
 
@@ -582,7 +582,7 @@ class RuleAclListResponseDTODataRecords:
 
     @property
     def tag(self):
-        """Gets the tag of this RuleAclListResponseDTODataRecords.
+        r"""Gets the tag of this RuleAclListResponseDTODataRecords.
 
         :return: The tag of this RuleAclListResponseDTODataRecords.
         :rtype: :class:`huaweicloudsdkcfw.v1.TagsVO`
@@ -591,7 +591,7 @@ class RuleAclListResponseDTODataRecords:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this RuleAclListResponseDTODataRecords.
+        r"""Sets the tag of this RuleAclListResponseDTODataRecords.
 
         :param tag: The tag of this RuleAclListResponseDTODataRecords.
         :type tag: :class:`huaweicloudsdkcfw.v1.TagsVO`

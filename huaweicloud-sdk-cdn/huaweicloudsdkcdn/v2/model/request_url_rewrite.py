@@ -33,7 +33,7 @@ class RequestUrlRewrite:
     }
 
     def __init__(self, condition=None, redirect_status_code=None, redirect_url=None, redirect_host=None, execution_mode=None):
-        """RequestUrlRewrite
+        r"""RequestUrlRewrite
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class RequestUrlRewrite:
 
     @property
     def condition(self):
-        """Gets the condition of this RequestUrlRewrite.
+        r"""Gets the condition of this RequestUrlRewrite.
 
         :return: The condition of this RequestUrlRewrite.
         :rtype: :class:`huaweicloudsdkcdn.v2.UrlRewriteCondition`
@@ -77,7 +77,7 @@ class RequestUrlRewrite:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this RequestUrlRewrite.
+        r"""Sets the condition of this RequestUrlRewrite.
 
         :param condition: The condition of this RequestUrlRewrite.
         :type condition: :class:`huaweicloudsdkcdn.v2.UrlRewriteCondition`
@@ -86,7 +86,7 @@ class RequestUrlRewrite:
 
     @property
     def redirect_status_code(self):
-        """Gets the redirect_status_code of this RequestUrlRewrite.
+        r"""Gets the redirect_status_code of this RequestUrlRewrite.
 
         重定向状态码。支持301、302、303、307。
 
@@ -97,7 +97,7 @@ class RequestUrlRewrite:
 
     @redirect_status_code.setter
     def redirect_status_code(self, redirect_status_code):
-        """Sets the redirect_status_code of this RequestUrlRewrite.
+        r"""Sets the redirect_status_code of this RequestUrlRewrite.
 
         重定向状态码。支持301、302、303、307。
 
@@ -108,7 +108,7 @@ class RequestUrlRewrite:
 
     @property
     def redirect_url(self):
-        """Gets the redirect_url of this RequestUrlRewrite.
+        r"""Gets the redirect_url of this RequestUrlRewrite.
 
         重定向URL。重定向后的URL，以正斜线（/）开头，不含http://头及域名，如：/test/index.html。   - 当匹配类型为全路径时，\"\\*\"可以用“$1”捕获，例如：匹配内容为/test/\\*.jpg，重定向URL配置为/newtest/$1.jpg，则用户请求/test/11.jpg时，$1捕获11，重定向后请求的URL为/newtest/11.jpg。
 
@@ -119,7 +119,7 @@ class RequestUrlRewrite:
 
     @redirect_url.setter
     def redirect_url(self, redirect_url):
-        """Sets the redirect_url of this RequestUrlRewrite.
+        r"""Sets the redirect_url of this RequestUrlRewrite.
 
         重定向URL。重定向后的URL，以正斜线（/）开头，不含http://头及域名，如：/test/index.html。   - 当匹配类型为全路径时，\"\\*\"可以用“$1”捕获，例如：匹配内容为/test/\\*.jpg，重定向URL配置为/newtest/$1.jpg，则用户请求/test/11.jpg时，$1捕获11，重定向后请求的URL为/newtest/11.jpg。
 
@@ -130,7 +130,7 @@ class RequestUrlRewrite:
 
     @property
     def redirect_host(self):
-        """Gets the redirect_host of this RequestUrlRewrite.
+        r"""Gets the redirect_host of this RequestUrlRewrite.
 
         支持将客户端请求重定向到其他域名。   > 不填时默认为当前域名。   > 支持字符长度为1-255，必须以http://或https://开头，例如http://www.example.com。
 
@@ -141,7 +141,7 @@ class RequestUrlRewrite:
 
     @redirect_host.setter
     def redirect_host(self, redirect_host):
-        """Sets the redirect_host of this RequestUrlRewrite.
+        r"""Sets the redirect_host of this RequestUrlRewrite.
 
         支持将客户端请求重定向到其他域名。   > 不填时默认为当前域名。   > 支持字符长度为1-255，必须以http://或https://开头，例如http://www.example.com。
 
@@ -152,7 +152,7 @@ class RequestUrlRewrite:
 
     @property
     def execution_mode(self):
-        """Gets the execution_mode of this RequestUrlRewrite.
+        r"""Gets the execution_mode of this RequestUrlRewrite.
 
         执行规则：   - redirect：如果请求的URL匹配了当前规则，该请求将被重定向到目标Path。执行完当前规则后，当存在其他配置规则时，会继续匹配剩余规则。   - break：如果请求的URL匹配了当前规则，请求将被改写为目标Path。执行完当前规则后，当存在其他配置规则时，将不再匹配剩余规则，此时不支持配置重定向Host和重定向状态码，返回状态码200。
 
@@ -163,7 +163,7 @@ class RequestUrlRewrite:
 
     @execution_mode.setter
     def execution_mode(self, execution_mode):
-        """Sets the execution_mode of this RequestUrlRewrite.
+        r"""Sets the execution_mode of this RequestUrlRewrite.
 
         执行规则：   - redirect：如果请求的URL匹配了当前规则，该请求将被重定向到目标Path。执行完当前规则后，当存在其他配置规则时，会继续匹配剩余规则。   - break：如果请求的URL匹配了当前规则，请求将被改写为目标Path。执行完当前规则后，当存在其他配置规则时，将不再匹配剩余规则，此时不支持配置重定向Host和重定向状态码，返回状态码200。
 

@@ -41,7 +41,7 @@ class PropDefinition:
     }
 
     def __init__(self, id=None, name=None, type=None, description=None, value_range=None, optimal_range=None, warning_range=None, style=None, confidential_interval=None):
-        """PropDefinition
+        r"""PropDefinition
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class PropDefinition:
 
     @property
     def id(self):
-        """Gets the id of this PropDefinition.
+        r"""Gets the id of this PropDefinition.
 
         属性业务侧ID
 
@@ -110,7 +110,7 @@ class PropDefinition:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PropDefinition.
+        r"""Sets the id of this PropDefinition.
 
         属性业务侧ID
 
@@ -121,7 +121,7 @@ class PropDefinition:
 
     @property
     def name(self):
-        """Gets the name of this PropDefinition.
+        r"""Gets the name of this PropDefinition.
 
         属性名称
 
@@ -132,7 +132,7 @@ class PropDefinition:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PropDefinition.
+        r"""Sets the name of this PropDefinition.
 
         属性名称
 
@@ -143,7 +143,7 @@ class PropDefinition:
 
     @property
     def type(self):
-        """Gets the type of this PropDefinition.
+        r"""Gets the type of this PropDefinition.
 
         属性类型
 
@@ -154,7 +154,7 @@ class PropDefinition:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PropDefinition.
+        r"""Sets the type of this PropDefinition.
 
         属性类型
 
@@ -165,7 +165,7 @@ class PropDefinition:
 
     @property
     def description(self):
-        """Gets the description of this PropDefinition.
+        r"""Gets the description of this PropDefinition.
 
         属性具体描述信息
 
@@ -176,7 +176,7 @@ class PropDefinition:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PropDefinition.
+        r"""Sets the description of this PropDefinition.
 
         属性具体描述信息
 
@@ -187,7 +187,7 @@ class PropDefinition:
 
     @property
     def value_range(self):
-        """Gets the value_range of this PropDefinition.
+        r"""Gets the value_range of this PropDefinition.
 
         :return: The value_range of this PropDefinition.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ValueRange`
@@ -196,7 +196,7 @@ class PropDefinition:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this PropDefinition.
+        r"""Sets the value_range of this PropDefinition.
 
         :param value_range: The value_range of this PropDefinition.
         :type value_range: :class:`huaweicloudsdkeihealth.v1.ValueRange`
@@ -205,7 +205,7 @@ class PropDefinition:
 
     @property
     def optimal_range(self):
-        """Gets the optimal_range of this PropDefinition.
+        r"""Gets the optimal_range of this PropDefinition.
 
         :return: The optimal_range of this PropDefinition.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ValueRange`
@@ -214,7 +214,7 @@ class PropDefinition:
 
     @optimal_range.setter
     def optimal_range(self, optimal_range):
-        """Sets the optimal_range of this PropDefinition.
+        r"""Sets the optimal_range of this PropDefinition.
 
         :param optimal_range: The optimal_range of this PropDefinition.
         :type optimal_range: :class:`huaweicloudsdkeihealth.v1.ValueRange`
@@ -223,7 +223,7 @@ class PropDefinition:
 
     @property
     def warning_range(self):
-        """Gets the warning_range of this PropDefinition.
+        r"""Gets the warning_range of this PropDefinition.
 
         :return: The warning_range of this PropDefinition.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ValueRange`
@@ -232,7 +232,7 @@ class PropDefinition:
 
     @warning_range.setter
     def warning_range(self, warning_range):
-        """Sets the warning_range of this PropDefinition.
+        r"""Sets the warning_range of this PropDefinition.
 
         :param warning_range: The warning_range of this PropDefinition.
         :type warning_range: :class:`huaweicloudsdkeihealth.v1.ValueRange`
@@ -241,7 +241,7 @@ class PropDefinition:
 
     @property
     def style(self):
-        """Gets the style of this PropDefinition.
+        r"""Gets the style of this PropDefinition.
 
         模型参数呈现类型
 
@@ -252,7 +252,7 @@ class PropDefinition:
 
     @style.setter
     def style(self, style):
-        """Sets the style of this PropDefinition.
+        r"""Sets the style of this PropDefinition.
 
         模型参数呈现类型
 
@@ -263,7 +263,7 @@ class PropDefinition:
 
     @property
     def confidential_interval(self):
-        """Gets the confidential_interval of this PropDefinition.
+        r"""Gets the confidential_interval of this PropDefinition.
 
         模型推理是否呈现置信区间
 
@@ -274,7 +274,7 @@ class PropDefinition:
 
     @confidential_interval.setter
     def confidential_interval(self, confidential_interval):
-        """Sets the confidential_interval of this PropDefinition.
+        r"""Sets the confidential_interval of this PropDefinition.
 
         模型推理是否呈现置信区间
 

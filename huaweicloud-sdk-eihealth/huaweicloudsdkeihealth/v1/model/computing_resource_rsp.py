@@ -53,7 +53,7 @@ class ComputingResourceRsp:
     }
 
     def __init__(self, id=None, resource_id=None, evs_resource_id=None, name=None, spec=None, system_disk=None, data_disks=None, image=None, charge_mode=None, create_time=None, failure_reason=None, status=None, availability_zone_id=None, schedulable=None, node_labels=None):
-        """ComputingResourceRsp
+        r"""ComputingResourceRsp
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class ComputingResourceRsp:
 
     @property
     def id(self):
-        """Gets the id of this ComputingResourceRsp.
+        r"""Gets the id of this ComputingResourceRsp.
 
         实例ID
 
@@ -143,7 +143,7 @@ class ComputingResourceRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ComputingResourceRsp.
+        r"""Sets the id of this ComputingResourceRsp.
 
         实例ID
 
@@ -154,7 +154,7 @@ class ComputingResourceRsp:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ComputingResourceRsp.
+        r"""Gets the resource_id of this ComputingResourceRsp.
 
         资源ID
 
@@ -165,7 +165,7 @@ class ComputingResourceRsp:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ComputingResourceRsp.
+        r"""Sets the resource_id of this ComputingResourceRsp.
 
         资源ID
 
@@ -176,7 +176,7 @@ class ComputingResourceRsp:
 
     @property
     def evs_resource_id(self):
-        """Gets the evs_resource_id of this ComputingResourceRsp.
+        r"""Gets the evs_resource_id of this ComputingResourceRsp.
 
         额外盘资源ID
 
@@ -187,7 +187,7 @@ class ComputingResourceRsp:
 
     @evs_resource_id.setter
     def evs_resource_id(self, evs_resource_id):
-        """Sets the evs_resource_id of this ComputingResourceRsp.
+        r"""Sets the evs_resource_id of this ComputingResourceRsp.
 
         额外盘资源ID
 
@@ -198,7 +198,7 @@ class ComputingResourceRsp:
 
     @property
     def name(self):
-        """Gets the name of this ComputingResourceRsp.
+        r"""Gets the name of this ComputingResourceRsp.
 
         实例名称
 
@@ -209,7 +209,7 @@ class ComputingResourceRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComputingResourceRsp.
+        r"""Sets the name of this ComputingResourceRsp.
 
         实例名称
 
@@ -220,7 +220,7 @@ class ComputingResourceRsp:
 
     @property
     def spec(self):
-        """Gets the spec of this ComputingResourceRsp.
+        r"""Gets the spec of this ComputingResourceRsp.
 
         :return: The spec of this ComputingResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ComputingSpecDto`
@@ -229,7 +229,7 @@ class ComputingResourceRsp:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ComputingResourceRsp.
+        r"""Sets the spec of this ComputingResourceRsp.
 
         :param spec: The spec of this ComputingResourceRsp.
         :type spec: :class:`huaweicloudsdkeihealth.v1.ComputingSpecDto`
@@ -238,7 +238,7 @@ class ComputingResourceRsp:
 
     @property
     def system_disk(self):
-        """Gets the system_disk of this ComputingResourceRsp.
+        r"""Gets the system_disk of this ComputingResourceRsp.
 
         :return: The system_disk of this ComputingResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DiskDto`
@@ -247,7 +247,7 @@ class ComputingResourceRsp:
 
     @system_disk.setter
     def system_disk(self, system_disk):
-        """Sets the system_disk of this ComputingResourceRsp.
+        r"""Sets the system_disk of this ComputingResourceRsp.
 
         :param system_disk: The system_disk of this ComputingResourceRsp.
         :type system_disk: :class:`huaweicloudsdkeihealth.v1.DiskDto`
@@ -256,7 +256,7 @@ class ComputingResourceRsp:
 
     @property
     def data_disks(self):
-        """Gets the data_disks of this ComputingResourceRsp.
+        r"""Gets the data_disks of this ComputingResourceRsp.
 
         数据盘
 
@@ -267,7 +267,7 @@ class ComputingResourceRsp:
 
     @data_disks.setter
     def data_disks(self, data_disks):
-        """Sets the data_disks of this ComputingResourceRsp.
+        r"""Sets the data_disks of this ComputingResourceRsp.
 
         数据盘
 
@@ -278,7 +278,7 @@ class ComputingResourceRsp:
 
     @property
     def image(self):
-        """Gets the image of this ComputingResourceRsp.
+        r"""Gets the image of this ComputingResourceRsp.
 
         :return: The image of this ComputingResourceRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImageDto`
@@ -287,7 +287,7 @@ class ComputingResourceRsp:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this ComputingResourceRsp.
+        r"""Sets the image of this ComputingResourceRsp.
 
         :param image: The image of this ComputingResourceRsp.
         :type image: :class:`huaweicloudsdkeihealth.v1.ImageDto`
@@ -296,7 +296,7 @@ class ComputingResourceRsp:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ComputingResourceRsp.
+        r"""Gets the charge_mode of this ComputingResourceRsp.
 
         计费模式
 
@@ -307,7 +307,7 @@ class ComputingResourceRsp:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ComputingResourceRsp.
+        r"""Sets the charge_mode of this ComputingResourceRsp.
 
         计费模式
 
@@ -318,7 +318,7 @@ class ComputingResourceRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ComputingResourceRsp.
+        r"""Gets the create_time of this ComputingResourceRsp.
 
         购买时间
 
@@ -329,7 +329,7 @@ class ComputingResourceRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ComputingResourceRsp.
+        r"""Sets the create_time of this ComputingResourceRsp.
 
         购买时间
 
@@ -340,7 +340,7 @@ class ComputingResourceRsp:
 
     @property
     def failure_reason(self):
-        """Gets the failure_reason of this ComputingResourceRsp.
+        r"""Gets the failure_reason of this ComputingResourceRsp.
 
         失败原因
 
@@ -351,7 +351,7 @@ class ComputingResourceRsp:
 
     @failure_reason.setter
     def failure_reason(self, failure_reason):
-        """Sets the failure_reason of this ComputingResourceRsp.
+        r"""Sets the failure_reason of this ComputingResourceRsp.
 
         失败原因
 
@@ -362,7 +362,7 @@ class ComputingResourceRsp:
 
     @property
     def status(self):
-        """Gets the status of this ComputingResourceRsp.
+        r"""Gets the status of this ComputingResourceRsp.
 
         状态
 
@@ -373,7 +373,7 @@ class ComputingResourceRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ComputingResourceRsp.
+        r"""Sets the status of this ComputingResourceRsp.
 
         状态
 
@@ -384,7 +384,7 @@ class ComputingResourceRsp:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this ComputingResourceRsp.
+        r"""Gets the availability_zone_id of this ComputingResourceRsp.
 
         可用区
 
@@ -395,7 +395,7 @@ class ComputingResourceRsp:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this ComputingResourceRsp.
+        r"""Sets the availability_zone_id of this ComputingResourceRsp.
 
         可用区
 
@@ -406,7 +406,7 @@ class ComputingResourceRsp:
 
     @property
     def schedulable(self):
-        """Gets the schedulable of this ComputingResourceRsp.
+        r"""Gets the schedulable of this ComputingResourceRsp.
 
         资源是否可调度
 
@@ -417,7 +417,7 @@ class ComputingResourceRsp:
 
     @schedulable.setter
     def schedulable(self, schedulable):
-        """Sets the schedulable of this ComputingResourceRsp.
+        r"""Sets the schedulable of this ComputingResourceRsp.
 
         资源是否可调度
 
@@ -428,7 +428,7 @@ class ComputingResourceRsp:
 
     @property
     def node_labels(self):
-        """Gets the node_labels of this ComputingResourceRsp.
+        r"""Gets the node_labels of this ComputingResourceRsp.
 
         计算节点标签列表
 
@@ -439,7 +439,7 @@ class ComputingResourceRsp:
 
     @node_labels.setter
     def node_labels(self, node_labels):
-        """Sets the node_labels of this ComputingResourceRsp.
+        r"""Sets the node_labels of this ComputingResourceRsp.
 
         计算节点标签列表
 

@@ -29,7 +29,7 @@ class UpdateDesktopUsernameReq:
     }
 
     def __init__(self, old_username=None, new_username=None, is_reboot=None):
-        """UpdateDesktopUsernameReq
+        r"""UpdateDesktopUsernameReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDesktopUsernameReq:
 
     @property
     def old_username(self):
-        """Gets the old_username of this UpdateDesktopUsernameReq.
+        r"""Gets the old_username of this UpdateDesktopUsernameReq.
 
         桌面关联原用户名，只传用户名，不带域信息。
 
@@ -66,7 +66,7 @@ class UpdateDesktopUsernameReq:
 
     @old_username.setter
     def old_username(self, old_username):
-        """Sets the old_username of this UpdateDesktopUsernameReq.
+        r"""Sets the old_username of this UpdateDesktopUsernameReq.
 
         桌面关联原用户名，只传用户名，不带域信息。
 
@@ -77,7 +77,7 @@ class UpdateDesktopUsernameReq:
 
     @property
     def new_username(self):
-        """Gets the new_username of this UpdateDesktopUsernameReq.
+        r"""Gets the new_username of this UpdateDesktopUsernameReq.
 
         桌面关联新用户名，只传用户名，不带域信息。
 
@@ -88,7 +88,7 @@ class UpdateDesktopUsernameReq:
 
     @new_username.setter
     def new_username(self, new_username):
-        """Sets the new_username of this UpdateDesktopUsernameReq.
+        r"""Sets the new_username of this UpdateDesktopUsernameReq.
 
         桌面关联新用户名，只传用户名，不带域信息。
 
@@ -99,7 +99,7 @@ class UpdateDesktopUsernameReq:
 
     @property
     def is_reboot(self):
-        """Gets the is_reboot of this UpdateDesktopUsernameReq.
+        r"""Gets the is_reboot of this UpdateDesktopUsernameReq.
 
         桌面关联新用户名后是否重启虚拟机，默认不重启。
 
@@ -110,7 +110,7 @@ class UpdateDesktopUsernameReq:
 
     @is_reboot.setter
     def is_reboot(self, is_reboot):
-        """Sets the is_reboot of this UpdateDesktopUsernameReq.
+        r"""Sets the is_reboot of this UpdateDesktopUsernameReq.
 
         桌面关联新用户名后是否重启虚拟机，默认不重启。
 

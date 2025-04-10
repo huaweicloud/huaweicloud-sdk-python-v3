@@ -26,7 +26,7 @@ class CheckTableRestoreResponse(SdkResponse):
     }
 
     def __init__(self, check_table_name_result=None):
-        """CheckTableRestoreResponse
+        r"""CheckTableRestoreResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CheckTableRestoreResponse(SdkResponse):
 
     @property
     def check_table_name_result(self):
-        """Gets the check_table_name_result of this CheckTableRestoreResponse.
+        r"""Gets the check_table_name_result of this CheckTableRestoreResponse.
 
         :return: The check_table_name_result of this CheckTableRestoreResponse.
         :rtype: :class:`huaweicloudsdkdws.v2.CheckTableNameResult`
@@ -53,7 +53,7 @@ class CheckTableRestoreResponse(SdkResponse):
 
     @check_table_name_result.setter
     def check_table_name_result(self, check_table_name_result):
-        """Sets the check_table_name_result of this CheckTableRestoreResponse.
+        r"""Sets the check_table_name_result of this CheckTableRestoreResponse.
 
         :param check_table_name_result: The check_table_name_result of this CheckTableRestoreResponse.
         :type check_table_name_result: :class:`huaweicloudsdkdws.v2.CheckTableNameResult`

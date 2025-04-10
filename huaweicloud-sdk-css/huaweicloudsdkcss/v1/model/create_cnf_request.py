@@ -27,7 +27,7 @@ class CreateCnfRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateCnfRequest
+        r"""CreateCnfRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCnfRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateCnfRequest.
+        r"""Gets the cluster_id of this CreateCnfRequest.
 
         指定创建配置文件的集群ID。
 
@@ -60,7 +60,7 @@ class CreateCnfRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateCnfRequest.
+        r"""Sets the cluster_id of this CreateCnfRequest.
 
         指定创建配置文件的集群ID。
 
@@ -71,7 +71,7 @@ class CreateCnfRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCnfRequest.
+        r"""Gets the body of this CreateCnfRequest.
 
         :return: The body of this CreateCnfRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.CreateCnfReq`
@@ -80,7 +80,7 @@ class CreateCnfRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCnfRequest.
+        r"""Sets the body of this CreateCnfRequest.
 
         :param body: The body of this CreateCnfRequest.
         :type body: :class:`huaweicloudsdkcss.v1.CreateCnfReq`

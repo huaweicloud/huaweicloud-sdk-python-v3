@@ -27,7 +27,7 @@ class DemandInstance:
     }
 
     def __init__(self, pool_id=None, pool_ids=None):
-        """DemandInstance
+        r"""DemandInstance
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DemandInstance:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this DemandInstance.
+        r"""Gets the pool_id of this DemandInstance.
 
         弹性公网IP池。 多线路场景下，将在该弹性公网IP池下创建弹性公网IP。 > 覆盖规则为省级/大区时不支持指定线路ID创建边缘业务。
 
@@ -61,7 +61,7 @@ class DemandInstance:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this DemandInstance.
+        r"""Sets the pool_id of this DemandInstance.
 
         弹性公网IP池。 多线路场景下，将在该弹性公网IP池下创建弹性公网IP。 > 覆盖规则为省级/大区时不支持指定线路ID创建边缘业务。
 
@@ -72,7 +72,7 @@ class DemandInstance:
 
     @property
     def pool_ids(self):
-        """Gets the pool_ids of this DemandInstance.
+        r"""Gets the pool_ids of this DemandInstance.
 
         线路ID集合。多线路场景下，将在各线路下创建弹性公网IP。
 
@@ -83,7 +83,7 @@ class DemandInstance:
 
     @pool_ids.setter
     def pool_ids(self, pool_ids):
-        """Sets the pool_ids of this DemandInstance.
+        r"""Sets the pool_ids of this DemandInstance.
 
         线路ID集合。多线路场景下，将在各线路下创建弹性公网IP。
 

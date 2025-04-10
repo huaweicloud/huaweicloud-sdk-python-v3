@@ -27,7 +27,7 @@ class DeleteProtectedInstanceNicRequest:
     }
 
     def __init__(self, protected_instance_id=None, body=None):
-        """DeleteProtectedInstanceNicRequest
+        r"""DeleteProtectedInstanceNicRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteProtectedInstanceNicRequest:
 
     @property
     def protected_instance_id(self):
-        """Gets the protected_instance_id of this DeleteProtectedInstanceNicRequest.
+        r"""Gets the protected_instance_id of this DeleteProtectedInstanceNicRequest.
 
         保护实例的ID。
 
@@ -60,7 +60,7 @@ class DeleteProtectedInstanceNicRequest:
 
     @protected_instance_id.setter
     def protected_instance_id(self, protected_instance_id):
-        """Sets the protected_instance_id of this DeleteProtectedInstanceNicRequest.
+        r"""Sets the protected_instance_id of this DeleteProtectedInstanceNicRequest.
 
         保护实例的ID。
 
@@ -71,7 +71,7 @@ class DeleteProtectedInstanceNicRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteProtectedInstanceNicRequest.
+        r"""Gets the body of this DeleteProtectedInstanceNicRequest.
 
         :return: The body of this DeleteProtectedInstanceNicRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceDeleteNicRequestBody`
@@ -80,7 +80,7 @@ class DeleteProtectedInstanceNicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteProtectedInstanceNicRequest.
+        r"""Sets the body of this DeleteProtectedInstanceNicRequest.
 
         :param body: The body of this DeleteProtectedInstanceNicRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceDeleteNicRequestBody`

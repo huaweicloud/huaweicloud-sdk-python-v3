@@ -41,7 +41,7 @@ class Cluster:
     }
 
     def __init__(self, auth_mode=None, enable_lemon=None, enable_open_tsdb=None, instance=None, name=None, storage_size=None, storage_type=None, vpc_id=None, datastore=None):
-        """Cluster
+        r"""Cluster
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class Cluster:
 
     @property
     def auth_mode(self):
-        """Gets the auth_mode of this Cluster.
+        r"""Gets the auth_mode of this Cluster.
 
         是否开启IAM权限认证。 - false：不开启 - true：开启
 
@@ -105,7 +105,7 @@ class Cluster:
 
     @auth_mode.setter
     def auth_mode(self, auth_mode):
-        """Sets the auth_mode of this Cluster.
+        r"""Sets the auth_mode of this Cluster.
 
         是否开启IAM权限认证。 - false：不开启 - true：开启
 
@@ -116,7 +116,7 @@ class Cluster:
 
     @property
     def enable_lemon(self):
-        """Gets the enable_lemon of this Cluster.
+        r"""Gets the enable_lemon of this Cluster.
 
         是否开启Lemon(目前已关闭该参数，填false即可) - false：不开启 - true：开启
 
@@ -127,7 +127,7 @@ class Cluster:
 
     @enable_lemon.setter
     def enable_lemon(self, enable_lemon):
-        """Sets the enable_lemon of this Cluster.
+        r"""Sets the enable_lemon of this Cluster.
 
         是否开启Lemon(目前已关闭该参数，填false即可) - false：不开启 - true：开启
 
@@ -138,7 +138,7 @@ class Cluster:
 
     @property
     def enable_open_tsdb(self):
-        """Gets the enable_open_tsdb of this Cluster.
+        r"""Gets the enable_open_tsdb of this Cluster.
 
         是否开启OpenTSDB。 - false：不开启 - true：开启
 
@@ -149,7 +149,7 @@ class Cluster:
 
     @enable_open_tsdb.setter
     def enable_open_tsdb(self, enable_open_tsdb):
-        """Sets the enable_open_tsdb of this Cluster.
+        r"""Sets the enable_open_tsdb of this Cluster.
 
         是否开启OpenTSDB。 - false：不开启 - true：开启
 
@@ -160,7 +160,7 @@ class Cluster:
 
     @property
     def instance(self):
-        """Gets the instance of this Cluster.
+        r"""Gets the instance of this Cluster.
 
         :return: The instance of this Cluster.
         :rtype: :class:`huaweicloudsdkcloudtable.v2.Instance`
@@ -169,7 +169,7 @@ class Cluster:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this Cluster.
+        r"""Sets the instance of this Cluster.
 
         :param instance: The instance of this Cluster.
         :type instance: :class:`huaweicloudsdkcloudtable.v2.Instance`
@@ -178,7 +178,7 @@ class Cluster:
 
     @property
     def name(self):
-        """Gets the name of this Cluster.
+        r"""Gets the name of this Cluster.
 
         CloudTable集群的名称。
 
@@ -189,7 +189,7 @@ class Cluster:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Cluster.
+        r"""Sets the name of this Cluster.
 
         CloudTable集群的名称。
 
@@ -200,7 +200,7 @@ class Cluster:
 
     @property
     def storage_size(self):
-        """Gets the storage_size of this Cluster.
+        r"""Gets the storage_size of this Cluster.
 
         存储值的大小。  取值范围: 1-[10240-1024*1024*1024]
 
@@ -211,7 +211,7 @@ class Cluster:
 
     @storage_size.setter
     def storage_size(self, storage_size):
-        """Sets the storage_size of this Cluster.
+        r"""Sets the storage_size of this Cluster.
 
         存储值的大小。  取值范围: 1-[10240-1024*1024*1024]
 
@@ -222,7 +222,7 @@ class Cluster:
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this Cluster.
+        r"""Gets the storage_type of this Cluster.
 
         存储类型： - ULTRAHIGH：超高IO - COMMON：普通IO
 
@@ -233,7 +233,7 @@ class Cluster:
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this Cluster.
+        r"""Sets the storage_type of this Cluster.
 
         存储类型： - ULTRAHIGH：超高IO - COMMON：普通IO
 
@@ -244,7 +244,7 @@ class Cluster:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this Cluster.
+        r"""Gets the vpc_id of this Cluster.
 
         集群所在的（虚拟网络私有云）VPC。
 
@@ -255,7 +255,7 @@ class Cluster:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this Cluster.
+        r"""Sets the vpc_id of this Cluster.
 
         集群所在的（虚拟网络私有云）VPC。
 
@@ -266,7 +266,7 @@ class Cluster:
 
     @property
     def datastore(self):
-        """Gets the datastore of this Cluster.
+        r"""Gets the datastore of this Cluster.
 
         :return: The datastore of this Cluster.
         :rtype: :class:`huaweicloudsdkcloudtable.v2.Datastore`
@@ -275,7 +275,7 @@ class Cluster:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this Cluster.
+        r"""Sets the datastore of this Cluster.
 
         :param datastore: The datastore of this Cluster.
         :type datastore: :class:`huaweicloudsdkcloudtable.v2.Datastore`

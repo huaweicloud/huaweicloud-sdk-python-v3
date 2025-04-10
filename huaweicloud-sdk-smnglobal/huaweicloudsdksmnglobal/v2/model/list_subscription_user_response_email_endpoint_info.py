@@ -25,7 +25,7 @@ class ListSubscriptionUserResponseEmailEndpointInfo:
     }
 
     def __init__(self, endpoint=None):
-        """ListSubscriptionUserResponseEmailEndpointInfo
+        r"""ListSubscriptionUserResponseEmailEndpointInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListSubscriptionUserResponseEmailEndpointInfo:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this ListSubscriptionUserResponseEmailEndpointInfo.
+        r"""Gets the endpoint of this ListSubscriptionUserResponseEmailEndpointInfo.
 
         终端地址。
 
@@ -53,7 +53,7 @@ class ListSubscriptionUserResponseEmailEndpointInfo:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this ListSubscriptionUserResponseEmailEndpointInfo.
+        r"""Sets the endpoint of this ListSubscriptionUserResponseEmailEndpointInfo.
 
         终端地址。
 

@@ -33,7 +33,7 @@ class ListWorkflowRequest:
     }
 
     def __init__(self, workflow_name=None, limit=None, offset=None, enterprise_project=None, mode=None):
-        """ListWorkflowRequest
+        r"""ListWorkflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListWorkflowRequest:
 
     @property
     def workflow_name(self):
-        """Gets the workflow_name of this ListWorkflowRequest.
+        r"""Gets the workflow_name of this ListWorkflowRequest.
 
         函数流名称
 
@@ -82,7 +82,7 @@ class ListWorkflowRequest:
 
     @workflow_name.setter
     def workflow_name(self, workflow_name):
-        """Sets the workflow_name of this ListWorkflowRequest.
+        r"""Sets the workflow_name of this ListWorkflowRequest.
 
         函数流名称
 
@@ -93,7 +93,7 @@ class ListWorkflowRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkflowRequest.
+        r"""Gets the limit of this ListWorkflowRequest.
 
         分页查询，每页显示的条目数量，默认值为200 limit大于200时，按照200处理
 
@@ -104,7 +104,7 @@ class ListWorkflowRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkflowRequest.
+        r"""Sets the limit of this ListWorkflowRequest.
 
         分页查询，每页显示的条目数量，默认值为200 limit大于200时，按照200处理
 
@@ -115,7 +115,7 @@ class ListWorkflowRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkflowRequest.
+        r"""Gets the offset of this ListWorkflowRequest.
 
         分页查询，分页的偏移量，默认值为0 offset小于0时，按照0处理
 
@@ -126,7 +126,7 @@ class ListWorkflowRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkflowRequest.
+        r"""Sets the offset of this ListWorkflowRequest.
 
         分页查询，分页的偏移量，默认值为0 offset小于0时，按照0处理
 
@@ -137,7 +137,7 @@ class ListWorkflowRequest:
 
     @property
     def enterprise_project(self):
-        """Gets the enterprise_project of this ListWorkflowRequest.
+        r"""Gets the enterprise_project of this ListWorkflowRequest.
 
         企业项目ID
 
@@ -148,7 +148,7 @@ class ListWorkflowRequest:
 
     @enterprise_project.setter
     def enterprise_project(self, enterprise_project):
-        """Sets the enterprise_project of this ListWorkflowRequest.
+        r"""Sets the enterprise_project of this ListWorkflowRequest.
 
         企业项目ID
 
@@ -159,7 +159,7 @@ class ListWorkflowRequest:
 
     @property
     def mode(self):
-        """Gets the mode of this ListWorkflowRequest.
+        r"""Gets the mode of this ListWorkflowRequest.
 
         函数流模式 \"NORMAL\"标准函数流 \"EXPRESS\"快速函数流
 
@@ -170,7 +170,7 @@ class ListWorkflowRequest:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ListWorkflowRequest.
+        r"""Sets the mode of this ListWorkflowRequest.
 
         函数流模式 \"NORMAL\"标准函数流 \"EXPRESS\"快速函数流
 

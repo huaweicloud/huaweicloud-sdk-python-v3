@@ -41,7 +41,7 @@ class PublicationResponseBase:
     }
 
     def __init__(self, id=None, last_updated_by=None, create_time=None, update_time=None, publish_name=None, publish_scope=None, start_time=None, end_time=None, publish_status=None):
-        """PublicationResponseBase
+        r"""PublicationResponseBase
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class PublicationResponseBase:
 
     @property
     def id(self):
-        """Gets the id of this PublicationResponseBase.
+        r"""Gets the id of this PublicationResponseBase.
 
         发布ID。
 
@@ -110,7 +110,7 @@ class PublicationResponseBase:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublicationResponseBase.
+        r"""Sets the id of this PublicationResponseBase.
 
         发布ID。
 
@@ -121,7 +121,7 @@ class PublicationResponseBase:
 
     @property
     def last_updated_by(self):
-        """Gets the last_updated_by of this PublicationResponseBase.
+        r"""Gets the last_updated_by of this PublicationResponseBase.
 
         更新者。
 
@@ -132,7 +132,7 @@ class PublicationResponseBase:
 
     @last_updated_by.setter
     def last_updated_by(self, last_updated_by):
-        """Sets the last_updated_by of this PublicationResponseBase.
+        r"""Sets the last_updated_by of this PublicationResponseBase.
 
         更新者。
 
@@ -143,7 +143,7 @@ class PublicationResponseBase:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PublicationResponseBase.
+        r"""Gets the create_time of this PublicationResponseBase.
 
         创建时间。
 
@@ -154,7 +154,7 @@ class PublicationResponseBase:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PublicationResponseBase.
+        r"""Sets the create_time of this PublicationResponseBase.
 
         创建时间。
 
@@ -165,7 +165,7 @@ class PublicationResponseBase:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PublicationResponseBase.
+        r"""Gets the update_time of this PublicationResponseBase.
 
         更新时间。
 
@@ -176,7 +176,7 @@ class PublicationResponseBase:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PublicationResponseBase.
+        r"""Sets the update_time of this PublicationResponseBase.
 
         更新时间。
 
@@ -187,7 +187,7 @@ class PublicationResponseBase:
 
     @property
     def publish_name(self):
-        """Gets the publish_name of this PublicationResponseBase.
+        r"""Gets the publish_name of this PublicationResponseBase.
 
         发布名称。
 
@@ -198,7 +198,7 @@ class PublicationResponseBase:
 
     @publish_name.setter
     def publish_name(self, publish_name):
-        """Sets the publish_name of this PublicationResponseBase.
+        r"""Sets the publish_name of this PublicationResponseBase.
 
         发布名称。
 
@@ -209,7 +209,7 @@ class PublicationResponseBase:
 
     @property
     def publish_scope(self):
-        """Gets the publish_scope of this PublicationResponseBase.
+        r"""Gets the publish_scope of this PublicationResponseBase.
 
         发布范围。
 
@@ -220,7 +220,7 @@ class PublicationResponseBase:
 
     @publish_scope.setter
     def publish_scope(self, publish_scope):
-        """Sets the publish_scope of this PublicationResponseBase.
+        r"""Sets the publish_scope of this PublicationResponseBase.
 
         发布范围。
 
@@ -231,7 +231,7 @@ class PublicationResponseBase:
 
     @property
     def start_time(self):
-        """Gets the start_time of this PublicationResponseBase.
+        r"""Gets the start_time of this PublicationResponseBase.
 
         开始时间。
 
@@ -242,7 +242,7 @@ class PublicationResponseBase:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this PublicationResponseBase.
+        r"""Sets the start_time of this PublicationResponseBase.
 
         开始时间。
 
@@ -253,7 +253,7 @@ class PublicationResponseBase:
 
     @property
     def end_time(self):
-        """Gets the end_time of this PublicationResponseBase.
+        r"""Gets the end_time of this PublicationResponseBase.
 
         结束时间。
 
@@ -264,7 +264,7 @@ class PublicationResponseBase:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this PublicationResponseBase.
+        r"""Sets the end_time of this PublicationResponseBase.
 
         结束时间。
 
@@ -275,7 +275,7 @@ class PublicationResponseBase:
 
     @property
     def publish_status(self):
-        """Gets the publish_status of this PublicationResponseBase.
+        r"""Gets the publish_status of this PublicationResponseBase.
 
         根据当前时间确定发布状态。 - NOT_ONLINE-未上线 - PUBLISHING-发布中 - ALREADY_OFFLINE-已下线
 
@@ -286,7 +286,7 @@ class PublicationResponseBase:
 
     @publish_status.setter
     def publish_status(self, publish_status):
-        """Sets the publish_status of this PublicationResponseBase.
+        r"""Sets the publish_status of this PublicationResponseBase.
 
         根据当前时间确定发布状态。 - NOT_ONLINE-未上线 - PUBLISHING-发布中 - ALREADY_OFFLINE-已下线
 

@@ -29,7 +29,7 @@ class ListPostgresqlHbaInfoHistoryRequest:
     }
 
     def __init__(self, instance_id=None, start_time=None, end_time=None):
-        """ListPostgresqlHbaInfoHistoryRequest
+        r"""ListPostgresqlHbaInfoHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListPostgresqlHbaInfoHistoryRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPostgresqlHbaInfoHistoryRequest.
+        r"""Gets the instance_id of this ListPostgresqlHbaInfoHistoryRequest.
 
         实例id
 
@@ -67,7 +67,7 @@ class ListPostgresqlHbaInfoHistoryRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPostgresqlHbaInfoHistoryRequest.
+        r"""Sets the instance_id of this ListPostgresqlHbaInfoHistoryRequest.
 
         实例id
 
@@ -78,7 +78,7 @@ class ListPostgresqlHbaInfoHistoryRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListPostgresqlHbaInfoHistoryRequest.
+        r"""Gets the start_time of this ListPostgresqlHbaInfoHistoryRequest.
 
         开始时间,不传默认当天0点（UTC时区）
 
@@ -89,7 +89,7 @@ class ListPostgresqlHbaInfoHistoryRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListPostgresqlHbaInfoHistoryRequest.
+        r"""Sets the start_time of this ListPostgresqlHbaInfoHistoryRequest.
 
         开始时间,不传默认当天0点（UTC时区）
 
@@ -100,7 +100,7 @@ class ListPostgresqlHbaInfoHistoryRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListPostgresqlHbaInfoHistoryRequest.
+        r"""Gets the end_time of this ListPostgresqlHbaInfoHistoryRequest.
 
         结束时间,不传默认当前时间（UTC时区）
 
@@ -111,7 +111,7 @@ class ListPostgresqlHbaInfoHistoryRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListPostgresqlHbaInfoHistoryRequest.
+        r"""Sets the end_time of this ListPostgresqlHbaInfoHistoryRequest.
 
         结束时间,不传默认当前时间（UTC时区）
 

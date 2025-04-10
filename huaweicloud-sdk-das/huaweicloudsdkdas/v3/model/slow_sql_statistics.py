@@ -59,7 +59,7 @@ class SlowSqlStatistics:
     }
 
     def __init__(self, execute_count=None, avg_execute_time=None, max_execute_time=None, avg_lock_wait_time=None, max_lock_wait_time=None, avg_rows_sent=None, max_rows_sent=None, avg_rows_examined=None, max_rows_examined=None, avg_key_examined=None, max_key_examined=None, node_id=None, node_name=None, sql_type=None, db_name=None, collection=None, user=None, client=None):
-        """SlowSqlStatistics
+        r"""SlowSqlStatistics
 
         The model defined in huaweicloud sdk
 
@@ -151,7 +151,7 @@ class SlowSqlStatistics:
 
     @property
     def execute_count(self):
-        """Gets the execute_count of this SlowSqlStatistics.
+        r"""Gets the execute_count of this SlowSqlStatistics.
 
         执行次数。
 
@@ -162,7 +162,7 @@ class SlowSqlStatistics:
 
     @execute_count.setter
     def execute_count(self, execute_count):
-        """Sets the execute_count of this SlowSqlStatistics.
+        r"""Sets the execute_count of this SlowSqlStatistics.
 
         执行次数。
 
@@ -173,7 +173,7 @@ class SlowSqlStatistics:
 
     @property
     def avg_execute_time(self):
-        """Gets the avg_execute_time of this SlowSqlStatistics.
+        r"""Gets the avg_execute_time of this SlowSqlStatistics.
 
         平均执行耗时(s)。
 
@@ -184,7 +184,7 @@ class SlowSqlStatistics:
 
     @avg_execute_time.setter
     def avg_execute_time(self, avg_execute_time):
-        """Sets the avg_execute_time of this SlowSqlStatistics.
+        r"""Sets the avg_execute_time of this SlowSqlStatistics.
 
         平均执行耗时(s)。
 
@@ -195,7 +195,7 @@ class SlowSqlStatistics:
 
     @property
     def max_execute_time(self):
-        """Gets the max_execute_time of this SlowSqlStatistics.
+        r"""Gets the max_execute_time of this SlowSqlStatistics.
 
         最大执行耗时(s)。
 
@@ -206,7 +206,7 @@ class SlowSqlStatistics:
 
     @max_execute_time.setter
     def max_execute_time(self, max_execute_time):
-        """Sets the max_execute_time of this SlowSqlStatistics.
+        r"""Sets the max_execute_time of this SlowSqlStatistics.
 
         最大执行耗时(s)。
 
@@ -217,7 +217,7 @@ class SlowSqlStatistics:
 
     @property
     def avg_lock_wait_time(self):
-        """Gets the avg_lock_wait_time of this SlowSqlStatistics.
+        r"""Gets the avg_lock_wait_time of this SlowSqlStatistics.
 
         平均锁等待时间(s)。
 
@@ -228,7 +228,7 @@ class SlowSqlStatistics:
 
     @avg_lock_wait_time.setter
     def avg_lock_wait_time(self, avg_lock_wait_time):
-        """Sets the avg_lock_wait_time of this SlowSqlStatistics.
+        r"""Sets the avg_lock_wait_time of this SlowSqlStatistics.
 
         平均锁等待时间(s)。
 
@@ -239,7 +239,7 @@ class SlowSqlStatistics:
 
     @property
     def max_lock_wait_time(self):
-        """Gets the max_lock_wait_time of this SlowSqlStatistics.
+        r"""Gets the max_lock_wait_time of this SlowSqlStatistics.
 
         最大锁等待时间(s)。
 
@@ -250,7 +250,7 @@ class SlowSqlStatistics:
 
     @max_lock_wait_time.setter
     def max_lock_wait_time(self, max_lock_wait_time):
-        """Sets the max_lock_wait_time of this SlowSqlStatistics.
+        r"""Sets the max_lock_wait_time of this SlowSqlStatistics.
 
         最大锁等待时间(s)。
 
@@ -261,7 +261,7 @@ class SlowSqlStatistics:
 
     @property
     def avg_rows_sent(self):
-        """Gets the avg_rows_sent of this SlowSqlStatistics.
+        r"""Gets the avg_rows_sent of this SlowSqlStatistics.
 
         平均返回文档数。
 
@@ -272,7 +272,7 @@ class SlowSqlStatistics:
 
     @avg_rows_sent.setter
     def avg_rows_sent(self, avg_rows_sent):
-        """Sets the avg_rows_sent of this SlowSqlStatistics.
+        r"""Sets the avg_rows_sent of this SlowSqlStatistics.
 
         平均返回文档数。
 
@@ -283,7 +283,7 @@ class SlowSqlStatistics:
 
     @property
     def max_rows_sent(self):
-        """Gets the max_rows_sent of this SlowSqlStatistics.
+        r"""Gets the max_rows_sent of this SlowSqlStatistics.
 
         最大返回文档数。
 
@@ -294,7 +294,7 @@ class SlowSqlStatistics:
 
     @max_rows_sent.setter
     def max_rows_sent(self, max_rows_sent):
-        """Sets the max_rows_sent of this SlowSqlStatistics.
+        r"""Sets the max_rows_sent of this SlowSqlStatistics.
 
         最大返回文档数。
 
@@ -305,7 +305,7 @@ class SlowSqlStatistics:
 
     @property
     def avg_rows_examined(self):
-        """Gets the avg_rows_examined of this SlowSqlStatistics.
+        r"""Gets the avg_rows_examined of this SlowSqlStatistics.
 
         平均扫描文档数。
 
@@ -316,7 +316,7 @@ class SlowSqlStatistics:
 
     @avg_rows_examined.setter
     def avg_rows_examined(self, avg_rows_examined):
-        """Sets the avg_rows_examined of this SlowSqlStatistics.
+        r"""Sets the avg_rows_examined of this SlowSqlStatistics.
 
         平均扫描文档数。
 
@@ -327,7 +327,7 @@ class SlowSqlStatistics:
 
     @property
     def max_rows_examined(self):
-        """Gets the max_rows_examined of this SlowSqlStatistics.
+        r"""Gets the max_rows_examined of this SlowSqlStatistics.
 
         最大扫描文档数。
 
@@ -338,7 +338,7 @@ class SlowSqlStatistics:
 
     @max_rows_examined.setter
     def max_rows_examined(self, max_rows_examined):
-        """Sets the max_rows_examined of this SlowSqlStatistics.
+        r"""Sets the max_rows_examined of this SlowSqlStatistics.
 
         最大扫描文档数。
 
@@ -349,7 +349,7 @@ class SlowSqlStatistics:
 
     @property
     def avg_key_examined(self):
-        """Gets the avg_key_examined of this SlowSqlStatistics.
+        r"""Gets the avg_key_examined of this SlowSqlStatistics.
 
         平均扫描索引数。
 
@@ -360,7 +360,7 @@ class SlowSqlStatistics:
 
     @avg_key_examined.setter
     def avg_key_examined(self, avg_key_examined):
-        """Sets the avg_key_examined of this SlowSqlStatistics.
+        r"""Sets the avg_key_examined of this SlowSqlStatistics.
 
         平均扫描索引数。
 
@@ -371,7 +371,7 @@ class SlowSqlStatistics:
 
     @property
     def max_key_examined(self):
-        """Gets the max_key_examined of this SlowSqlStatistics.
+        r"""Gets the max_key_examined of this SlowSqlStatistics.
 
         最大扫描索引数。
 
@@ -382,7 +382,7 @@ class SlowSqlStatistics:
 
     @max_key_examined.setter
     def max_key_examined(self, max_key_examined):
-        """Sets the max_key_examined of this SlowSqlStatistics.
+        r"""Sets the max_key_examined of this SlowSqlStatistics.
 
         最大扫描索引数。
 
@@ -393,7 +393,7 @@ class SlowSqlStatistics:
 
     @property
     def node_id(self):
-        """Gets the node_id of this SlowSqlStatistics.
+        r"""Gets the node_id of this SlowSqlStatistics.
 
         节点ID，按node_id统计时赋值。
 
@@ -404,7 +404,7 @@ class SlowSqlStatistics:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this SlowSqlStatistics.
+        r"""Sets the node_id of this SlowSqlStatistics.
 
         节点ID，按node_id统计时赋值。
 
@@ -415,7 +415,7 @@ class SlowSqlStatistics:
 
     @property
     def node_name(self):
-        """Gets the node_name of this SlowSqlStatistics.
+        r"""Gets the node_name of this SlowSqlStatistics.
 
         节点名称，按node_id统计时赋值。
 
@@ -426,7 +426,7 @@ class SlowSqlStatistics:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this SlowSqlStatistics.
+        r"""Sets the node_name of this SlowSqlStatistics.
 
         节点名称，按node_id统计时赋值。
 
@@ -437,7 +437,7 @@ class SlowSqlStatistics:
 
     @property
     def sql_type(self):
-        """Gets the sql_type of this SlowSqlStatistics.
+        r"""Gets the sql_type of this SlowSqlStatistics.
 
         语句类型，按sql_type统计时赋值。
 
@@ -448,7 +448,7 @@ class SlowSqlStatistics:
 
     @sql_type.setter
     def sql_type(self, sql_type):
-        """Sets the sql_type of this SlowSqlStatistics.
+        r"""Sets the sql_type of this SlowSqlStatistics.
 
         语句类型，按sql_type统计时赋值。
 
@@ -459,7 +459,7 @@ class SlowSqlStatistics:
 
     @property
     def db_name(self):
-        """Gets the db_name of this SlowSqlStatistics.
+        r"""Gets the db_name of this SlowSqlStatistics.
 
         库名，按db_name、collection统计时赋值。
 
@@ -470,7 +470,7 @@ class SlowSqlStatistics:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this SlowSqlStatistics.
+        r"""Sets the db_name of this SlowSqlStatistics.
 
         库名，按db_name、collection统计时赋值。
 
@@ -481,7 +481,7 @@ class SlowSqlStatistics:
 
     @property
     def collection(self):
-        """Gets the collection of this SlowSqlStatistics.
+        r"""Gets the collection of this SlowSqlStatistics.
 
         数据库表，按collection统计时赋值。
 
@@ -492,7 +492,7 @@ class SlowSqlStatistics:
 
     @collection.setter
     def collection(self, collection):
-        """Sets the collection of this SlowSqlStatistics.
+        r"""Sets the collection of this SlowSqlStatistics.
 
         数据库表，按collection统计时赋值。
 
@@ -503,7 +503,7 @@ class SlowSqlStatistics:
 
     @property
     def user(self):
-        """Gets the user of this SlowSqlStatistics.
+        r"""Gets the user of this SlowSqlStatistics.
 
         用户名，按user统计时赋值。
 
@@ -514,7 +514,7 @@ class SlowSqlStatistics:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this SlowSqlStatistics.
+        r"""Sets the user of this SlowSqlStatistics.
 
         用户名，按user统计时赋值。
 
@@ -525,7 +525,7 @@ class SlowSqlStatistics:
 
     @property
     def client(self):
-        """Gets the client of this SlowSqlStatistics.
+        r"""Gets the client of this SlowSqlStatistics.
 
         客户端，按client统计时赋值。
 
@@ -536,7 +536,7 @@ class SlowSqlStatistics:
 
     @client.setter
     def client(self, client):
-        """Sets the client of this SlowSqlStatistics.
+        r"""Sets the client of this SlowSqlStatistics.
 
         客户端，按client统计时赋值。
 

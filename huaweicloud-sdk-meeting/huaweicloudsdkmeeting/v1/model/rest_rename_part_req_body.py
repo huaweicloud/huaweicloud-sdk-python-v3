@@ -29,7 +29,7 @@ class RestRenamePartReqBody:
     }
 
     def __init__(self, participant_id=None, number=None, new_name=None):
-        """RestRenamePartReqBody
+        r"""RestRenamePartReqBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RestRenamePartReqBody:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this RestRenamePartReqBody.
+        r"""Gets the participant_id of this RestRenamePartReqBody.
 
         与会者标识。 已入会的必须填写该字段。
 
@@ -66,7 +66,7 @@ class RestRenamePartReqBody:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this RestRenamePartReqBody.
+        r"""Sets the participant_id of this RestRenamePartReqBody.
 
         与会者标识。 已入会的必须填写该字段。
 
@@ -77,7 +77,7 @@ class RestRenamePartReqBody:
 
     @property
     def number(self):
-        """Gets the number of this RestRenamePartReqBody.
+        r"""Gets the number of this RestRenamePartReqBody.
 
         与会者号码。
 
@@ -88,7 +88,7 @@ class RestRenamePartReqBody:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this RestRenamePartReqBody.
+        r"""Sets the number of this RestRenamePartReqBody.
 
         与会者号码。
 
@@ -99,7 +99,7 @@ class RestRenamePartReqBody:
 
     @property
     def new_name(self):
-        """Gets the new_name of this RestRenamePartReqBody.
+        r"""Gets the new_name of this RestRenamePartReqBody.
 
         新名称。
 
@@ -110,7 +110,7 @@ class RestRenamePartReqBody:
 
     @new_name.setter
     def new_name(self, new_name):
-        """Sets the new_name of this RestRenamePartReqBody.
+        r"""Sets the new_name of this RestRenamePartReqBody.
 
         新名称。
 

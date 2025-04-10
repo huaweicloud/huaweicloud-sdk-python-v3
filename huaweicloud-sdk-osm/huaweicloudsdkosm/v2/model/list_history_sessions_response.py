@@ -28,7 +28,7 @@ class ListHistorySessionsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, session_list=None):
-        """ListHistorySessionsResponse
+        r"""ListHistorySessionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListHistorySessionsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListHistorySessionsResponse.
+        r"""Gets the total_count of this ListHistorySessionsResponse.
 
         总记录数
 
@@ -62,7 +62,7 @@ class ListHistorySessionsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListHistorySessionsResponse.
+        r"""Sets the total_count of this ListHistorySessionsResponse.
 
         总记录数
 
@@ -73,7 +73,7 @@ class ListHistorySessionsResponse(SdkResponse):
 
     @property
     def session_list(self):
-        """Gets the session_list of this ListHistorySessionsResponse.
+        r"""Gets the session_list of this ListHistorySessionsResponse.
 
         会话列表
 
@@ -84,7 +84,7 @@ class ListHistorySessionsResponse(SdkResponse):
 
     @session_list.setter
     def session_list(self, session_list):
-        """Sets the session_list of this ListHistorySessionsResponse.
+        r"""Sets the session_list of this ListHistorySessionsResponse.
 
         会话列表
 

@@ -29,7 +29,7 @@ class ImportGraphRequest:
     }
 
     def __init__(self, graph_id=None, action_id=None, body=None):
-        """ImportGraphRequest
+        r"""ImportGraphRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ImportGraphRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this ImportGraphRequest.
+        r"""Gets the graph_id of this ImportGraphRequest.
 
         图ID。
 
@@ -66,7 +66,7 @@ class ImportGraphRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this ImportGraphRequest.
+        r"""Sets the graph_id of this ImportGraphRequest.
 
         图ID。
 
@@ -77,7 +77,7 @@ class ImportGraphRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this ImportGraphRequest.
+        r"""Gets the action_id of this ImportGraphRequest.
 
         图actionId
 
@@ -88,7 +88,7 @@ class ImportGraphRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this ImportGraphRequest.
+        r"""Sets the action_id of this ImportGraphRequest.
 
         图actionId
 
@@ -99,7 +99,7 @@ class ImportGraphRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportGraphRequest.
+        r"""Gets the body of this ImportGraphRequest.
 
         :return: The body of this ImportGraphRequest.
         :rtype: :class:`huaweicloudsdkges.v1.ImportGraphReq`
@@ -108,7 +108,7 @@ class ImportGraphRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportGraphRequest.
+        r"""Sets the body of this ImportGraphRequest.
 
         :param body: The body of this ImportGraphRequest.
         :type body: :class:`huaweicloudsdkges.v1.ImportGraphReq`

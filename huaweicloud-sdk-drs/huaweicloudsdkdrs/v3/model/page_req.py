@@ -27,7 +27,7 @@ class PageReq:
     }
 
     def __init__(self, cur_page=None, per_page=None):
-        """PageReq
+        r"""PageReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PageReq:
 
     @property
     def cur_page(self):
-        """Gets the cur_page of this PageReq.
+        r"""Gets the cur_page of this PageReq.
 
         当前页, 不能超过item除每页任务数量的最大页 
 
@@ -61,7 +61,7 @@ class PageReq:
 
     @cur_page.setter
     def cur_page(self, cur_page):
-        """Sets the cur_page of this PageReq.
+        r"""Sets the cur_page of this PageReq.
 
         当前页, 不能超过item除每页任务数量的最大页 
 
@@ -72,7 +72,7 @@ class PageReq:
 
     @property
     def per_page(self):
-        """Gets the per_page of this PageReq.
+        r"""Gets the per_page of this PageReq.
 
         每页item数量，填0获取全部item
 
@@ -83,7 +83,7 @@ class PageReq:
 
     @per_page.setter
     def per_page(self, per_page):
-        """Sets the per_page of this PageReq.
+        r"""Sets the per_page of this PageReq.
 
         每页item数量，填0获取全部item
 

@@ -27,7 +27,7 @@ class ListConditionResultDataValue:
     }
 
     def __init__(self, total=None, records=None):
-        """ListConditionResultDataValue
+        r"""ListConditionResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListConditionResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this ListConditionResultDataValue.
+        r"""Gets the total of this ListConditionResultDataValue.
 
         总量。
 
@@ -61,7 +61,7 @@ class ListConditionResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListConditionResultDataValue.
+        r"""Sets the total of this ListConditionResultDataValue.
 
         总量。
 
@@ -72,7 +72,7 @@ class ListConditionResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this ListConditionResultDataValue.
+        r"""Gets the records of this ListConditionResultDataValue.
 
         ConditionVO信息。
 
@@ -83,7 +83,7 @@ class ListConditionResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListConditionResultDataValue.
+        r"""Sets the records of this ListConditionResultDataValue.
 
         ConditionVO信息。
 

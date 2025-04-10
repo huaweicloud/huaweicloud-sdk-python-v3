@@ -26,7 +26,7 @@ class ListJobResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListJobResponse
+        r"""ListJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListJobResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListJobResponse.
+        r"""Gets the data of this ListJobResponse.
 
         :return: The data of this ListJobResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.GetCreateFirewallJobResponseData`
@@ -53,7 +53,7 @@ class ListJobResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListJobResponse.
+        r"""Sets the data of this ListJobResponse.
 
         :param data: The data of this ListJobResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.GetCreateFirewallJobResponseData`

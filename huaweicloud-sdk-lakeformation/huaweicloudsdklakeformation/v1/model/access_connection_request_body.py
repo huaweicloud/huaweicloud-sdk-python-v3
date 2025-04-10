@@ -29,7 +29,7 @@ class AccessConnectionRequestBody:
     }
 
     def __init__(self, vpcep_id=None, vpcep_service_name=None, domain=None):
-        """AccessConnectionRequestBody
+        r"""AccessConnectionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AccessConnectionRequestBody:
 
     @property
     def vpcep_id(self):
-        """Gets the vpcep_id of this AccessConnectionRequestBody.
+        r"""Gets the vpcep_id of this AccessConnectionRequestBody.
 
         虚拟私有云终端节点ID。在 接入管理-创建客户端-前往VPC创建-VPC终端节点 创建和查看。
 
@@ -68,7 +68,7 @@ class AccessConnectionRequestBody:
 
     @vpcep_id.setter
     def vpcep_id(self, vpcep_id):
-        """Sets the vpcep_id of this AccessConnectionRequestBody.
+        r"""Sets the vpcep_id of this AccessConnectionRequestBody.
 
         虚拟私有云终端节点ID。在 接入管理-创建客户端-前往VPC创建-VPC终端节点 创建和查看。
 
@@ -79,7 +79,7 @@ class AccessConnectionRequestBody:
 
     @property
     def vpcep_service_name(self):
-        """Gets the vpcep_service_name of this AccessConnectionRequestBody.
+        r"""Gets the vpcep_service_name of this AccessConnectionRequestBody.
 
         终端节点服务名称。最大长度为64个字符。
 
@@ -90,7 +90,7 @@ class AccessConnectionRequestBody:
 
     @vpcep_service_name.setter
     def vpcep_service_name(self, vpcep_service_name):
-        """Sets the vpcep_service_name of this AccessConnectionRequestBody.
+        r"""Sets the vpcep_service_name of this AccessConnectionRequestBody.
 
         终端节点服务名称。最大长度为64个字符。
 
@@ -101,7 +101,7 @@ class AccessConnectionRequestBody:
 
     @property
     def domain(self):
-        """Gets the domain of this AccessConnectionRequestBody.
+        r"""Gets the domain of this AccessConnectionRequestBody.
 
         接入域名，通过IP接入访问Lakeformation API时，需在请求头中添加HOST参数并传入该域名。
 
@@ -112,7 +112,7 @@ class AccessConnectionRequestBody:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AccessConnectionRequestBody.
+        r"""Sets the domain of this AccessConnectionRequestBody.
 
         接入域名，通过IP接入访问Lakeformation API时，需在请求头中添加HOST参数并传入该域名。
 

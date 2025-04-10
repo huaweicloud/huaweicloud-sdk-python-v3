@@ -25,7 +25,7 @@ class BatchCreateServerGroupTagsReq:
     }
 
     def __init__(self, items=None):
-        """BatchCreateServerGroupTagsReq
+        r"""BatchCreateServerGroupTagsReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchCreateServerGroupTagsReq:
 
     @property
     def items(self):
-        """Gets the items of this BatchCreateServerGroupTagsReq.
+        r"""Gets the items of this BatchCreateServerGroupTagsReq.
 
         服务器组关联的标签列表。
 
@@ -53,7 +53,7 @@ class BatchCreateServerGroupTagsReq:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this BatchCreateServerGroupTagsReq.
+        r"""Sets the items of this BatchCreateServerGroupTagsReq.
 
         服务器组关联的标签列表。
 

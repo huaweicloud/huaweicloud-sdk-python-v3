@@ -25,7 +25,7 @@ class BatchDeleteOneClickAlarmsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteOneClickAlarmsRequest
+        r"""BatchDeleteOneClickAlarmsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteOneClickAlarmsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteOneClickAlarmsRequest.
+        r"""Gets the body of this BatchDeleteOneClickAlarmsRequest.
 
         :return: The body of this BatchDeleteOneClickAlarmsRequest.
         :rtype: :class:`huaweicloudsdkces.v2.BatchDeleteOneClickAlarmsRequestBody`
@@ -52,7 +52,7 @@ class BatchDeleteOneClickAlarmsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteOneClickAlarmsRequest.
+        r"""Sets the body of this BatchDeleteOneClickAlarmsRequest.
 
         :param body: The body of this BatchDeleteOneClickAlarmsRequest.
         :type body: :class:`huaweicloudsdkces.v2.BatchDeleteOneClickAlarmsRequestBody`

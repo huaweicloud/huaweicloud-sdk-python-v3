@@ -61,7 +61,7 @@ class AccessConfig:
     }
 
     def __init__(self, protocol_type=None, protocol_name=None, slave_id=None, ip=None, port=None, serial_port=None, baud_rate=None, data_bits=None, stop_bits=None, parity_bits=None, url=None, sec_mode=None, sec_policy=None, auth_type=None, username=None, password=None, private_key=None, certificate=None, timeout=None):
-        """AccessConfig
+        r"""AccessConfig
 
         The model defined in huaweicloud sdk
 
@@ -168,7 +168,7 @@ class AccessConfig:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this AccessConfig.
+        r"""Gets the protocol_type of this AccessConfig.
 
         :return: The protocol_type of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -177,7 +177,7 @@ class AccessConfig:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this AccessConfig.
+        r"""Sets the protocol_type of this AccessConfig.
 
         :param protocol_type: The protocol_type of this AccessConfig.
         :type protocol_type: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -186,7 +186,7 @@ class AccessConfig:
 
     @property
     def protocol_name(self):
-        """Gets the protocol_name of this AccessConfig.
+        r"""Gets the protocol_name of this AccessConfig.
 
         :return: The protocol_name of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -195,7 +195,7 @@ class AccessConfig:
 
     @protocol_name.setter
     def protocol_name(self, protocol_name):
-        """Sets the protocol_name of this AccessConfig.
+        r"""Sets the protocol_name of this AccessConfig.
 
         :param protocol_name: The protocol_name of this AccessConfig.
         :type protocol_name: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -204,7 +204,7 @@ class AccessConfig:
 
     @property
     def slave_id(self):
-        """Gets the slave_id of this AccessConfig.
+        r"""Gets the slave_id of this AccessConfig.
 
         :return: The slave_id of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -213,7 +213,7 @@ class AccessConfig:
 
     @slave_id.setter
     def slave_id(self, slave_id):
-        """Sets the slave_id of this AccessConfig.
+        r"""Sets the slave_id of this AccessConfig.
 
         :param slave_id: The slave_id of this AccessConfig.
         :type slave_id: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -222,7 +222,7 @@ class AccessConfig:
 
     @property
     def ip(self):
-        """Gets the ip of this AccessConfig.
+        r"""Gets the ip of this AccessConfig.
 
         :return: The ip of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -231,7 +231,7 @@ class AccessConfig:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this AccessConfig.
+        r"""Sets the ip of this AccessConfig.
 
         :param ip: The ip of this AccessConfig.
         :type ip: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -240,7 +240,7 @@ class AccessConfig:
 
     @property
     def port(self):
-        """Gets the port of this AccessConfig.
+        r"""Gets the port of this AccessConfig.
 
         :return: The port of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -249,7 +249,7 @@ class AccessConfig:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this AccessConfig.
+        r"""Sets the port of this AccessConfig.
 
         :param port: The port of this AccessConfig.
         :type port: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -258,7 +258,7 @@ class AccessConfig:
 
     @property
     def serial_port(self):
-        """Gets the serial_port of this AccessConfig.
+        r"""Gets the serial_port of this AccessConfig.
 
         :return: The serial_port of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -267,7 +267,7 @@ class AccessConfig:
 
     @serial_port.setter
     def serial_port(self, serial_port):
-        """Sets the serial_port of this AccessConfig.
+        r"""Sets the serial_port of this AccessConfig.
 
         :param serial_port: The serial_port of this AccessConfig.
         :type serial_port: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -276,7 +276,7 @@ class AccessConfig:
 
     @property
     def baud_rate(self):
-        """Gets the baud_rate of this AccessConfig.
+        r"""Gets the baud_rate of this AccessConfig.
 
         :return: The baud_rate of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -285,7 +285,7 @@ class AccessConfig:
 
     @baud_rate.setter
     def baud_rate(self, baud_rate):
-        """Sets the baud_rate of this AccessConfig.
+        r"""Sets the baud_rate of this AccessConfig.
 
         :param baud_rate: The baud_rate of this AccessConfig.
         :type baud_rate: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -294,7 +294,7 @@ class AccessConfig:
 
     @property
     def data_bits(self):
-        """Gets the data_bits of this AccessConfig.
+        r"""Gets the data_bits of this AccessConfig.
 
         :return: The data_bits of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -303,7 +303,7 @@ class AccessConfig:
 
     @data_bits.setter
     def data_bits(self, data_bits):
-        """Sets the data_bits of this AccessConfig.
+        r"""Sets the data_bits of this AccessConfig.
 
         :param data_bits: The data_bits of this AccessConfig.
         :type data_bits: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -312,7 +312,7 @@ class AccessConfig:
 
     @property
     def stop_bits(self):
-        """Gets the stop_bits of this AccessConfig.
+        r"""Gets the stop_bits of this AccessConfig.
 
         :return: The stop_bits of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -321,7 +321,7 @@ class AccessConfig:
 
     @stop_bits.setter
     def stop_bits(self, stop_bits):
-        """Sets the stop_bits of this AccessConfig.
+        r"""Sets the stop_bits of this AccessConfig.
 
         :param stop_bits: The stop_bits of this AccessConfig.
         :type stop_bits: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -330,7 +330,7 @@ class AccessConfig:
 
     @property
     def parity_bits(self):
-        """Gets the parity_bits of this AccessConfig.
+        r"""Gets the parity_bits of this AccessConfig.
 
         :return: The parity_bits of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -339,7 +339,7 @@ class AccessConfig:
 
     @parity_bits.setter
     def parity_bits(self, parity_bits):
-        """Sets the parity_bits of this AccessConfig.
+        r"""Sets the parity_bits of this AccessConfig.
 
         :param parity_bits: The parity_bits of this AccessConfig.
         :type parity_bits: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -348,7 +348,7 @@ class AccessConfig:
 
     @property
     def url(self):
-        """Gets the url of this AccessConfig.
+        r"""Gets the url of this AccessConfig.
 
         :return: The url of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -357,7 +357,7 @@ class AccessConfig:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this AccessConfig.
+        r"""Sets the url of this AccessConfig.
 
         :param url: The url of this AccessConfig.
         :type url: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -366,7 +366,7 @@ class AccessConfig:
 
     @property
     def sec_mode(self):
-        """Gets the sec_mode of this AccessConfig.
+        r"""Gets the sec_mode of this AccessConfig.
 
         :return: The sec_mode of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -375,7 +375,7 @@ class AccessConfig:
 
     @sec_mode.setter
     def sec_mode(self, sec_mode):
-        """Sets the sec_mode of this AccessConfig.
+        r"""Sets the sec_mode of this AccessConfig.
 
         :param sec_mode: The sec_mode of this AccessConfig.
         :type sec_mode: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -384,7 +384,7 @@ class AccessConfig:
 
     @property
     def sec_policy(self):
-        """Gets the sec_policy of this AccessConfig.
+        r"""Gets the sec_policy of this AccessConfig.
 
         :return: The sec_policy of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -393,7 +393,7 @@ class AccessConfig:
 
     @sec_policy.setter
     def sec_policy(self, sec_policy):
-        """Sets the sec_policy of this AccessConfig.
+        r"""Sets the sec_policy of this AccessConfig.
 
         :param sec_policy: The sec_policy of this AccessConfig.
         :type sec_policy: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -402,7 +402,7 @@ class AccessConfig:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this AccessConfig.
+        r"""Gets the auth_type of this AccessConfig.
 
         :return: The auth_type of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -411,7 +411,7 @@ class AccessConfig:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this AccessConfig.
+        r"""Sets the auth_type of this AccessConfig.
 
         :param auth_type: The auth_type of this AccessConfig.
         :type auth_type: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -420,7 +420,7 @@ class AccessConfig:
 
     @property
     def username(self):
-        """Gets the username of this AccessConfig.
+        r"""Gets the username of this AccessConfig.
 
         :return: The username of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -429,7 +429,7 @@ class AccessConfig:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this AccessConfig.
+        r"""Sets the username of this AccessConfig.
 
         :param username: The username of this AccessConfig.
         :type username: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -438,7 +438,7 @@ class AccessConfig:
 
     @property
     def password(self):
-        """Gets the password of this AccessConfig.
+        r"""Gets the password of this AccessConfig.
 
         :return: The password of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -447,7 +447,7 @@ class AccessConfig:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this AccessConfig.
+        r"""Sets the password of this AccessConfig.
 
         :param password: The password of this AccessConfig.
         :type password: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -456,7 +456,7 @@ class AccessConfig:
 
     @property
     def private_key(self):
-        """Gets the private_key of this AccessConfig.
+        r"""Gets the private_key of this AccessConfig.
 
         :return: The private_key of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -465,7 +465,7 @@ class AccessConfig:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this AccessConfig.
+        r"""Sets the private_key of this AccessConfig.
 
         :param private_key: The private_key of this AccessConfig.
         :type private_key: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -474,7 +474,7 @@ class AccessConfig:
 
     @property
     def certificate(self):
-        """Gets the certificate of this AccessConfig.
+        r"""Gets the certificate of this AccessConfig.
 
         :return: The certificate of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -483,7 +483,7 @@ class AccessConfig:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this AccessConfig.
+        r"""Sets the certificate of this AccessConfig.
 
         :param certificate: The certificate of this AccessConfig.
         :type certificate: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -492,7 +492,7 @@ class AccessConfig:
 
     @property
     def timeout(self):
-        """Gets the timeout of this AccessConfig.
+        r"""Gets the timeout of this AccessConfig.
 
         :return: The timeout of this AccessConfig.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
@@ -501,7 +501,7 @@ class AccessConfig:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this AccessConfig.
+        r"""Sets the timeout of this AccessConfig.
 
         :param timeout: The timeout of this AccessConfig.
         :type timeout: :class:`huaweicloudsdkief.v1.ValueInAttributes`

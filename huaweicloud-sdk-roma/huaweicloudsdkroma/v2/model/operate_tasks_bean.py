@@ -27,7 +27,7 @@ class OperateTasksBean:
     }
 
     def __init__(self, action_id=None, list=None):
-        """OperateTasksBean
+        r"""OperateTasksBean
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class OperateTasksBean:
 
     @property
     def action_id(self):
-        """Gets the action_id of this OperateTasksBean.
+        r"""Gets the action_id of this OperateTasksBean.
 
         操作类型 - start (启动) - stop (停止)
 
@@ -60,7 +60,7 @@ class OperateTasksBean:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this OperateTasksBean.
+        r"""Sets the action_id of this OperateTasksBean.
 
         操作类型 - start (启动) - stop (停止)
 
@@ -71,7 +71,7 @@ class OperateTasksBean:
 
     @property
     def list(self):
-        """Gets the list of this OperateTasksBean.
+        r"""Gets the list of this OperateTasksBean.
 
         需要启动或者停止的任务ID列表
 
@@ -82,7 +82,7 @@ class OperateTasksBean:
 
     @list.setter
     def list(self, list):
-        """Sets the list of this OperateTasksBean.
+        r"""Sets the list of this OperateTasksBean.
 
         需要启动或者停止的任务ID列表
 

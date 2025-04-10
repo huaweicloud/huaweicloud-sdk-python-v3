@@ -26,7 +26,7 @@ class ShowInstanceResponse(SdkResponse):
     }
 
     def __init__(self, server=None):
-        """ShowInstanceResponse
+        r"""ShowInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def server(self):
-        """Gets the server of this ShowInstanceResponse.
+        r"""Gets the server of this ShowInstanceResponse.
 
         :return: The server of this ShowInstanceResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.Instance`
@@ -53,7 +53,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @server.setter
     def server(self, server):
-        """Sets the server of this ShowInstanceResponse.
+        r"""Sets the server of this ShowInstanceResponse.
 
         :param server: The server of this ShowInstanceResponse.
         :type server: :class:`huaweicloudsdkiec.v1.Instance`

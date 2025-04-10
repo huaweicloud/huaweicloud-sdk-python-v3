@@ -29,7 +29,7 @@ class Throughput:
     }
 
     def __init__(self, frozened=None, id=None, total_val=None):
-        """Throughput
+        r"""Throughput
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Throughput:
 
     @property
     def frozened(self):
-        """Gets the frozened of this Throughput.
+        r"""Gets the frozened of this Throughput.
 
         冻结标签。
 
@@ -65,7 +65,7 @@ class Throughput:
 
     @frozened.setter
     def frozened(self, frozened):
-        """Sets the frozened of this Throughput.
+        r"""Sets the frozened of this Throughput.
 
         冻结标签。
 
@@ -76,7 +76,7 @@ class Throughput:
 
     @property
     def id(self):
-        """Gets the id of this Throughput.
+        r"""Gets the id of this Throughput.
 
         云硬盘吞吐量标识。
 
@@ -87,7 +87,7 @@ class Throughput:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Throughput.
+        r"""Sets the id of this Throughput.
 
         云硬盘吞吐量标识。
 
@@ -98,7 +98,7 @@ class Throughput:
 
     @property
     def total_val(self):
-        """Gets the total_val of this Throughput.
+        r"""Gets the total_val of this Throughput.
 
         吞吐量大小。
 
@@ -109,7 +109,7 @@ class Throughput:
 
     @total_val.setter
     def total_val(self, total_val):
-        """Sets the total_val of this Throughput.
+        r"""Sets the total_val of this Throughput.
 
         吞吐量大小。
 

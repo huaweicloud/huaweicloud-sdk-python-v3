@@ -27,7 +27,7 @@ class ShowPointsRequest:
     }
 
     def __init__(self, edge_node_id=None, ds_id=None):
-        """ShowPointsRequest
+        r"""ShowPointsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowPointsRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this ShowPointsRequest.
+        r"""Gets the edge_node_id of this ShowPointsRequest.
 
         边缘节点ID
 
@@ -59,7 +59,7 @@ class ShowPointsRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this ShowPointsRequest.
+        r"""Sets the edge_node_id of this ShowPointsRequest.
 
         边缘节点ID
 
@@ -70,7 +70,7 @@ class ShowPointsRequest:
 
     @property
     def ds_id(self):
-        """Gets the ds_id of this ShowPointsRequest.
+        r"""Gets the ds_id of this ShowPointsRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -81,7 +81,7 @@ class ShowPointsRequest:
 
     @ds_id.setter
     def ds_id(self, ds_id):
-        """Sets the ds_id of this ShowPointsRequest.
+        r"""Sets the ds_id of this ShowPointsRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 

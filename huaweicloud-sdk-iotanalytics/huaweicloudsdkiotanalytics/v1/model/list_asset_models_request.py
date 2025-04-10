@@ -29,7 +29,7 @@ class ListAssetModelsRequest:
     }
 
     def __init__(self, filter=None, limit=None, offset=None):
-        """ListAssetModelsRequest
+        r"""ListAssetModelsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAssetModelsRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListAssetModelsRequest.
+        r"""Gets the filter of this ListAssetModelsRequest.
 
         过滤条件 示例： {\"key\":\"xxx\"} {\"key1\":\"xxx\",\"key2\":\"xxx\"} {\"key\":{\"eq|like\":\"xxx\"}} {\"key\":{\"in\":[\"xxx\",\"xxx\"]}} {\"or\":{\"key1\":\"xxx\",\"key2\":{\"eq|like\":\"xxx\"},\"key3\":{\"in\":[\"xxx\",\"xxx\"]}}} {\"and\":{\"key1\":\"xxx\",\"key2\":{\"eq|like\":\"xxx\"},\"key3\":{\"in\":[\"xxx\",\"xxx\"]}}} 支持的key： asset_model_id，name，display_name，job_id 注意： job_id只支持contain过滤 {\"job_id\":{\"contain\":\"xxx\"}}
 
@@ -68,7 +68,7 @@ class ListAssetModelsRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListAssetModelsRequest.
+        r"""Sets the filter of this ListAssetModelsRequest.
 
         过滤条件 示例： {\"key\":\"xxx\"} {\"key1\":\"xxx\",\"key2\":\"xxx\"} {\"key\":{\"eq|like\":\"xxx\"}} {\"key\":{\"in\":[\"xxx\",\"xxx\"]}} {\"or\":{\"key1\":\"xxx\",\"key2\":{\"eq|like\":\"xxx\"},\"key3\":{\"in\":[\"xxx\",\"xxx\"]}}} {\"and\":{\"key1\":\"xxx\",\"key2\":{\"eq|like\":\"xxx\"},\"key3\":{\"in\":[\"xxx\",\"xxx\"]}}} 支持的key： asset_model_id，name，display_name，job_id 注意： job_id只支持contain过滤 {\"job_id\":{\"contain\":\"xxx\"}}
 
@@ -79,7 +79,7 @@ class ListAssetModelsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAssetModelsRequest.
+        r"""Gets the limit of this ListAssetModelsRequest.
 
         每页记录数
 
@@ -90,7 +90,7 @@ class ListAssetModelsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAssetModelsRequest.
+        r"""Sets the limit of this ListAssetModelsRequest.
 
         每页记录数
 
@@ -101,7 +101,7 @@ class ListAssetModelsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAssetModelsRequest.
+        r"""Gets the offset of this ListAssetModelsRequest.
 
         页码
 
@@ -112,7 +112,7 @@ class ListAssetModelsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAssetModelsRequest.
+        r"""Sets the offset of this ListAssetModelsRequest.
 
         页码
 

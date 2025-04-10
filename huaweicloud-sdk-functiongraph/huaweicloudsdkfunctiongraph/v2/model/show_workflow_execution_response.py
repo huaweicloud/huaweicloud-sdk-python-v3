@@ -48,7 +48,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
     }
 
     def __init__(self, workflow_id=None, workflow_urn=None, execution_id=None, status=None, headers=None, input=None, output=None, begin_time=None, end_time=None, last_update_time=None, created_by=None, node_execution_details=None):
-        """ShowWorkflowExecutionResponse
+        r"""ShowWorkflowExecutionResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this ShowWorkflowExecutionResponse.
+        r"""Gets the workflow_id of this ShowWorkflowExecutionResponse.
 
         流程定义ID
 
@@ -132,7 +132,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this ShowWorkflowExecutionResponse.
+        r"""Sets the workflow_id of this ShowWorkflowExecutionResponse.
 
         流程定义ID
 
@@ -143,7 +143,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @property
     def workflow_urn(self):
-        """Gets the workflow_urn of this ShowWorkflowExecutionResponse.
+        r"""Gets the workflow_urn of this ShowWorkflowExecutionResponse.
 
         函数工作流URN, 格式为： urn:fss:<region_id>:<project_id>:workflow:\\<package\\>:<workflow_name>:\\<version\\> 注意： package当前只支持default version当前只支持latest
 
@@ -154,7 +154,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @workflow_urn.setter
     def workflow_urn(self, workflow_urn):
-        """Sets the workflow_urn of this ShowWorkflowExecutionResponse.
+        r"""Sets the workflow_urn of this ShowWorkflowExecutionResponse.
 
         函数工作流URN, 格式为： urn:fss:<region_id>:<project_id>:workflow:\\<package\\>:<workflow_name>:\\<version\\> 注意： package当前只支持default version当前只支持latest
 
@@ -165,7 +165,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @property
     def execution_id(self):
-        """Gets the execution_id of this ShowWorkflowExecutionResponse.
+        r"""Gets the execution_id of this ShowWorkflowExecutionResponse.
 
         流程执行实例ID
 
@@ -176,7 +176,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @execution_id.setter
     def execution_id(self, execution_id):
-        """Sets the execution_id of this ShowWorkflowExecutionResponse.
+        r"""Sets the execution_id of this ShowWorkflowExecutionResponse.
 
         流程执行实例ID
 
@@ -187,7 +187,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowWorkflowExecutionResponse.
+        r"""Gets the status of this ShowWorkflowExecutionResponse.
 
         流程实例执行状态
 
@@ -198,7 +198,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowWorkflowExecutionResponse.
+        r"""Sets the status of this ShowWorkflowExecutionResponse.
 
         流程实例执行状态
 
@@ -209,7 +209,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @property
     def headers(self):
-        """Gets the headers of this ShowWorkflowExecutionResponse.
+        r"""Gets the headers of this ShowWorkflowExecutionResponse.
 
         函数执行时需要的Header
 
@@ -220,7 +220,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this ShowWorkflowExecutionResponse.
+        r"""Sets the headers of this ShowWorkflowExecutionResponse.
 
         函数执行时需要的Header
 
@@ -231,7 +231,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @property
     def input(self):
-        """Gets the input of this ShowWorkflowExecutionResponse.
+        r"""Gets the input of this ShowWorkflowExecutionResponse.
 
         函数执行时的入参
 
@@ -242,7 +242,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @input.setter
     def input(self, input):
-        """Sets the input of this ShowWorkflowExecutionResponse.
+        r"""Sets the input of this ShowWorkflowExecutionResponse.
 
         函数执行时的入参
 
@@ -253,7 +253,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @property
     def output(self):
-        """Gets the output of this ShowWorkflowExecutionResponse.
+        r"""Gets the output of this ShowWorkflowExecutionResponse.
 
         函数执行结果
 
@@ -264,7 +264,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @output.setter
     def output(self, output):
-        """Sets the output of this ShowWorkflowExecutionResponse.
+        r"""Sets the output of this ShowWorkflowExecutionResponse.
 
         函数执行结果
 
@@ -275,7 +275,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowWorkflowExecutionResponse.
+        r"""Gets the begin_time of this ShowWorkflowExecutionResponse.
 
         流程实例创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -286,7 +286,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowWorkflowExecutionResponse.
+        r"""Sets the begin_time of this ShowWorkflowExecutionResponse.
 
         流程实例创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -297,7 +297,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowWorkflowExecutionResponse.
+        r"""Gets the end_time of this ShowWorkflowExecutionResponse.
 
         流程实例结束时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -308,7 +308,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowWorkflowExecutionResponse.
+        r"""Sets the end_time of this ShowWorkflowExecutionResponse.
 
         流程实例结束时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -319,7 +319,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this ShowWorkflowExecutionResponse.
+        r"""Gets the last_update_time of this ShowWorkflowExecutionResponse.
 
         流程实例上次更新时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -330,7 +330,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this ShowWorkflowExecutionResponse.
+        r"""Sets the last_update_time of this ShowWorkflowExecutionResponse.
 
         流程实例上次更新时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -341,7 +341,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @property
     def created_by(self):
-        """Gets the created_by of this ShowWorkflowExecutionResponse.
+        r"""Gets the created_by of this ShowWorkflowExecutionResponse.
 
         流程实例创建者
 
@@ -352,7 +352,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this ShowWorkflowExecutionResponse.
+        r"""Sets the created_by of this ShowWorkflowExecutionResponse.
 
         流程实例创建者
 
@@ -363,7 +363,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @property
     def node_execution_details(self):
-        """Gets the node_execution_details of this ShowWorkflowExecutionResponse.
+        r"""Gets the node_execution_details of this ShowWorkflowExecutionResponse.
 
         节点执行信息
 
@@ -374,7 +374,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
     @node_execution_details.setter
     def node_execution_details(self, node_execution_details):
-        """Sets the node_execution_details of this ShowWorkflowExecutionResponse.
+        r"""Sets the node_execution_details of this ShowWorkflowExecutionResponse.
 
         节点执行信息
 

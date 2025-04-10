@@ -25,7 +25,7 @@ class DeleteComponentRequest:
     }
 
     def __init__(self, component_id=None):
-        """DeleteComponentRequest
+        r"""DeleteComponentRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteComponentRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this DeleteComponentRequest.
+        r"""Gets the component_id of this DeleteComponentRequest.
 
         组件id
 
@@ -53,7 +53,7 @@ class DeleteComponentRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this DeleteComponentRequest.
+        r"""Sets the component_id of this DeleteComponentRequest.
 
         组件id
 

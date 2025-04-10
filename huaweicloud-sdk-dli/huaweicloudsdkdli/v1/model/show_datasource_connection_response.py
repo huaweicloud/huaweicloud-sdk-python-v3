@@ -48,7 +48,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, connection_id=None, destination=None, state=None, process=None, name=None, connection_url=None, cluster_name=None, service=None, create_time=None, available_queue_info=None):
-        """ShowDatasourceConnectionResponse
+        r"""ShowDatasourceConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowDatasourceConnectionResponse.
+        r"""Gets the is_success of this ShowDatasourceConnectionResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -132,7 +132,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowDatasourceConnectionResponse.
+        r"""Sets the is_success of this ShowDatasourceConnectionResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -143,7 +143,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowDatasourceConnectionResponse.
+        r"""Gets the message of this ShowDatasourceConnectionResponse.
 
         系统提示信息，执行成功时，信息为空。
 
@@ -154,7 +154,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowDatasourceConnectionResponse.
+        r"""Sets the message of this ShowDatasourceConnectionResponse.
 
         系统提示信息，执行成功时，信息为空。
 
@@ -165,7 +165,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ShowDatasourceConnectionResponse.
+        r"""Gets the connection_id of this ShowDatasourceConnectionResponse.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -176,7 +176,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ShowDatasourceConnectionResponse.
+        r"""Sets the connection_id of this ShowDatasourceConnectionResponse.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -187,7 +187,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @property
     def destination(self):
-        """Gets the destination of this ShowDatasourceConnectionResponse.
+        r"""Gets the destination of this ShowDatasourceConnectionResponse.
 
         创建连接时，用户填写的队列的访问地址。
 
@@ -198,7 +198,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this ShowDatasourceConnectionResponse.
+        r"""Sets the destination of this ShowDatasourceConnectionResponse.
 
         创建连接时，用户填写的队列的访问地址。
 
@@ -209,7 +209,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowDatasourceConnectionResponse.
+        r"""Gets the state of this ShowDatasourceConnectionResponse.
 
         连接状态。CREATING：跨源连接正在创建中；ACTIVE：跨源连接创建成功，与目的地址连接正常；FAILED：跨源连接创建失败；DELETED：跨源连接已被删除。
 
@@ -220,7 +220,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowDatasourceConnectionResponse.
+        r"""Sets the state of this ShowDatasourceConnectionResponse.
 
         连接状态。CREATING：跨源连接正在创建中；ACTIVE：跨源连接创建成功，与目的地址连接正常；FAILED：跨源连接创建失败；DELETED：跨源连接已被删除。
 
@@ -231,7 +231,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @property
     def process(self):
-        """Gets the process of this ShowDatasourceConnectionResponse.
+        r"""Gets the process of this ShowDatasourceConnectionResponse.
 
         正在创建的跨源连接进度，显示0.0至1.0代表0%至100%。
 
@@ -242,7 +242,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @process.setter
     def process(self, process):
-        """Sets the process of this ShowDatasourceConnectionResponse.
+        r"""Sets the process of this ShowDatasourceConnectionResponse.
 
         正在创建的跨源连接进度，显示0.0至1.0代表0%至100%。
 
@@ -253,7 +253,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDatasourceConnectionResponse.
+        r"""Gets the name of this ShowDatasourceConnectionResponse.
 
         创建连接时，用户自定义的连接名称。
 
@@ -264,7 +264,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDatasourceConnectionResponse.
+        r"""Sets the name of this ShowDatasourceConnectionResponse.
 
         创建连接时，用户自定义的连接名称。
 
@@ -275,7 +275,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @property
     def connection_url(self):
-        """Gets the connection_url of this ShowDatasourceConnectionResponse.
+        r"""Gets the connection_url of this ShowDatasourceConnectionResponse.
 
         用于建立跨源关联表时，需要使用到的连接url。
 
@@ -286,7 +286,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @connection_url.setter
     def connection_url(self, connection_url):
-        """Sets the connection_url of this ShowDatasourceConnectionResponse.
+        r"""Sets the connection_url of this ShowDatasourceConnectionResponse.
 
         用于建立跨源关联表时，需要使用到的连接url。
 
@@ -297,7 +297,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ShowDatasourceConnectionResponse.
+        r"""Gets the cluster_name of this ShowDatasourceConnectionResponse.
 
         Serverless Spark队列名称。SQL队列模式下建立的跨源连接，该字段为空。
 
@@ -308,7 +308,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ShowDatasourceConnectionResponse.
+        r"""Sets the cluster_name of this ShowDatasourceConnectionResponse.
 
         Serverless Spark队列名称。SQL队列模式下建立的跨源连接，该字段为空。
 
@@ -319,7 +319,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @property
     def service(self):
-        """Gets the service of this ShowDatasourceConnectionResponse.
+        r"""Gets the service of this ShowDatasourceConnectionResponse.
 
         创建连接时，用户指定的对端服务（CloudTable/CloudTable.OpenTSDB/MRS.OpenTSDB/DWS/RDS/CSS）。
 
@@ -330,7 +330,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @service.setter
     def service(self, service):
-        """Sets the service of this ShowDatasourceConnectionResponse.
+        r"""Sets the service of this ShowDatasourceConnectionResponse.
 
         创建连接时，用户指定的对端服务（CloudTable/CloudTable.OpenTSDB/MRS.OpenTSDB/DWS/RDS/CSS）。
 
@@ -341,7 +341,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowDatasourceConnectionResponse.
+        r"""Gets the create_time of this ShowDatasourceConnectionResponse.
 
         创建连接的时间。为UTC的时间戳。
 
@@ -352,7 +352,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowDatasourceConnectionResponse.
+        r"""Sets the create_time of this ShowDatasourceConnectionResponse.
 
         创建连接的时间。为UTC的时间戳。
 
@@ -363,7 +363,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @property
     def available_queue_info(self):
-        """Gets the available_queue_info of this ShowDatasourceConnectionResponse.
+        r"""Gets the available_queue_info of this ShowDatasourceConnectionResponse.
 
         当前跨源已绑定的队列信息
 
@@ -374,7 +374,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
 
     @available_queue_info.setter
     def available_queue_info(self, available_queue_info):
-        """Sets the available_queue_info of this ShowDatasourceConnectionResponse.
+        r"""Sets the available_queue_info of this ShowDatasourceConnectionResponse.
 
         当前跨源已绑定的队列信息
 

@@ -32,7 +32,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
     }
 
     def __init__(self, code=None, description=None, task_id=None, order_id=None):
-        """UpgradeCbhInstanceResponse
+        r"""UpgradeCbhInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this UpgradeCbhInstanceResponse.
+        r"""Gets the code of this UpgradeCbhInstanceResponse.
 
         操作结果。
 
@@ -76,7 +76,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this UpgradeCbhInstanceResponse.
+        r"""Sets the code of this UpgradeCbhInstanceResponse.
 
         操作结果。
 
@@ -87,7 +87,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpgradeCbhInstanceResponse.
+        r"""Gets the description of this UpgradeCbhInstanceResponse.
 
         描述。
 
@@ -98,7 +98,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpgradeCbhInstanceResponse.
+        r"""Sets the description of this UpgradeCbhInstanceResponse.
 
         描述。
 
@@ -109,7 +109,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpgradeCbhInstanceResponse.
+        r"""Gets the task_id of this UpgradeCbhInstanceResponse.
 
         任务 id。
 
@@ -120,7 +120,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpgradeCbhInstanceResponse.
+        r"""Sets the task_id of this UpgradeCbhInstanceResponse.
 
         任务 id。
 
@@ -131,7 +131,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this UpgradeCbhInstanceResponse.
+        r"""Gets the order_id of this UpgradeCbhInstanceResponse.
 
         订单 id。
 
@@ -142,7 +142,7 @@ class UpgradeCbhInstanceResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this UpgradeCbhInstanceResponse.
+        r"""Sets the order_id of this UpgradeCbhInstanceResponse.
 
         订单 id。
 

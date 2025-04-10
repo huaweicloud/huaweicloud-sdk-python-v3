@@ -31,7 +31,7 @@ class ListSharesByTagResource:
     }
 
     def __init__(self, resource_id=None, resource_name=None, resource_detail=None, tags=None):
-        """ListSharesByTagResource
+        r"""ListSharesByTagResource
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListSharesByTagResource:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListSharesByTagResource.
+        r"""Gets the resource_id of this ListSharesByTagResource.
 
         资源ID
 
@@ -75,7 +75,7 @@ class ListSharesByTagResource:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListSharesByTagResource.
+        r"""Sets the resource_id of this ListSharesByTagResource.
 
         资源ID
 
@@ -86,7 +86,7 @@ class ListSharesByTagResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ListSharesByTagResource.
+        r"""Gets the resource_name of this ListSharesByTagResource.
 
         资源名称
 
@@ -97,7 +97,7 @@ class ListSharesByTagResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ListSharesByTagResource.
+        r"""Sets the resource_name of this ListSharesByTagResource.
 
         资源名称
 
@@ -108,7 +108,7 @@ class ListSharesByTagResource:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this ListSharesByTagResource.
+        r"""Gets the resource_detail of this ListSharesByTagResource.
 
         资源详情
 
@@ -119,7 +119,7 @@ class ListSharesByTagResource:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this ListSharesByTagResource.
+        r"""Sets the resource_detail of this ListSharesByTagResource.
 
         资源详情
 
@@ -130,7 +130,7 @@ class ListSharesByTagResource:
 
     @property
     def tags(self):
-        """Gets the tags of this ListSharesByTagResource.
+        r"""Gets the tags of this ListSharesByTagResource.
 
         资源的标签列表
 
@@ -141,7 +141,7 @@ class ListSharesByTagResource:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListSharesByTagResource.
+        r"""Sets the tags of this ListSharesByTagResource.
 
         资源的标签列表
 

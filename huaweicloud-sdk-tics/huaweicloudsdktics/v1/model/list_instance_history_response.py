@@ -28,7 +28,7 @@ class ListInstanceHistoryResponse(SdkResponse):
     }
 
     def __init__(self, lists=None, total=None):
-        """ListInstanceHistoryResponse
+        r"""ListInstanceHistoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInstanceHistoryResponse(SdkResponse):
 
     @property
     def lists(self):
-        """Gets the lists of this ListInstanceHistoryResponse.
+        r"""Gets the lists of this ListInstanceHistoryResponse.
 
         实例集合
 
@@ -62,7 +62,7 @@ class ListInstanceHistoryResponse(SdkResponse):
 
     @lists.setter
     def lists(self, lists):
-        """Sets the lists of this ListInstanceHistoryResponse.
+        r"""Sets the lists of this ListInstanceHistoryResponse.
 
         实例集合
 
@@ -73,7 +73,7 @@ class ListInstanceHistoryResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListInstanceHistoryResponse.
+        r"""Gets the total of this ListInstanceHistoryResponse.
 
         总记录数
 
@@ -84,7 +84,7 @@ class ListInstanceHistoryResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListInstanceHistoryResponse.
+        r"""Sets the total of this ListInstanceHistoryResponse.
 
         总记录数
 

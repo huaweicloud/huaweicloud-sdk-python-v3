@@ -39,7 +39,7 @@ class BasicConfig:
     }
 
     def __init__(self, owner=None, agency=None, is_ignore_waiting=None, priority=None, execute_user=None, instance_timeout=None, custom_fields=None, tags=None):
-        """BasicConfig
+        r"""BasicConfig
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class BasicConfig:
 
     @property
     def owner(self):
-        """Gets the owner of this BasicConfig.
+        r"""Gets the owner of this BasicConfig.
 
         作业责任人
 
@@ -103,7 +103,7 @@ class BasicConfig:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this BasicConfig.
+        r"""Sets the owner of this BasicConfig.
 
         作业责任人
 
@@ -114,7 +114,7 @@ class BasicConfig:
 
     @property
     def agency(self):
-        """Gets the agency of this BasicConfig.
+        r"""Gets the agency of this BasicConfig.
 
         作业委托的名称
 
@@ -125,7 +125,7 @@ class BasicConfig:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this BasicConfig.
+        r"""Sets the agency of this BasicConfig.
 
         作业委托的名称
 
@@ -136,7 +136,7 @@ class BasicConfig:
 
     @property
     def is_ignore_waiting(self):
-        """Gets the is_ignore_waiting of this BasicConfig.
+        r"""Gets the is_ignore_waiting of this BasicConfig.
 
         实例超时是否忽略等待时间, 取值范围为0和1, 0：表示实例超时不忽略等待时间1：表示实例超时忽略等待时间
 
@@ -147,7 +147,7 @@ class BasicConfig:
 
     @is_ignore_waiting.setter
     def is_ignore_waiting(self, is_ignore_waiting):
-        """Sets the is_ignore_waiting of this BasicConfig.
+        r"""Sets the is_ignore_waiting of this BasicConfig.
 
         实例超时是否忽略等待时间, 取值范围为0和1, 0：表示实例超时不忽略等待时间1：表示实例超时忽略等待时间
 
@@ -158,7 +158,7 @@ class BasicConfig:
 
     @property
     def priority(self):
-        """Gets the priority of this BasicConfig.
+        r"""Gets the priority of this BasicConfig.
 
         作业优先级
 
@@ -169,7 +169,7 @@ class BasicConfig:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this BasicConfig.
+        r"""Sets the priority of this BasicConfig.
 
         作业优先级
 
@@ -180,7 +180,7 @@ class BasicConfig:
 
     @property
     def execute_user(self):
-        """Gets the execute_user of this BasicConfig.
+        r"""Gets the execute_user of this BasicConfig.
 
         作业执行用户
 
@@ -191,7 +191,7 @@ class BasicConfig:
 
     @execute_user.setter
     def execute_user(self, execute_user):
-        """Sets the execute_user of this BasicConfig.
+        r"""Sets the execute_user of this BasicConfig.
 
         作业执行用户
 
@@ -202,7 +202,7 @@ class BasicConfig:
 
     @property
     def instance_timeout(self):
-        """Gets the instance_timeout of this BasicConfig.
+        r"""Gets the instance_timeout of this BasicConfig.
 
         实例超时时间
 
@@ -213,7 +213,7 @@ class BasicConfig:
 
     @instance_timeout.setter
     def instance_timeout(self, instance_timeout):
-        """Sets the instance_timeout of this BasicConfig.
+        r"""Sets the instance_timeout of this BasicConfig.
 
         实例超时时间
 
@@ -224,7 +224,7 @@ class BasicConfig:
 
     @property
     def custom_fields(self):
-        """Gets the custom_fields of this BasicConfig.
+        r"""Gets the custom_fields of this BasicConfig.
 
         用户自定义属性字段
 
@@ -235,7 +235,7 @@ class BasicConfig:
 
     @custom_fields.setter
     def custom_fields(self, custom_fields):
-        """Sets the custom_fields of this BasicConfig.
+        r"""Sets the custom_fields of this BasicConfig.
 
         用户自定义属性字段
 
@@ -246,7 +246,7 @@ class BasicConfig:
 
     @property
     def tags(self):
-        """Gets the tags of this BasicConfig.
+        r"""Gets the tags of this BasicConfig.
 
         作业标签列表
 
@@ -257,7 +257,7 @@ class BasicConfig:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BasicConfig.
+        r"""Sets the tags of this BasicConfig.
 
         作业标签列表
 

@@ -28,7 +28,7 @@ class ListEdgeFlowsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, statistics=None):
-        """ListEdgeFlowsResponse
+        r"""ListEdgeFlowsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEdgeFlowsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListEdgeFlowsResponse.
+        r"""Gets the count of this ListEdgeFlowsResponse.
 
         **参数说明**：条件查询返回的总条数。
 
@@ -62,7 +62,7 @@ class ListEdgeFlowsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListEdgeFlowsResponse.
+        r"""Sets the count of this ListEdgeFlowsResponse.
 
         **参数说明**：条件查询返回的总条数。
 
@@ -73,7 +73,7 @@ class ListEdgeFlowsResponse(SdkResponse):
 
     @property
     def statistics(self):
-        """Gets the statistics of this ListEdgeFlowsResponse.
+        r"""Gets the statistics of this ListEdgeFlowsResponse.
 
         **参数说明**：车辆流量，平均速度等统计信息列表
 
@@ -84,7 +84,7 @@ class ListEdgeFlowsResponse(SdkResponse):
 
     @statistics.setter
     def statistics(self, statistics):
-        """Sets the statistics of this ListEdgeFlowsResponse.
+        r"""Sets the statistics of this ListEdgeFlowsResponse.
 
         **参数说明**：车辆流量，平均速度等统计信息列表
 

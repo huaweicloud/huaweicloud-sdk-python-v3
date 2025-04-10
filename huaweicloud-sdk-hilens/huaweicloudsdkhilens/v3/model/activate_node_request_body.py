@@ -29,7 +29,7 @@ class ActivateNodeRequestBody:
     }
 
     def __init__(self, order_id=None, cpu_order_id=None, npu_gpu_order_id=None):
-        """ActivateNodeRequestBody
+        r"""ActivateNodeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ActivateNodeRequestBody:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ActivateNodeRequestBody.
+        r"""Gets the order_id of this ActivateNodeRequestBody.
 
         订单ID，小型轻型设备激活时使用的订单
 
@@ -68,7 +68,7 @@ class ActivateNodeRequestBody:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ActivateNodeRequestBody.
+        r"""Sets the order_id of this ActivateNodeRequestBody.
 
         订单ID，小型轻型设备激活时使用的订单
 
@@ -79,7 +79,7 @@ class ActivateNodeRequestBody:
 
     @property
     def cpu_order_id(self):
-        """Gets the cpu_order_id of this ActivateNodeRequestBody.
+        r"""Gets the cpu_order_id of this ActivateNodeRequestBody.
 
         订单ID，大型设备使用CPU时激活的订单
 
@@ -90,7 +90,7 @@ class ActivateNodeRequestBody:
 
     @cpu_order_id.setter
     def cpu_order_id(self, cpu_order_id):
-        """Sets the cpu_order_id of this ActivateNodeRequestBody.
+        r"""Sets the cpu_order_id of this ActivateNodeRequestBody.
 
         订单ID，大型设备使用CPU时激活的订单
 
@@ -101,7 +101,7 @@ class ActivateNodeRequestBody:
 
     @property
     def npu_gpu_order_id(self):
-        """Gets the npu_gpu_order_id of this ActivateNodeRequestBody.
+        r"""Gets the npu_gpu_order_id of this ActivateNodeRequestBody.
 
         订单ID，大型设备使用GPU/NPU时激活的订单
 
@@ -112,7 +112,7 @@ class ActivateNodeRequestBody:
 
     @npu_gpu_order_id.setter
     def npu_gpu_order_id(self, npu_gpu_order_id):
-        """Sets the npu_gpu_order_id of this ActivateNodeRequestBody.
+        r"""Sets the npu_gpu_order_id of this ActivateNodeRequestBody.
 
         订单ID，大型设备使用GPU/NPU时激活的订单
 

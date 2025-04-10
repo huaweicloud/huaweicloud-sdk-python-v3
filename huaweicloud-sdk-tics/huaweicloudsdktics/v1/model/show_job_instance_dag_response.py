@@ -26,7 +26,7 @@ class ShowJobInstanceDagResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowJobInstanceDagResponse
+        r"""ShowJobInstanceDagResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowJobInstanceDagResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowJobInstanceDagResponse.
+        r"""Gets the body of this ShowJobInstanceDagResponse.
 
         :return: The body of this ShowJobInstanceDagResponse.
         :rtype: list[:class:`huaweicloudsdktics.v1.DeployVo`]
@@ -53,7 +53,7 @@ class ShowJobInstanceDagResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowJobInstanceDagResponse.
+        r"""Sets the body of this ShowJobInstanceDagResponse.
 
         :param body: The body of this ShowJobInstanceDagResponse.
         :type body: list[:class:`huaweicloudsdktics.v1.DeployVo`]

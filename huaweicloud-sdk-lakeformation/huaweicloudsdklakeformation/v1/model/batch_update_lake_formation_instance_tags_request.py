@@ -27,7 +27,7 @@ class BatchUpdateLakeFormationInstanceTagsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchUpdateLakeFormationInstanceTagsRequest
+        r"""BatchUpdateLakeFormationInstanceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchUpdateLakeFormationInstanceTagsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchUpdateLakeFormationInstanceTagsRequest.
+        r"""Gets the instance_id of this BatchUpdateLakeFormationInstanceTagsRequest.
 
         LakeFormation实例ID
 
@@ -60,7 +60,7 @@ class BatchUpdateLakeFormationInstanceTagsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchUpdateLakeFormationInstanceTagsRequest.
+        r"""Sets the instance_id of this BatchUpdateLakeFormationInstanceTagsRequest.
 
         LakeFormation实例ID
 
@@ -71,7 +71,7 @@ class BatchUpdateLakeFormationInstanceTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateLakeFormationInstanceTagsRequest.
+        r"""Gets the body of this BatchUpdateLakeFormationInstanceTagsRequest.
 
         :return: The body of this BatchUpdateLakeFormationInstanceTagsRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchUpdateTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchUpdateLakeFormationInstanceTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateLakeFormationInstanceTagsRequest.
+        r"""Sets the body of this BatchUpdateLakeFormationInstanceTagsRequest.
 
         :param body: The body of this BatchUpdateLakeFormationInstanceTagsRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.BatchUpdateTagsRequestBody`

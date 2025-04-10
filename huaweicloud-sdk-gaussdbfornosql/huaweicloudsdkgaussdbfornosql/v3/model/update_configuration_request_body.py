@@ -29,7 +29,7 @@ class UpdateConfigurationRequestBody:
     }
 
     def __init__(self, name=None, description=None, values=None):
-        """UpdateConfigurationRequestBody
+        r"""UpdateConfigurationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateConfigurationRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateConfigurationRequestBody.
+        r"""Gets the name of this UpdateConfigurationRequestBody.
 
         参数模板名称。最长64个字符，只允许大写字母、小写字母、数字和特殊字符中划线、下划线和点。
 
@@ -68,7 +68,7 @@ class UpdateConfigurationRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateConfigurationRequestBody.
+        r"""Sets the name of this UpdateConfigurationRequestBody.
 
         参数模板名称。最长64个字符，只允许大写字母、小写字母、数字和特殊字符中划线、下划线和点。
 
@@ -79,7 +79,7 @@ class UpdateConfigurationRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateConfigurationRequestBody.
+        r"""Gets the description of this UpdateConfigurationRequestBody.
 
         参数模板描述。最长256个字符，不支持!<>=&\"'特殊字符。默认为空。
 
@@ -90,7 +90,7 @@ class UpdateConfigurationRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateConfigurationRequestBody.
+        r"""Sets the description of this UpdateConfigurationRequestBody.
 
         参数模板描述。最长256个字符，不支持!<>=&\"'特殊字符。默认为空。
 
@@ -101,7 +101,7 @@ class UpdateConfigurationRequestBody:
 
     @property
     def values(self):
-        """Gets the values of this UpdateConfigurationRequestBody.
+        r"""Gets the values of this UpdateConfigurationRequestBody.
 
         参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。
 
@@ -112,7 +112,7 @@ class UpdateConfigurationRequestBody:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this UpdateConfigurationRequestBody.
+        r"""Sets the values of this UpdateConfigurationRequestBody.
 
         参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。
 

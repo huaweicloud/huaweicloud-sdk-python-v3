@@ -37,7 +37,7 @@ class LoginPolicyOption:
     }
 
     def __init__(self, account_validity_period=None, custom_info_for_login=None, lockout_duration=None, login_failed_times=None, period_with_login_failures=None, session_timeout=None, show_recent_login_info=None):
-        """LoginPolicyOption
+        r"""LoginPolicyOption
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class LoginPolicyOption:
 
     @property
     def account_validity_period(self):
-        """Gets the account_validity_period of this LoginPolicyOption.
+        r"""Gets the account_validity_period of this LoginPolicyOption.
 
         账号在该值设置的有效期内未使用，则被停用。
 
@@ -96,7 +96,7 @@ class LoginPolicyOption:
 
     @account_validity_period.setter
     def account_validity_period(self, account_validity_period):
-        """Sets the account_validity_period of this LoginPolicyOption.
+        r"""Sets the account_validity_period of this LoginPolicyOption.
 
         账号在该值设置的有效期内未使用，则被停用。
 
@@ -107,7 +107,7 @@ class LoginPolicyOption:
 
     @property
     def custom_info_for_login(self):
-        """Gets the custom_info_for_login of this LoginPolicyOption.
+        r"""Gets the custom_info_for_login of this LoginPolicyOption.
 
         登录提示信息。
 
@@ -118,7 +118,7 @@ class LoginPolicyOption:
 
     @custom_info_for_login.setter
     def custom_info_for_login(self, custom_info_for_login):
-        """Sets the custom_info_for_login of this LoginPolicyOption.
+        r"""Sets the custom_info_for_login of this LoginPolicyOption.
 
         登录提示信息。
 
@@ -129,7 +129,7 @@ class LoginPolicyOption:
 
     @property
     def lockout_duration(self):
-        """Gets the lockout_duration of this LoginPolicyOption.
+        r"""Gets the lockout_duration of this LoginPolicyOption.
 
         帐号锁定时长（分钟），取值范围[15,30]。
 
@@ -140,7 +140,7 @@ class LoginPolicyOption:
 
     @lockout_duration.setter
     def lockout_duration(self, lockout_duration):
-        """Sets the lockout_duration of this LoginPolicyOption.
+        r"""Sets the lockout_duration of this LoginPolicyOption.
 
         帐号锁定时长（分钟），取值范围[15,30]。
 
@@ -151,7 +151,7 @@ class LoginPolicyOption:
 
     @property
     def login_failed_times(self):
-        """Gets the login_failed_times of this LoginPolicyOption.
+        r"""Gets the login_failed_times of this LoginPolicyOption.
 
         限定时间内登录失败次数，取值范围[3,10]。
 
@@ -162,7 +162,7 @@ class LoginPolicyOption:
 
     @login_failed_times.setter
     def login_failed_times(self, login_failed_times):
-        """Sets the login_failed_times of this LoginPolicyOption.
+        r"""Sets the login_failed_times of this LoginPolicyOption.
 
         限定时间内登录失败次数，取值范围[3,10]。
 
@@ -173,7 +173,7 @@ class LoginPolicyOption:
 
     @property
     def period_with_login_failures(self):
-        """Gets the period_with_login_failures of this LoginPolicyOption.
+        r"""Gets the period_with_login_failures of this LoginPolicyOption.
 
         限定时间长度（分钟），取值范围[15,60]。
 
@@ -184,7 +184,7 @@ class LoginPolicyOption:
 
     @period_with_login_failures.setter
     def period_with_login_failures(self, period_with_login_failures):
-        """Sets the period_with_login_failures of this LoginPolicyOption.
+        r"""Sets the period_with_login_failures of this LoginPolicyOption.
 
         限定时间长度（分钟），取值范围[15,60]。
 
@@ -195,7 +195,7 @@ class LoginPolicyOption:
 
     @property
     def session_timeout(self):
-        """Gets the session_timeout of this LoginPolicyOption.
+        r"""Gets the session_timeout of this LoginPolicyOption.
 
         登录会话失效时间，取值范围[15,1440]。
 
@@ -206,7 +206,7 @@ class LoginPolicyOption:
 
     @session_timeout.setter
     def session_timeout(self, session_timeout):
-        """Sets the session_timeout of this LoginPolicyOption.
+        r"""Sets the session_timeout of this LoginPolicyOption.
 
         登录会话失效时间，取值范围[15,1440]。
 
@@ -217,7 +217,7 @@ class LoginPolicyOption:
 
     @property
     def show_recent_login_info(self):
-        """Gets the show_recent_login_info of this LoginPolicyOption.
+        r"""Gets the show_recent_login_info of this LoginPolicyOption.
 
         显示最近一次的登录信息。取值范围true或false。
 
@@ -228,7 +228,7 @@ class LoginPolicyOption:
 
     @show_recent_login_info.setter
     def show_recent_login_info(self, show_recent_login_info):
-        """Sets the show_recent_login_info of this LoginPolicyOption.
+        r"""Sets the show_recent_login_info of this LoginPolicyOption.
 
         显示最近一次的登录信息。取值范围true或false。
 

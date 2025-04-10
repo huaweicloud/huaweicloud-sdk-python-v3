@@ -37,7 +37,7 @@ class ElasticResourcePoolQueue:
     }
 
     def __init__(self, queue_name=None, enterprise_project_id=None, queue_type=None, queue_scaling_policies=None, owner=None, create_time=None, engine=None):
-        """ElasticResourcePoolQueue
+        r"""ElasticResourcePoolQueue
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ElasticResourcePoolQueue:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ElasticResourcePoolQueue.
+        r"""Gets the queue_name of this ElasticResourcePoolQueue.
 
         队列名称
 
@@ -96,7 +96,7 @@ class ElasticResourcePoolQueue:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ElasticResourcePoolQueue.
+        r"""Sets the queue_name of this ElasticResourcePoolQueue.
 
         队列名称
 
@@ -107,7 +107,7 @@ class ElasticResourcePoolQueue:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ElasticResourcePoolQueue.
+        r"""Gets the enterprise_project_id of this ElasticResourcePoolQueue.
 
         企业项目ID
 
@@ -118,7 +118,7 @@ class ElasticResourcePoolQueue:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ElasticResourcePoolQueue.
+        r"""Sets the enterprise_project_id of this ElasticResourcePoolQueue.
 
         企业项目ID
 
@@ -129,7 +129,7 @@ class ElasticResourcePoolQueue:
 
     @property
     def queue_type(self):
-        """Gets the queue_type of this ElasticResourcePoolQueue.
+        r"""Gets the queue_type of this ElasticResourcePoolQueue.
 
         队列类型
 
@@ -140,7 +140,7 @@ class ElasticResourcePoolQueue:
 
     @queue_type.setter
     def queue_type(self, queue_type):
-        """Sets the queue_type of this ElasticResourcePoolQueue.
+        r"""Sets the queue_type of this ElasticResourcePoolQueue.
 
         队列类型
 
@@ -151,7 +151,7 @@ class ElasticResourcePoolQueue:
 
     @property
     def queue_scaling_policies(self):
-        """Gets the queue_scaling_policies of this ElasticResourcePoolQueue.
+        r"""Gets the queue_scaling_policies of this ElasticResourcePoolQueue.
 
         队列扩缩容策略
 
@@ -162,7 +162,7 @@ class ElasticResourcePoolQueue:
 
     @queue_scaling_policies.setter
     def queue_scaling_policies(self, queue_scaling_policies):
-        """Sets the queue_scaling_policies of this ElasticResourcePoolQueue.
+        r"""Sets the queue_scaling_policies of this ElasticResourcePoolQueue.
 
         队列扩缩容策略
 
@@ -173,7 +173,7 @@ class ElasticResourcePoolQueue:
 
     @property
     def owner(self):
-        """Gets the owner of this ElasticResourcePoolQueue.
+        r"""Gets the owner of this ElasticResourcePoolQueue.
 
         所有者
 
@@ -184,7 +184,7 @@ class ElasticResourcePoolQueue:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ElasticResourcePoolQueue.
+        r"""Sets the owner of this ElasticResourcePoolQueue.
 
         所有者
 
@@ -195,7 +195,7 @@ class ElasticResourcePoolQueue:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ElasticResourcePoolQueue.
+        r"""Gets the create_time of this ElasticResourcePoolQueue.
 
         创建时间
 
@@ -206,7 +206,7 @@ class ElasticResourcePoolQueue:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ElasticResourcePoolQueue.
+        r"""Sets the create_time of this ElasticResourcePoolQueue.
 
         创建时间
 
@@ -217,7 +217,7 @@ class ElasticResourcePoolQueue:
 
     @property
     def engine(self):
-        """Gets the engine of this ElasticResourcePoolQueue.
+        r"""Gets the engine of this ElasticResourcePoolQueue.
 
         引擎类型
 
@@ -228,7 +228,7 @@ class ElasticResourcePoolQueue:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ElasticResourcePoolQueue.
+        r"""Sets the engine of this ElasticResourcePoolQueue.
 
         引擎类型
 

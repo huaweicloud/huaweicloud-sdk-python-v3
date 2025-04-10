@@ -28,7 +28,7 @@ class ListAsyncCommandsResponse(SdkResponse):
     }
 
     def __init__(self, commands=None, page=None):
-        """ListAsyncCommandsResponse
+        r"""ListAsyncCommandsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAsyncCommandsResponse(SdkResponse):
 
     @property
     def commands(self):
-        """Gets the commands of this ListAsyncCommandsResponse.
+        r"""Gets the commands of this ListAsyncCommandsResponse.
 
         设备队列命令列表。
 
@@ -62,7 +62,7 @@ class ListAsyncCommandsResponse(SdkResponse):
 
     @commands.setter
     def commands(self, commands):
-        """Sets the commands of this ListAsyncCommandsResponse.
+        r"""Sets the commands of this ListAsyncCommandsResponse.
 
         设备队列命令列表。
 
@@ -73,7 +73,7 @@ class ListAsyncCommandsResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ListAsyncCommandsResponse.
+        r"""Gets the page of this ListAsyncCommandsResponse.
 
         :return: The page of this ListAsyncCommandsResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.QueueCommandPage`
@@ -82,7 +82,7 @@ class ListAsyncCommandsResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListAsyncCommandsResponse.
+        r"""Sets the page of this ListAsyncCommandsResponse.
 
         :param page: The page of this ListAsyncCommandsResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.QueueCommandPage`

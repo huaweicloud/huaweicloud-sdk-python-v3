@@ -27,7 +27,7 @@ class QuotaReclaim:
     }
 
     def __init__(self, quota_id=None, quota_balance=None):
-        """QuotaReclaim
+        r"""QuotaReclaim
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QuotaReclaim:
 
     @property
     def quota_id(self):
-        """Gets the quota_id of this QuotaReclaim.
+        r"""Gets the quota_id of this QuotaReclaim.
 
         被回收的云经销商的代金券额度ID。
 
@@ -61,7 +61,7 @@ class QuotaReclaim:
 
     @quota_id.setter
     def quota_id(self, quota_id):
-        """Sets the quota_id of this QuotaReclaim.
+        r"""Sets the quota_id of this QuotaReclaim.
 
         被回收的云经销商的代金券额度ID。
 
@@ -72,7 +72,7 @@ class QuotaReclaim:
 
     @property
     def quota_balance(self):
-        """Gets the quota_balance of this QuotaReclaim.
+        r"""Gets the quota_balance of this QuotaReclaim.
 
         被回收额度后的代金券额度余额。单位：元。
 
@@ -83,7 +83,7 @@ class QuotaReclaim:
 
     @quota_balance.setter
     def quota_balance(self, quota_balance):
-        """Sets the quota_balance of this QuotaReclaim.
+        r"""Sets the quota_balance of this QuotaReclaim.
 
         被回收额度后的代金券额度余额。单位：元。
 

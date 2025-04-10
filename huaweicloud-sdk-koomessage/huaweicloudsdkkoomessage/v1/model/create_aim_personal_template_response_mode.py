@@ -25,7 +25,7 @@ class CreateAimPersonalTemplateResponseMode:
     }
 
     def __init__(self, tpl_id=None):
-        """CreateAimPersonalTemplateResponseMode
+        r"""CreateAimPersonalTemplateResponseMode
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAimPersonalTemplateResponseMode:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this CreateAimPersonalTemplateResponseMode.
+        r"""Gets the tpl_id of this CreateAimPersonalTemplateResponseMode.
 
         智能信息模板ID。
 
@@ -54,7 +54,7 @@ class CreateAimPersonalTemplateResponseMode:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this CreateAimPersonalTemplateResponseMode.
+        r"""Sets the tpl_id of this CreateAimPersonalTemplateResponseMode.
 
         智能信息模板ID。
 

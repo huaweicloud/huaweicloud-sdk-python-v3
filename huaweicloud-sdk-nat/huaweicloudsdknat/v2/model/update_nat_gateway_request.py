@@ -27,7 +27,7 @@ class UpdateNatGatewayRequest:
     }
 
     def __init__(self, nat_gateway_id=None, body=None):
-        """UpdateNatGatewayRequest
+        r"""UpdateNatGatewayRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateNatGatewayRequest:
 
     @property
     def nat_gateway_id(self):
-        """Gets the nat_gateway_id of this UpdateNatGatewayRequest.
+        r"""Gets the nat_gateway_id of this UpdateNatGatewayRequest.
 
         公网NAT网关实例的ID。
 
@@ -60,7 +60,7 @@ class UpdateNatGatewayRequest:
 
     @nat_gateway_id.setter
     def nat_gateway_id(self, nat_gateway_id):
-        """Sets the nat_gateway_id of this UpdateNatGatewayRequest.
+        r"""Sets the nat_gateway_id of this UpdateNatGatewayRequest.
 
         公网NAT网关实例的ID。
 
@@ -71,7 +71,7 @@ class UpdateNatGatewayRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNatGatewayRequest.
+        r"""Gets the body of this UpdateNatGatewayRequest.
 
         :return: The body of this UpdateNatGatewayRequest.
         :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewayRequestBody`
@@ -80,7 +80,7 @@ class UpdateNatGatewayRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNatGatewayRequest.
+        r"""Sets the body of this UpdateNatGatewayRequest.
 
         :param body: The body of this UpdateNatGatewayRequest.
         :type body: :class:`huaweicloudsdknat.v2.UpdateNatGatewayRequestBody`

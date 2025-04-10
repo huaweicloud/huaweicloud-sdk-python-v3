@@ -29,7 +29,7 @@ class DataPointDto:
     }
 
     def __init__(self, timestamp=None, unit=None, value=None):
-        """DataPointDto
+        r"""DataPointDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DataPointDto:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this DataPointDto.
+        r"""Gets the timestamp of this DataPointDto.
 
         时间戳
 
@@ -68,7 +68,7 @@ class DataPointDto:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this DataPointDto.
+        r"""Sets the timestamp of this DataPointDto.
 
         时间戳
 
@@ -79,7 +79,7 @@ class DataPointDto:
 
     @property
     def unit(self):
-        """Gets the unit of this DataPointDto.
+        r"""Gets the unit of this DataPointDto.
 
         数据单位
 
@@ -90,7 +90,7 @@ class DataPointDto:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this DataPointDto.
+        r"""Sets the unit of this DataPointDto.
 
         数据单位
 
@@ -101,7 +101,7 @@ class DataPointDto:
 
     @property
     def value(self):
-        """Gets the value of this DataPointDto.
+        r"""Gets the value of this DataPointDto.
 
         统计结果
 
@@ -112,7 +112,7 @@ class DataPointDto:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DataPointDto.
+        r"""Sets the value of this DataPointDto.
 
         统计结果
 

@@ -25,7 +25,7 @@ class RunSummaryRequest:
     }
 
     def __init__(self, body=None):
-        """RunSummaryRequest
+        r"""RunSummaryRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunSummaryRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunSummaryRequest.
+        r"""Gets the body of this RunSummaryRequest.
 
         :return: The body of this RunSummaryRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.SummaryReq`
@@ -52,7 +52,7 @@ class RunSummaryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunSummaryRequest.
+        r"""Sets the body of this RunSummaryRequest.
 
         :param body: The body of this RunSummaryRequest.
         :type body: :class:`huaweicloudsdknlp.v2.SummaryReq`

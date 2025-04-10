@@ -25,7 +25,7 @@ class CreateLogDumpObsRequest:
     }
 
     def __init__(self, body=None):
-        """CreateLogDumpObsRequest
+        r"""CreateLogDumpObsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateLogDumpObsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLogDumpObsRequest.
+        r"""Gets the body of this CreateLogDumpObsRequest.
 
         :return: The body of this CreateLogDumpObsRequest.
         :rtype: :class:`huaweicloudsdklts.v2.CreateLogDumpObsRequestBody`
@@ -52,7 +52,7 @@ class CreateLogDumpObsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLogDumpObsRequest.
+        r"""Sets the body of this CreateLogDumpObsRequest.
 
         :param body: The body of this CreateLogDumpObsRequest.
         :type body: :class:`huaweicloudsdklts.v2.CreateLogDumpObsRequestBody`

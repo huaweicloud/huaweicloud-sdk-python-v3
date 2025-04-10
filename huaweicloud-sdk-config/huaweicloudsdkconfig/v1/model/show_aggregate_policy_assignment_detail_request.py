@@ -25,7 +25,7 @@ class ShowAggregatePolicyAssignmentDetailRequest:
     }
 
     def __init__(self, body=None):
-        """ShowAggregatePolicyAssignmentDetailRequest
+        r"""ShowAggregatePolicyAssignmentDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowAggregatePolicyAssignmentDetailRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowAggregatePolicyAssignmentDetailRequest.
+        r"""Gets the body of this ShowAggregatePolicyAssignmentDetailRequest.
 
         :return: The body of this ShowAggregatePolicyAssignmentDetailRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.AggregatePolicyAssignmentDetailRequest`
@@ -52,7 +52,7 @@ class ShowAggregatePolicyAssignmentDetailRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowAggregatePolicyAssignmentDetailRequest.
+        r"""Sets the body of this ShowAggregatePolicyAssignmentDetailRequest.
 
         :param body: The body of this ShowAggregatePolicyAssignmentDetailRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.AggregatePolicyAssignmentDetailRequest`

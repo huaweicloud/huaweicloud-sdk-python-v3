@@ -27,7 +27,7 @@ class ShowVpnAccessPolicyRequest:
     }
 
     def __init__(self, vpn_server_id=None, policy_id=None):
-        """ShowVpnAccessPolicyRequest
+        r"""ShowVpnAccessPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowVpnAccessPolicyRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this ShowVpnAccessPolicyRequest.
+        r"""Gets the vpn_server_id of this ShowVpnAccessPolicyRequest.
 
         VPN服务端 ID
 
@@ -59,7 +59,7 @@ class ShowVpnAccessPolicyRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this ShowVpnAccessPolicyRequest.
+        r"""Sets the vpn_server_id of this ShowVpnAccessPolicyRequest.
 
         VPN服务端 ID
 
@@ -70,7 +70,7 @@ class ShowVpnAccessPolicyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowVpnAccessPolicyRequest.
+        r"""Gets the policy_id of this ShowVpnAccessPolicyRequest.
 
         VPN访问策略ID
 
@@ -81,7 +81,7 @@ class ShowVpnAccessPolicyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowVpnAccessPolicyRequest.
+        r"""Sets the policy_id of this ShowVpnAccessPolicyRequest.
 
         VPN访问策略ID
 

@@ -41,7 +41,7 @@ class RecordForGetAllCatalog:
     }
 
     def __init__(self, catalog_id=None, pid=None, name=None, description=None, api_catalog_type=None, create_time=None, create_user=None, update_time=None, update_user=None):
-        """RecordForGetAllCatalog
+        r"""RecordForGetAllCatalog
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class RecordForGetAllCatalog:
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this RecordForGetAllCatalog.
+        r"""Gets the catalog_id of this RecordForGetAllCatalog.
 
         目录编号
 
@@ -110,7 +110,7 @@ class RecordForGetAllCatalog:
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this RecordForGetAllCatalog.
+        r"""Sets the catalog_id of this RecordForGetAllCatalog.
 
         目录编号
 
@@ -121,7 +121,7 @@ class RecordForGetAllCatalog:
 
     @property
     def pid(self):
-        """Gets the pid of this RecordForGetAllCatalog.
+        r"""Gets the pid of this RecordForGetAllCatalog.
 
         父目录编号
 
@@ -132,7 +132,7 @@ class RecordForGetAllCatalog:
 
     @pid.setter
     def pid(self, pid):
-        """Sets the pid of this RecordForGetAllCatalog.
+        r"""Sets the pid of this RecordForGetAllCatalog.
 
         父目录编号
 
@@ -143,7 +143,7 @@ class RecordForGetAllCatalog:
 
     @property
     def name(self):
-        """Gets the name of this RecordForGetAllCatalog.
+        r"""Gets the name of this RecordForGetAllCatalog.
 
         名称
 
@@ -154,7 +154,7 @@ class RecordForGetAllCatalog:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RecordForGetAllCatalog.
+        r"""Sets the name of this RecordForGetAllCatalog.
 
         名称
 
@@ -165,7 +165,7 @@ class RecordForGetAllCatalog:
 
     @property
     def description(self):
-        """Gets the description of this RecordForGetAllCatalog.
+        r"""Gets the description of this RecordForGetAllCatalog.
 
         目录描述
 
@@ -176,7 +176,7 @@ class RecordForGetAllCatalog:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RecordForGetAllCatalog.
+        r"""Sets the description of this RecordForGetAllCatalog.
 
         目录描述
 
@@ -187,7 +187,7 @@ class RecordForGetAllCatalog:
 
     @property
     def api_catalog_type(self):
-        """Gets the api_catalog_type of this RecordForGetAllCatalog.
+        r"""Gets the api_catalog_type of this RecordForGetAllCatalog.
 
         目录类型
 
@@ -198,7 +198,7 @@ class RecordForGetAllCatalog:
 
     @api_catalog_type.setter
     def api_catalog_type(self, api_catalog_type):
-        """Sets the api_catalog_type of this RecordForGetAllCatalog.
+        r"""Sets the api_catalog_type of this RecordForGetAllCatalog.
 
         目录类型
 
@@ -209,7 +209,7 @@ class RecordForGetAllCatalog:
 
     @property
     def create_time(self):
-        """Gets the create_time of this RecordForGetAllCatalog.
+        r"""Gets the create_time of this RecordForGetAllCatalog.
 
         创建时间
 
@@ -220,7 +220,7 @@ class RecordForGetAllCatalog:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this RecordForGetAllCatalog.
+        r"""Sets the create_time of this RecordForGetAllCatalog.
 
         创建时间
 
@@ -231,7 +231,7 @@ class RecordForGetAllCatalog:
 
     @property
     def create_user(self):
-        """Gets the create_user of this RecordForGetAllCatalog.
+        r"""Gets the create_user of this RecordForGetAllCatalog.
 
         创建者
 
@@ -242,7 +242,7 @@ class RecordForGetAllCatalog:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this RecordForGetAllCatalog.
+        r"""Sets the create_user of this RecordForGetAllCatalog.
 
         创建者
 
@@ -253,7 +253,7 @@ class RecordForGetAllCatalog:
 
     @property
     def update_time(self):
-        """Gets the update_time of this RecordForGetAllCatalog.
+        r"""Gets the update_time of this RecordForGetAllCatalog.
 
         更新时间
 
@@ -264,7 +264,7 @@ class RecordForGetAllCatalog:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this RecordForGetAllCatalog.
+        r"""Sets the update_time of this RecordForGetAllCatalog.
 
         更新时间
 
@@ -275,7 +275,7 @@ class RecordForGetAllCatalog:
 
     @property
     def update_user(self):
-        """Gets the update_user of this RecordForGetAllCatalog.
+        r"""Gets the update_user of this RecordForGetAllCatalog.
 
         更新者
 
@@ -286,7 +286,7 @@ class RecordForGetAllCatalog:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this RecordForGetAllCatalog.
+        r"""Sets the update_user of this RecordForGetAllCatalog.
 
         更新者
 

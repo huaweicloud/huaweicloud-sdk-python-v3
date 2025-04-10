@@ -30,7 +30,7 @@ class DeleteSShkeyResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """DeleteSShkeyResponse
+        r"""DeleteSShkeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteSShkeyResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this DeleteSShkeyResponse.
+        r"""Gets the error of this DeleteSShkeyResponse.
 
         :return: The error of this DeleteSShkeyResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class DeleteSShkeyResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this DeleteSShkeyResponse.
+        r"""Sets the error of this DeleteSShkeyResponse.
 
         :param error: The error of this DeleteSShkeyResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class DeleteSShkeyResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteSShkeyResponse.
+        r"""Gets the result of this DeleteSShkeyResponse.
 
         响应结果
 
@@ -87,7 +87,7 @@ class DeleteSShkeyResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteSShkeyResponse.
+        r"""Sets the result of this DeleteSShkeyResponse.
 
         响应结果
 
@@ -98,7 +98,7 @@ class DeleteSShkeyResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteSShkeyResponse.
+        r"""Gets the status of this DeleteSShkeyResponse.
 
         响应状态
 
@@ -109,7 +109,7 @@ class DeleteSShkeyResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteSShkeyResponse.
+        r"""Sets the status of this DeleteSShkeyResponse.
 
         响应状态
 

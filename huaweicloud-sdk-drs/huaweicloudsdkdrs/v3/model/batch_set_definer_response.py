@@ -28,7 +28,7 @@ class BatchSetDefinerResponse(SdkResponse):
     }
 
     def __init__(self, count=None, results=None):
-        """BatchSetDefinerResponse
+        r"""BatchSetDefinerResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchSetDefinerResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchSetDefinerResponse.
+        r"""Gets the count of this BatchSetDefinerResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class BatchSetDefinerResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchSetDefinerResponse.
+        r"""Sets the count of this BatchSetDefinerResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class BatchSetDefinerResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchSetDefinerResponse.
+        r"""Gets the results of this BatchSetDefinerResponse.
 
         批量修改任务返回列表
 
@@ -84,7 +84,7 @@ class BatchSetDefinerResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchSetDefinerResponse.
+        r"""Sets the results of this BatchSetDefinerResponse.
 
         批量修改任务返回列表
 

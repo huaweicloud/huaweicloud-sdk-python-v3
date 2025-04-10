@@ -33,7 +33,7 @@ class TimeRange:
     }
 
     def __init__(self, sql_time_zone=None, start_time=None, end_time=None, start_time_gt=None, end_time_lt=None):
-        """TimeRange
+        r"""TimeRange
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class TimeRange:
 
     @property
     def sql_time_zone(self):
-        """Gets the sql_time_zone of this TimeRange.
+        r"""Gets the sql_time_zone of this TimeRange.
 
         时区信息，默认为“UTC”。
 
@@ -80,7 +80,7 @@ class TimeRange:
 
     @sql_time_zone.setter
     def sql_time_zone(self, sql_time_zone):
-        """Sets the sql_time_zone of this TimeRange.
+        r"""Sets the sql_time_zone of this TimeRange.
 
         时区信息，默认为“UTC”。
 
@@ -91,7 +91,7 @@ class TimeRange:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TimeRange.
+        r"""Gets the start_time of this TimeRange.
 
         搜索起始时间（UTC时间，毫秒级）
 
@@ -102,7 +102,7 @@ class TimeRange:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TimeRange.
+        r"""Sets the start_time of this TimeRange.
 
         搜索起始时间（UTC时间，毫秒级）
 
@@ -113,7 +113,7 @@ class TimeRange:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TimeRange.
+        r"""Gets the end_time of this TimeRange.
 
         搜索结束时间（UTC时间，毫秒级）。
 
@@ -124,7 +124,7 @@ class TimeRange:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TimeRange.
+        r"""Sets the end_time of this TimeRange.
 
         搜索结束时间（UTC时间，毫秒级）。
 
@@ -135,7 +135,7 @@ class TimeRange:
 
     @property
     def start_time_gt(self):
-        """Gets the start_time_gt of this TimeRange.
+        r"""Gets the start_time_gt of this TimeRange.
 
         搜索是否包含起始时间点，默认为false。
 
@@ -146,7 +146,7 @@ class TimeRange:
 
     @start_time_gt.setter
     def start_time_gt(self, start_time_gt):
-        """Sets the start_time_gt of this TimeRange.
+        r"""Sets the start_time_gt of this TimeRange.
 
         搜索是否包含起始时间点，默认为false。
 
@@ -157,7 +157,7 @@ class TimeRange:
 
     @property
     def end_time_lt(self):
-        """Gets the end_time_lt of this TimeRange.
+        r"""Gets the end_time_lt of this TimeRange.
 
         搜索是否包含结束时间点，默认为false。
 
@@ -168,7 +168,7 @@ class TimeRange:
 
     @end_time_lt.setter
     def end_time_lt(self, end_time_lt):
-        """Sets the end_time_lt of this TimeRange.
+        r"""Sets the end_time_lt of this TimeRange.
 
         搜索是否包含结束时间点，默认为false。
 

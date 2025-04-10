@@ -25,7 +25,7 @@ class CheckProjectNameRequestV4:
     }
 
     def __init__(self, project_name=None):
-        """CheckProjectNameRequestV4
+        r"""CheckProjectNameRequestV4
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CheckProjectNameRequestV4:
 
     @property
     def project_name(self):
-        """Gets the project_name of this CheckProjectNameRequestV4.
+        r"""Gets the project_name of this CheckProjectNameRequestV4.
 
         项目名
 
@@ -53,7 +53,7 @@ class CheckProjectNameRequestV4:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this CheckProjectNameRequestV4.
+        r"""Sets the project_name of this CheckProjectNameRequestV4.
 
         项目名
 

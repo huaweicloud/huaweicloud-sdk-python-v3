@@ -48,7 +48,7 @@ class ShowAssetStatisticResponse(SdkResponse):
     }
 
     def __init__(self, account_num=None, port_num=None, process_num=None, app_num=None, auto_launch_num=None, web_framework_num=None, web_site_num=None, jar_package_num=None, kernel_module_num=None, web_service_num=None, web_app_num=None, database_num=None):
-        """ShowAssetStatisticResponse
+        r"""ShowAssetStatisticResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @property
     def account_num(self):
-        """Gets the account_num of this ShowAssetStatisticResponse.
+        r"""Gets the account_num of this ShowAssetStatisticResponse.
 
         主机账号数量
 
@@ -132,7 +132,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @account_num.setter
     def account_num(self, account_num):
-        """Sets the account_num of this ShowAssetStatisticResponse.
+        r"""Sets the account_num of this ShowAssetStatisticResponse.
 
         主机账号数量
 
@@ -143,7 +143,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @property
     def port_num(self):
-        """Gets the port_num of this ShowAssetStatisticResponse.
+        r"""Gets the port_num of this ShowAssetStatisticResponse.
 
         开放端口数量
 
@@ -154,7 +154,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @port_num.setter
     def port_num(self, port_num):
-        """Sets the port_num of this ShowAssetStatisticResponse.
+        r"""Sets the port_num of this ShowAssetStatisticResponse.
 
         开放端口数量
 
@@ -165,7 +165,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @property
     def process_num(self):
-        """Gets the process_num of this ShowAssetStatisticResponse.
+        r"""Gets the process_num of this ShowAssetStatisticResponse.
 
         进程数量
 
@@ -176,7 +176,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @process_num.setter
     def process_num(self, process_num):
-        """Sets the process_num of this ShowAssetStatisticResponse.
+        r"""Sets the process_num of this ShowAssetStatisticResponse.
 
         进程数量
 
@@ -187,7 +187,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @property
     def app_num(self):
-        """Gets the app_num of this ShowAssetStatisticResponse.
+        r"""Gets the app_num of this ShowAssetStatisticResponse.
 
         软件数量
 
@@ -198,7 +198,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @app_num.setter
     def app_num(self, app_num):
-        """Sets the app_num of this ShowAssetStatisticResponse.
+        r"""Sets the app_num of this ShowAssetStatisticResponse.
 
         软件数量
 
@@ -209,7 +209,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @property
     def auto_launch_num(self):
-        """Gets the auto_launch_num of this ShowAssetStatisticResponse.
+        r"""Gets the auto_launch_num of this ShowAssetStatisticResponse.
 
         自启动进程数量
 
@@ -220,7 +220,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @auto_launch_num.setter
     def auto_launch_num(self, auto_launch_num):
-        """Sets the auto_launch_num of this ShowAssetStatisticResponse.
+        r"""Sets the auto_launch_num of this ShowAssetStatisticResponse.
 
         自启动进程数量
 
@@ -231,7 +231,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @property
     def web_framework_num(self):
-        """Gets the web_framework_num of this ShowAssetStatisticResponse.
+        r"""Gets the web_framework_num of this ShowAssetStatisticResponse.
 
         web框架数量
 
@@ -242,7 +242,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @web_framework_num.setter
     def web_framework_num(self, web_framework_num):
-        """Sets the web_framework_num of this ShowAssetStatisticResponse.
+        r"""Sets the web_framework_num of this ShowAssetStatisticResponse.
 
         web框架数量
 
@@ -253,7 +253,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @property
     def web_site_num(self):
-        """Gets the web_site_num of this ShowAssetStatisticResponse.
+        r"""Gets the web_site_num of this ShowAssetStatisticResponse.
 
         Web站点数量
 
@@ -264,7 +264,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @web_site_num.setter
     def web_site_num(self, web_site_num):
-        """Sets the web_site_num of this ShowAssetStatisticResponse.
+        r"""Sets the web_site_num of this ShowAssetStatisticResponse.
 
         Web站点数量
 
@@ -275,7 +275,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @property
     def jar_package_num(self):
-        """Gets the jar_package_num of this ShowAssetStatisticResponse.
+        r"""Gets the jar_package_num of this ShowAssetStatisticResponse.
 
         Jar包数量
 
@@ -286,7 +286,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @jar_package_num.setter
     def jar_package_num(self, jar_package_num):
-        """Sets the jar_package_num of this ShowAssetStatisticResponse.
+        r"""Sets the jar_package_num of this ShowAssetStatisticResponse.
 
         Jar包数量
 
@@ -297,7 +297,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @property
     def kernel_module_num(self):
-        """Gets the kernel_module_num of this ShowAssetStatisticResponse.
+        r"""Gets the kernel_module_num of this ShowAssetStatisticResponse.
 
         内核模块数量
 
@@ -308,7 +308,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @kernel_module_num.setter
     def kernel_module_num(self, kernel_module_num):
-        """Sets the kernel_module_num of this ShowAssetStatisticResponse.
+        r"""Sets the kernel_module_num of this ShowAssetStatisticResponse.
 
         内核模块数量
 
@@ -319,7 +319,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @property
     def web_service_num(self):
-        """Gets the web_service_num of this ShowAssetStatisticResponse.
+        r"""Gets the web_service_num of this ShowAssetStatisticResponse.
 
         web服务数量
 
@@ -330,7 +330,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @web_service_num.setter
     def web_service_num(self, web_service_num):
-        """Sets the web_service_num of this ShowAssetStatisticResponse.
+        r"""Sets the web_service_num of this ShowAssetStatisticResponse.
 
         web服务数量
 
@@ -341,7 +341,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @property
     def web_app_num(self):
-        """Gets the web_app_num of this ShowAssetStatisticResponse.
+        r"""Gets the web_app_num of this ShowAssetStatisticResponse.
 
         web应用数量
 
@@ -352,7 +352,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @web_app_num.setter
     def web_app_num(self, web_app_num):
-        """Sets the web_app_num of this ShowAssetStatisticResponse.
+        r"""Sets the web_app_num of this ShowAssetStatisticResponse.
 
         web应用数量
 
@@ -363,7 +363,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @property
     def database_num(self):
-        """Gets the database_num of this ShowAssetStatisticResponse.
+        r"""Gets the database_num of this ShowAssetStatisticResponse.
 
         数据库数量
 
@@ -374,7 +374,7 @@ class ShowAssetStatisticResponse(SdkResponse):
 
     @database_num.setter
     def database_num(self, database_num):
-        """Sets the database_num of this ShowAssetStatisticResponse.
+        r"""Sets the database_num of this ShowAssetStatisticResponse.
 
         数据库数量
 

@@ -24,7 +24,7 @@ class CreateOrUpdateEntitiesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateOrUpdateEntitiesResponse
+        r"""CreateOrUpdateEntitiesResponse
 
         The model defined in huaweicloud sdk
 

@@ -53,7 +53,7 @@ class PublicIp:
     }
 
     def __init__(self, id=None, status=None, port_id=None, public_ip_address=None, private_ip_address=None, create_time=None, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, ip_version=None, site_id=None, site_info=None, operator=None, type=None):
-        """PublicIp
+        r"""PublicIp
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class PublicIp:
 
     @property
     def id(self):
-        """Gets the id of this PublicIp.
+        r"""Gets the id of this PublicIp.
 
         弹性公网IP唯一标识。
 
@@ -152,7 +152,7 @@ class PublicIp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PublicIp.
+        r"""Sets the id of this PublicIp.
 
         弹性公网IP唯一标识。
 
@@ -163,7 +163,7 @@ class PublicIp:
 
     @property
     def status(self):
-        """Gets the status of this PublicIp.
+        r"""Gets the status of this PublicIp.
 
         弹性公网IP的状态。
 
@@ -174,7 +174,7 @@ class PublicIp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PublicIp.
+        r"""Sets the status of this PublicIp.
 
         弹性公网IP的状态。
 
@@ -185,7 +185,7 @@ class PublicIp:
 
     @property
     def port_id(self):
-        """Gets the port_id of this PublicIp.
+        r"""Gets the port_id of this PublicIp.
 
         端口的ID。
 
@@ -196,7 +196,7 @@ class PublicIp:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this PublicIp.
+        r"""Sets the port_id of this PublicIp.
 
         端口的ID。
 
@@ -207,7 +207,7 @@ class PublicIp:
 
     @property
     def public_ip_address(self):
-        """Gets the public_ip_address of this PublicIp.
+        r"""Gets the public_ip_address of this PublicIp.
 
         弹性公网IP的地址。
 
@@ -218,7 +218,7 @@ class PublicIp:
 
     @public_ip_address.setter
     def public_ip_address(self, public_ip_address):
-        """Sets the public_ip_address of this PublicIp.
+        r"""Sets the public_ip_address of this PublicIp.
 
         弹性公网IP的地址。
 
@@ -229,7 +229,7 @@ class PublicIp:
 
     @property
     def private_ip_address(self):
-        """Gets the private_ip_address of this PublicIp.
+        r"""Gets the private_ip_address of this PublicIp.
 
         绑定弹性公网IP的私有IP地址。
 
@@ -240,7 +240,7 @@ class PublicIp:
 
     @private_ip_address.setter
     def private_ip_address(self, private_ip_address):
-        """Sets the private_ip_address of this PublicIp.
+        r"""Sets the private_ip_address of this PublicIp.
 
         绑定弹性公网IP的私有IP地址。
 
@@ -251,7 +251,7 @@ class PublicIp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PublicIp.
+        r"""Gets the create_time of this PublicIp.
 
         创建时间。
 
@@ -262,7 +262,7 @@ class PublicIp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PublicIp.
+        r"""Sets the create_time of this PublicIp.
 
         创建时间。
 
@@ -273,7 +273,7 @@ class PublicIp:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this PublicIp.
+        r"""Gets the bandwidth_id of this PublicIp.
 
         带宽的ID。
 
@@ -284,7 +284,7 @@ class PublicIp:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this PublicIp.
+        r"""Sets the bandwidth_id of this PublicIp.
 
         带宽的ID。
 
@@ -295,7 +295,7 @@ class PublicIp:
 
     @property
     def bandwidth_name(self):
-        """Gets the bandwidth_name of this PublicIp.
+        r"""Gets the bandwidth_name of this PublicIp.
 
         带宽的名称。
 
@@ -306,7 +306,7 @@ class PublicIp:
 
     @bandwidth_name.setter
     def bandwidth_name(self, bandwidth_name):
-        """Sets the bandwidth_name of this PublicIp.
+        r"""Sets the bandwidth_name of this PublicIp.
 
         带宽的名称。
 
@@ -317,7 +317,7 @@ class PublicIp:
 
     @property
     def bandwidth_share_type(self):
-        """Gets the bandwidth_share_type of this PublicIp.
+        r"""Gets the bandwidth_share_type of this PublicIp.
 
         带宽的类型。
 
@@ -328,7 +328,7 @@ class PublicIp:
 
     @bandwidth_share_type.setter
     def bandwidth_share_type(self, bandwidth_share_type):
-        """Sets the bandwidth_share_type of this PublicIp.
+        r"""Sets the bandwidth_share_type of this PublicIp.
 
         带宽的类型。
 
@@ -339,7 +339,7 @@ class PublicIp:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this PublicIp.
+        r"""Gets the bandwidth_size of this PublicIp.
 
         带宽的大小。
 
@@ -350,7 +350,7 @@ class PublicIp:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this PublicIp.
+        r"""Sets the bandwidth_size of this PublicIp.
 
         带宽的大小。
 
@@ -361,7 +361,7 @@ class PublicIp:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this PublicIp.
+        r"""Gets the ip_version of this PublicIp.
 
         IP版本的信息。
 
@@ -372,7 +372,7 @@ class PublicIp:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this PublicIp.
+        r"""Sets the ip_version of this PublicIp.
 
         IP版本的信息。
 
@@ -383,7 +383,7 @@ class PublicIp:
 
     @property
     def site_id(self):
-        """Gets the site_id of this PublicIp.
+        r"""Gets the site_id of this PublicIp.
 
         子网所属的站点ID。
 
@@ -394,7 +394,7 @@ class PublicIp:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this PublicIp.
+        r"""Sets the site_id of this PublicIp.
 
         子网所属的站点ID。
 
@@ -405,7 +405,7 @@ class PublicIp:
 
     @property
     def site_info(self):
-        """Gets the site_info of this PublicIp.
+        r"""Gets the site_info of this PublicIp.
 
         子网所属的站点信息。
 
@@ -416,7 +416,7 @@ class PublicIp:
 
     @site_info.setter
     def site_info(self, site_info):
-        """Sets the site_info of this PublicIp.
+        r"""Sets the site_info of this PublicIp.
 
         子网所属的站点信息。
 
@@ -427,7 +427,7 @@ class PublicIp:
 
     @property
     def operator(self):
-        """Gets the operator of this PublicIp.
+        r"""Gets the operator of this PublicIp.
 
         :return: The operator of this PublicIp.
         :rtype: :class:`huaweicloudsdkiec.v1.Operator`
@@ -436,7 +436,7 @@ class PublicIp:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this PublicIp.
+        r"""Sets the operator of this PublicIp.
 
         :param operator: The operator of this PublicIp.
         :type operator: :class:`huaweicloudsdkiec.v1.Operator`
@@ -445,7 +445,7 @@ class PublicIp:
 
     @property
     def type(self):
-        """Gets the type of this PublicIp.
+        r"""Gets the type of this PublicIp.
 
         弹性公网IP的类型。
 
@@ -456,7 +456,7 @@ class PublicIp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PublicIp.
+        r"""Sets the type of this PublicIp.
 
         弹性公网IP的类型。
 

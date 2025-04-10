@@ -33,7 +33,7 @@ class PostPreCheckResp:
     }
 
     def __init__(self, id=None, precheck_id=None, status=None, error_code=None, error_msg=None):
-        """PostPreCheckResp
+        r"""PostPreCheckResp
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PostPreCheckResp:
 
     @property
     def id(self):
-        """Gets the id of this PostPreCheckResp.
+        r"""Gets the id of this PostPreCheckResp.
 
         任务id。
 
@@ -82,7 +82,7 @@ class PostPreCheckResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PostPreCheckResp.
+        r"""Sets the id of this PostPreCheckResp.
 
         任务id。
 
@@ -93,7 +93,7 @@ class PostPreCheckResp:
 
     @property
     def precheck_id(self):
-        """Gets the precheck_id of this PostPreCheckResp.
+        r"""Gets the precheck_id of this PostPreCheckResp.
 
         预检查id。
 
@@ -104,7 +104,7 @@ class PostPreCheckResp:
 
     @precheck_id.setter
     def precheck_id(self, precheck_id):
-        """Sets the precheck_id of this PostPreCheckResp.
+        r"""Sets the precheck_id of this PostPreCheckResp.
 
         预检查id。
 
@@ -115,7 +115,7 @@ class PostPreCheckResp:
 
     @property
     def status(self):
-        """Gets the status of this PostPreCheckResp.
+        r"""Gets the status of this PostPreCheckResp.
 
         成功或失败的状态
 
@@ -126,7 +126,7 @@ class PostPreCheckResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PostPreCheckResp.
+        r"""Sets the status of this PostPreCheckResp.
 
         成功或失败的状态
 
@@ -137,7 +137,7 @@ class PostPreCheckResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this PostPreCheckResp.
+        r"""Gets the error_code of this PostPreCheckResp.
 
         错误码。
 
@@ -148,7 +148,7 @@ class PostPreCheckResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this PostPreCheckResp.
+        r"""Sets the error_code of this PostPreCheckResp.
 
         错误码。
 
@@ -159,7 +159,7 @@ class PostPreCheckResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this PostPreCheckResp.
+        r"""Gets the error_msg of this PostPreCheckResp.
 
         错误信息。
 
@@ -170,7 +170,7 @@ class PostPreCheckResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this PostPreCheckResp.
+        r"""Sets the error_msg of this PostPreCheckResp.
 
         错误信息。
 

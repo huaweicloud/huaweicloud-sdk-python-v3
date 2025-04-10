@@ -28,7 +28,7 @@ class ShowHdfsFileListResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, files=None):
-        """ShowHdfsFileListResponse
+        r"""ShowHdfsFileListResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowHdfsFileListResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowHdfsFileListResponse.
+        r"""Gets the total_count of this ShowHdfsFileListResponse.
 
         文件总数，与分页无关。
 
@@ -62,7 +62,7 @@ class ShowHdfsFileListResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowHdfsFileListResponse.
+        r"""Sets the total_count of this ShowHdfsFileListResponse.
 
         文件总数，与分页无关。
 
@@ -73,7 +73,7 @@ class ShowHdfsFileListResponse(SdkResponse):
 
     @property
     def files(self):
-        """Gets the files of this ShowHdfsFileListResponse.
+        r"""Gets the files of this ShowHdfsFileListResponse.
 
         文件列表。
 
@@ -84,7 +84,7 @@ class ShowHdfsFileListResponse(SdkResponse):
 
     @files.setter
     def files(self, files):
-        """Sets the files of this ShowHdfsFileListResponse.
+        r"""Sets the files of this ShowHdfsFileListResponse.
 
         文件列表。
 

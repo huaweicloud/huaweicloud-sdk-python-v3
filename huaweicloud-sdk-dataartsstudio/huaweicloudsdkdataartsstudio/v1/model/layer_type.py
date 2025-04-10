@@ -28,7 +28,7 @@ class LayerType:
     }
 
     def __init__(self):
-        """LayerType
+        r"""LayerType
 
         The model defined in huaweicloud sdk
 

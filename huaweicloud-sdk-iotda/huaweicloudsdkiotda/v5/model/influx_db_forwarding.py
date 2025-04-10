@@ -36,7 +36,7 @@ class InfluxDBForwarding:
     }
 
     def __init__(self, address=None, db_name=None, username=None, password=None, measurement=None, column_mappings=None):
-        """InfluxDBForwarding
+        r"""InfluxDBForwarding
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class InfluxDBForwarding:
 
     @property
     def address(self):
-        """Gets the address of this InfluxDBForwarding.
+        r"""Gets the address of this InfluxDBForwarding.
 
         :return: The address of this InfluxDBForwarding.
         :rtype: :class:`huaweicloudsdkiotda.v5.NetAddress`
@@ -82,7 +82,7 @@ class InfluxDBForwarding:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this InfluxDBForwarding.
+        r"""Sets the address of this InfluxDBForwarding.
 
         :param address: The address of this InfluxDBForwarding.
         :type address: :class:`huaweicloudsdkiotda.v5.NetAddress`
@@ -91,7 +91,7 @@ class InfluxDBForwarding:
 
     @property
     def db_name(self):
-        """Gets the db_name of this InfluxDBForwarding.
+        r"""Gets the db_name of this InfluxDBForwarding.
 
         **参数说明**：连接InfluxDB数据库的库名,不存在会自动创建
 
@@ -102,7 +102,7 @@ class InfluxDBForwarding:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this InfluxDBForwarding.
+        r"""Sets the db_name of this InfluxDBForwarding.
 
         **参数说明**：连接InfluxDB数据库的库名,不存在会自动创建
 
@@ -113,7 +113,7 @@ class InfluxDBForwarding:
 
     @property
     def username(self):
-        """Gets the username of this InfluxDBForwarding.
+        r"""Gets the username of this InfluxDBForwarding.
 
         **参数说明**：连接InfluxDB数据库的用户名
 
@@ -124,7 +124,7 @@ class InfluxDBForwarding:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this InfluxDBForwarding.
+        r"""Sets the username of this InfluxDBForwarding.
 
         **参数说明**：连接InfluxDB数据库的用户名
 
@@ -135,7 +135,7 @@ class InfluxDBForwarding:
 
     @property
     def password(self):
-        """Gets the password of this InfluxDBForwarding.
+        r"""Gets the password of this InfluxDBForwarding.
 
         **参数说明**：连接InfluxDB数据库的密码
 
@@ -146,7 +146,7 @@ class InfluxDBForwarding:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this InfluxDBForwarding.
+        r"""Sets the password of this InfluxDBForwarding.
 
         **参数说明**：连接InfluxDB数据库的密码
 
@@ -157,7 +157,7 @@ class InfluxDBForwarding:
 
     @property
     def measurement(self):
-        """Gets the measurement of this InfluxDBForwarding.
+        r"""Gets the measurement of this InfluxDBForwarding.
 
         **参数说明**：InfluxDB数据库的measurement,不存在会自动创建
 
@@ -168,7 +168,7 @@ class InfluxDBForwarding:
 
     @measurement.setter
     def measurement(self, measurement):
-        """Sets the measurement of this InfluxDBForwarding.
+        r"""Sets the measurement of this InfluxDBForwarding.
 
         **参数说明**：InfluxDB数据库的measurement,不存在会自动创建
 
@@ -179,7 +179,7 @@ class InfluxDBForwarding:
 
     @property
     def column_mappings(self):
-        """Gets the column_mappings of this InfluxDBForwarding.
+        r"""Gets the column_mappings of this InfluxDBForwarding.
 
         **参数说明**：InfluxDB数据库和流转数据的对应关系列表。
 
@@ -190,7 +190,7 @@ class InfluxDBForwarding:
 
     @column_mappings.setter
     def column_mappings(self, column_mappings):
-        """Sets the column_mappings of this InfluxDBForwarding.
+        r"""Sets the column_mappings of this InfluxDBForwarding.
 
         **参数说明**：InfluxDB数据库和流转数据的对应关系列表。
 

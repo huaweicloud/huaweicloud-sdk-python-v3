@@ -25,7 +25,7 @@ class MaterialAssetMeta:
     }
 
     def __init__(self, components=None):
-        """MaterialAssetMeta
+        r"""MaterialAssetMeta
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MaterialAssetMeta:
 
     @property
     def components(self):
-        """Gets the components of this MaterialAssetMeta.
+        r"""Gets the components of this MaterialAssetMeta.
 
         可替换的素材组件列表。
 
@@ -54,7 +54,7 @@ class MaterialAssetMeta:
 
     @components.setter
     def components(self, components):
-        """Sets the components of this MaterialAssetMeta.
+        r"""Sets the components of this MaterialAssetMeta.
 
         可替换的素材组件列表。
 

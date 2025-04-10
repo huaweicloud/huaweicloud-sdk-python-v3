@@ -27,7 +27,7 @@ class PortSearchPubDetail:
     }
 
     def __init__(self, pub_name=None, pub_reference=None):
-        """PortSearchPubDetail
+        r"""PortSearchPubDetail
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PortSearchPubDetail:
 
     @property
     def pub_name(self):
-        """Gets the pub_name of this PortSearchPubDetail.
+        r"""Gets the pub_name of this PortSearchPubDetail.
 
         服务号名称。
 
@@ -61,7 +61,7 @@ class PortSearchPubDetail:
 
     @pub_name.setter
     def pub_name(self, pub_name):
-        """Sets the pub_name of this PortSearchPubDetail.
+        r"""Sets the pub_name of this PortSearchPubDetail.
 
         服务号名称。
 
@@ -72,7 +72,7 @@ class PortSearchPubDetail:
 
     @property
     def pub_reference(self):
-        """Gets the pub_reference of this PortSearchPubDetail.
+        r"""Gets the pub_reference of this PortSearchPubDetail.
 
         服务号备注。
 
@@ -83,7 +83,7 @@ class PortSearchPubDetail:
 
     @pub_reference.setter
     def pub_reference(self, pub_reference):
-        """Sets the pub_reference of this PortSearchPubDetail.
+        r"""Sets the pub_reference of this PortSearchPubDetail.
 
         服务号备注。
 

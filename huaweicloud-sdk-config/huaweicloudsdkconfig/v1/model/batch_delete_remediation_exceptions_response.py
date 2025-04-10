@@ -24,7 +24,7 @@ class BatchDeleteRemediationExceptionsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeleteRemediationExceptionsResponse
+        r"""BatchDeleteRemediationExceptionsResponse
 
         The model defined in huaweicloud sdk
 

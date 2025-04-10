@@ -37,7 +37,7 @@ class DataClassificationCombineRuleDTO:
     }
 
     def __init__(self, name=None, secrecy_level_id=None, combine_expression=None, description=None, category_id=None, enable=None, single_expressions=None):
-        """DataClassificationCombineRuleDTO
+        r"""DataClassificationCombineRuleDTO
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class DataClassificationCombineRuleDTO:
 
     @property
     def name(self):
-        """Gets the name of this DataClassificationCombineRuleDTO.
+        r"""Gets the name of this DataClassificationCombineRuleDTO.
 
         规则名称
 
@@ -92,7 +92,7 @@ class DataClassificationCombineRuleDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataClassificationCombineRuleDTO.
+        r"""Sets the name of this DataClassificationCombineRuleDTO.
 
         规则名称
 
@@ -103,7 +103,7 @@ class DataClassificationCombineRuleDTO:
 
     @property
     def secrecy_level_id(self):
-        """Gets the secrecy_level_id of this DataClassificationCombineRuleDTO.
+        r"""Gets the secrecy_level_id of this DataClassificationCombineRuleDTO.
 
         密级ID
 
@@ -114,7 +114,7 @@ class DataClassificationCombineRuleDTO:
 
     @secrecy_level_id.setter
     def secrecy_level_id(self, secrecy_level_id):
-        """Sets the secrecy_level_id of this DataClassificationCombineRuleDTO.
+        r"""Sets the secrecy_level_id of this DataClassificationCombineRuleDTO.
 
         密级ID
 
@@ -125,7 +125,7 @@ class DataClassificationCombineRuleDTO:
 
     @property
     def combine_expression(self):
-        """Gets the combine_expression of this DataClassificationCombineRuleDTO.
+        r"""Gets the combine_expression of this DataClassificationCombineRuleDTO.
 
         条件表达式
 
@@ -136,7 +136,7 @@ class DataClassificationCombineRuleDTO:
 
     @combine_expression.setter
     def combine_expression(self, combine_expression):
-        """Sets the combine_expression of this DataClassificationCombineRuleDTO.
+        r"""Sets the combine_expression of this DataClassificationCombineRuleDTO.
 
         条件表达式
 
@@ -147,7 +147,7 @@ class DataClassificationCombineRuleDTO:
 
     @property
     def description(self):
-        """Gets the description of this DataClassificationCombineRuleDTO.
+        r"""Gets the description of this DataClassificationCombineRuleDTO.
 
         规则描述
 
@@ -158,7 +158,7 @@ class DataClassificationCombineRuleDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DataClassificationCombineRuleDTO.
+        r"""Sets the description of this DataClassificationCombineRuleDTO.
 
         规则描述
 
@@ -169,7 +169,7 @@ class DataClassificationCombineRuleDTO:
 
     @property
     def category_id(self):
-        """Gets the category_id of this DataClassificationCombineRuleDTO.
+        r"""Gets the category_id of this DataClassificationCombineRuleDTO.
 
         分类ID
 
@@ -180,7 +180,7 @@ class DataClassificationCombineRuleDTO:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this DataClassificationCombineRuleDTO.
+        r"""Sets the category_id of this DataClassificationCombineRuleDTO.
 
         分类ID
 
@@ -191,7 +191,7 @@ class DataClassificationCombineRuleDTO:
 
     @property
     def enable(self):
-        """Gets the enable of this DataClassificationCombineRuleDTO.
+        r"""Gets the enable of this DataClassificationCombineRuleDTO.
 
         使能状态。
 
@@ -202,7 +202,7 @@ class DataClassificationCombineRuleDTO:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this DataClassificationCombineRuleDTO.
+        r"""Sets the enable of this DataClassificationCombineRuleDTO.
 
         使能状态。
 
@@ -213,7 +213,7 @@ class DataClassificationCombineRuleDTO:
 
     @property
     def single_expressions(self):
-        """Gets the single_expressions of this DataClassificationCombineRuleDTO.
+        r"""Gets the single_expressions of this DataClassificationCombineRuleDTO.
 
         条件单规则
 
@@ -224,7 +224,7 @@ class DataClassificationCombineRuleDTO:
 
     @single_expressions.setter
     def single_expressions(self, single_expressions):
-        """Sets the single_expressions of this DataClassificationCombineRuleDTO.
+        r"""Sets the single_expressions of this DataClassificationCombineRuleDTO.
 
         条件单规则
 

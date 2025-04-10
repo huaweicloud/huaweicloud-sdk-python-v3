@@ -35,7 +35,7 @@ class UpdateResOnlineInstanceRequestBody:
     }
 
     def __init__(self, category=None, description=None, job_config=None, job_name=None, job_type=None, schedule=None):
-        """UpdateResOnlineInstanceRequestBody
+        r"""UpdateResOnlineInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class UpdateResOnlineInstanceRequestBody:
 
     @property
     def category(self):
-        """Gets the category of this UpdateResOnlineInstanceRequestBody.
+        r"""Gets the category of this UpdateResOnlineInstanceRequestBody.
 
         类别。
 
@@ -84,7 +84,7 @@ class UpdateResOnlineInstanceRequestBody:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this UpdateResOnlineInstanceRequestBody.
+        r"""Sets the category of this UpdateResOnlineInstanceRequestBody.
 
         类别。
 
@@ -95,7 +95,7 @@ class UpdateResOnlineInstanceRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateResOnlineInstanceRequestBody.
+        r"""Gets the description of this UpdateResOnlineInstanceRequestBody.
 
         描述。
 
@@ -106,7 +106,7 @@ class UpdateResOnlineInstanceRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateResOnlineInstanceRequestBody.
+        r"""Sets the description of this UpdateResOnlineInstanceRequestBody.
 
         描述。
 
@@ -117,7 +117,7 @@ class UpdateResOnlineInstanceRequestBody:
 
     @property
     def job_config(self):
-        """Gets the job_config of this UpdateResOnlineInstanceRequestBody.
+        r"""Gets the job_config of this UpdateResOnlineInstanceRequestBody.
 
         :return: The job_config of this UpdateResOnlineInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.JobConfig`
@@ -126,7 +126,7 @@ class UpdateResOnlineInstanceRequestBody:
 
     @job_config.setter
     def job_config(self, job_config):
-        """Sets the job_config of this UpdateResOnlineInstanceRequestBody.
+        r"""Sets the job_config of this UpdateResOnlineInstanceRequestBody.
 
         :param job_config: The job_config of this UpdateResOnlineInstanceRequestBody.
         :type job_config: :class:`huaweicloudsdkres.v1.JobConfig`
@@ -135,7 +135,7 @@ class UpdateResOnlineInstanceRequestBody:
 
     @property
     def job_name(self):
-        """Gets the job_name of this UpdateResOnlineInstanceRequestBody.
+        r"""Gets the job_name of this UpdateResOnlineInstanceRequestBody.
 
         作业名称。
 
@@ -146,7 +146,7 @@ class UpdateResOnlineInstanceRequestBody:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this UpdateResOnlineInstanceRequestBody.
+        r"""Sets the job_name of this UpdateResOnlineInstanceRequestBody.
 
         作业名称。
 
@@ -157,7 +157,7 @@ class UpdateResOnlineInstanceRequestBody:
 
     @property
     def job_type(self):
-        """Gets the job_type of this UpdateResOnlineInstanceRequestBody.
+        r"""Gets the job_type of this UpdateResOnlineInstanceRequestBody.
 
         作业类型。
 
@@ -168,7 +168,7 @@ class UpdateResOnlineInstanceRequestBody:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this UpdateResOnlineInstanceRequestBody.
+        r"""Sets the job_type of this UpdateResOnlineInstanceRequestBody.
 
         作业类型。
 
@@ -179,7 +179,7 @@ class UpdateResOnlineInstanceRequestBody:
 
     @property
     def schedule(self):
-        """Gets the schedule of this UpdateResOnlineInstanceRequestBody.
+        r"""Gets the schedule of this UpdateResOnlineInstanceRequestBody.
 
         调度参数。
 
@@ -190,7 +190,7 @@ class UpdateResOnlineInstanceRequestBody:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this UpdateResOnlineInstanceRequestBody.
+        r"""Sets the schedule of this UpdateResOnlineInstanceRequestBody.
 
         调度参数。
 

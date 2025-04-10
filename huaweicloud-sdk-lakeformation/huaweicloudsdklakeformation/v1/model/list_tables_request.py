@@ -41,7 +41,7 @@ class ListTablesRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name_pattern=None, table_type=None, filter=None, limit=None, marker=None, reverse_page=None):
-        """ListTablesRequest
+        r"""ListTablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class ListTablesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListTablesRequest.
+        r"""Gets the instance_id of this ListTablesRequest.
 
         实例ID
 
@@ -107,7 +107,7 @@ class ListTablesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListTablesRequest.
+        r"""Sets the instance_id of this ListTablesRequest.
 
         实例ID
 
@@ -118,7 +118,7 @@ class ListTablesRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ListTablesRequest.
+        r"""Gets the catalog_name of this ListTablesRequest.
 
         catalog名字
 
@@ -129,7 +129,7 @@ class ListTablesRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ListTablesRequest.
+        r"""Sets the catalog_name of this ListTablesRequest.
 
         catalog名字
 
@@ -140,7 +140,7 @@ class ListTablesRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListTablesRequest.
+        r"""Gets the database_name of this ListTablesRequest.
 
         数据库名字
 
@@ -151,7 +151,7 @@ class ListTablesRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListTablesRequest.
+        r"""Sets the database_name of this ListTablesRequest.
 
         数据库名字
 
@@ -162,7 +162,7 @@ class ListTablesRequest:
 
     @property
     def table_name_pattern(self):
-        """Gets the table_name_pattern of this ListTablesRequest.
+        r"""Gets the table_name_pattern of this ListTablesRequest.
 
         表名字通配符
 
@@ -173,7 +173,7 @@ class ListTablesRequest:
 
     @table_name_pattern.setter
     def table_name_pattern(self, table_name_pattern):
-        """Sets the table_name_pattern of this ListTablesRequest.
+        r"""Sets the table_name_pattern of this ListTablesRequest.
 
         表名字通配符
 
@@ -184,7 +184,7 @@ class ListTablesRequest:
 
     @property
     def table_type(self):
-        """Gets the table_type of this ListTablesRequest.
+        r"""Gets the table_type of this ListTablesRequest.
 
         table_type
 
@@ -195,7 +195,7 @@ class ListTablesRequest:
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this ListTablesRequest.
+        r"""Sets the table_type of this ListTablesRequest.
 
         table_type
 
@@ -206,7 +206,7 @@ class ListTablesRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListTablesRequest.
+        r"""Gets the filter of this ListTablesRequest.
 
         过滤条件字符串，可以按照属性查询表。 支持的属性查找包括： HIVE_FILTER_FIELD_OWNER HIVE_FILTER_FIELD_LAST_ACCESS HIVE_FILTER_FIELD_PARAMS
 
@@ -217,7 +217,7 @@ class ListTablesRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListTablesRequest.
+        r"""Sets the filter of this ListTablesRequest.
 
         过滤条件字符串，可以按照属性查询表。 支持的属性查找包括： HIVE_FILTER_FIELD_OWNER HIVE_FILTER_FIELD_LAST_ACCESS HIVE_FILTER_FIELD_PARAMS
 
@@ -228,7 +228,7 @@ class ListTablesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTablesRequest.
+        r"""Gets the limit of this ListTablesRequest.
 
         返回的条目数量
 
@@ -239,7 +239,7 @@ class ListTablesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTablesRequest.
+        r"""Sets the limit of this ListTablesRequest.
 
         返回的条目数量
 
@@ -250,7 +250,7 @@ class ListTablesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListTablesRequest.
+        r"""Gets the marker of this ListTablesRequest.
 
         查询的起始记录ID
 
@@ -261,7 +261,7 @@ class ListTablesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListTablesRequest.
+        r"""Sets the marker of this ListTablesRequest.
 
         查询的起始记录ID
 
@@ -272,7 +272,7 @@ class ListTablesRequest:
 
     @property
     def reverse_page(self):
-        """Gets the reverse_page of this ListTablesRequest.
+        r"""Gets the reverse_page of this ListTablesRequest.
 
         是否查询上一页
 
@@ -283,7 +283,7 @@ class ListTablesRequest:
 
     @reverse_page.setter
     def reverse_page(self, reverse_page):
-        """Sets the reverse_page of this ListTablesRequest.
+        r"""Sets the reverse_page of this ListTablesRequest.
 
         是否查询上一页
 

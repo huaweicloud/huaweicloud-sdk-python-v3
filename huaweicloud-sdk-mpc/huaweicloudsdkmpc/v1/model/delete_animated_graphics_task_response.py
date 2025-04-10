@@ -24,7 +24,7 @@ class DeleteAnimatedGraphicsTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteAnimatedGraphicsTaskResponse
+        r"""DeleteAnimatedGraphicsTaskResponse
 
         The model defined in huaweicloud sdk
 

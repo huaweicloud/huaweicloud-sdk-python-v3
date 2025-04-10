@@ -36,7 +36,7 @@ class ShowStoredQueryResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, expression=None, created=None, updated=None):
-        """ShowStoredQueryResponse
+        r"""ShowStoredQueryResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowStoredQueryResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowStoredQueryResponse.
+        r"""Gets the id of this ShowStoredQueryResponse.
 
         ResourceQL ID
 
@@ -90,7 +90,7 @@ class ShowStoredQueryResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowStoredQueryResponse.
+        r"""Sets the id of this ShowStoredQueryResponse.
 
         ResourceQL ID
 
@@ -101,7 +101,7 @@ class ShowStoredQueryResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowStoredQueryResponse.
+        r"""Gets the name of this ShowStoredQueryResponse.
 
         ResourceQL 名字
 
@@ -112,7 +112,7 @@ class ShowStoredQueryResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowStoredQueryResponse.
+        r"""Sets the name of this ShowStoredQueryResponse.
 
         ResourceQL 名字
 
@@ -123,7 +123,7 @@ class ShowStoredQueryResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowStoredQueryResponse.
+        r"""Gets the description of this ShowStoredQueryResponse.
 
         ResourceQL 描述
 
@@ -134,7 +134,7 @@ class ShowStoredQueryResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowStoredQueryResponse.
+        r"""Sets the description of this ShowStoredQueryResponse.
 
         ResourceQL 描述
 
@@ -145,7 +145,7 @@ class ShowStoredQueryResponse(SdkResponse):
 
     @property
     def expression(self):
-        """Gets the expression of this ShowStoredQueryResponse.
+        r"""Gets the expression of this ShowStoredQueryResponse.
 
         ResourceQL 表达式
 
@@ -156,7 +156,7 @@ class ShowStoredQueryResponse(SdkResponse):
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this ShowStoredQueryResponse.
+        r"""Sets the expression of this ShowStoredQueryResponse.
 
         ResourceQL 表达式
 
@@ -167,7 +167,7 @@ class ShowStoredQueryResponse(SdkResponse):
 
     @property
     def created(self):
-        """Gets the created of this ShowStoredQueryResponse.
+        r"""Gets the created of this ShowStoredQueryResponse.
 
         ResourceQL 创建时间
 
@@ -178,7 +178,7 @@ class ShowStoredQueryResponse(SdkResponse):
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowStoredQueryResponse.
+        r"""Sets the created of this ShowStoredQueryResponse.
 
         ResourceQL 创建时间
 
@@ -189,7 +189,7 @@ class ShowStoredQueryResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowStoredQueryResponse.
+        r"""Gets the updated of this ShowStoredQueryResponse.
 
         ResourceQL 更新时间
 
@@ -200,7 +200,7 @@ class ShowStoredQueryResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowStoredQueryResponse.
+        r"""Sets the updated of this ShowStoredQueryResponse.
 
         ResourceQL 更新时间
 

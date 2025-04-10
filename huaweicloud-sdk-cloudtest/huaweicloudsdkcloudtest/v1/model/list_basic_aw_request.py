@@ -27,7 +27,7 @@ class ListBasicAwRequest:
     }
 
     def __init__(self, project_id=None, aw_id=None):
-        """ListBasicAwRequest
+        r"""ListBasicAwRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListBasicAwRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListBasicAwRequest.
+        r"""Gets the project_id of this ListBasicAwRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -59,7 +59,7 @@ class ListBasicAwRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListBasicAwRequest.
+        r"""Sets the project_id of this ListBasicAwRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -70,7 +70,7 @@ class ListBasicAwRequest:
 
     @property
     def aw_id(self):
-        """Gets the aw_id of this ListBasicAwRequest.
+        r"""Gets the aw_id of this ListBasicAwRequest.
 
         AW ID
 
@@ -81,7 +81,7 @@ class ListBasicAwRequest:
 
     @aw_id.setter
     def aw_id(self, aw_id):
-        """Sets the aw_id of this ListBasicAwRequest.
+        r"""Sets the aw_id of this ListBasicAwRequest.
 
         AW ID
 

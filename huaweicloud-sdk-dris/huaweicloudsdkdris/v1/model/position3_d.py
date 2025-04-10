@@ -29,7 +29,7 @@ class Position3D:
     }
 
     def __init__(self, lat=None, lon=None, ele=None):
-        """Position3D
+        r"""Position3D
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Position3D:
 
     @property
     def lat(self):
-        """Gets the lat of this Position3D.
+        r"""Gets the lat of this Position3D.
 
         **参数说明**：定义纬度数值，北纬为正，南纬为负，单位°，精度小数点后7位。
 
@@ -66,7 +66,7 @@ class Position3D:
 
     @lat.setter
     def lat(self, lat):
-        """Sets the lat of this Position3D.
+        r"""Sets the lat of this Position3D.
 
         **参数说明**：定义纬度数值，北纬为正，南纬为负，单位°，精度小数点后7位。
 
@@ -77,7 +77,7 @@ class Position3D:
 
     @property
     def lon(self):
-        """Gets the lon of this Position3D.
+        r"""Gets the lon of this Position3D.
 
         **参数说明**：定义经度数值。东经为正，西经为负，单位°，精度小数点后7位。
 
@@ -88,7 +88,7 @@ class Position3D:
 
     @lon.setter
     def lon(self, lon):
-        """Sets the lon of this Position3D.
+        r"""Sets the lon of this Position3D.
 
         **参数说明**：定义经度数值。东经为正，西经为负，单位°，精度小数点后7位。
 
@@ -99,7 +99,7 @@ class Position3D:
 
     @property
     def ele(self):
-        """Gets the ele of this Position3D.
+        r"""Gets the ele of this Position3D.
 
         **参数说明**：定义海拔高程，可选，单位为分米。
 
@@ -110,7 +110,7 @@ class Position3D:
 
     @ele.setter
     def ele(self, ele):
-        """Sets the ele of this Position3D.
+        r"""Sets the ele of this Position3D.
 
         **参数说明**：定义海拔高程，可选，单位为分米。
 

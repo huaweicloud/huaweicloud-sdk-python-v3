@@ -43,7 +43,7 @@ class RadarResourceDTO:
     }
 
     def __init__(self, radar_id=None, name=None, v2x_edge_id=None, ip=None, status=None, esn=None, position_description=None, created_time=None, last_modified_time=None, last_online_time=None):
-        """RadarResourceDTO
+        r"""RadarResourceDTO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class RadarResourceDTO:
 
     @property
     def radar_id(self):
-        """Gets the radar_id of this RadarResourceDTO.
+        r"""Gets the radar_id of this RadarResourceDTO.
 
         **参数说明**：雷达ID 
 
@@ -117,7 +117,7 @@ class RadarResourceDTO:
 
     @radar_id.setter
     def radar_id(self, radar_id):
-        """Sets the radar_id of this RadarResourceDTO.
+        r"""Sets the radar_id of this RadarResourceDTO.
 
         **参数说明**：雷达ID 
 
@@ -128,7 +128,7 @@ class RadarResourceDTO:
 
     @property
     def name(self):
-        """Gets the name of this RadarResourceDTO.
+        r"""Gets the name of this RadarResourceDTO.
 
         **参数说明**：名称  **取值范围**：长度不小于1，不大于128的汉字、英文字母、数字、下划线（_）和横杠（-）的组合。 
 
@@ -139,7 +139,7 @@ class RadarResourceDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RadarResourceDTO.
+        r"""Sets the name of this RadarResourceDTO.
 
         **参数说明**：名称  **取值范围**：长度不小于1，不大于128的汉字、英文字母、数字、下划线（_）和横杠（-）的组合。 
 
@@ -150,7 +150,7 @@ class RadarResourceDTO:
 
     @property
     def v2x_edge_id(self):
-        """Gets the v2x_edge_id of this RadarResourceDTO.
+        r"""Gets the v2x_edge_id of this RadarResourceDTO.
 
         **参数说明**：所属的EdgeId  **取值范围**：长度不小于1，不大于128的英文字母、数字、下划线（_）和横杠（-）的组合。 
 
@@ -161,7 +161,7 @@ class RadarResourceDTO:
 
     @v2x_edge_id.setter
     def v2x_edge_id(self, v2x_edge_id):
-        """Sets the v2x_edge_id of this RadarResourceDTO.
+        r"""Sets the v2x_edge_id of this RadarResourceDTO.
 
         **参数说明**：所属的EdgeId  **取值范围**：长度不小于1，不大于128的英文字母、数字、下划线（_）和横杠（-）的组合。 
 
@@ -172,7 +172,7 @@ class RadarResourceDTO:
 
     @property
     def ip(self):
-        """Gets the ip of this RadarResourceDTO.
+        r"""Gets the ip of this RadarResourceDTO.
 
         **参数说明**：设备IP 
 
@@ -183,7 +183,7 @@ class RadarResourceDTO:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this RadarResourceDTO.
+        r"""Sets the ip of this RadarResourceDTO.
 
         **参数说明**：设备IP 
 
@@ -194,7 +194,7 @@ class RadarResourceDTO:
 
     @property
     def status(self):
-        """Gets the status of this RadarResourceDTO.
+        r"""Gets the status of this RadarResourceDTO.
 
         **参数说明**：状态值  **取值范围**：   - ONLINE：在线   - OFFLINE：离线   - UNKNOWN：未知   - SLEEP：睡眠 
 
@@ -205,7 +205,7 @@ class RadarResourceDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RadarResourceDTO.
+        r"""Sets the status of this RadarResourceDTO.
 
         **参数说明**：状态值  **取值范围**：   - ONLINE：在线   - OFFLINE：离线   - UNKNOWN：未知   - SLEEP：睡眠 
 
@@ -216,7 +216,7 @@ class RadarResourceDTO:
 
     @property
     def esn(self):
-        """Gets the esn of this RadarResourceDTO.
+        r"""Gets the esn of this RadarResourceDTO.
 
         **参数说明**：设备编号  **取值范围**：长度不小于1，不大于64的英文字母、数字和下划线（_）的组合。 
 
@@ -227,7 +227,7 @@ class RadarResourceDTO:
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this RadarResourceDTO.
+        r"""Sets the esn of this RadarResourceDTO.
 
         **参数说明**：设备编号  **取值范围**：长度不小于1，不大于64的英文字母、数字和下划线（_）的组合。 
 
@@ -238,7 +238,7 @@ class RadarResourceDTO:
 
     @property
     def position_description(self):
-        """Gets the position_description of this RadarResourceDTO.
+        r"""Gets the position_description of this RadarResourceDTO.
 
         **参数说明**：位置描述  **取值范围**：长度不小于1，不大于128的英文字母、数字和下划线（_）的组合。 
 
@@ -249,7 +249,7 @@ class RadarResourceDTO:
 
     @position_description.setter
     def position_description(self, position_description):
-        """Sets the position_description of this RadarResourceDTO.
+        r"""Sets the position_description of this RadarResourceDTO.
 
         **参数说明**：位置描述  **取值范围**：长度不小于1，不大于128的英文字母、数字和下划线（_）的组合。 
 
@@ -260,7 +260,7 @@ class RadarResourceDTO:
 
     @property
     def created_time(self):
-        """Gets the created_time of this RadarResourceDTO.
+        r"""Gets the created_time of this RadarResourceDTO.
 
         **参数说明**：最后修改的时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z 
 
@@ -271,7 +271,7 @@ class RadarResourceDTO:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this RadarResourceDTO.
+        r"""Sets the created_time of this RadarResourceDTO.
 
         **参数说明**：最后修改的时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z 
 
@@ -282,7 +282,7 @@ class RadarResourceDTO:
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this RadarResourceDTO.
+        r"""Gets the last_modified_time of this RadarResourceDTO.
 
         **参数说明**：最后修改时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z 
 
@@ -293,7 +293,7 @@ class RadarResourceDTO:
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this RadarResourceDTO.
+        r"""Sets the last_modified_time of this RadarResourceDTO.
 
         **参数说明**：最后修改时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z 
 
@@ -304,7 +304,7 @@ class RadarResourceDTO:
 
     @property
     def last_online_time(self):
-        """Gets the last_online_time of this RadarResourceDTO.
+        r"""Gets the last_online_time of this RadarResourceDTO.
 
         **参数说明**：最后的在线时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z 
 
@@ -315,7 +315,7 @@ class RadarResourceDTO:
 
     @last_online_time.setter
     def last_online_time(self, last_online_time):
-        """Sets the last_online_time of this RadarResourceDTO.
+        r"""Sets the last_online_time of this RadarResourceDTO.
 
         **参数说明**：最后的在线时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z' 例如 2020-09-01T01:37:01Z 
 

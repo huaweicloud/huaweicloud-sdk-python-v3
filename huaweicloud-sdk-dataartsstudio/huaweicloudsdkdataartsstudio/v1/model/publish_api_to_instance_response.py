@@ -24,7 +24,7 @@ class PublishApiToInstanceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """PublishApiToInstanceResponse
+        r"""PublishApiToInstanceResponse
 
         The model defined in huaweicloud sdk
 

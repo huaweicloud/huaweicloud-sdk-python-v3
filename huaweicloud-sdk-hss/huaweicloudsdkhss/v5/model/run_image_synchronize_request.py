@@ -29,13 +29,13 @@ class RunImageSynchronizeRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, body=None):
-        """RunImageSynchronizeRequest
+        r"""RunImageSynchronizeRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param body: Body of the RunImageSynchronizeRequest
         :type body: :class:`huaweicloudsdkhss.v5.RunImageSynchronizeRequestInfo`
@@ -57,7 +57,7 @@ class RunImageSynchronizeRequest:
 
     @property
     def region(self):
-        """Gets the region of this RunImageSynchronizeRequest.
+        r"""Gets the region of this RunImageSynchronizeRequest.
 
         Region ID
 
@@ -68,7 +68,7 @@ class RunImageSynchronizeRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this RunImageSynchronizeRequest.
+        r"""Sets the region of this RunImageSynchronizeRequest.
 
         Region ID
 
@@ -79,9 +79,9 @@ class RunImageSynchronizeRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this RunImageSynchronizeRequest.
+        r"""Gets the enterprise_project_id of this RunImageSynchronizeRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this RunImageSynchronizeRequest.
         :rtype: str
@@ -90,9 +90,9 @@ class RunImageSynchronizeRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this RunImageSynchronizeRequest.
+        r"""Sets the enterprise_project_id of this RunImageSynchronizeRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this RunImageSynchronizeRequest.
         :type enterprise_project_id: str
@@ -101,7 +101,7 @@ class RunImageSynchronizeRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunImageSynchronizeRequest.
+        r"""Gets the body of this RunImageSynchronizeRequest.
 
         :return: The body of this RunImageSynchronizeRequest.
         :rtype: :class:`huaweicloudsdkhss.v5.RunImageSynchronizeRequestInfo`
@@ -110,7 +110,7 @@ class RunImageSynchronizeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunImageSynchronizeRequest.
+        r"""Sets the body of this RunImageSynchronizeRequest.
 
         :param body: The body of this RunImageSynchronizeRequest.
         :type body: :class:`huaweicloudsdkhss.v5.RunImageSynchronizeRequestInfo`

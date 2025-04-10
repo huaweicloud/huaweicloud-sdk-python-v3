@@ -32,7 +32,7 @@ class ListScalingGroupsResponse(SdkResponse):
     }
 
     def __init__(self, total_number=None, start_number=None, limit=None, scaling_groups=None):
-        """ListScalingGroupsResponse
+        r"""ListScalingGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListScalingGroupsResponse(SdkResponse):
 
     @property
     def total_number(self):
-        """Gets the total_number of this ListScalingGroupsResponse.
+        r"""Gets the total_number of this ListScalingGroupsResponse.
 
         总记录数
 
@@ -76,7 +76,7 @@ class ListScalingGroupsResponse(SdkResponse):
 
     @total_number.setter
     def total_number(self, total_number):
-        """Sets the total_number of this ListScalingGroupsResponse.
+        r"""Sets the total_number of this ListScalingGroupsResponse.
 
         总记录数
 
@@ -87,7 +87,7 @@ class ListScalingGroupsResponse(SdkResponse):
 
     @property
     def start_number(self):
-        """Gets the start_number of this ListScalingGroupsResponse.
+        r"""Gets the start_number of this ListScalingGroupsResponse.
 
         查询的开始记录号
 
@@ -98,7 +98,7 @@ class ListScalingGroupsResponse(SdkResponse):
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this ListScalingGroupsResponse.
+        r"""Sets the start_number of this ListScalingGroupsResponse.
 
         查询的开始记录号
 
@@ -109,7 +109,7 @@ class ListScalingGroupsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListScalingGroupsResponse.
+        r"""Gets the limit of this ListScalingGroupsResponse.
 
         查询记录数
 
@@ -120,7 +120,7 @@ class ListScalingGroupsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScalingGroupsResponse.
+        r"""Sets the limit of this ListScalingGroupsResponse.
 
         查询记录数
 
@@ -131,7 +131,7 @@ class ListScalingGroupsResponse(SdkResponse):
 
     @property
     def scaling_groups(self):
-        """Gets the scaling_groups of this ListScalingGroupsResponse.
+        r"""Gets the scaling_groups of this ListScalingGroupsResponse.
 
         伸缩组列表
 
@@ -142,7 +142,7 @@ class ListScalingGroupsResponse(SdkResponse):
 
     @scaling_groups.setter
     def scaling_groups(self, scaling_groups):
-        """Sets the scaling_groups of this ListScalingGroupsResponse.
+        r"""Sets the scaling_groups of this ListScalingGroupsResponse.
 
         伸缩组列表
 

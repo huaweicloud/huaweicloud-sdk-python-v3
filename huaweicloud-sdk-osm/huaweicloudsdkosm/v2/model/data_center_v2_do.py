@@ -31,7 +31,7 @@ class DataCenterV2Do:
     }
 
     def __init__(self, type=None, region_id=None, region_name=None, is_sensitive=None):
-        """DataCenterV2Do
+        r"""DataCenterV2Do
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DataCenterV2Do:
 
     @property
     def type(self):
-        """Gets the type of this DataCenterV2Do.
+        r"""Gets the type of this DataCenterV2Do.
 
         区域类型0大陆 1国际
 
@@ -75,7 +75,7 @@ class DataCenterV2Do:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DataCenterV2Do.
+        r"""Sets the type of this DataCenterV2Do.
 
         区域类型0大陆 1国际
 
@@ -86,7 +86,7 @@ class DataCenterV2Do:
 
     @property
     def region_id(self):
-        """Gets the region_id of this DataCenterV2Do.
+        r"""Gets the region_id of this DataCenterV2Do.
 
         区域id
 
@@ -97,7 +97,7 @@ class DataCenterV2Do:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this DataCenterV2Do.
+        r"""Sets the region_id of this DataCenterV2Do.
 
         区域id
 
@@ -108,7 +108,7 @@ class DataCenterV2Do:
 
     @property
     def region_name(self):
-        """Gets the region_name of this DataCenterV2Do.
+        r"""Gets the region_name of this DataCenterV2Do.
 
         区域名称
 
@@ -119,7 +119,7 @@ class DataCenterV2Do:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this DataCenterV2Do.
+        r"""Sets the region_name of this DataCenterV2Do.
 
         区域名称
 
@@ -130,7 +130,7 @@ class DataCenterV2Do:
 
     @property
     def is_sensitive(self):
-        """Gets the is_sensitive of this DataCenterV2Do.
+        r"""Gets the is_sensitive of this DataCenterV2Do.
 
         是否敏感
 
@@ -141,7 +141,7 @@ class DataCenterV2Do:
 
     @is_sensitive.setter
     def is_sensitive(self, is_sensitive):
-        """Sets the is_sensitive of this DataCenterV2Do.
+        r"""Sets the is_sensitive of this DataCenterV2Do.
 
         是否敏感
 

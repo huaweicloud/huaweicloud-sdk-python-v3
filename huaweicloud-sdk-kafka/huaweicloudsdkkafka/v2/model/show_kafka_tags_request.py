@@ -25,7 +25,7 @@ class ShowKafkaTagsRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowKafkaTagsRequest
+        r"""ShowKafkaTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowKafkaTagsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowKafkaTagsRequest.
+        r"""Gets the instance_id of this ShowKafkaTagsRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowKafkaTagsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowKafkaTagsRequest.
+        r"""Sets the instance_id of this ShowKafkaTagsRequest.
 
         实例ID。
 

@@ -29,7 +29,7 @@ class Input:
     }
 
     def __init__(self, name=None, value=None, type=None):
-        """Input
+        r"""Input
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Input:
 
     @property
     def name(self):
-        """Gets the name of this Input.
+        r"""Gets the name of this Input.
 
         参数名
 
@@ -66,7 +66,7 @@ class Input:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Input.
+        r"""Sets the name of this Input.
 
         参数名
 
@@ -77,7 +77,7 @@ class Input:
 
     @property
     def value(self):
-        """Gets the value of this Input.
+        r"""Gets the value of this Input.
 
         参数值
 
@@ -88,7 +88,7 @@ class Input:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Input.
+        r"""Sets the value of this Input.
 
         参数值
 
@@ -99,7 +99,7 @@ class Input:
 
     @property
     def type(self):
-        """Gets the type of this Input.
+        r"""Gets the type of this Input.
 
         值类型
 
@@ -110,7 +110,7 @@ class Input:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Input.
+        r"""Sets the type of this Input.
 
         值类型
 

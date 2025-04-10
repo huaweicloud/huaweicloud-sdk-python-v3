@@ -27,7 +27,7 @@ class RebootCbhRequestBody:
     }
 
     def __init__(self, instance_id=None, reboot=None):
-        """RebootCbhRequestBody
+        r"""RebootCbhRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RebootCbhRequestBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RebootCbhRequestBody.
+        r"""Gets the instance_id of this RebootCbhRequestBody.
 
         云堡垒机实例ID，使用UUID格式。
 
@@ -59,7 +59,7 @@ class RebootCbhRequestBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RebootCbhRequestBody.
+        r"""Sets the instance_id of this RebootCbhRequestBody.
 
         云堡垒机实例ID，使用UUID格式。
 
@@ -70,7 +70,7 @@ class RebootCbhRequestBody:
 
     @property
     def reboot(self):
-        """Gets the reboot of this RebootCbhRequestBody.
+        r"""Gets the reboot of this RebootCbhRequestBody.
 
         :return: The reboot of this RebootCbhRequestBody.
         :rtype: :class:`huaweicloudsdkcbh.v1.RebootType`
@@ -79,7 +79,7 @@ class RebootCbhRequestBody:
 
     @reboot.setter
     def reboot(self, reboot):
-        """Sets the reboot of this RebootCbhRequestBody.
+        r"""Sets the reboot of this RebootCbhRequestBody.
 
         :param reboot: The reboot of this RebootCbhRequestBody.
         :type reboot: :class:`huaweicloudsdkcbh.v1.RebootType`

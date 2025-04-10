@@ -29,7 +29,7 @@ class ShowDetailsOfAppConfigV2Request:
     }
 
     def __init__(self, instance_id=None, app_id=None, app_config_id=None):
-        """ShowDetailsOfAppConfigV2Request
+        r"""ShowDetailsOfAppConfigV2Request
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowDetailsOfAppConfigV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDetailsOfAppConfigV2Request.
+        r"""Gets the instance_id of this ShowDetailsOfAppConfigV2Request.
 
         实例ID
 
@@ -65,7 +65,7 @@ class ShowDetailsOfAppConfigV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDetailsOfAppConfigV2Request.
+        r"""Sets the instance_id of this ShowDetailsOfAppConfigV2Request.
 
         实例ID
 
@@ -76,7 +76,7 @@ class ShowDetailsOfAppConfigV2Request:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowDetailsOfAppConfigV2Request.
+        r"""Gets the app_id of this ShowDetailsOfAppConfigV2Request.
 
         应用编号
 
@@ -87,7 +87,7 @@ class ShowDetailsOfAppConfigV2Request:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowDetailsOfAppConfigV2Request.
+        r"""Sets the app_id of this ShowDetailsOfAppConfigV2Request.
 
         应用编号
 
@@ -98,7 +98,7 @@ class ShowDetailsOfAppConfigV2Request:
 
     @property
     def app_config_id(self):
-        """Gets the app_config_id of this ShowDetailsOfAppConfigV2Request.
+        r"""Gets the app_config_id of this ShowDetailsOfAppConfigV2Request.
 
         应用配置编号
 
@@ -109,7 +109,7 @@ class ShowDetailsOfAppConfigV2Request:
 
     @app_config_id.setter
     def app_config_id(self, app_config_id):
-        """Sets the app_config_id of this ShowDetailsOfAppConfigV2Request.
+        r"""Sets the app_config_id of this ShowDetailsOfAppConfigV2Request.
 
         应用配置编号
 

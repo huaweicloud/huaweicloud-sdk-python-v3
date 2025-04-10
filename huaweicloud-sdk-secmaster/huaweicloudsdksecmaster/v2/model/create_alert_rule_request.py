@@ -29,7 +29,7 @@ class CreateAlertRuleRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """CreateAlertRuleRequest
+        r"""CreateAlertRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateAlertRuleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateAlertRuleRequest.
+        r"""Gets the project_id of this CreateAlertRuleRequest.
 
         项目 ID。Project ID.
 
@@ -66,7 +66,7 @@ class CreateAlertRuleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateAlertRuleRequest.
+        r"""Sets the project_id of this CreateAlertRuleRequest.
 
         项目 ID。Project ID.
 
@@ -77,7 +77,7 @@ class CreateAlertRuleRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateAlertRuleRequest.
+        r"""Gets the workspace_id of this CreateAlertRuleRequest.
 
         工作空间 ID。Workspace ID.
 
@@ -88,7 +88,7 @@ class CreateAlertRuleRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateAlertRuleRequest.
+        r"""Sets the workspace_id of this CreateAlertRuleRequest.
 
         工作空间 ID。Workspace ID.
 
@@ -99,7 +99,7 @@ class CreateAlertRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAlertRuleRequest.
+        r"""Gets the body of this CreateAlertRuleRequest.
 
         :return: The body of this CreateAlertRuleRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreateAlertRuleRequestBody`
@@ -108,7 +108,7 @@ class CreateAlertRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAlertRuleRequest.
+        r"""Sets the body of this CreateAlertRuleRequest.
 
         :param body: The body of this CreateAlertRuleRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.CreateAlertRuleRequestBody`

@@ -29,7 +29,7 @@ class FrozenInfo:
     }
 
     def __init__(self, status=None, effect=None, scene=None):
-        """FrozenInfo
+        r"""FrozenInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FrozenInfo:
 
     @property
     def status(self):
-        """Gets the status of this FrozenInfo.
+        r"""Gets the status of this FrozenInfo.
 
         云服务或资源实例状态，取值： - 0：解冻/正常（云服务恢复正常）。 - 1：冻结（资源和数据会保留，但租户无法再正常使用云服务）。 - 2：删除/终止（资源和数据将清除）。
 
@@ -68,7 +68,7 @@ class FrozenInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FrozenInfo.
+        r"""Sets the status of this FrozenInfo.
 
         云服务或资源实例状态，取值： - 0：解冻/正常（云服务恢复正常）。 - 1：冻结（资源和数据会保留，但租户无法再正常使用云服务）。 - 2：删除/终止（资源和数据将清除）。
 
@@ -79,7 +79,7 @@ class FrozenInfo:
 
     @property
     def effect(self):
-        """Gets the effect of this FrozenInfo.
+        r"""Gets the effect of this FrozenInfo.
 
         在冻结/解冻操作下，取值： - 1（默认值）：冻结可释放。 - 2：冻结不可释放。 - 3：冻结后不可续费。
 
@@ -90,7 +90,7 @@ class FrozenInfo:
 
     @effect.setter
     def effect(self, effect):
-        """Sets the effect of this FrozenInfo.
+        r"""Sets the effect of this FrozenInfo.
 
         在冻结/解冻操作下，取值： - 1（默认值）：冻结可释放。 - 2：冻结不可释放。 - 3：冻结后不可续费。
 
@@ -101,7 +101,7 @@ class FrozenInfo:
 
     @property
     def scene(self):
-        """Gets the scene of this FrozenInfo.
+        r"""Gets the scene of this FrozenInfo.
 
         更新云服务状态的业务场景列表，取值： - ARREAR（默认值）：欠费场景。为正常的运营业务场景，包括包周期资源到期、按需资源扣费失败。 - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。
 
@@ -112,7 +112,7 @@ class FrozenInfo:
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this FrozenInfo.
+        r"""Sets the scene of this FrozenInfo.
 
         更新云服务状态的业务场景列表，取值： - ARREAR（默认值）：欠费场景。为正常的运营业务场景，包括包周期资源到期、按需资源扣费失败。 - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。
 

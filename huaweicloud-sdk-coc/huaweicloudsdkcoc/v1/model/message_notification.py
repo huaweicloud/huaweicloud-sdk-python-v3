@@ -35,7 +35,7 @@ class MessageNotification:
     }
 
     def __init__(self, policy=None, notification_endpoint_type=None, schedule_scene_id=None, schedule_role_id=None, recipients=None, protocol=None):
-        """MessageNotification
+        r"""MessageNotification
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class MessageNotification:
 
     @property
     def policy(self):
-        """Gets the policy of this MessageNotification.
+        r"""Gets the policy of this MessageNotification.
 
         通知策略
 
@@ -88,7 +88,7 @@ class MessageNotification:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this MessageNotification.
+        r"""Sets the policy of this MessageNotification.
 
         通知策略
 
@@ -99,7 +99,7 @@ class MessageNotification:
 
     @property
     def notification_endpoint_type(self):
-        """Gets the notification_endpoint_type of this MessageNotification.
+        r"""Gets the notification_endpoint_type of this MessageNotification.
 
         通知对象类型
 
@@ -110,7 +110,7 @@ class MessageNotification:
 
     @notification_endpoint_type.setter
     def notification_endpoint_type(self, notification_endpoint_type):
-        """Sets the notification_endpoint_type of this MessageNotification.
+        r"""Sets the notification_endpoint_type of this MessageNotification.
 
         通知对象类型
 
@@ -121,7 +121,7 @@ class MessageNotification:
 
     @property
     def schedule_scene_id(self):
-        """Gets the schedule_scene_id of this MessageNotification.
+        r"""Gets the schedule_scene_id of this MessageNotification.
 
         排班场景ID
 
@@ -132,7 +132,7 @@ class MessageNotification:
 
     @schedule_scene_id.setter
     def schedule_scene_id(self, schedule_scene_id):
-        """Sets the schedule_scene_id of this MessageNotification.
+        r"""Sets the schedule_scene_id of this MessageNotification.
 
         排班场景ID
 
@@ -143,7 +143,7 @@ class MessageNotification:
 
     @property
     def schedule_role_id(self):
-        """Gets the schedule_role_id of this MessageNotification.
+        r"""Gets the schedule_role_id of this MessageNotification.
 
         排班角色ID
 
@@ -154,7 +154,7 @@ class MessageNotification:
 
     @schedule_role_id.setter
     def schedule_role_id(self, schedule_role_id):
-        """Sets the schedule_role_id of this MessageNotification.
+        r"""Sets the schedule_role_id of this MessageNotification.
 
         排班角色ID
 
@@ -165,7 +165,7 @@ class MessageNotification:
 
     @property
     def recipients(self):
-        """Gets the recipients of this MessageNotification.
+        r"""Gets the recipients of this MessageNotification.
 
         消息接收人
 
@@ -176,7 +176,7 @@ class MessageNotification:
 
     @recipients.setter
     def recipients(self, recipients):
-        """Sets the recipients of this MessageNotification.
+        r"""Sets the recipients of this MessageNotification.
 
         消息接收人
 
@@ -187,7 +187,7 @@ class MessageNotification:
 
     @property
     def protocol(self):
-        """Gets the protocol of this MessageNotification.
+        r"""Gets the protocol of this MessageNotification.
 
         通知渠道
 
@@ -198,7 +198,7 @@ class MessageNotification:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this MessageNotification.
+        r"""Sets the protocol of this MessageNotification.
 
         通知渠道
 

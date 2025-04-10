@@ -27,7 +27,7 @@ class BatchUnsetScalingInstancesStantbyRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """BatchUnsetScalingInstancesStantbyRequest
+        r"""BatchUnsetScalingInstancesStantbyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchUnsetScalingInstancesStantbyRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this BatchUnsetScalingInstancesStantbyRequest.
+        r"""Gets the scaling_group_id of this BatchUnsetScalingInstancesStantbyRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class BatchUnsetScalingInstancesStantbyRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this BatchUnsetScalingInstancesStantbyRequest.
+        r"""Sets the scaling_group_id of this BatchUnsetScalingInstancesStantbyRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class BatchUnsetScalingInstancesStantbyRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUnsetScalingInstancesStantbyRequest.
+        r"""Gets the body of this BatchUnsetScalingInstancesStantbyRequest.
 
         :return: The body of this BatchUnsetScalingInstancesStantbyRequest.
         :rtype: :class:`huaweicloudsdkas.v1.BatchExitStandByInstancesOption`
@@ -80,7 +80,7 @@ class BatchUnsetScalingInstancesStantbyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUnsetScalingInstancesStantbyRequest.
+        r"""Sets the body of this BatchUnsetScalingInstancesStantbyRequest.
 
         :param body: The body of this BatchUnsetScalingInstancesStantbyRequest.
         :type body: :class:`huaweicloudsdkas.v1.BatchExitStandByInstancesOption`

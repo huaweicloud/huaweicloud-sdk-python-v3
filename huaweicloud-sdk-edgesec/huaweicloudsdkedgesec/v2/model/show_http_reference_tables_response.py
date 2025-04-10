@@ -28,7 +28,7 @@ class ShowHttpReferenceTablesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ShowHttpReferenceTablesResponse
+        r"""ShowHttpReferenceTablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowHttpReferenceTablesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowHttpReferenceTablesResponse.
+        r"""Gets the total of this ShowHttpReferenceTablesResponse.
 
         引用表数量
 
@@ -62,7 +62,7 @@ class ShowHttpReferenceTablesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowHttpReferenceTablesResponse.
+        r"""Sets the total of this ShowHttpReferenceTablesResponse.
 
         引用表数量
 
@@ -73,7 +73,7 @@ class ShowHttpReferenceTablesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ShowHttpReferenceTablesResponse.
+        r"""Gets the items of this ShowHttpReferenceTablesResponse.
 
         引用表列表
 
@@ -84,7 +84,7 @@ class ShowHttpReferenceTablesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ShowHttpReferenceTablesResponse.
+        r"""Sets the items of this ShowHttpReferenceTablesResponse.
 
         引用表列表
 

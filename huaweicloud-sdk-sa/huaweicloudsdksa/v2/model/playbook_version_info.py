@@ -75,7 +75,7 @@ class PlaybookVersionInfo:
     }
 
     def __init__(self, id=None, description=None, create_time=None, update_time=None, project_id=None, creator_id=None, modifier_id=None, playbook_id=None, version=None, run_mode=None, enabled=None, status=None, action_strategy=None, actions=None, rule_enable=None, rules=None, dataclass_id=None, trigger_type=None, dataobject_create=None, dataobject_update=None, dataobject_delete=None, version_type=None, rule_id=None, dataclass_name=None, approve_name=None, dataobject_id=None):
-        """PlaybookVersionInfo
+        r"""PlaybookVersionInfo
 
         The model defined in huaweicloud sdk
 
@@ -218,7 +218,7 @@ class PlaybookVersionInfo:
 
     @property
     def id(self):
-        """Gets the id of this PlaybookVersionInfo.
+        r"""Gets the id of this PlaybookVersionInfo.
 
         Id value
 
@@ -229,7 +229,7 @@ class PlaybookVersionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PlaybookVersionInfo.
+        r"""Sets the id of this PlaybookVersionInfo.
 
         Id value
 
@@ -240,7 +240,7 @@ class PlaybookVersionInfo:
 
     @property
     def description(self):
-        """Gets the description of this PlaybookVersionInfo.
+        r"""Gets the description of this PlaybookVersionInfo.
 
         The description, display only
 
@@ -251,7 +251,7 @@ class PlaybookVersionInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PlaybookVersionInfo.
+        r"""Sets the description of this PlaybookVersionInfo.
 
         The description, display only
 
@@ -262,7 +262,7 @@ class PlaybookVersionInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PlaybookVersionInfo.
+        r"""Gets the create_time of this PlaybookVersionInfo.
 
         Create time
 
@@ -273,7 +273,7 @@ class PlaybookVersionInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PlaybookVersionInfo.
+        r"""Sets the create_time of this PlaybookVersionInfo.
 
         Create time
 
@@ -284,7 +284,7 @@ class PlaybookVersionInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PlaybookVersionInfo.
+        r"""Gets the update_time of this PlaybookVersionInfo.
 
         Update time
 
@@ -295,7 +295,7 @@ class PlaybookVersionInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PlaybookVersionInfo.
+        r"""Sets the update_time of this PlaybookVersionInfo.
 
         Update time
 
@@ -306,7 +306,7 @@ class PlaybookVersionInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PlaybookVersionInfo.
+        r"""Gets the project_id of this PlaybookVersionInfo.
 
         Project id value
 
@@ -317,7 +317,7 @@ class PlaybookVersionInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PlaybookVersionInfo.
+        r"""Sets the project_id of this PlaybookVersionInfo.
 
         Project id value
 
@@ -328,7 +328,7 @@ class PlaybookVersionInfo:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this PlaybookVersionInfo.
+        r"""Gets the creator_id of this PlaybookVersionInfo.
 
         Creator id value
 
@@ -339,7 +339,7 @@ class PlaybookVersionInfo:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this PlaybookVersionInfo.
+        r"""Sets the creator_id of this PlaybookVersionInfo.
 
         Creator id value
 
@@ -350,7 +350,7 @@ class PlaybookVersionInfo:
 
     @property
     def modifier_id(self):
-        """Gets the modifier_id of this PlaybookVersionInfo.
+        r"""Gets the modifier_id of this PlaybookVersionInfo.
 
         Modifier id value
 
@@ -361,7 +361,7 @@ class PlaybookVersionInfo:
 
     @modifier_id.setter
     def modifier_id(self, modifier_id):
-        """Sets the modifier_id of this PlaybookVersionInfo.
+        r"""Sets the modifier_id of this PlaybookVersionInfo.
 
         Modifier id value
 
@@ -372,7 +372,7 @@ class PlaybookVersionInfo:
 
     @property
     def playbook_id(self):
-        """Gets the playbook_id of this PlaybookVersionInfo.
+        r"""Gets the playbook_id of this PlaybookVersionInfo.
 
         Playbook id.
 
@@ -383,7 +383,7 @@ class PlaybookVersionInfo:
 
     @playbook_id.setter
     def playbook_id(self, playbook_id):
-        """Sets the playbook_id of this PlaybookVersionInfo.
+        r"""Sets the playbook_id of this PlaybookVersionInfo.
 
         Playbook id.
 
@@ -394,7 +394,7 @@ class PlaybookVersionInfo:
 
     @property
     def version(self):
-        """Gets the version of this PlaybookVersionInfo.
+        r"""Gets the version of this PlaybookVersionInfo.
 
         version
 
@@ -405,7 +405,7 @@ class PlaybookVersionInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PlaybookVersionInfo.
+        r"""Sets the version of this PlaybookVersionInfo.
 
         version
 
@@ -416,7 +416,7 @@ class PlaybookVersionInfo:
 
     @property
     def run_mode(self):
-        """Gets the run_mode of this PlaybookVersionInfo.
+        r"""Gets the run_mode of this PlaybookVersionInfo.
 
         Run mode of this playbook. automatic, manual
 
@@ -427,7 +427,7 @@ class PlaybookVersionInfo:
 
     @run_mode.setter
     def run_mode(self, run_mode):
-        """Sets the run_mode of this PlaybookVersionInfo.
+        r"""Sets the run_mode of this PlaybookVersionInfo.
 
         Run mode of this playbook. automatic, manual
 
@@ -438,7 +438,7 @@ class PlaybookVersionInfo:
 
     @property
     def enabled(self):
-        """Gets the enabled of this PlaybookVersionInfo.
+        r"""Gets the enabled of this PlaybookVersionInfo.
 
         If is enabled, false for disenabled, true for enabled
 
@@ -449,7 +449,7 @@ class PlaybookVersionInfo:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this PlaybookVersionInfo.
+        r"""Sets the enabled of this PlaybookVersionInfo.
 
         If is enabled, false for disenabled, true for enabled
 
@@ -460,7 +460,7 @@ class PlaybookVersionInfo:
 
     @property
     def status(self):
-        """Gets the status of this PlaybookVersionInfo.
+        r"""Gets the status of this PlaybookVersionInfo.
 
         Status of approvement. editing, approving, unpassed, published
 
@@ -471,7 +471,7 @@ class PlaybookVersionInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PlaybookVersionInfo.
+        r"""Sets the status of this PlaybookVersionInfo.
 
         Status of approvement. editing, approving, unpassed, published
 
@@ -482,7 +482,7 @@ class PlaybookVersionInfo:
 
     @property
     def action_strategy(self):
-        """Gets the action_strategy of this PlaybookVersionInfo.
+        r"""Gets the action_strategy of this PlaybookVersionInfo.
 
         Strategy of action. sync or async
 
@@ -493,7 +493,7 @@ class PlaybookVersionInfo:
 
     @action_strategy.setter
     def action_strategy(self, action_strategy):
-        """Sets the action_strategy of this PlaybookVersionInfo.
+        r"""Sets the action_strategy of this PlaybookVersionInfo.
 
         Strategy of action. sync or async
 
@@ -504,7 +504,7 @@ class PlaybookVersionInfo:
 
     @property
     def actions(self):
-        """Gets the actions of this PlaybookVersionInfo.
+        r"""Gets the actions of this PlaybookVersionInfo.
 
         Information of actions.
 
@@ -515,7 +515,7 @@ class PlaybookVersionInfo:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this PlaybookVersionInfo.
+        r"""Sets the actions of this PlaybookVersionInfo.
 
         Information of actions.
 
@@ -526,7 +526,7 @@ class PlaybookVersionInfo:
 
     @property
     def rule_enable(self):
-        """Gets the rule_enable of this PlaybookVersionInfo.
+        r"""Gets the rule_enable of this PlaybookVersionInfo.
 
         If the condition filter is enabled.
 
@@ -537,7 +537,7 @@ class PlaybookVersionInfo:
 
     @rule_enable.setter
     def rule_enable(self, rule_enable):
-        """Sets the rule_enable of this PlaybookVersionInfo.
+        r"""Sets the rule_enable of this PlaybookVersionInfo.
 
         If the condition filter is enabled.
 
@@ -548,7 +548,7 @@ class PlaybookVersionInfo:
 
     @property
     def rules(self):
-        """Gets the rules of this PlaybookVersionInfo.
+        r"""Gets the rules of this PlaybookVersionInfo.
 
         :return: The rules of this PlaybookVersionInfo.
         :rtype: :class:`huaweicloudsdksa.v2.RuleInfo`
@@ -557,7 +557,7 @@ class PlaybookVersionInfo:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this PlaybookVersionInfo.
+        r"""Sets the rules of this PlaybookVersionInfo.
 
         :param rules: The rules of this PlaybookVersionInfo.
         :type rules: :class:`huaweicloudsdksa.v2.RuleInfo`
@@ -566,7 +566,7 @@ class PlaybookVersionInfo:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this PlaybookVersionInfo.
+        r"""Gets the dataclass_id of this PlaybookVersionInfo.
 
         bind dataclass id
 
@@ -577,7 +577,7 @@ class PlaybookVersionInfo:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this PlaybookVersionInfo.
+        r"""Sets the dataclass_id of this PlaybookVersionInfo.
 
         bind dataclass id
 
@@ -588,7 +588,7 @@ class PlaybookVersionInfo:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this PlaybookVersionInfo.
+        r"""Gets the trigger_type of this PlaybookVersionInfo.
 
         Strategy of action. event, timer
 
@@ -599,7 +599,7 @@ class PlaybookVersionInfo:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this PlaybookVersionInfo.
+        r"""Sets the trigger_type of this PlaybookVersionInfo.
 
         Strategy of action. event, timer
 
@@ -610,7 +610,7 @@ class PlaybookVersionInfo:
 
     @property
     def dataobject_create(self):
-        """Gets the dataobject_create of this PlaybookVersionInfo.
+        r"""Gets the dataobject_create of this PlaybookVersionInfo.
 
         if trigger when dataobject is created
 
@@ -621,7 +621,7 @@ class PlaybookVersionInfo:
 
     @dataobject_create.setter
     def dataobject_create(self, dataobject_create):
-        """Sets the dataobject_create of this PlaybookVersionInfo.
+        r"""Sets the dataobject_create of this PlaybookVersionInfo.
 
         if trigger when dataobject is created
 
@@ -632,7 +632,7 @@ class PlaybookVersionInfo:
 
     @property
     def dataobject_update(self):
-        """Gets the dataobject_update of this PlaybookVersionInfo.
+        r"""Gets the dataobject_update of this PlaybookVersionInfo.
 
         if trigger when dataobject is updated
 
@@ -643,7 +643,7 @@ class PlaybookVersionInfo:
 
     @dataobject_update.setter
     def dataobject_update(self, dataobject_update):
-        """Sets the dataobject_update of this PlaybookVersionInfo.
+        r"""Sets the dataobject_update of this PlaybookVersionInfo.
 
         if trigger when dataobject is updated
 
@@ -654,7 +654,7 @@ class PlaybookVersionInfo:
 
     @property
     def dataobject_delete(self):
-        """Gets the dataobject_delete of this PlaybookVersionInfo.
+        r"""Gets the dataobject_delete of this PlaybookVersionInfo.
 
         if trigger when dataobject is deleted
 
@@ -665,7 +665,7 @@ class PlaybookVersionInfo:
 
     @dataobject_delete.setter
     def dataobject_delete(self, dataobject_delete):
-        """Sets the dataobject_delete of this PlaybookVersionInfo.
+        r"""Sets the dataobject_delete of this PlaybookVersionInfo.
 
         if trigger when dataobject is deleted
 
@@ -676,7 +676,7 @@ class PlaybookVersionInfo:
 
     @property
     def version_type(self):
-        """Gets the version_type of this PlaybookVersionInfo.
+        r"""Gets the version_type of this PlaybookVersionInfo.
 
         版本类型
 
@@ -687,7 +687,7 @@ class PlaybookVersionInfo:
 
     @version_type.setter
     def version_type(self, version_type):
-        """Sets the version_type of this PlaybookVersionInfo.
+        r"""Sets the version_type of this PlaybookVersionInfo.
 
         版本类型
 
@@ -698,7 +698,7 @@ class PlaybookVersionInfo:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this PlaybookVersionInfo.
+        r"""Gets the rule_id of this PlaybookVersionInfo.
 
         过滤规则ID
 
@@ -709,7 +709,7 @@ class PlaybookVersionInfo:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this PlaybookVersionInfo.
+        r"""Sets the rule_id of this PlaybookVersionInfo.
 
         过滤规则ID
 
@@ -720,7 +720,7 @@ class PlaybookVersionInfo:
 
     @property
     def dataclass_name(self):
-        """Gets the dataclass_name of this PlaybookVersionInfo.
+        r"""Gets the dataclass_name of this PlaybookVersionInfo.
 
         数据类名称
 
@@ -731,7 +731,7 @@ class PlaybookVersionInfo:
 
     @dataclass_name.setter
     def dataclass_name(self, dataclass_name):
-        """Sets the dataclass_name of this PlaybookVersionInfo.
+        r"""Sets the dataclass_name of this PlaybookVersionInfo.
 
         数据类名称
 
@@ -742,7 +742,7 @@ class PlaybookVersionInfo:
 
     @property
     def approve_name(self):
-        """Gets the approve_name of this PlaybookVersionInfo.
+        r"""Gets the approve_name of this PlaybookVersionInfo.
 
         审核者
 
@@ -753,7 +753,7 @@ class PlaybookVersionInfo:
 
     @approve_name.setter
     def approve_name(self, approve_name):
-        """Sets the approve_name of this PlaybookVersionInfo.
+        r"""Sets the approve_name of this PlaybookVersionInfo.
 
         审核者
 
@@ -764,7 +764,7 @@ class PlaybookVersionInfo:
 
     @property
     def dataobject_id(self):
-        """Gets the dataobject_id of this PlaybookVersionInfo.
+        r"""Gets the dataobject_id of this PlaybookVersionInfo.
 
         dataobject id
 
@@ -775,7 +775,7 @@ class PlaybookVersionInfo:
 
     @dataobject_id.setter
     def dataobject_id(self, dataobject_id):
-        """Sets the dataobject_id of this PlaybookVersionInfo.
+        r"""Sets the dataobject_id of this PlaybookVersionInfo.
 
         dataobject id
 

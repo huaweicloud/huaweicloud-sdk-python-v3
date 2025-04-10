@@ -26,7 +26,7 @@ class PublishAssetsResponse(SdkResponse):
     }
 
     def __init__(self, asset_info_array=None):
-        """PublishAssetsResponse
+        r"""PublishAssetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class PublishAssetsResponse(SdkResponse):
 
     @property
     def asset_info_array(self):
-        """Gets the asset_info_array of this PublishAssetsResponse.
+        r"""Gets the asset_info_array of this PublishAssetsResponse.
 
         发布的媒资信息。
 
@@ -55,7 +55,7 @@ class PublishAssetsResponse(SdkResponse):
 
     @asset_info_array.setter
     def asset_info_array(self, asset_info_array):
-        """Sets the asset_info_array of this PublishAssetsResponse.
+        r"""Sets the asset_info_array of this PublishAssetsResponse.
 
         发布的媒资信息。
 

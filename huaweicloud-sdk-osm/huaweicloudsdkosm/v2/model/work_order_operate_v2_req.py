@@ -31,7 +31,7 @@ class WorkOrderOperateV2Req:
     }
 
     def __init__(self, judgement=None, operate_desc=None, group_id=None, incident_satisfaction_list=None):
-        """WorkOrderOperateV2Req
+        r"""WorkOrderOperateV2Req
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class WorkOrderOperateV2Req:
 
     @property
     def judgement(self):
-        """Gets the judgement of this WorkOrderOperateV2Req.
+        r"""Gets the judgement of this WorkOrderOperateV2Req.
 
         评价内容
 
@@ -75,7 +75,7 @@ class WorkOrderOperateV2Req:
 
     @judgement.setter
     def judgement(self, judgement):
-        """Sets the judgement of this WorkOrderOperateV2Req.
+        r"""Sets the judgement of this WorkOrderOperateV2Req.
 
         评价内容
 
@@ -86,7 +86,7 @@ class WorkOrderOperateV2Req:
 
     @property
     def operate_desc(self):
-        """Gets the operate_desc of this WorkOrderOperateV2Req.
+        r"""Gets the operate_desc of this WorkOrderOperateV2Req.
 
         操作描述
 
@@ -97,7 +97,7 @@ class WorkOrderOperateV2Req:
 
     @operate_desc.setter
     def operate_desc(self, operate_desc):
-        """Sets the operate_desc of this WorkOrderOperateV2Req.
+        r"""Sets the operate_desc of this WorkOrderOperateV2Req.
 
         操作描述
 
@@ -108,7 +108,7 @@ class WorkOrderOperateV2Req:
 
     @property
     def group_id(self):
-        """Gets the group_id of this WorkOrderOperateV2Req.
+        r"""Gets the group_id of this WorkOrderOperateV2Req.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 
@@ -119,7 +119,7 @@ class WorkOrderOperateV2Req:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this WorkOrderOperateV2Req.
+        r"""Sets the group_id of this WorkOrderOperateV2Req.
 
         华为云IAM组id，操作查询同组其他工单时，该id必传
 
@@ -130,7 +130,7 @@ class WorkOrderOperateV2Req:
 
     @property
     def incident_satisfaction_list(self):
-        """Gets the incident_satisfaction_list of this WorkOrderOperateV2Req.
+        r"""Gets the incident_satisfaction_list of this WorkOrderOperateV2Req.
 
         工单满意度列表
 
@@ -141,7 +141,7 @@ class WorkOrderOperateV2Req:
 
     @incident_satisfaction_list.setter
     def incident_satisfaction_list(self, incident_satisfaction_list):
-        """Sets the incident_satisfaction_list of this WorkOrderOperateV2Req.
+        r"""Sets the incident_satisfaction_list of this WorkOrderOperateV2Req.
 
         工单满意度列表
 

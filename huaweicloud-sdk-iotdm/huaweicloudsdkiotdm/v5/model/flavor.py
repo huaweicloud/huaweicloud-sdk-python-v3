@@ -27,7 +27,7 @@ class Flavor:
     }
 
     def __init__(self, type=None, size=None):
-        """Flavor
+        r"""Flavor
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class Flavor:
 
     @property
     def type(self):
-        """Gets the type of this Flavor.
+        r"""Gets the type of this Flavor.
 
         **参数说明**：待创建设备接入实例的规格名称。详情请参见[[产品规格说明](https://support.huaweicloud.com/productdesc-iothub/iot_04_0014.html)](tag:hws)[[产品规格说明](https://support.huaweicloud.com/intl/zh-cn/productdesc-iothub/iot_04_0014.html)](tag:hws_hk)中的规格编码。 
 
@@ -60,7 +60,7 @@ class Flavor:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Flavor.
+        r"""Sets the type of this Flavor.
 
         **参数说明**：待创建设备接入实例的规格名称。详情请参见[[产品规格说明](https://support.huaweicloud.com/productdesc-iothub/iot_04_0014.html)](tag:hws)[[产品规格说明](https://support.huaweicloud.com/intl/zh-cn/productdesc-iothub/iot_04_0014.html)](tag:hws_hk)中的规格编码。 
 
@@ -71,7 +71,7 @@ class Flavor:
 
     @property
     def size(self):
-        """Gets the size of this Flavor.
+        r"""Gets the size of this Flavor.
 
         **参数说明**：待创建设备接入标准版实例的单元数量。详情请参见[[产品规格说明](https://support.huaweicloud.com/productdesc-iothub/iot_04_0014.html)](tag:hws)[[产品规格说明](https://support.huaweicloud.com/intl/zh-cn/productdesc-iothub/iot_04_0014.html)](tag:hws_hk)。当instance_type是standard时，该参数必填。 
 
@@ -82,7 +82,7 @@ class Flavor:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Flavor.
+        r"""Sets the size of this Flavor.
 
         **参数说明**：待创建设备接入标准版实例的单元数量。详情请参见[[产品规格说明](https://support.huaweicloud.com/productdesc-iothub/iot_04_0014.html)](tag:hws)[[产品规格说明](https://support.huaweicloud.com/intl/zh-cn/productdesc-iothub/iot_04_0014.html)](tag:hws_hk)。当instance_type是standard时，该参数必填。 
 

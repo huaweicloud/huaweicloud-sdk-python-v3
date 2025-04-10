@@ -25,7 +25,7 @@ class ListTagsRequest:
     }
 
     def __init__(self, resource_type=None):
-        """ListTagsRequest
+        r"""ListTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListTagsRequest.
+        r"""Gets the resource_type of this ListTagsRequest.
 
         资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。
 
@@ -53,7 +53,7 @@ class ListTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListTagsRequest.
+        r"""Sets the resource_type of this ListTagsRequest.
 
         资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。
 

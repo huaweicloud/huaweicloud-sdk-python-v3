@@ -34,7 +34,7 @@ class CreateRunResponse(SdkResponse):
     }
 
     def __init__(self, run_id=None, job_id=None, job_type=None, created_time=None, sql_job=None):
-        """CreateRunResponse
+        r"""CreateRunResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateRunResponse(SdkResponse):
 
     @property
     def run_id(self):
-        """Gets the run_id of this CreateRunResponse.
+        r"""Gets the run_id of this CreateRunResponse.
 
         作业运行ID。
 
@@ -83,7 +83,7 @@ class CreateRunResponse(SdkResponse):
 
     @run_id.setter
     def run_id(self, run_id):
-        """Sets the run_id of this CreateRunResponse.
+        r"""Sets the run_id of this CreateRunResponse.
 
         作业运行ID。
 
@@ -94,7 +94,7 @@ class CreateRunResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateRunResponse.
+        r"""Gets the job_id of this CreateRunResponse.
 
         作业ID。
 
@@ -105,7 +105,7 @@ class CreateRunResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateRunResponse.
+        r"""Sets the job_id of this CreateRunResponse.
 
         作业ID。
 
@@ -116,7 +116,7 @@ class CreateRunResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this CreateRunResponse.
+        r"""Gets the job_type of this CreateRunResponse.
 
         作业类型。
 
@@ -127,7 +127,7 @@ class CreateRunResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this CreateRunResponse.
+        r"""Sets the job_type of this CreateRunResponse.
 
         作业类型。
 
@@ -138,7 +138,7 @@ class CreateRunResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this CreateRunResponse.
+        r"""Gets the created_time of this CreateRunResponse.
 
         创建运行时间。
 
@@ -149,7 +149,7 @@ class CreateRunResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CreateRunResponse.
+        r"""Sets the created_time of this CreateRunResponse.
 
         创建运行时间。
 
@@ -160,7 +160,7 @@ class CreateRunResponse(SdkResponse):
 
     @property
     def sql_job(self):
-        """Gets the sql_job of this CreateRunResponse.
+        r"""Gets the sql_job of this CreateRunResponse.
 
         :return: The sql_job of this CreateRunResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRunResponseBody`
@@ -169,7 +169,7 @@ class CreateRunResponse(SdkResponse):
 
     @sql_job.setter
     def sql_job(self, sql_job):
-        """Sets the sql_job of this CreateRunResponse.
+        r"""Sets the sql_job of this CreateRunResponse.
 
         :param sql_job: The sql_job of this CreateRunResponse.
         :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJobRunResponseBody`

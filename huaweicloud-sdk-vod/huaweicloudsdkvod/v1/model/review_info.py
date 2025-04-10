@@ -35,7 +35,7 @@ class ReviewInfo:
     }
 
     def __init__(self, suggestion=None, text=None, cover=None, video=None, exec_desc=None, review_status=None):
-        """ReviewInfo
+        r"""ReviewInfo
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ReviewInfo:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this ReviewInfo.
+        r"""Gets the suggestion of this ReviewInfo.
 
         检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。  > 当同时检测多个场景时，suggestion的值以最可能包含敏感信息的场景为准。即任一场景出现了block则总的suggestion为block，所有场景都pass时suggestion为pass，这两种情况之外则一定有场景需要review，此时suggestion为review。
 
@@ -88,7 +88,7 @@ class ReviewInfo:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this ReviewInfo.
+        r"""Sets the suggestion of this ReviewInfo.
 
         检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。  > 当同时检测多个场景时，suggestion的值以最可能包含敏感信息的场景为准。即任一场景出现了block则总的suggestion为block，所有场景都pass时suggestion为pass，这两种情况之外则一定有场景需要review，此时suggestion为review。
 
@@ -99,7 +99,7 @@ class ReviewInfo:
 
     @property
     def text(self):
-        """Gets the text of this ReviewInfo.
+        r"""Gets the text of this ReviewInfo.
 
         :return: The text of this ReviewInfo.
         :rtype: :class:`huaweicloudsdkvod.v1.TextReviewRet`
@@ -108,7 +108,7 @@ class ReviewInfo:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this ReviewInfo.
+        r"""Sets the text of this ReviewInfo.
 
         :param text: The text of this ReviewInfo.
         :type text: :class:`huaweicloudsdkvod.v1.TextReviewRet`
@@ -117,7 +117,7 @@ class ReviewInfo:
 
     @property
     def cover(self):
-        """Gets the cover of this ReviewInfo.
+        r"""Gets the cover of this ReviewInfo.
 
         封面检测结果。
 
@@ -128,7 +128,7 @@ class ReviewInfo:
 
     @cover.setter
     def cover(self, cover):
-        """Sets the cover of this ReviewInfo.
+        r"""Sets the cover of this ReviewInfo.
 
         封面检测结果。
 
@@ -139,7 +139,7 @@ class ReviewInfo:
 
     @property
     def video(self):
-        """Gets the video of this ReviewInfo.
+        r"""Gets the video of this ReviewInfo.
 
         视频检测结果。
 
@@ -150,7 +150,7 @@ class ReviewInfo:
 
     @video.setter
     def video(self, video):
-        """Sets the video of this ReviewInfo.
+        r"""Sets the video of this ReviewInfo.
 
         视频检测结果。
 
@@ -161,7 +161,7 @@ class ReviewInfo:
 
     @property
     def exec_desc(self):
-        """Gets the exec_desc of this ReviewInfo.
+        r"""Gets the exec_desc of this ReviewInfo.
 
         执行情况描述。
 
@@ -172,7 +172,7 @@ class ReviewInfo:
 
     @exec_desc.setter
     def exec_desc(self, exec_desc):
-        """Sets the exec_desc of this ReviewInfo.
+        r"""Sets the exec_desc of this ReviewInfo.
 
         执行情况描述。
 
@@ -183,7 +183,7 @@ class ReviewInfo:
 
     @property
     def review_status(self):
-        """Gets the review_status of this ReviewInfo.
+        r"""Gets the review_status of this ReviewInfo.
 
         审核状态。  取值如下： - UN_REVIEW：未审核 - REVIEWING：审核中 - REVIEW_SUSPICIOUS：审核可疑，需要人工审核 - REVIEW_PASSED：审核通过 - REVIEW_FAILED：审核失败。 - REVIEW_BLOCKED：已屏蔽。
 
@@ -194,7 +194,7 @@ class ReviewInfo:
 
     @review_status.setter
     def review_status(self, review_status):
-        """Sets the review_status of this ReviewInfo.
+        r"""Sets the review_status of this ReviewInfo.
 
         审核状态。  取值如下： - UN_REVIEW：未审核 - REVIEWING：审核中 - REVIEW_SUSPICIOUS：审核可疑，需要人工审核 - REVIEW_PASSED：审核通过 - REVIEW_FAILED：审核失败。 - REVIEW_BLOCKED：已屏蔽。
 

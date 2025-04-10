@@ -27,7 +27,7 @@ class DeleteAclAccountRequest:
     }
 
     def __init__(self, instance_id=None, account_id=None):
-        """DeleteAclAccountRequest
+        r"""DeleteAclAccountRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteAclAccountRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteAclAccountRequest.
+        r"""Gets the instance_id of this DeleteAclAccountRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class DeleteAclAccountRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteAclAccountRequest.
+        r"""Sets the instance_id of this DeleteAclAccountRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class DeleteAclAccountRequest:
 
     @property
     def account_id(self):
-        """Gets the account_id of this DeleteAclAccountRequest.
+        r"""Gets the account_id of this DeleteAclAccountRequest.
 
         ACL账号ID。
 
@@ -81,7 +81,7 @@ class DeleteAclAccountRequest:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this DeleteAclAccountRequest.
+        r"""Sets the account_id of this DeleteAclAccountRequest.
 
         ACL账号ID。
 

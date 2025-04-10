@@ -30,7 +30,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
     }
 
     def __init__(self, username=None, biz_type=None, stages=None):
-        """ShowUserAccessStagesResponse
+        r"""ShowUserAccessStagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
 
     @property
     def username(self):
-        """Gets the username of this ShowUserAccessStagesResponse.
+        r"""Gets the username of this ShowUserAccessStagesResponse.
 
         用户名
 
@@ -69,7 +69,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
 
     @username.setter
     def username(self, username):
-        """Sets the username of this ShowUserAccessStagesResponse.
+        r"""Sets the username of this ShowUserAccessStagesResponse.
 
         用户名
 
@@ -80,7 +80,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this ShowUserAccessStagesResponse.
+        r"""Gets the biz_type of this ShowUserAccessStagesResponse.
 
         接入阶段 | APP - 应用 DESKTOP - 桌面
 
@@ -91,7 +91,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this ShowUserAccessStagesResponse.
+        r"""Sets the biz_type of this ShowUserAccessStagesResponse.
 
         接入阶段 | APP - 应用 DESKTOP - 桌面
 
@@ -102,7 +102,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
 
     @property
     def stages(self):
-        """Gets the stages of this ShowUserAccessStagesResponse.
+        r"""Gets the stages of this ShowUserAccessStagesResponse.
 
         接入各阶段详情
 
@@ -113,7 +113,7 @@ class ShowUserAccessStagesResponse(SdkResponse):
 
     @stages.setter
     def stages(self, stages):
-        """Sets the stages of this ShowUserAccessStagesResponse.
+        r"""Sets the stages of this ShowUserAccessStagesResponse.
 
         接入各阶段详情
 

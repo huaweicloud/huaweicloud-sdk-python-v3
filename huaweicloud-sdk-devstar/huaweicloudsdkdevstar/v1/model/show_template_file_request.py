@@ -31,7 +31,7 @@ class ShowTemplateFileRequest:
     }
 
     def __init__(self, x_language=None, template_id=None, file_path=None, type=None):
-        """ShowTemplateFileRequest
+        r"""ShowTemplateFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowTemplateFileRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowTemplateFileRequest.
+        r"""Gets the x_language of this ShowTemplateFileRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -73,7 +73,7 @@ class ShowTemplateFileRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowTemplateFileRequest.
+        r"""Sets the x_language of this ShowTemplateFileRequest.
 
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
@@ -84,7 +84,7 @@ class ShowTemplateFileRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowTemplateFileRequest.
+        r"""Gets the template_id of this ShowTemplateFileRequest.
 
         模板ID，通过查询模板列表接口可获取相应的模板ID。
 
@@ -95,7 +95,7 @@ class ShowTemplateFileRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowTemplateFileRequest.
+        r"""Sets the template_id of this ShowTemplateFileRequest.
 
         模板ID，通过查询模板列表接口可获取相应的模板ID。
 
@@ -106,7 +106,7 @@ class ShowTemplateFileRequest:
 
     @property
     def file_path(self):
-        """Gets the file_path of this ShowTemplateFileRequest.
+        r"""Gets the file_path of this ShowTemplateFileRequest.
 
         文件相对路径，基于当前根目录的相对文件路径，例如获取HELP.md文件内容，则文件相对路径为“template-resources/file/HELP.md”。
 
@@ -117,7 +117,7 @@ class ShowTemplateFileRequest:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this ShowTemplateFileRequest.
+        r"""Sets the file_path of this ShowTemplateFileRequest.
 
         文件相对路径，基于当前根目录的相对文件路径，例如获取HELP.md文件内容，则文件相对路径为“template-resources/file/HELP.md”。
 
@@ -128,7 +128,7 @@ class ShowTemplateFileRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowTemplateFileRequest.
+        r"""Gets the type of this ShowTemplateFileRequest.
 
         读取文件来源，缺省值为“source-pachage”。  枚举值： - source-package: 源文件压缩包 - introduction: 说明文件 
 
@@ -139,7 +139,7 @@ class ShowTemplateFileRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowTemplateFileRequest.
+        r"""Sets the type of this ShowTemplateFileRequest.
 
         读取文件来源，缺省值为“source-pachage”。  枚举值： - source-package: 源文件压缩包 - introduction: 说明文件 
 

@@ -27,7 +27,7 @@ class AddCallbackRequestBody:
     }
 
     def __init__(self, callback_url=None, url_type=None):
-        """AddCallbackRequestBody
+        r"""AddCallbackRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddCallbackRequestBody:
 
     @property
     def callback_url(self):
-        """Gets the callback_url of this AddCallbackRequestBody.
+        r"""Gets the callback_url of this AddCallbackRequestBody.
 
         回调地址。  > - 必须http或https开头，建议使用https > - 支持域名或公网IP回调地址，不支持私网IP回调地址 
 
@@ -60,7 +60,7 @@ class AddCallbackRequestBody:
 
     @callback_url.setter
     def callback_url(self, callback_url):
-        """Sets the callback_url of this AddCallbackRequestBody.
+        r"""Sets the callback_url of this AddCallbackRequestBody.
 
         回调地址。  > - 必须http或https开头，建议使用https > - 支持域名或公网IP回调地址，不支持私网IP回调地址 
 
@@ -71,7 +71,7 @@ class AddCallbackRequestBody:
 
     @property
     def url_type(self):
-        """Gets the url_type of this AddCallbackRequestBody.
+        r"""Gets the url_type of this AddCallbackRequestBody.
 
         回调类型。  - 0：智能信息单条发送回调 - 1：模板状态回调 - 2：智能信息批量发送回调 
 
@@ -82,7 +82,7 @@ class AddCallbackRequestBody:
 
     @url_type.setter
     def url_type(self, url_type):
-        """Sets the url_type of this AddCallbackRequestBody.
+        r"""Sets the url_type of this AddCallbackRequestBody.
 
         回调类型。  - 0：智能信息单条发送回调 - 1：模板状态回调 - 2：智能信息批量发送回调 
 

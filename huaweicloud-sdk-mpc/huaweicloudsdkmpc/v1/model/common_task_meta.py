@@ -39,7 +39,7 @@ class CommonTaskMeta:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, error_code=None, description=None, user_data=None):
-        """CommonTaskMeta
+        r"""CommonTaskMeta
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class CommonTaskMeta:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CommonTaskMeta.
+        r"""Gets the task_id of this CommonTaskMeta.
 
         任务ID 
 
@@ -103,7 +103,7 @@ class CommonTaskMeta:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CommonTaskMeta.
+        r"""Sets the task_id of this CommonTaskMeta.
 
         任务ID 
 
@@ -114,7 +114,7 @@ class CommonTaskMeta:
 
     @property
     def status(self):
-        """Gets the status of this CommonTaskMeta.
+        r"""Gets the status of this CommonTaskMeta.
 
         任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
 
@@ -125,7 +125,7 @@ class CommonTaskMeta:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CommonTaskMeta.
+        r"""Sets the status of this CommonTaskMeta.
 
         任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
 
@@ -136,7 +136,7 @@ class CommonTaskMeta:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CommonTaskMeta.
+        r"""Gets the create_time of this CommonTaskMeta.
 
         任务创建时间 
 
@@ -147,7 +147,7 @@ class CommonTaskMeta:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CommonTaskMeta.
+        r"""Sets the create_time of this CommonTaskMeta.
 
         任务创建时间 
 
@@ -158,7 +158,7 @@ class CommonTaskMeta:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CommonTaskMeta.
+        r"""Gets the start_time of this CommonTaskMeta.
 
         任务启动时间 
 
@@ -169,7 +169,7 @@ class CommonTaskMeta:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CommonTaskMeta.
+        r"""Sets the start_time of this CommonTaskMeta.
 
         任务启动时间 
 
@@ -180,7 +180,7 @@ class CommonTaskMeta:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CommonTaskMeta.
+        r"""Gets the end_time of this CommonTaskMeta.
 
         任务结束时间 
 
@@ -191,7 +191,7 @@ class CommonTaskMeta:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CommonTaskMeta.
+        r"""Sets the end_time of this CommonTaskMeta.
 
         任务结束时间 
 
@@ -202,7 +202,7 @@ class CommonTaskMeta:
 
     @property
     def error_code(self):
-        """Gets the error_code of this CommonTaskMeta.
+        r"""Gets the error_code of this CommonTaskMeta.
 
         任务的返回码。 
 
@@ -213,7 +213,7 @@ class CommonTaskMeta:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CommonTaskMeta.
+        r"""Sets the error_code of this CommonTaskMeta.
 
         任务的返回码。 
 
@@ -224,7 +224,7 @@ class CommonTaskMeta:
 
     @property
     def description(self):
-        """Gets the description of this CommonTaskMeta.
+        r"""Gets the description of this CommonTaskMeta.
 
         错误描述 
 
@@ -235,7 +235,7 @@ class CommonTaskMeta:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CommonTaskMeta.
+        r"""Sets the description of this CommonTaskMeta.
 
         错误描述 
 
@@ -246,7 +246,7 @@ class CommonTaskMeta:
 
     @property
     def user_data(self):
-        """Gets the user_data of this CommonTaskMeta.
+        r"""Gets the user_data of this CommonTaskMeta.
 
         用户数据。 
 
@@ -257,7 +257,7 @@ class CommonTaskMeta:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this CommonTaskMeta.
+        r"""Sets the user_data of this CommonTaskMeta.
 
         用户数据。 
 

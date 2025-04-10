@@ -33,7 +33,7 @@ class BackendConstant:
     }
 
     def __init__(self, name=None, type=None, position=None, description=None, value=None):
-        """BackendConstant
+        r"""BackendConstant
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BackendConstant:
 
     @property
     def name(self):
-        """Gets the name of this BackendConstant.
+        r"""Gets the name of this BackendConstant.
 
         常量参数名
 
@@ -82,7 +82,7 @@ class BackendConstant:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BackendConstant.
+        r"""Sets the name of this BackendConstant.
 
         常量参数名
 
@@ -93,7 +93,7 @@ class BackendConstant:
 
     @property
     def type(self):
-        """Gets the type of this BackendConstant.
+        r"""Gets the type of this BackendConstant.
 
         常量参数类型
 
@@ -104,7 +104,7 @@ class BackendConstant:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BackendConstant.
+        r"""Sets the type of this BackendConstant.
 
         常量参数类型
 
@@ -115,7 +115,7 @@ class BackendConstant:
 
     @property
     def position(self):
-        """Gets the position of this BackendConstant.
+        r"""Gets the position of this BackendConstant.
 
         常量参数位置
 
@@ -126,7 +126,7 @@ class BackendConstant:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this BackendConstant.
+        r"""Sets the position of this BackendConstant.
 
         常量参数位置
 
@@ -137,7 +137,7 @@ class BackendConstant:
 
     @property
     def description(self):
-        """Gets the description of this BackendConstant.
+        r"""Gets the description of this BackendConstant.
 
         常量参数描述
 
@@ -148,7 +148,7 @@ class BackendConstant:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BackendConstant.
+        r"""Sets the description of this BackendConstant.
 
         常量参数描述
 
@@ -159,7 +159,7 @@ class BackendConstant:
 
     @property
     def value(self):
-        """Gets the value of this BackendConstant.
+        r"""Gets the value of this BackendConstant.
 
         常量参数值
 
@@ -170,7 +170,7 @@ class BackendConstant:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this BackendConstant.
+        r"""Sets the value of this BackendConstant.
 
         常量参数值
 

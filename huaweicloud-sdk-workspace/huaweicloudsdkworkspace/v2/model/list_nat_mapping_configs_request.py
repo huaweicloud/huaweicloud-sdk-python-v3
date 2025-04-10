@@ -25,7 +25,7 @@ class ListNatMappingConfigsRequest:
     }
 
     def __init__(self, site_id=None):
-        """ListNatMappingConfigsRequest
+        r"""ListNatMappingConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListNatMappingConfigsRequest:
 
     @property
     def site_id(self):
-        """Gets the site_id of this ListNatMappingConfigsRequest.
+        r"""Gets the site_id of this ListNatMappingConfigsRequest.
 
         站点ID
 
@@ -54,7 +54,7 @@ class ListNatMappingConfigsRequest:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ListNatMappingConfigsRequest.
+        r"""Sets the site_id of this ListNatMappingConfigsRequest.
 
         站点ID
 

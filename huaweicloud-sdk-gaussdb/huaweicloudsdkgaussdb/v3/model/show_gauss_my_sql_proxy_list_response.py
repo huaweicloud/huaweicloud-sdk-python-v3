@@ -26,7 +26,7 @@ class ShowGaussMySqlProxyListResponse(SdkResponse):
     }
 
     def __init__(self, proxy_list=None):
-        """ShowGaussMySqlProxyListResponse
+        r"""ShowGaussMySqlProxyListResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowGaussMySqlProxyListResponse(SdkResponse):
 
     @property
     def proxy_list(self):
-        """Gets the proxy_list of this ShowGaussMySqlProxyListResponse.
+        r"""Gets the proxy_list of this ShowGaussMySqlProxyListResponse.
 
         Proxy实例信息列表。
 
@@ -55,7 +55,7 @@ class ShowGaussMySqlProxyListResponse(SdkResponse):
 
     @proxy_list.setter
     def proxy_list(self, proxy_list):
-        """Sets the proxy_list of this ShowGaussMySqlProxyListResponse.
+        r"""Sets the proxy_list of this ShowGaussMySqlProxyListResponse.
 
         Proxy实例信息列表。
 

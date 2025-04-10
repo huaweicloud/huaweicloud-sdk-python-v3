@@ -71,7 +71,7 @@ class UserConnectionInfo:
     }
 
     def __init__(self, id=None, connect_type=None, user_name=None, desktop_group_name=None, pre_conn_time=None, start_time=None, end_time=None, machine_sid=None, machine_name=None, failed_reason=None, failed_code=None, client_mac=None, client_name=None, client_ip=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, connect_flag=None, wi_ip=None, update_time=None, tenant_id=None, virtual_ip=None, public_ip=None):
-        """UserConnectionInfo
+        r"""UserConnectionInfo
 
         The model defined in huaweicloud sdk
 
@@ -204,7 +204,7 @@ class UserConnectionInfo:
 
     @property
     def id(self):
-        """Gets the id of this UserConnectionInfo.
+        r"""Gets the id of this UserConnectionInfo.
 
         主键。
 
@@ -215,7 +215,7 @@ class UserConnectionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UserConnectionInfo.
+        r"""Sets the id of this UserConnectionInfo.
 
         主键。
 
@@ -226,7 +226,7 @@ class UserConnectionInfo:
 
     @property
     def connect_type(self):
-        """Gets the connect_type of this UserConnectionInfo.
+        r"""Gets the connect_type of this UserConnectionInfo.
 
         连接类型。
 
@@ -237,7 +237,7 @@ class UserConnectionInfo:
 
     @connect_type.setter
     def connect_type(self, connect_type):
-        """Sets the connect_type of this UserConnectionInfo.
+        r"""Sets the connect_type of this UserConnectionInfo.
 
         连接类型。
 
@@ -248,7 +248,7 @@ class UserConnectionInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UserConnectionInfo.
+        r"""Gets the user_name of this UserConnectionInfo.
 
         登录用户。
 
@@ -259,7 +259,7 @@ class UserConnectionInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UserConnectionInfo.
+        r"""Sets the user_name of this UserConnectionInfo.
 
         登录用户。
 
@@ -270,7 +270,7 @@ class UserConnectionInfo:
 
     @property
     def desktop_group_name(self):
-        """Gets the desktop_group_name of this UserConnectionInfo.
+        r"""Gets the desktop_group_name of this UserConnectionInfo.
 
         桌面组名。
 
@@ -281,7 +281,7 @@ class UserConnectionInfo:
 
     @desktop_group_name.setter
     def desktop_group_name(self, desktop_group_name):
-        """Sets the desktop_group_name of this UserConnectionInfo.
+        r"""Sets the desktop_group_name of this UserConnectionInfo.
 
         桌面组名。
 
@@ -292,7 +292,7 @@ class UserConnectionInfo:
 
     @property
     def pre_conn_time(self):
-        """Gets the pre_conn_time of this UserConnectionInfo.
+        r"""Gets the pre_conn_time of this UserConnectionInfo.
 
         预连接时间。
 
@@ -303,7 +303,7 @@ class UserConnectionInfo:
 
     @pre_conn_time.setter
     def pre_conn_time(self, pre_conn_time):
-        """Sets the pre_conn_time of this UserConnectionInfo.
+        r"""Sets the pre_conn_time of this UserConnectionInfo.
 
         预连接时间。
 
@@ -314,7 +314,7 @@ class UserConnectionInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this UserConnectionInfo.
+        r"""Gets the start_time of this UserConnectionInfo.
 
         开始时间。
 
@@ -325,7 +325,7 @@ class UserConnectionInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this UserConnectionInfo.
+        r"""Sets the start_time of this UserConnectionInfo.
 
         开始时间。
 
@@ -336,7 +336,7 @@ class UserConnectionInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this UserConnectionInfo.
+        r"""Gets the end_time of this UserConnectionInfo.
 
         结束时间。
 
@@ -347,7 +347,7 @@ class UserConnectionInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this UserConnectionInfo.
+        r"""Sets the end_time of this UserConnectionInfo.
 
         结束时间。
 
@@ -358,7 +358,7 @@ class UserConnectionInfo:
 
     @property
     def machine_sid(self):
-        """Gets the machine_sid of this UserConnectionInfo.
+        r"""Gets the machine_sid of this UserConnectionInfo.
 
         应用服务器sid。
 
@@ -369,7 +369,7 @@ class UserConnectionInfo:
 
     @machine_sid.setter
     def machine_sid(self, machine_sid):
-        """Sets the machine_sid of this UserConnectionInfo.
+        r"""Sets the machine_sid of this UserConnectionInfo.
 
         应用服务器sid。
 
@@ -380,7 +380,7 @@ class UserConnectionInfo:
 
     @property
     def machine_name(self):
-        """Gets the machine_name of this UserConnectionInfo.
+        r"""Gets the machine_name of this UserConnectionInfo.
 
         应用服务器名称。
 
@@ -391,7 +391,7 @@ class UserConnectionInfo:
 
     @machine_name.setter
     def machine_name(self, machine_name):
-        """Sets the machine_name of this UserConnectionInfo.
+        r"""Sets the machine_name of this UserConnectionInfo.
 
         应用服务器名称。
 
@@ -402,7 +402,7 @@ class UserConnectionInfo:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this UserConnectionInfo.
+        r"""Gets the failed_reason of this UserConnectionInfo.
 
         连接失败原因。
 
@@ -413,7 +413,7 @@ class UserConnectionInfo:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this UserConnectionInfo.
+        r"""Sets the failed_reason of this UserConnectionInfo.
 
         连接失败原因。
 
@@ -424,7 +424,7 @@ class UserConnectionInfo:
 
     @property
     def failed_code(self):
-        """Gets the failed_code of this UserConnectionInfo.
+        r"""Gets the failed_code of this UserConnectionInfo.
 
         连接失败状态码。
 
@@ -435,7 +435,7 @@ class UserConnectionInfo:
 
     @failed_code.setter
     def failed_code(self, failed_code):
-        """Sets the failed_code of this UserConnectionInfo.
+        r"""Sets the failed_code of this UserConnectionInfo.
 
         连接失败状态码。
 
@@ -446,7 +446,7 @@ class UserConnectionInfo:
 
     @property
     def client_mac(self):
-        """Gets the client_mac of this UserConnectionInfo.
+        r"""Gets the client_mac of this UserConnectionInfo.
 
         客户端Mac。
 
@@ -457,7 +457,7 @@ class UserConnectionInfo:
 
     @client_mac.setter
     def client_mac(self, client_mac):
-        """Sets the client_mac of this UserConnectionInfo.
+        r"""Sets the client_mac of this UserConnectionInfo.
 
         客户端Mac。
 
@@ -468,7 +468,7 @@ class UserConnectionInfo:
 
     @property
     def client_name(self):
-        """Gets the client_name of this UserConnectionInfo.
+        r"""Gets the client_name of this UserConnectionInfo.
 
         客户端名称。
 
@@ -479,7 +479,7 @@ class UserConnectionInfo:
 
     @client_name.setter
     def client_name(self, client_name):
-        """Sets the client_name of this UserConnectionInfo.
+        r"""Sets the client_name of this UserConnectionInfo.
 
         客户端名称。
 
@@ -490,7 +490,7 @@ class UserConnectionInfo:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this UserConnectionInfo.
+        r"""Gets the client_ip of this UserConnectionInfo.
 
         客户端ip。
 
@@ -501,7 +501,7 @@ class UserConnectionInfo:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this UserConnectionInfo.
+        r"""Sets the client_ip of this UserConnectionInfo.
 
         客户端ip。
 
@@ -512,7 +512,7 @@ class UserConnectionInfo:
 
     @property
     def client_version(self):
-        """Gets the client_version of this UserConnectionInfo.
+        r"""Gets the client_version of this UserConnectionInfo.
 
         客户端版本。
 
@@ -523,7 +523,7 @@ class UserConnectionInfo:
 
     @client_version.setter
     def client_version(self, client_version):
-        """Sets the client_version of this UserConnectionInfo.
+        r"""Sets the client_version of this UserConnectionInfo.
 
         客户端版本。
 
@@ -534,7 +534,7 @@ class UserConnectionInfo:
 
     @property
     def client_type(self):
-        """Gets the client_type of this UserConnectionInfo.
+        r"""Gets the client_type of this UserConnectionInfo.
 
         客户端操作系统类型。
 
@@ -545,7 +545,7 @@ class UserConnectionInfo:
 
     @client_type.setter
     def client_type(self, client_type):
-        """Sets the client_type of this UserConnectionInfo.
+        r"""Sets the client_type of this UserConnectionInfo.
 
         客户端操作系统类型。
 
@@ -556,7 +556,7 @@ class UserConnectionInfo:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this UserConnectionInfo.
+        r"""Gets the agent_version of this UserConnectionInfo.
 
         aps hda版本。
 
@@ -567,7 +567,7 @@ class UserConnectionInfo:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this UserConnectionInfo.
+        r"""Sets the agent_version of this UserConnectionInfo.
 
         aps hda版本。
 
@@ -578,7 +578,7 @@ class UserConnectionInfo:
 
     @property
     def vm_ip(self):
-        """Gets the vm_ip of this UserConnectionInfo.
+        r"""Gets the vm_ip of this UserConnectionInfo.
 
         应用服务器ip。
 
@@ -589,7 +589,7 @@ class UserConnectionInfo:
 
     @vm_ip.setter
     def vm_ip(self, vm_ip):
-        """Sets the vm_ip of this UserConnectionInfo.
+        r"""Sets the vm_ip of this UserConnectionInfo.
 
         应用服务器ip。
 
@@ -600,7 +600,7 @@ class UserConnectionInfo:
 
     @property
     def connect_flag(self):
-        """Gets the connect_flag of this UserConnectionInfo.
+        r"""Gets the connect_flag of this UserConnectionInfo.
 
         连接标志。
 
@@ -611,7 +611,7 @@ class UserConnectionInfo:
 
     @connect_flag.setter
     def connect_flag(self, connect_flag):
-        """Sets the connect_flag of this UserConnectionInfo.
+        r"""Sets the connect_flag of this UserConnectionInfo.
 
         连接标志。
 
@@ -622,7 +622,7 @@ class UserConnectionInfo:
 
     @property
     def wi_ip(self):
-        """Gets the wi_ip of this UserConnectionInfo.
+        r"""Gets the wi_ip of this UserConnectionInfo.
 
         连接IP。
 
@@ -633,7 +633,7 @@ class UserConnectionInfo:
 
     @wi_ip.setter
     def wi_ip(self, wi_ip):
-        """Sets the wi_ip of this UserConnectionInfo.
+        r"""Sets the wi_ip of this UserConnectionInfo.
 
         连接IP。
 
@@ -644,7 +644,7 @@ class UserConnectionInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this UserConnectionInfo.
+        r"""Gets the update_time of this UserConnectionInfo.
 
         更新时间。
 
@@ -655,7 +655,7 @@ class UserConnectionInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UserConnectionInfo.
+        r"""Sets the update_time of this UserConnectionInfo.
 
         更新时间。
 
@@ -666,7 +666,7 @@ class UserConnectionInfo:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this UserConnectionInfo.
+        r"""Gets the tenant_id of this UserConnectionInfo.
 
         租户id。
 
@@ -677,7 +677,7 @@ class UserConnectionInfo:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this UserConnectionInfo.
+        r"""Sets the tenant_id of this UserConnectionInfo.
 
         租户id。
 
@@ -688,7 +688,7 @@ class UserConnectionInfo:
 
     @property
     def virtual_ip(self):
-        """Gets the virtual_ip of this UserConnectionInfo.
+        r"""Gets the virtual_ip of this UserConnectionInfo.
 
         会话虚拟ip。
 
@@ -699,7 +699,7 @@ class UserConnectionInfo:
 
     @virtual_ip.setter
     def virtual_ip(self, virtual_ip):
-        """Sets the virtual_ip of this UserConnectionInfo.
+        r"""Sets the virtual_ip of this UserConnectionInfo.
 
         会话虚拟ip。
 
@@ -710,7 +710,7 @@ class UserConnectionInfo:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this UserConnectionInfo.
+        r"""Gets the public_ip of this UserConnectionInfo.
 
         客户端出口ip。
 
@@ -721,7 +721,7 @@ class UserConnectionInfo:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this UserConnectionInfo.
+        r"""Sets the public_ip of this UserConnectionInfo.
 
         客户端出口ip。
 

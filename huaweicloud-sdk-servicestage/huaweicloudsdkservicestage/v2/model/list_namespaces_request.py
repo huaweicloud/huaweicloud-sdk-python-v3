@@ -25,7 +25,7 @@ class ListNamespacesRequest:
     }
 
     def __init__(self, x_repo_auth=None):
-        """ListNamespacesRequest
+        r"""ListNamespacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListNamespacesRequest:
 
     @property
     def x_repo_auth(self):
-        """Gets the x_repo_auth of this ListNamespacesRequest.
+        r"""Gets the x_repo_auth of this ListNamespacesRequest.
 
         授权名称。
 
@@ -53,7 +53,7 @@ class ListNamespacesRequest:
 
     @x_repo_auth.setter
     def x_repo_auth(self, x_repo_auth):
-        """Sets the x_repo_auth of this ListNamespacesRequest.
+        r"""Sets the x_repo_auth of this ListNamespacesRequest.
 
         授权名称。
 

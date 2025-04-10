@@ -39,7 +39,7 @@ class MuteRule:
     }
 
     def __init__(self, create_time=None, desc=None, match=None, mute_config=None, name=None, timezone=None, update_time=None, user_id=None):
-        """MuteRule
+        r"""MuteRule
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class MuteRule:
 
     @property
     def create_time(self):
-        """Gets the create_time of this MuteRule.
+        r"""Gets the create_time of this MuteRule.
 
         创建时间
 
@@ -99,7 +99,7 @@ class MuteRule:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this MuteRule.
+        r"""Sets the create_time of this MuteRule.
 
         创建时间
 
@@ -110,7 +110,7 @@ class MuteRule:
 
     @property
     def desc(self):
-        """Gets the desc of this MuteRule.
+        r"""Gets the desc of this MuteRule.
 
         规则描述
 
@@ -121,7 +121,7 @@ class MuteRule:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this MuteRule.
+        r"""Sets the desc of this MuteRule.
 
         规则描述
 
@@ -132,7 +132,7 @@ class MuteRule:
 
     @property
     def match(self):
-        """Gets the match of this MuteRule.
+        r"""Gets the match of this MuteRule.
 
         规则的匹配条件。串行条件和并行条件的最大数量限制为10。
 
@@ -143,7 +143,7 @@ class MuteRule:
 
     @match.setter
     def match(self, match):
-        """Sets the match of this MuteRule.
+        r"""Sets the match of this MuteRule.
 
         规则的匹配条件。串行条件和并行条件的最大数量限制为10。
 
@@ -154,7 +154,7 @@ class MuteRule:
 
     @property
     def mute_config(self):
-        """Gets the mute_config of this MuteRule.
+        r"""Gets the mute_config of this MuteRule.
 
         :return: The mute_config of this MuteRule.
         :rtype: :class:`huaweicloudsdkaom.v2.MuteConfig`
@@ -163,7 +163,7 @@ class MuteRule:
 
     @mute_config.setter
     def mute_config(self, mute_config):
-        """Sets the mute_config of this MuteRule.
+        r"""Sets the mute_config of this MuteRule.
 
         :param mute_config: The mute_config of this MuteRule.
         :type mute_config: :class:`huaweicloudsdkaom.v2.MuteConfig`
@@ -172,7 +172,7 @@ class MuteRule:
 
     @property
     def name(self):
-        """Gets the name of this MuteRule.
+        r"""Gets the name of this MuteRule.
 
         规则名称。名称包含大小写字母、数字、特殊字符（_）、不能以下划线开头或结尾，最大长度为100。
 
@@ -183,7 +183,7 @@ class MuteRule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MuteRule.
+        r"""Sets the name of this MuteRule.
 
         规则名称。名称包含大小写字母、数字、特殊字符（_）、不能以下划线开头或结尾，最大长度为100。
 
@@ -194,7 +194,7 @@ class MuteRule:
 
     @property
     def timezone(self):
-        """Gets the timezone of this MuteRule.
+        r"""Gets the timezone of this MuteRule.
 
         时区
 
@@ -205,7 +205,7 @@ class MuteRule:
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this MuteRule.
+        r"""Sets the timezone of this MuteRule.
 
         时区
 
@@ -216,7 +216,7 @@ class MuteRule:
 
     @property
     def update_time(self):
-        """Gets the update_time of this MuteRule.
+        r"""Gets the update_time of this MuteRule.
 
         修改时间
 
@@ -227,7 +227,7 @@ class MuteRule:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this MuteRule.
+        r"""Sets the update_time of this MuteRule.
 
         修改时间
 
@@ -238,7 +238,7 @@ class MuteRule:
 
     @property
     def user_id(self):
-        """Gets the user_id of this MuteRule.
+        r"""Gets the user_id of this MuteRule.
 
         用户ID
 
@@ -249,7 +249,7 @@ class MuteRule:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this MuteRule.
+        r"""Sets the user_id of this MuteRule.
 
         用户ID
 

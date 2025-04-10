@@ -29,7 +29,7 @@ class UpdateStrategyRequest:
     }
 
     def __init__(self, rule_set_id=None, domain_id=None, body=None):
-        """UpdateStrategyRequest
+        r"""UpdateStrategyRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateStrategyRequest:
 
     @property
     def rule_set_id(self):
-        """Gets the rule_set_id of this UpdateStrategyRequest.
+        r"""Gets the rule_set_id of this UpdateStrategyRequest.
 
         策略ID
 
@@ -66,7 +66,7 @@ class UpdateStrategyRequest:
 
     @rule_set_id.setter
     def rule_set_id(self, rule_set_id):
-        """Sets the rule_set_id of this UpdateStrategyRequest.
+        r"""Sets the rule_set_id of this UpdateStrategyRequest.
 
         策略ID
 
@@ -77,7 +77,7 @@ class UpdateStrategyRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateStrategyRequest.
+        r"""Gets the domain_id of this UpdateStrategyRequest.
 
         租户ID
 
@@ -88,7 +88,7 @@ class UpdateStrategyRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateStrategyRequest.
+        r"""Sets the domain_id of this UpdateStrategyRequest.
 
         租户ID
 
@@ -99,7 +99,7 @@ class UpdateStrategyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateStrategyRequest.
+        r"""Gets the body of this UpdateStrategyRequest.
 
         :return: The body of this UpdateStrategyRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.UpdateRuleSetReq`
@@ -108,7 +108,7 @@ class UpdateStrategyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateStrategyRequest.
+        r"""Sets the body of this UpdateStrategyRequest.
 
         :param body: The body of this UpdateStrategyRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.UpdateRuleSetReq`

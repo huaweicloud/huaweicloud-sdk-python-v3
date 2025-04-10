@@ -23,7 +23,7 @@ class ListEcsSpecificationRequest:
     }
 
     def __init__(self):
-        """ListEcsSpecificationRequest
+        r"""ListEcsSpecificationRequest
 
         The model defined in huaweicloud sdk
 

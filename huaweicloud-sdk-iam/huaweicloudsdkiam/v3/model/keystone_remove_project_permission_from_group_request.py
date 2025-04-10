@@ -29,7 +29,7 @@ class KeystoneRemoveProjectPermissionFromGroupRequest:
     }
 
     def __init__(self, project_id=None, group_id=None, role_id=None):
-        """KeystoneRemoveProjectPermissionFromGroupRequest
+        r"""KeystoneRemoveProjectPermissionFromGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class KeystoneRemoveProjectPermissionFromGroupRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this KeystoneRemoveProjectPermissionFromGroupRequest.
+        r"""Gets the project_id of this KeystoneRemoveProjectPermissionFromGroupRequest.
 
         项目ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -65,7 +65,7 @@ class KeystoneRemoveProjectPermissionFromGroupRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this KeystoneRemoveProjectPermissionFromGroupRequest.
+        r"""Sets the project_id of this KeystoneRemoveProjectPermissionFromGroupRequest.
 
         项目ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -76,7 +76,7 @@ class KeystoneRemoveProjectPermissionFromGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this KeystoneRemoveProjectPermissionFromGroupRequest.
+        r"""Gets the group_id of this KeystoneRemoveProjectPermissionFromGroupRequest.
 
         用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -87,7 +87,7 @@ class KeystoneRemoveProjectPermissionFromGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this KeystoneRemoveProjectPermissionFromGroupRequest.
+        r"""Sets the group_id of this KeystoneRemoveProjectPermissionFromGroupRequest.
 
         用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -98,7 +98,7 @@ class KeystoneRemoveProjectPermissionFromGroupRequest:
 
     @property
     def role_id(self):
-        """Gets the role_id of this KeystoneRemoveProjectPermissionFromGroupRequest.
+        r"""Gets the role_id of this KeystoneRemoveProjectPermissionFromGroupRequest.
 
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
@@ -109,7 +109,7 @@ class KeystoneRemoveProjectPermissionFromGroupRequest:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this KeystoneRemoveProjectPermissionFromGroupRequest.
+        r"""Sets the role_id of this KeystoneRemoveProjectPermissionFromGroupRequest.
 
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 

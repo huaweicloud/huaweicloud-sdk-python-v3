@@ -30,7 +30,7 @@ class ListAppsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, apps=None, x_request_id=None):
-        """ListAppsResponse
+        r"""ListAppsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAppsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAppsResponse.
+        r"""Gets the count of this ListAppsResponse.
 
         app的总数
 
@@ -69,7 +69,7 @@ class ListAppsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAppsResponse.
+        r"""Sets the count of this ListAppsResponse.
 
         app的总数
 
@@ -80,7 +80,7 @@ class ListAppsResponse(SdkResponse):
 
     @property
     def apps(self):
-        """Gets the apps of this ListAppsResponse.
+        r"""Gets the apps of this ListAppsResponse.
 
         app的列表
 
@@ -91,7 +91,7 @@ class ListAppsResponse(SdkResponse):
 
     @apps.setter
     def apps(self, apps):
-        """Sets the apps of this ListAppsResponse.
+        r"""Sets the apps of this ListAppsResponse.
 
         app的列表
 
@@ -102,7 +102,7 @@ class ListAppsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListAppsResponse.
+        r"""Gets the x_request_id of this ListAppsResponse.
 
         :return: The x_request_id of this ListAppsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListAppsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListAppsResponse.
+        r"""Sets the x_request_id of this ListAppsResponse.
 
         :param x_request_id: The x_request_id of this ListAppsResponse.
         :type x_request_id: str

@@ -29,7 +29,7 @@ class DeletePluginDraftRequest:
     }
 
     def __init__(self, domain_id=None, plugin_name=None, version=None):
-        """DeletePluginDraftRequest
+        r"""DeletePluginDraftRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeletePluginDraftRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DeletePluginDraftRequest.
+        r"""Gets the domain_id of this DeletePluginDraftRequest.
 
         租户ID
 
@@ -65,7 +65,7 @@ class DeletePluginDraftRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DeletePluginDraftRequest.
+        r"""Sets the domain_id of this DeletePluginDraftRequest.
 
         租户ID
 
@@ -76,7 +76,7 @@ class DeletePluginDraftRequest:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this DeletePluginDraftRequest.
+        r"""Gets the plugin_name of this DeletePluginDraftRequest.
 
         插件名
 
@@ -87,7 +87,7 @@ class DeletePluginDraftRequest:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this DeletePluginDraftRequest.
+        r"""Sets the plugin_name of this DeletePluginDraftRequest.
 
         插件名
 
@@ -98,7 +98,7 @@ class DeletePluginDraftRequest:
 
     @property
     def version(self):
-        """Gets the version of this DeletePluginDraftRequest.
+        r"""Gets the version of this DeletePluginDraftRequest.
 
         版本
 
@@ -109,7 +109,7 @@ class DeletePluginDraftRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DeletePluginDraftRequest.
+        r"""Sets the version of this DeletePluginDraftRequest.
 
         版本
 

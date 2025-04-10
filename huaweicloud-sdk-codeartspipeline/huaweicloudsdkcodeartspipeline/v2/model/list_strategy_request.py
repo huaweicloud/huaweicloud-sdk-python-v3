@@ -39,7 +39,7 @@ class ListStrategyRequest:
     }
 
     def __init__(self, domain_id=None, offset=None, limit=None, include_tenant_rule_set=None, name=None, is_valid=None, type=None, cloud_project_id=None):
-        """ListStrategyRequest
+        r"""ListStrategyRequest
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class ListStrategyRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListStrategyRequest.
+        r"""Gets the domain_id of this ListStrategyRequest.
 
         租户ID
 
@@ -99,7 +99,7 @@ class ListStrategyRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListStrategyRequest.
+        r"""Sets the domain_id of this ListStrategyRequest.
 
         租户ID
 
@@ -110,7 +110,7 @@ class ListStrategyRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListStrategyRequest.
+        r"""Gets the offset of this ListStrategyRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -121,7 +121,7 @@ class ListStrategyRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListStrategyRequest.
+        r"""Sets the offset of this ListStrategyRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -132,7 +132,7 @@ class ListStrategyRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListStrategyRequest.
+        r"""Gets the limit of this ListStrategyRequest.
 
         每页显示的条目数量
 
@@ -143,7 +143,7 @@ class ListStrategyRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListStrategyRequest.
+        r"""Sets the limit of this ListStrategyRequest.
 
         每页显示的条目数量
 
@@ -154,7 +154,7 @@ class ListStrategyRequest:
 
     @property
     def include_tenant_rule_set(self):
-        """Gets the include_tenant_rule_set of this ListStrategyRequest.
+        r"""Gets the include_tenant_rule_set of this ListStrategyRequest.
 
         是否包含租户级规则
 
@@ -165,7 +165,7 @@ class ListStrategyRequest:
 
     @include_tenant_rule_set.setter
     def include_tenant_rule_set(self, include_tenant_rule_set):
-        """Sets the include_tenant_rule_set of this ListStrategyRequest.
+        r"""Sets the include_tenant_rule_set of this ListStrategyRequest.
 
         是否包含租户级规则
 
@@ -176,7 +176,7 @@ class ListStrategyRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListStrategyRequest.
+        r"""Gets the name of this ListStrategyRequest.
 
         策略名称，用于模糊查询
 
@@ -187,7 +187,7 @@ class ListStrategyRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListStrategyRequest.
+        r"""Sets the name of this ListStrategyRequest.
 
         策略名称，用于模糊查询
 
@@ -198,7 +198,7 @@ class ListStrategyRequest:
 
     @property
     def is_valid(self):
-        """Gets the is_valid of this ListStrategyRequest.
+        r"""Gets the is_valid of this ListStrategyRequest.
 
         是否有效
 
@@ -209,7 +209,7 @@ class ListStrategyRequest:
 
     @is_valid.setter
     def is_valid(self, is_valid):
-        """Sets the is_valid of this ListStrategyRequest.
+        r"""Sets the is_valid of this ListStrategyRequest.
 
         是否有效
 
@@ -220,7 +220,7 @@ class ListStrategyRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListStrategyRequest.
+        r"""Gets the type of this ListStrategyRequest.
 
         策略类型
 
@@ -231,7 +231,7 @@ class ListStrategyRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListStrategyRequest.
+        r"""Sets the type of this ListStrategyRequest.
 
         策略类型
 
@@ -242,7 +242,7 @@ class ListStrategyRequest:
 
     @property
     def cloud_project_id(self):
-        """Gets the cloud_project_id of this ListStrategyRequest.
+        r"""Gets the cloud_project_id of this ListStrategyRequest.
 
         项目ID
 
@@ -253,7 +253,7 @@ class ListStrategyRequest:
 
     @cloud_project_id.setter
     def cloud_project_id(self, cloud_project_id):
-        """Sets the cloud_project_id of this ListStrategyRequest.
+        r"""Sets the cloud_project_id of this ListStrategyRequest.
 
         项目ID
 

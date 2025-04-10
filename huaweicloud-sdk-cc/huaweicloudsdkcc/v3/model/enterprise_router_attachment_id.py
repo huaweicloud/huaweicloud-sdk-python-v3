@@ -25,7 +25,7 @@ class EnterpriseRouterAttachmentId:
     }
 
     def __init__(self, enterprise_router_attachment_id=None):
-        """EnterpriseRouterAttachmentId
+        r"""EnterpriseRouterAttachmentId
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EnterpriseRouterAttachmentId:
 
     @property
     def enterprise_router_attachment_id(self):
-        """Gets the enterprise_router_attachment_id of this EnterpriseRouterAttachmentId.
+        r"""Gets the enterprise_router_attachment_id of this EnterpriseRouterAttachmentId.
 
         企业路由器的连接ID。
 
@@ -54,7 +54,7 @@ class EnterpriseRouterAttachmentId:
 
     @enterprise_router_attachment_id.setter
     def enterprise_router_attachment_id(self, enterprise_router_attachment_id):
-        """Sets the enterprise_router_attachment_id of this EnterpriseRouterAttachmentId.
+        r"""Sets the enterprise_router_attachment_id of this EnterpriseRouterAttachmentId.
 
         企业路由器的连接ID。
 

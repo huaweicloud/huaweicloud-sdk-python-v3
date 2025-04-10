@@ -33,7 +33,7 @@ class CreateP2PSiteNetwork:
     }
 
     def __init__(self, name=None, description=None, tags=None, enterprise_project_id=None, sites=None):
-        """CreateP2PSiteNetwork
+        r"""CreateP2PSiteNetwork
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateP2PSiteNetwork:
 
     @property
     def name(self):
-        """Gets the name of this CreateP2PSiteNetwork.
+        r"""Gets the name of this CreateP2PSiteNetwork.
 
         实例名字。
 
@@ -80,7 +80,7 @@ class CreateP2PSiteNetwork:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateP2PSiteNetwork.
+        r"""Sets the name of this CreateP2PSiteNetwork.
 
         实例名字。
 
@@ -91,7 +91,7 @@ class CreateP2PSiteNetwork:
 
     @property
     def description(self):
-        """Gets the description of this CreateP2PSiteNetwork.
+        r"""Gets the description of this CreateP2PSiteNetwork.
 
         实例描述。不支持 <>。
 
@@ -102,7 +102,7 @@ class CreateP2PSiteNetwork:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateP2PSiteNetwork.
+        r"""Sets the description of this CreateP2PSiteNetwork.
 
         实例描述。不支持 <>。
 
@@ -113,7 +113,7 @@ class CreateP2PSiteNetwork:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateP2PSiteNetwork.
+        r"""Gets the tags of this CreateP2PSiteNetwork.
 
         实例标签。
 
@@ -124,7 +124,7 @@ class CreateP2PSiteNetwork:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateP2PSiteNetwork.
+        r"""Sets the tags of this CreateP2PSiteNetwork.
 
         实例标签。
 
@@ -135,7 +135,7 @@ class CreateP2PSiteNetwork:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateP2PSiteNetwork.
+        r"""Gets the enterprise_project_id of this CreateP2PSiteNetwork.
 
         实例所属企业项目ID。
 
@@ -146,7 +146,7 @@ class CreateP2PSiteNetwork:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateP2PSiteNetwork.
+        r"""Sets the enterprise_project_id of this CreateP2PSiteNetwork.
 
         实例所属企业项目ID。
 
@@ -157,7 +157,7 @@ class CreateP2PSiteNetwork:
 
     @property
     def sites(self):
-        """Gets the sites of this CreateP2PSiteNetwork.
+        r"""Gets the sites of this CreateP2PSiteNetwork.
 
         端到端(P2P)类型分支网络连接的两个端点定义，长度固定为2的数组。
 
@@ -168,7 +168,7 @@ class CreateP2PSiteNetwork:
 
     @sites.setter
     def sites(self, sites):
-        """Sets the sites of this CreateP2PSiteNetwork.
+        r"""Sets the sites of this CreateP2PSiteNetwork.
 
         端到端(P2P)类型分支网络连接的两个端点定义，长度固定为2的数组。
 

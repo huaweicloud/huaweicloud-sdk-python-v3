@@ -25,7 +25,7 @@ class UpdateOfflineCacheConfigsDTO:
     }
 
     def __init__(self, capacity=None):
-        """UpdateOfflineCacheConfigsDTO
+        r"""UpdateOfflineCacheConfigsDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateOfflineCacheConfigsDTO:
 
     @property
     def capacity(self):
-        """Gets the capacity of this UpdateOfflineCacheConfigsDTO.
+        r"""Gets the capacity of this UpdateOfflineCacheConfigsDTO.
 
         节点离线缓存容量，单位MB，默认2048，取值范围500-65536
 
@@ -54,7 +54,7 @@ class UpdateOfflineCacheConfigsDTO:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this UpdateOfflineCacheConfigsDTO.
+        r"""Sets the capacity of this UpdateOfflineCacheConfigsDTO.
 
         节点离线缓存容量，单位MB，默认2048，取值范围500-65536
 

@@ -27,7 +27,7 @@ class UpdateScalingGroupRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """UpdateScalingGroupRequest
+        r"""UpdateScalingGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateScalingGroupRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this UpdateScalingGroupRequest.
+        r"""Gets the scaling_group_id of this UpdateScalingGroupRequest.
 
         伸缩组ID
 
@@ -60,7 +60,7 @@ class UpdateScalingGroupRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this UpdateScalingGroupRequest.
+        r"""Sets the scaling_group_id of this UpdateScalingGroupRequest.
 
         伸缩组ID
 
@@ -71,7 +71,7 @@ class UpdateScalingGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateScalingGroupRequest.
+        r"""Gets the body of this UpdateScalingGroupRequest.
 
         :return: The body of this UpdateScalingGroupRequest.
         :rtype: :class:`huaweicloudsdkas.v1.UpdateScalingGroupOption`
@@ -80,7 +80,7 @@ class UpdateScalingGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateScalingGroupRequest.
+        r"""Sets the body of this UpdateScalingGroupRequest.
 
         :param body: The body of this UpdateScalingGroupRequest.
         :type body: :class:`huaweicloudsdkas.v1.UpdateScalingGroupOption`

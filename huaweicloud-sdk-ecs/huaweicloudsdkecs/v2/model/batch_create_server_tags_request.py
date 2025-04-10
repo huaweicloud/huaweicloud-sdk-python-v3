@@ -27,7 +27,7 @@ class BatchCreateServerTagsRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """BatchCreateServerTagsRequest
+        r"""BatchCreateServerTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateServerTagsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this BatchCreateServerTagsRequest.
+        r"""Gets the server_id of this BatchCreateServerTagsRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class BatchCreateServerTagsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this BatchCreateServerTagsRequest.
+        r"""Sets the server_id of this BatchCreateServerTagsRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class BatchCreateServerTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateServerTagsRequest.
+        r"""Gets the body of this BatchCreateServerTagsRequest.
 
         :return: The body of this BatchCreateServerTagsRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.BatchCreateServerTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateServerTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateServerTagsRequest.
+        r"""Sets the body of this BatchCreateServerTagsRequest.
 
         :param body: The body of this BatchCreateServerTagsRequest.
         :type body: :class:`huaweicloudsdkecs.v2.BatchCreateServerTagsRequestBody`

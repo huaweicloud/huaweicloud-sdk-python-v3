@@ -43,7 +43,7 @@ class ApiAuthRelations:
     }
 
     def __init__(self, api_id=None, auth_result=None, auth_time=None, id=None, app_id=None, auth_role=None, auth_tunnel=None, auth_whitelist=None, auth_blacklist=None, visit_params=None):
-        """ApiAuthRelations
+        r"""ApiAuthRelations
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ApiAuthRelations:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ApiAuthRelations.
+        r"""Gets the api_id of this ApiAuthRelations.
 
         API编号
 
@@ -117,7 +117,7 @@ class ApiAuthRelations:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ApiAuthRelations.
+        r"""Sets the api_id of this ApiAuthRelations.
 
         API编号
 
@@ -128,7 +128,7 @@ class ApiAuthRelations:
 
     @property
     def auth_result(self):
-        """Gets the auth_result of this ApiAuthRelations.
+        r"""Gets the auth_result of this ApiAuthRelations.
 
         :return: The auth_result of this ApiAuthRelations.
         :rtype: :class:`huaweicloudsdkroma.v2.AuthResult`
@@ -137,7 +137,7 @@ class ApiAuthRelations:
 
     @auth_result.setter
     def auth_result(self, auth_result):
-        """Sets the auth_result of this ApiAuthRelations.
+        r"""Sets the auth_result of this ApiAuthRelations.
 
         :param auth_result: The auth_result of this ApiAuthRelations.
         :type auth_result: :class:`huaweicloudsdkroma.v2.AuthResult`
@@ -146,7 +146,7 @@ class ApiAuthRelations:
 
     @property
     def auth_time(self):
-        """Gets the auth_time of this ApiAuthRelations.
+        r"""Gets the auth_time of this ApiAuthRelations.
 
         授权时间
 
@@ -157,7 +157,7 @@ class ApiAuthRelations:
 
     @auth_time.setter
     def auth_time(self, auth_time):
-        """Sets the auth_time of this ApiAuthRelations.
+        r"""Sets the auth_time of this ApiAuthRelations.
 
         授权时间
 
@@ -168,7 +168,7 @@ class ApiAuthRelations:
 
     @property
     def id(self):
-        """Gets the id of this ApiAuthRelations.
+        r"""Gets the id of this ApiAuthRelations.
 
         授权关系编号
 
@@ -179,7 +179,7 @@ class ApiAuthRelations:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiAuthRelations.
+        r"""Sets the id of this ApiAuthRelations.
 
         授权关系编号
 
@@ -190,7 +190,7 @@ class ApiAuthRelations:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ApiAuthRelations.
+        r"""Gets the app_id of this ApiAuthRelations.
 
         APP编号
 
@@ -201,7 +201,7 @@ class ApiAuthRelations:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ApiAuthRelations.
+        r"""Sets the app_id of this ApiAuthRelations.
 
         APP编号
 
@@ -212,7 +212,7 @@ class ApiAuthRelations:
 
     @property
     def auth_role(self):
-        """Gets the auth_role of this ApiAuthRelations.
+        r"""Gets the auth_role of this ApiAuthRelations.
 
         授权者 - PROVIDER：API提供者授权 - CONSUMER：API消费者授权
 
@@ -223,7 +223,7 @@ class ApiAuthRelations:
 
     @auth_role.setter
     def auth_role(self, auth_role):
-        """Sets the auth_role of this ApiAuthRelations.
+        r"""Sets the auth_role of this ApiAuthRelations.
 
         授权者 - PROVIDER：API提供者授权 - CONSUMER：API消费者授权
 
@@ -234,7 +234,7 @@ class ApiAuthRelations:
 
     @property
     def auth_tunnel(self):
-        """Gets the auth_tunnel of this ApiAuthRelations.
+        r"""Gets the auth_tunnel of this ApiAuthRelations.
 
         授权通道类型： - GREEN：绿色通道 - NORMAL：非绿色通道  此字段不填默认为不使用绿色通道
 
@@ -245,7 +245,7 @@ class ApiAuthRelations:
 
     @auth_tunnel.setter
     def auth_tunnel(self, auth_tunnel):
-        """Sets the auth_tunnel of this ApiAuthRelations.
+        r"""Sets the auth_tunnel of this ApiAuthRelations.
 
         授权通道类型： - GREEN：绿色通道 - NORMAL：非绿色通道  此字段不填默认为不使用绿色通道
 
@@ -256,7 +256,7 @@ class ApiAuthRelations:
 
     @property
     def auth_whitelist(self):
-        """Gets the auth_whitelist of this ApiAuthRelations.
+        r"""Gets the auth_whitelist of this ApiAuthRelations.
 
         绿色通道授权白名单。  允许白名单中的IP不使用认证信息访问
 
@@ -267,7 +267,7 @@ class ApiAuthRelations:
 
     @auth_whitelist.setter
     def auth_whitelist(self, auth_whitelist):
-        """Sets the auth_whitelist of this ApiAuthRelations.
+        r"""Sets the auth_whitelist of this ApiAuthRelations.
 
         绿色通道授权白名单。  允许白名单中的IP不使用认证信息访问
 
@@ -278,7 +278,7 @@ class ApiAuthRelations:
 
     @property
     def auth_blacklist(self):
-        """Gets the auth_blacklist of this ApiAuthRelations.
+        r"""Gets the auth_blacklist of this ApiAuthRelations.
 
         绿色通道授权黑名单
 
@@ -289,7 +289,7 @@ class ApiAuthRelations:
 
     @auth_blacklist.setter
     def auth_blacklist(self, auth_blacklist):
-        """Sets the auth_blacklist of this ApiAuthRelations.
+        r"""Sets the auth_blacklist of this ApiAuthRelations.
 
         绿色通道授权黑名单
 
@@ -300,7 +300,7 @@ class ApiAuthRelations:
 
     @property
     def visit_params(self):
-        """Gets the visit_params of this ApiAuthRelations.
+        r"""Gets the visit_params of this ApiAuthRelations.
 
         访问参数。
 
@@ -311,7 +311,7 @@ class ApiAuthRelations:
 
     @visit_params.setter
     def visit_params(self, visit_params):
-        """Sets the visit_params of this ApiAuthRelations.
+        r"""Sets the visit_params of this ApiAuthRelations.
 
         访问参数。
 

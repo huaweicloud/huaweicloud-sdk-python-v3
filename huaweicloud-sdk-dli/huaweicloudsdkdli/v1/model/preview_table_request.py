@@ -29,7 +29,7 @@ class PreviewTableRequest:
     }
 
     def __init__(self, database_name=None, table_name=None, mode=None):
-        """PreviewTableRequest
+        r"""PreviewTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class PreviewTableRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this PreviewTableRequest.
+        r"""Gets the database_name of this PreviewTableRequest.
 
         待预览的表所在的数据库名称。
 
@@ -66,7 +66,7 @@ class PreviewTableRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this PreviewTableRequest.
+        r"""Sets the database_name of this PreviewTableRequest.
 
         待预览的表所在的数据库名称。
 
@@ -77,7 +77,7 @@ class PreviewTableRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this PreviewTableRequest.
+        r"""Gets the table_name of this PreviewTableRequest.
 
         待预览的表名称。
 
@@ -88,7 +88,7 @@ class PreviewTableRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this PreviewTableRequest.
+        r"""Sets the table_name of this PreviewTableRequest.
 
         待预览的表名称。
 
@@ -99,7 +99,7 @@ class PreviewTableRequest:
 
     @property
     def mode(self):
-        """Gets the mode of this PreviewTableRequest.
+        r"""Gets the mode of this PreviewTableRequest.
 
         预览表的模式，取值为““SYNC””或者““ASYNC””默认值为：“SYNC”。
 
@@ -110,7 +110,7 @@ class PreviewTableRequest:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this PreviewTableRequest.
+        r"""Sets the mode of this PreviewTableRequest.
 
         预览表的模式，取值为““SYNC””或者““ASYNC””默认值为：“SYNC”。
 

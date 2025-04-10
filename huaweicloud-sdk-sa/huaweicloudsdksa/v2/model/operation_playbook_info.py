@@ -25,7 +25,7 @@ class OperationPlaybookInfo:
     }
 
     def __init__(self, operation=None):
-        """OperationPlaybookInfo
+        r"""OperationPlaybookInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class OperationPlaybookInfo:
 
     @property
     def operation(self):
-        """Gets the operation of this OperationPlaybookInfo.
+        r"""Gets the operation of this OperationPlaybookInfo.
 
         重试： RETRY  终止： TERMINATE
 
@@ -54,7 +54,7 @@ class OperationPlaybookInfo:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this OperationPlaybookInfo.
+        r"""Sets the operation of this OperationPlaybookInfo.
 
         重试： RETRY  终止： TERMINATE
 

@@ -27,7 +27,7 @@ class ReviewerInfo:
     }
 
     def __init__(self, reviewer_name=None, reviewer_id=None):
-        """ReviewerInfo
+        r"""ReviewerInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ReviewerInfo:
 
     @property
     def reviewer_name(self):
-        """Gets the reviewer_name of this ReviewerInfo.
+        r"""Gets the reviewer_name of this ReviewerInfo.
 
         审批人名称（IAM用户名）
 
@@ -59,7 +59,7 @@ class ReviewerInfo:
 
     @reviewer_name.setter
     def reviewer_name(self, reviewer_name):
-        """Sets the reviewer_name of this ReviewerInfo.
+        r"""Sets the reviewer_name of this ReviewerInfo.
 
         审批人名称（IAM用户名）
 
@@ -70,7 +70,7 @@ class ReviewerInfo:
 
     @property
     def reviewer_id(self):
-        """Gets the reviewer_id of this ReviewerInfo.
+        r"""Gets the reviewer_id of this ReviewerInfo.
 
         审批人ID（IAM用户Id）
 
@@ -81,7 +81,7 @@ class ReviewerInfo:
 
     @reviewer_id.setter
     def reviewer_id(self, reviewer_id):
-        """Sets the reviewer_id of this ReviewerInfo.
+        r"""Sets the reviewer_id of this ReviewerInfo.
 
         审批人ID（IAM用户Id）
 

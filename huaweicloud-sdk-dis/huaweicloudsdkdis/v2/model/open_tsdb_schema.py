@@ -31,7 +31,7 @@ class OpenTSDBSchema:
     }
 
     def __init__(self, metric=None, timestamp=None, value=None, tags=None):
-        """OpenTSDBSchema
+        r"""OpenTSDBSchema
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class OpenTSDBSchema:
 
     @property
     def metric(self):
-        """Gets the metric of this OpenTSDBSchema.
+        r"""Gets the metric of this OpenTSDBSchema.
 
         CloudTable集群OpenTSDB数据metric的Schema配置，用于将通道内的JSON数据进行格式转换生成OpenTSDB数据的metric。
 
@@ -71,7 +71,7 @@ class OpenTSDBSchema:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this OpenTSDBSchema.
+        r"""Sets the metric of this OpenTSDBSchema.
 
         CloudTable集群OpenTSDB数据metric的Schema配置，用于将通道内的JSON数据进行格式转换生成OpenTSDB数据的metric。
 
@@ -82,7 +82,7 @@ class OpenTSDBSchema:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this OpenTSDBSchema.
+        r"""Gets the timestamp of this OpenTSDBSchema.
 
         :return: The timestamp of this OpenTSDBSchema.
         :rtype: :class:`huaweicloudsdkdis.v2.OpenTSDBTimestamp`
@@ -91,7 +91,7 @@ class OpenTSDBSchema:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this OpenTSDBSchema.
+        r"""Sets the timestamp of this OpenTSDBSchema.
 
         :param timestamp: The timestamp of this OpenTSDBSchema.
         :type timestamp: :class:`huaweicloudsdkdis.v2.OpenTSDBTimestamp`
@@ -100,7 +100,7 @@ class OpenTSDBSchema:
 
     @property
     def value(self):
-        """Gets the value of this OpenTSDBSchema.
+        r"""Gets the value of this OpenTSDBSchema.
 
         :return: The value of this OpenTSDBSchema.
         :rtype: :class:`huaweicloudsdkdis.v2.OpenTSDBValue`
@@ -109,7 +109,7 @@ class OpenTSDBSchema:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this OpenTSDBSchema.
+        r"""Sets the value of this OpenTSDBSchema.
 
         :param value: The value of this OpenTSDBSchema.
         :type value: :class:`huaweicloudsdkdis.v2.OpenTSDBValue`
@@ -118,7 +118,7 @@ class OpenTSDBSchema:
 
     @property
     def tags(self):
-        """Gets the tags of this OpenTSDBSchema.
+        r"""Gets the tags of this OpenTSDBSchema.
 
         CloudTable集群OpenTSDB数据tags的Schema配置，用于将通道内的JSON数据进行格式转换生成OpenTSDB数据的tags。
 
@@ -129,7 +129,7 @@ class OpenTSDBSchema:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this OpenTSDBSchema.
+        r"""Sets the tags of this OpenTSDBSchema.
 
         CloudTable集群OpenTSDB数据tags的Schema配置，用于将通道内的JSON数据进行格式转换生成OpenTSDB数据的tags。
 

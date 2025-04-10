@@ -27,7 +27,7 @@ class RdsDbRequestDatabases:
     }
 
     def __init__(self, id=None, type=None):
-        """RdsDbRequestDatabases
+        r"""RdsDbRequestDatabases
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RdsDbRequestDatabases:
 
     @property
     def id(self):
-        """Gets the id of this RdsDbRequestDatabases.
+        r"""Gets the id of this RdsDbRequestDatabases.
 
         rds数据库id，可在查询rds数据库列表接口的ID字段获取。
 
@@ -59,7 +59,7 @@ class RdsDbRequestDatabases:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RdsDbRequestDatabases.
+        r"""Sets the id of this RdsDbRequestDatabases.
 
         rds数据库id，可在查询rds数据库列表接口的ID字段获取。
 
@@ -70,7 +70,7 @@ class RdsDbRequestDatabases:
 
     @property
     def type(self):
-        """Gets the type of this RdsDbRequestDatabases.
+        r"""Gets the type of this RdsDbRequestDatabases.
 
         数据库类型 - MYSQL - POSTGRESQL - SQLSERVER - TAURUS - DWS - MARIADB - GAUSSDBOPENGAUSS
 
@@ -81,7 +81,7 @@ class RdsDbRequestDatabases:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RdsDbRequestDatabases.
+        r"""Sets the type of this RdsDbRequestDatabases.
 
         数据库类型 - MYSQL - POSTGRESQL - SQLSERVER - TAURUS - DWS - MARIADB - GAUSSDBOPENGAUSS
 

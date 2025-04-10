@@ -30,7 +30,7 @@ class RecognizeFlashAsrResponse(SdkResponse):
     }
 
     def __init__(self, trace_id=None, audio_duration=None, flash_result=None):
-        """RecognizeFlashAsrResponse
+        r"""RecognizeFlashAsrResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RecognizeFlashAsrResponse(SdkResponse):
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this RecognizeFlashAsrResponse.
+        r"""Gets the trace_id of this RecognizeFlashAsrResponse.
 
         服务内部的令牌，可用于在日志中追溯具体调用流程
 
@@ -69,7 +69,7 @@ class RecognizeFlashAsrResponse(SdkResponse):
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this RecognizeFlashAsrResponse.
+        r"""Sets the trace_id of this RecognizeFlashAsrResponse.
 
         服务内部的令牌，可用于在日志中追溯具体调用流程
 
@@ -80,7 +80,7 @@ class RecognizeFlashAsrResponse(SdkResponse):
 
     @property
     def audio_duration(self):
-        """Gets the audio_duration of this RecognizeFlashAsrResponse.
+        r"""Gets the audio_duration of this RecognizeFlashAsrResponse.
 
         音频时长
 
@@ -91,7 +91,7 @@ class RecognizeFlashAsrResponse(SdkResponse):
 
     @audio_duration.setter
     def audio_duration(self, audio_duration):
-        """Sets the audio_duration of this RecognizeFlashAsrResponse.
+        r"""Sets the audio_duration of this RecognizeFlashAsrResponse.
 
         音频时长
 
@@ -102,7 +102,7 @@ class RecognizeFlashAsrResponse(SdkResponse):
 
     @property
     def flash_result(self):
-        """Gets the flash_result of this RecognizeFlashAsrResponse.
+        r"""Gets the flash_result of this RecognizeFlashAsrResponse.
 
         识别结果
 
@@ -113,7 +113,7 @@ class RecognizeFlashAsrResponse(SdkResponse):
 
     @flash_result.setter
     def flash_result(self, flash_result):
-        """Sets the flash_result of this RecognizeFlashAsrResponse.
+        r"""Sets the flash_result of this RecognizeFlashAsrResponse.
 
         识别结果
 

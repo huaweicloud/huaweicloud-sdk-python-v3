@@ -27,7 +27,7 @@ class StartInstanceResizeCheckJobRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """StartInstanceResizeCheckJobRequest
+        r"""StartInstanceResizeCheckJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartInstanceResizeCheckJobRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StartInstanceResizeCheckJobRequest.
+        r"""Gets the instance_id of this StartInstanceResizeCheckJobRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class StartInstanceResizeCheckJobRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StartInstanceResizeCheckJobRequest.
+        r"""Sets the instance_id of this StartInstanceResizeCheckJobRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class StartInstanceResizeCheckJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartInstanceResizeCheckJobRequest.
+        r"""Gets the body of this StartInstanceResizeCheckJobRequest.
 
         :return: The body of this StartInstanceResizeCheckJobRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.StartInstanceResizeCheckJobRequestBody`
@@ -80,7 +80,7 @@ class StartInstanceResizeCheckJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartInstanceResizeCheckJobRequest.
+        r"""Sets the body of this StartInstanceResizeCheckJobRequest.
 
         :param body: The body of this StartInstanceResizeCheckJobRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.StartInstanceResizeCheckJobRequestBody`

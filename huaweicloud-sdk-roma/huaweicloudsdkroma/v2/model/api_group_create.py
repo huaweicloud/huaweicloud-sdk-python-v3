@@ -31,7 +31,7 @@ class ApiGroupCreate:
     }
 
     def __init__(self, name=None, remark=None, roma_app_id=None, version=None):
-        """ApiGroupCreate
+        r"""ApiGroupCreate
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ApiGroupCreate:
 
     @property
     def name(self):
-        """Gets the name of this ApiGroupCreate.
+        r"""Gets the name of this ApiGroupCreate.
 
         API分组的名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -74,7 +74,7 @@ class ApiGroupCreate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiGroupCreate.
+        r"""Sets the name of this ApiGroupCreate.
 
         API分组的名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头，3-255个字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -85,7 +85,7 @@ class ApiGroupCreate:
 
     @property
     def remark(self):
-        """Gets the remark of this ApiGroupCreate.
+        r"""Gets the remark of this ApiGroupCreate.
 
         API分组描述。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -96,7 +96,7 @@ class ApiGroupCreate:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ApiGroupCreate.
+        r"""Sets the remark of this ApiGroupCreate.
 
         API分组描述。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -107,7 +107,7 @@ class ApiGroupCreate:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this ApiGroupCreate.
+        r"""Gets the roma_app_id of this ApiGroupCreate.
 
         分组归属的集成应用编号。  分组版本V2时必填。
 
@@ -118,7 +118,7 @@ class ApiGroupCreate:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this ApiGroupCreate.
+        r"""Sets the roma_app_id of this ApiGroupCreate.
 
         分组归属的集成应用编号。  分组版本V2时必填。
 
@@ -129,7 +129,7 @@ class ApiGroupCreate:
 
     @property
     def version(self):
-        """Gets the version of this ApiGroupCreate.
+        r"""Gets the version of this ApiGroupCreate.
 
         分组版本  - V1：全局分组 - V2：应用级分组
 
@@ -140,7 +140,7 @@ class ApiGroupCreate:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApiGroupCreate.
+        r"""Sets the version of this ApiGroupCreate.
 
         分组版本  - V1：全局分组 - V2：应用级分组
 

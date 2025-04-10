@@ -25,7 +25,7 @@ class ShowConditionByIdResultData:
     }
 
     def __init__(self, value=None):
-        """ShowConditionByIdResultData
+        r"""ShowConditionByIdResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowConditionByIdResultData:
 
     @property
     def value(self):
-        """Gets the value of this ShowConditionByIdResultData.
+        r"""Gets the value of this ShowConditionByIdResultData.
 
         :return: The value of this ShowConditionByIdResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ConditionVO`
@@ -52,7 +52,7 @@ class ShowConditionByIdResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ShowConditionByIdResultData.
+        r"""Sets the value of this ShowConditionByIdResultData.
 
         :param value: The value of this ShowConditionByIdResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.ConditionVO`

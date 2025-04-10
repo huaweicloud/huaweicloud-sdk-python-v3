@@ -27,7 +27,7 @@ class RootVolume:
     }
 
     def __init__(self, size=None, volume_type=None):
-        """RootVolume
+        r"""RootVolume
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RootVolume:
 
     @property
     def size(self):
-        """Gets the size of this RootVolume.
+        r"""Gets the size of this RootVolume.
 
         系统盘大小，容量单位为GB，输入大小范围为[40,100]。
 
@@ -59,7 +59,7 @@ class RootVolume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this RootVolume.
+        r"""Sets the size of this RootVolume.
 
         系统盘大小，容量单位为GB，输入大小范围为[40,100]。
 
@@ -70,7 +70,7 @@ class RootVolume:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this RootVolume.
+        r"""Gets the volume_type of this RootVolume.
 
         边缘实例系统盘对应的磁盘类型，需要与站点所提供的磁盘类型相匹配。
 
@@ -81,7 +81,7 @@ class RootVolume:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this RootVolume.
+        r"""Sets the volume_type of this RootVolume.
 
         边缘实例系统盘对应的磁盘类型，需要与站点所提供的磁盘类型相匹配。
 

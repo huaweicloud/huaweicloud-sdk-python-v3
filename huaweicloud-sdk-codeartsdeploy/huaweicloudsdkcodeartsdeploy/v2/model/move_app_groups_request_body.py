@@ -27,7 +27,7 @@ class MoveAppGroupsRequestBody:
     }
 
     def __init__(self, id=None, movement=None):
-        """MoveAppGroupsRequestBody
+        r"""MoveAppGroupsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MoveAppGroupsRequestBody:
 
     @property
     def id(self):
-        """Gets the id of this MoveAppGroupsRequestBody.
+        r"""Gets the id of this MoveAppGroupsRequestBody.
 
         分组id
 
@@ -59,7 +59,7 @@ class MoveAppGroupsRequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MoveAppGroupsRequestBody.
+        r"""Sets the id of this MoveAppGroupsRequestBody.
 
         分组id
 
@@ -70,7 +70,7 @@ class MoveAppGroupsRequestBody:
 
     @property
     def movement(self):
-        """Gets the movement of this MoveAppGroupsRequestBody.
+        r"""Gets the movement of this MoveAppGroupsRequestBody.
 
         移动方向，1为上移，-1为下移
 
@@ -81,7 +81,7 @@ class MoveAppGroupsRequestBody:
 
     @movement.setter
     def movement(self, movement):
-        """Sets the movement of this MoveAppGroupsRequestBody.
+        r"""Sets the movement of this MoveAppGroupsRequestBody.
 
         移动方向，1为上移，-1为下移
 

@@ -27,7 +27,7 @@ class DeleteSecretRequest:
     }
 
     def __init__(self, secret_id=None, x_enterprise_project_id=None):
-        """DeleteSecretRequest
+        r"""DeleteSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteSecretRequest:
 
     @property
     def secret_id(self):
-        """Gets the secret_id of this DeleteSecretRequest.
+        r"""Gets the secret_id of this DeleteSecretRequest.
 
         凭据ID。
 
@@ -60,7 +60,7 @@ class DeleteSecretRequest:
 
     @secret_id.setter
     def secret_id(self, secret_id):
-        """Sets the secret_id of this DeleteSecretRequest.
+        r"""Sets the secret_id of this DeleteSecretRequest.
 
         凭据ID。
 
@@ -71,7 +71,7 @@ class DeleteSecretRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this DeleteSecretRequest.
+        r"""Gets the x_enterprise_project_id of this DeleteSecretRequest.
 
         企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
 
@@ -82,7 +82,7 @@ class DeleteSecretRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this DeleteSecretRequest.
+        r"""Sets the x_enterprise_project_id of this DeleteSecretRequest.
 
         企业项目ID。  - 创建环境时，环境会绑定企业项目ID。      - 最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。     - 该字段不传（或传为字符串“0”）时，则查询默认企业项目下的资源。  > 关于企业项目ID的获取及企业项目特性的详细信息，请参见《[企业管理服务用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)》。
 

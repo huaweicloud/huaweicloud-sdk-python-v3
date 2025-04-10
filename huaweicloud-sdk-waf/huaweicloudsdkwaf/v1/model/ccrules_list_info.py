@@ -71,7 +71,7 @@ class CcrulesListInfo:
     }
 
     def __init__(self, name=None, id=None, policyid=None, url=None, prefix=None, mode=None, status=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None, total_num=None, unaggregation=None, aging_time=None, producer=None, timestamp=None):
-        """CcrulesListInfo
+        r"""CcrulesListInfo
 
         The model defined in huaweicloud sdk
 
@@ -204,7 +204,7 @@ class CcrulesListInfo:
 
     @property
     def name(self):
-        """Gets the name of this CcrulesListInfo.
+        r"""Gets the name of this CcrulesListInfo.
 
         规则名称
 
@@ -215,7 +215,7 @@ class CcrulesListInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CcrulesListInfo.
+        r"""Sets the name of this CcrulesListInfo.
 
         规则名称
 
@@ -226,7 +226,7 @@ class CcrulesListInfo:
 
     @property
     def id(self):
-        """Gets the id of this CcrulesListInfo.
+        r"""Gets the id of this CcrulesListInfo.
 
         Rule ID.
 
@@ -237,7 +237,7 @@ class CcrulesListInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CcrulesListInfo.
+        r"""Sets the id of this CcrulesListInfo.
 
         Rule ID.
 
@@ -248,7 +248,7 @@ class CcrulesListInfo:
 
     @property
     def policyid(self):
-        """Gets the policyid of this CcrulesListInfo.
+        r"""Gets the policyid of this CcrulesListInfo.
 
         Policy ID.
 
@@ -259,7 +259,7 @@ class CcrulesListInfo:
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this CcrulesListInfo.
+        r"""Sets the policyid of this CcrulesListInfo.
 
         Policy ID.
 
@@ -270,7 +270,7 @@ class CcrulesListInfo:
 
     @property
     def url(self):
-        """Gets the url of this CcrulesListInfo.
+        r"""Gets the url of this CcrulesListInfo.
 
         当mode值为0时，该参数有返回值。规则应用的URL链接，不包含域名。
 
@@ -281,7 +281,7 @@ class CcrulesListInfo:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CcrulesListInfo.
+        r"""Sets the url of this CcrulesListInfo.
 
         当mode值为0时，该参数有返回值。规则应用的URL链接，不包含域名。
 
@@ -292,7 +292,7 @@ class CcrulesListInfo:
 
     @property
     def prefix(self):
-        """Gets the prefix of this CcrulesListInfo.
+        r"""Gets the prefix of this CcrulesListInfo.
 
         路径是否为前缀模式，当防护url以*结束，则为前缀模式。当mode值为0时，该参数有返回值。
 
@@ -303,7 +303,7 @@ class CcrulesListInfo:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this CcrulesListInfo.
+        r"""Sets the prefix of this CcrulesListInfo.
 
         路径是否为前缀模式，当防护url以*结束，则为前缀模式。当mode值为0时，该参数有返回值。
 
@@ -314,7 +314,7 @@ class CcrulesListInfo:
 
     @property
     def mode(self):
-        """Gets the mode of this CcrulesListInfo.
+        r"""Gets the mode of this CcrulesListInfo.
 
         cc规则防护模式，对应console上的mode，现在只支持创建高级cc规则防护模式。   - 0：标准，只支持对域名的防护路径做限制。  - 1：高级，支持对路径、IP、Cookie、Header、Params字段做限制。
 
@@ -325,7 +325,7 @@ class CcrulesListInfo:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CcrulesListInfo.
+        r"""Sets the mode of this CcrulesListInfo.
 
         cc规则防护模式，对应console上的mode，现在只支持创建高级cc规则防护模式。   - 0：标准，只支持对域名的防护路径做限制。  - 1：高级，支持对路径、IP、Cookie、Header、Params字段做限制。
 
@@ -336,7 +336,7 @@ class CcrulesListInfo:
 
     @property
     def status(self):
-        """Gets the status of this CcrulesListInfo.
+        r"""Gets the status of this CcrulesListInfo.
 
         规则状态，0：关闭，1：开启
 
@@ -347,7 +347,7 @@ class CcrulesListInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CcrulesListInfo.
+        r"""Sets the status of this CcrulesListInfo.
 
         规则状态，0：关闭，1：开启
 
@@ -358,7 +358,7 @@ class CcrulesListInfo:
 
     @property
     def conditions(self):
-        """Gets the conditions of this CcrulesListInfo.
+        r"""Gets the conditions of this CcrulesListInfo.
 
         cc规则防护规则限速条件，当cc防护规则为高级模式（mode参数值为1）时，该参数必填。
 
@@ -369,7 +369,7 @@ class CcrulesListInfo:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this CcrulesListInfo.
+        r"""Sets the conditions of this CcrulesListInfo.
 
         cc规则防护规则限速条件，当cc防护规则为高级模式（mode参数值为1）时，该参数必填。
 
@@ -380,7 +380,7 @@ class CcrulesListInfo:
 
     @property
     def action(self):
-        """Gets the action of this CcrulesListInfo.
+        r"""Gets the action of this CcrulesListInfo.
 
         :return: The action of this CcrulesListInfo.
         :rtype: :class:`huaweicloudsdkwaf.v1.CcrulesListInfoAction`
@@ -389,7 +389,7 @@ class CcrulesListInfo:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CcrulesListInfo.
+        r"""Sets the action of this CcrulesListInfo.
 
         :param action: The action of this CcrulesListInfo.
         :type action: :class:`huaweicloudsdkwaf.v1.CcrulesListInfoAction`
@@ -398,7 +398,7 @@ class CcrulesListInfo:
 
     @property
     def tag_type(self):
-        """Gets the tag_type of this CcrulesListInfo.
+        r"""Gets the tag_type of this CcrulesListInfo.
 
         限速模式：   - ip：IP限速，根据IP区分单个Web访问者。   - cookie：用户限速，根据Cookie键值区分单个Web访问者。   - header：用户限速，根据Header区分单个Web访问者。   - other：根据Referer（自定义请求访问的来源）字段区分单个Web访问者。   - policy: 策略限速   - domain: 域名限速     - url: url限速
 
@@ -409,7 +409,7 @@ class CcrulesListInfo:
 
     @tag_type.setter
     def tag_type(self, tag_type):
-        """Sets the tag_type of this CcrulesListInfo.
+        r"""Sets the tag_type of this CcrulesListInfo.
 
         限速模式：   - ip：IP限速，根据IP区分单个Web访问者。   - cookie：用户限速，根据Cookie键值区分单个Web访问者。   - header：用户限速，根据Header区分单个Web访问者。   - other：根据Referer（自定义请求访问的来源）字段区分单个Web访问者。   - policy: 策略限速   - domain: 域名限速     - url: url限速
 
@@ -420,7 +420,7 @@ class CcrulesListInfo:
 
     @property
     def tag_index(self):
-        """Gets the tag_index of this CcrulesListInfo.
+        r"""Gets the tag_index of this CcrulesListInfo.
 
         用户标识，当限速模式为用户限速(cookie或header)时，需要传该参数。   - 选择cookie时，设置cookie字段名，即用户需要根据网站实际情况配置唯一可识别Web访问者的cookie中的某属性变量名。用户标识的cookie，不支持正则，必须完全匹配。例如：如果网站使用cookie中的某个字段name唯一标识用户，那么可以选取name字段来区分Web访问者。   - 选择header时，设置需要防护的自定义HTTP首部，即用户需要根据网站实际情况配置可识别Web访问者的HTTP首部。
 
@@ -431,7 +431,7 @@ class CcrulesListInfo:
 
     @tag_index.setter
     def tag_index(self, tag_index):
-        """Sets the tag_index of this CcrulesListInfo.
+        r"""Sets the tag_index of this CcrulesListInfo.
 
         用户标识，当限速模式为用户限速(cookie或header)时，需要传该参数。   - 选择cookie时，设置cookie字段名，即用户需要根据网站实际情况配置唯一可识别Web访问者的cookie中的某属性变量名。用户标识的cookie，不支持正则，必须完全匹配。例如：如果网站使用cookie中的某个字段name唯一标识用户，那么可以选取name字段来区分Web访问者。   - 选择header时，设置需要防护的自定义HTTP首部，即用户需要根据网站实际情况配置可识别Web访问者的HTTP首部。
 
@@ -442,7 +442,7 @@ class CcrulesListInfo:
 
     @property
     def tag_condition(self):
-        """Gets the tag_condition of this CcrulesListInfo.
+        r"""Gets the tag_condition of this CcrulesListInfo.
 
         :return: The tag_condition of this CcrulesListInfo.
         :rtype: :class:`huaweicloudsdkwaf.v1.CcrulesListInfoTagCondition`
@@ -451,7 +451,7 @@ class CcrulesListInfo:
 
     @tag_condition.setter
     def tag_condition(self, tag_condition):
-        """Sets the tag_condition of this CcrulesListInfo.
+        r"""Sets the tag_condition of this CcrulesListInfo.
 
         :param tag_condition: The tag_condition of this CcrulesListInfo.
         :type tag_condition: :class:`huaweicloudsdkwaf.v1.CcrulesListInfoTagCondition`
@@ -460,7 +460,7 @@ class CcrulesListInfo:
 
     @property
     def limit_num(self):
-        """Gets the limit_num of this CcrulesListInfo.
+        r"""Gets the limit_num of this CcrulesListInfo.
 
         限制频率，单位为次，范围为1~2147483647
 
@@ -471,7 +471,7 @@ class CcrulesListInfo:
 
     @limit_num.setter
     def limit_num(self, limit_num):
-        """Sets the limit_num of this CcrulesListInfo.
+        r"""Sets the limit_num of this CcrulesListInfo.
 
         限制频率，单位为次，范围为1~2147483647
 
@@ -482,7 +482,7 @@ class CcrulesListInfo:
 
     @property
     def limit_period(self):
-        """Gets the limit_period of this CcrulesListInfo.
+        r"""Gets the limit_period of this CcrulesListInfo.
 
         限速周期，单位为秒，范围1~3600
 
@@ -493,7 +493,7 @@ class CcrulesListInfo:
 
     @limit_period.setter
     def limit_period(self, limit_period):
-        """Sets the limit_period of this CcrulesListInfo.
+        r"""Sets the limit_period of this CcrulesListInfo.
 
         限速周期，单位为秒，范围1~3600
 
@@ -504,7 +504,7 @@ class CcrulesListInfo:
 
     @property
     def unlock_num(self):
-        """Gets the unlock_num of this CcrulesListInfo.
+        r"""Gets the unlock_num of this CcrulesListInfo.
 
         放行频率，单位为次，范围为0~2147483647。只有当防护动作类型为dynamic_block时，才需要传该参数。
 
@@ -515,7 +515,7 @@ class CcrulesListInfo:
 
     @unlock_num.setter
     def unlock_num(self, unlock_num):
-        """Sets the unlock_num of this CcrulesListInfo.
+        r"""Sets the unlock_num of this CcrulesListInfo.
 
         放行频率，单位为次，范围为0~2147483647。只有当防护动作类型为dynamic_block时，才需要传该参数。
 
@@ -526,7 +526,7 @@ class CcrulesListInfo:
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this CcrulesListInfo.
+        r"""Gets the lock_time of this CcrulesListInfo.
 
         阻断时间，单位为秒，范围为0~65535。当“防护动作”选择“阻断”时，可设置阻断后恢复正常访问页面的时间。
 
@@ -537,7 +537,7 @@ class CcrulesListInfo:
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this CcrulesListInfo.
+        r"""Sets the lock_time of this CcrulesListInfo.
 
         阻断时间，单位为秒，范围为0~65535。当“防护动作”选择“阻断”时，可设置阻断后恢复正常访问页面的时间。
 
@@ -548,7 +548,7 @@ class CcrulesListInfo:
 
     @property
     def domain_aggregation(self):
-        """Gets the domain_aggregation of this CcrulesListInfo.
+        r"""Gets the domain_aggregation of this CcrulesListInfo.
 
         是否开启域名聚合统计。
 
@@ -559,7 +559,7 @@ class CcrulesListInfo:
 
     @domain_aggregation.setter
     def domain_aggregation(self, domain_aggregation):
-        """Sets the domain_aggregation of this CcrulesListInfo.
+        r"""Sets the domain_aggregation of this CcrulesListInfo.
 
         是否开启域名聚合统计。
 
@@ -570,7 +570,7 @@ class CcrulesListInfo:
 
     @property
     def region_aggregation(self):
-        """Gets the region_aggregation of this CcrulesListInfo.
+        r"""Gets the region_aggregation of this CcrulesListInfo.
 
         是否开启全局计数。
 
@@ -581,7 +581,7 @@ class CcrulesListInfo:
 
     @region_aggregation.setter
     def region_aggregation(self, region_aggregation):
-        """Sets the region_aggregation of this CcrulesListInfo.
+        r"""Sets the region_aggregation of this CcrulesListInfo.
 
         是否开启全局计数。
 
@@ -592,7 +592,7 @@ class CcrulesListInfo:
 
     @property
     def description(self):
-        """Gets the description of this CcrulesListInfo.
+        r"""Gets the description of this CcrulesListInfo.
 
         规则描述
 
@@ -603,7 +603,7 @@ class CcrulesListInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CcrulesListInfo.
+        r"""Sets the description of this CcrulesListInfo.
 
         规则描述
 
@@ -614,7 +614,7 @@ class CcrulesListInfo:
 
     @property
     def total_num(self):
-        """Gets the total_num of this CcrulesListInfo.
+        r"""Gets the total_num of this CcrulesListInfo.
 
         该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -625,7 +625,7 @@ class CcrulesListInfo:
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this CcrulesListInfo.
+        r"""Sets the total_num of this CcrulesListInfo.
 
         该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -636,7 +636,7 @@ class CcrulesListInfo:
 
     @property
     def unaggregation(self):
-        """Gets the unaggregation of this CcrulesListInfo.
+        r"""Gets the unaggregation of this CcrulesListInfo.
 
         该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -647,7 +647,7 @@ class CcrulesListInfo:
 
     @unaggregation.setter
     def unaggregation(self, unaggregation):
-        """Sets the unaggregation of this CcrulesListInfo.
+        r"""Sets the unaggregation of this CcrulesListInfo.
 
         该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -658,7 +658,7 @@ class CcrulesListInfo:
 
     @property
     def aging_time(self):
-        """Gets the aging_time of this CcrulesListInfo.
+        r"""Gets the aging_time of this CcrulesListInfo.
 
         规则老化时间，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -669,7 +669,7 @@ class CcrulesListInfo:
 
     @aging_time.setter
     def aging_time(self, aging_time):
-        """Sets the aging_time of this CcrulesListInfo.
+        r"""Sets the aging_time of this CcrulesListInfo.
 
         规则老化时间，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -680,7 +680,7 @@ class CcrulesListInfo:
 
     @property
     def producer(self):
-        """Gets the producer of this CcrulesListInfo.
+        r"""Gets the producer of this CcrulesListInfo.
 
         规则创建对象，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -691,7 +691,7 @@ class CcrulesListInfo:
 
     @producer.setter
     def producer(self, producer):
-        """Sets the producer of this CcrulesListInfo.
+        r"""Sets the producer of this CcrulesListInfo.
 
         规则创建对象，该参数为预留参数，用于后续功能扩展，当前请用户忽略该参数
 
@@ -702,7 +702,7 @@ class CcrulesListInfo:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this CcrulesListInfo.
+        r"""Gets the timestamp of this CcrulesListInfo.
 
         创建规则时间戳
 
@@ -713,7 +713,7 @@ class CcrulesListInfo:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this CcrulesListInfo.
+        r"""Sets the timestamp of this CcrulesListInfo.
 
         创建规则时间戳
 

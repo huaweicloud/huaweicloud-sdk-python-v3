@@ -49,7 +49,7 @@ class Site:
     }
 
     def __init__(self, id=None, name=None, city=None, i18n_city=None, province=None, i18n_province=None, area=None, i18n_area=None, country=None, i18n_country=None, status=None, pools=None, city_short_name=None):
-        """Site
+        r"""Site
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class Site:
 
     @property
     def id(self):
-        """Gets the id of this Site.
+        r"""Gets the id of this Site.
 
         边缘站点ID。
 
@@ -138,7 +138,7 @@ class Site:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Site.
+        r"""Sets the id of this Site.
 
         边缘站点ID。
 
@@ -149,7 +149,7 @@ class Site:
 
     @property
     def name(self):
-        """Gets the name of this Site.
+        r"""Gets the name of this Site.
 
         边缘站点名称。
 
@@ -160,7 +160,7 @@ class Site:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Site.
+        r"""Sets the name of this Site.
 
         边缘站点名称。
 
@@ -171,7 +171,7 @@ class Site:
 
     @property
     def city(self):
-        """Gets the city of this Site.
+        r"""Gets the city of this Site.
 
         站点所在城市。
 
@@ -182,7 +182,7 @@ class Site:
 
     @city.setter
     def city(self, city):
-        """Sets the city of this Site.
+        r"""Sets the city of this Site.
 
         站点所在城市。
 
@@ -193,7 +193,7 @@ class Site:
 
     @property
     def i18n_city(self):
-        """Gets the i18n_city of this Site.
+        r"""Gets the i18n_city of this Site.
 
         城市的国际化名称。
 
@@ -204,7 +204,7 @@ class Site:
 
     @i18n_city.setter
     def i18n_city(self, i18n_city):
-        """Sets the i18n_city of this Site.
+        r"""Sets the i18n_city of this Site.
 
         城市的国际化名称。
 
@@ -215,7 +215,7 @@ class Site:
 
     @property
     def province(self):
-        """Gets the province of this Site.
+        r"""Gets the province of this Site.
 
         站点所在省份。
 
@@ -226,7 +226,7 @@ class Site:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this Site.
+        r"""Sets the province of this Site.
 
         站点所在省份。
 
@@ -237,7 +237,7 @@ class Site:
 
     @property
     def i18n_province(self):
-        """Gets the i18n_province of this Site.
+        r"""Gets the i18n_province of this Site.
 
         省份的国际化名称。
 
@@ -248,7 +248,7 @@ class Site:
 
     @i18n_province.setter
     def i18n_province(self, i18n_province):
-        """Sets the i18n_province of this Site.
+        r"""Sets the i18n_province of this Site.
 
         省份的国际化名称。
 
@@ -259,7 +259,7 @@ class Site:
 
     @property
     def area(self):
-        """Gets the area of this Site.
+        r"""Gets the area of this Site.
 
         所在大区。
 
@@ -270,7 +270,7 @@ class Site:
 
     @area.setter
     def area(self, area):
-        """Sets the area of this Site.
+        r"""Sets the area of this Site.
 
         所在大区。
 
@@ -281,7 +281,7 @@ class Site:
 
     @property
     def i18n_area(self):
-        """Gets the i18n_area of this Site.
+        r"""Gets the i18n_area of this Site.
 
         大区的国际化名称。
 
@@ -292,7 +292,7 @@ class Site:
 
     @i18n_area.setter
     def i18n_area(self, i18n_area):
-        """Sets the i18n_area of this Site.
+        r"""Sets the i18n_area of this Site.
 
         大区的国际化名称。
 
@@ -303,7 +303,7 @@ class Site:
 
     @property
     def country(self):
-        """Gets the country of this Site.
+        r"""Gets the country of this Site.
 
         站点所在的国家。
 
@@ -314,7 +314,7 @@ class Site:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this Site.
+        r"""Sets the country of this Site.
 
         站点所在的国家。
 
@@ -325,7 +325,7 @@ class Site:
 
     @property
     def i18n_country(self):
-        """Gets the i18n_country of this Site.
+        r"""Gets the i18n_country of this Site.
 
         国家的国际化名称。
 
@@ -336,7 +336,7 @@ class Site:
 
     @i18n_country.setter
     def i18n_country(self, i18n_country):
-        """Sets the i18n_country of this Site.
+        r"""Sets the i18n_country of this Site.
 
         国家的国际化名称。
 
@@ -347,7 +347,7 @@ class Site:
 
     @property
     def status(self):
-        """Gets the status of this Site.
+        r"""Gets the status of this Site.
 
         站点当前的状态。  取值范围： - Normal(正常商用) - Obt(公测) - Gray(灰度) - Offline(下线) - Promotion(推荐，也是商用) - sellout(售罄)
 
@@ -358,7 +358,7 @@ class Site:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Site.
+        r"""Sets the status of this Site.
 
         站点当前的状态。  取值范围： - Normal(正常商用) - Obt(公测) - Gray(灰度) - Offline(下线) - Promotion(推荐，也是商用) - sellout(售罄)
 
@@ -369,7 +369,7 @@ class Site:
 
     @property
     def pools(self):
-        """Gets the pools of this Site.
+        r"""Gets the pools of this Site.
 
         站点IP线路列表。
 
@@ -380,7 +380,7 @@ class Site:
 
     @pools.setter
     def pools(self, pools):
-        """Sets the pools of this Site.
+        r"""Sets the pools of this Site.
 
         站点IP线路列表。
 
@@ -391,7 +391,7 @@ class Site:
 
     @property
     def city_short_name(self):
-        """Gets the city_short_name of this Site.
+        r"""Gets the city_short_name of this Site.
 
         城市名称缩写。
 
@@ -402,7 +402,7 @@ class Site:
 
     @city_short_name.setter
     def city_short_name(self, city_short_name):
-        """Sets the city_short_name of this Site.
+        r"""Sets the city_short_name of this Site.
 
         城市名称缩写。
 

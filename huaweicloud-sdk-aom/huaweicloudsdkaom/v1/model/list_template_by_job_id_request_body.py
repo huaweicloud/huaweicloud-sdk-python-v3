@@ -33,7 +33,7 @@ class ListTemplateByJobIdRequestBody:
     }
 
     def __init__(self, name=None, page_num=None, page_size=None, order_by_column=None, sort_order=None):
-        """ListTemplateByJobIdRequestBody
+        r"""ListTemplateByJobIdRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListTemplateByJobIdRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this ListTemplateByJobIdRequestBody.
+        r"""Gets the name of this ListTemplateByJobIdRequestBody.
 
         方案名称
 
@@ -81,7 +81,7 @@ class ListTemplateByJobIdRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTemplateByJobIdRequestBody.
+        r"""Sets the name of this ListTemplateByJobIdRequestBody.
 
         方案名称
 
@@ -92,7 +92,7 @@ class ListTemplateByJobIdRequestBody:
 
     @property
     def page_num(self):
-        """Gets the page_num of this ListTemplateByJobIdRequestBody.
+        r"""Gets the page_num of this ListTemplateByJobIdRequestBody.
 
         page_num为正整数
 
@@ -103,7 +103,7 @@ class ListTemplateByJobIdRequestBody:
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this ListTemplateByJobIdRequestBody.
+        r"""Sets the page_num of this ListTemplateByJobIdRequestBody.
 
         page_num为正整数
 
@@ -114,7 +114,7 @@ class ListTemplateByJobIdRequestBody:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListTemplateByJobIdRequestBody.
+        r"""Gets the page_size of this ListTemplateByJobIdRequestBody.
 
         每页显示的条数
 
@@ -125,7 +125,7 @@ class ListTemplateByJobIdRequestBody:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListTemplateByJobIdRequestBody.
+        r"""Sets the page_size of this ListTemplateByJobIdRequestBody.
 
         每页显示的条数
 
@@ -136,7 +136,7 @@ class ListTemplateByJobIdRequestBody:
 
     @property
     def order_by_column(self):
-        """Gets the order_by_column of this ListTemplateByJobIdRequestBody.
+        r"""Gets the order_by_column of this ListTemplateByJobIdRequestBody.
 
         需要排序的字段(默认为更新时间),支持字段有name，create_time，update_time。
 
@@ -147,7 +147,7 @@ class ListTemplateByJobIdRequestBody:
 
     @order_by_column.setter
     def order_by_column(self, order_by_column):
-        """Sets the order_by_column of this ListTemplateByJobIdRequestBody.
+        r"""Sets the order_by_column of this ListTemplateByJobIdRequestBody.
 
         需要排序的字段(默认为更新时间),支持字段有name，create_time，update_time。
 
@@ -158,7 +158,7 @@ class ListTemplateByJobIdRequestBody:
 
     @property
     def sort_order(self):
-        """Gets the sort_order of this ListTemplateByJobIdRequestBody.
+        r"""Gets the sort_order of this ListTemplateByJobIdRequestBody.
 
         排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC。
 
@@ -169,7 +169,7 @@ class ListTemplateByJobIdRequestBody:
 
     @sort_order.setter
     def sort_order(self, sort_order):
-        """Sets the sort_order of this ListTemplateByJobIdRequestBody.
+        r"""Sets the sort_order of this ListTemplateByJobIdRequestBody.
 
         排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC。
 

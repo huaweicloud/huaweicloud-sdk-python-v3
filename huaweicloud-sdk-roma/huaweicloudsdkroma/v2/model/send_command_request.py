@@ -29,7 +29,7 @@ class SendCommandRequest:
     }
 
     def __init__(self, instance_id=None, device_id=None, body=None):
-        """SendCommandRequest
+        r"""SendCommandRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SendCommandRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SendCommandRequest.
+        r"""Gets the instance_id of this SendCommandRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class SendCommandRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SendCommandRequest.
+        r"""Sets the instance_id of this SendCommandRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class SendCommandRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this SendCommandRequest.
+        r"""Gets the device_id of this SendCommandRequest.
 
         设备ID
 
@@ -88,7 +88,7 @@ class SendCommandRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this SendCommandRequest.
+        r"""Sets the device_id of this SendCommandRequest.
 
         设备ID
 
@@ -99,7 +99,7 @@ class SendCommandRequest:
 
     @property
     def body(self):
-        """Gets the body of this SendCommandRequest.
+        r"""Gets the body of this SendCommandRequest.
 
         :return: The body of this SendCommandRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.SendCommandRequestBody`
@@ -108,7 +108,7 @@ class SendCommandRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SendCommandRequest.
+        r"""Sets the body of this SendCommandRequest.
 
         :param body: The body of this SendCommandRequest.
         :type body: :class:`huaweicloudsdkroma.v2.SendCommandRequestBody`

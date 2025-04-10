@@ -27,7 +27,7 @@ class UpdateRecordRuleRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateRecordRuleRequest
+        r"""UpdateRecordRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateRecordRuleRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateRecordRuleRequest.
+        r"""Gets the id of this UpdateRecordRuleRequest.
 
         规则ID，在创建成功规则后返回
 
@@ -60,7 +60,7 @@ class UpdateRecordRuleRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateRecordRuleRequest.
+        r"""Sets the id of this UpdateRecordRuleRequest.
 
         规则ID，在创建成功规则后返回
 
@@ -71,7 +71,7 @@ class UpdateRecordRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRecordRuleRequest.
+        r"""Gets the body of this UpdateRecordRuleRequest.
 
         :return: The body of this UpdateRecordRuleRequest.
         :rtype: :class:`huaweicloudsdklive.v1.RecordRuleRequest`
@@ -80,7 +80,7 @@ class UpdateRecordRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRecordRuleRequest.
+        r"""Sets the body of this UpdateRecordRuleRequest.
 
         :param body: The body of this UpdateRecordRuleRequest.
         :type body: :class:`huaweicloudsdklive.v1.RecordRuleRequest`

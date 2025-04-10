@@ -26,7 +26,7 @@ class InvokeModuleMsgResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """InvokeModuleMsgResponse
+        r"""InvokeModuleMsgResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class InvokeModuleMsgResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this InvokeModuleMsgResponse.
+        r"""Gets the body of this InvokeModuleMsgResponse.
 
         :return: The body of this InvokeModuleMsgResponse.
         :rtype: object
@@ -53,7 +53,7 @@ class InvokeModuleMsgResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this InvokeModuleMsgResponse.
+        r"""Sets the body of this InvokeModuleMsgResponse.
 
         :param body: The body of this InvokeModuleMsgResponse.
         :type body: object

@@ -27,7 +27,7 @@ class ShowNodesRequest:
     }
 
     def __init__(self, instance=None, guid=None):
-        """ShowNodesRequest
+        r"""ShowNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowNodesRequest:
 
     @property
     def instance(self):
-        """Gets the instance of this ShowNodesRequest.
+        r"""Gets the instance of this ShowNodesRequest.
 
         实例id
 
@@ -59,7 +59,7 @@ class ShowNodesRequest:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ShowNodesRequest.
+        r"""Sets the instance of this ShowNodesRequest.
 
         实例id
 
@@ -70,7 +70,7 @@ class ShowNodesRequest:
 
     @property
     def guid(self):
-        """Gets the guid of this ShowNodesRequest.
+        r"""Gets the guid of this ShowNodesRequest.
 
         资产guid
 
@@ -81,7 +81,7 @@ class ShowNodesRequest:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this ShowNodesRequest.
+        r"""Sets the guid of this ShowNodesRequest.
 
         资产guid
 

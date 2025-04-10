@@ -25,7 +25,7 @@ class ListLogHistogramRequest:
     }
 
     def __init__(self, body=None):
-        """ListLogHistogramRequest
+        r"""ListLogHistogramRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListLogHistogramRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListLogHistogramRequest.
+        r"""Gets the body of this ListLogHistogramRequest.
 
         :return: The body of this ListLogHistogramRequest.
         :rtype: :class:`huaweicloudsdklts.v2.QueryLogKeyWordCountRequestBody`
@@ -52,7 +52,7 @@ class ListLogHistogramRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListLogHistogramRequest.
+        r"""Sets the body of this ListLogHistogramRequest.
 
         :param body: The body of this ListLogHistogramRequest.
         :type body: :class:`huaweicloudsdklts.v2.QueryLogKeyWordCountRequestBody`

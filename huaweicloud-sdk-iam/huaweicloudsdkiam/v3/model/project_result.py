@@ -39,7 +39,7 @@ class ProjectResult:
     }
 
     def __init__(self, is_domain=None, description=None, links=None, enabled=None, id=None, parent_id=None, domain_id=None, name=None):
-        """ProjectResult
+        r"""ProjectResult
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ProjectResult:
 
     @property
     def is_domain(self):
-        """Gets the is_domain of this ProjectResult.
+        r"""Gets the is_domain of this ProjectResult.
 
         false.
 
@@ -95,7 +95,7 @@ class ProjectResult:
 
     @is_domain.setter
     def is_domain(self, is_domain):
-        """Sets the is_domain of this ProjectResult.
+        r"""Sets the is_domain of this ProjectResult.
 
         false.
 
@@ -106,7 +106,7 @@ class ProjectResult:
 
     @property
     def description(self):
-        """Gets the description of this ProjectResult.
+        r"""Gets the description of this ProjectResult.
 
         项目描述信息。
 
@@ -117,7 +117,7 @@ class ProjectResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProjectResult.
+        r"""Sets the description of this ProjectResult.
 
         项目描述信息。
 
@@ -128,7 +128,7 @@ class ProjectResult:
 
     @property
     def links(self):
-        """Gets the links of this ProjectResult.
+        r"""Gets the links of this ProjectResult.
 
         :return: The links of this ProjectResult.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -137,7 +137,7 @@ class ProjectResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ProjectResult.
+        r"""Sets the links of this ProjectResult.
 
         :param links: The links of this ProjectResult.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -146,7 +146,7 @@ class ProjectResult:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ProjectResult.
+        r"""Gets the enabled of this ProjectResult.
 
         项目是否可用。
 
@@ -157,7 +157,7 @@ class ProjectResult:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ProjectResult.
+        r"""Sets the enabled of this ProjectResult.
 
         项目是否可用。
 
@@ -168,7 +168,7 @@ class ProjectResult:
 
     @property
     def id(self):
-        """Gets the id of this ProjectResult.
+        r"""Gets the id of this ProjectResult.
 
         项目ID。
 
@@ -179,7 +179,7 @@ class ProjectResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProjectResult.
+        r"""Sets the id of this ProjectResult.
 
         项目ID。
 
@@ -190,7 +190,7 @@ class ProjectResult:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ProjectResult.
+        r"""Gets the parent_id of this ProjectResult.
 
         如果查询自己创建的项目，则此处返回所属区域的项目ID。  如果查询的是系统内置项目，如cn-north-4，则此处返回账号ID。
 
@@ -201,7 +201,7 @@ class ProjectResult:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ProjectResult.
+        r"""Sets the parent_id of this ProjectResult.
 
         如果查询自己创建的项目，则此处返回所属区域的项目ID。  如果查询的是系统内置项目，如cn-north-4，则此处返回账号ID。
 
@@ -212,7 +212,7 @@ class ProjectResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ProjectResult.
+        r"""Gets the domain_id of this ProjectResult.
 
         项目所属账号ID。
 
@@ -223,7 +223,7 @@ class ProjectResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ProjectResult.
+        r"""Sets the domain_id of this ProjectResult.
 
         项目所属账号ID。
 
@@ -234,7 +234,7 @@ class ProjectResult:
 
     @property
     def name(self):
-        """Gets the name of this ProjectResult.
+        r"""Gets the name of this ProjectResult.
 
         项目名称。
 
@@ -245,7 +245,7 @@ class ProjectResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProjectResult.
+        r"""Sets the name of this ProjectResult.
 
         项目名称。
 

@@ -31,7 +31,7 @@ class Partition:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None):
-        """Partition
+        r"""Partition
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Partition:
 
     @property
     def kind(self):
-        """Gets the kind of this Partition.
+        r"""Gets the kind of this Partition.
 
         资源类型
 
@@ -75,7 +75,7 @@ class Partition:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this Partition.
+        r"""Sets the kind of this Partition.
 
         资源类型
 
@@ -86,7 +86,7 @@ class Partition:
 
     @property
     def api_version(self):
-        """Gets the api_version of this Partition.
+        r"""Gets the api_version of this Partition.
 
         API版本
 
@@ -97,7 +97,7 @@ class Partition:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this Partition.
+        r"""Sets the api_version of this Partition.
 
         API版本
 
@@ -108,7 +108,7 @@ class Partition:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Partition.
+        r"""Gets the metadata of this Partition.
 
         :return: The metadata of this Partition.
         :rtype: :class:`huaweicloudsdkcce.v3.PartitionMetadata`
@@ -117,7 +117,7 @@ class Partition:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Partition.
+        r"""Sets the metadata of this Partition.
 
         :param metadata: The metadata of this Partition.
         :type metadata: :class:`huaweicloudsdkcce.v3.PartitionMetadata`
@@ -126,7 +126,7 @@ class Partition:
 
     @property
     def spec(self):
-        """Gets the spec of this Partition.
+        r"""Gets the spec of this Partition.
 
         :return: The spec of this Partition.
         :rtype: :class:`huaweicloudsdkcce.v3.PartitionSpec`
@@ -135,7 +135,7 @@ class Partition:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this Partition.
+        r"""Sets the spec of this Partition.
 
         :param spec: The spec of this Partition.
         :type spec: :class:`huaweicloudsdkcce.v3.PartitionSpec`

@@ -25,7 +25,7 @@ class ListProductsRequest:
     }
 
     def __init__(self, engine=None):
-        """ListProductsRequest
+        r"""ListProductsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListProductsRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ListProductsRequest.
+        r"""Gets the engine of this ListProductsRequest.
 
         消息引擎的类型。当前只支持kafka类型。
 
@@ -53,7 +53,7 @@ class ListProductsRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ListProductsRequest.
+        r"""Sets the engine of this ListProductsRequest.
 
         消息引擎的类型。当前只支持kafka类型。
 

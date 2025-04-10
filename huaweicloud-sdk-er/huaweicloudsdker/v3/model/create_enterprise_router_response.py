@@ -30,7 +30,7 @@ class CreateEnterpriseRouterResponse(SdkResponse):
     }
 
     def __init__(self, instance=None, request_id=None, x_client_token=None):
-        """CreateEnterpriseRouterResponse
+        r"""CreateEnterpriseRouterResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateEnterpriseRouterResponse(SdkResponse):
 
     @property
     def instance(self):
-        """Gets the instance of this CreateEnterpriseRouterResponse.
+        r"""Gets the instance of this CreateEnterpriseRouterResponse.
 
         :return: The instance of this CreateEnterpriseRouterResponse.
         :rtype: :class:`huaweicloudsdker.v3.EnterpriseRouter`
@@ -67,7 +67,7 @@ class CreateEnterpriseRouterResponse(SdkResponse):
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this CreateEnterpriseRouterResponse.
+        r"""Sets the instance of this CreateEnterpriseRouterResponse.
 
         :param instance: The instance of this CreateEnterpriseRouterResponse.
         :type instance: :class:`huaweicloudsdker.v3.EnterpriseRouter`
@@ -76,7 +76,7 @@ class CreateEnterpriseRouterResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateEnterpriseRouterResponse.
+        r"""Gets the request_id of this CreateEnterpriseRouterResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class CreateEnterpriseRouterResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateEnterpriseRouterResponse.
+        r"""Sets the request_id of this CreateEnterpriseRouterResponse.
 
         请求ID
 
@@ -98,7 +98,7 @@ class CreateEnterpriseRouterResponse(SdkResponse):
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateEnterpriseRouterResponse.
+        r"""Gets the x_client_token of this CreateEnterpriseRouterResponse.
 
         :return: The x_client_token of this CreateEnterpriseRouterResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateEnterpriseRouterResponse(SdkResponse):
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateEnterpriseRouterResponse.
+        r"""Sets the x_client_token of this CreateEnterpriseRouterResponse.
 
         :param x_client_token: The x_client_token of this CreateEnterpriseRouterResponse.
         :type x_client_token: str

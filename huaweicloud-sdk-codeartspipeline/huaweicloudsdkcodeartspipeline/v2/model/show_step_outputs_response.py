@@ -28,7 +28,7 @@ class ShowStepOutputsResponse(SdkResponse):
     }
 
     def __init__(self, step_outputs=None, current_system_time=None):
-        """ShowStepOutputsResponse
+        r"""ShowStepOutputsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowStepOutputsResponse(SdkResponse):
 
     @property
     def step_outputs(self):
-        """Gets the step_outputs of this ShowStepOutputsResponse.
+        r"""Gets the step_outputs of this ShowStepOutputsResponse.
 
         :return: The step_outputs of this ShowStepOutputsResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.OutputRespStepOutputs`]
@@ -60,7 +60,7 @@ class ShowStepOutputsResponse(SdkResponse):
 
     @step_outputs.setter
     def step_outputs(self, step_outputs):
-        """Sets the step_outputs of this ShowStepOutputsResponse.
+        r"""Sets the step_outputs of this ShowStepOutputsResponse.
 
         :param step_outputs: The step_outputs of this ShowStepOutputsResponse.
         :type step_outputs: list[:class:`huaweicloudsdkcodeartspipeline.v2.OutputRespStepOutputs`]
@@ -69,7 +69,7 @@ class ShowStepOutputsResponse(SdkResponse):
 
     @property
     def current_system_time(self):
-        """Gets the current_system_time of this ShowStepOutputsResponse.
+        r"""Gets the current_system_time of this ShowStepOutputsResponse.
 
         :return: The current_system_time of this ShowStepOutputsResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ShowStepOutputsResponse(SdkResponse):
 
     @current_system_time.setter
     def current_system_time(self, current_system_time):
-        """Sets the current_system_time of this ShowStepOutputsResponse.
+        r"""Sets the current_system_time of this ShowStepOutputsResponse.
 
         :param current_system_time: The current_system_time of this ShowStepOutputsResponse.
         :type current_system_time: int

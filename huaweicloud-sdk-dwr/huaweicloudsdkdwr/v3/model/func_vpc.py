@@ -35,7 +35,7 @@ class FuncVpc:
     }
 
     def __init__(self, subnet_id=None, vpc_id=None, vpc_name=None, subnet_name=None, cidr=None, gateway=None):
-        """FuncVpc
+        r"""FuncVpc
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class FuncVpc:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this FuncVpc.
+        r"""Gets the subnet_id of this FuncVpc.
 
         子网编号。当func_vpc非空时必选。
 
@@ -89,7 +89,7 @@ class FuncVpc:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this FuncVpc.
+        r"""Sets the subnet_id of this FuncVpc.
 
         子网编号。当func_vpc非空时必选。
 
@@ -100,7 +100,7 @@ class FuncVpc:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this FuncVpc.
+        r"""Gets the vpc_id of this FuncVpc.
 
         虚拟私有云唯一标识。当func_vpc非空时必选。
 
@@ -111,7 +111,7 @@ class FuncVpc:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this FuncVpc.
+        r"""Sets the vpc_id of this FuncVpc.
 
         虚拟私有云唯一标识。当func_vpc非空时必选。
 
@@ -122,7 +122,7 @@ class FuncVpc:
 
     @property
     def vpc_name(self):
-        """Gets the vpc_name of this FuncVpc.
+        r"""Gets the vpc_name of this FuncVpc.
 
         VPC名称。
 
@@ -133,7 +133,7 @@ class FuncVpc:
 
     @vpc_name.setter
     def vpc_name(self, vpc_name):
-        """Sets the vpc_name of this FuncVpc.
+        r"""Sets the vpc_name of this FuncVpc.
 
         VPC名称。
 
@@ -144,7 +144,7 @@ class FuncVpc:
 
     @property
     def subnet_name(self):
-        """Gets the subnet_name of this FuncVpc.
+        r"""Gets the subnet_name of this FuncVpc.
 
         子网名称。
 
@@ -155,7 +155,7 @@ class FuncVpc:
 
     @subnet_name.setter
     def subnet_name(self, subnet_name):
-        """Sets the subnet_name of this FuncVpc.
+        r"""Sets the subnet_name of this FuncVpc.
 
         子网名称。
 
@@ -166,7 +166,7 @@ class FuncVpc:
 
     @property
     def cidr(self):
-        """Gets the cidr of this FuncVpc.
+        r"""Gets the cidr of this FuncVpc.
 
         子网掩码。
 
@@ -177,7 +177,7 @@ class FuncVpc:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this FuncVpc.
+        r"""Sets the cidr of this FuncVpc.
 
         子网掩码。
 
@@ -188,7 +188,7 @@ class FuncVpc:
 
     @property
     def gateway(self):
-        """Gets the gateway of this FuncVpc.
+        r"""Gets the gateway of this FuncVpc.
 
         网关。
 
@@ -199,7 +199,7 @@ class FuncVpc:
 
     @gateway.setter
     def gateway(self, gateway):
-        """Sets the gateway of this FuncVpc.
+        r"""Sets the gateway of this FuncVpc.
 
         网关。
 

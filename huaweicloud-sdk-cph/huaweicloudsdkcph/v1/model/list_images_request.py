@@ -41,7 +41,7 @@ class ListImagesRequest:
     }
 
     def __init__(self, image_type=None, status=None, offset=None, limit=None, image_id=None, image_name=None, create_since=None, create_until=None, src_project_id=None):
-        """ListImagesRequest
+        r"""ListImagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListImagesRequest:
 
     @property
     def image_type(self):
-        """Gets the image_type of this ListImagesRequest.
+        r"""Gets the image_type of this ListImagesRequest.
 
         镜像类型。 - private：私有镜像 - share：共享镜像
 
@@ -110,7 +110,7 @@ class ListImagesRequest:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this ListImagesRequest.
+        r"""Sets the image_type of this ListImagesRequest.
 
         镜像类型。 - private：私有镜像 - share：共享镜像
 
@@ -121,7 +121,7 @@ class ListImagesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListImagesRequest.
+        r"""Gets the status of this ListImagesRequest.
 
         镜像状态。 - 0：CREATING 创建中 - 1：PRODUCTION 生产态，可使用 - 2：CREATE_FAILED 创建失败
 
@@ -132,7 +132,7 @@ class ListImagesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListImagesRequest.
+        r"""Sets the status of this ListImagesRequest.
 
         镜像状态。 - 0：CREATING 创建中 - 1：PRODUCTION 生产态，可使用 - 2：CREATE_FAILED 创建失败
 
@@ -143,7 +143,7 @@ class ListImagesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListImagesRequest.
+        r"""Gets the offset of this ListImagesRequest.
 
         偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
@@ -154,7 +154,7 @@ class ListImagesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListImagesRequest.
+        r"""Sets the offset of this ListImagesRequest.
 
         偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
@@ -165,7 +165,7 @@ class ListImagesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListImagesRequest.
+        r"""Gets the limit of this ListImagesRequest.
 
         每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
 
@@ -176,7 +176,7 @@ class ListImagesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListImagesRequest.
+        r"""Sets the limit of this ListImagesRequest.
 
         每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
 
@@ -187,7 +187,7 @@ class ListImagesRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ListImagesRequest.
+        r"""Gets the image_id of this ListImagesRequest.
 
         镜像id
 
@@ -198,7 +198,7 @@ class ListImagesRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ListImagesRequest.
+        r"""Sets the image_id of this ListImagesRequest.
 
         镜像id
 
@@ -209,7 +209,7 @@ class ListImagesRequest:
 
     @property
     def image_name(self):
-        """Gets the image_name of this ListImagesRequest.
+        r"""Gets the image_name of this ListImagesRequest.
 
         镜像名称
 
@@ -220,7 +220,7 @@ class ListImagesRequest:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this ListImagesRequest.
+        r"""Sets the image_name of this ListImagesRequest.
 
         镜像名称
 
@@ -231,7 +231,7 @@ class ListImagesRequest:
 
     @property
     def create_since(self):
-        """Gets the create_since of this ListImagesRequest.
+        r"""Gets the create_since of this ListImagesRequest.
 
         起始时间
 
@@ -242,7 +242,7 @@ class ListImagesRequest:
 
     @create_since.setter
     def create_since(self, create_since):
-        """Sets the create_since of this ListImagesRequest.
+        r"""Sets the create_since of this ListImagesRequest.
 
         起始时间
 
@@ -253,7 +253,7 @@ class ListImagesRequest:
 
     @property
     def create_until(self):
-        """Gets the create_until of this ListImagesRequest.
+        r"""Gets the create_until of this ListImagesRequest.
 
         截止时间
 
@@ -264,7 +264,7 @@ class ListImagesRequest:
 
     @create_until.setter
     def create_until(self, create_until):
-        """Sets the create_until of this ListImagesRequest.
+        r"""Sets the create_until of this ListImagesRequest.
 
         截止时间
 
@@ -275,7 +275,7 @@ class ListImagesRequest:
 
     @property
     def src_project_id(self):
-        """Gets the src_project_id of this ListImagesRequest.
+        r"""Gets the src_project_id of this ListImagesRequest.
 
         共享镜像账号的projectId
 
@@ -286,7 +286,7 @@ class ListImagesRequest:
 
     @src_project_id.setter
     def src_project_id(self, src_project_id):
-        """Sets the src_project_id of this ListImagesRequest.
+        r"""Sets the src_project_id of this ListImagesRequest.
 
         共享镜像账号的projectId
 

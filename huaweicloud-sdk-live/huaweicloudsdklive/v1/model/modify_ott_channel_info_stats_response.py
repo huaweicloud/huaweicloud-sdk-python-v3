@@ -36,7 +36,7 @@ class ModifyOttChannelInfoStatsResponse(SdkResponse):
     }
 
     def __init__(self, result_code=None, result_msg=None, domain=None, app_name=None, id=None, sources=None):
-        """ModifyOttChannelInfoStatsResponse
+        r"""ModifyOttChannelInfoStatsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ModifyOttChannelInfoStatsResponse(SdkResponse):
 
     @property
     def result_code(self):
-        """Gets the result_code of this ModifyOttChannelInfoStatsResponse.
+        r"""Gets the result_code of this ModifyOttChannelInfoStatsResponse.
 
         错误码
 
@@ -90,7 +90,7 @@ class ModifyOttChannelInfoStatsResponse(SdkResponse):
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this ModifyOttChannelInfoStatsResponse.
+        r"""Sets the result_code of this ModifyOttChannelInfoStatsResponse.
 
         错误码
 
@@ -101,7 +101,7 @@ class ModifyOttChannelInfoStatsResponse(SdkResponse):
 
     @property
     def result_msg(self):
-        """Gets the result_msg of this ModifyOttChannelInfoStatsResponse.
+        r"""Gets the result_msg of this ModifyOttChannelInfoStatsResponse.
 
         错误描述
 
@@ -112,7 +112,7 @@ class ModifyOttChannelInfoStatsResponse(SdkResponse):
 
     @result_msg.setter
     def result_msg(self, result_msg):
-        """Sets the result_msg of this ModifyOttChannelInfoStatsResponse.
+        r"""Sets the result_msg of this ModifyOttChannelInfoStatsResponse.
 
         错误描述
 
@@ -123,7 +123,7 @@ class ModifyOttChannelInfoStatsResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this ModifyOttChannelInfoStatsResponse.
+        r"""Gets the domain of this ModifyOttChannelInfoStatsResponse.
 
         推流域名
 
@@ -134,7 +134,7 @@ class ModifyOttChannelInfoStatsResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ModifyOttChannelInfoStatsResponse.
+        r"""Sets the domain of this ModifyOttChannelInfoStatsResponse.
 
         推流域名
 
@@ -145,7 +145,7 @@ class ModifyOttChannelInfoStatsResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this ModifyOttChannelInfoStatsResponse.
+        r"""Gets the app_name of this ModifyOttChannelInfoStatsResponse.
 
         组名或应用名，为必填项
 
@@ -156,7 +156,7 @@ class ModifyOttChannelInfoStatsResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ModifyOttChannelInfoStatsResponse.
+        r"""Sets the app_name of this ModifyOttChannelInfoStatsResponse.
 
         组名或应用名，为必填项
 
@@ -167,7 +167,7 @@ class ModifyOttChannelInfoStatsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ModifyOttChannelInfoStatsResponse.
+        r"""Gets the id of this ModifyOttChannelInfoStatsResponse.
 
         频道ID。频道唯一标识，为必填项
 
@@ -178,7 +178,7 @@ class ModifyOttChannelInfoStatsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyOttChannelInfoStatsResponse.
+        r"""Sets the id of this ModifyOttChannelInfoStatsResponse.
 
         频道ID。频道唯一标识，为必填项
 
@@ -189,7 +189,7 @@ class ModifyOttChannelInfoStatsResponse(SdkResponse):
 
     @property
     def sources(self):
-        """Gets the sources of this ModifyOttChannelInfoStatsResponse.
+        r"""Gets the sources of this ModifyOttChannelInfoStatsResponse.
 
         推流URL列表。创建频道时，只有入流协议为RTMP_PUSH时，会返回推流URL列表
 
@@ -200,7 +200,7 @@ class ModifyOttChannelInfoStatsResponse(SdkResponse):
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this ModifyOttChannelInfoStatsResponse.
+        r"""Sets the sources of this ModifyOttChannelInfoStatsResponse.
 
         推流URL列表。创建频道时，只有入流协议为RTMP_PUSH时，会返回推流URL列表
 

@@ -33,7 +33,7 @@ class CreateQuestionInSessionRequest:
     }
 
     def __init__(self, x_service_key=None, x_site=None, x_language=None, session_id=None, body=None):
-        """CreateQuestionInSessionRequest
+        r"""CreateQuestionInSessionRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateQuestionInSessionRequest:
 
     @property
     def x_service_key(self):
-        """Gets the x_service_key of this CreateQuestionInSessionRequest.
+        r"""Gets the x_service_key of this CreateQuestionInSessionRequest.
 
         调用智能客服服务标志。
 
@@ -80,7 +80,7 @@ class CreateQuestionInSessionRequest:
 
     @x_service_key.setter
     def x_service_key(self, x_service_key):
-        """Sets the x_service_key of this CreateQuestionInSessionRequest.
+        r"""Sets the x_service_key of this CreateQuestionInSessionRequest.
 
         调用智能客服服务标志。
 
@@ -91,7 +91,7 @@ class CreateQuestionInSessionRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this CreateQuestionInSessionRequest.
+        r"""Gets the x_site of this CreateQuestionInSessionRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -102,7 +102,7 @@ class CreateQuestionInSessionRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this CreateQuestionInSessionRequest.
+        r"""Sets the x_site of this CreateQuestionInSessionRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -113,7 +113,7 @@ class CreateQuestionInSessionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateQuestionInSessionRequest.
+        r"""Gets the x_language of this CreateQuestionInSessionRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -124,7 +124,7 @@ class CreateQuestionInSessionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateQuestionInSessionRequest.
+        r"""Sets the x_language of this CreateQuestionInSessionRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -135,7 +135,7 @@ class CreateQuestionInSessionRequest:
 
     @property
     def session_id(self):
-        """Gets the session_id of this CreateQuestionInSessionRequest.
+        r"""Gets the session_id of this CreateQuestionInSessionRequest.
 
         会话Id
 
@@ -146,7 +146,7 @@ class CreateQuestionInSessionRequest:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this CreateQuestionInSessionRequest.
+        r"""Sets the session_id of this CreateQuestionInSessionRequest.
 
         会话Id
 
@@ -157,7 +157,7 @@ class CreateQuestionInSessionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateQuestionInSessionRequest.
+        r"""Gets the body of this CreateQuestionInSessionRequest.
 
         :return: The body of this CreateQuestionInSessionRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.SessionAskQuestionReq`
@@ -166,7 +166,7 @@ class CreateQuestionInSessionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateQuestionInSessionRequest.
+        r"""Sets the body of this CreateQuestionInSessionRequest.
 
         :param body: The body of this CreateQuestionInSessionRequest.
         :type body: :class:`huaweicloudsdkosm.v2.SessionAskQuestionReq`

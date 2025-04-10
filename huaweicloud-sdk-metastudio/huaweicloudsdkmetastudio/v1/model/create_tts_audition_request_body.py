@@ -43,7 +43,7 @@ class CreateTtsAuditionRequestBody:
     }
 
     def __init__(self, text=None, tts_text=None, emotion=None, speed=None, pitch=None, volume=None, business_type=None, style=None, channels=None, is_vocabulary_config_enable=None):
-        """CreateTtsAuditionRequestBody
+        r"""CreateTtsAuditionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class CreateTtsAuditionRequestBody:
 
     @property
     def text(self):
-        """Gets the text of this CreateTtsAuditionRequestBody.
+        r"""Gets the text of this CreateTtsAuditionRequestBody.
 
         待合成文本。
 
@@ -115,7 +115,7 @@ class CreateTtsAuditionRequestBody:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this CreateTtsAuditionRequestBody.
+        r"""Sets the text of this CreateTtsAuditionRequestBody.
 
         待合成文本。
 
@@ -126,7 +126,7 @@ class CreateTtsAuditionRequestBody:
 
     @property
     def tts_text(self):
-        """Gets the tts_text of this CreateTtsAuditionRequestBody.
+        r"""Gets the tts_text of this CreateTtsAuditionRequestBody.
 
         发送给tts的待合成文本。
 
@@ -137,7 +137,7 @@ class CreateTtsAuditionRequestBody:
 
     @tts_text.setter
     def tts_text(self, tts_text):
-        """Sets the tts_text of this CreateTtsAuditionRequestBody.
+        r"""Sets the tts_text of this CreateTtsAuditionRequestBody.
 
         发送给tts的待合成文本。
 
@@ -148,7 +148,7 @@ class CreateTtsAuditionRequestBody:
 
     @property
     def emotion(self):
-        """Gets the emotion of this CreateTtsAuditionRequestBody.
+        r"""Gets the emotion of this CreateTtsAuditionRequestBody.
 
         音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。
 
@@ -159,7 +159,7 @@ class CreateTtsAuditionRequestBody:
 
     @emotion.setter
     def emotion(self, emotion):
-        """Sets the emotion of this CreateTtsAuditionRequestBody.
+        r"""Sets the emotion of this CreateTtsAuditionRequestBody.
 
         音色ID，获取方式详见[获取音色ID](metastudio_02_0054.xml)。
 
@@ -170,7 +170,7 @@ class CreateTtsAuditionRequestBody:
 
     @property
     def speed(self):
-        """Gets the speed of this CreateTtsAuditionRequestBody.
+        r"""Gets the speed of this CreateTtsAuditionRequestBody.
 
         语速。 * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
 
@@ -181,7 +181,7 @@ class CreateTtsAuditionRequestBody:
 
     @speed.setter
     def speed(self, speed):
-        """Sets the speed of this CreateTtsAuditionRequestBody.
+        r"""Sets the speed of this CreateTtsAuditionRequestBody.
 
         语速。 * 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。 * 50表示0.5倍语速，100表示正常语速，200表示2倍语速。
 
@@ -192,7 +192,7 @@ class CreateTtsAuditionRequestBody:
 
     @property
     def pitch(self):
-        """Gets the pitch of this CreateTtsAuditionRequestBody.
+        r"""Gets the pitch of this CreateTtsAuditionRequestBody.
 
         音高。
 
@@ -203,7 +203,7 @@ class CreateTtsAuditionRequestBody:
 
     @pitch.setter
     def pitch(self, pitch):
-        """Sets the pitch of this CreateTtsAuditionRequestBody.
+        r"""Sets the pitch of this CreateTtsAuditionRequestBody.
 
         音高。
 
@@ -214,7 +214,7 @@ class CreateTtsAuditionRequestBody:
 
     @property
     def volume(self):
-        """Gets the volume of this CreateTtsAuditionRequestBody.
+        r"""Gets the volume of this CreateTtsAuditionRequestBody.
 
         音量。
 
@@ -225,7 +225,7 @@ class CreateTtsAuditionRequestBody:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this CreateTtsAuditionRequestBody.
+        r"""Sets the volume of this CreateTtsAuditionRequestBody.
 
         音量。
 
@@ -236,7 +236,7 @@ class CreateTtsAuditionRequestBody:
 
     @property
     def business_type(self):
-        """Gets the business_type of this CreateTtsAuditionRequestBody.
+        r"""Gets the business_type of this CreateTtsAuditionRequestBody.
 
         业务场景，多个入口调用试听接口时的业务场景
 
@@ -247,7 +247,7 @@ class CreateTtsAuditionRequestBody:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this CreateTtsAuditionRequestBody.
+        r"""Sets the business_type of this CreateTtsAuditionRequestBody.
 
         业务场景，多个入口调用试听接口时的业务场景
 
@@ -258,7 +258,7 @@ class CreateTtsAuditionRequestBody:
 
     @property
     def style(self):
-        """Gets the style of this CreateTtsAuditionRequestBody.
+        r"""Gets the style of this CreateTtsAuditionRequestBody.
 
         风格情感
 
@@ -269,7 +269,7 @@ class CreateTtsAuditionRequestBody:
 
     @style.setter
     def style(self, style):
-        """Sets the style of this CreateTtsAuditionRequestBody.
+        r"""Sets the style of this CreateTtsAuditionRequestBody.
 
         风格情感
 
@@ -280,7 +280,7 @@ class CreateTtsAuditionRequestBody:
 
     @property
     def channels(self):
-        """Gets the channels of this CreateTtsAuditionRequestBody.
+        r"""Gets the channels of this CreateTtsAuditionRequestBody.
 
         声道。（单声道|双声道） 默认值1，最小值1，最大值2。
 
@@ -291,7 +291,7 @@ class CreateTtsAuditionRequestBody:
 
     @channels.setter
     def channels(self, channels):
-        """Sets the channels of this CreateTtsAuditionRequestBody.
+        r"""Sets the channels of this CreateTtsAuditionRequestBody.
 
         声道。（单声道|双声道） 默认值1，最小值1，最大值2。
 
@@ -302,7 +302,7 @@ class CreateTtsAuditionRequestBody:
 
     @property
     def is_vocabulary_config_enable(self):
-        """Gets the is_vocabulary_config_enable of this CreateTtsAuditionRequestBody.
+        r"""Gets the is_vocabulary_config_enable of this CreateTtsAuditionRequestBody.
 
         是否应用当前租户的读法配置
 
@@ -313,7 +313,7 @@ class CreateTtsAuditionRequestBody:
 
     @is_vocabulary_config_enable.setter
     def is_vocabulary_config_enable(self, is_vocabulary_config_enable):
-        """Sets the is_vocabulary_config_enable of this CreateTtsAuditionRequestBody.
+        r"""Sets the is_vocabulary_config_enable of this CreateTtsAuditionRequestBody.
 
         是否应用当前租户的读法配置
 

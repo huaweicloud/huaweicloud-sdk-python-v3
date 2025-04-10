@@ -26,7 +26,7 @@ class ShowImageCacheResponse(SdkResponse):
     }
 
     def __init__(self, image_cache=None):
-        """ShowImageCacheResponse
+        r"""ShowImageCacheResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowImageCacheResponse(SdkResponse):
 
     @property
     def image_cache(self):
-        """Gets the image_cache of this ShowImageCacheResponse.
+        r"""Gets the image_cache of this ShowImageCacheResponse.
 
         :return: The image_cache of this ShowImageCacheResponse.
         :rtype: :class:`huaweicloudsdkcce.v5.ImageCacheDetail`
@@ -53,7 +53,7 @@ class ShowImageCacheResponse(SdkResponse):
 
     @image_cache.setter
     def image_cache(self, image_cache):
-        """Sets the image_cache of this ShowImageCacheResponse.
+        r"""Sets the image_cache of this ShowImageCacheResponse.
 
         :param image_cache: The image_cache of this ShowImageCacheResponse.
         :type image_cache: :class:`huaweicloudsdkcce.v5.ImageCacheDetail`

@@ -27,7 +27,7 @@ class PolicyItemAccess:
     }
 
     def __init__(self, is_allowed=None, type=None):
-        """PolicyItemAccess
+        r"""PolicyItemAccess
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PolicyItemAccess:
 
     @property
     def is_allowed(self):
-        """Gets the is_allowed of this PolicyItemAccess.
+        r"""Gets the is_allowed of this PolicyItemAccess.
 
         是否允许
 
@@ -61,7 +61,7 @@ class PolicyItemAccess:
 
     @is_allowed.setter
     def is_allowed(self, is_allowed):
-        """Sets the is_allowed of this PolicyItemAccess.
+        r"""Sets the is_allowed of this PolicyItemAccess.
 
         是否允许
 
@@ -72,7 +72,7 @@ class PolicyItemAccess:
 
     @property
     def type(self):
-        """Gets the type of this PolicyItemAccess.
+        r"""Gets the type of this PolicyItemAccess.
 
         类型
 
@@ -83,7 +83,7 @@ class PolicyItemAccess:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PolicyItemAccess.
+        r"""Sets the type of this PolicyItemAccess.
 
         类型
 

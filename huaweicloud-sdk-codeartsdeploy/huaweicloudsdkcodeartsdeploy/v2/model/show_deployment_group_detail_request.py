@@ -25,7 +25,7 @@ class ShowDeploymentGroupDetailRequest:
     }
 
     def __init__(self, group_id=None):
-        """ShowDeploymentGroupDetailRequest
+        r"""ShowDeploymentGroupDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDeploymentGroupDetailRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowDeploymentGroupDetailRequest.
+        r"""Gets the group_id of this ShowDeploymentGroupDetailRequest.
 
         主机集群id
 
@@ -53,7 +53,7 @@ class ShowDeploymentGroupDetailRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowDeploymentGroupDetailRequest.
+        r"""Sets the group_id of this ShowDeploymentGroupDetailRequest.
 
         主机集群id
 

@@ -36,7 +36,7 @@ class CreateProjectV4Response(SdkResponse):
     }
 
     def __init__(self, project_num_id=None, project_id=None, project_name=None, description=None, project_type=None, user_num_id=None):
-        """CreateProjectV4Response
+        r"""CreateProjectV4Response
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateProjectV4Response(SdkResponse):
 
     @property
     def project_num_id(self):
-        """Gets the project_num_id of this CreateProjectV4Response.
+        r"""Gets the project_num_id of this CreateProjectV4Response.
 
         项目数字id
 
@@ -90,7 +90,7 @@ class CreateProjectV4Response(SdkResponse):
 
     @project_num_id.setter
     def project_num_id(self, project_num_id):
-        """Sets the project_num_id of this CreateProjectV4Response.
+        r"""Sets the project_num_id of this CreateProjectV4Response.
 
         项目数字id
 
@@ -101,7 +101,7 @@ class CreateProjectV4Response(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateProjectV4Response.
+        r"""Gets the project_id of this CreateProjectV4Response.
 
         项目id
 
@@ -112,7 +112,7 @@ class CreateProjectV4Response(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateProjectV4Response.
+        r"""Sets the project_id of this CreateProjectV4Response.
 
         项目id
 
@@ -123,7 +123,7 @@ class CreateProjectV4Response(SdkResponse):
 
     @property
     def project_name(self):
-        """Gets the project_name of this CreateProjectV4Response.
+        r"""Gets the project_name of this CreateProjectV4Response.
 
         项目名
 
@@ -134,7 +134,7 @@ class CreateProjectV4Response(SdkResponse):
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this CreateProjectV4Response.
+        r"""Sets the project_name of this CreateProjectV4Response.
 
         项目名
 
@@ -145,7 +145,7 @@ class CreateProjectV4Response(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateProjectV4Response.
+        r"""Gets the description of this CreateProjectV4Response.
 
         项目描述
 
@@ -156,7 +156,7 @@ class CreateProjectV4Response(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateProjectV4Response.
+        r"""Sets the description of this CreateProjectV4Response.
 
         项目描述
 
@@ -167,7 +167,7 @@ class CreateProjectV4Response(SdkResponse):
 
     @property
     def project_type(self):
-        """Gets the project_type of this CreateProjectV4Response.
+        r"""Gets the project_type of this CreateProjectV4Response.
 
         项目类型
 
@@ -178,7 +178,7 @@ class CreateProjectV4Response(SdkResponse):
 
     @project_type.setter
     def project_type(self, project_type):
-        """Sets the project_type of this CreateProjectV4Response.
+        r"""Sets the project_type of this CreateProjectV4Response.
 
         项目类型
 
@@ -189,7 +189,7 @@ class CreateProjectV4Response(SdkResponse):
 
     @property
     def user_num_id(self):
-        """Gets the user_num_id of this CreateProjectV4Response.
+        r"""Gets the user_num_id of this CreateProjectV4Response.
 
         创建者的数字id
 
@@ -200,7 +200,7 @@ class CreateProjectV4Response(SdkResponse):
 
     @user_num_id.setter
     def user_num_id(self, user_num_id):
-        """Sets the user_num_id of this CreateProjectV4Response.
+        r"""Sets the user_num_id of this CreateProjectV4Response.
 
         创建者的数字id
 

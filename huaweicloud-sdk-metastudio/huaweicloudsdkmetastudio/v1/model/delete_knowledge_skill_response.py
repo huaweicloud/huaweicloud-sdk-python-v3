@@ -26,7 +26,7 @@ class DeleteKnowledgeSkillResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """DeleteKnowledgeSkillResponse
+        r"""DeleteKnowledgeSkillResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteKnowledgeSkillResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteKnowledgeSkillResponse.
+        r"""Gets the x_request_id of this DeleteKnowledgeSkillResponse.
 
         :return: The x_request_id of this DeleteKnowledgeSkillResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteKnowledgeSkillResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteKnowledgeSkillResponse.
+        r"""Sets the x_request_id of this DeleteKnowledgeSkillResponse.
 
         :param x_request_id: The x_request_id of this DeleteKnowledgeSkillResponse.
         :type x_request_id: str

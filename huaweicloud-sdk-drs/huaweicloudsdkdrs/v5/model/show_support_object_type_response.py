@@ -48,7 +48,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
     }
 
     def __init__(self, is_full_trans_support_object=None, is_incre_trans_support_object=None, is_full_incre_trans_support_object=None, support_object_import_engine=None, is_support_column_mapping=None, is_database_support_search=None, is_schema_support_search=None, is_table_support_search=None, file_size=None, previous_select=None, import_level=None, is_import_cloumn=None):
-        """ShowSupportObjectTypeResponse
+        r"""ShowSupportObjectTypeResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @property
     def is_full_trans_support_object(self):
-        """Gets the is_full_trans_support_object of this ShowSupportObjectTypeResponse.
+        r"""Gets the is_full_trans_support_object of this ShowSupportObjectTypeResponse.
 
         全量任务是否支持对象选择。
 
@@ -132,7 +132,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @is_full_trans_support_object.setter
     def is_full_trans_support_object(self, is_full_trans_support_object):
-        """Sets the is_full_trans_support_object of this ShowSupportObjectTypeResponse.
+        r"""Sets the is_full_trans_support_object of this ShowSupportObjectTypeResponse.
 
         全量任务是否支持对象选择。
 
@@ -143,7 +143,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @property
     def is_incre_trans_support_object(self):
-        """Gets the is_incre_trans_support_object of this ShowSupportObjectTypeResponse.
+        r"""Gets the is_incre_trans_support_object of this ShowSupportObjectTypeResponse.
 
         增量任务是否支持对象选择。
 
@@ -154,7 +154,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @is_incre_trans_support_object.setter
     def is_incre_trans_support_object(self, is_incre_trans_support_object):
-        """Sets the is_incre_trans_support_object of this ShowSupportObjectTypeResponse.
+        r"""Sets the is_incre_trans_support_object of this ShowSupportObjectTypeResponse.
 
         增量任务是否支持对象选择。
 
@@ -165,7 +165,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @property
     def is_full_incre_trans_support_object(self):
-        """Gets the is_full_incre_trans_support_object of this ShowSupportObjectTypeResponse.
+        r"""Gets the is_full_incre_trans_support_object of this ShowSupportObjectTypeResponse.
 
         全量加增量任务是否支持对象选择。
 
@@ -176,7 +176,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @is_full_incre_trans_support_object.setter
     def is_full_incre_trans_support_object(self, is_full_incre_trans_support_object):
-        """Sets the is_full_incre_trans_support_object of this ShowSupportObjectTypeResponse.
+        r"""Sets the is_full_incre_trans_support_object of this ShowSupportObjectTypeResponse.
 
         全量加增量任务是否支持对象选择。
 
@@ -187,7 +187,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @property
     def support_object_import_engine(self):
-        """Gets the support_object_import_engine of this ShowSupportObjectTypeResponse.
+        r"""Gets the support_object_import_engine of this ShowSupportObjectTypeResponse.
 
         支持对象导入的引引擎。
 
@@ -198,7 +198,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @support_object_import_engine.setter
     def support_object_import_engine(self, support_object_import_engine):
-        """Sets the support_object_import_engine of this ShowSupportObjectTypeResponse.
+        r"""Sets the support_object_import_engine of this ShowSupportObjectTypeResponse.
 
         支持对象导入的引引擎。
 
@@ -209,7 +209,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @property
     def is_support_column_mapping(self):
-        """Gets the is_support_column_mapping of this ShowSupportObjectTypeResponse.
+        r"""Gets the is_support_column_mapping of this ShowSupportObjectTypeResponse.
 
         是否支持列映射。
 
@@ -220,7 +220,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @is_support_column_mapping.setter
     def is_support_column_mapping(self, is_support_column_mapping):
-        """Sets the is_support_column_mapping of this ShowSupportObjectTypeResponse.
+        r"""Sets the is_support_column_mapping of this ShowSupportObjectTypeResponse.
 
         是否支持列映射。
 
@@ -231,7 +231,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @property
     def is_database_support_search(self):
-        """Gets the is_database_support_search of this ShowSupportObjectTypeResponse.
+        r"""Gets the is_database_support_search of this ShowSupportObjectTypeResponse.
 
         库是否支持搜索。
 
@@ -242,7 +242,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @is_database_support_search.setter
     def is_database_support_search(self, is_database_support_search):
-        """Sets the is_database_support_search of this ShowSupportObjectTypeResponse.
+        r"""Sets the is_database_support_search of this ShowSupportObjectTypeResponse.
 
         库是否支持搜索。
 
@@ -253,7 +253,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @property
     def is_schema_support_search(self):
-        """Gets the is_schema_support_search of this ShowSupportObjectTypeResponse.
+        r"""Gets the is_schema_support_search of this ShowSupportObjectTypeResponse.
 
         schema是否支持搜索。
 
@@ -264,7 +264,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @is_schema_support_search.setter
     def is_schema_support_search(self, is_schema_support_search):
-        """Sets the is_schema_support_search of this ShowSupportObjectTypeResponse.
+        r"""Sets the is_schema_support_search of this ShowSupportObjectTypeResponse.
 
         schema是否支持搜索。
 
@@ -275,7 +275,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @property
     def is_table_support_search(self):
-        """Gets the is_table_support_search of this ShowSupportObjectTypeResponse.
+        r"""Gets the is_table_support_search of this ShowSupportObjectTypeResponse.
 
         表是否支持搜索。
 
@@ -286,7 +286,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @is_table_support_search.setter
     def is_table_support_search(self, is_table_support_search):
-        """Sets the is_table_support_search of this ShowSupportObjectTypeResponse.
+        r"""Sets the is_table_support_search of this ShowSupportObjectTypeResponse.
 
         表是否支持搜索。
 
@@ -297,7 +297,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @property
     def file_size(self):
-        """Gets the file_size of this ShowSupportObjectTypeResponse.
+        r"""Gets the file_size of this ShowSupportObjectTypeResponse.
 
         对象导入支持的文件大小。
 
@@ -308,7 +308,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this ShowSupportObjectTypeResponse.
+        r"""Sets the file_size of this ShowSupportObjectTypeResponse.
 
         对象导入支持的文件大小。
 
@@ -319,7 +319,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @property
     def previous_select(self):
-        """Gets the previous_select of this ShowSupportObjectTypeResponse.
+        r"""Gets the previous_select of this ShowSupportObjectTypeResponse.
 
         上一次选择迁移对象或者同步对象的方式。 - srcImportObject：当前任务上次选择的方式为导入方式
 
@@ -330,7 +330,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @previous_select.setter
     def previous_select(self, previous_select):
-        """Sets the previous_select of this ShowSupportObjectTypeResponse.
+        r"""Sets the previous_select of this ShowSupportObjectTypeResponse.
 
         上一次选择迁移对象或者同步对象的方式。 - srcImportObject：当前任务上次选择的方式为导入方式
 
@@ -341,7 +341,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @property
     def import_level(self):
-        """Gets the import_level of this ShowSupportObjectTypeResponse.
+        r"""Gets the import_level of this ShowSupportObjectTypeResponse.
 
         对象导入类型。 - table：表级 - database：库级
 
@@ -352,7 +352,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @import_level.setter
     def import_level(self, import_level):
-        """Sets the import_level of this ShowSupportObjectTypeResponse.
+        r"""Sets the import_level of this ShowSupportObjectTypeResponse.
 
         对象导入类型。 - table：表级 - database：库级
 
@@ -363,7 +363,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @property
     def is_import_cloumn(self):
-        """Gets the is_import_cloumn of this ShowSupportObjectTypeResponse.
+        r"""Gets the is_import_cloumn of this ShowSupportObjectTypeResponse.
 
         取值： - true： 当前任务上次选择列加工方式为导入方式 - false 或者 空：当前任务上次选择列加工方式为手动选择方式
 
@@ -374,7 +374,7 @@ class ShowSupportObjectTypeResponse(SdkResponse):
 
     @is_import_cloumn.setter
     def is_import_cloumn(self, is_import_cloumn):
-        """Sets the is_import_cloumn of this ShowSupportObjectTypeResponse.
+        r"""Sets the is_import_cloumn of this ShowSupportObjectTypeResponse.
 
         取值： - true： 当前任务上次选择列加工方式为导入方式 - false 或者 空：当前任务上次选择列加工方式为手动选择方式
 

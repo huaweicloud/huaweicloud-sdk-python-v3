@@ -27,7 +27,7 @@ class CreatePrivateNatTagRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """CreatePrivateNatTagRequest
+        r"""CreatePrivateNatTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePrivateNatTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreatePrivateNatTagRequest.
+        r"""Gets the resource_id of this CreatePrivateNatTagRequest.
 
         私网NAT网关的ID。
 
@@ -60,7 +60,7 @@ class CreatePrivateNatTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreatePrivateNatTagRequest.
+        r"""Sets the resource_id of this CreatePrivateNatTagRequest.
 
         私网NAT网关的ID。
 
@@ -71,7 +71,7 @@ class CreatePrivateNatTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePrivateNatTagRequest.
+        r"""Gets the body of this CreatePrivateNatTagRequest.
 
         :return: The body of this CreatePrivateNatTagRequest.
         :rtype: :class:`huaweicloudsdknat.v2.CreateResourceTagRequestBody`
@@ -80,7 +80,7 @@ class CreatePrivateNatTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePrivateNatTagRequest.
+        r"""Sets the body of this CreatePrivateNatTagRequest.
 
         :param body: The body of this CreatePrivateNatTagRequest.
         :type body: :class:`huaweicloudsdknat.v2.CreateResourceTagRequestBody`

@@ -35,7 +35,7 @@ class CompareTaskParams:
     }
 
     def __init__(self, compare_task_id=None, type=None, start_time=None, option=None, db_object=None, data_process_info=None):
-        """CompareTaskParams
+        r"""CompareTaskParams
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CompareTaskParams:
 
     @property
     def compare_task_id(self):
-        """Gets the compare_task_id of this CompareTaskParams.
+        r"""Gets the compare_task_id of this CompareTaskParams.
 
         取消对比任务必填。
 
@@ -89,7 +89,7 @@ class CompareTaskParams:
 
     @compare_task_id.setter
     def compare_task_id(self, compare_task_id):
-        """Sets the compare_task_id of this CompareTaskParams.
+        r"""Sets the compare_task_id of this CompareTaskParams.
 
         取消对比任务必填。
 
@@ -100,7 +100,7 @@ class CompareTaskParams:
 
     @property
     def type(self):
-        """Gets the type of this CompareTaskParams.
+        r"""Gets the type of this CompareTaskParams.
 
         对比任务模式。取值： - object：对象对比。 - lines：行数对比。 - contents：内容对比。
 
@@ -111,7 +111,7 @@ class CompareTaskParams:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CompareTaskParams.
+        r"""Sets the type of this CompareTaskParams.
 
         对比任务模式。取值： - object：对象对比。 - lines：行数对比。 - contents：内容对比。
 
@@ -122,7 +122,7 @@ class CompareTaskParams:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CompareTaskParams.
+        r"""Gets the start_time of this CompareTaskParams.
 
         定时启动时间，时间戳格式。
 
@@ -133,7 +133,7 @@ class CompareTaskParams:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CompareTaskParams.
+        r"""Sets the start_time of this CompareTaskParams.
 
         定时启动时间，时间戳格式。
 
@@ -144,7 +144,7 @@ class CompareTaskParams:
 
     @property
     def option(self):
-        """Gets the option of this CompareTaskParams.
+        r"""Gets the option of this CompareTaskParams.
 
         对比策略。
 
@@ -155,7 +155,7 @@ class CompareTaskParams:
 
     @option.setter
     def option(self, option):
-        """Sets the option of this CompareTaskParams.
+        r"""Sets the option of this CompareTaskParams.
 
         对比策略。
 
@@ -166,7 +166,7 @@ class CompareTaskParams:
 
     @property
     def db_object(self):
-        """Gets the db_object of this CompareTaskParams.
+        r"""Gets the db_object of this CompareTaskParams.
 
         对比选择对象。
 
@@ -177,7 +177,7 @@ class CompareTaskParams:
 
     @db_object.setter
     def db_object(self, db_object):
-        """Sets the db_object of this CompareTaskParams.
+        r"""Sets the db_object of this CompareTaskParams.
 
         对比选择对象。
 
@@ -188,7 +188,7 @@ class CompareTaskParams:
 
     @property
     def data_process_info(self):
-        """Gets the data_process_info of this CompareTaskParams.
+        r"""Gets the data_process_info of this CompareTaskParams.
 
         更新数据加工规则请求体
 
@@ -199,7 +199,7 @@ class CompareTaskParams:
 
     @data_process_info.setter
     def data_process_info(self, data_process_info):
-        """Sets the data_process_info of this CompareTaskParams.
+        r"""Sets the data_process_info of this CompareTaskParams.
 
         更新数据加工规则请求体
 

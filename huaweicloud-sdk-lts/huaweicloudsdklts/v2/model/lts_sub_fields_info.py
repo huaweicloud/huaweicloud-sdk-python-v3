@@ -37,7 +37,7 @@ class LTSSubFieldsInfo:
     }
 
     def __init__(self, field_type=None, field_name=None, case_sensitive=None, include_chinese=None, tokenizer=None, quick_analysis=None, ascii=None):
-        """LTSSubFieldsInfo
+        r"""LTSSubFieldsInfo
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class LTSSubFieldsInfo:
 
     @property
     def field_type(self):
-        """Gets the field_type of this LTSSubFieldsInfo.
+        r"""Gets the field_type of this LTSSubFieldsInfo.
 
         字段类型
 
@@ -94,7 +94,7 @@ class LTSSubFieldsInfo:
 
     @field_type.setter
     def field_type(self, field_type):
-        """Sets the field_type of this LTSSubFieldsInfo.
+        r"""Sets the field_type of this LTSSubFieldsInfo.
 
         字段类型
 
@@ -105,7 +105,7 @@ class LTSSubFieldsInfo:
 
     @property
     def field_name(self):
-        """Gets the field_name of this LTSSubFieldsInfo.
+        r"""Gets the field_name of this LTSSubFieldsInfo.
 
         字段名称
 
@@ -116,7 +116,7 @@ class LTSSubFieldsInfo:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this LTSSubFieldsInfo.
+        r"""Sets the field_name of this LTSSubFieldsInfo.
 
         字段名称
 
@@ -127,7 +127,7 @@ class LTSSubFieldsInfo:
 
     @property
     def case_sensitive(self):
-        """Gets the case_sensitive of this LTSSubFieldsInfo.
+        r"""Gets the case_sensitive of this LTSSubFieldsInfo.
 
         是否大小写敏感
 
@@ -138,7 +138,7 @@ class LTSSubFieldsInfo:
 
     @case_sensitive.setter
     def case_sensitive(self, case_sensitive):
-        """Sets the case_sensitive of this LTSSubFieldsInfo.
+        r"""Sets the case_sensitive of this LTSSubFieldsInfo.
 
         是否大小写敏感
 
@@ -149,7 +149,7 @@ class LTSSubFieldsInfo:
 
     @property
     def include_chinese(self):
-        """Gets the include_chinese of this LTSSubFieldsInfo.
+        r"""Gets the include_chinese of this LTSSubFieldsInfo.
 
         是否包含中文
 
@@ -160,7 +160,7 @@ class LTSSubFieldsInfo:
 
     @include_chinese.setter
     def include_chinese(self, include_chinese):
-        """Sets the include_chinese of this LTSSubFieldsInfo.
+        r"""Sets the include_chinese of this LTSSubFieldsInfo.
 
         是否包含中文
 
@@ -171,7 +171,7 @@ class LTSSubFieldsInfo:
 
     @property
     def tokenizer(self):
-        """Gets the tokenizer of this LTSSubFieldsInfo.
+        r"""Gets the tokenizer of this LTSSubFieldsInfo.
 
         分词符
 
@@ -182,7 +182,7 @@ class LTSSubFieldsInfo:
 
     @tokenizer.setter
     def tokenizer(self, tokenizer):
-        """Sets the tokenizer of this LTSSubFieldsInfo.
+        r"""Sets the tokenizer of this LTSSubFieldsInfo.
 
         分词符
 
@@ -193,7 +193,7 @@ class LTSSubFieldsInfo:
 
     @property
     def quick_analysis(self):
-        """Gets the quick_analysis of this LTSSubFieldsInfo.
+        r"""Gets the quick_analysis of this LTSSubFieldsInfo.
 
         是否快速分析
 
@@ -204,7 +204,7 @@ class LTSSubFieldsInfo:
 
     @quick_analysis.setter
     def quick_analysis(self, quick_analysis):
-        """Sets the quick_analysis of this LTSSubFieldsInfo.
+        r"""Sets the quick_analysis of this LTSSubFieldsInfo.
 
         是否快速分析
 
@@ -215,7 +215,7 @@ class LTSSubFieldsInfo:
 
     @property
     def ascii(self):
-        """Gets the ascii of this LTSSubFieldsInfo.
+        r"""Gets the ascii of this LTSSubFieldsInfo.
 
         特殊分词符
 
@@ -226,7 +226,7 @@ class LTSSubFieldsInfo:
 
     @ascii.setter
     def ascii(self, ascii):
-        """Sets the ascii of this LTSSubFieldsInfo.
+        r"""Sets the ascii of this LTSSubFieldsInfo.
 
         特殊分词符
 

@@ -37,7 +37,7 @@ class HISFastScript:
     }
 
     def __init__(self, script_type=None, cmd_user=None, script_content=None, ecs_id_list=None, name=None, project_id=None, script_args=None):
-        """HISFastScript
+        r"""HISFastScript
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class HISFastScript:
 
     @property
     def script_type(self):
-        """Gets the script_type of this HISFastScript.
+        r"""Gets the script_type of this HISFastScript.
 
         脚本类型。SHELL BAT PYTHON POWER_SHELL
 
@@ -90,7 +90,7 @@ class HISFastScript:
 
     @script_type.setter
     def script_type(self, script_type):
-        """Sets the script_type of this HISFastScript.
+        r"""Sets the script_type of this HISFastScript.
 
         脚本类型。SHELL BAT PYTHON POWER_SHELL
 
@@ -101,7 +101,7 @@ class HISFastScript:
 
     @property
     def cmd_user(self):
-        """Gets the cmd_user of this HISFastScript.
+        r"""Gets the cmd_user of this HISFastScript.
 
         执行脚本的ECS机器用户。
 
@@ -112,7 +112,7 @@ class HISFastScript:
 
     @cmd_user.setter
     def cmd_user(self, cmd_user):
-        """Sets the cmd_user of this HISFastScript.
+        r"""Sets the cmd_user of this HISFastScript.
 
         执行脚本的ECS机器用户。
 
@@ -123,7 +123,7 @@ class HISFastScript:
 
     @property
     def script_content(self):
-        """Gets the script_content of this HISFastScript.
+        r"""Gets the script_content of this HISFastScript.
 
         脚本内容。
 
@@ -134,7 +134,7 @@ class HISFastScript:
 
     @script_content.setter
     def script_content(self, script_content):
-        """Sets the script_content of this HISFastScript.
+        r"""Sets the script_content of this HISFastScript.
 
         脚本内容。
 
@@ -145,7 +145,7 @@ class HISFastScript:
 
     @property
     def ecs_id_list(self):
-        """Gets the ecs_id_list of this HISFastScript.
+        r"""Gets the ecs_id_list of this HISFastScript.
 
         执行的机器列表。
 
@@ -156,7 +156,7 @@ class HISFastScript:
 
     @ecs_id_list.setter
     def ecs_id_list(self, ecs_id_list):
-        """Sets the ecs_id_list of this HISFastScript.
+        r"""Sets the ecs_id_list of this HISFastScript.
 
         执行的机器列表。
 
@@ -167,7 +167,7 @@ class HISFastScript:
 
     @property
     def name(self):
-        """Gets the name of this HISFastScript.
+        r"""Gets the name of this HISFastScript.
 
         任务名称。
 
@@ -178,7 +178,7 @@ class HISFastScript:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HISFastScript.
+        r"""Sets the name of this HISFastScript.
 
         任务名称。
 
@@ -189,7 +189,7 @@ class HISFastScript:
 
     @property
     def project_id(self):
-        """Gets the project_id of this HISFastScript.
+        r"""Gets the project_id of this HISFastScript.
 
         项目ID。
 
@@ -200,7 +200,7 @@ class HISFastScript:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this HISFastScript.
+        r"""Sets the project_id of this HISFastScript.
 
         项目ID。
 
@@ -211,7 +211,7 @@ class HISFastScript:
 
     @property
     def script_args(self):
-        """Gets the script_args of this HISFastScript.
+        r"""Gets the script_args of this HISFastScript.
 
         任务参数，多个参数以空格分隔。
 
@@ -222,7 +222,7 @@ class HISFastScript:
 
     @script_args.setter
     def script_args(self, script_args):
-        """Sets the script_args of this HISFastScript.
+        r"""Sets the script_args of this HISFastScript.
 
         任务参数，多个参数以空格分隔。
 

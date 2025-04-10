@@ -31,7 +31,7 @@ class ListMigrationTaskLogsRequest:
     }
 
     def __init__(self, task_id=None, offset=None, limit=None, log_level=None):
-        """ListMigrationTaskLogsRequest
+        r"""ListMigrationTaskLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListMigrationTaskLogsRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListMigrationTaskLogsRequest.
+        r"""Gets the task_id of this ListMigrationTaskLogsRequest.
 
         任务ID
 
@@ -74,7 +74,7 @@ class ListMigrationTaskLogsRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListMigrationTaskLogsRequest.
+        r"""Sets the task_id of this ListMigrationTaskLogsRequest.
 
         任务ID
 
@@ -85,7 +85,7 @@ class ListMigrationTaskLogsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMigrationTaskLogsRequest.
+        r"""Gets the offset of this ListMigrationTaskLogsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -96,7 +96,7 @@ class ListMigrationTaskLogsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMigrationTaskLogsRequest.
+        r"""Sets the offset of this ListMigrationTaskLogsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -107,7 +107,7 @@ class ListMigrationTaskLogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMigrationTaskLogsRequest.
+        r"""Gets the limit of this ListMigrationTaskLogsRequest.
 
         每页显示的条目数量。
 
@@ -118,7 +118,7 @@ class ListMigrationTaskLogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMigrationTaskLogsRequest.
+        r"""Sets the limit of this ListMigrationTaskLogsRequest.
 
         每页显示的条目数量。
 
@@ -129,7 +129,7 @@ class ListMigrationTaskLogsRequest:
 
     @property
     def log_level(self):
-        """Gets the log_level of this ListMigrationTaskLogsRequest.
+        r"""Gets the log_level of this ListMigrationTaskLogsRequest.
 
         日志级别
 
@@ -140,7 +140,7 @@ class ListMigrationTaskLogsRequest:
 
     @log_level.setter
     def log_level(self, log_level):
-        """Sets the log_level of this ListMigrationTaskLogsRequest.
+        r"""Sets the log_level of this ListMigrationTaskLogsRequest.
 
         日志级别
 

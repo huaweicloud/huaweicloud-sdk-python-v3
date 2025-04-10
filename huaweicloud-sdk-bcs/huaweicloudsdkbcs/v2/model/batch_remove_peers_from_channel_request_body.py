@@ -27,7 +27,7 @@ class BatchRemovePeersFromChannelRequestBody:
     }
 
     def __init__(self, org_name=None, peers=None):
-        """BatchRemovePeersFromChannelRequestBody
+        r"""BatchRemovePeersFromChannelRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchRemovePeersFromChannelRequestBody:
 
     @property
     def org_name(self):
-        """Gets the org_name of this BatchRemovePeersFromChannelRequestBody.
+        r"""Gets the org_name of this BatchRemovePeersFromChannelRequestBody.
 
         组织名称。仅可输入一个组织名称
 
@@ -59,7 +59,7 @@ class BatchRemovePeersFromChannelRequestBody:
 
     @org_name.setter
     def org_name(self, org_name):
-        """Sets the org_name of this BatchRemovePeersFromChannelRequestBody.
+        r"""Sets the org_name of this BatchRemovePeersFromChannelRequestBody.
 
         组织名称。仅可输入一个组织名称
 
@@ -70,7 +70,7 @@ class BatchRemovePeersFromChannelRequestBody:
 
     @property
     def peers(self):
-        """Gets the peers of this BatchRemovePeersFromChannelRequestBody.
+        r"""Gets the peers of this BatchRemovePeersFromChannelRequestBody.
 
         要退出的节点个数。取值范围(0, 组织中节点总数)
 
@@ -81,7 +81,7 @@ class BatchRemovePeersFromChannelRequestBody:
 
     @peers.setter
     def peers(self, peers):
-        """Sets the peers of this BatchRemovePeersFromChannelRequestBody.
+        r"""Sets the peers of this BatchRemovePeersFromChannelRequestBody.
 
         要退出的节点个数。取值范围(0, 组织中节点总数)
 

@@ -31,7 +31,7 @@ class AgencyAssumedbyUser:
     }
 
     def __init__(self, name=None, id=None, domain=None, password_expires_at=None):
-        """AgencyAssumedbyUser
+        r"""AgencyAssumedbyUser
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class AgencyAssumedbyUser:
 
     @property
     def name(self):
-        """Gets the name of this AgencyAssumedbyUser.
+        r"""Gets the name of this AgencyAssumedbyUser.
 
         被委托方B中IAM用户的用户名。
 
@@ -71,7 +71,7 @@ class AgencyAssumedbyUser:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgencyAssumedbyUser.
+        r"""Sets the name of this AgencyAssumedbyUser.
 
         被委托方B中IAM用户的用户名。
 
@@ -82,7 +82,7 @@ class AgencyAssumedbyUser:
 
     @property
     def id(self):
-        """Gets the id of this AgencyAssumedbyUser.
+        r"""Gets the id of this AgencyAssumedbyUser.
 
         被委托方B中IAM用户的用户ID。
 
@@ -93,7 +93,7 @@ class AgencyAssumedbyUser:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AgencyAssumedbyUser.
+        r"""Sets the id of this AgencyAssumedbyUser.
 
         被委托方B中IAM用户的用户ID。
 
@@ -104,7 +104,7 @@ class AgencyAssumedbyUser:
 
     @property
     def domain(self):
-        """Gets the domain of this AgencyAssumedbyUser.
+        r"""Gets the domain of this AgencyAssumedbyUser.
 
         :return: The domain of this AgencyAssumedbyUser.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyAssumedbyUserDomain`
@@ -113,7 +113,7 @@ class AgencyAssumedbyUser:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AgencyAssumedbyUser.
+        r"""Sets the domain of this AgencyAssumedbyUser.
 
         :param domain: The domain of this AgencyAssumedbyUser.
         :type domain: :class:`huaweicloudsdkiam.v3.AgencyAssumedbyUserDomain`
@@ -122,7 +122,7 @@ class AgencyAssumedbyUser:
 
     @property
     def password_expires_at(self):
-        """Gets the password_expires_at of this AgencyAssumedbyUser.
+        r"""Gets the password_expires_at of this AgencyAssumedbyUser.
 
         被委托方B中IAM用户的密码过期时间（UTC时间），“”表示密码不过期。
 
@@ -133,7 +133,7 @@ class AgencyAssumedbyUser:
 
     @password_expires_at.setter
     def password_expires_at(self, password_expires_at):
-        """Sets the password_expires_at of this AgencyAssumedbyUser.
+        r"""Sets the password_expires_at of this AgencyAssumedbyUser.
 
         被委托方B中IAM用户的密码过期时间（UTC时间），“”表示密码不过期。
 

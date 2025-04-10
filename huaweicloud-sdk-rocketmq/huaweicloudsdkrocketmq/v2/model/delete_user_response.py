@@ -26,7 +26,7 @@ class DeleteUserResponse(SdkResponse):
     }
 
     def __init__(self, message=None):
-        """DeleteUserResponse
+        r"""DeleteUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteUserResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteUserResponse.
+        r"""Gets the message of this DeleteUserResponse.
 
         信息。
 
@@ -55,7 +55,7 @@ class DeleteUserResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteUserResponse.
+        r"""Sets the message of this DeleteUserResponse.
 
         信息。
 

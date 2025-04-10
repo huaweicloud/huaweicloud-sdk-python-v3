@@ -29,7 +29,7 @@ class ConfirmTargetDBReq:
     }
 
     def __init__(self, evaluation_project_id=None, target_db_type=None, target_db_version=None):
-        """ConfirmTargetDBReq
+        r"""ConfirmTargetDBReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ConfirmTargetDBReq:
 
     @property
     def evaluation_project_id(self):
-        """Gets the evaluation_project_id of this ConfirmTargetDBReq.
+        r"""Gets the evaluation_project_id of this ConfirmTargetDBReq.
 
         评估项目ID。
 
@@ -65,7 +65,7 @@ class ConfirmTargetDBReq:
 
     @evaluation_project_id.setter
     def evaluation_project_id(self, evaluation_project_id):
-        """Sets the evaluation_project_id of this ConfirmTargetDBReq.
+        r"""Sets the evaluation_project_id of this ConfirmTargetDBReq.
 
         评估项目ID。
 
@@ -76,7 +76,7 @@ class ConfirmTargetDBReq:
 
     @property
     def target_db_type(self):
-        """Gets the target_db_type of this ConfirmTargetDBReq.
+        r"""Gets the target_db_type of this ConfirmTargetDBReq.
 
         目标数据库类型。
 
@@ -87,7 +87,7 @@ class ConfirmTargetDBReq:
 
     @target_db_type.setter
     def target_db_type(self, target_db_type):
-        """Sets the target_db_type of this ConfirmTargetDBReq.
+        r"""Sets the target_db_type of this ConfirmTargetDBReq.
 
         目标数据库类型。
 
@@ -98,7 +98,7 @@ class ConfirmTargetDBReq:
 
     @property
     def target_db_version(self):
-        """Gets the target_db_version of this ConfirmTargetDBReq.
+        r"""Gets the target_db_version of this ConfirmTargetDBReq.
 
         目标数据库版本。
 
@@ -109,7 +109,7 @@ class ConfirmTargetDBReq:
 
     @target_db_version.setter
     def target_db_version(self, target_db_version):
-        """Sets the target_db_version of this ConfirmTargetDBReq.
+        r"""Sets the target_db_version of this ConfirmTargetDBReq.
 
         目标数据库版本。
 

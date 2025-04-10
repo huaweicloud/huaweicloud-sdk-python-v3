@@ -29,7 +29,7 @@ class ListControlsForOrganizationalUnitRequest:
     }
 
     def __init__(self, managed_organizational_unit_id=None, limit=None, marker=None):
-        """ListControlsForOrganizationalUnitRequest
+        r"""ListControlsForOrganizationalUnitRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListControlsForOrganizationalUnitRequest:
 
     @property
     def managed_organizational_unit_id(self):
-        """Gets the managed_organizational_unit_id of this ListControlsForOrganizationalUnitRequest.
+        r"""Gets the managed_organizational_unit_id of this ListControlsForOrganizationalUnitRequest.
 
         注册OU ID。
 
@@ -67,7 +67,7 @@ class ListControlsForOrganizationalUnitRequest:
 
     @managed_organizational_unit_id.setter
     def managed_organizational_unit_id(self, managed_organizational_unit_id):
-        """Sets the managed_organizational_unit_id of this ListControlsForOrganizationalUnitRequest.
+        r"""Sets the managed_organizational_unit_id of this ListControlsForOrganizationalUnitRequest.
 
         注册OU ID。
 
@@ -78,7 +78,7 @@ class ListControlsForOrganizationalUnitRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListControlsForOrganizationalUnitRequest.
+        r"""Gets the limit of this ListControlsForOrganizationalUnitRequest.
 
         分页页面的最大值。
 
@@ -89,7 +89,7 @@ class ListControlsForOrganizationalUnitRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListControlsForOrganizationalUnitRequest.
+        r"""Sets the limit of this ListControlsForOrganizationalUnitRequest.
 
         分页页面的最大值。
 
@@ -100,7 +100,7 @@ class ListControlsForOrganizationalUnitRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListControlsForOrganizationalUnitRequest.
+        r"""Gets the marker of this ListControlsForOrganizationalUnitRequest.
 
         页面标记。
 
@@ -111,7 +111,7 @@ class ListControlsForOrganizationalUnitRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListControlsForOrganizationalUnitRequest.
+        r"""Sets the marker of this ListControlsForOrganizationalUnitRequest.
 
         页面标记。
 

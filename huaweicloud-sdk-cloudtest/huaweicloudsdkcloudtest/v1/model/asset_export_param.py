@@ -31,7 +31,7 @@ class AssetExportParam:
     }
 
     def __init__(self, project_id=None, asset_id=None, parent_id=None, factor_ids=None):
-        """AssetExportParam
+        r"""AssetExportParam
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AssetExportParam:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AssetExportParam.
+        r"""Gets the project_id of this AssetExportParam.
 
         项目ID
 
@@ -75,7 +75,7 @@ class AssetExportParam:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AssetExportParam.
+        r"""Sets the project_id of this AssetExportParam.
 
         项目ID
 
@@ -86,7 +86,7 @@ class AssetExportParam:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this AssetExportParam.
+        r"""Gets the asset_id of this AssetExportParam.
 
         资产ID
 
@@ -97,7 +97,7 @@ class AssetExportParam:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this AssetExportParam.
+        r"""Sets the asset_id of this AssetExportParam.
 
         资产ID
 
@@ -108,7 +108,7 @@ class AssetExportParam:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this AssetExportParam.
+        r"""Gets the parent_id of this AssetExportParam.
 
         父节点ID
 
@@ -119,7 +119,7 @@ class AssetExportParam:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this AssetExportParam.
+        r"""Sets the parent_id of this AssetExportParam.
 
         父节点ID
 
@@ -130,7 +130,7 @@ class AssetExportParam:
 
     @property
     def factor_ids(self):
-        """Gets the factor_ids of this AssetExportParam.
+        r"""Gets the factor_ids of this AssetExportParam.
 
         因子列表
 
@@ -141,7 +141,7 @@ class AssetExportParam:
 
     @factor_ids.setter
     def factor_ids(self, factor_ids):
-        """Sets the factor_ids of this AssetExportParam.
+        r"""Sets the factor_ids of this AssetExportParam.
 
         因子列表
 

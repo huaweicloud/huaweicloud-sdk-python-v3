@@ -25,7 +25,7 @@ class CreateMemberRequestBody:
     }
 
     def __init__(self, member=None):
-        """CreateMemberRequestBody
+        r"""CreateMemberRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateMemberRequestBody:
 
     @property
     def member(self):
-        """Gets the member of this CreateMemberRequestBody.
+        r"""Gets the member of this CreateMemberRequestBody.
 
         :return: The member of this CreateMemberRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v2.CreateMemberReq`
@@ -51,7 +51,7 @@ class CreateMemberRequestBody:
 
     @member.setter
     def member(self, member):
-        """Sets the member of this CreateMemberRequestBody.
+        r"""Sets the member of this CreateMemberRequestBody.
 
         :param member: The member of this CreateMemberRequestBody.
         :type member: :class:`huaweicloudsdkelb.v2.CreateMemberReq`

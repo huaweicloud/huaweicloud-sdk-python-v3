@@ -29,7 +29,7 @@ class DeleteConsumerGroupRequest:
     }
 
     def __init__(self, group_id=None, stream_id=None, consumer_group_name=None):
-        """DeleteConsumerGroupRequest
+        r"""DeleteConsumerGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteConsumerGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeleteConsumerGroupRequest.
+        r"""Gets the group_id of this DeleteConsumerGroupRequest.
 
         日志组ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID。 缺省值：None 最小长度：36 最大长度：36
 
@@ -65,7 +65,7 @@ class DeleteConsumerGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeleteConsumerGroupRequest.
+        r"""Sets the group_id of this DeleteConsumerGroupRequest.
 
         日志组ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID。 缺省值：None 最小长度：36 最大长度：36
 
@@ -76,7 +76,7 @@ class DeleteConsumerGroupRequest:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this DeleteConsumerGroupRequest.
+        r"""Gets the stream_id of this DeleteConsumerGroupRequest.
 
         日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID 缺省值：None 最小长度：36 最大长度：36
 
@@ -87,7 +87,7 @@ class DeleteConsumerGroupRequest:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this DeleteConsumerGroupRequest.
+        r"""Sets the stream_id of this DeleteConsumerGroupRequest.
 
         日志流ID，获取方式请参见：获取项目ID，获取账号ID，日志组ID、日志流ID 缺省值：None 最小长度：36 最大长度：36
 
@@ -98,7 +98,7 @@ class DeleteConsumerGroupRequest:
 
     @property
     def consumer_group_name(self):
-        """Gets the consumer_group_name of this DeleteConsumerGroupRequest.
+        r"""Gets the consumer_group_name of this DeleteConsumerGroupRequest.
 
         消费组名称
 
@@ -109,7 +109,7 @@ class DeleteConsumerGroupRequest:
 
     @consumer_group_name.setter
     def consumer_group_name(self, consumer_group_name):
-        """Sets the consumer_group_name of this DeleteConsumerGroupRequest.
+        r"""Sets the consumer_group_name of this DeleteConsumerGroupRequest.
 
         消费组名称
 

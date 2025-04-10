@@ -28,7 +28,7 @@ class ListMigrationProjectsResponse(SdkResponse):
     }
 
     def __init__(self, migration_projects=None, total_count=None):
-        """ListMigrationProjectsResponse
+        r"""ListMigrationProjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMigrationProjectsResponse(SdkResponse):
 
     @property
     def migration_projects(self):
-        """Gets the migration_projects of this ListMigrationProjectsResponse.
+        r"""Gets the migration_projects of this ListMigrationProjectsResponse.
 
         当前页的迁移项目列表。
 
@@ -62,7 +62,7 @@ class ListMigrationProjectsResponse(SdkResponse):
 
     @migration_projects.setter
     def migration_projects(self, migration_projects):
-        """Sets the migration_projects of this ListMigrationProjectsResponse.
+        r"""Sets the migration_projects of this ListMigrationProjectsResponse.
 
         当前页的迁移项目列表。
 
@@ -73,7 +73,7 @@ class ListMigrationProjectsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListMigrationProjectsResponse.
+        r"""Gets the total_count of this ListMigrationProjectsResponse.
 
         迁移项目总数。
 
@@ -84,7 +84,7 @@ class ListMigrationProjectsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListMigrationProjectsResponse.
+        r"""Sets the total_count of this ListMigrationProjectsResponse.
 
         迁移项目总数。
 

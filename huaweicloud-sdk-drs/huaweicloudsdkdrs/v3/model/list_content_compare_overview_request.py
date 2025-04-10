@@ -33,7 +33,7 @@ class ListContentCompareOverviewRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, compare_job_id=None, limit=None, offset=None):
-        """ListContentCompareOverviewRequest
+        r"""ListContentCompareOverviewRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListContentCompareOverviewRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListContentCompareOverviewRequest.
+        r"""Gets the x_language of this ListContentCompareOverviewRequest.
 
         请求语言类型。
 
@@ -80,7 +80,7 @@ class ListContentCompareOverviewRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListContentCompareOverviewRequest.
+        r"""Sets the x_language of this ListContentCompareOverviewRequest.
 
         请求语言类型。
 
@@ -91,7 +91,7 @@ class ListContentCompareOverviewRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListContentCompareOverviewRequest.
+        r"""Gets the job_id of this ListContentCompareOverviewRequest.
 
         任务ID。
 
@@ -102,7 +102,7 @@ class ListContentCompareOverviewRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListContentCompareOverviewRequest.
+        r"""Sets the job_id of this ListContentCompareOverviewRequest.
 
         任务ID。
 
@@ -113,7 +113,7 @@ class ListContentCompareOverviewRequest:
 
     @property
     def compare_job_id(self):
-        """Gets the compare_job_id of this ListContentCompareOverviewRequest.
+        r"""Gets the compare_job_id of this ListContentCompareOverviewRequest.
 
         对比任务ID。
 
@@ -124,7 +124,7 @@ class ListContentCompareOverviewRequest:
 
     @compare_job_id.setter
     def compare_job_id(self, compare_job_id):
-        """Sets the compare_job_id of this ListContentCompareOverviewRequest.
+        r"""Sets the compare_job_id of this ListContentCompareOverviewRequest.
 
         对比任务ID。
 
@@ -135,7 +135,7 @@ class ListContentCompareOverviewRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListContentCompareOverviewRequest.
+        r"""Gets the limit of this ListContentCompareOverviewRequest.
 
         每页显示的条目数量，最大值1000。
 
@@ -146,7 +146,7 @@ class ListContentCompareOverviewRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListContentCompareOverviewRequest.
+        r"""Sets the limit of this ListContentCompareOverviewRequest.
 
         每页显示的条目数量，最大值1000。
 
@@ -157,7 +157,7 @@ class ListContentCompareOverviewRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListContentCompareOverviewRequest.
+        r"""Gets the offset of this ListContentCompareOverviewRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -168,7 +168,7 @@ class ListContentCompareOverviewRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListContentCompareOverviewRequest.
+        r"""Sets the offset of this ListContentCompareOverviewRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 

@@ -29,7 +29,7 @@ class ShowExtremumInfoRequest:
     }
 
     def __init__(self, eihealth_project_id=None, study_id=None, job_id=None):
-        """ShowExtremumInfoRequest
+        r"""ShowExtremumInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowExtremumInfoRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowExtremumInfoRequest.
+        r"""Gets the eihealth_project_id of this ShowExtremumInfoRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -65,7 +65,7 @@ class ShowExtremumInfoRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowExtremumInfoRequest.
+        r"""Sets the eihealth_project_id of this ShowExtremumInfoRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -76,7 +76,7 @@ class ShowExtremumInfoRequest:
 
     @property
     def study_id(self):
-        """Gets the study_id of this ShowExtremumInfoRequest.
+        r"""Gets the study_id of this ShowExtremumInfoRequest.
 
         study_id
 
@@ -87,7 +87,7 @@ class ShowExtremumInfoRequest:
 
     @study_id.setter
     def study_id(self, study_id):
-        """Sets the study_id of this ShowExtremumInfoRequest.
+        r"""Sets the study_id of this ShowExtremumInfoRequest.
 
         study_id
 
@@ -98,7 +98,7 @@ class ShowExtremumInfoRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowExtremumInfoRequest.
+        r"""Gets the job_id of this ShowExtremumInfoRequest.
 
         study作业id
 
@@ -109,7 +109,7 @@ class ShowExtremumInfoRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowExtremumInfoRequest.
+        r"""Sets the job_id of this ShowExtremumInfoRequest.
 
         study作业id
 

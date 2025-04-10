@@ -25,7 +25,7 @@ class CreateEcDatakeyPairRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEcDatakeyPairRequest
+        r"""CreateEcDatakeyPairRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateEcDatakeyPairRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEcDatakeyPairRequest.
+        r"""Gets the body of this CreateEcDatakeyPairRequest.
 
         :return: The body of this CreateEcDatakeyPairRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.CreateEcDatakeyPairRequestBody`
@@ -52,7 +52,7 @@ class CreateEcDatakeyPairRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEcDatakeyPairRequest.
+        r"""Sets the body of this CreateEcDatakeyPairRequest.
 
         :param body: The body of this CreateEcDatakeyPairRequest.
         :type body: :class:`huaweicloudsdkkms.v2.CreateEcDatakeyPairRequestBody`

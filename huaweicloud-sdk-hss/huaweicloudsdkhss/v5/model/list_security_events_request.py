@@ -39,7 +39,8 @@ class ListSecurityEventsRequest:
         'asset_value': 'str',
         'tag_list': 'list[str]',
         'att_ck': 'str',
-        'event_name': 'str'
+        'event_name': 'str',
+        'auto_block': 'bool'
     }
 
     attribute_map = {
@@ -65,11 +66,12 @@ class ListSecurityEventsRequest:
         'asset_value': 'asset_value',
         'tag_list': 'tag_list',
         'att_ck': 'att_ck',
-        'event_name': 'event_name'
+        'event_name': 'event_name',
+        'auto_block': 'auto_block'
     }
 
-    def __init__(self, category=None, region=None, enterprise_project_id=None, last_days=None, host_name=None, host_id=None, private_ip=None, public_ip=None, container_name=None, offset=None, limit=None, event_types=None, handle_status=None, severity=None, begin_time=None, end_time=None, event_class_ids=None, severity_list=None, attack_tag=None, asset_value=None, tag_list=None, att_ck=None, event_name=None):
-        """ListSecurityEventsRequest
+    def __init__(self, category=None, region=None, enterprise_project_id=None, last_days=None, host_name=None, host_id=None, private_ip=None, public_ip=None, container_name=None, offset=None, limit=None, event_types=None, handle_status=None, severity=None, begin_time=None, end_time=None, event_class_ids=None, severity_list=None, attack_tag=None, asset_value=None, tag_list=None, att_ck=None, event_name=None, auto_block=None):
+        r"""ListSecurityEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +79,7 @@ class ListSecurityEventsRequest:
         :type category: str
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param last_days: 查询时间范围天数，与自定义查询时间begin_time，end_time互斥
         :type last_days: int
@@ -119,6 +121,8 @@ class ListSecurityEventsRequest:
         :type att_ck: str
         :param event_name: 告警名称
         :type event_name: str
+        :param auto_block: 是否自动阻断告警
+        :type auto_block: bool
         """
         
         
@@ -146,6 +150,7 @@ class ListSecurityEventsRequest:
         self._tag_list = None
         self._att_ck = None
         self._event_name = None
+        self._auto_block = None
         self.discriminator = None
 
         self.category = category
@@ -192,10 +197,12 @@ class ListSecurityEventsRequest:
             self.att_ck = att_ck
         if event_name is not None:
             self.event_name = event_name
+        if auto_block is not None:
+            self.auto_block = auto_block
 
     @property
     def category(self):
-        """Gets the category of this ListSecurityEventsRequest.
+        r"""Gets the category of this ListSecurityEventsRequest.
 
         事件类别，包含如下:   - host : 主机安全事件   - container : 容器安全事件
 
@@ -206,7 +213,7 @@ class ListSecurityEventsRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListSecurityEventsRequest.
+        r"""Sets the category of this ListSecurityEventsRequest.
 
         事件类别，包含如下:   - host : 主机安全事件   - container : 容器安全事件
 
@@ -217,7 +224,7 @@ class ListSecurityEventsRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListSecurityEventsRequest.
+        r"""Gets the region of this ListSecurityEventsRequest.
 
         Region ID
 
@@ -228,7 +235,7 @@ class ListSecurityEventsRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListSecurityEventsRequest.
+        r"""Sets the region of this ListSecurityEventsRequest.
 
         Region ID
 
@@ -239,9 +246,9 @@ class ListSecurityEventsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListSecurityEventsRequest.
+        r"""Gets the enterprise_project_id of this ListSecurityEventsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListSecurityEventsRequest.
         :rtype: str
@@ -250,9 +257,9 @@ class ListSecurityEventsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListSecurityEventsRequest.
+        r"""Sets the enterprise_project_id of this ListSecurityEventsRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListSecurityEventsRequest.
         :type enterprise_project_id: str
@@ -261,7 +268,7 @@ class ListSecurityEventsRequest:
 
     @property
     def last_days(self):
-        """Gets the last_days of this ListSecurityEventsRequest.
+        r"""Gets the last_days of this ListSecurityEventsRequest.
 
         查询时间范围天数，与自定义查询时间begin_time，end_time互斥
 
@@ -272,7 +279,7 @@ class ListSecurityEventsRequest:
 
     @last_days.setter
     def last_days(self, last_days):
-        """Sets the last_days of this ListSecurityEventsRequest.
+        r"""Sets the last_days of this ListSecurityEventsRequest.
 
         查询时间范围天数，与自定义查询时间begin_time，end_time互斥
 
@@ -283,7 +290,7 @@ class ListSecurityEventsRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListSecurityEventsRequest.
+        r"""Gets the host_name of this ListSecurityEventsRequest.
 
         服务器名称
 
@@ -294,7 +301,7 @@ class ListSecurityEventsRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListSecurityEventsRequest.
+        r"""Sets the host_name of this ListSecurityEventsRequest.
 
         服务器名称
 
@@ -305,7 +312,7 @@ class ListSecurityEventsRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListSecurityEventsRequest.
+        r"""Gets the host_id of this ListSecurityEventsRequest.
 
         主机ID
 
@@ -316,7 +323,7 @@ class ListSecurityEventsRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListSecurityEventsRequest.
+        r"""Sets the host_id of this ListSecurityEventsRequest.
 
         主机ID
 
@@ -327,7 +334,7 @@ class ListSecurityEventsRequest:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ListSecurityEventsRequest.
+        r"""Gets the private_ip of this ListSecurityEventsRequest.
 
         服务器私有IP
 
@@ -338,7 +345,7 @@ class ListSecurityEventsRequest:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ListSecurityEventsRequest.
+        r"""Sets the private_ip of this ListSecurityEventsRequest.
 
         服务器私有IP
 
@@ -349,7 +356,7 @@ class ListSecurityEventsRequest:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ListSecurityEventsRequest.
+        r"""Gets the public_ip of this ListSecurityEventsRequest.
 
         服务器公网IP
 
@@ -360,7 +367,7 @@ class ListSecurityEventsRequest:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ListSecurityEventsRequest.
+        r"""Sets the public_ip of this ListSecurityEventsRequest.
 
         服务器公网IP
 
@@ -371,7 +378,7 @@ class ListSecurityEventsRequest:
 
     @property
     def container_name(self):
-        """Gets the container_name of this ListSecurityEventsRequest.
+        r"""Gets the container_name of this ListSecurityEventsRequest.
 
         容器实例名称
 
@@ -382,7 +389,7 @@ class ListSecurityEventsRequest:
 
     @container_name.setter
     def container_name(self, container_name):
-        """Sets the container_name of this ListSecurityEventsRequest.
+        r"""Sets the container_name of this ListSecurityEventsRequest.
 
         容器实例名称
 
@@ -393,7 +400,7 @@ class ListSecurityEventsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecurityEventsRequest.
+        r"""Gets the offset of this ListSecurityEventsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -404,7 +411,7 @@ class ListSecurityEventsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecurityEventsRequest.
+        r"""Sets the offset of this ListSecurityEventsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -415,7 +422,7 @@ class ListSecurityEventsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityEventsRequest.
+        r"""Gets the limit of this ListSecurityEventsRequest.
 
         每页显示个数
 
@@ -426,7 +433,7 @@ class ListSecurityEventsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityEventsRequest.
+        r"""Sets the limit of this ListSecurityEventsRequest.
 
         每页显示个数
 
@@ -437,7 +444,7 @@ class ListSecurityEventsRequest:
 
     @property
     def event_types(self):
-        """Gets the event_types of this ListSecurityEventsRequest.
+        r"""Gets the event_types of this ListSecurityEventsRequest.
 
         事件类型，包含如下:   - 1001 : 通用恶意软件   - 1002 : 病毒   - 1003 : 蠕虫   - 1004 : 木马   - 1005 : 僵尸网络   - 1006 : 后门   - 1010 : Rootkit   - 1011 : 勒索软件   - 1012 ：黑客工具   - 1015 : Webshell   - 1016 : 挖矿   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2012 : 远程代码执行   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3026 : crontab提权   - 3027 : Crontab可疑任务   - 3029 ：系统安全防护被禁用   - 3030 ：备份删除   - 3031 ：异常注册表操作   - 3036 : 容器镜像阻断   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号   - 4014 : 用户账号添加   - 4020 : 用户密码窃取   - 6002 : 端口扫描   - 6003 : 主机扫描   - 13001 : Kubernetes事件删除   - 13002 : Pod异常行为   - 13003 : 枚举用户信息   - 13004 : 绑定集群用户角色
 
@@ -448,7 +455,7 @@ class ListSecurityEventsRequest:
 
     @event_types.setter
     def event_types(self, event_types):
-        """Sets the event_types of this ListSecurityEventsRequest.
+        r"""Sets the event_types of this ListSecurityEventsRequest.
 
         事件类型，包含如下:   - 1001 : 通用恶意软件   - 1002 : 病毒   - 1003 : 蠕虫   - 1004 : 木马   - 1005 : 僵尸网络   - 1006 : 后门   - 1010 : Rootkit   - 1011 : 勒索软件   - 1012 ：黑客工具   - 1015 : Webshell   - 1016 : 挖矿   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2012 : 远程代码执行   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3026 : crontab提权   - 3027 : Crontab可疑任务   - 3029 ：系统安全防护被禁用   - 3030 ：备份删除   - 3031 ：异常注册表操作   - 3036 : 容器镜像阻断   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号   - 4014 : 用户账号添加   - 4020 : 用户密码窃取   - 6002 : 端口扫描   - 6003 : 主机扫描   - 13001 : Kubernetes事件删除   - 13002 : Pod异常行为   - 13003 : 枚举用户信息   - 13004 : 绑定集群用户角色
 
@@ -459,7 +466,7 @@ class ListSecurityEventsRequest:
 
     @property
     def handle_status(self):
-        """Gets the handle_status of this ListSecurityEventsRequest.
+        r"""Gets the handle_status of this ListSecurityEventsRequest.
 
         处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
 
@@ -470,7 +477,7 @@ class ListSecurityEventsRequest:
 
     @handle_status.setter
     def handle_status(self, handle_status):
-        """Sets the handle_status of this ListSecurityEventsRequest.
+        r"""Sets the handle_status of this ListSecurityEventsRequest.
 
         处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
 
@@ -481,7 +488,7 @@ class ListSecurityEventsRequest:
 
     @property
     def severity(self):
-        """Gets the severity of this ListSecurityEventsRequest.
+        r"""Gets the severity of this ListSecurityEventsRequest.
 
         威胁等级，包含如下:   - Security ：安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
 
@@ -492,7 +499,7 @@ class ListSecurityEventsRequest:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ListSecurityEventsRequest.
+        r"""Sets the severity of this ListSecurityEventsRequest.
 
         威胁等级，包含如下:   - Security ：安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
 
@@ -503,7 +510,7 @@ class ListSecurityEventsRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListSecurityEventsRequest.
+        r"""Gets the begin_time of this ListSecurityEventsRequest.
 
         自定义查询时间，与查询时间范围天数互斥，查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
 
@@ -514,7 +521,7 @@ class ListSecurityEventsRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListSecurityEventsRequest.
+        r"""Sets the begin_time of this ListSecurityEventsRequest.
 
         自定义查询时间，与查询时间范围天数互斥，查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
 
@@ -525,7 +532,7 @@ class ListSecurityEventsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListSecurityEventsRequest.
+        r"""Gets the end_time of this ListSecurityEventsRequest.
 
         自定义时间，查询时间段的终止时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
 
@@ -536,7 +543,7 @@ class ListSecurityEventsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListSecurityEventsRequest.
+        r"""Sets the end_time of this ListSecurityEventsRequest.
 
         自定义时间，查询时间段的终止时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
 
@@ -547,7 +554,7 @@ class ListSecurityEventsRequest:
 
     @property
     def event_class_ids(self):
-        """Gets the event_class_ids of this ListSecurityEventsRequest.
+        r"""Gets the event_class_ids of this ListSecurityEventsRequest.
 
         事件标识，包含如下: - container_1001 : 容器命名空间 - container_1002 : 容器开放端口 - container_1003 : 容器安全选项 - container_1004 : 容器挂载目录 - containerescape_0001 : 容器高危系统调用 - containerescape_0002 : Shocker攻击 - containerescape_0003 : DirtCow攻击 - containerescape_0004 : 容器文件逃逸攻击 - dockerfile_001 : 用户自定义容器保护文件被修改 - dockerfile_002 : 容器文件系统可执行文件被修改 - dockerproc_001 : 容器进程异常事件上报 - fileprotect_0001 : 文件提权 - fileprotect_0002 : 关键文件变更 - fileprotect_0003 : 关键文件路径变更 - fileprotect_0004 : 文件/目录变更 - av_1002 : 病毒 - av_1003 : 蠕虫 - av_1004 : 木马 - av_1005 : 僵尸网络 - av_1006 : 后门 - av_1007 : 间谍软件 - av_1008 : 恶意广告软件 - av_1009 : 钓鱼 - av_1010 : Rootkit - av_1011 : 勒索软件 - av_1012 : 黑客工具 - av_1013 : 灰色软件 - av_1015 : Webshell - av_1016 : 挖矿软件 - login_0001 : 尝试暴力破解 - login_0002 : 爆破成功 - login_1001 : 登录成功 - login_1002 : 异地登录 - login_1003 : 弱口令 - malware_0001 : shell变更事件上报 - malware_0002 : 反弹shell事件上报 - malware_1001 : 恶意程序 - procdet_0001 : 进程异常行为检测 - procdet_0002 : 进程提权 - crontab_0001 : crontab脚本提权 - crontab_0002 : 恶意路径提权 - procreport_0001 : 危险命令 - user_1001 : 账号变更 - user_1002 : 风险账号 - vmescape_0001 : 虚拟机敏感命令执行 - vmescape_0002 : 虚拟化进程访问敏感文件 - vmescape_0003 : 虚拟机异常端口访问 - webshell_0001 : 网站后门 - network_1001 : 恶意挖矿 - network_1002 : 对外DDoS攻击 - network_1003 : 恶意扫描 - network_1004 : 敏感区域攻击 - ransomware_0001 : 勒索攻击 - ransomware_0002 : 勒索攻击 - ransomware_0003 : 勒索攻击 - fileless_0001 : 进程注入 - fileless_0002 : 动态库注入进程 - fileless_0003 : 关键配置变更 - fileless_0004 : 环境变量变更 - fileless_0005 : 内存文件进程 - fileless_0006 : vdso劫持 - crontab_1001 : Crontab可疑任务 - vul_exploit_0001 : Redis漏洞利用攻击 - vul_exploit_0002 : Hadoop漏洞利用攻击 - vul_exploit_0003 : MySQL漏洞利用攻击 - rootkit_0001 : 可疑rootkit文件 - rootkit_0002 : 可疑内核模块 - RASP_0004 : 上传Webshell - RASP_0018 : 无文件Webshell - blockexec_001 : 已知勒索攻击 - hips_0001 : Windows Defender防护被禁用 - hips_0002 : 可疑的黑客工具 - hips_0003 : 可疑的勒索加密行为 - hips_0004 : 隐藏账号创建 - hips_0005 : 读取用户密码凭据 - hips_0006 : 可疑的SAM文件导出 - hips_0007 : 可疑shadow copy删除操作 - hips_0008 : 备份文件删除 - hips_0009 : 可疑勒索病毒操作注册表 - hips_0010 : 可疑的异常进程行为 - hips_0011 : 可疑的扫描探测 - hips_0012 : 可疑的勒索病毒脚本运行 - hips_0013 : 可疑的挖矿命令执行 - hips_0014 : 可疑的禁用windows安全中心 - hips_0015 : 可疑的停止防火墙服务行为 - hips_0016 : 可疑的系统自动恢复禁用 - hips_0017 : Offies 创建可执行文件 - hips_0018 : 带宏Offies文件异常创建 - hips_0019 : 可疑的注册表操作 - hips_0020 : Confluence远程代码执行 - hips_0021 : MSDT远程代码执行 - portscan_0001 : 通用端口扫描 - portscan_0002 : 秘密端口扫描 - k8s_1001 : Kubernetes事件删除 - k8s_1002 : 创建特权Pod - k8s_1003 : Pod中使用交互式shell - k8s_1004 : 创建敏感目录Pod - k8s_1005 : 创建主机网络的Pod - k8s_1006 : 创建主机Pid空间的Pod - k8s_1007 : 普通pod访问APIserver认证失败 - k8s_1008 : 普通Pod通过Curl访问APIServer - k8s_1009 : 系统管理空间执行exec - k8s_1010 : 系统管理空间创建Pod - k8s_1011 : 创建静态Pod - k8s_1012 : 创建DaemonSet - k8s_1013 : 创建集群计划任务 - k8s_1014 : Secrets操作 - k8s_1015 : 枚举用户可执行的操作 - k8s_1016 : 高权限RoleBinding或ClusterRoleBinding - k8s_1017 : ServiceAccount创建 - k8s_1018 : 创建Cronjob - k8s_1019 : Pod中exec使用交互式shell - k8s_1020 : 无权限访问Apiserver - k8s_1021 : 使用curl访问APIServer - k8s_1022 : Ingress漏洞 - k8s_1023 : 中间人攻击 - k8s_1024 : 蠕虫挖矿木马 - k8s_1025 : K8s事件删除 - k8s_1026 : SelfSubjectRulesReview场景 - imgblock_0001 : 镜像白名单阻断 - imgblock_0002 : 镜像黑名单阻断 - imgblock_0003 : 镜像标签白名单阻断 - imgblock_0004 : 镜像标签黑名单阻断 - imgblock_0005 : 创建容器白名单阻断 - imgblock_0006 : 创建容器黑名单阻断 - imgblock_0007 : 容器mount proc阻断 - imgblock_0008 : 容器seccomp unconfined阻断 - imgblock_0009 : 容器特权阻断 - imgblock_0010 : 容器capabilities阻断
 
@@ -558,7 +565,7 @@ class ListSecurityEventsRequest:
 
     @event_class_ids.setter
     def event_class_ids(self, event_class_ids):
-        """Sets the event_class_ids of this ListSecurityEventsRequest.
+        r"""Sets the event_class_ids of this ListSecurityEventsRequest.
 
         事件标识，包含如下: - container_1001 : 容器命名空间 - container_1002 : 容器开放端口 - container_1003 : 容器安全选项 - container_1004 : 容器挂载目录 - containerescape_0001 : 容器高危系统调用 - containerescape_0002 : Shocker攻击 - containerescape_0003 : DirtCow攻击 - containerescape_0004 : 容器文件逃逸攻击 - dockerfile_001 : 用户自定义容器保护文件被修改 - dockerfile_002 : 容器文件系统可执行文件被修改 - dockerproc_001 : 容器进程异常事件上报 - fileprotect_0001 : 文件提权 - fileprotect_0002 : 关键文件变更 - fileprotect_0003 : 关键文件路径变更 - fileprotect_0004 : 文件/目录变更 - av_1002 : 病毒 - av_1003 : 蠕虫 - av_1004 : 木马 - av_1005 : 僵尸网络 - av_1006 : 后门 - av_1007 : 间谍软件 - av_1008 : 恶意广告软件 - av_1009 : 钓鱼 - av_1010 : Rootkit - av_1011 : 勒索软件 - av_1012 : 黑客工具 - av_1013 : 灰色软件 - av_1015 : Webshell - av_1016 : 挖矿软件 - login_0001 : 尝试暴力破解 - login_0002 : 爆破成功 - login_1001 : 登录成功 - login_1002 : 异地登录 - login_1003 : 弱口令 - malware_0001 : shell变更事件上报 - malware_0002 : 反弹shell事件上报 - malware_1001 : 恶意程序 - procdet_0001 : 进程异常行为检测 - procdet_0002 : 进程提权 - crontab_0001 : crontab脚本提权 - crontab_0002 : 恶意路径提权 - procreport_0001 : 危险命令 - user_1001 : 账号变更 - user_1002 : 风险账号 - vmescape_0001 : 虚拟机敏感命令执行 - vmescape_0002 : 虚拟化进程访问敏感文件 - vmescape_0003 : 虚拟机异常端口访问 - webshell_0001 : 网站后门 - network_1001 : 恶意挖矿 - network_1002 : 对外DDoS攻击 - network_1003 : 恶意扫描 - network_1004 : 敏感区域攻击 - ransomware_0001 : 勒索攻击 - ransomware_0002 : 勒索攻击 - ransomware_0003 : 勒索攻击 - fileless_0001 : 进程注入 - fileless_0002 : 动态库注入进程 - fileless_0003 : 关键配置变更 - fileless_0004 : 环境变量变更 - fileless_0005 : 内存文件进程 - fileless_0006 : vdso劫持 - crontab_1001 : Crontab可疑任务 - vul_exploit_0001 : Redis漏洞利用攻击 - vul_exploit_0002 : Hadoop漏洞利用攻击 - vul_exploit_0003 : MySQL漏洞利用攻击 - rootkit_0001 : 可疑rootkit文件 - rootkit_0002 : 可疑内核模块 - RASP_0004 : 上传Webshell - RASP_0018 : 无文件Webshell - blockexec_001 : 已知勒索攻击 - hips_0001 : Windows Defender防护被禁用 - hips_0002 : 可疑的黑客工具 - hips_0003 : 可疑的勒索加密行为 - hips_0004 : 隐藏账号创建 - hips_0005 : 读取用户密码凭据 - hips_0006 : 可疑的SAM文件导出 - hips_0007 : 可疑shadow copy删除操作 - hips_0008 : 备份文件删除 - hips_0009 : 可疑勒索病毒操作注册表 - hips_0010 : 可疑的异常进程行为 - hips_0011 : 可疑的扫描探测 - hips_0012 : 可疑的勒索病毒脚本运行 - hips_0013 : 可疑的挖矿命令执行 - hips_0014 : 可疑的禁用windows安全中心 - hips_0015 : 可疑的停止防火墙服务行为 - hips_0016 : 可疑的系统自动恢复禁用 - hips_0017 : Offies 创建可执行文件 - hips_0018 : 带宏Offies文件异常创建 - hips_0019 : 可疑的注册表操作 - hips_0020 : Confluence远程代码执行 - hips_0021 : MSDT远程代码执行 - portscan_0001 : 通用端口扫描 - portscan_0002 : 秘密端口扫描 - k8s_1001 : Kubernetes事件删除 - k8s_1002 : 创建特权Pod - k8s_1003 : Pod中使用交互式shell - k8s_1004 : 创建敏感目录Pod - k8s_1005 : 创建主机网络的Pod - k8s_1006 : 创建主机Pid空间的Pod - k8s_1007 : 普通pod访问APIserver认证失败 - k8s_1008 : 普通Pod通过Curl访问APIServer - k8s_1009 : 系统管理空间执行exec - k8s_1010 : 系统管理空间创建Pod - k8s_1011 : 创建静态Pod - k8s_1012 : 创建DaemonSet - k8s_1013 : 创建集群计划任务 - k8s_1014 : Secrets操作 - k8s_1015 : 枚举用户可执行的操作 - k8s_1016 : 高权限RoleBinding或ClusterRoleBinding - k8s_1017 : ServiceAccount创建 - k8s_1018 : 创建Cronjob - k8s_1019 : Pod中exec使用交互式shell - k8s_1020 : 无权限访问Apiserver - k8s_1021 : 使用curl访问APIServer - k8s_1022 : Ingress漏洞 - k8s_1023 : 中间人攻击 - k8s_1024 : 蠕虫挖矿木马 - k8s_1025 : K8s事件删除 - k8s_1026 : SelfSubjectRulesReview场景 - imgblock_0001 : 镜像白名单阻断 - imgblock_0002 : 镜像黑名单阻断 - imgblock_0003 : 镜像标签白名单阻断 - imgblock_0004 : 镜像标签黑名单阻断 - imgblock_0005 : 创建容器白名单阻断 - imgblock_0006 : 创建容器黑名单阻断 - imgblock_0007 : 容器mount proc阻断 - imgblock_0008 : 容器seccomp unconfined阻断 - imgblock_0009 : 容器特权阻断 - imgblock_0010 : 容器capabilities阻断
 
@@ -569,7 +576,7 @@ class ListSecurityEventsRequest:
 
     @property
     def severity_list(self):
-        """Gets the severity_list of this ListSecurityEventsRequest.
+        r"""Gets the severity_list of this ListSecurityEventsRequest.
 
         威胁等级，包含如下:   - Security ：安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
 
@@ -580,7 +587,7 @@ class ListSecurityEventsRequest:
 
     @severity_list.setter
     def severity_list(self, severity_list):
-        """Sets the severity_list of this ListSecurityEventsRequest.
+        r"""Sets the severity_list of this ListSecurityEventsRequest.
 
         威胁等级，包含如下:   - Security ：安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
 
@@ -591,7 +598,7 @@ class ListSecurityEventsRequest:
 
     @property
     def attack_tag(self):
-        """Gets the attack_tag of this ListSecurityEventsRequest.
+        r"""Gets the attack_tag of this ListSecurityEventsRequest.
 
         攻击标识，包含如下：   - attack_success : 攻击成功   - attack_attempt : 攻击尝试   - attack_blocked : 攻击被阻断   - abnormal_behavior : 异常行为   - collapsible_host : 主机失陷   - system_vulnerability : 系统脆弱性
 
@@ -602,7 +609,7 @@ class ListSecurityEventsRequest:
 
     @attack_tag.setter
     def attack_tag(self, attack_tag):
-        """Sets the attack_tag of this ListSecurityEventsRequest.
+        r"""Sets the attack_tag of this ListSecurityEventsRequest.
 
         攻击标识，包含如下：   - attack_success : 攻击成功   - attack_attempt : 攻击尝试   - attack_blocked : 攻击被阻断   - abnormal_behavior : 异常行为   - collapsible_host : 主机失陷   - system_vulnerability : 系统脆弱性
 
@@ -613,7 +620,7 @@ class ListSecurityEventsRequest:
 
     @property
     def asset_value(self):
-        """Gets the asset_value of this ListSecurityEventsRequest.
+        r"""Gets the asset_value of this ListSecurityEventsRequest.
 
         资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
 
@@ -624,7 +631,7 @@ class ListSecurityEventsRequest:
 
     @asset_value.setter
     def asset_value(self, asset_value):
-        """Sets the asset_value of this ListSecurityEventsRequest.
+        r"""Sets the asset_value of this ListSecurityEventsRequest.
 
         资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
 
@@ -635,7 +642,7 @@ class ListSecurityEventsRequest:
 
     @property
     def tag_list(self):
-        """Gets the tag_list of this ListSecurityEventsRequest.
+        r"""Gets the tag_list of this ListSecurityEventsRequest.
 
         事件标签列表，例如:[\"热点事件\"]
 
@@ -646,7 +653,7 @@ class ListSecurityEventsRequest:
 
     @tag_list.setter
     def tag_list(self, tag_list):
-        """Sets the tag_list of this ListSecurityEventsRequest.
+        r"""Sets the tag_list of this ListSecurityEventsRequest.
 
         事件标签列表，例如:[\"热点事件\"]
 
@@ -657,7 +664,7 @@ class ListSecurityEventsRequest:
 
     @property
     def att_ck(self):
-        """Gets the att_ck of this ListSecurityEventsRequest.
+        r"""Gets the att_ck of this ListSecurityEventsRequest.
 
         ATT&CK攻击阶，包含如下：   - Reconnaissance : 侦察   - Initial Access : 初始访问   - Execution : 执行   - Persistence : 持久化   - Privilege Escalation : 权限提升   - Defense Evasion : 防御绕过   - Credential Access : 凭据访问   - Command and Control : 命令与控制   - Impact : 影响破坏
 
@@ -668,7 +675,7 @@ class ListSecurityEventsRequest:
 
     @att_ck.setter
     def att_ck(self, att_ck):
-        """Sets the att_ck of this ListSecurityEventsRequest.
+        r"""Sets the att_ck of this ListSecurityEventsRequest.
 
         ATT&CK攻击阶，包含如下：   - Reconnaissance : 侦察   - Initial Access : 初始访问   - Execution : 执行   - Persistence : 持久化   - Privilege Escalation : 权限提升   - Defense Evasion : 防御绕过   - Credential Access : 凭据访问   - Command and Control : 命令与控制   - Impact : 影响破坏
 
@@ -679,7 +686,7 @@ class ListSecurityEventsRequest:
 
     @property
     def event_name(self):
-        """Gets the event_name of this ListSecurityEventsRequest.
+        r"""Gets the event_name of this ListSecurityEventsRequest.
 
         告警名称
 
@@ -690,7 +697,7 @@ class ListSecurityEventsRequest:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this ListSecurityEventsRequest.
+        r"""Sets the event_name of this ListSecurityEventsRequest.
 
         告警名称
 
@@ -698,6 +705,28 @@ class ListSecurityEventsRequest:
         :type event_name: str
         """
         self._event_name = event_name
+
+    @property
+    def auto_block(self):
+        r"""Gets the auto_block of this ListSecurityEventsRequest.
+
+        是否自动阻断告警
+
+        :return: The auto_block of this ListSecurityEventsRequest.
+        :rtype: bool
+        """
+        return self._auto_block
+
+    @auto_block.setter
+    def auto_block(self, auto_block):
+        r"""Sets the auto_block of this ListSecurityEventsRequest.
+
+        是否自动阻断告警
+
+        :param auto_block: The auto_block of this ListSecurityEventsRequest.
+        :type auto_block: bool
+        """
+        self._auto_block = auto_block
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -33,7 +33,7 @@ class CatalogEndpoints:
     }
 
     def __init__(self, id=None, interface=None, region=None, region_id=None, url=None):
-        """CatalogEndpoints
+        r"""CatalogEndpoints
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class CatalogEndpoints:
 
     @property
     def id(self):
-        """Gets the id of this CatalogEndpoints.
+        r"""Gets the id of this CatalogEndpoints.
 
         终端节点ID。
 
@@ -77,7 +77,7 @@ class CatalogEndpoints:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CatalogEndpoints.
+        r"""Sets the id of this CatalogEndpoints.
 
         终端节点ID。
 
@@ -88,7 +88,7 @@ class CatalogEndpoints:
 
     @property
     def interface(self):
-        """Gets the interface of this CatalogEndpoints.
+        r"""Gets the interface of this CatalogEndpoints.
 
         终端节点平面，public表示为公开。
 
@@ -99,7 +99,7 @@ class CatalogEndpoints:
 
     @interface.setter
     def interface(self, interface):
-        """Sets the interface of this CatalogEndpoints.
+        r"""Sets the interface of this CatalogEndpoints.
 
         终端节点平面，public表示为公开。
 
@@ -110,7 +110,7 @@ class CatalogEndpoints:
 
     @property
     def region(self):
-        """Gets the region of this CatalogEndpoints.
+        r"""Gets the region of this CatalogEndpoints.
 
         终端节点所属区域。
 
@@ -121,7 +121,7 @@ class CatalogEndpoints:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CatalogEndpoints.
+        r"""Sets the region of this CatalogEndpoints.
 
         终端节点所属区域。
 
@@ -132,7 +132,7 @@ class CatalogEndpoints:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CatalogEndpoints.
+        r"""Gets the region_id of this CatalogEndpoints.
 
         终端节点所属区域的ID。
 
@@ -143,7 +143,7 @@ class CatalogEndpoints:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CatalogEndpoints.
+        r"""Sets the region_id of this CatalogEndpoints.
 
         终端节点所属区域的ID。
 
@@ -154,7 +154,7 @@ class CatalogEndpoints:
 
     @property
     def url(self):
-        """Gets the url of this CatalogEndpoints.
+        r"""Gets the url of this CatalogEndpoints.
 
         终端节点的地址。
 
@@ -165,7 +165,7 @@ class CatalogEndpoints:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CatalogEndpoints.
+        r"""Sets the url of this CatalogEndpoints.
 
         终端节点的地址。
 

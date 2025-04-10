@@ -27,7 +27,7 @@ class ShowTagsTagsResp:
     }
 
     def __init__(self, key=None, value=None):
-        """ShowTagsTagsResp
+        r"""ShowTagsTagsResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowTagsTagsResp:
 
     @property
     def key(self):
-        """Gets the key of this ShowTagsTagsResp.
+        r"""Gets the key of this ShowTagsTagsResp.
 
         集群标签的key值。
 
@@ -61,7 +61,7 @@ class ShowTagsTagsResp:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ShowTagsTagsResp.
+        r"""Sets the key of this ShowTagsTagsResp.
 
         集群标签的key值。
 
@@ -72,7 +72,7 @@ class ShowTagsTagsResp:
 
     @property
     def value(self):
-        """Gets the value of this ShowTagsTagsResp.
+        r"""Gets the value of this ShowTagsTagsResp.
 
         集群标签的value值。
 
@@ -83,7 +83,7 @@ class ShowTagsTagsResp:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ShowTagsTagsResp.
+        r"""Sets the value of this ShowTagsTagsResp.
 
         集群标签的value值。
 

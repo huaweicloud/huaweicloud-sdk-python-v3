@@ -32,7 +32,7 @@ class CheckTableConfigResponse(SdkResponse):
     }
 
     def __init__(self, source_database_name=None, target_database_name=None, tbl_config_check_results=None, task_name=None):
-        """CheckTableConfigResponse
+        r"""CheckTableConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CheckTableConfigResponse(SdkResponse):
 
     @property
     def source_database_name(self):
-        """Gets the source_database_name of this CheckTableConfigResponse.
+        r"""Gets the source_database_name of this CheckTableConfigResponse.
 
         TaurusDB数据库名。
 
@@ -76,7 +76,7 @@ class CheckTableConfigResponse(SdkResponse):
 
     @source_database_name.setter
     def source_database_name(self, source_database_name):
-        """Sets the source_database_name of this CheckTableConfigResponse.
+        r"""Sets the source_database_name of this CheckTableConfigResponse.
 
         TaurusDB数据库名。
 
@@ -87,7 +87,7 @@ class CheckTableConfigResponse(SdkResponse):
 
     @property
     def target_database_name(self):
-        """Gets the target_database_name of this CheckTableConfigResponse.
+        r"""Gets the target_database_name of this CheckTableConfigResponse.
 
         目标数据库名。
 
@@ -98,7 +98,7 @@ class CheckTableConfigResponse(SdkResponse):
 
     @target_database_name.setter
     def target_database_name(self, target_database_name):
-        """Sets the target_database_name of this CheckTableConfigResponse.
+        r"""Sets the target_database_name of this CheckTableConfigResponse.
 
         目标数据库名。
 
@@ -109,7 +109,7 @@ class CheckTableConfigResponse(SdkResponse):
 
     @property
     def tbl_config_check_results(self):
-        """Gets the tbl_config_check_results of this CheckTableConfigResponse.
+        r"""Gets the tbl_config_check_results of this CheckTableConfigResponse.
 
         表配置检查结果。
 
@@ -120,7 +120,7 @@ class CheckTableConfigResponse(SdkResponse):
 
     @tbl_config_check_results.setter
     def tbl_config_check_results(self, tbl_config_check_results):
-        """Sets the tbl_config_check_results of this CheckTableConfigResponse.
+        r"""Sets the tbl_config_check_results of this CheckTableConfigResponse.
 
         表配置检查结果。
 
@@ -131,7 +131,7 @@ class CheckTableConfigResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this CheckTableConfigResponse.
+        r"""Gets the task_name of this CheckTableConfigResponse.
 
         同步任务名称。
 
@@ -142,7 +142,7 @@ class CheckTableConfigResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this CheckTableConfigResponse.
+        r"""Sets the task_name of this CheckTableConfigResponse.
 
         同步任务名称。
 

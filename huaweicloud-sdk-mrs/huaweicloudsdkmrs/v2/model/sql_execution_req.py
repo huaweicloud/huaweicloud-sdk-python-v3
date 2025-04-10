@@ -31,7 +31,7 @@ class SqlExecutionReq:
     }
 
     def __init__(self, sql_type=None, sql_content=None, database=None, archive_path=None):
-        """SqlExecutionReq
+        r"""SqlExecutionReq
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class SqlExecutionReq:
 
     @property
     def sql_type(self):
-        """Gets the sql_type of this SqlExecutionReq.
+        r"""Gets the sql_type of this SqlExecutionReq.
 
         SQL类型。目前仅支持“presto”类型的SQL。 说明： - 只有包含Presto组件的集群才能提交执行presto类型的SQL。 - 当前仅MRS 2.0.6版本的MRS 2.0.6.1补丁、MRS 2.1.0版本的MRS 2.1.0.7补丁、MRS 3.1.2及之后版本集群支持。
 
@@ -73,7 +73,7 @@ class SqlExecutionReq:
 
     @sql_type.setter
     def sql_type(self, sql_type):
-        """Sets the sql_type of this SqlExecutionReq.
+        r"""Sets the sql_type of this SqlExecutionReq.
 
         SQL类型。目前仅支持“presto”类型的SQL。 说明： - 只有包含Presto组件的集群才能提交执行presto类型的SQL。 - 当前仅MRS 2.0.6版本的MRS 2.0.6.1补丁、MRS 2.1.0版本的MRS 2.1.0.7补丁、MRS 3.1.2及之后版本集群支持。
 
@@ -84,7 +84,7 @@ class SqlExecutionReq:
 
     @property
     def sql_content(self):
-        """Gets the sql_content of this SqlExecutionReq.
+        r"""Gets the sql_content of this SqlExecutionReq.
 
         待执行的SQL语句。 说明： 目前仅支持执行单条语句，语句中不包含“;”。
 
@@ -95,7 +95,7 @@ class SqlExecutionReq:
 
     @sql_content.setter
     def sql_content(self, sql_content):
-        """Sets the sql_content of this SqlExecutionReq.
+        r"""Sets the sql_content of this SqlExecutionReq.
 
         待执行的SQL语句。 说明： 目前仅支持执行单条语句，语句中不包含“;”。
 
@@ -106,7 +106,7 @@ class SqlExecutionReq:
 
     @property
     def database(self):
-        """Gets the database of this SqlExecutionReq.
+        r"""Gets the database of this SqlExecutionReq.
 
         执行SQL所在的数据库，默认为default。
 
@@ -117,7 +117,7 @@ class SqlExecutionReq:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this SqlExecutionReq.
+        r"""Sets the database of this SqlExecutionReq.
 
         执行SQL所在的数据库，默认为default。
 
@@ -128,7 +128,7 @@ class SqlExecutionReq:
 
     @property
     def archive_path(self):
-        """Gets the archive_path of this SqlExecutionReq.
+        r"""Gets the archive_path of this SqlExecutionReq.
 
         SQL执行结果的转储文件夹。 说明： 只有select语句才会转储查询的结果。当前仅支持转储到OBS中。
 
@@ -139,7 +139,7 @@ class SqlExecutionReq:
 
     @archive_path.setter
     def archive_path(self, archive_path):
-        """Sets the archive_path of this SqlExecutionReq.
+        r"""Sets the archive_path of this SqlExecutionReq.
 
         SQL执行结果的转储文件夹。 说明： 只有select语句才会转储查询的结果。当前仅支持转储到OBS中。
 

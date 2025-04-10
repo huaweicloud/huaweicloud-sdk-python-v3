@@ -29,7 +29,7 @@ class LoadBalancerStatusL7Rule:
     }
 
     def __init__(self, id=None, type=None, provisioning_status=None):
-        """LoadBalancerStatusL7Rule
+        r"""LoadBalancerStatusL7Rule
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class LoadBalancerStatusL7Rule:
 
     @property
     def id(self):
-        """Gets the id of this LoadBalancerStatusL7Rule.
+        r"""Gets the id of this LoadBalancerStatusL7Rule.
 
         L7转发规则ID。
 
@@ -65,7 +65,7 @@ class LoadBalancerStatusL7Rule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LoadBalancerStatusL7Rule.
+        r"""Sets the id of this LoadBalancerStatusL7Rule.
 
         L7转发规则ID。
 
@@ -76,7 +76,7 @@ class LoadBalancerStatusL7Rule:
 
     @property
     def type(self):
-        """Gets the type of this LoadBalancerStatusL7Rule.
+        r"""Gets the type of this LoadBalancerStatusL7Rule.
 
         匹配内容类型。  取值： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。  使用说明： 同一个l7policy下创建的所有的l7rule的HOST_NAME不能重复。
 
@@ -87,7 +87,7 @@ class LoadBalancerStatusL7Rule:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this LoadBalancerStatusL7Rule.
+        r"""Sets the type of this LoadBalancerStatusL7Rule.
 
         匹配内容类型。  取值： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。  使用说明： 同一个l7policy下创建的所有的l7rule的HOST_NAME不能重复。
 
@@ -98,7 +98,7 @@ class LoadBalancerStatusL7Rule:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this LoadBalancerStatusL7Rule.
+        r"""Gets the provisioning_status of this LoadBalancerStatusL7Rule.
 
         转发规则的配置状态。  取值： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
 
@@ -109,7 +109,7 @@ class LoadBalancerStatusL7Rule:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this LoadBalancerStatusL7Rule.
+        r"""Sets the provisioning_status of this LoadBalancerStatusL7Rule.
 
         转发规则的配置状态。  取值： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
 

@@ -45,7 +45,7 @@ class ListAssetListRequest:
     }
 
     def __init__(self, asset_id=None, status=None, start_time=None, end_time=None, category_id=None, tags=None, query_string=None, media_type=None, page=None, size=None, order=None):
-        """ListAssetListRequest
+        r"""ListAssetListRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListAssetListRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ListAssetListRequest.
+        r"""Gets the asset_id of this ListAssetListRequest.
 
         媒资ID，最多同时查询10个。
 
@@ -124,7 +124,7 @@ class ListAssetListRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ListAssetListRequest.
+        r"""Sets the asset_id of this ListAssetListRequest.
 
         媒资ID，最多同时查询10个。
 
@@ -135,7 +135,7 @@ class ListAssetListRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAssetListRequest.
+        r"""Gets the status of this ListAssetListRequest.
 
         媒资状态，同时查询多个状态的媒资。  取值如下： - CREATING：上传中 - FAILED：上传失败 - CREATED：上传成功 - PUBLISHED：已发布 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败 - UN_REVIEW：未审核 - REVIEWING：审核中 - REVIEW_SUSPICIOUS ：审核不过，待人工复审 - REVIEW_PASSED：审核通过 - REVIEW_FAILED：审核任务失败 - REVIEW_BLOCKED：已屏蔽
 
@@ -146,7 +146,7 @@ class ListAssetListRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAssetListRequest.
+        r"""Sets the status of this ListAssetListRequest.
 
         媒资状态，同时查询多个状态的媒资。  取值如下： - CREATING：上传中 - FAILED：上传失败 - CREATED：上传成功 - PUBLISHED：已发布 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败 - UN_REVIEW：未审核 - REVIEWING：审核中 - REVIEW_SUSPICIOUS ：审核不过，待人工复审 - REVIEW_PASSED：审核通过 - REVIEW_FAILED：审核任务失败 - REVIEW_BLOCKED：已屏蔽
 
@@ -157,7 +157,7 @@ class ListAssetListRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListAssetListRequest.
+        r"""Gets the start_time of this ListAssetListRequest.
 
         起始时间。  格式为yyyymmddhhm mss。必须是与时区无关的UTC时间。
 
@@ -168,7 +168,7 @@ class ListAssetListRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListAssetListRequest.
+        r"""Sets the start_time of this ListAssetListRequest.
 
         起始时间。  格式为yyyymmddhhm mss。必须是与时区无关的UTC时间。
 
@@ -179,7 +179,7 @@ class ListAssetListRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAssetListRequest.
+        r"""Gets the end_time of this ListAssetListRequest.
 
         结束时间。  格式为yyyymmddhhm mss。必须是与时区无关的UTC时间。
 
@@ -190,7 +190,7 @@ class ListAssetListRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAssetListRequest.
+        r"""Sets the end_time of this ListAssetListRequest.
 
         结束时间。  格式为yyyymmddhhm mss。必须是与时区无关的UTC时间。
 
@@ -201,7 +201,7 @@ class ListAssetListRequest:
 
     @property
     def category_id(self):
-        """Gets the category_id of this ListAssetListRequest.
+        r"""Gets the category_id of this ListAssetListRequest.
 
         分类ID。
 
@@ -212,7 +212,7 @@ class ListAssetListRequest:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this ListAssetListRequest.
+        r"""Sets the category_id of this ListAssetListRequest.
 
         分类ID。
 
@@ -223,7 +223,7 @@ class ListAssetListRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListAssetListRequest.
+        r"""Gets the tags of this ListAssetListRequest.
 
         媒资标签。 单个标签不超过16个字节， 最多不超过16 个标签。 多个用英文逗号分隔，UTF8编码。
 
@@ -234,7 +234,7 @@ class ListAssetListRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListAssetListRequest.
+        r"""Sets the tags of this ListAssetListRequest.
 
         媒资标签。 单个标签不超过16个字节， 最多不超过16 个标签。 多个用英文逗号分隔，UTF8编码。
 
@@ -245,7 +245,7 @@ class ListAssetListRequest:
 
     @property
     def query_string(self):
-        """Gets the query_string of this ListAssetListRequest.
+        r"""Gets the query_string of this ListAssetListRequest.
 
         在媒资标题、 描述、分类名称中模糊查询的字符串。
 
@@ -256,7 +256,7 @@ class ListAssetListRequest:
 
     @query_string.setter
     def query_string(self, query_string):
-        """Sets the query_string of this ListAssetListRequest.
+        r"""Sets the query_string of this ListAssetListRequest.
 
         在媒资标题、 描述、分类名称中模糊查询的字符串。
 
@@ -267,7 +267,7 @@ class ListAssetListRequest:
 
     @property
     def media_type(self):
-        """Gets the media_type of this ListAssetListRequest.
+        r"""Gets the media_type of this ListAssetListRequest.
 
         音视频文件的格式，支持多格式查询，最多不超过20个。  取值如下： - 视频文件格式：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG - 音频文件格式：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
 
@@ -278,7 +278,7 @@ class ListAssetListRequest:
 
     @media_type.setter
     def media_type(self, media_type):
-        """Sets the media_type of this ListAssetListRequest.
+        r"""Sets the media_type of this ListAssetListRequest.
 
         音视频文件的格式，支持多格式查询，最多不超过20个。  取值如下： - 视频文件格式：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG - 音频文件格式：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
 
@@ -289,7 +289,7 @@ class ListAssetListRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListAssetListRequest.
+        r"""Gets the page of this ListAssetListRequest.
 
         分页编号。  默认值：0。
 
@@ -300,7 +300,7 @@ class ListAssetListRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListAssetListRequest.
+        r"""Sets the page of this ListAssetListRequest.
 
         分页编号。  默认值：0。
 
@@ -311,7 +311,7 @@ class ListAssetListRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListAssetListRequest.
+        r"""Gets the size of this ListAssetListRequest.
 
         每页记录数。  取值范围：[1,100]。  默认值：10。
 
@@ -322,7 +322,7 @@ class ListAssetListRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListAssetListRequest.
+        r"""Sets the size of this ListAssetListRequest.
 
         每页记录数。  取值范围：[1,100]。  默认值：10。
 
@@ -333,7 +333,7 @@ class ListAssetListRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListAssetListRequest.
+        r"""Gets the order of this ListAssetListRequest.
 
         查询顺序，按createTime顺序还是倒序
 
@@ -344,7 +344,7 @@ class ListAssetListRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListAssetListRequest.
+        r"""Sets the order of this ListAssetListRequest.
 
         查询顺序，按createTime顺序还是倒序
 

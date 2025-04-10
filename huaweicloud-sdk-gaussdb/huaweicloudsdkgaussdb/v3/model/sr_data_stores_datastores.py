@@ -29,7 +29,7 @@ class SrDataStoresDatastores:
     }
 
     def __init__(self, id=None, name=None, kernel_version=None):
-        """SrDataStoresDatastores
+        r"""SrDataStoresDatastores
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SrDataStoresDatastores:
 
     @property
     def id(self):
-        """Gets the id of this SrDataStoresDatastores.
+        r"""Gets the id of this SrDataStoresDatastores.
 
         数据库版本ID，该字段不会有重复。
 
@@ -68,7 +68,7 @@ class SrDataStoresDatastores:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SrDataStoresDatastores.
+        r"""Sets the id of this SrDataStoresDatastores.
 
         数据库版本ID，该字段不会有重复。
 
@@ -79,7 +79,7 @@ class SrDataStoresDatastores:
 
     @property
     def name(self):
-        """Gets the name of this SrDataStoresDatastores.
+        r"""Gets the name of this SrDataStoresDatastores.
 
         数据库版本号，只返回两位数的大版本号。
 
@@ -90,7 +90,7 @@ class SrDataStoresDatastores:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SrDataStoresDatastores.
+        r"""Sets the name of this SrDataStoresDatastores.
 
         数据库版本号，只返回两位数的大版本号。
 
@@ -101,7 +101,7 @@ class SrDataStoresDatastores:
 
     @property
     def kernel_version(self):
-        """Gets the kernel_version of this SrDataStoresDatastores.
+        r"""Gets the kernel_version of this SrDataStoresDatastores.
 
         数据库内核版本号，返回完整的四位版本号。
 
@@ -112,7 +112,7 @@ class SrDataStoresDatastores:
 
     @kernel_version.setter
     def kernel_version(self, kernel_version):
-        """Sets the kernel_version of this SrDataStoresDatastores.
+        r"""Sets the kernel_version of this SrDataStoresDatastores.
 
         数据库内核版本号，返回完整的四位版本号。
 

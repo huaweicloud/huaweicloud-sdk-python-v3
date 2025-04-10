@@ -30,7 +30,7 @@ class ListPlaybookAuditLogsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, audit_logs=None, x_request_id=None):
-        """ListPlaybookAuditLogsResponse
+        r"""ListPlaybookAuditLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPlaybookAuditLogsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListPlaybookAuditLogsResponse.
+        r"""Gets the count of this ListPlaybookAuditLogsResponse.
 
         总条数
 
@@ -69,7 +69,7 @@ class ListPlaybookAuditLogsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListPlaybookAuditLogsResponse.
+        r"""Sets the count of this ListPlaybookAuditLogsResponse.
 
         总条数
 
@@ -80,7 +80,7 @@ class ListPlaybookAuditLogsResponse(SdkResponse):
 
     @property
     def audit_logs(self):
-        """Gets the audit_logs of this ListPlaybookAuditLogsResponse.
+        r"""Gets the audit_logs of this ListPlaybookAuditLogsResponse.
 
         审计日志列表信息
 
@@ -91,7 +91,7 @@ class ListPlaybookAuditLogsResponse(SdkResponse):
 
     @audit_logs.setter
     def audit_logs(self, audit_logs):
-        """Sets the audit_logs of this ListPlaybookAuditLogsResponse.
+        r"""Sets the audit_logs of this ListPlaybookAuditLogsResponse.
 
         审计日志列表信息
 
@@ -102,7 +102,7 @@ class ListPlaybookAuditLogsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListPlaybookAuditLogsResponse.
+        r"""Gets the x_request_id of this ListPlaybookAuditLogsResponse.
 
         :return: The x_request_id of this ListPlaybookAuditLogsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListPlaybookAuditLogsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListPlaybookAuditLogsResponse.
+        r"""Sets the x_request_id of this ListPlaybookAuditLogsResponse.
 
         :param x_request_id: The x_request_id of this ListPlaybookAuditLogsResponse.
         :type x_request_id: str

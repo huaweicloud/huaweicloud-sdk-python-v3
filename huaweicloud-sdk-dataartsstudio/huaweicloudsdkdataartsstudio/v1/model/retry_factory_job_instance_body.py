@@ -41,7 +41,7 @@ class RetryFactoryJobInstanceBody:
     }
 
     def __init__(self, retry_location=None, node_name=None, retry_task_version=None, ignore_obs_monitor=None, task_retrys=None, begin_time=None, end_time=None, jobs=None, concurrent=None):
-        """RetryFactoryJobInstanceBody
+        r"""RetryFactoryJobInstanceBody
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class RetryFactoryJobInstanceBody:
 
     @property
     def retry_location(self):
-        """Gets the retry_location of this RetryFactoryJobInstanceBody.
+        r"""Gets the retry_location of this RetryFactoryJobInstanceBody.
 
         重跑开始位置，取值有firstNode、errorNode和specifiedNode。
 
@@ -108,7 +108,7 @@ class RetryFactoryJobInstanceBody:
 
     @retry_location.setter
     def retry_location(self, retry_location):
-        """Sets the retry_location of this RetryFactoryJobInstanceBody.
+        r"""Sets the retry_location of this RetryFactoryJobInstanceBody.
 
         重跑开始位置，取值有firstNode、errorNode和specifiedNode。
 
@@ -119,7 +119,7 @@ class RetryFactoryJobInstanceBody:
 
     @property
     def node_name(self):
-        """Gets the node_name of this RetryFactoryJobInstanceBody.
+        r"""Gets the node_name of this RetryFactoryJobInstanceBody.
 
         节点名称。
 
@@ -130,7 +130,7 @@ class RetryFactoryJobInstanceBody:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this RetryFactoryJobInstanceBody.
+        r"""Sets the node_name of this RetryFactoryJobInstanceBody.
 
         节点名称。
 
@@ -141,7 +141,7 @@ class RetryFactoryJobInstanceBody:
 
     @property
     def retry_task_version(self):
-        """Gets the retry_task_version of this RetryFactoryJobInstanceBody.
+        r"""Gets the retry_task_version of this RetryFactoryJobInstanceBody.
 
         使用的作业参数，取值有original_version和current_version。
 
@@ -152,7 +152,7 @@ class RetryFactoryJobInstanceBody:
 
     @retry_task_version.setter
     def retry_task_version(self, retry_task_version):
-        """Sets the retry_task_version of this RetryFactoryJobInstanceBody.
+        r"""Sets the retry_task_version of this RetryFactoryJobInstanceBody.
 
         使用的作业参数，取值有original_version和current_version。
 
@@ -163,7 +163,7 @@ class RetryFactoryJobInstanceBody:
 
     @property
     def ignore_obs_monitor(self):
-        """Gets the ignore_obs_monitor of this RetryFactoryJobInstanceBody.
+        r"""Gets the ignore_obs_monitor of this RetryFactoryJobInstanceBody.
 
         是否忽略obs监听，默认为true。
 
@@ -174,7 +174,7 @@ class RetryFactoryJobInstanceBody:
 
     @ignore_obs_monitor.setter
     def ignore_obs_monitor(self, ignore_obs_monitor):
-        """Sets the ignore_obs_monitor of this RetryFactoryJobInstanceBody.
+        r"""Sets the ignore_obs_monitor of this RetryFactoryJobInstanceBody.
 
         是否忽略obs监听，默认为true。
 
@@ -185,7 +185,7 @@ class RetryFactoryJobInstanceBody:
 
     @property
     def task_retrys(self):
-        """Gets the task_retrys of this RetryFactoryJobInstanceBody.
+        r"""Gets the task_retrys of this RetryFactoryJobInstanceBody.
 
         作业实例重跑参数，当重跑当前实例类型时，需要指定该参数的重跑信息，重跑当前作业及其上下游作业实例类型不需要指定该参数。
 
@@ -196,7 +196,7 @@ class RetryFactoryJobInstanceBody:
 
     @task_retrys.setter
     def task_retrys(self, task_retrys):
-        """Sets the task_retrys of this RetryFactoryJobInstanceBody.
+        r"""Sets the task_retrys of this RetryFactoryJobInstanceBody.
 
         作业实例重跑参数，当重跑当前实例类型时，需要指定该参数的重跑信息，重跑当前作业及其上下游作业实例类型不需要指定该参数。
 
@@ -207,7 +207,7 @@ class RetryFactoryJobInstanceBody:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this RetryFactoryJobInstanceBody.
+        r"""Gets the begin_time of this RetryFactoryJobInstanceBody.
 
         实例开始时间，当重跑当前作业及其上下游作业实例类型时，该参数有效。
 
@@ -218,7 +218,7 @@ class RetryFactoryJobInstanceBody:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this RetryFactoryJobInstanceBody.
+        r"""Sets the begin_time of this RetryFactoryJobInstanceBody.
 
         实例开始时间，当重跑当前作业及其上下游作业实例类型时，该参数有效。
 
@@ -229,7 +229,7 @@ class RetryFactoryJobInstanceBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this RetryFactoryJobInstanceBody.
+        r"""Gets the end_time of this RetryFactoryJobInstanceBody.
 
         实例结束时间，当重跑当前作业及其上下游作业实例类型时，该参数有效。
 
@@ -240,7 +240,7 @@ class RetryFactoryJobInstanceBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this RetryFactoryJobInstanceBody.
+        r"""Sets the end_time of this RetryFactoryJobInstanceBody.
 
         实例结束时间，当重跑当前作业及其上下游作业实例类型时，该参数有效。
 
@@ -251,7 +251,7 @@ class RetryFactoryJobInstanceBody:
 
     @property
     def jobs(self):
-        """Gets the jobs of this RetryFactoryJobInstanceBody.
+        r"""Gets the jobs of this RetryFactoryJobInstanceBody.
 
         作业实例重跑参数，当重跑当前作业及其上下游作业实例类型时，需要指定该参数的重跑信息，重跑当前实例类型不需要指定该参数。
 
@@ -262,7 +262,7 @@ class RetryFactoryJobInstanceBody:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this RetryFactoryJobInstanceBody.
+        r"""Sets the jobs of this RetryFactoryJobInstanceBody.
 
         作业实例重跑参数，当重跑当前作业及其上下游作业实例类型时，需要指定该参数的重跑信息，重跑当前实例类型不需要指定该参数。
 
@@ -273,7 +273,7 @@ class RetryFactoryJobInstanceBody:
 
     @property
     def concurrent(self):
-        """Gets the concurrent of this RetryFactoryJobInstanceBody.
+        r"""Gets the concurrent of this RetryFactoryJobInstanceBody.
 
         并行度，当重跑当前作业及其上下游作业实例类型时，该参数有效，默认值为1，取值范围为1到128。
 
@@ -284,7 +284,7 @@ class RetryFactoryJobInstanceBody:
 
     @concurrent.setter
     def concurrent(self, concurrent):
-        """Sets the concurrent of this RetryFactoryJobInstanceBody.
+        r"""Sets the concurrent of this RetryFactoryJobInstanceBody.
 
         并行度，当重跑当前作业及其上下游作业实例类型时，该参数有效，默认值为1，取值范围为1到128。
 

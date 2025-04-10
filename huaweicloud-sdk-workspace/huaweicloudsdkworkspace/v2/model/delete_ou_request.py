@@ -25,7 +25,7 @@ class DeleteOuRequest:
     }
 
     def __init__(self, ou_id=None):
-        """DeleteOuRequest
+        r"""DeleteOuRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteOuRequest:
 
     @property
     def ou_id(self):
-        """Gets the ou_id of this DeleteOuRequest.
+        r"""Gets the ou_id of this DeleteOuRequest.
 
         OU的id。
 
@@ -53,7 +53,7 @@ class DeleteOuRequest:
 
     @ou_id.setter
     def ou_id(self, ou_id):
-        """Sets the ou_id of this DeleteOuRequest.
+        r"""Sets the ou_id of this DeleteOuRequest.
 
         OU的id。
 

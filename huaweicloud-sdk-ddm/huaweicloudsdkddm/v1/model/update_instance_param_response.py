@@ -34,7 +34,7 @@ class UpdateInstanceParamResponse(SdkResponse):
     }
 
     def __init__(self, node_list=None, need_restart=None, job_id=None, config_id=None, config_name=None):
-        """UpdateInstanceParamResponse
+        r"""UpdateInstanceParamResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpdateInstanceParamResponse(SdkResponse):
 
     @property
     def node_list(self):
-        """Gets the node_list of this UpdateInstanceParamResponse.
+        r"""Gets the node_list of this UpdateInstanceParamResponse.
 
         节点列表。
 
@@ -83,7 +83,7 @@ class UpdateInstanceParamResponse(SdkResponse):
 
     @node_list.setter
     def node_list(self, node_list):
-        """Sets the node_list of this UpdateInstanceParamResponse.
+        r"""Sets the node_list of this UpdateInstanceParamResponse.
 
         节点列表。
 
@@ -94,7 +94,7 @@ class UpdateInstanceParamResponse(SdkResponse):
 
     @property
     def need_restart(self):
-        """Gets the need_restart of this UpdateInstanceParamResponse.
+        r"""Gets the need_restart of this UpdateInstanceParamResponse.
 
         是否需要重启实例。
 
@@ -105,7 +105,7 @@ class UpdateInstanceParamResponse(SdkResponse):
 
     @need_restart.setter
     def need_restart(self, need_restart):
-        """Sets the need_restart of this UpdateInstanceParamResponse.
+        r"""Sets the need_restart of this UpdateInstanceParamResponse.
 
         是否需要重启实例。
 
@@ -116,7 +116,7 @@ class UpdateInstanceParamResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateInstanceParamResponse.
+        r"""Gets the job_id of this UpdateInstanceParamResponse.
 
         任务id。
 
@@ -127,7 +127,7 @@ class UpdateInstanceParamResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateInstanceParamResponse.
+        r"""Sets the job_id of this UpdateInstanceParamResponse.
 
         任务id。
 
@@ -138,7 +138,7 @@ class UpdateInstanceParamResponse(SdkResponse):
 
     @property
     def config_id(self):
-        """Gets the config_id of this UpdateInstanceParamResponse.
+        r"""Gets the config_id of this UpdateInstanceParamResponse.
 
         参数组id。
 
@@ -149,7 +149,7 @@ class UpdateInstanceParamResponse(SdkResponse):
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this UpdateInstanceParamResponse.
+        r"""Sets the config_id of this UpdateInstanceParamResponse.
 
         参数组id。
 
@@ -160,7 +160,7 @@ class UpdateInstanceParamResponse(SdkResponse):
 
     @property
     def config_name(self):
-        """Gets the config_name of this UpdateInstanceParamResponse.
+        r"""Gets the config_name of this UpdateInstanceParamResponse.
 
         参数组名称。
 
@@ -171,7 +171,7 @@ class UpdateInstanceParamResponse(SdkResponse):
 
     @config_name.setter
     def config_name(self, config_name):
-        """Sets the config_name of this UpdateInstanceParamResponse.
+        r"""Sets the config_name of this UpdateInstanceParamResponse.
 
         参数组名称。
 

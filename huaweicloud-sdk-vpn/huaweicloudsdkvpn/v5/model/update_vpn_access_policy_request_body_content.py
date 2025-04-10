@@ -31,7 +31,7 @@ class UpdateVpnAccessPolicyRequestBodyContent:
     }
 
     def __init__(self, name=None, user_group_id=None, description=None, dest_ip_cidrs=None):
-        """UpdateVpnAccessPolicyRequestBodyContent
+        r"""UpdateVpnAccessPolicyRequestBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateVpnAccessPolicyRequestBodyContent:
 
     @property
     def name(self):
-        """Gets the name of this UpdateVpnAccessPolicyRequestBodyContent.
+        r"""Gets the name of this UpdateVpnAccessPolicyRequestBodyContent.
 
         访问策略名称
 
@@ -75,7 +75,7 @@ class UpdateVpnAccessPolicyRequestBodyContent:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVpnAccessPolicyRequestBodyContent.
+        r"""Sets the name of this UpdateVpnAccessPolicyRequestBodyContent.
 
         访问策略名称
 
@@ -86,7 +86,7 @@ class UpdateVpnAccessPolicyRequestBodyContent:
 
     @property
     def user_group_id(self):
-        """Gets the user_group_id of this UpdateVpnAccessPolicyRequestBodyContent.
+        r"""Gets the user_group_id of this UpdateVpnAccessPolicyRequestBodyContent.
 
         关联用户组ID
 
@@ -97,7 +97,7 @@ class UpdateVpnAccessPolicyRequestBodyContent:
 
     @user_group_id.setter
     def user_group_id(self, user_group_id):
-        """Sets the user_group_id of this UpdateVpnAccessPolicyRequestBodyContent.
+        r"""Sets the user_group_id of this UpdateVpnAccessPolicyRequestBodyContent.
 
         关联用户组ID
 
@@ -108,7 +108,7 @@ class UpdateVpnAccessPolicyRequestBodyContent:
 
     @property
     def description(self):
-        """Gets the description of this UpdateVpnAccessPolicyRequestBodyContent.
+        r"""Gets the description of this UpdateVpnAccessPolicyRequestBodyContent.
 
         访问策略描述
 
@@ -119,7 +119,7 @@ class UpdateVpnAccessPolicyRequestBodyContent:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateVpnAccessPolicyRequestBodyContent.
+        r"""Sets the description of this UpdateVpnAccessPolicyRequestBodyContent.
 
         访问策略描述
 
@@ -130,7 +130,7 @@ class UpdateVpnAccessPolicyRequestBodyContent:
 
     @property
     def dest_ip_cidrs(self):
-        """Gets the dest_ip_cidrs of this UpdateVpnAccessPolicyRequestBodyContent.
+        r"""Gets the dest_ip_cidrs of this UpdateVpnAccessPolicyRequestBodyContent.
 
         目的IP网段列表，至少有一个网段
 
@@ -141,7 +141,7 @@ class UpdateVpnAccessPolicyRequestBodyContent:
 
     @dest_ip_cidrs.setter
     def dest_ip_cidrs(self, dest_ip_cidrs):
-        """Sets the dest_ip_cidrs of this UpdateVpnAccessPolicyRequestBodyContent.
+        r"""Sets the dest_ip_cidrs of this UpdateVpnAccessPolicyRequestBodyContent.
 
         目的IP网段列表，至少有一个网段
 

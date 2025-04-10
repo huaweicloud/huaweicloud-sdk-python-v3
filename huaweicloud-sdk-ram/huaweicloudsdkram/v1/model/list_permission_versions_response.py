@@ -28,7 +28,7 @@ class ListPermissionVersionsResponse(SdkResponse):
     }
 
     def __init__(self, permissions=None, page_info=None):
-        """ListPermissionVersionsResponse
+        r"""ListPermissionVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPermissionVersionsResponse(SdkResponse):
 
     @property
     def permissions(self):
-        """Gets the permissions of this ListPermissionVersionsResponse.
+        r"""Gets the permissions of this ListPermissionVersionsResponse.
 
         共享资源权限的详细信息列表。
 
@@ -62,7 +62,7 @@ class ListPermissionVersionsResponse(SdkResponse):
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this ListPermissionVersionsResponse.
+        r"""Sets the permissions of this ListPermissionVersionsResponse.
 
         共享资源权限的详细信息列表。
 
@@ -73,7 +73,7 @@ class ListPermissionVersionsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPermissionVersionsResponse.
+        r"""Gets the page_info of this ListPermissionVersionsResponse.
 
         :return: The page_info of this ListPermissionVersionsResponse.
         :rtype: :class:`huaweicloudsdkram.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListPermissionVersionsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPermissionVersionsResponse.
+        r"""Sets the page_info of this ListPermissionVersionsResponse.
 
         :param page_info: The page_info of this ListPermissionVersionsResponse.
         :type page_info: :class:`huaweicloudsdkram.v1.PageInfo`

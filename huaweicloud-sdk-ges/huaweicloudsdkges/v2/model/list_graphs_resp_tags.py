@@ -27,7 +27,7 @@ class ListGraphsRespTags:
     }
 
     def __init__(self, key=None, value=None):
-        """ListGraphsRespTags
+        r"""ListGraphsRespTags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListGraphsRespTags:
 
     @property
     def key(self):
-        """Gets the key of this ListGraphsRespTags.
+        r"""Gets the key of this ListGraphsRespTags.
 
         标签key
 
@@ -61,7 +61,7 @@ class ListGraphsRespTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ListGraphsRespTags.
+        r"""Sets the key of this ListGraphsRespTags.
 
         标签key
 
@@ -72,7 +72,7 @@ class ListGraphsRespTags:
 
     @property
     def value(self):
-        """Gets the value of this ListGraphsRespTags.
+        r"""Gets the value of this ListGraphsRespTags.
 
         标签value
 
@@ -83,7 +83,7 @@ class ListGraphsRespTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListGraphsRespTags.
+        r"""Sets the value of this ListGraphsRespTags.
 
         标签value
 

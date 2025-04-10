@@ -28,7 +28,7 @@ class BatchCheckResultsResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchCheckResultsResponse
+        r"""BatchCheckResultsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchCheckResultsResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchCheckResultsResponse.
+        r"""Gets the results of this BatchCheckResultsResponse.
 
         批量查询预检查结果响应体集合。
 
@@ -62,7 +62,7 @@ class BatchCheckResultsResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchCheckResultsResponse.
+        r"""Sets the results of this BatchCheckResultsResponse.
 
         批量查询预检查结果响应体集合。
 
@@ -73,7 +73,7 @@ class BatchCheckResultsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchCheckResultsResponse.
+        r"""Gets the count of this BatchCheckResultsResponse.
 
         总记录数。
 
@@ -84,7 +84,7 @@ class BatchCheckResultsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchCheckResultsResponse.
+        r"""Sets the count of this BatchCheckResultsResponse.
 
         总记录数。
 

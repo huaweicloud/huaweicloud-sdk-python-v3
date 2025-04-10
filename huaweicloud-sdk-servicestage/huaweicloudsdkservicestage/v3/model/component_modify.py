@@ -85,7 +85,7 @@ class ComponentModify:
     }
 
     def __init__(self, name=None, description=None, labels=None, runtime_stack=None, source=None, build=None, limit_cpu=None, limit_memory=None, request_cpu=None, request_memory=None, replica=None, version=None, swimlane_id=None, envs=None, storages=None, deploy_strategy=None, command=None, post_start=None, pre_stop=None, timezone=None, mesher=None, jvm_opts=None, tomcat_opts=None, logs=None, custom_metric=None, affinity=None, anti_affinity=None, liveness_probe=None, readiness_probe=None, external_accesses=None, refer_resources=None):
-        """ComponentModify
+        r"""ComponentModify
 
         The model defined in huaweicloud sdk
 
@@ -248,7 +248,7 @@ class ComponentModify:
 
     @property
     def name(self):
-        """Gets the name of this ComponentModify.
+        r"""Gets the name of this ComponentModify.
 
         :return: The name of this ComponentModify.
         :rtype: str
@@ -257,7 +257,7 @@ class ComponentModify:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentModify.
+        r"""Sets the name of this ComponentModify.
 
         :param name: The name of this ComponentModify.
         :type name: str
@@ -266,7 +266,7 @@ class ComponentModify:
 
     @property
     def description(self):
-        """Gets the description of this ComponentModify.
+        r"""Gets the description of this ComponentModify.
 
         :return: The description of this ComponentModify.
         :rtype: str
@@ -275,7 +275,7 @@ class ComponentModify:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ComponentModify.
+        r"""Sets the description of this ComponentModify.
 
         :param description: The description of this ComponentModify.
         :type description: str
@@ -284,7 +284,7 @@ class ComponentModify:
 
     @property
     def labels(self):
-        """Gets the labels of this ComponentModify.
+        r"""Gets the labels of this ComponentModify.
 
         :return: The labels of this ComponentModify.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.Label`]
@@ -293,7 +293,7 @@ class ComponentModify:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ComponentModify.
+        r"""Sets the labels of this ComponentModify.
 
         :param labels: The labels of this ComponentModify.
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.Label`]
@@ -302,7 +302,7 @@ class ComponentModify:
 
     @property
     def runtime_stack(self):
-        """Gets the runtime_stack of this ComponentModify.
+        r"""Gets the runtime_stack of this ComponentModify.
 
         :return: The runtime_stack of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v3.RuntimeStack`
@@ -311,7 +311,7 @@ class ComponentModify:
 
     @runtime_stack.setter
     def runtime_stack(self, runtime_stack):
-        """Sets the runtime_stack of this ComponentModify.
+        r"""Sets the runtime_stack of this ComponentModify.
 
         :param runtime_stack: The runtime_stack of this ComponentModify.
         :type runtime_stack: :class:`huaweicloudsdkservicestage.v3.RuntimeStack`
@@ -320,7 +320,7 @@ class ComponentModify:
 
     @property
     def source(self):
-        """Gets the source of this ComponentModify.
+        r"""Gets the source of this ComponentModify.
 
         :return: The source of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v3.SourceObject`
@@ -329,7 +329,7 @@ class ComponentModify:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ComponentModify.
+        r"""Sets the source of this ComponentModify.
 
         :param source: The source of this ComponentModify.
         :type source: :class:`huaweicloudsdkservicestage.v3.SourceObject`
@@ -338,7 +338,7 @@ class ComponentModify:
 
     @property
     def build(self):
-        """Gets the build of this ComponentModify.
+        r"""Gets the build of this ComponentModify.
 
         :return: The build of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v3.Build`
@@ -347,7 +347,7 @@ class ComponentModify:
 
     @build.setter
     def build(self, build):
-        """Sets the build of this ComponentModify.
+        r"""Sets the build of this ComponentModify.
 
         :param build: The build of this ComponentModify.
         :type build: :class:`huaweicloudsdkservicestage.v3.Build`
@@ -356,7 +356,7 @@ class ComponentModify:
 
     @property
     def limit_cpu(self):
-        """Gets the limit_cpu of this ComponentModify.
+        r"""Gets the limit_cpu of this ComponentModify.
 
         单位为Core
 
@@ -367,7 +367,7 @@ class ComponentModify:
 
     @limit_cpu.setter
     def limit_cpu(self, limit_cpu):
-        """Sets the limit_cpu of this ComponentModify.
+        r"""Sets the limit_cpu of this ComponentModify.
 
         单位为Core
 
@@ -378,7 +378,7 @@ class ComponentModify:
 
     @property
     def limit_memory(self):
-        """Gets the limit_memory of this ComponentModify.
+        r"""Gets the limit_memory of this ComponentModify.
 
         单位为GiB
 
@@ -389,7 +389,7 @@ class ComponentModify:
 
     @limit_memory.setter
     def limit_memory(self, limit_memory):
-        """Sets the limit_memory of this ComponentModify.
+        r"""Sets the limit_memory of this ComponentModify.
 
         单位为GiB
 
@@ -400,7 +400,7 @@ class ComponentModify:
 
     @property
     def request_cpu(self):
-        """Gets the request_cpu of this ComponentModify.
+        r"""Gets the request_cpu of this ComponentModify.
 
         单位为Core
 
@@ -411,7 +411,7 @@ class ComponentModify:
 
     @request_cpu.setter
     def request_cpu(self, request_cpu):
-        """Sets the request_cpu of this ComponentModify.
+        r"""Sets the request_cpu of this ComponentModify.
 
         单位为Core
 
@@ -422,7 +422,7 @@ class ComponentModify:
 
     @property
     def request_memory(self):
-        """Gets the request_memory of this ComponentModify.
+        r"""Gets the request_memory of this ComponentModify.
 
         单位为GiB
 
@@ -433,7 +433,7 @@ class ComponentModify:
 
     @request_memory.setter
     def request_memory(self, request_memory):
-        """Sets the request_memory of this ComponentModify.
+        r"""Sets the request_memory of this ComponentModify.
 
         单位为GiB
 
@@ -444,7 +444,7 @@ class ComponentModify:
 
     @property
     def replica(self):
-        """Gets the replica of this ComponentModify.
+        r"""Gets the replica of this ComponentModify.
 
         :return: The replica of this ComponentModify.
         :rtype: int
@@ -453,7 +453,7 @@ class ComponentModify:
 
     @replica.setter
     def replica(self, replica):
-        """Sets the replica of this ComponentModify.
+        r"""Sets the replica of this ComponentModify.
 
         :param replica: The replica of this ComponentModify.
         :type replica: int
@@ -462,7 +462,7 @@ class ComponentModify:
 
     @property
     def version(self):
-        """Gets the version of this ComponentModify.
+        r"""Gets the version of this ComponentModify.
 
         :return: The version of this ComponentModify.
         :rtype: str
@@ -471,7 +471,7 @@ class ComponentModify:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ComponentModify.
+        r"""Sets the version of this ComponentModify.
 
         :param version: The version of this ComponentModify.
         :type version: str
@@ -480,7 +480,7 @@ class ComponentModify:
 
     @property
     def swimlane_id(self):
-        """Gets the swimlane_id of this ComponentModify.
+        r"""Gets the swimlane_id of this ComponentModify.
 
         泳道id
 
@@ -491,7 +491,7 @@ class ComponentModify:
 
     @swimlane_id.setter
     def swimlane_id(self, swimlane_id):
-        """Sets the swimlane_id of this ComponentModify.
+        r"""Sets the swimlane_id of this ComponentModify.
 
         泳道id
 
@@ -502,7 +502,7 @@ class ComponentModify:
 
     @property
     def envs(self):
-        """Gets the envs of this ComponentModify.
+        r"""Gets the envs of this ComponentModify.
 
         :return: The envs of this ComponentModify.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ComponentEnvironment`]
@@ -511,7 +511,7 @@ class ComponentModify:
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this ComponentModify.
+        r"""Sets the envs of this ComponentModify.
 
         :param envs: The envs of this ComponentModify.
         :type envs: list[:class:`huaweicloudsdkservicestage.v3.ComponentEnvironment`]
@@ -520,7 +520,7 @@ class ComponentModify:
 
     @property
     def storages(self):
-        """Gets the storages of this ComponentModify.
+        r"""Gets the storages of this ComponentModify.
 
         :return: The storages of this ComponentModify.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ComponentStorage`]
@@ -529,7 +529,7 @@ class ComponentModify:
 
     @storages.setter
     def storages(self, storages):
-        """Sets the storages of this ComponentModify.
+        r"""Sets the storages of this ComponentModify.
 
         :param storages: The storages of this ComponentModify.
         :type storages: list[:class:`huaweicloudsdkservicestage.v3.ComponentStorage`]
@@ -538,7 +538,7 @@ class ComponentModify:
 
     @property
     def deploy_strategy(self):
-        """Gets the deploy_strategy of this ComponentModify.
+        r"""Gets the deploy_strategy of this ComponentModify.
 
         :return: The deploy_strategy of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v3.DeployStrategy`
@@ -547,7 +547,7 @@ class ComponentModify:
 
     @deploy_strategy.setter
     def deploy_strategy(self, deploy_strategy):
-        """Sets the deploy_strategy of this ComponentModify.
+        r"""Sets the deploy_strategy of this ComponentModify.
 
         :param deploy_strategy: The deploy_strategy of this ComponentModify.
         :type deploy_strategy: :class:`huaweicloudsdkservicestage.v3.DeployStrategy`
@@ -556,7 +556,7 @@ class ComponentModify:
 
     @property
     def command(self):
-        """Gets the command of this ComponentModify.
+        r"""Gets the command of this ComponentModify.
 
         :return: The command of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentCommand`
@@ -565,7 +565,7 @@ class ComponentModify:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ComponentModify.
+        r"""Sets the command of this ComponentModify.
 
         :param command: The command of this ComponentModify.
         :type command: :class:`huaweicloudsdkservicestage.v3.ComponentCommand`
@@ -574,7 +574,7 @@ class ComponentModify:
 
     @property
     def post_start(self):
-        """Gets the post_start of this ComponentModify.
+        r"""Gets the post_start of this ComponentModify.
 
         :return: The post_start of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentLifecycle`
@@ -583,7 +583,7 @@ class ComponentModify:
 
     @post_start.setter
     def post_start(self, post_start):
-        """Sets the post_start of this ComponentModify.
+        r"""Sets the post_start of this ComponentModify.
 
         :param post_start: The post_start of this ComponentModify.
         :type post_start: :class:`huaweicloudsdkservicestage.v3.ComponentLifecycle`
@@ -592,7 +592,7 @@ class ComponentModify:
 
     @property
     def pre_stop(self):
-        """Gets the pre_stop of this ComponentModify.
+        r"""Gets the pre_stop of this ComponentModify.
 
         :return: The pre_stop of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentLifecycle`
@@ -601,7 +601,7 @@ class ComponentModify:
 
     @pre_stop.setter
     def pre_stop(self, pre_stop):
-        """Sets the pre_stop of this ComponentModify.
+        r"""Sets the pre_stop of this ComponentModify.
 
         :param pre_stop: The pre_stop of this ComponentModify.
         :type pre_stop: :class:`huaweicloudsdkservicestage.v3.ComponentLifecycle`
@@ -610,7 +610,7 @@ class ComponentModify:
 
     @property
     def timezone(self):
-        """Gets the timezone of this ComponentModify.
+        r"""Gets the timezone of this ComponentModify.
 
         指定组件运行的时区，比如Asia/Shanghai
 
@@ -621,7 +621,7 @@ class ComponentModify:
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this ComponentModify.
+        r"""Sets the timezone of this ComponentModify.
 
         指定组件运行的时区，比如Asia/Shanghai
 
@@ -632,7 +632,7 @@ class ComponentModify:
 
     @property
     def mesher(self):
-        """Gets the mesher of this ComponentModify.
+        r"""Gets the mesher of this ComponentModify.
 
         :return: The mesher of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v3.Mesher`
@@ -641,7 +641,7 @@ class ComponentModify:
 
     @mesher.setter
     def mesher(self, mesher):
-        """Sets the mesher of this ComponentModify.
+        r"""Sets the mesher of this ComponentModify.
 
         :param mesher: The mesher of this ComponentModify.
         :type mesher: :class:`huaweicloudsdkservicestage.v3.Mesher`
@@ -650,7 +650,7 @@ class ComponentModify:
 
     @property
     def jvm_opts(self):
-        """Gets the jvm_opts of this ComponentModify.
+        r"""Gets the jvm_opts of this ComponentModify.
 
         jvm参数
 
@@ -661,7 +661,7 @@ class ComponentModify:
 
     @jvm_opts.setter
     def jvm_opts(self, jvm_opts):
-        """Sets the jvm_opts of this ComponentModify.
+        r"""Sets the jvm_opts of this ComponentModify.
 
         jvm参数
 
@@ -672,7 +672,7 @@ class ComponentModify:
 
     @property
     def tomcat_opts(self):
-        """Gets the tomcat_opts of this ComponentModify.
+        r"""Gets the tomcat_opts of this ComponentModify.
 
         :return: The tomcat_opts of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentModifyTomcatOpts`
@@ -681,7 +681,7 @@ class ComponentModify:
 
     @tomcat_opts.setter
     def tomcat_opts(self, tomcat_opts):
-        """Sets the tomcat_opts of this ComponentModify.
+        r"""Sets the tomcat_opts of this ComponentModify.
 
         :param tomcat_opts: The tomcat_opts of this ComponentModify.
         :type tomcat_opts: :class:`huaweicloudsdkservicestage.v3.ComponentModifyTomcatOpts`
@@ -690,7 +690,7 @@ class ComponentModify:
 
     @property
     def logs(self):
-        """Gets the logs of this ComponentModify.
+        r"""Gets the logs of this ComponentModify.
 
         :return: The logs of this ComponentModify.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ComponentLogs`]
@@ -699,7 +699,7 @@ class ComponentModify:
 
     @logs.setter
     def logs(self, logs):
-        """Sets the logs of this ComponentModify.
+        r"""Sets the logs of this ComponentModify.
 
         :param logs: The logs of this ComponentModify.
         :type logs: list[:class:`huaweicloudsdkservicestage.v3.ComponentLogs`]
@@ -708,7 +708,7 @@ class ComponentModify:
 
     @property
     def custom_metric(self):
-        """Gets the custom_metric of this ComponentModify.
+        r"""Gets the custom_metric of this ComponentModify.
 
         :return: The custom_metric of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentModifyCustomMetric`
@@ -717,7 +717,7 @@ class ComponentModify:
 
     @custom_metric.setter
     def custom_metric(self, custom_metric):
-        """Sets the custom_metric of this ComponentModify.
+        r"""Sets the custom_metric of this ComponentModify.
 
         :param custom_metric: The custom_metric of this ComponentModify.
         :type custom_metric: :class:`huaweicloudsdkservicestage.v3.ComponentModifyCustomMetric`
@@ -726,7 +726,7 @@ class ComponentModify:
 
     @property
     def affinity(self):
-        """Gets the affinity of this ComponentModify.
+        r"""Gets the affinity of this ComponentModify.
 
         :return: The affinity of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentAffinity`
@@ -735,7 +735,7 @@ class ComponentModify:
 
     @affinity.setter
     def affinity(self, affinity):
-        """Sets the affinity of this ComponentModify.
+        r"""Sets the affinity of this ComponentModify.
 
         :param affinity: The affinity of this ComponentModify.
         :type affinity: :class:`huaweicloudsdkservicestage.v3.ComponentAffinity`
@@ -744,7 +744,7 @@ class ComponentModify:
 
     @property
     def anti_affinity(self):
-        """Gets the anti_affinity of this ComponentModify.
+        r"""Gets the anti_affinity of this ComponentModify.
 
         :return: The anti_affinity of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentAffinity`
@@ -753,7 +753,7 @@ class ComponentModify:
 
     @anti_affinity.setter
     def anti_affinity(self, anti_affinity):
-        """Sets the anti_affinity of this ComponentModify.
+        r"""Sets the anti_affinity of this ComponentModify.
 
         :param anti_affinity: The anti_affinity of this ComponentModify.
         :type anti_affinity: :class:`huaweicloudsdkservicestage.v3.ComponentAffinity`
@@ -762,7 +762,7 @@ class ComponentModify:
 
     @property
     def liveness_probe(self):
-        """Gets the liveness_probe of this ComponentModify.
+        r"""Gets the liveness_probe of this ComponentModify.
 
         :return: The liveness_probe of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
@@ -771,7 +771,7 @@ class ComponentModify:
 
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
-        """Sets the liveness_probe of this ComponentModify.
+        r"""Sets the liveness_probe of this ComponentModify.
 
         :param liveness_probe: The liveness_probe of this ComponentModify.
         :type liveness_probe: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
@@ -780,7 +780,7 @@ class ComponentModify:
 
     @property
     def readiness_probe(self):
-        """Gets the readiness_probe of this ComponentModify.
+        r"""Gets the readiness_probe of this ComponentModify.
 
         :return: The readiness_probe of this ComponentModify.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
@@ -789,7 +789,7 @@ class ComponentModify:
 
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
-        """Sets the readiness_probe of this ComponentModify.
+        r"""Sets the readiness_probe of this ComponentModify.
 
         :param readiness_probe: The readiness_probe of this ComponentModify.
         :type readiness_probe: :class:`huaweicloudsdkservicestage.v3.ComponentProbe`
@@ -798,7 +798,7 @@ class ComponentModify:
 
     @property
     def external_accesses(self):
-        """Gets the external_accesses of this ComponentModify.
+        r"""Gets the external_accesses of this ComponentModify.
 
         :return: The external_accesses of this ComponentModify.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ExternalAccesses`]
@@ -807,7 +807,7 @@ class ComponentModify:
 
     @external_accesses.setter
     def external_accesses(self, external_accesses):
-        """Sets the external_accesses of this ComponentModify.
+        r"""Sets the external_accesses of this ComponentModify.
 
         :param external_accesses: The external_accesses of this ComponentModify.
         :type external_accesses: list[:class:`huaweicloudsdkservicestage.v3.ExternalAccesses`]
@@ -816,7 +816,7 @@ class ComponentModify:
 
     @property
     def refer_resources(self):
-        """Gets the refer_resources of this ComponentModify.
+        r"""Gets the refer_resources of this ComponentModify.
 
         :return: The refer_resources of this ComponentModify.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.ReferResourceCreate`]
@@ -825,7 +825,7 @@ class ComponentModify:
 
     @refer_resources.setter
     def refer_resources(self, refer_resources):
-        """Sets the refer_resources of this ComponentModify.
+        r"""Sets the refer_resources of this ComponentModify.
 
         :param refer_resources: The refer_resources of this ComponentModify.
         :type refer_resources: list[:class:`huaweicloudsdkservicestage.v3.ReferResourceCreate`]

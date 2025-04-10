@@ -27,7 +27,7 @@ class SetRedisPitrPolicyRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SetRedisPitrPolicyRequest
+        r"""SetRedisPitrPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SetRedisPitrPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetRedisPitrPolicyRequest.
+        r"""Gets the instance_id of this SetRedisPitrPolicyRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class SetRedisPitrPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetRedisPitrPolicyRequest.
+        r"""Sets the instance_id of this SetRedisPitrPolicyRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class SetRedisPitrPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetRedisPitrPolicyRequest.
+        r"""Gets the body of this SetRedisPitrPolicyRequest.
 
         :return: The body of this SetRedisPitrPolicyRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SetRedisPitrPolicyRequestBody`
@@ -80,7 +80,7 @@ class SetRedisPitrPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetRedisPitrPolicyRequest.
+        r"""Sets the body of this SetRedisPitrPolicyRequest.
 
         :param body: The body of this SetRedisPitrPolicyRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.SetRedisPitrPolicyRequestBody`

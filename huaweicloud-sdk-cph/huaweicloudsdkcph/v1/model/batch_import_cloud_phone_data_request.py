@@ -25,7 +25,7 @@ class BatchImportCloudPhoneDataRequest:
     }
 
     def __init__(self, body=None):
-        """BatchImportCloudPhoneDataRequest
+        r"""BatchImportCloudPhoneDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchImportCloudPhoneDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchImportCloudPhoneDataRequest.
+        r"""Gets the body of this BatchImportCloudPhoneDataRequest.
 
         :return: The body of this BatchImportCloudPhoneDataRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.BatchImportCloudPhoneDataRequestBody`
@@ -52,7 +52,7 @@ class BatchImportCloudPhoneDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchImportCloudPhoneDataRequest.
+        r"""Sets the body of this BatchImportCloudPhoneDataRequest.
 
         :param body: The body of this BatchImportCloudPhoneDataRequest.
         :type body: :class:`huaweicloudsdkcph.v1.BatchImportCloudPhoneDataRequestBody`

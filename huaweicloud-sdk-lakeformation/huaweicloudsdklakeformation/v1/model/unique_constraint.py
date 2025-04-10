@@ -41,7 +41,7 @@ class UniqueConstraint:
     }
 
     def __init__(self, catalog_name=None, database_name=None, table_name=None, column_name=None, constraint_name=None, key_sequence=None, enable_constraint=None, rely_constraint=None, validate_constraint=None):
-        """UniqueConstraint
+        r"""UniqueConstraint
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class UniqueConstraint:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this UniqueConstraint.
+        r"""Gets the catalog_name of this UniqueConstraint.
 
         catalog名字
 
@@ -102,7 +102,7 @@ class UniqueConstraint:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this UniqueConstraint.
+        r"""Sets the catalog_name of this UniqueConstraint.
 
         catalog名字
 
@@ -113,7 +113,7 @@ class UniqueConstraint:
 
     @property
     def database_name(self):
-        """Gets the database_name of this UniqueConstraint.
+        r"""Gets the database_name of this UniqueConstraint.
 
         数据库名字
 
@@ -124,7 +124,7 @@ class UniqueConstraint:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this UniqueConstraint.
+        r"""Sets the database_name of this UniqueConstraint.
 
         数据库名字
 
@@ -135,7 +135,7 @@ class UniqueConstraint:
 
     @property
     def table_name(self):
-        """Gets the table_name of this UniqueConstraint.
+        r"""Gets the table_name of this UniqueConstraint.
 
         表名称
 
@@ -146,7 +146,7 @@ class UniqueConstraint:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this UniqueConstraint.
+        r"""Sets the table_name of this UniqueConstraint.
 
         表名称
 
@@ -157,7 +157,7 @@ class UniqueConstraint:
 
     @property
     def column_name(self):
-        """Gets the column_name of this UniqueConstraint.
+        r"""Gets the column_name of this UniqueConstraint.
 
         列名
 
@@ -168,7 +168,7 @@ class UniqueConstraint:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this UniqueConstraint.
+        r"""Sets the column_name of this UniqueConstraint.
 
         列名
 
@@ -179,7 +179,7 @@ class UniqueConstraint:
 
     @property
     def constraint_name(self):
-        """Gets the constraint_name of this UniqueConstraint.
+        r"""Gets the constraint_name of this UniqueConstraint.
 
         constraint Name
 
@@ -190,7 +190,7 @@ class UniqueConstraint:
 
     @constraint_name.setter
     def constraint_name(self, constraint_name):
-        """Sets the constraint_name of this UniqueConstraint.
+        r"""Sets the constraint_name of this UniqueConstraint.
 
         constraint Name
 
@@ -201,7 +201,7 @@ class UniqueConstraint:
 
     @property
     def key_sequence(self):
-        """Gets the key_sequence of this UniqueConstraint.
+        r"""Gets the key_sequence of this UniqueConstraint.
 
         列序号（限制条件中第几位）
 
@@ -212,7 +212,7 @@ class UniqueConstraint:
 
     @key_sequence.setter
     def key_sequence(self, key_sequence):
-        """Sets the key_sequence of this UniqueConstraint.
+        r"""Sets the key_sequence of this UniqueConstraint.
 
         列序号（限制条件中第几位）
 
@@ -223,7 +223,7 @@ class UniqueConstraint:
 
     @property
     def enable_constraint(self):
-        """Gets the enable_constraint of this UniqueConstraint.
+        r"""Gets the enable_constraint of this UniqueConstraint.
 
         enable constraint
 
@@ -234,7 +234,7 @@ class UniqueConstraint:
 
     @enable_constraint.setter
     def enable_constraint(self, enable_constraint):
-        """Sets the enable_constraint of this UniqueConstraint.
+        r"""Sets the enable_constraint of this UniqueConstraint.
 
         enable constraint
 
@@ -245,7 +245,7 @@ class UniqueConstraint:
 
     @property
     def rely_constraint(self):
-        """Gets the rely_constraint of this UniqueConstraint.
+        r"""Gets the rely_constraint of this UniqueConstraint.
 
         constraint is rely when Query
 
@@ -256,7 +256,7 @@ class UniqueConstraint:
 
     @rely_constraint.setter
     def rely_constraint(self, rely_constraint):
-        """Sets the rely_constraint of this UniqueConstraint.
+        r"""Sets the rely_constraint of this UniqueConstraint.
 
         constraint is rely when Query
 
@@ -267,7 +267,7 @@ class UniqueConstraint:
 
     @property
     def validate_constraint(self):
-        """Gets the validate_constraint of this UniqueConstraint.
+        r"""Gets the validate_constraint of this UniqueConstraint.
 
         constraint is validated
 
@@ -278,7 +278,7 @@ class UniqueConstraint:
 
     @validate_constraint.setter
     def validate_constraint(self, validate_constraint):
-        """Sets the validate_constraint of this UniqueConstraint.
+        r"""Sets the validate_constraint of this UniqueConstraint.
 
         constraint is validated
 

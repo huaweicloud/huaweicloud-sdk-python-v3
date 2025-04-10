@@ -139,7 +139,7 @@ class DetailDataInfo:
     }
 
     def __init__(self, average_resp_time=None, avg_rec_bytes=None, avg_sent_bytes=None, avg_tran_resp_time=None, case_uri=None, create_time=None, current_thread_num=None, detail_id=None, end_time=None, error_count=None, error_events_count=None, failed_assert=None, failed_others=None, failed_parsed=None, failed_refused=None, failed_timeout=None, id=None, is_aw=None, max=None, max_rec_bytes=None, max_resp_time=None, max_sent_bytes=None, max_tran_resp_time=None, min=None, min_network_traffic=None, name=None, requests=None, result=None, start_time=None, status=None, success_count=None, success_rate=None, sum1xx=None, sum2xx=None, sum3xx=None, sum4xx=None, sum5xx=None, task_id=None, task_project_id=None, task_status=None, test_case_uri=None, tp50=None, tp75=None, tp90=None, tp95=None, tp99=None, tps=None, tran_tps=None, transaction_id=None, transaction_success=None, transactional_success_rate=None, transactional_tps=None, transactional_tps_success=None, transactions=None, update_time=None, vum=None, avg_network_traffic=None, max_network_traffic=None):
-        """DetailDataInfo
+        r"""DetailDataInfo
 
         The model defined in huaweicloud sdk
 
@@ -442,7 +442,7 @@ class DetailDataInfo:
 
     @property
     def average_resp_time(self):
-        """Gets the average_resp_time of this DetailDataInfo.
+        r"""Gets the average_resp_time of this DetailDataInfo.
 
         平均响应时间
 
@@ -453,7 +453,7 @@ class DetailDataInfo:
 
     @average_resp_time.setter
     def average_resp_time(self, average_resp_time):
-        """Sets the average_resp_time of this DetailDataInfo.
+        r"""Sets the average_resp_time of this DetailDataInfo.
 
         平均响应时间
 
@@ -464,7 +464,7 @@ class DetailDataInfo:
 
     @property
     def avg_rec_bytes(self):
-        """Gets the avg_rec_bytes of this DetailDataInfo.
+        r"""Gets the avg_rec_bytes of this DetailDataInfo.
 
         平均接收字节数
 
@@ -475,7 +475,7 @@ class DetailDataInfo:
 
     @avg_rec_bytes.setter
     def avg_rec_bytes(self, avg_rec_bytes):
-        """Sets the avg_rec_bytes of this DetailDataInfo.
+        r"""Sets the avg_rec_bytes of this DetailDataInfo.
 
         平均接收字节数
 
@@ -486,7 +486,7 @@ class DetailDataInfo:
 
     @property
     def avg_sent_bytes(self):
-        """Gets the avg_sent_bytes of this DetailDataInfo.
+        r"""Gets the avg_sent_bytes of this DetailDataInfo.
 
         平均发送字节数
 
@@ -497,7 +497,7 @@ class DetailDataInfo:
 
     @avg_sent_bytes.setter
     def avg_sent_bytes(self, avg_sent_bytes):
-        """Sets the avg_sent_bytes of this DetailDataInfo.
+        r"""Sets the avg_sent_bytes of this DetailDataInfo.
 
         平均发送字节数
 
@@ -508,7 +508,7 @@ class DetailDataInfo:
 
     @property
     def avg_tran_resp_time(self):
-        """Gets the avg_tran_resp_time of this DetailDataInfo.
+        r"""Gets the avg_tran_resp_time of this DetailDataInfo.
 
         事务平均响应时间
 
@@ -519,7 +519,7 @@ class DetailDataInfo:
 
     @avg_tran_resp_time.setter
     def avg_tran_resp_time(self, avg_tran_resp_time):
-        """Sets the avg_tran_resp_time of this DetailDataInfo.
+        r"""Sets the avg_tran_resp_time of this DetailDataInfo.
 
         事务平均响应时间
 
@@ -530,7 +530,7 @@ class DetailDataInfo:
 
     @property
     def case_uri(self):
-        """Gets the case_uri of this DetailDataInfo.
+        r"""Gets the case_uri of this DetailDataInfo.
 
         用例Uri
 
@@ -541,7 +541,7 @@ class DetailDataInfo:
 
     @case_uri.setter
     def case_uri(self, case_uri):
-        """Sets the case_uri of this DetailDataInfo.
+        r"""Sets the case_uri of this DetailDataInfo.
 
         用例Uri
 
@@ -552,7 +552,7 @@ class DetailDataInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DetailDataInfo.
+        r"""Gets the create_time of this DetailDataInfo.
 
         创建时间
 
@@ -563,7 +563,7 @@ class DetailDataInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DetailDataInfo.
+        r"""Sets the create_time of this DetailDataInfo.
 
         创建时间
 
@@ -574,7 +574,7 @@ class DetailDataInfo:
 
     @property
     def current_thread_num(self):
-        """Gets the current_thread_num of this DetailDataInfo.
+        r"""Gets the current_thread_num of this DetailDataInfo.
 
         最大并发数
 
@@ -585,7 +585,7 @@ class DetailDataInfo:
 
     @current_thread_num.setter
     def current_thread_num(self, current_thread_num):
-        """Sets the current_thread_num of this DetailDataInfo.
+        r"""Sets the current_thread_num of this DetailDataInfo.
 
         最大并发数
 
@@ -596,7 +596,7 @@ class DetailDataInfo:
 
     @property
     def detail_id(self):
-        """Gets the detail_id of this DetailDataInfo.
+        r"""Gets the detail_id of this DetailDataInfo.
 
         详情id
 
@@ -607,7 +607,7 @@ class DetailDataInfo:
 
     @detail_id.setter
     def detail_id(self, detail_id):
-        """Sets the detail_id of this DetailDataInfo.
+        r"""Sets the detail_id of this DetailDataInfo.
 
         详情id
 
@@ -618,7 +618,7 @@ class DetailDataInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this DetailDataInfo.
+        r"""Gets the end_time of this DetailDataInfo.
 
         结束时间
 
@@ -629,7 +629,7 @@ class DetailDataInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this DetailDataInfo.
+        r"""Sets the end_time of this DetailDataInfo.
 
         结束时间
 
@@ -640,7 +640,7 @@ class DetailDataInfo:
 
     @property
     def error_count(self):
-        """Gets the error_count of this DetailDataInfo.
+        r"""Gets the error_count of this DetailDataInfo.
 
         失败请求数
 
@@ -651,7 +651,7 @@ class DetailDataInfo:
 
     @error_count.setter
     def error_count(self, error_count):
-        """Sets the error_count of this DetailDataInfo.
+        r"""Sets the error_count of this DetailDataInfo.
 
         失败请求数
 
@@ -662,7 +662,7 @@ class DetailDataInfo:
 
     @property
     def error_events_count(self):
-        """Gets the error_events_count of this DetailDataInfo.
+        r"""Gets the error_events_count of this DetailDataInfo.
 
         ERROR级别的事件个数
 
@@ -673,7 +673,7 @@ class DetailDataInfo:
 
     @error_events_count.setter
     def error_events_count(self, error_events_count):
-        """Sets the error_events_count of this DetailDataInfo.
+        r"""Sets the error_events_count of this DetailDataInfo.
 
         ERROR级别的事件个数
 
@@ -684,7 +684,7 @@ class DetailDataInfo:
 
     @property
     def failed_assert(self):
-        """Gets the failed_assert of this DetailDataInfo.
+        r"""Gets the failed_assert of this DetailDataInfo.
 
         断言失败
 
@@ -695,7 +695,7 @@ class DetailDataInfo:
 
     @failed_assert.setter
     def failed_assert(self, failed_assert):
-        """Sets the failed_assert of this DetailDataInfo.
+        r"""Sets the failed_assert of this DetailDataInfo.
 
         断言失败
 
@@ -706,7 +706,7 @@ class DetailDataInfo:
 
     @property
     def failed_others(self):
-        """Gets the failed_others of this DetailDataInfo.
+        r"""Gets the failed_others of this DetailDataInfo.
 
         其他失败
 
@@ -717,7 +717,7 @@ class DetailDataInfo:
 
     @failed_others.setter
     def failed_others(self, failed_others):
-        """Sets the failed_others of this DetailDataInfo.
+        r"""Sets the failed_others of this DetailDataInfo.
 
         其他失败
 
@@ -728,7 +728,7 @@ class DetailDataInfo:
 
     @property
     def failed_parsed(self):
-        """Gets the failed_parsed of this DetailDataInfo.
+        r"""Gets the failed_parsed of this DetailDataInfo.
 
         解析失败
 
@@ -739,7 +739,7 @@ class DetailDataInfo:
 
     @failed_parsed.setter
     def failed_parsed(self, failed_parsed):
-        """Sets the failed_parsed of this DetailDataInfo.
+        r"""Sets the failed_parsed of this DetailDataInfo.
 
         解析失败
 
@@ -750,7 +750,7 @@ class DetailDataInfo:
 
     @property
     def failed_refused(self):
-        """Gets the failed_refused of this DetailDataInfo.
+        r"""Gets the failed_refused of this DetailDataInfo.
 
         连接被拒
 
@@ -761,7 +761,7 @@ class DetailDataInfo:
 
     @failed_refused.setter
     def failed_refused(self, failed_refused):
-        """Sets the failed_refused of this DetailDataInfo.
+        r"""Sets the failed_refused of this DetailDataInfo.
 
         连接被拒
 
@@ -772,7 +772,7 @@ class DetailDataInfo:
 
     @property
     def failed_timeout(self):
-        """Gets the failed_timeout of this DetailDataInfo.
+        r"""Gets the failed_timeout of this DetailDataInfo.
 
         超时失败
 
@@ -783,7 +783,7 @@ class DetailDataInfo:
 
     @failed_timeout.setter
     def failed_timeout(self, failed_timeout):
-        """Sets the failed_timeout of this DetailDataInfo.
+        r"""Sets the failed_timeout of this DetailDataInfo.
 
         超时失败
 
@@ -794,7 +794,7 @@ class DetailDataInfo:
 
     @property
     def id(self):
-        """Gets the id of this DetailDataInfo.
+        r"""Gets the id of this DetailDataInfo.
 
         id
 
@@ -805,7 +805,7 @@ class DetailDataInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DetailDataInfo.
+        r"""Sets the id of this DetailDataInfo.
 
         id
 
@@ -816,7 +816,7 @@ class DetailDataInfo:
 
     @property
     def is_aw(self):
-        """Gets the is_aw of this DetailDataInfo.
+        r"""Gets the is_aw of this DetailDataInfo.
 
         是否aw
 
@@ -827,7 +827,7 @@ class DetailDataInfo:
 
     @is_aw.setter
     def is_aw(self, is_aw):
-        """Sets the is_aw of this DetailDataInfo.
+        r"""Sets the is_aw of this DetailDataInfo.
 
         是否aw
 
@@ -838,7 +838,7 @@ class DetailDataInfo:
 
     @property
     def max(self):
-        """Gets the max of this DetailDataInfo.
+        r"""Gets the max of this DetailDataInfo.
 
         最大响应时间
 
@@ -849,7 +849,7 @@ class DetailDataInfo:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this DetailDataInfo.
+        r"""Sets the max of this DetailDataInfo.
 
         最大响应时间
 
@@ -860,7 +860,7 @@ class DetailDataInfo:
 
     @property
     def max_rec_bytes(self):
-        """Gets the max_rec_bytes of this DetailDataInfo.
+        r"""Gets the max_rec_bytes of this DetailDataInfo.
 
         最大接收字节数
 
@@ -871,7 +871,7 @@ class DetailDataInfo:
 
     @max_rec_bytes.setter
     def max_rec_bytes(self, max_rec_bytes):
-        """Sets the max_rec_bytes of this DetailDataInfo.
+        r"""Sets the max_rec_bytes of this DetailDataInfo.
 
         最大接收字节数
 
@@ -882,7 +882,7 @@ class DetailDataInfo:
 
     @property
     def max_resp_time(self):
-        """Gets the max_resp_time of this DetailDataInfo.
+        r"""Gets the max_resp_time of this DetailDataInfo.
 
         探底最大响应时间
 
@@ -893,7 +893,7 @@ class DetailDataInfo:
 
     @max_resp_time.setter
     def max_resp_time(self, max_resp_time):
-        """Sets the max_resp_time of this DetailDataInfo.
+        r"""Sets the max_resp_time of this DetailDataInfo.
 
         探底最大响应时间
 
@@ -904,7 +904,7 @@ class DetailDataInfo:
 
     @property
     def max_sent_bytes(self):
-        """Gets the max_sent_bytes of this DetailDataInfo.
+        r"""Gets the max_sent_bytes of this DetailDataInfo.
 
         最大发送字节数
 
@@ -915,7 +915,7 @@ class DetailDataInfo:
 
     @max_sent_bytes.setter
     def max_sent_bytes(self, max_sent_bytes):
-        """Sets the max_sent_bytes of this DetailDataInfo.
+        r"""Sets the max_sent_bytes of this DetailDataInfo.
 
         最大发送字节数
 
@@ -926,7 +926,7 @@ class DetailDataInfo:
 
     @property
     def max_tran_resp_time(self):
-        """Gets the max_tran_resp_time of this DetailDataInfo.
+        r"""Gets the max_tran_resp_time of this DetailDataInfo.
 
         事务最大响应时间
 
@@ -937,7 +937,7 @@ class DetailDataInfo:
 
     @max_tran_resp_time.setter
     def max_tran_resp_time(self, max_tran_resp_time):
-        """Sets the max_tran_resp_time of this DetailDataInfo.
+        r"""Sets the max_tran_resp_time of this DetailDataInfo.
 
         事务最大响应时间
 
@@ -948,7 +948,7 @@ class DetailDataInfo:
 
     @property
     def min(self):
-        """Gets the min of this DetailDataInfo.
+        r"""Gets the min of this DetailDataInfo.
 
         最小响应时间
 
@@ -959,7 +959,7 @@ class DetailDataInfo:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this DetailDataInfo.
+        r"""Sets the min of this DetailDataInfo.
 
         最小响应时间
 
@@ -970,7 +970,7 @@ class DetailDataInfo:
 
     @property
     def min_network_traffic(self):
-        """Gets the min_network_traffic of this DetailDataInfo.
+        r"""Gets the min_network_traffic of this DetailDataInfo.
 
         最小带宽
 
@@ -981,7 +981,7 @@ class DetailDataInfo:
 
     @min_network_traffic.setter
     def min_network_traffic(self, min_network_traffic):
-        """Sets the min_network_traffic of this DetailDataInfo.
+        r"""Sets the min_network_traffic of this DetailDataInfo.
 
         最小带宽
 
@@ -992,7 +992,7 @@ class DetailDataInfo:
 
     @property
     def name(self):
-        """Gets the name of this DetailDataInfo.
+        r"""Gets the name of this DetailDataInfo.
 
         名字
 
@@ -1003,7 +1003,7 @@ class DetailDataInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DetailDataInfo.
+        r"""Sets the name of this DetailDataInfo.
 
         名字
 
@@ -1014,7 +1014,7 @@ class DetailDataInfo:
 
     @property
     def requests(self):
-        """Gets the requests of this DetailDataInfo.
+        r"""Gets the requests of this DetailDataInfo.
 
         请求数
 
@@ -1025,7 +1025,7 @@ class DetailDataInfo:
 
     @requests.setter
     def requests(self, requests):
-        """Sets the requests of this DetailDataInfo.
+        r"""Sets the requests of this DetailDataInfo.
 
         请求数
 
@@ -1036,7 +1036,7 @@ class DetailDataInfo:
 
     @property
     def result(self):
-        """Gets the result of this DetailDataInfo.
+        r"""Gets the result of this DetailDataInfo.
 
         aw执行结果
 
@@ -1047,7 +1047,7 @@ class DetailDataInfo:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DetailDataInfo.
+        r"""Sets the result of this DetailDataInfo.
 
         aw执行结果
 
@@ -1058,7 +1058,7 @@ class DetailDataInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DetailDataInfo.
+        r"""Gets the start_time of this DetailDataInfo.
 
         开始时间
 
@@ -1069,7 +1069,7 @@ class DetailDataInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DetailDataInfo.
+        r"""Sets the start_time of this DetailDataInfo.
 
         开始时间
 
@@ -1080,7 +1080,7 @@ class DetailDataInfo:
 
     @property
     def status(self):
-        """Gets the status of this DetailDataInfo.
+        r"""Gets the status of this DetailDataInfo.
 
         用例状态
 
@@ -1091,7 +1091,7 @@ class DetailDataInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DetailDataInfo.
+        r"""Sets the status of this DetailDataInfo.
 
         用例状态
 
@@ -1102,7 +1102,7 @@ class DetailDataInfo:
 
     @property
     def success_count(self):
-        """Gets the success_count of this DetailDataInfo.
+        r"""Gets the success_count of this DetailDataInfo.
 
         成功请求数
 
@@ -1113,7 +1113,7 @@ class DetailDataInfo:
 
     @success_count.setter
     def success_count(self, success_count):
-        """Sets the success_count of this DetailDataInfo.
+        r"""Sets the success_count of this DetailDataInfo.
 
         成功请求数
 
@@ -1124,7 +1124,7 @@ class DetailDataInfo:
 
     @property
     def success_rate(self):
-        """Gets the success_rate of this DetailDataInfo.
+        r"""Gets the success_rate of this DetailDataInfo.
 
         成功率
 
@@ -1135,7 +1135,7 @@ class DetailDataInfo:
 
     @success_rate.setter
     def success_rate(self, success_rate):
-        """Sets the success_rate of this DetailDataInfo.
+        r"""Sets the success_rate of this DetailDataInfo.
 
         成功率
 
@@ -1146,7 +1146,7 @@ class DetailDataInfo:
 
     @property
     def sum1xx(self):
-        """Gets the sum1xx of this DetailDataInfo.
+        r"""Gets the sum1xx of this DetailDataInfo.
 
         1xx请求数
 
@@ -1157,7 +1157,7 @@ class DetailDataInfo:
 
     @sum1xx.setter
     def sum1xx(self, sum1xx):
-        """Sets the sum1xx of this DetailDataInfo.
+        r"""Sets the sum1xx of this DetailDataInfo.
 
         1xx请求数
 
@@ -1168,7 +1168,7 @@ class DetailDataInfo:
 
     @property
     def sum2xx(self):
-        """Gets the sum2xx of this DetailDataInfo.
+        r"""Gets the sum2xx of this DetailDataInfo.
 
         2xx请求数
 
@@ -1179,7 +1179,7 @@ class DetailDataInfo:
 
     @sum2xx.setter
     def sum2xx(self, sum2xx):
-        """Sets the sum2xx of this DetailDataInfo.
+        r"""Sets the sum2xx of this DetailDataInfo.
 
         2xx请求数
 
@@ -1190,7 +1190,7 @@ class DetailDataInfo:
 
     @property
     def sum3xx(self):
-        """Gets the sum3xx of this DetailDataInfo.
+        r"""Gets the sum3xx of this DetailDataInfo.
 
         3xx请求数
 
@@ -1201,7 +1201,7 @@ class DetailDataInfo:
 
     @sum3xx.setter
     def sum3xx(self, sum3xx):
-        """Sets the sum3xx of this DetailDataInfo.
+        r"""Sets the sum3xx of this DetailDataInfo.
 
         3xx请求数
 
@@ -1212,7 +1212,7 @@ class DetailDataInfo:
 
     @property
     def sum4xx(self):
-        """Gets the sum4xx of this DetailDataInfo.
+        r"""Gets the sum4xx of this DetailDataInfo.
 
         4xx请求数
 
@@ -1223,7 +1223,7 @@ class DetailDataInfo:
 
     @sum4xx.setter
     def sum4xx(self, sum4xx):
-        """Sets the sum4xx of this DetailDataInfo.
+        r"""Sets the sum4xx of this DetailDataInfo.
 
         4xx请求数
 
@@ -1234,7 +1234,7 @@ class DetailDataInfo:
 
     @property
     def sum5xx(self):
-        """Gets the sum5xx of this DetailDataInfo.
+        r"""Gets the sum5xx of this DetailDataInfo.
 
         5xx请求数
 
@@ -1245,7 +1245,7 @@ class DetailDataInfo:
 
     @sum5xx.setter
     def sum5xx(self, sum5xx):
-        """Sets the sum5xx of this DetailDataInfo.
+        r"""Sets the sum5xx of this DetailDataInfo.
 
         5xx请求数
 
@@ -1256,7 +1256,7 @@ class DetailDataInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DetailDataInfo.
+        r"""Gets the task_id of this DetailDataInfo.
 
         任务id_轮次
 
@@ -1267,7 +1267,7 @@ class DetailDataInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DetailDataInfo.
+        r"""Sets the task_id of this DetailDataInfo.
 
         任务id_轮次
 
@@ -1278,7 +1278,7 @@ class DetailDataInfo:
 
     @property
     def task_project_id(self):
-        """Gets the task_project_id of this DetailDataInfo.
+        r"""Gets the task_project_id of this DetailDataInfo.
 
         任务id
 
@@ -1289,7 +1289,7 @@ class DetailDataInfo:
 
     @task_project_id.setter
     def task_project_id(self, task_project_id):
-        """Sets the task_project_id of this DetailDataInfo.
+        r"""Sets the task_project_id of this DetailDataInfo.
 
         任务id
 
@@ -1300,7 +1300,7 @@ class DetailDataInfo:
 
     @property
     def task_status(self):
-        """Gets the task_status of this DetailDataInfo.
+        r"""Gets the task_status of this DetailDataInfo.
 
         任务状态
 
@@ -1311,7 +1311,7 @@ class DetailDataInfo:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this DetailDataInfo.
+        r"""Sets the task_status of this DetailDataInfo.
 
         任务状态
 
@@ -1322,7 +1322,7 @@ class DetailDataInfo:
 
     @property
     def test_case_uri(self):
-        """Gets the test_case_uri of this DetailDataInfo.
+        r"""Gets the test_case_uri of this DetailDataInfo.
 
         用例uri
 
@@ -1333,7 +1333,7 @@ class DetailDataInfo:
 
     @test_case_uri.setter
     def test_case_uri(self, test_case_uri):
-        """Sets the test_case_uri of this DetailDataInfo.
+        r"""Sets the test_case_uri of this DetailDataInfo.
 
         用例uri
 
@@ -1344,7 +1344,7 @@ class DetailDataInfo:
 
     @property
     def tp50(self):
-        """Gets the tp50 of this DetailDataInfo.
+        r"""Gets the tp50 of this DetailDataInfo.
 
         tp50
 
@@ -1355,7 +1355,7 @@ class DetailDataInfo:
 
     @tp50.setter
     def tp50(self, tp50):
-        """Sets the tp50 of this DetailDataInfo.
+        r"""Sets the tp50 of this DetailDataInfo.
 
         tp50
 
@@ -1366,7 +1366,7 @@ class DetailDataInfo:
 
     @property
     def tp75(self):
-        """Gets the tp75 of this DetailDataInfo.
+        r"""Gets the tp75 of this DetailDataInfo.
 
         tp75
 
@@ -1377,7 +1377,7 @@ class DetailDataInfo:
 
     @tp75.setter
     def tp75(self, tp75):
-        """Sets the tp75 of this DetailDataInfo.
+        r"""Sets the tp75 of this DetailDataInfo.
 
         tp75
 
@@ -1388,7 +1388,7 @@ class DetailDataInfo:
 
     @property
     def tp90(self):
-        """Gets the tp90 of this DetailDataInfo.
+        r"""Gets the tp90 of this DetailDataInfo.
 
         tp90
 
@@ -1399,7 +1399,7 @@ class DetailDataInfo:
 
     @tp90.setter
     def tp90(self, tp90):
-        """Sets the tp90 of this DetailDataInfo.
+        r"""Sets the tp90 of this DetailDataInfo.
 
         tp90
 
@@ -1410,7 +1410,7 @@ class DetailDataInfo:
 
     @property
     def tp95(self):
-        """Gets the tp95 of this DetailDataInfo.
+        r"""Gets the tp95 of this DetailDataInfo.
 
         tp95
 
@@ -1421,7 +1421,7 @@ class DetailDataInfo:
 
     @tp95.setter
     def tp95(self, tp95):
-        """Sets the tp95 of this DetailDataInfo.
+        r"""Sets the tp95 of this DetailDataInfo.
 
         tp95
 
@@ -1432,7 +1432,7 @@ class DetailDataInfo:
 
     @property
     def tp99(self):
-        """Gets the tp99 of this DetailDataInfo.
+        r"""Gets the tp99 of this DetailDataInfo.
 
         tp99
 
@@ -1443,7 +1443,7 @@ class DetailDataInfo:
 
     @tp99.setter
     def tp99(self, tp99):
-        """Sets the tp99 of this DetailDataInfo.
+        r"""Sets the tp99 of this DetailDataInfo.
 
         tp99
 
@@ -1454,7 +1454,7 @@ class DetailDataInfo:
 
     @property
     def tps(self):
-        """Gets the tps of this DetailDataInfo.
+        r"""Gets the tps of this DetailDataInfo.
 
         tps
 
@@ -1465,7 +1465,7 @@ class DetailDataInfo:
 
     @tps.setter
     def tps(self, tps):
-        """Sets the tps of this DetailDataInfo.
+        r"""Sets the tps of this DetailDataInfo.
 
         tps
 
@@ -1476,7 +1476,7 @@ class DetailDataInfo:
 
     @property
     def tran_tps(self):
-        """Gets the tran_tps of this DetailDataInfo.
+        r"""Gets the tran_tps of this DetailDataInfo.
 
         事务tps
 
@@ -1487,7 +1487,7 @@ class DetailDataInfo:
 
     @tran_tps.setter
     def tran_tps(self, tran_tps):
-        """Sets the tran_tps of this DetailDataInfo.
+        r"""Sets the tran_tps of this DetailDataInfo.
 
         事务tps
 
@@ -1498,7 +1498,7 @@ class DetailDataInfo:
 
     @property
     def transaction_id(self):
-        """Gets the transaction_id of this DetailDataInfo.
+        r"""Gets the transaction_id of this DetailDataInfo.
 
         事务id
 
@@ -1509,7 +1509,7 @@ class DetailDataInfo:
 
     @transaction_id.setter
     def transaction_id(self, transaction_id):
-        """Sets the transaction_id of this DetailDataInfo.
+        r"""Sets the transaction_id of this DetailDataInfo.
 
         事务id
 
@@ -1520,7 +1520,7 @@ class DetailDataInfo:
 
     @property
     def transaction_success(self):
-        """Gets the transaction_success of this DetailDataInfo.
+        r"""Gets the transaction_success of this DetailDataInfo.
 
         事务成功率
 
@@ -1531,7 +1531,7 @@ class DetailDataInfo:
 
     @transaction_success.setter
     def transaction_success(self, transaction_success):
-        """Sets the transaction_success of this DetailDataInfo.
+        r"""Sets the transaction_success of this DetailDataInfo.
 
         事务成功率
 
@@ -1542,7 +1542,7 @@ class DetailDataInfo:
 
     @property
     def transactional_success_rate(self):
-        """Gets the transactional_success_rate of this DetailDataInfo.
+        r"""Gets the transactional_success_rate of this DetailDataInfo.
 
         事务成功率
 
@@ -1553,7 +1553,7 @@ class DetailDataInfo:
 
     @transactional_success_rate.setter
     def transactional_success_rate(self, transactional_success_rate):
-        """Sets the transactional_success_rate of this DetailDataInfo.
+        r"""Sets the transactional_success_rate of this DetailDataInfo.
 
         事务成功率
 
@@ -1564,7 +1564,7 @@ class DetailDataInfo:
 
     @property
     def transactional_tps(self):
-        """Gets the transactional_tps of this DetailDataInfo.
+        r"""Gets the transactional_tps of this DetailDataInfo.
 
         自定义事务tps
 
@@ -1575,7 +1575,7 @@ class DetailDataInfo:
 
     @transactional_tps.setter
     def transactional_tps(self, transactional_tps):
-        """Sets the transactional_tps of this DetailDataInfo.
+        r"""Sets the transactional_tps of this DetailDataInfo.
 
         自定义事务tps
 
@@ -1586,7 +1586,7 @@ class DetailDataInfo:
 
     @property
     def transactional_tps_success(self):
-        """Gets the transactional_tps_success of this DetailDataInfo.
+        r"""Gets the transactional_tps_success of this DetailDataInfo.
 
         自定义事务成功率
 
@@ -1597,7 +1597,7 @@ class DetailDataInfo:
 
     @transactional_tps_success.setter
     def transactional_tps_success(self, transactional_tps_success):
-        """Sets the transactional_tps_success of this DetailDataInfo.
+        r"""Sets the transactional_tps_success of this DetailDataInfo.
 
         自定义事务成功率
 
@@ -1608,7 +1608,7 @@ class DetailDataInfo:
 
     @property
     def transactions(self):
-        """Gets the transactions of this DetailDataInfo.
+        r"""Gets the transactions of this DetailDataInfo.
 
         事务数
 
@@ -1619,7 +1619,7 @@ class DetailDataInfo:
 
     @transactions.setter
     def transactions(self, transactions):
-        """Sets the transactions of this DetailDataInfo.
+        r"""Sets the transactions of this DetailDataInfo.
 
         事务数
 
@@ -1630,7 +1630,7 @@ class DetailDataInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DetailDataInfo.
+        r"""Gets the update_time of this DetailDataInfo.
 
         更新时间
 
@@ -1641,7 +1641,7 @@ class DetailDataInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DetailDataInfo.
+        r"""Sets the update_time of this DetailDataInfo.
 
         更新时间
 
@@ -1652,7 +1652,7 @@ class DetailDataInfo:
 
     @property
     def vum(self):
-        """Gets the vum of this DetailDataInfo.
+        r"""Gets the vum of this DetailDataInfo.
 
         分钟*并发数
 
@@ -1663,7 +1663,7 @@ class DetailDataInfo:
 
     @vum.setter
     def vum(self, vum):
-        """Sets the vum of this DetailDataInfo.
+        r"""Sets the vum of this DetailDataInfo.
 
         分钟*并发数
 
@@ -1674,7 +1674,7 @@ class DetailDataInfo:
 
     @property
     def avg_network_traffic(self):
-        """Gets the avg_network_traffic of this DetailDataInfo.
+        r"""Gets the avg_network_traffic of this DetailDataInfo.
 
         平均带宽
 
@@ -1685,7 +1685,7 @@ class DetailDataInfo:
 
     @avg_network_traffic.setter
     def avg_network_traffic(self, avg_network_traffic):
-        """Sets the avg_network_traffic of this DetailDataInfo.
+        r"""Sets the avg_network_traffic of this DetailDataInfo.
 
         平均带宽
 
@@ -1696,7 +1696,7 @@ class DetailDataInfo:
 
     @property
     def max_network_traffic(self):
-        """Gets the max_network_traffic of this DetailDataInfo.
+        r"""Gets the max_network_traffic of this DetailDataInfo.
 
         最大带宽
 
@@ -1707,7 +1707,7 @@ class DetailDataInfo:
 
     @max_network_traffic.setter
     def max_network_traffic(self, max_network_traffic):
-        """Sets the max_network_traffic of this DetailDataInfo.
+        r"""Sets the max_network_traffic of this DetailDataInfo.
 
         最大带宽
 

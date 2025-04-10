@@ -30,7 +30,7 @@ class ChangeApplicationConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, application_id=None, environment_id=None, configuration=None):
-        """ChangeApplicationConfigurationResponse
+        r"""ChangeApplicationConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ChangeApplicationConfigurationResponse(SdkResponse):
 
     @property
     def application_id(self):
-        """Gets the application_id of this ChangeApplicationConfigurationResponse.
+        r"""Gets the application_id of this ChangeApplicationConfigurationResponse.
 
         应用ID。
 
@@ -69,7 +69,7 @@ class ChangeApplicationConfigurationResponse(SdkResponse):
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ChangeApplicationConfigurationResponse.
+        r"""Sets the application_id of this ChangeApplicationConfigurationResponse.
 
         应用ID。
 
@@ -80,7 +80,7 @@ class ChangeApplicationConfigurationResponse(SdkResponse):
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ChangeApplicationConfigurationResponse.
+        r"""Gets the environment_id of this ChangeApplicationConfigurationResponse.
 
         环境ID。
 
@@ -91,7 +91,7 @@ class ChangeApplicationConfigurationResponse(SdkResponse):
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ChangeApplicationConfigurationResponse.
+        r"""Sets the environment_id of this ChangeApplicationConfigurationResponse.
 
         环境ID。
 
@@ -102,7 +102,7 @@ class ChangeApplicationConfigurationResponse(SdkResponse):
 
     @property
     def configuration(self):
-        """Gets the configuration of this ChangeApplicationConfigurationResponse.
+        r"""Gets the configuration of this ChangeApplicationConfigurationResponse.
 
         :return: The configuration of this ChangeApplicationConfigurationResponse.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ApplicationListConfigConfiguration`
@@ -111,7 +111,7 @@ class ChangeApplicationConfigurationResponse(SdkResponse):
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this ChangeApplicationConfigurationResponse.
+        r"""Sets the configuration of this ChangeApplicationConfigurationResponse.
 
         :param configuration: The configuration of this ChangeApplicationConfigurationResponse.
         :type configuration: :class:`huaweicloudsdkservicestage.v2.ApplicationListConfigConfiguration`

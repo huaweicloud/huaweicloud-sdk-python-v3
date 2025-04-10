@@ -27,7 +27,7 @@ class ExecuteTextCompletionRequest:
     }
 
     def __init__(self, deployment_id=None, body=None):
-        """ExecuteTextCompletionRequest
+        r"""ExecuteTextCompletionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteTextCompletionRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this ExecuteTextCompletionRequest.
+        r"""Gets the deployment_id of this ExecuteTextCompletionRequest.
 
         模型的部署ID
 
@@ -60,7 +60,7 @@ class ExecuteTextCompletionRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this ExecuteTextCompletionRequest.
+        r"""Sets the deployment_id of this ExecuteTextCompletionRequest.
 
         模型的部署ID
 
@@ -71,7 +71,7 @@ class ExecuteTextCompletionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteTextCompletionRequest.
+        r"""Gets the body of this ExecuteTextCompletionRequest.
 
         :return: The body of this ExecuteTextCompletionRequest.
         :rtype: :class:`huaweicloudsdkpangulargemodels.v1.TextCompletionReq`
@@ -80,7 +80,7 @@ class ExecuteTextCompletionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteTextCompletionRequest.
+        r"""Sets the body of this ExecuteTextCompletionRequest.
 
         :param body: The body of this ExecuteTextCompletionRequest.
         :type body: :class:`huaweicloudsdkpangulargemodels.v1.TextCompletionReq`

@@ -35,7 +35,7 @@ class UpdateVgwRequestBodyContent:
     }
 
     def __init__(self, name=None, local_subnets=None, local_subnets_v6=None, eip_id_1=None, eip_id_2=None, policy_template=None):
-        """UpdateVgwRequestBodyContent
+        r"""UpdateVgwRequestBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpdateVgwRequestBodyContent:
 
     @property
     def name(self):
-        """Gets the name of this UpdateVgwRequestBodyContent.
+        r"""Gets the name of this UpdateVgwRequestBodyContent.
 
         网关名称
 
@@ -89,7 +89,7 @@ class UpdateVgwRequestBodyContent:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVgwRequestBodyContent.
+        r"""Sets the name of this UpdateVgwRequestBodyContent.
 
         网关名称
 
@@ -100,7 +100,7 @@ class UpdateVgwRequestBodyContent:
 
     @property
     def local_subnets(self):
-        """Gets the local_subnets of this UpdateVgwRequestBodyContent.
+        r"""Gets the local_subnets of this UpdateVgwRequestBodyContent.
 
         本端子网
 
@@ -111,7 +111,7 @@ class UpdateVgwRequestBodyContent:
 
     @local_subnets.setter
     def local_subnets(self, local_subnets):
-        """Sets the local_subnets of this UpdateVgwRequestBodyContent.
+        r"""Sets the local_subnets of this UpdateVgwRequestBodyContent.
 
         本端子网
 
@@ -122,7 +122,7 @@ class UpdateVgwRequestBodyContent:
 
     @property
     def local_subnets_v6(self):
-        """Gets the local_subnets_v6 of this UpdateVgwRequestBodyContent.
+        r"""Gets the local_subnets_v6 of this UpdateVgwRequestBodyContent.
 
         使能ipv6的本端子网
 
@@ -133,7 +133,7 @@ class UpdateVgwRequestBodyContent:
 
     @local_subnets_v6.setter
     def local_subnets_v6(self, local_subnets_v6):
-        """Sets the local_subnets_v6 of this UpdateVgwRequestBodyContent.
+        r"""Sets the local_subnets_v6 of this UpdateVgwRequestBodyContent.
 
         使能ipv6的本端子网
 
@@ -144,7 +144,7 @@ class UpdateVgwRequestBodyContent:
 
     @property
     def eip_id_1(self):
-        """Gets the eip_id_1 of this UpdateVgwRequestBodyContent.
+        r"""Gets the eip_id_1 of this UpdateVgwRequestBodyContent.
 
         有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第一个EIP或主备VPN网关的主EIP。
 
@@ -155,7 +155,7 @@ class UpdateVgwRequestBodyContent:
 
     @eip_id_1.setter
     def eip_id_1(self, eip_id_1):
-        """Sets the eip_id_1 of this UpdateVgwRequestBodyContent.
+        r"""Sets the eip_id_1 of this UpdateVgwRequestBodyContent.
 
         有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第一个EIP或主备VPN网关的主EIP。
 
@@ -166,7 +166,7 @@ class UpdateVgwRequestBodyContent:
 
     @property
     def eip_id_2(self):
-        """Gets the eip_id_2 of this UpdateVgwRequestBodyContent.
+        r"""Gets the eip_id_2 of this UpdateVgwRequestBodyContent.
 
         有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第二个EIP或主备VPN网关的备EIP。
 
@@ -177,7 +177,7 @@ class UpdateVgwRequestBodyContent:
 
     @eip_id_2.setter
     def eip_id_2(self, eip_id_2):
-        """Sets the eip_id_2 of this UpdateVgwRequestBodyContent.
+        r"""Sets the eip_id_2 of this UpdateVgwRequestBodyContent.
 
         有效的EIP的ID，表示绑定新的EIP作为双活VPN网关使用的第二个EIP或主备VPN网关的备EIP。
 
@@ -188,7 +188,7 @@ class UpdateVgwRequestBodyContent:
 
     @property
     def policy_template(self):
-        """Gets the policy_template of this UpdateVgwRequestBodyContent.
+        r"""Gets the policy_template of this UpdateVgwRequestBodyContent.
 
         :return: The policy_template of this UpdateVgwRequestBodyContent.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateRequestPolicyTemplate`
@@ -197,7 +197,7 @@ class UpdateVgwRequestBodyContent:
 
     @policy_template.setter
     def policy_template(self, policy_template):
-        """Sets the policy_template of this UpdateVgwRequestBodyContent.
+        r"""Sets the policy_template of this UpdateVgwRequestBodyContent.
 
         :param policy_template: The policy_template of this UpdateVgwRequestBodyContent.
         :type policy_template: :class:`huaweicloudsdkvpn.v5.UpdateRequestPolicyTemplate`

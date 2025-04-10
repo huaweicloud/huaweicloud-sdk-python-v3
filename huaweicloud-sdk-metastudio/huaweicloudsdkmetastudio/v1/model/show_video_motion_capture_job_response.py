@@ -40,7 +40,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
     }
 
     def __init__(self, motion_capture_mode=None, input_info=None, output_info=None, job_id=None, state=None, start_time=None, end_time=None, x_request_id=None):
-        """ShowVideoMotionCaptureJobResponse
+        r"""ShowVideoMotionCaptureJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @property
     def motion_capture_mode(self):
-        """Gets the motion_capture_mode of this ShowVideoMotionCaptureJobResponse.
+        r"""Gets the motion_capture_mode of this ShowVideoMotionCaptureJobResponse.
 
         视频驱动模式。 * HEAD：头部 * HALF_BODY：半身 * FULL_BODY：全身 * AUTO：自动
 
@@ -104,7 +104,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @motion_capture_mode.setter
     def motion_capture_mode(self, motion_capture_mode):
-        """Sets the motion_capture_mode of this ShowVideoMotionCaptureJobResponse.
+        r"""Sets the motion_capture_mode of this ShowVideoMotionCaptureJobResponse.
 
         视频驱动模式。 * HEAD：头部 * HALF_BODY：半身 * FULL_BODY：全身 * AUTO：自动
 
@@ -115,7 +115,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @property
     def input_info(self):
-        """Gets the input_info of this ShowVideoMotionCaptureJobResponse.
+        r"""Gets the input_info of this ShowVideoMotionCaptureJobResponse.
 
         :return: The input_info of this ShowVideoMotionCaptureJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.InputInfo`
@@ -124,7 +124,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @input_info.setter
     def input_info(self, input_info):
-        """Sets the input_info of this ShowVideoMotionCaptureJobResponse.
+        r"""Sets the input_info of this ShowVideoMotionCaptureJobResponse.
 
         :param input_info: The input_info of this ShowVideoMotionCaptureJobResponse.
         :type input_info: :class:`huaweicloudsdkmetastudio.v1.InputInfo`
@@ -133,7 +133,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @property
     def output_info(self):
-        """Gets the output_info of this ShowVideoMotionCaptureJobResponse.
+        r"""Gets the output_info of this ShowVideoMotionCaptureJobResponse.
 
         :return: The output_info of this ShowVideoMotionCaptureJobResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.OutputInfo`
@@ -142,7 +142,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @output_info.setter
     def output_info(self, output_info):
-        """Sets the output_info of this ShowVideoMotionCaptureJobResponse.
+        r"""Sets the output_info of this ShowVideoMotionCaptureJobResponse.
 
         :param output_info: The output_info of this ShowVideoMotionCaptureJobResponse.
         :type output_info: :class:`huaweicloudsdkmetastudio.v1.OutputInfo`
@@ -151,7 +151,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowVideoMotionCaptureJobResponse.
+        r"""Gets the job_id of this ShowVideoMotionCaptureJobResponse.
 
         视频驱动任务ID。
 
@@ -162,7 +162,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowVideoMotionCaptureJobResponse.
+        r"""Sets the job_id of this ShowVideoMotionCaptureJobResponse.
 
         视频驱动任务ID。
 
@@ -173,7 +173,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowVideoMotionCaptureJobResponse.
+        r"""Gets the state of this ShowVideoMotionCaptureJobResponse.
 
         任务的状态。 * WAITING：等待中 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败
 
@@ -184,7 +184,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowVideoMotionCaptureJobResponse.
+        r"""Sets the state of this ShowVideoMotionCaptureJobResponse.
 
         任务的状态。 * WAITING：等待中 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败
 
@@ -195,7 +195,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowVideoMotionCaptureJobResponse.
+        r"""Gets the start_time of this ShowVideoMotionCaptureJobResponse.
 
         任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -206,7 +206,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowVideoMotionCaptureJobResponse.
+        r"""Sets the start_time of this ShowVideoMotionCaptureJobResponse.
 
         任务开始时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -217,7 +217,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowVideoMotionCaptureJobResponse.
+        r"""Gets the end_time of this ShowVideoMotionCaptureJobResponse.
 
         任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -228,7 +228,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowVideoMotionCaptureJobResponse.
+        r"""Sets the end_time of this ShowVideoMotionCaptureJobResponse.
 
         任务结束时间，格式遵循：RFC 3339。 例 “2020-07-30T10:43:17Z”。
 
@@ -239,7 +239,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowVideoMotionCaptureJobResponse.
+        r"""Gets the x_request_id of this ShowVideoMotionCaptureJobResponse.
 
         :return: The x_request_id of this ShowVideoMotionCaptureJobResponse.
         :rtype: str
@@ -248,7 +248,7 @@ class ShowVideoMotionCaptureJobResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowVideoMotionCaptureJobResponse.
+        r"""Sets the x_request_id of this ShowVideoMotionCaptureJobResponse.
 
         :param x_request_id: The x_request_id of this ShowVideoMotionCaptureJobResponse.
         :type x_request_id: str

@@ -29,7 +29,7 @@ class DeleteBackendInstanceV2Request:
     }
 
     def __init__(self, instance_id=None, vpc_channel_id=None, member_id=None):
-        """DeleteBackendInstanceV2Request
+        r"""DeleteBackendInstanceV2Request
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteBackendInstanceV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteBackendInstanceV2Request.
+        r"""Gets the instance_id of this DeleteBackendInstanceV2Request.
 
         实例ID
 
@@ -65,7 +65,7 @@ class DeleteBackendInstanceV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteBackendInstanceV2Request.
+        r"""Sets the instance_id of this DeleteBackendInstanceV2Request.
 
         实例ID
 
@@ -76,7 +76,7 @@ class DeleteBackendInstanceV2Request:
 
     @property
     def vpc_channel_id(self):
-        """Gets the vpc_channel_id of this DeleteBackendInstanceV2Request.
+        r"""Gets the vpc_channel_id of this DeleteBackendInstanceV2Request.
 
         VPC通道的编号
 
@@ -87,7 +87,7 @@ class DeleteBackendInstanceV2Request:
 
     @vpc_channel_id.setter
     def vpc_channel_id(self, vpc_channel_id):
-        """Sets the vpc_channel_id of this DeleteBackendInstanceV2Request.
+        r"""Sets the vpc_channel_id of this DeleteBackendInstanceV2Request.
 
         VPC通道的编号
 
@@ -98,7 +98,7 @@ class DeleteBackendInstanceV2Request:
 
     @property
     def member_id(self):
-        """Gets the member_id of this DeleteBackendInstanceV2Request.
+        r"""Gets the member_id of this DeleteBackendInstanceV2Request.
 
         后端实例对象的编号
 
@@ -109,7 +109,7 @@ class DeleteBackendInstanceV2Request:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this DeleteBackendInstanceV2Request.
+        r"""Sets the member_id of this DeleteBackendInstanceV2Request.
 
         后端实例对象的编号
 

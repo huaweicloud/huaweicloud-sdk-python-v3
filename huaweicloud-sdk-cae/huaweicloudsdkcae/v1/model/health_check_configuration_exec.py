@@ -25,7 +25,7 @@ class HealthCheckConfigurationExec:
     }
 
     def __init__(self, command=None):
-        """HealthCheckConfigurationExec
+        r"""HealthCheckConfigurationExec
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class HealthCheckConfigurationExec:
 
     @property
     def command(self):
-        """Gets the command of this HealthCheckConfigurationExec.
+        r"""Gets the command of this HealthCheckConfigurationExec.
 
         shell语句。
 
@@ -54,7 +54,7 @@ class HealthCheckConfigurationExec:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this HealthCheckConfigurationExec.
+        r"""Sets the command of this HealthCheckConfigurationExec.
 
         shell语句。
 

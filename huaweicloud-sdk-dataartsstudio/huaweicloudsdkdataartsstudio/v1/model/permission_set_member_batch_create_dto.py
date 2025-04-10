@@ -27,7 +27,7 @@ class PermissionSetMemberBatchCreateDTO:
     }
 
     def __init__(self, members=None, auto_sync=None):
-        """PermissionSetMemberBatchCreateDTO
+        r"""PermissionSetMemberBatchCreateDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PermissionSetMemberBatchCreateDTO:
 
     @property
     def members(self):
-        """Gets the members of this PermissionSetMemberBatchCreateDTO.
+        r"""Gets the members of this PermissionSetMemberBatchCreateDTO.
 
         权限集成员创建参数列表
 
@@ -61,7 +61,7 @@ class PermissionSetMemberBatchCreateDTO:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this PermissionSetMemberBatchCreateDTO.
+        r"""Sets the members of this PermissionSetMemberBatchCreateDTO.
 
         权限集成员创建参数列表
 
@@ -72,7 +72,7 @@ class PermissionSetMemberBatchCreateDTO:
 
     @property
     def auto_sync(self):
-        """Gets the auto_sync of this PermissionSetMemberBatchCreateDTO.
+        r"""Gets the auto_sync of this PermissionSetMemberBatchCreateDTO.
 
         是否自动触发同步, 默认false
 
@@ -83,7 +83,7 @@ class PermissionSetMemberBatchCreateDTO:
 
     @auto_sync.setter
     def auto_sync(self, auto_sync):
-        """Sets the auto_sync of this PermissionSetMemberBatchCreateDTO.
+        r"""Sets the auto_sync of this PermissionSetMemberBatchCreateDTO.
 
         是否自动触发同步, 默认false
 

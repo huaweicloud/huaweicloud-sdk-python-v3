@@ -25,7 +25,7 @@ class DataLayerVOList:
     }
 
     def __init__(self, levels=None):
-        """DataLayerVOList
+        r"""DataLayerVOList
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DataLayerVOList:
 
     @property
     def levels(self):
-        """Gets the levels of this DataLayerVOList.
+        r"""Gets the levels of this DataLayerVOList.
 
         数仓分层数组。
 
@@ -54,7 +54,7 @@ class DataLayerVOList:
 
     @levels.setter
     def levels(self, levels):
-        """Sets the levels of this DataLayerVOList.
+        r"""Sets the levels of this DataLayerVOList.
 
         数仓分层数组。
 

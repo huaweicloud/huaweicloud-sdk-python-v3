@@ -26,7 +26,7 @@ class ShowRecordingFileDownloadUrlsResponse(SdkResponse):
     }
 
     def __init__(self, record_urls=None):
-        """ShowRecordingFileDownloadUrlsResponse
+        r"""ShowRecordingFileDownloadUrlsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowRecordingFileDownloadUrlsResponse(SdkResponse):
 
     @property
     def record_urls(self):
-        """Gets the record_urls of this ShowRecordingFileDownloadUrlsResponse.
+        r"""Gets the record_urls of this ShowRecordingFileDownloadUrlsResponse.
 
         录制文件下载链接。
 
@@ -55,7 +55,7 @@ class ShowRecordingFileDownloadUrlsResponse(SdkResponse):
 
     @record_urls.setter
     def record_urls(self, record_urls):
-        """Sets the record_urls of this ShowRecordingFileDownloadUrlsResponse.
+        r"""Sets the record_urls of this ShowRecordingFileDownloadUrlsResponse.
 
         录制文件下载链接。
 

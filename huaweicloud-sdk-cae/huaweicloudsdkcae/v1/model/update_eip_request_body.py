@@ -29,7 +29,7 @@ class UpdateEipRequestBody:
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """UpdateEipRequestBody
+        r"""UpdateEipRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateEipRequestBody:
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpdateEipRequestBody.
+        r"""Gets the api_version of this UpdateEipRequestBody.
 
         :return: The api_version of this UpdateEipRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -66,7 +66,7 @@ class UpdateEipRequestBody:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpdateEipRequestBody.
+        r"""Sets the api_version of this UpdateEipRequestBody.
 
         :param api_version: The api_version of this UpdateEipRequestBody.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -75,7 +75,7 @@ class UpdateEipRequestBody:
 
     @property
     def kind(self):
-        """Gets the kind of this UpdateEipRequestBody.
+        r"""Gets the kind of this UpdateEipRequestBody.
 
         :return: The kind of this UpdateEipRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.EipKindObj`
@@ -84,7 +84,7 @@ class UpdateEipRequestBody:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpdateEipRequestBody.
+        r"""Sets the kind of this UpdateEipRequestBody.
 
         :param kind: The kind of this UpdateEipRequestBody.
         :type kind: :class:`huaweicloudsdkcae.v1.EipKindObj`
@@ -93,7 +93,7 @@ class UpdateEipRequestBody:
 
     @property
     def spec(self):
-        """Gets the spec of this UpdateEipRequestBody.
+        r"""Gets the spec of this UpdateEipRequestBody.
 
         :return: The spec of this UpdateEipRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateEipRequestBodySpec`
@@ -102,7 +102,7 @@ class UpdateEipRequestBody:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpdateEipRequestBody.
+        r"""Sets the spec of this UpdateEipRequestBody.
 
         :param spec: The spec of this UpdateEipRequestBody.
         :type spec: :class:`huaweicloudsdkcae.v1.UpdateEipRequestBodySpec`

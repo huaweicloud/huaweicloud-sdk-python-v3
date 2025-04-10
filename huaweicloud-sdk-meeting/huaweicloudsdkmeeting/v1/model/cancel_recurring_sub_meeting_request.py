@@ -35,7 +35,7 @@ class CancelRecurringSubMeetingRequest:
     }
 
     def __init__(self, x_authorization_type=None, user_uuid=None, x_site_id=None, conference_id=None, type=None, body=None):
-        """CancelRecurringSubMeetingRequest
+        r"""CancelRecurringSubMeetingRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class CancelRecurringSubMeetingRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this CancelRecurringSubMeetingRequest.
+        r"""Gets the x_authorization_type of this CancelRecurringSubMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -88,7 +88,7 @@ class CancelRecurringSubMeetingRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this CancelRecurringSubMeetingRequest.
+        r"""Sets the x_authorization_type of this CancelRecurringSubMeetingRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -99,7 +99,7 @@ class CancelRecurringSubMeetingRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this CancelRecurringSubMeetingRequest.
+        r"""Gets the user_uuid of this CancelRecurringSubMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -110,7 +110,7 @@ class CancelRecurringSubMeetingRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this CancelRecurringSubMeetingRequest.
+        r"""Sets the user_uuid of this CancelRecurringSubMeetingRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -121,7 +121,7 @@ class CancelRecurringSubMeetingRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this CancelRecurringSubMeetingRequest.
+        r"""Gets the x_site_id of this CancelRecurringSubMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -132,7 +132,7 @@ class CancelRecurringSubMeetingRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this CancelRecurringSubMeetingRequest.
+        r"""Sets the x_site_id of this CancelRecurringSubMeetingRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -143,7 +143,7 @@ class CancelRecurringSubMeetingRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this CancelRecurringSubMeetingRequest.
+        r"""Gets the conference_id of this CancelRecurringSubMeetingRequest.
 
         会议ID。
 
@@ -154,7 +154,7 @@ class CancelRecurringSubMeetingRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this CancelRecurringSubMeetingRequest.
+        r"""Sets the conference_id of this CancelRecurringSubMeetingRequest.
 
         会议ID。
 
@@ -165,7 +165,7 @@ class CancelRecurringSubMeetingRequest:
 
     @property
     def type(self):
-        """Gets the type of this CancelRecurringSubMeetingRequest.
+        r"""Gets the type of this CancelRecurringSubMeetingRequest.
 
         取消会议操作类型。默认已召开的会议不能取消。 * 1：需要结束正在召开的会议 
 
@@ -176,7 +176,7 @@ class CancelRecurringSubMeetingRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CancelRecurringSubMeetingRequest.
+        r"""Sets the type of this CancelRecurringSubMeetingRequest.
 
         取消会议操作类型。默认已召开的会议不能取消。 * 1：需要结束正在召开的会议 
 
@@ -187,7 +187,7 @@ class CancelRecurringSubMeetingRequest:
 
     @property
     def body(self):
-        """Gets the body of this CancelRecurringSubMeetingRequest.
+        r"""Gets the body of this CancelRecurringSubMeetingRequest.
 
         :return: The body of this CancelRecurringSubMeetingRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestCancelSingleRecordCycleConfListReqBody`
@@ -196,7 +196,7 @@ class CancelRecurringSubMeetingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CancelRecurringSubMeetingRequest.
+        r"""Sets the body of this CancelRecurringSubMeetingRequest.
 
         :param body: The body of this CancelRecurringSubMeetingRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestCancelSingleRecordCycleConfListReqBody`

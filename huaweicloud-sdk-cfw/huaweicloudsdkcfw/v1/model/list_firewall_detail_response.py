@@ -26,7 +26,7 @@ class ListFirewallDetailResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListFirewallDetailResponse
+        r"""ListFirewallDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListFirewallDetailResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListFirewallDetailResponse.
+        r"""Gets the data of this ListFirewallDetailResponse.
 
         :return: The data of this ListFirewallDetailResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.GetFirewallInstanceData`
@@ -53,7 +53,7 @@ class ListFirewallDetailResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListFirewallDetailResponse.
+        r"""Sets the data of this ListFirewallDetailResponse.
 
         :param data: The data of this ListFirewallDetailResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.GetFirewallInstanceData`

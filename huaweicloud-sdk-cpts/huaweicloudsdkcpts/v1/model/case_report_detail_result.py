@@ -27,7 +27,7 @@ class CaseReportDetailResult:
     }
 
     def __init__(self, detail=None, err_message=None):
-        """CaseReportDetailResult
+        r"""CaseReportDetailResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CaseReportDetailResult:
 
     @property
     def detail(self):
-        """Gets the detail of this CaseReportDetailResult.
+        r"""Gets the detail of this CaseReportDetailResult.
 
         :return: The detail of this CaseReportDetailResult.
         :rtype: :class:`huaweicloudsdkcpts.v1.CaseReportDetails`
@@ -59,7 +59,7 @@ class CaseReportDetailResult:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this CaseReportDetailResult.
+        r"""Sets the detail of this CaseReportDetailResult.
 
         :param detail: The detail of this CaseReportDetailResult.
         :type detail: :class:`huaweicloudsdkcpts.v1.CaseReportDetails`
@@ -68,7 +68,7 @@ class CaseReportDetailResult:
 
     @property
     def err_message(self):
-        """Gets the err_message of this CaseReportDetailResult.
+        r"""Gets the err_message of this CaseReportDetailResult.
 
         错误信息
 
@@ -79,7 +79,7 @@ class CaseReportDetailResult:
 
     @err_message.setter
     def err_message(self, err_message):
-        """Sets the err_message of this CaseReportDetailResult.
+        r"""Sets the err_message of this CaseReportDetailResult.
 
         错误信息
 

@@ -35,7 +35,7 @@ class SubnetIpAvailability:
     }
 
     def __init__(self, used_ips=None, subnet_id=None, subnet_name=None, ip_version=None, cidr=None, total_ips=None):
-        """SubnetIpAvailability
+        r"""SubnetIpAvailability
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class SubnetIpAvailability:
 
     @property
     def used_ips(self):
-        """Gets the used_ips of this SubnetIpAvailability.
+        r"""Gets the used_ips of this SubnetIpAvailability.
 
         子网中已经使用的IP数目（不包含系统预留地址）
 
@@ -83,7 +83,7 @@ class SubnetIpAvailability:
 
     @used_ips.setter
     def used_ips(self, used_ips):
-        """Sets the used_ips of this SubnetIpAvailability.
+        r"""Sets the used_ips of this SubnetIpAvailability.
 
         子网中已经使用的IP数目（不包含系统预留地址）
 
@@ -94,7 +94,7 @@ class SubnetIpAvailability:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this SubnetIpAvailability.
+        r"""Gets the subnet_id of this SubnetIpAvailability.
 
         子网ID
 
@@ -105,7 +105,7 @@ class SubnetIpAvailability:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this SubnetIpAvailability.
+        r"""Sets the subnet_id of this SubnetIpAvailability.
 
         子网ID
 
@@ -116,7 +116,7 @@ class SubnetIpAvailability:
 
     @property
     def subnet_name(self):
-        """Gets the subnet_name of this SubnetIpAvailability.
+        r"""Gets the subnet_name of this SubnetIpAvailability.
 
         子网名称
 
@@ -127,7 +127,7 @@ class SubnetIpAvailability:
 
     @subnet_name.setter
     def subnet_name(self, subnet_name):
-        """Sets the subnet_name of this SubnetIpAvailability.
+        r"""Sets the subnet_name of this SubnetIpAvailability.
 
         子网名称
 
@@ -138,7 +138,7 @@ class SubnetIpAvailability:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this SubnetIpAvailability.
+        r"""Gets the ip_version of this SubnetIpAvailability.
 
         子网的IP版本，取值为4或者6
 
@@ -149,7 +149,7 @@ class SubnetIpAvailability:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this SubnetIpAvailability.
+        r"""Sets the ip_version of this SubnetIpAvailability.
 
         子网的IP版本，取值为4或者6
 
@@ -160,7 +160,7 @@ class SubnetIpAvailability:
 
     @property
     def cidr(self):
-        """Gets the cidr of this SubnetIpAvailability.
+        r"""Gets the cidr of this SubnetIpAvailability.
 
         子网的CIDR
 
@@ -171,7 +171,7 @@ class SubnetIpAvailability:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this SubnetIpAvailability.
+        r"""Sets the cidr of this SubnetIpAvailability.
 
         子网的CIDR
 
@@ -182,7 +182,7 @@ class SubnetIpAvailability:
 
     @property
     def total_ips(self):
-        """Gets the total_ips of this SubnetIpAvailability.
+        r"""Gets the total_ips of this SubnetIpAvailability.
 
         子网中IP总数（不包含系统预留地址）
 
@@ -193,7 +193,7 @@ class SubnetIpAvailability:
 
     @total_ips.setter
     def total_ips(self, total_ips):
-        """Sets the total_ips of this SubnetIpAvailability.
+        r"""Sets the total_ips of this SubnetIpAvailability.
 
         子网中IP总数（不包含系统预留地址）
 

@@ -27,7 +27,7 @@ class ListObejectLevelCompareOverviewRequest:
     }
 
     def __init__(self, x_language=None, job_id=None):
-        """ListObejectLevelCompareOverviewRequest
+        r"""ListObejectLevelCompareOverviewRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListObejectLevelCompareOverviewRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListObejectLevelCompareOverviewRequest.
+        r"""Gets the x_language of this ListObejectLevelCompareOverviewRequest.
 
         请求语言类型。
 
@@ -60,7 +60,7 @@ class ListObejectLevelCompareOverviewRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListObejectLevelCompareOverviewRequest.
+        r"""Sets the x_language of this ListObejectLevelCompareOverviewRequest.
 
         请求语言类型。
 
@@ -71,7 +71,7 @@ class ListObejectLevelCompareOverviewRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListObejectLevelCompareOverviewRequest.
+        r"""Gets the job_id of this ListObejectLevelCompareOverviewRequest.
 
         任务ID。
 
@@ -82,7 +82,7 @@ class ListObejectLevelCompareOverviewRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListObejectLevelCompareOverviewRequest.
+        r"""Sets the job_id of this ListObejectLevelCompareOverviewRequest.
 
         任务ID。
 

@@ -25,7 +25,7 @@ class AclBindingBatchDelete:
     }
 
     def __init__(self, acl_bindings=None):
-        """AclBindingBatchDelete
+        r"""AclBindingBatchDelete
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AclBindingBatchDelete:
 
     @property
     def acl_bindings(self):
-        """Gets the acl_bindings of this AclBindingBatchDelete.
+        r"""Gets the acl_bindings of this AclBindingBatchDelete.
 
         需要解除绑定的API和ACL绑定关系ID列表
 
@@ -54,7 +54,7 @@ class AclBindingBatchDelete:
 
     @acl_bindings.setter
     def acl_bindings(self, acl_bindings):
-        """Sets the acl_bindings of this AclBindingBatchDelete.
+        r"""Sets the acl_bindings of this AclBindingBatchDelete.
 
         需要解除绑定的API和ACL绑定关系ID列表
 

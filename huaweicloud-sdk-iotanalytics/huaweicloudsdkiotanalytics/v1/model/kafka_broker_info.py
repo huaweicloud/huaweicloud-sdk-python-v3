@@ -27,7 +27,7 @@ class KafkaBrokerInfo:
     }
 
     def __init__(self, ip=None, port=None):
-        """KafkaBrokerInfo
+        r"""KafkaBrokerInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class KafkaBrokerInfo:
 
     @property
     def ip(self):
-        """Gets the ip of this KafkaBrokerInfo.
+        r"""Gets the ip of this KafkaBrokerInfo.
 
         IP
 
@@ -59,7 +59,7 @@ class KafkaBrokerInfo:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this KafkaBrokerInfo.
+        r"""Sets the ip of this KafkaBrokerInfo.
 
         IP
 
@@ -70,7 +70,7 @@ class KafkaBrokerInfo:
 
     @property
     def port(self):
-        """Gets the port of this KafkaBrokerInfo.
+        r"""Gets the port of this KafkaBrokerInfo.
 
         Port
 
@@ -81,7 +81,7 @@ class KafkaBrokerInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this KafkaBrokerInfo.
+        r"""Sets the port of this KafkaBrokerInfo.
 
         Port
 

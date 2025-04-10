@@ -25,7 +25,7 @@ class AssociateRouterRequestBody:
     }
 
     def __init__(self, router=None):
-        """AssociateRouterRequestBody
+        r"""AssociateRouterRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AssociateRouterRequestBody:
 
     @property
     def router(self):
-        """Gets the router of this AssociateRouterRequestBody.
+        r"""Gets the router of this AssociateRouterRequestBody.
 
         :return: The router of this AssociateRouterRequestBody.
         :rtype: :class:`huaweicloudsdkdns.v2.Router`
@@ -51,7 +51,7 @@ class AssociateRouterRequestBody:
 
     @router.setter
     def router(self, router):
-        """Sets the router of this AssociateRouterRequestBody.
+        r"""Sets the router of this AssociateRouterRequestBody.
 
         :param router: The router of this AssociateRouterRequestBody.
         :type router: :class:`huaweicloudsdkdns.v2.Router`

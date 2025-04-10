@@ -29,7 +29,7 @@ class UpdateLimitTaskRequest:
     }
 
     def __init__(self, task_id=None, instance_id=None, body=None):
-        """UpdateLimitTaskRequest
+        r"""UpdateLimitTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateLimitTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateLimitTaskRequest.
+        r"""Gets the task_id of this UpdateLimitTaskRequest.
 
         限流任务id。
 
@@ -66,7 +66,7 @@ class UpdateLimitTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateLimitTaskRequest.
+        r"""Sets the task_id of this UpdateLimitTaskRequest.
 
         限流任务id。
 
@@ -77,7 +77,7 @@ class UpdateLimitTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateLimitTaskRequest.
+        r"""Gets the instance_id of this UpdateLimitTaskRequest.
 
         实例ID。
 
@@ -88,7 +88,7 @@ class UpdateLimitTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateLimitTaskRequest.
+        r"""Sets the instance_id of this UpdateLimitTaskRequest.
 
         实例ID。
 
@@ -99,7 +99,7 @@ class UpdateLimitTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLimitTaskRequest.
+        r"""Gets the body of this UpdateLimitTaskRequest.
 
         :return: The body of this UpdateLimitTaskRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateLimitTaskRequestBody`
@@ -108,7 +108,7 @@ class UpdateLimitTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLimitTaskRequest.
+        r"""Sets the body of this UpdateLimitTaskRequest.
 
         :param body: The body of this UpdateLimitTaskRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateLimitTaskRequestBody`

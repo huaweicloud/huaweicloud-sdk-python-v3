@@ -29,7 +29,7 @@ class AuthorizeActionApiToInstanceRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, body=None):
-        """AuthorizeActionApiToInstanceRequest
+        r"""AuthorizeActionApiToInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AuthorizeActionApiToInstanceRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this AuthorizeActionApiToInstanceRequest.
+        r"""Gets the workspace of this AuthorizeActionApiToInstanceRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -67,7 +67,7 @@ class AuthorizeActionApiToInstanceRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this AuthorizeActionApiToInstanceRequest.
+        r"""Sets the workspace of this AuthorizeActionApiToInstanceRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -78,7 +78,7 @@ class AuthorizeActionApiToInstanceRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this AuthorizeActionApiToInstanceRequest.
+        r"""Gets the dlm_type of this AuthorizeActionApiToInstanceRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -89,7 +89,7 @@ class AuthorizeActionApiToInstanceRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this AuthorizeActionApiToInstanceRequest.
+        r"""Sets the dlm_type of this AuthorizeActionApiToInstanceRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -100,7 +100,7 @@ class AuthorizeActionApiToInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this AuthorizeActionApiToInstanceRequest.
+        r"""Gets the body of this AuthorizeActionApiToInstanceRequest.
 
         :return: The body of this AuthorizeActionApiToInstanceRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApiParaForAuthToInstance`
@@ -109,7 +109,7 @@ class AuthorizeActionApiToInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AuthorizeActionApiToInstanceRequest.
+        r"""Sets the body of this AuthorizeActionApiToInstanceRequest.
 
         :param body: The body of this AuthorizeActionApiToInstanceRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.ApiParaForAuthToInstance`

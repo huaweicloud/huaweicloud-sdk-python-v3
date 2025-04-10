@@ -27,7 +27,7 @@ class ChangeSecurityGroupRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """ChangeSecurityGroupRequest
+        r"""ChangeSecurityGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeSecurityGroupRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this ChangeSecurityGroupRequest.
+        r"""Gets the share_id of this ChangeSecurityGroupRequest.
 
         文件系统ID
 
@@ -60,7 +60,7 @@ class ChangeSecurityGroupRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this ChangeSecurityGroupRequest.
+        r"""Sets the share_id of this ChangeSecurityGroupRequest.
 
         文件系统ID
 
@@ -71,7 +71,7 @@ class ChangeSecurityGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeSecurityGroupRequest.
+        r"""Gets the body of this ChangeSecurityGroupRequest.
 
         :return: The body of this ChangeSecurityGroupRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ChangeSecurityGroupRequestBody`
@@ -80,7 +80,7 @@ class ChangeSecurityGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeSecurityGroupRequest.
+        r"""Sets the body of this ChangeSecurityGroupRequest.
 
         :param body: The body of this ChangeSecurityGroupRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.ChangeSecurityGroupRequestBody`

@@ -31,7 +31,7 @@ class InstanceLogConfigDetail:
     }
 
     def __init__(self, log_type=None, lts_group_id=None, lts_stream_id=None, enabled=None):
-        """InstanceLogConfigDetail
+        r"""InstanceLogConfigDetail
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class InstanceLogConfigDetail:
 
     @property
     def log_type(self):
-        """Gets the log_type of this InstanceLogConfigDetail.
+        r"""Gets the log_type of this InstanceLogConfigDetail.
 
         日志类型。slow_log表示慢日志。
 
@@ -72,7 +72,7 @@ class InstanceLogConfigDetail:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this InstanceLogConfigDetail.
+        r"""Sets the log_type of this InstanceLogConfigDetail.
 
         日志类型。slow_log表示慢日志。
 
@@ -83,7 +83,7 @@ class InstanceLogConfigDetail:
 
     @property
     def lts_group_id(self):
-        """Gets the lts_group_id of this InstanceLogConfigDetail.
+        r"""Gets the lts_group_id of this InstanceLogConfigDetail.
 
         关联的LTS日志组ID，若enabled为false，表示最近一次关联的LTS日志组ID。
 
@@ -94,7 +94,7 @@ class InstanceLogConfigDetail:
 
     @lts_group_id.setter
     def lts_group_id(self, lts_group_id):
-        """Sets the lts_group_id of this InstanceLogConfigDetail.
+        r"""Sets the lts_group_id of this InstanceLogConfigDetail.
 
         关联的LTS日志组ID，若enabled为false，表示最近一次关联的LTS日志组ID。
 
@@ -105,7 +105,7 @@ class InstanceLogConfigDetail:
 
     @property
     def lts_stream_id(self):
-        """Gets the lts_stream_id of this InstanceLogConfigDetail.
+        r"""Gets the lts_stream_id of this InstanceLogConfigDetail.
 
         关联的LTS日志流ID，若enabled为false，表示最近一次关联的LTS日志流ID。
 
@@ -116,7 +116,7 @@ class InstanceLogConfigDetail:
 
     @lts_stream_id.setter
     def lts_stream_id(self, lts_stream_id):
-        """Sets the lts_stream_id of this InstanceLogConfigDetail.
+        r"""Sets the lts_stream_id of this InstanceLogConfigDetail.
 
         关联的LTS日志流ID，若enabled为false，表示最近一次关联的LTS日志流ID。
 
@@ -127,7 +127,7 @@ class InstanceLogConfigDetail:
 
     @property
     def enabled(self):
-        """Gets the enabled of this InstanceLogConfigDetail.
+        r"""Gets the enabled of this InstanceLogConfigDetail.
 
         关联的LTS日志流是否启用，true代表已启用，false代表未启用。
 
@@ -138,7 +138,7 @@ class InstanceLogConfigDetail:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this InstanceLogConfigDetail.
+        r"""Sets the enabled of this InstanceLogConfigDetail.
 
         关联的LTS日志流是否启用，true代表已启用，false代表未启用。
 

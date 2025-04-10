@@ -127,7 +127,7 @@ class AwInstance:
     }
 
     def __init__(self, alias_runaw=None, authentication_info=None, authentication_type=None, aw_description=None, aw_id=None, aw_type=None, basic_aw=None, body_param_type=None, by_order=None, change_sign=None, check_point_list=None, children=None, condition_statement=None, condition_type=None, create_time=None, create_time_stamp=None, create_time_string=None, create_user=None, custom_header=None, description=None, error_info=None, extra_info=None, from_outside=None, has_level=None, header_array=None, his_script=None, id=None, is_basic=None, is_contract_aw=None, is_disabled=None, is_sectest_aw=None, level=None, name=None, param_dependent=None, param_dependent_enabled=None, param_type_and_value=None, project_id=None, region=None, relation=None, relation_id=None, relation_type=None, retry_interval=None, retry_times=None, script_name=None, service_and_stage=None, special_type=None, update_time=None, update_time_stamp=None, update_time_string=None, update_user=None, user_id=None, variable_list=None):
-        """AwInstance
+        r"""AwInstance
 
         The model defined in huaweicloud sdk
 
@@ -400,7 +400,7 @@ class AwInstance:
 
     @property
     def alias_runaw(self):
-        """Gets the alias_runaw of this AwInstance.
+        r"""Gets the alias_runaw of this AwInstance.
 
         AW内容描述字段
 
@@ -411,7 +411,7 @@ class AwInstance:
 
     @alias_runaw.setter
     def alias_runaw(self, alias_runaw):
-        """Sets the alias_runaw of this AwInstance.
+        r"""Sets the alias_runaw of this AwInstance.
 
         AW内容描述字段
 
@@ -422,7 +422,7 @@ class AwInstance:
 
     @property
     def authentication_info(self):
-        """Gets the authentication_info of this AwInstance.
+        r"""Gets the authentication_info of this AwInstance.
 
         :return: The authentication_info of this AwInstance.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AuthInfo`
@@ -431,7 +431,7 @@ class AwInstance:
 
     @authentication_info.setter
     def authentication_info(self, authentication_info):
-        """Sets the authentication_info of this AwInstance.
+        r"""Sets the authentication_info of this AwInstance.
 
         :param authentication_info: The authentication_info of this AwInstance.
         :type authentication_info: :class:`huaweicloudsdkcloudtest.v1.AuthInfo`
@@ -440,7 +440,7 @@ class AwInstance:
 
     @property
     def authentication_type(self):
-        """Gets the authentication_type of this AwInstance.
+        r"""Gets the authentication_type of this AwInstance.
 
         认证类型,0-无认证;1-aksk认证
 
@@ -451,7 +451,7 @@ class AwInstance:
 
     @authentication_type.setter
     def authentication_type(self, authentication_type):
-        """Sets the authentication_type of this AwInstance.
+        r"""Sets the authentication_type of this AwInstance.
 
         认证类型,0-无认证;1-aksk认证
 
@@ -462,7 +462,7 @@ class AwInstance:
 
     @property
     def aw_description(self):
-        """Gets the aw_description of this AwInstance.
+        r"""Gets the aw_description of this AwInstance.
 
         脚本模板描述信息，在用例更新时添加
 
@@ -473,7 +473,7 @@ class AwInstance:
 
     @aw_description.setter
     def aw_description(self, aw_description):
-        """Sets the aw_description of this AwInstance.
+        r"""Sets the aw_description of this AwInstance.
 
         脚本模板描述信息，在用例更新时添加
 
@@ -484,7 +484,7 @@ class AwInstance:
 
     @property
     def aw_id(self):
-        """Gets the aw_id of this AwInstance.
+        r"""Gets the aw_id of this AwInstance.
 
         aw id
 
@@ -495,7 +495,7 @@ class AwInstance:
 
     @aw_id.setter
     def aw_id(self, aw_id):
-        """Sets the aw_id of this AwInstance.
+        r"""Sets the aw_id of this AwInstance.
 
         aw id
 
@@ -506,7 +506,7 @@ class AwInstance:
 
     @property
     def aw_type(self):
-        """Gets the aw_type of this AwInstance.
+        r"""Gets the aw_type of this AwInstance.
 
         aw类型 0-setup;1-test;2-teardown
 
@@ -517,7 +517,7 @@ class AwInstance:
 
     @aw_type.setter
     def aw_type(self, aw_type):
-        """Sets the aw_type of this AwInstance.
+        r"""Sets the aw_type of this AwInstance.
 
         aw类型 0-setup;1-test;2-teardown
 
@@ -528,7 +528,7 @@ class AwInstance:
 
     @property
     def basic_aw(self):
-        """Gets the basic_aw of this AwInstance.
+        r"""Gets the basic_aw of this AwInstance.
 
         :return: The basic_aw of this AwInstance.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BasicAw`
@@ -537,7 +537,7 @@ class AwInstance:
 
     @basic_aw.setter
     def basic_aw(self, basic_aw):
-        """Sets the basic_aw of this AwInstance.
+        r"""Sets the basic_aw of this AwInstance.
 
         :param basic_aw: The basic_aw of this AwInstance.
         :type basic_aw: :class:`huaweicloudsdkcloudtest.v1.BasicAw`
@@ -546,7 +546,7 @@ class AwInstance:
 
     @property
     def body_param_type(self):
-        """Gets the body_param_type of this AwInstance.
+        r"""Gets the body_param_type of this AwInstance.
 
         instance的参数body体类型：form/text
 
@@ -557,7 +557,7 @@ class AwInstance:
 
     @body_param_type.setter
     def body_param_type(self, body_param_type):
-        """Sets the body_param_type of this AwInstance.
+        r"""Sets the body_param_type of this AwInstance.
 
         instance的参数body体类型：form/text
 
@@ -568,7 +568,7 @@ class AwInstance:
 
     @property
     def by_order(self):
-        """Gets the by_order of this AwInstance.
+        r"""Gets the by_order of this AwInstance.
 
         顺序
 
@@ -579,7 +579,7 @@ class AwInstance:
 
     @by_order.setter
     def by_order(self, by_order):
-        """Sets the by_order of this AwInstance.
+        r"""Sets the by_order of this AwInstance.
 
         顺序
 
@@ -590,7 +590,7 @@ class AwInstance:
 
     @property
     def change_sign(self):
-        """Gets the change_sign of this AwInstance.
+        r"""Gets the change_sign of this AwInstance.
 
         change sign
 
@@ -601,7 +601,7 @@ class AwInstance:
 
     @change_sign.setter
     def change_sign(self, change_sign):
-        """Sets the change_sign of this AwInstance.
+        r"""Sets the change_sign of this AwInstance.
 
         change sign
 
@@ -612,7 +612,7 @@ class AwInstance:
 
     @property
     def check_point_list(self):
-        """Gets the check_point_list of this AwInstance.
+        r"""Gets the check_point_list of this AwInstance.
 
         检查点List
 
@@ -623,7 +623,7 @@ class AwInstance:
 
     @check_point_list.setter
     def check_point_list(self, check_point_list):
-        """Sets the check_point_list of this AwInstance.
+        r"""Sets the check_point_list of this AwInstance.
 
         检查点List
 
@@ -634,7 +634,7 @@ class AwInstance:
 
     @property
     def children(self):
-        """Gets the children of this AwInstance.
+        r"""Gets the children of this AwInstance.
 
         aw实例
 
@@ -645,7 +645,7 @@ class AwInstance:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this AwInstance.
+        r"""Sets the children of this AwInstance.
 
         aw实例
 
@@ -656,7 +656,7 @@ class AwInstance:
 
     @property
     def condition_statement(self):
-        """Gets the condition_statement of this AwInstance.
+        r"""Gets the condition_statement of this AwInstance.
 
         条件语句
 
@@ -667,7 +667,7 @@ class AwInstance:
 
     @condition_statement.setter
     def condition_statement(self, condition_statement):
-        """Sets the condition_statement of this AwInstance.
+        r"""Sets the condition_statement of this AwInstance.
 
         条件语句
 
@@ -678,7 +678,7 @@ class AwInstance:
 
     @property
     def condition_type(self):
-        """Gets the condition_type of this AwInstance.
+        r"""Gets the condition_type of this AwInstance.
 
         条件类型 0-not condition;1-if begin;2-if
 
@@ -689,7 +689,7 @@ class AwInstance:
 
     @condition_type.setter
     def condition_type(self, condition_type):
-        """Sets the condition_type of this AwInstance.
+        r"""Sets the condition_type of this AwInstance.
 
         条件类型 0-not condition;1-if begin;2-if
 
@@ -700,7 +700,7 @@ class AwInstance:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AwInstance.
+        r"""Gets the create_time of this AwInstance.
 
         创建时间
 
@@ -711,7 +711,7 @@ class AwInstance:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AwInstance.
+        r"""Sets the create_time of this AwInstance.
 
         创建时间
 
@@ -722,7 +722,7 @@ class AwInstance:
 
     @property
     def create_time_stamp(self):
-        """Gets the create_time_stamp of this AwInstance.
+        r"""Gets the create_time_stamp of this AwInstance.
 
         创建时间戳
 
@@ -733,7 +733,7 @@ class AwInstance:
 
     @create_time_stamp.setter
     def create_time_stamp(self, create_time_stamp):
-        """Sets the create_time_stamp of this AwInstance.
+        r"""Sets the create_time_stamp of this AwInstance.
 
         创建时间戳
 
@@ -744,7 +744,7 @@ class AwInstance:
 
     @property
     def create_time_string(self):
-        """Gets the create_time_string of this AwInstance.
+        r"""Gets the create_time_string of this AwInstance.
 
         创建时间字符串
 
@@ -755,7 +755,7 @@ class AwInstance:
 
     @create_time_string.setter
     def create_time_string(self, create_time_string):
-        """Sets the create_time_string of this AwInstance.
+        r"""Sets the create_time_string of this AwInstance.
 
         创建时间字符串
 
@@ -766,7 +766,7 @@ class AwInstance:
 
     @property
     def create_user(self):
-        """Gets the create_user of this AwInstance.
+        r"""Gets the create_user of this AwInstance.
 
         创建人
 
@@ -777,7 +777,7 @@ class AwInstance:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this AwInstance.
+        r"""Sets the create_user of this AwInstance.
 
         创建人
 
@@ -788,7 +788,7 @@ class AwInstance:
 
     @property
     def custom_header(self):
-        """Gets the custom_header of this AwInstance.
+        r"""Gets the custom_header of this AwInstance.
 
         测试步骤自定义请求头List；后续自定义URL请求头不再使用该字段
 
@@ -799,7 +799,7 @@ class AwInstance:
 
     @custom_header.setter
     def custom_header(self, custom_header):
-        """Sets the custom_header of this AwInstance.
+        r"""Sets the custom_header of this AwInstance.
 
         测试步骤自定义请求头List；后续自定义URL请求头不再使用该字段
 
@@ -810,7 +810,7 @@ class AwInstance:
 
     @property
     def description(self):
-        """Gets the description of this AwInstance.
+        r"""Gets the description of this AwInstance.
 
         描述
 
@@ -821,7 +821,7 @@ class AwInstance:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AwInstance.
+        r"""Sets the description of this AwInstance.
 
         描述
 
@@ -832,7 +832,7 @@ class AwInstance:
 
     @property
     def error_info(self):
-        """Gets the error_info of this AwInstance.
+        r"""Gets the error_info of this AwInstance.
 
         :return: The error_info of this AwInstance.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ErrorInfo`
@@ -841,7 +841,7 @@ class AwInstance:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this AwInstance.
+        r"""Sets the error_info of this AwInstance.
 
         :param error_info: The error_info of this AwInstance.
         :type error_info: :class:`huaweicloudsdkcloudtest.v1.ErrorInfo`
@@ -850,7 +850,7 @@ class AwInstance:
 
     @property
     def extra_info(self):
-        """Gets the extra_info of this AwInstance.
+        r"""Gets the extra_info of this AwInstance.
 
         :return: The extra_info of this AwInstance.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ExtraInfo`
@@ -859,7 +859,7 @@ class AwInstance:
 
     @extra_info.setter
     def extra_info(self, extra_info):
-        """Sets the extra_info of this AwInstance.
+        r"""Sets the extra_info of this AwInstance.
 
         :param extra_info: The extra_info of this AwInstance.
         :type extra_info: :class:`huaweicloudsdkcloudtest.v1.ExtraInfo`
@@ -868,7 +868,7 @@ class AwInstance:
 
     @property
     def from_outside(self):
-        """Gets the from_outside of this AwInstance.
+        r"""Gets the from_outside of this AwInstance.
 
         该aw是否来自外部工程 0-no;1-yes
 
@@ -879,7 +879,7 @@ class AwInstance:
 
     @from_outside.setter
     def from_outside(self, from_outside):
-        """Sets the from_outside of this AwInstance.
+        r"""Sets the from_outside of this AwInstance.
 
         该aw是否来自外部工程 0-no;1-yes
 
@@ -890,7 +890,7 @@ class AwInstance:
 
     @property
     def has_level(self):
-        """Gets the has_level of this AwInstance.
+        r"""Gets the has_level of this AwInstance.
 
         level
 
@@ -901,7 +901,7 @@ class AwInstance:
 
     @has_level.setter
     def has_level(self, has_level):
-        """Sets the has_level of this AwInstance.
+        r"""Sets the has_level of this AwInstance.
 
         level
 
@@ -912,7 +912,7 @@ class AwInstance:
 
     @property
     def header_array(self):
-        """Gets the header_array of this AwInstance.
+        r"""Gets the header_array of this AwInstance.
 
         :return: The header_array of this AwInstance.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.ArrayNode`]
@@ -921,7 +921,7 @@ class AwInstance:
 
     @header_array.setter
     def header_array(self, header_array):
-        """Sets the header_array of this AwInstance.
+        r"""Sets the header_array of this AwInstance.
 
         :param header_array: The header_array of this AwInstance.
         :type header_array: list[:class:`huaweicloudsdkcloudtest.v1.ArrayNode`]
@@ -930,7 +930,7 @@ class AwInstance:
 
     @property
     def his_script(self):
-        """Gets the his_script of this AwInstance.
+        r"""Gets the his_script of this AwInstance.
 
         值不为null表示老的IF判断语句；值为null表示新的IF判断语句
 
@@ -941,7 +941,7 @@ class AwInstance:
 
     @his_script.setter
     def his_script(self, his_script):
-        """Sets the his_script of this AwInstance.
+        r"""Sets the his_script of this AwInstance.
 
         值不为null表示老的IF判断语句；值为null表示新的IF判断语句
 
@@ -952,7 +952,7 @@ class AwInstance:
 
     @property
     def id(self):
-        """Gets the id of this AwInstance.
+        r"""Gets the id of this AwInstance.
 
         id
 
@@ -963,7 +963,7 @@ class AwInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AwInstance.
+        r"""Sets the id of this AwInstance.
 
         id
 
@@ -974,7 +974,7 @@ class AwInstance:
 
     @property
     def is_basic(self):
-        """Gets the is_basic of this AwInstance.
+        r"""Gets the is_basic of this AwInstance.
 
         是否模板类型测试步骤 0：自定义URL配置类型；1：模板类型测试步骤
 
@@ -985,7 +985,7 @@ class AwInstance:
 
     @is_basic.setter
     def is_basic(self, is_basic):
-        """Sets the is_basic of this AwInstance.
+        r"""Sets the is_basic of this AwInstance.
 
         是否模板类型测试步骤 0：自定义URL配置类型；1：模板类型测试步骤
 
@@ -996,7 +996,7 @@ class AwInstance:
 
     @property
     def is_contract_aw(self):
-        """Gets the is_contract_aw of this AwInstance.
+        r"""Gets the is_contract_aw of this AwInstance.
 
         是否是契约AW 0-否；1-yes
 
@@ -1007,7 +1007,7 @@ class AwInstance:
 
     @is_contract_aw.setter
     def is_contract_aw(self, is_contract_aw):
-        """Sets the is_contract_aw of this AwInstance.
+        r"""Sets the is_contract_aw of this AwInstance.
 
         是否是契约AW 0-否；1-yes
 
@@ -1018,7 +1018,7 @@ class AwInstance:
 
     @property
     def is_disabled(self):
-        """Gets the is_disabled of this AwInstance.
+        r"""Gets the is_disabled of this AwInstance.
 
         是否被禁用 0-否；1-yes
 
@@ -1029,7 +1029,7 @@ class AwInstance:
 
     @is_disabled.setter
     def is_disabled(self, is_disabled):
-        """Sets the is_disabled of this AwInstance.
+        r"""Sets the is_disabled of this AwInstance.
 
         是否被禁用 0-否；1-yes
 
@@ -1040,7 +1040,7 @@ class AwInstance:
 
     @property
     def is_sectest_aw(self):
-        """Gets the is_sectest_aw of this AwInstance.
+        r"""Gets the is_sectest_aw of this AwInstance.
 
         是否是安全测试aw
 
@@ -1051,7 +1051,7 @@ class AwInstance:
 
     @is_sectest_aw.setter
     def is_sectest_aw(self, is_sectest_aw):
-        """Sets the is_sectest_aw of this AwInstance.
+        r"""Sets the is_sectest_aw of this AwInstance.
 
         是否是安全测试aw
 
@@ -1062,7 +1062,7 @@ class AwInstance:
 
     @property
     def level(self):
-        """Gets the level of this AwInstance.
+        r"""Gets the level of this AwInstance.
 
         用例级别
 
@@ -1073,7 +1073,7 @@ class AwInstance:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this AwInstance.
+        r"""Sets the level of this AwInstance.
 
         用例级别
 
@@ -1084,7 +1084,7 @@ class AwInstance:
 
     @property
     def name(self):
-        """Gets the name of this AwInstance.
+        r"""Gets the name of this AwInstance.
 
         名称
 
@@ -1095,7 +1095,7 @@ class AwInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AwInstance.
+        r"""Sets the name of this AwInstance.
 
         名称
 
@@ -1106,7 +1106,7 @@ class AwInstance:
 
     @property
     def param_dependent(self):
-        """Gets the param_dependent of this AwInstance.
+        r"""Gets the param_dependent of this AwInstance.
 
         参数依赖
 
@@ -1117,7 +1117,7 @@ class AwInstance:
 
     @param_dependent.setter
     def param_dependent(self, param_dependent):
-        """Sets the param_dependent of this AwInstance.
+        r"""Sets the param_dependent of this AwInstance.
 
         参数依赖
 
@@ -1128,7 +1128,7 @@ class AwInstance:
 
     @property
     def param_dependent_enabled(self):
-        """Gets the param_dependent_enabled of this AwInstance.
+        r"""Gets the param_dependent_enabled of this AwInstance.
 
         是否启用参数依赖
 
@@ -1139,7 +1139,7 @@ class AwInstance:
 
     @param_dependent_enabled.setter
     def param_dependent_enabled(self, param_dependent_enabled):
-        """Sets the param_dependent_enabled of this AwInstance.
+        r"""Sets the param_dependent_enabled of this AwInstance.
 
         是否启用参数依赖
 
@@ -1150,7 +1150,7 @@ class AwInstance:
 
     @property
     def param_type_and_value(self):
-        """Gets the param_type_and_value of this AwInstance.
+        r"""Gets the param_type_and_value of this AwInstance.
 
         参数类型和参数值对应List
 
@@ -1161,7 +1161,7 @@ class AwInstance:
 
     @param_type_and_value.setter
     def param_type_and_value(self, param_type_and_value):
-        """Sets the param_type_and_value of this AwInstance.
+        r"""Sets the param_type_and_value of this AwInstance.
 
         参数类型和参数值对应List
 
@@ -1172,7 +1172,7 @@ class AwInstance:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AwInstance.
+        r"""Gets the project_id of this AwInstance.
 
         工程id
 
@@ -1183,7 +1183,7 @@ class AwInstance:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AwInstance.
+        r"""Sets the project_id of this AwInstance.
 
         工程id
 
@@ -1194,7 +1194,7 @@ class AwInstance:
 
     @property
     def region(self):
-        """Gets the region of this AwInstance.
+        r"""Gets the region of this AwInstance.
 
         区域名称
 
@@ -1205,7 +1205,7 @@ class AwInstance:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AwInstance.
+        r"""Sets the region of this AwInstance.
 
         区域名称
 
@@ -1216,7 +1216,7 @@ class AwInstance:
 
     @property
     def relation(self):
-        """Gets the relation of this AwInstance.
+        r"""Gets the relation of this AwInstance.
 
         awId层级关系
 
@@ -1227,7 +1227,7 @@ class AwInstance:
 
     @relation.setter
     def relation(self, relation):
-        """Sets the relation of this AwInstance.
+        r"""Sets the relation of this AwInstance.
 
         awId层级关系
 
@@ -1238,7 +1238,7 @@ class AwInstance:
 
     @property
     def relation_id(self):
-        """Gets the relation_id of this AwInstance.
+        r"""Gets the relation_id of this AwInstance.
 
         relation id
 
@@ -1249,7 +1249,7 @@ class AwInstance:
 
     @relation_id.setter
     def relation_id(self, relation_id):
-        """Sets the relation_id of this AwInstance.
+        r"""Sets the relation_id of this AwInstance.
 
         relation id
 
@@ -1260,7 +1260,7 @@ class AwInstance:
 
     @property
     def relation_type(self):
-        """Gets the relation_type of this AwInstance.
+        r"""Gets the relation_type of this AwInstance.
 
         映射类型 1-反向删除映射;2-用例自动添加的方向删除步骤
 
@@ -1271,7 +1271,7 @@ class AwInstance:
 
     @relation_type.setter
     def relation_type(self, relation_type):
-        """Sets the relation_type of this AwInstance.
+        r"""Sets the relation_type of this AwInstance.
 
         映射类型 1-反向删除映射;2-用例自动添加的方向删除步骤
 
@@ -1282,7 +1282,7 @@ class AwInstance:
 
     @property
     def retry_interval(self):
-        """Gets the retry_interval of this AwInstance.
+        r"""Gets the retry_interval of this AwInstance.
 
         重试间隔时间 (ms) 为空表示不等待
 
@@ -1293,7 +1293,7 @@ class AwInstance:
 
     @retry_interval.setter
     def retry_interval(self, retry_interval):
-        """Sets the retry_interval of this AwInstance.
+        r"""Sets the retry_interval of this AwInstance.
 
         重试间隔时间 (ms) 为空表示不等待
 
@@ -1304,7 +1304,7 @@ class AwInstance:
 
     @property
     def retry_times(self):
-        """Gets the retry_times of this AwInstance.
+        r"""Gets the retry_times of this AwInstance.
 
         重试次数
 
@@ -1315,7 +1315,7 @@ class AwInstance:
 
     @retry_times.setter
     def retry_times(self, retry_times):
-        """Sets the retry_times of this AwInstance.
+        r"""Sets the retry_times of this AwInstance.
 
         重试次数
 
@@ -1326,7 +1326,7 @@ class AwInstance:
 
     @property
     def script_name(self):
-        """Gets the script_name of this AwInstance.
+        r"""Gets the script_name of this AwInstance.
 
         获取脚本生成时，要使用的步骤名称
 
@@ -1337,7 +1337,7 @@ class AwInstance:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this AwInstance.
+        r"""Sets the script_name of this AwInstance.
 
         获取脚本生成时，要使用的步骤名称
 
@@ -1348,7 +1348,7 @@ class AwInstance:
 
     @property
     def service_and_stage(self):
-        """Gets the service_and_stage of this AwInstance.
+        r"""Gets the service_and_stage of this AwInstance.
 
         aw所来自工程的服务名和阶段名 fromOutside为1时该值有效
 
@@ -1359,7 +1359,7 @@ class AwInstance:
 
     @service_and_stage.setter
     def service_and_stage(self, service_and_stage):
-        """Sets the service_and_stage of this AwInstance.
+        r"""Sets the service_and_stage of this AwInstance.
 
         aw所来自工程的服务名和阶段名 fromOutside为1时该值有效
 
@@ -1370,7 +1370,7 @@ class AwInstance:
 
     @property
     def special_type(self):
-        """Gets the special_type of this AwInstance.
+        r"""Gets the special_type of this AwInstance.
 
         测试步骤来源
 
@@ -1381,7 +1381,7 @@ class AwInstance:
 
     @special_type.setter
     def special_type(self, special_type):
-        """Sets the special_type of this AwInstance.
+        r"""Sets the special_type of this AwInstance.
 
         测试步骤来源
 
@@ -1392,7 +1392,7 @@ class AwInstance:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AwInstance.
+        r"""Gets the update_time of this AwInstance.
 
         更新时间
 
@@ -1403,7 +1403,7 @@ class AwInstance:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AwInstance.
+        r"""Sets the update_time of this AwInstance.
 
         更新时间
 
@@ -1414,7 +1414,7 @@ class AwInstance:
 
     @property
     def update_time_stamp(self):
-        """Gets the update_time_stamp of this AwInstance.
+        r"""Gets the update_time_stamp of this AwInstance.
 
         更新时间戳
 
@@ -1425,7 +1425,7 @@ class AwInstance:
 
     @update_time_stamp.setter
     def update_time_stamp(self, update_time_stamp):
-        """Sets the update_time_stamp of this AwInstance.
+        r"""Sets the update_time_stamp of this AwInstance.
 
         更新时间戳
 
@@ -1436,7 +1436,7 @@ class AwInstance:
 
     @property
     def update_time_string(self):
-        """Gets the update_time_string of this AwInstance.
+        r"""Gets the update_time_string of this AwInstance.
 
         更新时间字符串
 
@@ -1447,7 +1447,7 @@ class AwInstance:
 
     @update_time_string.setter
     def update_time_string(self, update_time_string):
-        """Sets the update_time_string of this AwInstance.
+        r"""Sets the update_time_string of this AwInstance.
 
         更新时间字符串
 
@@ -1458,7 +1458,7 @@ class AwInstance:
 
     @property
     def update_user(self):
-        """Gets the update_user of this AwInstance.
+        r"""Gets the update_user of this AwInstance.
 
         更新人
 
@@ -1469,7 +1469,7 @@ class AwInstance:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this AwInstance.
+        r"""Sets the update_user of this AwInstance.
 
         更新人
 
@@ -1480,7 +1480,7 @@ class AwInstance:
 
     @property
     def user_id(self):
-        """Gets the user_id of this AwInstance.
+        r"""Gets the user_id of this AwInstance.
 
         user id
 
@@ -1491,7 +1491,7 @@ class AwInstance:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this AwInstance.
+        r"""Sets the user_id of this AwInstance.
 
         user id
 
@@ -1502,7 +1502,7 @@ class AwInstance:
 
     @property
     def variable_list(self):
-        """Gets the variable_list of this AwInstance.
+        r"""Gets the variable_list of this AwInstance.
 
         用例局部变量
 
@@ -1513,7 +1513,7 @@ class AwInstance:
 
     @variable_list.setter
     def variable_list(self, variable_list):
-        """Sets the variable_list of this AwInstance.
+        r"""Sets the variable_list of this AwInstance.
 
         用例局部变量
 

@@ -27,7 +27,7 @@ class Bw:
     }
 
     def __init__(self, black_ip_list=None, white_ip_list=None):
-        """Bw
+        r"""Bw
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Bw:
 
     @property
     def black_ip_list(self):
-        """Gets the black_ip_list of this Bw.
+        r"""Gets the black_ip_list of this Bw.
 
         黑名单列表
 
@@ -59,7 +59,7 @@ class Bw:
 
     @black_ip_list.setter
     def black_ip_list(self, black_ip_list):
-        """Sets the black_ip_list of this Bw.
+        r"""Sets the black_ip_list of this Bw.
 
         黑名单列表
 
@@ -70,7 +70,7 @@ class Bw:
 
     @property
     def white_ip_list(self):
-        """Gets the white_ip_list of this Bw.
+        r"""Gets the white_ip_list of this Bw.
 
         白名单列表
 
@@ -81,7 +81,7 @@ class Bw:
 
     @white_ip_list.setter
     def white_ip_list(self, white_ip_list):
-        """Sets the white_ip_list of this Bw.
+        r"""Sets the white_ip_list of this Bw.
 
         白名单列表
 

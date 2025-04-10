@@ -29,7 +29,7 @@ class UpdateNetworkInstance:
     }
 
     def __init__(self, name=None, description=None, cidrs=None):
-        """UpdateNetworkInstance
+        r"""UpdateNetworkInstance
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateNetworkInstance:
 
     @property
     def name(self):
-        """Gets the name of this UpdateNetworkInstance.
+        r"""Gets the name of this UpdateNetworkInstance.
 
         实例名字。
 
@@ -68,7 +68,7 @@ class UpdateNetworkInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateNetworkInstance.
+        r"""Sets the name of this UpdateNetworkInstance.
 
         实例名字。
 
@@ -79,7 +79,7 @@ class UpdateNetworkInstance:
 
     @property
     def description(self):
-        """Gets the description of this UpdateNetworkInstance.
+        r"""Gets the description of this UpdateNetworkInstance.
 
         实例描述。不支持 <>。
 
@@ -90,7 +90,7 @@ class UpdateNetworkInstance:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateNetworkInstance.
+        r"""Sets the description of this UpdateNetworkInstance.
 
         实例描述。不支持 <>。
 
@@ -101,7 +101,7 @@ class UpdateNetworkInstance:
 
     @property
     def cidrs(self):
-        """Gets the cidrs of this UpdateNetworkInstance.
+        r"""Gets the cidrs of this UpdateNetworkInstance.
 
         网络实例发布的网段路由列表。
 
@@ -112,7 +112,7 @@ class UpdateNetworkInstance:
 
     @cidrs.setter
     def cidrs(self, cidrs):
-        """Sets the cidrs of this UpdateNetworkInstance.
+        r"""Sets the cidrs of this UpdateNetworkInstance.
 
         网络实例发布的网段路由列表。
 

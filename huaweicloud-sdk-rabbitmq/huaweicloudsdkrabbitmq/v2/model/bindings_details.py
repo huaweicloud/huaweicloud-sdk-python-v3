@@ -33,7 +33,7 @@ class BindingsDetails:
     }
 
     def __init__(self, source=None, destination_type=None, destination=None, routing_key=None, properties_key=None):
-        """BindingsDetails
+        r"""BindingsDetails
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BindingsDetails:
 
     @property
     def source(self):
-        """Gets the source of this BindingsDetails.
+        r"""Gets the source of this BindingsDetails.
 
         Exchange名称
 
@@ -82,7 +82,7 @@ class BindingsDetails:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this BindingsDetails.
+        r"""Sets the source of this BindingsDetails.
 
         Exchange名称
 
@@ -93,7 +93,7 @@ class BindingsDetails:
 
     @property
     def destination_type(self):
-        """Gets the destination_type of this BindingsDetails.
+        r"""Gets the destination_type of this BindingsDetails.
 
         绑定目标类型
 
@@ -104,7 +104,7 @@ class BindingsDetails:
 
     @destination_type.setter
     def destination_type(self, destination_type):
-        """Sets the destination_type of this BindingsDetails.
+        r"""Sets the destination_type of this BindingsDetails.
 
         绑定目标类型
 
@@ -115,7 +115,7 @@ class BindingsDetails:
 
     @property
     def destination(self):
-        """Gets the destination of this BindingsDetails.
+        r"""Gets the destination of this BindingsDetails.
 
         绑定目标的名称
 
@@ -126,7 +126,7 @@ class BindingsDetails:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this BindingsDetails.
+        r"""Sets the destination of this BindingsDetails.
 
         绑定目标的名称
 
@@ -137,7 +137,7 @@ class BindingsDetails:
 
     @property
     def routing_key(self):
-        """Gets the routing_key of this BindingsDetails.
+        r"""Gets the routing_key of this BindingsDetails.
 
         绑定键值
 
@@ -148,7 +148,7 @@ class BindingsDetails:
 
     @routing_key.setter
     def routing_key(self, routing_key):
-        """Sets the routing_key of this BindingsDetails.
+        r"""Sets the routing_key of this BindingsDetails.
 
         绑定键值
 
@@ -159,7 +159,7 @@ class BindingsDetails:
 
     @property
     def properties_key(self):
-        """Gets the properties_key of this BindingsDetails.
+        r"""Gets the properties_key of this BindingsDetails.
 
         经过URL转译后routing_key
 
@@ -170,7 +170,7 @@ class BindingsDetails:
 
     @properties_key.setter
     def properties_key(self, properties_key):
-        """Sets the properties_key of this BindingsDetails.
+        r"""Sets the properties_key of this BindingsDetails.
 
         经过URL转译后routing_key
 

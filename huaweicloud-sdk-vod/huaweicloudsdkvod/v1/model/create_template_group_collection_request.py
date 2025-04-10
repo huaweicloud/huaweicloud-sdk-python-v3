@@ -25,7 +25,7 @@ class CreateTemplateGroupCollectionRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTemplateGroupCollectionRequest
+        r"""CreateTemplateGroupCollectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTemplateGroupCollectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTemplateGroupCollectionRequest.
+        r"""Gets the body of this CreateTemplateGroupCollectionRequest.
 
         :return: The body of this CreateTemplateGroupCollectionRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.TransTemplateGroupCollection`
@@ -52,7 +52,7 @@ class CreateTemplateGroupCollectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTemplateGroupCollectionRequest.
+        r"""Sets the body of this CreateTemplateGroupCollectionRequest.
 
         :param body: The body of this CreateTemplateGroupCollectionRequest.
         :type body: :class:`huaweicloudsdkvod.v1.TransTemplateGroupCollection`

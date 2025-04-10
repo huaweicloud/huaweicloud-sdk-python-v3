@@ -31,7 +31,7 @@ class WorkingState:
     }
 
     def __init__(self, alias=None, cn_name=None, code=None, en_name=None):
-        """WorkingState
+        r"""WorkingState
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class WorkingState:
 
     @property
     def alias(self):
-        """Gets the alias of this WorkingState.
+        r"""Gets the alias of this WorkingState.
 
         **参数解释：**  别名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -75,7 +75,7 @@ class WorkingState:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this WorkingState.
+        r"""Sets the alias of this WorkingState.
 
         **参数解释：**  别名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -86,7 +86,7 @@ class WorkingState:
 
     @property
     def cn_name(self):
-        """Gets the cn_name of this WorkingState.
+        r"""Gets the cn_name of this WorkingState.
 
         **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -97,7 +97,7 @@ class WorkingState:
 
     @cn_name.setter
     def cn_name(self, cn_name):
-        """Sets the cn_name of this WorkingState.
+        r"""Sets the cn_name of this WorkingState.
 
         **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -108,7 +108,7 @@ class WorkingState:
 
     @property
     def code(self):
-        """Gets the code of this WorkingState.
+        r"""Gets the code of this WorkingState.
 
         **参数解释：**  编码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -119,7 +119,7 @@ class WorkingState:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this WorkingState.
+        r"""Sets the code of this WorkingState.
 
         **参数解释：**  编码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -130,7 +130,7 @@ class WorkingState:
 
     @property
     def en_name(self):
-        """Gets the en_name of this WorkingState.
+        r"""Gets the en_name of this WorkingState.
 
         **参数解释：**  英文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -141,7 +141,7 @@ class WorkingState:
 
     @en_name.setter
     def en_name(self, en_name):
-        """Sets the en_name of this WorkingState.
+        r"""Sets the en_name of this WorkingState.
 
         **参数解释：**  英文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

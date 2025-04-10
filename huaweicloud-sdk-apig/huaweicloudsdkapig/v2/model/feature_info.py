@@ -35,7 +35,7 @@ class FeatureInfo:
     }
 
     def __init__(self, id=None, name=None, enable=None, config=None, instance_id=None, update_time=None):
-        """FeatureInfo
+        r"""FeatureInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class FeatureInfo:
 
     @property
     def id(self):
-        """Gets the id of this FeatureInfo.
+        r"""Gets the id of this FeatureInfo.
 
         特性编号
 
@@ -89,7 +89,7 @@ class FeatureInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FeatureInfo.
+        r"""Sets the id of this FeatureInfo.
 
         特性编号
 
@@ -100,7 +100,7 @@ class FeatureInfo:
 
     @property
     def name(self):
-        """Gets the name of this FeatureInfo.
+        r"""Gets the name of this FeatureInfo.
 
         特性名称
 
@@ -111,7 +111,7 @@ class FeatureInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FeatureInfo.
+        r"""Sets the name of this FeatureInfo.
 
         特性名称
 
@@ -122,7 +122,7 @@ class FeatureInfo:
 
     @property
     def enable(self):
-        """Gets the enable of this FeatureInfo.
+        r"""Gets the enable of this FeatureInfo.
 
         是否开启特性
 
@@ -133,7 +133,7 @@ class FeatureInfo:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this FeatureInfo.
+        r"""Sets the enable of this FeatureInfo.
 
         是否开启特性
 
@@ -144,7 +144,7 @@ class FeatureInfo:
 
     @property
     def config(self):
-        """Gets the config of this FeatureInfo.
+        r"""Gets the config of this FeatureInfo.
 
         特性参数配置
 
@@ -155,7 +155,7 @@ class FeatureInfo:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this FeatureInfo.
+        r"""Sets the config of this FeatureInfo.
 
         特性参数配置
 
@@ -166,7 +166,7 @@ class FeatureInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this FeatureInfo.
+        r"""Gets the instance_id of this FeatureInfo.
 
         实例编号
 
@@ -177,7 +177,7 @@ class FeatureInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this FeatureInfo.
+        r"""Sets the instance_id of this FeatureInfo.
 
         实例编号
 
@@ -188,7 +188,7 @@ class FeatureInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this FeatureInfo.
+        r"""Gets the update_time of this FeatureInfo.
 
         实例特性更新时间
 
@@ -199,7 +199,7 @@ class FeatureInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this FeatureInfo.
+        r"""Sets the update_time of this FeatureInfo.
 
         实例特性更新时间
 

@@ -27,7 +27,7 @@ class DatastoreResult:
     }
 
     def __init__(self, node_type=None, version=None):
-        """DatastoreResult
+        r"""DatastoreResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DatastoreResult:
 
     @property
     def node_type(self):
-        """Gets the node_type of this DatastoreResult.
+        r"""Gets the node_type of this DatastoreResult.
 
         node_type参数模板节点类型。取值范围： - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。
 
@@ -59,7 +59,7 @@ class DatastoreResult:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this DatastoreResult.
+        r"""Sets the node_type of this DatastoreResult.
 
         node_type参数模板节点类型。取值范围： - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。
 
@@ -70,7 +70,7 @@ class DatastoreResult:
 
     @property
     def version(self):
-        """Gets the version of this DatastoreResult.
+        r"""Gets the version of this DatastoreResult.
 
         version数据库版本。
 
@@ -81,7 +81,7 @@ class DatastoreResult:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DatastoreResult.
+        r"""Sets the version of this DatastoreResult.
 
         version数据库版本。
 

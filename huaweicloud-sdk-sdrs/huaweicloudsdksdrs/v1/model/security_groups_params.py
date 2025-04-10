@@ -25,7 +25,7 @@ class SecurityGroupsParams:
     }
 
     def __init__(self, id=None):
-        """SecurityGroupsParams
+        r"""SecurityGroupsParams
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SecurityGroupsParams:
 
     @property
     def id(self):
-        """Gets the id of this SecurityGroupsParams.
+        r"""Gets the id of this SecurityGroupsParams.
 
         安全组的ID。
 
@@ -53,7 +53,7 @@ class SecurityGroupsParams:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecurityGroupsParams.
+        r"""Sets the id of this SecurityGroupsParams.
 
         安全组的ID。
 

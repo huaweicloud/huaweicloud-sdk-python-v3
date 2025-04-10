@@ -27,7 +27,7 @@ class NotebookToolDto:
     }
 
     def __init__(self, display_name=None, profile=None):
-        """NotebookToolDto
+        r"""NotebookToolDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NotebookToolDto:
 
     @property
     def display_name(self):
-        """Gets the display_name of this NotebookToolDto.
+        r"""Gets the display_name of this NotebookToolDto.
 
         显示名称
 
@@ -59,7 +59,7 @@ class NotebookToolDto:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this NotebookToolDto.
+        r"""Sets the display_name of this NotebookToolDto.
 
         显示名称
 
@@ -70,7 +70,7 @@ class NotebookToolDto:
 
     @property
     def profile(self):
-        """Gets the profile of this NotebookToolDto.
+        r"""Gets the profile of this NotebookToolDto.
 
         :return: The profile of this NotebookToolDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.Profile`
@@ -79,7 +79,7 @@ class NotebookToolDto:
 
     @profile.setter
     def profile(self, profile):
-        """Sets the profile of this NotebookToolDto.
+        r"""Sets the profile of this NotebookToolDto.
 
         :param profile: The profile of this NotebookToolDto.
         :type profile: :class:`huaweicloudsdkeihealth.v1.Profile`

@@ -42,7 +42,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
     }
 
     def __init__(self, name=None, type=None, desc=None, source=None, locale=None, templates=None, create_time=None, modify_time=None, project_id=None):
-        """ShowNotificationTemplateResponse
+        r"""ShowNotificationTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowNotificationTemplateResponse.
+        r"""Gets the name of this ShowNotificationTemplateResponse.
 
         通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
 
@@ -104,7 +104,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowNotificationTemplateResponse.
+        r"""Sets the name of this ShowNotificationTemplateResponse.
 
         通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
 
@@ -115,7 +115,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowNotificationTemplateResponse.
+        r"""Gets the type of this ShowNotificationTemplateResponse.
 
         保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
 
@@ -126,7 +126,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowNotificationTemplateResponse.
+        r"""Sets the type of this ShowNotificationTemplateResponse.
 
         保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
 
@@ -137,7 +137,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @property
     def desc(self):
-        """Gets the desc of this ShowNotificationTemplateResponse.
+        r"""Gets the desc of this ShowNotificationTemplateResponse.
 
         模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
 
@@ -148,7 +148,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this ShowNotificationTemplateResponse.
+        r"""Sets the desc of this ShowNotificationTemplateResponse.
 
         模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
 
@@ -159,7 +159,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @property
     def source(self):
-        """Gets the source of this ShowNotificationTemplateResponse.
+        r"""Gets the source of this ShowNotificationTemplateResponse.
 
         模板来源，目前必填为LTS，否则会筛选不出来
 
@@ -170,7 +170,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ShowNotificationTemplateResponse.
+        r"""Sets the source of this ShowNotificationTemplateResponse.
 
         模板来源，目前必填为LTS，否则会筛选不出来
 
@@ -181,7 +181,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @property
     def locale(self):
-        """Gets the locale of this ShowNotificationTemplateResponse.
+        r"""Gets the locale of this ShowNotificationTemplateResponse.
 
         语言，必填，目前可填zh-cn和en-us
 
@@ -192,7 +192,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @locale.setter
     def locale(self, locale):
-        """Sets the locale of this ShowNotificationTemplateResponse.
+        r"""Sets the locale of this ShowNotificationTemplateResponse.
 
         语言，必填，目前可填zh-cn和en-us
 
@@ -203,7 +203,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this ShowNotificationTemplateResponse.
+        r"""Gets the templates of this ShowNotificationTemplateResponse.
 
         模板正文，为一个数组
 
@@ -214,7 +214,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this ShowNotificationTemplateResponse.
+        r"""Sets the templates of this ShowNotificationTemplateResponse.
 
         模板正文，为一个数组
 
@@ -225,7 +225,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowNotificationTemplateResponse.
+        r"""Gets the create_time of this ShowNotificationTemplateResponse.
 
         创建时间，为毫秒时间戳
 
@@ -236,7 +236,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowNotificationTemplateResponse.
+        r"""Sets the create_time of this ShowNotificationTemplateResponse.
 
         创建时间，为毫秒时间戳
 
@@ -247,7 +247,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @property
     def modify_time(self):
-        """Gets the modify_time of this ShowNotificationTemplateResponse.
+        r"""Gets the modify_time of this ShowNotificationTemplateResponse.
 
         更新时间，为毫秒时间戳
 
@@ -258,7 +258,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @modify_time.setter
     def modify_time(self, modify_time):
-        """Sets the modify_time of this ShowNotificationTemplateResponse.
+        r"""Sets the modify_time of this ShowNotificationTemplateResponse.
 
         更新时间，为毫秒时间戳
 
@@ -269,7 +269,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowNotificationTemplateResponse.
+        r"""Gets the project_id of this ShowNotificationTemplateResponse.
 
         项目ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
@@ -280,7 +280,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowNotificationTemplateResponse.
+        r"""Sets the project_id of this ShowNotificationTemplateResponse.
 
         项目ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 

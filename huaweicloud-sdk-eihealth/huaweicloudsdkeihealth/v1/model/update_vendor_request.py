@@ -25,7 +25,7 @@ class UpdateVendorRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateVendorRequest
+        r"""UpdateVendorRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateVendorRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVendorRequest.
+        r"""Gets the body of this UpdateVendorRequest.
 
         :return: The body of this UpdateVendorRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateVendorRequestBody`
@@ -52,7 +52,7 @@ class UpdateVendorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVendorRequest.
+        r"""Sets the body of this UpdateVendorRequest.
 
         :param body: The body of this UpdateVendorRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateVendorRequestBody`

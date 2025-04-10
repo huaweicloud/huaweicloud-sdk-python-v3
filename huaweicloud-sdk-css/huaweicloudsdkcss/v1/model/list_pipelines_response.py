@@ -26,7 +26,7 @@ class ListPipelinesResponse(SdkResponse):
     }
 
     def __init__(self, pipelines=None):
-        """ListPipelinesResponse
+        r"""ListPipelinesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPipelinesResponse(SdkResponse):
 
     @property
     def pipelines(self):
-        """Gets the pipelines of this ListPipelinesResponse.
+        r"""Gets the pipelines of this ListPipelinesResponse.
 
         pipeline列表。
 
@@ -55,7 +55,7 @@ class ListPipelinesResponse(SdkResponse):
 
     @pipelines.setter
     def pipelines(self, pipelines):
-        """Sets the pipelines of this ListPipelinesResponse.
+        r"""Sets the pipelines of this ListPipelinesResponse.
 
         pipeline列表。
 

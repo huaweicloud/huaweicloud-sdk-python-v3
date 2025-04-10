@@ -26,7 +26,7 @@ class CreateDataConnectorResponse(SdkResponse):
     }
 
     def __init__(self, connector_id=None):
-        """CreateDataConnectorResponse
+        r"""CreateDataConnectorResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDataConnectorResponse(SdkResponse):
 
     @property
     def connector_id(self):
-        """Gets the connector_id of this CreateDataConnectorResponse.
+        r"""Gets the connector_id of this CreateDataConnectorResponse.
 
         数据连接创建成功后系统返回的数据连接ID值。
 
@@ -55,7 +55,7 @@ class CreateDataConnectorResponse(SdkResponse):
 
     @connector_id.setter
     def connector_id(self, connector_id):
-        """Sets the connector_id of this CreateDataConnectorResponse.
+        r"""Sets the connector_id of this CreateDataConnectorResponse.
 
         数据连接创建成功后系统返回的数据连接ID值。
 

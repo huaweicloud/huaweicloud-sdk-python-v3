@@ -36,7 +36,9 @@ class CreateInstanceRequestBody:
         'charge_info': 'ChargeInfoOption',
         'restore_info': 'RestoreInfo',
         'port': 'str',
-        'availability_zone_detail': 'AvailabilityZoneDetail'
+        'ipv6_enabled': 'bool',
+        'availability_zone_detail': 'AvailabilityZoneDetail',
+        'lb_access_control_settings': 'LbAccessControlSettings'
     }
 
     attribute_map = {
@@ -59,11 +61,13 @@ class CreateInstanceRequestBody:
         'charge_info': 'charge_info',
         'restore_info': 'restore_info',
         'port': 'port',
-        'availability_zone_detail': 'availability_zone_detail'
+        'ipv6_enabled': 'ipv6_enabled',
+        'availability_zone_detail': 'availability_zone_detail',
+        'lb_access_control_settings': 'lb_access_control_settings'
     }
 
-    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, product_type=None, flavor=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None, restore_info=None, port=None, availability_zone_detail=None):
-        """CreateInstanceRequestBody
+    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, product_type=None, flavor=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None, restore_info=None, port=None, ipv6_enabled=None, availability_zone_detail=None, lb_access_control_settings=None):
+        r"""CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +89,7 @@ class CreateInstanceRequestBody:
         :type password: str
         :param mode: 实例类型。   -  GeminiDB Cassandra支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Cassandra支持云原生部署模式集群类型，取值“CloudNativeCluster”。   -  GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   -  GeminiDB Influx支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Influx支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Influx支持经典部署模式单节点类型，取值为“InfluxdbSingle”。   -  GeminiDB Redis支持经典部署模式Proxy集群类型，取值为“Cluster”。   -  GeminiDB redis支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Redis支持经典部署模式Cluster集群类型，取值为“RedisCluster”   -  GeminiDB Redis支持经典部署模式主备类型，取值为“Replication”。
         :type mode: str
-        :param product_type: 产品类型。   -  Capacity 容量型   -  Standard 标准型 当创建GeminiDB Redis云原生部署模式集群类型必传此参数。
+        :param product_type: 产品类型   -  Capacity 容量型   -  Standard 标准型 当创建GeminiDB Redis云原生部署模式集群类型必传此参数。
         :type product_type: str
         :param flavor: 实例规格详情。获取方法请参见查询所有实例规格信息中响应“flavors”字段下参数的值。
         :type flavor: list[:class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceFlavorOption`]
@@ -105,8 +109,12 @@ class CreateInstanceRequestBody:
         :type restore_info: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreInfo`
         :param port: 数据库访问端口号。 目前仅支持GeminiDB Redis实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GeminiDB Redis实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
         :type port: str
+        :param ipv6_enabled: 是否启用IPv6。默认 - true: 启用IPv6。 - false: 不启用IPv6，默认为不启用。
+        :type ipv6_enabled: bool
         :param availability_zone_detail: 
         :type availability_zone_detail: :class:`huaweicloudsdkgaussdbfornosql.v3.AvailabilityZoneDetail`
+        :param lb_access_control_settings: 
+        :type lb_access_control_settings: :class:`huaweicloudsdkgaussdbfornosql.v3.LbAccessControlSettings`
         """
         
         
@@ -130,7 +138,9 @@ class CreateInstanceRequestBody:
         self._charge_info = None
         self._restore_info = None
         self._port = None
+        self._ipv6_enabled = None
         self._availability_zone_detail = None
+        self._lb_access_control_settings = None
         self.discriminator = None
 
         self.name = name
@@ -161,12 +171,16 @@ class CreateInstanceRequestBody:
             self.restore_info = restore_info
         if port is not None:
             self.port = port
+        if ipv6_enabled is not None:
+            self.ipv6_enabled = ipv6_enabled
         if availability_zone_detail is not None:
             self.availability_zone_detail = availability_zone_detail
+        if lb_access_control_settings is not None:
+            self.lb_access_control_settings = lb_access_control_settings
 
     @property
     def name(self):
-        """Gets the name of this CreateInstanceRequestBody.
+        r"""Gets the name of this CreateInstanceRequestBody.
 
         实例名称，允许和已有名称重复。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
@@ -177,7 +191,7 @@ class CreateInstanceRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateInstanceRequestBody.
+        r"""Sets the name of this CreateInstanceRequestBody.
 
         实例名称，允许和已有名称重复。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
@@ -188,7 +202,7 @@ class CreateInstanceRequestBody:
 
     @property
     def datastore(self):
-        """Gets the datastore of this CreateInstanceRequestBody.
+        r"""Gets the datastore of this CreateInstanceRequestBody.
 
         :return: The datastore of this CreateInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DatastoreOption`
@@ -197,7 +211,7 @@ class CreateInstanceRequestBody:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this CreateInstanceRequestBody.
+        r"""Sets the datastore of this CreateInstanceRequestBody.
 
         :param datastore: The datastore of this CreateInstanceRequestBody.
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.DatastoreOption`
@@ -206,7 +220,7 @@ class CreateInstanceRequestBody:
 
     @property
     def region(self):
-        """Gets the region of this CreateInstanceRequestBody.
+        r"""Gets the region of this CreateInstanceRequestBody.
 
         - 区域ID - 取值：非空。
 
@@ -217,7 +231,7 @@ class CreateInstanceRequestBody:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreateInstanceRequestBody.
+        r"""Sets the region of this CreateInstanceRequestBody.
 
         - 区域ID - 取值：非空。
 
@@ -228,7 +242,7 @@ class CreateInstanceRequestBody:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateInstanceRequestBody.
+        r"""Gets the availability_zone of this CreateInstanceRequestBody.
 
         可用区ID。 取值：请参见查询所有实例规格信息中返回的“az_status” ，支持创建3可用区实例，中间以逗号隔开。
 
@@ -239,7 +253,7 @@ class CreateInstanceRequestBody:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateInstanceRequestBody.
+        r"""Sets the availability_zone of this CreateInstanceRequestBody.
 
         可用区ID。 取值：请参见查询所有实例规格信息中返回的“az_status” ，支持创建3可用区实例，中间以逗号隔开。
 
@@ -250,7 +264,7 @@ class CreateInstanceRequestBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateInstanceRequestBody.
+        r"""Gets the vpc_id of this CreateInstanceRequestBody.
 
         虚拟私有云ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询VPC列表。
 
@@ -261,7 +275,7 @@ class CreateInstanceRequestBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateInstanceRequestBody.
+        r"""Sets the vpc_id of this CreateInstanceRequestBody.
 
         虚拟私有云ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询VPC列表。
 
@@ -272,7 +286,7 @@ class CreateInstanceRequestBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateInstanceRequestBody.
+        r"""Gets the subnet_id of this CreateInstanceRequestBody.
 
         子网的网络ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询子网列表。
 
@@ -283,7 +297,7 @@ class CreateInstanceRequestBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateInstanceRequestBody.
+        r"""Sets the subnet_id of this CreateInstanceRequestBody.
 
         子网的网络ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询子网列表。
 
@@ -294,7 +308,7 @@ class CreateInstanceRequestBody:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CreateInstanceRequestBody.
+        r"""Gets the security_group_id of this CreateInstanceRequestBody.
 
         安全组ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询安全组列表。
 
@@ -305,7 +319,7 @@ class CreateInstanceRequestBody:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreateInstanceRequestBody.
+        r"""Sets the security_group_id of this CreateInstanceRequestBody.
 
         安全组ID，获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考查询安全组列表。
 
@@ -316,7 +330,7 @@ class CreateInstanceRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this CreateInstanceRequestBody.
+        r"""Gets the password of this CreateInstanceRequestBody.
 
         数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -327,7 +341,7 @@ class CreateInstanceRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateInstanceRequestBody.
+        r"""Sets the password of this CreateInstanceRequestBody.
 
         数据库密码。 取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -338,7 +352,7 @@ class CreateInstanceRequestBody:
 
     @property
     def mode(self):
-        """Gets the mode of this CreateInstanceRequestBody.
+        r"""Gets the mode of this CreateInstanceRequestBody.
 
         实例类型。   -  GeminiDB Cassandra支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Cassandra支持云原生部署模式集群类型，取值“CloudNativeCluster”。   -  GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   -  GeminiDB Influx支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Influx支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Influx支持经典部署模式单节点类型，取值为“InfluxdbSingle”。   -  GeminiDB Redis支持经典部署模式Proxy集群类型，取值为“Cluster”。   -  GeminiDB redis支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Redis支持经典部署模式Cluster集群类型，取值为“RedisCluster”   -  GeminiDB Redis支持经典部署模式主备类型，取值为“Replication”。
 
@@ -349,7 +363,7 @@ class CreateInstanceRequestBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CreateInstanceRequestBody.
+        r"""Sets the mode of this CreateInstanceRequestBody.
 
         实例类型。   -  GeminiDB Cassandra支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Cassandra支持云原生部署模式集群类型，取值“CloudNativeCluster”。   -  GeminiDB Mongo4.0版本支持副本集类型，取值为“ReplicaSet”。   -  GeminiDB Influx支持经典部署模式集群类型，取值为“Cluster”。   -  GeminiDB Influx支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Influx支持经典部署模式单节点类型，取值为“InfluxdbSingle”。   -  GeminiDB Redis支持经典部署模式Proxy集群类型，取值为“Cluster”。   -  GeminiDB redis支持云原生部署模式集群类型，取值为“CloudNativeCluster”。   -  GeminiDB Redis支持经典部署模式Cluster集群类型，取值为“RedisCluster”   -  GeminiDB Redis支持经典部署模式主备类型，取值为“Replication”。
 
@@ -360,9 +374,9 @@ class CreateInstanceRequestBody:
 
     @property
     def product_type(self):
-        """Gets the product_type of this CreateInstanceRequestBody.
+        r"""Gets the product_type of this CreateInstanceRequestBody.
 
-        产品类型。   -  Capacity 容量型   -  Standard 标准型 当创建GeminiDB Redis云原生部署模式集群类型必传此参数。
+        产品类型   -  Capacity 容量型   -  Standard 标准型 当创建GeminiDB Redis云原生部署模式集群类型必传此参数。
 
         :return: The product_type of this CreateInstanceRequestBody.
         :rtype: str
@@ -371,9 +385,9 @@ class CreateInstanceRequestBody:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this CreateInstanceRequestBody.
+        r"""Sets the product_type of this CreateInstanceRequestBody.
 
-        产品类型。   -  Capacity 容量型   -  Standard 标准型 当创建GeminiDB Redis云原生部署模式集群类型必传此参数。
+        产品类型   -  Capacity 容量型   -  Standard 标准型 当创建GeminiDB Redis云原生部署模式集群类型必传此参数。
 
         :param product_type: The product_type of this CreateInstanceRequestBody.
         :type product_type: str
@@ -382,7 +396,7 @@ class CreateInstanceRequestBody:
 
     @property
     def flavor(self):
-        """Gets the flavor of this CreateInstanceRequestBody.
+        r"""Gets the flavor of this CreateInstanceRequestBody.
 
         实例规格详情。获取方法请参见查询所有实例规格信息中响应“flavors”字段下参数的值。
 
@@ -393,7 +407,7 @@ class CreateInstanceRequestBody:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this CreateInstanceRequestBody.
+        r"""Sets the flavor of this CreateInstanceRequestBody.
 
         实例规格详情。获取方法请参见查询所有实例规格信息中响应“flavors”字段下参数的值。
 
@@ -404,7 +418,7 @@ class CreateInstanceRequestBody:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this CreateInstanceRequestBody.
+        r"""Gets the configuration_id of this CreateInstanceRequestBody.
 
         参数模板ID。
 
@@ -415,7 +429,7 @@ class CreateInstanceRequestBody:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this CreateInstanceRequestBody.
+        r"""Sets the configuration_id of this CreateInstanceRequestBody.
 
         参数模板ID。
 
@@ -426,7 +440,7 @@ class CreateInstanceRequestBody:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this CreateInstanceRequestBody.
+        r"""Gets the backup_strategy of this CreateInstanceRequestBody.
 
         :return: The backup_strategy of this CreateInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupStrategyOption`
@@ -435,7 +449,7 @@ class CreateInstanceRequestBody:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this CreateInstanceRequestBody.
+        r"""Sets the backup_strategy of this CreateInstanceRequestBody.
 
         :param backup_strategy: The backup_strategy of this CreateInstanceRequestBody.
         :type backup_strategy: :class:`huaweicloudsdkgaussdbfornosql.v3.BackupStrategyOption`
@@ -444,7 +458,7 @@ class CreateInstanceRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateInstanceRequestBody.
+        r"""Gets the enterprise_project_id of this CreateInstanceRequestBody.
 
         企业项目ID。
 
@@ -455,7 +469,7 @@ class CreateInstanceRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateInstanceRequestBody.
+        r"""Sets the enterprise_project_id of this CreateInstanceRequestBody.
 
         企业项目ID。
 
@@ -466,7 +480,7 @@ class CreateInstanceRequestBody:
 
     @property
     def dedicated_resource_id(self):
-        """Gets the dedicated_resource_id of this CreateInstanceRequestBody.
+        r"""Gets the dedicated_resource_id of this CreateInstanceRequestBody.
 
         专属资源ID，只有开通专属资源池后才可以下发此参数。
 
@@ -477,7 +491,7 @@ class CreateInstanceRequestBody:
 
     @dedicated_resource_id.setter
     def dedicated_resource_id(self, dedicated_resource_id):
-        """Sets the dedicated_resource_id of this CreateInstanceRequestBody.
+        r"""Sets the dedicated_resource_id of this CreateInstanceRequestBody.
 
         专属资源ID，只有开通专属资源池后才可以下发此参数。
 
@@ -488,7 +502,7 @@ class CreateInstanceRequestBody:
 
     @property
     def ssl_option(self):
-        """Gets the ssl_option of this CreateInstanceRequestBody.
+        r"""Gets the ssl_option of this CreateInstanceRequestBody.
 
         SSL开关选项。 取值： - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认不启用SSL连接。
 
@@ -499,7 +513,7 @@ class CreateInstanceRequestBody:
 
     @ssl_option.setter
     def ssl_option(self, ssl_option):
-        """Sets the ssl_option of this CreateInstanceRequestBody.
+        r"""Sets the ssl_option of this CreateInstanceRequestBody.
 
         SSL开关选项。 取值： - 取“0”，表示DDS实例默认不启用SSL连接。 - 取“1”，表示DDS实例默认启用SSL连接。 - 不传该参数时，默认不启用SSL连接。
 
@@ -510,7 +524,7 @@ class CreateInstanceRequestBody:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this CreateInstanceRequestBody.
+        r"""Gets the charge_info of this CreateInstanceRequestBody.
 
         :return: The charge_info of this CreateInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoOption`
@@ -519,7 +533,7 @@ class CreateInstanceRequestBody:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this CreateInstanceRequestBody.
+        r"""Sets the charge_info of this CreateInstanceRequestBody.
 
         :param charge_info: The charge_info of this CreateInstanceRequestBody.
         :type charge_info: :class:`huaweicloudsdkgaussdbfornosql.v3.ChargeInfoOption`
@@ -528,7 +542,7 @@ class CreateInstanceRequestBody:
 
     @property
     def restore_info(self):
-        """Gets the restore_info of this CreateInstanceRequestBody.
+        r"""Gets the restore_info of this CreateInstanceRequestBody.
 
         :return: The restore_info of this CreateInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreInfo`
@@ -537,7 +551,7 @@ class CreateInstanceRequestBody:
 
     @restore_info.setter
     def restore_info(self, restore_info):
-        """Sets the restore_info of this CreateInstanceRequestBody.
+        r"""Sets the restore_info of this CreateInstanceRequestBody.
 
         :param restore_info: The restore_info of this CreateInstanceRequestBody.
         :type restore_info: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreInfo`
@@ -546,7 +560,7 @@ class CreateInstanceRequestBody:
 
     @property
     def port(self):
-        """Gets the port of this CreateInstanceRequestBody.
+        r"""Gets the port of this CreateInstanceRequestBody.
 
         数据库访问端口号。 目前仅支持GeminiDB Redis实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GeminiDB Redis实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
 
@@ -557,7 +571,7 @@ class CreateInstanceRequestBody:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this CreateInstanceRequestBody.
+        r"""Sets the port of this CreateInstanceRequestBody.
 
         数据库访问端口号。 目前仅支持GeminiDB Redis实例支持自定义端口，取值范围为：1024~65535，禁用端口号为：2180、2887、3887、6377、6378、6380、8018、8079、8091、8479、8484、8999、12017、12333、50069。 不指定端口时，创建GeminiDB Redis实例的访问端口默认为6379。 如果该实例计划用于搭建双活容灾场景，请配置为8635端口。
 
@@ -567,8 +581,30 @@ class CreateInstanceRequestBody:
         self._port = port
 
     @property
+    def ipv6_enabled(self):
+        r"""Gets the ipv6_enabled of this CreateInstanceRequestBody.
+
+        是否启用IPv6。默认 - true: 启用IPv6。 - false: 不启用IPv6，默认为不启用。
+
+        :return: The ipv6_enabled of this CreateInstanceRequestBody.
+        :rtype: bool
+        """
+        return self._ipv6_enabled
+
+    @ipv6_enabled.setter
+    def ipv6_enabled(self, ipv6_enabled):
+        r"""Sets the ipv6_enabled of this CreateInstanceRequestBody.
+
+        是否启用IPv6。默认 - true: 启用IPv6。 - false: 不启用IPv6，默认为不启用。
+
+        :param ipv6_enabled: The ipv6_enabled of this CreateInstanceRequestBody.
+        :type ipv6_enabled: bool
+        """
+        self._ipv6_enabled = ipv6_enabled
+
+    @property
     def availability_zone_detail(self):
-        """Gets the availability_zone_detail of this CreateInstanceRequestBody.
+        r"""Gets the availability_zone_detail of this CreateInstanceRequestBody.
 
         :return: The availability_zone_detail of this CreateInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.AvailabilityZoneDetail`
@@ -577,12 +613,30 @@ class CreateInstanceRequestBody:
 
     @availability_zone_detail.setter
     def availability_zone_detail(self, availability_zone_detail):
-        """Sets the availability_zone_detail of this CreateInstanceRequestBody.
+        r"""Sets the availability_zone_detail of this CreateInstanceRequestBody.
 
         :param availability_zone_detail: The availability_zone_detail of this CreateInstanceRequestBody.
         :type availability_zone_detail: :class:`huaweicloudsdkgaussdbfornosql.v3.AvailabilityZoneDetail`
         """
         self._availability_zone_detail = availability_zone_detail
+
+    @property
+    def lb_access_control_settings(self):
+        r"""Gets the lb_access_control_settings of this CreateInstanceRequestBody.
+
+        :return: The lb_access_control_settings of this CreateInstanceRequestBody.
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.LbAccessControlSettings`
+        """
+        return self._lb_access_control_settings
+
+    @lb_access_control_settings.setter
+    def lb_access_control_settings(self, lb_access_control_settings):
+        r"""Sets the lb_access_control_settings of this CreateInstanceRequestBody.
+
+        :param lb_access_control_settings: The lb_access_control_settings of this CreateInstanceRequestBody.
+        :type lb_access_control_settings: :class:`huaweicloudsdkgaussdbfornosql.v3.LbAccessControlSettings`
+        """
+        self._lb_access_control_settings = lb_access_control_settings
 
     def to_dict(self):
         """Returns the model properties as a dict"""

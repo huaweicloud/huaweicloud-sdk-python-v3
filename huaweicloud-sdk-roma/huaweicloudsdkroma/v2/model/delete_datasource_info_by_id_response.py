@@ -26,7 +26,7 @@ class DeleteDatasourceInfoByIdResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteDatasourceInfoByIdResponse
+        r"""DeleteDatasourceInfoByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDatasourceInfoByIdResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteDatasourceInfoByIdResponse.
+        r"""Gets the body of this DeleteDatasourceInfoByIdResponse.
 
         :return: The body of this DeleteDatasourceInfoByIdResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteDatasourceInfoByIdResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDatasourceInfoByIdResponse.
+        r"""Sets the body of this DeleteDatasourceInfoByIdResponse.
 
         :param body: The body of this DeleteDatasourceInfoByIdResponse.
         :type body: str

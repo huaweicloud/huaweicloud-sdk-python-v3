@@ -25,7 +25,7 @@ class AccessPointModel:
     }
 
     def __init__(self, region=None):
-        """AccessPointModel
+        r"""AccessPointModel
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AccessPointModel:
 
     @property
     def region(self):
-        """Gets the region of this AccessPointModel.
+        r"""Gets the region of this AccessPointModel.
 
         局点名字
 
@@ -53,7 +53,7 @@ class AccessPointModel:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AccessPointModel.
+        r"""Sets the region of this AccessPointModel.
 
         局点名字
 

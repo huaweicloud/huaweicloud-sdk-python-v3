@@ -35,7 +35,7 @@ class ListServicePermissionsDetailsRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None, permission=None, limit=None, offset=None, sort_key=None, sort_dir=None):
-        """ListServicePermissionsDetailsRequest
+        r"""ListServicePermissionsDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListServicePermissionsDetailsRequest:
 
     @property
     def vpc_endpoint_service_id(self):
-        """Gets the vpc_endpoint_service_id of this ListServicePermissionsDetailsRequest.
+        r"""Gets the vpc_endpoint_service_id of this ListServicePermissionsDetailsRequest.
 
         终端节点服务的ID。
 
@@ -88,7 +88,7 @@ class ListServicePermissionsDetailsRequest:
 
     @vpc_endpoint_service_id.setter
     def vpc_endpoint_service_id(self, vpc_endpoint_service_id):
-        """Sets the vpc_endpoint_service_id of this ListServicePermissionsDetailsRequest.
+        r"""Sets the vpc_endpoint_service_id of this ListServicePermissionsDetailsRequest.
 
         终端节点服务的ID。
 
@@ -99,7 +99,7 @@ class ListServicePermissionsDetailsRequest:
 
     @property
     def permission(self):
-        """Gets the permission of this ListServicePermissionsDetailsRequest.
+        r"""Gets the permission of this ListServicePermissionsDetailsRequest.
 
         权限账号ID，格式为“iam:domain::domain_id”。 其中“domain_id”为授权用户的账号ID， 例如“iam:domain::6e9dfd51d1124e8d8498dce894923a0d”，支持模糊搜索。
 
@@ -110,7 +110,7 @@ class ListServicePermissionsDetailsRequest:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this ListServicePermissionsDetailsRequest.
+        r"""Sets the permission of this ListServicePermissionsDetailsRequest.
 
         权限账号ID，格式为“iam:domain::domain_id”。 其中“domain_id”为授权用户的账号ID， 例如“iam:domain::6e9dfd51d1124e8d8498dce894923a0d”，支持模糊搜索。
 
@@ -121,7 +121,7 @@ class ListServicePermissionsDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServicePermissionsDetailsRequest.
+        r"""Gets the limit of this ListServicePermissionsDetailsRequest.
 
         查询返回终端节点服务的白名单数量限制，即每页返回的个数。 取值范围：0~500，取值一般为10，20或者50，默认为10。
 
@@ -132,7 +132,7 @@ class ListServicePermissionsDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServicePermissionsDetailsRequest.
+        r"""Sets the limit of this ListServicePermissionsDetailsRequest.
 
         查询返回终端节点服务的白名单数量限制，即每页返回的个数。 取值范围：0~500，取值一般为10，20或者50，默认为10。
 
@@ -143,7 +143,7 @@ class ListServicePermissionsDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListServicePermissionsDetailsRequest.
+        r"""Gets the offset of this ListServicePermissionsDetailsRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
@@ -154,7 +154,7 @@ class ListServicePermissionsDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListServicePermissionsDetailsRequest.
+        r"""Sets the offset of this ListServicePermissionsDetailsRequest.
 
         偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
@@ -165,7 +165,7 @@ class ListServicePermissionsDetailsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListServicePermissionsDetailsRequest.
+        r"""Gets the sort_key of this ListServicePermissionsDetailsRequest.
 
         查询结果中终端节点服务列表的排序字段，取值为：  - create_at：终端节点服务的创建时间  - update_at：终端节点服务的更新时间 默认值为create_at。
 
@@ -176,7 +176,7 @@ class ListServicePermissionsDetailsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListServicePermissionsDetailsRequest.
+        r"""Sets the sort_key of this ListServicePermissionsDetailsRequest.
 
         查询结果中终端节点服务列表的排序字段，取值为：  - create_at：终端节点服务的创建时间  - update_at：终端节点服务的更新时间 默认值为create_at。
 
@@ -187,7 +187,7 @@ class ListServicePermissionsDetailsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListServicePermissionsDetailsRequest.
+        r"""Gets the sort_dir of this ListServicePermissionsDetailsRequest.
 
         查询结果中白名单列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 
@@ -198,7 +198,7 @@ class ListServicePermissionsDetailsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListServicePermissionsDetailsRequest.
+        r"""Sets the sort_dir of this ListServicePermissionsDetailsRequest.
 
         查询结果中白名单列表的排序方式，取值为：  - desc：降序排序  - asc：升序排序 默认值为desc。
 

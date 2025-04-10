@@ -26,7 +26,7 @@ class DebugRuleResponse(SdkResponse):
     }
 
     def __init__(self, test_result=None):
-        """DebugRuleResponse
+        r"""DebugRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DebugRuleResponse(SdkResponse):
 
     @property
     def test_result(self):
-        """Gets the test_result of this DebugRuleResponse.
+        r"""Gets the test_result of this DebugRuleResponse.
 
         规则测试输出结果
 
@@ -55,7 +55,7 @@ class DebugRuleResponse(SdkResponse):
 
     @test_result.setter
     def test_result(self, test_result):
-        """Sets the test_result of this DebugRuleResponse.
+        r"""Sets the test_result of this DebugRuleResponse.
 
         规则测试输出结果
 

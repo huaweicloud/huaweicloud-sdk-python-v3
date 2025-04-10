@@ -26,7 +26,7 @@ class DeleteScriptResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """DeleteScriptResponse
+        r"""DeleteScriptResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteScriptResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteScriptResponse.
+        r"""Gets the data of this DeleteScriptResponse.
 
         被删除脚本的uuid
 
@@ -55,7 +55,7 @@ class DeleteScriptResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteScriptResponse.
+        r"""Sets the data of this DeleteScriptResponse.
 
         被删除脚本的uuid
 

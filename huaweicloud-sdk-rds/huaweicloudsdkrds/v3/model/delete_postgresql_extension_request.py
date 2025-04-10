@@ -29,7 +29,7 @@ class DeletePostgresqlExtensionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """DeletePostgresqlExtensionRequest
+        r"""DeletePostgresqlExtensionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeletePostgresqlExtensionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeletePostgresqlExtensionRequest.
+        r"""Gets the x_language of this DeletePostgresqlExtensionRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class DeletePostgresqlExtensionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeletePostgresqlExtensionRequest.
+        r"""Sets the x_language of this DeletePostgresqlExtensionRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class DeletePostgresqlExtensionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeletePostgresqlExtensionRequest.
+        r"""Gets the instance_id of this DeletePostgresqlExtensionRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class DeletePostgresqlExtensionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeletePostgresqlExtensionRequest.
+        r"""Sets the instance_id of this DeletePostgresqlExtensionRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class DeletePostgresqlExtensionRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeletePostgresqlExtensionRequest.
+        r"""Gets the body of this DeletePostgresqlExtensionRequest.
 
         :return: The body of this DeletePostgresqlExtensionRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ExtensionRequest`
@@ -109,7 +109,7 @@ class DeletePostgresqlExtensionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeletePostgresqlExtensionRequest.
+        r"""Sets the body of this DeletePostgresqlExtensionRequest.
 
         :param body: The body of this DeletePostgresqlExtensionRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ExtensionRequest`

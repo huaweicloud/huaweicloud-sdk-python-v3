@@ -49,7 +49,7 @@ class ListAlarmHistoriesRequest:
     }
 
     def __init__(self, alarm_id=None, record_id=None, name=None, alarm_type=None, status=None, level=None, namespace=None, resource_id=None, _from=None, to=None, offset=None, limit=None, order_by=None):
-        """ListAlarmHistoriesRequest
+        r"""ListAlarmHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this ListAlarmHistoriesRequest.
+        r"""Gets the alarm_id of this ListAlarmHistoriesRequest.
 
         告警ID,以al开头，后跟22位由字母或数字组成的字符串
 
@@ -138,7 +138,7 @@ class ListAlarmHistoriesRequest:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this ListAlarmHistoriesRequest.
+        r"""Sets the alarm_id of this ListAlarmHistoriesRequest.
 
         告警ID,以al开头，后跟22位由字母或数字组成的字符串
 
@@ -149,7 +149,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def record_id(self):
-        """Gets the record_id of this ListAlarmHistoriesRequest.
+        r"""Gets the record_id of this ListAlarmHistoriesRequest.
 
         告警记录ID,以ah开头，后跟22位由字母或数字组成的字符串
 
@@ -160,7 +160,7 @@ class ListAlarmHistoriesRequest:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this ListAlarmHistoriesRequest.
+        r"""Sets the record_id of this ListAlarmHistoriesRequest.
 
         告警记录ID,以ah开头，后跟22位由字母或数字组成的字符串
 
@@ -171,7 +171,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAlarmHistoriesRequest.
+        r"""Gets the name of this ListAlarmHistoriesRequest.
 
         告警规则名称
 
@@ -182,7 +182,7 @@ class ListAlarmHistoriesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAlarmHistoriesRequest.
+        r"""Sets the name of this ListAlarmHistoriesRequest.
 
         告警规则名称
 
@@ -193,7 +193,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def alarm_type(self):
-        """Gets the alarm_type of this ListAlarmHistoriesRequest.
+        r"""Gets the alarm_type of this ListAlarmHistoriesRequest.
 
         告警类型，event：查询事件类型告警，metric：查询指标类型告警
 
@@ -204,7 +204,7 @@ class ListAlarmHistoriesRequest:
 
     @alarm_type.setter
     def alarm_type(self, alarm_type):
-        """Sets the alarm_type of this ListAlarmHistoriesRequest.
+        r"""Sets the alarm_type of this ListAlarmHistoriesRequest.
 
         告警类型，event：查询事件类型告警，metric：查询指标类型告警
 
@@ -215,7 +215,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAlarmHistoriesRequest.
+        r"""Gets the status of this ListAlarmHistoriesRequest.
 
         告警规则状态, ok为正常，alarm为告警，invalid为已失效
 
@@ -226,7 +226,7 @@ class ListAlarmHistoriesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAlarmHistoriesRequest.
+        r"""Sets the status of this ListAlarmHistoriesRequest.
 
         告警规则状态, ok为正常，alarm为告警，invalid为已失效
 
@@ -237,7 +237,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def level(self):
-        """Gets the level of this ListAlarmHistoriesRequest.
+        r"""Gets the level of this ListAlarmHistoriesRequest.
 
         告警级别, 1为紧急，2为重要，3为次要，4为提示
 
@@ -248,7 +248,7 @@ class ListAlarmHistoriesRequest:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ListAlarmHistoriesRequest.
+        r"""Sets the level of this ListAlarmHistoriesRequest.
 
         告警级别, 1为紧急，2为重要，3为次要，4为提示
 
@@ -259,7 +259,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListAlarmHistoriesRequest.
+        r"""Gets the namespace of this ListAlarmHistoriesRequest.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -270,7 +270,7 @@ class ListAlarmHistoriesRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListAlarmHistoriesRequest.
+        r"""Sets the namespace of this ListAlarmHistoriesRequest.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -281,7 +281,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListAlarmHistoriesRequest.
+        r"""Gets the resource_id of this ListAlarmHistoriesRequest.
 
         告警资源ID，多维度情况按字母升序排列并使用逗号分隔
 
@@ -292,7 +292,7 @@ class ListAlarmHistoriesRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListAlarmHistoriesRequest.
+        r"""Sets the resource_id of this ListAlarmHistoriesRequest.
 
         告警资源ID，多维度情况按字母升序排列并使用逗号分隔
 
@@ -303,7 +303,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ListAlarmHistoriesRequest.
+        r"""Gets the _from of this ListAlarmHistoriesRequest.
 
         查询告警记录的起始时间，例如：2022-02-10T10:05:46+08:00
 
@@ -314,7 +314,7 @@ class ListAlarmHistoriesRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ListAlarmHistoriesRequest.
+        r"""Sets the _from of this ListAlarmHistoriesRequest.
 
         查询告警记录的起始时间，例如：2022-02-10T10:05:46+08:00
 
@@ -325,7 +325,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def to(self):
-        """Gets the to of this ListAlarmHistoriesRequest.
+        r"""Gets the to of this ListAlarmHistoriesRequest.
 
         查询告警记录的截止时间，例如：2022-02-10T10:05:47+08:00
 
@@ -336,7 +336,7 @@ class ListAlarmHistoriesRequest:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ListAlarmHistoriesRequest.
+        r"""Sets the to of this ListAlarmHistoriesRequest.
 
         查询告警记录的截止时间，例如：2022-02-10T10:05:47+08:00
 
@@ -347,7 +347,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAlarmHistoriesRequest.
+        r"""Gets the offset of this ListAlarmHistoriesRequest.
 
         分页偏移量
 
@@ -358,7 +358,7 @@ class ListAlarmHistoriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAlarmHistoriesRequest.
+        r"""Sets the offset of this ListAlarmHistoriesRequest.
 
         分页偏移量
 
@@ -369,7 +369,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlarmHistoriesRequest.
+        r"""Gets the limit of this ListAlarmHistoriesRequest.
 
         分页大小
 
@@ -380,7 +380,7 @@ class ListAlarmHistoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlarmHistoriesRequest.
+        r"""Sets the limit of this ListAlarmHistoriesRequest.
 
         分页大小
 
@@ -391,7 +391,7 @@ class ListAlarmHistoriesRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListAlarmHistoriesRequest.
+        r"""Gets the order_by of this ListAlarmHistoriesRequest.
 
         按关键字排序, 默认为update_time, {first_alarm_time: 告警产生时间, update_time: 更新时间, alarm_level: 告警级别, record_id：表记录主键} 
 
@@ -402,7 +402,7 @@ class ListAlarmHistoriesRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListAlarmHistoriesRequest.
+        r"""Sets the order_by of this ListAlarmHistoriesRequest.
 
         按关键字排序, 默认为update_time, {first_alarm_time: 告警产生时间, update_time: 更新时间, alarm_level: 告警级别, record_id：表记录主键} 
 

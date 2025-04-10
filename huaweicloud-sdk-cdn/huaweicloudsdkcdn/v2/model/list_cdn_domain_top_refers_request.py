@@ -37,7 +37,7 @@ class ListCdnDomainTopRefersRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, domain_name=None, stat_type=None, service_area=None, enterprise_project_id=None, include_ratio=None):
-        """ListCdnDomainTopRefersRequest
+        r"""ListCdnDomainTopRefersRequest
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class ListCdnDomainTopRefersRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListCdnDomainTopRefersRequest.
+        r"""Gets the start_time of this ListCdnDomainTopRefersRequest.
 
         查询起始时间戳，需与结束时间戳同时指定，左闭右开，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
 
@@ -92,7 +92,7 @@ class ListCdnDomainTopRefersRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListCdnDomainTopRefersRequest.
+        r"""Sets the start_time of this ListCdnDomainTopRefersRequest.
 
         查询起始时间戳，需与结束时间戳同时指定，左闭右开，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
 
@@ -103,7 +103,7 @@ class ListCdnDomainTopRefersRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListCdnDomainTopRefersRequest.
+        r"""Gets the end_time of this ListCdnDomainTopRefersRequest.
 
         查询结束时间戳，需与开始时间戳同时指定，左闭右开，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
 
@@ -114,7 +114,7 @@ class ListCdnDomainTopRefersRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListCdnDomainTopRefersRequest.
+        r"""Sets the end_time of this ListCdnDomainTopRefersRequest.
 
         查询结束时间戳，需与开始时间戳同时指定，左闭右开，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
 
@@ -125,7 +125,7 @@ class ListCdnDomainTopRefersRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ListCdnDomainTopRefersRequest.
+        r"""Gets the domain_name of this ListCdnDomainTopRefersRequest.
 
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
@@ -136,7 +136,7 @@ class ListCdnDomainTopRefersRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ListCdnDomainTopRefersRequest.
+        r"""Sets the domain_name of this ListCdnDomainTopRefersRequest.
 
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
@@ -147,7 +147,7 @@ class ListCdnDomainTopRefersRequest:
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this ListCdnDomainTopRefersRequest.
+        r"""Gets the stat_type of this ListCdnDomainTopRefersRequest.
 
         - 统计指标类型 - 目前只支持flux（流量），req_num（请求数）
 
@@ -158,7 +158,7 @@ class ListCdnDomainTopRefersRequest:
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this ListCdnDomainTopRefersRequest.
+        r"""Sets the stat_type of this ListCdnDomainTopRefersRequest.
 
         - 统计指标类型 - 目前只支持flux（流量），req_num（请求数）
 
@@ -169,7 +169,7 @@ class ListCdnDomainTopRefersRequest:
 
     @property
     def service_area(self):
-        """Gets the service_area of this ListCdnDomainTopRefersRequest.
+        r"""Gets the service_area of this ListCdnDomainTopRefersRequest.
 
         服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为global(全球)
 
@@ -180,7 +180,7 @@ class ListCdnDomainTopRefersRequest:
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this ListCdnDomainTopRefersRequest.
+        r"""Sets the service_area of this ListCdnDomainTopRefersRequest.
 
         服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为global(全球)
 
@@ -191,7 +191,7 @@ class ListCdnDomainTopRefersRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListCdnDomainTopRefersRequest.
+        r"""Gets the enterprise_project_id of this ListCdnDomainTopRefersRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
@@ -202,7 +202,7 @@ class ListCdnDomainTopRefersRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListCdnDomainTopRefersRequest.
+        r"""Sets the enterprise_project_id of this ListCdnDomainTopRefersRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
@@ -213,7 +213,7 @@ class ListCdnDomainTopRefersRequest:
 
     @property
     def include_ratio(self):
-        """Gets the include_ratio of this ListCdnDomainTopRefersRequest.
+        r"""Gets the include_ratio of this ListCdnDomainTopRefersRequest.
 
         是否包含百分比数据，默认false
 
@@ -224,7 +224,7 @@ class ListCdnDomainTopRefersRequest:
 
     @include_ratio.setter
     def include_ratio(self, include_ratio):
-        """Sets the include_ratio of this ListCdnDomainTopRefersRequest.
+        r"""Sets the include_ratio of this ListCdnDomainTopRefersRequest.
 
         是否包含百分比数据，默认false
 

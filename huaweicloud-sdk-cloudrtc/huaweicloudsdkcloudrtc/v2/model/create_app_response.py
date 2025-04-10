@@ -28,7 +28,7 @@ class CreateAppResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, x_request_id=None):
-        """CreateAppResponse
+        r"""CreateAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateAppResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateAppResponse.
+        r"""Gets the app_id of this CreateAppResponse.
 
         应用id
 
@@ -62,7 +62,7 @@ class CreateAppResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateAppResponse.
+        r"""Sets the app_id of this CreateAppResponse.
 
         应用id
 
@@ -73,7 +73,7 @@ class CreateAppResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateAppResponse.
+        r"""Gets the x_request_id of this CreateAppResponse.
 
         :return: The x_request_id of this CreateAppResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateAppResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateAppResponse.
+        r"""Sets the x_request_id of this CreateAppResponse.
 
         :param x_request_id: The x_request_id of this CreateAppResponse.
         :type x_request_id: str

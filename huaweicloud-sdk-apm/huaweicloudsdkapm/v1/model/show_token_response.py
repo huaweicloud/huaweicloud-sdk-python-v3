@@ -26,7 +26,7 @@ class ShowTokenResponse(SdkResponse):
     }
 
     def __init__(self, token=None):
-        """ShowTokenResponse
+        r"""ShowTokenResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowTokenResponse(SdkResponse):
 
     @property
     def token(self):
-        """Gets the token of this ShowTokenResponse.
+        r"""Gets the token of this ShowTokenResponse.
 
         应用token
 
@@ -55,7 +55,7 @@ class ShowTokenResponse(SdkResponse):
 
     @token.setter
     def token(self, token):
-        """Sets the token of this ShowTokenResponse.
+        r"""Sets the token of this ShowTokenResponse.
 
         应用token
 

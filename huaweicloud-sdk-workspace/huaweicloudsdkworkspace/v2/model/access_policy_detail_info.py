@@ -37,7 +37,7 @@ class AccessPolicyDetailInfo:
     }
 
     def __init__(self, policy_name=None, blacklist_type=None, access_control_type=None, ip_list=None, ip_total_count=None, policy_id=None, create_time=None):
-        """AccessPolicyDetailInfo
+        r"""AccessPolicyDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AccessPolicyDetailInfo:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this AccessPolicyDetailInfo.
+        r"""Gets the policy_name of this AccessPolicyDetailInfo.
 
         策略名
 
@@ -96,7 +96,7 @@ class AccessPolicyDetailInfo:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this AccessPolicyDetailInfo.
+        r"""Sets the policy_name of this AccessPolicyDetailInfo.
 
         策略名
 
@@ -107,7 +107,7 @@ class AccessPolicyDetailInfo:
 
     @property
     def blacklist_type(self):
-        """Gets the blacklist_type of this AccessPolicyDetailInfo.
+        r"""Gets the blacklist_type of this AccessPolicyDetailInfo.
 
         黑名单类型，当前黑名单只支持互联网。 * INTERNET： 互联网
 
@@ -118,7 +118,7 @@ class AccessPolicyDetailInfo:
 
     @blacklist_type.setter
     def blacklist_type(self, blacklist_type):
-        """Sets the blacklist_type of this AccessPolicyDetailInfo.
+        r"""Sets the blacklist_type of this AccessPolicyDetailInfo.
 
         黑名单类型，当前黑名单只支持互联网。 * INTERNET： 互联网
 
@@ -129,7 +129,7 @@ class AccessPolicyDetailInfo:
 
     @property
     def access_control_type(self):
-        """Gets the access_control_type of this AccessPolicyDetailInfo.
+        r"""Gets the access_control_type of this AccessPolicyDetailInfo.
 
         访问控制类型。默认为接入类型 * ACCESS_TYPE： 接入类型 * IP_WHITE_LIST： IP白名单
 
@@ -140,7 +140,7 @@ class AccessPolicyDetailInfo:
 
     @access_control_type.setter
     def access_control_type(self, access_control_type):
-        """Sets the access_control_type of this AccessPolicyDetailInfo.
+        r"""Sets the access_control_type of this AccessPolicyDetailInfo.
 
         访问控制类型。默认为接入类型 * ACCESS_TYPE： 接入类型 * IP_WHITE_LIST： IP白名单
 
@@ -151,7 +151,7 @@ class AccessPolicyDetailInfo:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this AccessPolicyDetailInfo.
+        r"""Gets the ip_list of this AccessPolicyDetailInfo.
 
         策略的ip列表。
 
@@ -162,7 +162,7 @@ class AccessPolicyDetailInfo:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this AccessPolicyDetailInfo.
+        r"""Sets the ip_list of this AccessPolicyDetailInfo.
 
         策略的ip列表。
 
@@ -173,7 +173,7 @@ class AccessPolicyDetailInfo:
 
     @property
     def ip_total_count(self):
-        """Gets the ip_total_count of this AccessPolicyDetailInfo.
+        r"""Gets the ip_total_count of this AccessPolicyDetailInfo.
 
         策略总数。
 
@@ -184,7 +184,7 @@ class AccessPolicyDetailInfo:
 
     @ip_total_count.setter
     def ip_total_count(self, ip_total_count):
-        """Sets the ip_total_count of this AccessPolicyDetailInfo.
+        r"""Sets the ip_total_count of this AccessPolicyDetailInfo.
 
         策略总数。
 
@@ -195,7 +195,7 @@ class AccessPolicyDetailInfo:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this AccessPolicyDetailInfo.
+        r"""Gets the policy_id of this AccessPolicyDetailInfo.
 
         策略id。
 
@@ -206,7 +206,7 @@ class AccessPolicyDetailInfo:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this AccessPolicyDetailInfo.
+        r"""Sets the policy_id of this AccessPolicyDetailInfo.
 
         策略id。
 
@@ -217,7 +217,7 @@ class AccessPolicyDetailInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AccessPolicyDetailInfo.
+        r"""Gets the create_time of this AccessPolicyDetailInfo.
 
         接入策略创建的时间。
 
@@ -228,7 +228,7 @@ class AccessPolicyDetailInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AccessPolicyDetailInfo.
+        r"""Sets the create_time of this AccessPolicyDetailInfo.
 
         接入策略创建的时间。
 

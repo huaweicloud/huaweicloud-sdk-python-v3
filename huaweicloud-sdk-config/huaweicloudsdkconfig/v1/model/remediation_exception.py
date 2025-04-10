@@ -31,7 +31,7 @@ class RemediationException:
     }
 
     def __init__(self, resource_id=None, message=None, joined_at=None, created_by=None):
-        """RemediationException
+        r"""RemediationException
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class RemediationException:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this RemediationException.
+        r"""Gets the resource_id of this RemediationException.
 
         资源ID。
 
@@ -75,7 +75,7 @@ class RemediationException:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this RemediationException.
+        r"""Sets the resource_id of this RemediationException.
 
         资源ID。
 
@@ -86,7 +86,7 @@ class RemediationException:
 
     @property
     def message(self):
-        """Gets the message of this RemediationException.
+        r"""Gets the message of this RemediationException.
 
         加入合规规则修正例外的原因。
 
@@ -97,7 +97,7 @@ class RemediationException:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this RemediationException.
+        r"""Sets the message of this RemediationException.
 
         加入合规规则修正例外的原因。
 
@@ -108,7 +108,7 @@ class RemediationException:
 
     @property
     def joined_at(self):
-        """Gets the joined_at of this RemediationException.
+        r"""Gets the joined_at of this RemediationException.
 
         加入合规规则修正例外的时间。
 
@@ -119,7 +119,7 @@ class RemediationException:
 
     @joined_at.setter
     def joined_at(self, joined_at):
-        """Sets the joined_at of this RemediationException.
+        r"""Sets the joined_at of this RemediationException.
 
         加入合规规则修正例外的时间。
 
@@ -130,7 +130,7 @@ class RemediationException:
 
     @property
     def created_by(self):
-        """Gets the created_by of this RemediationException.
+        r"""Gets the created_by of this RemediationException.
 
         合规规则修正例外的创建者。
 
@@ -141,7 +141,7 @@ class RemediationException:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this RemediationException.
+        r"""Sets the created_by of this RemediationException.
 
         合规规则修正例外的创建者。
 

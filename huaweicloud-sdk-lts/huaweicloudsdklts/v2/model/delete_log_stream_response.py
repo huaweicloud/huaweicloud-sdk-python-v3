@@ -26,7 +26,7 @@ class DeleteLogStreamResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteLogStreamResponse
+        r"""DeleteLogStreamResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteLogStreamResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteLogStreamResponse.
+        r"""Gets the body of this DeleteLogStreamResponse.
 
         :return: The body of this DeleteLogStreamResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteLogStreamResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteLogStreamResponse.
+        r"""Sets the body of this DeleteLogStreamResponse.
 
         :param body: The body of this DeleteLogStreamResponse.
         :type body: str

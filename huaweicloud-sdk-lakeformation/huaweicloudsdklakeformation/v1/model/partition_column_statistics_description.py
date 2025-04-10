@@ -27,7 +27,7 @@ class PartitionColumnStatisticsDescription:
     }
 
     def __init__(self, partition_values=None, last_analyzed_time=None):
-        """PartitionColumnStatisticsDescription
+        r"""PartitionColumnStatisticsDescription
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PartitionColumnStatisticsDescription:
 
     @property
     def partition_values(self):
-        """Gets the partition_values of this PartitionColumnStatisticsDescription.
+        r"""Gets the partition_values of this PartitionColumnStatisticsDescription.
 
         分区值的列表
 
@@ -60,7 +60,7 @@ class PartitionColumnStatisticsDescription:
 
     @partition_values.setter
     def partition_values(self, partition_values):
-        """Sets the partition_values of this PartitionColumnStatisticsDescription.
+        r"""Sets the partition_values of this PartitionColumnStatisticsDescription.
 
         分区值的列表
 
@@ -71,7 +71,7 @@ class PartitionColumnStatisticsDescription:
 
     @property
     def last_analyzed_time(self):
-        """Gets the last_analyzed_time of this PartitionColumnStatisticsDescription.
+        r"""Gets the last_analyzed_time of this PartitionColumnStatisticsDescription.
 
         最后统计时间
 
@@ -82,7 +82,7 @@ class PartitionColumnStatisticsDescription:
 
     @last_analyzed_time.setter
     def last_analyzed_time(self, last_analyzed_time):
-        """Sets the last_analyzed_time of this PartitionColumnStatisticsDescription.
+        r"""Sets the last_analyzed_time of this PartitionColumnStatisticsDescription.
 
         最后统计时间
 

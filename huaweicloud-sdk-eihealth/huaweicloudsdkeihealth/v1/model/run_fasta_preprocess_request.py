@@ -27,7 +27,7 @@ class RunFastaPreprocessRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """RunFastaPreprocessRequest
+        r"""RunFastaPreprocessRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunFastaPreprocessRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this RunFastaPreprocessRequest.
+        r"""Gets the eihealth_project_id of this RunFastaPreprocessRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class RunFastaPreprocessRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this RunFastaPreprocessRequest.
+        r"""Sets the eihealth_project_id of this RunFastaPreprocessRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class RunFastaPreprocessRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunFastaPreprocessRequest.
+        r"""Gets the body of this RunFastaPreprocessRequest.
 
         :return: The body of this RunFastaPreprocessRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.RunFastaPreprocessReq`
@@ -80,7 +80,7 @@ class RunFastaPreprocessRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunFastaPreprocessRequest.
+        r"""Sets the body of this RunFastaPreprocessRequest.
 
         :param body: The body of this RunFastaPreprocessRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.RunFastaPreprocessReq`

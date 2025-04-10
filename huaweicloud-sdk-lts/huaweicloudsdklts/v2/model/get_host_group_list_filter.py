@@ -31,7 +31,7 @@ class GetHostGroupListFilter:
     }
 
     def __init__(self, host_group_type=None, host_group_name_list=None, host_name_list=None, host_group_tag=None):
-        """GetHostGroupListFilter
+        r"""GetHostGroupListFilter
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class GetHostGroupListFilter:
 
     @property
     def host_group_type(self):
-        """Gets the host_group_type of this GetHostGroupListFilter.
+        r"""Gets the host_group_type of this GetHostGroupListFilter.
 
         主机组类型。windows：windows类型，linux：linux类型
 
@@ -75,7 +75,7 @@ class GetHostGroupListFilter:
 
     @host_group_type.setter
     def host_group_type(self, host_group_type):
-        """Sets the host_group_type of this GetHostGroupListFilter.
+        r"""Sets the host_group_type of this GetHostGroupListFilter.
 
         主机组类型。windows：windows类型，linux：linux类型
 
@@ -86,7 +86,7 @@ class GetHostGroupListFilter:
 
     @property
     def host_group_name_list(self):
-        """Gets the host_group_name_list of this GetHostGroupListFilter.
+        r"""Gets the host_group_name_list of this GetHostGroupListFilter.
 
         主机组名称列表。
 
@@ -97,7 +97,7 @@ class GetHostGroupListFilter:
 
     @host_group_name_list.setter
     def host_group_name_list(self, host_group_name_list):
-        """Sets the host_group_name_list of this GetHostGroupListFilter.
+        r"""Sets the host_group_name_list of this GetHostGroupListFilter.
 
         主机组名称列表。
 
@@ -108,7 +108,7 @@ class GetHostGroupListFilter:
 
     @property
     def host_name_list(self):
-        """Gets the host_name_list of this GetHostGroupListFilter.
+        r"""Gets the host_name_list of this GetHostGroupListFilter.
 
         主机名称列表。
 
@@ -119,7 +119,7 @@ class GetHostGroupListFilter:
 
     @host_name_list.setter
     def host_name_list(self, host_name_list):
-        """Sets the host_name_list of this GetHostGroupListFilter.
+        r"""Sets the host_name_list of this GetHostGroupListFilter.
 
         主机名称列表。
 
@@ -130,7 +130,7 @@ class GetHostGroupListFilter:
 
     @property
     def host_group_tag(self):
-        """Gets the host_group_tag of this GetHostGroupListFilter.
+        r"""Gets the host_group_tag of this GetHostGroupListFilter.
 
         :return: The host_group_tag of this GetHostGroupListFilter.
         :rtype: :class:`huaweicloudsdklts.v2.GetHostGroupListTag`
@@ -139,7 +139,7 @@ class GetHostGroupListFilter:
 
     @host_group_tag.setter
     def host_group_tag(self, host_group_tag):
-        """Sets the host_group_tag of this GetHostGroupListFilter.
+        r"""Sets the host_group_tag of this GetHostGroupListFilter.
 
         :param host_group_tag: The host_group_tag of this GetHostGroupListFilter.
         :type host_group_tag: :class:`huaweicloudsdklts.v2.GetHostGroupListTag`

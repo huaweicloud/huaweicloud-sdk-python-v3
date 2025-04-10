@@ -43,7 +43,7 @@ class AccessConfigurationPort:
     }
 
     def __init__(self, operator=None, uid=None, target_port=None, port=None, protocol=None, default_certificate=None, certificate=None, policy=None, paths=None, elb_id=None):
-        """AccessConfigurationPort
+        r"""AccessConfigurationPort
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AccessConfigurationPort:
 
     @property
     def operator(self):
-        """Gets the operator of this AccessConfigurationPort.
+        r"""Gets the operator of this AccessConfigurationPort.
 
         配置模式。 - 如果operator值为空，则表示使用全量覆盖模式进行配置，否则表示使用增删改模式进行配置。且此级列表的所有元素的operator值必须同时全为空或者非空。 - 当使用增删改模式时，operator取值支持\"add\",\"copy\",\"modify\",\"delete\"，分别表示新增，复制指定uid的元素修改后新增，修改指定uid的元素，删除指定uid的元素。 - 当operator取值为\"copy\",\"modify\",\"delete\"时，uid的值必须为非空，且存在于最后一次生效的配置中。 - 当operator取值为\"copy\",\"modify\"时，与operator同级别的字段中除uid外的所有字段如不写，置空或者为空列表，则表示保留在最后一次生效配置中指定uid的元素的同一字段的值。 
 
@@ -117,7 +117,7 @@ class AccessConfigurationPort:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this AccessConfigurationPort.
+        r"""Sets the operator of this AccessConfigurationPort.
 
         配置模式。 - 如果operator值为空，则表示使用全量覆盖模式进行配置，否则表示使用增删改模式进行配置。且此级列表的所有元素的operator值必须同时全为空或者非空。 - 当使用增删改模式时，operator取值支持\"add\",\"copy\",\"modify\",\"delete\"，分别表示新增，复制指定uid的元素修改后新增，修改指定uid的元素，删除指定uid的元素。 - 当operator取值为\"copy\",\"modify\",\"delete\"时，uid的值必须为非空，且存在于最后一次生效的配置中。 - 当operator取值为\"copy\",\"modify\"时，与operator同级别的字段中除uid外的所有字段如不写，置空或者为空列表，则表示保留在最后一次生效配置中指定uid的元素的同一字段的值。 
 
@@ -128,7 +128,7 @@ class AccessConfigurationPort:
 
     @property
     def uid(self):
-        """Gets the uid of this AccessConfigurationPort.
+        r"""Gets the uid of this AccessConfigurationPort.
 
         端口配置的uid。
 
@@ -139,7 +139,7 @@ class AccessConfigurationPort:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this AccessConfigurationPort.
+        r"""Sets the uid of this AccessConfigurationPort.
 
         端口配置的uid。
 
@@ -150,7 +150,7 @@ class AccessConfigurationPort:
 
     @property
     def target_port(self):
-        """Gets the target_port of this AccessConfigurationPort.
+        r"""Gets the target_port of this AccessConfigurationPort.
 
         监听端口。
 
@@ -161,7 +161,7 @@ class AccessConfigurationPort:
 
     @target_port.setter
     def target_port(self, target_port):
-        """Sets the target_port of this AccessConfigurationPort.
+        r"""Sets the target_port of this AccessConfigurationPort.
 
         监听端口。
 
@@ -172,7 +172,7 @@ class AccessConfigurationPort:
 
     @property
     def port(self):
-        """Gets the port of this AccessConfigurationPort.
+        r"""Gets the port of this AccessConfigurationPort.
 
         访问端口。
 
@@ -183,7 +183,7 @@ class AccessConfigurationPort:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this AccessConfigurationPort.
+        r"""Sets the port of this AccessConfigurationPort.
 
         访问端口。
 
@@ -194,7 +194,7 @@ class AccessConfigurationPort:
 
     @property
     def protocol(self):
-        """Gets the protocol of this AccessConfigurationPort.
+        r"""Gets the protocol of this AccessConfigurationPort.
 
         协议，负载均衡支持TCP，负载均衡与路由配置支持HTTP、HTTPS。
 
@@ -205,7 +205,7 @@ class AccessConfigurationPort:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this AccessConfigurationPort.
+        r"""Sets the protocol of this AccessConfigurationPort.
 
         协议，负载均衡支持TCP，负载均衡与路由配置支持HTTP、HTTPS。
 
@@ -216,7 +216,7 @@ class AccessConfigurationPort:
 
     @property
     def default_certificate(self):
-        """Gets the default_certificate of this AccessConfigurationPort.
+        r"""Gets the default_certificate of this AccessConfigurationPort.
 
         默认证书，访问方式配置为转发策略且协议为HTTPS时配置，未配置域名证书对时使用默认证书。
 
@@ -227,7 +227,7 @@ class AccessConfigurationPort:
 
     @default_certificate.setter
     def default_certificate(self, default_certificate):
-        """Sets the default_certificate of this AccessConfigurationPort.
+        r"""Sets the default_certificate of this AccessConfigurationPort.
 
         默认证书，访问方式配置为转发策略且协议为HTTPS时配置，未配置域名证书对时使用默认证书。
 
@@ -238,7 +238,7 @@ class AccessConfigurationPort:
 
     @property
     def certificate(self):
-        """Gets the certificate of this AccessConfigurationPort.
+        r"""Gets the certificate of this AccessConfigurationPort.
 
         证书。
 
@@ -249,7 +249,7 @@ class AccessConfigurationPort:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this AccessConfigurationPort.
+        r"""Sets the certificate of this AccessConfigurationPort.
 
         证书。
 
@@ -260,7 +260,7 @@ class AccessConfigurationPort:
 
     @property
     def policy(self):
-        """Gets the policy of this AccessConfigurationPort.
+        r"""Gets the policy of this AccessConfigurationPort.
 
         安全策略。
 
@@ -271,7 +271,7 @@ class AccessConfigurationPort:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this AccessConfigurationPort.
+        r"""Sets the policy of this AccessConfigurationPort.
 
         安全策略。
 
@@ -282,7 +282,7 @@ class AccessConfigurationPort:
 
     @property
     def paths(self):
-        """Gets the paths of this AccessConfigurationPort.
+        r"""Gets the paths of this AccessConfigurationPort.
 
         :return: The paths of this AccessConfigurationPort.
         :rtype: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
@@ -291,7 +291,7 @@ class AccessConfigurationPort:
 
     @paths.setter
     def paths(self, paths):
-        """Sets the paths of this AccessConfigurationPort.
+        r"""Sets the paths of this AccessConfigurationPort.
 
         :param paths: The paths of this AccessConfigurationPort.
         :type paths: list[:class:`huaweicloudsdkcae.v1.AccessConfigurationHttpPath`]
@@ -300,7 +300,7 @@ class AccessConfigurationPort:
 
     @property
     def elb_id(self):
-        """Gets the elb_id of this AccessConfigurationPort.
+        r"""Gets the elb_id of this AccessConfigurationPort.
 
         用户选择的elb的ID。
 
@@ -311,7 +311,7 @@ class AccessConfigurationPort:
 
     @elb_id.setter
     def elb_id(self, elb_id):
-        """Sets the elb_id of this AccessConfigurationPort.
+        r"""Sets the elb_id of this AccessConfigurationPort.
 
         用户选择的elb的ID。
 

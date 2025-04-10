@@ -25,7 +25,7 @@ class SimilarityDto:
     }
 
     def __init__(self, ligand_ids=None):
-        """SimilarityDto
+        r"""SimilarityDto
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SimilarityDto:
 
     @property
     def ligand_ids(self):
-        """Gets the ligand_ids of this SimilarityDto.
+        r"""Gets the ligand_ids of this SimilarityDto.
 
         配体对
 
@@ -53,7 +53,7 @@ class SimilarityDto:
 
     @ligand_ids.setter
     def ligand_ids(self, ligand_ids):
-        """Sets the ligand_ids of this SimilarityDto.
+        r"""Sets the ligand_ids of this SimilarityDto.
 
         配体对
 

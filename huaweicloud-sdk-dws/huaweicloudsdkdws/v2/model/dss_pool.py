@@ -39,7 +39,7 @@ class DssPool:
     }
 
     def __init__(self, id=None, name=None, type=None, project_id=None, availability_zone=None, capacity=None, status=None, created_at=None):
-        """DssPool
+        r"""DssPool
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class DssPool:
 
     @property
     def id(self):
-        """Gets the id of this DssPool.
+        r"""Gets the id of this DssPool.
 
         专属分布式存储池名称。
 
@@ -95,7 +95,7 @@ class DssPool:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DssPool.
+        r"""Sets the id of this DssPool.
 
         专属分布式存储池名称。
 
@@ -106,7 +106,7 @@ class DssPool:
 
     @property
     def name(self):
-        """Gets the name of this DssPool.
+        r"""Gets the name of this DssPool.
 
         专属分布式存储池ID。
 
@@ -117,7 +117,7 @@ class DssPool:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DssPool.
+        r"""Sets the name of this DssPool.
 
         专属分布式存储池ID。
 
@@ -128,7 +128,7 @@ class DssPool:
 
     @property
     def type(self):
-        """Gets the type of this DssPool.
+        r"""Gets the type of this DssPool.
 
         专属分布式存储池的存储类型。 - SSD：超高IO专属分布式存储池。
 
@@ -139,7 +139,7 @@ class DssPool:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DssPool.
+        r"""Sets the type of this DssPool.
 
         专属分布式存储池的存储类型。 - SSD：超高IO专属分布式存储池。
 
@@ -150,7 +150,7 @@ class DssPool:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DssPool.
+        r"""Gets the project_id of this DssPool.
 
         专属分布式存储池归属的project_id。
 
@@ -161,7 +161,7 @@ class DssPool:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DssPool.
+        r"""Sets the project_id of this DssPool.
 
         专属分布式存储池归属的project_id。
 
@@ -172,7 +172,7 @@ class DssPool:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this DssPool.
+        r"""Gets the availability_zone of this DssPool.
 
         专属分布式存储池所属可用区。
 
@@ -183,7 +183,7 @@ class DssPool:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this DssPool.
+        r"""Sets the availability_zone of this DssPool.
 
         专属分布式存储池所属可用区。
 
@@ -194,7 +194,7 @@ class DssPool:
 
     @property
     def capacity(self):
-        """Gets the capacity of this DssPool.
+        r"""Gets the capacity of this DssPool.
 
         申请的专属分布式存储容量，单位TB。
 
@@ -205,7 +205,7 @@ class DssPool:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this DssPool.
+        r"""Sets the capacity of this DssPool.
 
         申请的专属分布式存储容量，单位TB。
 
@@ -216,7 +216,7 @@ class DssPool:
 
     @property
     def status(self):
-        """Gets the status of this DssPool.
+        r"""Gets the status of this DssPool.
 
         专属分布式存储池的状态。 - available：专属分布式存储池处于可用状态。 - deploying：专属分布式存储池处于正在部署的过程中，不可使用。 - extending：专属分布式存储池处于正在扩容的过程中，可使用。
 
@@ -227,7 +227,7 @@ class DssPool:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DssPool.
+        r"""Sets the status of this DssPool.
 
         专属分布式存储池的状态。 - available：专属分布式存储池处于可用状态。 - deploying：专属分布式存储池处于正在部署的过程中，不可使用。 - extending：专属分布式存储池处于正在扩容的过程中，可使用。
 
@@ -238,7 +238,7 @@ class DssPool:
 
     @property
     def created_at(self):
-        """Gets the created_at of this DssPool.
+        r"""Gets the created_at of this DssPool.
 
         专属分布式存储池的创建时间。 - 时间格式：UTC YYYY-MM-DDTHH:MM:SS
 
@@ -249,7 +249,7 @@ class DssPool:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this DssPool.
+        r"""Sets the created_at of this DssPool.
 
         专属分布式存储池的创建时间。 - 时间格式：UTC YYYY-MM-DDTHH:MM:SS
 

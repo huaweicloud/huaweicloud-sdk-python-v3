@@ -29,7 +29,7 @@ class UpdateSubscriptionRequest:
     }
 
     def __init__(self, topic_urn=None, subscription_urn=None, body=None):
-        """UpdateSubscriptionRequest
+        r"""UpdateSubscriptionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateSubscriptionRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this UpdateSubscriptionRequest.
+        r"""Gets the topic_urn of this UpdateSubscriptionRequest.
 
         Topic的唯一的资源标识。可以通过[查看主题列表](smn_api_51004.xml)获取该标识。
 
@@ -66,7 +66,7 @@ class UpdateSubscriptionRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this UpdateSubscriptionRequest.
+        r"""Sets the topic_urn of this UpdateSubscriptionRequest.
 
         Topic的唯一的资源标识。可以通过[查看主题列表](smn_api_51004.xml)获取该标识。
 
@@ -77,7 +77,7 @@ class UpdateSubscriptionRequest:
 
     @property
     def subscription_urn(self):
-        """Gets the subscription_urn of this UpdateSubscriptionRequest.
+        r"""Gets the subscription_urn of this UpdateSubscriptionRequest.
 
         订阅者的唯一的资源标识，可通过[查询订阅者列表](ListSubscriptions.xml)获取该标识。
 
@@ -88,7 +88,7 @@ class UpdateSubscriptionRequest:
 
     @subscription_urn.setter
     def subscription_urn(self, subscription_urn):
-        """Sets the subscription_urn of this UpdateSubscriptionRequest.
+        r"""Sets the subscription_urn of this UpdateSubscriptionRequest.
 
         订阅者的唯一的资源标识，可通过[查询订阅者列表](ListSubscriptions.xml)获取该标识。
 
@@ -99,7 +99,7 @@ class UpdateSubscriptionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSubscriptionRequest.
+        r"""Gets the body of this UpdateSubscriptionRequest.
 
         :return: The body of this UpdateSubscriptionRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateSubscriptionRequestBody`
@@ -108,7 +108,7 @@ class UpdateSubscriptionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSubscriptionRequest.
+        r"""Sets the body of this UpdateSubscriptionRequest.
 
         :param body: The body of this UpdateSubscriptionRequest.
         :type body: :class:`huaweicloudsdksmn.v2.UpdateSubscriptionRequestBody`

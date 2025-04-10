@@ -35,7 +35,7 @@ class ShowDatabaseAuthorityRequest:
     }
 
     def __init__(self, cluster_id=None, type=None, name=None, database=None, schema=None, table=None):
-        """ShowDatabaseAuthorityRequest
+        r"""ShowDatabaseAuthorityRequest
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class ShowDatabaseAuthorityRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowDatabaseAuthorityRequest.
+        r"""Gets the cluster_id of this ShowDatabaseAuthorityRequest.
 
         cluster_id
 
@@ -85,7 +85,7 @@ class ShowDatabaseAuthorityRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowDatabaseAuthorityRequest.
+        r"""Sets the cluster_id of this ShowDatabaseAuthorityRequest.
 
         cluster_id
 
@@ -96,7 +96,7 @@ class ShowDatabaseAuthorityRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowDatabaseAuthorityRequest.
+        r"""Gets the type of this ShowDatabaseAuthorityRequest.
 
         对象类型 [DATABASE | SCHEMA | TABLE | VIEW | COLUMN| FUNCTION|| SEQUENCE| NODEGROUP]
 
@@ -107,7 +107,7 @@ class ShowDatabaseAuthorityRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDatabaseAuthorityRequest.
+        r"""Sets the type of this ShowDatabaseAuthorityRequest.
 
         对象类型 [DATABASE | SCHEMA | TABLE | VIEW | COLUMN| FUNCTION|| SEQUENCE| NODEGROUP]
 
@@ -118,7 +118,7 @@ class ShowDatabaseAuthorityRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowDatabaseAuthorityRequest.
+        r"""Gets the name of this ShowDatabaseAuthorityRequest.
 
         对象名称
 
@@ -129,7 +129,7 @@ class ShowDatabaseAuthorityRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDatabaseAuthorityRequest.
+        r"""Sets the name of this ShowDatabaseAuthorityRequest.
 
         对象名称
 
@@ -140,7 +140,7 @@ class ShowDatabaseAuthorityRequest:
 
     @property
     def database(self):
-        """Gets the database of this ShowDatabaseAuthorityRequest.
+        r"""Gets the database of this ShowDatabaseAuthorityRequest.
 
         数据库名
 
@@ -151,7 +151,7 @@ class ShowDatabaseAuthorityRequest:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ShowDatabaseAuthorityRequest.
+        r"""Sets the database of this ShowDatabaseAuthorityRequest.
 
         数据库名
 
@@ -162,7 +162,7 @@ class ShowDatabaseAuthorityRequest:
 
     @property
     def schema(self):
-        """Gets the schema of this ShowDatabaseAuthorityRequest.
+        r"""Gets the schema of this ShowDatabaseAuthorityRequest.
 
         模式名，对象类型为TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE时必选
 
@@ -173,7 +173,7 @@ class ShowDatabaseAuthorityRequest:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this ShowDatabaseAuthorityRequest.
+        r"""Sets the schema of this ShowDatabaseAuthorityRequest.
 
         模式名，对象类型为TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE时必选
 
@@ -184,7 +184,7 @@ class ShowDatabaseAuthorityRequest:
 
     @property
     def table(self):
-        """Gets the table of this ShowDatabaseAuthorityRequest.
+        r"""Gets the table of this ShowDatabaseAuthorityRequest.
 
         表名，对象类型为COLUMN时必选
 
@@ -195,7 +195,7 @@ class ShowDatabaseAuthorityRequest:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this ShowDatabaseAuthorityRequest.
+        r"""Sets the table of this ShowDatabaseAuthorityRequest.
 
         表名，对象类型为COLUMN时必选
 

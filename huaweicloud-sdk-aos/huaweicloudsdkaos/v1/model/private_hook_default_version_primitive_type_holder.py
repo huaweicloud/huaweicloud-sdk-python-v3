@@ -25,7 +25,7 @@ class PrivateHookDefaultVersionPrimitiveTypeHolder:
     }
 
     def __init__(self, default_version=None):
-        """PrivateHookDefaultVersionPrimitiveTypeHolder
+        r"""PrivateHookDefaultVersionPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PrivateHookDefaultVersionPrimitiveTypeHolder:
 
     @property
     def default_version(self):
-        """Gets the default_version of this PrivateHookDefaultVersionPrimitiveTypeHolder.
+        r"""Gets the default_version of this PrivateHookDefaultVersionPrimitiveTypeHolder.
 
         私有hook的默认版本号。版本号必须遵循语义化版本号（Semantic Version），为用户自定义。
 
@@ -54,7 +54,7 @@ class PrivateHookDefaultVersionPrimitiveTypeHolder:
 
     @default_version.setter
     def default_version(self, default_version):
-        """Sets the default_version of this PrivateHookDefaultVersionPrimitiveTypeHolder.
+        r"""Sets the default_version of this PrivateHookDefaultVersionPrimitiveTypeHolder.
 
         私有hook的默认版本号。版本号必须遵循语义化版本号（Semantic Version），为用户自定义。
 

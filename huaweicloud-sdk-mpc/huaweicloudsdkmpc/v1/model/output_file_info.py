@@ -29,7 +29,7 @@ class OutputFileInfo:
     }
 
     def __init__(self, output_file_name=None, exec_description=None, meta_data=None):
-        """OutputFileInfo
+        r"""OutputFileInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class OutputFileInfo:
 
     @property
     def output_file_name(self):
-        """Gets the output_file_name of this OutputFileInfo.
+        r"""Gets the output_file_name of this OutputFileInfo.
 
         输出文件名。 
 
@@ -68,7 +68,7 @@ class OutputFileInfo:
 
     @output_file_name.setter
     def output_file_name(self, output_file_name):
-        """Sets the output_file_name of this OutputFileInfo.
+        r"""Sets the output_file_name of this OutputFileInfo.
 
         输出文件名。 
 
@@ -79,7 +79,7 @@ class OutputFileInfo:
 
     @property
     def exec_description(self):
-        """Gets the exec_description of this OutputFileInfo.
+        r"""Gets the exec_description of this OutputFileInfo.
 
         处理信息。 
 
@@ -90,7 +90,7 @@ class OutputFileInfo:
 
     @exec_description.setter
     def exec_description(self, exec_description):
-        """Sets the exec_description of this OutputFileInfo.
+        r"""Sets the exec_description of this OutputFileInfo.
 
         处理信息。 
 
@@ -101,7 +101,7 @@ class OutputFileInfo:
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this OutputFileInfo.
+        r"""Gets the meta_data of this OutputFileInfo.
 
         :return: The meta_data of this OutputFileInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.SourceInfo`
@@ -110,7 +110,7 @@ class OutputFileInfo:
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this OutputFileInfo.
+        r"""Sets the meta_data of this OutputFileInfo.
 
         :param meta_data: The meta_data of this OutputFileInfo.
         :type meta_data: :class:`huaweicloudsdkmpc.v1.SourceInfo`

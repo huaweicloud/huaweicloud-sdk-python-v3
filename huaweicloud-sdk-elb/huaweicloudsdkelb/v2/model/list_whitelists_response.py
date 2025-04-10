@@ -26,7 +26,7 @@ class ListWhitelistsResponse(SdkResponse):
     }
 
     def __init__(self, whitelists=None):
-        """ListWhitelistsResponse
+        r"""ListWhitelistsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListWhitelistsResponse(SdkResponse):
 
     @property
     def whitelists(self):
-        """Gets the whitelists of this ListWhitelistsResponse.
+        r"""Gets the whitelists of this ListWhitelistsResponse.
 
         白名单对象的列表
 
@@ -55,7 +55,7 @@ class ListWhitelistsResponse(SdkResponse):
 
     @whitelists.setter
     def whitelists(self, whitelists):
-        """Sets the whitelists of this ListWhitelistsResponse.
+        r"""Sets the whitelists of this ListWhitelistsResponse.
 
         白名单对象的列表
 

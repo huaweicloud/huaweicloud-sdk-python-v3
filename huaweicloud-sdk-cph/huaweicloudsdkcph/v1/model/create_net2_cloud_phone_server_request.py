@@ -25,7 +25,7 @@ class CreateNet2CloudPhoneServerRequest:
     }
 
     def __init__(self, body=None):
-        """CreateNet2CloudPhoneServerRequest
+        r"""CreateNet2CloudPhoneServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateNet2CloudPhoneServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateNet2CloudPhoneServerRequest.
+        r"""Gets the body of this CreateNet2CloudPhoneServerRequest.
 
         :return: The body of this CreateNet2CloudPhoneServerRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBody`
@@ -52,7 +52,7 @@ class CreateNet2CloudPhoneServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateNet2CloudPhoneServerRequest.
+        r"""Sets the body of this CreateNet2CloudPhoneServerRequest.
 
         :param body: The body of this CreateNet2CloudPhoneServerRequest.
         :type body: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBody`

@@ -27,7 +27,7 @@ class UpdateEnvRequest:
     }
 
     def __init__(self, environment_id=None, body=None):
-        """UpdateEnvRequest
+        r"""UpdateEnvRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEnvRequest:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this UpdateEnvRequest.
+        r"""Gets the environment_id of this UpdateEnvRequest.
 
         环境id
 
@@ -60,7 +60,7 @@ class UpdateEnvRequest:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this UpdateEnvRequest.
+        r"""Sets the environment_id of this UpdateEnvRequest.
 
         环境id
 
@@ -71,7 +71,7 @@ class UpdateEnvRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEnvRequest.
+        r"""Gets the body of this UpdateEnvRequest.
 
         :return: The body of this UpdateEnvRequest.
         :rtype: :class:`huaweicloudsdkaom.v3.EnvParam`
@@ -80,7 +80,7 @@ class UpdateEnvRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEnvRequest.
+        r"""Sets the body of this UpdateEnvRequest.
 
         :param body: The body of this UpdateEnvRequest.
         :type body: :class:`huaweicloudsdkaom.v3.EnvParam`

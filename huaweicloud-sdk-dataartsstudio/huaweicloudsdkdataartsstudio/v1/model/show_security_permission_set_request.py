@@ -27,7 +27,7 @@ class ShowSecurityPermissionSetRequest:
     }
 
     def __init__(self, permission_set_id=None, workspace=None):
-        """ShowSecurityPermissionSetRequest
+        r"""ShowSecurityPermissionSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowSecurityPermissionSetRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this ShowSecurityPermissionSetRequest.
+        r"""Gets the permission_set_id of this ShowSecurityPermissionSetRequest.
 
         权限集id
 
@@ -59,7 +59,7 @@ class ShowSecurityPermissionSetRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this ShowSecurityPermissionSetRequest.
+        r"""Sets the permission_set_id of this ShowSecurityPermissionSetRequest.
 
         权限集id
 
@@ -70,7 +70,7 @@ class ShowSecurityPermissionSetRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowSecurityPermissionSetRequest.
+        r"""Gets the workspace of this ShowSecurityPermissionSetRequest.
 
         DataArts Studio工作空间ID
 
@@ -81,7 +81,7 @@ class ShowSecurityPermissionSetRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowSecurityPermissionSetRequest.
+        r"""Sets the workspace of this ShowSecurityPermissionSetRequest.
 
         DataArts Studio工作空间ID
 

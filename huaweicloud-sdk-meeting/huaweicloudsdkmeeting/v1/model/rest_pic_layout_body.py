@@ -25,7 +25,7 @@ class RestPicLayoutBody:
     }
 
     def __init__(self, rest_pic_layout=None):
-        """RestPicLayoutBody
+        r"""RestPicLayoutBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RestPicLayoutBody:
 
     @property
     def rest_pic_layout(self):
-        """Gets the rest_pic_layout of this RestPicLayoutBody.
+        r"""Gets the rest_pic_layout of this RestPicLayoutBody.
 
         :return: The rest_pic_layout of this RestPicLayoutBody.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestPicLayout`
@@ -52,7 +52,7 @@ class RestPicLayoutBody:
 
     @rest_pic_layout.setter
     def rest_pic_layout(self, rest_pic_layout):
-        """Sets the rest_pic_layout of this RestPicLayoutBody.
+        r"""Sets the rest_pic_layout of this RestPicLayoutBody.
 
         :param rest_pic_layout: The rest_pic_layout of this RestPicLayoutBody.
         :type rest_pic_layout: :class:`huaweicloudsdkmeeting.v1.RestPicLayout`

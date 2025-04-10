@@ -31,7 +31,7 @@ class StorageGroups:
     }
 
     def __init__(self, name=None, cce_managed=None, selector_names=None, virtual_spaces=None):
-        """StorageGroups
+        r"""StorageGroups
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class StorageGroups:
 
     @property
     def name(self):
-        """Gets the name of this StorageGroups.
+        r"""Gets the name of this StorageGroups.
 
         storageGroups的名字，作为虚拟存储组的名字，因此各个group名字不能重复。 > - 当cceManaged=ture时，name必须为：vgpass。 > - 当数据盘作为临时存储卷时：name必须为：vg-everest-localvolume-ephemeral。 > - 当数据盘作为持久存储卷时：name必须为：vg-everest-localvolume-persistent。 
 
@@ -72,7 +72,7 @@ class StorageGroups:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StorageGroups.
+        r"""Sets the name of this StorageGroups.
 
         storageGroups的名字，作为虚拟存储组的名字，因此各个group名字不能重复。 > - 当cceManaged=ture时，name必须为：vgpass。 > - 当数据盘作为临时存储卷时：name必须为：vg-everest-localvolume-ephemeral。 > - 当数据盘作为持久存储卷时：name必须为：vg-everest-localvolume-persistent。 
 
@@ -83,7 +83,7 @@ class StorageGroups:
 
     @property
     def cce_managed(self):
-        """Gets the cce_managed of this StorageGroups.
+        r"""Gets the cce_managed of this StorageGroups.
 
         k8s及runtime所属存储空间。有且仅有一个group被设置为true，不填默认false。
 
@@ -94,7 +94,7 @@ class StorageGroups:
 
     @cce_managed.setter
     def cce_managed(self, cce_managed):
-        """Sets the cce_managed of this StorageGroups.
+        r"""Sets the cce_managed of this StorageGroups.
 
         k8s及runtime所属存储空间。有且仅有一个group被设置为true，不填默认false。
 
@@ -105,7 +105,7 @@ class StorageGroups:
 
     @property
     def selector_names(self):
-        """Gets the selector_names of this StorageGroups.
+        r"""Gets the selector_names of this StorageGroups.
 
         对应storageSelectors中的name，一个group可选择多个selector；但一个selector只能被一个group选择。
 
@@ -116,7 +116,7 @@ class StorageGroups:
 
     @selector_names.setter
     def selector_names(self, selector_names):
-        """Sets the selector_names of this StorageGroups.
+        r"""Sets the selector_names of this StorageGroups.
 
         对应storageSelectors中的name，一个group可选择多个selector；但一个selector只能被一个group选择。
 
@@ -127,7 +127,7 @@ class StorageGroups:
 
     @property
     def virtual_spaces(self):
-        """Gets the virtual_spaces of this StorageGroups.
+        r"""Gets the virtual_spaces of this StorageGroups.
 
         group中空间配置的详细管理。
 
@@ -138,7 +138,7 @@ class StorageGroups:
 
     @virtual_spaces.setter
     def virtual_spaces(self, virtual_spaces):
-        """Sets the virtual_spaces of this StorageGroups.
+        r"""Sets the virtual_spaces of this StorageGroups.
 
         group中空间配置的详细管理。
 

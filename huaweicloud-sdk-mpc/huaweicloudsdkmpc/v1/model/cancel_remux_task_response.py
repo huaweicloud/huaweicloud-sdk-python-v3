@@ -24,7 +24,7 @@ class CancelRemuxTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CancelRemuxTaskResponse
+        r"""CancelRemuxTaskResponse
 
         The model defined in huaweicloud sdk
 

@@ -31,7 +31,7 @@ class DeletePlaybookRuleRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, version_id=None, rule_id=None):
-        """DeletePlaybookRuleRequest
+        r"""DeletePlaybookRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DeletePlaybookRuleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeletePlaybookRuleRequest.
+        r"""Gets the project_id of this DeletePlaybookRuleRequest.
 
         ID of project
 
@@ -71,7 +71,7 @@ class DeletePlaybookRuleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeletePlaybookRuleRequest.
+        r"""Sets the project_id of this DeletePlaybookRuleRequest.
 
         ID of project
 
@@ -82,7 +82,7 @@ class DeletePlaybookRuleRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeletePlaybookRuleRequest.
+        r"""Gets the workspace_id of this DeletePlaybookRuleRequest.
 
         ID of workspace
 
@@ -93,7 +93,7 @@ class DeletePlaybookRuleRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeletePlaybookRuleRequest.
+        r"""Sets the workspace_id of this DeletePlaybookRuleRequest.
 
         ID of workspace
 
@@ -104,7 +104,7 @@ class DeletePlaybookRuleRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this DeletePlaybookRuleRequest.
+        r"""Gets the version_id of this DeletePlaybookRuleRequest.
 
         version Id value
 
@@ -115,7 +115,7 @@ class DeletePlaybookRuleRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this DeletePlaybookRuleRequest.
+        r"""Sets the version_id of this DeletePlaybookRuleRequest.
 
         version Id value
 
@@ -126,7 +126,7 @@ class DeletePlaybookRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this DeletePlaybookRuleRequest.
+        r"""Gets the rule_id of this DeletePlaybookRuleRequest.
 
         rule_id
 
@@ -137,7 +137,7 @@ class DeletePlaybookRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this DeletePlaybookRuleRequest.
+        r"""Sets the rule_id of this DeletePlaybookRuleRequest.
 
         rule_id
 

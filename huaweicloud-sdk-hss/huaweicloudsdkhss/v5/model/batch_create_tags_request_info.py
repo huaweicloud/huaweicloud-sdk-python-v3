@@ -25,7 +25,7 @@ class BatchCreateTagsRequestInfo:
     }
 
     def __init__(self, tags=None):
-        """BatchCreateTagsRequestInfo
+        r"""BatchCreateTagsRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchCreateTagsRequestInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateTagsRequestInfo.
+        r"""Gets the tags of this BatchCreateTagsRequestInfo.
 
         标签对象列表
 
@@ -53,7 +53,7 @@ class BatchCreateTagsRequestInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateTagsRequestInfo.
+        r"""Sets the tags of this BatchCreateTagsRequestInfo.
 
         标签对象列表
 

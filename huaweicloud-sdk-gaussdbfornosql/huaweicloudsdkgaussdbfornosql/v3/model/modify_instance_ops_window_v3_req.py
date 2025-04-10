@@ -25,7 +25,7 @@ class ModifyInstanceOpsWindowV3Req:
     }
 
     def __init__(self, start_time=None):
-        """ModifyInstanceOpsWindowV3Req
+        r"""ModifyInstanceOpsWindowV3Req
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyInstanceOpsWindowV3Req:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ModifyInstanceOpsWindowV3Req.
+        r"""Gets the start_time of this ModifyInstanceOpsWindowV3Req.
 
         参数解释： 开始时间，格式必须为HH:MM且有效，时间为UTC时间，只能为整点。结束时间默认与开始时间相隔四个小时。 约束限制： 不涉及。
 
@@ -53,7 +53,7 @@ class ModifyInstanceOpsWindowV3Req:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ModifyInstanceOpsWindowV3Req.
+        r"""Sets the start_time of this ModifyInstanceOpsWindowV3Req.
 
         参数解释： 开始时间，格式必须为HH:MM且有效，时间为UTC时间，只能为整点。结束时间默认与开始时间相隔四个小时。 约束限制： 不涉及。
 

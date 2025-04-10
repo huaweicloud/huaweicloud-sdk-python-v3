@@ -25,7 +25,7 @@ class ResourceDTO:
     }
 
     def __init__(self, resource_id=None):
-        """ResourceDTO
+        r"""ResourceDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResourceDTO:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourceDTO.
+        r"""Gets the resource_id of this ResourceDTO.
 
         资源id。例如，要查询的资源类型为device，那么对应的资源id就是device_id。
 
@@ -54,7 +54,7 @@ class ResourceDTO:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourceDTO.
+        r"""Sets the resource_id of this ResourceDTO.
 
         资源id。例如，要查询的资源类型为device，那么对应的资源id就是device_id。
 

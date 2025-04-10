@@ -32,7 +32,7 @@ class ListOnlineConfAttendeeResponse(SdkResponse):
     }
 
     def __init__(self, data=None, offset=None, limit=None, count=None):
-        """ListOnlineConfAttendeeResponse
+        r"""ListOnlineConfAttendeeResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListOnlineConfAttendeeResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListOnlineConfAttendeeResponse.
+        r"""Gets the data of this ListOnlineConfAttendeeResponse.
 
         在线与会者信息列表
 
@@ -76,7 +76,7 @@ class ListOnlineConfAttendeeResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListOnlineConfAttendeeResponse.
+        r"""Sets the data of this ListOnlineConfAttendeeResponse.
 
         在线与会者信息列表
 
@@ -87,7 +87,7 @@ class ListOnlineConfAttendeeResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListOnlineConfAttendeeResponse.
+        r"""Gets the offset of this ListOnlineConfAttendeeResponse.
 
         记录数偏移,第几条
 
@@ -98,7 +98,7 @@ class ListOnlineConfAttendeeResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListOnlineConfAttendeeResponse.
+        r"""Sets the offset of this ListOnlineConfAttendeeResponse.
 
         记录数偏移,第几条
 
@@ -109,7 +109,7 @@ class ListOnlineConfAttendeeResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListOnlineConfAttendeeResponse.
+        r"""Gets the limit of this ListOnlineConfAttendeeResponse.
 
         每页的记录数
 
@@ -120,7 +120,7 @@ class ListOnlineConfAttendeeResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListOnlineConfAttendeeResponse.
+        r"""Sets the limit of this ListOnlineConfAttendeeResponse.
 
         每页的记录数
 
@@ -131,7 +131,7 @@ class ListOnlineConfAttendeeResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListOnlineConfAttendeeResponse.
+        r"""Gets the count of this ListOnlineConfAttendeeResponse.
 
         总记录数
 
@@ -142,7 +142,7 @@ class ListOnlineConfAttendeeResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListOnlineConfAttendeeResponse.
+        r"""Sets the count of this ListOnlineConfAttendeeResponse.
 
         总记录数
 

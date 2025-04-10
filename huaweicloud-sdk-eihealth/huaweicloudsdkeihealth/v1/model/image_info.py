@@ -31,7 +31,7 @@ class ImageInfo:
     }
 
     def __init__(self, source_project_name=None, image_name=None, image_tag=None, profile=None):
-        """ImageInfo
+        r"""ImageInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ImageInfo:
 
     @property
     def source_project_name(self):
-        """Gets the source_project_name of this ImageInfo.
+        r"""Gets the source_project_name of this ImageInfo.
 
         源项目名
 
@@ -75,7 +75,7 @@ class ImageInfo:
 
     @source_project_name.setter
     def source_project_name(self, source_project_name):
-        """Sets the source_project_name of this ImageInfo.
+        r"""Sets the source_project_name of this ImageInfo.
 
         源项目名
 
@@ -86,7 +86,7 @@ class ImageInfo:
 
     @property
     def image_name(self):
-        """Gets the image_name of this ImageInfo.
+        r"""Gets the image_name of this ImageInfo.
 
         镜像名
 
@@ -97,7 +97,7 @@ class ImageInfo:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this ImageInfo.
+        r"""Sets the image_name of this ImageInfo.
 
         镜像名
 
@@ -108,7 +108,7 @@ class ImageInfo:
 
     @property
     def image_tag(self):
-        """Gets the image_tag of this ImageInfo.
+        r"""Gets the image_tag of this ImageInfo.
 
         镜像tag名
 
@@ -119,7 +119,7 @@ class ImageInfo:
 
     @image_tag.setter
     def image_tag(self, image_tag):
-        """Sets the image_tag of this ImageInfo.
+        r"""Sets the image_tag of this ImageInfo.
 
         镜像tag名
 
@@ -130,7 +130,7 @@ class ImageInfo:
 
     @property
     def profile(self):
-        """Gets the profile of this ImageInfo.
+        r"""Gets the profile of this ImageInfo.
 
         :return: The profile of this ImageInfo.
         :rtype: :class:`huaweicloudsdkeihealth.v1.Profile`
@@ -139,7 +139,7 @@ class ImageInfo:
 
     @profile.setter
     def profile(self, profile):
-        """Sets the profile of this ImageInfo.
+        r"""Sets the profile of this ImageInfo.
 
         :param profile: The profile of this ImageInfo.
         :type profile: :class:`huaweicloudsdkeihealth.v1.Profile`

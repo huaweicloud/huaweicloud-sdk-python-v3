@@ -29,7 +29,7 @@ class ShowMonitorItemViewConfigRequest:
     }
 
     def __init__(self, env_id=None, collector_id=None, x_business_id=None):
-        """ShowMonitorItemViewConfigRequest
+        r"""ShowMonitorItemViewConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowMonitorItemViewConfigRequest:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ShowMonitorItemViewConfigRequest.
+        r"""Gets the env_id of this ShowMonitorItemViewConfigRequest.
 
         环境id。
 
@@ -65,7 +65,7 @@ class ShowMonitorItemViewConfigRequest:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ShowMonitorItemViewConfigRequest.
+        r"""Sets the env_id of this ShowMonitorItemViewConfigRequest.
 
         环境id。
 
@@ -76,7 +76,7 @@ class ShowMonitorItemViewConfigRequest:
 
     @property
     def collector_id(self):
-        """Gets the collector_id of this ShowMonitorItemViewConfigRequest.
+        r"""Gets the collector_id of this ShowMonitorItemViewConfigRequest.
 
         采集器id。
 
@@ -87,7 +87,7 @@ class ShowMonitorItemViewConfigRequest:
 
     @collector_id.setter
     def collector_id(self, collector_id):
-        """Sets the collector_id of this ShowMonitorItemViewConfigRequest.
+        r"""Sets the collector_id of this ShowMonitorItemViewConfigRequest.
 
         采集器id。
 
@@ -98,7 +98,7 @@ class ShowMonitorItemViewConfigRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ShowMonitorItemViewConfigRequest.
+        r"""Gets the x_business_id of this ShowMonitorItemViewConfigRequest.
 
         应用id。
 
@@ -109,7 +109,7 @@ class ShowMonitorItemViewConfigRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ShowMonitorItemViewConfigRequest.
+        r"""Sets the x_business_id of this ShowMonitorItemViewConfigRequest.
 
         应用id。
 

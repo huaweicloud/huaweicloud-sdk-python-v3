@@ -63,7 +63,7 @@ class CreateWorkspaceResponseBody:
     }
 
     def __init__(self, id=None, create_time=None, update_time=None, name=None, description=None, creator_id=None, creator_name=None, modifier_id=None, modifier_name=None, project_id=None, project_name=None, domain_id=None, domain_name=None, enterprise_project_id=None, enterprise_project_name=None, is_view=None, region_id=None, view_bind_id=None, view_bind_name=None, workspace_agency_list=None):
-        """CreateWorkspaceResponseBody
+        r"""CreateWorkspaceResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this CreateWorkspaceResponseBody.
+        r"""Gets the id of this CreateWorkspaceResponseBody.
 
         工作空间id
 
@@ -187,7 +187,7 @@ class CreateWorkspaceResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateWorkspaceResponseBody.
+        r"""Sets the id of this CreateWorkspaceResponseBody.
 
         工作空间id
 
@@ -198,7 +198,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateWorkspaceResponseBody.
+        r"""Gets the create_time of this CreateWorkspaceResponseBody.
 
         创建时间
 
@@ -209,7 +209,7 @@ class CreateWorkspaceResponseBody:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateWorkspaceResponseBody.
+        r"""Sets the create_time of this CreateWorkspaceResponseBody.
 
         创建时间
 
@@ -220,7 +220,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateWorkspaceResponseBody.
+        r"""Gets the update_time of this CreateWorkspaceResponseBody.
 
         更新时间
 
@@ -231,7 +231,7 @@ class CreateWorkspaceResponseBody:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateWorkspaceResponseBody.
+        r"""Sets the update_time of this CreateWorkspaceResponseBody.
 
         更新时间
 
@@ -242,7 +242,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateWorkspaceResponseBody.
+        r"""Gets the name of this CreateWorkspaceResponseBody.
 
         工作空间名称
 
@@ -253,7 +253,7 @@ class CreateWorkspaceResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateWorkspaceResponseBody.
+        r"""Sets the name of this CreateWorkspaceResponseBody.
 
         工作空间名称
 
@@ -264,7 +264,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateWorkspaceResponseBody.
+        r"""Gets the description of this CreateWorkspaceResponseBody.
 
         工作空间描述
 
@@ -275,7 +275,7 @@ class CreateWorkspaceResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateWorkspaceResponseBody.
+        r"""Sets the description of this CreateWorkspaceResponseBody.
 
         工作空间描述
 
@@ -286,7 +286,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this CreateWorkspaceResponseBody.
+        r"""Gets the creator_id of this CreateWorkspaceResponseBody.
 
         创建人id
 
@@ -297,7 +297,7 @@ class CreateWorkspaceResponseBody:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this CreateWorkspaceResponseBody.
+        r"""Sets the creator_id of this CreateWorkspaceResponseBody.
 
         创建人id
 
@@ -308,7 +308,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this CreateWorkspaceResponseBody.
+        r"""Gets the creator_name of this CreateWorkspaceResponseBody.
 
         创建人名称
 
@@ -319,7 +319,7 @@ class CreateWorkspaceResponseBody:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this CreateWorkspaceResponseBody.
+        r"""Sets the creator_name of this CreateWorkspaceResponseBody.
 
         创建人名称
 
@@ -330,7 +330,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def modifier_id(self):
-        """Gets the modifier_id of this CreateWorkspaceResponseBody.
+        r"""Gets the modifier_id of this CreateWorkspaceResponseBody.
 
         修改人id
 
@@ -341,7 +341,7 @@ class CreateWorkspaceResponseBody:
 
     @modifier_id.setter
     def modifier_id(self, modifier_id):
-        """Sets the modifier_id of this CreateWorkspaceResponseBody.
+        r"""Sets the modifier_id of this CreateWorkspaceResponseBody.
 
         修改人id
 
@@ -352,7 +352,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def modifier_name(self):
-        """Gets the modifier_name of this CreateWorkspaceResponseBody.
+        r"""Gets the modifier_name of this CreateWorkspaceResponseBody.
 
         修改人名称
 
@@ -363,7 +363,7 @@ class CreateWorkspaceResponseBody:
 
     @modifier_name.setter
     def modifier_name(self, modifier_name):
-        """Sets the modifier_name of this CreateWorkspaceResponseBody.
+        r"""Sets the modifier_name of this CreateWorkspaceResponseBody.
 
         修改人名称
 
@@ -374,7 +374,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateWorkspaceResponseBody.
+        r"""Gets the project_id of this CreateWorkspaceResponseBody.
 
         所属项目id
 
@@ -385,7 +385,7 @@ class CreateWorkspaceResponseBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateWorkspaceResponseBody.
+        r"""Sets the project_id of this CreateWorkspaceResponseBody.
 
         所属项目id
 
@@ -396,7 +396,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def project_name(self):
-        """Gets the project_name of this CreateWorkspaceResponseBody.
+        r"""Gets the project_name of this CreateWorkspaceResponseBody.
 
         所属项目名称
 
@@ -407,7 +407,7 @@ class CreateWorkspaceResponseBody:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this CreateWorkspaceResponseBody.
+        r"""Sets the project_name of this CreateWorkspaceResponseBody.
 
         所属项目名称
 
@@ -418,7 +418,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateWorkspaceResponseBody.
+        r"""Gets the domain_id of this CreateWorkspaceResponseBody.
 
         所属租户id
 
@@ -429,7 +429,7 @@ class CreateWorkspaceResponseBody:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateWorkspaceResponseBody.
+        r"""Sets the domain_id of this CreateWorkspaceResponseBody.
 
         所属租户id
 
@@ -440,7 +440,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this CreateWorkspaceResponseBody.
+        r"""Gets the domain_name of this CreateWorkspaceResponseBody.
 
         所属租户名称
 
@@ -451,7 +451,7 @@ class CreateWorkspaceResponseBody:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this CreateWorkspaceResponseBody.
+        r"""Sets the domain_name of this CreateWorkspaceResponseBody.
 
         所属租户名称
 
@@ -462,7 +462,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateWorkspaceResponseBody.
+        r"""Gets the enterprise_project_id of this CreateWorkspaceResponseBody.
 
         企业项目id
 
@@ -473,7 +473,7 @@ class CreateWorkspaceResponseBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateWorkspaceResponseBody.
+        r"""Sets the enterprise_project_id of this CreateWorkspaceResponseBody.
 
         企业项目id
 
@@ -484,7 +484,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this CreateWorkspaceResponseBody.
+        r"""Gets the enterprise_project_name of this CreateWorkspaceResponseBody.
 
         企业项目名称
 
@@ -495,7 +495,7 @@ class CreateWorkspaceResponseBody:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this CreateWorkspaceResponseBody.
+        r"""Sets the enterprise_project_name of this CreateWorkspaceResponseBody.
 
         企业项目名称
 
@@ -506,7 +506,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def is_view(self):
-        """Gets the is_view of this CreateWorkspaceResponseBody.
+        r"""Gets the is_view of this CreateWorkspaceResponseBody.
 
         是否是视图
 
@@ -517,7 +517,7 @@ class CreateWorkspaceResponseBody:
 
     @is_view.setter
     def is_view(self, is_view):
-        """Sets the is_view of this CreateWorkspaceResponseBody.
+        r"""Sets the is_view of this CreateWorkspaceResponseBody.
 
         是否是视图
 
@@ -528,7 +528,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateWorkspaceResponseBody.
+        r"""Gets the region_id of this CreateWorkspaceResponseBody.
 
         区域id
 
@@ -539,7 +539,7 @@ class CreateWorkspaceResponseBody:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateWorkspaceResponseBody.
+        r"""Sets the region_id of this CreateWorkspaceResponseBody.
 
         区域id
 
@@ -550,7 +550,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def view_bind_id(self):
-        """Gets the view_bind_id of this CreateWorkspaceResponseBody.
+        r"""Gets the view_bind_id of this CreateWorkspaceResponseBody.
 
         视图绑定的空间id
 
@@ -561,7 +561,7 @@ class CreateWorkspaceResponseBody:
 
     @view_bind_id.setter
     def view_bind_id(self, view_bind_id):
-        """Sets the view_bind_id of this CreateWorkspaceResponseBody.
+        r"""Sets the view_bind_id of this CreateWorkspaceResponseBody.
 
         视图绑定的空间id
 
@@ -572,7 +572,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def view_bind_name(self):
-        """Gets the view_bind_name of this CreateWorkspaceResponseBody.
+        r"""Gets the view_bind_name of this CreateWorkspaceResponseBody.
 
         视图绑定的空间名称
 
@@ -583,7 +583,7 @@ class CreateWorkspaceResponseBody:
 
     @view_bind_name.setter
     def view_bind_name(self, view_bind_name):
-        """Sets the view_bind_name of this CreateWorkspaceResponseBody.
+        r"""Sets the view_bind_name of this CreateWorkspaceResponseBody.
 
         视图绑定的空间名称
 
@@ -594,7 +594,7 @@ class CreateWorkspaceResponseBody:
 
     @property
     def workspace_agency_list(self):
-        """Gets the workspace_agency_list of this CreateWorkspaceResponseBody.
+        r"""Gets the workspace_agency_list of this CreateWorkspaceResponseBody.
 
         仅用于视图场景，列出了该视图纳管的空间列表
 
@@ -605,7 +605,7 @@ class CreateWorkspaceResponseBody:
 
     @workspace_agency_list.setter
     def workspace_agency_list(self, workspace_agency_list):
-        """Sets the workspace_agency_list of this CreateWorkspaceResponseBody.
+        r"""Sets the workspace_agency_list of this CreateWorkspaceResponseBody.
 
         仅用于视图场景，列出了该视图纳管的空间列表
 

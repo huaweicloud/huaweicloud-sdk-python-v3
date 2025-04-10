@@ -34,7 +34,7 @@ class ShowDetailsOfEnvironmentVariableV2Response(SdkResponse):
     }
 
     def __init__(self, variable_value=None, env_id=None, group_id=None, variable_name=None, id=None):
-        """ShowDetailsOfEnvironmentVariableV2Response
+        r"""ShowDetailsOfEnvironmentVariableV2Response
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowDetailsOfEnvironmentVariableV2Response(SdkResponse):
 
     @property
     def variable_value(self):
-        """Gets the variable_value of this ShowDetailsOfEnvironmentVariableV2Response.
+        r"""Gets the variable_value of this ShowDetailsOfEnvironmentVariableV2Response.
 
         变量值支持英文字母、数字、英文格式的下划线、中划线，斜线（/）、点、冒号，1 ~ 255个字符。
 
@@ -82,7 +82,7 @@ class ShowDetailsOfEnvironmentVariableV2Response(SdkResponse):
 
     @variable_value.setter
     def variable_value(self, variable_value):
-        """Sets the variable_value of this ShowDetailsOfEnvironmentVariableV2Response.
+        r"""Sets the variable_value of this ShowDetailsOfEnvironmentVariableV2Response.
 
         变量值支持英文字母、数字、英文格式的下划线、中划线，斜线（/）、点、冒号，1 ~ 255个字符。
 
@@ -93,7 +93,7 @@ class ShowDetailsOfEnvironmentVariableV2Response(SdkResponse):
 
     @property
     def env_id(self):
-        """Gets the env_id of this ShowDetailsOfEnvironmentVariableV2Response.
+        r"""Gets the env_id of this ShowDetailsOfEnvironmentVariableV2Response.
 
         环境编号
 
@@ -104,7 +104,7 @@ class ShowDetailsOfEnvironmentVariableV2Response(SdkResponse):
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ShowDetailsOfEnvironmentVariableV2Response.
+        r"""Sets the env_id of this ShowDetailsOfEnvironmentVariableV2Response.
 
         环境编号
 
@@ -115,7 +115,7 @@ class ShowDetailsOfEnvironmentVariableV2Response(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowDetailsOfEnvironmentVariableV2Response.
+        r"""Gets the group_id of this ShowDetailsOfEnvironmentVariableV2Response.
 
         API分组编号
 
@@ -126,7 +126,7 @@ class ShowDetailsOfEnvironmentVariableV2Response(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowDetailsOfEnvironmentVariableV2Response.
+        r"""Sets the group_id of this ShowDetailsOfEnvironmentVariableV2Response.
 
         API分组编号
 
@@ -137,7 +137,7 @@ class ShowDetailsOfEnvironmentVariableV2Response(SdkResponse):
 
     @property
     def variable_name(self):
-        """Gets the variable_name of this ShowDetailsOfEnvironmentVariableV2Response.
+        r"""Gets the variable_name of this ShowDetailsOfEnvironmentVariableV2Response.
 
         变量名，支持英文字母、数字、英文格式的下划线、中划线，必须以英文字母开头，3~32个字符。在API定义中等于#Name的值#部分（区分大小写），发布到环境里的API被变量值换。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -148,7 +148,7 @@ class ShowDetailsOfEnvironmentVariableV2Response(SdkResponse):
 
     @variable_name.setter
     def variable_name(self, variable_name):
-        """Sets the variable_name of this ShowDetailsOfEnvironmentVariableV2Response.
+        r"""Sets the variable_name of this ShowDetailsOfEnvironmentVariableV2Response.
 
         变量名，支持英文字母、数字、英文格式的下划线、中划线，必须以英文字母开头，3~32个字符。在API定义中等于#Name的值#部分（区分大小写），发布到环境里的API被变量值换。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -159,7 +159,7 @@ class ShowDetailsOfEnvironmentVariableV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDetailsOfEnvironmentVariableV2Response.
+        r"""Gets the id of this ShowDetailsOfEnvironmentVariableV2Response.
 
         环境变量编号
 
@@ -170,7 +170,7 @@ class ShowDetailsOfEnvironmentVariableV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDetailsOfEnvironmentVariableV2Response.
+        r"""Sets the id of this ShowDetailsOfEnvironmentVariableV2Response.
 
         环境变量编号
 

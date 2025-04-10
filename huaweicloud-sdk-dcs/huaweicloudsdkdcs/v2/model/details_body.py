@@ -75,7 +75,7 @@ class DetailsBody:
     }
 
     def __init__(self, old_capacity=None, new_capacity=None, enable_public_ip=None, public_ip_id=None, public_ip_address=None, enable_ssl=None, old_cache_mode=None, new_cache_mode=None, old_resource_spec_code=None, new_resource_spec_code=None, old_replica_num=None, new_replica_num=None, old_cache_type=None, new_cache_type=None, replica_ip=None, replica_az=None, group_name=None, old_port=None, new_port=None, is_only_adjust_charging=None, account_name=None, source_ip=None, target_ip=None, node_name=None, rename_commands=None, updated_config_length=None):
-        """DetailsBody
+        r"""DetailsBody
 
         The model defined in huaweicloud sdk
 
@@ -218,7 +218,7 @@ class DetailsBody:
 
     @property
     def old_capacity(self):
-        """Gets the old_capacity of this DetailsBody.
+        r"""Gets the old_capacity of this DetailsBody.
 
         变更前的容量，仅在变更规格时有值。
 
@@ -229,7 +229,7 @@ class DetailsBody:
 
     @old_capacity.setter
     def old_capacity(self, old_capacity):
-        """Sets the old_capacity of this DetailsBody.
+        r"""Sets the old_capacity of this DetailsBody.
 
         变更前的容量，仅在变更规格时有值。
 
@@ -240,7 +240,7 @@ class DetailsBody:
 
     @property
     def new_capacity(self):
-        """Gets the new_capacity of this DetailsBody.
+        r"""Gets the new_capacity of this DetailsBody.
 
         变更后的容量，仅在变更规格时有值。
 
@@ -251,7 +251,7 @@ class DetailsBody:
 
     @new_capacity.setter
     def new_capacity(self, new_capacity):
-        """Sets the new_capacity of this DetailsBody.
+        r"""Sets the new_capacity of this DetailsBody.
 
         变更后的容量，仅在变更规格时有值。
 
@@ -262,7 +262,7 @@ class DetailsBody:
 
     @property
     def enable_public_ip(self):
-        """Gets the enable_public_ip of this DetailsBody.
+        r"""Gets the enable_public_ip of this DetailsBody.
 
         是否开启公网访问，仅在开启公网访问时有值。
 
@@ -273,7 +273,7 @@ class DetailsBody:
 
     @enable_public_ip.setter
     def enable_public_ip(self, enable_public_ip):
-        """Sets the enable_public_ip of this DetailsBody.
+        r"""Sets the enable_public_ip of this DetailsBody.
 
         是否开启公网访问，仅在开启公网访问时有值。
 
@@ -284,7 +284,7 @@ class DetailsBody:
 
     @property
     def public_ip_id(self):
-        """Gets the public_ip_id of this DetailsBody.
+        r"""Gets the public_ip_id of this DetailsBody.
 
         公网IP的ID，仅在开启公网访问时有值。
 
@@ -295,7 +295,7 @@ class DetailsBody:
 
     @public_ip_id.setter
     def public_ip_id(self, public_ip_id):
-        """Sets the public_ip_id of this DetailsBody.
+        r"""Sets the public_ip_id of this DetailsBody.
 
         公网IP的ID，仅在开启公网访问时有值。
 
@@ -306,7 +306,7 @@ class DetailsBody:
 
     @property
     def public_ip_address(self):
-        """Gets the public_ip_address of this DetailsBody.
+        r"""Gets the public_ip_address of this DetailsBody.
 
         公网IP地址，仅在开启公网访问时有值。
 
@@ -317,7 +317,7 @@ class DetailsBody:
 
     @public_ip_address.setter
     def public_ip_address(self, public_ip_address):
-        """Sets the public_ip_address of this DetailsBody.
+        r"""Sets the public_ip_address of this DetailsBody.
 
         公网IP地址，仅在开启公网访问时有值。
 
@@ -328,7 +328,7 @@ class DetailsBody:
 
     @property
     def enable_ssl(self):
-        """Gets the enable_ssl of this DetailsBody.
+        r"""Gets the enable_ssl of this DetailsBody.
 
         是否开启SSL，仅在开启SSL时有值。
 
@@ -339,7 +339,7 @@ class DetailsBody:
 
     @enable_ssl.setter
     def enable_ssl(self, enable_ssl):
-        """Sets the enable_ssl of this DetailsBody.
+        r"""Sets the enable_ssl of this DetailsBody.
 
         是否开启SSL，仅在开启SSL时有值。
 
@@ -350,7 +350,7 @@ class DetailsBody:
 
     @property
     def old_cache_mode(self):
-        """Gets the old_cache_mode of this DetailsBody.
+        r"""Gets the old_cache_mode of this DetailsBody.
 
         变更前的缓存类型，仅在变更规格时有值。
 
@@ -361,7 +361,7 @@ class DetailsBody:
 
     @old_cache_mode.setter
     def old_cache_mode(self, old_cache_mode):
-        """Sets the old_cache_mode of this DetailsBody.
+        r"""Sets the old_cache_mode of this DetailsBody.
 
         变更前的缓存类型，仅在变更规格时有值。
 
@@ -372,7 +372,7 @@ class DetailsBody:
 
     @property
     def new_cache_mode(self):
-        """Gets the new_cache_mode of this DetailsBody.
+        r"""Gets the new_cache_mode of this DetailsBody.
 
         变更后的缓存类型，仅在变更规格时有值。
 
@@ -383,7 +383,7 @@ class DetailsBody:
 
     @new_cache_mode.setter
     def new_cache_mode(self, new_cache_mode):
-        """Sets the new_cache_mode of this DetailsBody.
+        r"""Sets the new_cache_mode of this DetailsBody.
 
         变更后的缓存类型，仅在变更规格时有值。
 
@@ -394,7 +394,7 @@ class DetailsBody:
 
     @property
     def old_resource_spec_code(self):
-        """Gets the old_resource_spec_code of this DetailsBody.
+        r"""Gets the old_resource_spec_code of this DetailsBody.
 
         变更前的规格参数，仅在变更规格时有值。
 
@@ -405,7 +405,7 @@ class DetailsBody:
 
     @old_resource_spec_code.setter
     def old_resource_spec_code(self, old_resource_spec_code):
-        """Sets the old_resource_spec_code of this DetailsBody.
+        r"""Sets the old_resource_spec_code of this DetailsBody.
 
         变更前的规格参数，仅在变更规格时有值。
 
@@ -416,7 +416,7 @@ class DetailsBody:
 
     @property
     def new_resource_spec_code(self):
-        """Gets the new_resource_spec_code of this DetailsBody.
+        r"""Gets the new_resource_spec_code of this DetailsBody.
 
         变更后的规格参数，仅在变更规格时有值。
 
@@ -427,7 +427,7 @@ class DetailsBody:
 
     @new_resource_spec_code.setter
     def new_resource_spec_code(self, new_resource_spec_code):
-        """Sets the new_resource_spec_code of this DetailsBody.
+        r"""Sets the new_resource_spec_code of this DetailsBody.
 
         变更后的规格参数，仅在变更规格时有值。
 
@@ -438,7 +438,7 @@ class DetailsBody:
 
     @property
     def old_replica_num(self):
-        """Gets the old_replica_num of this DetailsBody.
+        r"""Gets the old_replica_num of this DetailsBody.
 
         变更前的副本数量，仅在变更规格时有值。
 
@@ -449,7 +449,7 @@ class DetailsBody:
 
     @old_replica_num.setter
     def old_replica_num(self, old_replica_num):
-        """Sets the old_replica_num of this DetailsBody.
+        r"""Sets the old_replica_num of this DetailsBody.
 
         变更前的副本数量，仅在变更规格时有值。
 
@@ -460,7 +460,7 @@ class DetailsBody:
 
     @property
     def new_replica_num(self):
-        """Gets the new_replica_num of this DetailsBody.
+        r"""Gets the new_replica_num of this DetailsBody.
 
         变更后的副本数量，仅在变更规格时有值。
 
@@ -471,7 +471,7 @@ class DetailsBody:
 
     @new_replica_num.setter
     def new_replica_num(self, new_replica_num):
-        """Sets the new_replica_num of this DetailsBody.
+        r"""Sets the new_replica_num of this DetailsBody.
 
         变更后的副本数量，仅在变更规格时有值。
 
@@ -482,7 +482,7 @@ class DetailsBody:
 
     @property
     def old_cache_type(self):
-        """Gets the old_cache_type of this DetailsBody.
+        r"""Gets the old_cache_type of this DetailsBody.
 
         变更前的缓存类型，仅在变更规格时有值。
 
@@ -493,7 +493,7 @@ class DetailsBody:
 
     @old_cache_type.setter
     def old_cache_type(self, old_cache_type):
-        """Sets the old_cache_type of this DetailsBody.
+        r"""Sets the old_cache_type of this DetailsBody.
 
         变更前的缓存类型，仅在变更规格时有值。
 
@@ -504,7 +504,7 @@ class DetailsBody:
 
     @property
     def new_cache_type(self):
-        """Gets the new_cache_type of this DetailsBody.
+        r"""Gets the new_cache_type of this DetailsBody.
 
         变更后的规格类型，仅在变更规格时有值。
 
@@ -515,7 +515,7 @@ class DetailsBody:
 
     @new_cache_type.setter
     def new_cache_type(self, new_cache_type):
-        """Sets the new_cache_type of this DetailsBody.
+        r"""Sets the new_cache_type of this DetailsBody.
 
         变更后的规格类型，仅在变更规格时有值。
 
@@ -526,7 +526,7 @@ class DetailsBody:
 
     @property
     def replica_ip(self):
-        """Gets the replica_ip of this DetailsBody.
+        r"""Gets the replica_ip of this DetailsBody.
 
         副本IP。
 
@@ -537,7 +537,7 @@ class DetailsBody:
 
     @replica_ip.setter
     def replica_ip(self, replica_ip):
-        """Sets the replica_ip of this DetailsBody.
+        r"""Sets the replica_ip of this DetailsBody.
 
         副本IP。
 
@@ -548,7 +548,7 @@ class DetailsBody:
 
     @property
     def replica_az(self):
-        """Gets the replica_az of this DetailsBody.
+        r"""Gets the replica_az of this DetailsBody.
 
         副本所在可用区。
 
@@ -559,7 +559,7 @@ class DetailsBody:
 
     @replica_az.setter
     def replica_az(self, replica_az):
-        """Sets the replica_az of this DetailsBody.
+        r"""Sets the replica_az of this DetailsBody.
 
         副本所在可用区。
 
@@ -570,7 +570,7 @@ class DetailsBody:
 
     @property
     def group_name(self):
-        """Gets the group_name of this DetailsBody.
+        r"""Gets the group_name of this DetailsBody.
 
         组名。
 
@@ -581,7 +581,7 @@ class DetailsBody:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this DetailsBody.
+        r"""Sets the group_name of this DetailsBody.
 
         组名。
 
@@ -592,7 +592,7 @@ class DetailsBody:
 
     @property
     def old_port(self):
-        """Gets the old_port of this DetailsBody.
+        r"""Gets the old_port of this DetailsBody.
 
         旧端口。
 
@@ -603,7 +603,7 @@ class DetailsBody:
 
     @old_port.setter
     def old_port(self, old_port):
-        """Sets the old_port of this DetailsBody.
+        r"""Sets the old_port of this DetailsBody.
 
         旧端口。
 
@@ -614,7 +614,7 @@ class DetailsBody:
 
     @property
     def new_port(self):
-        """Gets the new_port of this DetailsBody.
+        r"""Gets the new_port of this DetailsBody.
 
         新端口。
 
@@ -625,7 +625,7 @@ class DetailsBody:
 
     @new_port.setter
     def new_port(self, new_port):
-        """Sets the new_port of this DetailsBody.
+        r"""Sets the new_port of this DetailsBody.
 
         新端口。
 
@@ -636,7 +636,7 @@ class DetailsBody:
 
     @property
     def is_only_adjust_charging(self):
-        """Gets the is_only_adjust_charging of this DetailsBody.
+        r"""Gets the is_only_adjust_charging of this DetailsBody.
 
         是否只是调整计费模式。
 
@@ -647,7 +647,7 @@ class DetailsBody:
 
     @is_only_adjust_charging.setter
     def is_only_adjust_charging(self, is_only_adjust_charging):
-        """Sets the is_only_adjust_charging of this DetailsBody.
+        r"""Sets the is_only_adjust_charging of this DetailsBody.
 
         是否只是调整计费模式。
 
@@ -658,7 +658,7 @@ class DetailsBody:
 
     @property
     def account_name(self):
-        """Gets the account_name of this DetailsBody.
+        r"""Gets the account_name of this DetailsBody.
 
         账号名称。
 
@@ -669,7 +669,7 @@ class DetailsBody:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this DetailsBody.
+        r"""Sets the account_name of this DetailsBody.
 
         账号名称。
 
@@ -680,7 +680,7 @@ class DetailsBody:
 
     @property
     def source_ip(self):
-        """Gets the source_ip of this DetailsBody.
+        r"""Gets the source_ip of this DetailsBody.
 
         源IP。
 
@@ -691,7 +691,7 @@ class DetailsBody:
 
     @source_ip.setter
     def source_ip(self, source_ip):
-        """Sets the source_ip of this DetailsBody.
+        r"""Sets the source_ip of this DetailsBody.
 
         源IP。
 
@@ -702,7 +702,7 @@ class DetailsBody:
 
     @property
     def target_ip(self):
-        """Gets the target_ip of this DetailsBody.
+        r"""Gets the target_ip of this DetailsBody.
 
         目标IP。
 
@@ -713,7 +713,7 @@ class DetailsBody:
 
     @target_ip.setter
     def target_ip(self, target_ip):
-        """Sets the target_ip of this DetailsBody.
+        r"""Sets the target_ip of this DetailsBody.
 
         目标IP。
 
@@ -724,7 +724,7 @@ class DetailsBody:
 
     @property
     def node_name(self):
-        """Gets the node_name of this DetailsBody.
+        r"""Gets the node_name of this DetailsBody.
 
         节点信息。
 
@@ -735,7 +735,7 @@ class DetailsBody:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this DetailsBody.
+        r"""Sets the node_name of this DetailsBody.
 
         节点信息。
 
@@ -746,7 +746,7 @@ class DetailsBody:
 
     @property
     def rename_commands(self):
-        """Gets the rename_commands of this DetailsBody.
+        r"""Gets the rename_commands of this DetailsBody.
 
         重命名的指令。
 
@@ -757,7 +757,7 @@ class DetailsBody:
 
     @rename_commands.setter
     def rename_commands(self, rename_commands):
-        """Sets the rename_commands of this DetailsBody.
+        r"""Sets the rename_commands of this DetailsBody.
 
         重命名的指令。
 
@@ -768,7 +768,7 @@ class DetailsBody:
 
     @property
     def updated_config_length(self):
-        """Gets the updated_config_length of this DetailsBody.
+        r"""Gets the updated_config_length of this DetailsBody.
 
         更新配置项的长度。
 
@@ -779,7 +779,7 @@ class DetailsBody:
 
     @updated_config_length.setter
     def updated_config_length(self, updated_config_length):
-        """Sets the updated_config_length of this DetailsBody.
+        r"""Sets the updated_config_length of this DetailsBody.
 
         更新配置项的长度。
 

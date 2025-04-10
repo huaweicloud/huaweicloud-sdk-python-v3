@@ -31,7 +31,7 @@ class ModifyTemplateGroupCollection:
     }
 
     def __init__(self, name=None, collection_id=None, description=None, template_group_list=None):
-        """ModifyTemplateGroupCollection
+        r"""ModifyTemplateGroupCollection
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ModifyTemplateGroupCollection:
 
     @property
     def name(self):
-        """Gets the name of this ModifyTemplateGroupCollection.
+        r"""Gets the name of this ModifyTemplateGroupCollection.
 
         模板组集合名称<br/> 
 
@@ -74,7 +74,7 @@ class ModifyTemplateGroupCollection:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyTemplateGroupCollection.
+        r"""Sets the name of this ModifyTemplateGroupCollection.
 
         模板组集合名称<br/> 
 
@@ -85,7 +85,7 @@ class ModifyTemplateGroupCollection:
 
     @property
     def collection_id(self):
-        """Gets the collection_id of this ModifyTemplateGroupCollection.
+        r"""Gets the collection_id of this ModifyTemplateGroupCollection.
 
         模板组集合ID<br/> 
 
@@ -96,7 +96,7 @@ class ModifyTemplateGroupCollection:
 
     @collection_id.setter
     def collection_id(self, collection_id):
-        """Sets the collection_id of this ModifyTemplateGroupCollection.
+        r"""Sets the collection_id of this ModifyTemplateGroupCollection.
 
         模板组集合ID<br/> 
 
@@ -107,7 +107,7 @@ class ModifyTemplateGroupCollection:
 
     @property
     def description(self):
-        """Gets the description of this ModifyTemplateGroupCollection.
+        r"""Gets the description of this ModifyTemplateGroupCollection.
 
         模板组集合介绍<br/> 
 
@@ -118,7 +118,7 @@ class ModifyTemplateGroupCollection:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModifyTemplateGroupCollection.
+        r"""Sets the description of this ModifyTemplateGroupCollection.
 
         模板组集合介绍<br/> 
 
@@ -129,7 +129,7 @@ class ModifyTemplateGroupCollection:
 
     @property
     def template_group_list(self):
-        """Gets the template_group_list of this ModifyTemplateGroupCollection.
+        r"""Gets the template_group_list of this ModifyTemplateGroupCollection.
 
         模板组列表<br/> 
 
@@ -140,7 +140,7 @@ class ModifyTemplateGroupCollection:
 
     @template_group_list.setter
     def template_group_list(self, template_group_list):
-        """Sets the template_group_list of this ModifyTemplateGroupCollection.
+        r"""Sets the template_group_list of this ModifyTemplateGroupCollection.
 
         模板组列表<br/> 
 

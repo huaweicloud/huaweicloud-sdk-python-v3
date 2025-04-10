@@ -59,7 +59,7 @@ class AlertRule:
     }
 
     def __init__(self, rule_id=None, pipe_id=None, pipe_name=None, create_by=None, create_time=None, update_by=None, update_time=None, delete_time=None, rule_name=None, query=None, query_type=None, status=None, severity=None, accumulated_times=None, custom_properties=None, event_grouping=None, schedule=None, triggers=None):
-        """AlertRule
+        r"""AlertRule
 
         The model defined in huaweicloud sdk
 
@@ -152,7 +152,7 @@ class AlertRule:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this AlertRule.
+        r"""Gets the rule_id of this AlertRule.
 
         rule_id
 
@@ -163,7 +163,7 @@ class AlertRule:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this AlertRule.
+        r"""Sets the rule_id of this AlertRule.
 
         rule_id
 
@@ -174,7 +174,7 @@ class AlertRule:
 
     @property
     def pipe_id(self):
-        """Gets the pipe_id of this AlertRule.
+        r"""Gets the pipe_id of this AlertRule.
 
         pipe_id
 
@@ -185,7 +185,7 @@ class AlertRule:
 
     @pipe_id.setter
     def pipe_id(self, pipe_id):
-        """Sets the pipe_id of this AlertRule.
+        r"""Sets the pipe_id of this AlertRule.
 
         pipe_id
 
@@ -196,7 +196,7 @@ class AlertRule:
 
     @property
     def pipe_name(self):
-        """Gets the pipe_name of this AlertRule.
+        r"""Gets the pipe_name of this AlertRule.
 
         pipe_name
 
@@ -207,7 +207,7 @@ class AlertRule:
 
     @pipe_name.setter
     def pipe_name(self, pipe_name):
-        """Sets the pipe_name of this AlertRule.
+        r"""Sets the pipe_name of this AlertRule.
 
         pipe_name
 
@@ -218,7 +218,7 @@ class AlertRule:
 
     @property
     def create_by(self):
-        """Gets the create_by of this AlertRule.
+        r"""Gets the create_by of this AlertRule.
 
         create_by
 
@@ -229,7 +229,7 @@ class AlertRule:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this AlertRule.
+        r"""Sets the create_by of this AlertRule.
 
         create_by
 
@@ -240,7 +240,7 @@ class AlertRule:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AlertRule.
+        r"""Gets the create_time of this AlertRule.
 
         create_time
 
@@ -251,7 +251,7 @@ class AlertRule:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AlertRule.
+        r"""Sets the create_time of this AlertRule.
 
         create_time
 
@@ -262,7 +262,7 @@ class AlertRule:
 
     @property
     def update_by(self):
-        """Gets the update_by of this AlertRule.
+        r"""Gets the update_by of this AlertRule.
 
         update_by
 
@@ -273,7 +273,7 @@ class AlertRule:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this AlertRule.
+        r"""Sets the update_by of this AlertRule.
 
         update_by
 
@@ -284,7 +284,7 @@ class AlertRule:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AlertRule.
+        r"""Gets the update_time of this AlertRule.
 
         update_time
 
@@ -295,7 +295,7 @@ class AlertRule:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AlertRule.
+        r"""Sets the update_time of this AlertRule.
 
         update_time
 
@@ -306,7 +306,7 @@ class AlertRule:
 
     @property
     def delete_time(self):
-        """Gets the delete_time of this AlertRule.
+        r"""Gets the delete_time of this AlertRule.
 
         delete_time
 
@@ -317,7 +317,7 @@ class AlertRule:
 
     @delete_time.setter
     def delete_time(self, delete_time):
-        """Sets the delete_time of this AlertRule.
+        r"""Sets the delete_time of this AlertRule.
 
         delete_time
 
@@ -328,7 +328,7 @@ class AlertRule:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this AlertRule.
+        r"""Gets the rule_name of this AlertRule.
 
         rule_name
 
@@ -339,7 +339,7 @@ class AlertRule:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this AlertRule.
+        r"""Sets the rule_name of this AlertRule.
 
         rule_name
 
@@ -350,7 +350,7 @@ class AlertRule:
 
     @property
     def query(self):
-        """Gets the query of this AlertRule.
+        r"""Gets the query of this AlertRule.
 
         query
 
@@ -361,7 +361,7 @@ class AlertRule:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this AlertRule.
+        r"""Sets the query of this AlertRule.
 
         query
 
@@ -372,7 +372,7 @@ class AlertRule:
 
     @property
     def query_type(self):
-        """Gets the query_type of this AlertRule.
+        r"""Gets the query_type of this AlertRule.
 
         query_type. SQL, CBSL.
 
@@ -383,7 +383,7 @@ class AlertRule:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this AlertRule.
+        r"""Sets the query_type of this AlertRule.
 
         query_type. SQL, CBSL.
 
@@ -394,7 +394,7 @@ class AlertRule:
 
     @property
     def status(self):
-        """Gets the status of this AlertRule.
+        r"""Gets the status of this AlertRule.
 
         status. ENABLED, DISABLED
 
@@ -405,7 +405,7 @@ class AlertRule:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AlertRule.
+        r"""Sets the status of this AlertRule.
 
         status. ENABLED, DISABLED
 
@@ -416,7 +416,7 @@ class AlertRule:
 
     @property
     def severity(self):
-        """Gets the severity of this AlertRule.
+        r"""Gets the severity of this AlertRule.
 
         severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -427,7 +427,7 @@ class AlertRule:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this AlertRule.
+        r"""Sets the severity of this AlertRule.
 
         severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -438,7 +438,7 @@ class AlertRule:
 
     @property
     def accumulated_times(self):
-        """Gets the accumulated_times of this AlertRule.
+        r"""Gets the accumulated_times of this AlertRule.
 
         accumulated_times
 
@@ -449,7 +449,7 @@ class AlertRule:
 
     @accumulated_times.setter
     def accumulated_times(self, accumulated_times):
-        """Sets the accumulated_times of this AlertRule.
+        r"""Sets the accumulated_times of this AlertRule.
 
         accumulated_times
 
@@ -460,7 +460,7 @@ class AlertRule:
 
     @property
     def custom_properties(self):
-        """Gets the custom_properties of this AlertRule.
+        r"""Gets the custom_properties of this AlertRule.
 
         custom_properties
 
@@ -471,7 +471,7 @@ class AlertRule:
 
     @custom_properties.setter
     def custom_properties(self, custom_properties):
-        """Sets the custom_properties of this AlertRule.
+        r"""Sets the custom_properties of this AlertRule.
 
         custom_properties
 
@@ -482,7 +482,7 @@ class AlertRule:
 
     @property
     def event_grouping(self):
-        """Gets the event_grouping of this AlertRule.
+        r"""Gets the event_grouping of this AlertRule.
 
         event_grouping
 
@@ -493,7 +493,7 @@ class AlertRule:
 
     @event_grouping.setter
     def event_grouping(self, event_grouping):
-        """Sets the event_grouping of this AlertRule.
+        r"""Sets the event_grouping of this AlertRule.
 
         event_grouping
 
@@ -504,7 +504,7 @@ class AlertRule:
 
     @property
     def schedule(self):
-        """Gets the schedule of this AlertRule.
+        r"""Gets the schedule of this AlertRule.
 
         :return: The schedule of this AlertRule.
         :rtype: :class:`huaweicloudsdksa.v2.Schedule`
@@ -513,7 +513,7 @@ class AlertRule:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this AlertRule.
+        r"""Sets the schedule of this AlertRule.
 
         :param schedule: The schedule of this AlertRule.
         :type schedule: :class:`huaweicloudsdksa.v2.Schedule`
@@ -522,7 +522,7 @@ class AlertRule:
 
     @property
     def triggers(self):
-        """Gets the triggers of this AlertRule.
+        r"""Gets the triggers of this AlertRule.
 
         triggers
 
@@ -533,7 +533,7 @@ class AlertRule:
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this AlertRule.
+        r"""Sets the triggers of this AlertRule.
 
         triggers
 

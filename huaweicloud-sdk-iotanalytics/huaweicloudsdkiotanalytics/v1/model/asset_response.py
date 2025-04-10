@@ -53,7 +53,7 @@ class AssetResponse:
     }
 
     def __init__(self, asset_id=None, asset_model_id=None, asset_model_name=None, name=None, display_name=None, properties=None, analyses=None, root=None, parent=None, children=None, state=None, publish_state=None, created_time=None, modified_time=None, published_time=None):
-        """AssetResponse
+        r"""AssetResponse
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class AssetResponse:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this AssetResponse.
+        r"""Gets the asset_id of this AssetResponse.
 
         资产ID
 
@@ -152,7 +152,7 @@ class AssetResponse:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this AssetResponse.
+        r"""Sets the asset_id of this AssetResponse.
 
         资产ID
 
@@ -163,7 +163,7 @@ class AssetResponse:
 
     @property
     def asset_model_id(self):
-        """Gets the asset_model_id of this AssetResponse.
+        r"""Gets the asset_model_id of this AssetResponse.
 
         资产模型ID
 
@@ -174,7 +174,7 @@ class AssetResponse:
 
     @asset_model_id.setter
     def asset_model_id(self, asset_model_id):
-        """Sets the asset_model_id of this AssetResponse.
+        r"""Sets the asset_model_id of this AssetResponse.
 
         资产模型ID
 
@@ -185,7 +185,7 @@ class AssetResponse:
 
     @property
     def asset_model_name(self):
-        """Gets the asset_model_name of this AssetResponse.
+        r"""Gets the asset_model_name of this AssetResponse.
 
         资产模型名称
 
@@ -196,7 +196,7 @@ class AssetResponse:
 
     @asset_model_name.setter
     def asset_model_name(self, asset_model_name):
-        """Sets the asset_model_name of this AssetResponse.
+        r"""Sets the asset_model_name of this AssetResponse.
 
         资产模型名称
 
@@ -207,7 +207,7 @@ class AssetResponse:
 
     @property
     def name(self):
-        """Gets the name of this AssetResponse.
+        r"""Gets the name of this AssetResponse.
 
         资产名称
 
@@ -218,7 +218,7 @@ class AssetResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AssetResponse.
+        r"""Sets the name of this AssetResponse.
 
         资产名称
 
@@ -229,7 +229,7 @@ class AssetResponse:
 
     @property
     def display_name(self):
-        """Gets the display_name of this AssetResponse.
+        r"""Gets the display_name of this AssetResponse.
 
         资产显示名称
 
@@ -240,7 +240,7 @@ class AssetResponse:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this AssetResponse.
+        r"""Sets the display_name of this AssetResponse.
 
         资产显示名称
 
@@ -251,7 +251,7 @@ class AssetResponse:
 
     @property
     def properties(self):
-        """Gets the properties of this AssetResponse.
+        r"""Gets the properties of this AssetResponse.
 
         属性集
 
@@ -262,7 +262,7 @@ class AssetResponse:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this AssetResponse.
+        r"""Sets the properties of this AssetResponse.
 
         属性集
 
@@ -273,7 +273,7 @@ class AssetResponse:
 
     @property
     def analyses(self):
-        """Gets the analyses of this AssetResponse.
+        r"""Gets the analyses of this AssetResponse.
 
         分析任务集
 
@@ -284,7 +284,7 @@ class AssetResponse:
 
     @analyses.setter
     def analyses(self, analyses):
-        """Sets the analyses of this AssetResponse.
+        r"""Sets the analyses of this AssetResponse.
 
         分析任务集
 
@@ -295,7 +295,7 @@ class AssetResponse:
 
     @property
     def root(self):
-        """Gets the root of this AssetResponse.
+        r"""Gets the root of this AssetResponse.
 
         根资产ID
 
@@ -306,7 +306,7 @@ class AssetResponse:
 
     @root.setter
     def root(self, root):
-        """Sets the root of this AssetResponse.
+        r"""Sets the root of this AssetResponse.
 
         根资产ID
 
@@ -317,7 +317,7 @@ class AssetResponse:
 
     @property
     def parent(self):
-        """Gets the parent of this AssetResponse.
+        r"""Gets the parent of this AssetResponse.
 
         父资产ID，根资产的父资产ID为null
 
@@ -328,7 +328,7 @@ class AssetResponse:
 
     @parent.setter
     def parent(self, parent):
-        """Sets the parent of this AssetResponse.
+        r"""Sets the parent of this AssetResponse.
 
         父资产ID，根资产的父资产ID为null
 
@@ -339,7 +339,7 @@ class AssetResponse:
 
     @property
     def children(self):
-        """Gets the children of this AssetResponse.
+        r"""Gets the children of this AssetResponse.
 
         子资产ID集
 
@@ -350,7 +350,7 @@ class AssetResponse:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this AssetResponse.
+        r"""Sets the children of this AssetResponse.
 
         子资产ID集
 
@@ -361,7 +361,7 @@ class AssetResponse:
 
     @property
     def state(self):
-        """Gets the state of this AssetResponse.
+        r"""Gets the state of this AssetResponse.
 
         资产状态，正常状态（ACTIVE），异常状态（INACTIVE）；只有草稿态（SKETCH）资产有此状态；资产处于异常状态的场景有：1、该资产存在未填写设备ID的测量数据类别的属性；2、该资产存在未填写静态值的静态配置类别的属性；3、该资产存在分析任务，该分析任务的输入参数存在属性引用类型为引用其他资产属性，且没有为该输入参数配置引用的其他资产的资产ID
 
@@ -372,7 +372,7 @@ class AssetResponse:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this AssetResponse.
+        r"""Sets the state of this AssetResponse.
 
         资产状态，正常状态（ACTIVE），异常状态（INACTIVE）；只有草稿态（SKETCH）资产有此状态；资产处于异常状态的场景有：1、该资产存在未填写设备ID的测量数据类别的属性；2、该资产存在未填写静态值的静态配置类别的属性；3、该资产存在分析任务，该分析任务的输入参数存在属性引用类型为引用其他资产属性，且没有为该输入参数配置引用的其他资产的资产ID
 
@@ -383,7 +383,7 @@ class AssetResponse:
 
     @property
     def publish_state(self):
-        """Gets the publish_state of this AssetResponse.
+        r"""Gets the publish_state of this AssetResponse.
 
         资产发布状态，发布中（PUBLISHING），发布完成（PUBLISHED）；只能对草稿态（SKETCH）的根资产进行发布，也只有草稿态的根资产有此字段；如果根资产从未发布过则值为null
 
@@ -394,7 +394,7 @@ class AssetResponse:
 
     @publish_state.setter
     def publish_state(self, publish_state):
-        """Sets the publish_state of this AssetResponse.
+        r"""Sets the publish_state of this AssetResponse.
 
         资产发布状态，发布中（PUBLISHING），发布完成（PUBLISHED）；只能对草稿态（SKETCH）的根资产进行发布，也只有草稿态的根资产有此字段；如果根资产从未发布过则值为null
 
@@ -405,7 +405,7 @@ class AssetResponse:
 
     @property
     def created_time(self):
-        """Gets the created_time of this AssetResponse.
+        r"""Gets the created_time of this AssetResponse.
 
         创建时间，格式\"yyyy-MM-dd'T'HH:mm:ss'Z'\"
 
@@ -416,7 +416,7 @@ class AssetResponse:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this AssetResponse.
+        r"""Sets the created_time of this AssetResponse.
 
         创建时间，格式\"yyyy-MM-dd'T'HH:mm:ss'Z'\"
 
@@ -427,7 +427,7 @@ class AssetResponse:
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this AssetResponse.
+        r"""Gets the modified_time of this AssetResponse.
 
         修改时间，格式\"yyyy-MM-dd'T'HH:mm:ss'Z'\"
 
@@ -438,7 +438,7 @@ class AssetResponse:
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this AssetResponse.
+        r"""Sets the modified_time of this AssetResponse.
 
         修改时间，格式\"yyyy-MM-dd'T'HH:mm:ss'Z'\"
 
@@ -449,7 +449,7 @@ class AssetResponse:
 
     @property
     def published_time(self):
-        """Gets the published_time of this AssetResponse.
+        r"""Gets the published_time of this AssetResponse.
 
         发布时间，只能对草稿态（SKETCH）的根资产进行发布，也只有草稿态的根资产有此字段；如果从未发布过则值为null；格式\"yyyy-MM-dd'T'HH:mm:ss'Z'\"
 
@@ -460,7 +460,7 @@ class AssetResponse:
 
     @published_time.setter
     def published_time(self, published_time):
-        """Sets the published_time of this AssetResponse.
+        r"""Sets the published_time of this AssetResponse.
 
         发布时间，只能对草稿态（SKETCH）的根资产进行发布，也只有草稿态的根资产有此字段；如果从未发布过则值为null；格式\"yyyy-MM-dd'T'HH:mm:ss'Z'\"
 

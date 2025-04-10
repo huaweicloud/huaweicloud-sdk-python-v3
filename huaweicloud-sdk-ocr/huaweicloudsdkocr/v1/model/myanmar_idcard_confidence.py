@@ -45,7 +45,7 @@ class MyanmarIdcardConfidence:
     }
 
     def __init__(self, nrc_id=None, issue_date=None, name=None, birth=None, bloodlines_religion=None, height=None, blood_group=None, card_id=None, nrc_id_back=None, profession=None, address=None):
-        """MyanmarIdcardConfidence
+        r"""MyanmarIdcardConfidence
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class MyanmarIdcardConfidence:
 
     @property
     def nrc_id(self):
-        """Gets the nrc_id of this MyanmarIdcardConfidence.
+        r"""Gets the nrc_id of this MyanmarIdcardConfidence.
 
         身份证号码置信度。 
 
@@ -124,7 +124,7 @@ class MyanmarIdcardConfidence:
 
     @nrc_id.setter
     def nrc_id(self, nrc_id):
-        """Sets the nrc_id of this MyanmarIdcardConfidence.
+        r"""Sets the nrc_id of this MyanmarIdcardConfidence.
 
         身份证号码置信度。 
 
@@ -135,7 +135,7 @@ class MyanmarIdcardConfidence:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this MyanmarIdcardConfidence.
+        r"""Gets the issue_date of this MyanmarIdcardConfidence.
 
         签发日期置信度。 
 
@@ -146,7 +146,7 @@ class MyanmarIdcardConfidence:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this MyanmarIdcardConfidence.
+        r"""Sets the issue_date of this MyanmarIdcardConfidence.
 
         签发日期置信度。 
 
@@ -157,7 +157,7 @@ class MyanmarIdcardConfidence:
 
     @property
     def name(self):
-        """Gets the name of this MyanmarIdcardConfidence.
+        r"""Gets the name of this MyanmarIdcardConfidence.
 
         姓名置信度。 
 
@@ -168,7 +168,7 @@ class MyanmarIdcardConfidence:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MyanmarIdcardConfidence.
+        r"""Sets the name of this MyanmarIdcardConfidence.
 
         姓名置信度。 
 
@@ -179,7 +179,7 @@ class MyanmarIdcardConfidence:
 
     @property
     def birth(self):
-        """Gets the birth of this MyanmarIdcardConfidence.
+        r"""Gets the birth of this MyanmarIdcardConfidence.
 
         出生日期置信度。 
 
@@ -190,7 +190,7 @@ class MyanmarIdcardConfidence:
 
     @birth.setter
     def birth(self, birth):
-        """Sets the birth of this MyanmarIdcardConfidence.
+        r"""Sets the birth of this MyanmarIdcardConfidence.
 
         出生日期置信度。 
 
@@ -201,7 +201,7 @@ class MyanmarIdcardConfidence:
 
     @property
     def bloodlines_religion(self):
-        """Gets the bloodlines_religion of this MyanmarIdcardConfidence.
+        r"""Gets the bloodlines_religion of this MyanmarIdcardConfidence.
 
         族群或宗教置信度。 
 
@@ -212,7 +212,7 @@ class MyanmarIdcardConfidence:
 
     @bloodlines_religion.setter
     def bloodlines_religion(self, bloodlines_religion):
-        """Sets the bloodlines_religion of this MyanmarIdcardConfidence.
+        r"""Sets the bloodlines_religion of this MyanmarIdcardConfidence.
 
         族群或宗教置信度。 
 
@@ -223,7 +223,7 @@ class MyanmarIdcardConfidence:
 
     @property
     def height(self):
-        """Gets the height of this MyanmarIdcardConfidence.
+        r"""Gets the height of this MyanmarIdcardConfidence.
 
         身高置信度。 
 
@@ -234,7 +234,7 @@ class MyanmarIdcardConfidence:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this MyanmarIdcardConfidence.
+        r"""Sets the height of this MyanmarIdcardConfidence.
 
         身高置信度。 
 
@@ -245,7 +245,7 @@ class MyanmarIdcardConfidence:
 
     @property
     def blood_group(self):
-        """Gets the blood_group of this MyanmarIdcardConfidence.
+        r"""Gets the blood_group of this MyanmarIdcardConfidence.
 
         血型置信度。 
 
@@ -256,7 +256,7 @@ class MyanmarIdcardConfidence:
 
     @blood_group.setter
     def blood_group(self, blood_group):
-        """Sets the blood_group of this MyanmarIdcardConfidence.
+        r"""Sets the blood_group of this MyanmarIdcardConfidence.
 
         血型置信度。 
 
@@ -267,7 +267,7 @@ class MyanmarIdcardConfidence:
 
     @property
     def card_id(self):
-        """Gets the card_id of this MyanmarIdcardConfidence.
+        r"""Gets the card_id of this MyanmarIdcardConfidence.
 
         身份证的卡号（背面）置信度。 
 
@@ -278,7 +278,7 @@ class MyanmarIdcardConfidence:
 
     @card_id.setter
     def card_id(self, card_id):
-        """Sets the card_id of this MyanmarIdcardConfidence.
+        r"""Sets the card_id of this MyanmarIdcardConfidence.
 
         身份证的卡号（背面）置信度。 
 
@@ -289,7 +289,7 @@ class MyanmarIdcardConfidence:
 
     @property
     def nrc_id_back(self):
-        """Gets the nrc_id_back of this MyanmarIdcardConfidence.
+        r"""Gets the nrc_id_back of this MyanmarIdcardConfidence.
 
         背面的身份证号码。 
 
@@ -300,7 +300,7 @@ class MyanmarIdcardConfidence:
 
     @nrc_id_back.setter
     def nrc_id_back(self, nrc_id_back):
-        """Sets the nrc_id_back of this MyanmarIdcardConfidence.
+        r"""Sets the nrc_id_back of this MyanmarIdcardConfidence.
 
         背面的身份证号码。 
 
@@ -311,7 +311,7 @@ class MyanmarIdcardConfidence:
 
     @property
     def profession(self):
-        """Gets the profession of this MyanmarIdcardConfidence.
+        r"""Gets the profession of this MyanmarIdcardConfidence.
 
         职业置信度。 
 
@@ -322,7 +322,7 @@ class MyanmarIdcardConfidence:
 
     @profession.setter
     def profession(self, profession):
-        """Sets the profession of this MyanmarIdcardConfidence.
+        r"""Sets the profession of this MyanmarIdcardConfidence.
 
         职业置信度。 
 
@@ -333,7 +333,7 @@ class MyanmarIdcardConfidence:
 
     @property
     def address(self):
-        """Gets the address of this MyanmarIdcardConfidence.
+        r"""Gets the address of this MyanmarIdcardConfidence.
 
         地址置信度。 
 
@@ -344,7 +344,7 @@ class MyanmarIdcardConfidence:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this MyanmarIdcardConfidence.
+        r"""Sets the address of this MyanmarIdcardConfidence.
 
         地址置信度。 
 

@@ -27,7 +27,7 @@ class CreateAccessControlRequestBody:
     }
 
     def __init__(self, type=None, ip_list=None):
-        """CreateAccessControlRequestBody
+        r"""CreateAccessControlRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateAccessControlRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateAccessControlRequestBody.
+        r"""Gets the type of this CreateAccessControlRequestBody.
 
         访问控制方式。 取值： - white：表示白名单。 - black：表示黑名单。
 
@@ -59,7 +59,7 @@ class CreateAccessControlRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateAccessControlRequestBody.
+        r"""Sets the type of this CreateAccessControlRequestBody.
 
         访问控制方式。 取值： - white：表示白名单。 - black：表示黑名单。
 
@@ -70,7 +70,7 @@ class CreateAccessControlRequestBody:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this CreateAccessControlRequestBody.
+        r"""Gets the ip_list of this CreateAccessControlRequestBody.
 
         控制访问的IP地址数组，最多可添加300个IP地址或网段。
 
@@ -81,7 +81,7 @@ class CreateAccessControlRequestBody:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this CreateAccessControlRequestBody.
+        r"""Sets the ip_list of this CreateAccessControlRequestBody.
 
         控制访问的IP地址数组，最多可添加300个IP地址或网段。
 

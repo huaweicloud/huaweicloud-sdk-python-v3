@@ -34,7 +34,7 @@ class EiHealthClient(Client):
         return client_builder
 
     def add_drug_database_file(self, request):
-        """数据库追加文件
+        r"""数据库追加文件
 
         数据库追加文件
         
@@ -101,7 +101,7 @@ class EiHealthClient(Client):
         return http_info
 
     def batch_cancel_job(self, request):
-        """批量取消作业
+        r"""批量取消作业
 
         批量取消作业
         
@@ -170,7 +170,7 @@ class EiHealthClient(Client):
         return http_info
 
     def batch_delete_data(self, request):
-        """批量删除项目数据
+        r"""批量删除项目数据
 
         批量删除项目数据
         
@@ -237,7 +237,7 @@ class EiHealthClient(Client):
         return http_info
 
     def batch_delete_job(self, request):
-        """批量删除作业
+        r"""批量删除作业
 
         批量删除作业
         
@@ -304,7 +304,7 @@ class EiHealthClient(Client):
         return http_info
 
     def batch_delete_label(self, request):
-        """批量删除标签
+        r"""批量删除标签
 
         批量删除标签
         
@@ -369,7 +369,7 @@ class EiHealthClient(Client):
         return http_info
 
     def batch_delete_member(self, request):
-        """批量删除项目成员
+        r"""批量删除项目成员
 
         批量删除项目成员
         
@@ -436,7 +436,7 @@ class EiHealthClient(Client):
         return http_info
 
     def batch_delete_notice(self, request):
-        """批量删除通知消息
+        r"""批量删除通知消息
 
         批量删除通知消息
         
@@ -501,7 +501,7 @@ class EiHealthClient(Client):
         return http_info
 
     def batch_delete_tag(self, request):
-        """批量删除镜像tag
+        r"""批量删除镜像tag
 
         批量删除镜像tag
         
@@ -570,7 +570,7 @@ class EiHealthClient(Client):
         return http_info
 
     def batch_download_resource_stat_data(self, request):
-        """批量获取资源统计数据
+        r"""批量获取资源统计数据
 
         批量获取资源统计数据
         
@@ -635,7 +635,7 @@ class EiHealthClient(Client):
         return http_info
 
     def batch_import_app(self, request):
-        """导入应用
+        r"""导入应用
 
         批量导入应用
         
@@ -702,7 +702,7 @@ class EiHealthClient(Client):
         return http_info
 
     def batch_retry_job(self, request):
-        """批量重试作业
+        r"""批量重试作业
 
         批量重试作业
         
@@ -769,7 +769,7 @@ class EiHealthClient(Client):
         return http_info
 
     def batch_update_node_label(self, request):
-        """设置节点标签
+        r"""设置节点标签
 
         设置节点标签
         
@@ -836,7 +836,7 @@ class EiHealthClient(Client):
         return http_info
 
     def batch_update_notice(self, request):
-        """批量更新消息
+        r"""批量更新消息
 
         批量更新消息
         
@@ -901,7 +901,7 @@ class EiHealthClient(Client):
         return http_info
 
     def cancel_data_job(self, request):
-        """取消数据作业
+        r"""取消数据作业
 
         取消数据作业
         
@@ -968,7 +968,7 @@ class EiHealthClient(Client):
         return http_info
 
     def cancel_drug_job(self, request):
-        """取消药物作业
+        r"""取消药物作业
 
         取消药物作业
         
@@ -1035,7 +1035,7 @@ class EiHealthClient(Client):
         return http_info
 
     def cancel_job(self, request):
-        """取消或强制停止作业调度
+        r"""取消或强制停止作业调度
 
         取消或强制作业调度
         
@@ -1104,7 +1104,7 @@ class EiHealthClient(Client):
         return http_info
 
     def change_password(self, request):
-        """修改密码
+        r"""修改密码
 
         修改密码
         
@@ -1171,7 +1171,7 @@ class EiHealthClient(Client):
         return http_info
 
     def check_email_connection(self, request):
-        """邮箱连通性测试
+        r"""邮箱连通性测试
 
         邮箱连通性测试
         
@@ -1236,7 +1236,7 @@ class EiHealthClient(Client):
         return http_info
 
     def check_token_verification(self, request):
-        """校验token
+        r"""校验token
 
         校验token是否可访问当前环境
         
@@ -1299,7 +1299,7 @@ class EiHealthClient(Client):
         return http_info
 
     def copy_data(self, request):
-        """复制项目数据
+        r"""复制项目数据
 
         复制项目数据
         
@@ -1366,7 +1366,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_admet_job(self, request):
-        """创建分子属性预测作业
+        r"""创建分子属性预测作业
 
         创建分子属性预测作业
         
@@ -1433,7 +1433,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_app(self, request):
-        """创建应用
+        r"""创建应用
 
         创建应用
         
@@ -1500,7 +1500,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_auto_job(self, request):
-        """创建自动作业模板
+        r"""创建自动作业模板
 
         创建自动作业模板
         
@@ -1567,7 +1567,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_backup(self, request):
-        """归档数据
+        r"""归档数据
 
         将需要归档的重要数据拷贝到数据归档桶
         
@@ -1634,7 +1634,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_cluster_job(self, request):
-        """创建分子聚类作业
+        r"""创建分子聚类作业
 
         创建分子聚类作业
         
@@ -1703,7 +1703,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_clustering_job(self, request):
-        """创建聚类分析作业
+        r"""创建聚类分析作业
 
         创建聚类分析作业。
         
@@ -1770,7 +1770,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_code(self, request):
-        """发送验证码
+        r"""发送验证码
 
         发送验证码
         
@@ -1837,7 +1837,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_computing_resource(self, request):
-        """购买计算资源
+        r"""购买计算资源
 
         购买计算资源
         
@@ -1902,7 +1902,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_data(self, request):
-        """创建文件夹
+        r"""创建文件夹
 
         创建文件夹
         
@@ -1969,7 +1969,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_database_data(self, request):
-        """插入单条数据
+        r"""插入单条数据
 
         插入单条数据
         
@@ -2038,7 +2038,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_database_resource(self, request):
-        """购买数据库资源
+        r"""购买数据库资源
 
         购买数据库资源
         
@@ -2103,7 +2103,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_docking_job(self, request):
-        """创建分子对接作业
+        r"""创建分子对接作业
 
         创建分子对接作业
         
@@ -2170,7 +2170,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_drug_database(self, request):
-        """创建数据库
+        r"""创建数据库
 
         创建数据库
         
@@ -2235,7 +2235,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_drug_model(self, request):
-        """创建模型
+        r"""创建模型
 
         创建模型
         
@@ -2300,7 +2300,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_favorite(self, request):
-        """添加收藏
+        r"""添加收藏
 
         添加收藏。
         
@@ -2367,7 +2367,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_fep_job(self, request):
-        """创建自由能微扰作业
+        r"""创建自由能微扰作业
 
         创建自由能微扰作业
         
@@ -2434,7 +2434,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_gen_job(self, request):
-        """创建分子生成作业
+        r"""创建分子生成作业
 
         创建分子生成作业
         
@@ -2501,7 +2501,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_image(self, request):
-        """创建镜像
+        r"""创建镜像
 
         创建镜像
         
@@ -2568,7 +2568,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_instance(self, request):
-        """创建数据库实例
+        r"""创建数据库实例
 
         创建数据库实例
         
@@ -2635,7 +2635,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_label(self, request):
-        """创建标签
+        r"""创建标签
 
         创建标签
         
@@ -2700,7 +2700,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_label_page(self, request):
-        """创建标签页面
+        r"""创建标签页面
 
         创建标签页面
         
@@ -2767,7 +2767,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_mol_batch_download_task(self, request):
-        """创建分子或分子复合物批量下载任务
+        r"""创建分子或分子复合物批量下载任务
 
         创建分子或分子复合物批量下载任务
         
@@ -2834,7 +2834,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_mol_docking_job(self, request):
-        """单分子预对接
+        r"""单分子预对接
 
         单分子预对接。
         
@@ -2901,7 +2901,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_optm_job(self, request):
-        """创建分子优化作业
+        r"""创建分子优化作业
 
         创建分子优化作业
         
@@ -2968,7 +2968,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_performance_resource(self, request):
-        """购买性能加速资源
+        r"""购买性能加速资源
 
         购买性能加速资源
         
@@ -3033,7 +3033,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_pocket_detection_job(self, request):
-        """创建靶点口袋发现作业
+        r"""创建靶点口袋发现作业
 
         创建靶点口袋发现作业
         
@@ -3100,7 +3100,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_pocket_mol_design_job(self, request):
-        """创建靶点口袋分子设计作业
+        r"""创建靶点口袋分子设计作业
 
         创建靶点口袋分子设计作业
         
@@ -3167,7 +3167,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_project(self, request):
-        """创建项目
+        r"""创建项目
 
         创建项目
         
@@ -3232,7 +3232,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_scale_out_policy(self, request):
-        """创建扩容策略
+        r"""创建扩容策略
 
         创建扩容策略
         
@@ -3297,7 +3297,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_search_job(self, request):
-        """创建分子搜索作业
+        r"""创建分子搜索作业
 
         创建分子搜索作业
         
@@ -3364,7 +3364,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_study(self, request):
-        """创建study
+        r"""创建study
 
         创建study
         
@@ -3431,7 +3431,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_study_job(self, request):
-        """创建study作业
+        r"""创建study作业
 
         创建study作业
         
@@ -3500,7 +3500,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_synthesis_job(self, request):
-        """创建分子合成路径规划作业
+        r"""创建分子合成路径规划作业
 
         创建分子合成路径规划作业
         
@@ -3567,7 +3567,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_target_opt_job(self, request):
-        """创建靶点优化作业
+        r"""创建靶点优化作业
 
         创建靶点优化作业
         
@@ -3634,7 +3634,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_template(self, request):
-        """创建模板
+        r"""创建模板
 
         创建模板
         
@@ -3701,7 +3701,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_user(self, request):
-        """创建用户
+        r"""创建用户
 
         创建用户
         
@@ -3766,7 +3766,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_workflow(self, request):
-        """创建流程
+        r"""创建流程
 
         创建流程
         
@@ -3833,7 +3833,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_app(self, request):
-        """删除应用
+        r"""删除应用
 
         删除应用
         
@@ -3900,7 +3900,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_asset_version(self, request):
-        """删除资产指定版本
+        r"""删除资产指定版本
 
         删除资产指定版本
         
@@ -3967,7 +3967,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_auto_job(self, request):
-        """删除自动作业模板
+        r"""删除自动作业模板
 
         删除自动作业模板
         
@@ -4034,7 +4034,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_backup(self, request):
-        """删除归档
+        r"""删除归档
 
         删除指定的归档
         
@@ -4101,7 +4101,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_computing_resource(self, request):
-        """删除计算资源
+        r"""删除计算资源
 
         删除计算资源
         
@@ -4166,7 +4166,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_data_job(self, request):
-        """删除数据作业
+        r"""删除数据作业
 
         删除数据作业
         
@@ -4233,7 +4233,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_database_data(self, request):
-        """删除数据
+        r"""删除数据
 
         删除指定行数据
         
@@ -4302,7 +4302,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_database_resource(self, request):
-        """删除数据库资源
+        r"""删除数据库资源
 
         删除数据库资源
         
@@ -4367,7 +4367,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_drug_database(self, request):
-        """删除数据库
+        r"""删除数据库
 
         删除数据库
         
@@ -4432,7 +4432,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_drug_job(self, request):
-        """删除药物作业
+        r"""删除药物作业
 
         删除药物作业
         
@@ -4499,7 +4499,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_drug_model(self, request):
-        """删除模型
+        r"""删除模型
 
         删除模型
         
@@ -4564,7 +4564,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_favorite(self, request):
-        """取消收藏
+        r"""取消收藏
 
         取消收藏。
         
@@ -4631,7 +4631,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_image(self, request):
-        """删除镜像仓库
+        r"""删除镜像仓库
 
         删除镜像仓库
         
@@ -4698,7 +4698,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_instance(self, request):
-        """删除实例
+        r"""删除实例
 
         删除实例
         
@@ -4765,7 +4765,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_job(self, request):
-        """删除作业
+        r"""删除作业
 
         删除作业
         
@@ -4832,7 +4832,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_label(self, request):
-        """删除标签
+        r"""删除标签
 
         删除标签
         
@@ -4897,7 +4897,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_label_page(self, request):
-        """删除标签页面
+        r"""删除标签页面
 
         删除标签页面
         
@@ -4964,7 +4964,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_member(self, request):
-        """移除项目成员
+        r"""移除项目成员
 
         移除项目成员
         
@@ -5031,7 +5031,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_message_email_config(self, request):
-        """删除消息邮件配置
+        r"""删除消息邮件配置
 
         删除消息邮件配置
         
@@ -5094,7 +5094,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_performance_resource(self, request):
-        """删除性能加速资源
+        r"""删除性能加速资源
 
         删除性能加速资源
         
@@ -5159,7 +5159,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_project(self, request):
-        """删除项目
+        r"""删除项目
 
         删除项目
         
@@ -5226,7 +5226,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_scale_out_policy(self, request):
-        """删除扩容策略
+        r"""删除扩容策略
 
         删除扩容策略
         
@@ -5291,7 +5291,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_star(self, request):
-        """取消收藏
+        r"""取消收藏
 
         取消收藏
         
@@ -5356,7 +5356,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_study(self, request):
-        """删除study
+        r"""删除study
 
         删除study
         
@@ -5423,7 +5423,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_tag(self, request):
-        """删除指定镜像tag
+        r"""删除指定镜像tag
 
         删除指定镜像tag
         
@@ -5492,7 +5492,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_template(self, request):
-        """删除模板
+        r"""删除模板
 
         删除模板
         
@@ -5559,7 +5559,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_user(self, request):
-        """删除用户
+        r"""删除用户
 
         删除用户
         
@@ -5624,7 +5624,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_workflow(self, request):
-        """删除流程
+        r"""删除流程
 
         删除流程
         
@@ -5691,7 +5691,7 @@ class EiHealthClient(Client):
         return http_info
 
     def download_data_job_log(self, request):
-        """下载数据作业执行日志
+        r"""下载数据作业执行日志
 
         下载数据作业执行日志
         
@@ -5758,7 +5758,7 @@ class EiHealthClient(Client):
         return http_info
 
     def download_data_trace(self, request):
-        """下载近一万条审计日志
+        r"""下载近一万条审计日志
 
         下载近一万条审计日志
         
@@ -5825,7 +5825,7 @@ class EiHealthClient(Client):
         return http_info
 
     def execute_asset_action(self, request):
-        """操作资产发布状态
+        r"""操作资产发布状态
 
         操作资产发布状态
         
@@ -5894,7 +5894,7 @@ class EiHealthClient(Client):
         return http_info
 
     def execute_job(self, request):
-        """启动作业
+        r"""启动作业
 
         启动作业
         
@@ -5961,7 +5961,7 @@ class EiHealthClient(Client):
         return http_info
 
     def generate_complex_combine(self, request):
-        """将传入的蛋白和小分子拼接成复合物结构
+        r"""将传入的蛋白和小分子拼接成复合物结构
 
         将传入的蛋白和小分子拼接成复合物结构
         
@@ -6028,7 +6028,7 @@ class EiHealthClient(Client):
         return http_info
 
     def generate_pocket_file(self, request):
-        """根据center、size、padding参数生成可渲染的口袋文件内容
+        r"""根据center、size、padding参数生成可渲染的口袋文件内容
 
         根据center、size、padding参数生成可渲染的口袋文件内容
         
@@ -6095,7 +6095,7 @@ class EiHealthClient(Client):
         return http_info
 
     def generate_surface_points(self, request):
-        """根据表面离散点坐标集生成可渲染的文件内容
+        r"""根据表面离散点坐标集生成可渲染的文件内容
 
         根据表面离散点坐标集生成可渲染的文件内容
         
@@ -6162,7 +6162,7 @@ class EiHealthClient(Client):
         return http_info
 
     def import_data(self, request):
-        """导入项目数据
+        r"""导入项目数据
 
         导入项目数据
         
@@ -6229,7 +6229,7 @@ class EiHealthClient(Client):
         return http_info
 
     def import_database_data(self, request):
-        """导入数据
+        r"""导入数据
 
         导入数据
         
@@ -6298,7 +6298,7 @@ class EiHealthClient(Client):
         return http_info
 
     def import_image(self, request):
-        """导入镜像
+        r"""导入镜像
 
         导入镜像
         
@@ -6365,7 +6365,7 @@ class EiHealthClient(Client):
         return http_info
 
     def import_network_data(self, request):
-        """导入网上数据
+        r"""导入网上数据
 
         导入网上数据
         
@@ -6432,7 +6432,7 @@ class EiHealthClient(Client):
         return http_info
 
     def import_template(self, request):
-        """从其他项目导入模板
+        r"""从其他项目导入模板
 
         从其他项目导入模板
         
@@ -6499,7 +6499,7 @@ class EiHealthClient(Client):
         return http_info
 
     def import_user(self, request):
-        """导入用户
+        r"""导入用户
 
         导入用户
         
@@ -6564,7 +6564,7 @@ class EiHealthClient(Client):
         return http_info
 
     def import_workflow(self, request):
-        """导入流程
+        r"""导入流程
 
         导入流程
         
@@ -6631,7 +6631,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_app(self, request):
-        """获取应用列表
+        r"""获取应用列表
 
         获取应用列表
         
@@ -6700,7 +6700,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_archive_configs(self, request):
-        """获取跨域归档配置
+        r"""获取跨域归档配置
 
         获取跨域归档配置
         
@@ -6763,7 +6763,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_asset(self, request):
-        """获取资产列表
+        r"""获取资产列表
 
         获取资产列表
         
@@ -6842,7 +6842,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_auto_job(self, request):
-        """获取自动作业模板列表
+        r"""获取自动作业模板列表
 
         获取自动作业模板列表
         
@@ -6917,7 +6917,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_backup(self, request):
-        """查询归档列表
+        r"""查询归档列表
 
         分页查询用户管理的项目的所有历史归档记录
         
@@ -6990,7 +6990,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_base_model(self, request):
-        """获取基模型列表
+        r"""获取基模型列表
 
         获取基模型列表
         
@@ -7061,7 +7061,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_bucket(self, request):
-        """获取桶列表
+        r"""获取桶列表
 
         获取桶列表(包含当前项目桶和引用项目桶)
         
@@ -7126,7 +7126,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_checkpoint(self, request):
-        """获取数据作业执行日志
+        r"""获取数据作业执行日志
 
         获取数据作业执行日志
         
@@ -7193,7 +7193,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_cluster_all_node_label(self, request):
-        """获取节点标签集
+        r"""获取节点标签集
 
         获取节点标签集
         
@@ -7256,7 +7256,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_computing_resource_flavors(self, request):
-        """查询计算资源规格
+        r"""查询计算资源规格
 
         查询计算资源规格
         
@@ -7321,7 +7321,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_computing_resources(self, request):
-        """查询计算资源
+        r"""查询计算资源
 
         查询计算资源
         
@@ -7384,7 +7384,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_data(self, request):
-        """查询数据列表
+        r"""查询数据列表
 
         查询指定目录下的数据列表，如果不指定默认查询根目录
         
@@ -7463,7 +7463,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_data_job(self, request):
-        """获取数据作业列表
+        r"""获取数据作业列表
 
         获取数据作业列表
         
@@ -7552,7 +7552,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_database_data(self, request):
-        """查询数据
+        r"""查询数据
 
         查询数据
         
@@ -7629,7 +7629,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_database_resource(self, request):
-        """查询数据库资源
+        r"""查询数据库资源
 
         查询数据库资源
         
@@ -7692,7 +7692,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_database_resource_flavor(self, request):
-        """获取数据库资源规格列表
+        r"""获取数据库资源规格列表
 
         获取数据库资源规格列表
         
@@ -7755,7 +7755,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_drug_database(self, request):
-        """获取数据库列表
+        r"""获取数据库列表
 
         获取数据库列表
         
@@ -7830,7 +7830,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_drug_job(self, request):
-        """获取药物作业列表
+        r"""获取药物作业列表
 
         获取药物作业列表
         
@@ -7924,7 +7924,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_drug_model(self, request):
-        """获取模型列表
+        r"""获取模型列表
 
         获取模型列表
         
@@ -8017,7 +8017,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_favorite(self, request):
-        """获取收藏夹列表
+        r"""获取收藏夹列表
 
         获取收藏夹列表。
         
@@ -8107,7 +8107,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_global_workflow_statistic(self, request):
-        """统计全局流程、作业信息
+        r"""统计全局流程、作业信息
 
         统计全局流程、作业信息
         
@@ -8170,7 +8170,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_iam_group_users(self, request):
-        """查询IAM用户组的用户列表
+        r"""查询IAM用户组的用户列表
 
         查询IAM用户组的用户列表
         
@@ -8235,7 +8235,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_iam_groups(self, request):
-        """查询IAM用户组列表
+        r"""查询IAM用户组列表
 
         查询IAM用户组列表
         
@@ -8298,7 +8298,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_iam_users(self, request):
-        """查询IAM用户列表
+        r"""查询IAM用户列表
 
         查询IAM用户列表
         
@@ -8361,7 +8361,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_image(self, request):
-        """获取镜像列表
+        r"""获取镜像列表
 
         获取镜像列表
         
@@ -8432,7 +8432,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_image_tag(self, request):
-        """获取指定镜像的tag列表
+        r"""获取指定镜像的tag列表
 
         获取指定镜像的tag列表
         
@@ -8499,7 +8499,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_instance(self, request):
-        """获取实例列表
+        r"""获取实例列表
 
         获取实例列表
         
@@ -8564,7 +8564,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_job(self, request):
-        """获取作业列表
+        r"""获取作业列表
 
         获取作业列表
         
@@ -8656,7 +8656,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_label(self, request):
-        """获取标签列表
+        r"""获取标签列表
 
         获取标签列表
         
@@ -8719,7 +8719,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_label_page(self, request):
-        """获取标签页面列表
+        r"""获取标签页面列表
 
         获取标签页面列表
         
@@ -8784,7 +8784,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_message(self, request):
-        """获取消息列表
+        r"""获取消息列表
 
         从消息中心获取当前用户有权限查看的消息列表
         
@@ -8861,7 +8861,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_message_statistics(self, request):
-        """统计消息信息
+        r"""统计消息信息
 
         统计消息信息
         
@@ -8924,7 +8924,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_mfa(self, request):
-        """获取可用的认证方法
+        r"""获取可用的认证方法
 
         获取可用的认证方法
         
@@ -8989,7 +8989,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_node_label(self, request):
-        """获取节点标签集
+        r"""获取节点标签集
 
         获取节点标签集
         
@@ -9054,7 +9054,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_nodes(self, request):
-        """获取策略关联计算资源列表
+        r"""获取策略关联计算资源列表
 
         获取策略关联计算资源列表
         
@@ -9119,7 +9119,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_notice(self, request):
-        """获取通知消息列表
+        r"""获取通知消息列表
 
         获取通知消息列表
         
@@ -9188,7 +9188,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_performance_resource_stat(self, request):
-        """获取性能加速资源上统计信息
+        r"""获取性能加速资源上统计信息
 
         获取性能加速资源上统计信息
         
@@ -9255,7 +9255,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_performance_resources(self, request):
-        """查询性能加速资源
+        r"""查询性能加速资源
 
         查询性能加速资源
         
@@ -9318,7 +9318,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_policy_events(self, request):
-        """获取策略事件
+        r"""获取策略事件
 
         获取策略事件
         
@@ -9383,7 +9383,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_preset_label(self, request):
-        """获取预置标签列表
+        r"""获取预置标签列表
 
         获取预置标签列表
         
@@ -9446,7 +9446,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_project(self, request):
-        """获取项目列表
+        r"""获取项目列表
 
         获取项目列表
         
@@ -9509,7 +9509,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_property(self, request):
-        """获取属性值列表
+        r"""获取属性值列表
 
         获取属性值列表
         
@@ -9574,7 +9574,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_quota(self, request):
-        """获取当前系统配额及资源使用情况
+        r"""获取当前系统配额及资源使用情况
 
         获取当前系统配额及资源使用情况
         
@@ -9637,7 +9637,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_scale_out_policy(self, request):
-        """查询扩容策略列表
+        r"""查询扩容策略列表
 
         查询扩容策略列表
         
@@ -9700,7 +9700,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_scaling_history(self, request):
-        """获取策略伸缩历史
+        r"""获取策略伸缩历史
 
         获取策略伸缩历史
         
@@ -9765,7 +9765,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_star(self, request):
-        """获取收藏资产列表
+        r"""获取收藏资产列表
 
         获取收藏资产列表
         
@@ -9828,7 +9828,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_storage_resources(self, request):
-        """查询存储资源
+        r"""查询存储资源
 
         查询存储资源
         
@@ -9891,7 +9891,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_study(self, request):
-        """列举study
+        r"""列举study
 
         列举study
         
@@ -9954,7 +9954,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_study_job(self, request):
-        """列举study所有作业
+        r"""列举study所有作业
 
         列举study所有作业
         
@@ -10021,7 +10021,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_template(self, request):
-        """查询模板列表
+        r"""查询模板列表
 
         查询模板列表
         
@@ -10086,7 +10086,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_user(self, request):
-        """获取用户列表
+        r"""获取用户列表
 
         获取用户列表
         
@@ -10149,7 +10149,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_vendor(self, request):
-        """获取供应商列表
+        r"""获取供应商列表
 
         获取供应商列表
         
@@ -10212,7 +10212,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_workflow(self, request):
-        """获取流程列表
+        r"""获取流程列表
 
         获取流程列表
         
@@ -10281,7 +10281,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_workflow_statistic(self, request):
-        """统计应用、流程、作业数目
+        r"""统计应用、流程、作业数目
 
         统计应用、流程、作业数目
         
@@ -10346,7 +10346,7 @@ class EiHealthClient(Client):
         return http_info
 
     def publish_app(self, request):
-        """发布应用
+        r"""发布应用
 
         发布应用
         
@@ -10415,7 +10415,7 @@ class EiHealthClient(Client):
         return http_info
 
     def publish_data(self, request):
-        """发布数据资产
+        r"""发布数据资产
 
         发布数据资产
         
@@ -10482,7 +10482,7 @@ class EiHealthClient(Client):
         return http_info
 
     def publish_image(self, request):
-        """发布镜像
+        r"""发布镜像
 
         发布镜像
         
@@ -10549,7 +10549,7 @@ class EiHealthClient(Client):
         return http_info
 
     def publish_workflow(self, request):
-        """发布流程
+        r"""发布流程
 
         发布流程
         
@@ -10618,7 +10618,7 @@ class EiHealthClient(Client):
         return http_info
 
     def quote_data(self, request):
-        """引用项目数据
+        r"""引用项目数据
 
         引用项目数据
         
@@ -10685,7 +10685,7 @@ class EiHealthClient(Client):
         return http_info
 
     def quote_instance(self, request):
-        """引用数据库实例
+        r"""引用数据库实例
 
         引用数据库实例
         
@@ -10752,7 +10752,7 @@ class EiHealthClient(Client):
         return http_info
 
     def reboot_node(self, request):
-        """重启计算资源
+        r"""重启计算资源
 
         重启计算资源
         
@@ -10819,7 +10819,7 @@ class EiHealthClient(Client):
         return http_info
 
     def restore_backup(self, request):
-        """恢复归档
+        r"""恢复归档
 
         将指定的归档数据拷贝到目标项目的某个目录下
         
@@ -10888,7 +10888,7 @@ class EiHealthClient(Client):
         return http_info
 
     def retry_data_job(self, request):
-        """重试数据作业
+        r"""重试数据作业
 
         重试数据作业
         
@@ -10955,7 +10955,7 @@ class EiHealthClient(Client):
         return http_info
 
     def retry_job(self, request):
-        """重试作业
+        r"""重试作业
 
         重试作业
         
@@ -11022,7 +11022,7 @@ class EiHealthClient(Client):
         return http_info
 
     def run_fasta_preprocess(self, request):
-        """受体预处理（Fasta格式）
+        r"""受体预处理（Fasta格式）
 
         受体预处理（Fasta格式），用于前端计算预期扣费次数
         
@@ -11089,7 +11089,7 @@ class EiHealthClient(Client):
         return http_info
 
     def run_format_converter(self, request):
-        """单分子文件格式转换
+        r"""单分子文件格式转换
 
         单分子文件格式转换。
         
@@ -11156,7 +11156,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show3d_structure_content(self, request):
-        """获取生成study作业3D结构的内容
+        r"""获取生成study作业3D结构的内容
 
         获取生成study作业3D结构的内容
         
@@ -11229,7 +11229,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_admet_job(self, request):
-        """查询分子属性预测作业详情
+        r"""查询分子属性预测作业详情
 
         查询分子属性预测作业详情
         
@@ -11296,7 +11296,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_app(self, request):
-        """获取应用详情
+        r"""获取应用详情
 
         获取应用详情
         
@@ -11363,7 +11363,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_asset(self, request):
-        """查询资产详情
+        r"""查询资产详情
 
         查询资产详情
         
@@ -11428,7 +11428,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_asset_version(self, request):
-        """查询资产版本详情
+        r"""查询资产版本详情
 
         查询资产版本详情
         
@@ -11495,7 +11495,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_auto_job(self, request):
-        """查询自动作业模板
+        r"""查询自动作业模板
 
         查询自动作业模板
         
@@ -11562,7 +11562,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_backup_path(self, request):
-        """获取指定归档的全数据清单
+        r"""获取指定归档的全数据清单
 
         根据归档ID获取该归档的全数据清单
         
@@ -11629,7 +11629,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_bms_devices(self, request):
-        """查询bms计算资源显卡id列表
+        r"""查询bms计算资源显卡id列表
 
         查询bms计算资源显卡id列表
         
@@ -11694,7 +11694,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_bucket_storage(self, request):
-        """获取桶存量信息
+        r"""获取桶存量信息
 
         获取桶存量信息
         
@@ -11759,7 +11759,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_clustering_job(self, request):
-        """查询聚类分析作业详情
+        r"""查询聚类分析作业详情
 
         查询聚类分析作业详情。
         
@@ -11826,7 +11826,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_data(self, request):
-        """获取数据详情
+        r"""获取数据详情
 
         获取指定数据对象的详细信息
         
@@ -11895,7 +11895,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_data_job(self, request):
-        """获取数据作业详细信息
+        r"""获取数据作业详细信息
 
         获取数据作业详细信息
         
@@ -11962,7 +11962,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_data_policy(self, request):
-        """查询项目级数据权限控制策略
+        r"""查询项目级数据权限控制策略
 
         查询项目级数据权限控制策略
         
@@ -12027,7 +12027,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_docker_login(self, request):
-        """获取docker login指令
+        r"""获取docker login指令
 
         获取docker login指令
         
@@ -12092,7 +12092,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_docking_job(self, request):
-        """查询分子对接作业详情
+        r"""查询分子对接作业详情
 
         查询分子对接作业详情
         
@@ -12159,7 +12159,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_env(self, request):
-        """查询系统配置列表
+        r"""查询系统配置列表
 
         获取系统配置列表
         
@@ -12222,7 +12222,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_evs_quota(self, request):
-        """获取EVS配额及使用情况
+        r"""获取EVS配额及使用情况
 
         获取EVS配额及使用情况
         
@@ -12285,7 +12285,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_extremum_info(self, request):
-        """获取study作业的最值信息
+        r"""获取study作业的最值信息
 
         获取study作业的最值信息
         
@@ -12354,7 +12354,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_fep_job(self, request):
-        """查询自由能微扰作业详情
+        r"""查询自由能微扰作业详情
 
         查询自由能微扰作业详情
         
@@ -12421,7 +12421,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_gen_job(self, request):
-        """查询分子生成作业详情
+        r"""查询分子生成作业详情
 
         查询分子生成作业详情
         
@@ -12488,7 +12488,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_instance(self, request):
-        """查询实例详情
+        r"""查询实例详情
 
         查询实例详情
         
@@ -12555,7 +12555,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_job(self, request):
-        """获取作业详情
+        r"""获取作业详情
 
         获取作业详情
         
@@ -12624,7 +12624,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_job_config(self, request):
-        """获取作业配置
+        r"""获取作业配置
 
         获取作业配置
         
@@ -12687,7 +12687,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_job_event(self, request):
-        """获取作业事件
+        r"""获取作业事件
 
         获取作业事件
         
@@ -12756,7 +12756,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_job_log(self, request):
-        """获取作业日志
+        r"""获取作业日志
 
         获取作业日志
         
@@ -12827,7 +12827,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_left_quota(self, request):
-        """获取节点剩余配额
+        r"""获取节点剩余配额
 
         获取节点剩余配额
         
@@ -12890,7 +12890,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_message_clear_rule(self, request):
-        """获取消息清理规则
+        r"""获取消息清理规则
 
         获取消息清理规则
         
@@ -12953,7 +12953,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_message_email_config(self, request):
-        """获取消息邮件配置
+        r"""获取消息邮件配置
 
         获取消息邮件配置
         
@@ -13016,7 +13016,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_message_receive_config(self, request):
-        """获取用户邮件配置
+        r"""获取用户邮件配置
 
         获取用户邮件配置
         
@@ -13079,7 +13079,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_mol_batch_download_task(self, request):
-        """查询分子或分子复合物批量下载任务详情
+        r"""查询分子或分子复合物批量下载任务详情
 
         查询分子或分子复合物批量下载任务详情
         
@@ -13146,7 +13146,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_optm_job(self, request):
-        """查询分子优化作业详情
+        r"""查询分子优化作业详情
 
         查询分子优化作业详情
         
@@ -13213,7 +13213,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_pocket_detection_job(self, request):
-        """查询靶点口袋发现作业详情
+        r"""查询靶点口袋发现作业详情
 
         查询靶点口袋发现作业详情
         
@@ -13280,7 +13280,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_pocket_mol_design_job(self, request):
-        """查询靶点口袋分子设计作业详情
+        r"""查询靶点口袋分子设计作业详情
 
         查询靶点口袋分子设计作业详情
         
@@ -13347,7 +13347,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_project(self, request):
-        """获取项目详情
+        r"""获取项目详情
 
         获取项目详情
         
@@ -13416,7 +13416,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_project_trace(self, request):
-        """获取项目审计日志
+        r"""获取项目审计日志
 
         获取项目审计日志
         
@@ -13487,7 +13487,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_project_trace_data(self, request):
-        """获取指定审计日志
+        r"""获取指定审计日志
 
         获取指定审计日志
         
@@ -13554,7 +13554,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_project_tracker(self, request):
-        """获取项目审计日志追踪器
+        r"""获取项目审计日志追踪器
 
         获取项目审计日志追踪器
         
@@ -13619,7 +13619,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_resource_metric_data(self, request):
-        """获取资源监控数据
+        r"""获取资源监控数据
 
         获取资源监控数据
         
@@ -13696,7 +13696,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_scale_in_policy(self, request):
-        """查询缩容策略
+        r"""查询缩容策略
 
         查询缩容策略
         
@@ -13759,7 +13759,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_scale_out_policy(self, request):
-        """获取扩容策略详情
+        r"""获取扩容策略详情
 
         获取扩容策略详情
         
@@ -13824,7 +13824,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_schedule(self, request):
-        """查询计算资源调度信息
+        r"""查询计算资源调度信息
 
         查询计算资源调度信息
         
@@ -13889,7 +13889,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_search_job(self, request):
-        """查询分子搜索作业详情
+        r"""查询分子搜索作业详情
 
         查询分子搜索作业详情
         
@@ -13956,7 +13956,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_synthesis_job(self, request):
-        """查询分子合成路径规划作业详情
+        r"""查询分子合成路径规划作业详情
 
         查询分子合成路径规划作业详情
         
@@ -14023,7 +14023,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_target_opt_job(self, request):
-        """查询靶点优化作业详情
+        r"""查询靶点优化作业详情
 
         查询靶点优化作业详情
         
@@ -14090,7 +14090,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_task_events(self, request):
-        """获取子任务启动事件
+        r"""获取子任务启动事件
 
         获取子任务启动事件
         
@@ -14161,7 +14161,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_task_instance_events(self, request):
-        """获取子任务中实例的事件
+        r"""获取子任务中实例的事件
 
         获取子任务中实例的事件
         
@@ -14234,7 +14234,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_task_instance_metric_data(self, request):
-        """获取子任务中实例的资源监控数据
+        r"""获取子任务中实例的资源监控数据
 
         获取子任务中实例的资源监控数据
         
@@ -14315,7 +14315,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_task_instance_pod(self, request):
-        """获取子任务中实例的pod信息
+        r"""获取子任务中实例的pod信息
 
         获取子任务中实例的pod信息
         
@@ -14388,7 +14388,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_task_instances(self, request):
-        """获取子任务实例信息
+        r"""获取子任务实例信息
 
         获取子任务实例信息
         
@@ -14459,7 +14459,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_template(self, request):
-        """查询模板详情
+        r"""查询模板详情
 
         查询模板详情
         
@@ -14526,7 +14526,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_user(self, request):
-        """获取指定用户详情
+        r"""获取指定用户详情
 
         获取指定用户详情
         
@@ -14591,7 +14591,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_user_setting(self, request):
-        """查询用户设置
+        r"""查询用户设置
 
         查询用户设置
         
@@ -14656,7 +14656,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_vendor(self, request):
-        """获取供应商配置
+        r"""获取供应商配置
 
         获取供应商配置
         
@@ -14719,7 +14719,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_workflow(self, request):
-        """获取流程详情
+        r"""获取流程详情
 
         获取流程详情
         
@@ -14788,7 +14788,7 @@ class EiHealthClient(Client):
         return http_info
 
     def start_auto_job(self, request):
-        """启动自动作业
+        r"""启动自动作业
 
         启动自动作业
         
@@ -14855,7 +14855,7 @@ class EiHealthClient(Client):
         return http_info
 
     def start_node(self, request):
-        """启动计算资源
+        r"""启动计算资源
 
         启动计算资源
         
@@ -14920,7 +14920,7 @@ class EiHealthClient(Client):
         return http_info
 
     def start_scale_out_policy(self, request):
-        """启动自动扩容策略
+        r"""启动自动扩容策略
 
         启动自动扩容策略
         
@@ -14985,7 +14985,7 @@ class EiHealthClient(Client):
         return http_info
 
     def stop_auto_job(self, request):
-        """停止自动作业
+        r"""停止自动作业
 
         停止自动作业
         
@@ -15052,7 +15052,7 @@ class EiHealthClient(Client):
         return http_info
 
     def stop_node(self, request):
-        """关闭计算资源
+        r"""关闭计算资源
 
         关闭计算资源
         
@@ -15119,7 +15119,7 @@ class EiHealthClient(Client):
         return http_info
 
     def stop_scale_out_policy(self, request):
-        """停用自动扩容策略
+        r"""停用自动扩容策略
 
         停用自动扩容策略
         
@@ -15184,7 +15184,7 @@ class EiHealthClient(Client):
         return http_info
 
     def subscribe_app(self, request):
-        """订阅应用
+        r"""订阅应用
 
         订阅应用
         
@@ -15251,7 +15251,7 @@ class EiHealthClient(Client):
         return http_info
 
     def subscribe_data(self, request):
-        """订阅资产市场数据
+        r"""订阅资产市场数据
 
         订阅资产市场数据
         
@@ -15318,7 +15318,7 @@ class EiHealthClient(Client):
         return http_info
 
     def subscribe_image(self, request):
-        """订阅镜像
+        r"""订阅镜像
 
         订阅镜像
         
@@ -15385,7 +15385,7 @@ class EiHealthClient(Client):
         return http_info
 
     def subscribe_workflow(self, request):
-        """订阅流程
+        r"""订阅流程
 
         订阅流程
         
@@ -15452,7 +15452,7 @@ class EiHealthClient(Client):
         return http_info
 
     def transfer_project(self, request):
-        """转移项目
+        r"""转移项目
 
         转移项目
         
@@ -15519,7 +15519,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_app(self, request):
-        """更新应用
+        r"""更新应用
 
         更新应用
         
@@ -15588,7 +15588,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_archive_config(self, request):
-        """修改跨域归档设置
+        r"""修改跨域归档设置
 
         修改跨域归档设置
         
@@ -15653,7 +15653,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_asset_version(self, request):
-        """更新资产指定版本的信息
+        r"""更新资产指定版本的信息
 
         更新资产指定版本的信息
         
@@ -15722,7 +15722,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_auto_job(self, request):
-        """更新自动作业模板
+        r"""更新自动作业模板
 
         更新自动作业模板
         
@@ -15791,7 +15791,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_data_path_policy(self, request):
-        """设置数据对象策略
+        r"""设置数据对象策略
 
         设置数据对象策略
         
@@ -15860,7 +15860,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_data_policy(self, request):
-        """设置项目级权限控制策略
+        r"""设置项目级权限控制策略
 
         设置项目级权限控制策略
         
@@ -15927,7 +15927,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_database_data(self, request):
-        """更新数据
+        r"""更新数据
 
         更新数据
         
@@ -15998,7 +15998,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_drug_database(self, request):
-        """更新药物数据库
+        r"""更新药物数据库
 
         更新药物数据库
         
@@ -16065,7 +16065,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_drug_job(self, request):
-        """更新药物作业
+        r"""更新药物作业
 
         更新药物作业
         
@@ -16134,7 +16134,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_drug_model(self, request):
-        """更新药物模型
+        r"""更新药物模型
 
         更新药物模型
         
@@ -16201,7 +16201,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_image(self, request):
-        """更新镜像描述信息或者类型
+        r"""更新镜像描述信息或者类型
 
         更新镜像描述信息或者类型
         
@@ -16270,7 +16270,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_init_password(self, request):
-        """新用户重置密码
+        r"""新用户重置密码
 
         新用户重置密码
         
@@ -16337,7 +16337,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_job(self, request):
-        """更新作业
+        r"""更新作业
 
         更新作业
         
@@ -16406,7 +16406,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_job_config(self, request):
-        """设置作业配置
+        r"""设置作业配置
 
         设置作业配置，目前支持修改作业保存条数(1万条-1000万条)，默认设置为500万条；
         
@@ -16471,7 +16471,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_member(self, request):
-        """更新或者添加项目成员角色
+        r"""更新或者添加项目成员角色
 
         更新或者添加项目成员角色
         
@@ -16540,7 +16540,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_message_clear_rule_request_body(self, request):
-        """设置消息清理规则
+        r"""设置消息清理规则
 
         设置消息清理规则，支持修改记录数(1W-1000W)
         
@@ -16605,7 +16605,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_message_email_config(self, request):
-        """设置消息邮件配置
+        r"""设置消息邮件配置
 
         设置消息邮件配置
         
@@ -16670,7 +16670,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_message_receive_config(self, request):
-        """设置用户邮件配置
+        r"""设置用户邮件配置
 
         设置用户邮件配置
         
@@ -16735,7 +16735,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_performance_resource(self, request):
-        """更新性能加速资源配置
+        r"""更新性能加速资源配置
 
         更新性能加速资源配置
         
@@ -16802,7 +16802,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_project(self, request):
-        """更新项目
+        r"""更新项目
 
         更新项目
         
@@ -16869,7 +16869,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_project_tracker(self, request):
-        """更新项目审计日志追踪器配置
+        r"""更新项目审计日志追踪器配置
 
         更新项目审计日志追踪器配置
         
@@ -16936,7 +16936,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_scale_in_policy(self, request):
-        """修改缩容策略
+        r"""修改缩容策略
 
         修改缩容策略
         
@@ -17001,7 +17001,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_scale_out_policy(self, request):
-        """修改扩容策略
+        r"""修改扩容策略
 
         修改扩容策略
         
@@ -17068,7 +17068,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_schedule(self, request):
-        """修改计算资源调度信息
+        r"""修改计算资源调度信息
 
         修改计算资源调度信息
         
@@ -17135,7 +17135,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_star(self, request):
-        """收藏资产
+        r"""收藏资产
 
         收藏资产
         
@@ -17200,7 +17200,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_user(self, request):
-        """修改用户基本信息
+        r"""修改用户基本信息
 
         修改用户基本信息（邮箱，手机）
         
@@ -17267,7 +17267,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_user_by_domain(self, request):
-        """最终租户修改子用户
+        r"""最终租户修改子用户
 
         最终租户修改子用户
         
@@ -17334,7 +17334,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_user_role(self, request):
-        """更新用户角色
+        r"""更新用户角色
 
         更新用户角色
         
@@ -17401,7 +17401,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_user_setting(self, request):
-        """更新用户设置
+        r"""更新用户设置
 
         更新用户设置
         
@@ -17468,7 +17468,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_vendor(self, request):
-        """设置供应商配置
+        r"""设置供应商配置
 
         设置供应商配置
         
@@ -17537,7 +17537,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_workflow(self, request):
-        """更新流程
+        r"""更新流程
 
         更新流程
         
@@ -17606,7 +17606,7 @@ class EiHealthClient(Client):
         return http_info
 
     def upload_data(self, request):
-        """上传数据文件
+        r"""上传数据文件
 
         上传数据文件
         
@@ -17687,7 +17687,7 @@ class EiHealthClient(Client):
         return http_info
 
     def upload_template(self, request):
-        """上传模板
+        r"""上传模板
 
         上传模板
         
@@ -17756,7 +17756,7 @@ class EiHealthClient(Client):
         return http_info
 
     def validate_code(self, request):
-        """预验证
+        r"""预验证
 
         预验证
         
@@ -17823,7 +17823,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_admet_properties(self, request):
-        """ADMET属性预测接口
+        r"""ADMET属性预测接口
 
         计算小分子的物化性质，包括吸收(adsorption)、分布(distribution)、代谢(metabolism)、清除(excretion)与毒性(toxicity)。
         
@@ -17888,7 +17888,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_cpi_job(self, request):
-        """创建CPI作业
+        r"""创建CPI作业
 
         创建CPI作业
         
@@ -17955,7 +17955,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_cpi_task(self, request):
-        """新建CPI任务接口
+        r"""新建CPI任务接口
 
         输入蛋白序列、小分子库，创建分子-蛋白互作预测任务。
         
@@ -18020,7 +18020,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_cpi_job(self, request):
-        """查询CPI作业详情
+        r"""查询CPI作业详情
 
         查询CPI作业详情
         
@@ -18087,7 +18087,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_cpi_task_result(self, request):
-        """查询CPI任务
+        r"""查询CPI任务
 
         通过CPI任务ID查询CPI任务状态及结果。
         
@@ -18152,7 +18152,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_css_cluster(self, request):
-        """绑定CSS集群
+        r"""绑定CSS集群
 
         绑定CSS集群
         
@@ -18217,7 +18217,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_css_cluster(self, request):
-        """CSS集群解绑
+        r"""CSS集群解绑
 
         CSS集群解绑
         
@@ -18282,7 +18282,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_css_cluster(self, request):
-        """获取CSS集群列表
+        r"""获取CSS集群列表
 
         获取CSS集群列表
         
@@ -18349,7 +18349,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_term_tenant_css_cluster(self, request):
-        """获取最终租户CSS集群列表
+        r"""获取最终租户CSS集群列表
 
         获取最终租户CSS集群列表
         
@@ -18416,7 +18416,7 @@ class EiHealthClient(Client):
         return http_info
 
     def validate_css_connection(self, request):
-        """测试CSS集群连接
+        r"""测试CSS集群连接
 
         测试CSS集群连接
         
@@ -18481,7 +18481,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_custom_props_task(self, request):
-        """新建自定义属性任务接口
+        r"""新建自定义属性任务接口
 
         输入自定义属性的任务数据，创建自定义属性建模任务。
         
@@ -18546,7 +18546,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_custom_props_task_result(self, request):
-        """查询自定义属性任务
+        r"""查询自定义属性任务
 
         通过自定义属性任务ID查询任务状态及结果。
         
@@ -18611,7 +18611,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_generation_task(self, request):
-        """新建分子生成任务接口
+        r"""新建分子生成任务接口
 
         输入分子属性约束，创建分子生成任务。
         
@@ -18676,7 +18676,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_generation_task_result(self, request):
-        """查询分子生成任务
+        r"""查询分子生成任务
 
         通过分子生成任务ID查询分子生成任务状态及结果。
         
@@ -18741,7 +18741,7 @@ class EiHealthClient(Client):
         return http_info
 
     def check_drug_ligand_difference(self, request):
-        """计算配体间的3D结构差异
+        r"""计算配体间的3D结构差异
 
         计算配体间的3D结构差异
         
@@ -18808,7 +18808,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_drug_ligand_interaction2d_svg(self, request):
-        """生成相互作用2D图
+        r"""生成相互作用2D图
 
         生成相互作用2D图，若不提供配体文件，则受体文件中必须包含配体；若提供配体文件，则受体中的配体（若有）则会被忽略
         
@@ -18875,7 +18875,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_drug_ligand_preview_task(self, request):
-        """创建配体文件预览任务
+        r"""创建配体文件预览任务
 
         创建配体文件预览任务，支持SMI、SDF、PDB、MOL2
         
@@ -18942,7 +18942,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_drug_ligand_sdf(self, request):
-        """生成分子SDF三维结构
+        r"""生成分子SDF三维结构
 
         生成分子SDF三维结构
         
@@ -19009,7 +19009,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_drug_ligand_similarity_graph_task(self, request):
-        """创建配体相似性图计算任务
+        r"""创建配体相似性图计算任务
 
         创建配体相似性图计算任务
         
@@ -19076,7 +19076,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_drug_ligand_svg(self, request):
-        """生成分子SVG图
+        r"""生成分子SVG图
 
         生成分子SVG图
         
@@ -19143,7 +19143,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_drug_ligand_preview_task(self, request):
-        """删除配体文件预览任务
+        r"""删除配体文件预览任务
 
         删除配体文件预览任务
         
@@ -19210,7 +19210,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_drug_ligand_similarity_graph_task(self, request):
-        """删除配体相似性图计算任务
+        r"""删除配体相似性图计算任务
 
         删除配体相似性图计算任务
         
@@ -19277,7 +19277,7 @@ class EiHealthClient(Client):
         return http_info
 
     def parse_drug_receptor_info(self, request):
-        """受体信息解析
+        r"""受体信息解析
 
         受体信息解析，如果有多个受体蛋白则只处理第一个，如果一个受体蛋白里结合了多个配体，则最多只处理前10个
         
@@ -19344,7 +19344,7 @@ class EiHealthClient(Client):
         return http_info
 
     def recognize_drug_receptor_pocket(self, request):
-        """受体口袋检测
+        r"""受体口袋检测
 
         检测受体口袋，检测类型基于配体，基于氨基酸残基，自动检测，自定义和全局对接
         
@@ -19411,7 +19411,7 @@ class EiHealthClient(Client):
         return http_info
 
     def run_drug_ligand_to_smiles_conversion(self, request):
-        """配体格式转换为SMILES
+        r"""配体格式转换为SMILES
 
         配体格式转换为SMILES，若配体文件中存在多个分子，则只取第一个返回
         
@@ -19478,7 +19478,7 @@ class EiHealthClient(Client):
         return http_info
 
     def run_drug_receptor_preprocess(self, request):
-        """受体预处理
+        r"""受体预处理
 
         受体预处理，用于前端显示预处理后的受体
         
@@ -19545,7 +19545,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_drug_ligand_preview_task(self, request):
-        """查询配体文件预览任务
+        r"""查询配体文件预览任务
 
         查询配体文件预览任务
         
@@ -19612,7 +19612,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_drug_ligand_similarity_graph_task(self, request):
-        """查询配体相似性图计算任务
+        r"""查询配体相似性图计算任务
 
         查询配体相似性图计算任务
         
@@ -19679,7 +19679,7 @@ class EiHealthClient(Client):
         return http_info
 
     def download_data(self, request):
-        """文件下载
+        r"""文件下载
 
         文件下载
         
@@ -19746,7 +19746,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_overview(self, request):
-        """获取医疗平台信息
+        r"""获取医疗平台信息
 
         获取医疗平台信息
         
@@ -19809,7 +19809,7 @@ class EiHealthClient(Client):
         return http_info
 
     def clean_nextflow_cache(self, request):
-        """清理Nextflow缓存
+        r"""清理Nextflow缓存
 
         清理Nextflow缓存
         
@@ -19872,7 +19872,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_nextflow_job(self, request):
-        """创建nextflow作业
+        r"""创建nextflow作业
 
         创建nextflow作业
         
@@ -19952,7 +19952,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_nextflow_workflow(self, request):
-        """创建流程
+        r"""创建流程
 
         创建流程
         
@@ -20032,7 +20032,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_nextflow_job(self, request):
-        """删除Nextflow作业
+        r"""删除Nextflow作业
 
         删除Nextflow作业
         
@@ -20099,7 +20099,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_nextflow_workflow(self, request):
-        """删除流程
+        r"""删除流程
 
         删除流程
         
@@ -20166,7 +20166,7 @@ class EiHealthClient(Client):
         return http_info
 
     def install_nextflow(self, request):
-        """安装Nextflow
+        r"""安装Nextflow
 
         安装Nextflow（file和version参数必须提供其中一种）
         
@@ -20243,7 +20243,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_nextflow_job(self, request):
-        """查询nextflow作业列表
+        r"""查询nextflow作业列表
 
         查询nextflow作业列表
         
@@ -20335,7 +20335,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_nextflow_task(self, request):
-        """获取task列表
+        r"""获取task列表
 
         获取task列表
         
@@ -20404,7 +20404,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_nextflow_version(self, request):
-        """查询Nextflow版本列表
+        r"""查询Nextflow版本列表
 
         查询Nextflow版本列表
         
@@ -20467,7 +20467,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_nextflow_workflow(self, request):
-        """获取流程列表
+        r"""获取流程列表
 
         获取流程列表
         
@@ -20534,7 +20534,7 @@ class EiHealthClient(Client):
         return http_info
 
     def retry_nextflow_job(self, request):
-        """重试Nextflow作业
+        r"""重试Nextflow作业
 
         重试Nextflow作业
         
@@ -20605,7 +20605,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_nextflow(self, request):
-        """查询Nextflow配置详情
+        r"""查询Nextflow配置详情
 
         查询Nextflow配置详情
         
@@ -20670,7 +20670,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_nextflow_job(self, request):
-        """获取Nextflow作业详情
+        r"""获取Nextflow作业详情
 
         获取Nextflow作业详情
         
@@ -20737,7 +20737,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_nextflow_job_log(self, request):
-        """获取Nextflow作业日志
+        r"""获取Nextflow作业日志
 
         获取Nextflow作业日志
         
@@ -20804,7 +20804,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_nextflow_job_reports(self, request):
-        """获取Nextflow作业报告
+        r"""获取Nextflow作业报告
 
         获取Nextflow作业报告
         
@@ -20871,7 +20871,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_nextflow_task_detail(self, request):
-        """获取task详情
+        r"""获取task详情
 
         获取task详情
         
@@ -20940,7 +20940,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_nextflow_task_log(self, request):
-        """获取Nextflow任务日志
+        r"""获取Nextflow任务日志
 
         获取Nextflow任务日志
         
@@ -21009,7 +21009,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_nextflow_workflow(self, request):
-        """获取流程详情
+        r"""获取流程详情
 
         获取流程详情
         
@@ -21076,7 +21076,7 @@ class EiHealthClient(Client):
         return http_info
 
     def stop_nextflow_job(self, request):
-        """停止Nextflow作业
+        r"""停止Nextflow作业
 
         停止Nextflow作业
         
@@ -21143,7 +21143,7 @@ class EiHealthClient(Client):
         return http_info
 
     def uninstall_nextflow(self, request):
-        """卸载Nextflow
+        r"""卸载Nextflow
 
         卸载Nextflow
         
@@ -21208,7 +21208,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_nextflow_workflow(self, request):
-        """更新流程
+        r"""更新流程
 
         更新流程
         
@@ -21288,7 +21288,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_obs_bucket(self, request):
-        """获取用户OBS桶列表
+        r"""获取用户OBS桶列表
 
         获取用户OBS桶列表
         
@@ -21353,7 +21353,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_obs_bucket_object(self, request):
-        """获取用户OBS桶内对象
+        r"""获取用户OBS桶内对象
 
         获取用户OBS桶内对象
         
@@ -21426,7 +21426,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_optimization_task(self, request):
-        """新建分子优化任务接口
+        r"""新建分子优化任务接口
 
         输入起始小分子以及属性约束，创建分子优化任务。
         
@@ -21491,7 +21491,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_optimization_task_result(self, request):
-        """查询分子优化任务
+        r"""查询分子优化任务
 
         通过分子优化任务ID查询分子优化任务状态及结果。
         
@@ -21556,7 +21556,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_search_task(self, request):
-        """新建分子搜索任务接口
+        r"""新建分子搜索任务接口
 
         输入要查询的分子以及查询条件，创建分子搜索任务。
         
@@ -21621,7 +21621,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_search_task_result(self, request):
-        """查询分子搜索任务
+        r"""查询分子搜索任务
 
         通过分子搜索任务ID查询分子搜索任务状态及结果。
         
@@ -21686,7 +21686,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_synthesis_task(self, request):
-        """新建分子合成路径规划任务接口
+        r"""新建分子合成路径规划任务接口
 
         输入要进行合成路径规划的分子以及输出可行方案的个数。
         
@@ -21751,7 +21751,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_synthesis_task_result(self, request):
-        """查询分子合成路径规划任务
+        r"""查询分子合成路径规划任务
 
         通过分子合成路径规划任务ID查询分子合成路径规划任务状态及结果。
         
@@ -21816,7 +21816,7 @@ class EiHealthClient(Client):
         return http_info
 
     def create_notebook(self, request):
-        """创建notebook
+        r"""创建notebook
 
         创建notebook
         
@@ -21883,7 +21883,7 @@ class EiHealthClient(Client):
         return http_info
 
     def delete_notebook(self, request):
-        """删除notebook
+        r"""删除notebook
 
         删除notebook
         
@@ -21950,7 +21950,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_notebook(self, request):
-        """获取notebook列表
+        r"""获取notebook列表
 
         获取notebook列表
         
@@ -22023,7 +22023,7 @@ class EiHealthClient(Client):
         return http_info
 
     def list_notebook_tool(self, request):
-        """获取notebook工作环境
+        r"""获取notebook工作环境
 
         获取notebook工作环境
         
@@ -22088,7 +22088,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_notebook(self, request):
-        """获取notebook详情
+        r"""获取notebook详情
 
         获取notebook详情
         
@@ -22155,7 +22155,7 @@ class EiHealthClient(Client):
         return http_info
 
     def show_notebook_token(self, request):
-        """获取notebook鉴权信息
+        r"""获取notebook鉴权信息
 
         获取notebook鉴权信息
         
@@ -22222,7 +22222,7 @@ class EiHealthClient(Client):
         return http_info
 
     def stop_or_start_notebook(self, request):
-        """启停notebook
+        r"""启停notebook
 
         启停notebook
         
@@ -22291,7 +22291,7 @@ class EiHealthClient(Client):
         return http_info
 
     def update_notebook(self, request):
-        """更新notebook
+        r"""更新notebook
 
         更新notebook
         

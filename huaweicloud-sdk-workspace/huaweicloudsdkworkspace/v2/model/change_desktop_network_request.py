@@ -27,7 +27,7 @@ class ChangeDesktopNetworkRequest:
     }
 
     def __init__(self, desktop_id=None, body=None):
-        """ChangeDesktopNetworkRequest
+        r"""ChangeDesktopNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeDesktopNetworkRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ChangeDesktopNetworkRequest.
+        r"""Gets the desktop_id of this ChangeDesktopNetworkRequest.
 
         桌面ID。
 
@@ -60,7 +60,7 @@ class ChangeDesktopNetworkRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ChangeDesktopNetworkRequest.
+        r"""Sets the desktop_id of this ChangeDesktopNetworkRequest.
 
         桌面ID。
 
@@ -71,7 +71,7 @@ class ChangeDesktopNetworkRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeDesktopNetworkRequest.
+        r"""Gets the body of this ChangeDesktopNetworkRequest.
 
         :return: The body of this ChangeDesktopNetworkRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ChangeDesktopNetworkReq`
@@ -80,7 +80,7 @@ class ChangeDesktopNetworkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeDesktopNetworkRequest.
+        r"""Sets the body of this ChangeDesktopNetworkRequest.
 
         :param body: The body of this ChangeDesktopNetworkRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ChangeDesktopNetworkReq`

@@ -28,7 +28,7 @@ class ShowPacifyWordsSwitchResponse(SdkResponse):
     }
 
     def __init__(self, enable_pacify_words=None, x_request_id=None):
-        """ShowPacifyWordsSwitchResponse
+        r"""ShowPacifyWordsSwitchResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPacifyWordsSwitchResponse(SdkResponse):
 
     @property
     def enable_pacify_words(self):
-        """Gets the enable_pacify_words of this ShowPacifyWordsSwitchResponse.
+        r"""Gets the enable_pacify_words of this ShowPacifyWordsSwitchResponse.
 
         安抚话术功能开关。
 
@@ -62,7 +62,7 @@ class ShowPacifyWordsSwitchResponse(SdkResponse):
 
     @enable_pacify_words.setter
     def enable_pacify_words(self, enable_pacify_words):
-        """Sets the enable_pacify_words of this ShowPacifyWordsSwitchResponse.
+        r"""Sets the enable_pacify_words of this ShowPacifyWordsSwitchResponse.
 
         安抚话术功能开关。
 
@@ -73,7 +73,7 @@ class ShowPacifyWordsSwitchResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowPacifyWordsSwitchResponse.
+        r"""Gets the x_request_id of this ShowPacifyWordsSwitchResponse.
 
         :return: The x_request_id of this ShowPacifyWordsSwitchResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowPacifyWordsSwitchResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowPacifyWordsSwitchResponse.
+        r"""Sets the x_request_id of this ShowPacifyWordsSwitchResponse.
 
         :param x_request_id: The x_request_id of this ShowPacifyWordsSwitchResponse.
         :type x_request_id: str

@@ -29,7 +29,7 @@ class RunFormatConverterReq:
     }
 
     def __init__(self, file=None, in_format=None, out_format=None):
-        """RunFormatConverterReq
+        r"""RunFormatConverterReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RunFormatConverterReq:
 
     @property
     def file(self):
-        """Gets the file of this RunFormatConverterReq.
+        r"""Gets the file of this RunFormatConverterReq.
 
         :return: The file of this RunFormatConverterReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ConvertFile`
@@ -63,7 +63,7 @@ class RunFormatConverterReq:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this RunFormatConverterReq.
+        r"""Sets the file of this RunFormatConverterReq.
 
         :param file: The file of this RunFormatConverterReq.
         :type file: :class:`huaweicloudsdkeihealth.v1.ConvertFile`
@@ -72,7 +72,7 @@ class RunFormatConverterReq:
 
     @property
     def in_format(self):
-        """Gets the in_format of this RunFormatConverterReq.
+        r"""Gets the in_format of this RunFormatConverterReq.
 
         待转换文件格式，支持PDB、SDF、MOL2、SMI。
 
@@ -83,7 +83,7 @@ class RunFormatConverterReq:
 
     @in_format.setter
     def in_format(self, in_format):
-        """Sets the in_format of this RunFormatConverterReq.
+        r"""Sets the in_format of this RunFormatConverterReq.
 
         待转换文件格式，支持PDB、SDF、MOL2、SMI。
 
@@ -94,7 +94,7 @@ class RunFormatConverterReq:
 
     @property
     def out_format(self):
-        """Gets the out_format of this RunFormatConverterReq.
+        r"""Gets the out_format of this RunFormatConverterReq.
 
         转换后文件格式，支持PDB、SDF、MOL2、SMI。
 
@@ -105,7 +105,7 @@ class RunFormatConverterReq:
 
     @out_format.setter
     def out_format(self, out_format):
-        """Sets the out_format of this RunFormatConverterReq.
+        r"""Sets the out_format of this RunFormatConverterReq.
 
         转换后文件格式，支持PDB、SDF、MOL2、SMI。
 

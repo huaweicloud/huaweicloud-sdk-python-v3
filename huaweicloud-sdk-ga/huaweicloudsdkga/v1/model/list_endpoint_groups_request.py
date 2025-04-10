@@ -37,7 +37,7 @@ class ListEndpointGroupsRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, name=None, status=None, listener_id=None):
-        """ListEndpointGroupsRequest
+        r"""ListEndpointGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListEndpointGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEndpointGroupsRequest.
+        r"""Gets the limit of this ListEndpointGroupsRequest.
 
         分页查询每页的资源个数。如果不设置，则默认为500。
 
@@ -96,7 +96,7 @@ class ListEndpointGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEndpointGroupsRequest.
+        r"""Sets the limit of this ListEndpointGroupsRequest.
 
         分页查询每页的资源个数。如果不设置，则默认为500。
 
@@ -107,7 +107,7 @@ class ListEndpointGroupsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListEndpointGroupsRequest.
+        r"""Gets the marker of this ListEndpointGroupsRequest.
 
         分页查询的起始的资源ID，表示上一页最后一条查询资源记录的ID。不指定时表示查询第一页。 必须与limit一起使用。
 
@@ -118,7 +118,7 @@ class ListEndpointGroupsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListEndpointGroupsRequest.
+        r"""Sets the marker of this ListEndpointGroupsRequest.
 
         分页查询的起始的资源ID，表示上一页最后一条查询资源记录的ID。不指定时表示查询第一页。 必须与limit一起使用。
 
@@ -129,7 +129,7 @@ class ListEndpointGroupsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListEndpointGroupsRequest.
+        r"""Gets the page_reverse of this ListEndpointGroupsRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -140,7 +140,7 @@ class ListEndpointGroupsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListEndpointGroupsRequest.
+        r"""Sets the page_reverse of this ListEndpointGroupsRequest.
 
         分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
@@ -151,7 +151,7 @@ class ListEndpointGroupsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListEndpointGroupsRequest.
+        r"""Gets the id of this ListEndpointGroupsRequest.
 
         资源ID。
 
@@ -162,7 +162,7 @@ class ListEndpointGroupsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListEndpointGroupsRequest.
+        r"""Sets the id of this ListEndpointGroupsRequest.
 
         资源ID。
 
@@ -173,7 +173,7 @@ class ListEndpointGroupsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListEndpointGroupsRequest.
+        r"""Gets the name of this ListEndpointGroupsRequest.
 
         资源名称，取值范围：0~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -184,7 +184,7 @@ class ListEndpointGroupsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListEndpointGroupsRequest.
+        r"""Sets the name of this ListEndpointGroupsRequest.
 
         资源名称，取值范围：0~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -195,7 +195,7 @@ class ListEndpointGroupsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListEndpointGroupsRequest.
+        r"""Gets the status of this ListEndpointGroupsRequest.
 
         配置状态，可选范围: - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
 
@@ -206,7 +206,7 @@ class ListEndpointGroupsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListEndpointGroupsRequest.
+        r"""Sets the status of this ListEndpointGroupsRequest.
 
         配置状态，可选范围: - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
 
@@ -217,7 +217,7 @@ class ListEndpointGroupsRequest:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this ListEndpointGroupsRequest.
+        r"""Gets the listener_id of this ListEndpointGroupsRequest.
 
         监听器ID
 
@@ -228,7 +228,7 @@ class ListEndpointGroupsRequest:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this ListEndpointGroupsRequest.
+        r"""Sets the listener_id of this ListEndpointGroupsRequest.
 
         监听器ID
 

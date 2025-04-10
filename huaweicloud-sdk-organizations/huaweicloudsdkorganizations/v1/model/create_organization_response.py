@@ -26,7 +26,7 @@ class CreateOrganizationResponse(SdkResponse):
     }
 
     def __init__(self, organization=None):
-        """CreateOrganizationResponse
+        r"""CreateOrganizationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateOrganizationResponse(SdkResponse):
 
     @property
     def organization(self):
-        """Gets the organization of this CreateOrganizationResponse.
+        r"""Gets the organization of this CreateOrganizationResponse.
 
         :return: The organization of this CreateOrganizationResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.OrganizationDto`
@@ -53,7 +53,7 @@ class CreateOrganizationResponse(SdkResponse):
 
     @organization.setter
     def organization(self, organization):
-        """Sets the organization of this CreateOrganizationResponse.
+        r"""Sets the organization of this CreateOrganizationResponse.
 
         :param organization: The organization of this CreateOrganizationResponse.
         :type organization: :class:`huaweicloudsdkorganizations.v1.OrganizationDto`

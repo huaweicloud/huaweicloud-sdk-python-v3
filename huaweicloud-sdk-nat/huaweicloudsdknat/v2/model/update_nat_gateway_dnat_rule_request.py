@@ -27,7 +27,7 @@ class UpdateNatGatewayDnatRuleRequest:
     }
 
     def __init__(self, dnat_rule_id=None, body=None):
-        """UpdateNatGatewayDnatRuleRequest
+        r"""UpdateNatGatewayDnatRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateNatGatewayDnatRuleRequest:
 
     @property
     def dnat_rule_id(self):
-        """Gets the dnat_rule_id of this UpdateNatGatewayDnatRuleRequest.
+        r"""Gets the dnat_rule_id of this UpdateNatGatewayDnatRuleRequest.
 
         DNAT规则的ID。
 
@@ -60,7 +60,7 @@ class UpdateNatGatewayDnatRuleRequest:
 
     @dnat_rule_id.setter
     def dnat_rule_id(self, dnat_rule_id):
-        """Sets the dnat_rule_id of this UpdateNatGatewayDnatRuleRequest.
+        r"""Sets the dnat_rule_id of this UpdateNatGatewayDnatRuleRequest.
 
         DNAT规则的ID。
 
@@ -71,7 +71,7 @@ class UpdateNatGatewayDnatRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNatGatewayDnatRuleRequest.
+        r"""Gets the body of this UpdateNatGatewayDnatRuleRequest.
 
         :return: The body of this UpdateNatGatewayDnatRuleRequest.
         :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleRequestBody`
@@ -80,7 +80,7 @@ class UpdateNatGatewayDnatRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNatGatewayDnatRuleRequest.
+        r"""Sets the body of this UpdateNatGatewayDnatRuleRequest.
 
         :param body: The body of this UpdateNatGatewayDnatRuleRequest.
         :type body: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleRequestBody`

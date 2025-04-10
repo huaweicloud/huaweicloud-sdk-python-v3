@@ -28,7 +28,7 @@ class ListProjectResponse(SdkResponse):
     }
 
     def __init__(self, count=None, projects=None):
-        """ListProjectResponse
+        r"""ListProjectResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProjectResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListProjectResponse.
+        r"""Gets the count of this ListProjectResponse.
 
         个数
 
@@ -62,7 +62,7 @@ class ListProjectResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListProjectResponse.
+        r"""Sets the count of this ListProjectResponse.
 
         个数
 
@@ -73,7 +73,7 @@ class ListProjectResponse(SdkResponse):
 
     @property
     def projects(self):
-        """Gets the projects of this ListProjectResponse.
+        r"""Gets the projects of this ListProjectResponse.
 
         项目详情列表
 
@@ -84,7 +84,7 @@ class ListProjectResponse(SdkResponse):
 
     @projects.setter
     def projects(self, projects):
-        """Sets the projects of this ListProjectResponse.
+        r"""Sets the projects of this ListProjectResponse.
 
         项目详情列表
 

@@ -31,7 +31,7 @@ class RecaptureDetectResponseResult:
     }
 
     def __init__(self, suggestion=None, category=None, score=None, detail=None):
-        """RecaptureDetectResponseResult
+        r"""RecaptureDetectResponseResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class RecaptureDetectResponseResult:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this RecaptureDetectResponseResult.
+        r"""Gets the suggestion of this RecaptureDetectResponseResult.
 
         总体的结论： true：真实 false：虚假 uncertainty：不确定 
 
@@ -75,7 +75,7 @@ class RecaptureDetectResponseResult:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this RecaptureDetectResponseResult.
+        r"""Sets the suggestion of this RecaptureDetectResponseResult.
 
         总体的结论： true：真实 false：虚假 uncertainty：不确定 
 
@@ -86,7 +86,7 @@ class RecaptureDetectResponseResult:
 
     @property
     def category(self):
-        """Gets the category of this RecaptureDetectResponseResult.
+        r"""Gets the category of this RecaptureDetectResponseResult.
 
         标签（如果suggestion为真时，则该值为空字符串，否则不为空）。recapture：翻拍图
 
@@ -97,7 +97,7 @@ class RecaptureDetectResponseResult:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this RecaptureDetectResponseResult.
+        r"""Sets the category of this RecaptureDetectResponseResult.
 
         标签（如果suggestion为真时，则该值为空字符串，否则不为空）。recapture：翻拍图
 
@@ -108,7 +108,7 @@ class RecaptureDetectResponseResult:
 
     @property
     def score(self):
-        """Gets the score of this RecaptureDetectResponseResult.
+        r"""Gets the score of this RecaptureDetectResponseResult.
 
         总体置信度，取值范围（0~1）。
 
@@ -119,7 +119,7 @@ class RecaptureDetectResponseResult:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this RecaptureDetectResponseResult.
+        r"""Sets the score of this RecaptureDetectResponseResult.
 
         总体置信度，取值范围（0~1）。
 
@@ -130,7 +130,7 @@ class RecaptureDetectResponseResult:
 
     @property
     def detail(self):
-        """Gets the detail of this RecaptureDetectResponseResult.
+        r"""Gets the detail of this RecaptureDetectResponseResult.
 
         识别结果详情。
 
@@ -141,7 +141,7 @@ class RecaptureDetectResponseResult:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this RecaptureDetectResponseResult.
+        r"""Sets the detail of this RecaptureDetectResponseResult.
 
         识别结果详情。
 

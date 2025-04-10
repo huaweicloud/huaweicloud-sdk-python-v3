@@ -26,7 +26,7 @@ class CreateRetentionResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateRetentionResponse
+        r"""CreateRetentionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateRetentionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateRetentionResponse.
+        r"""Gets the id of this CreateRetentionResponse.
 
         镜像老化规则id
 
@@ -55,7 +55,7 @@ class CreateRetentionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateRetentionResponse.
+        r"""Sets the id of this CreateRetentionResponse.
 
         镜像老化规则id
 

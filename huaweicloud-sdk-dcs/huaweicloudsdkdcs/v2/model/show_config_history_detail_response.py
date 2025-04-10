@@ -26,7 +26,7 @@ class ShowConfigHistoryDetailResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowConfigHistoryDetailResponse
+        r"""ShowConfigHistoryDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowConfigHistoryDetailResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowConfigHistoryDetailResponse.
+        r"""Gets the body of this ShowConfigHistoryDetailResponse.
 
         :return: The body of this ShowConfigHistoryDetailResponse.
         :rtype: object
@@ -53,7 +53,7 @@ class ShowConfigHistoryDetailResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowConfigHistoryDetailResponse.
+        r"""Sets the body of this ShowConfigHistoryDetailResponse.
 
         :param body: The body of this ShowConfigHistoryDetailResponse.
         :type body: object

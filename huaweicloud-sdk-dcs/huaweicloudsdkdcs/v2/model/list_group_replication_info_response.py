@@ -28,7 +28,7 @@ class ListGroupReplicationInfoResponse(SdkResponse):
     }
 
     def __init__(self, group_list=None, group_count=None):
-        """ListGroupReplicationInfoResponse
+        r"""ListGroupReplicationInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListGroupReplicationInfoResponse(SdkResponse):
 
     @property
     def group_list(self):
-        """Gets the group_list of this ListGroupReplicationInfoResponse.
+        r"""Gets the group_list of this ListGroupReplicationInfoResponse.
 
         分片列表
 
@@ -62,7 +62,7 @@ class ListGroupReplicationInfoResponse(SdkResponse):
 
     @group_list.setter
     def group_list(self, group_list):
-        """Sets the group_list of this ListGroupReplicationInfoResponse.
+        r"""Sets the group_list of this ListGroupReplicationInfoResponse.
 
         分片列表
 
@@ -73,7 +73,7 @@ class ListGroupReplicationInfoResponse(SdkResponse):
 
     @property
     def group_count(self):
-        """Gets the group_count of this ListGroupReplicationInfoResponse.
+        r"""Gets the group_count of this ListGroupReplicationInfoResponse.
 
         实例分片总数。
 
@@ -84,7 +84,7 @@ class ListGroupReplicationInfoResponse(SdkResponse):
 
     @group_count.setter
     def group_count(self, group_count):
-        """Sets the group_count of this ListGroupReplicationInfoResponse.
+        r"""Sets the group_count of this ListGroupReplicationInfoResponse.
 
         实例分片总数。
 

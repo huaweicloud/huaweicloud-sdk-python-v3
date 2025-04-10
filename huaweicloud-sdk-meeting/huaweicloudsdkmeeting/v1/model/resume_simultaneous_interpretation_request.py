@@ -29,7 +29,7 @@ class ResumeSimultaneousInterpretationRequest:
     }
 
     def __init__(self, conference_id=None, x_conference_authorization=None, body=None):
-        """ResumeSimultaneousInterpretationRequest
+        r"""ResumeSimultaneousInterpretationRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResumeSimultaneousInterpretationRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this ResumeSimultaneousInterpretationRequest.
+        r"""Gets the conference_id of this ResumeSimultaneousInterpretationRequest.
 
         会议ID。
 
@@ -66,7 +66,7 @@ class ResumeSimultaneousInterpretationRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this ResumeSimultaneousInterpretationRequest.
+        r"""Sets the conference_id of this ResumeSimultaneousInterpretationRequest.
 
         会议ID。
 
@@ -77,7 +77,7 @@ class ResumeSimultaneousInterpretationRequest:
 
     @property
     def x_conference_authorization(self):
-        """Gets the x_conference_authorization of this ResumeSimultaneousInterpretationRequest.
+        r"""Gets the x_conference_authorization of this ResumeSimultaneousInterpretationRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -88,7 +88,7 @@ class ResumeSimultaneousInterpretationRequest:
 
     @x_conference_authorization.setter
     def x_conference_authorization(self, x_conference_authorization):
-        """Sets the x_conference_authorization of this ResumeSimultaneousInterpretationRequest.
+        r"""Sets the x_conference_authorization of this ResumeSimultaneousInterpretationRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -99,7 +99,7 @@ class ResumeSimultaneousInterpretationRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResumeSimultaneousInterpretationRequest.
+        r"""Gets the body of this ResumeSimultaneousInterpretationRequest.
 
         :return: The body of this ResumeSimultaneousInterpretationRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestSimultaneousInterpretationBody`
@@ -108,7 +108,7 @@ class ResumeSimultaneousInterpretationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResumeSimultaneousInterpretationRequest.
+        r"""Sets the body of this ResumeSimultaneousInterpretationRequest.
 
         :param body: The body of this ResumeSimultaneousInterpretationRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestSimultaneousInterpretationBody`

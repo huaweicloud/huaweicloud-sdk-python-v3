@@ -28,7 +28,7 @@ class ListStudyJobResponse(SdkResponse):
     }
 
     def __init__(self, count=None, jobs=None):
-        """ListStudyJobResponse
+        r"""ListStudyJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListStudyJobResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListStudyJobResponse.
+        r"""Gets the count of this ListStudyJobResponse.
 
         作业总数
 
@@ -62,7 +62,7 @@ class ListStudyJobResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListStudyJobResponse.
+        r"""Sets the count of this ListStudyJobResponse.
 
         作业总数
 
@@ -73,7 +73,7 @@ class ListStudyJobResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ListStudyJobResponse.
+        r"""Gets the jobs of this ListStudyJobResponse.
 
         作业列表
 
@@ -84,7 +84,7 @@ class ListStudyJobResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ListStudyJobResponse.
+        r"""Sets the jobs of this ListStudyJobResponse.
 
         作业列表
 

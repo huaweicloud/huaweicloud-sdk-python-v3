@@ -27,7 +27,7 @@ class CreateIteratorRequest:
     }
 
     def __init__(self, branch_uri=None, body=None):
-        """CreateIteratorRequest
+        r"""CreateIteratorRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateIteratorRequest:
 
     @property
     def branch_uri(self):
-        """Gets the branch_uri of this CreateIteratorRequest.
+        r"""Gets the branch_uri of this CreateIteratorRequest.
 
         分支URI
 
@@ -60,7 +60,7 @@ class CreateIteratorRequest:
 
     @branch_uri.setter
     def branch_uri(self, branch_uri):
-        """Sets the branch_uri of this CreateIteratorRequest.
+        r"""Sets the branch_uri of this CreateIteratorRequest.
 
         分支URI
 
@@ -71,7 +71,7 @@ class CreateIteratorRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateIteratorRequest.
+        r"""Gets the body of this CreateIteratorRequest.
 
         :return: The body of this CreateIteratorRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.IteratorVersionInfo`
@@ -80,7 +80,7 @@ class CreateIteratorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateIteratorRequest.
+        r"""Sets the body of this CreateIteratorRequest.
 
         :param body: The body of this CreateIteratorRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.IteratorVersionInfo`

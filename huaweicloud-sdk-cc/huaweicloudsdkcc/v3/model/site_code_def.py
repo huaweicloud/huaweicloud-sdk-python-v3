@@ -23,7 +23,7 @@ class SiteCodeDef:
     }
 
     def __init__(self):
-        """SiteCodeDef
+        r"""SiteCodeDef
 
         The model defined in huaweicloud sdk
 

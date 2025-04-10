@@ -29,7 +29,7 @@ class WeightPodAffinityTermsPodAffinityTerm:
     }
 
     def __init__(self, label_selector=None, namespaces=None, topology_key=None):
-        """WeightPodAffinityTermsPodAffinityTerm
+        r"""WeightPodAffinityTermsPodAffinityTerm
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class WeightPodAffinityTermsPodAffinityTerm:
 
     @property
     def label_selector(self):
-        """Gets the label_selector of this WeightPodAffinityTermsPodAffinityTerm.
+        r"""Gets the label_selector of this WeightPodAffinityTermsPodAffinityTerm.
 
         :return: The label_selector of this WeightPodAffinityTermsPodAffinityTerm.
         :rtype: :class:`huaweicloudsdkief.v1.LabelSelector`
@@ -66,7 +66,7 @@ class WeightPodAffinityTermsPodAffinityTerm:
 
     @label_selector.setter
     def label_selector(self, label_selector):
-        """Sets the label_selector of this WeightPodAffinityTermsPodAffinityTerm.
+        r"""Sets the label_selector of this WeightPodAffinityTermsPodAffinityTerm.
 
         :param label_selector: The label_selector of this WeightPodAffinityTermsPodAffinityTerm.
         :type label_selector: :class:`huaweicloudsdkief.v1.LabelSelector`
@@ -75,7 +75,7 @@ class WeightPodAffinityTermsPodAffinityTerm:
 
     @property
     def namespaces(self):
-        """Gets the namespaces of this WeightPodAffinityTermsPodAffinityTerm.
+        r"""Gets the namespaces of this WeightPodAffinityTermsPodAffinityTerm.
 
         命名空间
 
@@ -86,7 +86,7 @@ class WeightPodAffinityTermsPodAffinityTerm:
 
     @namespaces.setter
     def namespaces(self, namespaces):
-        """Sets the namespaces of this WeightPodAffinityTermsPodAffinityTerm.
+        r"""Sets the namespaces of this WeightPodAffinityTermsPodAffinityTerm.
 
         命名空间
 
@@ -97,7 +97,7 @@ class WeightPodAffinityTermsPodAffinityTerm:
 
     @property
     def topology_key(self):
-        """Gets the topology_key of this WeightPodAffinityTermsPodAffinityTerm.
+        r"""Gets the topology_key of this WeightPodAffinityTermsPodAffinityTerm.
 
         拓扑标签。先圈定topologyKey指定的范围，然后再选择labelSelector定义的内容，即亲和调度只会在有topologyKey指定的标签节点上调度。
 
@@ -108,7 +108,7 @@ class WeightPodAffinityTermsPodAffinityTerm:
 
     @topology_key.setter
     def topology_key(self, topology_key):
-        """Sets the topology_key of this WeightPodAffinityTermsPodAffinityTerm.
+        r"""Sets the topology_key of this WeightPodAffinityTermsPodAffinityTerm.
 
         拓扑标签。先圈定topologyKey指定的范围，然后再选择labelSelector定义的内容，即亲和调度只会在有topologyKey指定的标签节点上调度。
 

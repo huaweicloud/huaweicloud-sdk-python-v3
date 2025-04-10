@@ -26,7 +26,7 @@ class DeletePipelineGroupResponse(SdkResponse):
     }
 
     def __init__(self, success=None):
-        """DeletePipelineGroupResponse
+        r"""DeletePipelineGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeletePipelineGroupResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this DeletePipelineGroupResponse.
+        r"""Gets the success of this DeletePipelineGroupResponse.
 
         操作是否成功
 
@@ -55,7 +55,7 @@ class DeletePipelineGroupResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this DeletePipelineGroupResponse.
+        r"""Sets the success of this DeletePipelineGroupResponse.
 
         操作是否成功
 

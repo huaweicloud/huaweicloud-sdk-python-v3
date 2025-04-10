@@ -26,7 +26,7 @@ class ListGaussMySqlInstanceDetailInfoUnifyStatusResponse(SdkResponse):
     }
 
     def __init__(self, instances=None):
-        """ListGaussMySqlInstanceDetailInfoUnifyStatusResponse
+        r"""ListGaussMySqlInstanceDetailInfoUnifyStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListGaussMySqlInstanceDetailInfoUnifyStatusResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListGaussMySqlInstanceDetailInfoUnifyStatusResponse.
+        r"""Gets the instances of this ListGaussMySqlInstanceDetailInfoUnifyStatusResponse.
 
         实例详情。
 
@@ -55,7 +55,7 @@ class ListGaussMySqlInstanceDetailInfoUnifyStatusResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListGaussMySqlInstanceDetailInfoUnifyStatusResponse.
+        r"""Sets the instances of this ListGaussMySqlInstanceDetailInfoUnifyStatusResponse.
 
         实例详情。
 

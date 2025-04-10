@@ -30,7 +30,7 @@ class ShowCpiJobResponse(SdkResponse):
     }
 
     def __init__(self, basic_info=None, receptors=None, ligands=None):
-        """ShowCpiJobResponse
+        r"""ShowCpiJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowCpiJobResponse(SdkResponse):
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this ShowCpiJobResponse.
+        r"""Gets the basic_info of this ShowCpiJobResponse.
 
         :return: The basic_info of this ShowCpiJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -67,7 +67,7 @@ class ShowCpiJobResponse(SdkResponse):
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this ShowCpiJobResponse.
+        r"""Sets the basic_info of this ShowCpiJobResponse.
 
         :param basic_info: The basic_info of this ShowCpiJobResponse.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -76,7 +76,7 @@ class ShowCpiJobResponse(SdkResponse):
 
     @property
     def receptors(self):
-        """Gets the receptors of this ShowCpiJobResponse.
+        r"""Gets the receptors of this ShowCpiJobResponse.
 
         受体文件列表
 
@@ -87,7 +87,7 @@ class ShowCpiJobResponse(SdkResponse):
 
     @receptors.setter
     def receptors(self, receptors):
-        """Sets the receptors of this ShowCpiJobResponse.
+        r"""Sets the receptors of this ShowCpiJobResponse.
 
         受体文件列表
 
@@ -98,7 +98,7 @@ class ShowCpiJobResponse(SdkResponse):
 
     @property
     def ligands(self):
-        """Gets the ligands of this ShowCpiJobResponse.
+        r"""Gets the ligands of this ShowCpiJobResponse.
 
         小分子
 
@@ -109,7 +109,7 @@ class ShowCpiJobResponse(SdkResponse):
 
     @ligands.setter
     def ligands(self, ligands):
-        """Sets the ligands of this ShowCpiJobResponse.
+        r"""Sets the ligands of this ShowCpiJobResponse.
 
         小分子
 

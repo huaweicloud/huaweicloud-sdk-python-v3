@@ -26,7 +26,7 @@ class CreateAssetProcessTaskResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None):
-        """CreateAssetProcessTaskResponse
+        r"""CreateAssetProcessTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateAssetProcessTaskResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this CreateAssetProcessTaskResponse.
+        r"""Gets the asset_id of this CreateAssetProcessTaskResponse.
 
         媒资ID。
 
@@ -55,7 +55,7 @@ class CreateAssetProcessTaskResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this CreateAssetProcessTaskResponse.
+        r"""Sets the asset_id of this CreateAssetProcessTaskResponse.
 
         媒资ID。
 

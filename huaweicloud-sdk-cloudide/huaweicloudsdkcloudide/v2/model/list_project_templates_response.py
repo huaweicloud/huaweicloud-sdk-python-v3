@@ -28,7 +28,7 @@ class ListProjectTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, templates=None, status=None):
-        """ListProjectTemplatesResponse
+        r"""ListProjectTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProjectTemplatesResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this ListProjectTemplatesResponse.
+        r"""Gets the templates of this ListProjectTemplatesResponse.
 
         模板列表
 
@@ -62,7 +62,7 @@ class ListProjectTemplatesResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this ListProjectTemplatesResponse.
+        r"""Sets the templates of this ListProjectTemplatesResponse.
 
         模板列表
 
@@ -73,7 +73,7 @@ class ListProjectTemplatesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListProjectTemplatesResponse.
+        r"""Gets the status of this ListProjectTemplatesResponse.
 
         状态
 
@@ -84,7 +84,7 @@ class ListProjectTemplatesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListProjectTemplatesResponse.
+        r"""Sets the status of this ListProjectTemplatesResponse.
 
         状态
 

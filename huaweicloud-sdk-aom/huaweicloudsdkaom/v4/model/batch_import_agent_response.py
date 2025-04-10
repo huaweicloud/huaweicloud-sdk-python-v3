@@ -26,7 +26,7 @@ class BatchImportAgentResponse(SdkResponse):
     }
 
     def __init__(self, state=None):
-        """BatchImportAgentResponse
+        r"""BatchImportAgentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchImportAgentResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this BatchImportAgentResponse.
+        r"""Gets the state of this BatchImportAgentResponse.
 
         执行状态： - true：成功下发任务。 - false：失败下发任务。
 
@@ -55,7 +55,7 @@ class BatchImportAgentResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this BatchImportAgentResponse.
+        r"""Sets the state of this BatchImportAgentResponse.
 
         执行状态： - true：成功下发任务。 - false：失败下发任务。
 

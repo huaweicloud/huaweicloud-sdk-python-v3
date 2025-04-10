@@ -31,7 +31,7 @@ class SubtitleInfo:
     }
 
     def __init__(self, url=None, id=None, type=None, language=None):
-        """SubtitleInfo
+        r"""SubtitleInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SubtitleInfo:
 
     @property
     def url(self):
-        """Gets the url of this SubtitleInfo.
+        r"""Gets the url of this SubtitleInfo.
 
         字幕文件的下载地址 
 
@@ -75,7 +75,7 @@ class SubtitleInfo:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this SubtitleInfo.
+        r"""Sets the url of this SubtitleInfo.
 
         字幕文件的下载地址 
 
@@ -86,7 +86,7 @@ class SubtitleInfo:
 
     @property
     def id(self):
-        """Gets the id of this SubtitleInfo.
+        r"""Gets the id of this SubtitleInfo.
 
         字幕文件id 
 
@@ -97,7 +97,7 @@ class SubtitleInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubtitleInfo.
+        r"""Sets the id of this SubtitleInfo.
 
         字幕文件id 
 
@@ -108,7 +108,7 @@ class SubtitleInfo:
 
     @property
     def type(self):
-        """Gets the type of this SubtitleInfo.
+        r"""Gets the type of this SubtitleInfo.
 
         字幕文件类型 
 
@@ -119,7 +119,7 @@ class SubtitleInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SubtitleInfo.
+        r"""Sets the type of this SubtitleInfo.
 
         字幕文件类型 
 
@@ -130,7 +130,7 @@ class SubtitleInfo:
 
     @property
     def language(self):
-        """Gets the language of this SubtitleInfo.
+        r"""Gets the language of this SubtitleInfo.
 
         字幕文件语言种类 
 
@@ -141,7 +141,7 @@ class SubtitleInfo:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this SubtitleInfo.
+        r"""Sets the language of this SubtitleInfo.
 
         字幕文件语言种类 
 

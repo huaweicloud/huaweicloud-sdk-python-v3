@@ -27,7 +27,7 @@ class CreateClusterReqBodyClusterInfo:
     }
 
     def __init__(self, feature_map=None, cluster_instance_info=None):
-        """CreateClusterReqBodyClusterInfo
+        r"""CreateClusterReqBodyClusterInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateClusterReqBodyClusterInfo:
 
     @property
     def feature_map(self):
-        """Gets the feature_map of this CreateClusterReqBodyClusterInfo.
+        r"""Gets the feature_map of this CreateClusterReqBodyClusterInfo.
 
         特性属性开关      * 属性开关必须以enable开头，value必须为true|false      * doris: enable_broker      * hbase: storage_io_type（COMMON，ULTRAHIGH，两种取值），enable_open_tsdb（默认false，若为true需要在集群节点信息列表中指定tsd节点个数），enable_broker      示例：      \"feature_map\":{\"enable_broker\":\"false\"}       \"feature_map\":{\"enable_lemon\":\"false\",\"enable_open_tsdb\":\"false\",\"storage_io_type\": \"COMMON\"}
 
@@ -59,7 +59,7 @@ class CreateClusterReqBodyClusterInfo:
 
     @feature_map.setter
     def feature_map(self, feature_map):
-        """Sets the feature_map of this CreateClusterReqBodyClusterInfo.
+        r"""Sets the feature_map of this CreateClusterReqBodyClusterInfo.
 
         特性属性开关      * 属性开关必须以enable开头，value必须为true|false      * doris: enable_broker      * hbase: storage_io_type（COMMON，ULTRAHIGH，两种取值），enable_open_tsdb（默认false，若为true需要在集群节点信息列表中指定tsd节点个数），enable_broker      示例：      \"feature_map\":{\"enable_broker\":\"false\"}       \"feature_map\":{\"enable_lemon\":\"false\",\"enable_open_tsdb\":\"false\",\"storage_io_type\": \"COMMON\"}
 
@@ -70,7 +70,7 @@ class CreateClusterReqBodyClusterInfo:
 
     @property
     def cluster_instance_info(self):
-        """Gets the cluster_instance_info of this CreateClusterReqBodyClusterInfo.
+        r"""Gets the cluster_instance_info of this CreateClusterReqBodyClusterInfo.
 
         集群节点信息类
 
@@ -81,7 +81,7 @@ class CreateClusterReqBodyClusterInfo:
 
     @cluster_instance_info.setter
     def cluster_instance_info(self, cluster_instance_info):
-        """Sets the cluster_instance_info of this CreateClusterReqBodyClusterInfo.
+        r"""Sets the cluster_instance_info of this CreateClusterReqBodyClusterInfo.
 
         集群节点信息类
 

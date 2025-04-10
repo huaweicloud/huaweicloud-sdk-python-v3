@@ -28,7 +28,7 @@ class ListServicePublicDetailsResponse(SdkResponse):
     }
 
     def __init__(self, endpoint_services=None, total_count=None):
-        """ListServicePublicDetailsResponse
+        r"""ListServicePublicDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListServicePublicDetailsResponse(SdkResponse):
 
     @property
     def endpoint_services(self):
-        """Gets the endpoint_services of this ListServicePublicDetailsResponse.
+        r"""Gets the endpoint_services of this ListServicePublicDetailsResponse.
 
         终端节点服务列表。
 
@@ -62,7 +62,7 @@ class ListServicePublicDetailsResponse(SdkResponse):
 
     @endpoint_services.setter
     def endpoint_services(self, endpoint_services):
-        """Sets the endpoint_services of this ListServicePublicDetailsResponse.
+        r"""Sets the endpoint_services of this ListServicePublicDetailsResponse.
 
         终端节点服务列表。
 
@@ -73,7 +73,7 @@ class ListServicePublicDetailsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListServicePublicDetailsResponse.
+        r"""Gets the total_count of this ListServicePublicDetailsResponse.
 
         满足查询条件的公共终端节点服务总条数，不受分页（即limit、offset参数）影响。
 
@@ -84,7 +84,7 @@ class ListServicePublicDetailsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListServicePublicDetailsResponse.
+        r"""Sets the total_count of this ListServicePublicDetailsResponse.
 
         满足查询条件的公共终端节点服务总条数，不受分页（即limit、offset参数）影响。
 

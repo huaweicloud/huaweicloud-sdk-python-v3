@@ -24,7 +24,7 @@ class DeleteL7policyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteL7policyResponse
+        r"""DeleteL7policyResponse
 
         The model defined in huaweicloud sdk
 

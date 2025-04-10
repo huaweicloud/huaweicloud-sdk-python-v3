@@ -27,7 +27,7 @@ class BatchStopTransferTaskRequest:
     }
 
     def __init__(self, stream_name=None, body=None):
-        """BatchStopTransferTaskRequest
+        r"""BatchStopTransferTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchStopTransferTaskRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this BatchStopTransferTaskRequest.
+        r"""Gets the stream_name of this BatchStopTransferTaskRequest.
 
         需要查询的通道名称。
 
@@ -60,7 +60,7 @@ class BatchStopTransferTaskRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this BatchStopTransferTaskRequest.
+        r"""Sets the stream_name of this BatchStopTransferTaskRequest.
 
         需要查询的通道名称。
 
@@ -71,7 +71,7 @@ class BatchStopTransferTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchStopTransferTaskRequest.
+        r"""Gets the body of this BatchStopTransferTaskRequest.
 
         :return: The body of this BatchStopTransferTaskRequest.
         :rtype: :class:`huaweicloudsdkdis.v2.BatchStopTransferTaskReq`
@@ -80,7 +80,7 @@ class BatchStopTransferTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchStopTransferTaskRequest.
+        r"""Sets the body of this BatchStopTransferTaskRequest.
 
         :param body: The body of this BatchStopTransferTaskRequest.
         :type body: :class:`huaweicloudsdkdis.v2.BatchStopTransferTaskReq`

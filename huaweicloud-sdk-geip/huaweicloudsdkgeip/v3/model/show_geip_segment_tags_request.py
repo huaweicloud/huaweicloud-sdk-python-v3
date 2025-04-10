@@ -25,7 +25,7 @@ class ShowGeipSegmentTagsRequest:
     }
 
     def __init__(self, resource_id=None):
-        """ShowGeipSegmentTagsRequest
+        r"""ShowGeipSegmentTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowGeipSegmentTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowGeipSegmentTagsRequest.
+        r"""Gets the resource_id of this ShowGeipSegmentTagsRequest.
 
         :return: The resource_id of this ShowGeipSegmentTagsRequest.
         :rtype: str
@@ -51,7 +51,7 @@ class ShowGeipSegmentTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowGeipSegmentTagsRequest.
+        r"""Sets the resource_id of this ShowGeipSegmentTagsRequest.
 
         :param resource_id: The resource_id of this ShowGeipSegmentTagsRequest.
         :type resource_id: str

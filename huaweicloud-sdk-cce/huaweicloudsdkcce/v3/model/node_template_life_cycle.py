@@ -27,7 +27,7 @@ class NodeTemplateLifeCycle:
     }
 
     def __init__(self, pre_install=None, post_install=None):
-        """NodeTemplateLifeCycle
+        r"""NodeTemplateLifeCycle
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NodeTemplateLifeCycle:
 
     @property
     def pre_install(self):
-        """Gets the pre_install of this NodeTemplateLifeCycle.
+        r"""Gets the pre_install of this NodeTemplateLifeCycle.
 
         :return: The pre_install of this NodeTemplateLifeCycle.
         :rtype: str
@@ -59,7 +59,7 @@ class NodeTemplateLifeCycle:
 
     @pre_install.setter
     def pre_install(self, pre_install):
-        """Sets the pre_install of this NodeTemplateLifeCycle.
+        r"""Sets the pre_install of this NodeTemplateLifeCycle.
 
         :param pre_install: The pre_install of this NodeTemplateLifeCycle.
         :type pre_install: str
@@ -68,7 +68,7 @@ class NodeTemplateLifeCycle:
 
     @property
     def post_install(self):
-        """Gets the post_install of this NodeTemplateLifeCycle.
+        r"""Gets the post_install of this NodeTemplateLifeCycle.
 
         :return: The post_install of this NodeTemplateLifeCycle.
         :rtype: str
@@ -77,7 +77,7 @@ class NodeTemplateLifeCycle:
 
     @post_install.setter
     def post_install(self, post_install):
-        """Sets the post_install of this NodeTemplateLifeCycle.
+        r"""Sets the post_install of this NodeTemplateLifeCycle.
 
         :param post_install: The post_install of this NodeTemplateLifeCycle.
         :type post_install: str

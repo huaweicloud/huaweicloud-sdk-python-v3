@@ -27,7 +27,7 @@ class DeleteVideoScriptRequest:
     }
 
     def __init__(self, x_app_user_id=None, script_id=None):
-        """DeleteVideoScriptRequest
+        r"""DeleteVideoScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteVideoScriptRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this DeleteVideoScriptRequest.
+        r"""Gets the x_app_user_id of this DeleteVideoScriptRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -60,7 +60,7 @@ class DeleteVideoScriptRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this DeleteVideoScriptRequest.
+        r"""Sets the x_app_user_id of this DeleteVideoScriptRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -71,7 +71,7 @@ class DeleteVideoScriptRequest:
 
     @property
     def script_id(self):
-        """Gets the script_id of this DeleteVideoScriptRequest.
+        r"""Gets the script_id of this DeleteVideoScriptRequest.
 
         剧本ID。
 
@@ -82,7 +82,7 @@ class DeleteVideoScriptRequest:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this DeleteVideoScriptRequest.
+        r"""Sets the script_id of this DeleteVideoScriptRequest.
 
         剧本ID。
 

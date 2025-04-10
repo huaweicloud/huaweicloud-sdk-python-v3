@@ -29,7 +29,7 @@ class Operation:
     }
 
     def __init__(self, operation_id=None, operation_action=None, dependent_actions=None):
-        """Operation
+        r"""Operation
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Operation:
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this Operation.
+        r"""Gets the operation_id of this Operation.
 
         OpenAPI的操作标识符。
 
@@ -66,7 +66,7 @@ class Operation:
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this Operation.
+        r"""Sets the operation_id of this Operation.
 
         OpenAPI的操作标识符。
 
@@ -77,7 +77,7 @@ class Operation:
 
     @property
     def operation_action(self):
-        """Gets the operation_action of this Operation.
+        r"""Gets the operation_action of this Operation.
 
         三段式的授权项名称，例如\"iam:policies:createV5\"。
 
@@ -88,7 +88,7 @@ class Operation:
 
     @operation_action.setter
     def operation_action(self, operation_action):
-        """Sets the operation_action of this Operation.
+        r"""Sets the operation_action of this Operation.
 
         三段式的授权项名称，例如\"iam:policies:createV5\"。
 
@@ -99,7 +99,7 @@ class Operation:
 
     @property
     def dependent_actions(self):
-        """Gets the dependent_actions of this Operation.
+        r"""Gets the dependent_actions of this Operation.
 
         该操作可能需要的其他授权项授权。
 
@@ -110,7 +110,7 @@ class Operation:
 
     @dependent_actions.setter
     def dependent_actions(self, dependent_actions):
-        """Sets the dependent_actions of this Operation.
+        r"""Sets the dependent_actions of this Operation.
 
         该操作可能需要的其他授权项授权。
 

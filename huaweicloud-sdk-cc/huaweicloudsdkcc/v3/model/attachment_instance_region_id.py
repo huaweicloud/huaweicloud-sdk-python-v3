@@ -25,7 +25,7 @@ class AttachmentInstanceRegionId:
     }
 
     def __init__(self, attachment_instance_region_id=None):
-        """AttachmentInstanceRegionId
+        r"""AttachmentInstanceRegionId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AttachmentInstanceRegionId:
 
     @property
     def attachment_instance_region_id(self):
-        """Gets the attachment_instance_region_id of this AttachmentInstanceRegionId.
+        r"""Gets the attachment_instance_region_id of this AttachmentInstanceRegionId.
 
         中心网络附件对端实例的regionID。
 
@@ -53,7 +53,7 @@ class AttachmentInstanceRegionId:
 
     @attachment_instance_region_id.setter
     def attachment_instance_region_id(self, attachment_instance_region_id):
-        """Sets the attachment_instance_region_id of this AttachmentInstanceRegionId.
+        r"""Sets the attachment_instance_region_id of this AttachmentInstanceRegionId.
 
         中心网络附件对端实例的regionID。
 

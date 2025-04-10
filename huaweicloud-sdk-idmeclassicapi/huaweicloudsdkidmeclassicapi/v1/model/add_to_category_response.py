@@ -30,7 +30,7 @@ class AddToCategoryResponse(SdkResponse):
     }
 
     def __init__(self, result=None, data=None, errors=None):
-        """AddToCategoryResponse
+        r"""AddToCategoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class AddToCategoryResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this AddToCategoryResponse.
+        r"""Gets the result of this AddToCategoryResponse.
 
         **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
 
@@ -69,7 +69,7 @@ class AddToCategoryResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this AddToCategoryResponse.
+        r"""Sets the result of this AddToCategoryResponse.
 
         **参数解释：**  请求结果。  **取值范围：**  - SUCCESS：请求成功。 - FAIL：请求失败。  **默认取值：**  不涉及。 
 
@@ -80,7 +80,7 @@ class AddToCategoryResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this AddToCategoryResponse.
+        r"""Gets the data of this AddToCategoryResponse.
 
         **参数解释：**  影响数据数量。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -91,7 +91,7 @@ class AddToCategoryResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this AddToCategoryResponse.
+        r"""Sets the data of this AddToCategoryResponse.
 
         **参数解释：**  影响数据数量。  **取值范围：**  不涉及。  **默认取值：**  不涉及。
 
@@ -102,7 +102,7 @@ class AddToCategoryResponse(SdkResponse):
 
     @property
     def errors(self):
-        """Gets the errors of this AddToCategoryResponse.
+        r"""Gets the errors of this AddToCategoryResponse.
 
         **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -113,7 +113,7 @@ class AddToCategoryResponse(SdkResponse):
 
     @errors.setter
     def errors(self, errors):
-        """Sets the errors of this AddToCategoryResponse.
+        r"""Sets the errors of this AddToCategoryResponse.
 
         **参数解释：**  异常信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

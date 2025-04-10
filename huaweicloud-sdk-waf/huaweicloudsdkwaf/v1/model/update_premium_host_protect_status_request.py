@@ -29,7 +29,7 @@ class UpdatePremiumHostProtectStatusRequest:
     }
 
     def __init__(self, enterprise_project_id=None, host_id=None, body=None):
-        """UpdatePremiumHostProtectStatusRequest
+        r"""UpdatePremiumHostProtectStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdatePremiumHostProtectStatusRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdatePremiumHostProtectStatusRequest.
+        r"""Gets the enterprise_project_id of this UpdatePremiumHostProtectStatusRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -67,7 +67,7 @@ class UpdatePremiumHostProtectStatusRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdatePremiumHostProtectStatusRequest.
+        r"""Sets the enterprise_project_id of this UpdatePremiumHostProtectStatusRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -78,7 +78,7 @@ class UpdatePremiumHostProtectStatusRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this UpdatePremiumHostProtectStatusRequest.
+        r"""Gets the host_id of this UpdatePremiumHostProtectStatusRequest.
 
         独享模式域名ID
 
@@ -89,7 +89,7 @@ class UpdatePremiumHostProtectStatusRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this UpdatePremiumHostProtectStatusRequest.
+        r"""Sets the host_id of this UpdatePremiumHostProtectStatusRequest.
 
         独享模式域名ID
 
@@ -100,7 +100,7 @@ class UpdatePremiumHostProtectStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePremiumHostProtectStatusRequest.
+        r"""Gets the body of this UpdatePremiumHostProtectStatusRequest.
 
         :return: The body of this UpdatePremiumHostProtectStatusRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostProtectStatusRequestBody`
@@ -109,7 +109,7 @@ class UpdatePremiumHostProtectStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePremiumHostProtectStatusRequest.
+        r"""Sets the body of this UpdatePremiumHostProtectStatusRequest.
 
         :param body: The body of this UpdatePremiumHostProtectStatusRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostProtectStatusRequestBody`

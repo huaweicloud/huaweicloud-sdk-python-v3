@@ -27,7 +27,7 @@ class UpdateServiceRequest:
     }
 
     def __init__(self, service_id=None, body=None):
-        """UpdateServiceRequest
+        r"""UpdateServiceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateServiceRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this UpdateServiceRequest.
+        r"""Gets the service_id of this UpdateServiceRequest.
 
         注册服务唯一标识，该值由注册接口返回
 
@@ -60,7 +60,7 @@ class UpdateServiceRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this UpdateServiceRequest.
+        r"""Sets the service_id of this UpdateServiceRequest.
 
         注册服务唯一标识，该值由注册接口返回
 
@@ -71,7 +71,7 @@ class UpdateServiceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateServiceRequest.
+        r"""Gets the body of this UpdateServiceRequest.
 
         :return: The body of this UpdateServiceRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ServiceRequestBody`
@@ -80,7 +80,7 @@ class UpdateServiceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateServiceRequest.
+        r"""Sets the body of this UpdateServiceRequest.
 
         :param body: The body of this UpdateServiceRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.ServiceRequestBody`

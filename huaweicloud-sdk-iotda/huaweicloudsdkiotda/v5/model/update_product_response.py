@@ -48,7 +48,7 @@ class UpdateProductResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, app_name=None, product_id=None, name=None, device_type=None, protocol_type=None, data_format=None, manufacturer_name=None, industry=None, description=None, service_capabilities=None, create_time=None):
-        """UpdateProductResponse
+        r"""UpdateProductResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class UpdateProductResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateProductResponse.
+        r"""Gets the app_id of this UpdateProductResponse.
 
         资源空间ID。
 
@@ -132,7 +132,7 @@ class UpdateProductResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateProductResponse.
+        r"""Sets the app_id of this UpdateProductResponse.
 
         资源空间ID。
 
@@ -143,7 +143,7 @@ class UpdateProductResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this UpdateProductResponse.
+        r"""Gets the app_name of this UpdateProductResponse.
 
         资源空间名称。
 
@@ -154,7 +154,7 @@ class UpdateProductResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this UpdateProductResponse.
+        r"""Sets the app_name of this UpdateProductResponse.
 
         资源空间名称。
 
@@ -165,7 +165,7 @@ class UpdateProductResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this UpdateProductResponse.
+        r"""Gets the product_id of this UpdateProductResponse.
 
         产品ID，用于唯一标识一个产品，在物联网平台创建产品后由平台分配获得。
 
@@ -176,7 +176,7 @@ class UpdateProductResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this UpdateProductResponse.
+        r"""Sets the product_id of this UpdateProductResponse.
 
         产品ID，用于唯一标识一个产品，在物联网平台创建产品后由平台分配获得。
 
@@ -187,7 +187,7 @@ class UpdateProductResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateProductResponse.
+        r"""Gets the name of this UpdateProductResponse.
 
         产品名称。
 
@@ -198,7 +198,7 @@ class UpdateProductResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateProductResponse.
+        r"""Sets the name of this UpdateProductResponse.
 
         产品名称。
 
@@ -209,7 +209,7 @@ class UpdateProductResponse(SdkResponse):
 
     @property
     def device_type(self):
-        """Gets the device_type of this UpdateProductResponse.
+        r"""Gets the device_type of this UpdateProductResponse.
 
         设备类型。
 
@@ -220,7 +220,7 @@ class UpdateProductResponse(SdkResponse):
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this UpdateProductResponse.
+        r"""Sets the device_type of this UpdateProductResponse.
 
         设备类型。
 
@@ -231,7 +231,7 @@ class UpdateProductResponse(SdkResponse):
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this UpdateProductResponse.
+        r"""Gets the protocol_type of this UpdateProductResponse.
 
         设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA，Other，TCP，UDP。
 
@@ -242,7 +242,7 @@ class UpdateProductResponse(SdkResponse):
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this UpdateProductResponse.
+        r"""Sets the protocol_type of this UpdateProductResponse.
 
         设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA，Other，TCP，UDP。
 
@@ -253,7 +253,7 @@ class UpdateProductResponse(SdkResponse):
 
     @property
     def data_format(self):
-        """Gets the data_format of this UpdateProductResponse.
+        r"""Gets the data_format of this UpdateProductResponse.
 
         设备上报数据的格式，取值范围：json，binary。
 
@@ -264,7 +264,7 @@ class UpdateProductResponse(SdkResponse):
 
     @data_format.setter
     def data_format(self, data_format):
-        """Sets the data_format of this UpdateProductResponse.
+        r"""Sets the data_format of this UpdateProductResponse.
 
         设备上报数据的格式，取值范围：json，binary。
 
@@ -275,7 +275,7 @@ class UpdateProductResponse(SdkResponse):
 
     @property
     def manufacturer_name(self):
-        """Gets the manufacturer_name of this UpdateProductResponse.
+        r"""Gets the manufacturer_name of this UpdateProductResponse.
 
         厂商名称。
 
@@ -286,7 +286,7 @@ class UpdateProductResponse(SdkResponse):
 
     @manufacturer_name.setter
     def manufacturer_name(self, manufacturer_name):
-        """Sets the manufacturer_name of this UpdateProductResponse.
+        r"""Sets the manufacturer_name of this UpdateProductResponse.
 
         厂商名称。
 
@@ -297,7 +297,7 @@ class UpdateProductResponse(SdkResponse):
 
     @property
     def industry(self):
-        """Gets the industry of this UpdateProductResponse.
+        r"""Gets the industry of this UpdateProductResponse.
 
         设备所属行业。
 
@@ -308,7 +308,7 @@ class UpdateProductResponse(SdkResponse):
 
     @industry.setter
     def industry(self, industry):
-        """Sets the industry of this UpdateProductResponse.
+        r"""Sets the industry of this UpdateProductResponse.
 
         设备所属行业。
 
@@ -319,7 +319,7 @@ class UpdateProductResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateProductResponse.
+        r"""Gets the description of this UpdateProductResponse.
 
         产品的描述信息。
 
@@ -330,7 +330,7 @@ class UpdateProductResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateProductResponse.
+        r"""Sets the description of this UpdateProductResponse.
 
         产品的描述信息。
 
@@ -341,7 +341,7 @@ class UpdateProductResponse(SdkResponse):
 
     @property
     def service_capabilities(self):
-        """Gets the service_capabilities of this UpdateProductResponse.
+        r"""Gets the service_capabilities of this UpdateProductResponse.
 
         设备的服务能力列表。
 
@@ -352,7 +352,7 @@ class UpdateProductResponse(SdkResponse):
 
     @service_capabilities.setter
     def service_capabilities(self, service_capabilities):
-        """Sets the service_capabilities of this UpdateProductResponse.
+        r"""Sets the service_capabilities of this UpdateProductResponse.
 
         设备的服务能力列表。
 
@@ -363,7 +363,7 @@ class UpdateProductResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateProductResponse.
+        r"""Gets the create_time of this UpdateProductResponse.
 
         在物联网平台创建产品的时间，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -374,7 +374,7 @@ class UpdateProductResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateProductResponse.
+        r"""Sets the create_time of this UpdateProductResponse.
 
         在物联网平台创建产品的时间，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 

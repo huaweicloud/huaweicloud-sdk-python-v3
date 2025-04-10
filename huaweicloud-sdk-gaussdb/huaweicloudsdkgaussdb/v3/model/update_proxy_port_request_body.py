@@ -25,7 +25,7 @@ class UpdateProxyPortRequestBody:
     }
 
     def __init__(self, port=None):
-        """UpdateProxyPortRequestBody
+        r"""UpdateProxyPortRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateProxyPortRequestBody:
 
     @property
     def port(self):
-        """Gets the port of this UpdateProxyPortRequestBody.
+        r"""Gets the port of this UpdateProxyPortRequestBody.
 
         修改后的读写分离端口。  TaurusDB Proxy端口号范围：大于等于1025，小于等于65534，不包含端口1033、5342-5345、12017、20000、20201、20202、33062、33071。
 
@@ -53,7 +53,7 @@ class UpdateProxyPortRequestBody:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this UpdateProxyPortRequestBody.
+        r"""Sets the port of this UpdateProxyPortRequestBody.
 
         修改后的读写分离端口。  TaurusDB Proxy端口号范围：大于等于1025，小于等于65534，不包含端口1033、5342-5345、12017、20000、20201、20202、33062、33071。
 

@@ -35,7 +35,7 @@ class ListWorkOrderDetailsRequest:
     }
 
     def __init__(self, work_order_id=None, main_search_key=None, limit=None, offset=None, sim_type=None, status=None):
-        """ListWorkOrderDetailsRequest
+        r"""ListWorkOrderDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListWorkOrderDetailsRequest:
 
     @property
     def work_order_id(self):
-        """Gets the work_order_id of this ListWorkOrderDetailsRequest.
+        r"""Gets the work_order_id of this ListWorkOrderDetailsRequest.
 
         业务受理ID
 
@@ -88,7 +88,7 @@ class ListWorkOrderDetailsRequest:
 
     @work_order_id.setter
     def work_order_id(self, work_order_id):
-        """Sets the work_order_id of this ListWorkOrderDetailsRequest.
+        r"""Sets the work_order_id of this ListWorkOrderDetailsRequest.
 
         业务受理ID
 
@@ -99,7 +99,7 @@ class ListWorkOrderDetailsRequest:
 
     @property
     def main_search_key(self):
-        """Gets the main_search_key of this ListWorkOrderDetailsRequest.
+        r"""Gets the main_search_key of this ListWorkOrderDetailsRequest.
 
         容器ID
 
@@ -110,7 +110,7 @@ class ListWorkOrderDetailsRequest:
 
     @main_search_key.setter
     def main_search_key(self, main_search_key):
-        """Sets the main_search_key of this ListWorkOrderDetailsRequest.
+        r"""Sets the main_search_key of this ListWorkOrderDetailsRequest.
 
         容器ID
 
@@ -121,7 +121,7 @@ class ListWorkOrderDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkOrderDetailsRequest.
+        r"""Gets the limit of this ListWorkOrderDetailsRequest.
 
         每页的记录数
 
@@ -132,7 +132,7 @@ class ListWorkOrderDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkOrderDetailsRequest.
+        r"""Sets the limit of this ListWorkOrderDetailsRequest.
 
         每页的记录数
 
@@ -143,7 +143,7 @@ class ListWorkOrderDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkOrderDetailsRequest.
+        r"""Gets the offset of this ListWorkOrderDetailsRequest.
 
         页码，最小值是1，最大值为1000000。默认值是1
 
@@ -154,7 +154,7 @@ class ListWorkOrderDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkOrderDetailsRequest.
+        r"""Sets the offset of this ListWorkOrderDetailsRequest.
 
         页码，最小值是1，最大值为1000000。默认值是1
 
@@ -165,7 +165,7 @@ class ListWorkOrderDetailsRequest:
 
     @property
     def sim_type(self):
-        """Gets the sim_type of this ListWorkOrderDetailsRequest.
+        r"""Gets the sim_type of this ListWorkOrderDetailsRequest.
 
         SIM卡类型:3.实体卡
 
@@ -176,7 +176,7 @@ class ListWorkOrderDetailsRequest:
 
     @sim_type.setter
     def sim_type(self, sim_type):
-        """Sets the sim_type of this ListWorkOrderDetailsRequest.
+        r"""Sets the sim_type of this ListWorkOrderDetailsRequest.
 
         SIM卡类型:3.实体卡
 
@@ -187,7 +187,7 @@ class ListWorkOrderDetailsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListWorkOrderDetailsRequest.
+        r"""Gets the status of this ListWorkOrderDetailsRequest.
 
         业务受理明细状态：1成功、2处理中、3失败
 
@@ -198,7 +198,7 @@ class ListWorkOrderDetailsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListWorkOrderDetailsRequest.
+        r"""Sets the status of this ListWorkOrderDetailsRequest.
 
         业务受理明细状态：1成功、2处理中、3失败
 

@@ -29,7 +29,7 @@ class ApplicableInstancesInfo:
     }
 
     def __init__(self, instance_id=None, instance_name=None, entities=None):
-        """ApplicableInstancesInfo
+        r"""ApplicableInstancesInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ApplicableInstancesInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ApplicableInstancesInfo.
+        r"""Gets the instance_id of this ApplicableInstancesInfo.
 
         实例ID。
 
@@ -65,7 +65,7 @@ class ApplicableInstancesInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ApplicableInstancesInfo.
+        r"""Sets the instance_id of this ApplicableInstancesInfo.
 
         实例ID。
 
@@ -76,7 +76,7 @@ class ApplicableInstancesInfo:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ApplicableInstancesInfo.
+        r"""Gets the instance_name of this ApplicableInstancesInfo.
 
         实例名称。
 
@@ -87,7 +87,7 @@ class ApplicableInstancesInfo:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ApplicableInstancesInfo.
+        r"""Sets the instance_name of this ApplicableInstancesInfo.
 
         实例名称。
 
@@ -98,7 +98,7 @@ class ApplicableInstancesInfo:
 
     @property
     def entities(self):
-        """Gets the entities of this ApplicableInstancesInfo.
+        r"""Gets the entities of this ApplicableInstancesInfo.
 
         节点组信息或节点信息的列表对象。  当参数模板是集群类型时，如果是shard组或者config组的参数模板，则可应用到的是对应类型的节点组，如果是mongos组的参数模板，则可应用到的是对应类型的的节点。  当参数模板是副本集或单节点类型时，直接应用到对应实例。  例如：一个mongos参数模板可应用到一个或多个mongos节点。
 
@@ -109,7 +109,7 @@ class ApplicableInstancesInfo:
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ApplicableInstancesInfo.
+        r"""Sets the entities of this ApplicableInstancesInfo.
 
         节点组信息或节点信息的列表对象。  当参数模板是集群类型时，如果是shard组或者config组的参数模板，则可应用到的是对应类型的节点组，如果是mongos组的参数模板，则可应用到的是对应类型的的节点。  当参数模板是副本集或单节点类型时，直接应用到对应实例。  例如：一个mongos参数模板可应用到一个或多个mongos节点。
 

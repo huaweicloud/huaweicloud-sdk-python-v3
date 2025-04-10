@@ -31,7 +31,7 @@ class RetrieveEnterpriseMultiAccountCouponReq:
     }
 
     def __init__(self, customer_id=None, coupon_id=None, sub_coupon_id=None, trans_id=None):
-        """RetrieveEnterpriseMultiAccountCouponReq
+        r"""RetrieveEnterpriseMultiAccountCouponReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class RetrieveEnterpriseMultiAccountCouponReq:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this RetrieveEnterpriseMultiAccountCouponReq.
+        r"""Gets the customer_id of this RetrieveEnterpriseMultiAccountCouponReq.
 
         企业子账号的客户ID。您可以调用查询企业子账号列表接口，获取响应参数“id”的返回值。
 
@@ -72,7 +72,7 @@ class RetrieveEnterpriseMultiAccountCouponReq:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this RetrieveEnterpriseMultiAccountCouponReq.
+        r"""Sets the customer_id of this RetrieveEnterpriseMultiAccountCouponReq.
 
         企业子账号的客户ID。您可以调用查询企业子账号列表接口，获取响应参数“id”的返回值。
 
@@ -83,7 +83,7 @@ class RetrieveEnterpriseMultiAccountCouponReq:
 
     @property
     def coupon_id(self):
-        """Gets the coupon_id of this RetrieveEnterpriseMultiAccountCouponReq.
+        r"""Gets the coupon_id of this RetrieveEnterpriseMultiAccountCouponReq.
 
         优惠券ID。您可以调用查询企业子账号可回收优惠券列表接口，获取响应参数“coupon_id”的返回值。
 
@@ -94,7 +94,7 @@ class RetrieveEnterpriseMultiAccountCouponReq:
 
     @coupon_id.setter
     def coupon_id(self, coupon_id):
-        """Sets the coupon_id of this RetrieveEnterpriseMultiAccountCouponReq.
+        r"""Sets the coupon_id of this RetrieveEnterpriseMultiAccountCouponReq.
 
         优惠券ID。您可以调用查询企业子账号可回收优惠券列表接口，获取响应参数“coupon_id”的返回值。
 
@@ -105,7 +105,7 @@ class RetrieveEnterpriseMultiAccountCouponReq:
 
     @property
     def sub_coupon_id(self):
-        """Gets the sub_coupon_id of this RetrieveEnterpriseMultiAccountCouponReq.
+        r"""Gets the sub_coupon_id of this RetrieveEnterpriseMultiAccountCouponReq.
 
         子优惠券ID。您可以调用查询企业子账号可回收优惠券列表接口，获取响应参数“sub_coupon_id”的返回值。
 
@@ -116,7 +116,7 @@ class RetrieveEnterpriseMultiAccountCouponReq:
 
     @sub_coupon_id.setter
     def sub_coupon_id(self, sub_coupon_id):
-        """Sets the sub_coupon_id of this RetrieveEnterpriseMultiAccountCouponReq.
+        r"""Sets the sub_coupon_id of this RetrieveEnterpriseMultiAccountCouponReq.
 
         子优惠券ID。您可以调用查询企业子账号可回收优惠券列表接口，获取响应参数“sub_coupon_id”的返回值。
 
@@ -127,7 +127,7 @@ class RetrieveEnterpriseMultiAccountCouponReq:
 
     @property
     def trans_id(self):
-        """Gets the trans_id of this RetrieveEnterpriseMultiAccountCouponReq.
+        r"""Gets the trans_id of this RetrieveEnterpriseMultiAccountCouponReq.
 
         交易序列号，用于防止重复提交。 如果接口调用方不传，则企业管理微服务后台生成如果接口调用方传入，则请采用UUID保证全局唯一 此参数不携带或携带值为null或携带值为空串时，由系统自动生成。
 
@@ -138,7 +138,7 @@ class RetrieveEnterpriseMultiAccountCouponReq:
 
     @trans_id.setter
     def trans_id(self, trans_id):
-        """Sets the trans_id of this RetrieveEnterpriseMultiAccountCouponReq.
+        r"""Sets the trans_id of this RetrieveEnterpriseMultiAccountCouponReq.
 
         交易序列号，用于防止重复提交。 如果接口调用方不传，则企业管理微服务后台生成如果接口调用方传入，则请采用UUID保证全局唯一 此参数不携带或携带值为null或携带值为空串时，由系统自动生成。
 

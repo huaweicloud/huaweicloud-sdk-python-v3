@@ -25,7 +25,7 @@ class DeleteMuteRuleName:
     }
 
     def __init__(self, name=None):
-        """DeleteMuteRuleName
+        r"""DeleteMuteRuleName
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteMuteRuleName:
 
     @property
     def name(self):
-        """Gets the name of this DeleteMuteRuleName.
+        r"""Gets the name of this DeleteMuteRuleName.
 
         要删除的静默规则的名称
 
@@ -53,7 +53,7 @@ class DeleteMuteRuleName:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeleteMuteRuleName.
+        r"""Sets the name of this DeleteMuteRuleName.
 
         要删除的静默规则的名称
 

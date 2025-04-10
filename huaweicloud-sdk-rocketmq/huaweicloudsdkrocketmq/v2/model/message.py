@@ -51,7 +51,7 @@ class Message:
     }
 
     def __init__(self, msg_id=None, instance_id=None, topic=None, store_timestamp=None, born_timestamp=None, reconsume_times=None, body=None, body_crc=None, store_size=None, property_list=None, born_host=None, store_host=None, queue_id=None, queue_offset=None):
-        """Message
+        r"""Message
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class Message:
 
     @property
     def msg_id(self):
-        """Gets the msg_id of this Message.
+        r"""Gets the msg_id of this Message.
 
         消息ID。
 
@@ -145,7 +145,7 @@ class Message:
 
     @msg_id.setter
     def msg_id(self, msg_id):
-        """Sets the msg_id of this Message.
+        r"""Sets the msg_id of this Message.
 
         消息ID。
 
@@ -156,7 +156,7 @@ class Message:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this Message.
+        r"""Gets the instance_id of this Message.
 
         实例ID。
 
@@ -167,7 +167,7 @@ class Message:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this Message.
+        r"""Sets the instance_id of this Message.
 
         实例ID。
 
@@ -178,7 +178,7 @@ class Message:
 
     @property
     def topic(self):
-        """Gets the topic of this Message.
+        r"""Gets the topic of this Message.
 
         主题名称。
 
@@ -189,7 +189,7 @@ class Message:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this Message.
+        r"""Sets the topic of this Message.
 
         主题名称。
 
@@ -200,7 +200,7 @@ class Message:
 
     @property
     def store_timestamp(self):
-        """Gets the store_timestamp of this Message.
+        r"""Gets the store_timestamp of this Message.
 
         存储消息的时间。
 
@@ -211,7 +211,7 @@ class Message:
 
     @store_timestamp.setter
     def store_timestamp(self, store_timestamp):
-        """Sets the store_timestamp of this Message.
+        r"""Sets the store_timestamp of this Message.
 
         存储消息的时间。
 
@@ -222,7 +222,7 @@ class Message:
 
     @property
     def born_timestamp(self):
-        """Gets the born_timestamp of this Message.
+        r"""Gets the born_timestamp of this Message.
 
         产生消息的时间。
 
@@ -233,7 +233,7 @@ class Message:
 
     @born_timestamp.setter
     def born_timestamp(self, born_timestamp):
-        """Sets the born_timestamp of this Message.
+        r"""Sets the born_timestamp of this Message.
 
         产生消息的时间。
 
@@ -244,7 +244,7 @@ class Message:
 
     @property
     def reconsume_times(self):
-        """Gets the reconsume_times of this Message.
+        r"""Gets the reconsume_times of this Message.
 
         重试次数。
 
@@ -255,7 +255,7 @@ class Message:
 
     @reconsume_times.setter
     def reconsume_times(self, reconsume_times):
-        """Sets the reconsume_times of this Message.
+        r"""Sets the reconsume_times of this Message.
 
         重试次数。
 
@@ -266,7 +266,7 @@ class Message:
 
     @property
     def body(self):
-        """Gets the body of this Message.
+        r"""Gets the body of this Message.
 
         消息体。
 
@@ -277,7 +277,7 @@ class Message:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this Message.
+        r"""Sets the body of this Message.
 
         消息体。
 
@@ -288,7 +288,7 @@ class Message:
 
     @property
     def body_crc(self):
-        """Gets the body_crc of this Message.
+        r"""Gets the body_crc of this Message.
 
         消息体校验和。
 
@@ -299,7 +299,7 @@ class Message:
 
     @body_crc.setter
     def body_crc(self, body_crc):
-        """Sets the body_crc of this Message.
+        r"""Sets the body_crc of this Message.
 
         消息体校验和。
 
@@ -310,7 +310,7 @@ class Message:
 
     @property
     def store_size(self):
-        """Gets the store_size of this Message.
+        r"""Gets the store_size of this Message.
 
         存储大小。
 
@@ -321,7 +321,7 @@ class Message:
 
     @store_size.setter
     def store_size(self, store_size):
-        """Sets the store_size of this Message.
+        r"""Sets the store_size of this Message.
 
         存储大小。
 
@@ -332,7 +332,7 @@ class Message:
 
     @property
     def property_list(self):
-        """Gets the property_list of this Message.
+        r"""Gets the property_list of this Message.
 
         消息属性列表。
 
@@ -343,7 +343,7 @@ class Message:
 
     @property_list.setter
     def property_list(self, property_list):
-        """Sets the property_list of this Message.
+        r"""Sets the property_list of this Message.
 
         消息属性列表。
 
@@ -354,7 +354,7 @@ class Message:
 
     @property
     def born_host(self):
-        """Gets the born_host of this Message.
+        r"""Gets the born_host of this Message.
 
         产生消息的主机IP。
 
@@ -365,7 +365,7 @@ class Message:
 
     @born_host.setter
     def born_host(self, born_host):
-        """Sets the born_host of this Message.
+        r"""Sets the born_host of this Message.
 
         产生消息的主机IP。
 
@@ -376,7 +376,7 @@ class Message:
 
     @property
     def store_host(self):
-        """Gets the store_host of this Message.
+        r"""Gets the store_host of this Message.
 
         存储消息的主机IP。
 
@@ -387,7 +387,7 @@ class Message:
 
     @store_host.setter
     def store_host(self, store_host):
-        """Sets the store_host of this Message.
+        r"""Sets the store_host of this Message.
 
         存储消息的主机IP。
 
@@ -398,7 +398,7 @@ class Message:
 
     @property
     def queue_id(self):
-        """Gets the queue_id of this Message.
+        r"""Gets the queue_id of this Message.
 
         队列ID。
 
@@ -409,7 +409,7 @@ class Message:
 
     @queue_id.setter
     def queue_id(self, queue_id):
-        """Sets the queue_id of this Message.
+        r"""Sets the queue_id of this Message.
 
         队列ID。
 
@@ -420,7 +420,7 @@ class Message:
 
     @property
     def queue_offset(self):
-        """Gets the queue_offset of this Message.
+        r"""Gets the queue_offset of this Message.
 
         在队列中的偏移量。
 
@@ -431,7 +431,7 @@ class Message:
 
     @queue_offset.setter
     def queue_offset(self, queue_offset):
-        """Sets the queue_offset of this Message.
+        r"""Sets the queue_offset of this Message.
 
         在队列中的偏移量。
 

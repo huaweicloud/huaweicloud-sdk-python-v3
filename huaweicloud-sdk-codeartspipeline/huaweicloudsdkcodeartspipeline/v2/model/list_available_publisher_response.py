@@ -26,7 +26,7 @@ class ListAvailablePublisherResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListAvailablePublisherResponse
+        r"""ListAvailablePublisherResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAvailablePublisherResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListAvailablePublisherResponse.
+        r"""Gets the body of this ListAvailablePublisherResponse.
 
         :return: The body of this ListAvailablePublisherResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PublisherVO`]
@@ -53,7 +53,7 @@ class ListAvailablePublisherResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAvailablePublisherResponse.
+        r"""Sets the body of this ListAvailablePublisherResponse.
 
         :param body: The body of this ListAvailablePublisherResponse.
         :type body: list[:class:`huaweicloudsdkcodeartspipeline.v2.PublisherVO`]

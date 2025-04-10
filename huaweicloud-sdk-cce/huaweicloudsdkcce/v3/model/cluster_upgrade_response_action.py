@@ -33,7 +33,7 @@ class ClusterUpgradeResponseAction:
     }
 
     def __init__(self, version=None, target_version=None, target_platform_version=None, strategy=None, config=None):
-        """ClusterUpgradeResponseAction
+        r"""ClusterUpgradeResponseAction
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ClusterUpgradeResponseAction:
 
     @property
     def version(self):
-        """Gets the version of this ClusterUpgradeResponseAction.
+        r"""Gets the version of this ClusterUpgradeResponseAction.
 
         当前集群版本
 
@@ -82,7 +82,7 @@ class ClusterUpgradeResponseAction:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ClusterUpgradeResponseAction.
+        r"""Sets the version of this ClusterUpgradeResponseAction.
 
         当前集群版本
 
@@ -93,7 +93,7 @@ class ClusterUpgradeResponseAction:
 
     @property
     def target_version(self):
-        """Gets the target_version of this ClusterUpgradeResponseAction.
+        r"""Gets the target_version of this ClusterUpgradeResponseAction.
 
         目标集群版本，例如\"v1.23\"
 
@@ -104,7 +104,7 @@ class ClusterUpgradeResponseAction:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this ClusterUpgradeResponseAction.
+        r"""Sets the target_version of this ClusterUpgradeResponseAction.
 
         目标集群版本，例如\"v1.23\"
 
@@ -115,7 +115,7 @@ class ClusterUpgradeResponseAction:
 
     @property
     def target_platform_version(self):
-        """Gets the target_platform_version of this ClusterUpgradeResponseAction.
+        r"""Gets the target_platform_version of this ClusterUpgradeResponseAction.
 
         目标集群的平台版本号，表示集群版本(version)下的内部版本，不支持用户指定。
 
@@ -126,7 +126,7 @@ class ClusterUpgradeResponseAction:
 
     @target_platform_version.setter
     def target_platform_version(self, target_platform_version):
-        """Sets the target_platform_version of this ClusterUpgradeResponseAction.
+        r"""Sets the target_platform_version of this ClusterUpgradeResponseAction.
 
         目标集群的平台版本号，表示集群版本(version)下的内部版本，不支持用户指定。
 
@@ -137,7 +137,7 @@ class ClusterUpgradeResponseAction:
 
     @property
     def strategy(self):
-        """Gets the strategy of this ClusterUpgradeResponseAction.
+        r"""Gets the strategy of this ClusterUpgradeResponseAction.
 
         :return: The strategy of this ClusterUpgradeResponseAction.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeStrategy`
@@ -146,7 +146,7 @@ class ClusterUpgradeResponseAction:
 
     @strategy.setter
     def strategy(self, strategy):
-        """Sets the strategy of this ClusterUpgradeResponseAction.
+        r"""Sets the strategy of this ClusterUpgradeResponseAction.
 
         :param strategy: The strategy of this ClusterUpgradeResponseAction.
         :type strategy: :class:`huaweicloudsdkcce.v3.UpgradeStrategy`
@@ -155,7 +155,7 @@ class ClusterUpgradeResponseAction:
 
     @property
     def config(self):
-        """Gets the config of this ClusterUpgradeResponseAction.
+        r"""Gets the config of this ClusterUpgradeResponseAction.
 
         升级过程中指定的集群配置
 
@@ -166,7 +166,7 @@ class ClusterUpgradeResponseAction:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this ClusterUpgradeResponseAction.
+        r"""Sets the config of this ClusterUpgradeResponseAction.
 
         升级过程中指定的集群配置
 

@@ -29,7 +29,7 @@ class PrePaidServerPublicip:
     }
 
     def __init__(self, id=None, eip=None, delete_on_termination=None):
-        """PrePaidServerPublicip
+        r"""PrePaidServerPublicip
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PrePaidServerPublicip:
 
     @property
     def id(self):
-        """Gets the id of this PrePaidServerPublicip.
+        r"""Gets the id of this PrePaidServerPublicip.
 
         为待创建云服务器分配已有弹性IP时，分配的弹性IP的ID，UUID格式。  约束：只能分配状态（status）为DOWN的弹性IP。
 
@@ -68,7 +68,7 @@ class PrePaidServerPublicip:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PrePaidServerPublicip.
+        r"""Sets the id of this PrePaidServerPublicip.
 
         为待创建云服务器分配已有弹性IP时，分配的弹性IP的ID，UUID格式。  约束：只能分配状态（status）为DOWN的弹性IP。
 
@@ -79,7 +79,7 @@ class PrePaidServerPublicip:
 
     @property
     def eip(self):
-        """Gets the eip of this PrePaidServerPublicip.
+        r"""Gets the eip of this PrePaidServerPublicip.
 
         :return: The eip of this PrePaidServerPublicip.
         :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServerEip`
@@ -88,7 +88,7 @@ class PrePaidServerPublicip:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this PrePaidServerPublicip.
+        r"""Sets the eip of this PrePaidServerPublicip.
 
         :param eip: The eip of this PrePaidServerPublicip.
         :type eip: :class:`huaweicloudsdkecs.v2.PrePaidServerEip`
@@ -97,7 +97,7 @@ class PrePaidServerPublicip:
 
     @property
     def delete_on_termination(self):
-        """Gets the delete_on_termination of this PrePaidServerPublicip.
+        r"""Gets the delete_on_termination of this PrePaidServerPublicip.
 
         弹性公网IP随实例释放策略。  true：弹性公网IP随实例释放。 false：弹性公网IP不随实例释放。 默认值：false。
 
@@ -108,7 +108,7 @@ class PrePaidServerPublicip:
 
     @delete_on_termination.setter
     def delete_on_termination(self, delete_on_termination):
-        """Sets the delete_on_termination of this PrePaidServerPublicip.
+        r"""Sets the delete_on_termination of this PrePaidServerPublicip.
 
         弹性公网IP随实例释放策略。  true：弹性公网IP随实例释放。 false：弹性公网IP不随实例释放。 默认值：false。
 

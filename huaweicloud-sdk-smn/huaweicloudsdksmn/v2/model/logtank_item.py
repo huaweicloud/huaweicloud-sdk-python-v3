@@ -33,7 +33,7 @@ class LogtankItem:
     }
 
     def __init__(self, id=None, log_group_id=None, log_stream_id=None, create_time=None, update_time=None):
-        """LogtankItem
+        r"""LogtankItem
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class LogtankItem:
 
     @property
     def id(self):
-        """Gets the id of this LogtankItem.
+        r"""Gets the id of this LogtankItem.
 
         云日志信息唯一的资源标识。
 
@@ -77,7 +77,7 @@ class LogtankItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LogtankItem.
+        r"""Sets the id of this LogtankItem.
 
         云日志信息唯一的资源标识。
 
@@ -88,7 +88,7 @@ class LogtankItem:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this LogtankItem.
+        r"""Gets the log_group_id of this LogtankItem.
 
         云日志服务日志组ID。
 
@@ -99,7 +99,7 @@ class LogtankItem:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this LogtankItem.
+        r"""Sets the log_group_id of this LogtankItem.
 
         云日志服务日志组ID。
 
@@ -110,7 +110,7 @@ class LogtankItem:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this LogtankItem.
+        r"""Gets the log_stream_id of this LogtankItem.
 
         云日志服务日志流ID。
 
@@ -121,7 +121,7 @@ class LogtankItem:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this LogtankItem.
+        r"""Sets the log_stream_id of this LogtankItem.
 
         云日志服务日志流ID。
 
@@ -132,7 +132,7 @@ class LogtankItem:
 
     @property
     def create_time(self):
-        """Gets the create_time of this LogtankItem.
+        r"""Gets the create_time of this LogtankItem.
 
         创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -143,7 +143,7 @@ class LogtankItem:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this LogtankItem.
+        r"""Sets the create_time of this LogtankItem.
 
         创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -154,7 +154,7 @@ class LogtankItem:
 
     @property
     def update_time(self):
-        """Gets the update_time of this LogtankItem.
+        r"""Gets the update_time of this LogtankItem.
 
         更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
@@ -165,7 +165,7 @@ class LogtankItem:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this LogtankItem.
+        r"""Sets the update_time of this LogtankItem.
 
         更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 

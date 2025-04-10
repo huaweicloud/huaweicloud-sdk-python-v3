@@ -27,7 +27,7 @@ class QueryDiagnoseItemsReq:
     }
 
     def __init__(self, job_id=None, item_ids=None):
-        """QueryDiagnoseItemsReq
+        r"""QueryDiagnoseItemsReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QueryDiagnoseItemsReq:
 
     @property
     def job_id(self):
-        """Gets the job_id of this QueryDiagnoseItemsReq.
+        r"""Gets the job_id of this QueryDiagnoseItemsReq.
 
         job id
 
@@ -61,7 +61,7 @@ class QueryDiagnoseItemsReq:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this QueryDiagnoseItemsReq.
+        r"""Sets the job_id of this QueryDiagnoseItemsReq.
 
         job id
 
@@ -72,7 +72,7 @@ class QueryDiagnoseItemsReq:
 
     @property
     def item_ids(self):
-        """Gets the item_ids of this QueryDiagnoseItemsReq.
+        r"""Gets the item_ids of this QueryDiagnoseItemsReq.
 
         诊断项id列表
 
@@ -83,7 +83,7 @@ class QueryDiagnoseItemsReq:
 
     @item_ids.setter
     def item_ids(self, item_ids):
-        """Sets the item_ids of this QueryDiagnoseItemsReq.
+        r"""Sets the item_ids of this QueryDiagnoseItemsReq.
 
         诊断项id列表
 

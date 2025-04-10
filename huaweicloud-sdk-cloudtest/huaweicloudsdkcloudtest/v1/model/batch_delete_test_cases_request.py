@@ -27,7 +27,7 @@ class BatchDeleteTestCasesRequest:
     }
 
     def __init__(self, is_async=None, body=None):
-        """BatchDeleteTestCasesRequest
+        r"""BatchDeleteTestCasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchDeleteTestCasesRequest:
 
     @property
     def is_async(self):
-        """Gets the is_async of this BatchDeleteTestCasesRequest.
+        r"""Gets the is_async of this BatchDeleteTestCasesRequest.
 
         是否异步
 
@@ -61,7 +61,7 @@ class BatchDeleteTestCasesRequest:
 
     @is_async.setter
     def is_async(self, is_async):
-        """Sets the is_async of this BatchDeleteTestCasesRequest.
+        r"""Sets the is_async of this BatchDeleteTestCasesRequest.
 
         是否异步
 
@@ -72,7 +72,7 @@ class BatchDeleteTestCasesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteTestCasesRequest.
+        r"""Gets the body of this BatchDeleteTestCasesRequest.
 
         :return: The body of this BatchDeleteTestCasesRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.DeleteTestCaseInfo`
@@ -81,7 +81,7 @@ class BatchDeleteTestCasesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteTestCasesRequest.
+        r"""Sets the body of this BatchDeleteTestCasesRequest.
 
         :param body: The body of this BatchDeleteTestCasesRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.DeleteTestCaseInfo`

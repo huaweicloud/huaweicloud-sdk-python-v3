@@ -25,7 +25,7 @@ class UpdateVgwRequestBody:
     }
 
     def __init__(self, vpn_gateway=None):
-        """UpdateVgwRequestBody
+        r"""UpdateVgwRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateVgwRequestBody:
 
     @property
     def vpn_gateway(self):
-        """Gets the vpn_gateway of this UpdateVgwRequestBody.
+        r"""Gets the vpn_gateway of this UpdateVgwRequestBody.
 
         :return: The vpn_gateway of this UpdateVgwRequestBody.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVgwRequestBodyContent`
@@ -51,7 +51,7 @@ class UpdateVgwRequestBody:
 
     @vpn_gateway.setter
     def vpn_gateway(self, vpn_gateway):
-        """Sets the vpn_gateway of this UpdateVgwRequestBody.
+        r"""Sets the vpn_gateway of this UpdateVgwRequestBody.
 
         :param vpn_gateway: The vpn_gateway of this UpdateVgwRequestBody.
         :type vpn_gateway: :class:`huaweicloudsdkvpn.v5.UpdateVgwRequestBodyContent`

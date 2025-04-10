@@ -67,7 +67,7 @@ class TasksQueryInfo:
     }
 
     def __init__(self, uris=None, keyword=None, tags=None, own=None, service_type=None, release_dev_list=None, result_codes=None, status_codes=None, owner_ids=None, executor_ids=None, creator_ids=None, sort_field=None, sort_type=None, page_no=None, page_size=None, is_polling_query=None, is_query_associated_case_list=None, plan_start_start_timestamp=None, plan_start_end_timestamp=None, plan_end_start_timestamp=None, plan_end_end_timestamp=None, expiration_status_list=None):
-        """TasksQueryInfo
+        r"""TasksQueryInfo
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class TasksQueryInfo:
 
     @property
     def uris(self):
-        """Gets the uris of this TasksQueryInfo.
+        r"""Gets the uris of this TasksQueryInfo.
 
         测试任务URI集合
 
@@ -201,7 +201,7 @@ class TasksQueryInfo:
 
     @uris.setter
     def uris(self, uris):
-        """Sets the uris of this TasksQueryInfo.
+        r"""Sets the uris of this TasksQueryInfo.
 
         测试任务URI集合
 
@@ -212,7 +212,7 @@ class TasksQueryInfo:
 
     @property
     def keyword(self):
-        """Gets the keyword of this TasksQueryInfo.
+        r"""Gets the keyword of this TasksQueryInfo.
 
         关键字查询，任务名或编号
 
@@ -223,7 +223,7 @@ class TasksQueryInfo:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this TasksQueryInfo.
+        r"""Sets the keyword of this TasksQueryInfo.
 
         关键字查询，任务名或编号
 
@@ -234,7 +234,7 @@ class TasksQueryInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this TasksQueryInfo.
+        r"""Gets the tags of this TasksQueryInfo.
 
         标签集合
 
@@ -245,7 +245,7 @@ class TasksQueryInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TasksQueryInfo.
+        r"""Sets the tags of this TasksQueryInfo.
 
         标签集合
 
@@ -256,7 +256,7 @@ class TasksQueryInfo:
 
     @property
     def own(self):
-        """Gets the own of this TasksQueryInfo.
+        r"""Gets the own of this TasksQueryInfo.
 
         是否是我的
 
@@ -267,7 +267,7 @@ class TasksQueryInfo:
 
     @own.setter
     def own(self, own):
-        """Sets the own of this TasksQueryInfo.
+        r"""Sets the own of this TasksQueryInfo.
 
         是否是我的
 
@@ -278,7 +278,7 @@ class TasksQueryInfo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this TasksQueryInfo.
+        r"""Gets the service_type of this TasksQueryInfo.
 
         服务类型
 
@@ -289,7 +289,7 @@ class TasksQueryInfo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this TasksQueryInfo.
+        r"""Sets the service_type of this TasksQueryInfo.
 
         服务类型
 
@@ -300,7 +300,7 @@ class TasksQueryInfo:
 
     @property
     def release_dev_list(self):
-        """Gets the release_dev_list of this TasksQueryInfo.
+        r"""Gets the release_dev_list of this TasksQueryInfo.
 
         发布版本号集合
 
@@ -311,7 +311,7 @@ class TasksQueryInfo:
 
     @release_dev_list.setter
     def release_dev_list(self, release_dev_list):
-        """Sets the release_dev_list of this TasksQueryInfo.
+        r"""Sets the release_dev_list of this TasksQueryInfo.
 
         发布版本号集合
 
@@ -322,7 +322,7 @@ class TasksQueryInfo:
 
     @property
     def result_codes(self):
-        """Gets the result_codes of this TasksQueryInfo.
+        r"""Gets the result_codes of this TasksQueryInfo.
 
         结果Code集合
 
@@ -333,7 +333,7 @@ class TasksQueryInfo:
 
     @result_codes.setter
     def result_codes(self, result_codes):
-        """Sets the result_codes of this TasksQueryInfo.
+        r"""Sets the result_codes of this TasksQueryInfo.
 
         结果Code集合
 
@@ -344,7 +344,7 @@ class TasksQueryInfo:
 
     @property
     def status_codes(self):
-        """Gets the status_codes of this TasksQueryInfo.
+        r"""Gets the status_codes of this TasksQueryInfo.
 
         状态Code集合
 
@@ -355,7 +355,7 @@ class TasksQueryInfo:
 
     @status_codes.setter
     def status_codes(self, status_codes):
-        """Sets the status_codes of this TasksQueryInfo.
+        r"""Sets the status_codes of this TasksQueryInfo.
 
         状态Code集合
 
@@ -366,7 +366,7 @@ class TasksQueryInfo:
 
     @property
     def owner_ids(self):
-        """Gets the owner_ids of this TasksQueryInfo.
+        r"""Gets the owner_ids of this TasksQueryInfo.
 
         责任人ID集合
 
@@ -377,7 +377,7 @@ class TasksQueryInfo:
 
     @owner_ids.setter
     def owner_ids(self, owner_ids):
-        """Sets the owner_ids of this TasksQueryInfo.
+        r"""Sets the owner_ids of this TasksQueryInfo.
 
         责任人ID集合
 
@@ -388,7 +388,7 @@ class TasksQueryInfo:
 
     @property
     def executor_ids(self):
-        """Gets the executor_ids of this TasksQueryInfo.
+        r"""Gets the executor_ids of this TasksQueryInfo.
 
         执行者ID集合
 
@@ -399,7 +399,7 @@ class TasksQueryInfo:
 
     @executor_ids.setter
     def executor_ids(self, executor_ids):
-        """Sets the executor_ids of this TasksQueryInfo.
+        r"""Sets the executor_ids of this TasksQueryInfo.
 
         执行者ID集合
 
@@ -410,7 +410,7 @@ class TasksQueryInfo:
 
     @property
     def creator_ids(self):
-        """Gets the creator_ids of this TasksQueryInfo.
+        r"""Gets the creator_ids of this TasksQueryInfo.
 
         创建者ID集合
 
@@ -421,7 +421,7 @@ class TasksQueryInfo:
 
     @creator_ids.setter
     def creator_ids(self, creator_ids):
-        """Sets the creator_ids of this TasksQueryInfo.
+        r"""Sets the creator_ids of this TasksQueryInfo.
 
         创建者ID集合
 
@@ -432,7 +432,7 @@ class TasksQueryInfo:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this TasksQueryInfo.
+        r"""Gets the sort_field of this TasksQueryInfo.
 
         排序字段
 
@@ -443,7 +443,7 @@ class TasksQueryInfo:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this TasksQueryInfo.
+        r"""Sets the sort_field of this TasksQueryInfo.
 
         排序字段
 
@@ -454,7 +454,7 @@ class TasksQueryInfo:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this TasksQueryInfo.
+        r"""Gets the sort_type of this TasksQueryInfo.
 
         排序方式
 
@@ -465,7 +465,7 @@ class TasksQueryInfo:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this TasksQueryInfo.
+        r"""Sets the sort_type of this TasksQueryInfo.
 
         排序方式
 
@@ -476,7 +476,7 @@ class TasksQueryInfo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this TasksQueryInfo.
+        r"""Gets the page_no of this TasksQueryInfo.
 
         当前页数
 
@@ -487,7 +487,7 @@ class TasksQueryInfo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this TasksQueryInfo.
+        r"""Sets the page_no of this TasksQueryInfo.
 
         当前页数
 
@@ -498,7 +498,7 @@ class TasksQueryInfo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this TasksQueryInfo.
+        r"""Gets the page_size of this TasksQueryInfo.
 
         每页条数
 
@@ -509,7 +509,7 @@ class TasksQueryInfo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this TasksQueryInfo.
+        r"""Sets the page_size of this TasksQueryInfo.
 
         每页条数
 
@@ -520,7 +520,7 @@ class TasksQueryInfo:
 
     @property
     def is_polling_query(self):
-        """Gets the is_polling_query of this TasksQueryInfo.
+        r"""Gets the is_polling_query of this TasksQueryInfo.
 
         是否轮询查询
 
@@ -531,7 +531,7 @@ class TasksQueryInfo:
 
     @is_polling_query.setter
     def is_polling_query(self, is_polling_query):
-        """Sets the is_polling_query of this TasksQueryInfo.
+        r"""Sets the is_polling_query of this TasksQueryInfo.
 
         是否轮询查询
 
@@ -542,7 +542,7 @@ class TasksQueryInfo:
 
     @property
     def is_query_associated_case_list(self):
-        """Gets the is_query_associated_case_list of this TasksQueryInfo.
+        r"""Gets the is_query_associated_case_list of this TasksQueryInfo.
 
         是否获取关联用例列表
 
@@ -553,7 +553,7 @@ class TasksQueryInfo:
 
     @is_query_associated_case_list.setter
     def is_query_associated_case_list(self, is_query_associated_case_list):
-        """Sets the is_query_associated_case_list of this TasksQueryInfo.
+        r"""Sets the is_query_associated_case_list of this TasksQueryInfo.
 
         是否获取关联用例列表
 
@@ -564,7 +564,7 @@ class TasksQueryInfo:
 
     @property
     def plan_start_start_timestamp(self):
-        """Gets the plan_start_start_timestamp of this TasksQueryInfo.
+        r"""Gets the plan_start_start_timestamp of this TasksQueryInfo.
 
         计划开始时间过滤起始时间戳
 
@@ -575,7 +575,7 @@ class TasksQueryInfo:
 
     @plan_start_start_timestamp.setter
     def plan_start_start_timestamp(self, plan_start_start_timestamp):
-        """Sets the plan_start_start_timestamp of this TasksQueryInfo.
+        r"""Sets the plan_start_start_timestamp of this TasksQueryInfo.
 
         计划开始时间过滤起始时间戳
 
@@ -586,7 +586,7 @@ class TasksQueryInfo:
 
     @property
     def plan_start_end_timestamp(self):
-        """Gets the plan_start_end_timestamp of this TasksQueryInfo.
+        r"""Gets the plan_start_end_timestamp of this TasksQueryInfo.
 
         计划开始时间过滤结束时间戳
 
@@ -597,7 +597,7 @@ class TasksQueryInfo:
 
     @plan_start_end_timestamp.setter
     def plan_start_end_timestamp(self, plan_start_end_timestamp):
-        """Sets the plan_start_end_timestamp of this TasksQueryInfo.
+        r"""Sets the plan_start_end_timestamp of this TasksQueryInfo.
 
         计划开始时间过滤结束时间戳
 
@@ -608,7 +608,7 @@ class TasksQueryInfo:
 
     @property
     def plan_end_start_timestamp(self):
-        """Gets the plan_end_start_timestamp of this TasksQueryInfo.
+        r"""Gets the plan_end_start_timestamp of this TasksQueryInfo.
 
         计划结束时间过滤起始时间戳
 
@@ -619,7 +619,7 @@ class TasksQueryInfo:
 
     @plan_end_start_timestamp.setter
     def plan_end_start_timestamp(self, plan_end_start_timestamp):
-        """Sets the plan_end_start_timestamp of this TasksQueryInfo.
+        r"""Sets the plan_end_start_timestamp of this TasksQueryInfo.
 
         计划结束时间过滤起始时间戳
 
@@ -630,7 +630,7 @@ class TasksQueryInfo:
 
     @property
     def plan_end_end_timestamp(self):
-        """Gets the plan_end_end_timestamp of this TasksQueryInfo.
+        r"""Gets the plan_end_end_timestamp of this TasksQueryInfo.
 
         计划结束时间过滤结束时间戳
 
@@ -641,7 +641,7 @@ class TasksQueryInfo:
 
     @plan_end_end_timestamp.setter
     def plan_end_end_timestamp(self, plan_end_end_timestamp):
-        """Sets the plan_end_end_timestamp of this TasksQueryInfo.
+        r"""Sets the plan_end_end_timestamp of this TasksQueryInfo.
 
         计划结束时间过滤结束时间戳
 
@@ -652,7 +652,7 @@ class TasksQueryInfo:
 
     @property
     def expiration_status_list(self):
-        """Gets the expiration_status_list of this TasksQueryInfo.
+        r"""Gets the expiration_status_list of this TasksQueryInfo.
 
         测试套超期状态过滤，超期状态值分别为：无状态(null)、未超期(0)、即将超期(1)、已超期(2)、延期完成(3)、按期完成(4)
 
@@ -663,7 +663,7 @@ class TasksQueryInfo:
 
     @expiration_status_list.setter
     def expiration_status_list(self, expiration_status_list):
-        """Sets the expiration_status_list of this TasksQueryInfo.
+        r"""Sets the expiration_status_list of this TasksQueryInfo.
 
         测试套超期状态过滤，超期状态值分别为：无状态(null)、未超期(0)、即将超期(1)、已超期(2)、延期完成(3)、按期完成(4)
 

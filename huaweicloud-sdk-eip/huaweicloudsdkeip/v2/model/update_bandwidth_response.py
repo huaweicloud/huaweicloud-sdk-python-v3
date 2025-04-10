@@ -26,7 +26,7 @@ class UpdateBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, bandwidth=None):
-        """UpdateBandwidthResponse
+        r"""UpdateBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateBandwidthResponse(SdkResponse):
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this UpdateBandwidthResponse.
+        r"""Gets the bandwidth of this UpdateBandwidthResponse.
 
         :return: The bandwidth of this UpdateBandwidthResponse.
         :rtype: :class:`huaweicloudsdkeip.v2.BandwidthResp`
@@ -53,7 +53,7 @@ class UpdateBandwidthResponse(SdkResponse):
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this UpdateBandwidthResponse.
+        r"""Sets the bandwidth of this UpdateBandwidthResponse.
 
         :param bandwidth: The bandwidth of this UpdateBandwidthResponse.
         :type bandwidth: :class:`huaweicloudsdkeip.v2.BandwidthResp`

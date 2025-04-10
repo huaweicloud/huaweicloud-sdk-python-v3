@@ -60,7 +60,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None, template_name=None, template_type=None, user_id=None, user_name=None, domain_id=None, domain_name=None, is_build_in=None, region=None, project_id=None, project_name=None, create_time=None, last_modify_time=None, is_watch=None, description=None, parameter=None, flow=None, states=None):
-        """ShowTemplateDetailResponse
+        r"""ShowTemplateDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowTemplateDetailResponse.
+        r"""Gets the template_id of this ShowTemplateDetailResponse.
 
         模板ID
 
@@ -174,7 +174,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowTemplateDetailResponse.
+        r"""Sets the template_id of this ShowTemplateDetailResponse.
 
         模板ID
 
@@ -185,7 +185,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def template_name(self):
-        """Gets the template_name of this ShowTemplateDetailResponse.
+        r"""Gets the template_name of this ShowTemplateDetailResponse.
 
         模板名字
 
@@ -196,7 +196,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ShowTemplateDetailResponse.
+        r"""Sets the template_name of this ShowTemplateDetailResponse.
 
         模板名字
 
@@ -207,7 +207,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def template_type(self):
-        """Gets the template_type of this ShowTemplateDetailResponse.
+        r"""Gets the template_type of this ShowTemplateDetailResponse.
 
         模板类型
 
@@ -218,7 +218,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this ShowTemplateDetailResponse.
+        r"""Sets the template_type of this ShowTemplateDetailResponse.
 
         模板类型
 
@@ -229,7 +229,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowTemplateDetailResponse.
+        r"""Gets the user_id of this ShowTemplateDetailResponse.
 
         用户ID
 
@@ -240,7 +240,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowTemplateDetailResponse.
+        r"""Sets the user_id of this ShowTemplateDetailResponse.
 
         用户ID
 
@@ -251,7 +251,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowTemplateDetailResponse.
+        r"""Gets the user_name of this ShowTemplateDetailResponse.
 
         用户名字
 
@@ -262,7 +262,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowTemplateDetailResponse.
+        r"""Sets the user_name of this ShowTemplateDetailResponse.
 
         用户名字
 
@@ -273,7 +273,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowTemplateDetailResponse.
+        r"""Gets the domain_id of this ShowTemplateDetailResponse.
 
         租户ID
 
@@ -284,7 +284,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowTemplateDetailResponse.
+        r"""Sets the domain_id of this ShowTemplateDetailResponse.
 
         租户ID
 
@@ -295,7 +295,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowTemplateDetailResponse.
+        r"""Gets the domain_name of this ShowTemplateDetailResponse.
 
         租户名字
 
@@ -306,7 +306,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowTemplateDetailResponse.
+        r"""Sets the domain_name of this ShowTemplateDetailResponse.
 
         租户名字
 
@@ -317,7 +317,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def is_build_in(self):
-        """Gets the is_build_in of this ShowTemplateDetailResponse.
+        r"""Gets the is_build_in of this ShowTemplateDetailResponse.
 
         是否内置模板
 
@@ -328,7 +328,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @is_build_in.setter
     def is_build_in(self, is_build_in):
-        """Sets the is_build_in of this ShowTemplateDetailResponse.
+        r"""Sets the is_build_in of this ShowTemplateDetailResponse.
 
         是否内置模板
 
@@ -339,7 +339,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this ShowTemplateDetailResponse.
+        r"""Gets the region of this ShowTemplateDetailResponse.
 
         region
 
@@ -350,7 +350,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowTemplateDetailResponse.
+        r"""Sets the region of this ShowTemplateDetailResponse.
 
         region
 
@@ -361,7 +361,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowTemplateDetailResponse.
+        r"""Gets the project_id of this ShowTemplateDetailResponse.
 
         项目ID
 
@@ -372,7 +372,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowTemplateDetailResponse.
+        r"""Sets the project_id of this ShowTemplateDetailResponse.
 
         项目ID
 
@@ -383,7 +383,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def project_name(self):
-        """Gets the project_name of this ShowTemplateDetailResponse.
+        r"""Gets the project_name of this ShowTemplateDetailResponse.
 
         项目名字
 
@@ -394,7 +394,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ShowTemplateDetailResponse.
+        r"""Sets the project_name of this ShowTemplateDetailResponse.
 
         项目名字
 
@@ -405,7 +405,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowTemplateDetailResponse.
+        r"""Gets the create_time of this ShowTemplateDetailResponse.
 
         创建时间
 
@@ -416,7 +416,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowTemplateDetailResponse.
+        r"""Sets the create_time of this ShowTemplateDetailResponse.
 
         创建时间
 
@@ -427,7 +427,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def last_modify_time(self):
-        """Gets the last_modify_time of this ShowTemplateDetailResponse.
+        r"""Gets the last_modify_time of this ShowTemplateDetailResponse.
 
         修改时间
 
@@ -438,7 +438,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @last_modify_time.setter
     def last_modify_time(self, last_modify_time):
-        """Sets the last_modify_time of this ShowTemplateDetailResponse.
+        r"""Sets the last_modify_time of this ShowTemplateDetailResponse.
 
         修改时间
 
@@ -449,7 +449,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def is_watch(self):
-        """Gets the is_watch of this ShowTemplateDetailResponse.
+        r"""Gets the is_watch of this ShowTemplateDetailResponse.
 
         是否关注
 
@@ -460,7 +460,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @is_watch.setter
     def is_watch(self, is_watch):
-        """Sets the is_watch of this ShowTemplateDetailResponse.
+        r"""Sets the is_watch of this ShowTemplateDetailResponse.
 
         是否关注
 
@@ -471,7 +471,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowTemplateDetailResponse.
+        r"""Gets the description of this ShowTemplateDetailResponse.
 
         模板描述
 
@@ -482,7 +482,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowTemplateDetailResponse.
+        r"""Sets the description of this ShowTemplateDetailResponse.
 
         模板描述
 
@@ -493,7 +493,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def parameter(self):
-        """Gets the parameter of this ShowTemplateDetailResponse.
+        r"""Gets the parameter of this ShowTemplateDetailResponse.
 
         模板参数
 
@@ -504,7 +504,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @parameter.setter
     def parameter(self, parameter):
-        """Sets the parameter of this ShowTemplateDetailResponse.
+        r"""Sets the parameter of this ShowTemplateDetailResponse.
 
         模板参数
 
@@ -515,7 +515,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def flow(self):
-        """Gets the flow of this ShowTemplateDetailResponse.
+        r"""Gets the flow of this ShowTemplateDetailResponse.
 
         编排flow详情，描述流水线内各阶段任务的串并行关系。map类型数据，key为阶段名字，默认第一阶段initial，最后阶段为final，其余名字以'state_数字'标识。value为该阶段内任务(以'Task_数字'标识)以及后续阶段的标识。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
@@ -526,7 +526,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this ShowTemplateDetailResponse.
+        r"""Sets the flow of this ShowTemplateDetailResponse.
 
         编排flow详情，描述流水线内各阶段任务的串并行关系。map类型数据，key为阶段名字，默认第一阶段initial，最后阶段为final，其余名字以'state_数字'标识。value为该阶段内任务(以'Task_数字'标识)以及后续阶段的标识。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
@@ -537,7 +537,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @property
     def states(self):
-        """Gets the states of this ShowTemplateDetailResponse.
+        r"""Gets the states of this ShowTemplateDetailResponse.
 
         编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
@@ -548,7 +548,7 @@ class ShowTemplateDetailResponse(SdkResponse):
 
     @states.setter
     def states(self, states):
-        """Sets the states of this ShowTemplateDetailResponse.
+        r"""Sets the states of this ShowTemplateDetailResponse.
 
         编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 

@@ -32,7 +32,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, status=None, security_grp_status=None, firewall_status=None, public_eip_status=None):
-        """ShowNetworkConfigurationResponse
+        r"""ShowNetworkConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowNetworkConfigurationResponse.
+        r"""Gets the status of this ShowNetworkConfigurationResponse.
 
         云堡垒机实例网络状态。下面3个正常则正常，有一个不正常，网络状态为失败。
 
@@ -76,7 +76,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowNetworkConfigurationResponse.
+        r"""Sets the status of this ShowNetworkConfigurationResponse.
 
         云堡垒机实例网络状态。下面3个正常则正常，有一个不正常，网络状态为失败。
 
@@ -87,7 +87,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
 
     @property
     def security_grp_status(self):
-        """Gets the security_grp_status of this ShowNetworkConfigurationResponse.
+        r"""Gets the security_grp_status of this ShowNetworkConfigurationResponse.
 
         云堡垒机实例安全组状态。 - true  正常 - false 失败
 
@@ -98,7 +98,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
 
     @security_grp_status.setter
     def security_grp_status(self, security_grp_status):
-        """Sets the security_grp_status of this ShowNetworkConfigurationResponse.
+        r"""Sets the security_grp_status of this ShowNetworkConfigurationResponse.
 
         云堡垒机实例安全组状态。 - true  正常 - false 失败
 
@@ -109,7 +109,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
 
     @property
     def firewall_status(self):
-        """Gets the firewall_status of this ShowNetworkConfigurationResponse.
+        r"""Gets the firewall_status of this ShowNetworkConfigurationResponse.
 
         云堡垒机实例防火墙状态。 - true  正常 - false 失败
 
@@ -120,7 +120,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
 
     @firewall_status.setter
     def firewall_status(self, firewall_status):
-        """Sets the firewall_status of this ShowNetworkConfigurationResponse.
+        r"""Sets the firewall_status of this ShowNetworkConfigurationResponse.
 
         云堡垒机实例防火墙状态。 - true  正常 - false 失败
 
@@ -131,7 +131,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
 
     @property
     def public_eip_status(self):
-        """Gets the public_eip_status of this ShowNetworkConfigurationResponse.
+        r"""Gets the public_eip_status of this ShowNetworkConfigurationResponse.
 
         云堡垒机实例公网IP状态。 - true  正常 - false 失败
 
@@ -142,7 +142,7 @@ class ShowNetworkConfigurationResponse(SdkResponse):
 
     @public_eip_status.setter
     def public_eip_status(self, public_eip_status):
-        """Sets the public_eip_status of this ShowNetworkConfigurationResponse.
+        r"""Sets the public_eip_status of this ShowNetworkConfigurationResponse.
 
         云堡垒机实例公网IP状态。 - true  正常 - false 失败
 

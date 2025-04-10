@@ -27,7 +27,7 @@ class BucketType:
     }
 
     def __init__(self):
-        """BucketType
+        r"""BucketType
 
         The model defined in huaweicloud sdk
 

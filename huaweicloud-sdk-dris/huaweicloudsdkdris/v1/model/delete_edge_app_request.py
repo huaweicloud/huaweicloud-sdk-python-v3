@@ -27,7 +27,7 @@ class DeleteEdgeAppRequest:
     }
 
     def __init__(self, instance_id=None, edge_app_id=None):
-        """DeleteEdgeAppRequest
+        r"""DeleteEdgeAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteEdgeAppRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteEdgeAppRequest.
+        r"""Gets the instance_id of this DeleteEdgeAppRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -60,7 +60,7 @@ class DeleteEdgeAppRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteEdgeAppRequest.
+        r"""Sets the instance_id of this DeleteEdgeAppRequest.
 
         **参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和连接符（-）的组合，长度36。
 
@@ -71,7 +71,7 @@ class DeleteEdgeAppRequest:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this DeleteEdgeAppRequest.
+        r"""Gets the edge_app_id of this DeleteEdgeAppRequest.
 
         **参数说明**：用户自定义应用唯一ID。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）、美元符号（$）的组合。
 
@@ -82,7 +82,7 @@ class DeleteEdgeAppRequest:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this DeleteEdgeAppRequest.
+        r"""Sets the edge_app_id of this DeleteEdgeAppRequest.
 
         **参数说明**：用户自定义应用唯一ID。  **取值范围**：只允许字母、数字、下划线（_）、连接符（-）、美元符号（$）的组合。
 

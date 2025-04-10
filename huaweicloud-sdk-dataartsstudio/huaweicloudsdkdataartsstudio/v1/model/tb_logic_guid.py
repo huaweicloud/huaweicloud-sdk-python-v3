@@ -23,7 +23,7 @@ class TbLogicGuid:
     }
 
     def __init__(self):
-        """TbLogicGuid
+        r"""TbLogicGuid
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class DownloadBackupErrorResponse:
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """DownloadBackupErrorResponse
+        r"""DownloadBackupErrorResponse
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DownloadBackupErrorResponse:
 
     @property
     def error_code(self):
-        """Gets the error_code of this DownloadBackupErrorResponse.
+        r"""Gets the error_code of this DownloadBackupErrorResponse.
 
         错误码。
 
@@ -59,7 +59,7 @@ class DownloadBackupErrorResponse:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DownloadBackupErrorResponse.
+        r"""Sets the error_code of this DownloadBackupErrorResponse.
 
         错误码。
 
@@ -70,7 +70,7 @@ class DownloadBackupErrorResponse:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this DownloadBackupErrorResponse.
+        r"""Gets the error_msg of this DownloadBackupErrorResponse.
 
         错误消息。
 
@@ -81,7 +81,7 @@ class DownloadBackupErrorResponse:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this DownloadBackupErrorResponse.
+        r"""Sets the error_msg of this DownloadBackupErrorResponse.
 
         错误消息。
 

@@ -25,7 +25,7 @@ class ShowGlobalEipTagsRequest:
     }
 
     def __init__(self, resource_id=None):
-        """ShowGlobalEipTagsRequest
+        r"""ShowGlobalEipTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowGlobalEipTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowGlobalEipTagsRequest.
+        r"""Gets the resource_id of this ShowGlobalEipTagsRequest.
 
         :return: The resource_id of this ShowGlobalEipTagsRequest.
         :rtype: str
@@ -51,7 +51,7 @@ class ShowGlobalEipTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowGlobalEipTagsRequest.
+        r"""Sets the resource_id of this ShowGlobalEipTagsRequest.
 
         :param resource_id: The resource_id of this ShowGlobalEipTagsRequest.
         :type resource_id: str

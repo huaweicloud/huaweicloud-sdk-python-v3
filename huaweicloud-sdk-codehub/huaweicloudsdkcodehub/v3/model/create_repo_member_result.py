@@ -31,7 +31,7 @@ class CreateRepoMemberResult:
     }
 
     def __init__(self, id=None, message=None, name=None, status=None):
-        """CreateRepoMemberResult
+        r"""CreateRepoMemberResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateRepoMemberResult:
 
     @property
     def id(self):
-        """Gets the id of this CreateRepoMemberResult.
+        r"""Gets the id of this CreateRepoMemberResult.
 
         用户id
 
@@ -75,7 +75,7 @@ class CreateRepoMemberResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateRepoMemberResult.
+        r"""Sets the id of this CreateRepoMemberResult.
 
         用户id
 
@@ -86,7 +86,7 @@ class CreateRepoMemberResult:
 
     @property
     def message(self):
-        """Gets the message of this CreateRepoMemberResult.
+        r"""Gets the message of this CreateRepoMemberResult.
 
         创建仓库成员信息
 
@@ -97,7 +97,7 @@ class CreateRepoMemberResult:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateRepoMemberResult.
+        r"""Sets the message of this CreateRepoMemberResult.
 
         创建仓库成员信息
 
@@ -108,7 +108,7 @@ class CreateRepoMemberResult:
 
     @property
     def name(self):
-        """Gets the name of this CreateRepoMemberResult.
+        r"""Gets the name of this CreateRepoMemberResult.
 
         用户名
 
@@ -119,7 +119,7 @@ class CreateRepoMemberResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRepoMemberResult.
+        r"""Sets the name of this CreateRepoMemberResult.
 
         用户名
 
@@ -130,7 +130,7 @@ class CreateRepoMemberResult:
 
     @property
     def status(self):
-        """Gets the status of this CreateRepoMemberResult.
+        r"""Gets the status of this CreateRepoMemberResult.
 
         创建仓库成员状态
 
@@ -141,7 +141,7 @@ class CreateRepoMemberResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateRepoMemberResult.
+        r"""Sets the status of this CreateRepoMemberResult.
 
         创建仓库成员状态
 

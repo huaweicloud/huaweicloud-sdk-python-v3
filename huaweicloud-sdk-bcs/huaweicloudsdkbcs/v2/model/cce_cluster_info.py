@@ -29,7 +29,7 @@ class CCEClusterInfo:
     }
 
     def __init__(self, cluster_id=None, cluster_name=None, cluster_platform_type=None):
-        """CCEClusterInfo
+        r"""CCEClusterInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CCEClusterInfo:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CCEClusterInfo.
+        r"""Gets the cluster_id of this CCEClusterInfo.
 
         集群ID
 
@@ -65,7 +65,7 @@ class CCEClusterInfo:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CCEClusterInfo.
+        r"""Sets the cluster_id of this CCEClusterInfo.
 
         集群ID
 
@@ -76,7 +76,7 @@ class CCEClusterInfo:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this CCEClusterInfo.
+        r"""Gets the cluster_name of this CCEClusterInfo.
 
         集群名称
 
@@ -87,7 +87,7 @@ class CCEClusterInfo:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this CCEClusterInfo.
+        r"""Sets the cluster_name of this CCEClusterInfo.
 
         集群名称
 
@@ -98,7 +98,7 @@ class CCEClusterInfo:
 
     @property
     def cluster_platform_type(self):
-        """Gets the cluster_platform_type of this CCEClusterInfo.
+        r"""Gets the cluster_platform_type of this CCEClusterInfo.
 
         集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
 
@@ -109,7 +109,7 @@ class CCEClusterInfo:
 
     @cluster_platform_type.setter
     def cluster_platform_type(self, cluster_platform_type):
-        """Sets the cluster_platform_type of this CCEClusterInfo.
+        r"""Sets the cluster_platform_type of this CCEClusterInfo.
 
         集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
 

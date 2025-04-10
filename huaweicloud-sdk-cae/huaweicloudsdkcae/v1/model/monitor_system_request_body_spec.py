@@ -39,7 +39,7 @@ class MonitorSystemRequestBodySpec:
     }
 
     def __init__(self, type=None, instrumentation=None, access_key=None, access_value=None, access_token=None, apm_application=None, version=None, image_pull_policy=None):
-        """MonitorSystemRequestBodySpec
+        r"""MonitorSystemRequestBodySpec
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class MonitorSystemRequestBodySpec:
 
     @property
     def type(self):
-        """Gets the type of this MonitorSystemRequestBodySpec.
+        r"""Gets the type of this MonitorSystemRequestBodySpec.
 
         采集方式。
 
@@ -98,7 +98,7 @@ class MonitorSystemRequestBodySpec:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MonitorSystemRequestBodySpec.
+        r"""Sets the type of this MonitorSystemRequestBodySpec.
 
         采集方式。
 
@@ -109,7 +109,7 @@ class MonitorSystemRequestBodySpec:
 
     @property
     def instrumentation(self):
-        """Gets the instrumentation of this MonitorSystemRequestBodySpec.
+        r"""Gets the instrumentation of this MonitorSystemRequestBodySpec.
 
         探针注入方式。
 
@@ -120,7 +120,7 @@ class MonitorSystemRequestBodySpec:
 
     @instrumentation.setter
     def instrumentation(self, instrumentation):
-        """Sets the instrumentation of this MonitorSystemRequestBodySpec.
+        r"""Sets the instrumentation of this MonitorSystemRequestBodySpec.
 
         探针注入方式。
 
@@ -131,7 +131,7 @@ class MonitorSystemRequestBodySpec:
 
     @property
     def access_key(self):
-        """Gets the access_key of this MonitorSystemRequestBodySpec.
+        r"""Gets the access_key of this MonitorSystemRequestBodySpec.
 
         apm2访问密钥Key。
 
@@ -142,7 +142,7 @@ class MonitorSystemRequestBodySpec:
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this MonitorSystemRequestBodySpec.
+        r"""Sets the access_key of this MonitorSystemRequestBodySpec.
 
         apm2访问密钥Key。
 
@@ -153,7 +153,7 @@ class MonitorSystemRequestBodySpec:
 
     @property
     def access_value(self):
-        """Gets the access_value of this MonitorSystemRequestBodySpec.
+        r"""Gets the access_value of this MonitorSystemRequestBodySpec.
 
         apm2访问密钥value。
 
@@ -164,7 +164,7 @@ class MonitorSystemRequestBodySpec:
 
     @access_value.setter
     def access_value(self, access_value):
-        """Sets the access_value of this MonitorSystemRequestBodySpec.
+        r"""Sets the access_value of this MonitorSystemRequestBodySpec.
 
         apm2访问密钥value。
 
@@ -175,7 +175,7 @@ class MonitorSystemRequestBodySpec:
 
     @property
     def access_token(self):
-        """Gets the access_token of this MonitorSystemRequestBodySpec.
+        r"""Gets the access_token of this MonitorSystemRequestBodySpec.
 
         apm2 opentelemetry接入token。
 
@@ -186,7 +186,7 @@ class MonitorSystemRequestBodySpec:
 
     @access_token.setter
     def access_token(self, access_token):
-        """Sets the access_token of this MonitorSystemRequestBodySpec.
+        r"""Sets the access_token of this MonitorSystemRequestBodySpec.
 
         apm2 opentelemetry接入token。
 
@@ -197,7 +197,7 @@ class MonitorSystemRequestBodySpec:
 
     @property
     def apm_application(self):
-        """Gets the apm_application of this MonitorSystemRequestBodySpec.
+        r"""Gets the apm_application of this MonitorSystemRequestBodySpec.
 
         apm2应用。
 
@@ -208,7 +208,7 @@ class MonitorSystemRequestBodySpec:
 
     @apm_application.setter
     def apm_application(self, apm_application):
-        """Sets the apm_application of this MonitorSystemRequestBodySpec.
+        r"""Sets the apm_application of this MonitorSystemRequestBodySpec.
 
         apm2应用。
 
@@ -219,7 +219,7 @@ class MonitorSystemRequestBodySpec:
 
     @property
     def version(self):
-        """Gets the version of this MonitorSystemRequestBodySpec.
+        r"""Gets the version of this MonitorSystemRequestBodySpec.
 
         增强型探针/opentelemetry探针版本。
 
@@ -230,7 +230,7 @@ class MonitorSystemRequestBodySpec:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this MonitorSystemRequestBodySpec.
+        r"""Sets the version of this MonitorSystemRequestBodySpec.
 
         增强型探针/opentelemetry探针版本。
 
@@ -241,7 +241,7 @@ class MonitorSystemRequestBodySpec:
 
     @property
     def image_pull_policy(self):
-        """Gets the image_pull_policy of this MonitorSystemRequestBodySpec.
+        r"""Gets the image_pull_policy of this MonitorSystemRequestBodySpec.
 
         探针镜像更新策略。
 
@@ -252,7 +252,7 @@ class MonitorSystemRequestBodySpec:
 
     @image_pull_policy.setter
     def image_pull_policy(self, image_pull_policy):
-        """Sets the image_pull_policy of this MonitorSystemRequestBodySpec.
+        r"""Sets the image_pull_policy of this MonitorSystemRequestBodySpec.
 
         探针镜像更新策略。
 

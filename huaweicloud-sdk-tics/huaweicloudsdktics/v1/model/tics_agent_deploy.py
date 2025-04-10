@@ -67,7 +67,7 @@ class TicsAgentDeploy:
     }
 
     def __init__(self, agent_id=None, agent_name=None, aom_flag=None, bcs_flag=None, cce_version=None, create_time=None, creator_domain_id=None, creator_id=None, creator_name=None, creator_project_id=None, deploy_status=None, deploy_type=None, deployment_event_information=None, high_avail=None, image_id=None, image_version=None, league_id=None, league_name=None, league_region_name=None, league_version=None, nat_id=None, storage_mount_type=None):
-        """TicsAgentDeploy
+        r"""TicsAgentDeploy
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class TicsAgentDeploy:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this TicsAgentDeploy.
+        r"""Gets the agent_id of this TicsAgentDeploy.
 
         可信节点Id
 
@@ -201,7 +201,7 @@ class TicsAgentDeploy:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this TicsAgentDeploy.
+        r"""Sets the agent_id of this TicsAgentDeploy.
 
         可信节点Id
 
@@ -212,7 +212,7 @@ class TicsAgentDeploy:
 
     @property
     def agent_name(self):
-        """Gets the agent_name of this TicsAgentDeploy.
+        r"""Gets the agent_name of this TicsAgentDeploy.
 
         可信节点名称
 
@@ -223,7 +223,7 @@ class TicsAgentDeploy:
 
     @agent_name.setter
     def agent_name(self, agent_name):
-        """Sets the agent_name of this TicsAgentDeploy.
+        r"""Sets the agent_name of this TicsAgentDeploy.
 
         可信节点名称
 
@@ -234,7 +234,7 @@ class TicsAgentDeploy:
 
     @property
     def aom_flag(self):
-        """Gets the aom_flag of this TicsAgentDeploy.
+        r"""Gets the aom_flag of this TicsAgentDeploy.
 
         是否开启aom监控
 
@@ -245,7 +245,7 @@ class TicsAgentDeploy:
 
     @aom_flag.setter
     def aom_flag(self, aom_flag):
-        """Sets the aom_flag of this TicsAgentDeploy.
+        r"""Sets the aom_flag of this TicsAgentDeploy.
 
         是否开启aom监控
 
@@ -256,7 +256,7 @@ class TicsAgentDeploy:
 
     @property
     def bcs_flag(self):
-        """Gets the bcs_flag of this TicsAgentDeploy.
+        r"""Gets the bcs_flag of this TicsAgentDeploy.
 
         是否使用区块链存证
 
@@ -267,7 +267,7 @@ class TicsAgentDeploy:
 
     @bcs_flag.setter
     def bcs_flag(self, bcs_flag):
-        """Sets the bcs_flag of this TicsAgentDeploy.
+        r"""Sets the bcs_flag of this TicsAgentDeploy.
 
         是否使用区块链存证
 
@@ -278,7 +278,7 @@ class TicsAgentDeploy:
 
     @property
     def cce_version(self):
-        """Gets the cce_version of this TicsAgentDeploy.
+        r"""Gets the cce_version of this TicsAgentDeploy.
 
         可信节点使用cce集群的版本
 
@@ -289,7 +289,7 @@ class TicsAgentDeploy:
 
     @cce_version.setter
     def cce_version(self, cce_version):
-        """Sets the cce_version of this TicsAgentDeploy.
+        r"""Sets the cce_version of this TicsAgentDeploy.
 
         可信节点使用cce集群的版本
 
@@ -300,7 +300,7 @@ class TicsAgentDeploy:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TicsAgentDeploy.
+        r"""Gets the create_time of this TicsAgentDeploy.
 
         可信节点创建时间
 
@@ -311,7 +311,7 @@ class TicsAgentDeploy:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TicsAgentDeploy.
+        r"""Sets the create_time of this TicsAgentDeploy.
 
         可信节点创建时间
 
@@ -322,7 +322,7 @@ class TicsAgentDeploy:
 
     @property
     def creator_domain_id(self):
-        """Gets the creator_domain_id of this TicsAgentDeploy.
+        r"""Gets the creator_domain_id of this TicsAgentDeploy.
 
         可信节点创建者的租户Id
 
@@ -333,7 +333,7 @@ class TicsAgentDeploy:
 
     @creator_domain_id.setter
     def creator_domain_id(self, creator_domain_id):
-        """Sets the creator_domain_id of this TicsAgentDeploy.
+        r"""Sets the creator_domain_id of this TicsAgentDeploy.
 
         可信节点创建者的租户Id
 
@@ -344,7 +344,7 @@ class TicsAgentDeploy:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this TicsAgentDeploy.
+        r"""Gets the creator_id of this TicsAgentDeploy.
 
         可信节点创建者的Id
 
@@ -355,7 +355,7 @@ class TicsAgentDeploy:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this TicsAgentDeploy.
+        r"""Sets the creator_id of this TicsAgentDeploy.
 
         可信节点创建者的Id
 
@@ -366,7 +366,7 @@ class TicsAgentDeploy:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this TicsAgentDeploy.
+        r"""Gets the creator_name of this TicsAgentDeploy.
 
         可信节点创建者的名称
 
@@ -377,7 +377,7 @@ class TicsAgentDeploy:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this TicsAgentDeploy.
+        r"""Sets the creator_name of this TicsAgentDeploy.
 
         可信节点创建者的名称
 
@@ -388,7 +388,7 @@ class TicsAgentDeploy:
 
     @property
     def creator_project_id(self):
-        """Gets the creator_project_id of this TicsAgentDeploy.
+        r"""Gets the creator_project_id of this TicsAgentDeploy.
 
         创建可信节点所在项目Id
 
@@ -399,7 +399,7 @@ class TicsAgentDeploy:
 
     @creator_project_id.setter
     def creator_project_id(self, creator_project_id):
-        """Sets the creator_project_id of this TicsAgentDeploy.
+        r"""Sets the creator_project_id of this TicsAgentDeploy.
 
         创建可信节点所在项目Id
 
@@ -410,7 +410,7 @@ class TicsAgentDeploy:
 
     @property
     def deploy_status(self):
-        """Gets the deploy_status of this TicsAgentDeploy.
+        r"""Gets the deploy_status of this TicsAgentDeploy.
 
         可信节点部署状态，ABNORMAL.正常,RESTARTING.重启中,RESTART_FAILED.重启失败，ROLLBACKING.回滚中，STARTING.启动中，DEPLOYING.创建中,DEPLOY_FAILED.创建失败,DEPLOY_SUCCESS.创建成功,RUNNING.运行中,DELETING.删除中,DELETE_FAILED.删除失败,DELETE_SUCCESS.删除成功,UPGRADING.升级中,UPGRADE_FAILED.升级失败,ROLLBACK.回退中,ROLLBACK_FAILED.回退失败,SUCCESS.成功,FAILED.失败,TO_START.待开始,IN_PROGRESS.进行中
 
@@ -421,7 +421,7 @@ class TicsAgentDeploy:
 
     @deploy_status.setter
     def deploy_status(self, deploy_status):
-        """Sets the deploy_status of this TicsAgentDeploy.
+        r"""Sets the deploy_status of this TicsAgentDeploy.
 
         可信节点部署状态，ABNORMAL.正常,RESTARTING.重启中,RESTART_FAILED.重启失败，ROLLBACKING.回滚中，STARTING.启动中，DEPLOYING.创建中,DEPLOY_FAILED.创建失败,DEPLOY_SUCCESS.创建成功,RUNNING.运行中,DELETING.删除中,DELETE_FAILED.删除失败,DELETE_SUCCESS.删除成功,UPGRADING.升级中,UPGRADE_FAILED.升级失败,ROLLBACK.回退中,ROLLBACK_FAILED.回退失败,SUCCESS.成功,FAILED.失败,TO_START.待开始,IN_PROGRESS.进行中
 
@@ -432,7 +432,7 @@ class TicsAgentDeploy:
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this TicsAgentDeploy.
+        r"""Gets the deploy_type of this TicsAgentDeploy.
 
         可信节点部署类型，CCE.云容器集群，IEF.边缘容器
 
@@ -443,7 +443,7 @@ class TicsAgentDeploy:
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this TicsAgentDeploy.
+        r"""Sets the deploy_type of this TicsAgentDeploy.
 
         可信节点部署类型，CCE.云容器集群，IEF.边缘容器
 
@@ -454,7 +454,7 @@ class TicsAgentDeploy:
 
     @property
     def deployment_event_information(self):
-        """Gets the deployment_event_information of this TicsAgentDeploy.
+        r"""Gets the deployment_event_information of this TicsAgentDeploy.
 
         可信节点部署类型
 
@@ -465,7 +465,7 @@ class TicsAgentDeploy:
 
     @deployment_event_information.setter
     def deployment_event_information(self, deployment_event_information):
-        """Sets the deployment_event_information of this TicsAgentDeploy.
+        r"""Sets the deployment_event_information of this TicsAgentDeploy.
 
         可信节点部署类型
 
@@ -476,7 +476,7 @@ class TicsAgentDeploy:
 
     @property
     def high_avail(self):
-        """Gets the high_avail of this TicsAgentDeploy.
+        r"""Gets the high_avail of this TicsAgentDeploy.
 
         可信节点是否高可用部署
 
@@ -487,7 +487,7 @@ class TicsAgentDeploy:
 
     @high_avail.setter
     def high_avail(self, high_avail):
-        """Sets the high_avail of this TicsAgentDeploy.
+        r"""Sets the high_avail of this TicsAgentDeploy.
 
         可信节点是否高可用部署
 
@@ -498,7 +498,7 @@ class TicsAgentDeploy:
 
     @property
     def image_id(self):
-        """Gets the image_id of this TicsAgentDeploy.
+        r"""Gets the image_id of this TicsAgentDeploy.
 
         可信节点部署使用的镜像Id
 
@@ -509,7 +509,7 @@ class TicsAgentDeploy:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this TicsAgentDeploy.
+        r"""Sets the image_id of this TicsAgentDeploy.
 
         可信节点部署使用的镜像Id
 
@@ -520,7 +520,7 @@ class TicsAgentDeploy:
 
     @property
     def image_version(self):
-        """Gets the image_version of this TicsAgentDeploy.
+        r"""Gets the image_version of this TicsAgentDeploy.
 
         可信节点部署使用的镜像版本
 
@@ -531,7 +531,7 @@ class TicsAgentDeploy:
 
     @image_version.setter
     def image_version(self, image_version):
-        """Sets the image_version of this TicsAgentDeploy.
+        r"""Sets the image_version of this TicsAgentDeploy.
 
         可信节点部署使用的镜像版本
 
@@ -542,7 +542,7 @@ class TicsAgentDeploy:
 
     @property
     def league_id(self):
-        """Gets the league_id of this TicsAgentDeploy.
+        r"""Gets the league_id of this TicsAgentDeploy.
 
         可信节点所在联盟的Id
 
@@ -553,7 +553,7 @@ class TicsAgentDeploy:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this TicsAgentDeploy.
+        r"""Sets the league_id of this TicsAgentDeploy.
 
         可信节点所在联盟的Id
 
@@ -564,7 +564,7 @@ class TicsAgentDeploy:
 
     @property
     def league_name(self):
-        """Gets the league_name of this TicsAgentDeploy.
+        r"""Gets the league_name of this TicsAgentDeploy.
 
         可信节点所在联盟的名称
 
@@ -575,7 +575,7 @@ class TicsAgentDeploy:
 
     @league_name.setter
     def league_name(self, league_name):
-        """Sets the league_name of this TicsAgentDeploy.
+        r"""Sets the league_name of this TicsAgentDeploy.
 
         可信节点所在联盟的名称
 
@@ -586,7 +586,7 @@ class TicsAgentDeploy:
 
     @property
     def league_region_name(self):
-        """Gets the league_region_name of this TicsAgentDeploy.
+        r"""Gets the league_region_name of this TicsAgentDeploy.
 
         可信节点所在联盟的区域
 
@@ -597,7 +597,7 @@ class TicsAgentDeploy:
 
     @league_region_name.setter
     def league_region_name(self, league_region_name):
-        """Sets the league_region_name of this TicsAgentDeploy.
+        r"""Sets the league_region_name of this TicsAgentDeploy.
 
         可信节点所在联盟的区域
 
@@ -608,7 +608,7 @@ class TicsAgentDeploy:
 
     @property
     def league_version(self):
-        """Gets the league_version of this TicsAgentDeploy.
+        r"""Gets the league_version of this TicsAgentDeploy.
 
         可信节点所在联盟的版本
 
@@ -619,7 +619,7 @@ class TicsAgentDeploy:
 
     @league_version.setter
     def league_version(self, league_version):
-        """Sets the league_version of this TicsAgentDeploy.
+        r"""Sets the league_version of this TicsAgentDeploy.
 
         可信节点所在联盟的版本
 
@@ -630,7 +630,7 @@ class TicsAgentDeploy:
 
     @property
     def nat_id(self):
-        """Gets the nat_id of this TicsAgentDeploy.
+        r"""Gets the nat_id of this TicsAgentDeploy.
 
         可信节点使用的网关的Id
 
@@ -641,7 +641,7 @@ class TicsAgentDeploy:
 
     @nat_id.setter
     def nat_id(self, nat_id):
-        """Sets the nat_id of this TicsAgentDeploy.
+        r"""Sets the nat_id of this TicsAgentDeploy.
 
         可信节点使用的网关的Id
 
@@ -652,7 +652,7 @@ class TicsAgentDeploy:
 
     @property
     def storage_mount_type(self):
-        """Gets the storage_mount_type of this TicsAgentDeploy.
+        r"""Gets the storage_mount_type of this TicsAgentDeploy.
 
         可信节点使用的存储方式，HOST_PATH.本地存储，OBS.对象云存储，SFS_TURBO.极速文件存储
 
@@ -663,7 +663,7 @@ class TicsAgentDeploy:
 
     @storage_mount_type.setter
     def storage_mount_type(self, storage_mount_type):
-        """Sets the storage_mount_type of this TicsAgentDeploy.
+        r"""Sets the storage_mount_type of this TicsAgentDeploy.
 
         可信节点使用的存储方式，HOST_PATH.本地存储，OBS.对象云存储，SFS_TURBO.极速文件存储
 

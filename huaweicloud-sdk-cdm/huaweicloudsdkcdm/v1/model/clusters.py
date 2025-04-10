@@ -71,7 +71,7 @@ class Clusters:
     }
 
     def __init__(self, customer_config=None, datastore=None, instances=None, az_name=None, dbuser=None, flavor_name=None, recent_event=None, is_auto_off=None, is_schedule_boot_off=None, cluster_mode=None, namespace=None, task=None, public_endpoint=None, action_progress=None, created=None, bak_expected_start_time=None, bak_keep_day=None, name=None, status_detail=None, id=None, is_frozen=None, updated=None, status=None, failed_reasons=None):
-        """Clusters
+        r"""Clusters
 
         The model defined in huaweicloud sdk
 
@@ -198,7 +198,7 @@ class Clusters:
 
     @property
     def customer_config(self):
-        """Gets the customer_config of this Clusters.
+        r"""Gets the customer_config of this Clusters.
 
         :return: The customer_config of this Clusters.
         :rtype: :class:`huaweicloudsdkcdm.v1.CustomerConfig`
@@ -207,7 +207,7 @@ class Clusters:
 
     @customer_config.setter
     def customer_config(self, customer_config):
-        """Sets the customer_config of this Clusters.
+        r"""Sets the customer_config of this Clusters.
 
         :param customer_config: The customer_config of this Clusters.
         :type customer_config: :class:`huaweicloudsdkcdm.v1.CustomerConfig`
@@ -216,7 +216,7 @@ class Clusters:
 
     @property
     def datastore(self):
-        """Gets the datastore of this Clusters.
+        r"""Gets the datastore of this Clusters.
 
         :return: The datastore of this Clusters.
         :rtype: :class:`huaweicloudsdkcdm.v1.Datastore`
@@ -225,7 +225,7 @@ class Clusters:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this Clusters.
+        r"""Sets the datastore of this Clusters.
 
         :param datastore: The datastore of this Clusters.
         :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
@@ -234,7 +234,7 @@ class Clusters:
 
     @property
     def instances(self):
-        """Gets the instances of this Clusters.
+        r"""Gets the instances of this Clusters.
 
         集群的节点信息，请参见instances参数说明
 
@@ -245,7 +245,7 @@ class Clusters:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this Clusters.
+        r"""Sets the instances of this Clusters.
 
         集群的节点信息，请参见instances参数说明
 
@@ -256,7 +256,7 @@ class Clusters:
 
     @property
     def az_name(self):
-        """Gets the az_name of this Clusters.
+        r"""Gets the az_name of this Clusters.
 
         az名称
 
@@ -267,7 +267,7 @@ class Clusters:
 
     @az_name.setter
     def az_name(self, az_name):
-        """Sets the az_name of this Clusters.
+        r"""Sets the az_name of this Clusters.
 
         az名称
 
@@ -278,7 +278,7 @@ class Clusters:
 
     @property
     def dbuser(self):
-        """Gets the dbuser of this Clusters.
+        r"""Gets the dbuser of this Clusters.
 
         数据库用户
 
@@ -289,7 +289,7 @@ class Clusters:
 
     @dbuser.setter
     def dbuser(self, dbuser):
-        """Sets the dbuser of this Clusters.
+        r"""Sets the dbuser of this Clusters.
 
         数据库用户
 
@@ -300,7 +300,7 @@ class Clusters:
 
     @property
     def flavor_name(self):
-        """Gets the flavor_name of this Clusters.
+        r"""Gets the flavor_name of this Clusters.
 
         规格名称
 
@@ -311,7 +311,7 @@ class Clusters:
 
     @flavor_name.setter
     def flavor_name(self, flavor_name):
-        """Sets the flavor_name of this Clusters.
+        r"""Sets the flavor_name of this Clusters.
 
         规格名称
 
@@ -322,7 +322,7 @@ class Clusters:
 
     @property
     def recent_event(self):
-        """Gets the recent_event of this Clusters.
+        r"""Gets the recent_event of this Clusters.
 
         事件数
 
@@ -333,7 +333,7 @@ class Clusters:
 
     @recent_event.setter
     def recent_event(self, recent_event):
-        """Sets the recent_event of this Clusters.
+        r"""Sets the recent_event of this Clusters.
 
         事件数
 
@@ -344,7 +344,7 @@ class Clusters:
 
     @property
     def is_auto_off(self):
-        """Gets the is_auto_off of this Clusters.
+        r"""Gets the is_auto_off of this Clusters.
 
         自动关机
 
@@ -355,7 +355,7 @@ class Clusters:
 
     @is_auto_off.setter
     def is_auto_off(self, is_auto_off):
-        """Sets the is_auto_off of this Clusters.
+        r"""Sets the is_auto_off of this Clusters.
 
         自动关机
 
@@ -366,7 +366,7 @@ class Clusters:
 
     @property
     def is_schedule_boot_off(self):
-        """Gets the is_schedule_boot_off of this Clusters.
+        r"""Gets the is_schedule_boot_off of this Clusters.
 
         选择是否启用定时开关机功能。定时开关机功能和自动关机功能不可同时开启
 
@@ -377,7 +377,7 @@ class Clusters:
 
     @is_schedule_boot_off.setter
     def is_schedule_boot_off(self, is_schedule_boot_off):
-        """Sets the is_schedule_boot_off of this Clusters.
+        r"""Sets the is_schedule_boot_off of this Clusters.
 
         选择是否启用定时开关机功能。定时开关机功能和自动关机功能不可同时开启
 
@@ -388,7 +388,7 @@ class Clusters:
 
     @property
     def cluster_mode(self):
-        """Gets the cluster_mode of this Clusters.
+        r"""Gets the cluster_mode of this Clusters.
 
         集群模式：sharding(分片集群)
 
@@ -399,7 +399,7 @@ class Clusters:
 
     @cluster_mode.setter
     def cluster_mode(self, cluster_mode):
-        """Sets the cluster_mode of this Clusters.
+        r"""Sets the cluster_mode of this Clusters.
 
         集群模式：sharding(分片集群)
 
@@ -410,7 +410,7 @@ class Clusters:
 
     @property
     def namespace(self):
-        """Gets the namespace of this Clusters.
+        r"""Gets the namespace of this Clusters.
 
         命名空间
 
@@ -421,7 +421,7 @@ class Clusters:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this Clusters.
+        r"""Sets the namespace of this Clusters.
 
         命名空间
 
@@ -432,7 +432,7 @@ class Clusters:
 
     @property
     def task(self):
-        """Gets the task of this Clusters.
+        r"""Gets the task of this Clusters.
 
         :return: The task of this Clusters.
         :rtype: :class:`huaweicloudsdkcdm.v1.ClusterTask`
@@ -441,7 +441,7 @@ class Clusters:
 
     @task.setter
     def task(self, task):
-        """Sets the task of this Clusters.
+        r"""Sets the task of this Clusters.
 
         :param task: The task of this Clusters.
         :type task: :class:`huaweicloudsdkcdm.v1.ClusterTask`
@@ -450,7 +450,7 @@ class Clusters:
 
     @property
     def public_endpoint(self):
-        """Gets the public_endpoint of this Clusters.
+        r"""Gets the public_endpoint of this Clusters.
 
         集群绑定的EIP
 
@@ -461,7 +461,7 @@ class Clusters:
 
     @public_endpoint.setter
     def public_endpoint(self, public_endpoint):
-        """Sets the public_endpoint of this Clusters.
+        r"""Sets the public_endpoint of this Clusters.
 
         集群绑定的EIP
 
@@ -472,7 +472,7 @@ class Clusters:
 
     @property
     def action_progress(self):
-        """Gets the action_progress of this Clusters.
+        r"""Gets the action_progress of this Clusters.
 
         :return: The action_progress of this Clusters.
         :rtype: :class:`huaweicloudsdkcdm.v1.ActionProgress`
@@ -481,7 +481,7 @@ class Clusters:
 
     @action_progress.setter
     def action_progress(self, action_progress):
-        """Sets the action_progress of this Clusters.
+        r"""Sets the action_progress of this Clusters.
 
         :param action_progress: The action_progress of this Clusters.
         :type action_progress: :class:`huaweicloudsdkcdm.v1.ActionProgress`
@@ -490,7 +490,7 @@ class Clusters:
 
     @property
     def created(self):
-        """Gets the created of this Clusters.
+        r"""Gets the created of this Clusters.
 
         集群创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -501,7 +501,7 @@ class Clusters:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this Clusters.
+        r"""Sets the created of this Clusters.
 
         集群创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -512,7 +512,7 @@ class Clusters:
 
     @property
     def bak_expected_start_time(self):
-        """Gets the bak_expected_start_time of this Clusters.
+        r"""Gets the bak_expected_start_time of this Clusters.
 
         开始时间
 
@@ -523,7 +523,7 @@ class Clusters:
 
     @bak_expected_start_time.setter
     def bak_expected_start_time(self, bak_expected_start_time):
-        """Sets the bak_expected_start_time of this Clusters.
+        r"""Sets the bak_expected_start_time of this Clusters.
 
         开始时间
 
@@ -534,7 +534,7 @@ class Clusters:
 
     @property
     def bak_keep_day(self):
-        """Gets the bak_keep_day of this Clusters.
+        r"""Gets the bak_keep_day of this Clusters.
 
         保留时间
 
@@ -545,7 +545,7 @@ class Clusters:
 
     @bak_keep_day.setter
     def bak_keep_day(self, bak_keep_day):
-        """Sets the bak_keep_day of this Clusters.
+        r"""Sets the bak_keep_day of this Clusters.
 
         保留时间
 
@@ -556,7 +556,7 @@ class Clusters:
 
     @property
     def name(self):
-        """Gets the name of this Clusters.
+        r"""Gets the name of this Clusters.
 
         集群名称
 
@@ -567,7 +567,7 @@ class Clusters:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Clusters.
+        r"""Sets the name of this Clusters.
 
         集群名称
 
@@ -578,7 +578,7 @@ class Clusters:
 
     @property
     def status_detail(self):
-        """Gets the status_detail of this Clusters.
+        r"""Gets the status_detail of this Clusters.
 
         集群状态描述：Normal（正常）
 
@@ -589,7 +589,7 @@ class Clusters:
 
     @status_detail.setter
     def status_detail(self, status_detail):
-        """Sets the status_detail of this Clusters.
+        r"""Sets the status_detail of this Clusters.
 
         集群状态描述：Normal（正常）
 
@@ -600,7 +600,7 @@ class Clusters:
 
     @property
     def id(self):
-        """Gets the id of this Clusters.
+        r"""Gets the id of this Clusters.
 
         集群ID
 
@@ -611,7 +611,7 @@ class Clusters:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Clusters.
+        r"""Sets the id of this Clusters.
 
         集群ID
 
@@ -622,7 +622,7 @@ class Clusters:
 
     @property
     def is_frozen(self):
-        """Gets the is_frozen of this Clusters.
+        r"""Gets the is_frozen of this Clusters.
 
         集群是否冻结：0：否 1：是
 
@@ -633,7 +633,7 @@ class Clusters:
 
     @is_frozen.setter
     def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this Clusters.
+        r"""Sets the is_frozen of this Clusters.
 
         集群是否冻结：0：否 1：是
 
@@ -644,7 +644,7 @@ class Clusters:
 
     @property
     def updated(self):
-        """Gets the updated of this Clusters.
+        r"""Gets the updated of this Clusters.
 
         集群更新时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -655,7 +655,7 @@ class Clusters:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this Clusters.
+        r"""Sets the updated of this Clusters.
 
         集群更新时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -666,7 +666,7 @@ class Clusters:
 
     @property
     def status(self):
-        """Gets the status of this Clusters.
+        r"""Gets the status of this Clusters.
 
         集群状态： - 100：创建中 - 200：正常 - 300：失败 - 303：创建失败 - 500：重启中 - 800：冻结 - 900：已关机 - 910：正在关机 - 920：正在开机
 
@@ -677,7 +677,7 @@ class Clusters:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Clusters.
+        r"""Sets the status of this Clusters.
 
         集群状态： - 100：创建中 - 200：正常 - 300：失败 - 303：创建失败 - 500：重启中 - 800：冻结 - 900：已关机 - 910：正在关机 - 920：正在开机
 
@@ -688,7 +688,7 @@ class Clusters:
 
     @property
     def failed_reasons(self):
-        """Gets the failed_reasons of this Clusters.
+        r"""Gets the failed_reasons of this Clusters.
 
         :return: The failed_reasons of this Clusters.
         :rtype: :class:`huaweicloudsdkcdm.v1.FailedReasons`
@@ -697,7 +697,7 @@ class Clusters:
 
     @failed_reasons.setter
     def failed_reasons(self, failed_reasons):
-        """Sets the failed_reasons of this Clusters.
+        r"""Sets the failed_reasons of this Clusters.
 
         :param failed_reasons: The failed_reasons of this Clusters.
         :type failed_reasons: :class:`huaweicloudsdkcdm.v1.FailedReasons`

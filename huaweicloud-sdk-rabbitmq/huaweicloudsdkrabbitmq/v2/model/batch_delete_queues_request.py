@@ -29,7 +29,7 @@ class BatchDeleteQueuesRequest:
     }
 
     def __init__(self, instance_id=None, vhost=None, body=None):
-        """BatchDeleteQueuesRequest
+        r"""BatchDeleteQueuesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchDeleteQueuesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchDeleteQueuesRequest.
+        r"""Gets the instance_id of this BatchDeleteQueuesRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class BatchDeleteQueuesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchDeleteQueuesRequest.
+        r"""Sets the instance_id of this BatchDeleteQueuesRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class BatchDeleteQueuesRequest:
 
     @property
     def vhost(self):
-        """Gets the vhost of this BatchDeleteQueuesRequest.
+        r"""Gets the vhost of this BatchDeleteQueuesRequest.
 
         Vhost名称
 
@@ -88,7 +88,7 @@ class BatchDeleteQueuesRequest:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this BatchDeleteQueuesRequest.
+        r"""Sets the vhost of this BatchDeleteQueuesRequest.
 
         Vhost名称
 
@@ -99,7 +99,7 @@ class BatchDeleteQueuesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteQueuesRequest.
+        r"""Gets the body of this BatchDeleteQueuesRequest.
 
         :return: The body of this BatchDeleteQueuesRequest.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.BatchDeleteBody`
@@ -108,7 +108,7 @@ class BatchDeleteQueuesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteQueuesRequest.
+        r"""Sets the body of this BatchDeleteQueuesRequest.
 
         :param body: The body of this BatchDeleteQueuesRequest.
         :type body: :class:`huaweicloudsdkrabbitmq.v2.BatchDeleteBody`

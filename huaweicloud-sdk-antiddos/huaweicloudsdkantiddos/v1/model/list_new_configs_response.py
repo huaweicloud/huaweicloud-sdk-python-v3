@@ -32,7 +32,7 @@ class ListNewConfigsResponse(SdkResponse):
     }
 
     def __init__(self, traffic_limited_list=None, http_limited_list=None, connection_limited_list=None, extend_ddos_config=None):
-        """ListNewConfigsResponse
+        r"""ListNewConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListNewConfigsResponse(SdkResponse):
 
     @property
     def traffic_limited_list(self):
-        """Gets the traffic_limited_list of this ListNewConfigsResponse.
+        r"""Gets the traffic_limited_list of this ListNewConfigsResponse.
 
         流量限制列表
 
@@ -76,7 +76,7 @@ class ListNewConfigsResponse(SdkResponse):
 
     @traffic_limited_list.setter
     def traffic_limited_list(self, traffic_limited_list):
-        """Sets the traffic_limited_list of this ListNewConfigsResponse.
+        r"""Sets the traffic_limited_list of this ListNewConfigsResponse.
 
         流量限制列表
 
@@ -87,7 +87,7 @@ class ListNewConfigsResponse(SdkResponse):
 
     @property
     def http_limited_list(self):
-        """Gets the http_limited_list of this ListNewConfigsResponse.
+        r"""Gets the http_limited_list of this ListNewConfigsResponse.
 
         HTTP限制列表
 
@@ -98,7 +98,7 @@ class ListNewConfigsResponse(SdkResponse):
 
     @http_limited_list.setter
     def http_limited_list(self, http_limited_list):
-        """Sets the http_limited_list of this ListNewConfigsResponse.
+        r"""Sets the http_limited_list of this ListNewConfigsResponse.
 
         HTTP限制列表
 
@@ -109,7 +109,7 @@ class ListNewConfigsResponse(SdkResponse):
 
     @property
     def connection_limited_list(self):
-        """Gets the connection_limited_list of this ListNewConfigsResponse.
+        r"""Gets the connection_limited_list of this ListNewConfigsResponse.
 
         连接数限制列表
 
@@ -120,7 +120,7 @@ class ListNewConfigsResponse(SdkResponse):
 
     @connection_limited_list.setter
     def connection_limited_list(self, connection_limited_list):
-        """Sets the connection_limited_list of this ListNewConfigsResponse.
+        r"""Sets the connection_limited_list of this ListNewConfigsResponse.
 
         连接数限制列表
 
@@ -131,7 +131,7 @@ class ListNewConfigsResponse(SdkResponse):
 
     @property
     def extend_ddos_config(self):
-        """Gets the extend_ddos_config of this ListNewConfigsResponse.
+        r"""Gets the extend_ddos_config of this ListNewConfigsResponse.
 
         扩展配置列表
 
@@ -142,7 +142,7 @@ class ListNewConfigsResponse(SdkResponse):
 
     @extend_ddos_config.setter
     def extend_ddos_config(self, extend_ddos_config):
-        """Sets the extend_ddos_config of this ListNewConfigsResponse.
+        r"""Sets the extend_ddos_config of this ListNewConfigsResponse.
 
         扩展配置列表
 

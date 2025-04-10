@@ -31,7 +31,7 @@ class HistoryDatabaseInstance:
     }
 
     def __init__(self, id=None, name=None, total_tables=None, databases=None):
-        """HistoryDatabaseInstance
+        r"""HistoryDatabaseInstance
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class HistoryDatabaseInstance:
 
     @property
     def id(self):
-        """Gets the id of this HistoryDatabaseInstance.
+        r"""Gets the id of this HistoryDatabaseInstance.
 
         实例ID
 
@@ -75,7 +75,7 @@ class HistoryDatabaseInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HistoryDatabaseInstance.
+        r"""Sets the id of this HistoryDatabaseInstance.
 
         实例ID
 
@@ -86,7 +86,7 @@ class HistoryDatabaseInstance:
 
     @property
     def name(self):
-        """Gets the name of this HistoryDatabaseInstance.
+        r"""Gets the name of this HistoryDatabaseInstance.
 
         实例名称
 
@@ -97,7 +97,7 @@ class HistoryDatabaseInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HistoryDatabaseInstance.
+        r"""Sets the name of this HistoryDatabaseInstance.
 
         实例名称
 
@@ -108,7 +108,7 @@ class HistoryDatabaseInstance:
 
     @property
     def total_tables(self):
-        """Gets the total_tables of this HistoryDatabaseInstance.
+        r"""Gets the total_tables of this HistoryDatabaseInstance.
 
         表的个数
 
@@ -119,7 +119,7 @@ class HistoryDatabaseInstance:
 
     @total_tables.setter
     def total_tables(self, total_tables):
-        """Sets the total_tables of this HistoryDatabaseInstance.
+        r"""Sets the total_tables of this HistoryDatabaseInstance.
 
         表的个数
 
@@ -130,7 +130,7 @@ class HistoryDatabaseInstance:
 
     @property
     def databases(self):
-        """Gets the databases of this HistoryDatabaseInstance.
+        r"""Gets the databases of this HistoryDatabaseInstance.
 
         数据库信息
 
@@ -141,7 +141,7 @@ class HistoryDatabaseInstance:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this HistoryDatabaseInstance.
+        r"""Sets the databases of this HistoryDatabaseInstance.
 
         数据库信息
 

@@ -35,7 +35,7 @@ class TargetServerAssociatedWithTask:
     }
 
     def __init__(self, id=None, vm_id=None, name=None, ip=None, os_type=None, os_version=None):
-        """TargetServerAssociatedWithTask
+        r"""TargetServerAssociatedWithTask
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class TargetServerAssociatedWithTask:
 
     @property
     def id(self):
-        """Gets the id of this TargetServerAssociatedWithTask.
+        r"""Gets the id of this TargetServerAssociatedWithTask.
 
         目的端在SMS数据库中的ID
 
@@ -89,7 +89,7 @@ class TargetServerAssociatedWithTask:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TargetServerAssociatedWithTask.
+        r"""Sets the id of this TargetServerAssociatedWithTask.
 
         目的端在SMS数据库中的ID
 
@@ -100,7 +100,7 @@ class TargetServerAssociatedWithTask:
 
     @property
     def vm_id(self):
-        """Gets the vm_id of this TargetServerAssociatedWithTask.
+        r"""Gets the vm_id of this TargetServerAssociatedWithTask.
 
         目的端虚机ID
 
@@ -111,7 +111,7 @@ class TargetServerAssociatedWithTask:
 
     @vm_id.setter
     def vm_id(self, vm_id):
-        """Sets the vm_id of this TargetServerAssociatedWithTask.
+        r"""Sets the vm_id of this TargetServerAssociatedWithTask.
 
         目的端虚机ID
 
@@ -122,7 +122,7 @@ class TargetServerAssociatedWithTask:
 
     @property
     def name(self):
-        """Gets the name of this TargetServerAssociatedWithTask.
+        r"""Gets the name of this TargetServerAssociatedWithTask.
 
         目的端服务器名称
 
@@ -133,7 +133,7 @@ class TargetServerAssociatedWithTask:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TargetServerAssociatedWithTask.
+        r"""Sets the name of this TargetServerAssociatedWithTask.
 
         目的端服务器名称
 
@@ -144,7 +144,7 @@ class TargetServerAssociatedWithTask:
 
     @property
     def ip(self):
-        """Gets the ip of this TargetServerAssociatedWithTask.
+        r"""Gets the ip of this TargetServerAssociatedWithTask.
 
         目的端服务器IP
 
@@ -155,7 +155,7 @@ class TargetServerAssociatedWithTask:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this TargetServerAssociatedWithTask.
+        r"""Sets the ip of this TargetServerAssociatedWithTask.
 
         目的端服务器IP
 
@@ -166,7 +166,7 @@ class TargetServerAssociatedWithTask:
 
     @property
     def os_type(self):
-        """Gets the os_type of this TargetServerAssociatedWithTask.
+        r"""Gets the os_type of this TargetServerAssociatedWithTask.
 
         目的端服务器的OS类型 WINDOWS:WINDOWS系统 LINUX:LINUX系统 
 
@@ -177,7 +177,7 @@ class TargetServerAssociatedWithTask:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this TargetServerAssociatedWithTask.
+        r"""Sets the os_type of this TargetServerAssociatedWithTask.
 
         目的端服务器的OS类型 WINDOWS:WINDOWS系统 LINUX:LINUX系统 
 
@@ -188,7 +188,7 @@ class TargetServerAssociatedWithTask:
 
     @property
     def os_version(self):
-        """Gets the os_version of this TargetServerAssociatedWithTask.
+        r"""Gets the os_version of this TargetServerAssociatedWithTask.
 
         操作系统版本
 
@@ -199,7 +199,7 @@ class TargetServerAssociatedWithTask:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this TargetServerAssociatedWithTask.
+        r"""Sets the os_version of this TargetServerAssociatedWithTask.
 
         操作系统版本
 

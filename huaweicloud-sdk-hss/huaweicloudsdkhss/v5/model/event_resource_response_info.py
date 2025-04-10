@@ -73,7 +73,7 @@ class EventResourceResponseInfo:
     }
 
     def __init__(self, domain_id=None, project_id=None, enterprise_project_id=None, region_name=None, vpc_id=None, cloud_id=None, vm_name=None, vm_uuid=None, container_id=None, container_status=None, pod_uid=None, pod_name=None, namespace=None, cluster_id=None, cluster_name=None, image_id=None, image_name=None, host_attr=None, service=None, micro_service=None, sys_arch=None, os_bit=None, os_type=None, os_name=None, os_version=None):
-        """EventResourceResponseInfo
+        r"""EventResourceResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class EventResourceResponseInfo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this EventResourceResponseInfo.
+        r"""Gets the domain_id of this EventResourceResponseInfo.
 
         租户账号ID
 
@@ -222,7 +222,7 @@ class EventResourceResponseInfo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this EventResourceResponseInfo.
+        r"""Sets the domain_id of this EventResourceResponseInfo.
 
         租户账号ID
 
@@ -233,7 +233,7 @@ class EventResourceResponseInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EventResourceResponseInfo.
+        r"""Gets the project_id of this EventResourceResponseInfo.
 
         项目ID
 
@@ -244,7 +244,7 @@ class EventResourceResponseInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EventResourceResponseInfo.
+        r"""Sets the project_id of this EventResourceResponseInfo.
 
         项目ID
 
@@ -255,7 +255,7 @@ class EventResourceResponseInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this EventResourceResponseInfo.
+        r"""Gets the enterprise_project_id of this EventResourceResponseInfo.
 
         企业项目ID
 
@@ -266,7 +266,7 @@ class EventResourceResponseInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this EventResourceResponseInfo.
+        r"""Sets the enterprise_project_id of this EventResourceResponseInfo.
 
         企业项目ID
 
@@ -277,7 +277,7 @@ class EventResourceResponseInfo:
 
     @property
     def region_name(self):
-        """Gets the region_name of this EventResourceResponseInfo.
+        r"""Gets the region_name of this EventResourceResponseInfo.
 
         Region名称
 
@@ -288,7 +288,7 @@ class EventResourceResponseInfo:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this EventResourceResponseInfo.
+        r"""Sets the region_name of this EventResourceResponseInfo.
 
         Region名称
 
@@ -299,7 +299,7 @@ class EventResourceResponseInfo:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this EventResourceResponseInfo.
+        r"""Gets the vpc_id of this EventResourceResponseInfo.
 
         VPC ID
 
@@ -310,7 +310,7 @@ class EventResourceResponseInfo:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this EventResourceResponseInfo.
+        r"""Sets the vpc_id of this EventResourceResponseInfo.
 
         VPC ID
 
@@ -321,7 +321,7 @@ class EventResourceResponseInfo:
 
     @property
     def cloud_id(self):
-        """Gets the cloud_id of this EventResourceResponseInfo.
+        r"""Gets the cloud_id of this EventResourceResponseInfo.
 
         云主机ID
 
@@ -332,7 +332,7 @@ class EventResourceResponseInfo:
 
     @cloud_id.setter
     def cloud_id(self, cloud_id):
-        """Sets the cloud_id of this EventResourceResponseInfo.
+        r"""Sets the cloud_id of this EventResourceResponseInfo.
 
         云主机ID
 
@@ -343,7 +343,7 @@ class EventResourceResponseInfo:
 
     @property
     def vm_name(self):
-        """Gets the vm_name of this EventResourceResponseInfo.
+        r"""Gets the vm_name of this EventResourceResponseInfo.
 
         虚拟机名称
 
@@ -354,7 +354,7 @@ class EventResourceResponseInfo:
 
     @vm_name.setter
     def vm_name(self, vm_name):
-        """Sets the vm_name of this EventResourceResponseInfo.
+        r"""Sets the vm_name of this EventResourceResponseInfo.
 
         虚拟机名称
 
@@ -365,7 +365,7 @@ class EventResourceResponseInfo:
 
     @property
     def vm_uuid(self):
-        """Gets the vm_uuid of this EventResourceResponseInfo.
+        r"""Gets the vm_uuid of this EventResourceResponseInfo.
 
         虚拟机UUID，即主机ID
 
@@ -376,7 +376,7 @@ class EventResourceResponseInfo:
 
     @vm_uuid.setter
     def vm_uuid(self, vm_uuid):
-        """Sets the vm_uuid of this EventResourceResponseInfo.
+        r"""Sets the vm_uuid of this EventResourceResponseInfo.
 
         虚拟机UUID，即主机ID
 
@@ -387,7 +387,7 @@ class EventResourceResponseInfo:
 
     @property
     def container_id(self):
-        """Gets the container_id of this EventResourceResponseInfo.
+        r"""Gets the container_id of this EventResourceResponseInfo.
 
         容器ID
 
@@ -398,7 +398,7 @@ class EventResourceResponseInfo:
 
     @container_id.setter
     def container_id(self, container_id):
-        """Sets the container_id of this EventResourceResponseInfo.
+        r"""Sets the container_id of this EventResourceResponseInfo.
 
         容器ID
 
@@ -409,7 +409,7 @@ class EventResourceResponseInfo:
 
     @property
     def container_status(self):
-        """Gets the container_status of this EventResourceResponseInfo.
+        r"""Gets the container_status of this EventResourceResponseInfo.
 
         容器状态
 
@@ -420,7 +420,7 @@ class EventResourceResponseInfo:
 
     @container_status.setter
     def container_status(self, container_status):
-        """Sets the container_status of this EventResourceResponseInfo.
+        r"""Sets the container_status of this EventResourceResponseInfo.
 
         容器状态
 
@@ -431,7 +431,7 @@ class EventResourceResponseInfo:
 
     @property
     def pod_uid(self):
-        """Gets the pod_uid of this EventResourceResponseInfo.
+        r"""Gets the pod_uid of this EventResourceResponseInfo.
 
         pod uid
 
@@ -442,7 +442,7 @@ class EventResourceResponseInfo:
 
     @pod_uid.setter
     def pod_uid(self, pod_uid):
-        """Sets the pod_uid of this EventResourceResponseInfo.
+        r"""Sets the pod_uid of this EventResourceResponseInfo.
 
         pod uid
 
@@ -453,7 +453,7 @@ class EventResourceResponseInfo:
 
     @property
     def pod_name(self):
-        """Gets the pod_name of this EventResourceResponseInfo.
+        r"""Gets the pod_name of this EventResourceResponseInfo.
 
         pod name
 
@@ -464,7 +464,7 @@ class EventResourceResponseInfo:
 
     @pod_name.setter
     def pod_name(self, pod_name):
-        """Sets the pod_name of this EventResourceResponseInfo.
+        r"""Sets the pod_name of this EventResourceResponseInfo.
 
         pod name
 
@@ -475,7 +475,7 @@ class EventResourceResponseInfo:
 
     @property
     def namespace(self):
-        """Gets the namespace of this EventResourceResponseInfo.
+        r"""Gets the namespace of this EventResourceResponseInfo.
 
         namespace
 
@@ -486,7 +486,7 @@ class EventResourceResponseInfo:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this EventResourceResponseInfo.
+        r"""Sets the namespace of this EventResourceResponseInfo.
 
         namespace
 
@@ -497,7 +497,7 @@ class EventResourceResponseInfo:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this EventResourceResponseInfo.
+        r"""Gets the cluster_id of this EventResourceResponseInfo.
 
         集群id
 
@@ -508,7 +508,7 @@ class EventResourceResponseInfo:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this EventResourceResponseInfo.
+        r"""Sets the cluster_id of this EventResourceResponseInfo.
 
         集群id
 
@@ -519,7 +519,7 @@ class EventResourceResponseInfo:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this EventResourceResponseInfo.
+        r"""Gets the cluster_name of this EventResourceResponseInfo.
 
         集群名称
 
@@ -530,7 +530,7 @@ class EventResourceResponseInfo:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this EventResourceResponseInfo.
+        r"""Sets the cluster_name of this EventResourceResponseInfo.
 
         集群名称
 
@@ -541,7 +541,7 @@ class EventResourceResponseInfo:
 
     @property
     def image_id(self):
-        """Gets the image_id of this EventResourceResponseInfo.
+        r"""Gets the image_id of this EventResourceResponseInfo.
 
         镜像ID
 
@@ -552,7 +552,7 @@ class EventResourceResponseInfo:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this EventResourceResponseInfo.
+        r"""Sets the image_id of this EventResourceResponseInfo.
 
         镜像ID
 
@@ -563,7 +563,7 @@ class EventResourceResponseInfo:
 
     @property
     def image_name(self):
-        """Gets the image_name of this EventResourceResponseInfo.
+        r"""Gets the image_name of this EventResourceResponseInfo.
 
         镜像名称
 
@@ -574,7 +574,7 @@ class EventResourceResponseInfo:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this EventResourceResponseInfo.
+        r"""Sets the image_name of this EventResourceResponseInfo.
 
         镜像名称
 
@@ -585,7 +585,7 @@ class EventResourceResponseInfo:
 
     @property
     def host_attr(self):
-        """Gets the host_attr of this EventResourceResponseInfo.
+        r"""Gets the host_attr of this EventResourceResponseInfo.
 
         主机属性
 
@@ -596,7 +596,7 @@ class EventResourceResponseInfo:
 
     @host_attr.setter
     def host_attr(self, host_attr):
-        """Sets the host_attr of this EventResourceResponseInfo.
+        r"""Sets the host_attr of this EventResourceResponseInfo.
 
         主机属性
 
@@ -607,7 +607,7 @@ class EventResourceResponseInfo:
 
     @property
     def service(self):
-        """Gets the service of this EventResourceResponseInfo.
+        r"""Gets the service of this EventResourceResponseInfo.
 
         业务服务
 
@@ -618,7 +618,7 @@ class EventResourceResponseInfo:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this EventResourceResponseInfo.
+        r"""Sets the service of this EventResourceResponseInfo.
 
         业务服务
 
@@ -629,7 +629,7 @@ class EventResourceResponseInfo:
 
     @property
     def micro_service(self):
-        """Gets the micro_service of this EventResourceResponseInfo.
+        r"""Gets the micro_service of this EventResourceResponseInfo.
 
         微服务
 
@@ -640,7 +640,7 @@ class EventResourceResponseInfo:
 
     @micro_service.setter
     def micro_service(self, micro_service):
-        """Sets the micro_service of this EventResourceResponseInfo.
+        r"""Sets the micro_service of this EventResourceResponseInfo.
 
         微服务
 
@@ -651,7 +651,7 @@ class EventResourceResponseInfo:
 
     @property
     def sys_arch(self):
-        """Gets the sys_arch of this EventResourceResponseInfo.
+        r"""Gets the sys_arch of this EventResourceResponseInfo.
 
         系统CPU架构
 
@@ -662,7 +662,7 @@ class EventResourceResponseInfo:
 
     @sys_arch.setter
     def sys_arch(self, sys_arch):
-        """Sets the sys_arch of this EventResourceResponseInfo.
+        r"""Sets the sys_arch of this EventResourceResponseInfo.
 
         系统CPU架构
 
@@ -673,7 +673,7 @@ class EventResourceResponseInfo:
 
     @property
     def os_bit(self):
-        """Gets the os_bit of this EventResourceResponseInfo.
+        r"""Gets the os_bit of this EventResourceResponseInfo.
 
         操作系统位数
 
@@ -684,7 +684,7 @@ class EventResourceResponseInfo:
 
     @os_bit.setter
     def os_bit(self, os_bit):
-        """Sets the os_bit of this EventResourceResponseInfo.
+        r"""Sets the os_bit of this EventResourceResponseInfo.
 
         操作系统位数
 
@@ -695,7 +695,7 @@ class EventResourceResponseInfo:
 
     @property
     def os_type(self):
-        """Gets the os_type of this EventResourceResponseInfo.
+        r"""Gets the os_type of this EventResourceResponseInfo.
 
         操作系统类型
 
@@ -706,7 +706,7 @@ class EventResourceResponseInfo:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this EventResourceResponseInfo.
+        r"""Sets the os_type of this EventResourceResponseInfo.
 
         操作系统类型
 
@@ -717,7 +717,7 @@ class EventResourceResponseInfo:
 
     @property
     def os_name(self):
-        """Gets the os_name of this EventResourceResponseInfo.
+        r"""Gets the os_name of this EventResourceResponseInfo.
 
         操作系统名称
 
@@ -728,7 +728,7 @@ class EventResourceResponseInfo:
 
     @os_name.setter
     def os_name(self, os_name):
-        """Sets the os_name of this EventResourceResponseInfo.
+        r"""Sets the os_name of this EventResourceResponseInfo.
 
         操作系统名称
 
@@ -739,7 +739,7 @@ class EventResourceResponseInfo:
 
     @property
     def os_version(self):
-        """Gets the os_version of this EventResourceResponseInfo.
+        r"""Gets the os_version of this EventResourceResponseInfo.
 
         操作系统版本
 
@@ -750,7 +750,7 @@ class EventResourceResponseInfo:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this EventResourceResponseInfo.
+        r"""Sets the os_version of this EventResourceResponseInfo.
 
         操作系统版本
 

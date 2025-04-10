@@ -26,7 +26,7 @@ class CreateStarRocksDataReplicationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """CreateStarRocksDataReplicationResponse
+        r"""CreateStarRocksDataReplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateStarRocksDataReplicationResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateStarRocksDataReplicationResponse.
+        r"""Gets the job_id of this CreateStarRocksDataReplicationResponse.
 
         创建数据同步的任务ID。
 
@@ -55,7 +55,7 @@ class CreateStarRocksDataReplicationResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateStarRocksDataReplicationResponse.
+        r"""Sets the job_id of this CreateStarRocksDataReplicationResponse.
 
         创建数据同步的任务ID。
 

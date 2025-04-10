@@ -27,7 +27,7 @@ class UpdateIpGroupOption:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateIpGroupOption
+        r"""UpdateIpGroupOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateIpGroupOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateIpGroupOption.
+        r"""Gets the name of this UpdateIpGroupOption.
 
         IP地址组名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -61,7 +61,7 @@ class UpdateIpGroupOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateIpGroupOption.
+        r"""Sets the name of this UpdateIpGroupOption.
 
         IP地址组名称，取值范围：1~64个字符之间，只能由数字、字母、中划线和中文组成。
 
@@ -72,7 +72,7 @@ class UpdateIpGroupOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateIpGroupOption.
+        r"""Gets the description of this UpdateIpGroupOption.
 
         IP地址组的描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 
@@ -83,7 +83,7 @@ class UpdateIpGroupOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateIpGroupOption.
+        r"""Sets the description of this UpdateIpGroupOption.
 
         IP地址组的描述信息，取值范围：0~255个字符之间，禁止输入字符：<>。
 

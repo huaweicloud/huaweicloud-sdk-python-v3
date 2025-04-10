@@ -45,7 +45,7 @@ class NeutronCreateSubnetOption:
     }
 
     def __init__(self, name=None, cidr=None, network_id=None, gateway_ip=None, ip_version=None, allocation_pools=None, dns_nameservers=None, host_routes=None, enable_dhcp=None, ipv6_address_mode=None, ipv6_ra_mode=None):
-        """NeutronCreateSubnetOption
+        r"""NeutronCreateSubnetOption
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class NeutronCreateSubnetOption:
 
     @property
     def name(self):
-        """Gets the name of this NeutronCreateSubnetOption.
+        r"""Gets the name of this NeutronCreateSubnetOption.
 
         功能说明：子网的名称 取值范围：0-255个字符
 
@@ -122,7 +122,7 @@ class NeutronCreateSubnetOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronCreateSubnetOption.
+        r"""Sets the name of this NeutronCreateSubnetOption.
 
         功能说明：子网的名称 取值范围：0-255个字符
 
@@ -133,7 +133,7 @@ class NeutronCreateSubnetOption:
 
     @property
     def cidr(self):
-        """Gets the cidr of this NeutronCreateSubnetOption.
+        r"""Gets the cidr of this NeutronCreateSubnetOption.
 
         功能说明：子网网段 取值范围：必须是cidr格式，只支持10.0.0.0/8,172.16.0.0/12,192.168.0.0/16三个网段内的地址，掩码长度不能大于28
 
@@ -144,7 +144,7 @@ class NeutronCreateSubnetOption:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this NeutronCreateSubnetOption.
+        r"""Sets the cidr of this NeutronCreateSubnetOption.
 
         功能说明：子网网段 取值范围：必须是cidr格式，只支持10.0.0.0/8,172.16.0.0/12,192.168.0.0/16三个网段内的地址，掩码长度不能大于28
 
@@ -155,7 +155,7 @@ class NeutronCreateSubnetOption:
 
     @property
     def network_id(self):
-        """Gets the network_id of this NeutronCreateSubnetOption.
+        r"""Gets the network_id of this NeutronCreateSubnetOption.
 
         功能说明：子网所属网络ID
 
@@ -166,7 +166,7 @@ class NeutronCreateSubnetOption:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this NeutronCreateSubnetOption.
+        r"""Sets the network_id of this NeutronCreateSubnetOption.
 
         功能说明：子网所属网络ID
 
@@ -177,7 +177,7 @@ class NeutronCreateSubnetOption:
 
     @property
     def gateway_ip(self):
-        """Gets the gateway_ip of this NeutronCreateSubnetOption.
+        r"""Gets the gateway_ip of this NeutronCreateSubnetOption.
 
         功能说明：子网网关 取值范围：子网网段中的IP地址 约束：必须是ip格式
 
@@ -188,7 +188,7 @@ class NeutronCreateSubnetOption:
 
     @gateway_ip.setter
     def gateway_ip(self, gateway_ip):
-        """Sets the gateway_ip of this NeutronCreateSubnetOption.
+        r"""Sets the gateway_ip of this NeutronCreateSubnetOption.
 
         功能说明：子网网关 取值范围：子网网段中的IP地址 约束：必须是ip格式
 
@@ -199,7 +199,7 @@ class NeutronCreateSubnetOption:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this NeutronCreateSubnetOption.
+        r"""Gets the ip_version of this NeutronCreateSubnetOption.
 
         功能说明：IP版本信息 取值范围：4或者6(特定局点)
 
@@ -210,7 +210,7 @@ class NeutronCreateSubnetOption:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this NeutronCreateSubnetOption.
+        r"""Sets the ip_version of this NeutronCreateSubnetOption.
 
         功能说明：IP版本信息 取值范围：4或者6(特定局点)
 
@@ -221,7 +221,7 @@ class NeutronCreateSubnetOption:
 
     @property
     def allocation_pools(self):
-        """Gets the allocation_pools of this NeutronCreateSubnetOption.
+        r"""Gets the allocation_pools of this NeutronCreateSubnetOption.
 
         功能说明：可用的IP池，allocation_pool对象参见allocation_pool对象 例如：[ { \"start\": \"10.0.0.2\", \"end\": \"10.0.0.251\"} ]每个子网的第1个和最后4个IP地址为系统保留地址。以192.168.1.0/24为例，192.168.1.0、 192.168.1.252、192.168.1.253、192.168.1.254和192.168.1.255这些地址是系统保留地址。系统预留地址默认不在allocation_pool范围内。 约束：更新时allocation_pool范围不能包含网关和广播地址的所有IP。
 
@@ -232,7 +232,7 @@ class NeutronCreateSubnetOption:
 
     @allocation_pools.setter
     def allocation_pools(self, allocation_pools):
-        """Sets the allocation_pools of this NeutronCreateSubnetOption.
+        r"""Sets the allocation_pools of this NeutronCreateSubnetOption.
 
         功能说明：可用的IP池，allocation_pool对象参见allocation_pool对象 例如：[ { \"start\": \"10.0.0.2\", \"end\": \"10.0.0.251\"} ]每个子网的第1个和最后4个IP地址为系统保留地址。以192.168.1.0/24为例，192.168.1.0、 192.168.1.252、192.168.1.253、192.168.1.254和192.168.1.255这些地址是系统保留地址。系统预留地址默认不在allocation_pool范围内。 约束：更新时allocation_pool范围不能包含网关和广播地址的所有IP。
 
@@ -243,7 +243,7 @@ class NeutronCreateSubnetOption:
 
     @property
     def dns_nameservers(self):
-        """Gets the dns_nameservers of this NeutronCreateSubnetOption.
+        r"""Gets the dns_nameservers of this NeutronCreateSubnetOption.
 
         功能说明：子网关联的DNS名称服务器列表 取值范围：IP地址格式例如：\"dns_nameservers\": [\"8.xx.xx.8\",\"8.xx.xx.4\"] 默认值：不填时为空，无法使用云内网DNS功能 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
@@ -254,7 +254,7 @@ class NeutronCreateSubnetOption:
 
     @dns_nameservers.setter
     def dns_nameservers(self, dns_nameservers):
-        """Sets the dns_nameservers of this NeutronCreateSubnetOption.
+        r"""Sets the dns_nameservers of this NeutronCreateSubnetOption.
 
         功能说明：子网关联的DNS名称服务器列表 取值范围：IP地址格式例如：\"dns_nameservers\": [\"8.xx.xx.8\",\"8.xx.xx.4\"] 默认值：不填时为空，无法使用云内网DNS功能 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
@@ -265,7 +265,7 @@ class NeutronCreateSubnetOption:
 
     @property
     def host_routes(self):
-        """Gets the host_routes of this NeutronCreateSubnetOption.
+        r"""Gets the host_routes of this NeutronCreateSubnetOption.
 
         功能说明：虚拟机静态路由，参见“host_route对象”表 约束：不支持设置
 
@@ -276,7 +276,7 @@ class NeutronCreateSubnetOption:
 
     @host_routes.setter
     def host_routes(self, host_routes):
-        """Sets the host_routes of this NeutronCreateSubnetOption.
+        r"""Sets the host_routes of this NeutronCreateSubnetOption.
 
         功能说明：虚拟机静态路由，参见“host_route对象”表 约束：不支持设置
 
@@ -287,7 +287,7 @@ class NeutronCreateSubnetOption:
 
     @property
     def enable_dhcp(self):
-        """Gets the enable_dhcp of this NeutronCreateSubnetOption.
+        r"""Gets the enable_dhcp of this NeutronCreateSubnetOption.
 
         功能说明：是否启动dhcp，false表示不提供dhcp服务的能力 约束：只支持true
 
@@ -298,7 +298,7 @@ class NeutronCreateSubnetOption:
 
     @enable_dhcp.setter
     def enable_dhcp(self, enable_dhcp):
-        """Sets the enable_dhcp of this NeutronCreateSubnetOption.
+        r"""Sets the enable_dhcp of this NeutronCreateSubnetOption.
 
         功能说明：是否启动dhcp，false表示不提供dhcp服务的能力 约束：只支持true
 
@@ -309,7 +309,7 @@ class NeutronCreateSubnetOption:
 
     @property
     def ipv6_address_mode(self):
-        """Gets the ipv6_address_mode of this NeutronCreateSubnetOption.
+        r"""Gets the ipv6_address_mode of this NeutronCreateSubnetOption.
 
         功能说明：IPv6寻址模式 取值范围：dhcpv6-stateful
 
@@ -320,7 +320,7 @@ class NeutronCreateSubnetOption:
 
     @ipv6_address_mode.setter
     def ipv6_address_mode(self, ipv6_address_mode):
-        """Sets the ipv6_address_mode of this NeutronCreateSubnetOption.
+        r"""Sets the ipv6_address_mode of this NeutronCreateSubnetOption.
 
         功能说明：IPv6寻址模式 取值范围：dhcpv6-stateful
 
@@ -331,7 +331,7 @@ class NeutronCreateSubnetOption:
 
     @property
     def ipv6_ra_mode(self):
-        """Gets the ipv6_ra_mode of this NeutronCreateSubnetOption.
+        r"""Gets the ipv6_ra_mode of this NeutronCreateSubnetOption.
 
         功能说明：IPv6路由广播模式 取值范围：dhcpv6-stateful
 
@@ -342,7 +342,7 @@ class NeutronCreateSubnetOption:
 
     @ipv6_ra_mode.setter
     def ipv6_ra_mode(self, ipv6_ra_mode):
-        """Sets the ipv6_ra_mode of this NeutronCreateSubnetOption.
+        r"""Sets the ipv6_ra_mode of this NeutronCreateSubnetOption.
 
         功能说明：IPv6路由广播模式 取值范围：dhcpv6-stateful
 

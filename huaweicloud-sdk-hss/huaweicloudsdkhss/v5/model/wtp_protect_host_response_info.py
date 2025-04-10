@@ -23,6 +23,7 @@ class WtpProtectHostResponseInfo:
         'private_ip': 'str',
         'ipv6': 'str',
         'group_name': 'str',
+        'asset_value': 'str',
         'os_bit': 'str',
         'os_type': 'str',
         'protect_status': 'str',
@@ -31,7 +32,12 @@ class WtpProtectHostResponseInfo:
         'detect_tampering_times': 'int',
         'last_detect_time': 'int',
         'scheduled_shutdown_status': 'str',
-        'agent_status': 'str'
+        'os_name': 'str',
+        'os_version': 'str',
+        'host_status': 'str',
+        'agent_status': 'str',
+        'protect_dir_num': 'int',
+        'remote_backbup_info': 'WtpRemoteBackupResponseInfo'
     }
 
     attribute_map = {
@@ -41,6 +47,7 @@ class WtpProtectHostResponseInfo:
         'private_ip': 'private_ip',
         'ipv6': 'ipv6',
         'group_name': 'group_name',
+        'asset_value': 'asset_value',
         'os_bit': 'os_bit',
         'os_type': 'os_type',
         'protect_status': 'protect_status',
@@ -49,11 +56,16 @@ class WtpProtectHostResponseInfo:
         'detect_tampering_times': 'detect_tampering_times',
         'last_detect_time': 'last_detect_time',
         'scheduled_shutdown_status': 'scheduled_shutdown_status',
-        'agent_status': 'agent_status'
+        'os_name': 'os_name',
+        'os_version': 'os_version',
+        'host_status': 'host_status',
+        'agent_status': 'agent_status',
+        'protect_dir_num': 'protect_dir_num',
+        'remote_backbup_info': 'remote_backbup_info'
     }
 
-    def __init__(self, host_name=None, host_id=None, public_ip=None, private_ip=None, ipv6=None, group_name=None, os_bit=None, os_type=None, protect_status=None, rasp_protect_status=None, anti_tampering_times=None, detect_tampering_times=None, last_detect_time=None, scheduled_shutdown_status=None, agent_status=None):
-        """WtpProtectHostResponseInfo
+    def __init__(self, host_name=None, host_id=None, public_ip=None, private_ip=None, ipv6=None, group_name=None, asset_value=None, os_bit=None, os_type=None, protect_status=None, rasp_protect_status=None, anti_tampering_times=None, detect_tampering_times=None, last_detect_time=None, scheduled_shutdown_status=None, os_name=None, os_version=None, host_status=None, agent_status=None, protect_dir_num=None, remote_backbup_info=None):
+        r"""WtpProtectHostResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -69,11 +81,13 @@ class WtpProtectHostResponseInfo:
         :type ipv6: str
         :param group_name: 服务器组名称
         :type group_name: str
+        :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        :type asset_value: str
         :param os_bit: 操作系统位数
         :type os_bit: str
         :param os_type: 操作系统（linux，windows）
         :type os_type: str
-        :param protect_status: 防护状态   - closed : 未开启   - opened : 防护中
+        :param protect_status: 防护状态   - opening : 正在开启   - opened : 防护中   - open_failed : 防护失败   - partial_protection : 部分防护   - protection_interruption : 防护中断
         :type protect_status: str
         :param rasp_protect_status: 动态网页防篡改状态   - closed : 未开启   - opened : 防护中
         :type rasp_protect_status: str
@@ -85,8 +99,18 @@ class WtpProtectHostResponseInfo:
         :type last_detect_time: int
         :param scheduled_shutdown_status: 定时关闭防护开关状态   - opened : 开启   - closed : 未开启
         :type scheduled_shutdown_status: str
+        :param os_name: 系统名称
+        :type os_name: str
+        :param os_version: 系统版本
+        :type os_version: str
+        :param host_status: 服务器状态，包含如下4种。   - ACTIVE ：运行中。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
+        :type host_status: str
         :param agent_status: Agent状态   - not_installed : agent未安装   - online : agent在线   - offline : agent不在线
         :type agent_status: str
+        :param protect_dir_num: 防护目录数
+        :type protect_dir_num: int
+        :param remote_backbup_info: 
+        :type remote_backbup_info: :class:`huaweicloudsdkhss.v5.WtpRemoteBackupResponseInfo`
         """
         
         
@@ -97,6 +121,7 @@ class WtpProtectHostResponseInfo:
         self._private_ip = None
         self._ipv6 = None
         self._group_name = None
+        self._asset_value = None
         self._os_bit = None
         self._os_type = None
         self._protect_status = None
@@ -105,7 +130,12 @@ class WtpProtectHostResponseInfo:
         self._detect_tampering_times = None
         self._last_detect_time = None
         self._scheduled_shutdown_status = None
+        self._os_name = None
+        self._os_version = None
+        self._host_status = None
         self._agent_status = None
+        self._protect_dir_num = None
+        self._remote_backbup_info = None
         self.discriminator = None
 
         if host_name is not None:
@@ -120,6 +150,8 @@ class WtpProtectHostResponseInfo:
             self.ipv6 = ipv6
         if group_name is not None:
             self.group_name = group_name
+        if asset_value is not None:
+            self.asset_value = asset_value
         if os_bit is not None:
             self.os_bit = os_bit
         if os_type is not None:
@@ -136,12 +168,22 @@ class WtpProtectHostResponseInfo:
             self.last_detect_time = last_detect_time
         if scheduled_shutdown_status is not None:
             self.scheduled_shutdown_status = scheduled_shutdown_status
+        if os_name is not None:
+            self.os_name = os_name
+        if os_version is not None:
+            self.os_version = os_version
+        if host_status is not None:
+            self.host_status = host_status
         if agent_status is not None:
             self.agent_status = agent_status
+        if protect_dir_num is not None:
+            self.protect_dir_num = protect_dir_num
+        if remote_backbup_info is not None:
+            self.remote_backbup_info = remote_backbup_info
 
     @property
     def host_name(self):
-        """Gets the host_name of this WtpProtectHostResponseInfo.
+        r"""Gets the host_name of this WtpProtectHostResponseInfo.
 
         服务器名称
 
@@ -152,7 +194,7 @@ class WtpProtectHostResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this WtpProtectHostResponseInfo.
+        r"""Sets the host_name of this WtpProtectHostResponseInfo.
 
         服务器名称
 
@@ -163,7 +205,7 @@ class WtpProtectHostResponseInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this WtpProtectHostResponseInfo.
+        r"""Gets the host_id of this WtpProtectHostResponseInfo.
 
         主机ID
 
@@ -174,7 +216,7 @@ class WtpProtectHostResponseInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this WtpProtectHostResponseInfo.
+        r"""Sets the host_id of this WtpProtectHostResponseInfo.
 
         主机ID
 
@@ -185,7 +227,7 @@ class WtpProtectHostResponseInfo:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this WtpProtectHostResponseInfo.
+        r"""Gets the public_ip of this WtpProtectHostResponseInfo.
 
         弹性公网IP
 
@@ -196,7 +238,7 @@ class WtpProtectHostResponseInfo:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this WtpProtectHostResponseInfo.
+        r"""Sets the public_ip of this WtpProtectHostResponseInfo.
 
         弹性公网IP
 
@@ -207,7 +249,7 @@ class WtpProtectHostResponseInfo:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this WtpProtectHostResponseInfo.
+        r"""Gets the private_ip of this WtpProtectHostResponseInfo.
 
         私有IP
 
@@ -218,7 +260,7 @@ class WtpProtectHostResponseInfo:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this WtpProtectHostResponseInfo.
+        r"""Sets the private_ip of this WtpProtectHostResponseInfo.
 
         私有IP
 
@@ -229,7 +271,7 @@ class WtpProtectHostResponseInfo:
 
     @property
     def ipv6(self):
-        """Gets the ipv6 of this WtpProtectHostResponseInfo.
+        r"""Gets the ipv6 of this WtpProtectHostResponseInfo.
 
         私有IPv6地址
 
@@ -240,7 +282,7 @@ class WtpProtectHostResponseInfo:
 
     @ipv6.setter
     def ipv6(self, ipv6):
-        """Sets the ipv6 of this WtpProtectHostResponseInfo.
+        r"""Sets the ipv6 of this WtpProtectHostResponseInfo.
 
         私有IPv6地址
 
@@ -251,7 +293,7 @@ class WtpProtectHostResponseInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this WtpProtectHostResponseInfo.
+        r"""Gets the group_name of this WtpProtectHostResponseInfo.
 
         服务器组名称
 
@@ -262,7 +304,7 @@ class WtpProtectHostResponseInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this WtpProtectHostResponseInfo.
+        r"""Sets the group_name of this WtpProtectHostResponseInfo.
 
         服务器组名称
 
@@ -272,8 +314,30 @@ class WtpProtectHostResponseInfo:
         self._group_name = group_name
 
     @property
+    def asset_value(self):
+        r"""Gets the asset_value of this WtpProtectHostResponseInfo.
+
+        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+
+        :return: The asset_value of this WtpProtectHostResponseInfo.
+        :rtype: str
+        """
+        return self._asset_value
+
+    @asset_value.setter
+    def asset_value(self, asset_value):
+        r"""Sets the asset_value of this WtpProtectHostResponseInfo.
+
+        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+
+        :param asset_value: The asset_value of this WtpProtectHostResponseInfo.
+        :type asset_value: str
+        """
+        self._asset_value = asset_value
+
+    @property
     def os_bit(self):
-        """Gets the os_bit of this WtpProtectHostResponseInfo.
+        r"""Gets the os_bit of this WtpProtectHostResponseInfo.
 
         操作系统位数
 
@@ -284,7 +348,7 @@ class WtpProtectHostResponseInfo:
 
     @os_bit.setter
     def os_bit(self, os_bit):
-        """Sets the os_bit of this WtpProtectHostResponseInfo.
+        r"""Sets the os_bit of this WtpProtectHostResponseInfo.
 
         操作系统位数
 
@@ -295,7 +359,7 @@ class WtpProtectHostResponseInfo:
 
     @property
     def os_type(self):
-        """Gets the os_type of this WtpProtectHostResponseInfo.
+        r"""Gets the os_type of this WtpProtectHostResponseInfo.
 
         操作系统（linux，windows）
 
@@ -306,7 +370,7 @@ class WtpProtectHostResponseInfo:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this WtpProtectHostResponseInfo.
+        r"""Sets the os_type of this WtpProtectHostResponseInfo.
 
         操作系统（linux，windows）
 
@@ -317,9 +381,9 @@ class WtpProtectHostResponseInfo:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this WtpProtectHostResponseInfo.
+        r"""Gets the protect_status of this WtpProtectHostResponseInfo.
 
-        防护状态   - closed : 未开启   - opened : 防护中
+        防护状态   - opening : 正在开启   - opened : 防护中   - open_failed : 防护失败   - partial_protection : 部分防护   - protection_interruption : 防护中断
 
         :return: The protect_status of this WtpProtectHostResponseInfo.
         :rtype: str
@@ -328,9 +392,9 @@ class WtpProtectHostResponseInfo:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this WtpProtectHostResponseInfo.
+        r"""Sets the protect_status of this WtpProtectHostResponseInfo.
 
-        防护状态   - closed : 未开启   - opened : 防护中
+        防护状态   - opening : 正在开启   - opened : 防护中   - open_failed : 防护失败   - partial_protection : 部分防护   - protection_interruption : 防护中断
 
         :param protect_status: The protect_status of this WtpProtectHostResponseInfo.
         :type protect_status: str
@@ -339,7 +403,7 @@ class WtpProtectHostResponseInfo:
 
     @property
     def rasp_protect_status(self):
-        """Gets the rasp_protect_status of this WtpProtectHostResponseInfo.
+        r"""Gets the rasp_protect_status of this WtpProtectHostResponseInfo.
 
         动态网页防篡改状态   - closed : 未开启   - opened : 防护中
 
@@ -350,7 +414,7 @@ class WtpProtectHostResponseInfo:
 
     @rasp_protect_status.setter
     def rasp_protect_status(self, rasp_protect_status):
-        """Sets the rasp_protect_status of this WtpProtectHostResponseInfo.
+        r"""Sets the rasp_protect_status of this WtpProtectHostResponseInfo.
 
         动态网页防篡改状态   - closed : 未开启   - opened : 防护中
 
@@ -361,7 +425,7 @@ class WtpProtectHostResponseInfo:
 
     @property
     def anti_tampering_times(self):
-        """Gets the anti_tampering_times of this WtpProtectHostResponseInfo.
+        r"""Gets the anti_tampering_times of this WtpProtectHostResponseInfo.
 
         已防御篡改攻击次数
 
@@ -372,7 +436,7 @@ class WtpProtectHostResponseInfo:
 
     @anti_tampering_times.setter
     def anti_tampering_times(self, anti_tampering_times):
-        """Sets the anti_tampering_times of this WtpProtectHostResponseInfo.
+        r"""Sets the anti_tampering_times of this WtpProtectHostResponseInfo.
 
         已防御篡改攻击次数
 
@@ -383,7 +447,7 @@ class WtpProtectHostResponseInfo:
 
     @property
     def detect_tampering_times(self):
-        """Gets the detect_tampering_times of this WtpProtectHostResponseInfo.
+        r"""Gets the detect_tampering_times of this WtpProtectHostResponseInfo.
 
         已发现篡改攻击
 
@@ -394,7 +458,7 @@ class WtpProtectHostResponseInfo:
 
     @detect_tampering_times.setter
     def detect_tampering_times(self, detect_tampering_times):
-        """Sets the detect_tampering_times of this WtpProtectHostResponseInfo.
+        r"""Sets the detect_tampering_times of this WtpProtectHostResponseInfo.
 
         已发现篡改攻击
 
@@ -405,7 +469,7 @@ class WtpProtectHostResponseInfo:
 
     @property
     def last_detect_time(self):
-        """Gets the last_detect_time of this WtpProtectHostResponseInfo.
+        r"""Gets the last_detect_time of this WtpProtectHostResponseInfo.
 
         最近检测时间(ms)
 
@@ -416,7 +480,7 @@ class WtpProtectHostResponseInfo:
 
     @last_detect_time.setter
     def last_detect_time(self, last_detect_time):
-        """Sets the last_detect_time of this WtpProtectHostResponseInfo.
+        r"""Sets the last_detect_time of this WtpProtectHostResponseInfo.
 
         最近检测时间(ms)
 
@@ -427,7 +491,7 @@ class WtpProtectHostResponseInfo:
 
     @property
     def scheduled_shutdown_status(self):
-        """Gets the scheduled_shutdown_status of this WtpProtectHostResponseInfo.
+        r"""Gets the scheduled_shutdown_status of this WtpProtectHostResponseInfo.
 
         定时关闭防护开关状态   - opened : 开启   - closed : 未开启
 
@@ -438,7 +502,7 @@ class WtpProtectHostResponseInfo:
 
     @scheduled_shutdown_status.setter
     def scheduled_shutdown_status(self, scheduled_shutdown_status):
-        """Sets the scheduled_shutdown_status of this WtpProtectHostResponseInfo.
+        r"""Sets the scheduled_shutdown_status of this WtpProtectHostResponseInfo.
 
         定时关闭防护开关状态   - opened : 开启   - closed : 未开启
 
@@ -448,8 +512,74 @@ class WtpProtectHostResponseInfo:
         self._scheduled_shutdown_status = scheduled_shutdown_status
 
     @property
+    def os_name(self):
+        r"""Gets the os_name of this WtpProtectHostResponseInfo.
+
+        系统名称
+
+        :return: The os_name of this WtpProtectHostResponseInfo.
+        :rtype: str
+        """
+        return self._os_name
+
+    @os_name.setter
+    def os_name(self, os_name):
+        r"""Sets the os_name of this WtpProtectHostResponseInfo.
+
+        系统名称
+
+        :param os_name: The os_name of this WtpProtectHostResponseInfo.
+        :type os_name: str
+        """
+        self._os_name = os_name
+
+    @property
+    def os_version(self):
+        r"""Gets the os_version of this WtpProtectHostResponseInfo.
+
+        系统版本
+
+        :return: The os_version of this WtpProtectHostResponseInfo.
+        :rtype: str
+        """
+        return self._os_version
+
+    @os_version.setter
+    def os_version(self, os_version):
+        r"""Sets the os_version of this WtpProtectHostResponseInfo.
+
+        系统版本
+
+        :param os_version: The os_version of this WtpProtectHostResponseInfo.
+        :type os_version: str
+        """
+        self._os_version = os_version
+
+    @property
+    def host_status(self):
+        r"""Gets the host_status of this WtpProtectHostResponseInfo.
+
+        服务器状态，包含如下4种。   - ACTIVE ：运行中。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
+
+        :return: The host_status of this WtpProtectHostResponseInfo.
+        :rtype: str
+        """
+        return self._host_status
+
+    @host_status.setter
+    def host_status(self, host_status):
+        r"""Sets the host_status of this WtpProtectHostResponseInfo.
+
+        服务器状态，包含如下4种。   - ACTIVE ：运行中。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
+
+        :param host_status: The host_status of this WtpProtectHostResponseInfo.
+        :type host_status: str
+        """
+        self._host_status = host_status
+
+    @property
     def agent_status(self):
-        """Gets the agent_status of this WtpProtectHostResponseInfo.
+        r"""Gets the agent_status of this WtpProtectHostResponseInfo.
 
         Agent状态   - not_installed : agent未安装   - online : agent在线   - offline : agent不在线
 
@@ -460,7 +590,7 @@ class WtpProtectHostResponseInfo:
 
     @agent_status.setter
     def agent_status(self, agent_status):
-        """Sets the agent_status of this WtpProtectHostResponseInfo.
+        r"""Sets the agent_status of this WtpProtectHostResponseInfo.
 
         Agent状态   - not_installed : agent未安装   - online : agent在线   - offline : agent不在线
 
@@ -468,6 +598,46 @@ class WtpProtectHostResponseInfo:
         :type agent_status: str
         """
         self._agent_status = agent_status
+
+    @property
+    def protect_dir_num(self):
+        r"""Gets the protect_dir_num of this WtpProtectHostResponseInfo.
+
+        防护目录数
+
+        :return: The protect_dir_num of this WtpProtectHostResponseInfo.
+        :rtype: int
+        """
+        return self._protect_dir_num
+
+    @protect_dir_num.setter
+    def protect_dir_num(self, protect_dir_num):
+        r"""Sets the protect_dir_num of this WtpProtectHostResponseInfo.
+
+        防护目录数
+
+        :param protect_dir_num: The protect_dir_num of this WtpProtectHostResponseInfo.
+        :type protect_dir_num: int
+        """
+        self._protect_dir_num = protect_dir_num
+
+    @property
+    def remote_backbup_info(self):
+        r"""Gets the remote_backbup_info of this WtpProtectHostResponseInfo.
+
+        :return: The remote_backbup_info of this WtpProtectHostResponseInfo.
+        :rtype: :class:`huaweicloudsdkhss.v5.WtpRemoteBackupResponseInfo`
+        """
+        return self._remote_backbup_info
+
+    @remote_backbup_info.setter
+    def remote_backbup_info(self, remote_backbup_info):
+        r"""Sets the remote_backbup_info of this WtpProtectHostResponseInfo.
+
+        :param remote_backbup_info: The remote_backbup_info of this WtpProtectHostResponseInfo.
+        :type remote_backbup_info: :class:`huaweicloudsdkhss.v5.WtpRemoteBackupResponseInfo`
+        """
+        self._remote_backbup_info = remote_backbup_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -95,7 +95,7 @@ class TaskInfo:
     }
 
     def __init__(self, task_id=None, name=None, project_id=None, project_name=None, deploy_system=None, create_time=None, update_time=None, state=None, execution_time=None, description=None, is_defaut_permission=None, template_id=None, owner=None, nick_name=None, owner_id=None, tenant_id=None, tenant_name=None, slave_cluster_id=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, can_disable=None, app_component_list=None, role_id=None, id=None, release_id=None, is_disable=None, duration=None, execution_state=None, executor_id=None, executor_nick_name=None, steps=None):
-        """TaskInfo
+        r"""TaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -288,7 +288,7 @@ class TaskInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskInfo.
+        r"""Gets the task_id of this TaskInfo.
 
         部署任务id
 
@@ -299,7 +299,7 @@ class TaskInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskInfo.
+        r"""Sets the task_id of this TaskInfo.
 
         部署任务id
 
@@ -310,7 +310,7 @@ class TaskInfo:
 
     @property
     def name(self):
-        """Gets the name of this TaskInfo.
+        r"""Gets the name of this TaskInfo.
 
         应用名称
 
@@ -321,7 +321,7 @@ class TaskInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TaskInfo.
+        r"""Sets the name of this TaskInfo.
 
         应用名称
 
@@ -332,7 +332,7 @@ class TaskInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TaskInfo.
+        r"""Gets the project_id of this TaskInfo.
 
         项目id
 
@@ -343,7 +343,7 @@ class TaskInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TaskInfo.
+        r"""Sets the project_id of this TaskInfo.
 
         项目id
 
@@ -354,7 +354,7 @@ class TaskInfo:
 
     @property
     def project_name(self):
-        """Gets the project_name of this TaskInfo.
+        r"""Gets the project_name of this TaskInfo.
 
         项目名称
 
@@ -365,7 +365,7 @@ class TaskInfo:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this TaskInfo.
+        r"""Sets the project_name of this TaskInfo.
 
         项目名称
 
@@ -376,7 +376,7 @@ class TaskInfo:
 
     @property
     def deploy_system(self):
-        """Gets the deploy_system of this TaskInfo.
+        r"""Gets the deploy_system of this TaskInfo.
 
         部署类型模式，包括deployTemplate，ansible，shell
 
@@ -387,7 +387,7 @@ class TaskInfo:
 
     @deploy_system.setter
     def deploy_system(self, deploy_system):
-        """Sets the deploy_system of this TaskInfo.
+        r"""Sets the deploy_system of this TaskInfo.
 
         部署类型模式，包括deployTemplate，ansible，shell
 
@@ -398,7 +398,7 @@ class TaskInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TaskInfo.
+        r"""Gets the create_time of this TaskInfo.
 
         创建时间
 
@@ -409,7 +409,7 @@ class TaskInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TaskInfo.
+        r"""Sets the create_time of this TaskInfo.
 
         创建时间
 
@@ -420,7 +420,7 @@ class TaskInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TaskInfo.
+        r"""Gets the update_time of this TaskInfo.
 
         修改时间
 
@@ -431,7 +431,7 @@ class TaskInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TaskInfo.
+        r"""Sets the update_time of this TaskInfo.
 
         修改时间
 
@@ -442,7 +442,7 @@ class TaskInfo:
 
     @property
     def state(self):
-        """Gets the state of this TaskInfo.
+        r"""Gets the state of this TaskInfo.
 
         应用状态，Draft表示草稿状态，Available表示可用状态
 
@@ -453,7 +453,7 @@ class TaskInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this TaskInfo.
+        r"""Sets the state of this TaskInfo.
 
         应用状态，Draft表示草稿状态，Available表示可用状态
 
@@ -464,7 +464,7 @@ class TaskInfo:
 
     @property
     def execution_time(self):
-        """Gets the execution_time of this TaskInfo.
+        r"""Gets the execution_time of this TaskInfo.
 
         最后一次部署时间
 
@@ -475,7 +475,7 @@ class TaskInfo:
 
     @execution_time.setter
     def execution_time(self, execution_time):
-        """Sets the execution_time of this TaskInfo.
+        r"""Sets the execution_time of this TaskInfo.
 
         最后一次部署时间
 
@@ -486,7 +486,7 @@ class TaskInfo:
 
     @property
     def description(self):
-        """Gets the description of this TaskInfo.
+        r"""Gets the description of this TaskInfo.
 
         描述
 
@@ -497,7 +497,7 @@ class TaskInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TaskInfo.
+        r"""Sets the description of this TaskInfo.
 
         描述
 
@@ -508,7 +508,7 @@ class TaskInfo:
 
     @property
     def is_defaut_permission(self):
-        """Gets the is_defaut_permission of this TaskInfo.
+        r"""Gets the is_defaut_permission of this TaskInfo.
 
         是否使用默认权限矩阵
 
@@ -519,7 +519,7 @@ class TaskInfo:
 
     @is_defaut_permission.setter
     def is_defaut_permission(self, is_defaut_permission):
-        """Sets the is_defaut_permission of this TaskInfo.
+        r"""Sets the is_defaut_permission of this TaskInfo.
 
         是否使用默认权限矩阵
 
@@ -530,7 +530,7 @@ class TaskInfo:
 
     @property
     def template_id(self):
-        """Gets the template_id of this TaskInfo.
+        r"""Gets the template_id of this TaskInfo.
 
         模板id
 
@@ -541,7 +541,7 @@ class TaskInfo:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this TaskInfo.
+        r"""Sets the template_id of this TaskInfo.
 
         模板id
 
@@ -552,7 +552,7 @@ class TaskInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this TaskInfo.
+        r"""Gets the owner of this TaskInfo.
 
         应用创建者用户名
 
@@ -563,7 +563,7 @@ class TaskInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TaskInfo.
+        r"""Sets the owner of this TaskInfo.
 
         应用创建者用户名
 
@@ -574,7 +574,7 @@ class TaskInfo:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this TaskInfo.
+        r"""Gets the nick_name of this TaskInfo.
 
         应用创建者昵称
 
@@ -585,7 +585,7 @@ class TaskInfo:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this TaskInfo.
+        r"""Sets the nick_name of this TaskInfo.
 
         应用创建者昵称
 
@@ -596,7 +596,7 @@ class TaskInfo:
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this TaskInfo.
+        r"""Gets the owner_id of this TaskInfo.
 
         应用创建者用户id
 
@@ -607,7 +607,7 @@ class TaskInfo:
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this TaskInfo.
+        r"""Sets the owner_id of this TaskInfo.
 
         应用创建者用户id
 
@@ -618,7 +618,7 @@ class TaskInfo:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this TaskInfo.
+        r"""Gets the tenant_id of this TaskInfo.
 
         应用创建者租户id
 
@@ -629,7 +629,7 @@ class TaskInfo:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this TaskInfo.
+        r"""Sets the tenant_id of this TaskInfo.
 
         应用创建者租户id
 
@@ -640,7 +640,7 @@ class TaskInfo:
 
     @property
     def tenant_name(self):
-        """Gets the tenant_name of this TaskInfo.
+        r"""Gets the tenant_name of this TaskInfo.
 
         应用创建者租户名
 
@@ -651,7 +651,7 @@ class TaskInfo:
 
     @tenant_name.setter
     def tenant_name(self, tenant_name):
-        """Sets the tenant_name of this TaskInfo.
+        r"""Sets the tenant_name of this TaskInfo.
 
         应用创建者租户名
 
@@ -662,7 +662,7 @@ class TaskInfo:
 
     @property
     def slave_cluster_id(self):
-        """Gets the slave_cluster_id of this TaskInfo.
+        r"""Gets the slave_cluster_id of this TaskInfo.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -673,7 +673,7 @@ class TaskInfo:
 
     @slave_cluster_id.setter
     def slave_cluster_id(self, slave_cluster_id):
-        """Sets the slave_cluster_id of this TaskInfo.
+        r"""Sets the slave_cluster_id of this TaskInfo.
 
         slave集群id，默认为null时使用默认slave集群，用户自定义slave时为slave集群id
 
@@ -684,7 +684,7 @@ class TaskInfo:
 
     @property
     def is_care(self):
-        """Gets the is_care of this TaskInfo.
+        r"""Gets the is_care of this TaskInfo.
 
         当前用户是否已收藏
 
@@ -695,7 +695,7 @@ class TaskInfo:
 
     @is_care.setter
     def is_care(self, is_care):
-        """Sets the is_care of this TaskInfo.
+        r"""Sets the is_care of this TaskInfo.
 
         当前用户是否已收藏
 
@@ -706,7 +706,7 @@ class TaskInfo:
 
     @property
     def can_modify(self):
-        """Gets the can_modify of this TaskInfo.
+        r"""Gets the can_modify of this TaskInfo.
 
         是否有编辑权限
 
@@ -717,7 +717,7 @@ class TaskInfo:
 
     @can_modify.setter
     def can_modify(self, can_modify):
-        """Sets the can_modify of this TaskInfo.
+        r"""Sets the can_modify of this TaskInfo.
 
         是否有编辑权限
 
@@ -728,7 +728,7 @@ class TaskInfo:
 
     @property
     def can_delete(self):
-        """Gets the can_delete of this TaskInfo.
+        r"""Gets the can_delete of this TaskInfo.
 
         是否有删除的权限
 
@@ -739,7 +739,7 @@ class TaskInfo:
 
     @can_delete.setter
     def can_delete(self, can_delete):
-        """Sets the can_delete of this TaskInfo.
+        r"""Sets the can_delete of this TaskInfo.
 
         是否有删除的权限
 
@@ -750,7 +750,7 @@ class TaskInfo:
 
     @property
     def can_view(self):
-        """Gets the can_view of this TaskInfo.
+        r"""Gets the can_view of this TaskInfo.
 
         是否有查看权限
 
@@ -761,7 +761,7 @@ class TaskInfo:
 
     @can_view.setter
     def can_view(self, can_view):
-        """Sets the can_view of this TaskInfo.
+        r"""Sets the can_view of this TaskInfo.
 
         是否有查看权限
 
@@ -772,7 +772,7 @@ class TaskInfo:
 
     @property
     def can_execute(self):
-        """Gets the can_execute of this TaskInfo.
+        r"""Gets the can_execute of this TaskInfo.
 
         是否有部署权限
 
@@ -783,7 +783,7 @@ class TaskInfo:
 
     @can_execute.setter
     def can_execute(self, can_execute):
-        """Sets the can_execute of this TaskInfo.
+        r"""Sets the can_execute of this TaskInfo.
 
         是否有部署权限
 
@@ -794,7 +794,7 @@ class TaskInfo:
 
     @property
     def can_copy(self):
-        """Gets the can_copy of this TaskInfo.
+        r"""Gets the can_copy of this TaskInfo.
 
         是否有复制权限
 
@@ -805,7 +805,7 @@ class TaskInfo:
 
     @can_copy.setter
     def can_copy(self, can_copy):
-        """Sets the can_copy of this TaskInfo.
+        r"""Sets the can_copy of this TaskInfo.
 
         是否有复制权限
 
@@ -816,7 +816,7 @@ class TaskInfo:
 
     @property
     def can_manage(self):
-        """Gets the can_manage of this TaskInfo.
+        r"""Gets the can_manage of this TaskInfo.
 
         是否有编辑应用权限矩阵的权限
 
@@ -827,7 +827,7 @@ class TaskInfo:
 
     @can_manage.setter
     def can_manage(self, can_manage):
-        """Sets the can_manage of this TaskInfo.
+        r"""Sets the can_manage of this TaskInfo.
 
         是否有编辑应用权限矩阵的权限
 
@@ -838,7 +838,7 @@ class TaskInfo:
 
     @property
     def can_disable(self):
-        """Gets the can_disable of this TaskInfo.
+        r"""Gets the can_disable of this TaskInfo.
 
         是否有禁用应用的权限
 
@@ -849,7 +849,7 @@ class TaskInfo:
 
     @can_disable.setter
     def can_disable(self, can_disable):
-        """Sets the can_disable of this TaskInfo.
+        r"""Sets the can_disable of this TaskInfo.
 
         是否有禁用应用的权限
 
@@ -860,7 +860,7 @@ class TaskInfo:
 
     @property
     def app_component_list(self):
-        """Gets the app_component_list of this TaskInfo.
+        r"""Gets the app_component_list of this TaskInfo.
 
         应用和AOM应用组件对应关系
 
@@ -871,7 +871,7 @@ class TaskInfo:
 
     @app_component_list.setter
     def app_component_list(self, app_component_list):
-        """Sets the app_component_list of this TaskInfo.
+        r"""Sets the app_component_list of this TaskInfo.
 
         应用和AOM应用组件对应关系
 
@@ -882,7 +882,7 @@ class TaskInfo:
 
     @property
     def role_id(self):
-        """Gets the role_id of this TaskInfo.
+        r"""Gets the role_id of this TaskInfo.
 
         角色id,0：应用创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
 
@@ -893,7 +893,7 @@ class TaskInfo:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this TaskInfo.
+        r"""Sets the role_id of this TaskInfo.
 
         角色id,0：应用创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
 
@@ -904,7 +904,7 @@ class TaskInfo:
 
     @property
     def id(self):
-        """Gets the id of this TaskInfo.
+        r"""Gets the id of this TaskInfo.
 
         部署任务id
 
@@ -915,7 +915,7 @@ class TaskInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TaskInfo.
+        r"""Sets the id of this TaskInfo.
 
         部署任务id
 
@@ -926,7 +926,7 @@ class TaskInfo:
 
     @property
     def release_id(self):
-        """Gets the release_id of this TaskInfo.
+        r"""Gets the release_id of this TaskInfo.
 
         部署记录序列号
 
@@ -937,7 +937,7 @@ class TaskInfo:
 
     @release_id.setter
     def release_id(self, release_id):
-        """Sets the release_id of this TaskInfo.
+        r"""Sets the release_id of this TaskInfo.
 
         部署记录序列号
 
@@ -948,7 +948,7 @@ class TaskInfo:
 
     @property
     def is_disable(self):
-        """Gets the is_disable of this TaskInfo.
+        r"""Gets the is_disable of this TaskInfo.
 
         当前应用是否被禁用
 
@@ -959,7 +959,7 @@ class TaskInfo:
 
     @is_disable.setter
     def is_disable(self, is_disable):
-        """Sets the is_disable of this TaskInfo.
+        r"""Sets the is_disable of this TaskInfo.
 
         当前应用是否被禁用
 
@@ -970,7 +970,7 @@ class TaskInfo:
 
     @property
     def duration(self):
-        """Gets the duration of this TaskInfo.
+        r"""Gets the duration of this TaskInfo.
 
         部署时间
 
@@ -981,7 +981,7 @@ class TaskInfo:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this TaskInfo.
+        r"""Sets the duration of this TaskInfo.
 
         部署时间
 
@@ -992,7 +992,7 @@ class TaskInfo:
 
     @property
     def execution_state(self):
-        """Gets the execution_state of this TaskInfo.
+        r"""Gets the execution_state of this TaskInfo.
 
         部署状态
 
@@ -1003,7 +1003,7 @@ class TaskInfo:
 
     @execution_state.setter
     def execution_state(self, execution_state):
-        """Sets the execution_state of this TaskInfo.
+        r"""Sets the execution_state of this TaskInfo.
 
         部署状态
 
@@ -1014,7 +1014,7 @@ class TaskInfo:
 
     @property
     def executor_id(self):
-        """Gets the executor_id of this TaskInfo.
+        r"""Gets the executor_id of this TaskInfo.
 
         部署者id
 
@@ -1025,7 +1025,7 @@ class TaskInfo:
 
     @executor_id.setter
     def executor_id(self, executor_id):
-        """Sets the executor_id of this TaskInfo.
+        r"""Sets the executor_id of this TaskInfo.
 
         部署者id
 
@@ -1036,7 +1036,7 @@ class TaskInfo:
 
     @property
     def executor_nick_name(self):
-        """Gets the executor_nick_name of this TaskInfo.
+        r"""Gets the executor_nick_name of this TaskInfo.
 
         部署者名称
 
@@ -1047,7 +1047,7 @@ class TaskInfo:
 
     @executor_nick_name.setter
     def executor_nick_name(self, executor_nick_name):
-        """Sets the executor_nick_name of this TaskInfo.
+        r"""Sets the executor_nick_name of this TaskInfo.
 
         部署者名称
 
@@ -1058,7 +1058,7 @@ class TaskInfo:
 
     @property
     def steps(self):
-        """Gets the steps of this TaskInfo.
+        r"""Gets the steps of this TaskInfo.
 
         部署步骤
 
@@ -1069,7 +1069,7 @@ class TaskInfo:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this TaskInfo.
+        r"""Sets the steps of this TaskInfo.
 
         部署步骤
 

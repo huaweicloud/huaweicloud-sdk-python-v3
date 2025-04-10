@@ -43,7 +43,7 @@ class PermissionSetCreateDTO:
     }
 
     def __init__(self, name=None, parent_id=None, description=None, type=None, managed_cluster_id=None, managed_cluster_name=None, managed_role_name=None, manager_id=None, manager_name=None, manager_type=None):
-        """PermissionSetCreateDTO
+        r"""PermissionSetCreateDTO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class PermissionSetCreateDTO:
 
     @property
     def name(self):
-        """Gets the name of this PermissionSetCreateDTO.
+        r"""Gets the name of this PermissionSetCreateDTO.
 
         名称
 
@@ -117,7 +117,7 @@ class PermissionSetCreateDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PermissionSetCreateDTO.
+        r"""Sets the name of this PermissionSetCreateDTO.
 
         名称
 
@@ -128,7 +128,7 @@ class PermissionSetCreateDTO:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this PermissionSetCreateDTO.
+        r"""Gets the parent_id of this PermissionSetCreateDTO.
 
         父权限集id
 
@@ -139,7 +139,7 @@ class PermissionSetCreateDTO:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this PermissionSetCreateDTO.
+        r"""Sets the parent_id of this PermissionSetCreateDTO.
 
         父权限集id
 
@@ -150,7 +150,7 @@ class PermissionSetCreateDTO:
 
     @property
     def description(self):
-        """Gets the description of this PermissionSetCreateDTO.
+        r"""Gets the description of this PermissionSetCreateDTO.
 
         描述
 
@@ -161,7 +161,7 @@ class PermissionSetCreateDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PermissionSetCreateDTO.
+        r"""Sets the description of this PermissionSetCreateDTO.
 
         描述
 
@@ -172,7 +172,7 @@ class PermissionSetCreateDTO:
 
     @property
     def type(self):
-        """Gets the type of this PermissionSetCreateDTO.
+        r"""Gets the type of this PermissionSetCreateDTO.
 
         权限集类型, COMMON, MRS_MANAGED
 
@@ -183,7 +183,7 @@ class PermissionSetCreateDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PermissionSetCreateDTO.
+        r"""Sets the type of this PermissionSetCreateDTO.
 
         权限集类型, COMMON, MRS_MANAGED
 
@@ -194,7 +194,7 @@ class PermissionSetCreateDTO:
 
     @property
     def managed_cluster_id(self):
-        """Gets the managed_cluster_id of this PermissionSetCreateDTO.
+        r"""Gets the managed_cluster_id of this PermissionSetCreateDTO.
 
         纳管角色所在集群id（仅纳管类权限集需要）
 
@@ -205,7 +205,7 @@ class PermissionSetCreateDTO:
 
     @managed_cluster_id.setter
     def managed_cluster_id(self, managed_cluster_id):
-        """Sets the managed_cluster_id of this PermissionSetCreateDTO.
+        r"""Sets the managed_cluster_id of this PermissionSetCreateDTO.
 
         纳管角色所在集群id（仅纳管类权限集需要）
 
@@ -216,7 +216,7 @@ class PermissionSetCreateDTO:
 
     @property
     def managed_cluster_name(self):
-        """Gets the managed_cluster_name of this PermissionSetCreateDTO.
+        r"""Gets the managed_cluster_name of this PermissionSetCreateDTO.
 
         纳管角色所在集群名称（仅纳管类权限集需要）
 
@@ -227,7 +227,7 @@ class PermissionSetCreateDTO:
 
     @managed_cluster_name.setter
     def managed_cluster_name(self, managed_cluster_name):
-        """Sets the managed_cluster_name of this PermissionSetCreateDTO.
+        r"""Sets the managed_cluster_name of this PermissionSetCreateDTO.
 
         纳管角色所在集群名称（仅纳管类权限集需要）
 
@@ -238,7 +238,7 @@ class PermissionSetCreateDTO:
 
     @property
     def managed_role_name(self):
-        """Gets the managed_role_name of this PermissionSetCreateDTO.
+        r"""Gets the managed_role_name of this PermissionSetCreateDTO.
 
         纳管角色名称（仅纳管类权限集需要）
 
@@ -249,7 +249,7 @@ class PermissionSetCreateDTO:
 
     @managed_role_name.setter
     def managed_role_name(self, managed_role_name):
-        """Sets the managed_role_name of this PermissionSetCreateDTO.
+        r"""Sets the managed_role_name of this PermissionSetCreateDTO.
 
         纳管角色名称（仅纳管类权限集需要）
 
@@ -260,7 +260,7 @@ class PermissionSetCreateDTO:
 
     @property
     def manager_id(self):
-        """Gets the manager_id of this PermissionSetCreateDTO.
+        r"""Gets the manager_id of this PermissionSetCreateDTO.
 
         管理员id
 
@@ -271,7 +271,7 @@ class PermissionSetCreateDTO:
 
     @manager_id.setter
     def manager_id(self, manager_id):
-        """Sets the manager_id of this PermissionSetCreateDTO.
+        r"""Sets the manager_id of this PermissionSetCreateDTO.
 
         管理员id
 
@@ -282,7 +282,7 @@ class PermissionSetCreateDTO:
 
     @property
     def manager_name(self):
-        """Gets the manager_name of this PermissionSetCreateDTO.
+        r"""Gets the manager_name of this PermissionSetCreateDTO.
 
         管理员名称
 
@@ -293,7 +293,7 @@ class PermissionSetCreateDTO:
 
     @manager_name.setter
     def manager_name(self, manager_name):
-        """Sets the manager_name of this PermissionSetCreateDTO.
+        r"""Sets the manager_name of this PermissionSetCreateDTO.
 
         管理员名称
 
@@ -304,7 +304,7 @@ class PermissionSetCreateDTO:
 
     @property
     def manager_type(self):
-        """Gets the manager_type of this PermissionSetCreateDTO.
+        r"""Gets the manager_type of this PermissionSetCreateDTO.
 
         管理员类型, 用户/用户组, USER, USER_GROUP
 
@@ -315,7 +315,7 @@ class PermissionSetCreateDTO:
 
     @manager_type.setter
     def manager_type(self, manager_type):
-        """Sets the manager_type of this PermissionSetCreateDTO.
+        r"""Sets the manager_type of this PermissionSetCreateDTO.
 
         管理员类型, 用户/用户组, USER, USER_GROUP
 

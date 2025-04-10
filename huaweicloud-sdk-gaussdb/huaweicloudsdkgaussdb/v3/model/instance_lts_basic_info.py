@@ -39,7 +39,7 @@ class InstanceLtsBasicInfo:
     }
 
     def __init__(self, id=None, name=None, mode=None, engine_name=None, engine_version=None, status=None, enterprise_project_id=None, enterprise_project_name=None):
-        """InstanceLtsBasicInfo
+        r"""InstanceLtsBasicInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class InstanceLtsBasicInfo:
 
     @property
     def id(self):
-        """Gets the id of this InstanceLtsBasicInfo.
+        r"""Gets the id of this InstanceLtsBasicInfo.
 
         实例ID。
 
@@ -103,7 +103,7 @@ class InstanceLtsBasicInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstanceLtsBasicInfo.
+        r"""Sets the id of this InstanceLtsBasicInfo.
 
         实例ID。
 
@@ -114,7 +114,7 @@ class InstanceLtsBasicInfo:
 
     @property
     def name(self):
-        """Gets the name of this InstanceLtsBasicInfo.
+        r"""Gets the name of this InstanceLtsBasicInfo.
 
         实例名称。
 
@@ -125,7 +125,7 @@ class InstanceLtsBasicInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceLtsBasicInfo.
+        r"""Sets the name of this InstanceLtsBasicInfo.
 
         实例名称。
 
@@ -136,7 +136,7 @@ class InstanceLtsBasicInfo:
 
     @property
     def mode(self):
-        """Gets the mode of this InstanceLtsBasicInfo.
+        r"""Gets the mode of this InstanceLtsBasicInfo.
 
         实例类型。
 
@@ -147,7 +147,7 @@ class InstanceLtsBasicInfo:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this InstanceLtsBasicInfo.
+        r"""Sets the mode of this InstanceLtsBasicInfo.
 
         实例类型。
 
@@ -158,7 +158,7 @@ class InstanceLtsBasicInfo:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this InstanceLtsBasicInfo.
+        r"""Gets the engine_name of this InstanceLtsBasicInfo.
 
         引擎名称。
 
@@ -169,7 +169,7 @@ class InstanceLtsBasicInfo:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this InstanceLtsBasicInfo.
+        r"""Sets the engine_name of this InstanceLtsBasicInfo.
 
         引擎名称。
 
@@ -180,7 +180,7 @@ class InstanceLtsBasicInfo:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this InstanceLtsBasicInfo.
+        r"""Gets the engine_version of this InstanceLtsBasicInfo.
 
         引擎版本。
 
@@ -191,7 +191,7 @@ class InstanceLtsBasicInfo:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this InstanceLtsBasicInfo.
+        r"""Sets the engine_version of this InstanceLtsBasicInfo.
 
         引擎版本。
 
@@ -202,7 +202,7 @@ class InstanceLtsBasicInfo:
 
     @property
     def status(self):
-        """Gets the status of this InstanceLtsBasicInfo.
+        r"""Gets the status of this InstanceLtsBasicInfo.
 
         状态。
 
@@ -213,7 +213,7 @@ class InstanceLtsBasicInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceLtsBasicInfo.
+        r"""Sets the status of this InstanceLtsBasicInfo.
 
         状态。
 
@@ -224,7 +224,7 @@ class InstanceLtsBasicInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this InstanceLtsBasicInfo.
+        r"""Gets the enterprise_project_id of this InstanceLtsBasicInfo.
 
         企业项目ID。
 
@@ -235,7 +235,7 @@ class InstanceLtsBasicInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this InstanceLtsBasicInfo.
+        r"""Sets the enterprise_project_id of this InstanceLtsBasicInfo.
 
         企业项目ID。
 
@@ -246,7 +246,7 @@ class InstanceLtsBasicInfo:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this InstanceLtsBasicInfo.
+        r"""Gets the enterprise_project_name of this InstanceLtsBasicInfo.
 
         企业项目名称。
 
@@ -257,7 +257,7 @@ class InstanceLtsBasicInfo:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this InstanceLtsBasicInfo.
+        r"""Sets the enterprise_project_name of this InstanceLtsBasicInfo.
 
         企业项目名称。
 

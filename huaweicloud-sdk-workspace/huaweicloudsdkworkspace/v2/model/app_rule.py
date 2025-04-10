@@ -37,7 +37,7 @@ class AppRule:
     }
 
     def __init__(self, id=None, name=None, description=None, rule=None, rule_source=None, create_time=None, update_time=None):
-        """AppRule
+        r"""AppRule
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AppRule:
 
     @property
     def id(self):
-        """Gets the id of this AppRule.
+        r"""Gets the id of this AppRule.
 
         规则ID。
 
@@ -96,7 +96,7 @@ class AppRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppRule.
+        r"""Sets the id of this AppRule.
 
         规则ID。
 
@@ -107,7 +107,7 @@ class AppRule:
 
     @property
     def name(self):
-        """Gets the name of this AppRule.
+        r"""Gets the name of this AppRule.
 
         规则名称。
 
@@ -118,7 +118,7 @@ class AppRule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppRule.
+        r"""Sets the name of this AppRule.
 
         规则名称。
 
@@ -129,7 +129,7 @@ class AppRule:
 
     @property
     def description(self):
-        """Gets the description of this AppRule.
+        r"""Gets the description of this AppRule.
 
         规则描述。
 
@@ -140,7 +140,7 @@ class AppRule:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppRule.
+        r"""Sets the description of this AppRule.
 
         规则描述。
 
@@ -151,7 +151,7 @@ class AppRule:
 
     @property
     def rule(self):
-        """Gets the rule of this AppRule.
+        r"""Gets the rule of this AppRule.
 
         :return: The rule of this AppRule.
         :rtype: :class:`huaweicloudsdkworkspace.v2.Rule`
@@ -160,7 +160,7 @@ class AppRule:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this AppRule.
+        r"""Sets the rule of this AppRule.
 
         :param rule: The rule of this AppRule.
         :type rule: :class:`huaweicloudsdkworkspace.v2.Rule`
@@ -169,7 +169,7 @@ class AppRule:
 
     @property
     def rule_source(self):
-        """Gets the rule_source of this AppRule.
+        r"""Gets the rule_source of this AppRule.
 
         规则来源。
 
@@ -180,7 +180,7 @@ class AppRule:
 
     @rule_source.setter
     def rule_source(self, rule_source):
-        """Sets the rule_source of this AppRule.
+        r"""Sets the rule_source of this AppRule.
 
         规则来源。
 
@@ -191,7 +191,7 @@ class AppRule:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AppRule.
+        r"""Gets the create_time of this AppRule.
 
         创建时间。
 
@@ -202,7 +202,7 @@ class AppRule:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AppRule.
+        r"""Sets the create_time of this AppRule.
 
         创建时间。
 
@@ -213,7 +213,7 @@ class AppRule:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppRule.
+        r"""Gets the update_time of this AppRule.
 
         更新时间。
 
@@ -224,7 +224,7 @@ class AppRule:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppRule.
+        r"""Sets the update_time of this AppRule.
 
         更新时间。
 

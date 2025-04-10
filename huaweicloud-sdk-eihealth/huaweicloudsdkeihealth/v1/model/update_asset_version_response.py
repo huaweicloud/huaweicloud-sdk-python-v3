@@ -24,7 +24,7 @@ class UpdateAssetVersionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateAssetVersionResponse
+        r"""UpdateAssetVersionResponse
 
         The model defined in huaweicloud sdk
 

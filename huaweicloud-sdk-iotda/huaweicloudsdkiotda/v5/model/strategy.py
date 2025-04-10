@@ -27,7 +27,7 @@ class Strategy:
     }
 
     def __init__(self, trigger=None, event_valid_time=None):
-        """Strategy
+        r"""Strategy
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Strategy:
 
     @property
     def trigger(self):
-        """Gets the trigger of this Strategy.
+        r"""Gets the trigger of this Strategy.
 
         **参数说明**：规则条件触发的判断策略，默认为pulse。 **取值范围**： - pulse：设备上报的数据满足条件则触发，不判断上一次上报的数据。 - reverse：设备上一次上报的数据不满足条件，本次上报的数据满足条件则触发。
 
@@ -61,7 +61,7 @@ class Strategy:
 
     @trigger.setter
     def trigger(self, trigger):
-        """Sets the trigger of this Strategy.
+        r"""Sets the trigger of this Strategy.
 
         **参数说明**：规则条件触发的判断策略，默认为pulse。 **取值范围**： - pulse：设备上报的数据满足条件则触发，不判断上一次上报的数据。 - reverse：设备上一次上报的数据不满足条件，本次上报的数据满足条件则触发。
 
@@ -72,7 +72,7 @@ class Strategy:
 
     @property
     def event_valid_time(self):
-        """Gets the event_valid_time of this Strategy.
+        r"""Gets the event_valid_time of this Strategy.
 
         **参数说明**：设备数据的有效时间，单位为秒，设备数据的产生时间以上报数据中的eventTime为基准。
 
@@ -83,7 +83,7 @@ class Strategy:
 
     @event_valid_time.setter
     def event_valid_time(self, event_valid_time):
-        """Sets the event_valid_time of this Strategy.
+        r"""Sets the event_valid_time of this Strategy.
 
         **参数说明**：设备数据的有效时间，单位为秒，设备数据的产生时间以上报数据中的eventTime为基准。
 

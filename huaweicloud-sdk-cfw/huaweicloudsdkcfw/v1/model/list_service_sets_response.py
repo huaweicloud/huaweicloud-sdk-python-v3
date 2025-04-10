@@ -26,7 +26,7 @@ class ListServiceSetsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListServiceSetsResponse
+        r"""ListServiceSetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListServiceSetsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListServiceSetsResponse.
+        r"""Gets the data of this ListServiceSetsResponse.
 
         :return: The data of this ListServiceSetsResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.ServiceSetRecords`
@@ -53,7 +53,7 @@ class ListServiceSetsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListServiceSetsResponse.
+        r"""Sets the data of this ListServiceSetsResponse.
 
         :param data: The data of this ListServiceSetsResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.ServiceSetRecords`

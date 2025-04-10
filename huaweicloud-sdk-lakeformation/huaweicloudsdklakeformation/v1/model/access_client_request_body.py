@@ -33,7 +33,7 @@ class AccessClientRequestBody:
     }
 
     def __init__(self, name=None, access_mode=None, vpc_id=None, subnet_id=None, access_connections=None):
-        """AccessClientRequestBody
+        r"""AccessClientRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class AccessClientRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this AccessClientRequestBody.
+        r"""Gets the name of this AccessClientRequestBody.
 
         客户端名称
 
@@ -81,7 +81,7 @@ class AccessClientRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AccessClientRequestBody.
+        r"""Sets the name of this AccessClientRequestBody.
 
         客户端名称
 
@@ -92,7 +92,7 @@ class AccessClientRequestBody:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this AccessClientRequestBody.
+        r"""Gets the access_mode of this AccessClientRequestBody.
 
         接入模式， SYSTEM：系统默认模式，由系统自动创建vpcep连接，也是推荐方式。该模式下vpc_id、subnet_id必填。 CUSTOM：定制模式，由外部服务自行创建vpcep连接，适用于跨租户场景等。该模式下access_connection必填。
 
@@ -103,7 +103,7 @@ class AccessClientRequestBody:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this AccessClientRequestBody.
+        r"""Sets the access_mode of this AccessClientRequestBody.
 
         接入模式， SYSTEM：系统默认模式，由系统自动创建vpcep连接，也是推荐方式。该模式下vpc_id、subnet_id必填。 CUSTOM：定制模式，由外部服务自行创建vpcep连接，适用于跨租户场景等。该模式下access_connection必填。
 
@@ -114,7 +114,7 @@ class AccessClientRequestBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this AccessClientRequestBody.
+        r"""Gets the vpc_id of this AccessClientRequestBody.
 
         VPC ID
 
@@ -125,7 +125,7 @@ class AccessClientRequestBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this AccessClientRequestBody.
+        r"""Sets the vpc_id of this AccessClientRequestBody.
 
         VPC ID
 
@@ -136,7 +136,7 @@ class AccessClientRequestBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this AccessClientRequestBody.
+        r"""Gets the subnet_id of this AccessClientRequestBody.
 
         子网ID
 
@@ -147,7 +147,7 @@ class AccessClientRequestBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this AccessClientRequestBody.
+        r"""Sets the subnet_id of this AccessClientRequestBody.
 
         子网ID
 
@@ -158,7 +158,7 @@ class AccessClientRequestBody:
 
     @property
     def access_connections(self):
-        """Gets the access_connections of this AccessClientRequestBody.
+        r"""Gets the access_connections of this AccessClientRequestBody.
 
         接入连接列表
 
@@ -169,7 +169,7 @@ class AccessClientRequestBody:
 
     @access_connections.setter
     def access_connections(self, access_connections):
-        """Sets the access_connections of this AccessClientRequestBody.
+        r"""Sets the access_connections of this AccessClientRequestBody.
 
         接入连接列表
 

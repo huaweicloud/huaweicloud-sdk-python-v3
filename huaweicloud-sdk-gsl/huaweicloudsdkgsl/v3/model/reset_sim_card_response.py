@@ -26,7 +26,7 @@ class ResetSimCardResponse(SdkResponse):
     }
 
     def __init__(self, work_order_id=None):
-        """ResetSimCardResponse
+        r"""ResetSimCardResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ResetSimCardResponse(SdkResponse):
 
     @property
     def work_order_id(self):
-        """Gets the work_order_id of this ResetSimCardResponse.
+        r"""Gets the work_order_id of this ResetSimCardResponse.
 
         业务受理单号
 
@@ -55,7 +55,7 @@ class ResetSimCardResponse(SdkResponse):
 
     @work_order_id.setter
     def work_order_id(self, work_order_id):
-        """Sets the work_order_id of this ResetSimCardResponse.
+        r"""Sets the work_order_id of this ResetSimCardResponse.
 
         业务受理单号
 

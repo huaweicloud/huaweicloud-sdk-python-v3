@@ -35,7 +35,7 @@ class CreateDataLevelCompareReq:
     }
 
     def __init__(self, conflict_policy=None, compare_type=None, compare_mode=None, start_time=None, compare_object_infos=None, compare_object_infos_with_token=None):
-        """CreateDataLevelCompareReq
+        r"""CreateDataLevelCompareReq
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class CreateDataLevelCompareReq:
 
     @property
     def conflict_policy(self):
-        """Gets the conflict_policy of this CreateDataLevelCompareReq.
+        r"""Gets the conflict_policy of this CreateDataLevelCompareReq.
 
         一个任务只允许有一个未完成的数据级对比任务，该字段决定对未完成数据级对比任务的处理方式。cancel-取消后重新创建,keep-保持未完成的不再创建。
 
@@ -87,7 +87,7 @@ class CreateDataLevelCompareReq:
 
     @conflict_policy.setter
     def conflict_policy(self, conflict_policy):
-        """Sets the conflict_policy of this CreateDataLevelCompareReq.
+        r"""Sets the conflict_policy of this CreateDataLevelCompareReq.
 
         一个任务只允许有一个未完成的数据级对比任务，该字段决定对未完成数据级对比任务的处理方式。cancel-取消后重新创建,keep-保持未完成的不再创建。
 
@@ -98,7 +98,7 @@ class CreateDataLevelCompareReq:
 
     @property
     def compare_type(self):
-        """Gets the compare_type of this CreateDataLevelCompareReq.
+        r"""Gets the compare_type of this CreateDataLevelCompareReq.
 
         数据级对比类型，lines-行对比,contents-内容对比。
 
@@ -109,7 +109,7 @@ class CreateDataLevelCompareReq:
 
     @compare_type.setter
     def compare_type(self, compare_type):
-        """Sets the compare_type of this CreateDataLevelCompareReq.
+        r"""Sets the compare_type of this CreateDataLevelCompareReq.
 
         数据级对比类型，lines-行对比,contents-内容对比。
 
@@ -120,7 +120,7 @@ class CreateDataLevelCompareReq:
 
     @property
     def compare_mode(self):
-        """Gets the compare_mode of this CreateDataLevelCompareReq.
+        r"""Gets the compare_mode of this CreateDataLevelCompareReq.
 
         数据级对比模式，取值为空时需要在compare_object_infos或者compare_object_infos_with_token传对象信息，quick_comparison-快速对比，需要加入该功能的白名单才能使用。
 
@@ -131,7 +131,7 @@ class CreateDataLevelCompareReq:
 
     @compare_mode.setter
     def compare_mode(self, compare_mode):
-        """Sets the compare_mode of this CreateDataLevelCompareReq.
+        r"""Sets the compare_mode of this CreateDataLevelCompareReq.
 
         数据级对比模式，取值为空时需要在compare_object_infos或者compare_object_infos_with_token传对象信息，quick_comparison-快速对比，需要加入该功能的白名单才能使用。
 
@@ -142,7 +142,7 @@ class CreateDataLevelCompareReq:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CreateDataLevelCompareReq.
+        r"""Gets the start_time of this CreateDataLevelCompareReq.
 
         对比任务启动时间，取值为空代表立即启动。
 
@@ -153,7 +153,7 @@ class CreateDataLevelCompareReq:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CreateDataLevelCompareReq.
+        r"""Sets the start_time of this CreateDataLevelCompareReq.
 
         对比任务启动时间，取值为空代表立即启动。
 
@@ -164,7 +164,7 @@ class CreateDataLevelCompareReq:
 
     @property
     def compare_object_infos(self):
-        """Gets the compare_object_infos of this CreateDataLevelCompareReq.
+        r"""Gets the compare_object_infos of this CreateDataLevelCompareReq.
 
         数据级对比的对象。非“快速对比”模式时，compare_object_infos和compare_object_infos_with_token根据链路二选一传值，不允许都为空。
 
@@ -175,7 +175,7 @@ class CreateDataLevelCompareReq:
 
     @compare_object_infos.setter
     def compare_object_infos(self, compare_object_infos):
-        """Sets the compare_object_infos of this CreateDataLevelCompareReq.
+        r"""Sets the compare_object_infos of this CreateDataLevelCompareReq.
 
         数据级对比的对象。非“快速对比”模式时，compare_object_infos和compare_object_infos_with_token根据链路二选一传值，不允许都为空。
 
@@ -186,7 +186,7 @@ class CreateDataLevelCompareReq:
 
     @property
     def compare_object_infos_with_token(self):
-        """Gets the compare_object_infos_with_token of this CreateDataLevelCompareReq.
+        r"""Gets the compare_object_infos_with_token of this CreateDataLevelCompareReq.
 
         数据级对比的对象（Cassandra灾备专用，带token信息）。非“快速对比”模式时，compare_object_infos和compare_object_infos_with_token根据链路二选一传值，不允许都为空。
 
@@ -197,7 +197,7 @@ class CreateDataLevelCompareReq:
 
     @compare_object_infos_with_token.setter
     def compare_object_infos_with_token(self, compare_object_infos_with_token):
-        """Sets the compare_object_infos_with_token of this CreateDataLevelCompareReq.
+        r"""Sets the compare_object_infos_with_token of this CreateDataLevelCompareReq.
 
         数据级对比的对象（Cassandra灾备专用，带token信息）。非“快速对比”模式时，compare_object_infos和compare_object_infos_with_token根据链路二选一传值，不允许都为空。
 

@@ -25,7 +25,7 @@ class ClusterConfigurationsSpec:
     }
 
     def __init__(self, packages=None):
-        """ClusterConfigurationsSpec
+        r"""ClusterConfigurationsSpec
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ClusterConfigurationsSpec:
 
     @property
     def packages(self):
-        """Gets the packages of this ClusterConfigurationsSpec.
+        r"""Gets the packages of this ClusterConfigurationsSpec.
 
         组件配置项列表
 
@@ -53,7 +53,7 @@ class ClusterConfigurationsSpec:
 
     @packages.setter
     def packages(self, packages):
-        """Sets the packages of this ClusterConfigurationsSpec.
+        r"""Sets the packages of this ClusterConfigurationsSpec.
 
         组件配置项列表
 

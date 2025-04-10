@@ -46,7 +46,7 @@ class ShowAzDetailsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, region_id=None, type=None, display_name=None, status=None, sold_out=None, product_ids=None, mode=None, alias=None, public_border_group=None, category=None):
-        """ShowAzDetailsResponse
+        r"""ShowAzDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowAzDetailsResponse.
+        r"""Gets the id of this ShowAzDetailsResponse.
 
         对应CMDB的region数据中的'zoneCode'字段。
 
@@ -125,7 +125,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAzDetailsResponse.
+        r"""Sets the id of this ShowAzDetailsResponse.
 
         对应CMDB的region数据中的'zoneCode'字段。
 
@@ -136,7 +136,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @property
     def region_id(self):
-        """Gets the region_id of this ShowAzDetailsResponse.
+        r"""Gets the region_id of this ShowAzDetailsResponse.
 
         对应CMDB的region数据中的'regionCode'字段。
 
@@ -147,7 +147,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ShowAzDetailsResponse.
+        r"""Sets the region_id of this ShowAzDetailsResponse.
 
         对应CMDB的region数据中的'regionCode'字段。
 
@@ -158,7 +158,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowAzDetailsResponse.
+        r"""Gets the type of this ShowAzDetailsResponse.
 
         当前AZ的类型: - Edge: 边缘云 - Workspace：华为云
 
@@ -169,7 +169,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowAzDetailsResponse.
+        r"""Sets the type of this ShowAzDetailsResponse.
 
         当前AZ的类型: - Edge: 边缘云 - Workspace：华为云
 
@@ -180,7 +180,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @property
     def display_name(self):
-        """Gets the display_name of this ShowAzDetailsResponse.
+        r"""Gets the display_name of this ShowAzDetailsResponse.
 
         英文名。
 
@@ -191,7 +191,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ShowAzDetailsResponse.
+        r"""Sets the display_name of this ShowAzDetailsResponse.
 
         英文名。
 
@@ -202,7 +202,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowAzDetailsResponse.
+        r"""Gets the status of this ShowAzDetailsResponse.
 
         状态。
 
@@ -213,7 +213,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAzDetailsResponse.
+        r"""Sets the status of this ShowAzDetailsResponse.
 
         状态。
 
@@ -224,7 +224,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @property
     def sold_out(self):
-        """Gets the sold_out of this ShowAzDetailsResponse.
+        r"""Gets the sold_out of this ShowAzDetailsResponse.
 
         :return: The sold_out of this ShowAzDetailsResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.SoldOutInfo`
@@ -233,7 +233,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @sold_out.setter
     def sold_out(self, sold_out):
-        """Sets the sold_out of this ShowAzDetailsResponse.
+        r"""Sets the sold_out of this ShowAzDetailsResponse.
 
         :param sold_out: The sold_out of this ShowAzDetailsResponse.
         :type sold_out: :class:`huaweicloudsdkworkspace.v2.SoldOutInfo`
@@ -242,7 +242,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @property
     def product_ids(self):
-        """Gets the product_ids of this ShowAzDetailsResponse.
+        r"""Gets the product_ids of this ShowAzDetailsResponse.
 
         参品Id集。
 
@@ -253,7 +253,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @product_ids.setter
     def product_ids(self, product_ids):
-        """Sets the product_ids of this ShowAzDetailsResponse.
+        r"""Sets the product_ids of this ShowAzDetailsResponse.
 
         参品Id集。
 
@@ -264,7 +264,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @property
     def mode(self):
-        """Gets the mode of this ShowAzDetailsResponse.
+        r"""Gets the mode of this ShowAzDetailsResponse.
 
         计费模式，专属 / 共享。
 
@@ -275,7 +275,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ShowAzDetailsResponse.
+        r"""Sets the mode of this ShowAzDetailsResponse.
 
         计费模式，专属 / 共享。
 
@@ -286,7 +286,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @property
     def alias(self):
-        """Gets the alias of this ShowAzDetailsResponse.
+        r"""Gets the alias of this ShowAzDetailsResponse.
 
         az的别名(中文、数字、字母、下划线、中划线，最大128字节)。
 
@@ -297,7 +297,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this ShowAzDetailsResponse.
+        r"""Sets the alias of this ShowAzDetailsResponse.
 
         az的别名(中文、数字、字母、下划线、中划线，最大128字节)。
 
@@ -308,7 +308,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ShowAzDetailsResponse.
+        r"""Gets the public_border_group of this ShowAzDetailsResponse.
 
         EIP所属的group。
 
@@ -319,7 +319,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ShowAzDetailsResponse.
+        r"""Sets the public_border_group of this ShowAzDetailsResponse.
 
         EIP所属的group。
 
@@ -330,7 +330,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this ShowAzDetailsResponse.
+        r"""Gets the category of this ShowAzDetailsResponse.
 
         分类的Id:  - 0: default - 21: HomeZone - 41: IES
 
@@ -341,7 +341,7 @@ class ShowAzDetailsResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ShowAzDetailsResponse.
+        r"""Sets the category of this ShowAzDetailsResponse.
 
         分类的Id:  - 0: default - 21: HomeZone - 41: IES
 

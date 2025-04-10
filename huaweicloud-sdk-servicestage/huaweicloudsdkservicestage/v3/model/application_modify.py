@@ -31,7 +31,7 @@ class ApplicationModify:
     }
 
     def __init__(self, name=None, enterprise_project_id=None, description=None, labels=None):
-        """ApplicationModify
+        r"""ApplicationModify
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ApplicationModify:
 
     @property
     def name(self):
-        """Gets the name of this ApplicationModify.
+        r"""Gets the name of this ApplicationModify.
 
         :return: The name of this ApplicationModify.
         :rtype: str
@@ -73,7 +73,7 @@ class ApplicationModify:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicationModify.
+        r"""Sets the name of this ApplicationModify.
 
         :param name: The name of this ApplicationModify.
         :type name: str
@@ -82,7 +82,7 @@ class ApplicationModify:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ApplicationModify.
+        r"""Gets the enterprise_project_id of this ApplicationModify.
 
         :return: The enterprise_project_id of this ApplicationModify.
         :rtype: str
@@ -91,7 +91,7 @@ class ApplicationModify:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ApplicationModify.
+        r"""Sets the enterprise_project_id of this ApplicationModify.
 
         :param enterprise_project_id: The enterprise_project_id of this ApplicationModify.
         :type enterprise_project_id: str
@@ -100,7 +100,7 @@ class ApplicationModify:
 
     @property
     def description(self):
-        """Gets the description of this ApplicationModify.
+        r"""Gets the description of this ApplicationModify.
 
         :return: The description of this ApplicationModify.
         :rtype: str
@@ -109,7 +109,7 @@ class ApplicationModify:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApplicationModify.
+        r"""Sets the description of this ApplicationModify.
 
         :param description: The description of this ApplicationModify.
         :type description: str
@@ -118,7 +118,7 @@ class ApplicationModify:
 
     @property
     def labels(self):
-        """Gets the labels of this ApplicationModify.
+        r"""Gets the labels of this ApplicationModify.
 
         :return: The labels of this ApplicationModify.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]
@@ -127,7 +127,7 @@ class ApplicationModify:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ApplicationModify.
+        r"""Sets the labels of this ApplicationModify.
 
         :param labels: The labels of this ApplicationModify.
         :type labels: list[:class:`huaweicloudsdkservicestage.v3.EnvironmentCreateLabels`]

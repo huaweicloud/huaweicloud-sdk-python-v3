@@ -29,7 +29,7 @@ class HapComponentItem:
     }
 
     def __init__(self, name=None, visible=None, actions_with_entities=None):
-        """HapComponentItem
+        r"""HapComponentItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class HapComponentItem:
 
     @property
     def name(self):
-        """Gets the name of this HapComponentItem.
+        r"""Gets the name of this HapComponentItem.
 
         组件名称
 
@@ -68,7 +68,7 @@ class HapComponentItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HapComponentItem.
+        r"""Sets the name of this HapComponentItem.
 
         组件名称
 
@@ -79,7 +79,7 @@ class HapComponentItem:
 
     @property
     def visible(self):
-        """Gets the visible of this HapComponentItem.
+        r"""Gets the visible of this HapComponentItem.
 
         元能力可见
 
@@ -90,7 +90,7 @@ class HapComponentItem:
 
     @visible.setter
     def visible(self, visible):
-        """Sets the visible of this HapComponentItem.
+        r"""Sets the visible of this HapComponentItem.
 
         元能力可见
 
@@ -101,7 +101,7 @@ class HapComponentItem:
 
     @property
     def actions_with_entities(self):
-        """Gets the actions_with_entities of this HapComponentItem.
+        r"""Gets the actions_with_entities of this HapComponentItem.
 
         动作和实体列表
 
@@ -112,7 +112,7 @@ class HapComponentItem:
 
     @actions_with_entities.setter
     def actions_with_entities(self, actions_with_entities):
-        """Sets the actions_with_entities of this HapComponentItem.
+        r"""Sets the actions_with_entities of this HapComponentItem.
 
         动作和实体列表
 

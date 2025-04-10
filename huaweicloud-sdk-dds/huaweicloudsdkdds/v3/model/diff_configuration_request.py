@@ -27,7 +27,7 @@ class DiffConfigurationRequest:
     }
 
     def __init__(self, source_configuration_id=None, target_configuration_id=None):
-        """DiffConfigurationRequest
+        r"""DiffConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DiffConfigurationRequest:
 
     @property
     def source_configuration_id(self):
-        """Gets the source_configuration_id of this DiffConfigurationRequest.
+        r"""Gets the source_configuration_id of this DiffConfigurationRequest.
 
         需要进行比较的参数模板ID。
 
@@ -59,7 +59,7 @@ class DiffConfigurationRequest:
 
     @source_configuration_id.setter
     def source_configuration_id(self, source_configuration_id):
-        """Sets the source_configuration_id of this DiffConfigurationRequest.
+        r"""Sets the source_configuration_id of this DiffConfigurationRequest.
 
         需要进行比较的参数模板ID。
 
@@ -70,7 +70,7 @@ class DiffConfigurationRequest:
 
     @property
     def target_configuration_id(self):
-        """Gets the target_configuration_id of this DiffConfigurationRequest.
+        r"""Gets the target_configuration_id of this DiffConfigurationRequest.
 
         需要进行比较的参数模板ID。
 
@@ -81,7 +81,7 @@ class DiffConfigurationRequest:
 
     @target_configuration_id.setter
     def target_configuration_id(self, target_configuration_id):
-        """Sets the target_configuration_id of this DiffConfigurationRequest.
+        r"""Sets the target_configuration_id of this DiffConfigurationRequest.
 
         需要进行比较的参数模板ID。
 

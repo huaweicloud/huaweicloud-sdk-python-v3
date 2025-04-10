@@ -29,7 +29,7 @@ class DeleteDepartmentRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, dept_code=None):
-        """DeleteDepartmentRequest
+        r"""DeleteDepartmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteDepartmentRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteDepartmentRequest.
+        r"""Gets the x_request_id of this DeleteDepartmentRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -67,7 +67,7 @@ class DeleteDepartmentRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteDepartmentRequest.
+        r"""Sets the x_request_id of this DeleteDepartmentRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -78,7 +78,7 @@ class DeleteDepartmentRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this DeleteDepartmentRequest.
+        r"""Gets the accept_language of this DeleteDepartmentRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -89,7 +89,7 @@ class DeleteDepartmentRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this DeleteDepartmentRequest.
+        r"""Sets the accept_language of this DeleteDepartmentRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -100,7 +100,7 @@ class DeleteDepartmentRequest:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this DeleteDepartmentRequest.
+        r"""Gets the dept_code of this DeleteDepartmentRequest.
 
         部门编码。 > 部门编码为1的根部门不能删除。
 
@@ -111,7 +111,7 @@ class DeleteDepartmentRequest:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this DeleteDepartmentRequest.
+        r"""Sets the dept_code of this DeleteDepartmentRequest.
 
         部门编码。 > 部门编码为1的根部门不能删除。
 

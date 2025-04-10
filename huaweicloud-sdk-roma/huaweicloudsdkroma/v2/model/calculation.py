@@ -29,7 +29,7 @@ class Calculation:
     }
 
     def __init__(self, never_connected=None, online=None, offline=None):
-        """Calculation
+        r"""Calculation
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Calculation:
 
     @property
     def never_connected(self):
-        """Gets the never_connected of this Calculation.
+        r"""Gets the never_connected of this Calculation.
 
         从未连接过的设备数量
 
@@ -68,7 +68,7 @@ class Calculation:
 
     @never_connected.setter
     def never_connected(self, never_connected):
-        """Sets the never_connected of this Calculation.
+        r"""Sets the never_connected of this Calculation.
 
         从未连接过的设备数量
 
@@ -79,7 +79,7 @@ class Calculation:
 
     @property
     def online(self):
-        """Gets the online of this Calculation.
+        r"""Gets the online of this Calculation.
 
         在线设备数量
 
@@ -90,7 +90,7 @@ class Calculation:
 
     @online.setter
     def online(self, online):
-        """Sets the online of this Calculation.
+        r"""Sets the online of this Calculation.
 
         在线设备数量
 
@@ -101,7 +101,7 @@ class Calculation:
 
     @property
     def offline(self):
-        """Gets the offline of this Calculation.
+        r"""Gets the offline of this Calculation.
 
         离线设备数量
 
@@ -112,7 +112,7 @@ class Calculation:
 
     @offline.setter
     def offline(self, offline):
-        """Sets the offline of this Calculation.
+        r"""Sets the offline of this Calculation.
 
         离线设备数量
 

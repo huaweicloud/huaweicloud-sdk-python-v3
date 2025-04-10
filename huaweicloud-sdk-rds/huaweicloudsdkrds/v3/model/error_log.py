@@ -29,7 +29,7 @@ class ErrorLog:
     }
 
     def __init__(self, time=None, level=None, content=None):
-        """ErrorLog
+        r"""ErrorLog
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ErrorLog:
 
     @property
     def time(self):
-        """Gets the time of this ErrorLog.
+        r"""Gets the time of this ErrorLog.
 
         日期时间UTC时间。
 
@@ -65,7 +65,7 @@ class ErrorLog:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ErrorLog.
+        r"""Sets the time of this ErrorLog.
 
         日期时间UTC时间。
 
@@ -76,7 +76,7 @@ class ErrorLog:
 
     @property
     def level(self):
-        """Gets the level of this ErrorLog.
+        r"""Gets the level of this ErrorLog.
 
         日志级别。
 
@@ -87,7 +87,7 @@ class ErrorLog:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ErrorLog.
+        r"""Sets the level of this ErrorLog.
 
         日志级别。
 
@@ -98,7 +98,7 @@ class ErrorLog:
 
     @property
     def content(self):
-        """Gets the content of this ErrorLog.
+        r"""Gets the content of this ErrorLog.
 
         错误日志内容。
 
@@ -109,7 +109,7 @@ class ErrorLog:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ErrorLog.
+        r"""Sets the content of this ErrorLog.
 
         错误日志内容。
 

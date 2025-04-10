@@ -29,7 +29,7 @@ class HotQuestionCount:
     }
 
     def __init__(self, qa_pair_id=None, st_question=None, domain=None):
-        """HotQuestionCount
+        r"""HotQuestionCount
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class HotQuestionCount:
 
     @property
     def qa_pair_id(self):
-        """Gets the qa_pair_id of this HotQuestionCount.
+        r"""Gets the qa_pair_id of this HotQuestionCount.
 
         问答对ID。
 
@@ -68,7 +68,7 @@ class HotQuestionCount:
 
     @qa_pair_id.setter
     def qa_pair_id(self, qa_pair_id):
-        """Sets the qa_pair_id of this HotQuestionCount.
+        r"""Sets the qa_pair_id of this HotQuestionCount.
 
         问答对ID。
 
@@ -79,7 +79,7 @@ class HotQuestionCount:
 
     @property
     def st_question(self):
-        """Gets the st_question of this HotQuestionCount.
+        r"""Gets the st_question of this HotQuestionCount.
 
         标准问题。
 
@@ -90,7 +90,7 @@ class HotQuestionCount:
 
     @st_question.setter
     def st_question(self, st_question):
-        """Sets the st_question of this HotQuestionCount.
+        r"""Sets the st_question of this HotQuestionCount.
 
         标准问题。
 
@@ -101,7 +101,7 @@ class HotQuestionCount:
 
     @property
     def domain(self):
-        """Gets the domain of this HotQuestionCount.
+        r"""Gets the domain of this HotQuestionCount.
 
         标准问题所属领域。
 
@@ -112,7 +112,7 @@ class HotQuestionCount:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this HotQuestionCount.
+        r"""Sets the domain of this HotQuestionCount.
 
         标准问题所属领域。
 

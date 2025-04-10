@@ -43,7 +43,7 @@ class CreateCustomerV2Req:
     }
 
     def __init__(self, domain_name=None, email=None, verification_code=None, domain_area=None, xaccount_id=None, xaccount_type=None, password=None, is_close_market_ms=None, indirect_partner_id=None, include_association_result=None):
-        """CreateCustomerV2Req
+        r"""CreateCustomerV2Req
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class CreateCustomerV2Req:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this CreateCustomerV2Req.
+        r"""Gets the domain_name of this CreateCustomerV2Req.
 
         客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^\\(\\[a-zA-Z_-\\]\\(\\[a-zA-Z0-9_-\\]\\)\\*\\)$。
 
@@ -114,7 +114,7 @@ class CreateCustomerV2Req:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this CreateCustomerV2Req.
+        r"""Sets the domain_name of this CreateCustomerV2Req.
 
         客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^\\(\\[a-zA-Z_-\\]\\(\\[a-zA-Z0-9_-\\]\\)\\*\\)$。
 
@@ -125,7 +125,7 @@ class CreateCustomerV2Req:
 
     @property
     def email(self):
-        """Gets the email of this CreateCustomerV2Req.
+        r"""Gets the email of this CreateCustomerV2Req.
 
         邮箱地址。 格式：必须含有@。
 
@@ -136,7 +136,7 @@ class CreateCustomerV2Req:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this CreateCustomerV2Req.
+        r"""Sets the email of this CreateCustomerV2Req.
 
         邮箱地址。 格式：必须含有@。
 
@@ -147,7 +147,7 @@ class CreateCustomerV2Req:
 
     @property
     def verification_code(self):
-        """Gets the verification_code of this CreateCustomerV2Req.
+        r"""Gets the verification_code of this CreateCustomerV2Req.
 
         验证码。 请调用“发送验证码”接口获取。 如果邮箱不存在，不需要输入验证码。
 
@@ -158,7 +158,7 @@ class CreateCustomerV2Req:
 
     @verification_code.setter
     def verification_code(self, verification_code):
-        """Sets the verification_code of this CreateCustomerV2Req.
+        r"""Sets the verification_code of this CreateCustomerV2Req.
 
         验证码。 请调用“发送验证码”接口获取。 如果邮箱不存在，不需要输入验证码。
 
@@ -169,7 +169,7 @@ class CreateCustomerV2Req:
 
     @property
     def domain_area(self):
-        """Gets the domain_area of this CreateCustomerV2Req.
+        r"""Gets the domain_area of this CreateCustomerV2Req.
 
         客户所属国家地区的两位字母编号。该字母编号遵循ISO 3166标准。 例如：墨西哥 MX
 
@@ -180,7 +180,7 @@ class CreateCustomerV2Req:
 
     @domain_area.setter
     def domain_area(self, domain_area):
-        """Sets the domain_area of this CreateCustomerV2Req.
+        r"""Sets the domain_area of this CreateCustomerV2Req.
 
         客户所属国家地区的两位字母编号。该字母编号遵循ISO 3166标准。 例如：墨西哥 MX
 
@@ -191,7 +191,7 @@ class CreateCustomerV2Req:
 
     @property
     def xaccount_id(self):
-        """Gets the xaccount_id of this CreateCustomerV2Req.
+        r"""Gets the xaccount_id of this CreateCustomerV2Req.
 
         伙伴销售平台的用户唯一标识，该标识的具体值由伙伴分配。
 
@@ -202,7 +202,7 @@ class CreateCustomerV2Req:
 
     @xaccount_id.setter
     def xaccount_id(self, xaccount_id):
-        """Sets the xaccount_id of this CreateCustomerV2Req.
+        r"""Sets the xaccount_id of this CreateCustomerV2Req.
 
         伙伴销售平台的用户唯一标识，该标识的具体值由伙伴分配。
 
@@ -213,7 +213,7 @@ class CreateCustomerV2Req:
 
     @property
     def xaccount_type(self):
-        """Gets the xaccount_type of this CreateCustomerV2Req.
+        r"""Gets the xaccount_type of this CreateCustomerV2Req.
 
         华为分给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见[如何获取xaccountType的取值](https://support.huaweicloud.com/intl/zh-cn/api-bpconsole/bpconsole_apifaq_00002.html)。
 
@@ -224,7 +224,7 @@ class CreateCustomerV2Req:
 
     @xaccount_type.setter
     def xaccount_type(self, xaccount_type):
-        """Sets the xaccount_type of this CreateCustomerV2Req.
+        r"""Sets the xaccount_type of this CreateCustomerV2Req.
 
         华为分给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见[如何获取xaccountType的取值](https://support.huaweicloud.com/intl/zh-cn/api-bpconsole/bpconsole_apifaq_00002.html)。
 
@@ -235,7 +235,7 @@ class CreateCustomerV2Req:
 
     @property
     def password(self):
-        """Gets the password of this CreateCustomerV2Req.
+        r"""Gets the password of this CreateCustomerV2Req.
 
         密码规则如下： 至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符；不能和账号名或倒序的账号名相同；不能包含邮箱。 如果为空，用户没有密码，则不能直接在华为云登录，只能通过伙伴系统SSO方式跳转到华为云。
 
@@ -246,7 +246,7 @@ class CreateCustomerV2Req:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateCustomerV2Req.
+        r"""Sets the password of this CreateCustomerV2Req.
 
         密码规则如下： 至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符；不能和账号名或倒序的账号名相同；不能包含邮箱。 如果为空，用户没有密码，则不能直接在华为云登录，只能通过伙伴系统SSO方式跳转到华为云。
 
@@ -257,7 +257,7 @@ class CreateCustomerV2Req:
 
     @property
     def is_close_market_ms(self):
-        """Gets the is_close_market_ms of this CreateCustomerV2Req.
+        r"""Gets the is_close_market_ms of this CreateCustomerV2Req.
 
         是否关闭营销消息的发送： true：关闭false：不关闭（默认）
 
@@ -268,7 +268,7 @@ class CreateCustomerV2Req:
 
     @is_close_market_ms.setter
     def is_close_market_ms(self, is_close_market_ms):
-        """Sets the is_close_market_ms of this CreateCustomerV2Req.
+        r"""Sets the is_close_market_ms of this CreateCustomerV2Req.
 
         是否关闭营销消息的发送： true：关闭false：不关闭（默认）
 
@@ -279,7 +279,7 @@ class CreateCustomerV2Req:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this CreateCustomerV2Req.
+        r"""Gets the indirect_partner_id of this CreateCustomerV2Req.
 
         云经销商ID。获取方法请参见查询云经销商列表。 如果需要创建云经销商的子客户，必须携带该字段。除此之外，此参数不做处理。
 
@@ -290,7 +290,7 @@ class CreateCustomerV2Req:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this CreateCustomerV2Req.
+        r"""Sets the indirect_partner_id of this CreateCustomerV2Req.
 
         云经销商ID。获取方法请参见查询云经销商列表。 如果需要创建云经销商的子客户，必须携带该字段。除此之外，此参数不做处理。
 
@@ -301,7 +301,7 @@ class CreateCustomerV2Req:
 
     @property
     def include_association_result(self):
-        """Gets the include_association_result of this CreateCustomerV2Req.
+        r"""Gets the include_association_result of this CreateCustomerV2Req.
 
         是否返回子客户的关联结果。 true：返回子客户和伙伴的关联结果false：不返回子客户和伙伴的关联结果 默认值为false。
 
@@ -312,7 +312,7 @@ class CreateCustomerV2Req:
 
     @include_association_result.setter
     def include_association_result(self, include_association_result):
-        """Sets the include_association_result of this CreateCustomerV2Req.
+        r"""Sets the include_association_result of this CreateCustomerV2Req.
 
         是否返回子客户的关联结果。 true：返回子客户和伙伴的关联结果false：不返回子客户和伙伴的关联结果 默认值为false。
 

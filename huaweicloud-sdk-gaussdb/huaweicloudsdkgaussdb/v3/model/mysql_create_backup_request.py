@@ -29,7 +29,7 @@ class MysqlCreateBackupRequest:
     }
 
     def __init__(self, instance_id=None, name=None, description=None):
-        """MysqlCreateBackupRequest
+        r"""MysqlCreateBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class MysqlCreateBackupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this MysqlCreateBackupRequest.
+        r"""Gets the instance_id of this MysqlCreateBackupRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -66,7 +66,7 @@ class MysqlCreateBackupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this MysqlCreateBackupRequest.
+        r"""Sets the instance_id of this MysqlCreateBackupRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -77,7 +77,7 @@ class MysqlCreateBackupRequest:
 
     @property
     def name(self):
-        """Gets the name of this MysqlCreateBackupRequest.
+        r"""Gets the name of this MysqlCreateBackupRequest.
 
         备份名称。  取值范围：最小为4个字符，最大为64个字符且不超过64个字节（注意：一个中文字符占用3个字节），必须以字母或中文开头，区分大小写，可以包含字母、数字、中划线、下划线或中文，不能包含其他特殊字符。
 
@@ -88,7 +88,7 @@ class MysqlCreateBackupRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MysqlCreateBackupRequest.
+        r"""Sets the name of this MysqlCreateBackupRequest.
 
         备份名称。  取值范围：最小为4个字符，最大为64个字符且不超过64个字节（注意：一个中文字符占用3个字节），必须以字母或中文开头，区分大小写，可以包含字母、数字、中划线、下划线或中文，不能包含其他特殊字符。
 
@@ -99,7 +99,7 @@ class MysqlCreateBackupRequest:
 
     @property
     def description(self):
-        """Gets the description of this MysqlCreateBackupRequest.
+        r"""Gets the description of this MysqlCreateBackupRequest.
 
         备份描述，不能包含>!<\"&'=特殊字符，不大于256个字符。
 
@@ -110,7 +110,7 @@ class MysqlCreateBackupRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MysqlCreateBackupRequest.
+        r"""Sets the description of this MysqlCreateBackupRequest.
 
         备份描述，不能包含>!<\"&'=特殊字符，不大于256个字符。
 

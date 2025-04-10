@@ -29,7 +29,7 @@ class LtsIdInfo:
     }
 
     def __init__(self, lts_group_id=None, lts_access_stream_id=None, lts_attack_stream_id=None):
-        """LtsIdInfo
+        r"""LtsIdInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LtsIdInfo:
 
     @property
     def lts_group_id(self):
-        """Gets the lts_group_id of this LtsIdInfo.
+        r"""Gets the lts_group_id of this LtsIdInfo.
 
         日志组id
 
@@ -68,7 +68,7 @@ class LtsIdInfo:
 
     @lts_group_id.setter
     def lts_group_id(self, lts_group_id):
-        """Sets the lts_group_id of this LtsIdInfo.
+        r"""Sets the lts_group_id of this LtsIdInfo.
 
         日志组id
 
@@ -79,7 +79,7 @@ class LtsIdInfo:
 
     @property
     def lts_access_stream_id(self):
-        """Gets the lts_access_stream_id of this LtsIdInfo.
+        r"""Gets the lts_access_stream_id of this LtsIdInfo.
 
         访问日志流id
 
@@ -90,7 +90,7 @@ class LtsIdInfo:
 
     @lts_access_stream_id.setter
     def lts_access_stream_id(self, lts_access_stream_id):
-        """Sets the lts_access_stream_id of this LtsIdInfo.
+        r"""Sets the lts_access_stream_id of this LtsIdInfo.
 
         访问日志流id
 
@@ -101,7 +101,7 @@ class LtsIdInfo:
 
     @property
     def lts_attack_stream_id(self):
-        """Gets the lts_attack_stream_id of this LtsIdInfo.
+        r"""Gets the lts_attack_stream_id of this LtsIdInfo.
 
         攻击日志流id
 
@@ -112,7 +112,7 @@ class LtsIdInfo:
 
     @lts_attack_stream_id.setter
     def lts_attack_stream_id(self, lts_attack_stream_id):
-        """Sets the lts_attack_stream_id of this LtsIdInfo.
+        r"""Sets the lts_attack_stream_id of this LtsIdInfo.
 
         攻击日志流id
 

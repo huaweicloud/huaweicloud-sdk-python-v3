@@ -27,7 +27,7 @@ class AcceptanceSchema:
     }
 
     def __init__(self, request_id=None, task_id=None):
-        """AcceptanceSchema
+        r"""AcceptanceSchema
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AcceptanceSchema:
 
     @property
     def request_id(self):
-        """Gets the request_id of this AcceptanceSchema.
+        r"""Gets the request_id of this AcceptanceSchema.
 
         request_id
 
@@ -59,7 +59,7 @@ class AcceptanceSchema:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AcceptanceSchema.
+        r"""Sets the request_id of this AcceptanceSchema.
 
         request_id
 
@@ -70,7 +70,7 @@ class AcceptanceSchema:
 
     @property
     def task_id(self):
-        """Gets the task_id of this AcceptanceSchema.
+        r"""Gets the task_id of this AcceptanceSchema.
 
         task_id
 
@@ -81,7 +81,7 @@ class AcceptanceSchema:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this AcceptanceSchema.
+        r"""Sets the task_id of this AcceptanceSchema.
 
         task_id
 

@@ -31,7 +31,7 @@ class PatchUserRequest:
     }
 
     def __init__(self, authorization=None, tenant_id=None, user_id=None, body=None):
-        """PatchUserRequest
+        r"""PatchUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class PatchUserRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this PatchUserRequest.
+        r"""Gets the authorization of this PatchUserRequest.
 
         承载令牌
 
@@ -72,7 +72,7 @@ class PatchUserRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this PatchUserRequest.
+        r"""Sets the authorization of this PatchUserRequest.
 
         承载令牌
 
@@ -83,7 +83,7 @@ class PatchUserRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this PatchUserRequest.
+        r"""Gets the tenant_id of this PatchUserRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -94,7 +94,7 @@ class PatchUserRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this PatchUserRequest.
+        r"""Sets the tenant_id of this PatchUserRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -105,7 +105,7 @@ class PatchUserRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this PatchUserRequest.
+        r"""Gets the user_id of this PatchUserRequest.
 
         用户的全局唯一标识符（ID）
 
@@ -116,7 +116,7 @@ class PatchUserRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this PatchUserRequest.
+        r"""Sets the user_id of this PatchUserRequest.
 
         用户的全局唯一标识符（ID）
 
@@ -127,7 +127,7 @@ class PatchUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this PatchUserRequest.
+        r"""Gets the body of this PatchUserRequest.
 
         :return: The body of this PatchUserRequest.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.PatchUserReqBody`
@@ -136,7 +136,7 @@ class PatchUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PatchUserRequest.
+        r"""Sets the body of this PatchUserRequest.
 
         :param body: The body of this PatchUserRequest.
         :type body: :class:`huaweicloudsdkidentitycenterscim.v1.PatchUserReqBody`

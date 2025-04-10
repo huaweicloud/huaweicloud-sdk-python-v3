@@ -29,7 +29,7 @@ class AggregatePolicyAssignmentDetailRequest:
     }
 
     def __init__(self, aggregator_id=None, account_id=None, policy_assignment_id=None):
-        """AggregatePolicyAssignmentDetailRequest
+        r"""AggregatePolicyAssignmentDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AggregatePolicyAssignmentDetailRequest:
 
     @property
     def aggregator_id(self):
-        """Gets the aggregator_id of this AggregatePolicyAssignmentDetailRequest.
+        r"""Gets the aggregator_id of this AggregatePolicyAssignmentDetailRequest.
 
         资源聚合器ID
 
@@ -65,7 +65,7 @@ class AggregatePolicyAssignmentDetailRequest:
 
     @aggregator_id.setter
     def aggregator_id(self, aggregator_id):
-        """Sets the aggregator_id of this AggregatePolicyAssignmentDetailRequest.
+        r"""Sets the aggregator_id of this AggregatePolicyAssignmentDetailRequest.
 
         资源聚合器ID
 
@@ -76,7 +76,7 @@ class AggregatePolicyAssignmentDetailRequest:
 
     @property
     def account_id(self):
-        """Gets the account_id of this AggregatePolicyAssignmentDetailRequest.
+        r"""Gets the account_id of this AggregatePolicyAssignmentDetailRequest.
 
         租户ID
 
@@ -87,7 +87,7 @@ class AggregatePolicyAssignmentDetailRequest:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this AggregatePolicyAssignmentDetailRequest.
+        r"""Sets the account_id of this AggregatePolicyAssignmentDetailRequest.
 
         租户ID
 
@@ -98,7 +98,7 @@ class AggregatePolicyAssignmentDetailRequest:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this AggregatePolicyAssignmentDetailRequest.
+        r"""Gets the policy_assignment_id of this AggregatePolicyAssignmentDetailRequest.
 
         合规规则ID
 
@@ -109,7 +109,7 @@ class AggregatePolicyAssignmentDetailRequest:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this AggregatePolicyAssignmentDetailRequest.
+        r"""Sets the policy_assignment_id of this AggregatePolicyAssignmentDetailRequest.
 
         合规规则ID
 

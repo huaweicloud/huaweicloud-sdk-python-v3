@@ -51,7 +51,7 @@ class TicsSqlJobVo:
     }
 
     def __init__(self, approval_status=None, create_time=None, creator_id=None, creator_name=None, deleted=None, description=None, domain_id=None, id=None, job_type=None, league_id=None, name=None, update_time=None, update_user_id=None, update_user_name=None):
-        """TicsSqlJobVo
+        r"""TicsSqlJobVo
 
         The model defined in huaweicloud sdk
 
@@ -125,7 +125,7 @@ class TicsSqlJobVo:
 
     @property
     def approval_status(self):
-        """Gets the approval_status of this TicsSqlJobVo.
+        r"""Gets the approval_status of this TicsSqlJobVo.
 
         作业审批状态，APPROVED.审批通过，APPROVING.审批中，NEW.新建，REJECTED.驳回，REVOKED.撤销
 
@@ -136,7 +136,7 @@ class TicsSqlJobVo:
 
     @approval_status.setter
     def approval_status(self, approval_status):
-        """Sets the approval_status of this TicsSqlJobVo.
+        r"""Sets the approval_status of this TicsSqlJobVo.
 
         作业审批状态，APPROVED.审批通过，APPROVING.审批中，NEW.新建，REJECTED.驳回，REVOKED.撤销
 
@@ -147,7 +147,7 @@ class TicsSqlJobVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TicsSqlJobVo.
+        r"""Gets the create_time of this TicsSqlJobVo.
 
         创建时间
 
@@ -158,7 +158,7 @@ class TicsSqlJobVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TicsSqlJobVo.
+        r"""Sets the create_time of this TicsSqlJobVo.
 
         创建时间
 
@@ -169,7 +169,7 @@ class TicsSqlJobVo:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this TicsSqlJobVo.
+        r"""Gets the creator_id of this TicsSqlJobVo.
 
         创建人id
 
@@ -180,7 +180,7 @@ class TicsSqlJobVo:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this TicsSqlJobVo.
+        r"""Sets the creator_id of this TicsSqlJobVo.
 
         创建人id
 
@@ -191,7 +191,7 @@ class TicsSqlJobVo:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this TicsSqlJobVo.
+        r"""Gets the creator_name of this TicsSqlJobVo.
 
         创建人名称
 
@@ -202,7 +202,7 @@ class TicsSqlJobVo:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this TicsSqlJobVo.
+        r"""Sets the creator_name of this TicsSqlJobVo.
 
         创建人名称
 
@@ -213,7 +213,7 @@ class TicsSqlJobVo:
 
     @property
     def deleted(self):
-        """Gets the deleted of this TicsSqlJobVo.
+        r"""Gets the deleted of this TicsSqlJobVo.
 
         删除标记
 
@@ -224,7 +224,7 @@ class TicsSqlJobVo:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this TicsSqlJobVo.
+        r"""Sets the deleted of this TicsSqlJobVo.
 
         删除标记
 
@@ -235,7 +235,7 @@ class TicsSqlJobVo:
 
     @property
     def description(self):
-        """Gets the description of this TicsSqlJobVo.
+        r"""Gets the description of this TicsSqlJobVo.
 
         作业描述
 
@@ -246,7 +246,7 @@ class TicsSqlJobVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TicsSqlJobVo.
+        r"""Sets the description of this TicsSqlJobVo.
 
         作业描述
 
@@ -257,7 +257,7 @@ class TicsSqlJobVo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this TicsSqlJobVo.
+        r"""Gets the domain_id of this TicsSqlJobVo.
 
         作业发起方domainId
 
@@ -268,7 +268,7 @@ class TicsSqlJobVo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this TicsSqlJobVo.
+        r"""Sets the domain_id of this TicsSqlJobVo.
 
         作业发起方domainId
 
@@ -279,7 +279,7 @@ class TicsSqlJobVo:
 
     @property
     def id(self):
-        """Gets the id of this TicsSqlJobVo.
+        r"""Gets the id of this TicsSqlJobVo.
 
         作业id
 
@@ -290,7 +290,7 @@ class TicsSqlJobVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TicsSqlJobVo.
+        r"""Sets the id of this TicsSqlJobVo.
 
         作业id
 
@@ -301,7 +301,7 @@ class TicsSqlJobVo:
 
     @property
     def job_type(self):
-        """Gets the job_type of this TicsSqlJobVo.
+        r"""Gets the job_type of this TicsSqlJobVo.
 
         作业类型，SQL.联合SQL分析,HFL.横向联邦学习,VFL.纵向联邦学习,PREDICT.预测，DATA_EXCHANGE.数据交换
 
@@ -312,7 +312,7 @@ class TicsSqlJobVo:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this TicsSqlJobVo.
+        r"""Sets the job_type of this TicsSqlJobVo.
 
         作业类型，SQL.联合SQL分析,HFL.横向联邦学习,VFL.纵向联邦学习,PREDICT.预测，DATA_EXCHANGE.数据交换
 
@@ -323,7 +323,7 @@ class TicsSqlJobVo:
 
     @property
     def league_id(self):
-        """Gets the league_id of this TicsSqlJobVo.
+        r"""Gets the league_id of this TicsSqlJobVo.
 
         联盟id
 
@@ -334,7 +334,7 @@ class TicsSqlJobVo:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this TicsSqlJobVo.
+        r"""Sets the league_id of this TicsSqlJobVo.
 
         联盟id
 
@@ -345,7 +345,7 @@ class TicsSqlJobVo:
 
     @property
     def name(self):
-        """Gets the name of this TicsSqlJobVo.
+        r"""Gets the name of this TicsSqlJobVo.
 
         作业名称
 
@@ -356,7 +356,7 @@ class TicsSqlJobVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TicsSqlJobVo.
+        r"""Sets the name of this TicsSqlJobVo.
 
         作业名称
 
@@ -367,7 +367,7 @@ class TicsSqlJobVo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TicsSqlJobVo.
+        r"""Gets the update_time of this TicsSqlJobVo.
 
         变更时间
 
@@ -378,7 +378,7 @@ class TicsSqlJobVo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TicsSqlJobVo.
+        r"""Sets the update_time of this TicsSqlJobVo.
 
         变更时间
 
@@ -389,7 +389,7 @@ class TicsSqlJobVo:
 
     @property
     def update_user_id(self):
-        """Gets the update_user_id of this TicsSqlJobVo.
+        r"""Gets the update_user_id of this TicsSqlJobVo.
 
         变更人id
 
@@ -400,7 +400,7 @@ class TicsSqlJobVo:
 
     @update_user_id.setter
     def update_user_id(self, update_user_id):
-        """Sets the update_user_id of this TicsSqlJobVo.
+        r"""Sets the update_user_id of this TicsSqlJobVo.
 
         变更人id
 
@@ -411,7 +411,7 @@ class TicsSqlJobVo:
 
     @property
     def update_user_name(self):
-        """Gets the update_user_name of this TicsSqlJobVo.
+        r"""Gets the update_user_name of this TicsSqlJobVo.
 
         变更人名称
 
@@ -422,7 +422,7 @@ class TicsSqlJobVo:
 
     @update_user_name.setter
     def update_user_name(self, update_user_name):
-        """Sets the update_user_name of this TicsSqlJobVo.
+        r"""Sets the update_user_name of this TicsSqlJobVo.
 
         变更人名称
 

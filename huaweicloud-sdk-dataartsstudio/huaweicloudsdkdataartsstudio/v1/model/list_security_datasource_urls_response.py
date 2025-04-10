@@ -28,7 +28,7 @@ class ListSecurityDatasourceUrlsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, urls=None):
-        """ListSecurityDatasourceUrlsResponse
+        r"""ListSecurityDatasourceUrlsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecurityDatasourceUrlsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSecurityDatasourceUrlsResponse.
+        r"""Gets the total of this ListSecurityDatasourceUrlsResponse.
 
         总条数
 
@@ -62,7 +62,7 @@ class ListSecurityDatasourceUrlsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSecurityDatasourceUrlsResponse.
+        r"""Sets the total of this ListSecurityDatasourceUrlsResponse.
 
         总条数
 
@@ -73,7 +73,7 @@ class ListSecurityDatasourceUrlsResponse(SdkResponse):
 
     @property
     def urls(self):
-        """Gets the urls of this ListSecurityDatasourceUrlsResponse.
+        r"""Gets the urls of this ListSecurityDatasourceUrlsResponse.
 
         url列表
 
@@ -84,7 +84,7 @@ class ListSecurityDatasourceUrlsResponse(SdkResponse):
 
     @urls.setter
     def urls(self, urls):
-        """Sets the urls of this ListSecurityDatasourceUrlsResponse.
+        r"""Sets the urls of this ListSecurityDatasourceUrlsResponse.
 
         url列表
 

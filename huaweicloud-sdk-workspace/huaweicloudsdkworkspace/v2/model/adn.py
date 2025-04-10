@@ -27,7 +27,7 @@ class Adn:
     }
 
     def __init__(self, charge_mode=None, bandwidth_size=None):
-        """Adn
+        r"""Adn
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class Adn:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this Adn.
+        r"""Gets the charge_mode of this Adn.
 
         adn带宽计费模式 - free：不计费。
 
@@ -60,7 +60,7 @@ class Adn:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this Adn.
+        r"""Sets the charge_mode of this Adn.
 
         adn带宽计费模式 - free：不计费。
 
@@ -71,7 +71,7 @@ class Adn:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this Adn.
+        r"""Gets the bandwidth_size of this Adn.
 
         带宽大小，charge_mode为free时，不支持配置。
 
@@ -82,7 +82,7 @@ class Adn:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this Adn.
+        r"""Sets the bandwidth_size of this Adn.
 
         带宽大小，charge_mode为free时，不支持配置。
 

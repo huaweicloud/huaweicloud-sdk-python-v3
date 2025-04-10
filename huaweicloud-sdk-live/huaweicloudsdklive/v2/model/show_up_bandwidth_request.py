@@ -41,7 +41,7 @@ class ShowUpBandwidthRequest:
     }
 
     def __init__(self, publish_domains=None, app=None, stream=None, region=None, isp=None, interval=None, type=None, start_time=None, end_time=None):
-        """ShowUpBandwidthRequest
+        r"""ShowUpBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ShowUpBandwidthRequest:
 
     @property
     def publish_domains(self):
-        """Gets the publish_domains of this ShowUpBandwidthRequest.
+        r"""Gets the publish_domains of this ShowUpBandwidthRequest.
 
         推流域名列表，最多支持查询100个域名，多个域名以逗号分隔，若查询多个域名，则返回的是多个域名合并数据。 
 
@@ -109,7 +109,7 @@ class ShowUpBandwidthRequest:
 
     @publish_domains.setter
     def publish_domains(self, publish_domains):
-        """Sets the publish_domains of this ShowUpBandwidthRequest.
+        r"""Sets the publish_domains of this ShowUpBandwidthRequest.
 
         推流域名列表，最多支持查询100个域名，多个域名以逗号分隔，若查询多个域名，则返回的是多个域名合并数据。 
 
@@ -120,7 +120,7 @@ class ShowUpBandwidthRequest:
 
     @property
     def app(self):
-        """Gets the app of this ShowUpBandwidthRequest.
+        r"""Gets the app of this ShowUpBandwidthRequest.
 
         应用名称。 
 
@@ -131,7 +131,7 @@ class ShowUpBandwidthRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ShowUpBandwidthRequest.
+        r"""Sets the app of this ShowUpBandwidthRequest.
 
         应用名称。 
 
@@ -142,7 +142,7 @@ class ShowUpBandwidthRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this ShowUpBandwidthRequest.
+        r"""Gets the stream of this ShowUpBandwidthRequest.
 
         流名。 
 
@@ -153,7 +153,7 @@ class ShowUpBandwidthRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ShowUpBandwidthRequest.
+        r"""Sets the stream of this ShowUpBandwidthRequest.
 
         流名。 
 
@@ -164,7 +164,7 @@ class ShowUpBandwidthRequest:
 
     @property
     def region(self):
-        """Gets the region of this ShowUpBandwidthRequest.
+        r"""Gets the region of this ShowUpBandwidthRequest.
 
         区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
@@ -175,7 +175,7 @@ class ShowUpBandwidthRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowUpBandwidthRequest.
+        r"""Sets the region of this ShowUpBandwidthRequest.
 
         区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
@@ -186,7 +186,7 @@ class ShowUpBandwidthRequest:
 
     @property
     def isp(self):
-        """Gets the isp of this ShowUpBandwidthRequest.
+        r"""Gets the isp of this ShowUpBandwidthRequest.
 
         运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
@@ -197,7 +197,7 @@ class ShowUpBandwidthRequest:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ShowUpBandwidthRequest.
+        r"""Sets the isp of this ShowUpBandwidthRequest.
 
         运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
@@ -208,7 +208,7 @@ class ShowUpBandwidthRequest:
 
     @property
     def interval(self):
-        """Gets the interval of this ShowUpBandwidthRequest.
+        r"""Gets the interval of this ShowUpBandwidthRequest.
 
         查询数据的时间粒度。支持300（默认值），3600和86400秒。不传值时，使用默认值300秒。 
 
@@ -219,7 +219,7 @@ class ShowUpBandwidthRequest:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ShowUpBandwidthRequest.
+        r"""Sets the interval of this ShowUpBandwidthRequest.
 
         查询数据的时间粒度。支持300（默认值），3600和86400秒。不传值时，使用默认值300秒。 
 
@@ -230,7 +230,7 @@ class ShowUpBandwidthRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowUpBandwidthRequest.
+        r"""Gets the type of this ShowUpBandwidthRequest.
 
         类型： - RELAY：转推 不填默认查询推流 
 
@@ -241,7 +241,7 @@ class ShowUpBandwidthRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowUpBandwidthRequest.
+        r"""Sets the type of this ShowUpBandwidthRequest.
 
         类型： - RELAY：转推 不填默认查询推流 
 
@@ -252,7 +252,7 @@ class ShowUpBandwidthRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowUpBandwidthRequest.
+        r"""Gets the start_time of this ShowUpBandwidthRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。 最大查询跨度31天，最大查询周期1年。  若参数为空，默认查询7天数据。 
 
@@ -263,7 +263,7 @@ class ShowUpBandwidthRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowUpBandwidthRequest.
+        r"""Sets the start_time of this ShowUpBandwidthRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。 最大查询跨度31天，最大查询周期1年。  若参数为空，默认查询7天数据。 
 
@@ -274,7 +274,7 @@ class ShowUpBandwidthRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowUpBandwidthRequest.
+        r"""Gets the end_time of this ShowUpBandwidthRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度31天，最大查询周期1年。结束时间需大于起始时间。 
 
@@ -285,7 +285,7 @@ class ShowUpBandwidthRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowUpBandwidthRequest.
+        r"""Sets the end_time of this ShowUpBandwidthRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度31天，最大查询周期1年。结束时间需大于起始时间。 
 

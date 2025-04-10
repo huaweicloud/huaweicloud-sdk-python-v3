@@ -30,7 +30,7 @@ class DisassociateResourceSharePermissionRequest:
     }
 
     def __init__(self, x_security_token=None, resource_share_id=None, body=None):
-        """DisassociateResourceSharePermissionRequest
+        r"""DisassociateResourceSharePermissionRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DisassociateResourceSharePermissionRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this DisassociateResourceSharePermissionRequest.
+        r"""Gets the x_security_token of this DisassociateResourceSharePermissionRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -68,7 +68,7 @@ class DisassociateResourceSharePermissionRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this DisassociateResourceSharePermissionRequest.
+        r"""Sets the x_security_token of this DisassociateResourceSharePermissionRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -79,7 +79,7 @@ class DisassociateResourceSharePermissionRequest:
 
     @property
     def resource_share_id(self):
-        """Gets the resource_share_id of this DisassociateResourceSharePermissionRequest.
+        r"""Gets the resource_share_id of this DisassociateResourceSharePermissionRequest.
 
         资源共享实例的ID。
 
@@ -90,7 +90,7 @@ class DisassociateResourceSharePermissionRequest:
 
     @resource_share_id.setter
     def resource_share_id(self, resource_share_id):
-        """Sets the resource_share_id of this DisassociateResourceSharePermissionRequest.
+        r"""Sets the resource_share_id of this DisassociateResourceSharePermissionRequest.
 
         资源共享实例的ID。
 
@@ -101,7 +101,7 @@ class DisassociateResourceSharePermissionRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisassociateResourceSharePermissionRequest.
+        r"""Gets the body of this DisassociateResourceSharePermissionRequest.
 
         :return: The body of this DisassociateResourceSharePermissionRequest.
         :rtype: :class:`huaweicloudsdkram.v1.DisassociatePermissionReqBody`
@@ -110,7 +110,7 @@ class DisassociateResourceSharePermissionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisassociateResourceSharePermissionRequest.
+        r"""Sets the body of this DisassociateResourceSharePermissionRequest.
 
         :param body: The body of this DisassociateResourceSharePermissionRequest.
         :type body: :class:`huaweicloudsdkram.v1.DisassociatePermissionReqBody`

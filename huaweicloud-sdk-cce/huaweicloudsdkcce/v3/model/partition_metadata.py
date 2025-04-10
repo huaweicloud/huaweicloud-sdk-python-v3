@@ -27,7 +27,7 @@ class PartitionMetadata:
     }
 
     def __init__(self, name=None, creation_timestamp=None):
-        """PartitionMetadata
+        r"""PartitionMetadata
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PartitionMetadata:
 
     @property
     def name(self):
-        """Gets the name of this PartitionMetadata.
+        r"""Gets the name of this PartitionMetadata.
 
         分区名称
 
@@ -61,7 +61,7 @@ class PartitionMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PartitionMetadata.
+        r"""Sets the name of this PartitionMetadata.
 
         分区名称
 
@@ -72,7 +72,7 @@ class PartitionMetadata:
 
     @property
     def creation_timestamp(self):
-        """Gets the creation_timestamp of this PartitionMetadata.
+        r"""Gets the creation_timestamp of this PartitionMetadata.
 
         创建时间
 
@@ -83,7 +83,7 @@ class PartitionMetadata:
 
     @creation_timestamp.setter
     def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this PartitionMetadata.
+        r"""Sets the creation_timestamp of this PartitionMetadata.
 
         创建时间
 

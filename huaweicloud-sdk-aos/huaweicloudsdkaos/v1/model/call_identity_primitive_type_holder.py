@@ -25,7 +25,7 @@ class CallIdentityPrimitiveTypeHolder:
     }
 
     def __init__(self, call_identity=None):
-        """CallIdentityPrimitiveTypeHolder
+        r"""CallIdentityPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CallIdentityPrimitiveTypeHolder:
 
     @property
     def call_identity(self):
-        """Gets the call_identity of this CallIdentityPrimitiveTypeHolder.
+        r"""Gets the call_identity of this CallIdentityPrimitiveTypeHolder.
 
         仅支持资源栈集权限模式为SERVICE_MANAGED时指定该参数。用于指定用户是以组织管理账号还是成员账号中的服务委托管理员身份调用资源栈集。默认为SELF。 当资源栈集权限模式为SELF_MANAGED时，默认为SELF。 * 无论指定何种用户身份，涉及操作的资源栈集始终在组织管理账号名下。*   * `SELF` - 以组织管理账号身份调用。   * `DELEGATED_ADMIN` - 以服务委托管理员身份调用。用户的华为云账号必须在组织中已经被注册为”资源编排资源栈集服务“的委托管理员。
 
@@ -54,7 +54,7 @@ class CallIdentityPrimitiveTypeHolder:
 
     @call_identity.setter
     def call_identity(self, call_identity):
-        """Sets the call_identity of this CallIdentityPrimitiveTypeHolder.
+        r"""Sets the call_identity of this CallIdentityPrimitiveTypeHolder.
 
         仅支持资源栈集权限模式为SERVICE_MANAGED时指定该参数。用于指定用户是以组织管理账号还是成员账号中的服务委托管理员身份调用资源栈集。默认为SELF。 当资源栈集权限模式为SELF_MANAGED时，默认为SELF。 * 无论指定何种用户身份，涉及操作的资源栈集始终在组织管理账号名下。*   * `SELF` - 以组织管理账号身份调用。   * `DELEGATED_ADMIN` - 以服务委托管理员身份调用。用户的华为云账号必须在组织中已经被注册为”资源编排资源栈集服务“的委托管理员。
 

@@ -52,7 +52,7 @@ class ModifyApplicationResponse(SdkResponse):
     }
 
     def __init__(self, id=None, project_id=None, mark_for_delete=None, create_by=None, create_time=None, update_by=None, update_time=None, name_cn=None, name_en=None, desc_cn=None, desc_en=None, database_type=None, environment=None, versions=None):
-        """ModifyApplicationResponse
+        r"""ModifyApplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ModifyApplicationResponse.
+        r"""Gets the id of this ModifyApplicationResponse.
 
         应用ID。
 
@@ -146,7 +146,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyApplicationResponse.
+        r"""Sets the id of this ModifyApplicationResponse.
 
         应用ID。
 
@@ -157,7 +157,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ModifyApplicationResponse.
+        r"""Gets the project_id of this ModifyApplicationResponse.
 
         项目ID。
 
@@ -168,7 +168,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ModifyApplicationResponse.
+        r"""Sets the project_id of this ModifyApplicationResponse.
 
         项目ID。
 
@@ -179,7 +179,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @property
     def mark_for_delete(self):
-        """Gets the mark_for_delete of this ModifyApplicationResponse.
+        r"""Gets the mark_for_delete of this ModifyApplicationResponse.
 
         删除标记。 - 0：未删除 - 1：删除
 
@@ -190,7 +190,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @mark_for_delete.setter
     def mark_for_delete(self, mark_for_delete):
-        """Sets the mark_for_delete of this ModifyApplicationResponse.
+        r"""Sets the mark_for_delete of this ModifyApplicationResponse.
 
         删除标记。 - 0：未删除 - 1：删除
 
@@ -201,7 +201,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @property
     def create_by(self):
-        """Gets the create_by of this ModifyApplicationResponse.
+        r"""Gets the create_by of this ModifyApplicationResponse.
 
         创建人。
 
@@ -212,7 +212,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this ModifyApplicationResponse.
+        r"""Sets the create_by of this ModifyApplicationResponse.
 
         创建人。
 
@@ -223,7 +223,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ModifyApplicationResponse.
+        r"""Gets the create_time of this ModifyApplicationResponse.
 
         创建时间。
 
@@ -234,7 +234,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ModifyApplicationResponse.
+        r"""Sets the create_time of this ModifyApplicationResponse.
 
         创建时间。
 
@@ -245,7 +245,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @property
     def update_by(self):
-        """Gets the update_by of this ModifyApplicationResponse.
+        r"""Gets the update_by of this ModifyApplicationResponse.
 
         更新人。
 
@@ -256,7 +256,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this ModifyApplicationResponse.
+        r"""Sets the update_by of this ModifyApplicationResponse.
 
         更新人。
 
@@ -267,7 +267,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ModifyApplicationResponse.
+        r"""Gets the update_time of this ModifyApplicationResponse.
 
         更新时间。
 
@@ -278,7 +278,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ModifyApplicationResponse.
+        r"""Sets the update_time of this ModifyApplicationResponse.
 
         更新时间。
 
@@ -289,7 +289,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @property
     def name_cn(self):
-        """Gets the name_cn of this ModifyApplicationResponse.
+        r"""Gets the name_cn of this ModifyApplicationResponse.
 
         应用的中文名称。
 
@@ -300,7 +300,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @name_cn.setter
     def name_cn(self, name_cn):
-        """Sets the name_cn of this ModifyApplicationResponse.
+        r"""Sets the name_cn of this ModifyApplicationResponse.
 
         应用的中文名称。
 
@@ -311,7 +311,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @property
     def name_en(self):
-        """Gets the name_en of this ModifyApplicationResponse.
+        r"""Gets the name_en of this ModifyApplicationResponse.
 
         应用的英文名称。
 
@@ -322,7 +322,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this ModifyApplicationResponse.
+        r"""Sets the name_en of this ModifyApplicationResponse.
 
         应用的英文名称。
 
@@ -333,7 +333,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @property
     def desc_cn(self):
-        """Gets the desc_cn of this ModifyApplicationResponse.
+        r"""Gets the desc_cn of this ModifyApplicationResponse.
 
         应用的中文描述。
 
@@ -344,7 +344,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @desc_cn.setter
     def desc_cn(self, desc_cn):
-        """Sets the desc_cn of this ModifyApplicationResponse.
+        r"""Sets the desc_cn of this ModifyApplicationResponse.
 
         应用的中文描述。
 
@@ -355,7 +355,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @property
     def desc_en(self):
-        """Gets the desc_en of this ModifyApplicationResponse.
+        r"""Gets the desc_en of this ModifyApplicationResponse.
 
         应用的英文描述。
 
@@ -366,7 +366,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @desc_en.setter
     def desc_en(self, desc_en):
-        """Sets the desc_en of this ModifyApplicationResponse.
+        r"""Sets the desc_en of this ModifyApplicationResponse.
 
         应用的英文描述。
 
@@ -377,7 +377,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @property
     def database_type(self):
-        """Gets the database_type of this ModifyApplicationResponse.
+        r"""Gets the database_type of this ModifyApplicationResponse.
 
         应用的数据库类型。
 
@@ -388,7 +388,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @database_type.setter
     def database_type(self, database_type):
-        """Sets the database_type of this ModifyApplicationResponse.
+        r"""Sets the database_type of this ModifyApplicationResponse.
 
         应用的数据库类型。
 
@@ -399,7 +399,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @property
     def environment(self):
-        """Gets the environment of this ModifyApplicationResponse.
+        r"""Gets the environment of this ModifyApplicationResponse.
 
         运行服务的环境标识。
 
@@ -410,7 +410,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this ModifyApplicationResponse.
+        r"""Sets the environment of this ModifyApplicationResponse.
 
         运行服务的环境标识。
 
@@ -421,7 +421,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ModifyApplicationResponse.
+        r"""Gets the versions of this ModifyApplicationResponse.
 
         应用责任人。
 
@@ -432,7 +432,7 @@ class ModifyApplicationResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ModifyApplicationResponse.
+        r"""Sets the versions of this ModifyApplicationResponse.
 
         应用责任人。
 

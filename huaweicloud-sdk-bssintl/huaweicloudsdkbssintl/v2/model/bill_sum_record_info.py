@@ -51,7 +51,7 @@ class BillSumRecordInfo:
     }
 
     def __init__(self, customer_id=None, resource_type_code=None, region_code=None, cloud_service_type_code=None, consume_time=None, pay_method=None, consume_amount=None, debt=None, discount=None, measure_id=None, bill_type=None, account_details=None, discount_detail_infos=None, enterprise_project_id=None):
-        """BillSumRecordInfo
+        r"""BillSumRecordInfo
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class BillSumRecordInfo:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this BillSumRecordInfo.
+        r"""Gets the customer_id of this BillSumRecordInfo.
 
         客户账号ID。
 
@@ -145,7 +145,7 @@ class BillSumRecordInfo:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this BillSumRecordInfo.
+        r"""Sets the customer_id of this BillSumRecordInfo.
 
         客户账号ID。
 
@@ -156,7 +156,7 @@ class BillSumRecordInfo:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this BillSumRecordInfo.
+        r"""Gets the resource_type_code of this BillSumRecordInfo.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。  说明： 当请求消息中不传递“cloud_service_type_code”参数时，此值返回“null”。
 
@@ -167,7 +167,7 @@ class BillSumRecordInfo:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this BillSumRecordInfo.
+        r"""Sets the resource_type_code of this BillSumRecordInfo.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。  说明： 当请求消息中不传递“cloud_service_type_code”参数时，此值返回“null”。
 
@@ -178,7 +178,7 @@ class BillSumRecordInfo:
 
     @property
     def region_code(self):
-        """Gets the region_code of this BillSumRecordInfo.
+        r"""Gets the region_code of this BillSumRecordInfo.
 
         云服务区，该字段预留，先不使用。
 
@@ -189,7 +189,7 @@ class BillSumRecordInfo:
 
     @region_code.setter
     def region_code(self, region_code):
-        """Sets the region_code of this BillSumRecordInfo.
+        r"""Sets the region_code of this BillSumRecordInfo.
 
         云服务区，该字段预留，先不使用。
 
@@ -200,7 +200,7 @@ class BillSumRecordInfo:
 
     @property
     def cloud_service_type_code(self):
-        """Gets the cloud_service_type_code of this BillSumRecordInfo.
+        r"""Gets the cloud_service_type_code of this BillSumRecordInfo.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
 
@@ -211,7 +211,7 @@ class BillSumRecordInfo:
 
     @cloud_service_type_code.setter
     def cloud_service_type_code(self, cloud_service_type_code):
-        """Sets the cloud_service_type_code of this BillSumRecordInfo.
+        r"""Sets the cloud_service_type_code of this BillSumRecordInfo.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
 
@@ -222,7 +222,7 @@ class BillSumRecordInfo:
 
     @property
     def consume_time(self):
-        """Gets the consume_time of this BillSumRecordInfo.
+        r"""Gets the consume_time of this BillSumRecordInfo.
 
         消费统计的时期。 格式为YYYY-MM。 示例：2018-05
 
@@ -233,7 +233,7 @@ class BillSumRecordInfo:
 
     @consume_time.setter
     def consume_time(self, consume_time):
-        """Sets the consume_time of this BillSumRecordInfo.
+        r"""Sets the consume_time of this BillSumRecordInfo.
 
         消费统计的时期。 格式为YYYY-MM。 示例：2018-05
 
@@ -244,7 +244,7 @@ class BillSumRecordInfo:
 
     @property
     def pay_method(self):
-        """Gets the pay_method of this BillSumRecordInfo.
+        r"""Gets the pay_method of this BillSumRecordInfo.
 
         消费类型。 当请求消息中不传递“cloud_service_type_code”参数时，如果此值返回“0”表示此服务类型下所有的资源类型都是包年/包月计费模式，如果此值返回空字符串表示此服务类型下有资源类型为按需计费模式。当请求消息中传递“cloud_service_type_code”参数时，如果此值返回“0”表示此资源类型是包年/包月计费模式，如果此值返回“1”表示此资源类型为按需计费模式。
 
@@ -255,7 +255,7 @@ class BillSumRecordInfo:
 
     @pay_method.setter
     def pay_method(self, pay_method):
-        """Sets the pay_method of this BillSumRecordInfo.
+        r"""Sets the pay_method of this BillSumRecordInfo.
 
         消费类型。 当请求消息中不传递“cloud_service_type_code”参数时，如果此值返回“0”表示此服务类型下所有的资源类型都是包年/包月计费模式，如果此值返回空字符串表示此服务类型下有资源类型为按需计费模式。当请求消息中传递“cloud_service_type_code”参数时，如果此值返回“0”表示此资源类型是包年/包月计费模式，如果此值返回“1”表示此资源类型为按需计费模式。
 
@@ -266,7 +266,7 @@ class BillSumRecordInfo:
 
     @property
     def consume_amount(self):
-        """Gets the consume_amount of this BillSumRecordInfo.
+        r"""Gets the consume_amount of this BillSumRecordInfo.
 
         消费的金额，即从客户账户实际扣除的金额。包含代金券支付的金额。
 
@@ -277,7 +277,7 @@ class BillSumRecordInfo:
 
     @consume_amount.setter
     def consume_amount(self, consume_amount):
-        """Sets the consume_amount of this BillSumRecordInfo.
+        r"""Sets the consume_amount of this BillSumRecordInfo.
 
         消费的金额，即从客户账户实际扣除的金额。包含代金券支付的金额。
 
@@ -288,7 +288,7 @@ class BillSumRecordInfo:
 
     @property
     def debt(self):
-        """Gets the debt of this BillSumRecordInfo.
+        r"""Gets the debt of this BillSumRecordInfo.
 
         欠费金额，即从客户账户扣费的时候，客户账户金额不足，欠费的金额。
 
@@ -299,7 +299,7 @@ class BillSumRecordInfo:
 
     @debt.setter
     def debt(self, debt):
-        """Sets the debt of this BillSumRecordInfo.
+        r"""Sets the debt of this BillSumRecordInfo.
 
         欠费金额，即从客户账户扣费的时候，客户账户金额不足，欠费的金额。
 
@@ -310,7 +310,7 @@ class BillSumRecordInfo:
 
     @property
     def discount(self):
-        """Gets the discount of this BillSumRecordInfo.
+        r"""Gets the discount of this BillSumRecordInfo.
 
         折扣金额。
 
@@ -321,7 +321,7 @@ class BillSumRecordInfo:
 
     @discount.setter
     def discount(self, discount):
-        """Sets the discount of this BillSumRecordInfo.
+        r"""Sets the discount of this BillSumRecordInfo.
 
         折扣金额。
 
@@ -332,7 +332,7 @@ class BillSumRecordInfo:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this BillSumRecordInfo.
+        r"""Gets the measure_id of this BillSumRecordInfo.
 
         金额单位。 1：元3：分 默认值为3。
 
@@ -343,7 +343,7 @@ class BillSumRecordInfo:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this BillSumRecordInfo.
+        r"""Sets the measure_id of this BillSumRecordInfo.
 
         金额单位。 1：元3：分 默认值为3。
 
@@ -354,7 +354,7 @@ class BillSumRecordInfo:
 
     @property
     def bill_type(self):
-        """Gets the bill_type of this BillSumRecordInfo.
+        r"""Gets the bill_type of this BillSumRecordInfo.
 
         账单类型。 0：消费1：退订
 
@@ -365,7 +365,7 @@ class BillSumRecordInfo:
 
     @bill_type.setter
     def bill_type(self, bill_type):
-        """Sets the bill_type of this BillSumRecordInfo.
+        r"""Sets the bill_type of this BillSumRecordInfo.
 
         账单类型。 0：消费1：退订
 
@@ -376,7 +376,7 @@ class BillSumRecordInfo:
 
     @property
     def account_details(self):
-        """Gets the account_details of this BillSumRecordInfo.
+        r"""Gets the account_details of this BillSumRecordInfo.
 
         按不同账户消费类型和付费方式区分的支付总金额。 具体请参见表4。
 
@@ -387,7 +387,7 @@ class BillSumRecordInfo:
 
     @account_details.setter
     def account_details(self, account_details):
-        """Sets the account_details of this BillSumRecordInfo.
+        r"""Sets the account_details of this BillSumRecordInfo.
 
         按不同账户消费类型和付费方式区分的支付总金额。 具体请参见表4。
 
@@ -398,7 +398,7 @@ class BillSumRecordInfo:
 
     @property
     def discount_detail_infos(self):
-        """Gets the discount_detail_infos of this BillSumRecordInfo.
+        r"""Gets the discount_detail_infos of this BillSumRecordInfo.
 
         折扣金额详情。 具体请参见表5。 当bill_type为1时，不返回此参数。
 
@@ -409,7 +409,7 @@ class BillSumRecordInfo:
 
     @discount_detail_infos.setter
     def discount_detail_infos(self, discount_detail_infos):
-        """Sets the discount_detail_infos of this BillSumRecordInfo.
+        r"""Sets the discount_detail_infos of this BillSumRecordInfo.
 
         折扣金额详情。 具体请参见表5。 当bill_type为1时，不返回此参数。
 
@@ -420,7 +420,7 @@ class BillSumRecordInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this BillSumRecordInfo.
+        r"""Gets the enterprise_project_id of this BillSumRecordInfo.
 
         企业项目ID。 当请求参数中传递了“enterpriseProjectId”，响应参数“bill_sums”返回以企业项目ID为维度的账单记录。
 
@@ -431,7 +431,7 @@ class BillSumRecordInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this BillSumRecordInfo.
+        r"""Sets the enterprise_project_id of this BillSumRecordInfo.
 
         企业项目ID。 当请求参数中传递了“enterpriseProjectId”，响应参数“bill_sums”返回以企业项目ID为维度的账单记录。
 

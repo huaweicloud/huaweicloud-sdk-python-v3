@@ -28,7 +28,7 @@ class ListSatisfactionDimensionsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, satisfaction_dimension_list=None):
-        """ListSatisfactionDimensionsResponse
+        r"""ListSatisfactionDimensionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSatisfactionDimensionsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListSatisfactionDimensionsResponse.
+        r"""Gets the total_count of this ListSatisfactionDimensionsResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListSatisfactionDimensionsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListSatisfactionDimensionsResponse.
+        r"""Sets the total_count of this ListSatisfactionDimensionsResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListSatisfactionDimensionsResponse(SdkResponse):
 
     @property
     def satisfaction_dimension_list(self):
-        """Gets the satisfaction_dimension_list of this ListSatisfactionDimensionsResponse.
+        r"""Gets the satisfaction_dimension_list of this ListSatisfactionDimensionsResponse.
 
         满意度分类列表
 
@@ -84,7 +84,7 @@ class ListSatisfactionDimensionsResponse(SdkResponse):
 
     @satisfaction_dimension_list.setter
     def satisfaction_dimension_list(self, satisfaction_dimension_list):
-        """Sets the satisfaction_dimension_list of this ListSatisfactionDimensionsResponse.
+        r"""Sets the satisfaction_dimension_list of this ListSatisfactionDimensionsResponse.
 
         满意度分类列表
 

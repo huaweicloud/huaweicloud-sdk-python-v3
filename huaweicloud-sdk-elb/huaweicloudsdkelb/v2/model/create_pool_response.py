@@ -26,7 +26,7 @@ class CreatePoolResponse(SdkResponse):
     }
 
     def __init__(self, pool=None):
-        """CreatePoolResponse
+        r"""CreatePoolResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePoolResponse(SdkResponse):
 
     @property
     def pool(self):
-        """Gets the pool of this CreatePoolResponse.
+        r"""Gets the pool of this CreatePoolResponse.
 
         :return: The pool of this CreatePoolResponse.
         :rtype: :class:`huaweicloudsdkelb.v2.PoolResp`
@@ -53,7 +53,7 @@ class CreatePoolResponse(SdkResponse):
 
     @pool.setter
     def pool(self, pool):
-        """Sets the pool of this CreatePoolResponse.
+        r"""Sets the pool of this CreatePoolResponse.
 
         :param pool: The pool of this CreatePoolResponse.
         :type pool: :class:`huaweicloudsdkelb.v2.PoolResp`

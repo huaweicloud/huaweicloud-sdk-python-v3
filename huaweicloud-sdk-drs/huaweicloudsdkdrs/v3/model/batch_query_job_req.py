@@ -25,7 +25,7 @@ class BatchQueryJobReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchQueryJobReq
+        r"""BatchQueryJobReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchQueryJobReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchQueryJobReq.
+        r"""Gets the jobs of this BatchQueryJobReq.
 
         查询任务请求体
 
@@ -53,7 +53,7 @@ class BatchQueryJobReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchQueryJobReq.
+        r"""Sets the jobs of this BatchQueryJobReq.
 
         查询任务请求体
 

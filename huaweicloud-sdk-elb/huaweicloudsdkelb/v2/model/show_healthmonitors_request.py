@@ -25,7 +25,7 @@ class ShowHealthmonitorsRequest:
     }
 
     def __init__(self, healthmonitor_id=None):
-        """ShowHealthmonitorsRequest
+        r"""ShowHealthmonitorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowHealthmonitorsRequest:
 
     @property
     def healthmonitor_id(self):
-        """Gets the healthmonitor_id of this ShowHealthmonitorsRequest.
+        r"""Gets the healthmonitor_id of this ShowHealthmonitorsRequest.
 
         健康检查id
 
@@ -53,7 +53,7 @@ class ShowHealthmonitorsRequest:
 
     @healthmonitor_id.setter
     def healthmonitor_id(self, healthmonitor_id):
-        """Sets the healthmonitor_id of this ShowHealthmonitorsRequest.
+        r"""Sets the healthmonitor_id of this ShowHealthmonitorsRequest.
 
         健康检查id
 

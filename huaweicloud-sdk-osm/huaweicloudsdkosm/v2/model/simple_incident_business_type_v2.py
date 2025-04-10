@@ -31,7 +31,7 @@ class SimpleIncidentBusinessTypeV2:
     }
 
     def __init__(self, business_type_id=None, business_type_name=None, case_type=None, can_use_support_plan=None):
-        """SimpleIncidentBusinessTypeV2
+        r"""SimpleIncidentBusinessTypeV2
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SimpleIncidentBusinessTypeV2:
 
     @property
     def business_type_id(self):
-        """Gets the business_type_id of this SimpleIncidentBusinessTypeV2.
+        r"""Gets the business_type_id of this SimpleIncidentBusinessTypeV2.
 
         问题类型id
 
@@ -75,7 +75,7 @@ class SimpleIncidentBusinessTypeV2:
 
     @business_type_id.setter
     def business_type_id(self, business_type_id):
-        """Sets the business_type_id of this SimpleIncidentBusinessTypeV2.
+        r"""Sets the business_type_id of this SimpleIncidentBusinessTypeV2.
 
         问题类型id
 
@@ -86,7 +86,7 @@ class SimpleIncidentBusinessTypeV2:
 
     @property
     def business_type_name(self):
-        """Gets the business_type_name of this SimpleIncidentBusinessTypeV2.
+        r"""Gets the business_type_name of this SimpleIncidentBusinessTypeV2.
 
         问题类型名称
 
@@ -97,7 +97,7 @@ class SimpleIncidentBusinessTypeV2:
 
     @business_type_name.setter
     def business_type_name(self, business_type_name):
-        """Sets the business_type_name of this SimpleIncidentBusinessTypeV2.
+        r"""Sets the business_type_name of this SimpleIncidentBusinessTypeV2.
 
         问题类型名称
 
@@ -108,7 +108,7 @@ class SimpleIncidentBusinessTypeV2:
 
     @property
     def case_type(self):
-        """Gets the case_type of this SimpleIncidentBusinessTypeV2.
+        r"""Gets the case_type of this SimpleIncidentBusinessTypeV2.
 
         对应的工单类型0咨询 5报障
 
@@ -119,7 +119,7 @@ class SimpleIncidentBusinessTypeV2:
 
     @case_type.setter
     def case_type(self, case_type):
-        """Sets the case_type of this SimpleIncidentBusinessTypeV2.
+        r"""Sets the case_type of this SimpleIncidentBusinessTypeV2.
 
         对应的工单类型0咨询 5报障
 
@@ -130,7 +130,7 @@ class SimpleIncidentBusinessTypeV2:
 
     @property
     def can_use_support_plan(self):
-        """Gets the can_use_support_plan of this SimpleIncidentBusinessTypeV2.
+        r"""Gets the can_use_support_plan of this SimpleIncidentBusinessTypeV2.
 
         是否可以使用支持计划
 
@@ -141,7 +141,7 @@ class SimpleIncidentBusinessTypeV2:
 
     @can_use_support_plan.setter
     def can_use_support_plan(self, can_use_support_plan):
-        """Sets the can_use_support_plan of this SimpleIncidentBusinessTypeV2.
+        r"""Sets the can_use_support_plan of this SimpleIncidentBusinessTypeV2.
 
         是否可以使用支持计划
 

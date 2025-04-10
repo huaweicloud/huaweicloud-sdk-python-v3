@@ -53,7 +53,7 @@ class DrugDatabaseDto:
     }
 
     def __init__(self, id=None, name=None, type=None, status=None, description=None, create_time=None, update_time=None, creator=None, failed_message=None, css_id=None, css_name=None, files=None, columns=None, shareable=None, data_num=None):
-        """DrugDatabaseDto
+        r"""DrugDatabaseDto
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class DrugDatabaseDto:
 
     @property
     def id(self):
-        """Gets the id of this DrugDatabaseDto.
+        r"""Gets the id of this DrugDatabaseDto.
 
         数据库id
 
@@ -152,7 +152,7 @@ class DrugDatabaseDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DrugDatabaseDto.
+        r"""Sets the id of this DrugDatabaseDto.
 
         数据库id
 
@@ -163,7 +163,7 @@ class DrugDatabaseDto:
 
     @property
     def name(self):
-        """Gets the name of this DrugDatabaseDto.
+        r"""Gets the name of this DrugDatabaseDto.
 
         数据库名称
 
@@ -174,7 +174,7 @@ class DrugDatabaseDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DrugDatabaseDto.
+        r"""Sets the name of this DrugDatabaseDto.
 
         数据库名称
 
@@ -185,7 +185,7 @@ class DrugDatabaseDto:
 
     @property
     def type(self):
-        """Gets the type of this DrugDatabaseDto.
+        r"""Gets the type of this DrugDatabaseDto.
 
         数据库类型
 
@@ -196,7 +196,7 @@ class DrugDatabaseDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DrugDatabaseDto.
+        r"""Sets the type of this DrugDatabaseDto.
 
         数据库类型
 
@@ -207,7 +207,7 @@ class DrugDatabaseDto:
 
     @property
     def status(self):
-        """Gets the status of this DrugDatabaseDto.
+        r"""Gets the status of this DrugDatabaseDto.
 
         数据库状态
 
@@ -218,7 +218,7 @@ class DrugDatabaseDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DrugDatabaseDto.
+        r"""Sets the status of this DrugDatabaseDto.
 
         数据库状态
 
@@ -229,7 +229,7 @@ class DrugDatabaseDto:
 
     @property
     def description(self):
-        """Gets the description of this DrugDatabaseDto.
+        r"""Gets the description of this DrugDatabaseDto.
 
         数据库描述
 
@@ -240,7 +240,7 @@ class DrugDatabaseDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DrugDatabaseDto.
+        r"""Sets the description of this DrugDatabaseDto.
 
         数据库描述
 
@@ -251,7 +251,7 @@ class DrugDatabaseDto:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DrugDatabaseDto.
+        r"""Gets the create_time of this DrugDatabaseDto.
 
         数据库创建时间
 
@@ -262,7 +262,7 @@ class DrugDatabaseDto:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DrugDatabaseDto.
+        r"""Sets the create_time of this DrugDatabaseDto.
 
         数据库创建时间
 
@@ -273,7 +273,7 @@ class DrugDatabaseDto:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DrugDatabaseDto.
+        r"""Gets the update_time of this DrugDatabaseDto.
 
         数据库更新时间
 
@@ -284,7 +284,7 @@ class DrugDatabaseDto:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DrugDatabaseDto.
+        r"""Sets the update_time of this DrugDatabaseDto.
 
         数据库更新时间
 
@@ -295,7 +295,7 @@ class DrugDatabaseDto:
 
     @property
     def creator(self):
-        """Gets the creator of this DrugDatabaseDto.
+        r"""Gets the creator of this DrugDatabaseDto.
 
         创建数据库的用户名称
 
@@ -306,7 +306,7 @@ class DrugDatabaseDto:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this DrugDatabaseDto.
+        r"""Sets the creator of this DrugDatabaseDto.
 
         创建数据库的用户名称
 
@@ -317,7 +317,7 @@ class DrugDatabaseDto:
 
     @property
     def failed_message(self):
-        """Gets the failed_message of this DrugDatabaseDto.
+        r"""Gets the failed_message of this DrugDatabaseDto.
 
         失败提示，当作业执行失败时会返回
 
@@ -328,7 +328,7 @@ class DrugDatabaseDto:
 
     @failed_message.setter
     def failed_message(self, failed_message):
-        """Sets the failed_message of this DrugDatabaseDto.
+        r"""Sets the failed_message of this DrugDatabaseDto.
 
         失败提示，当作业执行失败时会返回
 
@@ -339,7 +339,7 @@ class DrugDatabaseDto:
 
     @property
     def css_id(self):
-        """Gets the css_id of this DrugDatabaseDto.
+        r"""Gets the css_id of this DrugDatabaseDto.
 
         css集群id
 
@@ -350,7 +350,7 @@ class DrugDatabaseDto:
 
     @css_id.setter
     def css_id(self, css_id):
-        """Sets the css_id of this DrugDatabaseDto.
+        r"""Sets the css_id of this DrugDatabaseDto.
 
         css集群id
 
@@ -361,7 +361,7 @@ class DrugDatabaseDto:
 
     @property
     def css_name(self):
-        """Gets the css_name of this DrugDatabaseDto.
+        r"""Gets the css_name of this DrugDatabaseDto.
 
         css集群名称
 
@@ -372,7 +372,7 @@ class DrugDatabaseDto:
 
     @css_name.setter
     def css_name(self, css_name):
-        """Sets the css_name of this DrugDatabaseDto.
+        r"""Sets the css_name of this DrugDatabaseDto.
 
         css集群名称
 
@@ -383,7 +383,7 @@ class DrugDatabaseDto:
 
     @property
     def files(self):
-        """Gets the files of this DrugDatabaseDto.
+        r"""Gets the files of this DrugDatabaseDto.
 
         数据库文件列表
 
@@ -394,7 +394,7 @@ class DrugDatabaseDto:
 
     @files.setter
     def files(self, files):
-        """Sets the files of this DrugDatabaseDto.
+        r"""Sets the files of this DrugDatabaseDto.
 
         数据库文件列表
 
@@ -405,7 +405,7 @@ class DrugDatabaseDto:
 
     @property
     def columns(self):
-        """Gets the columns of this DrugDatabaseDto.
+        r"""Gets the columns of this DrugDatabaseDto.
 
         数据库列名
 
@@ -416,7 +416,7 @@ class DrugDatabaseDto:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this DrugDatabaseDto.
+        r"""Sets the columns of this DrugDatabaseDto.
 
         数据库列名
 
@@ -427,7 +427,7 @@ class DrugDatabaseDto:
 
     @property
     def shareable(self):
-        """Gets the shareable of this DrugDatabaseDto.
+        r"""Gets the shareable of this DrugDatabaseDto.
 
         是否打开组织共享
 
@@ -438,7 +438,7 @@ class DrugDatabaseDto:
 
     @shareable.setter
     def shareable(self, shareable):
-        """Sets the shareable of this DrugDatabaseDto.
+        r"""Sets the shareable of this DrugDatabaseDto.
 
         是否打开组织共享
 
@@ -449,7 +449,7 @@ class DrugDatabaseDto:
 
     @property
     def data_num(self):
-        """Gets the data_num of this DrugDatabaseDto.
+        r"""Gets the data_num of this DrugDatabaseDto.
 
         分子数量
 
@@ -460,7 +460,7 @@ class DrugDatabaseDto:
 
     @data_num.setter
     def data_num(self, data_num):
-        """Sets the data_num of this DrugDatabaseDto.
+        r"""Sets the data_num of this DrugDatabaseDto.
 
         分子数量
 

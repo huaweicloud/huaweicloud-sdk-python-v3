@@ -29,7 +29,7 @@ class UpdateConfigMapRequest:
     }
 
     def __init__(self, ief_instance_id=None, configmap_id=None, body=None):
-        """UpdateConfigMapRequest
+        r"""UpdateConfigMapRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateConfigMapRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this UpdateConfigMapRequest.
+        r"""Gets the ief_instance_id of this UpdateConfigMapRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -67,7 +67,7 @@ class UpdateConfigMapRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this UpdateConfigMapRequest.
+        r"""Sets the ief_instance_id of this UpdateConfigMapRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -78,7 +78,7 @@ class UpdateConfigMapRequest:
 
     @property
     def configmap_id(self):
-        """Gets the configmap_id of this UpdateConfigMapRequest.
+        r"""Gets the configmap_id of this UpdateConfigMapRequest.
 
         配置项ID
 
@@ -89,7 +89,7 @@ class UpdateConfigMapRequest:
 
     @configmap_id.setter
     def configmap_id(self, configmap_id):
-        """Sets the configmap_id of this UpdateConfigMapRequest.
+        r"""Sets the configmap_id of this UpdateConfigMapRequest.
 
         配置项ID
 
@@ -100,7 +100,7 @@ class UpdateConfigMapRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateConfigMapRequest.
+        r"""Gets the body of this UpdateConfigMapRequest.
 
         :return: The body of this UpdateConfigMapRequest.
         :rtype: :class:`huaweicloudsdkief.v1.UpdateConfigMaps`
@@ -109,7 +109,7 @@ class UpdateConfigMapRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateConfigMapRequest.
+        r"""Sets the body of this UpdateConfigMapRequest.
 
         :param body: The body of this UpdateConfigMapRequest.
         :type body: :class:`huaweicloudsdkief.v1.UpdateConfigMaps`

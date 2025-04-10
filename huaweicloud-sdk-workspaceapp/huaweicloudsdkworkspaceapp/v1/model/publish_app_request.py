@@ -27,7 +27,7 @@ class PublishAppRequest:
     }
 
     def __init__(self, app_group_id=None, body=None):
-        """PublishAppRequest
+        r"""PublishAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PublishAppRequest:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this PublishAppRequest.
+        r"""Gets the app_group_id of this PublishAppRequest.
 
         应用组ID。
 
@@ -60,7 +60,7 @@ class PublishAppRequest:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this PublishAppRequest.
+        r"""Sets the app_group_id of this PublishAppRequest.
 
         应用组ID。
 
@@ -71,7 +71,7 @@ class PublishAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this PublishAppRequest.
+        r"""Gets the body of this PublishAppRequest.
 
         :return: The body of this PublishAppRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PublishAppReq`
@@ -80,7 +80,7 @@ class PublishAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PublishAppRequest.
+        r"""Sets the body of this PublishAppRequest.
 
         :param body: The body of this PublishAppRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.PublishAppReq`

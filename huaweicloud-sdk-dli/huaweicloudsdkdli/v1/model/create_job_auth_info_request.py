@@ -25,7 +25,7 @@ class CreateJobAuthInfoRequest:
     }
 
     def __init__(self, body=None):
-        """CreateJobAuthInfoRequest
+        r"""CreateJobAuthInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateJobAuthInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateJobAuthInfoRequest.
+        r"""Gets the body of this CreateJobAuthInfoRequest.
 
         :return: The body of this CreateJobAuthInfoRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateJobAuthInfoRequestBody`
@@ -52,7 +52,7 @@ class CreateJobAuthInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateJobAuthInfoRequest.
+        r"""Sets the body of this CreateJobAuthInfoRequest.
 
         :param body: The body of this CreateJobAuthInfoRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateJobAuthInfoRequestBody`

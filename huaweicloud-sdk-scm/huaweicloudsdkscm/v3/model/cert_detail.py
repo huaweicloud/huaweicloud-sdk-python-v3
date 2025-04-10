@@ -25,7 +25,7 @@ class CertDetail:
     }
 
     def __init__(self, cert_id=None):
-        """CertDetail
+        r"""CertDetail
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CertDetail:
 
     @property
     def cert_id(self):
-        """Gets the cert_id of this CertDetail.
+        r"""Gets the cert_id of this CertDetail.
 
         证书ID。
 
@@ -53,7 +53,7 @@ class CertDetail:
 
     @cert_id.setter
     def cert_id(self, cert_id):
-        """Sets the cert_id of this CertDetail.
+        r"""Sets the cert_id of this CertDetail.
 
         证书ID。
 

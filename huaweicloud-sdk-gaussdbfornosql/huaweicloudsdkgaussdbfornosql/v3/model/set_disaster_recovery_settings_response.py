@@ -26,7 +26,7 @@ class SetDisasterRecoverySettingsResponse(SdkResponse):
     }
 
     def __init__(self, successed_instance_ids=None):
-        """SetDisasterRecoverySettingsResponse
+        r"""SetDisasterRecoverySettingsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SetDisasterRecoverySettingsResponse(SdkResponse):
 
     @property
     def successed_instance_ids(self):
-        """Gets the successed_instance_ids of this SetDisasterRecoverySettingsResponse.
+        r"""Gets the successed_instance_ids of this SetDisasterRecoverySettingsResponse.
 
         设置容灾切换故障节点比例成功的实例列表。
 
@@ -55,7 +55,7 @@ class SetDisasterRecoverySettingsResponse(SdkResponse):
 
     @successed_instance_ids.setter
     def successed_instance_ids(self, successed_instance_ids):
-        """Sets the successed_instance_ids of this SetDisasterRecoverySettingsResponse.
+        r"""Sets the successed_instance_ids of this SetDisasterRecoverySettingsResponse.
 
         设置容灾切换故障节点比例成功的实例列表。
 

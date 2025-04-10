@@ -35,7 +35,7 @@ class ListWorkspacesRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, workspace_type=None, limit=None, offset=None, dw_type=None):
-        """ListWorkspacesRequest
+        r"""ListWorkspacesRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListWorkspacesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListWorkspacesRequest.
+        r"""Gets the workspace of this ListWorkspacesRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -88,7 +88,7 @@ class ListWorkspacesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListWorkspacesRequest.
+        r"""Sets the workspace of this ListWorkspacesRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -99,7 +99,7 @@ class ListWorkspacesRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListWorkspacesRequest.
+        r"""Gets the x_project_id of this ListWorkspacesRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -110,7 +110,7 @@ class ListWorkspacesRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListWorkspacesRequest.
+        r"""Sets the x_project_id of this ListWorkspacesRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -121,7 +121,7 @@ class ListWorkspacesRequest:
 
     @property
     def workspace_type(self):
-        """Gets the workspace_type of this ListWorkspacesRequest.
+        r"""Gets the workspace_type of this ListWorkspacesRequest.
 
         模型工作区类型枚举。 枚举值：   - THIRD_NF: 关系建模   - DIMENSION: 维度建模 
 
@@ -132,7 +132,7 @@ class ListWorkspacesRequest:
 
     @workspace_type.setter
     def workspace_type(self, workspace_type):
-        """Sets the workspace_type of this ListWorkspacesRequest.
+        r"""Sets the workspace_type of this ListWorkspacesRequest.
 
         模型工作区类型枚举。 枚举值：   - THIRD_NF: 关系建模   - DIMENSION: 维度建模 
 
@@ -143,7 +143,7 @@ class ListWorkspacesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkspacesRequest.
+        r"""Gets the limit of this ListWorkspacesRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -154,7 +154,7 @@ class ListWorkspacesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkspacesRequest.
+        r"""Sets the limit of this ListWorkspacesRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -165,7 +165,7 @@ class ListWorkspacesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkspacesRequest.
+        r"""Gets the offset of this ListWorkspacesRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -176,7 +176,7 @@ class ListWorkspacesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkspacesRequest.
+        r"""Sets the offset of this ListWorkspacesRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -187,7 +187,7 @@ class ListWorkspacesRequest:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this ListWorkspacesRequest.
+        r"""Gets the dw_type of this ListWorkspacesRequest.
 
         数据连接类型
 
@@ -198,7 +198,7 @@ class ListWorkspacesRequest:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this ListWorkspacesRequest.
+        r"""Sets the dw_type of this ListWorkspacesRequest.
 
         数据连接类型
 

@@ -33,7 +33,7 @@ class CommandTimeTaken:
     }
 
     def __init__(self, calls_sum=None, usec_sum=None, command_name=None, per_usec=None, average_usec=None):
-        """CommandTimeTaken
+        r"""CommandTimeTaken
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class CommandTimeTaken:
 
     @property
     def calls_sum(self):
-        """Gets the calls_sum of this CommandTimeTaken.
+        r"""Gets the calls_sum of this CommandTimeTaken.
 
         调用次数
 
@@ -77,7 +77,7 @@ class CommandTimeTaken:
 
     @calls_sum.setter
     def calls_sum(self, calls_sum):
-        """Sets the calls_sum of this CommandTimeTaken.
+        r"""Sets the calls_sum of this CommandTimeTaken.
 
         调用次数
 
@@ -88,7 +88,7 @@ class CommandTimeTaken:
 
     @property
     def usec_sum(self):
-        """Gets the usec_sum of this CommandTimeTaken.
+        r"""Gets the usec_sum of this CommandTimeTaken.
 
         耗时总数
 
@@ -99,7 +99,7 @@ class CommandTimeTaken:
 
     @usec_sum.setter
     def usec_sum(self, usec_sum):
-        """Sets the usec_sum of this CommandTimeTaken.
+        r"""Sets the usec_sum of this CommandTimeTaken.
 
         耗时总数
 
@@ -110,7 +110,7 @@ class CommandTimeTaken:
 
     @property
     def command_name(self):
-        """Gets the command_name of this CommandTimeTaken.
+        r"""Gets the command_name of this CommandTimeTaken.
 
         命令名称
 
@@ -121,7 +121,7 @@ class CommandTimeTaken:
 
     @command_name.setter
     def command_name(self, command_name):
-        """Sets the command_name of this CommandTimeTaken.
+        r"""Sets the command_name of this CommandTimeTaken.
 
         命令名称
 
@@ -132,7 +132,7 @@ class CommandTimeTaken:
 
     @property
     def per_usec(self):
-        """Gets the per_usec of this CommandTimeTaken.
+        r"""Gets the per_usec of this CommandTimeTaken.
 
         耗时占比
 
@@ -143,7 +143,7 @@ class CommandTimeTaken:
 
     @per_usec.setter
     def per_usec(self, per_usec):
-        """Sets the per_usec of this CommandTimeTaken.
+        r"""Sets the per_usec of this CommandTimeTaken.
 
         耗时占比
 
@@ -154,7 +154,7 @@ class CommandTimeTaken:
 
     @property
     def average_usec(self):
-        """Gets the average_usec of this CommandTimeTaken.
+        r"""Gets the average_usec of this CommandTimeTaken.
 
         每次调用平均耗时
 
@@ -165,7 +165,7 @@ class CommandTimeTaken:
 
     @average_usec.setter
     def average_usec(self, average_usec):
-        """Sets the average_usec of this CommandTimeTaken.
+        r"""Sets the average_usec of this CommandTimeTaken.
 
         每次调用平均耗时
 

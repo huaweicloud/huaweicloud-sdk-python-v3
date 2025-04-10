@@ -25,7 +25,7 @@ class IpGroupIp:
     }
 
     def __init__(self, ip=None):
-        """IpGroupIp
+        r"""IpGroupIp
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class IpGroupIp:
 
     @property
     def ip(self):
-        """Gets the ip of this IpGroupIp.
+        r"""Gets the ip of this IpGroupIp.
 
         参数解释：IP地址，可以是具体的IP地址或者IP地址段。
 
@@ -53,7 +53,7 @@ class IpGroupIp:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this IpGroupIp.
+        r"""Sets the ip of this IpGroupIp.
 
         参数解释：IP地址，可以是具体的IP地址或者IP地址段。
 

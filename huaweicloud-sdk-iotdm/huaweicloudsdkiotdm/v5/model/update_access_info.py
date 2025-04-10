@@ -31,7 +31,7 @@ class UpdateAccessInfo:
     }
 
     def __init__(self, access_type=None, domain_name=None, public_addresses_enable=None, ip_whitelist=None):
-        """UpdateAccessInfo
+        r"""UpdateAccessInfo
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateAccessInfo:
 
     @property
     def access_type(self):
-        """Gets the access_type of this UpdateAccessInfo.
+        r"""Gets the access_type of this UpdateAccessInfo.
 
         **参数说明**：接入地址的类型，如应用接入的HTTPS协议的取值为：APP_HTTPS，设备接入的MQTT协议的取值为：DEVICE_MQTT **取值范围**： - APP_HTTPS：应用接入HTTPS协议 - APP_AMQP：应用接入AMQP协议 - APP_MQTT：应用接入MQTT协议 - DEVICE_COAP：设备接入COAP协议 - DEVICE_MQTT：设备接入MQTT协议 - DEVICE_HTTPS：设备接入HTTPS协议 
 
@@ -74,7 +74,7 @@ class UpdateAccessInfo:
 
     @access_type.setter
     def access_type(self, access_type):
-        """Sets the access_type of this UpdateAccessInfo.
+        r"""Sets the access_type of this UpdateAccessInfo.
 
         **参数说明**：接入地址的类型，如应用接入的HTTPS协议的取值为：APP_HTTPS，设备接入的MQTT协议的取值为：DEVICE_MQTT **取值范围**： - APP_HTTPS：应用接入HTTPS协议 - APP_AMQP：应用接入AMQP协议 - APP_MQTT：应用接入MQTT协议 - DEVICE_COAP：设备接入COAP协议 - DEVICE_MQTT：设备接入MQTT协议 - DEVICE_HTTPS：设备接入HTTPS协议 
 
@@ -85,7 +85,7 @@ class UpdateAccessInfo:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this UpdateAccessInfo.
+        r"""Gets the domain_name of this UpdateAccessInfo.
 
         **参数说明**：接入域名，如果需要更新域名，则携带该字段。 
 
@@ -96,7 +96,7 @@ class UpdateAccessInfo:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this UpdateAccessInfo.
+        r"""Sets the domain_name of this UpdateAccessInfo.
 
         **参数说明**：接入域名，如果需要更新域名，则携带该字段。 
 
@@ -107,7 +107,7 @@ class UpdateAccessInfo:
 
     @property
     def public_addresses_enable(self):
-        """Gets the public_addresses_enable of this UpdateAccessInfo.
+        r"""Gets the public_addresses_enable of this UpdateAccessInfo.
 
         **参数说明**：是否配置公网接入地址，true，false **取值范围**： - true：配置公网接入地址，平台将自动分配公网接入地址。约束：分配地址后将不能修改或删除。 
 
@@ -118,7 +118,7 @@ class UpdateAccessInfo:
 
     @public_addresses_enable.setter
     def public_addresses_enable(self, public_addresses_enable):
-        """Sets the public_addresses_enable of this UpdateAccessInfo.
+        r"""Sets the public_addresses_enable of this UpdateAccessInfo.
 
         **参数说明**：是否配置公网接入地址，true，false **取值范围**： - true：配置公网接入地址，平台将自动分配公网接入地址。约束：分配地址后将不能修改或删除。 
 
@@ -129,7 +129,7 @@ class UpdateAccessInfo:
 
     @property
     def ip_whitelist(self):
-        """Gets the ip_whitelist of this UpdateAccessInfo.
+        r"""Gets the ip_whitelist of this UpdateAccessInfo.
 
         :return: The ip_whitelist of this UpdateAccessInfo.
         :rtype: :class:`huaweicloudsdkiotdm.v5.IPWhiteList`
@@ -138,7 +138,7 @@ class UpdateAccessInfo:
 
     @ip_whitelist.setter
     def ip_whitelist(self, ip_whitelist):
-        """Sets the ip_whitelist of this UpdateAccessInfo.
+        r"""Sets the ip_whitelist of this UpdateAccessInfo.
 
         :param ip_whitelist: The ip_whitelist of this UpdateAccessInfo.
         :type ip_whitelist: :class:`huaweicloudsdkiotdm.v5.IPWhiteList`

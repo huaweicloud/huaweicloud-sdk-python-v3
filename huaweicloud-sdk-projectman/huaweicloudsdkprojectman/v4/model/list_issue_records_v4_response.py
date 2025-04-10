@@ -32,7 +32,7 @@ class ListIssueRecordsV4Response(SdkResponse):
     }
 
     def __init__(self, id=None, created_time=None, records=None, total=None):
-        """ListIssueRecordsV4Response
+        r"""ListIssueRecordsV4Response
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListIssueRecordsV4Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ListIssueRecordsV4Response.
+        r"""Gets the id of this ListIssueRecordsV4Response.
 
         操作记录id (已废弃)
 
@@ -76,7 +76,7 @@ class ListIssueRecordsV4Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListIssueRecordsV4Response.
+        r"""Sets the id of this ListIssueRecordsV4Response.
 
         操作记录id (已废弃)
 
@@ -87,7 +87,7 @@ class ListIssueRecordsV4Response(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ListIssueRecordsV4Response.
+        r"""Gets the created_time of this ListIssueRecordsV4Response.
 
         创建时间 (已废弃)
 
@@ -98,7 +98,7 @@ class ListIssueRecordsV4Response(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ListIssueRecordsV4Response.
+        r"""Sets the created_time of this ListIssueRecordsV4Response.
 
         创建时间 (已废弃)
 
@@ -109,7 +109,7 @@ class ListIssueRecordsV4Response(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListIssueRecordsV4Response.
+        r"""Gets the records of this ListIssueRecordsV4Response.
 
         :return: The records of this ListIssueRecordsV4Response.
         :rtype: list[:class:`huaweicloudsdkprojectman.v4.IssueRecordV4`]
@@ -118,7 +118,7 @@ class ListIssueRecordsV4Response(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListIssueRecordsV4Response.
+        r"""Sets the records of this ListIssueRecordsV4Response.
 
         :param records: The records of this ListIssueRecordsV4Response.
         :type records: list[:class:`huaweicloudsdkprojectman.v4.IssueRecordV4`]
@@ -127,7 +127,7 @@ class ListIssueRecordsV4Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListIssueRecordsV4Response.
+        r"""Gets the total of this ListIssueRecordsV4Response.
 
         操作记录总数
 
@@ -138,7 +138,7 @@ class ListIssueRecordsV4Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListIssueRecordsV4Response.
+        r"""Sets the total of this ListIssueRecordsV4Response.
 
         操作记录总数
 

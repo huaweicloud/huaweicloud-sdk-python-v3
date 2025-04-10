@@ -32,7 +32,7 @@ class ListRdSforMySqlProxyResponse(SdkResponse):
     }
 
     def __init__(self, proxy_query_info_list=None, max_proxy_num=None, max_proxy_node_num=None, support_balance_route_mode_for_favored_version=None):
-        """ListRdSforMySqlProxyResponse
+        r"""ListRdSforMySqlProxyResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListRdSforMySqlProxyResponse(SdkResponse):
 
     @property
     def proxy_query_info_list(self):
-        """Gets the proxy_query_info_list of this ListRdSforMySqlProxyResponse.
+        r"""Gets the proxy_query_info_list of this ListRdSforMySqlProxyResponse.
 
         数据库实例下的数据库代理信息列表。
 
@@ -76,7 +76,7 @@ class ListRdSforMySqlProxyResponse(SdkResponse):
 
     @proxy_query_info_list.setter
     def proxy_query_info_list(self, proxy_query_info_list):
-        """Sets the proxy_query_info_list of this ListRdSforMySqlProxyResponse.
+        r"""Sets the proxy_query_info_list of this ListRdSforMySqlProxyResponse.
 
         数据库实例下的数据库代理信息列表。
 
@@ -87,7 +87,7 @@ class ListRdSforMySqlProxyResponse(SdkResponse):
 
     @property
     def max_proxy_num(self):
-        """Gets the max_proxy_num of this ListRdSforMySqlProxyResponse.
+        r"""Gets the max_proxy_num of this ListRdSforMySqlProxyResponse.
 
         支持同时开启的数据库代理的最大数量。
 
@@ -98,7 +98,7 @@ class ListRdSforMySqlProxyResponse(SdkResponse):
 
     @max_proxy_num.setter
     def max_proxy_num(self, max_proxy_num):
-        """Sets the max_proxy_num of this ListRdSforMySqlProxyResponse.
+        r"""Sets the max_proxy_num of this ListRdSforMySqlProxyResponse.
 
         支持同时开启的数据库代理的最大数量。
 
@@ -109,7 +109,7 @@ class ListRdSforMySqlProxyResponse(SdkResponse):
 
     @property
     def max_proxy_node_num(self):
-        """Gets the max_proxy_node_num of this ListRdSforMySqlProxyResponse.
+        r"""Gets the max_proxy_node_num of this ListRdSforMySqlProxyResponse.
 
         单个数据库代理支持选择的代理节点的最大数量。
 
@@ -120,7 +120,7 @@ class ListRdSforMySqlProxyResponse(SdkResponse):
 
     @max_proxy_node_num.setter
     def max_proxy_node_num(self, max_proxy_node_num):
-        """Sets the max_proxy_node_num of this ListRdSforMySqlProxyResponse.
+        r"""Sets the max_proxy_node_num of this ListRdSforMySqlProxyResponse.
 
         单个数据库代理支持选择的代理节点的最大数量。
 
@@ -131,7 +131,7 @@ class ListRdSforMySqlProxyResponse(SdkResponse):
 
     @property
     def support_balance_route_mode_for_favored_version(self):
-        """Gets the support_balance_route_mode_for_favored_version of this ListRdSforMySqlProxyResponse.
+        r"""Gets the support_balance_route_mode_for_favored_version of this ListRdSforMySqlProxyResponse.
 
         是否支持创建数据库代理时设置负载均衡路由模式。
 
@@ -142,7 +142,7 @@ class ListRdSforMySqlProxyResponse(SdkResponse):
 
     @support_balance_route_mode_for_favored_version.setter
     def support_balance_route_mode_for_favored_version(self, support_balance_route_mode_for_favored_version):
-        """Sets the support_balance_route_mode_for_favored_version of this ListRdSforMySqlProxyResponse.
+        r"""Sets the support_balance_route_mode_for_favored_version of this ListRdSforMySqlProxyResponse.
 
         是否支持创建数据库代理时设置负载均衡路由模式。
 

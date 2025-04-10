@@ -27,7 +27,7 @@ class PodAffinity:
     }
 
     def __init__(self, node_affinity=None, pod_affinity=None):
-        """PodAffinity
+        r"""PodAffinity
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PodAffinity:
 
     @property
     def node_affinity(self):
-        """Gets the node_affinity of this PodAffinity.
+        r"""Gets the node_affinity of this PodAffinity.
 
         节点亲和规则
 
@@ -61,7 +61,7 @@ class PodAffinity:
 
     @node_affinity.setter
     def node_affinity(self, node_affinity):
-        """Sets the node_affinity of this PodAffinity.
+        r"""Sets the node_affinity of this PodAffinity.
 
         节点亲和规则
 
@@ -72,7 +72,7 @@ class PodAffinity:
 
     @property
     def pod_affinity(self):
-        """Gets the pod_affinity of this PodAffinity.
+        r"""Gets the pod_affinity of this PodAffinity.
 
         Pod亲和规则
 
@@ -83,7 +83,7 @@ class PodAffinity:
 
     @pod_affinity.setter
     def pod_affinity(self, pod_affinity):
-        """Sets the pod_affinity of this PodAffinity.
+        r"""Sets the pod_affinity of this PodAffinity.
 
         Pod亲和规则
 

@@ -29,7 +29,7 @@ class DeleteIndicatorRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """DeleteIndicatorRequest
+        r"""DeleteIndicatorRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteIndicatorRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteIndicatorRequest.
+        r"""Gets the project_id of this DeleteIndicatorRequest.
 
         项目ID
 
@@ -66,7 +66,7 @@ class DeleteIndicatorRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteIndicatorRequest.
+        r"""Sets the project_id of this DeleteIndicatorRequest.
 
         项目ID
 
@@ -77,7 +77,7 @@ class DeleteIndicatorRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeleteIndicatorRequest.
+        r"""Gets the workspace_id of this DeleteIndicatorRequest.
 
         工作空间ID
 
@@ -88,7 +88,7 @@ class DeleteIndicatorRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeleteIndicatorRequest.
+        r"""Sets the workspace_id of this DeleteIndicatorRequest.
 
         工作空间ID
 
@@ -99,7 +99,7 @@ class DeleteIndicatorRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteIndicatorRequest.
+        r"""Gets the body of this DeleteIndicatorRequest.
 
         :return: The body of this DeleteIndicatorRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteIndicatorRequestBody`
@@ -108,7 +108,7 @@ class DeleteIndicatorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteIndicatorRequest.
+        r"""Sets the body of this DeleteIndicatorRequest.
 
         :param body: The body of this DeleteIndicatorRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.DeleteIndicatorRequestBody`

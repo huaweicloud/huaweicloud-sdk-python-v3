@@ -33,7 +33,7 @@ class IterationHistoryOperator:
     }
 
     def __init__(self, user_id=None, user_name=None, nick_name=None, domain_id=None, domain_name=None):
-        """IterationHistoryOperator
+        r"""IterationHistoryOperator
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class IterationHistoryOperator:
 
     @property
     def user_id(self):
-        """Gets the user_id of this IterationHistoryOperator.
+        r"""Gets the user_id of this IterationHistoryOperator.
 
         用户uuid
 
@@ -82,7 +82,7 @@ class IterationHistoryOperator:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this IterationHistoryOperator.
+        r"""Sets the user_id of this IterationHistoryOperator.
 
         用户uuid
 
@@ -93,7 +93,7 @@ class IterationHistoryOperator:
 
     @property
     def user_name(self):
-        """Gets the user_name of this IterationHistoryOperator.
+        r"""Gets the user_name of this IterationHistoryOperator.
 
         用户名
 
@@ -104,7 +104,7 @@ class IterationHistoryOperator:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this IterationHistoryOperator.
+        r"""Sets the user_name of this IterationHistoryOperator.
 
         用户名
 
@@ -115,7 +115,7 @@ class IterationHistoryOperator:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this IterationHistoryOperator.
+        r"""Gets the nick_name of this IterationHistoryOperator.
 
         昵称
 
@@ -126,7 +126,7 @@ class IterationHistoryOperator:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this IterationHistoryOperator.
+        r"""Sets the nick_name of this IterationHistoryOperator.
 
         昵称
 
@@ -137,7 +137,7 @@ class IterationHistoryOperator:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this IterationHistoryOperator.
+        r"""Gets the domain_id of this IterationHistoryOperator.
 
         租户uuid
 
@@ -148,7 +148,7 @@ class IterationHistoryOperator:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this IterationHistoryOperator.
+        r"""Sets the domain_id of this IterationHistoryOperator.
 
         租户uuid
 
@@ -159,7 +159,7 @@ class IterationHistoryOperator:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this IterationHistoryOperator.
+        r"""Gets the domain_name of this IterationHistoryOperator.
 
         租户名
 
@@ -170,7 +170,7 @@ class IterationHistoryOperator:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this IterationHistoryOperator.
+        r"""Sets the domain_name of this IterationHistoryOperator.
 
         租户名
 

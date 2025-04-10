@@ -25,7 +25,7 @@ class DeleteResultData:
     }
 
     def __init__(self, value=None):
-        """DeleteResultData
+        r"""DeleteResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteResultData:
 
     @property
     def value(self):
-        """Gets the value of this DeleteResultData.
+        r"""Gets the value of this DeleteResultData.
 
         成功删除的对象个数
 
@@ -54,7 +54,7 @@ class DeleteResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DeleteResultData.
+        r"""Sets the value of this DeleteResultData.
 
         成功删除的对象个数
 

@@ -29,7 +29,7 @@ class TypeProperties:
     }
 
     def __init__(self, killchain=None, ttps=None, effects=None):
-        """TypeProperties
+        r"""TypeProperties
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TypeProperties:
 
     @property
     def killchain(self):
-        """Gets the killchain of this TypeProperties.
+        r"""Gets the killchain of this TypeProperties.
 
         Kill chain事件分类，仅当business为attack有效
 
@@ -68,7 +68,7 @@ class TypeProperties:
 
     @killchain.setter
     def killchain(self, killchain):
-        """Sets the killchain of this TypeProperties.
+        r"""Sets the killchain of this TypeProperties.
 
         Kill chain事件分类，仅当business为attack有效
 
@@ -79,7 +79,7 @@ class TypeProperties:
 
     @property
     def ttps(self):
-        """Gets the ttps of this TypeProperties.
+        r"""Gets the ttps of this TypeProperties.
 
         Mitre Array 事件分类，仅当business为attack有效
 
@@ -90,7 +90,7 @@ class TypeProperties:
 
     @ttps.setter
     def ttps(self, ttps):
-        """Sets the ttps of this TypeProperties.
+        r"""Sets the ttps of this TypeProperties.
 
         Mitre Array 事件分类，仅当business为attack有效
 
@@ -101,7 +101,7 @@ class TypeProperties:
 
     @property
     def effects(self):
-        """Gets the effects of this TypeProperties.
+        r"""Gets the effects of this TypeProperties.
 
         影响，适用全部类型
 
@@ -112,7 +112,7 @@ class TypeProperties:
 
     @effects.setter
     def effects(self, effects):
-        """Sets the effects of this TypeProperties.
+        r"""Sets the effects of this TypeProperties.
 
         影响，适用全部类型
 

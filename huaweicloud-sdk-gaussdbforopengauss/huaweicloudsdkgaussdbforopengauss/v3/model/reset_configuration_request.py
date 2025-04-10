@@ -27,7 +27,7 @@ class ResetConfigurationRequest:
     }
 
     def __init__(self, config_id=None, x_language=None):
-        """ResetConfigurationRequest
+        r"""ResetConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResetConfigurationRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this ResetConfigurationRequest.
+        r"""Gets the config_id of this ResetConfigurationRequest.
 
         需重置的参数模板ID。
 
@@ -60,7 +60,7 @@ class ResetConfigurationRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this ResetConfigurationRequest.
+        r"""Sets the config_id of this ResetConfigurationRequest.
 
         需重置的参数模板ID。
 
@@ -71,7 +71,7 @@ class ResetConfigurationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ResetConfigurationRequest.
+        r"""Gets the x_language of this ResetConfigurationRequest.
 
         语言。
 
@@ -82,7 +82,7 @@ class ResetConfigurationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ResetConfigurationRequest.
+        r"""Sets the x_language of this ResetConfigurationRequest.
 
         语言。
 

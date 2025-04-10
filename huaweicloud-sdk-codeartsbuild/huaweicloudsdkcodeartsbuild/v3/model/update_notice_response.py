@@ -30,7 +30,7 @@ class UpdateNoticeResponse(SdkResponse):
     }
 
     def __init__(self, result=None, error=None, status=None):
-        """UpdateNoticeResponse
+        r"""UpdateNoticeResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateNoticeResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateNoticeResponse.
+        r"""Gets the result of this UpdateNoticeResponse.
 
         返回错误信息
 
@@ -69,7 +69,7 @@ class UpdateNoticeResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateNoticeResponse.
+        r"""Sets the result of this UpdateNoticeResponse.
 
         返回错误信息
 
@@ -80,7 +80,7 @@ class UpdateNoticeResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this UpdateNoticeResponse.
+        r"""Gets the error of this UpdateNoticeResponse.
 
         返回错误信息
 
@@ -91,7 +91,7 @@ class UpdateNoticeResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this UpdateNoticeResponse.
+        r"""Sets the error of this UpdateNoticeResponse.
 
         返回错误信息
 
@@ -102,7 +102,7 @@ class UpdateNoticeResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateNoticeResponse.
+        r"""Gets the status of this UpdateNoticeResponse.
 
         返回状态信息
 
@@ -113,7 +113,7 @@ class UpdateNoticeResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateNoticeResponse.
+        r"""Sets the status of this UpdateNoticeResponse.
 
         返回状态信息
 

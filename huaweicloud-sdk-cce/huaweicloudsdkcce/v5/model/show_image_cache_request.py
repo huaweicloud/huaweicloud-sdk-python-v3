@@ -25,7 +25,7 @@ class ShowImageCacheRequest:
     }
 
     def __init__(self, image_cache_id=None):
-        """ShowImageCacheRequest
+        r"""ShowImageCacheRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowImageCacheRequest:
 
     @property
     def image_cache_id(self):
-        """Gets the image_cache_id of this ShowImageCacheRequest.
+        r"""Gets the image_cache_id of this ShowImageCacheRequest.
 
         **参数解释：** 镜像缓存ID。 **约束限制：** 不涉及 **取值范围：** 镜像缓存ID。 **默认取值：** 不涉及 
 
@@ -53,7 +53,7 @@ class ShowImageCacheRequest:
 
     @image_cache_id.setter
     def image_cache_id(self, image_cache_id):
-        """Sets the image_cache_id of this ShowImageCacheRequest.
+        r"""Sets the image_cache_id of this ShowImageCacheRequest.
 
         **参数解释：** 镜像缓存ID。 **约束限制：** 不涉及 **取值范围：** 镜像缓存ID。 **默认取值：** 不涉及 
 

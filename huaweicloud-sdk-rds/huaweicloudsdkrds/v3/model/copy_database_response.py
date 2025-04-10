@@ -26,7 +26,7 @@ class CopyDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """CopyDatabaseResponse
+        r"""CopyDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CopyDatabaseResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CopyDatabaseResponse.
+        r"""Gets the job_id of this CopyDatabaseResponse.
 
         任务id
 
@@ -55,7 +55,7 @@ class CopyDatabaseResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CopyDatabaseResponse.
+        r"""Sets the job_id of this CopyDatabaseResponse.
 
         任务id
 

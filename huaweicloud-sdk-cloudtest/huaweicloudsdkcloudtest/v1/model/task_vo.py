@@ -155,7 +155,7 @@ class TaskVo:
     }
 
     def __init__(self, uri=None, name=None, stage=None, number=None, tags=None, description=None, region=None, author_id=None, author_name=None, owner_id=None, owner_name=None, parent_uri=None, parent_path=None, origin_uri=None, version_uri=None, branch_uri=None, version_name=None, creation_date=None, create_date_timestamp=None, update_time=None, update_time_timestamp=None, relation_change_time=None, relation_change_time_timestamp=None, test_case_condition=None, updator_id=None, updator_name=None, relation_changer_id=None, service_type=None, service_type_name=None, tag_list=None, module_id=None, module_name=None, module_path=None, module_path_name=None, release_dev=None, ext_param=None, execute_way=None, execute_type=None, status_code=None, status_name=None, result_code=None, result_name=None, execute_status_code=None, execute_status_name=None, executor_id=None, executor_name=None, execute_latest_time=None, execute_latest_time_timestamp=None, execute_duration=None, execute_times=None, project_uuid=None, case_operation_info=None, assign_case_num=None, finish_case_num=None, assign_defect_num=None, task_assign_msg=None, iterator_version_uri=None, result_number_list=None, finish_date=None, finish_date_timestamp=None, plan_start_date=None, plan_start_timestamp=None, plan_end_date=None, plan_end_timestamp=None, expiration_status=None, expiration_status_name=None):
-        """TaskVo
+        r"""TaskVo
 
         The model defined in huaweicloud sdk
 
@@ -498,7 +498,7 @@ class TaskVo:
 
     @property
     def uri(self):
-        """Gets the uri of this TaskVo.
+        r"""Gets the uri of this TaskVo.
 
         测试任务URI
 
@@ -509,7 +509,7 @@ class TaskVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this TaskVo.
+        r"""Sets the uri of this TaskVo.
 
         测试任务URI
 
@@ -520,7 +520,7 @@ class TaskVo:
 
     @property
     def name(self):
-        """Gets the name of this TaskVo.
+        r"""Gets the name of this TaskVo.
 
         测试任务名称
 
@@ -531,7 +531,7 @@ class TaskVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TaskVo.
+        r"""Sets the name of this TaskVo.
 
         测试任务名称
 
@@ -542,7 +542,7 @@ class TaskVo:
 
     @property
     def stage(self):
-        """Gets the stage of this TaskVo.
+        r"""Gets the stage of this TaskVo.
 
         测试阶段
 
@@ -553,7 +553,7 @@ class TaskVo:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this TaskVo.
+        r"""Sets the stage of this TaskVo.
 
         测试阶段
 
@@ -564,7 +564,7 @@ class TaskVo:
 
     @property
     def number(self):
-        """Gets the number of this TaskVo.
+        r"""Gets the number of this TaskVo.
 
         编号
 
@@ -575,7 +575,7 @@ class TaskVo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this TaskVo.
+        r"""Sets the number of this TaskVo.
 
         编号
 
@@ -586,7 +586,7 @@ class TaskVo:
 
     @property
     def tags(self):
-        """Gets the tags of this TaskVo.
+        r"""Gets the tags of this TaskVo.
 
         标签
 
@@ -597,7 +597,7 @@ class TaskVo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TaskVo.
+        r"""Sets the tags of this TaskVo.
 
         标签
 
@@ -608,7 +608,7 @@ class TaskVo:
 
     @property
     def description(self):
-        """Gets the description of this TaskVo.
+        r"""Gets the description of this TaskVo.
 
         描述
 
@@ -619,7 +619,7 @@ class TaskVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TaskVo.
+        r"""Sets the description of this TaskVo.
 
         描述
 
@@ -630,7 +630,7 @@ class TaskVo:
 
     @property
     def region(self):
-        """Gets the region of this TaskVo.
+        r"""Gets the region of this TaskVo.
 
         区域
 
@@ -641,7 +641,7 @@ class TaskVo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TaskVo.
+        r"""Sets the region of this TaskVo.
 
         区域
 
@@ -652,7 +652,7 @@ class TaskVo:
 
     @property
     def author_id(self):
-        """Gets the author_id of this TaskVo.
+        r"""Gets the author_id of this TaskVo.
 
         创建人ID
 
@@ -663,7 +663,7 @@ class TaskVo:
 
     @author_id.setter
     def author_id(self, author_id):
-        """Sets the author_id of this TaskVo.
+        r"""Sets the author_id of this TaskVo.
 
         创建人ID
 
@@ -674,7 +674,7 @@ class TaskVo:
 
     @property
     def author_name(self):
-        """Gets the author_name of this TaskVo.
+        r"""Gets the author_name of this TaskVo.
 
         创建人名称
 
@@ -685,7 +685,7 @@ class TaskVo:
 
     @author_name.setter
     def author_name(self, author_name):
-        """Sets the author_name of this TaskVo.
+        r"""Sets the author_name of this TaskVo.
 
         创建人名称
 
@@ -696,7 +696,7 @@ class TaskVo:
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this TaskVo.
+        r"""Gets the owner_id of this TaskVo.
 
         责任人ID
 
@@ -707,7 +707,7 @@ class TaskVo:
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this TaskVo.
+        r"""Sets the owner_id of this TaskVo.
 
         责任人ID
 
@@ -718,7 +718,7 @@ class TaskVo:
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this TaskVo.
+        r"""Gets the owner_name of this TaskVo.
 
         责任人名称
 
@@ -729,7 +729,7 @@ class TaskVo:
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this TaskVo.
+        r"""Sets the owner_name of this TaskVo.
 
         责任人名称
 
@@ -740,7 +740,7 @@ class TaskVo:
 
     @property
     def parent_uri(self):
-        """Gets the parent_uri of this TaskVo.
+        r"""Gets the parent_uri of this TaskVo.
 
         父任务URI
 
@@ -751,7 +751,7 @@ class TaskVo:
 
     @parent_uri.setter
     def parent_uri(self, parent_uri):
-        """Sets the parent_uri of this TaskVo.
+        r"""Sets the parent_uri of this TaskVo.
 
         父任务URI
 
@@ -762,7 +762,7 @@ class TaskVo:
 
     @property
     def parent_path(self):
-        """Gets the parent_path of this TaskVo.
+        r"""Gets the parent_path of this TaskVo.
 
         父任务路径
 
@@ -773,7 +773,7 @@ class TaskVo:
 
     @parent_path.setter
     def parent_path(self, parent_path):
-        """Sets the parent_path of this TaskVo.
+        r"""Sets the parent_path of this TaskVo.
 
         父任务路径
 
@@ -784,7 +784,7 @@ class TaskVo:
 
     @property
     def origin_uri(self):
-        """Gets the origin_uri of this TaskVo.
+        r"""Gets the origin_uri of this TaskVo.
 
         源任务URI
 
@@ -795,7 +795,7 @@ class TaskVo:
 
     @origin_uri.setter
     def origin_uri(self, origin_uri):
-        """Sets the origin_uri of this TaskVo.
+        r"""Sets the origin_uri of this TaskVo.
 
         源任务URI
 
@@ -806,7 +806,7 @@ class TaskVo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this TaskVo.
+        r"""Gets the version_uri of this TaskVo.
 
         版本URI
 
@@ -817,7 +817,7 @@ class TaskVo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this TaskVo.
+        r"""Sets the version_uri of this TaskVo.
 
         版本URI
 
@@ -828,7 +828,7 @@ class TaskVo:
 
     @property
     def branch_uri(self):
-        """Gets the branch_uri of this TaskVo.
+        r"""Gets the branch_uri of this TaskVo.
 
         分支URI
 
@@ -839,7 +839,7 @@ class TaskVo:
 
     @branch_uri.setter
     def branch_uri(self, branch_uri):
-        """Sets the branch_uri of this TaskVo.
+        r"""Sets the branch_uri of this TaskVo.
 
         分支URI
 
@@ -850,7 +850,7 @@ class TaskVo:
 
     @property
     def version_name(self):
-        """Gets the version_name of this TaskVo.
+        r"""Gets the version_name of this TaskVo.
 
         版本名称
 
@@ -861,7 +861,7 @@ class TaskVo:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this TaskVo.
+        r"""Sets the version_name of this TaskVo.
 
         版本名称
 
@@ -872,7 +872,7 @@ class TaskVo:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this TaskVo.
+        r"""Gets the creation_date of this TaskVo.
 
         创建时间
 
@@ -883,7 +883,7 @@ class TaskVo:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this TaskVo.
+        r"""Sets the creation_date of this TaskVo.
 
         创建时间
 
@@ -894,7 +894,7 @@ class TaskVo:
 
     @property
     def create_date_timestamp(self):
-        """Gets the create_date_timestamp of this TaskVo.
+        r"""Gets the create_date_timestamp of this TaskVo.
 
         创建时间时间戳
 
@@ -905,7 +905,7 @@ class TaskVo:
 
     @create_date_timestamp.setter
     def create_date_timestamp(self, create_date_timestamp):
-        """Sets the create_date_timestamp of this TaskVo.
+        r"""Sets the create_date_timestamp of this TaskVo.
 
         创建时间时间戳
 
@@ -916,7 +916,7 @@ class TaskVo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TaskVo.
+        r"""Gets the update_time of this TaskVo.
 
         更新时间
 
@@ -927,7 +927,7 @@ class TaskVo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TaskVo.
+        r"""Sets the update_time of this TaskVo.
 
         更新时间
 
@@ -938,7 +938,7 @@ class TaskVo:
 
     @property
     def update_time_timestamp(self):
-        """Gets the update_time_timestamp of this TaskVo.
+        r"""Gets the update_time_timestamp of this TaskVo.
 
         更新时间时间戳
 
@@ -949,7 +949,7 @@ class TaskVo:
 
     @update_time_timestamp.setter
     def update_time_timestamp(self, update_time_timestamp):
-        """Sets the update_time_timestamp of this TaskVo.
+        r"""Sets the update_time_timestamp of this TaskVo.
 
         更新时间时间戳
 
@@ -960,7 +960,7 @@ class TaskVo:
 
     @property
     def relation_change_time(self):
-        """Gets the relation_change_time of this TaskVo.
+        r"""Gets the relation_change_time of this TaskVo.
 
         关联关系修改时时间
 
@@ -971,7 +971,7 @@ class TaskVo:
 
     @relation_change_time.setter
     def relation_change_time(self, relation_change_time):
-        """Sets the relation_change_time of this TaskVo.
+        r"""Sets the relation_change_time of this TaskVo.
 
         关联关系修改时时间
 
@@ -982,7 +982,7 @@ class TaskVo:
 
     @property
     def relation_change_time_timestamp(self):
-        """Gets the relation_change_time_timestamp of this TaskVo.
+        r"""Gets the relation_change_time_timestamp of this TaskVo.
 
         关联关系修改时间时间戳
 
@@ -993,7 +993,7 @@ class TaskVo:
 
     @relation_change_time_timestamp.setter
     def relation_change_time_timestamp(self, relation_change_time_timestamp):
-        """Sets the relation_change_time_timestamp of this TaskVo.
+        r"""Sets the relation_change_time_timestamp of this TaskVo.
 
         关联关系修改时间时间戳
 
@@ -1004,7 +1004,7 @@ class TaskVo:
 
     @property
     def test_case_condition(self):
-        """Gets the test_case_condition of this TaskVo.
+        r"""Gets the test_case_condition of this TaskVo.
 
         动态任务用例过滤条件
 
@@ -1015,7 +1015,7 @@ class TaskVo:
 
     @test_case_condition.setter
     def test_case_condition(self, test_case_condition):
-        """Sets the test_case_condition of this TaskVo.
+        r"""Sets the test_case_condition of this TaskVo.
 
         动态任务用例过滤条件
 
@@ -1026,7 +1026,7 @@ class TaskVo:
 
     @property
     def updator_id(self):
-        """Gets the updator_id of this TaskVo.
+        r"""Gets the updator_id of this TaskVo.
 
         修改人Id
 
@@ -1037,7 +1037,7 @@ class TaskVo:
 
     @updator_id.setter
     def updator_id(self, updator_id):
-        """Sets the updator_id of this TaskVo.
+        r"""Sets the updator_id of this TaskVo.
 
         修改人Id
 
@@ -1048,7 +1048,7 @@ class TaskVo:
 
     @property
     def updator_name(self):
-        """Gets the updator_name of this TaskVo.
+        r"""Gets the updator_name of this TaskVo.
 
         修改人名称
 
@@ -1059,7 +1059,7 @@ class TaskVo:
 
     @updator_name.setter
     def updator_name(self, updator_name):
-        """Sets the updator_name of this TaskVo.
+        r"""Sets the updator_name of this TaskVo.
 
         修改人名称
 
@@ -1070,7 +1070,7 @@ class TaskVo:
 
     @property
     def relation_changer_id(self):
-        """Gets the relation_changer_id of this TaskVo.
+        r"""Gets the relation_changer_id of this TaskVo.
 
         关联关系修改人Id
 
@@ -1081,7 +1081,7 @@ class TaskVo:
 
     @relation_changer_id.setter
     def relation_changer_id(self, relation_changer_id):
-        """Sets the relation_changer_id of this TaskVo.
+        r"""Sets the relation_changer_id of this TaskVo.
 
         关联关系修改人Id
 
@@ -1092,7 +1092,7 @@ class TaskVo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this TaskVo.
+        r"""Gets the service_type of this TaskVo.
 
         服务类型ID
 
@@ -1103,7 +1103,7 @@ class TaskVo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this TaskVo.
+        r"""Sets the service_type of this TaskVo.
 
         服务类型ID
 
@@ -1114,7 +1114,7 @@ class TaskVo:
 
     @property
     def service_type_name(self):
-        """Gets the service_type_name of this TaskVo.
+        r"""Gets the service_type_name of this TaskVo.
 
         服务类型名称
 
@@ -1125,7 +1125,7 @@ class TaskVo:
 
     @service_type_name.setter
     def service_type_name(self, service_type_name):
-        """Sets the service_type_name of this TaskVo.
+        r"""Sets the service_type_name of this TaskVo.
 
         服务类型名称
 
@@ -1136,7 +1136,7 @@ class TaskVo:
 
     @property
     def tag_list(self):
-        """Gets the tag_list of this TaskVo.
+        r"""Gets the tag_list of this TaskVo.
 
         标签名称集合
 
@@ -1147,7 +1147,7 @@ class TaskVo:
 
     @tag_list.setter
     def tag_list(self, tag_list):
-        """Sets the tag_list of this TaskVo.
+        r"""Sets the tag_list of this TaskVo.
 
         标签名称集合
 
@@ -1158,7 +1158,7 @@ class TaskVo:
 
     @property
     def module_id(self):
-        """Gets the module_id of this TaskVo.
+        r"""Gets the module_id of this TaskVo.
 
         模块ID
 
@@ -1169,7 +1169,7 @@ class TaskVo:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this TaskVo.
+        r"""Sets the module_id of this TaskVo.
 
         模块ID
 
@@ -1180,7 +1180,7 @@ class TaskVo:
 
     @property
     def module_name(self):
-        """Gets the module_name of this TaskVo.
+        r"""Gets the module_name of this TaskVo.
 
         模块名称
 
@@ -1191,7 +1191,7 @@ class TaskVo:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this TaskVo.
+        r"""Sets the module_name of this TaskVo.
 
         模块名称
 
@@ -1202,7 +1202,7 @@ class TaskVo:
 
     @property
     def module_path(self):
-        """Gets the module_path of this TaskVo.
+        r"""Gets the module_path of this TaskVo.
 
         模块path
 
@@ -1213,7 +1213,7 @@ class TaskVo:
 
     @module_path.setter
     def module_path(self, module_path):
-        """Sets the module_path of this TaskVo.
+        r"""Sets the module_path of this TaskVo.
 
         模块path
 
@@ -1224,7 +1224,7 @@ class TaskVo:
 
     @property
     def module_path_name(self):
-        """Gets the module_path_name of this TaskVo.
+        r"""Gets the module_path_name of this TaskVo.
 
         模块路径名称
 
@@ -1235,7 +1235,7 @@ class TaskVo:
 
     @module_path_name.setter
     def module_path_name(self, module_path_name):
-        """Sets the module_path_name of this TaskVo.
+        r"""Sets the module_path_name of this TaskVo.
 
         模块路径名称
 
@@ -1246,7 +1246,7 @@ class TaskVo:
 
     @property
     def release_dev(self):
-        """Gets the release_dev of this TaskVo.
+        r"""Gets the release_dev of this TaskVo.
 
         发布版本号
 
@@ -1257,7 +1257,7 @@ class TaskVo:
 
     @release_dev.setter
     def release_dev(self, release_dev):
-        """Sets the release_dev of this TaskVo.
+        r"""Sets the release_dev of this TaskVo.
 
         发布版本号
 
@@ -1268,7 +1268,7 @@ class TaskVo:
 
     @property
     def ext_param(self):
-        """Gets the ext_param of this TaskVo.
+        r"""Gets the ext_param of this TaskVo.
 
         扩展参数
 
@@ -1279,7 +1279,7 @@ class TaskVo:
 
     @ext_param.setter
     def ext_param(self, ext_param):
-        """Sets the ext_param of this TaskVo.
+        r"""Sets the ext_param of this TaskVo.
 
         扩展参数
 
@@ -1290,7 +1290,7 @@ class TaskVo:
 
     @property
     def execute_way(self):
-        """Gets the execute_way of this TaskVo.
+        r"""Gets the execute_way of this TaskVo.
 
         执行方式（1：串行，2：并行）
 
@@ -1301,7 +1301,7 @@ class TaskVo:
 
     @execute_way.setter
     def execute_way(self, execute_way):
-        """Sets the execute_way of this TaskVo.
+        r"""Sets the execute_way of this TaskVo.
 
         执行方式（1：串行，2：并行）
 
@@ -1312,7 +1312,7 @@ class TaskVo:
 
     @property
     def execute_type(self):
-        """Gets the execute_type of this TaskVo.
+        r"""Gets the execute_type of this TaskVo.
 
         执行类型（0：冒烟，1：定时）
 
@@ -1323,7 +1323,7 @@ class TaskVo:
 
     @execute_type.setter
     def execute_type(self, execute_type):
-        """Sets the execute_type of this TaskVo.
+        r"""Sets the execute_type of this TaskVo.
 
         执行类型（0：冒烟，1：定时）
 
@@ -1334,7 +1334,7 @@ class TaskVo:
 
     @property
     def status_code(self):
-        """Gets the status_code of this TaskVo.
+        r"""Gets the status_code of this TaskVo.
 
         生命周期状态Code
 
@@ -1345,7 +1345,7 @@ class TaskVo:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this TaskVo.
+        r"""Sets the status_code of this TaskVo.
 
         生命周期状态Code
 
@@ -1356,7 +1356,7 @@ class TaskVo:
 
     @property
     def status_name(self):
-        """Gets the status_name of this TaskVo.
+        r"""Gets the status_name of this TaskVo.
 
         生命周期状态名称
 
@@ -1367,7 +1367,7 @@ class TaskVo:
 
     @status_name.setter
     def status_name(self, status_name):
-        """Sets the status_name of this TaskVo.
+        r"""Sets the status_name of this TaskVo.
 
         生命周期状态名称
 
@@ -1378,7 +1378,7 @@ class TaskVo:
 
     @property
     def result_code(self):
-        """Gets the result_code of this TaskVo.
+        r"""Gets the result_code of this TaskVo.
 
         执行结果Code
 
@@ -1389,7 +1389,7 @@ class TaskVo:
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this TaskVo.
+        r"""Sets the result_code of this TaskVo.
 
         执行结果Code
 
@@ -1400,7 +1400,7 @@ class TaskVo:
 
     @property
     def result_name(self):
-        """Gets the result_name of this TaskVo.
+        r"""Gets the result_name of this TaskVo.
 
         执行状态名称
 
@@ -1411,7 +1411,7 @@ class TaskVo:
 
     @result_name.setter
     def result_name(self, result_name):
-        """Sets the result_name of this TaskVo.
+        r"""Sets the result_name of this TaskVo.
 
         执行状态名称
 
@@ -1422,7 +1422,7 @@ class TaskVo:
 
     @property
     def execute_status_code(self):
-        """Gets the execute_status_code of this TaskVo.
+        r"""Gets the execute_status_code of this TaskVo.
 
         Echo执行状态Code
 
@@ -1433,7 +1433,7 @@ class TaskVo:
 
     @execute_status_code.setter
     def execute_status_code(self, execute_status_code):
-        """Sets the execute_status_code of this TaskVo.
+        r"""Sets the execute_status_code of this TaskVo.
 
         Echo执行状态Code
 
@@ -1444,7 +1444,7 @@ class TaskVo:
 
     @property
     def execute_status_name(self):
-        """Gets the execute_status_name of this TaskVo.
+        r"""Gets the execute_status_name of this TaskVo.
 
         Echo执行状态名称
 
@@ -1455,7 +1455,7 @@ class TaskVo:
 
     @execute_status_name.setter
     def execute_status_name(self, execute_status_name):
-        """Sets the execute_status_name of this TaskVo.
+        r"""Sets the execute_status_name of this TaskVo.
 
         Echo执行状态名称
 
@@ -1466,7 +1466,7 @@ class TaskVo:
 
     @property
     def executor_id(self):
-        """Gets the executor_id of this TaskVo.
+        r"""Gets the executor_id of this TaskVo.
 
         执行人ID
 
@@ -1477,7 +1477,7 @@ class TaskVo:
 
     @executor_id.setter
     def executor_id(self, executor_id):
-        """Sets the executor_id of this TaskVo.
+        r"""Sets the executor_id of this TaskVo.
 
         执行人ID
 
@@ -1488,7 +1488,7 @@ class TaskVo:
 
     @property
     def executor_name(self):
-        """Gets the executor_name of this TaskVo.
+        r"""Gets the executor_name of this TaskVo.
 
         执行人名称
 
@@ -1499,7 +1499,7 @@ class TaskVo:
 
     @executor_name.setter
     def executor_name(self, executor_name):
-        """Sets the executor_name of this TaskVo.
+        r"""Sets the executor_name of this TaskVo.
 
         执行人名称
 
@@ -1510,7 +1510,7 @@ class TaskVo:
 
     @property
     def execute_latest_time(self):
-        """Gets the execute_latest_time of this TaskVo.
+        r"""Gets the execute_latest_time of this TaskVo.
 
         最近执行时间
 
@@ -1521,7 +1521,7 @@ class TaskVo:
 
     @execute_latest_time.setter
     def execute_latest_time(self, execute_latest_time):
-        """Sets the execute_latest_time of this TaskVo.
+        r"""Sets the execute_latest_time of this TaskVo.
 
         最近执行时间
 
@@ -1532,7 +1532,7 @@ class TaskVo:
 
     @property
     def execute_latest_time_timestamp(self):
-        """Gets the execute_latest_time_timestamp of this TaskVo.
+        r"""Gets the execute_latest_time_timestamp of this TaskVo.
 
         最近执行时间时间戳
 
@@ -1543,7 +1543,7 @@ class TaskVo:
 
     @execute_latest_time_timestamp.setter
     def execute_latest_time_timestamp(self, execute_latest_time_timestamp):
-        """Sets the execute_latest_time_timestamp of this TaskVo.
+        r"""Sets the execute_latest_time_timestamp of this TaskVo.
 
         最近执行时间时间戳
 
@@ -1554,7 +1554,7 @@ class TaskVo:
 
     @property
     def execute_duration(self):
-        """Gets the execute_duration of this TaskVo.
+        r"""Gets the execute_duration of this TaskVo.
 
         执行时长
 
@@ -1565,7 +1565,7 @@ class TaskVo:
 
     @execute_duration.setter
     def execute_duration(self, execute_duration):
-        """Sets the execute_duration of this TaskVo.
+        r"""Sets the execute_duration of this TaskVo.
 
         执行时长
 
@@ -1576,7 +1576,7 @@ class TaskVo:
 
     @property
     def execute_times(self):
-        """Gets the execute_times of this TaskVo.
+        r"""Gets the execute_times of this TaskVo.
 
         执行次数
 
@@ -1587,7 +1587,7 @@ class TaskVo:
 
     @execute_times.setter
     def execute_times(self, execute_times):
-        """Sets the execute_times of this TaskVo.
+        r"""Sets the execute_times of this TaskVo.
 
         执行次数
 
@@ -1598,7 +1598,7 @@ class TaskVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this TaskVo.
+        r"""Gets the project_uuid of this TaskVo.
 
         项目ID
 
@@ -1609,7 +1609,7 @@ class TaskVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this TaskVo.
+        r"""Sets the project_uuid of this TaskVo.
 
         项目ID
 
@@ -1620,7 +1620,7 @@ class TaskVo:
 
     @property
     def case_operation_info(self):
-        """Gets the case_operation_info of this TaskVo.
+        r"""Gets the case_operation_info of this TaskVo.
 
         :return: The case_operation_info of this TaskVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CaseOperationVo`
@@ -1629,7 +1629,7 @@ class TaskVo:
 
     @case_operation_info.setter
     def case_operation_info(self, case_operation_info):
-        """Sets the case_operation_info of this TaskVo.
+        r"""Sets the case_operation_info of this TaskVo.
 
         :param case_operation_info: The case_operation_info of this TaskVo.
         :type case_operation_info: :class:`huaweicloudsdkcloudtest.v1.CaseOperationVo`
@@ -1638,7 +1638,7 @@ class TaskVo:
 
     @property
     def assign_case_num(self):
-        """Gets the assign_case_num of this TaskVo.
+        r"""Gets the assign_case_num of this TaskVo.
 
         关联用例数
 
@@ -1649,7 +1649,7 @@ class TaskVo:
 
     @assign_case_num.setter
     def assign_case_num(self, assign_case_num):
-        """Sets the assign_case_num of this TaskVo.
+        r"""Sets the assign_case_num of this TaskVo.
 
         关联用例数
 
@@ -1660,7 +1660,7 @@ class TaskVo:
 
     @property
     def finish_case_num(self):
-        """Gets the finish_case_num of this TaskVo.
+        r"""Gets the finish_case_num of this TaskVo.
 
         已完成用例数量
 
@@ -1671,7 +1671,7 @@ class TaskVo:
 
     @finish_case_num.setter
     def finish_case_num(self, finish_case_num):
-        """Sets the finish_case_num of this TaskVo.
+        r"""Sets the finish_case_num of this TaskVo.
 
         已完成用例数量
 
@@ -1682,7 +1682,7 @@ class TaskVo:
 
     @property
     def assign_defect_num(self):
-        """Gets the assign_defect_num of this TaskVo.
+        r"""Gets the assign_defect_num of this TaskVo.
 
         关联缺陷数量
 
@@ -1693,7 +1693,7 @@ class TaskVo:
 
     @assign_defect_num.setter
     def assign_defect_num(self, assign_defect_num):
-        """Sets the assign_defect_num of this TaskVo.
+        r"""Sets the assign_defect_num of this TaskVo.
 
         关联缺陷数量
 
@@ -1704,7 +1704,7 @@ class TaskVo:
 
     @property
     def task_assign_msg(self):
-        """Gets the task_assign_msg of this TaskVo.
+        r"""Gets the task_assign_msg of this TaskVo.
 
         任务关联用例变更提示信息
 
@@ -1715,7 +1715,7 @@ class TaskVo:
 
     @task_assign_msg.setter
     def task_assign_msg(self, task_assign_msg):
-        """Sets the task_assign_msg of this TaskVo.
+        r"""Sets the task_assign_msg of this TaskVo.
 
         任务关联用例变更提示信息
 
@@ -1726,7 +1726,7 @@ class TaskVo:
 
     @property
     def iterator_version_uri(self):
-        """Gets the iterator_version_uri of this TaskVo.
+        r"""Gets the iterator_version_uri of this TaskVo.
 
         测试套所属迭代uri，非迭代下创建的测试套返回null
 
@@ -1737,7 +1737,7 @@ class TaskVo:
 
     @iterator_version_uri.setter
     def iterator_version_uri(self, iterator_version_uri):
-        """Sets the iterator_version_uri of this TaskVo.
+        r"""Sets the iterator_version_uri of this TaskVo.
 
         测试套所属迭代uri，非迭代下创建的测试套返回null
 
@@ -1748,7 +1748,7 @@ class TaskVo:
 
     @property
     def result_number_list(self):
-        """Gets the result_number_list of this TaskVo.
+        r"""Gets the result_number_list of this TaskVo.
 
         用户自定义结果对应的用例数目
 
@@ -1759,7 +1759,7 @@ class TaskVo:
 
     @result_number_list.setter
     def result_number_list(self, result_number_list):
-        """Sets the result_number_list of this TaskVo.
+        r"""Sets the result_number_list of this TaskVo.
 
         用户自定义结果对应的用例数目
 
@@ -1770,7 +1770,7 @@ class TaskVo:
 
     @property
     def finish_date(self):
-        """Gets the finish_date of this TaskVo.
+        r"""Gets the finish_date of this TaskVo.
 
         测试套完成时间
 
@@ -1781,7 +1781,7 @@ class TaskVo:
 
     @finish_date.setter
     def finish_date(self, finish_date):
-        """Sets the finish_date of this TaskVo.
+        r"""Sets the finish_date of this TaskVo.
 
         测试套完成时间
 
@@ -1792,7 +1792,7 @@ class TaskVo:
 
     @property
     def finish_date_timestamp(self):
-        """Gets the finish_date_timestamp of this TaskVo.
+        r"""Gets the finish_date_timestamp of this TaskVo.
 
         测试套完成时间戳
 
@@ -1803,7 +1803,7 @@ class TaskVo:
 
     @finish_date_timestamp.setter
     def finish_date_timestamp(self, finish_date_timestamp):
-        """Sets the finish_date_timestamp of this TaskVo.
+        r"""Sets the finish_date_timestamp of this TaskVo.
 
         测试套完成时间戳
 
@@ -1814,7 +1814,7 @@ class TaskVo:
 
     @property
     def plan_start_date(self):
-        """Gets the plan_start_date of this TaskVo.
+        r"""Gets the plan_start_date of this TaskVo.
 
         计划开始时间
 
@@ -1825,7 +1825,7 @@ class TaskVo:
 
     @plan_start_date.setter
     def plan_start_date(self, plan_start_date):
-        """Sets the plan_start_date of this TaskVo.
+        r"""Sets the plan_start_date of this TaskVo.
 
         计划开始时间
 
@@ -1836,7 +1836,7 @@ class TaskVo:
 
     @property
     def plan_start_timestamp(self):
-        """Gets the plan_start_timestamp of this TaskVo.
+        r"""Gets the plan_start_timestamp of this TaskVo.
 
         计划开始时间戳
 
@@ -1847,7 +1847,7 @@ class TaskVo:
 
     @plan_start_timestamp.setter
     def plan_start_timestamp(self, plan_start_timestamp):
-        """Sets the plan_start_timestamp of this TaskVo.
+        r"""Sets the plan_start_timestamp of this TaskVo.
 
         计划开始时间戳
 
@@ -1858,7 +1858,7 @@ class TaskVo:
 
     @property
     def plan_end_date(self):
-        """Gets the plan_end_date of this TaskVo.
+        r"""Gets the plan_end_date of this TaskVo.
 
         计划结束时间
 
@@ -1869,7 +1869,7 @@ class TaskVo:
 
     @plan_end_date.setter
     def plan_end_date(self, plan_end_date):
-        """Sets the plan_end_date of this TaskVo.
+        r"""Sets the plan_end_date of this TaskVo.
 
         计划结束时间
 
@@ -1880,7 +1880,7 @@ class TaskVo:
 
     @property
     def plan_end_timestamp(self):
-        """Gets the plan_end_timestamp of this TaskVo.
+        r"""Gets the plan_end_timestamp of this TaskVo.
 
         计划结束时间戳
 
@@ -1891,7 +1891,7 @@ class TaskVo:
 
     @plan_end_timestamp.setter
     def plan_end_timestamp(self, plan_end_timestamp):
-        """Sets the plan_end_timestamp of this TaskVo.
+        r"""Sets the plan_end_timestamp of this TaskVo.
 
         计划结束时间戳
 
@@ -1902,7 +1902,7 @@ class TaskVo:
 
     @property
     def expiration_status(self):
-        """Gets the expiration_status of this TaskVo.
+        r"""Gets the expiration_status of this TaskVo.
 
         测试套超期状态值，分别为：无状态(null)、未超期(0)、即将超期(1)、已超期(2)、延期完成(3)、按期完成(4)
 
@@ -1913,7 +1913,7 @@ class TaskVo:
 
     @expiration_status.setter
     def expiration_status(self, expiration_status):
-        """Sets the expiration_status of this TaskVo.
+        r"""Sets the expiration_status of this TaskVo.
 
         测试套超期状态值，分别为：无状态(null)、未超期(0)、即将超期(1)、已超期(2)、延期完成(3)、按期完成(4)
 
@@ -1924,7 +1924,7 @@ class TaskVo:
 
     @property
     def expiration_status_name(self):
-        """Gets the expiration_status_name of this TaskVo.
+        r"""Gets the expiration_status_name of this TaskVo.
 
         测试套超期状态名称，分别为：无状态(不显示状态)、未超期(Unexpired)、即将超期(About to expire)、已超期(Expired)、延期完成(Delayed completion)、按期完成(On schedule completion)
 
@@ -1935,7 +1935,7 @@ class TaskVo:
 
     @expiration_status_name.setter
     def expiration_status_name(self, expiration_status_name):
-        """Sets the expiration_status_name of this TaskVo.
+        r"""Sets the expiration_status_name of this TaskVo.
 
         测试套超期状态名称，分别为：无状态(不显示状态)、未超期(Unexpired)、即将超期(About to expire)、已超期(Expired)、延期完成(Delayed completion)、按期完成(On schedule completion)
 

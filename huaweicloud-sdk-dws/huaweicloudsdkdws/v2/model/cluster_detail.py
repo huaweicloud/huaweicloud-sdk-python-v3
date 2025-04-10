@@ -87,7 +87,7 @@ class ClusterDetail:
     }
 
     def __init__(self, id=None, name=None, status=None, version=None, updated=None, created=None, port=None, endpoints=None, nodes=None, tags=None, user_name=None, number_of_node=None, recent_event=None, availability_zone=None, enterprise_project_id=None, node_type=None, vpc_id=None, subnet_id=None, public_ip=None, public_endpoints=None, action_progress=None, sub_status=None, task_status=None, parameter_group=None, node_type_id=None, security_group_id=None, order_id=None, private_ip=None, maintain_window=None, resize_info=None, failed_reasons=None, elb=None):
-        """ClusterDetail
+        r"""ClusterDetail
 
         The model defined in huaweicloud sdk
 
@@ -233,7 +233,7 @@ class ClusterDetail:
 
     @property
     def id(self):
-        """Gets the id of this ClusterDetail.
+        r"""Gets the id of this ClusterDetail.
 
         集群ID
 
@@ -244,7 +244,7 @@ class ClusterDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClusterDetail.
+        r"""Sets the id of this ClusterDetail.
 
         集群ID
 
@@ -255,7 +255,7 @@ class ClusterDetail:
 
     @property
     def name(self):
-        """Gets the name of this ClusterDetail.
+        r"""Gets the name of this ClusterDetail.
 
         集群名称
 
@@ -266,7 +266,7 @@ class ClusterDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClusterDetail.
+        r"""Sets the name of this ClusterDetail.
 
         集群名称
 
@@ -277,7 +277,7 @@ class ClusterDetail:
 
     @property
     def status(self):
-        """Gets the status of this ClusterDetail.
+        r"""Gets the status of this ClusterDetail.
 
         集群状态，有效值包括： - CREATING：创建中 - ACTIVE：可用 - FAILED：不可用 - CREATE_FAILED：创建失败 - DELETING：删除中 - DELETE_FAILED：删除失败 - DELETED：已删除 - FROZEN：普通冻结 - POLICE_FROZEN：公安冻结
 
@@ -288,7 +288,7 @@ class ClusterDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClusterDetail.
+        r"""Sets the status of this ClusterDetail.
 
         集群状态，有效值包括： - CREATING：创建中 - ACTIVE：可用 - FAILED：不可用 - CREATE_FAILED：创建失败 - DELETING：删除中 - DELETE_FAILED：删除失败 - DELETED：已删除 - FROZEN：普通冻结 - POLICE_FROZEN：公安冻结
 
@@ -299,7 +299,7 @@ class ClusterDetail:
 
     @property
     def version(self):
-        """Gets the version of this ClusterDetail.
+        r"""Gets the version of this ClusterDetail.
 
         数据仓库版本
 
@@ -310,7 +310,7 @@ class ClusterDetail:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ClusterDetail.
+        r"""Sets the version of this ClusterDetail.
 
         数据仓库版本
 
@@ -321,7 +321,7 @@ class ClusterDetail:
 
     @property
     def updated(self):
-        """Gets the updated of this ClusterDetail.
+        r"""Gets the updated of this ClusterDetail.
 
         集群上次修改时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -332,7 +332,7 @@ class ClusterDetail:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ClusterDetail.
+        r"""Sets the updated of this ClusterDetail.
 
         集群上次修改时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -343,7 +343,7 @@ class ClusterDetail:
 
     @property
     def created(self):
-        """Gets the created of this ClusterDetail.
+        r"""Gets the created of this ClusterDetail.
 
         集群创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -354,7 +354,7 @@ class ClusterDetail:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ClusterDetail.
+        r"""Sets the created of this ClusterDetail.
 
         集群创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ
 
@@ -365,7 +365,7 @@ class ClusterDetail:
 
     @property
     def port(self):
-        """Gets the port of this ClusterDetail.
+        r"""Gets the port of this ClusterDetail.
 
         集群服务端口。
 
@@ -376,7 +376,7 @@ class ClusterDetail:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ClusterDetail.
+        r"""Sets the port of this ClusterDetail.
 
         集群服务端口。
 
@@ -387,7 +387,7 @@ class ClusterDetail:
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this ClusterDetail.
+        r"""Gets the endpoints of this ClusterDetail.
 
         集群的内网连接信息。
 
@@ -398,7 +398,7 @@ class ClusterDetail:
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this ClusterDetail.
+        r"""Sets the endpoints of this ClusterDetail.
 
         集群的内网连接信息。
 
@@ -409,7 +409,7 @@ class ClusterDetail:
 
     @property
     def nodes(self):
-        """Gets the nodes of this ClusterDetail.
+        r"""Gets the nodes of this ClusterDetail.
 
         集群实例
 
@@ -420,7 +420,7 @@ class ClusterDetail:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ClusterDetail.
+        r"""Sets the nodes of this ClusterDetail.
 
         集群实例
 
@@ -431,7 +431,7 @@ class ClusterDetail:
 
     @property
     def tags(self):
-        """Gets the tags of this ClusterDetail.
+        r"""Gets the tags of this ClusterDetail.
 
         集群标签
 
@@ -442,7 +442,7 @@ class ClusterDetail:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ClusterDetail.
+        r"""Sets the tags of this ClusterDetail.
 
         集群标签
 
@@ -453,7 +453,7 @@ class ClusterDetail:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ClusterDetail.
+        r"""Gets the user_name of this ClusterDetail.
 
         管理员用户名
 
@@ -464,7 +464,7 @@ class ClusterDetail:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ClusterDetail.
+        r"""Sets the user_name of this ClusterDetail.
 
         管理员用户名
 
@@ -475,7 +475,7 @@ class ClusterDetail:
 
     @property
     def number_of_node(self):
-        """Gets the number_of_node of this ClusterDetail.
+        r"""Gets the number_of_node of this ClusterDetail.
 
         节点数量
 
@@ -486,7 +486,7 @@ class ClusterDetail:
 
     @number_of_node.setter
     def number_of_node(self, number_of_node):
-        """Sets the number_of_node of this ClusterDetail.
+        r"""Sets the number_of_node of this ClusterDetail.
 
         节点数量
 
@@ -497,7 +497,7 @@ class ClusterDetail:
 
     @property
     def recent_event(self):
-        """Gets the recent_event of this ClusterDetail.
+        r"""Gets the recent_event of this ClusterDetail.
 
         事件数
 
@@ -508,7 +508,7 @@ class ClusterDetail:
 
     @recent_event.setter
     def recent_event(self, recent_event):
-        """Sets the recent_event of this ClusterDetail.
+        r"""Sets the recent_event of this ClusterDetail.
 
         事件数
 
@@ -519,7 +519,7 @@ class ClusterDetail:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ClusterDetail.
+        r"""Gets the availability_zone of this ClusterDetail.
 
         可用区
 
@@ -530,7 +530,7 @@ class ClusterDetail:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ClusterDetail.
+        r"""Sets the availability_zone of this ClusterDetail.
 
         可用区
 
@@ -541,7 +541,7 @@ class ClusterDetail:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ClusterDetail.
+        r"""Gets the enterprise_project_id of this ClusterDetail.
 
         企业项目ID。值为0表示默认企业项目“default”。
 
@@ -552,7 +552,7 @@ class ClusterDetail:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ClusterDetail.
+        r"""Sets the enterprise_project_id of this ClusterDetail.
 
         企业项目ID。值为0表示默认企业项目“default”。
 
@@ -563,7 +563,7 @@ class ClusterDetail:
 
     @property
     def node_type(self):
-        """Gets the node_type of this ClusterDetail.
+        r"""Gets the node_type of this ClusterDetail.
 
         节点类型
 
@@ -574,7 +574,7 @@ class ClusterDetail:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this ClusterDetail.
+        r"""Sets the node_type of this ClusterDetail.
 
         节点类型
 
@@ -585,7 +585,7 @@ class ClusterDetail:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ClusterDetail.
+        r"""Gets the vpc_id of this ClusterDetail.
 
         虚拟私有云ID
 
@@ -596,7 +596,7 @@ class ClusterDetail:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ClusterDetail.
+        r"""Sets the vpc_id of this ClusterDetail.
 
         虚拟私有云ID
 
@@ -607,7 +607,7 @@ class ClusterDetail:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ClusterDetail.
+        r"""Gets the subnet_id of this ClusterDetail.
 
         子网ID
 
@@ -618,7 +618,7 @@ class ClusterDetail:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ClusterDetail.
+        r"""Sets the subnet_id of this ClusterDetail.
 
         子网ID
 
@@ -629,7 +629,7 @@ class ClusterDetail:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ClusterDetail.
+        r"""Gets the public_ip of this ClusterDetail.
 
         :return: The public_ip of this ClusterDetail.
         :rtype: :class:`huaweicloudsdkdws.v2.PublicIp`
@@ -638,7 +638,7 @@ class ClusterDetail:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ClusterDetail.
+        r"""Sets the public_ip of this ClusterDetail.
 
         :param public_ip: The public_ip of this ClusterDetail.
         :type public_ip: :class:`huaweicloudsdkdws.v2.PublicIp`
@@ -647,7 +647,7 @@ class ClusterDetail:
 
     @property
     def public_endpoints(self):
-        """Gets the public_endpoints of this ClusterDetail.
+        r"""Gets the public_endpoints of this ClusterDetail.
 
         集群的公网连接信息，如果未指定，则默认不使用公网连接信息。
 
@@ -658,7 +658,7 @@ class ClusterDetail:
 
     @public_endpoints.setter
     def public_endpoints(self, public_endpoints):
-        """Sets the public_endpoints of this ClusterDetail.
+        r"""Sets the public_endpoints of this ClusterDetail.
 
         集群的公网连接信息，如果未指定，则默认不使用公网连接信息。
 
@@ -669,7 +669,7 @@ class ClusterDetail:
 
     @property
     def action_progress(self):
-        """Gets the action_progress of this ClusterDetail.
+        r"""Gets the action_progress of this ClusterDetail.
 
         任务信息，由key、value组成。key值为正在进行的任务，value值为正在进行任务的进度。key值的有效值包括： - CREATING：创建中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - REDISTRIBUTING：重分布中 - ELB_BINDING：弹性负载均衡绑定中 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_SWITCHING：弹性负载均衡切换中 - NETWORK_CONFIGURING：网络配置中 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BINDING：登录开通中 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中 - REPAIRING：修复中
 
@@ -680,7 +680,7 @@ class ClusterDetail:
 
     @action_progress.setter
     def action_progress(self, action_progress):
-        """Sets the action_progress of this ClusterDetail.
+        r"""Sets the action_progress of this ClusterDetail.
 
         任务信息，由key、value组成。key值为正在进行的任务，value值为正在进行任务的进度。key值的有效值包括： - CREATING：创建中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - REDISTRIBUTING：重分布中 - ELB_BINDING：弹性负载均衡绑定中 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_SWITCHING：弹性负载均衡切换中 - NETWORK_CONFIGURING：网络配置中 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BINDING：登录开通中 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中 - REPAIRING：修复中
 
@@ -691,7 +691,7 @@ class ClusterDetail:
 
     @property
     def sub_status(self):
-        """Gets the sub_status of this ClusterDetail.
+        r"""Gets the sub_status of this ClusterDetail.
 
         “可用”集群状态的子状态，有效值包括：  - NORMAL：正常 - READONLY：只读 - REDISTRIBUTING：重分布中 - REDISTRIBUTION-FAILURE：重分布失败 - UNBALANCED：非均衡 - UNBALANCED | READONLY：非均衡，只读 - DEGRADED：节点故障 - DEGRADED | READONLY：节点故障，只读 - DEGRADED | UNBALANCED：节点故障，非均衡 - UNBALANCED | REDISTRIBUTING：非均衡，重分布中 - UNBALANCED | REDISTRIBUTION-FAILURE：非均衡，重分布失败 - READONLY | REDISTRIBUTION-FAILURE：只读，重分布失败 - UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：非均衡，只读，重分布失败 - DEGRADED | REDISTRIBUTION-FAILURE：节点故障，重分布失败 - DEGRADED | UNBALANCED | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY：节点故障，非均衡，只读
 
@@ -702,7 +702,7 @@ class ClusterDetail:
 
     @sub_status.setter
     def sub_status(self, sub_status):
-        """Sets the sub_status of this ClusterDetail.
+        r"""Sets the sub_status of this ClusterDetail.
 
         “可用”集群状态的子状态，有效值包括：  - NORMAL：正常 - READONLY：只读 - REDISTRIBUTING：重分布中 - REDISTRIBUTION-FAILURE：重分布失败 - UNBALANCED：非均衡 - UNBALANCED | READONLY：非均衡，只读 - DEGRADED：节点故障 - DEGRADED | READONLY：节点故障，只读 - DEGRADED | UNBALANCED：节点故障，非均衡 - UNBALANCED | REDISTRIBUTING：非均衡，重分布中 - UNBALANCED | REDISTRIBUTION-FAILURE：非均衡，重分布失败 - READONLY | REDISTRIBUTION-FAILURE：只读，重分布失败 - UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：非均衡，只读，重分布失败 - DEGRADED | REDISTRIBUTION-FAILURE：节点故障，重分布失败 - DEGRADED | UNBALANCED | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY | REDISTRIBUTION-FAILURE：节点故障，非均衡，只读，重分布失败 - DEGRADED | UNBALANCED | READONLY：节点故障，非均衡，只读
 
@@ -713,7 +713,7 @@ class ClusterDetail:
 
     @property
     def task_status(self):
-        """Gets the task_status of this ClusterDetail.
+        r"""Gets the task_status of this ClusterDetail.
 
         集群管理任务，有效值包括： - UNFREEZING：解冻中 - FREEZING：冻结中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - DELETING_EXT_DATASOURCE：删除MRS连接 - REBOOT_FAILURE：重启失败 - RESIZE_FAILURE：扩容失败 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - CREATING_NODE：添加节点 - CREATE_NODE_FAILED：添加节点失败 - DELETING_NODE：删除节点 - DELETE_NODE_FAILED：删除节点失败 - REDISTRIBUTING：重分布中 - REDISTRIBUTE_FAILURE：重分布失败 - WAITING_REDISTRIBUTION：待重分布 - REDISTRIBUTION_PAUSED：重分布暂停 - ELB_BINDING：弹性负载均衡绑定中 - ELB_BIND_FAILED：弹性负载均衡绑定失败 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_UNBIND_FAILED：弹性负载均衡解绑失败 - ELB_SWITCHING：弹性负载均衡切换中 - ELB_SWITCHING_FAILED：弹性负载均衡切换失败 - NETWORK_CONFIGURING：网络配置中 - NETWORK_CONFIG_FAILED：网络配置失败 - DISK_EXPAND_FAILED：磁盘扩容失败 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - ACTIVE_STANDY_SWITCHOVER_FAILURE：主备恢复失败 - CLUSTER_SHRINK_FAILED：缩容失败 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECK_FAILED：缩容检测失败 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING_FAILED：规格变更失败 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BIND_FAILED：登录开通失败 - MANAGE_IP_BINDING：登录开通中 - ORDER_PENDING：订单待支付 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中
 
@@ -724,7 +724,7 @@ class ClusterDetail:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ClusterDetail.
+        r"""Sets the task_status of this ClusterDetail.
 
         集群管理任务，有效值包括： - UNFREEZING：解冻中 - FREEZING：冻结中 - RESTORING：恢复中 - SNAPSHOTTING：快照中 - GROWING：扩容中 - REBOOTING：重启中 - SETTING_CONFIGURATION：安全设置配置中 - CONFIGURING_EXT_DATASOURCE：MRS连接配置中 - DELETING_EXT_DATASOURCE：删除MRS连接 - REBOOT_FAILURE：重启失败 - RESIZE_FAILURE：扩容失败 - ADD_CN_ING：增加CN中 - DEL_CN_ING：删除CN中 - CREATING_NODE：添加节点 - CREATE_NODE_FAILED：添加节点失败 - DELETING_NODE：删除节点 - DELETE_NODE_FAILED：删除节点失败 - REDISTRIBUTING：重分布中 - REDISTRIBUTE_FAILURE：重分布失败 - WAITING_REDISTRIBUTION：待重分布 - REDISTRIBUTION_PAUSED：重分布暂停 - ELB_BINDING：弹性负载均衡绑定中 - ELB_BIND_FAILED：弹性负载均衡绑定失败 - ELB_UNBINDING：弹性负载均衡解绑中 - ELB_UNBIND_FAILED：弹性负载均衡解绑失败 - ELB_SWITCHING：弹性负载均衡切换中 - ELB_SWITCHING_FAILED：弹性负载均衡切换失败 - NETWORK_CONFIGURING：网络配置中 - NETWORK_CONFIG_FAILED：网络配置失败 - DISK_EXPAND_FAILED：磁盘扩容失败 - DISK_EXPANDING：磁盘扩容中 - ACTIVE_STANDY_SWITCHOVER：主备恢复中 - ACTIVE_STANDY_SWITCHOVER_FAILURE：主备恢复失败 - CLUSTER_SHRINK_FAILED：缩容失败 - CLUSTER_SHRINKING：缩容中 - SHRINK_CHECK_FAILED：缩容检测失败 - SHRINK_CHECKING：缩容检测中 - FLAVOR_RESIZING_FAILED：规格变更失败 - FLAVOR_RESIZING：规格变更中 - MANAGE_IP_BIND_FAILED：登录开通失败 - MANAGE_IP_BINDING：登录开通中 - ORDER_PENDING：订单待支付 - FINE_GRAINED_RESTORING：细粒度恢复中 - DR_RECOVERING：容灾恢复中
 
@@ -735,7 +735,7 @@ class ClusterDetail:
 
     @property
     def parameter_group(self):
-        """Gets the parameter_group of this ClusterDetail.
+        r"""Gets the parameter_group of this ClusterDetail.
 
         :return: The parameter_group of this ClusterDetail.
         :rtype: :class:`huaweicloudsdkdws.v2.ParameterGroup`
@@ -744,7 +744,7 @@ class ClusterDetail:
 
     @parameter_group.setter
     def parameter_group(self, parameter_group):
-        """Sets the parameter_group of this ClusterDetail.
+        r"""Sets the parameter_group of this ClusterDetail.
 
         :param parameter_group: The parameter_group of this ClusterDetail.
         :type parameter_group: :class:`huaweicloudsdkdws.v2.ParameterGroup`
@@ -753,7 +753,7 @@ class ClusterDetail:
 
     @property
     def node_type_id(self):
-        """Gets the node_type_id of this ClusterDetail.
+        r"""Gets the node_type_id of this ClusterDetail.
 
         节点类型ID
 
@@ -764,7 +764,7 @@ class ClusterDetail:
 
     @node_type_id.setter
     def node_type_id(self, node_type_id):
-        """Sets the node_type_id of this ClusterDetail.
+        r"""Sets the node_type_id of this ClusterDetail.
 
         节点类型ID
 
@@ -775,7 +775,7 @@ class ClusterDetail:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ClusterDetail.
+        r"""Gets the security_group_id of this ClusterDetail.
 
         安全组ID
 
@@ -786,7 +786,7 @@ class ClusterDetail:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ClusterDetail.
+        r"""Sets the security_group_id of this ClusterDetail.
 
         安全组ID
 
@@ -797,7 +797,7 @@ class ClusterDetail:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ClusterDetail.
+        r"""Gets the order_id of this ClusterDetail.
 
         订单ID，仅包周期场景返回。
 
@@ -808,7 +808,7 @@ class ClusterDetail:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ClusterDetail.
+        r"""Sets the order_id of this ClusterDetail.
 
         订单ID，仅包周期场景返回。
 
@@ -819,7 +819,7 @@ class ClusterDetail:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ClusterDetail.
+        r"""Gets the private_ip of this ClusterDetail.
 
         内网IP地址列表
 
@@ -830,7 +830,7 @@ class ClusterDetail:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ClusterDetail.
+        r"""Sets the private_ip of this ClusterDetail.
 
         内网IP地址列表
 
@@ -841,7 +841,7 @@ class ClusterDetail:
 
     @property
     def maintain_window(self):
-        """Gets the maintain_window of this ClusterDetail.
+        r"""Gets the maintain_window of this ClusterDetail.
 
         :return: The maintain_window of this ClusterDetail.
         :rtype: :class:`huaweicloudsdkdws.v2.MaintainWindow`
@@ -850,7 +850,7 @@ class ClusterDetail:
 
     @maintain_window.setter
     def maintain_window(self, maintain_window):
-        """Sets the maintain_window of this ClusterDetail.
+        r"""Sets the maintain_window of this ClusterDetail.
 
         :param maintain_window: The maintain_window of this ClusterDetail.
         :type maintain_window: :class:`huaweicloudsdkdws.v2.MaintainWindow`
@@ -859,7 +859,7 @@ class ClusterDetail:
 
     @property
     def resize_info(self):
-        """Gets the resize_info of this ClusterDetail.
+        r"""Gets the resize_info of this ClusterDetail.
 
         :return: The resize_info of this ClusterDetail.
         :rtype: :class:`huaweicloudsdkdws.v2.ResizeInfo`
@@ -868,7 +868,7 @@ class ClusterDetail:
 
     @resize_info.setter
     def resize_info(self, resize_info):
-        """Sets the resize_info of this ClusterDetail.
+        r"""Sets the resize_info of this ClusterDetail.
 
         :param resize_info: The resize_info of this ClusterDetail.
         :type resize_info: :class:`huaweicloudsdkdws.v2.ResizeInfo`
@@ -877,7 +877,7 @@ class ClusterDetail:
 
     @property
     def failed_reasons(self):
-        """Gets the failed_reasons of this ClusterDetail.
+        r"""Gets the failed_reasons of this ClusterDetail.
 
         :return: The failed_reasons of this ClusterDetail.
         :rtype: :class:`huaweicloudsdkdws.v2.FailedReason`
@@ -886,7 +886,7 @@ class ClusterDetail:
 
     @failed_reasons.setter
     def failed_reasons(self, failed_reasons):
-        """Sets the failed_reasons of this ClusterDetail.
+        r"""Sets the failed_reasons of this ClusterDetail.
 
         :param failed_reasons: The failed_reasons of this ClusterDetail.
         :type failed_reasons: :class:`huaweicloudsdkdws.v2.FailedReason`
@@ -895,7 +895,7 @@ class ClusterDetail:
 
     @property
     def elb(self):
-        """Gets the elb of this ClusterDetail.
+        r"""Gets the elb of this ClusterDetail.
 
         :return: The elb of this ClusterDetail.
         :rtype: :class:`huaweicloudsdkdws.v2.ElbResp`
@@ -904,7 +904,7 @@ class ClusterDetail:
 
     @elb.setter
     def elb(self, elb):
-        """Sets the elb of this ClusterDetail.
+        r"""Sets the elb of this ClusterDetail.
 
         :param elb: The elb of this ClusterDetail.
         :type elb: :class:`huaweicloudsdkdws.v2.ElbResp`

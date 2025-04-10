@@ -32,7 +32,7 @@ class ShowDeploymentFormResponse(SdkResponse):
     }
 
     def __init__(self, initial_node_num=None, solution=None, shard_num=None, replica_num=None):
-        """ShowDeploymentFormResponse
+        r"""ShowDeploymentFormResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowDeploymentFormResponse(SdkResponse):
 
     @property
     def initial_node_num(self):
-        """Gets the initial_node_num of this ShowDeploymentFormResponse.
+        r"""Gets the initial_node_num of this ShowDeploymentFormResponse.
 
         初始节点数。
 
@@ -76,7 +76,7 @@ class ShowDeploymentFormResponse(SdkResponse):
 
     @initial_node_num.setter
     def initial_node_num(self, initial_node_num):
-        """Sets the initial_node_num of this ShowDeploymentFormResponse.
+        r"""Sets the initial_node_num of this ShowDeploymentFormResponse.
 
         初始节点数。
 
@@ -87,7 +87,7 @@ class ShowDeploymentFormResponse(SdkResponse):
 
     @property
     def solution(self):
-        """Gets the solution of this ShowDeploymentFormResponse.
+        r"""Gets the solution of this ShowDeploymentFormResponse.
 
         解决方案模板名称。
 
@@ -98,7 +98,7 @@ class ShowDeploymentFormResponse(SdkResponse):
 
     @solution.setter
     def solution(self, solution):
-        """Sets the solution of this ShowDeploymentFormResponse.
+        r"""Sets the solution of this ShowDeploymentFormResponse.
 
         解决方案模板名称。
 
@@ -109,7 +109,7 @@ class ShowDeploymentFormResponse(SdkResponse):
 
     @property
     def shard_num(self):
-        """Gets the shard_num of this ShowDeploymentFormResponse.
+        r"""Gets the shard_num of this ShowDeploymentFormResponse.
 
         分片数。
 
@@ -120,7 +120,7 @@ class ShowDeploymentFormResponse(SdkResponse):
 
     @shard_num.setter
     def shard_num(self, shard_num):
-        """Sets the shard_num of this ShowDeploymentFormResponse.
+        r"""Sets the shard_num of this ShowDeploymentFormResponse.
 
         分片数。
 
@@ -131,7 +131,7 @@ class ShowDeploymentFormResponse(SdkResponse):
 
     @property
     def replica_num(self):
-        """Gets the replica_num of this ShowDeploymentFormResponse.
+        r"""Gets the replica_num of this ShowDeploymentFormResponse.
 
         副本数。
 
@@ -142,7 +142,7 @@ class ShowDeploymentFormResponse(SdkResponse):
 
     @replica_num.setter
     def replica_num(self, replica_num):
-        """Sets the replica_num of this ShowDeploymentFormResponse.
+        r"""Sets the replica_num of this ShowDeploymentFormResponse.
 
         副本数。
 

@@ -27,7 +27,7 @@ class UpdateSubNetworkInterfaceRequest:
     }
 
     def __init__(self, sub_network_interface_id=None, body=None):
-        """UpdateSubNetworkInterfaceRequest
+        r"""UpdateSubNetworkInterfaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSubNetworkInterfaceRequest:
 
     @property
     def sub_network_interface_id(self):
-        """Gets the sub_network_interface_id of this UpdateSubNetworkInterfaceRequest.
+        r"""Gets the sub_network_interface_id of this UpdateSubNetworkInterfaceRequest.
 
         辅助弹性网卡的唯一标识
 
@@ -60,7 +60,7 @@ class UpdateSubNetworkInterfaceRequest:
 
     @sub_network_interface_id.setter
     def sub_network_interface_id(self, sub_network_interface_id):
-        """Sets the sub_network_interface_id of this UpdateSubNetworkInterfaceRequest.
+        r"""Sets the sub_network_interface_id of this UpdateSubNetworkInterfaceRequest.
 
         辅助弹性网卡的唯一标识
 
@@ -71,7 +71,7 @@ class UpdateSubNetworkInterfaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSubNetworkInterfaceRequest.
+        r"""Gets the body of this UpdateSubNetworkInterfaceRequest.
 
         :return: The body of this UpdateSubNetworkInterfaceRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceRequestBody`
@@ -80,7 +80,7 @@ class UpdateSubNetworkInterfaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSubNetworkInterfaceRequest.
+        r"""Sets the body of this UpdateSubNetworkInterfaceRequest.
 
         :param body: The body of this UpdateSubNetworkInterfaceRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceRequestBody`

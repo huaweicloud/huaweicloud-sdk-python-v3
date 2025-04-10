@@ -27,7 +27,7 @@ class SearchBusinessTopologyRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """SearchBusinessTopologyRequest
+        r"""SearchBusinessTopologyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SearchBusinessTopologyRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this SearchBusinessTopologyRequest.
+        r"""Gets the x_business_id of this SearchBusinessTopologyRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class SearchBusinessTopologyRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this SearchBusinessTopologyRequest.
+        r"""Sets the x_business_id of this SearchBusinessTopologyRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class SearchBusinessTopologyRequest:
 
     @property
     def body(self):
-        """Gets the body of this SearchBusinessTopologyRequest.
+        r"""Gets the body of this SearchBusinessTopologyRequest.
 
         :return: The body of this SearchBusinessTopologyRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.BusinessTopoRequest`
@@ -80,7 +80,7 @@ class SearchBusinessTopologyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SearchBusinessTopologyRequest.
+        r"""Sets the body of this SearchBusinessTopologyRequest.
 
         :param body: The body of this SearchBusinessTopologyRequest.
         :type body: :class:`huaweicloudsdkapm.v1.BusinessTopoRequest`

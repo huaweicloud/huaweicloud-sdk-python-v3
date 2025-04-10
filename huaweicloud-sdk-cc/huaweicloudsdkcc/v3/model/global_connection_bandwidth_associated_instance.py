@@ -31,7 +31,7 @@ class GlobalConnectionBandwidthAssociatedInstance:
     }
 
     def __init__(self, id=None, type=None, region_id=None, project_id=None):
-        """GlobalConnectionBandwidthAssociatedInstance
+        r"""GlobalConnectionBandwidthAssociatedInstance
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class GlobalConnectionBandwidthAssociatedInstance:
 
     @property
     def id(self):
-        """Gets the id of this GlobalConnectionBandwidthAssociatedInstance.
+        r"""Gets the id of this GlobalConnectionBandwidthAssociatedInstance.
 
         绑定实例ID。
 
@@ -73,7 +73,7 @@ class GlobalConnectionBandwidthAssociatedInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GlobalConnectionBandwidthAssociatedInstance.
+        r"""Sets the id of this GlobalConnectionBandwidthAssociatedInstance.
 
         绑定实例ID。
 
@@ -84,7 +84,7 @@ class GlobalConnectionBandwidthAssociatedInstance:
 
     @property
     def type(self):
-        """Gets the type of this GlobalConnectionBandwidthAssociatedInstance.
+        r"""Gets the type of this GlobalConnectionBandwidthAssociatedInstance.
 
         绑定实例类型。
 
@@ -95,7 +95,7 @@ class GlobalConnectionBandwidthAssociatedInstance:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GlobalConnectionBandwidthAssociatedInstance.
+        r"""Sets the type of this GlobalConnectionBandwidthAssociatedInstance.
 
         绑定实例类型。
 
@@ -106,7 +106,7 @@ class GlobalConnectionBandwidthAssociatedInstance:
 
     @property
     def region_id(self):
-        """Gets the region_id of this GlobalConnectionBandwidthAssociatedInstance.
+        r"""Gets the region_id of this GlobalConnectionBandwidthAssociatedInstance.
 
         绑定实例的region信息，global服务默认取值\"global\"。
 
@@ -117,7 +117,7 @@ class GlobalConnectionBandwidthAssociatedInstance:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this GlobalConnectionBandwidthAssociatedInstance.
+        r"""Sets the region_id of this GlobalConnectionBandwidthAssociatedInstance.
 
         绑定实例的region信息，global服务默认取值\"global\"。
 
@@ -128,7 +128,7 @@ class GlobalConnectionBandwidthAssociatedInstance:
 
     @property
     def project_id(self):
-        """Gets the project_id of this GlobalConnectionBandwidthAssociatedInstance.
+        r"""Gets the project_id of this GlobalConnectionBandwidthAssociatedInstance.
 
         绑定实例的project id信息。
 
@@ -139,7 +139,7 @@ class GlobalConnectionBandwidthAssociatedInstance:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this GlobalConnectionBandwidthAssociatedInstance.
+        r"""Sets the project_id of this GlobalConnectionBandwidthAssociatedInstance.
 
         绑定实例的project id信息。
 

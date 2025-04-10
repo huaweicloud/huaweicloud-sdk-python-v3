@@ -27,7 +27,7 @@ class UpdateNotificationMaskRequest:
     }
 
     def __init__(self, notification_mask_id=None, body=None):
-        """UpdateNotificationMaskRequest
+        r"""UpdateNotificationMaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateNotificationMaskRequest:
 
     @property
     def notification_mask_id(self):
-        """Gets the notification_mask_id of this UpdateNotificationMaskRequest.
+        r"""Gets the notification_mask_id of this UpdateNotificationMaskRequest.
 
         屏蔽规则ID
 
@@ -60,7 +60,7 @@ class UpdateNotificationMaskRequest:
 
     @notification_mask_id.setter
     def notification_mask_id(self, notification_mask_id):
-        """Sets the notification_mask_id of this UpdateNotificationMaskRequest.
+        r"""Sets the notification_mask_id of this UpdateNotificationMaskRequest.
 
         屏蔽规则ID
 
@@ -71,7 +71,7 @@ class UpdateNotificationMaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNotificationMaskRequest.
+        r"""Gets the body of this UpdateNotificationMaskRequest.
 
         :return: The body of this UpdateNotificationMaskRequest.
         :rtype: :class:`huaweicloudsdkces.v2.UpdateNotificationMasksRequestBody`
@@ -80,7 +80,7 @@ class UpdateNotificationMaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNotificationMaskRequest.
+        r"""Sets the body of this UpdateNotificationMaskRequest.
 
         :param body: The body of this UpdateNotificationMaskRequest.
         :type body: :class:`huaweicloudsdkces.v2.UpdateNotificationMasksRequestBody`

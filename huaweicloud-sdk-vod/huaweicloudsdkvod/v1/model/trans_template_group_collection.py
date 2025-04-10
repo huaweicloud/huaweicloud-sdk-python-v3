@@ -29,7 +29,7 @@ class TransTemplateGroupCollection:
     }
 
     def __init__(self, name=None, description=None, template_group_list=None):
-        """TransTemplateGroupCollection
+        r"""TransTemplateGroupCollection
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TransTemplateGroupCollection:
 
     @property
     def name(self):
-        """Gets the name of this TransTemplateGroupCollection.
+        r"""Gets the name of this TransTemplateGroupCollection.
 
         模板组集合名称<br/> 
 
@@ -66,7 +66,7 @@ class TransTemplateGroupCollection:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TransTemplateGroupCollection.
+        r"""Sets the name of this TransTemplateGroupCollection.
 
         模板组集合名称<br/> 
 
@@ -77,7 +77,7 @@ class TransTemplateGroupCollection:
 
     @property
     def description(self):
-        """Gets the description of this TransTemplateGroupCollection.
+        r"""Gets the description of this TransTemplateGroupCollection.
 
         模板组集合描述<br/> 
 
@@ -88,7 +88,7 @@ class TransTemplateGroupCollection:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TransTemplateGroupCollection.
+        r"""Sets the description of this TransTemplateGroupCollection.
 
         模板组集合描述<br/> 
 
@@ -99,7 +99,7 @@ class TransTemplateGroupCollection:
 
     @property
     def template_group_list(self):
-        """Gets the template_group_list of this TransTemplateGroupCollection.
+        r"""Gets the template_group_list of this TransTemplateGroupCollection.
 
         模板组列表,模板ID<br/> 
 
@@ -110,7 +110,7 @@ class TransTemplateGroupCollection:
 
     @template_group_list.setter
     def template_group_list(self, template_group_list):
-        """Sets the template_group_list of this TransTemplateGroupCollection.
+        r"""Sets the template_group_list of this TransTemplateGroupCollection.
 
         模板组列表,模板ID<br/> 
 

@@ -31,7 +31,7 @@ class DeleteInstanceRequest:
     }
 
     def __init__(self, application_id=None, component_id=None, instance_id=None, force=None):
-        """DeleteInstanceRequest
+        r"""DeleteInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class DeleteInstanceRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this DeleteInstanceRequest.
+        r"""Gets the application_id of this DeleteInstanceRequest.
 
         应用ID。
 
@@ -72,7 +72,7 @@ class DeleteInstanceRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this DeleteInstanceRequest.
+        r"""Sets the application_id of this DeleteInstanceRequest.
 
         应用ID。
 
@@ -83,7 +83,7 @@ class DeleteInstanceRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this DeleteInstanceRequest.
+        r"""Gets the component_id of this DeleteInstanceRequest.
 
         组件ID。
 
@@ -94,7 +94,7 @@ class DeleteInstanceRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this DeleteInstanceRequest.
+        r"""Sets the component_id of this DeleteInstanceRequest.
 
         组件ID。
 
@@ -105,7 +105,7 @@ class DeleteInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteInstanceRequest.
+        r"""Gets the instance_id of this DeleteInstanceRequest.
 
         组件实例ID。
 
@@ -116,7 +116,7 @@ class DeleteInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteInstanceRequest.
+        r"""Sets the instance_id of this DeleteInstanceRequest.
 
         组件实例ID。
 
@@ -127,7 +127,7 @@ class DeleteInstanceRequest:
 
     @property
     def force(self):
-        """Gets the force of this DeleteInstanceRequest.
+        r"""Gets the force of this DeleteInstanceRequest.
 
         是否强制删除。
 
@@ -138,7 +138,7 @@ class DeleteInstanceRequest:
 
     @force.setter
     def force(self, force):
-        """Sets the force of this DeleteInstanceRequest.
+        r"""Sets the force of this DeleteInstanceRequest.
 
         是否强制删除。
 

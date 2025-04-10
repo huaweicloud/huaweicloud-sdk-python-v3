@@ -27,7 +27,7 @@ class ListEipResponseBodySpec:
     }
 
     def __init__(self, egress=None, ingress=None):
-        """ListEipResponseBodySpec
+        r"""ListEipResponseBodySpec
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListEipResponseBodySpec:
 
     @property
     def egress(self):
-        """Gets the egress of this ListEipResponseBodySpec.
+        r"""Gets the egress of this ListEipResponseBodySpec.
 
         :return: The egress of this ListEipResponseBodySpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ListEipResponseBodySpecEgress`
@@ -59,7 +59,7 @@ class ListEipResponseBodySpec:
 
     @egress.setter
     def egress(self, egress):
-        """Sets the egress of this ListEipResponseBodySpec.
+        r"""Sets the egress of this ListEipResponseBodySpec.
 
         :param egress: The egress of this ListEipResponseBodySpec.
         :type egress: :class:`huaweicloudsdkcae.v1.ListEipResponseBodySpecEgress`
@@ -68,7 +68,7 @@ class ListEipResponseBodySpec:
 
     @property
     def ingress(self):
-        """Gets the ingress of this ListEipResponseBodySpec.
+        r"""Gets the ingress of this ListEipResponseBodySpec.
 
         :return: The ingress of this ListEipResponseBodySpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ListEipResponseBodySpecIngress`
@@ -77,7 +77,7 @@ class ListEipResponseBodySpec:
 
     @ingress.setter
     def ingress(self, ingress):
-        """Sets the ingress of this ListEipResponseBodySpec.
+        r"""Sets the ingress of this ListEipResponseBodySpec.
 
         :param ingress: The ingress of this ListEipResponseBodySpec.
         :type ingress: :class:`huaweicloudsdkcae.v1.ListEipResponseBodySpecIngress`

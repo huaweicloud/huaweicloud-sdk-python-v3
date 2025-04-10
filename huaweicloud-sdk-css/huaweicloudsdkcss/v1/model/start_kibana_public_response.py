@@ -24,7 +24,7 @@ class StartKibanaPublicResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StartKibanaPublicResponse
+        r"""StartKibanaPublicResponse
 
         The model defined in huaweicloud sdk
 

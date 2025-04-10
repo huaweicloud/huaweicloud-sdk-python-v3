@@ -31,7 +31,7 @@ class AuditResultSystemAuditResultErrors:
     }
 
     def __init__(self, audio_name=None, text_name=None, error_code=None, error_message=None):
-        """AuditResultSystemAuditResultErrors
+        r"""AuditResultSystemAuditResultErrors
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AuditResultSystemAuditResultErrors:
 
     @property
     def audio_name(self):
-        """Gets the audio_name of this AuditResultSystemAuditResultErrors.
+        r"""Gets the audio_name of this AuditResultSystemAuditResultErrors.
 
         音频文件名。
 
@@ -75,7 +75,7 @@ class AuditResultSystemAuditResultErrors:
 
     @audio_name.setter
     def audio_name(self, audio_name):
-        """Sets the audio_name of this AuditResultSystemAuditResultErrors.
+        r"""Sets the audio_name of this AuditResultSystemAuditResultErrors.
 
         音频文件名。
 
@@ -86,7 +86,7 @@ class AuditResultSystemAuditResultErrors:
 
     @property
     def text_name(self):
-        """Gets the text_name of this AuditResultSystemAuditResultErrors.
+        r"""Gets the text_name of this AuditResultSystemAuditResultErrors.
 
         文本文件名。
 
@@ -97,7 +97,7 @@ class AuditResultSystemAuditResultErrors:
 
     @text_name.setter
     def text_name(self, text_name):
-        """Sets the text_name of this AuditResultSystemAuditResultErrors.
+        r"""Sets the text_name of this AuditResultSystemAuditResultErrors.
 
         文本文件名。
 
@@ -108,7 +108,7 @@ class AuditResultSystemAuditResultErrors:
 
     @property
     def error_code(self):
-        """Gets the error_code of this AuditResultSystemAuditResultErrors.
+        r"""Gets the error_code of this AuditResultSystemAuditResultErrors.
 
         异常错误码。
 
@@ -119,7 +119,7 @@ class AuditResultSystemAuditResultErrors:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AuditResultSystemAuditResultErrors.
+        r"""Sets the error_code of this AuditResultSystemAuditResultErrors.
 
         异常错误码。
 
@@ -130,7 +130,7 @@ class AuditResultSystemAuditResultErrors:
 
     @property
     def error_message(self):
-        """Gets the error_message of this AuditResultSystemAuditResultErrors.
+        r"""Gets the error_message of this AuditResultSystemAuditResultErrors.
 
         异常错误信息。
 
@@ -141,7 +141,7 @@ class AuditResultSystemAuditResultErrors:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this AuditResultSystemAuditResultErrors.
+        r"""Sets the error_message of this AuditResultSystemAuditResultErrors.
 
         异常错误信息。
 

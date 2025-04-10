@@ -31,7 +31,7 @@ class FunctionRequestDTO:
     }
 
     def __init__(self, app_id=None, product_id=None, urn=None, description=None):
-        """FunctionRequestDTO
+        r"""FunctionRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class FunctionRequestDTO:
 
     @property
     def app_id(self):
-        """Gets the app_id of this FunctionRequestDTO.
+        r"""Gets the app_id of this FunctionRequestDTO.
 
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，可以携带该参数查询指定资源空间下的产品列表，不携带该参数则会查询该用户下所有产品列表。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -73,7 +73,7 @@ class FunctionRequestDTO:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this FunctionRequestDTO.
+        r"""Sets the app_id of this FunctionRequestDTO.
 
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，可以携带该参数查询指定资源空间下的产品列表，不携带该参数则会查询该用户下所有产品列表。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -84,7 +84,7 @@ class FunctionRequestDTO:
 
     @property
     def product_id(self):
-        """Gets the product_id of this FunctionRequestDTO.
+        r"""Gets the product_id of this FunctionRequestDTO.
 
         **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，创建产品后获得。方法请参见 [[创建产品](https://support.huaweicloud.com/api-iothub/iot_06_v5_0050.html)](tag:hws)[[创建产品](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0050.html)](tag:hws_hk)。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -95,7 +95,7 @@ class FunctionRequestDTO:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this FunctionRequestDTO.
+        r"""Sets the product_id of this FunctionRequestDTO.
 
         **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，创建产品后获得。方法请参见 [[创建产品](https://support.huaweicloud.com/api-iothub/iot_06_v5_0050.html)](tag:hws)[[创建产品](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0050.html)](tag:hws_hk)。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -106,7 +106,7 @@ class FunctionRequestDTO:
 
     @property
     def urn(self):
-        """Gets the urn of this FunctionRequestDTO.
+        r"""Gets the urn of this FunctionRequestDTO.
 
         **参数说明**：产品关联函数的URN（Uniform Resource Name）。 **取值范围**：长度不超过256，只允许字母、数字、下划线（_）、连接符（-）、分隔符（:）的组合。
 
@@ -117,7 +117,7 @@ class FunctionRequestDTO:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this FunctionRequestDTO.
+        r"""Sets the urn of this FunctionRequestDTO.
 
         **参数说明**：产品关联函数的URN（Uniform Resource Name）。 **取值范围**：长度不超过256，只允许字母、数字、下划线（_）、连接符（-）、分隔符（:）的组合。
 
@@ -128,7 +128,7 @@ class FunctionRequestDTO:
 
     @property
     def description(self):
-        """Gets the description of this FunctionRequestDTO.
+        r"""Gets the description of this FunctionRequestDTO.
 
         **参数说明**：编解码函数描述信息。 **取值范围**：128，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 
@@ -139,7 +139,7 @@ class FunctionRequestDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FunctionRequestDTO.
+        r"""Sets the description of this FunctionRequestDTO.
 
         **参数说明**：编解码函数描述信息。 **取值范围**：128，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 

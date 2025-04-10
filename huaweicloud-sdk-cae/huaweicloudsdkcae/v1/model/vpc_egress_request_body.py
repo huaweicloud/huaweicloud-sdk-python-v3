@@ -29,7 +29,7 @@ class VpcEgressRequestBody:
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """VpcEgressRequestBody
+        r"""VpcEgressRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VpcEgressRequestBody:
 
     @property
     def api_version(self):
-        """Gets the api_version of this VpcEgressRequestBody.
+        r"""Gets the api_version of this VpcEgressRequestBody.
 
         :return: The api_version of this VpcEgressRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -66,7 +66,7 @@ class VpcEgressRequestBody:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this VpcEgressRequestBody.
+        r"""Sets the api_version of this VpcEgressRequestBody.
 
         :param api_version: The api_version of this VpcEgressRequestBody.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -75,7 +75,7 @@ class VpcEgressRequestBody:
 
     @property
     def kind(self):
-        """Gets the kind of this VpcEgressRequestBody.
+        r"""Gets the kind of this VpcEgressRequestBody.
 
         :return: The kind of this VpcEgressRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.VpcEgressKindObj`
@@ -84,7 +84,7 @@ class VpcEgressRequestBody:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this VpcEgressRequestBody.
+        r"""Sets the kind of this VpcEgressRequestBody.
 
         :param kind: The kind of this VpcEgressRequestBody.
         :type kind: :class:`huaweicloudsdkcae.v1.VpcEgressKindObj`
@@ -93,7 +93,7 @@ class VpcEgressRequestBody:
 
     @property
     def spec(self):
-        """Gets the spec of this VpcEgressRequestBody.
+        r"""Gets the spec of this VpcEgressRequestBody.
 
         :return: The spec of this VpcEgressRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.VpcEgressRequestBodySpec`
@@ -102,7 +102,7 @@ class VpcEgressRequestBody:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this VpcEgressRequestBody.
+        r"""Sets the spec of this VpcEgressRequestBody.
 
         :param spec: The spec of this VpcEgressRequestBody.
         :type spec: :class:`huaweicloudsdkcae.v1.VpcEgressRequestBodySpec`

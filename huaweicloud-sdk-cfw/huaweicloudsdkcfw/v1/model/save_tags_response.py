@@ -26,7 +26,7 @@ class SaveTagsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """SaveTagsResponse
+        r"""SaveTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SaveTagsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SaveTagsResponse.
+        r"""Gets the data of this SaveTagsResponse.
 
         :return: The data of this SaveTagsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class SaveTagsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SaveTagsResponse.
+        r"""Sets the data of this SaveTagsResponse.
 
         :param data: The data of this SaveTagsResponse.
         :type data: str

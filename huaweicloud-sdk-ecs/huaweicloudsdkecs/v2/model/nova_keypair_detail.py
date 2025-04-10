@@ -43,7 +43,7 @@ class NovaKeypairDetail:
     }
 
     def __init__(self, public_key=None, name=None, fingerprint=None, created_at=None, deleted=None, deleted_at=None, id=None, updated_at=None, user_id=None, type=None):
-        """NovaKeypairDetail
+        r"""NovaKeypairDetail
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class NovaKeypairDetail:
 
     @property
     def public_key(self):
-        """Gets the public_key of this NovaKeypairDetail.
+        r"""Gets the public_key of this NovaKeypairDetail.
 
         密钥对应publicKey信息。
 
@@ -108,7 +108,7 @@ class NovaKeypairDetail:
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this NovaKeypairDetail.
+        r"""Sets the public_key of this NovaKeypairDetail.
 
         密钥对应publicKey信息。
 
@@ -119,7 +119,7 @@ class NovaKeypairDetail:
 
     @property
     def name(self):
-        """Gets the name of this NovaKeypairDetail.
+        r"""Gets the name of this NovaKeypairDetail.
 
         密钥名称。
 
@@ -130,7 +130,7 @@ class NovaKeypairDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NovaKeypairDetail.
+        r"""Sets the name of this NovaKeypairDetail.
 
         密钥名称。
 
@@ -141,7 +141,7 @@ class NovaKeypairDetail:
 
     @property
     def fingerprint(self):
-        """Gets the fingerprint of this NovaKeypairDetail.
+        r"""Gets the fingerprint of this NovaKeypairDetail.
 
         密钥对应指纹信息。
 
@@ -152,7 +152,7 @@ class NovaKeypairDetail:
 
     @fingerprint.setter
     def fingerprint(self, fingerprint):
-        """Sets the fingerprint of this NovaKeypairDetail.
+        r"""Sets the fingerprint of this NovaKeypairDetail.
 
         密钥对应指纹信息。
 
@@ -163,7 +163,7 @@ class NovaKeypairDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this NovaKeypairDetail.
+        r"""Gets the created_at of this NovaKeypairDetail.
 
         密钥创建时间。
 
@@ -174,7 +174,7 @@ class NovaKeypairDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this NovaKeypairDetail.
+        r"""Sets the created_at of this NovaKeypairDetail.
 
         密钥创建时间。
 
@@ -185,7 +185,7 @@ class NovaKeypairDetail:
 
     @property
     def deleted(self):
-        """Gets the deleted of this NovaKeypairDetail.
+        r"""Gets the deleted of this NovaKeypairDetail.
 
         密钥删除标记。   - true，表示密钥已被删除。   - false，表示密钥未被删除。
 
@@ -196,7 +196,7 @@ class NovaKeypairDetail:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this NovaKeypairDetail.
+        r"""Sets the deleted of this NovaKeypairDetail.
 
         密钥删除标记。   - true，表示密钥已被删除。   - false，表示密钥未被删除。
 
@@ -207,7 +207,7 @@ class NovaKeypairDetail:
 
     @property
     def deleted_at(self):
-        """Gets the deleted_at of this NovaKeypairDetail.
+        r"""Gets the deleted_at of this NovaKeypairDetail.
 
         密钥删除时间。
 
@@ -218,7 +218,7 @@ class NovaKeypairDetail:
 
     @deleted_at.setter
     def deleted_at(self, deleted_at):
-        """Sets the deleted_at of this NovaKeypairDetail.
+        r"""Sets the deleted_at of this NovaKeypairDetail.
 
         密钥删除时间。
 
@@ -229,7 +229,7 @@ class NovaKeypairDetail:
 
     @property
     def id(self):
-        """Gets the id of this NovaKeypairDetail.
+        r"""Gets the id of this NovaKeypairDetail.
 
         密钥ID。
 
@@ -240,7 +240,7 @@ class NovaKeypairDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NovaKeypairDetail.
+        r"""Sets the id of this NovaKeypairDetail.
 
         密钥ID。
 
@@ -251,7 +251,7 @@ class NovaKeypairDetail:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this NovaKeypairDetail.
+        r"""Gets the updated_at of this NovaKeypairDetail.
 
         密钥更新时间。
 
@@ -262,7 +262,7 @@ class NovaKeypairDetail:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this NovaKeypairDetail.
+        r"""Sets the updated_at of this NovaKeypairDetail.
 
         密钥更新时间。
 
@@ -273,7 +273,7 @@ class NovaKeypairDetail:
 
     @property
     def user_id(self):
-        """Gets the user_id of this NovaKeypairDetail.
+        r"""Gets the user_id of this NovaKeypairDetail.
 
         密钥所属用户信息。
 
@@ -284,7 +284,7 @@ class NovaKeypairDetail:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this NovaKeypairDetail.
+        r"""Sets the user_id of this NovaKeypairDetail.
 
         密钥所属用户信息。
 
@@ -295,7 +295,7 @@ class NovaKeypairDetail:
 
     @property
     def type(self):
-        """Gets the type of this NovaKeypairDetail.
+        r"""Gets the type of this NovaKeypairDetail.
 
         密钥类型，默认“ssh”  微版本2.2以上支持
 
@@ -306,7 +306,7 @@ class NovaKeypairDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NovaKeypairDetail.
+        r"""Sets the type of this NovaKeypairDetail.
 
         密钥类型，默认“ssh”  微版本2.2以上支持
 

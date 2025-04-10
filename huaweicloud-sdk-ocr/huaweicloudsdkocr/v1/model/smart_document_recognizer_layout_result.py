@@ -27,7 +27,7 @@ class SmartDocumentRecognizerLayoutResult:
     }
 
     def __init__(self, layout_block_count=None, layout_block_list=None):
-        """SmartDocumentRecognizerLayoutResult
+        r"""SmartDocumentRecognizerLayoutResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SmartDocumentRecognizerLayoutResult:
 
     @property
     def layout_block_count(self):
-        """Gets the layout_block_count of this SmartDocumentRecognizerLayoutResult.
+        r"""Gets the layout_block_count of this SmartDocumentRecognizerLayoutResult.
 
         模型识别到的文档版面区域数量。        
 
@@ -61,7 +61,7 @@ class SmartDocumentRecognizerLayoutResult:
 
     @layout_block_count.setter
     def layout_block_count(self, layout_block_count):
-        """Sets the layout_block_count of this SmartDocumentRecognizerLayoutResult.
+        r"""Sets the layout_block_count of this SmartDocumentRecognizerLayoutResult.
 
         模型识别到的文档版面区域数量。        
 
@@ -72,7 +72,7 @@ class SmartDocumentRecognizerLayoutResult:
 
     @property
     def layout_block_list(self):
-        """Gets the layout_block_list of this SmartDocumentRecognizerLayoutResult.
+        r"""Gets the layout_block_list of this SmartDocumentRecognizerLayoutResult.
 
         文档版面区域识别结果列表。 
 
@@ -83,7 +83,7 @@ class SmartDocumentRecognizerLayoutResult:
 
     @layout_block_list.setter
     def layout_block_list(self, layout_block_list):
-        """Sets the layout_block_list of this SmartDocumentRecognizerLayoutResult.
+        r"""Sets the layout_block_list of this SmartDocumentRecognizerLayoutResult.
 
         文档版面区域识别结果列表。 
 

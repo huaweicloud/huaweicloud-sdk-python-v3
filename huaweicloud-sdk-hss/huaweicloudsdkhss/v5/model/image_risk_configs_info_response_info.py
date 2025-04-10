@@ -37,7 +37,7 @@ class ImageRiskConfigsInfoResponseInfo:
     }
 
     def __init__(self, severity=None, check_name=None, check_type=None, standard=None, check_rule_num=None, failed_rule_num=None, check_type_desc=None):
-        """ImageRiskConfigsInfoResponseInfo
+        r"""ImageRiskConfigsInfoResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -47,7 +47,7 @@ class ImageRiskConfigsInfoResponseInfo:
         :type check_name: str
         :param check_type: 基线类型
         :type check_type: str
-        :param standard: 标准类型，包含如下:     - cn_standard : 等保合规标准     - hw_standard : 云安全实践标准
+        :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
         :type standard: str
         :param check_rule_num: 检查项数量
         :type check_rule_num: int
@@ -85,7 +85,7 @@ class ImageRiskConfigsInfoResponseInfo:
 
     @property
     def severity(self):
-        """Gets the severity of this ImageRiskConfigsInfoResponseInfo.
+        r"""Gets the severity of this ImageRiskConfigsInfoResponseInfo.
 
         风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危
 
@@ -96,7 +96,7 @@ class ImageRiskConfigsInfoResponseInfo:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ImageRiskConfigsInfoResponseInfo.
+        r"""Sets the severity of this ImageRiskConfigsInfoResponseInfo.
 
         风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危
 
@@ -107,7 +107,7 @@ class ImageRiskConfigsInfoResponseInfo:
 
     @property
     def check_name(self):
-        """Gets the check_name of this ImageRiskConfigsInfoResponseInfo.
+        r"""Gets the check_name of this ImageRiskConfigsInfoResponseInfo.
 
         基线名称
 
@@ -118,7 +118,7 @@ class ImageRiskConfigsInfoResponseInfo:
 
     @check_name.setter
     def check_name(self, check_name):
-        """Sets the check_name of this ImageRiskConfigsInfoResponseInfo.
+        r"""Sets the check_name of this ImageRiskConfigsInfoResponseInfo.
 
         基线名称
 
@@ -129,7 +129,7 @@ class ImageRiskConfigsInfoResponseInfo:
 
     @property
     def check_type(self):
-        """Gets the check_type of this ImageRiskConfigsInfoResponseInfo.
+        r"""Gets the check_type of this ImageRiskConfigsInfoResponseInfo.
 
         基线类型
 
@@ -140,7 +140,7 @@ class ImageRiskConfigsInfoResponseInfo:
 
     @check_type.setter
     def check_type(self, check_type):
-        """Sets the check_type of this ImageRiskConfigsInfoResponseInfo.
+        r"""Sets the check_type of this ImageRiskConfigsInfoResponseInfo.
 
         基线类型
 
@@ -151,9 +151,9 @@ class ImageRiskConfigsInfoResponseInfo:
 
     @property
     def standard(self):
-        """Gets the standard of this ImageRiskConfigsInfoResponseInfo.
+        r"""Gets the standard of this ImageRiskConfigsInfoResponseInfo.
 
-        标准类型，包含如下:     - cn_standard : 等保合规标准     - hw_standard : 云安全实践标准
+        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
         :return: The standard of this ImageRiskConfigsInfoResponseInfo.
         :rtype: str
@@ -162,9 +162,9 @@ class ImageRiskConfigsInfoResponseInfo:
 
     @standard.setter
     def standard(self, standard):
-        """Sets the standard of this ImageRiskConfigsInfoResponseInfo.
+        r"""Sets the standard of this ImageRiskConfigsInfoResponseInfo.
 
-        标准类型，包含如下:     - cn_standard : 等保合规标准     - hw_standard : 云安全实践标准
+        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
         :param standard: The standard of this ImageRiskConfigsInfoResponseInfo.
         :type standard: str
@@ -173,7 +173,7 @@ class ImageRiskConfigsInfoResponseInfo:
 
     @property
     def check_rule_num(self):
-        """Gets the check_rule_num of this ImageRiskConfigsInfoResponseInfo.
+        r"""Gets the check_rule_num of this ImageRiskConfigsInfoResponseInfo.
 
         检查项数量
 
@@ -184,7 +184,7 @@ class ImageRiskConfigsInfoResponseInfo:
 
     @check_rule_num.setter
     def check_rule_num(self, check_rule_num):
-        """Sets the check_rule_num of this ImageRiskConfigsInfoResponseInfo.
+        r"""Sets the check_rule_num of this ImageRiskConfigsInfoResponseInfo.
 
         检查项数量
 
@@ -195,7 +195,7 @@ class ImageRiskConfigsInfoResponseInfo:
 
     @property
     def failed_rule_num(self):
-        """Gets the failed_rule_num of this ImageRiskConfigsInfoResponseInfo.
+        r"""Gets the failed_rule_num of this ImageRiskConfigsInfoResponseInfo.
 
         风险项数量
 
@@ -206,7 +206,7 @@ class ImageRiskConfigsInfoResponseInfo:
 
     @failed_rule_num.setter
     def failed_rule_num(self, failed_rule_num):
-        """Sets the failed_rule_num of this ImageRiskConfigsInfoResponseInfo.
+        r"""Sets the failed_rule_num of this ImageRiskConfigsInfoResponseInfo.
 
         风险项数量
 
@@ -217,7 +217,7 @@ class ImageRiskConfigsInfoResponseInfo:
 
     @property
     def check_type_desc(self):
-        """Gets the check_type_desc of this ImageRiskConfigsInfoResponseInfo.
+        r"""Gets the check_type_desc of this ImageRiskConfigsInfoResponseInfo.
 
         基线描述信息
 
@@ -228,7 +228,7 @@ class ImageRiskConfigsInfoResponseInfo:
 
     @check_type_desc.setter
     def check_type_desc(self, check_type_desc):
-        """Sets the check_type_desc of this ImageRiskConfigsInfoResponseInfo.
+        r"""Sets the check_type_desc of this ImageRiskConfigsInfoResponseInfo.
 
         基线描述信息
 

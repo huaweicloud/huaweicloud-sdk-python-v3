@@ -27,7 +27,7 @@ class RunDrugReceptorPreprocessRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """RunDrugReceptorPreprocessRequest
+        r"""RunDrugReceptorPreprocessRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunDrugReceptorPreprocessRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this RunDrugReceptorPreprocessRequest.
+        r"""Gets the eihealth_project_id of this RunDrugReceptorPreprocessRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class RunDrugReceptorPreprocessRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this RunDrugReceptorPreprocessRequest.
+        r"""Sets the eihealth_project_id of this RunDrugReceptorPreprocessRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class RunDrugReceptorPreprocessRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunDrugReceptorPreprocessRequest.
+        r"""Gets the body of this RunDrugReceptorPreprocessRequest.
 
         :return: The body of this RunDrugReceptorPreprocessRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.RunReceptorPreprocessReq`
@@ -80,7 +80,7 @@ class RunDrugReceptorPreprocessRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunDrugReceptorPreprocessRequest.
+        r"""Sets the body of this RunDrugReceptorPreprocessRequest.
 
         :param body: The body of this RunDrugReceptorPreprocessRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.RunReceptorPreprocessReq`

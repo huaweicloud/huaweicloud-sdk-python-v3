@@ -31,7 +31,7 @@ class DiscountInfoV3:
     }
 
     def __init__(self, discount_id=None, discount_value=None, discount_type=None, orders=None):
-        """DiscountInfoV3
+        r"""DiscountInfoV3
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DiscountInfoV3:
 
     @property
     def discount_id(self):
-        """Gets the discount_id of this DiscountInfoV3.
+        r"""Gets the discount_id of this DiscountInfoV3.
 
         订单的可用折扣ID。 支付订单时，输入该参数的值，即可使用折扣。
 
@@ -71,7 +71,7 @@ class DiscountInfoV3:
 
     @discount_id.setter
     def discount_id(self, discount_id):
-        """Sets the discount_id of this DiscountInfoV3.
+        r"""Sets the discount_id of this DiscountInfoV3.
 
         订单的可用折扣ID。 支付订单时，输入该参数的值，即可使用折扣。
 
@@ -82,7 +82,7 @@ class DiscountInfoV3:
 
     @property
     def discount_value(self):
-        """Gets the discount_value of this DiscountInfoV3.
+        r"""Gets the discount_value of this DiscountInfoV3.
 
         折扣率或者满减值，如果折扣模式是一口价，这个值为空。
 
@@ -93,7 +93,7 @@ class DiscountInfoV3:
 
     @discount_value.setter
     def discount_value(self, discount_value):
-        """Sets the discount_value of this DiscountInfoV3.
+        r"""Sets the discount_value of this DiscountInfoV3.
 
         折扣率或者满减值，如果折扣模式是一口价，这个值为空。
 
@@ -104,7 +104,7 @@ class DiscountInfoV3:
 
     @property
     def discount_type(self):
-        """Gets the discount_type of this DiscountInfoV3.
+        r"""Gets the discount_type of this DiscountInfoV3.
 
         折扣类型，取值为 0：促销折扣1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣
 
@@ -115,7 +115,7 @@ class DiscountInfoV3:
 
     @discount_type.setter
     def discount_type(self, discount_type):
-        """Sets the discount_type of this DiscountInfoV3.
+        r"""Sets the discount_type of this DiscountInfoV3.
 
         折扣类型，取值为 0：促销折扣1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣
 
@@ -126,7 +126,7 @@ class DiscountInfoV3:
 
     @property
     def orders(self):
-        """Gets the orders of this DiscountInfoV3.
+        r"""Gets the orders of this DiscountInfoV3.
 
         可使用折扣的订单列表。 具体请参见表3。
 
@@ -137,7 +137,7 @@ class DiscountInfoV3:
 
     @orders.setter
     def orders(self, orders):
-        """Sets the orders of this DiscountInfoV3.
+        r"""Sets the orders of this DiscountInfoV3.
 
         可使用折扣的订单列表。 具体请参见表3。
 

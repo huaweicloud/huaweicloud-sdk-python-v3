@@ -31,7 +31,7 @@ class ScriptExecuteInputParam:
     }
 
     def __init__(self, param_name=None, param_value=None, param_order=None, param_refer=None):
-        """ScriptExecuteInputParam
+        r"""ScriptExecuteInputParam
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ScriptExecuteInputParam:
 
     @property
     def param_name(self):
-        """Gets the param_name of this ScriptExecuteInputParam.
+        r"""Gets the param_name of this ScriptExecuteInputParam.
 
         脚本入参的名称,同一个脚本，参数名不能重复
 
@@ -73,7 +73,7 @@ class ScriptExecuteInputParam:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this ScriptExecuteInputParam.
+        r"""Sets the param_name of this ScriptExecuteInputParam.
 
         脚本入参的名称,同一个脚本，参数名不能重复
 
@@ -84,7 +84,7 @@ class ScriptExecuteInputParam:
 
     @property
     def param_value(self):
-        """Gets the param_value of this ScriptExecuteInputParam.
+        r"""Gets the param_value of this ScriptExecuteInputParam.
 
         脚本入参的值，默认必填。有引用参数（param_refer不为空）时，允许为空 1.参数长度为1-4096位 2.可以包含大写字母、小写字母、数字及特殊字符(_-/.* ?:\",=+@#\\[{]}) 3.禁止出现连续'.'
 
@@ -95,7 +95,7 @@ class ScriptExecuteInputParam:
 
     @param_value.setter
     def param_value(self, param_value):
-        """Sets the param_value of this ScriptExecuteInputParam.
+        r"""Sets the param_value of this ScriptExecuteInputParam.
 
         脚本入参的值，默认必填。有引用参数（param_refer不为空）时，允许为空 1.参数长度为1-4096位 2.可以包含大写字母、小写字母、数字及特殊字符(_-/.* ?:\",=+@#\\[{]}) 3.禁止出现连续'.'
 
@@ -106,7 +106,7 @@ class ScriptExecuteInputParam:
 
     @property
     def param_order(self):
-        """Gets the param_order of this ScriptExecuteInputParam.
+        r"""Gets the param_order of this ScriptExecuteInputParam.
 
         该参数已废弃，传入该参数不会生效。
 
@@ -117,7 +117,7 @@ class ScriptExecuteInputParam:
 
     @param_order.setter
     def param_order(self, param_order):
-        """Sets the param_order of this ScriptExecuteInputParam.
+        r"""Sets the param_order of this ScriptExecuteInputParam.
 
         该参数已废弃，传入该参数不会生效。
 
@@ -128,7 +128,7 @@ class ScriptExecuteInputParam:
 
     @property
     def param_refer(self):
-        """Gets the param_refer of this ScriptExecuteInputParam.
+        r"""Gets the param_refer of this ScriptExecuteInputParam.
 
         :return: The param_refer of this ScriptExecuteInputParam.
         :rtype: :class:`huaweicloudsdkcoc.v1.ScriptExecuteParamReference`
@@ -137,7 +137,7 @@ class ScriptExecuteInputParam:
 
     @param_refer.setter
     def param_refer(self, param_refer):
-        """Sets the param_refer of this ScriptExecuteInputParam.
+        r"""Sets the param_refer of this ScriptExecuteInputParam.
 
         :param param_refer: The param_refer of this ScriptExecuteInputParam.
         :type param_refer: :class:`huaweicloudsdkcoc.v1.ScriptExecuteParamReference`

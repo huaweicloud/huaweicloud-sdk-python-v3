@@ -27,7 +27,7 @@ class BatchCreatePublicipTagsRequestBody:
     }
 
     def __init__(self, tags=None, action=None):
-        """BatchCreatePublicipTagsRequestBody
+        r"""BatchCreatePublicipTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchCreatePublicipTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreatePublicipTagsRequestBody.
+        r"""Gets the tags of this BatchCreatePublicipTagsRequestBody.
 
         标签列表
 
@@ -59,7 +59,7 @@ class BatchCreatePublicipTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreatePublicipTagsRequestBody.
+        r"""Sets the tags of this BatchCreatePublicipTagsRequestBody.
 
         标签列表
 
@@ -70,7 +70,7 @@ class BatchCreatePublicipTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchCreatePublicipTagsRequestBody.
+        r"""Gets the action of this BatchCreatePublicipTagsRequestBody.
 
         操作标识  create：创建  action为create时，tag的value必选
 
@@ -81,7 +81,7 @@ class BatchCreatePublicipTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchCreatePublicipTagsRequestBody.
+        r"""Sets the action of this BatchCreatePublicipTagsRequestBody.
 
         操作标识  create：创建  action为create时，tag的value必选
 

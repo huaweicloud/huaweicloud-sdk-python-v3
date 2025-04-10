@@ -26,7 +26,7 @@ class ListAccessControlLogsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListAccessControlLogsResponse
+        r"""ListAccessControlLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAccessControlLogsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListAccessControlLogsResponse.
+        r"""Gets the data of this ListAccessControlLogsResponse.
 
         :return: The data of this ListAccessControlLogsResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.HttpQueryCfwAccessControllerLogsResponseDTOData`
@@ -53,7 +53,7 @@ class ListAccessControlLogsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListAccessControlLogsResponse.
+        r"""Sets the data of this ListAccessControlLogsResponse.
 
         :param data: The data of this ListAccessControlLogsResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.HttpQueryCfwAccessControllerLogsResponseDTOData`

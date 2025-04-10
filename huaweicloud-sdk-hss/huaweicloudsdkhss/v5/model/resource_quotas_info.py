@@ -33,7 +33,7 @@ class ResourceQuotasInfo:
     }
 
     def __init__(self, version=None, total_num=None, used_num=None, available_num=None, available_resources_list=None):
-        """ResourceQuotasInfo
+        r"""ResourceQuotasInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ResourceQuotasInfo:
 
     @property
     def version(self):
-        """Gets the version of this ResourceQuotasInfo.
+        r"""Gets the version of this ResourceQuotasInfo.
 
         主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
 
@@ -82,7 +82,7 @@ class ResourceQuotasInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ResourceQuotasInfo.
+        r"""Sets the version of this ResourceQuotasInfo.
 
         主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
 
@@ -93,7 +93,7 @@ class ResourceQuotasInfo:
 
     @property
     def total_num(self):
-        """Gets the total_num of this ResourceQuotasInfo.
+        r"""Gets the total_num of this ResourceQuotasInfo.
 
         总配额数
 
@@ -104,7 +104,7 @@ class ResourceQuotasInfo:
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ResourceQuotasInfo.
+        r"""Sets the total_num of this ResourceQuotasInfo.
 
         总配额数
 
@@ -115,7 +115,7 @@ class ResourceQuotasInfo:
 
     @property
     def used_num(self):
-        """Gets the used_num of this ResourceQuotasInfo.
+        r"""Gets the used_num of this ResourceQuotasInfo.
 
         已使用配额数
 
@@ -126,7 +126,7 @@ class ResourceQuotasInfo:
 
     @used_num.setter
     def used_num(self, used_num):
-        """Sets the used_num of this ResourceQuotasInfo.
+        r"""Sets the used_num of this ResourceQuotasInfo.
 
         已使用配额数
 
@@ -137,7 +137,7 @@ class ResourceQuotasInfo:
 
     @property
     def available_num(self):
-        """Gets the available_num of this ResourceQuotasInfo.
+        r"""Gets the available_num of this ResourceQuotasInfo.
 
         可用总配额数
 
@@ -148,7 +148,7 @@ class ResourceQuotasInfo:
 
     @available_num.setter
     def available_num(self, available_num):
-        """Sets the available_num of this ResourceQuotasInfo.
+        r"""Sets the available_num of this ResourceQuotasInfo.
 
         可用总配额数
 
@@ -159,7 +159,7 @@ class ResourceQuotasInfo:
 
     @property
     def available_resources_list(self):
-        """Gets the available_resources_list of this ResourceQuotasInfo.
+        r"""Gets the available_resources_list of this ResourceQuotasInfo.
 
         可用资源列表
 
@@ -170,7 +170,7 @@ class ResourceQuotasInfo:
 
     @available_resources_list.setter
     def available_resources_list(self, available_resources_list):
-        """Sets the available_resources_list of this ResourceQuotasInfo.
+        r"""Sets the available_resources_list of this ResourceQuotasInfo.
 
         可用资源列表
 

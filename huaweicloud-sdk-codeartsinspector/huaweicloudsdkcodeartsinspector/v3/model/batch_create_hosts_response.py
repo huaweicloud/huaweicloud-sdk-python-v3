@@ -28,7 +28,7 @@ class BatchCreateHostsResponse(SdkResponse):
     }
 
     def __init__(self, items=None, total=None):
-        """BatchCreateHostsResponse
+        r"""BatchCreateHostsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchCreateHostsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this BatchCreateHostsResponse.
+        r"""Gets the items of this BatchCreateHostsResponse.
 
         创建的主机列表
 
@@ -62,7 +62,7 @@ class BatchCreateHostsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this BatchCreateHostsResponse.
+        r"""Sets the items of this BatchCreateHostsResponse.
 
         创建的主机列表
 
@@ -73,7 +73,7 @@ class BatchCreateHostsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this BatchCreateHostsResponse.
+        r"""Gets the total of this BatchCreateHostsResponse.
 
         主机总数
 
@@ -84,7 +84,7 @@ class BatchCreateHostsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BatchCreateHostsResponse.
+        r"""Sets the total of this BatchCreateHostsResponse.
 
         主机总数
 

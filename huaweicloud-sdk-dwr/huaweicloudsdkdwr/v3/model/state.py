@@ -41,7 +41,7 @@ class State:
     }
 
     def __init__(self, start=None, type=None, payload_filter_in=None, payload_filter_out=None, state_name=None, action_mode=None, actions=None, next_state=None, time_delay=None):
-        """State
+        r"""State
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class State:
 
     @property
     def start(self):
-        """Gets the start of this State.
+        r"""Gets the start of this State.
 
         标识开始的state，图中必须且只有一个start为true的state。
 
@@ -108,7 +108,7 @@ class State:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this State.
+        r"""Sets the start of this State.
 
         标识开始的state，图中必须且只有一个start为true的state。
 
@@ -119,7 +119,7 @@ class State:
 
     @property
     def type(self):
-        """Gets the type of this State.
+        r"""Gets the type of this State.
 
         必须有TYPE，TYPE值必须是3种State（DELAY，OPERATION，END）中一种。
 
@@ -130,7 +130,7 @@ class State:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this State.
+        r"""Sets the type of this State.
 
         必须有TYPE，TYPE值必须是3种State（DELAY，OPERATION，END）中一种。
 
@@ -141,7 +141,7 @@ class State:
 
     @property
     def payload_filter_in(self):
-        """Gets the payload_filter_in of this State.
+        r"""Gets the payload_filter_in of this State.
 
         过滤输入参数，默认值是\"$\"，表示不过滤。必须是合法的JSONPath格式。 说明 END State没有payload_filter_in属性。
 
@@ -152,7 +152,7 @@ class State:
 
     @payload_filter_in.setter
     def payload_filter_in(self, payload_filter_in):
-        """Sets the payload_filter_in of this State.
+        r"""Sets the payload_filter_in of this State.
 
         过滤输入参数，默认值是\"$\"，表示不过滤。必须是合法的JSONPath格式。 说明 END State没有payload_filter_in属性。
 
@@ -163,7 +163,7 @@ class State:
 
     @property
     def payload_filter_out(self):
-        """Gets the payload_filter_out of this State.
+        r"""Gets the payload_filter_out of this State.
 
         过滤state的输出结果，默认值是\"$\"，表示不过滤。 必须是合法的JSONPath格式。 说明 END State没有payload_filter_out属性。
 
@@ -174,7 +174,7 @@ class State:
 
     @payload_filter_out.setter
     def payload_filter_out(self, payload_filter_out):
-        """Sets the payload_filter_out of this State.
+        r"""Sets the payload_filter_out of this State.
 
         过滤state的输出结果，默认值是\"$\"，表示不过滤。 必须是合法的JSONPath格式。 说明 END State没有payload_filter_out属性。
 
@@ -185,7 +185,7 @@ class State:
 
     @property
     def state_name(self):
-        """Gets the state_name of this State.
+        r"""Gets the state_name of this State.
 
         state的名字定义。 由小写字母、数字和中划线“-”组成，长度为[1, 20]。
 
@@ -196,7 +196,7 @@ class State:
 
     @state_name.setter
     def state_name(self, state_name):
-        """Sets the state_name of this State.
+        r"""Sets the state_name of this State.
 
         state的名字定义。 由小写字母、数字和中划线“-”组成，长度为[1, 20]。
 
@@ -207,7 +207,7 @@ class State:
 
     @property
     def action_mode(self):
-        """Gets the action_mode of this State.
+        r"""Gets the action_mode of this State.
 
         Action执行模式，支持串行，并行两种模式，默认串行  最小长度：1  最大长度：32  枚举值：  sequential  parallel
 
@@ -218,7 +218,7 @@ class State:
 
     @action_mode.setter
     def action_mode(self, action_mode):
-        """Sets the action_mode of this State.
+        r"""Sets the action_mode of this State.
 
         Action执行模式，支持串行，并行两种模式，默认串行  最小长度：1  最大长度：32  枚举值：  sequential  parallel
 
@@ -229,7 +229,7 @@ class State:
 
     @property
     def actions(self):
-        """Gets the actions of this State.
+        r"""Gets the actions of this State.
 
         节点中要执行的操作列表
 
@@ -240,7 +240,7 @@ class State:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this State.
+        r"""Sets the actions of this State.
 
         节点中要执行的操作列表
 
@@ -251,7 +251,7 @@ class State:
 
     @property
     def next_state(self):
-        """Gets the next_state of this State.
+        r"""Gets the next_state of this State.
 
         创建工作流指定的下一个节点名称
 
@@ -262,7 +262,7 @@ class State:
 
     @next_state.setter
     def next_state(self, next_state):
-        """Sets the next_state of this State.
+        r"""Sets the next_state of this State.
 
         创建工作流指定的下一个节点名称
 
@@ -273,7 +273,7 @@ class State:
 
     @property
     def time_delay(self):
-        """Gets the time_delay of this State.
+        r"""Gets the time_delay of this State.
 
         当节点类型为事件延迟时填入需要延迟的时间，单位为秒
 
@@ -284,7 +284,7 @@ class State:
 
     @time_delay.setter
     def time_delay(self, time_delay):
-        """Sets the time_delay of this State.
+        r"""Sets the time_delay of this State.
 
         当节点类型为事件延迟时填入需要延迟的时间，单位为秒
 

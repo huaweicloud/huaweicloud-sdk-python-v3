@@ -32,7 +32,7 @@ class ShowDatasetResponse(SdkResponse):
     }
 
     def __init__(self, count=None, run_id=None, job_type=None, sql_job=None):
-        """ShowDatasetResponse
+        r"""ShowDatasetResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowDatasetResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowDatasetResponse.
+        r"""Gets the count of this ShowDatasetResponse.
 
         作业结果总个数。
 
@@ -76,7 +76,7 @@ class ShowDatasetResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowDatasetResponse.
+        r"""Sets the count of this ShowDatasetResponse.
 
         作业结果总个数。
 
@@ -87,7 +87,7 @@ class ShowDatasetResponse(SdkResponse):
 
     @property
     def run_id(self):
-        """Gets the run_id of this ShowDatasetResponse.
+        r"""Gets the run_id of this ShowDatasetResponse.
 
         作业运行ID。
 
@@ -98,7 +98,7 @@ class ShowDatasetResponse(SdkResponse):
 
     @run_id.setter
     def run_id(self, run_id):
-        """Sets the run_id of this ShowDatasetResponse.
+        r"""Sets the run_id of this ShowDatasetResponse.
 
         作业运行ID。
 
@@ -109,7 +109,7 @@ class ShowDatasetResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowDatasetResponse.
+        r"""Gets the job_type of this ShowDatasetResponse.
 
         作业类型。
 
@@ -120,7 +120,7 @@ class ShowDatasetResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowDatasetResponse.
+        r"""Sets the job_type of this ShowDatasetResponse.
 
         作业类型。
 
@@ -131,7 +131,7 @@ class ShowDatasetResponse(SdkResponse):
 
     @property
     def sql_job(self):
-        """Gets the sql_job of this ShowDatasetResponse.
+        r"""Gets the sql_job of this ShowDatasetResponse.
 
         :return: The sql_job of this ShowDatasetResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.SqlJobQueryDataset`
@@ -140,7 +140,7 @@ class ShowDatasetResponse(SdkResponse):
 
     @sql_job.setter
     def sql_job(self, sql_job):
-        """Sets the sql_job of this ShowDatasetResponse.
+        r"""Sets the sql_job of this ShowDatasetResponse.
 
         :param sql_job: The sql_job of this ShowDatasetResponse.
         :type sql_job: :class:`huaweicloudsdkiotanalytics.v1.SqlJobQueryDataset`

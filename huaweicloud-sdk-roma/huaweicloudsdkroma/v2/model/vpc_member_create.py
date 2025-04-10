@@ -25,7 +25,7 @@ class VpcMemberCreate:
     }
 
     def __init__(self, members=None):
-        """VpcMemberCreate
+        r"""VpcMemberCreate
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class VpcMemberCreate:
 
     @property
     def members(self):
-        """Gets the members of this VpcMemberCreate.
+        r"""Gets the members of this VpcMemberCreate.
 
         后端实例列表
 
@@ -53,7 +53,7 @@ class VpcMemberCreate:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this VpcMemberCreate.
+        r"""Sets the members of this VpcMemberCreate.
 
         后端实例列表
 

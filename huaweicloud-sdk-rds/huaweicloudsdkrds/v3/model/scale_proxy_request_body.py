@@ -27,7 +27,7 @@ class ScaleProxyRequestBody:
     }
 
     def __init__(self, flavor_ref=None, delay=None):
-        """ScaleProxyRequestBody
+        r"""ScaleProxyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ScaleProxyRequestBody:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this ScaleProxyRequestBody.
+        r"""Gets the flavor_ref of this ScaleProxyRequestBody.
 
         需要变更的新规格ID。
 
@@ -59,7 +59,7 @@ class ScaleProxyRequestBody:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this ScaleProxyRequestBody.
+        r"""Sets the flavor_ref of this ScaleProxyRequestBody.
 
         需要变更的新规格ID。
 
@@ -70,7 +70,7 @@ class ScaleProxyRequestBody:
 
     @property
     def delay(self):
-        """Gets the delay of this ScaleProxyRequestBody.
+        r"""Gets the delay of this ScaleProxyRequestBody.
 
         是否延迟变更。  - true：延迟变更，将在运维时间窗内自动变更。 - false：立即变更。
 
@@ -81,7 +81,7 @@ class ScaleProxyRequestBody:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this ScaleProxyRequestBody.
+        r"""Sets the delay of this ScaleProxyRequestBody.
 
         是否延迟变更。  - true：延迟变更，将在运维时间窗内自动变更。 - false：立即变更。
 

@@ -29,7 +29,7 @@ class Result:
     }
 
     def __init__(self, text=None, score=None, word_info=None):
-        """Result
+        r"""Result
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Result:
 
     @property
     def text(self):
-        """Gets the text of this Result.
+        r"""Gets the text of this Result.
 
         调用成功表示识别出的内容。
 
@@ -66,7 +66,7 @@ class Result:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this Result.
+        r"""Sets the text of this Result.
 
         调用成功表示识别出的内容。
 
@@ -77,7 +77,7 @@ class Result:
 
     @property
     def score(self):
-        """Gets the score of this Result.
+        r"""Gets the score of this Result.
 
         调用成功表示识别出的置信度，取值范围：0~1。
 
@@ -88,7 +88,7 @@ class Result:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this Result.
+        r"""Sets the score of this Result.
 
         调用成功表示识别出的置信度，取值范围：0~1。
 
@@ -99,7 +99,7 @@ class Result:
 
     @property
     def word_info(self):
-        """Gets the word_info of this Result.
+        r"""Gets the word_info of this Result.
 
         分词信息列表
 
@@ -110,7 +110,7 @@ class Result:
 
     @word_info.setter
     def word_info(self, word_info):
-        """Sets the word_info of this Result.
+        r"""Sets the word_info of this Result.
 
         分词信息列表
 

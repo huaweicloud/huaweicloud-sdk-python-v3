@@ -35,7 +35,7 @@ class ListFirmwaresRequest:
     }
 
     def __init__(self, device_type=None, arch=None, os_name=None, os_version=None, offset=None, limit=None):
-        """ListFirmwaresRequest
+        r"""ListFirmwaresRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListFirmwaresRequest:
 
     @property
     def device_type(self):
-        """Gets the device_type of this ListFirmwaresRequest.
+        r"""Gets the device_type of this ListFirmwaresRequest.
 
         固件适用设备类型
 
@@ -88,7 +88,7 @@ class ListFirmwaresRequest:
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this ListFirmwaresRequest.
+        r"""Sets the device_type of this ListFirmwaresRequest.
 
         固件适用设备类型
 
@@ -99,7 +99,7 @@ class ListFirmwaresRequest:
 
     @property
     def arch(self):
-        """Gets the arch of this ListFirmwaresRequest.
+        r"""Gets the arch of this ListFirmwaresRequest.
 
         边缘节点架构
 
@@ -110,7 +110,7 @@ class ListFirmwaresRequest:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this ListFirmwaresRequest.
+        r"""Sets the arch of this ListFirmwaresRequest.
 
         边缘节点架构
 
@@ -121,7 +121,7 @@ class ListFirmwaresRequest:
 
     @property
     def os_name(self):
-        """Gets the os_name of this ListFirmwaresRequest.
+        r"""Gets the os_name of this ListFirmwaresRequest.
 
         边缘设备操作系统名称
 
@@ -132,7 +132,7 @@ class ListFirmwaresRequest:
 
     @os_name.setter
     def os_name(self, os_name):
-        """Sets the os_name of this ListFirmwaresRequest.
+        r"""Sets the os_name of this ListFirmwaresRequest.
 
         边缘设备操作系统名称
 
@@ -143,7 +143,7 @@ class ListFirmwaresRequest:
 
     @property
     def os_version(self):
-        """Gets the os_version of this ListFirmwaresRequest.
+        r"""Gets the os_version of this ListFirmwaresRequest.
 
         边缘设备操作系统版本
 
@@ -154,7 +154,7 @@ class ListFirmwaresRequest:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this ListFirmwaresRequest.
+        r"""Sets the os_version of this ListFirmwaresRequest.
 
         边缘设备操作系统版本
 
@@ -165,7 +165,7 @@ class ListFirmwaresRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFirmwaresRequest.
+        r"""Gets the offset of this ListFirmwaresRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -176,7 +176,7 @@ class ListFirmwaresRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFirmwaresRequest.
+        r"""Sets the offset of this ListFirmwaresRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -187,7 +187,7 @@ class ListFirmwaresRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFirmwaresRequest.
+        r"""Gets the limit of this ListFirmwaresRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 
@@ -198,7 +198,7 @@ class ListFirmwaresRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFirmwaresRequest.
+        r"""Sets the limit of this ListFirmwaresRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 

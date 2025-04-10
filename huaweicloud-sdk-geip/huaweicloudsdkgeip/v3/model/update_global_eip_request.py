@@ -27,7 +27,7 @@ class UpdateGlobalEipRequest:
     }
 
     def __init__(self, global_eip_id=None, body=None):
-        """UpdateGlobalEipRequest
+        r"""UpdateGlobalEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateGlobalEipRequest:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this UpdateGlobalEipRequest.
+        r"""Gets the global_eip_id of this UpdateGlobalEipRequest.
 
         :return: The global_eip_id of this UpdateGlobalEipRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class UpdateGlobalEipRequest:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this UpdateGlobalEipRequest.
+        r"""Sets the global_eip_id of this UpdateGlobalEipRequest.
 
         :param global_eip_id: The global_eip_id of this UpdateGlobalEipRequest.
         :type global_eip_id: str
@@ -67,7 +67,7 @@ class UpdateGlobalEipRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGlobalEipRequest.
+        r"""Gets the body of this UpdateGlobalEipRequest.
 
         :return: The body of this UpdateGlobalEipRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.UpdateGlobalEipRequestBody`
@@ -76,7 +76,7 @@ class UpdateGlobalEipRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGlobalEipRequest.
+        r"""Sets the body of this UpdateGlobalEipRequest.
 
         :param body: The body of this UpdateGlobalEipRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.UpdateGlobalEipRequestBody`

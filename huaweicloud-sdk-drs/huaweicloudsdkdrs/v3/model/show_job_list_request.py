@@ -27,7 +27,7 @@ class ShowJobListRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ShowJobListRequest
+        r"""ShowJobListRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowJobListRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowJobListRequest.
+        r"""Gets the x_language of this ShowJobListRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class ShowJobListRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowJobListRequest.
+        r"""Sets the x_language of this ShowJobListRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class ShowJobListRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowJobListRequest.
+        r"""Gets the body of this ShowJobListRequest.
 
         :return: The body of this ShowJobListRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.QueryJobsReq`
@@ -81,7 +81,7 @@ class ShowJobListRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowJobListRequest.
+        r"""Sets the body of this ShowJobListRequest.
 
         :param body: The body of this ShowJobListRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.QueryJobsReq`

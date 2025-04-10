@@ -25,7 +25,7 @@ class CreateDashboardGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDashboardGroupRequest
+        r"""CreateDashboardGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDashboardGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDashboardGroupRequest.
+        r"""Gets the body of this CreateDashboardGroupRequest.
 
         :return: The body of this CreateDashboardGroupRequest.
         :rtype: :class:`huaweicloudsdklts.v2.CreateDashboardGroupReq`
@@ -52,7 +52,7 @@ class CreateDashboardGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDashboardGroupRequest.
+        r"""Sets the body of this CreateDashboardGroupRequest.
 
         :param body: The body of this CreateDashboardGroupRequest.
         :type body: :class:`huaweicloudsdklts.v2.CreateDashboardGroupReq`

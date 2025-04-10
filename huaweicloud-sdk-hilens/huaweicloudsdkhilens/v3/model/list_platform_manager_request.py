@@ -33,7 +33,7 @@ class ListPlatformManagerRequest:
     }
 
     def __init__(self, id=None, device_type=None, type=None, offset=None, limit=None):
-        """ListPlatformManagerRequest
+        r"""ListPlatformManagerRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListPlatformManagerRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPlatformManagerRequest.
+        r"""Gets the id of this ListPlatformManagerRequest.
 
         订单Id，可以根据订单Id查询
 
@@ -82,7 +82,7 @@ class ListPlatformManagerRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPlatformManagerRequest.
+        r"""Sets the id of this ListPlatformManagerRequest.
 
         订单Id，可以根据订单Id查询
 
@@ -93,7 +93,7 @@ class ListPlatformManagerRequest:
 
     @property
     def device_type(self):
-        """Gets the device_type of this ListPlatformManagerRequest.
+        r"""Gets the device_type of this ListPlatformManagerRequest.
 
         设备类别：lite_device轻量型设备，small_device小型设备，large_device大型设备，large_device_cpu CPU大型设备， large_device_gpu_npu CPU,NPU大型设备
 
@@ -104,7 +104,7 @@ class ListPlatformManagerRequest:
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this ListPlatformManagerRequest.
+        r"""Sets the device_type of this ListPlatformManagerRequest.
 
         设备类别：lite_device轻量型设备，small_device小型设备，large_device大型设备，large_device_cpu CPU大型设备， large_device_gpu_npu CPU,NPU大型设备
 
@@ -115,7 +115,7 @@ class ListPlatformManagerRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListPlatformManagerRequest.
+        r"""Gets the type of this ListPlatformManagerRequest.
 
         运行服务费类别，专业版为running_service，标准版为development_service
 
@@ -126,7 +126,7 @@ class ListPlatformManagerRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListPlatformManagerRequest.
+        r"""Sets the type of this ListPlatformManagerRequest.
 
         运行服务费类别，专业版为running_service，标准版为development_service
 
@@ -137,7 +137,7 @@ class ListPlatformManagerRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPlatformManagerRequest.
+        r"""Gets the offset of this ListPlatformManagerRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -148,7 +148,7 @@ class ListPlatformManagerRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPlatformManagerRequest.
+        r"""Sets the offset of this ListPlatformManagerRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -159,7 +159,7 @@ class ListPlatformManagerRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPlatformManagerRequest.
+        r"""Gets the limit of this ListPlatformManagerRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 
@@ -170,7 +170,7 @@ class ListPlatformManagerRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPlatformManagerRequest.
+        r"""Sets the limit of this ListPlatformManagerRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 

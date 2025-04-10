@@ -29,7 +29,7 @@ class RunFastaPreprocessReq:
     }
 
     def __init__(self, file=None, preview_count=None, count_limit=None):
-        """RunFastaPreprocessReq
+        r"""RunFastaPreprocessReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RunFastaPreprocessReq:
 
     @property
     def file(self):
-        """Gets the file of this RunFastaPreprocessReq.
+        r"""Gets the file of this RunFastaPreprocessReq.
 
         :return: The file of this RunFastaPreprocessReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.FastaReceptor`
@@ -65,7 +65,7 @@ class RunFastaPreprocessReq:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this RunFastaPreprocessReq.
+        r"""Sets the file of this RunFastaPreprocessReq.
 
         :param file: The file of this RunFastaPreprocessReq.
         :type file: :class:`huaweicloudsdkeihealth.v1.FastaReceptor`
@@ -74,7 +74,7 @@ class RunFastaPreprocessReq:
 
     @property
     def preview_count(self):
-        """Gets the preview_count of this RunFastaPreprocessReq.
+        r"""Gets the preview_count of this RunFastaPreprocessReq.
 
         预览数量
 
@@ -85,7 +85,7 @@ class RunFastaPreprocessReq:
 
     @preview_count.setter
     def preview_count(self, preview_count):
-        """Sets the preview_count of this RunFastaPreprocessReq.
+        r"""Sets the preview_count of this RunFastaPreprocessReq.
 
         预览数量
 
@@ -96,7 +96,7 @@ class RunFastaPreprocessReq:
 
     @property
     def count_limit(self):
-        """Gets the count_limit of this RunFastaPreprocessReq.
+        r"""Gets the count_limit of this RunFastaPreprocessReq.
 
         计数上限
 
@@ -107,7 +107,7 @@ class RunFastaPreprocessReq:
 
     @count_limit.setter
     def count_limit(self, count_limit):
-        """Sets the count_limit of this RunFastaPreprocessReq.
+        r"""Sets the count_limit of this RunFastaPreprocessReq.
 
         计数上限
 

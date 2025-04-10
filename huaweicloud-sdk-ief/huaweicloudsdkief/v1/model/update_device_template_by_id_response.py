@@ -26,7 +26,7 @@ class UpdateDeviceTemplateByIdResponse(SdkResponse):
     }
 
     def __init__(self, device_template=None):
-        """UpdateDeviceTemplateByIdResponse
+        r"""UpdateDeviceTemplateByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateDeviceTemplateByIdResponse(SdkResponse):
 
     @property
     def device_template(self):
-        """Gets the device_template of this UpdateDeviceTemplateByIdResponse.
+        r"""Gets the device_template of this UpdateDeviceTemplateByIdResponse.
 
         :return: The device_template of this UpdateDeviceTemplateByIdResponse.
         :rtype: :class:`huaweicloudsdkief.v1.EdgemgrDevice`
@@ -53,7 +53,7 @@ class UpdateDeviceTemplateByIdResponse(SdkResponse):
 
     @device_template.setter
     def device_template(self, device_template):
-        """Sets the device_template of this UpdateDeviceTemplateByIdResponse.
+        r"""Sets the device_template of this UpdateDeviceTemplateByIdResponse.
 
         :param device_template: The device_template of this UpdateDeviceTemplateByIdResponse.
         :type device_template: :class:`huaweicloudsdkief.v1.EdgemgrDevice`

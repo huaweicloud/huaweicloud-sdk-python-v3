@@ -35,7 +35,7 @@ class IpsecPolicy:
     }
 
     def __init__(self, authentication_algorithm=None, encryption_algorithm=None, pfs=None, transform_protocol=None, lifetime_seconds=None, encapsulation_mode=None):
-        """IpsecPolicy
+        r"""IpsecPolicy
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class IpsecPolicy:
 
     @property
     def authentication_algorithm(self):
-        """Gets the authentication_algorithm of this IpsecPolicy.
+        r"""Gets the authentication_algorithm of this IpsecPolicy.
 
         认证算法，SHA1和MD5安全性较低，请慎用
 
@@ -89,7 +89,7 @@ class IpsecPolicy:
 
     @authentication_algorithm.setter
     def authentication_algorithm(self, authentication_algorithm):
-        """Sets the authentication_algorithm of this IpsecPolicy.
+        r"""Sets the authentication_algorithm of this IpsecPolicy.
 
         认证算法，SHA1和MD5安全性较低，请慎用
 
@@ -100,7 +100,7 @@ class IpsecPolicy:
 
     @property
     def encryption_algorithm(self):
-        """Gets the encryption_algorithm of this IpsecPolicy.
+        r"""Gets the encryption_algorithm of this IpsecPolicy.
 
         加密算法，3DES安全性较低，请慎用
 
@@ -111,7 +111,7 @@ class IpsecPolicy:
 
     @encryption_algorithm.setter
     def encryption_algorithm(self, encryption_algorithm):
-        """Sets the encryption_algorithm of this IpsecPolicy.
+        r"""Sets the encryption_algorithm of this IpsecPolicy.
 
         加密算法，3DES安全性较低，请慎用
 
@@ -122,7 +122,7 @@ class IpsecPolicy:
 
     @property
     def pfs(self):
-        """Gets the pfs of this IpsecPolicy.
+        r"""Gets the pfs of this IpsecPolicy.
 
         PFS使用的DH密钥组
 
@@ -133,7 +133,7 @@ class IpsecPolicy:
 
     @pfs.setter
     def pfs(self, pfs):
-        """Sets the pfs of this IpsecPolicy.
+        r"""Sets the pfs of this IpsecPolicy.
 
         PFS使用的DH密钥组
 
@@ -144,7 +144,7 @@ class IpsecPolicy:
 
     @property
     def transform_protocol(self):
-        """Gets the transform_protocol of this IpsecPolicy.
+        r"""Gets the transform_protocol of this IpsecPolicy.
 
         传输模式
 
@@ -155,7 +155,7 @@ class IpsecPolicy:
 
     @transform_protocol.setter
     def transform_protocol(self, transform_protocol):
-        """Sets the transform_protocol of this IpsecPolicy.
+        r"""Sets the transform_protocol of this IpsecPolicy.
 
         传输模式
 
@@ -166,7 +166,7 @@ class IpsecPolicy:
 
     @property
     def lifetime_seconds(self):
-        """Gets the lifetime_seconds of this IpsecPolicy.
+        r"""Gets the lifetime_seconds of this IpsecPolicy.
 
         表示配置IPSec连接建立的隧道以时间为基准的生存周期
 
@@ -177,7 +177,7 @@ class IpsecPolicy:
 
     @lifetime_seconds.setter
     def lifetime_seconds(self, lifetime_seconds):
-        """Sets the lifetime_seconds of this IpsecPolicy.
+        r"""Sets the lifetime_seconds of this IpsecPolicy.
 
         表示配置IPSec连接建立的隧道以时间为基准的生存周期
 
@@ -188,7 +188,7 @@ class IpsecPolicy:
 
     @property
     def encapsulation_mode(self):
-        """Gets the encapsulation_mode of this IpsecPolicy.
+        r"""Gets the encapsulation_mode of this IpsecPolicy.
 
         封装模式，当前只有tunnel模式
 
@@ -199,7 +199,7 @@ class IpsecPolicy:
 
     @encapsulation_mode.setter
     def encapsulation_mode(self, encapsulation_mode):
-        """Sets the encapsulation_mode of this IpsecPolicy.
+        r"""Sets the encapsulation_mode of this IpsecPolicy.
 
         封装模式，当前只有tunnel模式
 

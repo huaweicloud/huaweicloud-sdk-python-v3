@@ -37,7 +37,7 @@ class DownloadSlowLogFileItem:
     }
 
     def __init__(self, job_id=None, file_name=None, status=None, file_size=None, file_link=None, create_at=None, updated_at=None):
-        """DownloadSlowLogFileItem
+        r"""DownloadSlowLogFileItem
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DownloadSlowLogFileItem:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DownloadSlowLogFileItem.
+        r"""Gets the job_id of this DownloadSlowLogFileItem.
 
         任务ID。
 
@@ -96,7 +96,7 @@ class DownloadSlowLogFileItem:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DownloadSlowLogFileItem.
+        r"""Sets the job_id of this DownloadSlowLogFileItem.
 
         任务ID。
 
@@ -107,7 +107,7 @@ class DownloadSlowLogFileItem:
 
     @property
     def file_name(self):
-        """Gets the file_name of this DownloadSlowLogFileItem.
+        r"""Gets the file_name of this DownloadSlowLogFileItem.
 
         文件名。
 
@@ -118,7 +118,7 @@ class DownloadSlowLogFileItem:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this DownloadSlowLogFileItem.
+        r"""Sets the file_name of this DownloadSlowLogFileItem.
 
         文件名。
 
@@ -129,7 +129,7 @@ class DownloadSlowLogFileItem:
 
     @property
     def status(self):
-        """Gets the status of this DownloadSlowLogFileItem.
+        r"""Gets the status of this DownloadSlowLogFileItem.
 
         状态。  取值范围:   - SUCCESS：表示下载链接已经生成完成。   - EXPORTING：表示下载链接正在生成中。   - FAILED： 表示下载链接生成失败。
 
@@ -140,7 +140,7 @@ class DownloadSlowLogFileItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DownloadSlowLogFileItem.
+        r"""Sets the status of this DownloadSlowLogFileItem.
 
         状态。  取值范围:   - SUCCESS：表示下载链接已经生成完成。   - EXPORTING：表示下载链接正在生成中。   - FAILED： 表示下载链接生成失败。
 
@@ -151,7 +151,7 @@ class DownloadSlowLogFileItem:
 
     @property
     def file_size(self):
-        """Gets the file_size of this DownloadSlowLogFileItem.
+        r"""Gets the file_size of this DownloadSlowLogFileItem.
 
         文件大小，单位：KB。
 
@@ -162,7 +162,7 @@ class DownloadSlowLogFileItem:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this DownloadSlowLogFileItem.
+        r"""Sets the file_size of this DownloadSlowLogFileItem.
 
         文件大小，单位：KB。
 
@@ -173,7 +173,7 @@ class DownloadSlowLogFileItem:
 
     @property
     def file_link(self):
-        """Gets the file_link of this DownloadSlowLogFileItem.
+        r"""Gets the file_link of this DownloadSlowLogFileItem.
 
         下载链接。链接有效时间为5分钟。
 
@@ -184,7 +184,7 @@ class DownloadSlowLogFileItem:
 
     @file_link.setter
     def file_link(self, file_link):
-        """Sets the file_link of this DownloadSlowLogFileItem.
+        r"""Sets the file_link of this DownloadSlowLogFileItem.
 
         下载链接。链接有效时间为5分钟。
 
@@ -195,7 +195,7 @@ class DownloadSlowLogFileItem:
 
     @property
     def create_at(self):
-        """Gets the create_at of this DownloadSlowLogFileItem.
+        r"""Gets the create_at of this DownloadSlowLogFileItem.
 
         创建时间。
 
@@ -206,7 +206,7 @@ class DownloadSlowLogFileItem:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this DownloadSlowLogFileItem.
+        r"""Sets the create_at of this DownloadSlowLogFileItem.
 
         创建时间。
 
@@ -217,7 +217,7 @@ class DownloadSlowLogFileItem:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this DownloadSlowLogFileItem.
+        r"""Gets the updated_at of this DownloadSlowLogFileItem.
 
         更新时间。
 
@@ -228,7 +228,7 @@ class DownloadSlowLogFileItem:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this DownloadSlowLogFileItem.
+        r"""Sets the updated_at of this DownloadSlowLogFileItem.
 
         更新时间。
 

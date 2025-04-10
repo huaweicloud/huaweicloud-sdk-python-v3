@@ -39,7 +39,7 @@ class SlowLogStatisticsForLtsRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, offset=None, limit=None, type=None, database=None, sort=None, order=None):
-        """SlowLogStatisticsForLtsRequest
+        r"""SlowLogStatisticsForLtsRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SlowLogStatisticsForLtsRequest.
+        r"""Gets the start_time of this SlowLogStatisticsForLtsRequest.
 
         开始日期，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -101,7 +101,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SlowLogStatisticsForLtsRequest.
+        r"""Sets the start_time of this SlowLogStatisticsForLtsRequest.
 
         开始日期，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -112,7 +112,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SlowLogStatisticsForLtsRequest.
+        r"""Gets the end_time of this SlowLogStatisticsForLtsRequest.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。
 
@@ -123,7 +123,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SlowLogStatisticsForLtsRequest.
+        r"""Sets the end_time of this SlowLogStatisticsForLtsRequest.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。
 
@@ -134,7 +134,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SlowLogStatisticsForLtsRequest.
+        r"""Gets the offset of this SlowLogStatisticsForLtsRequest.
 
         索引位置，偏移量。默认为0，表示从第一条数据开始查询。
 
@@ -145,7 +145,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SlowLogStatisticsForLtsRequest.
+        r"""Sets the offset of this SlowLogStatisticsForLtsRequest.
 
         索引位置，偏移量。默认为0，表示从第一条数据开始查询。
 
@@ -156,7 +156,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SlowLogStatisticsForLtsRequest.
+        r"""Gets the limit of this SlowLogStatisticsForLtsRequest.
 
         每页多少条记录（查询结果），取值范围是1~100，不填时默认为10。
 
@@ -167,7 +167,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SlowLogStatisticsForLtsRequest.
+        r"""Sets the limit of this SlowLogStatisticsForLtsRequest.
 
         每页多少条记录（查询结果），取值范围是1~100，不填时默认为10。
 
@@ -178,7 +178,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @property
     def type(self):
-        """Gets the type of this SlowLogStatisticsForLtsRequest.
+        r"""Gets the type of this SlowLogStatisticsForLtsRequest.
 
         语句类型，取空值，表示查询所有语句类型。
 
@@ -189,7 +189,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SlowLogStatisticsForLtsRequest.
+        r"""Sets the type of this SlowLogStatisticsForLtsRequest.
 
         语句类型，取空值，表示查询所有语句类型。
 
@@ -200,7 +200,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @property
     def database(self):
-        """Gets the database of this SlowLogStatisticsForLtsRequest.
+        r"""Gets the database of this SlowLogStatisticsForLtsRequest.
 
         数据库名称。
 
@@ -211,7 +211,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this SlowLogStatisticsForLtsRequest.
+        r"""Sets the database of this SlowLogStatisticsForLtsRequest.
 
         数据库名称。
 
@@ -222,7 +222,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this SlowLogStatisticsForLtsRequest.
+        r"""Gets the sort of this SlowLogStatisticsForLtsRequest.
 
         指定排序字段。\"executeTime\"，表示按照执行时间降序排序。字段为空或传入其他值，表示按照执行次数降序排序。
 
@@ -233,7 +233,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this SlowLogStatisticsForLtsRequest.
+        r"""Sets the sort of this SlowLogStatisticsForLtsRequest.
 
         指定排序字段。\"executeTime\"，表示按照执行时间降序排序。字段为空或传入其他值，表示按照执行次数降序排序。
 
@@ -244,7 +244,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @property
     def order(self):
-        """Gets the order of this SlowLogStatisticsForLtsRequest.
+        r"""Gets the order of this SlowLogStatisticsForLtsRequest.
 
         排序顺序。默认desc。
 
@@ -255,7 +255,7 @@ class SlowLogStatisticsForLtsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this SlowLogStatisticsForLtsRequest.
+        r"""Sets the order of this SlowLogStatisticsForLtsRequest.
 
         排序顺序。默认desc。
 

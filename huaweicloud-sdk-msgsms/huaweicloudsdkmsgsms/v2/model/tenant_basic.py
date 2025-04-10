@@ -29,7 +29,7 @@ class TenantBasic:
     }
 
     def __init__(self, customer_id=None, customer_name=None, enterprise_name=None):
-        """TenantBasic
+        r"""TenantBasic
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TenantBasic:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this TenantBasic.
+        r"""Gets the customer_id of this TenantBasic.
 
         租户custom id
 
@@ -68,7 +68,7 @@ class TenantBasic:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this TenantBasic.
+        r"""Sets the customer_id of this TenantBasic.
 
         租户custom id
 
@@ -79,7 +79,7 @@ class TenantBasic:
 
     @property
     def customer_name(self):
-        """Gets the customer_name of this TenantBasic.
+        r"""Gets the customer_name of this TenantBasic.
 
         租户custom name
 
@@ -90,7 +90,7 @@ class TenantBasic:
 
     @customer_name.setter
     def customer_name(self, customer_name):
-        """Sets the customer_name of this TenantBasic.
+        r"""Sets the customer_name of this TenantBasic.
 
         租户custom name
 
@@ -101,7 +101,7 @@ class TenantBasic:
 
     @property
     def enterprise_name(self):
-        """Gets the enterprise_name of this TenantBasic.
+        r"""Gets the enterprise_name of this TenantBasic.
 
         租户企业名称
 
@@ -112,7 +112,7 @@ class TenantBasic:
 
     @enterprise_name.setter
     def enterprise_name(self, enterprise_name):
-        """Sets the enterprise_name of this TenantBasic.
+        r"""Sets the enterprise_name of this TenantBasic.
 
         租户企业名称
 

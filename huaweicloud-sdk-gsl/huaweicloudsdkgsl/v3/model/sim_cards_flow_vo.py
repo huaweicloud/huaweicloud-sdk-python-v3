@@ -41,7 +41,7 @@ class SimCardsFlowVO:
     }
 
     def __init__(self, id=None, account_id=None, sim_card_id=None, price_plan_id=None, price_plan_name=None, iccid=None, flow_total=None, flow_used=None, flow_left=None):
-        """SimCardsFlowVO
+        r"""SimCardsFlowVO
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class SimCardsFlowVO:
 
     @property
     def id(self):
-        """Gets the id of this SimCardsFlowVO.
+        r"""Gets the id of this SimCardsFlowVO.
 
         套餐实例ID
 
@@ -110,7 +110,7 @@ class SimCardsFlowVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SimCardsFlowVO.
+        r"""Sets the id of this SimCardsFlowVO.
 
         套餐实例ID
 
@@ -121,7 +121,7 @@ class SimCardsFlowVO:
 
     @property
     def account_id(self):
-        """Gets the account_id of this SimCardsFlowVO.
+        r"""Gets the account_id of this SimCardsFlowVO.
 
         账户ID
 
@@ -132,7 +132,7 @@ class SimCardsFlowVO:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this SimCardsFlowVO.
+        r"""Sets the account_id of this SimCardsFlowVO.
 
         账户ID
 
@@ -143,7 +143,7 @@ class SimCardsFlowVO:
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this SimCardsFlowVO.
+        r"""Gets the sim_card_id of this SimCardsFlowVO.
 
         sim卡ID
 
@@ -154,7 +154,7 @@ class SimCardsFlowVO:
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this SimCardsFlowVO.
+        r"""Sets the sim_card_id of this SimCardsFlowVO.
 
         sim卡ID
 
@@ -165,7 +165,7 @@ class SimCardsFlowVO:
 
     @property
     def price_plan_id(self):
-        """Gets the price_plan_id of this SimCardsFlowVO.
+        r"""Gets the price_plan_id of this SimCardsFlowVO.
 
         套餐ID
 
@@ -176,7 +176,7 @@ class SimCardsFlowVO:
 
     @price_plan_id.setter
     def price_plan_id(self, price_plan_id):
-        """Sets the price_plan_id of this SimCardsFlowVO.
+        r"""Sets the price_plan_id of this SimCardsFlowVO.
 
         套餐ID
 
@@ -187,7 +187,7 @@ class SimCardsFlowVO:
 
     @property
     def price_plan_name(self):
-        """Gets the price_plan_name of this SimCardsFlowVO.
+        r"""Gets the price_plan_name of this SimCardsFlowVO.
 
         套餐名称
 
@@ -198,7 +198,7 @@ class SimCardsFlowVO:
 
     @price_plan_name.setter
     def price_plan_name(self, price_plan_name):
-        """Sets the price_plan_name of this SimCardsFlowVO.
+        r"""Sets the price_plan_name of this SimCardsFlowVO.
 
         套餐名称
 
@@ -209,7 +209,7 @@ class SimCardsFlowVO:
 
     @property
     def iccid(self):
-        """Gets the iccid of this SimCardsFlowVO.
+        r"""Gets the iccid of this SimCardsFlowVO.
 
         ICCID
 
@@ -220,7 +220,7 @@ class SimCardsFlowVO:
 
     @iccid.setter
     def iccid(self, iccid):
-        """Sets the iccid of this SimCardsFlowVO.
+        r"""Sets the iccid of this SimCardsFlowVO.
 
         ICCID
 
@@ -231,7 +231,7 @@ class SimCardsFlowVO:
 
     @property
     def flow_total(self):
-        """Gets the flow_total of this SimCardsFlowVO.
+        r"""Gets the flow_total of this SimCardsFlowVO.
 
         总流量(MB),两位小数
 
@@ -242,7 +242,7 @@ class SimCardsFlowVO:
 
     @flow_total.setter
     def flow_total(self, flow_total):
-        """Sets the flow_total of this SimCardsFlowVO.
+        r"""Sets the flow_total of this SimCardsFlowVO.
 
         总流量(MB),两位小数
 
@@ -253,7 +253,7 @@ class SimCardsFlowVO:
 
     @property
     def flow_used(self):
-        """Gets the flow_used of this SimCardsFlowVO.
+        r"""Gets the flow_used of this SimCardsFlowVO.
 
         已使用流量(MB),两位小数
 
@@ -264,7 +264,7 @@ class SimCardsFlowVO:
 
     @flow_used.setter
     def flow_used(self, flow_used):
-        """Sets the flow_used of this SimCardsFlowVO.
+        r"""Sets the flow_used of this SimCardsFlowVO.
 
         已使用流量(MB),两位小数
 
@@ -275,7 +275,7 @@ class SimCardsFlowVO:
 
     @property
     def flow_left(self):
-        """Gets the flow_left of this SimCardsFlowVO.
+        r"""Gets the flow_left of this SimCardsFlowVO.
 
         剩余流量(MB),两位小数
 
@@ -286,7 +286,7 @@ class SimCardsFlowVO:
 
     @flow_left.setter
     def flow_left(self, flow_left):
-        """Sets the flow_left of this SimCardsFlowVO.
+        r"""Sets the flow_left of this SimCardsFlowVO.
 
         剩余流量(MB),两位小数
 

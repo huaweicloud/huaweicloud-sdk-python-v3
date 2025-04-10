@@ -25,7 +25,7 @@ class ShowSkillOrderInfoRequest:
     }
 
     def __init__(self, order_id=None):
-        """ShowSkillOrderInfoRequest
+        r"""ShowSkillOrderInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSkillOrderInfoRequest:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowSkillOrderInfoRequest.
+        r"""Gets the order_id of this ShowSkillOrderInfoRequest.
 
         订单ID
 
@@ -53,7 +53,7 @@ class ShowSkillOrderInfoRequest:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowSkillOrderInfoRequest.
+        r"""Sets the order_id of this ShowSkillOrderInfoRequest.
 
         订单ID
 

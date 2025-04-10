@@ -37,7 +37,7 @@ class CreateDisasterRecovery:
     }
 
     def __init__(self, name=None, dr_type=None, primary_cluster_id=None, standby_cluster_id=None, dr_sync_period=None, primary_obs_bucket=None, standby_obs_bucket=None):
-        """CreateDisasterRecovery
+        r"""CreateDisasterRecovery
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class CreateDisasterRecovery:
 
     @property
     def name(self):
-        """Gets the name of this CreateDisasterRecovery.
+        r"""Gets the name of this CreateDisasterRecovery.
 
         名称
 
@@ -91,7 +91,7 @@ class CreateDisasterRecovery:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDisasterRecovery.
+        r"""Sets the name of this CreateDisasterRecovery.
 
         名称
 
@@ -102,7 +102,7 @@ class CreateDisasterRecovery:
 
     @property
     def dr_type(self):
-        """Gets the dr_type of this CreateDisasterRecovery.
+        r"""Gets the dr_type of this CreateDisasterRecovery.
 
         容灾类型
 
@@ -113,7 +113,7 @@ class CreateDisasterRecovery:
 
     @dr_type.setter
     def dr_type(self, dr_type):
-        """Sets the dr_type of this CreateDisasterRecovery.
+        r"""Sets the dr_type of this CreateDisasterRecovery.
 
         容灾类型
 
@@ -124,7 +124,7 @@ class CreateDisasterRecovery:
 
     @property
     def primary_cluster_id(self):
-        """Gets the primary_cluster_id of this CreateDisasterRecovery.
+        r"""Gets the primary_cluster_id of this CreateDisasterRecovery.
 
         主集群ID
 
@@ -135,7 +135,7 @@ class CreateDisasterRecovery:
 
     @primary_cluster_id.setter
     def primary_cluster_id(self, primary_cluster_id):
-        """Sets the primary_cluster_id of this CreateDisasterRecovery.
+        r"""Sets the primary_cluster_id of this CreateDisasterRecovery.
 
         主集群ID
 
@@ -146,7 +146,7 @@ class CreateDisasterRecovery:
 
     @property
     def standby_cluster_id(self):
-        """Gets the standby_cluster_id of this CreateDisasterRecovery.
+        r"""Gets the standby_cluster_id of this CreateDisasterRecovery.
 
         备集群ID
 
@@ -157,7 +157,7 @@ class CreateDisasterRecovery:
 
     @standby_cluster_id.setter
     def standby_cluster_id(self, standby_cluster_id):
-        """Sets the standby_cluster_id of this CreateDisasterRecovery.
+        r"""Sets the standby_cluster_id of this CreateDisasterRecovery.
 
         备集群ID
 
@@ -168,7 +168,7 @@ class CreateDisasterRecovery:
 
     @property
     def dr_sync_period(self):
-        """Gets the dr_sync_period of this CreateDisasterRecovery.
+        r"""Gets the dr_sync_period of this CreateDisasterRecovery.
 
         同步周期
 
@@ -179,7 +179,7 @@ class CreateDisasterRecovery:
 
     @dr_sync_period.setter
     def dr_sync_period(self, dr_sync_period):
-        """Sets the dr_sync_period of this CreateDisasterRecovery.
+        r"""Sets the dr_sync_period of this CreateDisasterRecovery.
 
         同步周期
 
@@ -190,7 +190,7 @@ class CreateDisasterRecovery:
 
     @property
     def primary_obs_bucket(self):
-        """Gets the primary_obs_bucket of this CreateDisasterRecovery.
+        r"""Gets the primary_obs_bucket of this CreateDisasterRecovery.
 
         主集群OBS桶
 
@@ -201,7 +201,7 @@ class CreateDisasterRecovery:
 
     @primary_obs_bucket.setter
     def primary_obs_bucket(self, primary_obs_bucket):
-        """Sets the primary_obs_bucket of this CreateDisasterRecovery.
+        r"""Sets the primary_obs_bucket of this CreateDisasterRecovery.
 
         主集群OBS桶
 
@@ -212,7 +212,7 @@ class CreateDisasterRecovery:
 
     @property
     def standby_obs_bucket(self):
-        """Gets the standby_obs_bucket of this CreateDisasterRecovery.
+        r"""Gets the standby_obs_bucket of this CreateDisasterRecovery.
 
         备集群obs桶
 
@@ -223,7 +223,7 @@ class CreateDisasterRecovery:
 
     @standby_obs_bucket.setter
     def standby_obs_bucket(self, standby_obs_bucket):
-        """Sets the standby_obs_bucket of this CreateDisasterRecovery.
+        r"""Sets the standby_obs_bucket of this CreateDisasterRecovery.
 
         备集群obs桶
 

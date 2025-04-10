@@ -29,7 +29,7 @@ class ConformancePackComplianceSummary:
     }
 
     def __init__(self, id=None, name=None, compliance=None):
-        """ConformancePackComplianceSummary
+        r"""ConformancePackComplianceSummary
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ConformancePackComplianceSummary:
 
     @property
     def id(self):
-        """Gets the id of this ConformancePackComplianceSummary.
+        r"""Gets the id of this ConformancePackComplianceSummary.
 
         合规规则包ID。
 
@@ -68,7 +68,7 @@ class ConformancePackComplianceSummary:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConformancePackComplianceSummary.
+        r"""Sets the id of this ConformancePackComplianceSummary.
 
         合规规则包ID。
 
@@ -79,7 +79,7 @@ class ConformancePackComplianceSummary:
 
     @property
     def name(self):
-        """Gets the name of this ConformancePackComplianceSummary.
+        r"""Gets the name of this ConformancePackComplianceSummary.
 
         合规规则包名称。
 
@@ -90,7 +90,7 @@ class ConformancePackComplianceSummary:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConformancePackComplianceSummary.
+        r"""Sets the name of this ConformancePackComplianceSummary.
 
         合规规则包名称。
 
@@ -101,7 +101,7 @@ class ConformancePackComplianceSummary:
 
     @property
     def compliance(self):
-        """Gets the compliance of this ConformancePackComplianceSummary.
+        r"""Gets the compliance of this ConformancePackComplianceSummary.
 
         合规规则包合规结果。
 
@@ -112,7 +112,7 @@ class ConformancePackComplianceSummary:
 
     @compliance.setter
     def compliance(self, compliance):
-        """Sets the compliance of this ConformancePackComplianceSummary.
+        r"""Sets the compliance of this ConformancePackComplianceSummary.
 
         合规规则包合规结果。
 

@@ -28,7 +28,7 @@ class BatchSetObjectsResponse(SdkResponse):
     }
 
     def __init__(self, all_counts=None, results=None):
-        """BatchSetObjectsResponse
+        r"""BatchSetObjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchSetObjectsResponse(SdkResponse):
 
     @property
     def all_counts(self):
-        """Gets the all_counts of this BatchSetObjectsResponse.
+        r"""Gets the all_counts of this BatchSetObjectsResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class BatchSetObjectsResponse(SdkResponse):
 
     @all_counts.setter
     def all_counts(self, all_counts):
-        """Sets the all_counts of this BatchSetObjectsResponse.
+        r"""Sets the all_counts of this BatchSetObjectsResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class BatchSetObjectsResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchSetObjectsResponse.
+        r"""Gets the results of this BatchSetObjectsResponse.
 
         批量对象选择响应列表
 
@@ -84,7 +84,7 @@ class BatchSetObjectsResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchSetObjectsResponse.
+        r"""Sets the results of this BatchSetObjectsResponse.
 
         批量对象选择响应列表
 

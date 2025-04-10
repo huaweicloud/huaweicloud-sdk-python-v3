@@ -33,7 +33,7 @@ class CreateScriptReq:
     }
 
     def __init__(self, name=None, type=None, description=None, content=None, version=None):
-        """CreateScriptReq
+        r"""CreateScriptReq
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CreateScriptReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateScriptReq.
+        r"""Gets the name of this CreateScriptReq.
 
         脚本名称。
 
@@ -82,7 +82,7 @@ class CreateScriptReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateScriptReq.
+        r"""Sets the name of this CreateScriptReq.
 
         脚本名称。
 
@@ -93,7 +93,7 @@ class CreateScriptReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateScriptReq.
+        r"""Gets the type of this CreateScriptReq.
 
         脚本类型：POWERSHELL/BAT/SHELL。
 
@@ -104,7 +104,7 @@ class CreateScriptReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateScriptReq.
+        r"""Sets the type of this CreateScriptReq.
 
         脚本类型：POWERSHELL/BAT/SHELL。
 
@@ -115,7 +115,7 @@ class CreateScriptReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateScriptReq.
+        r"""Gets the description of this CreateScriptReq.
 
         描述。
 
@@ -126,7 +126,7 @@ class CreateScriptReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateScriptReq.
+        r"""Sets the description of this CreateScriptReq.
 
         描述。
 
@@ -137,7 +137,7 @@ class CreateScriptReq:
 
     @property
     def content(self):
-        """Gets the content of this CreateScriptReq.
+        r"""Gets the content of this CreateScriptReq.
 
         脚本内容。
 
@@ -148,7 +148,7 @@ class CreateScriptReq:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CreateScriptReq.
+        r"""Sets the content of this CreateScriptReq.
 
         脚本内容。
 
@@ -159,7 +159,7 @@ class CreateScriptReq:
 
     @property
     def version(self):
-        """Gets the version of this CreateScriptReq.
+        r"""Gets the version of this CreateScriptReq.
 
         脚本版本。
 
@@ -170,7 +170,7 @@ class CreateScriptReq:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this CreateScriptReq.
+        r"""Sets the version of this CreateScriptReq.
 
         脚本版本。
 

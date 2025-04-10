@@ -41,7 +41,7 @@ class CheckResourceInfo:
     }
 
     def __init__(self, enterprise_project_id=None, instance_num=None, mode=None, availability_zone_mode=None, node_num=None, flavor_ref=None, availability_zone=None, subnet_id=None, instance_id=None):
-        """CheckResourceInfo
+        r"""CheckResourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class CheckResourceInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CheckResourceInfo.
+        r"""Gets the enterprise_project_id of this CheckResourceInfo.
 
         企业项目ID。action为createInstance时必填。
 
@@ -110,7 +110,7 @@ class CheckResourceInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CheckResourceInfo.
+        r"""Sets the enterprise_project_id of this CheckResourceInfo.
 
         企业项目ID。action为createInstance时必填。
 
@@ -121,7 +121,7 @@ class CheckResourceInfo:
 
     @property
     def instance_num(self):
-        """Gets the instance_num of this CheckResourceInfo.
+        r"""Gets the instance_num of this CheckResourceInfo.
 
         实例数量。action为createInstance时必填。
 
@@ -132,7 +132,7 @@ class CheckResourceInfo:
 
     @instance_num.setter
     def instance_num(self, instance_num):
-        """Sets the instance_num of this CheckResourceInfo.
+        r"""Sets the instance_num of this CheckResourceInfo.
 
         实例数量。action为createInstance时必填。
 
@@ -143,7 +143,7 @@ class CheckResourceInfo:
 
     @property
     def mode(self):
-        """Gets the mode of this CheckResourceInfo.
+        r"""Gets the mode of this CheckResourceInfo.
 
         实例类型，目前仅支持Cluster。action为createInstance时必填。
 
@@ -154,7 +154,7 @@ class CheckResourceInfo:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CheckResourceInfo.
+        r"""Sets the mode of this CheckResourceInfo.
 
         实例类型，目前仅支持Cluster。action为createInstance时必填。
 
@@ -165,7 +165,7 @@ class CheckResourceInfo:
 
     @property
     def availability_zone_mode(self):
-        """Gets the availability_zone_mode of this CheckResourceInfo.
+        r"""Gets the availability_zone_mode of this CheckResourceInfo.
 
         可用区类型，单可用区single或多可用区multi。action为createInstance时必填。
 
@@ -176,7 +176,7 @@ class CheckResourceInfo:
 
     @availability_zone_mode.setter
     def availability_zone_mode(self, availability_zone_mode):
-        """Sets the availability_zone_mode of this CheckResourceInfo.
+        r"""Sets the availability_zone_mode of this CheckResourceInfo.
 
         可用区类型，单可用区single或多可用区multi。action为createInstance时必填。
 
@@ -187,7 +187,7 @@ class CheckResourceInfo:
 
     @property
     def node_num(self):
-        """Gets the node_num of this CheckResourceInfo.
+        r"""Gets the node_num of this CheckResourceInfo.
 
         节点数量。action为createInstance、createReadonlyNode时必填。
 
@@ -198,7 +198,7 @@ class CheckResourceInfo:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this CheckResourceInfo.
+        r"""Sets the node_num of this CheckResourceInfo.
 
         节点数量。action为createInstance、createReadonlyNode时必填。
 
@@ -209,7 +209,7 @@ class CheckResourceInfo:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this CheckResourceInfo.
+        r"""Gets the flavor_ref of this CheckResourceInfo.
 
         规格码。action为createInstance、resizeFlavor时必填。
 
@@ -220,7 +220,7 @@ class CheckResourceInfo:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this CheckResourceInfo.
+        r"""Sets the flavor_ref of this CheckResourceInfo.
 
         规格码。action为createInstance、resizeFlavor时必填。
 
@@ -231,7 +231,7 @@ class CheckResourceInfo:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CheckResourceInfo.
+        r"""Gets the availability_zone of this CheckResourceInfo.
 
         可用区码。
 
@@ -242,7 +242,7 @@ class CheckResourceInfo:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CheckResourceInfo.
+        r"""Sets the availability_zone of this CheckResourceInfo.
 
         可用区码。
 
@@ -253,7 +253,7 @@ class CheckResourceInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CheckResourceInfo.
+        r"""Gets the subnet_id of this CheckResourceInfo.
 
         子网ID。action为createInstance时必填。
 
@@ -264,7 +264,7 @@ class CheckResourceInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CheckResourceInfo.
+        r"""Sets the subnet_id of this CheckResourceInfo.
 
         子网ID。action为createInstance时必填。
 
@@ -275,7 +275,7 @@ class CheckResourceInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CheckResourceInfo.
+        r"""Gets the instance_id of this CheckResourceInfo.
 
         实例ID。action为createReadonlyNode、resizeFlavor时必填。
 
@@ -286,7 +286,7 @@ class CheckResourceInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CheckResourceInfo.
+        r"""Sets the instance_id of this CheckResourceInfo.
 
         实例ID。action为createReadonlyNode、resizeFlavor时必填。
 

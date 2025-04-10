@@ -31,7 +31,7 @@ class GrantUserInfo:
     }
 
     def __init__(self, user_id=None, user_name=None, create_time=None, validity_time=None):
-        """GrantUserInfo
+        r"""GrantUserInfo
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class GrantUserInfo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this GrantUserInfo.
+        r"""Gets the user_id of this GrantUserInfo.
 
         资源ID
 
@@ -72,7 +72,7 @@ class GrantUserInfo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this GrantUserInfo.
+        r"""Sets the user_id of this GrantUserInfo.
 
         资源ID
 
@@ -83,7 +83,7 @@ class GrantUserInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this GrantUserInfo.
+        r"""Gets the user_name of this GrantUserInfo.
 
         名称
 
@@ -94,7 +94,7 @@ class GrantUserInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this GrantUserInfo.
+        r"""Sets the user_name of this GrantUserInfo.
 
         名称
 
@@ -105,7 +105,7 @@ class GrantUserInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this GrantUserInfo.
+        r"""Gets the create_time of this GrantUserInfo.
 
         创建时间
 
@@ -116,7 +116,7 @@ class GrantUserInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this GrantUserInfo.
+        r"""Sets the create_time of this GrantUserInfo.
 
         创建时间
 
@@ -127,7 +127,7 @@ class GrantUserInfo:
 
     @property
     def validity_time(self):
-        """Gets the validity_time of this GrantUserInfo.
+        r"""Gets the validity_time of this GrantUserInfo.
 
         有效时间
 
@@ -138,7 +138,7 @@ class GrantUserInfo:
 
     @validity_time.setter
     def validity_time(self, validity_time):
-        """Sets the validity_time of this GrantUserInfo.
+        r"""Sets the validity_time of this GrantUserInfo.
 
         有效时间
 

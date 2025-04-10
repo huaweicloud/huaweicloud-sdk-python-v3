@@ -25,7 +25,7 @@ class InstallNextflowRequest:
     }
 
     def __init__(self, body=None):
-        """InstallNextflowRequest
+        r"""InstallNextflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class InstallNextflowRequest:
 
     @property
     def body(self):
-        """Gets the body of this InstallNextflowRequest.
+        r"""Gets the body of this InstallNextflowRequest.
 
         :return: The body of this InstallNextflowRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.InstallNextflowRequestBody`
@@ -52,7 +52,7 @@ class InstallNextflowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this InstallNextflowRequest.
+        r"""Sets the body of this InstallNextflowRequest.
 
         :param body: The body of this InstallNextflowRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.InstallNextflowRequestBody`

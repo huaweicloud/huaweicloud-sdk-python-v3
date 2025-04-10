@@ -27,7 +27,7 @@ class AutoscanConfigRequest:
     }
 
     def __init__(self, enable_auto_scan=None, schedule_at=None):
-        """AutoscanConfigRequest
+        r"""AutoscanConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AutoscanConfigRequest:
 
     @property
     def enable_auto_scan(self):
-        """Gets the enable_auto_scan of this AutoscanConfigRequest.
+        r"""Gets the enable_auto_scan of this AutoscanConfigRequest.
 
         是否开启自动分析
 
@@ -59,7 +59,7 @@ class AutoscanConfigRequest:
 
     @enable_auto_scan.setter
     def enable_auto_scan(self, enable_auto_scan):
-        """Sets the enable_auto_scan of this AutoscanConfigRequest.
+        r"""Sets the enable_auto_scan of this AutoscanConfigRequest.
 
         是否开启自动分析
 
@@ -70,7 +70,7 @@ class AutoscanConfigRequest:
 
     @property
     def schedule_at(self):
-        """Gets the schedule_at of this AutoscanConfigRequest.
+        r"""Gets the schedule_at of this AutoscanConfigRequest.
 
         每日分析时间，时间格式为21:00，时间为UTC时间
 
@@ -81,7 +81,7 @@ class AutoscanConfigRequest:
 
     @schedule_at.setter
     def schedule_at(self, schedule_at):
-        """Sets the schedule_at of this AutoscanConfigRequest.
+        r"""Sets the schedule_at of this AutoscanConfigRequest.
 
         每日分析时间，时间格式为21:00，时间为UTC时间
 

@@ -27,7 +27,7 @@ class UpdateLeagueRequest:
     }
 
     def __init__(self, league_id=None, body=None):
-        """UpdateLeagueRequest
+        r"""UpdateLeagueRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateLeagueRequest:
 
     @property
     def league_id(self):
-        """Gets the league_id of this UpdateLeagueRequest.
+        r"""Gets the league_id of this UpdateLeagueRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -60,7 +60,7 @@ class UpdateLeagueRequest:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this UpdateLeagueRequest.
+        r"""Sets the league_id of this UpdateLeagueRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -71,7 +71,7 @@ class UpdateLeagueRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLeagueRequest.
+        r"""Gets the body of this UpdateLeagueRequest.
 
         :return: The body of this UpdateLeagueRequest.
         :rtype: :class:`huaweicloudsdktics.v1.LeagueUpdateVo`
@@ -80,7 +80,7 @@ class UpdateLeagueRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLeagueRequest.
+        r"""Sets the body of this UpdateLeagueRequest.
 
         :param body: The body of this UpdateLeagueRequest.
         :type body: :class:`huaweicloudsdktics.v1.LeagueUpdateVo`

@@ -25,7 +25,7 @@ class CreateAntileakageRuleRequestBodyAction:
     }
 
     def __init__(self, category=None):
-        """CreateAntileakageRuleRequestBodyAction
+        r"""CreateAntileakageRuleRequestBodyAction
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateAntileakageRuleRequestBodyAction:
 
     @property
     def category(self):
-        """Gets the category of this CreateAntileakageRuleRequestBodyAction.
+        r"""Gets the category of this CreateAntileakageRuleRequestBodyAction.
 
         操作类型。   - “block”：过滤。   - “log”：仅记录
 
@@ -53,7 +53,7 @@ class CreateAntileakageRuleRequestBodyAction:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CreateAntileakageRuleRequestBodyAction.
+        r"""Sets the category of this CreateAntileakageRuleRequestBodyAction.
 
         操作类型。   - “block”：过滤。   - “log”：仅记录
 

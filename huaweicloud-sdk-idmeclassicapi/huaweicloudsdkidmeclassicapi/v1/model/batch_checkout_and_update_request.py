@@ -29,7 +29,7 @@ class BatchCheckoutAndUpdateRequest:
     }
 
     def __init__(self, identifier=None, model_name=None, body=None):
-        """BatchCheckoutAndUpdateRequest
+        r"""BatchCheckoutAndUpdateRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchCheckoutAndUpdateRequest:
 
     @property
     def identifier(self):
-        """Gets the identifier of this BatchCheckoutAndUpdateRequest.
+        r"""Gets the identifier of this BatchCheckoutAndUpdateRequest.
 
         **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
@@ -66,7 +66,7 @@ class BatchCheckoutAndUpdateRequest:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this BatchCheckoutAndUpdateRequest.
+        r"""Sets the identifier of this BatchCheckoutAndUpdateRequest.
 
         **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
@@ -77,7 +77,7 @@ class BatchCheckoutAndUpdateRequest:
 
     @property
     def model_name(self):
-        """Gets the model_name of this BatchCheckoutAndUpdateRequest.
+        r"""Gets the model_name of this BatchCheckoutAndUpdateRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -88,7 +88,7 @@ class BatchCheckoutAndUpdateRequest:
 
     @model_name.setter
     def model_name(self, model_name):
-        """Sets the model_name of this BatchCheckoutAndUpdateRequest.
+        r"""Sets the model_name of this BatchCheckoutAndUpdateRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -99,7 +99,7 @@ class BatchCheckoutAndUpdateRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCheckoutAndUpdateRequest.
+        r"""Gets the body of this BatchCheckoutAndUpdateRequest.
 
         :return: The body of this BatchCheckoutAndUpdateRequest.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOListVersionModelVersionCheckoutAndUpdateDTOVersionModel`
@@ -108,7 +108,7 @@ class BatchCheckoutAndUpdateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCheckoutAndUpdateRequest.
+        r"""Sets the body of this BatchCheckoutAndUpdateRequest.
 
         :param body: The body of this BatchCheckoutAndUpdateRequest.
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOListVersionModelVersionCheckoutAndUpdateDTOVersionModel`

@@ -47,7 +47,7 @@ class WorkflowExecutionBrief:
     }
 
     def __init__(self, workflow_id=None, execution_id=None, status=None, begin_time=None, end_time=None, last_update_time=None, created_by=None, approve_user_name_list=None, execution_result_list=None, project_id=None, workflow_edit_time=None, last_record_id_with_snapshot=None):
-        """WorkflowExecutionBrief
+        r"""WorkflowExecutionBrief
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class WorkflowExecutionBrief:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this WorkflowExecutionBrief.
+        r"""Gets the workflow_id of this WorkflowExecutionBrief.
 
         流程定义ID
 
@@ -131,7 +131,7 @@ class WorkflowExecutionBrief:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this WorkflowExecutionBrief.
+        r"""Sets the workflow_id of this WorkflowExecutionBrief.
 
         流程定义ID
 
@@ -142,7 +142,7 @@ class WorkflowExecutionBrief:
 
     @property
     def execution_id(self):
-        """Gets the execution_id of this WorkflowExecutionBrief.
+        r"""Gets the execution_id of this WorkflowExecutionBrief.
 
         流程执行实例ID
 
@@ -153,7 +153,7 @@ class WorkflowExecutionBrief:
 
     @execution_id.setter
     def execution_id(self, execution_id):
-        """Sets the execution_id of this WorkflowExecutionBrief.
+        r"""Sets the execution_id of this WorkflowExecutionBrief.
 
         流程执行实例ID
 
@@ -164,7 +164,7 @@ class WorkflowExecutionBrief:
 
     @property
     def status(self):
-        """Gets the status of this WorkflowExecutionBrief.
+        r"""Gets the status of this WorkflowExecutionBrief.
 
         流程实例执行状态
 
@@ -175,7 +175,7 @@ class WorkflowExecutionBrief:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this WorkflowExecutionBrief.
+        r"""Sets the status of this WorkflowExecutionBrief.
 
         流程实例执行状态
 
@@ -186,7 +186,7 @@ class WorkflowExecutionBrief:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this WorkflowExecutionBrief.
+        r"""Gets the begin_time of this WorkflowExecutionBrief.
 
         流程实例创建时间，格式：UTC时间戳
 
@@ -197,7 +197,7 @@ class WorkflowExecutionBrief:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this WorkflowExecutionBrief.
+        r"""Sets the begin_time of this WorkflowExecutionBrief.
 
         流程实例创建时间，格式：UTC时间戳
 
@@ -208,7 +208,7 @@ class WorkflowExecutionBrief:
 
     @property
     def end_time(self):
-        """Gets the end_time of this WorkflowExecutionBrief.
+        r"""Gets the end_time of this WorkflowExecutionBrief.
 
         流程实例结束时间，格式：UTC时间戳
 
@@ -219,7 +219,7 @@ class WorkflowExecutionBrief:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this WorkflowExecutionBrief.
+        r"""Sets the end_time of this WorkflowExecutionBrief.
 
         流程实例结束时间，格式：UTC时间戳
 
@@ -230,7 +230,7 @@ class WorkflowExecutionBrief:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this WorkflowExecutionBrief.
+        r"""Gets the last_update_time of this WorkflowExecutionBrief.
 
         流程实例上次更新时间，格式：UTC时间戳
 
@@ -241,7 +241,7 @@ class WorkflowExecutionBrief:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this WorkflowExecutionBrief.
+        r"""Sets the last_update_time of this WorkflowExecutionBrief.
 
         流程实例上次更新时间，格式：UTC时间戳
 
@@ -252,7 +252,7 @@ class WorkflowExecutionBrief:
 
     @property
     def created_by(self):
-        """Gets the created_by of this WorkflowExecutionBrief.
+        r"""Gets the created_by of this WorkflowExecutionBrief.
 
         流程实例创建者
 
@@ -263,7 +263,7 @@ class WorkflowExecutionBrief:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this WorkflowExecutionBrief.
+        r"""Sets the created_by of this WorkflowExecutionBrief.
 
         流程实例创建者
 
@@ -274,7 +274,7 @@ class WorkflowExecutionBrief:
 
     @property
     def approve_user_name_list(self):
-        """Gets the approve_user_name_list of this WorkflowExecutionBrief.
+        r"""Gets the approve_user_name_list of this WorkflowExecutionBrief.
 
         审批人列表
 
@@ -285,7 +285,7 @@ class WorkflowExecutionBrief:
 
     @approve_user_name_list.setter
     def approve_user_name_list(self, approve_user_name_list):
-        """Sets the approve_user_name_list of this WorkflowExecutionBrief.
+        r"""Sets the approve_user_name_list of this WorkflowExecutionBrief.
 
         审批人列表
 
@@ -296,7 +296,7 @@ class WorkflowExecutionBrief:
 
     @property
     def execution_result_list(self):
-        """Gets the execution_result_list of this WorkflowExecutionBrief.
+        r"""Gets the execution_result_list of this WorkflowExecutionBrief.
 
         执行记录
 
@@ -307,7 +307,7 @@ class WorkflowExecutionBrief:
 
     @execution_result_list.setter
     def execution_result_list(self, execution_result_list):
-        """Sets the execution_result_list of this WorkflowExecutionBrief.
+        r"""Sets the execution_result_list of this WorkflowExecutionBrief.
 
         执行记录
 
@@ -318,7 +318,7 @@ class WorkflowExecutionBrief:
 
     @property
     def project_id(self):
-        """Gets the project_id of this WorkflowExecutionBrief.
+        r"""Gets the project_id of this WorkflowExecutionBrief.
 
         租户从IAM申请到的projectid，一般为32位字符串。
 
@@ -329,7 +329,7 @@ class WorkflowExecutionBrief:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this WorkflowExecutionBrief.
+        r"""Sets the project_id of this WorkflowExecutionBrief.
 
         租户从IAM申请到的projectid，一般为32位字符串。
 
@@ -340,7 +340,7 @@ class WorkflowExecutionBrief:
 
     @property
     def workflow_edit_time(self):
-        """Gets the workflow_edit_time of this WorkflowExecutionBrief.
+        r"""Gets the workflow_edit_time of this WorkflowExecutionBrief.
 
         执行工作流的修改时间，格式：UTC时间戳
 
@@ -351,7 +351,7 @@ class WorkflowExecutionBrief:
 
     @workflow_edit_time.setter
     def workflow_edit_time(self, workflow_edit_time):
-        """Sets the workflow_edit_time of this WorkflowExecutionBrief.
+        r"""Sets the workflow_edit_time of this WorkflowExecutionBrief.
 
         执行工作流的修改时间，格式：UTC时间戳
 
@@ -362,7 +362,7 @@ class WorkflowExecutionBrief:
 
     @property
     def last_record_id_with_snapshot(self):
-        """Gets the last_record_id_with_snapshot of this WorkflowExecutionBrief.
+        r"""Gets the last_record_id_with_snapshot of this WorkflowExecutionBrief.
 
         执行快照
 
@@ -373,7 +373,7 @@ class WorkflowExecutionBrief:
 
     @last_record_id_with_snapshot.setter
     def last_record_id_with_snapshot(self, last_record_id_with_snapshot):
-        """Sets the last_record_id_with_snapshot of this WorkflowExecutionBrief.
+        r"""Sets the last_record_id_with_snapshot of this WorkflowExecutionBrief.
 
         执行快照
 

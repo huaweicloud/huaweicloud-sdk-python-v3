@@ -41,7 +41,7 @@ class ResourcePriceResponse:
     }
 
     def __init__(self, charge_mode=None, sale_price=None, discount=None, original_price=None, period_type=None, period_count=None, best_discount_type=None, best_discount_price=None, official_website_discount_price=None):
-        """ResourcePriceResponse
+        r"""ResourcePriceResponse
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ResourcePriceResponse:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ResourcePriceResponse.
+        r"""Gets the charge_mode of this ResourcePriceResponse.
 
         计费模式  * `PRE_PAID` - 包周期计费 * `POST_PAID` - 按需计费 * `FREE` - 免费
 
@@ -110,7 +110,7 @@ class ResourcePriceResponse:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ResourcePriceResponse.
+        r"""Sets the charge_mode of this ResourcePriceResponse.
 
         计费模式  * `PRE_PAID` - 包周期计费 * `POST_PAID` - 按需计费 * `FREE` - 免费
 
@@ -121,7 +121,7 @@ class ResourcePriceResponse:
 
     @property
     def sale_price(self):
-        """Gets the sale_price of this ResourcePriceResponse.
+        r"""Gets the sale_price of this ResourcePriceResponse.
 
         该资源最终优惠后的金额（只考虑官网折扣、商务折扣以及伙伴折扣，不包含促销折扣及优惠券），保留小数点后2位，向上取整，默认单位是元。
 
@@ -132,7 +132,7 @@ class ResourcePriceResponse:
 
     @sale_price.setter
     def sale_price(self, sale_price):
-        """Sets the sale_price of this ResourcePriceResponse.
+        r"""Sets the sale_price of this ResourcePriceResponse.
 
         该资源最终优惠后的金额（只考虑官网折扣、商务折扣以及伙伴折扣，不包含促销折扣及优惠券），保留小数点后2位，向上取整，默认单位是元。
 
@@ -143,7 +143,7 @@ class ResourcePriceResponse:
 
     @property
     def discount(self):
-        """Gets the discount of this ResourcePriceResponse.
+        r"""Gets the discount of this ResourcePriceResponse.
 
         该资源的总优惠额，保留小数点后2位，向上取整，默认单位是元。
 
@@ -154,7 +154,7 @@ class ResourcePriceResponse:
 
     @discount.setter
     def discount(self, discount):
-        """Sets the discount of this ResourcePriceResponse.
+        r"""Sets the discount of this ResourcePriceResponse.
 
         该资源的总优惠额，保留小数点后2位，向上取整，默认单位是元。
 
@@ -165,7 +165,7 @@ class ResourcePriceResponse:
 
     @property
     def original_price(self):
-        """Gets the original_price of this ResourcePriceResponse.
+        r"""Gets the original_price of this ResourcePriceResponse.
 
         该资源的原价，保留小数点后2位，向上取整，默认单位是元。
 
@@ -176,7 +176,7 @@ class ResourcePriceResponse:
 
     @original_price.setter
     def original_price(self, original_price):
-        """Sets the original_price of this ResourcePriceResponse.
+        r"""Sets the original_price of this ResourcePriceResponse.
 
         该资源的原价，保留小数点后2位，向上取整，默认单位是元。
 
@@ -187,7 +187,7 @@ class ResourcePriceResponse:
 
     @property
     def period_type(self):
-        """Gets the period_type of this ResourcePriceResponse.
+        r"""Gets the period_type of this ResourcePriceResponse.
 
         计费单位  如果该资源支持包周期计费或按需计费，则会返回该字段；如果该资源为免费资源，则不返回该字段。  * `HOUR` - 小时，按需计费的单位 * `DAY` - 天，按需计费的单位 * `MONTH` - 月，包周期计费的单位 * `YEAR` - 年，包周期计费的单位 * `BYTE` - 字节，按需计费的单位 * `MB` - 百万字节，包周期计费和按需计费的单位 * `GB` - 千兆字节，包周期计费和按需计费的单位
 
@@ -198,7 +198,7 @@ class ResourcePriceResponse:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ResourcePriceResponse.
+        r"""Sets the period_type of this ResourcePriceResponse.
 
         计费单位  如果该资源支持包周期计费或按需计费，则会返回该字段；如果该资源为免费资源，则不返回该字段。  * `HOUR` - 小时，按需计费的单位 * `DAY` - 天，按需计费的单位 * `MONTH` - 月，包周期计费的单位 * `YEAR` - 年，包周期计费的单位 * `BYTE` - 字节，按需计费的单位 * `MB` - 百万字节，包周期计费和按需计费的单位 * `GB` - 千兆字节，包周期计费和按需计费的单位
 
@@ -209,7 +209,7 @@ class ResourcePriceResponse:
 
     @property
     def period_count(self):
-        """Gets the period_count of this ResourcePriceResponse.
+        r"""Gets the period_count of this ResourcePriceResponse.
 
         该资源的计费数量，需要和period_type搭配使用  如果该资源支持包周期计费或按需计费，则会返回该字段；如果该资源为免费资源，则不返回该字段。  * 对于按需计费资源，此值默认返回1，代表在1个计费单位下，该资源的价格 * 对于包周期计费资源，此值与模板中该资源的period字段保持一致
 
@@ -220,7 +220,7 @@ class ResourcePriceResponse:
 
     @period_count.setter
     def period_count(self, period_count):
-        """Sets the period_count of this ResourcePriceResponse.
+        r"""Sets the period_count of this ResourcePriceResponse.
 
         该资源的计费数量，需要和period_type搭配使用  如果该资源支持包周期计费或按需计费，则会返回该字段；如果该资源为免费资源，则不返回该字段。  * 对于按需计费资源，此值默认返回1，代表在1个计费单位下，该资源的价格 * 对于包周期计费资源，此值与模板中该资源的period字段保持一致
 
@@ -231,7 +231,7 @@ class ResourcePriceResponse:
 
     @property
     def best_discount_type(self):
-        """Gets the best_discount_type of this ResourcePriceResponse.
+        r"""Gets the best_discount_type of this ResourcePriceResponse.
 
         该资源的最优折扣类型  对于按需计费资源的折扣类型 合同商务优惠类型：605 （华为云商务-折扣率，一口价，华为云用户）、606 （渠道商务-折扣率，一口价，BP用户） 伙伴折扣优惠类型：607 (合作伙伴授予折扣-折扣率)  对于包周期计费资源的折扣类型 合同商务折扣：605（华为云BE场景下的合同商务折扣）、606（分销商BE场景下的合同商务折扣） 伙伴授予折扣：607 促销折扣：700  如果该资源存在折扣，则返回该字段；如果该资源不存在折扣，则不返回该字段。
 
@@ -242,7 +242,7 @@ class ResourcePriceResponse:
 
     @best_discount_type.setter
     def best_discount_type(self, best_discount_type):
-        """Sets the best_discount_type of this ResourcePriceResponse.
+        r"""Sets the best_discount_type of this ResourcePriceResponse.
 
         该资源的最优折扣类型  对于按需计费资源的折扣类型 合同商务优惠类型：605 （华为云商务-折扣率，一口价，华为云用户）、606 （渠道商务-折扣率，一口价，BP用户） 伙伴折扣优惠类型：607 (合作伙伴授予折扣-折扣率)  对于包周期计费资源的折扣类型 合同商务折扣：605（华为云BE场景下的合同商务折扣）、606（分销商BE场景下的合同商务折扣） 伙伴授予折扣：607 促销折扣：700  如果该资源存在折扣，则返回该字段；如果该资源不存在折扣，则不返回该字段。
 
@@ -253,7 +253,7 @@ class ResourcePriceResponse:
 
     @property
     def best_discount_price(self):
-        """Gets the best_discount_price of this ResourcePriceResponse.
+        r"""Gets the best_discount_price of this ResourcePriceResponse.
 
         最优折扣优惠额，保留小数点后2位，向上取整，默认单位是元。  如果该资源存在折扣，则返回该字段；如果该资源不存在折扣，则不返回该字段。
 
@@ -264,7 +264,7 @@ class ResourcePriceResponse:
 
     @best_discount_price.setter
     def best_discount_price(self, best_discount_price):
-        """Sets the best_discount_price of this ResourcePriceResponse.
+        r"""Sets the best_discount_price of this ResourcePriceResponse.
 
         最优折扣优惠额，保留小数点后2位，向上取整，默认单位是元。  如果该资源存在折扣，则返回该字段；如果该资源不存在折扣，则不返回该字段。
 
@@ -275,7 +275,7 @@ class ResourcePriceResponse:
 
     @property
     def official_website_discount_price(self):
-        """Gets the official_website_discount_price of this ResourcePriceResponse.
+        r"""Gets the official_website_discount_price of this ResourcePriceResponse.
 
         官网价优惠额，保留小数点后2位，向上取整，默认单位是元。  如果该资源存在官网价优惠额，则返回该字段；如果该资源不存在官网价优惠额，则不返回该字段。
 
@@ -286,7 +286,7 @@ class ResourcePriceResponse:
 
     @official_website_discount_price.setter
     def official_website_discount_price(self, official_website_discount_price):
-        """Sets the official_website_discount_price of this ResourcePriceResponse.
+        r"""Sets the official_website_discount_price of this ResourcePriceResponse.
 
         官网价优惠额，保留小数点后2位，向上取整，默认单位是元。  如果该资源存在官网价优惠额，则返回该字段；如果该资源不存在官网价优惠额，则不返回该字段。
 

@@ -27,7 +27,7 @@ class UpdateAlterKibanaRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateAlterKibanaRequest
+        r"""UpdateAlterKibanaRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAlterKibanaRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateAlterKibanaRequest.
+        r"""Gets the cluster_id of this UpdateAlterKibanaRequest.
 
         指定待修改kibana公网带宽的集群ID。
 
@@ -60,7 +60,7 @@ class UpdateAlterKibanaRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateAlterKibanaRequest.
+        r"""Sets the cluster_id of this UpdateAlterKibanaRequest.
 
         指定待修改kibana公网带宽的集群ID。
 
@@ -71,7 +71,7 @@ class UpdateAlterKibanaRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAlterKibanaRequest.
+        r"""Gets the body of this UpdateAlterKibanaRequest.
 
         :return: The body of this UpdateAlterKibanaRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaBandwidthReq`
@@ -80,7 +80,7 @@ class UpdateAlterKibanaRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAlterKibanaRequest.
+        r"""Sets the body of this UpdateAlterKibanaRequest.
 
         :param body: The body of this UpdateAlterKibanaRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaBandwidthReq`

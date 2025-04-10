@@ -33,7 +33,7 @@ class ReplicationRecordsExtraInfo:
     }
 
     def __init__(self, progress=None, fail_code=None, fail_reason=None, auto_trigger=None, destinatio_vault_id=None):
-        """ReplicationRecordsExtraInfo
+        r"""ReplicationRecordsExtraInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ReplicationRecordsExtraInfo:
 
     @property
     def progress(self):
-        """Gets the progress of this ReplicationRecordsExtraInfo.
+        r"""Gets the progress of this ReplicationRecordsExtraInfo.
 
         复制进度
 
@@ -82,7 +82,7 @@ class ReplicationRecordsExtraInfo:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ReplicationRecordsExtraInfo.
+        r"""Sets the progress of this ReplicationRecordsExtraInfo.
 
         复制进度
 
@@ -93,7 +93,7 @@ class ReplicationRecordsExtraInfo:
 
     @property
     def fail_code(self):
-        """Gets the fail_code of this ReplicationRecordsExtraInfo.
+        r"""Gets the fail_code of this ReplicationRecordsExtraInfo.
 
         失败错误码，成功时为空
 
@@ -104,7 +104,7 @@ class ReplicationRecordsExtraInfo:
 
     @fail_code.setter
     def fail_code(self, fail_code):
-        """Sets the fail_code of this ReplicationRecordsExtraInfo.
+        r"""Sets the fail_code of this ReplicationRecordsExtraInfo.
 
         失败错误码，成功时为空
 
@@ -115,7 +115,7 @@ class ReplicationRecordsExtraInfo:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ReplicationRecordsExtraInfo.
+        r"""Gets the fail_reason of this ReplicationRecordsExtraInfo.
 
         错误原因
 
@@ -126,7 +126,7 @@ class ReplicationRecordsExtraInfo:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ReplicationRecordsExtraInfo.
+        r"""Sets the fail_reason of this ReplicationRecordsExtraInfo.
 
         错误原因
 
@@ -137,7 +137,7 @@ class ReplicationRecordsExtraInfo:
 
     @property
     def auto_trigger(self):
-        """Gets the auto_trigger of this ReplicationRecordsExtraInfo.
+        r"""Gets the auto_trigger of this ReplicationRecordsExtraInfo.
 
         是否为自动调度复制
 
@@ -148,7 +148,7 @@ class ReplicationRecordsExtraInfo:
 
     @auto_trigger.setter
     def auto_trigger(self, auto_trigger):
-        """Sets the auto_trigger of this ReplicationRecordsExtraInfo.
+        r"""Sets the auto_trigger of this ReplicationRecordsExtraInfo.
 
         是否为自动调度复制
 
@@ -159,7 +159,7 @@ class ReplicationRecordsExtraInfo:
 
     @property
     def destinatio_vault_id(self):
-        """Gets the destinatio_vault_id of this ReplicationRecordsExtraInfo.
+        r"""Gets the destinatio_vault_id of this ReplicationRecordsExtraInfo.
 
         目标端的存储库id
 
@@ -170,7 +170,7 @@ class ReplicationRecordsExtraInfo:
 
     @destinatio_vault_id.setter
     def destinatio_vault_id(self, destinatio_vault_id):
-        """Sets the destinatio_vault_id of this ReplicationRecordsExtraInfo.
+        r"""Sets the destinatio_vault_id of this ReplicationRecordsExtraInfo.
 
         目标端的存储库id
 

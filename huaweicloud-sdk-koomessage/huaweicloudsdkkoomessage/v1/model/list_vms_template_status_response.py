@@ -30,7 +30,7 @@ class ListVmsTemplateStatusResponse(SdkResponse):
     }
 
     def __init__(self, status=None, message=None, data=None):
-        """ListVmsTemplateStatusResponse
+        r"""ListVmsTemplateStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListVmsTemplateStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListVmsTemplateStatusResponse.
+        r"""Gets the status of this ListVmsTemplateStatusResponse.
 
         状态码。
 
@@ -69,7 +69,7 @@ class ListVmsTemplateStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListVmsTemplateStatusResponse.
+        r"""Sets the status of this ListVmsTemplateStatusResponse.
 
         状态码。
 
@@ -80,7 +80,7 @@ class ListVmsTemplateStatusResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListVmsTemplateStatusResponse.
+        r"""Gets the message of this ListVmsTemplateStatusResponse.
 
         响应信息。
 
@@ -91,7 +91,7 @@ class ListVmsTemplateStatusResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListVmsTemplateStatusResponse.
+        r"""Sets the message of this ListVmsTemplateStatusResponse.
 
         响应信息。
 
@@ -102,7 +102,7 @@ class ListVmsTemplateStatusResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListVmsTemplateStatusResponse.
+        r"""Gets the data of this ListVmsTemplateStatusResponse.
 
         :return: The data of this ListVmsTemplateStatusResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListVmsTemplateStatusResponseMode`
@@ -111,7 +111,7 @@ class ListVmsTemplateStatusResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListVmsTemplateStatusResponse.
+        r"""Sets the data of this ListVmsTemplateStatusResponse.
 
         :param data: The data of this ListVmsTemplateStatusResponse.
         :type data: :class:`huaweicloudsdkkoomessage.v1.ListVmsTemplateStatusResponseMode`

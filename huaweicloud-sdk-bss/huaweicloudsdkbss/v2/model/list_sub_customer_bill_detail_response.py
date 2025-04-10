@@ -30,7 +30,7 @@ class ListSubCustomerBillDetailResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, currency=None, fee_records=None):
-        """ListSubCustomerBillDetailResponse
+        r"""ListSubCustomerBillDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSubCustomerBillDetailResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListSubCustomerBillDetailResponse.
+        r"""Gets the total_count of this ListSubCustomerBillDetailResponse.
 
         结果集数量，只有成功才返回这个参数。
 
@@ -69,7 +69,7 @@ class ListSubCustomerBillDetailResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListSubCustomerBillDetailResponse.
+        r"""Sets the total_count of this ListSubCustomerBillDetailResponse.
 
         结果集数量，只有成功才返回这个参数。
 
@@ -80,7 +80,7 @@ class ListSubCustomerBillDetailResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ListSubCustomerBillDetailResponse.
+        r"""Gets the currency of this ListSubCustomerBillDetailResponse.
 
         货币单位代码： CNY：人民币
 
@@ -91,7 +91,7 @@ class ListSubCustomerBillDetailResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ListSubCustomerBillDetailResponse.
+        r"""Sets the currency of this ListSubCustomerBillDetailResponse.
 
         货币单位代码： CNY：人民币
 
@@ -102,7 +102,7 @@ class ListSubCustomerBillDetailResponse(SdkResponse):
 
     @property
     def fee_records(self):
-        """Gets the fee_records of this ListSubCustomerBillDetailResponse.
+        r"""Gets the fee_records of this ListSubCustomerBillDetailResponse.
 
         资源费用记录数据。 具体请参见表2。
 
@@ -113,7 +113,7 @@ class ListSubCustomerBillDetailResponse(SdkResponse):
 
     @fee_records.setter
     def fee_records(self, fee_records):
-        """Sets the fee_records of this ListSubCustomerBillDetailResponse.
+        r"""Sets the fee_records of this ListSubCustomerBillDetailResponse.
 
         资源费用记录数据。 具体请参见表2。
 

@@ -101,7 +101,7 @@ class ApiInfoPerPage:
     }
 
     def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, content_type=None, id=None, status=None, arrange_necessary=None, register_time=None, update_time=None, group_name=None, group_version=None, run_env_name=None, run_env_id=None, publish_id=None, publish_time=None, roma_app_name=None, ld_api_id=None, backend_api=None, api_group_info=None, req_params=None):
-        """ApiInfoPerPage
+        r"""ApiInfoPerPage
 
         The model defined in huaweicloud sdk
 
@@ -301,7 +301,7 @@ class ApiInfoPerPage:
 
     @property
     def name(self):
-        """Gets the name of this ApiInfoPerPage.
+        r"""Gets the name of this ApiInfoPerPage.
 
         API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -312,7 +312,7 @@ class ApiInfoPerPage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiInfoPerPage.
+        r"""Sets the name of this ApiInfoPerPage.
 
         API名称。  支持汉字、英文、数字、中划线、下划线、点、斜杠、中英文格式下的小括号和冒号、中文格式下的顿号，且只能以英文、汉字和数字开头。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -323,7 +323,7 @@ class ApiInfoPerPage:
 
     @property
     def type(self):
-        """Gets the type of this ApiInfoPerPage.
+        r"""Gets the type of this ApiInfoPerPage.
 
         API类型[，该参数暂未使用](tag:hcs,hcs_sm,fcs) - 1：公有API - 2：私有API
 
@@ -334,7 +334,7 @@ class ApiInfoPerPage:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ApiInfoPerPage.
+        r"""Sets the type of this ApiInfoPerPage.
 
         API类型[，该参数暂未使用](tag:hcs,hcs_sm,fcs) - 1：公有API - 2：私有API
 
@@ -345,7 +345,7 @@ class ApiInfoPerPage:
 
     @property
     def version(self):
-        """Gets the version of this ApiInfoPerPage.
+        r"""Gets the version of this ApiInfoPerPage.
 
         API的版本
 
@@ -356,7 +356,7 @@ class ApiInfoPerPage:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ApiInfoPerPage.
+        r"""Sets the version of this ApiInfoPerPage.
 
         API的版本
 
@@ -367,7 +367,7 @@ class ApiInfoPerPage:
 
     @property
     def req_protocol(self):
-        """Gets the req_protocol of this ApiInfoPerPage.
+        r"""Gets the req_protocol of this ApiInfoPerPage.
 
         API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS
 
@@ -378,7 +378,7 @@ class ApiInfoPerPage:
 
     @req_protocol.setter
     def req_protocol(self, req_protocol):
-        """Sets the req_protocol of this ApiInfoPerPage.
+        r"""Sets the req_protocol of this ApiInfoPerPage.
 
         API的请求协议 - HTTP - HTTPS - BOTH：同时支持HTTP和HTTPS
 
@@ -389,7 +389,7 @@ class ApiInfoPerPage:
 
     @property
     def req_method(self):
-        """Gets the req_method of this ApiInfoPerPage.
+        r"""Gets the req_method of this ApiInfoPerPage.
 
         API的请求方式
 
@@ -400,7 +400,7 @@ class ApiInfoPerPage:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this ApiInfoPerPage.
+        r"""Sets the req_method of this ApiInfoPerPage.
 
         API的请求方式
 
@@ -411,7 +411,7 @@ class ApiInfoPerPage:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this ApiInfoPerPage.
+        r"""Gets the req_uri of this ApiInfoPerPage.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。  /apic/health_check为服务集成预置的健康检查路径，当req_method=GET时不支持req_uri=/apic/health_check。  > 需要服从URI规范。
 
@@ -422,7 +422,7 @@ class ApiInfoPerPage:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this ApiInfoPerPage.
+        r"""Sets the req_uri of this ApiInfoPerPage.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。  /apic/health_check为服务集成预置的健康检查路径，当req_method=GET时不支持req_uri=/apic/health_check。  > 需要服从URI规范。
 
@@ -433,7 +433,7 @@ class ApiInfoPerPage:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ApiInfoPerPage.
+        r"""Gets the auth_type of this ApiInfoPerPage.
 
         API的认证方式[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
 
@@ -444,7 +444,7 @@ class ApiInfoPerPage:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ApiInfoPerPage.
+        r"""Sets the auth_type of this ApiInfoPerPage.
 
         API的认证方式[，site暂不支持IAM认证。](tag:Site) - NONE：无认证 - APP：APP认证 - IAM：IAM认证 - AUTHORIZER：自定义认证
 
@@ -455,7 +455,7 @@ class ApiInfoPerPage:
 
     @property
     def auth_opt(self):
-        """Gets the auth_opt of this ApiInfoPerPage.
+        r"""Gets the auth_opt of this ApiInfoPerPage.
 
         :return: The auth_opt of this ApiInfoPerPage.
         :rtype: :class:`huaweicloudsdkroma.v2.AuthOpt`
@@ -464,7 +464,7 @@ class ApiInfoPerPage:
 
     @auth_opt.setter
     def auth_opt(self, auth_opt):
-        """Sets the auth_opt of this ApiInfoPerPage.
+        r"""Sets the auth_opt of this ApiInfoPerPage.
 
         :param auth_opt: The auth_opt of this ApiInfoPerPage.
         :type auth_opt: :class:`huaweicloudsdkroma.v2.AuthOpt`
@@ -473,7 +473,7 @@ class ApiInfoPerPage:
 
     @property
     def cors(self):
-        """Gets the cors of this ApiInfoPerPage.
+        r"""Gets the cors of this ApiInfoPerPage.
 
         是否支持跨域 - TRUE：支持 - FALSE：不支持
 
@@ -484,7 +484,7 @@ class ApiInfoPerPage:
 
     @cors.setter
     def cors(self, cors):
-        """Sets the cors of this ApiInfoPerPage.
+        r"""Sets the cors of this ApiInfoPerPage.
 
         是否支持跨域 - TRUE：支持 - FALSE：不支持
 
@@ -495,7 +495,7 @@ class ApiInfoPerPage:
 
     @property
     def match_mode(self):
-        """Gets the match_mode of this ApiInfoPerPage.
+        r"""Gets the match_mode of this ApiInfoPerPage.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -506,7 +506,7 @@ class ApiInfoPerPage:
 
     @match_mode.setter
     def match_mode(self, match_mode):
-        """Sets the match_mode of this ApiInfoPerPage.
+        r"""Sets the match_mode of this ApiInfoPerPage.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配） 默认：NORMAL
 
@@ -517,7 +517,7 @@ class ApiInfoPerPage:
 
     @property
     def backend_type(self):
-        """Gets the backend_type of this ApiInfoPerPage.
+        r"""Gets the backend_type of this ApiInfoPerPage.
 
         后端类型[，site暂不支持函数工作流。](tag:Site) - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端  仅控制默认后端类型，策略后端不受此字段控制
 
@@ -528,7 +528,7 @@ class ApiInfoPerPage:
 
     @backend_type.setter
     def backend_type(self, backend_type):
-        """Sets the backend_type of this ApiInfoPerPage.
+        r"""Sets the backend_type of this ApiInfoPerPage.
 
         后端类型[，site暂不支持函数工作流。](tag:Site) - HTTP：web后端 - FUNCTION：函数工作流 - MOCK：模拟的后端  仅控制默认后端类型，策略后端不受此字段控制
 
@@ -539,7 +539,7 @@ class ApiInfoPerPage:
 
     @property
     def remark(self):
-        """Gets the remark of this ApiInfoPerPage.
+        r"""Gets the remark of this ApiInfoPerPage.
 
         API描述。  不允许带有<、>字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -550,7 +550,7 @@ class ApiInfoPerPage:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ApiInfoPerPage.
+        r"""Sets the remark of this ApiInfoPerPage.
 
         API描述。  不允许带有<、>字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -561,7 +561,7 @@ class ApiInfoPerPage:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ApiInfoPerPage.
+        r"""Gets the group_id of this ApiInfoPerPage.
 
         API所属的分组编号
 
@@ -572,7 +572,7 @@ class ApiInfoPerPage:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ApiInfoPerPage.
+        r"""Sets the group_id of this ApiInfoPerPage.
 
         API所属的分组编号
 
@@ -583,7 +583,7 @@ class ApiInfoPerPage:
 
     @property
     def body_remark(self):
-        """Gets the body_remark of this ApiInfoPerPage.
+        r"""Gets the body_remark of this ApiInfoPerPage.
 
         API请求体描述，可以是请求体示例、媒体类型、参数等信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -594,7 +594,7 @@ class ApiInfoPerPage:
 
     @body_remark.setter
     def body_remark(self, body_remark):
-        """Sets the body_remark of this ApiInfoPerPage.
+        r"""Sets the body_remark of this ApiInfoPerPage.
 
         API请求体描述，可以是请求体示例、媒体类型、参数等信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -605,7 +605,7 @@ class ApiInfoPerPage:
 
     @property
     def result_normal_sample(self):
-        """Gets the result_normal_sample of this ApiInfoPerPage.
+        r"""Gets the result_normal_sample of this ApiInfoPerPage.
 
         正常响应示例，描述API的正常返回信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -616,7 +616,7 @@ class ApiInfoPerPage:
 
     @result_normal_sample.setter
     def result_normal_sample(self, result_normal_sample):
-        """Sets the result_normal_sample of this ApiInfoPerPage.
+        r"""Sets the result_normal_sample of this ApiInfoPerPage.
 
         正常响应示例，描述API的正常返回信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -627,7 +627,7 @@ class ApiInfoPerPage:
 
     @property
     def result_failure_sample(self):
-        """Gets the result_failure_sample of this ApiInfoPerPage.
+        r"""Gets the result_failure_sample of this ApiInfoPerPage.
 
         失败返回示例，描述API的异常返回信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -638,7 +638,7 @@ class ApiInfoPerPage:
 
     @result_failure_sample.setter
     def result_failure_sample(self, result_failure_sample):
-        """Sets the result_failure_sample of this ApiInfoPerPage.
+        r"""Sets the result_failure_sample of this ApiInfoPerPage.
 
         失败返回示例，描述API的异常返回信息。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -649,7 +649,7 @@ class ApiInfoPerPage:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this ApiInfoPerPage.
+        r"""Gets the authorizer_id of this ApiInfoPerPage.
 
         前端自定义认证对象的ID
 
@@ -660,7 +660,7 @@ class ApiInfoPerPage:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this ApiInfoPerPage.
+        r"""Sets the authorizer_id of this ApiInfoPerPage.
 
         前端自定义认证对象的ID
 
@@ -671,7 +671,7 @@ class ApiInfoPerPage:
 
     @property
     def tags(self):
-        """Gets the tags of this ApiInfoPerPage.
+        r"""Gets the tags of this ApiInfoPerPage.
 
         标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
 
@@ -682,7 +682,7 @@ class ApiInfoPerPage:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ApiInfoPerPage.
+        r"""Sets the tags of this ApiInfoPerPage.
 
         标签。  支持英文，数字，中文，特殊符号（-*#%.:_），且只能以中文或英文开头。  默认支持10个标签，如需扩大配额请联系技术工程师修改API_TAG_NUM_LIMIT配置。 
 
@@ -693,7 +693,7 @@ class ApiInfoPerPage:
 
     @property
     def response_id(self):
-        """Gets the response_id of this ApiInfoPerPage.
+        r"""Gets the response_id of this ApiInfoPerPage.
 
         分组自定义响应ID  暂不支持
 
@@ -704,7 +704,7 @@ class ApiInfoPerPage:
 
     @response_id.setter
     def response_id(self, response_id):
-        """Sets the response_id of this ApiInfoPerPage.
+        r"""Sets the response_id of this ApiInfoPerPage.
 
         分组自定义响应ID  暂不支持
 
@@ -715,7 +715,7 @@ class ApiInfoPerPage:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this ApiInfoPerPage.
+        r"""Gets the roma_app_id of this ApiInfoPerPage.
 
         API归属的集成应用编号  API分组为全局分组时或API绑定自定义域名时必填。
 
@@ -726,7 +726,7 @@ class ApiInfoPerPage:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this ApiInfoPerPage.
+        r"""Sets the roma_app_id of this ApiInfoPerPage.
 
         API归属的集成应用编号  API分组为全局分组时或API绑定自定义域名时必填。
 
@@ -737,7 +737,7 @@ class ApiInfoPerPage:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ApiInfoPerPage.
+        r"""Gets the domain_name of this ApiInfoPerPage.
 
         API绑定的自定义域名，使用自定义域名时roma_app_id字段必填。
 
@@ -748,7 +748,7 @@ class ApiInfoPerPage:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ApiInfoPerPage.
+        r"""Sets the domain_name of this ApiInfoPerPage.
 
         API绑定的自定义域名，使用自定义域名时roma_app_id字段必填。
 
@@ -759,7 +759,7 @@ class ApiInfoPerPage:
 
     @property
     def tag(self):
-        """Gets the tag of this ApiInfoPerPage.
+        r"""Gets the tag of this ApiInfoPerPage.
 
         标签  待废弃，优先使用tags字段
 
@@ -770,7 +770,7 @@ class ApiInfoPerPage:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ApiInfoPerPage.
+        r"""Sets the tag of this ApiInfoPerPage.
 
         标签  待废弃，优先使用tags字段
 
@@ -781,7 +781,7 @@ class ApiInfoPerPage:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ApiInfoPerPage.
+        r"""Gets the content_type of this ApiInfoPerPage.
 
         请求内容格式类型：  application/json application/xml multipart/form-data text/plain
 
@@ -792,7 +792,7 @@ class ApiInfoPerPage:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ApiInfoPerPage.
+        r"""Sets the content_type of this ApiInfoPerPage.
 
         请求内容格式类型：  application/json application/xml multipart/form-data text/plain
 
@@ -803,7 +803,7 @@ class ApiInfoPerPage:
 
     @property
     def id(self):
-        """Gets the id of this ApiInfoPerPage.
+        r"""Gets the id of this ApiInfoPerPage.
 
         API编号
 
@@ -814,7 +814,7 @@ class ApiInfoPerPage:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiInfoPerPage.
+        r"""Sets the id of this ApiInfoPerPage.
 
         API编号
 
@@ -825,7 +825,7 @@ class ApiInfoPerPage:
 
     @property
     def status(self):
-        """Gets the status of this ApiInfoPerPage.
+        r"""Gets the status of this ApiInfoPerPage.
 
         API状态   - 1： 有效   - 2:  锁定
 
@@ -836,7 +836,7 @@ class ApiInfoPerPage:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ApiInfoPerPage.
+        r"""Sets the status of this ApiInfoPerPage.
 
         API状态   - 1： 有效   - 2:  锁定
 
@@ -847,7 +847,7 @@ class ApiInfoPerPage:
 
     @property
     def arrange_necessary(self):
-        """Gets the arrange_necessary of this ApiInfoPerPage.
+        r"""Gets the arrange_necessary of this ApiInfoPerPage.
 
         是否需要编排：1,是;2,否
 
@@ -858,7 +858,7 @@ class ApiInfoPerPage:
 
     @arrange_necessary.setter
     def arrange_necessary(self, arrange_necessary):
-        """Sets the arrange_necessary of this ApiInfoPerPage.
+        r"""Sets the arrange_necessary of this ApiInfoPerPage.
 
         是否需要编排：1,是;2,否
 
@@ -869,7 +869,7 @@ class ApiInfoPerPage:
 
     @property
     def register_time(self):
-        """Gets the register_time of this ApiInfoPerPage.
+        r"""Gets the register_time of this ApiInfoPerPage.
 
         API注册时间
 
@@ -880,7 +880,7 @@ class ApiInfoPerPage:
 
     @register_time.setter
     def register_time(self, register_time):
-        """Sets the register_time of this ApiInfoPerPage.
+        r"""Sets the register_time of this ApiInfoPerPage.
 
         API注册时间
 
@@ -891,7 +891,7 @@ class ApiInfoPerPage:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ApiInfoPerPage.
+        r"""Gets the update_time of this ApiInfoPerPage.
 
         API修改时间
 
@@ -902,7 +902,7 @@ class ApiInfoPerPage:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ApiInfoPerPage.
+        r"""Sets the update_time of this ApiInfoPerPage.
 
         API修改时间
 
@@ -913,7 +913,7 @@ class ApiInfoPerPage:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ApiInfoPerPage.
+        r"""Gets the group_name of this ApiInfoPerPage.
 
         API所属分组的名称
 
@@ -924,7 +924,7 @@ class ApiInfoPerPage:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ApiInfoPerPage.
+        r"""Sets the group_name of this ApiInfoPerPage.
 
         API所属分组的名称
 
@@ -935,7 +935,7 @@ class ApiInfoPerPage:
 
     @property
     def group_version(self):
-        """Gets the group_version of this ApiInfoPerPage.
+        r"""Gets the group_version of this ApiInfoPerPage.
 
         API所属分组的版本
 
@@ -946,7 +946,7 @@ class ApiInfoPerPage:
 
     @group_version.setter
     def group_version(self, group_version):
-        """Sets the group_version of this ApiInfoPerPage.
+        r"""Sets the group_version of this ApiInfoPerPage.
 
         API所属分组的版本
 
@@ -957,7 +957,7 @@ class ApiInfoPerPage:
 
     @property
     def run_env_name(self):
-        """Gets the run_env_name of this ApiInfoPerPage.
+        r"""Gets the run_env_name of this ApiInfoPerPage.
 
         发布的环境名称  存在多个发布记录时，环境名称之间用|隔开
 
@@ -968,7 +968,7 @@ class ApiInfoPerPage:
 
     @run_env_name.setter
     def run_env_name(self, run_env_name):
-        """Sets the run_env_name of this ApiInfoPerPage.
+        r"""Sets the run_env_name of this ApiInfoPerPage.
 
         发布的环境名称  存在多个发布记录时，环境名称之间用|隔开
 
@@ -979,7 +979,7 @@ class ApiInfoPerPage:
 
     @property
     def run_env_id(self):
-        """Gets the run_env_id of this ApiInfoPerPage.
+        r"""Gets the run_env_id of this ApiInfoPerPage.
 
         发布的环境编号  存在多个发布记录时，环境编号之间用|隔开
 
@@ -990,7 +990,7 @@ class ApiInfoPerPage:
 
     @run_env_id.setter
     def run_env_id(self, run_env_id):
-        """Sets the run_env_id of this ApiInfoPerPage.
+        r"""Sets the run_env_id of this ApiInfoPerPage.
 
         发布的环境编号  存在多个发布记录时，环境编号之间用|隔开
 
@@ -1001,7 +1001,7 @@ class ApiInfoPerPage:
 
     @property
     def publish_id(self):
-        """Gets the publish_id of this ApiInfoPerPage.
+        r"""Gets the publish_id of this ApiInfoPerPage.
 
         发布记录编号  存在多个发布记录时，发布记录编号之间用|隔开
 
@@ -1012,7 +1012,7 @@ class ApiInfoPerPage:
 
     @publish_id.setter
     def publish_id(self, publish_id):
-        """Sets the publish_id of this ApiInfoPerPage.
+        r"""Sets the publish_id of this ApiInfoPerPage.
 
         发布记录编号  存在多个发布记录时，发布记录编号之间用|隔开
 
@@ -1023,7 +1023,7 @@ class ApiInfoPerPage:
 
     @property
     def publish_time(self):
-        """Gets the publish_time of this ApiInfoPerPage.
+        r"""Gets the publish_time of this ApiInfoPerPage.
 
         发布时间  存在多个发布记录时，发布时间之间用|隔开
 
@@ -1034,7 +1034,7 @@ class ApiInfoPerPage:
 
     @publish_time.setter
     def publish_time(self, publish_time):
-        """Sets the publish_time of this ApiInfoPerPage.
+        r"""Sets the publish_time of this ApiInfoPerPage.
 
         发布时间  存在多个发布记录时，发布时间之间用|隔开
 
@@ -1045,7 +1045,7 @@ class ApiInfoPerPage:
 
     @property
     def roma_app_name(self):
-        """Gets the roma_app_name of this ApiInfoPerPage.
+        r"""Gets the roma_app_name of this ApiInfoPerPage.
 
         API归属的集成应用名称
 
@@ -1056,7 +1056,7 @@ class ApiInfoPerPage:
 
     @roma_app_name.setter
     def roma_app_name(self, roma_app_name):
-        """Sets the roma_app_name of this ApiInfoPerPage.
+        r"""Sets the roma_app_name of this ApiInfoPerPage.
 
         API归属的集成应用名称
 
@@ -1067,7 +1067,7 @@ class ApiInfoPerPage:
 
     @property
     def ld_api_id(self):
-        """Gets the ld_api_id of this ApiInfoPerPage.
+        r"""Gets the ld_api_id of this ApiInfoPerPage.
 
         当API的后端为自定义后端时，对应的自定义后端API编号
 
@@ -1078,7 +1078,7 @@ class ApiInfoPerPage:
 
     @ld_api_id.setter
     def ld_api_id(self, ld_api_id):
-        """Sets the ld_api_id of this ApiInfoPerPage.
+        r"""Sets the ld_api_id of this ApiInfoPerPage.
 
         当API的后端为自定义后端时，对应的自定义后端API编号
 
@@ -1089,7 +1089,7 @@ class ApiInfoPerPage:
 
     @property
     def backend_api(self):
-        """Gets the backend_api of this ApiInfoPerPage.
+        r"""Gets the backend_api of this ApiInfoPerPage.
 
         :return: The backend_api of this ApiInfoPerPage.
         :rtype: :class:`huaweicloudsdkroma.v2.BackendApi`
@@ -1098,7 +1098,7 @@ class ApiInfoPerPage:
 
     @backend_api.setter
     def backend_api(self, backend_api):
-        """Sets the backend_api of this ApiInfoPerPage.
+        r"""Sets the backend_api of this ApiInfoPerPage.
 
         :param backend_api: The backend_api of this ApiInfoPerPage.
         :type backend_api: :class:`huaweicloudsdkroma.v2.BackendApi`
@@ -1107,7 +1107,7 @@ class ApiInfoPerPage:
 
     @property
     def api_group_info(self):
-        """Gets the api_group_info of this ApiInfoPerPage.
+        r"""Gets the api_group_info of this ApiInfoPerPage.
 
         :return: The api_group_info of this ApiInfoPerPage.
         :rtype: :class:`huaweicloudsdkroma.v2.ApiGroupCommonInfo`
@@ -1116,7 +1116,7 @@ class ApiInfoPerPage:
 
     @api_group_info.setter
     def api_group_info(self, api_group_info):
-        """Sets the api_group_info of this ApiInfoPerPage.
+        r"""Sets the api_group_info of this ApiInfoPerPage.
 
         :param api_group_info: The api_group_info of this ApiInfoPerPage.
         :type api_group_info: :class:`huaweicloudsdkroma.v2.ApiGroupCommonInfo`
@@ -1125,7 +1125,7 @@ class ApiInfoPerPage:
 
     @property
     def req_params(self):
-        """Gets the req_params of this ApiInfoPerPage.
+        r"""Gets the req_params of this ApiInfoPerPage.
 
         API的请求参数列表
 
@@ -1136,7 +1136,7 @@ class ApiInfoPerPage:
 
     @req_params.setter
     def req_params(self, req_params):
-        """Sets the req_params of this ApiInfoPerPage.
+        r"""Sets the req_params of this ApiInfoPerPage.
 
         API的请求参数列表
 

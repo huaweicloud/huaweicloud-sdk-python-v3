@@ -25,7 +25,7 @@ class EncCertInfo:
     }
 
     def __init__(self, enc_serial_number=None):
-        """EncCertInfo
+        r"""EncCertInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EncCertInfo:
 
     @property
     def enc_serial_number(self):
-        """Gets the enc_serial_number of this EncCertInfo.
+        r"""Gets the enc_serial_number of this EncCertInfo.
 
         加密证书序列号。
 
@@ -53,7 +53,7 @@ class EncCertInfo:
 
     @enc_serial_number.setter
     def enc_serial_number(self, enc_serial_number):
-        """Sets the enc_serial_number of this EncCertInfo.
+        r"""Sets the enc_serial_number of this EncCertInfo.
 
         加密证书序列号。
 

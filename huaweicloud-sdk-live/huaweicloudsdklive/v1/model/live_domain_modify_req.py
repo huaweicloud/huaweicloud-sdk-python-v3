@@ -29,7 +29,7 @@ class LiveDomainModifyReq:
     }
 
     def __init__(self, domain=None, status=None, enterprise_project_id=None):
-        """LiveDomainModifyReq
+        r"""LiveDomainModifyReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class LiveDomainModifyReq:
 
     @property
     def domain(self):
-        """Gets the domain of this LiveDomainModifyReq.
+        r"""Gets the domain of this LiveDomainModifyReq.
 
         直播域名，不允许修改
 
@@ -67,7 +67,7 @@ class LiveDomainModifyReq:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this LiveDomainModifyReq.
+        r"""Sets the domain of this LiveDomainModifyReq.
 
         直播域名，不允许修改
 
@@ -78,7 +78,7 @@ class LiveDomainModifyReq:
 
     @property
     def status(self):
-        """Gets the status of this LiveDomainModifyReq.
+        r"""Gets the status of this LiveDomainModifyReq.
 
         直播域名状态，通过修改此字段，实现域名的启用和停用。注意：域名处于“配置中”状态时，不允对该域名执行启停操作。
 
@@ -89,7 +89,7 @@ class LiveDomainModifyReq:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this LiveDomainModifyReq.
+        r"""Sets the status of this LiveDomainModifyReq.
 
         直播域名状态，通过修改此字段，实现域名的启用和停用。注意：域名处于“配置中”状态时，不允对该域名执行启停操作。
 
@@ -100,7 +100,7 @@ class LiveDomainModifyReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this LiveDomainModifyReq.
+        r"""Gets the enterprise_project_id of this LiveDomainModifyReq.
 
         企业项目ID
 
@@ -111,7 +111,7 @@ class LiveDomainModifyReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this LiveDomainModifyReq.
+        r"""Sets the enterprise_project_id of this LiveDomainModifyReq.
 
         企业项目ID
 

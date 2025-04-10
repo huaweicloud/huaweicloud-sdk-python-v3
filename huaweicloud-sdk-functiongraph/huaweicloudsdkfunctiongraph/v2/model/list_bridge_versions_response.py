@@ -26,7 +26,7 @@ class ListBridgeVersionsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListBridgeVersionsResponse
+        r"""ListBridgeVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBridgeVersionsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListBridgeVersionsResponse.
+        r"""Gets the body of this ListBridgeVersionsResponse.
 
         :return: The body of this ListBridgeVersionsResponse.
         :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ServiceBridgeVersion`]
@@ -53,7 +53,7 @@ class ListBridgeVersionsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListBridgeVersionsResponse.
+        r"""Sets the body of this ListBridgeVersionsResponse.
 
         :param body: The body of this ListBridgeVersionsResponse.
         :type body: list[:class:`huaweicloudsdkfunctiongraph.v2.ServiceBridgeVersion`]

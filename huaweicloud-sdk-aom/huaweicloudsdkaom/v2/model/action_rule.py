@@ -43,7 +43,7 @@ class ActionRule:
     }
 
     def __init__(self, rule_name=None, project_id=None, user_name=None, desc=None, type=None, notification_template=None, create_time=None, update_time=None, time_zone=None, smn_topics=None):
-        """ActionRule
+        r"""ActionRule
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ActionRule:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this ActionRule.
+        r"""Gets the rule_name of this ActionRule.
 
         规则名称 只含有汉字数字、字母、下划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100
 
@@ -111,7 +111,7 @@ class ActionRule:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this ActionRule.
+        r"""Sets the rule_name of this ActionRule.
 
         规则名称 只含有汉字数字、字母、下划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100
 
@@ -122,7 +122,7 @@ class ActionRule:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ActionRule.
+        r"""Gets the project_id of this ActionRule.
 
         项目ID
 
@@ -133,7 +133,7 @@ class ActionRule:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ActionRule.
+        r"""Sets the project_id of this ActionRule.
 
         项目ID
 
@@ -144,7 +144,7 @@ class ActionRule:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ActionRule.
+        r"""Gets the user_name of this ActionRule.
 
         子账号名称
 
@@ -155,7 +155,7 @@ class ActionRule:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ActionRule.
+        r"""Sets the user_name of this ActionRule.
 
         子账号名称
 
@@ -166,7 +166,7 @@ class ActionRule:
 
     @property
     def desc(self):
-        """Gets the desc of this ActionRule.
+        r"""Gets the desc of this ActionRule.
 
         规则描述。规则描述长度为0到1024个字符，并且只能是数字、字母、特殊字符（_*）、空格和中文组成，不能以下划线开头和结尾。
 
@@ -177,7 +177,7 @@ class ActionRule:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this ActionRule.
+        r"""Sets the desc of this ActionRule.
 
         规则描述。规则描述长度为0到1024个字符，并且只能是数字、字母、特殊字符（_*）、空格和中文组成，不能以下划线开头和结尾。
 
@@ -188,7 +188,7 @@ class ActionRule:
 
     @property
     def type(self):
-        """Gets the type of this ActionRule.
+        r"""Gets the type of this ActionRule.
 
         规则类型。\"1\"：通知，\"2\"：用户
 
@@ -199,7 +199,7 @@ class ActionRule:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ActionRule.
+        r"""Sets the type of this ActionRule.
 
         规则类型。\"1\"：通知，\"2\"：用户
 
@@ -210,7 +210,7 @@ class ActionRule:
 
     @property
     def notification_template(self):
-        """Gets the notification_template of this ActionRule.
+        r"""Gets the notification_template of this ActionRule.
 
         消息模板
 
@@ -221,7 +221,7 @@ class ActionRule:
 
     @notification_template.setter
     def notification_template(self, notification_template):
-        """Sets the notification_template of this ActionRule.
+        r"""Sets the notification_template of this ActionRule.
 
         消息模板
 
@@ -232,7 +232,7 @@ class ActionRule:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ActionRule.
+        r"""Gets the create_time of this ActionRule.
 
         创建时间
 
@@ -243,7 +243,7 @@ class ActionRule:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ActionRule.
+        r"""Sets the create_time of this ActionRule.
 
         创建时间
 
@@ -254,7 +254,7 @@ class ActionRule:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ActionRule.
+        r"""Gets the update_time of this ActionRule.
 
         修改时间
 
@@ -265,7 +265,7 @@ class ActionRule:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ActionRule.
+        r"""Sets the update_time of this ActionRule.
 
         修改时间
 
@@ -276,7 +276,7 @@ class ActionRule:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ActionRule.
+        r"""Gets the time_zone of this ActionRule.
 
         时区
 
@@ -287,7 +287,7 @@ class ActionRule:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ActionRule.
+        r"""Sets the time_zone of this ActionRule.
 
         时区
 
@@ -298,7 +298,7 @@ class ActionRule:
 
     @property
     def smn_topics(self):
-        """Gets the smn_topics of this ActionRule.
+        r"""Gets the smn_topics of this ActionRule.
 
         SMN主题信息，不能大于5
 
@@ -309,7 +309,7 @@ class ActionRule:
 
     @smn_topics.setter
     def smn_topics(self, smn_topics):
-        """Sets the smn_topics of this ActionRule.
+        r"""Sets the smn_topics of this ActionRule.
 
         SMN主题信息，不能大于5
 

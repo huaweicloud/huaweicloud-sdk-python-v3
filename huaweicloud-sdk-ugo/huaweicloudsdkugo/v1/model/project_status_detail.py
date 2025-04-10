@@ -31,7 +31,7 @@ class ProjectStatusDetail:
     }
 
     def __init__(self, object_collection_status=None, object_collection_progress=None, pre_migration_status=None, pre_migration_progress=None):
-        """ProjectStatusDetail
+        r"""ProjectStatusDetail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ProjectStatusDetail:
 
     @property
     def object_collection_status(self):
-        """Gets the object_collection_status of this ProjectStatusDetail.
+        r"""Gets the object_collection_status of this ProjectStatusDetail.
 
         采集的状态。
 
@@ -75,7 +75,7 @@ class ProjectStatusDetail:
 
     @object_collection_status.setter
     def object_collection_status(self, object_collection_status):
-        """Sets the object_collection_status of this ProjectStatusDetail.
+        r"""Sets the object_collection_status of this ProjectStatusDetail.
 
         采集的状态。
 
@@ -86,7 +86,7 @@ class ProjectStatusDetail:
 
     @property
     def object_collection_progress(self):
-        """Gets the object_collection_progress of this ProjectStatusDetail.
+        r"""Gets the object_collection_progress of this ProjectStatusDetail.
 
         采集的进度。
 
@@ -97,7 +97,7 @@ class ProjectStatusDetail:
 
     @object_collection_progress.setter
     def object_collection_progress(self, object_collection_progress):
-        """Sets the object_collection_progress of this ProjectStatusDetail.
+        r"""Sets the object_collection_progress of this ProjectStatusDetail.
 
         采集的进度。
 
@@ -108,7 +108,7 @@ class ProjectStatusDetail:
 
     @property
     def pre_migration_status(self):
-        """Gets the pre_migration_status of this ProjectStatusDetail.
+        r"""Gets the pre_migration_status of this ProjectStatusDetail.
 
         评估的状态。
 
@@ -119,7 +119,7 @@ class ProjectStatusDetail:
 
     @pre_migration_status.setter
     def pre_migration_status(self, pre_migration_status):
-        """Sets the pre_migration_status of this ProjectStatusDetail.
+        r"""Sets the pre_migration_status of this ProjectStatusDetail.
 
         评估的状态。
 
@@ -130,7 +130,7 @@ class ProjectStatusDetail:
 
     @property
     def pre_migration_progress(self):
-        """Gets the pre_migration_progress of this ProjectStatusDetail.
+        r"""Gets the pre_migration_progress of this ProjectStatusDetail.
 
         评估的进度。
 
@@ -141,7 +141,7 @@ class ProjectStatusDetail:
 
     @pre_migration_progress.setter
     def pre_migration_progress(self, pre_migration_progress):
-        """Sets the pre_migration_progress of this ProjectStatusDetail.
+        r"""Sets the pre_migration_progress of this ProjectStatusDetail.
 
         评估的进度。
 

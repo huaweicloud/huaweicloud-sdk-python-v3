@@ -27,7 +27,7 @@ class DomainRegion:
     }
 
     def __init__(self, domain_name=None, region_isp_details=None):
-        """DomainRegion
+        r"""DomainRegion
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DomainRegion:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this DomainRegion.
+        r"""Gets the domain_name of this DomainRegion.
 
         域名
 
@@ -61,7 +61,7 @@ class DomainRegion:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this DomainRegion.
+        r"""Sets the domain_name of this DomainRegion.
 
         域名
 
@@ -72,7 +72,7 @@ class DomainRegion:
 
     @property
     def region_isp_details(self):
-        """Gets the region_isp_details of this DomainRegion.
+        r"""Gets the region_isp_details of this DomainRegion.
 
         指标统计数据列表，如果该时间段内无值，则为空数组[]
 
@@ -83,7 +83,7 @@ class DomainRegion:
 
     @region_isp_details.setter
     def region_isp_details(self, region_isp_details):
-        """Sets the region_isp_details of this DomainRegion.
+        r"""Sets the region_isp_details of this DomainRegion.
 
         指标统计数据列表，如果该时间段内无值，则为空数组[]
 

@@ -67,7 +67,7 @@ class PostTask:
     }
 
     def __init__(self, name=None, type=None, start_target_server=None, auto_start=None, os_type=None, source_server=None, target_server=None, migration_ip=None, region_name=None, region_id=None, project_name=None, project_id=None, priority=None, vm_template_id=None, use_public_ip=None, use_ipv6=None, syncing=None, exist_server=None, start_network_check=None, speed_limit=None, over_speed_threshold=None, is_need_consistency_check=None):
-        """PostTask
+        r"""PostTask
 
         The model defined in huaweicloud sdk
 
@@ -181,7 +181,7 @@ class PostTask:
 
     @property
     def name(self):
-        """Gets the name of this PostTask.
+        r"""Gets the name of this PostTask.
 
         任务名称
 
@@ -192,7 +192,7 @@ class PostTask:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PostTask.
+        r"""Sets the name of this PostTask.
 
         任务名称
 
@@ -203,7 +203,7 @@ class PostTask:
 
     @property
     def type(self):
-        """Gets the type of this PostTask.
+        r"""Gets the type of this PostTask.
 
         任务类型 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
@@ -214,7 +214,7 @@ class PostTask:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PostTask.
+        r"""Sets the type of this PostTask.
 
         任务类型 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移
 
@@ -225,7 +225,7 @@ class PostTask:
 
     @property
     def start_target_server(self):
-        """Gets the start_target_server of this PostTask.
+        r"""Gets the start_target_server of this PostTask.
 
         迁移后是否启动目的端虚拟机
 
@@ -236,7 +236,7 @@ class PostTask:
 
     @start_target_server.setter
     def start_target_server(self, start_target_server):
-        """Sets the start_target_server of this PostTask.
+        r"""Sets the start_target_server of this PostTask.
 
         迁移后是否启动目的端虚拟机
 
@@ -247,7 +247,7 @@ class PostTask:
 
     @property
     def auto_start(self):
-        """Gets the auto_start of this PostTask.
+        r"""Gets the auto_start of this PostTask.
 
         是否自动启动
 
@@ -258,7 +258,7 @@ class PostTask:
 
     @auto_start.setter
     def auto_start(self, auto_start):
-        """Sets the auto_start of this PostTask.
+        r"""Sets the auto_start of this PostTask.
 
         是否自动启动
 
@@ -269,7 +269,7 @@ class PostTask:
 
     @property
     def os_type(self):
-        """Gets the os_type of this PostTask.
+        r"""Gets the os_type of this PostTask.
 
         操作系统类型
 
@@ -280,7 +280,7 @@ class PostTask:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this PostTask.
+        r"""Sets the os_type of this PostTask.
 
         操作系统类型
 
@@ -291,7 +291,7 @@ class PostTask:
 
     @property
     def source_server(self):
-        """Gets the source_server of this PostTask.
+        r"""Gets the source_server of this PostTask.
 
         :return: The source_server of this PostTask.
         :rtype: :class:`huaweicloudsdksms.v3.SourceServerByTask`
@@ -300,7 +300,7 @@ class PostTask:
 
     @source_server.setter
     def source_server(self, source_server):
-        """Sets the source_server of this PostTask.
+        r"""Sets the source_server of this PostTask.
 
         :param source_server: The source_server of this PostTask.
         :type source_server: :class:`huaweicloudsdksms.v3.SourceServerByTask`
@@ -309,7 +309,7 @@ class PostTask:
 
     @property
     def target_server(self):
-        """Gets the target_server of this PostTask.
+        r"""Gets the target_server of this PostTask.
 
         :return: The target_server of this PostTask.
         :rtype: :class:`huaweicloudsdksms.v3.TargetServerByTask`
@@ -318,7 +318,7 @@ class PostTask:
 
     @target_server.setter
     def target_server(self, target_server):
-        """Sets the target_server of this PostTask.
+        r"""Sets the target_server of this PostTask.
 
         :param target_server: The target_server of this PostTask.
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServerByTask`
@@ -327,7 +327,7 @@ class PostTask:
 
     @property
     def migration_ip(self):
-        """Gets the migration_ip of this PostTask.
+        r"""Gets the migration_ip of this PostTask.
 
         迁移IP，如果是自动创建虚拟机，不需要此参数
 
@@ -338,7 +338,7 @@ class PostTask:
 
     @migration_ip.setter
     def migration_ip(self, migration_ip):
-        """Sets the migration_ip of this PostTask.
+        r"""Sets the migration_ip of this PostTask.
 
         迁移IP，如果是自动创建虚拟机，不需要此参数
 
@@ -349,7 +349,7 @@ class PostTask:
 
     @property
     def region_name(self):
-        """Gets the region_name of this PostTask.
+        r"""Gets the region_name of this PostTask.
 
         region的名称
 
@@ -360,7 +360,7 @@ class PostTask:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this PostTask.
+        r"""Sets the region_name of this PostTask.
 
         region的名称
 
@@ -371,7 +371,7 @@ class PostTask:
 
     @property
     def region_id(self):
-        """Gets the region_id of this PostTask.
+        r"""Gets the region_id of this PostTask.
 
         region ID
 
@@ -382,7 +382,7 @@ class PostTask:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this PostTask.
+        r"""Sets the region_id of this PostTask.
 
         region ID
 
@@ -393,7 +393,7 @@ class PostTask:
 
     @property
     def project_name(self):
-        """Gets the project_name of this PostTask.
+        r"""Gets the project_name of this PostTask.
 
         项目名称
 
@@ -404,7 +404,7 @@ class PostTask:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this PostTask.
+        r"""Sets the project_name of this PostTask.
 
         项目名称
 
@@ -415,7 +415,7 @@ class PostTask:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PostTask.
+        r"""Gets the project_id of this PostTask.
 
         项目ID
 
@@ -426,7 +426,7 @@ class PostTask:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PostTask.
+        r"""Sets the project_id of this PostTask.
 
         项目ID
 
@@ -437,7 +437,7 @@ class PostTask:
 
     @property
     def priority(self):
-        """Gets the priority of this PostTask.
+        r"""Gets the priority of this PostTask.
 
         优先级。默认为1
 
@@ -448,7 +448,7 @@ class PostTask:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this PostTask.
+        r"""Sets the priority of this PostTask.
 
         优先级。默认为1
 
@@ -459,7 +459,7 @@ class PostTask:
 
     @property
     def vm_template_id(self):
-        """Gets the vm_template_id of this PostTask.
+        r"""Gets the vm_template_id of this PostTask.
 
         自动创建虚拟机使用模板
 
@@ -470,7 +470,7 @@ class PostTask:
 
     @vm_template_id.setter
     def vm_template_id(self, vm_template_id):
-        """Sets the vm_template_id of this PostTask.
+        r"""Sets the vm_template_id of this PostTask.
 
         自动创建虚拟机使用模板
 
@@ -481,7 +481,7 @@ class PostTask:
 
     @property
     def use_public_ip(self):
-        """Gets the use_public_ip of this PostTask.
+        r"""Gets the use_public_ip of this PostTask.
 
         是否使用公网ip
 
@@ -492,7 +492,7 @@ class PostTask:
 
     @use_public_ip.setter
     def use_public_ip(self, use_public_ip):
-        """Sets the use_public_ip of this PostTask.
+        r"""Sets the use_public_ip of this PostTask.
 
         是否使用公网ip
 
@@ -503,7 +503,7 @@ class PostTask:
 
     @property
     def use_ipv6(self):
-        """Gets the use_ipv6 of this PostTask.
+        r"""Gets the use_ipv6 of this PostTask.
 
         是否使用ipv6
 
@@ -514,7 +514,7 @@ class PostTask:
 
     @use_ipv6.setter
     def use_ipv6(self, use_ipv6):
-        """Sets the use_ipv6 of this PostTask.
+        r"""Sets the use_ipv6 of this PostTask.
 
         是否使用ipv6
 
@@ -525,7 +525,7 @@ class PostTask:
 
     @property
     def syncing(self):
-        """Gets the syncing of this PostTask.
+        r"""Gets the syncing of this PostTask.
 
         复制或者同步后是否会继续持续同步，不添加则默认是false
 
@@ -536,7 +536,7 @@ class PostTask:
 
     @syncing.setter
     def syncing(self, syncing):
-        """Sets the syncing of this PostTask.
+        r"""Sets the syncing of this PostTask.
 
         复制或者同步后是否会继续持续同步，不添加则默认是false
 
@@ -547,7 +547,7 @@ class PostTask:
 
     @property
     def exist_server(self):
-        """Gets the exist_server of this PostTask.
+        r"""Gets the exist_server of this PostTask.
 
         是否存在服务，如果存在，则创建任务
 
@@ -558,7 +558,7 @@ class PostTask:
 
     @exist_server.setter
     def exist_server(self, exist_server):
-        """Sets the exist_server of this PostTask.
+        r"""Sets the exist_server of this PostTask.
 
         是否存在服务，如果存在，则创建任务
 
@@ -569,7 +569,7 @@ class PostTask:
 
     @property
     def start_network_check(self):
-        """Gets the start_network_check of this PostTask.
+        r"""Gets the start_network_check of this PostTask.
 
         是否开启网络检测
 
@@ -580,7 +580,7 @@ class PostTask:
 
     @start_network_check.setter
     def start_network_check(self, start_network_check):
-        """Sets the start_network_check of this PostTask.
+        r"""Sets the start_network_check of this PostTask.
 
         是否开启网络检测
 
@@ -591,7 +591,7 @@ class PostTask:
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this PostTask.
+        r"""Gets the speed_limit of this PostTask.
 
         迁移速率限制值
 
@@ -602,7 +602,7 @@ class PostTask:
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this PostTask.
+        r"""Sets the speed_limit of this PostTask.
 
         迁移速率限制值
 
@@ -613,7 +613,7 @@ class PostTask:
 
     @property
     def over_speed_threshold(self):
-        """Gets the over_speed_threshold of this PostTask.
+        r"""Gets the over_speed_threshold of this PostTask.
 
         停止迁移的超速阈值。 是一个迁移速率的保护机制，超出该阈值会停止任务。它主要用于控制迁移过程中资源（特别是网络带宽）的消耗，确保系统的整体性能不受单一迁移任务影响 单位是百分比
 
@@ -624,7 +624,7 @@ class PostTask:
 
     @over_speed_threshold.setter
     def over_speed_threshold(self, over_speed_threshold):
-        """Sets the over_speed_threshold of this PostTask.
+        r"""Sets the over_speed_threshold of this PostTask.
 
         停止迁移的超速阈值。 是一个迁移速率的保护机制，超出该阈值会停止任务。它主要用于控制迁移过程中资源（特别是网络带宽）的消耗，确保系统的整体性能不受单一迁移任务影响 单位是百分比
 
@@ -635,7 +635,7 @@ class PostTask:
 
     @property
     def is_need_consistency_check(self):
-        """Gets the is_need_consistency_check of this PostTask.
+        r"""Gets the is_need_consistency_check of this PostTask.
 
         是否进行一致性校验
 
@@ -646,7 +646,7 @@ class PostTask:
 
     @is_need_consistency_check.setter
     def is_need_consistency_check(self, is_need_consistency_check):
-        """Sets the is_need_consistency_check of this PostTask.
+        r"""Sets the is_need_consistency_check of this PostTask.
 
         是否进行一致性校验
 

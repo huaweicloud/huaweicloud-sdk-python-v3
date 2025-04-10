@@ -55,7 +55,7 @@ class ProjectTestCaseFieldVo:
     }
 
     def __init__(self, uri=None, name=None, type=None, options=None, description=None, creator=None, updater=None, custom_field_id=None, custom_field_name=None, custom_field_param=None, type_name=None, create_time=None, create_time_timestamp=None, update_time=None, update_time_timestamp=None, project_uuid=None):
-        """ProjectTestCaseFieldVo
+        r"""ProjectTestCaseFieldVo
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def uri(self):
-        """Gets the uri of this ProjectTestCaseFieldVo.
+        r"""Gets the uri of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段主键
 
@@ -159,7 +159,7 @@ class ProjectTestCaseFieldVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this ProjectTestCaseFieldVo.
+        r"""Sets the uri of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段主键
 
@@ -170,7 +170,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def name(self):
-        """Gets the name of this ProjectTestCaseFieldVo.
+        r"""Gets the name of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段名称
 
@@ -181,7 +181,7 @@ class ProjectTestCaseFieldVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProjectTestCaseFieldVo.
+        r"""Sets the name of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段名称
 
@@ -192,7 +192,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def type(self):
-        """Gets the type of this ProjectTestCaseFieldVo.
+        r"""Gets the type of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段类型（单行文本text、多行文本textArea、单选框radio、多选框checkBox、日期date、数字number、单选用户user）
 
@@ -203,7 +203,7 @@ class ProjectTestCaseFieldVo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ProjectTestCaseFieldVo.
+        r"""Sets the type of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段类型（单行文本text、多行文本textArea、单选框radio、多选框checkBox、日期date、数字number、单选用户user）
 
@@ -214,7 +214,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def options(self):
-        """Gets the options of this ProjectTestCaseFieldVo.
+        r"""Gets the options of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段选项（数字类型时，数组两个值，第一个是最小值，第二个是最大值）
 
@@ -225,7 +225,7 @@ class ProjectTestCaseFieldVo:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this ProjectTestCaseFieldVo.
+        r"""Sets the options of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段选项（数字类型时，数组两个值，第一个是最小值，第二个是最大值）
 
@@ -236,7 +236,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def description(self):
-        """Gets the description of this ProjectTestCaseFieldVo.
+        r"""Gets the description of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段描述
 
@@ -247,7 +247,7 @@ class ProjectTestCaseFieldVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProjectTestCaseFieldVo.
+        r"""Sets the description of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段描述
 
@@ -258,7 +258,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def creator(self):
-        """Gets the creator of this ProjectTestCaseFieldVo.
+        r"""Gets the creator of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段创建人
 
@@ -269,7 +269,7 @@ class ProjectTestCaseFieldVo:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ProjectTestCaseFieldVo.
+        r"""Sets the creator of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段创建人
 
@@ -280,7 +280,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def updater(self):
-        """Gets the updater of this ProjectTestCaseFieldVo.
+        r"""Gets the updater of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段更新人
 
@@ -291,7 +291,7 @@ class ProjectTestCaseFieldVo:
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this ProjectTestCaseFieldVo.
+        r"""Sets the updater of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段更新人
 
@@ -302,7 +302,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def custom_field_id(self):
-        """Gets the custom_field_id of this ProjectTestCaseFieldVo.
+        r"""Gets the custom_field_id of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段id（1-25数字）
 
@@ -313,7 +313,7 @@ class ProjectTestCaseFieldVo:
 
     @custom_field_id.setter
     def custom_field_id(self, custom_field_id):
-        """Sets the custom_field_id of this ProjectTestCaseFieldVo.
+        r"""Sets the custom_field_id of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段id（1-25数字）
 
@@ -324,7 +324,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def custom_field_name(self):
-        """Gets the custom_field_name of this ProjectTestCaseFieldVo.
+        r"""Gets the custom_field_name of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段名称
 
@@ -335,7 +335,7 @@ class ProjectTestCaseFieldVo:
 
     @custom_field_name.setter
     def custom_field_name(self, custom_field_name):
-        """Sets the custom_field_name of this ProjectTestCaseFieldVo.
+        r"""Sets the custom_field_name of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段名称
 
@@ -346,7 +346,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def custom_field_param(self):
-        """Gets the custom_field_param of this ProjectTestCaseFieldVo.
+        r"""Gets the custom_field_param of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段入参或者返回参数名称
 
@@ -357,7 +357,7 @@ class ProjectTestCaseFieldVo:
 
     @custom_field_param.setter
     def custom_field_param(self, custom_field_param):
-        """Sets the custom_field_param of this ProjectTestCaseFieldVo.
+        r"""Sets the custom_field_param of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段入参或者返回参数名称
 
@@ -368,7 +368,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def type_name(self):
-        """Gets the type_name of this ProjectTestCaseFieldVo.
+        r"""Gets the type_name of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段类型国际化名称
 
@@ -379,7 +379,7 @@ class ProjectTestCaseFieldVo:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this ProjectTestCaseFieldVo.
+        r"""Sets the type_name of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段类型国际化名称
 
@@ -390,7 +390,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ProjectTestCaseFieldVo.
+        r"""Gets the create_time of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段创建时间
 
@@ -401,7 +401,7 @@ class ProjectTestCaseFieldVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ProjectTestCaseFieldVo.
+        r"""Sets the create_time of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段创建时间
 
@@ -412,7 +412,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def create_time_timestamp(self):
-        """Gets the create_time_timestamp of this ProjectTestCaseFieldVo.
+        r"""Gets the create_time_timestamp of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段创建时间时间戳
 
@@ -423,7 +423,7 @@ class ProjectTestCaseFieldVo:
 
     @create_time_timestamp.setter
     def create_time_timestamp(self, create_time_timestamp):
-        """Sets the create_time_timestamp of this ProjectTestCaseFieldVo.
+        r"""Sets the create_time_timestamp of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段创建时间时间戳
 
@@ -434,7 +434,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ProjectTestCaseFieldVo.
+        r"""Gets the update_time of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段更新时间
 
@@ -445,7 +445,7 @@ class ProjectTestCaseFieldVo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ProjectTestCaseFieldVo.
+        r"""Sets the update_time of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段更新时间
 
@@ -456,7 +456,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def update_time_timestamp(self):
-        """Gets the update_time_timestamp of this ProjectTestCaseFieldVo.
+        r"""Gets the update_time_timestamp of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段更新时间时间戳
 
@@ -467,7 +467,7 @@ class ProjectTestCaseFieldVo:
 
     @update_time_timestamp.setter
     def update_time_timestamp(self, update_time_timestamp):
-        """Sets the update_time_timestamp of this ProjectTestCaseFieldVo.
+        r"""Sets the update_time_timestamp of this ProjectTestCaseFieldVo.
 
         项目用例自定义字段更新时间时间戳
 
@@ -478,7 +478,7 @@ class ProjectTestCaseFieldVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this ProjectTestCaseFieldVo.
+        r"""Gets the project_uuid of this ProjectTestCaseFieldVo.
 
         项目id
 
@@ -489,7 +489,7 @@ class ProjectTestCaseFieldVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ProjectTestCaseFieldVo.
+        r"""Sets the project_uuid of this ProjectTestCaseFieldVo.
 
         项目id
 

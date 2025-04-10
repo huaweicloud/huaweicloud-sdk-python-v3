@@ -31,7 +31,7 @@ class ListDomainLogsRequest:
     }
 
     def __init__(self, domain_name=None, query_date=None, page_size=None, page_number=None):
-        """ListDomainLogsRequest
+        r"""ListDomainLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListDomainLogsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ListDomainLogsRequest.
+        r"""Gets the domain_name of this ListDomainLogsRequest.
 
         加速域名，参考格式：www.test1.com。
 
@@ -73,7 +73,7 @@ class ListDomainLogsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ListDomainLogsRequest.
+        r"""Sets the domain_name of this ListDomainLogsRequest.
 
         加速域名，参考格式：www.test1.com。
 
@@ -84,7 +84,7 @@ class ListDomainLogsRequest:
 
     @property
     def query_date(self):
-        """Gets the query_date of this ListDomainLogsRequest.
+        r"""Gets the query_date of this ListDomainLogsRequest.
 
         查询开始时间，格式为yyyyMMddHHmmss。 - 查询结果为开始时间之后24小时内的日志数据 - 只能查最近一个月内的数据
 
@@ -95,7 +95,7 @@ class ListDomainLogsRequest:
 
     @query_date.setter
     def query_date(self, query_date):
-        """Sets the query_date of this ListDomainLogsRequest.
+        r"""Sets the query_date of this ListDomainLogsRequest.
 
         查询开始时间，格式为yyyyMMddHHmmss。 - 查询结果为开始时间之后24小时内的日志数据 - 只能查最近一个月内的数据
 
@@ -106,7 +106,7 @@ class ListDomainLogsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListDomainLogsRequest.
+        r"""Gets the page_size of this ListDomainLogsRequest.
 
         每页显示日志数量。 
 
@@ -117,7 +117,7 @@ class ListDomainLogsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListDomainLogsRequest.
+        r"""Sets the page_size of this ListDomainLogsRequest.
 
         每页显示日志数量。 
 
@@ -128,7 +128,7 @@ class ListDomainLogsRequest:
 
     @property
     def page_number(self):
-        """Gets the page_number of this ListDomainLogsRequest.
+        r"""Gets the page_number of this ListDomainLogsRequest.
 
         当前页数。 
 
@@ -139,7 +139,7 @@ class ListDomainLogsRequest:
 
     @page_number.setter
     def page_number(self, page_number):
-        """Sets the page_number of this ListDomainLogsRequest.
+        r"""Sets the page_number of this ListDomainLogsRequest.
 
         当前页数。 
 

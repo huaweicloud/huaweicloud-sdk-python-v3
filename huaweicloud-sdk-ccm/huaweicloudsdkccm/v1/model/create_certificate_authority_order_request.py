@@ -25,7 +25,7 @@ class CreateCertificateAuthorityOrderRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCertificateAuthorityOrderRequest
+        r"""CreateCertificateAuthorityOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCertificateAuthorityOrderRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCertificateAuthorityOrderRequest.
+        r"""Gets the body of this CreateCertificateAuthorityOrderRequest.
 
         :return: The body of this CreateCertificateAuthorityOrderRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityOrderRequestBody`
@@ -52,7 +52,7 @@ class CreateCertificateAuthorityOrderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCertificateAuthorityOrderRequest.
+        r"""Sets the body of this CreateCertificateAuthorityOrderRequest.
 
         :param body: The body of this CreateCertificateAuthorityOrderRequest.
         :type body: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityOrderRequestBody`

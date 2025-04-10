@@ -27,7 +27,7 @@ class GetUsersListdatabase:
     }
 
     def __init__(self, name=None, description=None):
-        """GetUsersListdatabase
+        r"""GetUsersListdatabase
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class GetUsersListdatabase:
 
     @property
     def name(self):
-        """Gets the name of this GetUsersListdatabase.
+        r"""Gets the name of this GetUsersListdatabase.
 
         DDM实例帐号关联的逻辑库名称。
 
@@ -61,7 +61,7 @@ class GetUsersListdatabase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetUsersListdatabase.
+        r"""Sets the name of this GetUsersListdatabase.
 
         DDM实例帐号关联的逻辑库名称。
 
@@ -72,7 +72,7 @@ class GetUsersListdatabase:
 
     @property
     def description(self):
-        """Gets the description of this GetUsersListdatabase.
+        r"""Gets the description of this GetUsersListdatabase.
 
         逻辑库的描述信息。
 
@@ -83,7 +83,7 @@ class GetUsersListdatabase:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this GetUsersListdatabase.
+        r"""Sets the description of this GetUsersListdatabase.
 
         逻辑库的描述信息。
 

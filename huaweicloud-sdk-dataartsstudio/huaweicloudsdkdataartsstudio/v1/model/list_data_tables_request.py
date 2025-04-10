@@ -35,7 +35,7 @@ class ListDataTablesRequest:
     }
 
     def __init__(self, workspace=None, connection_id=None, database_name=None, table_name=None, limit=None, offset=None):
-        """ListDataTablesRequest
+        r"""ListDataTablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ListDataTablesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListDataTablesRequest.
+        r"""Gets the workspace of this ListDataTablesRequest.
 
         数据所在空间的id值
 
@@ -86,7 +86,7 @@ class ListDataTablesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListDataTablesRequest.
+        r"""Sets the workspace of this ListDataTablesRequest.
 
         数据所在空间的id值
 
@@ -97,7 +97,7 @@ class ListDataTablesRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ListDataTablesRequest.
+        r"""Gets the connection_id of this ListDataTablesRequest.
 
         数据连接id
 
@@ -108,7 +108,7 @@ class ListDataTablesRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ListDataTablesRequest.
+        r"""Sets the connection_id of this ListDataTablesRequest.
 
         数据连接id
 
@@ -119,7 +119,7 @@ class ListDataTablesRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListDataTablesRequest.
+        r"""Gets the database_name of this ListDataTablesRequest.
 
         数据库名称
 
@@ -130,7 +130,7 @@ class ListDataTablesRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListDataTablesRequest.
+        r"""Sets the database_name of this ListDataTablesRequest.
 
         数据库名称
 
@@ -141,7 +141,7 @@ class ListDataTablesRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListDataTablesRequest.
+        r"""Gets the table_name of this ListDataTablesRequest.
 
         指定查询表的名称
 
@@ -152,7 +152,7 @@ class ListDataTablesRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListDataTablesRequest.
+        r"""Sets the table_name of this ListDataTablesRequest.
 
         指定查询表的名称
 
@@ -163,7 +163,7 @@ class ListDataTablesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDataTablesRequest.
+        r"""Gets the limit of this ListDataTablesRequest.
 
         数据条数限制
 
@@ -174,7 +174,7 @@ class ListDataTablesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDataTablesRequest.
+        r"""Sets the limit of this ListDataTablesRequest.
 
         数据条数限制
 
@@ -185,7 +185,7 @@ class ListDataTablesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDataTablesRequest.
+        r"""Gets the offset of this ListDataTablesRequest.
 
         偏移量
 
@@ -196,7 +196,7 @@ class ListDataTablesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDataTablesRequest.
+        r"""Sets the offset of this ListDataTablesRequest.
 
         偏移量
 

@@ -30,7 +30,7 @@ class ListTagValuesResponse(SdkResponse):
     }
 
     def __init__(self, tag_name=None, tag_values=None, count=None):
-        """ListTagValuesResponse
+        r"""ListTagValuesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTagValuesResponse(SdkResponse):
 
     @property
     def tag_name(self):
-        """Gets the tag_name of this ListTagValuesResponse.
+        r"""Gets the tag_name of this ListTagValuesResponse.
 
         标签的名称
 
@@ -69,7 +69,7 @@ class ListTagValuesResponse(SdkResponse):
 
     @tag_name.setter
     def tag_name(self, tag_name):
-        """Sets the tag_name of this ListTagValuesResponse.
+        r"""Sets the tag_name of this ListTagValuesResponse.
 
         标签的名称
 
@@ -80,7 +80,7 @@ class ListTagValuesResponse(SdkResponse):
 
     @property
     def tag_values(self):
-        """Gets the tag_values of this ListTagValuesResponse.
+        r"""Gets the tag_values of this ListTagValuesResponse.
 
         标签的值列表
 
@@ -91,7 +91,7 @@ class ListTagValuesResponse(SdkResponse):
 
     @tag_values.setter
     def tag_values(self, tag_values):
-        """Sets the tag_values of this ListTagValuesResponse.
+        r"""Sets the tag_values of this ListTagValuesResponse.
 
         标签的值列表
 
@@ -102,7 +102,7 @@ class ListTagValuesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListTagValuesResponse.
+        r"""Gets the count of this ListTagValuesResponse.
 
         当前列表元素总数
 
@@ -113,7 +113,7 @@ class ListTagValuesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListTagValuesResponse.
+        r"""Sets the count of this ListTagValuesResponse.
 
         当前列表元素总数
 

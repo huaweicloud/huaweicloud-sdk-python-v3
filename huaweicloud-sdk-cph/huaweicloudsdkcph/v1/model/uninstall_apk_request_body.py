@@ -31,7 +31,7 @@ class UninstallApkRequestBody:
     }
 
     def __init__(self, command=None, content=None, phone_ids=None, server_ids=None):
-        """UninstallApkRequestBody
+        r"""UninstallApkRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UninstallApkRequestBody:
 
     @property
     def command(self):
-        """Gets the command of this UninstallApkRequestBody.
+        r"""Gets the command of this UninstallApkRequestBody.
 
         卸载应用固定填写uninstall。
 
@@ -73,7 +73,7 @@ class UninstallApkRequestBody:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this UninstallApkRequestBody.
+        r"""Sets the command of this UninstallApkRequestBody.
 
         卸载应用固定填写uninstall。
 
@@ -84,7 +84,7 @@ class UninstallApkRequestBody:
 
     @property
     def content(self):
-        """Gets the content of this UninstallApkRequestBody.
+        r"""Gets the content of this UninstallApkRequestBody.
 
         待卸载的APP名称。  最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
 
@@ -95,7 +95,7 @@ class UninstallApkRequestBody:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this UninstallApkRequestBody.
+        r"""Sets the content of this UninstallApkRequestBody.
 
         待卸载的APP名称。  最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。
 
@@ -106,7 +106,7 @@ class UninstallApkRequestBody:
 
     @property
     def phone_ids(self):
-        """Gets the phone_ids of this UninstallApkRequestBody.
+        r"""Gets the phone_ids of this UninstallApkRequestBody.
 
         云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
 
@@ -117,7 +117,7 @@ class UninstallApkRequestBody:
 
     @phone_ids.setter
     def phone_ids(self, phone_ids):
-        """Sets the phone_ids of this UninstallApkRequestBody.
+        r"""Sets the phone_ids of this UninstallApkRequestBody.
 
         云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
 
@@ -128,7 +128,7 @@ class UninstallApkRequestBody:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this UninstallApkRequestBody.
+        r"""Gets the server_ids of this UninstallApkRequestBody.
 
         云手机服务器ID列表。 phone_ids参数不存在时必选，同时存在只处理phone_ids。
 
@@ -139,7 +139,7 @@ class UninstallApkRequestBody:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this UninstallApkRequestBody.
+        r"""Sets the server_ids of this UninstallApkRequestBody.
 
         云手机服务器ID列表。 phone_ids参数不存在时必选，同时存在只处理phone_ids。
 

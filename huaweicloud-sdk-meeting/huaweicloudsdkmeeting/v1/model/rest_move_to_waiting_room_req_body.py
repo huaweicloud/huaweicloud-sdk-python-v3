@@ -25,7 +25,7 @@ class RestMoveToWaitingRoomReqBody:
     }
 
     def __init__(self, participant_id=None):
-        """RestMoveToWaitingRoomReqBody
+        r"""RestMoveToWaitingRoomReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestMoveToWaitingRoomReqBody:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this RestMoveToWaitingRoomReqBody.
+        r"""Gets the participant_id of this RestMoveToWaitingRoomReqBody.
 
         与会者标识。
 
@@ -53,7 +53,7 @@ class RestMoveToWaitingRoomReqBody:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this RestMoveToWaitingRoomReqBody.
+        r"""Sets the participant_id of this RestMoveToWaitingRoomReqBody.
 
         与会者标识。
 

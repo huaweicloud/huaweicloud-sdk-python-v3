@@ -26,7 +26,7 @@ class BatchDownloadResourceStatDataResponse(SdkResponse):
     }
 
     def __init__(self, metric_statistics=None):
-        """BatchDownloadResourceStatDataResponse
+        r"""BatchDownloadResourceStatDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDownloadResourceStatDataResponse(SdkResponse):
 
     @property
     def metric_statistics(self):
-        """Gets the metric_statistics of this BatchDownloadResourceStatDataResponse.
+        r"""Gets the metric_statistics of this BatchDownloadResourceStatDataResponse.
 
         资源统计数据列表
 
@@ -55,7 +55,7 @@ class BatchDownloadResourceStatDataResponse(SdkResponse):
 
     @metric_statistics.setter
     def metric_statistics(self, metric_statistics):
-        """Sets the metric_statistics of this BatchDownloadResourceStatDataResponse.
+        r"""Sets the metric_statistics of this BatchDownloadResourceStatDataResponse.
 
         资源统计数据列表
 

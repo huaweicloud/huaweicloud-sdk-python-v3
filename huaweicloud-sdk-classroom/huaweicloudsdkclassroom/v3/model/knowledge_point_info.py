@@ -29,7 +29,7 @@ class KnowledgePointInfo:
     }
 
     def __init__(self, id=None, name=None, sequence=None):
-        """KnowledgePointInfo
+        r"""KnowledgePointInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class KnowledgePointInfo:
 
     @property
     def id(self):
-        """Gets the id of this KnowledgePointInfo.
+        r"""Gets the id of this KnowledgePointInfo.
 
         知识点id
 
@@ -65,7 +65,7 @@ class KnowledgePointInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this KnowledgePointInfo.
+        r"""Sets the id of this KnowledgePointInfo.
 
         知识点id
 
@@ -76,7 +76,7 @@ class KnowledgePointInfo:
 
     @property
     def name(self):
-        """Gets the name of this KnowledgePointInfo.
+        r"""Gets the name of this KnowledgePointInfo.
 
         知识点名称
 
@@ -87,7 +87,7 @@ class KnowledgePointInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KnowledgePointInfo.
+        r"""Sets the name of this KnowledgePointInfo.
 
         知识点名称
 
@@ -98,7 +98,7 @@ class KnowledgePointInfo:
 
     @property
     def sequence(self):
-        """Gets the sequence of this KnowledgePointInfo.
+        r"""Gets the sequence of this KnowledgePointInfo.
 
         知识点顺序编号
 
@@ -109,7 +109,7 @@ class KnowledgePointInfo:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this KnowledgePointInfo.
+        r"""Sets the sequence of this KnowledgePointInfo.
 
         知识点顺序编号
 

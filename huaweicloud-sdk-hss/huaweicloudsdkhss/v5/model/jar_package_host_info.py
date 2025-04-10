@@ -67,7 +67,7 @@ class JarPackageHostInfo:
     }
 
     def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, file_name=None, name=None, catalogue=None, file_type=None, version=None, path=None, hash=None, size=None, uid=None, gid=None, mode=None, pid=None, proc_path=None, container_id=None, container_name=None, package_path=None, is_embedded=None, record_time=None):
-        """JarPackageHostInfo
+        r"""JarPackageHostInfo
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class JarPackageHostInfo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this JarPackageHostInfo.
+        r"""Gets the agent_id of this JarPackageHostInfo.
 
         Agent ID
 
@@ -201,7 +201,7 @@ class JarPackageHostInfo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this JarPackageHostInfo.
+        r"""Sets the agent_id of this JarPackageHostInfo.
 
         Agent ID
 
@@ -212,7 +212,7 @@ class JarPackageHostInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this JarPackageHostInfo.
+        r"""Gets the host_id of this JarPackageHostInfo.
 
         主机id
 
@@ -223,7 +223,7 @@ class JarPackageHostInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this JarPackageHostInfo.
+        r"""Sets the host_id of this JarPackageHostInfo.
 
         主机id
 
@@ -234,7 +234,7 @@ class JarPackageHostInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this JarPackageHostInfo.
+        r"""Gets the host_name of this JarPackageHostInfo.
 
         服务器名称
 
@@ -245,7 +245,7 @@ class JarPackageHostInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this JarPackageHostInfo.
+        r"""Sets the host_name of this JarPackageHostInfo.
 
         服务器名称
 
@@ -256,7 +256,7 @@ class JarPackageHostInfo:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this JarPackageHostInfo.
+        r"""Gets the host_ip of this JarPackageHostInfo.
 
         服务器ip
 
@@ -267,7 +267,7 @@ class JarPackageHostInfo:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this JarPackageHostInfo.
+        r"""Sets the host_ip of this JarPackageHostInfo.
 
         服务器ip
 
@@ -278,7 +278,7 @@ class JarPackageHostInfo:
 
     @property
     def file_name(self):
-        """Gets the file_name of this JarPackageHostInfo.
+        r"""Gets the file_name of this JarPackageHostInfo.
 
         Jar包名称
 
@@ -289,7 +289,7 @@ class JarPackageHostInfo:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this JarPackageHostInfo.
+        r"""Sets the file_name of this JarPackageHostInfo.
 
         Jar包名称
 
@@ -300,7 +300,7 @@ class JarPackageHostInfo:
 
     @property
     def name(self):
-        """Gets the name of this JarPackageHostInfo.
+        r"""Gets the name of this JarPackageHostInfo.
 
         Jar包名称(不带后缀)
 
@@ -311,7 +311,7 @@ class JarPackageHostInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JarPackageHostInfo.
+        r"""Sets the name of this JarPackageHostInfo.
 
         Jar包名称(不带后缀)
 
@@ -322,7 +322,7 @@ class JarPackageHostInfo:
 
     @property
     def catalogue(self):
-        """Gets the catalogue of this JarPackageHostInfo.
+        r"""Gets the catalogue of this JarPackageHostInfo.
 
         Jar包类型
 
@@ -333,7 +333,7 @@ class JarPackageHostInfo:
 
     @catalogue.setter
     def catalogue(self, catalogue):
-        """Sets the catalogue of this JarPackageHostInfo.
+        r"""Sets the catalogue of this JarPackageHostInfo.
 
         Jar包类型
 
@@ -344,7 +344,7 @@ class JarPackageHostInfo:
 
     @property
     def file_type(self):
-        """Gets the file_type of this JarPackageHostInfo.
+        r"""Gets the file_type of this JarPackageHostInfo.
 
         Jar包后缀
 
@@ -355,7 +355,7 @@ class JarPackageHostInfo:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this JarPackageHostInfo.
+        r"""Sets the file_type of this JarPackageHostInfo.
 
         Jar包后缀
 
@@ -366,7 +366,7 @@ class JarPackageHostInfo:
 
     @property
     def version(self):
-        """Gets the version of this JarPackageHostInfo.
+        r"""Gets the version of this JarPackageHostInfo.
 
         Jar包版本
 
@@ -377,7 +377,7 @@ class JarPackageHostInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this JarPackageHostInfo.
+        r"""Sets the version of this JarPackageHostInfo.
 
         Jar包版本
 
@@ -388,7 +388,7 @@ class JarPackageHostInfo:
 
     @property
     def path(self):
-        """Gets the path of this JarPackageHostInfo.
+        r"""Gets the path of this JarPackageHostInfo.
 
         Jar包路径
 
@@ -399,7 +399,7 @@ class JarPackageHostInfo:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this JarPackageHostInfo.
+        r"""Sets the path of this JarPackageHostInfo.
 
         Jar包路径
 
@@ -410,7 +410,7 @@ class JarPackageHostInfo:
 
     @property
     def hash(self):
-        """Gets the hash of this JarPackageHostInfo.
+        r"""Gets the hash of this JarPackageHostInfo.
 
         Jar包hash
 
@@ -421,7 +421,7 @@ class JarPackageHostInfo:
 
     @hash.setter
     def hash(self, hash):
-        """Sets the hash of this JarPackageHostInfo.
+        r"""Sets the hash of this JarPackageHostInfo.
 
         Jar包hash
 
@@ -432,7 +432,7 @@ class JarPackageHostInfo:
 
     @property
     def size(self):
-        """Gets the size of this JarPackageHostInfo.
+        r"""Gets the size of this JarPackageHostInfo.
 
         Jar包大小
 
@@ -443,7 +443,7 @@ class JarPackageHostInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this JarPackageHostInfo.
+        r"""Sets the size of this JarPackageHostInfo.
 
         Jar包大小
 
@@ -454,7 +454,7 @@ class JarPackageHostInfo:
 
     @property
     def uid(self):
-        """Gets the uid of this JarPackageHostInfo.
+        r"""Gets the uid of this JarPackageHostInfo.
 
         uid
 
@@ -465,7 +465,7 @@ class JarPackageHostInfo:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this JarPackageHostInfo.
+        r"""Sets the uid of this JarPackageHostInfo.
 
         uid
 
@@ -476,7 +476,7 @@ class JarPackageHostInfo:
 
     @property
     def gid(self):
-        """Gets the gid of this JarPackageHostInfo.
+        r"""Gets the gid of this JarPackageHostInfo.
 
         gid
 
@@ -487,7 +487,7 @@ class JarPackageHostInfo:
 
     @gid.setter
     def gid(self, gid):
-        """Sets the gid of this JarPackageHostInfo.
+        r"""Sets the gid of this JarPackageHostInfo.
 
         gid
 
@@ -498,7 +498,7 @@ class JarPackageHostInfo:
 
     @property
     def mode(self):
-        """Gets the mode of this JarPackageHostInfo.
+        r"""Gets the mode of this JarPackageHostInfo.
 
         文件权限
 
@@ -509,7 +509,7 @@ class JarPackageHostInfo:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this JarPackageHostInfo.
+        r"""Sets the mode of this JarPackageHostInfo.
 
         文件权限
 
@@ -520,7 +520,7 @@ class JarPackageHostInfo:
 
     @property
     def pid(self):
-        """Gets the pid of this JarPackageHostInfo.
+        r"""Gets the pid of this JarPackageHostInfo.
 
         进程id
 
@@ -531,7 +531,7 @@ class JarPackageHostInfo:
 
     @pid.setter
     def pid(self, pid):
-        """Sets the pid of this JarPackageHostInfo.
+        r"""Sets the pid of this JarPackageHostInfo.
 
         进程id
 
@@ -542,7 +542,7 @@ class JarPackageHostInfo:
 
     @property
     def proc_path(self):
-        """Gets the proc_path of this JarPackageHostInfo.
+        r"""Gets the proc_path of this JarPackageHostInfo.
 
         进程可执行文件路径
 
@@ -553,7 +553,7 @@ class JarPackageHostInfo:
 
     @proc_path.setter
     def proc_path(self, proc_path):
-        """Sets the proc_path of this JarPackageHostInfo.
+        r"""Sets the proc_path of this JarPackageHostInfo.
 
         进程可执行文件路径
 
@@ -564,7 +564,7 @@ class JarPackageHostInfo:
 
     @property
     def container_id(self):
-        """Gets the container_id of this JarPackageHostInfo.
+        r"""Gets the container_id of this JarPackageHostInfo.
 
         容器实例id
 
@@ -575,7 +575,7 @@ class JarPackageHostInfo:
 
     @container_id.setter
     def container_id(self, container_id):
-        """Sets the container_id of this JarPackageHostInfo.
+        r"""Sets the container_id of this JarPackageHostInfo.
 
         容器实例id
 
@@ -586,7 +586,7 @@ class JarPackageHostInfo:
 
     @property
     def container_name(self):
-        """Gets the container_name of this JarPackageHostInfo.
+        r"""Gets the container_name of this JarPackageHostInfo.
 
         容器名称
 
@@ -597,7 +597,7 @@ class JarPackageHostInfo:
 
     @container_name.setter
     def container_name(self, container_name):
-        """Sets the container_name of this JarPackageHostInfo.
+        r"""Sets the container_name of this JarPackageHostInfo.
 
         容器名称
 
@@ -608,7 +608,7 @@ class JarPackageHostInfo:
 
     @property
     def package_path(self):
-        """Gets the package_path of this JarPackageHostInfo.
+        r"""Gets the package_path of this JarPackageHostInfo.
 
         包路径
 
@@ -619,7 +619,7 @@ class JarPackageHostInfo:
 
     @package_path.setter
     def package_path(self, package_path):
-        """Sets the package_path of this JarPackageHostInfo.
+        r"""Sets the package_path of this JarPackageHostInfo.
 
         包路径
 
@@ -630,7 +630,7 @@ class JarPackageHostInfo:
 
     @property
     def is_embedded(self):
-        """Gets the is_embedded of this JarPackageHostInfo.
+        r"""Gets the is_embedded of this JarPackageHostInfo.
 
         显示的是否是嵌套包
 
@@ -641,7 +641,7 @@ class JarPackageHostInfo:
 
     @is_embedded.setter
     def is_embedded(self, is_embedded):
-        """Sets the is_embedded of this JarPackageHostInfo.
+        r"""Sets the is_embedded of this JarPackageHostInfo.
 
         显示的是否是嵌套包
 
@@ -652,7 +652,7 @@ class JarPackageHostInfo:
 
     @property
     def record_time(self):
-        """Gets the record_time of this JarPackageHostInfo.
+        r"""Gets the record_time of this JarPackageHostInfo.
 
         扫描时间
 
@@ -663,7 +663,7 @@ class JarPackageHostInfo:
 
     @record_time.setter
     def record_time(self, record_time):
-        """Sets the record_time of this JarPackageHostInfo.
+        r"""Sets the record_time of this JarPackageHostInfo.
 
         扫描时间
 

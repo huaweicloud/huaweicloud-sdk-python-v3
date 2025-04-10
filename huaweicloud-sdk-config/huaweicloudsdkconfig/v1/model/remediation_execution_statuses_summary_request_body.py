@@ -25,7 +25,7 @@ class RemediationExecutionStatusesSummaryRequestBody:
     }
 
     def __init__(self, resource_keys=None):
-        """RemediationExecutionStatusesSummaryRequestBody
+        r"""RemediationExecutionStatusesSummaryRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RemediationExecutionStatusesSummaryRequestBody:
 
     @property
     def resource_keys(self):
-        """Gets the resource_keys of this RemediationExecutionStatusesSummaryRequestBody.
+        r"""Gets the resource_keys of this RemediationExecutionStatusesSummaryRequestBody.
 
         合规规则最新修正记录查询条件列表。
 
@@ -53,7 +53,7 @@ class RemediationExecutionStatusesSummaryRequestBody:
 
     @resource_keys.setter
     def resource_keys(self, resource_keys):
-        """Sets the resource_keys of this RemediationExecutionStatusesSummaryRequestBody.
+        r"""Sets the resource_keys of this RemediationExecutionStatusesSummaryRequestBody.
 
         合规规则最新修正记录查询条件列表。
 

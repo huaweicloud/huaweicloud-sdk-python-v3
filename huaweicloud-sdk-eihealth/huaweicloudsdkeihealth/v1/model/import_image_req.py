@@ -29,7 +29,7 @@ class ImportImageReq:
     }
 
     def __init__(self, source_project_id=None, image_id=None, tag=None):
-        """ImportImageReq
+        r"""ImportImageReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ImportImageReq:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this ImportImageReq.
+        r"""Gets the source_project_id of this ImportImageReq.
 
         源项目ID
 
@@ -65,7 +65,7 @@ class ImportImageReq:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this ImportImageReq.
+        r"""Sets the source_project_id of this ImportImageReq.
 
         源项目ID
 
@@ -76,7 +76,7 @@ class ImportImageReq:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ImportImageReq.
+        r"""Gets the image_id of this ImportImageReq.
 
         镜像ID
 
@@ -87,7 +87,7 @@ class ImportImageReq:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ImportImageReq.
+        r"""Sets the image_id of this ImportImageReq.
 
         镜像ID
 
@@ -98,7 +98,7 @@ class ImportImageReq:
 
     @property
     def tag(self):
-        """Gets the tag of this ImportImageReq.
+        r"""Gets the tag of this ImportImageReq.
 
         镜像tag
 
@@ -109,7 +109,7 @@ class ImportImageReq:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ImportImageReq.
+        r"""Sets the tag of this ImportImageReq.
 
         镜像tag
 

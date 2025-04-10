@@ -27,7 +27,7 @@ class ShowConsistencyTaskDetailRequest:
     }
 
     def __init__(self, id=None, workspace=None):
-        """ShowConsistencyTaskDetailRequest
+        r"""ShowConsistencyTaskDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowConsistencyTaskDetailRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowConsistencyTaskDetailRequest.
+        r"""Gets the id of this ShowConsistencyTaskDetailRequest.
 
         对账作业ID
 
@@ -59,7 +59,7 @@ class ShowConsistencyTaskDetailRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowConsistencyTaskDetailRequest.
+        r"""Sets the id of this ShowConsistencyTaskDetailRequest.
 
         对账作业ID
 
@@ -70,7 +70,7 @@ class ShowConsistencyTaskDetailRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowConsistencyTaskDetailRequest.
+        r"""Gets the workspace of this ShowConsistencyTaskDetailRequest.
 
         DataArts Studio工作空间ID
 
@@ -81,7 +81,7 @@ class ShowConsistencyTaskDetailRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowConsistencyTaskDetailRequest.
+        r"""Sets the workspace of this ShowConsistencyTaskDetailRequest.
 
         DataArts Studio工作空间ID
 

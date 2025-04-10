@@ -39,7 +39,7 @@ class ListTableMetaRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name_pattern=None, table_name_pattern=None, table_types=None, limit=None, marker=None, reverse_page=None):
-        """ListTableMetaRequest
+        r"""ListTableMetaRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ListTableMetaRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListTableMetaRequest.
+        r"""Gets the instance_id of this ListTableMetaRequest.
 
         实例Id
 
@@ -101,7 +101,7 @@ class ListTableMetaRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListTableMetaRequest.
+        r"""Sets the instance_id of this ListTableMetaRequest.
 
         实例Id
 
@@ -112,7 +112,7 @@ class ListTableMetaRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ListTableMetaRequest.
+        r"""Gets the catalog_name of this ListTableMetaRequest.
 
         catalog名字
 
@@ -123,7 +123,7 @@ class ListTableMetaRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ListTableMetaRequest.
+        r"""Sets the catalog_name of this ListTableMetaRequest.
 
         catalog名字
 
@@ -134,7 +134,7 @@ class ListTableMetaRequest:
 
     @property
     def database_name_pattern(self):
-        """Gets the database_name_pattern of this ListTableMetaRequest.
+        r"""Gets the database_name_pattern of this ListTableMetaRequest.
 
         数据库通配符
 
@@ -145,7 +145,7 @@ class ListTableMetaRequest:
 
     @database_name_pattern.setter
     def database_name_pattern(self, database_name_pattern):
-        """Sets the database_name_pattern of this ListTableMetaRequest.
+        r"""Sets the database_name_pattern of this ListTableMetaRequest.
 
         数据库通配符
 
@@ -156,7 +156,7 @@ class ListTableMetaRequest:
 
     @property
     def table_name_pattern(self):
-        """Gets the table_name_pattern of this ListTableMetaRequest.
+        r"""Gets the table_name_pattern of this ListTableMetaRequest.
 
         表名通配符
 
@@ -167,7 +167,7 @@ class ListTableMetaRequest:
 
     @table_name_pattern.setter
     def table_name_pattern(self, table_name_pattern):
-        """Sets the table_name_pattern of this ListTableMetaRequest.
+        r"""Sets the table_name_pattern of this ListTableMetaRequest.
 
         表名通配符
 
@@ -178,7 +178,7 @@ class ListTableMetaRequest:
 
     @property
     def table_types(self):
-        """Gets the table_types of this ListTableMetaRequest.
+        r"""Gets the table_types of this ListTableMetaRequest.
 
         查询的表类型
 
@@ -189,7 +189,7 @@ class ListTableMetaRequest:
 
     @table_types.setter
     def table_types(self, table_types):
-        """Sets the table_types of this ListTableMetaRequest.
+        r"""Sets the table_types of this ListTableMetaRequest.
 
         查询的表类型
 
@@ -200,7 +200,7 @@ class ListTableMetaRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTableMetaRequest.
+        r"""Gets the limit of this ListTableMetaRequest.
 
         返回的条目数量
 
@@ -211,7 +211,7 @@ class ListTableMetaRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTableMetaRequest.
+        r"""Sets the limit of this ListTableMetaRequest.
 
         返回的条目数量
 
@@ -222,7 +222,7 @@ class ListTableMetaRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListTableMetaRequest.
+        r"""Gets the marker of this ListTableMetaRequest.
 
         查询的起始记录ID
 
@@ -233,7 +233,7 @@ class ListTableMetaRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListTableMetaRequest.
+        r"""Sets the marker of this ListTableMetaRequest.
 
         查询的起始记录ID
 
@@ -244,7 +244,7 @@ class ListTableMetaRequest:
 
     @property
     def reverse_page(self):
-        """Gets the reverse_page of this ListTableMetaRequest.
+        r"""Gets the reverse_page of this ListTableMetaRequest.
 
         是否查询上一页
 
@@ -255,7 +255,7 @@ class ListTableMetaRequest:
 
     @reverse_page.setter
     def reverse_page(self, reverse_page):
-        """Sets the reverse_page of this ListTableMetaRequest.
+        r"""Sets the reverse_page of this ListTableMetaRequest.
 
         是否查询上一页
 

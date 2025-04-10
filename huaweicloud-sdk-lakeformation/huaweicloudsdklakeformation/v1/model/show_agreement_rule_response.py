@@ -28,7 +28,7 @@ class ShowAgreementRuleResponse(SdkResponse):
     }
 
     def __init__(self, agreement_rules=None, x_request_id=None):
-        """ShowAgreementRuleResponse
+        r"""ShowAgreementRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAgreementRuleResponse(SdkResponse):
 
     @property
     def agreement_rules(self):
-        """Gets the agreement_rules of this ShowAgreementRuleResponse.
+        r"""Gets the agreement_rules of this ShowAgreementRuleResponse.
 
         系统协议列表
 
@@ -62,7 +62,7 @@ class ShowAgreementRuleResponse(SdkResponse):
 
     @agreement_rules.setter
     def agreement_rules(self, agreement_rules):
-        """Sets the agreement_rules of this ShowAgreementRuleResponse.
+        r"""Sets the agreement_rules of this ShowAgreementRuleResponse.
 
         系统协议列表
 
@@ -73,7 +73,7 @@ class ShowAgreementRuleResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowAgreementRuleResponse.
+        r"""Gets the x_request_id of this ShowAgreementRuleResponse.
 
         :return: The x_request_id of this ShowAgreementRuleResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowAgreementRuleResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowAgreementRuleResponse.
+        r"""Sets the x_request_id of this ShowAgreementRuleResponse.
 
         :param x_request_id: The x_request_id of this ShowAgreementRuleResponse.
         :type x_request_id: str

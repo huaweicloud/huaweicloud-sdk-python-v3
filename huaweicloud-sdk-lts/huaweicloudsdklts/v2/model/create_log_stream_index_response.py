@@ -32,7 +32,7 @@ class CreateLogStreamIndexResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_message=None, result=None, is_query_complete=None):
-        """CreateLogStreamIndexResponse
+        r"""CreateLogStreamIndexResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateLogStreamIndexResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateLogStreamIndexResponse.
+        r"""Gets the error_code of this CreateLogStreamIndexResponse.
 
         错误码
 
@@ -76,7 +76,7 @@ class CreateLogStreamIndexResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateLogStreamIndexResponse.
+        r"""Sets the error_code of this CreateLogStreamIndexResponse.
 
         错误码
 
@@ -87,7 +87,7 @@ class CreateLogStreamIndexResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this CreateLogStreamIndexResponse.
+        r"""Gets the error_message of this CreateLogStreamIndexResponse.
 
         错误信息描述
 
@@ -98,7 +98,7 @@ class CreateLogStreamIndexResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this CreateLogStreamIndexResponse.
+        r"""Sets the error_message of this CreateLogStreamIndexResponse.
 
         错误信息描述
 
@@ -109,7 +109,7 @@ class CreateLogStreamIndexResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateLogStreamIndexResponse.
+        r"""Gets the result of this CreateLogStreamIndexResponse.
 
         结果
 
@@ -120,7 +120,7 @@ class CreateLogStreamIndexResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateLogStreamIndexResponse.
+        r"""Sets the result of this CreateLogStreamIndexResponse.
 
         结果
 
@@ -131,7 +131,7 @@ class CreateLogStreamIndexResponse(SdkResponse):
 
     @property
     def is_query_complete(self):
-        """Gets the is_query_complete of this CreateLogStreamIndexResponse.
+        r"""Gets the is_query_complete of this CreateLogStreamIndexResponse.
 
         是否查询完成
 
@@ -142,7 +142,7 @@ class CreateLogStreamIndexResponse(SdkResponse):
 
     @is_query_complete.setter
     def is_query_complete(self, is_query_complete):
-        """Sets the is_query_complete of this CreateLogStreamIndexResponse.
+        r"""Sets the is_query_complete of this CreateLogStreamIndexResponse.
 
         是否查询完成
 

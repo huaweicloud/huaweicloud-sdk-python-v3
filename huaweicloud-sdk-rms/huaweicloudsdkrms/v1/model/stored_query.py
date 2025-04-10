@@ -35,7 +35,7 @@ class StoredQuery:
     }
 
     def __init__(self, id=None, name=None, description=None, expression=None, created=None, updated=None):
-        """StoredQuery
+        r"""StoredQuery
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class StoredQuery:
 
     @property
     def id(self):
-        """Gets the id of this StoredQuery.
+        r"""Gets the id of this StoredQuery.
 
         ResourceQL ID
 
@@ -89,7 +89,7 @@ class StoredQuery:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StoredQuery.
+        r"""Sets the id of this StoredQuery.
 
         ResourceQL ID
 
@@ -100,7 +100,7 @@ class StoredQuery:
 
     @property
     def name(self):
-        """Gets the name of this StoredQuery.
+        r"""Gets the name of this StoredQuery.
 
         ResourceQL 名字
 
@@ -111,7 +111,7 @@ class StoredQuery:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StoredQuery.
+        r"""Sets the name of this StoredQuery.
 
         ResourceQL 名字
 
@@ -122,7 +122,7 @@ class StoredQuery:
 
     @property
     def description(self):
-        """Gets the description of this StoredQuery.
+        r"""Gets the description of this StoredQuery.
 
         ResourceQL 描述
 
@@ -133,7 +133,7 @@ class StoredQuery:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this StoredQuery.
+        r"""Sets the description of this StoredQuery.
 
         ResourceQL 描述
 
@@ -144,7 +144,7 @@ class StoredQuery:
 
     @property
     def expression(self):
-        """Gets the expression of this StoredQuery.
+        r"""Gets the expression of this StoredQuery.
 
         ResourceQL 表达式
 
@@ -155,7 +155,7 @@ class StoredQuery:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this StoredQuery.
+        r"""Sets the expression of this StoredQuery.
 
         ResourceQL 表达式
 
@@ -166,7 +166,7 @@ class StoredQuery:
 
     @property
     def created(self):
-        """Gets the created of this StoredQuery.
+        r"""Gets the created of this StoredQuery.
 
         ResourceQL 创建时间
 
@@ -177,7 +177,7 @@ class StoredQuery:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this StoredQuery.
+        r"""Sets the created of this StoredQuery.
 
         ResourceQL 创建时间
 
@@ -188,7 +188,7 @@ class StoredQuery:
 
     @property
     def updated(self):
-        """Gets the updated of this StoredQuery.
+        r"""Gets the updated of this StoredQuery.
 
         ResourceQL 更新时间
 
@@ -199,7 +199,7 @@ class StoredQuery:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this StoredQuery.
+        r"""Sets the updated of this StoredQuery.
 
         ResourceQL 更新时间
 

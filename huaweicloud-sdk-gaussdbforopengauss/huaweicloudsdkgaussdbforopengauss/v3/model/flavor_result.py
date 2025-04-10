@@ -39,7 +39,7 @@ class FlavorResult:
     }
 
     def __init__(self, vcpus=None, ram=None, spec_code=None, az_status=None, availability_zone=None, version=None, name=None, group_type=None):
-        """FlavorResult
+        r"""FlavorResult
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class FlavorResult:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this FlavorResult.
+        r"""Gets the vcpus of this FlavorResult.
 
         CPU个数。
 
@@ -95,7 +95,7 @@ class FlavorResult:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this FlavorResult.
+        r"""Sets the vcpus of this FlavorResult.
 
         CPU个数。
 
@@ -106,7 +106,7 @@ class FlavorResult:
 
     @property
     def ram(self):
-        """Gets the ram of this FlavorResult.
+        r"""Gets the ram of this FlavorResult.
 
         内存大小，单位为GB。
 
@@ -117,7 +117,7 @@ class FlavorResult:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this FlavorResult.
+        r"""Sets the ram of this FlavorResult.
 
         内存大小，单位为GB。
 
@@ -128,7 +128,7 @@ class FlavorResult:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this FlavorResult.
+        r"""Gets the spec_code of this FlavorResult.
 
         资源规格编码。例如：gaussdb.opengauss.ee.dn.m6.4xlarge.8.in。
 
@@ -139,7 +139,7 @@ class FlavorResult:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this FlavorResult.
+        r"""Sets the spec_code of this FlavorResult.
 
         资源规格编码。例如：gaussdb.opengauss.ee.dn.m6.4xlarge.8.in。
 
@@ -150,7 +150,7 @@ class FlavorResult:
 
     @property
     def az_status(self):
-        """Gets the az_status of this FlavorResult.
+        r"""Gets the az_status of this FlavorResult.
 
         其中key是可用区编号，value是规格所在az的状态，包含以下状态： - normal，在售。 - unsupported，暂不支持该规格。 - sellout，售罄。
 
@@ -161,7 +161,7 @@ class FlavorResult:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this FlavorResult.
+        r"""Sets the az_status of this FlavorResult.
 
         其中key是可用区编号，value是规格所在az的状态，包含以下状态： - normal，在售。 - unsupported，暂不支持该规格。 - sellout，售罄。
 
@@ -172,7 +172,7 @@ class FlavorResult:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this FlavorResult.
+        r"""Gets the availability_zone of this FlavorResult.
 
         可用az
 
@@ -183,7 +183,7 @@ class FlavorResult:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this FlavorResult.
+        r"""Sets the availability_zone of this FlavorResult.
 
         可用az
 
@@ -194,7 +194,7 @@ class FlavorResult:
 
     @property
     def version(self):
-        """Gets the version of this FlavorResult.
+        r"""Gets the version of this FlavorResult.
 
         数组形式版本号
 
@@ -205,7 +205,7 @@ class FlavorResult:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this FlavorResult.
+        r"""Sets the version of this FlavorResult.
 
         数组形式版本号
 
@@ -216,7 +216,7 @@ class FlavorResult:
 
     @property
     def name(self):
-        """Gets the name of this FlavorResult.
+        r"""Gets the name of this FlavorResult.
 
         数组库引擎版本
 
@@ -227,7 +227,7 @@ class FlavorResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlavorResult.
+        r"""Sets the name of this FlavorResult.
 
         数组库引擎版本
 
@@ -238,7 +238,7 @@ class FlavorResult:
 
     @property
     def group_type(self):
-        """Gets the group_type of this FlavorResult.
+        r"""Gets the group_type of this FlavorResult.
 
         性能规格，包含以下状态： - normal：通用增强型。 - normal2：通用增强Ⅱ型。 - armFlavors：鲲鹏通用增强型。 - dedicicatenormal ：x86独享型。 - armlocalssd：鲲鹏通用型。 - normallocalssd：x86通用型。 - general：通用型。 - dedicated：独享型，仅云盘SSD支持。 - rapid：独享型，仅极速型SSD支持。
 
@@ -249,7 +249,7 @@ class FlavorResult:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this FlavorResult.
+        r"""Sets the group_type of this FlavorResult.
 
         性能规格，包含以下状态： - normal：通用增强型。 - normal2：通用增强Ⅱ型。 - armFlavors：鲲鹏通用增强型。 - dedicicatenormal ：x86独享型。 - armlocalssd：鲲鹏通用型。 - normallocalssd：x86通用型。 - general：通用型。 - dedicated：独享型，仅云盘SSD支持。 - rapid：独享型，仅极速型SSD支持。
 

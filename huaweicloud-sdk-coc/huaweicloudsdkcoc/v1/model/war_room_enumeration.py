@@ -31,7 +31,7 @@ class WarRoomEnumeration:
     }
 
     def __init__(self, id=None, name_zh=None, name_en=None, type=None):
-        """WarRoomEnumeration
+        r"""WarRoomEnumeration
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class WarRoomEnumeration:
 
     @property
     def id(self):
-        """Gets the id of this WarRoomEnumeration.
+        r"""Gets the id of this WarRoomEnumeration.
 
         枚举值id
 
@@ -75,7 +75,7 @@ class WarRoomEnumeration:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WarRoomEnumeration.
+        r"""Sets the id of this WarRoomEnumeration.
 
         枚举值id
 
@@ -86,7 +86,7 @@ class WarRoomEnumeration:
 
     @property
     def name_zh(self):
-        """Gets the name_zh of this WarRoomEnumeration.
+        r"""Gets the name_zh of this WarRoomEnumeration.
 
         枚举值中文名
 
@@ -97,7 +97,7 @@ class WarRoomEnumeration:
 
     @name_zh.setter
     def name_zh(self, name_zh):
-        """Sets the name_zh of this WarRoomEnumeration.
+        r"""Sets the name_zh of this WarRoomEnumeration.
 
         枚举值中文名
 
@@ -108,7 +108,7 @@ class WarRoomEnumeration:
 
     @property
     def name_en(self):
-        """Gets the name_en of this WarRoomEnumeration.
+        r"""Gets the name_en of this WarRoomEnumeration.
 
         枚举值英文名
 
@@ -119,7 +119,7 @@ class WarRoomEnumeration:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this WarRoomEnumeration.
+        r"""Sets the name_en of this WarRoomEnumeration.
 
         枚举值英文名
 
@@ -130,7 +130,7 @@ class WarRoomEnumeration:
 
     @property
     def type(self):
-        """Gets the type of this WarRoomEnumeration.
+        r"""Gets the type of this WarRoomEnumeration.
 
         枚举类型
 
@@ -141,7 +141,7 @@ class WarRoomEnumeration:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this WarRoomEnumeration.
+        r"""Sets the type of this WarRoomEnumeration.
 
         枚举类型
 

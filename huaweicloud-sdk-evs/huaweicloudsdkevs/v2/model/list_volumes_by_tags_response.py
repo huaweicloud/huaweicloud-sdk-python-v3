@@ -28,7 +28,7 @@ class ListVolumesByTagsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, resources=None):
-        """ListVolumesByTagsResponse
+        r"""ListVolumesByTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListVolumesByTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListVolumesByTagsResponse.
+        r"""Gets the total_count of this ListVolumesByTagsResponse.
 
         符合查询条件的云硬盘资源个数
 
@@ -62,7 +62,7 @@ class ListVolumesByTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListVolumesByTagsResponse.
+        r"""Sets the total_count of this ListVolumesByTagsResponse.
 
         符合查询条件的云硬盘资源个数
 
@@ -73,7 +73,7 @@ class ListVolumesByTagsResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListVolumesByTagsResponse.
+        r"""Gets the resources of this ListVolumesByTagsResponse.
 
         符合查询条件的资源列表
 
@@ -84,7 +84,7 @@ class ListVolumesByTagsResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListVolumesByTagsResponse.
+        r"""Sets the resources of this ListVolumesByTagsResponse.
 
         符合查询条件的资源列表
 

@@ -27,7 +27,7 @@ class UpdateGlobalEip:
     }
 
     def __init__(self, id=None, name=None):
-        """UpdateGlobalEip
+        r"""UpdateGlobalEip
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateGlobalEip:
 
     @property
     def id(self):
-        """Gets the id of this UpdateGlobalEip.
+        r"""Gets the id of this UpdateGlobalEip.
 
         全域弹性公网IP的ID
 
@@ -61,7 +61,7 @@ class UpdateGlobalEip:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateGlobalEip.
+        r"""Sets the id of this UpdateGlobalEip.
 
         全域弹性公网IP的ID
 
@@ -72,7 +72,7 @@ class UpdateGlobalEip:
 
     @property
     def name(self):
-        """Gets the name of this UpdateGlobalEip.
+        r"""Gets the name of this UpdateGlobalEip.
 
         - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -83,7 +83,7 @@ class UpdateGlobalEip:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateGlobalEip.
+        r"""Sets the name of this UpdateGlobalEip.
 
         - 功能说明：全域弹性公网IP名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 

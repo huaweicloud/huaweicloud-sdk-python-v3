@@ -26,7 +26,7 @@ class BatchUpdatePermissionLevelResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """BatchUpdatePermissionLevelResponse
+        r"""BatchUpdatePermissionLevelResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchUpdatePermissionLevelResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this BatchUpdatePermissionLevelResponse.
+        r"""Gets the status of this BatchUpdatePermissionLevelResponse.
 
         请求成功失败状态
 
@@ -55,7 +55,7 @@ class BatchUpdatePermissionLevelResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchUpdatePermissionLevelResponse.
+        r"""Sets the status of this BatchUpdatePermissionLevelResponse.
 
         请求成功失败状态
 

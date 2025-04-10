@@ -27,7 +27,7 @@ class DisassociateQueueFromEnhancedConnectionRequest:
     }
 
     def __init__(self, connection_id=None, body=None):
-        """DisassociateQueueFromEnhancedConnectionRequest
+        r"""DisassociateQueueFromEnhancedConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DisassociateQueueFromEnhancedConnectionRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this DisassociateQueueFromEnhancedConnectionRequest.
+        r"""Gets the connection_id of this DisassociateQueueFromEnhancedConnectionRequest.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -60,7 +60,7 @@ class DisassociateQueueFromEnhancedConnectionRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this DisassociateQueueFromEnhancedConnectionRequest.
+        r"""Sets the connection_id of this DisassociateQueueFromEnhancedConnectionRequest.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -71,7 +71,7 @@ class DisassociateQueueFromEnhancedConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisassociateQueueFromEnhancedConnectionRequest.
+        r"""Gets the body of this DisassociateQueueFromEnhancedConnectionRequest.
 
         :return: The body of this DisassociateQueueFromEnhancedConnectionRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.DisassociateQueueFromEnhancedConnectionRequestBody`
@@ -80,7 +80,7 @@ class DisassociateQueueFromEnhancedConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisassociateQueueFromEnhancedConnectionRequest.
+        r"""Sets the body of this DisassociateQueueFromEnhancedConnectionRequest.
 
         :param body: The body of this DisassociateQueueFromEnhancedConnectionRequest.
         :type body: :class:`huaweicloudsdkdli.v1.DisassociateQueueFromEnhancedConnectionRequestBody`

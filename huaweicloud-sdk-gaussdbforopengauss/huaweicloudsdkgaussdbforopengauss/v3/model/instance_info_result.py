@@ -29,7 +29,7 @@ class InstanceInfoResult:
     }
 
     def __init__(self, instance_id=None, instance_name=None, instance_status=None):
-        """InstanceInfoResult
+        r"""InstanceInfoResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class InstanceInfoResult:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceInfoResult.
+        r"""Gets the instance_id of this InstanceInfoResult.
 
         实例ID。
 
@@ -68,7 +68,7 @@ class InstanceInfoResult:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceInfoResult.
+        r"""Sets the instance_id of this InstanceInfoResult.
 
         实例ID。
 
@@ -79,7 +79,7 @@ class InstanceInfoResult:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this InstanceInfoResult.
+        r"""Gets the instance_name of this InstanceInfoResult.
 
         实例名称。
 
@@ -90,7 +90,7 @@ class InstanceInfoResult:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this InstanceInfoResult.
+        r"""Sets the instance_name of this InstanceInfoResult.
 
         实例名称。
 
@@ -101,7 +101,7 @@ class InstanceInfoResult:
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this InstanceInfoResult.
+        r"""Gets the instance_status of this InstanceInfoResult.
 
         实例状态。
 
@@ -112,7 +112,7 @@ class InstanceInfoResult:
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this InstanceInfoResult.
+        r"""Sets the instance_status of this InstanceInfoResult.
 
         实例状态。
 

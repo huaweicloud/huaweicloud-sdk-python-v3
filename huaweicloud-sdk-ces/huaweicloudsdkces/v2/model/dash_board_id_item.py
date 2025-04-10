@@ -25,7 +25,7 @@ class DashBoardIdItem:
     }
 
     def __init__(self, dashboard_id=None):
-        """DashBoardIdItem
+        r"""DashBoardIdItem
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DashBoardIdItem:
 
     @property
     def dashboard_id(self):
-        """Gets the dashboard_id of this DashBoardIdItem.
+        r"""Gets the dashboard_id of this DashBoardIdItem.
 
         监控看板id
 
@@ -54,7 +54,7 @@ class DashBoardIdItem:
 
     @dashboard_id.setter
     def dashboard_id(self, dashboard_id):
-        """Sets the dashboard_id of this DashBoardIdItem.
+        r"""Sets the dashboard_id of this DashBoardIdItem.
 
         监控看板id
 

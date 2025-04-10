@@ -31,7 +31,7 @@ class RuleAction:
     }
 
     def __init__(self, type=None, device_command=None, smn_forwarding=None, device_alarm=None):
-        """RuleAction
+        r"""RuleAction
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class RuleAction:
 
     @property
     def type(self):
-        """Gets the type of this RuleAction.
+        r"""Gets the type of this RuleAction.
 
         **参数说明**：规则动作的类型，端侧执行只支持下发设备命令消息类型。 **取值范围**： - DEVICE_CMD：下发设备命令消息类型。 - SMN_FORWARDING：发送SMN消息类型。 - DEVICE_ALARM：上报设备告警消息类型。当选择该类型时，condition中必须有DEVICE_DATA条件类型。该类型动作只能唯一。
 
@@ -74,7 +74,7 @@ class RuleAction:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RuleAction.
+        r"""Sets the type of this RuleAction.
 
         **参数说明**：规则动作的类型，端侧执行只支持下发设备命令消息类型。 **取值范围**： - DEVICE_CMD：下发设备命令消息类型。 - SMN_FORWARDING：发送SMN消息类型。 - DEVICE_ALARM：上报设备告警消息类型。当选择该类型时，condition中必须有DEVICE_DATA条件类型。该类型动作只能唯一。
 
@@ -85,7 +85,7 @@ class RuleAction:
 
     @property
     def device_command(self):
-        """Gets the device_command of this RuleAction.
+        r"""Gets the device_command of this RuleAction.
 
         :return: The device_command of this RuleAction.
         :rtype: :class:`huaweicloudsdkiotda.v5.ActionDeviceCommand`
@@ -94,7 +94,7 @@ class RuleAction:
 
     @device_command.setter
     def device_command(self, device_command):
-        """Sets the device_command of this RuleAction.
+        r"""Sets the device_command of this RuleAction.
 
         :param device_command: The device_command of this RuleAction.
         :type device_command: :class:`huaweicloudsdkiotda.v5.ActionDeviceCommand`
@@ -103,7 +103,7 @@ class RuleAction:
 
     @property
     def smn_forwarding(self):
-        """Gets the smn_forwarding of this RuleAction.
+        r"""Gets the smn_forwarding of this RuleAction.
 
         :return: The smn_forwarding of this RuleAction.
         :rtype: :class:`huaweicloudsdkiotda.v5.ActionSmnForwarding`
@@ -112,7 +112,7 @@ class RuleAction:
 
     @smn_forwarding.setter
     def smn_forwarding(self, smn_forwarding):
-        """Sets the smn_forwarding of this RuleAction.
+        r"""Sets the smn_forwarding of this RuleAction.
 
         :param smn_forwarding: The smn_forwarding of this RuleAction.
         :type smn_forwarding: :class:`huaweicloudsdkiotda.v5.ActionSmnForwarding`
@@ -121,7 +121,7 @@ class RuleAction:
 
     @property
     def device_alarm(self):
-        """Gets the device_alarm of this RuleAction.
+        r"""Gets the device_alarm of this RuleAction.
 
         :return: The device_alarm of this RuleAction.
         :rtype: :class:`huaweicloudsdkiotda.v5.ActionDeviceAlarm`
@@ -130,7 +130,7 @@ class RuleAction:
 
     @device_alarm.setter
     def device_alarm(self, device_alarm):
-        """Sets the device_alarm of this RuleAction.
+        r"""Sets the device_alarm of this RuleAction.
 
         :param device_alarm: The device_alarm of this RuleAction.
         :type device_alarm: :class:`huaweicloudsdkiotda.v5.ActionDeviceAlarm`

@@ -24,7 +24,7 @@ class DeleteVifPeerResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteVifPeerResponse
+        r"""DeleteVifPeerResponse
 
         The model defined in huaweicloud sdk
 

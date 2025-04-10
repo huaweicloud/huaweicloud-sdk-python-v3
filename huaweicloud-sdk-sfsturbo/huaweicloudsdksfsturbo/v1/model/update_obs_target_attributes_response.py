@@ -30,7 +30,7 @@ class UpdateObsTargetAttributesResponse(SdkResponse):
     }
 
     def __init__(self, target_id=None, attributes=None, x_request_id=None):
-        """UpdateObsTargetAttributesResponse
+        r"""UpdateObsTargetAttributesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateObsTargetAttributesResponse(SdkResponse):
 
     @property
     def target_id(self):
-        """Gets the target_id of this UpdateObsTargetAttributesResponse.
+        r"""Gets the target_id of this UpdateObsTargetAttributesResponse.
 
         绑定关系Id
 
@@ -69,7 +69,7 @@ class UpdateObsTargetAttributesResponse(SdkResponse):
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this UpdateObsTargetAttributesResponse.
+        r"""Sets the target_id of this UpdateObsTargetAttributesResponse.
 
         绑定关系Id
 
@@ -80,7 +80,7 @@ class UpdateObsTargetAttributesResponse(SdkResponse):
 
     @property
     def attributes(self):
-        """Gets the attributes of this UpdateObsTargetAttributesResponse.
+        r"""Gets the attributes of this UpdateObsTargetAttributesResponse.
 
         :return: The attributes of this UpdateObsTargetAttributesResponse.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ObsTargetAttributes`
@@ -89,7 +89,7 @@ class UpdateObsTargetAttributesResponse(SdkResponse):
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this UpdateObsTargetAttributesResponse.
+        r"""Sets the attributes of this UpdateObsTargetAttributesResponse.
 
         :param attributes: The attributes of this UpdateObsTargetAttributesResponse.
         :type attributes: :class:`huaweicloudsdksfsturbo.v1.ObsTargetAttributes`
@@ -98,7 +98,7 @@ class UpdateObsTargetAttributesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateObsTargetAttributesResponse.
+        r"""Gets the x_request_id of this UpdateObsTargetAttributesResponse.
 
         :return: The x_request_id of this UpdateObsTargetAttributesResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class UpdateObsTargetAttributesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateObsTargetAttributesResponse.
+        r"""Sets the x_request_id of this UpdateObsTargetAttributesResponse.
 
         :param x_request_id: The x_request_id of this UpdateObsTargetAttributesResponse.
         :type x_request_id: str

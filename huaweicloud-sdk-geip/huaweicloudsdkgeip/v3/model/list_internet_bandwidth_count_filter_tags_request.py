@@ -25,7 +25,7 @@ class ListInternetBandwidthCountFilterTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListInternetBandwidthCountFilterTagsRequest
+        r"""ListInternetBandwidthCountFilterTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListInternetBandwidthCountFilterTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListInternetBandwidthCountFilterTagsRequest.
+        r"""Gets the body of this ListInternetBandwidthCountFilterTagsRequest.
 
         :return: The body of this ListInternetBandwidthCountFilterTagsRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.ListResourcesByTagsRequestBody`
@@ -52,7 +52,7 @@ class ListInternetBandwidthCountFilterTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListInternetBandwidthCountFilterTagsRequest.
+        r"""Sets the body of this ListInternetBandwidthCountFilterTagsRequest.
 
         :param body: The body of this ListInternetBandwidthCountFilterTagsRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.ListResourcesByTagsRequestBody`

@@ -25,7 +25,7 @@ class DataProcessReq:
     }
 
     def __init__(self, data_process_info=None):
-        """DataProcessReq
+        r"""DataProcessReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DataProcessReq:
 
     @property
     def data_process_info(self):
-        """Gets the data_process_info of this DataProcessReq.
+        r"""Gets the data_process_info of this DataProcessReq.
 
         指定任务数据加工规则请求体
 
@@ -54,7 +54,7 @@ class DataProcessReq:
 
     @data_process_info.setter
     def data_process_info(self, data_process_info):
-        """Sets the data_process_info of this DataProcessReq.
+        r"""Sets the data_process_info of this DataProcessReq.
 
         指定任务数据加工规则请求体
 

@@ -28,7 +28,7 @@ class CreateDatakeyWithoutPlaintextResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, cipher_text=None):
-        """CreateDatakeyWithoutPlaintextResponse
+        r"""CreateDatakeyWithoutPlaintextResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateDatakeyWithoutPlaintextResponse(SdkResponse):
 
     @property
     def key_id(self):
-        """Gets the key_id of this CreateDatakeyWithoutPlaintextResponse.
+        r"""Gets the key_id of this CreateDatakeyWithoutPlaintextResponse.
 
         密钥ID。
 
@@ -62,7 +62,7 @@ class CreateDatakeyWithoutPlaintextResponse(SdkResponse):
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this CreateDatakeyWithoutPlaintextResponse.
+        r"""Sets the key_id of this CreateDatakeyWithoutPlaintextResponse.
 
         密钥ID。
 
@@ -73,7 +73,7 @@ class CreateDatakeyWithoutPlaintextResponse(SdkResponse):
 
     @property
     def cipher_text(self):
-        """Gets the cipher_text of this CreateDatakeyWithoutPlaintextResponse.
+        r"""Gets the cipher_text of this CreateDatakeyWithoutPlaintextResponse.
 
         DEK密文16进制，两位表示1byte。
 
@@ -84,7 +84,7 @@ class CreateDatakeyWithoutPlaintextResponse(SdkResponse):
 
     @cipher_text.setter
     def cipher_text(self, cipher_text):
-        """Sets the cipher_text of this CreateDatakeyWithoutPlaintextResponse.
+        r"""Sets the cipher_text of this CreateDatakeyWithoutPlaintextResponse.
 
         DEK密文16进制，两位表示1byte。
 

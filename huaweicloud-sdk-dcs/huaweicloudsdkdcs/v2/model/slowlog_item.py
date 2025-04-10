@@ -41,7 +41,7 @@ class SlowlogItem:
     }
 
     def __init__(self, id=None, command=None, start_time=None, duration=None, shard_name=None, database_id=None, username=None, node_role=None, client_ip=None):
-        """SlowlogItem
+        r"""SlowlogItem
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class SlowlogItem:
 
     @property
     def id(self):
-        """Gets the id of this SlowlogItem.
+        r"""Gets the id of this SlowlogItem.
 
         慢日志的唯一标识
 
@@ -110,7 +110,7 @@ class SlowlogItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SlowlogItem.
+        r"""Sets the id of this SlowlogItem.
 
         慢日志的唯一标识
 
@@ -121,7 +121,7 @@ class SlowlogItem:
 
     @property
     def command(self):
-        """Gets the command of this SlowlogItem.
+        r"""Gets the command of this SlowlogItem.
 
         慢命令
 
@@ -132,7 +132,7 @@ class SlowlogItem:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this SlowlogItem.
+        r"""Sets the command of this SlowlogItem.
 
         慢命令
 
@@ -143,7 +143,7 @@ class SlowlogItem:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SlowlogItem.
+        r"""Gets the start_time of this SlowlogItem.
 
         执行开始时间,格式为“2020-06-19T07:06:07Z”
 
@@ -154,7 +154,7 @@ class SlowlogItem:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SlowlogItem.
+        r"""Sets the start_time of this SlowlogItem.
 
         执行开始时间,格式为“2020-06-19T07:06:07Z”
 
@@ -165,7 +165,7 @@ class SlowlogItem:
 
     @property
     def duration(self):
-        """Gets the duration of this SlowlogItem.
+        r"""Gets the duration of this SlowlogItem.
 
         持续时间，单位是ms
 
@@ -176,7 +176,7 @@ class SlowlogItem:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this SlowlogItem.
+        r"""Sets the duration of this SlowlogItem.
 
         持续时间，单位是ms
 
@@ -187,7 +187,7 @@ class SlowlogItem:
 
     @property
     def shard_name(self):
-        """Gets the shard_name of this SlowlogItem.
+        r"""Gets the shard_name of this SlowlogItem.
 
         慢命令所在的分片名称，仅在实例类型为集群时支持
 
@@ -198,7 +198,7 @@ class SlowlogItem:
 
     @shard_name.setter
     def shard_name(self, shard_name):
-        """Sets the shard_name of this SlowlogItem.
+        r"""Sets the shard_name of this SlowlogItem.
 
         慢命令所在的分片名称，仅在实例类型为集群时支持
 
@@ -209,7 +209,7 @@ class SlowlogItem:
 
     @property
     def database_id(self):
-        """Gets the database_id of this SlowlogItem.
+        r"""Gets the database_id of this SlowlogItem.
 
         数据库id，当前只对指定客户开放
 
@@ -220,7 +220,7 @@ class SlowlogItem:
 
     @database_id.setter
     def database_id(self, database_id):
-        """Sets the database_id of this SlowlogItem.
+        r"""Sets the database_id of this SlowlogItem.
 
         数据库id，当前只对指定客户开放
 
@@ -231,7 +231,7 @@ class SlowlogItem:
 
     @property
     def username(self):
-        """Gets the username of this SlowlogItem.
+        r"""Gets the username of this SlowlogItem.
 
         操作慢日志的账号名称，当前只对指定客户开放
 
@@ -242,7 +242,7 @@ class SlowlogItem:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this SlowlogItem.
+        r"""Sets the username of this SlowlogItem.
 
         操作慢日志的账号名称，当前只对指定客户开放
 
@@ -253,7 +253,7 @@ class SlowlogItem:
 
     @property
     def node_role(self):
-        """Gets the node_role of this SlowlogItem.
+        r"""Gets the node_role of this SlowlogItem.
 
         **参数解释**： 节点类型。 **取值范围**： 不涉及。 
 
@@ -264,7 +264,7 @@ class SlowlogItem:
 
     @node_role.setter
     def node_role(self, node_role):
-        """Sets the node_role of this SlowlogItem.
+        r"""Sets the node_role of this SlowlogItem.
 
         **参数解释**： 节点类型。 **取值范围**： 不涉及。 
 
@@ -275,7 +275,7 @@ class SlowlogItem:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this SlowlogItem.
+        r"""Gets the client_ip of this SlowlogItem.
 
         **参数解释**： 客户端IP地址。 **取值范围**： 不涉及。 
 
@@ -286,7 +286,7 @@ class SlowlogItem:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this SlowlogItem.
+        r"""Sets the client_ip of this SlowlogItem.
 
         **参数解释**： 客户端IP地址。 **取值范围**： 不涉及。 
 

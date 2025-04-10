@@ -29,7 +29,7 @@ class ExportClientConfigResponse(SdkResponse):
     }
 
     def __init__(self, client_config=None, header_response_token=None):
-        """ExportClientConfigResponse
+        r"""ExportClientConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -52,7 +52,7 @@ class ExportClientConfigResponse(SdkResponse):
 
     @property
     def client_config(self):
-        """Gets the client_config of this ExportClientConfigResponse.
+        r"""Gets the client_config of this ExportClientConfigResponse.
 
         客户端配置
 
@@ -63,7 +63,7 @@ class ExportClientConfigResponse(SdkResponse):
 
     @client_config.setter
     def client_config(self, client_config):
-        """Sets the client_config of this ExportClientConfigResponse.
+        r"""Sets the client_config of this ExportClientConfigResponse.
 
         客户端配置
 
@@ -74,7 +74,7 @@ class ExportClientConfigResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this ExportClientConfigResponse.
+        r"""Gets the header_response_token of this ExportClientConfigResponse.
 
         :return: The header_response_token of this ExportClientConfigResponse.
         :rtype: str
@@ -83,7 +83,7 @@ class ExportClientConfigResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this ExportClientConfigResponse.
+        r"""Sets the header_response_token of this ExportClientConfigResponse.
 
         :param header_response_token: The header_response_token of this ExportClientConfigResponse.
         :type header_response_token: str

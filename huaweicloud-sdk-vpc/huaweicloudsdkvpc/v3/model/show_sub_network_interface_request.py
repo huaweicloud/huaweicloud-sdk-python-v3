@@ -25,7 +25,7 @@ class ShowSubNetworkInterfaceRequest:
     }
 
     def __init__(self, sub_network_interface_id=None):
-        """ShowSubNetworkInterfaceRequest
+        r"""ShowSubNetworkInterfaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSubNetworkInterfaceRequest:
 
     @property
     def sub_network_interface_id(self):
-        """Gets the sub_network_interface_id of this ShowSubNetworkInterfaceRequest.
+        r"""Gets the sub_network_interface_id of this ShowSubNetworkInterfaceRequest.
 
         辅助弹性网卡的唯一标识
 
@@ -53,7 +53,7 @@ class ShowSubNetworkInterfaceRequest:
 
     @sub_network_interface_id.setter
     def sub_network_interface_id(self, sub_network_interface_id):
-        """Sets the sub_network_interface_id of this ShowSubNetworkInterfaceRequest.
+        r"""Sets the sub_network_interface_id of this ShowSubNetworkInterfaceRequest.
 
         辅助弹性网卡的唯一标识
 

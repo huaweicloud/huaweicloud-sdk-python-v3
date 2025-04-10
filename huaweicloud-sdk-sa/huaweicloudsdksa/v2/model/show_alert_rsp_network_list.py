@@ -43,7 +43,7 @@ class ShowAlertRspNetworkList:
     }
 
     def __init__(self, direction=None, protocol=None, src_ip=None, src_port=None, src_domain=None, dest_ip=None, dest_port=None, dest_domain=None, src_geo=None, dest_geo=None):
-        """ShowAlertRspNetworkList
+        r"""ShowAlertRspNetworkList
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ShowAlertRspNetworkList:
 
     @property
     def direction(self):
-        """Gets the direction of this ShowAlertRspNetworkList.
+        r"""Gets the direction of this ShowAlertRspNetworkList.
 
         方向，取值范围：IN | OUT
 
@@ -117,7 +117,7 @@ class ShowAlertRspNetworkList:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this ShowAlertRspNetworkList.
+        r"""Sets the direction of this ShowAlertRspNetworkList.
 
         方向，取值范围：IN | OUT
 
@@ -128,7 +128,7 @@ class ShowAlertRspNetworkList:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ShowAlertRspNetworkList.
+        r"""Gets the protocol of this ShowAlertRspNetworkList.
 
         协议，参考：IANA registered name
 
@@ -139,7 +139,7 @@ class ShowAlertRspNetworkList:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ShowAlertRspNetworkList.
+        r"""Sets the protocol of this ShowAlertRspNetworkList.
 
         协议，参考：IANA registered name
 
@@ -150,7 +150,7 @@ class ShowAlertRspNetworkList:
 
     @property
     def src_ip(self):
-        """Gets the src_ip of this ShowAlertRspNetworkList.
+        r"""Gets the src_ip of this ShowAlertRspNetworkList.
 
         源IP地址
 
@@ -161,7 +161,7 @@ class ShowAlertRspNetworkList:
 
     @src_ip.setter
     def src_ip(self, src_ip):
-        """Sets the src_ip of this ShowAlertRspNetworkList.
+        r"""Sets the src_ip of this ShowAlertRspNetworkList.
 
         源IP地址
 
@@ -172,7 +172,7 @@ class ShowAlertRspNetworkList:
 
     @property
     def src_port(self):
-        """Gets the src_port of this ShowAlertRspNetworkList.
+        r"""Gets the src_port of this ShowAlertRspNetworkList.
 
         源端口，0–65535
 
@@ -183,7 +183,7 @@ class ShowAlertRspNetworkList:
 
     @src_port.setter
     def src_port(self, src_port):
-        """Sets the src_port of this ShowAlertRspNetworkList.
+        r"""Sets the src_port of this ShowAlertRspNetworkList.
 
         源端口，0–65535
 
@@ -194,7 +194,7 @@ class ShowAlertRspNetworkList:
 
     @property
     def src_domain(self):
-        """Gets the src_domain of this ShowAlertRspNetworkList.
+        r"""Gets the src_domain of this ShowAlertRspNetworkList.
 
         源域名，最大128个字符
 
@@ -205,7 +205,7 @@ class ShowAlertRspNetworkList:
 
     @src_domain.setter
     def src_domain(self, src_domain):
-        """Sets the src_domain of this ShowAlertRspNetworkList.
+        r"""Sets the src_domain of this ShowAlertRspNetworkList.
 
         源域名，最大128个字符
 
@@ -216,7 +216,7 @@ class ShowAlertRspNetworkList:
 
     @property
     def dest_ip(self):
-        """Gets the dest_ip of this ShowAlertRspNetworkList.
+        r"""Gets the dest_ip of this ShowAlertRspNetworkList.
 
         目的IP地址
 
@@ -227,7 +227,7 @@ class ShowAlertRspNetworkList:
 
     @dest_ip.setter
     def dest_ip(self, dest_ip):
-        """Sets the dest_ip of this ShowAlertRspNetworkList.
+        r"""Sets the dest_ip of this ShowAlertRspNetworkList.
 
         目的IP地址
 
@@ -238,7 +238,7 @@ class ShowAlertRspNetworkList:
 
     @property
     def dest_port(self):
-        """Gets the dest_port of this ShowAlertRspNetworkList.
+        r"""Gets the dest_port of this ShowAlertRspNetworkList.
 
         目的端口，0–65535
 
@@ -249,7 +249,7 @@ class ShowAlertRspNetworkList:
 
     @dest_port.setter
     def dest_port(self, dest_port):
-        """Sets the dest_port of this ShowAlertRspNetworkList.
+        r"""Sets the dest_port of this ShowAlertRspNetworkList.
 
         目的端口，0–65535
 
@@ -260,7 +260,7 @@ class ShowAlertRspNetworkList:
 
     @property
     def dest_domain(self):
-        """Gets the dest_domain of this ShowAlertRspNetworkList.
+        r"""Gets the dest_domain of this ShowAlertRspNetworkList.
 
         目的域名，最大128个字符
 
@@ -271,7 +271,7 @@ class ShowAlertRspNetworkList:
 
     @dest_domain.setter
     def dest_domain(self, dest_domain):
-        """Sets the dest_domain of this ShowAlertRspNetworkList.
+        r"""Sets the dest_domain of this ShowAlertRspNetworkList.
 
         目的域名，最大128个字符
 
@@ -282,7 +282,7 @@ class ShowAlertRspNetworkList:
 
     @property
     def src_geo(self):
-        """Gets the src_geo of this ShowAlertRspNetworkList.
+        r"""Gets the src_geo of this ShowAlertRspNetworkList.
 
         源IP的地理位置信息
 
@@ -293,7 +293,7 @@ class ShowAlertRspNetworkList:
 
     @src_geo.setter
     def src_geo(self, src_geo):
-        """Sets the src_geo of this ShowAlertRspNetworkList.
+        r"""Sets the src_geo of this ShowAlertRspNetworkList.
 
         源IP的地理位置信息
 
@@ -304,7 +304,7 @@ class ShowAlertRspNetworkList:
 
     @property
     def dest_geo(self):
-        """Gets the dest_geo of this ShowAlertRspNetworkList.
+        r"""Gets the dest_geo of this ShowAlertRspNetworkList.
 
         目的IP的地理位置信息
 
@@ -315,7 +315,7 @@ class ShowAlertRspNetworkList:
 
     @dest_geo.setter
     def dest_geo(self, dest_geo):
-        """Sets the dest_geo of this ShowAlertRspNetworkList.
+        r"""Sets the dest_geo of this ShowAlertRspNetworkList.
 
         目的IP的地理位置信息
 

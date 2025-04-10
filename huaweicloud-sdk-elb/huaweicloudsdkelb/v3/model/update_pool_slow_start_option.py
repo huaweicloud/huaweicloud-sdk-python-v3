@@ -27,7 +27,7 @@ class UpdatePoolSlowStartOption:
     }
 
     def __init__(self, enable=None, duration=None):
-        """UpdatePoolSlowStartOption
+        r"""UpdatePoolSlowStartOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdatePoolSlowStartOption:
 
     @property
     def enable(self):
-        """Gets the enable of this UpdatePoolSlowStartOption.
+        r"""Gets the enable of this UpdatePoolSlowStartOption.
 
         慢启动的开关，默认值：false； true：开启； false：关闭 
 
@@ -61,7 +61,7 @@ class UpdatePoolSlowStartOption:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this UpdatePoolSlowStartOption.
+        r"""Sets the enable of this UpdatePoolSlowStartOption.
 
         慢启动的开关，默认值：false； true：开启； false：关闭 
 
@@ -72,7 +72,7 @@ class UpdatePoolSlowStartOption:
 
     @property
     def duration(self):
-        """Gets the duration of this UpdatePoolSlowStartOption.
+        r"""Gets the duration of this UpdatePoolSlowStartOption.
 
         慢启动的持续时间，单位：s。默认：30； 取值范围：30~1200
 
@@ -83,7 +83,7 @@ class UpdatePoolSlowStartOption:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this UpdatePoolSlowStartOption.
+        r"""Sets the duration of this UpdatePoolSlowStartOption.
 
         慢启动的持续时间，单位：s。默认：30； 取值范围：30~1200
 

@@ -32,7 +32,7 @@ class SearchQosParticipantsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, limit=None, offset=None, data=None):
-        """SearchQosParticipantsResponse
+        r"""SearchQosParticipantsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchQosParticipantsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchQosParticipantsResponse.
+        r"""Gets the count of this SearchQosParticipantsResponse.
 
         总记录数。
 
@@ -76,7 +76,7 @@ class SearchQosParticipantsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchQosParticipantsResponse.
+        r"""Sets the count of this SearchQosParticipantsResponse.
 
         总记录数。
 
@@ -87,7 +87,7 @@ class SearchQosParticipantsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchQosParticipantsResponse.
+        r"""Gets the limit of this SearchQosParticipantsResponse.
 
         查询条目数量。
 
@@ -98,7 +98,7 @@ class SearchQosParticipantsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchQosParticipantsResponse.
+        r"""Sets the limit of this SearchQosParticipantsResponse.
 
         查询条目数量。
 
@@ -109,7 +109,7 @@ class SearchQosParticipantsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchQosParticipantsResponse.
+        r"""Gets the offset of this SearchQosParticipantsResponse.
 
         查询偏移量。
 
@@ -120,7 +120,7 @@ class SearchQosParticipantsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchQosParticipantsResponse.
+        r"""Sets the offset of this SearchQosParticipantsResponse.
 
         查询偏移量。
 
@@ -131,7 +131,7 @@ class SearchQosParticipantsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchQosParticipantsResponse.
+        r"""Gets the data of this SearchQosParticipantsResponse.
 
         会议与会者QoS告警列表。
 
@@ -142,7 +142,7 @@ class SearchQosParticipantsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchQosParticipantsResponse.
+        r"""Sets the data of this SearchQosParticipantsResponse.
 
         会议与会者QoS告警列表。
 

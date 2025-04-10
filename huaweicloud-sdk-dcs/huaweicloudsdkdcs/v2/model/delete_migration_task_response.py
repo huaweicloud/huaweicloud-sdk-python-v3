@@ -26,7 +26,7 @@ class DeleteMigrationTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id_list=None):
-        """DeleteMigrationTaskResponse
+        r"""DeleteMigrationTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteMigrationTaskResponse(SdkResponse):
 
     @property
     def task_id_list(self):
-        """Gets the task_id_list of this DeleteMigrationTaskResponse.
+        r"""Gets the task_id_list of this DeleteMigrationTaskResponse.
 
         删除的迁移任务ID列表。
 
@@ -55,7 +55,7 @@ class DeleteMigrationTaskResponse(SdkResponse):
 
     @task_id_list.setter
     def task_id_list(self, task_id_list):
-        """Sets the task_id_list of this DeleteMigrationTaskResponse.
+        r"""Sets the task_id_list of this DeleteMigrationTaskResponse.
 
         删除的迁移任务ID列表。
 

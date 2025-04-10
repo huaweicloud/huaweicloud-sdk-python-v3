@@ -27,7 +27,7 @@ class CreateServersRequestBody:
     }
 
     def __init__(self, dry_run=None, server=None):
-        """CreateServersRequestBody
+        r"""CreateServersRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateServersRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this CreateServersRequestBody.
+        r"""Gets the dry_run of this CreateServersRequestBody.
 
         是否只预检此次请求。  true：发送检查请求，不会创建实例。检查项包括是否填写了必需参数、请求格式等。 如果检查不通过，则返回对应错误。 如果检查通过，则返回202状态码。 false：发送正常请求，通过检查后并且执行创建云服务器请求。
 
@@ -60,7 +60,7 @@ class CreateServersRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this CreateServersRequestBody.
+        r"""Sets the dry_run of this CreateServersRequestBody.
 
         是否只预检此次请求。  true：发送检查请求，不会创建实例。检查项包括是否填写了必需参数、请求格式等。 如果检查不通过，则返回对应错误。 如果检查通过，则返回202状态码。 false：发送正常请求，通过检查后并且执行创建云服务器请求。
 
@@ -71,7 +71,7 @@ class CreateServersRequestBody:
 
     @property
     def server(self):
-        """Gets the server of this CreateServersRequestBody.
+        r"""Gets the server of this CreateServersRequestBody.
 
         :return: The server of this CreateServersRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.PrePaidServer`
@@ -80,7 +80,7 @@ class CreateServersRequestBody:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this CreateServersRequestBody.
+        r"""Sets the server of this CreateServersRequestBody.
 
         :param server: The server of this CreateServersRequestBody.
         :type server: :class:`huaweicloudsdkecs.v2.PrePaidServer`

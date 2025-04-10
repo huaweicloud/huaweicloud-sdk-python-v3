@@ -27,7 +27,7 @@ class NovaServerInterfaceFixedIp:
     }
 
     def __init__(self, ip_address=None, subnet_id=None):
-        """NovaServerInterfaceFixedIp
+        r"""NovaServerInterfaceFixedIp
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NovaServerInterfaceFixedIp:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this NovaServerInterfaceFixedIp.
+        r"""Gets the ip_address of this NovaServerInterfaceFixedIp.
 
         网卡私网IP信息。
 
@@ -59,7 +59,7 @@ class NovaServerInterfaceFixedIp:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this NovaServerInterfaceFixedIp.
+        r"""Sets the ip_address of this NovaServerInterfaceFixedIp.
 
         网卡私网IP信息。
 
@@ -70,7 +70,7 @@ class NovaServerInterfaceFixedIp:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this NovaServerInterfaceFixedIp.
+        r"""Gets the subnet_id of this NovaServerInterfaceFixedIp.
 
         网卡私网IP对应子网信息。
 
@@ -81,7 +81,7 @@ class NovaServerInterfaceFixedIp:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this NovaServerInterfaceFixedIp.
+        r"""Sets the subnet_id of this NovaServerInterfaceFixedIp.
 
         网卡私网IP对应子网信息。
 

@@ -27,7 +27,7 @@ class RelatedInstance:
     }
 
     def __init__(self, id=None, type=None):
-        """RelatedInstance
+        r"""RelatedInstance
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RelatedInstance:
 
     @property
     def id(self):
-        """Gets the id of this RelatedInstance.
+        r"""Gets the id of this RelatedInstance.
 
         关联实例id。
 
@@ -59,7 +59,7 @@ class RelatedInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RelatedInstance.
+        r"""Sets the id of this RelatedInstance.
 
         关联实例id。
 
@@ -70,7 +70,7 @@ class RelatedInstance:
 
     @property
     def type(self):
-        """Gets the type of this RelatedInstance.
+        r"""Gets the type of this RelatedInstance.
 
         关联实例类型。  - “replica_of”对应于“主实例”。 - “replica”对应于“只读实例”。
 
@@ -81,7 +81,7 @@ class RelatedInstance:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RelatedInstance.
+        r"""Sets the type of this RelatedInstance.
 
         关联实例类型。  - “replica_of”对应于“主实例”。 - “replica”对应于“只读实例”。
 

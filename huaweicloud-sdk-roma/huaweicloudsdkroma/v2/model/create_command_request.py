@@ -29,7 +29,7 @@ class CreateCommandRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, body=None):
-        """CreateCommandRequest
+        r"""CreateCommandRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateCommandRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateCommandRequest.
+        r"""Gets the instance_id of this CreateCommandRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class CreateCommandRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateCommandRequest.
+        r"""Sets the instance_id of this CreateCommandRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class CreateCommandRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this CreateCommandRequest.
+        r"""Gets the service_id of this CreateCommandRequest.
 
         服务ID
 
@@ -88,7 +88,7 @@ class CreateCommandRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this CreateCommandRequest.
+        r"""Sets the service_id of this CreateCommandRequest.
 
         服务ID
 
@@ -99,7 +99,7 @@ class CreateCommandRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCommandRequest.
+        r"""Gets the body of this CreateCommandRequest.
 
         :return: The body of this CreateCommandRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateCommandRequestBody`
@@ -108,7 +108,7 @@ class CreateCommandRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCommandRequest.
+        r"""Sets the body of this CreateCommandRequest.
 
         :param body: The body of this CreateCommandRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateCommandRequestBody`

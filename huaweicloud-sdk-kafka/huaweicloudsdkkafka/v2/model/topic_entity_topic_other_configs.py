@@ -35,7 +35,7 @@ class TopicEntityTopicOtherConfigs:
     }
 
     def __init__(self, name=None, valid_values=None, default_value=None, config_type=None, value=None, value_type=None):
-        """TopicEntityTopicOtherConfigs
+        r"""TopicEntityTopicOtherConfigs
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class TopicEntityTopicOtherConfigs:
 
     @property
     def name(self):
-        """Gets the name of this TopicEntityTopicOtherConfigs.
+        r"""Gets the name of this TopicEntityTopicOtherConfigs.
 
         配置名称
 
@@ -89,7 +89,7 @@ class TopicEntityTopicOtherConfigs:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TopicEntityTopicOtherConfigs.
+        r"""Sets the name of this TopicEntityTopicOtherConfigs.
 
         配置名称
 
@@ -100,7 +100,7 @@ class TopicEntityTopicOtherConfigs:
 
     @property
     def valid_values(self):
-        """Gets the valid_values of this TopicEntityTopicOtherConfigs.
+        r"""Gets the valid_values of this TopicEntityTopicOtherConfigs.
 
         配置有效值
 
@@ -111,7 +111,7 @@ class TopicEntityTopicOtherConfigs:
 
     @valid_values.setter
     def valid_values(self, valid_values):
-        """Sets the valid_values of this TopicEntityTopicOtherConfigs.
+        r"""Sets the valid_values of this TopicEntityTopicOtherConfigs.
 
         配置有效值
 
@@ -122,7 +122,7 @@ class TopicEntityTopicOtherConfigs:
 
     @property
     def default_value(self):
-        """Gets the default_value of this TopicEntityTopicOtherConfigs.
+        r"""Gets the default_value of this TopicEntityTopicOtherConfigs.
 
         配置默认值
 
@@ -133,7 +133,7 @@ class TopicEntityTopicOtherConfigs:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this TopicEntityTopicOtherConfigs.
+        r"""Sets the default_value of this TopicEntityTopicOtherConfigs.
 
         配置默认值
 
@@ -144,7 +144,7 @@ class TopicEntityTopicOtherConfigs:
 
     @property
     def config_type(self):
-        """Gets the config_type of this TopicEntityTopicOtherConfigs.
+        r"""Gets the config_type of this TopicEntityTopicOtherConfigs.
 
         配置类型：dynamic/static
 
@@ -155,7 +155,7 @@ class TopicEntityTopicOtherConfigs:
 
     @config_type.setter
     def config_type(self, config_type):
-        """Sets the config_type of this TopicEntityTopicOtherConfigs.
+        r"""Sets the config_type of this TopicEntityTopicOtherConfigs.
 
         配置类型：dynamic/static
 
@@ -166,7 +166,7 @@ class TopicEntityTopicOtherConfigs:
 
     @property
     def value(self):
-        """Gets the value of this TopicEntityTopicOtherConfigs.
+        r"""Gets the value of this TopicEntityTopicOtherConfigs.
 
         配置值
 
@@ -177,7 +177,7 @@ class TopicEntityTopicOtherConfigs:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TopicEntityTopicOtherConfigs.
+        r"""Sets the value of this TopicEntityTopicOtherConfigs.
 
         配置值
 
@@ -188,7 +188,7 @@ class TopicEntityTopicOtherConfigs:
 
     @property
     def value_type(self):
-        """Gets the value_type of this TopicEntityTopicOtherConfigs.
+        r"""Gets the value_type of this TopicEntityTopicOtherConfigs.
 
         配置值类型
 
@@ -199,7 +199,7 @@ class TopicEntityTopicOtherConfigs:
 
     @value_type.setter
     def value_type(self, value_type):
-        """Sets the value_type of this TopicEntityTopicOtherConfigs.
+        r"""Sets the value_type of this TopicEntityTopicOtherConfigs.
 
         配置值类型
 

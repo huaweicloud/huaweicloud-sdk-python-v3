@@ -26,7 +26,7 @@ class ListSecurityDatasourceActionsResponse(SdkResponse):
     }
 
     def __init__(self, permission_actions=None):
-        """ListSecurityDatasourceActionsResponse
+        r"""ListSecurityDatasourceActionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSecurityDatasourceActionsResponse(SdkResponse):
 
     @property
     def permission_actions(self):
-        """Gets the permission_actions of this ListSecurityDatasourceActionsResponse.
+        r"""Gets the permission_actions of this ListSecurityDatasourceActionsResponse.
 
         权限操作列表
 
@@ -55,7 +55,7 @@ class ListSecurityDatasourceActionsResponse(SdkResponse):
 
     @permission_actions.setter
     def permission_actions(self, permission_actions):
-        """Sets the permission_actions of this ListSecurityDatasourceActionsResponse.
+        r"""Sets the permission_actions of this ListSecurityDatasourceActionsResponse.
 
         权限操作列表
 

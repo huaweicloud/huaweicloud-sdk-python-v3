@@ -45,7 +45,7 @@ class HealthReportSqlTemplate:
     }
 
     def __init__(self, template_id=None, template=None, databases=None, times=None, avg_query_time=None, max_query_time=None, avg_rows_examined=None, max_rows_examined=None, sum_rows_examined=None, avg_rows_sent=None, max_rows_sent=None):
-        """HealthReportSqlTemplate
+        r"""HealthReportSqlTemplate
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class HealthReportSqlTemplate:
 
     @property
     def template_id(self):
-        """Gets the template_id of this HealthReportSqlTemplate.
+        r"""Gets the template_id of this HealthReportSqlTemplate.
 
         模版ID。
 
@@ -113,7 +113,7 @@ class HealthReportSqlTemplate:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this HealthReportSqlTemplate.
+        r"""Sets the template_id of this HealthReportSqlTemplate.
 
         模版ID。
 
@@ -124,7 +124,7 @@ class HealthReportSqlTemplate:
 
     @property
     def template(self):
-        """Gets the template of this HealthReportSqlTemplate.
+        r"""Gets the template of this HealthReportSqlTemplate.
 
         模版内容。
 
@@ -135,7 +135,7 @@ class HealthReportSqlTemplate:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this HealthReportSqlTemplate.
+        r"""Sets the template of this HealthReportSqlTemplate.
 
         模版内容。
 
@@ -146,7 +146,7 @@ class HealthReportSqlTemplate:
 
     @property
     def databases(self):
-        """Gets the databases of this HealthReportSqlTemplate.
+        r"""Gets the databases of this HealthReportSqlTemplate.
 
         数据库列表。
 
@@ -157,7 +157,7 @@ class HealthReportSqlTemplate:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this HealthReportSqlTemplate.
+        r"""Sets the databases of this HealthReportSqlTemplate.
 
         数据库列表。
 
@@ -168,7 +168,7 @@ class HealthReportSqlTemplate:
 
     @property
     def times(self):
-        """Gets the times of this HealthReportSqlTemplate.
+        r"""Gets the times of this HealthReportSqlTemplate.
 
         执行次数。
 
@@ -179,7 +179,7 @@ class HealthReportSqlTemplate:
 
     @times.setter
     def times(self, times):
-        """Sets the times of this HealthReportSqlTemplate.
+        r"""Sets the times of this HealthReportSqlTemplate.
 
         执行次数。
 
@@ -190,7 +190,7 @@ class HealthReportSqlTemplate:
 
     @property
     def avg_query_time(self):
-        """Gets the avg_query_time of this HealthReportSqlTemplate.
+        r"""Gets the avg_query_time of this HealthReportSqlTemplate.
 
         平均执行时间。
 
@@ -201,7 +201,7 @@ class HealthReportSqlTemplate:
 
     @avg_query_time.setter
     def avg_query_time(self, avg_query_time):
-        """Sets the avg_query_time of this HealthReportSqlTemplate.
+        r"""Sets the avg_query_time of this HealthReportSqlTemplate.
 
         平均执行时间。
 
@@ -212,7 +212,7 @@ class HealthReportSqlTemplate:
 
     @property
     def max_query_time(self):
-        """Gets the max_query_time of this HealthReportSqlTemplate.
+        r"""Gets the max_query_time of this HealthReportSqlTemplate.
 
         最大执行时间。
 
@@ -223,7 +223,7 @@ class HealthReportSqlTemplate:
 
     @max_query_time.setter
     def max_query_time(self, max_query_time):
-        """Sets the max_query_time of this HealthReportSqlTemplate.
+        r"""Sets the max_query_time of this HealthReportSqlTemplate.
 
         最大执行时间。
 
@@ -234,7 +234,7 @@ class HealthReportSqlTemplate:
 
     @property
     def avg_rows_examined(self):
-        """Gets the avg_rows_examined of this HealthReportSqlTemplate.
+        r"""Gets the avg_rows_examined of this HealthReportSqlTemplate.
 
         平均扫描行数。
 
@@ -245,7 +245,7 @@ class HealthReportSqlTemplate:
 
     @avg_rows_examined.setter
     def avg_rows_examined(self, avg_rows_examined):
-        """Sets the avg_rows_examined of this HealthReportSqlTemplate.
+        r"""Sets the avg_rows_examined of this HealthReportSqlTemplate.
 
         平均扫描行数。
 
@@ -256,7 +256,7 @@ class HealthReportSqlTemplate:
 
     @property
     def max_rows_examined(self):
-        """Gets the max_rows_examined of this HealthReportSqlTemplate.
+        r"""Gets the max_rows_examined of this HealthReportSqlTemplate.
 
         最大扫描行数。
 
@@ -267,7 +267,7 @@ class HealthReportSqlTemplate:
 
     @max_rows_examined.setter
     def max_rows_examined(self, max_rows_examined):
-        """Sets the max_rows_examined of this HealthReportSqlTemplate.
+        r"""Sets the max_rows_examined of this HealthReportSqlTemplate.
 
         最大扫描行数。
 
@@ -278,7 +278,7 @@ class HealthReportSqlTemplate:
 
     @property
     def sum_rows_examined(self):
-        """Gets the sum_rows_examined of this HealthReportSqlTemplate.
+        r"""Gets the sum_rows_examined of this HealthReportSqlTemplate.
 
         总扫描行数。
 
@@ -289,7 +289,7 @@ class HealthReportSqlTemplate:
 
     @sum_rows_examined.setter
     def sum_rows_examined(self, sum_rows_examined):
-        """Sets the sum_rows_examined of this HealthReportSqlTemplate.
+        r"""Sets the sum_rows_examined of this HealthReportSqlTemplate.
 
         总扫描行数。
 
@@ -300,7 +300,7 @@ class HealthReportSqlTemplate:
 
     @property
     def avg_rows_sent(self):
-        """Gets the avg_rows_sent of this HealthReportSqlTemplate.
+        r"""Gets the avg_rows_sent of this HealthReportSqlTemplate.
 
         平均返回行数。
 
@@ -311,7 +311,7 @@ class HealthReportSqlTemplate:
 
     @avg_rows_sent.setter
     def avg_rows_sent(self, avg_rows_sent):
-        """Sets the avg_rows_sent of this HealthReportSqlTemplate.
+        r"""Sets the avg_rows_sent of this HealthReportSqlTemplate.
 
         平均返回行数。
 
@@ -322,7 +322,7 @@ class HealthReportSqlTemplate:
 
     @property
     def max_rows_sent(self):
-        """Gets the max_rows_sent of this HealthReportSqlTemplate.
+        r"""Gets the max_rows_sent of this HealthReportSqlTemplate.
 
         最大返回行数。
 
@@ -333,7 +333,7 @@ class HealthReportSqlTemplate:
 
     @max_rows_sent.setter
     def max_rows_sent(self, max_rows_sent):
-        """Sets the max_rows_sent of this HealthReportSqlTemplate.
+        r"""Sets the max_rows_sent of this HealthReportSqlTemplate.
 
         最大返回行数。
 

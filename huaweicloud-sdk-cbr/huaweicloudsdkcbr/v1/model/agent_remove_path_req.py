@@ -25,7 +25,7 @@ class AgentRemovePathReq:
     }
 
     def __init__(self, remove_path=None):
-        """AgentRemovePathReq
+        r"""AgentRemovePathReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AgentRemovePathReq:
 
     @property
     def remove_path(self):
-        """Gets the remove_path of this AgentRemovePathReq.
+        r"""Gets the remove_path of this AgentRemovePathReq.
 
         移除备份路径详情 
 
@@ -53,7 +53,7 @@ class AgentRemovePathReq:
 
     @remove_path.setter
     def remove_path(self, remove_path):
-        """Sets the remove_path of this AgentRemovePathReq.
+        r"""Sets the remove_path of this AgentRemovePathReq.
 
         移除备份路径详情 
 

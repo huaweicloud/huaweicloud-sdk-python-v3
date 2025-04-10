@@ -24,7 +24,7 @@ class UpdateMembesRoleV4Response(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateMembesRoleV4Response
+        r"""UpdateMembesRoleV4Response
 
         The model defined in huaweicloud sdk
 

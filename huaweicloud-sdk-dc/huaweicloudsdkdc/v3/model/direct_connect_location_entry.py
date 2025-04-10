@@ -51,7 +51,7 @@ class DirectConnectLocationEntry:
     }
 
     def __init__(self, id=None, name=None, region_id=None, site_code=None, address=None, locales=None, provider_list=None, public_border_group=None, latitude=None, longitude=None, description=None, created_time=None, updated_time=None, available_port_speeds=None):
-        """DirectConnectLocationEntry
+        r"""DirectConnectLocationEntry
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class DirectConnectLocationEntry:
 
     @property
     def id(self):
-        """Gets the id of this DirectConnectLocationEntry.
+        r"""Gets the id of this DirectConnectLocationEntry.
 
         专线接入站点资源的ID
 
@@ -145,7 +145,7 @@ class DirectConnectLocationEntry:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DirectConnectLocationEntry.
+        r"""Sets the id of this DirectConnectLocationEntry.
 
         专线接入站点资源的ID
 
@@ -156,7 +156,7 @@ class DirectConnectLocationEntry:
 
     @property
     def name(self):
-        """Gets the name of this DirectConnectLocationEntry.
+        r"""Gets the name of this DirectConnectLocationEntry.
 
         专线接入点的名称
 
@@ -167,7 +167,7 @@ class DirectConnectLocationEntry:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DirectConnectLocationEntry.
+        r"""Sets the name of this DirectConnectLocationEntry.
 
         专线接入点的名称
 
@@ -178,7 +178,7 @@ class DirectConnectLocationEntry:
 
     @property
     def region_id(self):
-        """Gets the region_id of this DirectConnectLocationEntry.
+        r"""Gets the region_id of this DirectConnectLocationEntry.
 
         Location所属Region
 
@@ -189,7 +189,7 @@ class DirectConnectLocationEntry:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this DirectConnectLocationEntry.
+        r"""Sets the region_id of this DirectConnectLocationEntry.
 
         Location所属Region
 
@@ -200,7 +200,7 @@ class DirectConnectLocationEntry:
 
     @property
     def site_code(self):
-        """Gets the site_code of this DirectConnectLocationEntry.
+        r"""Gets the site_code of this DirectConnectLocationEntry.
 
         专线接入点对应的站点编码
 
@@ -211,7 +211,7 @@ class DirectConnectLocationEntry:
 
     @site_code.setter
     def site_code(self, site_code):
-        """Sets the site_code of this DirectConnectLocationEntry.
+        r"""Sets the site_code of this DirectConnectLocationEntry.
 
         专线接入点对应的站点编码
 
@@ -222,7 +222,7 @@ class DirectConnectLocationEntry:
 
     @property
     def address(self):
-        """Gets the address of this DirectConnectLocationEntry.
+        r"""Gets the address of this DirectConnectLocationEntry.
 
         :return: The address of this DirectConnectLocationEntry.
         :rtype: :class:`huaweicloudsdkdc.v3.AddressBody`
@@ -231,7 +231,7 @@ class DirectConnectLocationEntry:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this DirectConnectLocationEntry.
+        r"""Sets the address of this DirectConnectLocationEntry.
 
         :param address: The address of this DirectConnectLocationEntry.
         :type address: :class:`huaweicloudsdkdc.v3.AddressBody`
@@ -240,7 +240,7 @@ class DirectConnectLocationEntry:
 
     @property
     def locales(self):
-        """Gets the locales of this DirectConnectLocationEntry.
+        r"""Gets the locales of this DirectConnectLocationEntry.
 
         :return: The locales of this DirectConnectLocationEntry.
         :rtype: :class:`huaweicloudsdkdc.v3.LocalesBody`
@@ -249,7 +249,7 @@ class DirectConnectLocationEntry:
 
     @locales.setter
     def locales(self, locales):
-        """Sets the locales of this DirectConnectLocationEntry.
+        r"""Sets the locales of this DirectConnectLocationEntry.
 
         :param locales: The locales of this DirectConnectLocationEntry.
         :type locales: :class:`huaweicloudsdkdc.v3.LocalesBody`
@@ -258,7 +258,7 @@ class DirectConnectLocationEntry:
 
     @property
     def provider_list(self):
-        """Gets the provider_list of this DirectConnectLocationEntry.
+        r"""Gets the provider_list of this DirectConnectLocationEntry.
 
         可支持的运营商列表。
 
@@ -269,7 +269,7 @@ class DirectConnectLocationEntry:
 
     @provider_list.setter
     def provider_list(self, provider_list):
-        """Sets the provider_list of this DirectConnectLocationEntry.
+        r"""Sets the provider_list of this DirectConnectLocationEntry.
 
         可支持的运营商列表。
 
@@ -280,7 +280,7 @@ class DirectConnectLocationEntry:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this DirectConnectLocationEntry.
+        r"""Gets the public_border_group of this DirectConnectLocationEntry.
 
         专线接入点所属public_border_group
 
@@ -291,7 +291,7 @@ class DirectConnectLocationEntry:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this DirectConnectLocationEntry.
+        r"""Sets the public_border_group of this DirectConnectLocationEntry.
 
         专线接入点所属public_border_group
 
@@ -302,7 +302,7 @@ class DirectConnectLocationEntry:
 
     @property
     def latitude(self):
-        """Gets the latitude of this DirectConnectLocationEntry.
+        r"""Gets the latitude of this DirectConnectLocationEntry.
 
         地理位置纬度
 
@@ -313,7 +313,7 @@ class DirectConnectLocationEntry:
 
     @latitude.setter
     def latitude(self, latitude):
-        """Sets the latitude of this DirectConnectLocationEntry.
+        r"""Sets the latitude of this DirectConnectLocationEntry.
 
         地理位置纬度
 
@@ -324,7 +324,7 @@ class DirectConnectLocationEntry:
 
     @property
     def longitude(self):
-        """Gets the longitude of this DirectConnectLocationEntry.
+        r"""Gets the longitude of this DirectConnectLocationEntry.
 
         地理位置经度
 
@@ -335,7 +335,7 @@ class DirectConnectLocationEntry:
 
     @longitude.setter
     def longitude(self, longitude):
-        """Sets the longitude of this DirectConnectLocationEntry.
+        r"""Sets the longitude of this DirectConnectLocationEntry.
 
         地理位置经度
 
@@ -346,7 +346,7 @@ class DirectConnectLocationEntry:
 
     @property
     def description(self):
-        """Gets the description of this DirectConnectLocationEntry.
+        r"""Gets the description of this DirectConnectLocationEntry.
 
         描述信息。
 
@@ -357,7 +357,7 @@ class DirectConnectLocationEntry:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DirectConnectLocationEntry.
+        r"""Sets the description of this DirectConnectLocationEntry.
 
         描述信息。
 
@@ -368,7 +368,7 @@ class DirectConnectLocationEntry:
 
     @property
     def created_time(self):
-        """Gets the created_time of this DirectConnectLocationEntry.
+        r"""Gets the created_time of this DirectConnectLocationEntry.
 
         创建时间。
 
@@ -379,7 +379,7 @@ class DirectConnectLocationEntry:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this DirectConnectLocationEntry.
+        r"""Sets the created_time of this DirectConnectLocationEntry.
 
         创建时间。
 
@@ -390,7 +390,7 @@ class DirectConnectLocationEntry:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this DirectConnectLocationEntry.
+        r"""Gets the updated_time of this DirectConnectLocationEntry.
 
         更新时间。
 
@@ -401,7 +401,7 @@ class DirectConnectLocationEntry:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this DirectConnectLocationEntry.
+        r"""Sets the updated_time of this DirectConnectLocationEntry.
 
         更新时间。
 
@@ -412,7 +412,7 @@ class DirectConnectLocationEntry:
 
     @property
     def available_port_speeds(self):
-        """Gets the available_port_speeds of this DirectConnectLocationEntry.
+        r"""Gets the available_port_speeds of this DirectConnectLocationEntry.
 
         接入点内设备可选的端口类型
 
@@ -423,7 +423,7 @@ class DirectConnectLocationEntry:
 
     @available_port_speeds.setter
     def available_port_speeds(self, available_port_speeds):
-        """Sets the available_port_speeds of this DirectConnectLocationEntry.
+        r"""Sets the available_port_speeds of this DirectConnectLocationEntry.
 
         接入点内设备可选的端口类型
 

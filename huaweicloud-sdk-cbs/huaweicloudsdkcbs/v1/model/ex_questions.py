@@ -25,7 +25,7 @@ class ExQuestions:
     }
 
     def __init__(self, content=None):
-        """ExQuestions
+        r"""ExQuestions
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ExQuestions:
 
     @property
     def content(self):
-        """Gets the content of this ExQuestions.
+        r"""Gets the content of this ExQuestions.
 
         扩展问题。
 
@@ -53,7 +53,7 @@ class ExQuestions:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ExQuestions.
+        r"""Sets the content of this ExQuestions.
 
         扩展问题。
 

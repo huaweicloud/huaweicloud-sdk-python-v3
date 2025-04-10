@@ -34,7 +34,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
     }
 
     def __init__(self, connections=None, vpcep_update_switch=None, total_count=None, vpc_service_name=None, permissions=None):
-        """ShowVpcepConnectionResponse
+        r"""ShowVpcepConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
 
     @property
     def connections(self):
-        """Gets the connections of this ShowVpcepConnectionResponse.
+        r"""Gets the connections of this ShowVpcepConnectionResponse.
 
         :return: The connections of this ShowVpcepConnectionResponse.
         :rtype: list[:class:`huaweicloudsdkcss.v1.Connections`]
@@ -81,7 +81,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
 
     @connections.setter
     def connections(self, connections):
-        """Sets the connections of this ShowVpcepConnectionResponse.
+        r"""Sets the connections of this ShowVpcepConnectionResponse.
 
         :param connections: The connections of this ShowVpcepConnectionResponse.
         :type connections: list[:class:`huaweicloudsdkcss.v1.Connections`]
@@ -90,7 +90,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
 
     @property
     def vpcep_update_switch(self):
-        """Gets the vpcep_update_switch of this ShowVpcepConnectionResponse.
+        r"""Gets the vpcep_update_switch of this ShowVpcepConnectionResponse.
 
         终端节点更新开关。 - true： 开启终端节点。 - false： 关闭终端节点。
 
@@ -101,7 +101,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
 
     @vpcep_update_switch.setter
     def vpcep_update_switch(self, vpcep_update_switch):
-        """Sets the vpcep_update_switch of this ShowVpcepConnectionResponse.
+        r"""Sets the vpcep_update_switch of this ShowVpcepConnectionResponse.
 
         终端节点更新开关。 - true： 开启终端节点。 - false： 关闭终端节点。
 
@@ -112,7 +112,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowVpcepConnectionResponse.
+        r"""Gets the total_count of this ShowVpcepConnectionResponse.
 
         终端节点数量。
 
@@ -123,7 +123,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowVpcepConnectionResponse.
+        r"""Sets the total_count of this ShowVpcepConnectionResponse.
 
         终端节点数量。
 
@@ -134,7 +134,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
 
     @property
     def vpc_service_name(self):
-        """Gets the vpc_service_name of this ShowVpcepConnectionResponse.
+        r"""Gets the vpc_service_name of this ShowVpcepConnectionResponse.
 
         终端节点服务名称。
 
@@ -145,7 +145,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
 
     @vpc_service_name.setter
     def vpc_service_name(self, vpc_service_name):
-        """Sets the vpc_service_name of this ShowVpcepConnectionResponse.
+        r"""Sets the vpc_service_name of this ShowVpcepConnectionResponse.
 
         终端节点服务名称。
 
@@ -156,7 +156,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
 
     @property
     def permissions(self):
-        """Gets the permissions of this ShowVpcepConnectionResponse.
+        r"""Gets the permissions of this ShowVpcepConnectionResponse.
 
         :return: The permissions of this ShowVpcepConnectionResponse.
         :rtype: list[:class:`huaweicloudsdkcss.v1.PermissionInfo`]
@@ -165,7 +165,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this ShowVpcepConnectionResponse.
+        r"""Sets the permissions of this ShowVpcepConnectionResponse.
 
         :param permissions: The permissions of this ShowVpcepConnectionResponse.
         :type permissions: list[:class:`huaweicloudsdkcss.v1.PermissionInfo`]

@@ -26,7 +26,7 @@ class ResizeGraph2Response(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ResizeGraph2Response
+        r"""ResizeGraph2Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ResizeGraph2Response(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ResizeGraph2Response.
+        r"""Gets the job_id of this ResizeGraph2Response.
 
         变更图规格任务ID。请求失败时字段为空。
 
@@ -55,7 +55,7 @@ class ResizeGraph2Response(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ResizeGraph2Response.
+        r"""Sets the job_id of this ResizeGraph2Response.
 
         变更图规格任务ID。请求失败时字段为空。
 

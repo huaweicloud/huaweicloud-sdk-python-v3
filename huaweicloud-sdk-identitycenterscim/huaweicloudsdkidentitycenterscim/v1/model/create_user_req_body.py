@@ -57,7 +57,7 @@ class CreateUserReqBody:
     }
 
     def __init__(self, external_id=None, user_name=None, name=None, display_name=None, nick_name=None, profile_url=None, emails=None, addresses=None, phone_numbers=None, user_type=None, title=None, preferred_language=None, locale=None, timezone=None, active=None, schemas=None, urnietfparamsscimschemasextensionenterprise2_0_user=None):
-        """CreateUserReqBody
+        r"""CreateUserReqBody
 
         The model defined in huaweicloud sdk
 
@@ -150,7 +150,7 @@ class CreateUserReqBody:
 
     @property
     def external_id(self):
-        """Gets the external_id of this CreateUserReqBody.
+        r"""Gets the external_id of this CreateUserReqBody.
 
         外部标识符
 
@@ -161,7 +161,7 @@ class CreateUserReqBody:
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this CreateUserReqBody.
+        r"""Sets the external_id of this CreateUserReqBody.
 
         外部标识符
 
@@ -172,7 +172,7 @@ class CreateUserReqBody:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CreateUserReqBody.
+        r"""Gets the user_name of this CreateUserReqBody.
 
         用户名，用于标识用户的唯一字符串
 
@@ -183,7 +183,7 @@ class CreateUserReqBody:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CreateUserReqBody.
+        r"""Sets the user_name of this CreateUserReqBody.
 
         用户名，用于标识用户的唯一字符串
 
@@ -194,7 +194,7 @@ class CreateUserReqBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateUserReqBody.
+        r"""Gets the name of this CreateUserReqBody.
 
         :return: The name of this CreateUserReqBody.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.NameDto`
@@ -203,7 +203,7 @@ class CreateUserReqBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateUserReqBody.
+        r"""Sets the name of this CreateUserReqBody.
 
         :param name: The name of this CreateUserReqBody.
         :type name: :class:`huaweicloudsdkidentitycenterscim.v1.NameDto`
@@ -212,7 +212,7 @@ class CreateUserReqBody:
 
     @property
     def display_name(self):
-        """Gets the display_name of this CreateUserReqBody.
+        r"""Gets the display_name of this CreateUserReqBody.
 
         包含用户显示名称的字符串
 
@@ -223,7 +223,7 @@ class CreateUserReqBody:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this CreateUserReqBody.
+        r"""Sets the display_name of this CreateUserReqBody.
 
         包含用户显示名称的字符串
 
@@ -234,7 +234,7 @@ class CreateUserReqBody:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this CreateUserReqBody.
+        r"""Gets the nick_name of this CreateUserReqBody.
 
         包含用户昵称的字符串
 
@@ -245,7 +245,7 @@ class CreateUserReqBody:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this CreateUserReqBody.
+        r"""Sets the nick_name of this CreateUserReqBody.
 
         包含用户昵称的字符串
 
@@ -256,7 +256,7 @@ class CreateUserReqBody:
 
     @property
     def profile_url(self):
-        """Gets the profile_url of this CreateUserReqBody.
+        r"""Gets the profile_url of this CreateUserReqBody.
 
         包含可能与用户关联的URL的字符串
 
@@ -267,7 +267,7 @@ class CreateUserReqBody:
 
     @profile_url.setter
     def profile_url(self, profile_url):
-        """Sets the profile_url of this CreateUserReqBody.
+        r"""Sets the profile_url of this CreateUserReqBody.
 
         包含可能与用户关联的URL的字符串
 
@@ -278,7 +278,7 @@ class CreateUserReqBody:
 
     @property
     def emails(self):
-        """Gets the emails of this CreateUserReqBody.
+        r"""Gets the emails of this CreateUserReqBody.
 
         包含用户的电子邮箱信息的对象列表
 
@@ -289,7 +289,7 @@ class CreateUserReqBody:
 
     @emails.setter
     def emails(self, emails):
-        """Sets the emails of this CreateUserReqBody.
+        r"""Sets the emails of this CreateUserReqBody.
 
         包含用户的电子邮箱信息的对象列表
 
@@ -300,7 +300,7 @@ class CreateUserReqBody:
 
     @property
     def addresses(self):
-        """Gets the addresses of this CreateUserReqBody.
+        r"""Gets the addresses of this CreateUserReqBody.
 
         包含用户地址信息的对象列表
 
@@ -311,7 +311,7 @@ class CreateUserReqBody:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this CreateUserReqBody.
+        r"""Sets the addresses of this CreateUserReqBody.
 
         包含用户地址信息的对象列表
 
@@ -322,7 +322,7 @@ class CreateUserReqBody:
 
     @property
     def phone_numbers(self):
-        """Gets the phone_numbers of this CreateUserReqBody.
+        r"""Gets the phone_numbers of this CreateUserReqBody.
 
         包含用户电话号码信息的对象列表
 
@@ -333,7 +333,7 @@ class CreateUserReqBody:
 
     @phone_numbers.setter
     def phone_numbers(self, phone_numbers):
-        """Sets the phone_numbers of this CreateUserReqBody.
+        r"""Sets the phone_numbers of this CreateUserReqBody.
 
         包含用户电话号码信息的对象列表
 
@@ -344,7 +344,7 @@ class CreateUserReqBody:
 
     @property
     def user_type(self):
-        """Gets the user_type of this CreateUserReqBody.
+        r"""Gets the user_type of this CreateUserReqBody.
 
         指示用户类型的字符串
 
@@ -355,7 +355,7 @@ class CreateUserReqBody:
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this CreateUserReqBody.
+        r"""Sets the user_type of this CreateUserReqBody.
 
         指示用户类型的字符串
 
@@ -366,7 +366,7 @@ class CreateUserReqBody:
 
     @property
     def title(self):
-        """Gets the title of this CreateUserReqBody.
+        r"""Gets the title of this CreateUserReqBody.
 
         包含用户头衔的字符串
 
@@ -377,7 +377,7 @@ class CreateUserReqBody:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this CreateUserReqBody.
+        r"""Sets the title of this CreateUserReqBody.
 
         包含用户头衔的字符串
 
@@ -388,7 +388,7 @@ class CreateUserReqBody:
 
     @property
     def preferred_language(self):
-        """Gets the preferred_language of this CreateUserReqBody.
+        r"""Gets the preferred_language of this CreateUserReqBody.
 
         包含用户首选语言的字符串
 
@@ -399,7 +399,7 @@ class CreateUserReqBody:
 
     @preferred_language.setter
     def preferred_language(self, preferred_language):
-        """Sets the preferred_language of this CreateUserReqBody.
+        r"""Sets the preferred_language of this CreateUserReqBody.
 
         包含用户首选语言的字符串
 
@@ -410,7 +410,7 @@ class CreateUserReqBody:
 
     @property
     def locale(self):
-        """Gets the locale of this CreateUserReqBody.
+        r"""Gets the locale of this CreateUserReqBody.
 
         包含用户地理区域或位置的字符串
 
@@ -421,7 +421,7 @@ class CreateUserReqBody:
 
     @locale.setter
     def locale(self, locale):
-        """Sets the locale of this CreateUserReqBody.
+        r"""Sets the locale of this CreateUserReqBody.
 
         包含用户地理区域或位置的字符串
 
@@ -432,7 +432,7 @@ class CreateUserReqBody:
 
     @property
     def timezone(self):
-        """Gets the timezone of this CreateUserReqBody.
+        r"""Gets the timezone of this CreateUserReqBody.
 
         包含用户时区的字符串
 
@@ -443,7 +443,7 @@ class CreateUserReqBody:
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this CreateUserReqBody.
+        r"""Sets the timezone of this CreateUserReqBody.
 
         包含用户时区的字符串
 
@@ -454,7 +454,7 @@ class CreateUserReqBody:
 
     @property
     def active(self):
-        """Gets the active of this CreateUserReqBody.
+        r"""Gets the active of this CreateUserReqBody.
 
         表示用户是否启用
 
@@ -465,7 +465,7 @@ class CreateUserReqBody:
 
     @active.setter
     def active(self, active):
-        """Sets the active of this CreateUserReqBody.
+        r"""Sets the active of this CreateUserReqBody.
 
         表示用户是否启用
 
@@ -476,7 +476,7 @@ class CreateUserReqBody:
 
     @property
     def schemas(self):
-        """Gets the schemas of this CreateUserReqBody.
+        r"""Gets the schemas of this CreateUserReqBody.
 
         概要
 
@@ -487,7 +487,7 @@ class CreateUserReqBody:
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this CreateUserReqBody.
+        r"""Sets the schemas of this CreateUserReqBody.
 
         概要
 
@@ -498,7 +498,7 @@ class CreateUserReqBody:
 
     @property
     def urnietfparamsscimschemasextensionenterprise2_0_user(self):
-        """Gets the urnietfparamsscimschemasextensionenterprise2_0_user of this CreateUserReqBody.
+        r"""Gets the urnietfparamsscimschemasextensionenterprise2_0_user of this CreateUserReqBody.
 
         :return: The urnietfparamsscimschemasextensionenterprise2_0_user of this CreateUserReqBody.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.EnterpriseDto`
@@ -507,7 +507,7 @@ class CreateUserReqBody:
 
     @urnietfparamsscimschemasextensionenterprise2_0_user.setter
     def urnietfparamsscimschemasextensionenterprise2_0_user(self, urnietfparamsscimschemasextensionenterprise2_0_user):
-        """Sets the urnietfparamsscimschemasextensionenterprise2_0_user of this CreateUserReqBody.
+        r"""Sets the urnietfparamsscimschemasextensionenterprise2_0_user of this CreateUserReqBody.
 
         :param urnietfparamsscimschemasextensionenterprise2_0_user: The urnietfparamsscimschemasextensionenterprise2_0_user of this CreateUserReqBody.
         :type urnietfparamsscimschemasextensionenterprise2_0_user: :class:`huaweicloudsdkidentitycenterscim.v1.EnterpriseDto`

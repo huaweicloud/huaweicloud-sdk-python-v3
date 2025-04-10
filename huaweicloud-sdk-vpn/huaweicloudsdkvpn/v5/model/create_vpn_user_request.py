@@ -30,7 +30,7 @@ class CreateVpnUserRequest:
     }
 
     def __init__(self, vpn_server_id=None, x_client_token=None, body=None):
-        """CreateVpnUserRequest
+        r"""CreateVpnUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateVpnUserRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this CreateVpnUserRequest.
+        r"""Gets the vpn_server_id of this CreateVpnUserRequest.
 
         VPN服务端 ID
 
@@ -68,7 +68,7 @@ class CreateVpnUserRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this CreateVpnUserRequest.
+        r"""Sets the vpn_server_id of this CreateVpnUserRequest.
 
         VPN服务端 ID
 
@@ -79,7 +79,7 @@ class CreateVpnUserRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateVpnUserRequest.
+        r"""Gets the x_client_token of this CreateVpnUserRequest.
 
         幂等性标识
 
@@ -90,7 +90,7 @@ class CreateVpnUserRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateVpnUserRequest.
+        r"""Sets the x_client_token of this CreateVpnUserRequest.
 
         幂等性标识
 
@@ -101,7 +101,7 @@ class CreateVpnUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVpnUserRequest.
+        r"""Gets the body of this CreateVpnUserRequest.
 
         :return: The body of this CreateVpnUserRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnUserRequestBody`
@@ -110,7 +110,7 @@ class CreateVpnUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVpnUserRequest.
+        r"""Sets the body of this CreateVpnUserRequest.
 
         :param body: The body of this CreateVpnUserRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.CreateVpnUserRequestBody`

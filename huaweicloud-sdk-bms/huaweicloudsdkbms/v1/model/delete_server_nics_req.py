@@ -25,7 +25,7 @@ class DeleteServerNicsReq:
     }
 
     def __init__(self, nics=None):
-        """DeleteServerNicsReq
+        r"""DeleteServerNicsReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteServerNicsReq:
 
     @property
     def nics(self):
-        """Gets the nics of this DeleteServerNicsReq.
+        r"""Gets the nics of this DeleteServerNicsReq.
 
         
 
@@ -53,7 +53,7 @@ class DeleteServerNicsReq:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this DeleteServerNicsReq.
+        r"""Sets the nics of this DeleteServerNicsReq.
 
         
 

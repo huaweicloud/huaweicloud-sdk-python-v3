@@ -31,7 +31,7 @@ class CreateServerRequestSslOptions:
     }
 
     def __init__(self, protocol=None, port=None, encryption_algorithm=None, is_compressed=None):
-        """CreateServerRequestSslOptions
+        r"""CreateServerRequestSslOptions
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateServerRequestSslOptions:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreateServerRequestSslOptions.
+        r"""Gets the protocol of this CreateServerRequestSslOptions.
 
         协议
 
@@ -75,7 +75,7 @@ class CreateServerRequestSslOptions:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreateServerRequestSslOptions.
+        r"""Sets the protocol of this CreateServerRequestSslOptions.
 
         协议
 
@@ -86,7 +86,7 @@ class CreateServerRequestSslOptions:
 
     @property
     def port(self):
-        """Gets the port of this CreateServerRequestSslOptions.
+        r"""Gets the port of this CreateServerRequestSslOptions.
 
         端口
 
@@ -97,7 +97,7 @@ class CreateServerRequestSslOptions:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this CreateServerRequestSslOptions.
+        r"""Sets the port of this CreateServerRequestSslOptions.
 
         端口
 
@@ -108,7 +108,7 @@ class CreateServerRequestSslOptions:
 
     @property
     def encryption_algorithm(self):
-        """Gets the encryption_algorithm of this CreateServerRequestSslOptions.
+        r"""Gets the encryption_algorithm of this CreateServerRequestSslOptions.
 
         加密算法
 
@@ -119,7 +119,7 @@ class CreateServerRequestSslOptions:
 
     @encryption_algorithm.setter
     def encryption_algorithm(self, encryption_algorithm):
-        """Sets the encryption_algorithm of this CreateServerRequestSslOptions.
+        r"""Sets the encryption_algorithm of this CreateServerRequestSslOptions.
 
         加密算法
 
@@ -130,7 +130,7 @@ class CreateServerRequestSslOptions:
 
     @property
     def is_compressed(self):
-        """Gets the is_compressed of this CreateServerRequestSslOptions.
+        r"""Gets the is_compressed of this CreateServerRequestSslOptions.
 
         是否压缩
 
@@ -141,7 +141,7 @@ class CreateServerRequestSslOptions:
 
     @is_compressed.setter
     def is_compressed(self, is_compressed):
-        """Sets the is_compressed of this CreateServerRequestSslOptions.
+        r"""Sets the is_compressed of this CreateServerRequestSslOptions.
 
         是否压缩
 

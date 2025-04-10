@@ -39,7 +39,7 @@ class DatabaseColumnDto:
     }
 
     def __init__(self, name=None, type=None, description=None, nullable=None, primary=None, searchable=None, unique=None, tips=None):
-        """DatabaseColumnDto
+        r"""DatabaseColumnDto
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class DatabaseColumnDto:
 
     @property
     def name(self):
-        """Gets the name of this DatabaseColumnDto.
+        r"""Gets the name of this DatabaseColumnDto.
 
         列名
 
@@ -97,7 +97,7 @@ class DatabaseColumnDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatabaseColumnDto.
+        r"""Sets the name of this DatabaseColumnDto.
 
         列名
 
@@ -108,7 +108,7 @@ class DatabaseColumnDto:
 
     @property
     def type(self):
-        """Gets the type of this DatabaseColumnDto.
+        r"""Gets the type of this DatabaseColumnDto.
 
         :return: The type of this DatabaseColumnDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ColumnType`
@@ -117,7 +117,7 @@ class DatabaseColumnDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DatabaseColumnDto.
+        r"""Sets the type of this DatabaseColumnDto.
 
         :param type: The type of this DatabaseColumnDto.
         :type type: :class:`huaweicloudsdkeihealth.v1.ColumnType`
@@ -126,7 +126,7 @@ class DatabaseColumnDto:
 
     @property
     def description(self):
-        """Gets the description of this DatabaseColumnDto.
+        r"""Gets the description of this DatabaseColumnDto.
 
         列描述信息
 
@@ -137,7 +137,7 @@ class DatabaseColumnDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DatabaseColumnDto.
+        r"""Sets the description of this DatabaseColumnDto.
 
         列描述信息
 
@@ -148,7 +148,7 @@ class DatabaseColumnDto:
 
     @property
     def nullable(self):
-        """Gets the nullable of this DatabaseColumnDto.
+        r"""Gets the nullable of this DatabaseColumnDto.
 
         列是否允许为空
 
@@ -159,7 +159,7 @@ class DatabaseColumnDto:
 
     @nullable.setter
     def nullable(self, nullable):
-        """Sets the nullable of this DatabaseColumnDto.
+        r"""Sets the nullable of this DatabaseColumnDto.
 
         列是否允许为空
 
@@ -170,7 +170,7 @@ class DatabaseColumnDto:
 
     @property
     def primary(self):
-        """Gets the primary of this DatabaseColumnDto.
+        r"""Gets the primary of this DatabaseColumnDto.
 
         是否作为主键
 
@@ -181,7 +181,7 @@ class DatabaseColumnDto:
 
     @primary.setter
     def primary(self, primary):
-        """Sets the primary of this DatabaseColumnDto.
+        r"""Sets the primary of this DatabaseColumnDto.
 
         是否作为主键
 
@@ -192,7 +192,7 @@ class DatabaseColumnDto:
 
     @property
     def searchable(self):
-        """Gets the searchable of this DatabaseColumnDto.
+        r"""Gets the searchable of this DatabaseColumnDto.
 
         是否可查询
 
@@ -203,7 +203,7 @@ class DatabaseColumnDto:
 
     @searchable.setter
     def searchable(self, searchable):
-        """Sets the searchable of this DatabaseColumnDto.
+        r"""Sets the searchable of this DatabaseColumnDto.
 
         是否可查询
 
@@ -214,7 +214,7 @@ class DatabaseColumnDto:
 
     @property
     def unique(self):
-        """Gets the unique of this DatabaseColumnDto.
+        r"""Gets the unique of this DatabaseColumnDto.
 
         是否唯一
 
@@ -225,7 +225,7 @@ class DatabaseColumnDto:
 
     @unique.setter
     def unique(self, unique):
-        """Sets the unique of this DatabaseColumnDto.
+        r"""Sets the unique of this DatabaseColumnDto.
 
         是否唯一
 
@@ -236,7 +236,7 @@ class DatabaseColumnDto:
 
     @property
     def tips(self):
-        """Gets the tips of this DatabaseColumnDto.
+        r"""Gets the tips of this DatabaseColumnDto.
 
         查询参数格式的提示信息
 
@@ -247,7 +247,7 @@ class DatabaseColumnDto:
 
     @tips.setter
     def tips(self, tips):
-        """Sets the tips of this DatabaseColumnDto.
+        r"""Sets the tips of this DatabaseColumnDto.
 
         查询参数格式的提示信息
 

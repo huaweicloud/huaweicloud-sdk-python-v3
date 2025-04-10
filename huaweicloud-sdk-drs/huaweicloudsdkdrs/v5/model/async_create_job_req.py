@@ -49,7 +49,7 @@ class AsyncCreateJobReq:
     }
 
     def __init__(self, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_object=None, db_param=None, tuning_params=None, period_order=None, node_info=None, public_ip_list=None):
-        """AsyncCreateJobReq
+        r"""AsyncCreateJobReq
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class AsyncCreateJobReq:
 
     @property
     def base_info(self):
-        """Gets the base_info of this AsyncCreateJobReq.
+        r"""Gets the base_info of this AsyncCreateJobReq.
 
         :return: The base_info of this AsyncCreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobBaseInfo`
@@ -130,7 +130,7 @@ class AsyncCreateJobReq:
 
     @base_info.setter
     def base_info(self, base_info):
-        """Sets the base_info of this AsyncCreateJobReq.
+        r"""Sets the base_info of this AsyncCreateJobReq.
 
         :param base_info: The base_info of this AsyncCreateJobReq.
         :type base_info: :class:`huaweicloudsdkdrs.v5.JobBaseInfo`
@@ -139,7 +139,7 @@ class AsyncCreateJobReq:
 
     @property
     def source_endpoint(self):
-        """Gets the source_endpoint of this AsyncCreateJobReq.
+        r"""Gets the source_endpoint of this AsyncCreateJobReq.
 
         创建任务数据库信息体。
 
@@ -150,7 +150,7 @@ class AsyncCreateJobReq:
 
     @source_endpoint.setter
     def source_endpoint(self, source_endpoint):
-        """Sets the source_endpoint of this AsyncCreateJobReq.
+        r"""Sets the source_endpoint of this AsyncCreateJobReq.
 
         创建任务数据库信息体。
 
@@ -161,7 +161,7 @@ class AsyncCreateJobReq:
 
     @property
     def target_endpoint(self):
-        """Gets the target_endpoint of this AsyncCreateJobReq.
+        r"""Gets the target_endpoint of this AsyncCreateJobReq.
 
         创建任务数据库信息体。
 
@@ -172,7 +172,7 @@ class AsyncCreateJobReq:
 
     @target_endpoint.setter
     def target_endpoint(self, target_endpoint):
-        """Sets the target_endpoint of this AsyncCreateJobReq.
+        r"""Sets the target_endpoint of this AsyncCreateJobReq.
 
         创建任务数据库信息体。
 
@@ -183,7 +183,7 @@ class AsyncCreateJobReq:
 
     @property
     def alarm_notify(self):
-        """Gets the alarm_notify of this AsyncCreateJobReq.
+        r"""Gets the alarm_notify of this AsyncCreateJobReq.
 
         :return: The alarm_notify of this AsyncCreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.AlarmNotifyConfig`
@@ -192,7 +192,7 @@ class AsyncCreateJobReq:
 
     @alarm_notify.setter
     def alarm_notify(self, alarm_notify):
-        """Sets the alarm_notify of this AsyncCreateJobReq.
+        r"""Sets the alarm_notify of this AsyncCreateJobReq.
 
         :param alarm_notify: The alarm_notify of this AsyncCreateJobReq.
         :type alarm_notify: :class:`huaweicloudsdkdrs.v5.AlarmNotifyConfig`
@@ -201,7 +201,7 @@ class AsyncCreateJobReq:
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this AsyncCreateJobReq.
+        r"""Gets the speed_limit of this AsyncCreateJobReq.
 
         限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。 - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
 
@@ -212,7 +212,7 @@ class AsyncCreateJobReq:
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this AsyncCreateJobReq.
+        r"""Sets the speed_limit of this AsyncCreateJobReq.
 
         限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。 - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
 
@@ -223,7 +223,7 @@ class AsyncCreateJobReq:
 
     @property
     def user_migration(self):
-        """Gets the user_migration of this AsyncCreateJobReq.
+        r"""Gets the user_migration of this AsyncCreateJobReq.
 
         :return: The user_migration of this AsyncCreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.UserMigrationInfo`
@@ -232,7 +232,7 @@ class AsyncCreateJobReq:
 
     @user_migration.setter
     def user_migration(self, user_migration):
-        """Sets the user_migration of this AsyncCreateJobReq.
+        r"""Sets the user_migration of this AsyncCreateJobReq.
 
         :param user_migration: The user_migration of this AsyncCreateJobReq.
         :type user_migration: :class:`huaweicloudsdkdrs.v5.UserMigrationInfo`
@@ -241,7 +241,7 @@ class AsyncCreateJobReq:
 
     @property
     def policy_config(self):
-        """Gets the policy_config of this AsyncCreateJobReq.
+        r"""Gets the policy_config of this AsyncCreateJobReq.
 
         :return: The policy_config of this AsyncCreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.PolicyConfig`
@@ -250,7 +250,7 @@ class AsyncCreateJobReq:
 
     @policy_config.setter
     def policy_config(self, policy_config):
-        """Sets the policy_config of this AsyncCreateJobReq.
+        r"""Sets the policy_config of this AsyncCreateJobReq.
 
         :param policy_config: The policy_config of this AsyncCreateJobReq.
         :type policy_config: :class:`huaweicloudsdkdrs.v5.PolicyConfig`
@@ -259,7 +259,7 @@ class AsyncCreateJobReq:
 
     @property
     def db_object(self):
-        """Gets the db_object of this AsyncCreateJobReq.
+        r"""Gets the db_object of this AsyncCreateJobReq.
 
         :return: The db_object of this AsyncCreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.DbObject`
@@ -268,7 +268,7 @@ class AsyncCreateJobReq:
 
     @db_object.setter
     def db_object(self, db_object):
-        """Sets the db_object of this AsyncCreateJobReq.
+        r"""Sets the db_object of this AsyncCreateJobReq.
 
         :param db_object: The db_object of this AsyncCreateJobReq.
         :type db_object: :class:`huaweicloudsdkdrs.v5.DbObject`
@@ -277,7 +277,7 @@ class AsyncCreateJobReq:
 
     @property
     def db_param(self):
-        """Gets the db_param of this AsyncCreateJobReq.
+        r"""Gets the db_param of this AsyncCreateJobReq.
 
         :return: The db_param of this AsyncCreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.DbParamInfo`
@@ -286,7 +286,7 @@ class AsyncCreateJobReq:
 
     @db_param.setter
     def db_param(self, db_param):
-        """Sets the db_param of this AsyncCreateJobReq.
+        r"""Sets the db_param of this AsyncCreateJobReq.
 
         :param db_param: The db_param of this AsyncCreateJobReq.
         :type db_param: :class:`huaweicloudsdkdrs.v5.DbParamInfo`
@@ -295,7 +295,7 @@ class AsyncCreateJobReq:
 
     @property
     def tuning_params(self):
-        """Gets the tuning_params of this AsyncCreateJobReq.
+        r"""Gets the tuning_params of this AsyncCreateJobReq.
 
         :return: The tuning_params of this AsyncCreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.TuningParamInfo`
@@ -304,7 +304,7 @@ class AsyncCreateJobReq:
 
     @tuning_params.setter
     def tuning_params(self, tuning_params):
-        """Sets the tuning_params of this AsyncCreateJobReq.
+        r"""Sets the tuning_params of this AsyncCreateJobReq.
 
         :param tuning_params: The tuning_params of this AsyncCreateJobReq.
         :type tuning_params: :class:`huaweicloudsdkdrs.v5.TuningParamInfo`
@@ -313,7 +313,7 @@ class AsyncCreateJobReq:
 
     @property
     def period_order(self):
-        """Gets the period_order of this AsyncCreateJobReq.
+        r"""Gets the period_order of this AsyncCreateJobReq.
 
         :return: The period_order of this AsyncCreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.PeriodOrderInfo`
@@ -322,7 +322,7 @@ class AsyncCreateJobReq:
 
     @period_order.setter
     def period_order(self, period_order):
-        """Sets the period_order of this AsyncCreateJobReq.
+        r"""Sets the period_order of this AsyncCreateJobReq.
 
         :param period_order: The period_order of this AsyncCreateJobReq.
         :type period_order: :class:`huaweicloudsdkdrs.v5.PeriodOrderInfo`
@@ -331,7 +331,7 @@ class AsyncCreateJobReq:
 
     @property
     def node_info(self):
-        """Gets the node_info of this AsyncCreateJobReq.
+        r"""Gets the node_info of this AsyncCreateJobReq.
 
         :return: The node_info of this AsyncCreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobNodeInfo`
@@ -340,7 +340,7 @@ class AsyncCreateJobReq:
 
     @node_info.setter
     def node_info(self, node_info):
-        """Sets the node_info of this AsyncCreateJobReq.
+        r"""Sets the node_info of this AsyncCreateJobReq.
 
         :param node_info: The node_info of this AsyncCreateJobReq.
         :type node_info: :class:`huaweicloudsdkdrs.v5.JobNodeInfo`
@@ -349,7 +349,7 @@ class AsyncCreateJobReq:
 
     @property
     def public_ip_list(self):
-        """Gets the public_ip_list of this AsyncCreateJobReq.
+        r"""Gets the public_ip_list of this AsyncCreateJobReq.
 
         指定公网IP的信息
 
@@ -360,7 +360,7 @@ class AsyncCreateJobReq:
 
     @public_ip_list.setter
     def public_ip_list(self, public_ip_list):
-        """Sets the public_ip_list of this AsyncCreateJobReq.
+        r"""Sets the public_ip_list of this AsyncCreateJobReq.
 
         指定公网IP的信息
 

@@ -31,7 +31,7 @@ class ListLivePlatformProductsRequest:
     }
 
     def __init__(self, offset=None, limit=None, platform_id=None, live_id=None):
-        """ListLivePlatformProductsRequest
+        r"""ListLivePlatformProductsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListLivePlatformProductsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListLivePlatformProductsRequest.
+        r"""Gets the offset of this ListLivePlatformProductsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -73,7 +73,7 @@ class ListLivePlatformProductsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLivePlatformProductsRequest.
+        r"""Sets the offset of this ListLivePlatformProductsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -84,7 +84,7 @@ class ListLivePlatformProductsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLivePlatformProductsRequest.
+        r"""Gets the limit of this ListLivePlatformProductsRequest.
 
         每页显示的条目数量。
 
@@ -95,7 +95,7 @@ class ListLivePlatformProductsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLivePlatformProductsRequest.
+        r"""Sets the limit of this ListLivePlatformProductsRequest.
 
         每页显示的条目数量。
 
@@ -106,7 +106,7 @@ class ListLivePlatformProductsRequest:
 
     @property
     def platform_id(self):
-        """Gets the platform_id of this ListLivePlatformProductsRequest.
+        r"""Gets the platform_id of this ListLivePlatformProductsRequest.
 
         第三方直播平台id
 
@@ -117,7 +117,7 @@ class ListLivePlatformProductsRequest:
 
     @platform_id.setter
     def platform_id(self, platform_id):
-        """Sets the platform_id of this ListLivePlatformProductsRequest.
+        r"""Sets the platform_id of this ListLivePlatformProductsRequest.
 
         第三方直播平台id
 
@@ -128,7 +128,7 @@ class ListLivePlatformProductsRequest:
 
     @property
     def live_id(self):
-        """Gets the live_id of this ListLivePlatformProductsRequest.
+        r"""Gets the live_id of this ListLivePlatformProductsRequest.
 
         第三方直播平台直播Id。
 
@@ -139,7 +139,7 @@ class ListLivePlatformProductsRequest:
 
     @live_id.setter
     def live_id(self, live_id):
-        """Sets the live_id of this ListLivePlatformProductsRequest.
+        r"""Sets the live_id of this ListLivePlatformProductsRequest.
 
         第三方直播平台直播Id。
 

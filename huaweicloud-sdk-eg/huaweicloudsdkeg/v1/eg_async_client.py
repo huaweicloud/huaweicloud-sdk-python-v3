@@ -34,7 +34,7 @@ class EgAsyncClient(Client):
         return client_builder
 
     def check_put_events_async(self, request):
-        """预校验指定事件源发布事件成功
+        r"""预校验指定事件源发布事件成功
 
         发布事件到事件源成功需要有订阅等条件，预先校验。
         
@@ -99,7 +99,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def create_agencies_async(self, request):
-        """创建服务委托
+        r"""创建服务委托
 
         按照业务场景，一键创建服务委托授权。
         
@@ -164,7 +164,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def create_channel_async(self, request):
-        """创建自定义事件通道
+        r"""创建自定义事件通道
 
         创建自定义事件通道。
         
@@ -231,7 +231,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def create_connection_async(self, request):
-        """创建目标连接
+        r"""创建目标连接
 
         创建目标连接。
         
@@ -296,7 +296,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def create_endpoint_async(self, request):
-        """创建访问端点
+        r"""创建访问端点
 
         创建访问端点。
         
@@ -361,7 +361,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def create_event_schema_async(self, request):
-        """创建自定义事件模型
+        r"""创建自定义事件模型
 
         创建自定义事件模型
         
@@ -426,7 +426,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def create_event_schema_version_async(self, request):
-        """创建自定义事件模型版本
+        r"""创建自定义事件模型版本
 
         创建自定义事件模型版本，版本号后台自动生成
         
@@ -493,7 +493,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def create_event_source_async(self, request):
-        """创建自定义事件源
+        r"""创建自定义事件源
 
         创建用户自定义类型的事件源，只能指定自定义通道，不能指定系统通道。
         
@@ -558,7 +558,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def create_event_streaming_async(self, request):
-        """创建事件流
+        r"""创建事件流
 
         创建事件流。
         
@@ -623,7 +623,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def create_subscription_async(self, request):
-        """创建事件订阅
+        r"""创建事件订阅
 
         创建事件订阅。
         
@@ -690,7 +690,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def create_subscription_target_async(self, request):
-        """创建事件订阅目标
+        r"""创建事件订阅目标
 
         创建单个事件订阅目标。
         
@@ -759,7 +759,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def delete_channel_async(self, request):
-        """删除自定义事件通道
+        r"""删除自定义事件通道
 
         删除指定自定义事件通道。
         
@@ -826,7 +826,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def delete_connection_async(self, request):
-        """删除目标连接
+        r"""删除目标连接
 
         删除目标连接。
         
@@ -891,7 +891,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def delete_endpoint_async(self, request):
-        """删除访问端点
+        r"""删除访问端点
 
         删除访问端点。
         
@@ -956,7 +956,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def delete_event_schema_async(self, request):
-        """删除事件模型
+        r"""删除事件模型
 
         删除事件模型
         
@@ -1021,7 +1021,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def delete_event_schema_version_async(self, request):
-        """删除事件模型版本
+        r"""删除事件模型版本
 
         删除事件模型指定版本
         
@@ -1088,7 +1088,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def delete_event_source_async(self, request):
-        """删除自定义事件源
+        r"""删除自定义事件源
 
         删除指定的自定义事件源。
         
@@ -1153,7 +1153,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def delete_event_streaming_async(self, request):
-        """删除事件流
+        r"""删除事件流
 
         删除事件流。
         
@@ -1218,7 +1218,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def delete_subscription_async(self, request):
-        """删除事件订阅
+        r"""删除事件订阅
 
         删除事件订阅。
         
@@ -1285,7 +1285,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def delete_subscription_target_async(self, request):
-        """删除事件订阅目标
+        r"""删除事件订阅目标
 
         删除事件订阅目标。
         
@@ -1354,7 +1354,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def discover_event_schema_from_data_async(self, request):
-        """事件模型自动发现
+        r"""事件模型自动发现
 
         事件模型自动发现
         
@@ -1419,7 +1419,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_agencies_async(self, request):
-        """查询服务委托
+        r"""查询服务委托
 
         查询服务委托。
         
@@ -1484,7 +1484,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_channels_async(self, request):
-        """查询事件通道列表
+        r"""查询事件通道列表
 
         查询事件通道列表，包括系统通道和自定义通道。
         
@@ -1561,7 +1561,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_connections_async(self, request):
-        """查询目标连接列表
+        r"""查询目标连接列表
 
         查询目标连接列表。
         
@@ -1636,7 +1636,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_endpoints_async(self, request):
-        """查询访问端点
+        r"""查询访问端点
 
         查询访问端点。
         
@@ -1715,7 +1715,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_event_schema_async(self, request):
-        """查询事件模型列表
+        r"""查询事件模型列表
 
         查询事件模型列表，包括系统事件模型和自定义事件模型
         
@@ -1790,7 +1790,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_event_schema_versions_async(self, request):
-        """查询事件模型版本列表
+        r"""查询事件模型版本列表
 
         查询事件模型版本列表
         
@@ -1863,7 +1863,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_event_sources_async(self, request):
-        """查询事件源列表
+        r"""查询事件源列表
 
         支持条件查询，如可以指定事件通道ID来查询某个事件通道下的所有事件源。
         
@@ -1942,7 +1942,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_event_streaming_async(self, request):
-        """查询事件流列表
+        r"""查询事件流列表
 
         查询事件流列表。
         
@@ -2009,7 +2009,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_event_target_async(self, request):
-        """查询事件目标分类
+        r"""查询事件目标分类
 
         查询预置的事件目标分类，获取每个事件目标分类的字段定义。
         
@@ -2083,7 +2083,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_pub_metrics_async(self, request):
-        """查询事件通道监控指标数据
+        r"""查询事件通道监控指标数据
 
         查询事件通道监控指标数据。
         
@@ -2160,7 +2160,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_quotas_async(self, request):
-        """查询配额
+        r"""查询配额
 
         查询当前租户的配额，未特殊配置过的会返回默认配额。
         
@@ -2225,7 +2225,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_sub_metrics_async(self, request):
-        """查询事件订阅监控指标数据
+        r"""查询事件订阅监控指标数据
 
         查询事件订阅监控指标数据。
         
@@ -2302,7 +2302,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_subscriptions_async(self, request):
-        """查询事件订阅列表
+        r"""查询事件订阅列表
 
         查询事件订阅列表，支持指定事件通道。
         
@@ -2381,7 +2381,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_traced_events_async(self, request):
-        """查询事件追踪列表
+        r"""查询事件追踪列表
 
         查询事件追踪列表。
         
@@ -2462,7 +2462,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_triggers_async(self, request):
-        """查询单个函数的EG触发器
+        r"""查询单个函数的EG触发器
 
         查询触发器，支持指定函数urn，一个以函数urn为目标的订阅为一个触发器。
         
@@ -2533,7 +2533,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_workflow_triggers_async(self, request):
-        """查询单个函数流的EG触发器
+        r"""查询单个函数流的EG触发器
 
         查询触发器，支持指定函数流id，一个以函数流id为目标的订阅为一个触发器。
         
@@ -2604,7 +2604,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def operate_subscription_async(self, request):
-        """操作事件订阅
+        r"""操作事件订阅
 
         操作事件订阅，支持启用、禁用。
         
@@ -2671,7 +2671,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def put_events_async(self, request):
-        """发布事件到事件通道
+        r"""发布事件到事件通道
 
         发布事件到事件通道，仅供调试使用。
         
@@ -2738,7 +2738,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def put_official_events_async(self, request):
-        """发布官方事件到事件通道
+        r"""发布官方事件到事件通道
 
         发布官方事件到事件通道。
         
@@ -2805,7 +2805,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def resume_event_streaming_async(self, request):
-        """操作事件流
+        r"""操作事件流
 
         操作事件流。
         
@@ -2872,7 +2872,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def show_detail_of_channel_async(self, request):
-        """查询事件通道详情
+        r"""查询事件通道详情
 
         查询指定事件通道详情。
         
@@ -2939,7 +2939,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def show_detail_of_connection_async(self, request):
-        """查询目标连接详情
+        r"""查询目标连接详情
 
         查询目标连接详情。
         
@@ -3004,7 +3004,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def show_detail_of_event_async(self, request):
-        """查询发送事件的内容
+        r"""查询发送事件的内容
 
         根据事件ID查询事件详情。
         
@@ -3069,7 +3069,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def show_detail_of_event_schema_async(self, request):
-        """查询事件模型详情
+        r"""查询事件模型详情
 
         查询事件模型详情
         
@@ -3134,7 +3134,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def show_detail_of_event_schema_version_async(self, request):
-        """查询事件模型版本详情
+        r"""查询事件模型版本详情
 
         查询事件模型指定版本详情
         
@@ -3201,7 +3201,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def show_detail_of_event_source_async(self, request):
-        """查询事件源详情
+        r"""查询事件源详情
 
         查询事件源详情信息。
         
@@ -3266,7 +3266,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def show_detail_of_event_trace_async(self, request):
-        """事件轨迹详情
+        r"""事件轨迹详情
 
         事件轨迹详情，展示事件源到投递目标的投递情况。
         
@@ -3333,7 +3333,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def show_detail_of_subscription_async(self, request):
-        """查询事件订阅详情
+        r"""查询事件订阅详情
 
         查询事件订阅详情。
         
@@ -3400,7 +3400,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def show_detail_of_subscription_target_async(self, request):
-        """查询事件订阅目标详情
+        r"""查询事件订阅目标详情
 
         查询事件订阅目标详情。
         
@@ -3469,7 +3469,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def show_event_streaming_async(self, request):
-        """查询事件流详情
+        r"""查询事件流详情
 
         查询事件流详情。
         
@@ -3534,7 +3534,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def show_list_of_event_sample_async(self, request):
-        """查询事件示例列表
+        r"""查询事件示例列表
 
         查询事件示例列表
         
@@ -3609,7 +3609,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def update_channel_async(self, request):
-        """更新自定义事件通道
+        r"""更新自定义事件通道
 
         更新自定义事件通道定义。
         
@@ -3678,7 +3678,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def update_connection_async(self, request):
-        """更新目标连接
+        r"""更新目标连接
 
         更新目标连接。
         
@@ -3745,7 +3745,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def update_endpoint_async(self, request):
-        """更新访问端点
+        r"""更新访问端点
 
         更新访问端点。
         
@@ -3812,7 +3812,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def update_event_schema_async(self, request):
-        """更新自定义事件模型
+        r"""更新自定义事件模型
 
         更新自定义事件模型定义
         
@@ -3879,7 +3879,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def update_event_source_async(self, request):
-        """更新自定义事件源
+        r"""更新自定义事件源
 
         更新自定义事件源定义。
         
@@ -3946,7 +3946,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def update_event_streaming_async(self, request):
-        """更新事件流
+        r"""更新事件流
 
         更新事件流。
         
@@ -4013,7 +4013,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def update_subscription_async(self, request):
-        """更新事件订阅
+        r"""更新事件订阅
 
         更新事件订阅定义。
         
@@ -4082,7 +4082,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def update_subscription_source_async(self, request):
-        """更新事件订阅源
+        r"""更新事件订阅源
 
         更新事件订阅源定义。
         
@@ -4153,7 +4153,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def update_subscription_target_async(self, request):
-        """更新事件订阅目标
+        r"""更新事件订阅目标
 
         更新事件订阅目标定义。
         
@@ -4224,7 +4224,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_api_versions_async(self, request):
-        """获取API版本列表
+        r"""获取API版本列表
 
         获取服务支持的API版本列表。
         
@@ -4287,7 +4287,7 @@ class EgAsyncClient(Client):
         return http_info
 
     def list_obs_buckets_async(self, request):
-        """获取obs桶列表
+        r"""获取obs桶列表
 
         获取obs桶列表。
         

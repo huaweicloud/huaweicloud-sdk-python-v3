@@ -27,7 +27,7 @@ class ProvisionPermissionSetReqBody:
     }
 
     def __init__(self, target_id=None, target_type=None):
-        """ProvisionPermissionSetReqBody
+        r"""ProvisionPermissionSetReqBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ProvisionPermissionSetReqBody:
 
     @property
     def target_id(self):
-        """Gets the target_id of this ProvisionPermissionSetReqBody.
+        r"""Gets the target_id of this ProvisionPermissionSetReqBody.
 
         账号ID
 
@@ -60,7 +60,7 @@ class ProvisionPermissionSetReqBody:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this ProvisionPermissionSetReqBody.
+        r"""Sets the target_id of this ProvisionPermissionSetReqBody.
 
         账号ID
 
@@ -71,7 +71,7 @@ class ProvisionPermissionSetReqBody:
 
     @property
     def target_type(self):
-        """Gets the target_type of this ProvisionPermissionSetReqBody.
+        r"""Gets the target_type of this ProvisionPermissionSetReqBody.
 
         创建绑定的实体类型
 
@@ -82,7 +82,7 @@ class ProvisionPermissionSetReqBody:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this ProvisionPermissionSetReqBody.
+        r"""Sets the target_type of this ProvisionPermissionSetReqBody.
 
         创建绑定的实体类型
 

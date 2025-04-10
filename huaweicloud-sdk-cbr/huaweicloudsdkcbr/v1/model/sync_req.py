@@ -25,7 +25,7 @@ class SyncReq:
     }
 
     def __init__(self, sync=None):
-        """SyncReq
+        r"""SyncReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SyncReq:
 
     @property
     def sync(self):
-        """Gets the sync of this SyncReq.
+        r"""Gets the sync of this SyncReq.
 
         :return: The sync of this SyncReq.
         :rtype: :class:`huaweicloudsdkcbr.v1.SyncParam`
@@ -51,7 +51,7 @@ class SyncReq:
 
     @sync.setter
     def sync(self, sync):
-        """Sets the sync of this SyncReq.
+        r"""Sets the sync of this SyncReq.
 
         :param sync: The sync of this SyncReq.
         :type sync: :class:`huaweicloudsdkcbr.v1.SyncParam`

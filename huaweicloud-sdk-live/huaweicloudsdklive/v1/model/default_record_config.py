@@ -33,7 +33,7 @@ class DefaultRecordConfig:
     }
 
     def __init__(self, record_format=None, obs_addr=None, hls_config=None, flv_config=None, mp4_config=None):
-        """DefaultRecordConfig
+        r"""DefaultRecordConfig
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class DefaultRecordConfig:
 
     @property
     def record_format(self):
-        """Gets the record_format of this DefaultRecordConfig.
+        r"""Gets the record_format of this DefaultRecordConfig.
 
         录制格式，当前支持：FLV，HLS，MP4三种格式，设置格式时必须使用大写字母
 
@@ -80,7 +80,7 @@ class DefaultRecordConfig:
 
     @record_format.setter
     def record_format(self, record_format):
-        """Sets the record_format of this DefaultRecordConfig.
+        r"""Sets the record_format of this DefaultRecordConfig.
 
         录制格式，当前支持：FLV，HLS，MP4三种格式，设置格式时必须使用大写字母
 
@@ -91,7 +91,7 @@ class DefaultRecordConfig:
 
     @property
     def obs_addr(self):
-        """Gets the obs_addr of this DefaultRecordConfig.
+        r"""Gets the obs_addr of this DefaultRecordConfig.
 
         :return: The obs_addr of this DefaultRecordConfig.
         :rtype: :class:`huaweicloudsdklive.v1.RecordObsFileAddr`
@@ -100,7 +100,7 @@ class DefaultRecordConfig:
 
     @obs_addr.setter
     def obs_addr(self, obs_addr):
-        """Sets the obs_addr of this DefaultRecordConfig.
+        r"""Sets the obs_addr of this DefaultRecordConfig.
 
         :param obs_addr: The obs_addr of this DefaultRecordConfig.
         :type obs_addr: :class:`huaweicloudsdklive.v1.RecordObsFileAddr`
@@ -109,7 +109,7 @@ class DefaultRecordConfig:
 
     @property
     def hls_config(self):
-        """Gets the hls_config of this DefaultRecordConfig.
+        r"""Gets the hls_config of this DefaultRecordConfig.
 
         :return: The hls_config of this DefaultRecordConfig.
         :rtype: :class:`huaweicloudsdklive.v1.HLSRecordConfig`
@@ -118,7 +118,7 @@ class DefaultRecordConfig:
 
     @hls_config.setter
     def hls_config(self, hls_config):
-        """Sets the hls_config of this DefaultRecordConfig.
+        r"""Sets the hls_config of this DefaultRecordConfig.
 
         :param hls_config: The hls_config of this DefaultRecordConfig.
         :type hls_config: :class:`huaweicloudsdklive.v1.HLSRecordConfig`
@@ -127,7 +127,7 @@ class DefaultRecordConfig:
 
     @property
     def flv_config(self):
-        """Gets the flv_config of this DefaultRecordConfig.
+        r"""Gets the flv_config of this DefaultRecordConfig.
 
         :return: The flv_config of this DefaultRecordConfig.
         :rtype: :class:`huaweicloudsdklive.v1.FLVRecordConfig`
@@ -136,7 +136,7 @@ class DefaultRecordConfig:
 
     @flv_config.setter
     def flv_config(self, flv_config):
-        """Sets the flv_config of this DefaultRecordConfig.
+        r"""Sets the flv_config of this DefaultRecordConfig.
 
         :param flv_config: The flv_config of this DefaultRecordConfig.
         :type flv_config: :class:`huaweicloudsdklive.v1.FLVRecordConfig`
@@ -145,7 +145,7 @@ class DefaultRecordConfig:
 
     @property
     def mp4_config(self):
-        """Gets the mp4_config of this DefaultRecordConfig.
+        r"""Gets the mp4_config of this DefaultRecordConfig.
 
         :return: The mp4_config of this DefaultRecordConfig.
         :rtype: :class:`huaweicloudsdklive.v1.MP4RecordConfig`
@@ -154,7 +154,7 @@ class DefaultRecordConfig:
 
     @mp4_config.setter
     def mp4_config(self, mp4_config):
-        """Sets the mp4_config of this DefaultRecordConfig.
+        r"""Sets the mp4_config of this DefaultRecordConfig.
 
         :param mp4_config: The mp4_config of this DefaultRecordConfig.
         :type mp4_config: :class:`huaweicloudsdklive.v1.MP4RecordConfig`

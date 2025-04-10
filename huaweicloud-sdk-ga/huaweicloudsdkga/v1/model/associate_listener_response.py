@@ -26,7 +26,7 @@ class AssociateListenerResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """AssociateListenerResponse
+        r"""AssociateListenerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AssociateListenerResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this AssociateListenerResponse.
+        r"""Gets the request_id of this AssociateListenerResponse.
 
         请求ID。
 
@@ -55,7 +55,7 @@ class AssociateListenerResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AssociateListenerResponse.
+        r"""Sets the request_id of this AssociateListenerResponse.
 
         请求ID。
 

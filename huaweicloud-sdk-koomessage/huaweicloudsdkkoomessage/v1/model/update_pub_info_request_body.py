@@ -43,7 +43,7 @@ class UpdatePubInfoRequestBody:
     }
 
     def __init__(self, change_reason=None, logo_img=None, authorization_files=None, pub_name=None, pub_abstract=None, pub_remark=None, auto_get_port=None, signs_for_auto_get_port=None, areas_for_auto_get_port=None, industry=None):
-        """UpdatePubInfoRequestBody
+        r"""UpdatePubInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class UpdatePubInfoRequestBody:
 
     @property
     def change_reason(self):
-        """Gets the change_reason of this UpdatePubInfoRequestBody.
+        r"""Gets the change_reason of this UpdatePubInfoRequestBody.
 
         更新原因。
 
@@ -116,7 +116,7 @@ class UpdatePubInfoRequestBody:
 
     @change_reason.setter
     def change_reason(self, change_reason):
-        """Sets the change_reason of this UpdatePubInfoRequestBody.
+        r"""Sets the change_reason of this UpdatePubInfoRequestBody.
 
         更新原因。
 
@@ -127,7 +127,7 @@ class UpdatePubInfoRequestBody:
 
     @property
     def logo_img(self):
-        """Gets the logo_img of this UpdatePubInfoRequestBody.
+        r"""Gets the logo_img of this UpdatePubInfoRequestBody.
 
         服务号LOGO图片资源ID。  > 通过上传智能信息服务号图片资源接口上传LOGO图片后获得的图片resource_id。图片要求大于等于240*240且比例相同。 
 
@@ -138,7 +138,7 @@ class UpdatePubInfoRequestBody:
 
     @logo_img.setter
     def logo_img(self, logo_img):
-        """Sets the logo_img of this UpdatePubInfoRequestBody.
+        r"""Sets the logo_img of this UpdatePubInfoRequestBody.
 
         服务号LOGO图片资源ID。  > 通过上传智能信息服务号图片资源接口上传LOGO图片后获得的图片resource_id。图片要求大于等于240*240且比例相同。 
 
@@ -149,7 +149,7 @@ class UpdatePubInfoRequestBody:
 
     @property
     def authorization_files(self):
-        """Gets the authorization_files of this UpdatePubInfoRequestBody.
+        r"""Gets the authorization_files of this UpdatePubInfoRequestBody.
 
         授权证明图片资源ID，最多支持6张。
 
@@ -160,7 +160,7 @@ class UpdatePubInfoRequestBody:
 
     @authorization_files.setter
     def authorization_files(self, authorization_files):
-        """Sets the authorization_files of this UpdatePubInfoRequestBody.
+        r"""Sets the authorization_files of this UpdatePubInfoRequestBody.
 
         授权证明图片资源ID，最多支持6张。
 
@@ -171,7 +171,7 @@ class UpdatePubInfoRequestBody:
 
     @property
     def pub_name(self):
-        """Gets the pub_name of this UpdatePubInfoRequestBody.
+        r"""Gets the pub_name of this UpdatePubInfoRequestBody.
 
         服务号名称。
 
@@ -182,7 +182,7 @@ class UpdatePubInfoRequestBody:
 
     @pub_name.setter
     def pub_name(self, pub_name):
-        """Sets the pub_name of this UpdatePubInfoRequestBody.
+        r"""Sets the pub_name of this UpdatePubInfoRequestBody.
 
         服务号名称。
 
@@ -193,7 +193,7 @@ class UpdatePubInfoRequestBody:
 
     @property
     def pub_abstract(self):
-        """Gets the pub_abstract of this UpdatePubInfoRequestBody.
+        r"""Gets the pub_abstract of this UpdatePubInfoRequestBody.
 
         服务号简介。
 
@@ -204,7 +204,7 @@ class UpdatePubInfoRequestBody:
 
     @pub_abstract.setter
     def pub_abstract(self, pub_abstract):
-        """Sets the pub_abstract of this UpdatePubInfoRequestBody.
+        r"""Sets the pub_abstract of this UpdatePubInfoRequestBody.
 
         服务号简介。
 
@@ -215,7 +215,7 @@ class UpdatePubInfoRequestBody:
 
     @property
     def pub_remark(self):
-        """Gets the pub_remark of this UpdatePubInfoRequestBody.
+        r"""Gets the pub_remark of this UpdatePubInfoRequestBody.
 
         服务号备注。
 
@@ -226,7 +226,7 @@ class UpdatePubInfoRequestBody:
 
     @pub_remark.setter
     def pub_remark(self, pub_remark):
-        """Sets the pub_remark of this UpdatePubInfoRequestBody.
+        r"""Sets the pub_remark of this UpdatePubInfoRequestBody.
 
         服务号备注。
 
@@ -237,7 +237,7 @@ class UpdatePubInfoRequestBody:
 
     @property
     def auto_get_port(self):
-        """Gets the auto_get_port of this UpdatePubInfoRequestBody.
+        r"""Gets the auto_get_port of this UpdatePubInfoRequestBody.
 
         自动获取端口。
 
@@ -248,7 +248,7 @@ class UpdatePubInfoRequestBody:
 
     @auto_get_port.setter
     def auto_get_port(self, auto_get_port):
-        """Sets the auto_get_port of this UpdatePubInfoRequestBody.
+        r"""Sets the auto_get_port of this UpdatePubInfoRequestBody.
 
         自动获取端口。
 
@@ -259,7 +259,7 @@ class UpdatePubInfoRequestBody:
 
     @property
     def signs_for_auto_get_port(self):
-        """Gets the signs_for_auto_get_port of this UpdatePubInfoRequestBody.
+        r"""Gets the signs_for_auto_get_port of this UpdatePubInfoRequestBody.
 
         自动收集端口使用的签名列表。  > auto_get_port为1时，该字段为必填，每个签名长度须为2-18个字符，每个服务号签名不可以重复。 
 
@@ -270,7 +270,7 @@ class UpdatePubInfoRequestBody:
 
     @signs_for_auto_get_port.setter
     def signs_for_auto_get_port(self, signs_for_auto_get_port):
-        """Sets the signs_for_auto_get_port of this UpdatePubInfoRequestBody.
+        r"""Sets the signs_for_auto_get_port of this UpdatePubInfoRequestBody.
 
         自动收集端口使用的签名列表。  > auto_get_port为1时，该字段为必填，每个签名长度须为2-18个字符，每个服务号签名不可以重复。 
 
@@ -281,7 +281,7 @@ class UpdatePubInfoRequestBody:
 
     @property
     def areas_for_auto_get_port(self):
-        """Gets the areas_for_auto_get_port of this UpdatePubInfoRequestBody.
+        r"""Gets the areas_for_auto_get_port of this UpdatePubInfoRequestBody.
 
         自动收集端口生效的地区列表。地区取值见《地区名称列表》。  > auto_get_port为1时，该字段有效。不填则默认全国，不允许传入重叠地区。 
 
@@ -292,7 +292,7 @@ class UpdatePubInfoRequestBody:
 
     @areas_for_auto_get_port.setter
     def areas_for_auto_get_port(self, areas_for_auto_get_port):
-        """Sets the areas_for_auto_get_port of this UpdatePubInfoRequestBody.
+        r"""Sets the areas_for_auto_get_port of this UpdatePubInfoRequestBody.
 
         自动收集端口生效的地区列表。地区取值见《地区名称列表》。  > auto_get_port为1时，该字段有效。不填则默认全国，不允许传入重叠地区。 
 
@@ -303,7 +303,7 @@ class UpdatePubInfoRequestBody:
 
     @property
     def industry(self):
-        """Gets the industry of this UpdatePubInfoRequestBody.
+        r"""Gets the industry of this UpdatePubInfoRequestBody.
 
         从事行业，默认取服务号所属商家的行业分类。 - 1：金融理财 - 2：社交通讯 - 3：影音娱乐 - 4：旅游出行 - 5：购物 - 6：本地生活 - 7：运动健康 - 8：教育培训 - 9：新闻阅读 - 10：运营商  - 11：其他 
 
@@ -314,7 +314,7 @@ class UpdatePubInfoRequestBody:
 
     @industry.setter
     def industry(self, industry):
-        """Sets the industry of this UpdatePubInfoRequestBody.
+        r"""Sets the industry of this UpdatePubInfoRequestBody.
 
         从事行业，默认取服务号所属商家的行业分类。 - 1：金融理财 - 2：社交通讯 - 3：影音娱乐 - 4：旅游出行 - 5：购物 - 6：本地生活 - 7：运动健康 - 8：教育培训 - 9：新闻阅读 - 10：运营商  - 11：其他 
 

@@ -25,7 +25,7 @@ class ListBridgeVersionsRequest:
     }
 
     def __init__(self, type=None):
-        """ListBridgeVersionsRequest
+        r"""ListBridgeVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListBridgeVersionsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListBridgeVersionsRequest.
+        r"""Gets the type of this ListBridgeVersionsRequest.
 
         servicebridge 类型，可选  rds, mqs 或 cache
 
@@ -53,7 +53,7 @@ class ListBridgeVersionsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListBridgeVersionsRequest.
+        r"""Sets the type of this ListBridgeVersionsRequest.
 
         servicebridge 类型，可选  rds, mqs 或 cache
 

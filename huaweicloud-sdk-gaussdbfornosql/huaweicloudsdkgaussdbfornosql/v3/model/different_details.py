@@ -29,7 +29,7 @@ class DifferentDetails:
     }
 
     def __init__(self, parameter_name=None, source_value=None, target_value=None):
-        """DifferentDetails
+        r"""DifferentDetails
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DifferentDetails:
 
     @property
     def parameter_name(self):
-        """Gets the parameter_name of this DifferentDetails.
+        r"""Gets the parameter_name of this DifferentDetails.
 
         参数名称
 
@@ -65,7 +65,7 @@ class DifferentDetails:
 
     @parameter_name.setter
     def parameter_name(self, parameter_name):
-        """Sets the parameter_name of this DifferentDetails.
+        r"""Sets the parameter_name of this DifferentDetails.
 
         参数名称
 
@@ -76,7 +76,7 @@ class DifferentDetails:
 
     @property
     def source_value(self):
-        """Gets the source_value of this DifferentDetails.
+        r"""Gets the source_value of this DifferentDetails.
 
         源参数模板中的参数值。
 
@@ -87,7 +87,7 @@ class DifferentDetails:
 
     @source_value.setter
     def source_value(self, source_value):
-        """Sets the source_value of this DifferentDetails.
+        r"""Sets the source_value of this DifferentDetails.
 
         源参数模板中的参数值。
 
@@ -98,7 +98,7 @@ class DifferentDetails:
 
     @property
     def target_value(self):
-        """Gets the target_value of this DifferentDetails.
+        r"""Gets the target_value of this DifferentDetails.
 
         目标参数模板中的参数值。
 
@@ -109,7 +109,7 @@ class DifferentDetails:
 
     @target_value.setter
     def target_value(self, target_value):
-        """Sets the target_value of this DifferentDetails.
+        r"""Sets the target_value of this DifferentDetails.
 
         目标参数模板中的参数值。
 

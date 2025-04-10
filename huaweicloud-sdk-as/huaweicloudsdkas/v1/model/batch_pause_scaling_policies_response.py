@@ -24,7 +24,7 @@ class BatchPauseScalingPoliciesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchPauseScalingPoliciesResponse
+        r"""BatchPauseScalingPoliciesResponse
 
         The model defined in huaweicloud sdk
 

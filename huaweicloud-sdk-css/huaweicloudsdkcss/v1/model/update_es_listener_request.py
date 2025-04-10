@@ -29,7 +29,7 @@ class UpdateEsListenerRequest:
     }
 
     def __init__(self, cluster_id=None, listener_id=None, body=None):
-        """UpdateEsListenerRequest
+        r"""UpdateEsListenerRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEsListenerRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateEsListenerRequest.
+        r"""Gets the cluster_id of this UpdateEsListenerRequest.
 
         指定待操作的集群ID。
 
@@ -66,7 +66,7 @@ class UpdateEsListenerRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateEsListenerRequest.
+        r"""Sets the cluster_id of this UpdateEsListenerRequest.
 
         指定待操作的集群ID。
 
@@ -77,7 +77,7 @@ class UpdateEsListenerRequest:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this UpdateEsListenerRequest.
+        r"""Gets the listener_id of this UpdateEsListenerRequest.
 
         指定待操作得监听器ID。
 
@@ -88,7 +88,7 @@ class UpdateEsListenerRequest:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this UpdateEsListenerRequest.
+        r"""Sets the listener_id of this UpdateEsListenerRequest.
 
         指定待操作得监听器ID。
 
@@ -99,7 +99,7 @@ class UpdateEsListenerRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEsListenerRequest.
+        r"""Gets the body of this UpdateEsListenerRequest.
 
         :return: The body of this UpdateEsListenerRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateEsListenerRequestBody`
@@ -108,7 +108,7 @@ class UpdateEsListenerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEsListenerRequest.
+        r"""Sets the body of this UpdateEsListenerRequest.
 
         :param body: The body of this UpdateEsListenerRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UpdateEsListenerRequestBody`

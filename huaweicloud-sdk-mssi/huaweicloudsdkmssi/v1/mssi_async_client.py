@@ -34,7 +34,7 @@ class MssiAsyncClient(Client):
         return client_builder
 
     def create_connection_info_async(self, request):
-        """新建Connection
+        r"""新建Connection
 
         新建连接
         
@@ -99,7 +99,7 @@ class MssiAsyncClient(Client):
         return http_info
 
     def create_custom_connector_from_openapi_async(self, request):
-        """新建自定义连接器(导入swagger方式)
+        r"""新建自定义连接器(导入swagger方式)
 
         新建自定义连接器(导入swagger方式)
         
@@ -164,7 +164,7 @@ class MssiAsyncClient(Client):
         return http_info
 
     def create_flow_async(self, request):
-        """创建flow
+        r"""创建flow
 
         创建flow
         
@@ -229,7 +229,7 @@ class MssiAsyncClient(Client):
         return http_info
 
     def create_flow_template_from_flow_async(self, request):
-        """根据流创建Flow模板
+        r"""根据流创建Flow模板
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -295,7 +295,7 @@ class MssiAsyncClient(Client):
         return http_info
 
     def delete_connection_info_async(self, request):
-        """删除Connection
+        r"""删除Connection
 
         删除Connection
         
@@ -360,7 +360,7 @@ class MssiAsyncClient(Client):
         return http_info
 
     def delete_custom_connector_async(self, request):
-        """删除自定义连接器
+        r"""删除自定义连接器
 
         删除自定义连接器
         
@@ -425,7 +425,7 @@ class MssiAsyncClient(Client):
         return http_info
 
     def delete_flow_async(self, request):
-        """删除Flow
+        r"""删除Flow
 
         删除Flow
         
@@ -490,7 +490,7 @@ class MssiAsyncClient(Client):
         return http_info
 
     def search_flow_by_id_async(self, request):
-        """查询特定flow
+        r"""查询特定flow
 
         查询特定flow
         
@@ -557,7 +557,7 @@ class MssiAsyncClient(Client):
         return http_info
 
     def show_all_connections_async(self, request):
-        """查询Connection列表
+        r"""查询Connection列表
 
         查询所有连接
         
@@ -626,7 +626,7 @@ class MssiAsyncClient(Client):
         return http_info
 
     def show_all_flows_async(self, request):
-        """查询所有Flow
+        r"""查询所有Flow
 
         查询所有Flow
         
@@ -701,7 +701,7 @@ class MssiAsyncClient(Client):
         return http_info
 
     def show_connectors_async(self, request):
-        """查询Connector列表
+        r"""查询Connector列表
 
         查询Connector列表
         
@@ -776,7 +776,7 @@ class MssiAsyncClient(Client):
         return http_info
 
     def show_custom_connector_async(self, request):
-        """发布连接器
+        r"""发布连接器
 
         发布连接器
         
@@ -841,7 +841,7 @@ class MssiAsyncClient(Client):
         return http_info
 
     def show_custom_connectors_async(self, request):
-        """查询CustomConnector列表
+        r"""查询CustomConnector列表
 
         查询CustomConnector列表
         
@@ -910,7 +910,7 @@ class MssiAsyncClient(Client):
         return http_info
 
     def show_single_connection_async(self, request):
-        """查询单个Connection
+        r"""查询单个Connection
 
         查询单个连接
         
@@ -975,7 +975,7 @@ class MssiAsyncClient(Client):
         return http_info
 
     def update_connection_info_async(self, request):
-        """修改连接配置内容
+        r"""修改连接配置内容
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -1041,7 +1041,7 @@ class MssiAsyncClient(Client):
         return http_info
 
     def update_flow_async(self, request):
-        """更新flow
+        r"""更新flow
 
         更新flow
         

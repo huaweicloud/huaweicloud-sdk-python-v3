@@ -35,7 +35,7 @@ class CreateDcDsReqDTO:
     }
 
     def __init__(self, ds_id=None, config=None, name=None, module_id=None, tpl_id=None, quality_report=None):
-        """CreateDcDsReqDTO
+        r"""CreateDcDsReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class CreateDcDsReqDTO:
 
     @property
     def ds_id(self):
-        """Gets the ds_id of this CreateDcDsReqDTO.
+        r"""Gets the ds_id of this CreateDcDsReqDTO.
 
         采集数据源id，节点下唯一
 
@@ -84,7 +84,7 @@ class CreateDcDsReqDTO:
 
     @ds_id.setter
     def ds_id(self, ds_id):
-        """Sets the ds_id of this CreateDcDsReqDTO.
+        r"""Sets the ds_id of this CreateDcDsReqDTO.
 
         采集数据源id，节点下唯一
 
@@ -95,7 +95,7 @@ class CreateDcDsReqDTO:
 
     @property
     def config(self):
-        """Gets the config of this CreateDcDsReqDTO.
+        r"""Gets the config of this CreateDcDsReqDTO.
 
         数据源的连接及采集信息
 
@@ -106,7 +106,7 @@ class CreateDcDsReqDTO:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this CreateDcDsReqDTO.
+        r"""Sets the config of this CreateDcDsReqDTO.
 
         数据源的连接及采集信息
 
@@ -117,7 +117,7 @@ class CreateDcDsReqDTO:
 
     @property
     def name(self):
-        """Gets the name of this CreateDcDsReqDTO.
+        r"""Gets the name of this CreateDcDsReqDTO.
 
         采集数据源名称，允许中、数字、英文大小写、下划线、中划线
 
@@ -128,7 +128,7 @@ class CreateDcDsReqDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDcDsReqDTO.
+        r"""Sets the name of this CreateDcDsReqDTO.
 
         采集数据源名称，允许中、数字、英文大小写、下划线、中划线
 
@@ -139,7 +139,7 @@ class CreateDcDsReqDTO:
 
     @property
     def module_id(self):
-        """Gets the module_id of this CreateDcDsReqDTO.
+        r"""Gets the module_id of this CreateDcDsReqDTO.
 
         模块id
 
@@ -150,7 +150,7 @@ class CreateDcDsReqDTO:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this CreateDcDsReqDTO.
+        r"""Sets the module_id of this CreateDcDsReqDTO.
 
         模块id
 
@@ -161,7 +161,7 @@ class CreateDcDsReqDTO:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this CreateDcDsReqDTO.
+        r"""Gets the tpl_id of this CreateDcDsReqDTO.
 
         模板id，节点下唯一
 
@@ -172,7 +172,7 @@ class CreateDcDsReqDTO:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this CreateDcDsReqDTO.
+        r"""Sets the tpl_id of this CreateDcDsReqDTO.
 
         模板id，节点下唯一
 
@@ -183,7 +183,7 @@ class CreateDcDsReqDTO:
 
     @property
     def quality_report(self):
-        """Gets the quality_report of this CreateDcDsReqDTO.
+        r"""Gets the quality_report of this CreateDcDsReqDTO.
 
         质量上报开关，不携带或值不为true，默认为false
 
@@ -194,7 +194,7 @@ class CreateDcDsReqDTO:
 
     @quality_report.setter
     def quality_report(self, quality_report):
-        """Sets the quality_report of this CreateDcDsReqDTO.
+        r"""Sets the quality_report of this CreateDcDsReqDTO.
 
         质量上报开关，不携带或值不为true，默认为false
 

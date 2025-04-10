@@ -29,7 +29,7 @@ class UpdateAzByInstanceTypeRequest:
     }
 
     def __init__(self, cluster_id=None, inst_type=None, body=None):
-        """UpdateAzByInstanceTypeRequest
+        r"""UpdateAzByInstanceTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateAzByInstanceTypeRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateAzByInstanceTypeRequest.
+        r"""Gets the cluster_id of this UpdateAzByInstanceTypeRequest.
 
         待切换AZ的集群ID。
 
@@ -66,7 +66,7 @@ class UpdateAzByInstanceTypeRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateAzByInstanceTypeRequest.
+        r"""Sets the cluster_id of this UpdateAzByInstanceTypeRequest.
 
         待切换AZ的集群ID。
 
@@ -77,7 +77,7 @@ class UpdateAzByInstanceTypeRequest:
 
     @property
     def inst_type(self):
-        """Gets the inst_type of this UpdateAzByInstanceTypeRequest.
+        r"""Gets the inst_type of this UpdateAzByInstanceTypeRequest.
 
         待切换AZ的节点类型。支持: - all：所有节点类型。 - ess： 数据节点。 - ess-cold: 冷数据节点。 - ess-client: Client节点。 - ess-master: Master节点。
 
@@ -88,7 +88,7 @@ class UpdateAzByInstanceTypeRequest:
 
     @inst_type.setter
     def inst_type(self, inst_type):
-        """Sets the inst_type of this UpdateAzByInstanceTypeRequest.
+        r"""Sets the inst_type of this UpdateAzByInstanceTypeRequest.
 
         待切换AZ的节点类型。支持: - all：所有节点类型。 - ess： 数据节点。 - ess-cold: 冷数据节点。 - ess-client: Client节点。 - ess-master: Master节点。
 
@@ -99,7 +99,7 @@ class UpdateAzByInstanceTypeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAzByInstanceTypeRequest.
+        r"""Gets the body of this UpdateAzByInstanceTypeRequest.
 
         :return: The body of this UpdateAzByInstanceTypeRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateAzByInstanceTypeReq`
@@ -108,7 +108,7 @@ class UpdateAzByInstanceTypeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAzByInstanceTypeRequest.
+        r"""Sets the body of this UpdateAzByInstanceTypeRequest.
 
         :param body: The body of this UpdateAzByInstanceTypeRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UpdateAzByInstanceTypeReq`

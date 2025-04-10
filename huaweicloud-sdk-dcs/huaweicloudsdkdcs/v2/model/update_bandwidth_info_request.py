@@ -25,7 +25,7 @@ class UpdateBandwidthInfoRequest:
     }
 
     def __init__(self, group_bandwidths=None):
-        """UpdateBandwidthInfoRequest
+        r"""UpdateBandwidthInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateBandwidthInfoRequest:
 
     @property
     def group_bandwidths(self):
-        """Gets the group_bandwidths of this UpdateBandwidthInfoRequest.
+        r"""Gets the group_bandwidths of this UpdateBandwidthInfoRequest.
 
         分片带宽列表。
 
@@ -54,7 +54,7 @@ class UpdateBandwidthInfoRequest:
 
     @group_bandwidths.setter
     def group_bandwidths(self, group_bandwidths):
-        """Sets the group_bandwidths of this UpdateBandwidthInfoRequest.
+        r"""Sets the group_bandwidths of this UpdateBandwidthInfoRequest.
 
         分片带宽列表。
 

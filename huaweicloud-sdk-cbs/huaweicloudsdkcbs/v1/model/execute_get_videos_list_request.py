@@ -29,7 +29,7 @@ class ExecuteGetVideosListRequest:
     }
 
     def __init__(self, limit=None, name=None, offset=None):
-        """ExecuteGetVideosListRequest
+        r"""ExecuteGetVideosListRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ExecuteGetVideosListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ExecuteGetVideosListRequest.
+        r"""Gets the limit of this ExecuteGetVideosListRequest.
 
         范围：大于等于1 默认：10
 
@@ -65,7 +65,7 @@ class ExecuteGetVideosListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ExecuteGetVideosListRequest.
+        r"""Sets the limit of this ExecuteGetVideosListRequest.
 
         范围：大于等于1 默认：10
 
@@ -76,7 +76,7 @@ class ExecuteGetVideosListRequest:
 
     @property
     def name(self):
-        """Gets the name of this ExecuteGetVideosListRequest.
+        r"""Gets the name of this ExecuteGetVideosListRequest.
 
         长度小于63
 
@@ -87,7 +87,7 @@ class ExecuteGetVideosListRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExecuteGetVideosListRequest.
+        r"""Sets the name of this ExecuteGetVideosListRequest.
 
         长度小于63
 
@@ -98,7 +98,7 @@ class ExecuteGetVideosListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ExecuteGetVideosListRequest.
+        r"""Gets the offset of this ExecuteGetVideosListRequest.
 
         范围：大于等于0 默认：0
 
@@ -109,7 +109,7 @@ class ExecuteGetVideosListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ExecuteGetVideosListRequest.
+        r"""Sets the offset of this ExecuteGetVideosListRequest.
 
         范围：大于等于0 默认：0
 

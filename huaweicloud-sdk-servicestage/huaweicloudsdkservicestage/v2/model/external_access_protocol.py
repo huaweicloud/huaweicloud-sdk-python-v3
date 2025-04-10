@@ -27,7 +27,7 @@ class ExternalAccessProtocol:
     }
 
     def __init__(self):
-        """ExternalAccessProtocol
+        r"""ExternalAccessProtocol
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class BucketDto:
     }
 
     def __init__(self, name=None, region=None, type=None):
-        """BucketDto
+        r"""BucketDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BucketDto:
 
     @property
     def name(self):
-        """Gets the name of this BucketDto.
+        r"""Gets the name of this BucketDto.
 
         桶名称
 
@@ -68,7 +68,7 @@ class BucketDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BucketDto.
+        r"""Sets the name of this BucketDto.
 
         桶名称
 
@@ -79,7 +79,7 @@ class BucketDto:
 
     @property
     def region(self):
-        """Gets the region of this BucketDto.
+        r"""Gets the region of this BucketDto.
 
         区域
 
@@ -90,7 +90,7 @@ class BucketDto:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this BucketDto.
+        r"""Sets the region of this BucketDto.
 
         区域
 
@@ -101,7 +101,7 @@ class BucketDto:
 
     @property
     def type(self):
-        """Gets the type of this BucketDto.
+        r"""Gets the type of this BucketDto.
 
         :return: The type of this BucketDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BucketType`
@@ -110,7 +110,7 @@ class BucketDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BucketDto.
+        r"""Sets the type of this BucketDto.
 
         :param type: The type of this BucketDto.
         :type type: :class:`huaweicloudsdkeihealth.v1.BucketType`

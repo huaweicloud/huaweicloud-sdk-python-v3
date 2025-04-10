@@ -23,7 +23,7 @@ class ListInstancesStatusRequest:
     }
 
     def __init__(self):
-        """ListInstancesStatusRequest
+        r"""ListInstancesStatusRequest
 
         The model defined in huaweicloud sdk
 

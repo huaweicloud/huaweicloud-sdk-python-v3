@@ -30,7 +30,7 @@ class ListCasesStatusResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListCasesStatusResponse
+        r"""ListCasesStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCasesStatusResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListCasesStatusResponse.
+        r"""Gets the error of this ListCasesStatusResponse.
 
         :return: The error of this ListCasesStatusResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorOfobject`
@@ -67,7 +67,7 @@ class ListCasesStatusResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListCasesStatusResponse.
+        r"""Sets the error of this ListCasesStatusResponse.
 
         :param error: The error of this ListCasesStatusResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorOfobject`
@@ -76,7 +76,7 @@ class ListCasesStatusResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListCasesStatusResponse.
+        r"""Gets the result of this ListCasesStatusResponse.
 
         :return: The result of this ListCasesStatusResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.QueryCasesStatusResponseV2`
@@ -85,7 +85,7 @@ class ListCasesStatusResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListCasesStatusResponse.
+        r"""Sets the result of this ListCasesStatusResponse.
 
         :param result: The result of this ListCasesStatusResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.QueryCasesStatusResponseV2`
@@ -94,7 +94,7 @@ class ListCasesStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListCasesStatusResponse.
+        r"""Gets the status of this ListCasesStatusResponse.
 
         状态值，如success、error
 
@@ -105,7 +105,7 @@ class ListCasesStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListCasesStatusResponse.
+        r"""Sets the status of this ListCasesStatusResponse.
 
         状态值，如success、error
 

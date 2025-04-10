@@ -45,7 +45,7 @@ class ListRunsRequest:
     }
 
     def __init__(self, offset=None, limit=None, start_time=None, end_time=None, sql_pattern=None, sql_type=None, job_type=None, status=None, order_by=None, order=None, job_name=None):
-        """ListRunsRequest
+        r"""ListRunsRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListRunsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRunsRequest.
+        r"""Gets the offset of this ListRunsRequest.
 
         当前偏移量，默认为0。
 
@@ -124,7 +124,7 @@ class ListRunsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRunsRequest.
+        r"""Sets the offset of this ListRunsRequest.
 
         当前偏移量，默认为0。
 
@@ -135,7 +135,7 @@ class ListRunsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRunsRequest.
+        r"""Gets the limit of this ListRunsRequest.
 
         每页显示的最大作业个数，范围: [1, 100]。默认值：10。
 
@@ -146,7 +146,7 @@ class ListRunsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRunsRequest.
+        r"""Sets the limit of this ListRunsRequest.
 
         每页显示的最大作业个数，范围: [1, 100]。默认值：10。
 
@@ -157,7 +157,7 @@ class ListRunsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListRunsRequest.
+        r"""Gets the start_time of this ListRunsRequest.
 
         用于查询开始时间在该时间点之后的作业。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss.SSS。
 
@@ -168,7 +168,7 @@ class ListRunsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListRunsRequest.
+        r"""Sets the start_time of this ListRunsRequest.
 
         用于查询开始时间在该时间点之后的作业。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss.SSS。
 
@@ -179,7 +179,7 @@ class ListRunsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListRunsRequest.
+        r"""Gets the end_time of this ListRunsRequest.
 
         用于查询开始时间在该时间点之前的作业。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss.SSS。
 
@@ -190,7 +190,7 @@ class ListRunsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListRunsRequest.
+        r"""Sets the end_time of this ListRunsRequest.
 
         用于查询开始时间在该时间点之前的作业。时间格式为ISO日期时间格式yyyy-MM-dd'T'HH:mm:ss.SSS。
 
@@ -201,7 +201,7 @@ class ListRunsRequest:
 
     @property
     def sql_pattern(self):
-        """Gets the sql_pattern of this ListRunsRequest.
+        r"""Gets the sql_pattern of this ListRunsRequest.
 
         仅当作业类型为SqlJob时可用。指定sql片段作为作业过滤条件，不区分大小写。
 
@@ -212,7 +212,7 @@ class ListRunsRequest:
 
     @sql_pattern.setter
     def sql_pattern(self, sql_pattern):
-        """Sets the sql_pattern of this ListRunsRequest.
+        r"""Sets the sql_pattern of this ListRunsRequest.
 
         仅当作业类型为SqlJob时可用。指定sql片段作为作业过滤条件，不区分大小写。
 
@@ -223,7 +223,7 @@ class ListRunsRequest:
 
     @property
     def sql_type(self):
-        """Gets the sql_type of this ListRunsRequest.
+        r"""Gets the sql_type of this ListRunsRequest.
 
         仅当作业类型为SqlJob时可用。SQL作业类型。DDL, DCL, IMPORT, EXPORT, QUERY, INSERT, SELECT, DATA_MIGRATION, ANALYZE, OBS_SELECT, COMPLEX
 
@@ -234,7 +234,7 @@ class ListRunsRequest:
 
     @sql_type.setter
     def sql_type(self, sql_type):
-        """Sets the sql_type of this ListRunsRequest.
+        r"""Sets the sql_type of this ListRunsRequest.
 
         仅当作业类型为SqlJob时可用。SQL作业类型。DDL, DCL, IMPORT, EXPORT, QUERY, INSERT, SELECT, DATA_MIGRATION, ANALYZE, OBS_SELECT, COMPLEX
 
@@ -245,7 +245,7 @@ class ListRunsRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ListRunsRequest.
+        r"""Gets the job_type of this ListRunsRequest.
 
         作业类型。目前仅支持SqlJob
 
@@ -256,7 +256,7 @@ class ListRunsRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ListRunsRequest.
+        r"""Sets the job_type of this ListRunsRequest.
 
         作业类型。目前仅支持SqlJob
 
@@ -267,7 +267,7 @@ class ListRunsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListRunsRequest.
+        r"""Gets the status of this ListRunsRequest.
 
         此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）
 
@@ -278,7 +278,7 @@ class ListRunsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListRunsRequest.
+        r"""Sets the status of this ListRunsRequest.
 
         此作业的当前状态，包含提交（LAUNCHING）、运行中（RUNNING）、完成（FINISHED）、失败（FAILED）、取消（CANCELLED）
 
@@ -289,7 +289,7 @@ class ListRunsRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListRunsRequest.
+        r"""Gets the order_by of this ListRunsRequest.
 
         指定作业排序字段，默认为从created_time（作业提交时间），支持duration（作业运行时长）、created_time（作业提交时间） 、job_name（作业名称）三种排序字段。
 
@@ -300,7 +300,7 @@ class ListRunsRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListRunsRequest.
+        r"""Sets the order_by of this ListRunsRequest.
 
         指定作业排序字段，默认为从created_time（作业提交时间），支持duration（作业运行时长）、created_time（作业提交时间） 、job_name（作业名称）三种排序字段。
 
@@ -311,7 +311,7 @@ class ListRunsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListRunsRequest.
+        r"""Gets the order of this ListRunsRequest.
 
         指定作业排序的升降序，默认为desc（降序），支持asc（升序）、desc（降序）两种排序方式。
 
@@ -322,7 +322,7 @@ class ListRunsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListRunsRequest.
+        r"""Sets the order of this ListRunsRequest.
 
         指定作业排序的升降序，默认为desc（降序），支持asc（升序）、desc（降序）两种排序方式。
 
@@ -333,7 +333,7 @@ class ListRunsRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListRunsRequest.
+        r"""Gets the job_name of this ListRunsRequest.
 
         作业名称
 
@@ -344,7 +344,7 @@ class ListRunsRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListRunsRequest.
+        r"""Sets the job_name of this ListRunsRequest.
 
         作业名称
 

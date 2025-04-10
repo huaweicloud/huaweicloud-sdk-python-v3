@@ -30,7 +30,7 @@ class ShowHasPipelineResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowHasPipelineResponse
+        r"""ShowHasPipelineResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowHasPipelineResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowHasPipelineResponse.
+        r"""Gets the error of this ShowHasPipelineResponse.
 
         :return: The error of this ShowHasPipelineResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ShowHasPipelineResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowHasPipelineResponse.
+        r"""Sets the error of this ShowHasPipelineResponse.
 
         :param error: The error of this ShowHasPipelineResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ShowHasPipelineResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowHasPipelineResponse.
+        r"""Gets the result of this ShowHasPipelineResponse.
 
         响应结果
 
@@ -87,7 +87,7 @@ class ShowHasPipelineResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowHasPipelineResponse.
+        r"""Sets the result of this ShowHasPipelineResponse.
 
         响应结果
 
@@ -98,7 +98,7 @@ class ShowHasPipelineResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowHasPipelineResponse.
+        r"""Gets the status of this ShowHasPipelineResponse.
 
         响应状态
 
@@ -109,7 +109,7 @@ class ShowHasPipelineResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowHasPipelineResponse.
+        r"""Sets the status of this ShowHasPipelineResponse.
 
         响应状态
 

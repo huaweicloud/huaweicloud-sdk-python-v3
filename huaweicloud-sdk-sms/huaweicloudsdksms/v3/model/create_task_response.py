@@ -26,7 +26,7 @@ class CreateTaskResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateTaskResponse
+        r"""CreateTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTaskResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateTaskResponse.
+        r"""Gets the id of this CreateTaskResponse.
 
         创建成功返回的任务ID
 
@@ -55,7 +55,7 @@ class CreateTaskResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateTaskResponse.
+        r"""Sets the id of this CreateTaskResponse.
 
         创建成功返回的任务ID
 

@@ -27,7 +27,7 @@ class NamedFormula:
     }
 
     def __init__(self, name=None, formula=None):
-        """NamedFormula
+        r"""NamedFormula
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NamedFormula:
 
     @property
     def name(self):
-        """Gets the name of this NamedFormula.
+        r"""Gets the name of this NamedFormula.
 
         公式名称，不能和输入参数名重复，正则：\"^[A-Za-z][A-Za-z_]{0,31}$\"
 
@@ -59,7 +59,7 @@ class NamedFormula:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NamedFormula.
+        r"""Sets the name of this NamedFormula.
 
         公式名称，不能和输入参数名重复，正则：\"^[A-Za-z][A-Za-z_]{0,31}$\"
 
@@ -70,7 +70,7 @@ class NamedFormula:
 
     @property
     def formula(self):
-        """Gets the formula of this NamedFormula.
+        r"""Gets the formula of this NamedFormula.
 
         公式，最多1024个字符
 
@@ -81,7 +81,7 @@ class NamedFormula:
 
     @formula.setter
     def formula(self, formula):
-        """Sets the formula of this NamedFormula.
+        r"""Sets the formula of this NamedFormula.
 
         公式，最多1024个字符
 

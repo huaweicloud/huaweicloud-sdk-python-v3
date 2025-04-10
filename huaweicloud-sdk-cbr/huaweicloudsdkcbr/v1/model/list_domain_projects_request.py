@@ -25,7 +25,7 @@ class ListDomainProjectsRequest:
     }
 
     def __init__(self, domain_name=None):
-        """ListDomainProjectsRequest
+        r"""ListDomainProjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListDomainProjectsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ListDomainProjectsRequest.
+        r"""Gets the domain_name of this ListDomainProjectsRequest.
 
         租户名称
 
@@ -53,7 +53,7 @@ class ListDomainProjectsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ListDomainProjectsRequest.
+        r"""Sets the domain_name of this ListDomainProjectsRequest.
 
         租户名称
 

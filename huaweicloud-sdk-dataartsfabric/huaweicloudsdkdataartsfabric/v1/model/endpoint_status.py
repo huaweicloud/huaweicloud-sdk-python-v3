@@ -35,7 +35,7 @@ class EndpointStatus:
     }
 
     def __init__(self):
-        """EndpointStatus
+        r"""EndpointStatus
 
         The model defined in huaweicloud sdk
 

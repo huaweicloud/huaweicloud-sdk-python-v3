@@ -26,7 +26,7 @@ class CreateQualityEnhanceTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None):
-        """CreateQualityEnhanceTemplateResponse
+        r"""CreateQualityEnhanceTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateQualityEnhanceTemplateResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreateQualityEnhanceTemplateResponse.
+        r"""Gets the template_id of this CreateQualityEnhanceTemplateResponse.
 
         模板ID。 
 
@@ -55,7 +55,7 @@ class CreateQualityEnhanceTemplateResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreateQualityEnhanceTemplateResponse.
+        r"""Sets the template_id of this CreateQualityEnhanceTemplateResponse.
 
         模板ID。 
 

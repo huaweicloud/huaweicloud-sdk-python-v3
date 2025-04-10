@@ -47,7 +47,7 @@ class CreateAuthInfoRequestBody:
     }
 
     def __init__(self, auth_info_name=None, user_name=None, password=None, krb5_conf=None, keytab=None, truststore_location=None, truststore_password=None, keystore_location=None, keystore_password=None, certificate_location=None, datasource_type=None, key_password=None):
-        """CreateAuthInfoRequestBody
+        r"""CreateAuthInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class CreateAuthInfoRequestBody:
 
     @property
     def auth_info_name(self):
-        """Gets the auth_info_name of this CreateAuthInfoRequestBody.
+        r"""Gets the auth_info_name of this CreateAuthInfoRequestBody.
 
         证书名
 
@@ -129,7 +129,7 @@ class CreateAuthInfoRequestBody:
 
     @auth_info_name.setter
     def auth_info_name(self, auth_info_name):
-        """Sets the auth_info_name of this CreateAuthInfoRequestBody.
+        r"""Sets the auth_info_name of this CreateAuthInfoRequestBody.
 
         证书名
 
@@ -140,7 +140,7 @@ class CreateAuthInfoRequestBody:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CreateAuthInfoRequestBody.
+        r"""Gets the user_name of this CreateAuthInfoRequestBody.
 
         用户安全集群的新登录用户名
 
@@ -151,7 +151,7 @@ class CreateAuthInfoRequestBody:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CreateAuthInfoRequestBody.
+        r"""Sets the user_name of this CreateAuthInfoRequestBody.
 
         用户安全集群的新登录用户名
 
@@ -162,7 +162,7 @@ class CreateAuthInfoRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this CreateAuthInfoRequestBody.
+        r"""Gets the password of this CreateAuthInfoRequestBody.
 
         用户安全集群的新登录密码
 
@@ -173,7 +173,7 @@ class CreateAuthInfoRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateAuthInfoRequestBody.
+        r"""Sets the password of this CreateAuthInfoRequestBody.
 
         用户安全集群的新登录密码
 
@@ -184,7 +184,7 @@ class CreateAuthInfoRequestBody:
 
     @property
     def krb5_conf(self):
-        """Gets the krb5_conf of this CreateAuthInfoRequestBody.
+        r"""Gets the krb5_conf of this CreateAuthInfoRequestBody.
 
         krb5配置文件obs路径
 
@@ -195,7 +195,7 @@ class CreateAuthInfoRequestBody:
 
     @krb5_conf.setter
     def krb5_conf(self, krb5_conf):
-        """Sets the krb5_conf of this CreateAuthInfoRequestBody.
+        r"""Sets the krb5_conf of this CreateAuthInfoRequestBody.
 
         krb5配置文件obs路径
 
@@ -206,7 +206,7 @@ class CreateAuthInfoRequestBody:
 
     @property
     def keytab(self):
-        """Gets the keytab of this CreateAuthInfoRequestBody.
+        r"""Gets the keytab of this CreateAuthInfoRequestBody.
 
         keytab配置文件obs路径
 
@@ -217,7 +217,7 @@ class CreateAuthInfoRequestBody:
 
     @keytab.setter
     def keytab(self, keytab):
-        """Sets the keytab of this CreateAuthInfoRequestBody.
+        r"""Sets the keytab of this CreateAuthInfoRequestBody.
 
         keytab配置文件obs路径
 
@@ -228,7 +228,7 @@ class CreateAuthInfoRequestBody:
 
     @property
     def truststore_location(self):
-        """Gets the truststore_location of this CreateAuthInfoRequestBody.
+        r"""Gets the truststore_location of this CreateAuthInfoRequestBody.
 
         truststore配置文件obs路径
 
@@ -239,7 +239,7 @@ class CreateAuthInfoRequestBody:
 
     @truststore_location.setter
     def truststore_location(self, truststore_location):
-        """Sets the truststore_location of this CreateAuthInfoRequestBody.
+        r"""Sets the truststore_location of this CreateAuthInfoRequestBody.
 
         truststore配置文件obs路径
 
@@ -250,7 +250,7 @@ class CreateAuthInfoRequestBody:
 
     @property
     def truststore_password(self):
-        """Gets the truststore_password of this CreateAuthInfoRequestBody.
+        r"""Gets the truststore_password of this CreateAuthInfoRequestBody.
 
         truststore配置文件密码
 
@@ -261,7 +261,7 @@ class CreateAuthInfoRequestBody:
 
     @truststore_password.setter
     def truststore_password(self, truststore_password):
-        """Sets the truststore_password of this CreateAuthInfoRequestBody.
+        r"""Sets the truststore_password of this CreateAuthInfoRequestBody.
 
         truststore配置文件密码
 
@@ -272,7 +272,7 @@ class CreateAuthInfoRequestBody:
 
     @property
     def keystore_location(self):
-        """Gets the keystore_location of this CreateAuthInfoRequestBody.
+        r"""Gets the keystore_location of this CreateAuthInfoRequestBody.
 
         keystore配置文件obs路径
 
@@ -283,7 +283,7 @@ class CreateAuthInfoRequestBody:
 
     @keystore_location.setter
     def keystore_location(self, keystore_location):
-        """Sets the keystore_location of this CreateAuthInfoRequestBody.
+        r"""Sets the keystore_location of this CreateAuthInfoRequestBody.
 
         keystore配置文件obs路径
 
@@ -294,7 +294,7 @@ class CreateAuthInfoRequestBody:
 
     @property
     def keystore_password(self):
-        """Gets the keystore_password of this CreateAuthInfoRequestBody.
+        r"""Gets the keystore_password of this CreateAuthInfoRequestBody.
 
         keystore配置文件密码
 
@@ -305,7 +305,7 @@ class CreateAuthInfoRequestBody:
 
     @keystore_password.setter
     def keystore_password(self, keystore_password):
-        """Sets the keystore_password of this CreateAuthInfoRequestBody.
+        r"""Sets the keystore_password of this CreateAuthInfoRequestBody.
 
         keystore配置文件密码
 
@@ -316,7 +316,7 @@ class CreateAuthInfoRequestBody:
 
     @property
     def certificate_location(self):
-        """Gets the certificate_location of this CreateAuthInfoRequestBody.
+        r"""Gets the certificate_location of this CreateAuthInfoRequestBody.
 
         用户安全集群的证书路径，目前只支持OBS路径，cer类型文件
 
@@ -327,7 +327,7 @@ class CreateAuthInfoRequestBody:
 
     @certificate_location.setter
     def certificate_location(self, certificate_location):
-        """Sets the certificate_location of this CreateAuthInfoRequestBody.
+        r"""Sets the certificate_location of this CreateAuthInfoRequestBody.
 
         用户安全集群的证书路径，目前只支持OBS路径，cer类型文件
 
@@ -338,7 +338,7 @@ class CreateAuthInfoRequestBody:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this CreateAuthInfoRequestBody.
+        r"""Gets the datasource_type of this CreateAuthInfoRequestBody.
 
         数据源类型，目前支持CSS,KRB,passwd,Kafka_SSL
 
@@ -349,7 +349,7 @@ class CreateAuthInfoRequestBody:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this CreateAuthInfoRequestBody.
+        r"""Sets the datasource_type of this CreateAuthInfoRequestBody.
 
         数据源类型，目前支持CSS,KRB,passwd,Kafka_SSL
 
@@ -360,7 +360,7 @@ class CreateAuthInfoRequestBody:
 
     @property
     def key_password(self):
-        """Gets the key_password of this CreateAuthInfoRequestBody.
+        r"""Gets the key_password of this CreateAuthInfoRequestBody.
 
         key密码
 
@@ -371,7 +371,7 @@ class CreateAuthInfoRequestBody:
 
     @key_password.setter
     def key_password(self, key_password):
-        """Sets the key_password of this CreateAuthInfoRequestBody.
+        r"""Sets the key_password of this CreateAuthInfoRequestBody.
 
         key密码
 

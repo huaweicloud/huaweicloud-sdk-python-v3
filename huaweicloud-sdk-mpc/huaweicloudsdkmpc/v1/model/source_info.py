@@ -37,7 +37,7 @@ class SourceInfo:
     }
 
     def __init__(self, duration=None, duration_ms=None, format=None, size=None, manifest_name=None, video_info=None, audio_info=None):
-        """SourceInfo
+        r"""SourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SourceInfo:
 
     @property
     def duration(self):
-        """Gets the duration of this SourceInfo.
+        r"""Gets the duration of this SourceInfo.
 
         片源时长，单位：秒
 
@@ -96,7 +96,7 @@ class SourceInfo:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this SourceInfo.
+        r"""Sets the duration of this SourceInfo.
 
         片源时长，单位：秒
 
@@ -107,7 +107,7 @@ class SourceInfo:
 
     @property
     def duration_ms(self):
-        """Gets the duration_ms of this SourceInfo.
+        r"""Gets the duration_ms of this SourceInfo.
 
         片源时长，单位：毫秒
 
@@ -118,7 +118,7 @@ class SourceInfo:
 
     @duration_ms.setter
     def duration_ms(self, duration_ms):
-        """Sets the duration_ms of this SourceInfo.
+        r"""Sets the duration_ms of this SourceInfo.
 
         片源时长，单位：毫秒
 
@@ -129,7 +129,7 @@ class SourceInfo:
 
     @property
     def format(self):
-        """Gets the format of this SourceInfo.
+        r"""Gets the format of this SourceInfo.
 
         片源格式
 
@@ -140,7 +140,7 @@ class SourceInfo:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this SourceInfo.
+        r"""Sets the format of this SourceInfo.
 
         片源格式
 
@@ -151,7 +151,7 @@ class SourceInfo:
 
     @property
     def size(self):
-        """Gets the size of this SourceInfo.
+        r"""Gets the size of this SourceInfo.
 
         片源大小
 
@@ -162,7 +162,7 @@ class SourceInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this SourceInfo.
+        r"""Sets the size of this SourceInfo.
 
         片源大小
 
@@ -173,7 +173,7 @@ class SourceInfo:
 
     @property
     def manifest_name(self):
-        """Gets the manifest_name of this SourceInfo.
+        r"""Gets the manifest_name of this SourceInfo.
 
         独立mpd索引文件名 
 
@@ -184,7 +184,7 @@ class SourceInfo:
 
     @manifest_name.setter
     def manifest_name(self, manifest_name):
-        """Sets the manifest_name of this SourceInfo.
+        r"""Sets the manifest_name of this SourceInfo.
 
         独立mpd索引文件名 
 
@@ -195,7 +195,7 @@ class SourceInfo:
 
     @property
     def video_info(self):
-        """Gets the video_info of this SourceInfo.
+        r"""Gets the video_info of this SourceInfo.
 
         :return: The video_info of this SourceInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.VideoInfo`
@@ -204,7 +204,7 @@ class SourceInfo:
 
     @video_info.setter
     def video_info(self, video_info):
-        """Sets the video_info of this SourceInfo.
+        r"""Sets the video_info of this SourceInfo.
 
         :param video_info: The video_info of this SourceInfo.
         :type video_info: :class:`huaweicloudsdkmpc.v1.VideoInfo`
@@ -213,7 +213,7 @@ class SourceInfo:
 
     @property
     def audio_info(self):
-        """Gets the audio_info of this SourceInfo.
+        r"""Gets the audio_info of this SourceInfo.
 
         音频信息
 
@@ -224,7 +224,7 @@ class SourceInfo:
 
     @audio_info.setter
     def audio_info(self, audio_info):
-        """Sets the audio_info of this SourceInfo.
+        r"""Sets the audio_info of this SourceInfo.
 
         音频信息
 

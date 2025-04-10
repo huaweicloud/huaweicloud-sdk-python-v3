@@ -25,7 +25,7 @@ class PoliciesRecordAuditRules:
     }
 
     def __init__(self, rule=None):
-        """PoliciesRecordAuditRules
+        r"""PoliciesRecordAuditRules
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PoliciesRecordAuditRules:
 
     @property
     def rule(self):
-        """Gets the rule of this PoliciesRecordAuditRules.
+        r"""Gets the rule of this PoliciesRecordAuditRules.
 
         :return: The rule of this PoliciesRecordAuditRules.
         :rtype: :class:`huaweicloudsdkworkspace.v2.RecordAuditRule`
@@ -52,7 +52,7 @@ class PoliciesRecordAuditRules:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this PoliciesRecordAuditRules.
+        r"""Sets the rule of this PoliciesRecordAuditRules.
 
         :param rule: The rule of this PoliciesRecordAuditRules.
         :type rule: :class:`huaweicloudsdkworkspace.v2.RecordAuditRule`

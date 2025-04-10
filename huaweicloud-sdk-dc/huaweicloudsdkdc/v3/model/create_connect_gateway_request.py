@@ -25,7 +25,7 @@ class CreateConnectGatewayRequest:
     }
 
     def __init__(self, body=None):
-        """CreateConnectGatewayRequest
+        r"""CreateConnectGatewayRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateConnectGatewayRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConnectGatewayRequest.
+        r"""Gets the body of this CreateConnectGatewayRequest.
 
         :return: The body of this CreateConnectGatewayRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.CreateConnectGatewayRequestBody`
@@ -52,7 +52,7 @@ class CreateConnectGatewayRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConnectGatewayRequest.
+        r"""Sets the body of this CreateConnectGatewayRequest.
 
         :param body: The body of this CreateConnectGatewayRequest.
         :type body: :class:`huaweicloudsdkdc.v3.CreateConnectGatewayRequestBody`

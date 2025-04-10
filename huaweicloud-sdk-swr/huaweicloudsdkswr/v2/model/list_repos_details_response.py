@@ -28,7 +28,7 @@ class ListReposDetailsResponse(SdkResponse):
     }
 
     def __init__(self, body=None, content_range=None):
-        """ListReposDetailsResponse
+        r"""ListReposDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListReposDetailsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListReposDetailsResponse.
+        r"""Gets the body of this ListReposDetailsResponse.
 
         :return: The body of this ListReposDetailsResponse.
         :rtype: list[:class:`huaweicloudsdkswr.v2.ShowReposResp`]
@@ -60,7 +60,7 @@ class ListReposDetailsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListReposDetailsResponse.
+        r"""Sets the body of this ListReposDetailsResponse.
 
         :param body: The body of this ListReposDetailsResponse.
         :type body: list[:class:`huaweicloudsdkswr.v2.ShowReposResp`]
@@ -69,7 +69,7 @@ class ListReposDetailsResponse(SdkResponse):
 
     @property
     def content_range(self):
-        """Gets the content_range of this ListReposDetailsResponse.
+        r"""Gets the content_range of this ListReposDetailsResponse.
 
         :return: The content_range of this ListReposDetailsResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ListReposDetailsResponse(SdkResponse):
 
     @content_range.setter
     def content_range(self, content_range):
-        """Sets the content_range of this ListReposDetailsResponse.
+        r"""Sets the content_range of this ListReposDetailsResponse.
 
         :param content_range: The content_range of this ListReposDetailsResponse.
         :type content_range: str

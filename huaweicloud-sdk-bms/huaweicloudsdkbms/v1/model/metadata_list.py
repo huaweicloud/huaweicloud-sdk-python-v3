@@ -51,7 +51,7 @@ class MetadataList:
     }
 
     def __init__(self, charging_mode=None, metering_order_id=None, metering_product_id=None, vpc_id=None, metering_image_id=None, metering_imagetype=None, baremetal_port_id_list=None, metering_resourcespeccode=None, metering_resourcetype=None, image_name=None, op_svc_userid=None, os_type=None, bms_support_evs=None, os_bit=None):
-        """MetadataList
+        r"""MetadataList
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class MetadataList:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this MetadataList.
+        r"""Gets the charging_mode of this MetadataList.
 
         裸金属服务器的计费类型。1：按包年包月计费（即prePaid：预付费方式）。
 
@@ -145,7 +145,7 @@ class MetadataList:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this MetadataList.
+        r"""Sets the charging_mode of this MetadataList.
 
         裸金属服务器的计费类型。1：按包年包月计费（即prePaid：预付费方式）。
 
@@ -156,7 +156,7 @@ class MetadataList:
 
     @property
     def metering_order_id(self):
-        """Gets the metering_order_id of this MetadataList.
+        r"""Gets the metering_order_id of this MetadataList.
 
         按“包年/包月”计费的裸金属服务器对应的订单ID。
 
@@ -167,7 +167,7 @@ class MetadataList:
 
     @metering_order_id.setter
     def metering_order_id(self, metering_order_id):
-        """Sets the metering_order_id of this MetadataList.
+        r"""Sets the metering_order_id of this MetadataList.
 
         按“包年/包月”计费的裸金属服务器对应的订单ID。
 
@@ -178,7 +178,7 @@ class MetadataList:
 
     @property
     def metering_product_id(self):
-        """Gets the metering_product_id of this MetadataList.
+        r"""Gets the metering_product_id of this MetadataList.
 
         按“包年/包月”计费的裸金属服务器对应的产品ID
 
@@ -189,7 +189,7 @@ class MetadataList:
 
     @metering_product_id.setter
     def metering_product_id(self, metering_product_id):
-        """Sets the metering_product_id of this MetadataList.
+        r"""Sets the metering_product_id of this MetadataList.
 
         按“包年/包月”计费的裸金属服务器对应的产品ID
 
@@ -200,7 +200,7 @@ class MetadataList:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this MetadataList.
+        r"""Gets the vpc_id of this MetadataList.
 
         裸金属服务器所属的虚拟私有云ID
 
@@ -211,7 +211,7 @@ class MetadataList:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this MetadataList.
+        r"""Sets the vpc_id of this MetadataList.
 
         裸金属服务器所属的虚拟私有云ID
 
@@ -222,7 +222,7 @@ class MetadataList:
 
     @property
     def metering_image_id(self):
-        """Gets the metering_image_id of this MetadataList.
+        r"""Gets the metering_image_id of this MetadataList.
 
         裸金属服务器操作系统对应的镜像ID
 
@@ -233,7 +233,7 @@ class MetadataList:
 
     @metering_image_id.setter
     def metering_image_id(self, metering_image_id):
-        """Sets the metering_image_id of this MetadataList.
+        r"""Sets the metering_image_id of this MetadataList.
 
         裸金属服务器操作系统对应的镜像ID
 
@@ -244,7 +244,7 @@ class MetadataList:
 
     @property
     def metering_imagetype(self):
-        """Gets the metering_imagetype of this MetadataList.
+        r"""Gets the metering_imagetype of this MetadataList.
 
         镜像类型，目前支持：公共镜像（gold）私有镜像（private）共享镜像（shared）
 
@@ -255,7 +255,7 @@ class MetadataList:
 
     @metering_imagetype.setter
     def metering_imagetype(self, metering_imagetype):
-        """Sets the metering_imagetype of this MetadataList.
+        r"""Sets the metering_imagetype of this MetadataList.
 
         镜像类型，目前支持：公共镜像（gold）私有镜像（private）共享镜像（shared）
 
@@ -266,7 +266,7 @@ class MetadataList:
 
     @property
     def baremetal_port_id_list(self):
-        """Gets the baremetal_port_id_list of this MetadataList.
+        r"""Gets the baremetal_port_id_list of this MetadataList.
 
         裸金属服务器的网卡列表。
 
@@ -277,7 +277,7 @@ class MetadataList:
 
     @baremetal_port_id_list.setter
     def baremetal_port_id_list(self, baremetal_port_id_list):
-        """Sets the baremetal_port_id_list of this MetadataList.
+        r"""Sets the baremetal_port_id_list of this MetadataList.
 
         裸金属服务器的网卡列表。
 
@@ -288,7 +288,7 @@ class MetadataList:
 
     @property
     def metering_resourcespeccode(self):
-        """Gets the metering_resourcespeccode of this MetadataList.
+        r"""Gets the metering_resourcespeccode of this MetadataList.
 
         裸金属服务器对应的资源规格编码，格式为：{规格ID}.{os_type}，例如physical.o2.medium.linux。
 
@@ -299,7 +299,7 @@ class MetadataList:
 
     @metering_resourcespeccode.setter
     def metering_resourcespeccode(self, metering_resourcespeccode):
-        """Sets the metering_resourcespeccode of this MetadataList.
+        r"""Sets the metering_resourcespeccode of this MetadataList.
 
         裸金属服务器对应的资源规格编码，格式为：{规格ID}.{os_type}，例如physical.o2.medium.linux。
 
@@ -310,7 +310,7 @@ class MetadataList:
 
     @property
     def metering_resourcetype(self):
-        """Gets the metering_resourcetype of this MetadataList.
+        r"""Gets the metering_resourcetype of this MetadataList.
 
         裸金属服务器对应的资源类型，取值为：hws.resource.type.pm
 
@@ -321,7 +321,7 @@ class MetadataList:
 
     @metering_resourcetype.setter
     def metering_resourcetype(self, metering_resourcetype):
-        """Sets the metering_resourcetype of this MetadataList.
+        r"""Sets the metering_resourcetype of this MetadataList.
 
         裸金属服务器对应的资源类型，取值为：hws.resource.type.pm
 
@@ -332,7 +332,7 @@ class MetadataList:
 
     @property
     def image_name(self):
-        """Gets the image_name of this MetadataList.
+        r"""Gets the image_name of this MetadataList.
 
         裸金属服务器操作系统对应的镜像名称
 
@@ -343,7 +343,7 @@ class MetadataList:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this MetadataList.
+        r"""Sets the image_name of this MetadataList.
 
         裸金属服务器操作系统对应的镜像名称
 
@@ -354,7 +354,7 @@ class MetadataList:
 
     @property
     def op_svc_userid(self):
-        """Gets the op_svc_userid of this MetadataList.
+        r"""Gets the op_svc_userid of this MetadataList.
 
         用户ID（登录管理控制台，进入我的凭证，即可看到“用户ID”）
 
@@ -365,7 +365,7 @@ class MetadataList:
 
     @op_svc_userid.setter
     def op_svc_userid(self, op_svc_userid):
-        """Sets the op_svc_userid of this MetadataList.
+        r"""Sets the op_svc_userid of this MetadataList.
 
         用户ID（登录管理控制台，进入我的凭证，即可看到“用户ID”）
 
@@ -376,7 +376,7 @@ class MetadataList:
 
     @property
     def os_type(self):
-        """Gets the os_type of this MetadataList.
+        r"""Gets the os_type of this MetadataList.
 
         操作系统类型，取值为：Linux、Windows
 
@@ -387,7 +387,7 @@ class MetadataList:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this MetadataList.
+        r"""Sets the os_type of this MetadataList.
 
         操作系统类型，取值为：Linux、Windows
 
@@ -398,7 +398,7 @@ class MetadataList:
 
     @property
     def bms_support_evs(self):
-        """Gets the bms_support_evs of this MetadataList.
+        r"""Gets the bms_support_evs of this MetadataList.
 
         裸金属服务器是否支持EVS卷。
 
@@ -409,7 +409,7 @@ class MetadataList:
 
     @bms_support_evs.setter
     def bms_support_evs(self, bms_support_evs):
-        """Sets the bms_support_evs of this MetadataList.
+        r"""Sets the bms_support_evs of this MetadataList.
 
         裸金属服务器是否支持EVS卷。
 
@@ -420,7 +420,7 @@ class MetadataList:
 
     @property
     def os_bit(self):
-        """Gets the os_bit of this MetadataList.
+        r"""Gets the os_bit of this MetadataList.
 
         操作系统位数，一般取值为“32”或者“64”。
 
@@ -431,7 +431,7 @@ class MetadataList:
 
     @os_bit.setter
     def os_bit(self, os_bit):
-        """Sets the os_bit of this MetadataList.
+        r"""Sets the os_bit of this MetadataList.
 
         操作系统位数，一般取值为“32”或者“64”。
 

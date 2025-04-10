@@ -29,7 +29,7 @@ class ListParamGroupTemplatesRequest:
     }
 
     def __init__(self, x_language=None, offset=None, limit=None):
-        """ListParamGroupTemplatesRequest
+        r"""ListParamGroupTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListParamGroupTemplatesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListParamGroupTemplatesRequest.
+        r"""Gets the x_language of this ListParamGroupTemplatesRequest.
 
         语言
 
@@ -68,7 +68,7 @@ class ListParamGroupTemplatesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListParamGroupTemplatesRequest.
+        r"""Sets the x_language of this ListParamGroupTemplatesRequest.
 
         语言
 
@@ -79,7 +79,7 @@ class ListParamGroupTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListParamGroupTemplatesRequest.
+        r"""Gets the offset of this ListParamGroupTemplatesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -90,7 +90,7 @@ class ListParamGroupTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListParamGroupTemplatesRequest.
+        r"""Sets the offset of this ListParamGroupTemplatesRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -101,7 +101,7 @@ class ListParamGroupTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListParamGroupTemplatesRequest.
+        r"""Gets the limit of this ListParamGroupTemplatesRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -112,7 +112,7 @@ class ListParamGroupTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListParamGroupTemplatesRequest.
+        r"""Sets the limit of this ListParamGroupTemplatesRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 

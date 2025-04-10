@@ -25,7 +25,7 @@ class ShowQueuesRequest:
     }
 
     def __init__(self, instance=None):
-        """ShowQueuesRequest
+        r"""ShowQueuesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowQueuesRequest:
 
     @property
     def instance(self):
-        """Gets the instance of this ShowQueuesRequest.
+        r"""Gets the instance of this ShowQueuesRequest.
 
         实例ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -53,7 +53,7 @@ class ShowQueuesRequest:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ShowQueuesRequest.
+        r"""Sets the instance of this ShowQueuesRequest.
 
         实例ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 

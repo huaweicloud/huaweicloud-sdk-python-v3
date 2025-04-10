@@ -25,7 +25,7 @@ class UpdateNatMappingConfigsRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateNatMappingConfigsRequest
+        r"""UpdateNatMappingConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateNatMappingConfigsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNatMappingConfigsRequest.
+        r"""Gets the body of this UpdateNatMappingConfigsRequest.
 
         :return: The body of this UpdateNatMappingConfigsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateNatMappingConfigsReq`
@@ -52,7 +52,7 @@ class UpdateNatMappingConfigsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNatMappingConfigsRequest.
+        r"""Sets the body of this UpdateNatMappingConfigsRequest.
 
         :param body: The body of this UpdateNatMappingConfigsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateNatMappingConfigsReq`

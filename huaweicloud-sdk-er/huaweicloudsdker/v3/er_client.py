@@ -34,7 +34,7 @@ class ErClient(Client):
         return client_builder
 
     def associate_route_table(self, request):
-        """创建路由关联
+        r"""创建路由关联
 
         每个连接只能关联到一张路由表。通过创建关联将连接关联到路由表，从该连接收到的报文会用被关联的路由表进行路由。
         
@@ -105,7 +105,7 @@ class ErClient(Client):
         return http_info
 
     def disassociate_route_table(self, request):
-        """删除路由关联
+        r"""删除路由关联
 
         解绑连接和路由表的关联关系。
         
@@ -174,7 +174,7 @@ class ErClient(Client):
         return http_info
 
     def list_associations(self, request):
-        """查询路由关联列表
+        r"""查询路由关联列表
 
         查询路由关联列表。
         
@@ -260,7 +260,7 @@ class ErClient(Client):
         return http_info
 
     def accept_attachment(self, request):
-        """接受共享连接创建
+        r"""接受共享连接创建
 
         接受共享连接创建
         
@@ -327,7 +327,7 @@ class ErClient(Client):
         return http_info
 
     def list_attachments(self, request):
-        """查询连接列表
+        r"""查询连接列表
 
         查询企业路由器实例下的连接列表。
         
@@ -411,7 +411,7 @@ class ErClient(Client):
         return http_info
 
     def reject_attachment(self, request):
-        """拒绝共享连接创建
+        r"""拒绝共享连接创建
 
         拒绝共享连接创建
         
@@ -478,7 +478,7 @@ class ErClient(Client):
         return http_info
 
     def show_attachment(self, request):
-        """查询连接详情
+        r"""查询连接详情
 
         查询连接详情
         
@@ -545,7 +545,7 @@ class ErClient(Client):
         return http_info
 
     def update_attachment(self, request):
-        """更新连接基本信息
+        r"""更新连接基本信息
 
         修改连接基本信息。
         
@@ -614,7 +614,7 @@ class ErClient(Client):
         return http_info
 
     def list_availability_zone(self, request):
-        """查询可用区列表
+        r"""查询可用区列表
 
         查询支持创建企业路由器实例的可用区列表，当可用区状态为available时，表示可以创建企业路由器实例。
         
@@ -679,7 +679,7 @@ class ErClient(Client):
         return http_info
 
     def change_availability_zone(self, request):
-        """更新企业路由器的可用区信息
+        r"""更新企业路由器的可用区信息
 
         更新企业路由器的可用区信息，企业路由器实例状态为available的时候才能更新。
         
@@ -746,7 +746,7 @@ class ErClient(Client):
         return http_info
 
     def create_enterprise_router(self, request):
-        """创建企业路由器
+        r"""创建企业路由器
 
         创建企业路由器实例，如果使能默认关联路由表或使能默认传递路由表，那么系统会默认创建一张路由表，作为默认关联路由表或默认传递路由表。
         
@@ -813,7 +813,7 @@ class ErClient(Client):
         return http_info
 
     def delete_enterprise_router(self, request):
-        """删除企业路由器
+        r"""删除企业路由器
 
         删除企业路由器。
         
@@ -878,7 +878,7 @@ class ErClient(Client):
         return http_info
 
     def list_enterprise_routers(self, request):
-        """查询企业路由器列表
+        r"""查询企业路由器列表
 
         查询企业路由器列表
         
@@ -965,7 +965,7 @@ class ErClient(Client):
         return http_info
 
     def show_enterprise_router(self, request):
-        """查询企业路由器详情
+        r"""查询企业路由器详情
 
         查询企业路由器详情
         
@@ -1030,7 +1030,7 @@ class ErClient(Client):
         return http_info
 
     def update_enterprise_router(self, request):
-        """更新企业路由器
+        r"""更新企业路由器
 
         更新企业路由器基本信息。
         
@@ -1097,7 +1097,7 @@ class ErClient(Client):
         return http_info
 
     def create_flow_log(self, request):
-        """创建流日志
+        r"""创建流日志
 
         给ER实例创建流日志。
         
@@ -1166,7 +1166,7 @@ class ErClient(Client):
         return http_info
 
     def delete_flow_log(self, request):
-        """删除流日志
+        r"""删除流日志
 
         删除流日志
         
@@ -1233,7 +1233,7 @@ class ErClient(Client):
         return http_info
 
     def disable_flow_log(self, request):
-        """关闭流日志
+        r"""关闭流日志
 
         关闭流日志
         
@@ -1300,7 +1300,7 @@ class ErClient(Client):
         return http_info
 
     def enable_flow_log(self, request):
-        """开启流日志
+        r"""开启流日志
 
         开启流日志
         
@@ -1367,7 +1367,7 @@ class ErClient(Client):
         return http_info
 
     def list_flow_logs(self, request):
-        """查询流日志列表
+        r"""查询流日志列表
 
         查询企业路由器实例下的流日志列表
         
@@ -1447,7 +1447,7 @@ class ErClient(Client):
         return http_info
 
     def show_flow_log(self, request):
-        """查询流日志详情
+        r"""查询流日志详情
 
         查询流日志详情
         
@@ -1514,7 +1514,7 @@ class ErClient(Client):
         return http_info
 
     def update_flow_log(self, request):
-        """更新流日志基本信息
+        r"""更新流日志基本信息
 
         更新流日志基本信息
         
@@ -1583,7 +1583,7 @@ class ErClient(Client):
         return http_info
 
     def disable_propagation(self, request):
-        """删除路由传播
+        r"""删除路由传播
 
         解绑连接和路由表的传播关系。
         
@@ -1652,7 +1652,7 @@ class ErClient(Client):
         return http_info
 
     def enable_propagation(self, request):
-        """创建路由传播
+        r"""创建路由传播
 
         每个连接可以和多个路由表建立传播关系，从该连接学习到的路由会应用到具有传播关系的路由表。
         
@@ -1723,7 +1723,7 @@ class ErClient(Client):
         return http_info
 
     def list_propagations(self, request):
-        """查询路由传播列表
+        r"""查询路由传播列表
 
         查询路由传播列表。
         
@@ -1809,7 +1809,7 @@ class ErClient(Client):
         return http_info
 
     def show_quotas(self, request):
-        """查询配额
+        r"""查询配额
 
         查询租户各类资源的使用情况，如企业路由器的使用量，VPC连接的使用量等。
         
@@ -1884,7 +1884,7 @@ class ErClient(Client):
         return http_info
 
     def create_static_route(self, request):
-        """创建静态路由
+        r"""创建静态路由
 
         创建静态路由
         
@@ -1953,7 +1953,7 @@ class ErClient(Client):
         return http_info
 
     def delete_static_route(self, request):
-        """删除静态路由
+        r"""删除静态路由
 
         删除静态路由
         
@@ -2020,7 +2020,7 @@ class ErClient(Client):
         return http_info
 
     def list_effective_routes(self, request):
-        """查询有效路由列表
+        r"""查询有效路由列表
 
         查询有效的路由列表，支持分页查询能力
         
@@ -2095,7 +2095,7 @@ class ErClient(Client):
         return http_info
 
     def list_static_routes(self, request):
-        """查询静态路由列表
+        r"""查询静态路由列表
 
         查询静态路由列表。
         
@@ -2179,7 +2179,7 @@ class ErClient(Client):
         return http_info
 
     def show_static_route(self, request):
-        """查询静态路由详情
+        r"""查询静态路由详情
 
         查询静态路由详情
         
@@ -2246,7 +2246,7 @@ class ErClient(Client):
         return http_info
 
     def update_static_route(self, request):
-        """更新静态路由
+        r"""更新静态路由
 
         更新静态路由
         
@@ -2315,7 +2315,7 @@ class ErClient(Client):
         return http_info
 
     def create_route_table(self, request):
-        """创建路由表
+        r"""创建路由表
 
         路由表是企业路由器收发报文的依据，包含了连接的关联关系，传播关系以及路由信息。
         
@@ -2384,7 +2384,7 @@ class ErClient(Client):
         return http_info
 
     def delete_route_table(self, request):
-        """删除路由表
+        r"""删除路由表
 
         删除路由表
         
@@ -2451,7 +2451,7 @@ class ErClient(Client):
         return http_info
 
     def list_route_tables(self, request):
-        """查询路由表列表
+        r"""查询路由表列表
 
         查询路由表列表。
         
@@ -2533,7 +2533,7 @@ class ErClient(Client):
         return http_info
 
     def show_route_table(self, request):
-        """查询路由表详情
+        r"""查询路由表详情
 
         查询路由表详情
         
@@ -2600,7 +2600,7 @@ class ErClient(Client):
         return http_info
 
     def update_route_table(self, request):
-        """更新路由表信息
+        r"""更新路由表信息
 
         更新路由表基本信息，如名称，描述等。
         
@@ -2669,7 +2669,7 @@ class ErClient(Client):
         return http_info
 
     def batch_create_resource_tags(self, request):
-        """批量添加删除资源标签
+        r"""批量添加删除资源标签
 
         - 为指定实例批量添加或删除标签
         - 标签管理服务需要使用该接口批量管理实例的标签。
@@ -2740,7 +2740,7 @@ class ErClient(Client):
         return http_info
 
     def create_resource_tag(self, request):
-        """创建资源标签
+        r"""创建资源标签
 
         为特定类型的资源创建标签。
         
@@ -2809,7 +2809,7 @@ class ErClient(Client):
         return http_info
 
     def delete_resource_tag(self, request):
-        """删除资源标签
+        r"""删除资源标签
 
         删除特定类型资源的标签。
         
@@ -2878,7 +2878,7 @@ class ErClient(Client):
         return http_info
 
     def list_project_tags(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询特定类型资源的标签集合。
         
@@ -2943,7 +2943,7 @@ class ErClient(Client):
         return http_info
 
     def show_resource_tag(self, request):
-        """查询资源标签
+        r"""查询资源标签
 
         查询特定类型资源的标签信息。
         
@@ -3010,7 +3010,7 @@ class ErClient(Client):
         return http_info
 
     def create_vpc_attachment(self, request):
-        """创建VPC连接
+        r"""创建VPC连接
 
         给ER实例创建VPC连接。
         
@@ -3079,7 +3079,7 @@ class ErClient(Client):
         return http_info
 
     def delete_vpc_attachment(self, request):
-        """删除VPC连接
+        r"""删除VPC连接
 
         删除VPC连接。
         
@@ -3146,7 +3146,7 @@ class ErClient(Client):
         return http_info
 
     def list_vpc_attachments(self, request):
-        """查询VPC连接列表
+        r"""查询VPC连接列表
 
         查询企业路由器实例下的VPC连接列表。
         
@@ -3230,7 +3230,7 @@ class ErClient(Client):
         return http_info
 
     def show_vpc_attachment(self, request):
-        """查询VPC连接详情
+        r"""查询VPC连接详情
 
         查询VPC连接详情
         
@@ -3297,7 +3297,7 @@ class ErClient(Client):
         return http_info
 
     def update_vpc_attachment(self, request):
-        """更新VPC连接基本信息
+        r"""更新VPC连接基本信息
 
         修改VPC连接基本信息。
         

@@ -29,7 +29,7 @@ class UpdateClickHouseDatabaseUserPasswordRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """UpdateClickHouseDatabaseUserPasswordRequest
+        r"""UpdateClickHouseDatabaseUserPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateClickHouseDatabaseUserPasswordRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateClickHouseDatabaseUserPasswordRequest.
+        r"""Gets the instance_id of this UpdateClickHouseDatabaseUserPasswordRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -67,7 +67,7 @@ class UpdateClickHouseDatabaseUserPasswordRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateClickHouseDatabaseUserPasswordRequest.
+        r"""Sets the instance_id of this UpdateClickHouseDatabaseUserPasswordRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -78,7 +78,7 @@ class UpdateClickHouseDatabaseUserPasswordRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateClickHouseDatabaseUserPasswordRequest.
+        r"""Gets the x_language of this UpdateClickHouseDatabaseUserPasswordRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -89,7 +89,7 @@ class UpdateClickHouseDatabaseUserPasswordRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateClickHouseDatabaseUserPasswordRequest.
+        r"""Sets the x_language of this UpdateClickHouseDatabaseUserPasswordRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -100,7 +100,7 @@ class UpdateClickHouseDatabaseUserPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateClickHouseDatabaseUserPasswordRequest.
+        r"""Gets the body of this UpdateClickHouseDatabaseUserPasswordRequest.
 
         :return: The body of this UpdateClickHouseDatabaseUserPasswordRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ClickHouseDatabaseUserPWinfo`
@@ -109,7 +109,7 @@ class UpdateClickHouseDatabaseUserPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateClickHouseDatabaseUserPasswordRequest.
+        r"""Sets the body of this UpdateClickHouseDatabaseUserPasswordRequest.
 
         :param body: The body of this UpdateClickHouseDatabaseUserPasswordRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ClickHouseDatabaseUserPWinfo`

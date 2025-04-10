@@ -27,7 +27,7 @@ class ShowApplicationResDeleteStatusRequest:
     }
 
     def __init__(self, x_language=None, application_id=None):
-        """ShowApplicationResDeleteStatusRequest
+        r"""ShowApplicationResDeleteStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowApplicationResDeleteStatusRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowApplicationResDeleteStatusRequest.
+        r"""Gets the x_language of this ShowApplicationResDeleteStatusRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -60,7 +60,7 @@ class ShowApplicationResDeleteStatusRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowApplicationResDeleteStatusRequest.
+        r"""Sets the x_language of this ShowApplicationResDeleteStatusRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -71,7 +71,7 @@ class ShowApplicationResDeleteStatusRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ShowApplicationResDeleteStatusRequest.
+        r"""Gets the application_id of this ShowApplicationResDeleteStatusRequest.
 
         应用id
 
@@ -82,7 +82,7 @@ class ShowApplicationResDeleteStatusRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ShowApplicationResDeleteStatusRequest.
+        r"""Sets the application_id of this ShowApplicationResDeleteStatusRequest.
 
         应用id
 

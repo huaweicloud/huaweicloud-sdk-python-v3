@@ -27,7 +27,7 @@ class RunRecordRequest:
     }
 
     def __init__(self, action=None, body=None):
-        """RunRecordRequest
+        r"""RunRecordRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunRecordRequest:
 
     @property
     def action(self):
-        """Gets the action of this RunRecordRequest.
+        r"""Gets the action of this RunRecordRequest.
 
         操作行为。 取值如下： - START：对指定流开始录制，必须在直播流已经推送情况下才能正常启动，使用此命令启动录制的直播流如果发生了断流且超出断流时长，就会停止录制，并且重新推流后不会自动启动录制。 - STOP：对指定流停止录制。 
 
@@ -60,7 +60,7 @@ class RunRecordRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this RunRecordRequest.
+        r"""Sets the action of this RunRecordRequest.
 
         操作行为。 取值如下： - START：对指定流开始录制，必须在直播流已经推送情况下才能正常启动，使用此命令启动录制的直播流如果发生了断流且超出断流时长，就会停止录制，并且重新推流后不会自动启动录制。 - STOP：对指定流停止录制。 
 
@@ -71,7 +71,7 @@ class RunRecordRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunRecordRequest.
+        r"""Gets the body of this RunRecordRequest.
 
         :return: The body of this RunRecordRequest.
         :rtype: :class:`huaweicloudsdklive.v1.RecordControlInfo`
@@ -80,7 +80,7 @@ class RunRecordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunRecordRequest.
+        r"""Sets the body of this RunRecordRequest.
 
         :param body: The body of this RunRecordRequest.
         :type body: :class:`huaweicloudsdklive.v1.RecordControlInfo`

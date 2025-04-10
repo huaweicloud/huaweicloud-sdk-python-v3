@@ -25,7 +25,7 @@ class UpdateCertificateRequestBody:
     }
 
     def __init__(self, certificate=None):
-        """UpdateCertificateRequestBody
+        r"""UpdateCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateCertificateRequestBody:
 
     @property
     def certificate(self):
-        """Gets the certificate of this UpdateCertificateRequestBody.
+        r"""Gets the certificate of this UpdateCertificateRequestBody.
 
         :return: The certificate of this UpdateCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateCertificateOption`
@@ -51,7 +51,7 @@ class UpdateCertificateRequestBody:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this UpdateCertificateRequestBody.
+        r"""Sets the certificate of this UpdateCertificateRequestBody.
 
         :param certificate: The certificate of this UpdateCertificateRequestBody.
         :type certificate: :class:`huaweicloudsdkelb.v3.UpdateCertificateOption`

@@ -25,7 +25,7 @@ class AddRuleRequest:
     }
 
     def __init__(self, body=None):
-        """AddRuleRequest
+        r"""AddRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddRuleRequest.
+        r"""Gets the body of this AddRuleRequest.
 
         :return: The body of this AddRuleRequest.
         :rtype: :class:`huaweicloudsdkdsc.v1.RuleRequest`
@@ -52,7 +52,7 @@ class AddRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddRuleRequest.
+        r"""Sets the body of this AddRuleRequest.
 
         :param body: The body of this AddRuleRequest.
         :type body: :class:`huaweicloudsdkdsc.v1.RuleRequest`

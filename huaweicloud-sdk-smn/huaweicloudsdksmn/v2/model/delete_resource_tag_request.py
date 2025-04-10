@@ -29,7 +29,7 @@ class DeleteResourceTagRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, key=None):
-        """DeleteResourceTagRequest
+        r"""DeleteResourceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteResourceTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this DeleteResourceTagRequest.
+        r"""Gets the resource_type of this DeleteResourceTagRequest.
 
         资源类型，目前有:  smn_topic，主题。  smn_sms，短信。  smn_application，移动推送。
 
@@ -65,7 +65,7 @@ class DeleteResourceTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this DeleteResourceTagRequest.
+        r"""Sets the resource_type of this DeleteResourceTagRequest.
 
         资源类型，目前有:  smn_topic，主题。  smn_sms，短信。  smn_application，移动推送。
 
@@ -76,7 +76,7 @@ class DeleteResourceTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteResourceTagRequest.
+        r"""Gets the resource_id of this DeleteResourceTagRequest.
 
         资源ID。  获取resource_id的方法：  当resource_type为“smn_topic”时， 手动添加请求消息头“X-SMN-RESOURCEID-TYPE=name”，资源ID即为topic名称。 不添加请求消息头，通过“查询资源实例”，获取资源ID。 当resource_type为“smn_sms”时，resource_id为签名ID。您可在控制台获取。
 
@@ -87,7 +87,7 @@ class DeleteResourceTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteResourceTagRequest.
+        r"""Sets the resource_id of this DeleteResourceTagRequest.
 
         资源ID。  获取resource_id的方法：  当resource_type为“smn_topic”时， 手动添加请求消息头“X-SMN-RESOURCEID-TYPE=name”，资源ID即为topic名称。 不添加请求消息头，通过“查询资源实例”，获取资源ID。 当resource_type为“smn_sms”时，resource_id为签名ID。您可在控制台获取。
 
@@ -98,7 +98,7 @@ class DeleteResourceTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteResourceTagRequest.
+        r"""Gets the key of this DeleteResourceTagRequest.
 
         待删除标签的key值。
 
@@ -109,7 +109,7 @@ class DeleteResourceTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteResourceTagRequest.
+        r"""Sets the key of this DeleteResourceTagRequest.
 
         待删除标签的key值。
 

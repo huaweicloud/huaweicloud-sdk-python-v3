@@ -86,7 +86,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, external_address=None, intranet_address=None, intranet_address_ipv6=None, public_zone_id=None, public_zone_name=None, private_zone_id=None, private_zone_name=None, enterprise_project_id=None, create_time=None, create_user=None, current_namespace_publish_api_num=None, all_namespace_publish_api_num=None, api_publishable_num=None, deletable=None, charge_status=None, order_id=None, order_type=None, period_type=None, instance_status=None, node_num=None, flavor=None, gateway_version=None, availability_zone=None, availability_zone_name=None, vpc_id=None, subnet_id=None, security_group_id=None, nodes=None):
-        """ShowDataServiceInstanceResponse
+        r"""ShowDataServiceInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -254,7 +254,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDataServiceInstanceResponse.
+        r"""Gets the id of this ShowDataServiceInstanceResponse.
 
         集群ID。
 
@@ -265,7 +265,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDataServiceInstanceResponse.
+        r"""Sets the id of this ShowDataServiceInstanceResponse.
 
         集群ID。
 
@@ -276,7 +276,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDataServiceInstanceResponse.
+        r"""Gets the name of this ShowDataServiceInstanceResponse.
 
         集群名称。
 
@@ -287,7 +287,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDataServiceInstanceResponse.
+        r"""Sets the name of this ShowDataServiceInstanceResponse.
 
         集群名称。
 
@@ -298,7 +298,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowDataServiceInstanceResponse.
+        r"""Gets the description of this ShowDataServiceInstanceResponse.
 
         集群描述信息。
 
@@ -309,7 +309,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowDataServiceInstanceResponse.
+        r"""Sets the description of this ShowDataServiceInstanceResponse.
 
         集群描述信息。
 
@@ -320,7 +320,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def external_address(self):
-        """Gets the external_address of this ShowDataServiceInstanceResponse.
+        r"""Gets the external_address of this ShowDataServiceInstanceResponse.
 
         公网IP地址。
 
@@ -331,7 +331,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @external_address.setter
     def external_address(self, external_address):
-        """Sets the external_address of this ShowDataServiceInstanceResponse.
+        r"""Sets the external_address of this ShowDataServiceInstanceResponse.
 
         公网IP地址。
 
@@ -342,7 +342,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def intranet_address(self):
-        """Gets the intranet_address of this ShowDataServiceInstanceResponse.
+        r"""Gets the intranet_address of this ShowDataServiceInstanceResponse.
 
         内网IPv4地址。
 
@@ -353,7 +353,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @intranet_address.setter
     def intranet_address(self, intranet_address):
-        """Sets the intranet_address of this ShowDataServiceInstanceResponse.
+        r"""Sets the intranet_address of this ShowDataServiceInstanceResponse.
 
         内网IPv4地址。
 
@@ -364,7 +364,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def intranet_address_ipv6(self):
-        """Gets the intranet_address_ipv6 of this ShowDataServiceInstanceResponse.
+        r"""Gets the intranet_address_ipv6 of this ShowDataServiceInstanceResponse.
 
         内网IPv6地址。
 
@@ -375,7 +375,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @intranet_address_ipv6.setter
     def intranet_address_ipv6(self, intranet_address_ipv6):
-        """Sets the intranet_address_ipv6 of this ShowDataServiceInstanceResponse.
+        r"""Sets the intranet_address_ipv6 of this ShowDataServiceInstanceResponse.
 
         内网IPv6地址。
 
@@ -386,7 +386,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def public_zone_id(self):
-        """Gets the public_zone_id of this ShowDataServiceInstanceResponse.
+        r"""Gets the public_zone_id of this ShowDataServiceInstanceResponse.
 
         公网域名ID。
 
@@ -397,7 +397,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @public_zone_id.setter
     def public_zone_id(self, public_zone_id):
-        """Sets the public_zone_id of this ShowDataServiceInstanceResponse.
+        r"""Sets the public_zone_id of this ShowDataServiceInstanceResponse.
 
         公网域名ID。
 
@@ -408,7 +408,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def public_zone_name(self):
-        """Gets the public_zone_name of this ShowDataServiceInstanceResponse.
+        r"""Gets the public_zone_name of this ShowDataServiceInstanceResponse.
 
         公网域名名称。
 
@@ -419,7 +419,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @public_zone_name.setter
     def public_zone_name(self, public_zone_name):
-        """Sets the public_zone_name of this ShowDataServiceInstanceResponse.
+        r"""Sets the public_zone_name of this ShowDataServiceInstanceResponse.
 
         公网域名名称。
 
@@ -430,7 +430,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def private_zone_id(self):
-        """Gets the private_zone_id of this ShowDataServiceInstanceResponse.
+        r"""Gets the private_zone_id of this ShowDataServiceInstanceResponse.
 
         内网域名ID。
 
@@ -441,7 +441,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @private_zone_id.setter
     def private_zone_id(self, private_zone_id):
-        """Sets the private_zone_id of this ShowDataServiceInstanceResponse.
+        r"""Sets the private_zone_id of this ShowDataServiceInstanceResponse.
 
         内网域名ID。
 
@@ -452,7 +452,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def private_zone_name(self):
-        """Gets the private_zone_name of this ShowDataServiceInstanceResponse.
+        r"""Gets the private_zone_name of this ShowDataServiceInstanceResponse.
 
         内网域名名称。
 
@@ -463,7 +463,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @private_zone_name.setter
     def private_zone_name(self, private_zone_name):
-        """Sets the private_zone_name of this ShowDataServiceInstanceResponse.
+        r"""Sets the private_zone_name of this ShowDataServiceInstanceResponse.
 
         内网域名名称。
 
@@ -474,7 +474,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowDataServiceInstanceResponse.
+        r"""Gets the enterprise_project_id of this ShowDataServiceInstanceResponse.
 
         企业项目ID。
 
@@ -485,7 +485,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowDataServiceInstanceResponse.
+        r"""Sets the enterprise_project_id of this ShowDataServiceInstanceResponse.
 
         企业项目ID。
 
@@ -496,7 +496,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowDataServiceInstanceResponse.
+        r"""Gets the create_time of this ShowDataServiceInstanceResponse.
 
         创建时间。
 
@@ -507,7 +507,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowDataServiceInstanceResponse.
+        r"""Sets the create_time of this ShowDataServiceInstanceResponse.
 
         创建时间。
 
@@ -518,7 +518,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this ShowDataServiceInstanceResponse.
+        r"""Gets the create_user of this ShowDataServiceInstanceResponse.
 
         创建人。
 
@@ -529,7 +529,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ShowDataServiceInstanceResponse.
+        r"""Sets the create_user of this ShowDataServiceInstanceResponse.
 
         创建人。
 
@@ -540,7 +540,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def current_namespace_publish_api_num(self):
-        """Gets the current_namespace_publish_api_num of this ShowDataServiceInstanceResponse.
+        r"""Gets the current_namespace_publish_api_num of this ShowDataServiceInstanceResponse.
 
         当前工作空间已发布的API数量。
 
@@ -551,7 +551,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @current_namespace_publish_api_num.setter
     def current_namespace_publish_api_num(self, current_namespace_publish_api_num):
-        """Sets the current_namespace_publish_api_num of this ShowDataServiceInstanceResponse.
+        r"""Sets the current_namespace_publish_api_num of this ShowDataServiceInstanceResponse.
 
         当前工作空间已发布的API数量。
 
@@ -562,7 +562,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def all_namespace_publish_api_num(self):
-        """Gets the all_namespace_publish_api_num of this ShowDataServiceInstanceResponse.
+        r"""Gets the all_namespace_publish_api_num of this ShowDataServiceInstanceResponse.
 
         所有工作空间已发布的API数量。
 
@@ -573,7 +573,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @all_namespace_publish_api_num.setter
     def all_namespace_publish_api_num(self, all_namespace_publish_api_num):
-        """Sets the all_namespace_publish_api_num of this ShowDataServiceInstanceResponse.
+        r"""Sets the all_namespace_publish_api_num of this ShowDataServiceInstanceResponse.
 
         所有工作空间已发布的API数量。
 
@@ -584,7 +584,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def api_publishable_num(self):
-        """Gets the api_publishable_num of this ShowDataServiceInstanceResponse.
+        r"""Gets the api_publishable_num of this ShowDataServiceInstanceResponse.
 
         集群API总配额。
 
@@ -595,7 +595,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @api_publishable_num.setter
     def api_publishable_num(self, api_publishable_num):
-        """Sets the api_publishable_num of this ShowDataServiceInstanceResponse.
+        r"""Sets the api_publishable_num of this ShowDataServiceInstanceResponse.
 
         集群API总配额。
 
@@ -606,7 +606,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def deletable(self):
-        """Gets the deletable of this ShowDataServiceInstanceResponse.
+        r"""Gets the deletable of this ShowDataServiceInstanceResponse.
 
         集群是否可以删除。
 
@@ -617,7 +617,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @deletable.setter
     def deletable(self, deletable):
-        """Sets the deletable of this ShowDataServiceInstanceResponse.
+        r"""Sets the deletable of this ShowDataServiceInstanceResponse.
 
         集群是否可以删除。
 
@@ -628,7 +628,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def charge_status(self):
-        """Gets the charge_status of this ShowDataServiceInstanceResponse.
+        r"""Gets the charge_status of this ShowDataServiceInstanceResponse.
 
         集群计费状态，NO_CHARGE：未计费、CHARGED：已计费，GRACE：宽限期、RETENTION：保留期。
 
@@ -639,7 +639,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @charge_status.setter
     def charge_status(self, charge_status):
-        """Sets the charge_status of this ShowDataServiceInstanceResponse.
+        r"""Sets the charge_status of this ShowDataServiceInstanceResponse.
 
         集群计费状态，NO_CHARGE：未计费、CHARGED：已计费，GRACE：宽限期、RETENTION：保留期。
 
@@ -650,7 +650,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowDataServiceInstanceResponse.
+        r"""Gets the order_id of this ShowDataServiceInstanceResponse.
 
         订单ID。
 
@@ -661,7 +661,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowDataServiceInstanceResponse.
+        r"""Sets the order_id of this ShowDataServiceInstanceResponse.
 
         订单ID。
 
@@ -672,7 +672,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def order_type(self):
-        """Gets the order_type of this ShowDataServiceInstanceResponse.
+        r"""Gets the order_type of this ShowDataServiceInstanceResponse.
 
         订单类型，PERIOD：包周期、ON_DEMAND：按需。
 
@@ -683,7 +683,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @order_type.setter
     def order_type(self, order_type):
-        """Sets the order_type of this ShowDataServiceInstanceResponse.
+        r"""Sets the order_type of this ShowDataServiceInstanceResponse.
 
         订单类型，PERIOD：包周期、ON_DEMAND：按需。
 
@@ -694,7 +694,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def period_type(self):
-        """Gets the period_type of this ShowDataServiceInstanceResponse.
+        r"""Gets the period_type of this ShowDataServiceInstanceResponse.
 
         集群订购周期类型。
 
@@ -705,7 +705,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ShowDataServiceInstanceResponse.
+        r"""Sets the period_type of this ShowDataServiceInstanceResponse.
 
         集群订购周期类型。
 
@@ -716,7 +716,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def instance_status(self):
-        """Gets the instance_status of this ShowDataServiceInstanceResponse.
+        r"""Gets the instance_status of this ShowDataServiceInstanceResponse.
 
         集群状态。
 
@@ -727,7 +727,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @instance_status.setter
     def instance_status(self, instance_status):
-        """Sets the instance_status of this ShowDataServiceInstanceResponse.
+        r"""Sets the instance_status of this ShowDataServiceInstanceResponse.
 
         集群状态。
 
@@ -738,7 +738,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def node_num(self):
-        """Gets the node_num of this ShowDataServiceInstanceResponse.
+        r"""Gets the node_num of this ShowDataServiceInstanceResponse.
 
         节点数量。
 
@@ -749,7 +749,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this ShowDataServiceInstanceResponse.
+        r"""Sets the node_num of this ShowDataServiceInstanceResponse.
 
         节点数量。
 
@@ -760,7 +760,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def flavor(self):
-        """Gets the flavor of this ShowDataServiceInstanceResponse.
+        r"""Gets the flavor of this ShowDataServiceInstanceResponse.
 
         :return: The flavor of this ShowDataServiceInstanceResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.FlavorDTO`
@@ -769,7 +769,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ShowDataServiceInstanceResponse.
+        r"""Sets the flavor of this ShowDataServiceInstanceResponse.
 
         :param flavor: The flavor of this ShowDataServiceInstanceResponse.
         :type flavor: :class:`huaweicloudsdkdataartsstudio.v1.FlavorDTO`
@@ -778,7 +778,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def gateway_version(self):
-        """Gets the gateway_version of this ShowDataServiceInstanceResponse.
+        r"""Gets the gateway_version of this ShowDataServiceInstanceResponse.
 
         集群版本号。
 
@@ -789,7 +789,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @gateway_version.setter
     def gateway_version(self, gateway_version):
-        """Sets the gateway_version of this ShowDataServiceInstanceResponse.
+        r"""Sets the gateway_version of this ShowDataServiceInstanceResponse.
 
         集群版本号。
 
@@ -800,7 +800,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ShowDataServiceInstanceResponse.
+        r"""Gets the availability_zone of this ShowDataServiceInstanceResponse.
 
         集群所在可用区编码。
 
@@ -811,7 +811,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ShowDataServiceInstanceResponse.
+        r"""Sets the availability_zone of this ShowDataServiceInstanceResponse.
 
         集群所在可用区编码。
 
@@ -822,7 +822,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def availability_zone_name(self):
-        """Gets the availability_zone_name of this ShowDataServiceInstanceResponse.
+        r"""Gets the availability_zone_name of this ShowDataServiceInstanceResponse.
 
         集群所在可用区名称。
 
@@ -833,7 +833,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @availability_zone_name.setter
     def availability_zone_name(self, availability_zone_name):
-        """Sets the availability_zone_name of this ShowDataServiceInstanceResponse.
+        r"""Sets the availability_zone_name of this ShowDataServiceInstanceResponse.
 
         集群所在可用区名称。
 
@@ -844,7 +844,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowDataServiceInstanceResponse.
+        r"""Gets the vpc_id of this ShowDataServiceInstanceResponse.
 
         集群所在虚拟私有云ID。
 
@@ -855,7 +855,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowDataServiceInstanceResponse.
+        r"""Sets the vpc_id of this ShowDataServiceInstanceResponse.
 
         集群所在虚拟私有云ID。
 
@@ -866,7 +866,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ShowDataServiceInstanceResponse.
+        r"""Gets the subnet_id of this ShowDataServiceInstanceResponse.
 
         集群所在子网ID。
 
@@ -877,7 +877,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ShowDataServiceInstanceResponse.
+        r"""Sets the subnet_id of this ShowDataServiceInstanceResponse.
 
         集群所在子网ID。
 
@@ -888,7 +888,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ShowDataServiceInstanceResponse.
+        r"""Gets the security_group_id of this ShowDataServiceInstanceResponse.
 
         集群所在安全组ID。
 
@@ -899,7 +899,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ShowDataServiceInstanceResponse.
+        r"""Sets the security_group_id of this ShowDataServiceInstanceResponse.
 
         集群所在安全组ID。
 
@@ -910,7 +910,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this ShowDataServiceInstanceResponse.
+        r"""Gets the nodes of this ShowDataServiceInstanceResponse.
 
         集群节点列表。
 
@@ -921,7 +921,7 @@ class ShowDataServiceInstanceResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ShowDataServiceInstanceResponse.
+        r"""Sets the nodes of this ShowDataServiceInstanceResponse.
 
         集群节点列表。
 

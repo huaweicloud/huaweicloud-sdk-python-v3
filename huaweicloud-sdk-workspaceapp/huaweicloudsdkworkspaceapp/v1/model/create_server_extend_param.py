@@ -33,7 +33,7 @@ class CreateServerExtendParam:
     }
 
     def __init__(self, charging_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None):
-        """CreateServerExtendParam
+        r"""CreateServerExtendParam
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class CreateServerExtendParam:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this CreateServerExtendParam.
+        r"""Gets the charging_mode of this CreateServerExtendParam.
 
         计费模式，取值范围： - prePaid-预付费，即包年包月； - postPaid-后付费，即按需付费；
 
@@ -82,7 +82,7 @@ class CreateServerExtendParam:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this CreateServerExtendParam.
+        r"""Sets the charging_mode of this CreateServerExtendParam.
 
         计费模式，取值范围： - prePaid-预付费，即包年包月； - postPaid-后付费，即按需付费；
 
@@ -93,7 +93,7 @@ class CreateServerExtendParam:
 
     @property
     def period_type(self):
-        """Gets the period_type of this CreateServerExtendParam.
+        r"""Gets the period_type of this CreateServerExtendParam.
 
         周期类型 2：包月；3：包年* chargingMode为prePaid时生效且为必选值。
 
@@ -104,7 +104,7 @@ class CreateServerExtendParam:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this CreateServerExtendParam.
+        r"""Sets the period_type of this CreateServerExtendParam.
 
         周期类型 2：包月；3：包年* chargingMode为prePaid时生效且为必选值。
 
@@ -115,7 +115,7 @@ class CreateServerExtendParam:
 
     @property
     def period_num(self):
-        """Gets the period_num of this CreateServerExtendParam.
+        r"""Gets the period_num of this CreateServerExtendParam.
 
         订购周期数，chargingMode为prePaid时生效且为必选值，periodNum为正整数，取值范围： > - periodType=2（周期类型为月）时，取值为[1，9]。 > - periodType=3（周期类型为年）时，取值为[1，3]。
 
@@ -126,7 +126,7 @@ class CreateServerExtendParam:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this CreateServerExtendParam.
+        r"""Sets the period_num of this CreateServerExtendParam.
 
         订购周期数，chargingMode为prePaid时生效且为必选值，periodNum为正整数，取值范围： > - periodType=2（周期类型为月）时，取值为[1，9]。 > - periodType=3（周期类型为年）时，取值为[1，3]。
 
@@ -137,7 +137,7 @@ class CreateServerExtendParam:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this CreateServerExtendParam.
+        r"""Gets the is_auto_renew of this CreateServerExtendParam.
 
         是否是自动续订，默认不填为false。 >- false 不自动续订。 >- true 自动续订。
 
@@ -148,7 +148,7 @@ class CreateServerExtendParam:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this CreateServerExtendParam.
+        r"""Sets the is_auto_renew of this CreateServerExtendParam.
 
         是否是自动续订，默认不填为false。 >- false 不自动续订。 >- true 自动续订。
 
@@ -159,7 +159,7 @@ class CreateServerExtendParam:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this CreateServerExtendParam.
+        r"""Gets the is_auto_pay of this CreateServerExtendParam.
 
         下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。chargingMode为prePaid时生效，不传该字段时默认为客户手动支付。 > - true ：是（自动支付）。 > - false：否（需要客户手动支付）。
 
@@ -170,7 +170,7 @@ class CreateServerExtendParam:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this CreateServerExtendParam.
+        r"""Sets the is_auto_pay of this CreateServerExtendParam.
 
         下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。chargingMode为prePaid时生效，不传该字段时默认为客户手动支付。 > - true ：是（自动支付）。 > - false：否（需要客户手动支付）。
 

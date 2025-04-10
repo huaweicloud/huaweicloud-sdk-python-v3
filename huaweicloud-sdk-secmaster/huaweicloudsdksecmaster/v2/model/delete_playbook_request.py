@@ -29,7 +29,7 @@ class DeletePlaybookRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, playbook_id=None):
-        """DeletePlaybookRequest
+        r"""DeletePlaybookRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeletePlaybookRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeletePlaybookRequest.
+        r"""Gets the project_id of this DeletePlaybookRequest.
 
         项目ID
 
@@ -65,7 +65,7 @@ class DeletePlaybookRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeletePlaybookRequest.
+        r"""Sets the project_id of this DeletePlaybookRequest.
 
         项目ID
 
@@ -76,7 +76,7 @@ class DeletePlaybookRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeletePlaybookRequest.
+        r"""Gets the workspace_id of this DeletePlaybookRequest.
 
         工作空间ID
 
@@ -87,7 +87,7 @@ class DeletePlaybookRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeletePlaybookRequest.
+        r"""Sets the workspace_id of this DeletePlaybookRequest.
 
         工作空间ID
 
@@ -98,7 +98,7 @@ class DeletePlaybookRequest:
 
     @property
     def playbook_id(self):
-        """Gets the playbook_id of this DeletePlaybookRequest.
+        r"""Gets the playbook_id of this DeletePlaybookRequest.
 
         ID of playbook
 
@@ -109,7 +109,7 @@ class DeletePlaybookRequest:
 
     @playbook_id.setter
     def playbook_id(self, playbook_id):
-        """Sets the playbook_id of this DeletePlaybookRequest.
+        r"""Sets the playbook_id of this DeletePlaybookRequest.
 
         ID of playbook
 

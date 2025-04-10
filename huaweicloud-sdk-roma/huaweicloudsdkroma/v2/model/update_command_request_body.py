@@ -27,7 +27,7 @@ class UpdateCommandRequestBody:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateCommandRequestBody
+        r"""UpdateCommandRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateCommandRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateCommandRequestBody.
+        r"""Gets the name of this UpdateCommandRequestBody.
 
         服务命令名称，支持大小写字母，数字，中划线及下划线，长度2-50
 
@@ -60,7 +60,7 @@ class UpdateCommandRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCommandRequestBody.
+        r"""Sets the name of this UpdateCommandRequestBody.
 
         服务命令名称，支持大小写字母，数字，中划线及下划线，长度2-50
 
@@ -71,7 +71,7 @@ class UpdateCommandRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateCommandRequestBody.
+        r"""Gets the description of this UpdateCommandRequestBody.
 
         服务命令描述，长度0-200
 
@@ -82,7 +82,7 @@ class UpdateCommandRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateCommandRequestBody.
+        r"""Sets the description of this UpdateCommandRequestBody.
 
         服务命令描述，长度0-200
 

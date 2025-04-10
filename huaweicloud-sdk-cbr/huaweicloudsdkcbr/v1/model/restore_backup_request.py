@@ -27,7 +27,7 @@ class RestoreBackupRequest:
     }
 
     def __init__(self, backup_id=None, body=None):
-        """RestoreBackupRequest
+        r"""RestoreBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RestoreBackupRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this RestoreBackupRequest.
+        r"""Gets the backup_id of this RestoreBackupRequest.
 
         备份id
 
@@ -60,7 +60,7 @@ class RestoreBackupRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this RestoreBackupRequest.
+        r"""Sets the backup_id of this RestoreBackupRequest.
 
         备份id
 
@@ -71,7 +71,7 @@ class RestoreBackupRequest:
 
     @property
     def body(self):
-        """Gets the body of this RestoreBackupRequest.
+        r"""Gets the body of this RestoreBackupRequest.
 
         :return: The body of this RestoreBackupRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupRestoreReq`
@@ -80,7 +80,7 @@ class RestoreBackupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestoreBackupRequest.
+        r"""Sets the body of this RestoreBackupRequest.
 
         :param body: The body of this RestoreBackupRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.BackupRestoreReq`

@@ -35,7 +35,7 @@ class CheckRecordRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, offset=None, limit=None, start_time=None, end_time=None):
-        """CheckRecordRequest
+        r"""CheckRecordRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class CheckRecordRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CheckRecordRequest.
+        r"""Gets the project_id of this CheckRecordRequest.
 
         项目ID
 
@@ -87,7 +87,7 @@ class CheckRecordRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CheckRecordRequest.
+        r"""Sets the project_id of this CheckRecordRequest.
 
         项目ID
 
@@ -98,7 +98,7 @@ class CheckRecordRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CheckRecordRequest.
+        r"""Gets the task_id of this CheckRecordRequest.
 
         任务ID
 
@@ -109,7 +109,7 @@ class CheckRecordRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CheckRecordRequest.
+        r"""Sets the task_id of this CheckRecordRequest.
 
         任务ID
 
@@ -120,7 +120,7 @@ class CheckRecordRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this CheckRecordRequest.
+        r"""Gets the offset of this CheckRecordRequest.
 
         分页索引，偏移量
 
@@ -131,7 +131,7 @@ class CheckRecordRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this CheckRecordRequest.
+        r"""Sets the offset of this CheckRecordRequest.
 
         分页索引，偏移量
 
@@ -142,7 +142,7 @@ class CheckRecordRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this CheckRecordRequest.
+        r"""Gets the limit of this CheckRecordRequest.
 
         每页显示的数量,每页最多显示1000条
 
@@ -153,7 +153,7 @@ class CheckRecordRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this CheckRecordRequest.
+        r"""Sets the limit of this CheckRecordRequest.
 
         每页显示的数量,每页最多显示1000条
 
@@ -164,7 +164,7 @@ class CheckRecordRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CheckRecordRequest.
+        r"""Gets the start_time of this CheckRecordRequest.
 
         过滤开始时间,根据任务检查开始时间过滤
 
@@ -175,7 +175,7 @@ class CheckRecordRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CheckRecordRequest.
+        r"""Sets the start_time of this CheckRecordRequest.
 
         过滤开始时间,根据任务检查开始时间过滤
 
@@ -186,7 +186,7 @@ class CheckRecordRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CheckRecordRequest.
+        r"""Gets the end_time of this CheckRecordRequest.
 
         过滤结束时间,根据任务检查开始时间过滤
 
@@ -197,7 +197,7 @@ class CheckRecordRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CheckRecordRequest.
+        r"""Sets the end_time of this CheckRecordRequest.
 
         过滤结束时间,根据任务检查开始时间过滤
 

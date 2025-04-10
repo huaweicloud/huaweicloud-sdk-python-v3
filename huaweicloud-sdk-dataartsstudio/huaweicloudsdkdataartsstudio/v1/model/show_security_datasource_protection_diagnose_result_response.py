@@ -36,7 +36,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, scanning=None, check_time=None, kerberos=None, public_network_access=None, security_group=None):
-        """ShowSecurityDatasourceProtectionDiagnoseResultResponse
+        r"""ShowSecurityDatasourceProtectionDiagnoseResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
+        r"""Gets the task_id of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
 
         诊断任务id
 
@@ -90,7 +90,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
+        r"""Sets the task_id of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
 
         诊断任务id
 
@@ -101,7 +101,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultResponse(SdkResponse):
 
     @property
     def scanning(self):
-        """Gets the scanning of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
+        r"""Gets the scanning of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
 
         是否正在扫描
 
@@ -112,7 +112,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultResponse(SdkResponse):
 
     @scanning.setter
     def scanning(self, scanning):
-        """Sets the scanning of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
+        r"""Sets the scanning of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
 
         是否正在扫描
 
@@ -123,7 +123,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultResponse(SdkResponse):
 
     @property
     def check_time(self):
-        """Gets the check_time of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
+        r"""Gets the check_time of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
 
         最新检测时间。
 
@@ -134,7 +134,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultResponse(SdkResponse):
 
     @check_time.setter
     def check_time(self, check_time):
-        """Sets the check_time of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
+        r"""Sets the check_time of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
 
         最新检测时间。
 
@@ -145,7 +145,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultResponse(SdkResponse):
 
     @property
     def kerberos(self):
-        """Gets the kerberos of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
+        r"""Gets the kerberos of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
 
         :return: The kerberos of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SecurityCertification`
@@ -154,7 +154,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultResponse(SdkResponse):
 
     @kerberos.setter
     def kerberos(self, kerberos):
-        """Sets the kerberos of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
+        r"""Sets the kerberos of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
 
         :param kerberos: The kerberos of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
         :type kerberos: :class:`huaweicloudsdkdataartsstudio.v1.SecurityCertification`
@@ -163,7 +163,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultResponse(SdkResponse):
 
     @property
     def public_network_access(self):
-        """Gets the public_network_access of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
+        r"""Gets the public_network_access of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
 
         :return: The public_network_access of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PublicNetworkAccess`
@@ -172,7 +172,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultResponse(SdkResponse):
 
     @public_network_access.setter
     def public_network_access(self, public_network_access):
-        """Sets the public_network_access of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
+        r"""Sets the public_network_access of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
 
         :param public_network_access: The public_network_access of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
         :type public_network_access: :class:`huaweicloudsdkdataartsstudio.v1.PublicNetworkAccess`
@@ -181,7 +181,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultResponse(SdkResponse):
 
     @property
     def security_group(self):
-        """Gets the security_group of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
+        r"""Gets the security_group of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
 
         :return: The security_group of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SecurityGroupResult`
@@ -190,7 +190,7 @@ class ShowSecurityDatasourceProtectionDiagnoseResultResponse(SdkResponse):
 
     @security_group.setter
     def security_group(self, security_group):
-        """Sets the security_group of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
+        r"""Sets the security_group of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
 
         :param security_group: The security_group of this ShowSecurityDatasourceProtectionDiagnoseResultResponse.
         :type security_group: :class:`huaweicloudsdkdataartsstudio.v1.SecurityGroupResult`

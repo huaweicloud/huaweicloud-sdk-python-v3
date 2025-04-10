@@ -28,7 +28,7 @@ class DeleteDdmDatabaseResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, database_name=None):
-        """DeleteDdmDatabaseResponse
+        r"""DeleteDdmDatabaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteDdmDatabaseResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteDdmDatabaseResponse.
+        r"""Gets the job_id of this DeleteDdmDatabaseResponse.
 
         工作流id。
 
@@ -62,7 +62,7 @@ class DeleteDdmDatabaseResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteDdmDatabaseResponse.
+        r"""Sets the job_id of this DeleteDdmDatabaseResponse.
 
         工作流id。
 
@@ -73,7 +73,7 @@ class DeleteDdmDatabaseResponse(SdkResponse):
 
     @property
     def database_name(self):
-        """Gets the database_name of this DeleteDdmDatabaseResponse.
+        r"""Gets the database_name of this DeleteDdmDatabaseResponse.
 
         逻辑库名
 
@@ -84,7 +84,7 @@ class DeleteDdmDatabaseResponse(SdkResponse):
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DeleteDdmDatabaseResponse.
+        r"""Sets the database_name of this DeleteDdmDatabaseResponse.
 
         逻辑库名
 

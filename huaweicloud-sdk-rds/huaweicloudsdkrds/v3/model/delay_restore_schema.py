@@ -29,7 +29,7 @@ class DelayRestoreSchema:
     }
 
     def __init__(self, name=None, total_tables=None, tables=None):
-        """DelayRestoreSchema
+        r"""DelayRestoreSchema
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DelayRestoreSchema:
 
     @property
     def name(self):
-        """Gets the name of this DelayRestoreSchema.
+        r"""Gets the name of this DelayRestoreSchema.
 
         schema名称
 
@@ -67,7 +67,7 @@ class DelayRestoreSchema:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DelayRestoreSchema.
+        r"""Sets the name of this DelayRestoreSchema.
 
         schema名称
 
@@ -78,7 +78,7 @@ class DelayRestoreSchema:
 
     @property
     def total_tables(self):
-        """Gets the total_tables of this DelayRestoreSchema.
+        r"""Gets the total_tables of this DelayRestoreSchema.
 
         返回该schema下的总表数量
 
@@ -89,7 +89,7 @@ class DelayRestoreSchema:
 
     @total_tables.setter
     def total_tables(self, total_tables):
-        """Sets the total_tables of this DelayRestoreSchema.
+        r"""Sets the total_tables of this DelayRestoreSchema.
 
         返回该schema下的总表数量
 
@@ -100,7 +100,7 @@ class DelayRestoreSchema:
 
     @property
     def tables(self):
-        """Gets the tables of this DelayRestoreSchema.
+        r"""Gets the tables of this DelayRestoreSchema.
 
         该schema下的表列表
 
@@ -111,7 +111,7 @@ class DelayRestoreSchema:
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this DelayRestoreSchema.
+        r"""Sets the tables of this DelayRestoreSchema.
 
         该schema下的表列表
 

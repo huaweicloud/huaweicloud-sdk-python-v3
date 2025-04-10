@@ -29,7 +29,7 @@ class SetKernelPluginLicenseRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """SetKernelPluginLicenseRequest
+        r"""SetKernelPluginLicenseRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetKernelPluginLicenseRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetKernelPluginLicenseRequest.
+        r"""Gets the x_language of this SetKernelPluginLicenseRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class SetKernelPluginLicenseRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetKernelPluginLicenseRequest.
+        r"""Sets the x_language of this SetKernelPluginLicenseRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class SetKernelPluginLicenseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetKernelPluginLicenseRequest.
+        r"""Gets the instance_id of this SetKernelPluginLicenseRequest.
 
         需要配置license的实例
 
@@ -89,7 +89,7 @@ class SetKernelPluginLicenseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetKernelPluginLicenseRequest.
+        r"""Sets the instance_id of this SetKernelPluginLicenseRequest.
 
         需要配置license的实例
 
@@ -100,7 +100,7 @@ class SetKernelPluginLicenseRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetKernelPluginLicenseRequest.
+        r"""Gets the body of this SetKernelPluginLicenseRequest.
 
         :return: The body of this SetKernelPluginLicenseRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetKernelPluginLicenseRequestBody`
@@ -109,7 +109,7 @@ class SetKernelPluginLicenseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetKernelPluginLicenseRequest.
+        r"""Sets the body of this SetKernelPluginLicenseRequest.
 
         :param body: The body of this SetKernelPluginLicenseRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetKernelPluginLicenseRequestBody`

@@ -26,7 +26,7 @@ class RevokePostgresqlDbPrivilegeResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """RevokePostgresqlDbPrivilegeResponse
+        r"""RevokePostgresqlDbPrivilegeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RevokePostgresqlDbPrivilegeResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this RevokePostgresqlDbPrivilegeResponse.
+        r"""Gets the resp of this RevokePostgresqlDbPrivilegeResponse.
 
         调用正常时，返回“successful”。
 
@@ -55,7 +55,7 @@ class RevokePostgresqlDbPrivilegeResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this RevokePostgresqlDbPrivilegeResponse.
+        r"""Sets the resp of this RevokePostgresqlDbPrivilegeResponse.
 
         调用正常时，返回“successful”。
 

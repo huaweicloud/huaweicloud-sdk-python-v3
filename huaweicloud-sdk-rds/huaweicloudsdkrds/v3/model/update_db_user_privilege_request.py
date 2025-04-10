@@ -27,7 +27,7 @@ class UpdateDbUserPrivilegeRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateDbUserPrivilegeRequest
+        r"""UpdateDbUserPrivilegeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDbUserPrivilegeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDbUserPrivilegeRequest.
+        r"""Gets the instance_id of this UpdateDbUserPrivilegeRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateDbUserPrivilegeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDbUserPrivilegeRequest.
+        r"""Sets the instance_id of this UpdateDbUserPrivilegeRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateDbUserPrivilegeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDbUserPrivilegeRequest.
+        r"""Gets the body of this UpdateDbUserPrivilegeRequest.
 
         :return: The body of this UpdateDbUserPrivilegeRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.DbUserPrivilegeRequest`
@@ -80,7 +80,7 @@ class UpdateDbUserPrivilegeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDbUserPrivilegeRequest.
+        r"""Sets the body of this UpdateDbUserPrivilegeRequest.
 
         :param body: The body of this UpdateDbUserPrivilegeRequest.
         :type body: :class:`huaweicloudsdkrds.v3.DbUserPrivilegeRequest`

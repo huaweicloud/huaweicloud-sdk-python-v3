@@ -27,7 +27,7 @@ class CreateRomaAppRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateRomaAppRequest
+        r"""CreateRomaAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateRomaAppRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateRomaAppRequest.
+        r"""Gets the instance_id of this CreateRomaAppRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateRomaAppRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateRomaAppRequest.
+        r"""Sets the instance_id of this CreateRomaAppRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateRomaAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRomaAppRequest.
+        r"""Gets the body of this CreateRomaAppRequest.
 
         :return: The body of this CreateRomaAppRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAppReq`
@@ -80,7 +80,7 @@ class CreateRomaAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRomaAppRequest.
+        r"""Sets the body of this CreateRomaAppRequest.
 
         :param body: The body of this CreateRomaAppRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateAppReq`

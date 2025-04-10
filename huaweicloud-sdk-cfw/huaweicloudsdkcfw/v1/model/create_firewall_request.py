@@ -28,7 +28,7 @@ class CreateFirewallRequest:
     }
 
     def __init__(self, x_client_token=None, body=None):
-        """CreateFirewallRequest
+        r"""CreateFirewallRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateFirewallRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateFirewallRequest.
+        r"""Gets the x_client_token of this CreateFirewallRequest.
 
         保证客户端请求幂等性的标识。  该标识为32位UUID格式，由客户端生成，且需确保不同请求之间该标识具有唯一性。
 
@@ -62,7 +62,7 @@ class CreateFirewallRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateFirewallRequest.
+        r"""Sets the x_client_token of this CreateFirewallRequest.
 
         保证客户端请求幂等性的标识。  该标识为32位UUID格式，由客户端生成，且需确保不同请求之间该标识具有唯一性。
 
@@ -73,7 +73,7 @@ class CreateFirewallRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFirewallRequest.
+        r"""Gets the body of this CreateFirewallRequest.
 
         :return: The body of this CreateFirewallRequest.
         :rtype: :class:`huaweicloudsdkcfw.v1.CreateFirewallReq`
@@ -82,7 +82,7 @@ class CreateFirewallRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFirewallRequest.
+        r"""Sets the body of this CreateFirewallRequest.
 
         :param body: The body of this CreateFirewallRequest.
         :type body: :class:`huaweicloudsdkcfw.v1.CreateFirewallReq`

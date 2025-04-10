@@ -28,7 +28,7 @@ class ShowVocabulariesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, result=None):
-        """ShowVocabulariesResponse
+        r"""ShowVocabulariesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowVocabulariesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowVocabulariesResponse.
+        r"""Gets the count of this ShowVocabulariesResponse.
 
         热词表数。
 
@@ -62,7 +62,7 @@ class ShowVocabulariesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowVocabulariesResponse.
+        r"""Sets the count of this ShowVocabulariesResponse.
 
         热词表数。
 
@@ -73,7 +73,7 @@ class ShowVocabulariesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowVocabulariesResponse.
+        r"""Gets the result of this ShowVocabulariesResponse.
 
         调用成功返回热词表列表，调用失败时无此字段。
 
@@ -84,7 +84,7 @@ class ShowVocabulariesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowVocabulariesResponse.
+        r"""Sets the result of this ShowVocabulariesResponse.
 
         调用成功返回热词表列表，调用失败时无此字段。
 

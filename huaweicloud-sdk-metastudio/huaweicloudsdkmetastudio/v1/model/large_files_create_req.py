@@ -35,7 +35,7 @@ class LargeFilesCreateReq:
     }
 
     def __init__(self, file_name=None, file_size=None, file_type=None, asset_id=None, asset_file_category=None, file_multipart_count=None):
-        """LargeFilesCreateReq
+        r"""LargeFilesCreateReq
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class LargeFilesCreateReq:
 
     @property
     def file_name(self):
-        """Gets the file_name of this LargeFilesCreateReq.
+        r"""Gets the file_name of this LargeFilesCreateReq.
 
         文件名，不区分大小写，最大长度256，最小长度1。
 
@@ -85,7 +85,7 @@ class LargeFilesCreateReq:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this LargeFilesCreateReq.
+        r"""Sets the file_name of this LargeFilesCreateReq.
 
         文件名，不区分大小写，最大长度256，最小长度1。
 
@@ -96,7 +96,7 @@ class LargeFilesCreateReq:
 
     @property
     def file_size(self):
-        """Gets the file_size of this LargeFilesCreateReq.
+        r"""Gets the file_size of this LargeFilesCreateReq.
 
         文件总的大小，最小1，最大536870912000。
 
@@ -107,7 +107,7 @@ class LargeFilesCreateReq:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this LargeFilesCreateReq.
+        r"""Sets the file_size of this LargeFilesCreateReq.
 
         文件总的大小，最小1，最大536870912000。
 
@@ -118,7 +118,7 @@ class LargeFilesCreateReq:
 
     @property
     def file_type(self):
-        """Gets the file_type of this LargeFilesCreateReq.
+        r"""Gets the file_type of this LargeFilesCreateReq.
 
         文件类型（默认提取文件后缀）。
 
@@ -129,7 +129,7 @@ class LargeFilesCreateReq:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this LargeFilesCreateReq.
+        r"""Sets the file_type of this LargeFilesCreateReq.
 
         文件类型（默认提取文件后缀）。
 
@@ -140,7 +140,7 @@ class LargeFilesCreateReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this LargeFilesCreateReq.
+        r"""Gets the asset_id of this LargeFilesCreateReq.
 
         资产ID。
 
@@ -151,7 +151,7 @@ class LargeFilesCreateReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this LargeFilesCreateReq.
+        r"""Sets the asset_id of this LargeFilesCreateReq.
 
         资产ID。
 
@@ -162,7 +162,7 @@ class LargeFilesCreateReq:
 
     @property
     def asset_file_category(self):
-        """Gets the asset_file_category of this LargeFilesCreateReq.
+        r"""Gets the asset_file_category of this LargeFilesCreateReq.
 
         文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * OTHER：其他文件 * PACKAGE：打包后的资产文件
 
@@ -173,7 +173,7 @@ class LargeFilesCreateReq:
 
     @asset_file_category.setter
     def asset_file_category(self, asset_file_category):
-        """Sets the asset_file_category of this LargeFilesCreateReq.
+        r"""Sets the asset_file_category of this LargeFilesCreateReq.
 
         文件在资产中的分类。每种资产类型包含的文件分类不同。 * MAIN：主文件 * OTHER：其他文件 * PACKAGE：打包后的资产文件
 
@@ -184,7 +184,7 @@ class LargeFilesCreateReq:
 
     @property
     def file_multipart_count(self):
-        """Gets the file_multipart_count of this LargeFilesCreateReq.
+        r"""Gets the file_multipart_count of this LargeFilesCreateReq.
 
         ORI4K文件分段上传数量，默认值为1
 
@@ -195,7 +195,7 @@ class LargeFilesCreateReq:
 
     @file_multipart_count.setter
     def file_multipart_count(self, file_multipart_count):
-        """Sets the file_multipart_count of this LargeFilesCreateReq.
+        r"""Sets the file_multipart_count of this LargeFilesCreateReq.
 
         ORI4K文件分段上传数量，默认值为1
 

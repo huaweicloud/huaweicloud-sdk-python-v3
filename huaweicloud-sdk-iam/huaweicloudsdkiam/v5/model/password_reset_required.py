@@ -23,7 +23,7 @@ class PasswordResetRequired:
     }
 
     def __init__(self):
-        """PasswordResetRequired
+        r"""PasswordResetRequired
 
         The model defined in huaweicloud sdk
 

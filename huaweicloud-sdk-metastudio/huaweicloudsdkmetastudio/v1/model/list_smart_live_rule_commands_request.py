@@ -31,7 +31,7 @@ class ListSmartLiveRuleCommandsRequest:
     }
 
     def __init__(self, x_app_user_id=None, job_id=None, offset=None, limit=None):
-        """ListSmartLiveRuleCommandsRequest
+        r"""ListSmartLiveRuleCommandsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListSmartLiveRuleCommandsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListSmartLiveRuleCommandsRequest.
+        r"""Gets the x_app_user_id of this ListSmartLiveRuleCommandsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -75,7 +75,7 @@ class ListSmartLiveRuleCommandsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListSmartLiveRuleCommandsRequest.
+        r"""Sets the x_app_user_id of this ListSmartLiveRuleCommandsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -86,7 +86,7 @@ class ListSmartLiveRuleCommandsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListSmartLiveRuleCommandsRequest.
+        r"""Gets the job_id of this ListSmartLiveRuleCommandsRequest.
 
         根据任务ID 查询
 
@@ -97,7 +97,7 @@ class ListSmartLiveRuleCommandsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListSmartLiveRuleCommandsRequest.
+        r"""Sets the job_id of this ListSmartLiveRuleCommandsRequest.
 
         根据任务ID 查询
 
@@ -108,7 +108,7 @@ class ListSmartLiveRuleCommandsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSmartLiveRuleCommandsRequest.
+        r"""Gets the offset of this ListSmartLiveRuleCommandsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -119,7 +119,7 @@ class ListSmartLiveRuleCommandsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSmartLiveRuleCommandsRequest.
+        r"""Sets the offset of this ListSmartLiveRuleCommandsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -130,7 +130,7 @@ class ListSmartLiveRuleCommandsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSmartLiveRuleCommandsRequest.
+        r"""Gets the limit of this ListSmartLiveRuleCommandsRequest.
 
         每页显示的条目数量。
 
@@ -141,7 +141,7 @@ class ListSmartLiveRuleCommandsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSmartLiveRuleCommandsRequest.
+        r"""Sets the limit of this ListSmartLiveRuleCommandsRequest.
 
         每页显示的条目数量。
 

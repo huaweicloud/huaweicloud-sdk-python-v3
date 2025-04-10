@@ -28,7 +28,7 @@ class AuthAssistEnum:
     }
 
     def __init__(self):
-        """AuthAssistEnum
+        r"""AuthAssistEnum
 
         The model defined in huaweicloud sdk
 

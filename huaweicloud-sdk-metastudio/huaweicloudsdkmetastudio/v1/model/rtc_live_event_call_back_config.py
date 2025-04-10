@@ -25,7 +25,7 @@ class RTCLiveEventCallBackConfig:
     }
 
     def __init__(self, rtc_callback_event_type=None):
-        """RTCLiveEventCallBackConfig
+        r"""RTCLiveEventCallBackConfig
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RTCLiveEventCallBackConfig:
 
     @property
     def rtc_callback_event_type(self):
-        """Gets the rtc_callback_event_type of this RTCLiveEventCallBackConfig.
+        r"""Gets the rtc_callback_event_type of this RTCLiveEventCallBackConfig.
 
         RTC回调的直播事件类型列表。  当前仅支持如下取值： * LIVE_PROGRESS：直播剧本进度通知。  * REPLY_COMMAND_FINISH：回复播放完成通知。  回调事件结构体定义： * message_type：消息类型。 * data：消息描述。   - LIVE_PROGRESS事件回调定义如下：     ```json     {         \"message_type\": \"live_progress_notify\",         \"data\": {             \"script_name\": \"场景一\",             \"shoot_script_sequence_no\": 2,             \"shoot_script_title\": \"引导语\",             \"offset\": \"247\",             \"reply_id\": \"e87104f76d7546ce8a46ac6b04c49c3c\"         }     }     ```   - REPLY_COMMAND_FINISH回调定义如下：     ```json     {       \"message_type\": \"reply_command_finish_notify\",       \"data\":\"{         \"reply_id\":\"e87104f76d7546ce8a46ac6b04c49c3c\"       }\"     }     ```
 
@@ -54,7 +54,7 @@ class RTCLiveEventCallBackConfig:
 
     @rtc_callback_event_type.setter
     def rtc_callback_event_type(self, rtc_callback_event_type):
-        """Sets the rtc_callback_event_type of this RTCLiveEventCallBackConfig.
+        r"""Sets the rtc_callback_event_type of this RTCLiveEventCallBackConfig.
 
         RTC回调的直播事件类型列表。  当前仅支持如下取值： * LIVE_PROGRESS：直播剧本进度通知。  * REPLY_COMMAND_FINISH：回复播放完成通知。  回调事件结构体定义： * message_type：消息类型。 * data：消息描述。   - LIVE_PROGRESS事件回调定义如下：     ```json     {         \"message_type\": \"live_progress_notify\",         \"data\": {             \"script_name\": \"场景一\",             \"shoot_script_sequence_no\": 2,             \"shoot_script_title\": \"引导语\",             \"offset\": \"247\",             \"reply_id\": \"e87104f76d7546ce8a46ac6b04c49c3c\"         }     }     ```   - REPLY_COMMAND_FINISH回调定义如下：     ```json     {       \"message_type\": \"reply_command_finish_notify\",       \"data\":\"{         \"reply_id\":\"e87104f76d7546ce8a46ac6b04c49c3c\"       }\"     }     ```
 

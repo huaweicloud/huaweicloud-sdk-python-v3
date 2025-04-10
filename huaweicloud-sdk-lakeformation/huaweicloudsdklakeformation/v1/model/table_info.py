@@ -27,7 +27,7 @@ class TableInfo:
     }
 
     def __init__(self, columns=None, name=None):
-        """TableInfo
+        r"""TableInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TableInfo:
 
     @property
     def columns(self):
-        """Gets the columns of this TableInfo.
+        r"""Gets the columns of this TableInfo.
 
         :return: The columns of this TableInfo.
         :rtype: :class:`huaweicloudsdklakeformation.v1.ColumnInfo`
@@ -58,7 +58,7 @@ class TableInfo:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this TableInfo.
+        r"""Sets the columns of this TableInfo.
 
         :param columns: The columns of this TableInfo.
         :type columns: :class:`huaweicloudsdklakeformation.v1.ColumnInfo`
@@ -67,7 +67,7 @@ class TableInfo:
 
     @property
     def name(self):
-        """Gets the name of this TableInfo.
+        r"""Gets the name of this TableInfo.
 
         table name
 
@@ -78,7 +78,7 @@ class TableInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TableInfo.
+        r"""Sets the name of this TableInfo.
 
         table name
 

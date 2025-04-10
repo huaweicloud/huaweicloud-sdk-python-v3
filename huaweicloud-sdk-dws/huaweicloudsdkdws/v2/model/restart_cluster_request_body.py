@@ -25,7 +25,7 @@ class RestartClusterRequestBody:
     }
 
     def __init__(self, restart=None):
-        """RestartClusterRequestBody
+        r"""RestartClusterRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestartClusterRequestBody:
 
     @property
     def restart(self):
-        """Gets the restart of this RestartClusterRequestBody.
+        r"""Gets the restart of this RestartClusterRequestBody.
 
         重启标识
 
@@ -53,7 +53,7 @@ class RestartClusterRequestBody:
 
     @restart.setter
     def restart(self, restart):
-        """Sets the restart of this RestartClusterRequestBody.
+        r"""Sets the restart of this RestartClusterRequestBody.
 
         重启标识
 

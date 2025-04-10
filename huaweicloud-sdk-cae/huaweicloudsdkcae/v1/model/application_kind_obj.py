@@ -26,7 +26,7 @@ class ApplicationKindObj:
     }
 
     def __init__(self):
-        """ApplicationKindObj
+        r"""ApplicationKindObj
 
         The model defined in huaweicloud sdk
 

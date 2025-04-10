@@ -31,7 +31,7 @@ class Step:
     }
 
     def __init__(self, id=None, name=None, params=None, enable=None):
-        """Step
+        r"""Step
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Step:
 
     @property
     def id(self):
-        """Gets the id of this Step.
+        r"""Gets the id of this Step.
 
         id
 
@@ -75,7 +75,7 @@ class Step:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Step.
+        r"""Sets the id of this Step.
 
         id
 
@@ -86,7 +86,7 @@ class Step:
 
     @property
     def name(self):
-        """Gets the name of this Step.
+        r"""Gets the name of this Step.
 
         名称
 
@@ -97,7 +97,7 @@ class Step:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Step.
+        r"""Sets the name of this Step.
 
         名称
 
@@ -108,7 +108,7 @@ class Step:
 
     @property
     def params(self):
-        """Gets the params of this Step.
+        r"""Gets the params of this Step.
 
         参数
 
@@ -119,7 +119,7 @@ class Step:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this Step.
+        r"""Sets the params of this Step.
 
         参数
 
@@ -130,7 +130,7 @@ class Step:
 
     @property
     def enable(self):
-        """Gets the enable of this Step.
+        r"""Gets the enable of this Step.
 
         是否开启
 
@@ -141,7 +141,7 @@ class Step:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this Step.
+        r"""Sets the enable of this Step.
 
         是否开启
 

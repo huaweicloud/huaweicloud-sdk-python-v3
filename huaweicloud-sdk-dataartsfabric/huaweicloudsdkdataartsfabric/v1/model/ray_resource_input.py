@@ -27,7 +27,7 @@ class RayResourceInput:
     }
 
     def __init__(self, head_node_resource=None, work_node_resources=None):
-        """RayResourceInput
+        r"""RayResourceInput
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RayResourceInput:
 
     @property
     def head_node_resource(self):
-        """Gets the head_node_resource of this RayResourceInput.
+        r"""Gets the head_node_resource of this RayResourceInput.
 
         :return: The head_node_resource of this RayResourceInput.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.HeadNodeResourceDemand`
@@ -57,7 +57,7 @@ class RayResourceInput:
 
     @head_node_resource.setter
     def head_node_resource(self, head_node_resource):
-        """Sets the head_node_resource of this RayResourceInput.
+        r"""Sets the head_node_resource of this RayResourceInput.
 
         :param head_node_resource: The head_node_resource of this RayResourceInput.
         :type head_node_resource: :class:`huaweicloudsdkdataartsfabric.v1.HeadNodeResourceDemand`
@@ -66,7 +66,7 @@ class RayResourceInput:
 
     @property
     def work_node_resources(self):
-        """Gets the work_node_resources of this RayResourceInput.
+        r"""Gets the work_node_resources of this RayResourceInput.
 
         工作节点资源配置
 
@@ -77,7 +77,7 @@ class RayResourceInput:
 
     @work_node_resources.setter
     def work_node_resources(self, work_node_resources):
-        """Sets the work_node_resources of this RayResourceInput.
+        r"""Sets the work_node_resources of this RayResourceInput.
 
         工作节点资源配置
 

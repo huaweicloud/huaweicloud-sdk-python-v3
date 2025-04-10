@@ -26,7 +26,7 @@ class BatchCreateSharedBandwidthsResponse(SdkResponse):
     }
 
     def __init__(self, bandwidths=None):
-        """BatchCreateSharedBandwidthsResponse
+        r"""BatchCreateSharedBandwidthsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchCreateSharedBandwidthsResponse(SdkResponse):
 
     @property
     def bandwidths(self):
-        """Gets the bandwidths of this BatchCreateSharedBandwidthsResponse.
+        r"""Gets the bandwidths of this BatchCreateSharedBandwidthsResponse.
 
         批创的带宽对象的列表
 
@@ -55,7 +55,7 @@ class BatchCreateSharedBandwidthsResponse(SdkResponse):
 
     @bandwidths.setter
     def bandwidths(self, bandwidths):
-        """Sets the bandwidths of this BatchCreateSharedBandwidthsResponse.
+        r"""Sets the bandwidths of this BatchCreateSharedBandwidthsResponse.
 
         批创的带宽对象的列表
 

@@ -26,7 +26,7 @@ class ListPluginsResponse(SdkResponse):
     }
 
     def __init__(self, plugins=None):
-        """ListPluginsResponse
+        r"""ListPluginsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPluginsResponse(SdkResponse):
 
     @property
     def plugins(self):
-        """Gets the plugins of this ListPluginsResponse.
+        r"""Gets the plugins of this ListPluginsResponse.
 
         插件信息列表。
 
@@ -55,7 +55,7 @@ class ListPluginsResponse(SdkResponse):
 
     @plugins.setter
     def plugins(self, plugins):
-        """Sets the plugins of this ListPluginsResponse.
+        r"""Sets the plugins of this ListPluginsResponse.
 
         插件信息列表。
 

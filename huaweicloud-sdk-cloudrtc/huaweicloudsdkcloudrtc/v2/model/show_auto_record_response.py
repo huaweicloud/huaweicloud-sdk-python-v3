@@ -30,7 +30,7 @@ class ShowAutoRecordResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, auto_record_mode=None, x_request_id=None):
-        """ShowAutoRecordResponse
+        r"""ShowAutoRecordResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowAutoRecordResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowAutoRecordResponse.
+        r"""Gets the app_id of this ShowAutoRecordResponse.
 
         应用id
 
@@ -69,7 +69,7 @@ class ShowAutoRecordResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowAutoRecordResponse.
+        r"""Sets the app_id of this ShowAutoRecordResponse.
 
         应用id
 
@@ -80,7 +80,7 @@ class ShowAutoRecordResponse(SdkResponse):
 
     @property
     def auto_record_mode(self):
-        """Gets the auto_record_mode of this ShowAutoRecordResponse.
+        r"""Gets the auto_record_mode of this ShowAutoRecordResponse.
 
         :return: The auto_record_mode of this ShowAutoRecordResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
@@ -89,7 +89,7 @@ class ShowAutoRecordResponse(SdkResponse):
 
     @auto_record_mode.setter
     def auto_record_mode(self, auto_record_mode):
-        """Sets the auto_record_mode of this ShowAutoRecordResponse.
+        r"""Sets the auto_record_mode of this ShowAutoRecordResponse.
 
         :param auto_record_mode: The auto_record_mode of this ShowAutoRecordResponse.
         :type auto_record_mode: :class:`huaweicloudsdkcloudrtc.v2.AppAutoRecordMode`
@@ -98,7 +98,7 @@ class ShowAutoRecordResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowAutoRecordResponse.
+        r"""Gets the x_request_id of this ShowAutoRecordResponse.
 
         :return: The x_request_id of this ShowAutoRecordResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ShowAutoRecordResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowAutoRecordResponse.
+        r"""Sets the x_request_id of this ShowAutoRecordResponse.
 
         :param x_request_id: The x_request_id of this ShowAutoRecordResponse.
         :type x_request_id: str

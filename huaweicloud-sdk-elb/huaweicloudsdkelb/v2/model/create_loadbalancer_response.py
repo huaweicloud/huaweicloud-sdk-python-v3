@@ -30,7 +30,7 @@ class CreateLoadbalancerResponse(SdkResponse):
     }
 
     def __init__(self, loadbalancer=None, order_id=None, loadbalancer_id=None):
-        """CreateLoadbalancerResponse
+        r"""CreateLoadbalancerResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateLoadbalancerResponse(SdkResponse):
 
     @property
     def loadbalancer(self):
-        """Gets the loadbalancer of this CreateLoadbalancerResponse.
+        r"""Gets the loadbalancer of this CreateLoadbalancerResponse.
 
         :return: The loadbalancer of this CreateLoadbalancerResponse.
         :rtype: :class:`huaweicloudsdkelb.v2.LoadbalancerResp`
@@ -67,7 +67,7 @@ class CreateLoadbalancerResponse(SdkResponse):
 
     @loadbalancer.setter
     def loadbalancer(self, loadbalancer):
-        """Sets the loadbalancer of this CreateLoadbalancerResponse.
+        r"""Sets the loadbalancer of this CreateLoadbalancerResponse.
 
         :param loadbalancer: The loadbalancer of this CreateLoadbalancerResponse.
         :type loadbalancer: :class:`huaweicloudsdkelb.v2.LoadbalancerResp`
@@ -76,7 +76,7 @@ class CreateLoadbalancerResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateLoadbalancerResponse.
+        r"""Gets the order_id of this CreateLoadbalancerResponse.
 
         订单号[（包周期场景返回该字段）](tag:hws)
 
@@ -87,7 +87,7 @@ class CreateLoadbalancerResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateLoadbalancerResponse.
+        r"""Sets the order_id of this CreateLoadbalancerResponse.
 
         订单号[（包周期场景返回该字段）](tag:hws)
 
@@ -98,7 +98,7 @@ class CreateLoadbalancerResponse(SdkResponse):
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this CreateLoadbalancerResponse.
+        r"""Gets the loadbalancer_id of this CreateLoadbalancerResponse.
 
         负载均衡器的ID[（包周期场景返回该字段）](tag:hws)
 
@@ -109,7 +109,7 @@ class CreateLoadbalancerResponse(SdkResponse):
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this CreateLoadbalancerResponse.
+        r"""Sets the loadbalancer_id of this CreateLoadbalancerResponse.
 
         负载均衡器的ID[（包周期场景返回该字段）](tag:hws)
 

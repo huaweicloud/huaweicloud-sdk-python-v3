@@ -31,7 +31,7 @@ class UpdateriggerEventData:
     }
 
     def __init__(self, is_serial=None, max_fetch_bytes=None, polling_interval=None, polling_unit=None):
-        """UpdateriggerEventData
+        r"""UpdateriggerEventData
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateriggerEventData:
 
     @property
     def is_serial(self):
-        """Gets the is_serial of this UpdateriggerEventData.
+        r"""Gets the is_serial of this UpdateriggerEventData.
 
         串行处理数据
 
@@ -75,7 +75,7 @@ class UpdateriggerEventData:
 
     @is_serial.setter
     def is_serial(self, is_serial):
-        """Sets the is_serial of this UpdateriggerEventData.
+        r"""Sets the is_serial of this UpdateriggerEventData.
 
         串行处理数据
 
@@ -86,7 +86,7 @@ class UpdateriggerEventData:
 
     @property
     def max_fetch_bytes(self):
-        """Gets the max_fetch_bytes of this UpdateriggerEventData.
+        r"""Gets the max_fetch_bytes of this UpdateriggerEventData.
 
         最大字节数
 
@@ -97,7 +97,7 @@ class UpdateriggerEventData:
 
     @max_fetch_bytes.setter
     def max_fetch_bytes(self, max_fetch_bytes):
-        """Sets the max_fetch_bytes of this UpdateriggerEventData.
+        r"""Sets the max_fetch_bytes of this UpdateriggerEventData.
 
         最大字节数
 
@@ -108,7 +108,7 @@ class UpdateriggerEventData:
 
     @property
     def polling_interval(self):
-        """Gets the polling_interval of this UpdateriggerEventData.
+        r"""Gets the polling_interval of this UpdateriggerEventData.
 
         拉取周期
 
@@ -119,7 +119,7 @@ class UpdateriggerEventData:
 
     @polling_interval.setter
     def polling_interval(self, polling_interval):
-        """Sets the polling_interval of this UpdateriggerEventData.
+        r"""Sets the polling_interval of this UpdateriggerEventData.
 
         拉取周期
 
@@ -130,7 +130,7 @@ class UpdateriggerEventData:
 
     @property
     def polling_unit(self):
-        """Gets the polling_unit of this UpdateriggerEventData.
+        r"""Gets the polling_unit of this UpdateriggerEventData.
 
         拉取周期单位
 
@@ -141,7 +141,7 @@ class UpdateriggerEventData:
 
     @polling_unit.setter
     def polling_unit(self, polling_unit):
-        """Sets the polling_unit of this UpdateriggerEventData.
+        r"""Sets the polling_unit of this UpdateriggerEventData.
 
         拉取周期单位
 

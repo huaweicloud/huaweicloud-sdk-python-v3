@@ -25,7 +25,7 @@ class EndpointResource:
     }
 
     def __init__(self, resource=None):
-        """EndpointResource
+        r"""EndpointResource
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EndpointResource:
 
     @property
     def resource(self):
-        """Gets the resource of this EndpointResource.
+        r"""Gets the resource of this EndpointResource.
 
         消息端点资源。 示例：- dis: {\"channel\": \"dis channel name\"} - servicebus: {\"path\": \"/request path\"} - apigw: {\"resource\": \"http://ssss.com\"} - eventbus: {\"topic\": \"/xxxx\"}
 
@@ -54,7 +54,7 @@ class EndpointResource:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this EndpointResource.
+        r"""Sets the resource of this EndpointResource.
 
         消息端点资源。 示例：- dis: {\"channel\": \"dis channel name\"} - servicebus: {\"path\": \"/request path\"} - apigw: {\"resource\": \"http://ssss.com\"} - eventbus: {\"topic\": \"/xxxx\"}
 

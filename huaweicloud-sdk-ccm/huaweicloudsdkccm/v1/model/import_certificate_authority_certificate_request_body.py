@@ -27,7 +27,7 @@ class ImportCertificateAuthorityCertificateRequestBody:
     }
 
     def __init__(self, certificate=None, certificate_chain=None):
-        """ImportCertificateAuthorityCertificateRequestBody
+        r"""ImportCertificateAuthorityCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ImportCertificateAuthorityCertificateRequestBody:
 
     @property
     def certificate(self):
-        """Gets the certificate of this ImportCertificateAuthorityCertificateRequestBody.
+        r"""Gets the certificate of this ImportCertificateAuthorityCertificateRequestBody.
 
         证书内容。
 
@@ -60,7 +60,7 @@ class ImportCertificateAuthorityCertificateRequestBody:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this ImportCertificateAuthorityCertificateRequestBody.
+        r"""Sets the certificate of this ImportCertificateAuthorityCertificateRequestBody.
 
         证书内容。
 
@@ -71,7 +71,7 @@ class ImportCertificateAuthorityCertificateRequestBody:
 
     @property
     def certificate_chain(self):
-        """Gets the certificate_chain of this ImportCertificateAuthorityCertificateRequestBody.
+        r"""Gets the certificate_chain of this ImportCertificateAuthorityCertificateRequestBody.
 
         证书链内容。
 
@@ -82,7 +82,7 @@ class ImportCertificateAuthorityCertificateRequestBody:
 
     @certificate_chain.setter
     def certificate_chain(self, certificate_chain):
-        """Sets the certificate_chain of this ImportCertificateAuthorityCertificateRequestBody.
+        r"""Sets the certificate_chain of this ImportCertificateAuthorityCertificateRequestBody.
 
         证书链内容。
 

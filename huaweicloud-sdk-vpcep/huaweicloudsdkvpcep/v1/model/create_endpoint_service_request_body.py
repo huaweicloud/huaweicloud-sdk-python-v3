@@ -49,7 +49,7 @@ class CreateEndpointServiceRequestBody:
     }
 
     def __init__(self, port_id=None, service_name=None, vpc_id=None, approval_enabled=None, service_type=None, server_type=None, ip=None, ports=None, tcp_proxy=None, tags=None, description=None, ip_version=None, snat_network_id=None):
-        """CreateEndpointServiceRequestBody
+        r"""CreateEndpointServiceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -123,7 +123,7 @@ class CreateEndpointServiceRequestBody:
 
     @property
     def port_id(self):
-        """Gets the port_id of this CreateEndpointServiceRequestBody.
+        r"""Gets the port_id of this CreateEndpointServiceRequestBody.
 
         标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： - LB类型：负载均衡器内网IP对应的端口ID。 详细内容请参考《弹性负载均衡API参考》中的“查询负载均衡详情”。 - VM类型：弹性云服务器IP地址对应的网卡ID。 详细内容请参考《弹性云服务器API参考》中的“查询云服务器网卡信息”， 详见响应消息中的“port_id”字段。 - VIP类型：虚拟IP所在虚拟机的网卡ID（VIP类型业务已不支持，该取值类型已废弃） 说明： - 创建终端节点服务时，VPC的子网网段不能与198.19.128.0/17重叠。 - VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠。
 
@@ -134,7 +134,7 @@ class CreateEndpointServiceRequestBody:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this CreateEndpointServiceRequestBody.
+        r"""Sets the port_id of this CreateEndpointServiceRequestBody.
 
         标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。 取值为： - LB类型：负载均衡器内网IP对应的端口ID。 详细内容请参考《弹性负载均衡API参考》中的“查询负载均衡详情”。 - VM类型：弹性云服务器IP地址对应的网卡ID。 详细内容请参考《弹性云服务器API参考》中的“查询云服务器网卡信息”， 详见响应消息中的“port_id”字段。 - VIP类型：虚拟IP所在虚拟机的网卡ID（VIP类型业务已不支持，该取值类型已废弃） 说明： - 创建终端节点服务时，VPC的子网网段不能与198.19.128.0/17重叠。 - VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠。
 
@@ -145,7 +145,7 @@ class CreateEndpointServiceRequestBody:
 
     @property
     def service_name(self):
-        """Gets the service_name of this CreateEndpointServiceRequestBody.
+        r"""Gets the service_name of this CreateEndpointServiceRequestBody.
 
         终端节点服务的名称，长度不大于16，允许传入大小写字母、数字、下划线、中划线。 - 传入为空，存入值为regionName+.+serviceId - 传入不为空并校验通过，存入值为regionName+.+serviceName+.+serviceId
 
@@ -156,7 +156,7 @@ class CreateEndpointServiceRequestBody:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this CreateEndpointServiceRequestBody.
+        r"""Sets the service_name of this CreateEndpointServiceRequestBody.
 
         终端节点服务的名称，长度不大于16，允许传入大小写字母、数字、下划线、中划线。 - 传入为空，存入值为regionName+.+serviceId - 传入不为空并校验通过，存入值为regionName+.+serviceName+.+serviceId
 
@@ -167,7 +167,7 @@ class CreateEndpointServiceRequestBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateEndpointServiceRequestBody.
+        r"""Gets the vpc_id of this CreateEndpointServiceRequestBody.
 
         终端节点服务对应后端资源所在的VPC的ID。
 
@@ -178,7 +178,7 @@ class CreateEndpointServiceRequestBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateEndpointServiceRequestBody.
+        r"""Sets the vpc_id of this CreateEndpointServiceRequestBody.
 
         终端节点服务对应后端资源所在的VPC的ID。
 
@@ -189,7 +189,7 @@ class CreateEndpointServiceRequestBody:
 
     @property
     def approval_enabled(self):
-        """Gets the approval_enabled of this CreateEndpointServiceRequestBody.
+        r"""Gets the approval_enabled of this CreateEndpointServiceRequestBody.
 
         是否需要审批。  - false：不需要审批，创建的终端节点连接直接为accepted状态。  - true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。 默认为true，需要审批。
 
@@ -200,7 +200,7 @@ class CreateEndpointServiceRequestBody:
 
     @approval_enabled.setter
     def approval_enabled(self, approval_enabled):
-        """Sets the approval_enabled of this CreateEndpointServiceRequestBody.
+        r"""Sets the approval_enabled of this CreateEndpointServiceRequestBody.
 
         是否需要审批。  - false：不需要审批，创建的终端节点连接直接为accepted状态。  - true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。 默认为true，需要审批。
 
@@ -211,7 +211,7 @@ class CreateEndpointServiceRequestBody:
 
     @property
     def service_type(self):
-        """Gets the service_type of this CreateEndpointServiceRequestBody.
+        r"""Gets the service_type of this CreateEndpointServiceRequestBody.
 
         终端节点服务类型。 仅支持将用户私有服务创建为interface类型的终端节点服务。 终端节点服务类型包括“网关（gateway）型”和“接口（interface）型”：  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建， 用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
@@ -222,7 +222,7 @@ class CreateEndpointServiceRequestBody:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this CreateEndpointServiceRequestBody.
+        r"""Sets the service_type of this CreateEndpointServiceRequestBody.
 
         终端节点服务类型。 仅支持将用户私有服务创建为interface类型的终端节点服务。 终端节点服务类型包括“网关（gateway）型”和“接口（interface）型”：  - gateway：由运维人员配置。用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建， 用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
@@ -233,7 +233,7 @@ class CreateEndpointServiceRequestBody:
 
     @property
     def server_type(self):
-        """Gets the server_type of this CreateEndpointServiceRequestBody.
+        r"""Gets the server_type of this CreateEndpointServiceRequestBody.
 
         资源类型。  - VM：云服务器，适用于作为服务器使用。  - VIP：虚拟IP，适用于作为虚IP场景使用。（该字段已废弃，请优先使用LB类型）  - LB：负载均衡，适用于高访问量业务和对可靠性和容灾性要求较高的业务。
 
@@ -244,7 +244,7 @@ class CreateEndpointServiceRequestBody:
 
     @server_type.setter
     def server_type(self, server_type):
-        """Sets the server_type of this CreateEndpointServiceRequestBody.
+        r"""Sets the server_type of this CreateEndpointServiceRequestBody.
 
         资源类型。  - VM：云服务器，适用于作为服务器使用。  - VIP：虚拟IP，适用于作为虚IP场景使用。（该字段已废弃，请优先使用LB类型）  - LB：负载均衡，适用于高访问量业务和对可靠性和容灾性要求较高的业务。
 
@@ -255,7 +255,7 @@ class CreateEndpointServiceRequestBody:
 
     @property
     def ip(self):
-        """Gets the ip of this CreateEndpointServiceRequestBody.
+        r"""Gets the ip of this CreateEndpointServiceRequestBody.
 
         接口型VLAN场景服务端IPv4地址或域名
 
@@ -266,7 +266,7 @@ class CreateEndpointServiceRequestBody:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this CreateEndpointServiceRequestBody.
+        r"""Sets the ip of this CreateEndpointServiceRequestBody.
 
         接口型VLAN场景服务端IPv4地址或域名
 
@@ -277,7 +277,7 @@ class CreateEndpointServiceRequestBody:
 
     @property
     def ports(self):
-        """Gets the ports of this CreateEndpointServiceRequestBody.
+        r"""Gets the ports of this CreateEndpointServiceRequestBody.
 
         服务开放的端口映射列表，详细内容请参见表4-10。 同一个终端节点服务下，不允许重复的端口映射。若多个终端节点服务共用一个port_id， 则终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复， 单次最多添加200个。
 
@@ -288,7 +288,7 @@ class CreateEndpointServiceRequestBody:
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this CreateEndpointServiceRequestBody.
+        r"""Sets the ports of this CreateEndpointServiceRequestBody.
 
         服务开放的端口映射列表，详细内容请参见表4-10。 同一个终端节点服务下，不允许重复的端口映射。若多个终端节点服务共用一个port_id， 则终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复， 单次最多添加200个。
 
@@ -299,7 +299,7 @@ class CreateEndpointServiceRequestBody:
 
     @property
     def tcp_proxy(self):
-        """Gets the tcp_proxy of this CreateEndpointServiceRequestBody.
+        r"""Gets the tcp_proxy of this CreateEndpointServiceRequestBody.
 
         用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
@@ -310,7 +310,7 @@ class CreateEndpointServiceRequestBody:
 
     @tcp_proxy.setter
     def tcp_proxy(self, tcp_proxy):
-        """Sets the tcp_proxy of this CreateEndpointServiceRequestBody.
+        r"""Sets the tcp_proxy of this CreateEndpointServiceRequestBody.
 
         用于控制将哪些信息（如客户端的源IP、源端口、marker_id等）携带到服务端。 支持携带的客户端信息包括如下两种类型：  - TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明：仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。  - Proxy Protocol：表示将客户端信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 该参数的取值包括：  - close：表示关闭代理协议。  - toa_open：表示开启代理协议“tcp_toa”。  - proxy_open：表示开启代理协议“proxy_protocol”。  - open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
@@ -321,7 +321,7 @@ class CreateEndpointServiceRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateEndpointServiceRequestBody.
+        r"""Gets the tags of this CreateEndpointServiceRequestBody.
 
         资源标签列表。同一个终端节点服务最多可添加20个标签。
 
@@ -332,7 +332,7 @@ class CreateEndpointServiceRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateEndpointServiceRequestBody.
+        r"""Sets the tags of this CreateEndpointServiceRequestBody.
 
         资源标签列表。同一个终端节点服务最多可添加20个标签。
 
@@ -343,7 +343,7 @@ class CreateEndpointServiceRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateEndpointServiceRequestBody.
+        r"""Gets the description of this CreateEndpointServiceRequestBody.
 
         描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。  描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
 
@@ -354,7 +354,7 @@ class CreateEndpointServiceRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateEndpointServiceRequestBody.
+        r"""Sets the description of this CreateEndpointServiceRequestBody.
 
         描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。  描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
 
@@ -365,7 +365,7 @@ class CreateEndpointServiceRequestBody:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this CreateEndpointServiceRequestBody.
+        r"""Gets the ip_version of this CreateEndpointServiceRequestBody.
 
         指定终端节点服务的IP版本，仅专业型终端节点服务支持此参数 ● ipv4,  IPv4 ● ipv6,  IPv6
 
@@ -376,7 +376,7 @@ class CreateEndpointServiceRequestBody:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this CreateEndpointServiceRequestBody.
+        r"""Sets the ip_version of this CreateEndpointServiceRequestBody.
 
         指定终端节点服务的IP版本，仅专业型终端节点服务支持此参数 ● ipv4,  IPv4 ● ipv6,  IPv6
 
@@ -387,7 +387,7 @@ class CreateEndpointServiceRequestBody:
 
     @property
     def snat_network_id(self):
-        """Gets the snat_network_id of this CreateEndpointServiceRequestBody.
+        r"""Gets the snat_network_id of this CreateEndpointServiceRequestBody.
 
         接口型snat的地址段，ip_version为ipv6时必选。创建服务时使用的VPC内的任意一个网络ID。当服务类型为VIP、VM、ELBV2类型时使用
 
@@ -398,7 +398,7 @@ class CreateEndpointServiceRequestBody:
 
     @snat_network_id.setter
     def snat_network_id(self, snat_network_id):
-        """Sets the snat_network_id of this CreateEndpointServiceRequestBody.
+        r"""Sets the snat_network_id of this CreateEndpointServiceRequestBody.
 
         接口型snat的地址段，ip_version为ipv6时必选。创建服务时使用的VPC内的任意一个网络ID。当服务类型为VIP、VM、ELBV2类型时使用
 

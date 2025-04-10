@@ -63,7 +63,7 @@ class CreateInstanceRespItem:
     }
 
     def __init__(self, id=None, name=None, status=None, datastore=None, ha=None, configuration_id=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, collation=None, restore_point=None):
-        """CreateInstanceRespItem
+        r"""CreateInstanceRespItem
 
         The model defined in huaweicloud sdk
 
@@ -167,7 +167,7 @@ class CreateInstanceRespItem:
 
     @property
     def id(self):
-        """Gets the id of this CreateInstanceRespItem.
+        r"""Gets the id of this CreateInstanceRespItem.
 
         实例id
 
@@ -178,7 +178,7 @@ class CreateInstanceRespItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateInstanceRespItem.
+        r"""Sets the id of this CreateInstanceRespItem.
 
         实例id
 
@@ -189,7 +189,7 @@ class CreateInstanceRespItem:
 
     @property
     def name(self):
-        """Gets the name of this CreateInstanceRespItem.
+        r"""Gets the name of this CreateInstanceRespItem.
 
         实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名，其中，SQL Server实例名唯一。 取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
@@ -200,7 +200,7 @@ class CreateInstanceRespItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateInstanceRespItem.
+        r"""Sets the name of this CreateInstanceRespItem.
 
         实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名，其中，SQL Server实例名唯一。 取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
@@ -211,7 +211,7 @@ class CreateInstanceRespItem:
 
     @property
     def status(self):
-        """Gets the status of this CreateInstanceRespItem.
+        r"""Gets the status of this CreateInstanceRespItem.
 
         实例状态。如BUILD，表示创建中。 仅创建按需实例时会返回该参数。
 
@@ -222,7 +222,7 @@ class CreateInstanceRespItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateInstanceRespItem.
+        r"""Sets the status of this CreateInstanceRespItem.
 
         实例状态。如BUILD，表示创建中。 仅创建按需实例时会返回该参数。
 
@@ -233,7 +233,7 @@ class CreateInstanceRespItem:
 
     @property
     def datastore(self):
-        """Gets the datastore of this CreateInstanceRespItem.
+        r"""Gets the datastore of this CreateInstanceRespItem.
 
         :return: The datastore of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkrds.v3.Datastore`
@@ -242,7 +242,7 @@ class CreateInstanceRespItem:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this CreateInstanceRespItem.
+        r"""Sets the datastore of this CreateInstanceRespItem.
 
         :param datastore: The datastore of this CreateInstanceRespItem.
         :type datastore: :class:`huaweicloudsdkrds.v3.Datastore`
@@ -251,7 +251,7 @@ class CreateInstanceRespItem:
 
     @property
     def ha(self):
-        """Gets the ha of this CreateInstanceRespItem.
+        r"""Gets the ha of this CreateInstanceRespItem.
 
         :return: The ha of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkrds.v3.Ha`
@@ -260,7 +260,7 @@ class CreateInstanceRespItem:
 
     @ha.setter
     def ha(self, ha):
-        """Sets the ha of this CreateInstanceRespItem.
+        r"""Sets the ha of this CreateInstanceRespItem.
 
         :param ha: The ha of this CreateInstanceRespItem.
         :type ha: :class:`huaweicloudsdkrds.v3.Ha`
@@ -269,7 +269,7 @@ class CreateInstanceRespItem:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this CreateInstanceRespItem.
+        r"""Gets the configuration_id of this CreateInstanceRespItem.
 
         参数组ID。
 
@@ -280,7 +280,7 @@ class CreateInstanceRespItem:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this CreateInstanceRespItem.
+        r"""Sets the configuration_id of this CreateInstanceRespItem.
 
         参数组ID。
 
@@ -291,7 +291,7 @@ class CreateInstanceRespItem:
 
     @property
     def port(self):
-        """Gets the port of this CreateInstanceRespItem.
+        r"""Gets the port of this CreateInstanceRespItem.
 
         数据库端口信息。  - MySQL数据库端口设置范围为1024～65535（其中12017和33071被RDS系统占用不可设置）。 - PostgreSQL数据库端口修改范围为2100～9500。 - Microsoft SQL Server实例的端口设置范围为1433和2100~9500（其中5355和5985不可设置。对于2017 EE、2017 SE、2017 Web版，5050、5353和5986不可设置。  当不传该参数时，默认端口如下：  - MySQL默认3306。 - PostgreSQL默认5432。 - Microsoft SQL Server默认1433。
 
@@ -302,7 +302,7 @@ class CreateInstanceRespItem:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this CreateInstanceRespItem.
+        r"""Sets the port of this CreateInstanceRespItem.
 
         数据库端口信息。  - MySQL数据库端口设置范围为1024～65535（其中12017和33071被RDS系统占用不可设置）。 - PostgreSQL数据库端口修改范围为2100～9500。 - Microsoft SQL Server实例的端口设置范围为1433和2100~9500（其中5355和5985不可设置。对于2017 EE、2017 SE、2017 Web版，5050、5353和5986不可设置。  当不传该参数时，默认端口如下：  - MySQL默认3306。 - PostgreSQL默认5432。 - Microsoft SQL Server默认1433。
 
@@ -313,7 +313,7 @@ class CreateInstanceRespItem:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this CreateInstanceRespItem.
+        r"""Gets the backup_strategy of this CreateInstanceRespItem.
 
         :return: The backup_strategy of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkrds.v3.BackupStrategy`
@@ -322,7 +322,7 @@ class CreateInstanceRespItem:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this CreateInstanceRespItem.
+        r"""Sets the backup_strategy of this CreateInstanceRespItem.
 
         :param backup_strategy: The backup_strategy of this CreateInstanceRespItem.
         :type backup_strategy: :class:`huaweicloudsdkrds.v3.BackupStrategy`
@@ -331,7 +331,7 @@ class CreateInstanceRespItem:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateInstanceRespItem.
+        r"""Gets the enterprise_project_id of this CreateInstanceRespItem.
 
         企业项目ID。
 
@@ -342,7 +342,7 @@ class CreateInstanceRespItem:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateInstanceRespItem.
+        r"""Sets the enterprise_project_id of this CreateInstanceRespItem.
 
         企业项目ID。
 
@@ -353,7 +353,7 @@ class CreateInstanceRespItem:
 
     @property
     def disk_encryption_id(self):
-        """Gets the disk_encryption_id of this CreateInstanceRespItem.
+        r"""Gets the disk_encryption_id of this CreateInstanceRespItem.
 
         用于磁盘加密的密钥ID。
 
@@ -364,7 +364,7 @@ class CreateInstanceRespItem:
 
     @disk_encryption_id.setter
     def disk_encryption_id(self, disk_encryption_id):
-        """Sets the disk_encryption_id of this CreateInstanceRespItem.
+        r"""Sets the disk_encryption_id of this CreateInstanceRespItem.
 
         用于磁盘加密的密钥ID。
 
@@ -375,7 +375,7 @@ class CreateInstanceRespItem:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this CreateInstanceRespItem.
+        r"""Gets the flavor_ref of this CreateInstanceRespItem.
 
         规格码。
 
@@ -386,7 +386,7 @@ class CreateInstanceRespItem:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this CreateInstanceRespItem.
+        r"""Sets the flavor_ref of this CreateInstanceRespItem.
 
         规格码。
 
@@ -397,7 +397,7 @@ class CreateInstanceRespItem:
 
     @property
     def volume(self):
-        """Gets the volume of this CreateInstanceRespItem.
+        r"""Gets the volume of this CreateInstanceRespItem.
 
         :return: The volume of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkrds.v3.Volume`
@@ -406,7 +406,7 @@ class CreateInstanceRespItem:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this CreateInstanceRespItem.
+        r"""Sets the volume of this CreateInstanceRespItem.
 
         :param volume: The volume of this CreateInstanceRespItem.
         :type volume: :class:`huaweicloudsdkrds.v3.Volume`
@@ -415,7 +415,7 @@ class CreateInstanceRespItem:
 
     @property
     def region(self):
-        """Gets the region of this CreateInstanceRespItem.
+        r"""Gets the region of this CreateInstanceRespItem.
 
         区域ID。创建主实例时必选，其它场景不可选。 取值参见OpenAPI查询数据库规格(https://console.huaweicloud.com/apiexplorer/#/openapi/RDS/doc?api=ListFlavors)响应体的az_desc字段。
 
@@ -426,7 +426,7 @@ class CreateInstanceRespItem:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreateInstanceRespItem.
+        r"""Sets the region of this CreateInstanceRespItem.
 
         区域ID。创建主实例时必选，其它场景不可选。 取值参见OpenAPI查询数据库规格(https://console.huaweicloud.com/apiexplorer/#/openapi/RDS/doc?api=ListFlavors)响应体的az_desc字段。
 
@@ -437,7 +437,7 @@ class CreateInstanceRespItem:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateInstanceRespItem.
+        r"""Gets the availability_zone of this CreateInstanceRespItem.
 
         可用区ID。对于数据库实例类型不是单机的实例，需要分别为实例所有节点指定可用区，并用逗号隔开。 取值参见OpenAPI查询数据库规格(https://console.huaweicloud.com/apiexplorer/#/openapi/RDS/doc?api=ListFlavors)响应体的az_desc字段。
 
@@ -448,7 +448,7 @@ class CreateInstanceRespItem:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateInstanceRespItem.
+        r"""Sets the availability_zone of this CreateInstanceRespItem.
 
         可用区ID。对于数据库实例类型不是单机的实例，需要分别为实例所有节点指定可用区，并用逗号隔开。 取值参见OpenAPI查询数据库规格(https://console.huaweicloud.com/apiexplorer/#/openapi/RDS/doc?api=ListFlavors)响应体的az_desc字段。
 
@@ -459,7 +459,7 @@ class CreateInstanceRespItem:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateInstanceRespItem.
+        r"""Gets the vpc_id of this CreateInstanceRespItem.
 
         虚拟私有云ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。
 
@@ -470,7 +470,7 @@ class CreateInstanceRespItem:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateInstanceRespItem.
+        r"""Sets the vpc_id of this CreateInstanceRespItem.
 
         虚拟私有云ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。
 
@@ -481,7 +481,7 @@ class CreateInstanceRespItem:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateInstanceRespItem.
+        r"""Gets the subnet_id of this CreateInstanceRespItem.
 
         子网ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。
 
@@ -492,7 +492,7 @@ class CreateInstanceRespItem:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateInstanceRespItem.
+        r"""Sets the subnet_id of this CreateInstanceRespItem.
 
         子网ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。
 
@@ -503,7 +503,7 @@ class CreateInstanceRespItem:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CreateInstanceRespItem.
+        r"""Gets the security_group_id of this CreateInstanceRespItem.
 
         安全组ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。
 
@@ -514,7 +514,7 @@ class CreateInstanceRespItem:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreateInstanceRespItem.
+        r"""Sets the security_group_id of this CreateInstanceRespItem.
 
         安全组ID。创建只读实例时不可选（只读实例的网络属性默认和主实例相同），其它场景必选。
 
@@ -525,7 +525,7 @@ class CreateInstanceRespItem:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this CreateInstanceRespItem.
+        r"""Gets the charge_info of this CreateInstanceRespItem.
 
         :return: The charge_info of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkrds.v3.ChargeInfo`
@@ -534,7 +534,7 @@ class CreateInstanceRespItem:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this CreateInstanceRespItem.
+        r"""Sets the charge_info of this CreateInstanceRespItem.
 
         :param charge_info: The charge_info of this CreateInstanceRespItem.
         :type charge_info: :class:`huaweicloudsdkrds.v3.ChargeInfo`
@@ -543,7 +543,7 @@ class CreateInstanceRespItem:
 
     @property
     def collation(self):
-        """Gets the collation of this CreateInstanceRespItem.
+        r"""Gets the collation of this CreateInstanceRespItem.
 
         仅限Microsoft SQL Server实例使用。取值范围：根据查询SQL Server可用字符集的字符集查询列表查询可设置的字符集。
 
@@ -554,7 +554,7 @@ class CreateInstanceRespItem:
 
     @collation.setter
     def collation(self, collation):
-        """Sets the collation of this CreateInstanceRespItem.
+        r"""Sets the collation of this CreateInstanceRespItem.
 
         仅限Microsoft SQL Server实例使用。取值范围：根据查询SQL Server可用字符集的字符集查询列表查询可设置的字符集。
 
@@ -565,7 +565,7 @@ class CreateInstanceRespItem:
 
     @property
     def restore_point(self):
-        """Gets the restore_point of this CreateInstanceRespItem.
+        r"""Gets the restore_point of this CreateInstanceRespItem.
 
         :return: The restore_point of this CreateInstanceRespItem.
         :rtype: :class:`huaweicloudsdkrds.v3.RestorePoint`
@@ -574,7 +574,7 @@ class CreateInstanceRespItem:
 
     @restore_point.setter
     def restore_point(self, restore_point):
-        """Sets the restore_point of this CreateInstanceRespItem.
+        r"""Sets the restore_point of this CreateInstanceRespItem.
 
         :param restore_point: The restore_point of this CreateInstanceRespItem.
         :type restore_point: :class:`huaweicloudsdkrds.v3.RestorePoint`

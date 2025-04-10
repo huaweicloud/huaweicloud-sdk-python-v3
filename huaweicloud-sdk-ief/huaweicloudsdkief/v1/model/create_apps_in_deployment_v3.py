@@ -29,7 +29,7 @@ class CreateAppsInDeploymentV3:
     }
 
     def __init__(self, replicas=None, template=None, annotations=None):
-        """CreateAppsInDeploymentV3
+        r"""CreateAppsInDeploymentV3
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateAppsInDeploymentV3:
 
     @property
     def replicas(self):
-        """Gets the replicas of this CreateAppsInDeploymentV3.
+        r"""Gets the replicas of this CreateAppsInDeploymentV3.
 
         副本数量
 
@@ -66,7 +66,7 @@ class CreateAppsInDeploymentV3:
 
     @replicas.setter
     def replicas(self, replicas):
-        """Sets the replicas of this CreateAppsInDeploymentV3.
+        r"""Sets the replicas of this CreateAppsInDeploymentV3.
 
         副本数量
 
@@ -77,7 +77,7 @@ class CreateAppsInDeploymentV3:
 
     @property
     def template(self):
-        """Gets the template of this CreateAppsInDeploymentV3.
+        r"""Gets the template of this CreateAppsInDeploymentV3.
 
         :return: The template of this CreateAppsInDeploymentV3.
         :rtype: :class:`huaweicloudsdkief.v1.PodRequest`
@@ -86,7 +86,7 @@ class CreateAppsInDeploymentV3:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this CreateAppsInDeploymentV3.
+        r"""Sets the template of this CreateAppsInDeploymentV3.
 
         :param template: The template of this CreateAppsInDeploymentV3.
         :type template: :class:`huaweicloudsdkief.v1.PodRequest`
@@ -95,7 +95,7 @@ class CreateAppsInDeploymentV3:
 
     @property
     def annotations(self):
-        """Gets the annotations of this CreateAppsInDeploymentV3.
+        r"""Gets the annotations of this CreateAppsInDeploymentV3.
 
         :return: The annotations of this CreateAppsInDeploymentV3.
         :rtype: :class:`huaweicloudsdkief.v1.Annotations`
@@ -104,7 +104,7 @@ class CreateAppsInDeploymentV3:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this CreateAppsInDeploymentV3.
+        r"""Sets the annotations of this CreateAppsInDeploymentV3.
 
         :param annotations: The annotations of this CreateAppsInDeploymentV3.
         :type annotations: :class:`huaweicloudsdkief.v1.Annotations`

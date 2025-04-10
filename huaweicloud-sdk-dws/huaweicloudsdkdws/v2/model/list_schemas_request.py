@@ -37,7 +37,7 @@ class ListSchemasRequest:
     }
 
     def __init__(self, cluster_id=None, database_name=None, sort_key=None, sort_dir=None, keywords=None, limit=None, offset=None):
-        """ListSchemasRequest
+        r"""ListSchemasRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListSchemasRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListSchemasRequest.
+        r"""Gets the cluster_id of this ListSchemasRequest.
 
         集群ID
 
@@ -94,7 +94,7 @@ class ListSchemasRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListSchemasRequest.
+        r"""Sets the cluster_id of this ListSchemasRequest.
 
         集群ID
 
@@ -105,7 +105,7 @@ class ListSchemasRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListSchemasRequest.
+        r"""Gets the database_name of this ListSchemasRequest.
 
         数据库名称
 
@@ -116,7 +116,7 @@ class ListSchemasRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListSchemasRequest.
+        r"""Sets the database_name of this ListSchemasRequest.
 
         数据库名称
 
@@ -127,7 +127,7 @@ class ListSchemasRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListSchemasRequest.
+        r"""Gets the sort_key of this ListSchemasRequest.
 
         排序字段
 
@@ -138,7 +138,7 @@ class ListSchemasRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListSchemasRequest.
+        r"""Sets the sort_key of this ListSchemasRequest.
 
         排序字段
 
@@ -149,7 +149,7 @@ class ListSchemasRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListSchemasRequest.
+        r"""Gets the sort_dir of this ListSchemasRequest.
 
         排序字段
 
@@ -160,7 +160,7 @@ class ListSchemasRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListSchemasRequest.
+        r"""Sets the sort_dir of this ListSchemasRequest.
 
         排序字段
 
@@ -171,7 +171,7 @@ class ListSchemasRequest:
 
     @property
     def keywords(self):
-        """Gets the keywords of this ListSchemasRequest.
+        r"""Gets the keywords of this ListSchemasRequest.
 
         查询关键词
 
@@ -182,7 +182,7 @@ class ListSchemasRequest:
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this ListSchemasRequest.
+        r"""Sets the keywords of this ListSchemasRequest.
 
         查询关键词
 
@@ -193,7 +193,7 @@ class ListSchemasRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSchemasRequest.
+        r"""Gets the limit of this ListSchemasRequest.
 
         查询条数
 
@@ -204,7 +204,7 @@ class ListSchemasRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSchemasRequest.
+        r"""Sets the limit of this ListSchemasRequest.
 
         查询条数
 
@@ -215,7 +215,7 @@ class ListSchemasRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSchemasRequest.
+        r"""Gets the offset of this ListSchemasRequest.
 
         偏移量
 
@@ -226,7 +226,7 @@ class ListSchemasRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSchemasRequest.
+        r"""Sets the offset of this ListSchemasRequest.
 
         偏移量
 

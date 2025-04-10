@@ -30,7 +30,7 @@ class ListLivePlatformProductsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, products=None, x_request_id=None):
-        """ListLivePlatformProductsResponse
+        r"""ListLivePlatformProductsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListLivePlatformProductsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListLivePlatformProductsResponse.
+        r"""Gets the count of this ListLivePlatformProductsResponse.
 
         商品总数。性能考虑仅在offset=0时返回。
 
@@ -69,7 +69,7 @@ class ListLivePlatformProductsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListLivePlatformProductsResponse.
+        r"""Sets the count of this ListLivePlatformProductsResponse.
 
         商品总数。性能考虑仅在offset=0时返回。
 
@@ -80,7 +80,7 @@ class ListLivePlatformProductsResponse(SdkResponse):
 
     @property
     def products(self):
-        """Gets the products of this ListLivePlatformProductsResponse.
+        r"""Gets the products of this ListLivePlatformProductsResponse.
 
         任务ID
 
@@ -91,7 +91,7 @@ class ListLivePlatformProductsResponse(SdkResponse):
 
     @products.setter
     def products(self, products):
-        """Sets the products of this ListLivePlatformProductsResponse.
+        r"""Sets the products of this ListLivePlatformProductsResponse.
 
         任务ID
 
@@ -102,7 +102,7 @@ class ListLivePlatformProductsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListLivePlatformProductsResponse.
+        r"""Gets the x_request_id of this ListLivePlatformProductsResponse.
 
         :return: The x_request_id of this ListLivePlatformProductsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListLivePlatformProductsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListLivePlatformProductsResponse.
+        r"""Sets the x_request_id of this ListLivePlatformProductsResponse.
 
         :param x_request_id: The x_request_id of this ListLivePlatformProductsResponse.
         :type x_request_id: str

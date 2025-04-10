@@ -31,7 +31,7 @@ class AlertLevel:
     }
 
     def __init__(self, alert_channel=None, alert_groups=None, alert_template_id=None, alert_times=None):
-        """AlertLevel
+        r"""AlertLevel
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AlertLevel:
 
     @property
     def alert_channel(self):
-        """Gets the alert_channel of this AlertLevel.
+        r"""Gets the alert_channel of this AlertLevel.
 
         告警渠道列表
 
@@ -75,7 +75,7 @@ class AlertLevel:
 
     @alert_channel.setter
     def alert_channel(self, alert_channel):
-        """Sets the alert_channel of this AlertLevel.
+        r"""Sets the alert_channel of this AlertLevel.
 
         告警渠道列表
 
@@ -86,7 +86,7 @@ class AlertLevel:
 
     @property
     def alert_groups(self):
-        """Gets the alert_groups of this AlertLevel.
+        r"""Gets the alert_groups of this AlertLevel.
 
         告警组列表
 
@@ -97,7 +97,7 @@ class AlertLevel:
 
     @alert_groups.setter
     def alert_groups(self, alert_groups):
-        """Sets the alert_groups of this AlertLevel.
+        r"""Sets the alert_groups of this AlertLevel.
 
         告警组列表
 
@@ -108,7 +108,7 @@ class AlertLevel:
 
     @property
     def alert_template_id(self):
-        """Gets the alert_template_id of this AlertLevel.
+        r"""Gets the alert_template_id of this AlertLevel.
 
         告警模板ID
 
@@ -119,7 +119,7 @@ class AlertLevel:
 
     @alert_template_id.setter
     def alert_template_id(self, alert_template_id):
-        """Sets the alert_template_id of this AlertLevel.
+        r"""Sets the alert_template_id of this AlertLevel.
 
         告警模板ID
 
@@ -130,7 +130,7 @@ class AlertLevel:
 
     @property
     def alert_times(self):
-        """Gets the alert_times of this AlertLevel.
+        r"""Gets the alert_times of this AlertLevel.
 
         告警次数
 
@@ -141,7 +141,7 @@ class AlertLevel:
 
     @alert_times.setter
     def alert_times(self, alert_times):
-        """Sets the alert_times of this AlertLevel.
+        r"""Sets the alert_times of this AlertLevel.
 
         告警次数
 

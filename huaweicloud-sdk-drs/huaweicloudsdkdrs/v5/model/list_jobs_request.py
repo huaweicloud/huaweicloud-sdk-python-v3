@@ -49,7 +49,7 @@ class ListJobsRequest:
     }
 
     def __init__(self, x_language=None, job_type=None, name=None, status=None, engine_type=None, net_type=None, enterprise_project_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, instance_ids=None, instance_ip=None):
-        """ListJobsRequest
+        r"""ListJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class ListJobsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListJobsRequest.
+        r"""Gets the x_language of this ListJobsRequest.
 
         请求语言类型。
 
@@ -137,7 +137,7 @@ class ListJobsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListJobsRequest.
+        r"""Sets the x_language of this ListJobsRequest.
 
         请求语言类型。
 
@@ -148,7 +148,7 @@ class ListJobsRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ListJobsRequest.
+        r"""Gets the job_type of this ListJobsRequest.
 
         任务场景。取值： - migration：实时迁移。 - sync：实时同步。 - cloudDataGuard：实时灾备。
 
@@ -159,7 +159,7 @@ class ListJobsRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ListJobsRequest.
+        r"""Sets the job_type of this ListJobsRequest.
 
         任务场景。取值： - migration：实时迁移。 - sync：实时同步。 - cloudDataGuard：实时灾备。
 
@@ -170,7 +170,7 @@ class ListJobsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListJobsRequest.
+        r"""Gets the name of this ListJobsRequest.
 
         任务ID或名称。
 
@@ -181,7 +181,7 @@ class ListJobsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListJobsRequest.
+        r"""Sets the name of this ListJobsRequest.
 
         任务ID或名称。
 
@@ -192,7 +192,7 @@ class ListJobsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListJobsRequest.
+        r"""Gets the status of this ListJobsRequest.
 
         任务状态。取值： - CREATING：创建中。 - CREATE_FAILED：创建失败。 - CONFIGURATION：配置中。 - STARTJOBING：启动中。 - WAITING_FOR_START：等待启动中。 - START_JOB_FAILED：任务启动失败。 - FULL_TRANSFER_STARTED：全量迁移中，灾备场景为初始化。 - FULL_TRANSFER_FAILED：全量迁移失败，灾备场景为初始化失败。 - FULL_TRANSFER_COMPLETE：全量迁移完成，灾备场景为初始化完成。 - INCRE_TRANSFER_STARTED：增量迁移中，灾备场景为灾备中。 - INCRE_TRANSFER_FAILED：增量迁移失败，灾备场景为灾备异常。 - RELEASE_RESOURCE_STARTED：结束任务中。 - RELEASE_RESOURCE_FAILED：结束任务失败。 - RELEASE_RESOURCE_COMPLETE：已结束。 - CHANGE_JOB_STARTED：任务变更中。 - CHANGE_JOB_FAILED：任务变更失败。 - CHILD_TRANSFER_STARTING：子任务启动中。 - CHILD_TRANSFER_STARTED：子任务迁移中。 - CHILD_TRANSFER_COMPLETE：子任务迁移完成。 - CHILD_TRANSFER_FAILED：子任务迁移失败。 - RELEASE_CHILD_TRANSFER_STARTED：子任务结束中。 - RELEASE_CHILD_TRANSFER_COMPLETE：子任务已结束。 其中，异常状态可单独查询，也可以通过以下方式查询全部异常任务： CREATE_FAILED,START_JOB_FAILED,FULL_TRANSFER_FAILED,INCRE_TRANSFER_FAILED,RELEASE_RESOURCE_FAILED,CHANGE_JOB_FAILED,CHILD_TRANSFER_FAILED
 
@@ -203,7 +203,7 @@ class ListJobsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListJobsRequest.
+        r"""Sets the status of this ListJobsRequest.
 
         任务状态。取值： - CREATING：创建中。 - CREATE_FAILED：创建失败。 - CONFIGURATION：配置中。 - STARTJOBING：启动中。 - WAITING_FOR_START：等待启动中。 - START_JOB_FAILED：任务启动失败。 - FULL_TRANSFER_STARTED：全量迁移中，灾备场景为初始化。 - FULL_TRANSFER_FAILED：全量迁移失败，灾备场景为初始化失败。 - FULL_TRANSFER_COMPLETE：全量迁移完成，灾备场景为初始化完成。 - INCRE_TRANSFER_STARTED：增量迁移中，灾备场景为灾备中。 - INCRE_TRANSFER_FAILED：增量迁移失败，灾备场景为灾备异常。 - RELEASE_RESOURCE_STARTED：结束任务中。 - RELEASE_RESOURCE_FAILED：结束任务失败。 - RELEASE_RESOURCE_COMPLETE：已结束。 - CHANGE_JOB_STARTED：任务变更中。 - CHANGE_JOB_FAILED：任务变更失败。 - CHILD_TRANSFER_STARTING：子任务启动中。 - CHILD_TRANSFER_STARTED：子任务迁移中。 - CHILD_TRANSFER_COMPLETE：子任务迁移完成。 - CHILD_TRANSFER_FAILED：子任务迁移失败。 - RELEASE_CHILD_TRANSFER_STARTED：子任务结束中。 - RELEASE_CHILD_TRANSFER_COMPLETE：子任务已结束。 其中，异常状态可单独查询，也可以通过以下方式查询全部异常任务： CREATE_FAILED,START_JOB_FAILED,FULL_TRANSFER_FAILED,INCRE_TRANSFER_FAILED,RELEASE_RESOURCE_FAILED,CHANGE_JOB_FAILED,CHILD_TRANSFER_FAILED
 
@@ -214,7 +214,7 @@ class ListJobsRequest:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this ListJobsRequest.
+        r"""Gets the engine_type of this ListJobsRequest.
 
         引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。 - redis-to-gaussredis：Redis同步到GeminiDB Redis，实时迁移场景使用。 - rediscluster-to-gaussredis：Redis集群同步到GeminiDB Redis，实时迁移场景使用。
 
@@ -225,7 +225,7 @@ class ListJobsRequest:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this ListJobsRequest.
+        r"""Sets the engine_type of this ListJobsRequest.
 
         引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。 - redis-to-gaussredis：Redis同步到GeminiDB Redis，实时迁移场景使用。 - rediscluster-to-gaussredis：Redis集群同步到GeminiDB Redis，实时迁移场景使用。
 
@@ -236,7 +236,7 @@ class ListJobsRequest:
 
     @property
     def net_type(self):
-        """Gets the net_type of this ListJobsRequest.
+        r"""Gets the net_type of this ListJobsRequest.
 
         网络类型。取值： - eip：公网网络。 - vpc：VPC网络。 - vpn：VPN、专线网络。
 
@@ -247,7 +247,7 @@ class ListJobsRequest:
 
     @net_type.setter
     def net_type(self, net_type):
-        """Sets the net_type of this ListJobsRequest.
+        r"""Sets the net_type of this ListJobsRequest.
 
         网络类型。取值： - eip：公网网络。 - vpc：VPC网络。 - vpn：VPN、专线网络。
 
@@ -258,7 +258,7 @@ class ListJobsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListJobsRequest.
+        r"""Gets the enterprise_project_id of this ListJobsRequest.
 
         企业项目ID。 缺省值：\"\"，表示查询所有企业项目任务。
 
@@ -269,7 +269,7 @@ class ListJobsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListJobsRequest.
+        r"""Sets the enterprise_project_id of this ListJobsRequest.
 
         企业项目ID。 缺省值：\"\"，表示查询所有企业项目任务。
 
@@ -280,7 +280,7 @@ class ListJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJobsRequest.
+        r"""Gets the offset of this ListJobsRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -291,7 +291,7 @@ class ListJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJobsRequest.
+        r"""Sets the offset of this ListJobsRequest.
 
         偏移量，表示查询该偏移量后面的记录。
 
@@ -302,7 +302,7 @@ class ListJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJobsRequest.
+        r"""Gets the limit of this ListJobsRequest.
 
         查询返回记录的数量限制。
 
@@ -313,7 +313,7 @@ class ListJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJobsRequest.
+        r"""Sets the limit of this ListJobsRequest.
 
         查询返回记录的数量限制。
 
@@ -324,7 +324,7 @@ class ListJobsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListJobsRequest.
+        r"""Gets the sort_key of this ListJobsRequest.
 
         返回结果按该关键字排序，默认为“create_time”。
 
@@ -335,7 +335,7 @@ class ListJobsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListJobsRequest.
+        r"""Sets the sort_key of this ListJobsRequest.
 
         返回结果按该关键字排序，默认为“create_time”。
 
@@ -346,7 +346,7 @@ class ListJobsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListJobsRequest.
+        r"""Gets the sort_dir of this ListJobsRequest.
 
         降序或升序（分别对应desc和asc，默认为“desc”）。
 
@@ -357,7 +357,7 @@ class ListJobsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListJobsRequest.
+        r"""Sets the sort_dir of this ListJobsRequest.
 
         降序或升序（分别对应desc和asc，默认为“desc”）。
 
@@ -368,7 +368,7 @@ class ListJobsRequest:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this ListJobsRequest.
+        r"""Gets the instance_ids of this ListJobsRequest.
 
         数据库实例ID列表，最多支持10个
 
@@ -379,7 +379,7 @@ class ListJobsRequest:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this ListJobsRequest.
+        r"""Sets the instance_ids of this ListJobsRequest.
 
         数据库实例ID列表，最多支持10个
 
@@ -390,7 +390,7 @@ class ListJobsRequest:
 
     @property
     def instance_ip(self):
-        """Gets the instance_ip of this ListJobsRequest.
+        r"""Gets the instance_ip of this ListJobsRequest.
 
         数据库实例IP
 
@@ -401,7 +401,7 @@ class ListJobsRequest:
 
     @instance_ip.setter
     def instance_ip(self, instance_ip):
-        """Sets the instance_ip of this ListJobsRequest.
+        r"""Sets the instance_ip of this ListJobsRequest.
 
         数据库实例IP
 

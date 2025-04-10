@@ -25,7 +25,7 @@ class CheckClusterRequest:
     }
 
     def __init__(self, body=None):
-        """CheckClusterRequest
+        r"""CheckClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckClusterRequest.
+        r"""Gets the body of this CheckClusterRequest.
 
         :return: The body of this CheckClusterRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.ClusterCheckRequestBody`
@@ -52,7 +52,7 @@ class CheckClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckClusterRequest.
+        r"""Sets the body of this CheckClusterRequest.
 
         :param body: The body of this CheckClusterRequest.
         :type body: :class:`huaweicloudsdkdws.v2.ClusterCheckRequestBody`

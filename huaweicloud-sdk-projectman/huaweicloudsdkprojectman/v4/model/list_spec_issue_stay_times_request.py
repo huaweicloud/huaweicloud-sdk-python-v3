@@ -25,7 +25,7 @@ class ListSpecIssueStayTimesRequest:
     }
 
     def __init__(self, body=None):
-        """ListSpecIssueStayTimesRequest
+        r"""ListSpecIssueStayTimesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListSpecIssueStayTimesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListSpecIssueStayTimesRequest.
+        r"""Gets the body of this ListSpecIssueStayTimesRequest.
 
         :return: The body of this ListSpecIssueStayTimesRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListSpecIssueStayTimesRequestBody`
@@ -52,7 +52,7 @@ class ListSpecIssueStayTimesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSpecIssueStayTimesRequest.
+        r"""Sets the body of this ListSpecIssueStayTimesRequest.
 
         :param body: The body of this ListSpecIssueStayTimesRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.ListSpecIssueStayTimesRequestBody`

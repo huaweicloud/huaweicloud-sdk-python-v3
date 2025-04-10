@@ -25,7 +25,7 @@ class CreatePortTagRequestBody:
     }
 
     def __init__(self, tag=None):
-        """CreatePortTagRequestBody
+        r"""CreatePortTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreatePortTagRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this CreatePortTagRequestBody.
+        r"""Gets the tag of this CreatePortTagRequestBody.
 
         :return: The tag of this CreatePortTagRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.ResourceTag`
@@ -51,7 +51,7 @@ class CreatePortTagRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreatePortTagRequestBody.
+        r"""Sets the tag of this CreatePortTagRequestBody.
 
         :param tag: The tag of this CreatePortTagRequestBody.
         :type tag: :class:`huaweicloudsdkvpc.v3.ResourceTag`

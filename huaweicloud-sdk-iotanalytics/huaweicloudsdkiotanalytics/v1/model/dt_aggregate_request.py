@@ -27,7 +27,7 @@ class DTAggregateRequest:
     }
 
     def __init__(self, inputs=None, outputs=None):
-        """DTAggregateRequest
+        r"""DTAggregateRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DTAggregateRequest:
 
     @property
     def inputs(self):
-        """Gets the inputs of this DTAggregateRequest.
+        r"""Gets the inputs of this DTAggregateRequest.
 
         输入参数，最多支持10个
 
@@ -61,7 +61,7 @@ class DTAggregateRequest:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this DTAggregateRequest.
+        r"""Sets the inputs of this DTAggregateRequest.
 
         输入参数，最多支持10个
 
@@ -72,7 +72,7 @@ class DTAggregateRequest:
 
     @property
     def outputs(self):
-        """Gets the outputs of this DTAggregateRequest.
+        r"""Gets the outputs of this DTAggregateRequest.
 
         :return: The outputs of this DTAggregateRequest.
         :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.OutputRequest`]
@@ -81,7 +81,7 @@ class DTAggregateRequest:
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this DTAggregateRequest.
+        r"""Sets the outputs of this DTAggregateRequest.
 
         :param outputs: The outputs of this DTAggregateRequest.
         :type outputs: list[:class:`huaweicloudsdkiotanalytics.v1.OutputRequest`]

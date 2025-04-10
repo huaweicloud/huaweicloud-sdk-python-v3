@@ -26,7 +26,7 @@ class BatchExportPrivateKeyResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchExportPrivateKeyResponse
+        r"""BatchExportPrivateKeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchExportPrivateKeyResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchExportPrivateKeyResponse.
+        r"""Gets the body of this BatchExportPrivateKeyResponse.
 
         :return: The body of this BatchExportPrivateKeyResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class BatchExportPrivateKeyResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchExportPrivateKeyResponse.
+        r"""Sets the body of this BatchExportPrivateKeyResponse.
 
         :param body: The body of this BatchExportPrivateKeyResponse.
         :type body: str

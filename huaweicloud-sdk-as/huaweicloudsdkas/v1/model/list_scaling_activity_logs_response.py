@@ -32,7 +32,7 @@ class ListScalingActivityLogsResponse(SdkResponse):
     }
 
     def __init__(self, total_number=None, start_number=None, limit=None, scaling_activity_log=None):
-        """ListScalingActivityLogsResponse
+        r"""ListScalingActivityLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListScalingActivityLogsResponse(SdkResponse):
 
     @property
     def total_number(self):
-        """Gets the total_number of this ListScalingActivityLogsResponse.
+        r"""Gets the total_number of this ListScalingActivityLogsResponse.
 
         总记录数。
 
@@ -76,7 +76,7 @@ class ListScalingActivityLogsResponse(SdkResponse):
 
     @total_number.setter
     def total_number(self, total_number):
-        """Sets the total_number of this ListScalingActivityLogsResponse.
+        r"""Sets the total_number of this ListScalingActivityLogsResponse.
 
         总记录数。
 
@@ -87,7 +87,7 @@ class ListScalingActivityLogsResponse(SdkResponse):
 
     @property
     def start_number(self):
-        """Gets the start_number of this ListScalingActivityLogsResponse.
+        r"""Gets the start_number of this ListScalingActivityLogsResponse.
 
         查询的其实行号。
 
@@ -98,7 +98,7 @@ class ListScalingActivityLogsResponse(SdkResponse):
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this ListScalingActivityLogsResponse.
+        r"""Sets the start_number of this ListScalingActivityLogsResponse.
 
         查询的其实行号。
 
@@ -109,7 +109,7 @@ class ListScalingActivityLogsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListScalingActivityLogsResponse.
+        r"""Gets the limit of this ListScalingActivityLogsResponse.
 
         查询记录数。
 
@@ -120,7 +120,7 @@ class ListScalingActivityLogsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScalingActivityLogsResponse.
+        r"""Sets the limit of this ListScalingActivityLogsResponse.
 
         查询记录数。
 
@@ -131,7 +131,7 @@ class ListScalingActivityLogsResponse(SdkResponse):
 
     @property
     def scaling_activity_log(self):
-        """Gets the scaling_activity_log of this ListScalingActivityLogsResponse.
+        r"""Gets the scaling_activity_log of this ListScalingActivityLogsResponse.
 
         伸缩活动日志列表。
 
@@ -142,7 +142,7 @@ class ListScalingActivityLogsResponse(SdkResponse):
 
     @scaling_activity_log.setter
     def scaling_activity_log(self, scaling_activity_log):
-        """Sets the scaling_activity_log of this ListScalingActivityLogsResponse.
+        r"""Sets the scaling_activity_log of this ListScalingActivityLogsResponse.
 
         伸缩活动日志列表。
 

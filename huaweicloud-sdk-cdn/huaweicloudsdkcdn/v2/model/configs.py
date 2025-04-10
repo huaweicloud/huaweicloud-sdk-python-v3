@@ -97,7 +97,7 @@ class Configs:
     }
 
     def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None, sni=None, request_url_rewrite=None, browser_cache_rules=None, access_area_filter=None, client_cert=None):
-        """Configs
+        r"""Configs
 
         The model defined in huaweicloud sdk
 
@@ -295,7 +295,7 @@ class Configs:
 
     @property
     def business_type(self):
-        """Gets the business_type of this Configs.
+        r"""Gets the business_type of this Configs.
 
         业务类型： - web：网站加速； - download：文件下载加速； - video：点播加速。  > 暂不支持“全站加速”变更为其它业务类型。
 
@@ -306,7 +306,7 @@ class Configs:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this Configs.
+        r"""Sets the business_type of this Configs.
 
         业务类型： - web：网站加速； - download：文件下载加速； - video：点播加速。  > 暂不支持“全站加速”变更为其它业务类型。
 
@@ -317,7 +317,7 @@ class Configs:
 
     @property
     def service_area(self):
-        """Gets the service_area of this Configs.
+        r"""Gets the service_area of this Configs.
 
         服务区域： - mainland_china：中国大陆； - global：全球； - outside_mainland_china：中国大陆境外。  > 暂不支持“中国大陆”与“中国大陆境外”互相直接切换。
 
@@ -328,7 +328,7 @@ class Configs:
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this Configs.
+        r"""Sets the service_area of this Configs.
 
         服务区域： - mainland_china：中国大陆； - global：全球； - outside_mainland_china：中国大陆境外。  > 暂不支持“中国大陆”与“中国大陆境外”互相直接切换。
 
@@ -339,7 +339,7 @@ class Configs:
 
     @property
     def remark(self):
-        """Gets the remark of this Configs.
+        r"""Gets the remark of this Configs.
 
         给域名添加备注，字符长度范围0-200。
 
@@ -350,7 +350,7 @@ class Configs:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this Configs.
+        r"""Sets the remark of this Configs.
 
         给域名添加备注，字符长度范围0-200。
 
@@ -361,7 +361,7 @@ class Configs:
 
     @property
     def origin_request_header(self):
-        """Gets the origin_request_header of this Configs.
+        r"""Gets the origin_request_header of this Configs.
 
         回源请求头改写 该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息。
 
@@ -372,7 +372,7 @@ class Configs:
 
     @origin_request_header.setter
     def origin_request_header(self, origin_request_header):
-        """Sets the origin_request_header of this Configs.
+        r"""Sets the origin_request_header of this Configs.
 
         回源请求头改写 该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息。
 
@@ -383,7 +383,7 @@ class Configs:
 
     @property
     def http_response_header(self):
-        """Gets the http_response_header of this Configs.
+        r"""Gets the http_response_header of this Configs.
 
         http header配置 该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息。
 
@@ -394,7 +394,7 @@ class Configs:
 
     @http_response_header.setter
     def http_response_header(self, http_response_header):
-        """Sets the http_response_header of this Configs.
+        r"""Sets the http_response_header of this Configs.
 
         http header配置 该功能将覆盖原有配置（清空之前的配置），在使用此接口时，请上传全量头部信息。
 
@@ -405,7 +405,7 @@ class Configs:
 
     @property
     def url_auth(self):
-        """Gets the url_auth of this Configs.
+        r"""Gets the url_auth of this Configs.
 
         :return: The url_auth of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.UrlAuth`
@@ -414,7 +414,7 @@ class Configs:
 
     @url_auth.setter
     def url_auth(self, url_auth):
-        """Sets the url_auth of this Configs.
+        r"""Sets the url_auth of this Configs.
 
         :param url_auth: The url_auth of this Configs.
         :type url_auth: :class:`huaweicloudsdkcdn.v2.UrlAuth`
@@ -423,7 +423,7 @@ class Configs:
 
     @property
     def https(self):
-        """Gets the https of this Configs.
+        r"""Gets the https of this Configs.
 
         :return: The https of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.HttpPutBody`
@@ -432,7 +432,7 @@ class Configs:
 
     @https.setter
     def https(self, https):
-        """Sets the https of this Configs.
+        r"""Sets the https of this Configs.
 
         :param https: The https of this Configs.
         :type https: :class:`huaweicloudsdkcdn.v2.HttpPutBody`
@@ -441,7 +441,7 @@ class Configs:
 
     @property
     def sources(self):
-        """Gets the sources of this Configs.
+        r"""Gets the sources of this Configs.
 
         源站配置。
 
@@ -452,7 +452,7 @@ class Configs:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this Configs.
+        r"""Sets the sources of this Configs.
 
         源站配置。
 
@@ -463,7 +463,7 @@ class Configs:
 
     @property
     def origin_protocol(self):
-        """Gets the origin_protocol of this Configs.
+        r"""Gets the origin_protocol of this Configs.
 
         回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
 
@@ -474,7 +474,7 @@ class Configs:
 
     @origin_protocol.setter
     def origin_protocol(self, origin_protocol):
-        """Sets the origin_protocol of this Configs.
+        r"""Sets the origin_protocol of this Configs.
 
         回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
 
@@ -485,7 +485,7 @@ class Configs:
 
     @property
     def origin_follow302_status(self):
-        """Gets the origin_follow302_status of this Configs.
+        r"""Gets the origin_follow302_status of this Configs.
 
         回源跟随，on：开启，off：关闭。
 
@@ -496,7 +496,7 @@ class Configs:
 
     @origin_follow302_status.setter
     def origin_follow302_status(self, origin_follow302_status):
-        """Sets the origin_follow302_status of this Configs.
+        r"""Sets the origin_follow302_status of this Configs.
 
         回源跟随，on：开启，off：关闭。
 
@@ -507,7 +507,7 @@ class Configs:
 
     @property
     def cache_rules(self):
-        """Gets the cache_rules of this Configs.
+        r"""Gets the cache_rules of this Configs.
 
         缓存规则。
 
@@ -518,7 +518,7 @@ class Configs:
 
     @cache_rules.setter
     def cache_rules(self, cache_rules):
-        """Sets the cache_rules of this Configs.
+        r"""Sets the cache_rules of this Configs.
 
         缓存规则。
 
@@ -529,7 +529,7 @@ class Configs:
 
     @property
     def ip_filter(self):
-        """Gets the ip_filter of this Configs.
+        r"""Gets the ip_filter of this Configs.
 
         :return: The ip_filter of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.IpFilter`
@@ -538,7 +538,7 @@ class Configs:
 
     @ip_filter.setter
     def ip_filter(self, ip_filter):
-        """Sets the ip_filter of this Configs.
+        r"""Sets the ip_filter of this Configs.
 
         :param ip_filter: The ip_filter of this Configs.
         :type ip_filter: :class:`huaweicloudsdkcdn.v2.IpFilter`
@@ -547,7 +547,7 @@ class Configs:
 
     @property
     def referer(self):
-        """Gets the referer of this Configs.
+        r"""Gets the referer of this Configs.
 
         :return: The referer of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.RefererConfig`
@@ -556,7 +556,7 @@ class Configs:
 
     @referer.setter
     def referer(self, referer):
-        """Sets the referer of this Configs.
+        r"""Sets the referer of this Configs.
 
         :param referer: The referer of this Configs.
         :type referer: :class:`huaweicloudsdkcdn.v2.RefererConfig`
@@ -565,7 +565,7 @@ class Configs:
 
     @property
     def force_redirect(self):
-        """Gets the force_redirect of this Configs.
+        r"""Gets the force_redirect of this Configs.
 
         :return: The force_redirect of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.ForceRedirectConfig`
@@ -574,7 +574,7 @@ class Configs:
 
     @force_redirect.setter
     def force_redirect(self, force_redirect):
-        """Sets the force_redirect of this Configs.
+        r"""Sets the force_redirect of this Configs.
 
         :param force_redirect: The force_redirect of this Configs.
         :type force_redirect: :class:`huaweicloudsdkcdn.v2.ForceRedirectConfig`
@@ -583,7 +583,7 @@ class Configs:
 
     @property
     def compress(self):
-        """Gets the compress of this Configs.
+        r"""Gets the compress of this Configs.
 
         :return: The compress of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.Compress`
@@ -592,7 +592,7 @@ class Configs:
 
     @compress.setter
     def compress(self, compress):
-        """Sets the compress of this Configs.
+        r"""Sets the compress of this Configs.
 
         :param compress: The compress of this Configs.
         :type compress: :class:`huaweicloudsdkcdn.v2.Compress`
@@ -601,7 +601,7 @@ class Configs:
 
     @property
     def cache_url_parameter_filter(self):
-        """Gets the cache_url_parameter_filter of this Configs.
+        r"""Gets the cache_url_parameter_filter of this Configs.
 
         :return: The cache_url_parameter_filter of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.CacheUrlParameterFilter`
@@ -610,7 +610,7 @@ class Configs:
 
     @cache_url_parameter_filter.setter
     def cache_url_parameter_filter(self, cache_url_parameter_filter):
-        """Sets the cache_url_parameter_filter of this Configs.
+        r"""Sets the cache_url_parameter_filter of this Configs.
 
         :param cache_url_parameter_filter: The cache_url_parameter_filter of this Configs.
         :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v2.CacheUrlParameterFilter`
@@ -619,7 +619,7 @@ class Configs:
 
     @property
     def ipv6_accelerate(self):
-        """Gets the ipv6_accelerate of this Configs.
+        r"""Gets the ipv6_accelerate of this Configs.
 
         ipv6设置，1：打开；0：关闭。
 
@@ -630,7 +630,7 @@ class Configs:
 
     @ipv6_accelerate.setter
     def ipv6_accelerate(self, ipv6_accelerate):
-        """Sets the ipv6_accelerate of this Configs.
+        r"""Sets the ipv6_accelerate of this Configs.
 
         ipv6设置，1：打开；0：关闭。
 
@@ -641,7 +641,7 @@ class Configs:
 
     @property
     def error_code_cache(self):
-        """Gets the error_code_cache of this Configs.
+        r"""Gets the error_code_cache of this Configs.
 
         状态码缓存时间。
 
@@ -652,7 +652,7 @@ class Configs:
 
     @error_code_cache.setter
     def error_code_cache(self, error_code_cache):
-        """Sets the error_code_cache of this Configs.
+        r"""Sets the error_code_cache of this Configs.
 
         状态码缓存时间。
 
@@ -663,7 +663,7 @@ class Configs:
 
     @property
     def origin_range_status(self):
-        """Gets the origin_range_status of this Configs.
+        r"""Gets the origin_range_status of this Configs.
 
         Range回源，即分片回源，开启: on，关闭: off。  > 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。
 
@@ -674,7 +674,7 @@ class Configs:
 
     @origin_range_status.setter
     def origin_range_status(self, origin_range_status):
-        """Sets the origin_range_status of this Configs.
+        r"""Sets the origin_range_status of this Configs.
 
         Range回源，即分片回源，开启: on，关闭: off。  > 开启Range回源的前提是您的源站支持Range请求，即HTTP请求头中包含Range字段，否则可能导致回源失败。
 
@@ -685,7 +685,7 @@ class Configs:
 
     @property
     def user_agent_filter(self):
-        """Gets the user_agent_filter of this Configs.
+        r"""Gets the user_agent_filter of this Configs.
 
         :return: The user_agent_filter of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.UserAgentFilter`
@@ -694,7 +694,7 @@ class Configs:
 
     @user_agent_filter.setter
     def user_agent_filter(self, user_agent_filter):
-        """Sets the user_agent_filter of this Configs.
+        r"""Sets the user_agent_filter of this Configs.
 
         :param user_agent_filter: The user_agent_filter of this Configs.
         :type user_agent_filter: :class:`huaweicloudsdkcdn.v2.UserAgentFilter`
@@ -703,7 +703,7 @@ class Configs:
 
     @property
     def origin_request_url_rewrite(self):
-        """Gets the origin_request_url_rewrite of this Configs.
+        r"""Gets the origin_request_url_rewrite of this Configs.
 
         改写回源URL，最多配置20条。
 
@@ -714,7 +714,7 @@ class Configs:
 
     @origin_request_url_rewrite.setter
     def origin_request_url_rewrite(self, origin_request_url_rewrite):
-        """Sets the origin_request_url_rewrite of this Configs.
+        r"""Sets the origin_request_url_rewrite of this Configs.
 
         改写回源URL，最多配置20条。
 
@@ -725,7 +725,7 @@ class Configs:
 
     @property
     def flexible_origin(self):
-        """Gets the flexible_origin of this Configs.
+        r"""Gets the flexible_origin of this Configs.
 
         高级回源，最多配置20条。
 
@@ -736,7 +736,7 @@ class Configs:
 
     @flexible_origin.setter
     def flexible_origin(self, flexible_origin):
-        """Sets the flexible_origin of this Configs.
+        r"""Sets the flexible_origin of this Configs.
 
         高级回源，最多配置20条。
 
@@ -747,7 +747,7 @@ class Configs:
 
     @property
     def slice_etag_status(self):
-        """Gets the slice_etag_status of this Configs.
+        r"""Gets the slice_etag_status of this Configs.
 
         回源是否校验ETag，on：开启，off：关闭。
 
@@ -758,7 +758,7 @@ class Configs:
 
     @slice_etag_status.setter
     def slice_etag_status(self, slice_etag_status):
-        """Sets the slice_etag_status of this Configs.
+        r"""Sets the slice_etag_status of this Configs.
 
         回源是否校验ETag，on：开启，off：关闭。
 
@@ -769,7 +769,7 @@ class Configs:
 
     @property
     def origin_receive_timeout(self):
-        """Gets the origin_receive_timeout of this Configs.
+        r"""Gets the origin_receive_timeout of this Configs.
 
         回源超时时间，范围:5-60，单位：秒。
 
@@ -780,7 +780,7 @@ class Configs:
 
     @origin_receive_timeout.setter
     def origin_receive_timeout(self, origin_receive_timeout):
-        """Sets the origin_receive_timeout of this Configs.
+        r"""Sets the origin_receive_timeout of this Configs.
 
         回源超时时间，范围:5-60，单位：秒。
 
@@ -791,7 +791,7 @@ class Configs:
 
     @property
     def remote_auth(self):
-        """Gets the remote_auth of this Configs.
+        r"""Gets the remote_auth of this Configs.
 
         :return: The remote_auth of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.CommonRemoteAuth`
@@ -800,7 +800,7 @@ class Configs:
 
     @remote_auth.setter
     def remote_auth(self, remote_auth):
-        """Sets the remote_auth of this Configs.
+        r"""Sets the remote_auth of this Configs.
 
         :param remote_auth: The remote_auth of this Configs.
         :type remote_auth: :class:`huaweicloudsdkcdn.v2.CommonRemoteAuth`
@@ -809,7 +809,7 @@ class Configs:
 
     @property
     def websocket(self):
-        """Gets the websocket of this Configs.
+        r"""Gets the websocket of this Configs.
 
         :return: The websocket of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.WebSocketSeek`
@@ -818,7 +818,7 @@ class Configs:
 
     @websocket.setter
     def websocket(self, websocket):
-        """Sets the websocket of this Configs.
+        r"""Sets the websocket of this Configs.
 
         :param websocket: The websocket of this Configs.
         :type websocket: :class:`huaweicloudsdkcdn.v2.WebSocketSeek`
@@ -827,7 +827,7 @@ class Configs:
 
     @property
     def video_seek(self):
-        """Gets the video_seek of this Configs.
+        r"""Gets the video_seek of this Configs.
 
         :return: The video_seek of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.VideoSeek`
@@ -836,7 +836,7 @@ class Configs:
 
     @video_seek.setter
     def video_seek(self, video_seek):
-        """Sets the video_seek of this Configs.
+        r"""Sets the video_seek of this Configs.
 
         :param video_seek: The video_seek of this Configs.
         :type video_seek: :class:`huaweicloudsdkcdn.v2.VideoSeek`
@@ -845,7 +845,7 @@ class Configs:
 
     @property
     def request_limit_rules(self):
-        """Gets the request_limit_rules of this Configs.
+        r"""Gets the request_limit_rules of this Configs.
 
         请求限速配置。
 
@@ -856,7 +856,7 @@ class Configs:
 
     @request_limit_rules.setter
     def request_limit_rules(self, request_limit_rules):
-        """Sets the request_limit_rules of this Configs.
+        r"""Sets the request_limit_rules of this Configs.
 
         请求限速配置。
 
@@ -867,7 +867,7 @@ class Configs:
 
     @property
     def ip_frequency_limit(self):
-        """Gets the ip_frequency_limit of this Configs.
+        r"""Gets the ip_frequency_limit of this Configs.
 
         :return: The ip_frequency_limit of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.IpFrequencyLimit`
@@ -876,7 +876,7 @@ class Configs:
 
     @ip_frequency_limit.setter
     def ip_frequency_limit(self, ip_frequency_limit):
-        """Sets the ip_frequency_limit of this Configs.
+        r"""Sets the ip_frequency_limit of this Configs.
 
         :param ip_frequency_limit: The ip_frequency_limit of this Configs.
         :type ip_frequency_limit: :class:`huaweicloudsdkcdn.v2.IpFrequencyLimit`
@@ -885,7 +885,7 @@ class Configs:
 
     @property
     def hsts(self):
-        """Gets the hsts of this Configs.
+        r"""Gets the hsts of this Configs.
 
         :return: The hsts of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.Hsts`
@@ -894,7 +894,7 @@ class Configs:
 
     @hsts.setter
     def hsts(self, hsts):
-        """Sets the hsts of this Configs.
+        r"""Sets the hsts of this Configs.
 
         :param hsts: The hsts of this Configs.
         :type hsts: :class:`huaweicloudsdkcdn.v2.Hsts`
@@ -903,7 +903,7 @@ class Configs:
 
     @property
     def quic(self):
-        """Gets the quic of this Configs.
+        r"""Gets the quic of this Configs.
 
         :return: The quic of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.Quic`
@@ -912,7 +912,7 @@ class Configs:
 
     @quic.setter
     def quic(self, quic):
-        """Sets the quic of this Configs.
+        r"""Sets the quic of this Configs.
 
         :param quic: The quic of this Configs.
         :type quic: :class:`huaweicloudsdkcdn.v2.Quic`
@@ -921,7 +921,7 @@ class Configs:
 
     @property
     def error_code_redirect_rules(self):
-        """Gets the error_code_redirect_rules of this Configs.
+        r"""Gets the error_code_redirect_rules of this Configs.
 
         自定义错误页面。
 
@@ -932,7 +932,7 @@ class Configs:
 
     @error_code_redirect_rules.setter
     def error_code_redirect_rules(self, error_code_redirect_rules):
-        """Sets the error_code_redirect_rules of this Configs.
+        r"""Sets the error_code_redirect_rules of this Configs.
 
         自定义错误页面。
 
@@ -943,7 +943,7 @@ class Configs:
 
     @property
     def sni(self):
-        """Gets the sni of this Configs.
+        r"""Gets the sni of this Configs.
 
         :return: The sni of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.Sni`
@@ -952,7 +952,7 @@ class Configs:
 
     @sni.setter
     def sni(self, sni):
-        """Sets the sni of this Configs.
+        r"""Sets the sni of this Configs.
 
         :param sni: The sni of this Configs.
         :type sni: :class:`huaweicloudsdkcdn.v2.Sni`
@@ -961,7 +961,7 @@ class Configs:
 
     @property
     def request_url_rewrite(self):
-        """Gets the request_url_rewrite of this Configs.
+        r"""Gets the request_url_rewrite of this Configs.
 
         访问URL重写。
 
@@ -972,7 +972,7 @@ class Configs:
 
     @request_url_rewrite.setter
     def request_url_rewrite(self, request_url_rewrite):
-        """Sets the request_url_rewrite of this Configs.
+        r"""Sets the request_url_rewrite of this Configs.
 
         访问URL重写。
 
@@ -983,7 +983,7 @@ class Configs:
 
     @property
     def browser_cache_rules(self):
-        """Gets the browser_cache_rules of this Configs.
+        r"""Gets the browser_cache_rules of this Configs.
 
         浏览器缓存过期时间。
 
@@ -994,7 +994,7 @@ class Configs:
 
     @browser_cache_rules.setter
     def browser_cache_rules(self, browser_cache_rules):
-        """Sets the browser_cache_rules of this Configs.
+        r"""Sets the browser_cache_rules of this Configs.
 
         浏览器缓存过期时间。
 
@@ -1005,7 +1005,7 @@ class Configs:
 
     @property
     def access_area_filter(self):
-        """Gets the access_area_filter of this Configs.
+        r"""Gets the access_area_filter of this Configs.
 
         :return: The access_area_filter of this Configs.
         :rtype: list[:class:`huaweicloudsdkcdn.v2.AccessAreaFilter`]
@@ -1014,7 +1014,7 @@ class Configs:
 
     @access_area_filter.setter
     def access_area_filter(self, access_area_filter):
-        """Sets the access_area_filter of this Configs.
+        r"""Sets the access_area_filter of this Configs.
 
         :param access_area_filter: The access_area_filter of this Configs.
         :type access_area_filter: list[:class:`huaweicloudsdkcdn.v2.AccessAreaFilter`]
@@ -1023,7 +1023,7 @@ class Configs:
 
     @property
     def client_cert(self):
-        """Gets the client_cert of this Configs.
+        r"""Gets the client_cert of this Configs.
 
         :return: The client_cert of this Configs.
         :rtype: :class:`huaweicloudsdkcdn.v2.ClientCert`
@@ -1032,7 +1032,7 @@ class Configs:
 
     @client_cert.setter
     def client_cert(self, client_cert):
-        """Sets the client_cert of this Configs.
+        r"""Sets the client_cert of this Configs.
 
         :param client_cert: The client_cert of this Configs.
         :type client_cert: :class:`huaweicloudsdkcdn.v2.ClientCert`

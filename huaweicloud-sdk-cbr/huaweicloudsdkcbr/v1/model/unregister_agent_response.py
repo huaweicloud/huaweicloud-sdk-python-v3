@@ -24,7 +24,7 @@ class UnregisterAgentResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UnregisterAgentResponse
+        r"""UnregisterAgentResponse
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class UpdateFsDirQuotaRequestBody:
     }
 
     def __init__(self, path=None, capacity=None, inode=None):
-        """UpdateFsDirQuotaRequestBody
+        r"""UpdateFsDirQuotaRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateFsDirQuotaRequestBody:
 
     @property
     def path(self):
-        """Gets the path of this UpdateFsDirQuotaRequestBody.
+        r"""Gets the path of this UpdateFsDirQuotaRequestBody.
 
         合法的已存在的目录的全路径
 
@@ -67,7 +67,7 @@ class UpdateFsDirQuotaRequestBody:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this UpdateFsDirQuotaRequestBody.
+        r"""Sets the path of this UpdateFsDirQuotaRequestBody.
 
         合法的已存在的目录的全路径
 
@@ -78,7 +78,7 @@ class UpdateFsDirQuotaRequestBody:
 
     @property
     def capacity(self):
-        """Gets the capacity of this UpdateFsDirQuotaRequestBody.
+        r"""Gets the capacity of this UpdateFsDirQuotaRequestBody.
 
         目录的容量大小，单位：MB; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
 
@@ -89,7 +89,7 @@ class UpdateFsDirQuotaRequestBody:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this UpdateFsDirQuotaRequestBody.
+        r"""Sets the capacity of this UpdateFsDirQuotaRequestBody.
 
         目录的容量大小，单位：MB; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
 
@@ -100,7 +100,7 @@ class UpdateFsDirQuotaRequestBody:
 
     @property
     def inode(self):
-        """Gets the inode of this UpdateFsDirQuotaRequestBody.
+        r"""Gets the inode of this UpdateFsDirQuotaRequestBody.
 
         目录的inode数量限制; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
 
@@ -111,7 +111,7 @@ class UpdateFsDirQuotaRequestBody:
 
     @inode.setter
     def inode(self, inode):
-        """Sets the inode of this UpdateFsDirQuotaRequestBody.
+        r"""Sets the inode of this UpdateFsDirQuotaRequestBody.
 
         目录的inode数量限制; 设置为0会导致数据无法写入目录; capacity和quota至少二选一
 

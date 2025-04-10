@@ -37,7 +37,7 @@ class RelateTaskTestCasesVo:
     }
 
     def __init__(self, test_case_num=None, test_case_name=None, test_case_uri=None, task_uri=None, task_name=None, task_num=None, task_creator=None):
-        """RelateTaskTestCasesVo
+        r"""RelateTaskTestCasesVo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class RelateTaskTestCasesVo:
 
     @property
     def test_case_num(self):
-        """Gets the test_case_num of this RelateTaskTestCasesVo.
+        r"""Gets the test_case_num of this RelateTaskTestCasesVo.
 
         用例编号
 
@@ -96,7 +96,7 @@ class RelateTaskTestCasesVo:
 
     @test_case_num.setter
     def test_case_num(self, test_case_num):
-        """Sets the test_case_num of this RelateTaskTestCasesVo.
+        r"""Sets the test_case_num of this RelateTaskTestCasesVo.
 
         用例编号
 
@@ -107,7 +107,7 @@ class RelateTaskTestCasesVo:
 
     @property
     def test_case_name(self):
-        """Gets the test_case_name of this RelateTaskTestCasesVo.
+        r"""Gets the test_case_name of this RelateTaskTestCasesVo.
 
         用例名
 
@@ -118,7 +118,7 @@ class RelateTaskTestCasesVo:
 
     @test_case_name.setter
     def test_case_name(self, test_case_name):
-        """Sets the test_case_name of this RelateTaskTestCasesVo.
+        r"""Sets the test_case_name of this RelateTaskTestCasesVo.
 
         用例名
 
@@ -129,7 +129,7 @@ class RelateTaskTestCasesVo:
 
     @property
     def test_case_uri(self):
-        """Gets the test_case_uri of this RelateTaskTestCasesVo.
+        r"""Gets the test_case_uri of this RelateTaskTestCasesVo.
 
         用例uri
 
@@ -140,7 +140,7 @@ class RelateTaskTestCasesVo:
 
     @test_case_uri.setter
     def test_case_uri(self, test_case_uri):
-        """Sets the test_case_uri of this RelateTaskTestCasesVo.
+        r"""Sets the test_case_uri of this RelateTaskTestCasesVo.
 
         用例uri
 
@@ -151,7 +151,7 @@ class RelateTaskTestCasesVo:
 
     @property
     def task_uri(self):
-        """Gets the task_uri of this RelateTaskTestCasesVo.
+        r"""Gets the task_uri of this RelateTaskTestCasesVo.
 
         任务uri
 
@@ -162,7 +162,7 @@ class RelateTaskTestCasesVo:
 
     @task_uri.setter
     def task_uri(self, task_uri):
-        """Sets the task_uri of this RelateTaskTestCasesVo.
+        r"""Sets the task_uri of this RelateTaskTestCasesVo.
 
         任务uri
 
@@ -173,7 +173,7 @@ class RelateTaskTestCasesVo:
 
     @property
     def task_name(self):
-        """Gets the task_name of this RelateTaskTestCasesVo.
+        r"""Gets the task_name of this RelateTaskTestCasesVo.
 
         任务名
 
@@ -184,7 +184,7 @@ class RelateTaskTestCasesVo:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this RelateTaskTestCasesVo.
+        r"""Sets the task_name of this RelateTaskTestCasesVo.
 
         任务名
 
@@ -195,7 +195,7 @@ class RelateTaskTestCasesVo:
 
     @property
     def task_num(self):
-        """Gets the task_num of this RelateTaskTestCasesVo.
+        r"""Gets the task_num of this RelateTaskTestCasesVo.
 
         任务编号
 
@@ -206,7 +206,7 @@ class RelateTaskTestCasesVo:
 
     @task_num.setter
     def task_num(self, task_num):
-        """Sets the task_num of this RelateTaskTestCasesVo.
+        r"""Sets the task_num of this RelateTaskTestCasesVo.
 
         任务编号
 
@@ -217,7 +217,7 @@ class RelateTaskTestCasesVo:
 
     @property
     def task_creator(self):
-        """Gets the task_creator of this RelateTaskTestCasesVo.
+        r"""Gets the task_creator of this RelateTaskTestCasesVo.
 
         任务创建人
 
@@ -228,7 +228,7 @@ class RelateTaskTestCasesVo:
 
     @task_creator.setter
     def task_creator(self, task_creator):
-        """Sets the task_creator of this RelateTaskTestCasesVo.
+        r"""Sets the task_creator of this RelateTaskTestCasesVo.
 
         任务创建人
 

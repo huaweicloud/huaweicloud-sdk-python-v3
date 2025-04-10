@@ -27,7 +27,7 @@ class Grant:
     }
 
     def __init__(self, permission=None, grant_with=None):
-        """Grant
+        r"""Grant
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Grant:
 
     @property
     def permission(self):
-        """Gets the permission of this Grant.
+        r"""Gets the permission of this Grant.
 
         权限名称，根据不通数据库对象类型，拥有权限不同 - database  CREATE | CONNECT | TEMPORARY | TEMP  ALL  PRIVILEGES - schema  CREATE | USAGE | ALTER | DROP  ALL  PRIVILEGES - table  SELECT | INSERT | UPDATE | DELETE | TRUNCATE | REFERENCES | TRIGGER | ANALYZE | ANALYSE | VACUUM | ALTER | DROP  ALL  PRIVILEGES - view  SELECT | INSERT | UPDATE | DELETE | TRUNCATE | REFERENCES   | TRIGGER | ANALYZE | ANALYSE | VACUUM | ALTER | DROP  ALL  PRIVILEGES - column  SELECT | INSERT | UPDATE | REFERENCES  ALL  PRIVILEGES - function  EXECUTE  ALL  PRIVILEGES - sequence  SELECT | UPDATE | USAGE  ALL  PRIVILEGES - nodegroup  CREATE | USAGE | COMPUTE  ALL  PRIVILEGES - role  role_name（角色名称）
 
@@ -59,7 +59,7 @@ class Grant:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this Grant.
+        r"""Sets the permission of this Grant.
 
         权限名称，根据不通数据库对象类型，拥有权限不同 - database  CREATE | CONNECT | TEMPORARY | TEMP  ALL  PRIVILEGES - schema  CREATE | USAGE | ALTER | DROP  ALL  PRIVILEGES - table  SELECT | INSERT | UPDATE | DELETE | TRUNCATE | REFERENCES | TRIGGER | ANALYZE | ANALYSE | VACUUM | ALTER | DROP  ALL  PRIVILEGES - view  SELECT | INSERT | UPDATE | DELETE | TRUNCATE | REFERENCES   | TRIGGER | ANALYZE | ANALYSE | VACUUM | ALTER | DROP  ALL  PRIVILEGES - column  SELECT | INSERT | UPDATE | REFERENCES  ALL  PRIVILEGES - function  EXECUTE  ALL  PRIVILEGES - sequence  SELECT | UPDATE | USAGE  ALL  PRIVILEGES - nodegroup  CREATE | USAGE | COMPUTE  ALL  PRIVILEGES - role  role_name（角色名称）
 
@@ -70,7 +70,7 @@ class Grant:
 
     @property
     def grant_with(self):
-        """Gets the grant_with of this Grant.
+        r"""Gets the grant_with of this Grant.
 
         是否包含授权选项
 
@@ -81,7 +81,7 @@ class Grant:
 
     @grant_with.setter
     def grant_with(self, grant_with):
-        """Sets the grant_with of this Grant.
+        r"""Sets the grant_with of this Grant.
 
         是否包含授权选项
 

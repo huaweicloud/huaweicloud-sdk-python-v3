@@ -27,7 +27,7 @@ class CreateClusterPublicKibanaElbWhiteList:
     }
 
     def __init__(self, white_list=None, enable_white_list=None):
-        """CreateClusterPublicKibanaElbWhiteList
+        r"""CreateClusterPublicKibanaElbWhiteList
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateClusterPublicKibanaElbWhiteList:
 
     @property
     def white_list(self):
-        """Gets the white_list of this CreateClusterPublicKibanaElbWhiteList.
+        r"""Gets the white_list of this CreateClusterPublicKibanaElbWhiteList.
 
         白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
 
@@ -59,7 +59,7 @@ class CreateClusterPublicKibanaElbWhiteList:
 
     @white_list.setter
     def white_list(self, white_list):
-        """Sets the white_list of this CreateClusterPublicKibanaElbWhiteList.
+        r"""Sets the white_list of this CreateClusterPublicKibanaElbWhiteList.
 
         白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
 
@@ -70,7 +70,7 @@ class CreateClusterPublicKibanaElbWhiteList:
 
     @property
     def enable_white_list(self):
-        """Gets the enable_white_list of this CreateClusterPublicKibanaElbWhiteList.
+        r"""Gets the enable_white_list of this CreateClusterPublicKibanaElbWhiteList.
 
         是否开启kibana访问控制。
 
@@ -81,7 +81,7 @@ class CreateClusterPublicKibanaElbWhiteList:
 
     @enable_white_list.setter
     def enable_white_list(self, enable_white_list):
-        """Sets the enable_white_list of this CreateClusterPublicKibanaElbWhiteList.
+        r"""Sets the enable_white_list of this CreateClusterPublicKibanaElbWhiteList.
 
         是否开启kibana访问控制。
 

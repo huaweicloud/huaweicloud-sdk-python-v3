@@ -25,7 +25,7 @@ class DeleteMyActionTemplateRequest:
     }
 
     def __init__(self, template_name=None):
-        """DeleteMyActionTemplateRequest
+        r"""DeleteMyActionTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteMyActionTemplateRequest:
 
     @property
     def template_name(self):
-        """Gets the template_name of this DeleteMyActionTemplateRequest.
+        r"""Gets the template_name of this DeleteMyActionTemplateRequest.
 
         三方算子模板名。
 
@@ -53,7 +53,7 @@ class DeleteMyActionTemplateRequest:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this DeleteMyActionTemplateRequest.
+        r"""Sets the template_name of this DeleteMyActionTemplateRequest.
 
         三方算子模板名。
 

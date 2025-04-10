@@ -26,7 +26,7 @@ class StopClusterResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """StopClusterResponse
+        r"""StopClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopClusterResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this StopClusterResponse.
+        r"""Gets the job_id of this StopClusterResponse.
 
         作业ID
 
@@ -55,7 +55,7 @@ class StopClusterResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StopClusterResponse.
+        r"""Sets the job_id of this StopClusterResponse.
 
         作业ID
 

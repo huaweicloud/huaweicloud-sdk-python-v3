@@ -43,7 +43,7 @@ class RouteTableResp:
     }
 
     def __init__(self, id=None, name=None, default=None, routes=None, subnets=None, tenant_id=None, vpc_id=None, description=None, created_at=None, updated_at=None):
-        """RouteTableResp
+        r"""RouteTableResp
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class RouteTableResp:
 
     @property
     def id(self):
-        """Gets the id of this RouteTableResp.
+        r"""Gets the id of this RouteTableResp.
 
         功能说明：路由表ID  取值范围：标准UUID
 
@@ -107,7 +107,7 @@ class RouteTableResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RouteTableResp.
+        r"""Sets the id of this RouteTableResp.
 
         功能说明：路由表ID  取值范围：标准UUID
 
@@ -118,7 +118,7 @@ class RouteTableResp:
 
     @property
     def name(self):
-        """Gets the name of this RouteTableResp.
+        r"""Gets the name of this RouteTableResp.
 
         功能说明：路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -129,7 +129,7 @@ class RouteTableResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RouteTableResp.
+        r"""Sets the name of this RouteTableResp.
 
         功能说明：路由表名称  取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -140,7 +140,7 @@ class RouteTableResp:
 
     @property
     def default(self):
-        """Gets the default of this RouteTableResp.
+        r"""Gets the default of this RouteTableResp.
 
         功能说明：是否为默认路由表  取值范围：true表示默认路由表；false表示自定义路由表
 
@@ -151,7 +151,7 @@ class RouteTableResp:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this RouteTableResp.
+        r"""Sets the default of this RouteTableResp.
 
         功能说明：是否为默认路由表  取值范围：true表示默认路由表；false表示自定义路由表
 
@@ -162,7 +162,7 @@ class RouteTableResp:
 
     @property
     def routes(self):
-        """Gets the routes of this RouteTableResp.
+        r"""Gets the routes of this RouteTableResp.
 
         功能说明：路由对象，参见route字段说明。  约束：每个路由表最大关联200条路由
 
@@ -173,7 +173,7 @@ class RouteTableResp:
 
     @routes.setter
     def routes(self, routes):
-        """Sets the routes of this RouteTableResp.
+        r"""Sets the routes of this RouteTableResp.
 
         功能说明：路由对象，参见route字段说明。  约束：每个路由表最大关联200条路由
 
@@ -184,7 +184,7 @@ class RouteTableResp:
 
     @property
     def subnets(self):
-        """Gets the subnets of this RouteTableResp.
+        r"""Gets the subnets of this RouteTableResp.
 
         功能说明：路由表所关联的子网  约束：只能关联路由表所属VPC下的子网
 
@@ -195,7 +195,7 @@ class RouteTableResp:
 
     @subnets.setter
     def subnets(self, subnets):
-        """Sets the subnets of this RouteTableResp.
+        r"""Sets the subnets of this RouteTableResp.
 
         功能说明：路由表所关联的子网  约束：只能关联路由表所属VPC下的子网
 
@@ -206,7 +206,7 @@ class RouteTableResp:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this RouteTableResp.
+        r"""Gets the tenant_id of this RouteTableResp.
 
         项目ID
 
@@ -217,7 +217,7 @@ class RouteTableResp:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this RouteTableResp.
+        r"""Sets the tenant_id of this RouteTableResp.
 
         项目ID
 
@@ -228,7 +228,7 @@ class RouteTableResp:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this RouteTableResp.
+        r"""Gets the vpc_id of this RouteTableResp.
 
         路由表所在的虚拟私有云ID
 
@@ -239,7 +239,7 @@ class RouteTableResp:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this RouteTableResp.
+        r"""Sets the vpc_id of this RouteTableResp.
 
         路由表所在的虚拟私有云ID
 
@@ -250,7 +250,7 @@ class RouteTableResp:
 
     @property
     def description(self):
-        """Gets the description of this RouteTableResp.
+        r"""Gets the description of this RouteTableResp.
 
         功能说明：路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -261,7 +261,7 @@ class RouteTableResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this RouteTableResp.
+        r"""Sets the description of this RouteTableResp.
 
         功能说明：路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -272,7 +272,7 @@ class RouteTableResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this RouteTableResp.
+        r"""Gets the created_at of this RouteTableResp.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -283,7 +283,7 @@ class RouteTableResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this RouteTableResp.
+        r"""Sets the created_at of this RouteTableResp.
 
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -294,7 +294,7 @@ class RouteTableResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this RouteTableResp.
+        r"""Gets the updated_at of this RouteTableResp.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -305,7 +305,7 @@ class RouteTableResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this RouteTableResp.
+        r"""Sets the updated_at of this RouteTableResp.
 
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 

@@ -25,7 +25,7 @@ class BatchDeleteServerGroupTagsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteServerGroupTagsRequest
+        r"""BatchDeleteServerGroupTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteServerGroupTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteServerGroupTagsRequest.
+        r"""Gets the body of this BatchDeleteServerGroupTagsRequest.
 
         :return: The body of this BatchDeleteServerGroupTagsRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteServerGroupTagsReq`
@@ -52,7 +52,7 @@ class BatchDeleteServerGroupTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteServerGroupTagsRequest.
+        r"""Sets the body of this BatchDeleteServerGroupTagsRequest.
 
         :param body: The body of this BatchDeleteServerGroupTagsRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteServerGroupTagsReq`

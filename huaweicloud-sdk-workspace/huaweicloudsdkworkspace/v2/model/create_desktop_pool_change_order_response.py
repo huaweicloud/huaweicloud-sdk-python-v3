@@ -26,7 +26,7 @@ class CreateDesktopPoolChangeOrderResponse(SdkResponse):
     }
 
     def __init__(self, orders=None):
-        """CreateDesktopPoolChangeOrderResponse
+        r"""CreateDesktopPoolChangeOrderResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDesktopPoolChangeOrderResponse(SdkResponse):
 
     @property
     def orders(self):
-        """Gets the orders of this CreateDesktopPoolChangeOrderResponse.
+        r"""Gets the orders of this CreateDesktopPoolChangeOrderResponse.
 
         批量生成订单结果
 
@@ -55,7 +55,7 @@ class CreateDesktopPoolChangeOrderResponse(SdkResponse):
 
     @orders.setter
     def orders(self, orders):
-        """Sets the orders of this CreateDesktopPoolChangeOrderResponse.
+        r"""Sets the orders of this CreateDesktopPoolChangeOrderResponse.
 
         批量生成订单结果
 

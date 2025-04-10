@@ -25,7 +25,7 @@ class DeleteConfReq:
     }
 
     def __init__(self, name=None):
-        """DeleteConfReq
+        r"""DeleteConfReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteConfReq:
 
     @property
     def name(self):
-        """Gets the name of this DeleteConfReq.
+        r"""Gets the name of this DeleteConfReq.
 
         配置文件名称。
 
@@ -53,7 +53,7 @@ class DeleteConfReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeleteConfReq.
+        r"""Sets the name of this DeleteConfReq.
 
         配置文件名称。
 

@@ -37,7 +37,7 @@ class ServiceSet:
     }
 
     def __init__(self, set_id=None, name=None, description=None, service_set_type=None, ref_count=None, project_id=None, protocols=None):
-        """ServiceSet
+        r"""ServiceSet
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ServiceSet:
 
     @property
     def set_id(self):
-        """Gets the set_id of this ServiceSet.
+        r"""Gets the set_id of this ServiceSet.
 
         服务组id
 
@@ -96,7 +96,7 @@ class ServiceSet:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this ServiceSet.
+        r"""Sets the set_id of this ServiceSet.
 
         服务组id
 
@@ -107,7 +107,7 @@ class ServiceSet:
 
     @property
     def name(self):
-        """Gets the name of this ServiceSet.
+        r"""Gets the name of this ServiceSet.
 
         服务组名称
 
@@ -118,7 +118,7 @@ class ServiceSet:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ServiceSet.
+        r"""Sets the name of this ServiceSet.
 
         服务组名称
 
@@ -129,7 +129,7 @@ class ServiceSet:
 
     @property
     def description(self):
-        """Gets the description of this ServiceSet.
+        r"""Gets the description of this ServiceSet.
 
         服务组描述
 
@@ -140,7 +140,7 @@ class ServiceSet:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServiceSet.
+        r"""Sets the description of this ServiceSet.
 
         服务组描述
 
@@ -151,7 +151,7 @@ class ServiceSet:
 
     @property
     def service_set_type(self):
-        """Gets the service_set_type of this ServiceSet.
+        r"""Gets the service_set_type of this ServiceSet.
 
         服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
 
@@ -162,7 +162,7 @@ class ServiceSet:
 
     @service_set_type.setter
     def service_set_type(self, service_set_type):
-        """Sets the service_set_type of this ServiceSet.
+        r"""Sets the service_set_type of this ServiceSet.
 
         服务组类型，0表示自定义服务组，1表示常用WEB服务，2表示常用远程登录和PING，3表示常用数据库
 
@@ -173,7 +173,7 @@ class ServiceSet:
 
     @property
     def ref_count(self):
-        """Gets the ref_count of this ServiceSet.
+        r"""Gets the ref_count of this ServiceSet.
 
         服务组被规则引用次数
 
@@ -184,7 +184,7 @@ class ServiceSet:
 
     @ref_count.setter
     def ref_count(self, ref_count):
-        """Sets the ref_count of this ServiceSet.
+        r"""Sets the ref_count of this ServiceSet.
 
         服务组被规则引用次数
 
@@ -195,7 +195,7 @@ class ServiceSet:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ServiceSet.
+        r"""Gets the project_id of this ServiceSet.
 
         项目ID
 
@@ -206,7 +206,7 @@ class ServiceSet:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ServiceSet.
+        r"""Sets the project_id of this ServiceSet.
 
         项目ID
 
@@ -217,7 +217,7 @@ class ServiceSet:
 
     @property
     def protocols(self):
-        """Gets the protocols of this ServiceSet.
+        r"""Gets the protocols of this ServiceSet.
 
         协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,type为0手动类型时不能为空。
 
@@ -228,7 +228,7 @@ class ServiceSet:
 
     @protocols.setter
     def protocols(self, protocols):
-        """Sets the protocols of this ServiceSet.
+        r"""Sets the protocols of this ServiceSet.
 
         协议列表，协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,type为0手动类型时不能为空。
 

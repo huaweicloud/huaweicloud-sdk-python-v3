@@ -25,7 +25,7 @@ class CdmStartClusterReq:
     }
 
     def __init__(self, start=None):
-        """CdmStartClusterReq
+        r"""CdmStartClusterReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CdmStartClusterReq:
 
     @property
     def start(self):
-        """Gets the start of this CdmStartClusterReq.
+        r"""Gets the start of this CdmStartClusterReq.
 
         集群启动操作，定义集群启动标识，为空对象
 
@@ -53,7 +53,7 @@ class CdmStartClusterReq:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this CdmStartClusterReq.
+        r"""Sets the start of this CdmStartClusterReq.
 
         集群启动操作，定义集群启动标识，为空对象
 

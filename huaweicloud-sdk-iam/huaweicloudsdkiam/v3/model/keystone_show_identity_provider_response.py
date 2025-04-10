@@ -26,7 +26,7 @@ class KeystoneShowIdentityProviderResponse(SdkResponse):
     }
 
     def __init__(self, identity_provider=None):
-        """KeystoneShowIdentityProviderResponse
+        r"""KeystoneShowIdentityProviderResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class KeystoneShowIdentityProviderResponse(SdkResponse):
 
     @property
     def identity_provider(self):
-        """Gets the identity_provider of this KeystoneShowIdentityProviderResponse.
+        r"""Gets the identity_provider of this KeystoneShowIdentityProviderResponse.
 
         :return: The identity_provider of this KeystoneShowIdentityProviderResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.IdentityprovidersResult`
@@ -53,7 +53,7 @@ class KeystoneShowIdentityProviderResponse(SdkResponse):
 
     @identity_provider.setter
     def identity_provider(self, identity_provider):
-        """Sets the identity_provider of this KeystoneShowIdentityProviderResponse.
+        r"""Sets the identity_provider of this KeystoneShowIdentityProviderResponse.
 
         :param identity_provider: The identity_provider of this KeystoneShowIdentityProviderResponse.
         :type identity_provider: :class:`huaweicloudsdkiam.v3.IdentityprovidersResult`

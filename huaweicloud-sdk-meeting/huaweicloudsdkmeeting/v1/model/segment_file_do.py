@@ -39,7 +39,7 @@ class SegmentFileDO:
     }
 
     def __init__(self, record_type=None, begin_time=None, end_time=None, duration=None, file_size=None, sha256=None, play_url=None, download_url=None):
-        """SegmentFileDO
+        r"""SegmentFileDO
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class SegmentFileDO:
 
     @property
     def record_type(self):
-        """Gets the record_type of this SegmentFileDO.
+        r"""Gets the record_type of this SegmentFileDO.
 
         会议录制类型，取值范围见数据结构RecordType：AUDIO 纯音频录制，SPEAKER_VIDEO 演讲者视图，SHARE_VIDEO共享屏幕，SPEAKER_SHARE_VIDEO 含演讲者视图的共享屏幕
 
@@ -103,7 +103,7 @@ class SegmentFileDO:
 
     @record_type.setter
     def record_type(self, record_type):
-        """Sets the record_type of this SegmentFileDO.
+        r"""Sets the record_type of this SegmentFileDO.
 
         会议录制类型，取值范围见数据结构RecordType：AUDIO 纯音频录制，SPEAKER_VIDEO 演讲者视图，SHARE_VIDEO共享屏幕，SPEAKER_SHARE_VIDEO 含演讲者视图的共享屏幕
 
@@ -114,7 +114,7 @@ class SegmentFileDO:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this SegmentFileDO.
+        r"""Gets the begin_time of this SegmentFileDO.
 
         录制文件开始时间 
 
@@ -125,7 +125,7 @@ class SegmentFileDO:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this SegmentFileDO.
+        r"""Sets the begin_time of this SegmentFileDO.
 
         录制文件开始时间 
 
@@ -136,7 +136,7 @@ class SegmentFileDO:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SegmentFileDO.
+        r"""Gets the end_time of this SegmentFileDO.
 
         录制文件结束时间 
 
@@ -147,7 +147,7 @@ class SegmentFileDO:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SegmentFileDO.
+        r"""Sets the end_time of this SegmentFileDO.
 
         录制文件结束时间 
 
@@ -158,7 +158,7 @@ class SegmentFileDO:
 
     @property
     def duration(self):
-        """Gets the duration of this SegmentFileDO.
+        r"""Gets the duration of this SegmentFileDO.
 
         录制文件时长(秒)
 
@@ -169,7 +169,7 @@ class SegmentFileDO:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this SegmentFileDO.
+        r"""Sets the duration of this SegmentFileDO.
 
         录制文件时长(秒)
 
@@ -180,7 +180,7 @@ class SegmentFileDO:
 
     @property
     def file_size(self):
-        """Gets the file_size of this SegmentFileDO.
+        r"""Gets the file_size of this SegmentFileDO.
 
         文件大小(字节数)
 
@@ -191,7 +191,7 @@ class SegmentFileDO:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this SegmentFileDO.
+        r"""Sets the file_size of this SegmentFileDO.
 
         文件大小(字节数)
 
@@ -202,7 +202,7 @@ class SegmentFileDO:
 
     @property
     def sha256(self):
-        """Gets the sha256 of this SegmentFileDO.
+        r"""Gets the sha256 of this SegmentFileDO.
 
         文件hash校验码(SHA256)，64个字符
 
@@ -213,7 +213,7 @@ class SegmentFileDO:
 
     @sha256.setter
     def sha256(self, sha256):
-        """Sets the sha256 of this SegmentFileDO.
+        r"""Sets the sha256 of this SegmentFileDO.
 
         文件hash校验码(SHA256)，64个字符
 
@@ -224,7 +224,7 @@ class SegmentFileDO:
 
     @property
     def play_url(self):
-        """Gets the play_url of this SegmentFileDO.
+        r"""Gets the play_url of this SegmentFileDO.
 
         录制文件播放地址，有效期1小时
 
@@ -235,7 +235,7 @@ class SegmentFileDO:
 
     @play_url.setter
     def play_url(self, play_url):
-        """Sets the play_url of this SegmentFileDO.
+        r"""Sets the play_url of this SegmentFileDO.
 
         录制文件播放地址，有效期1小时
 
@@ -246,7 +246,7 @@ class SegmentFileDO:
 
     @property
     def download_url(self):
-        """Gets the download_url of this SegmentFileDO.
+        r"""Gets the download_url of this SegmentFileDO.
 
         录制文件下载地址，有效期1小时
 
@@ -257,7 +257,7 @@ class SegmentFileDO:
 
     @download_url.setter
     def download_url(self, download_url):
-        """Sets the download_url of this SegmentFileDO.
+        r"""Sets the download_url of this SegmentFileDO.
 
         录制文件下载地址，有效期1小时
 

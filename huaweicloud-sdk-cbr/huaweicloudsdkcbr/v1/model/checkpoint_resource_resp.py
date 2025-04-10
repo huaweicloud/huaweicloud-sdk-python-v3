@@ -39,7 +39,7 @@ class CheckpointResourceResp:
     }
 
     def __init__(self, extra_info=None, id=None, name=None, protect_status=None, resource_size=None, type=None, backup_size=None, backup_count=None):
-        """CheckpointResourceResp
+        r"""CheckpointResourceResp
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class CheckpointResourceResp:
 
     @property
     def extra_info(self):
-        """Gets the extra_info of this CheckpointResourceResp.
+        r"""Gets the extra_info of this CheckpointResourceResp.
 
         资源附加信息
 
@@ -100,7 +100,7 @@ class CheckpointResourceResp:
 
     @extra_info.setter
     def extra_info(self, extra_info):
-        """Sets the extra_info of this CheckpointResourceResp.
+        r"""Sets the extra_info of this CheckpointResourceResp.
 
         资源附加信息
 
@@ -111,7 +111,7 @@ class CheckpointResourceResp:
 
     @property
     def id(self):
-        """Gets the id of this CheckpointResourceResp.
+        r"""Gets the id of this CheckpointResourceResp.
 
         待备份资源id
 
@@ -122,7 +122,7 @@ class CheckpointResourceResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CheckpointResourceResp.
+        r"""Sets the id of this CheckpointResourceResp.
 
         待备份资源id
 
@@ -133,7 +133,7 @@ class CheckpointResourceResp:
 
     @property
     def name(self):
-        """Gets the name of this CheckpointResourceResp.
+        r"""Gets the name of this CheckpointResourceResp.
 
         待备份资源名称
 
@@ -144,7 +144,7 @@ class CheckpointResourceResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CheckpointResourceResp.
+        r"""Sets the name of this CheckpointResourceResp.
 
         待备份资源名称
 
@@ -155,7 +155,7 @@ class CheckpointResourceResp:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this CheckpointResourceResp.
+        r"""Gets the protect_status of this CheckpointResourceResp.
 
         保护状态。available（可用），error（错误），protecting（备份中），restoring（恢复中），removing（删除中）。
 
@@ -166,7 +166,7 @@ class CheckpointResourceResp:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this CheckpointResourceResp.
+        r"""Sets the protect_status of this CheckpointResourceResp.
 
         保护状态。available（可用），error（错误），protecting（备份中），restoring（恢复中），removing（删除中）。
 
@@ -177,7 +177,7 @@ class CheckpointResourceResp:
 
     @property
     def resource_size(self):
-        """Gets the resource_size of this CheckpointResourceResp.
+        r"""Gets the resource_size of this CheckpointResourceResp.
 
         资源已分配容量,单位为GB
 
@@ -188,7 +188,7 @@ class CheckpointResourceResp:
 
     @resource_size.setter
     def resource_size(self, resource_size):
-        """Sets the resource_size of this CheckpointResourceResp.
+        r"""Sets the resource_size of this CheckpointResourceResp.
 
         资源已分配容量,单位为GB
 
@@ -199,7 +199,7 @@ class CheckpointResourceResp:
 
     @property
     def type(self):
-        """Gets the type of this CheckpointResourceResp.
+        r"""Gets the type of this CheckpointResourceResp.
 
         待备份资源的类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo, OS::Workspace::DesktopV2
 
@@ -210,7 +210,7 @@ class CheckpointResourceResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CheckpointResourceResp.
+        r"""Sets the type of this CheckpointResourceResp.
 
         待备份资源的类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo, OS::Workspace::DesktopV2
 
@@ -221,7 +221,7 @@ class CheckpointResourceResp:
 
     @property
     def backup_size(self):
-        """Gets the backup_size of this CheckpointResourceResp.
+        r"""Gets the backup_size of this CheckpointResourceResp.
 
         副本大小
 
@@ -232,7 +232,7 @@ class CheckpointResourceResp:
 
     @backup_size.setter
     def backup_size(self, backup_size):
-        """Sets the backup_size of this CheckpointResourceResp.
+        r"""Sets the backup_size of this CheckpointResourceResp.
 
         副本大小
 
@@ -243,7 +243,7 @@ class CheckpointResourceResp:
 
     @property
     def backup_count(self):
-        """Gets the backup_count of this CheckpointResourceResp.
+        r"""Gets the backup_count of this CheckpointResourceResp.
 
         副本数量
 
@@ -254,7 +254,7 @@ class CheckpointResourceResp:
 
     @backup_count.setter
     def backup_count(self, backup_count):
-        """Sets the backup_count of this CheckpointResourceResp.
+        r"""Sets the backup_count of this CheckpointResourceResp.
 
         副本数量
 

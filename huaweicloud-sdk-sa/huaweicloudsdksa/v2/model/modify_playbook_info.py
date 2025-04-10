@@ -31,7 +31,7 @@ class ModifyPlaybookInfo:
     }
 
     def __init__(self, name=None, description=None, enabled=None, active_version_id=None):
-        """ModifyPlaybookInfo
+        r"""ModifyPlaybookInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ModifyPlaybookInfo:
 
     @property
     def name(self):
-        """Gets the name of this ModifyPlaybookInfo.
+        r"""Gets the name of this ModifyPlaybookInfo.
 
         The name, display only
 
@@ -75,7 +75,7 @@ class ModifyPlaybookInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyPlaybookInfo.
+        r"""Sets the name of this ModifyPlaybookInfo.
 
         The name, display only
 
@@ -86,7 +86,7 @@ class ModifyPlaybookInfo:
 
     @property
     def description(self):
-        """Gets the description of this ModifyPlaybookInfo.
+        r"""Gets the description of this ModifyPlaybookInfo.
 
         The description, display only
 
@@ -97,7 +97,7 @@ class ModifyPlaybookInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModifyPlaybookInfo.
+        r"""Sets the description of this ModifyPlaybookInfo.
 
         The description, display only
 
@@ -108,7 +108,7 @@ class ModifyPlaybookInfo:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ModifyPlaybookInfo.
+        r"""Gets the enabled of this ModifyPlaybookInfo.
 
         If is enabled, false for disenabled, true for enabled
 
@@ -119,7 +119,7 @@ class ModifyPlaybookInfo:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ModifyPlaybookInfo.
+        r"""Sets the enabled of this ModifyPlaybookInfo.
 
         If is enabled, false for disenabled, true for enabled
 
@@ -130,7 +130,7 @@ class ModifyPlaybookInfo:
 
     @property
     def active_version_id(self):
-        """Gets the active_version_id of this ModifyPlaybookInfo.
+        r"""Gets the active_version_id of this ModifyPlaybookInfo.
 
         启用的剧本版本ID
 
@@ -141,7 +141,7 @@ class ModifyPlaybookInfo:
 
     @active_version_id.setter
     def active_version_id(self, active_version_id):
-        """Sets the active_version_id of this ModifyPlaybookInfo.
+        r"""Sets the active_version_id of this ModifyPlaybookInfo.
 
         启用的剧本版本ID
 

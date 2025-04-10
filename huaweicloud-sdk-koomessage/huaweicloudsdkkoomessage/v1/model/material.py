@@ -43,7 +43,7 @@ class Material:
     }
 
     def __init__(self, id=None, created_at=None, resource_type=None, file_name=None, aim_resource_id=None, obs_object_key=None, obs_file_url=None, image_rate=None, description=None, thumbnail=None):
-        """Material
+        r"""Material
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class Material:
 
     @property
     def id(self):
-        """Gets the id of this Material.
+        r"""Gets the id of this Material.
 
         素材ID。
 
@@ -111,7 +111,7 @@ class Material:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Material.
+        r"""Sets the id of this Material.
 
         素材ID。
 
@@ -122,7 +122,7 @@ class Material:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Material.
+        r"""Gets the created_at of this Material.
 
         创建时间。
 
@@ -133,7 +133,7 @@ class Material:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Material.
+        r"""Sets the created_at of this Material.
 
         创建时间。
 
@@ -144,7 +144,7 @@ class Material:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Material.
+        r"""Gets the resource_type of this Material.
 
         资源类型。 - image：表示图片 - video：表示视频 - thumbnail：表示缩略图 
 
@@ -155,7 +155,7 @@ class Material:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Material.
+        r"""Sets the resource_type of this Material.
 
         资源类型。 - image：表示图片 - video：表示视频 - thumbnail：表示缩略图 
 
@@ -166,7 +166,7 @@ class Material:
 
     @property
     def file_name(self):
-        """Gets the file_name of this Material.
+        r"""Gets the file_name of this Material.
 
         文件名称。
 
@@ -177,7 +177,7 @@ class Material:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this Material.
+        r"""Sets the file_name of this Material.
 
         文件名称。
 
@@ -188,7 +188,7 @@ class Material:
 
     @property
     def aim_resource_id(self):
-        """Gets the aim_resource_id of this Material.
+        r"""Gets the aim_resource_id of this Material.
 
         资源ID。
 
@@ -199,7 +199,7 @@ class Material:
 
     @aim_resource_id.setter
     def aim_resource_id(self, aim_resource_id):
-        """Sets the aim_resource_id of this Material.
+        r"""Sets the aim_resource_id of this Material.
 
         资源ID。
 
@@ -210,7 +210,7 @@ class Material:
 
     @property
     def obs_object_key(self):
-        """Gets the obs_object_key of this Material.
+        r"""Gets the obs_object_key of this Material.
 
         从OBS返回的文件Key。
 
@@ -221,7 +221,7 @@ class Material:
 
     @obs_object_key.setter
     def obs_object_key(self, obs_object_key):
-        """Sets the obs_object_key of this Material.
+        r"""Sets the obs_object_key of this Material.
 
         从OBS返回的文件Key。
 
@@ -232,7 +232,7 @@ class Material:
 
     @property
     def obs_file_url(self):
-        """Gets the obs_file_url of this Material.
+        r"""Gets the obs_file_url of this Material.
 
         文件访问路径。
 
@@ -243,7 +243,7 @@ class Material:
 
     @obs_file_url.setter
     def obs_file_url(self, obs_file_url):
-        """Sets the obs_file_url of this Material.
+        r"""Sets the obs_file_url of this Material.
 
         文件访问路径。
 
@@ -254,7 +254,7 @@ class Material:
 
     @property
     def image_rate(self):
-        """Gets the image_rate of this Material.
+        r"""Gets the image_rate of this Material.
 
         图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 
 
@@ -265,7 +265,7 @@ class Material:
 
     @image_rate.setter
     def image_rate(self, image_rate):
-        """Sets the image_rate of this Material.
+        r"""Sets the image_rate of this Material.
 
         图像比例。 - oneToOne：指1:1比例 - sixteenToNine：指16:9比例 - threeToOne：指3:1比例 - fortyEightToSixtyFive：指48:65比例 - twentyOneToNine：指21:9比例 
 
@@ -276,7 +276,7 @@ class Material:
 
     @property
     def description(self):
-        """Gets the description of this Material.
+        r"""Gets the description of this Material.
 
         素材详细描述。
 
@@ -287,7 +287,7 @@ class Material:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Material.
+        r"""Sets the description of this Material.
 
         素材详细描述。
 
@@ -298,7 +298,7 @@ class Material:
 
     @property
     def thumbnail(self):
-        """Gets the thumbnail of this Material.
+        r"""Gets the thumbnail of this Material.
 
         :return: The thumbnail of this Material.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.Thumbnail`
@@ -307,7 +307,7 @@ class Material:
 
     @thumbnail.setter
     def thumbnail(self, thumbnail):
-        """Sets the thumbnail of this Material.
+        r"""Sets the thumbnail of this Material.
 
         :param thumbnail: The thumbnail of this Material.
         :type thumbnail: :class:`huaweicloudsdkkoomessage.v1.Thumbnail`

@@ -26,7 +26,7 @@ class BatchDeleteTagResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchDeleteTagResponse
+        r"""BatchDeleteTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteTagResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteTagResponse.
+        r"""Gets the body of this BatchDeleteTagResponse.
 
         :return: The body of this BatchDeleteTagResponse.
         :rtype: list[:class:`huaweicloudsdkeihealth.v1.DeleteTagRsp`]
@@ -53,7 +53,7 @@ class BatchDeleteTagResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteTagResponse.
+        r"""Sets the body of this BatchDeleteTagResponse.
 
         :param body: The body of this BatchDeleteTagResponse.
         :type body: list[:class:`huaweicloudsdkeihealth.v1.DeleteTagRsp`]

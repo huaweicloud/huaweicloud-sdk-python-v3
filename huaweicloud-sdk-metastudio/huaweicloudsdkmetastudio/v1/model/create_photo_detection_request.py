@@ -27,7 +27,7 @@ class CreatePhotoDetectionRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreatePhotoDetectionRequest
+        r"""CreatePhotoDetectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreatePhotoDetectionRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreatePhotoDetectionRequest.
+        r"""Gets the x_app_user_id of this CreatePhotoDetectionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreatePhotoDetectionRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreatePhotoDetectionRequest.
+        r"""Sets the x_app_user_id of this CreatePhotoDetectionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreatePhotoDetectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePhotoDetectionRequest.
+        r"""Gets the body of this CreatePhotoDetectionRequest.
 
         :return: The body of this CreatePhotoDetectionRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreatePhotoDetectionReq`
@@ -81,7 +81,7 @@ class CreatePhotoDetectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePhotoDetectionRequest.
+        r"""Sets the body of this CreatePhotoDetectionRequest.
 
         :param body: The body of this CreatePhotoDetectionRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreatePhotoDetectionReq`

@@ -29,7 +29,7 @@ class SubscriptionOperateRespEvents:
     }
 
     def __init__(self, error_code=None, error_msg=None, subscription_id=None):
-        """SubscriptionOperateRespEvents
+        r"""SubscriptionOperateRespEvents
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SubscriptionOperateRespEvents:
 
     @property
     def error_code(self):
-        """Gets the error_code of this SubscriptionOperateRespEvents.
+        r"""Gets the error_code of this SubscriptionOperateRespEvents.
 
         失败的错误码
 
@@ -68,7 +68,7 @@ class SubscriptionOperateRespEvents:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this SubscriptionOperateRespEvents.
+        r"""Sets the error_code of this SubscriptionOperateRespEvents.
 
         失败的错误码
 
@@ -79,7 +79,7 @@ class SubscriptionOperateRespEvents:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this SubscriptionOperateRespEvents.
+        r"""Gets the error_msg of this SubscriptionOperateRespEvents.
 
         失败的原因
 
@@ -90,7 +90,7 @@ class SubscriptionOperateRespEvents:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this SubscriptionOperateRespEvents.
+        r"""Sets the error_msg of this SubscriptionOperateRespEvents.
 
         失败的原因
 
@@ -101,7 +101,7 @@ class SubscriptionOperateRespEvents:
 
     @property
     def subscription_id(self):
-        """Gets the subscription_id of this SubscriptionOperateRespEvents.
+        r"""Gets the subscription_id of this SubscriptionOperateRespEvents.
 
         订阅ID
 
@@ -112,7 +112,7 @@ class SubscriptionOperateRespEvents:
 
     @subscription_id.setter
     def subscription_id(self, subscription_id):
-        """Sets the subscription_id of this SubscriptionOperateRespEvents.
+        r"""Sets the subscription_id of this SubscriptionOperateRespEvents.
 
         订阅ID
 

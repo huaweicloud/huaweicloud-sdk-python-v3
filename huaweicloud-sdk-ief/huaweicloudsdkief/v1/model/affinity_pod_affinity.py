@@ -27,7 +27,7 @@ class AffinityPodAffinity:
     }
 
     def __init__(self, preferred_during_scheduling_ignored_during_execution=None, required_during_scheduling_ignored_during_execution=None):
-        """AffinityPodAffinity
+        r"""AffinityPodAffinity
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AffinityPodAffinity:
 
     @property
     def preferred_during_scheduling_ignored_during_execution(self):
-        """Gets the preferred_during_scheduling_ignored_during_execution of this AffinityPodAffinity.
+        r"""Gets the preferred_during_scheduling_ignored_during_execution of this AffinityPodAffinity.
 
         优先使用定义的规则调度，且不会影响已经在节点上运行的Pod。即优先选择调度到满足规则的节点，但也可能会调度到不满足规则的节点。
 
@@ -61,7 +61,7 @@ class AffinityPodAffinity:
 
     @preferred_during_scheduling_ignored_during_execution.setter
     def preferred_during_scheduling_ignored_during_execution(self, preferred_during_scheduling_ignored_during_execution):
-        """Sets the preferred_during_scheduling_ignored_during_execution of this AffinityPodAffinity.
+        r"""Sets the preferred_during_scheduling_ignored_during_execution of this AffinityPodAffinity.
 
         优先使用定义的规则调度，且不会影响已经在节点上运行的Pod。即优先选择调度到满足规则的节点，但也可能会调度到不满足规则的节点。
 
@@ -72,7 +72,7 @@ class AffinityPodAffinity:
 
     @property
     def required_during_scheduling_ignored_during_execution(self):
-        """Gets the required_during_scheduling_ignored_during_execution of this AffinityPodAffinity.
+        r"""Gets the required_during_scheduling_ignored_during_execution of this AffinityPodAffinity.
 
         强制使用定义的规则调度，且不会影响已经在节点上运行的Pod。即强制选择调度到满足规则的节点，不会调度到不满足规则的节点。
 
@@ -83,7 +83,7 @@ class AffinityPodAffinity:
 
     @required_during_scheduling_ignored_during_execution.setter
     def required_during_scheduling_ignored_during_execution(self, required_during_scheduling_ignored_during_execution):
-        """Sets the required_during_scheduling_ignored_during_execution of this AffinityPodAffinity.
+        r"""Sets the required_during_scheduling_ignored_during_execution of this AffinityPodAffinity.
 
         强制使用定义的规则调度，且不会影响已经在节点上运行的Pod。即强制选择调度到满足规则的节点，不会调度到不满足规则的节点。
 

@@ -40,7 +40,7 @@ class CreateVpnGatewayCertificateRequestBodyContent:
     }
 
     def __init__(self, name=None, certificate=None, private_key=None, certificate_chain=None, enc_certificate=None, enc_private_key=None):
-        """CreateVpnGatewayCertificateRequestBodyContent
+        r"""CreateVpnGatewayCertificateRequestBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateVpnGatewayCertificateRequestBodyContent:
 
     @property
     def name(self):
-        """Gets the name of this CreateVpnGatewayCertificateRequestBodyContent.
+        r"""Gets the name of this CreateVpnGatewayCertificateRequestBodyContent.
 
         VPN网关证书名称
 
@@ -89,7 +89,7 @@ class CreateVpnGatewayCertificateRequestBodyContent:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVpnGatewayCertificateRequestBodyContent.
+        r"""Sets the name of this CreateVpnGatewayCertificateRequestBodyContent.
 
         VPN网关证书名称
 
@@ -100,7 +100,7 @@ class CreateVpnGatewayCertificateRequestBodyContent:
 
     @property
     def certificate(self):
-        """Gets the certificate of this CreateVpnGatewayCertificateRequestBodyContent.
+        r"""Gets the certificate of this CreateVpnGatewayCertificateRequestBodyContent.
 
         证书内容，国密证书时为签名证书内容
 
@@ -111,7 +111,7 @@ class CreateVpnGatewayCertificateRequestBodyContent:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this CreateVpnGatewayCertificateRequestBodyContent.
+        r"""Sets the certificate of this CreateVpnGatewayCertificateRequestBodyContent.
 
         证书内容，国密证书时为签名证书内容
 
@@ -122,7 +122,7 @@ class CreateVpnGatewayCertificateRequestBodyContent:
 
     @property
     def private_key(self):
-        """Gets the private_key of this CreateVpnGatewayCertificateRequestBodyContent.
+        r"""Gets the private_key of this CreateVpnGatewayCertificateRequestBodyContent.
 
         证书私钥，国密证书时为签名证书私钥
 
@@ -133,7 +133,7 @@ class CreateVpnGatewayCertificateRequestBodyContent:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this CreateVpnGatewayCertificateRequestBodyContent.
+        r"""Sets the private_key of this CreateVpnGatewayCertificateRequestBodyContent.
 
         证书私钥，国密证书时为签名证书私钥
 
@@ -144,7 +144,7 @@ class CreateVpnGatewayCertificateRequestBodyContent:
 
     @property
     def certificate_chain(self):
-        """Gets the certificate_chain of this CreateVpnGatewayCertificateRequestBodyContent.
+        r"""Gets the certificate_chain of this CreateVpnGatewayCertificateRequestBodyContent.
 
         VPN网关CA证书内容
 
@@ -155,7 +155,7 @@ class CreateVpnGatewayCertificateRequestBodyContent:
 
     @certificate_chain.setter
     def certificate_chain(self, certificate_chain):
-        """Sets the certificate_chain of this CreateVpnGatewayCertificateRequestBodyContent.
+        r"""Sets the certificate_chain of this CreateVpnGatewayCertificateRequestBodyContent.
 
         VPN网关CA证书内容
 
@@ -166,7 +166,7 @@ class CreateVpnGatewayCertificateRequestBodyContent:
 
     @property
     def enc_certificate(self):
-        """Gets the enc_certificate of this CreateVpnGatewayCertificateRequestBodyContent.
+        r"""Gets the enc_certificate of this CreateVpnGatewayCertificateRequestBodyContent.
 
         国密证书的加密证书内容
 
@@ -177,7 +177,7 @@ class CreateVpnGatewayCertificateRequestBodyContent:
 
     @enc_certificate.setter
     def enc_certificate(self, enc_certificate):
-        """Sets the enc_certificate of this CreateVpnGatewayCertificateRequestBodyContent.
+        r"""Sets the enc_certificate of this CreateVpnGatewayCertificateRequestBodyContent.
 
         国密证书的加密证书内容
 
@@ -188,7 +188,7 @@ class CreateVpnGatewayCertificateRequestBodyContent:
 
     @property
     def enc_private_key(self):
-        """Gets the enc_private_key of this CreateVpnGatewayCertificateRequestBodyContent.
+        r"""Gets the enc_private_key of this CreateVpnGatewayCertificateRequestBodyContent.
 
         国密证书的加密证书私钥
 
@@ -199,7 +199,7 @@ class CreateVpnGatewayCertificateRequestBodyContent:
 
     @enc_private_key.setter
     def enc_private_key(self, enc_private_key):
-        """Sets the enc_private_key of this CreateVpnGatewayCertificateRequestBodyContent.
+        r"""Sets the enc_private_key of this CreateVpnGatewayCertificateRequestBodyContent.
 
         国密证书的加密证书私钥
 

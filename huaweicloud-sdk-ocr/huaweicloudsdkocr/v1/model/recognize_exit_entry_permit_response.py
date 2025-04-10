@@ -28,7 +28,7 @@ class RecognizeExitEntryPermitResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeExitEntryPermitResponse
+        r"""RecognizeExitEntryPermitResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeExitEntryPermitResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeExitEntryPermitResponse.
+        r"""Gets the result of this RecognizeExitEntryPermitResponse.
 
         :return: The result of this RecognizeExitEntryPermitResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.ExitEntryPermitResult`
@@ -60,7 +60,7 @@ class RecognizeExitEntryPermitResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeExitEntryPermitResponse.
+        r"""Sets the result of this RecognizeExitEntryPermitResponse.
 
         :param result: The result of this RecognizeExitEntryPermitResponse.
         :type result: :class:`huaweicloudsdkocr.v1.ExitEntryPermitResult`
@@ -69,7 +69,7 @@ class RecognizeExitEntryPermitResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeExitEntryPermitResponse.
+        r"""Gets the x_request_id of this RecognizeExitEntryPermitResponse.
 
         :return: The x_request_id of this RecognizeExitEntryPermitResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeExitEntryPermitResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeExitEntryPermitResponse.
+        r"""Sets the x_request_id of this RecognizeExitEntryPermitResponse.
 
         :param x_request_id: The x_request_id of this RecognizeExitEntryPermitResponse.
         :type x_request_id: str

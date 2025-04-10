@@ -29,7 +29,7 @@ class BinaryColumnStatisticsData:
     }
 
     def __init__(self, maximum_length=None, average_length=None, number_of_null=None):
-        """BinaryColumnStatisticsData
+        r"""BinaryColumnStatisticsData
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class BinaryColumnStatisticsData:
 
     @property
     def maximum_length(self):
-        """Gets the maximum_length of this BinaryColumnStatisticsData.
+        r"""Gets the maximum_length of this BinaryColumnStatisticsData.
 
         列中字节数组的最大值
 
@@ -65,7 +65,7 @@ class BinaryColumnStatisticsData:
 
     @maximum_length.setter
     def maximum_length(self, maximum_length):
-        """Sets the maximum_length of this BinaryColumnStatisticsData.
+        r"""Sets the maximum_length of this BinaryColumnStatisticsData.
 
         列中字节数组的最大值
 
@@ -76,7 +76,7 @@ class BinaryColumnStatisticsData:
 
     @property
     def average_length(self):
-        """Gets the average_length of this BinaryColumnStatisticsData.
+        r"""Gets the average_length of this BinaryColumnStatisticsData.
 
         列中字节数组的平均长度
 
@@ -87,7 +87,7 @@ class BinaryColumnStatisticsData:
 
     @average_length.setter
     def average_length(self, average_length):
-        """Sets the average_length of this BinaryColumnStatisticsData.
+        r"""Sets the average_length of this BinaryColumnStatisticsData.
 
         列中字节数组的平均长度
 
@@ -98,7 +98,7 @@ class BinaryColumnStatisticsData:
 
     @property
     def number_of_null(self):
-        """Gets the number_of_null of this BinaryColumnStatisticsData.
+        r"""Gets the number_of_null of this BinaryColumnStatisticsData.
 
         列中空值个数
 
@@ -109,7 +109,7 @@ class BinaryColumnStatisticsData:
 
     @number_of_null.setter
     def number_of_null(self, number_of_null):
-        """Sets the number_of_null of this BinaryColumnStatisticsData.
+        r"""Sets the number_of_null of this BinaryColumnStatisticsData.
 
         列中空值个数
 

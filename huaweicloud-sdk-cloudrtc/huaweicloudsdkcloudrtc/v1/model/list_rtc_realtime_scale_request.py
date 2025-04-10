@@ -41,7 +41,7 @@ class ListRtcRealtimeScaleRequest:
     }
 
     def __init__(self, authorization=None, x_sdk_date=None, x_project_id=None, project_id=None, app=None, room_id=None, metric=None, start_time=None, end_time=None):
-        """ListRtcRealtimeScaleRequest
+        r"""ListRtcRealtimeScaleRequest
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class ListRtcRealtimeScaleRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this ListRtcRealtimeScaleRequest.
+        r"""Gets the authorization of this ListRtcRealtimeScaleRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
@@ -107,7 +107,7 @@ class ListRtcRealtimeScaleRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this ListRtcRealtimeScaleRequest.
+        r"""Sets the authorization of this ListRtcRealtimeScaleRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
@@ -118,7 +118,7 @@ class ListRtcRealtimeScaleRequest:
 
     @property
     def x_sdk_date(self):
-        """Gets the x_sdk_date of this ListRtcRealtimeScaleRequest.
+        r"""Gets the x_sdk_date of this ListRtcRealtimeScaleRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。 
 
@@ -129,7 +129,7 @@ class ListRtcRealtimeScaleRequest:
 
     @x_sdk_date.setter
     def x_sdk_date(self, x_sdk_date):
-        """Sets the x_sdk_date of this ListRtcRealtimeScaleRequest.
+        r"""Sets the x_sdk_date of this ListRtcRealtimeScaleRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。 
 
@@ -140,7 +140,7 @@ class ListRtcRealtimeScaleRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListRtcRealtimeScaleRequest.
+        r"""Gets the x_project_id of this ListRtcRealtimeScaleRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
@@ -151,7 +151,7 @@ class ListRtcRealtimeScaleRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListRtcRealtimeScaleRequest.
+        r"""Sets the x_project_id of this ListRtcRealtimeScaleRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
@@ -162,7 +162,7 @@ class ListRtcRealtimeScaleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListRtcRealtimeScaleRequest.
+        r"""Gets the project_id of this ListRtcRealtimeScaleRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
@@ -173,7 +173,7 @@ class ListRtcRealtimeScaleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListRtcRealtimeScaleRequest.
+        r"""Sets the project_id of this ListRtcRealtimeScaleRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
@@ -184,7 +184,7 @@ class ListRtcRealtimeScaleRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListRtcRealtimeScaleRequest.
+        r"""Gets the app of this ListRtcRealtimeScaleRequest.
 
         应用标识 
 
@@ -195,7 +195,7 @@ class ListRtcRealtimeScaleRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListRtcRealtimeScaleRequest.
+        r"""Sets the app of this ListRtcRealtimeScaleRequest.
 
         应用标识 
 
@@ -206,7 +206,7 @@ class ListRtcRealtimeScaleRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this ListRtcRealtimeScaleRequest.
+        r"""Gets the room_id of this ListRtcRealtimeScaleRequest.
 
         房间ID 
 
@@ -217,7 +217,7 @@ class ListRtcRealtimeScaleRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ListRtcRealtimeScaleRequest.
+        r"""Sets the room_id of this ListRtcRealtimeScaleRequest.
 
         房间ID 
 
@@ -228,7 +228,7 @@ class ListRtcRealtimeScaleRequest:
 
     @property
     def metric(self):
-        """Gets the metric of this ListRtcRealtimeScaleRequest.
+        r"""Gets the metric of this ListRtcRealtimeScaleRequest.
 
         查询的数据类型  OnlineUsers:在线用户数;  RoomCount:在线房间数; 
 
@@ -239,7 +239,7 @@ class ListRtcRealtimeScaleRequest:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this ListRtcRealtimeScaleRequest.
+        r"""Sets the metric of this ListRtcRealtimeScaleRequest.
 
         查询的数据类型  OnlineUsers:在线用户数;  RoomCount:在线房间数; 
 
@@ -250,7 +250,7 @@ class ListRtcRealtimeScaleRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListRtcRealtimeScaleRequest.
+        r"""Gets the start_time of this ListRtcRealtimeScaleRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不写默认读取过去1小时数据数据。 
 
@@ -261,7 +261,7 @@ class ListRtcRealtimeScaleRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListRtcRealtimeScaleRequest.
+        r"""Sets the start_time of this ListRtcRealtimeScaleRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T06:00:00Z，不写默认读取过去1小时数据数据。 
 
@@ -272,7 +272,7 @@ class ListRtcRealtimeScaleRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListRtcRealtimeScaleRequest.
+        r"""Gets the end_time of this ListRtcRealtimeScaleRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，不写默认为当前时间。 
 
@@ -283,7 +283,7 @@ class ListRtcRealtimeScaleRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListRtcRealtimeScaleRequest.
+        r"""Sets the end_time of this ListRtcRealtimeScaleRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DDThh:mm:ssZ，如2020-04-23T07:00:00Z，不写默认为当前时间。 
 

@@ -30,7 +30,7 @@ class ListFunctionAsMetricResponse(SdkResponse):
     }
 
     def __init__(self, values=None, next_marker=None, count=None):
-        """ListFunctionAsMetricResponse
+        r"""ListFunctionAsMetricResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFunctionAsMetricResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this ListFunctionAsMetricResponse.
+        r"""Gets the values of this ListFunctionAsMetricResponse.
 
         函数Urn及其指标数
 
@@ -69,7 +69,7 @@ class ListFunctionAsMetricResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ListFunctionAsMetricResponse.
+        r"""Sets the values of this ListFunctionAsMetricResponse.
 
         函数Urn及其指标数
 
@@ -80,7 +80,7 @@ class ListFunctionAsMetricResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListFunctionAsMetricResponse.
+        r"""Gets the next_marker of this ListFunctionAsMetricResponse.
 
         下次读取位置
 
@@ -91,7 +91,7 @@ class ListFunctionAsMetricResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListFunctionAsMetricResponse.
+        r"""Sets the next_marker of this ListFunctionAsMetricResponse.
 
         下次读取位置
 
@@ -102,7 +102,7 @@ class ListFunctionAsMetricResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListFunctionAsMetricResponse.
+        r"""Gets the count of this ListFunctionAsMetricResponse.
 
         返回函数总数
 
@@ -113,7 +113,7 @@ class ListFunctionAsMetricResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListFunctionAsMetricResponse.
+        r"""Sets the count of this ListFunctionAsMetricResponse.
 
         返回函数总数
 

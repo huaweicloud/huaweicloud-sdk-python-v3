@@ -29,7 +29,7 @@ class DevicePolicyBindOrUnbindFailureDetail:
     }
 
     def __init__(self, target_id=None, error_code=None, error_msg=None):
-        """DevicePolicyBindOrUnbindFailureDetail
+        r"""DevicePolicyBindOrUnbindFailureDetail
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DevicePolicyBindOrUnbindFailureDetail:
 
     @property
     def target_id(self):
-        """Gets the target_id of this DevicePolicyBindOrUnbindFailureDetail.
+        r"""Gets the target_id of this DevicePolicyBindOrUnbindFailureDetail.
 
         失败的目标id。
 
@@ -68,7 +68,7 @@ class DevicePolicyBindOrUnbindFailureDetail:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this DevicePolicyBindOrUnbindFailureDetail.
+        r"""Sets the target_id of this DevicePolicyBindOrUnbindFailureDetail.
 
         失败的目标id。
 
@@ -79,7 +79,7 @@ class DevicePolicyBindOrUnbindFailureDetail:
 
     @property
     def error_code(self):
-        """Gets the error_code of this DevicePolicyBindOrUnbindFailureDetail.
+        r"""Gets the error_code of this DevicePolicyBindOrUnbindFailureDetail.
 
         错误码。
 
@@ -90,7 +90,7 @@ class DevicePolicyBindOrUnbindFailureDetail:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DevicePolicyBindOrUnbindFailureDetail.
+        r"""Sets the error_code of this DevicePolicyBindOrUnbindFailureDetail.
 
         错误码。
 
@@ -101,7 +101,7 @@ class DevicePolicyBindOrUnbindFailureDetail:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this DevicePolicyBindOrUnbindFailureDetail.
+        r"""Gets the error_msg of this DevicePolicyBindOrUnbindFailureDetail.
 
         错误详情。
 
@@ -112,7 +112,7 @@ class DevicePolicyBindOrUnbindFailureDetail:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this DevicePolicyBindOrUnbindFailureDetail.
+        r"""Sets the error_msg of this DevicePolicyBindOrUnbindFailureDetail.
 
         错误详情。
 

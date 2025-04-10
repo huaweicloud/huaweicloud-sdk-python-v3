@@ -27,7 +27,7 @@ class NetworkSwitchReq:
     }
 
     def __init__(self, cid=None, carrier_type=None):
-        """NetworkSwitchReq
+        r"""NetworkSwitchReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NetworkSwitchReq:
 
     @property
     def cid(self):
-        """Gets the cid of this NetworkSwitchReq.
+        r"""Gets the cid of this NetworkSwitchReq.
 
         容器ID
 
@@ -60,7 +60,7 @@ class NetworkSwitchReq:
 
     @cid.setter
     def cid(self, cid):
-        """Sets the cid of this NetworkSwitchReq.
+        r"""Sets the cid of this NetworkSwitchReq.
 
         容器ID
 
@@ -71,7 +71,7 @@ class NetworkSwitchReq:
 
     @property
     def carrier_type(self):
-        """Gets the carrier_type of this NetworkSwitchReq.
+        r"""Gets the carrier_type of this NetworkSwitchReq.
 
         切换的目标网络
 
@@ -82,7 +82,7 @@ class NetworkSwitchReq:
 
     @carrier_type.setter
     def carrier_type(self, carrier_type):
-        """Sets the carrier_type of this NetworkSwitchReq.
+        r"""Sets the carrier_type of this NetworkSwitchReq.
 
         切换的目标网络
 

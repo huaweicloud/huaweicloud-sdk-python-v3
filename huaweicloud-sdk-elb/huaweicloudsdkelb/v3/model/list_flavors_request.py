@@ -45,7 +45,7 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, type=None, shared=None, public_border_group=None, category=None, list_all=None, flavor_sold_out=None):
-        """ListFlavorsRequest
+        r"""ListFlavorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListFlavorsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListFlavorsRequest.
+        r"""Gets the marker of this ListFlavorsRequest.
 
         参数解释：上一页最后一条记录的ID。  约束限制： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -124,7 +124,7 @@ class ListFlavorsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListFlavorsRequest.
+        r"""Sets the marker of this ListFlavorsRequest.
 
         参数解释：上一页最后一条记录的ID。  约束限制： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -135,7 +135,7 @@ class ListFlavorsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFlavorsRequest.
+        r"""Gets the limit of this ListFlavorsRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -146,7 +146,7 @@ class ListFlavorsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFlavorsRequest.
+        r"""Sets the limit of this ListFlavorsRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -157,7 +157,7 @@ class ListFlavorsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListFlavorsRequest.
+        r"""Gets the page_reverse of this ListFlavorsRequest.
 
         参数解释：是否反向查询。  约束限制： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  取值范围： - true：查询上一页。 - false：查询下一页，默认。
 
@@ -168,7 +168,7 @@ class ListFlavorsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListFlavorsRequest.
+        r"""Sets the page_reverse of this ListFlavorsRequest.
 
         参数解释：是否反向查询。  约束限制： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  取值范围： - true：查询上一页。 - false：查询下一页，默认。
 
@@ -179,7 +179,7 @@ class ListFlavorsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListFlavorsRequest.
+        r"""Gets the id of this ListFlavorsRequest.
 
         参数解释：规格ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
@@ -190,7 +190,7 @@ class ListFlavorsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListFlavorsRequest.
+        r"""Sets the id of this ListFlavorsRequest.
 
         参数解释：规格ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。
 
@@ -201,7 +201,7 @@ class ListFlavorsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListFlavorsRequest.
+        r"""Gets the name of this ListFlavorsRequest.
 
         参数解释：规格名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
@@ -212,7 +212,7 @@ class ListFlavorsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListFlavorsRequest.
+        r"""Sets the name of this ListFlavorsRequest.
 
         参数解释：规格名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
 
@@ -223,7 +223,7 @@ class ListFlavorsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListFlavorsRequest.
+        r"""Gets the type of this ListFlavorsRequest.
 
         参数解释：规格类别。  取值范围： - L4和L7 表示四层网络型和七层应用型flavor。 [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu) - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。  支持多值查询，查询条件格式：*type=xxx&type=xxx*。
 
@@ -234,7 +234,7 @@ class ListFlavorsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListFlavorsRequest.
+        r"""Sets the type of this ListFlavorsRequest.
 
         参数解释：规格类别。  取值范围： - L4和L7 表示四层网络型和七层应用型flavor。 [- gateway 表示网关型LB的flavor，目前只支持弹性计费类型。当前仅支持欧洲局点。](tag:hws_eu) - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max、L7_elastic_max[和gateway_elastic_max](tag:hws_eu) 表示弹性扩缩容实例的上限规格。  支持多值查询，查询条件格式：*type=xxx&type=xxx*。
 
@@ -245,7 +245,7 @@ class ListFlavorsRequest:
 
     @property
     def shared(self):
-        """Gets the shared of this ListFlavorsRequest.
+        r"""Gets the shared of this ListFlavorsRequest.
 
         参数解释：是否查询公共规格。  取值范围：true表示公共规格，所有租户可见。false表示私有规格，为当前租户所有。
 
@@ -256,7 +256,7 @@ class ListFlavorsRequest:
 
     @shared.setter
     def shared(self, shared):
-        """Sets the shared of this ListFlavorsRequest.
+        r"""Sets the shared of this ListFlavorsRequest.
 
         参数解释：是否查询公共规格。  取值范围：true表示公共规格，所有租户可见。false表示私有规格，为当前租户所有。
 
@@ -267,7 +267,7 @@ class ListFlavorsRequest:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ListFlavorsRequest.
+        r"""Gets the public_border_group of this ListFlavorsRequest.
 
         站点pbg。  支持多值查询，查询条件格式：*public_border_group=xxx&public_border_group=xxx*。
 
@@ -278,7 +278,7 @@ class ListFlavorsRequest:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListFlavorsRequest.
+        r"""Sets the public_border_group of this ListFlavorsRequest.
 
         站点pbg。  支持多值查询，查询条件格式：*public_border_group=xxx&public_border_group=xxx*。
 
@@ -289,7 +289,7 @@ class ListFlavorsRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListFlavorsRequest.
+        r"""Gets the category of this ListFlavorsRequest.
 
         站点category。  支持多值查询，查询条件格式：*category=xxx&category=xxx*。
 
@@ -300,7 +300,7 @@ class ListFlavorsRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListFlavorsRequest.
+        r"""Sets the category of this ListFlavorsRequest.
 
         站点category。  支持多值查询，查询条件格式：*category=xxx&category=xxx*。
 
@@ -311,7 +311,7 @@ class ListFlavorsRequest:
 
     @property
     def list_all(self):
-        """Gets the list_all of this ListFlavorsRequest.
+        r"""Gets the list_all of this ListFlavorsRequest.
 
         设置list_all=true时，返回当前租户所有的弹性上限规格（l4_elastic_max、l7_elastic_max）。否则只返回该租户弹性上限规格中最大的规格（l4类型优先比较cps指标，然后是带宽；l7类型优先比较https cps指标然后是qps指标）。
 
@@ -322,7 +322,7 @@ class ListFlavorsRequest:
 
     @list_all.setter
     def list_all(self, list_all):
-        """Sets the list_all of this ListFlavorsRequest.
+        r"""Sets the list_all of this ListFlavorsRequest.
 
         设置list_all=true时，返回当前租户所有的弹性上限规格（l4_elastic_max、l7_elastic_max）。否则只返回该租户弹性上限规格中最大的规格（l4类型优先比较cps指标，然后是带宽；l7类型优先比较https cps指标然后是qps指标）。
 
@@ -333,7 +333,7 @@ class ListFlavorsRequest:
 
     @property
     def flavor_sold_out(self):
-        """Gets the flavor_sold_out of this ListFlavorsRequest.
+        r"""Gets the flavor_sold_out of this ListFlavorsRequest.
 
         参数解释： [是否售罄。](tag:hws) [是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  取值范围： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
 
@@ -344,7 +344,7 @@ class ListFlavorsRequest:
 
     @flavor_sold_out.setter
     def flavor_sold_out(self, flavor_sold_out):
-        """Sets the flavor_sold_out of this ListFlavorsRequest.
+        r"""Sets the flavor_sold_out of this ListFlavorsRequest.
 
         参数解释： [是否售罄。](tag:hws) [是否无法购买该规格的LB。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,fcs,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,srg,ct)  取值范围： - true：[已售罄，将](tag:hws)无法购买该规格的LB。 - false：[未售罄，](tag:hws)可购买该规格的LB。
 
